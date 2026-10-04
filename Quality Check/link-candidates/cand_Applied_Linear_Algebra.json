@@ -1,0 +1,3072 @@
+[
+{
+"note": "Applied Linear Algebra",
+"line": 13,
+"term": "orthogonality",
+"count": 1,
+"context": "Matrix linear algebra — linear systems, matrix algebra, determinants, vector spaces, eigenvalues, orthogonality and least squares — following David C. Lay, Steven R. Lay and Judi J. McDonald, *Linear Algebra and Its Appli",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "Applied Linear Algebra",
+"line": 113,
+"term": "linear dependence",
+"count": 1,
+"context": "| L1, L02, L2, L3, Feb-18, L5 | row reduction, geometry of linear systems, linear combinations, linear dependence, linear transformations | §1–§9 |",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "Applied Linear Algebra",
+"line": 115,
+"term": "change of coordinates",
+"count": 1,
+"context": "| L10, L14–L17 | subspaces, Nul A, coordinates, rank, change of coordinates | §18–§19, §23–§29 |",
+"targets": [
+"Differentiable Manifolds|§28 The Differential in Coordinates#^cor-28-4"
+]
+},
+{
+"note": "Cramer's Rule",
+"line": 25,
+"term": "initial condition",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the · case in an ODE setting: fitting initial conditions, with the Wronskian as denominator).",
+"targets": [
+"Calculus|§57 Modeling with Differential Equations#^def-57-7",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-4",
+"Ordinary Differential Equations|§2 Solutions of Some Differential Equations#^def-2-1"
+]
+},
+{
+"note": "Determinants as Area or Volume",
+"line": 24,
+"term": "measurable set",
+"count": 1,
+"context": "- Rigorous treatment in · for every measurable set: ⟂ (proved via the singular value decomposition, ⟂); the sign of · records orientation, which · forgets.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-4"
+]
+},
+{
+"note": "Least Squares via the Normal Equations",
+"line": 27,
+"term": "norm",
+"count": 1,
+"context": "the pseudoinverse ⟂: · is a least-squares solution, and among all least-squares solutions the one of smallest norm (the one in ·). The normal equations · appear with the singular value decomposition, ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "Multiplicative Property of the Determinant",
+"line": 28,
+"term": "homomorphism",
+"count": 1,
+"context": "- In group language, · is a homomorphism from the general linear group (⟂) to the nonzero reals under multiplication.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Multiplicative Property of the Determinant",
+"line": 28,
+"term": "general linear group",
+"count": 1,
+"context": "- In group language, · is a homomorphism from the general linear group (⟂) to the nonzero reals under multiplication.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-4"
+]
+},
+{
+"note": "The Diagonalization Theorem",
+"line": 27,
+"term": "direct sum",
+"count": 1,
+"context": "gonalizable if it has a diagonal matrix in *some* basis) and ⟂ (equivalent: a basis of eigenvectors; · is the direct sum of the eigenspaces; the eigenspace dimensions add up to ·). Axler's (a) · (b) is the operator form of ·; that",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-5",
+"Functional Analysis|§1 Linear Spaces#^def-1-4",
+"Linear Algebra|§3 Subspaces#^ladr-1-41"
+]
+},
+{
+"note": "The Diagonalization Theorem",
+"line": 28,
+"term": "minimal polynomial",
+"count": 1,
+"context": "- A further criterion with no counterpart in Lay: diagonalizable · the minimal polynomial has distinct linear factors, ⟂.",
+"targets": [
+"Linear Algebra|§15 The Minimal Polynomial#^ladr-5-24"
+]
+},
+{
+"note": "The Fundamental Subspaces Are Orthogonal Complements",
+"line": 27,
+"term": "linear map",
+"count": 1,
+"context": "- Rigorous treatment: ⟂ (· and · for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is ·). Orthogonal compleme",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "The Fundamental Subspaces Are Orthogonal Complements",
+"line": 27,
+"term": "inner product space",
+"count": 1,
+"context": "- Rigorous treatment: ⟂ (· and · for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is ·). Orthogonal complements in general: ⟂, with · in",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "The Fundamental Subspaces Are Orthogonal Complements",
+"line": 28,
+"term": "hilbert space",
+"count": 1,
+"context": "- In a Hilbert space the complement of any set is a closed subspace, ⟂, and the double complement is the closed span, ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "The Invertible Matrix Theorem",
+"line": 49,
+"term": "injective",
+"count": 2,
+"context": "- Rigorous treatment: for a linear operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of piv",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "The Invertible Matrix Theorem",
+"line": 49,
+"term": "surjective",
+"count": 2,
+"context": "- Rigorous treatment: for a linear operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting;",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "The Invertible Matrix Theorem",
+"line": 49,
+"term": "fundamental theorem of linear maps",
+"count": 1,
+"context": "operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, ⟂.",
+"targets": [
+"Linear Algebra|Fundamental theorem of linear maps",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-21"
+]
+},
+{
+"note": "The Invertible Matrix Theorem",
+"line": 49,
+"term": "linear map",
+"count": 1,
+"context": "mensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "The QR Factorization",
+"line": 23,
+"term": "gram–schmidt",
+"count": 1,
+"context": "- Rigorous treatment: ⟂, for square · (where · is unitary), with the same Gram–Schmidt construction and a proof that · and · are *unique*.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^lem-24-14"
+]
+},
+{
+"note": "§1 Systems of Linear Equations",
+"line": 108,
+"term": "linear map",
+"count": 2,
+"context": "igorous treatment: ⟂ (an ·-by-· matrix with entries ·). Axler meets linear systems only as one application of linear maps, writing the system as · for a linear · (⟂, ⟂); Lay starts from the systems and reaches linear maps in ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§10 Linear Models in Business, Science, and Engineering",
+"line": 108,
+"term": "superposition",
+"count": 1,
+"context": "> [!remark] Remark: Ohm's Law in Matrix Form, and Superposition",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§10 Linear Models in Business, Science, and Engineering",
+"line": 140,
+"term": "first-order system",
+"count": 1,
+"context": "Given ·, it determines · in turn. Formulas for · and its behavior as · come later: ⟂ (difference equations as first-order systems), ⟂ (Markov chains) and, in Chapter 5, ⟂ (the eigenvector decomposition).",
+"targets": [
+"Ordinary Differential Equations|§27 Introduction to Systems of First-Order Linear Equations#^def-27-1"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 26,
+"term": "diagonal matrix",
+"count": 3,
+"context": "> - A **diagonal matrix** is a square · matrix whose nondiagonal entries are all zero. The · **identity matrix** · (diagonal entries",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 112,
+"term": "chain rule",
+"count": 1,
+"context": "> - The chain rule says the derivative of a composite is the composite of the derivatives, so its Jacobian matrix is the product",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 112,
+"term": "jacobian matrix",
+"count": 1,
+"context": "> - The chain rule says the derivative of a composite is the composite of the derivatives, so its Jacobian matrix is the product of the Jacobian matrices: ⟂.",
+"targets": [
+"Multivariable Analysis|§13 The Inverse Function Theorem#^def-13-1"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 112,
+"term": "jacobian",
+"count": 2,
+"context": "> - The chain rule says the derivative of a composite is the composite of the derivatives, so its Jacobian matrix is the product of the Jacobian matrices: ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 485,
+"term": "dual map",
+"count": 1,
+"context": "Rigorous treatment: ⟂ (transpose and its properties, including ·). In LADR the transpose is the matrix of the dual map (⟂), which explains why it reverses the order of products.",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-2"
+]
+},
+{
+"note": "§11 Matrix Operations",
+"line": 537,
+"term": "outer products",
+"count": 1,
+"context": "> [!remark] Remark: Inner and Outer Products",
+"targets": [
+"Functional Analysis|§30 Bras, Kets, and the Riesz Map#^def-30-2"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 40,
+"term": "linear map",
+"count": 2,
+"context": "> - Rigorous treatment: ⟂ (invertible square matrix) and, for linear maps, ⟂–⟂ (inverse, unique by the same one-line argument as Proposition §12.1); the matrix of the inverse map is t",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 41,
+"term": "general linear group",
+"count": 1,
+"context": "> - The invertible · matrices form a group under multiplication, the general linear group: ⟂. Theorem §12.4 below lists the group properties (inverses of inverses and of products).",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-4"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 179,
+"term": "hooke's law",
+"count": 1,
+"context": "beam supported at both ends carries forces · at three points, and · lists the deflections at those points. By Hooke's law, · for a **flexibility matrix** ·; its inverse · is the **stiffness matrix**. Since · and · is a unit downwar",
+"targets": [
+"Calculus|§42 Work#^def-42-4",
+"Ordinary Differential Equations|§19 Mechanical and Electrical Vibrations#^def-19-1"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 287,
+"term": "permutation",
+"count": 10,
+"context": "> [!definition] Definition §12.4: Permutation Matrix",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 306,
+"term": "injective",
+"count": 1,
+"context": "> - Permutation matrices are the matrices · of the linear maps that permute the standard basis, and · is an injective homomorphism ·: ⟂, ⟂. The count · is the order of ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 306,
+"term": "homomorphism",
+"count": 1,
+"context": "utation matrices are the matrices · of the linear maps that permute the standard basis, and · is an injective homomorphism ·: ⟂, ⟂. The count · is the order of ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§12 The Inverse of a Matrix",
+"line": 382,
+"term": "standard basis vectors",
+"count": 1,
+"context": "of · is (column · of ·) · (column · of ·), which is · if · and · otherwise, because the columns are distinct standard basis vectors.",
+"targets": [
+"Calculus|§81 Vectors#^def-81-8"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 14,
+"term": "inverse function",
+"count": 2,
+"context": "of a square matrix is automatically two-sided. The theorem is then read for linear transformations: · has an inverse function exactly when its standard matrix is invertible, and the inverse is again linear. The theorem grows in later s",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 79,
+"term": "injective",
+"count": 3,
+"context": "> - Rigorous treatment: for a linear operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of piv",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 79,
+"term": "surjective",
+"count": 3,
+"context": "> - Rigorous treatment: for a linear operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting;",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 79,
+"term": "fundamental theorem of linear maps",
+"count": 1,
+"context": "operator on a finite-dimensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, ⟂.",
+"targets": [
+"Linear Algebra|Fundamental theorem of linear maps",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-21"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 79,
+"term": "linear map",
+"count": 2,
+"context": "mensional space, injective · surjective · invertible, ⟂ (hub ⟂), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 84,
+"term": "linearly dependent",
+"count": 2,
+"context": "every singular matrix: an · singular matrix is not row equivalent to ·, has fewer than · pivot positions, has linearly dependent columns, and so on.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§13 Characterizations of Invertible Matrices",
+"line": 85,
+"term": "existence of solutions",
+"count": 1,
+"context": "**only to square matrices**. If the columns of a · matrix are linearly independent, nothing follows about the existence of solutions of ·.",
+"targets": [
+"Logic and Proofs|§18★ Linear Diophantine Equations#^thm-18-1"
+]
+},
+{
+"note": "§14 Partitioned Matrices",
+"line": 14,
+"term": "outer products",
+"count": 2,
+"context": "ock product is kept. The most general view of a product is then the column–row expansion: · is the sum of the outer products (column · of ·)(row · of ·). Block equations also give inverses of structured matrices, such as block upper t",
+"targets": [
+"Functional Analysis|§30 Bras, Kets, and the Riesz Map#^def-30-2"
+]
+},
+{
+"note": "§14 Partitioned Matrices",
+"line": 194,
+"term": "diagonal matrix",
+"count": 2,
+"context": "> with square diagonal blocks is **block upper triangular**. A **block diagonal matrix** is a partitioned matrix with zero blocks off the main diagonal (of blocks).",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§14 Partitioned Matrices",
+"line": 194,
+"term": "block diagonal matrix",
+"count": 2,
+"context": "> with square diagonal blocks is **block upper triangular**. A **block diagonal matrix** is a partitioned matrix with zero blocks off the main diagonal (of blocks).",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-35"
+]
+},
+{
+"note": "§15 Matrix Factorizations",
+"line": 240,
+"term": "permutation",
+"count": 3,
+"context": "uracy. The algorithm is then modified to produce an · that is **permuted lower triangular**: a rearrangement (permutation) of its rows makes it unit lower triangular. The resulting **permuted LU factorization** solves · as before,",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§15 Matrix Factorizations",
+"line": 240,
+"term": "permutation matrices",
+"count": 1,
+"context": "h · unit lower triangular; compare the lecture's description of row reduction as a product of replacement and permutation matrices (⟂).",
+"targets": [
+"Group Theory|§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5"
+]
+},
+{
+"note": "§15 Matrix Factorizations",
+"line": 240,
+"term": "rearrangement",
+"count": 1,
+"context": "is used for accuracy. The algorithm is then modified to produce an · that is **permuted lower triangular**: a rearrangement (permutation) of its rows makes it unit lower triangular. The resulting **permuted LU factorization** solves",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-4"
+]
+},
+{
+"note": "§15 Matrix Factorizations",
+"line": 245,
+"term": "dense",
+"count": 2,
+"context": "> For an · dense matrix · (most entries nonzero) with · moderately large, say · (a *flop* is one ·, ·, · or ·):",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§15 Matrix Factorizations",
+"line": 254,
+"term": "boundary value problem",
+"count": 1,
+"context": "> - PDE version: the replacement equations of a two-point boundary value problem, ⟂, form a tridiagonal, hence sparse, system, solved by elimination in a number of operations proportional to",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§16 The Leontief Input–Output Model",
+"line": 14,
+"term": "geometric series",
+"count": 2,
+"context": "· sums to less than 1, · is invertible, the production vector is nonnegative, and · is the sum of the matrix geometric series ·, each term being one more round of demand. The entries of · say how production must change when final deman",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§16 The Leontief Input–Output Model",
+"line": 194,
+"term": "norm",
+"count": 2,
+"context": "ix form of the geometric series · for ·, ⟂; \"column sums less than 1\" plays the role of · (it says that · has norm less than · in the norm given by the largest absolute column sum).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§17 Applications to Computer Graphics",
+"line": 14,
+"term": "homogeneous coordinates",
+"count": 16,
+"context": "e columns of · are the images of the points, and segments go to segments. Translations are not linear, but in homogeneous coordinates, where · is stored as ·, they become · matrix multiplications too. Then every movement of a figure, scaling,",
+"targets": [
+"Differentiable Manifolds|§17 Projective Spaces as Smooth Manifolds#^def-17-1"
+]
+},
+{
+"note": "§17 Applications to Computer Graphics",
+"line": 49,
+"term": "linear map",
+"count": 1,
+"context": "ctor ·. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§17 Applications to Computer Graphics",
+"line": 214,
+"term": "parametrization",
+"count": 1,
+"context": "me argument in the ·-plane gives ·. (The picture has · and ·; the formulas hold for all points with ·, as the parametrization shows: the line through · and · consists of the points ·, and the third coordinate is · exactly when ·, which",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§18 Subspaces of ℝⁿ",
+"line": 73,
+"term": "closure",
+"count": 1,
+"context": "> **(a)** A line · *not* through the origin is not a subspace: it does not contain ·. It also fails closure: for ·, · on ·, · is not on ·, and for · on ·, · is not on ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§18 Subspaces of ℝⁿ",
+"line": 81,
+"term": "nonlinear equations",
+"count": 1,
+"context": "> The lecture's moral: subspaces of · are defined by *linear* conditions. Inequalities or nonlinear equations in the description of a set are a reason to suspect it is not a subspace. A subspace must contain ·, every li",
+"targets": [
+"Ordinary Differential Equations|§3 Classification of Differential Equations#^def-3-4"
+]
+},
+{
+"note": "§18 Subspaces of ℝⁿ",
+"line": 156,
+"term": "linear map",
+"count": 1,
+"context": "> - Rigorous treatment: for a linear map ·, · is a subspace of · and · a subspace of ·, ⟂ and ⟂; for · these are · and · (kernel and range, ⟂).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§18 Subspaces of ℝⁿ",
+"line": 170,
+"term": "spans",
+"count": 2,
+"context": "> A **basis** for a subspace · of · is a linearly independent set in · that spans ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§18 Subspaces of ℝⁿ",
+"line": 233,
+"term": "linear dependence",
+"count": 1,
+"context": "of · are columns 1, 2 and 5. Since · and · have the same solutions, the columns of · satisfy exactly the same linear dependence relations as the columns of ·:",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§19 Dimension and Rank",
+"line": 14,
+"term": "basis of a subspace",
+"count": 2,
+"context": "A basis of a subspace · gives every vector of · unique coordinates, so a basis of · vectors makes · look and act like ·. Every basi",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^lem-3-1"
+]
+},
+{
+"note": "§19 Dimension and Rank",
+"line": 14,
+"term": "basis theorem",
+"count": 3,
+"context": "columns. Since every column is one or the other, they add up to the number of columns: the Rank Theorem. The Basis Theorem says that in a ·-dimensional subspace, · independent vectors, or · spanning vectors, are automatically a basi",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§19 Dimension and Rank",
+"line": 167,
+"term": "linear map",
+"count": 1,
+"context": "> - Rigorous treatment: the fundamental theorem of linear maps, ·, ⟂ (hub ⟂), proved by extending a basis of · to a basis of · instead of counting pivots; for · it is this",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§19 Dimension and Rank",
+"line": 170,
+"term": "direct sum",
+"count": 3,
+"context": "ries it one-to-one onto ·. The second part is the projection of · onto the ·-axis ·, which · kills. So ·, a **direct sum**: every vector of · is in exactly one way a vector of · plus a vector of · (equivalently, the two subspaces",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-5",
+"Functional Analysis|§1 Linear Spaces#^def-1-4",
+"Linear Algebra|§3 Subspaces#^ladr-1-41"
+]
+},
+{
+"note": "§19 Dimension and Rank",
+"line": 172,
+"term": "direct sums",
+"count": 1,
+"context": "· and · is only a line in ·. (Lay's Practice Problem 2 of 2.8 is the · analogue, with · in both · and ·.) The direct sums that do hold for every · matrix are",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^prop-20-7"
+]
+},
+{
+"note": "§2 Row Reduction and Echelon Forms",
+"line": 85,
+"term": "linear dependence",
+"count": 1,
+"context": "only the shape of ·, not uniqueness. The proof idea (Lay's Appendix A): row-equivalent matrices have the same linear dependence relations among their columns.",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§20 Introduction to Determinants",
+"line": 74,
+"term": "permutations",
+"count": 2,
+"context": "rough the one-dimensional space of alternating ·-linear forms (⟂) and derives the closed formula · over all · permutations (⟂); unwinding Lay's recursion gives exactly this sum.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 223,
+"term": "initial condition",
+"count": 1,
+"context": "equations, where the determinant is the Wronskian. For ·, two solutions can be combined to meet every pair of initial conditions at · if and only if their Wronskian is nonzero there, ⟂; for · solutions of · with nonzero Wronskian, every s",
+"targets": [
+"Calculus|§57 Modeling with Differential Equations#^def-57-7",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-4",
+"Ordinary Differential Equations|§2 Solutions of Some Differential Equations#^def-2-1"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 255,
+"term": "linearly dependent",
+"count": 2,
+"context": "> If the columns of · are linearly dependent, or the rows of · are linearly dependent, then ·. In practice, linear dependence is obvious when two columns",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 255,
+"term": "linear dependence",
+"count": 1,
+"context": "> If the columns of · are linearly dependent, or the rows of · are linearly dependent, then ·. In practice, linear dependence is obvious when two columns or two rows are equal, or when a column or a row is zero.",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 285,
+"term": "principle of mathematical induction",
+"count": 1,
+"context": "> By induction on · (the Principle of Mathematical Induction: if · holds and · implies · for each ·, then · holds for all ·). The theorem is obvious for ·. Suppose it is",
+"targets": [
+"Calculus|§120 Sigma Notation#^def-120-2",
+"Single Variable Analysis|§1 The Set ℕ of Natural Numbers#^thm-1-1"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 363,
+"term": "linear map",
+"count": 1,
+"context": "> The lecture's geometric reason: the linear map · multiplies volumes by · (⟂, ⟂). Applying · and then · multiplies a volume first by ·, then by ·; and the co",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 392,
+"term": "homomorphism",
+"count": 1,
+"context": "> - In group language, · is a homomorphism from the general linear group (⟂) to the nonzero reals under multiplication.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§21 Properties of Determinants",
+"line": 392,
+"term": "general linear group",
+"count": 1,
+"context": "> - In group language, · is a homomorphism from the general linear group (⟂) to the nonzero reals under multiplication.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-4"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 14,
+"term": "linear map",
+"count": 1,
+"context": "the area (in ·) or volume (in ·) of the parallelogram or parallelepiped spanned by the columns of ·, and the linear map · multiplies every area or volume by ·. In multivariable calculus this factor becomes the Jacobian.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 14,
+"term": "parallelepiped",
+"count": 10,
+"context": "ow solutions depend on the data. Geometrically, · is the area (in ·) or volume (in ·) of the parallelogram or parallelepiped spanned by the columns of ·, and the linear map · multiplies every area or volume by ·. In multivariable calc",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 14,
+"term": "jacobian",
+"count": 2,
+"context": "and the linear map · multiplies every area or volume by ·. In multivariable calculus this factor becomes the Jacobian.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 60,
+"term": "initial condition",
+"count": 1,
+"context": "> - See also: Cramer's rule for · fits a combination · of two solutions of · to initial conditions, with the Wronskian as the common denominator, ⟂ (formula (11) of its proof).",
+"targets": [
+"Calculus|§57 Modeling with Differential Equations#^def-57-7",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-4",
+"Ordinary Differential Equations|§2 Solutions of Some Differential Equations#^def-2-1"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 156,
+"term": "adjoint",
+"count": 3,
+"context": "> The **adjugate** (or **classical adjoint**) of an · matrix · is the transpose of the matrix of cofactors (⟂):",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-1"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 162,
+"term": "inner product space",
+"count": 1,
+"context": "he term *adjoint* has another meaning in advanced texts on linear transformations: the adjoint operator of an inner product space.)",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 286,
+"term": "diagonal matrix",
+"count": 5,
+"context": "> **·.** The theorem is obviously true for a diagonal matrix:",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 292,
+"term": "linearly dependent",
+"count": 1,
+"context": "> If the columns of · are linearly dependent, the parallelogram is degenerate (a segment or a point) with area ·, and · (⟂). So let · be invertible. It su",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 302,
+"term": "measurable set",
+"count": 1,
+"context": "> - Rigorous treatment in · for every measurable set: ⟂ (proved via the singular value decomposition, ⟂); the sign of · records orientation, which · forgets.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-4"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 399,
+"term": "change of variables formula",
+"count": 1,
+"context": "> - For a nonlinear map the factor · becomes the absolute value of the Jacobian determinant in the change of variables formula: ⟂ (double integrals), ⟂ (in ·). This is the \"expansion rate near the poles\" of Lay's chapter introduction.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§22 Cramer’s Rule, Volume, and Linear Transformations",
+"line": 399,
+"term": "change of variables",
+"count": 1,
+"context": "> - For a nonlinear map the factor · becomes the absolute value of the Jacobian determinant in the change of variables formula: ⟂ (double integrals), ⟂ (in ·). This is the \"expansion rate near the poles\" of Lay's chapter introdu",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§23 Vector Spaces and Subspaces",
+"line": 129,
+"term": "continuous function",
+"count": 1,
+"context": "s the function that is identically zero, and the negative of · is ·. Inside it the lecture singles out ·, the continuous functions on · (such as ·, ·, ·), and ·, the functions with derivatives of all orders (such as ·; but not ·).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§23 Vector Spaces and Subspaces",
+"line": 182,
+"term": "smooth function",
+"count": 1,
+"context": "> **(b) Polynomials and smooth functions.** · is a subspace of the space of all real-valued functions on ·, and for each ·, · is a subspace of ·: it c",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§23 Vector Spaces and Subspaces",
+"line": 206,
+"term": "fibonacci numbers",
+"count": 1,
+"context": "nacci-type sequence as a combination of these two geometric sequences, which gives the closed formula for the Fibonacci numbers.)",
+"targets": [
+"Logic and Proofs|§5 The Induction Principle#^def-5-5"
+]
+},
+{
+"note": "§23 Vector Spaces and Subspaces",
+"line": 261,
+"term": "closure",
+"count": 3,
+"context": "> **Smallest.** If a subspace · contains ·, it contains each · by closure under scalar multiplication, and then the sum · by closure under addition (applied · times). So ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 52,
+"term": "homogeneous systems",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂, ⟂ (the null space of any linear map is a subspace), and homogeneous systems with more unknowns than equations have nonzero solutions, ⟂.",
+"targets": [
+"Ordinary Differential Equations|§27 Introduction to Systems of First-Order Linear Equations#^def-27-2"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 107,
+"term": "spans",
+"count": 1,
+"context": "> Every linear combination of ·, ·, · is in · and vice versa, so · spans ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 127,
+"term": "linear independence",
+"count": 1,
+"context": "*Uses:* ⟂ (linear independence)",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 204,
+"term": "linear dependence",
+"count": 1,
+"context": "o rows of an echelon form of · form a basis of · (⟂, Theorem 13 of 4.6; used in ⟂). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of ·* to keep.",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 313,
+"term": "mean value theorem",
+"count": 1,
+"context": "ation. Its kernel is the set of constant functions on · (a function with · on an interval is constant, by the Mean Value Theorem), and its range is all of · (every continuous · is the derivative of ·, by the Fundamental Theorem of Calculu",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 313,
+"term": "continuous function",
+"count": 1,
+"context": "f real-valued functions · on · that are differentiable with continuous derivative on ·, let · be the space of continuous functions on ·, and let · send · to ·. The rules · and · of calculus say that · is a linear transformation. Its kernel",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§24 Null Spaces, Column Spaces, and Linear Transformations",
+"line": 313,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "ant, by the Mean Value Theorem), and its range is all of · (every continuous · is the derivative of ·, by the Fundamental Theorem of Calculus). Lay states these two facts (\"it can be shown\"); the parenthetical reasons are the standard calculus theorem",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 14,
+"term": "linear independence",
+"count": 2,
+"context": "This section identifies the subsets that span a vector space · (or a subspace ·) as efficiently as possible. Linear independence is defined exactly as in ·, and a basis is a linearly independent spanning set. A basis can always be cut out",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 25,
+"term": "linear dependence",
+"count": 5,
+"context": "rivial solution, that is, if there are weights ·, *not all zero*, such that (1) holds; then (1) is called a **linear dependence relation** among ·.",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 67,
+"term": "continuous function",
+"count": 1,
+"context": "> **(b)** · is linearly independent in ·, the space of continuous functions on ·: as *vectors in ·* neither is a multiple of the other, since there is no scalar · with · for all · (at ·",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 108,
+"term": "fundamental theorem of algebra",
+"count": 1,
+"context": "eal number is a zero of it. A polynomial of degree at most · with more than · zeros is the zero polynomial (a fundamental theorem of algebra), so ·. Thus · is linearly independent, hence a basis. The lecture calls it the **monomial basis**.",
+"targets": [
+"Complex Variables|Fundamental Theorem of Algebra (Liouville proof)",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2",
+"Topology|Fundamental Theorem of Algebra (topological proof)",
+"Topology|§25 The Fundamental Theorem of Algebra#^thm-25-1"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 307,
+"term": "orthonormal",
+"count": 1,
+"context": "Definition §25.2, since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space (⟂); as the lecture says, such bases are a subject of real analysis.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 307,
+"term": "hilbert space",
+"count": 1,
+"context": "e most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space (⟂); as the lecture says, such bases are a subject of real analysis.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§25 Linearly Independent Sets; Bases",
+"line": 307,
+"term": "smooth function",
+"count": 1,
+"context": "n the mean, ⟂; Fourier series: ⟂); the harmonics are not a basis in the sense of Definition §25.2, since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space (⟂); as t",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§26 Coordinate Systems",
+"line": 14,
+"term": "linear map",
+"count": 1,
+"context": "ay, and the weights are its coordinates. If the basis has · vectors, the coordinate mapping · is a one-to-one linear map onto ·, an isomorphism, so the space \"acts like\" ·: questions about polynomials or functions become questions",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§26 Coordinate Systems",
+"line": 14,
+"term": "change of coordinates",
+"count": 3,
+"context": "mn vectors, settled by row reduction. When the space is · itself, a basis · gives a new \"view\" of it, and the change-of-coordinates matrix · translates between the two views.",
+"targets": [
+"Differentiable Manifolds|§28 The Differential in Coordinates#^cor-28-4"
+]
+},
+{
+"note": "§26 Coordinate Systems",
+"line": 30,
+"term": "spans",
+"count": 1,
+"context": "> Since · spans ·, there exist scalars such that (1) holds. Suppose · also has the representation · for scalars ·. Subtractin",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§26 Coordinate Systems",
+"line": 235,
+"term": "fibonacci numbers",
+"count": 1,
+"context": "equences with eigenvalues in L18: ⟂ uses the basis of the two geometric sequences ·, · instead, and finds the Fibonacci numbers in closed form.)",
+"targets": [
+"Logic and Proofs|§5 The Induction Principle#^def-5-5"
+]
+},
+{
+"note": "§26 Coordinate Systems",
+"line": 243,
+"term": "linearly dependent",
+"count": 2,
+"context": "> **(a)** Use coordinate vectors to verify that ·, · and · are linearly dependent in ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§27 The Dimension of a Vector Space",
+"line": 14,
+"term": "isomorphic",
+"count": 2,
+"context": "A vector space with a basis of · vectors is isomorphic to · through the coordinate mapping (⟂). This section shows that the number · does not depend on the basis ch",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§27 The Dimension of a Vector Space",
+"line": 14,
+"term": "basis theorem",
+"count": 4,
+"context": "ast · vectors), and when a set has exactly · vectors, one of the two properties gives the other for free (the Basis Theorem). For a matrix, · and · are read off an echelon form. (The instructor's checklist for \"Section 4.5\" follows t",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§27 The Dimension of a Vector Space",
+"line": 151,
+"term": "every linearly independent list extends to a basis",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (every linearly independent list extends to a basis; Axler adjoins vectors of a spanning list of ·, so the process visibly stops) and ⟂ (dimension of a subspace)",
+"targets": [
+"Linear Algebra|Every linearly independent list extends to a basis"
+]
+},
+{
+"note": "§27 The Dimension of a Vector Space",
+"line": 223,
+"term": "linear map",
+"count": 1,
+"context": "> [!theorem] Proposition §27.7: Linear Maps and Dimension",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§28 Rank",
+"line": 33,
+"term": "linear dependence",
+"count": 2,
+"context": "Row operations change the linear dependence relations among the rows, so they do not tell us which rows of · to keep. But they do preserve the row space",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§28 Rank",
+"line": 189,
+"term": "linear map",
+"count": 3,
+"context": "> - Rigorous treatment: · is the ⟂, · for any linear map on a finite-dimensional ·, proved by extending a basis of the null space instead of counting pivots. Column r",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§28 Rank",
+"line": 189,
+"term": "dual map",
+"count": 1,
+"context": "ing pivots. Column rank equals row rank: ⟂ (via a column–row factorization, without row reduction) and ⟂ (via dual maps); rank ⟂.",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-2"
+]
+},
+{
+"note": "§28 Rank",
+"line": 317,
+"term": "basis theorem",
+"count": 1,
+"context": "·, so · by the Rank Theorem; then · (⟂), and the · columns, spanning the ·-dimensional ·, form a basis by the Basis Theorem. So (q) · (m).",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§29 Change of Basis",
+"line": 56,
+"term": "change of coordinates",
+"count": 4,
+"context": "> [!theorem] Theorem §29.1: The Change-of-Coordinates Matrix",
+"targets": [
+"Differentiable Manifolds|§28 The Differential in Coordinates#^cor-28-4"
+]
+},
+{
+"note": "§29 Change of Basis",
+"line": 76,
+"term": "spans",
+"count": 1,
+"context": "> **The matrix (5) works.** Let ·. Since · spans ·, there are scalars · with ·, that is, ·. Apply the coordinate mapping of ·, which is linear (⟂):",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§29 Change of Basis",
+"line": 104,
+"term": "matrix of an operator",
+"count": 1,
+"context": "That the two change-of-coordinates matrices are inverse to each other is ⟂, and conjugating by it changes the matrix of an operator, ·, ⟂ (in Lay: similarity of matrix representations, Section 5.4, ⟂).",
+"targets": [
+"Linear Algebra|§16 Upper-Triangular Matrices#^ladr-5-35"
+]
+},
+{
+"note": "§3 Vector Equations",
+"line": 177,
+"term": "linear span",
+"count": 1,
+"context": "> with · scalars. The lecture calls it the **linear span**.",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-5"
+]
+},
+{
+"note": "§3 Vector Equations",
+"line": 205,
+"term": "closure",
+"count": 1,
+"context": "These two closure properties are what will make every span a *subspace* (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 14,
+"term": "basis theorem",
+"count": 3,
+"context": "lutions of a homogeneous linear difference equation of order · form an ·-dimensional subspace of ·, so by the Basis Theorem any · linearly independent solutions (found from the roots of the auxiliary equation and checked with the Cas",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 14,
+"term": "first-order system",
+"count": 3,
+"context": "Fibonacci numbers of lecture L18 are the standard example. Finally, every such equation can be rewritten as a first-order system ·, the form studied with eigenvectors in Chapter 5.",
+"targets": [
+"Ordinary Differential Equations|§27 Introduction to Systems of First-Order Linear Equations#^def-27-1"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 25,
+"term": "compact",
+"count": 1,
+"context": "Signals arise wherever a process is measured, or *sampled*, at discrete time intervals. A compact disc stores music sampled · times per second: the amplitude · at each measurement, and the sequence · contain",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 27,
+"term": "linear independence",
+"count": 1,
+"context": "## Linear Independence in the Space 𝕊 of Signals",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 191,
+"term": "multiplicity",
+"count": 1,
+"context": "Lay does not treat repeated roots of the auxiliary equation (then · gives fewer than · solutions; a root · of multiplicity two also gives ·, as in Exercise 5). Lecture L18 poses the recurrence · as an exercise (the left side is writ",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 292,
+"term": "linearly dependent",
+"count": 2,
+"context": "nvertible for all · and the signals are linearly independent, or · is invertible for no · and the signals are linearly dependent.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 340,
+"term": "spans",
+"count": 1,
+"context": "three solutions are linearly independent. In general it can be hard to verify directly that a set of signals *spans* the solution space, but here there is no need: by Theorem §30.5 the solution space is exactly three-dimensio",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 382,
+"term": "strong induction",
+"count": 1,
+"context": "> - The same formula by strong induction: ⟂ (Binet formula, with Fibonacci numbers ⟂ starting at ·). By diagonalizing an operator: ⟂. The Fibonacci se",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§30 Applications to Difference Equations",
+"line": 384,
+"term": "nonhomogeneous equations",
+"count": 1,
+"context": "## Nonhomogeneous Equations",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-3"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 14,
+"term": "first-order difference equation",
+"count": 2,
+"context": "ome just before. The state is a probability vector ·, and one step multiplies it by a stochastic matrix: ·, a first-order difference equation as in ⟂. Such chains are used in biology, business, chemistry, engineering and physics. The interesting quest",
+"targets": [
+"Ordinary Differential Equations|§12★ First-Order Difference Equations#^def-12-1"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 195,
+"term": "linearly dependent",
+"count": 1,
+"context": "Hence if all the other rows of · are added to the bottom row, the result is a row of zeros: the rows of · are linearly dependent. So ·, that is, ·, and by the Rank Theorem (⟂) ·: · has a nontrivial solution.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 209,
+"term": "subsequence",
+"count": 1,
+"context": "value at most ·. The probability vectors form a bounded set in ·, so by the Bolzano–Weierstrass theorem some subsequence · converges to a vector ·. Limits preserve \"entries ·\" and \"entries add up to ·\", so · is a probability vecto",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 209,
+"term": "bolzano–weierstrass",
+"count": 2,
+"context": "so every entry of · has absolute value at most ·. The probability vectors form a bounded set in ·, so by the Bolzano–Weierstrass theorem some subsequence · converges to a vector ·. Limits preserve \"entries ·\" and \"entries add up to ·\", so",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 209,
+"term": "bounded set",
+"count": 1,
+"context": "robability vectors lie in ·, so every entry of · has absolute value at most ·. The probability vectors form a bounded set in ·, so by the Bolzano–Weierstrass theorem some subsequence · converges to a vector ·. Limits preserve \"entr",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§31 Applications to Markov Chains",
+"line": 209,
+"term": "bolzano–weierstrass theorem",
+"count": 1,
+"context": "so every entry of · has absolute value at most ·. The probability vectors form a bounded set in ·, so by the Bolzano–Weierstrass theorem some subsequence · converges to a vector ·. Limits preserve \"entries ·\" and \"entries add up to ·\", so · is a",
+"targets": [
+"Single Variable Analysis|Bolzano–Weierstrass Theorem"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 51,
+"term": "spans",
+"count": 1,
+"context": "is not injective · not invertible); there for an operator · on any finite-dimensional ·, where an eigenvector spans a one-dimensional invariant subspace.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 51,
+"term": "injective",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (eigenvalue), ⟂ (eigenvector) and ⟂ (· is an eigenvalue · · is not injective · not invertible); there for an operator · on any finite-dimensional ·, where an eigenvector spans a one-dime",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 73,
+"term": "linearly dependent",
+"count": 6,
+"context": "> The columns of · are obviously linearly dependent, so this homogeneous system has nontrivial solutions, and · *is* an eigenvalue. Row reduce:",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 279,
+"term": "direct sum",
+"count": 1,
+"context": "same minimal-counterexample argument) and ⟂ (at most · eigenvalues). In Axler's terms the eigenspaces form a direct sum, ⟂.",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-5",
+"Functional Analysis|§1 Linear Spaces#^def-1-4",
+"Linear Algebra|§3 Subspaces#^ladr-1-41"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 284,
+"term": "first-order difference equation",
+"count": 1,
+"context": "Let · be ·. The **first-order difference equation**",
+"targets": [
+"Ordinary Differential Equations|§12★ First-Order Difference Equations#^def-12-1"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 326,
+"term": "fibonacci numbers",
+"count": 2,
+"context": "is solved. This is the idea of the rest of the chapter (⟂, ⟂). The lecture uses it to find a formula for the Fibonacci numbers. Finding the eigenvalues uses the characteristic equation · of the next section: · has a nonzero null space e",
+"targets": [
+"Logic and Proofs|§5 The Induction Principle#^def-5-5"
+]
+},
+{
+"note": "§32 Eigenvectors and Eigenvalues",
+"line": 331,
+"term": "first-order system",
+"count": 1,
+"context": "> **A first-order system.** Let ·, so ·. Then",
+"targets": [
+"Ordinary Differential Equations|§27 Introduction to Systems of First-Order Linear Equations#^def-27-1"
+]
+},
+{
+"note": "§33 The Characteristic Equation",
+"line": 76,
+"term": "parallelepiped",
+"count": 1,
+"context": "When · is ·, · is the volume of the parallelepiped determined by the columns · (⟂). This volume is nonzero exactly when the columns are linearly independent, in",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§33 The Characteristic Equation",
+"line": 200,
+"term": "fundamental theorem of algebra",
+"count": 1,
+"context": "> A polynomial of degree · has at most · roots: if ·, then · with · (lecture L19). By the **Fundamental Theorem of Algebra**, every polynomial · factors as · with · possibly complex. So the characteristic equation of an · matrix has",
+"targets": [
+"Complex Variables|Fundamental Theorem of Algebra (Liouville proof)",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2",
+"Topology|Fundamental Theorem of Algebra (topological proof)",
+"Topology|§25 The Fundamental Theorem of Algebra#^thm-25-1"
+]
+},
+{
+"note": "§33 The Characteristic Equation",
+"line": 290,
+"term": "diagonalizable",
+"count": 2,
+"context": "pace of · for · onto the eigenspace of · for · (with inverse ·). In particular, if · is similar to · and · is diagonalizable, so is · (⟂).",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§33 The Characteristic Equation",
+"line": 297,
+"term": "linear map",
+"count": 1,
+"context": "changing the roles of · and · (with ·), · maps eigenvectors of · for · to eigenvectors of · for ·, so the two linear maps · and · are inverse to each other between the two eigenspaces. For the last statement: · diagonalizable means",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 14,
+"term": "linearly independent eigenvectors",
+"count": 7,
+"context": "Such an · is called diagonalizable. The Diagonalization Theorem says exactly when this happens: when · has · linearly independent eigenvectors, which then form the columns of ·, with the eigenvalues on the diagonal of ·. Distinct eigenvalues guarantee",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 106,
+"term": "direct sum",
+"count": 1,
+"context": "gonalizable if it has a diagonal matrix in *some* basis) and ⟂ (equivalent: a basis of eigenvectors; · is the direct sum of the eigenspaces; the eigenspace dimensions add up to ·). Axler's (a) · (b) is the operator form of ·; that",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-5",
+"Functional Analysis|§1 Linear Spaces#^def-1-4",
+"Linear Algebra|§3 Subspaces#^ladr-1-41"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 107,
+"term": "minimal polynomial",
+"count": 1,
+"context": "> - A further criterion with no counterpart in Lay: diagonalizable · the minimal polynomial has distinct linear factors, ⟂.",
+"targets": [
+"Linear Algebra|§15 The Minimal Polynomial#^ladr-5-24"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 108,
+"term": "matrix exponential",
+"count": 1,
+"context": "with the eigenvectors as columns of ·). For · it gives a fundamental set of eigenvector solutions, ⟂, and the matrix exponential ·, the continuous analogue of ·, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Matrix Exponential Solution"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 228,
+"term": "linear dependence",
+"count": 1,
+"context": "for ·. If some · were nonzero, the nonzero ones would be eigenvectors for distinct eigenvalues with sum ·, a linear dependence contradicting ⟂. So every ·, and since · is linearly independent, all the weights in · are zero. Hence · is l",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-2"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 230,
+"term": "basis theorem",
+"count": 2,
+"context": "(c) and the first part of (b).** If ·, Step 0 gives · linearly independent eigenvectors, a basis of · (⟂, the Basis Theorem), so · is diagonalizable by Theorem §34.1. Conversely, if · is diagonalizable, it has · linearly independent",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§34 Diagonalization",
+"line": 240,
+"term": "factorization into linear factors",
+"count": 1,
+"context": "ality if and only if · is a constant, that is, if and only if · factors completely into linear factors (i): a factorization into linear factors · has real roots ·, so each · is one of the ·. By (a),",
+"targets": [
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4"
+]
+},
+{
+"note": "§35 Eigenvectors and Linear Transformations",
+"line": 67,
+"term": "change of coordinates",
+"count": 3,
+"context": "> When · and · are bases of the same space · and · is the identity, ·, the matrix · is the change-of-coordinates matrix · of ⟂.",
+"targets": [
+"Differentiable Manifolds|§28 The Differential in Coordinates#^cor-28-4"
+]
+},
+{
+"note": "§35 Eigenvectors and Linear Transformations",
+"line": 74,
+"term": "linear map",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (matrix of a linear map, ·, column · = coordinates of ·) and, for operators, ⟂. Equation (3) is Axler's ·; Lay's · is Axler's ·.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§35 Eigenvectors and Linear Transformations",
+"line": 108,
+"term": "diagonalizable",
+"count": 4,
+"context": "eigenspace spanned by ·, the constants: the polynomials whose derivative is ·. So differentiation on · is not diagonalizable.)",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§35 Eigenvectors and Linear Transformations",
+"line": 118,
+"term": "diagonal matrix",
+"count": 2,
+"context": "> [!theorem] Theorem §35.2: Diagonal Matrix Representation",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§35 Eigenvectors and Linear Transformations",
+"line": 170,
+"term": "characteristic polynomial",
+"count": 3,
+"context": "why similar matrices share everything that belongs to the transformation rather than to the coordinates: the characteristic polynomial (⟂), the eigenvalues, the dimensions of the eigenspaces (⟂) and diagonalizability.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 66,
+"term": "linearly dependent",
+"count": 1,
+"context": "equations determine the same relationship between · and ·* (the matrix (1) is not invertible, so its rows are linearly dependent in ·: one is a complex multiple of the other). Use the second: ·, so ·. Choosing · to clear the decimals give",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 104,
+"term": "orbit",
+"count": 2,
+"context": "> The points · circle the origin counterclockwise along an elliptical orbit and never settle down. The reason is Example §36.4 below: · is a pure rotation in a suitable coordinate syste",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-3",
+"Group Theory|§27 Orbits#^def-27-1"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 171,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "eatment: the non-real zeros of a polynomial with real coefficients come in conjugate pairs, ⟂ (applied to the characteristic polynomial, this gives the eigenvalue half of Theorem §36.2); over · such a pair is an irreducible quadratic factor, ⟂.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 209,
+"term": "jacobian",
+"count": 1,
+"context": "> - See also: ⟂ (the map · rotates through · and scales by ·), ⟂ (the Cauchy–Riemann equations make the Jacobian of an analytic map a rotation–scaling matrix) and ⟂ (so analytic maps preserve angles where ·).",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 209,
+"term": "cauchy–riemann",
+"count": 1,
+"context": "> - See also: ⟂ (the map · rotates through · and scales by ·), ⟂ (the Cauchy–Riemann equations make the Jacobian of an analytic map a rotation–scaling matrix) and ⟂ (so analytic maps preserve an",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "§36 Complex Eigenvalues",
+"line": 293,
+"term": "invariant subspace",
+"count": 1,
+"context": "on a real vector space, an irreducible quadratic factor · (·) of the minimal polynomial gives two-dimensional invariant subspaces without real eigenvectors, ⟂ (and hence every operator on an odd-dimensional real space has an eigenvalue, ⟂)",
+"targets": [
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-2"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 14,
+"term": "growth rate",
+"count": 4,
+"context": "rm behavior is then read off from the eigenvalues: the eigenvalue of largest absolute value sets the eventual growth rate, and its eigenvector the eventual proportions. In the plane the eigenvalues classify the pictures. The origin",
+"targets": [
+"Calculus|§20 Rates of Change in the Natural and Social Sciences#^def-20-6"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 16,
+"term": "diagonalizable",
+"count": 3,
+"context": "Until Example §37.4 we assume that · is diagonalizable, with · linearly independent eigenvectors · and corresponding eigenvalues ·, arranged so that ·.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 16,
+"term": "linearly independent eigenvectors",
+"count": 2,
+"context": "Until Example §37.4 we assume that · is diagonalizable, with · linearly independent eigenvectors · and corresponding eigenvalues ·, arranged so that ·.",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 140,
+"term": "jacobian matrix",
+"count": 1,
+"context": "ear* dynamical system; a nonlinear system can have several, and they are classified by the eigenvalues of its Jacobian matrix.",
+"targets": [
+"Multivariable Analysis|§13 The Inverse Function Theorem#^def-13-1"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 140,
+"term": "jacobian",
+"count": 1,
+"context": "ear* dynamical system; a nonlinear system can have several, and they are classified by the eigenvalues of its Jacobian matrix.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 147,
+"term": "phase portrait",
+"count": 1,
+"context": "> - ODE version: trajectories and phase portraits of ·, ⟂, and asymptotic stability of the equilibrium ·, ⟂. The last sentence in dimension one: an equilibrium",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 147,
+"term": "asymptotically stable",
+"count": 1,
+"context": "nd asymptotic stability of the equilibrium ·, ⟂. The last sentence in dimension one: an equilibrium · of · is asymptotically stable if · and unstable if ·, ⟂.",
+"targets": [
+"Ordinary Differential Equations|§8 Autonomous Differential Equations and Population Dynamics#^def-8-6"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 147,
+"term": "phase portraits",
+"count": 1,
+"context": "> - ODE version: trajectories and phase portraits of ·, ⟂, and asymptotic stability of the equilibrium ·, ⟂. The last sentence in dimension one: an equilibrium",
+"targets": [
+"Ordinary Differential Equations|Classification of 2×2 Linear Systems"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 197,
+"term": "diagonal matrix",
+"count": 1,
+"context": "The diagonal case is the general one in disguise. Let · with · and · the diagonal matrix of the corresponding eigenvalues.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 229,
+"term": "change of coordinates",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (the change-of-coordinates equation)",
+"targets": [
+"Differentiable Manifolds|§28 The Differential in Coordinates#^cor-28-4"
+]
+},
+{
+"note": "§37 Discrete Dynamical Systems",
+"line": 256,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "> · has · and ·, so its characteristic polynomial is ·, with roots",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 14,
+"term": "diagonalizable",
+"count": 2,
+"context": "coefficients is solved by the same idea: each eigenvalue–eigenvector pair · gives a solution ·, and when · is diagonalizable these eigenfunctions combine into the general solution. In eigenvector coordinates the system decouples into",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 31,
+"term": "initial value problem",
+"count": 3,
+"context": "ed function that satisfies (1) for all · in some interval of real numbers, such as ·. Given a vector ·, the **initial value problem** is to construct the (unique) function · with · and ·.",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 37,
+"term": "superposition",
+"count": 2,
+"context": "> [!theorem] Proposition §38.1: Superposition of Solutions",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 38,
+"term": "continuous function",
+"count": 1,
+"context": "ero function is a (trivial) solution. So the set of all solutions of (1) is a subspace of the vector space of continuous functions with values in ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 61,
+"term": "matrix exponential",
+"count": 1,
+"context": "is a unique combination of a fundamental set, ⟂. For constant · and · these solutions are the columns of the matrix exponential ·, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Matrix Exponential Solution"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 183,
+"term": "linearly independent eigenvectors",
+"count": 1,
+"context": "> Let · be · with · linearly independent eigenvectors · and corresponding eigenvalues ·, so that · with · and ·. Then the change of variable",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 220,
+"term": "eigenfunction expansion",
+"count": 1,
+"context": "> This is the eigenfunction expansion of Examples §38.1 and §38.2. The eigenfunctions are linearly independent as functions: if a combination is th",
+"targets": [
+"Fourier Series and PDEs|§24 Expansion in Series of Eigenfunctions#^def-24-1"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 236,
+"term": "power series",
+"count": 2,
+"context": "> For a complex number · (·, · real) and real ·, · is defined by the power series ·, the series of · (⟂) with ·. Using the series for cosine and sine, one shows that",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§38 Applications to Differential Equations",
+"line": 246,
+"term": "euler's formula",
+"count": 1,
+"context": "*Lay omits the verification of (7). The factor · is Euler's formula, derived from the series in ⟂; the step · uses the law of exponents for complex numbers, which follows from t",
+"targets": [
+"Complex Variables|§7 Exponential Form#^def-7-2"
+]
+},
+{
+"note": "§39 Iterative Estimates for Eigenvalues",
+"line": 25,
+"term": "diagonalizable",
+"count": 1,
+"context": "Assume for simplicity that · is diagonalizable, with a basis of eigenvectors · whose eigenvalues decrease in size, the strictly dominant one first:",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§39 Iterative Estimates for Eigenvalues",
+"line": 51,
+"term": "spans",
+"count": 1,
+"context": "heir powers go to zero, and (3) follows. Multiplying a vector by a nonzero scalar does not change the line it spans, so the line through · is the line through ·, which tends to the line through ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§4 The Matrix Equation Ax = b",
+"line": 116,
+"term": "existence of solutions",
+"count": 1,
+"context": "## Existence of Solutions",
+"targets": [
+"Logic and Proofs|§18★ Linear Diophantine Equations#^thm-18-1"
+]
+},
+{
+"note": "§4 The Matrix Equation Ax = b",
+"line": 174,
+"term": "spans",
+"count": 1,
+"context": "> A set of vectors · in · **spans** (or **generates**) · if every vector in · is a linear combination of ·, that is, if ·. \"The columns of · sp",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§4 The Matrix Equation Ax = b",
+"line": 213,
+"term": "linear map",
+"count": 1,
+"context": "A pivot in every row needs at least · columns, so · makes (a)–(d) fail; Axler proves this by dimension: ⟂ (no linear map to a higher-dimensional space is surjective), ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 97,
+"term": "length of a vector",
+"count": 1,
+"context": "## The Length of a Vector",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-3"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 182,
+"term": "distance formula",
+"count": 1,
+"context": "> which for · is the Euclidean distance formula: a multidimensional Pythagorean Theorem.",
+"targets": [
+"Calculus|§117 Coordinate Geometry and Lines#^thm-117-1"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 290,
+"term": "spans",
+"count": 1,
+"context": "> 1. A vector · is in · if and only if · is orthogonal to every vector in a set that spans ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 338,
+"term": "linear map",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (· and · for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is ·). Orthogonal compleme",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 339,
+"term": "hilbert space",
+"count": 1,
+"context": "> - In a Hilbert space the complement of any set is a closed subspace, ⟂, and the double complement is the closed span, ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 383,
+"term": "basis theorem",
+"count": 2,
+"context": "dimension is all of it (a basis of · is a linearly independent set of · vectors there, hence a basis, by the Basis Theorem; this is ⟂). So ·. Taking complements in Theorem §40.6 gives · and ·.",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 457,
+"term": "law of cosines",
+"count": 3,
+"context": "> The triangle with vertices ·, ·, · has sides of lengths ·, ·, ·, and its angle at · is ·. The law of cosines gives",
+"targets": [
+"Calculus|§119 Trigonometry#^thm-119-11"
+]
+},
+{
+"note": "§40 Inner Product, Length, and Orthogonality",
+"line": 481,
+"term": "cauchy–schwarz",
+"count": 2,
+"context": "> - For · the definition of the angle needs · first: the Cauchy–Schwarz inequality, ⟂, proved here in ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 46,
+"term": "linear independence",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (linear independence), ⟂ (basis)",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 73,
+"term": "orthogonality",
+"count": 2,
+"context": "> As in the proof of Theorem §41.1, orthogonality kills all but one term:",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 87,
+"term": "hilbert space",
+"count": 1,
+"context": "> - In a Hilbert space the same coefficients give infinite expansions: ⟂, ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 174,
+"term": "cauchy–schwarz",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (an orthogonal decomposition · with ·, the step in Axler's proof of Cauchy–Schwarz) and ⟂ (projection onto a one-dimensional subspace).",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 174,
+"term": "orthogonal decomposition",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (an orthogonal decomposition · with ·, the step in Axler's proof of Cauchy–Schwarz) and ⟂ (projection onto a one-dimensional subspace).",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^thm-22-4"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 258,
+"term": "linear map",
+"count": 1,
+"context": "> So the linear map · preserves lengths and orthogonality.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§41 Orthogonal Sets",
+"line": 339,
+"term": "homomorphism",
+"count": 1,
+"context": "> - The orthogonal matrices form the group ·, ⟂, and · is a homomorphism onto · with kernel ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 37,
+"term": "orthogonal decomposition theorem",
+"count": 2,
+"context": "## The Orthogonal Decomposition Theorem",
+"targets": [
+"Functional Analysis|Orthogonal Decomposition Theorem"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 89,
+"term": "orthonormal",
+"count": 3,
+"context": "imensional ·; · itself may be infinite-dimensional) and the projection · of ⟂; Axler proves existence from an orthonormal basis of ·, exactly as here.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 89,
+"term": "orthonormal basis",
+"count": 2,
+"context": "imensional ·; · itself may be infinite-dimensional) and the projection · of ⟂; Axler proves existence from an orthonormal basis of ·, exactly as here.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 90,
+"term": "hilbert space",
+"count": 2,
+"context": "> - In a Hilbert space the decomposition holds for every *closed* subspace, proved by the closest-point theorem instead of a basis:",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 181,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "> the Pythagorean Theorem gives",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§42 Orthogonal Projections",
+"line": 207,
+"term": "convex set",
+"count": 1,
+"context": "> - For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, ⟂; for a closed subspace it is ch",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 48,
+"term": "basis of a subspace",
+"count": 2,
+"context": "> These are clearly linearly independent (look at the first entries, then the second), so they form a basis of a subspace · of ·. Construct an orthogonal basis of ·.",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^lem-3-1"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 60,
+"term": "orthogonality",
+"count": 2,
+"context": "> **Step 2′ (optional).** Scale to clear fractions: replace · by ·. Scaling does not affect orthogonality or the span.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 69,
+"term": "basis theorem",
+"count": 3,
+"context": "· is an orthogonal set of nonzero vectors in the ·-dimensional space ·, hence an orthogonal basis of · by the Basis Theorem. (Check: · and ·.)",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 111,
+"term": "orthogonal decomposition",
+"count": 1,
+"context": "> - By the Orthogonal Decomposition Theorem, · is orthogonal to ·, in particular to ·.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^thm-22-4"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 111,
+"term": "orthogonal decomposition theorem",
+"count": 1,
+"context": "> - By the Orthogonal Decomposition Theorem, · is orthogonal to ·, in particular to ·.",
+"targets": [
+"Functional Analysis|Orthogonal Decomposition Theorem"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 113,
+"term": "linear independence",
+"count": 1,
+"context": "> - ·: otherwise ·, contradicting the linear independence of the ·'s.",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 122,
+"term": "inner product space",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (Gram–Schmidt for a linearly independent list in any inner product space; Axler normalizes at every step, ·, and proves the same span property (1)).",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 123,
+"term": "countable",
+"count": 1,
+"context": "> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequenc",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 123,
+"term": "spans",
+"count": 1,
+"context": "ndent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: ⟂.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 123,
+"term": "hilbert space",
+"count": 1,
+"context": "> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§43 The Gram–Schmidt Process",
+"line": 133,
+"term": "orthogonal projection",
+"count": 1,
+"context": "pace · is finite-dimensional. Applying Theorem §43.1 to it gives an orthogonal basis ·. The process uses only orthogonal projections onto the subspaces ·, which already have orthogonal bases at that stage, so it does not presuppose the coroll",
+"targets": [
+"Functional Analysis|§31 The Completeness Relation#^def-31-2",
+"Linear Algebra|§21 Orthogonal Complements and Minimization Problems#^ladr-6-55"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 14,
+"term": "orthogonality",
+"count": 1,
+"context": "er ·, the closest it can get is · (Best Approximation Theorem), and a least-squares solution is any · with ·. Orthogonality turns this into a linear system, the normal equations ·. The solution is unique exactly when the columns of ·",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 60,
+"term": "orthogonal decomposition",
+"count": 2,
+"context": "> **Every least-squares solution satisfies the normal equations.** Let ·. By the Orthogonal Decomposition Theorem, · is orthogonal to ·, so · is orthogonal to each column · of ·: ·. The · are the rows of ·, so",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^thm-22-4"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 60,
+"term": "orthogonal decomposition theorem",
+"count": 1,
+"context": "> **Every least-squares solution satisfies the normal equations.** Let ·. By the Orthogonal Decomposition Theorem, · is orthogonal to ·, so · is orthogonal to each column · of ·: ·. The · are the rows of ·, so",
+"targets": [
+"Functional Analysis|Orthogonal Decomposition Theorem"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 84,
+"term": "norm",
+"count": 1,
+"context": "the pseudoinverse ⟂: · is a least-squares solution, and among all least-squares solutions the one of smallest norm (the one in ·). The normal equations · appear with the singular value decomposition, ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 149,
+"term": "spans",
+"count": 1,
+"context": "> (Check with the first normal equation: ·.) The direction vector · spans ·, and all these · give the same ·.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 274,
+"term": "orthonormal",
+"count": 1,
+"context": "> The columns of · form an orthonormal basis of ·, so by ⟂, · is the orthogonal projection · of · onto ·. Thus ·, and · is a least-squares solution",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§44 Least-Squares Problems",
+"line": 274,
+"term": "orthonormal basis",
+"count": 1,
+"context": "> The columns of · form an orthonormal basis of ·, so by ⟂, · is the orthogonal projection · of · onto ·. Thus ·, and · is a least-squares solution (proof",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 14,
+"term": "orthogonality",
+"count": 3,
+"context": "Length, distance and orthogonality in · were built from four properties of the dot product (⟂). Here those properties become axioms. Any real ve",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 14,
+"term": "gram–schmidt",
+"count": 7,
+"context": "isfying them is an inner product space, and nearly everything in this chapter carries over: orthogonal bases, Gram–Schmidt, projections, best approximation. New examples are weighted inner products on ·, inner products on polynomial",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^lem-24-14"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 14,
+"term": "properties of the dot product",
+"count": 1,
+"context": "Length, distance and orthogonality in · were built from four properties of the dot product (⟂). Here those properties become axioms. Any real vector space with a function · satisfying them is an inner",
+"targets": [
+"Calculus|§82 The Dot Product#^thm-82-1"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 32,
+"term": "continuous function",
+"count": 4,
+"context": "> - The function-space examples become complete only after enlarging · to ·: ⟂; an inner product space of continuous functions that is not complete is ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 133,
+"term": "orthogonal decomposition",
+"count": 3,
+"context": "> 2. **Orthogonal decomposition.** If · is an orthogonal basis of ·, every · can be written uniquely as · with · and · orthogonal to every ve",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^thm-22-4"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 147,
+"term": "orthogonal decomposition theorem",
+"count": 1,
+"context": "pace meeting · only in ·, and orthogonality to a spanning set suffices), ⟂ and the Pythagorean Theorem ⟂, the Orthogonal Decomposition Theorem ⟂, the Best Approximation Theorem ⟂ and Gram–Schmidt ⟂ use only:",
+"targets": [
+"Functional Analysis|Orthogonal Decomposition Theorem"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 149,
+"term": "basis theorem",
+"count": 1,
+"context": "> - dimension counting inside the finite-dimensional spaces · and · (the Basis Theorem, ⟂, which Lay proves for any vector space).",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 160,
+"term": "orthogonal projection",
+"count": 1,
+"context": "omes from an inner product, Theorem §46.2(3) says that **the best approximation to · by functions in · is the orthogonal projection of · onto ·**.",
+"targets": [
+"Functional Analysis|§31 The Completeness Relation#^def-31-2",
+"Linear Algebra|§21 Orthogonal Complements and Minimization Problems#^ladr-6-55"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 281,
+"term": "parallelogram law",
+"count": 1,
+"context": "> - In 556: ⟂ and ⟂ (the inner product induces a norm); the parallelogram law characterizes the norms that come from inner products, ⟂.",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "§46 Inner Product Spaces",
+"line": 292,
+"term": "riemann sum",
+"count": 1,
+"context": "> As ·, the bracket is a Riemann sum of the continuous function · and tends to ·. So the limit is the *average value* of · on ·:",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 14,
+"term": "orthogonal projection",
+"count": 3,
+"context": "n in · onto the span of ·, which are orthogonal for the integral inner product. In all three the answer is an orthogonal projection, computed with the formulas of Chapter 6.",
+"targets": [
+"Functional Analysis|§31 The Completeness Relation#^def-31-2",
+"Linear Algebra|§21 Orthogonal Complements and Minimization Problems#^ladr-6-55"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 38,
+"term": "diagonal matrix",
+"count": 1,
+"context": "> Let · be the · diagonal matrix with positive diagonal entries ·. For an · matrix ·, a vector · minimizes the weighted SS(E) of · as an appro",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 62,
+"term": "independent random variables",
+"count": 1,
+"context": "far from equally reliable, so they were weighted. In statistical terms: if the errors in measuring the · are independent random variables with mean · and variances ·, the appropriate weights are ·. The larger the variance of the error, the smaller",
+"targets": [
+"Calculus|§101 Applications of Double Integrals#^def-101-7"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 167,
+"term": "continuous function",
+"count": 1,
+"context": "Continuous functions, such as a sound wave, an electric signal or the motion of a vibrating mechanical system, are often approxima",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 167,
+"term": "orthogonality",
+"count": 1,
+"context": "ting mechanical system, are often approximated by trigonometric polynomials. Their use rests on the following orthogonality.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 209,
+"term": "norm",
+"count": 5,
+"context": "> **Norms.** ·. For ·, · and ·, so ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 293,
+"term": "periodic extension",
+"count": 1,
+"context": "ons (blue). The approximations oscillate around the line and are pulled toward · at both ends of ·, where the periodic extension of · jumps from · back to ·; the error is small in the mean-square sense, not at every point.*",
+"targets": [
+"Fourier Series and PDEs|§7 Arbitrary Period and Half-Range Expansions#^def-7-1"
+]
+},
+{
+"note": "§47 Applications of Inner Product Spaces",
+"line": 318,
+"term": "parseval",
+"count": 2,
+"context": "> - Fourier series in ·, with Parseval's equality ·: ⟂; the finite Bessel inequality · (Proposition §46.3 here) is ⟂.",
+"targets": [
+"Functional Analysis|Characterizations of an Orthonormal Basis"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 15,
+"term": "diagonalizable",
+"count": 11,
+"context": "Chapter 5 left the question of which matrices are diagonalizable without a simple answer. For symmetric matrices the answer is as good as it can be: every symmetric matrix is",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 81,
+"term": "orthogonality",
+"count": 2,
+"context": "The orthogonality of the eigenvectors in Example §48.1 is no accident: they belong to distinct eigenvalues of a symmetric matri",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 109,
+"term": "inner product space",
+"count": 2,
+"context": "> - Rigorous treatment: ⟂ proves the same for eigenvectors of any normal operator (·) on a real or complex inner product space; symmetric matrices are the self-adjoint operators on · (⟂), and the one-line computation above is ·.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 113,
+"term": "diagonal matrix",
+"count": 3,
+"context": "> An · matrix · is **orthogonally diagonalizable** if there are an orthogonal matrix · (with ·) and a diagonal matrix · such that",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 174,
+"term": "gram–schmidt",
+"count": 5,
+"context": "· is a linear combination of the eigenvectors ·, so it lies in the eigenspace for ·. (This is one step of the Gram–Schmidt process, ⟂.) The eigenspace is two-dimensional, so the orthogonal set · is an orthogonal basis for it, by the",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^lem-24-14"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 174,
+"term": "basis theorem",
+"count": 1,
+"context": "process, ⟂.) The eigenspace is two-dimensional, so the orthogonal set · is an orthogonal basis for it, by the Basis Theorem (⟂). Normalizing (·, ·, so ·):",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 196,
+"term": "multiplicity",
+"count": 4,
+"context": "> The eigenvalue · has multiplicity two and its eigenspace is two-dimensional. Part (b) of the Spectral Theorem says this always happens for symm",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 235,
+"term": "characteristic polynomial",
+"count": 2,
+"context": "> **(a) The eigenvalues are real.** The characteristic polynomial has degree ·, so it has · roots in ·, counting multiplicities (fundamental theorem of algebra, ⟂). Let · be o",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 235,
+"term": "fundamental theorem of algebra",
+"count": 2,
+"context": "lues are real.** The characteristic polynomial has degree ·, so it has · roots in ·, counting multiplicities (fundamental theorem of algebra, ⟂). Let · be one of them. Then · is not invertible as a complex matrix, so there is a nonzero · with · (⟂).",
+"targets": [
+"Complex Variables|Fundamental Theorem of Algebra (Liouville proof)",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2",
+"Topology|Fundamental Theorem of Algebra (topological proof)",
+"Topology|§25 The Fundamental Theorem of Algebra#^thm-25-1"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 275,
+"term": "linear map",
+"count": 1,
+"context": "> so · maps the eigenspace · onto ·, and it is one-to-one because · is invertible. An invertible linear map preserves dimension (⟂), so the eigenspace of · for · has dimension ·.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 282,
+"term": "minimal polynomial",
+"count": 1,
+"context": "it to be diagonal. To get real eigenvalues he avoids · and determinants altogether, showing instead that the minimal polynomial of a self-adjoint operator has only real roots (⟂); the complex argument of part (a) is ⟂.",
+"targets": [
+"Linear Algebra|§15 The Minimal Polynomial#^ladr-5-24"
+]
+},
+{
+"note": "§48★ Diagonalization of Symmetric Matrices",
+"line": 282,
+"term": "upper-triangular matrix",
+"count": 1,
+"context": "nsional real inner product space. Axler's proof follows the same route as above: Schur's theorem (⟂) gives an upper-triangular matrix in an orthonormal basis, and self-adjointness forces it to be diagonal. To get real eigenvalues he avoids · a",
+"targets": [
+"Linear Algebra|§16 Upper-Triangular Matrices#^ladr-5-38"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 50,
+"term": "diagonal matrix",
+"count": 2,
+"context": "> A diagonal matrix gives a form with no cross-product term.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 140,
+"term": "orthonormal",
+"count": 3,
+"context": "olumns of · in the Principal Axes Theorem are called the **principal axes** of the quadratic form ·. They are orthonormal eigenvectors of ·, and the vector · is the coordinate vector of · relative to the orthonormal basis of · give",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 140,
+"term": "orthonormal basis",
+"count": 2,
+"context": "orm ·. They are orthonormal eigenvectors of ·, and the vector · is the coordinate vector of · relative to the orthonormal basis of · given by these principal axes.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 147,
+"term": "real spectral theorem",
+"count": 1,
+"context": "diagonalization of a quadratic form by an orthonormal basis, deduced from the bilinear-form version ⟂ and the real spectral theorem. Axler also notes (9.23(a)) that *without* the orthonormality requirement any quadratic form over any field c",
+"targets": [
+"Linear Algebra|Real spectral theorem",
+"Linear Algebra|§23 Spectral Theorem#^ladr-7-29"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 164,
+"term": "characteristic polynomial",
+"count": 2,
+"context": "> **Change of variable.** The matrix of the form is ·. Its characteristic polynomial is ·, so the eigenvalues are · and ·. Row reducing · gives ·, eigenvector ·; row reducing · gives ·, eigenvec",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 210,
+"term": "standard position",
+"count": 6,
+"context": ", two intersecting lines or a single point, or contains no points at all. If · is diagonal, the graph is in **standard position**, · or · up to renaming. If · is not diagonal, the graph is rotated out of standard position, and the princi",
+"targets": [
+"Calculus|§119 Trigonometry#^def-119-2"
+]
+},
+{
+"note": "§49★ Quadratic Forms",
+"line": 306,
+"term": "self-adjoint",
+"count": 1,
+"context": "> - Operator version: ⟂ — a self-adjoint · with · (Axler's \"positive\", Lay's positive semidefinite) has all eigenvalues ·, has a positive square root,",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-10"
+]
+},
+{
+"note": "§5 Solution Sets of Linear Systems",
+"line": 136,
+"term": "nonhomogeneous systems",
+"count": 1,
+"context": "## Solutions of Nonhomogeneous Systems",
+"targets": [
+"Ordinary Differential Equations|§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-1"
+]
+},
+{
+"note": "§50★ Constrained Optimization",
+"line": 102,
+"term": "compact",
+"count": 1,
+"context": "ndition · is exactly ·: the constrained critical points are the unit eigenvectors, and there ·. The sphere is compact, so the maximum and minimum exist and are the largest and smallest eigenvalues. See ⟂ and, rigorously in ·, ⟂",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§50★ Constrained Optimization",
+"line": 102,
+"term": "lagrange multipliers",
+"count": 1,
+"context": "> - The same answer by Lagrange multipliers: maximize · subject to ·. Since · (using ·) and · on the sphere, the Lagrange condition · is exactly ·: the c",
+"targets": [
+"Multivariable Analysis|Method of Lagrange Multipliers"
+]
+},
+{
+"note": "§50★ Constrained Optimization",
+"line": 103,
+"term": "norm",
+"count": 1,
+"context": "> - For a symmetric ·, Theorem §50.1 also gives ·, the operator norm: ⟂, ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§50★ Constrained Optimization",
+"line": 124,
+"term": "orthonormal",
+"count": 2,
+"context": "> Since · and · are orthonormal, ·. And since ·, the cross terms vanish again and",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§50★ Constrained Optimization",
+"line": 159,
+"term": "characteristic polynomial",
+"count": 2,
+"context": "> The matrix is ·, with characteristic polynomial ·. Unit eigenvectors: · for · (from ·) and · for ·. So",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 15,
+"term": "orthonormal",
+"count": 23,
+"context": "zations in applied linear algebra. It comes from applying the spectral theorem to the symmetric matrix ·: its orthonormal eigenvectors · are sent by · to orthogonal vectors · whose lengths, the singular values ·, measure how much ·",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 38,
+"term": "characteristic polynomial",
+"count": 2,
+"context": "> whose characteristic polynomial is ·. The eigenvalues are ·, ·, ·. Row reducing · (·, ·, ·) and normalizing gives the unit eigenvectors",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 68,
+"term": "orthonormal basis",
+"count": 11,
+"context": "> Let · be an · matrix. Then · is symmetric and can be orthogonally diagonalized. If · is an orthonormal basis for · consisting of eigenvectors of ·, with eigenvalues ·, then",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 127,
+"term": "linear map",
+"count": 2,
+"context": "> - Rigorous treatment: ⟂ defines the singular values of any linear map · between inner product spaces exactly this way, from the positive operator · (⟂: · is positive, ·). The firs",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 127,
+"term": "positive operator",
+"count": 1,
+"context": "nt: ⟂ defines the singular values of any linear map · between inner product spaces exactly this way, from the positive operator · (⟂: · is positive, ·). The first part of Proposition §51.2 is \"the norm of · is its largest singular value\"",
+"targets": [
+"Linear Algebra|§24 Positive Operators#^ladr-7-34"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 127,
+"term": "inner product space",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ defines the singular values of any linear map · between inner product spaces exactly this way, from the positive operator · (⟂: · is positive, ·). The first part of Proposition §51.2 is",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 127,
+"term": "norm",
+"count": 2,
+"context": "tly this way, from the positive operator · (⟂: · is positive, ·). The first part of Proposition §51.2 is \"the norm of · is its largest singular value\", ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 231,
+"term": "gram–schmidt",
+"count": 2,
+"context": "·). If ·, extend · to an orthonormal basis of ·: find a basis of the solutions of · (that is, of ·) and apply Gram–Schmidt with normalization.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^lem-24-14"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 360,
+"term": "basis theorem",
+"count": 3,
+"context": "are orthonormal and orthogonal to ·, hence to ·, so they lie in ·. There are · of them, and · (⟂), so by the Basis Theorem (⟂) they form a basis.",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§51★ The Singular Value Decomposition",
+"line": 463,
+"term": "pythagorean theorem",
+"count": 2,
+"context": "a vector · of ·. Now · is a combination of ·, so it is orthogonal to ·, which span · by (7); hence ·. By the Pythagorean Theorem (⟂), ·, with equality only for ·.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§52★ Applications to Image Processing and Statistics",
+"line": 298,
+"term": "norm",
+"count": 1,
+"context": "-· approximation of the data matrix ·: truncate its SVD after · terms, ⟂ (Eckart–Young; there in the operator norm, with error ·).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§52★ Applications to Image Processing and Statistics",
+"line": 308,
+"term": "orthonormal",
+"count": 1,
+"context": "f the · eigenvalues of ·, in decreasing order. In an SVD ·, the right singular vectors (the columns of ·) are orthonormal eigenvectors of · for those eigenvalues, in the same order (⟂): they are principal components.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§53 Complex Numbers",
+"line": 14,
+"term": "characteristic polynomial",
+"count": 2,
+"context": "Complex numbers · are needed in linear algebra because real matrices can have non-real eigenvalues: · has characteristic polynomial · (⟂). This appendix collects the arithmetic: addition and multiplication, the conjugate · and absolute value",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§7 Linear Independence",
+"line": 16,
+"term": "linear independence",
+"count": 1,
+"context": "## Linear Independence",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§7 Linear Independence",
+"line": 268,
+"term": "homogeneous systems",
+"count": 1,
+"context": "spanning list · of · (⟂); Axler proves it by exchanging vectors, Lay by counting pivots. Equivalent form for homogeneous systems: ⟂.",
+"targets": [
+"Ordinary Differential Equations|§27 Introduction to Systems of First-Order Linear Equations#^def-27-2"
+]
+},
+{
+"note": "§8 Introduction to Linear Transformations",
+"line": 14,
+"term": "superposition",
+"count": 3,
+"context": "he matrix–vector product, · and ·, define the linear transformations, which preserve linear combinations (the superposition principle) and send · to ·. Projections, shears, dilations and rotations are first examples.",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§8 Introduction to Linear Transformations",
+"line": 149,
+"term": "jacobian",
+"count": 4,
+"context": "> - The total derivative of a differentiable map is a linear transformation, represented by the Jacobian matrix: ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§8 Introduction to Linear Transformations",
+"line": 284,
+"term": "bijection",
+"count": 1,
+"context": "thesis: · maps every line onto the ·-axis or onto a point and fixes ·, but is not linear. It becomes true for bijections · with · (the fundamental theorem of affine geometry: such a map is ·, and · forces ·).*",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§8 Introduction to Linear Transformations",
+"line": 297,
+"term": "smooth map",
+"count": 1,
+"context": "n for two variables. For a *linear* · it is easy: · is constant, and · makes · invertible (⟂, ⟂). For general smooth maps, · gives only a local inverse, by the ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§9 The Matrix of a Linear Transformation",
+"line": 18,
+"term": "standard basis vectors",
+"count": 1,
+"context": "The columns of the · identity matrix · are the **standard basis vectors** ·: · has a · in entry · and ·'s elsewhere. Every · in · is ·; for instance in ·, ·.",
+"targets": [
+"Calculus|§81 Vectors#^def-81-8"
+]
+},
+{
+"note": "§9 The Matrix of a Linear Transformation",
+"line": 38,
+"term": "superposition",
+"count": 2,
+"context": "> **Existence.** Write · and use the linearity of · (the superposition principle):",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§9 The Matrix of a Linear Transformation",
+"line": 194,
+"term": "contrapositive",
+"count": 1,
+"context": "> To prove \"· if and only if ·\", Lay proves (1) if · then ·, and (2a) if not · then not · (the contrapositive of \"if · then ·\").",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "· 6 Orthogonality and Least Squares",
+"line": 7,
+"term": "orthogonality",
+"count": 1,
+"context": "# 6 Orthogonality and Least Squares",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+}
+]

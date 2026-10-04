@@ -1,0 +1,156 @@
+[
+{
+"concept": "partition",
+"a": "Logic and Proofs | [[§22 Partitions and Equivalence Relations#^def-22-1]] | Definition §22.1: Partition",
+"b": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "partition",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "partition",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-3]] | Definition §24.3: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "rolle theorem",
+"a": "Single Variable Analysis | [[§29 The Mean Value Theorem#^thm-29-2]] | Theorem §29.2: Rolle's Theorem",
+"b": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-3]] | Theorem §9.3: Rolle's Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "rolle theorem",
+"a": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-3]] | Theorem §9.3: Rolle's Theorem",
+"b": "Calculus | [[§26 The Mean Value Theorem#^thm-26-1]] | Theorem §26.1: Rolle's Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "mean value theorem",
+"a": "Single Variable Analysis | [[§29 The Mean Value Theorem#^thm-29-3]] | Theorem §29.3: Mean Value Theorem",
+"b": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-4]] | Theorem §9.4: Mean Value Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "mean value theorem",
+"a": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-4]] | Theorem §9.4: Mean Value Theorem",
+"b": "Calculus | [[§26 The Mean Value Theorem#^thm-26-2]] | Theorem §26.2: The Mean Value Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "derivative",
+"a": "Single Variable Analysis | [[§28 Basic Properties of the Derivative#^def-28-1]] | Definition §28.1: The Derivative",
+"b": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1]] | Theorem §9.1: Derivatives of $F(t)$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "derivative",
+"a": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1]] | Theorem §9.1: Derivatives of $F(t)$",
+"b": "Complex Variables | [[§19 Derivatives#^def-19-1]] | Definition §19.1: Derivative",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "convergence sequence",
+"a": "Single Variable Analysis | [[§7 Limits of Sequences#^def-7-2]] | Definition §7.2: Convergence of a Sequence",
+"b": "Multivariable Analysis | [[§1 Sequences and Limits in ℝⁿ#^def-1-1]] | Definition §1.1: Convergence of Sequences in $\\mathbb{R}^n$",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "divergence",
+"a": "Single Variable Analysis | [[§7 Limits of Sequences#^def-7-3]] | Definition §7.3: Divergence",
+"b": "Multivariable Analysis | [[§16 Line Integrals and Green's Theorem#^def-16-4]] | Definition §16.4: Divergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "divergence",
+"a": "Single Variable Analysis | [[§7 Limits of Sequences#^def-7-3]] | Definition §7.3: Divergence",
+"b": "Multivariable Analysis | [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1]] | Definition §17.1: Divergence in $\\mathbb{R}^n$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "divergence",
+"a": "Multivariable Analysis | [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1]] | Definition §17.1: Divergence in $\\mathbb{R}^n$",
+"b": "Calculus | [[§111 Curl and Divergence#^def-111-3]] | Definition §111.3: Divergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "divergence theorem",
+"a": "Multivariable Analysis | [[§16 Line Integrals and Green's Theorem#^thm-16-2]] | Theorem §16.2: Divergence Theorem in $\\mathbb{R}^2$",
+"b": "Calculus | [[§115 The Divergence Theorem#^thm-115-1]] | Theorem §115.1: The Divergence Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "divergence theorem",
+"a": "Multivariable Analysis | [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1]] | Theorem §17.1: Divergence Theorem in $\\mathbb{R}^n$",
+"b": "Calculus | [[§115 The Divergence Theorem#^thm-115-1]] | Theorem §115.1: The Divergence Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "open ball",
+"a": "Multivariable Analysis | [[§2 Open and Closed Sets#^def-2-1]] | Definition §2.1: Open Ball",
+"b": "Measure Theory | [[§5 Topology of ℝⁿ#^def-5-1]] | Definition §5.1: Open Ball",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "limit function",
+"a": "Multivariable Analysis | [[§3 Continuity and Limits of Functions#^def-3-2]] | Definition §3.2: Limit of a Function",
+"b": "Calculus | [[§7 The Limit of a Function#^def-7-1]] | Definition §7.1: The Limit of a Function (Intuitive)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "upper lower sums",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-8]] | Definition §15.8: Upper and Lower Sums",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-2]] | Definition §8.2: Upper and Lower Sums",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "integral",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-11]] | Definition §15.11: The Integral",
+"b": "Calculus | [[§47 Integration of Rational Functions by Partial Fractions#^prop-47-5]] | Proposition §47.5: The Integral of $1/(x^2 - a^2)$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "scalar multiplication",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^thm-15-2]] | Theorem §15.2: Scalar Multiplication",
+"b": "Calculus | [[§81 Vectors#^def-81-3]] | Definition §81.3: Scalar Multiplication",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "comparison theorem",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^thm-15-5]] | Theorem §15.5: Comparison Theorem",
+"b": "Calculus | [[§51 Improper Integrals#^thm-51-2]] | Theorem §51.2: Comparison Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "change variable",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^thm-15-20]] | Theorem §15.20: Change of Variables in $\\mathbb{R}^n$",
+"b": "Applied Linear Algebra | [[§49★ Quadratic Forms#^def-49-2]] | Definition §49.2: Change of Variable",
+"a_links_b": false,
+"b_links_a": false
+}
+]

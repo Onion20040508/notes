@@ -1,0 +1,3614 @@
+[
+{
+"note": "493 Problem Set 1",
+"line": 16,
+"term": "group action",
+"count": 1,
+"context": "> groups, group actions, rings, modules, fields, vector spaces, monoids, categories",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 20,
+"term": "homomorphism",
+"count": 9,
+"context": "> [!question] Problem 1.2: Conjugation is a Homomorphism",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 38,
+"term": "cartesian product",
+"count": 1,
+"context": "> Let · and · be two groups. We define the product group · to have, as underlying set, the Cartesian product ·, with multiplication operation",
+"targets": [
+"Logic and Proofs|§7 Quantifiers#^def-7-5"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 54,
+"term": "permutation",
+"count": 1,
+"context": "> Let · act on · in the obvious way. Let ·. For ·, let · be the corresponding permutation matrix in ·.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 54,
+"term": "permutation matrix",
+"count": 1,
+"context": "> Let · act on · in the obvious way. Let ·. For ·, let · be the corresponding permutation matrix in ·.",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-4"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 75,
+"term": "residue",
+"count": 1,
+"context": "> 2. Let · be the set of residue classes · modulo · for which ·. Show that · is a group.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "493 Problem Set 1",
+"line": 78,
+"term": "isomorphic",
+"count": 1,
+"context": "> *Stated without proof on the problem set:* · is cyclic of order · if · is odd; · is trivial if · and isomorphic to · for ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "493 Problem Set 2",
+"line": 13,
+"term": "cosets",
+"count": 1,
+"context": "> [!question] Problem 2.1: Cosets of a Point Stabilizer in ·",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "493 Problem Set 2",
+"line": 33,
+"term": "eigenvector",
+"count": 2,
+"context": "> [!question] Problem 2.3: Common Eigenvectors and Characters",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "493 Problem Set 2",
+"line": 36,
+"term": "homomorphism",
+"count": 2,
+"context": "> 1. Show that · is a group homomorphism.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "493 Problem Set 3",
+"line": 16,
+"term": "isomorphic",
+"count": 2,
+"context": "> 1. Show that · is isomorphic to a subgroup of ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "493 Problem Set 3",
+"line": 24,
+"term": "homomorphism",
+"count": 1,
+"context": "ere is a normal subgroup · of · with · and ·. (The sheet prints ·; the intended statement is ·.) Hint: make a homomorphism · and think about the kernel.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Actions Are Homomorphisms to S_X",
+"line": 27,
+"term": "homomorphism",
+"count": 2,
+"context": "- **Used for.** Every action now yields a homomorphism whose kernel and image can be studied. Faithful actions embed G in S_X (⟂), which gives ⟂. The action on G/H",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Actions Are Homomorphisms to S_X",
+"line": 29,
+"term": "permutation",
+"count": 1,
+"context": "- **Same idea elsewhere.** Replacing S_X by GL(V) gives a ⟂ (§20.6). S_n acting on kⁿ by permutation matrices is both at once (⟂), and the conjugation action gives the ⟂.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Aₙ Is Simple for n ≥ 5",
+"line": 29,
+"term": "hölder",
+"count": 1,
+"context": "- **Coming later in the course.** Composition series and the Jordan–Hölder theorem: for n ≥ 5, Sₙ ⊳ Aₙ ⊳ {e} is a composition series with factors ℤ/2ℤ and Aₙ, so Sₙ is not solvable.",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Burnside's Lemma",
+"line": 25,
+"term": "permutation",
+"count": 3,
+"context": "- **Same idea elsewhere.** |Fix(g)| is the trace of the permutation matrix of g (⟂, ⟂). So the lemma says that the average trace of the permutation representation counts the orb",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Burnside's Lemma",
+"line": 25,
+"term": "trace",
+"count": 2,
+"context": "- **Same idea elsewhere.** |Fix(g)| is the trace of the permutation matrix of g (⟂, ⟂). So the lemma says that the average trace of the permutation representa",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "Burnside's Lemma",
+"line": 25,
+"term": "permutation matrix",
+"count": 1,
+"context": "- **Same idea elsewhere.** |Fix(g)| is the trace of the permutation matrix of g (⟂, ⟂). So the lemma says that the average trace of the permutation representation counts the orbits.",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-4"
+]
+},
+{
+"note": "Burnside's Lemma",
+"line": 26,
+"term": "multiplicity",
+"count": 1,
+"context": "g later in the course.** In representation theory this becomes the statement that the number of orbits is the multiplicity of the trivial representation in the permutation representation.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "Bézout's Identity",
+"line": 30,
+"term": "euclidean algorithm",
+"count": 2,
+"context": "a subgroup of ℤ, so it equals dℤ by ⟂, and d = gcd(a, b). This proof only shows that x, y exist; the extended Euclidean algorithm computes them (⟂).",
+"targets": [
+"Logic and Proofs|Euclidean Algorithm"
+]
+},
+{
+"note": "Cancellation Laws in Groups",
+"line": 36,
+"term": "permutation",
+"count": 1,
+"context": "Modulo a prime, Euclid's Lemma plays this role: it makes multiplication by a nonzero class injective, hence a permutation of the nonzero classes (⟂).",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Cancellation Laws in Groups",
+"line": 36,
+"term": "injective",
+"count": 1,
+"context": "zero divisors (⟂). Modulo a prime, Euclid's Lemma plays this role: it makes multiplication by a nonzero class injective, hence a permutation of the nonzero classes (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Cayley's Theorem",
+"line": 22,
+"term": "permutation",
+"count": 1,
+"context": "- **Used for.** ⟂ (§25.6): compose G → S_n with permutation matrices (⟂). So every finite group has a faithful representation.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Cayley's Theorem",
+"line": 23,
+"term": "isomorphic",
+"count": 1,
+"context": "- **Through the First Isomorphism Theorem.** Left multiplication has trivial kernel, so G ≅ G/{e} is isomorphic to its image in S_G (⟂). The same action on G/H instead of G gives the normal core of H (⟂, ⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Classification of Cyclic Groups",
+"line": 30,
+"term": "isomorphic",
+"count": 1,
+"context": "- **The order classifies cyclic groups only.** U₈ and ℤ/4ℤ both have order 4 but are not isomorphic, because U₈ is not cyclic (⟂). Compare ⟂ (LADR 3.70), where one number classifies all finite-dimensional spac",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Classification of Cyclic Groups",
+"line": 31,
+"term": "fundamental group",
+"count": 1,
+"context": "- **Same idea elsewhere.** The 590 notes state the result without proof (⟂). Both kinds appear there as fundamental groups: π₁(S¹) ≅ ℤ (⟂) and π₁(P²) ≅ ℤ/2ℤ (⟂).",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-2"
+]
+},
+{
+"note": "Conjugacy Classes of Sₙ Are Cycle Types",
+"line": 22,
+"term": "permutation",
+"count": 1,
+"context": "lass equations (⟂) and their normal subgroups, e.g. {e}, V, A₄, S₄ in S₄ (⟂). Finding an explicit conjugating permutation: ⟂.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Conjugacy Classes of Sₙ Are Cycle Types",
+"line": 24,
+"term": "eigenvalue",
+"count": 1,
+"context": "nvariant is the ⟂ (LADR 8.46), not a cycle type, and the characteristic polynomial suffices only for distinct eigenvalues (⟂, ⟂).",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Conjugacy Classes of Sₙ Are Cycle Types",
+"line": 24,
+"term": "characteristic polynomial",
+"count": 1,
+"context": ") is similarity of matrices (⟂). There the complete invariant is the ⟂ (LADR 8.46), not a cycle type, and the characteristic polynomial suffices only for distinct eigenvalues (⟂, ⟂).",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "Conjugation Relabels a Cycle",
+"line": 30,
+"term": "permutation",
+"count": 1,
+"context": "is: C⁻¹BC is the same operator in other coordinates (⟂, LADR 3.84). Relabeling the points of {1, …, n} is the permutation version of relabeling a basis.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Conjugation Relabels a Cycle",
+"line": 30,
+"term": "change of basis",
+"count": 1,
+"context": "- **Same idea elsewhere.** Conjugating a matrix is a change of basis: C⁻¹BC is the same operator in other coordinates (⟂, LADR 3.84). Relabeling the points of {1, …, n} is the pe",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "Cosets Partition a Group",
+"line": 41,
+"term": "bijection",
+"count": 1,
+"context": "ht differ.** For H = {e, (1 2)} in S₃, (1 3)H ≠ H(1 3) (⟂). So gH ↦ Hg is not well defined (⟂), and the right bijection is gH ↦ Hg⁻¹ (⟂). The two partitions agree exactly when H is normal (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Cosets Partition a Group",
+"line": 42,
+"term": "cosets",
+"count": 2,
+"context": "- **Cosets are orbits.** They are the orbits of H acting by multiplication (⟂), so this is a case of ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "Cosets Partition a Group",
+"line": 43,
+"term": "trace",
+"count": 1,
+"context": "r disjoint (⟂; ⟂, 3.97). The Vitali construction partitions [0, 1] by the relation x − y ∈ ℚ, that is, by the traces on [0, 1] of the cosets x + ℚ of ℚ in ℝ (⟂, ⟂).",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 31,
+"term": "homomorphism",
+"count": 1,
+"context": "- **Generalized.** ℤ/nℤ is the quotient of ℤ by nℤ (⟂). For any normal subgroup N, a homomorphism that kills N factors through G/N. With N = Ker α this is the ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 32,
+"term": "null t",
+"count": 1,
+"context": "ous map that is constant on fibers descends through a quotient map (⟂, 590 §12.3). A linear map descends to V/null T (⟂, LADR 3.107).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 32,
+"term": "quotient map",
+"count": 1,
+"context": "- **Same idea elsewhere.** A continuous map that is constant on fibers descends through a quotient map (⟂, 590 §12.3). A linear map descends to V/null T (⟂, LADR 3.107).",
+"targets": [
+"Differentiable Manifolds|§5 Quotient Maps#^def-5-1",
+"Linear Algebra|§11 Products and Quotients of Vector Spaces#^ladr-3-104",
+"Topology|§12 Quotient Topology#^def-12-1"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 32,
+"term": "linear map",
+"count": 1,
+"context": "ea elsewhere.** A continuous map that is constant on fibers descends through a quotient map (⟂, 590 §12.3). A linear map descends to V/null T (⟂, LADR 3.107).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 33,
+"term": "surjection",
+"count": 1,
+"context": "- **Set-level version in ⟂:** ⟂ (a surjection induces a bijection from the quotient set; the text after it states the general rule for defining maps on cla",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Descent Lemma",
+"line": 33,
+"term": "bijection",
+"count": 1,
+"context": "- **Set-level version in ⟂:** ⟂ (a surjection induces a bijection from the quotient set; the text after it states the general rule for defining maps on classes).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Disjoint Cycle Decomposition",
+"line": 27,
+"term": "permutation",
+"count": 2,
+"context": "- **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths (⟂). Also every permutation is a product of transposi",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Disjoint Cycle Decomposition",
+"line": 27,
+"term": "permutations",
+"count": 1,
+"context": "- **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths (⟂). Also every permutation is a product of transposi",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "Disjoint Cycle Decomposition",
+"line": 29,
+"term": "pigeonhole principle",
+"count": 1,
+"context": "ly.** For infinite X the shift n ↦ n + 1 on ℤ is a single \"infinite cycle\" (⟂). Finiteness enters through the pigeonhole principle of ⟂.",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "Disjoint Cycle Decomposition",
+"line": 29,
+"term": "pigeonhole",
+"count": 1,
+"context": "ly.** For infinite X the shift n ↦ n + 1 on ℤ is a single \"infinite cycle\" (⟂). Finiteness enters through the pigeonhole principle of ⟂.",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "Division Algorithm",
+"line": 27,
+"term": "congruence class",
+"count": 1,
+"context": "- **Used for.** ⟂ (every subgroup is nℤ), hence ⟂ and the rest of ⟂. Also congruence classes (⟂), ⟂, the ⟂, and the fact that the order of φ(g) divides the order of g (⟂).",
+"targets": [
+"Logic and Proofs|§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1"
+]
+},
+{
+"note": "Division Algorithm",
+"line": 30,
+"term": "well-ordering",
+"count": 1,
+"context": "- **Also proved in ⟂:** ⟂ (elementary proof via the maximum of a finite set). The well-ordering principle used here is proved from induction in ⟂.",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "Euclid's Lemma",
+"line": 28,
+"term": "coprime",
+"count": 1,
+"context": "- **Also proved in ⟂:** ⟂ (prime case) and ⟂ (coprime case), elementary proofs from Bézout, which is obtained there by the Euclidean algorithm.",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "Euclid's Lemma",
+"line": 28,
+"term": "euclidean algorithm",
+"count": 1,
+"context": "ed in ⟂:** ⟂ (prime case) and ⟂ (coprime case), elementary proofs from Bézout, which is obtained there by the Euclidean algorithm.",
+"targets": [
+"Logic and Proofs|Euclidean Algorithm"
+]
+},
+{
+"note": "First Isomorphism Theorem for Groups",
+"line": 34,
+"term": "surjection",
+"count": 2,
+"context": "). Counting gives |G| = |Ker α| · |Im α| (⟂), the group form of rank–nullity (⟂, ⟂). In topology a continuous surjection induces a homeomorphism from the quotient exactly when it is a quotient map (⟂). The 590 notes use the group",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "First Isomorphism Theorem for Groups",
+"line": 34,
+"term": "rank",
+"count": 1,
+"context": "The vector-space version is the ⟂ (LADR 3.107). Counting gives |G| = |Ker α| · |Im α| (⟂), the group form of rank–nullity (⟂, ⟂). In topology a continuous surjection induces a homeomorphism from the quotient exactly when it",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "First Isomorphism Theorem for Groups",
+"line": 34,
+"term": "homeomorphism",
+"count": 1,
+"context": "= |Ker α| · |Im α| (⟂), the group form of rank–nullity (⟂, ⟂). In topology a continuous surjection induces a homeomorphism from the quotient exactly when it is a quotient map (⟂). The 590 notes use the group version to write present",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "First Isomorphism Theorem for Groups",
+"line": 36,
+"term": "bijection",
+"count": 1,
+"context": "- **Set-level version in ⟂:** ⟂ (a surjection induces a bijection from the quotient set).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Group Theory",
+"line": 17,
+"term": "group action",
+"count": 2,
+"context": "apters 4–5 compare them through *homomorphisms*, which ⟂ and produce ⟂ and the ⟂. The organizing idea is the *group action* (Chapter 6): an action of · on a set is the same thing as a homomorphism · (⟂). Cosets are the orbits of a s",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "Group Theory",
+"line": 22,
+"term": "permutation",
+"count": 1,
+"context": "e model finite group, and the ⟂ shows every cyclic group is one of these. On the symmetries side, · (⟂) turns permutations into matrices, and the determinant then gives the sign (⟂). The central bridge is ⟂: every construction below",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Group Theory",
+"line": 22,
+"term": "permutations",
+"count": 1,
+"context": "e model finite group, and the ⟂ shows every cyclic group is one of these. On the symmetries side, · (⟂) turns permutations into matrices, and the determinant then gives the sign (⟂). The central bridge is ⟂: every construction below",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "Group Theory",
+"line": 80,
+"term": "nilpotent",
+"count": 1,
+"context": "ating groups ✓ and of · (stated); classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions, ideally culminating in the Schur–Zassenhaus theo",
+"targets": [
+"Linear Algebra|§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-14"
+]
+},
+{
+"note": "Group Theory",
+"line": 80,
+"term": "hölder",
+"count": 1,
+"context": "isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems; composition series and the Jordan–Hölder theorem; simplicity of alternating groups ✓ and of · (stated); classification of small simple groups (maybe u",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 16,
+"term": "cosets",
+"count": 2,
+"context": "| ·, ·, · | Index; left cosets; right cosets. | ⟂, ⟂ |",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 16,
+"term": "left cosets",
+"count": 1,
+"context": "| ·, ·, · | Index; left cosets; right cosets. | ⟂, ⟂ |",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 17,
+"term": "bijection",
+"count": 1,
+"context": "| ·, · | Bijections of ·; of ·. Composition is right-to-left: ·. | ⟂; ⟂ |",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 19,
+"term": "permutation",
+"count": 2,
+"context": "| ·, · | Sign of a permutation and its kernel. The problem sets write ·. | ⟂, ⟂ |",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 19,
+"term": "sign of a permutation",
+"count": 1,
+"context": "| ·, · | Sign of a permutation and its kernel. The problem sets write ·. | ⟂, ⟂ |",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-32"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 20,
+"term": "permutation matrix",
+"count": 1,
+"context": "| ·, ·, ·, · | Linear groups; · is the permutation matrix. | ⟂, ⟂; ⟂ |",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-4"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 22,
+"term": "homomorphism",
+"count": 1,
+"context": "| · | Euler's totient ·. (Elsewhere · usually denotes a homomorphism; context decides.) | ⟂ |",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 28,
+"term": "orbit space",
+"count": 1,
+"context": "| ·, · | Orbit spaces of a left and a right action. | ⟂, ⟂ |",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-5"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 32,
+"term": "special linear group",
+"count": 1,
+"context": "| · | Projective special linear group ·. | ⟂ |",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-5"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 35,
+"term": "injective",
+"count": 1,
+"context": "| ·, · | An injective map; a surjective map. | ⟂ |",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Group Theory Conventions and Notation",
+"line": 35,
+"term": "surjective",
+"count": 1,
+"context": "| ·, · | An injective map; a surjective map. | ⟂ |",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 12,
+"term": "nilpotent",
+"count": 1,
+"context": "an–Hölder; simplicity of · and ·; classification of small simple groups (maybe up to order 168); solvable and nilpotent groups; semidirect products; central and abelian extensions (ideally Schur–Zassenhaus); second half: represen",
+"targets": [
+"Linear Algebra|§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-14"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 12,
+"term": "group action",
+"count": 2,
+"context": "*Planned topics (syllabus): groups and group actions; orbit–stabilizer; normal subgroups and quotients; the isomorphism theorems; the Sylow theorems; composition",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 12,
+"term": "hölder",
+"count": 1,
+"context": "; normal subgroups and quotients; the isomorphism theorems; the Sylow theorems; composition series and Jordan–Hölder; simplicity of · and ·; classification of small simple groups (maybe up to order 168); solvable and nilpotent",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 17,
+"term": "homomorphism",
+"count": 4,
+"context": "| Wed Sept 2<br>Worksheet 2 | Multiplication tables; homomorphisms and isomorphisms | ⟂ (WS ⟂–⟂), ⟂ (·), ⟂ (WS ⟂–⟂), ⟂ (WS ⟂–⟂) |",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 20,
+"term": "permutation",
+"count": 1,
+"context": "| Wed Sept 9<br>lecture | Permutation matrices; ·; integer powers; similar matrices | ⟂, ⟂, ⟂, ⟂ |",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 21,
+"term": "pointwise",
+"count": 1,
+"context": "| Thu Sept 10<br>Problem Set 1 | Conjugation; pointwise products; products; the sign homomorphism; structure of · | ⟂ (⟂–⟂), ⟂ (⟂), ⟂ and ⟂ (⟂) |",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 22,
+"term": "cosets",
+"count": 3,
+"context": "| Fri Sept 11<br>lecture | Equivalence relations; cosets; index; Lagrange; Fermat | ⟂, ⟂, ⟂, ⟂ (exercise) |",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "Group Theory Course Log",
+"line": 24,
+"term": "orbit space",
+"count": 1,
+"context": "| Wed Sept 16<br>Worksheet 5 / lecture | Orbit space notation; cosets as orbits; orbit–stabilizer; · acting on · | ⟂, ⟂ (⟂–⟂), ⟂ (⟂) |",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-5"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 14,
+"term": "closure",
+"count": 3,
+"context": "- **To show ·.** Check ·, closure under products, and closure under inverses (⟂); or the one-step test: · and · (⟂, ⟂). Shortcuts: · is generat",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 15,
+"term": "cosets",
+"count": 2,
+"context": "two representatives of the same class and show the outputs agree (⟂, ⟂). For maps out of · this is the ⟂; for cosets use · (⟂).",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 16,
+"term": "injective",
+"count": 5,
+"context": "- **To show · is a homomorphism, injective, an isomorphism.** Check · (⟂); injective · · (⟂). Between finite sets of the same size, injective and surjec",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 16,
+"term": "surjective",
+"count": 5,
+"context": "ective, an isomorphism.** Check · (⟂); injective · · (⟂). Between finite sets of the same size, injective and surjective are equivalent.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 16,
+"term": "homomorphism",
+"count": 7,
+"context": "- **To show · is a homomorphism, injective, an isomorphism.** Check · (⟂); injective · · (⟂). Between finite sets of the same size, injective",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 19,
+"term": "permutation",
+"count": 1,
+"context": "he order is the lcm of the cycle lengths (⟂); an ·-cycle has sign · (⟂); conjugate by relabelling, · (⟂); two permutations are conjugate iff they have the same cycle type (⟂).",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 19,
+"term": "permutations",
+"count": 1,
+"context": "he order is the lcm of the cycle lengths (⟂); an ·-cycle has sign · (⟂); conjugate by relabelling, · (⟂); two permutations are conjugate iff they have the same cycle type (⟂).",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 22,
+"term": "isomorphic",
+"count": 2,
+"context": "- **To identify a quotient ·.** Find a surjective homomorphism out of · whose kernel is ·; then · is isomorphic to its target (⟂, ⟂). For finite ·, · (⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 48,
+"term": "group action",
+"count": 1,
+"context": "5. · is an axiom of a group action, not a consequence of compatibility (⟂).",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "Group Theory Toolkit",
+"line": 49,
+"term": "bijection",
+"count": 1,
+"context": "6. · is not well defined (⟂); the bijection · is · (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Injective iff Trivial Kernel",
+"line": 28,
+"term": "linear map",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (linear maps ℝⁿ → ℝᵐ: one-to-one iff T(x) = 0 has only the trivial solution, with worked examples).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Kernels Are Normal",
+"line": 28,
+"term": "quotient map",
+"count": 1,
+"context": "spaces a null space is a subspace (⟂) with no extra condition, since every subspace is the null space of its quotient map.",
+"targets": [
+"Differentiable Manifolds|§5 Quotient Maps#^def-5-1",
+"Linear Algebra|§11 Products and Quotients of Vector Spaces#^ladr-3-104",
+"Topology|§12 Quotient Topology#^def-12-1"
+]
+},
+{
+"note": "Lagrange's Theorem",
+"line": 34,
+"term": "dim v",
+"count": 2,
+"context": "art 3). For a subspace U of a finite vector space over 𝔽_p, |V| = |U| · |V/U| is Lagrange. Taking log_p gives dim V/U = dim V − dim U (⟂), as in ⟂.",
+"targets": [
+"Linear Algebra|§6 Dimension#^ladr-2-35"
+]
+},
+{
+"note": "Lagrange's Theorem",
+"line": 36,
+"term": "residue",
+"count": 1,
+"context": "- **Elementary instance in ⟂:** Gauss's proof of Fermat (⟂, one of three proofs of Fermat) splits the nonzero residues mod p into classes of equal size, which is this proof for the subgroup of powers of a; the order of a divides",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 7,
+"term": "permutation",
+"count": 3,
+"context": "t contains copies of essentially every group in the course, since every finite group embeds in some · through permutation matrices. The determinant is the model homomorphism and character: its kernel · is normal, ·, and conjugacy i",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 7,
+"term": "homomorphism",
+"count": 7,
+"context": "course, since every finite group embeds in some · through permutation matrices. The determinant is the model homomorphism and character: its kernel · is normal, ·, and conjugacy in · is similarity of matrices. Its uses in MATH 493:",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 7,
+"term": "general linear group",
+"count": 1,
+"context": "The general linear group · of invertible · matrices over a field ·, with its subgroups · (determinant ·), · (·) and ·. Alongside · it",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-4"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 15,
+"term": "injective",
+"count": 2,
+"context": "- Permutation matrices give an injective homomorphism · (⟂)",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 24,
+"term": "trace",
+"count": 2,
+"context": "- The conjugacy class of ·: trace ·, determinant · (⟂)",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 25,
+"term": "jordan form",
+"count": 2,
+"context": "- Scalar matrices are central; Jordan form in general (⟂)",
+"targets": [
+"Linear Algebra|Jordan form",
+"Linear Algebra|§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46",
+"Ordinary Differential Equations|§34★ Repeated Eigenvalues#^def-34-3"
+]
+},
+{
+"note": "Matrix groups GLₙ, SLₙ and O(n)",
+"line": 30,
+"term": "special linear group",
+"count": 2,
+"context": "- The projective special linear group · (⟂)",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-5"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 27,
+"term": "bijection",
+"count": 2,
+"context": "- **Structural form.** Each orbit Gx is in natural bijection with G/Stab(x), and every G/H arises this way (⟂, ⟂). Stabilizers along an orbit are conjugate (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 28,
+"term": "path-connected",
+"count": 1,
+"context": "on the fiber, an action the 590 notes do not set up; the stabilizer of e₀ is ·. So the map is onto when E is path-connected (one orbit) and bijective when E is simply connected (trivial stabilizer).",
+"targets": [
+"Single Variable Analysis|§22 More on Metric Spaces꞉ Connectedness#^def-22-1",
+"Topology|§14 Connected Subspaces of ℝ#^def-14-3"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 28,
+"term": "simply connected",
+"count": 1,
+"context": "p; the stabilizer of e₀ is ·. So the map is onto when E is path-connected (one orbit) and bijective when E is simply connected (trivial stabilizer).",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 28,
+"term": "orbit map",
+"count": 1,
+"context": "the spheres as orbits, with Stab(e₁) ≅ O₂(ℝ) (⟂). In 590, the map π₁(B, b₀) → p⁻¹(b₀) of ⟂ can be read as the orbit map of e₀ under the (right) monodromy action of π₁(B, b₀) on the fiber, an action the 590 notes do not set up; th",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-3"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 29,
+"term": "cosets",
+"count": 1,
+"context": "**Coming later in the course.** The Sylow theorems are proved by counting orbits of actions on subgroups and cosets.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 30,
+"term": "homeomorphism",
+"count": 1,
+"context": "- **Topological version.** For a continuous transitive action the orbit bijection is continuous, and a homeomorphism when G/H is compact and X Hausdorff: ⟂ (591 Thm. §7.8), e.g. S² ≅ SO(3)/SO(2).",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 30,
+"term": "compact",
+"count": 1,
+"context": "sion.** For a continuous transitive action the orbit bijection is continuous, and a homeomorphism when G/H is compact and X Hausdorff: ⟂ (591 Thm. §7.8), e.g. S² ≅ SO(3)/SO(2).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 30,
+"term": "hausdorff",
+"count": 1,
+"context": "continuous transitive action the orbit bijection is continuous, and a homeomorphism when G/H is compact and X Hausdorff: ⟂ (591 Thm. §7.8), e.g. S² ≅ SO(3)/SO(2).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "Orbit–Stabilizer Theorem",
+"line": 30,
+"term": "transitive action",
+"count": 1,
+"context": "- **Topological version.** For a continuous transitive action the orbit bijection is continuous, and a homeomorphism when G/H is compact and X Hausdorff: ⟂ (591 Thm. §7.8)",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-1"
+]
+},
+{
+"note": "Quotient Groups",
+"line": 30,
+"term": "hölder",
+"count": 1,
+"context": "- **Coming later in the course.** Composition series and the Jordan–Hölder theorem break a finite group into simple quotients. A finite group is solvable when all these quotients (its",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Rotation group of the cube",
+"line": 7,
+"term": "group action",
+"count": 1,
+"context": "tational symmetries of the cube ·, a subgroup of · of order ·. It is the course's main geometric example of a group action: one group acting on several different sets (faces, edges, vertices, the three pairs of opposite faces, the f",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "Rotation group of the cube",
+"line": 9,
+"term": "permutation",
+"count": 2,
+"context": "- A rotation of the cube as a permutation of the six faces (⟂)",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "Subgroup Criteria",
+"line": 21,
+"term": "closure",
+"count": 2,
+"context": "∅ and a, b ∈ H ⇒ ab⁻¹ ∈ H) is the shortcut recommended in the ⟂. The notes themselves mostly check e ∈ H and closure under products and inverses directly (⟂): kernels and images (⟂), stabilizers (⟂), the center (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Subgroups of Cyclic Groups Are Cyclic",
+"line": 30,
+"term": "well-ordering",
+"count": 1,
+"context": "- **Foundation in ⟂:** the well-ordering principle used for the least exponent m is ⟂ (proved there from induction).",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "Subgroups of ℤ",
+"line": 28,
+"term": "generators",
+"count": 1,
+"context": "** A nonzero subgroup of ℝ is either aℤ or dense (⟂), e.g. ℤ + √2ℤ is dense (⟂). Subgroups of ℤ² can need two generators (⟂).",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+},
+{
+"note": "Subgroups of ℤ",
+"line": 28,
+"term": "dense",
+"count": 2,
+"context": "- **Beyond ℤ.** A nonzero subgroup of ℝ is either aℤ or dense (⟂), e.g. ℤ + √2ℤ is dense (⟂). Subgroups of ℤ² can need two generators (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Subgroups of ℤ",
+"line": 30,
+"term": "rank",
+"count": 1,
+"context": "- **Coming later in the course.** Every subgroup of ℤⁿ is free abelian of rank at most n, part of the structure theory of finitely generated abelian groups (⟂).",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "Subgroups of ℤ",
+"line": 31,
+"term": "well-ordering",
+"count": 1,
+"context": "- **Foundation in ⟂:** the well-ordering principle used for the smallest positive element is ⟂ (proved there from induction).",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "S₄, A₄ and the Klein four-group",
+"line": 18,
+"term": "homomorphism",
+"count": 2,
+"context": "- The pair-partition homomorphism · has kernel · (⟂)",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "The Sign Homomorphism",
+"line": 35,
+"term": "span",
+"count": 1,
+"context": "- **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M (⟂, ⟂). Δ spans a line on which Sₙ acts by sgn (⟂).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "The Sign Homomorphism",
+"line": 35,
+"term": "spans",
+"count": 1,
+"context": "- **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M (⟂, ⟂). Δ spans a line on which Sₙ acts by sgn (⟂).",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "The Sign Homomorphism",
+"line": 36,
+"term": "homomorphism",
+"count": 1,
+"context": "sions (⟂) and uses it in the formula for the determinant (⟂). Multiplicativity of det (⟂) is what makes sgn a homomorphism here.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "The alternating group A₅",
+"line": 7,
+"term": "permutation",
+"count": 1,
+"context": "The alternating group · of even permutations of five letters, of order ·. It is the smallest non-abelian simple group, and the course proves its simplicit",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "The alternating group A₅",
+"line": 7,
+"term": "permutations",
+"count": 1,
+"context": "The alternating group · of even permutations of five letters, of order ·. It is the smallest non-abelian simple group, and the course proves its simplicit",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "The alternating group A₅",
+"line": 11,
+"term": "homomorphism",
+"count": 2,
+"context": "- ·: homomorphisms into a simple group need not be trivial or onto (⟂)",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "The integers ℤ and the subgroups nℤ",
+"line": 7,
+"term": "quotient map",
+"count": 1,
+"context": "The group · is also the source of the homomorphism · that describes every cyclic subgroup, and · is the model quotient map. Its uses in MATH 493:",
+"targets": [
+"Differentiable Manifolds|§5 Quotient Maps#^def-5-1",
+"Linear Algebra|§11 Products and Quotients of Vector Spaces#^ladr-3-104",
+"Topology|§12 Quotient Topology#^def-12-1"
+]
+},
+{
+"note": "The integers ℤ and the subgroups nℤ",
+"line": 7,
+"term": "homomorphism",
+"count": 3,
+"context": "a, the invertibility criterion and the unit groups all descend from it. The group · is also the source of the homomorphism · that describes every cyclic subgroup, and · is the model quotient map. Its uses in MATH 493:",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "The integers ℤ and the subgroups nℤ",
+"line": 18,
+"term": "isomorphic",
+"count": 2,
+"context": "- Every infinite cyclic group is isomorphic to · (⟂)",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "The symmetric group S₃",
+"line": 7,
+"term": "permutation",
+"count": 3,
+"context": "The symmetric group · of all permutations of ·: six elements, namely the identity, the three transpositions and the two ·-cycles. It is the smallest no",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "The symmetric group S₃",
+"line": 7,
+"term": "cosets",
+"count": 5,
+"context": "that might secretly need commutativity: cancellation with mixed sides, generated subgroups, left versus right cosets, normality, characters. Everything about it is computed by hand: the multiplication table, the six subgroups,",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "The symmetric group S₃",
+"line": 7,
+"term": "permutations",
+"count": 1,
+"context": "The symmetric group · of all permutations of ·: six elements, namely the identity, the three transpositions and the two ·-cycles. It is the smallest no",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "The symmetric group S₃",
+"line": 11,
+"term": "generators",
+"count": 2,
+"context": "- Products of powers of the generators in a fixed order do not give · (⟂)",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+},
+{
+"note": "p-Groups Have Nontrivial Center",
+"line": 26,
+"term": "nilpotent",
+"count": 1,
+"context": "e.** It starts the theory of p-groups: every group of order p² is abelian (for p = 2 see ⟂), every p-group is nilpotent, and Sylow theory studies the maximal p-subgroups of an arbitrary finite group.",
+"targets": [
+"Linear Algebra|§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-14"
+]
+},
+{
+"note": "§1 The Definition of a Group",
+"line": 30,
+"term": "unitary operator",
+"count": 1,
+"context": "> - Used in Quantum Mechanics: the translations of space form an abelian group, represented by unitary operators on kets; that they commute gives · — ⟂.",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51"
+]
+},
+{
+"note": "§10 Cycle Notation and the Group S₃",
+"line": 20,
+"term": "permutations",
+"count": 2,
+"context": "> - Axler's permutations as lists, used for determinants: ⟂.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§11 Disjoint Cycle Decomposition",
+"line": 49,
+"term": "injective",
+"count": 1,
+"context": "ws ·. Since there are only · values, some repetition · with · occurs; applying · (i.e. cancelling, since · is injective) gives ·. Let · be the least positive integer with ·; then · are distinct (a repetition among them would give",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§11 Disjoint Cycle Decomposition",
+"line": 49,
+"term": "trace",
+"count": 1,
+"context": "ining ·. The loops of · and · are disjoint: if they shared an element, following arrows forward from it would trace the same loop, since each element has exactly one outgoing arrow. Continue until every element is accounted f",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§12 Multiplying and Conjugating Cycles",
+"line": 23,
+"term": "bijection",
+"count": 2,
+"context": "> **Checks.** Each number must appear at most once across the output cycles (the result is a bijection). The commonest error is reading a factor left to right; when a product looks wrong, recheck the direction fi",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§12 Multiplying and Conjugating Cycles",
+"line": 32,
+"term": "permutation",
+"count": 8,
+"context": "> Consequently, conjugation preserves the cycle type (the multiset of cycle lengths) of any permutation.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§12 Multiplying and Conjugating Cycles",
+"line": 37,
+"term": "injective",
+"count": 1,
+"context": "roduct of disjoint cycles, conjugate factor by factor: ·, and the relabeled cycles remain disjoint since · is injective.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§13 The Symmetric Group S₃",
+"line": 32,
+"term": "closure",
+"count": 3,
+"context": "lements of · are transpositions. If · contained two distinct transpositions, Step 1 would put a 3-cycle in · (closure) — contradiction. So · contains exactly one transposition ·, and ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§14 Multiplication Tables",
+"line": 13,
+"term": "permutation",
+"count": 2,
+"context": "se entry in row ·, column · is the product · (row element on the left). By ⟂, every row and every column is a permutation of ·; the table is symmetric about the main diagonal exactly when · is abelian.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§14 Multiplication Tables",
+"line": 93,
+"term": "bijection",
+"count": 1,
+"context": "> The worksheet recalls that · is the group of bijections · under composition, introduces cycle notation — · for ·, fixing everything else — and writes · or · for the",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§15 Homomorphisms",
+"line": 149,
+"term": "closure",
+"count": 1,
+"context": "> **(1)** · since ·. For ·: · by closure in ·, and · since ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§16 Isomorphisms",
+"line": 38,
+"term": "bijection",
+"count": 14,
+"context": "This is a genuinely algebraic phenomenon. “Preserves the operation” is an *equation* between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not h",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§16 Isomorphisms",
+"line": 44,
+"term": "compact",
+"count": 1,
+"context": "> - When a continuous bijection *is* a homeomorphism: ⟂ (here · is not compact).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§16 Isomorphisms",
+"line": 89,
+"term": "injective",
+"count": 3,
+"context": "> As · is injective, ·, a contradiction.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§16 Isomorphisms",
+"line": 156,
+"term": "surjective",
+"count": 2,
+"context": "> **(1)** Let ·. As · is surjective, · for some ·, and then",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§16 Isomorphisms",
+"line": 189,
+"term": "coprime",
+"count": 1,
+"context": "uses a representative · of a class in ·. Since ·, if · then ·, so · depends only on the class of ·. Also · is coprime to ·, so the values lie in ·.",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "§17 Cyclic Groups",
+"line": 14,
+"term": "isomorphic",
+"count": 3,
+"context": "nite order ·, then · has exactly · elements, and ·, ·, is an isomorphism. So every cyclic group of order · is isomorphic to ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§17 Cyclic Groups",
+"line": 24,
+"term": "surjective",
+"count": 4,
+"context": "> Define · on ·; it is a homomorphism · by the ⟂ (·), and surjective since ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§17 Cyclic Groups",
+"line": 26,
+"term": "injective",
+"count": 5,
+"context": "since ·, the ⟂ (§7.2) gives a well-defined homomorphism · on · — explicitly, · implies · — still surjective. *Injective:* · iff · iff ·, so ·; by the ⟂, · is injective. Hence · is an isomorphism, and · with ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§17 Cyclic Groups",
+"line": 114,
+"term": "well-ordering",
+"count": 1,
+"context": "> - The well-ordering step: ⟂ (proved there from induction).",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "§17 Cyclic Groups",
+"line": 147,
+"term": "coprime",
+"count": 2,
+"context": "re Is an Element of Order ·, ⟂), iff ·, iff ·. The elements of · are ·, so the generators correspond to the · coprime to ·, of which there are ·.",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "§18 Conjugation, Products, and Pointwise Products",
+"line": 62,
+"term": "pointwise",
+"count": 12,
+"context": "> [!definition] Definition §18.3: ·; Pointwise Product",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§18 Conjugation, Products, and Pointwise Products",
+"line": 102,
+"term": "injective",
+"count": 4,
+"context": "> 2. · and · are surjective homomorphisms; · and · are injective homomorphisms.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§18 Conjugation, Products, and Pointwise Products",
+"line": 102,
+"term": "surjective",
+"count": 2,
+"context": "> 2. · and · are surjective homomorphisms; · and · are injective homomorphisms.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§18 Conjugation, Products, and Pointwise Products",
+"line": 104,
+"term": "isomorphic",
+"count": 1,
+"context": "> 4. The diagonal · is an injective homomorphism; its image · is a subgroup of · isomorphic to ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§19 S₃, ℤ∕nℤ and Uₙ",
+"line": 26,
+"term": "homomorphism",
+"count": 2,
+"context": "· is the source of every cyclic group: the homomorphism · out of · has kernel ·, so every cyclic group is · or some ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§2 First Consequences of the Axioms",
+"line": 62,
+"term": "permutation",
+"count": 1,
+"context": "ancelling it. In an abelian group the mixed hypothesis *does* give ·. Conjugation — and the way conjugating a permutation “relabels” the objects it moves, as in ⟂ — will become a central tool later (⟂, ⟂).",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§2 First Consequences of the Axioms",
+"line": 81,
+"term": "zero vector",
+"count": 1,
+"context": "> - Same argument for the zero vector: ⟂; for additive inverses, ⟂.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-1"
+]
+},
+{
+"note": "§2 First Consequences of the Axioms",
+"line": 173,
+"term": "linear map",
+"count": 1,
+"context": "> - For linear maps between spaces of the same finite dimension one-sided also suffices, for a different reason (dimension): ⟂; t",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 10,
+"term": "permutation",
+"count": 14,
+"context": "*Reference: Pinter Ch. 24 (rings of polynomials). Permutation matrices and representations are not treated in Pinter.*",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 86,
+"term": "permutations",
+"count": 2,
+"context": "inates**. The set · is the **standard basis**: it ⟂ · and is ⟂. In the context of ·, the index set · on which permutations act is identified with the standard basis by ·.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 126,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "> Existence and uniqueness of · are ⟂ with ·. On basis vectors, ·, so · by uniqueness (two linear maps agreeing on a basis are equal). T",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 136,
+"term": "bijection",
+"count": 2,
+"context": "> Let · be a finite set and · the ·-vector space with basis · indexed by ·. Every bijection · extends uniquely to a linear map · with ·, and · is an injective homomorphism ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 136,
+"term": "injective",
+"count": 2,
+"context": "tor space with basis · indexed by ·. Every bijection · extends uniquely to a linear map · with ·, and · is an injective homomorphism ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 136,
+"term": "homomorphism",
+"count": 3,
+"context": "with basis · indexed by ·. Every bijection · extends uniquely to a linear map · with ·, and · is an injective homomorphism ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 148,
+"term": "embedding",
+"count": 1,
+"context": "> - Composed with Cayley's embedding · this gives ⟂.",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 227,
+"term": "invariant subspace",
+"count": 1,
+"context": "in Quantum Field Theory: representations of Lie groups and Lie algebras on a carrier space, with equivalence, invariant subspaces, irreducibility and unitarity — ⟂, ⟂; and Schur's lemma, which these notes do not contain yet (the representa",
+"targets": [
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-2"
+]
+},
+{
+"note": "§20 Polynomial Rings, Permutation Matrices, and Representations",
+"line": 229,
+"term": "group action",
+"count": 1,
+"context": "> [!remark] Remark: Group Actions",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 65,
+"term": "bijection",
+"count": 3,
+"context": "f ·; the factors of · correspond to ·, the subset · (·) giving · with the smaller index first. The map · is a bijection · (well-defined and lands in · by injectivity of ·; injective by applying ·; surjective by surjectivity of ·)",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 65,
+"term": "injective",
+"count": 1,
+"context": "· with the smaller index first. The map · is a bijection · (well-defined and lands in · by injectivity of ·; injective by applying ·; surjective by surjectivity of ·). For a fixed pair ·, the factor · of · equals the ·-factor of",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 65,
+"term": "surjective",
+"count": 3,
+"context": "first. The map · is a bijection · (well-defined and lands in · by injectivity of ·; injective by applying ·; surjective by surjectivity of ·). For a fixed pair ·, the factor · of · equals the ·-factor of · if ·, and equals *minus",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 93,
+"term": "homomorphism",
+"count": 6,
+"context": "> [!theorem] Theorem §21.3: The Sign Is a Homomorphism",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 180,
+"term": "generators",
+"count": 2,
+"context": "> [!theorem] Theorem §21.7: Generators of ·",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+},
+{
+"note": "§21 The Sign Homomorphism and the Alternating Group",
+"line": 250,
+"term": "eigenvector",
+"count": 1,
+"context": "> - In the language of actions: · (⟂); · as a common eigenvector giving the sign character: ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§22 The Structure of Uₙ",
+"line": 14,
+"term": "coprime",
+"count": 2,
+"context": "> [!theorem] Lemma §22.1: Coprime to Each Factor, Coprime to the Product",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "§22 The Structure of Uₙ",
+"line": 49,
+"term": "injective",
+"count": 1,
+"context": "> **Injective.** If ·, then · for every ·, so by the uniqueness clause of the ⟂, ·. (Alternatively: ·, and inductively · im",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§22 The Structure of Uₙ",
+"line": 51,
+"term": "surjective",
+"count": 1,
+"context": "> **Surjective.** Given · with ·, the existence clause of the ⟂ gives · with · for all ·. Then · for each ·, so · by ⟂, ·, a",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§22 The Structure of Uₙ",
+"line": 88,
+"term": "isomorphic",
+"count": 1,
+"context": "> - Replacing factors by isomorphic ones: ⟂ (590 §21.7).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§23 S₃, Aₙ, Uₙ and GLₙ",
+"line": 10,
+"term": "permutation",
+"count": 3,
+"context": "nd coordinates, · as the kernel of the sign, · split by the Chinese remainder theorem, and · as the target of permutation matrices. Each part gathers the chapter's items about one group, in order.*",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§23 S₃, Aₙ, Uₙ and GLₙ",
+"line": 24,
+"term": "homomorphism",
+"count": 1,
+"context": "· enters as the kernel of the sign homomorphism, and ⟂ is devoted to it: it has order ·, it is generated by ·-cycles, and it is the stabilizer of ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§24 Equivalence Relations and Partitions",
+"line": 12,
+"term": "congruence class",
+"count": 1,
+"context": "l is to decompose a group · into disjoint subsets, given a subgroup · — extending the decomposition of · into congruence classes modulo · (⟂), which is the case ·, ·. The framework is that of equivalence relations.",
+"targets": [
+"Logic and Proofs|§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1"
+]
+},
+{
+"note": "§24 Equivalence Relations and Partitions",
+"line": 20,
+"term": "order relation",
+"count": 1,
+"context": "> The basic example is equality. Order relations (· on ·, or divisibility) are typically *not* equivalence relations, failing symmetry.",
+"targets": [
+"Topology|§3 Order Topology#^def-3-1"
+]
+},
+{
+"note": "§24 Equivalence Relations and Partitions",
+"line": 49,
+"term": "equivalence classes",
+"count": 2,
+"context": "> [!theorem] Proposition §24.1: Equivalence Classes Partition a Set",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§24 Equivalence Relations and Partitions",
+"line": 70,
+"term": "cosets",
+"count": 1,
+"context": "> - Applied to orbits and cosets: ⟂, ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§25 Actions",
+"line": 33,
+"term": "topological group",
+"count": 1,
+"context": "> - Same definition in 591, ⟂; for a topological group acting on a space one also asks that the action map be continuous, ⟂.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-1"
+]
+},
+{
+"note": "§25 Actions",
+"line": 93,
+"term": "bijection",
+"count": 12,
+"context": "other. The distinction matters only for bookkeeping the order of composition. The same inversion produces the bijection · between left and right cosets (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§25 Actions",
+"line": 119,
+"term": "inverse function",
+"count": 2,
+"context": "recall that · is the group of all bijections ·, with operation composition (·), identity ·, and inverses the inverse functions (⟂). An action of · on · is the same thing as a group homomorphism ·. Precisely:",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§25 Actions",
+"line": 170,
+"term": "homeomorphism",
+"count": 2,
+"context": "> - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, ⟂, so the homomorphism lands in the homeomorphisms of X.",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§25 Actions",
+"line": 172,
+"term": "permutation",
+"count": 3,
+"context": "> [!example] Example §25.3: Seeing the Permutations",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§25 Actions",
+"line": 172,
+"term": "permutations",
+"count": 1,
+"context": "> [!example] Example §25.3: Seeing the Permutations",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§25 Actions",
+"line": 179,
+"term": "injective",
+"count": 9,
+"context": "> The homomorphism property can be checked directly, e.g. ·. Here · is injective, with image the subgroup ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§25 Actions",
+"line": 211,
+"term": "isomorphic",
+"count": 5,
+"context": "> If · acts faithfully on ·, then · is injective and ·. If moreover ·, then · is isomorphic to a subgroup of ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§25 Actions",
+"line": 254,
+"term": "embedding",
+"count": 3,
+"context": "*The embedding of a group of order · into ·: Cayley's theorem, relabelling, and the permutation representation, each injecti",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§26 Stabilizers and Fixed Points",
+"line": 33,
+"term": "continuous action",
+"count": 1,
+"context": "> - Called the isotropy subgroup in 591, ⟂; for a continuous action on a space whose points are closed it is a closed subgroup, ⟂.",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-2"
+]
+},
+{
+"note": "§26 Stabilizers and Fixed Points",
+"line": 84,
+"term": "isomorphic",
+"count": 1,
+"context": "·, and conjugation · restricts to an isomorphism ·. In particular all stabilizers of points in one orbit are isomorphic and have the same order.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§26 Stabilizers and Fixed Points",
+"line": 89,
+"term": "injective",
+"count": 1,
+"context": "> The equality is ⟂. Conjugation · is an automorphism of · (⟂), so its restriction to · is an injective homomorphism with image ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§26 Stabilizers and Fixed Points",
+"line": 89,
+"term": "homomorphism",
+"count": 1,
+"context": "> The equality is ⟂. Conjugation · is an automorphism of · (⟂), so its restriction to · is an injective homomorphism with image ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§27 Orbits",
+"line": 26,
+"term": "cosets",
+"count": 2,
+"context": "> - Orbit size is the index of the stabilizer: ⟂; cosets are orbits: ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§27 Orbits",
+"line": 48,
+"term": "equivalence classes",
+"count": 1,
+"context": "> The relation “· iff · for some ·” is an ⟂ on ·, and its equivalence classes are the orbits.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§27 Orbits",
+"line": 61,
+"term": "open equivalence relation",
+"count": 1,
+"context": "> - Same relation in 591, ⟂ and ⟂; for a continuous action it is an open equivalence relation, ⟂.",
+"targets": [
+"Differentiable Manifolds|§4 Quotient Spaces and Open Maps#^def-4-3"
+]
+},
+{
+"note": "§27 Orbits",
+"line": 79,
+"term": "bijection",
+"count": 1,
+"context": "the orbit of · (red) is the sphere of radius ·. The ray · (blue) meets each orbit exactly once, which is the bijection ·.*",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 20,
+"term": "closure",
+"count": 2,
+"context": "> Since · is a subgroup, · (closure under inverses), so the right relation is symmetric in the two elements as expected. If · is abelian, · and t",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 39,
+"term": "quotient topology",
+"count": 1,
+"context": "> - With a topology: the coset space G/H with the quotient topology from the projection, ⟂ (cosets restated in ⟂).",
+"targets": [
+"Differentiable Manifolds|§4 Quotient Spaces and Open Maps#^def-4-1",
+"Topology|§12 Quotient Topology#^def-12-2"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 44,
+"term": "orbit space",
+"count": 5,
+"context": "> 1. · acts on · on the right by multiplication, ·; its orbits are the left cosets ·, so · is the orbit space of this right action — consistent with the notation · above (⟂).",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-5"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 65,
+"term": "equivalence classes",
+"count": 2,
+"context": "> [!theorem] Proposition §28.2: Cosets Are the Equivalence Classes",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 122,
+"term": "bijection",
+"count": 3,
+"context": "> [!theorem] Proposition §28.3: A Natural Bijection ·",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 142,
+"term": "injective",
+"count": 1,
+"context": "), while · iff · (the ⟂, with · closed under inverses). The two conditions coincide, so · is well defined and injective; it is surjective since every right coset is · for ·. The inverse map · is checked identically. Hence the num",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§28 Left and Right Cosets",
+"line": 142,
+"term": "surjective",
+"count": 1,
+"context": "(the ⟂, with · closed under inverses). The two conditions coincide, so · is well defined and injective; it is surjective since every right coset is · for ·. The inverse map · is checked identically. Hence the numbers of left and r",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 22,
+"term": "bijection",
+"count": 3,
+"context": "> Define · by ·. It is surjective by the definition of ·. It is injective by cancellation (⟂): ·. So · is a bijection and ·. The map · gives the other equality.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 22,
+"term": "injective",
+"count": 2,
+"context": "> Define · by ·. It is surjective by the definition of ·. It is injective by cancellation (⟂): ·. So · is a bijection and ·. The map · gives the other equality.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 22,
+"term": "surjective",
+"count": 2,
+"context": "> Define · by ·. It is surjective by the definition of ·. It is injective by cancellation (⟂): ·. So · is a bijection and ·. The map · gives th",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 29,
+"term": "left cosets",
+"count": 7,
+"context": "> The **index** of · in ·, written ·, is the number of left cosets of · in ·, an element of ·. The set of left cosets is denoted ·, and the set of right cosets ·.",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 60,
+"term": "residue",
+"count": 1,
+"context": "Gauss's proof of Fermat in ⟂ (three proofs of Fermat) is this argument for the powers of · among the nonzero residues modulo ·.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 161,
+"term": "pigeonhole",
+"count": 1,
+"context": "> Since ·, choose · with ·. By the pigeonhole proposition (⟂) · has finite order, so · is a subgroup of · with · (⟂). By Lagrange, · divides ·, hence equal",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "§29 The Index and Lagrange's Theorem",
+"line": 176,
+"term": "cardinality",
+"count": 1,
+"context": "> By Lagrange, a subgroup has order dividing ·, hence · or ·; the first gives ·, the second gives · by the cardinality argument ⟂.",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§3 Basic Examples of Groups",
+"line": 12,
+"term": "closure",
+"count": 6,
+"context": "n (arithmetic, function composition); the nontrivial points are *well-definedness* (for · (⟂) and · (⟂)) and *closure* (for ·, ·, ·).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§3 Basic Examples of Groups",
+"line": 30,
+"term": "universal property",
+"count": 1,
+"context": "> - Characterized by its universal property in ⟂.",
+"targets": [
+"Topology|§12 Quotient Topology#^thm-12-3"
+]
+},
+{
+"note": "§3 Basic Examples of Groups",
+"line": 69,
+"term": "inverse function",
+"count": 2,
+"context": "position: · (**convention:** apply the right factor first). Then · is a group with identity · and inverse the inverse function ·. If ·, we call this group the **symmetric group** and denote it ·; it has · elements and is non-abelian for",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§3 Basic Examples of Groups",
+"line": 142,
+"term": "orthonormal",
+"count": 1,
+"context": "> - Computational version: ⟂ and ⟂ (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 29,
+"term": "bijection",
+"count": 6,
+"context": "> [!theorem] Proposition §30.2: The Orbit Bijection",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 53,
+"term": "injective",
+"count": 2,
+"context": "> **Injective.** Suppose ·. Applying · to both sides, ·, so · for some ·; then · and ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 55,
+"term": "surjective",
+"count": 2,
+"context": "> **Surjective.** Let ·, say · with ·. Then ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 68,
+"term": "homeomorphism",
+"count": 1,
+"context": "> - Topological upgrade: for a continuous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, ⟂, ⟂.",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 68,
+"term": "compact",
+"count": 1,
+"context": "for a continuous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, ⟂, ⟂.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 68,
+"term": "hausdorff",
+"count": 1,
+"context": "ous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, ⟂, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 109,
+"term": "cosets",
+"count": 8,
+"context": "> Two instances: the cosets of the point stabilizer in · (⟂), where the orbit of · is all of · and ·; and the conjugacy classes of a grou",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 148,
+"term": "closure",
+"count": 1,
+"context": "> (·) Suppose ·. Then ·, so ·. Given ·, put · (closure); then ·, so ·. The hypothesis is symmetric in ·, so the reverse inclusion follows likewise.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 180,
+"term": "permutation",
+"count": 2,
+"context": "*The cosets of · in ·, sorted as in §30.4: each left coset · (row) collects the permutations with one value of ·, each right coset · (column) those with one value of ·. The pair ·, · (red) share a row,",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§30 Orbit–Stabilizer",
+"line": 180,
+"term": "permutations",
+"count": 2,
+"context": "*The cosets of · in ·, sorted as in §30.4: each left coset · (row) collects the permutations with one value of ·, each right coset · (column) those with one value of ·. The pair ·, · (red) share a row,",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§31 G Acting on Coset Spaces",
+"line": 15,
+"term": "cosets",
+"count": 3,
+"context": "> Let · be a group and · a subgroup, and let · be the set of left cosets of ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§31 G Acting on Coset Spaces",
+"line": 15,
+"term": "left cosets",
+"count": 2,
+"context": "> Let · be a group and · a subgroup, and let · be the set of left cosets of ·.",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "§31 G Acting on Coset Spaces",
+"line": 61,
+"term": "homomorphism",
+"count": 1,
+"context": "> - The homomorphism · of this action produces a normal subgroup inside ·: ⟂, whose kernel is ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§31 G Acting on Coset Spaces",
+"line": 62,
+"term": "quotient topology",
+"count": 1,
+"context": "> - With topologies this is the model homogeneous space: G/H with the quotient topology, ⟂, and every homogeneous space is of this form, ⟂.",
+"targets": [
+"Differentiable Manifolds|§4 Quotient Spaces and Open Maps#^def-4-1",
+"Topology|§12 Quotient Topology#^def-12-2"
+]
+},
+{
+"note": "§31 G Acting on Coset Spaces",
+"line": 62,
+"term": "homogeneous space",
+"count": 2,
+"context": "> - With topologies this is the model homogeneous space: G/H with the quotient topology, ⟂, and every homogeneous space is of this form, ⟂.",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-1"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 48,
+"term": "inner product",
+"count": 1,
+"context": "> **(1)** Orthogonal matrices preserve the inner product ·: ·. In particular ·, so each orbit lies in a single sphere · (or is ·). Conversely, given · with ·, extend",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 48,
+"term": "orthonormal columns",
+"count": 1,
+"context": "sely, given · with ·, extend · to an orthonormal basis · and · to · (⟂); the matrices · and · are orthogonal (orthonormal columns), and · is orthogonal with ·. So · acts transitively on each sphere.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^thm-41-4"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 50,
+"term": "injective",
+"count": 3,
+"context": "ces the first row to be · as well (the other columns are orthogonal to ·), so ·, and · iff ·. The map · is an injective homomorphism · (block multiplication) with image the stabilizer.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 50,
+"term": "homomorphism",
+"count": 4,
+"context": "rst row to be · as well (the other columns are orthogonal to ·), so ·, and · iff ·. The map · is an injective homomorphism · (block multiplication) with image the stabilizer.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 50,
+"term": "block multiplication",
+"count": 1,
+"context": "as well (the other columns are orthogonal to ·), so ·, and · iff ·. The map · is an injective homomorphism · (block multiplication) with image the stabilizer.",
+"targets": [
+"Applied Linear Algebra|§14 Partitioned Matrices#^prop-14-2"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 107,
+"term": "isomorphic",
+"count": 1,
+"context": "group · of the cube on its six faces is faithful. Hence the associated homomorphism · is injective, and · is isomorphic to a subgroup of · of order ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 149,
+"term": "cosets",
+"count": 2,
+"context": "· is the chapter's test case for cosets: its left and right cosets of · differ, and recording · and · explains why. It is also where · lands when it",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 190,
+"term": "permutation",
+"count": 3,
+"context": "· acts on ·, and by Cayley's theorem and permutation matrices every finite group sits inside some ·. The orbits and stabilizers of · and · on · are worked out abo",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§32 Linear Groups, the Cube, S₃ and A₄",
+"line": 202,
+"term": "permutations",
+"count": 2,
+"context": "faces, edges, vertices, colours and body diagonals. Before the full treatment above, it appears as a group of permutations of the faces and in Burnside's count.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§33 Conjugacy Classes",
+"line": 35,
+"term": "permutation",
+"count": 3,
+"context": "> More generally, for a permutation written in disjoint-cycle notation (⟂), conjugating by · applies · to every entry:",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§33 Conjugacy Classes",
+"line": 60,
+"term": "injective",
+"count": 1,
+"context": "le of the same length ·. These relabeled cycles are again pairwise disjoint: the entries of · are ·, and · is injective, so distinct · give disjoint sets.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§33 Conjugacy Classes",
+"line": 86,
+"term": "bijection",
+"count": 3,
+"context": "onversely, given a transposition ·, choose any · with · and · (possible since ·; e.g. extend arbitrarily to a bijection); then ·. Hence · is exactly the set of transpositions, of which there are ·, one for each ·-element subset o",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§33 Conjugacy Classes",
+"line": 174,
+"term": "diagonal matrix",
+"count": 1,
+"context": "> [!theorem] Proposition §33.4: Conjugacy Class of a Diagonal Matrix",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§33 Conjugacy Classes",
+"line": 195,
+"term": "diagonalizable",
+"count": 1,
+"context": "ar to ·. Conjugacy classes in · are classified in general by Jordan normal form, of which this problem is the diagonalizable case.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§34 Conjugation as an Action and the Class Equation",
+"line": 23,
+"term": "homomorphism",
+"count": 2,
+"context": "> The corresponding homomorphism · (⟂) is ·, with image the inner automorphisms (⟂) and kernel ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§34 Conjugation as an Action and the Class Equation",
+"line": 35,
+"term": "adjoint",
+"count": 1,
+"context": "> - For a matrix group, conjugation X ↦ gXg⁻¹ applied to tangent vectors at the identity is the adjoint action, ⟂.",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-1"
+]
+},
+{
+"note": "§34 Conjugation as an Action and the Class Equation",
+"line": 154,
+"term": "eigenvalue",
+"count": 1,
+"context": "on itself, ⟂; the conjugacy class of a matrix is its orbit under · acting on · by ·, classified (for distinct eigenvalues) by the ⟂; and ⟂ and ⟂ below say, in this language, that the center is the set of fixed points of the action",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§35 The Center",
+"line": 61,
+"term": "homomorphism",
+"count": 1,
+"context": "> · is the kernel of the homomorphism · given by the conjugation action (⟂), and kernels are subgroups (⟂) — indeed normal subgroups (⟂).",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§36 S₃, S₄ and GLₙ",
+"line": 34,
+"term": "diagonal matrix",
+"count": 1,
+"context": "In · conjugacy is similarity of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scala",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§36 S₃, S₄ and GLₙ",
+"line": 34,
+"term": "eigenvalue",
+"count": 1,
+"context": "In · conjugacy is similarity of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scalar matrices are central, an",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§36 S₃, S₄ and GLₙ",
+"line": 34,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "y of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scalar matrices are central, and in general Jordan form classifies the classes.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§36 S₃, S₄ and GLₙ",
+"line": 34,
+"term": "jordan form",
+"count": 1,
+"context": "exactly to the matrices with the same characteristic polynomial, scalar matrices are central, and in general Jordan form classifies the classes.",
+"targets": [
+"Linear Algebra|Jordan form",
+"Linear Algebra|§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46",
+"Ordinary Differential Equations|§34★ Repeated Eigenvalues#^def-34-3"
+]
+},
+{
+"note": "§37 Multiplying Cosets",
+"line": 13,
+"term": "equivalence classes",
+"count": 1,
+"context": "out mathematics: impose an equivalence relation on an object and try to transport its structure to the set of equivalence classes. In topology this produces ⟂ (590 notes); in algebra it sometimes works and sometimes does not, and it is imp",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§37 Multiplying Cosets",
+"line": 13,
+"term": "left cosets",
+"count": 1,
+"context": "ct is a group ·, the equivalence relation is left congruence modulo a subgroup · (⟂), and the classes are the left cosets ·, forming the set ·. The model case is ·, ·, where the classes are residue classes and · inherits addition (",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "§37 Multiplying Cosets",
+"line": 13,
+"term": "residue",
+"count": 1,
+"context": "(⟂), and the classes are the left cosets ·, forming the set ·. The model case is ·, ·, where the classes are residue classes and · inherits addition (⟂).",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§38 Normal Subgroups",
+"line": 31,
+"term": "closure",
+"count": 1,
+"context": "> (1) If · is abelian, ·. (2) ·, and · for all · by closure.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§38 Normal Subgroups",
+"line": 47,
+"term": "left cosets",
+"count": 1,
+"context": "> 4. the set of left cosets of · equals the set of right cosets of ·.",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "§38 Normal Subgroups",
+"line": 76,
+"term": "bijection",
+"count": 1,
+"context": "> Here ·, ·, · are subsets of ·, and “multiplying an equality of subsets by ·” means applying the bijection · of · to both sides; this is legitimate for equalities of sets, and preserves inclusions as well.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§39 Sources of Normal Subgroups",
+"line": 22,
+"term": "left cosets",
+"count": 4,
+"context": "> There are exactly two left cosets. One of them is ·, and since the left cosets partition ·, the other is the complement ·. Likewise there are e",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-4"
+]
+},
+{
+"note": "§39 Sources of Normal Subgroups",
+"line": 87,
+"term": "surjective",
+"count": 1,
+"context": "> 3. If · is a *surjective* homomorphism, then · is normal in ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§39 Sources of Normal Subgroups",
+"line": 110,
+"term": "injective",
+"count": 2,
+"context": "> **·.** Define · by ·. It is well defined: if · then · with ·, so ·. It is injective: if ·, then ·, so · and ·. Hence ·, the last equality because relabelling the · cosets gives ·. The argument",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§4 Subgroups",
+"line": 24,
+"term": "subspace topology",
+"count": 1,
+"context": "> - Topological version: a subgroup of a topological group, with the subspace topology, is a topological group, ⟂.",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-1",
+"Topology|§5 Subspace Topology#^def-5-1"
+]
+},
+{
+"note": "§4 Subgroups",
+"line": 49,
+"term": "closure",
+"count": 5,
+"context": "> (1) · (2): · makes · nonempty. (2) · (3): given ·, · by closure under inverses, then · by closure under products. (3) · (1): pick any · (nonempty); then ·. For ·, ·. For ·,",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§4 Subgroups",
+"line": 297,
+"term": "well-ordering",
+"count": 1,
+"context": "> - The pigeonhole step is ⟂; well-ordering is proved from induction in ⟂.",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "§4 Subgroups",
+"line": 297,
+"term": "pigeonhole",
+"count": 4,
+"context": "> - The pigeonhole step is ⟂; well-ordering is proved from induction in ⟂.",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "§4 Subgroups",
+"line": 300,
+"term": "pigeonhole principle",
+"count": 1,
+"context": "> The argument is the pigeonhole principle and fails without finiteness: in · the element · satisfies · for every ·, so it has infinite order — the powe",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "§40 Quotient Groups",
+"line": 54,
+"term": "surjective",
+"count": 2,
+"context": "> Let ·. The canonical projection ·, ·, is a surjective homomorphism with ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§40 Quotient Groups",
+"line": 76,
+"term": "residue",
+"count": 1,
+"context": "(normal, since · is abelian) subgroup ·: its elements are the cosets ·, and coset addition is the addition of residue classes of ⟂. The notation of ⟂ is thus an instance of the general one.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§40 Quotient Groups",
+"line": 93,
+"term": "bijection",
+"count": 2,
+"context": "every ⟂ · contains exactly one ·, i.e. · for a unique ·. Equivalently, ·, where · means · and ·. Then · is a bijection ·, so the elements of · can be named by the elements of ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§41 The First Isomorphism Theorem",
+"line": 42,
+"term": "surjection",
+"count": 1,
+"context": "> - Set-level version: ⟂ (a surjection induces a bijection on the quotient set).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§41 The First Isomorphism Theorem",
+"line": 42,
+"term": "bijection",
+"count": 1,
+"context": "> - Set-level version: ⟂ (a surjection induces a bijection on the quotient set).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§41 The First Isomorphism Theorem",
+"line": 67,
+"term": "rank",
+"count": 1,
+"context": "> [!remark] Remark: Rank–Nullity",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§41 The First Isomorphism Theorem",
+"line": 68,
+"term": "linear map",
+"count": 1,
+"context": "> The corollary is the group version of the ⟂. For a linear map ·, the kernel is · and the image is ·, so the corollary reads ·. Rank–nullity has a plus where the corollary",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§42 The Second and Third Isomorphism Theorems",
+"line": 25,
+"term": "closure",
+"count": 1,
+"context": "> *Closure (lecture).* Let · and ·. Since · is normal, · for some · (·). So ·. *Containment:* · and ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 13,
+"term": "bijection",
+"count": 2,
+"context": "·, with ·. Conversely, whenever · acts on a set ·, the set breaks up into orbits, ·, and each · is in natural bijection with ·, where · is the stabilizer of a point of · (⟂). When · is normal, · is itself a group (⟂), and every h",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 64,
+"term": "homomorphism",
+"count": 8,
+"context": "> [!theorem] Proposition §43.3: Homomorphisms out of a Simple Group",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 65,
+"term": "injective",
+"count": 2,
+"context": "> Let · be simple and · any group. Every homomorphism · is either injective or trivial.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 79,
+"term": "surjective",
+"count": 5,
+"context": "homomorphisms *into* a simple group is false: ·, ·, is a homomorphism into the simple group · that is neither surjective nor trivial.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 203,
+"term": "generators",
+"count": 2,
+"context": "cycle is conjugate to it in ·, so, · being normal, · contains all ·-cycles. Since · is generated by ·-cycles (Generators of ·, ⟂), ·. Thus the only normal subgroups of · are · and ·, and ·: · is simple.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 230,
+"term": "permutation",
+"count": 1,
+"context": "> A permutation carries a splitting into pairs to another such splitting, so this is an action, and it gives · (Actions Are H",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§43 Simple Groups",
+"line": 298,
+"term": "special linear group",
+"count": 2,
+"context": "tioned only for general culture and is not proved in the course. It explains the notation · in the projective special linear groups · ⟂, one of the three main families of simple groups: the ·, the · (·), and the ·.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-5"
+]
+},
+{
+"note": "§44 S₃, S₄, A₄ and A₅",
+"line": 42,
+"term": "homomorphism",
+"count": 1,
+"context": "The normal subgroups of · are ·, ·, · and ·, read off from its class sizes. The pair-partition homomorphism · has kernel ·, so ·; inside · it makes · normal and keeps · and · apart, which is why · is the one non-simpl",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§45 Characters",
+"line": 13,
+"term": "homomorphism",
+"count": 6,
+"context": "> Let · be a group and · an *abelian* group. A homomorphism · is called a **character** of ·. The most common case is · for a field ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§45 Characters",
+"line": 38,
+"term": "trace",
+"count": 3,
+"context": "a somewhat different sense later in the course. The standard later meaning, in representation theory, is the *trace* function · of a representation ·; for ·-dimensional representations · the two notions agree, since the trace",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§45 Characters",
+"line": 115,
+"term": "span",
+"count": 1,
+"context": "recisely a ·-dimensional representation of ·. ⟂ says that a line in · fixed by all of · (a common eigenvector spans one) carves a ·-dimensional representation out of a larger one. For · acting on polynomials, the line spanned",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§45 Characters",
+"line": 115,
+"term": "spans",
+"count": 1,
+"context": "recisely a ·-dimensional representation of ·. ⟂ says that a line in · fixed by all of · (a common eigenvector spans one) carves a ·-dimensional representation out of a larger one. For · acting on polynomials, the line spanned",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§46 Commutators",
+"line": 73,
+"term": "identity matrix",
+"count": 1,
+"context": "> The sign · is a character (the target is abelian). By ⟂, ·, since · is the identity matrix with two columns interchanged. If · were a commutator, ⟂ would force ·, a contradiction.",
+"targets": [
+"Applied Linear Algebra|§4 The Matrix Equation Ax = b#^def-4-4",
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-79"
+]
+},
+{
+"note": "§46 Commutators",
+"line": 125,
+"term": "permutation",
+"count": 1,
+"context": "are commutators and no transposition is, and ⟂ shows that characters of · can only distinguish even from odd permutations: · is essentially the only nontrivial one.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§46 Commutators",
+"line": 125,
+"term": "permutations",
+"count": 1,
+"context": "are commutators and no transposition is, and ⟂ shows that characters of · can only distinguish even from odd permutations: · is essentially the only nontrivial one.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§46 Commutators",
+"line": 156,
+"term": "surjective",
+"count": 1,
+"context": "> For ·, ·: by The Commutator Subgroup and Characters of · (⟂), ·, and the ⟂ applied to the surjective homomorphism ·, whose kernel is ·, gives · (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§46 Commutators",
+"line": 167,
+"term": "bijection",
+"count": 1,
+"context": "> is a ⟂ of ·, and · is a bijection from · onto the set of characters ·, with inverse ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§47 S₃, Aₙ and GLₙ",
+"line": 32,
+"term": "homomorphism",
+"count": 1,
+"context": "terminant is the model character of ·, and a character is the same thing as a ·-dimensional representation, a homomorphism into ·.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 32,
+"term": "closure",
+"count": 4,
+"context": "since · as well, · contains a positive integer. By ⟂, let · be the *smallest* positive element of ·. Then · (closure under addition and negation, by induction). Conversely, let ·. By the ⟂, · with ·. Then",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 46,
+"term": "well-ordering",
+"count": 1,
+"context": "> - The well-ordering step: ⟂ (proved there from induction).",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 69,
+"term": "euclidean algorithm",
+"count": 1,
+"context": "> - Elementary version: ⟂ (constructive proof by the Euclidean algorithm); its folded ⟂ gives this smallest-positive-combination proof without subgroups.",
+"targets": [
+"Logic and Proofs|Euclidean Algorithm"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 99,
+"term": "rank",
+"count": 1,
+"context": "> [!remark] Remark: Forward Pointer: Rank",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 120,
+"term": "dense",
+"count": 5,
+"context": "> 2. · is dense in · (every open interval contains a point of ·).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 156,
+"term": "upper-triangular matrix",
+"count": 1,
+"context": "er-triangular matrices**  (the product of upper-triangulars is upper-triangular; the inverse of an invertible upper-triangular matrix is upper-triangular — solve · by back-substitution, column by column).",
+"targets": [
+"Linear Algebra|§16 Upper-Triangular Matrices#^ladr-5-38"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 161,
+"term": "permutation",
+"count": 3,
+"context": "> - **Permutation matrices** (·/· matrices with one · per row and column)  (they compose like the permutations they encode); th",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 161,
+"term": "permutations",
+"count": 1,
+"context": "> - **Permutation matrices** (·/· matrices with one · per row and column)  (they compose like the permutations they encode); this subgroup “is” · sitting inside ·.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 162,
+"term": "cramer's rule",
+"count": 1,
+"context": "> - **Rational and integer points**: ·  (products of rational matrices are rational; inverses by Cramer's rule are rational), and ·  (Cramer: the inverse of an integer matrix is integer iff ·; closure since ·).",
+"targets": [
+"Applied Linear Algebra|Cramer's Rule",
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 164,
+"term": "block multiplication",
+"count": 1,
+"context": "> - In ·: **block copies of smaller groups**, e.g. ·  (block multiplication is componentwise in the blocks), so every subgroup of · reappears inside ·.",
+"targets": [
+"Applied Linear Algebra|§14 Partitioned Matrices#^prop-14-2"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 175,
+"term": "spectrum",
+"count": 1,
+"context": "> The six groups display the full spectrum: · and · admit complete, short classifications; · is classifiable but needs more theory (⟂); · obeys a clean",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "§5 A Zoo of Subgroups",
+"line": 220,
+"term": "trace",
+"count": 1,
+"context": "· is recorded in ⟂ (previous part), and ⟂ in this section traces the proof that · is a group back to the subgroups of ·.",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§6 Divisibility and Congruence",
+"line": 39,
+"term": "well-ordering",
+"count": 1,
+"context": "> - Elementary version: ⟂ (proved there from the maximum of a finite set); well-ordering itself is proved from induction in ⟂.",
+"targets": [
+"Logic and Proofs|Well-Ordering Principle"
+]
+},
+{
+"note": "§6 Divisibility and Congruence",
+"line": 82,
+"term": "residue",
+"count": 3,
+"context": "> [!definition] Definition §6.4: Residue Classes",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§6 Divisibility and Congruence",
+"line": 94,
+"term": "classes are equal or disjoint",
+"count": 1,
+"context": "> - Elementary version: ⟂ (congruence class), with ⟂ (classes are equal or disjoint).",
+"targets": [
+"Logic and Proofs|§22 Partitions and Equivalence Relations#^thm-22-3"
+]
+},
+{
+"note": "§7 The Group ℤ∕nℤ",
+"line": 13,
+"term": "residue",
+"count": 3,
+"context": "> Fix an integer ·, and let · denote residue classes modulo · as ⟂. Define",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§7 The Group ℤ∕nℤ",
+"line": 80,
+"term": "surjection",
+"count": 1,
+"context": "> - Set-level version: ⟂ (a surjection induces a bijection on the quotient set).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§7 The Group ℤ∕nℤ",
+"line": 80,
+"term": "bijection",
+"count": 1,
+"context": "> - Set-level version: ⟂ (a surjection induces a bijection on the quotient set).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§8 Invertibility and Unit Groups",
+"line": 18,
+"term": "euclidean algorithm",
+"count": 3,
+"context": "> - Same definitions: ⟂ (gcd) and ⟂ (coprime); the gcd is computed by ⟂ (Euclidean algorithm).",
+"targets": [
+"Logic and Proofs|Euclidean Algorithm"
+]
+},
+{
+"note": "§8 Invertibility and Unit Groups",
+"line": 40,
+"term": "modular arithmetic",
+"count": 1,
+"context": ", · has been identified with all its translates ·, and one of them happens to be a multiple of ·. This is why modular arithmetic can turn multiplication into a group operation while ordinary integer multiplication never can.",
+"targets": [
+"Logic and Proofs|§19 Congruence of Integers#^prop-19-2"
+]
+},
+{
+"note": "§8 Invertibility and Unit Groups",
+"line": 173,
+"term": "bijection",
+"count": 2,
+"context": "> Let · be prime and ·. Then · is a bijection of · onto itself. In particular · is invertible modulo ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§8 Invertibility and Unit Groups",
+"line": 193,
+"term": "injective",
+"count": 1,
+"context": "*Finiteness plus cancellation. Left: multiplication by · on the six nonzero classes modulo · is injective, hence onto, so some arrow must land on ·: here · (red), i.e. ·. Right: multiplication by · on ·, where ·, se",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§8 Invertibility and Unit Groups",
+"line": 216,
+"term": "closure",
+"count": 1,
+"context": "> **Closure:** Suppose ·. Choose · with · and ·. Multiplying:",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem",
+"line": 27,
+"term": "coprime",
+"count": 3,
+"context": "> - Elementary versions: ⟂ (prime case) and ⟂ (coprime case).",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem",
+"line": 37,
+"term": "strong induction",
+"count": 1,
+"context": "> **Existence** by strong induction on ·: if · is prime, done; otherwise · with ·, and each of · is a product of primes by induction, so · is too",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem",
+"line": 53,
+"term": "bijection",
+"count": 1,
+"context": "> is a well-defined bijection, and a homomorphism of additive groups. Equivalently: for any · the system ·, · has a solution, unique modulo",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem",
+"line": 60,
+"term": "injective",
+"count": 2,
+"context": "> **Well-defined:** if ·, then ·, hence · and ·. **Homomorphism:** ·. **Injective:** if ·, then · and ·; write ·; then · with ·, so · by ⟂, and ·. **Surjective:** both sides have · elements a",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem",
+"line": 60,
+"term": "surjective",
+"count": 1,
+"context": "· and ·. **Homomorphism:** ·. **Injective:** if ·, then · and ·; write ·; then · with ·, so · by ⟂, and ·. **Surjective:** both sides have · elements and · is injective. (Constructively: with · from ⟂, · satisfies · and ·.) The s",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "· 3 Permutations",
+"line": 7,
+"term": "permutation",
+"count": 1,
+"context": "# 3 Permutations",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "· 3 Permutations",
+"line": 7,
+"term": "permutations",
+"count": 1,
+"context": "# 3 Permutations",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "· 4 Homomorphisms and Isomorphisms",
+"line": 7,
+"term": "homomorphism",
+"count": 3,
+"context": "# 4 Homomorphisms and Isomorphisms",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "· 4 Homomorphisms and Isomorphisms",
+"line": 12,
+"term": "universal property",
+"count": 1,
+"context": "uctions from Problem Set 1 — conjugation, pointwise products of homomorphisms, and direct products with their universal property.",
+"targets": [
+"Topology|§12 Quotient Topology#^thm-12-3"
+]
+},
+{
+"note": "· 4 Homomorphisms and Isomorphisms",
+"line": 12,
+"term": "pointwise",
+"count": 1,
+"context": "ect non-isomorphism; the classification of cyclic groups; and constructions from Problem Set 1 — conjugation, pointwise products of homomorphisms, and direct products with their universal property.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups",
+"line": 7,
+"term": "homomorphism",
+"count": 2,
+"context": "# 5 Homomorphisms at Work: Matrices, Signs, and Unit Groups",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups",
+"line": 12,
+"term": "permutation",
+"count": 1,
+"context": "Three substantial applications of the homomorphism language, mostly from Problem Set 1: permutation matrices and the ⟂ ·; the ⟂, its kernel ·, and generators for · and · (⟂, ⟂); and the ⟂ of · into prime-power",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups",
+"line": 12,
+"term": "generators",
+"count": 1,
+"context": "homomorphism language, mostly from Problem Set 1: permutation matrices and the ⟂ ·; the ⟂, its kernel ·, and generators for · and · (⟂, ⟂); and the ⟂ of · into prime-power pieces by the ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+},
+{
+"note": "· 6 Group Actions, Cosets, and Lagrange's Theorem",
+"line": 7,
+"term": "cosets",
+"count": 1,
+"context": "# 6 Group Actions, Cosets, and Lagrange's Theorem",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "· 6 Group Actions, Cosets, and Lagrange's Theorem",
+"line": 7,
+"term": "group action",
+"count": 1,
+"context": "# 6 Group Actions, Cosets, and Lagrange's Theorem",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-1"
+]
+},
+{
+"note": "· 8 Normal Subgroups and Quotient Groups",
+"line": 12,
+"term": "cosets",
+"count": 2,
+"context": "Normal subgroups are exactly the subgroups for which multiplication of cosets is well defined (⟂), so that the cosets · form a group. This chapter gives the equivalent characterizations o",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "· 8 Normal Subgroups and Quotient Groups",
+"line": 12,
+"term": "special linear group",
+"count": 1,
+"context": "and a quotient: the cyclic groups of prime order (⟂), the alternating groups · for · (⟂), and the projective special linear groups (⟂).",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-5"
+]
+},
+{
+"note": "· 9 Characters and Commutators",
+"line": 12,
+"term": "homomorphism",
+"count": 1,
+"context": "⟂ are homomorphisms to abelian groups. They ⟂ and they ⟂, which makes them a practical tool for proving that an element is *not*",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 7,
+"term": "coprime",
+"count": 3,
+"context": "The cyclic group · of residue classes modulo · under addition, and inside it the unit group · of classes coprime to · under multiplication. They are the course's supply of concrete abelian groups: every finite cyclic group",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 7,
+"term": "residue",
+"count": 5,
+"context": "The cyclic group · of residue classes modulo · under addition, and inside it the unit group · of classes coprime to · under multiplication.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 27,
+"term": "homomorphism",
+"count": 4,
+"context": "- Reduction · is a homomorphism with kernel · (⟂)",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 28,
+"term": "injective",
+"count": 2,
+"context": "- ·, ·: a homomorphism that is not injective (⟂)",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 32,
+"term": "isomorphic",
+"count": 4,
+"context": "- Every cyclic group of order · is isomorphic to · (⟂)",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "ℤ∕nℤ and the unit groups Uₙ",
+"line": 33,
+"term": "generators",
+"count": 2,
+"context": "- Generators and subgroups of a finite cyclic group (⟂)",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-7"
+]
+}
+]

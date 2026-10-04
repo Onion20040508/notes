@@ -1,0 +1,135 @@
+[
+{
+"concept": "linear map",
+"a": "Linear Algebra | [[§7 Vector Space of Linear Maps#^ladr-3-1]] | Definition 3.1: Linear map",
+"b": "Functional Analysis | [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1]] | Definition §2.1: Linear Map",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "orthogonal decomposition",
+"a": "Linear Algebra | [[§19 Inner Products and Norms#^ladr-6-13]] | Theorem 6.13: An orthogonal decomposition",
+"b": "Functional Analysis | [[§22 Projection and Orthogonal Decomposition#^thm-22-4]] | Theorem §22.4: Orthogonal Decomposition",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "riesz representation theorem",
+"a": "Linear Algebra | [[§20 Orthonormal Bases#^ladr-6-42]] | Theorem 6.42: Riesz representation theorem",
+"b": "Functional Analysis | [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2]] | Theorem §23.2: Riesz Representation Theorem",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "direct sum",
+"a": "Functional Analysis | [[§1 Linear Spaces#^def-1-4]] | Definition §1.4: Direct Sum",
+"b": "Differentiable Manifolds | [[§20 Linear Algebra Toolkit#^def-20-5]] | Definition §20.5: Direct Sum",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "metric space",
+"a": "Single Variable Analysis | [[§13 Some Topological Concepts in Metric Spaces#^def-13-1]] | Definition §13.1: Metric Space",
+"b": "Functional Analysis | [[§10 Normed Linear Spaces#^def-10-3]] | Definition §10.3: Metric Space",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "metric space",
+"a": "Functional Analysis | [[§10 Normed Linear Spaces#^def-10-3]] | Definition §10.3: Metric Space",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^prop-1-6]] | Proposition §1.6: Metric Spaces",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "complete metric space",
+"a": "Single Variable Analysis | [[§13 Some Topological Concepts in Metric Spaces#^def-13-3]] | Definition §13.3: Complete Metric Space",
+"b": "Functional Analysis | [[§11 Completeness#^def-11-1]] | Definition §11.1: Complete Metric Space",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "cauchy sequence",
+"a": "Single Variable Analysis | [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4]] | Definition §10.4: Cauchy Sequence",
+"b": "Functional Analysis | [[§10 Normed Linear Spaces#^def-10-5]] | Definition §10.5: Cauchy Sequence",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "isomorphism",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-4]] | Definition §21.4: Isomorphism",
+"b": "Functional Analysis | [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2]] | Definition §2.2: Isomorphism",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "isomorphism",
+"a": "Functional Analysis | [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2]] | Definition §2.2: Isomorphism",
+"b": "Applied Linear Algebra | [[§26 Coordinate Systems#^def-26-3]] | Definition §26.3: Isomorphism",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "separable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-5]] | Definition §18.5: Separable",
+"b": "Functional Analysis | [[§25 Sequence and Function Spaces#^prop-25-1]] | Proposition §25.1: $\\ell^p$ is Separable for $1 \\le p < \\infty$",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "separable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-5]] | Definition §18.5: Separable",
+"b": "Functional Analysis | [[§25 Sequence and Function Spaces#^prop-25-4]] | Proposition §25.4: $L^p(E)$ is Separable for $1 \\le p < \\infty$",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5]] | Definition §19.5: $L^p$ Space",
+"b": "Functional Analysis | [[§26 Boundedness and Continuity#^def-26-3]] | Definition §26.3: The Space $\\mathcal{L}(X, Y)$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Functional Analysis | [[§26 Boundedness and Continuity#^def-26-3]] | Definition §26.3: The Space $\\mathcal{L}(X, Y)$",
+"b": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-2]] | Definition §30.2: The Space $I_p/I_p^2$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "normed linear space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10]] | Theorem §19.10: $L^p$ is a Normed Linear Space",
+"b": "Functional Analysis | [[§26 Boundedness and Continuity#^thm-26-5]] | Theorem §26.5: $\\mathcal{L}(X, Y)$ is a Normed Linear Space",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "reverse triangle inequality",
+"a": "Functional Analysis | [[§10 Normed Linear Spaces#^lem-10-3]] | Lemma §10.3: Reverse Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^cor-5-2]] | Corollary §5.2: Reverse Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "orthogonal complement",
+"a": "Functional Analysis | [[§1 Linear Spaces#^cor-1-13]] | Corollary §1.13: Orthogonal Complement (inner products; later)",
+"b": "Applied Linear Algebra | [[§40 Inner Product, Length, and Orthogonality#^def-40-6]] | Definition §40.6: Orthogonal Complement",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "even odd function",
+"a": "Functional Analysis | [[§22 Projection and Orthogonal Decomposition#^prop-22-7]] | Proposition §22.7: Even and Odd Functions",
+"b": "Calculus | [[§1 Four Ways to Represent a Function#^def-1-7]] | Definition §1.7: Even and Odd Functions",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "even odd function",
+"a": "Functional Analysis | [[§22 Projection and Orthogonal Decomposition#^prop-22-7]] | Proposition §22.7: Even and Odd Functions",
+"b": "Fourier Series and PDEs | [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2]] | Definition §7.2: Even and Odd Functions",
+"a_links_b": false,
+"b_links_a": false
+}
+]

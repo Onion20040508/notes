@@ -1,0 +1,742 @@
+[
+{
+"note": "Fermat's Little Theorem",
+"line": 26,
+"term": "lagrange's theorem",
+"count": 1,
+"context": "- Developed further in: ⟂ (Fermat's little theorem as · in the group · of order ·, via Lagrange's theorem).",
+"targets": [
+"Group Theory|Lagrange's Theorem"
+]
+},
+{
+"note": "Invertible Means Bijective",
+"line": 32,
+"term": "injective",
+"count": 1,
+"context": "- For linear maps: ⟂ (invertible iff injective and surjective), with uniqueness of the inverse in ⟂.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Invertible Means Bijective",
+"line": 32,
+"term": "surjective",
+"count": 1,
+"context": "- For linear maps: ⟂ (invertible iff injective and surjective), with uniqueness of the inverse in ⟂.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Invertible Means Bijective",
+"line": 32,
+"term": "linear map",
+"count": 2,
+"context": "- For linear maps: ⟂ (invertible iff injective and surjective), with uniqueness of the inverse in ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Logic and Proofs",
+"line": 107,
+"term": "equivalence relation",
+"count": 1,
+"context": "| 13 | Equivalence relations, quotient sets, constructions of ℤ and ℚ (22) | Rational Number Project (October) → §22 |",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "Logic and Proofs",
+"line": 108,
+"term": "countable set",
+"count": 1,
+"context": "| 14–15 | Finite sets, inclusion–exclusion, pigeonhole; countable sets, Cantor, Cantor–Schröder–Bernstein (10–11, 14) | — |",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "Logic and Proofs",
+"line": 108,
+"term": "schröder–bernstein",
+"count": 1,
+"context": "| 14–15 | Finite sets, inclusion–exclusion, pigeonhole; countable sets, Cantor, Cantor–Schröder–Bernstein (10–11, 14) | — |",
+"targets": [
+"Measure Theory|Cantor–Bernstein Theorem"
+]
+},
+{
+"note": "§1 The Language of Mathematics",
+"line": 40,
+"term": "free variables",
+"count": 3,
+"context": "ch is either true or false, but not both. A **predicate** is a sentence containing one or more symbols, its **free variables**, which becomes a proposition whenever values are assigned to them; we write · or ·, listing the free variab",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-4"
+]
+},
+{
+"note": "§1 The Language of Mathematics",
+"line": 119,
+"term": "triangle inequality",
+"count": 1,
+"context": "> - The same definition in analysis, with the triangle inequality and ·: ⟂, ⟂.",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§10 Counting",
+"line": 31,
+"term": "injective",
+"count": 6,
+"context": "nt counted first, · the element counted second, and so on. Writing · lists ·, each element exactly once: · is injective because nothing is counted twice and surjective because everything is counted.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§10 Counting",
+"line": 31,
+"term": "surjective",
+"count": 6,
+"context": "and so on. Writing · lists ·, each element exactly once: · is injective because nothing is counted twice and surjective because everything is counted.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 34,
+"term": "injective",
+"count": 14,
+"context": "> *Base case ·.* If ·, then · for every ·; if · then ·, so · is not injective. Hence if · is injective, ·. (This is really a proof of the contrapositive \"· is not injective\".)",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 73,
+"term": "dirichlet",
+"count": 1,
+"context": "chairs, the number of people is at most the number of chairs. The contrapositive is the form usually quoted; Dirichlet called it the \"drawer principle\".",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 90,
+"term": "schröder–bernstein",
+"count": 1,
+"context": "The same statement holds for infinite sets, with · in the sense of ⟂; there it is the Cantor–Schröder–Bernstein theorem in disguise (⟂).",
+"targets": [
+"Measure Theory|Cantor–Bernstein Theorem"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 179,
+"term": "surjective",
+"count": 6,
+"context": "tion ·. Let · and · a bijection. For · the set · is a non-empty set of positive integers, because · and · are surjective; let · be its least element (the well-ordering principle, ⟂) and put ·. Then · for every ·, so · implies ·: ·",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 206,
+"term": "linear map",
+"count": 1,
+"context": "> - The linear-algebra twin: a linear map between spaces of the same finite dimension is injective iff surjective, ⟂; dimension plays the role of cardi",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 207,
+"term": "invertible matrix",
+"count": 1,
+"context": "> - Matrix version: for a square matrix, one-to-one iff onto, part of the Invertible Matrix Theorem ⟂.",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-1"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 207,
+"term": "invertible matrix theorem",
+"count": 1,
+"context": "> - Matrix version: for a square matrix, one-to-one iff onto, part of the Invertible Matrix Theorem ⟂.",
+"targets": [
+"Applied Linear Algebra|The Invertible Matrix Theorem"
+]
+},
+{
+"note": "§11 Properties of Finite Sets",
+"line": 239,
+"term": "bounded set",
+"count": 1,
+"context": "> - In 451: ⟂ and ⟂; for infinite bounded sets the maximum is replaced by the supremum, ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§12★ Counting Functions and Subsets",
+"line": 15,
+"term": "permutations",
+"count": 7,
+"context": "he number of subsets of a finite set, possibly of a given size. This section counts functions, injections and permutations, and then subsets; counting subsets of a given size produces the binomial coefficients, which are computed by",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§12★ Counting Functions and Subsets",
+"line": 96,
+"term": "injective",
+"count": 4,
+"context": "> *Base case ·.* If ·, every function is injective and · is a bijection ·; so the number is ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§13 Number Systems",
+"line": 14,
+"term": "equivalence relation",
+"count": 1,
+"context": "d that recurring decimals are rational. The construction of · from · is postponed to ⟂, where the language of equivalence relations is available.",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§13 Number Systems",
+"line": 77,
+"term": "euclid's lemma",
+"count": 1,
+"context": "The lowest-terms fraction is in fact unique; this needs Euclid's lemma and is proved later, in ⟂ (Eccles Exercise 17.6). Nothing before §17 uses the uniqueness.",
+"targets": [
+"Group Theory|Euclid's Lemma",
+"Group Theory|§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1"
+]
+},
+{
+"note": "§13 Number Systems",
+"line": 250,
+"term": "cauchy sequence",
+"count": 2,
+"context": "which 451 derives from completeness. A construction of · from ·: ⟂ (Dedekind cuts); ★ by classes of rational Cauchy sequences, ⟂, where this section's decimal expansion of √2 reappears as a Cauchy sequence (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-5",
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-4"
+]
+},
+{
+"note": "§13 Number Systems",
+"line": 250,
+"term": "cauchy sequences",
+"count": 1,
+"context": "which 451 derives from completeness. A construction of · from ·: ⟂ (Dedekind cuts); ★ by classes of rational Cauchy sequences, ⟂, where this section's decimal expansion of √2 reappears as a Cauchy sequence (⟂).",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§15 The Division Theorem",
+"line": 14,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "nd ·, · are unique. This generalizes the odd/even dichotomy of ⟂ (the case ·), and its proof is a model of an existence-and-uniqueness argument. The uniqueness half is what makes the theorem useful: it turns a negative statement such as \"·\" int",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§15 The Division Theorem",
+"line": 14,
+"term": "division with remainder",
+"count": 1,
+"context": "Arithmetic begins with division with remainder: every integer · is · with ·, and ·, · are unique. This generalizes the odd/even dichotomy of ⟂ (the case ·),",
+"targets": [
+"Group Theory|Division Algorithm"
+]
+},
+{
+"note": "§15 The Division Theorem",
+"line": 64,
+"term": "subgroup",
+"count": 1,
+"context": "> - It is the only tool used to classify the subgroups of ·: ⟂.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§16 The Euclidean Algorithm",
+"line": 14,
+"term": "division with remainder",
+"count": 1,
+"context": "arge numbers. Euclid's algorithm (*Elements*, Book VII, found independently in China) computes it by repeated division with remainder (⟂). Two lemmas drive it: if · the answer is ·, and otherwise · where · is the remainder. The proof that the",
+"targets": [
+"Group Theory|Division Algorithm"
+]
+},
+{
+"note": "§17 Consequences of the Euclidean Algorithm",
+"line": 101,
+"term": "subgroup",
+"count": 3,
+"context": "> - The same theorem in group theory: ⟂ (⟂). There it is proved with subgroups: · is a subgroup of ·, hence equal to · for some · (⟂), and then ·. That proof only shows that · and · exist.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§18★ Linear Diophantine Equations",
+"line": 219,
+"term": "null space",
+"count": 1,
+"context": "solution set · of the homogeneous equation, cf. ⟂ (translate), where solvable inhomogeneous systems have the null space as ·. Here · is a subgroup of · rather than a subspace.",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "§18★ Linear Diophantine Equations",
+"line": 219,
+"term": "subgroup",
+"count": 1,
+"context": "neous equation, cf. ⟂ (translate), where solvable inhomogeneous systems have the null space as ·. Here · is a subgroup of · rather than a subspace.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§19 Congruence of Integers",
+"line": 59,
+"term": "equivalence relation",
+"count": 2,
+"context": "These properties are used without comment from now on. They say that congruence modulo · is an *equivalence relation* (⟂), the theme of ⟂.",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§19 Congruence of Integers",
+"line": 96,
+"term": "residue",
+"count": 2,
+"context": "> - The same computation makes addition of residue classes well defined: ⟂.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§19 Congruence of Integers",
+"line": 186,
+"term": "equivalence classes",
+"count": 1,
+"context": ". The same check, in a different guise, recurs whenever a function is defined on congruence classes (⟂) or on equivalence classes (⟂).",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§2 Implications",
+"line": 408,
+"term": "divergence",
+"count": 2,
+"context": "> (b) The contrapositive: *if · does not tend to ·, then · diverges* (the \"divergence test\"). It is true, being equivalent to the theorem (⟂). Note that · includes the case where · does not exist",
+"targets": [
+"Calculus|§111 Curl and Divergence#^def-111-3",
+"Measure Theory|§12 Measurable Functions#^def-12-10",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^def-16-4",
+"Single Variable Analysis|§7 Limits of Sequences#^def-7-3"
+]
+},
+{
+"note": "§2 Implications",
+"line": 421,
+"term": "convergent series",
+"count": 1,
+"context": "> - The theorem and the counterexample are proved in analysis: ⟂ (terms of a convergent series tend to zero) and ⟂ (divergence of the harmonic series).",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§21 Congruence Classes and the Arithmetic of Remainders",
+"line": 82,
+"term": "residue",
+"count": 2,
+"context": "> - Residue classes in group theory: ⟂; the general statement for any equivalence relation is ⟂ here, and ⟂.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§21 Congruence Classes and the Arithmetic of Remainders",
+"line": 250,
+"term": "multiplication table",
+"count": 3,
+"context": "> [!example] Example §21.3: The Multiplication Table of ·",
+"targets": [
+"Group Theory|§14 Multiplication Tables#^def-14-1"
+]
+},
+{
+"note": "§21 Congruence Classes and the Arithmetic of Remainders",
+"line": 294,
+"term": "isomorphic",
+"count": 1,
+"context": "turns the tables of · into those of ·: replace each · by ·. Two algebraic structures related like this are **isomorphic** (\"of the same form\"), a notion developed in abstract algebra.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§21 Congruence Classes and the Arithmetic of Remainders",
+"line": 324,
+"term": "injective",
+"count": 1,
+"context": "> *· is injective.* Since ·,",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§21 Congruence Classes and the Arithmetic of Remainders",
+"line": 332,
+"term": "surjective",
+"count": 1,
+"context": "> *· is surjective.* Suppose for contradiction that some · is not a value of ·. Then · is an injection from ·, of cardinality ·",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 66,
+"term": "surjective",
+"count": 4,
+"context": "> *Non-empty:* given ·, since · is surjective there is · with ·, so ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 135,
+"term": "vitali set",
+"count": 1,
+"context": "> - ⟂ (equivalence relation); a non-arithmetic example, · on ·, behind the Vitali set: ⟂.",
+"targets": [
+"Measure Theory|The Vitali Set is Not Measurable",
+"Measure Theory|Vitali set"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 225,
+"term": "cosets",
+"count": 1,
+"context": "> - ⟂ (equivalence classes partition a set), applied to cosets in ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 265,
+"term": "injective",
+"count": 4,
+"context": "f the class, and if · then · (Theorem ⟂), i.e. ·. *Surjective:* every · is · for some ·, as · is surjective. *Injective:*",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 278,
+"term": "isomorphism",
+"count": 1,
+"context": "> - The group version: ⟂ (first isomorphism theorem); defining maps on · by representatives: ⟂; the topological version: ⟂.",
+"targets": [
+"Applied Linear Algebra|§26 Coordinate Systems#^def-26-3",
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2",
+"Group Theory|§16 Isomorphisms#^def-16-1",
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§22 Partitions and Equivalence Relations",
+"line": 648,
+"term": "completion",
+"count": 1,
+"context": "> - · under · as a group: ⟂; the completion of · to ·: ⟂.",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-4"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 15,
+"term": "fermat's theorem",
+"count": 4,
+"context": "ces, Fermat's little theorem · and Wilson's theorem ·, both by counting arguments in ·, and then asks how far Fermat's theorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of Lagra",
+"targets": [
+"Calculus|Fermat's Theorem on Local Extrema",
+"Calculus|§25 Maximum and Minimum Values#^thm-25-2"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 15,
+"term": "lagrange's theorem",
+"count": 4,
+"context": "eorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of Lagrange's theorem that group theory later makes general.",
+"targets": [
+"Group Theory|Lagrange's Theorem"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 229,
+"term": "equivalence relation",
+"count": 1,
+"context": "> - *Gauss's (Q18).* On the nonzero residues define · for some ·. This is an equivalence relation (⟂) whose classes · all have · elements, · the order of ·. The classes partition the · nonzero residues, so ·",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 229,
+"term": "residue",
+"count": 3,
+"context": "> - *Gauss's (Q18).* On the nonzero residues define · for some ·. This is an equivalence relation (⟂) whose classes · all have · elements, · the order of",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 231,
+"term": "subgroup",
+"count": 1,
+"context": "> Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the cosets of the subgroup · of the nonzero residues.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 231,
+"term": "cosets",
+"count": 2,
+"context": "> Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the cosets of the subgroup · of the nonzero residues.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§24★ Congruence Modulo a Prime",
+"line": 236,
+"term": "cosets partition a group",
+"count": 1,
+"context": "> - Developed further in: ⟂ (Lagrange's theorem: cosets partition a group into sets of equal size) and ⟂ (Fermat as its corollary).",
+"targets": [
+"Group Theory|Cosets Partition a Group"
+]
+},
+{
+"note": "§25 Surfaces and the Euler Characteristic",
+"line": 21,
+"term": "homeomorphism",
+"count": 2,
+"context": "boundary); this is what makes · a *surface*. Different polygonal structures can give the same surface (up to homeomorphism); each is a **polygonal decomposition** of that surface.",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§25 Surfaces and the Euler Characteristic",
+"line": 83,
+"term": "rank",
+"count": 1,
+"context": "ions that match up — both due to Radó in the 1920s); the modern proof identifies · with an alternating sum of ranks of homology groups. We also trust that the result of a gluing does not depend on which matching homeomorphism",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§25 Surfaces and the Euler Characteristic",
+"line": 277,
+"term": "compact",
+"count": 2,
+"context": "> Every compact connected surface is homeomorphic to exactly one of the following:",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§4 Proof by Contradiction",
+"line": 244,
+"term": "inner product",
+"count": 1,
+"context": "> - Generalized to inner product spaces: ⟂.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§4 Proof by Contradiction",
+"line": 244,
+"term": "inner product space",
+"count": 1,
+"context": "> - Generalized to inner product spaces: ⟂.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§5 The Induction Principle",
+"line": 32,
+"term": "order axioms",
+"count": 1,
+"context": "nd compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms (⟂, ⟂). Checking cases is never a proof: the Goldbach conjecture (⟂) has been verified in an enormous number",
+"targets": [
+"Single Variable Analysis|§3 The Set ℝ of Real Numbers#^def-3-2"
+]
+},
+{
+"note": "§5 The Induction Principle",
+"line": 32,
+"term": "closure",
+"count": 1,
+"context": "ne by Peano's axioms, one of which is induction (⟂, axiom 3): \"the essence of the natural number concept is … closure under the successor operation\" (Dedekind, 1888). In the language of sets the principle says that a subset of",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§8 Functions",
+"line": 224,
+"term": "linear map",
+"count": 1,
+"context": "> - Matrix version: ⟂(a), (e) (matrix multiplication, which is composition of linear maps, is associative, with identity I).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§8 Functions",
+"line": 292,
+"term": "archimedean",
+"count": 1,
+"context": "> - The existence of an integer · is the Archimedean property, ⟂.",
+"targets": [
+"Single Variable Analysis|Archimedean Property"
+]
+},
+{
+"note": "§9 Injections, Surjections and Bijections",
+"line": 40,
+"term": "linear map",
+"count": 5,
+"context": "> - For linear maps: ⟂ (injective), ⟂ (surjective).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§9 Injections, Surjections and Bijections",
+"line": 42,
+"term": "pivot position",
+"count": 1,
+"context": "> - For linear maps of ℝⁿ: ⟂ (onto) and ⟂ (one-to-one), tested by pivot positions in ⟂, with worked examples.",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-3"
+]
+},
+{
+"note": "§9 Injections, Surjections and Bijections",
+"line": 166,
+"term": "linear transformation",
+"count": 1,
+"context": "> - For linear maps of ℝⁿ: ⟂ (invertible linear transformation).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4",
+"Applied Linear Algebra|§8 Introduction to Linear Transformations#^def-8-3",
+"Complex Variables|§96★ Linear Transformations#^def-96-1"
+]
+},
+{
+"note": "§9 Injections, Surjections and Bijections",
+"line": 214,
+"term": "principal value",
+"count": 1,
+"context": "se). Its inverse is ·. Another choice of interval, such as ·, gives another inverse; the choice made is the **principal value**. Likewise · and ·.",
+"targets": [
+"Complex Variables|§35 The Power Function#^def-35-2"
+]
+},
+{
+"note": "§9 Injections, Surjections and Bijections",
+"line": 303,
+"term": "inverse image",
+"count": 1,
+"context": "> 2. · is defined by · for ·, the **pre-image** (or inverse image) of ·.",
+"targets": [
+"Complex Variables|§13 Functions and Mappings#^def-13-5"
+]
+}
+]

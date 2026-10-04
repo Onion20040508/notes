@@ -1,0 +1,2627 @@
+[
+{
+"note": "Algebraic Topology Toolkit",
+"line": 42,
+"term": "open set",
+"count": 1,
+"context": "**Tool 4: ⟂ / ⟂ (⟂, ⟂).** *Decompose into open sets.*",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "Bijection from Compact to Hausdorff is a Homeomorphism",
+"line": 32,
+"term": "surjection",
+"count": 1,
+"context": "- **Quotient maps.** The same closed-map argument makes any continuous surjection from a compact space to a Hausdorff space a quotient map (⟂). This is Theorem A of ⟂ and gives ⟂ (§12.5).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Bijection from Compact to Hausdorff is a Homeomorphism",
+"line": 34,
+"term": "bijection",
+"count": 1,
+"context": "- **Why it is needed.** A continuous bijection need not be a homeomorphism: the identity ℝ_ℓ → ℝ is continuous but its inverse is not (⟂). For groups, by co",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Box and product topologies on ℝ^ω",
+"line": 7,
+"term": "countable",
+"count": 1,
+"context": "The countable product · with three natural topologies: the product topology (open conditions on finitely many coordinates),",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Box and product topologies on ℝ^ω",
+"line": 7,
+"term": "product topology",
+"count": 12,
+"context": "The countable product · with three natural topologies: the product topology (open conditions on finitely many coordinates), the box topology (open conditions on all coordinates) and the",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-3"
+]
+},
+{
+"note": "Box and product topologies on ℝ^ω",
+"line": 14,
+"term": "second countable",
+"count": 4,
+"context": "- · in the product topology is second-countable (⟂)",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "Closed Subspace of a Compact Space is Compact",
+"line": 37,
+"term": "closed subset",
+"count": 1,
+"context": "- **Immediate uses.** It is step 1 of ⟂ and the last step of ⟂: a closed bounded set is a closed subset of a compact box (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "Closed Subspace of a Compact Space is Compact",
+"line": 37,
+"term": "bounded set",
+"count": 1,
+"context": "- **Immediate uses.** It is step 1 of ⟂ and the last step of ⟂: a closed bounded set is a closed subset of a compact box (⟂).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "Closure Characterization",
+"line": 29,
+"term": "metric spaces",
+"count": 1,
+"context": "- **Metric spaces.** With sequences it becomes the ⟂ (§11.8): a limit of points of A lies in the closure, with the converse whe",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "Compact Subspace of a Hausdorff Space is Closed",
+"line": 41,
+"term": "metric space",
+"count": 1,
+"context": "- **Partner result.** With ⟂ it yields ⟂. Since metric spaces are Hausdorff, it also gives the “compact ⇒ closed” half of ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "Deformation Retract Induces Isomorphism on π₁",
+"line": 23,
+"term": "injective",
+"count": 1,
+"context": "- **Retract vs. deformation retract.** A retraction alone gives only j∗ injective and r∗ surjective (⟂), and π₁(X) can be strictly larger, e.g. a circle inside S¹ ∨ S¹ (⟂). The homotopy id_X",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Deformation Retract Induces Isomorphism on π₁",
+"line": 23,
+"term": "surjective",
+"count": 1,
+"context": "- **Retract vs. deformation retract.** A retraction alone gives only j∗ injective and r∗ surjective (⟂), and π₁(X) can be strictly larger, e.g. a circle inside S¹ ∨ S¹ (⟂). The homotopy id_X ≃ j ∘ r fixing A s",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Deformation Retract Induces Isomorphism on π₁",
+"line": 25,
+"term": "isomorphic",
+"count": 1,
+"context": "- **Obstruction.** ℝ² ∖ {0} is not a deformation retract of ℝ², since π₁ would give 0 ≅ ℤ (⟂). Isomorphic π₁ does not imply a deformation retraction: see the figure eight and theta space (⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Discrete and indiscrete topologies",
+"line": 7,
+"term": "hausdorff",
+"count": 3,
+"context": "ogy, in which only · and · are open. They are the quickest test cases for any definition: discrete spaces are Hausdorff, totally disconnected, and compact only when finite; indiscrete spaces with more than one point are connected",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "Discrete and indiscrete topologies",
+"line": 24,
+"term": "uncountable",
+"count": 2,
+"context": "- A second-countable space has no uncountable discrete subspace (⟂)",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Discrete and indiscrete topologies",
+"line": 24,
+"term": "second countable",
+"count": 2,
+"context": "- A second-countable space has no uncountable discrete subspace (⟂)",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "Equivalent Conditions for Continuity",
+"line": 28,
+"term": "metric space",
+"count": 2,
+"context": "izes ε-δ.** Condition (4) is the topological form of the ε-δ definition (⟂; MATH 451: ⟂). It is recovered for metric spaces in ⟂ (§11.7).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "Equivalent Conditions for Continuity",
+"line": 28,
+"term": "metric spaces",
+"count": 2,
+"context": "izes ε-δ.** Condition (4) is the topological form of the ε-δ definition (⟂; MATH 451: ⟂). It is recovered for metric spaces in ⟂ (§11.7).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "Functoriality of π₁",
+"line": 27,
+"term": "isomorphic",
+"count": 1,
+"context": "- **Immediate consequence.** ⟂ (§23.6): homeomorphic spaces have isomorphic π₁, so non-isomorphic groups prove spaces non-homeomorphic (⟂, ⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Functoriality of π₁",
+"line": 28,
+"term": "injective",
+"count": 1,
+"context": "- **Retractions.** Applied to r ∘ j = id it gives j∗ injective and r∗ surjective (⟂). This is the engine of the ⟂ and of step 2 of ⟂.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Functoriality of π₁",
+"line": 28,
+"term": "surjective",
+"count": 1,
+"context": "- **Retractions.** Applied to r ∘ j = id it gives j∗ injective and r∗ surjective (⟂). This is the engine of the ⟂ and of step 2 of ⟂.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Functoriality of π₁",
+"line": 31,
+"term": "smooth map",
+"count": 1,
+"context": "- **Same idea elsewhere.** Differentials of smooth maps compose the same way, (G ∘ F)_* = G_* ∘ F_*: ⟂ (591 Thm. §12.11).",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "Fundamental Group of the Circle",
+"line": 32,
+"term": "bijection",
+"count": 1,
+"context": "- **Method.** Since ℝ is simply connected, ⟂ makes [f] ↦ f̃(1) a bijection onto the fiber ℤ. The translation p(x + m) = p(x) makes it a homomorphism, and the standard loop is a generat",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Fundamental Group of the Circle",
+"line": 35,
+"term": "open cover",
+"count": 1,
+"context": "- **Contrast with n ≥ 2.** The open-cover argument that proves ⟂ fails for S¹ because S¹ minus two points is disconnected (⟂). The difference between π",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "Fundamental Theorem of Algebra (topological proof)",
+"line": 24,
+"term": "injective",
+"count": 1,
+"context": "⟂ (z ↦ zⁿ induces multiplication by n on ℤ) and the retraction of ℝ² ∖ {0} onto S¹, which makes the inclusion injective on π₁ (⟂). It also uses ⟂ (§24.12). The only analytic input is a triangle-inequality estimate on S¹ (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Fundamental Theorem of Algebra (topological proof)",
+"line": 24,
+"term": "triangle inequality",
+"count": 1,
+"context": "onto S¹, which makes the inclusion injective on π₁ (⟂). It also uses ⟂ (§24.12). The only analytic input is a triangle-inequality estimate on S¹ (⟂).",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "Heine–Borel Theorem",
+"line": 45,
+"term": "metric space",
+"count": 2,
+"context": "- **Proof.** Compact ⇒ closed is ⟂ (ℝⁿ is a metric space, hence Hausdorff). Closed and bounded ⇒ compact goes through a box [−N, N]ⁿ, which is compact by ⟂ and ⟂ (pro",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "Heine–Borel Theorem",
+"line": 47,
+"term": "least upper bound",
+"count": 1,
+"context": "bounded but not closed, ℝ is closed but not bounded, and neither is compact (⟂). What makes ℝⁿ special is the least upper bound property.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-7"
+]
+},
+{
+"note": "Heine–Borel Theorem",
+"line": 48,
+"term": "countable",
+"count": 1,
+"context": "- **Measure Theory.** 551 proves closed and bounded ⇒ compact again without products, through countable subcovers and Cantor's nested set theorem: ⟂ (with ⟂ and ⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Heine–Borel Theorem",
+"line": 49,
+"term": "norm",
+"count": 1,
+"context": "where the closed unit ball is closed and bounded but not compact (⟂); in finite dimensions it holds for every norm (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "K-topology",
+"line": 7,
+"term": "hausdorff",
+"count": 4,
+"context": "open intervals · together with the sets ·, where ·. It is strictly finer than the standard topology, so it is Hausdorff, but the closed set · cannot be separated from ·: the standard example of a Hausdorff space that is not regul",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "Lebesgue Number Lemma",
+"line": 24,
+"term": "compactness",
+"count": 1,
+"context": "- **Compactness.** Together with ⟂, it gives sequentially compact ⇒ compact in ⟂ (§16.2). The metric is used essentially (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Lebesgue Number Lemma",
+"line": 25,
+"term": "open cover",
+"count": 1,
+"context": "- **Typical use.** It subdivides I or I × I so that each small piece maps into a single member of an open cover. This is used in ⟂, ⟂, ⟂ (§27.1) and the hard direction of ⟂.",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "Lower limit topology",
+"line": 7,
+"term": "second countable",
+"count": 3,
+"context": "irst-countable, separable, normal), and it is the standard example of a space that is separable without being second-countable. Its uses in MATH 590:",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "No-Retraction Theorem",
+"line": 23,
+"term": "injective",
+"count": 1,
+"context": "- **Proof pattern.** A retraction would satisfy r ∘ j = id, so by ⟂ the map j∗ : ℤ → π₁(B²) = 0 would be injective, which is impossible. This uses ⟂ and ⟂. It is the template for π₁ obstruction arguments (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Path Lifting Lemma",
+"line": 30,
+"term": "surjective",
+"count": 1,
+"context": "- **Covering hypothesis is needed.** p : ℝ₊ → S¹ is a surjective local homeomorphism but not a covering map, and a clockwise loop from (1, 0) has no lift starting at 1 (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "Path Lifting Lemma",
+"line": 32,
+"term": "contour",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (a continuous argument along a contour: the lift through θ ↦ eⁱᶿ, given by an integral of w′/w; complex-variables version).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "Projective plane",
+"line": 7,
+"term": "boundary points",
+"count": 1,
+"context": "The projective plane ·, equivalently the disk with antipodal boundary points identified. It is the basic example of a space with finite non-trivial fundamental group: ·, computed first f",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "Properties of the Lifting Correspondence",
+"line": 25,
+"term": "bijection",
+"count": 4,
+"context": "- **Method.** To compute π₁(B), find a simply connected covering space; then π₁(B) is in bijection with a fiber (⟂). In particular the number of sheets equals |π₁(B)| (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Properties of the Lifting Correspondence",
+"line": 28,
+"term": "orbit",
+"count": 2,
+"context": "- **Group-theoretic reading.** φ is the orbit map of e₀ for the monodromy action of π₁(B, b₀) on the fibre; when E is simply connected the stabilizer is tr",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-3",
+"Group Theory|§27 Orbits#^def-27-1"
+]
+},
+{
+"note": "Properties of the Lifting Correspondence",
+"line": 28,
+"term": "orbit map",
+"count": 1,
+"context": "- **Group-theoretic reading.** φ is the orbit map of e₀ for the monodromy action of π₁(B, b₀) on the fibre; when E is simply connected the stabilizer is trivia",
+"targets": [
+"Differentiable Manifolds|§13 Homogeneous Spaces#^def-13-3"
+]
+},
+{
+"note": "Properties of the Lifting Correspondence",
+"line": 28,
+"term": "stabilizer",
+"count": 1,
+"context": "* φ is the orbit map of e₀ for the monodromy action of π₁(B, b₀) on the fibre; when E is simply connected the stabilizer is trivial and the bijection is the orbit bijection of ⟂ (hub ⟂).",
+"targets": [
+"Group Theory|§26 Stabilizers and Fixed Points#^def-26-1"
+]
+},
+{
+"note": "Torus",
+"line": 15,
+"term": "commutator",
+"count": 2,
+"context": "- The loop around the puncture is the commutator · (⟂)",
+"targets": [
+"Group Theory|§46 Commutators#^def-46-1"
+]
+},
+{
+"note": "Tube Lemma",
+"line": 20,
+"term": "compactness",
+"count": 2,
+"context": "- **Used for.** It proves ⟂ (§15.8), hence compactness of boxes ∏[aᵢ, bᵢ] (⟂) and the ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Universal Property of Quotient Maps",
+"line": 30,
+"term": "surjection",
+"count": 1,
+"context": "- **Immediate consequence.** ⟂ (§12.4): a continuous surjection g induces a homeomorphism X* ≅ Z exactly when g is a quotient map. The hypothesis that g is constant on fiber",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Universal Property of Quotient Maps",
+"line": 34,
+"term": "residue classes",
+"count": 1,
+"context": "- **Algebraic counterparts.** Maps out of ℤ/nℤ that are constant on residue classes descend the same way (⟂, 493 Lemma §7.2), and a homomorphism factors through G/Ker α (⟂, 493 Thm. §41.1).",
+"targets": [
+"Group Theory|§6 Divisibility and Congruence#^def-6-4"
+]
+},
+{
+"note": "Universal Property of Quotient Maps",
+"line": 34,
+"term": "residue",
+"count": 1,
+"context": "- **Algebraic counterparts.** Maps out of ℤ/nℤ that are constant on residue classes descend the same way (⟂, 493 Lemma §7.2), and a homomorphism factors through G/Ker α (⟂, 493 Thm. §41",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§1 Topological Spaces",
+"line": 21,
+"term": "metric spaces",
+"count": 2,
+"context": "> - Metric spaces (which have a natural topology induced by the distance function)",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§1 Topological Spaces",
+"line": 46,
+"term": "open set",
+"count": 7,
+"context": "opological space** (or often just · with · omitted if clear from context). The elements of · are called the **open sets** of the topological space ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§1 Topological Spaces",
+"line": 53,
+"term": "countable",
+"count": 1,
+"context": "> - Compare the axioms of a σ-algebra (complements and countable unions): ⟂; the σ-algebra generated by the open sets of ℝⁿ is the Borel σ-algebra, ⟂.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§1 Topological Spaces",
+"line": 56,
+"term": "uncountable",
+"count": 1,
+"context": "> Note that condition (2) allows for *arbitrary* unions (including uncountable), while condition (3) only allows *finite* intersections. This asymmetry is crucial!",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§1 Topological Spaces",
+"line": 83,
+"term": "compactness",
+"count": 1,
+"context": "s of a topology distill exactly what we need from “open sets” to do analysis: define continuity, convergence, compactness, and connectedness. By keeping only these three axioms, we gain the flexibility to study spaces that metrics",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§10 Product Topology on Arbitrary Products",
+"line": 54,
+"term": "open set",
+"count": 3,
+"context": "> *Proof of claim:* Let · be an open set. Then · (with · in the ·-th factor), which is open in the product topology (it's a basis element with · for ·",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 11,
+"term": "metric spaces",
+"count": 8,
+"context": "## Metrics and Metric Spaces",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 18,
+"term": "triangle inequality",
+"count": 4,
+"context": "> 3. · for all ·. (Triangle inequality)",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 55,
+"term": "interior point",
+"count": 1,
+"context": "> - Balls of a norm, and interior points defined through them: ⟂.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 133,
+"term": "product topology",
+"count": 7,
+"context": "> The topologies on · induced by metrics · (Euclidean) and · (square) are the same as the product topology on ·.",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-3"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 167,
+"term": "all norms on a finite-dimensional space are equivalent",
+"count": 1,
+"context": "> - All norms on a finite-dimensional space are equivalent and so give the same topology: ⟂ (equivalent norms: ⟂).",
+"targets": [
+"Functional Analysis|All Norms on a Finite-Dimensional Space Are Equivalent"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 179,
+"term": "hausdorff",
+"count": 2,
+"context": "> - **Hausdorff** (⟂ below)—distinct points can be separated.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 180,
+"term": "countable",
+"count": 1,
+"context": "> - **First-countable**—countable neighborhood bases at each point, so sequences suffice for topology (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 181,
+"term": "closed sets",
+"count": 1,
+"context": "> - **Normal**—disjoint closed sets can be separated by open sets (for metrizable spaces).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 183,
+"term": "second countable",
+"count": 1,
+"context": "oint-set topology is determining *which* topological spaces are metrizable. The answer—⟂—says that a regular, second-countable space is metrizable. This connects the countability axioms (⟂) and separation axioms (⟂) to the concrete stru",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§11 Metric Topology",
+"line": 369,
+"term": "linear map",
+"count": 2,
+"context": "> - Functional analysis takes the sequential condition as the definition of a continuous linear map (⟂); for linear maps it is equivalent to boundedness (⟂).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 21,
+"term": "equivalence relation",
+"count": 6,
+"context": "> The quotient construction is topology's version of “gluing” and “collapsing.” Given a space · and an equivalence relation ·, we declare certain points to be “the same” and ask: what topology does the resulting space inherit?",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 23,
+"term": "open set",
+"count": 6,
+"context": "*trickiest*: the quotient topology can behave unexpectedly. A quotient map need not be open (the image of an open set need not be open), and quotient spaces of Hausdorff spaces can fail to be Hausdorff. Developing intuition for",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 23,
+"term": "hausdorff",
+"count": 14,
+"context": "pectedly. A quotient map need not be open (the image of an open set need not be open), and quotient spaces of Hausdorff spaces can fail to be Hausdorff. Developing intuition for when quotients are well-behaved is a recurring them",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 30,
+"term": "surjective",
+"count": 14,
+"context": "> Let · be topological spaces. Let · be a surjective map. The map · is called a **quotient map** if for all ·, · is open in · if and only if · is open in ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 41,
+"term": "surjection",
+"count": 7,
+"context": "## Quotient Topology from a Surjection",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 128,
+"term": "equivalence classes",
+"count": 2,
+"context": "> For ·, let · denote its equivalence class. Let · (or ·) denote the set of all equivalence classes (i.e., a partition of · into disjoint subsets whose union is ·).",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 138,
+"term": "orbit space",
+"count": 1,
+"context": "> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, ⟂, and the quotient group G/N, ⟂.",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-5"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 139,
+"term": "countable",
+"count": 1,
+"context": "> - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: ⟂ (the graph of the relation is closed) and ⟂.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 139,
+"term": "second countable",
+"count": 1,
+"context": "> - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: ⟂ (the graph of the relation is closed) and ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 217,
+"term": "closed sets",
+"count": 1,
+"context": "en nor closed (HW5: · where · is chosen so that the restriction maps some open sets to non-open sets and some closed sets to non-closed sets). In practice, the compact-to-Hausdorff shortcut (⟂) is often more useful: a continuous su",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 267,
+"term": "bijection",
+"count": 1,
+"context": "> [!theorem] Corollary §12.4: Induced Bijection from Quotient",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§12 Quotient Topology",
+"line": 280,
+"term": "injective",
+"count": 2,
+"context": "> If · with ·, then ·, since the only element of · that · sends to · is the fiber ·. So · is injective · · is bijective.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§13 Connected Spaces",
+"line": 142,
+"term": "surjective",
+"count": 1,
+"context": "> Restrict the codomain · to ·: ·, · for all ·, is surjective. Also continuous (⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§13 Connected Spaces",
+"line": 203,
+"term": "cartesian product",
+"count": 1,
+"context": "> A finite Cartesian product of connected spaces is also connected.",
+"targets": [
+"Logic and Proofs|§7 Quantifiers#^def-7-5"
+]
+},
+{
+"note": "§14 Connected Subspaces of ℝ",
+"line": 11,
+"term": "least upper bound",
+"count": 3,
+"context": "## Least Upper Bound Property and Linear Continuum",
+"targets": [
+"Calculus|§69 Sequences#^def-69-7"
+]
+},
+{
+"note": "§14 Connected Subspaces of ℝ",
+"line": 47,
+"term": "bounded sets",
+"count": 1,
+"context": "> **Condition 1 (l.u.b. property):** Prevents “jumps”—bounded sets have suprema, so there are no holes where a limit should be.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§14 Connected Subspaces of ℝ",
+"line": 158,
+"term": "metric space",
+"count": 1,
+"context": "> - MATH 451 version (metric spaces): ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§14 Connected Subspaces of ℝ",
+"line": 158,
+"term": "metric spaces",
+"count": 1,
+"context": "> - MATH 451 version (metric spaces): ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§14 Connected Subspaces of ℝ",
+"line": 198,
+"term": "open set",
+"count": 1,
+"context": "> - In the complex plane: ⟂ (B&C's polygonally connected open sets are path-connected, hence connected).",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 27,
+"term": "compactness",
+"count": 20,
+"context": "> [!remark] Remark: Why Compactness Matters",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 28,
+"term": "bounded sets",
+"count": 5,
+"context": "Compactness is the topological generalization of “finiteness.” It captures the essential properties of closed bounded sets in · that make analysis work:",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 28,
+"term": "bounded set",
+"count": 5,
+"context": "Compactness is the topological generalization of “finiteness.” It captures the essential properties of closed bounded sets in · that make analysis work:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 30,
+"term": "metric spaces",
+"count": 2,
+"context": "space in many ways: every open cover reduces to a finite one, every sequence has a convergent subsequence (in metric spaces, ⟂), and continuous functions achieve their bounds.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 147,
+"term": "surjection",
+"count": 1,
+"context": "> **The Bridge (Restriction):** There is a natural surjection",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 174,
+"term": "hausdorff",
+"count": 11,
+"context": ">     - “Compact · Hausdorff · Closed (⟂)”: Use Hausdorff property of · to separate points.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 178,
+"term": "closed sets",
+"count": 6,
+"context": "## Compact Subspaces and Closed Sets",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 316,
+"term": "bijection",
+"count": 2,
+"context": "> [!theorem] Theorem §15.7: Bijection from Compact to Hausdorff",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§15 Compact Spaces",
+"line": 355,
+"term": "one-to-one function",
+"count": 1,
+"context": "> - One-variable analogue: the inverse of a continuous one-to-one function on an interval is continuous, ⟂.",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-1"
+]
+},
+{
+"note": "§16 Limit Point Compactness",
+"line": 18,
+"term": "compactness",
+"count": 5,
+"context": "> [!remark] Remark: Three Notions of Compactness",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§16 Limit Point Compactness",
+"line": 20,
+"term": "open cover",
+"count": 6,
+"context": "> 1. **⟂:** Every open cover has a finite subcover.",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "§16 Limit Point Compactness",
+"line": 33,
+"term": "metric spaces",
+"count": 2,
+"context": "> The equivalence in metric spaces comes from the interplay between the metric and topology: balls give you sequences, and sequences detect limi",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§16 Limit Point Compactness",
+"line": 101,
+"term": "bounded sequence",
+"count": 1,
+"context": "> - MATH 451: ⟂ (every bounded sequence in · has a convergent subsequence) and Bolzano–Weierstrass in · (⟂).",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 20,
+"term": "compactness",
+"count": 6,
+"context": "> [!remark] Remark: Local vs Global Compactness",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 21,
+"term": "pointwise",
+"count": 1,
+"context": "> Local compactness is a weaker, “pointwise” version of compactness:",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 27,
+"term": "hausdorff",
+"count": 37,
+"context": "> - Locally compact Hausdorff spaces have ⟂, letting us “add a point at infinity” to make them compact.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 33,
+"term": "product topology",
+"count": 1,
+"context": "neighborhood of 0 would contain a closed ball, and closed balls are not compact there by ⟂ (compare ⟂ for the product topology on ℝ^ω).",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-3"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 111,
+"term": "type 2",
+"count": 2,
+"context": "> *· and ·:* · is open in · (type 1). · where · is compact (type 2). ✓",
+"targets": [
+"Calculus|§103 Triple Integrals#^def-103-4"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 124,
+"term": "closed subset",
+"count": 2,
+"context": "> where ·. Now · is closed in each · (⟂ in Hausdorff), hence ⟂. And · is a closed subset of · (since · is open), hence compact. So the union is type (2). ✓",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 152,
+"term": "open cover",
+"count": 3,
+"context": "> Let · be an open cover of ·. Since ·, some · contains ·, so · for some compact ·. The remaining sets in ·, intersected with ·, form",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 246,
+"term": "bijection",
+"count": 1,
+"context": "> In fact, · is homeomorphic to ·: the map · is a bijection, and both spaces have the discrete topology. Thus · is the one-point compactification of ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 268,
+"term": "tangent plane",
+"count": 1,
+"context": "*The same picture one dimension up, ·: the ray from · through · hits the tangent plane at ·. The compact disk · of radius · (blue) corresponds to the lower hemisphere, and its complement (red) cor",
+"targets": [
+"Calculus|§93 Tangent Planes and Linear Approximations#^def-93-1",
+"Multivariable Analysis|§6 Differentiability#^def-6-3"
+]
+},
+{
+"note": "§17 Local Compactness",
+"line": 271,
+"term": "smooth chart",
+"count": 1,
+"context": "> - In 591, stereographic projection is a smooth chart on the circle, ⟂, and identifies S² with ℂP¹, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-1"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 11,
+"term": "metric space",
+"count": 10,
+"context": "**Motivation:** When does a space · embed in a metric space?",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 23,
+"term": "countable",
+"count": 50,
+"context": "> [!definition] Definition §18.1: Countable Basis at a Point",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 42,
+"term": "metric spaces",
+"count": 2,
+"context": "s exist.** Given a countable basis · at ·, define ·. Then · is a nested countable basis: ·, analogous to · in metric spaces.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 44,
+"term": "uncountable",
+"count": 4,
+"context": "> **3. Not every space is first-countable.** The uncountable product · with ⟂ is not first-countable — any neighborhood basis at a point requires uncountably many sets. I",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 65,
+"term": "second countable",
+"count": 22,
+"context": "> [!definition] Definition §18.3: Second-Countable",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 131,
+"term": "injection",
+"count": 1,
+"context": "> The map · is an injection ·. Since · is countable, · is countable.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 138,
+"term": "orthonormal",
+"count": 2,
+"context": "> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable (⟂).",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 138,
+"term": "orthonormal set",
+"count": 1,
+"context": "> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable (⟂).",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 167,
+"term": "open set",
+"count": 1,
+"context": "> A subset · is **dense** if ·. Equivalently: every nonempty open set in · meets ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§18 Countability Axioms",
+"line": 216,
+"term": "triangle inequality",
+"count": 1,
+"context": "a point · of the dense set · (blue) with ·, and ·. The basis ball · (red) contains · and fits inside · by the triangle inequality. Only countably many such balls exist.*",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§19 Separation Axioms",
+"line": 19,
+"term": "hausdorff",
+"count": 13,
+"context": "> - First met in ⟂, where ⟂ shows Hausdorff · ·.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§19 Separation Axioms",
+"line": 22,
+"term": "open set",
+"count": 17,
+"context": "> · is **regular** if · is ⟂ and for each pair of a point · and a closed set · with ·, there exist disjoint open sets · and ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§19 Separation Axioms",
+"line": 27,
+"term": "closed sets",
+"count": 11,
+"context": "> · is **normal** if · is ⟂ and for each pair of disjoint closed sets · and ·, there exist disjoint open sets · and ·.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§19 Separation Axioms",
+"line": 46,
+"term": "closed subsets",
+"count": 1,
+"context": "⟂** (disjoint closed sets can be separated by a continuous function ·) and the **⟂** (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the ⟂. These implications are strict — each level genuine",
+"targets": [
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-5"
+]
+},
+{
+"note": "§19 Separation Axioms",
+"line": 46,
+"term": "closed subset",
+"count": 1,
+"context": "⟂** (disjoint closed sets can be separated by a continuous function ·) and the **⟂** (continuous functions on closed subsets extend to the whole space). These, in turn, lead to the ⟂. These implications are strict — each level genuine",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§2 Basis for a Topology",
+"line": 26,
+"term": "open set",
+"count": 5,
+"context": "> - Open sets are exactly unions of basis elements: ⟂.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 12,
+"term": "closed sets",
+"count": 5,
+"context": "about most — metrizable spaces, compact Hausdorff spaces — are normal. This sets the stage for ⟂ (separating closed sets by continuous functions) and the ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 12,
+"term": "hausdorff",
+"count": 11,
+"context": "point-set topology. This section establishes that the spaces we care about most — metrizable spaces, compact Hausdorff spaces — are normal. This sets the stage for ⟂ (separating closed sets by continuous functions) and the ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 32,
+"term": "open set",
+"count": 6,
+"context": "> **Step 2: Construct open sets with half-radii.**",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 40,
+"term": "unions of open sets",
+"count": 1,
+"context": "> These are open (as unions of open sets), ·, and ·.",
+"targets": [
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^prop-13-4"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 42,
+"term": "triangle inequality",
+"count": 4,
+"context": "> **Step 3: Prove · via the triangle inequality.**",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 66,
+"term": "metric space",
+"count": 1,
+"context": "ii creates a “buffer zone” that the triangle inequality exploits. This is the same idea behind the proof that metric spaces are Hausdorff (⟂), scaled up from points to closed sets.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 66,
+"term": "metric spaces",
+"count": 1,
+"context": "ii creates a “buffer zone” that the triangle inequality exploits. This is the same idea behind the proof that metric spaces are Hausdorff (⟂), scaled up from points to closed sets.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§20 Normal Spaces",
+"line": 120,
+"term": "compactness",
+"count": 1,
+"context": "> - **Compact Hausdorff:** compactness provides finite subcovers, and the ·/· trick preserves disjointness.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 20,
+"term": "second countable",
+"count": 1,
+"context": "> But these tools are not enough: **is ·?** Both are connected, non-compact, Hausdorff, second-countable, and removing a point from either leaves a connected space. We need a new technique.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 20,
+"term": "hausdorff",
+"count": 1,
+"context": "> But these tools are not enough: **is ·?** Both are connected, non-compact, Hausdorff, second-countable, and removing a point from either leaves a connected space. We need a new technique.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 70,
+"term": "permutation",
+"count": 1,
+"context": "> - ·: permutations of · under composition. **Not abelian** for ·.",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 70,
+"term": "permutations",
+"count": 1,
+"context": "> - ·: permutations of · under composition. **Not abelian** for ·.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 97,
+"term": "division algorithm",
+"count": 1,
+"context": "Let · be the smallest positive integer with ·. Then · (one can show every element of · is a power of · by the division algorithm).",
+"targets": [
+"Group Theory|Division Algorithm",
+"Group Theory|§6 Divisibility and Congruence#^lem-6-1"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 175,
+"term": "inverse function",
+"count": 1,
+"context": "> **Both together:** · is injective and surjective, hence bijective. The map · is then the inverse function ·.",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§21 Algebra Prerequisites꞉ Groups",
+"line": 226,
+"term": "cardinality",
+"count": 1,
+"context": "> 1. · (same cardinality).",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 19,
+"term": "compactness",
+"count": 1,
+"context": "ections simultaneously—nearby · values give nearby points in ·, so there are no “jumps” in space or time. The compactness of · is also essential: paths have definite start and end points, deformations have a definite “before” and “",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 19,
+"term": "product topology",
+"count": 1,
+"context": "> Requiring · to be continuous on · (in the product topology) ensures the deformation is smooth in *both* directions simultaneously—nearby · values give nearby points in",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-3"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 69,
+"term": "convex set",
+"count": 1,
+"context": "2. **Every loop in a convex set contracts** (⟂): Take ·, giving ·. This is a *path* homotopy (not just a homotopy): · and ·, so the endpoints",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 105,
+"term": "terminal point",
+"count": 2,
+"context": "> A **path** in · is a continuous map ·. The point · is the **initial point**, · the **terminal point**.",
+"targets": [
+"Calculus|§63 Curves Defined by Parametric Equations#^def-63-2"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 127,
+"term": "equivalence relation",
+"count": 2,
+"context": "## Homotopy is an Equivalence Relation",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 152,
+"term": "equivalence class",
+"count": 1,
+"context": "> The equivalence class of a path · under · is denoted ·.",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-7",
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-2",
+"Logic and Proofs|§22 Partitions and Equivalence Relations#^def-22-4"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 216,
+"term": "trace",
+"count": 2,
+"context": "> The composition · is still a path with the same image as ·—the “trace” (set of points visited) is unchanged—but we may travel along · at a different speed. The lemma says: *repara",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 271,
+"term": "composition of continuous functions",
+"count": 1,
+"context": "> **Continuity:** Each piece is a composition of continuous functions. At the junctions · and ·, the pieces agree (check by substitution), so · is continuous by the ⟂ (the three r",
+"targets": [
+"Complex Variables|§18 Continuity#^thm-18-2",
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-4",
+"Single Variable Analysis|§17 Continuous Functions#^thm-17-4"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 271,
+"term": "closed subsets",
+"count": 1,
+"context": "nctions · and ·, the pieces agree (check by substitution), so · is continuous by the ⟂ (the three regions are closed subsets of ·).",
+"targets": [
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-5"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 271,
+"term": "closed subset",
+"count": 1,
+"context": "nctions · and ·, the pieces agree (check by substitution), so · is continuous by the ⟂ (the three regions are closed subsets of ·).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§22 Homotopy of Paths",
+"line": 394,
+"term": "modular arithmetic",
+"count": 1,
+"context": "> This is analogous to modular arithmetic: you state “·” at the class level but verify it by computing · at the representative level.",
+"targets": [
+"Logic and Proofs|§19 Congruence of Integers#^prop-19-2"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 50,
+"term": "contour",
+"count": 1,
+"context": "> - Computational version: ⟂ (B&C's simply connected domains, every simple closed contour enclosing only points of the domain).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 54,
+"term": "terminal point",
+"count": 1,
+"context": "> In a simply connected space ·, any two paths having the same initial and terminal points are path homotopic.",
+"targets": [
+"Calculus|§63 Curves Defined by Parametric Equations#^def-63-2"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 87,
+"term": "open ball",
+"count": 1,
+"context": "> This includes: open balls, closed balls, · itself, any open convex set, ·, etc.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-9",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-1",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-1"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 96,
+"term": "linear space",
+"count": 1,
+"context": "> - Convex sets in a general real linear space: ⟂.",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-1",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-1"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 147,
+"term": "bijection",
+"count": 1,
+"context": "> Similarly · for all ·. So · and · are inverses, hence · is a bijection.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 200,
+"term": "pointwise",
+"count": 1,
+"context": "> The key step is ·: since · equals · or · depending on ·, applying · pointwise gives · or ·, which is exactly ·.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 248,
+"term": "isomorphic",
+"count": 1,
+"context": "s—it converts topological problems (are these spaces homeomorphic?) into algebraic problems (are these groups isomorphic?).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 323,
+"term": "injective",
+"count": 3,
+"context": "> **Step 3: · is injective.** Since · is a homomorphism, it suffices to show · (trivial kernel · injective, from ⟂).",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§23 The Fundamental Group",
+"line": 339,
+"term": "surjective",
+"count": 1,
+"context": "> **Step 4: · is surjective.** Given any ·, we must find a loop · in · with ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 14,
+"term": "surjective",
+"count": 15,
+"context": "> Let · be a continuous surjective map. An open set · is **evenly covered** by · if",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 14,
+"term": "open set",
+"count": 15,
+"context": "> Let · be a continuous surjective map. An open set · is **evenly covered** by · if",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 28,
+"term": "diffeomorphism",
+"count": 3,
+"context": "he smooth analogue with a discrete fibre is a fibration, ⟂, and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 29,
+"term": "log z",
+"count": 4,
+"context": "> - Concrete example: ⟂ (the Riemann surface of log z, an infinitely-sheeted covering of the punctured plane).",
+"targets": [
+"Complex Variables|Branches of the Complex Logarithm"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 60,
+"term": "bijection",
+"count": 11,
+"context": "> **The counting formula.** When · is simply connected, the ⟂ (⟂) gives a bijection ·. So:",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 115,
+"term": "injective",
+"count": 7,
+"context": "> - **Injective:** · is strictly monotone on ·, so · is injective.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 157,
+"term": "smooth map",
+"count": 1,
+"context": "> - As a smooth map, · is a local diffeomorphism, and its restriction to · is a local diffeomorphism that is not a covering map:",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 310,
+"term": "surjection",
+"count": 1,
+"context": "> **Why must · be a covering space of ·?** An arbitrary surjection · would not suffice. The covering structure provides three things:",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 319,
+"term": "compactness",
+"count": 2,
+"context": "> - **Local to global via compactness.** Each small piece of a path maps into some evenly covered ·, where the local inverse lifts it. The ⟂ (using",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 340,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> In both cases, · is the bridge, there is an existence and uniqueness statement for the induced map, and a condition must be satisfied (constant on fibers for quotients, choice of",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 401,
+"term": "metric space",
+"count": 2,
+"context": "* Cover · by open sets · each evenly covered by ·. The collection · is an open cover of ·, which is a compact metric space. By the **Lebesgue number lemma** (⟂, ⟂), there exists · such that every subset of · with diameter · lies in",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 401,
+"term": "open cover",
+"count": 2,
+"context": "> **Existence.** Cover · by open sets · each evenly covered by ·. The collection · is an open cover of ·, which is a compact metric space. By the **Lebesgue number lemma** (⟂, ⟂), there exists · such that ever",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 426,
+"term": "contour",
+"count": 1,
+"context": "> - Computational version: ⟂ (a continuous argument along a contour, the lift of a loop in ℂ ∖ {0} through θ ↦ eⁱᶿ, given by an integral of w′/w).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 511,
+"term": "trace",
+"count": 1,
+"context": "> In the proof that ·, the key step is: the function · traces the endpoints of the lifted paths as you deform · into ·. This function is:",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 553,
+"term": "isomorphic",
+"count": 3,
+"context": "> The fundamental group of · is isomorphic to ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 574,
+"term": "cardinality",
+"count": 1,
+"context": "> At this point, · is a bijection of sets: · and · have the same cardinality. But a bijection of sets is not an isomorphism of groups—we need · to respect the operations.",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 576,
+"term": "group homomorphism",
+"count": 1,
+"context": "> **Step 3: · is a group homomorphism.** We must show ·, i.e., the lift of · starting at · ends at ·. This is the only step that uses the specific",
+"targets": [
+"Group Theory|§15 Homomorphisms#^def-15-1"
+]
+},
+{
+"note": "§24 Covering Spaces",
+"line": 671,
+"term": "hausdorff",
+"count": 1,
+"context": "d a constant map. Define · by ·. Then · is continuous, surjective, and closed (continuous map from compact to Hausdorff), hence a quotient map.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§25 The Fundamental Theorem of Algebra",
+"line": 17,
+"term": "extreme value theorem",
+"count": 1,
+"context": "> - The same theorem in linear algebra, proved there with the extreme value theorem: ⟂.",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§25 The Fundamental Theorem of Algebra",
+"line": 23,
+"term": "injective",
+"count": 7,
+"context": "> **Step 1: The power map ·, ·, induces an injective homomorphism on ·.**",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§25 The Fundamental Theorem of Algebra",
+"line": 81,
+"term": "triangle inequality",
+"count": 1,
+"context": "> - The triangle inequality estimate · on · (the analytic input).",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 52,
+"term": "injective",
+"count": 16,
+"context": "> **· is injective:** · is the identity map, so · on ·. If ·, then ·. So · is injective.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 54,
+"term": "surjective",
+"count": 13,
+"context": "> **· is surjective:** We show · is homotopic to · with · fixed. Define:",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 110,
+"term": "isomorphic",
+"count": 3,
+"context": "r of ·, and · projects · onto that factor. But · — the retraction does not force the fundamental groups to be isomorphic.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 153,
+"term": "triangle inequality",
+"count": 1,
+"context": "> **Convexity:** By the triangle inequality,",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 182,
+"term": "group homomorphism",
+"count": 1,
+"context": "y).** Both · and · are continuous maps, so by the induced homomorphism construction (⟂), each gets an induced group homomorphism:",
+"targets": [
+"Group Theory|§15 Homomorphisms#^def-15-1"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 324,
+"term": "product of continuous functions",
+"count": 1,
+"context": "> - *Continuous:* · is a product of continuous functions.",
+"targets": [
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-2"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 326,
+"term": "hausdorff",
+"count": 2,
+"context": "> - *Closed:* · is compact and · is Hausdorff, so · is closed.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 346,
+"term": "injection",
+"count": 3,
+"context": "> For ·, we proved this using · (⟂): a retraction · would force an injection ·, i.e., ·, which is impossible.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 534,
+"term": "equivalence relation",
+"count": 2,
+"context": "> The torus · is the ⟂ · by the equivalence relation that identifies opposite edges:",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 539,
+"term": "composition of continuous functions",
+"count": 1,
+"context": "> - *Continuous:* Composition of continuous functions.",
+"targets": [
+"Complex Variables|§18 Continuity#^thm-18-2",
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-4",
+"Single Variable Analysis|§17 Continuous Functions#^thm-17-4"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 578,
+"term": "boundary points",
+"count": 2,
+"context": "s, and the only thing to check is that · is constant on fibers, which holds because · never moves the (glued) boundary points.*",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 598,
+"term": "interior point",
+"count": 1,
+"context": "> No other identifications exist (interior points have unique preimages), so there is nothing else to check.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 662,
+"term": "compactness",
+"count": 2,
+"context": "> | Preserves | All topological properties (compactness, dimension, ·, …) | · and all homotopy invariants, but NOT compactness, dimension, … |",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§26 Deformation Retracts and Homotopy Type",
+"line": 764,
+"term": "trace",
+"count": 1,
+"context": "> The bottom is the loop · at ·; the top is the loop · at ·; both side edges trace the path ·. By an analysis of this square (see Munkres for details), the paths",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 11,
+"term": "open cover",
+"count": 2,
+"context": "The main result of this section is · for · (⟂). The proof requires a ⟂ about how · interacts with open covers.",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 28,
+"term": "open set",
+"count": 2,
+"context": "or entirely in ·. In other words, every loop in · can be broken into pieces that each stay within one of the open sets.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 42,
+"term": "metric space",
+"count": 1,
+"context": "> The sets · form an open cover of · (since · and · is continuous). By the **⟂** (applied to the ⟂ metric space ·), there exists · such that every subset of · with diameter less than · is contained in either · or ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 206,
+"term": "hausdorff",
+"count": 5,
+"context": "in · and · is open in ·. The natural inclusions · and · are embeddings, and · is ⟂ (since · and · are compact Hausdorff and meet at a single point).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 206,
+"term": "embedding",
+"count": 1,
+"context": "nt. Thus a set · is open if and only if · is open in · and · is open in ·. The natural inclusions · and · are embeddings, and · is ⟂ (since · and · are compact Hausdorff and meet at a single point).",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§27 The Fundamental Group of Sⁿ",
+"line": 228,
+"term": "closed sets",
+"count": 1,
+"context": "closed in · (⟂) because · is closed in ·, being compact in Hausdorff ·), so · is continuous by the **⟂** (for closed sets).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 20,
+"term": "equivalence class",
+"count": 2,
+"context": "> The quotient map is ·, · (the equivalence class).",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-7",
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-2",
+"Logic and Proofs|§22 Partitions and Equivalence Relations#^def-22-4"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 34,
+"term": "open set",
+"count": 3,
+"context": "continuous, bijective, and its own inverse: ·). If · is open, then · is also open. Now ·, which is a union of open sets, hence open in ·. By the definition of ⟂, · is open in ·. So · is an open map.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 34,
+"term": "open map",
+"count": 1,
+"context": "en. Now ·, which is a union of open sets, hence open in ·. By the definition of ⟂, · is open in ·. So · is an open map.",
+"targets": [
+"Differentiable Manifolds|§4 Quotient Spaces and Open Maps#^def-4-2"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 40,
+"term": "injective",
+"count": 7,
+"context": "> Therefore · is injective (distinct points in · go to distinct equivalence classes). Since · is continuous and open, · is a homeomorphi",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 40,
+"term": "equivalence classes",
+"count": 1,
+"context": "> Therefore · is injective (distinct points in · go to distinct equivalence classes). Since · is continuous and open, · is a homeomorphism onto ·.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 54,
+"term": "diffeomorphism",
+"count": 1,
+"context": "> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 54,
+"term": "local diffeomorphism",
+"count": 1,
+"context": "> - In every dimension the quotient Sⁿ → ℝPⁿ is a two-to-one local diffeomorphism: ⟂.",
+"targets": [
+"Differentiable Manifolds|§31 Local Diffeomorphisms#^def-31-1"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 68,
+"term": "bijection",
+"count": 2,
+"context": "> is a bijection (by ⟂: when the covering space is simply connected, the lifting correspondence is bijective).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 72,
+"term": "isomorphic",
+"count": 3,
+"context": "> Any group of order · is isomorphic to ·: if ·, then · and · must be · or ·. If ·, then · (multiply by ·), contradicting ·. So ·, and the map · g",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 102,
+"term": "grassmannian",
+"count": 1,
+"context": "> - In 591 ℝPⁿ gets a smooth atlas, ⟂, and this quotient topology is shown to agree with its Grassmannian description, ⟂; the complex analogue ℂPⁿ is ⟂.",
+"targets": [
+"Differentiable Manifolds|§14 The Topology of G∕H and Real Grassmannians#^def-14-3"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 102,
+"term": "atlas",
+"count": 1,
+"context": "> - In 591 ℝPⁿ gets a smooth atlas, ⟂, and this quotient topology is shown to agree with its Grassmannian description, ⟂; the complex analogue ℂ",
+"targets": [
+"Differentiable Manifolds|§16 Differentiable Structures#^def-16-6"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 126,
+"term": "wedge product",
+"count": 1,
+"context": "> Let · and · be topological spaces with chosen basepoints · and ·. The **wedge sum** (or **wedge product**) · is the quotient space",
+"targets": [
+"Multivariable Analysis|§22 The Algebra of Differential Forms#^def-22-1"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 137,
+"term": "surjection",
+"count": 1,
+"context": "> The wedge sum is a quotient space (⟂), so its topology is the **⟂** induced by the canonical surjection · that sends · and · to the same point · and is injective on every other point.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 221,
+"term": "trace",
+"count": 1,
+"context": "> 2. · for all ·, since · restricted to this segment of the ·-axis traces out · exactly as · does. ✓",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 308,
+"term": "surjective",
+"count": 4,
+"context": "s the neck to · and then each torus onto its red circle, keeping · fixed. This is why · is injective and · is surjective.*",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§28 Fundamental Group of Some Surfaces",
+"line": 333,
+"term": "abelian group",
+"count": 2,
+"context": "> | Logic | Non-abelian subgroup embeds, so the ambient group is non-abelian | Abelian group can only surject onto abelian groups; · is non-abelian, contradiction |",
+"targets": [
+"Group Theory|§1 The Definition of a Group#^def-1-2"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 41,
+"term": "quotient groups",
+"count": 1,
+"context": "> - In presentation language: ⟂; quotient groups: ⟂.",
+"targets": [
+"Group Theory|Quotient Groups"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 54,
+"term": "trace",
+"count": 2,
+"context": "> **Step 2: For each generator ·, trace what it becomes in · and in ·.** The loop · lives in ·. Since · and ·, view · inside each piece:",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 81,
+"term": "surjective",
+"count": 4,
+"context": "> We must show · descends to an isomorphism ·, i.e., · is surjective and ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 192,
+"term": "open set",
+"count": 1,
+"context": "*The open sets of Example §29.2. · (blue) is the left circle plus short open arcs into the right circle; · (red) is its mirr",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 211,
+"term": "interior point",
+"count": 1,
+"context": "> Think of the torus as the square · with opposite edges identified (⟂). The puncture · is an interior point, and · is a small circle around ·. The key observation: since · lives entirely in the interior of the square,",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 233,
+"term": "abelian group",
+"count": 1,
+"context": "> The van Kampen relation forces the two generators to commute, recovering the abelian group ·.",
+"targets": [
+"Group Theory|§1 The Definition of a Group#^def-1-2"
+]
+},
+{
+"note": "§29 The Seifert–van Kampen Theorem",
+"line": 263,
+"term": "boundary points",
+"count": 3,
+"context": "> Recall · — identify antipodal boundary points. Write · where:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§3 Order Topology",
+"line": 56,
+"term": "countable",
+"count": 1,
+"context": "> This can easily extend to countable products of simply ordered sets.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§3 Order Topology",
+"line": 97,
+"term": "open set",
+"count": 3,
+"context": "> **Key insight:** Unlike the standard topology on · (where open sets are “blobs”), open sets in the dictionary order topology are unions of vertical line segments and rays. The t",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§4 Product Topology",
+"line": 13,
+"term": "product topology",
+"count": 8,
+"context": "> [!definition] Definition §4.1: Product Topology on ·",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-3"
+]
+},
+{
+"note": "§4 Product Topology",
+"line": 23,
+"term": "open set",
+"count": 4,
+"context": "*Left: a basis element ·, an open “rectangle” whose sides are open sets · and ·. Right: a general open set · of · (dashed) is usually not a product, but each point · has a basis ele",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§4 Product Topology",
+"line": 27,
+"term": "compactness",
+"count": 1,
+"context": "> - Preserves connectedness and compactness: ⟂, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§5 Subspace Topology",
+"line": 25,
+"term": "closed sets",
+"count": 1,
+"context": "> - Closed sets of a subspace: ⟂; closures: ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§5 Subspace Topology",
+"line": 30,
+"term": "compactness",
+"count": 2,
+"context": "pen in ·—· is open in · but not in ·. Getting comfortable with this distinction is essential for working with compactness and connectedness in subspaces.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§5 Subspace Topology",
+"line": 45,
+"term": "open set",
+"count": 1,
+"context": "*· (red) is open in · (gray) because the open set · of · (blue) cuts it out of ·. The part of · to the left of · is thrown away, which is why the closed endpoi",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§6 Closed Sets and Limit Points",
+"line": 10,
+"term": "closed sets",
+"count": 4,
+"context": "## Closed Sets",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§6 Closed Sets and Limit Points",
+"line": 20,
+"term": "metric spaces",
+"count": 1,
+"context": "> - The sequential definition in a normed space: ⟂; it agrees with this one in metric spaces by ⟂ and the ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§7 Interior and Closure",
+"line": 15,
+"term": "open set",
+"count": 7,
+"context": "> The **interior** of ·, denoted · or ·, is the union of all open sets in · contained in ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§7 Interior and Closure",
+"line": 135,
+"term": "compactness",
+"count": 1,
+"context": "> - Compactness via limit points: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§7 Interior and Closure",
+"line": 136,
+"term": "singular point",
+"count": 2,
+"context": "> - Computational version: ⟂ (accumulation points in the complex plane, via deleted neighborhoods); a singular point that is a limit point of other singular points, so not isolated: ⟂.",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-3",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-6"
+]
+},
+{
+"note": "§7 Interior and Closure",
+"line": 206,
+"term": "metric spaces",
+"count": 1,
+"context": "> - In metric spaces: ⟂, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§8 Hausdorff Spaces",
+"line": 16,
+"term": "open set",
+"count": 2,
+"context": "t (dashed boundaries: the sets are open). In the cofinite topology this picture cannot be drawn: two nonempty open sets have finite complements, so they always intersect.*",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§8 Hausdorff Spaces",
+"line": 19,
+"term": "metric space",
+"count": 1,
+"context": "> - Every metric space is Hausdorff: ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§8 Hausdorff Spaces",
+"line": 21,
+"term": "countable",
+"count": 1,
+"context": "> - Why manifolds assume it: the line with two origins is locally Euclidean and second countable but not Hausdorff, ⟂.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§8 Hausdorff Spaces",
+"line": 21,
+"term": "locally euclidean",
+"count": 1,
+"context": "> - Why manifolds assume it: the line with two origins is locally Euclidean and second countable but not Hausdorff, ⟂.",
+"targets": [
+"Differentiable Manifolds|§2 Topological Manifolds#^def-2-1"
+]
+},
+{
+"note": "§8 Hausdorff Spaces",
+"line": 28,
+"term": "bijection",
+"count": 1,
+"context": "> - **⟂:** continuous bijections from compact to Hausdorff are homeomorphisms.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 14,
+"term": "open set",
+"count": 7,
+"context": "> Let · be topological spaces. A function · is **continuous** if for each open set ·, the preimage · is a subset of · that is open.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 21,
+"term": "inverse image",
+"count": 1,
+"context": "> It suffices to show the inverse image of every basis element is open. Let ·. Then ·. If each · is open, then · is open.",
+"targets": [
+"Complex Variables|§13 Functions and Mappings#^def-13-5"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 32,
+"term": "metric space",
+"count": 3,
+"context": "> - Recovered for metric spaces: ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 32,
+"term": "metric spaces",
+"count": 3,
+"context": "> - Recovered for metric spaces: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 64,
+"term": "closed subset",
+"count": 1,
+"context": "> 3. For every closed subset · of ·, · is closed in ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 92,
+"term": "bijection",
+"count": 6,
+"context": "> Let · be a bijection with inverse ·. If both · and · are continuous, then · is called a **homeomorphism**.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 129,
+"term": "interior point",
+"count": 1,
+"context": "rphic; a circle and a line segment are not (removing one point from a circle leaves it connected; removing an interior point from a segment does not).",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§9 Continuous Functions",
+"line": 226,
+"term": "closed sets",
+"count": 1,
+"context": "> Thus · is a finite union of closed sets, hence closed in ·.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "· 2 Closedness, Continuity, and Hausdorff",
+"line": 7,
+"term": "hausdorff",
+"count": 1,
+"context": "# 2 Closedness, Continuity, and Hausdorff",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "· 5 Compactness",
+"line": 7,
+"term": "compactness",
+"count": 1,
+"context": "# 5 Compactness",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+}
+]

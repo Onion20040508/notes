@@ -1,0 +1,4220 @@
+[
+{
+"note": "Analytic Functions Have Harmonic Components",
+"line": 31,
+"term": "simply connected",
+"count": 1,
+"context": "urce of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is ⟂. T",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "Analytic Functions Have Harmonic Components",
+"line": 31,
+"term": "separation of variables",
+"count": 1,
+"context": "main is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is ⟂. The separation-of-variables solutions of ⟂ are sums of real parts of analytic functions such as ·; Example §27.1 is the term ·, ·.",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "Branches of the Complex Logarithm",
+"line": 29,
+"term": "inverse function",
+"count": 1,
+"context": "- The derivative · restricts on the positive real axis to ·, ⟂. The real proof differentiates an inverse function; the same route works here, ⟂.",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "Cauchy Integral Formula",
+"line": 29,
+"term": "mean value theorem",
+"count": 1,
+"context": "- For a circle · centered at ·, formula (1) says that · is the average of · over the circle: Gauss's mean value theorem, ⟂. Its real part is the mean value property of harmonic functions, ⟂, and the Poisson integral formula ⟂ is",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "Cauchy Integral Formula",
+"line": 29,
+"term": "mean value property of harmonic functions",
+"count": 1,
+"context": "mula (1) says that · is the average of · over the circle: Gauss's mean value theorem, ⟂. Its real part is the mean value property of harmonic functions, ⟂, and the Poisson integral formula ⟂ is the corresponding statement that a harmonic function in a disk is d",
+"targets": [
+"Fourier Series and PDEs|Mean Value Property of Harmonic Functions"
+]
+},
+{
+"note": "Cauchy's Residue Theorem",
+"line": 32,
+"term": "fourier series",
+"count": 1,
+"context": "- Fourier Series and PDEs inverts Laplace transforms by \"closing the Bromwich line to the left\" and summing residues of · (⟂,",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "Cauchy–Goursat Theorem",
+"line": 34,
+"term": "closed set",
+"count": 1,
+"context": "- The nested squares of Lemma §51.1 are a nested sequence of nonempty closed sets in a compact space, which always have a common point: ⟂. The halving argument is the two-dimensional form of",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "Conformal Mappings Preserve Angles",
+"line": 26,
+"term": "linear map",
+"count": 1,
+"context": "an matrix of · at · is · with ·, a rotation–scaling matrix: rotation through · followed by scaling by ·, ⟂. A linear map of that form preserves angles; the tangent vector · is carried to · by this matrix (⟂, the Jacobian).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Fundamental Theorem of Algebra (Liouville proof)",
+"line": 24,
+"term": "extreme value theorem",
+"count": 1,
+"context": "- The other proofs in the vault: ⟂ (⟂) shows that · attains a minimum on a large closed disk (the extreme value theorem) and that the minimum cannot be positive, by moving in a direction where the lowest-order term of · about the",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "Fundamental Theorem of Algebra (Liouville proof)",
+"line": 24,
+"term": "nullhomotopic",
+"count": 1,
+"context": "· about the minimum point decreases ·; ⟂ (⟂) shows that a root-free · would make the loop · on a large circle nullhomotopic in ·, contradicting ·. The proof here hides the analysis in Liouville's theorem, that is, in the Cauchy integ",
+"targets": [
+"Topology|§22 Homotopy of Paths#^def-22-2"
+]
+},
+{
+"note": "ML-Inequality",
+"line": 40,
+"term": "continuous function",
+"count": 1,
+"context": "- The existence of · is the extreme value theorem, ⟂ (and ⟂ for continuous functions of · on a closed bounded region).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Residues at Poles",
+"line": 32,
+"term": "fourier series",
+"count": 1,
+"context": "- In Fourier Series and PDEs, the coefficients of · at a double root are · and ·, ⟂. In the notation of Theorem §80.1 with · and",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "Sufficient Conditions for Complex Differentiability",
+"line": 32,
+"term": "open set",
+"count": 1,
+"context": "s the theorem that continuous partials imply differentiability, ⟂ (stated there for partials continuous on an open set; the proof above needs continuity only at the point). Equations (2)–(3) say that · and · are differentiable a",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "Sufficient Conditions for Complex Differentiability",
+"line": 33,
+"term": "jacobian matrix",
+"count": 1,
+"context": "- With ·, the Cauchy–Riemann equations say that the Jacobian matrix of · at · is ·, a rotation–scaling matrix, ⟂: the linear part of · is multiplication by ·, a rotation through",
+"targets": [
+"Multivariable Analysis|§13 The Inverse Function Theorem#^def-13-1"
+]
+},
+{
+"note": "Taylor's Theorem for Analytic Functions",
+"line": 44,
+"term": "power series",
+"count": 1,
+"context": "- The calculus statement \"a power series equals the Taylor series of its sum\" (⟂) is the converse direction; in this subject it is ⟂.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§1 Sums and Products",
+"line": 14,
+"term": "vector addition",
+"count": 1,
+"context": "ed pair of real numbers, that is, a point of the plane, and give the plane two operations: addition, which is vector addition, and a multiplication designed so that ·. Writing · for · turns every pair into ·, and the product formula be",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-2",
+"Calculus|§81 Vectors#^def-81-2"
+]
+},
+{
+"note": "§101★ Mappings of the Upper Half Plane",
+"line": 15,
+"term": "dirichlet problem",
+"count": 1,
+"context": "· and ·. The half plane and the disk are the two standard regions of potential theory, so this family lets a Dirichlet problem be moved freely between them (compare the Poisson integrals of ⟂ and ⟂).",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§102★ Examples (Mappings of the Upper Half Plane)",
+"line": 19,
+"term": "interior point",
+"count": 1,
+"context": "> 2. **Side.** Compute · (or ·, or ·) in terms of · and ·, or map one interior point. Since the map is one to one on the extended plane (⟂), the region goes onto one of the two sides of the imag",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§102★ Examples (Mappings of the Upper Half Plane)",
+"line": 20,
+"term": "linear map",
+"count": 1,
+"context": "> 3. **Compose.** Write a complicated map as a chain of known ones: linear maps, ·, the half-plane-to-disk maps of §101, and · or powers to open a half plane into a strip or a wedge.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§104★ Mapping Vertical Line Segments by w = sin z",
+"line": 54,
+"term": "bijection",
+"count": 1,
+"context": "anch). So · is one to one onto the branch, moving upward, and ·. For ·, (1) gives ·, ·, a strictly increasing bijection of · onto ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§107★ Mappings by z²",
+"line": 15,
+"term": "simple region",
+"count": 1,
+"context": "⟂: it squares moduli and doubles arguments, so it opens a quadrant into a half plane. Here it is used on less simple regions. Vertical and horizontal lines go onto parabolas, all with focus at the origin, and sweeping a vertical half",
+"targets": [
+"Calculus|§110 Green's Theorem#^def-110-2"
+]
+},
+{
+"note": "§108★ Mappings by Branches of z^(1∕2)",
+"line": 130,
+"term": "bijection",
+"count": 1,
+"context": "is analytic there (⟂), ·, an analytic function whose ·th power is ·: a branch. In polar coordinates · is ·, a bijection of · onto ·. Since the angular interval has length ·, distinct pairs · in it are distinct points: the map is",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§108★ Mappings by Branches of z^(1∕2)",
+"line": 172,
+"term": "composite function",
+"count": 1,
+"context": "the · plane cut along · one to one onto the right half plane · (arguments in · are halved into ·). Hence the composite function",
+"targets": [
+"Calculus|§3 New Functions from Old Functions#^def-3-2"
+]
+},
+{
+"note": "§109★ Square Roots of Polynomials",
+"line": 86,
+"term": "interior point",
+"count": 1,
+"context": "analytic everywhere in ·. It cannot be extended to a function analytic at any point of the segment ·; at the interior points of the segment it cannot even be extended continuously.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§109★ Square Roots of Polynomials",
+"line": 109,
+"term": "open set",
+"count": 1,
+"context": "> The two open sets · and · cover ·, and · is analytic on each; analyticity is a local property, so · is analytic on ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§109★ Square Roots of Polynomials",
+"line": 143,
+"term": "continuous function",
+"count": 1,
+"context": "·, so · changes by · and the exponential in (6) does not change. · is path connected, hence connected, and a continuous function from a connected space into · is constant. At ·: ·, ·, ·, so ·, and ·. So ·, that is · for every ·. Thus · ma",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§110★ Riemann Surfaces",
+"line": 30,
+"term": "punctured plane",
+"count": 3,
+"context": "> - Let · be the punctured plane cut along the positive real axis, with · on it.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§110★ Riemann Surfaces",
+"line": 99,
+"term": "simply connected",
+"count": 1,
+"context": "varying continuously. With ·, ·: on ·, · is the principal branch · (⟂). · is analytic in the half plane ·, a simply connected domain containing · and its interior (· there), so the integral is · by the Cauchy–Goursat theorem (⟂).",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§111★ Surfaces for Related Functions",
+"line": 19,
+"term": "multiplicity",
+"count": 2,
+"context": "> 1. **Branch points.** These are the zeros (and poles) of odd multiplicity for a square root, and the point at infinity if · has a branch point at ·. Introduce · for each finite one, s",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§112★ Preservation of Angles and Scale Factors",
+"line": 15,
+"term": "boundary value problem",
+"count": 1,
+"context": "ipotentials and field lines, streamlines and potential lines) still cross at right angles after the map, so a boundary value problem can be carried to a simpler region and back (⟂, ⟂).",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§112★ Preservation of Angles and Scale Factors",
+"line": 89,
+"term": "linear map",
+"count": 1,
+"context": "an matrix of · at · is · with ·, a rotation–scaling matrix: rotation through · followed by scaling by ·, ⟂. A linear map of that form preserves angles; the tangent vector · is carried to · by this matrix (⟂, the Jacobian).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§112★ Preservation of Angles and Scale Factors",
+"line": 135,
+"term": "gradient",
+"count": 1,
+"context": "> **Directly.** The gradients · and · are normal to the level curves, and by the Cauchy–Riemann equations ·, ·,",
+"targets": [
+"Calculus|§95 Directional Derivatives and the Gradient Vector#^def-95-2",
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§112★ Preservation of Angles and Scale Factors",
+"line": 212,
+"term": "power series",
+"count": 2,
+"context": "> The series for · is the tail of a convergent power series divided by ·, so it converges in the same disk; its sum is continuous there (⟂), and · since every term vanis",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§114★ Local Inverses",
+"line": 15,
+"term": "inverse function",
+"count": 7,
+"context": "can be undone near · by an analytic function, its local inverse, whose derivative is ·. The proof is the real inverse function theorem applied to ·: by the Cauchy–Riemann equations the Jacobian of an analytic map is ·, which is nonzero",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§114★ Local Inverses",
+"line": 103,
+"term": "open set",
+"count": 1,
+"context": "uous there. By the sufficient conditions for differentiability (⟂), · is differentiable at every point of the open set ·, that is, analytic in ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§115★ Harmonic Conjugates",
+"line": 15,
+"term": "simply connected",
+"count": 7,
+"context": "ed to those of · by the Cauchy–Riemann equations is a *harmonic conjugate* of ·, and · is then analytic. On a simply connected domain every harmonic function has a harmonic conjugate, built as a line integral, so every harmonic function",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§115★ Harmonic Conjugates",
+"line": 19,
+"term": "laplace's equation",
+"count": 3,
+"context": "nic** in a domain · if it has continuous partial derivatives of the first and second order in · and satisfies Laplace's equation there, and that if · is analytic in ·, then",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§115★ Harmonic Conjugates",
+"line": 49,
+"term": "open set",
+"count": 1,
+"context": "s of the first and second order). By the sufficient conditions of ⟂, · is differentiable at each point of the open set ·, that is, analytic in ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§115★ Harmonic Conjugates",
+"line": 167,
+"term": "conservative",
+"count": 3,
+"context": "*B&C omits the proof (it cites Kaplan, Advanced Mathematics for Engineers); see ⟂ (the field · is conservative) and ⟂ (the potential is the line integral (7), with gradient (8)).*",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§115★ Harmonic Conjugates",
+"line": 230,
+"term": "punctured plane",
+"count": 1,
+"context": "> **(b)** Show that ·, which is harmonic in the punctured plane ·, has no harmonic conjugate there. So Theorem §115.4 fails without simple connectivity.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 15,
+"term": "laplace's equation",
+"count": 2,
+"context": "Boundary value problems for Laplace's equation (Dirichlet and Neumann problems) are central in applied mathematics: steady temperatures, electrostatic poten",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 15,
+"term": "simple region",
+"count": 1,
+"context": "then · is harmonic in the · plane. So a problem on a complicated region can be moved by an analytic map to a simple region (a half plane, a strip, a disk), solved there, and brought back. Two proofs are given: B&C's, via harmonic co",
+"targets": [
+"Calculus|§110 Green's Theorem#^def-110-2"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 15,
+"term": "boundary value problem",
+"count": 7,
+"context": "Boundary value problems for Laplace's equation (Dirichlet and Neumann problems) are central in applied mathematics: steady temperatur",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 15,
+"term": "change of variables",
+"count": 1,
+"context": "l fluid flows all lead to them. The key fact of this section is that harmonic functions stay harmonic under a change of variables by an analytic map: if · is harmonic in the · plane and · is analytic, then · is harmonic in the · plane. So",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 27,
+"term": "separation",
+"count": 1,
+"context": "> - The same definitions, with the normal derivative and the mixed (Robin) condition, solved by separation of variables in rectangles and disks: ⟂; uniqueness of the Dirichlet solution by the maximum principle, ⟂, an",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 27,
+"term": "separation of variables",
+"count": 1,
+"context": "> - The same definitions, with the normal derivative and the mixed (Robin) condition, solved by separation of variables in rectangles and disks: ⟂; uniqueness of the Dirichlet solution by the maximum principle, ⟂, and non-uniquen",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 29,
+"term": "simply connected",
+"count": 4,
+"context": "The domains most frequently met in applications are simply connected, and a harmonic function on a simply connected domain has a harmonic conjugate (⟂). So solutions of boundary",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 97,
+"term": "laplacian",
+"count": 2,
+"context": "> [!theorem] Proposition §116.2: The Laplacian Under an Analytic Change of Variables",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§116★ Transformations of Harmonic Functions",
+"line": 160,
+"term": "poisson equation",
+"count": 1,
+"context": "n ·, where · is a prescribed function. If an analytic function · maps a domain · onto ·, then · satisfies the Poisson equation",
+"targets": [
+"Fourier Series and PDEs|§37 Further Examples for a Rectangle#^def-37-1"
+]
+},
+{
+"note": "§117★ Transformations of Boundary Conditions",
+"line": 15,
+"term": "laplace's equation",
+"count": 2,
+"context": "⟂ showed that an analytic change of variables keeps Laplace's equation. For a boundary value problem the boundary conditions must be carried along too, and this section shows that",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§117★ Transformations of Boundary Conditions",
+"line": 15,
+"term": "boundary value problem",
+"count": 1,
+"context": "⟂ showed that an analytic change of variables keeps Laplace's equation. For a boundary value problem the boundary conditions must be carried along too, and this section shows that the two most common ones survi",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§117★ Transformations of Boundary Conditions",
+"line": 15,
+"term": "change of variables",
+"count": 1,
+"context": "⟂ showed that an analytic change of variables keeps Laplace's equation. For a boundary value problem the boundary conditions must be carried along too, and",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§117★ Transformations of Boundary Conditions",
+"line": 142,
+"term": "robin condition",
+"count": 1,
+"context": "> - Normal derivatives and the Dirichlet/Neumann/Robin conditions on a boundary: ⟂; the normal derivative as ·, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-7"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 15,
+"term": "laplace's equation",
+"count": 3,
+"context": "Chapter 10 uses conformal mapping to solve physical problems governed by Laplace's equation in two variables: heat conduction, electrostatics and fluid flow. This section sets up the first. Fourier's l",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 15,
+"term": "fourier's law",
+"count": 4,
+"context": "'s equation in two variables: heat conduction, electrostatics and fluid flow. This section sets up the first. Fourier's law says that heat flows down the temperature gradient; a balance of heat for a small element then shows that a s",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-2"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 15,
+"term": "neumann condition",
+"count": 1,
+"context": "nic conjugate are the lines along which the heat flows. An insulated edge is a line of flow, which is why the Neumann condition · of ⟂ is so common.",
+"targets": [
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-6"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 32,
+"term": "interior point",
+"count": 3,
+"context": "ources or sinks), and that · and its partial derivatives of the first and second order are continuous at each interior point. These, with (1), are the postulates of the mathematical theory of heat conduction.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 68,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> by the fundamental theorem of calculus in each variable and Fubini's theorem (the second partials are continuous). In the steady state with no sourc",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 68,
+"term": "fubini",
+"count": 2,
+"context": "> by the fundamental theorem of calculus in each variable and Fubini's theorem (the second partials are continuous). In the steady state with no sources this loss is · for every",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 75,
+"term": "green's theorem",
+"count": 1,
+"context": "d the discussion after it. The exact version above is the divergence theorem in the plane for the field ·, ⟂ (Green's theorem, normal form).",
+"targets": [
+"Calculus|§110 Green's Theorem#^thm-110-1",
+"Multivariable Analysis|Green's Theorem",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^thm-16-1"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 108,
+"term": "smooth curve",
+"count": 1,
+"context": "is · turned through ·. Where · is conformal its derivative · (⟂) is nonzero, so · and the level curve · is a smooth curve with normal · (implicit function theorem). Its tangent is perpendicular to ·, hence parallel to ·.",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-3",
+"Differentiable Manifolds|§29 Tangent Vectors as Velocities of Curves#^def-29-1"
+]
+},
+{
+"note": "§118★ Steady Temperatures",
+"line": 122,
+"term": "maximum principle",
+"count": 1,
+"context": "> [!remark] Remark: Other Interpretations; the Maximum Principle",
+"targets": [
+"Fourier Series and PDEs|Maximum Principle for Laplace's Equation",
+"Fourier Series and PDEs|§39 Potential in a Disk#^thm-39-5"
+]
+},
+{
+"note": "§119★ Steady Temperatures in a Half Plane",
+"line": 22,
+"term": "dirichlet problem",
+"count": 4,
+"context": "> **The Dirichlet problem.**",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§119★ Steady Temperatures in a Half Plane",
+"line": 87,
+"term": "fourier integral",
+"count": 1,
+"context": "> - The same Dirichlet problem by Fourier integrals: the half-plane Poisson formula ·, ⟂; its example with a single jump at · gives ·, the one-endpoint version o",
+"targets": [
+"Fourier Series and PDEs|§14 Fourier Integral#^def-14-1"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 15,
+"term": "separation",
+"count": 3,
+"context": "n a slab whose base is hot and whose sides are cold. The result is the closed form of the Fourier series that separation of variables produces for the same problem, and from it the isotherms and the heat flux through the faces fol",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 15,
+"term": "separation of variables",
+"count": 3,
+"context": "n a slab whose base is hot and whose sides are cold. The result is the closed form of the Fourier series that separation of variables produces for the same problem, and from it the isotherms and the heat flux through the faces follow by differ",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 15,
+"term": "fourier series",
+"count": 1,
+"context": "steady temperature in a slab whose base is hot and whose sides are cold. The result is the closed form of the Fourier series that separation of variables produces for the same problem, and from it the isotherms and the heat flux throu",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 15,
+"term": "heat flux",
+"count": 1,
+"context": "Fourier series that separation of variables produces for the same problem, and from it the isotherms and the heat flux through the faces follow by differentiation.",
+"targets": [
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-1"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 20,
+"term": "interior point",
+"count": 1,
+"context": "es · and ·; the first two are kept at temperature · and the third at temperature ·. Find the temperature · at interior points. (Equivalently: the temperatures in a thin plate ·, · with perfectly insulated faces; B&C's Fig. 156.)",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§120★ A Related Problem (Steady Temperatures in a Half Plane)",
+"line": 110,
+"term": "dirichlet problem",
+"count": 1,
+"context": "> Solve the Dirichlet problem",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§121★ Temperatures in a Quadrant",
+"line": 15,
+"term": "separation",
+"count": 2,
+"context": "ange type along a single edge: part of the edge is insulated (·) and the rest is held at a fixed temperature. Separation of variables cannot handle such mixed conditions, but a conformal map can, because both types survive the map",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§121★ Temperatures in a Quadrant",
+"line": 15,
+"term": "separation of variables",
+"count": 2,
+"context": "ange type along a single edge: part of the edge is insulated (·) and the rest is held at a fixed temperature. Separation of variables cannot handle such mixed conditions, but a conformal map can, because both types survive the map (⟂). The inv",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§122★ Electrostatic Potential",
+"line": 15,
+"term": "laplace's equation",
+"count": 3,
+"context": "tion of harmonic functions: electrostatics. In a region free of charges the electrostatic potential satisfies Laplace's equation, and when nothing varies along one axis it is a harmonic function of two variables, so every steady-temperatu",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§122★ Electrostatic Potential",
+"line": 41,
+"term": "superposition",
+"count": 1,
+"context": "*B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that · is harmonic in space away from the origin, is ⟂; in the plane the correspondi",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§122★ Electrostatic Potential",
+"line": 69,
+"term": "boundary value problem",
+"count": 1,
+"context": "> Boundary value problems for the potential · are the same mathematical problems as those for steady temperatures ·, and, as there, com",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§123★ Examples (Electrostatic Potential)",
+"line": 15,
+"term": "separation",
+"count": 3,
+"context": "re circular arcs through the two gaps. In the second, a logarithm maps a half annulus onto a rectangle, where separation of variables gives a series, and composing with the logarithm turns that series into the solution in the orig",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§123★ Examples (Electrostatic Potential)",
+"line": 15,
+"term": "separation of variables",
+"count": 3,
+"context": "re circular arcs through the two gaps. In the second, a logarithm maps a half annulus onto a rectangle, where separation of variables gives a series, and composing with the logarithm turns that series into the solution in the original region.",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§123★ Examples (Electrostatic Potential)",
+"line": 110,
+"term": "laplacian",
+"count": 1,
+"context": "of separation of variables, ⟂, the coefficients · being those of the sine series of the constant ·. The polar Laplacian that (9) satisfies directly is ⟂.",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§123★ Examples (Electrostatic Potential)",
+"line": 110,
+"term": "polar laplacian",
+"count": 1,
+"context": "ution of separation of variables, ⟂, the coefficients · being those of the sine series of the constant ·. The polar Laplacian that (9) satisfies directly is ⟂.",
+"targets": [
+"Fourier Series and PDEs|Laplacian in Polar Coordinates"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 15,
+"term": "simply connected",
+"count": 9,
+"context": "ls, and by Green's theorem the swirl per unit area at a point is the rotation ·. In an irrotational flow on a simply connected domain the velocity is the gradient of a single-valued velocity potential (the line-integral construction of",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 62,
+"term": "open set",
+"count": 1,
+"context": "For (3), apply Green's theorem (⟂; B&C's version is in ⟂) to ·, ·, which have continuous first partials on an open set containing · (no sources or sinks, and · lies in the domain because it is simply connected).",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 95,
+"term": "continuous function",
+"count": 2,
+"context": "> The equality is (3) divided by ·. The right side is the mean value of the continuous function · over the disk · of area ·. Given ·, continuity gives · with · on · for ·, and then",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 161,
+"term": "second partial derivatives",
+"count": 1,
+"context": "sible fluid has no sources or sinks, the velocity potential satisfies Laplace's equation ·, and its first and second partial derivatives are continuous: · is harmonic.",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-4"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 161,
+"term": "laplace's equation",
+"count": 1,
+"context": "e flow is irrotational and the incompressible fluid has no sources or sinks, the velocity potential satisfies Laplace's equation ·, and its first and second partial derivatives are continuous: · is harmonic.",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 178,
+"term": "fubini",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂, ⟂ (Fubini)",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§124★ Two-Dimensional Fluid Flow",
+"line": 188,
+"term": "punctured plane",
+"count": 1,
+"context": "· at every point ·. Yet on ·, · and the circulation is · for every ·. There is no contradiction with (3): the punctured plane is not simply connected, and the disk bounded by · contains the singular point ·. On a simply connected part,",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§125★ The Stream Function",
+"line": 19,
+"term": "simply connected",
+"count": 3,
+"context": "By ⟂, in a simply connected domain where the flow is irrotational the velocity",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§125★ The Stream Function",
+"line": 62,
+"term": "smooth curve",
+"count": 1,
+"context": "> Comparing with (2), ·, and ·. Where ·, · is · turned through · and is nonzero, so the streamline · is a smooth curve with normal · and tangent parallel to · (as in ⟂(b)). On a boundary arc that fluid cannot cross, the normal c",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-3",
+"Differentiable Manifolds|§29 Tangent Vectors as Velocities of Curves#^def-29-1"
+]
+},
+{
+"note": "§125★ The Stream Function",
+"line": 105,
+"term": "green's theorem",
+"count": 1,
+"context": "ield across a curve as the line integral of its normal component, · for ·, and its form for closed curves: ⟂ (Green's theorem, normal form). In the language of forms, · is a primitive of the flux form ·, which is closed exactly when th",
+"targets": [
+"Calculus|§110 Green's Theorem#^thm-110-1",
+"Multivariable Analysis|Green's Theorem",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^thm-16-1"
+]
+},
+{
+"note": "§125★ The Stream Function",
+"line": 154,
+"term": "interior point",
+"count": 1,
+"context": "> Show that at an interior point of a region of flow (under the assumptions of §124) the fluid pressure cannot be less than the pressure at al",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§127★ Mapping the Real Axis onto a Polygon",
+"line": 39,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "rivative of · may be computed along the real axis), and · is continuous since · is analytic. So for ·, by the fundamental theorem of calculus for complex-valued functions of a real variable,",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§127★ Mapping the Real Axis onto a Polygon",
+"line": 59,
+"term": "trace",
+"count": 1,
+"context": "By Proposition §127.1, · should be such that · jumps from one constant value to another at the points · as · traces out the · axis.",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§128★ Schwarz–Christoffel Transformation",
+"line": 15,
+"term": "limit at infinity",
+"count": 2,
+"context": "e; that antiderivative stays continuous at the · because the singularities · are integrable (·), and it has a limit at infinity because · decays like ·. The result is the Schwarz–Christoffel transformation, and the argument principle sho",
+"targets": [
+"Calculus|§11 Limits at Infinity; Horizontal Asymptotes#^def-11-1"
+]
+},
+{
+"note": "§128★ Schwarz–Christoffel Transformation",
+"line": 38,
+"term": "simply connected",
+"count": 3,
+"context": "· is analytic in the domain · obtained from the plane by removing the · closed rays ·, and ·. The domain · is simply connected (⟂): a simple closed contour in · misses each removed ray, and a ray is connected and unbounded, so it lies e",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§128★ Schwarz–Christoffel Transformation",
+"line": 76,
+"term": "cauchy criterion",
+"count": 1,
+"context": "· and from · to ·; they lie in · and miss ·. By the ML-inequality, ·, and · is arbitrary. So · satisfies the Cauchy criterion as · and has a limit there.",
+"targets": [
+"Single Variable Analysis|§14 Series#^def-14-3",
+"Single Variable Analysis|§32 The Definition of the Riemann Integral#^thm-32-4"
+]
+},
+{
+"note": "§128★ Schwarz–Christoffel Transformation",
+"line": 178,
+"term": "positive orientation",
+"count": 1,
+"context": "only at consecutive vertices, so distinct points of the axis (or ·) have distinct images on ·. (B&C takes the positive orientation of · from §127; it also comes out of the count below.)",
+"targets": [
+"Calculus|§110 Green's Theorem#^def-110-1"
+]
+},
+{
+"note": "§128★ Schwarz–Christoffel Transformation",
+"line": 180,
+"term": "interior point",
+"count": 2,
+"context": "> *The interior: counting solutions.* (B&C argues that the images of interior points lie to the left of the sides, since the angle at · between the axis and a segment into the half plane is betw",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§12★ Regions in the Complex Plane",
+"line": 15,
+"term": "bounded sets",
+"count": 1,
+"context": "antly: neighborhoods, interior and boundary points, open and closed sets, connectedness, domains and regions, bounded sets and accumulation points. Analytic functions are defined on open sets (⟂); the Cauchy–Goursat theorem and the",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§12★ Regions in the Complex Plane",
+"line": 15,
+"term": "simply connected",
+"count": 1,
+"context": "defined on open sets (⟂); the Cauchy–Goursat theorem and the existence of antiderivatives need connected and simply connected domains (⟂, ⟂); the maximum modulus principle is a statement about bounded closed regions (⟂); and the zeros",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§12★ Regions in the Complex Plane",
+"line": 15,
+"term": "closed set",
+"count": 4,
+"context": "the plane that the rest of the subject uses constantly: neighborhoods, interior and boundary points, open and closed sets, connectedness, domains and regions, bounded sets and accumulation points. Analytic functions are defined on",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "§12★ Regions in the Complex Plane",
+"line": 15,
+"term": "open set",
+"count": 4,
+"context": ", connectedness, domains and regions, bounded sets and accumulation points. Analytic functions are defined on open sets (⟂); the Cauchy–Goursat theorem and the existence of antiderivatives need connected and simply connected doma",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§12★ Regions in the Complex Plane",
+"line": 40,
+"term": "interior point",
+"count": 6,
+"context": "> - A point · is an **interior point** of · if there is some neighborhood of · that contains only points of ·.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§13 Functions and Mappings",
+"line": 30,
+"term": "punctured plane",
+"count": 1,
+"context": "function ·, or the function ·. Its domain of definition is the largest set on which the rule makes sense, the punctured plane ·.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§131★ Fluid Flow in a Channel through a Slit",
+"line": 19,
+"term": "parallel planes",
+"count": 1,
+"context": "Consider the two-dimensional steady flow between the parallel planes · and ·, when the fluid enters through a narrow slit along the line in the first plane that is perpendicular",
+"targets": [
+"Calculus|§84 Equations of Lines and Planes#^def-84-4"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "kernel",
+"count": 10,
+"context": "a circle from its values on the circle; subtracting the (zero) Cauchy integral at the inverse point turns the kernel into a real one, the Poisson kernel, and taking real parts gives the Poisson integral formula for a harmonic",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "separation",
+"count": 2,
+"context": "ichlet problem in ⟂. The same formula is derived in Fourier Series and PDEs by summing the series solution of separation of variables (the two derivations are linked below); physically, it gives the potential inside a long cylinde",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "separation of variables",
+"count": 2,
+"context": "ichlet problem in ⟂. The same formula is derived in Fourier Series and PDEs by summing the series solution of separation of variables (the two derivations are linked below); physically, it gives the potential inside a long cylinder with prescr",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "fourier series",
+"count": 1,
+"context": "n value one, which is what makes the formula solve the Dirichlet problem in ⟂. The same formula is derived in Fourier Series and PDEs by summing the series solution of separation of variables (the two derivations are linked below); ph",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "boundary value problem",
+"count": 1,
+"context": "Chapter 12 develops integral formulas that solve boundary value problems for harmonic functions. The Cauchy integral formula gives the values of an analytic function inside a circle",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 15,
+"term": "dirichlet problem",
+"count": 1,
+"context": "in a disk. The kernel is positive, harmonic and has mean value one, which is what makes the formula solve the Dirichlet problem in ⟂. The same formula is derived in Fourier Series and PDEs by summing the series solution of separation of",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 34,
+"term": "interior point",
+"count": 1,
+"context": "> If ·, then ·: the inverse of an interior point is exterior. (For ·, inverse points were used in ⟂.)",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 47,
+"term": "law of cosines",
+"count": 2,
+"context": "> where, by the law of cosines,",
+"targets": [
+"Calculus|§119 Trigonometry#^thm-119-11"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 107,
+"term": "geometric series",
+"count": 1,
+"context": "y separation of variables (⟂), substitute the Fourier coefficients into the series, and sum the kernel · as a geometric series. Here the kernel comes from the Cauchy integral formula and the inverse point, with no series at all; ⟂ recov",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 108,
+"term": "green's function",
+"count": 1,
+"context": "> - The kernel is, up to the factor ·, the normal derivative of the Green's function of the disk; the general representation of a harmonic function by its boundary values comes from Green's seco",
+"targets": [
+"Fourier Series and PDEs|Green's Function for Boundary Value Problems",
+"Fourier Series and PDEs|§5★ Green's Functions#^def-5-2"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 110,
+"term": "simply connected",
+"count": 1,
+"context": "isk ·, not only for the real part of a given ·: such a · is harmonic in a slightly larger open disk, which is simply connected, so it has a harmonic conjugate · there (⟂), and · is analytic inside and on ·.",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§134★ Poisson Integral Formula",
+"line": 145,
+"term": "periodic function",
+"count": 1,
+"context": "> **(d)** · is an even periodic function of ·, with period ·;",
+"targets": [
+"Calculus|§29 Summary of Curve Sketching#^def-29-1",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 15,
+"term": "kernel",
+"count": 9,
+"context": "lowed (a cylinder split into two halves at different potentials); the proof uses only three properties of the kernel: it is positive, it has mean value one, and away from · it is small near the circle. Expanding the kernel in",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 15,
+"term": "separation",
+"count": 3,
+"context": "the kernel in a cosine series gives the solution as a Fourier series damped by ·, which is the form found by separation of variables in Fourier Series and PDEs.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 15,
+"term": "separation of variables",
+"count": 3,
+"context": "the kernel in a cosine series gives the solution as a Fourier series damped by ·, which is the form found by separation of variables in Fourier Series and PDEs.",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 15,
+"term": "fourier series",
+"count": 4,
+"context": "and away from · it is small near the circle. Expanding the kernel in a cosine series gives the solution as a Fourier series damped by ·, which is the form found by separation of variables in Fourier Series and PDEs.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 15,
+"term": "dirichlet problem",
+"count": 2,
+"context": "harmonic in the disk and tends to · along each radius at every point where · is continuous. So it solves the Dirichlet problem for the disk, with discontinuous boundary data allowed (a cylinder split into two halves at different potenti",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 17,
+"term": "integral transform",
+"count": 4,
+"context": "## The Poisson Integral Transform",
+"targets": [
+"Ordinary Differential Equations|§21 Definition of the Laplace Transform#^def-21-3"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 20,
+"term": "continuous function",
+"count": 2,
+"context": "> Let · be a piecewise continuous function (⟂) of · on ·. The **Poisson integral transform** of · is",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 46,
+"term": "laplace's equation",
+"count": 1,
+"context": "e order of integration and differentiation with respect to · and · can be interchanged; and since · satisfies Laplace's equation in polar coordinates (⟂(c); ⟂, Exercise 1)",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 150,
+"term": "boundary value problem",
+"count": 1,
+"context": "136, and notes that these results are obtained, for ·, by separation of variables in its *Fourier Series and Boundary Value Problems*; that derivation is ⟂.)",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 166,
+"term": "geometric series",
+"count": 2,
+"context": "> Let ·. (This is the sum in Exercise 7(b) of B&C's Sec. 68; for · it is ⟂.) The geometric series · converges since ·, and its real part is",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 202,
+"term": "integrable function",
+"count": 1,
+"context": "by · also converges uniformly (its tail is at most · times the tail of (7)). A uniformly convergent series of integrable functions can be integrated term by term, so",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 202,
+"term": "integrable functions",
+"count": 1,
+"context": "by · also converges uniformly (its tail is at most · times the tail of (7)). A uniformly convergent series of integrable functions can be integrated term by term, so",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 218,
+"term": "trigonometric polynomial",
+"count": 1,
+"context": "> 3. **Series.** If · is a trigonometric polynomial, or its Fourier coefficients are easy, use (8)–(10): multiply the ·th harmonic by ·. Then · converts the answ",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-3"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 229,
+"term": "orthogonality",
+"count": 1,
+"context": "> Since ·, orthogonality gives in (9)–(10): ·, ·, and all other coefficients are ·. By (8),",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§135★ Dirichlet Problem for a Disk",
+"line": 263,
+"term": "mean value theorem",
+"count": 1,
+"context": "> For fixed · and ·, · is continuous in · and ·, so by the mean value theorem for definite integrals there is · with · and",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§136★ Examples (Dirichlet Problem for a Disk)",
+"line": 15,
+"term": "kernel",
+"count": 2,
+"context": "alues that are constant on arcs, the Poisson integral can be evaluated with an explicit antiderivative of the kernel, and the answer comes out as an arctangent whose level curves are circular arcs through the ends of the arcs;",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§136★ Examples (Dirichlet Problem for a Disk)",
+"line": 15,
+"term": "dirichlet problem",
+"count": 1,
+"context": "These examples use the two forms of the solution of the Dirichlet problem for a disk from ⟂. For boundary values that are constant on arcs, the Poisson integral can be evaluated with",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§136★ Examples (Dirichlet Problem for a Disk)",
+"line": 95,
+"term": "fourier series",
+"count": 1,
+"context": "> - The same problem, rotated by a quarter turn (· on the right half), is ⟂, solved there by the Fourier series of the boundary values and summed to ·; its figure shows the circular level curves.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§137★ Related Boundary Value Problems",
+"line": 15,
+"term": "dirichlet problem",
+"count": 3,
+"context": "xtended oddly across the horizontal diameter, the Poisson integral vanishes on the diameter, which solves the Dirichlet problem for a half disk; an even extension makes the normal derivative vanish there instead (an insulated or flow-fre",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§137★ Related Boundary Value Problems",
+"line": 20,
+"term": "integral transform",
+"count": 1,
+"context": "> Let · be piecewise continuous on ·, and extend it to · by ·. Then the Poisson integral transform (1) of ⟂ becomes",
+"targets": [
+"Ordinary Differential Equations|§21 Definition of the Laplace Transform#^def-21-3"
+]
+},
+{
+"note": "§137★ Related Boundary Value Problems",
+"line": 91,
+"term": "laplace's equation",
+"count": 1,
+"context": "> Let ·. Then ·, · and ·, all evaluated at ·, so the polar form of Laplace's equation (⟂, Exercise 1)",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§137★ Related Boundary Value Problems",
+"line": 116,
+"term": "kernel",
+"count": 3,
+"context": "> Thus (4) solves the Dirichlet problem for the region exterior to the circle ·. The kernel · is negative when ·, and",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§138★ Schwarz Integral Formula",
+"line": 15,
+"term": "kernel",
+"count": 6,
+"context": "conjugate point · plays the role of the inverse point: adding or subtracting the integral at · produces real kernels, and taking real and imaginary parts gives the Schwarz integral formula (the Poisson integral formula for the",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§138★ Schwarz Integral Formula",
+"line": 112,
+"term": "separation",
+"count": 1,
+"context": "> - The same half-plane formula (7) is reached in Fourier Series and PDEs by separation of variables: the product solutions ·, · are superposed in a Fourier integral, and the ·-integral is summed u",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§138★ Schwarz Integral Formula",
+"line": 112,
+"term": "separation of variables",
+"count": 1,
+"context": "> - The same half-plane formula (7) is reached in Fourier Series and PDEs by separation of variables: the product solutions ·, · are superposed in a Fourier integral, and the ·-integral is summed under the inte",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§138★ Schwarz Integral Formula",
+"line": 112,
+"term": "fourier series",
+"count": 1,
+"context": "> - The same half-plane formula (7) is reached in Fourier Series and PDEs by separation of variables: the product solutions ·, · are superposed in a Fourier integral, and the",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§138★ Schwarz Integral Formula",
+"line": 112,
+"term": "fourier integral",
+"count": 1,
+"context": "reached in Fourier Series and PDEs by separation of variables: the product solutions ·, · are superposed in a Fourier integral, and the ·-integral is summed under the integral sign; see ⟂. Here it comes from the Cauchy integral formula,",
+"targets": [
+"Fourier Series and PDEs|§14 Fourier Integral#^def-14-1"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 15,
+"term": "kernel",
+"count": 3,
+"context": "f plane that takes the boundary values at every point of continuity. The proof substitutes ·, which turns the kernel into the uniform weight · on ·, and then splits the · interval as in the disk case. Odd and even extensions g",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 15,
+"term": "integral transform",
+"count": 3,
+"context": "hod, as the Poisson formula was in ⟂: for any bounded boundary function with finitely many jumps, the Schwarz integral transform is a bounded harmonic function in the upper half plane that takes the boundary values at every point of conti",
+"targets": [
+"Ordinary Differential Equations|§21 Definition of the Laplace Transform#^def-21-3"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 15,
+"term": "even extensions",
+"count": 1,
+"context": "turns the kernel into the uniform weight · on ·, and then splits the · interval as in the disk case. Odd and even extensions give the quarter plane; physically, this covers steady temperatures in a half plane or quadrant, and the pote",
+"targets": [
+"Fourier Series and PDEs|§7 Arbitrary Period and Half-Range Expansions#^def-7-3"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 30,
+"term": "dirichlet problem",
+"count": 3,
+"context": "> [!theorem] Theorem §139.1: Solution of the Dirichlet Problem for a Half Plane",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 46,
+"term": "second partial derivatives",
+"count": 1,
+"context": "the integrand, whenever ·. (The uniform bound that makes this work: for ·, ·, the integrand and its first and second partial derivatives in · and · are bounded by ·, which is integrable, so differentiation under the integral sign is justified by",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-4"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 46,
+"term": "laplace's equation",
+"count": 2,
+"context": "ce, ⟂.) The kernel · is the imaginary part of a function analytic in · for ·, so it is harmonic and satisfies Laplace's equation in · and · (⟂). Since differentiation and integration may be interchanged, · satisfies Laplace's equation too",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§139★ Dirichlet Problem for a Half Plane",
+"line": 81,
+"term": "fourier integral",
+"count": 1,
+"context": "> - ⟂ reaches (1) from a Fourier integral and states it; Theorem §139.1 is the proof that it solves the Dirichlet problem for bounded data with jumps.",
+"targets": [
+"Fourier Series and PDEs|§14 Fourier Integral#^def-14-1"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 15,
+"term": "kernel",
+"count": 3,
+"context": "rescribed on the boundary instead of its values: for steady temperatures, the heat flux through the edge. The kernel is now a logarithm, ·, whose radial derivative turns out to be ·, so the Neumann problem is reduced to the Po",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 15,
+"term": "heat flux",
+"count": 1,
+"context": "ve of the harmonic function is prescribed on the boundary instead of its values: for steady temperatures, the heat flux through the edge. The kernel is now a logarithm, ·, whose radial derivative turns out to be ·, so the Neumann",
+"targets": [
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-1"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 102,
+"term": "continuous function",
+"count": 1,
+"context": "> By (1) and (2) of ⟂, applied to the piecewise continuous function ·, the last integral tends to · as · at each · where · is continuous, and ·. This is (5).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 209,
+"term": "second partial derivatives",
+"count": 1,
+"context": "and · for large ·). For · in a closed disk · in the upper half plane there is · with · and with the first and second partial derivatives of · in · and · bounded by ·. Since ·, · is integrable over the line, so the integral (10) converges and may",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-4"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 209,
+"term": "laplace's equation",
+"count": 1,
+"context": "nverges and may be differentiated twice under the integral sign (dominated convergence, ⟂). Hence · satisfies Laplace's equation.",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 211,
+"term": "integral transform",
+"count": 1,
+"context": "* Differentiating the second form of (10) under the integral sign, ·, which gives (11). Thus · is the Schwarz integral transform of · (⟂), and since · is bounded with finitely many jumps, ⟂ gives (12).",
+"targets": [
+"Ordinary Differential Equations|§21 Definition of the Laplace Transform#^def-21-3"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 247,
+"term": "fourier's law",
+"count": 2,
+"context": "> 4. **Fluxes.** In heat problems the normal derivative is · by Fourier's law (⟂); to find the flux through another edge, differentiate the integral under the integral sign.",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-2"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 287,
+"term": "compact",
+"count": 1,
+"context": "pointing into the plate (·) on the edge ·: · on · and · for ·. So · on · and · for ·; extend it oddly. It has compact support, so (9) holds, and (13) gives",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§140★ Neumann Problems",
+"line": 307,
+"term": "differentiation of the integral",
+"count": 1,
+"context": "the plate there is ·. It is infinite at the corner and decays like · far up the edge. With · and ·, numerical differentiation of the integral gives ·. (As a check on the total: ·, all the heat that enters through ·.)",
+"targets": [
+"Measure Theory|§18 Differentiation Theory#^thm-18-26"
+]
+},
+{
+"note": "§15 Limits",
+"line": 81,
+"term": "hausdorff",
+"count": 1,
+"context": "> - The same argument for sequences of real numbers, ⟂. It works in any Hausdorff space, the plane being one: ⟂ (for sequences; disjoint neighborhoods of · cannot both contain ·).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§15 Limits",
+"line": 83,
+"term": "interior point",
+"count": 1,
+"context": "finition §15.1 requires · to be defined in a deleted neighborhood of ·, which is always the case when · is an interior point (⟂) of a region on which · is defined. Points on the edge of the region need a modified definition.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§15 Limits",
+"line": 252,
+"term": "limit laws",
+"count": 1,
+"context": "> 1. **Try the limit laws first** (⟂): if · is built from continuous pieces and no denominator tends to ·, the limit is the value. If a",
+"targets": [
+"Calculus|Limit Laws",
+"Calculus|Limit Laws"
+]
+},
+{
+"note": "§16 Theorems on Limits",
+"line": 14,
+"term": "differentiation rules",
+"count": 1,
+"context": "where it is defined is its value there. These rules are the basis of the continuity theorems of ⟂ and of the differentiation rules of ⟂.",
+"targets": [
+"Calculus|§87 Derivatives and Integrals of Vector Functions#^thm-87-2"
+]
+},
+{
+"note": "§16 Theorems on Limits",
+"line": 172,
+"term": "limit laws",
+"count": 2,
+"context": "*Uses:* ⟂, ⟂ (limit laws in two variables), ⟂, ⟂ (·)",
+"targets": [
+"Calculus|Limit Laws",
+"Calculus|Limit Laws"
+]
+},
+{
+"note": "§16 Theorems on Limits",
+"line": 175,
+"term": "norm",
+"count": 1,
+"context": "ement that a function into · has a limit exactly when each coordinate does, because ·; the same comparison of norms is used for sequences in ⟂. The rigorous home of the real limit laws used here is ⟂ (⟂ for products, ⟂ for qu",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§17 Limits Involving the Point at Infinity",
+"line": 53,
+"term": "homeomorphism",
+"count": 1,
+"context": "> - The extended plane is the one-point compactification of ·, ⟂, and stereographic projection is the homeomorphism with · of ⟂. There the neighborhoods of · are the complements of compact sets. Every compact · is bounded, he",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§17 Limits Involving the Point at Infinity",
+"line": 53,
+"term": "compact",
+"count": 2,
+"context": "tereographic projection is the homeomorphism with · of ⟂. There the neighborhoods of · are the complements of compact sets. Every compact · is bounded, hence inside some disk ·, so B&C's neighborhoods · form a base for the same",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§18 Continuity",
+"line": 48,
+"term": "metric space",
+"count": 1,
+"context": "> - The same definition for maps between metric spaces, ⟂, with · and ·; for real functions of two variables, ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-3",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-1"
+]
+},
+{
+"note": "§18 Continuity",
+"line": 48,
+"term": "metric spaces",
+"count": 1,
+"context": "> - The same definition for maps between metric spaces, ⟂, with · and ·; for real functions of two variables, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§18 Continuity",
+"line": 239,
+"term": "heine–borel",
+"count": 1,
+"context": "> - The extreme value theorem for a closed bounded set in · is ⟂; its rigorous proof combines Heine–Borel, ⟂ (closed and bounded in · means compact), with ⟂ (the continuous image of a compact set is compact). The on",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^thm-6-4",
+"Topology|Heine–Borel Theorem"
+]
+},
+{
+"note": "§19 Derivatives",
+"line": 84,
+"term": "limits are unique",
+"count": 1,
+"context": "> and (4) gives ·. So the limit must be · if it exists. Since limits are unique (⟂), · does not exist; and since · was arbitrary, it exists nowhere. (The quotient (4) is the function · of ⟂",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^prop-10-5"
+]
+},
+{
+"note": "§2 Basic Algebraic Properties",
+"line": 77,
+"term": "field axioms",
+"count": 1,
+"context": "> - These, with the identities and inverses below, are the field axioms. Linear Algebra proves the same list the same way, by reduction to ·: ⟂.",
+"targets": [
+"Single Variable Analysis|§3 The Set ℝ of Real Numbers#^def-3-1"
+]
+},
+{
+"note": "§2 Basic Algebraic Properties",
+"line": 154,
+"term": "cramer's rule",
+"count": 1,
+"context": "> Its determinant is ·, which is positive because · means ·. So the system has exactly one solution, and by Cramer's rule",
+"targets": [
+"Applied Linear Algebra|Cramer's Rule",
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1"
+]
+},
+{
+"note": "§20 Rules for Differentiation",
+"line": 14,
+"term": "differentiation rules",
+"count": 2,
+"context": "The definition of the derivative in ⟂ is formally the same as in calculus, with · in place of ·, so the basic differentiation rules carry over with the same proofs: constants, sums, products, quotients, integer powers and the chain rule. Onl",
+"targets": [
+"Calculus|§87 Derivatives and Integrals of Vector Functions#^thm-87-2"
+]
+},
+{
+"note": "§20 Rules for Differentiation",
+"line": 311,
+"term": "cofactor",
+"count": 1,
+"context": "> Directly: ·, and the cofactor at · is ·.",
+"targets": [
+"Applied Linear Algebra|§20 Introduction to Determinants#^def-20-3"
+]
+},
+{
+"note": "§20 Rules for Differentiation",
+"line": 318,
+"term": "mean value theorem",
+"count": 2,
+"context": "> - The real l'Hôpital rule, which needs the mean value theorem and allows ·, · to be evaluated near · rather than at it: ⟂. The complex version here is the simple case wher",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§22 Examples (Cauchy–Riemann Equations)",
+"line": 102,
+"term": "partial derivatives at a point",
+"count": 1,
+"context": "> - The same phenomenon for a real function of two variables: partial derivatives at a point say nothing about approaches along other directions, ⟂ (· has both partials · at the origin and is not differ",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-1"
+]
+},
+{
+"note": "§23 Sufficient Conditions for Differentiability",
+"line": 129,
+"term": "open set",
+"count": 1,
+"context": "s the theorem that continuous partials imply differentiability, ⟂ (stated there for partials continuous on an open set; the proof above needs continuity only at the point). Equations (2)–(3) say that · and · are differentiable a",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§23 Sufficient Conditions for Differentiability",
+"line": 130,
+"term": "jacobian matrix",
+"count": 1,
+"context": "> - With ·, the Cauchy–Riemann equations say that the Jacobian matrix of · at · is ·, a rotation–scaling matrix, ⟂: the linear part of · is multiplication by ·, a rotation through",
+"targets": [
+"Multivariable Analysis|§13 The Inverse Function Theorem#^def-13-1"
+]
+},
+{
+"note": "§24★ Polar Coordinates",
+"line": 96,
+"term": "laplacian",
+"count": 1,
+"context": "> - The same chain-rule computation, carried one order further, turns the Laplacian into polar form, ⟂; with (6) it shows that the components of an analytic function satisfy · (B&C's Sec. 27, E",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§24★ Polar Coordinates",
+"line": 166,
+"term": "open set",
+"count": 2,
+"context": "> (locally · differs from · or · by a constant). The polar description of the neighborhood is the open set · of pairs · with · and ·, which contains ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§24★ Polar Coordinates",
+"line": 220,
+"term": "root function",
+"count": 1,
+"context": "> of the square root function · has a derivative everywhere in its domain of definition. Here",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6"
+]
+},
+{
+"note": "§24★ Polar Coordinates",
+"line": 232,
+"term": "continuous function",
+"count": 1,
+"context": "> and the partial derivatives are continuous on the domain (an open set, on which · is a continuous function of ·), Theorem §24.3 shows that · exists at each point where · is defined, and",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§25 Analytic Functions",
+"line": 14,
+"term": "open set",
+"count": 7,
+"context": "a curve, has no useful structure; the theory of complex variables is about functions differentiable on whole open sets. Such functions are called analytic. This section defines analytic functions, entire functions and singular p",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§25 Analytic Functions",
+"line": 89,
+"term": "zero derivative means constant",
+"count": 1,
+"context": "## Zero Derivative Means Constant",
+"targets": [
+"Calculus|§26 The Mean Value Theorem#^thm-26-3"
+]
+},
+{
+"note": "§25 Analytic Functions",
+"line": 117,
+"term": "gradient",
+"count": 1,
+"context": "> where · is the gradient vector (2). (Formula (1) requires · to be differentiable; it is, because its partial derivatives exist and ar",
+"targets": [
+"Calculus|§95 Directional Derivatives and the Gradient Vector#^def-95-2",
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§25 Analytic Functions",
+"line": 117,
+"term": "zero vector",
+"count": 1,
+"context": "nuous, being identically zero, throughout the open set ·.) Because · and · are zero everywhere in ·, · is the zero vector at all points of ·, and · along ·. A function of the single variable · with zero derivative on an interval is",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-1"
+]
+},
+{
+"note": "§26 Further Examples (Analytic Functions)",
+"line": 14,
+"term": "differentiation rules",
+"count": 2,
+"context": "ere are two ways to decide where a function is analytic. A function given by a formula in · is handled by the differentiation rules, ⟂ and ⟂: it is analytic except at the zeros of denominators. A function given by its components · and · is h",
+"targets": [
+"Calculus|§87 Derivatives and Integrals of Vector Functions#^thm-87-2"
+]
+},
+{
+"note": "§26 Further Examples (Analytic Functions)",
+"line": 20,
+"term": "open set",
+"count": 1,
+"context": "partials, check that they are continuous, and check the Cauchy–Riemann equations. If they hold throughout an open set, · is analytic there and · (Theorem §23.1). If they hold only on a curve or at isolated points, · is analytic",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§26 Further Examples (Analytic Functions)",
+"line": 21,
+"term": "higher derivatives",
+"count": 1,
+"context": "> 3. **Higher derivatives:** write · and repeat step 2 (Example §26.2).",
+"targets": [
+"Calculus|§13 The Derivative as a Function#^def-13-5"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 15,
+"term": "laplace's equation",
+"count": 2,
+"context": "Harmonic functions, the solutions of Laplace's equation ·, describe steady temperatures in plates, electrostatic potentials in charge-free regions and velocity poten",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 33,
+"term": "separation",
+"count": 1,
+"context": "> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: ⟂. The Laplacian in · and Green's identities: ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 33,
+"term": "separation of variables",
+"count": 2,
+"context": "> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: ⟂. The Laplacian in · and Green's identities: ⟂.",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 33,
+"term": "green's identities",
+"count": 1,
+"context": "n the PDE course, solved by separation of variables in rectangles, slots and disks: ⟂. The Laplacian in · and Green's identities: ⟂.",
+"targets": [
+"Multivariable Analysis|Green's First Identity"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 77,
+"term": "clairaut",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂, ⟂, ⟂ (Schwarz–Clairaut)",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 80,
+"term": "simply connected",
+"count": 1,
+"context": "urce of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is ⟂. T",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§27★ Harmonic Functions",
+"line": 210,
+"term": "interior point",
+"count": 1,
+"context": "> (Alternatively: · while · for ·, so · has a maximum at an interior point; by the maximum modulus principle, ⟂, · would be constant, and then · could not equal the nonconstant ·.)",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 35,
+"term": "continuous function",
+"count": 1,
+"context": "· is a closed set disjoint from ·, because · and · is open. The distance from a point · to the boundary is a continuous function of ·, positive on ·, so it attains a positive minimum on ·.)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 35,
+"term": "closed set",
+"count": 2,
+"context": "itive number. (B&C takes for granted that ·; here is why. · is closed and bounded, and the boundary of · is a closed set disjoint from ·, because · and · is open. The distance from a point · to the boundary is a continuous functio",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 35,
+"term": "open set",
+"count": 2,
+"context": "> **A polygonal line and a radius.** Since · is a connected open set (⟂), there is a polygonal line ·, consisting of a finite number of line segments joined end to end and lying",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 63,
+"term": "heine–borel",
+"count": 1,
+"context": "e standard fact that a compact set and a disjoint closed set are at positive distance; compactness of · is ⟂ (Heine–Borel). The propagation step is a connectedness argument in disguise: the set where · vanishes identically nearby i",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^thm-6-4",
+"Topology|Heine–Borel Theorem"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 63,
+"term": "compactness",
+"count": 1,
+"context": "> - The \"·\" step is the standard fact that a compact set and a disjoint closed set are at positive distance; compactness of · is ⟂ (Heine–Borel). The propagation step is a connectedness argument in disguise: the set where · vanish",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§28★ Uniquely Determined Analytic Functions",
+"line": 84,
+"term": "limit point",
+"count": 1,
+"context": "> If two functions · and · are analytic in the same domain · and if · on a subset of · that has a limit point · in ·, then · everywhere in ·.",
+"targets": [
+"Topology|§7 Interior and Closure#^def-7-3"
+]
+},
+{
+"note": "§3 Further Algebraic Properties",
+"line": 16,
+"term": "zero products",
+"count": 1,
+"context": "## Zero Products, Subtraction and Division",
+"targets": [
+"Logic and Proofs|§4 Proof by Contradiction#^prop-4-4"
+]
+},
+{
+"note": "§3 Further Algebraic Properties",
+"line": 117,
+"term": "inverse is unique",
+"count": 1,
+"context": "> Since · (Theorem §3.1), its inverse is unique (⟂), so ·. By (9) this is (11).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-60"
+]
+},
+{
+"note": "§3 Further Algebraic Properties",
+"line": 199,
+"term": "binomial theorem",
+"count": 1,
+"context": "> - The real binomial theorem, with the same induction: ⟂. The proof uses only the commutative, associative and distributive laws, so it ho",
+"targets": [
+"Logic and Proofs|Binomial Theorem"
+]
+},
+{
+"note": "§30 The Exponential Function",
+"line": 172,
+"term": "punctured plane",
+"count": 1,
+"context": "axis, · to the positive real axis, and · to the negative real axis). The strip is carried one to one onto the punctured plane ·, and each further strip of height · covers it again.*",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§31 The Logarithmic Function",
+"line": 58,
+"term": "logarithmic function",
+"count": 1,
+"context": "> [!definition] Definition §31.1: The Logarithmic Function",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-11"
+]
+},
+{
+"note": "§32 Examples (The Logarithmic Function)",
+"line": 66,
+"term": "laws of logarithms",
+"count": 1,
+"context": "## Which Laws of Logarithms Survive",
+"targets": [
+"Calculus|§121 The Logarithm Defined as an Integral#^thm-121-2",
+"Calculus|§5 Inverse Functions and Logarithms#^thm-5-5"
+]
+},
+{
+"note": "§32 Examples (The Logarithmic Function)",
+"line": 120,
+"term": "odd integers",
+"count": 1,
+"context": "it may replace the principal one.) As · runs through the integers, · runs through the even and · through the odd integers, so together",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^prop-11-11"
+]
+},
+{
+"note": "§33 Branches and Derivatives of Logarithms",
+"line": 69,
+"term": "continuous function",
+"count": 2,
+"context": "since for ·, ·, the quotient is · with ·, and the denominator · vanishes only for real ·. The right side is a continuous function of ·, and · is a continuous function of ·; so · is continuous on the domain.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§33 Branches and Derivatives of Logarithms",
+"line": 101,
+"term": "inverse function",
+"count": 1,
+"context": "> - The derivative · restricts on the positive real axis to ·, ⟂. The real proof differentiates an inverse function; the same route works here, ⟂.",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§34 Some Identities Involving Logarithms",
+"line": 245,
+"term": "division with remainder",
+"count": 1,
+"context": "> **Comparison.** Every integer · can be written uniquely as · with · an integer and · (division with remainder), and every such · is an integer. So the two sets of values coincide:",
+"targets": [
+"Group Theory|Division Algorithm"
+]
+},
+{
+"note": "§36 Examples (The Power Function)",
+"line": 20,
+"term": "lowest terms",
+"count": 1,
+"context": "> 4. Count: for · in lowest terms the values repeat with period · in the index, so there are · of them; for irrational or nonreal · there are i",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-2"
+]
+},
+{
+"note": "§40★ Inverse Trigonometric and Hyperbolic Functions",
+"line": 15,
+"term": "inverse function",
+"count": 4,
+"context": "· is a quadratic equation for ·, and solving it and taking logarithms expresses · as a logarithm: ·. All six inverse functions arise this way. They are multiple-valued, with infinitely many values at each point, and become single-valued",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§40★ Inverse Trigonometric and Hyperbolic Functions",
+"line": 15,
+"term": "inverse sine",
+"count": 2,
+"context": "Their derivatives are the formulas of calculus, with the sign of the square root now tied to the branch. The inverse sine is the conformal map of ⟂ and of the flows through slits in Chapter 10.",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-5"
+]
+},
+{
+"note": "§40★ Inverse Trigonometric and Hyperbolic Functions",
+"line": 101,
+"term": "inverse cosine",
+"count": 1,
+"context": "## Inverse Cosine and Inverse Tangent",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-6"
+]
+},
+{
+"note": "§40★ Inverse Trigonometric and Hyperbolic Functions",
+"line": 101,
+"term": "inverse tangent",
+"count": 1,
+"context": "## Inverse Cosine and Inverse Tangent",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-7"
+]
+},
+{
+"note": "§40★ Inverse Trigonometric and Hyperbolic Functions",
+"line": 145,
+"term": "logarithmic function",
+"count": 1,
+"context": "The functions · and · are also multiple-valued. When specific branches of the square root and logarithmic functions are used, all three inverse functions become single-valued and analytic, because they are then compositions o",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-11"
+]
+},
+{
+"note": "§41 Derivatives of Functions w(t)",
+"line": 14,
+"term": "rules for sums",
+"count": 1,
+"context": "x-valued functions · of a *real* variable ·. The derivative is taken component by component, and the familiar rules for sums, products and constant multiples, and the rule ·, follow by applying real calculus to · and ·. One rule does",
+"targets": [
+"Calculus|§120 Sigma Notation#^thm-120-1"
+]
+},
+{
+"note": "§41 Derivatives of Functions w(t)",
+"line": 129,
+"term": "characteristic equation",
+"count": 1,
+"context": "> - The same rule, proved the same way, is what makes · with a complex root · of the characteristic equation a solution of a linear ODE: ⟂.",
+"targets": [
+"Applied Linear Algebra|Eigenvalues Are the Roots of the Characteristic Equation",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-3",
+"Ordinary Differential Equations|Constant-Coefficient Second-Order Equations",
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4"
+]
+},
+{
+"note": "§41 Derivatives of Functions w(t)",
+"line": 156,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "is lost, but the *inequality* that is usually derived from it survives. If · is continuous on ·, then by the fundamental theorem of calculus for · (⟂) and the inequality · (⟂),",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§42 Definite Integrals of Functions w(t)",
+"line": 14,
+"term": "mean value theorem",
+"count": 1,
+"context": "al, so these rules are used in every later computation. As with derivatives, not everything carries over: the mean value theorem for integrals fails. The examples also show the most useful trick of the section, computing two real integral",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§42 Definite Integrals of Functions w(t)",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 3,
+"context": "fined component by component, so linearity (now with complex constants), additivity over subintervals and the fundamental theorem of calculus carry over from real calculus. Every contour integral of ⟂ is an integral of this kind over a parameter inter",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§42 Definite Integrals of Functions w(t)",
+"line": 37,
+"term": "continuous function",
+"count": 1,
+"context": "> [!definition] Definition §42.2: Piecewise Continuous Function",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§42 Definite Integrals of Functions w(t)",
+"line": 177,
+"term": "orthogonality",
+"count": 1,
+"context": "> [!example] Example §42.4: Orthogonality of the Exponentials e^(inθ)",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§43 Contours",
+"line": 14,
+"term": "parametrization",
+"count": 2,
+"context": "mooth arcs joined end to end, so polygons and circles are contours. Arc length turns out not to depend on the parametrization, and the same computation will show in ⟂ that contour integrals do not either. The section ends with the Jord",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§43 Contours",
+"line": 25,
+"term": "continuous function",
+"count": 5,
+"context": "> where · and · are continuous functions of the real parameter ·. This is a continuous mapping of the interval · into the plane, and the image points",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§43 Contours",
+"line": 119,
+"term": "substitution rule",
+"count": 3,
+"context": "Two facts about such changes of parameter are used repeatedly: the substitution rule for integrals of ·, and the chain rule for ·. The text relies on both, so they are boxed here.",
+"targets": [
+"Calculus|Substitution Rule"
+]
+},
+{
+"note": "§43 Contours",
+"line": 141,
+"term": "bijection",
+"count": 1,
+"context": "ion (use the one-sided limits there), and the corresponding ·-interval is ·, since · is a strictly increasing bijection. Apply the continuous case on each piece and add, by ⟂(d); (a) is handled in the same way.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§43 Contours",
+"line": 197,
+"term": "product of continuous functions",
+"count": 1,
+"context": "> By Lemma §43.2, ·, which is continuous, as a product of continuous functions; so · is a differentiable arc. Applying Lemma §43.1(b) to the continuous real function ·,",
+"targets": [
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-2"
+]
+},
+{
+"note": "§43 Contours",
+"line": 257,
+"term": "green's theorem",
+"count": 1,
+"context": "s the piecewise-smooth curve of calculus, ⟂, which is also the class of curves along which line integrals and Green's theorem are developed there.",
+"targets": [
+"Calculus|§110 Green's Theorem#^thm-110-1",
+"Multivariable Analysis|Green's Theorem",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^thm-16-1"
+]
+},
+{
+"note": "§44 Contour Integrals",
+"line": 14,
+"term": "parametrization",
+"count": 5,
+"context": "The integral of · along a contour · is defined by pulling it back along a parametrization · to an integral of the kind studied in ⟂: ·. It is a line integral, and its value depends on · and, in gener",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§44 Contour Integrals",
+"line": 38,
+"term": "green's theorem",
+"count": 1,
+"context": "o two real line integrals with respect to · and ·, ⟂: ·. This is made precise in ⟂, where it is the bridge to Green's theorem.",
+"targets": [
+"Calculus|§110 Green's Theorem#^thm-110-1",
+"Multivariable Analysis|Green's Theorem",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^thm-16-1"
+]
+},
+{
+"note": "§44 Contour Integrals",
+"line": 62,
+"term": "bijection",
+"count": 1,
+"context": "here the smooth arcs of · meet and the points where · is discontinuous, and let ·; · is a strictly increasing bijection, so ·, and · maps · onto ·. On each such piece, after · is redefined at the endpoints by its one-sided limits",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§44 Contour Integrals",
+"line": 170,
+"term": "orthogonality",
+"count": 1,
+"context": "> by the orthogonality relation of ⟂ with · in place of ·. For instance · · and · ·; on · the two integrands agree, since · when ·.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§45 Some Examples (Contour Integrals)",
+"line": 48,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> note that by ⟂, ·. Since · and ·, the fundamental theorem of calculus for · (⟂) gives",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§45 Some Examples (Contour Integrals)",
+"line": 139,
+"term": "green's theorem",
+"count": 1,
+"context": "> ⟂ recovers this number from Green's theorem.",
+"targets": [
+"Calculus|§110 Green's Theorem#^thm-110-1",
+"Multivariable Analysis|Green's Theorem",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^thm-16-1"
+]
+},
+{
+"note": "§45 Some Examples (Contour Integrals)",
+"line": 155,
+"term": "vector field",
+"count": 1,
+"context": "> - The same dichotomy for real vector fields: a line integral is independent of path exactly when it vanishes around every closed path, ⟂; the complex ver",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§45 Some Examples (Contour Integrals)",
+"line": 157,
+"term": "parametrization",
+"count": 2,
+"context": "> [!remark] Remark: Method — Evaluating a Contour Integral by Parametrization",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§46 Examples Involving Branch Cuts",
+"line": 93,
+"term": "continuous function",
+"count": 1,
+"context": "the branch cut are allowed if · has one-sided limits there; the integral is then the integral of a piecewise continuous function.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§47 Upper Bounds for Moduli of Contour Integrals",
+"line": 101,
+"term": "continuous function",
+"count": 2,
+"context": "*Uses:* ⟂, ⟂, ⟂, ⟂, ⟂ (a nonnegative continuous function with zero integral vanishes)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§47 Upper Bounds for Moduli of Contour Integrals",
+"line": 219,
+"term": "l'hôpital's rule",
+"count": 1,
+"context": "heorem §47.2 gives the bound ·. (· is discontinuous at ·, but the integrand is piecewise continuous on ·.) By l'Hôpital's rule,",
+"targets": [
+"Calculus|L'Hospital's Rule"
+]
+},
+{
+"note": "§48 Antiderivatives",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "dent integrals in ·, and having zero integrals around all closed contours in · are equivalent. It extends the fundamental theorem of calculus to contour integrals, ·, which is the fastest way to evaluate most integrals of elementary functions. The the",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§48 Antiderivatives",
+"line": 26,
+"term": "continuous function",
+"count": 2,
+"context": "> An **antiderivative** of a continuous function · on a domain · is a function · such that · for all · in ·. An antiderivative is, of necessity, analytic in ·",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§48 Antiderivatives",
+"line": 67,
+"term": "fundamental theorem for line integrals",
+"count": 1,
+"context": "> - The real counterpart is the fundamental theorem for line integrals, ⟂: ·. An antiderivative · plays the role of the potential ·, for both real line integrals into which · split",
+"targets": [
+"Calculus|Fundamental Theorem for Line Integrals"
+]
+},
+{
+"note": "§48 Antiderivatives",
+"line": 143,
+"term": "root function",
+"count": 1,
+"context": "> of the square root function, and let · be any contour from · to · that, except for its end points, lies above the · axis. The integrand i",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6"
+]
+},
+{
+"note": "§48 Antiderivatives",
+"line": 196,
+"term": "limits of integration",
+"count": 1,
+"context": "> Find antiderivatives and compute the integrals along paths that connect the limits of integration; in (b) the path lies in the right half-plane ·. Explain why the answers depend only on the endpoints.",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 14,
+"term": "continuous function",
+"count": 1,
+"context": "This section proves the theorem on antiderivatives stated in ⟂: for a continuous function on a domain, having an antiderivative, having path-independent integrals, and having zero integrals around cl",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 14,
+"term": "simply connected",
+"count": 1,
+"context": "construction reappears whenever the course needs an antiderivative that no formula provides, for instance on simply connected domains (⟂) and in Morera's theorem (⟂).",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "closed contours are equivalent. The proof runs around the cycle (a) · (b) · (c) · (a). The first step is the fundamental theorem of calculus carried along a contour by the chain rule; the second is bookkeeping with sums of contours; the third builds",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 91,
+"term": "open set",
+"count": 2,
+"context": "in ·. Since · is a domain, every point · of · can be joined to · by a polygonal line lying in · (⟂, connected open sets), and a polygonal line is a contour. (B&C uses this without comment.) So we can define",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 150,
+"term": "punctured plane",
+"count": 1,
+"context": "is · (⟂). So · has no antiderivative throughout ·; in particular no branch of · can be analytic in the whole punctured plane, which is why every branch needs a cut (⟂). The same holds in every domain containing a circle about ·.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§49 Proof of the Theorem (Antiderivatives)",
+"line": 177,
+"term": "parametrization",
+"count": 1,
+"context": "> [!example] Example §49.2: Antiderivatives Instead of Parametrizations",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§5 Triangle Inequality",
+"line": 57,
+"term": "inner product",
+"count": 1,
+"context": "> - The same inequality, proved with conjugates: ⟂; for norms in any inner product space it follows from Cauchy–Schwarz, ⟂. The inequality · in the proof is Cauchy–Schwarz for the dot product",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§5 Triangle Inequality",
+"line": 57,
+"term": "inner product space",
+"count": 1,
+"context": "> - The same inequality, proved with conjugates: ⟂; for norms in any inner product space it follows from Cauchy–Schwarz, ⟂. The inequality · in the proof is Cauchy–Schwarz for the dot product in ·.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§5 Triangle Inequality",
+"line": 57,
+"term": "norm",
+"count": 1,
+"context": "> - The same inequality, proved with conjugates: ⟂; for norms in any inner product space it follows from Cauchy–Schwarz, ⟂. The inequality · in the proof is Cauchy–Schwarz",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§5 Triangle Inequality",
+"line": 57,
+"term": "cauchy–schwarz",
+"count": 2,
+"context": "> - The same inequality, proved with conjugates: ⟂; for norms in any inner product space it follows from Cauchy–Schwarz, ⟂. The inequality · in the proof is Cauchy–Schwarz for the dot product in ·.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§50 Cauchy–Goursat Theorem",
+"line": 14,
+"term": "irrotational",
+"count": 2,
+"context": "oursat theorem** is stated here and proved in ⟂. Physically, it says that a two-dimensional flow that is both irrotational and source-free has zero circulation and zero flux around every closed curve enclosing no singularity.",
+"targets": [
+"Calculus|§111 Curl and Divergence#^def-111-2",
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§50 Cauchy–Goursat Theorem",
+"line": 51,
+"term": "vector field",
+"count": 1,
+"context": "> If ·, the vector field ·, the conjugate · read as a vector, satisfies · and · for the outward normal of a positively oriented curve.",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§50 Cauchy–Goursat Theorem",
+"line": 102,
+"term": "open set",
+"count": 3,
+"context": "s for continuity of ·, · and their partials on ·. The rigorous version in the vault asks for continuity on an open set containing ·; that holds whenever · is continuous on an open set containing ·, as in all the applications bel",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§50 Cauchy–Goursat Theorem",
+"line": 121,
+"term": "composite function",
+"count": 1,
+"context": "> The composite function · is analytic everywhere, and its derivative · is continuous everywhere (⟂, chain rule). Theorem §50.2 applie",
+"targets": [
+"Calculus|§3 New Functions from Old Functions#^def-3-2"
+]
+},
+{
+"note": "§51 Proof of the Theorem (Cauchy–Goursat Theorem)",
+"line": 18,
+"term": "open set",
+"count": 1,
+"context": "rior to ·. Saying that · is analytic throughout · means that · is analytic at every point of ·, hence in some open set containing · (⟂).",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§51 Proof of the Theorem (Cauchy–Goursat Theorem)",
+"line": 79,
+"term": "closed set",
+"count": 2,
+"context": "of · (either · itself or points of · distinct from ·, which makes · an accumulation point of ·). Since · is a closed set, it contains its accumulation points (⟂); so in either case · is a point of ·.",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "§51 Proof of the Theorem (Cauchy–Goursat Theorem)",
+"line": 134,
+"term": "continuous function",
+"count": 1,
+"context": "he subregion on which · is defined. Also, · is continuous throughout the subregion: at · it is built from the continuous function ·, and at ·",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§52 Simply Connected Domains",
+"line": 86,
+"term": "continuous function",
+"count": 1,
+"context": "n that is analytic on · is continuous there (⟂). By Theorem §52.1, · for every closed contour · in ·. By ⟂ (a continuous function whose integrals around all closed contours in · vanish has an antiderivative throughout ·), · has an antideri",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§52 Simply Connected Domains",
+"line": 107,
+"term": "punctured plane",
+"count": 1,
+"context": "> In the punctured plane ·, which is not simply connected, · is analytic but has no antiderivative: the integral around the unit circl",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§52 Simply Connected Domains",
+"line": 126,
+"term": "graph of a function",
+"count": 1,
+"context": "> **The two equalities.** · is the graph of a function, so it does not intersect itself; · does not either; and they share only their end points. So · followed by ·",
+"targets": [
+"Calculus|§1 Four Ways to Represent a Function#^def-1-2",
+"Logic and Proofs|§8 Functions#^def-8-10"
+]
+},
+{
+"note": "§53 Multiply Connected Domains",
+"line": 17,
+"term": "simply connected",
+"count": 1,
+"context": "> A domain that is not simply connected (⟂) is said to be **multiply connected**.",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§53 Multiply Connected Domains",
+"line": 96,
+"term": "parametrization",
+"count": 1,
+"context": "> 4. **Evaluate the small integrals,** by parametrization or, more often, by the Cauchy integral formula (⟂) and its extension (⟂).",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§54 Cauchy Integral Formula",
+"line": 14,
+"term": "parametrization",
+"count": 1,
+"context": "the continuity of · there. Read backwards, the formula evaluates contour integrals of the form · without any parametrization, and it is the source of everything in the following sections: derivatives of all orders, Liouville's theorem",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§54 Cauchy Integral Formula",
+"line": 82,
+"term": "mean value theorem",
+"count": 1,
+"context": "> - For a circle · centered at ·, formula (1) says that · is the average of · over the circle: Gauss's mean value theorem, ⟂. Its real part is the mean value property of harmonic functions, ⟂, and the Poisson integral formula ⟂ is",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§54 Cauchy Integral Formula",
+"line": 82,
+"term": "mean value property of harmonic functions",
+"count": 1,
+"context": "mula (1) says that · is the average of · over the circle: Gauss's mean value theorem, ⟂. Its real part is the mean value property of harmonic functions, ⟂, and the Poisson integral formula ⟂ is the corresponding statement that a harmonic function in a disk is d",
+"targets": [
+"Fourier Series and PDEs|Mean Value Property of Harmonic Functions"
+]
+},
+{
+"note": "§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)",
+"line": 126,
+"term": "open set",
+"count": 5,
+"context": "l. I, pp. 299–301; here is a proof.)* Since · is analytic at each point inside and on ·, it is analytic in an open set · containing · and its interior. Let · be any point of ·, and let · be a positively oriented circle centered",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)",
+"line": 140,
+"term": "continuous function",
+"count": 3,
+"context": "> a continuous function. So · has the antiderivative · on a domain containing · (the part of · minus · that contains the connected se",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§57 Some Consequences of the Extension",
+"line": 14,
+"term": "continuous function",
+"count": 3,
+"context": "differentiable functions of a real variable. Morera's theorem is a converse of the Cauchy–Goursat theorem: a continuous function whose integrals around all closed contours vanish is analytic. Cauchy's inequality bounds the derivatives of",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§57 Some Consequences of the Extension",
+"line": 79,
+"term": "laplace's equation",
+"count": 1,
+"context": "> - In the language of Multivariable Analysis, · and · are · and satisfy Laplace's equation ·, ⟂; so the real part of an analytic function is a potential in the sense of ⟂, and the mean value and maxim",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§57 Some Consequences of the Extension",
+"line": 105,
+"term": "simply connected",
+"count": 3,
+"context": "In particular, when · is simply connected, Morera's theorem is, for the class of continuous functions on ·, the converse of ⟂: a continuous function on",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§58 Liouville's Theorem and the Fundamental Theorem of Algebra",
+"line": 14,
+"term": "fundamental group",
+"count": 1,
+"context": "other proofs of the fundamental theorem of algebra, one by a minimum argument (Linear Algebra) and one by the fundamental group of the circle (Topology); this one is the shortest, because the hard work was done in the Cauchy–Goursat theo",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-2"
+]
+},
+{
+"note": "§58 Liouville's Theorem and the Fundamental Theorem of Algebra",
+"line": 14,
+"term": "fundamental group of the circle",
+"count": 1,
+"context": "other proofs of the fundamental theorem of algebra, one by a minimum argument (Linear Algebra) and one by the fundamental group of the circle (Topology); this one is the shortest, because the hard work was done in the Cauchy–Goursat theorem.",
+"targets": [
+"Topology|Fundamental Group of the Circle"
+]
+},
+{
+"note": "§58 Liouville's Theorem and the Fundamental Theorem of Algebra",
+"line": 73,
+"term": "extreme value theorem",
+"count": 1,
+"context": "> - The other proofs in the vault: ⟂ (⟂) shows that · attains a minimum on a large closed disk (the extreme value theorem) and that the minimum cannot be positive, by moving in a direction where the lowest-order term of · about the",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§58 Liouville's Theorem and the Fundamental Theorem of Algebra",
+"line": 73,
+"term": "nullhomotopic",
+"count": 1,
+"context": "· about the minimum point decreases ·; ⟂ (⟂) shows that a root-free · would make the loop · on a large circle nullhomotopic in ·, contradicting ·. The proof here hides the analysis in Liouville's theorem, that is, in the Cauchy integ",
+"targets": [
+"Topology|§22 Homotopy of Paths#^def-22-2"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 14,
+"term": "mean value theorem",
+"count": 3,
+"context": "says that the value of an analytic function at the center is the average of its values on the circle (Gauss's mean value theorem). An average cannot exceed its terms unless all are equal, so · cannot have a local maximum at a point unless",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 47,
+"term": "laplacian",
+"count": 1,
+"context": "- The real part of (2) is the mean value property of the harmonic function ·, ⟂, proved there from the polar Laplacian instead of from the Cauchy integral formula.",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 47,
+"term": "polar laplacian",
+"count": 1,
+"context": "> - The real part of (2) is the mean value property of the harmonic function ·, ⟂, proved there from the polar Laplacian instead of from the Cauchy integral formula.",
+"targets": [
+"Fourier Series and PDEs|Laplacian in Polar Coordinates"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 113,
+"term": "open set",
+"count": 3,
+"context": "distance from points of · to the boundary of ·; it is positive, because · is a closed bounded set inside the open set ·. (When · is the entire plane, · may have any positive value.) Since · has finite length, there is a finite",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 157,
+"term": "closure",
+"count": 2,
+"context": "erior of · is a domain on which · is analytic and not constant (it is open; and it is connected, for · is the closure of a domain ·, and if · were the union of two disjoint nonempty open sets, the connected set · would lie in o",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 157,
+"term": "interior point",
+"count": 4,
+"context": "y Theorem §59.3 there is no point · of the interior at which · for all · in the interior; in particular · for interior points ·. Hence every point where the maximum · is reached lies on the boundary of ·.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 164,
+"term": "compactness",
+"count": 1,
+"context": "> - \"Which is always reached\" is compactness: a closed bounded subset of the plane is compact (⟂), the continuous image of a compact set is compact (⟂), a",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§59 Maximum Modulus Principle",
+"line": 176,
+"term": "composite function",
+"count": 1,
+"context": "> The composite function · is continuous in · and analytic in the interior. It is not constant in the interior: if it were, then · the",
+"targets": [
+"Calculus|§3 New Functions from Old Functions#^def-3-2"
+]
+},
+{
+"note": "§60 Convergence of Sequences",
+"line": 197,
+"term": "limit point",
+"count": 1,
+"context": "> and the sequence · has two different limit points: · does not exist. The reason is that · jumps by · across the negative real axis, and the limit · lies on tha",
+"targets": [
+"Topology|§7 Interior and Closure#^def-7-3"
+]
+},
+{
+"note": "§60 Convergence of Sequences",
+"line": 210,
+"term": "continuous function",
+"count": 1,
+"context": "> Here ·, so · lies in the right half plane, where the principal argument is ·, a continuous function. Hence",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 14,
+"term": "power series",
+"count": 4,
+"context": "rgence. The section also introduces the remainder ·, the tool for every convergence proof in the chapter, and power series. Its one example, the geometric series · for ·, is the series from which the proofs of Taylor's and Laurent's",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 110,
+"term": "absolutely convergent",
+"count": 3,
+"context": "> The series (1) is **absolutely convergent** if the series",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 225,
+"term": "divergence",
+"count": 1,
+"context": "> **Divergence for ·.** Then ·, so the terms do not tend to zero and the series diverges by Corollary §61.2. (B&C reads this",
+"targets": [
+"Calculus|§111 Curl and Divergence#^def-111-3",
+"Measure Theory|§12 Measurable Functions#^def-12-10",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^def-16-4",
+"Single Variable Analysis|§7 Limits of Sequences#^def-7-3"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 259,
+"term": "kernel",
+"count": 1,
+"context": "> Doubling the first formula and adding · gives ·, the Poisson kernel of the unit disk (⟂, step (e) of the proof).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 274,
+"term": "alternating series",
+"count": 2,
+"context": "**Convergent:** the terms with even · are real, ·, and those with odd · are imaginary, ·. So · and · are the alternating series",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-1"
+]
+},
+{
+"note": "§61 Convergence of Series",
+"line": 280,
+"term": "alternating series test",
+"count": 1,
+"context": "> each convergent by the alternating series test (the values are · times the alternating harmonic series and Leibniz's series). By Theorem §61.1 the series co",
+"targets": [
+"Calculus|Alternating Series Test",
+"Single Variable Analysis|§15 Alternating Series and Integral Tests#^thm-15-1"
+]
+},
+{
+"note": "§62 Taylor Series",
+"line": 18,
+"term": "power series representation",
+"count": 1,
+"context": ". *Suppose that a function · is analytic throughout a disk ·, centered at · and with radius ·. Then · has the power series representation*",
+"targets": [
+"Calculus|§77 Representations of Functions as Power Series#^def-77-1"
+]
+},
+{
+"note": "§62 Taylor Series",
+"line": 18,
+"term": "power series",
+"count": 2,
+"context": ". *Suppose that a function · is analytic throughout a disk ·, centered at · and with radius ·. Then · has the power series representation*",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§62 Taylor Series",
+"line": 113,
+"term": "geometric series",
+"count": 3,
+"context": "roblem.** Find the Taylor series of · about · **(a)** by computing derivatives and **(b)** by algebra and the geometric series. **(c)** In what disk does the series converge? How is the radius related to the domain where · is analytic?",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§63 Proof of Taylor's Theorem",
+"line": 14,
+"term": "kernel",
+"count": 2,
+"context": "erivatives of · beyond what the Cauchy integral formula already gives. For · on a circle around ·, the Cauchy kernel · is the sum of a geometric series in ·, and this series converges uniformly in · because · stays below a fix",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§63 Proof of Taylor's Theorem",
+"line": 14,
+"term": "power series",
+"count": 3,
+"context": "first, and the general case follows by a translation. Every later representation of an analytic function by a power series rests on this theorem: the residue theory of Chapter 6 and the zeros of analytic functions (⟂) both start fro",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§63 Proof of Taylor's Theorem",
+"line": 14,
+"term": "geometric series",
+"count": 6,
+"context": "at the Cauchy integral formula already gives. For · on a circle around ·, the Cauchy kernel · is the sum of a geometric series in ·, and this series converges uniformly in · because · stays below a fixed ratio ·. Integrating term by ter",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§63 Proof of Taylor's Theorem",
+"line": 19,
+"term": "power series representation",
+"count": 1,
+"context": "> Suppose that a function · is analytic throughout a disk ·, centered at · and with radius ·. Then · has the power series representation",
+"targets": [
+"Calculus|§77 Representations of Functions as Power Series#^def-77-1"
+]
+},
+{
+"note": "§63 Proof of Taylor's Theorem",
+"line": 147,
+"term": "continuous function",
+"count": 1,
+"context": "(extended formula), ⟂ (ML-inequality), ⟂ (linearity of contour integrals), ⟂, ⟂ (chain rule), ⟂ (maximum of a continuous function)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§64 Examples (Proof of Taylor's Theorem)",
+"line": 14,
+"term": "geometric series",
+"count": 2,
+"context": "This section collects the six Maclaurin series that the rest of the course uses constantly: the geometric series, ·, ·, ·, · and ·. It also shows how to obtain new Taylor series from them by substitution, multiplication by",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§64 Examples (Proof of Taylor's Theorem)",
+"line": 46,
+"term": "subsequence",
+"count": 1,
+"context": "is even, and deleting zero terms from a convergent series does not change its sum (the new partial sums are a subsequence of the old ones). So we can replace · by ·:",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§65 Negative Powers of (z − z₀)",
+"line": 66,
+"term": "geometric series",
+"count": 2,
+"context": "> A Maclaurin series is impossible, since · is not analytic at ·. But replacing · by · in the geometric series · · gives",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§66 Laurent Series",
+"line": 102,
+"term": "bessel functions",
+"count": 1,
+"context": "> [!example] Example §66.2: The Bessel Functions as Laurent Coefficients",
+"targets": [
+"Fourier Series and PDEs|General Solution of Bessel's Equation"
+]
+},
+{
+"note": "§66 Laurent Series",
+"line": 111,
+"term": "punctured plane",
+"count": 1,
+"context": "> **(a)** For fixed ·, the function · is analytic in the punctured plane ·, as the composition of · with a function analytic for ·. Laurent's theorem in the · plane, about the origin",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§66 Laurent Series",
+"line": 132,
+"term": "absolutely convergent",
+"count": 2,
+"context": "s series solution of Bessel's equation, ⟂. The two definitions agree: multiplying the series of · and ·, both absolutely convergent, and collecting the terms in · (·, ·) gives ·, which is the series of 341; the product of two absolutely conv",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§66 Laurent Series",
+"line": 132,
+"term": "power series",
+"count": 1,
+"context": "roduct of two absolutely convergent series may be rearranged this way (B&C proves the Cauchy product only for power series, ⟂).",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§67 Proof of Laurent's Theorem",
+"line": 14,
+"term": "kernel",
+"count": 2,
+"context": "s the difference of two Cauchy integrals, one over an outer circle · and one over an inner circle ·. On · the kernel · expands in positive powers of ·, exactly as for Taylor's theorem. On ·, where ·, it expands in negative pow",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§67 Proof of Laurent's Theorem",
+"line": 96,
+"term": "continuous function",
+"count": 1,
+"context": "> *The remainders tend to zero.* Let · denote the maximum value of · on · and · (a continuous function on closed bounded sets, ⟂). If · is on ·, then ·; if · is on ·, then ·. The circles have lengths · and ·. By",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§67 Proof of Laurent's Theorem",
+"line": 96,
+"term": "bounded sets",
+"count": 1,
+"context": "The remainders tend to zero.* Let · denote the maximum value of · on · and · (a continuous function on closed bounded sets, ⟂). If · is on ·, then ·; if · is on ·, then ·. The circles have lengths · and ·. By the ML-inequality (⟂),",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§67 Proof of Laurent's Theorem",
+"line": 155,
+"term": "extreme value theorem",
+"count": 1,
+"context": "at for multiply connected domains), ⟂ (deformation), ⟂, ⟂ (ML-inequality), ⟂, ⟂ (Jordan curve theorem), ⟂, ⟂ (extreme value theorem)",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§67 Proof of Laurent's Theorem",
+"line": 261,
+"term": "radius of convergence",
+"count": 1,
+"context": "> with radius of convergence ·: by Taylor's theorem it converges in the largest disk about · that avoids the singular points · and ·, and",
+"targets": [
+"Single Variable Analysis|§23 Power Series#^thm-23-2"
+]
+},
+{
+"note": "§68 Examples (Proof of Laurent's Theorem)",
+"line": 14,
+"term": "punctured plane",
+"count": 1,
+"context": "legitimate. First, Laurent's theorem (⟂) predicts the domain: the series of ⟂ are valid in punctured disks or punctured planes because the functions there have a single singular point at the center, or a nearest one at the outer radius.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§68 Examples (Proof of Laurent's Theorem)",
+"line": 25,
+"term": "geometric series",
+"count": 1,
+"context": "> **(a)** Since · when ·, substitute · for · in the geometric series · ·:",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§68 Examples (Proof of Laurent's Theorem)",
+"line": 56,
+"term": "radius of convergence",
+"count": 3,
+"context": "ith the singular point ·, is analytic in the domains · and ·. Find its series in powers of · in each, and the radius of convergence of the first.",
+"targets": [
+"Single Variable Analysis|§23 Power Series#^thm-23-2"
+]
+},
+{
+"note": "§69★ Absolute and Uniform Convergence of Power Series",
+"line": 15,
+"term": "set of convergence",
+"count": 1,
+"context": "m §69.1:** convergence at one point · forces absolute convergence at every point closer to the center, so the set of convergence is a disk, bounded by the *circle of convergence*. **Theorem §69.3:** inside that circle the convergence is u",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-10"
+]
+},
+{
+"note": "§69★ Absolute and Uniform Convergence of Power Series",
+"line": 15,
+"term": "geometric series",
+"count": 3,
+"context": "rcle the convergence is uniform on every smaller closed disk. The proofs compare the series with a convergent geometric series or with a convergent series of constants, which is the Weierstrass M-test in disguise.",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§69★ Absolute and Uniform Convergence of Power Series",
+"line": 26,
+"term": "absolutely convergent",
+"count": 1,
+"context": "> converges when · ·, then it is absolutely convergent at each point · in the open disk ·, where ·.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§69★ Absolute and Uniform Convergence of Power Series",
+"line": 60,
+"term": "supremum",
+"count": 4,
+"context": "greatest circle · centered at · such that the series converges at each point inside it. Explicitly, · is the supremum of the distances · over all points · at which (1) converges. If (1) converges at every point, · and the serie",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§69★ Absolute and Uniform Convergence of Power Series",
+"line": 68,
+"term": "divergence",
+"count": 3,
+"context": "> [!theorem] Corollary §69.2: Convergence Inside, Divergence Outside",
+"targets": [
+"Calculus|§111 Curl and Divergence#^def-111-3",
+"Measure Theory|§12 Measurable Functions#^def-12-10",
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^def-16-4",
+"Single Variable Analysis|§7 Limits of Sequences#^def-7-3"
+]
+},
+{
+"note": "§7 Exponential Form",
+"line": 63,
+"term": "power series",
+"count": 1,
+"context": "> - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of ·, ·, ·: ⟂; see also ⟂. In this subject the choice of the symbol is justified in ⟂, where · is defined for",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§7 Exponential Form",
+"line": 104,
+"term": "parametrization",
+"count": 1,
+"context": "This parametrization is the standard contour of the subject: the circle in Cauchy's integral formula (⟂) and in the residue theore",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§70★ Continuity of Sums of Power Series",
+"line": 15,
+"term": "continuous function",
+"count": 7,
+"context": "The first consequence of uniform convergence is that the sum of a power series is a continuous function inside its circle of convergence. Each partial sum is a polynomial, hence continuous, and a uniformly small r",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§70★ Continuity of Sums of Power Series",
+"line": 15,
+"term": "power series",
+"count": 7,
+"context": "The first consequence of uniform convergence is that the sum of a power series is a continuous function inside its circle of convergence. Each partial sum is a polynomial, hence continuous",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§70★ Continuity of Sums of Power Series",
+"line": 70,
+"term": "uniform limit of continuous functions",
+"count": 1,
+"context": "> - This is the special case for power series of \"a uniform limit of continuous functions is continuous\", ⟂ and ⟂; the real power-series version is ⟂. The · argument above is the same proof, with the",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^thm-12-16"
+]
+},
+{
+"note": "§70★ Continuity of Sums of Power Series",
+"line": 150,
+"term": "geometric series",
+"count": 1,
+"context": "> **(a)** · converges at · (a geometric series with ratio ·), so by Corollary §70.2 it converges absolutely, to a continuous function, in ·. In fact it conv",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§70★ Continuity of Sums of Power Series",
+"line": 152,
+"term": "punctured plane",
+"count": 1,
+"context": "> **(b)** · converges at every · (⟂), so it converges absolutely in · for every such ·, that is, in the whole punctured plane ·, and its sum is continuous there, as it must be.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§71★ Integration and Differentiation of Power Series",
+"line": 15,
+"term": "continuous function",
+"count": 1,
+"context": "f convergence a power series may be integrated term by term along any contour, even after multiplication by a continuous function ·. Two consequences follow. The sum of a power series is analytic: integrating against · shows that every clo",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§71★ Integration and Differentiation of Power Series",
+"line": 15,
+"term": "kernel",
+"count": 1,
+"context": "era's theorem applies. A power series may also be differentiated term by term: integrating against the Cauchy kernel · turns both sides into derivatives. Together with Taylor's theorem this gives an exact description of the Ta",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§71★ Integration and Differentiation of Power Series",
+"line": 15,
+"term": "power series",
+"count": 12,
+"context": "Inside its circle of convergence a power series may be integrated term by term along any contour, even after multiplication by a continuous function ·. Two c",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§72★ Uniqueness of Series Representations",
+"line": 75,
+"term": "power series",
+"count": 5,
+"context": "> [!theorem] Corollary §72.2: A Power Series That Vanishes Near z₀ Is Zero",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§72★ Uniqueness of Series Representations",
+"line": 248,
+"term": "geometric series",
+"count": 2,
+"context": "consisting of all points except ·. Indeed, · is analytic in · (Corollary §71.2), and substituting · into the geometric series shows · there. The function · is analytic in the connected domain ·, which contains the disk, and agrees with",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§73★ Multiplication and Division of Power Series",
+"line": 15,
+"term": "power series",
+"count": 6,
+"context": "Power series can be multiplied and divided like polynomials. If · and · converge in a disk, their product is the series ob",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§73★ Multiplication and Division of Power Series",
+"line": 45,
+"term": "pascal's rule",
+"count": 1,
+"context": "> With the identity · (Pascal's rule, from the proof of ⟂) and ·,",
+"targets": [
+"Logic and Proofs|§12★ Counting Functions and Subsets#^prop-12-8"
+]
+},
+{
+"note": "§73★ Multiplication and Division of Power Series",
+"line": 115,
+"term": "absolutely convergent",
+"count": 1,
+"context": "> - The calculus statement is ⟂. In real analysis the Cauchy product of two absolutely convergent series converges to the product of the sums (Mertens' theorem, not in the vault); here analyticity gives the",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§73★ Multiplication and Division of Power Series",
+"line": 115,
+"term": "rearrangement",
+"count": 1,
+"context": "(Mertens' theorem, not in the vault); here analyticity gives the result for power series in one line, with no rearrangement argument.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-4"
+]
+},
+{
+"note": "§73★ Multiplication and Division of Power Series",
+"line": 202,
+"term": "undetermined coefficients",
+"count": 1,
+"context": "> **Undetermined coefficients (the same computation).** Write the left side of (8) as · and multiply:",
+"targets": [
+"Fourier Series and PDEs|§2★ Nonhomogeneous Linear Equations#^thm-2-4"
+]
+},
+{
+"note": "§74 Isolated Singular Points",
+"line": 47,
+"term": "multiplicity",
+"count": 1,
+"context": "ynomial in the denominator are finite in number (⟂: a polynomial of degree · has exactly · zeros counted with multiplicity). Around each zero, take · smaller than its distance to the nearest other zero.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§74 Isolated Singular Points",
+"line": 118,
+"term": "interior point",
+"count": 1,
+"context": "> Choose any · with ·. The disk · does not meet ·; it is connected and contains the interior point ·, so it lies entirely inside · (the interior of · is one of the two connected pieces into which · divides th",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§75 Residues",
+"line": 73,
+"term": "geometric series",
+"count": 3,
+"context": "> 2. **Build the Laurent series** in · from known expansions (⟂): ·, ·, ·, ·, · and the geometric series · (·), substituting ·, ·, · and so on, and multiplying by powers of ·. Any series in powers of · that converg",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§75 Residues",
+"line": 119,
+"term": "composite function",
+"count": 1,
+"context": "> The composite function · is analytic everywhere except at the origin, since · is and · is entire; the isolated singular point · is i",
+"targets": [
+"Calculus|§3 New Functions from Old Functions#^def-3-2"
+]
+},
+{
+"note": "§76 Cauchy's Residue Theorem",
+"line": 57,
+"term": "fourier series",
+"count": 1,
+"context": "> - Fourier Series and PDEs inverts Laplace transforms by \"closing the Bromwich line to the left\" and summing residues of · (⟂,",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§77★ Residue at Infinity",
+"line": 102,
+"term": "compact",
+"count": 1,
+"context": "> - Adding a point · to ·, with the complements of compact sets as its neighborhoods, is the one-point compactification, ⟂: the Riemann sphere. The substitution · is th",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§77★ Residue at Infinity",
+"line": 164,
+"term": "reversing the orientation",
+"count": 1,
+"context": "> We may take · positively oriented (reversing the orientation only changes the sign of ·). The function · is analytic in the finite plane except at the zeros of ·, which a",
+"targets": [
+"Calculus|§108 Line Integrals#^thm-108-4"
+]
+},
+{
+"note": "§78 The Three Types of Isolated Singular Points",
+"line": 73,
+"term": "power series",
+"count": 4,
+"context": "> **(b)** At · the power series · has the sum ·, which is now also the value of ·; for · the series equals · by (3). So (3) holds for ·, and",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§80 Residues at Poles",
+"line": 54,
+"term": "power series representation",
+"count": 1,
+"context": "> Multiplying the Laurent series by · term by term shows that · has the power series representation",
+"targets": [
+"Calculus|§77 Representations of Functions as Power Series#^def-77-1"
+]
+},
+{
+"note": "§80 Residues at Poles",
+"line": 54,
+"term": "power series",
+"count": 3,
+"context": "> Multiplying the Laurent series by · term by term shows that · has the power series representation",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§80 Residues at Poles",
+"line": 83,
+"term": "fourier series",
+"count": 1,
+"context": "> - In Fourier Series and PDEs, the coefficients of · at a double root are · and ·, ⟂. In the notation of Theorem §80.1 with · and",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§81 Examples (Residues at Poles)",
+"line": 74,
+"term": "logarithmic function",
+"count": 1,
+"context": "> of the logarithmic function is to be used (⟂). This branch is analytic off the nonnegative real axis, so · is analytic there except at ·.",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-11"
+]
+},
+{
+"note": "§82 Zeros of Analytic Functions",
+"line": 64,
+"term": "power series",
+"count": 3,
+"context": "es for ·: for · it is the convergent Taylor series divided by ·, and at · trivially.) The convergence of this power series when · ensures that · is analytic in that neighborhood, and in particular at · (⟂). Moreover,",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§82 Zeros of Analytic Functions",
+"line": 205,
+"term": "bolzano–weierstrass",
+"count": 2,
+"context": "> Let · be the region consisting of all points inside and on a simple closed contour ·. Use the Bolzano–Weierstrass theorem, in the form *an infinite set of points lying in a closed bounded region · has at least one accumulat",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§82 Zeros of Analytic Functions",
+"line": 205,
+"term": "bolzano–weierstrass theorem",
+"count": 2,
+"context": "> Let · be the region consisting of all points inside and on a simple closed contour ·. Use the Bolzano–Weierstrass theorem, in the form *an infinite set of points lying in a closed bounded region · has at least one accumulation poin",
+"targets": [
+"Single Variable Analysis|Bolzano–Weierstrass Theorem"
+]
+},
+{
+"note": "§82 Zeros of Analytic Functions",
+"line": 211,
+"term": "subsequence",
+"count": 1,
+"context": "n an infinite subset · of ·, choose a sequence of distinct points of ·. It is bounded, so it has a convergent subsequence (⟂, in ·); the limit · lies in · since · is closed, and every neighborhood of · contains infinitely many poin",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§83 Zeros and Poles",
+"line": 16,
+"term": "zeros of the denominator",
+"count": 1,
+"context": "## Zeros of the Denominator",
+"targets": [
+"Fourier Series and PDEs|§54★ More Difficult Examples#^lem-54-1"
+]
+},
+{
+"note": "§83 Zeros and Poles",
+"line": 116,
+"term": "fourier series",
+"count": 1,
+"context": "> - For polynomials this is Heaviside's formula of Fourier Series and PDEs, ⟂: the coefficient of · in the partial-fraction expansion of · is ·, the residue at the simple pole",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§83 Zeros and Poles",
+"line": 341,
+"term": "alternating series",
+"count": 1,
+"context": "m, which keeps · on the contour. As · grows the integral tends to ·, while the enclosed residues build up the alternating series.*",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-1"
+]
+},
+{
+"note": "§84 Behavior of Functions Near Isolated Singular Points",
+"line": 115,
+"term": "dense",
+"count": 1,
+"context": "In the language of sets: the image under · of every punctured neighborhood of an essential singular point is dense in ·. Picard's theorem says much more, that the image omits at most one point, and that every other value is",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§84 Behavior of Functions Near Isolated Singular Points",
+"line": 172,
+"term": "infinite limit",
+"count": 1,
+"context": "> Is · bounded in a small disk ·? Does it have a finite or infinite limit at ·? What else can be said about its behavior near ·?",
+"targets": [
+"Calculus|§69 Sequences#^def-69-4",
+"Calculus|§7 The Limit of a Function#^def-7-3"
+]
+},
+{
+"note": "§85 Evaluation of Improper Integrals",
+"line": 173,
+"term": "parametrization",
+"count": 1,
+"context": "> With the parametrization · · of the segment, ·, the first integral is · (⟂), and (9) follows.",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§87 Improper Integrals from Fourier Analysis",
+"line": 58,
+"term": "absolutely convergent",
+"count": 1,
+"context": "> By ⟂, · for ·, and · on ·; so · (⟂). On the real axis · for ·, so the real and imaginary parts · and · have absolutely convergent improper integrals (comparison, as in the proof of Proposition §85.4). The integral therefore converges, equa",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§87 Improper Integrals from Fourier Analysis",
+"line": 135,
+"term": "fourier integral theorem",
+"count": 1,
+"context": "he integration variable ·, this is ·, the Fourier integral representation of ⟂(a), which 341 obtains from the Fourier integral theorem; here it is verified directly, for every ·.",
+"targets": [
+"Fourier Series and PDEs|Fourier Integral Theorem"
+]
+},
+{
+"note": "§87 Improper Integrals from Fourier Analysis",
+"line": 135,
+"term": "fourier integral representation",
+"count": 1,
+"context": "> - Read with · and the integration variable ·, this is ·, the Fourier integral representation of ⟂(a), which 341 obtains from the Fourier integral theorem; here it is verified directly, for every ·.",
+"targets": [
+"Fourier Series and PDEs|Fourier Integral Theorem"
+]
+},
+{
+"note": "§88★ Jordan's Lemma",
+"line": 65,
+"term": "parametrization",
+"count": 1,
+"context": "> With the parametrization ·, · (⟂),",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§89★ An Indented Path",
+"line": 45,
+"term": "power series",
+"count": 1,
+"context": "> **The regular part.** The power series · is continuous in its disk of convergence · (⟂). Choose · with ·; then · is continuous on the closed disk ·,",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§89★ An Indented Path",
+"line": 85,
+"term": "parametrization",
+"count": 1,
+"context": "> **The legs.** · and · have the parametrizations · and · · (6), so the left side of (5) is",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§9 Arguments of Products and Quotients",
+"line": 54,
+"term": "set form",
+"count": 1,
+"context": "> For the set form: every sum of a value of · and a value of · is a value of · by the first case, and every value of · is such a",
+"targets": [
+"Logic and Proofs|§7 Quantifiers#^def-7-4"
+]
+},
+{
+"note": "§90★ An Indentation Around a Branch Point",
+"line": 38,
+"term": "parametrization",
+"count": 1,
+"context": "> **The legs.** · and · have the parametrizations · and · ·. On ·, ·; on ·, ·, and ·. Hence",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§92★ Definite Integrals Involving Sines and Cosines",
+"line": 51,
+"term": "parametrization",
+"count": 1,
+"context": "> Write · for the integrand on the right. By the definition of the contour integral with the parametrization (2) (⟂), ·. At ·, ·, so ·, ·, and ·; hence ·, which is (1) = (4): the original integral is a parametric form",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§92★ Definite Integrals Involving Sines and Cosines",
+"line": 60,
+"term": "zeros of the denominator",
+"count": 1,
+"context": "> 2. **Find the poles** (zeros of the denominator), and check that none lies on ·. For a quadratic · the product of the roots is ·: if · and one root is outsid",
+"targets": [
+"Fourier Series and PDEs|§54★ More Difficult Examples#^lem-54-1"
+]
+},
+{
+"note": "§92★ Definite Integrals Involving Sines and Cosines",
+"line": 147,
+"term": "kernel",
+"count": 3,
+"context": "> - The denominator · is that of the Poisson kernel, ⟂ with ·. In 341 the kernel is ·, and (8) reads off its Fourier coefficient: ·. With · replaced by ·, the sa",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 25,
+"term": "open set",
+"count": 1,
+"context": "itively oriented simple closed contour ·, and analytic and nonzero on · (\"analytic on ·\" means analytic in an open set containing ·). The image · of · under · is a closed contour, not necessarily simple, in the · plane; as · tra",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 55,
+"term": "continuous function",
+"count": 2,
+"context": "> is continuous and piecewise smooth, · is a value of · for every ·, and · with ·. Any other continuous function · with · differs from · by a constant multiple of ·. In particular, for · with · a parametrization of ·,",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 55,
+"term": "parametrization",
+"count": 2,
+"context": "other continuous function · with · differs from · by a constant multiple of ·. In particular, for · with · a parametrization of ·,",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 74,
+"term": "mean value theorem",
+"count": 1,
+"context": "> So the real and imaginary parts of · are constant on each subinterval (mean value theorem), hence, by continuity, constant on ·: ·. Therefore ·. Writing · and ·,",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 82,
+"term": "intermediate value theorem",
+"count": 1,
+"context": "for every ·. A continuous function on an interval whose values lie in the discrete set · is constant (by the intermediate value theorem it cannot jump between two of these values). So · is constant, and ·: the change of argument does not depend",
+"targets": [
+"Single Variable Analysis|Intermediate Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-3",
+"Topology|§14 Connected Subspaces of ℝ#^thm-14-3"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 91,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> - In topology the continuous argument is a **lift** of the loop · through the covering map ·, ·: its existence and uniqueness up to · is the path lifting lemma, ⟂, and the winding number is the class of the loop in ·, ⟂. The formula of",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 129,
+"term": "bolzano–weierstrass",
+"count": 1,
+"context": "> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem they have an accumulation point · in ·. It is not on ·, since near points of · there are no poles. So",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§93 Argument Principle",
+"line": 129,
+"term": "bolzano–weierstrass theorem",
+"count": 1,
+"context": "> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem they have an accumulation point · in ·. It is not on ·, since near points of · there are no poles. So ·, wher",
+"targets": [
+"Single Variable Analysis|Bolzano–Weierstrass Theorem"
+]
+},
+{
+"note": "§94 Rouché's Theorem",
+"line": 46,
+"term": "parametrization",
+"count": 1,
+"context": "n · (indeed analytic in a neighborhood of ·, where ·). If · and · are continuous arguments of · and · along a parametrization of · (⟂), then · is a continuous argument of their product; so",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 15,
+"term": "fourier series",
+"count": 2,
+"context": "sform. These are the results behind the inverse-transform tables of ODE and the extended Heaviside formula of Fourier Series and PDEs.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 15,
+"term": "fourier integral theorem",
+"count": 6,
+"context": "inequality again), the residue formulas (6) and (7) under stated conditions, the inversion theorem (from the Fourier integral theorem), uniqueness of the inverse transform, and, for rational ·, a complete proof that the residue sum is the inve",
+"targets": [
+"Fourier Series and PDEs|Fourier Integral Theorem"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 129,
+"term": "bolzano–weierstrass",
+"count": 1,
+"context": "tely many · in each disk.** If infinitely many · lay in a bounded set, they would accumulate at some point · (Bolzano–Weierstrass). · is not analytic at ·, since every neighborhood of · contains singular points; so · is one of the singular",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 198,
+"term": "power series",
+"count": 1,
+"context": "> **· is analytic in ·.** Fix · with ·, let · and ·. From the power series of the exponential, · for complex ·; with ·,",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 213,
+"term": "smooth function",
+"count": 2,
+"context": "- This is Lerch's theorem, ⟂, which BDP states without proof (\"it can be shown\"), here proved for sectionally smooth functions of exponential order (relative to the Fourier integral theorem). It is what makes a table of transforms, read",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§95★ Inverse Laplace Transforms",
+"line": 257,
+"term": "integration by parts",
+"count": 1,
+"context": "> for · the integral is ·, since ·; and integration by parts gives ·, the boundary term · vanishing at both ends. With · and ·, the transform of · is · for ·. By linearit",
+"targets": [
+"Calculus|Integration by Parts",
+"Calculus|§44 Integration by Parts#^thm-44-1",
+"Single Variable Analysis|§34 Fundamental Theorem of Calculus#^thm-34-3"
+]
+},
+{
+"note": "§96★ Linear Transformations",
+"line": 15,
+"term": "standard position",
+"count": 1,
+"context": "ation is two of them with · in between (⟂), and in the applications of Chapters 10–11 they move a region into standard position before a harder map is applied.",
+"targets": [
+"Calculus|§119 Trigonometry#^def-119-2"
+]
+},
+{
+"note": "§96★ Linear Transformations",
+"line": 77,
+"term": "interior point",
+"count": 1,
+"context": "> 4. **Check** the images of a corner or a boundary line, and of one interior point, by writing · and · in terms of · and ·.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§97★ The Transformation w = 1∕z",
+"line": 114,
+"term": "continuous function",
+"count": 1,
+"context": "> *At a finite ·:* · is a quotient of continuous functions with nonzero denominator near ·, so · (⟂).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§97★ The Transformation w = 1∕z",
+"line": 114,
+"term": "quotient of continuous functions",
+"count": 1,
+"context": "> *At a finite ·:* · is a quotient of continuous functions with nonzero denominator near ·, so · (⟂).",
+"targets": [
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-3"
+]
+},
+{
+"note": "§97★ The Transformation w = 1∕z",
+"line": 123,
+"term": "homeomorphism",
+"count": 1,
+"context": "s · of · are exactly the complements of closed disks, as in that topology, and Theorem §97.2 says that · is a homeomorphism of the sphere onto itself (on · it is the rotation through · about the real axis).",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§97★ The Transformation w = 1∕z",
+"line": 130,
+"term": "pointwise",
+"count": 1,
+"context": "> Give the circle · the positive (counterclockwise) orientation. Since · is fixed pointwise by the inversion, (2) shows that · acts on it as the reflection ·. Parametrically, · · goes to",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§98★ Mappings by 1∕z",
+"line": 15,
+"term": "linear map",
+"count": 1,
+"context": "the four cases occurs depends only on whether the original circle or line passes through the origin. With the linear maps of ⟂, this gives the circle-preserving property of all linear fractional transformations (⟂).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§98★ Mappings by 1∕z",
+"line": 117,
+"term": "interior point",
+"count": 1,
+"context": "ubstitute (2) into the inequality that describes the region (it turns into an inequality in ·, ·), or map one interior point.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§99★ Linear Fractional Transformations",
+"line": 15,
+"term": "bijection",
+"count": 1,
+"context": "⟂: **it maps circles and lines onto circles and lines.** Extended to the point at infinity it is a continuous bijection of the extended plane whose inverse is again linear fractional, and compositions of such maps are linear frac",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§99★ Linear Fractional Transformations",
+"line": 15,
+"term": "linear map",
+"count": 6,
+"context": "A linear fractional (Möbius) transformation · is a linear map, the reciprocal, and another linear map, one after the other. So it inherits the property proved for · in ⟂:",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§99★ Linear Fractional Transformations",
+"line": 194,
+"term": "matrix product",
+"count": 1,
+"context": "> and these coefficients are the entries of the matrix product. The determinant of a product is the product of the determinants, which gives ·. So · agrees with the linear",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-3"
+]
+}
+]

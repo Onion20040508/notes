@@ -1,0 +1,4600 @@
+[
+{
+"note": "All Norms on a Finite-Dimensional Space Are Equivalent",
+"line": 27,
+"term": "triangle inequality",
+"count": 2,
+"context": "Compare an arbitrary norm with the coordinate norm ‖x‖₁ = Σ|aᵢ|. The bound ‖x‖′ ≤ C‖x‖₁ is pure algebra (the triangle inequality on a basis). The reverse bound comes from minimizing ‖·‖′ on the ‖·‖₁-unit sphere: the sphere is sequentially",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "All Norms on a Finite-Dimensional Space Are Equivalent",
+"line": 27,
+"term": "compact",
+"count": 2,
+"context": "on a basis). The reverse bound comes from minimizing ‖·‖′ on the ‖·‖₁-unit sphere: the sphere is sequentially compact by the ⟂ applied coordinate by coordinate, ‖·‖′ is continuous there by the reverse triangle inequality, and t",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "All Norms on a Finite-Dimensional Space Are Equivalent",
+"line": 28,
+"term": "finite-dimensional subspaces",
+"count": 1,
+"context": "- **Used for.** Every finite-dimensional normed space is complete (⟂), so finite-dimensional subspaces are closed (⟂). That closedness is what lets ⟂ run at every step of ⟂. Completeness of 𝔽ᵏ is the coordinate s",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-25"
+]
+},
+{
+"note": "All Norms on a Finite-Dimensional Space Are Equivalent",
+"line": 29,
+"term": "compactness",
+"count": 1,
+"context": "- **Fails without finite dimension.** Compactness of the sphere is the step that fails. On the ℓ¹ sphere, e₁, e₂, … are pairwise at distance 2, and on ℓᵖ the n",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 25,
+"term": "inner product space",
+"count": 1,
+"context": "non-negative terms is the supremum of its finite sums (⟂). No completeness is used, so Bessel holds in every inner product space.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 25,
+"term": "supremum",
+"count": 1,
+"context": "t k²‖x‖² elements, so only countably many coefficients are nonzero (⟂, ⟂). A sum of non-negative terms is the supremum of its finite sums (⟂). No completeness is used, so Bessel holds in every inner product space.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 26,
+"term": "convergent series",
+"count": 1,
+"context": "- **Used for.** In a Hilbert space it makes the orthonormal expansion converge. ‖s_n − s_m‖² is a tail of the convergent series Σ|(x, e_j)|², so the partial sums are Cauchy (⟂). Equality for every x is Parseval, which holds exactly for c",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 27,
+"term": "countable",
+"count": 1,
+"context": "* LADR's Bessel inequality for an orthonormal list (⟂) is exactly the finite lemma §24.2. What is new here is countable support and the passage to the limit.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 28,
+"term": "absolute convergence",
+"count": 1,
+"context": "cause the bound states are not complete (⟂); the deficit is the ionization probability. Bessel also gives the absolute convergence in “inserting a complete set of states” (⟂).",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-2",
+"Single Variable Analysis|§14 Series#^def-14-4"
+]
+},
+{
+"note": "Bessel's Inequality",
+"line": 30,
+"term": "fourier series",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (Bessel's inequality for Fourier series, from the mean square error; its consequence that the coefficients tend to 0 is ⟂).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "Bounded Linear Maps Are Continuous",
+"line": 23,
+"term": "kernel",
+"count": 1,
+"context": "nuous with respect to another iff ‖x‖₁ ≤ C‖x‖₂ (⟂). In the Riesz theorem, boundedness enters only to make the kernel closed (⟂).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 34,
+"term": "span",
+"count": 1,
+"context": "only once the sums are read as countable-support limits. They are also equivalent to Lax's definition, closed span = H, via the orthogonal decomposition (⟂).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 35,
+"term": "countable",
+"count": 1,
+"context": "[0,2π] (⟂), where Parseval reads ∫|f|² = Σ|c_n|². It turns maximal orthonormal sets into bases (⟂) and yields countable bases in separable spaces (⟂). Parseval for a complete set drives the perturbation result ⟂ (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 35,
+"term": "separable",
+"count": 1,
+"context": "arseval reads ∫|f|² = Σ|c_n|². It turns maximal orthonormal sets into bases (⟂) and yields countable bases in separable spaces (⟂). Parseval for a complete set drives the perturbation result ⟂ (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 37,
+"term": "basis of a subspace",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the finite expansion in an orthogonal basis of a subspace of ℝⁿ, with worked examples; Parseval is not stated there).",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^lem-3-1"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 38,
+"term": "fourier series",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (Parseval's equality for Fourier series, used to sum series such as Σ1/n⁴).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "Characterizations of an Orthonormal Basis",
+"line": 38,
+"term": "parseval's equality for fourier series",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (Parseval's equality for Fourier series, used to sum series such as Σ1/n⁴).",
+"targets": [
+"Fourier Series and PDEs|Parseval's Equality for Fourier Series"
+]
+},
+{
+"note": "Closest Point in a Closed Convex Set",
+"line": 27,
+"term": "parallelogram law",
+"count": 2,
+"context": "- **How.** Take a minimizing sequence and apply the parallelogram law to x₀ − y_m and x₀ − y_n. Convexity puts the midpoint in K, which forces ‖y_n − y_m‖² < 2/m + 2/n. Completene",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "Closest Point in a Closed Convex Set",
+"line": 28,
+"term": "inner product space",
+"count": 1,
+"context": "h one is needed (⟂). In ℓ¹, a norm with no inner product, closest points need not be unique. In an incomplete inner product space a minimizing sequence need not converge, and for an open K the infimum need not be attained. In a bare normed",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Closest Point in a Closed Convex Set",
+"line": 28,
+"term": "infimum",
+"count": 1,
+"context": "e unique. In an incomplete inner product space a minimizing sequence need not converge, and for an open K the infimum need not be attained. In a bare normed space only an almost-closest point is available, as in Step 2 of ⟂. Si",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Completion of a Normed Space",
+"line": 30,
+"term": "triangle inequality",
+"count": 1,
+"context": "- **How.** The norm of a class is lim‖x_n‖, which exists because the reverse triangle inequality makes (‖x_n‖) Cauchy in ℝ. For completeness, take a Cauchy sequence of classes and pick the diagonal y_j = x^",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "Completion of a Normed Space",
+"line": 31,
+"term": "equivalence classes",
+"count": 1,
+"context": "- **Same idea elsewhere.** The model is ℝ as equivalence classes of Cauchy sequences of rationals (⟂, carried out in ⟂, where ε must stay rational because ℝ is not yet availa",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "Completion of a Normed Space",
+"line": 32,
+"term": "isometry",
+"count": 1,
+"context": "retely. If X embeds isometrically and densely in a Banach space Z, then Z is the completion (⟂), unique up to isometry (⟂); the recipe is ⟂. This gives (C[a,b], ‖·‖ₚ) → Lᵖ[a,b] (⟂, by the ⟂ and ⟂), and C² with a C¹ norm → C¹ (⟂)",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "Continuous Functions with the Sup Norm Form a Banach Space",
+"line": 11,
+"term": "supremum",
+"count": 1,
+"context": "- [[§11 Completeness#^thm-11-1|Theorem §11.1: C[a,b] with the Supremum Norm is a Banach Space]], in ⟂",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Continuous Functions with the Sup Norm Form a Banach Space",
+"line": 31,
+"term": "pointwise",
+"count": 2,
+"context": "- **How.** The proof finds a candidate, then closes (⟂). A sup-norm Cauchy sequence is pointwise Cauchy, so it has a pointwise limit f, by completeness of the scalars (⟂). Keeping N independent of t upgrade",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "Continuous Functions with the Sup Norm Form a Banach Space",
+"line": 33,
+"term": "dense",
+"count": 1,
+"context": "nt 1 is not attained (⟂). Being complete, C[0,1] is closed in L^∞[0,1]; as a proper closed subspace it is not dense there (⟂), matching the place where 551's approximation chain breaks (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Continuous functions on a closed interval",
+"line": 7,
+"term": "continuous function",
+"count": 5,
+"context": "The space · of continuous functions ·, the first function space of the course. With the supremum norm · it is a Banach space; with the · norm ·,",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Continuous functions on a closed interval",
+"line": 7,
+"term": "supremum",
+"count": 3,
+"context": "The space · of continuous functions ·, the first function space of the course. With the supremum norm · it is a Banach space; with the · norm ·, ·, it is a normed space that is not complete, and its complet",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Continuous functions on a closed interval",
+"line": 18,
+"term": "dense",
+"count": 2,
+"context": "- Continuous functions are not dense in · (⟂)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Continuous functions on a closed interval",
+"line": 20,
+"term": "hölder's inequality",
+"count": 2,
+"context": "- Hölder's inequality for continuous functions (⟂)",
+"targets": [
+"Measure Theory|Hölder's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5"
+]
+},
+{
+"note": "Continuous functions on a closed interval",
+"line": 20,
+"term": "hölder",
+"count": 2,
+"context": "- Hölder's inequality for continuous functions (⟂)",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Every Subspace Has a Complement",
+"line": 24,
+"term": "isomorphic",
+"count": 1,
+"context": "0 other than the x-axis complements the x-axis in ℝ² (⟂). So ⟂ is not canonical, although all complements are isomorphic to X/Y (⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 23,
+"term": "span",
+"count": 1,
+"context": "ould be normalized and added. A complete set is a basis by ⟂. Lax shows instead that a maximal set has closed span H, via Bessel (⟂).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 23,
+"term": "orthonormal set",
+"count": 2,
+"context": "- **How.** Apply ⟂ to orthonormal sets ordered by inclusion (⟂). The union of a chain is orthonormal, because any two of its members lie in one set",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 24,
+"term": "countable",
+"count": 3,
+"context": "- **Finite dimensions.** Gram–Schmidt suffices (⟂, ⟂). The step-by-step construction looks countable but need not be, so Zorn replaces the enumeration (⟂). When a countable dense set is available, Gram–Schmidt",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 24,
+"term": "dense",
+"count": 1,
+"context": "-by-step construction looks countable but need not be, so Zorn replaces the enumeration (⟂). When a countable dense set is available, Gram–Schmidt along it does work (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 25,
+"term": "uncountable",
+"count": 1,
+"context": "e every orthonormal set is countable (⟂), so every orthonormal basis of L²(ℝⁿ) is countably infinite (⟂). The uncountable family of position eigenstates therefore cannot be one.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Existence of Orthonormal Bases",
+"line": 25,
+"term": "separable",
+"count": 1,
+"context": "- **Size of the basis.** Bare existence is “almost useless, because there are too many” (Wu). In a separable space every orthonormal set is countable (⟂), so every orthonormal basis of L²(ℝⁿ) is countably infinite (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Finitely supported sequences c₀₀",
+"line": 7,
+"term": "minkowski's inequality",
+"count": 3,
+"context": "s hypotheses are needed, and in · that they are sharp: ·. On it all the ·-norms are finite sums, which is why Minkowski's inequality is proved there first and then passed to all sequences by truncation. Its orthogonal complement in · is compu",
+"targets": [
+"Measure Theory|Minkowski's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9"
+]
+},
+{
+"note": "Finitely supported sequences c₀₀",
+"line": 7,
+"term": "minkowski",
+"count": 3,
+"context": "s hypotheses are needed, and in · that they are sharp: ·. On it all the ·-norms are finite sums, which is why Minkowski's inequality is proved there first and then passed to all sequences by truncation. Its orthogonal complement",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "Finitely supported sequences c₀₀",
+"line": 12,
+"term": "finite-dimensional subspaces",
+"count": 2,
+"context": "- · is not closed in ·: finite-dimensional subspaces are closed, infinite-dimensional ones need not be (⟂)",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-25"
+]
+},
+{
+"note": "Finitely supported sequences c₀₀",
+"line": 15,
+"term": "dense",
+"count": 2,
+"context": "- Finitely supported sequences with rational entries are dense: · is separable (⟂)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Finitely supported sequences c₀₀",
+"line": 15,
+"term": "separable",
+"count": 2,
+"context": "- Finitely supported sequences with rational entries are dense: · is separable (⟂)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Functional Analysis",
+"line": 20,
+"term": "orthonormal",
+"count": 2,
+"context": "s**: limits must be produced, not assumed — the completion, the Banach spaces · and ·, and the convergence of orthonormal expansions.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Functional Analysis",
+"line": 21,
+"term": "countable",
+"count": 1,
+"context": "finite sums in a bare linear space, equivalence of all norms in finite dimensions, the non-compact unit ball, countable orthonormal bases.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Functional Analysis",
+"line": 26,
+"term": "separation",
+"count": 1,
+"context": "mns). Solid arrows follow a thread from one stage to the next; dashed red arrows mark where threads meet: the separation theorem (Hahn–Banach applied to a gauge), the projection theorem (convexity needing completeness), and the Ri",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "Functional Analysis",
+"line": 150,
+"term": "dense",
+"count": 1,
+"context": "- ⟂: dense but not closed in ℓᵖ; why closedness hypotheses are needed",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 18,
+"term": "span",
+"count": 3,
+"context": "| 1 | Tue Sep 1 | Linear spaces: axioms, subspaces, sums and direct sums (internal and external), span, the quotient ·. Wu suggested that · “in some sense”, which became HW1. Linear maps and isomorphisms; convex",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 18,
+"term": "direct sums",
+"count": 1,
+"context": "| 1 | Tue Sep 1 | Linear spaces: axioms, subspaces, sums and direct sums (internal and external), span, the quotient ·. Wu suggested that · “in some sense”, which became HW1. Linear",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^prop-20-7"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 19,
+"term": "supremum",
+"count": 2,
+"context": "hn–Banach: why linear functionals; extending from a line; the one-step extension (with the question whether a supremum preserves linearity); Zorn's lemma, the partial-order argument not done on the board. Convex sets from ·: · i",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 20,
+"term": "separation",
+"count": 1,
+"context": "heck left to us); interior points are exactly ·; convex sets of interior points are sublevel sets. Hyperplane separation (the general case left to us). Complex Hahn–Banach: the rotation trick, and a student's route that gives only",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 21,
+"term": "triangle inequality",
+"count": 1,
+"context": "d space (HW), Hölder. Norms and seminorms; norms are gauges; norms on ·; the induced metric (stated); reverse triangle inequality; continuity of the norm. Completion of a metric space by classes of Cauchy sequences (why classes; examples i",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 21,
+"term": "cauchy sequences",
+"count": 2,
+"context": "| 4 | Thu Sep 10 | Board order: norm, metric, convergence and Cauchy sequences, completion, complete and Banach spaces, equivalent norms, subspace and direct-sum norms, quotient norm, the",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 21,
+"term": "hölder's inequality",
+"count": 1,
+"context": "ercise); the quotient norm, which needs a closed subspace. The completion of a normed space (HW2). Last part: Hölder's inequality: the space ·, ·-norms, conjugate exponents, the statement and the case · | ⟂ (⟂, ⟂, ⟂, ⟂, ⟂, ⟂, ⟂, ⟂, ⟂, ⟂, ⟂",
+"targets": [
+"Measure Theory|Hölder's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 21,
+"term": "hölder",
+"count": 5,
+"context": "paces, equivalent norms, subspace and direct-sum norms, quotient norm, the completion as a normed space (HW), Hölder. Norms and seminorms; norms are gauges; norms on ·; the induced metric (stated); reverse triangle inequality;",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 22,
+"term": "minkowski",
+"count": 2,
+"context": "p 15 (approx.) | No banner in the tex; the text marks the case · of Hölder “(Lecture 5.)”. Hölder from Young; Minkowski for sequences, first for finitely supported sequences and then by truncation; · is a normed space; the nestin",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "continuous function",
+"count": 1,
+"context": "ölder, Minkowski and completeness for functions (not proved; MATH 551); density of smooth functions deferred; continuous functions are not dense in ·. (approx.: §17 has no banner of its own, and Lecture 5 ended with ·.) Identifying a comple",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "dense",
+"count": 1,
+"context": "ness for functions (not proved; MATH 551); density of smooth functions deferred; continuous functions are not dense in ·. (approx.: §17 has no banner of its own, and Lecture 5 ended with ·.) Identifying a completion; uniquene",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "compact",
+"count": 1,
+"context": "drawn in Lecture 6); the constant · cannot be attained; the unit ball of an infinite-dimensional space is not compact. Inner products: definition, ·, ·, ·; Cauchy–Schwarz; the induced norm; Hilbert spaces | ⟂ (⟂, ⟂, ⟂, ⟂, ⟂, ⟂;",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "open cover",
+"count": 1,
+"context": "queness of the completion (stated); “how do we know we have not added too much?”. Sequential compactness (the open-cover version set aside); Riesz's lemma (the picture drawn in Lecture 6); the constant · cannot be attained; the un",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "compactness",
+"count": 2,
+"context": "a completion; uniqueness of the completion (stated); “how do we know we have not added too much?”. Sequential compactness (the open-cover version set aside); Riesz's lemma (the picture drawn in Lecture 6); the constant · cannot be",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 23,
+"term": "smooth function",
+"count": 1,
+"context": "rable” left unspecified); Hölder, Minkowski and completeness for functions (not proved; MATH 551); density of smooth functions deferred; continuous functions are not dense in ·. (approx.: §17 has no banner of its own, and Lecture 5 ende",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 24,
+"term": "inner product space",
+"count": 1,
+"context": "| 7 | Tue Sep 22 | An inner product space that is not a Hilbert space; Sobolev spaces; the parallelogram law and polarization (part (b) not covered); J",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 24,
+"term": "parallelogram law",
+"count": 2,
+"context": "| 7 | Tue Sep 22 | An inner product space that is not a Hilbert space; Sobolev spaces; the parallelogram law and polarization (part (b) not covered); Jordan–von Neumann (HW3) and “only ·”. Continuity of the inner produ",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 25,
+"term": "orthonormal",
+"count": 8,
+"context": "nel is closed and has codimension one; existence and uniqueness (two points raised in lecture); Wu on method. Orthonormal sets; Pythagoras and the finite Bessel inequality; sums of non-negative families; only countably many coeffic",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 25,
+"term": "kernel",
+"count": 1,
+"context": "| 8 | Thu Sep 24 | Riesz representation, part (2): the idea from ·; the kernel is closed and has codimension one; existence and uniqueness (two points raised in lecture); Wu on method. Ort",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 25,
+"term": "codimension",
+"count": 2,
+"context": "| 8 | Thu Sep 24 | Riesz representation, part (2): the idea from ·; the kernel is closed and has codimension one; existence and uniqueness (two points raised in lecture); Wu on method. Orthonormal sets; Pythagoras and",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 25,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "| Thu Sep 24 | Riesz representation, part (2): the idea from ·; the kernel is closed and has codimension one; existence and uniqueness (two points raised in lecture); Wu on method. Orthonormal sets; Pythagoras and the finite Bessel inequality;",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 25,
+"term": "orthonormal set",
+"count": 3,
+"context": "nel is closed and has codimension one; existence and uniqueness (two points raised in lecture); Wu on method. Orthonormal sets; Pythagoras and the finite Bessel inequality; sums of non-negative families; only countably many coefficients",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 26,
+"term": "countable",
+"count": 1,
+"context": "which as set asks for · separable and · not separable). A Hilbert space is separable if and only if it has a countable orthonormal basis; Gram–Schmidt. Isomorphic Hilbert spaces (a student asked whether isomorphisms preserve dis",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 26,
+"term": "isomorphic",
+"count": 1,
+"context": "t separable). A Hilbert space is separable if and only if it has a countable orthonormal basis; Gram–Schmidt. Isomorphic Hilbert spaces (a student asked whether isomorphisms preserve distance); classification of separable Hilbert",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 26,
+"term": "separable",
+"count": 9,
+"context": "| 9 | Tue Sep 29 | Existence of orthonormal bases: the construction described informally, then Zorn. Separable spaces; · and · are separable for ·; · and · are not (the second stated without proof; announced as HW5, whic",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 27,
+"term": "bilinear form",
+"count": 1,
+"context": "nach space; Riesz representation with · and ·; ·, ·; not every space is its own dual, · (proof next lecture). Bilinear forms on · are matrices; bounded sesquilinear forms are bounded operators (the norm equality left to the class); La",
+"targets": [
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-1"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 29,
+"term": "metric spaces",
+"count": 1,
+"context": "ement is uncertain; the proofs of ⟂, ⟂ and ⟂; the proofs of ⟂ and ⟂; the nesting of the · (⟂); compactness in metric spaces (⟂, raised in class and set aside) and ⟂; part (b) of ⟂; the proof of ⟂; and ⟂, the independence of the enume",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 44,
+"term": "finite-dimensional subspaces",
+"count": 1,
+"context": "| HW2 | 2(b): finite-dimensional subspaces of a normed space are closed | ⟂; ⟂ |",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-25"
+]
+},
+{
+"note": "Functional Analysis Course Log",
+"line": 57,
+"term": "null space",
+"count": 2,
+"context": "| HW5 | 4: the null space of a nonzero linear functional has codimension one | ⟂; ⟂ |",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 22,
+"term": "compact",
+"count": 4,
+"context": "| Compact | sequentially compact; agrees with the open-cover notion (Theorem ⟂) | “compact” in the sequential sense (§5",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 22,
+"term": "open cover",
+"count": 1,
+"context": "| Compact | sequentially compact; agrees with the open-cover notion (Theorem ⟂) | “compact” in the sequential sense (§5.2) |",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 26,
+"term": "orthonormal",
+"count": 15,
+"context": "| Orthonormal family | ·, any index set | · |",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 30,
+"term": "countable",
+"count": 3,
+"context": "| Separable | countable · with every point a limit of a sequence in · | countable set whose closure is the whole space (the same, by",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 30,
+"term": "separable",
+"count": 7,
+"context": "| Separable | countable · with every point a limit of a sequence in · | countable set whose closure is the whole space (t",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 30,
+"term": "countable set",
+"count": 1,
+"context": "| Separable | countable · with every point a limit of a sequence in · | countable set whose closure is the whole space (the same, by Definition ⟂) |",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 38,
+"term": "separation",
+"count": 3,
+"context": "| Separation | a point from a nonempty convex set all of whose points are interior | also one interior point suffices (Cor",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 39,
+"term": "hölder",
+"count": 3,
+"context": "| Hölder | proved from Young's inequality | cited from Courant | Thm ⟂ |",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 40,
+"term": "minkowski",
+"count": 2,
+"context": "| Minkowski | split ·, Hölder twice, truncation | duality formula · (Thm 5.5) | Thm ⟂ |",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 42,
+"term": "integrable function",
+"count": 1,
+"context": "| · | working definition by Lebesgue integrable functions; equals the completion of · | *defined* as the completion of · in the ·-norm (example (f)) | Prop. ⟂ |",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 42,
+"term": "integrable functions",
+"count": 1,
+"context": "| · | working definition by Lebesgue integrable functions; equals the completion of · | *defined* as the completion of · in the ·-norm (example (f)) | Prop. ⟂ |",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 44,
+"term": "parallelogram law",
+"count": 2,
+"context": "| Closest point | Hilbert spaces, via the parallelogram law | also uniformly convex Banach spaces (Thm 5.8); not covered | Thm ⟂ |",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 45,
+"term": "null space",
+"count": 3,
+"context": "| Riesz representation | explicit decomposition · | functionals with the same null space are proportional (Lemma 6.5) | Thm ⟂ |",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 46,
+"term": "span",
+"count": 8,
+"context": "| Orthonormal basis | expansion; equivalent to completeness | closed linear span · | Prop. ⟂ |",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 47,
+"term": "orthonormal set",
+"count": 3,
+"context": "| Existence of an orthonormal basis | maximal orthonormal set is complete: add · | maximal set has closed span ·, via Bessel | Thm ⟂ |",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 64,
+"term": "compactness",
+"count": 1,
+"context": "| ⟂ Compactness | §5.2, Thm 6, Lemma 7 | Uniform convexity and Mazur–Ulam (§5.2 and §5.3) not covered. |",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 114,
+"term": "supremum",
+"count": 1,
+"context": "| §5.1, examples (c)–(e) | Theorem ⟂ | · with the Supremum Norm is a Banach Space |",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 118,
+"term": "hölder's inequality",
+"count": 1,
+"context": "| §5.1, (19) | Theorem ⟂ | Hölder's Inequality for Sequences |",
+"targets": [
+"Measure Theory|Hölder's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 127,
+"term": "dense",
+"count": 2,
+"context": "| §5.1, before Thm 2; “dense” in the definition of separable space | Definition ⟂ | Closure; Dense Subset |",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 130,
+"term": "minkowski's inequality",
+"count": 1,
+"context": "| §5.1, Thms 4–5 | Theorem ⟂ | Minkowski's Inequality for Sequences |",
+"targets": [
+"Measure Theory|Minkowski's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 138,
+"term": "inner product space",
+"count": 1,
+"context": "| §6.1, Example 1 | Example ⟂ | An Inner Product Space that is Not a Hilbert Space |",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 152,
+"term": "kernel",
+"count": 1,
+"context": "| §6.3, Lemma 5(i) | Lemma ⟂ | The Kernel Has Codimension One |",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "Functional Analysis Lax Concordance",
+"line": 152,
+"term": "codimension",
+"count": 2,
+"context": "| §6.3, Lemma 5(i) | Lemma ⟂ | The Kernel Has Codimension One |",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 30,
+"term": "injective",
+"count": 1,
+"context": "> To show a representation · (·, ·) is unique, or that a map reading off components is injective: subtract two representations. The difference · lies in ·; if that is ·, both differences vanish. The same ar",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 56,
+"term": "orthonormal",
+"count": 5,
+"context": "> - **Existence of an orthonormal basis** (Lecture 9, Theorem ⟂): objects are orthonormal sets; the one-step move adds · for a nonzero · orthog",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 56,
+"term": "orthonormal set",
+"count": 2,
+"context": "> - **Existence of an orthonormal basis** (Lecture 9, Theorem ⟂): objects are orthonormal sets; the one-step move adds · for a nonzero · orthogonal to all of them.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 76,
+"term": "subsequence",
+"count": 1,
+"context": "coordinatewise for sequence spaces (· is complete), pointwise or almost everywhere for function spaces (via a subsequence) — and let that produce an object ·. At this stage nothing is known about · except that it exists.",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 76,
+"term": "almost everywhere",
+"count": 1,
+"context": "reduces to a space already known complete — coordinatewise for sequence spaces (· is complete), pointwise or almost everywhere for function spaces (via a subsequence) — and let that produce an object ·. At this stage nothing is known ab",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 76,
+"term": "pointwise",
+"count": 2,
+"context": "er* form that reduces to a space already known complete — coordinatewise for sequence spaces (· is complete), pointwise or almost everywhere for function spaces (via a subsequence) — and let that produce an object ·. At this stag",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 86,
+"term": "uniform convergence",
+"count": 1,
+"context": "> - **· with the sup norm** (HW2 P1, Theorem ⟂): candidate by pointwise limits; closing by uniform convergence, then the · argument for continuity of the limit.",
+"targets": [
+"Complex Variables|§69★ Absolute and Uniform Convergence of Power Series#^def-69-2",
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-9",
+"Single Variable Analysis|§24 Uniform Convergence#^def-24-2"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 102,
+"term": "minkowski",
+"count": 1,
+"context": "> - **Minkowski for sequences** (lecture, Theorem ⟂): the cancellation of · is only valid for finitely supported sequences; t",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 104,
+"term": "hölder",
+"count": 1,
+"context": "> - **Hölder for finite sums** is the special case of Theorem ⟂ with zero tails; conversely no truncation is needed there",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 108,
+"term": "compactness",
+"count": 2,
+"context": "## Technique 7: Compactness of the Unit Sphere in Finite Dimensions",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 111,
+"term": "infimum",
+"count": 2,
+"context": "), show the function is continuous on · (usually via a one-sided estimate and the ⟂), conclude it attains its infimum, and use positivity at the minimizer to get ·. Homogeneity then extends the bound from · to all of ·. The ste",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 111,
+"term": "compact",
+"count": 1,
+"context": "s positive function is bounded away from ·: restrict to the unit sphere · of one norm, show · is sequentially compact (bounded coordinates · ⟂ coordinate by coordinate), show the function is continuous on · (usually via a one-s",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 117,
+"term": "finite-dimensional subspaces",
+"count": 1,
+"context": "> - **Finite-dimensional subspaces are closed** (P2(b), Corollary ⟂), via the equivalence with the coordinate norm.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-25"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 139,
+"term": "dense",
+"count": 3,
+"context": "> - (ii) show · is dense in ·;",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 186,
+"term": "countable",
+"count": 5,
+"context": "> To show that · is countable for a family of numbers · over a possibly uncountable index set, split it into level sets ·, so that ·, and b",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 186,
+"term": "uncountable",
+"count": 3,
+"context": "> To show that · is countable for a family of numbers · over a possibly uncountable index set, split it into level sets ·, so that ·, and bound the number of elements of each · by an inequality",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 198,
+"term": "span",
+"count": 2,
+"context": "find a vector · whose inner product with · is determined by the data, and apply ⟂: ·. The best · lies in the span of the vectors whose inner products with · are prescribed (projection onto that span). Dually, to show a vect",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 224,
+"term": "supremum",
+"count": 2,
+"context": "y many remaining parameters by nearby rationals. The first step is what fails in · and ·, where the norm is a supremum rather than a sum or integral.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 224,
+"term": "separable",
+"count": 1,
+"context": "> To show a space is separable, write down a countable set built from finitely many rational parameters (finitely many rational coordinates,",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 224,
+"term": "countable set",
+"count": 1,
+"context": "> To show a space is separable, write down a countable set built from finitely many rational parameters (finitely many rational coordinates, rational coefficients on fi",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 224,
+"term": "convergent series",
+"count": 1,
+"context": "a ⟂ over the number of parameters of countable products. Density: first cut off a small “tail” (the tail of a convergent series or expansion, or the part of a function outside a large box), then replace the finitely many remaining parame",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 230,
+"term": "continuous function",
+"count": 1,
+"context": "> - ·, · (Proposition ⟂), after reducing to continuous functions.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 251,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "· by ⟂ and adding and subtracting ·, the function ·. Minimizing it is minimizing a distance, and the ⟂ gives existence and uniqueness of the minimizer.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 260,
+"term": "null space",
+"count": 4,
+"context": "## Technique 18: Subtract a Multiple of · to Land in the Null Space",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "Functional Analysis Problem-Solving Techniques",
+"line": 268,
+"term": "codimension",
+"count": 1,
+"context": "> - Codimension one (P4, Proposition ⟂).",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "Hahn–Banach Theorem",
+"line": 24,
+"term": "countable",
+"count": 1,
+"context": "one” on the pairs (Z, ℓ_Z), ordered by extension (⟂). In a separable normed space, ordinary induction along a countable dense sequence would do instead (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Hahn–Banach Theorem",
+"line": 24,
+"term": "dense",
+"count": 1,
+"context": "e pairs (Z, ℓ_Z), ordered by extension (⟂). In a separable normed space, ordinary induction along a countable dense sequence would do instead (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Hahn–Banach Theorem",
+"line": 24,
+"term": "separable",
+"count": 1,
+"context": "empty by subadditivity. ⟂ then says “repeat until done” on the pairs (Z, ℓ_Z), ordered by extension (⟂). In a separable normed space, ordinary induction along a countable dense sequence would do instead (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Hahn–Banach Theorem",
+"line": 25,
+"term": "separation",
+"count": 1,
+"context": "a general p.** The theorem is stated for a positive homogeneous subadditive p rather than a norm, because the separation theorem takes p to be the gauge of a convex set (⟂). Every norm and every C‖·‖ is such a p (⟂(a)). The simple",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "Hahn–Banach Theorem",
+"line": 27,
+"term": "inner product space",
+"count": 1,
+"context": "- **Same idea elsewhere.** On ℝⁿ every functional is x ↦ a·x (⟂), and on a finite-dimensional inner product space every functional is ⟨·, a⟩ (⟂, LADR 6.42). On a Hilbert space the bounded functionals are identified by the ⟂",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Hyperplane Separation Theorem",
+"line": 26,
+"term": "span",
+"count": 1,
+"context": ".** This is where the functionals and convexity threads meet. Translate so that 0 ∈ K, and set ℓ(a y₀) = a on span{y₀}. Since y₀ ∉ K = {p_K < 1}, we have p_K(y₀) ≥ 1, so ℓ ≤ p_K on the line. The ⟂ extends ℓ to L ≤ p_K on X,",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Jordan–von Neumann Theorem",
+"line": 27,
+"term": "parallelogram law",
+"count": 3,
+"context": "- **How.** Define (x, y) by polarization. The parallelogram law gives a midpoint identity, hence additivity, and additivity gives ℚ-homogeneity by algebra. Continuity of the",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "Lax–Milgram Theorem",
+"line": 22,
+"term": "spectrum",
+"count": 1,
+"context": "hlet problem for non-self-adjoint equations (Lax §7.2) and to show that a bounded symmetric operator has real spectrum (Lax §31.1, Thm 2).",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "Lax–Milgram Theorem",
+"line": 22,
+"term": "dirichlet problem",
+"count": 1,
+"context": "- **Uses.** Wu called it “very useful in solving elliptic PDE”; Lax applies it to the Dirichlet problem for non-self-adjoint equations (Lax §7.2) and to show that a bounded symmetric operator has real spectrum (La",
+"targets": [
+"Fourier Series and PDEs|§35 Potential Equation#^def-35-2"
+]
+},
+{
+"note": "Lax–Milgram Theorem",
+"line": 22,
+"term": "dirichlet",
+"count": 1,
+"context": "- **Uses.** Wu called it “very useful in solving elliptic PDE”; Lax applies it to the Dirichlet problem for non-self-adjoint equations (Lax §7.2) and to show that a bounded symmetric operator has real spec",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "L² function spaces",
+"line": 7,
+"term": "eigenvector",
+"count": 3,
+"context": "Fourier basis ·, and · is the state space of the quantum-mechanics companion, separable but without position eigenvectors. As Wu stressed, measure theory supplies the examples of functional analysis: the Lebesgue theory of · is in",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "L² function spaces",
+"line": 7,
+"term": "separable",
+"count": 5,
+"context": "en and odd functions, · has the Fourier basis ·, and · is the state space of the quantum-mechanics companion, separable but without position eigenvectors. As Wu stressed, measure theory supplies the examples of functional analysi",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "L² function spaces",
+"line": 11,
+"term": "hölder",
+"count": 2,
+"context": "- The · inner product, convergent by Hölder's inequality (⟂)",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "L² function spaces",
+"line": 19,
+"term": "fourier series",
+"count": 2,
+"context": "- Fourier series converge in ·, with Parseval's equality (⟂)",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "L² function spaces",
+"line": 19,
+"term": "parseval's equality",
+"count": 2,
+"context": "- Fourier series converge in ·, with Parseval's equality (⟂)",
+"targets": [
+"Fourier Series and PDEs|§11★ Mean Error and Convergence in Mean#^thm-11-4"
+]
+},
+{
+"note": "L² function spaces",
+"line": 24,
+"term": "orthonormal",
+"count": 2,
+"context": "- · is separable, and every orthonormal basis of it is countably infinite (⟂)",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Norms on ℝⁿ and their unit balls",
+"line": 20,
+"term": "compact",
+"count": 2,
+"context": "- The closed unit ball of · is compact under any norm (⟂)",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "One-Step Extension Lemma",
+"line": 25,
+"term": "span",
+"count": 1,
+"context": "- **How.** A linear extension to span{x₀, Y} is fixed by the single number c = L(x₀). By positive homogeneity it suffices to check the multiples a",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "One-Step Extension Lemma",
+"line": 25,
+"term": "supremum",
+"count": 1,
+"context": "onempty because ℓ(y′) + ℓ(y) = ℓ(y′ + y) ≤ p((y′ − x₀) + (x₀ + y)) ≤ p(y′ − x₀) + p(x₀ + y). Taking c to be a supremum uses the ⟂.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "One-Step Extension Lemma",
+"line": 25,
+"term": "linear extension",
+"count": 1,
+"context": "- **How.** A linear extension to span{x₀, Y} is fixed by the single number c = L(x₀). By positive homogeneity it suffices to check the mult",
+"targets": [
+"Group Theory|§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2"
+]
+},
+{
+"note": "One-Step Extension Lemma",
+"line": 27,
+"term": "orthonormal",
+"count": 1,
+"context": "t (⟂). The same one-step move enlarges a subspace that meets Y only in 0 (⟂, for ⟂). It also adds x/‖x‖ to an orthonormal set (⟂).",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "One-Step Extension Lemma",
+"line": 27,
+"term": "orthonormal set",
+"count": 1,
+"context": "t (⟂). The same one-step move enlarges a subspace that meets Y only in 0 (⟂, for ⟂). It also adds x/‖x‖ to an orthonormal set (⟂).",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Orthogonal Decomposition Theorem",
+"line": 32,
+"term": "span",
+"count": 2,
+"context": "e non-closed c₀₀ ⊂ ℓ², c₀₀⊥ = {0}, and both (1) and (2) fail (⟂). For an arbitrary set M, (M⊥)⊥ is the closed span (⟂). Without completeness only the inclusion of the closed span in (M⊥)⊥ survives (⟂).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Orthogonal Decomposition Theorem",
+"line": 33,
+"term": "kernel",
+"count": 1,
+"context": "keeps the promise of ⟂: for closed Y in a Hilbert space, Y⊥ is a complement and models the quotient (⟂). The kernel of a nonzero bounded functional has a one-dimensional orthogonal complement (⟂), which gives the ⟂. Other use",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "Orthogonal Decomposition Theorem",
+"line": 35,
+"term": "orthogonal basis",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the ℝⁿ case, with the projection computed from an orthogonal basis) and ⟂ (the projection is the closest point), with worked examples.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-2"
+]
+},
+{
+"note": "Quotient Norm",
+"line": 27,
+"term": "infimum",
+"count": 3,
+"context": "- **How.** ‖[x]‖ is the infimum of the norms in the coset, i.e. the distance from 0 to the translate x + Y. Homogeneity follows by substituti",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Quotient Norm",
+"line": 29,
+"term": "total variation",
+"count": 1,
+"context": "- **Same idea elsewhere.** The underlying linear space is the algebraic quotient (⟂; ⟂, ⟂). In 551, total variation is only a seminorm on BV and becomes a norm on BV modulo constants (⟂).",
+"targets": [
+"Measure Theory|§18 Differentiation Theory#^def-18-2"
+]
+},
+{
+"note": "Riesz Representation Theorem (Hilbert spaces)",
+"line": 26,
+"term": "null space",
+"count": 1,
+"context": ", and a = conj(ℓ(x₀))·x₀/‖x₀‖² for any nonzero x₀ ∈ N⊥. Lax argues instead that two functionals with the same null space are proportional (⟂).",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "Riesz Representation Theorem (Hilbert spaces)",
+"line": 27,
+"term": "kernel",
+"count": 1,
+"context": "- **Why the hypotheses.** Boundedness is used only to make the kernel closed, and completeness only through the orthogonal decomposition. The physicists' “every functional is a br",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "Riesz Representation Theorem (Hilbert spaces)",
+"line": 30,
+"term": "bijection",
+"count": 1,
+"context": "- **Same idea elsewhere.** The Riesz map a ↦ (·, a) is a conjugate-linear isometric bijection H → H* (⟂). A finite-dimensional space is isomorphic to its dual only after choosing a basis (⟂); the inner p",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Riesz Representation Theorem (Hilbert spaces)",
+"line": 30,
+"term": "isomorphic",
+"count": 1,
+"context": "The Riesz map a ↦ (·, a) is a conjugate-linear isometric bijection H → H* (⟂). A finite-dimensional space is isomorphic to its dual only after choosing a basis (⟂); the inner product removes the choice. In 591's terms a real inne",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Riesz's Lemma",
+"line": 23,
+"term": "infimum",
+"count": 1,
+"context": "- **How.** Pick x₀ ∉ Y. Then d = dist(x₀, Y) > 0 because Y is closed. Since the infimum may not be attained, take y₀ ∈ Y with ‖x₀ − y₀‖ = a < 2d and normalize z = (x₀ − y₀)/a. Since y₀ + ay ∈ Y, ‖z",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 30,
+"term": "countable",
+"count": 4,
+"context": "- **How.** (⇒) Finite rational combinations of basis vectors form a countable set, and it is dense: truncate the expansion, then round the finitely many coefficients, as for ℓᵖ (⟂). (⇐) T",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 30,
+"term": "span",
+"count": 1,
+"context": "ely many coefficients, as for ℓᵖ (⟂). (⇐) Thin the dense sequence to a linearly independent one with the same span, and apply Gram–Schmidt (⟂). The result is complete: if x ⊥ every e_j, then x is orthogonal to the dense set,",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 30,
+"term": "linearly independent",
+"count": 1,
+"context": "ate the expansion, then round the finitely many coefficients, as for ℓᵖ (⟂). (⇐) Thin the dense sequence to a linearly independent one with the same span, and apply Gram–Schmidt (⟂). The result is complete: if x ⊥ every e_j, then x is ortho",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 30,
+"term": "countable set",
+"count": 1,
+"context": "- **How.** (⇒) Finite rational combinations of basis vectors form a countable set, and it is dense: truncate the expansion, then round the finitely many coefficients, as for ℓᵖ (⟂). (⇐) Thin",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 31,
+"term": "orthonormal",
+"count": 5,
+"context": "ic notion of 551 (⟂) and the topological one of 590 (⟂). Since L²(ℝⁿ) is separable (⟂, ⟂), it has a countable orthonormal basis.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 32,
+"term": "uncountable",
+"count": 1,
+"context": "ir own point of the dense set (⟂). Hence every orthonormal basis of L²(ℝⁿ) is countably infinite (⟂), and the uncountable family |x⟩ cannot be one.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Separable Hilbert Spaces Have Countable Orthonormal Bases",
+"line": 32,
+"term": "orthonormal set",
+"count": 1,
+"context": "- **Stronger.** In a separable space every orthonormal set is countable. Orthonormal vectors are √2 apart, so disjoint balls of radius √2/2 around them each catch their",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Sequence spaces ℓᵖ",
+"line": 7,
+"term": "compact",
+"count": 3,
+"context": "their norms are not equivalent where both are defined. Each · is a Banach space, its closed unit ball is not compact, · is the one with an inner product, and in · closest points need not be unique. The standard vectors have th",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Sequence spaces ℓᵖ",
+"line": 24,
+"term": "orthonormal",
+"count": 2,
+"context": "- The standard basis of · is an orthonormal basis (⟂)",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Sequence spaces ℓᵖ",
+"line": 25,
+"term": "separable",
+"count": 8,
+"context": "- · is separable for · (⟂)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Sequence spaces ℓᵖ",
+"line": 28,
+"term": "isometry",
+"count": 2,
+"context": "- The shift · on ·: an isometry that is not an isomorphism (⟂)",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "Standard unit vectors eₙ",
+"line": 7,
+"term": "linearly independent",
+"count": 3,
+"context": "The sequences ·, with the · in the ·-th place, in the ⟂. They are linearly independent, which is what makes · infinite-dimensional, and they are the sequence that shows what fails there: · for ·,",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "Standard unit vectors eₙ",
+"line": 7,
+"term": "orthonormal",
+"count": 5,
+"context": "quivalence of the ·-norms on · and the failure of the parallelogram law for ·, and in · they are the standard orthonormal basis, with ·. Its uses in MATH 556:",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Standard unit vectors eₙ",
+"line": 7,
+"term": "subsequence",
+"count": 1,
+"context": "infinite-dimensional, and they are the sequence that shows what fails there: · for ·, so · has no convergent subsequence and the closed unit ball is not compact. ⟂ says that every infinite-dimensional normed space contains a seque",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "Standard unit vectors eₙ",
+"line": 7,
+"term": "compact",
+"count": 3,
+"context": "ence that shows what fails there: · for ·, so · has no convergent subsequence and the closed unit ball is not compact. ⟂ says that every infinite-dimensional normed space contains a sequence behaving like this one, even when no",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Standard unit vectors eₙ",
+"line": 7,
+"term": "parallelogram law",
+"count": 3,
+"context": "vailable to write it down. The same vectors give the inequivalence of the ·-norms on · and the failure of the parallelogram law for ·, and in · they are the standard orthonormal basis, with ·. Its uses in MATH 556:",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "The Gauge Is Positive Homogeneous and Subadditive",
+"line": 26,
+"term": "infima",
+"count": 1,
+"context": "is their convex combination with weights a/(a + b) and b/(a + b), so a + b is admissible for x + y; then take infima. Finiteness of p_K (⟂, from 0 being interior) must come first. Even p(0) = 0 needs p to be finite (⟂).",
+"targets": [
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-2"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 24,
+"term": "span",
+"count": 1,
+"context": "- **How.** The proof is an induction with ⟂. Y_m = span{x₁, …, x_m} is closed, being finite-dimensional (⟂), and proper, because X is infinite-dimensional. So there",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 25,
+"term": "bounded sets",
+"count": 1,
+"context": "compact in any norm (⟂), by the ⟂ coordinatewise. That is the compactness behind ⟂; in ℝⁿ, the ⟂ makes closed bounded sets compact. So compactness of the closed unit ball characterizes finite dimension. In ℓᵖ (p < ∞) the separated s",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 25,
+"term": "compact",
+"count": 2,
+"context": "- **Finite dimensions.** The closed unit ball of 𝔽ⁿ is compact in any norm (⟂), by the ⟂ coordinatewise. That is the compactness behind ⟂; in ℝⁿ, the ⟂ makes closed bounded",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 25,
+"term": "compactness",
+"count": 4,
+"context": "ite dimensions.** The closed unit ball of 𝔽ⁿ is compact in any norm (⟂), by the ⟂ coordinatewise. That is the compactness behind ⟂; in ℝⁿ, the ⟂ makes closed bounded sets compact. So compactness of the closed unit ball characterize",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 25,
+"term": "bounded set",
+"count": 1,
+"context": "compact in any norm (⟂), by the ⟂ coordinatewise. That is the compactness behind ⟂; in ℝⁿ, the ⟂ makes closed bounded sets compact. So compactness of the closed unit ball characterizes finite dimension. In ℓᵖ (p < ∞) the separated s",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 26,
+"term": "open cover",
+"count": 1,
+"context": "approximations by compactness. The course's response is weak convergence (⟂). In metric spaces sequential and open-cover compactness agree (⟂), so the ball fails both.",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 26,
+"term": "metric spaces",
+"count": 1,
+"context": "er be produced as a limit of approximations by compactness. The course's response is weak convergence (⟂). In metric spaces sequential and open-cover compactness agree (⟂), so the ball fails both.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "The Unit Ball of an Infinite-Dimensional Space Is Not Compact",
+"line": 26,
+"term": "bounded sequence",
+"count": 1,
+"context": "- **Why it matters.** In infinite dimensions a bounded sequence need not have a convergent subsequence, so a solution can no longer be produced as a limit of approximations",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "X ≅ X∕Y ⊕ Y",
+"line": 27,
+"term": "isomorphic",
+"count": 1,
+"context": "- **Not canonical.** M depends on the choice of W. X/Y is canonical and isomorphic to every complement (⟂), but equal to none (⟂).",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "X ≅ X∕Y ⊕ Y",
+"line": 28,
+"term": "dim v",
+"count": 2,
+"context": "- **Finite dimensions.** It gives dim V/U = dim V − dim U (⟂), with a complement obtained by extending a basis (⟂).",
+"targets": [
+"Linear Algebra|§6 Dimension#^ladr-2-35"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 20,
+"term": "uncountable",
+"count": 1,
+"context": "is taken as an axiom, with no proof. It says “repeat until finished” in a form that is legitimate when X has uncountable dimension (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 21,
+"term": "orthonormal",
+"count": 2,
+"context": "⟂ the objects are pairs (Z, ℓ_Z), extended by the ⟂. For ⟂ they are subspaces meeting Y in 0. For ⟂ they are orthonormal sets. In each case the union of a chain is an upper bound, because any finitely many elements lie in a single",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 21,
+"term": "orthonormal set",
+"count": 1,
+"context": "⟂ the objects are pairs (Z, ℓ_Z), extended by the ⟂. For ⟂ they are subspaces meeting Y in 0. For ⟂ they are orthonormal sets. In each case the union of a chain is an upper bound, because any finitely many elements lie in a single memb",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 22,
+"term": "countable",
+"count": 1,
+"context": "(⟂); LADR gets complements by extending a basis (⟂). In a separable normed space, ordinary induction along a countable dense sequence suffices for Hahn–Banach (⟂), and Gram–Schmidt for orthonormal bases (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 22,
+"term": "dense",
+"count": 1,
+"context": "gets complements by extending a basis (⟂). In a separable normed space, ordinary induction along a countable dense sequence suffices for Hahn–Banach (⟂), and Gram–Schmidt for orthonormal bases (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Zorn's Lemma",
+"line": 22,
+"term": "separable",
+"count": 1,
+"context": "sions, apply the one-step lemma finitely many times (⟂); LADR gets complements by extending a basis (⟂). In a separable normed space, ordinary induction along a countable dense sequence suffices for Hahn–Banach (⟂), and Gram–Schm",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 96,
+"term": "direct sums",
+"count": 1,
+"context": "## Sums and Direct Sums",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^prop-20-7"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 276,
+"term": "subgroup",
+"count": 2,
+"context": "> - Congruence modulo a subgroup, here for the subgroup Y of the additive group of X: ⟂.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 285,
+"term": "equivalence classes",
+"count": 2,
+"context": "> The **quotient space** · (· mod ·) is the set of all equivalence classes:",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 297,
+"term": "cosets",
+"count": 1,
+"context": "> - The classes are the cosets of Y, and X/Y is the quotient group of (X, +) by Y with scalar multiplication added: ⟂, ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 343,
+"term": "vector addition",
+"count": 1,
+"context": "> *Distributivity over vector addition:* ·.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-2",
+"Calculus|§81 Vectors#^def-81-2"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 511,
+"term": "bijection",
+"count": 1,
+"context": "> · is a linear bijection, hence an isomorphism, and · is an isomorphism by Lemma ⟂. The formula for · is read off from the surjectivit",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 522,
+"term": "isomorphic",
+"count": 2,
+"context": "lement of ·, then the restricted quotient map ·, ·, is an isomorphism. In particular all complements of · are isomorphic to one another.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§1 Linear Spaces",
+"line": 536,
+"term": "embedding",
+"count": 1,
+"context": "d · alone — but identifying it with a subspace of · requires choosing ·, and different choices give different embeddings. This is the precise content of “· is like a complement of ·”: it is isomorphic to every complement, and equa",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§10 Normed Linear Spaces",
+"line": 180,
+"term": "metric spaces",
+"count": 5,
+"context": "> The statement is not circular, although it can sound so. It compares two metric spaces: · with ·, and · with ·; neither metric is defined in terms of the continuity being asserted. Only subadditiv",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§10 Normed Linear Spaces",
+"line": 214,
+"term": "hausdorff",
+"count": 2,
+"context": "> - Part (a) holds in every Hausdorff space (⟂), and metric spaces are Hausdorff (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 32,
+"term": "supremum",
+"count": 2,
+"context": "> [!theorem] Theorem §11.1: · with the Supremum Norm is a Banach Space",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 33,
+"term": "continuous function",
+"count": 4,
+"context": "> Let · be the set of continuous functions ·, with pointwise operations and",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 33,
+"term": "pointwise",
+"count": 4,
+"context": "> Let · be the set of continuous functions ·, with pointwise operations and",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 67,
+"term": "vector addition",
+"count": 2,
+"context": "> *Distributivity over vector addition:* ·.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-2",
+"Calculus|§81 Vectors#^def-81-2"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 83,
+"term": "triangle inequality",
+"count": 14,
+"context": "> *Triangle inequality.* Let · be a point where · attains its maximum. Then",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 141,
+"term": "uniform limit of continuous functions",
+"count": 1,
+"context": "no analogue in · (⟂): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The · argument in Step 3 is exactly where uniformity, not just point",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^thm-12-16"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 156,
+"term": "uniqueness of limits",
+"count": 1,
+"context": "lecture.) Let · with ·. By Proposition ⟂(b), · is Cauchy, so by completeness of · it converges to some ·. By uniqueness of limits (Proposition ⟂(a)), ·.",
+"targets": [
+"Complex Variables|§15 Limits#^thm-15-1",
+"Complex Variables|§60 Convergence of Sequences#^prop-60-1",
+"Single Variable Analysis|§7 Limits of Sequences#^thm-7-1"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 178,
+"term": "equivalence classes",
+"count": 4,
+"context": "> The **completion** · of a metric space · is the set of equivalence classes of Cauchy sequences in · under ·:",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 202,
+"term": "dense",
+"count": 7,
+"context": "> [!theorem] Proposition §11.3: The Completion is a Complete Metric Space, and · is Dense in It",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 283,
+"term": "equivalence relation",
+"count": 1,
+"context": "> **Step 2: · is an equivalence relation.** *Reflexive:* ·. *Symmetric:* since · for every ·, · implies ·. *Transitive:* if · and ·, then by the trian",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 426,
+"term": "isomorphic",
+"count": 3,
+"context": "ular, if · is a dense linear subspace carrying the restricted norm (· the inclusion), then · is isometrically isomorphic to · by an isomorphism that is the identity on ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 443,
+"term": "injective",
+"count": 1,
+"context": "> the last equality being the definition of the norm on ·. An isometry is injective: · forces ·, hence ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 443,
+"term": "isometry",
+"count": 1,
+"context": "> the last equality being the definition of the norm on ·. An isometry is injective: · forces ·, hence ·.",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 445,
+"term": "surjective",
+"count": 1,
+"context": "> *Surjective.* Let ·. By density there are · with ·. A convergent sequence is Cauchy (Proposition ⟂), and ·, so · is Cauch",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 457,
+"term": "almost everywhere",
+"count": 1,
+"context": "> The embedding form is needed in practice: an element of · is a class of functions equal almost everywhere, so · is not literally a subset of ·; it sits inside via ·. The proposition is the precise meaning of “· *is*",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 457,
+"term": "embedding",
+"count": 1,
+"context": "> The embedding form is needed in practice: an element of · is a class of functions equal almost everywhere, so · is not lite",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 478,
+"term": "limit point",
+"count": 2,
+"context": "worth separating: the definition of · is by equivalence classes, and the description “· together with all its limit points” is a way of thinking, not a definition — before the construction there is no ambient space in which those li",
+"targets": [
+"Topology|§7 Interior and Closure#^def-7-3"
+]
+},
+{
+"note": "§11 Completeness",
+"line": 567,
+"term": "chain rule",
+"count": 1,
+"context": "> **Part 4: ·.** Let · and ·. For ·, the chain rule gives ·. At ·,",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 10,
+"term": "direct sums",
+"count": 3,
+"context": "*Stage: norms — Thread: dimension. In finite dimensions all norms are equivalent (Theorem ⟂); subspaces, direct sums and quotients acquire norms.*",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^prop-20-7"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 55,
+"term": "triangle inequality",
+"count": 3,
+"context": "> (·) By the reverse triangle inequality, ·.",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 78,
+"term": "equivalence relation",
+"count": 1,
+"context": "> **Step 1: equivalence of norms is an equivalence relation.** *Reflexivity:* ·. *Symmetry:* suppose · for all ·, with ·. Dividing the right-hand inequality by · gives ·",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 106,
+"term": "subsequence",
+"count": 6,
+"context": "compact.** Let · and let ·, ·. Each coordinate sequence is bounded, ·. By ⟂ in · applied · times — extract a subsequence along which · converges, then a further subsequence along which · converges, and so on — there is a subsequen",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 106,
+"term": "compact",
+"count": 2,
+"context": "> **Step 5: the unit sphere of · is sequentially compact.** Let · and let ·, ·. Each coordinate sequence is bounded, ·. By ⟂ in · applied · times — extract a subseque",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 127,
+"term": "compactness",
+"count": 1,
+"context": "epth. · is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions — the unit sphere of · contains · with",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 182,
+"term": "subspace topology",
+"count": 1,
+"context": "> - The restricted norm gives the restricted metric, whose topology is the subspace topology: ⟂.",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^def-3-1",
+"Topology|§5 Subspace Topology#^def-5-1"
+]
+},
+{
+"note": "§12 New Normed Spaces from Old",
+"line": 242,
+"term": "infimum",
+"count": 5,
+"context": "that point would be the foot of the perpendicular from · (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number · is available. This is the same substitution of “quotient” for “or",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§14 Means and Young's Inequality",
+"line": 10,
+"term": "minkowski",
+"count": 1,
+"context": "*Stage: norms — Tools. The inequalities that make · a norm: Young, then Hölder (⟂), then Minkowski (⟂).*",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§14 Means and Young's Inequality",
+"line": 28,
+"term": "inner product space",
+"count": 1,
+"context": "> - Re-proved for every inner product space in ⟂; for infinite sequences it is the case · of ⟂.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§14 Means and Young's Inequality",
+"line": 79,
+"term": "continuous function",
+"count": 1,
+"context": "> - Used for Hölder's inequality: ⟂ (sequences), ⟂ (continuous functions), ⟂ (measurable functions).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§14 Means and Young's Inequality",
+"line": 79,
+"term": "measurable function",
+"count": 1,
+"context": "> - Used for Hölder's inequality: ⟂ (sequences), ⟂ (continuous functions), ⟂ (measurable functions).",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-2"
+]
+},
+{
+"note": "§15 Hölder's Inequality for Sequences",
+"line": 24,
+"term": "supremum",
+"count": 1,
+"context": "space · (to be ⟂ once ⟂ is available). The name “·-norm” is used in advance, by abuse of language. For · the supremum, not the maximum, is needed: an infinite sequence need not attain its largest modulus.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§15 Hölder's Inequality for Sequences",
+"line": 55,
+"term": "cauchy–schwarz inequality",
+"count": 1,
+"context": "For · this is the Cauchy–Schwarz inequality (Proposition ⟂) for infinite sequences.",
+"targets": [
+"Linear Algebra|Cauchy–Schwarz inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-14"
+]
+},
+{
+"note": "§15 Hölder's Inequality for Sequences",
+"line": 109,
+"term": "continuous function",
+"count": 1,
+"context": "ality in the vault: ⟂, proved by the same normalize–Young–integrate argument; in this course ⟂ (cited) and ⟂ (continuous functions, HW3).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§15 Hölder's Inequality for Sequences",
+"line": 110,
+"term": "minkowski",
+"count": 1,
+"context": "> - Used for Minkowski's inequality ⟂ and for the convergence of the · inner product in ⟂.",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 32,
+"term": "supremum",
+"count": 3,
+"context": "> **Case ·.** For every ·, ·; take the supremum over ·.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 48,
+"term": "hölder",
+"count": 3,
+"context": "> *Step 2: Hölder on each piece.* Apply Theorem ⟂ to · with the exponent · on the first factor and · on the second:",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 81,
+"term": "continuous function",
+"count": 1,
+"context": "t-and-Hölder computation; its series corollaries ⟂–⟂); in this course ⟂ (cited) and Part 1 of the proof of ⟂ (continuous functions, HW3).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 143,
+"term": "linearly independent",
+"count": 1,
+"context": "> · is the first genuinely infinite-dimensional normed space in the course: it contains the linearly independent sequences ·, ·, …. Unlike the norms · on ·, the spaces · for different · are different sets, and their norms",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 217,
+"term": "uniqueness of limits",
+"count": 1,
+"context": "le term is at most the sum). So the first · coordinates of · are the limits of the coordinates of ·, which by uniqueness of limits are the coordinates of ·:",
+"targets": [
+"Complex Variables|§15 Limits#^thm-15-1",
+"Complex Variables|§60 Convergence of Sequences#^prop-60-1",
+"Single Variable Analysis|§7 Limits of Sequences#^thm-7-1"
+]
+},
+{
+"note": "§16 Minkowski's Inequality and the Spaces ℓᵖ",
+"line": 256,
+"term": "bounded sequence",
+"count": 1,
+"context": "only then truncating to a finite sum, where · can be taken termwise, and finally sending · through a monotone bounded sequence. The order matters: truncate, then ·, then ·, with · fixed throughout. Interchanging limits requires justific",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 23,
+"term": "riemann sum",
+"count": 2,
+"context": "> the Riemann sum, which improves as the partition is refined. So · is the continuum version of ·, with · in place of · and the",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 50,
+"term": "supremum",
+"count": 2,
+"context": "> - The rigorous definitions: ⟂ (·, measurable functions) and ⟂ (·, essential supremum).",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 50,
+"term": "measurable function",
+"count": 3,
+"context": "> - The rigorous definitions: ⟂ (·, measurable functions) and ⟂ (·, essential supremum).",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-2"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 54,
+"term": "continuous function",
+"count": 13,
+"context": "51 is not a prerequisite for this course, she asked us to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact · implies Riemann integrable), and said the theory could be made ri",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 54,
+"term": "compact",
+"count": 3,
+"context": "to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact · implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgu",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 54,
+"term": "riemann integrable",
+"count": 2,
+"context": "e” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact · implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgue integral, ·, ⟂, ⟂, ⟂, ⟂ and",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-3"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 68,
+"term": "pointwise",
+"count": 4,
+"context": "in lecture; “the same idea, exactly” as Theorem ⟂, with the integral in place of the sum: normalize, apply ⟂ pointwise, integrate. A full proof is in the MATH 551 notes, Chapter *· Spaces*, subsection *Hölder's Inequality* (⟂).",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 105,
+"term": "subsequence",
+"count": 1,
+"context": "of because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and ⟂/⟂ used to close the argument). The plan is the same as for · (⟂) — find the candidate, then prove conv",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 105,
+"term": "almost everywhere",
+"count": 4,
+"context": "Deferred: Wu skipped the proof because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and ⟂/⟂ used to close the argument). The plan is the same as for · (⟂) — find the can",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 115,
+"term": "smooth function",
+"count": 1,
+"context": "> [!theorem] Theorem §17.4: Density of Smooth Functions",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 116,
+"term": "dense",
+"count": 8,
+"context": "> For ·, ·, the smooth functions with compact support in ·, is dense in ·: for every · and · there is · with ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 121,
+"term": "simple function",
+"count": 1,
+"context": "e if one is available. (The MATH 551 notes, Chapter *· Spaces*, subsection *Density and Separability*, ⟂ that simple functions, step functions, and compactly supported continuous functions are dense in · for ·; smoothing by convolution",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-6"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 121,
+"term": "convolution",
+"count": 1,
+"context": "le functions, step functions, and compactly supported continuous functions are dense in · for ·; smoothing by convolution with a · bump takes it the rest of the way to ·.)",
+"targets": [
+"Fourier Series and PDEs|§52★ Partial Fractions and Convolutions#^def-52-1",
+"Ordinary Differential Equations|§26★ The Convolution Integral#^def-26-1"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 149,
+"term": "uniform limit of continuous functions",
+"count": 1,
+"context": "example in Measure Theory, where the · approximation chain breaks at ·: ⟂ (The Approximation Chain for ·); a uniform limit of continuous functions is continuous, ⟂.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^thm-12-16"
+]
+},
+{
+"note": "§17 The Function Spaces Lᵖ(Ω)",
+"line": 294,
+"term": "equivalence classes",
+"count": 1,
+"context": "> **Part 3: the completion is ·.** Here · denotes the completion of a normed linear space · ⟂, the space of equivalence classes of Cauchy sequences with ·, which is a Banach space (Homework 2, Problem 3).",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 12,
+"term": "bounded sequence",
+"count": 3,
+"context": "ace where infinite dimension can be seen to make a difference. Here is the most basic such difference. In · a bounded sequence has a convergent subsequence, and this one fact carries much of classical analysis: it is how maxima are show",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 12,
+"term": "bounded set",
+"count": 2,
+"context": "ery infinite-dimensional normed space, and the failure is not marginal — the closed unit ball, the most basic bounded set there is, is never compact.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 14,
+"term": "compactness",
+"count": 4,
+"context": "## Sequential Compactness",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 38,
+"term": "bounded sets",
+"count": 1,
+"context": "> - In · with the Euclidean norm: ⟂ (Bolzano–Weierstrass in ·), and closed bounded sets are compact by ⟂.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 40,
+"term": "open cover",
+"count": 2,
+"context": "> [!definition] Definition §18.2: Open Set; Open Cover; Compact",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^def-6-1"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 61,
+"term": "limit point",
+"count": 1,
+"context": "> - Home: ⟂ (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).",
+"targets": [
+"Topology|§7 Interior and Closure#^def-7-3"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 92,
+"term": "infimum",
+"count": 3,
+"context": "> **Step 2: an almost-minimizing ·.** The infimum · need not be attained, but · is not a lower bound for ·, so there is · with",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 132,
+"term": "inner product space",
+"count": 2,
+"context": "> - In an inner product space the closest point exists (⟂) and the unit vector can be taken orthogonal: ⟂, and the remark contrasting the t",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 208,
+"term": "supremum",
+"count": 1,
+"context": "ays · for a unit vector ·. So Corollary ⟂ says · for every closed proper subspace, and Proposition ⟂ says the supremum need not be attained. The mechanism is visible in Steps 3–4: letting · in Step 3 gives ·, so a unit vector at",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 245,
+"term": "span",
+"count": 1,
+"context": "> Y_m = \\operatorname{span}\\{x_1, \\ldots, x_m\\}.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§18 Compactness and the Unit Ball",
+"line": 266,
+"term": "neighborhood",
+"count": 1,
+"context": "> - Hence no infinite-dimensional normed space is locally compact (⟂), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ",
+"line": 14,
+"term": "compact",
+"count": 2,
+"context": "and Hölder on · or · is the finitely supported case of Hölder for sequences (⟂). The closed unit ball of · is compact under any norm, and by ⟂ this happens only in finite dimension.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ",
+"line": 14,
+"term": "hölder",
+"count": 4,
+"context": "Chapter 4 starts and ends in ·. Cauchy–Schwarz in · opens the chain Young–Hölder–Minkowski, and Hölder on · or · is the finitely supported case of Hölder for sequences (⟂). The closed unit b",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ",
+"line": 14,
+"term": "minkowski",
+"count": 2,
+"context": "Chapter 4 starts and ends in ·. Cauchy–Schwarz in · opens the chain Young–Hölder–Minkowski, and Hölder on · or · is the finitely supported case of Hölder for sequences (⟂). The closed unit ball of · i",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ",
+"line": 24,
+"term": "continuous function",
+"count": 1,
+"context": "Here · is the space from which · is built. Continuous functions are not dense in ·, but for · the completion of · in the · norm is ·, which proves the claim of Chapter 3. In",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§19 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ",
+"line": 24,
+"term": "dense",
+"count": 1,
+"context": "Here · is the space from which · is built. Continuous functions are not dense in ·, but for · the completion of · in the · norm is ·, which proves the claim of Chapter 3. In Riesz's lemma",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§2 Linear Maps, Convexity, and Linear Functionals",
+"line": 85,
+"term": "separation",
+"count": 1,
+"context": "> - Convex sets return through the gauge, ⟂, and the separation theorem, ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§2 Linear Maps, Convexity, and Linear Functionals",
+"line": 86,
+"term": "homotopy",
+"count": 1,
+"context": "> - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: ⟂.",
+"targets": [
+"Topology|§22 Homotopy of Paths#^def-22-1"
+]
+},
+{
+"note": "§2 Linear Maps, Convexity, and Linear Functionals",
+"line": 86,
+"term": "straight-line homotopy",
+"count": 1,
+"context": "> - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: ⟂.",
+"targets": [
+"Topology|§22 Homotopy of Paths#^thm-22-1"
+]
+},
+{
+"note": "§20 Definition and Examples",
+"line": 96,
+"term": "continuous function",
+"count": 1,
+"context": "> - Computational version: ⟂ (the same integral inner product on the continuous functions C[a, b]).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 10,
+"term": "parallelogram law",
+"count": 8,
+"context": "*Stage: inner products — Thread: convexity. Every inner product induces a norm, and the parallelogram law says which norms arise.*",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 101,
+"term": "hölder",
+"count": 1,
+"context": "> - In · it is the case · of Hölder's inequality, ⟂.",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 165,
+"term": "continuous function",
+"count": 1,
+"context": "> Let ·, the continuous functions with compact support (the set where · is contained in a bounded set, so · is integrable), with",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 165,
+"term": "compact",
+"count": 3,
+"context": "> Let ·, the continuous functions with compact support (the set where · is contained in a bounded set, so · is integrable), with",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 165,
+"term": "bounded set",
+"count": 1,
+"context": "> Let ·, the continuous functions with compact support (the set where · is contained in a bounded set, so · is integrable), with",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 171,
+"term": "dense",
+"count": 1,
+"context": "> This is the inner product of · restricted to ·, so · is an inner product space. It is not complete: · is dense in · (Theorem ⟂), so any · is the ·-limit of a sequence in ·, which is then Cauchy in · with no limit in ·. B",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 181,
+"term": "smooth function",
+"count": 1,
+"context": "> Let · be a domain, · an integer, and ·, the smooth functions whose support is a compact subset of ·. For a multi-index · write · and",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 195,
+"term": "partial differential equations",
+"count": 1,
+"context": "mpletion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.",
+"targets": [
+"Ordinary Differential Equations|§3 Classification of Differential Equations#^def-3-1"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 239,
+"term": "minkowski",
+"count": 1,
+"context": "> - Used in Relativity: polarization recovers the Minkowski scalar product from the interval, without positivity — ⟂.",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§21 Cauchy–Schwarz and the Induced Norm",
+"line": 419,
+"term": "pointwise",
+"count": 1,
+"context": "measure (two disjoint small balls) and ·, ·, or ·, · if ·. In each case · and · have disjoint supports, so · pointwise and · for ·, while ·. The parallelogram law would require · to equal ·, i.e. ·, i.e. ·; for · it would requir",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 76,
+"term": "parallelogram law",
+"count": 7,
+"context": "> **Step 3: Cauchy, via the parallelogram law.** Fix ·. Apply the parallelogram law (Proposition ⟂(a)) to · and ·, so that · and ·:",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 116,
+"term": "infimum",
+"count": 2,
+"context": "d not be unique; in an incomplete inner product space a minimizing sequence need not converge; for · open the infimum need not be attained. The same midpoint argument gives uniqueness.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 239,
+"term": "orthogonal basis",
+"count": 1,
+"context": "> - Computational version: ⟂ (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), ⟂.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-2"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 253,
+"term": "span",
+"count": 1,
+"context": "> [!theorem] Lemma §22.5: A Set and Its Closed Span Have the Same Complement",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 268,
+"term": "orthonormal",
+"count": 3,
+"context": "> - Re-proved for orthonormal sets: ⟂.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 268,
+"term": "orthonormal set",
+"count": 3,
+"context": "> - Re-proved for orthonormal sets: ⟂.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 278,
+"term": "dense",
+"count": 2,
+"context": "> In particular · if and only if · is dense in ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 302,
+"term": "null space",
+"count": 1,
+"context": "- Computational version: ⟂ (the double complement in ℝⁿ) and ⟂ (the complement of the rows of a matrix is its null space).",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 328,
+"term": "almost everywhere",
+"count": 1,
+"context": "> Throughout, · is · or ·, · with ·, and elements of · are functions up to equality almost everywhere. A function · is *even* if · for a.e. ·, and *odd* if · for a.e. ·. We show that",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 334,
+"term": "lebesgue measure",
+"count": 1,
+"context": "> We use one fact from real analysis: Lebesgue measure on · is invariant under ·, so for integrable ·, ·, and · maps null sets to null sets.",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "§22 Projection and Orthogonal Decomposition",
+"line": 395,
+"term": "continuous function",
+"count": 1,
+"context": "> Write ·. Functions may be real or complex valued; all integrals are Riemann integrals of continuous functions. We use the Cauchy–Schwarz inequality for the inner product · on · (the restriction of the · inner product; T",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 70,
+"term": "isometry",
+"count": 1,
+"context": "> - The map · as an isometry onto the dual, and its bra–ket reading: ⟂.",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 73,
+"term": "inner product space",
+"count": 1,
+"context": "> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones gi",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 86,
+"term": "kernel",
+"count": 2,
+"context": "> [!theorem] Lemma §23.3: The Kernel of a Bounded Functional is Closed",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 114,
+"term": "codimension",
+"count": 1,
+"context": "> [!theorem] Lemma §23.4: The Kernel Has Codimension One",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 182,
+"term": "null space",
+"count": 3,
+"context": "> Lax proves the representation theorem through his Lemma 5: the null space of a nonzero functional has codimension one, and two functionals with the same null space are proportional. H",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "§23 Bounded Linear Functionals and the Riesz Representation Theorem",
+"line": 229,
+"term": "dirichlet",
+"count": 1,
+"context": "minimizing · over · produces the Riesz representer of · — the variational form of the ⟂, and the prototype of Dirichlet's principle. For a proper · the minimizer is the projection of · onto ·, the starting point of variational in",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 10,
+"term": "countable",
+"count": 28,
+"context": "*Stage: inner products — Threads: dimension, completeness. Countable support, Bessel and Parseval: bases in infinite dimensions.*",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 24,
+"term": "eigenfunctions",
+"count": 3,
+"context": "- Computational version: orthogonal families of functions computed by hand: the trigonometric system, ⟂; the eigenfunctions of a Sturm–Liouville problem, orthogonal with weight ·, ⟂; the Bessel functions ·, orthogonal with weight ·,",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 24,
+"term": "bessel functions",
+"count": 1,
+"context": "he trigonometric system, ⟂; the eigenfunctions of a Sturm–Liouville problem, orthogonal with weight ·, ⟂; the Bessel functions ·, orthogonal with weight ·, ⟂.",
+"targets": [
+"Fourier Series and PDEs|General Solution of Bessel's Equation"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 41,
+"term": "uncountable",
+"count": 3,
+"context": "ctors is part of the linear structure; adding infinitely many requires a limit (compare ⟂ in ⟂); and · may be uncountable, in which case it is not even clear in what order to add. The following results make sense of it in three ste",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 122,
+"term": "supremum",
+"count": 3,
+"context": "> (Not covered in lecture.) Let · be the supremum. Each partial sum · is a sum over a finite subset of ·, so it is at most ·, and hence so is the limit of thes",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 160,
+"term": "countable set",
+"count": 1,
+"context": "of ·; Wu separated the two concepts. The proposition is about one fixed ·: its coefficients vanish outside a countable set ·. Different · can have different, even disjoint, supports, and · itself can be uncountable. Nothing about ba",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 185,
+"term": "pointwise convergence",
+"count": 2,
+"context": "s inequality for Fourier series); its consequence that the coefficients tend to 0, ⟂, is the step that proves pointwise convergence, ⟂.",
+"targets": [
+"Single Variable Analysis|§24 Uniform Convergence#^def-24-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 185,
+"term": "pointwise",
+"count": 3,
+"context": "s inequality for Fourier series); its consequence that the coefficients tend to 0, ⟂, is the step that proves pointwise convergence, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 224,
+"term": "conditionally convergent",
+"count": 1,
+"context": "s not addressed in lecture, but it is needed for the notation · to mean anything: a series of vectors, like a conditionally convergent series of numbers, could in principle depend on the order of summation. Orthogonality prevents this.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-3"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 224,
+"term": "convergent series",
+"count": 1,
+"context": "d in lecture, but it is needed for the notation · to mean anything: a series of vectors, like a conditionally convergent series of numbers, could in principle depend on the order of summation. Orthogonality prevents this.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 265,
+"term": "span",
+"count": 6,
+"context": "> *Lax: §6.4, definition of orthonormal base (via closed linear span; see Proposition ⟂)*",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 271,
+"term": "basis of a subspace",
+"count": 1,
+"context": "> - Computational version: ⟂ (orthonormal basis of a subspace of ℝⁿ, a finite basis).",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^lem-3-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 302,
+"term": "parseval's equality for fourier series",
+"count": 1,
+"context": "> - Computational version: Parseval's equality for Fourier series, ⟂ (used to sum series such as ·), and for normalized eigenfunctions, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Parseval's Equality for Fourier Series"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 395,
+"term": "continuous function",
+"count": 1,
+"context": "> - The density step it needs (continuous functions vanishing at the endpoints are dense in ·) follows from ⟂(iii) by cutting the approximant off near the endpoi",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 398,
+"term": "separation",
+"count": 1,
+"context": "> - Used in Electromagnetism: the Fourier modes of separation of variables in Cartesian coordinates, their closure as a Dirac comb, and the field of a mesh of charged wire",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 398,
+"term": "separation of variables",
+"count": 1,
+"context": "> - Used in Electromagnetism: the Fourier modes of separation of variables in Cartesian coordinates, their closure as a Dirac comb, and the field of a mesh of charged wires — ⟂, ⟂.",
+"targets": [
+"Calculus|§59 Separable Equations#^thm-59-1",
+"Fourier Series and PDEs|Solution of the Fixed-End Heat Problem",
+"Fourier Series and PDEs|§19 Example꞉ Fixed End Temperatures#^def-19-1",
+"Ordinary Differential Equations|Solution of Separable Equations"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 462,
+"term": "metric spaces",
+"count": 1,
+"context": "> - Same definition for metric spaces: ⟂; for topological spaces: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 480,
+"term": "bijection",
+"count": 2,
+"context": "the union over · (only up to the number of basis vectors if the basis is finite). Each set in the union is in bijection with ·, so · is countable.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 516,
+"term": "linear independence",
+"count": 2,
+"context": "> *·.* · by linear independence, so · is defined, ·, and ·.",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 524,
+"term": "spans",
+"count": 2,
+"context": "> so ·. *Spans:* · is a combination of · and ·, so ·; conversely ·. With the induction hypothesis, the two spans are equal.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 541,
+"term": "subsequence",
+"count": 1,
+"context": "> **Step 1: a linearly independent subsequence.** Discard elements that depend linearly on earlier ones. Precisely: let · be the first index with ·, and put",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§24 Orthonormal Sets and Bases",
+"line": 598,
+"term": "injective",
+"count": 1,
+"context": "> - Isometries between finite-dimensional inner product spaces, and why they are injective: ⟂.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 10,
+"term": "separable",
+"count": 9,
+"context": "*Stage: inner products — Examples revisited. The spaces of Chapter 5, with the separable and non-separable examples.*",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 14,
+"term": "orthonormal",
+"count": 4,
+"context": "nal, · and · are Hilbert spaces, and for · the norm · comes from an inner product only for ·. In · a complete orthonormal set is a basis (⟂); ⟂ asks what replaces this in a Hilbert space.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 14,
+"term": "orthonormal set",
+"count": 1,
+"context": "nal, · and · are Hilbert spaces, and for · the norm · comes from an inner product only for ·. In · a complete orthonormal set is a basis (⟂); ⟂ asks what replaces this in a Hilbert space.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 51,
+"term": "countable",
+"count": 18,
+"context": "> is countable and dense in ·. Hence · is separable.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 51,
+"term": "dense",
+"count": 12,
+"context": "> is countable and dense in ·. Hence · is separable.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 56,
+"term": "bijection",
+"count": 2,
+"context": "> *Countable.* For fixed · the ·-th set is in bijection with ·, a finite product of countable sets, hence countable; a countable union of countable sets is countable",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 56,
+"term": "countable set",
+"count": 6,
+"context": "> *Countable.* For fixed · the ·-th set is in bijection with ·, a finite product of countable sets, hence countable; a countable union of countable sets is countable.",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 73,
+"term": "bounded sequence",
+"count": 2,
+"context": "many remaining coordinates by nearby rationals. Both need ·: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 73,
+"term": "convergent series",
+"count": 1,
+"context": "onverges, and replace the finitely many remaining coordinates by nearby rationals. Both need ·: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 87,
+"term": "triangle inequality",
+"count": 1,
+"context": "and if · then · for all ·, so ·. *Homogeneity:* for ·, · for all ·, with equality at an index where ·; so ·. *Triangle inequality:* for every ·, ·; taking the maximum over ·, ·.",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 132,
+"term": "uncountable",
+"count": 4,
+"context": "n exactly one of them, so ·, while every term of · has modulus at most ·; hence ·. The set of subsets of · is uncountable (⟂). If · were a countable dense subset of ·, choose for each · some · with ·. For ·, · would give ·, which i",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 141,
+"term": "isomorphic",
+"count": 1,
+"context": "n · preserves the inner product without being onto, and every infinite-dimensional separable Hilbert space is isomorphic to ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 173,
+"term": "continuous function",
+"count": 3,
+"context": "> Wu's route: continuous functions are dense in · (taken for granted), a continuous function is approximated by step functions, and the step fun",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 179,
+"term": "compact",
+"count": 2,
+"context": "> *Step 1: a continuous function.* By Theorem ⟂ (with ·) there is a continuous · with compact support and ·. Choose · with the support of · inside ·.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 206,
+"term": "bounded set",
+"count": 1,
+"context": "eights rounded to quarters). The · distance is small because it is an *integral* of a small difference over a bounded set. In · the distance is a supremum, and this argument breaks down.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 216,
+"term": "almost everywhere",
+"count": 1,
+"context": "without proof. HW5, Problem 1(b) is the case ·; the general case below is Claude's.) Here ·, functions equal almost everywhere being identified.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 237,
+"term": "continuity of measure",
+"count": 1,
+"context": "> - Vault home: ⟂, with the family of indicators of · and, for general ·, continuity of measure.",
+"targets": [
+"Measure Theory|Continuity of Measure"
+]
+},
+{
+"note": "§25 Sequence and Function Spaces",
+"line": 262,
+"term": "fourier series",
+"count": 1,
+"context": "The functions ·, ·, form an orthonormal basis of ·. Read through ⟂, this is the · theory of Fourier series, and taking coefficients identifies · with · (⟂).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 27,
+"term": "metric spaces",
+"count": 1,
+"context": "> - Continuity between topological spaces: ⟂; for metric spaces it is equivalent to the sequential condition used here, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 65,
+"term": "supremum",
+"count": 6,
+"context": "> (b) For · both sides are ·, since · by linearity. For ·, · by definition of the supremum.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 136,
+"term": "compact",
+"count": 1,
+"context": "ctions on · whose partial derivatives · of all orders · exist, are continuous, and extend continuously to the compact set ·, with the norm",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 207,
+"term": "pointwise",
+"count": 6,
+"context": "it is linear by linearity of the integral. · is measurable (in fact continuous: if ·, the integrands converge pointwise and are dominated by ·, so the ⟂ gives ·). Hence · with ·.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 207,
+"term": "linearity of the integral",
+"count": 1,
+"context": "ery ·. Changing · on a null set does not change the integral, so · is defined on classes, and it is linear by linearity of the integral. · is measurable (in fact continuous: if ·, the integrands converge pointwise and are dominated by ·, so the",
+"targets": [
+"Measure Theory|§14 The Lebesgue Integral for Simple Functions#^thm-14-8"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 235,
+"term": "inner product space",
+"count": 1,
+"context": "> - Finite-dimensional home (inner product spaces, where the operator norm is a maximum): ⟂.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§26 Boundedness and Continuity",
+"line": 322,
+"term": "matrix exponential",
+"count": 1,
+"context": "> - Used in ODEs: since ·, the series · converges absolutely in the Banach space of · matrices; the matrix exponential is ⟂.",
+"targets": [
+"Ordinary Differential Equations|Matrix Exponential Solution"
+]
+},
+{
+"note": "§27 Dual Spaces",
+"line": 26,
+"term": "infimum",
+"count": 1,
+"context": "> - The same space in the companion chapter, with the norm as an infimum: ⟂, ⟂; the other special case of ⟂ used there, bounded operators on ·: ⟂.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§27 Dual Spaces",
+"line": 44,
+"term": "inner product space",
+"count": 1,
+"context": "> For · and · one often writes ·. This is only notation, borrowed from inner product spaces: · pairs an element of · with an element of ·, and is linear in ·. In general · is a different space from ·;",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§27 Dual Spaces",
+"line": 66,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "> (2) Existence and uniqueness of · are Theorem ⟂(2), proved in Lecture 8.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§27 Dual Spaces",
+"line": 96,
+"term": "isometry",
+"count": 1,
+"context": "> Wu called · an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, ·, “through this Ries",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "§27 Dual Spaces",
+"line": 200,
+"term": "dense",
+"count": 1,
+"context": "losed. (The picture is schematic: in finite dimensions every functional is bounded, and an unbounded · has a *dense* null space.)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§28 Sesquilinear Forms and the Lax–Milgram Theorem",
+"line": 27,
+"term": "orthonormal",
+"count": 1,
+"context": "heorem below is the infinite-dimensional version. Wu warned against the naive route — expanding · and · in an orthonormal basis and building an infinite matrix — because of the ambiguity in such infinite sums; the ⟂ does the work i",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§28 Sesquilinear Forms and the Lax–Milgram Theorem",
+"line": 85,
+"term": "supremum",
+"count": 2,
+"context": "> (Left to the class in lecture.) Let · denote the supremum in the statement; we may assume ·. For ·, ⟂ and Proposition ⟂(b) give ·, so ·. Conversely, for · with ·, take",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§28 Sesquilinear Forms and the Lax–Milgram Theorem",
+"line": 124,
+"term": "dirichlet",
+"count": 1,
+"context": "> - Used in Electromagnetism: existence of the Dirichlet Green function of a bounded region — ⟂.",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§28 Sesquilinear Forms and the Lax–Milgram Theorem",
+"line": 161,
+"term": "cauchy sequences",
+"count": 1,
+"context": "> by coercivity and boundedness. So · and · are equivalent, they have the same Cauchy sequences and the same limits (Proposition ⟂), and · is a Hilbert space. Given ·, ·, so · is bounded for the new norm a",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§29 ℝⁿ, Cᵐ and Lᵖ",
+"line": 14,
+"term": "bilinear form",
+"count": 1,
+"context": "Every linear map out of a finite-dimensional space is bounded, so on · boundedness is automatic; a bilinear form on · is a matrix, ·, the finite-dimensional model of ⟂.",
+"targets": [
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-1"
+]
+},
+{
+"note": "§3 ℝⁿ and ℓ²",
+"line": 14,
+"term": "span",
+"count": 1,
+"context": "uses ·, mostly the plane, as the picture for each algebraic notion: the model linear space and direct sum, a span that is a line, a quotient that is the family of parallel translates of a line (read as an orthogonal complem",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 19,
+"term": "separable",
+"count": 1,
+"context": "> The state space of a quantum system is a Hilbert space · over ·, in practice separable; for a particle in · it is ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 26,
+"term": "pointwise",
+"count": 1,
+"context": "linear space over ·. The **dual space** · is the set of bounded linear functionals on · (Definition ⟂), with pointwise addition and scalar multiplication. For ·, its **norm** is",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 39,
+"term": "infimum",
+"count": 2,
+"context": "> For ·, the infimum · is itself an admissible constant: · for all ·. Moreover · is a linear space and · is a norm on it.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 44,
+"term": "infima",
+"count": 1,
+"context": "imum over · gives ·. If · are admissible for ·, then · and ·; so · is closed under the operations, and taking infima gives subadditivity and ·, with equality for · by applying the same to ·. If · then · for all ·, so ·.",
+"targets": [
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-2"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 57,
+"term": "bijection",
+"count": 2,
+"context": "> Let · be a Hilbert space and define · by ·, ·. Then · is a bijection, it is *conjugate-linear*,",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 68,
+"term": "isometry",
+"count": 1,
+"context": "bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: ·. For the isometry, ⟂ shows · is admissible for ·, so ·; conversely, if · is admissible then ·, so · when · (and the case · is t",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 78,
+"term": "finite-dimensional vector space",
+"count": 1,
+"context": "only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast ⟂: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-9"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 78,
+"term": "isomorphic",
+"count": 1,
+"context": "nse a Hilbert space is canonically identified with its dual. Contrast ⟂: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 78,
+"term": "transpose",
+"count": 1,
+"context": "dimensions this is the familiar fact that the functional corresponding to a column vector · is the conjugate transpose ·. For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; thi",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-6",
+"Linear Algebra|§9 Matrices#^ladr-3-54"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 78,
+"term": "conjugate transpose",
+"count": 1,
+"context": "In finite dimensions this is the familiar fact that the functional corresponding to a column vector · is the conjugate transpose ·. For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; thi",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-7"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 103,
+"term": "rank",
+"count": 1,
+"context": "y of ·. The outer product · is linear in ·, has range in ·, and satisfies · by ⟂; it is a bounded operator of rank at most one.",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§30 Bras, Kets, and the Riesz Map",
+"line": 103,
+"term": "adjoint",
+"count": 1,
+"context": "> Theorem ⟂ is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is ⟂ and is false without completeness and b",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-1"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 17,
+"term": "infimum",
+"count": 1,
+"context": "pace. A linear map · is a **bounded operator** if there is · with · for all ·; its **operator norm** · is the infimum of such ·. A sequence of bounded operators · converges **strongly** to · if · for every ·, and **in norm** if",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 59,
+"term": "eigenspace",
+"count": 2,
+"context": "> For a particle in the symmetric box ·, the parity operator · has the even and odd states as its eigenspaces, with eigenvalues · and ·. By Proposition ⟂ these eigenspaces are closed and orthogonal, and ·. Writing ·, ·",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-2",
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-52"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 59,
+"term": "eigenvalue",
+"count": 1,
+"context": "a particle in the symmetric box ·, the parity operator · has the even and odd states as its eigenspaces, with eigenvalues · and ·. By Proposition ⟂ these eigenspaces are closed and orthogonal, and ·. Writing ·, · for the orthogonal",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 59,
+"term": "spectral decomposition",
+"count": 1,
+"context": "hogonal projections, · and ·: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-4",
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^thm-48-4"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 66,
+"term": "countable",
+"count": 1,
+"context": "> Let · be a countable orthonormal set in a Hilbert space ·, and ·. Then · is complete if and only if · strongly, i.e.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 66,
+"term": "orthonormal set",
+"count": 4,
+"context": "> Let · be a countable orthonormal set in a Hilbert space ·, and ·. Then · is complete if and only if · strongly, i.e.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 83,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - Used in Electromagnetism: closure relations of separated eigenfunctions, read as identities of distributions, and the eigenfunction expansion of a Green function — ⟂, ⟂.",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 83,
+"term": "eigenfunction expansion",
+"count": 1,
+"context": "Electromagnetism: closure relations of separated eigenfunctions, read as identities of distributions, and the eigenfunction expansion of a Green function — ⟂, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§24 Expansion in Series of Eigenfunctions#^def-24-1"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 123,
+"term": "cauchy–schwarz inequality",
+"count": 1,
+"context": "> Absolute convergence: by the Cauchy–Schwarz inequality for sequences (Hölder with ·, Theorem ⟂) and Bessel's inequality (Theorem ⟂), ·.",
+"targets": [
+"Linear Algebra|Cauchy–Schwarz inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-14"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 123,
+"term": "absolute convergence",
+"count": 1,
+"context": "> Absolute convergence: by the Cauchy–Schwarz inequality for sequences (Hölder with ·, Theorem ⟂) and Bessel's inequality (Theorem ⟂",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-2",
+"Single Variable Analysis|§14 Series#^def-14-4"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 123,
+"term": "hölder",
+"count": 1,
+"context": "> Absolute convergence: by the Cauchy–Schwarz inequality for sequences (Hölder with ·, Theorem ⟂) and Bessel's inequality (Theorem ⟂), ·.",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 130,
+"term": "parseval's equality",
+"count": 1,
+"context": "> - Parseval's equality, the case ·: ⟂(3); in finite dimensions ⟂.",
+"targets": [
+"Fourier Series and PDEs|§11★ Mean Error and Convergence in Mean#^thm-11-4"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 134,
+"term": "compact",
+"count": 1,
+"context": "series, and Corollary ⟂ is Parseval's identity ·. The spectrum is discrete because the configuration space is compact; compare ⟂.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 134,
+"term": "fourier series",
+"count": 1,
+"context": "an eigenfunction of the free Hamiltonian · with energy ·. Its completeness relation · is the · convergence of Fourier series, and Corollary ⟂ is Parseval's identity ·. The spectrum is discrete because the configuration space is compac",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 134,
+"term": "spectrum",
+"count": 2,
+"context": "completeness relation · is the · convergence of Fourier series, and Corollary ⟂ is Parseval's identity ·. The spectrum is discrete because the configuration space is compact; compare ⟂.",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 134,
+"term": "convergence of fourier series",
+"count": 1,
+"context": "e: ·, and · is an eigenfunction of the free Hamiltonian · with energy ·. Its completeness relation · is the · convergence of Fourier series, and Corollary ⟂ is Parseval's identity ·. The spectrum is discrete because the configuration space is compac",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^thm-8-1"
+]
+},
+{
+"note": "§31 The Completeness Relation",
+"line": 134,
+"term": "parseval's identity",
+"count": 1,
+"context": "onian · with energy ·. Its completeness relation · is the · convergence of Fourier series, and Corollary ⟂ is Parseval's identity ·. The spectrum is discrete because the configuration space is compact; compare ⟂.",
+"targets": [
+"Fourier Series and PDEs|Parseval's Equality for Fourier Series"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 12,
+"term": "countable",
+"count": 13,
+"context": "Physics also writes ·, with an uncountable family ·, while the energy eigenstates of a confined system form a countable basis. This section shows that there is no conflict in dimension, because the · are not vectors of the Hilber",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 12,
+"term": "uncountable",
+"count": 4,
+"context": "Physics also writes ·, with an uncountable family ·, while the energy eigenstates of a confined system form a countable basis. This section shows that t",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 14,
+"term": "orthonormal",
+"count": 15,
+"context": "## Every Orthonormal Set in L² is Countable",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 14,
+"term": "orthonormal set",
+"count": 5,
+"context": "## Every Orthonormal Set in L² is Countable",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 17,
+"term": "inner product space",
+"count": 1,
+"context": "> Let · be a separable inner product space (Definition ⟂). Then every orthonormal set in · is countable.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 22,
+"term": "countable set",
+"count": 1,
+"context": "point · for each · defines a map ·, which is one-to-one because the balls are disjoint. So · injects into the countable set ·.",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 53,
+"term": "cardinality",
+"count": 1,
+"context": "> The *Hilbert dimension* of · is the cardinality of an orthonormal basis; in · it is countable, and by ⟂ every orthonormal set, let alone basis, in · is count",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 57,
+"term": "eigenvector",
+"count": 2,
+"context": "## Position Has No Eigenvectors",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 65,
+"term": "almost everywhere",
+"count": 1,
+"context": "> · for almost every ·, so · for almost every ·. Since · has measure zero, · almost everywhere.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 70,
+"term": "eigenvalue",
+"count": 2,
+"context": "> - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 70,
+"term": "self-adjoint",
+"count": 2,
+"context": "> - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: ⟂.",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-10"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 106,
+"term": "measurable set",
+"count": 1,
+"context": "> For a measurable set · define · by ·. Then:",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-4"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 115,
+"term": "subsequence",
+"count": 1,
+"context": "> Let ·, a linear subspace. It is closed: an ·-convergent sequence has an a.e. convergent subsequence (MATH 551 notes, ⟂), so a limit of functions vanishing a.e. outside · vanishes a.e. outside ·. Its orthogonal",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 121,
+"term": "pointwise",
+"count": 1,
+"context": "> by the ⟂ (the integrand · tends to · pointwise and is dominated by ·). (d) ·.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§32 Position Eigenstates and Continuous Resolutions",
+"line": 141,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - Used in Quantum Mechanics: the eigenfunctions of momentum and of position, with Dirac orthonormality, and the continuous resolution of the identity — ⟂, ⟂;",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 10,
+"term": "spectrum",
+"count": 6,
+"context": "*Companion — Thread: dimension. Discrete and continuous spectrum.*",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 13,
+"term": "span",
+"count": 2,
+"context": "nd its spectrum also contains the continuum ·, which carries no eigenvectors. In particular the closed linear span · of all eigenfunctions (the bound states) is a proper subspace of ·.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 13,
+"term": "eigenspace",
+"count": 2,
+"context": "atomic units, the hydrogen Hamiltonian · on · (spin ignored) is self-adjoint. Its eigenvalues are ·, ·, with eigenspaces of dimension ·, and its spectrum also contains the continuum ·, which carries no eigenvectors. In particular",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-2",
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-52"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 13,
+"term": "eigenvalue",
+"count": 2,
+"context": "> In atomic units, the hydrogen Hamiltonian · on · (spin ignored) is self-adjoint. Its eigenvalues are ·, ·, with eigenspaces of dimension ·, and its spectrum also contains the continuum ·, which carries no e",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 13,
+"term": "eigenvector",
+"count": 2,
+"context": "s are ·, ·, with eigenspaces of dimension ·, and its spectrum also contains the continuum ·, which carries no eigenvectors. In particular the closed linear span · of all eigenfunctions (the bound states) is a proper subspace of ·.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 13,
+"term": "eigenfunctions",
+"count": 3,
+"context": "m also contains the continuum ·, which carries no eigenvectors. In particular the closed linear span · of all eigenfunctions (the bound states) is a proper subspace of ·.",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 26,
+"term": "orthonormal",
+"count": 4,
+"context": "> Let · be an orthonormal basis of eigenfunctions of ·. Then · is not a complete orthonormal set in ·, and there are states · with",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 26,
+"term": "orthonormal set",
+"count": 1,
+"context": "> Let · be an orthonormal basis of eigenfunctions of ·. Then · is not a complete orthonormal set in ·, and there are states · with",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-4"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 35,
+"term": "parseval's equality",
+"count": 1,
+"context": "· is orthogonal to every ·, so the set is not complete. By Theorem ⟂ it is then not an orthonormal basis and Parseval's equality fails for some ·; with Bessel's inequality (Theorem ⟂) the inequality is strict for that ·.",
+"targets": [
+"Fourier Series and PDEs|§11★ Mean Error and Convergence in Mean#^thm-11-4"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 48,
+"term": "compact",
+"count": 2,
+"context": "re not in · and the integral stands for a projection-valued measure on ·. By contrast, a system confined to a compact region (the ring of the example in ⟂, a particle in a box) or by a potential growing at infinity (the harmoni",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§33 Bound States Need Not Be Complete꞉ Hydrogen",
+"line": 48,
+"term": "compactness",
+"count": 1,
+"context": "as purely discrete spectrum, and its eigenstates alone form an orthonormal basis — as the ring example shows, compactness forces discreteness. Hydrogen's potential decays at infinity, which is what lets the electron escape and crea",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§4 Statement and Motivation",
+"line": 145,
+"term": "kernel",
+"count": 1,
+"context": "> - On a Hilbert space, the kernel · of a bounded functional has codimension one: ⟂.",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§4 Statement and Motivation",
+"line": 145,
+"term": "codimension",
+"count": 1,
+"context": "> - On a Hilbert space, the kernel · of a bounded functional has codimension one: ⟂.",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 24,
+"term": "inner product space",
+"count": 1,
+"context": "> - Every functional on · is a dot product: ⟂; on finite-dimensional inner product spaces ⟂; on Hilbert spaces (bounded functionals) ⟂.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 49,
+"term": "separation",
+"count": 1,
+"context": "> - The same construction, with · the gauge of a convex set, is Steps 2–3 of the separation theorem: ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 59,
+"term": "span",
+"count": 1,
+"context": "> Z = \\operatorname{span}\\{x_0, Y\\} = \\{ a x_0 + y \\mid a \\in \\mathbb{R},\\ y \\in Y \\}.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 74,
+"term": "linear extension",
+"count": 1,
+"context": "> Any linear extension · of · to · must satisfy",
+"targets": [
+"Group Theory|§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 133,
+"term": "supremum",
+"count": 6,
+"context": "> Fix · and take the supremum over · on the left of (4): the set · is nonempty and bounded above by ·, so",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 139,
+"term": "infimum",
+"count": 2,
+"context": "number with · for every ·. Being a supremum, · for every ·. Thus · satisfies (3). (Equally one could take the infimum of the right-hand side of (4) over ·, or any number in between; the choice is not unique.)",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 192,
+"term": "orthonormal",
+"count": 1,
+"context": "> - Also used for complements, ⟂, and for orthonormal bases, ⟂; the pattern: ⟂.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 208,
+"term": "countable",
+"count": 1,
+"context": "ntable dimension. In ⟂ normed spaces (later) the extension can instead be built by ordinary induction along a countable dense sequence.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 208,
+"term": "uncountable",
+"count": 1,
+"context": "tains all the analysis; Zorn's lemma only says “repeat until finished” in a way that is legitimate when · has uncountable dimension. In ⟂ normed spaces (later) the extension can instead be built by ordinary induction along a counta",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§5 Proof of the Hahn–Banach Theorem",
+"line": 208,
+"term": "dense",
+"count": 1,
+"context": "ension. In ⟂ normed spaces (later) the extension can instead be built by ordinary induction along a countable dense sequence.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§6 Convex Sets and the Gauge",
+"line": 106,
+"term": "separation",
+"count": 2,
+"context": "as an exercise. The stronger statement proved here, that every point is interior, is what Corollary ⟂ and the separation theorem (⟂) use.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§6 Convex Sets and the Gauge",
+"line": 113,
+"term": "minkowski",
+"count": 1,
+"context": "> Let · be a convex set in a linear space · with · an interior point of ·. The **gauge** (or Minkowski functional) associated with · is",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§6 Convex Sets and the Gauge",
+"line": 352,
+"term": "span",
+"count": 1,
+"context": "d (·): the segment · through · (red) lies in ·, the apex · lies in ·, so by convexity the whole triangle they span (shaded) lies in ·. The point · sits on the median (dashed) at fraction · from the apex, and the triangle's c",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§7 The Hyperplane Separation Theorem",
+"line": 30,
+"term": "boundary points",
+"count": 1,
+"context": "ctly on one side of it. The point · may be a boundary point of · (it is excluded from · only because · has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at ·.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§8 The Complex Hahn–Banach Theorem",
+"line": 143,
+"term": "cauchy–schwarz inequality",
+"count": 1,
+"context": "> - The same rotation in the complex Cauchy–Schwarz inequality: ⟂; as a technique: ⟂.",
+"targets": [
+"Linear Algebra|Cauchy–Schwarz inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-14"
+]
+},
+{
+"note": "§9 ℝⁿ and Its Unit Balls",
+"line": 14,
+"term": "separation",
+"count": 1,
+"context": "lane are the disk, the square and the diamond. The level sets of · are the hyperplanes and half-spaces of the separation theorem. The gauge reads the picture backwards: the gauge of a half-plane vanishes on a whole half-plane, the",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "· 3 Normed Linear Spaces",
+"line": 10,
+"term": "cauchy sequences",
+"count": 1,
+"context": "the most one can say. The next layer of structure is a notion of length. With it come distance, convergence, Cauchy sequences, and completeness, and the objects of the course (⟂) can finally be defined. This lecture follows Lax's book.",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness",
+"line": 7,
+"term": "compactness",
+"count": 1,
+"context": "# 4 Infinite-Dimensional Spaces: ℓᵖ, Lᵖ, and Compactness",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "· 5 Inner Product Spaces",
+"line": 7,
+"term": "inner product space",
+"count": 1,
+"context": "# 5 Inner Product Spaces",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "· 7 Functional Analysis and Quantum Mechanics",
+"line": 10,
+"term": "adjoint",
+"count": 1,
+"context": "tation, and which are false as usually stated. It is written to grow: each new part of the course (operators, adjoints, spectral theory) will add a section here.",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-1"
+]
+},
+{
+"note": "ℓᵖ Is a Banach Space",
+"line": 30,
+"term": "subsequence",
+"count": 1,
+"context": "on is the ⟂ (551 §19.18, cited here as ⟂). There the candidate must come from an almost-everywhere convergent subsequence. The chain is the same in both courses: Hölder (⟂; ⟂ in 551), then Minkowski (⟂; ⟂), then completeness.",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "ℓᵖ Is a Banach Space",
+"line": 30,
+"term": "almost everywhere",
+"count": 1,
+"context": "e.** The function-space version is the ⟂ (551 §19.18, cited here as ⟂). There the candidate must come from an almost-everywhere convergent subsequence. The chain is the same in both courses: Hölder (⟂; ⟂ in 551), then Minkowski (⟂; ⟂), t",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "ℓᵖ Is a Banach Space",
+"line": 31,
+"term": "orthonormal",
+"count": 1,
+"context": "- **Used for.** ℓ² is the first infinite-dimensional Hilbert space (⟂), with the standard orthonormal basis (⟂). Its unit ball is not compact, since the eₙ are 2^(1/p) apart (⟂). Completeness does not pass to th",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "ℓᵖ Is a Banach Space",
+"line": 31,
+"term": "compact",
+"count": 1,
+"context": "e first infinite-dimensional Hilbert space (⟂), with the standard orthonormal basis (⟂). Its unit ball is not compact, since the eₙ are 2^(1/p) apart (⟂). Completeness does not pass to the subspace c₀₀ of finitely supported seq",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+}
+]

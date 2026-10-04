@@ -1,0 +1,2577 @@
+[
+{
+"note": "Classification of 2×2 Linear Systems",
+"line": 28,
+"term": "eigenvalue",
+"count": 1,
+"context": "ral point in an RLC circuit). The discrete-time classification, with · compared to · and spirals from complex eigenvalues: ⟂ and ⟂. The coordinates · in the complex case are those of ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Convolution Theorem for the Laplace Transform",
+"line": 23,
+"term": "fubini",
+"count": 1,
+"context": "- The interchange of order is Fubini's theorem for Lebesgue integrals, ⟂, made applicable by the absolute bound and Tonelli (⟂). Measure Theory ha",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "Convolution Theorem for the Laplace Transform",
+"line": 23,
+"term": "tonelli",
+"count": 1,
+"context": "interchange of order is Fubini's theorem for Lebesgue integrals, ⟂, made applicable by the absolute bound and Tonelli (⟂). Measure Theory has no item on convolution itself, so that is the only link.",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "Eigenvector Solutions of Linear Systems",
+"line": 28,
+"term": "diagonalizable",
+"count": 1,
+"context": "- See also: ⟂, the same general solution for diagonalizable · obtained by decoupling: · with the eigenvectors as columns of · turns the system into ·. Having · independe",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "Eigenvector Solutions of Linear Systems",
+"line": 28,
+"term": "eigenvector",
+"count": 2,
+"context": "- See also: ⟂, the same general solution for diagonalizable · obtained by decoupling: · with the eigenvectors as columns of · turns the system into ·. Having · independent eigenvectors is exactly diagonalizability, ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "Integrating Factor Solution Formula",
+"line": 25,
+"term": "continuous function",
+"count": 1,
+"context": "- Rigorous ingredients: the antiderivative · of a continuous function is ⟂ (FTC II), and \"same derivative on an interval implies they differ by a constant\" is ⟂. The integrating f",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Integrating Factor Solution Formula",
+"line": 25,
+"term": "antiderivative",
+"count": 1,
+"context": "- Rigorous ingredients: the antiderivative · of a continuous function is ⟂ (FTC II), and \"same derivative on an interval implies they differ by a consta",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "Ordinary Differential Equations",
+"line": 6,
+"term": "boundary value problem",
+"count": 2,
+"context": "textbook: \"Boyce, DiPrima & Meade, Elementary Differential Equations and Boundary Value Problems, 11th ed.\"",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "Ordinary Differential Equations",
+"line": 15,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "s: every definition and result BDP states, every proof BDP gives (including the Picard-iteration proof of the existence and uniqueness theorem, whose home in the vault is here), the solution methods, and a lean selection of worked examples, man",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "Principle of Superposition (linear ODEs)",
+"line": 24,
+"term": "linear map",
+"count": 1,
+"context": "- The computation says that · is a linear map, ·, so the solution set of · is its null space and hence a subspace: ⟂, ⟂. Lay's instance is ·, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Table of Elementary Laplace Transforms",
+"line": 36,
+"term": "residue",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (inverse transforms of rational functions by residues, with worked examples).",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "Test for Exact Equations",
+"line": 20,
+"term": "simply connected",
+"count": 2,
+"context": "ncaré lemma, ⟂, for a rectangle, proved here in full. BDP notes that the region need not be rectangular, only simply connected; the angle form on the punctured plane (⟂, ⟂) is closed but not exact, so some condition on the region is nee",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "Test for Exact Equations",
+"line": 20,
+"term": "clairaut",
+"count": 1,
+"context": "the 1-form · is exact, ·, and (10) says · is closed, · (⟂). The first half of the proof is exact · closed, ⟂ (Clairaut in forms language, ⟂); the second half is the Poincaré lemma, ⟂, for a rectangle, proved here in full. BDP no",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "Test for Exact Equations",
+"line": 20,
+"term": "punctured plane",
+"count": 1,
+"context": "here in full. BDP notes that the region need not be rectangular, only simply connected; the angle form on the punctured plane (⟂, ⟂) is closed but not exact, so some condition on the region is needed.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "Test for Exact Equations",
+"line": 21,
+"term": "vector field",
+"count": 1,
+"context": "- See also: the same test and construction for vector fields in Calculus, where · is a potential function of ·: ⟂ (necessity), ⟂ (sufficiency on simply-connected regions)",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "Variation of Parameters Formula",
+"line": 24,
+"term": "green's function",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the same method), with the particular solution written as a Green's function integral, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Green's Function for Boundary Value Problems",
+"Fourier Series and PDEs|§5★ Green's Functions#^def-5-2"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 16,
+"term": "mathematical model",
+"count": 3,
+"context": "## Differential Equations as Mathematical Models",
+"targets": [
+"Calculus|§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-1"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 68,
+"term": "behavior of the solution",
+"count": 1,
+"context": "of ·, which makes it a natural task for a computer; a grid of a few hundred points usually shows the overall behavior of the solutions.",
+"targets": [
+"Fourier Series and PDEs|§25 Generalities on the Heat Conduction Problem#^thm-25-4"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 121,
+"term": "growth rate",
+"count": 2,
+"context": "> [!definition] Definition §1.4: Rate Constant (Growth Rate)",
+"targets": [
+"Calculus|§20 Rates of Change in the Natural and Social Sciences#^def-20-6"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 138,
+"term": "neighborhood",
+"count": 1,
+"context": "> Let time be measured in months and suppose ·/month. Several owls in the neighborhood kill · mice per day. Formulate the model and investigate its solutions graphically.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 191,
+"term": "separation",
+"count": 1,
+"context": "the last by infinite series when · is a polynomial. Leibniz, who introduced the notations · and ·, discovered separation of variables (⟂) and the reduction of homogeneous equations to separable ones in 1691, and the method for fir",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§1 Some Basic Mathematical Models; Direction Fields",
+"line": 191,
+"term": "separable",
+"count": 1,
+"context": "d the notations · and ·, discovered separation of variables (⟂) and the reduction of homogeneous equations to separable ones in 1691, and the method for first-order linear equations (⟂) in 1694. The brothers Jakob (1654–1705) and",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§10 Numerical Approximations꞉ Euler's Method",
+"line": 14,
+"term": "separable",
+"count": 1,
+"context": "n near · (⟂), but for the vast majority of equations it cannot be found by symbolic manipulation: the linear, separable and exact equations of §4–§9 are the main exceptions. A direction field shows the solutions qualitatively but",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§10 Numerical Approximations꞉ Euler's Method",
+"line": 53,
+"term": "euler's formula",
+"count": 3,
+"context": "> With the notation · this reads · (9), and with a uniform **step size** ·, ·, it becomes **Euler's formula**",
+"targets": [
+"Complex Variables|§7 Exponential Form#^def-7-2"
+]
+},
+{
+"note": "§10 Numerical Approximations꞉ Euler's Method",
+"line": 72,
+"term": "taylor's theorem",
+"count": 1,
+"context": "ula) and ⟂, where the error is observed to shrink in proportion to ·; the Connections there explain this with Taylor's theorem, ⟂: one step errs by about ·, and · steps accumulate an error of order ·.",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 14,
+"term": "norm",
+"count": 1,
+"context": ", and a Lipschitz bound from the mean value theorem. The same method, with absolute values replaced by vector norms, proves the existence and uniqueness theorems for first-order systems, ⟂ and ⟂, and hence for second-order li",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 14,
+"term": "existence and uniqueness",
+"count": 3,
+"context": "bound from the mean value theorem. The same method, with absolute values replaced by vector norms, proves the existence and uniqueness theorems for first-order systems, ⟂ and ⟂, and hence for second-order linear equations, ⟂; BDP proves none of",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 40,
+"term": "chain rule",
+"count": 1,
+"context": "nslation, taking the second rectangle onto the first; composition with it preserves continuity, and ·. By the chain rule, ·, so",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 54,
+"term": "continuous function",
+"count": 13,
+"context": "Suppose for the moment that · is a differentiable function satisfying (2). Then · is a continuous function of · only, and integrating · from the initial point · to an arbitrary · (with ·) gives the equation (3) below",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 77,
+"term": "fundamental theorem of calculus",
+"count": 4,
+"context": "> **(2) · (3).** If ·, the right side is continuous, and by the fundamental theorem of calculus ·; with · this is (3).",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 79,
+"term": "composition of continuous functions",
+"count": 2,
+"context": "3) · (2).** Substituting · in (3) gives ·: the initial condition holds. The integrand · is continuous, as the composition of continuous functions. So, by the fundamental theorem of calculus, the right side of (3) is differentiable with derivative ·: · is",
+"targets": [
+"Complex Variables|§18 Continuity#^thm-18-2",
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-4",
+"Single Variable Analysis|§17 Continuous Functions#^thm-17-4"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 195,
+"term": "ratio test",
+"count": 1,
+"context": "> so · exists if and only if (15) converges. By the ratio test, for each ·,",
+"targets": [
+"Calculus|Ratio Test",
+"Single Variable Analysis|§9 Limit Theorems for Sequences#^thm-9-9"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 201,
+"term": "power series",
+"count": 1,
+"context": "> so (15) converges for every ·: its sum · is the limit of · for every ·. Since (15) is a power series converging on the whole line, it can be differentiated and integrated term by term, and direct computation sh",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 207,
+"term": "separable",
+"count": 1,
+"context": "> and indeed ·, ·. (The same solution comes from (8) as a separable or as a linear equation, BDP Problem 2.8.13.) This identification is not needed for existence and uniqueness.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 247,
+"term": "bounded set",
+"count": 3,
+"context": "> Since · is continuous on the closed bounded set ·, it is bounded there: there is · with",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 266,
+"term": "extreme value theorem",
+"count": 3,
+"context": "> A continuous function on a closed, bounded set in the plane is bounded (the extreme value theorem), which gives ·. Now induct on ·. The claim holds for ·. Suppose · is continuous on · with ·. Then · lies in",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 392,
+"term": "pointwise",
+"count": 2,
+"context": "form limit of continuous functions is continuous, so · is continuous on ·. (Continuity is not automatic for a pointwise limit of continuous functions; see Remark: What Uniform Convergence Is For.) Letting · in · gives ·, so the g",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 392,
+"term": "uniform limit of continuous functions",
+"count": 1,
+"context": "> **3. The limit is continuous and satisfies the integral equation.** A uniform limit of continuous functions is continuous, so · is continuous on ·. (Continuity is not automatic for a pointwise limit of continuous func",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^thm-12-16"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 414,
+"term": "supremum",
+"count": 1,
+"context": "> *Its graph stays in ·.* (BDP's Problem 18 assumes this; here is why it holds.) Let · be the supremum of the · such that · for all ·; the set contains ·, and by continuity · on ·. On · the points · lie in ·, so",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 430,
+"term": "cauchy sequence",
+"count": 1,
+"context": "· to themselves (Lemma §11.4), a solution is a fixed point ·, and Lemma §11.6 says ·. So the iterates form a Cauchy sequence in ·, which is complete, ⟂: this is the abstract reason the iterates converge.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-5",
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-4"
+]
+},
+{
+"note": "§11 The Existence and Uniqueness Theorem",
+"line": 489,
+"term": "geometric series",
+"count": 1,
+"context": "> which agree with the geometric series · in more and more terms (through · for ·).",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§12★ First-Order Difference Equations",
+"line": 153,
+"term": "eigenvalue",
+"count": 1,
+"context": "> - The vector version ·, where the eigenvalues of · play the role of · and · makes the origin an attractor: ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§12★ First-Order Difference Equations",
+"line": 383,
+"term": "chain rule",
+"count": 1,
+"context": "> **Why period 2 becomes unstable.** By the chain rule the slope of · at · is ·. With · and · (from the quadratic), this is ·. By Lemma §12.5 applied to ·, the peri",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§12★ First-Order Difference Equations",
+"line": 400,
+"term": "growth rate",
+"count": 1,
+"context": "1974. On the basis of his analysis of it as a model for certain insect populations, May suggested that if the growth rate · is too large, effective long-range predictions of these populations are impossible. It is increasingly clea",
+"targets": [
+"Calculus|§20 Rates of Change in the Natural and Social Sciences#^def-20-6"
+]
+},
+{
+"note": "§13 Homogeneous Differential Equations with Constant Coefficients",
+"line": 146,
+"term": "eigenvalue",
+"count": 1,
+"context": "> - The same substitution for systems: trying · in · turns the differential equation into the eigenvalue problem ·, ⟂. In this subject that is ⟂ (BDP 7.5), and the second-order equation becomes such a system by ⟂ (",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§13 Homogeneous Differential Equations with Constant Coefficients",
+"line": 146,
+"term": "eigenvalue problem",
+"count": 1,
+"context": "> - The same substitution for systems: trying · in · turns the differential equation into the eigenvalue problem ·, ⟂. In this subject that is ⟂ (BDP 7.5), and the second-order equation becomes such a system by ⟂ (BDP 7.1)",
+"targets": [
+"Fourier Series and PDEs|§20 Example꞉ Insulated Bar#^def-20-1",
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-3"
+]
+},
+{
+"note": "§14 Solutions of Linear Homogeneous Equations; the Wronskian",
+"line": 14,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "This section explains why two solutions are enough. The existence and uniqueness theorem guarantees exactly one solution of · for each pair of initial conditions, on the whole interval where",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§14 Solutions of Linear Homogeneous Equations; the Wronskian",
+"line": 126,
+"term": "linear map",
+"count": 3,
+"context": "> - The computation says that · is a linear map, ·, so the solution set of · is its null space and hence a subspace: ⟂, ⟂. Lay's instance is ·, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§14 Solutions of Linear Homogeneous Equations; the Wronskian",
+"line": 128,
+"term": "separation",
+"count": 1,
+"context": "n: ⟂ (superposition for linear homogeneous partial differential equations and boundary conditions, which lets separation of variables build series solutions); in Powers' review of ODEs, ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§14 Solutions of Linear Homogeneous Equations; the Wronskian",
+"line": 453,
+"term": "separable",
+"count": 1,
+"context": "> This is a first-order equation that is both linear (⟂) and separable (⟂). With the integrating factor · (an antiderivative of · exists on · because · is continuous), (27) becomes",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§14 Solutions of Linear Homogeneous Equations; the Wronskian",
+"line": 453,
+"term": "antiderivative",
+"count": 1,
+"context": "> This is a first-order equation that is both linear (⟂) and separable (⟂). With the integrating factor · (an antiderivative of · exists on · because · is continuous), (27) becomes ·, so · for a constant · on the interval ·, and",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§15 Complex Roots of the Characteristic Equation",
+"line": 84,
+"term": "eigenvalue",
+"count": 2,
+"context": "> - Lay defines · by the power series and arrives at the same formula (14), used for complex eigenvalues of ·: ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§15 Complex Roots of the Characteristic Equation",
+"line": 84,
+"term": "power series",
+"count": 1,
+"context": "> - Lay defines · by the power series and arrives at the same formula (14), used for complex eigenvalues of ·: ⟂.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§15 Complex Roots of the Characteristic Equation",
+"line": 84,
+"term": "complex eigenvalue",
+"count": 2,
+"context": "> - Lay defines · by the power series and arrives at the same formula (14), used for complex eigenvalues of ·: ⟂.",
+"targets": [
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1"
+]
+},
+{
+"note": "§15 Complex Roots of the Characteristic Equation",
+"line": 224,
+"term": "eigenvector",
+"count": 1,
+"context": "> - The systems version: for a real matrix with complex eigenvalue · and eigenvector ·, the real and imaginary parts of · are two real solutions of ·, ⟂; in this subject ⟂ (BDP 7.6).",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§16 Repeated Roots; Reduction of Order",
+"line": 206,
+"term": "eigenvalue",
+"count": 1,
+"context": "e same three cases in Powers' review); in boundary value problems the three cases of · (·, ·, ·) decide which eigenvalues exist, ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§16 Repeated Roots; Reduction of Order",
+"line": 206,
+"term": "boundary value problem",
+"count": 1,
+"context": "> - See also: ⟂ (the same three cases in Powers' review); in boundary value problems the three cases of · (·, ·, ·) decide which eigenvalues exist, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§16 Repeated Roots; Reduction of Order",
+"line": 279,
+"term": "separation",
+"count": 1,
+"context": "tion (32) is first-order linear and separable in ·, so it is solved by Stewart's integrating factor, ⟂, or by separation of variables, ⟂. This subject's treatments: ⟂ and ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§16 Repeated Roots; Reduction of Order",
+"line": 279,
+"term": "separable",
+"count": 3,
+"context": "> - Equation (32) is first-order linear and separable in ·, so it is solved by Stewart's integrating factor, ⟂, or by separation of variables, ⟂. This subject's tr",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§17 Nonhomogeneous Equations; Method of Undetermined Coefficients",
+"line": 14,
+"term": "undetermined coefficients",
+"count": 4,
+"context": "solution can be guessed up to constants: assume that · has the same form as ·, substitute, and solve for the undetermined coefficients. The one complication is a guess that already solves the homogeneous equation; it is then multiplied by ·, or",
+"targets": [
+"Fourier Series and PDEs|§2★ Nonhomogeneous Linear Equations#^thm-2-4"
+]
+},
+{
+"note": "§17 Nonhomogeneous Equations; Method of Undetermined Coefficients",
+"line": 247,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "> Write · for the characteristic polynomial; then ·.",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§17 Nonhomogeneous Equations; Method of Undetermined Coefficients",
+"line": 327,
+"term": "euler's formula",
+"count": 1,
+"context": "> **Case 3: · or ·.** The two are similar; take the sine. By Euler's formula (⟂), ·, so",
+"targets": [
+"Complex Variables|§7 Exponential Form#^def-7-2"
+]
+},
+{
+"note": "§18★ Variation of Parameters",
+"line": 112,
+"term": "cramer's rule",
+"count": 1,
+"context": "Their determinant is the Wronskian ·, which is nonzero because · is a fundamental set, and Cramer's rule gives",
+"targets": [
+"Applied Linear Algebra|Cramer's Rule",
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1"
+]
+},
+{
+"note": "§18★ Variation of Parameters",
+"line": 154,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> so that ·. By the Fundamental Theorem of Calculus, · and · are differentiable with · and ·. Then",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§18★ Variation of Parameters",
+"line": 255,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> For the second statement, · exists by the existence and uniqueness theorem (⟂, Theorem 3.2.1). Then · by linearity of ·, and ·, ·. By the uniqueness part of Theorem 3.2.1, · is",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§18★ Variation of Parameters",
+"line": 262,
+"term": "kernel",
+"count": 3,
+"context": "> - See also: ⟂ (the same integral, with its kernel called the Green's function) and its boundary value version, ⟂, where the Green's function is built to satisf",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§19 Mechanical and Electrical Vibrations",
+"line": 78,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "at remains is (7). Dividing by · puts (7) in the form · with constant (hence continuous) coefficients, so the existence and uniqueness theorem (⟂, Theorem 3.2.1) gives exactly one solution with the data (8), for all ·.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§2 Solutions of Some Differential Equations",
+"line": 33,
+"term": "chain rule",
+"count": 2,
+"context": "> By the chain rule the left side is ·, so integrating both sides gives",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§2 Solutions of Some Differential Equations",
+"line": 193,
+"term": "antiderivative",
+"count": 1,
+"context": "> since an antiderivative of · is ·. The object starts falling at · with ·, so ·, ·, and",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§2 Solutions of Some Differential Equations",
+"line": 224,
+"term": "laplace's equation",
+"count": 1,
+"context": "developed variation of parameters (⟂). Pierre-Simon de Laplace (1749–1827) is known for celestial mechanics, Laplace's equation, and the transform of ⟂. In the nineteenth century the interest turned to existence and uniqueness and to ser",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§2 Solutions of Some Differential Equations",
+"line": 224,
+"term": "power series",
+"count": 1,
+"context": "lution of homogeneous linear equations with constant coefficients (⟂, 1743) and its nonhomogeneous extension, power series methods, and a numerical procedure (⟂, 1768–69). Joseph-Louis Lagrange (1736–1813) showed that the general so",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§2 Solutions of Some Differential Equations",
+"line": 224,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "stial mechanics, Laplace's equation, and the transform of ⟂. In the nineteenth century the interest turned to existence and uniqueness and to series methods.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§20 Forced Periodic Vibrations",
+"line": 120,
+"term": "cramer's rule",
+"count": 1,
+"context": "> This equals · exactly when · and ·. The determinant of this system is · (as ·), and Cramer's rule gives",
+"targets": [
+"Applied Linear Algebra|Cramer's Rule",
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1"
+]
+},
+{
+"note": "§20 Forced Periodic Vibrations",
+"line": 130,
+"term": "undetermined coefficients",
+"count": 3,
+"context": "*Uses:* ⟂, ⟂, ⟂ (undetermined coefficients)",
+"targets": [
+"Fourier Series and PDEs|§2★ Nonhomogeneous Linear Equations#^thm-2-4"
+]
+},
+{
+"note": "§20 Forced Periodic Vibrations",
+"line": 133,
+"term": "fourier series",
+"count": 1,
+"context": "> - See also: ⟂ (the periodic response to any periodic forcing, found term by term from the Fourier series of the force), with a damped oscillator driven by a square wave in ⟂.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 14,
+"term": "continuous function",
+"count": 2,
+"context": "This section reviews improper integrals, defines the transform, and proves that it exists for every piecewise continuous function of exponential order (for · large enough). It then computes the first transforms (·, ·, ·, a pulse) and shows",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 62,
+"term": "jump discontinuities",
+"count": 1,
+"context": "> That is, · is continuous on · except for finitely many jump discontinuities. If · is piecewise continuous on · for every ·, it is **piecewise continuous on ·**. (The interval may also b",
+"targets": [
+"Calculus|§10 Continuity#^def-10-3"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 78,
+"term": "comparison test",
+"count": 1,
+"context": "> [!theorem] Theorem §21.1: Comparison Test for Improper Integrals",
+"targets": [
+"Calculus|Direct Comparison Test",
+"Single Variable Analysis|§14 Series#^thm-14-7"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 98,
+"term": "kernel",
+"count": 3,
+"context": "> where the function ·, the **kernel** of the transformation, and the limits ·, · are given (· or · or both are allowed). It transforms the functi",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 118,
+"term": "boundary value problem",
+"count": 1,
+"context": "> - PDE version: ⟂ (the transform in · of a function ·, which turns heat and wave problems into boundary value problems in ·, ⟂); Powers' definition is ⟂.",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§21 Definition of the Laplace Transform",
+"line": 255,
+"term": "integration by parts",
+"count": 1,
+"context": "> since for ·, ·. A second integration by parts (·; the boundary term · vanishes at both ends) gives",
+"targets": [
+"Calculus|Integration by Parts",
+"Calculus|§44 Integration by Parts#^thm-44-1",
+"Single Variable Analysis|§34 Fundamental Theorem of Calculus#^thm-34-3"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 14,
+"term": "continuous function",
+"count": 5,
+"context": "ting the square) into entries of a table of known transforms, Table 6.2.1. Inversion is unambiguous because a continuous function is determined by its transform.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 48,
+"term": "interior point",
+"count": 1,
+"context": "e. **Because · is continuous**, the boundary terms telescope: the term · appears once with each sign at every interior point ·, and only the ends survive. The integrals combine into one, so",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 160,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "> The denominator · in (16) is the characteristic polynomial of (14). Partial fractions require factoring it, so the transform does not avoid finding the roots of the cha",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 188,
+"term": "smooth function",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (Lerch's theorem, proved for sectionally smooth functions of exponential order from the Bromwich inversion formula).",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 188,
+"term": "sectionally smooth function",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (Lerch's theorem, proved for sectionally smooth functions of exponential order from the Bromwich inversion formula).",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^def-8-4"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 188,
+"term": "bromwich inversion formula",
+"count": 1,
+"context": "-variables version: ⟂ (Lerch's theorem, proved for sectionally smooth functions of exponential order from the Bromwich inversion formula).",
+"targets": [
+"Complex Variables|Bromwich Inversion Formula"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 190,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "Consistently with this, the solution (8) found in Example §22.1 is continuous and, by the existence and uniqueness theorem for second-order equations (⟂, Theorem 3.2.1), the initial value problem has no other solution.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 305,
+"term": "residue",
+"count": 3,
+"context": "s version: ⟂ (entry 11 for complex ·, and the inverse transform of every proper rational function as a sum of residues), with entry 6 inverted by residues in ⟂.",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 335,
+"term": "liouville's theorem",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and ⟂ (inverting a rational transform by residues).",
+"targets": [
+"Complex Variables|Liouville's Theorem",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1"
+]
+},
+{
+"note": "§22 Solution of Initial Value Problems",
+"line": 335,
+"term": "principal part",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and ⟂ (inverting a rational transform by residues).",
+"targets": [
+"Complex Variables|§78 The Three Types of Isolated Singular Points#^def-78-1"
+]
+},
+{
+"note": "§23 Step Functions",
+"line": 14,
+"term": "continuous function",
+"count": 2,
+"context": "sform is at its best with forcing terms that switch on and off. The unit step function · writes any piecewise continuous function as one formula, a sum of shifted pieces ·. Two shift theorems make the transform work with these pieces: a de",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§24 Differential Equations with Discontinuous Forcing Functions",
+"line": 79,
+"term": "curvature",
+"count": 1,
+"context": "ter · it oscillates back down to ·. The curve has no corners: · and · are continuous at · and ·, and only the curvature · jumps there.*",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-4"
+]
+},
+{
+"note": "§24 Differential Equations with Discontinuous Forcing Functions",
+"line": 98,
+"term": "jump discontinuities",
+"count": 1,
+"context": "> Then · and · are continuous on ·, and · has jump discontinuities at exactly the points where · does, with the same jumps:",
+"targets": [
+"Calculus|§10 Continuity#^def-10-3"
+]
+},
+{
+"note": "§24 Differential Equations with Discontinuous Forcing Functions",
+"line": 111,
+"term": "existence and uniqueness",
+"count": 4,
+"context": "> BDP argues from the existence and uniqueness theorem; here is the argument written out. Let · be the jumps of ·. On each closed interval ·, let · be · wit",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§25 Impulse Functions",
+"line": 77,
+"term": "inner product",
+"count": 1,
+"context": "> - That no function, even in ·, can do the job of ·: point evaluation · is not given by an inner product with any ·, ⟂; the \"wavefunction\" · of a position eigenstate is the same idealization.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§25 Impulse Functions",
+"line": 86,
+"term": "continuous function",
+"count": 1,
+"context": "> In the same way, for a continuous function ·,",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§25 Impulse Functions",
+"line": 142,
+"term": "l'hôpital's rule",
+"count": 2,
+"context": "> By Definition §25.4 and Theorem §25.1, ·. The quotient is of the form · as ·; by l'Hôpital's rule (differentiating in ·, with · fixed),",
+"targets": [
+"Calculus|L'Hospital's Rule"
+]
+},
+{
+"note": "§25 Impulse Functions",
+"line": 176,
+"term": "mean value theorem",
+"count": 3,
+"context": "> for some · with ·, by the mean value theorem for integrals applied to the continuous · on ·. As ·, ·, so · by continuity of · at ·. By (15) the left side",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 65,
+"term": "linearity of the integral",
+"count": 1,
+"context": "> **(5)** and **(7)** follow from linearity of the integral: · splits into the two convolutions, and an integrand that is identically · gives · (use (4) for ·).",
+"targets": [
+"Measure Theory|§14 The Lebesgue Integral for Simple Functions#^thm-14-8"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 79,
+"term": "continuous function",
+"count": 2,
+"context": "> This is an iterated integral over the triangle ·, of a bounded piecewise continuous function. Reversing the order of integration (Fubini's theorem on a bounded region, ⟂), with · from · to · outside and",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 79,
+"term": "fubini",
+"count": 4,
+"context": "integral over the triangle ·, of a bounded piecewise continuous function. Reversing the order of integration (Fubini's theorem on a bounded region, ⟂), with · from · to · outside and · from · to · inside,",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 162,
+"term": "absolutely convergent",
+"count": 1,
+"context": "bsolutely, so it agrees with the corresponding Lebesgue integral.) The same bound gives · and ·, so · exists (absolutely convergent) for ·.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 162,
+"term": "tonelli",
+"count": 2,
+"context": "> for ·. So the integrand is absolutely integrable over the wedge, and by Tonelli's and Fubini's theorems (⟂, ⟂) both iterated integrals equal the double integral. (Each improper integral in",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "§26★ The Convolution Integral",
+"line": 256,
+"term": "kernel",
+"count": 2,
+"context": "ting ·, for variable coefficients and without transforms: ⟂ (for the equation divided by ·), where · with the kernel ·. For constant coefficients · depends only on ·, and the integral is the convolution (28).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 14,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "ction sets up the language (solutions, initial value problems, linear and homogeneous systems) and states the existence and uniqueness theorems, which parallel those of Chapters 2 and 3. As there, the linear case is much stronger: a solution ex",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 71,
+"term": "eigenvalue",
+"count": 2,
+"context": "> and the initial conditions ·, · become ·, ·. In the matrix notation of ⟂, (6) reads ·. The eigenvalues · of this coefficient matrix satisfy ·, which is the characteristic equation · of (5) (⟂); this is why the ei",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 71,
+"term": "matrix notation",
+"count": 2,
+"context": "> and the initial conditions ·, · become ·, ·. In the matrix notation of ⟂, (6) reads ·. The eigenvalues · of this coefficient matrix satisfy ·, which is the characteristic equati",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-1"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 148,
+"term": "parametric equations",
+"count": 1,
+"context": "> A solution (12) is a set of parametric equations in ·-dimensional space: as · runs through ·, the point · traces a curve, the **trajectory** or path of a part",
+"targets": [
+"Calculus|§63 Curves Defined by Parametric Equations#^def-63-1",
+"Calculus|§86 Vector Functions and Space Curves#^def-86-4"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 148,
+"term": "trace",
+"count": 1,
+"context": "> A solution (12) is a set of parametric equations in ·-dimensional space: as · runs through ·, the point · traces a curve, the **trajectory** or path of a particle moving according to (11). The initial conditions fix its st",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 164,
+"term": "norm",
+"count": 1,
+"context": "argument in Section 2.8\"): Picard iteration, as in ⟂ (BDP Theorem 2.8.1), with absolute values replaced by a norm on ·. No subject in the vault proves the ·-dimensional version.*",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§27 Introduction to Systems of First-Order Linear Equations",
+"line": 195,
+"term": "diagonalizable",
+"count": 1,
+"context": "> - The constant-coefficient homogeneous case · is Lay's starting point, ⟂, solved there for diagonalizable · (⟂).",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 47,
+"term": "orthonormal",
+"count": 1,
+"context": "- BDP's adjoint is Axler's conjugate transpose ⟂. The name fits: · is the matrix of the adjoint operator · in orthonormal bases (⟂), the operator with · (⟂).",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 91,
+"term": "field axioms",
+"count": 1,
+"context": "Problems 7.2.5–7.2.6); see ⟂ for sums and scalar multiples and ⟂ for products. The proofs there use only the field axioms, so they hold verbatim for complex entries.*",
+"targets": [
+"Single Variable Analysis|§3 The Set ℝ of Real Numbers#^def-3-1"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 94,
+"term": "linear map",
+"count": 1,
+"context": "; non-commuting matrices and zero divisors, ⟂. In Axler, (9) is the definition ⟂, motivated by composition of linear maps (⟂), which is why it is associative and not commutative.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 119,
+"term": "orthogonality",
+"count": 1,
+"context": "> [!definition] Definition §28.3: Dot Product, Inner Product, Length, Orthogonality",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 134,
+"term": "orthogonal set",
+"count": 1,
+"context": "> - · and · are **orthogonal** if ·. For example, · form an orthogonal set.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-1"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 233,
+"term": "uniqueness of inverses",
+"count": 1,
+"context": "expansion along any row or column: ⟂. Rigorous treatment over any field: invertible · nonzero determinant, ⟂; uniqueness of inverses, ⟂; and a one-sided inverse of a square matrix is two-sided, ⟂ (so either condition in Definition §28.4 suffi",
+"targets": [
+"Group Theory|§2 First Consequences of the Axioms#^prop-2-3"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 233,
+"term": "cofactor expansion",
+"count": 1,
+"context": "> - Cofactor expansion along any row or column: ⟂. Rigorous treatment over any field: invertible · nonzero determinant, ⟂; uniquenes",
+"targets": [
+"Applied Linear Algebra|Cofactor Expansion"
+]
+},
+{
+"note": "§28 Matrices",
+"line": 238,
+"term": "elementary row operations",
+"count": 1,
+"context": "> The **elementary row operations** are: (1) interchange two rows; (2) multiply a row by a nonzero scalar; (3) add a multiple of one row to ano",
+"targets": [
+"Applied Linear Algebra|§1 Systems of Linear Equations#^def-1-5"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 14,
+"term": "linear independence",
+"count": 1,
+"context": "th Lay is the setting Chapter 7 needs: complex scalars and vectors, the inner product · with conjugation (⟂), linear independence of vector *functions* on an interval, and the special behavior of Hermitian matrices.",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 70,
+"term": "invertible matrix",
+"count": 1,
+"context": "Problems 7.3.21–25 outline those of (5) and (6)). For real ·: part (a) and the first statement of (b) are the Invertible Matrix Theorem, ⟂ with ⟂; the form (6) is ⟂; and since ·, condition (5) says ·, by ⟂.*",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-1"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 70,
+"term": "invertible matrix theorem",
+"count": 1,
+"context": "Problems 7.3.21–25 outline those of (5) and (6)). For real ·: part (a) and the first statement of (b) are the Invertible Matrix Theorem, ⟂ with ⟂; the form (6) is ⟂; and since ·, condition (5) says ·, by ⟂.*",
+"targets": [
+"Applied Linear Algebra|The Invertible Matrix Theorem"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 77,
+"term": "elementary row operations",
+"count": 1,
+"context": "> 2. Use elementary row operations (they correspond to legitimate operations on the equations) to bring · to **upper triangular** form, with zer",
+"targets": [
+"Applied Linear Algebra|§1 Systems of Linear Equations#^def-1-5"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 164,
+"term": "transpose",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂, ⟂ (multiplicative property), ⟂ (transpose)",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-6",
+"Linear Algebra|§9 Matrices#^ladr-3-54"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 261,
+"term": "multiplicity",
+"count": 5,
+"context": "> [!definition] Definition §29.5: Normalized Eigenvector; Algebraic and Geometric Multiplicity",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 350,
+"term": "orthogonal set",
+"count": 1,
+"context": "re eigenvectors for different eigenvalues, then ·. So if all eigenvalues are simple, the eigenvectors form an orthogonal set.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^def-41-1"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 384,
+"term": "orthonormal",
+"count": 1,
+"context": "> **2 and 4** together say that · has an orthonormal basis of eigenvectors of ·. This is the spectral theorem, which BDP does not prove.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 384,
+"term": "orthonormal basis",
+"count": 1,
+"context": "> **2 and 4** together say that · has an orthonormal basis of eigenvectors of ·. This is the spectral theorem, which BDP does not prove.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors",
+"line": 393,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - PDE version: ⟂ and ⟂ (the eigenvalues of a Sturm–Liouville problem are real, and eigenfunctions for different eigenvalues are orthogonal with weight ·, by the same argument with an integral in place of the",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§3 Classification of Differential Equations",
+"line": 151,
+"term": "potential energy",
+"count": 1,
+"context": "d of the mass is ·, so its kinetic energy is ·. Relative to the rest position the mass is raised by ·, so its potential energy is ·. With no friction the total energy · is constant, so",
+"targets": [
+"Calculus|§109 The Fundamental Theorem for Line Integrals#^def-109-6"
+]
+},
+{
+"note": "§3 Classification of Differential Equations",
+"line": 222,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> The answers for first-order equations are the existence and uniqueness theorems: for linear equations ⟂ (Theorem 2.4.1), and for nonlinear ones Theorem 2.4.2, stated in ⟂ and prove",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 14,
+"term": "linearly independent",
+"count": 6,
+"context": "e second-order linear equation in ⟂. Linear combinations of solutions are solutions. Any · solutions that are linearly independent at each point give every solution, each in exactly one way. Their independence is tested by one determinant,",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 31,
+"term": "continuous on an interval",
+"count": 1,
+"context": "> A vector function · is a **solution** of (2) if its components satisfy (1). Throughout, · and · are continuous on an interval · (each · and · is continuous there); by ⟂ (BDP Theorem 7.1.2) this guarantees solutions on that interval. Se",
+"targets": [
+"Calculus|§10 Continuity#^def-10-5"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 160,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂, ⟂, ⟂, ⟂ (existence and uniqueness)",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 170,
+"term": "bijection",
+"count": 1,
+"context": "solutions of (3) form an ·-dimensional vector space, with a fundamental set as a basis: the map · is a linear bijection onto · (or ·), an isomorphism in the sense of ⟂, so the dimension is · by ⟂. Lay states this without proof fo",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 185,
+"term": "trace",
+"count": 1,
+"context": "'s formula** (for systems it is also called Liouville's formula). With a fixed lower limit, ·, where · is the trace.",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 194,
+"term": "permutation",
+"count": 1,
+"context": "p 1: the derivative of a determinant.** By the formula for the determinant of a matrix (⟂), ·, a sum over the permutations · of ·. Each term is a product of · differentiable functions, one from each row. By the product rule,",
+"targets": [
+"Linear Algebra|§33 Alternating Multilinear Forms#^ladr-9-31",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-3"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 194,
+"term": "permutations",
+"count": 1,
+"context": "p 1: the derivative of a determinant.** By the formula for the determinant of a matrix (⟂), ·, a sum over the permutations · of ·. Each term is a product of · differentiable functions, one from each row. By the product rule,",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 224,
+"term": "linearly dependent",
+"count": 1,
+"context": "> **Second proof** (BDP's alternative, Problem 14). Suppose the solutions are linearly dependent at one point ·: there are constants ·, not all zero, with ·. Then · solves (3) with ·. So does the zero funct",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-17"
+]
+},
+{
+"note": "§30 Basic Theory of Systems of First-Order Linear Equations",
+"line": 282,
+"term": "continuous function",
+"count": 1,
+"context": "> Consider the system (3), ·, where each element of · is a real-valued continuous function. If · is a complex-valued solution of (3), with · and · real, then its real part · and its imaginary part · a",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 14,
+"term": "eigenvalue",
+"count": 47,
+"context": "For a system · with a constant matrix ·, the natural guess · works exactly when · is an eigenvalue of · and · an eigenvector, so solving the differential equation becomes the algebra of ⟂. When the eigenvalue",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 14,
+"term": "eigenvector",
+"count": 35,
+"context": "a system · with a constant matrix ·, the natural guess · works exactly when · is an eigenvalue of · and · an eigenvector, so solving the differential equation becomes the algebra of ⟂. When the eigenvalues are real and distinct, o",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 14,
+"term": "phase plane",
+"count": 3,
+"context": "ives a fundamental set and the general solution. For · systems the solutions are drawn as trajectories in the phase plane, and the signs of the two real eigenvalues decide the picture: a saddle point when they are opposite, a node",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 27,
+"term": "phase portrait",
+"count": 7,
+"context": "> [!definition] Definition §31.2: Phase Plane, Direction Field, Trajectory, Phase Portrait",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 183,
+"term": "linearly independent",
+"count": 5,
+"context": "> Suppose the real · matrix · has · linearly independent real eigenvectors · with eigenvalues ·. This is the case",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 204,
+"term": "span",
+"count": 1,
+"context": "basis of the complex one. The real bases for all the eigenvalues together are real eigenvectors whose complex span contains every eigenvector, hence the full set, hence all of ·; a spanning set contains a basis, so · of them",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 204,
+"term": "linearly independent eigenvectors",
+"count": 2,
+"context": "or, since · is then a real singular matrix and row reduction stays in real numbers. Distinct eigenvalues have linearly independent eigenvectors (⟂). (b) A real symmetric matrix is Hermitian, so all its eigenvalues are real and it has a full set of · lin",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 204,
+"term": "null space",
+"count": 2,
+"context": "for each eigenvalue ·, the real matrix · has the same echelon form over · and over ·, so the dimension of its null space is the same in · and in ·, and a real basis of each real null space is also a basis of the complex one. The r",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 204,
+"term": "orthonormal",
+"count": 1,
+"context": "tains a basis, so · of them are linearly independent. (Lay proves directly that a real symmetric matrix has · orthonormal real eigenvectors: ⟂.)",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 204,
+"term": "echelon form",
+"count": 1,
+"context": "igenvectors (⟂, parts 1 and 2). They can be taken real: for each eigenvalue ·, the real matrix · has the same echelon form over · and over ·, so the dimension of its null space is the same in · and in ·, and a real basis of each rea",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-1"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 219,
+"term": "diagonalizable",
+"count": 1,
+"context": "> - See also: ⟂, the same general solution for diagonalizable · obtained by decoupling: · with the eigenvectors as columns of · turns the system into ·. Having · independe",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 225,
+"term": "complex eigenvalue",
+"count": 2,
+"context": "> 3. **General solution.** If there are · independent eigenvectors (Theorem §31.2), ·. Otherwise see ⟂ (complex eigenvalues) or ⟂ (too few eigenvectors).",
+"targets": [
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1"
+]
+},
+{
+"note": "§31 Homogeneous Linear Systems with Constant Coefficients",
+"line": 250,
+"term": "multiplicity",
+"count": 2,
+"context": "> Even though · has algebraic multiplicity ·, it has two independent eigenvectors, which is all that is needed. (Check with Abel's formula, ⟂: ·, so the",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-23"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 14,
+"term": "eigenvalue",
+"count": 46,
+"context": "When the real matrix · has complex eigenvalues, they come in conjugate pairs · with conjugate eigenvectors, and the exponential solutions · of ⟂ are complex",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 14,
+"term": "phase plane",
+"count": 1,
+"context": "real solutions, built from · and ·, exactly as for complex roots of the characteristic equation in ⟂. In the phase plane the factor · makes trajectories spiral in or out while the trigonometric factors rotate them, so the origin i",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 14,
+"term": "phase portrait",
+"count": 7,
+"context": "ompletes the classification of · systems, and following the eigenvalues as a parameter varies shows where the phase portrait changes type. The linear-algebra side of complex eigenvalues is ⟂.",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 43,
+"term": "euler's formula",
+"count": 4,
+"context": "> **Real solutions.** By ⟂, the real and imaginary parts of · are solutions. Using Euler's formula ·,",
+"targets": [
+"Complex Variables|§7 Exponential Form#^def-7-2"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 116,
+"term": "matrix product",
+"count": 1,
+"context": "> - See also: ⟂ (same statement), with the rules for conjugating matrix products in ⟂.",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-3"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 127,
+"term": "linearly independent",
+"count": 3,
+"context": "> are linearly independent real-valued solutions of ·; they are the real and imaginary parts of ·.",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 176,
+"term": "span",
+"count": 1,
+"context": "> **The general solution (18).** (BDP states it; here is why it is general.) At any ·, · and · span the same complex space as · and · (since ·, ·). The · solutions · come from · distinct eigenvalues, so their",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 233,
+"term": "linear map",
+"count": 1,
+"context": "> - ·: ·, so · while winding around the origin infinitely often (the invertible linear map · carries a curve winding around · to one winding around ·), and as in the node case · for ·: asymptotically",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§32 Complex-Valued Eigenvalues",
+"line": 374,
+"term": "characteristic polynomial",
+"count": 1,
+"context": "> **Eigenvalues.** The characteristic polynomial is",
+"targets": [
+"Linear Algebra|§29 Generalized Eigenspace Decomposition#^ladr-8-26",
+"Linear Algebra|§34 Determinants#^ladr-9-63"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 15,
+"term": "power series",
+"count": 6,
+"context": "tial state · to the state ·. For a constant matrix ·, this · is the matrix exponential ·, defined by the same power series as ·, so that ·, · is solved by ·, exactly as in the scalar case. Diagonalizing · decouples the system and gi",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 32,
+"term": "linearly independent",
+"count": 12,
+"context": "ental matrix** for the system (1). A fundamental matrix is nonsingular at every · in ·, since its columns are linearly independent vectors there.",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 45,
+"term": "eigenvalue",
+"count": 12,
+"context": "> The eigenvalues of the coefficient matrix are · and ·, with eigenvectors · and · (⟂). So",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 45,
+"term": "eigenvector",
+"count": 19,
+"context": "> The eigenvalues of the coefficient matrix are · and ·, with eigenvectors · and · (⟂). So",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 193,
+"term": "complex eigenvalue",
+"count": 2,
+"context": "> 1. **Find · linearly independent solutions** (for constant ·: eigenvectors as in ⟂, complex eigenvalues as in ⟂, generalized eigenvectors as in ⟂) and put them in the columns of ·.",
+"targets": [
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 253,
+"term": "radius of convergence",
+"count": 1,
+"context": "entry series converges absolutely, for every real ·. So each entry of · is a power series in · with infinite radius of convergence.",
+"targets": [
+"Single Variable Analysis|§23 Power Series#^thm-23-2"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 255,
+"term": "interval of convergence",
+"count": 1,
+"context": "ates term by term; here is why that is allowed.) A power series may be differentiated term by term inside its interval of convergence (⟂), here all of ·. Doing this in every entry gives the first equality in (24). Shifting the index (·),",
+"targets": [
+"Calculus|§76 Power Series#^def-76-3"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 261,
+"term": "limit laws",
+"count": 1,
+"context": "> Each entry of · is the fixed linear combination · of entries of ·, and · entrywise by (a). By the limit laws, ·, which is (25). (In the same way ·; since ·, the matrices · and · commute.)",
+"targets": [
+"Calculus|Limit Laws",
+"Calculus|Limit Laws"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 270,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "> - Rigorous treatment of the two steps: comparison, ⟂, and term-by-term differentiation of a power series, ⟂. The scalar series is ⟂.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 271,
+"term": "norm",
+"count": 2,
+"context": "> - Norm viewpoint: with the operator norm (⟂, ⟂) one has ·, so (23) converges absolutely in the Banach space of · mat",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 271,
+"term": "banach space",
+"count": 1,
+"context": "> - Norm viewpoint: with the operator norm (⟂, ⟂) one has ·, so (23) converges absolutely in the Banach space of · matrices (⟂(2), ⟂). No other subject in the vault defines the exponential of a matrix or operator; this",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-2",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 305,
+"term": "properties of the exponential function",
+"count": 1,
+"context": "To justify the name, · should also have the algebraic properties of the exponential function. BDP outlines this in Problem 12, and uses the diagonal case of Problem 13 in the text.",
+"targets": [
+"Calculus|§121 The Logarithm Defined as an Integral#^thm-121-5"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 335,
+"term": "chain rule",
+"count": 1,
+"context": "> **(a)** Fix · and regard · as the variable. Let · and ·. Since · is a constant matrix, ·, and ·. By the chain rule, ·, and ·. So column · of · and column · of · solve the same initial value problem ·, · column · of ·; by uni",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 376,
+"term": "linearly independent eigenvectors",
+"count": 5,
+"context": "> (a) Suppose · has a full set of · linearly independent eigenvectors ·, with corresponding eigenvalues ·. (This is certainly the case if the eigenvalues are all different, or if",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 390,
+"term": "transpose",
+"count": 1,
+"context": "s eigenvectors are chosen mutually orthogonal and normalized, ·, then ·: the inverse of · is its adjoint (the transpose of its complex conjugate).",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-6",
+"Linear Algebra|§9 Matrices#^ladr-3-54"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 390,
+"term": "adjoint",
+"count": 1,
+"context": "mitian and its eigenvectors are chosen mutually orthogonal and normalized, ·, then ·: the inverse of · is its adjoint (the transpose of its complex conjugate).",
+"targets": [
+"Linear Algebra|§22 Self-Adjoint and Normal Operators#^ladr-7-1"
+]
+},
+{
+"note": "§33★ Fundamental Matrices",
+"line": 407,
+"term": "inner product",
+"count": 2,
+"context": "> **(b)** (BDP: \"it is easy to verify\"; here is the verification.) With the inner product · of ⟂,",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 15,
+"term": "diagonalizable",
+"count": 1,
+"context": "alized eigenvector · solves ·. In the plane the origin is then an improper node. In matrix language, · is not diagonalizable but has a Jordan form ·, and · replaces the formula · of ⟂.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 15,
+"term": "eigenvalue",
+"count": 25,
+"context": "This section finishes the constant-coefficient system · with the case of a repeated eigenvalue. If an eigenvalue · of algebraic multiplicity · has · independent eigenvectors, nothing changes. If it has fe",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 19,
+"term": "linearly independent",
+"count": 10,
+"context": "tion · (7), so that · is an eigenvalue of algebraic multiplicity ·. Its geometric multiplicity, the number of linearly independent eigenvectors, may be less than · (⟂). There are two possibilities.",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 19,
+"term": "linearly independent eigenvectors",
+"count": 4,
+"context": "tion · (7), so that · is an eigenvalue of algebraic multiplicity ·. Its geometric multiplicity, the number of linearly independent eigenvectors, may be less than · (⟂). There are two possibilities.",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 19,
+"term": "geometric multiplicity",
+"count": 2,
+"context": "·-fold root of the characteristic equation · (7), so that · is an eigenvalue of algebraic multiplicity ·. Its geometric multiplicity, the number of linearly independent eigenvectors, may be less than · (⟂). There are two possibilities.",
+"targets": [
+"Applied Linear Algebra|§34 Diagonalization#^def-34-3"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 58,
+"term": "phase portrait",
+"count": 4,
+"context": "> and describe its phase portrait.",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-3"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 207,
+"term": "null space",
+"count": 4,
+"context": "> - *The · case.* · has the one-dimensional null space ·, so its column space is a line, spanned by some ·. Since · lies in the column space, · for some ·, so · is",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-3",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1",
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-11"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 207,
+"term": "column space",
+"count": 3,
+"context": "> - *The · case.* · has the one-dimensional null space ·, so its column space is a line, spanned by some ·. Since · lies in the column space, · for some ·, so · is an eigenvalue of ·. The",
+"targets": [
+"Applied Linear Algebra|§18 Subspaces of ℝⁿ#^def-18-2",
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 208,
+"term": "eigenspace",
+"count": 2,
+"context": "> - *The · case* (over ·). Let · be the generalized eigenspace. Its dimension is the algebraic multiplicity · (⟂), · maps · into itself, and · is nilpotent (⟂), so · (⟂). T",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-2",
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-52"
+]
+},
+{
+"note": "§34★ Repeated Eigenvalues",
+"line": 274,
+"term": "diagonal matrix",
+"count": 2,
+"context": "ndent eigenvectors. When repeated eigenvalues leave a shortage of eigenvectors, the best possible is a nearly diagonal matrix.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-48",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-74"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 15,
+"term": "undetermined coefficients",
+"count": 4,
+"context": "arlier chapters. Diagonalization uncouples a constant-coefficient system into · first-order linear equations. Undetermined coefficients guesses the form for exponential, polynomial and sinusoidal forcing. Variation of parameters works for any ·",
+"targets": [
+"Fourier Series and PDEs|§2★ Nonhomogeneous Linear Equations#^thm-2-4"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 58,
+"term": "diagonalizable",
+"count": 5,
+"context": "where · is an · diagonalizable constant matrix. Diagonalizing · as in ⟂ transforms (3) into a system that is readily solved.",
+"targets": [
+"Linear Algebra|§17 Diagonalizable Operators#^ladr-5-50"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 61,
+"term": "linearly independent",
+"count": 1,
+"context": "> Let · have linearly independent eigenvectors · with eigenvalues ·, let · be the matrix with these columns and ·. Then the substitution",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 61,
+"term": "eigenvalue",
+"count": 5,
+"context": "> Let · have linearly independent eigenvectors · with eigenvalues ·, let · be the matrix with these columns and ·. Then the substitution",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 61,
+"term": "eigenvector",
+"count": 7,
+"context": "> Let · have linearly independent eigenvectors · with eigenvalues ·, let · be the matrix with these columns and ·. Then the substitution",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 61,
+"term": "linearly independent eigenvectors",
+"count": 1,
+"context": "> Let · have linearly independent eigenvectors · with eigenvalues ·, let · be the matrix with these columns and ·. Then the substitution",
+"targets": [
+"Linear Algebra|Linearly independent eigenvectors",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-11"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 298,
+"term": "antiderivative",
+"count": 1,
+"context": "nuous and, by the Fundamental Theorem of Calculus (⟂) applied entry by entry, together with the fact that two antiderivatives on an interval differ by a constant (⟂), the solutions of (27) are exactly",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 298,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> **(b)** The entries of · are continuous, since · (BDP uses this tacitly), so · is continuous and, by the Fundamental Theorem of Calculus (⟂) applied entry by entry, together with the fact that two antiderivatives on an interval differ by a consta",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 315,
+"term": "cramer's rule",
+"count": 1,
+"context": "> 2. **Solve** · for ·, by row reduction (or Cramer's rule) rather than by computing ·.",
+"targets": [
+"Applied Linear Algebra|Cramer's Rule",
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1"
+]
+},
+{
+"note": "§35★ Nonhomogeneous Linear Systems",
+"line": 369,
+"term": "continuous on an interval",
+"count": 1,
+"context": "> Let · be a constant · matrix, · continuous on an interval containing ·, and · the fundamental matrix of · with ·. The solution of ·, · is",
+"targets": [
+"Calculus|§10 Continuity#^def-10-5"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 83,
+"term": "continuous on an interval",
+"count": 1,
+"context": "> Let · be a constant and · continuous on an interval · containing ·. Then · is an integrating factor for",
+"targets": [
+"Calculus|§10 Continuity#^def-10-5"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 110,
+"term": "continuous function",
+"count": 2,
+"context": "> The function · is an antiderivative of the continuous function · on · (Fundamental Theorem of Calculus). If · solves (20), then by (22) · and · have the same derivative on",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 110,
+"term": "antiderivative",
+"count": 7,
+"context": "> The function · is an antiderivative of the continuous function · on · (Fundamental Theorem of Calculus). If · solves (20), then by (22) · and · h",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 110,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "> The function · is an antiderivative of the continuous function · on · (Fundamental Theorem of Calculus). If · solves (20), then by (22) · and · have the same derivative on the interval ·, so they differ by a cons",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 119,
+"term": "behavior of the solution",
+"count": 1,
+"context": "> Solve ·, ·, and describe the behavior of the solutions as ·.",
+"targets": [
+"Fourier Series and PDEs|§25 Generalities on the Heat Conduction Problem#^thm-25-4"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 179,
+"term": "chain rule",
+"count": 1,
+"context": "derivative exists because · is continuous on ·.) Directly: if · is an antiderivative of · on ·, then · by the chain rule, so · satisfies (29).",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§4 Linear Differential Equations; Method of Integrating Factors",
+"line": 278,
+"term": "l'hôpital's rule",
+"count": 1,
+"context": "gest that all solutions approach a common limit as ·. (BDP leaves it to Problem 22; the limit is ·: ·, and by L'Hôpital's rule · has the same limit as ·.)",
+"targets": [
+"Calculus|L'Hospital's Rule"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 14,
+"term": "separable",
+"count": 7,
+"context": "The direct integration of ⟂ works for a much larger class of equations, most of them nonlinear: the separable equations ·, in which the variables can be put on opposite sides. Integrating each side gives an equation · t",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 31,
+"term": "differential form",
+"count": 3,
+"context": "> Written in the **differential form**",
+"targets": [
+"Multivariable Analysis|§21 Introduction to Differential Forms#^def-21-1"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 43,
+"term": "chain rule",
+"count": 3,
+"context": "For example, · is separable, since it can be written ·. By the chain rule the second term is · and the first is ·, so the equation says ·, and its integral curves are · (BDP, Example",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 46,
+"term": "antiderivative",
+"count": 1,
+"context": "> Let · be continuous on an interval · and · continuous on an interval ·, and let · and · be antiderivatives of · and ·:",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 46,
+"term": "continuous on an interval",
+"count": 2,
+"context": "> Let · be continuous on an interval · and · continuous on an interval ·, and let · and · be antiderivatives of · and ·:",
+"targets": [
+"Calculus|§10 Continuity#^def-10-5"
+]
+},
+{
+"note": "§5 Separable Differential Equations",
+"line": 93,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> Substituting this into (13), and using · and · (Fundamental Theorem of Calculus), gives (16).",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§6 Modeling with First-Order Differential Equations",
+"line": 14,
+"term": "separable",
+"count": 3,
+"context": "m completely, including a pond whose inflow varies periodically. The launch problem is nonlinear, but becomes separable once the altitude replaces time as the independent variable, and gives the escape velocity ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§6 Modeling with First-Order Differential Equations",
+"line": 381,
+"term": "chain rule",
+"count": 1,
+"context": "so ·, and with it ·, can be regarded as a function of · (BDP does this without comment; this is why). By the chain rule,",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 16,
+"term": "existence and uniqueness",
+"count": 2,
+"context": "## Existence and Uniqueness of Solutions",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 46,
+"term": "antiderivative",
+"count": 9,
+"context": "> where · is any antiderivative of · on ·; one exists because · is continuous on · (for instance ·). Then · is defined, differentiable and no",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 66,
+"term": "continuous function",
+"count": 1,
+"context": "*Uses:* ⟂ (the integrating factor), ⟂ (a continuous function has a differentiable antiderivative), ⟂ (antiderivatives differ by a constant)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 225,
+"term": "separable",
+"count": 1,
+"context": "> **Solving.** The equation is separable: · gives ·, so ·. The initial condition is satisfied if ·:",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 256,
+"term": "vertical asymptote",
+"count": 2,
+"context": "solution of a linear problem (1), (2) exists throughout any interval about · on which · and · are continuous; vertical asymptotes and other discontinuities of the solution can occur only at discontinuities of · or ·. In Example §7.1 the so",
+"targets": [
+"Calculus|§7 The Limit of a Function#^def-7-5"
+]
+},
+{
+"note": "§7 Differences Between Linear and Nonlinear Differential Equations",
+"line": 388,
+"term": "chain rule",
+"count": 1,
+"context": "> Where ·, the function · is differentiable with · by the chain rule. Multiply the Bernoulli equation by ·:",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 14,
+"term": "separable",
+"count": 1,
+"context": "An autonomous equation · is one whose right side does not depend on ·. It is separable, but the point of this section is that the graph of · alone, without solving anything, shows how every soluti",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 71,
+"term": "growth rate",
+"count": 4,
+"context": "t for limited periods of time, but eventually limitations on space, food supply or other resources reduce the growth rate. (The observation goes back to Thomas Malthus, 1798; see also ⟂.)",
+"targets": [
+"Calculus|§20 Rates of Change in the Natural and Social Sciences#^def-20-6"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 128,
+"term": "inflection point",
+"count": 6,
+"context": "Concavity and inflection points come from the second derivative.",
+"targets": [
+"Calculus|§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 144,
+"term": "chain rule",
+"count": 1,
+"context": "> By (1) and the chain rule,",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 202,
+"term": "separation",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂, ⟂ (solutions do not cross), ⟂ (uniqueness), ⟂ (separation of variables)",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 271,
+"term": "supremum",
+"count": 1,
+"context": "> A bounded monotone function has a limit · as ·, namely its supremum (if increasing) or infimum (if decreasing), by the argument of the monotone convergence theorem for sequences",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 271,
+"term": "infimum",
+"count": 1,
+"context": "> A bounded monotone function has a limit · as ·, namely its supremum (if increasing) or infimum (if decreasing), by the argument of the monotone convergence theorem for sequences. Suppose ·. Since · is con",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 359,
+"term": "vertical asymptote",
+"count": 1,
+"context": "> and the solution has a vertical asymptote there: the population becomes unbounded in finite time.",
+"targets": [
+"Calculus|§7 The Limit of a Function#^def-7-5"
+]
+},
+{
+"note": "§8 Autonomous Differential Equations and Population Dynamics",
+"line": 426,
+"term": "equilibrium points",
+"count": 1,
+"context": "> Find all equilibrium points, draw the phase line and determine the stability of each. Graph the solutions with ·, · and ·.",
+"targets": [
+"Calculus|§62 Predator-Prey Systems#^def-62-2"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 14,
+"term": "separable",
+"count": 4,
+"context": "re exact. Equations solvable by elementary methods remain special: most first-order equations are not linear, separable or exact.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 37,
+"term": "chain rule",
+"count": 3,
+"context": "> If · is a function of ·, the chain rule turns the left side into ·, so (1) becomes",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 104,
+"term": "zero derivative means constant",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (chain rule), ⟂ (zero derivative means constant)",
+"targets": [
+"Calculus|§26 The Mean Value Theorem#^thm-26-3"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 136,
+"term": "schwarz–clairaut theorem",
+"count": 1,
+"context": "> Since · and · are continuous, so are · and ·. This guarantees their equality (the Schwarz–Clairaut theorem on the open rectangle ·), and (10) follows.",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 136,
+"term": "clairaut",
+"count": 3,
+"context": "> Since · and · are continuous, so are · and ·. This guarantees their equality (the Schwarz–Clairaut theorem on the open rectangle ·), and (10) follows.",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 150,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "> with · a fixed number in ·. (The segment from · to · lies in · because · is a rectangle, and · by the fundamental theorem of calculus, · being continuous.) The function · of · plays the role of the constant of integration. It remains to choose",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 170,
+"term": "bounded set",
+"count": 2,
+"context": "> · is continuous on the closed bounded set ·, hence uniformly continuous there: given · there is · with · whenever · and the points lie in ·. So for · t",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 178,
+"term": "continuous function",
+"count": 2,
+"context": "xed ·, · has zero derivative on the interval ·, so it is constant: ·. Since · for all ·, ·, and ·, which is a continuous function of · only. Hence (14) is solved by",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 197,
+"term": "simply connected",
+"count": 2,
+"context": "ncaré lemma, ⟂, for a rectangle, proved here in full. BDP notes that the region need not be rectangular, only simply connected; the angle form on the punctured plane (⟂, ⟂) is closed but not exact, so some condition on the region is nee",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 197,
+"term": "punctured plane",
+"count": 1,
+"context": "here in full. BDP notes that the region need not be rectangular, only simply connected; the angle form on the punctured plane (⟂, ⟂) is closed but not exact, so some condition on the region is needed.",
+"targets": [
+"Topology|Punctured plane"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 198,
+"term": "vector field",
+"count": 1,
+"context": "> - See also: the same test and construction for vector fields in Calculus, where · is a potential function of ·: ⟂ (necessity), ⟂ (sufficiency on simply-connected regions)",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§9 Exact Differential Equations and Integrating Factors",
+"line": 299,
+"term": "antiderivative",
+"count": 1,
+"context": "> with · any continuous function of ·. Every such · works: if · is an antiderivative of ·, then · has · and ·, and the solutions are ·. Conversely, if the equation is exact then ·, so · has zero",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+}
+]

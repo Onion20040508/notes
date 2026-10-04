@@ -1,0 +1,149 @@
+[
+{
+"concept": "orthogonality 0",
+"a": "Linear Algebra | [[§19 Inner Products and Norms#^ladr-6-11]] | Theorem 6.11: Orthogonality and 0",
+"b": "Fourier Series and PDEs | [[§23 Sturm–Liouville Problems#^prop-23-1]] | Proposition §23.1: Orthogonality for φ″ + λ²φ = 0",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "bessel inequality",
+"a": "Linear Algebra | [[§20 Orthonormal Bases#^ladr-6-26]] | Theorem 6.26: Bessel’s inequality",
+"b": "Fourier Series and PDEs | [[§11★ Mean Error and Convergence in Mean#^thm-11-3]] | Theorem §11.3: Bessel's Inequality",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "linearity",
+"a": "Single Variable Analysis | [[§33 Properties of the Riemann Integral#^thm-33-2]] | Theorem §33.2: Linearity",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-2]] | Theorem §51.2: Linearity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linearity",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^thm-15-2]] | Theorem §15.2: Linearity",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-2]] | Theorem §51.2: Linearity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linearity",
+"a": "Measure Theory | [[§14 The Lebesgue Integral for Simple Functions#^prop-14-1]] | Proposition §14.1: Linearity",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-2]] | Theorem §51.2: Linearity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "even odd function",
+"a": "Functional Analysis | [[§22 Projection and Orthogonal Decomposition#^prop-22-7]] | Proposition §22.7: Even and Odd Functions",
+"b": "Fourier Series and PDEs | [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2]] | Definition §7.2: Even and Odd Functions",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "even odd function",
+"a": "Calculus | [[§1 Four Ways to Represent a Function#^def-1-7]] | Definition §1.7: Even and Odd Functions",
+"b": "Fourier Series and PDEs | [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2]] | Definition §7.2: Even and Odd Functions",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "periodic function",
+"a": "Calculus | [[§29 Summary of Curve Sketching#^def-29-1]] | Definition §29.1: Periodic Function",
+"b": "Fourier Series and PDEs | [[§6 Periodic Functions and Fourier Series#^def-6-1]] | Definition §6.1: Periodic Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "integral product",
+"a": "Calculus | [[§98 Double Integrals Over Rectangles#^thm-98-4]] | Theorem §98.4: Integrals of Products",
+"b": "Fourier Series and PDEs | [[§11★ Mean Error and Convergence in Mean#^prop-11-1]] | Proposition §11.1: Integral of a Product",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "equilibrium solution",
+"a": "Calculus | [[§57 Modeling with Differential Equations#^def-57-3]] | Definition §57.3: Equilibrium Solution",
+"b": "Fourier Series and PDEs | [[§32 One-Dimensional Wave Equation꞉ Generalities#^def-32-2]] | Definition §32.2: Equilibrium Solution",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "equilibrium solution",
+"a": "Ordinary Differential Equations | [[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3]] | Definition §1.3: Equilibrium Solution",
+"b": "Fourier Series and PDEs | [[§32 One-Dimensional Wave Equation꞉ Generalities#^def-32-2]] | Definition §32.2: Equilibrium Solution",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "one sided limit",
+"a": "Calculus | [[§7 The Limit of a Function#^def-7-2]] | Definition §7.2: One-Sided Limits (Intuitive)",
+"b": "Fourier Series and PDEs | [[§8 Convergence of Fourier Series#^def-8-1]] | Definition §8.1: One-Sided Limits",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "existence uniqueness",
+"a": "Applied Linear Algebra | [[§30 Applications to Difference Equations#^thm-30-4]] | Theorem §30.4: Existence and Uniqueness",
+"b": "Fourier Series and PDEs | [[§17 Derivation and Boundary Conditions#^thm-17-4]] | Theorem §17.4: Existence and Uniqueness",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "principle superposition",
+"a": "Ordinary Differential Equations | [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1]] | Theorem §30.1: Principle of Superposition",
+"b": "Fourier Series and PDEs | [[§1★ Homogeneous Linear Equations#^thm-1-2]] | Theorem §1.2: Principle of Superposition",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "principle superposition",
+"a": "Ordinary Differential Equations | [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1]] | Theorem §30.1: Principle of Superposition",
+"b": "Fourier Series and PDEs | [[§19 Example꞉ Fixed End Temperatures#^thm-19-4]] | Theorem §19.4: Principle of Superposition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "characteristic equation",
+"a": "Ordinary Differential Equations | [[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4]] | Definition §13.4: Characteristic Equation",
+"b": "Fourier Series and PDEs | [[§1★ Homogeneous Linear Equations#^def-1-3]] | Definition §1.3: Characteristic Equation",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "transform integral",
+"a": "Ordinary Differential Equations | [[§25 Impulse Functions#^def-25-4]] | Definition §25.4: Transform and Integrals of δ",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-5]] | Theorem §51.5: Transform of an Integral",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "structure general solution",
+"a": "Ordinary Differential Equations | [[§35★ Nonhomogeneous Linear Systems#^thm-35-1]] | Theorem §35.1: Structure of the General Solution",
+"b": "Fourier Series and PDEs | [[§2★ Nonhomogeneous Linear Equations#^thm-2-2]] | Theorem §2.2: Structure of the General Solution",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "hyperbolic sine cosine",
+"a": "Fourier Series and PDEs | [[§1★ Homogeneous Linear Equations#^def-1-4]] | Definition §1.4: Hyperbolic Sine and Cosine",
+"b": "Complex Variables | [[§39★ Hyperbolic Functions#^def-39-1]] | Definition §39.1: Hyperbolic Sine and Cosine",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "term term integration",
+"a": "Fourier Series and PDEs | [[§10 Operations on Fourier Series#^thm-10-3]] | Theorem §10.3: Term-by-Term Integration",
+"b": "Complex Variables | [[§71★ Integration and Differentiation of Power Series#^thm-71-1]] | Theorem §71.1: Term-by-Term Integration",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "term term differentiation",
+"a": "Fourier Series and PDEs | [[§10 Operations on Fourier Series#^thm-10-6]] | Theorem §10.6: Term-by-Term Differentiation",
+"b": "Complex Variables | [[§71★ Integration and Differentiation of Power Series#^thm-71-4]] | Theorem §71.4: Term-by-Term Differentiation",
+"a_links_b": false,
+"b_links_a": false
+}
+]

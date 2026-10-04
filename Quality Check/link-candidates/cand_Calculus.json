@@ -1,0 +1,4091 @@
+[
+{
+"note": "Alternating Series Test",
+"line": 23,
+"term": "cauchy criterion",
+"count": 1,
+"context": "- Rigorous treatment: ⟂, proved there with the Cauchy criterion via the estimate ·, which is also the content of Theorem §73.2.",
+"targets": [
+"Single Variable Analysis|§14 Series#^def-14-3",
+"Single Variable Analysis|§32 The Definition of the Riemann Integral#^thm-32-4"
+]
+},
+{
+"note": "Arc Length Formula",
+"line": 25,
+"term": "continuous function",
+"count": 1,
+"context": "Value Theorem ⟂; Riemann sums with arbitrary sample points and their limit for integrable functions, ⟂, with continuous functions integrable by ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Arc Length Formula",
+"line": 25,
+"term": "integrable function",
+"count": 1,
+"context": "sis behind the proof: the Mean Value Theorem ⟂; Riemann sums with arbitrary sample points and their limit for integrable functions, ⟂, with continuous functions integrable by ⟂.",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Arc Length Formula",
+"line": 26,
+"term": "uniform continuity",
+"count": 1,
+"context": "a parametrized curve · follows ⟂. There the two coordinates need two different Mean Value Theorem points, and uniform continuity of · and · closes the gap. Here · itself is the parameter, so one point · suffices.",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "Fundamental Theorem for Line Integrals",
+"line": 26,
+"term": "contour integral",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (antiderivatives and independence of path for contour integrals).",
+"targets": [
+"Complex Variables|§44 Contour Integrals#^def-44-1"
+]
+},
+{
+"note": "Fundamental Theorem for Line Integrals",
+"line": 26,
+"term": "contour",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (antiderivatives and independence of path for contour integrals).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "L'Hospital's Rule",
+"line": 27,
+"term": "mean value theorem",
+"count": 1,
+"context": "- Rigorous treatment: ⟂, with an ·-proof of the case ·, ·, by the same route (Generalized Mean Value Theorem, then letting the second point tend to ·).",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "Substitution Rule",
+"line": 29,
+"term": "bijection",
+"count": 1,
+"context": "- Rigorous treatment: ⟂ proves the definite form from FTC and the Chain Rule for a · bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of v",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Substitution Rule",
+"line": 29,
+"term": "change of variables formula",
+"count": 1,
+"context": "· bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals (⟂; ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "Substitution Rule",
+"line": 29,
+"term": "change of variables",
+"count": 1,
+"context": "· bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals (⟂; ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "Taylor's Inequality",
+"line": 23,
+"term": "taylor's theorem",
+"count": 1,
+"context": "- Rigorous treatment: ⟂ (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no con",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "Test for Conservative Fields",
+"line": 25,
+"term": "path-connected",
+"count": 1,
+"context": "- Topology's definition of simply connected (path-connected, every loop shrinks to a point): ⟂. Stewart's definition (every simple closed curve in · encloses only points",
+"targets": [
+"Single Variable Analysis|§22 More on Metric Spaces꞉ Connectedness#^def-22-1",
+"Topology|§14 Connected Subspaces of ℝ#^def-14-3"
+]
+},
+{
+"note": "Test for Conservative Fields",
+"line": 25,
+"term": "simple closed curve",
+"count": 1,
+"context": "efinition of simply connected (path-connected, every loop shrinks to a point): ⟂. Stewart's definition (every simple closed curve in · encloses only points of ·) agrees with it for open connected regions in the plane (a nontrivial fact of",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-1"
+]
+},
+{
+"note": "Test for Conservative Fields",
+"line": 26,
+"term": "test for exact equations",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the test for exact equations, the ODE version with worked examples).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "Test for Conservative Fields",
+"line": 26,
+"term": "exact equation",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the test for exact equations, the ODE version with worked examples).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§1 Four Ways to Represent a Function",
+"line": 14,
+"term": "even and odd functions",
+"count": 2,
+"context": "iece, such as the absolute value, and names two kinds of behavior that recur throughout the course: symmetry (even and odd functions) and monotonicity (increasing and decreasing functions).",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^prop-22-7"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 47,
+"term": "kinds of discontinuity",
+"count": 1,
+"context": "so · is continuous at · if and only if it is continuous from the right and from the left (Definition §10.4). Kinds of discontinuity: a removable one filled in by its limit, ⟂; a jump that no value can remove, ⟂; and · at ·, which is none of",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^def-8-2"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 222,
+"term": "squeeze theorem",
+"count": 5,
+"context": "oordinates tend to · and ·. This is Stewart's argument. Stewart's margin suggests a second route, through the Squeeze Theorem, which the proof below carries out.",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 348,
+"term": "interior point",
+"count": 1,
+"context": "> **Interior points.** Let ·, so ·. By the Limit Laws (⟂ and ⟂),",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 507,
+"term": "sums, products and quotients",
+"count": 1,
+"context": "> - Rigorous treatment of the combination rules: sums, products and quotients ⟂ (from the limit theorems for sequences), polynomials ⟂, composites ⟂ (one line with the sequential definiti",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^prop-25-1"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 508,
+"term": "bolzano–weierstrass",
+"count": 1,
+"context": "ions: ⟂ (a strictly increasing continuous function on a closed interval has a continuous inverse, proved with Bolzano–Weierstrass instead of an explicit δ; topological form ⟂). Once ·, · and · are defined by power series, their continuity",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§10 Continuity",
+"line": 545,
+"term": "continuous image of a connected space is connected",
+"count": 1,
+"context": "> - Hub: ⟂. Topological form: a continuous image of a connected space is connected, ⟂.",
+"targets": [
+"Topology|Continuous Image of a Connected Space is Connected"
+]
+},
+{
+"note": "§100 Double Integrals in Polar Coordinates",
+"line": 71,
+"term": "fubini",
+"count": 1,
+"context": "double Riemann sum (⟂) for · over the rectangle · in the ·-plane. Since · is continuous, letting · and using Fubini's Theorem (⟂),",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§100 Double Integrals in Polar Coordinates",
+"line": 85,
+"term": "jacobian",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂, proved there by the same computation with polar rectangles; the factor · is the Jacobian of the polar map (⟂), the general formula being ⟂ (polar coordinates as a special case: ⟂). Hub: ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§101 Applications of Double Integrals",
+"line": 246,
+"term": "tonelli",
+"count": 1,
+"context": "always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, ⟂. It is what justifies writing · above and in Examples §101.4 and §101.5.",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "§102 Surface Area",
+"line": 73,
+"term": "continuous function",
+"count": 1,
+"context": "> This is the limit of double Riemann sums of the continuous function · (with the corners · as sample points), so by ⟂ and ⟂ it is the double integral (2). (Stewart's derivation a",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§103 Triple Integrals",
+"line": 14,
+"term": "fubini",
+"count": 7,
+"context": "ble integrals were: Riemann sums over small boxes, then extension by · from a box to a general bounded solid. Fubini's Theorem again reduces them to iterated integrals, now in any of six orders. For a solid lying between two s",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§103 Triple Integrals",
+"line": 63,
+"term": "continuous function",
+"count": 2,
+"context": "> - Rigorous treatment: ⟂ (Fubini, for integrable · on ·) and ⟂ (Tonelli, for ·); a continuous function on a box is integrable there. Hub: ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§103 Triple Integrals",
+"line": 63,
+"term": "tonelli",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (Fubini, for integrable · on ·) and ⟂ (Tonelli, for ·); a continuous function on a box is integrable there. Hub: ⟂.",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "§103 Triple Integrals",
+"line": 220,
+"term": "trace",
+"count": 2,
+"context": "> **As a type 1 region** the projection onto the ·-plane is the parabolic region · (the trace of the paraboloid in · is ·), and ·, so",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§104 Triple Integrals in Cylindrical Coordinates",
+"line": 39,
+"term": "laplacian",
+"count": 1,
+"context": "> - PDE version: ⟂ (the Laplacian in polar and cylindrical coordinates), used for the temperature in a cylinder, ⟂, and the potential in a cyli",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§104 Triple Integrals in Cylindrical Coordinates",
+"line": 67,
+"term": "trace",
+"count": 1,
+"context": "of each point equals its distance from the ·-axis. Since · does not appear, it can vary, so every horizontal trace in a plane · (·) is a circle of radius ·: the surface is a cone. Indeed, from Equations 2, ·, which is a circ",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§104 Triple Integrals in Cylindrical Coordinates",
+"line": 128,
+"term": "jacobian",
+"count": 1,
+"context": "> - Rigorous treatment: the volume element · is the absolute value of the Jacobian of ·, and Formula 4 is the change of variables theorem ⟂ (see ⟂ for the volume elements; the calculus version",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§104 Triple Integrals in Cylindrical Coordinates",
+"line": 128,
+"term": "change of variables",
+"count": 1,
+"context": "> - Rigorous treatment: the volume element · is the absolute value of the Jacobian of ·, and Formula 4 is the change of variables theorem ⟂ (see ⟂ for the volume elements; the calculus version is ⟂ with ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 45,
+"term": "laplacian",
+"count": 1,
+"context": "> - PDE version: ⟂ (the Laplacian in the same coordinates ·), whose separation leads to Legendre's equation, ⟂.",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 45,
+"term": "separation",
+"count": 1,
+"context": "> - PDE version: ⟂ (the Laplacian in the same coordinates ·), whose separation leads to Legendre's equation, ⟂.",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 122,
+"term": "mean value theorem",
+"count": 2,
+"context": "> *Stewart states this \"with the aid of the Mean Value Theorem (Exercise 51)\"; here is that exercise worked out.*",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 176,
+"term": "continuous function",
+"count": 1,
+"context": "> The last sum is a triple Riemann sum (⟂) over the box · in ·-space for the continuous function",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 182,
+"term": "fubini",
+"count": 1,
+"context": "> so its limit is ·, which is the iterated integral (3) by Fubini's Theorem (⟂). The general region follows by extending · by · to a wedge containing ·, exactly as in the proo",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 189,
+"term": "jacobian",
+"count": 1,
+"context": "> - Rigorous treatment: · is the absolute value of the Jacobian of the spherical-coordinate map (⟂; computed in ⟂), and Formula 3 is the change of variables theorem ⟂. Hub:",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 189,
+"term": "change of variables",
+"count": 1,
+"context": "s the absolute value of the Jacobian of the spherical-coordinate map (⟂; computed in ⟂), and Formula 3 is the change of variables theorem ⟂. Hub: ⟂.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§105 Triple Integrals in Spherical Coordinates",
+"line": 190,
+"term": "orthogonality",
+"count": 1,
+"context": "> - PDE version: the factor · of the volume element is the weight in the orthogonality of the ·, which appears in the coefficients of the potential in a sphere, ⟂.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§106 Change of Variables in Multiple Integrals",
+"line": 14,
+"term": "jacobian",
+"count": 17,
+"context": "ion · of the ·-plane, and a small rectangle of area · is mapped to a curved region of area about ·, where the Jacobian · is the determinant of the matrix of partial derivatives. So · is replaced by ·: the two-variable analogue o",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§106 Change of Variables in Multiple Integrals",
+"line": 140,
+"term": "bijection",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (general Jordan measurable domains, · a · bijection with · inverse and ·). Hub: ⟂.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§106 Change of Variables in Multiple Integrals",
+"line": 141,
+"term": "linear map",
+"count": 2,
+"context": "> - The linear case is where the factor · comes from: a linear map multiplies areas and volumes by ·, ⟂ and ⟂; for Lebesgue measure · is proved by row operations inside ⟂. Appr",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§106 Change of Variables in Multiple Integrals",
+"line": 141,
+"term": "lebesgue measure",
+"count": 1,
+"context": "he linear case is where the factor · comes from: a linear map multiplies areas and volumes by ·, ⟂ and ⟂; for Lebesgue measure · is proved by row operations inside ⟂. Approximation (8) says that · is close to its linearization on a smal",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "§106 Change of Variables in Multiple Integrals",
+"line": 141,
+"term": "row operations",
+"count": 1,
+"context": "or · comes from: a linear map multiplies areas and volumes by ·, ⟂ and ⟂; for Lebesgue measure · is proved by row operations inside ⟂. Approximation (8) says that · is close to its linearization on a small rectangle.",
+"targets": [
+"Applied Linear Algebra|§21 Properties of Determinants#^thm-21-1"
+]
+},
+{
+"note": "§107 Vector Fields",
+"line": 14,
+"term": "vector field",
+"count": 16,
+"context": "A vector field attaches a vector to every point of a region: the wind velocity at each point of the air, the gravitational f",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§107 Vector Fields",
+"line": 142,
+"term": "contour",
+"count": 1,
+"context": "> Plotted together with a contour map of ·, the gradient vectors are perpendicular to the level curves, as they must be (⟂). They are long wher",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§107 Vector Fields",
+"line": 163,
+"term": "differential form",
+"count": 1,
+"context": "> - Same definition in 452 (with \"irrotational\" and \"solenoidal\" alongside): ⟂. In the language of differential forms a conservative field is an exact 1-form: ⟂, with the gradient as the differential ⟂.",
+"targets": [
+"Multivariable Analysis|§21 Introduction to Differential Forms#^def-21-1"
+]
+},
+{
+"note": "§108 Line Integrals",
+"line": 14,
+"term": "vector field",
+"count": 6,
+"context": "the curve by its length; it gives the mass of a wire or the area of a curtain over ·. The line integral of a vector field, ·, adds up the component of · along the direction of travel; it is the work done by a force field. Both are",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§108 Line Integrals",
+"line": 46,
+"term": "parametrization",
+"count": 5,
+"context": "> The value does not depend on the parametrization of ·, provided that · is traversed exactly once as · increases from · to ·.",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§108 Line Integrals",
+"line": 52,
+"term": "mean value theorem",
+"count": 2,
+"context": "only indicates the proof (\"a similar type of argument\" to the arc length formula, ⟂); the derivation with the Mean Value Theorem and uniform continuity is in ⟂.*",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§108 Line Integrals",
+"line": 52,
+"term": "uniform continuity",
+"count": 1,
+"context": "f (\"a similar type of argument\" to the arc length formula, ⟂); the derivation with the Mean Value Theorem and uniform continuity is in ⟂.*",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§108 Line Integrals",
+"line": 463,
+"term": "conservative",
+"count": 2,
+"context": "> 5. **Look for shortcuts first**: a conservative field (⟂), or a closed curve in the plane or in space bounding a simple region or surface (Green's Theorem, ⟂",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 14,
+"term": "conservative",
+"count": 29,
+"context": "tive, and the Fundamental Theorem for Line Integrals says the same thing for it: ·. So the line integral of a conservative field depends only on the endpoints of the path, and around a closed path it is ·. Conversely, a field whose",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 14,
+"term": "simply connected",
+"count": 7,
+"context": "section then answers the two practical questions: how to recognize a conservative field in the plane (·, on a simply-connected region), and how to find its potential function (partial integration). It ends with the reason for the word *",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 4,
+"context": "Part 2 of the Fundamental Theorem of Calculus says ·: to integrate a derivative, only the values at the endpoints are needed. The gradient is a kind of der",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 32,
+"term": "vector field",
+"count": 10,
+"context": "e variables (two variables is the same with the · terms dropped). By the definition of the line integral of a vector field (⟂) and the Chain Rule (⟂),",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 51,
+"term": "contour integral",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (for contour integrals: having an antiderivative, independence of path and vanishing integrals around closed contours are equivalent",
+"targets": [
+"Complex Variables|§44 Contour Integrals#^def-44-1"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 51,
+"term": "contour",
+"count": 2,
+"context": "> - Complex-variables version: ⟂ (for contour integrals: having an antiderivative, independence of path and vanishing integrals around closed contours are",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 115,
+"term": "boundary points",
+"count": 1,
+"context": "** if for every point · in · there is a disk with center · that lies entirely in · (so · contains none of its boundary points). · is **connected** if any two points in · can be joined by a path that lies in ·.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 174,
+"term": "clairaut",
+"count": 2,
+"context": "is conservative, with · and · having continuous first-order partial derivatives. Then · and · for some ·, and Clairaut's Theorem gives a necessary condition.",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 200,
+"term": "test for exact equations",
+"count": 1,
+"context": "> - ODE version: the test for exact equations ·, ⟂ (· is necessary, and on a rectangle sufficient, for a function · with ·, ·, that is, a potential of ·).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 200,
+"term": "exact equation",
+"count": 1,
+"context": "> - ODE version: the test for exact equations ·, ⟂ (· is necessary, and on a rectangle sufficient, for a function · with ·, ·, that is, a potential of ·).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 205,
+"term": "simple closed curve",
+"count": 2,
+"context": "> A **simple curve** is a curve that does not intersect itself anywhere between its endpoints: for a simple closed curve, · but · when ·.",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-1"
+]
+},
+{
+"note": "§109 The Fundamental Theorem for Line Integrals",
+"line": 249,
+"term": "simply connected domain",
+"count": 1,
+"context": "> 1. **Test first.** In the plane, check · (on a simply-connected domain); in space, check · (⟂; on all of · this suffices, ⟂). If the test fails, there is no potential.",
+"targets": [
+"Complex Variables|§52 Simply Connected Domains#^def-52-1"
+]
+},
+{
+"note": "§11 Limits at Infinity; Horizontal Asymptotes",
+"line": 117,
+"term": "lowest terms",
+"count": 1,
+"context": "r an even root, and here the limit is ·, so we argue directly instead. Write · with positive integers ·, · in lowest terms. For ·, both · and · are increasing, hence so is ·. Given ·, let ·, so that ·. If ·, then ·, so",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-2"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 14,
+"term": "conservative",
+"count": 5,
+"context": ". That gives the standard calculation for fields with a singularity, such as ·, and the proof of the test for conservative fields announced in §109 (the converse of ⟂).",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 14,
+"term": "parametrization",
+"count": 3,
+"context": "original functions, integrated over ·. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pi",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 14,
+"term": "simple closed curve",
+"count": 7,
+"context": "Green's Theorem turns a line integral around a simple closed curve · into a double integral over the region · that · bounds. It is the Fundamental Theorem of Calculus one dimen",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-1"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 5,
+"context": "ine integral around a simple closed curve · into a double integral over the region · that · bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over · equals boundary values of the original functions, integra",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 36,
+"term": "continuous function",
+"count": 1,
+"context": "> with continuous functions · and ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 133,
+"term": "fubini",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂, with the same proof (Fubini on type I and type II regions, ⟂, plus the FTC; general regions by subdivision) and the same convention \"· on",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 135,
+"term": "cauchy–riemann equations",
+"count": 1,
+"context": "> - See also: ⟂ (Cauchy's theorem ·, derived from Green's theorem and the Cauchy–Riemann equations) and ⟂ (the Cauchy–Goursat theorem, which drops the continuity of ·).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations",
+"Complex Variables|§21 Cauchy–Riemann Equations#^def-21-1"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 135,
+"term": "cauchy–riemann",
+"count": 1,
+"context": "> - See also: ⟂ (Cauchy's theorem ·, derived from Green's theorem and the Cauchy–Riemann equations) and ⟂ (the Cauchy–Goursat theorem, which drops the continuity of ·).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 420,
+"term": "vector field",
+"count": 2,
+"context": "Green's Theorem supplies the proof, promised in §109 after ⟂, of the test for conservative vector fields in the plane.",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 436,
+"term": "open set",
+"count": 1,
+"context": "· is simply connected, · encloses only points of ·, so · and ·, · have continuous partial derivatives on the open set ·. If · is positively oriented, Green's Theorem gives",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 452,
+"term": "path-connected",
+"count": 1,
+"context": "> - Topology's definition of simply connected (path-connected, every loop shrinks to a point): ⟂. Stewart's definition (every simple closed curve in · encloses only points",
+"targets": [
+"Single Variable Analysis|§22 More on Metric Spaces꞉ Connectedness#^def-22-1",
+"Topology|§14 Connected Subspaces of ℝ#^def-14-3"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 453,
+"term": "test for exact equations",
+"count": 1,
+"context": "> - ODE version: ⟂ (the test for exact equations, ·, proved on a rectangle by constructing · directly).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 453,
+"term": "exact equation",
+"count": 1,
+"context": "> - ODE version: ⟂ (the test for exact equations, ·, proved on a rectangle by constructing · directly).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 454,
+"term": "simply connected domain",
+"count": 1,
+"context": "> - See also: ⟂ (applied to the field ·, the test gives a harmonic conjugate of a harmonic function on a simply connected domain).",
+"targets": [
+"Complex Variables|§52 Simply Connected Domains#^def-52-1"
+]
+},
+{
+"note": "§110 Green's Theorem",
+"line": 454,
+"term": "harmonic function",
+"count": 1,
+"context": "> - See also: ⟂ (applied to the field ·, the test gives a harmonic conjugate of a harmonic function on a simply connected domain).",
+"targets": [
+"Complex Variables|§27★ Harmonic Functions#^def-27-1"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 14,
+"term": "vector field",
+"count": 15,
+"context": "Two operations on vector fields in · resemble differentiation. The curl, ·, produces a vector field and measures rotation; the divergence, ·,",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 63,
+"term": "clairaut",
+"count": 3,
+"context": "> by Clairaut's Theorem (⟂), since the second-order partial derivatives are continuous. (Compare · for vectors, ⟂.)",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 77,
+"term": "contrapositive",
+"count": 1,
+"context": "> If ·, then · by ⟂. The second sentence is the contrapositive.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 83,
+"term": "simply connected",
+"count": 1,
+"context": "have continuous partial derivatives and ·, then · is conservative.* (More generally it holds if the domain is simply-connected, that is, \"has no hole\".) This is the three-dimensional version of ⟂. Its proof requires Stokes' Theorem, so",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 145,
+"term": "differential form",
+"count": 1,
+"context": "> - Both identities, · and ·, are proved the same way in ⟂, and become the single identity · for differential forms: ⟂ (hub ⟂), which is Clairaut's theorem in disguise, ⟂.",
+"targets": [
+"Multivariable Analysis|§21 Introduction to Differential Forms#^def-21-1"
+]
+},
+{
+"note": "§111 Curl and Divergence",
+"line": 214,
+"term": "parametrization",
+"count": 1,
+"context": "> (The complicated parametrization is a decoy: nothing about · but its endpoints enters.)",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 85,
+"term": "angle of rotation",
+"count": 1,
+"context": "> with parameter domain ·, ·, where · is the angle of rotation.",
+"targets": [
+"Complex Variables|§112★ Preservation of Angles and Scale Factors#^def-112-1"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 102,
+"term": "parametrization",
+"count": 4,
+"context": "> [!example] Example §112.2: Two Parametrizations of a Cone",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 171,
+"term": "surface area formula",
+"count": 2,
+"context": "> [!remark] Remark: Why the Surface Area Formula",
+"targets": [
+"Multivariable Analysis|Surface Area via the Gram Matrix"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 172,
+"term": "span",
+"count": 2,
+"context": "partial derivatives are approximated by difference quotients. So · is approximated by the parallelogram they span, which lies in the tangent plane at · and has area",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 203,
+"term": "jacobian",
+"count": 1,
+"context": "is derived from the Gram matrix, ·: ⟂, and the area is the case · of ⟂. The factor · plays the role that the Jacobian plays for a change of variables in the plane (⟂).",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§112 Parametric Surfaces and Their Areas",
+"line": 203,
+"term": "change of variables",
+"count": 1,
+"context": "Gram matrix, ·: ⟂, and the area is the case · of ⟂. The factor · plays the role that the Jacobian plays for a change of variables in the plane (⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§113 Surface Integrals",
+"line": 14,
+"term": "vector field",
+"count": 7,
+"context": "omputed as a double integral over the parameter domain with the area factor · of ⟂. The surface integral of a vector field, ·, is the flux of · across ·: the integral of its normal component, which measures the rate of flow through",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§113 Surface Integrals",
+"line": 40,
+"term": "parametrization",
+"count": 3,
+"context": "> The value does not depend on the parametrization used. In particular ·.",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§113 Surface Integrals",
+"line": 49,
+"term": "scalar line integral",
+"count": 1,
+"context": "> - The scalar surface integral in 452: ⟂, with the table comparing it to the scalar line integral ·. Neither is the integral of a differential form, since neither sees orientation: ⟂.",
+"targets": [
+"Multivariable Analysis|§16 Line Integrals and Green's Theorem#^def-16-1"
+]
+},
+{
+"note": "§113 Surface Integrals",
+"line": 49,
+"term": "differential form",
+"count": 1,
+"context": "e integral in 452: ⟂, with the table comparing it to the scalar line integral ·. Neither is the integral of a differential form, since neither sees orientation: ⟂.",
+"targets": [
+"Multivariable Analysis|§21 Introduction to Differential Forms#^def-21-1"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 14,
+"term": "flux integral",
+"count": 1,
+"context": "gh ·: ·. In practice it is used in two directions. A line integral around a complicated space curve becomes a flux integral over a simple surface bounded by it (often a flat disk). And the flux of a curl through a complicated surface",
+"targets": [
+"Multivariable Analysis|§18 Surface Integrals#^def-18-6"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 14,
+"term": "conservative",
+"count": 5,
+"context": "component along · is the circulation per unit area around ·. Finally it proves that a curl-free field on · is conservative.",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 14,
+"term": "vector field",
+"count": 4,
+"context": "Stokes' Theorem is Green's Theorem for curved surfaces. It relates the line integral of a vector field around the boundary curve · of an oriented surface · in space to the flux of its curl through ·: ·. In practi",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 41,
+"term": "parametrized surface",
+"count": 2,
+"context": "generality at this level, and proves it when · is a graph and ·, · and · are well behaved. The general proof (parametrized surfaces, reduced to Green's Theorem on the parameter domain) is in ⟂.*",
+"targets": [
+"Multivariable Analysis|§18 Surface Integrals#^def-18-1"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 72,
+"term": "clairaut",
+"count": 2,
+"context": "> Subtract. The terms with · cancel, and so do the terms with ·, because · by Clairaut's Theorem (⟂). Six terms remain:",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 91,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> Stokes' Theorem, Green's Theorem and the Fundamental Theorem of Calculus are analogous: on the left of (1) is an integral involving derivatives (· is a sort of derivative of ·), and",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 335,
+"term": "simple closed curve",
+"count": 1,
+"context": "> A curve that is not simple can be broken into a number of simple closed curves, and the integrals around these are all ·. Adding them, · for any closed curve ·.",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-1"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 337,
+"term": "simply connected",
+"count": 1,
+"context": "the decomposition into simple curves, are what make this a sketch. More generally the conclusion holds on any simply-connected domain.)",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§114 Stokes' Theorem",
+"line": 337,
+"term": "simply connected domain",
+"count": 1,
+"context": "the decomposition into simple curves, are what make this a sketch. More generally the conclusion holds on any simply-connected domain.)",
+"targets": [
+"Complex Variables|§52 Simply Connected Domains#^def-52-1"
+]
+},
+{
+"note": "§115 The Divergence Theorem",
+"line": 28,
+"term": "vector field",
+"count": 1,
+"context": "le solid region and let · be the boundary surface of ·, given with positive (outward) orientation. Let · be a vector field whose component functions have continuous partial derivatives on an open region that contains ·. Then",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§115 The Divergence Theorem",
+"line": 63,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "f · onto the ·-plane. Computing the triple integral as an iterated integral (⟂) and the inner integral by the Fundamental Theorem of Calculus,",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§115 The Divergence Theorem",
+"line": 93,
+"term": "heat flux",
+"count": 1,
+"context": "> - PDE version: applied to the heat flux out of every subregion, it turns the integral heat balance into the local balance ·, ⟂, and so gives the thre",
+"targets": [
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^def-17-1"
+]
+},
+{
+"note": "§116 Numbers, Inequalities, and Absolute Values",
+"line": 52,
+"term": "completeness axiom",
+"count": 1,
+"context": "*That the real line has no gaps — every nonempty set of reals bounded above has a least upper bound — is the Completeness Axiom, which Stewart states in Section 11.1: ⟂.*",
+"targets": [
+"Single Variable Analysis|Completeness Axiom",
+"Single Variable Analysis|Completeness Axiom"
+]
+},
+{
+"note": "§117 Coordinate Geometry and Lines",
+"line": 14,
+"term": "distance between two points",
+"count": 1,
+"context": "l numbers, as points of a line were identified with real numbers in ⟂. The Pythagorean Theorem then gives the distance between two points, and the slope, the constant rate of change of · with respect to ·, gives the equations of lines: point-slope",
+"targets": [
+"Complex Variables|§4 Vectors and Moduli#^prop-4-2"
+]
+},
+{
+"note": "§117 Coordinate Geometry and Lines",
+"line": 197,
+"term": "orthogonality",
+"count": 1,
+"context": "> - In vector form: the direction vectors · and · have dot product ·, so perpendicularity is orthogonality, · (⟂; in Calculus, ⟂).",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§118 Graphs of Second-Degree Equations",
+"line": 149,
+"term": "eigenvector",
+"count": 1,
+"context": "m in two variables is an ellipse or hyperbola, in standard position exactly when · is diagonal; otherwise the eigenvectors of · rotate it into standard position), worked in ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§119 Trigonometry",
+"line": 475,
+"term": "intermediate value theorem",
+"count": 1,
+"context": "om (a) and ·). That · takes every real value: on · it is continuous (⟂) and tends to · at the ends, so by the Intermediate Value Theorem (⟂), applied on closed subintervals · with · below and · above the target value, it takes every value; the sa",
+"targets": [
+"Single Variable Analysis|Intermediate Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-3",
+"Topology|§14 Connected Subspaces of ℝ#^thm-14-3"
+]
+},
+{
+"note": "§12 Derivatives and Rates of Change",
+"line": 154,
+"term": "linear map",
+"count": 1,
+"context": "cond form, for · defined on an open interval containing ·). Several variables, where the derivative becomes a linear map (the Jacobian matrix): ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§12 Derivatives and Rates of Change",
+"line": 154,
+"term": "jacobian matrix",
+"count": 1,
+"context": "defined on an open interval containing ·). Several variables, where the derivative becomes a linear map (the Jacobian matrix): ⟂.",
+"targets": [
+"Multivariable Analysis|§13 The Inverse Function Theorem#^def-13-1"
+]
+},
+{
+"note": "§12 Derivatives and Rates of Change",
+"line": 154,
+"term": "jacobian",
+"count": 1,
+"context": "defined on an open interval containing ·). Several variables, where the derivative becomes a linear map (the Jacobian matrix): ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§121 The Logarithm Defined as an Integral",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "apter 3 took the derivatives and the limit formula for · on credit (⟂, ⟂). Here the order is reversed and the Fundamental Theorem of Calculus does the work: · is *defined* as · (⟂), · as its inverse (⟂, ⟂), and · and · from these (⟂, ⟂). **No previous",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§121 The Logarithm Defined as an Integral",
+"line": 30,
+"term": "continuous function",
+"count": 3,
+"context": "> The function exists because the integral of a continuous function always exists (⟂), and · is continuous on ·, which contains the interval between · and ·. If ·, · is the area",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§121 The Logarithm Defined as an Integral",
+"line": 125,
+"term": "equality of sets",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (the law for the product with the multiple-valued ·, valid as an equality of sets of values).",
+"targets": [
+"Logic and Proofs|§6 The Language of Set Theory#^def-6-3"
+]
+},
+{
+"note": "§13 The Derivative as a Function",
+"line": 213,
+"term": "contrapositive",
+"count": 1,
+"context": ": both one-sided limits are ·, so ⟂ applies), but it is not differentiable at · by Example §13.4. Read in the contrapositive, Theorem §13.1 gives a test: if · is not continuous at ·, then · is not differentiable at ·.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§14 Derivatives of Polynomials and Exponential Functions",
+"line": 86,
+"term": "binomial theorem",
+"count": 1,
+"context": "> **Second proof.** By the Binomial Theorem,",
+"targets": [
+"Logic and Proofs|Binomial Theorem"
+]
+},
+{
+"note": "§16 Derivatives of Trigonometric Functions",
+"line": 53,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "> - In 451, sine and cosine can be *defined* by power series; term-by-term differentiation then gives · and · without any geometry: ⟂, using ⟂.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "§16 Derivatives of Trigonometric Functions",
+"line": 244,
+"term": "squeeze theorem",
+"count": 2,
+"context": "> **Squeeze.** · and · (⟂), so by the Squeeze Theorem",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§17 The Chain Rule",
+"line": 40,
+"term": "continuous function",
+"count": 1,
+"context": "> and ·, as a function of ·, is continuous at · with value · there (Stewart: \"· is a continuous function of ·\").",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§19 Derivatives of Logarithmic and Inverse Trigonometric Functions",
+"line": 102,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "*Appendix G takes the integral · as the definition of ·, so that this formula holds by the Fundamental Theorem of Calculus: ⟂.*",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§21 Exponential Growth and Decay",
+"line": 51,
+"term": "separation",
+"count": 1,
+"context": "> **There are no others.** Stewart defers this half to Section 9.4 (⟂), where the equation is solved by separation of variables. That computation divides by ·, so it finds only the zero solution and the solutions that never",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§21 Exponential Growth and Decay",
+"line": 51,
+"term": "solution on an interval",
+"count": 1,
+"context": "gument that covers every solution, using a consequence of the Mean Value Theorem from Chapter 4: let · be any solution on an interval containing · and put ·. By the Product Rule,",
+"targets": [
+"Ordinary Differential Equations|§3 Classification of Differential Equations#^def-3-6"
+]
+},
+{
+"note": "§21 Exponential Growth and Decay",
+"line": 66,
+"term": "separable",
+"count": 1,
+"context": "> - In Chapter 9 the same equation is the first example of a separable equation and of a population model: ⟂, ⟂; ⟂ then refines the model to the logistic equation (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§22 Related Rates",
+"line": 64,
+"term": "pythagorean theorem",
+"count": 2,
+"context": "e height of the top of the ladder, both functions of · (seconds). Given: · ft/s. Unknown: · when · ft. By the Pythagorean Theorem,",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§23 Linear Approximations and Differentials",
+"line": 38,
+"term": "taylor's theorem",
+"count": 1,
+"context": "> - How good is it? Taylor's Theorem with · bounds the error: · for some · between · and · (⟂; in Calculus, ⟂). This explains Example §23.1: the e",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§25 Maximum and Minimum Values",
+"line": 14,
+"term": "continuous function",
+"count": 2,
+"context": "(absolute extrema) from the largest value nearby (local extrema). The Extreme Value Theorem guarantees that a continuous function on a closed interval has both an absolute maximum and an absolute minimum. Fermat's Theorem says where a loca",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§25 Maximum and Minimum Values",
+"line": 79,
+"term": "bolzano–weierstrass",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂, via Bolzano–Weierstrass. Hub: ⟂.",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^thm-5-1",
+"Single Variable Analysis|Bolzano–Weierstrass Theorem",
+"Single Variable Analysis|§11 Subsequences#^thm-11-5"
+]
+},
+{
+"note": "§25 Maximum and Minimum Values",
+"line": 80,
+"term": "supremum",
+"count": 1,
+"context": "s image of a compact space is compact, ⟂, and a compact subset of · is closed and bounded, so it contains its supremum and infimum.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§25 Maximum and Minimum Values",
+"line": 80,
+"term": "infimum",
+"count": 1,
+"context": "compact space is compact, ⟂, and a compact subset of · is closed and bounded, so it contains its supremum and infimum.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§25 Maximum and Minimum Values",
+"line": 80,
+"term": "continuous image of a compact space is compact",
+"count": 1,
+"context": "> - Topological form: a continuous image of a compact space is compact, ⟂, and a compact subset of · is closed and bounded, so it contains its supremum and infimum.",
+"targets": [
+"Topology|Continuous Image of a Compact Space is Compact"
+]
+},
+{
+"note": "§26 The Mean Value Theorem",
+"line": 14,
+"term": "extreme value theorem",
+"count": 3,
+"context": "average rate of change ·. It is proved from Rolle's Theorem, its special case ·, which in turn comes from the Extreme Value Theorem and Fermat's Theorem (⟂, ⟂). Like those, it only asserts that some number · exists. Its value is that it turn",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§26 The Mean Value Theorem",
+"line": 50,
+"term": "intermediate value theorem",
+"count": 1,
+"context": "> **Existence.** Let ·. Then · and ·. · is a polynomial, hence continuous, so by the Intermediate Value Theorem (⟂) there is a number · between · and · with ·.",
+"targets": [
+"Single Variable Analysis|Intermediate Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-3",
+"Topology|§14 Connected Subspaces of ℝ#^thm-14-3"
+]
+},
+{
+"note": "§26 The Mean Value Theorem",
+"line": 135,
+"term": "continuous function",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (sums of continuous functions), ⟂ (Sum Rule), ⟂ (constants)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§26 The Mean Value Theorem",
+"line": 214,
+"term": "almost everywhere",
+"count": 1,
+"context": "> - With · only almost everywhere the conclusion fails (the Cantor function); see the Connections of 451 Cor. §29.4.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§27 What Derivatives Tell Us About the Shape of a Graph",
+"line": 74,
+"term": "continuous function",
+"count": 1,
+"context": "> Suppose that · is a critical number of a continuous function ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§27 What Derivatives Tell Us About the Shape of a Graph",
+"line": 232,
+"term": "hessian test",
+"count": 1,
+"context": "> - Several variables: the Hessian test, ⟂; in this subject, ⟂.",
+"targets": [
+"Multivariable Analysis|Second Derivative Test in Several Variables"
+]
+},
+{
+"note": "§28 Indeterminate Forms and L'Hospital's Rule",
+"line": 164,
+"term": "cauchy's theorem",
+"count": 1,
+"context": "his Appendix F proof assumes · and says nothing about the other type). The type · needs a different estimate (Cauchy's theorem on · with · fixed near ·, then ·); it is proved neither in Stewart nor elsewhere in the vault: ⟂ states it, i",
+"targets": [
+"Complex Variables|Cauchy–Goursat Theorem",
+"Complex Variables|§50 Cauchy–Goursat Theorem#^thm-50-2",
+"Group Theory|§29 The Index and Lagrange's Theorem#^thm-29-6"
+]
+},
+{
+"note": "§31 Optimization Problems",
+"line": 56,
+"term": "continuous function",
+"count": 1,
+"context": "> Suppose that · is a critical number of a continuous function · defined on an interval.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§31 Optimization Problems",
+"line": 71,
+"term": "mean value theorem",
+"count": 1,
+"context": "> (a) Let · be in the interval. · is continuous on · and differentiable on ·, so the Mean Value Theorem gives · with ·; thus ·. Let · be in the interval. Then · for some ·, and ·, so ·. Hence · for every · in the",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§31 Optimization Problems",
+"line": 154,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "> **Set up.** Let · be the distance from · to ·. The running distance is ·, and by the Pythagorean Theorem the rowing distance is ·. Since time · distance·rate, the total time is",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§32 Newton's Method",
+"line": 75,
+"term": "intermediate value theorem",
+"count": 1,
+"context": "tch (for ·, sketch · and · and look for the intersection), from a computer graph, or from a sign change of · (Intermediate Value Theorem, ⟂).",
+"targets": [
+"Single Variable Analysis|Intermediate Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-3",
+"Topology|§14 Connected Subspaces of ℝ#^thm-14-3"
+]
+},
+{
+"note": "§33 Antiderivatives",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "out one function from the family; this is the first step toward solving differential equations and toward the Fundamental Theorem of Calculus (⟂).",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§33 Antiderivatives",
+"line": 54,
+"term": "continuous function",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂. Integrals produce antiderivatives of continuous functions: ⟂ and ⟂; the general antiderivative is written · in ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§34 The Area and Distance Problems",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "ses it to *define* the area under a curve. The same limit of sums becomes the definite integral in ⟂, and the Fundamental Theorem of Calculus (⟂) will evaluate it without any sums at all.",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§34 The Area and Distance Problems",
+"line": 18,
+"term": "continuous function",
+"count": 2,
+"context": "The **area problem**: find the area of the region · under the graph of a continuous function · from · to ·, that is,",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§34 The Area and Distance Problems",
+"line": 135,
+"term": "extreme value theorem",
+"count": 1,
+"context": "gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, ⟂, since · is continuous on the closed subinterval.)",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§34 The Area and Distance Problems",
+"line": 164,
+"term": "lower sums",
+"count": 4,
+"context": "> 4. Equivalently, · is the unique number that is smaller than all the upper sums and bigger than all the lower sums.",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-2",
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-8"
+]
+},
+{
+"note": "§34 The Area and Distance Problems",
+"line": 170,
+"term": "uniform continuity",
+"count": 1,
+"context": "*Stewart omits the proof (\"it can be proved\"; \"it can be shown\"). It rests on the uniform continuity of · on ·: see ⟂ for the existence of the limit, and ⟂ for the equivalence of the limit of sums with the uppe",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 43,
+"term": "integrable function",
+"count": 2,
+"context": "> - Every Riemann integrable function is Lebesgue integrable with the same integral: ⟂.",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 43,
+"term": "riemann integrable",
+"count": 1,
+"context": "> - Every Riemann integrable function is Lebesgue integrable with the same integral: ⟂.",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-3"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 84,
+"term": "continuous function",
+"count": 2,
+"context": "> [!theorem] Theorem §35.1: Continuous Functions Are Integrable",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 91,
+"term": "uniform continuity",
+"count": 1,
+"context": "*Stewart omits the proof (\"proved in more advanced courses\"). See ⟂ for continuous functions (via uniform continuity). For jumps, ⟂ shows how a jump is isolated in a short subinterval, and ⟂ glues the continuous pieces togethe",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 93,
+"term": "irrational number",
+"count": 1,
+"context": "Not every function is integrable: the function that is · at rational and · at irrational numbers is not (Stewart, Exercises 81–82; ⟂).",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-4"
+]
+},
+{
+"note": "§35 The Definite Integral",
+"line": 324,
+"term": "lower sums",
+"count": 1,
+"context": "> - Rigorous treatment: linearity ⟂, proved there with upper and lower sums for all integrable (not only continuous) · and ·.",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-2",
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-8"
+]
+},
+{
+"note": "§36 The Fundamental Theorem of Calculus",
+"line": 69,
+"term": "extreme value theorem",
+"count": 3,
+"context": "> **Case ·.** Since · is continuous on ·, the Extreme Value Theorem gives numbers · and · in · with · and ·, the absolute minimum and maximum values of · on ·. By Property 8 of",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§36 The Fundamental Theorem of Calculus",
+"line": 95,
+"term": "squeeze theorem",
+"count": 2,
+"context": "> By (3) and the Squeeze Theorem,",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§36 The Fundamental Theorem of Calculus",
+"line": 112,
+"term": "almost everywhere",
+"count": 1,
+"context": "> - Lebesgue version, with no continuity at all: · almost everywhere, ⟂.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§36 The Fundamental Theorem of Calculus",
+"line": 196,
+"term": "mean value theorem",
+"count": 1,
+"context": "that · is continuous on · and differentiable on · with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs · continuous, is ⟂.",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§36 The Fundamental Theorem of Calculus",
+"line": 287,
+"term": "continuous function",
+"count": 1,
+"context": "> Part 1, ·, says: integrate a continuous function, then differentiate, and you are back at ·. Part 2 in the form",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§37 Indefinite Integrals and the Net Change Theorem",
+"line": 165,
+"term": "continuous function",
+"count": 1,
+"context": "> Apply FTC2 (⟂) to the continuous function ·, of which · is an antiderivative.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§38 The Substitution Rule",
+"line": 71,
+"term": "bijection",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ proves the definite form from FTC and the Chain Rule for a · bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of v",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§38 The Substitution Rule",
+"line": 71,
+"term": "change of variables formula",
+"count": 1,
+"context": "· bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals (⟂; ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§38 The Substitution Rule",
+"line": 71,
+"term": "change of variables",
+"count": 1,
+"context": "· bijection · with ·, written with · so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals (⟂; ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§39 Areas Between Curves",
+"line": 67,
+"term": "fubini",
+"count": 1,
+"context": "ral: · over a type I region (⟂, ⟂). Its iterated form · is exactly Theorem §39.1, and the rigorous version is Fubini for type I regions, ⟂.",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§4 Exponential Functions",
+"line": 73,
+"term": "irrational number",
+"count": 1,
+"context": "· plotted at rational · only (here at multiples of ·); between any two plotted points there are holes at the irrational numbers. (b) Filling the hole at ·: the rational bounds · (orange) trap · between · and ·, and the finer bounds · (re",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-4"
+]
+},
+{
+"note": "§4 Exponential Functions",
+"line": 76,
+"term": "completeness axiom",
+"count": 1,
+"context": "> - For ·, existence is the completeness axiom (⟂): ·. A continuous function on an interval is determined by its values at the rationals (⟂), so there is at",
+"targets": [
+"Single Variable Analysis|Completeness Axiom",
+"Single Variable Analysis|Completeness Axiom"
+]
+},
+{
+"note": "§4 Exponential Functions",
+"line": 160,
+"term": "exponential growth",
+"count": 1,
+"context": "grows as fast as Example §4.2 showed. Under ideal conditions (unlimited space and nutrition, no disease) this exponential growth is what actually happens in nature.",
+"targets": [
+"Ordinary Differential Equations|§8 Autonomous Differential Equations and Population Dynamics#^def-8-2"
+]
+},
+{
+"note": "§4 Exponential Functions",
+"line": 200,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "s the power series · with radius of convergence · (⟂); it is continuous by ⟂, and its derivative at · is · by term-by-term differentiation (⟂), which is Definition §4.4.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 25,
+"term": "parallelepiped",
+"count": 1,
+"context": "his is a circular cylinder, ·; for a rectangular base of length · and width ·, a rectangular box (rectangular parallelepiped), ·.",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 40,
+"term": "continuous function",
+"count": 1,
+"context": "f the cross-sectional area of · in the plane ·, through · and perpendicular to the ·-axis, is ·, where · is a continuous function, then the **volume** of · is",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 55,
+"term": "lebesgue measure",
+"count": 2,
+"context": "> - Rigorous treatment: with volume defined as Lebesgue measure, the slicing formula · is the Cross-Section Theorem, ⟂. In this course it reappears as a double integral of t",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 55,
+"term": "fubini",
+"count": 1,
+"context": "⟂. In this course it reappears as a double integral of the \"height\" (⟂) and as a triple integral computed by Fubini (⟂).",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 64,
+"term": "change of variables",
+"count": 1,
+"context": "s in every direction by ⟂, and the measure itself is unchanged by translations (⟂) and by rotations (a linear change of variables with ·, ⟂).*",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§40 Volumes",
+"line": 69,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "> Place the center at the origin. The plane · (·) cuts the sphere in a disk whose radius, by the Pythagorean Theorem, is ·. So",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§41 Volumes by Cylindrical Shells",
+"line": 115,
+"term": "jacobian",
+"count": 1,
+"context": "> - The general proof: in cylindrical coordinates the solid is ·, and its volume · (⟂). The factor · is the Jacobian of the change of variables, ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§41 Volumes by Cylindrical Shells",
+"line": 115,
+"term": "change of variables",
+"count": 1,
+"context": "l proof: in cylindrical coordinates the solid is ·, and its volume · (⟂). The factor · is the Jacobian of the change of variables, ⟂.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§42 Work",
+"line": 66,
+"term": "vector field",
+"count": 1,
+"context": "> - Along a curve instead of a line, with the force a vector field, the work is the line integral · (⟂, ⟂; ⟂). For motion along the ·-axis with · it reduces to Definition §42.3",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§43 Average Value of a Function",
+"line": 14,
+"term": "mean value theorem",
+"count": 8,
+"context": "y spaced values and let ·. The averages become Riemann sums divided by ·, so the average value of · is ·. The Mean Value Theorem for Integrals says that a continuous function actually takes its average value somewhere. It follows from the",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§43 Average Value of a Function",
+"line": 14,
+"term": "continuous function",
+"count": 3,
+"context": "e Riemann sums divided by ·, so the average value of · is ·. The Mean Value Theorem for Integrals says that a continuous function actually takes its average value somewhere. It follows from the Mean Value Theorem for derivatives applied to",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§43 Average Value of a Function",
+"line": 79,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "nes this proof in Exercise 28: the theorem is a consequence of the Mean Value Theorem for derivatives and the Fundamental Theorem of Calculus.* Let",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§43 Average Value of a Function",
+"line": 98,
+"term": "intermediate value theorem",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ proves it with the Intermediate Value Theorem instead (the average lies between the minimum and maximum of ·), ⟂ shows that · can be taken in ·, and ⟂ is t",
+"targets": [
+"Single Variable Analysis|Intermediate Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-3",
+"Topology|§14 Connected Subspaces of ℝ#^thm-14-3"
+]
+},
+{
+"note": "§44 Integration by Parts",
+"line": 187,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "ous, since ·, · are continuous (being differentiable) and ·, · are continuous by hypothesis. So Part 2 of the Fundamental Theorem of Calculus (⟂) applies to ·:",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§44 Integration by Parts",
+"line": 273,
+"term": "conservative",
+"count": 1,
+"context": "> (The field is not conservative, so this value depends on the path, not only on the endpoints; see ⟂.)",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "§45 Trigonometric Integrals",
+"line": 309,
+"term": "orthogonality",
+"count": 1,
+"context": "> [!remark]- Remark: Orthogonality of Sines and Cosines",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§45 Trigonometric Integrals",
+"line": 316,
+"term": "inner product",
+"count": 1,
+"context": "re recovered as · (Exercise 78). In the language of linear algebra, the functions ·, · are orthogonal for the inner product ·.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§46 Trigonometric Substitution",
+"line": 43,
+"term": "change of variables formula",
+"count": 1,
+"context": "ersion: ⟂ (one-dimensional change of variables, with · and the limits in increasing order), the case · of the change of variables formula.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§46 Trigonometric Substitution",
+"line": 43,
+"term": "change of variables",
+"count": 2,
+"context": "> - Rigorous treatment of the definite version: ⟂ (one-dimensional change of variables, with · and the limits in increasing order), the case · of the change of variables formula.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§46 Trigonometric Substitution",
+"line": 67,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "gles. Label the sides so that the substitution holds (hypotenuse · and opposite side · for ·, and so on). The Pythagorean Theorem gives the third side, which is the radical. Any other trigonometric function of · can then be read off; for e",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§47 Integration of Rational Functions by Partial Fractions",
+"line": 36,
+"term": "division algorithm",
+"count": 1,
+"context": "*Stewart takes long division for granted. It is the division algorithm for polynomials, proved in ⟂.*",
+"targets": [
+"Group Theory|Division Algorithm",
+"Group Theory|§6 Divisibility and Congruence#^lem-6-1"
+]
+},
+{
+"note": "§47 Integration of Rational Functions by Partial Fractions",
+"line": 45,
+"term": "fundamental theorem of algebra",
+"count": 1,
+"context": "*Stewart omits the proof (\"it can be shown\"). It rests on the Fundamental Theorem of Algebra and is proved in ⟂.*",
+"targets": [
+"Complex Variables|Fundamental Theorem of Algebra (Liouville proof)",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2",
+"Topology|Fundamental Theorem of Algebra (topological proof)",
+"Topology|§25 The Fundamental Theorem of Algebra#^thm-25-1"
+]
+},
+{
+"note": "§47 Integration of Rational Functions by Partial Fractions",
+"line": 50,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "- Both theorems are proved in Linear Algebra: ⟂ (division with a basis of · instead of long division) and ⟂ (existence and uniqueness of the real factorization, from the complex one, since nonreal roots come in conjugate pairs).",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§47 Integration of Rational Functions by Partial Fractions",
+"line": 90,
+"term": "liouville's theorem",
+"count": 1,
+"context": "can be proved by induction on the number of factors of ·. Over · it is proved in ⟂(a), by principal parts and Liouville's theorem (see also the Connections of ⟂); the real form follows by combining the terms at conjugate roots and expandin",
+"targets": [
+"Complex Variables|Liouville's Theorem",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1"
+]
+},
+{
+"note": "§48 Strategy for Integration",
+"line": 177,
+"term": "continuous function",
+"count": 2,
+"context": "## Can We Integrate All Continuous Functions?",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§48 Strategy for Integration",
+"line": 203,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "*That · exists and · is Part 1 of the Fundamental Theorem of Calculus (⟂). Stewart omits the proof that · is not elementary (\"it has been proved\"); it is a theorem of Liouville fr",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§5 Inverse Functions and Logarithms",
+"line": 34,
+"term": "contrapositive",
+"count": 3,
+"context": "> - Rigorous version: an injection, ⟂, with the contrapositive form · that is usually more convenient in proofs. The horizontal-line description is ⟂.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§5 Inverse Functions and Logarithms",
+"line": 241,
+"term": "continuous function",
+"count": 1,
+"context": "> - The logarithm is continuous as the inverse of a strictly monotone continuous function: ⟂, applied to · in ⟂ (Calculus version: ⟂).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§5 Inverse Functions and Logarithms",
+"line": 270,
+"term": "equality of sets",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (Law 1 for the multiple-valued ·, which holds as an equality of sets of values).",
+"targets": [
+"Logic and Proofs|§6 The Language of Set Theory#^def-6-3"
+]
+},
+{
+"note": "§5 Inverse Functions and Logarithms",
+"line": 348,
+"term": "principal value",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (the solutions · of ·, infinitely many for each ·) and ⟂ (the principal value ·, equal to · for ·).",
+"targets": [
+"Complex Variables|§35 The Power Function#^def-35-2"
+]
+},
+{
+"note": "§5 Inverse Functions and Logarithms",
+"line": 535,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "et ·, so · and ·; since ·, in fact ·. In a right triangle with angle ·, opposite side · and hypotenuse ·, the Pythagorean Theorem gives the adjacent side ·. So",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§50 Approximate Integration",
+"line": 64,
+"term": "interior point",
+"count": 2,
+"context": "> since every interior point · is the right end of one subinterval and the left end of the next. When ·, the term · is the area of the tra",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§50 Approximate Integration",
+"line": 201,
+"term": "even and odd functions",
+"count": 1,
+"context": "*Uses:* ⟂ (integrals of even and odd functions)",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^prop-22-7"
+]
+},
+{
+"note": "§50 Approximate Integration",
+"line": 201,
+"term": "integrals of even and odd functions",
+"count": 1,
+"context": "*Uses:* ⟂ (integrals of even and odd functions)",
+"targets": [
+"Fourier Series and PDEs|§7 Arbitrary Period and Half-Range Expansions#^thm-7-3"
+]
+},
+{
+"note": "§51 Improper Integrals",
+"line": 63,
+"term": "principal value",
+"count": 1,
+"context": "> - See also: ⟂ (the same definitions on · and ·, with the Cauchy principal value ⟂) and ⟂ (integrals of rational functions with · evaluated by residues).",
+"targets": [
+"Complex Variables|§35 The Power Function#^def-35-2"
+]
+},
+{
+"note": "§51 Improper Integrals",
+"line": 63,
+"term": "residue",
+"count": 1,
+"context": "ons on · and ·, with the Cauchy principal value ⟂) and ⟂ (integrals of rational functions with · evaluated by residues).",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§51 Improper Integrals",
+"line": 231,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "ced the asymptote and treated the integral as an ordinary one, we would have \"computed\" ·. This is wrong: the Fundamental Theorem of Calculus needs a continuous integrand on ·, and this integral is improper and must be calculated with limits. Whenever",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§51 Improper Integrals",
+"line": 242,
+"term": "continuous function",
+"count": 1,
+"context": "> Suppose that · and · are continuous functions with · for ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 88,
+"term": "continuous function",
+"count": 3,
+"context": "um is a Riemann sum of · for the equal partition of · with sample points ·. Since · is continuous, so is ·; a continuous function is integrable, and then the Riemann sums tend to · for *every* choice of sample points (⟂, ⟂), in particular",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 104,
+"term": "integrable function",
+"count": 1,
+"context": "sis behind the proof: the Mean Value Theorem ⟂; Riemann sums with arbitrary sample points and their limit for integrable functions, ⟂, with continuous functions integrable by ⟂.",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 105,
+"term": "uniform continuity",
+"count": 1,
+"context": "a parametrized curve · follows ⟂. There the two coordinates need two different Mean Value Theorem points, and uniform continuity of · and · closes the gap. Here · itself is the parameter, so one point · suffices.",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 256,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> The integrand · of Definition §52.3 is continuous, because · is. By Part 1 of the Fundamental Theorem of Calculus, the function · is differentiable with derivative ·. Since ·, this is at least ·, with equality exactly when",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 289,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "> Equation (8) is the Pythagorean theorem for the small right triangle with legs · and · whose hypotenuse · runs along the tangent line. For small · th",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§52 Arc Length",
+"line": 289,
+"term": "surface area formula",
+"count": 1,
+"context": "rite ·, then solve (8) as (7) to get Theorem §52.1, or as (9) to get Theorem §52.2. The same · appears in the surface area formulas of ⟂, and for a parametric curve ·, ·, (8) gives · (⟂).",
+"targets": [
+"Multivariable Analysis|Surface Area via the Gram Matrix"
+]
+},
+{
+"note": "§53 Area of a Surface of Revolution",
+"line": 83,
+"term": "surface area formula",
+"count": 1,
+"context": "## The Surface Area Formula",
+"targets": [
+"Multivariable Analysis|Surface Area via the Gram Matrix"
+]
+},
+{
+"note": "§53 Area of a Surface of Revolution",
+"line": 117,
+"term": "mean value theorem",
+"count": 1,
+"context": "mit as (3). Let · be the maximum of · and · the maximum of · on ·; both exist because · is continuous. By the Mean Value Theorem ·, so ·. The total band area therefore differs from (3) by at most",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§53 Area of a Surface of Revolution",
+"line": 206,
+"term": "trace",
+"count": 1,
+"context": "> Formulas 7 and 8 are easy to remember. As the point · of the curve is rotated, it traces a circle whose radius is its distance from the axis: · for the ·-axis, · for the ·-axis. The integrand · or ·",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§54 Applications to Physics and Engineering",
+"line": 319,
+"term": "continuous function",
+"count": 3,
+"context": "moments of the polygonal approximation · are the sums of these. They are Riemann sums (midpoint rule) of the continuous functions · and ·, so as ·",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§54 Applications to Physics and Engineering",
+"line": 333,
+"term": "mean value theorem",
+"count": 1,
+"context": "> - · is the average of · with weight ·. The Weighted Mean Value Theorem ⟂ (with the continuous function · and the weight ·) gives ·: the centroid lies over the base of the region.",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§54 Applications to Physics and Engineering",
+"line": 395,
+"term": "fubini",
+"count": 1,
+"context": "> - These are iterated integrals in disguise: with · a type I region, · and ·, so by Fubini's theorem ⟂, · and ·. That is the definition used for plates of variable density in ⟂.",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§54 Applications to Physics and Engineering",
+"line": 456,
+"term": "torus",
+"count": 2,
+"context": "> [!example] Example §54.5: Volume of a Torus",
+"targets": [
+"Topology|Torus"
+]
+},
+{
+"note": "§55 Applications to Economics and Biology",
+"line": 224,
+"term": "continuous function",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (Riemann sums), ⟂ (continuous functions are integrable)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§56 Probability",
+"line": 63,
+"term": "distribution function",
+"count": 2,
+"context": "> - The rigorous setting: a **distribution function** · is increasing with ·, ·, and a density is a · with ·, so that · where · is continuous: ⟂. The improper in",
+"targets": [
+"Measure Theory|§17 Invariance Properties and Fubini's Theorem#^def-17-4"
+]
+},
+{
+"note": "§57 Modeling with Differential Equations",
+"line": 14,
+"term": "initial value problem",
+"count": 6,
+"context": "ving anything. Then it fixes the general vocabulary: order, solution, general solution, initial condition and initial-value problem.",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§57 Modeling with Differential Equations",
+"line": 115,
+"term": "continuous function",
+"count": 1,
+"context": "> 4. The right side is a continuous function of · that vanishes at ·, so · as ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§57 Modeling with Differential Equations",
+"line": 173,
+"term": "characteristic equation",
+"count": 1,
+"context": "- ODE version: ⟂ (simple harmonic motion: the general solution of ·, also in amplitude–phase form), from the characteristic equation in ⟂; that it contains every solution rests on the uniqueness theorem ⟂, stated there without proof.",
+"targets": [
+"Applied Linear Algebra|Eigenvalues Are the Roots of the Characteristic Equation",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-3",
+"Ordinary Differential Equations|Constant-Coefficient Second-Order Equations",
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4"
+]
+},
+{
+"note": "§58 Direction Fields and Euler's Method",
+"line": 14,
+"term": "initial value problem",
+"count": 8,
+"context": "ight steps turns the same idea into a numerical method, Euler's method, which approximates the solution of an initial-value problem as accurately as we like by taking the step size small.",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§58 Direction Fields and Euler's Method",
+"line": 112,
+"term": "solution curves do not cross",
+"count": 1,
+"context": "lattens as it approaches the line · from below, without crossing it (the line is itself a solution curve, and solution curves do not cross: ⟂).",
+"targets": [
+"Ordinary Differential Equations|§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3"
+]
+},
+{
+"note": "§58 Direction Fields and Euler's Method",
+"line": 195,
+"term": "taylor's theorem",
+"count": 1,
+"context": "> - Why one step is accurate: by Taylor's theorem with ·, · for some · between · and · (⟂). So one step errs by at most a constant times ·; over the · steps ne",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§58 Direction Fields and Euler's Method",
+"line": 196,
+"term": "euler's formula",
+"count": 1,
+"context": "> - ODE version: ⟂ (Euler's formula, also with unequal steps), and ⟂, where for · the error is proved to be at most a constant times ·.",
+"targets": [
+"Complex Variables|§7 Exponential Form#^def-7-2"
+]
+},
+{
+"note": "§58 Direction Fields and Euler's Method",
+"line": 281,
+"term": "separation",
+"count": 1,
+"context": "> For comparison, the exact solution is · (Stewart finds it by separation of variables in Section 9.3, Example 4, in the text of ⟂, and again as a linear equation in ⟂; check: · and ·",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 14,
+"term": "separable",
+"count": 7,
+"context": "on geometrically and numerically. For one class of first-order equations an explicit formula is possible: the separable equations, in which · is a function of · times a function of ·. Moving all ·'s to one side and all ·'s to the",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 35,
+"term": "differential form",
+"count": 4,
+"context": "To solve (1), write it in the **differential form** ·, with all ·'s on one side and all ·'s on the other, and integrate both sides:",
+"targets": [
+"Multivariable Analysis|§21 Introduction to Differential Forms#^def-21-1"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 43,
+"term": "separation",
+"count": 1,
+"context": "> [!theorem] Theorem §59.1: Separation of Variables",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 94,
+"term": "initial value problem",
+"count": 4,
+"context": "> 5. For an initial-value problem · (⟂), substitute · and · to find the constant, and state the interval containing · on which the formula solv",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 189,
+"term": "picard iteration",
+"count": 1,
+"context": "- ODE version: ⟂ (the uniqueness theorem quoted here, for · and · continuous on a rectangle, proved there by Picard iteration) and ⟂ (solution curves do not cross).",
+"targets": [
+"Ordinary Differential Equations|Picard–Lindelöf Theorem"
+]
+},
+{
+"note": "§59 Separable Equations",
+"line": 258,
+"term": "injection",
+"count": 1,
+"context": "able equation. The same reasoning models chemical reactions, the discharge of pollutants into a lake, and the injection of a drug into the bloodstream.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§60 Models for Population Growth",
+"line": 14,
+"term": "separable",
+"count": 4,
+"context": "wo differential equations for a population: the law of natural growth · and the logistic equation ·. Both are separable, so the method of ⟂ solves them explicitly. Natural growth gives exponential functions. The logistic equation",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§60 Models for Population Growth",
+"line": 40,
+"term": "initial value problem",
+"count": 2,
+"context": "> The solution of the initial-value problem",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§61 Linear Equations",
+"line": 14,
+"term": "separable",
+"count": 6,
+"context": "A first-order linear equation · is usually not separable, but it can always be solved. Multiplying by the integrating factor · turns the left side into the derivative",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§61 Linear Equations",
+"line": 25,
+"term": "continuous function",
+"count": 3,
+"context": "> where · and · are continuous functions on a given interval. This is the **standard form**: the coefficient of · is ·, and · and · appear only to the",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§61 Linear Equations",
+"line": 101,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "om; here is why it works. Since · is continuous, it has an antiderivative · (for instance ·, by Part 1 of the Fundamental Theorem of Calculus). By the Chain Rule, · satisfies ·. Hence for every differentiable ·,",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§61 Linear Equations",
+"line": 124,
+"term": "initial value problem",
+"count": 4,
+"context": "> - ODE version: ⟂ (the same integrating factor for ·, ⟂, ⟂), and ⟂ (an initial-value problem has exactly one solution on the whole interval where · and · are continuous).",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§62 Predator-Prey Systems",
+"line": 14,
+"term": "trace",
+"count": 2,
+"context": "hically. Dividing one equation by the other gives a single first-order equation for the curve that the pair · traces in the phase plane, and its direction field shows closed loops around an equilibrium point. Going around a lo",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§62 Predator-Prey Systems",
+"line": 18,
+"term": "exponential growth",
+"count": 1,
+"context": "its) and · the number of predators (wolves) at time ·. Without predators, the ample food supply would support exponential growth of the prey, · with · (⟂, ⟂). Without prey, the predators would die out at a rate proportional to their numbe",
+"targets": [
+"Ordinary Differential Equations|§8 Autonomous Differential Equations and Population Dynamics#^def-8-2"
+]
+},
+{
+"note": "§62 Predator-Prey Systems",
+"line": 36,
+"term": "initial value problem",
+"count": 1,
+"context": "equations, with the Lotka–Volterra equations as the example) and ⟂ (first-order systems, their solutions and initial value problems; a solution traces a trajectory).",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§62 Predator-Prey Systems",
+"line": 159,
+"term": "separable",
+"count": 1,
+"context": "t the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of Proposition §62.1 is separable (⟂; solved by ⟂):",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§62 Predator-Prey Systems",
+"line": 179,
+"term": "bounded set",
+"count": 1,
+"context": "point, so the speed · is bounded below by a positive number on it (a continuous positive function on a closed bounded set), and the solution travels all the way around the loop in a finite time. This is why the populations are peri",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§63 Curves Defined by Parametric Equations",
+"line": 14,
+"term": "parametrization",
+"count": 1,
+"context": "tical Line Test (⟂). Instead, both coordinates are given as functions of a third variable ·, the parameter. A parametrization says more than the curve does: it also says where the point is at each time and in which direction it moves,",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§63 Curves Defined by Parametric Equations",
+"line": 25,
+"term": "trace",
+"count": 1,
+"context": "> called **parametric equations**. Each value of · determines a point · in the plane. As · varies, this point traces out a **parametric curve**.",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§63 Curves Defined by Parametric Equations",
+"line": 169,
+"term": "figure eight",
+"count": 1,
+"context": "rcs in quadrants I and IV make up the right loop, those in quadrants III and II the left loop. The curve is a figure eight lying on its side, passing through the origin twice (at · and ·), with · and ·; · is reached at ·. Since · an",
+"targets": [
+"Topology|Figure eight",
+"Topology|§28 Fundamental Group of Some Surfaces#^def-28-4"
+]
+},
+{
+"note": "§64 Calculus with Parametric Curves",
+"line": 14,
+"term": "surface area formula",
+"count": 1,
+"context": "e gives the slope · as a ratio of two ·-derivatives, and the Substitution Rule turns the area, arc length and surface area formulas of Chapters 5 and 8 into integrals in ·. The arc length formula is also proved for curves that are not graphs",
+"targets": [
+"Multivariable Analysis|Surface Area via the Gram Matrix"
+]
+},
+{
+"note": "§64 Calculus with Parametric Curves",
+"line": 221,
+"term": "triangle inequality",
+"count": 1,
+"context": "> because the left side is the difference of the distances from the origin to · and to ·, and by the triangle inequality this is at most the distance · between the two points. Hence the sum in (4) differs from the Riemann sum · by",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§64 Calculus with Parametric Curves",
+"line": 233,
+"term": "continuous function",
+"count": 1,
+"context": "*Uses:* ⟂ (Formula 8.1.3), ⟂ (length as a limit of polygonal paths), ⟂, ⟂, ⟂, ⟂, ⟂ (Riemann sums of a continuous function); uniform continuity ⟂",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§64 Calculus with Parametric Curves",
+"line": 251,
+"term": "parametrization",
+"count": 1,
+"context": "> twice the circumference, because this parametrization goes around the circle twice. Before using Theorem §64.4, check that · is traversed only once as · runs from",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§64 Calculus with Parametric Curves",
+"line": 334,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> The integrand · in Definition §64.1 is continuous, so by Part 1 of the Fundamental Theorem of Calculus (⟂) · is differentiable with ·.",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§65 Polar Coordinates",
+"line": 88,
+"term": "jacobian",
+"count": 1,
+"context": "> - The map · in 452: it is locally invertible wherever its Jacobian · is nonzero, ⟂ (with its inverse, ⟂), and · is the factor in ·, ⟂. Workhorse example: ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§65 Polar Coordinates",
+"line": 245,
+"term": "figure eight",
+"count": 1,
+"context": "> | lemniscates | ·, · | figure eights |",
+"targets": [
+"Topology|Figure eight",
+"Topology|§28 Fundamental Group of Some Surfaces#^def-28-4"
+]
+},
+{
+"note": "§66 Calculus in Polar Coordinates",
+"line": 37,
+"term": "continuous function",
+"count": 4,
+"context": "> Let · be the region bounded by the polar curve · and the rays · and ·, where · is a positive continuous function and ·. The area of · is",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§66 Calculus in Polar Coordinates",
+"line": 63,
+"term": "extreme value theorem",
+"count": 2,
+"context": "> On · the continuous function · has a minimum · and a maximum · (Extreme Value Theorem, ⟂). The ·th thin region consists of the points · with · and ·. It contains the sector of radius · and is con",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§66 Calculus in Polar Coordinates",
+"line": 75,
+"term": "squeeze theorem",
+"count": 2,
+"context": "n · on ·, so both tend to · as · (⟂ and ⟂, which allows any sample points). Since · does not depend on ·, the Squeeze Theorem for Sequences (⟂) gives ·.",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§66 Calculus in Polar Coordinates",
+"line": 85,
+"term": "change of variables",
+"count": 1,
+"context": "> - In double-integral form the same area is ·, by the change of variables to polar coordinates: ⟂ (and ⟂).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§67 Conic Sections",
+"line": 141,
+"term": "triangle inequality",
+"count": 2,
+"context": "*Uses:* ⟂, distance formula (⟂), triangle inequality",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§68 Conic Sections in Polar Coordinates",
+"line": 14,
+"term": "orbit",
+"count": 6,
+"context": "rix. With the focus at the origin, every conic then has a polar equation · or ·. This is the natural form for orbits, since a planet moves on an ellipse with the sun at a focus (Kepler's First Law), and it gives the closest an",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-3",
+"Group Theory|§27 Orbits#^def-27-1"
+]
+},
+{
+"note": "§69 Sequences",
+"line": 14,
+"term": "squeeze theorem",
+"count": 5,
+"context": "for · to approach a limit · and transfers the tools for limits of functions to sequences: the Limit Laws, the Squeeze Theorem, continuous functions, and l'Hospital's Rule applied to a function that agrees with · at the integers. The on",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§70 Series",
+"line": 14,
+"term": "convergent series",
+"count": 3,
+"context": ", the series diverges), shows by the harmonic series that terms tending to · are not enough, and records that convergent series can be added and multiplied by constants term by term.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§70 Series",
+"line": 297,
+"term": "contrapositive",
+"count": 1,
+"context": "> This is the contrapositive of Theorem §70.4: if the series is not divergent, then it is convergent, and so ·.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§71 The Integral Test and Estimates of Sums",
+"line": 200,
+"term": "convergent series",
+"count": 1,
+"context": "· under and over the curve for ·); written out:* both integrals converge, by the Integral Test applied to the convergent series ·. As in the proof of Theorem §71.1, since · is decreasing on ·, for every ·",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§72 The Comparison Tests",
+"line": 14,
+"term": "convergent series",
+"count": 3,
+"context": "eries (⟂) or a geometric series (⟂). The Direct Comparison Test compares the terms one by one: smaller than a convergent series means convergent, larger than a divergent series means divergent. When the inequality goes the wrong way, the",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§72 The Comparison Tests",
+"line": 14,
+"term": "geometric series",
+"count": 6,
+"context": "unded, so it can be judged by comparing it with a series whose behavior is known, usually a ·-series (⟂) or a geometric series (⟂). The Direct Comparison Test compares the terms one by one: smaller than a convergent series means converg",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§73 Alternating Series and Absolute Convergence",
+"line": 183,
+"term": "squeeze theorem",
+"count": 1,
+"context": "> by the Squeeze Theorem. So the series converges by the Alternating Series Test.",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§73 Alternating Series and Absolute Convergence",
+"line": 253,
+"term": "convergent series",
+"count": 7,
+"context": "> is the difference of two convergent series and is therefore convergent, by Theorem §70.6.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§74 The Ratio and Root Tests",
+"line": 14,
+"term": "geometric series",
+"count": 6,
+"context": "For a geometric series · the ratio of consecutive terms is constantly ·, and the series converges when ·. The Ratio Test says that t",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§75 Strategy for Testing Series",
+"line": 22,
+"term": "geometric series",
+"count": 3,
+"context": "> 3. **Geometric series.** If the series has the form · or ·, it is geometric: convergent if · and divergent if · (⟂). Some algebraic",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§75 Strategy for Testing Series",
+"line": 23,
+"term": "absolute convergence",
+"count": 2,
+"context": "y only to series with positive terms; if · has some negative terms, apply a comparison test to · and test for absolute convergence.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-2",
+"Single Variable Analysis|§14 Series#^def-14-4"
+]
+},
+{
+"note": "§75 Strategy for Testing Series",
+"line": 26,
+"term": "root test",
+"count": 2,
+"context": "> 7. **Root Test.** If · has the form ·, the Root Test (⟂) may be useful.",
+"targets": [
+"Single Variable Analysis|§14 Series#^thm-14-10"
+]
+},
+{
+"note": "§76 Power Series",
+"line": 37,
+"term": "convergent series",
+"count": 1,
+"context": ", with · for all · we get the geometric series ·, which converges when · and diverges when · (⟂): · gives the convergent series ·, and · gives the divergent series ·.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§76 Power Series",
+"line": 37,
+"term": "geometric series",
+"count": 3,
+"context": "For instance, with · for all · we get the geometric series ·, which converges when · and diverges when · (⟂): · gives the convergent series ·, and · gives the divergent",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§76 Power Series",
+"line": 131,
+"term": "absolute convergence",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (convergence at · gives absolute convergence in the disk ·).",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-2",
+"Single Variable Analysis|§14 Series#^def-14-4"
+]
+},
+{
+"note": "§76 Power Series",
+"line": 153,
+"term": "completeness axiom",
+"count": 1,
+"context": "> is not empty. By Lemma §76.1(2) the series diverges if ·, so · for all ·: · is an upper bound for ·. By the Completeness Axiom (⟂), · has a least upper bound ·. Also ·: by Lemma §76.1(1) the series converges at ·, so ·.",
+"targets": [
+"Single Variable Analysis|Completeness Axiom",
+"Single Variable Analysis|Completeness Axiom"
+]
+},
+{
+"note": "§76 Power Series",
+"line": 184,
+"term": "root test",
+"count": 3,
+"context": "atment: ⟂ (the same trichotomy) and ⟂, which also gives a formula for ·: · (Cauchy–Hadamard), proved with the Root Test.",
+"targets": [
+"Single Variable Analysis|§14 Series#^thm-14-10"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 14,
+"term": "geometric series",
+"count": 4,
+"context": "Read backwards, the geometric series · says that the function · *is* a power series on ·. Substituting, multiplying by powers of ·, and above all",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 14,
+"term": "bessel functions",
+"count": 2,
+"context": "tary antiderivative and for approximating functions by polynomials, and some important functions, such as the Bessel functions, are *defined* by power series.",
+"targets": [
+"Fourier Series and PDEs|General Solution of Bessel's Equation"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 68,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "in is the interval of convergence. It can be differentiated and integrated term by term, like a polynomial (**term-by-term differentiation and integration**).",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 95,
+"term": "uniform convergence",
+"count": 1,
+"context": "rem (\"which we won't prove\"). For series centered at · (the general case follows with ·) it is ⟂, proved from uniform convergence on closed subintervals, ⟂.*",
+"targets": [
+"Complex Variables|§69★ Absolute and Uniform Convergence of Power Series#^def-69-2",
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-9",
+"Single Variable Analysis|§24 Uniform Convergence#^def-24-2"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 173,
+"term": "term-by-term integration",
+"count": 1,
+"context": "> - Rigorous treatment of both series: ⟂ (the logarithm) and ⟂ (the arctangent), by the same term-by-term integration.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 176,
+"term": "abel's theorem",
+"count": 1,
+"context": "75). We have shown that it is valid for ·. It is also valid for ·, though this is not easy to prove (it needs Abel's theorem on the continuity of a power series up to an endpoint where it converges; it is not proved in 451 either). At",
+"targets": [
+"Ordinary Differential Equations|Abel's Theorem (Wronskian)",
+"Ordinary Differential Equations|§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8",
+"Ordinary Differential Equations|§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3"
+]
+},
+{
+"note": "§77 Representations of Functions as Power Series",
+"line": 204,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> **(b)** In the Fundamental Theorem of Calculus any antiderivative will do, so use the one from (a) with ·:",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 129,
+"term": "radius of convergence",
+"count": 4,
+"context": "> **(b)** Find the Maclaurin series of · and its radius of convergence.",
+"targets": [
+"Single Variable Analysis|§23 Power Series#^thm-23-2"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 206,
+"term": "fundamental theorem of calculus",
+"count": 3,
+"context": "> (The proof integrates with Part 2 of the Fundamental Theorem of Calculus, so · is taken to be continuous on ·; Stewart uses this tacitly.)",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 244,
+"term": "taylor's theorem",
+"count": 2,
+"context": "> - Rigorous treatment: ⟂ (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no con",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 259,
+"term": "mean value theorem",
+"count": 1,
+"context": "> which extends the Mean Value Theorem (the case ·). Stewart gives the proofs on his website.",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 309,
+"term": "squeeze theorem",
+"count": 2,
+"context": "> By the Squeeze Theorem, ·, and so · (⟂), for all ·. Since · is arbitrary, this holds for all ·, and by Theorem §78.3 · is the sum of",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 425,
+"term": "eigenvalue",
+"count": 1,
+"context": "tting the series (11) at · into the series (16) and (15)), and ⟂ (the complex exponential ·, used for complex eigenvalues of ·).",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 425,
+"term": "complex eigenvalue",
+"count": 1,
+"context": "by splitting the series (11) at · into the series (16) and (15)), and ⟂ (the complex exponential ·, used for complex eigenvalues of ·).",
+"targets": [
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 426,
+"term": "matrix exponential",
+"count": 1,
+"context": "> - ODE version: ⟂ (Euler's formula, motivated by these three series in ⟂) and ⟂ (the matrix exponential, the series (11) with · in place of ·, which converges and satisfies · by ⟂).",
+"targets": [
+"Ordinary Differential Equations|Matrix Exponential Solution"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 427,
+"term": "analytic function",
+"count": 1,
+"context": "- Complex-variables version: ⟂ (the series (11), (15) and (16) for complex ·, proved by Taylor's theorem for analytic functions); splitting (11) at · gives Euler's formula, ⟂.",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-1"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 427,
+"term": "taylor's theorem for analytic functions",
+"count": 1,
+"context": "> - Complex-variables version: ⟂ (the series (11), (15) and (16) for complex ·, proved by Taylor's theorem for analytic functions); splitting (11) at · gives Euler's formula, ⟂.",
+"targets": [
+"Complex Variables|Taylor's Theorem for Analytic Functions"
+]
+},
+{
+"note": "§78 Taylor and Maclaurin Series",
+"line": 451,
+"term": "binomial theorem",
+"count": 1,
+"context": "ative integer, · for · (the numerator contains the factor ·), the series terminates, and (17) is the ordinary Binomial Theorem. At the endpoints the series converges at · if ·, and at both endpoints if ·.",
+"targets": [
+"Logic and Proofs|Binomial Theorem"
+]
+},
+{
+"note": "§79 Applications of Taylor Polynomials",
+"line": 163,
+"term": "bessel functions",
+"count": 1,
+"context": "oximate · well on larger and larger intervals (⟂ and its figure). Calculators and computers evaluate ·, · and Bessel functions this way, typically with a Taylor polynomial modified to spread the error more evenly over an interval.",
+"targets": [
+"Fourier Series and PDEs|General Solution of Bessel's Equation"
+]
+},
+{
+"note": "§8 Calculating Limits Using the Limit Laws",
+"line": 42,
+"term": "triangle inequality",
+"count": 3,
+"context": "get · and · each within · of their limits. Each law needs only the precise definition of a limit (⟂) and the Triangle Inequality · (⟂).",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§80 Three-Dimensional Coordinate Systems",
+"line": 30,
+"term": "cartesian product",
+"count": 1,
+"context": "> The set of all ordered triples is the Cartesian product",
+"targets": [
+"Logic and Proofs|§7 Quantifiers#^def-7-5"
+]
+},
+{
+"note": "§81 Vectors",
+"line": 223,
+"term": "spans",
+"count": 1,
+"context": "> - Matrix version: ⟂ (the same eight properties for column vectors in ·), with linear combinations and spans of such vectors as the next step. The length of Theorem §81.3 in ·: ⟂.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§82 The Dot Product",
+"line": 115,
+"term": "cauchy–schwarz",
+"count": 2,
+"context": "> - Since ·, the theorem gives ·, the Cauchy–Schwarz inequality, ⟂. In · there is no picture to measure angles, and the logic runs the other way: Cauchy–Schwarz i",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§82 The Dot Product",
+"line": 162,
+"term": "zero vector",
+"count": 1,
+"context": "> Two nonzero vectors · and · are **perpendicular** or **orthogonal** if the angle between them is ·. The zero vector · is considered to be perpendicular to all vectors.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-1"
+]
+},
+{
+"note": "§82 The Dot Product",
+"line": 168,
+"term": "orthogonality",
+"count": 1,
+"context": "> [!theorem] Theorem §82.4: Test for Orthogonality",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§82 The Dot Product",
+"line": 314,
+"term": "orthogonal decomposition",
+"count": 1,
+"context": "> - · is the orthogonal projection onto the line ·, ⟂, and · is the orthogonal decomposition of ⟂. The foot · is the point of the line closest to ·: ⟂.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^thm-22-4"
+]
+},
+{
+"note": "§83 The Cross Product",
+"line": 14,
+"term": "parallelepiped",
+"count": 7,
+"context": "either commutative nor associative. The scalar triple product · is a determinant and measures the volume of a parallelepiped. The cross product is the standard tool for normal vectors of planes (⟂), curvature and the binormal vector (",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§83 The Cross Product",
+"line": 402,
+"term": "column operations",
+"count": 1,
+"context": "ion, also of Corollary §83.6: ⟂ (area and volume as · for the matrix with columns the edge vectors, proved by column operations), worked in ⟂.",
+"targets": [
+"Applied Linear Algebra|§21 Properties of Determinants#^cor-21-7"
+]
+},
+{
+"note": "§85 Cylinders and Quadric Surfaces",
+"line": 14,
+"term": "trace",
+"count": 48,
+"context": "quadric surfaces, the graphs of second-degree equations in ·, ·, ·. The tool for understanding them is the **trace**: slice the surface by planes parallel to the coordinate planes and recognize the plane curves (lines, parab",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§85 Cylinders and Quadric Surfaces",
+"line": 88,
+"term": "orthonormal",
+"count": 1,
+"context": "oof. Removing the cross terms ·, ·, · is a rotation of axes: diagonalizing the symmetric quadratic form by an orthonormal basis, ⟂ (the spectral theorem). The linear terms are then removed by completing squares, as in Example §85.5",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§85 Cylinders and Quadric Surfaces",
+"line": 88,
+"term": "orthonormal basis",
+"count": 1,
+"context": "oof. Removing the cross terms ·, ·, · is a rotation of axes: diagonalizing the symmetric quadratic form by an orthonormal basis, ⟂ (the spectral theorem). The linear terms are then removed by completing squares, as in Example §85.5.*",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§85 Cylinders and Quadric Surfaces",
+"line": 91,
+"term": "eigenvector",
+"count": 1,
+"context": "Principal Axes Theorem: an orthogonal change of variable · turns the quadratic part · into ·, with · from the eigenvectors of the symmetric matrix ·), worked in ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§86 Vector Functions and Space Curves",
+"line": 14,
+"term": "trace",
+"count": 1,
+"context": "A vector function assigns to each number · a vector ·. As · varies, the tip of · traces a curve in space, so vector functions are the natural way to describe the path of a moving particle. Limits a",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§86 Vector Functions and Space Curves",
+"line": 136,
+"term": "parametrization",
+"count": 1,
+"context": "2) are **parametric equations of ·**, and · is a **parameter**. A vector function giving · in this way is a **parametrization** of ·.",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§87 Derivatives and Integrals of Vector Functions",
+"line": 14,
+"term": "fundamental theorem of calculus",
+"count": 3,
+"context": "ion of constant length is perpendicular to its derivative. Integrals are also computed componentwise, and the Fundamental Theorem of Calculus holds for vector functions; in ⟂ it recovers position from velocity and velocity from acceleration.",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§87 Derivatives and Integrals of Vector Functions",
+"line": 79,
+"term": "jacobian",
+"count": 1,
+"context": "> - For a plane curve this is the tangent vector · of ⟂. In 452's language, · is the Jacobian (a · matrix) of ·, and Theorem §87.1 says it is computed entry by entry.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§88 Arc Length and Curvature",
+"line": 14,
+"term": "orthonormal",
+"count": 2,
+"context": "of arc length; three formulas compute it in practice. The unit normal · and binormal · complete · to a moving orthonormal frame, which gives the normal and osculating planes and the osculating circle, and torsion measures how fast",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§88 Arc Length and Curvature",
+"line": 14,
+"term": "parametrization",
+"count": 8,
+"context": "a plane. The length is ·, and the arc length function · allows a curve to be reparametrized by arc length, a parametrization that depends only on the curve. Curvature is the rate at which the unit tangent vector turns per unit of arc",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§88 Arc Length and Curvature",
+"line": 42,
+"term": "mean value theorem",
+"count": 2,
+"context": "f (\"it can be shown\"). The proof of the plane case, ⟂, carries over word for word with a third component (the Mean Value Theorem applied to · as well); the same derivation appears in 452 with ⟂.*",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§88 Arc Length and Curvature",
+"line": 138,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> The integrand · of Definition §88.2 is continuous, because · is. So Part 1 of the Fundamental Theorem of Calculus (⟂) gives ·.",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§89 Motion in Space꞉ Velocity and Acceleration",
+"line": 54,
+"term": "parametrization",
+"count": 2,
+"context": "parametrized in many ways, and its geometric properties (arc length, curvature, torsion) do not depend on the parametrization. Velocity, speed and acceleration *do*. Think of the curve as a road and the parametrization as a way of driv",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§89 Motion in Space꞉ Velocity and Acceleration",
+"line": 90,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> · is an antiderivative of · and · an antiderivative of · (Definition §89.1). By the Fundamental Theorem of Calculus for vector functions (⟂), · and ·.",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§89 Motion in Space꞉ Velocity and Acceleration",
+"line": 338,
+"term": "orbit",
+"count": 5,
+"context": "> 1. A planet revolves around the sun in an elliptical orbit with the sun at one focus.",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-3",
+"Group Theory|§27 Orbits#^def-27-1"
+]
+},
+{
+"note": "§9 The Precise Definition of a Limit",
+"line": 14,
+"term": "squeeze theorem",
+"count": 1,
+"context": "of one-sided and infinite limits, and uses the definition to prove the Sum Law. The other Limit Laws and the Squeeze Theorem are proved from this definition in ⟂ (⟂, ⟂).",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§9 The Precise Definition of a Limit",
+"line": 186,
+"term": "triangle inequality",
+"count": 1,
+"context": "wart proves the Sum Law here: if · and ·, then ·, by making · and · each less than · and adding them with the Triangle Inequality. This is the proof of Law 1 given in ⟂, together with the proofs of Laws 2–5 from Stewart's Appendix F.",
+"targets": [
+"Complex Variables|§5 Triangle Inequality#^thm-5-1",
+"Linear Algebra|Triangle inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-17",
+"Measure Theory|§15 The General Lebesgue Integral#^prop-15-3"
+]
+},
+{
+"note": "§90 Functions of Several Variables",
+"line": 14,
+"term": "contour",
+"count": 7,
+"context": "chapter: domain and range, the graph of a function of two variables (a surface in ·), and its level curves (a contour map in the plane). The graph lives one dimension up and the contour map lives in the domain. For a function o",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§90 Functions of Several Variables",
+"line": 138,
+"term": "trace",
+"count": 3,
+"context": "he domain at which · takes the value ·: it shows where the graph of · has height ·. In other words, it is the trace of the graph in the horizontal plane ·, projected down to the ·-plane. Lifting each level curve to its height",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§90 Functions of Several Variables",
+"line": 249,
+"term": "linear functional",
+"count": 2,
+"context": "> - A function · is a linear functional on ·, given by the dot product ⟂; every linear functional on · has this form (the Riesz representation theore",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5",
+"Linear Algebra|§12 Duality#^ladr-3-108",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-39"
+]
+},
+{
+"note": "§90 Functions of Several Variables",
+"line": 249,
+"term": "riesz representation theorem",
+"count": 1,
+"context": "on · is a linear functional on ·, given by the dot product ⟂; every linear functional on · has this form (the Riesz representation theorem in its simplest case).",
+"targets": [
+"Functional Analysis|Riesz Representation Theorem (Hilbert spaces)",
+"Functional Analysis|§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2",
+"Linear Algebra|Riesz representation theorem",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-42"
+]
+},
+{
+"note": "§91 Limits and Continuity",
+"line": 14,
+"term": "squeeze theorem",
+"count": 4,
+"context": ") and existence harder: agreement along every line is not enough, and one needs an estimate, usually with the Squeeze Theorem. Continuity is then defined by direct substitution, and the familiar functions are continuous on their domain",
+"targets": [
+"Single Variable Analysis|Squeeze Theorem",
+"Single Variable Analysis|§8 A Discussion About Proofs#^thm-8-1"
+]
+},
+{
+"note": "§91 Limits and Continuity",
+"line": 145,
+"term": "continuous function",
+"count": 6,
+"context": "er word for word with · replaced by the distance ·; for (2), take ·, since ·. The 452 versions are stated for continuous functions: ⟂–⟂.*",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§92 Partial Derivatives",
+"line": 14,
+"term": "partial differential equations",
+"count": 2,
+"context": "entiation does not matter when the mixed partials are continuous. Partial derivatives are the language of the partial differential equations of physics, such as Laplace's equation and the wave equation.",
+"targets": [
+"Ordinary Differential Equations|§3 Classification of Differential Equations#^def-3-1"
+]
+},
+{
+"note": "§92 Partial Derivatives",
+"line": 139,
+"term": "trace",
+"count": 2,
+"context": "oint · lies on ·. Fixing · restricts attention to the curve · in which the vertical plane · intersects · (the trace of · in that plane). · is the graph of ·, so the slope of its tangent line · at · is ·. Likewise the plane ·",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§92 Partial Derivatives",
+"line": 261,
+"term": "mean value theorem",
+"count": 5,
+"context": "on first and then along · gives approximately ·; grouping them the other way round gives approximately ·. The Mean Value Theorem makes \"approximately\" precise, and continuity lets ·.",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§92 Partial Derivatives",
+"line": 331,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> By the Fundamental Theorem of Calculus, Part 1 (⟂), with the other limit held fixed, and ·:",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§92 Partial Derivatives",
+"line": 357,
+"term": "harmonic function",
+"count": 3,
+"context": "> is **Laplace's equation**, and its solutions are called **harmonic functions**. The three-dimensional Laplace equation is",
+"targets": [
+"Complex Variables|§27★ Harmonic Functions#^def-27-1"
+]
+},
+{
+"note": "§93 Tangent Planes and Linear Approximations",
+"line": 78,
+"term": "contour",
+"count": 2,
+"context": "Zooming in toward ·, the paraboloid looks flatter and flatter and more and more like its tangent plane; on a contour map, the level curves near · look more and more like equally spaced parallel lines, the contour map of a plan",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§93 Tangent Planes and Linear Approximations",
+"line": 144,
+"term": "linear map",
+"count": 2,
+"context": "alue. The function of the remark \"Partial Derivatives Are Not Enough\", doubled, is ⟂, and the derivative as a linear map is ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§93 Tangent Planes and Linear Approximations",
+"line": 166,
+"term": "mean value theorem",
+"count": 4,
+"context": "**First bracket.** The function of one variable · is defined on the interval between · and ·, with ·. By the Mean Value Theorem (⟂; · is differentiable, hence continuous) there is a number · between · and · with ·, that is,",
+"targets": [
+"Multivariable Analysis|§9 Taylor's Theorem for Multivariable Functions#^thm-9-4",
+"Single Variable Analysis|Mean Value Theorem",
+"Single Variable Analysis|§29 The Mean Value Theorem#^thm-29-3"
+]
+},
+{
+"note": "§93 Tangent Planes and Linear Approximations",
+"line": 210,
+"term": "continuous function",
+"count": 1,
+"context": "> Both · and · are continuous functions (sums and products of polynomials and exponentials, ⟂), so · is differentiable by Theorem §93.2. With ·, the",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§94 The Chain Rule",
+"line": 57,
+"term": "continuous function",
+"count": 1,
+"context": "*Uses:* ⟂, ⟂ (differentiable implies continuous), ⟂ (composition with a continuous function)",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§94 The Chain Rule",
+"line": 62,
+"term": "jacobian",
+"count": 1,
+"context": "uity of the partials); hub ⟂. In matrix form it says that the derivative of a composite is the product of the Jacobian matrices (⟂).",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§94 The Chain Rule",
+"line": 119,
+"term": "laplacian",
+"count": 1,
+"context": "> - PDE version: this chain rule, applied twice, gives the Laplacian in polar coordinates, ⟂, and the wave equation in the characteristic coordinates ·, ⟂.",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§94 The Chain Rule",
+"line": 119,
+"term": "laplacian in polar coordinates",
+"count": 1,
+"context": "> - PDE version: this chain rule, applied twice, gives the Laplacian in polar coordinates, ⟂, and the wave equation in the characteristic coordinates ·, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Laplacian in Polar Coordinates"
+]
+},
+{
+"note": "§94 The Chain Rule",
+"line": 264,
+"term": "clairaut",
+"count": 1,
+"context": "> Putting these into (4) and using the equality of the mixed partials (Clairaut's Theorem, ⟂),",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§95 Directional Derivatives and the Gradient Vector",
+"line": 42,
+"term": "contour",
+"count": 3,
+"context": "> On a contour map, · is estimated by an average rate of change: on the weather map, the line through Reno toward the southe",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§95 Directional Derivatives and the Gradient Vector",
+"line": 243,
+"term": "cauchy–schwarz",
+"count": 1,
+"context": "> - This is the equality case of the Cauchy–Schwarz inequality · (⟂), and it holds in · for every ·. The 452 version: ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§95 Directional Derivatives and the Gradient Vector",
+"line": 450,
+"term": "parametrization",
+"count": 1,
+"context": "on of tangent planes, it can be shown\"; the argument is the same one dimension down. If · is a differentiable parametrization of the level curve · with ·, then ·, and the Chain Rule (⟂) gives ·, that is, ·: the gradient is perpendicula",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§95 Directional Derivatives and the Gradient Vector",
+"line": 457,
+"term": "vector field",
+"count": 1,
+"context": "descent. Mathematical software can plot sample gradient vectors ·, each starting at the point ·: a **gradient vector field** (⟂). For ·, superimposed on the contour map of · (hyperbolas), the gradient vectors · point \"uphill\" and cr",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 14,
+"term": "bounded sets",
+"count": 1,
+"context": "oints by the sign of ·. For absolute extreme values, the Extreme Value Theorem guarantees existence on closed bounded sets, and the Closed Interval Method extends to them: compare the values at critical points with the extreme value",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 14,
+"term": "bounded set",
+"count": 5,
+"context": "oints by the sign of ·. For absolute extreme values, the Extreme Value Theorem guarantees existence on closed bounded sets, and the Closed Interval Method extends to them: compare the values at critical points with the extreme value",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 79,
+"term": "trace",
+"count": 2,
+"context": "*The saddle · of Example §96.1(b). Its trace in the plane · is the downward parabola · (red), whose top is the origin; its trace in the plane · is the upw",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 109,
+"term": "clairaut",
+"count": 3,
+"context": "> using · (Clairaut's Theorem, ⟂).",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 143,
+"term": "positive definite",
+"count": 2,
+"context": "s treatment: ⟂, in the language of the Hessian matrix ⟂ and its definiteness ⟂: ·, · says that the Hessian is positive definite, · that it is indefinite. The quadratic expression · is the second-order term of the Taylor expansion, ⟂.",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 144,
+"term": "eigenvalue",
+"count": 1,
+"context": "so: ⟂ (a quadratic form · is positive definite, negative definite or indefinite according to the signs of the eigenvalues of ·; for the Hessian, ·), with the method in ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 173,
+"term": "contour",
+"count": 1,
+"context": "> On a contour map, the level curves near · and · are ovals around the two minima, while near the origin they resemble hyper",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 262,
+"term": "lagrange multipliers",
+"count": 1,
+"context": "e must be a largest volume, and it occurs at a critical point, so it is · m³. The same answer is rederived by Lagrange multipliers in ⟂.",
+"targets": [
+"Multivariable Analysis|Method of Lagrange Multipliers"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 271,
+"term": "boundary points",
+"count": 2,
+"context": "th center · contains points in · and also points not in ·. A **closed set** in · is one that contains all its boundary points, and a **bounded set** is one that is contained within some disk.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 271,
+"term": "closed set",
+"count": 3,
+"context": "set · in · is a point · such that every disk with center · contains points in · and also points not in ·. A **closed set** in · is one that contains all its boundary points, and a **bounded set** is one that is contained within so",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 286,
+"term": "supremum",
+"count": 1,
+"context": "us image of a compact set is compact (⟂), and a compact subset of · is closed and bounded, so it contains its supremum and infimum.*",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 286,
+"term": "infimum",
+"count": 1,
+"context": "compact set is compact (⟂), and a compact subset of · is closed and bounded, so it contains its supremum and infimum.*",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 290,
+"term": "analytic function",
+"count": 1,
+"context": "rsion: ⟂ (the modulus of a continuous complex function on a closed bounded region attains a maximum) and, for analytic functions, ⟂ (that maximum is on the boundary).",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-1"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 292,
+"term": "interior point",
+"count": 1,
+"context": "§96.1, if · has an extreme value at ·, then · is either a critical point of · or a boundary point of · (at an interior point the extreme value is also a local one). This extends the ⟂ of §25.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§96 Maximum and Minimum Values",
+"line": 295,
+"term": "continuous function",
+"count": 1,
+"context": "> To find the absolute maximum and minimum values of a continuous function · on a closed, bounded set ·:",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 14,
+"term": "volume of a box",
+"count": 1,
+"context": "y optimization problems ask for the extreme values of a function · subject to a side condition ·: the largest volume of a box of given surface area, the point of a sphere nearest to a given point. Lagrange's method replaces the elimina",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-108"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 43,
+"term": "implicit function theorem",
+"count": 4,
+"context": "rough the origin perpendicular to ·. Indeed, ·, say · (otherwise exchange the roles of the variables). By the Implicit Function Theorem (⟂), near · the surface · is the graph · of a differentiable function. For any numbers ·, ·, the curve · lies",
+"targets": [
+"Differentiable Manifolds|Implicit Function Theorem (vector-valued)",
+"Multivariable Analysis|Implicit Function Theorem",
+"Multivariable Analysis|§12 The Implicit Function Theorem#^thm-12-1"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 53,
+"term": "eigenvalue",
+"count": 1,
+"context": "> - See also: ⟂ (the extremes of · on the unit sphere are the largest and smallest eigenvalues of ·; the Lagrange condition · reads ·, though 235 proves it without calculus), worked in ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 99,
+"term": "contour",
+"count": 1,
+"context": "these are the highest and lowest points of the curve on the paraboloid · directly above the circle, and on a contour map they are where the level curves of · (ellipses) just touch the circle.",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 223,
+"term": "linearly independent",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (· constraints with linearly independent gradients); \"not zero and not parallel\" is linear independence of two vectors.",
+"targets": [
+"Applied Linear Algebra|§25 Linearly Independent Sets; Bases#^def-25-1",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-15"
+]
+},
+{
+"note": "§97 Lagrange Multipliers",
+"line": 223,
+"term": "linear independence",
+"count": 1,
+"context": "> - Rigorous treatment: ⟂ (· constraints with linearly independent gradients); \"not zero and not parallel\" is linear independence of two vectors.",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 14,
+"term": "continuous function",
+"count": 3,
+"context": "nition is hopeless except in a few cases. Fubini's Theorem gives the practical method: a double integral of a continuous function is an iterated integral, two single integrals done one after the other, in either order. The section also giv",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 90,
+"term": "lebesgue measure",
+"count": 1,
+"context": "> - The volume interpretation in measure theory: for · the Lebesgue measure of the region under the graph equals ·, ⟂ (the Subgraph Theorem).",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 104,
+"term": "uniform continuity",
+"count": 1,
+"context": "wart omits the proof (\"shown in courses on advanced calculus\"). For continuous ·, the one-variable proof from uniform continuity (⟂) carries over word for word to a rectangle; the two-variable theory, including integration over sets bound",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 269,
+"term": "clairaut",
+"count": 1,
+"context": "gives ·. So the order of integration does not matter, much as the order of differentiation does not matter in Clairaut's Theorem (⟂).",
+"targets": [
+"Multivariable Analysis|Schwarz–Clairaut Theorem"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 277,
+"term": "tonelli",
+"count": 1,
+"context": "(continuous · on a rectangle). Hub: ⟂. The Lebesgue versions, for · measurable and for integrable · on ·: ⟂ (Tonelli), ⟂ (Fubini).",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 355,
+"term": "orthogonality",
+"count": 1,
+"context": "> - PDE version: the products · are integrated this way to prove the orthogonality of the eigenfunctions of a rectangle, ⟂.",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 355,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - PDE version: the products · are integrated this way to prove the orthogonality of the eigenfunctions of a rectangle, ⟂.",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§98 Double Integrals Over Rectangles",
+"line": 387,
+"term": "contour",
+"count": 1,
+"context": "idpoint Rule: Stewart's Example 15.1.9 reads the snowfall at the centers of · subrectangles of Colorado off a contour map and finds an average of about · inches.",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§99 Double Integrals Over General Regions",
+"line": 14,
+"term": "fubini",
+"count": 4,
+"context": "For the two kinds of region met in practice, those lying between two graphs ·, · (type I) or ·, · (type II), Fubini's Theorem turns the integral into an iterated integral whose inner limits are functions. The real work is rea",
+"targets": [
+"Multivariable Analysis|Fubini's Theorem"
+]
+},
+{
+"note": "§99 Double Integrals Over General Regions",
+"line": 37,
+"term": "boundary points",
+"count": 1,
+"context": "· is likely to be discontinuous at the boundary points of ·. Nonetheless, if · is continuous on · and the boundary curve of · is \"well behaved\" (in a sense outside",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§99 Double Integrals Over General Regions",
+"line": 40,
+"term": "continuous function",
+"count": 1,
+"context": "> A plane region · is of **type I** if it lies between the graphs of two continuous functions of ·:",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "· 16 Vector Calculus",
+"line": 30,
+"term": "fundamental theorem of calculus",
+"count": 2,
+"context": "*Stewart, Section 16.10.* The main results of Chapter 16 are higher-dimensional versions of the Fundamental Theorem of Calculus. In each, the left side integrates a \"derivative\" over a region, and the right side involves only the values",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "· 16 Vector Calculus",
+"line": 44,
+"term": "conservative",
+"count": 1,
+"context": "- Conservative · path independent · zero around closed paths (⟂, ⟂); tests: · on a simply-connected plane region (⟂), · on ·",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "· 16 Vector Calculus",
+"line": 44,
+"term": "simply connected",
+"count": 1,
+"context": "- Conservative · path independent · zero around closed paths (⟂, ⟂); tests: · on a simply-connected plane region (⟂), · on · (⟂).",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+}
+]

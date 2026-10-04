@@ -1,0 +1,142 @@
+[
+{
+"concept": "partition",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-3]] | Definition §24.3: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "partition",
+"a": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-3]] | Definition §24.3: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "field",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-4]] | Definition §2.4: Field",
+"b": "Group Theory | [[§3 Basic Examples of Groups#^def-3-3]] | Definition §3.3: Field (provisional definition)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "equivalence relation",
+"a": "Measure Theory | [[§11 Borel Sets and Measure Spaces#^def-11-10]] | Definition §11.10: Equivalence Relation",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-1]] | Definition §24.1: Equivalence Relation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-2]] | Definition §2.2: Group",
+"b": "Group Theory | [[§35 The Center#^def-35-2]] | Definition §35.2: $p$-Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-2]] | Definition §2.2: Group",
+"b": "Group Theory | [[§1 The Definition of a Group#^def-1-1]] | Definition §1.1: Group",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-2]] | Definition §2.2: Group",
+"b": "Group Theory | [[§40 Quotient Groups#^thm-40-1]] | Theorem §40.1: $G/N$ Is a Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-2]] | Definition §2.2: Group",
+"b": "Group Theory | [[§8 Invertibility and Unit Groups#^prop-8-3]] | Proposition §8.3: $U_n$ Is a Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-1]] | Definition §21.1: Group",
+"b": "Group Theory | [[§35 The Center#^def-35-2]] | Definition §35.2: $p$-Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-1]] | Definition §21.1: Group",
+"b": "Group Theory | [[§8 Invertibility and Unit Groups#^prop-8-3]] | Proposition §8.3: $U_n$ Is a Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "generator",
+"a": "Topology | [[§24 Covering Spaces#^thm-24-11]] | Theorem §24.11: The Generator of $\\pi_1(S^1)$",
+"b": "Group Theory | [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7]] | Theorem §21.7: Generators of $S_n$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "generator",
+"a": "Topology | [[§24 Covering Spaces#^thm-24-11]] | Theorem §24.11: The Generator of $\\pi_1(S^1)$",
+"b": "Group Theory | [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9]] | Theorem §21.9: Generators of $A_n$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-2]] | Definition §21.2: Subgroup",
+"b": "Group Theory | [[§5 A Zoo of Subgroups#^prop-5-1]] | Proposition §5.1: Subgroups of $\\mathbb{Z}$",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-2]] | Definition §21.2: Subgroup",
+"b": "Group Theory | [[§13 The Symmetric Group S₃#^prop-13-1]] | Proposition §13.1: Subgroups of $S_3$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "normal subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-12]] | Definition §21.12: Normal Subgroup",
+"b": "Group Theory | [[§39 Sources of Normal Subgroups#^prop-39-8]] | Proposition §39.8: Normal Subgroups of $GL_2(\\mathbb{R})$",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "one sided inverse suffice",
+"a": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3]] | Lemma §22.3: A One-Sided Inverse Suffices",
+"b": "Group Theory | [[§2 First Consequences of the Axioms#^prop-2-6]] | Proposition §2.6: One-Sided Inverses Suffice",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "similar matrice",
+"a": "Group Theory | [[§33 Conjugacy Classes#^def-33-3]] | Definition §33.3: Similar Matrices",
+"b": "Applied Linear Algebra | [[§33 The Characteristic Equation#^def-33-3]] | Definition §33.3: Similar Matrices",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "integer power",
+"a": "Group Theory | [[§4 Subgroups#^def-4-2]] | Definition §4.2: Integer Powers",
+"b": "Complex Variables | [[§8 Products and Powers in Exponential Form#^def-8-1]] | Definition §8.1: Integer Powers",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "integer power",
+"a": "Group Theory | [[§4 Subgroups#^def-4-2]] | Definition §4.2: Integer Powers",
+"b": "Complex Variables | [[§34 Some Identities Involving Logarithms#^prop-34-3]] | Proposition §34.3: Integer Powers",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "cauchy theorem",
+"a": "Group Theory | [[§29 The Index and Lagrange's Theorem#^thm-29-6]] | Theorem §29.6: Cauchy's Theorem",
+"b": "Complex Variables | [[§50 Cauchy–Goursat Theorem#^thm-50-2]] | Theorem §50.2: Cauchy's Theorem (f′ Continuous)",
+"a_links_b": false,
+"b_links_a": false
+}
+]

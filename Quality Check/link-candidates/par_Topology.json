@@ -1,0 +1,184 @@
+[
+{
+"concept": "quotient map",
+"a": "Linear Algebra | [[§11 Products and Quotients of Vector Spaces#^ladr-3-104]] | Definition 3.104: Quotient map, π",
+"b": "Topology | [[§12 Quotient Topology#^def-12-1]] | Definition §12.1: Quotient Map",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "quotient map",
+"a": "Topology | [[§12 Quotient Topology#^def-12-1]] | Definition §12.1: Quotient Map",
+"b": "Differentiable Manifolds | [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-2]] | Corollary §14.2: $\\pi$ Is a Quotient Map",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "normal",
+"a": "Linear Algebra | [[§22 Self-Adjoint and Normal Operators#^ladr-7-18]] | Definition 7.18: Normal",
+"b": "Topology | [[§19 Separation Axioms#^def-19-3]] | Definition §19.3: Normal",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subspace",
+"a": "Linear Algebra | [[§3 Subspaces#^ladr-1-33]] | Definition 1.33: Subspace",
+"b": "Topology | [[§17 Local Compactness#^prop-17-2]] | Proposition §17.2: $X$ is a Subspace of $Y$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subspace",
+"a": "Topology | [[§17 Local Compactness#^prop-17-2]] | Proposition §17.2: $X$ is a Subspace of $Y$",
+"b": "Applied Linear Algebra | [[§23 Vector Spaces and Subspaces#^def-23-2]] | Definition §23.2: Subspace",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subspace",
+"a": "Topology | [[§17 Local Compactness#^prop-17-2]] | Proposition §17.2: $X$ is a Subspace of $Y$",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-1]] | Definition §18.1: Subspace of ℝⁿ",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "intermediate value theorem",
+"a": "Topology | [[§14 Connected Subspaces of ℝ#^thm-14-3]] | Theorem §14.3: Intermediate Value Theorem",
+"b": "Calculus | [[§10 Continuity#^thm-10-10]] | Theorem §10.10: The Intermediate Value Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Single Variable Analysis | [[§2 The Set ℚ of Rational Numbers#^def-2-2]] | Definition §2.2: Group",
+"b": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-1]] | Definition §21.1: Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-1]] | Definition §21.1: Group",
+"b": "Group Theory | [[§35 The Center#^def-35-2]] | Definition §35.2: $p$-Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "group",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-1]] | Definition §21.1: Group",
+"b": "Group Theory | [[§8 Invertibility and Unit Groups#^prop-8-3]] | Proposition §8.3: $U_n$ Is a Group",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "generator",
+"a": "Topology | [[§24 Covering Spaces#^thm-24-11]] | Theorem §24.11: The Generator of $\\pi_1(S^1)$",
+"b": "Group Theory | [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7]] | Theorem §21.7: Generators of $S_n$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "generator",
+"a": "Topology | [[§24 Covering Spaces#^thm-24-11]] | Theorem §24.11: The Generator of $\\pi_1(S^1)$",
+"b": "Group Theory | [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9]] | Theorem §21.9: Generators of $A_n$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-2]] | Definition §21.2: Subgroup",
+"b": "Group Theory | [[§5 A Zoo of Subgroups#^prop-5-1]] | Proposition §5.1: Subgroups of $\\mathbb{Z}$",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-2]] | Definition §21.2: Subgroup",
+"b": "Group Theory | [[§13 The Symmetric Group S₃#^prop-13-1]] | Proposition §13.1: Subgroups of $S_3$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "isomorphism",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-4]] | Definition §21.4: Isomorphism",
+"b": "Functional Analysis | [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2]] | Definition §2.2: Isomorphism",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "isomorphism",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-4]] | Definition §21.4: Isomorphism",
+"b": "Applied Linear Algebra | [[§26 Coordinate Systems#^def-26-3]] | Definition §26.3: Isomorphism",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "normal subgroup",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-12]] | Definition §21.12: Normal Subgroup",
+"b": "Group Theory | [[§39 Sources of Normal Subgroups#^prop-39-8]] | Proposition §39.8: Normal Subgroups of $GL_2(\\mathbb{R})$",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "second countable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-3]] | Definition §18.3: Second-Countable",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-5]] | Definition §1.5: Second Countable",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "separable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-5]] | Definition §18.5: Separable",
+"b": "Functional Analysis | [[§25 Sequence and Function Spaces#^prop-25-1]] | Proposition §25.1: $\\ell^p$ is Separable for $1 \\le p < \\infty$",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "separable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-5]] | Definition §18.5: Separable",
+"b": "Functional Analysis | [[§25 Sequence and Function Spaces#^prop-25-4]] | Proposition §25.4: $L^p(E)$ is Separable for $1 \\le p < \\infty$",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "product topology",
+"a": "Topology | [[§4 Product Topology#^def-4-1]] | Definition §4.1: Product Topology on $X \\times Y$",
+"b": "Differentiable Manifolds | [[§3 Subspaces and Products#^def-3-3]] | Definition §3.3: Product Topology",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "topology",
+"a": "Topology | [[§1 Topological Spaces#^def-1-1]] | Definition §1.1: Topology",
+"b": "Differentiable Manifolds | [[§35 The Tangent Bundle#^prop-35-1]] | Proposition §35.1: The Topology of $TM$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§15 Compact Spaces#^def-15-2]] | Definition §15.2: Compact",
+"b": "Differentiable Manifolds | [[§9 Complex Projective Space#^prop-9-2]] | Proposition §9.2: $\\mathbb{CP}^n$ Is Compact",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "compact",
+"a": "Topology | [[§15 Compact Spaces#^def-15-2]] | Definition §15.2: Compact",
+"b": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5]] | Corollary §22.5: $\\mathrm{U}(n)$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§17 Local Compactness#^prop-17-3]] | Proposition §17.3: $Y$ is Compact",
+"b": "Differentiable Manifolds | [[§9 Complex Projective Space#^prop-9-2]] | Proposition §9.2: $\\mathbb{CP}^n$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§17 Local Compactness#^prop-17-3]] | Proposition §17.3: $Y$ is Compact",
+"b": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5]] | Corollary §22.5: $\\mathrm{U}(n)$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+}
+]

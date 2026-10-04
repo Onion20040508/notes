@@ -1,0 +1,1725 @@
+[
+{
+"note": "Cantor set and Cantor function",
+"line": 7,
+"term": "uncountable",
+"count": 3,
+"context": "irst met as a closed set with empty interior in ⟂) and the Cantor function · built on it. The set is compact, uncountable and null, so it separates \"small in measure\" from \"small in cardinality\"; the function is continuous, increas",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Cantor set and Cantor function",
+"line": 7,
+"term": "cardinality",
+"count": 1,
+"context": "on · built on it. The set is compact, uncountable and null, so it separates \"small in measure\" from \"small in cardinality\"; the function is continuous, increasing and has · a.e., yet climbs from · to ·, so it is the standard witnes",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "Cantor set and Cantor function",
+"line": 7,
+"term": "compact",
+"count": 3,
+"context": "set · (first met as a closed set with empty interior in ⟂) and the Cantor function · built on it. The set is compact, uncountable and null, so it separates \"small in measure\" from \"small in cardinality\"; the function is contin",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Cantor set and Cantor function",
+"line": 11,
+"term": "interior point",
+"count": 2,
+"context": "- Compact, no interior points, null and uncountable (⟂)",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "Cantor's Theorem",
+"line": 27,
+"term": "injection",
+"count": 1,
+"context": "ct growth.** x ↦ {x} injects X into 𝒫(X), so |X| < |𝒫(X)|. It is the strict counterpart of the ⟂, which turns injections both ways into a bijection.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Cantor–Bernstein Theorem",
+"line": 25,
+"term": "cardinality",
+"count": 1,
+"context": "writing down a bijection. This is ⟂, applied in HW1 (⟂). The same kind of comparison gives the Cantor set the cardinality 2^ℵ₀ of ℝ (⟂).",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "Cantor–Bernstein Theorem",
+"line": 25,
+"term": "injection",
+"count": 2,
+"context": "- **Used for.** It proves A ∼ B from two injections without writing down a bijection. This is ⟂, applied in HW1 (⟂). The same kind of comparison gives the Cantor",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Continuous Functions of Compact Support are Dense in L¹",
+"line": 30,
+"term": "continuous function",
+"count": 1,
+"context": "- **Uniform vs L¹.** A uniform limit of continuous functions is continuous (⟂, ⟂), so χ_[0,1] is not such a limit. The density holds only for the L¹ distance (and Lᵖ, p <",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Continuous Functions of Compact Support are Dense in L¹",
+"line": 31,
+"term": "compact",
+"count": 1,
+"context": "- **Used for.** It gives ⟂ (§17.2), where g ∈ C_c is uniformly continuous because its support is compact (⟂). That feeds the ⟂ and ⟂. The Lᵖ version is ⟂(iii).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Countable Union of Countable Sets is Countable",
+"line": 38,
+"term": "closure",
+"count": 1,
+"context": "- **Technique.** The “product + union closure” step of ⟂. MATH 451 proves ℚ countable by a diagonal listing instead (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Egorov's Theorem",
+"line": 30,
+"term": "geometric series",
+"count": 1,
+"context": "ll. ⟂ then gives an ℓ_j for which this set has measure < δ/2ʲ. E_δ is the union of these sets over j, and the geometric series bounds its measure by δ.",
+"targets": [
+"Single Variable Analysis|Geometric series"
+]
+},
+{
+"note": "Fatou's Lemma",
+"line": 34,
+"term": "subsequence",
+"count": 1,
+"context": "- **Used for.** The ⟂, via the dominated and ⟂ Fatou lemmas. In ⟂ it passes from an a.e. convergent subsequence to Lᵖ convergence. In ⟂ it bounds ∫f′ through the difference quotients n(f(x + 1/n) − f(x)).",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "Fubini's Theorem (Lebesgue)",
+"line": 26,
+"term": "uniform continuity",
+"count": 1,
+"context": "MATH 452 ⟂ (452 §15.8) is for continuous f on a rectangle, extended to ⟂, and is proved with Riemann sums and uniform continuity. Here f is only integrable on ℝᵖ × ℝ^q, the slices are integrable only for a.e. x, and Jordan content is repl",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "Fubini's Theorem (Lebesgue)",
+"line": 26,
+"term": "riemann sum",
+"count": 1,
+"context": "Lebesgue.** The MATH 452 ⟂ (452 §15.8) is for continuous f on a rectangle, extended to ⟂, and is proved with Riemann sums and uniform continuity. Here f is only integrable on ℝᵖ × ℝ^q, the slices are integrable only for a.e. x, and",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "Hölder's Inequality",
+"line": 34,
+"term": "continuous function",
+"count": 1,
+"context": "a.** p = p′ = 2 is the ⟂ (LADR 6.14) for the L² inner product ⟨f, g⟩ = ∫fg (⟂). Its Riemann-integral form for continuous functions is ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Inner Regularity of Lebesgue Measure",
+"line": 29,
+"term": "compact",
+"count": 3,
+"context": "- **Compactness.** When m(E) < ∞, cutting off by large cubes makes F bounded (⟂), hence compact by ⟂. Finite subcovers then apply (⟂).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Inner Regularity of Lebesgue Measure",
+"line": 29,
+"term": "compactness",
+"count": 1,
+"context": "- **Compactness.** When m(E) < ∞, cutting off by large cubes makes F bounded (⟂), hence compact by ⟂. Finite subcovers then a",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Lusin's Theorem",
+"line": 39,
+"term": "closed subsets",
+"count": 1,
+"context": "continuous at points of F. For example, the Dirichlet function χ_ℚ is nowhere continuous (⟂), but it is 0 on closed subsets of the irrationals of measure close to 1. By Tietze (⟂), f restricted to F extends continuously to ℝⁿ.",
+"targets": [
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-5"
+]
+},
+{
+"note": "Lusin's Theorem",
+"line": 39,
+"term": "closed subset",
+"count": 1,
+"context": "continuous at points of F. For example, the Dirichlet function χ_ℚ is nowhere continuous (⟂), but it is 0 on closed subsets of the irrationals of measure close to 1. By Tietze (⟂), f restricted to F extends continuously to ℝⁿ.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "Lusin's Theorem",
+"line": 39,
+"term": "dirichlet",
+"count": 1,
+"context": "F” means f restricted to F is continuous in the ⟂, not that f is continuous at points of F. For example, the Dirichlet function χ_ℚ is nowhere continuous (⟂), but it is 0 on closed subsets of the irrationals of measure close to",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 18,
+"term": "injection",
+"count": 4,
+"context": "> - (ii) **Bijection/injection method**: Construct an explicit ⟂ · or a ⟂ · where · is countable.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 19,
+"term": "closure",
+"count": 1,
+"context": "> - (iii) **Product + union closure**: Use that · is countable if · are countable (⟂), and · is countable if each · is countable (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 31,
+"term": "uncountable",
+"count": 7,
+"context": "> - Contrast: infinite binary sequences are uncountable, ⟂.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 125,
+"term": "cardinality",
+"count": 2,
+"context": "## Technique 7: Cardinality/Counting Arguments",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 132,
+"term": "compactness",
+"count": 1,
+"context": "> - (iii) **Heine–Borel + compactness**: Reduce infinite problems to finite ones via the finite intersection property. For a nested sequence of non",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 143,
+"term": "closed sets",
+"count": 1,
+"context": "> - Finite intersection property in Topology: ⟂, nested closed sets ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 150,
+"term": "continuous function",
+"count": 2,
+"context": "> - (i) **Continuous functions**: If · is continuous on a measurable domain ·, then · is measurable (⟂).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 162,
+"term": "supremum",
+"count": 2,
+"context": "> - **HW4 P6**: Vitali-set counterexample for uncountable supremum.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 238,
+"term": "monotone sequences",
+"count": 1,
+"context": "## Technique 13: Shift-and-Subtract for Monotone Sequences",
+"targets": [
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 240,
+"term": "integrable function",
+"count": 1,
+"context": "ems (⟂, ⟂) require non-negative functions. When dealing with decreasing or signed sequences, subtract a known integrable function to reduce to the non-negative increasing case.",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 258,
+"term": "pointwise convergence",
+"count": 1,
+"context": "To show continuity (or differentiability) of · in the parameter ·: take ·, verify pointwise convergence · for each ·, find a dominating function · uniform in ·, and apply ⟂.",
+"targets": [
+"Single Variable Analysis|§24 Uniform Convergence#^def-24-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 274,
+"term": "dense",
+"count": 1,
+"context": "To prove a result for all ·: first prove it for a “nice” dense subclass (step functions, ·, or simple functions; ⟂, ⟂, ⟂), then extend to all of · via the density · and the",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 332,
+"term": "convergent series",
+"count": 1,
+"context": "ite-measure set so · for all · but · (⟂). For “· must be a.e. bounded”: build · where · on ·, ensuring ·. The convergent series · makes ·; the divergent series · makes ·.",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 376,
+"term": "uniform continuity",
+"count": 1,
+"context": "> - AC compared with uniform continuity: ⟂.",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "Measure Theory Problem-Solving Techniques",
+"line": 389,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "> - **HW11 P4**: Term-by-term differentiation of monotone series (same MCT swap, but the conclusion is · rather than AC membership).",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "Monotone Convergence Theorem (Lebesgue)",
+"line": 41,
+"term": "monotone sequences",
+"count": 1,
+"context": "- **Not the 451 theorem.** The MATH 451 ⟂ says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step",
+"targets": [
+"Single Variable Analysis|§10 Monotone Sequences and Cauchy Sequences#^def-10-1"
+]
+},
+{
+"note": "Monotone Convergence Theorem (Lebesgue)",
+"line": 43,
+"term": "integrable function",
+"count": 1,
+"context": "- **Riemann vs Lebesgue.** Riemann integrable functions are not closed under monotone limits: indicators of finite sets of rationals increase to the Dirichlet functi",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Monotone Convergence Theorem (Lebesgue)",
+"line": 43,
+"term": "integrable functions",
+"count": 1,
+"context": "- **Riemann vs Lebesgue.** Riemann integrable functions are not closed under monotone limits: indicators of finite sets of rationals increase to the Dirichlet functi",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "Monotone Convergence Theorem (Lebesgue)",
+"line": 43,
+"term": "dirichlet",
+"count": 1,
+"context": "grable functions are not closed under monotone limits: indicators of finite sets of rationals increase to the Dirichlet function (⟂, ⟂). MATH 451 exchanges limit and integral only under uniform convergence (⟂).",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Monotone Convergence Theorem (Lebesgue)",
+"line": 44,
+"term": "closure",
+"count": 1,
+"context": "- **Chain.** MCT → ⟂ → ⟂. With the ⟂ it gives ⟂ (§14.8) and the ⟂ (§14.12), and it gives ⟂ its closure under increasing limits. It is used in ⟂ and ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Open Sets in ℝ are Countable Unions of Disjoint Open Intervals",
+"line": 29,
+"term": "second countable",
+"count": 1,
+"context": "components of O, since ⟂. Countability comes from a rational in each interval, the same device that makes ℝⁿ second countable and hence Lindelöf (⟂, ⟂). MATH 451 states the result without proof (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "Open Sets in ℝ are Countable Unions of Disjoint Open Intervals",
+"line": 29,
+"term": "connected component",
+"count": 1,
+"context": "- **Topology.** The intervals are the connected components of O, since ⟂. Countability comes from a rational in each interval, the same device that makes ℝⁿ second coun",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-8"
+]
+},
+{
+"note": "Rationals ℚ",
+"line": 7,
+"term": "dense",
+"count": 1,
+"context": "The rationals · (and ·): countable, so a null set, yet dense, so they meet every interval. The tension between these two facts drives the course: their indicator on · is",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "Rationals ℚ",
+"line": 7,
+"term": "dirichlet",
+"count": 5,
+"context": "they meet every interval. The tension between these two facts drives the course: their indicator on · is the Dirichlet function (see ⟂ for MATH 451), which Riemann cannot integrate but Lebesgue integrates to ·, and rational cent",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Rationals ℚ",
+"line": 15,
+"term": "integrable function",
+"count": 2,
+"context": "- Riemann integrable functions are not closed under pointwise limits (⟂)",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Rationals ℚ",
+"line": 15,
+"term": "integrable functions",
+"count": 2,
+"context": "- Riemann integrable functions are not closed under pointwise limits (⟂)",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "Rationals ℚ",
+"line": 20,
+"term": "separable",
+"count": 2,
+"context": "- · makes · separable (⟂)",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Riemann Integrable Implies Lebesgue Integrable",
+"line": 31,
+"term": "completion",
+"count": 1,
+"context": "- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-4"
+]
+},
+{
+"note": "Riemann Integrable Implies Lebesgue Integrable",
+"line": 35,
+"term": "dirichlet",
+"count": 1,
+"context": "- **Converse fails.** The Dirichlet function on [0, 1] is not Riemann integrable (⟂, ⟂), but it is 0 a.e., so its Lebesgue integral is 0.",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 31,
+"term": "completion",
+"count": 1,
+"context": "- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-4"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 34,
+"term": "subsequence",
+"count": 4,
+"context": "- **Proof idea.** A Cauchy sequence has a subsequence whose consecutive differences have summable Lᵖ norms. By the absolute series test (⟂, ⟂), the subsequence con",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 35,
+"term": "absolutely convergent",
+"count": 1,
+"context": "- **Chain.** Hölder → ⟂ → Riesz–Fischer. The engine is “absolutely convergent series converge”, built on the ⟂ (⟂ for p = 1). This is the Lᵖ analogue of ⟂, and in a normed space it is equ",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-2"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 35,
+"term": "convergent series",
+"count": 1,
+"context": "- **Chain.** Hölder → ⟂ → Riesz–Fischer. The engine is “absolutely convergent series converge”, built on the ⟂ (⟂ for p = 1). This is the Lᵖ analogue of ⟂, and in a normed space it is equivalent",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 36,
+"term": "integrable function",
+"count": 1,
+"context": "- **Riemann vs Lebesgue.** Lᵖ is complete like ℝⁿ (⟂). The Riemann integrable functions with the L¹ distance are not: min(n, x^(−1/2)) is L¹-Cauchy on (0, 1] with an unbounded limit. For p = 2, L²",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "Riesz–Fischer Theorem",
+"line": 36,
+"term": "integrable functions",
+"count": 1,
+"context": "- **Riemann vs Lebesgue.** Lᵖ is complete like ℝⁿ (⟂). The Riemann integrable functions with the L¹ distance are not: min(n, x^(−1/2)) is L¹-Cauchy on (0, 1] with an unbounded limit. For p = 2, L²",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "The Vitali Set is Not Measurable",
+"line": 26,
+"term": "equivalence class",
+"count": 1,
+"context": "- **Linear algebra.** The equivalence classes are the cosets x + ℚ of ℚ in ℝ, viewed as a ℚ-vector space. Such translates are equal or disjoint (⟂), and V",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-7",
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-2",
+"Logic and Proofs|§22 Partitions and Equivalence Relations#^def-22-4"
+]
+},
+{
+"note": "The Vitali Set is Not Measurable",
+"line": 26,
+"term": "cosets",
+"count": 1,
+"context": "- **Linear algebra.** The equivalence classes are the cosets x + ℚ of ℚ in ℝ, viewed as a ℚ-vector space. Such translates are equal or disjoint (⟂), and V picks one point",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "The Vitali Set is Not Measurable",
+"line": 27,
+"term": "supremum",
+"count": 1,
+"context": "- **Counterexamples.** ⟂ gives three: χ_V is not measurable, a supremum of uncountably many measurable functions need not be measurable, and (−∞, 0) ∪ V fails the Carathéodory crite",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "Tonelli's Theorem",
+"line": 32,
+"term": "closure",
+"count": 1,
+"context": "- **Proof idea.** Show that the ⟂ contains every nonnegative measurable f by climbing, using the closure properties of ⟂. The steps are: rectangles; open sets as disjoint unions of dyadic cubes (⟂); G_δ sets as dec",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "Vitali Covering Theorem",
+"line": 26,
+"term": "compact",
+"count": 1,
+"context": "- **Compare compactness.** ⟂ (§6.4; ⟂) extracts a finite subcover of a compact set, and the intervals may overlap. Vitali needs no compactness and extracts finitely many disjoint intervals",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Vitali Covering Theorem",
+"line": 26,
+"term": "compactness",
+"count": 2,
+"context": "- **Compare compactness.** ⟂ (§6.4; ⟂) extracts a finite subcover of a compact set, and the intervals may overlap. Vitali needs no co",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Vitali set",
+"line": 18,
+"term": "uncountable",
+"count": 2,
+"context": "- The universal counterexample: · and uncountable suprema (⟂)",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§10 Lebesgue Measurable Sets",
+"line": 168,
+"term": "uncountable",
+"count": 2,
+"context": "> We avoid uncountable unions of sets because uncountable sums make no sense in general.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 122,
+"term": "cardinality",
+"count": 3,
+"context": "> - **Counting measure:** · where · (cardinality) if · is finite, and · if · is infinite.",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 246,
+"term": "closed sets",
+"count": 5,
+"context": "> - All open and closed sets",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 408,
+"term": "compact",
+"count": 2,
+"context": "us the part of · outside · — can be made to have measure ·. In the proof, · comes from a finite subcover of a compact ·.*",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 437,
+"term": "closed subset",
+"count": 1,
+"context": "> Hence · is a bounded closed subset of · with ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 709,
+"term": "linear map",
+"count": 1,
+"context": "> - Integral version: ⟂; for invertible linear maps instead of translations: ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 754,
+"term": "subgroup",
+"count": 1,
+"context": "> - The classes are the cosets x + ℚ of the subgroup ℚ of (ℝ, +), cut down to [0, 1], and cosets partition a group: ⟂.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 754,
+"term": "cosets",
+"count": 2,
+"context": "> - The classes are the cosets x + ℚ of the subgroup ℚ of (ℝ, +), cut down to [0, 1], and cosets partition a group: ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 834,
+"term": "orthonormal",
+"count": 1,
+"context": "of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): ⟂.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 834,
+"term": "hahn–banach",
+"count": 1,
+"context": "> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): ⟂.",
+"targets": [
+"Functional Analysis|§4 Statement and Motivation#^thm-4-2"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 834,
+"term": "zorn",
+"count": 1,
+"context": "> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): ⟂.",
+"targets": [
+"Functional Analysis|Zorn's Lemma"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 864,
+"term": "interior point",
+"count": 2,
+"context": "> 2. · has no interior points.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 866,
+"term": "uncountable",
+"count": 3,
+"context": "> 4. · is uncountable.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§11 Borel Sets and Measure Spaces",
+"line": 919,
+"term": "comparing cardinalities",
+"count": 1,
+"context": "> - Cardinality ·: ⟂ (Ex. §4.1); comparing cardinalities: ⟂ (§2.1).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-3"
+]
+},
+{
+"note": "§12 Measurable Functions",
+"line": 118,
+"term": "dirichlet",
+"count": 1,
+"context": "> - The Dirichlet function · is measurable (as · is countable, hence null) though not Riemann integrable: ⟂, ⟂.",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§12 Measurable Functions",
+"line": 392,
+"term": "reciprocals and quotients",
+"count": 1,
+"context": "## Reciprocals and Quotients of Measurable Functions",
+"targets": [
+"Applied Linear Algebra|§53 Complex Numbers#^prop-53-4"
+]
+},
+{
+"note": "§12 Measurable Functions",
+"line": 594,
+"term": "compact",
+"count": 2,
+"context": "> We say · is **compactly supported** if · is compact (bounded and closed in ·, by ⟂). Equivalently, · outside some bounded closed set.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§12 Measurable Functions",
+"line": 600,
+"term": "dense",
+"count": 1,
+"context": "> - Compactly supported continuous functions are dense in ·: ⟂.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§13 Egorov's and Lusin's Theorems",
+"line": 131,
+"term": "compact",
+"count": 2,
+"context": "> [!theorem] Lemma §13.2: Distance Between Disjoint Compact Sets",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§13 Egorov's and Lusin's Theorems",
+"line": 160,
+"term": "infimum",
+"count": 1,
+"context": "*Lemma §13.2. Left: for disjoint compact ·, · the infimum of distances is attained at some ·, · (by Bolzano–Weierstrass), so ·. Right: without boundedness this fails.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§13 Egorov's and Lusin's Theorems",
+"line": 160,
+"term": "closed sets",
+"count": 1,
+"context": "distances is attained at some ·, · (by Bolzano–Weierstrass), so ·. Right: without boundedness this fails. The closed sets · (a ray of the ·-axis) and · (a branch of a hyperbola) are disjoint, but the gap between them (red) shrinks",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§13 Egorov's and Lusin's Theorems",
+"line": 163,
+"term": "metric spaces",
+"count": 2,
+"context": "> - Same compactness-via-sequences mechanism in general metric spaces: ⟂, and the uniform-radius statement ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 29,
+"term": "riemann sum",
+"count": 1,
+"context": "> - For · a step function on · this is a Riemann sum: ⟂, ⟂.",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 144,
+"term": "supremum",
+"count": 13,
+"context": "*One admissible · in the supremum. The simple function · (blue) takes finitely many values · on disjoint sets ·, and a level set need not be an",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 296,
+"term": "dirichlet",
+"count": 1,
+"context": "> - The Riemann integral has no such theorem: ⟂ (increasing · Dirichlet function). Riemann-side exchange of limit and integral needs uniform convergence: ⟂.",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 387,
+"term": "integrable function",
+"count": 1,
+"context": "> - Riemann counterpart: ⟂; extended to signed integrable functions in ⟂.",
+"targets": [
+"Multivariable Analysis|§15 Multivariable Integration#^def-15-10"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 387,
+"term": "integrable functions",
+"count": 1,
+"context": "> - Riemann counterpart: ⟂; extended to signed integrable functions in ⟂.",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 484,
+"term": "term-by-term integration",
+"count": 1,
+"context": "> - Contrast with MATH 451, where term-by-term integration of a series needs uniform convergence (⟂, e.g. via the ⟂).",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 630,
+"term": "infimum",
+"count": 3,
+"context": "> - · for all · (as · increases, the infimum is taken over fewer terms).",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 693,
+"term": "pigeonhole principle",
+"count": 1,
+"context": "> Since ·, by the pigeonhole principle there exists · with ·.",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "§14 The Lebesgue Integral for Simple Functions",
+"line": 693,
+"term": "pigeonhole",
+"count": 1,
+"context": "> Since ·, by the pigeonhole principle there exists · with ·.",
+"targets": [
+"Logic and Proofs|Pigeonhole Principle"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 46,
+"term": "conditionally convergent",
+"count": 1,
+"context": "th MATH 451, where · Riemann integrable does not follow from the definition but must be proved (⟂), and where conditionally convergent improper integrals exist (⟂); the Lebesgue integral is an *absolute* integral.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-3"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 301,
+"term": "supremum",
+"count": 3,
+"context": "> Define ·, so that ·. Note that · (the supremum is taken over fewer terms as · increases).",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 382,
+"term": "fourier integral",
+"count": 1,
+"context": "> - Used in PDEs: differentiation under the integral sign, which shows that the Fourier-integral solution of the semi-infinite rod satisfies the heat equation, ⟂, and passes · through the Laplace transform,",
+"targets": [
+"Fourier Series and PDEs|§14 Fourier Integral#^def-14-1"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 403,
+"term": "integrable functions",
+"count": 2,
+"context": "> - Why a new integral was needed for such theorems: ⟂ (Riemann integrable functions are not closed under pointwise limits).",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 477,
+"term": "term-by-term integration",
+"count": 1,
+"context": "> - MATH 451 analogue: the ⟂ (451 §25.3) gives term-by-term integration from ·; here · suffices.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 488,
+"term": "dense",
+"count": 1,
+"context": "> - MATH 451 example: ⟂. Step functions are dense in ·: ⟂.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 572,
+"term": "infimum",
+"count": 1,
+"context": "*The proof with · (dyadic intervals of length ·): the lower step function · (blue, the infimum on each interval) and the upper step function · (red, the supremum) trap ·. The gray area is ·, the gap betwe",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§15 The General Lebesgue Integral",
+"line": 575,
+"term": "dirichlet",
+"count": 1,
+"context": "> - The converse fails: the Dirichlet function (⟂, ⟂) is not Riemann integrable but equals · a.e., so its Lebesgue integral is · (⟂(ii)).",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 145,
+"term": "metric spaces",
+"count": 1,
+"context": "> - Metric spaces in MATH 451: ⟂; normed · metric in general: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 150,
+"term": "dense",
+"count": 1,
+"context": "> [!theorem] Theorem §16.5: Simple Functions are Dense in ·",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 200,
+"term": "bessel's inequality",
+"count": 1,
+"context": "ation, then approximate); its case of sectionally continuous functions on an interval is ⟂ (proved there from Bessel's inequality), and it is one of the two analytic facts behind the Fourier integral theorem, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§11★ Mean Error and Convergence in Mean#^thm-11-3",
+"Functional Analysis|Bessel's Inequality",
+"Functional Analysis|§24 Orthonormal Sets and Bases#^thm-24-5",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-26"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 200,
+"term": "continuous function",
+"count": 7,
+"context": "iemann–Lebesgue lemma (check step functions by direct integration, then approximate); its case of sectionally continuous functions on an interval is ⟂ (proved there from Bessel's inequality), and it is one of the two analytic facts behind t",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 200,
+"term": "sectionally continuous function",
+"count": 1,
+"context": "ute to the Riemann–Lebesgue lemma (check step functions by direct integration, then approximate); its case of sectionally continuous functions on an interval is ⟂ (proved there from Bessel's inequality), and it is one of the two analytic facts behind t",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^def-8-3"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 200,
+"term": "fourier integral theorem",
+"count": 1,
+"context": "an interval is ⟂ (proved there from Bessel's inequality), and it is one of the two analytic facts behind the Fourier integral theorem, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Fourier Integral Theorem"
+]
+},
+{
+"note": "§16 The L¹ Space and Density Theorems",
+"line": 204,
+"term": "compact",
+"count": 3,
+"context": "Recall (⟂): a function · is **compactly supported** if · is compact (i.e., ⟂ in ·). Equivalently, · outside some large ball. We write · for the space of compactly supported cont",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 66,
+"term": "jacobian",
+"count": 1,
+"context": "> - The Riemann analogue is the translation · in the ⟂ (452), whose Jacobian is ·.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 81,
+"term": "continuous function",
+"count": 3,
+"context": "> **Step 1: Compactly supported continuous functions.** Assume · is compactly supported and continuous on ·, with · for some ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 121,
+"term": "compactness",
+"count": 1,
+"context": "> - Uniform continuity on a compact set is the MATH 451 fact ⟂ in one variable; the · version comes from compactness (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 144,
+"term": "closure",
+"count": 4,
+"context": "> - Proved below (⟂) through the closure properties of the ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 146,
+"term": "convolution theorem",
+"count": 2,
+"context": "> - Used in ODEs: an absolute bound on the wedge · makes the order of integration reversible in the convolution theorem for Laplace transforms, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Convolution Theorem for the Laplace Transform"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 314,
+"term": "fourier integral",
+"count": 1,
+"context": "> - Used in PDEs: reversing the order of integration turns the Fourier-integral solution of the infinite rod into heat-kernel form, ⟂; it also gives the convolution step when the heat equat",
+"targets": [
+"Fourier Series and PDEs|§14 Fourier Integral#^def-14-1"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 314,
+"term": "heat kernel",
+"count": 1,
+"context": "Used in PDEs: reversing the order of integration turns the Fourier-integral solution of the infinite rod into heat-kernel form, ⟂; it also gives the convolution step when the heat equation is solved by Fourier transform, ⟂, and the",
+"targets": [
+"Fourier Series and PDEs|Heat Kernel Solution of the Infinite Rod"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 347,
+"term": "closed sets",
+"count": 1,
+"context": "> **Step 1: Decomposition.** For any closed ·, write ·, a countable union of bounded closed sets. For any measurable ·, this gives ·, where each · is bounded and closed with ·, and · (⟂).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§17 Invariance Properties and Fubini's Theorem",
+"line": 497,
+"term": "dense",
+"count": 1,
+"context": "the factors exchanged) is measurable for a.e. ·. For the remaining ·, choose such good · (the good values are dense) and use ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 138,
+"term": "compactness",
+"count": 1,
+"context": "> - Compare the compactness arguments of ⟂ (§6.4): there a finite subcover, here finitely many *disjoint* intervals covering all but a sm",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 169,
+"term": "decreasing functions",
+"count": 2,
+"context": "> So ·. Similarly for decreasing functions.",
+"targets": [
+"Calculus|§1 Four Ways to Represent a Function#^def-1-8"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 194,
+"term": "continuous function",
+"count": 1,
+"context": "> [!example] Example §18.3: A Continuous Function Not in BV",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 230,
+"term": "supremum",
+"count": 3,
+"context": "> Taking the supremum over ·: ·.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 582,
+"term": "uncountable",
+"count": 1,
+"context": "*Cantor set** · (⟂) is obtained by repeatedly removing middle thirds: · where ·, ·, etc. The set · is closed, uncountable, and has · (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 626,
+"term": "compact",
+"count": 4,
+"context": "niform continuity. The converse is false: the Cantor function · is uniformly continuous on · (continuous on a compact set; ⟂) but *not* absolutely continuous — the Cantor set · has ·, so it can be covered by disjoint intervals",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 758,
+"term": "power series",
+"count": 1,
+"context": "> - MATH 451 counterpart for power series, where uniform convergence does the work: ⟂ (451 §26.4).",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 905,
+"term": "linear map",
+"count": 8,
+"context": "## Measurability Under Continuous and Linear Maps",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 941,
+"term": "linear subspace",
+"count": 1,
+"context": "> **Case 1: · is not invertible.** Then · (⟂), so · is a proper linear subspace of · (dimension ·). A ·-dimensional subspace of · with · has ·-dimensional Lebesgue measure zero (it is conta",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-2"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 945,
+"term": "elementary row operations",
+"count": 1,
+"context": "> *Measure of parallelotopes.* Factor · into elementary row operations (which generate all invertible linear maps): scaling one coordinate by · multiplies volume by · and determina",
+"targets": [
+"Applied Linear Algebra|§1 Systems of Linear Equations#^def-1-5"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 945,
+"term": "row operations",
+"count": 1,
+"context": "> *Measure of parallelotopes.* Factor · into elementary row operations (which generate all invertible linear maps): scaling one coordinate by · multiplies volume by · and determina",
+"targets": [
+"Applied Linear Algebra|§21 Properties of Determinants#^thm-21-1"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 960,
+"term": "singular values",
+"count": 1,
+"context": "e formula · is ⟂ (a linear map scales volume by the absolute value of its determinant), which LADR proves via singular values rather than elementary operations.",
+"targets": [
+"Applied Linear Algebra|§51★ The Singular Value Decomposition#^def-51-1",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-65"
+]
+},
+{
+"note": "§18 Differentiation Theory",
+"line": 1057,
+"term": "subsequence",
+"count": 1,
+"context": "e exists a sequence · such that · pointwise a.e. (every ·-convergent sequence has a pointwise a.e. convergent subsequence; ⟂).",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 13,
+"term": "vector addition",
+"count": 1,
+"context": "> A set · is called a **linear space** (or ⟂) over · if for all · and ·, we have · (with the usual axioms of vector addition and scalar multiplication).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-2",
+"Calculus|§81 Vectors#^def-81-2"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 151,
+"term": "supremum",
+"count": 2,
+"context": "## · and the Essential Supremum",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 300,
+"term": "continuous function",
+"count": 5,
+"context": "> - · is the ⟂ for the · inner product of ⟂; its Riemann-integral form for continuous functions is ⟂.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 545,
+"term": "fourier series",
+"count": 1,
+"context": "> - Computational version: for · on an interval this is convergence in the mean, ⟂, in which the Fourier series of every · with · converges, ⟂.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 568,
+"term": "uniqueness of limits",
+"count": 2,
+"context": "> - (i) is uniqueness of limits in a metric space (⟂; ⟂), with “equal” meaning equal a.e.",
+"targets": [
+"Complex Variables|§15 Limits#^thm-15-1",
+"Complex Variables|§60 Convergence of Sequences#^prop-60-1",
+"Single Variable Analysis|§7 Limits of Sequences#^thm-7-1"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 572,
+"term": "subsequence",
+"count": 7,
+"context": "> [!theorem] Lemma §19.16: Cauchy Subsequence Lemma",
+"targets": [
+"Single Variable Analysis|§11 Subsequences#^def-11-1",
+"Topology|§16 Limit Point Compactness#^def-16-2"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 664,
+"term": "second countable",
+"count": 3,
+"context": "> - In metric spaces, separable · second countable: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 664,
+"term": "metric spaces",
+"count": 1,
+"context": "> - In metric spaces, separable · second countable: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§19 Normed Linear Spaces and Lᵖ Spaces",
+"line": 764,
+"term": "uncountable",
+"count": 1,
+"context": "within distance · of each ·, and since the ·-balls around distinct ·'s are disjoint, the dense subset must be uncountable. For a general · with ·, the same argument works with ·, where · has ·: by ⟂, · is continuous and increasing,",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§2 The Cantor–Bernstein Theorem",
+"line": 11,
+"term": "injection",
+"count": 4,
+"context": "> Assume there exists an injection · and an injection ·. Then ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§3 Countability of Rationals and Unions",
+"line": 16,
+"term": "lowest terms",
+"count": 1,
+"context": "> - MATH 451 proof by listing lowest-terms fractions along diagonals: ⟂.",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-2"
+]
+},
+{
+"note": "§3 Countability of Rationals and Unions",
+"line": 37,
+"term": "closure",
+"count": 1,
+"context": "> - The “product + union closure” step of ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§3 Countability of Rationals and Unions",
+"line": 44,
+"term": "injection",
+"count": 1,
+"context": "vely: Define · by ·. This is surjective, so · is countable: choosing one preimage under · for each · gives an injection ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§3 Countability of Rationals and Unions",
+"line": 51,
+"term": "surjection",
+"count": 1,
+"context": "al gets listed; grey entries such as · are repeats and are simply skipped. Allowing repeats is exactly why a *surjection* · is enough.*",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§4 Uncountability",
+"line": 18,
+"term": "surjection",
+"count": 1,
+"context": "> Suppose for contradiction that · is countable. Then there exists a surjection ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§4 Uncountability",
+"line": 73,
+"term": "second countable",
+"count": 1,
+"context": "logy: the same set · is an uncountable discrete subspace of · with the uniform metric, which is therefore not second-countable (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§5 Topology of ℝⁿ",
+"line": 47,
+"term": "metric spaces",
+"count": 2,
+"context": "> - Topology takes the complement form as the definition (⟂); the sequential form holds in metric spaces by the ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§5 Topology of ℝⁿ",
+"line": 50,
+"term": "bounded sequence",
+"count": 2,
+"context": "> Let · be a bounded sequence in ·. Then there exists a subsequence · that converges to some ·.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§5 Topology of ℝⁿ",
+"line": 135,
+"term": "bounded sets",
+"count": 1,
+"context": "*Nested closed bounded sets · with a chosen point · (black). All · lie in the bounded set ·, so a subsequence converges to some · (red);",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§5 Topology of ℝⁿ",
+"line": 135,
+"term": "bounded set",
+"count": 2,
+"context": "*Nested closed bounded sets · with a chosen point · (black). All · lie in the bounded set ·, so a subsequence converges to some · (red);",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 22,
+"term": "compactness",
+"count": 1,
+"context": "> - Topology: this is “· covers ·” by open sets of the ambient space (⟂), equivalent for compactness to open coverings of · itself (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 127,
+"term": "injection",
+"count": 1,
+"context": "> The map · from · to · is a surjection by definition, and by the claim above, it is also an injection.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 127,
+"term": "surjection",
+"count": 1,
+"context": "> The map · from · to · is a surjection by definition, and by the claim above, it is also an injection.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 168,
+"term": "second countable",
+"count": 1,
+"context": "> - Topology: this is the argument that a separable metric space is second-countable (⟂ (3)), with · (⟂); so the rational balls form a countable ⟂ for ·.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-5"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 215,
+"term": "bounded set",
+"count": 1,
+"context": "set · with a closed set (complement of an open set), hence · is closed. Also · is bounded (as a subset of the bounded set ·).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§6 Open Covers and the Heine–Borel Theorem",
+"line": 244,
+"term": "closed sets",
+"count": 1,
+"context": "sion, for a closed interval · covered by open intervals · (blue). Removing the open sets one at a time leaves closed sets · (red) that shrink; if none were empty, Cantor's nested set theorem would produce a point of · in no ·. Here",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-3",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-4"
+]
+},
+{
+"note": "§7 Structure of Open Sets",
+"line": 26,
+"term": "injection",
+"count": 2,
+"context": "d in it (⟂). Since the intervals are disjoint, different intervals contain different rationals. This gives an injection from the collection of intervals into ·, which is ⟂.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§8 Motivation꞉ The Riemann Integral",
+"line": 96,
+"term": "compact",
+"count": 1,
+"context": "> Since · is continuous on the compact set · (⟂), it is ⟂.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§8 Motivation꞉ The Riemann Integral",
+"line": 126,
+"term": "integrable functions",
+"count": 1,
+"context": "> [!example] Example §8.1: A Sequence of Riemann Integrable Functions",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "§8 Motivation꞉ The Riemann Integral",
+"line": 181,
+"term": "dense",
+"count": 1,
+"context": "Right: the pointwise limit · (Example §8.2) — rationals (red, height ·) and irrationals (blue, height ·) are dense in every subinterval, so · and · for every partition: the upper sum is the whole red area ·, the lower sum is",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 34,
+"term": "closure",
+"count": 1,
+"context": "> - · for the **closure** (closed rectangle)",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 49,
+"term": "linear map",
+"count": 1,
+"context": "> - How a linear map rescales volume: ⟂, used for null sets in ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 88,
+"term": "infimum",
+"count": 3,
+"context": "> Let ·. For each point ·, we can cover it with an open rectangle of arbitrarily small volume. Thus the infimum over all such coverings is ·.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 129,
+"term": "uncountable",
+"count": 1,
+"context": "> - The converse fails: the ⟂ is uncountable and null.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-9"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 205,
+"term": "compact",
+"count": 1,
+"context": "> Since · is closed and bounded, it is compact by ⟂. The open rectangles · form an open cover of ·, so there exists a finite subcover · with",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§9 Lebesgue Outer Measure",
+"line": 227,
+"term": "compactness",
+"count": 1,
+"context": "> - Topology version of the compactness step: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+}
+]

@@ -1,0 +1,2668 @@
+[
+{
+"note": "Angle form on the punctured plane",
+"line": 7,
+"term": "vector field",
+"count": 1,
+"context": "The 1-form · on ·, i.e. the vector field · circulating around the origin. Its coefficients are the partials of the polar angle ·, so locally · and · i",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "Change of Variables Formula (multiple integrals)",
+"line": 28,
+"term": "linear map",
+"count": 4,
+"context": "- **Linear algebra core.** For a linear map this is ⟂: T changes volume by the factor |det T| (⟂). The C¹ case applies this to the derivative on each sma",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Change of Variables Formula (multiple integrals)",
+"line": 29,
+"term": "substitution rule",
+"count": 1,
+"context": "- **Generalizes.** The one-variable substitution rule ⟂, which comes from the ⟂ and the 451 chain rule, and the ⟂ (§15.7), where |J| = r. The ℝⁿ version is ⟂.",
+"targets": [
+"Calculus|Substitution Rule"
+]
+},
+{
+"note": "Change of Variables Formula (multiple integrals)",
+"line": 30,
+"term": "compactness",
+"count": 1,
+"context": "s J does not change sign. Jordan measurability of the image comes from ⟂. The bounds on f∘Φ and |J| come from compactness of the closure (⟂).",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Change of Variables Formula (multiple integrals)",
+"line": 32,
+"term": "lebesgue measure",
+"count": 1,
+"context": "- Lebesgue-measure pieces proved in 551: translation invariance of the integral (⟂); for linear maps, · on rectangles inside the",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "Continuous Partials Imply Differentiability",
+"line": 32,
+"term": "linear map",
+"count": 1,
+"context": "- **What it produces.** A total derivative, i.e. the linear map (h, k) ↦ f_x h + f_y k (⟂), a linear functional on ℝ² (⟂). Differentiability then gives every directional der",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Continuous Partials Imply Differentiability",
+"line": 35,
+"term": "cauchy–riemann equations",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (continuous partials plus the Cauchy–Riemann equations give complex differentiability; complex-variables version with worked examples).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations",
+"Complex Variables|§21 Cauchy–Riemann Equations#^def-21-1"
+]
+},
+{
+"note": "Continuous Partials Imply Differentiability",
+"line": 35,
+"term": "cauchy–riemann",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (continuous partials plus the Cauchy–Riemann equations give complex differentiability; complex-variables version with worked examples).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "Directional Derivative Formula",
+"line": 26,
+"term": "linear functional",
+"count": 1,
+"context": "- **Linear algebra.** D_u f = ∇f · u is the linear functional Df evaluated at u, and ∇f is the vector that represents it (⟂). By the equality case of the ⟂, D_u f is large",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5",
+"Linear Algebra|§12 Duality#^ladr-3-108",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-39"
+]
+},
+{
+"note": "Divergence Theorem in ℝ³",
+"line": 27,
+"term": "flux",
+"count": 3,
+"context": "simple solid region. ⟂ makes the volume integral iterated, and the ⟂ in z reduces it to top minus bottom: the flux through the two graph surfaces, where the ⟂. General regions are cut into simple pieces, and the fluxes throu",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "Divergence Theorem in ℝⁿ",
+"line": 28,
+"term": "flux",
+"count": 1,
+"context": "- **Special cases.** n = 1 is the ⟂, n = 2 is ⟂ (the flux form of ⟂), and n = 3 with parametrized surfaces is ⟂. In forms language it is the top-degree case (Ω of dime",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "Exterior Derivative Squares to Zero",
+"line": 24,
+"term": "flux",
+"count": 1,
+"context": "* curl(∇f) = 0 and div(curl F) = 0 are the same identity at two rungs of the ladder (⟂). Together with ⟂, the flux of a curl through a closed surface is zero (⟂).",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "Fubini's Theorem",
+"line": 27,
+"term": "uniform continuity",
+"count": 1,
+"context": "ann sum. The inner integrals exist because continuous functions are integrable (⟂). Passing to the limit uses uniform continuity of f on the compact rectangle (⟂, ⟂).",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "Fubini's Theorem",
+"line": 27,
+"term": "continuous function",
+"count": 1,
+"context": "oof idea.** The double Riemann sum over a grid is the iterated Riemann sum. The inner integrals exist because continuous functions are integrable (⟂). Passing to the limit uses uniform continuity of f on the compact rectangle (⟂, ⟂).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "Fubini's Theorem",
+"line": 27,
+"term": "riemann sum",
+"count": 2,
+"context": "- **Proof idea.** The double Riemann sum over a grid is the iterated Riemann sum. The inner integrals exist because continuous functions are integrabl",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "Fubini's Theorem",
+"line": 31,
+"term": "tonelli",
+"count": 1,
+"context": "- Lebesgue version: ⟂ for every integrable ·, with ⟂ (Tonelli) for ·; integrability is the hypothesis that rules out ⟂.",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "Generalized Stokes' Theorem",
+"line": 21,
+"term": "jacobian",
+"count": 1,
+"context": "s gradient, curl and divergence (⟂, ⟂, ⟂). Both sides are computed by ⟂; in top degree its coefficient is the Jacobian determinant, whose sign carries orientation and whose absolute value is the volume factor (⟂).",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "Green's First Identity",
+"line": 27,
+"term": "inner product",
+"count": 1,
+"context": "ymmetry.** Swapping u and v and subtracting gives ⟂: with vanishing boundary terms, Δ is symmetric for the L² inner product. This is the analogue of a self-adjoint operator (⟂), which has an orthonormal eigenbasis by the ⟂.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "Green's First Identity",
+"line": 27,
+"term": "orthonormal",
+"count": 1,
+"context": "s, Δ is symmetric for the L² inner product. This is the analogue of a self-adjoint operator (⟂), which has an orthonormal eigenbasis by the ⟂.",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "Green's First Identity",
+"line": 28,
+"term": "eigenvalue",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the case u = v in the plane, which shows that the Dirichlet eigenvalues of the Laplacian are positive).",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Green's First Identity",
+"line": 28,
+"term": "dirichlet",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the case u = v in the plane, which shows that the Dirichlet eigenvalues of the Laplacian are positive).",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Green's Theorem",
+"line": 29,
+"term": "flux",
+"count": 2,
+"context": "- **Two faces.** In circulation form it is ⟂, and in flux form it is the ⟂ (⟂).",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "Green's Theorem",
+"line": 29,
+"term": "circulation",
+"count": 1,
+"context": "- **Two faces.** In circulation form it is ⟂, and in flux form it is the ⟂ (⟂).",
+"targets": [
+"Calculus|§114 Stokes' Theorem#^def-114-2",
+"Complex Variables|§124★ Two-Dimensional Fluid Flow#^def-124-1"
+]
+},
+{
+"note": "Green's Theorem",
+"line": 33,
+"term": "cauchy–riemann equations",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (Cauchy's theorem for f′ continuous, by Green's theorem and the Cauchy–Riemann equations) and ⟂ (the Cauchy–Goursat theorem without that hypothesis); complex-variables version with worked examples.",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations",
+"Complex Variables|§21 Cauchy–Riemann Equations#^def-21-1"
+]
+},
+{
+"note": "Green's Theorem",
+"line": 33,
+"term": "cauchy–riemann",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (Cauchy's theorem for f′ continuous, by Green's theorem and the Cauchy–Riemann equations) and ⟂ (the Cauchy–Goursat theorem without that hypothesis); complex-variables version with worked",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "Implicit Function Theorem",
+"line": 35,
+"term": "inverse function",
+"count": 1,
+"context": "- **Several equations.** The vector-valued version, which 591 deduces from the inverse function theorem, is ⟂ (591 Thm. §4.1). It is what makes regular level sets manifolds, ⟂ (591 Thm. §4.3).",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "Inverse Function Theorem (several variables)",
+"line": 30,
+"term": "linear map",
+"count": 1,
+"context": "- **Linear algebra.** The hypothesis says that the derivative is an invertible linear map (⟂, LADR 9.50). The inverse's Jacobian is J⁻¹ (⟂), and the two Jacobian determinants are reciprocal (⟂, ⟂).",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "Inverse Function Theorem (several variables)",
+"line": 33,
+"term": "conformal map",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (local inverses of conformal maps: for analytic f the Jacobian is |f′|², and the inverse is analytic; complex-variables version with worked exa",
+"targets": [
+"Complex Variables|Conformal Mappings Preserve Angles"
+]
+},
+{
+"note": "Method of Lagrange Multipliers",
+"line": 27,
+"term": "compact",
+"count": 1,
+"context": "- **Existence.** The method only finds candidates. If the constraint set is compact, a continuous f attains its max and min there (⟂, ⟂), so comparing values at the candidates finds them (⟂).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Method of Lagrange Multipliers",
+"line": 29,
+"term": "eigenvalue",
+"count": 1,
+"context": "the case of xᵀAx on the unit sphere, where the Lagrange condition is Ax = λx and the extremes are the extreme eigenvalues, with worked examples).",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Multivariable Analysis",
+"line": 16,
+"term": "closed set",
+"count": 1,
+"context": "Topics: open and closed sets; partial derivatives, differentiability, mean value theorem; gradient, directional derivatives, chain rule; i",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "Multivariable Analysis",
+"line": 16,
+"term": "lagrange multiplier",
+"count": 1,
+"context": "e theorem; gradient, directional derivatives, chain rule; implicit and inverse function theorems; extrema and Lagrange multipliers; multiple integrals and change of variables; line and surface integrals; Green, divergence and Stokes theorem",
+"targets": [
+"Calculus|§97 Lagrange Multipliers#^def-97-1"
+]
+},
+{
+"note": "Multivariable Analysis",
+"line": 16,
+"term": "inverse function",
+"count": 1,
+"context": "rivatives, differentiability, mean value theorem; gradient, directional derivatives, chain rule; implicit and inverse function theorems; extrema and Lagrange multipliers; multiple integrals and change of variables; line and surface inte",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "Multivariable Taylor's Theorem",
+"line": 23,
+"term": "binomial coefficients",
+"count": 1,
+"context": "th, y + tk), and apply the 451 ⟂ at t = 1. The derivatives F⁽ᵐ⁾ come from ⟂, where ⟂ collects the terms into binomial coefficients. The straight segment gives F⁽ᵐ⁾(0) = dᵐf with no correction terms (⟂).",
+"targets": [
+"Calculus|§78 Taylor and Maclaurin Series#^def-78-3",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-5"
+]
+},
+{
+"note": "Multivariable Taylor's Theorem",
+"line": 25,
+"term": "eigenvalue",
+"count": 1,
+"context": "lgebra.** The second-order term is ½ times the quadratic form of the symmetric ⟂ (⟂). Its sign, read off from eigenvalues by the ⟂, drives the ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Multivariable Taylor's Theorem",
+"line": 25,
+"term": "quadratic form",
+"count": 1,
+"context": "- **Linear algebra.** The second-order term is ½ times the quadratic form of the symmetric ⟂ (⟂). Its sign, read off from eigenvalues by the ⟂, drives the ⟂.",
+"targets": [
+"Applied Linear Algebra|§49★ Quadratic Forms#^def-49-1"
+]
+},
+{
+"note": "Multivariable Taylor's Theorem",
+"line": 27,
+"term": "span",
+"count": 1,
+"context": "t functions instead of an intermediate point, which is what 591 needs to show that the coordinate derivations span the tangent space.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "Multivariable Taylor's Theorem",
+"line": 27,
+"term": "coordinate derivations",
+"count": 1,
+"context": "with smooth coefficient functions instead of an intermediate point, which is what 591 needs to show that the coordinate derivations span the tangent space.",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^def-27-2"
+]
+},
+{
+"note": "Poincaré Lemma",
+"line": 26,
+"term": "test for exact equations",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the test for exact equations: the case of 1-forms on a rectangle in ℝ², proved by building the potential, with worked examples).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "Poincaré Lemma",
+"line": 26,
+"term": "exact equation",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the test for exact equations: the case of 1-forms on a rectangle in ℝ², proved by building the potential, with worked examples).",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "Polar and spherical coordinates",
+"line": 7,
+"term": "jacobian",
+"count": 11,
+"context": "plane and ·, ·, · in space (the angle names vary from section to section). They are the running example of a Jacobian (· and ·), of a pair of inverse maps with reciprocal Jacobians, and of a change of variables whose Jacobian v",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "Polar and spherical coordinates",
+"line": 12,
+"term": "spherical coordinates",
+"count": 8,
+"context": "- Area and volume elements in polar, cylindrical and spherical coordinates (⟂)",
+"targets": [
+"Calculus|§105 Triple Integrals in Spherical Coordinates#^def-105-1",
+"Fourier Series and PDEs|§49★ Spherical Coordinates; Legendre Polynomials#^def-49-1"
+]
+},
+{
+"note": "Polar and spherical coordinates",
+"line": 20,
+"term": "parametrization",
+"count": 2,
+"context": "- Polar and spherical coordinates as parametrizations for the pullback (⟂)",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "Radial functions",
+"line": 7,
+"term": "laplace's equation",
+"count": 3,
+"context": "built from them. Rotational symmetry reduces their derivatives to one-variable calculus: · in the plane, and Laplace's equation for · becomes an ODE whose solutions are the fundamental solutions · in · and · in ·, both singular at the or",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "Schwarz–Clairaut Theorem",
+"line": 32,
+"term": "bilinear form",
+"count": 1,
+"context": "- **Linear algebra.** It makes the ⟂ a symmetric matrix, i.e. the second derivative is a symmetric bilinear form (⟂). So the ⟂ (LADR 7.29) applies, which is the basis of the ⟂.",
+"targets": [
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-1"
+]
+},
+{
+"note": "Schwarz–Clairaut Theorem",
+"line": 32,
+"term": "symmetric bilinear form",
+"count": 1,
+"context": "- **Linear algebra.** It makes the ⟂ a symmetric matrix, i.e. the second derivative is a symmetric bilinear form (⟂). So the ⟂ (LADR 7.29) applies, which is the basis of the ⟂.",
+"targets": [
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-9"
+]
+},
+{
+"note": "Schwarz–Clairaut Theorem",
+"line": 32,
+"term": "symmetric matrix",
+"count": 1,
+"context": "- **Linear algebra.** It makes the ⟂ a symmetric matrix, i.e. the second derivative is a symmetric bilinear form (⟂). So the ⟂ (LADR 7.29) applies, which is the basi",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-1",
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-11"
+]
+},
+{
+"note": "Schwarz–Clairaut Theorem",
+"line": 33,
+"term": "parametrization",
+"count": 1,
+"context": "² = 0 (⟂, ⟂). It is also why the second-derivative terms cancel in the proof of ⟂, which therefore needs a C² parametrization.",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "Second Derivative Test in Several Variables",
+"line": 29,
+"term": "eigenvalue",
+"count": 2,
+"context": "**Linear algebra.** H is symmetric by ⟂, so the ⟂ (LADR 7.29) diagonalizes it. H is positive definite iff all eigenvalues are positive, negative definite iff all are negative, and indefinite iff there are signs of both kinds. For o",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "Second Derivative Test in Several Variables",
+"line": 29,
+"term": "positive definite",
+"count": 1,
+"context": "- **Linear algebra.** H is symmetric by ⟂, so the ⟂ (LADR 7.29) diagonalizes it. H is positive definite iff all eigenvalues are positive, negative definite iff all are negative, and indefinite iff there are signs",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62"
+]
+},
+{
+"note": "Second Derivative Test in Several Variables",
+"line": 31,
+"term": "compact",
+"count": 1,
+"context": "- **Local vs. global.** The test is local. Global extrema on a compact set exist (⟂, ⟂) and are found by comparing values at the candidates and on the boundary (⟂).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Second Derivative Test in Several Variables",
+"line": 33,
+"term": "symmetric matrix",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (definiteness of a symmetric matrix from the signs of its eigenvalues, with worked classifications).",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-1",
+"Linear Algebra|§32 Bilinear Forms and Quadratic Forms#^ladr-9-11"
+]
+},
+{
+"note": "Stokes' Theorem in ℝ³",
+"line": 27,
+"term": "parametrization",
+"count": 1,
+"context": "ply ⟂ there, and match the integrands term by term. The second-derivative terms cancel by ⟂, which is why the parametrization must be C² (⟂).",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "Stokes' Theorem in ℝ³",
+"line": 29,
+"term": "flux",
+"count": 1,
+"context": "- **Consequences.** The flux of a curl through a closed surface is zero, and it is the same for any two surfaces with the same boundary (⟂",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "Surface Area via the Gram Matrix",
+"line": 25,
+"term": "rank",
+"count": 2,
+"context": "- **Linear algebra.** G = (DX)ᵀDX is T*T for T = DX. So rank G = rank DX (⟂), and det G > 0 exactly at ⟂. When DX is square, √det(T*T) = |det T| (⟂, ⟂), which is the |J|",
+"targets": [
+"Applied Linear Algebra|§19 Dimension and Rank#^def-19-3",
+"Applied Linear Algebra|§28 Rank#^def-28-1",
+"Differentiable Manifolds|§28 The Differential in Coordinates#^def-28-1",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "Unit circle and unit sphere",
+"line": 7,
+"term": "simply connected",
+"count": 1,
+"context": "e to be parametrized, measured and integrated over. Their topology is computed in MATH 590: · (⟂), while · is simply connected (⟂). Its uses in MATH 452:",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "Unit circle and unit sphere",
+"line": 7,
+"term": "lagrange multiplier",
+"count": 3,
+"context": "here ·, as level sets of · and ·. The circle is the first test case for the implicit function theorem and for Lagrange multipliers, and the loop around which the ⟂ picks up ·. The sphere is the first surface to be parametrized, measured and",
+"targets": [
+"Calculus|§97 Lagrange Multipliers#^def-97-1"
+]
+},
+{
+"note": "Unit circle and unit sphere",
+"line": 14,
+"term": "parametrization",
+"count": 2,
+"context": "- The poles are irregular points of this parametrization, not of the sphere (⟂)",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "Unit circle and unit sphere",
+"line": 16,
+"term": "flux",
+"count": 2,
+"context": "- Flux of · through the unit sphere via pullback (⟂)",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 19,
+"term": "linear map",
+"count": 2,
+"context": "tangent vector (close to the true image point, gray), which · turns into a change in value. Composing the two linear maps is the chain rule, · (⟂).*",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 19,
+"term": "jacobian",
+"count": 4,
+"context": "d grid; · then sends · to the number ·. The linear parts (red) follow along: an increment · is carried by the Jacobian · to a tangent vector (close to the true image point, gray), which · turns into a change in value. Composing",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 91,
+"term": "neighborhood",
+"count": 2,
+"context": "> - · are continuous in a neighborhood of ·",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 111,
+"term": "laplacian in polar coordinates",
+"count": 1,
+"context": "DEs: the change to characteristic coordinates ·, · turns the wave equation into ·, ⟂; the same rule gives the Laplacian in polar coordinates, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Laplacian in Polar Coordinates"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 165,
+"term": "matrix equation",
+"count": 1,
+"context": "Writing this as a matrix equation:",
+"targets": [
+"Applied Linear Algebra|§4 The Matrix Equation Ax = b#^def-4-2"
+]
+},
+{
+"note": "§10 Composition of Functions and the Chain Rule",
+"line": 222,
+"term": "compact",
+"count": 1,
+"context": "> In compact notation: if · and ·, then:",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§11 The Three Differential Operators꞉ Gradient, Curl, Divergence",
+"line": 24,
+"term": "vector field",
+"count": 10,
+"context": "For a vector field · with continuous partial derivatives, the **divergence** is:",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§11 The Three Differential Operators꞉ Gradient, Curl, Divergence",
+"line": 30,
+"term": "flux",
+"count": 5,
+"context": "In ·: ·. Geometrically, · measures the *net outward flux per unit volume* — how much the field “spreads out” at a point. A field with · everywhere is called *incompre",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§11 The Three Differential Operators꞉ Gradient, Curl, Divergence",
+"line": 55,
+"term": "circulation",
+"count": 1,
+"context": "*Curl is circulation density: · — shrink a test loop around · and measure how strongly the field pushes along it, per unit area (a",
+"targets": [
+"Calculus|§114 Stokes' Theorem#^def-114-2",
+"Complex Variables|§124★ Two-Dimensional Fluid Flow#^def-124-1"
+]
+},
+{
+"note": "§11 The Three Differential Operators꞉ Gradient, Curl, Divergence",
+"line": 91,
+"term": "kernel",
+"count": 1,
+"context": "These identities say: the image of one operator lies in the kernel of the next. In Part III (⟂), we will see that both are the *same identity* · (⟂) applied at different levels",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 27,
+"term": "neighborhood",
+"count": 5,
+"context": "> - (iii) · and · are continuous in a neighborhood ·",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 46,
+"term": "separable",
+"count": 1,
+"context": "> - Used in ODEs: the implicit solutions · of a separable equation, ⟂, and · of an exact equation, ⟂, define · as a function of · where the ·-derivative is nonzero.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 46,
+"term": "exact equation",
+"count": 1,
+"context": "> - Used in ODEs: the implicit solutions · of a separable equation, ⟂, and · of an exact equation, ⟂, define · as a function of · where the ·-derivative is nonzero.",
+"targets": [
+"Ordinary Differential Equations|Test for Exact Equations"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 192,
+"term": "trace",
+"count": 1,
+"context": "ives a crossing and monotonicity rules out a second. That crossing is · (red dot), and together the crossings trace the graph · (blue).*",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 201,
+"term": "singular point",
+"count": 1,
+"context": "> If both ·, the point · is a **singular point** of the curve, where the implicit function theorem does not apply.",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-3",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-6"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 206,
+"term": "contour map",
+"count": 1,
+"context": "*The Implicit Function Theorem on a contour map of the paraboloid · (dashed: neighboring levels; solid: the contour ·). Zooming in at a generic point (green)",
+"targets": [
+"Calculus|§90 Functions of Several Variables#^def-90-4"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 206,
+"term": "contour",
+"count": 3,
+"context": "*The Implicit Function Theorem on a contour map of the paraboloid · (dashed: neighboring levels; solid: the contour ·). Zooming in at a generic point (gr",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§12 The Implicit Function Theorem",
+"line": 291,
+"term": "smooth map",
+"count": 1,
+"context": "ersion for k equations in n + k unknowns, with an invertible k × k block of partials in place of ·, is ⟂ (for smooth maps), and the smooth case of this theorem is its case k = 1, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 33,
+"term": "nonlinear equations",
+"count": 1,
+"context": "> You would need to solve a system of nonlinear equations — very difficult in general!",
+"targets": [
+"Ordinary Differential Equations|§3 Classification of Differential Equations#^def-3-4"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 37,
+"term": "inverse function",
+"count": 3,
+"context": "**What the Inverse Function Theorem gives us:**",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 65,
+"term": "linear map",
+"count": 1,
+"context": "> - Linear-algebra view: the matrix of the linear map · in the standard bases, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 66,
+"term": "cauchy–riemann",
+"count": 1,
+"context": "> - For an analytic map the Cauchy–Riemann equations make the Jacobian matrix a rotation–scaling matrix with determinant |f′|²: ⟂ and ⟂.",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 77,
+"term": "span",
+"count": 1,
+"context": "· (left) is carried to a slightly curved image cell (blue). The columns of ·, scaled by · and · (red arrows), span the parallelogram · makes of the cell (dashed), which hugs the true image better and better as the cell shrin",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 85,
+"term": "invertible matrix",
+"count": 1,
+"context": "This requires · to be an **invertible matrix**, i.e., · (⟂).",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-1"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 135,
+"term": "neighborhood",
+"count": 1,
+"context": "> Let · have continuous partial derivatives in a neighborhood of ·. Define the Jacobian:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§13 The Inverse Function Theorem",
+"line": 161,
+"term": "diffeomorphism",
+"count": 1,
+"context": "ch this is the case n = 2, is quoted in 591 as ⟂; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 173,
+"term": "singular point",
+"count": 1,
+"context": "> The condition · is essential. If · at a point on the constraint curve, that point is called a **singular point** of the constraint (⟂). The IFT does not apply there, and the Lagrange multiplier method may fail.",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-3",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-6"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 175,
+"term": "smooth curve",
+"count": 1,
+"context": "eometrically, · means the constraint curve may have a cusp, self-intersection, or isolated point — it's not a smooth curve locally.",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-3",
+"Differentiable Manifolds|§29 Tangent Vectors as Velocities of Curves#^def-29-1"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 213,
+"term": "kernel",
+"count": 1,
+"context": "rem for systems that the proof needs, not proved in 452, is ⟂; the tangent space of the constraint set is the kernel of the constraint Jacobian, ⟂, and the coordinate-free counterpart of the normal space spanned by the · is th",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 215,
+"term": "eigenvalue",
+"count": 8,
+"context": "> - A worked special case: ⟂ (the extremes of xᵀAx on the unit sphere are the extreme eigenvalues of A; the Lagrange condition there reads Ax = λx) and, with the two constraints xᵀx = 1, xᵀu₁ = 0, ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 249,
+"term": "compact",
+"count": 2,
+"context": "> - Compare values of · at all candidates (if the constraint set is compact, EVT guarantees max/min exist; ⟂, in its compact-space form ⟂).",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 446,
+"term": "free variables",
+"count": 1,
+"context": "> We assumed · and solved for · as functions · of the free variables ·.",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-4"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 473,
+"term": "linear map",
+"count": 1,
+"context": "> Just as the gradient · is the first total derivative — a linear map · that captures the first-order behavior of · (⟂–⟂) — the Hessian is the *second* total derivative: a ⟂ · tha",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 485,
+"term": "positive definite",
+"count": 7,
+"context": "> - **Positive definite** if · for all ·.",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 516,
+"term": "taylor's theorem",
+"count": 1,
+"context": "> By Taylor's theorem (single-variable version applied to ·; ⟂, as in ⟂):",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 524,
+"term": "matrix notation",
+"count": 1,
+"context": "> Using matrix notation:",
+"targets": [
+"Applied Linear Algebra|§11 Matrix Operations#^def-11-1"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 530,
+"term": "neighborhood",
+"count": 1,
+"context": "> If · is positive definite at ·, then by continuity of second partials, · remains positive definite in a neighborhood. Thus:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 540,
+"term": "eigenvector",
+"count": 1,
+"context": "> If · is indefinite, it has eigenvalues · with unit eigenvectors · (⟂). Restrict · to the line through · in direction ·, i.e., take · above: the difference · equals ·, and by",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-8"
+]
+},
+{
+"note": "§14 Optimization and Lagrange Multipliers",
+"line": 595,
+"term": "contrapositive",
+"count": 1,
+"context": "> The contrapositive: if a point does *not* satisfy the necessary condition, it *cannot* be an extremum. So solving these equation",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 48,
+"term": "mesh points",
+"count": 1,
+"context": "Consider a grid with mesh points at · (integer lattice). Each unit square has area 1. This is the “0-th approximation.”",
+"targets": [
+"Fourier Series and PDEs|§55★ Boundary Value Problems#^def-55-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 105,
+"term": "countable",
+"count": 3,
+"context": "> - Lebesgue outer measure replaces the finite grids of squares by countable coverings with rectangles: ⟂; finite unions of rectangles still approximate every measurable set of finite me",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 145,
+"term": "interior point",
+"count": 2,
+"context": "> Almost disjoint sets can share boundary points, but not interior points. For example, two adjacent squares sharing an edge are almost disjoint.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 300,
+"term": "norm",
+"count": 2,
+"context": "> The **mesh** (or **norm**) of a partition · is:",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 311,
+"term": "riemann integrable",
+"count": 4,
+"context": "> A bounded function · is **integrable** (or **Riemann integrable**) over · if:",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-3"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 322,
+"term": "sample points",
+"count": 10,
+"context": "ight: the upper sum · with · — circumscribing boxes, containing the surface. Every Riemann sum with arbitrary sample points is squeezed between them: ·. Integrability is exactly the statement that the gap · — the skin between the two",
+"targets": [
+"Calculus|§34 The Area and Distance Problems#^def-34-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 322,
+"term": "riemann sum",
+"count": 23,
+"context": "tirely under the surface. Right: the upper sum · with · — circumscribing boxes, containing the surface. Every Riemann sum with arbitrary sample points is squeezed between them: ·. Integrability is exactly the statement that the gap",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 374,
+"term": "jacobian",
+"count": 25,
+"context": "> The general principle: when changing coordinates via a transformation with Jacobian · (⟂), the volume/area element transforms as:",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 397,
+"term": "properties of the integral",
+"count": 1,
+"context": "## Properties of the Integral",
+"targets": [
+"Calculus|§35 The Definite Integral#^thm-35-4"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 564,
+"term": "mean value property",
+"count": 1,
+"context": "### Comparison / Mean-Value Property",
+"targets": [
+"Fourier Series and PDEs|Mean Value Property of Harmonic Functions",
+"Fourier Series and PDEs|§39 Potential in a Disk#^thm-39-4"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 674,
+"term": "span",
+"count": 2,
+"context": "> - Angular span: from · to ·",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 948,
+"term": "continuous function",
+"count": 1,
+"context": "ver regions ·, we extend · outside ·: set · with · and ·. This extension is continuous on · (a composition of continuous functions), agrees with · on ·, and still satisfies ·. (Extending by · would also keep ·, but would break the continuit",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1185,
+"term": "antiderivative",
+"count": 2,
+"context": "> **Problem:** The inner integral · has no elementary antiderivative.",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1248,
+"term": "tonelli",
+"count": 2,
+"context": "gorous version, where measurability of the slices and of the inner integral is proved rather than assumed: ⟂ (Tonelli).",
+"targets": [
+"Measure Theory|Tonelli's Theorem"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1249,
+"term": "heat kernel",
+"count": 1,
+"context": "bility, followed by Fubini, justifies reversing the order of integration in the transform of ·, ⟂, and in the heat-kernel form of the infinite-rod solution, ⟂.",
+"targets": [
+"Fourier Series and PDEs|Heat Kernel Solution of the Infinite Rod"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1282,
+"term": "bounded set",
+"count": 4,
+"context": "> A bounded set · has **Jordan measure zero** if for every ·, there exist finitely many rectangles · such that:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1291,
+"term": "measurable function",
+"count": 1,
+"context": "Lebesgue null sets allow countably many rectangles (⟂), so every countable set is null (⟂); the graph of any measurable function is null by ⟂.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1291,
+"term": "countable set",
+"count": 1,
+"context": "> - Lebesgue null sets allow countably many rectangles (⟂), so every countable set is null (⟂); the graph of any measurable function is null by ⟂.",
+"targets": [
+"Measure Theory|§1 Countability and Set Theory#^def-1-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1299,
+"term": "bounded sets",
+"count": 1,
+"context": "> - Agrees with the inner/outer-content definition ⟂ for bounded sets, by the ⟂.",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1317,
+"term": "bijection",
+"count": 5,
+"context": "> Let · be a · bijection with · throughout. If · is continuous on ·, then:",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1352,
+"term": "substitution rule",
+"count": 2,
+"context": "> - Computational version: the substitution rule for definite integrals, ⟂, and the inverse substitution x = g(t), ⟂ (with worked examples).",
+"targets": [
+"Calculus|Substitution Rule"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1381,
+"term": "linear map",
+"count": 4,
+"context": "| 1 | Linear Case + Taylor | Prove for linear maps, then linearize via Taylor |",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1390,
+"term": "linear transformation",
+"count": 2,
+"context": "> We give a rigorous proof by first establishing the result for linear transformations, then extending to the general · case with explicit error estimates.",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4",
+"Applied Linear Algebra|§8 Introduction to Linear Transformations#^def-8-3",
+"Complex Variables|§96★ Linear Transformations#^def-96-1"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1560,
+"term": "relative error",
+"count": 1,
+"context": "> Since Area·, the relative error is ·, which can be made arbitrarily small.",
+"targets": [
+"Calculus|§23 Linear Approximations and Differentials#^def-23-3"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1692,
+"term": "supremum",
+"count": 1,
+"context": "> *Equivalently:* The **inner Jordan measure** (supremum of areas of finite unions of rectangles contained in ·) equals the **outer Jordan measure** (infimum of areas",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1692,
+"term": "infimum",
+"count": 1,
+"context": "sure** (supremum of areas of finite unions of rectangles contained in ·) equals the **outer Jordan measure** (infimum of areas of finite unions of rectangles containing ·) (⟂, ⟂).",
+"targets": [
+"Single Variable Analysis|§4 The Completeness Axiom#^def-4-3"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1723,
+"term": "diffeomorphism",
+"count": 5,
+"context": "> *Key Lemma* (⟂): If · is Jordan measurable and · is a · diffeomorphism with ·, then · is also Jordan measurable.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1749,
+"term": "almost everywhere",
+"count": 1,
+"context": "> - The assumption “· everywhere” can be relaxed to “· almost everywhere.”",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 1793,
+"term": "trace",
+"count": 1,
+"context": "> This gives · as a function of ·: when we hold · fixed and vary ·, the point · traces a curve in the ·-plane.",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2037,
+"term": "open set",
+"count": 1,
+"context": "> Here we use that · extends to a · map on an open set · (this is what “· on ·” means). Choose · such that the compact set · lies in · (⟂), and let · bound the oper",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2160,
+"term": "parallelepiped",
+"count": 2,
+"context": "> In particular, a unit ·-cube maps to a parallelepiped of volume ·.",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2165,
+"term": "polar decomposition",
+"count": 1,
+"context": "> - This is ⟂ (· changes volume by factor of ·), proved there via polar decomposition and singular values (⟂); the matrix and operator determinants agree by ⟂.",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-93"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2165,
+"term": "singular values",
+"count": 1,
+"context": "> - This is ⟂ (· changes volume by factor of ·), proved there via polar decomposition and singular values (⟂); the matrix and operator determinants agree by ⟂.",
+"targets": [
+"Applied Linear Algebra|§51★ The Singular Value Decomposition#^def-51-1",
+"Linear Algebra|§26 Singular Value Decomposition#^ladr-7-65"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2167,
+"term": "elementary row operations",
+"count": 1,
+"context": "> - For Lebesgue measure the identity · on rectangles is proved by elementary row operations inside ⟂ (linear maps preserve null sets).",
+"targets": [
+"Applied Linear Algebra|§1 Systems of Linear Equations#^def-1-5"
+]
+},
+{
+"note": "§15 Multivariable Integration",
+"line": 2167,
+"term": "row operations",
+"count": 1,
+"context": "> - For Lebesgue measure the identity · on rectangles is proved by elementary row operations inside ⟂ (linear maps preserve null sets).",
+"targets": [
+"Applied Linear Algebra|§21 Properties of Determinants#^thm-21-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 13,
+"term": "jacobian",
+"count": 1,
+"context": "Summing and refining: · — an ordinary one-variable ⟂. The speed factor is automatic: · is the 1D case of the Jacobian story (⟂).*",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 13,
+"term": "parametrization",
+"count": 1,
+"context": "*The line integral is computed through its parametrization ·: partition · into steps ·; · carries the ticks · to points · on · (blue), spaced unevenly — wide where the",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 15,
+"term": "smooth curve",
+"count": 3,
+"context": "Let · be a smooth curve in · parametrized by ·, · for ·.",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-3",
+"Differentiable Manifolds|§29 Tangent Vectors as Velocities of Curves#^def-29-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 51,
+"term": "uniform continuity",
+"count": 1,
+"context": "r · and ·, so this is not yet a Riemann sum for ·. But ·, which is uniformly small once the mesh is small, by uniform continuity of · and · on ·; since · is bounded on ·, the difference between the two sums vanishes in the limit.",
+"targets": [
+"Single Variable Analysis|§19 Uniform Continuity#^def-19-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 51,
+"term": "riemann sum",
+"count": 1,
+"context": "The Mean Value Theorem gives different points · for · and ·, so this is not yet a Riemann sum for ·. But ·, which is uniformly small once the mesh is small, by uniform continuity of · and · on ·; since ·",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 64,
+"term": "vector field",
+"count": 6,
+"context": "> Let · be a continuous vector field. The **work done by ·** along · is:",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 194,
+"term": "open set",
+"count": 2,
+"context": "main whose boundary · is a piecewise smooth, simple closed curve, oriented counterclockwise. If · are · on an open set containing ·, then:",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 194,
+"term": "simple closed curve",
+"count": 1,
+"context": "> Let · be a bounded domain whose boundary · is a piecewise smooth, simple closed curve, oriented counterclockwise. If · are · on an open set containing ·, then:",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 208,
+"term": "cauchy–riemann equations",
+"count": 2,
+"context": "> - Computational version: ⟂ (Cauchy's theorem for f′ continuous, proved by this theorem and the Cauchy–Riemann equations) and ⟂ (Goursat's proof, which drops the continuity of f′).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations",
+"Complex Variables|§21 Cauchy–Riemann Equations#^def-21-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 208,
+"term": "cauchy–riemann",
+"count": 2,
+"context": "> - Computational version: ⟂ (Cauchy's theorem for f′ continuous, proved by this theorem and the Cauchy–Riemann equations) and ⟂ (Goursat's proof, which drops the continuity of f′).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 209,
+"term": "contour",
+"count": 2,
+"context": "Field Theory: with the Cauchy–Riemann equations, Theorem §16.1 proves Cauchy's theorem and the deformation of contours behind every propagator contour — ⟂.",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 209,
+"term": "deformation of contours",
+"count": 1,
+"context": "sed in Quantum Field Theory: with the Cauchy–Riemann equations, Theorem §16.1 proves Cauchy's theorem and the deformation of contours behind every propagator contour — ⟂.",
+"targets": [
+"Complex Variables|Principle of Deformation of Paths"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 241,
+"term": "flux",
+"count": 5,
+"context": "e right of travel and out of ·), and the inner normal · (gray dashed, pointing into ·). Work integrals use ·, flux integrals use · — the two faces of Green's theorem in Remark §16.4.*",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§16 Line Integrals and Green's Theorem",
+"line": 399,
+"term": "circulation",
+"count": 2,
+"context": "> | Circulation (Stokes) | · | · |",
+"targets": [
+"Calculus|§114 Stokes' Theorem#^def-114-2",
+"Complex Variables|§124★ Two-Dimensional Fluid Flow#^def-124-1"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 10,
+"term": "flux",
+"count": 3,
+"context": "the ⟂ we derived ⟂ (2D) and its two vector reformulations: the ⟂ (circulation = integral of curl) and the ⟂ (flux = integral of divergence). We now extend the Divergence Theorem to · and derive the classical **Green's ident",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 15,
+"term": "vector field",
+"count": 2,
+"context": "> For a · vector field ·, the **divergence** is the scalar field:",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 24,
+"term": "open set",
+"count": 1,
+"context": "> Let · be a bounded domain with piecewise smooth boundary ·. If · is · on an open set containing ·, then:",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 103,
+"term": "parametrization",
+"count": 1,
+"context": "We use this graph area element ahead of §18, where area elements are derived: for ·, ⟂ gives · with · for the parametrization ·; for · we take the same formula as the area element of a graph.)",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 227,
+"term": "eigenvalue",
+"count": 2,
+"context": "> - Used in PDEs: with · an eigenfunction, it shows that the Dirichlet eigenvalues of the Laplacian are positive, ⟂.",
+"targets": [
+"Applied Linear Algebra|§32 Eigenvectors and Eigenvalues#^def-32-1",
+"Linear Algebra|§14 Invariant Subspaces#^ladr-5-5"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 229,
+"term": "eigenfunction expansion",
+"count": 1,
+"context": "energy integral, the capacitance matrix as a Gram matrix, uniqueness with conductors and dielectrics, and the eigenfunction expansion of a Green function — ⟂, ⟂, ⟂, ⟂, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§24 Expansion in Series of Eigenfunctions#^def-24-1"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 287,
+"term": "eigenfunctions",
+"count": 2,
+"context": "> - Used in PDEs: eigenfunctions of the Laplacian for different eigenvalues are orthogonal, ⟂, as for the vibrating drum, ⟂.",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 299,
+"term": "inner product",
+"count": 1,
+"context": "s by the ⟂; Green's second identity with vanishing boundary terms is the analogous statement for · with the · inner product.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 299,
+"term": "orthonormal",
+"count": 1,
+"context": "> - Finite-dimensional model: an operator · with · (⟂) has an orthonormal eigenbasis by the ⟂; Green's second identity with vanishing boundary terms is the analogous statement for · w",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 376,
+"term": "laplace's equation",
+"count": 6,
+"context": "## Physical Application: Conservation of Mass and Laplace's Equation",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 406,
+"term": "compact",
+"count": 1,
+"context": "This differentiates under the integral sign, which is justified when · is continuous: on the compact set · it is uniformly continuous, so the difference quotients · converge to · uniformly on · (by the Mean Val",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 428,
+"term": "pointwise",
+"count": 1,
+"context": "Therefore, the integrand vanishes pointwise:",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 440,
+"term": "continuous function",
+"count": 1,
+"context": "> - Computational version: the same argument for heat in a solid, ⟂ (a continuous function with zero integral over every subregion is zero) and ⟂ (the local heat balance).",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 468,
+"term": "contour",
+"count": 1,
+"context": "on:** If the flow is driven by a potential (e.g., gravity), there exists a **potential function** · such that contour lines · are level curves of energy. The gradient · points in the direction of increasing energy, and the flui",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 610,
+"term": "kernel",
+"count": 1,
+"context": "> - Computational version: ⟂ (the potential A ln r + B between coaxial cylinders) and ⟂ (the Neumann kernel of the disk, a multiple of the fundamental solution).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 614,
+"term": "boundary value problem",
+"count": 2,
+"context": "> This fundamental solution is the starting point for solving boundary value problems via Green's functions. The same approach — exploit symmetry to reduce a PDE to an ODE — applies to other equa",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§17 The Divergence Theorem in Higher Dimensions and Green's Identities",
+"line": 622,
+"term": "fourier series",
+"count": 1,
+"context": "> - Worked out in Fourier Series and PDEs: Green's functions for one-dimensional boundary value problems, ⟂ and ⟂; the heat and wave equations",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 11,
+"term": "vector field",
+"count": 8,
+"context": "sults in this section require increasingly strong conditions on the parametrization ·, the surface ·, and the vector field ·. Here is the hierarchy, from weakest to strongest:",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 14,
+"term": "jacobian",
+"count": 5,
+"context": "> 2. **The parametrization describes a surface (regularity):** · is · *and* the Jacobian · (⟂) has rank 2 everywhere, i.e., ·. This ensures a well-defined tangent plane at every point, and in partic",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 15,
+"term": "injective",
+"count": 3,
+"context": "> 3. **The parametrization is injective** (on the interior of ·): distinct parameter values give distinct surface points, so the surface does not sel",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 16,
+"term": "flux",
+"count": 16,
+"context": "> 4. **Orientability:** A continuous choice of unit normal · exists on all of ·. This is needed for flux integrals (otherwise the sign of · is ambiguous). A regular parametrization automatically provides an orienta",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 17,
+"term": "open set",
+"count": 2,
+"context": "e smooth** (finitely many smooth pieces joined along curves or edges), and the vector field · must be · on an open set containing · (or ·). The piecewise smoothness allows us to decompose into pieces on which the proof works, an",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 33,
+"term": "trace",
+"count": 1,
+"context": "ace can be thought of as a **family of curves**: fix one parameter, say ·, and let the other vary — the map · traces out a curve on ·. Now let · vary continuously: the curve deforms, sweeping out a 2D region. The surface is th",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 43,
+"term": "position vectors",
+"count": 1,
+"context": "of the corresponding point on ·. It is a vector only in the sense that points in · are identified with their position vectors from the origin; · tells you *where the point sits* in 3D space.",
+"targets": [
+"Calculus|§81 Vectors#^def-81-5"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 104,
+"term": "kernel",
+"count": 1,
+"context": "e image of the derivative of a parametrization is one of three equal descriptions in ⟂ (velocities of curves, kernel of the constraint Jacobian, image of the parametrization's derivative).",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 140,
+"term": "immersion",
+"count": 2,
+"context": "> - Here, · means the · Jacobian has rank 2, ensuring the parametrization is locally injective (an **immersion**) — it does not collapse any direction.",
+"targets": [
+"Differentiable Manifolds|§32 Submersions#^def-32-1"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 153,
+"term": "homeomorphism",
+"count": 1,
+"context": "> - A parametrization that is regular at every point is an immersion, ⟂, and one that is also a homeomorphism onto its image is the internal description of a manifold, ⟂.",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 259,
+"term": "regular points",
+"count": 1,
+"context": "> - The linear algebra behind it: · is · for ·, so · (⟂) and · exactly at regular points (⟂).",
+"targets": [
+"Differentiable Manifolds|§32 Submersions#^def-32-2"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 415,
+"term": "graph of a function",
+"count": 1,
+"context": "An important special case: the surface is the graph of a function · over a domain ·. This gives the simplest parametrization and the most explicit formulas.",
+"targets": [
+"Calculus|§1 Four Ways to Represent a Function#^def-1-2",
+"Logic and Proofs|§8 Functions#^def-8-10"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 482,
+"term": "positive orientation",
+"count": 1,
+"context": "- The **positive orientation** is defined by the **outward normal**: · points out of ·.",
+"targets": [
+"Calculus|§110 Green's Theorem#^def-110-1"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 576,
+"term": "pointwise",
+"count": 1,
+"context": "*The divergence theorem: ·. Everything the sources inside · produce (red: pointwise divergence, the microscopic outflux of ⟂) must exit through the boundary (green arrows crossing · along the o",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 614,
+"term": "torus",
+"count": 1,
+"context": "> - A solid torus is *not* simple (a vertical line can enter and exit twice), but it can be cut into finitely many simple piece",
+"targets": [
+"Topology|Torus"
+]
+},
+{
+"note": "§18 Surface Integrals",
+"line": 618,
+"term": "type ii region",
+"count": 1,
+"context": "case (⟂), and parallel to how we handled general regions for Fubini's theorem in ⟂: there we needed Type I / Type II regions (⟂) for iterated integrals and subdivided general ⟂ domains. Same idea, one dimension up.",
+"targets": [
+"Calculus|§99 Double Integrals Over General Regions#^def-99-3"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 49,
+"term": "flux",
+"count": 7,
+"context": "This brick has three pairs of faces. We compute the net flux of · through each pair, then divide by the volume to extract ·.",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 66,
+"term": "jacobian",
+"count": 2,
+"context": "mutually orthogonal edges of lengths · (radial), · (meridional), and · (azimuthal). Multiplying them: · — the Jacobian of the spherical map (⟂), read off geometrically. This is the 3D sibling of the polar picture in ⟂: near the",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 81,
+"term": "orthonormal",
+"count": 1,
+"context": "The gradient (⟂) expressed in the orthonormal basis · is:",
+"targets": [
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-22"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 81,
+"term": "orthonormal basis",
+"count": 1,
+"context": "The gradient (⟂) expressed in the orthonormal basis · is:",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^def-24-4",
+"Linear Algebra|§20 Orthonormal Bases#^ladr-6-27"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 158,
+"term": "laplace's equation",
+"count": 1,
+"context": "s, harmonic away from the origin, has the distributional Laplacian · — ⟂. At level C: the general solution of Laplace's equation in spherical coordinates and Kelvin inversion — ⟂, ⟂.",
+"targets": [
+"Calculus|§92 Partial Derivatives#^def-92-5"
+]
+},
+{
+"note": "§19 The Laplacian in Spherical Coordinates",
+"line": 158,
+"term": "cylindrical coordinates",
+"count": 3,
+"context": "> - Used in Electromagnetism: gradient, divergence, curl and Laplacian in spherical and cylindrical coordinates — ⟂; the radial solution · of Remark: Verification: Radial Functions, harmonic away from the origin, has the",
+"targets": [
+"Calculus|§104 Triple Integrals in Cylindrical Coordinates#^def-104-1"
+]
+},
+{
+"note": "§2 Open and Closed Sets",
+"line": 40,
+"term": "interior point",
+"count": 4,
+"context": "(blue, dashed). So every ball contains a square and every square contains a ball around the same center, and \"interior point\", \"open\", \"boundary point\" come out the same with either kind of neighborhood.*",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§2 Open and Closed Sets",
+"line": 74,
+"term": "open set",
+"count": 2,
+"context": "> - MATH 590: the open sets of the ⟂ with ⟂; a ⟂ is the complement of an open set.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 15,
+"term": "right-hand rule",
+"count": 3,
+"context": "> Let · be an oriented, piecewise smooth surface with piecewise smooth boundary curve ·. Orient · by the right-hand rule: if · is the chosen normal to · and you walk along · with · pointing from your feet to your head, the surface",
+"targets": [
+"Calculus|§83 The Cross Product#^prop-83-3"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 17,
+"term": "open set",
+"count": 1,
+"context": "> If · is · on an open set containing ·, then:",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 44,
+"term": "flux",
+"count": 4,
+"context": "r the cap, each vector measuring the microscopic circulation of a tiny loop (drawn) in the tangent plane; its flux through the surface is ·. The theorem is the cancellation argument of ⟂ made global: tile the cap with tiny l",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 48,
+"term": "graph of a function",
+"count": 2,
+"context": "We first prove Stokes' theorem for the special case where · is the graph of a function · over a domain ·. This is not the full theorem (it only handles surfaces that project injectively onto the ·",
+"targets": [
+"Calculus|§1 Four Ways to Represent a Function#^def-1-2",
+"Logic and Proofs|§8 Functions#^def-8-10"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 116,
+"term": "parametrization",
+"count": 6,
+"context": "For the graph parametrization ·, we computed in ⟂ that ·. Now:",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 133,
+"term": "simple solid region",
+"count": 1,
+"context": "ed to decompose into graph patches and sum — just as the Divergence Theorem proof required decomposition into simple solid regions (⟂).",
+"targets": [
+"Calculus|§115 The Divergence Theorem#^def-115-1"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 188,
+"term": "trace",
+"count": 1,
+"context": "On the boundary ·, the curve is parametrized by · where · traces ·. By the ⟂:",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 346,
+"term": "vector field",
+"count": 1,
+"context": "> The curl of any vector field has zero total flux through a closed surface. This is a special case of · (⟂) in the language of differential",
+"targets": [
+"Differentiable Manifolds|§35 The Tangent Bundle#^def-35-4"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 354,
+"term": "span",
+"count": 1,
+"context": "> The surface integral of a curl depends only on the boundary, not on which surface spans it.",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§20 Stokes' Theorem in ℝ³",
+"line": 354,
+"term": "spans",
+"count": 1,
+"context": "> The surface integral of a curl depends only on the boundary, not on which surface spans it.",
+"targets": [
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-7"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 16,
+"term": "jacobian",
+"count": 13,
+"context": "ester we have been computing integrals: ·, ·, ·, ·, ·. Each time, we had to choose a parametrization, compute Jacobians or cross products, keep track of signs, and verify the answer was independent of the parametrization. And we",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 16,
+"term": "parametrization",
+"count": 9,
+"context": "All semester we have been computing integrals: ·, ·, ·, ·, ·. Each time, we had to choose a parametrization, compute Jacobians or cross products, keep track of signs, and verify the answer was independent of the param",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 89,
+"term": "right-hand rule",
+"count": 2,
+"context": "entation of a 3D region in · is the **choice of coordinate ordering**. The “standard orientation” is · in the right-hand-rule order, corresponding to ·. The “opposite orientation” would be the left-hand rule, corresponding to ·. But un",
+"targets": [
+"Calculus|§83 The Cross Product#^prop-83-3"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 100,
+"term": "permutations",
+"count": 2,
+"context": "ientation if the permutation is odd. This is encoded by the Levi-Civita symbol · (⟂), which equals · for even permutations, · for odd, and · if any index is repeated.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 146,
+"term": "smooth function",
+"count": 3,
+"context": "> - A **0-form** is a smooth function ·.",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 154,
+"term": "coordinate derivations",
+"count": 1,
+"context": "> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, ⟂, and the covectors at all points together form the cotangent bundle, ⟂.",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^def-27-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 170,
+"term": "spherical coordinates",
+"count": 1,
+"context": "e-dependent**: in · coordinates, · is “what the form outputs when fed the unit vector in the ·-direction.” In spherical coordinates, the same form · would have different coefficient functions, because the basis vectors · are different from ·",
+"targets": [
+"Calculus|§105 Triple Integrals in Spherical Coordinates#^def-105-1",
+"Fourier Series and PDEs|§49★ Spherical Coordinates; Legendre Polynomials#^def-49-1"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 180,
+"term": "antiderivative",
+"count": 1,
+"context": ", where the coefficients come from a single function ·. But not every 1-form arises this way: · has no single antiderivative · with · and · (since ·). Such a form is called *not exact* (⟂).",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 190,
+"term": "flux",
+"count": 2,
+"context": "(In §18, the flux of a vector field · is the integral of this 2-form with ·. The subscript notation makes the structure explici",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 192,
+"term": "span",
+"count": 1,
+"context": "rametrized by ·: at each point of ·, the parametrization provides two tangent vectors · and · (from ⟂). These span a small parallelogram — the infinitesimal surface element. The 2-form eats this pair of vectors and outputs a",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-4",
+"Linear Algebra|§4 Span and Linear Independence#^ladr-2-4"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 200,
+"term": "parallelepiped",
+"count": 1,
+"context": "**3-form** (one coefficient in ·). At each point, it eats three tangent vectors (spanning a parallelepiped) and outputs signed volume times a coefficient. There is only · way to choose 3 differentials from ·: you mus",
+"targets": [
+"Linear Algebra|§27 Consequences of Singular Value Decomposition#^ladr-7-102"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 222,
+"term": "riemann sum",
+"count": 1,
+"context": "- **Riemann integration** (⟂) determines the *number*: Riemann sums, Fubini, etc.",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 243,
+"term": "norm",
+"count": 1,
+"context": "coefficients (not just smooth), limit theorems (DCT/MCT for swapping · and ·), and Hodge theory (minimizing · norms over spaces of forms). The forms framework is the same; the integration backend determines how far you can pu",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 243,
+"term": "continuous function",
+"count": 1,
+"context": "integral, but the forms framework works identically with the Lebesgue integral from §15 of the 551 notes. For continuous functions on compact domains, the two integrals agree (one of the first results in 551), so every computation here give",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§21 Introduction to Differential Forms",
+"line": 243,
+"term": "compact",
+"count": 1,
+"context": "framework works identically with the Lebesgue integral from §15 of the 551 notes. For continuous functions on compact domains, the two integrals agree (one of the first results in 551), so every computation here gives the same",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 51,
+"term": "jacobian",
+"count": 7,
+"context": "- The Jacobian determinant changes sign when two rows (or columns) are swapped.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 81,
+"term": "rearrangement",
+"count": 1,
+"context": "> More generally, if · is a rearrangement of · or has a repeated index, then ·. (For other index sets, sorting the indices gives · with ·, the sign bei",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-4"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 116,
+"term": "parametrization",
+"count": 7,
+"context": "> Let · be a · map (a **parametrization**), where · has its own **parameter coordinates** ·. The map · relates the two coordinate systems:",
+"targets": [
+"Differentiable Manifolds|§19 Manifolds in Euclidean Space#^def-19-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 183,
+"term": "flux",
+"count": 5,
+"context": "> [!example] Example §22.3: Pullback Along a Surface (Flux Integral, §18)",
+"targets": [
+"Calculus|§55 Applications to Economics and Biology#^def-55-4",
+"Complex Variables|§118★ Steady Temperatures#^def-118-1"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 271,
+"term": "smooth function",
+"count": 1,
+"context": "> For a smooth function · on ·:",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 471,
+"term": "open set",
+"count": 1,
+"context": "> Let · be a · 1-form on an open set ·, and let · be a · curve. The integral of · over · is defined by pulling back: substitute ·, ·, ·:",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 506,
+"term": "spherical coordinates",
+"count": 1,
+"context": "> **Step 1: Parametrize.** Use spherical coordinates:",
+"targets": [
+"Calculus|§105 Triple Integrals in Spherical Coordinates#^def-105-1",
+"Fourier Series and PDEs|§49★ Spherical Coordinates; Legendre Polynomials#^def-49-1"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 604,
+"term": "linear map",
+"count": 2,
+"context": "Recall from ⟂: · is differentiable at · if there exists a linear map · satisfying ·, where · and · are vectors in ·.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 619,
+"term": "inner product",
+"count": 2,
+"context": "> - On a manifold with no inner product only the differential survives, not the gradient vector: ⟂.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 649,
+"term": "positive definite",
+"count": 1,
+"context": "The second derivative test in ⟂ (checking whether · for all ·) was asking: is this bilinear form positive definite?",
+"targets": [
+"Linear Algebra|§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 667,
+"term": "clairaut's theorem",
+"count": 2,
+"context": "> [!theorem] Proposition §22.9: · Is Clairaut's Theorem in Forms Language",
+"targets": [
+"Calculus|§92 Partial Derivatives#^thm-92-2"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 704,
+"term": "higher derivatives",
+"count": 1,
+"context": "If · does not give higher derivatives of functions, what *does* it do on higher forms?",
+"targets": [
+"Calculus|§13 The Derivative as a Function#^def-13-5"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 806,
+"term": "simply connected domain",
+"count": 1,
+"context": "> - Complex version for 1-forms in the plane: ⟂ (on a simply connected domain the closed 1-form −(∂u/∂y) dx + (∂u/∂x) dy of a harmonic u is exact, which gives its harmonic conjugate).",
+"targets": [
+"Complex Variables|§52 Simply Connected Domains#^def-52-1"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 819,
+"term": "connected component",
+"count": 1,
+"context": "- · counts the connected components: no 0-form is exact (there are no ·-forms), so · is the space of closed 0-forms, i.e., locally constant funct",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-8"
+]
+},
+{
+"note": "§22 The Algebra of Differential Forms",
+"line": 837,
+"term": "curvature",
+"count": 2,
+"context": "More generally, in gauge theory and general relativity, the curvature of a connection is a 2-form, and the equations of motion (Yang–Mills, Einstein) are expressed as conditions o",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-4"
+]
+},
+{
+"note": "§23 The Generalized Stokes' Theorem",
+"line": 86,
+"term": "norm",
+"count": 2,
+"context": "Now compare with the classical form: ·. Since ·, the norms **cancel**:",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§23 The Generalized Stokes' Theorem",
+"line": 150,
+"term": "neighborhood",
+"count": 1,
+"context": "ional region with piecewise smooth boundary · (with the induced orientation). If · is a ·-form that is · on a neighborhood of ·, then:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§23 The Generalized Stokes' Theorem",
+"line": 150,
+"term": "compact",
+"count": 1,
+"context": "> Let · be an oriented, compact, piecewise smooth ·-dimensional region with piecewise smooth boundary · (with the induced orientation). If ·",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§23 The Generalized Stokes' Theorem",
+"line": 159,
+"term": "right-hand rule",
+"count": 1,
+"context": "n · (outward directions), giving ·. ·, flat: · runs counterclockwise, · on the left. ·, curved: · follows the right-hand rule around ·. ·: · carries the outward normal. One rule covers all four — outward direction first, then the orien",
+"targets": [
+"Calculus|§83 The Cross Product#^prop-83-3"
+]
+},
+{
+"note": "§3 Continuity and Limits of Functions",
+"line": 24,
+"term": "open set",
+"count": 1,
+"context": "> - MATH 590: ⟂ shows this agrees with the open-set ⟂.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§5 Equality of Mixed Partials",
+"line": 110,
+"term": "interior point",
+"count": 1,
+"context": "Read it by rows, as · with · the ·-difference along the horizontal edges (green), and two MVTs give · at the interior point ·; read it by columns, as · with · the ·-difference along the vertical edges (orange), and they give · at ·.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§6 Differentiability",
+"line": 102,
+"term": "cauchy–riemann",
+"count": 4,
+"context": "> - Complex differentiability is this differentiability for (u, v) plus the Cauchy–Riemann equations: ⟂ (the equations are necessary) and ⟂ (real differentiability plus Cauchy–Riemann gives f′).",
+"targets": [
+"Complex Variables|Cauchy–Riemann Equations"
+]
+},
+{
+"note": "§6 Differentiability",
+"line": 104,
+"term": "jacobian",
+"count": 5,
+"context": "> [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§6 Differentiability",
+"line": 122,
+"term": "smooth map",
+"count": 2,
+"context": "-free differential of a map between vector spaces, ⟂, and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§6 Differentiability",
+"line": 122,
+"term": "matrix of the differential",
+"count": 1,
+"context": "erivative becomes the coordinate-free differential of a map between vector spaces, ⟂, and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, ⟂.",
+"targets": [
+"Differentiable Manifolds|Matrix of the Differential"
+]
+},
+{
+"note": "§6 Differentiability",
+"line": 224,
+"term": "open set",
+"count": 1,
+"context": "> Let · be an open set. If · and · exist and are continuous on ·, then · is differentiable at every point of ·.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§7 Directional Derivatives",
+"line": 116,
+"term": "contour map",
+"count": 1,
+"context": "*The gradient as a field on the contour map of · (contours · for ·, values marked on the left). At every point, · is perpendicular to the contour through",
+"targets": [
+"Calculus|§90 Functions of Several Variables#^def-90-4"
+]
+},
+{
+"note": "§7 Directional Derivatives",
+"line": 116,
+"term": "contour",
+"count": 6,
+"context": "*The gradient as a field on the contour map of · (contours · for ·, values marked on the left). At every point, · is perpendicular to the contour thr",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§8 The Differential",
+"line": 64,
+"term": "linear map",
+"count": 2,
+"context": "> The differential · is precisely the **linear map** · from our ⟂!",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1",
+"Linear Algebra|§7 Vector Space of Linear Maps#^ladr-3-1"
+]
+},
+{
+"note": "§8 The Differential",
+"line": 121,
+"term": "curvature",
+"count": 2,
+"context": "> The second differential · is a **⟂** in ·. It captures the **curvature** or second-order behavior of ·:",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-4"
+]
+},
+{
+"note": "§8 The Differential",
+"line": 145,
+"term": "binomial theorem",
+"count": 1,
+"context": "> where we expand the power using the binomial theorem and then apply the resulting differential operators to ·.",
+"targets": [
+"Logic and Proofs|Binomial Theorem"
+]
+},
+{
+"note": "§8 The Differential",
+"line": 154,
+"term": "quadratic form",
+"count": 2,
+"context": "| · | · | Quadratic form (curvature) |",
+"targets": [
+"Applied Linear Algebra|§49★ Quadratic Forms#^def-49-1"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 10,
+"term": "taylor's theorem",
+"count": 2,
+"context": "## Review: Single-Variable Taylor's Theorem",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 100,
+"term": "binomial coefficients",
+"count": 1,
+"context": "> Note the binomial coefficients! This is why we can write symbolically:",
+"targets": [
+"Calculus|§78 Taylor and Maclaurin Series#^def-78-3",
+"Logic and Proofs|§12★ Counting Functions and Subsets#^def-12-5"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 111,
+"term": "neighborhood",
+"count": 1,
+"context": "> Let · have continuous partial derivatives up to order · in a neighborhood of ·. Then:",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 160,
+"term": "taylor polynomial",
+"count": 1,
+"context": "> The answer is that the Taylor polynomial · is the **unique polynomial that matches all partial derivatives of · at ·** up to order ·. The linear path",
+"targets": [
+"Calculus|§78 Taylor and Maclaurin Series#^def-78-2"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 162,
+"term": "curvature",
+"count": 1,
+"context": "> - No path curvature: · for ·",
+"targets": [
+"Calculus|§88 Arc Length and Curvature#^def-88-4"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 230,
+"term": "interior point",
+"count": 1,
+"context": "its maximum and minimum (⟂). If ·, then · is constant and ·. Otherwise, at least one of max/min occurs at an interior point ·, where · (⟂).",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 238,
+"term": "fermat's theorem",
+"count": 1,
+"context": "> - Fermat's theorem in ·: ⟂.",
+"targets": [
+"Calculus|Fermat's Theorem on Local Extrema",
+"Calculus|§25 Maximum and Minimum Values#^thm-25-2"
+]
+},
+{
+"note": "§9 Taylor's Theorem for Multivariable Functions",
+"line": 250,
+"term": "secant line",
+"count": 1,
+"context": "> Define the secant line:",
+"targets": [
+"Calculus|§6 The Tangent and Velocity Problems#^def-6-1"
+]
+}
+]

@@ -1,0 +1,275 @@
+[
+{
+"concept": "basi",
+"a": "Linear Algebra | [[§5 Bases#^ladr-2-26]] | Definition 2.26: Basis",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-1]] | Definition §1.1: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Linear Algebra | [[§5 Bases#^ladr-2-26]] | Definition 2.26: Basis",
+"b": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-5]] | Proposition §30.5: A Basis of $I_p/I_p^2$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-1]] | Definition §1.1: Basis",
+"b": "Applied Linear Algebra | [[§25 Linearly Independent Sets; Bases#^def-25-2]] | Definition §25.2: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-1]] | Definition §1.1: Basis",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-4]] | Definition §18.4: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-5]] | Proposition §30.5: A Basis of $I_p/I_p^2$",
+"b": "Applied Linear Algebra | [[§25 Linearly Independent Sets; Bases#^def-25-2]] | Definition §25.2: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-5]] | Proposition §30.5: A Basis of $I_p/I_p^2$",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-4]] | Definition §18.4: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "quotient map",
+"a": "Linear Algebra | [[§11 Products and Quotients of Vector Spaces#^ladr-3-104]] | Definition 3.104: Quotient map, π",
+"b": "Differentiable Manifolds | [[§5 Quotient Maps#^def-5-1]] | Definition §5.1: Quotient Map",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "quotient map",
+"a": "Linear Algebra | [[§11 Products and Quotients of Vector Spaces#^ladr-3-104]] | Definition 3.104: Quotient map, π",
+"b": "Differentiable Manifolds | [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-2]] | Corollary §14.2: $\\pi$ Is a Quotient Map",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "quotient map",
+"a": "Topology | [[§12 Quotient Topology#^def-12-1]] | Definition §12.1: Quotient Map",
+"b": "Differentiable Manifolds | [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-2]] | Corollary §14.2: $\\pi$ Is a Quotient Map",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "direct sum",
+"a": "Linear Algebra | [[§3 Subspaces#^ladr-1-41]] | Definition 1.41: Direct sum, ⊕",
+"b": "Differentiable Manifolds | [[§20 Linear Algebra Toolkit#^def-20-5]] | Definition §20.5: Direct Sum",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "direct sum",
+"a": "Functional Analysis | [[§1 Linear Spaces#^def-1-4]] | Definition §1.4: Direct Sum",
+"b": "Differentiable Manifolds | [[§20 Linear Algebra Toolkit#^def-20-5]] | Definition §20.5: Direct Sum",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "inverse function theorem",
+"a": "Single Variable Analysis | [[§29 The Mean Value Theorem#^thm-29-10]] | Theorem §29.10: Inverse Function Theorem",
+"b": "Differentiable Manifolds | [[§31 Local Diffeomorphisms#^thm-31-1]] | Theorem §31.1: Inverse Function Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Single Variable Analysis | [[§28 Basic Properties of the Derivative#^thm-28-3]] | Theorem §28.3: Chain Rule",
+"b": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Calculus | [[§94 The Chain Rule#^thm-94-1]] | Theorem §94.1: The Chain Rule (Case 1)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Calculus | [[§94 The Chain Rule#^thm-94-2]] | Theorem §94.2: The Chain Rule (Case 2)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Calculus | [[§94 The Chain Rule#^thm-94-3]] | Theorem §94.3: The Chain Rule (General Version)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Calculus | [[§17 The Chain Rule#^thm-17-2]] | Theorem §17.2: The Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "metric space",
+"a": "Single Variable Analysis | [[§13 Some Topological Concepts in Metric Spaces#^def-13-1]] | Definition §13.1: Metric Space",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^prop-1-6]] | Proposition §1.6: Metric Spaces",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "metric space",
+"a": "Functional Analysis | [[§10 Normed Linear Spaces#^def-10-3]] | Definition §10.3: Metric Space",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^prop-1-6]] | Proposition §1.6: Metric Spaces",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "second countable",
+"a": "Topology | [[§18 Countability Axioms#^def-18-3]] | Definition §18.3: Second-Countable",
+"b": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-5]] | Definition §1.5: Second Countable",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "product topology",
+"a": "Topology | [[§4 Product Topology#^def-4-1]] | Definition §4.1: Product Topology on $X \\times Y$",
+"b": "Differentiable Manifolds | [[§3 Subspaces and Products#^def-3-3]] | Definition §3.3: Product Topology",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "topology",
+"a": "Topology | [[§1 Topological Spaces#^def-1-1]] | Definition §1.1: Topology",
+"b": "Differentiable Manifolds | [[§35 The Tangent Bundle#^prop-35-1]] | Proposition §35.1: The Topology of $TM$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§15 Compact Spaces#^def-15-2]] | Definition §15.2: Compact",
+"b": "Differentiable Manifolds | [[§9 Complex Projective Space#^prop-9-2]] | Proposition §9.2: $\\mathbb{CP}^n$ Is Compact",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "compact",
+"a": "Topology | [[§15 Compact Spaces#^def-15-2]] | Definition §15.2: Compact",
+"b": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5]] | Corollary §22.5: $\\mathrm{U}(n)$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§17 Local Compactness#^prop-17-3]] | Proposition §17.3: $Y$ is Compact",
+"b": "Differentiable Manifolds | [[§9 Complex Projective Space#^prop-9-2]] | Proposition §9.2: $\\mathbb{CP}^n$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "compact",
+"a": "Topology | [[§17 Local Compactness#^prop-17-3]] | Proposition §17.3: $Y$ is Compact",
+"b": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5]] | Corollary §22.5: $\\mathrm{U}(n)$ Is Compact",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "algebra",
+"a": "Measure Theory | [[§10 Lebesgue Measurable Sets#^def-10-3]] | Definition §10.3: Algebra",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-4]] | Proposition §25.4: $C_p^\\infty(M)$ Is an $\\mathbb{R}$-Algebra",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "algebra",
+"a": "Measure Theory | [[§10 Lebesgue Measurable Sets#^def-10-4]] | Definition §10.4: $\\sigma$-Algebra",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-4]] | Proposition §25.4: $C_p^\\infty(M)$ Is an $\\mathbb{R}$-Algebra",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basic propertie",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-1]] | Proposition §15.1: Basic Properties",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-1]] | Proposition §25.1: Basic Properties of $D_v$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basic propertie",
+"a": "Measure Theory | [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3]] | Proposition §14.3: Basic Properties",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-1]] | Proposition §25.1: Basic Properties of $D_v$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5]] | Definition §19.5: $L^p$ Space",
+"b": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-2]] | Definition §30.2: The Space $I_p/I_p^2$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Functional Analysis | [[§26 Boundedness and Continuity#^def-26-3]] | Definition §26.3: The Space $\\mathcal{L}(X, Y)$",
+"b": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-2]] | Definition §30.2: The Space $I_p/I_p^2$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "differential",
+"a": "Differentiable Manifolds | [[§21 The Differential of a Map Between Vector Spaces#^def-21-4]] | Definition §21.4: The Differential",
+"b": "Calculus | [[§93 Tangent Planes and Linear Approximations#^def-93-4]] | Definition §93.4: Differentials",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "differential",
+"a": "Differentiable Manifolds | [[§21 The Differential of a Map Between Vector Spaces#^def-21-4]] | Definition §21.4: The Differential",
+"b": "Calculus | [[§23 Linear Approximations and Differentials#^def-23-2]] | Definition §23.2: Differentials",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "one sided inverse suffice",
+"a": "Differentiable Manifolds | [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3]] | Lemma §22.3: A One-Sided Inverse Suffices",
+"b": "Group Theory | [[§2 First Consequences of the Axioms#^prop-2-6]] | Proposition §2.6: One-Sided Inverses Suffice",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "vector field",
+"a": "Differentiable Manifolds | [[§35 The Tangent Bundle#^def-35-4]] | Definition §35.4: Vector Field",
+"b": "Calculus | [[§107 Vector Fields#^def-107-1]] | Definition §107.1: Vector Field on ℝ²",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "vector field",
+"a": "Differentiable Manifolds | [[§35 The Tangent Bundle#^def-35-4]] | Definition §35.4: Vector Field",
+"b": "Calculus | [[§107 Vector Fields#^def-107-2]] | Definition §107.2: Vector Field on ℝ³",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi theorem",
+"a": "Differentiable Manifolds | [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5]] | Theorem §27.5: Basis Theorem",
+"b": "Applied Linear Algebra | [[§27 The Dimension of a Vector Space#^thm-27-5]] | Theorem §27.5: The Basis Theorem",
+"a_links_b": false,
+"b_links_a": false
+}
+]

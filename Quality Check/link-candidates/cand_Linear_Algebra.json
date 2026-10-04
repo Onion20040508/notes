@@ -1,0 +1,1740 @@
+[
+{
+"note": "Cauchy–Schwarz inequality",
+"line": 24,
+"term": "hölder's inequality",
+"count": 1,
+"context": "- Proved again for arbitrary inner product spaces in ⟂; Hölder's inequality (⟂) generalizes its case for sequences from the exponents 2, 2 to any conjugate pair.",
+"targets": [
+"Measure Theory|Hölder's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5"
+]
+},
+{
+"note": "Cauchy–Schwarz inequality",
+"line": 24,
+"term": "hölder",
+"count": 1,
+"context": "- Proved again for arbitrary inner product spaces in ⟂; Hölder's inequality (⟂) generalizes its case for sequences from the exponents 2, 2 to any conjugate pair.",
+"targets": [
+"Measure Theory|Hölder's Inequality"
+]
+},
+{
+"note": "Condition for a direct sum",
+"line": 20,
+"term": "linear independence",
+"count": 1,
+"context": "- Same idea as linear independence (⟂): uniqueness everywhere follows from uniqueness at ·.",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "Dimension shows whether vector spaces are isomorphic",
+"line": 22,
+"term": "separable",
+"count": 1,
+"context": "- Hilbert-space analogue: a separable Hilbert space is isomorphic to Fⁿ or to ℓ², ⟂.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Dimension shows whether vector spaces are isomorphic",
+"line": 22,
+"term": "hilbert space",
+"count": 2,
+"context": "- Hilbert-space analogue: a separable Hilbert space is isomorphic to Fⁿ or to ℓ², ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "Every spanning list contains a basis",
+"line": 24,
+"term": "pivot column",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the Spanning Set Theorem; for matrix columns, the pivot columns, ⟂).",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-3"
+]
+},
+{
+"note": "First isomorphism theorem",
+"line": 18,
+"term": "universal property",
+"count": 2,
+"context": "- Universal property: any linear map that kills · factors uniquely through ·.",
+"targets": [
+"Topology|§12 Quotient Topology#^thm-12-3"
+]
+},
+{
+"note": "First isomorphism theorem",
+"line": 19,
+"term": "subgroup",
+"count": 1,
+"context": "- Group version: ⟂ (MATH 493 §41.1), where the kernel is always a normal subgroup but the image need not be.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "First isomorphism theorem",
+"line": 19,
+"term": "kernel",
+"count": 1,
+"context": "- Group version: ⟂ (MATH 493 §41.1), where the kernel is always a normal subgroup but the image need not be.",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "First isomorphism theorem",
+"line": 19,
+"term": "normal subgroup",
+"count": 1,
+"context": "- Group version: ⟂ (MATH 493 §41.1), where the kernel is always a normal subgroup but the image need not be.",
+"targets": [
+"Group Theory|§38 Normal Subgroups#^def-38-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-12"
+]
+},
+{
+"note": "Fundamental theorem of algebra, first version",
+"line": 19,
+"term": "complex eigenvalue",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (stated without proof, in factored form, to count the complex eigenvalues of an n × n matrix).",
+"targets": [
+"Applied Linear Algebra|§36 Complex Eigenvalues#^def-36-1"
+]
+},
+{
+"note": "Gram–Schmidt procedure",
+"line": 30,
+"term": "legendre polynomials",
+"count": 1,
+"context": "- Applied to · with · it produces the Legendre polynomials (⟂), the angular part of multipole expansions.",
+"targets": [
+"Fourier Series and PDEs|§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3"
+]
+},
+{
+"note": "Gram–Schmidt procedure",
+"line": 31,
+"term": "countable",
+"count": 1,
+"context": "e procedure for an infinite linearly independent sequence: ⟂, used to show that separable Hilbert spaces have countable orthonormal bases.",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "Gram–Schmidt procedure",
+"line": 31,
+"term": "separable",
+"count": 1,
+"context": "- Same procedure for an infinite linearly independent sequence: ⟂, used to show that separable Hilbert spaces have countable orthonormal bases.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "Gram–Schmidt procedure",
+"line": 31,
+"term": "hilbert space",
+"count": 1,
+"context": "- Same procedure for an infinite linearly independent sequence: ⟂, used to show that separable Hilbert spaces have countable orthonormal bases.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "Gram–Schmidt procedure",
+"line": 31,
+"term": "separable hilbert spaces have countable orthonormal bases",
+"count": 1,
+"context": "- Same procedure for an infinite linearly independent sequence: ⟂, used to show that separable Hilbert spaces have countable orthonormal bases.",
+"targets": [
+"Functional Analysis|Separable Hilbert Spaces Have Countable Orthonormal Bases"
+]
+},
+{
+"note": "Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)",
+"line": 32,
+"term": "invertible matrix",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the Invertible Matrix Theorem: for square A, x ↦ Ax is one-to-one iff onto iff A is invertible).",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-1"
+]
+},
+{
+"note": "Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)",
+"line": 32,
+"term": "invertible matrix theorem",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (the Invertible Matrix Theorem: for square A, x ↦ Ax is one-to-one iff onto iff A is invertible).",
+"targets": [
+"Applied Linear Algebra|The Invertible Matrix Theorem"
+]
+},
+{
+"note": "Invertible ⟺ nonzero determinant",
+"line": 38,
+"term": "cofactor",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (matrix version, with the cofactor formula for the inverse and a worked example).",
+"targets": [
+"Applied Linear Algebra|§20 Introduction to Determinants#^def-20-3"
+]
+},
+{
+"note": "Real spectral theorem",
+"line": 28,
+"term": "quadratic form",
+"count": 1,
+"context": "- Complex version ⟂. Applications: principal axes of quadratic forms (⟂), normal modes of coupled oscillators (the stiffness matrix is symmetric), the inertia tensor.",
+"targets": [
+"Applied Linear Algebra|§49★ Quadratic Forms#^def-49-1"
+]
+},
+{
+"note": "Real spectral theorem",
+"line": 31,
+"term": "smooth function",
+"count": 1,
+"context": "ville analogue: a self-adjoint differential operator has orthogonal eigenfunctions in which every sectionally smooth function expands, with worked examples).",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "Real spectral theorem",
+"line": 31,
+"term": "eigenfunctions",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ and ⟂ (the Sturm–Liouville analogue: a self-adjoint differential operator has orthogonal eigenfunctions in which every sectionally smooth function expands, with worked examples).",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "Real spectral theorem",
+"line": 31,
+"term": "sectionally smooth function",
+"count": 1,
+"context": "e Sturm–Liouville analogue: a self-adjoint differential operator has orthogonal eigenfunctions in which every sectionally smooth function expands, with worked examples).",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^def-8-4"
+]
+},
+{
+"note": "Riesz representation theorem",
+"line": 20,
+"term": "bijection",
+"count": 1,
+"context": "- Revisited as a bijection · (conjugate-linear over ·): ⟂. Defines the adjoint in Chapter 7 (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "Riesz representation theorem",
+"line": 21,
+"term": "hilbert space",
+"count": 2,
+"context": "e exactly functionals, and every bra is · for a unique ket ·. In infinite dimensions this needs completeness (Hilbert spaces), and the 'kets' of ·-functionals are not in the space at all.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "Singular value decomposition",
+"line": 17,
+"term": "spectrum",
+"count": 1,
+"context": "midt decomposition of a bipartite pure state is the SVD of its coefficient matrix; the · are the entanglement spectrum.",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "Triangle inequality",
+"line": 29,
+"term": "minkowski's inequality",
+"count": 1,
+"context": "- For a general norm this is an axiom (⟂); for the ℓᵖ norms it is Minkowski's inequality, ⟂.",
+"targets": [
+"Measure Theory|Minkowski's Inequality",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-9"
+]
+},
+{
+"note": "Triangle inequality",
+"line": 29,
+"term": "minkowski",
+"count": 1,
+"context": "- For a general norm this is an axiom (⟂); for the ℓᵖ norms it is Minkowski's inequality, ⟂.",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "Triangle inequality",
+"line": 31,
+"term": "cauchy–schwarz",
+"count": 1,
+"context": "- **Also in ⟂:** ⟂ (real inner product spaces, with the Cauchy–Schwarz proof).",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§1 Rⁿ and Cⁿ",
+"line": 59,
+"term": "field axioms",
+"count": 1,
+"context": "> - These are the field axioms; · and · are fields. The vector-space axioms ⟂ copy this list with scalars acting on vectors.",
+"targets": [
+"Single Variable Analysis|§3 The Set ℝ of Real Numbers#^def-3-1"
+]
+},
+{
+"note": "§1 Rⁿ and Cⁿ",
+"line": 60,
+"term": "uniqueness of inverses",
+"count": 1,
+"context": "> - Uniqueness of inverses is what makes ⟂ well defined.",
+"targets": [
+"Group Theory|§2 First Consequences of the Axioms#^prop-2-3"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 60,
+"term": "standard matrix",
+"count": 2,
+"context": "> - In ℝⁿ: ⟂ (T is invertible iff its standard matrix is), with ⟂ (invertible means one-to-one and onto).",
+"targets": [
+"Applied Linear Algebra|§9 The Matrix of a Linear Transformation#^def-9-1"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 88,
+"term": "cardinality",
+"count": 1,
+"context": "> - Finite-set analogue, with cardinality in place of dimension: ⟂.",
+"targets": [
+"Logic and Proofs|§10 Counting#^def-10-1"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 89,
+"term": "invertible matrix theorem",
+"count": 1,
+"context": "> - Matrix version: the Invertible Matrix Theorem, ⟂ ((a), (f) and (i) are equivalent for square A).",
+"targets": [
+"Applied Linear Algebra|The Invertible Matrix Theorem"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 90,
+"term": "boundary value problem",
+"count": 2,
+"context": "> - Analogue for boundary value problems: ⟂ (a two-point boundary value problem has exactly one solution for every right side unless the homogeneous p",
+"targets": [
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-1"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 214,
+"term": "change of basis",
+"count": 3,
+"context": "> - Used in ⟂ and in the change-of-basis story ⟂.",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 229,
+"term": "pivot column",
+"count": 1,
+"context": "> - In ℝⁿ: the range of x ↦ Ax is Col A (⟂), of dimension rank A, the number of pivot columns (⟂).",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-3"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 252,
+"term": "general linear group",
+"count": 2,
+"context": "> - The invertible n-by-n matrices form a group under multiplication, the general linear group: ⟂.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-4"
+]
+},
+{
+"note": "§10 Invertibility and Isomorphisms",
+"line": 327,
+"term": "jacobian",
+"count": 1,
+"context": "> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map (⟂); it gives the transition maps of the tangent bundle, ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 25,
+"term": "universal property",
+"count": 2,
+"context": "> - Group version: the direct product, ⟂, with its universal property in ⟂.",
+"targets": [
+"Topology|§12 Quotient Topology#^thm-12-3"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 27,
+"term": "product manifold",
+"count": 1,
+"context": "> - 591 also calls this product the direct sum: ⟂; the tangent space of a product manifold is such a direct sum, ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-6"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 131,
+"term": "abelian group",
+"count": 1,
+"context": "> - Group version: v + U is the coset of U in the abelian group (V, +), ⟂.",
+"targets": [
+"Group Theory|§1 The Definition of a Group#^def-1-2"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 152,
+"term": "subgroup",
+"count": 4,
+"context": "> - Same construction as quotient groups and rings in abstract algebra (⟂): · plays the role of the normal subgroup/ideal.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 152,
+"term": "normal subgroup",
+"count": 3,
+"context": "> - Same construction as quotient groups and rings in abstract algebra (⟂): · plays the role of the normal subgroup/ideal.",
+"targets": [
+"Group Theory|§38 Normal Subgroups#^def-38-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-12"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 155,
+"term": "cotangent space from germs",
+"count": 1,
+"context": "> - Same construction in 591, with its universal property: ⟂, ⟂; it builds the cotangent space from germs in ⟂.",
+"targets": [
+"Differentiable Manifolds|Cotangent Space from Germs"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 177,
+"term": "equivalence relation",
+"count": 1,
+"context": "> Two translates of a subspace are equal or disjoint, so the translates partition ·; \"·\" is the corresponding equivalence relation.",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 184,
+"term": "cosets",
+"count": 1,
+"context": "> - Group version: the cosets of a subgroup partition the group, ⟂ (hub ⟂).",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-13"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 232,
+"term": "homomorphism",
+"count": 1,
+"context": "> - Group version: the canonical projection onto G/N is a surjective homomorphism with kernel N, ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 232,
+"term": "kernel",
+"count": 1,
+"context": "> - Group version: the canonical projection onto G/N is a surjective homomorphism with kernel N, ⟂.",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 250,
+"term": "lagrange's theorem",
+"count": 1,
+"context": "> - Counting analogue: for V over a finite field, |V/U| = |V|/|U| is Lagrange's theorem for (V, +), ⟂, and taking logarithms gives this formula.",
+"targets": [
+"Group Theory|Lagrange's Theorem"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 251,
+"term": "x ≅ x∕y ⊕ y",
+"count": 1,
+"context": "> - Without counting dimensions: ⟂ gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.",
+"targets": [
+"Functional Analysis|X ≅ X∕Y ⊕ Y"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 284,
+"term": "indefinite integral",
+"count": 1,
+"context": "up to an additive constant\", and · is an isomorphism onto ·. Its inverse sends · to the coset ·, i.e. \"·\": an indefinite integral is precisely an element of this quotient. Dimensions: ·, as ⟂ predicts.",
+"targets": [
+"Calculus|§37 Indefinite Integrals and the Net Change Theorem#^def-37-1"
+]
+},
+{
+"note": "§11 Products and Quotients of Vector Spaces",
+"line": 286,
+"term": "surjection",
+"count": 1,
+"context": "> The general picture: · factors as surjection, isomorphism, inclusion.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1"
+]
+},
+{
+"note": "§12 Duality",
+"line": 75,
+"term": "coordinate derivations",
+"count": 1,
+"context": "in 591: ⟂, a basis of the dual by ⟂; the differentials of the coordinate functions form the dual basis of the coordinate derivations, ⟂.",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^def-27-2"
+]
+},
+{
+"note": "§12 Duality",
+"line": 124,
+"term": "pullback",
+"count": 1,
+"context": "> · is a linear functional on ·, and ·, ·. Note · goes *backwards*, from · to · (pullback).",
+"targets": [
+"Multivariable Analysis|§22 The Algebra of Differential Forms#^def-22-3"
+]
+},
+{
+"note": "§12 Duality",
+"line": 136,
+"term": "fundamental theorem of calculus",
+"count": 1,
+"context": "> The second item is the fundamental theorem of calculus in the language of duality. Directions: · goes · but · goes ·:",
+"targets": [
+"Single Variable Analysis|Fundamental Theorem of Calculus"
+]
+},
+{
+"note": "§12 Duality",
+"line": 174,
+"term": "codimension",
+"count": 1,
+"context": "> - The conormal space of a submanifold is the annihilator of its tangent space: ⟂, of dimension the codimension by ⟂.",
+"targets": [
+"Differentiable Manifolds|§24 Transversality#^def-24-1"
+]
+},
+{
+"note": "§12 Duality",
+"line": 319,
+"term": "jacobian",
+"count": 1,
+"context": "> - This is why covector components change by the transpose of the inverse Jacobian: ⟂.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§13 Polynomials",
+"line": 131,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> No long division: existence and uniqueness both come from a basis of ·.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§13 Polynomials",
+"line": 157,
+"term": "extreme value theorem",
+"count": 1,
+"context": "> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the extreme value theorem). There is no purely algebraic proof over ·.",
+"targets": [
+"Single Variable Analysis|Extreme Value Theorem",
+"Single Variable Analysis|§18 Properties of Continuous Functions#^thm-18-1"
+]
+},
+{
+"note": "§13 Polynomials",
+"line": 157,
+"term": "continuous function",
+"count": 2,
+"context": "> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the extreme value theorem). There is no purely algebraic proof over ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§13 Polynomials",
+"line": 157,
+"term": "compact",
+"count": 2,
+"context": "> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the extreme value theorem). There is no purely algebraic proof over ·.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§14 Invariant Subspaces",
+"line": 60,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - Computational version: eigenvalues and eigenfunctions of differential operators with boundary conditions, such as · with fixed or insulated ends, ⟂, ⟂, computed in",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§14 Invariant Subspaces",
+"line": 81,
+"term": "hilbert space",
+"count": 1,
+"context": "> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space can contain points that are not eigenvalues (continuous spectrum).",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§14 Invariant Subspaces",
+"line": 81,
+"term": "spectrum",
+"count": 2,
+"context": "> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space can contain points that are not eigenvalues (continuous spectrum).",
+"targets": [
+"Applied Linear Algebra|§48★ Diagonalization of Symmetric Matrices#^def-48-3"
+]
+},
+{
+"note": "§15 The Minimal Polynomial",
+"line": 29,
+"term": "fundamental theorem of algebra",
+"count": 1,
+"context": "> - Computational version: ⟂ (by the Fundamental Theorem of Algebra the characteristic equation of an · matrix has · complex roots, counted with multiplicity; they are eigenvalu",
+"targets": [
+"Complex Variables|Fundamental Theorem of Algebra (Liouville proof)",
+"Complex Variables|§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2",
+"Topology|Fundamental Theorem of Algebra (topological proof)",
+"Topology|§25 The Fundamental Theorem of Algebra#^thm-25-1"
+]
+},
+{
+"note": "§15 The Minimal Polynomial",
+"line": 29,
+"term": "characteristic equation",
+"count": 1,
+"context": "> - Computational version: ⟂ (by the Fundamental Theorem of Algebra the characteristic equation of an · matrix has · complex roots, counted with multiplicity; they are eigenvalues in the sense of ⟂).",
+"targets": [
+"Applied Linear Algebra|Eigenvalues Are the Roots of the Characteristic Equation",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-3",
+"Ordinary Differential Equations|Constant-Coefficient Second-Order Equations",
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4"
+]
+},
+{
+"note": "§15 The Minimal Polynomial",
+"line": 136,
+"term": "subgroup",
+"count": 1,
+"context": "> - Same least-element argument as for subgroups of ℤ, which are all of the form nℤ: ⟂ (hub ⟂).",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§16 Upper-Triangular Matrices",
+"line": 24,
+"term": "change of basis",
+"count": 1,
+"context": "> - Special case of ⟂ with the same basis on both sides; change of basis is ⟂.",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§16 Upper-Triangular Matrices",
+"line": 42,
+"term": "trace",
+"count": 1,
+"context": "> - For upper-triangular matrices the diagonal is exactly the list of eigenvalues: ⟂. Its sum is the trace (⟂).",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§16 Upper-Triangular Matrices",
+"line": 121,
+"term": "standard matrix",
+"count": 1,
+"context": "> For · of ⟂, the standard matrix is upper triangular with diagonal ·, so by ⟂ the eigenvalues are exactly ·, ·, ·, with no computation.",
+"targets": [
+"Applied Linear Algebra|§9 The Matrix of a Linear Transformation#^def-9-1"
+]
+},
+{
+"note": "§17 Diagonalizable Operators",
+"line": 34,
+"term": "standard matrix",
+"count": 1,
+"context": "> · on · has standard matrix ·, not diagonal. But",
+"targets": [
+"Applied Linear Algebra|§9 The Matrix of a Linear Transformation#^def-9-1"
+]
+},
+{
+"note": "§17 Diagonalizable Operators",
+"line": 142,
+"term": "fibonacci numbers",
+"count": 1,
+"context": "> (Checked with exponent · in place of ·.) The same idea gives a closed formula for the Fibonacci numbers.",
+"targets": [
+"Logic and Proofs|§5 The Induction Principle#^def-5-5"
+]
+},
+{
+"note": "§19 Inner Products and Norms",
+"line": 111,
+"term": "distance formula",
+"count": 1,
+"context": "> - Example (a) in ℝ² and ℝ³: ⟂; the distance formula ⟂ is ‖P₂ − P₁‖.",
+"targets": [
+"Calculus|§117 Coordinate Geometry and Lines#^thm-117-1"
+]
+},
+{
+"note": "§19 Inner Products and Norms",
+"line": 264,
+"term": "jordan–von neumann theorem",
+"count": 1,
+"context": "> - The converse, that a norm satisfying this identity comes from an inner product, is the Jordan–von Neumann theorem: ⟂ (polarization in ⟂).",
+"targets": [
+"Functional Analysis|Jordan–von Neumann Theorem"
+]
+},
+{
+"note": "§2 Definition of Vector Space",
+"line": 18,
+"term": "closure",
+"count": 1,
+"context": "> - The two operations in ⟂. Note the closure is built in: results land in ·.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§2 Definition of Vector Space",
+"line": 39,
+"term": "superposition",
+"count": 1,
+"context": "> - Physics: the superposition principle is the statement that states can be added and scaled, i.e. that they live in a vector space.",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§2 Definition of Vector Space",
+"line": 78,
+"term": "pointwise",
+"count": 2,
+"context": "> For a nonempty set ·, · (functions ·) with pointwise operations ·, · is a vector space. Its zero is the function · and ·.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§2 Definition of Vector Space",
+"line": 104,
+"term": "zero vector",
+"count": 1,
+"context": "> - Computational version: ⟂ (the zero vector and negatives are unique).",
+"targets": [
+"Applied Linear Algebra|§3 Vector Equations#^def-3-1"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 29,
+"term": "orthogonality",
+"count": 4,
+"context": "> - (d) · in · with ·: the Fourier basis (orthogonality is · for ·, etc.).",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 95,
+"term": "hilbert space",
+"count": 3,
+"context": "> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector (⟂); in infinite dimensions it is nev",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 96,
+"term": "basis of a subspace",
+"count": 1,
+"context": "> - Computational version: ⟂ (orthonormal basis of a subspace of ·).",
+"targets": [
+"Differentiable Manifolds|§3 Subspaces and Products#^lem-3-1"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 116,
+"term": "parseval",
+"count": 3,
+"context": "> - (b) · (Parseval);",
+"targets": [
+"Functional Analysis|Characterizations of an Orthonormal Basis"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 206,
+"term": "countable",
+"count": 1,
+"context": "> - Every Hilbert space has an orthonormal basis (⟂, by Zorn's lemma), and a countable one exactly when it is separable (⟂).",
+"targets": [
+"Logic and Proofs|§14 Counting Infinite Sets#^def-14-2",
+"Measure Theory|§1 Countability and Set Theory#^def-1-8",
+"Single Variable Analysis|§2 The Set ℚ of Rational Numbers#^def-2-8"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 206,
+"term": "separable",
+"count": 1,
+"context": "> - Every Hilbert space has an orthonormal basis (⟂, by Zorn's lemma), and a countable one exactly when it is separable (⟂).",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 206,
+"term": "zorn's lemma",
+"count": 1,
+"context": "> - Every Hilbert space has an orthonormal basis (⟂, by Zorn's lemma), and a countable one exactly when it is separable (⟂).",
+"targets": [
+"Functional Analysis|Zorn's Lemma",
+"Functional Analysis|§5 Proof of the Hahn–Banach Theorem#^thm-5-2"
+]
+},
+{
+"note": "§20 Orthonormal Bases",
+"line": 206,
+"term": "zorn",
+"count": 1,
+"context": "> - Every Hilbert space has an orthonormal basis (⟂, by Zorn's lemma), and a countable one exactly when it is separable (⟂).",
+"targets": [
+"Functional Analysis|Zorn's Lemma"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 22,
+"term": "hilbert space",
+"count": 7,
+"context": "> - Same definition for arbitrary subsets of a Hilbert space: ⟂; the complement is always closed, ⟂.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 60,
+"term": "continuous function",
+"count": 1,
+"context": "> Only · must be. Without that, it can fail: in the space of continuous functions (or ·-type sequence spaces) a dense subspace · can have ·.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 60,
+"term": "dense",
+"count": 1,
+"context": "Only · must be. Without that, it can fail: in the space of continuous functions (or ·-type sequence spaces) a dense subspace · can have ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 74,
+"term": "orthogonal decomposition theorem",
+"count": 1,
+"context": "> - Computational version: ⟂ (the Orthogonal Decomposition Theorem, with the projection formula).",
+"targets": [
+"Functional Analysis|Orthogonal Decomposition Theorem"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 109,
+"term": "closed linear span",
+"count": 1,
+"context": "> - For any subset of a Hilbert space the double complement is the closed linear span: ⟂.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-8"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 109,
+"term": "linear span",
+"count": 1,
+"context": "> - For any subset of a Hilbert space the double complement is the closed linear span: ⟂.",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-5"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 174,
+"term": "bijection",
+"count": 3,
+"context": "> Let · be finite-dimensional. For · define · by ·. Then · is a bijection ·.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 206,
+"term": "gram–schmidt",
+"count": 2,
+"context": "> Best approximation from · = orthogonal projection, computed by ⟂(i) after Gram–Schmidt. This is least squares, Fourier truncation, and ⟂.",
+"targets": [
+"Functional Analysis|§24 Orthonormal Sets and Bases#^lem-24-14"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 219,
+"term": "convex set",
+"count": 1,
+"context": "> - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, ⟂.",
+"targets": [
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 221,
+"term": "trigonometric polynomial",
+"count": 1,
+"context": "> - Computational version: ⟂ (the truncated Fourier series, the projection onto the trigonometric polynomials of degree at most ·, has the smallest mean square error, with the minimum computed).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-3"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 221,
+"term": "fourier series",
+"count": 1,
+"context": "> - Computational version: ⟂ (the truncated Fourier series, the projection onto the trigonometric polynomials of degree at most ·, has the smallest mean square error, w",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§21 Orthogonal Complements and Minimization Problems",
+"line": 236,
+"term": "taylor polynomial",
+"count": 1,
+"context": "> Compare the Taylor polynomial ·: Taylor is perfect near · and poor near ·, while · spreads the error over the whole interval. On this scale",
+"targets": [
+"Calculus|§78 Taylor and Maclaurin Series#^def-78-2"
+]
+},
+{
+"note": "§22 Self-Adjoint and Normal Operators",
+"line": 21,
+"term": "adjugate",
+"count": 1,
+"context": "ds alone in the first slot; what sits in the second slot is · (⟂, ⟂). Not related to the 'classical adjoint' (adjugate) of a matrix.",
+"targets": [
+"Applied Linear Algebra|§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-2"
+]
+},
+{
+"note": "§22 Self-Adjoint and Normal Operators",
+"line": 272,
+"term": "laplacian",
+"count": 1,
+"context": "enfunctions of a Sturm–Liouville problem for different eigenvalues are orthogonal, ⟂, and so are those of the Laplacian on a plane region, ⟂; concrete cases include the Legendre polynomials, ⟂.",
+"targets": [
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§22 Self-Adjoint and Normal Operators",
+"line": 272,
+"term": "eigenfunctions",
+"count": 1,
+"context": "> - Infinite-dimensional analogue: eigenfunctions of a Sturm–Liouville problem for different eigenvalues are orthogonal, ⟂, and so are those of the Laplacian o",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§23 Spectral Theorem",
+"line": 67,
+"term": "smooth function",
+"count": 1,
+"context": "al analogue: a regular Sturm–Liouville problem has infinitely many real eigenvalues, ⟂, and every sectionally smooth function expands in its orthogonal eigenfunctions, ⟂ (stated there without proof).",
+"targets": [
+"Calculus|§52 Arc Length#^def-52-2"
+]
+},
+{
+"note": "§23 Spectral Theorem",
+"line": 67,
+"term": "eigenfunctions",
+"count": 1,
+"context": "blem has infinitely many real eigenvalues, ⟂, and every sectionally smooth function expands in its orthogonal eigenfunctions, ⟂ (stated there without proof).",
+"targets": [
+"Applied Linear Algebra|§38 Applications to Differential Equations#^thm-38-2"
+]
+},
+{
+"note": "§23 Spectral Theorem",
+"line": 67,
+"term": "sectionally smooth function",
+"count": 1,
+"context": "te-dimensional analogue: a regular Sturm–Liouville problem has infinitely many real eigenvalues, ⟂, and every sectionally smooth function expands in its orthogonal eigenfunctions, ⟂ (stated there without proof).",
+"targets": [
+"Fourier Series and PDEs|§8 Convergence of Fourier Series#^def-8-4"
+]
+},
+{
+"note": "§23 Spectral Theorem",
+"line": 109,
+"term": "change of basis",
+"count": 1,
+"context": "> - Used in Quantum Mechanics: a change of basis to the eigenbasis of an observable by diagonalizing its matrix, and unitarily equivalent observables with ide",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 18,
+"term": "bijection",
+"count": 1,
+"context": "> - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection (⟂), and there an isometry of a space into itself need not be onto (⟂).",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 18,
+"term": "hilbert space",
+"count": 1,
+"context": "> - Infinite-dimensional counterpart: isomorphic Hilbert spaces are related by an inner-product-preserving bijection (⟂), and there an isometry of a space into itself need n",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 137,
+"term": "standard matrix",
+"count": 1,
+"context": "> (Left as an exercise in Axler.) Let · have standard matrix ·; the standard basis is orthonormal. Then (a) says the columns are orthonormal, i.e. · is an isometry (⟂(e))",
+"targets": [
+"Applied Linear Algebra|§9 The Matrix of a Linear Transformation#^def-9-1"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 143,
+"term": "compact",
+"count": 1,
+"context": "> - The matrices described here form the groups O(n) and U(n) of 591: ⟂, ⟂, ⟂; orthonormal columns make U(n) compact, ⟂.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 198,
+"term": "gram matrix",
+"count": 1,
+"context": "> - Used in Electromagnetism: the capacitance matrix of a system of conductors is a Gram matrix, and it and the coefficients of potential are positive definite — ⟂, ⟂.",
+"targets": [
+"Multivariable Analysis|§18 Surface Integrals#^def-18-4"
+]
+},
+{
+"note": "§25 Isometries, Unitary Operators, and Matrix Factorization",
+"line": 217,
+"term": "eigenvalue problem",
+"count": 1,
+"context": "um Mechanics: the Ritz equations · with a positive definite overlap matrix · (Definition 7.62), a generalized eigenvalue problem that the Cholesky factorization turns into an ordinary one — ⟂.",
+"targets": [
+"Fourier Series and PDEs|§20 Example꞉ Insulated Bar#^def-20-1",
+"Fourier Series and PDEs|§3★ Boundary Value Problems#^def-3-3"
+]
+},
+{
+"note": "§26 Singular Value Decomposition",
+"line": 26,
+"term": "normal equations",
+"count": 1,
+"context": "> - Row rank = column rank once more (d). Least squares: normal equations ·.",
+"targets": [
+"Applied Linear Algebra|Least Squares via the Normal Equations",
+"Applied Linear Algebra|§44 Least-Squares Problems#^def-44-2"
+]
+},
+{
+"note": "§26 Singular Value Decomposition",
+"line": 148,
+"term": "orthonormal columns",
+"count": 2,
+"context": "> An ·-by-· matrix · of rank · factors as · with · (·-by-·) and · (·-by-·) having orthonormal columns and · (·-by-·) diagonal with positive diagonal.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^thm-41-4"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 35,
+"term": "parallelogram law",
+"count": 1,
+"context": "> This operator norm generally does not come from an inner product on · (it fails the parallelogram law, ⟂). The Frobenius norm · does.",
+"targets": [
+"Calculus|§81 Vectors#^thm-81-1"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 136,
+"term": "gradient",
+"count": 1,
+"context": "> - Physics/mechanics: the polar decomposition of the deformation gradient · into rotation and stretch in continuum mechanics.",
+"targets": [
+"Calculus|§95 Directional Derivatives and the Gradient Vector#^def-95-2",
+"Multivariable Analysis|§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 137,
+"term": "simply connected",
+"count": 1,
+"context": "> - Used in Quantum Field Theory: every · is ·, a boost times a rotation, which makes · simply connected — ⟂.",
+"targets": [
+"Topology|§23 The Fundamental Group#^def-23-3"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 155,
+"term": "parseval",
+"count": 1,
+"context": "> · by Parseval (⟂(b)).",
+"targets": [
+"Functional Analysis|Characterizations of an Orthonormal Basis"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 252,
+"term": "lebesgue measure",
+"count": 1,
+"context": "> - Riemann sums in ⟂ are the one-dimensional version; Lebesgue measure makes this precise.",
+"targets": [
+"Measure Theory|§10 Lebesgue Measurable Sets#^def-10-5"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 252,
+"term": "riemann sum",
+"count": 1,
+"context": "> - Riemann sums in ⟂ are the one-dimensional version; Lebesgue measure makes this precise.",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 273,
+"term": "jacobian",
+"count": 1,
+"context": "> - · (⟂): the Jacobian factor in the change-of-variables formula.",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 273,
+"term": "change of variables formula",
+"count": 1,
+"context": "> - · (⟂): the Jacobian factor in the change-of-variables formula.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§27 Consequences of Singular Value Decomposition",
+"line": 273,
+"term": "change of variables",
+"count": 1,
+"context": "> - · (⟂): the Jacobian factor in the change-of-variables formula.",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§3 Subspaces",
+"line": 33,
+"term": "closure",
+"count": 2,
+"context": "ty of · in ·; the second and third make addition and scalar multiplication operations on ·. For ·, · by ⟂ and closure, so inverses exist in ·. *(Filled in.)* The remaining axioms (commutativity, associativity, multiplicative id",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-7",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-5",
+"Single Variable Analysis|§13 Some Topological Concepts in Metric Spaces#^def-13-6",
+"Topology|§7 Interior and Closure#^def-7-1"
+]
+},
+{
+"note": "§3 Subspaces",
+"line": 44,
+"term": "continuous function",
+"count": 1,
+"context": "> - (b) Continuous real functions on · form a subspace of ·: sums and scalar multiples of continuous functions are continuous.",
+"targets": [
+"Single Variable Analysis|§17 Continuous Functions#^def-17-2",
+"Topology|§9 Continuous Functions#^def-9-1"
+]
+},
+{
+"note": "§3 Subspaces",
+"line": 116,
+"term": "direct sums",
+"count": 1,
+"context": "> - Direct sums organize the rest of the book: ⟂, ⟂, ⟂.",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^prop-20-7"
+]
+},
+{
+"note": "§30 Consequences of Generalized Eigenspace Decomposition",
+"line": 17,
+"term": "power series",
+"count": 1,
+"context": "> Nilpotency truncates the power series, so there are no convergence questions.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§31 Trace꞉ A Connection Between Matrices and Operators",
+"line": 17,
+"term": "orbit",
+"count": 1,
+"context": "> - The trace of a permutation matrix counts fixed points; averaged over a group it counts orbits, ⟂ (hub ⟂).",
+"targets": [
+"Differentiable Manifolds|§12 Group Actions and Orbit Spaces#^def-12-3",
+"Group Theory|§27 Orbits#^def-27-1"
+]
+},
+{
+"note": "§31 Trace꞉ A Connection Between Matrices and Operators",
+"line": 17,
+"term": "permutation matrix",
+"count": 1,
+"context": "> - The trace of a permutation matrix counts fixed points; averaged over a group it counts orbits, ⟂ (hub ⟂).",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-4"
+]
+},
+{
+"note": "§31 Trace꞉ A Connection Between Matrices and Operators",
+"line": 52,
+"term": "change of basis",
+"count": 1,
+"context": "in Quantum Mechanics: the trace of an operator on kets, independent of the basis and invariant under unitary change of basis — ⟂, ⟂.",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§32 Bilinear Forms and Quadratic Forms",
+"line": 20,
+"term": "minkowski",
+"count": 5,
+"context": "> - Physics: the Minkowski metric · (your · convention) is a symmetric bilinear form that is not positive definite.",
+"targets": [
+"Measure Theory|Minkowski's Inequality"
+]
+},
+{
+"note": "§32 Bilinear Forms and Quadratic Forms",
+"line": 35,
+"term": "pointwise",
+"count": 1,
+"context": "> · denotes the vector space of bilinear forms on · (pointwise operations).",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§32 Bilinear Forms and Quadratic Forms",
+"line": 71,
+"term": "change of basis",
+"count": 1,
+"context": "> [!theorem] Theorem 9.7: Change-of-basis formula",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§32 Bilinear Forms and Quadratic Forms",
+"line": 278,
+"term": "potential energy",
+"count": 1,
+"context": "> - Physics: normal modes (simultaneously diagonalize kinetic and potential energy forms), the inertia tensor, and the second-derivative test (Hessian) are all this result.",
+"targets": [
+"Calculus|§109 The Fundamental Theorem for Line Integrals#^def-109-6"
+]
+},
+{
+"note": "§33 Alternating Multilinear Forms",
+"line": 102,
+"term": "homomorphism",
+"count": 1,
+"context": "> - Group form: a transposition has sign −1 and the sign is a homomorphism, ⟂, so parity is well defined, ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 17,
+"term": "pullback",
+"count": 1,
+"context": "> If · then ·, so · vanishes. In ⟂ language, · is the pullback.",
+"targets": [
+"Multivariable Analysis|§22 The Algebra of Differential Forms#^def-22-3"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 45,
+"term": "cofactor expansion",
+"count": 3,
+"context": "> - Computational version: ⟂ (the determinant defined by cofactor expansion, with worked examples).",
+"targets": [
+"Applied Linear Algebra|Cofactor Expansion"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 88,
+"term": "levi-civita symbol",
+"count": 2,
+"context": "> - Index form: · with the Levi-Civita symbol.",
+"targets": [
+"Multivariable Analysis|§22 The Algebra of Differential Forms#^def-22-2"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 89,
+"term": "jacobi's formula",
+"count": 1,
+"context": "Since this formula is a polynomial in the entries, det is continuous (⟂) and smooth, with derivative given by Jacobi's formula (⟂).",
+"targets": [
+"Differentiable Manifolds|Jacobi's Formula"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 136,
+"term": "homomorphism",
+"count": 1,
+"context": "> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, ⟂; composed with",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 136,
+"term": "permutation matrices",
+"count": 1,
+"context": "from the general linear group onto the nonzero scalars with kernel the special linear group, ⟂; composed with permutation matrices it is the sign, ⟂.",
+"targets": [
+"Group Theory|§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 166,
+"term": "characteristic equation",
+"count": 1,
+"context": "> - Computational version: ⟂ (the characteristic equation ·).",
+"targets": [
+"Applied Linear Algebra|Eigenvalues Are the Roots of the Characteristic Equation",
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-3",
+"Ordinary Differential Equations|Constant-Coefficient Second-Order Equations",
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-4"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 309,
+"term": "jacobian",
+"count": 2,
+"context": "> - The Jacobian in the change-of-variables formula ·; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16)",
+"targets": [
+"Complex Variables|§114★ Local Inverses#^def-114-2",
+"Differentiable Manifolds|§7 The Regular Value Theorem#^def-7-1"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 309,
+"term": "change of variables formula",
+"count": 1,
+"context": "> - The Jacobian in the change-of-variables formula ·; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§34 Determinants",
+"line": 309,
+"term": "change of variables",
+"count": 1,
+"context": "> - The Jacobian in the change-of-variables formula ·; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16).",
+"targets": [
+"Multivariable Analysis|Change of Variables Formula (multiple integrals)"
+]
+},
+{
+"note": "§35 Tensor Products",
+"line": 47,
+"term": "universal property",
+"count": 1,
+"context": "n too, but give no basis-free meaning to ·. What matters is the behavior: bilinearity (⟂), bases (⟂), and the universal property (⟂).",
+"targets": [
+"Topology|§12 Quotient Topology#^thm-12-3"
+]
+},
+{
+"note": "§35 Tensor Products",
+"line": 205,
+"term": "exponential growth",
+"count": 1,
+"context": "> · spin-· particles live in ·, of dimension ·: the exponential growth behind the difficulty of simulating quantum many-body systems.",
+"targets": [
+"Ordinary Differential Equations|§8 Autonomous Differential Equations and Population Dynamics#^def-8-2"
+]
+},
+{
+"note": "§5 Bases",
+"line": 34,
+"term": "invertible matrix",
+"count": 1,
+"context": "> - Computational version: ⟂ (columns of an invertible matrix, and the standard bases of ℝⁿ, ℙₙ and the 2 × 2 matrices).",
+"targets": [
+"Applied Linear Algebra|§12 The Inverse of a Matrix#^def-12-1"
+]
+},
+{
+"note": "§5 Bases",
+"line": 66,
+"term": "pivot column",
+"count": 1,
+"context": "> - Computational version: ⟂ (the Spanning Set Theorem); for the columns of a matrix, the pivot columns are the basis kept, ⟂.",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-3"
+]
+},
+{
+"note": "§5 Bases",
+"line": 112,
+"term": "zorn's lemma",
+"count": 1,
+"context": "> - Infinite-dimensional version: ⟂ (every subspace has a complement), with Zorn's lemma in place of extending a basis.",
+"targets": [
+"Functional Analysis|Zorn's Lemma",
+"Functional Analysis|§5 Proof of the Hahn–Banach Theorem#^thm-5-2"
+]
+},
+{
+"note": "§5 Bases",
+"line": 112,
+"term": "zorn",
+"count": 1,
+"context": "> - Infinite-dimensional version: ⟂ (every subspace has a complement), with Zorn's lemma in place of extending a basis.",
+"targets": [
+"Functional Analysis|Zorn's Lemma"
+]
+},
+{
+"note": "§6 Dimension",
+"line": 73,
+"term": "basis theorem",
+"count": 2,
+"context": "> - Computational version: ⟂ (the Basis Theorem, first half).",
+"targets": [
+"Differentiable Manifolds|§27 Coordinate Derivations and the Basis Theorem#^thm-27-5"
+]
+},
+{
+"note": "§7 Vector Space of Linear Maps",
+"line": 27,
+"term": "homomorphism",
+"count": 4,
+"context": "> - Forgetting scalars, a linear map is a homomorphism of additive groups: ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§7 Vector Space of Linear Maps",
+"line": 71,
+"term": "permutations",
+"count": 1,
+"context": "> - Restated and re-proved in 493 as ⟂ (Linear Extension), where it turns permutations of a basis into the permutation representation, ⟂.",
+"targets": [
+"Differentiable Manifolds|§10 Topological Groups and Classical Matrix Groups#^def-10-3"
+]
+},
+{
+"note": "§7 Vector Space of Linear Maps",
+"line": 92,
+"term": "pointwise",
+"count": 2,
+"context": "> - Group analogue: the pointwise product on homomorphisms, ⟂, which gives a homomorphism again only when the target is abelian, ⟂.",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 22,
+"term": "homomorphism",
+"count": 3,
+"context": "> - Group version: the kernel and image of a homomorphism, ⟂.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 48,
+"term": "subgroup",
+"count": 1,
+"context": "> - Group version: kernel and image of a homomorphism are subgroups, ⟂.",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 50,
+"term": "superposition",
+"count": 1,
+"context": "> - ODE example: the solutions of · form the null space of the differential operator ·, the principle of superposition, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Principle of Superposition (linear ODEs)"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 98,
+"term": "antiderivative",
+"count": 1,
+"context": "> - Differentiation · on ·: ·, since every polynomial has a polynomial antiderivative.",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 156,
+"term": "linear independence",
+"count": 1,
+"context": "> **Linear independence.** Suppose ·. By linearity ·, so · and we can write",
+"targets": [
+"Fourier Series and PDEs|§1★ Homogeneous Linear Equations#^def-1-2"
+]
+},
+{
+"note": "§8 Null Spaces and Ranges",
+"line": 234,
+"term": "free variables",
+"count": 1,
+"context": "> - Computational version: ⟂ (more columns than rows means dependent columns), via free variables, ⟂.",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-4"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 49,
+"term": "smooth map",
+"count": 2,
+"context": "> - For the differential of a smooth map in coordinate bases this matrix is the Jacobian: ⟂.",
+"targets": [
+"Differentiable Manifolds|§18 Smooth Functions and Smooth Maps#^def-18-3"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 191,
+"term": "change of basis",
+"count": 1,
+"context": "> - Restated with explicit bases in ⟂; used for change of basis ⟂ and ⟂.",
+"targets": [
+"Applied Linear Algebra|The Change-of-Coordinates Matrix"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 192,
+"term": "chain rule",
+"count": 1,
+"context": "> - Applied to differentials it is the chain rule in coordinates: ⟂.",
+"targets": [
+"Calculus|Chain Rule",
+"Calculus|Chain Rule",
+"Complex Variables|§20 Rules for Differentiation#^thm-20-4",
+"Multivariable Analysis|§6 Differentiability#^thm-6-9"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 305,
+"term": "dual map",
+"count": 2,
+"context": "waps row rank and column rank (used in ⟂). Complex analogue with conjugation: ⟂; its map-level meaning is the dual map (⟂) or adjoint (⟂).",
+"targets": [
+"Differentiable Manifolds|§20 Linear Algebra Toolkit#^def-20-2"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 330,
+"term": "orthonormal columns",
+"count": 1,
+"context": "> - Immediately gives ⟂. Refinements with orthonormal columns: ⟂, and the SVD ⟂.",
+"targets": [
+"Applied Linear Algebra|§41 Orthogonal Sets#^thm-41-4"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 347,
+"term": "echelon form",
+"count": 1,
+"context": "> - Computational version: ⟂ (dim Row A = dim Col A, read off an echelon form).",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-1"
+]
+},
+{
+"note": "§9 Matrices",
+"line": 357,
+"term": "pivot column",
+"count": 1,
+"context": "> - Computational version: ⟂ (also ⟂: the number of pivot columns).",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^def-2-3"
+]
+}
+]

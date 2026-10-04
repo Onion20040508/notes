@@ -1,0 +1,233 @@
+[
+{
+"concept": "absolute value",
+"a": "Logic and Proofs | [[§1 The Language of Mathematics#^def-1-4]] | Definition §1.4: Absolute Value",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Single Variable Analysis | [[§3 The Set ℝ of Real Numbers#^def-3-4]] | Definition §3.4: Absolute Value",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Single Variable Analysis | [[§33 Properties of the Riemann Integral#^thm-33-4]] | Theorem §33.4: Absolute Values",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Calculus | [[§1 Four Ways to Represent a Function#^def-1-6]] | Definition §1.6: Absolute Value",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Calculus | [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6]] | Definition §116.6: Absolute Value",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-1]] | Definition §1.1: Basis",
+"b": "Applied Linear Algebra | [[§25 Linearly Independent Sets; Bases#^def-25-2]] | Definition §25.2: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§1 Point-Set Topology Review#^def-1-1]] | Definition §1.1: Basis",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-4]] | Definition §18.4: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-5]] | Proposition §30.5: A Basis of $I_p/I_p^2$",
+"b": "Applied Linear Algebra | [[§25 Linearly Independent Sets; Bases#^def-25-2]] | Definition §25.2: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi",
+"a": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-5]] | Proposition §30.5: A Basis of $I_p/I_p^2$",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-4]] | Definition §18.4: Basis",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "eigenvalue",
+"a": "Linear Algebra | [[§14 Invariant Subspaces#^ladr-5-5]] | Definition 5.5: Eigenvalue",
+"b": "Applied Linear Algebra | [[§51★ The Singular Value Decomposition#^prop-51-1]] | Proposition §51.1: The Eigenvalues of AᵀA",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "eigenvalue",
+"a": "Linear Algebra | [[§14 Invariant Subspaces#^ladr-5-5]] | Definition 5.5: Eigenvalue",
+"b": "Applied Linear Algebra | [[§39 Iterative Estimates for Eigenvalues#^prop-39-2]] | Proposition §39.2: Eigenvalues of (A − αI)⁻¹",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "null space",
+"a": "Linear Algebra | [[§12 Duality#^ladr-3-128]] | Theorem 3.128: The null space of $T'$",
+"b": "Applied Linear Algebra | [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1]] | Definition §24.1: Null Space",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "null space",
+"a": "Linear Algebra | [[§12 Duality#^ladr-3-128]] | Theorem 3.128: The null space of $T'$",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-3]] | Definition §18.3: Null Space",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "rank",
+"a": "Linear Algebra | [[§9 Matrices#^ladr-3-58]] | Definition 3.58: Rank",
+"b": "Applied Linear Algebra | [[§19 Dimension and Rank#^def-19-3]] | Definition §19.3: Rank",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"b": "Applied Linear Algebra | [[§46 Inner Product Spaces#^thm-46-5]] | Theorem §46.5: The Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Calculus | [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6]] | Theorem §116.6: The Triangle Inequality",
+"b": "Applied Linear Algebra | [[§46 Inner Product Spaces#^thm-46-5]] | Theorem §46.5: The Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Applied Linear Algebra | [[§46 Inner Product Spaces#^thm-46-5]] | Theorem §46.5: The Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subspace",
+"a": "Topology | [[§17 Local Compactness#^prop-17-2]] | Proposition §17.2: $X$ is a Subspace of $Y$",
+"b": "Applied Linear Algebra | [[§23 Vector Spaces and Subspaces#^def-23-2]] | Definition §23.2: Subspace",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "subspace",
+"a": "Topology | [[§17 Local Compactness#^prop-17-2]] | Proposition §17.2: $X$ is a Subspace of $Y$",
+"b": "Applied Linear Algebra | [[§18 Subspaces of ℝⁿ#^def-18-1]] | Definition §18.1: Subspace of ℝⁿ",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "distance",
+"a": "Single Variable Analysis | [[§3 The Set ℝ of Real Numbers#^def-3-5]] | Definition §3.5: Distance",
+"b": "Applied Linear Algebra | [[§40 Inner Product, Length, and Orthogonality#^def-40-4]] | Definition §40.4: Distance",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "change variable",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^thm-15-20]] | Theorem §15.20: Change of Variables in $\\mathbb{R}^n$",
+"b": "Applied Linear Algebra | [[§49★ Quadratic Forms#^def-49-2]] | Definition §49.2: Change of Variable",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "isomorphism",
+"a": "Topology | [[§21 Algebra Prerequisites꞉ Groups#^def-21-4]] | Definition §21.4: Isomorphism",
+"b": "Applied Linear Algebra | [[§26 Coordinate Systems#^def-26-3]] | Definition §26.3: Isomorphism",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "isomorphism",
+"a": "Functional Analysis | [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2]] | Definition §2.2: Isomorphism",
+"b": "Applied Linear Algebra | [[§26 Coordinate Systems#^def-26-3]] | Definition §26.3: Isomorphism",
+"a_links_b": true,
+"b_links_a": false
+},
+{
+"concept": "orthogonal complement",
+"a": "Functional Analysis | [[§1 Linear Spaces#^cor-1-13]] | Corollary §1.13: Orthogonal Complement (inner products; later)",
+"b": "Applied Linear Algebra | [[§40 Inner Product, Length, and Orthogonality#^def-40-6]] | Definition §40.6: Orthogonal Complement",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basi theorem",
+"a": "Differentiable Manifolds | [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5]] | Theorem §27.5: Basis Theorem",
+"b": "Applied Linear Algebra | [[§27 The Dimension of a Vector Space#^thm-27-5]] | Theorem §27.5: The Basis Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "similar matrice",
+"a": "Group Theory | [[§33 Conjugacy Classes#^def-33-3]] | Definition §33.3: Similar Matrices",
+"b": "Applied Linear Algebra | [[§33 The Characteristic Equation#^def-33-3]] | Definition §33.3: Similar Matrices",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linear transformation",
+"a": "Applied Linear Algebra | [[§8 Introduction to Linear Transformations#^def-8-3]] | Definition §8.3: Linear Transformation",
+"b": "Complex Variables | [[§96★ Linear Transformations#^def-96-1]] | Definition §96.1: Linear Transformation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linear transformation",
+"a": "Applied Linear Algebra | [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4]] | Definition §24.4: Linear Transformation",
+"b": "Complex Variables | [[§96★ Linear Transformations#^def-96-1]] | Definition §96.1: Linear Transformation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "existence uniqueness theorem",
+"a": "Applied Linear Algebra | [[§2 Row Reduction and Echelon Forms#^thm-2-3]] | Theorem §2.3: Existence and Uniqueness Theorem",
+"b": "Ordinary Differential Equations | [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1]] | Theorem §14.1: Existence and Uniqueness Theorem",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "exponential solution",
+"a": "Applied Linear Algebra | [[§30 Applications to Difference Equations#^prop-30-2]] | Proposition §30.2: Exponential Solutions",
+"b": "Ordinary Differential Equations | [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1]] | Theorem §13.1: Exponential Solutions",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "exponential solution",
+"a": "Applied Linear Algebra | [[§30 Applications to Difference Equations#^prop-30-2]] | Proposition §30.2: Exponential Solutions",
+"b": "Ordinary Differential Equations | [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1]] | Theorem §31.1: Exponential Solutions",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "existence uniqueness",
+"a": "Applied Linear Algebra | [[§30 Applications to Difference Equations#^thm-30-4]] | Theorem §30.4: Existence and Uniqueness",
+"b": "Fourier Series and PDEs | [[§17 Derivation and Boundary Conditions#^thm-17-4]] | Theorem §17.4: Existence and Uniqueness",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "general solution nonhomogeneou equation",
+"a": "Applied Linear Algebra | [[§30 Applications to Difference Equations#^thm-30-7]] | Theorem §30.7: General Solution of a Nonhomogeneous Equation",
+"b": "Ordinary Differential Equations | [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2]] | Theorem §17.2: General Solution of the Nonhomogeneous Equation",
+"a_links_b": true,
+"b_links_a": false
+}
+]

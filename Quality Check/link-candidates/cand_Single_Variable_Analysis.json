@@ -1,0 +1,1808 @@
+[
+{
+"note": "Bolzano–Weierstrass Theorem",
+"line": 34,
+"term": "compactness",
+"count": 1,
+"context": "- Sequential compactness of bounded sets; the · version is in §13.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-8"
+]
+},
+{
+"note": "Bolzano–Weierstrass Theorem",
+"line": 34,
+"term": "bounded set",
+"count": 1,
+"context": "- Sequential compactness of bounded sets; the · version is in §13.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "Bolzano–Weierstrass Theorem",
+"line": 35,
+"term": "compact",
+"count": 5,
+"context": "- The engine behind the ⟂ and uniform continuity on closed bounded intervals (§19). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "Bolzano–Weierstrass Theorem",
+"line": 35,
+"term": "metric spaces",
+"count": 2,
+"context": "orm continuity on closed bounded intervals (§19). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "Bolzano–Weierstrass Theorem",
+"line": 36,
+"term": "limit point",
+"count": 1,
+"context": "- Topological form: for metric spaces compact, limit point compact and sequentially compact agree, ⟂.",
+"targets": [
+"Topology|§7 Interior and Closure#^def-7-3"
+]
+},
+{
+"note": "Completeness Axiom",
+"line": 31,
+"term": "isomorphism",
+"count": 1,
+"context": "Dedekind cuts; ★ ⟂ constructs another from rational Cauchy sequences (⟂) and shows the model is unique up to isomorphism (⟂).",
+"targets": [
+"Applied Linear Algebra|§26 Coordinate Systems#^def-26-3",
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2",
+"Group Theory|§16 Isomorphisms#^def-16-1",
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "Completeness Axiom",
+"line": 31,
+"term": "cauchy sequences",
+"count": 2,
+"context": "· (§4 shows · fails it). §6 constructs a model of it with Dedekind cuts; ★ ⟂ constructs another from rational Cauchy sequences (⟂) and shows the model is unique up to isomorphism (⟂).",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "Completeness Axiom",
+"line": 33,
+"term": "inner product",
+"count": 1,
+"context": "- Metric-space version: completeness of a metric space (§13), which is what Hilbert spaces add to inner product spaces.",
+"targets": [
+"Applied Linear Algebra|§40 Inner Product, Length, and Orthogonality#^def-40-1",
+"Applied Linear Algebra|§46 Inner Product Spaces#^def-46-1",
+"Functional Analysis|§20 Definition and Examples#^def-20-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-2"
+]
+},
+{
+"note": "Completeness Axiom",
+"line": 33,
+"term": "inner product space",
+"count": 1,
+"context": "- Metric-space version: completeness of a metric space (§13), which is what Hilbert spaces add to inner product spaces.",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-4"
+]
+},
+{
+"note": "Completeness Axiom",
+"line": 33,
+"term": "hilbert space",
+"count": 1,
+"context": "- Metric-space version: completeness of a metric space (§13), which is what Hilbert spaces add to inner product spaces.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^def-21-1"
+]
+},
+{
+"note": "Dirichlet and Thomae functions",
+"line": 11,
+"term": "riemann integrable",
+"count": 2,
+"context": "- The Dirichlet function is not Riemann integrable (⟂)",
+"targets": [
+"Measure Theory|§8 Motivation꞉ The Riemann Integral#^def-8-3"
+]
+},
+{
+"note": "Dirichlet and Thomae functions",
+"line": 11,
+"term": "dirichlet",
+"count": 2,
+"context": "- The Dirichlet function is not Riemann integrable (⟂)",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "Extreme Value Theorem",
+"line": 40,
+"term": "norm",
+"count": 1,
+"context": "- [[§11 Completeness#^thm-11-1|Theorem §11.1: C[a,b] with the Supremum Norm is a Banach Space]]",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "Fundamental Theorem of Calculus",
+"line": 46,
+"term": "conservative",
+"count": 1,
+"context": "- Physics: the gradient theorem (work done by a conservative force depends only on endpoints) is FTC along a curve.",
+"targets": [
+"Multivariable Analysis|§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1"
+]
+},
+{
+"note": "Fundamental Theorem of Calculus",
+"line": 48,
+"term": "almost everywhere",
+"count": 1,
+"context": "- Lebesgue version: ⟂ (FTC I holds exactly for absolutely continuous functions) and ⟂ (FTC II holds almost everywhere for every integrable function).",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "Geometric series",
+"line": 7,
+"term": "power series",
+"count": 1,
+"context": "The series every other series is compared to, and the model power series. Its uses in MATH 451:",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "Geometric series",
+"line": 11,
+"term": "pointwise",
+"count": 2,
+"context": "- Pointwise but not uniform convergence on · (⟂)",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "Geometric series",
+"line": 12,
+"term": "term-by-term differentiation",
+"count": 2,
+"context": "- Term-by-term differentiation: · (⟂)",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "Geometric series",
+"line": 13,
+"term": "term-by-term integration",
+"count": 2,
+"context": "- Term-by-term integration: · (⟂)",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "Intermediate Value Theorem",
+"line": 40,
+"term": "connected set",
+"count": 1,
+"context": "- Abstract form: the continuous image of a connected set is connected; see ⟂.",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-4"
+]
+},
+{
+"note": "Mean Value Theorem",
+"line": 39,
+"term": "taylor's theorem",
+"count": 1,
+"context": "- Leads to Taylor's theorem (§31) and, in its generalized (Cauchy) form, to L'Hospital's rule (§30).",
+"targets": [
+"Complex Variables|§63 Proof of Taylor's Theorem#^thm-63-1"
+]
+},
+{
+"note": "§1 The Set ℕ of Natural Numbers",
+"line": 159,
+"term": "strong induction",
+"count": 3,
+"context": "> The device in Example 1.2 — proving a statement for *all* · rather than for · alone — is often called **strong induction** (or complete induction). It is not a new axiom: it is ordinary induction applied to the strengthened proper",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§1 The Set ℕ of Natural Numbers",
+"line": 159,
+"term": "complete induction",
+"count": 1,
+"context": "mple 1.2 — proving a statement for *all* · rather than for · alone — is often called **strong induction** (or complete induction). It is not a new axiom: it is ordinary induction applied to the strengthened property ·.",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§1 The Set ℕ of Natural Numbers",
+"line": 164,
+"term": "strong induction principle",
+"count": 1,
+"context": "> - Elementary version: the strong induction principle ⟂, derived there from ordinary induction applied to the strengthened statement, as in Example 1.2.",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§10 Monotone Sequences and Cauchy Sequences",
+"line": 157,
+"term": "extended real numbers",
+"count": 1,
+"context": "> If · is bounded, these are finite numbers; otherwise we use the values · — another place where the extended real numbers are convenient.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-1"
+]
+},
+{
+"note": "§10 Monotone Sequences and Cauchy Sequences",
+"line": 252,
+"term": "cauchy sequences",
+"count": 4,
+"context": "## Cauchy Sequences",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§10 Monotone Sequences and Cauchy Sequences",
+"line": 402,
+"term": "equivalence class",
+"count": 1,
+"context": "> Cauchy sequences can be used to construct · from ·: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to ·). Th",
+"targets": [
+"Functional Analysis|§1 Linear Spaces#^def-1-7",
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-2",
+"Logic and Proofs|§22 Partitions and Equivalence Relations#^def-22-4"
+]
+},
+{
+"note": "§10 Monotone Sequences and Cauchy Sequences",
+"line": 402,
+"term": "equivalence classes",
+"count": 1,
+"context": "> Cauchy sequences can be used to construct · from ·: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to ·). Th",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§11 Subsequences",
+"line": 93,
+"term": "bounded sequence",
+"count": 1,
+"context": "> Every bounded sequence · has a convergent subsequence.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 9,
+"term": "metric spaces",
+"count": 3,
+"context": "## Metric Spaces",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 27,
+"term": "separation",
+"count": 1,
+"context": "> (1) is the *separation of points*: two different points must have positive distance. (2) is the *symmetry* of distance — equal in bo",
+"targets": [
+"Topology|§13 Connected Spaces#^def-13-1"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 72,
+"term": "cauchy–schwarz inequality",
+"count": 1,
+"context": "> Again (1), (2) are easy and (3) is not (its proof goes through the Cauchy–Schwarz inequality; we defer it). When we identify ·, this agrees with the distance on · above.",
+"targets": [
+"Linear Algebra|Cauchy–Schwarz inequality",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-14"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 72,
+"term": "cauchy–schwarz",
+"count": 1,
+"context": "> Again (1), (2) are easy and (3) is not (its proof goes through the Cauchy–Schwarz inequality; we defer it). When we identify ·, this agrees with the distance on · above.",
+"targets": [
+"Functional Analysis|§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 111,
+"term": "hausdorff",
+"count": 1,
+"context": "to see what that condition is for; in general topology, the corresponding property of a space is called the *Hausdorff property*.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 126,
+"term": "cauchy sequences",
+"count": 1,
+"context": "sequently, · and · define the same class of convergent sequences (with the same limits) and the same class of Cauchy sequences.",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 174,
+"term": "bounded sequence",
+"count": 2,
+"context": "> [!definition] Definition §13.4: Bounded Sequence in a Metric Space",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 190,
+"term": "heine–borel",
+"count": 1,
+"context": "> - Topological counterparts: closed bounded subsets of ℝⁿ are compact, ⟂ (Heine–Borel), and compact equals sequentially compact for metric spaces, ⟂.",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^thm-6-4",
+"Topology|Heine–Borel Theorem"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 196,
+"term": "closed subset",
+"count": 5,
+"context": "> [!definition] Definition §13.5: Open and Closed Subsets",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 210,
+"term": "open set",
+"count": 4,
+"context": "> - In ℝⁿ, 452 defines open sets by interior points and closed sets as those containing all their boundary points: ⟂.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 210,
+"term": "interior point",
+"count": 2,
+"context": "> - In ℝⁿ, 452 defines open sets by interior points and closed sets as those containing all their boundary points: ⟂.",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§13 Some Topological Concepts in Metric Spaces",
+"line": 318,
+"term": "least upper bound",
+"count": 1,
+"context": "> This is the same set that exhibited the *incompleteness* of · in §4: within · it has no least upper bound. Taking the closure within · fills in exactly the two missing points ·.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-7"
+]
+},
+{
+"note": "§14 Series",
+"line": 278,
+"term": "matrix exponential",
+"count": 1,
+"context": "> - Used in ODEs: comparison with · shows that every entry of the matrix exponential · converges, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Matrix Exponential Solution"
+]
+},
+{
+"note": "§14 Series",
+"line": 281,
+"term": "bounded sequence",
+"count": 1,
+"context": "> If · converges and · is a bounded sequence, then · converges — absolutely, in fact.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§15 Alternating Series and Integral Tests",
+"line": 24,
+"term": "convergent series",
+"count": 1,
+"context": "would be ·, contradicting ·). Note also that the condition · is necessary — why? — because the terms · of any convergent series must tend to · (§14).",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 13,
+"term": "closed subset",
+"count": 1,
+"context": "usually we take intervals — closed ·, open ·, half-open — and unions of them; this is related to the open and closed subsets of · discussed in §13. Determining the domain of a function is important, as we will see repeatedly.",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-6"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 76,
+"term": "open set",
+"count": 1,
+"context": "> - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: ⟂.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 76,
+"term": "metric spaces",
+"count": 1,
+"context": "> - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 263,
+"term": "dense",
+"count": 4,
+"context": "> These arguments use that · is dense in ·: every interval · contains irrational points. Why? The interval · contains uncountably many points, but",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 271,
+"term": "lowest terms",
+"count": 2,
+"context": "}\\setminus\\mathbb{Q}); \\qquad f\\left(\\frac pq\\right) = \\frac1q \\quad \\left( \\frac pq \\in \\mathbb{Q} \\text{ in lowest terms},\\ q > 0 \\right).",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-2"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 293,
+"term": "dense sets",
+"count": 1,
+"context": "A counterweight to all these constructions — continuity is *rigid* on dense sets:",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9"
+]
+},
+{
+"note": "§17 Continuous Functions",
+"line": 307,
+"term": "interior point",
+"count": 1,
+"context": "> is a nonempty open interval (· is an interior point of ·), so the density of · (§4) provides a rational · inside it. Then ·, ·, and by the sequential definition",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 82,
+"term": "heine–borel",
+"count": 1,
+"context": "> - Abstract form: a continuous image of a compact space is compact, ⟂, and [a, b] is compact by ⟂ (Heine–Borel).",
+"targets": [
+"Measure Theory|§6 Open Covers and the Heine–Borel Theorem#^thm-6-4",
+"Topology|Heine–Borel Theorem"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 82,
+"term": "continuous image of a compact space is compact",
+"count": 1,
+"context": "> - Abstract form: a continuous image of a compact space is compact, ⟂, and [a, b] is compact by ⟂ (Heine–Borel).",
+"targets": [
+"Topology|Continuous Image of a Compact Space is Compact"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 97,
+"term": "quotient of continuous functions",
+"count": 1,
+"context": "> Since ·, the denominator never vanishes on ·, so · is defined and continuous on · (quotient of continuous functions). It is unbounded: given ·, convergence · provides · with ·, and then",
+"targets": [
+"Multivariable Analysis|§3 Continuity and Limits of Functions#^thm-3-3"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 157,
+"term": "continuous image of a connected space is connected",
+"count": 1,
+"context": "> - Abstract form: a continuous image of a connected space is connected, ⟂, giving the IVT for any connected domain, ⟂.",
+"targets": [
+"Topology|Continuous Image of a Connected Space is Connected"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 239,
+"term": "brouwer fixed point theorem",
+"count": 2,
+"context": "> - Since [0, 1] is the ball B¹, this is the case n = 0 of the Brouwer fixed point theorem, proved in 590 for the disc and for all balls: ⟂, ⟂.",
+"targets": [
+"Topology|Brouwer Fixed Point Theorem"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 396,
+"term": "bijection",
+"count": 1,
+"context": "> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, ⟂.",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 396,
+"term": "homeomorphism",
+"count": 1,
+"context": "> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, ⟂.",
+"targets": [
+"Topology|§9 Continuous Functions#^def-9-2"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 396,
+"term": "hausdorff space",
+"count": 1,
+"context": "> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, ⟂.",
+"targets": [
+"Topology|§8 Hausdorff Spaces#^def-8-1"
+]
+},
+{
+"note": "§18 Properties of Continuous Functions",
+"line": 396,
+"term": "hausdorff",
+"count": 1,
+"context": "> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§19 Uniform Continuity",
+"line": 86,
+"term": "bounded sequence",
+"count": 2,
+"context": "> Since · is a bounded sequence, ⟂ gives a convergent subsequence ·, and · (limits preserve the endpoint inequalities). Then also · — why? —",
+"targets": [
+"Calculus|§69 Sequences#^def-69-6"
+]
+},
+{
+"note": "§19 Uniform Continuity",
+"line": 107,
+"term": "cauchy sequences",
+"count": 1,
+"context": "## Uniform Continuity and Cauchy Sequences",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§19 Uniform Continuity",
+"line": 122,
+"term": "closed set",
+"count": 1,
+"context": "l example: there the failure was steepness *near ·* on a bounded set; here it is steepness *at infinity* on a closed set. (On any ·, of course, · is uniformly continuous by the theorem.)",
+"targets": [
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-3",
+"Topology|§6 Closed Sets and Limit Points#^def-6-1"
+]
+},
+{
+"note": "§19 Uniform Continuity",
+"line": 122,
+"term": "bounded set",
+"count": 3,
+"context": "> So for ·, no · can work. Compare the reciprocal example: there the failure was steepness *near ·* on a bounded set; here it is steepness *at infinity* on a closed set. (On any ·, of course, · is uniformly continuous by the t",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-5"
+]
+},
+{
+"note": "§19 Uniform Continuity",
+"line": 218,
+"term": "compact",
+"count": 1,
+"context": "f the two theorems covers a region the other misses: near ·, the closed-interval theorem handles · (steep but compact); far out, the derivative · is bounded on · (HW). Can the two regions be *glued*?",
+"targets": [
+"Topology|§15 Compact Spaces#^def-15-2"
+]
+},
+{
+"note": "§2 The Set ℚ of Rational Numbers",
+"line": 55,
+"term": "equivalence classes",
+"count": 1,
+"context": "> - ℚ constructed from fractions as equivalence classes, with all field axioms verified: ⟂.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§2 The Set ℚ of Rational Numbers",
+"line": 67,
+"term": "coprime",
+"count": 6,
+"context": "> Proof by contradiction. Suppose · with · integers, ·. We may assume · are *coprime*: this is the best representative, obtained by dividing out all common prime factors of · and ·.",
+"targets": [
+"Logic and Proofs|§11 Properties of Finite Sets#^def-11-3"
+]
+},
+{
+"note": "§2 The Set ℚ of Rational Numbers",
+"line": 91,
+"term": "pythagorean theorem",
+"count": 1,
+"context": "hool was a secret society built partly on this belief. Now take a unit square, with sides of length ·. By the Pythagorean Theorem, its diagonal has length · — a completely natural geometric quantity. The theorem above says this length *can",
+"targets": [
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-12"
+]
+},
+{
+"note": "§2 The Set ℚ of Rational Numbers",
+"line": 106,
+"term": "strong induction",
+"count": 1,
+"context": "> - Proved in ⟂ (existence by strong induction, uniqueness by cancelling common primes).",
+"targets": [
+"Logic and Proofs|Strong Induction Principle"
+]
+},
+{
+"note": "§2 The Set ℚ of Rational Numbers",
+"line": 325,
+"term": "countable union of countable sets is countable",
+"count": 1,
+"context": "> - The listing step is the general fact that a countable union of countable sets is countable, proved in ⟂.",
+"targets": [
+"Measure Theory|Countable Union of Countable Sets is Countable"
+]
+},
+{
+"note": "§20 Limits of Functions",
+"line": 37,
+"term": "neighborhood",
+"count": 1,
+"context": "> - Computational version: ⟂ (the same ε–δ definition for functions of a complex variable, where the deleted neighborhood is a punctured disk, with worked examples).",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§20 Limits of Functions",
+"line": 78,
+"term": "fourier series",
+"count": 2,
+"context": "> - Computational version: ⟂ (the one-sided limits ·, ·, whose average a Fourier series converges to at a jump).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§20 Limits of Functions",
+"line": 105,
+"term": "reciprocal powers",
+"count": 1,
+"context": "> - Worked examples: one-sided infinite limits ⟂; reciprocal powers at infinity ⟂.",
+"targets": [
+"Calculus|§69 Sequences#^cor-69-2"
+]
+},
+{
+"note": "§20 Limits of Functions",
+"line": 138,
+"term": "limit laws",
+"count": 1,
+"context": "> - Computational version: the limit laws ⟂; at infinity ⟂ (with worked examples).",
+"targets": [
+"Calculus|Limit Laws",
+"Calculus|Limit Laws"
+]
+},
+{
+"note": "§21 More on Metric Spaces꞉ Continuity",
+"line": 9,
+"term": "metric spaces",
+"count": 3,
+"context": "The next two sections generalize what we have learned to metric spaces. (They are important, but discussing them in full would take many lectures; the lecture touched only the key",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^prop-1-6"
+]
+},
+{
+"note": "§21 More on Metric Spaces꞉ Continuity",
+"line": 24,
+"term": "open set",
+"count": 1,
+"context": "> - Continuity between topological spaces (preimages of open sets are open), ⟂, agrees with this for metric spaces by ⟂.",
+"targets": [
+"Functional Analysis|§18 Compactness and the Unit Ball#^def-18-2",
+"Measure Theory|§5 Topology of ℝⁿ#^def-5-2"
+]
+},
+{
+"note": "§23 Power Series",
+"line": 38,
+"term": "set of convergence",
+"count": 3,
+"context": "> computed directly from · (§14). Set of convergence: ·.",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-10"
+]
+},
+{
+"note": "§23 Power Series",
+"line": 232,
+"term": "pointwise",
+"count": 2,
+"context": "darker as · grows): each is continuous and passes through ·, but for every fixed · the values sink to ·. The pointwise limit (red) is · on · with an isolated value · — a jump that none of the · has.*",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§24 Uniform Convergence",
+"line": 35,
+"term": "fourier series",
+"count": 2,
+"context": "> - Computational version: ⟂ (pointwise versus uniform convergence, with worked examples for Fourier series).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§24 Uniform Convergence",
+"line": 184,
+"term": "power series",
+"count": 2,
+"context": "> - Special case for complex power series: ⟂ (the sum of a power series is continuous inside its circle of convergence).",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§24 Uniform Convergence",
+"line": 187,
+"term": "contrapositive",
+"count": 1,
+"context": "ould not converge uniformly, because their limit functions are discontinuous while every · is continuous. The contrapositive of the theorem is a quick non-uniformity test.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§24 Uniform Convergence",
+"line": 194,
+"term": "measurable set",
+"count": 1,
+"context": "> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: ⟂, ⟂.",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-4"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 36,
+"term": "fatou",
+"count": 1,
+"context": "> - 551's version · shows the same escaping mass, makes Fatou's inequality strict and has no integrable dominator: ⟂.",
+"targets": [
+"Measure Theory|Fatou's Lemma"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 97,
+"term": "power series",
+"count": 3,
+"context": "Now we return toward power series — via general series of functions.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 115,
+"term": "fourier series",
+"count": 3,
+"context": "> - Computational version: ⟂ (a uniformly convergent Fourier series has a continuous sum, so a function with a jump has no uniformly convergent Fourier series).",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 134,
+"term": "term-by-term integration",
+"count": 1,
+"context": "> - Lebesgue analogue for term-by-term integration, assuming only · instead of uniform bounds: ⟂.",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 135,
+"term": "existence and uniqueness theorem",
+"count": 1,
+"context": "> - Used in ODEs: the M-test with · gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for ·, ⟂.",
+"targets": [
+"Applied Linear Algebra|§2 Row Reduction and Echelon Forms#^thm-2-3",
+"Ordinary Differential Equations|Picard–Lindelöf Theorem",
+"Ordinary Differential Equations|§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 135,
+"term": "existence and uniqueness",
+"count": 1,
+"context": "> - Used in ODEs: the M-test with · gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for ·, ⟂.",
+"targets": [
+"Applied Linear Algebra|§30 Applications to Difference Equations#^thm-30-4",
+"Fourier Series and PDEs|§17 Derivation and Boundary Conditions#^thm-17-4"
+]
+},
+{
+"note": "§25 More on Uniform Convergence",
+"line": 145,
+"term": "interval of convergence",
+"count": 1,
+"context": "> **(3)** The power series · has interval of convergence · and converges uniformly there — hence its sum is continuous on ·. Steps: (i) ·, so ·; (ii) at the endpoints",
+"targets": [
+"Calculus|§76 Power Series#^def-76-3"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 9,
+"term": "power series",
+"count": 7,
+"context": "We now apply the machinery of §24–§25 to power series — with striking consequences.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 19,
+"term": "interval of convergence",
+"count": 1,
+"context": "> *Step 2:* since ·, the point · lies inside the interval of convergence of ·, so",
+"targets": [
+"Calculus|§76 Power Series#^def-76-3"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 42,
+"term": "pointwise",
+"count": 1,
+"context": "ntinuous — so the sum is continuous on · (§25), in particular at ·. Since · was arbitrary and continuity is a pointwise property, · is continuous on ·. (Note: uniformity on all of · may fail — §25's geometric example — but is not",
+"targets": [
+"Fourier Series and PDEs|§9 Uniform Convergence#^def-9-1",
+"Measure Theory|§12 Measurable Functions#^def-12-8"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 71,
+"term": "fourier series",
+"count": 3,
+"context": "> - Fourier-series version: ⟂ (a Fourier series may be integrated term by term even when it does not converge uniformly), with w",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^def-47-6",
+"Fourier Series and PDEs|§6 Periodic Functions and Fourier Series#^def-6-2"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 72,
+"term": "contour",
+"count": 1,
+"context": "> - Computational version for power series along contours: ⟂ (term-by-term integration, with worked examples).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 120,
+"term": "periodic extension",
+"count": 1,
+"context": "er-series counterpart: ⟂ and ⟂ (differentiation multiplies the ·th coefficient by ·, so it needs a continuous periodic extension or fast-decaying coefficients).",
+"targets": [
+"Fourier Series and PDEs|§7 Arbitrary Period and Half-Range Expansions#^def-7-1"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 171,
+"term": "inverse function",
+"count": 1,
+"context": "> [the evaluation of the integral uses ·, proved in §29 via the Inverse Function Theorem]. At · the right side becomes Leibniz's celebrated",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 177,
+"term": "alternating series",
+"count": 1,
+"context": "> convergent by the Alternating Series Test (§15) — but justifying the *value* at the endpoint, where · no longer protects the termwise integration,",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-1"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 177,
+"term": "abel's theorem",
+"count": 1,
+"context": ") — but justifying the *value* at the endpoint, where · no longer protects the termwise integration, requires Abel's theorem (Ross §26), which these notes do not cover: one more entry on the ledger.",
+"targets": [
+"Ordinary Differential Equations|Abel's Theorem (Wronskian)",
+"Ordinary Differential Equations|§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8",
+"Ordinary Differential Equations|§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 238,
+"term": "antiderivative",
+"count": 1,
+"context": "> [!example] Example §26.7: An integral with no elementary antiderivative (HW)",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§26 Differentiation and Integration of Power Series",
+"line": 301,
+"term": "completion",
+"count": 1,
+"context": "ourse · and · — but the point is that the computation above never used that. Ross §37 carries this program to completion: starting from the two series one derives the addition formulas, the existence of · (as twice the first posit",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-4"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 22,
+"term": "boundary points",
+"count": 1,
+"context": "Note the interval is *open*: it has no boundary points, so · is automatically an interior point. This is well known from calculus: a maximum or minimum point inside",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-2",
+"Multivariable Analysis|§2 Open and Closed Sets#^def-2-3"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 22,
+"term": "interior point",
+"count": 1,
+"context": "Note the interval is *open*: it has no boundary points, so · is automatically an interior point. This is well known from calculus: a maximum or minimum point inside an interval is a **critical point** (·).",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 119,
+"term": "almost everywhere",
+"count": 1,
+"context": "> - If · only almost everywhere, the conclusion needs absolute continuity: ⟂, with the Cantor function as counterexample (⟂).",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 121,
+"term": "separable",
+"count": 1,
+"context": "> - Used in ODEs: every solution of · has the form ·, ⟂, and the solutions of a separable equation are given implicitly by ·, ⟂; both proofs show that some function has zero derivative.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 149,
+"term": "kernel",
+"count": 1,
+"context": "> This identifies the *kernel* of the ·-th derivative operator: exactly the polynomials of degree · — a ·-dimensional space, matching the ·",
+"targets": [
+"Applied Linear Algebra|§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5",
+"Group Theory|§15 Homomorphisms#^def-15-2",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-6"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 149,
+"term": "taylor polynomial",
+"count": 1,
+"context": "f Taylor's theory (§31): once the remainder is shown to vanish, this proposition is what forces · to *be* its Taylor polynomial.",
+"targets": [
+"Calculus|§78 Taylor and Maclaurin Series#^def-78-2"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 303,
+"term": "inverse function",
+"count": 3,
+"context": "## The Derivative of the Inverse Function",
+"targets": [
+"Calculus|§5 Inverse Functions and Logarithms#^def-5-2"
+]
+},
+{
+"note": "§29 The Mean Value Theorem",
+"line": 323,
+"term": "injective",
+"count": 2,
+"context": "> Since · is injective, · for all ·, so the reciprocal difference quotient is defined, and since ·, the reciprocal limit theorem giv",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§3 The Set ℝ of Real Numbers",
+"line": 42,
+"term": "abelian group",
+"count": 1,
+"context": "> - The same axioms packaged as two abelian groups and a distributive law: ⟂.",
+"targets": [
+"Group Theory|§1 The Definition of a Group#^def-1-2"
+]
+},
+{
+"note": "§30 L'Hospital's Rule",
+"line": 103,
+"term": "trace",
+"count": 1,
+"context": "*The Generalized MVT as the MVT for a curve: as · runs over ·, the point · traces a curve (blue) whose chord (dashed) has slope ·. At some · the tangent, with direction · and slope ·, is para",
+"targets": [
+"Applied Linear Algebra|§52★ Applications to Image Processing and Statistics#^def-52-4"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 9,
+"term": "power series",
+"count": 3,
+"context": "e chapter: how to approximate general functions by polynomials — and, in the limit, represent a function by a power series.",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 13,
+"term": "term-by-term differentiation",
+"count": 1,
+"context": "Suppose first that · converges for ·. What are the coefficients, in terms of ·? By §26, term-by-term differentiation is valid and preserves the radius, so it can be *iterated*:",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-4",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-6"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 34,
+"term": "neighborhood",
+"count": 1,
+"context": "> is called the **Taylor series of · at ·**. (The · signals, as in ·-· arguments, that only a small neighborhood matters — how big the domain is, we don't care.) More generally, for · with derivatives of all orders and ·,",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 123,
+"term": "analytic function",
+"count": 3,
+"context": "> - Complex counterpart: ⟂ (an analytic function equals its Taylor series on every disk of analyticity, with no remainder estimate needed).",
+"targets": [
+"Complex Variables|§25 Analytic Functions#^def-25-1"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 150,
+"term": "convergent series",
+"count": 1,
+"context": "> since · is the general term of a series convergent by the ratio test (ratio ·), and terms of a convergent series tend to zero (§14). So · equals its Taylor series for *all* · — and, since the derivative bound was all we us",
+"targets": [
+"Complex Variables|§61 Convergence of Series#^def-61-1"
+]
+},
+{
+"note": "§31 Taylor's Theorem",
+"line": 192,
+"term": "term-by-term integration",
+"count": 1,
+"context": "> and term-by-term integration of power series (§26). So you see — even when something is true, it may not be easy to prove by the standard",
+"targets": [
+"Complex Variables|§71★ Integration and Differentiation of Power Series#^thm-71-1",
+"Fourier Series and PDEs|§10 Operations on Fourier Series#^thm-10-3"
+]
+},
+{
+"note": "§32 The Definition of the Riemann Integral",
+"line": 9,
+"term": "simple region",
+"count": 1,
+"context": "the notion of the integral, right? **No.** The problem: *what is area?* We only know how to compute areas of simple regions — rectangles, triangles, trapezoids. The idea, as always in this course: approximate the complicated by the s",
+"targets": [
+"Calculus|§110 Green's Theorem#^def-110-2"
+]
+},
+{
+"note": "§32 The Definition of the Riemann Integral",
+"line": 102,
+"term": "dirichlet",
+"count": 1,
+"context": "> [!example] Example §32.3: The Dirichlet function is not integrable",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 132,
+"term": "contour",
+"count": 1,
+"context": "> - Computational version: ⟂ (the same inequality for complex-valued w(t)) and its contour form, the ML-inequality ⟂ (with worked bounds).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 132,
+"term": "ml-inequality",
+"count": 1,
+"context": "> - Computational version: ⟂ (the same inequality for complex-valued w(t)) and its contour form, the ML-inequality ⟂ (with worked bounds).",
+"targets": [
+"Complex Variables|ML-Inequality"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 135,
+"term": "dirichlet",
+"count": 1,
+"context": "> The converse fails: for · on · and · off ·, the function · is integrable on ·, but · is not (the Dirichlet argument verbatim: ·, · always).",
+"targets": [
+"Complex Variables|§116★ Transformations of Harmonic Functions#^def-116-1"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 211,
+"term": "neighborhood",
+"count": 1,
+"context": "> By continuity at · (with tolerance ·), there is · small enough that · and, for all · in this neighborhood,",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 261,
+"term": "orthogonality",
+"count": 1,
+"context": "> In ·, · we have orthogonality of vectors, governed by the inner product ·. On the space of continuous functions on · — an *infinite-dimensi",
+"targets": [
+"Functional Analysis|§22 Projection and Orthogonal Decomposition#^def-22-1"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 272,
+"term": "formulas for the fourier coefficients",
+"count": 1,
+"context": "> - Computational version: sines and cosines are orthogonal in this inner product, ⟂, which gives the formulas for the Fourier coefficients, ⟂.",
+"targets": [
+"Applied Linear Algebra|§47 Applications of Inner Product Spaces#^thm-47-3"
+]
+},
+{
+"note": "§33 Properties of the Riemann Integral",
+"line": 362,
+"term": "interior point",
+"count": 1,
+"context": "> If ·, then (as in the theorem's proof) both sides vanish for *every* ·; pick any interior point. So assume · and set",
+"targets": [
+"Functional Analysis|§6 Convex Sets and the Gauge#^def-6-1"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 37,
+"term": "riemann sum",
+"count": 2,
+"context": "> for some points · — the middle expression is a *Riemann sum* for ·. Now bracket each term:",
+"targets": [
+"Calculus|§35 The Definite Integral#^def-35-2"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 71,
+"term": "separable",
+"count": 1,
+"context": "> - Used in ODEs: the solution · of a separable initial value problem, ⟂, and the equivalence of ·, · with an integral equation, ⟂.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-5"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 71,
+"term": "initial value problem",
+"count": 1,
+"context": "> - Used in ODEs: the solution · of a separable initial value problem, ⟂, and the equivalence of ·, · with an integral equation, ⟂.",
+"targets": [
+"Ordinary Differential Equations|§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-2"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 76,
+"term": "integrable functions",
+"count": 2,
+"context": "Integration by parts needs a preliminary: products of integrable functions are integrable.",
+"targets": [
+"Calculus|§98 Double Integrals Over Rectangles#^thm-98-1"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 135,
+"term": "contour",
+"count": 1,
+"context": "> - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of ⟂ (the Cauchy integral formula for derivatives).",
+"targets": [
+"Complex Variables|§43 Contours#^def-43-5"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 135,
+"term": "cauchy integral formula",
+"count": 1,
+"context": "> - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of ⟂ (the Cauchy integral formula for derivatives).",
+"targets": [
+"Complex Variables|Cauchy Integral Formula",
+"Complex Variables|§54 Cauchy Integral Formula#^thm-54-1"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 135,
+"term": "cauchy integral formula for derivatives",
+"count": 1,
+"context": "> - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of ⟂ (the Cauchy integral formula for derivatives).",
+"targets": [
+"Complex Variables|Cauchy Integral Formula for Derivatives"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 190,
+"term": "substitution rule",
+"count": 1,
+"context": "> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: ⟂.",
+"targets": [
+"Calculus|Substitution Rule"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 191,
+"term": "almost everywhere",
+"count": 1,
+"context": "> - Lebesgue version: for integrable · the integral function is absolutely continuous (⟂) and · almost everywhere without any continuity (⟂).",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-5"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 193,
+"term": "picard iteration",
+"count": 1,
+"context": "it integrals in the solution formula for ·, ⟂, in variation of parameters, ⟂, and in the integral equation of Picard iteration, ⟂.",
+"targets": [
+"Ordinary Differential Equations|Picard–Lindelöf Theorem"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 230,
+"term": "antiderivative",
+"count": 1,
+"context": "window of width · sliding along the line. Both limits move at once; split at any base point using the global antiderivative · just discussed:",
+"targets": [
+"Calculus|§33 Antiderivatives#^def-33-1",
+"Complex Variables|§48 Antiderivatives#^def-48-2"
+]
+},
+{
+"note": "§34 Fundamental Theorem of Calculus",
+"line": 252,
+"term": "power series",
+"count": 2,
+"context": "> FTC II is exactly the statement borrowed in §26 to prove term-by-term differentiation of power series (· for continuous ·); FTC I underwrites every explicit evaluation of integrals used in §15 (the integral test",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 10,
+"term": "distribution function",
+"count": 5,
+"context": "ed on credit by the integral test of §15, and the completion of the Stieltjes story of §35, which ends at the distribution functions of probability theory.",
+"targets": [
+"Measure Theory|§17 Invariance Properties and Fubini's Theorem#^def-17-4"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 10,
+"term": "completion",
+"count": 1,
+"context": "Ross §36, because it settles two accounts: the symbol ·, used on credit by the integral test of §15, and the completion of the Stieltjes story of §35, which ends at the distribution functions of probability theory.",
+"targets": [
+"Functional Analysis|§11 Completeness#^def-11-4"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 38,
+"term": "conditionally convergent",
+"count": 1,
+"context": "> - The Lebesgue integral is absolute (⟂), so a conditionally convergent improper integral such as that of · on · is not a Lebesgue integral; for integrable · the tails vanish by ⟂.",
+"targets": [
+"Calculus|§73 Alternating Series and Absolute Convergence#^def-73-3"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 55,
+"term": "principal value",
+"count": 4,
+"context": "> - Computational version: ⟂ (the Cauchy principal value, the symmetric limit used in residue calculations).",
+"targets": [
+"Complex Variables|§35 The Power Function#^def-35-2"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 55,
+"term": "residue",
+"count": 1,
+"context": "> - Computational version: ⟂ (the Cauchy principal value, the symmetric limit used in residue calculations).",
+"targets": [
+"Complex Variables|§75 Residues#^def-75-1"
+]
+},
+{
+"note": "§36 Improper Integrals",
+"line": 213,
+"term": "power series",
+"count": 2,
+"context": "l distribution*. It has no elementary closed form; but that is an old acquaintance: §26 computed the explicit power series of ·, which (after the same · substitution and the additive constant ·) is precisely the explicit handle on ·",
+"targets": [
+"Calculus|§76 Power Series#^def-76-1"
+]
+},
+{
+"note": "§4 The Completeness Axiom",
+"line": 170,
+"term": "neighborhood",
+"count": 2,
+"context": "n interval that avoids the rational points. (Later, when studying topology, open intervals correspond to open neighborhoods: every neighborhood in · contains rational points — that is why we say · is dense *everywhere* in ·.)",
+"targets": [
+"Complex Variables|§12★ Regions in the Complex Plane#^def-12-1",
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-3",
+"Topology|§7 Interior and Closure#^def-7-2"
+]
+},
+{
+"note": "§6 Dedekind Cuts",
+"line": 99,
+"term": "embedding",
+"count": 1,
+"context": "o that ·. This ·-splitting is the recurring trick of the whole construction — it reappears in part (c) of the embedding below and in the correct definition of ·.",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§6 Dedekind Cuts",
+"line": 174,
+"term": "least upper bound",
+"count": 1,
+"context": ">   — the union of the cuts is itself a cut and is the least upper bound.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-7"
+]
+},
+{
+"note": "§6 Dedekind Cuts",
+"line": 186,
+"term": "isomorphic",
+"count": 1,
+"context": "g Proposition §6.2(ii) and the converse of Proposition §6.1), and ⟂ shows any two complete ordered fields are isomorphic.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§6 Dedekind Cuts",
+"line": 186,
+"term": "cauchy sequences",
+"count": 1,
+"context": "> - ★ The second standard construction, by classes of rational Cauchy sequences, with full proofs of the field, order and completeness axioms: ⟂. Its ⟂ matches the two constructions (order",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 14,
+"term": "cauchy sequences",
+"count": 7,
+"context": "makes sense inside · alone. A real number is then *defined* as the common destination of a family of rational Cauchy sequences, that is, as an equivalence class of them. Where Dedekind cuts complete · through its **order**, this route c",
+"targets": [
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 20,
+"term": "null sequence",
+"count": 8,
+"context": "> [!definition] Definition §6★.1: Rational Cauchy Sequence; Null Sequence",
+"targets": [
+"Logic and Proofs|§8 Functions#^def-8-8"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 60,
+"term": "equivalence relation",
+"count": 2,
+"context": "> [!theorem] Lemma §6★.2: Equivalence of Cauchy Sequences Is an Equivalence Relation",
+"targets": [
+"Group Theory|§24 Equivalence Relations and Partitions#^def-24-1",
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-10"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 61,
+"term": "reflexive, symmetric and transitive",
+"count": 1,
+"context": "> The relation · on · is reflexive, symmetric and transitive: an equivalence relation (⟂).",
+"targets": [
+"Logic and Proofs|§19 Congruence of Integers#^prop-19-1"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 75,
+"term": "equivalence classes",
+"count": 1,
+"context": "> Let · be the set of equivalence classes (the quotient set of ⟂), and write · for the class of ·. A rational · is sent to the class of the constant se",
+"targets": [
+"Measure Theory|§11 Borel Sets and Measure Spaces#^def-11-11"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 161,
+"term": "injective",
+"count": 4,
+"context": "> With the operations of ⟂, · and ·, the set · satisfies the field axioms (⟂). The map · is injective and preserves sums and products: · and ·.",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-14",
+"Measure Theory|§1 Countability and Set Theory#^def-1-3"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 199,
+"term": "subgroup",
+"count": 1,
+"context": "ring language, · is an *ideal* and ·. On the additive side this is a quotient group in the sense of ⟂: · is a subgroup of the abelian group ·, and · says exactly that the two sequences lie in the same coset of ·. ⟂ is what makes",
+"targets": [
+"Group Theory|§4 Subgroups#^def-4-1",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-2"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 199,
+"term": "abelian group",
+"count": 1,
+"context": "is an *ideal* and ·. On the additive side this is a quotient group in the sense of ⟂: · is a subgroup of the abelian group ·, and · says exactly that the two sequences lie in the same coset of ·. ⟂ is what makes the quotient a *fiel",
+"targets": [
+"Group Theory|§1 The Definition of a Group#^def-1-2"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 199,
+"term": "commutative ring",
+"count": 1,
+"context": "> With termwise operations, · is a commutative ring, and the proof of ⟂(b) shows that · is closed under sums and under multiplication by elements of · (bounded t",
+"targets": [
+"Group Theory|§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-2"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 242,
+"term": "embedding",
+"count": 2,
+"context": "> With · of ⟂, · satisfies the order axioms O1–O5 (⟂), so it is an ordered field. The embedding preserves order: for ·, · if and only if ·.",
+"targets": [
+"Differentiable Manifolds|§37 Embeddings#^def-37-1"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 327,
+"term": "dense",
+"count": 2,
+"context": "> - This is ⟂(c), \"· is dense in ·\", for ·.",
+"targets": [
+"Topology|§18 Countability Axioms#^def-18-4"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 389,
+"term": "least upper bound",
+"count": 3,
+"context": "> Every nonempty subset · that is bounded above has a least upper bound in · (⟂, ⟂). So · is a complete ordered field.",
+"targets": [
+"Calculus|§69 Sequences#^def-69-7"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 429,
+"term": "bijection",
+"count": 4,
+"context": "> is a well-defined bijection that preserves sums, products and order, with · for ·. In short, · and ℝ are isomorphic ordered fields, by an",
+"targets": [
+"Logic and Proofs|§9 Injections, Surjections and Bijections#^def-9-1",
+"Measure Theory|§1 Countability and Set Theory#^def-1-6"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 429,
+"term": "isomorphism",
+"count": 3,
+"context": "that preserves sums, products and order, with · for ·. In short, · and ℝ are isomorphic ordered fields, by an isomorphism fixing ·.",
+"targets": [
+"Applied Linear Algebra|§26 Coordinate Systems#^def-26-3",
+"Functional Analysis|§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2",
+"Group Theory|§16 Isomorphisms#^def-16-1",
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 429,
+"term": "isomorphic",
+"count": 2,
+"context": "> is a well-defined bijection that preserves sums, products and order, with · for ·. In short, · and ℝ are isomorphic ordered fields, by an isomorphism fixing ·.",
+"targets": [
+"Linear Algebra|§10 Invertibility and Isomorphisms#^ladr-3-69"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 440,
+"term": "surjective",
+"count": 1,
+"context": "> *Surjective.* Let ·. By Theorem §4.7, for each · pick · with ·. Then ·, so · (by the ⟂, · for large ·). A convergent sequ",
+"targets": [
+"Linear Algebra|§8 Null Spaces and Ranges#^ladr-3-19",
+"Measure Theory|§1 Countability and Set Theory#^def-1-4"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 486,
+"term": "homomorphism",
+"count": 1,
+"context": "ms and products. The map · (·) is well defined, because · means ·. It is an injective, order-preserving field homomorphism · (Proposition §3.1(f), (g) for the order). Identify · with its image.",
+"targets": [
+"Topology|§21 Algebra Prerequisites꞉ Groups#^def-21-3"
+]
+},
+{
+"note": "§6★ ℝ from Cauchy Sequences of Rationals",
+"line": 511,
+"term": "norm",
+"count": 1,
+"context": "has no analogue there, since it uses the order. Functional analysis makes the same point: one space with two norms can have two different completions, e.g. · is complete under · but completes to · under · (⟂).",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^def-10-1",
+"Linear Algebra|§19 Inner Products and Norms#^ladr-6-7",
+"Measure Theory|§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2"
+]
+},
+{
+"note": "§7 Limits of Sequences",
+"line": 146,
+"term": "limits are unique",
+"count": 2,
+"context": "*Why limits are unique: with · the bands · (blue) and · (red) are disjoint. From · on, every · would have to lie in both — impossibl",
+"targets": [
+"Functional Analysis|§10 Normed Linear Spaces#^prop-10-5"
+]
+},
+{
+"note": "§7 Limits of Sequences",
+"line": 161,
+"term": "hausdorff",
+"count": 1,
+"context": "> - In topological spaces limits are unique when the space is Hausdorff: ⟂.",
+"targets": [
+"Differentiable Manifolds|§1 Point-Set Topology Review#^def-1-7"
+]
+},
+{
+"note": "§8 A Discussion About Proofs",
+"line": 78,
+"term": "irrational number",
+"count": 1,
+"context": "> Give an example of a sequence of irrational numbers converging to a rational limit. Many choices — for instance",
+"targets": [
+"Logic and Proofs|§13 Number Systems#^def-13-4"
+]
+},
+{
+"note": "§9 Limit Theorems for Sequences",
+"line": 39,
+"term": "contrapositive",
+"count": 1,
+"context": "> The sequence · is not convergent. Why? It is unbounded: given any ·, the ⟂ provides ·, and then ·. By the contrapositive of the theorem, an unbounded sequence cannot converge.",
+"targets": [
+"Logic and Proofs|Contrapositive, Converse and Inverse",
+"Logic and Proofs|§2 Implications#^def-2-4",
+"Topology|§21 Algebra Prerequisites꞉ Groups#^prop-21-2"
+]
+},
+{
+"note": "§9 Limit Theorems for Sequences",
+"line": 62,
+"term": "limit laws",
+"count": 3,
+"context": "> - Computational version: limit laws for sequences, ⟂ (with worked examples).",
+"targets": [
+"Calculus|Limit Laws",
+"Calculus|Limit Laws"
+]
+},
+{
+"note": "§9 Limit Theorems for Sequences",
+"line": 210,
+"term": "binomial formula",
+"count": 2,
+"context": "he decimal expansion in §4, it is borrowed from the future. A proof from what we have: write · with ·. By the binomial formula (below), ·, so",
+"targets": [
+"Complex Variables|§3 Further Algebraic Properties#^thm-3-4"
+]
+},
+{
+"note": "§9 Limit Theorems for Sequences",
+"line": 251,
+"term": "null sequence",
+"count": 1,
+"context": "ueeze Theorem*: · (e.g. · for ·), hence · by the square-root example of §8, and · is squeezed between · and a null sequence.",
+"targets": [
+"Logic and Proofs|§8 Functions#^def-8-8"
+]
+},
+{
+"note": "§9 Limit Theorems for Sequences",
+"line": 316,
+"term": "extended real numbers",
+"count": 1,
+"context": "Earlier we introduced the extended real numbers · (§5). We now define the related notions · and ·. Compare two examples: · and ·. Both are divergent (both ar",
+"targets": [
+"Measure Theory|§12 Measurable Functions#^def-12-1"
+]
+}
+]

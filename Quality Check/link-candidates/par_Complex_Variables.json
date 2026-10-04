@@ -1,0 +1,296 @@
+[
+{
+"concept": "triangle inequality",
+"a": "Linear Algebra | [[§19 Inner Products and Norms#^ladr-6-17]] | Theorem 6.17: Triangle inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "triangle inequality",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Calculus | [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6]] | Theorem §116.6: The Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Applied Linear Algebra | [[§46 Inner Product Spaces#^thm-46-5]] | Theorem §46.5: The Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "uniform convergence",
+"a": "Measure Theory | [[§12 Measurable Functions#^def-12-9]] | Definition §12.9: Uniform Convergence",
+"b": "Complex Variables | [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2]] | Definition §69.2: Uniform Convergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "derivative",
+"a": "Multivariable Analysis | [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1]] | Theorem §9.1: Derivatives of $F(t)$",
+"b": "Complex Variables | [[§19 Derivatives#^def-19-1]] | Definition §19.1: Derivative",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "differentiable implie continuou",
+"a": "Calculus | [[§13 The Derivative as a Function#^thm-13-1]] | Theorem §13.1: Differentiable Implies Continuous",
+"b": "Complex Variables | [[§19 Derivatives#^thm-19-1]] | Theorem §19.1: Differentiable Implies Continuous",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Differentiable Manifolds | [[§26 Derivations and the Abstract Tangent Space#^thm-26-6]] | Theorem §26.6: The Chain Rule",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Calculus | [[§94 The Chain Rule#^thm-94-1]] | Theorem §94.1: The Chain Rule (Case 1)",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Calculus | [[§94 The Chain Rule#^thm-94-2]] | Theorem §94.2: The Chain Rule (Case 2)",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Calculus | [[§94 The Chain Rule#^thm-94-3]] | Theorem §94.3: The Chain Rule (General Version)",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "chain rule",
+"a": "Calculus | [[§17 The Chain Rule#^thm-17-2]] | Theorem §17.2: The Chain Rule",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-4]] | Theorem §20.4: Chain Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "term convergent serie tend zero",
+"a": "Calculus | [[§70 Series#^thm-70-4]] | Theorem §70.4: Terms of a Convergent Series Tend to Zero",
+"b": "Complex Variables | [[§61 Convergence of Series#^cor-61-2]] | Corollary §61.2: The Terms of a Convergent Series Tend to Zero",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "absolute convergence",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^cor-15-9]] | Corollary §15.9: Absolute Convergence in $L^1$",
+"b": "Complex Variables | [[§61 Convergence of Series#^def-61-2]] | Definition §61.2: Absolute Convergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute convergence implie convergence",
+"a": "Calculus | [[§73 Alternating Series and Absolute Convergence#^thm-73-3]] | Theorem §73.3: Absolute Convergence Implies Convergence",
+"b": "Complex Variables | [[§61 Convergence of Series#^cor-61-3]] | Corollary §61.3: Absolute Convergence Implies Convergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "convergent sequence bounded",
+"a": "Single Variable Analysis | [[§9 Limit Theorems for Sequences#^thm-9-1]] | Theorem §9.1: Convergent Sequences Are Bounded",
+"b": "Complex Variables | [[§60 Convergence of Sequences#^prop-60-4]] | Proposition §60.4: Convergent Sequences Are Bounded",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "continuity",
+"a": "Calculus | [[§91 Limits and Continuity#^def-91-3]] | Definition §91.3: Continuity",
+"b": "Complex Variables | [[§18 Continuity#^def-18-1]] | Definition §18.1: Continuity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "reverse triangle inequality",
+"a": "Functional Analysis | [[§10 Normed Linear Spaces#^lem-10-3]] | Lemma §10.3: Reverse Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^cor-5-2]] | Corollary §5.2: Reverse Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "integer power",
+"a": "Group Theory | [[§4 Subgroups#^def-4-2]] | Definition §4.2: Integer Powers",
+"b": "Complex Variables | [[§8 Products and Powers in Exponential Form#^def-8-1]] | Definition §8.1: Integer Powers",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "integer power",
+"a": "Group Theory | [[§4 Subgroups#^def-4-2]] | Definition §4.2: Integer Powers",
+"b": "Complex Variables | [[§34 Some Identities Involving Logarithms#^prop-34-3]] | Proposition §34.3: Integer Powers",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "cauchy theorem",
+"a": "Group Theory | [[§29 The Index and Lagrange's Theorem#^thm-29-6]] | Theorem §29.6: Cauchy's Theorem",
+"b": "Complex Variables | [[§50 Cauchy–Goursat Theorem#^thm-50-2]] | Theorem §50.2: Cauchy's Theorem (f′ Continuous)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "antiderivative",
+"a": "Calculus | [[§33 Antiderivatives#^def-33-1]] | Definition §33.1: Antiderivative",
+"b": "Complex Variables | [[§48 Antiderivatives#^def-48-2]] | Definition §48.2: Antiderivative",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "power function",
+"a": "Calculus | [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-5]] | Definition §2.5: Power Function",
+"b": "Complex Variables | [[§35 The Power Function#^def-35-1]] | Definition §35.1: The Power Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "periodicity",
+"a": "Calculus | [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^thm-2-4]] | Theorem §2.4: Periodicity",
+"b": "Complex Variables | [[§30 The Exponential Function#^prop-30-4]] | Proposition §30.4: Periodicity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "exponential function",
+"a": "Calculus | [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-10]] | Definition §2.10: Exponential Function",
+"b": "Complex Variables | [[§30 The Exponential Function#^def-30-1]] | Definition §30.1: The Exponential Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "exponential function",
+"a": "Calculus | [[§4 Exponential Functions#^def-4-1]] | Definition §4.1: Exponential Function",
+"b": "Complex Variables | [[§30 The Exponential Function#^def-30-1]] | Definition §30.1: The Exponential Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "exponential function",
+"a": "Calculus | [[§78 Taylor and Maclaurin Series#^thm-78-6]] | Theorem §78.6: The Exponential Function",
+"b": "Complex Variables | [[§30 The Exponential Function#^def-30-1]] | Definition §30.1: The Exponential Function",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "logarithmic function",
+"a": "Calculus | [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-11]] | Definition §2.11: Logarithmic Function",
+"b": "Complex Variables | [[§31 The Logarithmic Function#^def-31-1]] | Definition §31.1: The Logarithmic Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "jacobian",
+"a": "Calculus | [[§106 Change of Variables in Multiple Integrals#^def-106-2]] | Definition §106.2: The Jacobian",
+"b": "Complex Variables | [[§114★ Local Inverses#^def-114-2]] | Definition §114.2: Jacobian",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "limit sequence",
+"a": "Calculus | [[§69 Sequences#^def-69-2]] | Definition §69.2: Limit of a Sequence",
+"b": "Complex Variables | [[§60 Convergence of Sequences#^def-60-1]] | Definition §60.1: Limit of a Sequence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "reciprocal power",
+"a": "Calculus | [[§69 Sequences#^cor-69-2]] | Corollary §69.2: Reciprocal Powers",
+"b": "Complex Variables | [[§35 The Power Function#^prop-35-1]] | Proposition §35.1: Reciprocal of a Power",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "taylor serie maclaurin serie",
+"a": "Calculus | [[§78 Taylor and Maclaurin Series#^def-78-1]] | Definition §78.1: Taylor Series; Maclaurin Series",
+"b": "Complex Variables | [[§62 Taylor Series#^def-62-1]] | Definition §62.1: Taylor Series; Maclaurin Series",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "limit at infinity",
+"a": "Calculus | [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-1]] | Definition §11.1: Limit at Infinity",
+"b": "Complex Variables | [[§128★ Schwarz–Christoffel Transformation#^lem-128-3]] | Lemma §128.3: The Limit at Infinity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "independence path",
+"a": "Calculus | [[§109 The Fundamental Theorem for Line Integrals#^def-109-1]] | Definition §109.1: Independence of Path",
+"b": "Complex Variables | [[§48 Antiderivatives#^def-48-1]] | Definition §48.1: Independence of Path",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "power rule",
+"a": "Calculus | [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6]] | Theorem §19.6: The Power Rule (General Version)",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-3]] | Theorem §20.3: Power Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "power rule",
+"a": "Calculus | [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2]] | Theorem §14.2: The Power Rule",
+"b": "Complex Variables | [[§20 Rules for Differentiation#^thm-20-3]] | Theorem §20.3: Power Rule",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linear transformation",
+"a": "Applied Linear Algebra | [[§8 Introduction to Linear Transformations#^def-8-3]] | Definition §8.3: Linear Transformation",
+"b": "Complex Variables | [[§96★ Linear Transformations#^def-96-1]] | Definition §96.1: Linear Transformation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linear transformation",
+"a": "Applied Linear Algebra | [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4]] | Definition §24.4: Linear Transformation",
+"b": "Complex Variables | [[§96★ Linear Transformations#^def-96-1]] | Definition §96.1: Linear Transformation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "bernoulli equation",
+"a": "Ordinary Differential Equations | [[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-3]] | Definition §7.3: Bernoulli Equation",
+"b": "Complex Variables | [[§124★ Two-Dimensional Fluid Flow#^prop-124-3]] | Proposition §124.3: Bernoulli's Equation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "hyperbolic sine cosine",
+"a": "Fourier Series and PDEs | [[§1★ Homogeneous Linear Equations#^def-1-4]] | Definition §1.4: Hyperbolic Sine and Cosine",
+"b": "Complex Variables | [[§39★ Hyperbolic Functions#^def-39-1]] | Definition §39.1: Hyperbolic Sine and Cosine",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "term term integration",
+"a": "Fourier Series and PDEs | [[§10 Operations on Fourier Series#^thm-10-3]] | Theorem §10.3: Term-by-Term Integration",
+"b": "Complex Variables | [[§71★ Integration and Differentiation of Power Series#^thm-71-1]] | Theorem §71.1: Term-by-Term Integration",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "term term differentiation",
+"a": "Fourier Series and PDEs | [[§10 Operations on Fourier Series#^thm-10-6]] | Theorem §10.6: Term-by-Term Differentiation",
+"b": "Complex Variables | [[§71★ Integration and Differentiation of Power Series#^thm-71-4]] | Theorem §71.4: Term-by-Term Differentiation",
+"a_links_b": false,
+"b_links_a": false
+}
+]

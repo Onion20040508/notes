@@ -1,0 +1,219 @@
+[
+{
+"concept": "partition",
+"a": "Logic and Proofs | [[§22 Partitions and Equivalence Relations#^def-22-1]] | Definition §22.1: Partition",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "partition",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "partition",
+"a": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-3]] | Definition §24.3: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "equivalence relation",
+"a": "Measure Theory | [[§11 Borel Sets and Measure Spaces#^def-11-10]] | Definition §11.10: Equivalence Relation",
+"b": "Group Theory | [[§24 Equivalence Relations and Partitions#^def-24-1]] | Definition §24.1: Equivalence Relation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "characteristic function",
+"a": "Logic and Proofs | [[§12★ Counting Functions and Subsets#^def-12-4]] | Definition §12.4: Characteristic Function",
+"b": "Measure Theory | [[§12 Measurable Functions#^def-12-3]] | Definition §12.3: Characteristic Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "injective",
+"a": "Linear Algebra | [[§8 Null Spaces and Ranges#^ladr-3-14]] | Definition 3.14: Injective",
+"b": "Measure Theory | [[§1 Countability and Set Theory#^def-1-3]] | Definition §1.3: Injective (One-to-One)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "range",
+"a": "Linear Algebra | [[§8 Null Spaces and Ranges#^ladr-3-16]] | Definition 3.16: Range",
+"b": "Measure Theory | [[§1 Countability and Set Theory#^def-1-5]] | Definition §1.5: Range",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "range",
+"a": "Linear Algebra | [[§12 Duality#^ladr-3-130]] | Theorem 3.130: The range of $T'$",
+"b": "Measure Theory | [[§1 Countability and Set Theory#^def-1-5]] | Definition §1.5: Range",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "surjective",
+"a": "Linear Algebra | [[§8 Null Spaces and Ranges#^ladr-3-19]] | Definition 3.19: Surjective",
+"b": "Measure Theory | [[§1 Countability and Set Theory#^def-1-4]] | Definition §1.4: Surjective (Onto)",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Linear Algebra | [[§19 Inner Products and Norms#^ladr-6-17]] | Theorem 6.17: Triangle inequality",
+"b": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "triangle inequality",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"b": "Calculus | [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6]] | Theorem §116.6: The Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"b": "Applied Linear Algebra | [[§46 Inner Product Spaces#^thm-46-5]] | Theorem §46.5: The Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "triangle inequality",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-3]] | Proposition §15.3: Triangle Inequality",
+"b": "Complex Variables | [[§5 Triangle Inequality#^thm-5-1]] | Theorem §5.1: Triangle Inequality",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "uniform convergence",
+"a": "Measure Theory | [[§12 Measurable Functions#^def-12-9]] | Definition §12.9: Uniform Convergence",
+"b": "Complex Variables | [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2]] | Definition §69.2: Uniform Convergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "density",
+"a": "Single Variable Analysis | [[§4 The Completeness Axiom#^thm-4-7]] | Theorem §4.7: Density of $\\mathbb{Q}$ in $\\mathbb{R}$",
+"b": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19]] | Theorem §19.19: Density in $L^p$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "convergence cauchy sequence",
+"a": "Single Variable Analysis | [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-5]] | Definition §6★.5: Convergence and Cauchy Sequences in $\\widehat{\\mathbb{Q}}$",
+"b": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3]] | Definition §19.3: Convergence and Cauchy Sequences",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "bolzano weierstrass",
+"a": "Single Variable Analysis | [[§11 Subsequences#^thm-11-5]] | Theorem §11.5: Bolzano–Weierstrass",
+"b": "Measure Theory | [[§5 Topology of ℝⁿ#^thm-5-1]] | Theorem §5.1: Bolzano–Weierstrass",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "bolzano weierstrass",
+"a": "Single Variable Analysis | [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3]] | Theorem §13.3: Bolzano–Weierstrass in $\\mathbb{R}^n$",
+"b": "Measure Theory | [[§5 Topology of ℝⁿ#^thm-5-1]] | Theorem §5.1: Bolzano–Weierstrass",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "absolute convergence",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^cor-15-9]] | Corollary §15.9: Absolute Convergence in $L^1$",
+"b": "Complex Variables | [[§61 Convergence of Series#^def-61-2]] | Definition §61.2: Absolute Convergence",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "monotone convergence theorem",
+"a": "Single Variable Analysis | [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1]] | Theorem §10.1: Monotone Convergence Theorem",
+"b": "Measure Theory | [[§14 The Lebesgue Integral for Simple Functions#^thm-14-4]] | Theorem §14.4: Monotone Convergence Theorem (MCT)",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "linearity",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^thm-15-2]] | Theorem §15.2: Linearity",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-2]] | Theorem §51.2: Linearity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "linearity",
+"a": "Measure Theory | [[§14 The Lebesgue Integral for Simple Functions#^prop-14-1]] | Proposition §14.1: Linearity",
+"b": "Fourier Series and PDEs | [[§51★ Definition and Elementary Properties#^thm-51-2]] | Theorem §51.2: Linearity",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "open ball",
+"a": "Multivariable Analysis | [[§2 Open and Closed Sets#^def-2-1]] | Definition §2.1: Open Ball",
+"b": "Measure Theory | [[§5 Topology of ℝⁿ#^def-5-1]] | Definition §5.1: Open Ball",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "upper lower sums",
+"a": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-8]] | Definition §15.8: Upper and Lower Sums",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-2]] | Definition §8.2: Upper and Lower Sums",
+"a_links_b": false,
+"b_links_a": true
+},
+{
+"concept": "algebra",
+"a": "Measure Theory | [[§10 Lebesgue Measurable Sets#^def-10-3]] | Definition §10.3: Algebra",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-4]] | Proposition §25.4: $C_p^\\infty(M)$ Is an $\\mathbb{R}$-Algebra",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "algebra",
+"a": "Measure Theory | [[§10 Lebesgue Measurable Sets#^def-10-4]] | Definition §10.4: $\\sigma$-Algebra",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-4]] | Proposition §25.4: $C_p^\\infty(M)$ Is an $\\mathbb{R}$-Algebra",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basic propertie",
+"a": "Measure Theory | [[§15 The General Lebesgue Integral#^prop-15-1]] | Proposition §15.1: Basic Properties",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-1]] | Proposition §25.1: Basic Properties of $D_v$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "basic propertie",
+"a": "Measure Theory | [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3]] | Proposition §14.3: Basic Properties",
+"b": "Differentiable Manifolds | [[§25 Tangent Spaces II꞉ Germs#^prop-25-1]] | Proposition §25.1: Basic Properties of $D_v$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5]] | Definition §19.5: $L^p$ Space",
+"b": "Functional Analysis | [[§26 Boundedness and Continuity#^def-26-3]] | Definition §26.3: The Space $\\mathcal{L}(X, Y)$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5]] | Definition §19.5: $L^p$ Space",
+"b": "Differentiable Manifolds | [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-2]] | Definition §30.2: The Space $I_p/I_p^2$",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "normed linear space",
+"a": "Measure Theory | [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10]] | Theorem §19.10: $L^p$ is a Normed Linear Space",
+"b": "Functional Analysis | [[§26 Boundedness and Continuity#^thm-26-5]] | Theorem §26.5: $\\mathcal{L}(X, Y)$ is a Normed Linear Space",
+"a_links_b": false,
+"b_links_a": false
+}
+]

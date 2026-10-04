@@ -1,0 +1,72 @@
+[
+{
+"concept": "absolute value",
+"a": "Logic and Proofs | [[§1 The Language of Mathematics#^def-1-4]] | Definition §1.4: Absolute Value",
+"b": "Single Variable Analysis | [[§33 Properties of the Riemann Integral#^thm-33-4]] | Theorem §33.4: Absolute Values",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Logic and Proofs | [[§1 The Language of Mathematics#^def-1-4]] | Definition §1.4: Absolute Value",
+"b": "Calculus | [[§1 Four Ways to Represent a Function#^def-1-6]] | Definition §1.6: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "absolute value",
+"a": "Logic and Proofs | [[§1 The Language of Mathematics#^def-1-4]] | Definition §1.4: Absolute Value",
+"b": "Applied Linear Algebra | [[§53 Complex Numbers#^def-53-4]] | Definition §53.4: Absolute Value",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "sums product",
+"a": "Logic and Proofs | [[§5 The Induction Principle#^def-5-2]] | Definition §5.2: Sums and Products",
+"b": "Single Variable Analysis | [[§9 Limit Theorems for Sequences#^thm-9-3]] | Theorem §9.3: Sums and Products",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "partition",
+"a": "Logic and Proofs | [[§22 Partitions and Equivalence Relations#^def-22-1]] | Definition §22.1: Partition",
+"b": "Multivariable Analysis | [[§15 Multivariable Integration#^def-15-7]] | Definition §15.7: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "partition",
+"a": "Logic and Proofs | [[§22 Partitions and Equivalence Relations#^def-22-1]] | Definition §22.1: Partition",
+"b": "Measure Theory | [[§8 Motivation꞉ The Riemann Integral#^def-8-1]] | Definition §8.1: Partition",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "solving",
+"a": "Logic and Proofs | [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6]] | Theorem §21.6: Solving $[a][x] = [b]$ in $\\mathbb{Z}_m$",
+"b": "Ordinary Differential Equations | [[§33★ Fundamental Matrices#^thm-33-2]] | Theorem §33.2: Solving with Φ",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "characteristic function",
+"a": "Logic and Proofs | [[§12★ Counting Functions and Subsets#^def-12-4]] | Definition §12.4: Characteristic Function",
+"b": "Measure Theory | [[§12 Measurable Functions#^def-12-3]] | Definition §12.3: Characteristic Function",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "homogeneou equation",
+"a": "Logic and Proofs | [[§18★ Linear Diophantine Equations#^def-18-2]] | Definition §18.2: Homogeneous Equation",
+"b": "Ordinary Differential Equations | [[§5 Separable Differential Equations#^def-5-2]] | Definition §5.2: Homogeneous Equation",
+"a_links_b": false,
+"b_links_a": false
+},
+{
+"concept": "sequence",
+"a": "Logic and Proofs | [[§8 Functions#^def-8-7]] | Definition §8.7: Sequence",
+"b": "Calculus | [[§69 Sequences#^def-69-1]] | Definition §69.1: Sequence",
+"a_links_b": false,
+"b_links_a": false
+}
+]
