@@ -91,7 +91,7 @@ A function has only one series representation of each kind. If $\sum a_n(z - z_0
 
 ## Uniqueness of Laurent Series
 
-The proof for Laurent series needs [[§71★ Integration and Differentiation of Power Series#^thm-71-1|Theorem §71.1]] for series that also contain negative powers. B&C leaves this extension to an exercise.
+The proof for Laurent series needs Theorem §71.1 for series that also contain negative powers. B&C leaves this extension to an exercise.
 
 > [!theorem] Lemma §72.3: Term-by-Term Integration of Laurent Series
 > Consider two series
@@ -121,7 +121,7 @@ The proof for Laurent series needs [[§71★ Integration and Differentiation of 
 >
 > **$S_1$.** Its circle of convergence has radius at least $R_2$, and $C$ is interior to it; this is [[§71★ Integration and Differentiation of Power Series#^thm-71-1|Theorem §71.1]] itself.
 >
-> **$S_2$.** Repeat the proof of [[§71★ Integration and Differentiation of Power Series#^thm-71-1|Theorem §71.1]] with the remainder $\tau_N(z) = S_2(z) - \sum_{n=1}^{N}b_n(z - z_0)^{-n}$. As there,
+> **$S_2$.** Repeat the proof of Theorem §71.1 with the remainder $\tau_N(z) = S_2(z) - \sum_{n=1}^{N}b_n(z - z_0)^{-n}$. As there,
 >
 > $$
 > \int_C g(z)S_2(z)\,dz = \sum_{n=1}^{N}b_n\int_C\frac{g(z)}{(z - z_0)^n}\,dz + \int_C g(z)\tau_N(z)\,dz ,
@@ -161,7 +161,7 @@ The proof for Laurent series needs [[§71★ Integration and Differentiation of 
 > \frac{1}{2\pi i}\int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}} = c_n \qquad (n = 0, \pm1, \pm2, \ldots) ,
 > $$
 >
-> which is expression (5) of [[§66 Laurent Series#^def-66-1|Definition §66.1]] for the coefficients of the Laurent series of $f$ in the annulus. (For this to be meaningful, $f$ must be analytic in the annulus, which B&C takes for granted. Here is why it is. The nonnegative part of (8) is a power series converging in $|z - z_0| < R_2$, so its sum is analytic there by [[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]. The negative part is $T\big(1/(z - z_0)\big)$, where $T(w) = \sum b_nw^n$ is analytic in $|w| < 1/R_1$, again by [[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]], so it is analytic in $|z - z_0| > R_1$ by the chain rule.)
+> which is expression (5) of [[§66 Laurent Series#^def-66-1|Definition §66.1]] for the coefficients of the Laurent series of $f$ in the annulus. (For this to be meaningful, $f$ must be analytic in the annulus, which B&C takes for granted. Here is why it is. The nonnegative part of (8) is a power series converging in $|z - z_0| < R_2$, so its sum is analytic there by [[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]. The negative part is $T\big(1/(z - z_0)\big)$, where $T(w) = \sum b_nw^n$ is analytic in $|w| < 1/R_1$, again by Corollary §71.2, so it is analytic in $|z - z_0| > R_1$ by the chain rule.)
 
 ^pf-72-4
 
@@ -245,7 +245,7 @@ The proof for Laurent series needs [[§71★ Integration and Differentiation of 
 > f_1(z) = \sum_{n=0}^{\infty}(-1)^nz^{2n} \qquad (|z| < 1)
 > $$
 >
-> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), and substituting $-z^2$ into the geometric series shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^prop-28-4|Proposition §28.4]]) it is the only one.
+> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ (Corollary §71.2), and substituting $-z^2$ into the geometric series shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^prop-28-4|Proposition §28.4]]) it is the only one.
 >
 > **(b)** Likewise $f_2(z) = 1/z^2$ $(z \ne 0)$ is the analytic continuation of
 >

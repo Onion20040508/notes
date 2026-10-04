@@ -12,6 +12,7 @@ tags: [ordinary-differential-equations, hub]
 
 ## Its proof uses
 - [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2: Solution of a First-Order Linear Equation]]
+- [[§5 Separable Differential Equations#^thm-5-1|Theorem §5.1: Solution of a Separable Equation]]
 - [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Definition §14.2: Wronskian]]
 
 ## Used in (Ordinary Differential Equations)

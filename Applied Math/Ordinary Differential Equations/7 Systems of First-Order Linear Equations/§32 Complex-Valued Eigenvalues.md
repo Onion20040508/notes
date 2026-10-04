@@ -240,7 +240,6 @@ So the two complex solutions carry the same information, and either one yields t
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^def-38-2|235 Def. §38.2]] (attractor, repeller, saddle point for $\mathbf{x}' = A\mathbf{x}$) and [[§38 Applications to Differential Equations#^ex-38-3|235 Ex. §38.3]] (a spiral point in an RLC circuit). The discrete-time classification, with $|\lambda|$ compared to $1$ and spirals from complex eigenvalues: [[§37 Discrete Dynamical Systems#^prop-37-3|235 Prop. §37.3]] and [[§37 Discrete Dynamical Systems#^ex-37-4|235 Ex. §37.4]]. The coordinates $\mathbf{y}$ in the complex case are those of [[§36 Complex Eigenvalues#^thm-36-4|235 Thm. §36.4]].
-> - A nonlinear system drawn in the same phase plane: the predator–prey equations of [[§62 Predator-Prey Systems#^def-62-1|Calc Def. §62.1]], whose trajectories around the coexistence equilibrium are closed cycles ([[§62 Predator-Prey Systems#^ex-62-2|Calc Ex. §62.2]]), as around a center.
 
 > [!remark] Remark: Transitions Between the Cases
 > Other possibilities occur as transitions between the main cases and are less likely in applications:

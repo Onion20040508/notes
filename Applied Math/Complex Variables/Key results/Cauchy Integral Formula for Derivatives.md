@@ -27,4 +27,4 @@ tags: [complex-variables, hub]
 - [[§80 Residues at Poles#^ex-80-3|Example §80.3: The Residue Formula from Cauchy's Integral Formula]]
 
 ## Connections
-- Steps 4–5 of the [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^pf-56-1|proof of Theorem §56.1]] are the complex form of integration by parts, [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]]: there the boundary term $[FG]_a^b$ survives, while around a closed contour it vanishes, so $n$ integrations by parts move all $n$ derivatives from $f$ onto $1/(s - z)$ at no cost.
+- Steps 4–5 are the complex form of integration by parts, [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]]: there the boundary term $[FG]_a^b$ survives, while around a closed contour it vanishes, so $n$ integrations by parts move all $n$ derivatives from $f$ onto $1/(s - z)$ at no cost.

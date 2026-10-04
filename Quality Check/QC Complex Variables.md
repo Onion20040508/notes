@@ -7,10 +7,13 @@ tags: [quality-check]
 # Quality check: Complex Variables
 ↑ [[Quality Check 2026-10-04]]
 
+> [!note] Record only
+> None of the changes in this log were applied: every note is exactly as it was before the check. Each change below is a **proposal**. The exact text of every proposed change is saved in `Quality Check/proposed-edits.patch` (see [[Quality Check 2026-10-04]]).
+
 ## Summary
 Complex Variables (180 notes: 140 sections, 12 chapter notes, 27 hubs, home note) is in very good shape: frontmatter, nav lines, `B&C` header lines, block IDs, numbering and `*Uses:*` lines were consistent throughout. No mathematical errors turned up. I read §1–§37 and §93 in depth, skimmed §38–§49 with spot checks, and skimmed the structure and opening paragraphs of every other section. About 40 stated numerical values were checked with sympy/mpmath (residue integrals in §85–§92, §46–§47 bounds, derivatives in §20). The main problems were in the hubs. The [[Cauchy–Riemann Equations]] hub ended mid-sentence, two "Its proof uses" lists contained items that are only "compare" references, cross-subject proof dependencies were missing, and several hubs carried section-relative wording. I also linked 64 unlinked cross-section references, replaced Brown–Churchill numbering ("Theorem 1") with vault numbering where it could be confused, added four missing `*Uses:*` lines and added five connection items (Topology, Fourier Series and PDEs, Multivariable Analysis).
 
-## Edits made
+## Proposed edits (not applied)
 
 ### Hubs
 - [[Cauchy–Riemann Equations]]: the Connections bullet stopped at "with Jacobian matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]])". Restored the matrix display and the rest of the remark from [[§21 Cauchy–Riemann Equations]]: rotation–scaling matrix, the converse in §23, and [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]]. Added a link to the §23 theorem and its hub. The source's "Used in Electromagnetism" bullet was left out to match every other hub in the vault.
@@ -71,7 +74,7 @@ Complex Variables (180 notes: 140 sections, 12 chapter notes, 27 hubs, home note
   - Chapters 6–8: [[§81 Examples (Residues at Poles)]], [[§83 Zeros and Poles]], [[§86 Example (Evaluation of Improper Integrals)]], [[§87 Improper Integrals from Fourier Analysis]], [[§88★ Jordan's Lemma]], [[§89★ An Indented Path]], [[§101★ Mappings of the Upper Half Plane]], [[§102★ Examples (Mappings of the Upper Half Plane)]], [[§111★ Surfaces for Related Functions]]
   - Chapters 9–12: [[§117★ Transformations of Boundary Conditions]], [[§119★ Steady Temperatures in a Half Plane]], [[§120★ A Related Problem (Steady Temperatures in a Half Plane)]], [[§121★ Temperatures in a Quadrant]], [[§122★ Electrostatic Potential]], [[§128★ Schwarz–Christoffel Transformation]], [[§133★ Electrostatic Potential about an Edge of a Conducting Plate]], [[§135★ Dirichlet Problem for a Disk]], [[§137★ Related Boundary Value Problems]]
 
-- Coordinator follow-up: the two entries removed from "Its proof uses" lists ([[Antiderivatives and Independence of Path (complex)]]: Ex. §45.2; [[Maximum Modulus Principle]]: Lemma §28.1) were re-added to each hub's Connections as "Compare" pointers, so no hub loses a link.
+- Coordinator follow-up: the two entries removed from "Its proof uses" lists ([[Antiderivatives and Independence of Path (complex)]]: Ex. §45.2; [[Maximum Modulus Principle]]: Lemma §28.1) would be re-added to each hub's Connections as "Compare" pointers, so no hub loses a link (proposed, not applied).
 
 ## Flagged for the author (not edited)
 - Hub Connections omit the source remarks' "Used in Electromagnetism" bullets: [[Analytic Functions Have Harmonic Components]], [[Conformal Mappings Preserve Angles]], [[Schwarz–Christoffel Transformation]], [[Cauchy–Riemann Equations]]. No hub anywhere in the vault carries such bullets, so I took this as the generator's policy and did not add them.

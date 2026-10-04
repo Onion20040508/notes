@@ -65,7 +65,6 @@ tags: [linear-algebra]
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (the spectral theorem for symmetric matrices) and [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|235 Thm. §48.2]] (orthogonally diagonalizable iff symmetric), with worked orthogonal diagonalizations.
 > - Matrix version: a Hermitian (in particular real symmetric) matrix has $n$ mutually orthogonal eigenvectors, [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] (2), (4), used to solve $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with symmetric $\mathbf{A}$.
 > - Infinite-dimensional analogue: a regular Sturm–Liouville problem has infinitely many real eigenvalues, [[§23 Sturm–Liouville Problems#^thm-23-5|341 Thm. §23.5]], and every sectionally smooth function expands in its orthogonal eigenfunctions, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|341 Thm. §24.2]] (stated there without proof).
-> - Second derivative test: the Hessian is symmetric, so by this theorem its definiteness is read off from the signs of its eigenvalues, [[Second Derivative Test in Several Variables|452 Thm. §14.4]].
 
 %% ex:7.29-fig %%
 > [!example] Example: Self-adjoint versus merely diagonalizable
@@ -98,13 +97,13 @@ tags: [linear-algebra]
 > $$
 > \|Te_1\|^2=|a_{1,1}|^2,\qquad\|T^*e_1\|^2=|a_{1,1}|^2+|a_{1,2}|^2+\dots+|a_{1,n}|^2
 > $$
-> (using [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]: row 1 of $\mathcal{M}(T)$ conjugated is column 1 of $\mathcal{M}(T^*)$). Normality gives $\|Te_1\|=\|T^*e_1\|$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]), so $a_{1,2}=\dots=a_{1,n}=0$. Then $\|Te_2\|^2=|a_{2,2}|^2$ and $\|T^*e_2\|^2=|a_{2,2}|^2+\dots+|a_{2,n}|^2$ force row 2 to vanish off the diagonal; inductively every row does.
+> (using [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]: row 1 of $\mathcal{M}(T)$ conjugated is column 1 of $\mathcal{M}(T^*)$). Normality gives $\|Te_1\|=\|T^*e_1\|$ (7.20), so $a_{1,2}=\dots=a_{1,n}=0$. Then $\|Te_2\|^2=|a_{2,2}|^2$ and $\|T^*e_2\|^2=|a_{2,2}|^2+\dots+|a_{2,n}|^2$ force row 2 to vanish off the diagonal; inductively every row does.
 >
 > (b)$\Rightarrow$(a): $\mathcal{M}(T^*)$ is the conjugate diagonal matrix, and diagonal matrices commute.
 >
 > (b)$\iff$(c): as in [[§17 Diagonalizable Operators#^ladr-5-55|5.55]].
 
-*Uses:* [[§20 Orthonormal Bases#^ladr-6-38|6.38]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
+*Uses:* [[§20 Orthonormal Bases#^ladr-6-38|6.38]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: a change of basis to the eigenbasis of an observable by diagonalizing its matrix, and unitarily equivalent observables with identical spectra — [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-3|QM Theorem §C1.4.3]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]].

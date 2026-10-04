@@ -7,10 +7,13 @@ tags: [quality-check]
 # Quality check: Group Theory
 ↑ [[Quality Check 2026-10-04]]
 
+> [!note] Record only
+> None of the changes in this log were applied: every note is exactly as it was before the check. Each change below is a **proposal**. The exact text of every proposed change is saved in `Quality Check/proposed-edits.patch` (see [[Quality Check 2026-10-04]]).
+
 ## Summary
 Group Theory (MATH 493, in progress) is carefully built: all 47 sections share the header pattern, numbering is continuous, and every numbered box has a block ID and its proofs have *Uses:* lines. I checked every link alias against its target block and compared every hub with its section note's *Uses:* line. The newest material (Chapters 8–9) was read in depth, and the permutation computations in §43 and §46 were verified by script. The problems were bookkeeping, not mathematics: summaries and chapter notes had not caught up with the lectures of Sept 28 – Oct 2 and Problem Set 4, two stale 591 labels, LaTeX names that had been stripped badly in hub titles, ambiguous bare labels on examples, and three hubs whose "Its proof uses" disagreed with the proof. A few genuine connections to Logic and Proofs and Differentiable Manifolds were added. No proof was written and no course-record fact was changed.
 
-## Edits made
+## Proposed edits (not applied)
 ### Correctness (labels and references)
 - [[§30 Orbit–Stabilizer]] and [[Orbit–Stabilizer Theorem]] — [[Homogeneous Spaces Are Coset Spaces]] was labelled "591 Thm. §7.8"; it embeds 591 Thm. §14.3, and the label now says so.
 - [[§3 Basic Examples of Groups]] — [[Classical Groups Are Manifolds]] was labelled "591 Thm. §5.8"; it is 591 Thm. §11.6.

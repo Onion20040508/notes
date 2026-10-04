@@ -13,6 +13,7 @@ tags: [group-theory, hub]
 ## Its proof uses
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
 - [[§4 Subgroups#^prop-4-6|Proposition §4.6: ⟨g⟩ Is the Smallest Subgroup Containing g]]
+- [[§5 A Zoo of Subgroups#^prop-5-1|Proposition §5.1: Subgroups of ℤ]]
 - [[§6 Divisibility and Congruence#^lem-6-1|Lemma §6.1: Division Algorithm]]
 
 ## Its proof uses (other subjects)

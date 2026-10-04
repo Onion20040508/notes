@@ -17,6 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Immersions#^thm-36-1|Theorem §36.1: Local Normal Form for Immersions]]
 - [[§36 Immersions#^cor-36-2|Corollary §36.2: The Local Image of an Immersion]]
 - [[§37 Embeddings#^def-37-1|Definition §37.1: Embedding]]
+- [[§37 Embeddings#^rem-37-1|Remark: Where Is Injectivity Used?]]
 
 ## Its proof uses (other subjects)
 - [[§9 Continuous Functions#^prop-9-2|590 §9.2: Equivalent Definition of Homeomorphism]]

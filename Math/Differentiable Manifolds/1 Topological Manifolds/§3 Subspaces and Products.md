@@ -273,7 +273,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > [!remark] Remark: Why the Universal Property Matters
 > “To check that $F$ is continuous, you just check component by component.” Uribe flagged that the same pattern will reappear for *differentiability*: a map into a product of manifolds will be smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
 >
-> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
+> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
 
 ^rem-3-5
 

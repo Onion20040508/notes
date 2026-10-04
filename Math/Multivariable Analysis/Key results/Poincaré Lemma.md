@@ -11,7 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[§22 The Algebra of Differential Forms#^prop-22-12|Proposition §22.12: Poincaré Lemma]], in [[§22 The Algebra of Differential Forms]]
 
 ## Its proof uses
-- (no proof in the notes: §22 refers to Lee, *Introduction to Smooth Manifolds*, Ch. 17, the textbook of [[Differentiable Manifolds]]; no proof elsewhere in the vault yet. Special cases proved in the vault: 1-forms on a rectangle, [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|331 Thm. §9.2]]; and the closed 1-form −u_y dx + u_x dy of a harmonic u on a simply connected plane domain, [[§115★ Harmonic Conjugates#^thm-115-4|342 Thm. §115.4]])
+- (no proof in the notes)
 
 ## Used in (Multivariable Analysis)
 - (not cited later in the course)

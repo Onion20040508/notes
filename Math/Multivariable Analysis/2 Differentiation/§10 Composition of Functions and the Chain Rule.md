@@ -102,69 +102,6 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 
 ^thm-10-2
 
-> [!proof]+ Proof of $\partial g / \partial x$
-> Fix $(x_0, y_0)$ and let $y = y_0$. Define:
->
-> $$
-> \partial_1 = f(\varphi(x_0 + h, y_0), \psi(x_0 + h, y_0)) - f(\varphi(x_0, y_0), \psi(x_0, y_0)).
-> $$
->
-> Add and subtract $f(\varphi(x_0 + h, y_0), \psi(x_0, y_0))$:
->
-> $$
-> \begin{aligned}
-> \partial_1 &= \underbrace{\bigl[f(\varphi(x_0+h,y_0), \psi(x_0+h,y_0)) - f(\varphi(x_0+h,y_0), \psi(x_0,y_0))\bigr]}_{\text{(I): change in } \eta} \\
-> &\quad + \underbrace{\bigl[f(\varphi(x_0+h,y_0), \psi(x_0,y_0)) - f(\varphi(x_0,y_0), \psi(x_0,y_0))\bigr]}_{\text{(II): change in } \xi}.
-> \end{aligned}
-> $$
->
-> **Term (II):** Define $u(\xi) = f(\xi, \psi(x_0, y_0))$. By [[Mean Value Theorem|MVT]], there exists $\alpha(h) \in [0,1]$ such that:
->
-> $$
-> \begin{aligned}
-> \text{(II)} &= u(\varphi(x_0+h, y_0)) - u(\varphi(x_0, y_0)) \\
-> &= u'(\varphi(x_0, y_0) + \alpha(h)[\varphi(x_0+h, y_0) - \varphi(x_0, y_0)]) \cdot [\varphi(x_0+h, y_0) - \varphi(x_0, y_0)] \\
-> &= f_\xi(\varphi(x_0, y_0) + \alpha(h) \cdot \Delta\varphi, \, \psi(x_0, y_0)) \cdot \Delta\varphi,
-> \end{aligned}
-> $$
->
-> where $\Delta\varphi = \varphi(x_0+h, y_0) - \varphi(x_0, y_0)$.
->
-> **Term (I):** Define $v(\eta) = f(\varphi(x_0+h, y_0), \eta)$. By MVT, there exists $\theta(h) \in [0,1]$ such that:
->
-> $$
-> \begin{aligned}
-> \text{(I)} &= f_\eta(\varphi(x_0+h, y_0), \, \psi(x_0, y_0) + \theta(h) \cdot \Delta\psi) \cdot \Delta\psi,
-> \end{aligned}
-> $$
->
-> where $\Delta\psi = \psi(x_0+h, y_0) - \psi(x_0, y_0)$.
->
-> **Dividing by $h$:**
->
-> $$
-> \frac{\partial_1}{h} = f_\eta(\cdots) \cdot \frac{\Delta\psi}{h} + f_\xi(\cdots) \cdot \frac{\Delta\varphi}{h}.
-> $$
->
-> **Taking $h \to 0$:**
-> - $\dfrac{\Delta\varphi}{h} = \dfrac{\varphi(x_0+h, y_0) - \varphi(x_0, y_0)}{h} \to \varphi_x(x_0, y_0)$
-> - $\dfrac{\Delta\psi}{h} = \dfrac{\psi(x_0+h, y_0) - \psi(x_0, y_0)}{h} \to \psi_x(x_0, y_0)$
-> - The arguments of $f_\xi$ converge to $(\varphi(x_0, y_0), \psi(x_0, y_0))$ since $\alpha(h) \in [0,1]$ and $\Delta\varphi \to 0$
-> - The arguments of $f_\eta$ converge similarly
-> - By continuity of $f_\xi$ and $f_\eta$, the $f_\xi(\cdots)$ and $f_\eta(\cdots)$ terms converge
->
-> Therefore:
->
-> $$
-> \frac{\partial g}{\partial x}(x_0, y_0) = \lim_{h \to 0} \frac{\partial_1}{h} = f_\xi(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \varphi_x(x_0, y_0) + f_\eta(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \psi_x(x_0, y_0).
-> $$
->
-> Similarly (fixing $x = x_0$ and varying $y$) we obtain the formula for $\partial g / \partial y$. Finally, $g$ is differentiable at $(x_0, y_0)$: the hypotheses hold at every point near $(x_0, y_0)$ (since $\varphi, \psi$ are continuous), so both formulas hold near $(x_0, y_0)$, and they express $g_x, g_y$ as sums of products of compositions of continuous functions ([[§3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2]], [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Theorem §10.1]]). Hence $g_x, g_y$ are continuous near $(x_0, y_0)$, and $g$ is differentiable there by [[§6 Differentiability#^thm-6-2|Theorem §6.2]].
-
-^pf-10-2
-
-*Uses:* [[Mean Value Theorem|451 §29.3]], [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-1|Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|Thm. §3.2]], [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Thm. §10.1]], [[§6 Differentiability#^thm-6-2|Thm. §6.2]]
-
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule (451 §28.3)]].
 > - Under differentiability hypotheses only: [[§6 Differentiability#^thm-6-9|Theorem §6.9]]; continuous partials give differentiability by [[Continuous Partials Imply Differentiability|Theorem §6.2]].
@@ -295,6 +232,69 @@ $$
 > [!remark]- Connections
 > - Linear algebra: [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]].
 > - Applied to a map and its inverse, this gives [[§13 The Inverse Function Theorem#^rem-13-6|reciprocal Jacobians]] ([[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]).
+
+> [!proof]+ Proof of $\partial g / \partial x$
+> Fix $(x_0, y_0)$ and let $y = y_0$. Define:
+>
+> $$
+> \partial_1 = f(\varphi(x_0 + h, y_0), \psi(x_0 + h, y_0)) - f(\varphi(x_0, y_0), \psi(x_0, y_0)).
+> $$
+>
+> Add and subtract $f(\varphi(x_0 + h, y_0), \psi(x_0, y_0))$:
+>
+> $$
+> \begin{aligned}
+> \partial_1 &= \underbrace{\bigl[f(\varphi(x_0+h,y_0), \psi(x_0+h,y_0)) - f(\varphi(x_0+h,y_0), \psi(x_0,y_0))\bigr]}_{\text{(I): change in } \eta} \\
+> &\quad + \underbrace{\bigl[f(\varphi(x_0+h,y_0), \psi(x_0,y_0)) - f(\varphi(x_0,y_0), \psi(x_0,y_0))\bigr]}_{\text{(II): change in } \xi}.
+> \end{aligned}
+> $$
+>
+> **Term (II):** Define $u(\xi) = f(\xi, \psi(x_0, y_0))$. By [[Mean Value Theorem|MVT]], there exists $\alpha(h) \in [0,1]$ such that:
+>
+> $$
+> \begin{aligned}
+> \text{(II)} &= u(\varphi(x_0+h, y_0)) - u(\varphi(x_0, y_0)) \\
+> &= u'(\varphi(x_0, y_0) + \alpha(h)[\varphi(x_0+h, y_0) - \varphi(x_0, y_0)]) \cdot [\varphi(x_0+h, y_0) - \varphi(x_0, y_0)] \\
+> &= f_\xi(\varphi(x_0, y_0) + \alpha(h) \cdot \Delta\varphi, \, \psi(x_0, y_0)) \cdot \Delta\varphi,
+> \end{aligned}
+> $$
+>
+> where $\Delta\varphi = \varphi(x_0+h, y_0) - \varphi(x_0, y_0)$.
+>
+> **Term (I):** Define $v(\eta) = f(\varphi(x_0+h, y_0), \eta)$. By MVT, there exists $\theta(h) \in [0,1]$ such that:
+>
+> $$
+> \begin{aligned}
+> \text{(I)} &= f_\eta(\varphi(x_0+h, y_0), \, \psi(x_0, y_0) + \theta(h) \cdot \Delta\psi) \cdot \Delta\psi,
+> \end{aligned}
+> $$
+>
+> where $\Delta\psi = \psi(x_0+h, y_0) - \psi(x_0, y_0)$.
+>
+> **Dividing by $h$:**
+>
+> $$
+> \frac{\partial_1}{h} = f_\eta(\cdots) \cdot \frac{\Delta\psi}{h} + f_\xi(\cdots) \cdot \frac{\Delta\varphi}{h}.
+> $$
+>
+> **Taking $h \to 0$:**
+> - $\dfrac{\Delta\varphi}{h} = \dfrac{\varphi(x_0+h, y_0) - \varphi(x_0, y_0)}{h} \to \varphi_x(x_0, y_0)$
+> - $\dfrac{\Delta\psi}{h} = \dfrac{\psi(x_0+h, y_0) - \psi(x_0, y_0)}{h} \to \psi_x(x_0, y_0)$
+> - The arguments of $f_\xi$ converge to $(\varphi(x_0, y_0), \psi(x_0, y_0))$ since $\alpha(h) \in [0,1]$ and $\Delta\varphi \to 0$
+> - The arguments of $f_\eta$ converge similarly
+> - By continuity of $f_\xi$ and $f_\eta$, the $f_\xi(\cdots)$ and $f_\eta(\cdots)$ terms converge
+>
+> Therefore:
+>
+> $$
+> \frac{\partial g}{\partial x}(x_0, y_0) = \lim_{h \to 0} \frac{\partial_1}{h} = f_\xi(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \varphi_x(x_0, y_0) + f_\eta(\varphi(x_0,y_0), \psi(x_0,y_0)) \cdot \psi_x(x_0, y_0).
+> $$
+>
+> Similarly (fixing $x = x_0$ and varying $y$) we obtain the formula for $\partial g / \partial y$. Finally, $g$ is differentiable at $(x_0, y_0)$: the hypotheses hold at every point near $(x_0, y_0)$ (since $\varphi, \psi$ are continuous), so both formulas hold near $(x_0, y_0)$, and they express $g_x, g_y$ as sums of products of compositions of continuous functions ([[§3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2]], [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Theorem §10.1]]). Hence $g_x, g_y$ are continuous near $(x_0, y_0)$, and $g$ is differentiable there by [[§6 Differentiability#^thm-6-2|Theorem §6.2]].
+
+^pf-10-2
+
+*Uses:* [[Mean Value Theorem|451 §29.3]], [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-1|Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|Thm. §3.2]], [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Thm. §10.1]], [[§6 Differentiability#^thm-6-2|Thm. §6.2]]
 
 > [!remark] Remark: Warning: Differentiability of Composition
 > **Question:** If $f$ is differentiable and $\varphi, \psi$ are differentiable, is the composition $g = f \circ (\varphi, \psi)$ necessarily differentiable?

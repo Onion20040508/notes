@@ -25,6 +25,7 @@ tags: [chapter, calculus]
 - [[§115 The Divergence Theorem]] — Stewart 16.9
 
 ## Summary of the fundamental theorems
+## Summary: The Fundamental Theorems
 
 *Stewart, Section 16.10.* The main results of Chapter 16 are higher-dimensional versions of the Fundamental Theorem of Calculus. In each, the left side integrates a "derivative" over a region, and the right side involves only the values of the original function on the *boundary* of the region. (Hypotheses omitted; see the linked statements.)
 

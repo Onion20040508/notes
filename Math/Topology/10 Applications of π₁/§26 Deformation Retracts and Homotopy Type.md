@@ -3,7 +3,7 @@ type: section
 subject: "[[Topology]]"
 chapter: 10
 section: 26
-munkres: "§55, §58"
+munkres: "§58"
 tags: [topology, math590]
 ---
 ← [[§25 The Fundamental Theorem of Algebra]] · ↑ [[· 10 Applications of π₁]] · [[§27 The Fundamental Group of Sⁿ]] →
@@ -116,7 +116,7 @@ tags: [topology, math590]
 > [!theorem] Corollary §26.4: What Properties Transfer via Retraction
 > Let $A$ be a retract of $X$. Then $\pi_1(A)$ is simultaneously a subgroup of $\pi_1(X)$ (via $j_*$) and a quotient of $\pi_1(X)$ (via $r_*$).
 >
-> **Up** (from $A$ to $X$, via $j_{\ast}$ injective): $\pi_1(X)$ contains an isomorphic copy of $\pi_1(A)$ ([[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|§21.9]]), so any property that a group has as soon as one of its subgroups has it transfers upward. If $\pi_1(A)$ is non-abelian, nontrivial, infinite, or has torsion, so does $\pi_1(X)$.
+> **Up** (from $A$ to $X$, via $j_{\ast}$ injective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-9|inherited by subgroups]] transfers upward. If $\pi_1(A)$ is non-abelian, nontrivial, infinite, or has torsion, so does $\pi_1(X)$.
 >
 > **Down** (from $X$ to $A$, via $r_{\ast}$ surjective): any property [[§21 Algebra Prerequisites꞉ Groups#^prop-21-10|inherited by quotients]] transfers downward. If $\pi_1(X)$ is abelian or finitely generated, so is $\pi_1(A)$.
 

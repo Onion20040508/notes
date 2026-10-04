@@ -7,7 +7,7 @@ tags: [chapter, linear-algebra]
 # 6 Inner Product Spaces
 ↑ [[Linear Algebra]]
 
-**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (3 citations), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (2 citations), [[· 3 Linear Maps|3 Linear Maps]] (2 citations), [[· 4 Polynomials|4 Polynomials]] (1 citation), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (3 citations)
+**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (3 citations), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (2 citations), [[· 3 Linear Maps|3 Linear Maps]] (2 citations), [[· 4 Polynomials|4 Polynomials]] (1 citations), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (3 citations)
 **Used by:** [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (17), [[· 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (1)
 
 ## Sections

@@ -21,7 +21,6 @@ tags: [multivariable-analysis, hub]
 - [[§15 Compact Spaces#^rem-15-1|590 Remark: Why Compactness Matters]]
 
 ## Used in (Multivariable Analysis)
-- [[§15 Multivariable Integration#^thm-15-7|Theorem §15.7: Change of Variables to Polar Coordinates]]
 - [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
 
 ## Connections

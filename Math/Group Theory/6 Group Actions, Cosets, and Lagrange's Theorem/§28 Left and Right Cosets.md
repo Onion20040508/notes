@@ -110,7 +110,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The same cosets, sorted by the value at $3$: [[§30 Orbit–Stabilizer#^ex-30-2|Ex. §30.2]] (via [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]]).
-> - The standard non-normal subgroup: [[§38 Normal Subgroups#^ex-38-1|A Non-Normal Subgroup of S₃, Ex. §38.1]].
+> - The standard non-normal subgroup: [[§38 Normal Subgroups#^ex-38-1|A Non-Normal Subgroup of S₃, §38.1]].
 
 > [!remark] Remark: Normal Subgroups
 > In many important cases the two decompositions coincide, i.e. $gH = Hg$ for every $g$; such a subgroup is called *[[§38 Normal Subgroups#^def-38-1|normal]]*, and these are exactly the subgroups for which the set of cosets inherits a group structure. See [[· 8 Normal Subgroups and Quotient Groups|Chapter 8]]; the example [[§28 Left and Right Cosets#^ex-28-1|Left and Right Cosets Differ in S₃]] is the standard non-normal one.

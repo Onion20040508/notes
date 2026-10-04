@@ -12,6 +12,7 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§1 The Definition of a Group#^def-1-1|Definition §1.1: Group]]
+- [[§2 First Consequences of the Axioms#^ex-2-1|Example §2.1: The Mixed Hypothesis Does Not Cancel]]
 
 ## Used in (Group Theory)
 - [[§2 First Consequences of the Axioms#^ex-2-1|Example §2.1: The Mixed Hypothesis Does Not Cancel]]

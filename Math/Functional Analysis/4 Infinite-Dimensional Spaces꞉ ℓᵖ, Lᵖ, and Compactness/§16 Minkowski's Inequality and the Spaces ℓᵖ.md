@@ -26,7 +26,7 @@ tags: [functional-analysis, math556]
 
 Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order below follows hers.
 
-> [!proof]+ Proof
+> [!proof]+ Proof of Theorem §13.1
 > **Case $p = 1$.** $\sum_i |a_i + b_i| \le \sum_i (|a_i| + |b_i|) = \|a\|_1 + \|b\|_1$, by the termwise triangle inequality and addition of series of non-negative terms.
 >
 > **Case $p = \infty$.** For every $i$, $|a_i + b_i| \le |a_i| + |b_i| \le \|a\|_\infty + \|b\|_\infty$; take the supremum over $i$.

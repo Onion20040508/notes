@@ -125,10 +125,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^pf-33-4
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§32 Eigenvectors and Eigenvalues#^def-32-2|Def. §32.2]] (equation (3)), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
-
-> [!remark]- Connections
-> - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-7|LADR 5.7]] ($\lambda$ is an eigenvalue $\Leftrightarrow$ $T - \lambda I$ is not invertible) together with [[§34 Determinants#^ladr-9-50|LADR 9.50]] (invertible $\Leftrightarrow$ $\det \ne 0$), the same two steps. Axler identifies his characteristic polynomial with $\det(zI - T)$ only later, [[§34 Determinants#^ladr-9-62|LADR 9.62]].
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
 
 > [!theorem] Theorem §33.5: The Characteristic Polynomial Has Degree n
 > If $A$ is an $n \times n$ matrix, then $\det(A - \lambda I)$ is a polynomial in $\lambda$ of degree $n$. More precisely,

@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§19 Inner Products and Norms#^ladr-6-17|Axler 6.17]], in [[§19 Inner Products and Norms]]
 
-## Its proof uses
+## Proof uses
 - [[Cauchy–Schwarz inequality|6.14]]
 
 ## Used in (Measure Theory)
@@ -23,9 +23,8 @@ tags: [linear-algebra, hub]
 - [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-2|REL Theorem §B1.3.2]] (reversed for timelike vectors: the straight worldline is the longest)
 
 ## Connections
-- The case $V=\R$ with $\langle x,y\rangle=xy$ is the absolute-value triangle inequality $|x+y|\le|x|+|y|$ of [[Single Variable Analysis]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]](i).
-- Makes $d(u,v)=\|u-v\|$ a metric, so every inner product space is a metric space (in the sense of [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]]).
-- For the $L^p$ norms of measure theory it is [[Minkowski's Inequality|551 Thm. §19.9]].
+- The case $V=\R$ with $\langle x,y\rangle=xy$ is the absolute-value triangle inequality $|x+y|\le|x|+|y|$ of [[Single Variable Analysis]].
+- Makes $d(u,v)=\|u-v\|$ a metric, so every inner product space is a metric space (in the sense of Single Variable Analysis §13).
 - **Also proved in [[Logic and Proofs]]:** [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (the case V = ℝ, |a + b| ≤ |a| + |b|, by comparing squares, with equality exactly when ab ≥ 0).
 - For a general norm this is an axiom ([[§10 Normed Linear Spaces#^def-10-1|556 Def. §10.1]]); for the ℓᵖ norms it is Minkowski's inequality, [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|556 Thm. §16.1]].
 - **Also in [[Calculus]]:** [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (the case V = ℝ, computational treatment with worked examples).

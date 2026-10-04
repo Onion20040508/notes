@@ -154,7 +154,7 @@ The value does not depend on the parametrization used, for the changes of parame
 > \int_C \bar z\,dz = \int_{-2}^{2}\frac{4i\,dy}{\sqrt{4 - y^2}} = 4i\Big[\arcsin\frac y2\Big]_{-2}^{2} = 4i\Big(\frac\pi2 + \frac\pi2\Big) = 4\pi i .
 > $$
 >
-> The integrand is unbounded at $y = \pm2$, so this is a convergent improper integral: as noted in [[§43 Contours#^ex-43-4|Example §43.4]], this representation is not smooth at the endpoints, and Proposition §44.1 applies only on $[-2 + \delta, 2 - \delta]$; letting $\delta \to 0$ recovers the same value $4\pi i$.
+> The integrand is unbounded at $y = \pm2$, so this is a convergent improper integral: as noted in Example §43.4, this representation is not smooth at the endpoints, and Proposition §44.1 applies only on $[-2 + \delta, 2 - \delta]$; letting $\delta \to 0$ recovers the same value $4\pi i$.
 >
 > *B&C: Sec. 46, Exercise 11*
 

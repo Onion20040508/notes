@@ -10,14 +10,14 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§7 Vector Space of Linear Maps#^ladr-3-4|Axler 3.4]], in [[§7 Vector Space of Linear Maps]]
 
-## Its proof uses
+## Proof uses
 - [[§5 Bases#^ladr-2-28|2.28]]
 
 ## Used in (Linear Algebra)
+- [[§8 Null Spaces and Ranges#^ladr-3-28|3.28 Inhomogeneous system of linear equations]]
 - [[Dimension shows whether vector spaces are isomorphic|3.70 Dimension shows whether vector spaces are isomorphic]]
-- [[§10 Invertibility and Isomorphisms#^ladr-3-72|3.72 Dim L(V, W) = (dim V)(dim W)]]
-- [[§12 Duality#^ladr-3-112|3.112 Dual basis]]
-- [[§12 Duality#^ladr-3-125|3.125 Dimension of the annihilator]]
+- [[§12 Duality#^ladr-3-111|3.111 Dim V′ = dim V]]
+- [[§24 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
 - [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7 Change-of-basis formula]]
 - [[§35 Tensor Products#^ladr-9-74|9.74 Basis of V⊗ W]]
 - [[§35 Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]

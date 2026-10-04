@@ -73,7 +73,7 @@ tags: [differentiable-manifolds, math591]
 > - The circle as a level set in 452: [[Unit circle and unit sphere]], [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
 
 > [!remark] Remark: Why the Notion Matters
-> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Corollary [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
+> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Proposition [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
 
 ^rem-7-3
 
@@ -119,7 +119,7 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 > - Deduced from the inverse function theorem: [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 > [!remark] Remark: Which Variables Are Solved For
-> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Corollary [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
+> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. Since $D\Phi_{(a,b)}$ has rank $k$ exactly when *some* $k$ of its $n + k$ columns are independent, a regular point always admits such a splitting—after permuting coordinates. That permutation is the “WLOG” step in the proof of Proposition [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
 
 ^rem-7-4
 
@@ -137,7 +137,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 ^cor-7-2
 
 > [!proof]+ Proof
-> [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1]] with $n = N - 1$, $k = 1$, $\Phi = F$: the $1 \times 1$ matrix $(\partial F/\partial x_N(a))$ is nonsingular precisely when $\partial F/\partial x_N(a) \neq 0$. Take $W' = V_0$, $J = W_0$, and for $h$ the function called $F$ in that theorem (Lee's notation); then $h(a') = a_N$ because $(a', a_N)$ lies in the level set and in $V_0 \times W_0$.
+> [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1]] with $n = N - 1$, $k = 1$, $\Phi = F$: the $1 \times 1$ matrix $(\partial F/\partial x_N(a))$ is nonsingular precisely when $\partial F/\partial x_N(a) \neq 0$. Set $h = F$ in Lee's notation, and note $h(a') = a_N$ because $(a', a_N)$ lies in the level set and in $V_0 \times W_0$.
 
 ^pf-7-2
 

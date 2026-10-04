@@ -195,7 +195,7 @@ tags: [real-analysis, math451]
 > - Computational version: [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
 
 > [!remark] Remark
-> Like the logarithm in §9, the integral $\int_1^\infty f(x)\,dx$ is borrowed from the future: integration will be defined rigorously only in [[· 6 Integration|Chapter 6]]. The comparison inequality $f(k) \geq \int_k^{k+1} f \geq f(k+1)$ and the computation of $\int \tfrac{dx}{x^p}$ are familiar from calculus and will be fully justified then; the logic of the test itself — monotone partial sums, bounded iff convergent — is already rigorous.
+> Like the logarithm in §9, the integral $\int_1^\infty f(x)\,dx$ is borrowed from the future: integration will be defined rigorously only in Part III. The comparison inequality $f(k) \geq \int_k^{k+1} f \geq f(k+1)$ and the computation of $\int \tfrac{dx}{x^p}$ are familiar from calculus and will be fully justified then; the logic of the test itself — monotone partial sums, bounded iff convergent — is already rigorous.
 
 ^rem-15-3
 

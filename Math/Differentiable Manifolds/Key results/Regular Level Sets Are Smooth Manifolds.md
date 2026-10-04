@@ -22,7 +22,7 @@ tags: [differentiable-manifolds, hub]
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2: A Level Set in ℝ⁴]]
+- [[§19 Manifolds in Euclidean Space#^ex-19-2|Example §19.2: A Surface in ℝ³]]
 - [[§19 Manifolds in Euclidean Space#^lem-19-3|Lemma §19.3: Smooth Maps into and out of Regular Level Sets]]
 - [[§19 Manifolds in Euclidean Space#^prop-19-4|Proposition §19.4: The Three Circle Atlases Define One Smooth Structure]]
 - [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1: O(n) Is a Smooth Manifold of Dimension n(n-1)/2]]

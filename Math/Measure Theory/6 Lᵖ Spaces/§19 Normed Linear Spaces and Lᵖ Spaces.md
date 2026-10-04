@@ -765,7 +765,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 ^pf-19-21
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Continuity of Measure|§11.12]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]]
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[§18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.

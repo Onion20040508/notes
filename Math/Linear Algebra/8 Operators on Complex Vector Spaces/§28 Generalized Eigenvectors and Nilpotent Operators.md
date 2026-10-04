@@ -58,17 +58,15 @@ tags: [linear-algebra]
 > [!theorem] Theorem 8.4: $V=\nullsp T^{\dim V}\oplus\range T^{\dim V}$
 > For $T\in\Lin(V)$ and $n=\dim V$: $\ V=\nullsp T^n\oplus\range T^n$.
 >
-> Substitute for $V=\nullsp T\oplus\range T$, which fails in general (see [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-6|8.6]]).
+> > [!proof]+
+> > If $v\in\nullsp T^n\cap\range T^n$, then $v=T^nu$ and $0=T^nv=T^{2n}u$, so $T^nu=0$ by [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], i.e. $v=0$. So the sum is direct ([[§3 Subspaces#^ladr-1-46|1.46]]), and its dimension is $\dim\nullsp T^n+\dim\range T^n=\dim V$ ([[Fundamental theorem of linear maps|3.21]]), so it is $V$.
+>
+> Substitute for $V=\nullsp T\oplus\range T$, which fails in general (see 8.6).
 
 ^ladr-8-4
 
-> [!proof]+ Proof
-> If $v\in\nullsp T^n\cap\range T^n$, then $v=T^nu$ and $0=T^nv=T^{2n}u$, so $T^nu=0$ by [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], i.e. $v=0$. So the sum is direct ([[§3 Subspaces#^ladr-1-46|1.46]]), and its dimension is $\dim\nullsp T^n+\dim\range T^n=\dim V$ ([[Fundamental theorem of linear maps|3.21]]), so it is $V$.
-
-*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], [[§3 Subspaces#^ladr-1-46|1.46]], [[Fundamental theorem of linear maps|3.21]]
-
-> [!example] Example 8.6: $\F^3=\nullsp T^3\oplus\range T^3$ (p. 299)
-> $T(z_1,z_2,z_3)=(4z_2,0,5z_3)$ on $\F^3$: $\nullsp T=\{(z_1,0,0)\}$ and $\range T=\{(z_1,0,z_3)\}$ intersect, so $\nullsp T+\range T$ is not direct (and not $\F^3$). But $T^3(z_1,z_2,z_3)=(0,0,125z_3)$, so $\nullsp T^3=\{(z_1,z_2,0)\}$, $\range T^3=\{(0,0,z_3)\}$, and $\F^3=\nullsp T^3\oplus\range T^3$, as [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] promises.
+> [!example] Example 8.6: F (p. 299)
+> $T(z_1,z_2,z_3)=(4z_2,0,5z_3)$ on $\F^3$: $\nullsp T=\{(z_1,0,0)\}$ and $\range T=\{(z_1,0,z_3)\}$ intersect, so $\nullsp T+\range T$ is not direct (and not $\F^3$). But $T^3(z_1,z_2,z_3)=(0,0,125z_3)$, so $\nullsp T^3=\{(z_1,z_2,0)\}$, $\range T^3=\{(0,0,z_3)\}$, and $\F^3=\nullsp T^3\oplus\range T^3$, as 8.4 promises.
 
 ^ladr-8-6
 
@@ -100,13 +98,13 @@ tags: [linear-algebra]
 > False in general: rotation of $\R^2$ has no eigenvalues, hence no generalized eigenvectors.
 
 > [!proof]+ Proof
-> Induction on $n=\dim V$; $n=1$ uses that $T$ has an eigenvalue ($\F=\C$). For $n>1$ let $\lambda$ be an eigenvalue. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
+> Induction on $n=\dim V$; $n=1$ uses that $T$ has an eigenvalue ($\F=\C$). For $n>1$ let $\lambda$ be an eigenvalue. By 8.4 (box after [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]]) applied to $T-\lambda I$,
 > $$
 > V=\nullsp(T-\lambda I)^n\oplus\range(T-\lambda I)^n .
 > $$
 > If the null space is $V$, every nonzero vector is a generalized eigenvector. Otherwise $0<\dim\range(T-\lambda I)^n<n$ (the null space contains an eigenvector). The range is invariant ([[§14 Invariant Subspaces#^ladr-5-18|5.18]]), so by induction it has a basis of generalized eigenvectors of $T$ restricted to it, hence of $T$. Adjoin a basis of $\nullsp(T-\lambda I)^n$.
 
-*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
+*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
 
 > [!example] Example 8.10: Generalized eigenvectors of an operator on C³ (p. 302)
 > Same $T$ on $\C^3$. Eigenvalues $0$ and $5$, with eigenvectors only $(z_1,0,0)$ and $(0,0,z_3)$: not enough to span. With $T^3(z)=(0,0,125z_3)$ and $(T-5I)^3(z)=(-125z_1+300z_2,\ -125z_2,\ 0)$ (verified):

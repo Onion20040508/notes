@@ -122,7 +122,7 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 > [!remark]- Connections
 > - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Calc Thm. §28.1]].
 
-> [!proof]+ Proof of L'Hospital's Rule (the case $\tfrac00$ as $x \to a^-$)
+> [!proof]+ Proof
 > Assume $f, g \to 0$ as $x \to a^-$, $g' \neq 0$ on some $(a - \delta_0, a)$, and $\tfrac{f'}{g'} \to L$ finite. First, two housekeeping points on $(a-\delta_0, a)$: for $x < x_1$ there, $g(x_1) \neq g(x)$ (otherwise Rolle would give a zero of $g'$ in between); and $g(x) \neq 0$ for $x$ close to $a$ (if $g$ vanished at points arbitrarily close to $a$, Rolle between two such zeros would again contradict $g' \neq 0$).
 >
 > Let $\varepsilon > 0$. Choose $\delta \leq \delta_0$ such that

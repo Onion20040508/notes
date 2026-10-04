@@ -21,7 +21,6 @@ tags: [linear-algebra]
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
 > - 556 starts from the same definition ([[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|556 Def. §2.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1|556 Def. §23.1]]) and produces them with Hahn–Banach ([[§4 Statement and Motivation#^thm-4-2|556 Thm. §4.2]]).
 > - Used in Relativity: covariant components $a_\mu$ are the components of a linear functional, and the metric lowers indices — [[§B1.1 The Metric and Index Notation#^rem-b1-1-1|REL Remark: Why two index positions]]; covectors and tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
-> - The differential $df$ at a point is a linear functional on $\R^n$: [[§8 The Differential#^def-8-1|452 Def. §8.1]].
 
 > [!example] Example 3.109: Linear functionals (p. 105)
 > Linear functionals:
@@ -56,7 +55,7 @@ tags: [linear-algebra]
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-72|3.72]]
 
 > [!remark]- Connections
-> - Used in [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]], [[§12 Duality#^ladr-3-125|Dimension of the annihilator]], [[§12 Duality#^ladr-3-130|The range of T′]].
+> - Used in [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]], [[§12 Duality#^ladr-3-125|Dimension of the annihilator]], [[§12 Duality#^ladr-3-130|The range of T]].
 > - The isomorphism V ≅ V′ needs a basis, but V → V″ is canonical: [[§20 Linear Algebra Toolkit#^prop-20-3|591 Prop. §20.3]]; more generally a non-degenerate pairing identifies one space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
 
 > [!definition] Definition 3.112: Dual basis
@@ -111,7 +110,7 @@ tags: [linear-algebra]
 *Uses:* [[§12 Duality#^ladr-3-111|3.111]], [[§6 Dimension#^ladr-2-38|2.38]]
 
 > [!remark]- Connections
-> - Matrix of a dual map in dual bases: [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
+> - Matrix of a dual map in dual bases: [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]].
 
 > [!definition] Definition 3.118: Dual map, $T'$
 > For $T\in\Lin(V,W)$, the *dual map* $T'\in\Lin(W',V')$ is
@@ -125,7 +124,7 @@ tags: [linear-algebra]
 > $\varphi\circ T$ is a linear functional on $V$, and $T'(\varphi+\psi)=(\varphi+\psi)\circ T=\varphi\circ T+\psi\circ T$, $T'(\lambda\varphi)=\lambda T'(\varphi)$. Note $T'$ goes *backwards*, from $W'$ to $V'$ (pullback).
 
 > [!remark]- Connections
-> - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T′]], [[§12 Duality#^ladr-3-130|The range of T′]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
+> - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T]], [[§12 Duality#^ladr-3-130|The range of T]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]].
 > - Not the adjoint $T^*$ of Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
 > - Same definition in 591, written with a star and called the transpose: [[§20 Linear Algebra Toolkit#^def-20-2|591 Def. §20.2]], with its properties in [[§20 Linear Algebra Toolkit#^prop-20-4|591 Prop. §20.4]].
 
@@ -149,7 +148,7 @@ tags: [linear-algebra]
 ^ladr-3-120
 
 > [!remark] Remark: Order reverses
-> Like $(AB)^t=B^tA^t$, consistent with [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]]. Axler writes $V'$, $T'$ for duality and saves $T^*$ for the adjoint.
+> Like $(AB)^t=B^tA^t$, consistent with [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]]. Axler writes $V'$, $T'$ for duality and saves $T^*$ for the adjoint.
 
 > [!proof]+ Proof
 > *(Filled in: (a), (b).)* $(S+T)'(\varphi)=\varphi\circ(S+T)=\varphi\circ S+\varphi\circ T$ since $\varphi$ is additive; similarly $(\lambda T)'(\varphi)=\varphi\circ(\lambda T)=\lambda(\varphi\circ T)$ by homogeneity of $\varphi$.
@@ -159,7 +158,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - So $T\mapsto T'$ is a linear map $\Lin(V,W)\to\Lin(W',V')$ reversing composition.
 
-> [!definition] Definition 3.121: Annihilator, U⁰
+> [!definition] Definition 3.121: Annihilator, U0
 > For a subset $U\subseteq V$, the *annihilator* of $U$ is
 > $$
 > U^0=\{\varphi\in V' : \varphi(u)=0\text{ for all }u\in U\}.
@@ -244,7 +243,7 @@ tags: [linear-algebra]
 *Uses:* [[§12 Duality#^ladr-3-125|3.125]], [[§6 Dimension#^ladr-2-39|2.39]], [[§12 Duality#^ladr-3-111|3.111]]
 
 > [!remark]- Connections
-> - Gives the surjective/injective dualities in [[§12 Duality#^ladr-3-128|The null space of T′]] and [[§12 Duality#^ladr-3-130|The range of T′]].
+> - Gives the surjective/injective dualities in [[§12 Duality#^ladr-3-128|The null space of T]] and [[§12 Duality#^ladr-3-130|The range of T]].
 
 > [!theorem] Theorem 3.128: The null space of $T'$
 > Let $V,W$ be finite-dimensional and $T\in\Lin(V,W)$. Then
@@ -268,7 +267,7 @@ tags: [linear-algebra]
 *Uses:* [[§12 Duality#^ladr-3-125|3.125]], [[Fundamental theorem of linear maps|3.21]], [[§12 Duality#^ladr-3-127|3.127]]
 
 > [!remark]- Connections
-> - Companion: [[§12 Duality#^ladr-3-130|The range of T′]]. Useful when injectivity of $T'$ is easier to check than surjectivity of $T$.
+> - Companion: [[§12 Duality#^ladr-3-130|The range of T]]. Useful when injectivity of $T'$ is easier to check than surjectivity of $T$.
 
 > [!theorem] Theorem 3.130: The range of $T'$
 > Let $V,W$ be finite-dimensional and $T\in\Lin(V,W)$. Then
@@ -280,7 +279,7 @@ tags: [linear-algebra]
 ^ladr-3-130
 
 > [!proof]+ Proof
-> (a) By [[Fundamental theorem of linear maps]], [[§12 Duality#^ladr-3-111|Dim V′ = dim V]], [[§12 Duality#^ladr-3-128|The null space of T′]](a) and [[§12 Duality#^ladr-3-125|Dimension of the annihilator]]:
+> (a) By [[Fundamental theorem of linear maps]], [[§12 Duality#^ladr-3-111|Dim V′ = dim V]], [[§12 Duality#^ladr-3-128|The null space of T]](a) and [[§12 Duality#^ladr-3-125|Dimension of the annihilator]]:
 > $$
 > \dim\range T'=\dim W'-\dim\nullsp T'=\dim W-\dim(\range T)^0=\dim\range T .
 > $$
@@ -316,7 +315,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
-> - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T∗ (LADR 7.9)]].
+> - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
 > - This is why covector components change by the transpose of the inverse Jacobian: [[§35 The Tangent Bundle#^prop-35-5|591 Prop. §35.5]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
@@ -330,7 +329,7 @@ tags: [linear-algebra]
 > $$
 > \text{col rank }A=\dim\range T=\dim\range T'=\text{col rank }\mathcal{M}(T')=\text{col rank }A^t=\text{row rank }A,
 > $$
-> using [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]], [[§12 Duality#^ladr-3-130|The range of T′]](a), [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]], [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
+> using [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]], [[§12 Duality#^ladr-3-130|The range of T]](a), [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]], [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]].
 
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]], [[§12 Duality#^ladr-3-130|3.130]], [[§12 Duality#^ladr-3-132|3.132]]
 

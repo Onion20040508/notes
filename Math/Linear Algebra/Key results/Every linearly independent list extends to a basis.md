@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§5 Bases#^ladr-2-32|Axler 2.32]], in [[§5 Bases]]
 
-## Its proof uses
+## Proof uses
 - [[Every spanning list contains a basis|2.30]]
 
 ## Used in (Linear Algebra)
@@ -18,8 +18,6 @@ tags: [linear-algebra, hub]
 - [[§6 Dimension#^ladr-2-38|2.38 Linearly independent list of the right length is a basis]]
 - [[§6 Dimension#^ladr-2-43|2.43 Dimension of a sum]]
 - [[Fundamental theorem of linear maps|3.21 Fundamental theorem of linear maps]]
-- [[§12 Duality#^ladr-3-125|3.125 Dimension of the annihilator]]
-- [[§16 Upper-Triangular Matrices#^ladr-5-44|5.44 Necessary and sufficient condition to have an upper-triangular matrix]]
 - [[§20 Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
 
 ## Used in (Group Theory)

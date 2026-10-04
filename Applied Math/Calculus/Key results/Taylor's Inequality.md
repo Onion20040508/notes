@@ -20,4 +20,4 @@ tags: [calculus, hub]
 - [[§78 Taylor and Maclaurin Series#^thm-78-7|Theorem §78.7: Sine]]
 
 ## Connections
-- Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= [[§78 Taylor and Maclaurin Series#^thm-78-3|Theorem §78.3]]).
+- Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= Theorem §78.3).

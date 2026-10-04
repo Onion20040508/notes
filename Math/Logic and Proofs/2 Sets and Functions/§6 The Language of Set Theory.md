@@ -382,7 +382,7 @@ So each law of logic from [[§1 The Language of Mathematics|§1]] translates int
 
 ^pf-6-3
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§6 The Language of Set Theory#^ex-6-7|Ex. §6.7]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
 
 Once these laws are available, further identities follow by algebra, without returning to elements.
 

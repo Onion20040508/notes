@@ -13,11 +13,6 @@ tags: [complex-variables, hub]
 ## Its proof uses
 - [[§95★ Inverse Laplace Transforms#^def-95-1|Definition §95.1: Bromwich Integral]]
 
-## Its proof uses (other subjects)
-- [[§14 Fourier Integral#^thm-14-1|341 §14.1: Fourier Integral Representation Theorem]]
-- [[§15★ Complex Methods#^def-15-2|341 §15.2: Complex Fourier Integral; Fourier Transform]]
-- [[§15★ Complex Methods#^thm-15-2|341 §15.2: Complex Form of the Fourier Integral]]
-
 ## Used in (Complex Variables)
 - [[§95★ Inverse Laplace Transforms#^cor-95-5|Corollary §95.5: Uniqueness of the Inverse Transform]]
 

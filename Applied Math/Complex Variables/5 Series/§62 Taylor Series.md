@@ -134,7 +134,7 @@ The examples compute $a_n = f^{(n)}(z_0)/n!$ directly. The more efficient method
 >
 > by [[§61 Convergence of Series#^ex-61-1|Example §61.1]], valid when $\big|\frac{z - 2}{2 + i}\big| < 1$. The coefficients agree with (a), as they must ([[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]]).
 >
-> **(c) The disk.** The geometric series converges exactly when $|z - 2| < |2 + i| = \sqrt5$: the disk with center $2$ and radius $\sqrt5$. For $|z - 2| \ge \sqrt5$ the terms have modulus $|z - 2|^n/\sqrt5^{\,n+1} \ge 1/\sqrt5$, which does not tend to $0$, so the series diverges there ([[§61 Convergence of Series#^cor-61-2|Corollary §61.2]]). The radius is the distance from the center $2$ to $-i$, the only point where $f$ fails to be analytic, exactly as Taylor's theorem predicts: the disk is the largest disk about $2$ in which $f$ is analytic, and the singular point $-i$ lies on its boundary circle.
+> **(c) The disk.** The geometric series converges exactly when $|z - 2| < |2 + i| = \sqrt5$: the disk with center $2$ and radius $\sqrt5$. For $|z - 2| \ge \sqrt5$ the terms have modulus $|z - 2|^n/\sqrt5^{\,n+1} \ge 1/\sqrt5$, which does not tend to $0$, so the series diverges there (Corollary §61.2). The radius is the distance from the center $2$ to $-i$, the only point where $f$ fails to be analytic, exactly as Taylor's theorem predicts: the disk is the largest disk about $2$ in which $f$ is analytic, and the singular point $-i$ lies on its boundary circle.
 >
 > *Source: 342 HW 9, Problem 2*
 

@@ -9,7 +9,7 @@ tags: [calculus]
 ---
 ← [[§44 Integration by Parts]] · ↑ [[· 7 Techniques of Integration]] · [[§46 Trigonometric Substitution]] →
 
-*Stewart, Section 7.2 · MATH 233 (UMass, Spring 2023): Practice Exam 2 (Q1(a)).*
+*Stewart, Section 7.2 · MATH 233 (UMass, Spring 2023): Practice Exam 2 (Q1a).*
 
 Trigonometric identities turn products of powers of trigonometric functions into integrals that a substitution can finish. For $\int \sin^m x \cos^n x\,dx$ the idea is to split off one factor of $\cos x$ (or $\sin x$) to serve as $du$, and to convert the remaining even power by $\sin^2 x + \cos^2 x = 1$. When both powers are even, the half-angle identities lower the powers instead. The same plan works for $\int \tan^m x \sec^n x\,dx$ with $\sec^2 x = 1 + \tan^2 x$, and the product identities handle $\sin mx \cos nx$ and its relatives. These integrals come back in trigonometric substitution ([[§46 Trigonometric Substitution|§46]]), arc length and surface area ([[§52 Arc Length|§52]]) and Fourier series.
 

@@ -22,9 +22,6 @@ tags: [complex-variables, hub]
 - [[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1: Taylor's Theorem]]
 - [[§66 Laurent Series#^def-66-1|Definition §66.1: Laurent Series]]
 
-## Its proof uses (other subjects)
-- [[§96 Maximum and Minimum Values#^thm-96-3|Calc §96.3: Extreme Value Theorem for Functions of Two Variables]]
-
 ## Used in (Complex Variables)
 - [[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4: Uniqueness of Laurent Series]]
 - [[§75 Residues#^thm-75-1|Theorem §75.1: An Integral Is 2πi Times a Residue]]
@@ -35,5 +32,5 @@ tags: [complex-variables, hub]
 - [[§95★ Inverse Laplace Transforms#^thm-95-6|Theorem §95.6: Inverse Transform of a Rational Function]]
 
 ## Connections
-- The multiply connected Cauchy–Goursat theorem used in the first step of the [[§67 Proof of Laurent's Theorem#^pf-67-1|proof]] is, for $f$ with continuous derivative, the complex form of Green's theorem for a region with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]]; the rigorous Green's theorem is [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]].
+- The multiply connected Cauchy–Goursat theorem used in the first step is, for $f$ with continuous derivative, the complex form of Green's theorem for a region with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]]; the rigorous Green's theorem is [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]].
 - The bounds $|\rho_N| \le \frac{Mr_2}{r_2 - r}(r/r_2)^N$ and $|\sigma_N| \le \frac{Mr_1}{r - r_1}(r_1/r)^N$ do not depend on $z$ as long as $z$ stays in a smaller closed ring $r_1' \le |z| \le r_2'$ with $r_1 < r_1'$, $r_2' < r_2$. So the convergence is uniform on such rings: the Weierstrass M-test situation of [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]]. B&C records this in [[§70★ Continuity of Sums of Power Series#^cor-70-3|Corollary §70.3]].

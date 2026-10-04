@@ -10,7 +10,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 ← [[§27 Infinite Rod]] · ↑ [[· 2 The Heat Equation]] · [[§29 The Vibrating String]] →
 
 *Powers, Section 2.12 · MAT 341 HW 9 · Midterm 2, Practice Midterm 2.*
-★ *Beyond MAT 341: the course did not cover this section; it is included from Powers. Examples §28.2–§28.4 revisit course problems (HW 9, Midterm 2, Practice Midterm 2) with the error function and Gaussian integrals.*
+★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
 The heat-kernel solution of [[§27 Infinite Rod#^thm-27-3|Theorem §27.3]] is a single integral of the initial temperature against a Gaussian, but even for the simplest initial temperatures it cannot be carried out in closed form, because $\int e^{-x^2}dx$ is not an elementary function. This section names that integral, the error function, records its properties (including the value $\int_{-\infty}^\infty e^{-y^2}dy = \sqrt\pi$, proved with polar coordinates), and shows that it is itself a solution of the heat equation: $\operatorname{erf}(x/\sqrt{4kt})$ is the temperature in an infinite rod that starts at $-1$ on the left and $+1$ on the right, and its complement $\operatorname{erfc}(x/\sqrt{4kt})$ describes a semi-infinite body whose surface temperature is suddenly changed. Every piecewise constant initial temperature, and several of the course's Fourier-integral answers, then have closed forms. The combination $x/\sqrt{4kt}$ also explains the $\sqrt t$ law of heat penetration.
 

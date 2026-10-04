@@ -82,7 +82,7 @@ tags: [differentiable-manifolds, math591]
 >
 > is a diffeomorphism in the sense of [[§16 Differentiable Structures#^def-16-3|Def. §16.3]]. If $U \cap V = \emptyset$ the condition is vacuous and the charts are compatible.
 >
-> *Lee: Ch. 1, Smooth Structures (“smoothly compatible”)*
+> *Lee: Ch. 1, Smooth Structures (“smoothly compatible)*
 
 ^def-16-4
 
@@ -173,7 +173,7 @@ tags: [differentiable-manifolds, math591]
 > [!definition] Definition §16.6: Atlas
 > An **atlas** on a topological $n$-manifold $M$ is a collection $\mathcal{A} = \{(U_i, \varphi_i)\}_{i \in I}$ of pairwise $C^\infty$-compatible charts with $\bigcup_{i} U_i = M$.
 >
-> *Lee: Ch. 1, Smooth Structures (“smooth atlas”)*
+> *Lee: Ch. 1, Smooth Structures (“smooth atlas)*
 
 ^def-16-6
 
@@ -267,7 +267,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 *Uses:* [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]]
 
 > [!remark]- Connections
-> - Compatible with the other two circle atlases: [[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|Remark after §17.4]].
+> - Compatible with the other two circle atlases: [[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|Remark after §14.4]].
 > - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§27 The Fundamental Group of Sⁿ#^pf-27-3|590 §27, proof of Thm. §27.3]].
 
 ![[m591-8-3.svg]]

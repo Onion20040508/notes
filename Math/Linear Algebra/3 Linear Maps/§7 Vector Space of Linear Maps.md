@@ -29,7 +29,6 @@ tags: [linear-algebra]
 > - ODE example: the differential operator $L[y] = y'' + py' + qy$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-1|331 Def. §14.1]], and the left side of any linear differential equation, [[§3 Classification of Differential Equations#^def-3-4|331 Def. §3.4]].
 
 > [!remark] Notation 3.2: L(V, W), L(V) (p. 52)
-> $\Lin(V,W)$ is the set of linear maps from $V$ to $W$, and $\Lin(V)=\Lin(V,V)$ is the set of linear maps from $V$ to itself.
 
 ^ladr-3-2
 

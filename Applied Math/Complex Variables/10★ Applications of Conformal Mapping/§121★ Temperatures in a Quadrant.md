@@ -37,7 +37,7 @@ Here the boundary conditions change type along a single edge: part of the edge i
 >
 > is a one to one mapping of the half strip $0 \le u \le \pi/2$, $v \ge 0$ onto the quadrant $x \ge 0$, $y \ge 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]]): the base $0 < u < \pi/2$, $v = 0$ goes onto $0 < x < 1$ ($\sin u$); the side $u = \pi/2$ onto $x > 1$ ($\sin(\frac\pi2 + iv) = \cosh v$); the side $u = 0$ onto the positive $y$ axis ($\sin(iv) = i\sinh v$). Being one to one and onto, it has an inverse. Since (4) is conformal throughout the strip except at $w = \pi/2$ (where $\cos w = 0$), the inverse is conformal throughout the quadrant except at $z = 1$ (Theorem [[§114★ Local Inverses#^thm-114-1|§114.1]]).
 >
-> **The new problem.** So it suffices to find a function harmonic in the strip with: $T_v = 0$ on the base, $T = 1$ on $u = \pi/2$, $T = 0$ on $u = 0$ (B&C's Fig. 157, right). These are conditions of the types $h = h_0$ and $dh/dn = 0$ of [[§117★ Transformations of Boundary Conditions#^thm-117-2|Theorem §117.2]]. The required function is clearly
+> **The new problem.** So it suffices to find a function harmonic in the strip with: $T_v = 0$ on the base, $T = 1$ on $u = \pi/2$, $T = 0$ on $u = 0$ (B&C's Fig. 157, right). These are conditions of the types $h = h_0$ and $dh/dn = 0$ of Theorem §117.2. The required function is clearly
 >
 > $$
 > T = \frac2\pi u , \qquad (5)

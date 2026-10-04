@@ -575,7 +575,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > so a root lies in $(1.22, 1.23)$.
 >
-> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2$ is positive except at $x = \frac12$, so $f$ is increasing on each side of $\frac12$ by [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], and in fact on all of $\mathbb{R}$: completing the cube, $f(x) = \frac12 (2x - 1)^3 - \frac32$. This also gives the root exactly, $c = \frac12\big(1 + \sqrt[3]{3}\big) \approx 1.2211$.)
+> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2 \ge 0$, so $f$ is increasing; see [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]].)
 >
 > *Stewart: Example 2.5.10*
 

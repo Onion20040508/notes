@@ -138,7 +138,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 
 ## Examples
 
-> [!example] Example §57.1: No Real Analogue of Theorem §57.1
+> [!example] Example §57.1: No Real Analogue of Theorem 1
 > The real function $f(x) = x|x|$ is differentiable on the whole real line, with
 >
 > $$
@@ -160,7 +160,7 @@ In particular, when $D$ is simply connected, Morera's theorem is, for the class 
 > [!example] Example §57.2: The Hypothesis of Morera's Theorem
 > **(a)** $f(z) = \bar z$ is continuous on the plane, but by [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^ex-51-2|Example §51.2]] its integral around the positively oriented unit circle is $2i \cdot \pi = 2\pi i \ne 0$. So Morera's theorem does not apply, consistently with the fact that $\bar z$ is nowhere analytic.
 >
-> **(b)** $f(z) = 1/z$ is analytic in the domain $D\colon z \ne 0$, but its integral around the unit circle is $2\pi i \ne 0$ ([[§53 Multiply Connected Domains#^ex-53-1|Example §53.1]]). So the hypothesis of Morera's theorem is sufficient for analyticity but not necessary on a multiply connected domain. On a simply connected domain it is also necessary ([[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]]).
+> **(b)** $f(z) = 1/z$ is analytic in the domain $D\colon z \ne 0$, but its integral around the unit circle is $2\pi i \ne 0$ ([[§53 Multiply Connected Domains#^ex-53-1|Example §53.1]]). So the hypothesis of Morera's theorem is sufficient for analyticity but not necessary on a multiply connected domain. On a simply connected domain it is also necessary (Theorem §52.1).
 >
 > **(c)** $f(z) = 1/z^2$ on the same $D$ does satisfy the hypothesis: it has the antiderivative $-1/z$ there, so $\int_C f(z)\,dz = 0$ for every closed contour $C$ in $D$ ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), and Morera's theorem confirms that it is analytic in $D$.
 >

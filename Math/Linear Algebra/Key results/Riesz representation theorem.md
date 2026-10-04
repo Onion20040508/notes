@@ -10,11 +10,11 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§20 Orthonormal Bases#^ladr-6-42|Axler 6.42]], in [[§20 Orthonormal Bases]]
 
-## Its proof uses
-- [[§20 Orthonormal Bases#^ladr-6-35|6.35]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
+## Proof uses
+- [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
 
 ## Used in (Linear Algebra)
-- [[§22 Self-Adjoint and Normal Operators#^ladr-7-4|7.4 Adjoint of a linear map is a linear map]]
+- [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57 Properties of orthogonal projection PU]]
 
 ## Connections
 - Revisited as a bijection $V\to V'$ (conjugate-linear over $\C$): [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]. Defines the adjoint in Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).

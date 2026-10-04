@@ -67,9 +67,6 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 
 *Uses:* [[§93 Argument Principle#^thm-93-4|§93.4]], [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^prop-93-2|§93.2]], [[§5 Triangle Inequality#^cor-5-2|§5.2]]
 
-> [!remark]- Connections
-> - Topologically, Rouché's theorem is the homotopy invariance of the winding number. Since $|g| < |f|$ on $C$, the loops $(f + tg)(C)$, $0 \le t \le 1$, never pass through $0$, so they form a homotopy in $\mathbb{C} \setminus \{0\}$ from the image loop of $f$ to that of $f + g$, and homotopic loops wind equally often around $0$. Step 3 of the topological proof of the fundamental theorem of algebra, [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]], is exactly this homotopy with $f = z^n$ on the unit circle; there the winding number is the class of the loop in $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]).
-
 ![[m342-94-1.svg]]
 *Rouché's theorem for Example §94.1, $f = 3z^3$, $g = z^4 + 6$ on $|z| = 2$. Left: the image of the circle under $f + g = z^4 + 3z^3 + 6$, computed from $z = 2e^{i\theta}$, winds three times counterclockwise around the origin, so $f + g$ has three zeros in $|z| < 2$. Right: the factor $F = 1 + g/f = 1 + z/3 + 2/z^3$ keeps the image inside the disk $|w - 1| < 1$ (dashed), since $|g/f| \le 22/24$ there; it never winds around $0$, so $f + g$ inherits the winding number $3$ of $3z^3$.*
 

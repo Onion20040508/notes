@@ -21,4 +21,3 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§29 Change of Basis]] for context and examples.
-- Rigorous treatment: $P_{\mathcal C \leftarrow \mathcal B}$ is the matrix of the identity operator with input basis $\mathcal{B}$ and output basis $\mathcal{C}$, Axler's $\mathcal{M}(I, (\mathbf{b}), (\mathbf{c}))$. That the two change-of-coordinates matrices are inverse to each other is [[§10 Invertibility and Isomorphisms#^ladr-3-82|LADR 3.82]] (Lay: [[§29 Change of Basis#^thm-29-2|Theorem §29.2]]), and conjugating by it changes the matrix of an operator, $A = C^{-1}BC$, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (in Lay: similarity of matrix representations, Section 5.4, [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]]).

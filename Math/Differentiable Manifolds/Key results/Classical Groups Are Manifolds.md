@@ -16,6 +16,7 @@ tags: [differentiable-manifolds, hub]
 - [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|Corollary §11.5: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1: O(n) Is a Smooth Manifold of Dimension n(n-1)/2]]
 - [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Example §22.2: U(n) Is a Smooth Manifold of Dimension n²]]
+- [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|Theorem §23.5: The Classical Groups]]
 
 ## Used in (Differentiable Manifolds)
 - [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|Theorem §23.5: The Classical Groups]]

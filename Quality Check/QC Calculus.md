@@ -7,10 +7,13 @@ tags: [quality-check]
 # Quality check: Calculus
 ↑ [[Quality Check 2026-10-04]]
 
+> [!note] Record only
+> None of the changes in this log were applied: every note is exactly as it was before the check. Each change below is a **proposal**. The exact text of every proposed change is saved in `Quality Check/proposed-edits.patch` (see [[Quality Check 2026-10-04]]).
+
 ## Summary
 Calculus (158 notes: home, 17 chapter notes, 121 section notes, 19 hubs) is in very good shape. The mechanical checks were scripted: frontmatter, nav lines, Sources lines, block labels against IDs, numbering, *Uses:* lines, hubs against sections, `$` balance, cycles in the *Uses:* graph, and every link into another subject. They found almost nothing wrong. Every section was read at least at skim level. About 30 sections were read in depth: all of Chapters 1–3, the proofs in §8–§19 and §26–§28, §44, §47 and §50. All 82 worked examples taken from the MATH 233 exams and reviews were also read in depth, with the computations re-checked by hand and with sympy/numpy. One statement was imprecise and has been corrected: in §10, Example §10.5 cited the I/D Test where the derivative vanishes at a point. The other changes are three missing "Rigorous treatment" links in hubs, hub wording that only made sense inside the section note, one duplicated heading, the home note's wording, eight added links to Math hubs and blocks, and a cross-link between two notes that solve the same exam problem.
 
-## Edits made
+## Proposed edits (not applied)
 ### Correctness
 - [[§10 Continuity]], Example §10.5 (last paragraph). Old text: "(It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2 \ge 0$, so $f$ is increasing; see Theorem §27.1.)". Theorem §27.1 needs $f' > 0$, but here $f'(\tfrac12) = 0$. The new text says $f' > 0$ except at $\tfrac12$ and gives the exact form $f(x) = \tfrac12(2x - 1)^3 - \tfrac32$, which shows $f$ is increasing on $\mathbb{R}$, and the exact root $\tfrac12(1 + \sqrt[3]{3}) \approx 1.2211$. Both were verified with sympy.
 

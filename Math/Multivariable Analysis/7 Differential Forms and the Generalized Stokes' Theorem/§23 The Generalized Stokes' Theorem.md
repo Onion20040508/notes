@@ -161,7 +161,6 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 > [!remark]- Connections
 > - $k = 1$: [[Fundamental Theorem of Calculus]]; $k = 2$: [[Green's Theorem|Green's theorem (Theorem §16.1)]] and [[Stokes' Theorem in ℝ³|Stokes' theorem in ℝ³ (Theorem §20.1)]]; $k = 3$: [[Divergence Theorem in ℝ³|Divergence theorem in ℝ³ (Theorem §18.2)]].
 > - Top degree in any dimension ($k = n$, $\Omega \subseteq \mathbb{R}^n$) is the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (Theorem §17.1)]].
-> - Proof: the course states the theorem without proof, after checking the four classical cases above. A proof for compact oriented manifolds with boundary is in Lee, *Introduction to Smooth Manifolds*, Ch. 16, the textbook of [[Differentiable Manifolds]].
 > - The orientation bookkeeping is carried by the sign of the pullback determinant ([[§22 The Algebra of Differential Forms#^def-22-3|Def. §22.3]]; [[§34 Determinants#^ladr-9-61|LADR 9.61]]).
 > - Computational versions: [[§109 The Fundamental Theorem for Line Integrals#^thm-109-1|Calc Thm. §109.1]] (k = 1), [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]], [[§114 Stokes' Theorem#^thm-114-1|Calc Thm. §114.1]] and [[§115 The Divergence Theorem#^thm-115-1|Calc Thm. §115.1]] (with worked examples).
 

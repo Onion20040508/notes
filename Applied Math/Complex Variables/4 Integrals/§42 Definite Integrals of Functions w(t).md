@@ -156,7 +156,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 > \int_0^{\pi} e^{(1+i)x}\,dx = \int_0^{\pi} e^x\cos x\,dx + i\int_0^{\pi} e^x\sin x\,dx .
 > $$
 >
-> Evaluate the two real integrals by evaluating the single integral on the left. By [[§41 Derivatives of Functions w(t)#^ex-41-2|Example §41.2]], $e^{(1+i)x}/(1+i)$ is an antiderivative, and $e^{(1+i)\pi} = e^{\pi}e^{i\pi} = -e^{\pi}$, so by Theorem §42.2
+> Evaluate the two real integrals by evaluating the single integral on the left. By Example §41.2, $e^{(1+i)x}/(1+i)$ is an antiderivative, and $e^{(1+i)\pi} = e^{\pi}e^{i\pi} = -e^{\pi}$, so by Theorem §42.2
 >
 > $$
 > \int_0^{\pi} e^{(1+i)x}\,dx = \frac{e^{(1+i)\pi} - 1}{1 + i} = -\frac{1 + e^{\pi}}{1 + i} = -\frac{(1 + e^{\pi})(1 - i)}{2} = -\frac{1 + e^{\pi}}{2} + i\,\frac{1 + e^{\pi}}{2} .
@@ -181,7 +181,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 > \int_0^{2\pi} e^{im\theta}e^{-in\theta}\,d\theta = \begin{cases} 0 & \text{when } m \ne n, \\ 2\pi & \text{when } m = n. \end{cases}
 > $$
 >
-> The integrand is $e^{i(m - n)\theta}$. If $m = n$ it is $1$, and the integral is $2\pi$. If $m \ne n$, then by [[§41 Derivatives of Functions w(t)#^ex-41-2|Example §41.2]] an antiderivative is $e^{i(m - n)\theta}/\big(i(m - n)\big)$, and by Theorem §42.2
+> The integrand is $e^{i(m - n)\theta}$. If $m = n$ it is $1$, and the integral is $2\pi$. If $m \ne n$, then by Example §41.2 an antiderivative is $e^{i(m - n)\theta}/\big(i(m - n)\big)$, and by Theorem §42.2
 >
 > $$
 > \int_0^{2\pi} e^{i(m - n)\theta}\,d\theta = \frac{e^{i(m - n)2\pi} - 1}{i(m - n)} = 0 ,
@@ -199,7 +199,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 > [!example] Example §42.5: An Improper Integral
 > Show that $\displaystyle\int_0^{\infty} e^{-zt}\,dt = \frac1z$ when $\operatorname{Re} z > 0$.
 >
-> Let $z = x + iy$ with $x > 0$. For $T > 0$, by [[§41 Derivatives of Functions w(t)#^ex-41-2|Example §41.2]] (with $z_0 = -z$) and Theorem §42.2,
+> Let $z = x + iy$ with $x > 0$. For $T > 0$, by Example §41.2 (with $z_0 = -z$) and Theorem §42.2,
 >
 > $$
 > \int_0^{T} e^{-zt}\,dt = \frac{e^{-zt}}{-z}\bigg]_0^{T} = \frac{1 - e^{-zT}}{z} .

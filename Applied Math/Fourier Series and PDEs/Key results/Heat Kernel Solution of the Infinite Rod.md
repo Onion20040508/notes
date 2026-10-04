@@ -14,10 +14,6 @@ tags: [fourier-series-and-pdes, hub]
 - [[§27 Infinite Rod#^thm-27-2|Theorem §27.2: Fourier Integral Solution of the Infinite Rod Problem]]
 - [[§28★ The Error Function#^prop-28-1|Proposition §28.1: Properties of the Error Function]]
 
-## Its proof uses (other subjects)
-- [[§15 The General Lebesgue Integral#^thm-15-8|Theorem §15.8: Dominated Convergence Theorem (DCT)]] (Measure Theory)
-- [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|Theorem §17.6: Fubini's Theorem]] (Measure Theory)
-
 ## Used in (Fourier Series and PDEs)
 - [[§15★ Complex Methods#^ex-15-4|Example §15.4: Solving the Heat Equation by Fourier Transform]]
 - [[§27 Infinite Rod#^thm-27-2|Theorem §27.2: Fourier Integral Solution of the Infinite Rod Problem]]

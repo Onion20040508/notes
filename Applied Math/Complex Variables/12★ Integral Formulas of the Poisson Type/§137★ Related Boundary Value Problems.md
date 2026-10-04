@@ -64,7 +64,7 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 ^prop-137-2
 
 > [!proof]+ Proof
-> The same substitution as in Proposition §137.1, now with $F(2\pi - \phi') = +F(\phi')$, gives (3); harmonicity and (2) again follow from [[§135★ Dirichlet Problem for a Disk#^thm-135-1|Theorem §135.1]], which makes $U$ harmonic in the whole disk $r < r_0$, so $U_\theta$ exists there.
+> The same substitution as in Proposition §137.1, now with $F(2\pi - \phi') = +F(\phi')$, gives (3); harmonicity and (2) again follow from Theorem §135.1, which makes $U$ harmonic in the whole disk $r < r_0$, so $U_\theta$ exists there.
 >
 > *$U$ is even in $\theta$.* (B&C asserts $U_\theta = 0$ on the diameter; here is why.) In (1) of §135, substitute $\phi = 2\pi - \phi'$ and use the evenness and periodicity of $P$ and $F(2\pi - \phi') = F(\phi')$:
 >

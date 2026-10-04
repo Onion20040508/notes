@@ -7,10 +7,3 @@ tags: [real-analysis, math451]
 ← [[§26 Differentiation and Integration of Power Series]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§28 Basic Properties of the Derivative]] →
 
 This section of the book — every continuous function on $[a,b]$ is a uniform limit of polynomials — was not covered in lecture. The heading is kept for alignment of numbering.
-
-> [!remark] Remark: The statement, and where it is used
-> In the language of [[§24 Uniform Convergence#^def-24-2|uniform convergence (Def. §24.2)]] the theorem says: if $f: [a,b] \to \mathbb{R}$ is continuous, then for every $\varepsilon > 0$ there is a polynomial $p$ with $|f(x) - p(x)| < \varepsilon$ for all $x \in [a,b]$; equivalently, some sequence of polynomials converges to $f$ uniformly on $[a,b]$. It is the converse direction of [[§24 Uniform Convergence#^thm-24-2|Theorem §24.2]] for polynomials: uniform limits of continuous functions are continuous, and every continuous function on $[a,b]$ arises this way. No proof is given in the vault.
-> - Used in Functional Analysis: approximating $f'$ uniformly by a polynomial shows that $C^2[a,b]$ is dense in $C^1[a,b]$ for the norm $\max|f| + \max|f'|$, in the proof of [[§11 Completeness#^prop-11-7|556 Prop. §11.7]].
-> - Taylor polynomials ([[§31 Taylor's Theorem#^thm-31-2|§31.2]]) give uniform approximation only for functions with controlled derivatives; the theorem needs no differentiability at all.
-
-^rem-27-1

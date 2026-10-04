@@ -141,11 +141,11 @@ tags: [topology, math590]
 >
 > Restrict the codomain $Y$ to $f(X)$: $g: X \to f(X)$, $g(x) = f(x)$ for all $x \in X$, is surjective. Also continuous ([[§9 Continuous Functions#^thm-9-4|can check]]).
 >
-> Suppose $f(X)$ has a separation $A, B$. Then $g^{-1}(A) \cup g^{-1}(B) = g^{-1}(A \cup B) = X$.
+> Suppose $f(X)$ has a separation $A, B$. Then $g^{-1}(A) \cup g^{-1}(B) = X$. (By surjectivity.)
 >
-> $g^{-1}(A), g^{-1}(B)$ are disjoint because $g$ is a function and $A, B$ are disjoint. They are open because $g$ is continuous, and nonempty because $g$ is surjective and $A, B \neq \emptyset$.
+> $g^{-1}(A), g^{-1}(B)$ are disjoint because $g$ is a function and $A, B$ are disjoint. $\Rightarrow$ $g^{-1}(A), g^{-1}(B)$ open, $\neq \emptyset$.
 >
-> Hence $g^{-1}(A), g^{-1}(B)$ is a separation of $X$, a contradiction.
+> By surjectivity, hence there exists a separation of $X$, contradiction.
 
 ^pf-13-3
 

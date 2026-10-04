@@ -7,7 +7,7 @@ tags: [chapter, group-theory]
 # 9 Characters and Commutators
 ↑ [[Group Theory]]
 
-*Source: Lecture (Wed Sept 23); PS 2.3 and 2.4; PS 4.2, 4.4 and 4.5.*
+*Source: Lecture (Wed Sept 23); PS 2.3 and 2.4.*
 
 [[§45 Characters#^def-45-1|Characters]] are homomorphisms to abelian groups. They [[§45 Characters#^prop-45-1|cannot distinguish conjugate elements]] and they [[§46 Commutators#^prop-46-1|kill every commutator]], which makes them a practical tool for proving that an element is *not* a commutator; the chapter determines [[§46 Commutators#^thm-46-5|the commutator subgroup]] of $S_n$, and with it [[§46 Commutators#^cor-46-7|all characters]] of $S_n$, and ends with the [[§46 Commutators#^def-46-3|abelianization]] and [[§46 Commutators#^prop-46-8|commuting normal subgroups]] (Problem Set 4). Characters are also the first step toward the representation theory of the second half of the course.
 

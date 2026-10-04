@@ -57,7 +57,7 @@ An analytic function on a domain is far more rigid than a differentiable functio
 *Uses:* [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§82 Zeros of Analytic Functions#^thm-82-3|§82.3]], [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (extreme value theorem, applied on the segments of $L$)
 
 ![[m342-28-1.svg]]
-*The proof of Lemma §28.1. The function vanishes on a short segment through $z_0$ (green). A polygonal line $L$ (blue) joins $z_0$ to $P$ inside $D$; the disks $N_k$ of radius $d$, the distance from $L$ to the boundary, stay inside $D$, and each is centered at a point of the previous one. [[§82 Zeros of Analytic Functions#^thm-82-3|Theorem §82.3]] carries "$f \equiv 0$" from each disk to the next, all the way to $P$.*
+*The proof of Lemma §28.1. The function vanishes on a short segment through $z_0$ (green). A polygonal line $L$ (blue) joins $z_0$ to $P$ inside $D$; the disks $N_k$ of radius $d$, the distance from $L$ to the boundary, stay inside $D$, and each is centered at a point of the previous one. Theorem §82.3 carries "$f \equiv 0$" from each disk to the next, all the way to $P$.*
 
 > [!remark]- Connections
 > - The "$d > 0$" step is the standard fact that a compact set and a disjoint closed set are at positive distance; compactness of $L$ is [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel). The propagation step is a connectedness argument in disguise: the set where $f$ vanishes identically nearby is open and closed in $D$, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]].
@@ -159,7 +159,7 @@ However, if there is an analytic continuation $f_3$ of $f_2$ from $D_2$ into a d
 > f_2(z) = \sqrt r\,e^{i\theta/2} \qquad \Big(r > 0,\ \frac\pi2 < \theta < 2\pi\Big)
 > $$
 >
-> is analytic in its domain $D_2$ ([[§24★ Polar Coordinates#^ex-24-2|Example §24.2]], restricted to part of the branch with $\alpha = \pi/2$). The intersection $D_1 \cap D_2$ is the second quadrant $\frac\pi2 < \theta < \pi$, where both formulas use the same $\theta$ and so agree. So $f_2$ is an analytic continuation of $f_1$ across the negative real axis into the lower half plane.
+> is analytic in its domain $D_2$ (Example §24.2, restricted to part of the branch with $\alpha = \pi/2$). The intersection $D_1 \cap D_2$ is the second quadrant $\frac\pi2 < \theta < \pi$, where both formulas use the same $\theta$ and so agree. So $f_2$ is an analytic continuation of $f_1$ across the negative real axis into the lower half plane.
 >
 > **Back into the first quadrant.** The function
 >

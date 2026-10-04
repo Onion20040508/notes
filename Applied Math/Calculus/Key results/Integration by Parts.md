@@ -22,5 +22,4 @@ tags: [calculus, hub]
 - [[§61 Linear Equations#^ex-61-5|Example §61.5: A Circuit with a Generator]]
 
 ## Connections
-- Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], the definite form ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]] here), under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.
 - See [[§44 Integration by Parts]] for context and examples.

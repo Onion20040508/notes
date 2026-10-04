@@ -17,6 +17,7 @@ tags: [complex-variables, hub]
 - [[§44 Contour Integrals#^def-44-2|Definition §44.2: Opposite, Sum and Difference of Contours]]
 - [[§44 Contour Integrals#^thm-44-2|Theorem §44.2: Properties of Contour Integrals]]
 - [[§45 Some Examples (Contour Integrals)#^prop-45-1|Proposition §45.1: The Integral of 1 Along a Contour]]
+- [[§45 Some Examples (Contour Integrals)#^ex-45-2|Example §45.2: The Integral of z Depends Only on the Endpoints]]
 - [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2: The ML-Inequality]]
 - [[§48 Antiderivatives#^def-48-1|Definition §48.1: Independence of Path]]
 - [[§48 Antiderivatives#^def-48-2|Definition §48.2: Antiderivative]]
@@ -34,6 +35,5 @@ tags: [complex-variables, hub]
 - [[§128★ Schwarz–Christoffel Transformation#^lem-128-1|Lemma §128.1: Continuity at the Branch Points]]
 
 ## Connections
-- **Compare.** [[§45 Some Examples (Contour Integrals)#^ex-45-2|Example §45.2: The Integral of z Depends Only on the Endpoints]] is the first instance of path independence, found by direct computation before the theorem.
 - This is the complex form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Calc Thm. §109.2]] (path independence $\Leftrightarrow$ zero around closed paths) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]] (path independence $\Rightarrow$ a potential exists, constructed by the same integral from a base point). Here a single complex derivative $F' = f$ replaces the two conditions $\phi_x = P$, $\phi_y = Q$, because $F' = f$ along both a horizontal and a vertical segment are the same statement.
 - The polygonal connectedness used to define $F$ is path-connectedness, [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]; for open subsets of the plane it is equivalent to connectedness.

@@ -180,7 +180,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 ^ex-12-5
 
 > [!proof]+ Proof that $\mathbb{R}^3/\mathrm{SO}(3) \cong [0,\infty)$
-> *(Not from lecture; filled in.)* Define $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$ by $\rho([x]) = |x|$. It is well defined because $|gx| = |x|$, and it is a bijection by the description of the orbits ($\rho$ is injective since $[x] = [y]$ iff $|x| = |y|$, and surjective since $\rho([(r,0,0)]) = r$). It is continuous by Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]], since $\rho \circ \pi = |\cdot| : \mathbb{R}^3 \to [0,\infty)$ is continuous. Its inverse $[0,\infty) \to \mathbb{R}^3/\mathrm{SO}(3)$, $r \mapsto [(r,0,0)]$, is the composite of the continuous map $r \mapsto (r,0,0)$ with the continuous map $\pi$. Hence $\rho$ is a homeomorphism.
+> *(Not from lecture; filled in.)* Define $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$ by $\rho([x]) = |x|$. It is well defined because $|gx| = |x|$, and it is a bijection by the description of the orbits ($\rho$ is injective since $[x] = [y]$ iff $|x| = |y|$, and surjective since $\rho([(r,0,0)]) = r$). It is continuous by Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]], since $\rho \circ \pi = |\cdot| : \mathbb{R}^3 \to [0,\infty)$ is continuous. Its inverse $[0,\infty) \to \mathbb{R}^3/\mathrm{SO}(3)$, $r \mapsto [(r,0,0)]$, is the composite of the continuous map $r \mapsto (r,0,0)$ with the continuous map $\pi$. Hence $\rho$ is a homeomorphism.
 
 ^pf-ex-12-5
 
@@ -257,7 +257,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§12 Group Actions and Orbit Spaces#^def-12-4|Def. §12.4]], [[§12 Group Actions and Orbit Spaces#^prop-12-1|§12.1]], [[§12 Group Actions and Orbit Spaces#^lem-12-2|§12.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!remark]- Connections
-> - For $G/H$ this is the openness of the projection: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]] and [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|the remark after §14.2]].
+> - For $G/H$ this is the openness of the projection: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]] and [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|the remark after §12.2]].
 
 ## Hausdorff Orbit Spaces
 
@@ -341,7 +341,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 **Not proved in this course.** Stated in lecture as a strengthening of Corollary [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], with the proof declined: “another ten minutes of point-set topology which we will not take.” The gap is exactly the step where compactness of $X$ was used — in Corollary [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
 
-> [!proof]+ Proof of Theorem §12.5 (filled in; not from lecture)
+> [!proof]+ Proof of Theorem §10.5 (filled in; not from lecture)
 > *(Stated in Lecture 4 — “compactness of $X$ is not strictly necessary”; filled in.)* By Lemma [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]] the orbit relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] it suffices to show that $\Gamma = \{(x, g\cdot x)\}$ is closed in $X \times X$. Let $(x, y) \notin \Gamma$, so that $g \cdot x \ne y$ for every $g \in G$. For each $g$, choose disjoint open sets $U_g \ni g \cdot x$ and $V_g \ni y$, using that $X$ is Hausdorff. By continuity of the action at $(g, x)$, choose open $A_g \ni g$ and $B_g \ni x$ with $a \cdot x' \in U_g$ for all $a \in A_g$ and $x' \in B_g$. The sets $A_g$ cover the compact $G$, so finitely many, $A_{g_1}, \ldots, A_{g_m}$, suffice; put $B = \bigcap_i B_{g_i}$ and $V = \bigcap_i V_{g_i}$, open neighbourhoods of $x$ and $y$. If some $(x', y') \in B \times V$ had $y' = a \cdot x'$, then $a \in A_{g_i}$ for some $i$, whence $y' \in U_{g_i}$; but also $y' \in V \subseteq V_{g_i}$, which is disjoint from $U_{g_i}$. So $B \times V$ misses $\Gamma$, and $\Gamma$ is closed.
 
 ^pf-12-5

@@ -16,7 +16,7 @@ Single-variable and multivariable calculus, following James Stewart, Daniel Cleg
 These are the computational notes: every definition and result Stewart states, every proof he gives, his methods, and a lean selection of worked examples. The rigorous theory lives in the Math subjects — limits, continuity, derivatives, the integral and series in [[Single Variable Analysis]], several variables and vector calculus in [[Multivariable Analysis]], vectors and determinants in [[Linear Algebra]] — and the main items here carry a folded *Connections* callout pointing to their rigorous treatment.
 
 ## How the chapters build on each other
-Solid arrows: a chapter's proofs and examples rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved. Dashed arrows to the other subjects (Math and Applied Math): where the rigorous treatment or a parallel treatment is, labelled with the number of *Connections* links (only arrows with 3 or more are drawn).
+Solid arrows: a chapter's proofs and examples rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved. Dashed arrows to the Math subjects: where the rigorous treatment is, labelled with the number of *Connections* links (only arrows with 3 or more are drawn).
 
 ```mermaid
 graph TD
@@ -191,4 +191,4 @@ graph TD
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math and Applied Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Complex Variables]] (44), [[Applied Linear Algebra]] (43), [[Fourier Series and PDEs]] (28), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (192), [[Multivariable Analysis]] (161), [[Ordinary Differential Equations]] (62), [[Complex Variables]] (44), [[Applied Linear Algebra]] (43), [[Fourier Series and PDEs]] (28), [[Linear Algebra]] (27), [[Logic and Proofs]] (19), [[Measure Theory]] (13), [[Topology]] (6), [[Differentiable Manifolds]] (2).

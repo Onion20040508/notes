@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 16 · MAT 342 HW 2.*
 
-[[§15 Limits#^def-15-1|Definition §15.1]] tests whether a proposed number is a limit; it does not find limits. This section supplies the tools that do. Theorem §16.1 says that $f = u + iv$ has a limit exactly when its real and imaginary parts have limits, which reduces complex limits to the limits of real functions of two variables from calculus. With it, the familiar rules carry over: limits of sums, products and quotients are the sums, products and quotients of the limits, and so the limit of a polynomial or rational function at a point where it is defined is its value there. These rules are the basis of the continuity theorems of [[§18 Continuity|§18]] and of the differentiation rules of [[§20 Rules for Differentiation|§20]].
+Definition §15.1 tests whether a proposed number is a limit; it does not find limits. This section supplies the tools that do. Theorem §16.1 says that $f = u + iv$ has a limit exactly when its real and imaginary parts have limits, which reduces complex limits to the limits of real functions of two variables from calculus. With it, the familiar rules carry over: limits of sums, products and quotients are the sums, products and quotients of the limits, and so the limit of a polynomial or rational function at a point where it is defined is its value there. These rules are the basis of the continuity theorems of [[§18 Continuity|§18]] and of the differentiation rules of [[§20 Rules for Differentiation|§20]].
 
 ## Limits and Components
 

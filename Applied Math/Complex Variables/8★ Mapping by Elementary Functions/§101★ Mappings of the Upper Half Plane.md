@@ -82,7 +82,7 @@ Which linear fractional transformations carry the upper half plane onto the unit
 >
 > The real axis is the perpendicular bisector of the segment joining $z_0$ and $\bar z_0$. If $z$ lies above the real axis, it is on the same side as $z_0$, so it is closer to $z_0$ than to $\bar z_0$: $|z - z_0| < |z - \bar z_0|$, that is $|w| < 1$. If $z$ lies below the real axis, $|z - z_0| > |z - \bar z_0|$ and $|w| > 1$. If $z$ is real, $|z - z_0| = |z - \bar z_0|$ and $|w| = 1$; also $T(\infty) = e^{i\alpha}$ has modulus $1$.
 >
-> So $T$ maps the upper half plane into the open disk, the lower half plane into the exterior $|w| > 1$, and the extended real axis into the circle. Since $T$ is a one-to-one map of the extended plane onto itself ([[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]]), every point of the disk has a preimage, which cannot lie in the lower half plane or on the extended real axis; hence it lies in the upper half plane. Likewise every point of the circle comes from the extended real axis. This is (a).
+> So $T$ maps the upper half plane into the open disk, the lower half plane into the exterior $|w| > 1$, and the extended real axis into the circle. Since $T$ is a one-to-one map of the extended plane onto itself (Theorem §99.4), every point of the disk has a preimage, which cannot lie in the lower half plane or on the extended real axis; hence it lies in the upper half plane. Likewise every point of the circle comes from the extended real axis. This is (a).
 
 ^pf-101-1
 
@@ -92,7 +92,7 @@ Which linear fractional transformations carry the upper half plane onto the unit
 *The case $z_0 = i$, $\alpha = 0$ of Theorem §101.1, $w = (z - i)/(z + i)$. Left: a point $z$ above the real axis is nearer to $z_0 = i$ than to its mirror image $\bar z_0 = -i$, so $|w| < 1$. Right: the horizontal lines $y = \frac12, 1, 2$ (red) go onto circles inside the disk, all tangent to the unit circle at $w = 1$, the image of $\infty$; the vertical half lines $x = -1, 0, 1$ (blue) go onto arcs from the boundary to $w = 1$, and $x = 0$ onto the radius from $-1$ to $1$. The point $z_0 = i$ goes to the center.*
 
 > [!remark] Remark: What the Two Parameters Do
-> In (b), $z_0$ is the point of the half plane that goes to the center $w = 0$, and the factor $e^{i\alpha}$ is a final rotation of the disk; the point at infinity goes to $w = e^{i\alpha}$. So a map of the half plane onto the disk can send any chosen point to the center, and then any chosen boundary point to any chosen point of the circle; after that it is fixed. This is the count of three real conditions behind [[§100★ An Implicit Form#^thm-100-3|Theorem §100.3]]: a boundary-to-boundary map is determined by three boundary points.
+> In (b), $z_0$ is the point of the half plane that goes to the center $w = 0$, and the factor $e^{i\alpha}$ is a final rotation of the disk; the point at infinity goes to $w = e^{i\alpha}$. So a map of the half plane onto the disk can send any chosen point to the center, and then any chosen boundary point to any chosen point of the circle; after that it is fixed. This is the count of three real conditions behind Theorem §100.3: a boundary-to-boundary map is determined by three boundary points.
 
 ^rem-101-1
 
@@ -103,7 +103,7 @@ The exercises on Sections 101 and 102 are printed after Section 102.
 > [!example] Example §101.1: The Lower Half Plane
 > Show that if $\operatorname{Im} z_0 < 0$, the transformation $w = e^{i\alpha}(z - z_0)/(z - \bar z_0)$ maps the lower half plane $\operatorname{Im} z \le 0$ onto the closed disk $|w| \le 1$.
 >
-> The argument of (b) implies (a) applies with the sides exchanged. Again $|w| = |z - z_0|/|z - \bar z_0|$ and the real axis bisects the segment from $z_0$ to $\bar z_0$, but now $z_0$ is below it. A point $z$ with $\operatorname{Im} z < 0$ is on the side of $z_0$, so $|w| < 1$; a point with $\operatorname{Im} z > 0$ has $|w| > 1$; a real $z$ has $|w| = 1$. By the bijectivity of [[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]], the open lower half plane goes onto $|w| < 1$ and the real axis together with $\infty$ onto $|w| = 1$; so the closed lower half plane goes onto the closed disk $|w| \le 1$ with the single boundary point $e^{i\alpha} = T(\infty)$ omitted.
+> The argument of (b) implies (a) applies with the sides exchanged. Again $|w| = |z - z_0|/|z - \bar z_0|$ and the real axis bisects the segment from $z_0$ to $\bar z_0$, but now $z_0$ is below it. A point $z$ with $\operatorname{Im} z < 0$ is on the side of $z_0$, so $|w| < 1$; a point with $\operatorname{Im} z > 0$ has $|w| > 1$; a real $z$ has $|w| = 1$. By the bijectivity of Theorem §99.4, the open lower half plane goes onto $|w| < 1$ and the real axis together with $\infty$ onto $|w| = 1$; so the closed lower half plane goes onto the closed disk $|w| \le 1$ with the single boundary point $e^{i\alpha} = T(\infty)$ omitted.
 >
 > *B&C: Sec. 102, Exercise 6*
 

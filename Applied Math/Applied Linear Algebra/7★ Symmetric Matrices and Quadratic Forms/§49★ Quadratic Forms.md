@@ -134,7 +134,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 
 ^pf-49-2
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]] ($P^TP = I$), [[§49★ Quadratic Forms#^ex-49-1|Ex. §49.1]](a) (a diagonal matrix gives only squares)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]] ($P^TP = I$)
 
 > [!definition] Definition §49.3: Principal Axes
 > The columns of $P$ in the Principal Axes Theorem are called the **principal axes** of the quadratic form $\mathbf{x}^T A \mathbf{x}$. They are orthonormal eigenvectors of $A$, and the vector $\mathbf{y}$ is the coordinate vector of $\mathbf{x}$ relative to the orthonormal basis of $\mathbb{R}^n$ given by these principal axes.

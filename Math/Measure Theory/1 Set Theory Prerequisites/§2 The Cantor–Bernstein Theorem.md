@@ -18,7 +18,7 @@ tags: [measure-theory, math551]
 ^rem-2-1
 
 > [!remark]- Connections
-> - As a proof technique: [[Measure Theory Problem-Solving Techniques#^rem-19-6|Technique 2: The Cantor–Bernstein Squeeze]], applied in [[Measure Theory Problem-Solving Techniques#^ex-19-9|Ex. T2 (HW1)]].
+> - As a proof technique: [[Measure Theory Problem-Solving Techniques#^rem-19-6|Technique 2: The Cantor–Bernstein Squeeze]], applied in [[Measure Theory Problem-Solving Techniques#^ex-19-9|Ex. §19.9 (HW1)]].
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-14|250 Thm. §14.14]], with a complete proof by chains of images.
 
 The proof relies on the following lemma.

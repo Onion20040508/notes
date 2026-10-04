@@ -166,7 +166,7 @@ Two parallel grounded conducting planes with a semi-infinite plate at potential 
 > (z + 1)^{1/2}(z - 1)^{1/2} = \sec\alpha\,e^{i(\alpha + \pi - \alpha)/2} = i\sec\alpha ,
 > $$
 >
-> $z + (z + 1)^{1/2}(z - 1)^{1/2} = i(\tan\alpha + \sec\alpha)$, and $\operatorname{Log}$ of this is $\ln(\tan\alpha + \sec\alpha) + \frac{\pi i}{2}$. Substituting into the map of [[§132★ Flow in a Channel with an Offset#^ex-132-4|Example §132.4]],
+> $z + (z + 1)^{1/2}(z - 1)^{1/2} = i(\tan\alpha + \sec\alpha)$, and $\operatorname{Log}$ of this is $\ln(\tan\alpha + \sec\alpha) + \frac{\pi i}{2}$. Substituting into the map of Example §132.4,
 >
 > $$
 > w = \frac h\pi\Big[i\sec\alpha + \ln(\tan\alpha + \sec\alpha) + \frac{\pi i}{2}\Big] ,

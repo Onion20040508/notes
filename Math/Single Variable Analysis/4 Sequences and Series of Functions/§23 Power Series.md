@@ -172,7 +172,7 @@ compared with $1$.
 > \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n,
 > $$
 >
-> which for $x_0 = 0$ specializes to $\sum \tfrac{f^{(n)}(0)}{n!} x^n$ — e.g., for $f(x) = e^x$, the series $\sum_{n=0}^\infty \tfrac{x^n}{n!}$, whose radius we computed to be $+\infty$. (This is a preview: derivatives, and the sense in which $e^x$ *equals* its Taylor series, belong to [[· 5 Differentiation|Chapter 5]].)
+> which for $x_0 = 0$ specializes to $\sum \tfrac{f^{(n)}(0)}{n!} x^n$ — e.g., for $f(x) = e^x$, the series $\sum_{n=0}^\infty \tfrac{x^n}{n!}$, whose radius we computed to be $+\infty$. (This is a preview: derivatives, and the sense in which $e^x$ *equals* its Taylor series, belong to Part II.)
 
 ^rem-23-2
 

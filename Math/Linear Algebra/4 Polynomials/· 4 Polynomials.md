@@ -7,7 +7,7 @@ tags: [chapter, linear-algebra]
 # 4 Polynomials
 ↑ [[Linear Algebra]]
 
-**Builds on:** [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (1 citation)
+**Builds on:** [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (1 citations)
 **Used by:** [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (8), [[· 6 Inner Product Spaces|6 Inner Product Spaces]] (1), [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (1)
 
 ## Sections

@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ↑ [[· 1 Topological Manifolds]] · [[§2 Topological Manifolds]] →
 
-*Stage: foundations — The point-set tools that every later construction draws on.*
+*Foundations — The point-set tools that every later construction draws on.*
 
 *Reference: Lee Appendix A; MATH 590 notes [[§2 Basis for a Topology|§2]] (bases), [[§8 Hausdorff Spaces|§8]] (Hausdorff), [[§18 Countability Axioms|§18]] (countability axioms).*
 
@@ -342,7 +342,7 @@ tags: [differentiable-manifolds, math591]
 ## Standing Facts Imported from MATH 590
 
 > [!remark] Remark
-> The following results from point-set topology are used in these notes without further comment. They are stated here so the notes are self-contained; proofs are in the MATH 590 notes at the sections indicated, except for the two items marked $(\ast)$, which are proved below (the first is also recorded in 590, right after [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]; the second was not recorded there).
+> The following results from point-set topology are used in these notes without further comment. They are stated here so the notes are self-contained; proofs are in the MATH 590 notes at the sections indicated, except for the two items marked $(\ast)$, which were not recorded there and are proved below.
 
 ^rem-1-10
 

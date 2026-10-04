@@ -22,10 +22,10 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§11 Completeness#^ex-11-2|Example §11.2: C²[a,b] with a C¹ Norm]]
-- [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ‖·‖_X) is Not Complete]]
+- [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-5|Proposition §17.5: Continuous Functions are Not Dense in L^∞]]
 - [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]
-- [[§18 Compactness and the Unit Ball#^prop-18-4|Proposition §18.4: The Constant θ = 1 Cannot Be Attained]]
+- [[§18 Compactness and the Unit Ball#^prop-18-4|Proposition §18.4: The Constant theta = 1 Cannot Be Attained]]
 
 ## Connections
 - **How.** The proof finds a candidate, then closes ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]). A sup-norm Cauchy sequence is pointwise Cauchy, so it has a pointwise limit f, by completeness of the scalars ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]). Keeping N independent of t upgrades this to uniform convergence, and a 3ε argument makes f continuous. These two steps re-prove [[§24 Uniform Convergence#^thm-24-1|451 §24.1]] and [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]. Unlike for ℓᵖ, showing that the candidate lies in the space is a genuine theorem ([[§11 Completeness#^rem-11-1|Remark §11]]).

@@ -76,7 +76,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 > \int_{C_1} f(z)\,dz = \int_{C_2} f(z)\,dz , \qquad (2)
 > $$
 >
-> or, by property (6) of [[§44 Contour Integrals#^thm-44-2|Theorem §44.2]],
+> or, by property (6) of Theorem §44.2,
 >
 > $$
 > \int_{C_1} f(z)\,dz + \int_{-C_2} f(z)\,dz = 0 . \qquad (3)
@@ -126,7 +126,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 > \Big|\frac{F(z + \Delta z) - F(z)}{\Delta z} - f(z)\Big| \le \frac{1}{|\Delta z|}\,\varepsilon|\Delta z| = \varepsilon .
 > $$
 >
-> (B&C writes $<$; the strict form of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]] gives that too, but $\le$ is all that is needed.) That is,
+> (B&C writes $<$; the strict form of Theorem §47.2 gives that too, but $\le$ is all that is needed.) That is,
 >
 > $$
 > \lim_{\Delta z\to0}\frac{F(z + \Delta z) - F(z)}{\Delta z} = f(z) ,
@@ -160,7 +160,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 >
 > For $n \ne 0$, the function $F(z) = (z - z_0)^n/n$ satisfies $F'(z) = (z - z_0)^{n-1}$ in the domain $z \ne z_0$ (the whole plane if $n > 0$). $C_0$ lies in that domain, so by statement (c) of Theorem §49.1 the integral is zero. (For a circle about $z_0$ this is [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]; now the contour can be any closed contour.) The case $n = 0$, the integrand $1/(z - z_0)$, is excluded: its integral around a circle about $z_0$ is $2\pi i$.
 >
-> **(b)** For the circle $S$: $|z| = 2$, compute $\displaystyle\int_S (z - 3)^n\,dz$ for every integer $n$, and compare with [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]].
+> **(b)** For the circle $S$: $|z| = 2$, compute $\displaystyle\int_S (z - 3)^n\,dz$ for every integer $n$, and compare with Example §45.5.
 >
 > For $n \ne -1$, part (a) (with $z_0 = 3$, which is not on $S$) gives $0$. For $n = -1$, the integrand $1/(z - 3)$ has the antiderivative
 >
@@ -168,7 +168,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 > F(z) = \log(z - 3) = \ln|z - 3| + i\arg(z - 3) \qquad (0 < \arg(z - 3) < 2\pi) ,
 > $$
 >
-> analytic in the plane cut along the ray $z = 3 + x$, $x \ge 0$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]] and the chain rule). That ray lies in $|z| \ge 3$, so it misses $S$, and the integral is $0$ by statement (c). So $\int_S (z - 3)^n\,dz = 0$ for *every* $n$. In [[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]] the case $n = -1$ gave $2\pi i$: there the point $a$ where $1/(z - a)$ fails to be analytic lies *inside* the circle, so every branch of $\log(z - a)$ has its cut crossing the circle; here the point $3$ lies outside $S$, and a cut from $3$ can avoid $S$.
+> analytic in the plane cut along the ray $z = 3 + x$, $x \ge 0$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]] and the chain rule). That ray lies in $|z| \ge 3$, so it misses $S$, and the integral is $0$ by statement (c). So $\int_S (z - 3)^n\,dz = 0$ for *every* $n$. In Example §45.5 the case $n = -1$ gave $2\pi i$: there the point $a$ where $1/(z - a)$ fails to be analytic lies *inside* the circle, so every branch of $\log(z - a)$ has its cut crossing the circle; here the point $3$ lies outside $S$, and a cut from $3$ can avoid $S$.
 >
 > *B&C: Sec. 49, Exercise 3; Source: 342 HW 6; 342 HW 5, Problem 2(b)*
 

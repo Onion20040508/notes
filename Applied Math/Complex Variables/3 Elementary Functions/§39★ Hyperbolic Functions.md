@@ -196,7 +196,7 @@ The zeros are presented as a theorem, for comparison with [[§38 Zeros and Singu
 ^thm-39-4
 
 > [!proof]+ Proof
-> (B&C's Exercise 8: an immediate consequence of (4) and [[§38 Zeros and Singularities of Trigonometric Functions#^thm-38-1|Theorem §38.1]].) By (4), $\sinh z = -i\sin(iz)$, so $\sinh z = 0$ if and only if $\sin(iz) = 0$, that is, $iz = n\pi$, or $z = -n\pi i$; as $n$ runs through the integers so does $-n$, giving $z = n\pi i$. Similarly $\cosh z = \cos(iz) = 0$ if and only if $iz = \frac\pi2 + n\pi$, that is, $z = -\big(\frac\pi2 + n\pi\big)i = \big(\frac\pi2 + m\pi\big)i$ with $m = -n - 1$.
+> (B&C's Exercise 8: an immediate consequence of (4) and Theorem §38.1.) By (4), $\sinh z = -i\sin(iz)$, so $\sinh z = 0$ if and only if $\sin(iz) = 0$, that is, $iz = n\pi$, or $z = -n\pi i$; as $n$ runs through the integers so does $-n$, giving $z = n\pi i$. Similarly $\cosh z = \cos(iz) = 0$ if and only if $iz = \frac\pi2 + n\pi$, that is, $z = -\big(\frac\pi2 + n\pi\big)i = \big(\frac\pi2 + m\pi\big)i$ with $m = -n - 1$.
 
 ^pf-39-4
 

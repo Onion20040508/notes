@@ -168,7 +168,7 @@ Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *differe
 
 ^pf-32-3
 
-> [!proof]+ Proof of Theorem 32.1
+> [!proof]+ Proof
 > Fix any partition $Q$. By the Cross Lemma, $U(f,Q)$ is an upper bound for *all* the lower sums, so
 >
 > $$
@@ -323,8 +323,6 @@ These were stated without proof in lecture (the proofs take too much time; see t
 > $$
 > U(f,P) - L(f,P) = \sum_{k=1}^n \bigl(M_k - m_k\bigr)\,\frac{b-a}{n} \leq \sum_{k=1}^n \frac{\varepsilon}{b-a}\cdot\frac{b-a}{n} = \varepsilon.
 > $$
->
-> Since $\varepsilon > 0$ was arbitrary (running the argument with $\tfrac\varepsilon2$ in place of $\varepsilon$ gives $U(f,P) - L(f,P) \leq \tfrac\varepsilon2 < \varepsilon$), the Cauchy criterion holds, and $f$ is integrable.
 
 ^pf-32-7
 

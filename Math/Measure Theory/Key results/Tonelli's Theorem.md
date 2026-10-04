@@ -21,7 +21,6 @@ tags: [measure-theory, hub]
 - [[§17 Invariance Properties and Fubini's Theorem#^lem-17-5|Lemma §17.5: Closure Properties of 𝓕]]
 
 ## Used in (Measure Theory)
-- [[§16 The L¹ Space and Density Theorems#^thm-16-7|Theorem §16.7: Compactly Supported Continuous Functions are Dense in L¹]]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|Theorem §17.6: Fubini's Theorem]]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-7|Theorem §17.7: Cross-Section Theorem (Restated)]]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|Theorem §17.8: Measurability of Product Sets]]

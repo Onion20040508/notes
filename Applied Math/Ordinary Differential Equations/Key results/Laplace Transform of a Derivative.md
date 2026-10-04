@@ -14,9 +14,6 @@ tags: [ordinary-differential-equations, hub]
 - [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2: Existence of the Laplace Transform]]
 - [[§21 Definition of the Laplace Transform#^def-21-4|Definition §21.4: The Laplace Transform]]
 
-## Its proof uses (other subjects)
-- [[§44 Integration by Parts#^thm-44-1|Theorem §44.1: Integration by Parts]] (Calculus)
-
 ## Used in (Ordinary Differential Equations)
 - [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2: Transform of the nth Derivative]]
 - [[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6: Table of Elementary Laplace Transforms]]

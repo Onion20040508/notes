@@ -16,7 +16,7 @@ MATH 452 (Winter 2026, Tian Jing), following Courant & John, *Introduction to Ca
 Topics: open and closed sets; partial derivatives, differentiability, mean value theorem; gradient, directional derivatives, chain rule; implicit and inverse function theorems; extrema and Lagrange multipliers; multiple integrals and change of variables; line and surface integrals; Green, divergence and Stokes theorems; differential forms and the generalized Stokes theorem.
 
 ## How the chapters build on each other
-Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (the proof of the [[Divergence Theorem in ℝⁿ]] in §17 takes the graph area element from [[Surface Area via the Gram Matrix|§18.1]]). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
+Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows: citations of results from other subjects, labelled with their number (only arrows with 2 or more citations are drawn).
 
 ```mermaid
 graph TD
@@ -42,7 +42,6 @@ graph TD
   C4 --> C5
   C5 --> C6
   C6 --> C7
-  C6 -.->|on credit| C5
   X2 -.->|3| C2
   X2 -.->|5| C3
   X2 -.->|2| C4

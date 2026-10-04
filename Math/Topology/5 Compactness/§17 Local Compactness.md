@@ -283,7 +283,7 @@ tags: [topology, math590]
 >
 > $(\Rightarrow)$: Suppose $X$ is locally compact. Let $x \in X$ and let $U$ be a neighborhood of $x$. Take the [[§17 Local Compactness#^thm-17-5|one-point compactification]] $Y = X \cup \{\infty\}$, and let $C = Y \setminus U$. Then $C$ is closed in $Y$ (since $U$ is open in $X$ and the topology on $Y$ makes $X$ open in $Y$), so $C$ is a compact subspace of $Y$ ([[Closed Subspace of a Compact Space is Compact|closed subset of compact]]).
 >
-> Since $Y$ is compact Hausdorff, we can apply Munkres Lemma 26.4 (a point and a disjoint compact set in a Hausdorff space can be separated by open sets; this is the argument in the [[§15 Compact Spaces#^pf-15-4|proof of Theorem §15.4]]) to choose disjoint open sets $V \ni x$ and $W \supseteq C$ in $Y$. Then $\overline{V}$ (closure in $Y$) is compact: it is a closed subset of the compact space $Y$. Furthermore, $\overline{V}$ is disjoint from $C$ since $\overline{V} \subseteq Y \setminus W$ and $W \supseteq C$, so $\overline{V} \subseteq Y \setminus C = U$, as desired.
+> Since $Y$ is compact Hausdorff, we can apply Munkres Lemma 26.4 (a point and a disjoint compact set in a Hausdorff space can be separated by open sets) to choose disjoint open sets $V \ni x$ and $W \supseteq C$ in $Y$. Then $\overline{V}$ (closure in $Y$) is compact: it is a closed subset of the compact space $Y$. Furthermore, $\overline{V}$ is disjoint from $C$ since $\overline{V} \subseteq Y \setminus W$ and $W \supseteq C$, so $\overline{V} \subseteq Y \setminus C = U$, as desired.
 
 ^pf-17-6
 

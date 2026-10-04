@@ -7,9 +7,11 @@ tags: [chapter, differentiable-manifolds]
 # 2 Topological Groups and Homogeneous Spaces
 ↑ [[Differentiable Manifolds]]
 
+
+
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (1)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (12), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (4), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (6)
-**Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (16), [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6), [[Group Theory]] (9)
+**Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (16), [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6)
 
 ## Sections
 - [[§10 Topological Groups and Classical Matrix Groups]]

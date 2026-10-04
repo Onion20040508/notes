@@ -16,9 +16,6 @@ tags: [fourier-series-and-pdes, hub]
 - [[§2★ Nonhomogeneous Linear Equations#^thm-2-7|Theorem §2.7: The Particular Solution as a Green's Function Integral]]
 - [[§5★ Green's Functions#^def-5-2|Definition §5.2: Green's Function]]
 
-## Its proof uses (other subjects)
-- [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1: The Fundamental Theorem of Calculus, Part 1]] (Calculus)
-
 ## Used in (Fourier Series and PDEs)
 - [[§5★ Green's Functions#^thm-5-3|Theorem §5.3: Existence and Uniqueness for the Boundary Value Problem]]
 

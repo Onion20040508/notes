@@ -13,7 +13,7 @@ tags: [topology, math590]
 > [!definition] Definition §9.1: Continuous Function
 > Let $X, Y$ be topological spaces. A function $f: X \to Y$ is **continuous** if for each open set $V \subseteq Y$, the preimage $f^{-1}(V)$ is a subset of $X$ that is open.
 >
-> (This generalizes the $\varepsilon$-$\delta$ definition of continuity for metric spaces.)
+> (Generalizes $\varepsilon$-$\delta$ since metric definition.)
 
 ^def-9-1
 

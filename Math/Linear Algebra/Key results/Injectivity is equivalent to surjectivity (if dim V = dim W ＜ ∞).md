@@ -10,15 +10,13 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§10 Invertibility and Isomorphisms#^ladr-3-65|Axler 3.65]], in [[§10 Invertibility and Isomorphisms]]
 
-## Its proof uses
+## Proof uses
 - [[Fundamental theorem of linear maps|3.21]], [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[§6 Dimension#^ladr-2-39|2.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]]
 
 ## Used in (Linear Algebra)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-68|3.68 ST = I ⟺ TS = I (on vector spaces of the same dimension)]]
 - [[§14 Invariant Subspaces#^ladr-5-7|5.7 Equivalent conditions to be an eigenvalue]]
 - [[§23 Spectral Theorem#^ladr-7-26|7.26 Invertible quadratic expressions]]
-- [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-61|7.61 Positive invertible operator]]
-- [[Invertible ⟺ nonzero determinant|9.50 Invertible ⟺ nonzero determinant]]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]

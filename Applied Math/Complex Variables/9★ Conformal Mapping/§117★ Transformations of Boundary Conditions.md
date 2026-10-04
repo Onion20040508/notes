@@ -132,7 +132,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 >
 > Since $dH/dN = (\operatorname{grad} H)\cdot\mathbf N$, (2) gives $dH/dN = 0$ on $C$. If $\operatorname{grad} h = \mathbf 0$ at $(u, v)$, then $\operatorname{grad} H = \mathbf 0$ at $(x, y)$ by Lemma §117.1(a), and both normal derivatives are $0$.
 >
-> B&C notes that this argument tacitly assumes that $\operatorname{grad} h$ and $\operatorname{grad} H$ exist, and that the level curve $H(x, y) = c$ is smooth where $\operatorname{grad} h \ne \mathbf 0$ (so that [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|Theorem §112.1]] applies to it); both hold in all the applications. (Lemma §117.1(d) removes the second assumption: $dH/dN = |f'(z)|\,dh/dn = 0$ directly, the normals $\mathbf N$ and $\mathbf n$ corresponding under the map.)
+> B&C notes that this argument tacitly assumes that $\operatorname{grad} h$ and $\operatorname{grad} H$ exist, and that the level curve $H(x, y) = c$ is smooth where $\operatorname{grad} h \ne \mathbf 0$ (so that Theorem §112.1 applies to it); both hold in all the applications. (Lemma §117.1(d) removes the second assumption: $dH/dN = |f'(z)|\,dh/dn = 0$ directly, the normals $\mathbf N$ and $\mathbf n$ corresponding under the map.)
 
 ^pf-117-2
 
@@ -149,7 +149,7 @@ A condition of another type can change substantially (Example §117.3). By Lemma
 > 1. **Find a conformal map** $w = f(z)$ of $D_z$ onto a simple domain $D_w$ (half plane, strip, quadrant, disk), using the elementary maps of Chapter 8 and compositions of them.
 > 2. **Transfer the boundary conditions** piece by piece: each piece of $\partial D_z$ goes to a piece of $\partial D_w$ with the same condition (Theorem §117.2). Points where $f$ is not conformal (corners, critical points) are allowed on the boundary, where the conditions change.
 > 3. **Solve the simpler problem** for $h(u, v)$ in $D_w$, usually as the real or imaginary part of an analytic function such as $A\operatorname{Log} w + B$ or $A w + B$.
-> 4. **Compose**: $H(x, y) = h[u(x, y), v(x, y)]$ is harmonic in $D_z$ ([[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]]) and satisfies the original conditions. If needed, find the level curves $H = c$ (isotherms, equipotentials) and the conjugate (heat-flow lines, field lines).
+> 4. **Compose**: $H(x, y) = h[u(x, y), v(x, y)]$ is harmonic in $D_z$ (Theorem §116.1) and satisfies the original conditions. If needed, find the level curves $H = c$ (isotherms, equipotentials) and the conjugate (heat-flow lines, field lines).
 >
 > Chapter 10 carries this out for steady temperatures ([[§119★ Steady Temperatures in a Half Plane|§119]]–[[§121★ Temperatures in a Quadrant|§121]]), electrostatic potentials ([[§123★ Examples (Electrostatic Potential)|§123]]) and flows ([[§126★ Flows Around a Corner and Around a Cylinder|§126]]).
 

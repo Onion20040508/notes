@@ -102,7 +102,7 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 >
 > $e^{iz}/z$ has a simple pole at the origin with residue $1$, and Theorem §89.1 gives $\lim_{\rho\to0}\int_{C_\rho}\frac{e^{iz}}{z}\,dz = -\pi i$.
 >
-> **The large semicircle.** On $C_R$, $|1/z| = 1/R \to 0$, so by Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]], $a = 1$) $\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,dz = 0$. (The bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]], $\frac1R\cdot\pi R = \pi$, would not do.)
+> **The large semicircle.** On $C_R$, $|1/z| = 1/R \to 0$, so by Jordan's lemma ([[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]], $a = 1$) $\lim_{R\to\infty}\int_{C_R}\frac{e^{iz}}{z}\,dz = 0$. (The bound of Theorem §47.2, $\frac1R\cdot\pi R = \pi$, would not do.)
 >
 > **Conclusion.** Letting $\rho \to 0$ in (7) and then $R \to \infty$: $2i\int_0^\infty\frac{\sin r}{r}\,dr = \pi i$, which is (4). The integral at $0$ is proper ($\sin r/r \to 1$), and the limits show that the improper integral at $\infty$ converges (conditionally: $\int_0^\infty|\sin x|/x\,dx = \infty$).
 >

@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§4 Span and Linear Independence#^ladr-2-22|Axler 2.22]], in [[§4 Span and Linear Independence]]
 
-## Its proof uses
+## Proof uses
 - [[Linear dependence lemma|2.19]]
 
 ## Used in (Linear Algebra)

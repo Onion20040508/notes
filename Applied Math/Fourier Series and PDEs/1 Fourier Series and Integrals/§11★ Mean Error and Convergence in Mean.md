@@ -10,7 +10,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 ← [[§10 Operations on Fourier Series]] · ↑ [[· 1 Fourier Series and Integrals]] · [[§12★ Proof of Convergence]] →
 
 *Powers, Section 1.6 · MAT 341 lectures 9.10, 9.12 (remarks).*
-★ *Beyond MAT 341: the course did not cover this section beyond remarks in lectures 9.10 and 9.12; it is included from Powers.*
+★ *Beyond MAT 341: the course did not cover this section; it is included from Powers.*
 
 In practice one always computes with a finite piece of a Fourier series. This section measures how well a finite trigonometric sum approximates $f$ by the mean (integral) square error, and shows that among all trigonometric sums of order $N$ the truncated Fourier series is the best one. Since the error cannot be negative, the coefficients satisfy Bessel's inequality, and in the limit the inequality becomes Parseval's equality: the "energy" $\int f^2$ is the sum of the energies of the harmonics. Consequences are that the coefficients tend to zero and that the Fourier series converges to $f$ in the mean, a third kind of convergence beside the pointwise ([[§8 Convergence of Fourier Series|§8]]) and uniform ([[§9 Uniform Convergence|§9]]) ones, which needs only that $\int f^2$ be finite. This is exactly the Hilbert-space picture of Functional Analysis: the truncated series is an orthogonal projection, and Parseval's equality expresses that the trigonometric functions form a complete orthogonal set.
 
@@ -217,10 +217,6 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 ^pf-11-6
 
 *Uses:* [[§11★ Mean Error and Convergence in Mean#^thm-11-2|§11.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-4|§11.4]], [[§11★ Mean Error and Convergence in Mean#^def-11-2|Def. §11.2]]
-
-> [!remark]- Connections
-> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]], with the Fourier basis as [[§31 The Completeness Relation#^ex-31-2|556 Ex. §31.2]].
-> - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral ([[Riesz–Fischer Theorem]], 551) but not for the Riemann integral.
 
 > [!remark] Remark: Summary
 > If $f$ is defined on $-a < x < a$ and $\int_{-a}^{a}f^2\,dx$ is finite, then:

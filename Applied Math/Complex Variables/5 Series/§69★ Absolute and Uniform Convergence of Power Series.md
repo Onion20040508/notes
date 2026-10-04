@@ -209,7 +209,7 @@ In general $N_\varepsilon$ depends on $z$ as well as on $\varepsilon$.
 ^ex-69-2
 
 > [!example] Example §69.3: The Two Extreme Cases
-> **$\sum_{n=0}^{\infty}n!\,z^n$ converges only at $z = 0$.** For $z \ne 0$ the ratio of consecutive terms is $(n + 1)|z| \to \infty$, so $|n!\,z^n| \to \infty$ and the series diverges by [[§61 Convergence of Series#^cor-61-2|Corollary §61.2]]. Theorem §69.1 never applies, and the series has no circle of convergence. Such a series represents no function at all; by [[§63 Proof of Taylor's Theorem#^thm-63-1|Taylor's theorem]] it is not the Taylor series of any function analytic at $0$.
+> **$\sum_{n=0}^{\infty}n!\,z^n$ converges only at $z = 0$.** For $z \ne 0$ the ratio of consecutive terms is $(n + 1)|z| \to \infty$, so $|n!\,z^n| \to \infty$ and the series diverges by Corollary §61.2. Theorem §69.1 never applies, and the series has no circle of convergence. Such a series represents no function at all; by [[§63 Proof of Taylor's Theorem#^thm-63-1|Taylor's theorem]] it is not the Taylor series of any function analytic at $0$.
 >
 > **$\sum_{n=0}^{\infty}z^n/n!$ converges at every point.** Here $R = \infty$ ([[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]], the series of $e^z$), and Theorem §69.3, applied with $z_1$ of any modulus, gives uniform convergence on every closed disk $|z| \le R_1$. The convergence is not uniform on the whole plane: for real $z = x > 0$ the remainder $\rho_N(x) \ge x^N/N!$ is unbounded in $x$.
 >

@@ -14,9 +14,6 @@ tags: [complex-variables, hub]
 - [[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1: Modulus and the Real and Imaginary Parts]]
 - [[§19 Derivatives#^def-19-1|Definition §19.1: Derivative]]
 
-## Its proof uses (other subjects)
-- [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3: Mean Value Theorem]]
-
 ## Used in (Complex Variables)
 - [[§23 Sufficient Conditions for Differentiability#^cor-23-2|Corollary §23.2: Real Differentiability Plus Cauchy–Riemann]]
 - [[§24★ Polar Coordinates#^prop-24-1|Proposition §24.1: Polar Form of the Cauchy–Riemann Equations]]
@@ -32,5 +29,5 @@ tags: [complex-variables, hub]
 - [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4: Existence of Harmonic Conjugates]]
 
 ## Connections
-- Step 1 of the [[§23 Sufficient Conditions for Differentiability#^pf-23-1|proof of Theorem §23.1]] is the theorem that continuous partials imply differentiability, [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] (stated there for partials continuous on an open set; that proof needs continuity only at the point). Its equations (2)–(3) say that $u$ and $v$ are differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
+- Step 1 is the theorem that continuous partials imply differentiability, [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] (stated there for partials continuous on an open set; the proof above needs continuity only at the point). Equations (2)–(3) say that $u$ and $v$ are differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
 - With $f'(z_0) = a + ib$, the Cauchy–Riemann equations say that the Jacobian matrix of $(u, v)$ at $(x_0, y_0)$ is $\begin{bmatrix} u_x & u_y \\ v_x & v_y \end{bmatrix} = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$, a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the linear part of $\Delta w$ is multiplication by $f'(z_0)$, a rotation through $\arg f'(z_0)$ followed by a stretch by $|f'(z_0)|$. This is the geometric content of complex differentiability, and the source of conformality in Ch. 9.

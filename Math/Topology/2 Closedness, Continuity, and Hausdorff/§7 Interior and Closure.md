@@ -3,7 +3,6 @@ type: section
 subject: "[[Topology]]"
 chapter: 2
 section: 7
-munkres: "§17"
 tags: [topology, math590]
 ---
 ← [[§6 Closed Sets and Limit Points]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§8 Hausdorff Spaces]] →

@@ -99,7 +99,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-10-2
 
 > [!proof]+ Proof
-> (4) is elementary: if $\sigma(i) = i$ for all $i \neq j$, then $\sigma(j)$ must be the one remaining value $j$, since $\sigma$ is injective. (1)–(3) are proved in MATH 493 ([[§21 The Sign Homomorphism and the Alternating Group|493 §21]]; also Dummit–Foote §3.5); the standard route is to let $\sigma$ act on the polynomial $\Delta = \prod_{i<j}(x_i - x_j)$ by permuting variables, observe that $\sigma \cdot \Delta = \operatorname{sgn}(\sigma)\,\Delta$ with $\operatorname{sgn}$ as in [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Definition §10.3]], and read off (1) from the fact that this is a group action; (2) is a direct count; (3) follows from (1) and (2) once one knows transpositions generate $S_n$.
+> (4) is elementary: if $\sigma(i) = i$ for all $i \neq j$, then $\sigma(j)$ must be the one remaining value $j$, since $\sigma$ is injective. (1)–(3) are proved in MATH 493 (Dummit–Foote §3.5); the standard route is to let $\sigma$ act on the polynomial $\Delta = \prod_{i<j}(x_i - x_j)$ by permuting variables, observe that $\sigma \cdot \Delta = \operatorname{sgn}(\sigma)\,\Delta$ with $\operatorname{sgn}$ as in [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Definition §10.3]], and read off (1) from the fact that this is a group action; (2) is a direct count; (3) follows from (1) and (2) once one knows transpositions generate $S_n$.
 
 ^pf-10-2
 
@@ -170,7 +170,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|§23.5]].
 
-The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$ are collected in [[§15 The Classical Groups|§15]]; $\mathrm{U}(1) = S^1$ is [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|Example §10.3]] below.
+The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 The Classical Groups|§15]].
 
 > [!definition] Definition §10.5: Special Linear Group
 > $\mathrm{SL}(n,\mathbb{R}) = \det^{-1}(1) \subseteq \mathrm{GL}(n,\mathbb{R})$, the matrices of determinant $1$. It is a subgroup ($\det$ is multiplicative), hence a topological group with the subspace topology ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|Proposition §10.1]]), and it is closed in $\operatorname{Mat}(n,\mathbb{R})$ (preimage of the closed set $\{1\}$).

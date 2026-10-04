@@ -332,7 +332,7 @@ This is more difficult; we do not prove it here.
 > [!remark]- Connections
 > - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]], where finite sets count as countable, so uncountable sets are automatically infinite.
 
-The real line $\mathbb{R}$ is uncountable. This course uses the fact without proof; it is proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]] and, for $[0,1]$, in [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].
+Later we will see that $\mathbb{R}$ is uncountable.
 
 ## Transcendental Numbers
 
@@ -361,7 +361,7 @@ The real line $\mathbb{R}$ is uncountable. This course uses the fact without pro
 > \mathbb{R} = \bigl(\mathbb{R} \cap \overline{\mathbb{Q}}\bigr) \cup \bigl(\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})\bigr).
 > $$
 >
-> The set $\mathbb{R} \cap \overline{\mathbb{Q}}$ consists of the real algebraic numbers, and $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ consists of the real transcendental numbers. Since $\overline{\mathbb{Q}}$ is countable ([[§2 The Set ℚ of Rational Numbers#^thm-2-6|Theorem 2.6]]), so is its subset $\mathbb{R} \cap \overline{\mathbb{Q}}$; and $\mathbb{R}$ is uncountable (not proved in this course; see the Connections below). If $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ were countable (or finite), then $\mathbb{R}$ would be a union of two countable sets, hence countable — a contradiction. Therefore $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ is uncountable; in particular it is infinite.
+> The set $\mathbb{R} \cap \overline{\mathbb{Q}}$ consists of the real algebraic numbers, and $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ consists of the real transcendental numbers. Since $\overline{\mathbb{Q}}$ is countable (Theorem 2.5), so is its subset $\mathbb{R} \cap \overline{\mathbb{Q}}$; and $\mathbb{R}$ is uncountable (to be proved later). If $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ were countable (or finite), then $\mathbb{R}$ would be a union of two countable sets, hence countable — a contradiction. Therefore $\mathbb{R} \setminus (\mathbb{R} \cap \overline{\mathbb{Q}})$ is uncountable; in particular it is infinite.
 
 ^pf-2-7
 

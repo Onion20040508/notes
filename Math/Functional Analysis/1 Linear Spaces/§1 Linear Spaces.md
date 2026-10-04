@@ -7,7 +7,7 @@ tags: [functional-analysis, math556]
 ---
 ↑ [[· 1 Linear Spaces]] · [[§2 Linear Maps, Convexity, and Linear Functionals]] →
 
-*Stage: algebra — Thread: dimension. The vocabulary of the course; only finite sums exist ([[§1 Linear Spaces#Linear Span|§1]]), and the quotient stands in for an orthogonal complement until [[§22 Projection and Orthogonal Decomposition|§22]].*
+*Stage: algebra — Threads: dimension. The vocabulary of the course; only finite sums exist ([[§1 Linear Spaces#Linear Span|§1]]), and the quotient stands in for an orthogonal complement until [[§22 Projection and Orthogonal Decomposition|§22]].*
 
 ## Definition and Examples
 

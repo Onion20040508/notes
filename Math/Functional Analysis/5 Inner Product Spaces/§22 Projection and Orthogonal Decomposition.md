@@ -438,7 +438,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 
 ^pf-22-8
 
-*Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]], [[§20 Definition and Examples#^ex-20-3|Ex. §20.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 §34.3]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]], [[§20 Definition and Examples#^ex-20-3|Ex. §20.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 §34.3]], [[Fundamental Theorem of Calculus|451 §34.4]]
 
 > [!remark]- Connections
 > - The method: [[Functional Analysis Problem-Solving Techniques#^ex-t13|Technique 13]]; the finite-dimensional minimization it rests on: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].

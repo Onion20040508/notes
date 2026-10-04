@@ -139,7 +139,6 @@ Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 
 > [!remark]- Connections
 > - PDE version: [[§30 Solution of the Vibrating String Problem#^def-30-1|341 Def. §30.1]] (standing waves: each mode of a vibrating string oscillates in time as $a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$, a simple harmonic motion with the natural frequencies of [[§30 Solution of the Vibrating String Problem#^def-30-2|341 Def. §30.2]]).
-> - Stewart's spring equation $m\,x'' = -kx$ and its sine–cosine solutions, checked by substitution: [[§57 Modeling with Differential Equations#^def-57-4|Calc Def. §57.4]], [[§57 Modeling with Differential Equations#^prop-57-3|Calc Prop. §57.3]].
 
 > [!definition] Definition §19.3: Natural Frequency, Period, Amplitude, Phase
 > The motion (14) is **simple harmonic motion**: a displaced cosine wave. Its

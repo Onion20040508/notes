@@ -7,7 +7,7 @@ tags: [chapter, group-theory]
 # 7 Conjugacy and the Center
 ↑ [[Group Theory]]
 
-*Source: Worksheet 3 (Wed Sept 9); [[493 Problem Set 3#^hw-3-4|PS 3.4]]–[[493 Problem Set 3#^hw-3-6|3.6]].*
+*Source: Worksheet 3 (Wed Sept 9).*
 
 Conjugation is the action of a group on itself that detects non-commutativity. This chapter computes [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] — in $S_n$ they are [[§33 Conjugacy Classes#^thm-33-3|exactly the cycle types]] — counts them with [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]] to obtain the [[§34 Conjugation as an Action and the Class Equation#^thm-34-4|class equation]], and studies the [[§35 The Center#^def-35-1|center]], including the fact that [[§35 The Center#^thm-35-3|groups of prime-power order have nontrivial center]].
 

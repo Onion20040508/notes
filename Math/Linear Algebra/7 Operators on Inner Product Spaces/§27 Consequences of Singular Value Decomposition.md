@@ -165,7 +165,6 @@ tags: [linear-algebra]
 ^ladr-7-97
 
 > [!remark] Notation 7.98: T(Ω) (p. 288)
-> For a function $T$ defined on $V$ and $\Omega\subseteq V$, $T(\Omega)=\{Tv : v\in\Omega\}$.
 
 ^ladr-7-98
 

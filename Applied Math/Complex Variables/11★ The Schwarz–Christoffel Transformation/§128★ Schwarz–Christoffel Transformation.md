@@ -230,7 +230,7 @@ Given a specific polygon $P$, how many constants in (7) must be determined? Writ
 ^cor-128-5
 
 > [!proof]+ Proof
-> B&C says this "follows from Sec. 127"; here are the details. Apply [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-2|Proposition §127.2]] to the $n$ factors of (8): the argument of the integrand jumps by $k_j\pi$ at $x_j$ for $j = 1, \ldots, n$. For $x > x_n$ it is $\arg A$ and for $x < x_1$ it is $\arg A - (k_1 + \cdots + k_n)\pi = \arg A - 2\pi$, the same direction; so the image of $z = \infty$ is not a vertex ($k_{n+1} = 0$ in (6) of §127). Lemmas §128.1–§128.3 apply with $n + 1$ in place of $n$ and $k_{n+1} = 0$; in particular the integrand is $O(|z|^{-2})$ at infinity, so $F$ has a limit there. The proof of Theorem §128.4 then goes through unchanged, the point at infinity now being an ordinary point of the side through $w_n$ and $w_1$.
+> B&C says this "follows from Sec. 127"; here are the details. Apply Proposition §127.2 to the $n$ factors of (8): the argument of the integrand jumps by $k_j\pi$ at $x_j$ for $j = 1, \ldots, n$. For $x > x_n$ it is $\arg A$ and for $x < x_1$ it is $\arg A - (k_1 + \cdots + k_n)\pi = \arg A - 2\pi$, the same direction; so the image of $z = \infty$ is not a vertex ($k_{n+1} = 0$ in (6) of §127). Lemmas §128.1–§128.3 apply with $n + 1$ in place of $n$ and $k_{n+1} = 0$; in particular the integrand is $O(|z|^{-2})$ at infinity, so $F$ has a limit there. The proof of Theorem §128.4 then goes through unchanged, the point at infinity now being an ordinary point of the side through $w_n$ and $w_1$.
 
 ^pf-128-5
 

@@ -11,12 +11,12 @@ tags: [fourier-series-and-pdes, hub]
 - [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|Theorem §24.2: Convergence of Eigenfunction Expansions]], in [[§24 Expansion in Series of Eigenfunctions]]
 
 ## Its proof uses
-- (Powers omits the proof, and the general case is not proved in the vault. For $s = p = 1$, $q = 0$ it contains the convergence of Fourier sine and cosine series, proved in [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]] and [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]].)
+- (no proof in the notes)
 
 ## Used in (Fourier Series and PDEs)
 - [[§25 Generalities on the Heat Conduction Problem#^thm-25-3|Theorem §25.3: Solution of the General Heat Conduction Problem]]
 - [[§32 One-Dimensional Wave Equation꞉ Generalities#^thm-32-2|Theorem §32.2: Solution of the Generalized Wave Problem]]
 
 ## Connections
-- The mean-square counterpart: the normalized eigenfunctions ([[§24 Expansion in Series of Eigenfunctions#^rem-24-1|Remark: Normalized Eigenfunctions and Parseval's Identity]]) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]], characterized by Parseval's equality in [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].
+- The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]], characterized by Parseval's equality in [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].
 - The uniform-convergence clause has the form of the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], for the series of normalized eigenfunctions, which are uniformly bounded for a regular problem.

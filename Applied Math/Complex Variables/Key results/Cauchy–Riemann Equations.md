@@ -16,9 +16,6 @@ tags: [complex-variables, hub]
 - [[§16 Theorems on Limits#^thm-16-1|Theorem §16.1: Limits of the Real and Imaginary Parts]]
 - [[§19 Derivatives#^def-19-1|Definition §19.1: Derivative]]
 
-## Its proof uses (other subjects)
-- [[§4 Partial Derivatives#^def-4-1|452 §4.1: Partial Derivatives]]
-
 ## Used in (Complex Variables)
 - [[§24★ Polar Coordinates#^prop-24-2|Proposition §24.2: The Derivative in Polar Form]]
 - [[§25 Analytic Functions#^thm-25-3|Theorem §25.3: Zero Derivative on a Domain]]
@@ -42,9 +39,3 @@ tags: [complex-variables, hub]
 
 ## Connections
 - In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]], with Jacobian matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]])
-
-  $$
-  \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix} = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} .
-  $$
-
-  The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of §23 ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], hub: [[Sufficient Conditions for Complex Differentiability]]), where continuity of the partials supplies real differentiability through [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]].

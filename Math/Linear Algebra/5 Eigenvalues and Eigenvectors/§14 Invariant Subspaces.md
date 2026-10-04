@@ -154,12 +154,10 @@ tags: [linear-algebra]
 > - Computational version: [[§32 Eigenvectors and Eigenvalues#^cor-32-4|235 Cor. §32.4]] (an $n\times n$ matrix has at most $n$ distinct eigenvalues).
 
 > [!remark] Notation 5.13: Tᵐ (p. 137)
-> For $T\in\Lin(V)$ and a positive integer $m$, $T^m=T\cdots T$ ($m$ factors); $T^0=I$; and if $T$ is invertible, $T^{-m}=(T^{-1})^m$.
 
 ^ladr-5-13
 
-> [!remark] Notation 5.14: p(T) (p. 137)
-> For $T\in\Lin(V)$ and $p\in\Poly(\F)$ with $p(z)=a_0+a_1z+\dots+a_mz^m$, $p(T)$ is the operator $a_0I+a_1T+\dots+a_mT^m$ on $V$.
+> [!remark] Notation 5.14: P(T) (p. 137)
 
 ^ladr-5-14
 

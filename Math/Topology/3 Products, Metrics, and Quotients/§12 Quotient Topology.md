@@ -265,7 +265,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§5 Quotient Maps#^thm-5-1|591 Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3|591 Cor. §5.3]].
 
 > [!theorem] Corollary §12.4: Induced Bijection from Quotient
-> Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a continuous bijection $f: X^* \to Z$.
+> Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a bijection continuous map $f: X^* \to Z$.
 >
 > Moreover:
 >

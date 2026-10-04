@@ -9,7 +9,7 @@ tags: [calculus, math233]
 ---
 ← [[§109 The Fundamental Theorem for Line Integrals]] · ↑ [[· 16 Vector Calculus]] · [[§111 Curl and Divergence]] →
 
-*Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6(a)).*
+*Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6a).*
 
 Green's Theorem turns a line integral around a simple closed curve $C$ into a double integral over the region $D$ that $C$ bounds. It is the Fundamental Theorem of Calculus one dimension up: an integral of derivatives over $D$ equals boundary values of the original functions, integrated over $\partial D$. It is used in both directions. A line integral that would need several parametrizations becomes one double integral, and an area becomes a line integral around the boundary. Cutting regions into pieces extends it to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in §109 (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
 

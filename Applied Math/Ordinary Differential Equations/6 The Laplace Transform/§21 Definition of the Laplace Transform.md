@@ -174,9 +174,6 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 
 *Uses:* [[§21 Definition of the Laplace Transform#^def-21-2|Def. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-1|Ex. §21.1]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]]
 
-> [!remark]- Connections
-> - For complex $s$ the same comparison, with $\operatorname{Re}s$ in place of $s$, gives absolute convergence for $\operatorname{Re}s > a$; this is where the Bromwich inversion formula of [[§95★ Inverse Laplace Transforms|342 §95★]] starts.
-
 Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise continuous and of exponential order**. Except in [[§25 Impulse Functions|§25]] (BDP 6.5), the chapter deals almost exclusively with such functions.
 
 > [!example] Example §21.2: The Transforms of 1 and of an Exponential

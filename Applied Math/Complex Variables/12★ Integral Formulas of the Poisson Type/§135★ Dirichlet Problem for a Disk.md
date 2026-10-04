@@ -49,7 +49,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 > r^2P_{rr} + rP_r + P_{\theta\theta} = 0 ,
 > $$
 >
-> $U$ satisfies it too. (The vault has no separate proof of the rule for differentiating under the integral sign; here is a direct check that avoids it.) By [[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]](b), $U = \operatorname{Re} G$ with
+> $U$ satisfies it too. (The vault has no separate proof of the rule for differentiating under the integral sign; here is a direct check that avoids it.) By Proposition §134.2(b), $U = \operatorname{Re} G$ with
 >
 > $$
 > G(z) = \frac{1}{2\pi}\int_0^{2\pi}\frac{s + z}{s - z}F(\phi)\,d\phi, \qquad s = r_0e^{i\phi} .
@@ -69,7 +69,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 > |U(r, \theta) - F(\theta)| < \varepsilon \qquad\text{whenever}\qquad 0 < r_0 - r < \delta . \qquad (3)
 > $$
 >
-> By property (f) of [[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]], $F(\theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi - \theta)F(\theta)\,d\phi$, so
+> By property (f) of Proposition §134.2, $F(\theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi - \theta)F(\theta)\,d\phi$, so
 >
 > $$
 > U(r, \theta) - F(\theta) = \frac{1}{2\pi}\int_0^{2\pi}P(r_0, r, \phi - \theta)\big[F(\phi) - F(\theta)\big]\,d\phi .

@@ -9,7 +9,7 @@ tags: [chapter, differentiable-manifolds]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (37), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (60)
 **Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1)
-**Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (47), [[Multivariable Analysis]] (7), [[Group Theory]] (7)
+**Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (47), [[Multivariable Analysis]] (7)
 
 ## Sections
 - [[§31 Local Diffeomorphisms]]

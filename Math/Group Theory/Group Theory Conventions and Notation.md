@@ -33,4 +33,4 @@ tags: [group-theory, math493]
 | $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§42 The Second and Third Isomorphism Theorems#^def-42-1\|Def. §42.1]] |
 | $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§40 Quotient Groups#^def-40-2\|Def. §40.2]] |
 | $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-4\|§40.4]] |
-| *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]], [[493 Problem Set 4\|PS 4]] |
+| *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |

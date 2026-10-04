@@ -35,9 +35,9 @@ This section collects the six Maclaurin series that the rest of the course uses 
 > [!proof]+ Proof
 > **(1)** (B&C's Example 1; the series was already summed directly in [[§61 Convergence of Series#^ex-61-1|Example §61.1]].) The only singular point of $f(z) = 1/(1 - z)$ in the finite plane is $z = 1$, so by Taylor's theorem ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]) its Maclaurin series converges to $f(z)$ when $|z| < 1$. By induction, $f^{(n)}(z) = n!/(1 - z)^{n+1}$ (the step: $\frac{d}{dz}\,n!(1 - z)^{-n-1} = (n + 1)!(1 - z)^{-n-2}$), so $f^{(n)}(0) = n!$ for $n = 0, 1, 2, \ldots$, and $a_n = 1$.
 >
-> **(2)** (B&C's Example 2.) $f(z) = e^z$ is entire, $f^{(n)}(z) = e^z$, and $f^{(n)}(0) = 1$, so $a_n = 1/n!$ and the series converges to $e^z$ for every $z$.
+> **(2)** (Example 2.) $f(z) = e^z$ is entire, $f^{(n)}(z) = e^z$, and $f^{(n)}(0) = 1$, so $a_n = 1/n!$ and the series converges to $e^z$ for every $z$.
 >
-> **(3)** (B&C's Example 3.) Use the definition $\sin z = (e^{iz} - e^{-iz})/(2i)$ ([[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]]) and expansion (2) with $z$ replaced by $iz$ and by $-iz$. By [[§61 Convergence of Series#^prop-61-4|Proposition §61.4]] the two series may be subtracted term by term:
+> **(3)** (Example 3.) Use the definition $\sin z = (e^{iz} - e^{-iz})/(2i)$ ([[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]]) and expansion (2) with $z$ replaced by $iz$ and by $-iz$. By [[§61 Convergence of Series#^prop-61-4|Proposition §61.4]] the two series may be subtracted term by term:
 >
 > $$
 > \sin z = \frac{1}{2i}\Big(\sum_{n=0}^{\infty}\frac{(iz)^n}{n!} - \sum_{n=0}^{\infty}\frac{(-iz)^n}{n!}\Big) = \frac{1}{2i}\sum_{n=0}^{\infty}\big(1 - (-1)^n\big)\frac{i^nz^n}{n!} \qquad (|z| < \infty) .
@@ -51,7 +51,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > Inasmuch as $1 - (-1)^{2n+1} = 2$ and $i^{2n+1} = (i^2)^ni = (-1)^ni$, this reduces to (3).
 >
-> **(4)** (B&C's Example 4.) Differentiate (3) term by term, which is justified by [[§71★ Integration and Differentiation of Power Series#^thm-71-4|Theorem §71.4]], at every $z$ (the circle of convergence of (3) is infinite):
+> **(4)** (Example 4.) Differentiate (3) term by term, which is justified by [[§71★ Integration and Differentiation of Power Series#^thm-71-4|Theorem §71.4]], at every $z$ (the circle of convergence of (3) is infinite):
 >
 > $$
 > \cos z = \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n + 1)!}\frac{d}{dz}z^{2n+1} = \sum_{n=0}^{\infty}(-1)^n\frac{2n + 1}{(2n + 1)!}z^{2n} = \sum_{n=0}^{\infty}(-1)^n\frac{z^{2n}}{(2n)!} \qquad (|z| < \infty) .
@@ -59,7 +59,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > ([[§64 Examples (Proof of Taylor's Theorem)#^ex-64-4|Example §64.4]] obtains (4) from the exponential series instead, without term-by-term differentiation.)
 >
-> **(5)** (B&C's Example 5.) Since $\sinh z = -i\sin(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (3) and multiply by $-i$:
+> **(5)** (Example 5.) Since $\sinh z = -i\sin(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (3) and multiply by $-i$:
 >
 > $$
 > \sinh z = -i\sum_{n=0}^{\infty}(-1)^n\frac{(iz)^{2n+1}}{(2n + 1)!} = \sum_{n=0}^{\infty}\frac{z^{2n+1}}{(2n + 1)!} \qquad (|z| < \infty) ,
@@ -67,7 +67,7 @@ This section collects the six Maclaurin series that the rest of the course uses 
 >
 > because $(iz)^{2n+1} = (-1)^niz^{2n+1}$ and $-i\cdot(-1)^n\cdot(-1)^ni = 1$.
 >
-> **(6)** (B&C's Example 6.) Since $\cosh z = \cos(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (4): $(iz)^{2n} = (-1)^nz^{2n}$, so
+> **(6)** (Example 6.) Since $\cosh z = \cos(iz)$ ([[§39★ Hyperbolic Functions#^prop-39-2|Proposition §39.2]]), replace $z$ by $iz$ in (4): $(iz)^{2n} = (-1)^nz^{2n}$, so
 >
 > $$
 > \cosh z = \sum_{n=0}^{\infty}(-1)^n\frac{(iz)^{2n}}{(2n)!} = \sum_{n=0}^{\infty}\frac{z^{2n}}{(2n)!} \qquad (|z| < \infty) .

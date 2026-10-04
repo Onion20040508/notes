@@ -144,7 +144,7 @@ In the [[§16 Line Integrals and Green's Theorem|previous section]] we derived [
 
 ^pf-17-1
 
-*Uses:* [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[§15 Multivariable Integration#^thm-15-3|§15.3]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[Surface Area via the Gram Matrix|§18.1]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[§15 Multivariable Integration#^thm-15-3|§15.3]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark]- Connections
 > - $n = 1$ is the [[Fundamental Theorem of Calculus]]; $n = 2$ is [[§16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2]]; the $\mathbb{R}^3$ version with parametrized surfaces is [[Divergence Theorem in ℝ³|Theorem §18.2]].
@@ -168,7 +168,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > - Computational version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (the potential equation $\nabla^2u=0$ and harmonic functions, solved by separation of variables in rectangles and disks); the five-point difference approximation of the Laplacian, [[§58★ Potential Equation#^def-58-1|341 Def. §58.1]].
 > - Computational version: [[§27★ Harmonic Functions#^def-27-1|342 Def. §27.1]] (harmonic functions of two variables, Δu = 0, with worked examples) and [[§116★ Transformations of Harmonic Functions#^prop-116-2|342 Prop. §116.2]] (the Laplacian under an analytic change of variables is multiplied by |f′|²).
 
-### Green's First Identity
+## Green's First Identity
 
 > [!theorem] Theorem §17.2: Green's First Identity
 > Let $D \subseteq \mathbb{R}^n$ be a bounded domain with piecewise smooth boundary. If $u \in C^1(\overline{D})$ and $v \in C^2(\overline{D})$, then:
@@ -247,7 +247,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^rem-17-1
 
-### Green's Second Identity
+## Green's Second Identity
 
 > [!theorem] Theorem §17.3: Green's Second Identity
 > Let $D \subseteq \mathbb{R}^n$ be a bounded domain with piecewise smooth boundary. If $u, v \in C^2(\overline{D})$, then:
@@ -299,7 +299,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 > - Finite-dimensional model: an operator $T$ with $\langle Tu, v\rangle = \langle u, Tv\rangle$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]) has an orthonormal eigenbasis by the [[Real spectral theorem]]; Green's second identity with vanishing boundary terms is the analogous statement for $\Delta$ with the $L^2$ inner product.
 > - One-dimensional version: the Sturm–Liouville operator is symmetric in the same way, [[§23 Sturm–Liouville Problems#^rem-23-3|341 Remark §23.3]], which makes its eigenfunctions orthogonal, [[§23 Sturm–Liouville Problems#^thm-23-2|341 Thm. §23.2]].
 
-### Applications of Green's Identities
+## Applications of Green's Identities
 
 > [!example] Example §17.1: Uniqueness for the Dirichlet Problem
 > **Claim:** If $\Delta u_1 = \Delta u_2$ on $D$ and $u_1 = u_2$ on $\partial D$, then $u_1 = u_2$ on $D$.
@@ -366,7 +366,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 >
 > In each case: *integral of a derivative over a region = integral of the function over the boundary*.
 >
-> In the language of differential forms ([[§21 Introduction to Differential Forms|§21]]–[[§23 The Generalized Stokes' Theorem|§23]]), all of these are special cases of the **[[Generalized Stokes' Theorem|generalized Stokes' theorem]]**: $\displaystyle\int_{\partial \Omega} \omega = \int_\Omega d\omega$.
+> In the language of differential forms (to be covered if time permits), all of these are special cases of the **[[Generalized Stokes' Theorem|generalized Stokes' theorem]]**: $\displaystyle\int_{\partial \Omega} \omega = \int_\Omega d\omega$.
 
 ^rem-17-3
 
@@ -375,7 +375,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ## Physical Application: Conservation of Mass and Laplace's Equation
 
-### Flux and the Continuity Equation
+## Flux and the Continuity Equation
 
 Consider a fluid with density $\rho(x, y, t)$ and velocity field $\mathbf{u}(x, y, t)$. Let $D$ be a fixed region in the plane with boundary $\gamma$.
 
@@ -441,7 +441,7 @@ Therefore, the integrand vanishes pointwise:
 
 This is the **continuity equation**: the local form of conservation of mass.
 
-### Incompressible Flow
+## Incompressible Flow
 
 Assume the fluid has constant density $\rho \equiv 1$ (incompressible). Then $\rho_t = 0$ and $\nabla \cdot (\rho \mathbf{u}) = \nabla \cdot \mathbf{u}$, so the continuity equation reduces to:
 
@@ -449,7 +449,7 @@ $$
 \nabla \cdot \mathbf{u} = 0 \qquad \text{(divergence-free / incompressible)}.
 $$
 
-### Irrotational Flow
+## Irrotational Flow
 
 An additional physical condition: the flow is **[[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|irrotational]]** (no rotation), meaning:
 
@@ -463,7 +463,7 @@ $$
 \begin{cases} u_x + v_y = 0 & (\text{divergence-free}) \\ v_x - u_y = 0 & (\text{curl-free}) \end{cases}
 $$
 
-### From Potential Functions to Laplace's Equation
+## From Potential Functions to Laplace's Equation
 
 **Physical motivation:** If the flow is driven by a potential (e.g., gravity), there exists a **potential function** $\phi(x,y)$ such that contour lines $\phi(x,y) = c$ are level curves of energy. The gradient $\nabla \phi = (\phi_x, \phi_y)$ points in the direction of increasing energy, and the fluid flows in the *opposite* direction:
 
@@ -505,7 +505,7 @@ This is **Laplace's equation**. A function satisfying $\Delta \phi = 0$ is calle
 
 ^rem-17-5
 
-### Computing $\Delta \phi$ for a Radial Function
+## Computing $\Delta \phi$ for a Radial Function
 
 Let $\phi(x,y) = f(r)$ where $r = \sqrt{x^2 + y^2}$. We compute $\phi_{xx}$ and $\phi_{yy}$ via the [[Multivariable Chain Rule|chain rule]].
 
@@ -553,7 +553,7 @@ $$
 \end{aligned}
 $$
 
-### Solving the Radial ODE
+## Solving the Radial ODE
 
 Setting $\Delta \phi = 0$:
 

@@ -265,7 +265,6 @@ $$
 > [!remark]- Connections
 > - The map $y \mapsto (y(t_0), y'(t_0))$ from the solution space to $\mathbb{R}^2$ is an isomorphism ([[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]]; see the remark below), so the solution space has dimension $2$ ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]), and two linearly independent solutions are automatically a basis ([[§6 Dimension#^ladr-2-38|LADR 2.38]], [[§27 The Dimension of a Vector Space#^thm-27-5|235 Thm. §27.5]]).
 > - Linear independence of functions, such as $\sin t$ and $\cos t$ in $C[0, 1]$: [[§25 Linearly Independent Sets; Bases#^ex-25-1|235 Ex. §25.1]].
-> - Discrete analogue: the solutions of an $n$th-order homogeneous linear difference equation form an $n$-dimensional space, by the same "evaluate the initial values" isomorphism, [[§30 Applications to Difference Equations#^thm-30-5|235 Thm. §30.5]]; the Casoratian plays the role of the Wronskian, and is likewise either never or always zero, [[§30 Applications to Difference Equations#^prop-30-6|235 Prop. §30.6]].
 
 > [!remark] Remark: The Solution Space Is a Two-Dimensional Vector Space
 > The theorems so far fit together into one statement of linear algebra. Let $S$ be the set of all solutions of $L[y] = 0$ on $I$.

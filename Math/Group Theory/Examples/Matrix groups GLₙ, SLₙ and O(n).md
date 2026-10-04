@@ -4,7 +4,7 @@ type: example
 source: "[[Group Theory]]"
 tags: ["math493", "workhorse"]
 ---
-The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a field $k$, with its subgroups $SL_n(k)$ (determinant $1$), $O(n)$ ($A^{\mathsf{T}}A = I$) and $SO(n)$. Alongside $S_n$ it is one of the two fundamental families of non-abelian groups, and it contains copies of essentially every group in the course, since every finite group embeds in some $GL_n(k)$ through permutation matrices. The determinant is the model homomorphism and character: its kernel $SL_n$ is normal, $GL_n/SL_n \cong k^\times$, and conjugacy in $GL_n$ is similarity of matrices. The same groups as topological groups and manifolds (components, smooth structure, tangent spaces at the identity, homogeneous spaces) are in [[Classical groups O(n), U(n), SL(n,ℝ)]] (MATH 591). Its uses in MATH 493:
+The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a field $k$, with its subgroups $SL_n(k)$ (determinant $1$), $O(n)$ ($A^{\mathsf{T}}A = I$) and $SO(n)$. Alongside $S_n$ it is one of the two fundamental families of non-abelian groups, and it contains copies of essentially every group in the course, since every finite group embeds in some $GL_n(k)$ through permutation matrices. The determinant is the model homomorphism and character: its kernel $SL_n$ is normal, $GL_n/SL_n \cong k^\times$, and conjugacy in $GL_n$ is similarity of matrices. Its uses in MATH 493:
 
 - $GL_n(k)$ is a group, non-abelian for $n \geq 2$ ([[§3 Basic Examples of Groups#^def-3-6|§3]])
 - The subgroups $SL_n(k)$, $O(n)$ and $SO(n)$ ([[§3 Basic Examples of Groups#^def-3-7|§3]])

@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§6 Open Quotients#^thm-6-1|Theorem §6.1: Hausdorff Criterion]]
 - [[§6 Open Quotients#^thm-6-3|Theorem §6.3: Second Countability of Open Quotients]]
 - [[§9 Complex Projective Space#^def-9-1|Definition §9.1: Complex Projective Space ℂPⁿ]]
+- [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4: Compact Group and Compact Hausdorff Space]]
 
 ## Its proof uses (other subjects)
 - [[Compact Subspace of a Hausdorff Space is Closed]] (Topology)

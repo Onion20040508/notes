@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|Axler 8.46]], in [[§30 Consequences of Generalized Eigenspace Decomposition]]
 
-## Its proof uses
+## Proof uses
 - [[Generalized eigenspace decomposition|8.22]], [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45]]
 
 ## Connections

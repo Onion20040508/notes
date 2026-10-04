@@ -67,7 +67,7 @@ Boundedness is the basic beginning; the existence of max and min is very importa
 > - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous function on a closed bounded region of ℂ is bounded and its modulus attains a maximum).
 
 > [!remark] Remark: Toward optimization
-> Application (borrowing differentiation from [[· 5 Differentiation|Chapter 5]]): if $f$ is moreover differentiable on $(a,b)$ and the max point $x_0$ lies in the open interval $(a,b)$, then $x_0$ is a critical point, $f'(x_0) = 0$. So to find the maximum: find all critical points in $(a,b)$ and compare their values with the values at the endpoints $a, b$. The theorem above is what guarantees this recipe finds something.
+> Application (borrowing differentiation from Part II): if $f$ is moreover differentiable on $(a,b)$ and the max point $x_0$ lies in the open interval $(a,b)$, then $x_0$ is a critical point, $f'(x_0) = 0$. So to find the maximum: find all critical points in $(a,b)$ and compare their values with the values at the endpoints $a, b$. The theorem above is what guarantees this recipe finds something.
 
 ^rem-18-1
 

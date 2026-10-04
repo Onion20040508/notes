@@ -9,8 +9,6 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§33 Submanifolds|§33]]).*
 
-*References: Lee Ch. 4. Lectures 10–11; Assignment 4, Problem 2.*
-
 > [!definition] Definition §32.1: Submersion and Immersion
 > Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{\ast p}$ is onto, and a **submersion** if it is a submersion at every point. $F$ is an **immersion at $p$** if $F_{\ast p}$ is injective, and an **immersion** if it is one at every point.
 >

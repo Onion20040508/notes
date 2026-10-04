@@ -100,7 +100,7 @@ While the theorem of §80 can be extremely useful, the identification of an isol
 > f(z) = \frac{1 - \cos z}{z^3}
 > $$
 >
-> is needed at the singularity $z = 0$, it would be incorrect to write $f = \phi(z)/z^3$ with $\phi(z) = 1 - \cos z$ and to apply [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] with $m = 3$: the theorem requires $\phi(0) \ne 0$, and here $\phi(0) = 0$. The simplest way is to write out a few terms of the Laurent series:
+> is needed at the singularity $z = 0$, it would be incorrect to write $f = \phi(z)/z^3$ with $\phi(z) = 1 - \cos z$ and to apply Theorem §80.1 with $m = 3$: the theorem requires $\phi(0) \ne 0$, and here $\phi(0) = 0$. The simplest way is to write out a few terms of the Laurent series:
 >
 > $$
 > f(z) = \frac{1}{z^3}\Big[1 - \Big(1 - \frac{z^2}{2!} + \frac{z^4}{4!} - \frac{z^6}{6!} + \cdots\Big)\Big] = \frac{1}{z^3}\Big(\frac{z^2}{2!} - \frac{z^4}{4!} + \frac{z^6}{6!} - \cdots\Big) = \frac{1}{2!}\cdot\frac1z - \frac{z}{4!} + \frac{z^3}{6!} - \cdots \qquad (0 < |z| < \infty) .
@@ -114,7 +114,7 @@ While the theorem of §80 can be extremely useful, the identification of an isol
 > f(z) = \frac{1}{z^2\sinh z} .
 > $$
 >
-> Here it would be a mistake to write $f = \phi(z)/z^2$ with $\phi(z) = 1/\sinh z$ and to use [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] with $m = 2$, because $\phi$ is not even defined at $z = 0$. The residue $B = -\frac16$ follows at once from the Laurent series
+> Here it would be a mistake to write $f = \phi(z)/z^2$ with $\phi(z) = 1/\sinh z$ and to use Theorem §80.1 with $m = 2$, because $\phi$ is not even defined at $z = 0$. The residue $B = -\frac16$ follows at once from the Laurent series
 >
 > $$
 > \frac{1}{z^2\sinh z} = \frac{1}{z^3} - \frac16\cdot\frac1z + \frac{7}{360}z + \cdots \qquad (0 < |z| < \pi)

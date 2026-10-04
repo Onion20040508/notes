@@ -209,7 +209,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 
 ^pf-51-4
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]] (the extended orthonormal set is independent)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]] (extending an orthonormal set)
 
 > [!definition] Definition §51.2: Singular Value Decomposition; Singular Vectors
 > Any factorization $A = U\Sigma V^T$, with $U$ and $V$ orthogonal, $\Sigma$ as in (3), and positive diagonal entries in $D$, is called a **singular value decomposition** (or **SVD**) of $A$. The columns of $U$ are called **left singular vectors** of $A$, and the columns of $V$ are called **right singular vectors** of $A$.

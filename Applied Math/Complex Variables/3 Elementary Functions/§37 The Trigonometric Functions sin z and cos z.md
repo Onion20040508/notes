@@ -35,7 +35,7 @@ $$
 ^def-37-1
 
 > [!remark]- Connections
-> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]], [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]].
+> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]], [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
 
 > [!theorem] Theorem §37.1: sin z and cos z Are Entire
 > The functions $\sin z$ and $\cos z$ are entire, and
@@ -292,7 +292,7 @@ $$
 ## Examples
 
 > [!example] Example §37.1: Identities Straight from the Exponentials
-> **(a)** $\cos^2z + \sin^2z = 1$ for all complex $z$, directly from (1). Write $a = e^{iz}$, $b = e^{-iz}$, so $ab = e^{iz - iz} = 1$ ([[§30 The Exponential Function#^thm-30-2|Theorem §30.2]]). Then
+> **(a)** $\cos^2z + \sin^2z = 1$ for all complex $z$, directly from (1). Write $a = e^{iz}$, $b = e^{-iz}$, so $ab = e^{iz - iz} = 1$ (Theorem §30.2). Then
 >
 > $$
 > \cos^2z + \sin^2z = \Big(\frac{a + b}{2}\Big)^2 + \Big(\frac{a - b}{2i}\Big)^2 = \frac{(a + b)^2 - (a - b)^2}{4} = \frac{4ab}{4} = 1 .

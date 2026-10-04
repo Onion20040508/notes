@@ -10,7 +10,7 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§26 Singular Value Decomposition#^ladr-7-70|Axler 7.70]], in [[§26 Singular Value Decomposition]]
 
-## Its proof uses
+## Proof uses
 - [[§26 Singular Value Decomposition#^ladr-7-64|7.64]]
 
 ## Connections

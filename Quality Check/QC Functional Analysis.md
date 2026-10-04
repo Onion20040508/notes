@@ -7,10 +7,13 @@ tags: [quality-check]
 # Quality check: Functional Analysis
 ↑ [[Quality Check 2026-10-04]]
 
+> [!note] Record only
+> None of the changes in this log were applied: every note is exactly as it was before the check. Each change below is a **proposal**. The exact text of every proposed change is saved in `Quality Check/proposed-edits.patch` (see [[Quality Check 2026-10-04]]).
+
 ## Summary
 Functional Analysis (MATH 556, in progress) is in good shape: all 33 section notes have the same header pattern, continuous numbering, block IDs on every numbered box and *Uses:* lines after the proofs. Every link alias in the subject was checked against the block it points to. Every hub was compared with its section note's *Uses:* line, and a share of the proofs and computations was checked by hand. Most of the work was stale "§N.M" labels left over from an older numbering (six, one of them a proof title) and LaTeX names that had been stripped badly in the hub titles. Two hubs disagreed with their proof's *Uses:* line and were aligned. The Lax–Milgram hub now says plainly that the proof is still to come. The course log contradicted itself about Thm. §26.5(2) and now does not. No mathematics needed correcting, and no placeholder proof was filled in.
 
-## Edits made
+## Proposed edits (not applied)
 ### Correctness (labels and references)
 - [[Lax–Milgram Theorem]] — plan of the proof cited Bounded Sesquilinear Forms Are Bounded Operators as "§23.1"; now "§28.1".
 - [[Functional Analysis Course Log]] — Lecture 10 row labelled the link to `^pf-26-5-2` "Thm. §21.5 (2)"; now "Thm. §26.5 (2)".

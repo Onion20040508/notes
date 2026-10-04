@@ -10,8 +10,8 @@ tags: [linear-algebra, hub]
 ## Treated in
 - [[§20 Orthonormal Bases#^ladr-6-32|Axler 6.32]], in [[§20 Orthonormal Bases]]
 
-## Its proof uses
-- [[§20 Orthonormal Bases#^ladr-6-25|6.25]], [[§6 Dimension#^ladr-2-39|2.39]]
+## Proof uses
+- [[§20 Orthonormal Bases#^ladr-6-25|6.25]]
 
 ## Used in (Linear Algebra)
 - [[§20 Orthonormal Bases#^ladr-6-35|6.35 Existence of orthonormal basis]]

@@ -105,7 +105,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > \lim_{N\to\infty}\rho_N(z) = 0 \qquad\text{and}\qquad \lim_{N\to\infty}\sigma_N(z) = 0 . \qquad (6)
 > $$
 >
-> By (4), the series $\sum_{n \ge 0}a_nz^n$ therefore converges to $\frac{1}{2\pi i}\int_{C_2}\frac{f(s)\,ds}{s - z}$, and the series $\sum_{n \ge 1}b_n/z^n$ converges to $\frac{1}{2\pi i}\int_{C_1}\frac{f(s)\,ds}{z - s}$. (B&C adds the two expansions into one equation; keeping them apart shows that each series converges separately, as [[§66 Laurent Series#^def-66-1|Definition §66.1]] requires.) By (1), their sum is $f(z)$:
+> By (4), the series $\sum_{n \ge 0}a_nz^n$ therefore converges to $\frac{1}{2\pi i}\int_{C_2}\frac{f(s)\,ds}{s - z}$, and the series $\sum_{n \ge 1}b_n/z^n$ converges to $\frac{1}{2\pi i}\int_{C_1}\frac{f(s)\,ds}{z - s}$. (B&C adds the two expansions into one equation; keeping them apart shows that each series converges separately, as Definition §66.1 requires.) By (1), their sum is $f(z)$:
 >
 > $$
 > f(z) = \sum_{n=0}^{\infty}a_nz^n + \sum_{n=1}^{\infty}\frac{b_n}{z^n} .

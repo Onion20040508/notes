@@ -108,7 +108,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 *The proof of FTC1. The blue region is $g(x)$, and the red strip is $g(x + h) - g(x) = \int_x^{x+h} f(t)\,dt$. It contains the rectangle of height $m = f(u)$ and lies inside the rectangle of height $M = f(v)$ over $[x, x + h]$, so the difference quotient lies between $f(u)$ and $f(v)$. As $h \to 0$ both $u$ and $v$ are squeezed to $x$.*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (hub [[Fundamental Theorem of Calculus]]). The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
+> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]. The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
 > - Lebesgue version, with no continuity at all: $g' = f$ almost everywhere, [[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]].
 
 > [!example] Example §36.1: Differentiating Integrals with Variable Upper Limits
@@ -193,7 +193,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 *Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-1|§36.1]], [[§26 The Mean Value Theorem#^cor-26-4|§26.4]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (hub [[Fundamental Theorem of Calculus]]). The numbering is swapped there: Stewart's Part 2 is 451's *FTC I* (and Stewart's Part 1 is 451's *FTC II*). It assumes only that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
+> - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]. The numbering is swapped there: Stewart's Part 2 is 451's *FTC I* (and Stewart's Part 1 is 451's *FTC II*). It assumes only that $F$ is continuous on $[a, b]$ and differentiable on $(a, b)$ with integrable derivative, and proves it directly from the Mean Value Theorem on each subinterval. Stewart's route through Part 1, which needs $f$ continuous, is [[§34 Fundamental Theorem of Calculus#^ex-34-1|451 Ex. §34.1]].
 > - Lebesgue version: $F(x) - F(a) = \int_a^x F'$ exactly for absolutely continuous $F$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
 
 > [!remark] Remark: Why Part 2 Is Plausible

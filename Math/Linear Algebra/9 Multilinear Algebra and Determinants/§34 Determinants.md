@@ -8,7 +8,7 @@ tags: [linear-algebra]
 ---
 ← [[§33 Alternating Multilinear Forms]] · ↑ [[· 9 Multilinear Algebra and Determinants]] · [[§35 Tensor Products]] →
 
-> [!definition] Definition 9.40: $\alpha_T$
+> [!definition] Definition 9.40: ΑT
 > For $T\in\Lin(V)$ and $\alpha\in V^{(m)}_{\mathrm{alt}}$, define $\alpha_T\in V^{(m)}_{\mathrm{alt}}$ by $\alpha_T(v_1,\dots,v_m)=\alpha(Tv_1,\dots,Tv_m)$. The map $\alpha\mapsto\alpha_T$ is linear on $V^{(m)}_{\mathrm{alt}}$.
 
 ^ladr-9-40
@@ -151,7 +151,6 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Computational version: [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (proved by row reduction).
 > - Computational version: [[§28 Matrices#^thm-28-3|331 Thm. §28.3]], with the cofactor formula for the inverse ([[§28 Matrices#^ex-28-3|331 Ex. §28.3]]).
-> - A nonzero Jacobian determinant (an invertible derivative) is the hypothesis of the [[Inverse Function Theorem (several variables)|452 Thm. §13.2]] and the [[Implicit Function Theorem|452 Thm. §12.1]].
 
 > [!theorem] Theorem 9.51: Eigenvalues and determinants
 > $\lambda$ is an eigenvalue of $T$ iff $\det(\lambda I-T)=0$.
@@ -215,9 +214,9 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > (a) $\alpha(v_1,\dots,v_n)=\det\big(\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}^t\big)$ is $n$-linear by [[§34 Determinants#^ladr-9-46|9.46]]. It is alternating: if $v_j=v_k$ the matrix $\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}^t$ has two equal rows, so $\big(\cdots\big)^tB$ never equals $I$; the matrix is not invertible and its determinant is $0$ ([[Invertible ⟺ nonzero determinant|9.50]]). It takes the value $1$ on the standard basis, so by [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]] it equals $\det\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}$.
 >
-> (b) $\mathcal{M}(T')=\mathcal{M}(T)^t$ in dual bases ([[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]]); use (a) and [[§34 Determinants#^ladr-9-53|9.53]]. (c) In an orthonormal basis $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^t$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]); conjugating every entry conjugates the Leibniz sum; use (a).
+> (b) $\mathcal{M}(T')=\mathcal{M}(T)^t$ in dual bases ([[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]]); use (a) and [[§34 Determinants#^ladr-9-53|9.53]]. (c) In an orthonormal basis $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^t$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]); conjugating every entry conjugates the Leibniz sum; use (a).
 
-*Uses:* [[§34 Determinants#^ladr-9-46|9.46]], [[Invertible ⟺ nonzero determinant|9.50]], [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]], [[§12 Duality#^ladr-3-132|3.132]], [[§34 Determinants#^ladr-9-53|9.53]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
+*Uses:* [[§34 Determinants#^ladr-9-46|9.46]], [[Invertible ⟺ nonzero determinant|9.50]], [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]], [[§34 Determinants#^ladr-9-53|9.53]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
 
 > [!remark]- Connections
 > - Computational version: [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]] ($\det A^T=\det A$).
@@ -310,7 +309,6 @@ tags: [linear-algebra]
 > - The Jacobian in the change-of-variables formula $\int_{T(\Omega)}f=\int_\Omega(f\circ T)|\det DT|$; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16).
 > - The case n = 3 with worked examples: [[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]]; for nonlinear maps the factor |det| becomes the Jacobian in [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Calc Thm. §106.1]].
 > - Computational version: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|235 Thm. §22.5]] and [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (the cases $n=2,3$).
-> - Rigorous multivariable version: the linear case is [[§15 Multivariable Integration#^prop-15-19|452 Prop. §15.19]], and the nonlinear one is the [[Change of Variables Formula (multiple integrals)|452 Thm. §15.17]]. For Lebesgue measure, linear maps send null sets to null sets, [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]].
 
 %% ex:9.61-fig %%
 > [!example] Example: Determinant as signed volume

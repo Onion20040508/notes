@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, hub]
 - [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3: Continuous, Sectionally Smooth Functions]], in [[§9 Uniform Convergence]]
 
 ## Its proof uses
-- (Powers omits the proof. [[§9 Uniform Convergence#^rem-9-2|Remark: Where Theorem §9.3 Comes From]], not from Powers, derives it from [[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]], [[§10 Operations on Fourier Series#^thm-10-6|Theorem §10.6]], [[§11★ Mean Error and Convergence in Mean#^thm-11-3|Theorem §11.3]] (Bessel's inequality) and [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].)
+- (no proof in the notes)
 
 ## Used in (Fourier Series and PDEs)
 - [[§7 Arbitrary Period and Half-Range Expansions#^ex-7-4|Example §7.4: Odd and Even Extensions of x²]]

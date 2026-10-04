@@ -46,9 +46,6 @@ Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{
 
 *Uses:* [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]] (Hermitian matrices), [[§33★ Fundamental Matrices#^thm-33-7|§33.7]]
 
-> [!remark]- Connections
-> - In Lay's terms the geometric multiplicity of an eigenvalue is at most its algebraic multiplicity, [[§34 Diagonalization#^thm-34-3|235 Thm. §34.3]](a), and the hypothesis here is the case of equality; when this holds for every eigenvalue, $\mathbf{A}$ is diagonalizable ([[§34 Diagonalization#^thm-34-3|235 Thm. §34.3]](b)) and the eigenvector solutions form a fundamental set.
-
 If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eigenvectors, and then fewer than $m$ solutions of the form $\boldsymbol{\xi}e^{\rho t}$; other solutions must be found.
 
 > [!example] Example §34.1: A Double Eigenvalue with Only One Eigenvector

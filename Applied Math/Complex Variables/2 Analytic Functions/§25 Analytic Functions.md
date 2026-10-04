@@ -56,7 +56,7 @@ A function differentiable at a single point, or along a curve, has no useful str
 > (f + g)'(z) = f'(z) + g'(z), \qquad (fg)'(z) = f(z)g'(z) + f'(z)g(z) .
 > $$
 >
-> If moreover $g(z) \ne 0$, the quotient rule of [[§20 Rules for Differentiation#^thm-20-2|Theorem §20.2]] gives
+> If moreover $g(z) \ne 0$, the quotient rule of Theorem §20.2 gives
 >
 > $$
 > \Big(\frac fg\Big)'(z) = \frac{g(z)f'(z) - f(z)g'(z)}{[g(z)]^2} .
@@ -100,7 +100,7 @@ The following property of analytic functions is especially useful, in addition t
 > [!proof]+ Proof
 > Write $f(z) = u(x, y) + iv(x, y)$.
 >
-> **All partial derivatives vanish.** Since $f'(z) = 0$ in $D$, the formula $f'(z) = u_x + iv_x$ of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] gives $u_x + iv_x = 0$; and, in view of the Cauchy–Riemann equations, $v_y - iu_y = 0$ (this is the formula $f'(z_0) = v_y - iu_y$ of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]). Consequently
+> **All partial derivatives vanish.** Since $f'(z) = 0$ in $D$, the formula $f'(z) = u_x + iv_x$ of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] gives $u_x + iv_x = 0$; and, in view of the Cauchy–Riemann equations, $v_y - iu_y = 0$ (this is the formula $f'(z_0) = v_y - iu_y$ of Theorem §21.1). Consequently
 >
 > $$
 > u_x = u_y = 0 \qquad\text{and}\qquad v_x = v_y = 0

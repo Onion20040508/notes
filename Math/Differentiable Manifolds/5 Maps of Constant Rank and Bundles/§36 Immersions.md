@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 
-*References: Lee Ch. 4. Lectures 13–14.*
+*References: Lee Ch. 4. Lecture 13.*
 
 The third special type of map, dual to the submersions of [[§32 Submersions|§32]]: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
 
@@ -83,7 +83,7 @@ The third special type of map, dual to the submersions of [[§32 Submersions|§3
 
 ^pf-36-1
 
-*Uses:* [[§36 Immersions#^def-36-1|Def. §36.1]], [[§18 Smooth Functions and Smooth Maps#^def-18-1|Def. §18.1]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§32 Submersions#^thm-32-4|§32.4]] (steps 4 and 8 of its proof), [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]], [[§16 Differentiable Structures#^def-16-3|Def. §16.3]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
+*Uses:* [[§36 Immersions#^def-36-1|Def. §36.1]], [[§18 Smooth Functions and Smooth Maps#^def-18-1|Def. §18.1]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§32 Submersions#^thm-32-4|§32.4]] (steps 4 and 8 of its proof), [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 ![[m591-32-1.svg]]
 *The two changes of chart in one diagram, as on the board. On $M$, the chart $\tilde\varphi$ is made from the first $m$ components of $F$, which turns $F$ into the graph $\hat F$; on $N$, the straightening $\Sigma$ removes the graph, so that $\tilde F = \Sigma \circ \hat F$ is the inclusion.*

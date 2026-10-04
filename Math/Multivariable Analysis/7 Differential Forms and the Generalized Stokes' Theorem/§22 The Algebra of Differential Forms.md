@@ -9,7 +9,7 @@ tags: [multivariable-analysis, math452]
 
 ## The Wedge Product
 
-In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]], we discovered that coordinate substitution *forces* the multiplication of differentials to be anti-commutative. We now axiomatize these rules.
+In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]], we discovered that coordinate substitution *forces* the multiplication of differentials to be anti-commutative. We now axiomatize these rules.
 
 > [!remark] Note: Terminology: Properties of Operations
 > An **operation** takes two inputs and produces one output (like $+$ or $\times$). We say an operation $\star$ is:
@@ -108,7 +108,7 @@ The wedge product is the Levi-Civita symbol promoted from a numerical table to a
 
 ^ex-22-1
 
-We can now formalize the computation from [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]]. The key concept is the *pullback*: the operation that translates a form from ambient coordinates to parameter coordinates so that it can be integrated.
+We can now formalize the computation from [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]. The key concept is the *pullback*: the operation that translates a form from ambient coordinates to parameter coordinates so that it can be integrated.
 
 > [!definition] Definition §22.3: Pullback
 > Let $\omega$ be a differential form on $\mathbb{R}^n$, expressed in the **ambient coordinates** $x_1, \ldots, x_n$.
@@ -159,7 +159,7 @@ $$
 \Phi^*(dx_{i_1} \wedge \cdots \wedge dx_{i_k}) = \det \begin{pmatrix} (x_{i_1})_{u_1} & \cdots & (x_{i_1})_{u_k} \\ \vdots & \ddots & \vdots \\ (x_{i_k})_{u_1} & \cdots & (x_{i_k})_{u_k} \end{pmatrix} du_1 \wedge \cdots \wedge du_k.
 $$
 
-That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]]).
+That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
 
 > [!example] Example §22.2: Pullback Along a Curve (Line Integral, §16)
 > Let $\omega = f_1\,dx + f_2\,dy + f_3\,dz$ be a 1-form on $\mathbb{R}^3$, and $\boldsymbol{\gamma}: [a,b] \to \mathbb{R}^3$ a curve with $\boldsymbol{\gamma}(t) = (x(t), y(t), z(t))$.

@@ -53,7 +53,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 > |f_n(x) - f(x)| < \frac{\varepsilon}{b-a}.
 > $$
 >
-> Therefore, using the basic bounds $\left|\int g\right| \leq \int |g|$ and monotonicity of the integral (familiar from calculus; rigorous in [[· 6 Integration|Chapter 6]]),
+> Therefore, using the basic bounds $\left|\int g\right| \leq \int |g|$ and monotonicity of the integral (familiar from calculus; rigorous in Part III),
 >
 > $$
 > \left| \int_a^b f_n - \int_a^b f \right| = \left| \int_a^b (f_n - f) \right| \leq \int_a^b |f_n - f| \leq \int_a^b \frac{\varepsilon}{b-a}\,dx = \varepsilon.

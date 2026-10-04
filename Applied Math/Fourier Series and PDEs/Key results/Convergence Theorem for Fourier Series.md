@@ -9,23 +9,9 @@ tags: [fourier-series-and-pdes, hub]
 
 ## Treated in
 - [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1: Convergence of Fourier Series]], in [[§8 Convergence of Fourier Series]]
-- [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4: Fourier Convergence Theorem]] (period $2\pi$) and [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5: Convergence for Period 2a]], in [[§12★ Proof of Convergence]], where Powers proves it (Section 1.7)
 
 ## Its proof uses
-- (proved as [[§12★ Proof of Convergence#^thm-12-4|Theorem §12.4]] for period $2\pi$, then [[§12★ Proof of Convergence#^cor-12-5|Corollary §12.5]] for period $2a$; their *Uses:* lines combined)
-- [[§6 Periodic Functions and Fourier Series#^prop-6-2|Proposition §6.2: The Integral Over Any Period]]
-- [[§6 Periodic Functions and Fourier Series#^def-6-2|Definition §6.2: Fourier Series; Fourier Coefficients]]
-- [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-1|Proposition §7.1: Fourier Coefficients for Period 2a]]
-- [[§8 Convergence of Fourier Series#^def-8-4|Definition §8.4: Sectionally Smooth Function]]
-- [[§12★ Proof of Convergence#^def-12-1|Definition §12.1: The Dirichlet Kernel]]
-- [[§12★ Proof of Convergence#^lem-12-1|Lemma §12.1: The Kernel Has Integral One]]
-- [[§12★ Proof of Convergence#^lem-12-2|Lemma §12.2: Closed Form of the Kernel]]
-- [[§12★ Proof of Convergence#^lem-12-3|Lemma §12.3: Fourier Coefficients Tend to Zero]]
-
-## Its proof uses (other subjects)
-- [[§30 L'Hospital's Rule#^thm-30-1|Theorem §30.1: L'Hospital's Rule]] (Single Variable Analysis)
-- [[§33 Properties of the Riemann Integral#^thm-33-2|Theorem §33.2: Linearity]] (Single Variable Analysis)
-- [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (Single Variable Analysis)
+- (no proof in the notes)
 
 ## Used in (Fourier Series and PDEs)
 - [[§7 Arbitrary Period and Half-Range Expansions#^ex-7-3|Example §7.3: The Function x on (−1, 1) and on (0, 1)]]

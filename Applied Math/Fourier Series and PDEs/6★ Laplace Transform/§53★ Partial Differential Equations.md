@@ -194,7 +194,6 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 
 > [!remark]- Connections
 > - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the Bromwich integral returns $u$), [[§95★ Inverse Laplace Transforms#^thm-95-3|342 Thm. §95.3]] (it equals the series of residues when $U$ is small on semicircles between the poles) and [[§95★ Inverse Laplace Transforms#^rem-95-1|342 Remark §95.1]] (the semicircle estimate carried out for Example §53.3).
-> - The step "close the line to the left and sum the residues" is the residue theorem, [[§76 Cauchy's Residue Theorem#^thm-76-1|342 Thm. §76.1]], applied to large closed contours.
 
 > [!theorem] Lemma §53.2: Zeros of sinh and cosh
 > For complex arguments the addition formulas hold, and $\cosh(iA) = \cos(A)$, $\sinh(iA) = i\sin(A)$. Hence, for real $\xi$, $\eta$,

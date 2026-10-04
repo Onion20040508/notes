@@ -87,7 +87,7 @@ Once you can compute, [[§23 The Fundamental Group#^cor-23-6|the contrapositive]
 | $\Sigma_2$ (double torus) ([[§28 Fundamental Group of Some Surfaces#^def-28-5\|Def. §28.5]]) | [[§28 Fundamental Group of Some Surfaces#^thm-28-5\|non-abelian]] | [[§28 Fundamental Group of Some Surfaces#^pf-28-5\|Figure eight is a retract]] |
 
 > [!remark] Remark
-> The table collects the spaces computed in the course. Each entry represents a combination of the decision tree steps. The power of algebraic topology is that a small number of tools, applied systematically, computes $\pi_1$ for a large class of spaces.
+> This table will grow as we cover more spaces and tools. Each entry represents a combination of the decision tree steps. The power of algebraic topology is that a small number of tools, applied systematically, computes $\pi_1$ for a large class of spaces.
 
 ^rem-34-1
 
@@ -112,9 +112,9 @@ A common exam question: *find a space $X$ with $\pi_1(X) \cong G$*. The strategy
 
 Multiplying by a simply connected factor does not change $\pi_1$: $\pi_1(X \times S^2) \cong \pi_1(X) \times 0 \cong \pi_1(X)$.
 
-> [!example] Example: Constructing Spaces
+> [!example] Example §35.1: Constructing Spaces
 > 1. $\pi_1 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: use [[§23 The Fundamental Group#^thm-23-7|products]] $\Rightarrow$ $P^2 \times P^2$. Also $P^2 \times P^2 \times S^2$ (adding a [[Sⁿ is Simply Connected for n ≥ 2|simply connected factor]]).
-> 2. $\pi_1 \cong \mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z}$: use [[§29 The Seifert–van Kampen Theorem#^cor-29-2|wedge]] $\Rightarrow$ $P^2 \vee P^2$. Also $(P^2 \vee P^2) \times S^2$ or $P^2 \vee P^2 \vee S^2$.
+> 2. $\pi_1 \cong \mathbb{Z}/2\mathbb{Z} * \mathbb{Z}/2\mathbb{Z}$: use [[§29 The Seifert–van Kampen Theorem#^cor-29-2|wedge]] $\Rightarrow$ $P^2 \vee P^2$. Also $P^2 \vee P^2 \times S^2$ or $P^2 \vee P^2 \vee S^2$.
 > 3. $\pi_1 \cong \mathbb{Z} \times \mathbb{Z}$: $S^1 \times S^1 = T^2$ ([[§23 The Fundamental Group#^cor-23-8|§23.8]]).
 > 4. $\pi_1 \cong \mathbb{Z} * \mathbb{Z} = F_2$: $S^1 \vee S^1$ (figure eight) ([[§29 The Seifert–van Kampen Theorem#^ex-29-2|Ex. §29.2]]).
 > 5. $\pi_1 \cong \mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: $S^1 \times P^2$.

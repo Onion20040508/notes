@@ -11,11 +11,7 @@ tags: [fourier-series-and-pdes, hub]
 - [[§39 Potential in a Disk#^thm-39-3|Theorem §39.3: Poisson Integral Formula]], in [[§39 Potential in a Disk]]
 
 ## Its proof uses
-- [[§15★ Complex Methods]]
 - [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2: Solution of Dirichlet's Problem in a Disk]]
-
-## Its proof uses (other subjects)
-- [[§25 More on Uniform Convergence#^thm-25-3|Theorem §25.3: Weierstrass M-Test]] (Single Variable Analysis)
 
 ## Used in (Fourier Series and PDEs)
 - (not cited later in the course)

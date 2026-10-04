@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 83 · MAT 342 HW 12.*
 
-Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are analytic at $z_0$, $p(z_0) \ne 0$ and $q$ has a zero of order $m$ at $z_0$, then $p/q$ has a pole of order $m$ there ([[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]]), and conversely ([[§83 Zeros and Poles#^prop-83-3|Proposition §83.3]]). For a simple zero of $q$ this gives the most convenient residue formula of all, $\operatorname{Res}_{z=z_0} p/q = p(z_0)/q'(z_0)$ ([[§83 Zeros and Poles#^thm-83-2|Theorem §83.2]]), which needs no factorization of $q$. It handles $\cot z$, $\tan z$, $1/\sin z$ and the roots of polynomials at once, and with the residue theorem it evaluates integrals such as the one that sums $\sum(-1)^{n+1}/n^2 = \pi^2/12$.
+Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are analytic at $z_0$, $p(z_0) \ne 0$ and $q$ has a zero of order $m$ at $z_0$, then $p/q$ has a pole of order $m$ there (Theorem 1), and conversely. For a simple zero of $q$ this gives the most convenient residue formula of all, $\operatorname{Res}_{z=z_0} p/q = p(z_0)/q'(z_0)$ (Theorem 2), which needs no factorization of $q$. It handles $\cot z$, $\tan z$, $1/\sin z$ and the roots of polynomials at once, and with the residue theorem it evaluates integrals such as the one that sums $\sum(-1)^{n+1}/n^2 = \pi^2/12$.
 
 ## Zeros of the Denominator
 
@@ -29,7 +29,7 @@ Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are 
 ^thm-83-1
 
 > [!proof]+ Proof
-> Let $p$ and $q$ be as in the statement. Since $q$ has a zero of order $m$ at $z_0$, [[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]] tells us that
+> Let $p$ and $q$ be as in the statement. Since $q$ has a zero of order $m$ at $z_0$, Theorem 1 of §82 ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]]) tells us that
 >
 > $$
 > q(z) = (z - z_0)^mg(z) ,
@@ -88,7 +88,7 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 ^thm-83-2
 
 > [!proof]+ Proof
-> Assume that $p$ and $q$ are as stated, and observe that because of the conditions on $q$, the point $z_0$ is a zero of order $m = 1$ of that function ([[§82 Zeros of Analytic Functions#^def-82-1|Definition §82.1]]). According to [[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]], then,
+> Assume that $p$ and $q$ are as stated, and observe that because of the conditions on $q$, the point $z_0$ is a zero of order $m = 1$ of that function ([[§82 Zeros of Analytic Functions#^def-82-1|Definition §82.1]]). According to Theorem 1 in §82, then,
 >
 > $$
 > q(z) = (z - z_0)g(z) , \qquad (3)
@@ -121,7 +121,7 @@ There are expressions similar to (2) for residues at poles of higher order, but 
 > 1. **Write $f = p/q$** with $p$, $q$ analytic at $z_0$ (often entire), and find the zeros of $q$.
 > 2. **Check the conditions** $p(z_0) \ne 0$, $q(z_0) = 0$, $q'(z_0) \ne 0$. Then $z_0$ is a simple pole and $\operatorname{Res}_{z=z_0} f = p(z_0)/q'(z_0)$ (Theorem §83.2). No factoring of $q$ is needed, which is the point for $\sin z$, $\cosh z$, $z^n - c$.
 > 3. **Higher-order zeros.** If $q$ has a zero of order $m \ge 2$ and $p(z_0) \ne 0$, the pole has order $m$ (Theorem §83.1); find the residue by [[§80 Residues at Poles#^thm-80-1|Theorem §80.1]] or a Laurent series.
-> 4. **Common zeros.** If $p(z_0) = 0$ too, compare orders: with $p$ of order $k$ and $q$ of order $m$, $p/q = (z - z_0)^{k-m}\cdot(\text{analytic, nonzero})$, so the point is removable if $k \ge m$ and a pole of order $m - k$ if $k < m$ ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]]).
+> 4. **Common zeros.** If $p(z_0) = 0$ too, compare orders: with $p$ of order $k$ and $q$ of order $m$, $p/q = (z - z_0)^{k-m}\cdot(\text{analytic, nonzero})$, so the point is removable if $k \ge m$ and a pole of order $m - k$ if $k < m$ (Theorem §82.1).
 
 ^rem-83-1
 
@@ -236,7 +236,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > $$
 >
 > Explicitly, at $\sqrt{3/2}(1 + i)$, $\sqrt{3/2}(-1 + i)$, $\sqrt{3/2}(-1 - i)$, $\sqrt{3/2}(1 - i)$ the residues are $\frac{1 - i}{4\sqrt6}$, $\frac{-1 - i}{4\sqrt6}$, $\frac{-1 + i}{4\sqrt6}$, $\frac{1 + i}{4\sqrt6}$ (using $\sqrt{3/2}/12 = 1/(4\sqrt6)$).
-> - *Zeros.* $g(z) = z^2\cdot\frac{1}{z^4 + 9}$, where $\frac{1}{z^4 + 9}$ is analytic at $0$ with value $\frac19 \ne 0$. By [[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]], $z = 0$ is a **zero of order $2$**, and it is the only zero.
+> - *Zeros.* $g(z) = z^2\cdot\frac{1}{z^4 + 9}$, where $\frac{1}{z^4 + 9}$ is analytic at $0$ with value $\frac19 \ne 0$. By Theorem §82.1, $z = 0$ is a **zero of order $2$**, and it is the only zero.
 >
 > *Source: 342 HW 12, Problem 1*
 

@@ -65,7 +65,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The same “factor through the quotient” shape: [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem, §41.1]]; in topology, [[Universal Property of Quotient Maps|590 §12.3 (Universal Property of Quotient Maps)]].
-> - Topological upgrade: for a continuous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, [[§13 Homogeneous Spaces#^lem-13-5|591 Lemma §13.5]], [[Homogeneous Spaces Are Coset Spaces|591 Thm. §14.3]].
+> - Topological upgrade: for a continuous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, [[§13 Homogeneous Spaces#^lem-13-5|591 Lemma §13.5]], [[Homogeneous Spaces Are Coset Spaces|591 Thm. §7.8]].
 
 > [!theorem] Theorem §30.3: Orbit–Stabilizer
 > Let $G$ act on $X$ and $x \in X$. Then

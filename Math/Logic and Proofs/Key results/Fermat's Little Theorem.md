@@ -19,7 +19,7 @@ tags: [logic-and-proofs, hub]
 - [[§23 The Sequence of Prime Numbers#^prop-23-4|Proposition §23.4: A Prime Dividing a Product Divides a Factor]]
 
 ## Used in (Logic and Proofs)
-- [[§24★ Congruence Modulo a Prime#^cor-24-2|Corollary §24.2: aᵖ ≡ a for Every Integer]]
+- [[§24★ Congruence Modulo a Prime#^cor-24-2|Corollary §24.2: aᵖ equiv a for Every Integer]]
 - [[§24★ Congruence Modulo a Prime#^prop-24-3|Proposition §24.3: The Order Divides p − 1]]
 
 ## Connections

@@ -7,7 +7,7 @@ tags: [group-theory, math493]
 
 # Toolkit, Standard Examples, and Exam Traps
 
-*Current through the lecture of Fri Oct 2 (computing in $G/N$; the Second Isomorphism Theorem) and Problem Set 4; to be extended before the midterm. Every item points to where it is proved.*
+*Current through the lecture of Fri Sept 25 (quotient groups); to be extended before the midterm. Every item points to where it is proved.*
 
 ## Toolkits
 

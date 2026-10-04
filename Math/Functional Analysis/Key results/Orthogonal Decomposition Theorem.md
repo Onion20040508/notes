@@ -16,7 +16,7 @@ tags: [functional-analysis, hub]
 - [[§22 Projection and Orthogonal Decomposition#^def-22-1|Definition §22.1: Orthogonality; Orthogonal Complement]]
 - [[§22 Projection and Orthogonal Decomposition#^thm-22-2|Theorem §22.2: Closest Point in a Closed Convex Set]]
 - [[§22 Projection and Orthogonal Decomposition#^def-22-2|Definition §22.2: Internal Direct Sum]]
-- [[§22 Projection and Orthogonal Decomposition#^prop-22-3|Proposition §22.3: M^⊥ is a Closed Subspace]]
+- [[§22 Projection and Orthogonal Decomposition#^prop-22-3|Proposition §22.3: M^perp is a Closed Subspace]]
 
 ## Used in (Functional Analysis)
 - [[§22 Projection and Orthogonal Decomposition#^thm-22-6|Theorem §22.6: The Double Complement]]

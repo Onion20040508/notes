@@ -7,7 +7,7 @@ tags: [chapter, group-theory]
 # 4 Homomorphisms and Isomorphisms
 ↑ [[Group Theory]]
 
-*Source: Worksheet 2 and class discussion (Wed Sept 2, Fri Sept 4); Worksheet 3 (Wed Sept 9; WS 3.1, 3.4); [[493 Problem Set 1|PS 1.2–1.4]] and [[493 Problem Set 2#^hw-2-2|PS 2.2]].*
+*Source: Worksheet 2 and class discussion (Wed Sept 2, Fri Sept 4).*
 
 This chapter studies maps that respect the group operation. After multiplication tables (Worksheet 2), a way of seeing a small group whole, it develops homomorphisms with their kernels and images; isomorphisms and the invariants that detect non-isomorphism; the classification of cyclic groups; and constructions from Problem Set 1 — conjugation, pointwise products of homomorphisms, and direct products with their universal property.
 

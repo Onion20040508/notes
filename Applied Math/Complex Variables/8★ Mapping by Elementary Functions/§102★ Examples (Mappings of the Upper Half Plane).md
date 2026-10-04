@@ -59,7 +59,7 @@ The examples here put [[§101★ Mappings of the Upper Half Plane#^thm-101-1|The
 > v = \operatorname{Im} w = \operatorname{Im}\frac{(z - 1)(\bar z + 1)}{(z + 1)(\bar z + 1)} = \frac{\operatorname{Im}\big(z\bar z + z - \bar z - 1\big)}{|z + 1|^2} = \frac{2y}{|z + 1|^2} .
 > $$
 >
-> So $y$ and $v$ have the same sign: points above the $x$ axis go to points above the $u$ axis, and points below to points below. Since the map is one to one from the extended plane onto itself ([[§99★ Linear Fractional Transformations#^thm-99-4|Theorem §99.4]]) and the real axis (with $\infty$) goes onto the real axis (with $\infty$), the upper half plane goes **onto** the upper half plane.
+> So $y$ and $v$ have the same sign: points above the $x$ axis go to points above the $u$ axis, and points below to points below. Since the map is one to one from the extended plane onto itself (Theorem §99.4) and the real axis (with $\infty$) goes onto the real axis (with $\infty$), the upper half plane goes **onto** the upper half plane.
 >
 > *B&C: Sec. 102, Example 2*
 

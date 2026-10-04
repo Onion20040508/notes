@@ -109,7 +109,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > \int_0^x g(t)\,dt = \sum_{n=1}^\infty \frac{n a_n}{n}\, x^{n} = \sum_{n=0}^\infty a_n x^n - a_0 = f(x) - f(0).
 > $$
 >
-> By the **[[Fundamental Theorem of Calculus|Fundamental Theorem of Calculus]]** (used here on credit; proved in [[· 6 Integration|Chapter 6]], §34), the left side is differentiable in $x$ with derivative $g(x)$; hence so is the right side, and $f'(x) = g(x)$. Done.
+> By the **[[Fundamental Theorem of Calculus|Fundamental Theorem of Calculus]]** (used here on credit; proved in Part III), the left side is differentiable in $x$ with derivative $g(x)$; hence so is the right side, and $f'(x) = g(x)$. Done.
 
 ^pf-26-4
 

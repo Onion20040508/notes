@@ -28,7 +28,7 @@ tags: [measure-theory, hub]
 - [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Theorem §17.13: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Used in (Functional Analysis)
-- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ as a Completion]]
+- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]
 
 ## Connections
 - **Proof idea.** On dyadic partitions, the lower and upper step functions φ_k ≤ f ≤ ψ_k are monotone in k (the 451 [[§32 The Definition of the Riemann Integral#^lem-32-2|Refinement Lemma]]), and their integrals tend to the Riemann integral. The decreasing MCT ([[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|§14.14]]) gives ∫(lim ψ_k − lim φ_k) = 0. Then lim φ_k = f = lim ψ_k a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]]), so f is measurable ([[§12 Measurable Functions#^prop-12-12|§12.12]]). The constant sup|f| dominates on [a, b] ([[§15 The General Lebesgue Integral#^ex-15-1|Ex. §15.1]]), so the [[Dominated Convergence Theorem|DCT]] gives ∫ f = lim ∫ φ_k.

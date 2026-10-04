@@ -108,7 +108,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 > [!example] Example §122.3: Two Parallel Planes, Each Split in Half
 > Find the potential $V$ in the space between the planes $y = 0$ and $y = \pi$ when $V = 0$ on the parts of both planes where $x > 0$ and $V = 1$ on the parts where $x < 0$ (B&C's Fig. 170).
 >
-> **Map.** $w = e^z$ maps the strip $0 < y < \pi$ onto the upper half plane ([[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]): on $y = 0$, $x > 0$ goes to $u > 1$ and $x < 0$ to $0 < u < 1$; on $y = \pi$, $x > 0$ goes to $u < -1$ and $x < 0$ to $-1 < u < 0$. So $V = 1$ on $-1 < u < 1$ and $V = 0$ on $|u| > 1$: the problem of [[§119★ Steady Temperatures in a Half Plane#^ex-119-1|Example §119.1]] in the $w$ plane.
+> **Map.** $w = e^z$ maps the strip $0 < y < \pi$ onto the upper half plane ([[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]): on $y = 0$, $x > 0$ goes to $u > 1$ and $x < 0$ to $0 < u < 1$; on $y = \pi$, $x > 0$ goes to $u < -1$ and $x < 0$ to $-1 < u < 0$. So $V = 1$ on $-1 < u < 1$ and $V = 0$ on $|u| > 1$: the problem of Example §119.1 in the $w$ plane.
 >
 > **Compose.** By (6) of §119, $V = \frac1\pi\arctan\big(\frac{2v}{u^2 + v^2 - 1}\big)$ with $u^2 + v^2 = e^{2x}$ and $v = e^x\sin y$:
 >

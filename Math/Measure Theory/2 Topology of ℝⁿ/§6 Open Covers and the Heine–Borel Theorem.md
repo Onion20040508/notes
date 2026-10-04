@@ -135,7 +135,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
-> - Listed as an application of [[Measure Theory Problem-Solving Techniques#^ex-19-8|Technique 1 (Ex. T1, HW1)]].
+> - Listed as an application of [[Measure Theory Problem-Solving Techniques#^ex-19-8|Technique 1 (Ex. §19.8, HW1)]].
 
 > [!theorem] Lemma §6.3
 > For any open ball $B(x, \rho)$ with $\rho > 0$, there exist $r \in \mathbb{Q}^n$ and $k \in \mathbb{N}$ such that $x \in B(r, \frac{1}{k}) \subseteq B(x, \rho)$.
@@ -167,7 +167,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Topology: this is the argument that a separable metric space is second-countable ([[§18 Countability Axioms#^prop-18-4|590 §18.4]] (3)), with $D = \mathbb{Q}^n$ ([[§18 Countability Axioms#^ex-18-8|590 Ex. §18.8]]); so the rational balls form a countable [[§2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
 
-> [!proof]+ Proof of Theorem §6.1 (Countable Subcover)
+> [!proof]+ Proof of Theorem 6.1 (Countable Subcover)
 > Let $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in A}$ be an open cover, i.e., $\bigcup_{\alpha \in A} \mathcal{O}_\alpha = E$ for some set $E$.
 >
 > Let $x \in E$. Then $x \in \mathcal{O}_{\alpha_0}$ for some $\alpha_0 \in A$. Since $\mathcal{O}_{\alpha_0}$ is [[§5 Topology of ℝⁿ#^def-5-2|open]], there exists $\rho > 0$ such that $B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.

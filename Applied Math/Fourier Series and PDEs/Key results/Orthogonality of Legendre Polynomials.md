@@ -12,6 +12,7 @@ tags: [fourier-series-and-pdes, hub]
 
 ## Its proof uses
 - [[§23 Sturm–Liouville Problems#^thm-23-2|Theorem §23.2: Orthogonality of Eigenfunctions (Sturm–Liouville Theorem)]]
+- [[§23 Sturm–Liouville Problems#^ex-23-2|Example §23.2: Bessel's and Legendre's Equations]]
 - [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Definition §49.3: Legendre Polynomials]]
 - [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|Theorem §49.4: Polynomial Solutions of Legendre's Equation]]
 

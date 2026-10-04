@@ -11,7 +11,7 @@ tags: [complex-variables, math342]
 
 *Brown–Churchill, Section 82.*
 
-Zeros and poles are closely related: a zero of order $m$ in a denominator produces a pole of order $m$ ([[§83 Zeros and Poles|§83]]). This section prepares that link with three facts about zeros of analytic functions, all read off from Taylor series. A zero of order $m$ can be factored out as $(z - z_0)^m$, leaving a function that is analytic and nonzero at $z_0$ ([[§82 Zeros of Analytic Functions#^thm-82-1|Theorem §82.1]]); zeros are isolated unless the function vanishes identically near the point ([[§82 Zeros of Analytic Functions#^thm-82-2|Theorem §82.2]]); and a function analytic in a disk that vanishes on a small domain or segment through the center vanishes in the whole disk ([[§82 Zeros of Analytic Functions#^thm-82-3|Theorem §82.3]]). The last fact is the local form of the uniqueness of analytic continuation used in [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]].
+Zeros and poles are closely related: a zero of order $m$ in a denominator produces a pole of order $m$ ([[§83 Zeros and Poles|§83]]). This section prepares that link with three facts about zeros of analytic functions, all read off from Taylor series. A zero of order $m$ can be factored out as $(z - z_0)^m$, leaving a function that is analytic and nonzero at $z_0$ (Theorem 1); zeros are isolated unless the function vanishes identically near the point (Theorem 2); and a function analytic in a disk that vanishes on a small domain or segment through the center vanishes in the whole disk (Theorem 3). The last fact is the local form of the uniqueness of analytic continuation used in [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]].
 
 ## Zeros of Order m
 

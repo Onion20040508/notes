@@ -17,7 +17,7 @@ There are two ways to decide where a function is analytic. A function given by a
 
 > [!remark] Remark: Method — Where Is a Function Analytic?
 > 1. **Formula in $z$** (polynomials, quotients, compositions): by [[§25 Analytic Functions#^prop-25-1|Proposition §25.1]] and [[§25 Analytic Functions#^prop-25-2|Proposition §25.2]] the function is analytic wherever every denominator is nonzero and every inner function lands where the outer one is analytic. The excluded points are the singular points. An expression for $f'(z)$ is needed only if one is actually wanted.
-> 2. **Components $u, v$ given:** compute the four partials, check that they are continuous, and check the Cauchy–Riemann equations. If they hold throughout an open set, $f$ is analytic there and $f' = u_x + iv_x$ ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]]). If they hold only on a curve or at isolated points, $f$ is analytic nowhere ([[§25 Analytic Functions#^ex-25-3|Example §25.3]]).
+> 2. **Components $u, v$ given:** compute the four partials, check that they are continuous, and check the Cauchy–Riemann equations. If they hold throughout an open set, $f$ is analytic there and $f' = u_x + iv_x$ (Theorem §23.1). If they hold only on a curve or at isolated points, $f$ is analytic nowhere ([[§25 Analytic Functions#^ex-25-3|Example §25.3]]).
 > 3. **Higher derivatives:** write $f' = U + iV$ and repeat step 2 (Example §26.2).
 
 ^rem-26-1

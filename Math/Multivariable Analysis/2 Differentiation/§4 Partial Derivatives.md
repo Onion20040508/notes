@@ -75,7 +75,7 @@ tags: [multivariable-analysis, math452]
 > Let $\delta = \min\left(r, \dfrac{\varepsilon}{2M}\right)$. Then for $|(h, k)| < \delta$:
 >
 > $$
-> |f(x_0 + h, y_0 + k) - f(x_0, y_0)| \leq 2M\sqrt{h^2 + k^2} < 2M \cdot \delta \leq \varepsilon.
+> |f(x_0 + h, y_0 + k) - f(x_0, y_0)| \leq 2M \cdot \delta \leq \varepsilon.
 > $$
 >
 > Hence $f$ is [[§3 Continuity and Limits of Functions#^def-3-1|continuous]] at $(x_0, y_0)$.

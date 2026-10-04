@@ -57,7 +57,7 @@ This section evaluates contour integrals straight from the definition $\int_C f(
 > \int_{z_1}^{z_2} z\,dz = \frac{z_2^2 - z_1^2}{2} . \qquad (4)
 > $$
 >
-> Expression (4) is also valid when $C$ is a contour that is not smooth: if $C$ consists of smooth arcs $C_k$ $(k = 1, \ldots, n)$ joined end to end, with $C_k$ from $z_k$ to $z_{k+1}$, then by property (7) of [[§44 Contour Integrals#^thm-44-2|Theorem §44.2]]
+> Expression (4) is also valid when $C$ is a contour that is not smooth: if $C$ consists of smooth arcs $C_k$ $(k = 1, \ldots, n)$ joined end to end, with $C_k$ from $z_k$ to $z_{k+1}$, then by property (7) of Theorem §44.2
 >
 > $$
 > \int_C z\,dz = \sum_{k=1}^{n}\int_{C_k} z\,dz = \sum_{k=1}^{n}\int_{z_k}^{z_{k+1}} z\,dz = \sum_{k=1}^{n}\frac{z_{k+1}^2 - z_k^2}{2} = \frac{z_{n+1}^2 - z_1^2}{2} , \qquad (5)

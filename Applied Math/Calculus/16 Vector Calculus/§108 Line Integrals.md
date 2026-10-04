@@ -9,7 +9,7 @@ tags: [calculus, math233]
 ---
 ← [[§107 Vector Fields]] · ↑ [[· 16 Vector Calculus]] · [[§109 The Fundamental Theorem for Line Integrals]] →
 
-*Stewart, Section 16.2 · MATH 233 (UMass, Spring 2023): Chapter 16 Review (Q6(b)), Practice Final Exam (Q3).*
+*Stewart, Section 16.2 · MATH 233 (UMass, Spring 2023): Chapter 16 Review (Q6b), Practice Final Exam (Q3).*
 
 A line integral is like a single integral, except that the interval $[a, b]$ is replaced by a curve $C$. There are two kinds. The line integral of a scalar function with respect to arc length, $\int_C f\,ds$, weights each bit of the curve by its length; it gives the mass of a wire or the area of a curtain over $C$. The line integral of a vector field, $\int_C \mathbf{F} \cdot d\mathbf{r}$, adds up the component of $\mathbf{F}$ along the direction of travel; it is the work done by a force field. Both are computed the same way: parametrize $C$ and turn the line integral into an ordinary integral in the parameter. The first kind does not depend on the direction in which $C$ is traversed; the second changes sign when the direction is reversed.
 

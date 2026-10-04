@@ -286,7 +286,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^cor-26-7
 
 > [!proof]+ Proof
-> Apply Theorem [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ and $\Phi \circ \Phi^{-1} = \mathrm{id}_N$.
+> Apply Proposition [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]] to $\Phi^{-1} \circ \Phi = \mathrm{id}_M$ and $\Phi \circ \Phi^{-1} = \mathrm{id}_N$.
 
 ^pf-26-7
 

@@ -7,7 +7,7 @@ tags: [chapter, linear-algebra]
 # 8 Operators on Complex Vector Spaces
 ↑ [[Linear Algebra]]
 
-**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (3 citations), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (3 citations), [[· 3 Linear Maps|3 Linear Maps]] (9 citations), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (12 citations), [[· 6 Inner Product Spaces|6 Inner Product Spaces]] (1 citation), [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (1 citation)
+**Builds on:** [[· 1 Vector Spaces|1 Vector Spaces]] (3 citations), [[· 2 Finite-Dimensional Vector Spaces|2 Finite-Dimensional Vector Spaces]] (3 citations), [[· 3 Linear Maps|3 Linear Maps]] (9 citations), [[· 5 Eigenvalues and Eigenvectors|5 Eigenvalues and Eigenvectors]] (12 citations), [[· 6 Inner Product Spaces|6 Inner Product Spaces]] (1 citations), [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (1 citations)
 **Used by:** [[· 9 Multilinear Algebra and Determinants|9 Multilinear Algebra and Determinants]] (6)
 
 ## Sections
