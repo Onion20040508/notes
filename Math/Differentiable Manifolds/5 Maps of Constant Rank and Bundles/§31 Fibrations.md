@@ -81,7 +81,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 *The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
 
 > [!remark]- Connections
-> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]]. The Hopf fibration has no section: [[§32 The Tangent Bundle#^rem-32-3|Remark: Sections Need Not Exist (§31)]].
+> - $\mathbb{CP}^n$ as the orbit space $S^{2n+1}/\mathrm{U}(1)$: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]]. The Hopf fibration has no section: [[§32 The Tangent Bundle#^rem-32-3|Remark: Sections Need Not Exist (§32)]].
 
 With [[§31 Fibrations#^prop-31-1|Proposition §31.1]](2), this also proves [[§29 Submersions#^ex-29-3|Example §29.3]], which Lecture 10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
 
@@ -91,7 +91,7 @@ With [[§31 Fibrations#^prop-31-1|Proposition §31.1]](2), this also proves [[§
 ^rem-31-1
 
 > [!remark]- Connections
-> - [[§32 The Tangent Bundle#^cor-32-3|The tangent bundle is a fibration, §32.3]]; [[§32 The Tangent Bundle#^def-32-5|the cotangent bundle, Def. §32.5]]; [[§32 The Tangent Bundle#^rem-32-2|Remark: Vector Bundles (§31)]].
+> - [[§32 The Tangent Bundle#^cor-32-3|The tangent bundle is a fibration, §32.3]]; [[§32 The Tangent Bundle#^def-32-5|the cotangent bundle, Def. §32.5]]; [[§32 The Tangent Bundle#^rem-32-2|Remark: Vector Bundles (§32)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 
@@ -196,3 +196,79 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *The fibres over a few values of $t$. The origin, grey, is missing from every fibre, and the missing points $(t, 0)$, red, lie on a line — dashed — which meets the line of origins exactly at $t = 0$: the collision. Over $t = 0$ (orange) the second missing point is $(1, 0)$, off that line. Each fibre on its own is a plane minus two points; what fails is the way they fit together near $t = 0$.*
 
 **Transcription note.** Page 35 of the handwritten notes labels the second missing point over $t = 0$ as $(1, 1)$; it is $(1, 0)$.
+
+## Local Sections
+
+*From Assignment 4, Problem 4, whose hint — “declare that $\Phi_i \circ s_i$ includes $U_i \to U_i \times \{1\}$, and extend the definition of $\Phi_i$ by equivariance” — contains a general principle: local trivializations and local sections are two descriptions of the same thing.*
+
+> [!definition] Definition §31.2: Local Section
+> Let $\pi : E \to B$ be smooth ([[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]) and $U \subseteq B$ open. A **local section** of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
+>
+> *Lee: Ch. 10, Local and Global Sections of Vector Bundles*
+
+^def-31-2
+
+The *global* sections of [[§32 The Tangent Bundle#Sections and Vector Fields|§32, Sections and Vector Fields]], below, are the local sections over $U = B$.
+
+> [!theorem] Proposition §31.4: Local Trivializations Give Local Sections
+> Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization ([[§31 Fibrations#^def-31-1|Def. §31.1]]). For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section ([[§31 Fibrations#^def-31-2|Def. §31.2]]) over $U$.
+
+^prop-31-4
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
+
+^pf-31-4
+
+*Uses:* [[§31 Fibrations#^def-31-1|Def. §31.1]], [[§31 Fibrations#^def-31-2|Def. §31.2]], [[§15 Smooth Functions and Smooth Maps#^prop-15-9|§15.9]], [[§15 Smooth Functions and Smooth Maps#^lem-15-4|§15.4]]
+
+For the Hopf fibration the converse holds: the circle acting on the fibres turns any local section into a local trivialization.
+
+> [!theorem] Proposition §31.5: Local Sections of the Hopf Fibration Give Trivializations
+> Let $\pi : S^{2n+1} \to \mathbb{CP}^n$ be the Hopf fibration ([[§31 Fibrations#^ex-31-1|Ex. §31.1]]), on which $S^1$ acts ([[§10 Group Actions and Orbit Spaces#^def-10-1|Def. §10.1]]) by $\lambda \cdot z = \lambda z$, and let $s : U \to \pi^{-1}(U)$ be a local section ([[§31 Fibrations#^def-31-2|Def. §31.2]]). Then
+>
+> $$
+> \Psi_s : U \times S^1 \longrightarrow \pi^{-1}(U), \qquad \Psi_s(u, \lambda) = \lambda\, s(u),
+> $$
+>
+> is a diffeomorphism ([[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]) with $\pi \circ \Psi_s = \mathrm{pr}_1$ and $\Psi_s(u, 1) = s(u)$, equivariant for the actions $\lambda \cdot (u, \mu) = (u, \lambda\mu)$ and $\lambda \cdot z = \lambda z$. Its inverse is
+>
+> $$
+> \Psi_s^{-1}(z) = \Big( \pi(z),\ \big\langle z, s(\pi(z)) \big\rangle \Big), \qquad \langle z, w \rangle = \textstyle\sum_k z_k \bar w_k .
+> $$
+
+^prop-31-5
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 4 did this for the explicit sections $s_i$ of [[§31 Fibrations#^cor-31-6|the corollary below]]; the inner-product formula for the inverse, which works for every local section, is filled in.)* $\Psi_s$ lands in $\pi^{-1}(U)$: $|\lambda s(u)| = 1$, and $\lambda s(u)$ spans the same complex line as $s(u)$, so $\pi(\lambda s(u)) = \pi(s(u)) = u$. This also gives $\pi \circ \Psi_s = \mathrm{pr}_1$, and equivariance is $\mu\,(\lambda s(u)) = (\mu\lambda)\, s(u)$. Both maps are smooth: $\Psi_s$ is a product of smooth maps into $\mathbb{C}^{n+1}$ landing in $S^{2n+1}$ (Lemma [[§16 Manifolds in Euclidean Space#^lem-16-3|§16.3]]), and the proposed inverse is built from $\pi$, $s$ and the polynomial $\langle \cdot, \cdot \rangle$, with second component of modulus $1$. They are mutually inverse. If $z \in \pi^{-1}(U)$, then $z$ and the unit vector $s(\pi(z))$ span the same complex line, so $z = \lambda s(\pi(z))$ for some $\lambda$, and $\lambda = \lambda \langle s, s \rangle = \langle z, s(\pi(z)) \rangle$; hence $\Psi_s(\Psi_s^{-1}(z)) = z$. Conversely $\Psi_s^{-1}(\lambda s(u)) = (u, \lambda \langle s(u), s(u) \rangle) = (u, \lambda)$.
+
+^pf-31-5
+
+*Uses:* [[§31 Fibrations#^ex-31-1|Ex. §31.1]], [[§31 Fibrations#^def-31-2|Def. §31.2]], [[§16 Manifolds in Euclidean Space#^lem-16-3|§16.3]], [[§15 Smooth Functions and Smooth Maps#^prop-15-9|§15.9]], [[§15 Smooth Functions and Smooth Maps#^lem-15-4|§15.4]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]
+
+> [!remark]- Connections
+> - The discrete-fibre analogue: the sheets over an evenly covered set, [[§24 Covering Spaces#^def-24-1|590 Def. §24.1]], each a local section of the covering map, [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]].
+> - $\mathbb{CP}^n$ as the orbit space of this circle action: [[§10 Group Actions and Orbit Spaces#^ex-10-3|Ex. §10.3]].
+
+> [!theorem] Corollary §31.6: Local but Not Global Sections of the Hopf Fibration
+> Over each chart domain $U_i = \{[z] : z_i \neq 0\}$ of $\mathbb{CP}^n$ ([[§14 Projective Spaces as Smooth Manifolds#^def-14-2|Def. §14.2]]), the Hopf fibration has the local section ([[§31 Fibrations#^def-31-2|Def. §31.2]])
+>
+> $$
+> s_i([z]) = \frac{\hat z}{|\hat z|}, \qquad \hat z = \frac{z}{z_i} ,
+> $$
+>
+> and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example [[§31 Fibrations#^ex-31-1|§31.1]], $z \mapsto ([z], z_i/|z_i|)$. For $n \ge 1$ there is no global section ([[§32 The Tangent Bundle#^def-32-3|Def. §32.3]]).
+
+^cor-31-6
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 4; the global statement is the fact recorded in [[§32 The Tangent Bundle#Sections and Vector Fields|§32, Sections and Vector Fields]], stated there without proof.)* $\hat z$ is independent of the representative $z$, smooth in the chart $\varphi_i$ (it is $\varphi_i([z])$ with a $1$ inserted in slot $i$), and nonzero, so $s_i$ is smooth and lands in $S^{2n+1}$; it spans the line of $z$, so $\pi \circ s_i = \mathrm{id}$. For $|z| = 1$ with $z_i \neq 0$, $s_i([z]) = \bar z_i z / |z_i|$, so $\langle z, s_i([z]) \rangle = z_i \langle z, z \rangle / |z_i| = z_i/|z_i|$. By Proposition [[§31 Fibrations#^prop-31-5|§31.5]] a global section would make $\pi$ globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$; that this is impossible for $n \ge 1$ is the fact of Remark [[§32 The Tangent Bundle#^rem-32-3|Sections Need Not Exist]].
+
+^pf-31-6
+
+*Uses:* [[§14 Projective Spaces as Smooth Manifolds#^def-14-2|Def. §14.2]], [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§16 Manifolds in Euclidean Space#^lem-16-3|§16.3]], [[§31 Fibrations#^def-31-2|Def. §31.2]], [[§31 Fibrations#^ex-31-1|Ex. §31.1]], [[§31 Fibrations#^prop-31-5|§31.5]], [[§32 The Tangent Bundle#^rem-32-3|Rem. in §32]]
+
+> [!remark] Remark: The Same Principle Elsewhere
+> For the tangent bundle the dictionary is between trivializations and *frames*: the trivialization $\Phi$ of a chart (Definition [[§32 The Tangent Bundle#^def-32-2|§32.2]]) corresponds to the $m$ local sections ([[§31 Fibrations#^def-31-2|Def. §31.2]]) $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle ([[§32 The Tangent Bundle#^rem-32-2|Rem. in §32]]) of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example 10.18 and Proposition 10.19). For the Hopf fibration one section suffices because the fibre is a single orbit ([[§10 Group Actions and Orbit Spaces#^def-10-3|Def. §10.3]]) of the free $S^1$-action. That is the general pattern of *principal bundles*, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+
+^rem-31-2

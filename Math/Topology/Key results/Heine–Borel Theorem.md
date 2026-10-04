@@ -31,6 +31,7 @@ tags: [topology, hub]
 - [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4|Proposition §14.4: ℂP¹ Is the Riemann Sphere]]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-2|Corollary §19.2: Consequences]]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-5|Corollary §19.5: U(n) Is Compact]]
+- [[§29 Submersions#^cor-29-8|Corollary §29.8: No Submersions from Compact Manifolds to Euclidean Space]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^prop-15-16|Proposition §15.16: C¹ Diffeomorphisms Preserve Jordan Measurability]]

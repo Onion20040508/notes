@@ -23,7 +23,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ^def-34-1
 
 > [!remark]- Connections
-> - Announced at the end of Lecture 13: [[§33 Immersions#^rem-33-1|Remark: Embeddings — Next Time (§32)]]; the two ways an immersion's image can fail to be a submanifold: [[§33 Immersions#^ex-33-1|Ex. §33.1]], [[§33 Immersions#^ex-33-2|Ex. §33.2]].
+> - Announced at the end of Lecture 13: [[§33 Immersions#^rem-33-1|Remark: Embeddings — Next Time (§33)]]; the two ways an immersion's image can fail to be a submanifold: [[§33 Immersions#^ex-33-1|Ex. §33.1]], [[§33 Immersions#^ex-33-2|Ex. §33.2]].
 > - Homeomorphisms in 590: [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
 
 ![[m591-33-1.svg]]
@@ -39,8 +39,9 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > [!remark]- Connections
 > - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
 > - Locally the image is still a submanifold: [[§33 Immersions#^cor-33-2|§33.2]].
+> - The properties proved: [[§34 Embeddings#^prop-34-11|§34.11]].
 
-*Status.* From the homework, where these properties are proved; given in lecture as “a very important category: non-examples.” “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
+*Status.* Given in lecture as “a very important category: non-examples”; the properties are proved in [[§34 Embeddings#^prop-34-11|Proposition §34.11]] below, from Assignment 4, Problem 5. “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
 
 ![[m591-33-2.svg]]
 *The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.*
@@ -198,3 +199,103 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > - The topological prototype: a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]] (in 591: [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)).
 
 *An aside from the end of the lecture.* Uribe mentioned that he is developing his own notes for the course, “based on notes that somebody took a few years ago”, edited “the night before”, and asked whether they would help, perhaps shared through Overleaf.
+
+## Closedness and Density
+
+*Why does density of the irrational line rule out an embedding? Because the image of an embedding is always closed* locally, *and a dense set that is locally closed is open. Prompted by Assignment 4, Problem 5.*
+
+> [!definition] Definition §34.3: Locally Closed Subset
+> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s.
+
+^def-34-3
+
+> [!remark]- Connections
+> - Closed sets and closed sets of a subspace in 590: [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]]; the subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
+
+> [!theorem] Proposition §34.7: Images of Embeddings Are Locally Closed
+> Every regular submanifold ([[§30 Submanifolds#^def-30-1|Def. §30.1]]) of $N$ — in particular the image of an embedding ([[§34 Embeddings#^thm-34-1|Theorem §34.1]]) — is locally closed ([[§34 Embeddings#^def-34-3|Def. §34.3]]) in $N$.
+
+^prop-34-7
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* At each point of the submanifold $S$ there is an adapted chart $(V, \psi)$ ([[§30 Submanifolds#^def-30-1|Definition §30.1]]), in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions. For the equivalence in the definition: if $U$ is the union of these $V$, a point of $U \setminus S$ lies in some $V \setminus S$, which is open, so $U \setminus S$ is open and $S$ is closed in $U$.
+
+^pf-34-7
+
+*Uses:* [[§34 Embeddings#^def-34-3|Def. §34.3]], [[§30 Submanifolds#^def-30-1|Def. §30.1]], [[§34 Embeddings#^thm-34-1|§34.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]], [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]
+
+> [!theorem] Corollary §34.8: Dense Submanifolds Are Open
+> A dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) regular submanifold ([[§30 Submanifolds#^def-30-1|Def. §30.1]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
+
+^cor-34-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* By [[§34 Embeddings#^prop-34-7|Proposition §34.7]], $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$, and a closed dense subset of $U$ is all of $U$; so $S = U$ is open. If $S$ had codimension $k \ge 1$, take an adapted chart $(V, \psi)$ at a point of $S$: then $\psi(S \cap V)$ would be a nonempty subset of $\mathbb{R}^{n-k} \times \{0\}$, open in $\mathbb{R}^n$ because $S \cap V$ is open in $V$ — impossible, since no nonempty open subset of $\mathbb{R}^n$ lies in a hyperplane.
+
+^pf-34-8
+
+*Uses:* [[§34 Embeddings#^prop-34-7|§34.7]], [[§34 Embeddings#^def-34-3|Def. §34.3]], [[§30 Submanifolds#^def-30-1|Def. §30.1]], [[§34 Embeddings#^thm-34-1|§34.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]], [[§7 Interior and Closure#^thm-7-2|590 §7.2]]
+
+> [!remark]- Connections
+> - Dense subsets in 590: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]], with the [[Closure Characterization|590 closure characterization]].
+
+This is the precise form of Uribe's “no matter how you shrink $V$, you won't be able to isolate only the yellow guy”: at every point of [[§34 Embeddings#^ex-34-1|the irrational line]], local closedness fails.
+
+> [!theorem] Proposition §34.9: Closed Embeddings Are the Proper Ones
+> An embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]) $F : M \to N$ is proper ([[§34 Embeddings#^def-34-2|Def. §34.2]]) if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]) is exactly an embedding with closed image.
+>
+> *Lee: Proposition 5.5*
+
+^prop-34-9
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* If $F$ is proper, it is closed ([[§34 Embeddings#^prop-34-4|Proposition §34.4]]), so $F(M)$ is closed. Conversely, let $F(M)$ be closed and $K \subseteq N$ compact. Then $K \cap F(M)$ is a closed subset of $K$, hence compact, and $F^{-1}(K) = F^{-1}\big(K \cap F(M)\big)$ is its image under the inverse of the homeomorphism $F : M \to F(M)$, hence compact. The last sentence combines this with [[§34 Embeddings#^thm-34-5|Theorem §34.5]].
+
+^pf-34-9
+
+*Uses:* [[§34 Embeddings#^def-34-1|Def. §34.1]], [[§34 Embeddings#^def-34-2|Def. §34.2]], [[§34 Embeddings#^prop-34-4|§34.4]], [[§34 Embeddings#^thm-34-5|§34.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§15 Compact Spaces#^thm-15-2|590 §15.2]], [[§15 Compact Spaces#^thm-15-3|590 §15.3]]
+
+| Map | Image | Example separating it from the row above |
+|---|---|---|
+| injective proper immersion | closed regular submanifold | — |
+| embedding | locally closed regular submanifold | an open interval embedded in $\mathbb{R}^2$ |
+| injective immersion | possibly not locally closed, even dense | [[§34 Embeddings#^prop-34-11\|the irrational line]] |
+
+Closedness of the image alone is not enough: the image of the [[§33 Immersions#^ex-33-2|figure-eight]] (Lee's Example 4.19) is compact, hence closed, but the figure-eight is not an embedding. Local closedness is necessary for an embedding, not sufficient.
+
+> [!theorem] Lemma §34.10: Dirichlet's Approximation Theorem
+> For every $\alpha \in \mathbb{R}$ and every integer $N \ge 1$ there are integers $n, m$ with $1 \le n \le N$ and $|n\alpha - m| < 1/N$.
+>
+> *Lee: Lemma 4.21*
+
+^lem-34-10
+
+> [!remark]- Connections
+> - No home elsewhere in the vault; Lee's proof rests on the [[Pigeonhole Principle|250 Pigeonhole Principle]].
+
+*Status.* Used in Assignment 4, Problem 5, citing Lee; not proved here. (Lee's proof is a [[Pigeonhole Principle|pigeonhole]] argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
+
+> [!theorem] Proposition §34.11: The Irrational Line Revisited
+> Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve of [[§34 Embeddings#^ex-34-1|Example §34.1]] under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§33 Immersions#^def-33-1|Def. §33.1]]), its image is dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§34 Embeddings#^def-34-1|Def. §34.1]]).
+>
+> *Lee: Example 4.20*
+
+^prop-34-11
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 5: the submitted solution, condensed; the second proof of the last claim is new.)* *Immersion.* $\gamma$ is smooth into $\mathbb{C}^2$ with values in the submanifold $T^2$, hence smooth into $T^2$ ([[§30 Submanifolds#^lem-30-3|Lemma §30.3]]). Its velocity in $\mathbb{C}^2$, $\big(2\pi i e^{2\pi i t}, 2\pi i\alpha e^{2\pi i \alpha t}\big)$, has first entry of modulus $2\pi \ne 0$, so by the chain rule $\gamma_{\ast t}$ is nonzero, hence injective.
+>
+> *Injective.* If $\gamma(t_1) = \gamma(t_2)$, then $t_1 - t_2 \in \mathbb{Z}$ and $\alpha(t_1 - t_2) \in \mathbb{Z}$; if $t_1 \ne t_2$ this makes $\alpha$ rational.
+>
+> *Dense.* Using $|e^{is} - e^{it}| \le |s - t|$: by [[§34 Embeddings#^lem-34-10|Lemma §34.10]] there are $n_N \ge 1$ and $m_N$ with $|n_N\alpha - m_N| < 1/N$, so $w_N = e^{2\pi i \alpha n_N} = e^{i\theta_N}$ with $\theta_N = 2\pi(n_N\alpha - m_N)$, $0 < |\theta_N| < 2\pi/N$ (nonzero by injectivity). The powers $w_N^k = e^{2\pi i \alpha (k n_N)}$ are $2\pi/N$-dense in $S^1$, since consecutive ones differ in angle by $|\theta_N|$. So $D = \{e^{2\pi i\alpha k} : k \in \mathbb{Z}\}$ is dense in $S^1$. Given $(e^{2\pi i a}, e^{2\pi i b}) \in T^2$, the points $\gamma(a + k) = (e^{2\pi i a}, e^{2\pi i \alpha a} e^{2\pi i \alpha k})$ have the right first coordinate, and their second coordinates come arbitrarily close to $e^{2\pi i b}$ because $D$ is dense.
+>
+> *Not an embedding: the submitted proof.* $\gamma(n_N) \to \gamma(0)$, since $|\gamma(n_N) - \gamma(0)| \le 2\pi|n_N\alpha - m_N| < 2\pi/N$. If $\gamma^{-1} : \gamma(\mathbb{R}) \to \mathbb{R}$ were continuous, then $n_N \to 0$, which is false because $n_N \ge 1$.
+>
+> *Not an embedding: via density.* The image is dense and $\dim \mathbb{R} = 1 < 2 = \dim T^2$, so by [[§34 Embeddings#^cor-34-8|Corollary §34.8]] it is not the image of an embedding.
+
+^pf-34-11
+
+*Uses:* [[§33 Immersions#^def-33-1|Def. §33.1]], [[§34 Embeddings#^def-34-1|Def. §34.1]], [[§34 Embeddings#^ex-34-1|Ex. §34.1]], [[§30 Submanifolds#^lem-30-3|§30.3]], [[§23 Derivations and the Abstract Tangent Space#^thm-23-6|§23.6]], [[§34 Embeddings#^lem-34-10|§34.10]], [[§34 Embeddings#^cor-34-8|§34.8]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]
+
+> [!remark]- Connections
+> - The same curve, stated in lecture: [[§34 Embeddings#^ex-34-1|Ex. §34.1]]; the torus in 590: [[Torus|590 Torus]], its covering by the plane: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]].

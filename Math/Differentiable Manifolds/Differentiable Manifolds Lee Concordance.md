@@ -67,7 +67,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§31 Fibrations\|§31]] Fibrations | smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee |
 | [[§32 The Tangent Bundle\|§32]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |
 | [[§33 Immersions\|§33]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
-| [[§34 Embeddings\|§34]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Appendix A, *Proper Maps* (Theorem A.57) |
+| [[§34 Embeddings\|§34]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
+| [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)\|§35]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
 
 ## A.4 Index from Lee to these notes
 
@@ -124,11 +125,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 4.6 | [[§28 Local Diffeomorphisms#^cor-28-3\|Cor. §28.3]] |
 | Proposition 4.8 | [[§28 Local Diffeomorphisms#^thm-28-2\|Thm. §28.2]], [[§29 Submersions#^prop-29-1\|Prop. §29.1]] |
 | Theorem 4.12 | [[§29 Submersions#^thm-29-4\|Thm. §29.4]], [[§33 Immersions#^thm-33-1\|Thm. §33.1]] |
-| Example 4.20 | [[§34 Embeddings#^ex-34-1\|Ex. §34.1]] |
+| Example 4.20 | [[§34 Embeddings#^ex-34-1\|Ex. §34.1]], [[§34 Embeddings#^prop-34-11\|Prop. §34.11]] |
+| Lemma 4.21 | [[§34 Embeddings#^lem-34-10\|Lem. §34.10]] |
 | Proposition 4.22 | [[§34 Embeddings#^thm-34-5\|Thm. §34.5]], [[§34 Embeddings#^cor-34-6\|Cor. §34.6]] |
 | Proposition 4.28 | [[§29 Submersions#^cor-29-6\|Cor. §29.6]] |
 | Problem 4-5 | [[§14 Projective Spaces as Smooth Manifolds#^prop-14-4\|Prop. §14.4]], [[§29 Submersions#^ex-29-3\|Ex. §29.3]], [[§31 Fibrations#^ex-31-1\|Ex. §31.1]] |
 | Proposition 5.2 | [[§34 Embeddings#^thm-34-1\|Thm. §34.1]] |
+| Proposition 5.5 | [[§34 Embeddings#^prop-34-9\|Prop. §34.9]] |
 | Theorem 5.8 | [[§30 Submanifolds#^def-30-1\|Def. §30.1]], [[§30 Submanifolds#^prop-30-2\|Prop. §30.2]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§16 Manifolds in Euclidean Space#^prop-16-2\|Prop. §16.2]], [[§30 Submanifolds#^thm-30-6\|Thm. §30.6]] |
 | Corollary 5.30 | [[§30 Submanifolds#^lem-30-3\|Lem. §30.3]] |
@@ -143,6 +146,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 7.29 | [[§8 Topological Groups and Classical Matrix Groups#^def-8-8\|Def. §8.8]], [[§9 The Classical Groups Are Topological Manifolds#^thm-9-6\|Thm. §9.6]], [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-19-2\|Ex. §19.2]], [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-19-5\|Cor. §19.5]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5\|Thm. §20.5]] |
 | Example 7.30 | [[§8 Topological Groups and Classical Matrix Groups#^def-8-8\|Def. §8.8]], [[§9 The Classical Groups Are Topological Manifolds#^thm-9-6\|Thm. §9.6]], [[§20 Tangent Spaces I꞉ The Geometric Picture#^thm-20-5\|Thm. §20.5]] |
 | Problem 7-4 | [[§9 The Classical Groups Are Topological Manifolds#^prop-9-1\|Prop. §9.1]], [[§9 The Classical Groups Are Topological Manifolds#^cor-9-2\|Cor. §9.2]] |
+| Problem 7-22 | [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^def-35-1\|Def. §35.1]] |
 | Example 10.3 | [[§31 Fibrations#^ex-31-3\|Ex. §31.3]] |
 | Proposition 11.1 | [[§17 Linear Algebra Toolkit#^def-17-1\|Def. §17.1]], [[§17 Linear Algebra Toolkit#^prop-17-2\|Prop. §17.2]] |
 | Proposition 11.4 | [[§17 Linear Algebra Toolkit#^def-17-2\|Def. §17.2]], [[§17 Linear Algebra Toolkit#^prop-17-4\|Prop. §17.4]] |

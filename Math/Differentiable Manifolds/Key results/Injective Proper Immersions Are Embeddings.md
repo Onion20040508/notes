@@ -23,6 +23,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§34 Embeddings#^cor-34-6|Corollary §34.6: Injective Immersions of Compact Manifolds]]
+- [[§34 Embeddings#^prop-34-9|Proposition §34.9: Closed Embeddings Are the Proper Ones]]
 
 ## Connections
 - **Used for.** On a compact manifold every injective immersion is an embedding ([[§34 Embeddings#^cor-34-6|§34.6]]), and then its image is a submanifold by [[Images of Embeddings Are Submanifolds]].

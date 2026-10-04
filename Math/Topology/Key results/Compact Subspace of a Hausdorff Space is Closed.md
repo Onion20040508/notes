@@ -32,6 +32,7 @@ tags: [topology, hub]
 - [[§6 Open Quotients and Complex Projective Space#^prop-6-4|Proposition §6.4: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§10 Group Actions and Orbit Spaces#^cor-10-4|Corollary §10.4: Compact Group and Compact Hausdorff Space]]
 - [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
+- [[§29 Submersions#^thm-29-7|Theorem §29.7: Submersions from Compact Manifolds]]
 - [[§34 Embeddings#^prop-34-4|Proposition §34.4: Proper Maps into Manifolds Are Closed]]
 - [[§34 Embeddings#^cor-34-6|Corollary §34.6: Injective Immersions of Compact Manifolds]]
 

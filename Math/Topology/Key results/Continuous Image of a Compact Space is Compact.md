@@ -28,7 +28,9 @@ tags: [topology, hub]
 - [[§10 Group Actions and Orbit Spaces#^cor-10-4|Corollary §10.4: Compact Group and Compact Hausdorff Space]]
 - [[§12 The Topology of G∕H and Real Grassmannians#^thm-12-3|Theorem §12.3: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
 - [[§13 Differentiable Structures#^prop-13-3|Proposition §13.3: The Circle Needs More Than One Chart]]
+- [[§29 Submersions#^thm-29-7|Theorem §29.7: Submersions from Compact Manifolds]]
 - [[§34 Embeddings#^prop-34-4|Proposition §34.4: Proper Maps into Manifolds Are Closed]]
+- [[§34 Embeddings#^prop-34-9|Proposition §34.9: Closed Embeddings Are the Proper Ones]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]

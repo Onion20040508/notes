@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Differential in Coordinates#^thm-25-2|Theorem §25.2: The Matrix of the Differential]], in [[§25 The Differential in Coordinates]]
 
 ## Its proof uses
-- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§23 Derivations and the Abstract Tangent Space#^prop-23-5|Proposition §23.5: The Differential Is a Linear Map of Abstract Tangent Spaces]]
+- [[§23 Derivations and the Abstract Tangent Space#^def-23-5|Definition §23.5: Pushforward — the Differential]]
 - [[§24 Coordinate Derivations and the Basis Theorem#^thm-24-5|Theorem §24.5: Basis Theorem]]
 - [[§25 The Differential in Coordinates#^prop-25-1|Proposition §25.1: Partial Derivatives Upstairs and Downstairs]]
 
@@ -24,6 +24,7 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Differential in Coordinates#^cor-25-4|Corollary §25.4: Change of Coordinates]]
 - [[§25 The Differential in Coordinates#^prop-25-5|Proposition §25.5: Agreement with the Vector-Space Differential]]
 - [[§25 The Differential in Coordinates#^prop-25-7|Proposition §25.7: Regular Values Inside One Chart]]
+- [[§25 The Differential in Coordinates#^prop-25-9|Proposition §25.9: Maps with Zero Differential Are Constant]]
 - [[§26 Tangent Vectors as Velocities of Curves#^cor-26-5|Corollary §26.5: Product Coordinates]]
 - [[§27 Tangent Spaces III꞉ The Cotangent Space#^lem-27-2|Lemma §27.2: The Differential in Coordinates]]
 - [[§28 Local Diffeomorphisms#^thm-28-2|Theorem §28.2: Local Diffeomorphisms Are Detected by the Differential]]

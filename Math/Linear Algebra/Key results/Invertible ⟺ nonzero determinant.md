@@ -30,6 +30,7 @@ tags: [linear-algebra, hub]
 - [[§8 Topological Groups and Classical Matrix Groups#^def-8-8|Definition §8.8: Complex Matrix Groups]]
 - [[§19 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-19-3|Lemma §19.3: A One-Sided Inverse Suffices]]
 - [[§29 Submersions#^thm-29-4|Theorem §29.4: Local Normal Form for Submersions]]
+- [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-6|Lemma §35.6: Every Rotation Has an Axis]]
 
 ## Connections
 - Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).

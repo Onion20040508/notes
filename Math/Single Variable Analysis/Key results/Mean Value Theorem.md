@@ -32,6 +32,9 @@ tags: [real-analysis, hub]
 ## Used in (Measure Theory)
 - [[§18 Differentiation Theory#^prop-18-3|Proposition §18.3: Differentiable Functions with Bounded Derivative are BV]]
 
+## Used in (Differentiable Manifolds)
+- [[§25 The Differential in Coordinates#^prop-25-9|Proposition §25.9: Maps with Zero Differential Are Constant]]
+
 ## Connections
 - Leads to Taylor's theorem (§31) and, in its generalized (Cauchy) form, to L'Hospital's rule (§30).
 - For vector-valued functions the equality version fails (e.g. $t\mapsto(\cos t,\sin t)$ on $[0,2\pi]$); only the mean value inequality survives.

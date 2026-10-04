@@ -27,6 +27,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§30 Submanifolds#^cor-30-7|Corollary §30.7: Fibres of Submersions Are Submanifolds]]
 - [[§30 Submanifolds#^prop-30-8|Proposition §30.8: The Old and New Versions Agree]]
+- [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-35-2|Proposition §35.2: The Unit Quaternions]]
 
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§30 Submanifolds#^cor-30-7|§30.7]]), in particular every fibre of a fibration ([[§31 Fibrations#^prop-31-2|§31.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§30 Submanifolds#^prop-30-8|§30.8]], [[§30 Submanifolds#^rem-30-2|The Regular Value Theorems — Old and New]]).

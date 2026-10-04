@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (13), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (4)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (13), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (4), [[· 5 Maps of Constant Rank and Bundles|5 Maps of Constant Rank and Bundles]] (8)
 **Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (16), [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6)
 
 ## Sections
@@ -28,7 +28,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§10 Group Actions and Orbit Spaces#^lem-10-2|Lemma §10.2: Left Translations Are Homeomorphisms]]: 21 later results
-- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-3|Proposition §8.3: Determinant Is Continuous]]: 21 later results
-- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-7|Proposition §8.7: Equivalent Description of O(n,ℝ)]]: 19 later results
-- [[§10 Group Actions and Orbit Spaces#^prop-10-1|Proposition §10.1: Orbits Partition X]]: 18 later results
+- [[§10 Group Actions and Orbit Spaces#^lem-10-2|Lemma §10.2: Left Translations Are Homeomorphisms]]: 28 later results
+- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-3|Proposition §8.3: Determinant Is Continuous]]: 28 later results
+- [[§8 Topological Groups and Classical Matrix Groups#^prop-8-7|Proposition §8.7: Equivalent Description of O(n,ℝ)]]: 27 later results
+- [[§10 Group Actions and Orbit Spaces#^prop-10-1|Proposition §10.1: Orbits Partition X]]: 25 later results

@@ -25,6 +25,9 @@ tags: [differentiable-manifolds, hub]
 - [[§30 Submanifolds#^thm-30-6|Theorem §30.6: The Regular Value Theorem for Manifolds]]
 - [[§31 Fibrations#^prop-31-1|Proposition §31.1: Fibres and Fibrations]]
 - [[§34 Embeddings#^cor-34-3|Corollary §34.3: An Embedding Is a Diffeomorphism onto Its Image]]
+- [[§34 Embeddings#^prop-34-11|Proposition §34.11: The Irrational Line Revisited]]
+- [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^lem-35-7|Lemma §35.7: Translating the Differential]]
+- [[§35 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-35-8|Theorem §35.8: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§23 Derivations and the Abstract Tangent Space#^cor-23-7|§23.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§23 Derivations and the Abstract Tangent Space#^prop-23-9|§23.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§25 The Differential in Coordinates#^cor-25-3|§25.3]], [[§25 The Differential in Coordinates#^cor-25-4|§25.4]]), differentials computed by curves ([[§26 Tangent Vectors as Velocities of Curves#^cor-26-3|§26.3]]) and the [[Local Diffeomorphism Criterion]].

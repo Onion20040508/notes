@@ -29,6 +29,7 @@ tags: [topology, hub]
 - [[§2 Topological Manifolds#^prop-2-13|Proposition §2.13: Manifolds Are Locally Compact]]
 - [[§34 Embeddings#^prop-34-4|Proposition §34.4: Proper Maps into Manifolds Are Closed]]
 - [[§34 Embeddings#^cor-34-6|Corollary §34.6: Injective Immersions of Compact Manifolds]]
+- [[§34 Embeddings#^prop-34-9|Proposition §34.9: Closed Embeddings Are the Proper Ones]]
 
 ## Connections
 - **Partner result.** It pairs with [[Compact Subspace of a Hausdorff Space is Closed]] ([[§15 Compact Spaces#^rem-15-4|Summary: Compact and Closed]]). In a compact Hausdorff space the two together say that a subset is closed exactly when it is compact.

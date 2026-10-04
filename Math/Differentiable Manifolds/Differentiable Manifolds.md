@@ -11,7 +11,7 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§34 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§35 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
 These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§29 Submersions|§29]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§30 Submanifolds|§30]]); the submersions that are locally products are the fibrations ([[§31 Fibrations|§31]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§32 The Tangent Bundle|§32]]). Immersions, the maps dual to submersions, begin a new arc ([[§33 Immersions|§33]]), which leads to embeddings, the immersions whose images are submanifolds ([[§34 Embeddings|§34]]).
@@ -48,22 +48,23 @@ graph TD
   C5 -.->|on credit| C1
   C5 -.->|on credit| C3
   X4 -.->|9| C2
+  X4 -.->|7| C5
   X3 -.->|8| C1
   X3 -.->|18| C2
   X3 -.->|10| C3
   X3 -.->|16| C4
-  X3 -.->|8| C5
+  X3 -.->|14| C5
   X2 -.->|5| C1
   X2 -.->|6| C2
   X2 -.->|14| C3
   X2 -.->|11| C4
   X2 -.->|4| C5
-  X5 -.->|2| C4
+  X5 -.->|3| C4
   X1 -.->|65| C1
   X1 -.->|16| C2
   X1 -.->|21| C3
-  X1 -.->|3| C4
-  X1 -.->|24| C5
+  X1 -.->|6| C4
+  X1 -.->|48| C5
 ```
 
 ## Chapters
@@ -108,6 +109,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined,
 - [[Immersion Normal Form]] (§33.1)
 - [[Images of Embeddings Are Submanifolds]] (§34.1)
 - [[Injective Proper Immersions Are Embeddings]] (§34.5)
+- [[SU(2) Is a Double Cover of SO(3)]] (§35.8)
 
 ## Summaries
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
@@ -117,14 +119,14 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined,
 The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Chapter 1 re-proves much of [[Topology]] (the point-set review, subspaces, products, quotients) and §17 is a linear-algebra toolkit whose home is [[Linear Algebra]] 3E–3F; their Connections callouts point to those homes.
 
 **[[Topology]]**
+- [[Heine–Borel Theorem]] (10)
 - [[§9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]] (10)
-- [[Heine–Borel Theorem]] (9)
 - [[Continuous Image of a Compact Space is Compact]] (7)
+- [[Bijection from Compact to Hausdorff is a Homeomorphism]] (5)
 - [[Compact Subspace of a Hausdorff Space is Closed]] (5)
+- [[§13 Connected Spaces#^def-13-1|Definition §13.1: Separation and Connected Space]] (5)
+- [[§9 Continuous Functions#^def-9-2|Definition §9.2: Homeomorphism]] (5)
 - [[§10 Product Topology on Arbitrary Products#^thm-10-1|Theorem §10.1: Continuity into Product Spaces]] (5)
-- [[§9 Continuous Functions#^def-9-1|Definition §9.1: Continuous Function]] (4)
-- [[§9 Continuous Functions#^prop-9-3|Proposition §9.3: Homeomorphisms Restrict to Subspaces]] (4)
-- [[Bijection from Compact to Hausdorff is a Homeomorphism]] (4)
 
 **[[Multivariable Analysis]]**
 - [[Multivariable Chain Rule]] (28)
@@ -139,14 +141,15 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Linear Algebra]]**
 - [[Fundamental theorem of linear maps]] (8)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
-- [[Invertible ⟺ nonzero determinant]] (5)
+- [[Invertible ⟺ nonzero determinant]] (6)
+- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (5)
 - [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (4)
-- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (4)
 - [[Linear map lemma]] (3)
+- [[§34 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (3)
 - [[§34 Determinants#^ladr-9-46|Theorem 9.46: Formula for determinant of a matrix]] (2)
-- [[§34 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (2)
 
 **[[Group Theory]]**
+- [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]] (4)
 - [[§4 Subgroups#^def-4-1|Definition §4.1: Subgroup]] (3)
 - [[§22 Equivalence Relations and Partitions#^prop-22-1|Proposition §22.1: Equivalence Classes Partition a Set]] (1)
 - [[§26 Left and Right Cosets#^def-26-2|Definition §26.2: Left and Right Cosets]] (1)
@@ -159,6 +162,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§28 Basic Properties of the Derivative#^thm-28-2|Theorem §28.2: Arithmetic of Derivatives]] (1)
 - [[§31 Taylor's Theorem#^ex-31-3|Example §31.3: A smooth function that is not its Taylor series]] (1)
 - [[Fundamental Theorem of Calculus]] (1)
+- [[§29 The Mean Value Theorem#^thm-29-3|Theorem §29.3: Mean Value Theorem]] (1)
 
 ## Workhorse examples
 - [[The line with two origins]]: second countable and locally Euclidean but not Hausdorff, built from neighborhoods and as a quotient

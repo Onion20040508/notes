@@ -15,8 +15,8 @@ tags: [differentiable-manifolds, hub]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
 - [[§13 Differentiable Structures#^def-13-4|Definition §13.4: Smoothly Compatible Charts]]
 - [[§13 Differentiable Structures#^thm-13-5|Theorem §13.5: Every Atlas Lies in a Unique Maximal Atlas]]
-- [[§16 Manifolds in Euclidean Space#^def-16-2|Definition §16.2: Parametrization]]
 - [[§16 Manifolds in Euclidean Space#^ex-16-2|Example §16.2: A Surface in ℝ³]]
+- [[§16 Manifolds in Euclidean Space#^def-16-2|Definition §16.2: Parametrization]]
 
 ## Its proof uses (other subjects)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)

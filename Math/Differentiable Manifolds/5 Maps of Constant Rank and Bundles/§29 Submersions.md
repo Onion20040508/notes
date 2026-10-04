@@ -260,3 +260,35 @@ Uribe singled out Lemma [[§29 Submersions#^lem-29-3|§29.3]] as “an intellect
 ^pf-29-6
 
 *Uses:* [[§29 Submersions#^thm-29-4|§29.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]]
+
+> [!theorem] Theorem §29.7: Submersions from Compact Manifolds
+> Let $M$ be compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty, $N$ connected ([[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]), and $F : M \to N$ a submersion ([[§29 Submersions#^def-29-1|Def. §29.1]]). Then $F$ is surjective, and $N$ is compact.
+
+^thm-29-7
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 2, where $N = \mathbb{R}^k$; the same argument gives the general statement.)* $F(M)$ is open in $N$ because a submersion is an open map (Corollary [[§29 Submersions#^cor-29-6|§29.6]]), and compact, hence closed in the Hausdorff space $N$, because $M$ is compact. It is nonempty, and $N$ is connected, so $F(M) = N$. Then $N = F(M)$ is compact.
+
+^pf-29-7
+
+*Uses:* [[§29 Submersions#^cor-29-6|§29.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§15 Compact Spaces#^thm-15-3|590 §15.3]], [[§15 Compact Spaces#^thm-15-4|590 §15.4]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]]
+
+> [!remark]- Connections
+> - The point-set steps: [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §15.4]], and clopen subsets of a connected space, [[§13 Connected Spaces#^lem-13-1|590 Lem. §13.1]]; in 591, [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] and [[§1 Point-Set Topology Review#^prop-1-7|§1.7]].
+
+> [!theorem] Corollary §29.8: No Submersions from Compact Manifolds to Euclidean Space
+> If $M$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty and $k \ge 1$, there is no submersion ([[§29 Submersions#^def-29-1|Def. §29.1]]) $M \to \mathbb{R}^k$.
+
+^cor-29-8
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 2.)* $\mathbb{R}^k$ is connected but not compact, since it is unbounded; apply Theorem [[§29 Submersions#^thm-29-7|§29.7]].
+
+^pf-29-8
+
+*Uses:* [[§29 Submersions#^thm-29-7|§29.7]], [[§14 Connected Subspaces of ℝ#^thm-14-1|590 §14.1]], [[§13 Connected Spaces#^thm-13-6|590 §13.6]], [[Heine–Borel Theorem|590 §15.12]]
+
+> [!remark]- Connections
+> - Compact subsets of $\mathbb{R}^k$ are bounded: [[Heine–Borel Theorem]].
+
+The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ — the maximum of any smooth function $f : M \to \mathbb{R}$ is a [[§29 Submersions#^def-29-2|critical point]].

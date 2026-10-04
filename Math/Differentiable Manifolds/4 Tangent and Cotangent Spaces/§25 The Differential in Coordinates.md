@@ -291,3 +291,22 @@ $$
 > - The smooth half, $F^{-1}(c)$ a submanifold with tangent space $\ker F_{*p}$: [[§30 Submanifolds#^thm-30-6|§30.6]]; the Euclidean original: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
 This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§30 Submanifolds#^thm-30-6|§30.6]], proved with the local normal form for submersions (Theorem [[§29 Submersions#^thm-29-4|§29.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
+
+> [!theorem] Proposition §25.9: Maps with Zero Differential Are Constant
+> Let $F : M \to N$ be smooth ([[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]]), with $M$ connected ([[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]). If $F_{\ast p} = 0$ ([[§23 Derivations and the Abstract Tangent Space#^def-23-5|Def. §23.5]]) for every $p \in M$, then $F$ is constant.
+
+^prop-25-9
+
+> [!proof]+ Proof
+> *(Assignment 4, Problem 1: the submitted solution, condensed.)* *$F$ is locally constant.* Fix $p_0 \in M$. Take a chart $(V, \psi)$ at $F(p_0)$ and a chart at $p_0$ whose domain $U_0$ satisfies $F(U_0) \subseteq V$ and whose image is an open ball $B$ — shrink by continuity of $F$, then to a ball. The coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1} : B \to \mathbb{R}^n$ has Jacobian $\tilde F'(\varphi(p))$, the matrix of $F_{\ast p}$ (Theorem [[§25 The Differential in Coordinates#^thm-25-2|§25.2]]), so $\tilde F' \equiv 0$ on $B$. For $p \in U_0$, the segment from $\varphi(p_0)$ to $\varphi(p)$ stays in the convex $B$, and the [[§29 The Mean Value Theorem#^thm-29-3|mean value theorem]] applied to each component of $\tilde F$ along it gives $\tilde F(\varphi(p)) = \tilde F(\varphi(p_0))$; since $\psi$ is injective, $F(p) = F(p_0)$.
+>
+> *$F$ is constant.* Let $c = F(p_0)$. The set $F^{-1}(c)$ is closed, since $F$ is continuous, and open, since $F$ is locally constant; it is nonempty. As $M$ is connected, $F^{-1}(c) = M$.
+
+^pf-25-9
+
+*Uses:* [[§15 Smooth Functions and Smooth Maps#^def-15-3|Def. §15.3]], [[§2 Topological Manifolds#^lem-2-11|§2.11]], [[§25 The Differential in Coordinates#^thm-25-2|§25.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]]
+
+> [!remark]- Connections
+> - Connectedness via clopen sets: [[§13 Connected Spaces#^lem-13-1|590 Lem. §13.1]]; the one-variable original: [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (vanishing derivative means constant).
+
+The hypothesis that $M$ is connected cannot be dropped: on a disconnected $M$, a map that takes different constant values on different components has zero differential everywhere. Locally, the proposition is the familiar fact from calculus that a function with zero derivative on an interval is constant.
