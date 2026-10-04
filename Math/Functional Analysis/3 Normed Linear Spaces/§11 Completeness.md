@@ -188,7 +188,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 ^def-11-4
 
 > [!remark]- Connections
-> - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (Cauchy sequences and the construction of the reals)]].
+> - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (Cauchy sequences and the construction of the reals)]], carried out with rational tolerances in [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]] (why rational: [[§6★ ℝ from Cauchy Sequences of Rationals#^rem-6s-2|451 §6★, order of logic]]).
 > - For normed spaces: [[§11 Completeness#^thm-11-4|§11.4]]; concrete completions: [[§11 Completeness#^prop-11-5|§11.5]], [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
@@ -237,7 +237,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 *Uses:* [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§10 Normed Linear Spaces#^def-10-3|Def. §10.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§11 Completeness#^thm-11-4|§11.4]]
 
 > [!remark]- Connections
-> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark §10.4]]).
+> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark §10.4]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
 > - The normed version, where the linear structure and the norm are added: Theorem [[§11 Completeness#^thm-11-4|§11.4]]; uniqueness: Corollary [[§11 Completeness#^cor-11-6|§11.6]].
 
 > [!example] Example §11.1: Completions of Subsets of $\mathbb{R}^n$
@@ -399,7 +399,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 *Uses:* [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of $\mathbb{R}$)
 
 > [!remark]- Connections
-> - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (construction of the reals)]].
+> - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (construction of the reals)]]; there $\Phi = \lim$ is [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|451 Theorem §6★.12]], and uniqueness is [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|451 §6★.14]].
 > - The pattern of the proof: [[Functional Analysis Problem-Solving Techniques#^ex-t5|Technique 5, applications]].
 
 > [!remark] Remark: Comparison with the $\ell^p$ Proof

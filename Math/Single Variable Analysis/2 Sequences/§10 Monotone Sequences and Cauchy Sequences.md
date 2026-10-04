@@ -400,5 +400,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 
 > [!remark] Remark: Cauchy sequences and the construction of the reals
 > Cauchy sequences can be used to construct $\mathbb{R}$ from $\mathbb{Q}$: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to $0$). This is the second standard construction of $\mathbb{R}$, alongside the Dedekind cuts of §6. Note the logical order in this course, however: we *assumed* $\mathbb{R}$ with completeness, and the theorem above (Cauchy $\Rightarrow$ convergent) is a *consequence* — indeed an equivalent form — of the completeness axiom.
+>
+> ★ The construction is carried out, with proofs, in [[§6★ ℝ from Cauchy Sequences of Rationals]].
 
 ^rem-10-4

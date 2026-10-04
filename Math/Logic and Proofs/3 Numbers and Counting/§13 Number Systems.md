@@ -247,7 +247,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 *Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!remark]- Connections
-> - The two facts used about $\R$: the [[Completeness Axiom]] ([[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]]) and the [[Archimedean Property]] ([[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]), which 451 derives from completeness. A construction of $\R$ from $\Q$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts).
+> - The two facts used about $\R$: the [[Completeness Axiom]] ([[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]]) and the [[Archimedean Property]] ([[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]), which 451 derives from completeness. A construction of $\R$ from $\Q$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts); ★ by classes of rational Cauchy sequences, [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]], where this section's decimal expansion of √2 reappears as a Cauchy sequence ([[§6★ ℝ from Cauchy Sequences of Rationals#^ex-6s-2|451 Ex. §6★.2]]).
 
 > [!example] Example §13.4: 0.999… = 1
 > The **recurring** decimal $0.\dot9 = 0.999\ldots$ has every digit after the point equal to $9$. Each truncation is less than $1$:

@@ -4,7 +4,7 @@ section: 7
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§6 Dedekind Cuts]] · ↑ [[· 2 Sequences]] · [[§8 A Discussion About Proofs]] →
+← [[§6★ ℝ from Cauchy Sequences of Rationals]] · ↑ [[· 2 Sequences]] · [[§8 A Discussion About Proofs]] →
 
 We have discussed the properties of $\mathbb{R}$, including the [[Completeness Axiom|completeness axiom]] and a construction of $\mathbb{R}$ from $\mathbb{Q}$ via Dedekind cuts. Now we are ready to introduce the very basic notion of *limits*. We deal first with limits of sequences.
 

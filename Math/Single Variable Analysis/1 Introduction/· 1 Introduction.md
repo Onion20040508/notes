@@ -17,6 +17,7 @@ tags: [chapter, real-analysis]
 - [[§4 The Completeness Axiom]]
 - [[§5 The Symbols +∞, −∞]]
 - [[§6 Dedekind Cuts]]
+- [[§6★ ℝ from Cauchy Sequences of Rationals]] ★
 
 ## Central results
 - [[Completeness Axiom]]

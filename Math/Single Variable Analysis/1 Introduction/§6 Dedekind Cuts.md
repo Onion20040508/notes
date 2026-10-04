@@ -4,7 +4,7 @@ section: 6
 chapter: 1
 tags: [real-analysis, math451]
 ---
-← [[§5 The Symbols +∞, −∞]] · ↑ [[· 1 Introduction]] · [[§7 Limits of Sequences]] →
+← [[§5 The Symbols +∞, −∞]] · ↑ [[· 1 Introduction]] · [[§6★ ℝ from Cauchy Sequences of Rationals]] →
 
 **Question.** How can $\mathbb{R}$ be *defined* from $\mathbb{Q}$?
 
@@ -48,7 +48,7 @@ The important point: $S_r$ is completely determined by subsets and properties of
 >
 > (3) Why does $S_r$ have no maximum? By the *density of $\mathbb{Q}$ in $\mathbb{R}$* (§4): given any $a \in S_r$, since $a < r$ there exists a rational $a'$ with $a < a' < r$. Then $a' \in S_r$ and $a' > a$, so $a$ is not a maximum of $S_r$.
 >
-> (For the converse — that every set satisfying (1)–(3) determines a unique real number — one takes $r = \sup S$, using completeness; we do not carry this out here.)
+> (For the converse — that every set satisfying (1)–(3) determines a unique real number — one takes $r = \sup S$, using completeness; we do not carry this out here. It is carried out in [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]].)
 
 ^pf-6-1
 
@@ -181,3 +181,6 @@ Recall the logical gap flagged above: the compatibility statements for $S_{r_1},
 > In this course we take the axiomatic approach: $\mathbb{R}$ is *assumed* to be a complete ordered field, and everything is derived from the axioms. Dedekind cuts address a different question — whether such an object *exists* at all. The construction sketches an affirmative answer: starting from $\mathbb{Q}$ only, one defines the set of all cuts, equips it with the order (i) and operations like (ii), and verifies all the axioms, including completeness. So the axioms of §3–§4 are not vacuous.
 
 ^rem-6-3
+
+> [!remark]- Connections
+> - ★ The second standard construction, by classes of rational Cauchy sequences, with full proofs of the field, order and completeness axioms: [[§6★ ℝ from Cauchy Sequences of Rationals]]. Its [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]] matches the two constructions (order and addition, including Proposition §6.2(ii) and the converse of Proposition §6.1), and [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|Corollary §6★.14]] shows any two complete ordered fields are isomorphic.

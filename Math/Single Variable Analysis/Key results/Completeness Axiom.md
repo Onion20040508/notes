@@ -14,6 +14,7 @@ tags: [real-analysis, hub]
 - [[§4 The Completeness Axiom#^cor-4-4|Corollary §4.4: Completeness for Infima]]
 - [[§4 The Completeness Axiom#^thm-4-5|Theorem §4.5: Archimedean Property]]
 - [[§6 Dedekind Cuts#^prop-6-5|Proposition §6.5: Completion of the Construction –- Exercises]]
+- [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13: Cauchy Classes and Dedekind Cuts]] ★
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|Theorem §10.1: Monotone Convergence Theorem]]
 - [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|Theorem §13.2: Completeness of Euclidean Space]]
 - [[§18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
@@ -27,7 +28,7 @@ tags: [real-analysis, hub]
 - [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|Lemma §5.1: One-Step Extension]]
 
 ## Connections
-- This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ (§4 shows $\mathbb{Q}$ fails it). §6 constructs a model of it with Dedekind cuts.
+- This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ (§4 shows $\mathbb{Q}$ fails it). §6 constructs a model of it with Dedekind cuts; ★ [[§6★ ℝ from Cauchy Sequences of Rationals|§6★]] constructs another from rational Cauchy sequences ([[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-11|Theorem §6★.11]]) and shows the model is unique up to isomorphism ([[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|Corollary §6★.14]]).
 - Equivalent forms met later in the course: [[Monotone Convergence Theorem]], [[Bolzano–Weierstrass Theorem]], and Cauchy sequences converging (§10).
 - Metric-space version: completeness of a metric space (§13), which is what Hilbert spaces add to inner product spaces.
 - **Also in [[Calculus]]:** [[§69 Sequences#^def-69-7|Calc Def. §69.7]] (Stewart's statement, where it yields the Monotonic Sequence Theorem).
