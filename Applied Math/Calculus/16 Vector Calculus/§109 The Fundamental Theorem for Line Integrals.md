@@ -354,6 +354,8 @@ The test of Theorem §110.5 says that $\mathbf{F}$ is conservative but not how t
 > W = \frac{\pi^2(e + 1) - (e + 1)}{1 + \pi^2} = (e + 1)\,\frac{\pi^2 - 1}{\pi^2 + 1} .
 > $$
 >
+> (The same integral, evaluated by integrating by parts twice and solving for it: [[§44 Integration by Parts#^ex-44-5|Example §44.5]].)
+>
 > *Source: 233 Practice Final Set 2, Part II Q3*
 
 ^ex-109-5

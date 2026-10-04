@@ -20,4 +20,4 @@ tags: [calculus, hub]
 - [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2: Alternating Series Estimation Theorem]]
 
 ## Connections
-- Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the Cauchy criterion via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of Theorem §73.2.
+- Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the Cauchy criterion via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]].

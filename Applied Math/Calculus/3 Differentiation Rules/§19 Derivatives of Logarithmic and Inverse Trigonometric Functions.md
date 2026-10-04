@@ -49,7 +49,7 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 
 ^pf-19-1
 
-*Uses:* [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
+*Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative), [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
 
 ![[m233-19-1.svg]]
 *Theorem §19.1 for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as Corollary §19.3 confirms.*

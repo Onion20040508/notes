@@ -9,7 +9,7 @@ tags: [calculus]
 ---
 ← [[§43 Average Value of a Function]] · ↑ [[· 7 Techniques of Integration]] · [[§45 Trigonometric Integrals]] →
 
-*Stewart, Section 7.1 · MATH 233 (UMass, Spring 2023): Practice Final Set 2 (Q3b).*
+*Stewart, Section 7.1 · MATH 233 (UMass, Spring 2023): Practice Final Set 2 (Q3(b)).*
 
 Every differentiation rule gives an integration rule. The Chain Rule gives the Substitution Rule ([[§38 The Substitution Rule#^thm-38-1|Theorem §38.1]]), and the Product Rule gives **integration by parts**, the second of the two general methods of integration. It trades the integral of $u\,dv$ for the integral of $v\,du$. This helps when $u$ becomes simpler on differentiation and $dv$ can be integrated. Typical integrands are a polynomial times $e^x$, $\sin x$ or $\cos x$, and functions such as $\ln x$ and $\tan^{-1} x$ whose derivatives are algebraic. Repeating the method, or solving the resulting equation for the unknown integral, handles $e^x \sin x$ and produces reduction formulas for powers.
 
@@ -200,7 +200,7 @@ Theorem §44.2 is used, by forward reference, in the proof of the shell formula 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.
-> - In several variables it becomes Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]].
+> - In several variables it becomes Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]] (hub [[Green's First Identity]]).
 
 > [!example] Example §44.4: Inverse Functions: dv = dx
 > **(a)** Evaluate $\displaystyle\int \ln x\,dx$. **(b)** Calculate $\displaystyle\int_0^1 \tan^{-1} x\,dx$.
@@ -270,7 +270,7 @@ Theorem §44.2 is used, by forward reference, in the proof of the shell formula 
 > (1 + \pi^2)\,I = (\pi^2 - 1)(e + 1), \qquad I = \frac{(e + 1)(\pi^2 - 1)}{\pi^2 + 1} \approx 3.034 .
 > $$
 >
-> (The field is not conservative, so this value depends on the path, not only on the endpoints; see [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Theorem §109.2]].)
+> (The field is not conservative, so this value depends on the path, not only on the endpoints; see [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Theorem §109.2]]. The same work integral is set up from the field, and evaluated with the two antiderivatives written out, in [[§109 The Fundamental Theorem for Line Integrals#^ex-109-5|Example §109.5]](b).)
 >
 > *Source: 233 Practice Final Set 2, Q3(b)*
 

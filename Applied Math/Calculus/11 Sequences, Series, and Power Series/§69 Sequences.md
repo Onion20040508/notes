@@ -175,6 +175,9 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 *Uses:* [[§69 Sequences#^def-69-3|Def. §69.3]]
 
+> [!remark]- Connections
+> - Rigorous treatment: [[§8 A Discussion About Proofs#^thm-8-1|451 Thm. §8.1]] (for $a_n \le b_n \le c_n$ for all $n$, with the same proof; hub [[Squeeze Theorem]]). The version for functions is [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Theorem §8.7]].
+
 > [!theorem] Theorem §69.5: Absolute Value Tending to Zero
 > If $\displaystyle\lim_{n \to \infty} |a_n| = 0$, then $\displaystyle\lim_{n \to \infty} a_n = 0$.
 >
@@ -438,7 +441,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 *Uses:* [[§69 Sequences#^def-69-7|Def. §69.7]], [[§69 Sequences#^def-69-5|Def. §69.5]], [[§69 Sequences#^def-69-6|Def. §69.6]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§69 Sequences#^thm-69-3|§69.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]] (Monotone Convergence Theorem, same proof); an unbounded monotone sequence tends to $\pm\infty$, [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|451 Thm. §10.3]].
+> - Rigorous treatment: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]] (Monotone Convergence Theorem, same proof; hub [[Monotone Convergence Theorem]]); an unbounded monotone sequence tends to $\pm\infty$, [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|451 Thm. §10.3]].
 > - The Completeness Axiom it rests on: [[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]] (with the supremum, [[§4 The Completeness Axiom#^def-4-3|451 Def. §4.3]]); hub [[Completeness Axiom]]. The geometric sequence of Theorem §69.8: [[§9 Limit Theorems for Sequences#^ex-9-10|451 Ex. §9.10]], collected in [[Geometric series]].
 
 > [!example] Example §69.5: A Recursive Sequence

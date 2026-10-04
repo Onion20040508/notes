@@ -9,7 +9,7 @@ tags: [calculus, math233]
 ---
 ← [[§113 Surface Integrals]] · ↑ [[· 16 Vector Calculus]] · [[§115 The Divergence Theorem]] →
 
-*Stewart, Section 16.8 · MATH 233 (UMass, Spring 2023): Chapter 16 Review (Q9c), Practice Final Exam (Q1c, Q6), Practice Final Set 1 (Part II, Q2), Practice Final Set 2 (Part II, Q5).*
+*Stewart, Section 16.8 · MATH 233 (UMass, Spring 2023): Chapter 16 Review (Q9(c)), Practice Final Exam (Q1(c), Q6), Practice Final Set 1 (Part II, Q2), Practice Final Set 2 (Part II, Q5).*
 
 Stokes' Theorem is Green's Theorem for curved surfaces. It relates the line integral of a vector field around the boundary curve $C$ of an oriented surface $S$ in space to the flux of its curl through $S$: $\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$. In practice it is used in two directions. A line integral around a complicated space curve becomes a flux integral over a simple surface bounded by it (often a flat disk). And the flux of a curl through a complicated surface can be computed on the boundary curve, or on any other surface with the same boundary. The theorem also explains the curl: its component along $\mathbf{n}$ is the circulation per unit area around $\mathbf{n}$. Finally it proves that a curl-free field on $\mathbb{R}^3$ is conservative.
 
