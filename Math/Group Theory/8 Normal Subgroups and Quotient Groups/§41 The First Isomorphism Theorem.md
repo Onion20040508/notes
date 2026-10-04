@@ -44,7 +44,7 @@ tags: [group-theory, math493]
 > - Used in Quantum Field Theory: $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm1\}$ — [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-8|QFT Theorem §C5.1.8]].
 
 > [!remark] Remark: Images Are Quotients
-> Whenever $G$ is mapped into another group — into some $S_n$, some $GL_n(k)$, by various actions — the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal; for example $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$, has image $\langle (1\,2) \rangle$, which is not normal ([[§39 Sources of Normal Subgroups#^prop-39-3|WS 6.5]], §36). This is one way in which groups are harder than vector spaces.
+> Whenever $G$ is mapped into another group — into some $S_n$, some $GL_n(k)$, by various actions — the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal; for example $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$, has image $\langle (1\,2) \rangle$, which is not normal ([[§39 Sources of Normal Subgroups#^prop-39-3|WS 6.5]], §39). This is one way in which groups are harder than vector spaces.
 >
 > *Source: lecture*
 
@@ -75,7 +75,7 @@ tags: [group-theory, math493]
 > 1. $\operatorname{sgn}: S_n \to \{\pm 1\}$ is surjective for $n \geq 2$, with kernel $A_n$; so $S_n/A_n \cong \{\pm 1\}$ and $|A_n| = n!/2$.
 > 2. $\det: GL_n(k) \to k^\times$ is surjective ($\det \operatorname{diag}(a, 1, \ldots, 1) = a$), with kernel $SL_n(k)$; so $GL_n(k)/SL_n(k) \cong k^\times$.
 > 3. $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$ has kernel $\{[0], [3]\}$ and image $\{1, 2, 4\}$ ([[§15 Homomorphisms#^ex-15-2|Ex. §15.2]]); indeed $6 = 2 \cdot 3$, and $(\mathbb{Z}/6\mathbb{Z})/\{[0],[3]\} \cong \{1, 2, 4\} \cong \mathbb{Z}/3\mathbb{Z}$.
-> 4. In [[§39 Sources of Normal Subgroups#^thm-39-5|PS 3.2]] (§36), $G/N \cong \varphi(G) \leq S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] — part (3) of [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core]], recorded there.
+> 4. In [[§39 Sources of Normal Subgroups#^thm-39-5|PS 3.2]] (§39), $G/N \cong \varphi(G) \leq S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] — part (3) of [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core]], recorded there.
 > 5. The conjugation homomorphism $G \to \operatorname{Aut}(G)$, $a \mapsto c_a$, has kernel $Z(G)$ and image the inner automorphisms ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|PS 1.2]], §18); so $G/Z(G) \cong \operatorname{Inn}(G)$, the group of inner automorphisms.
 
 ^ex-41-1
@@ -93,7 +93,7 @@ tags: [group-theory, math493]
 >
 > $$ G \cong G/\{e\} \cong \operatorname{Im}\varphi \leq S_G: $$
 >
-> an injective homomorphism is an isomorphism onto its image, which is exactly the step used in the proof of [[§25 Actions#^thm-25-5|Cayley's Theorem]] (§23).
+> an injective homomorphism is an isomorphism onto its image, which is exactly the step used in the proof of [[§25 Actions#^thm-25-5|Cayley's Theorem]] (§25).
 >
 > **[[§39 Sources of Normal Subgroups#^thm-39-5|PS 3.2]] (a normal subgroup inside $H$).** The proof defines $\bar\varphi: G/N \to S_{G/H}$, $\bar\varphi(gN) = \varphi(g)$, for $N = \operatorname{Ker}\varphi$, and checks that it is well defined ($g' = gk$ with $k \in N$ gives $\varphi(g') = \varphi(g)$) and injective ($\varphi(g) = \varphi(g')$ gives $g^{-1}g' \in N$). These are the first two steps of the proof of the First Isomorphism Theorem, carried out before the theorem was available, when $G/N$ was only a set of cosets and injectivity gave $[G:N] \leq n!$ by counting. Now that $G/N$ is a group, $\bar\varphi$ is the isomorphism $\beta$ of the theorem onto $\varphi(G) \leq S_{G/H}$, so $[G:N] = |\varphi(G)|$ divides $n!$ by Lagrange.
 

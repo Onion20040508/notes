@@ -117,7 +117,7 @@ tags: [group-theory, math493]
 *Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]]
 
 ![[m493-27-2.svg]]
-*The proof of §27.5: each left coset $g_iH$ (blue column) is the translate by $g_i$ of $H = h_1K \sqcup \cdots \sqcup h_nK$, so it splits into the $n$ cosets $g_ih_jK$ (red cells). The $m$ columns tile $G$, so there are $mn$ cosets of $K$ in all: $[G:K] = [G:H]\,[H:K]$.*
+*The proof of §29.5: each left coset $g_iH$ (blue column) is the translate by $g_i$ of $H = h_1K \sqcup \cdots \sqcup h_nK$, so it splits into the $n$ cosets $g_ih_jK$ (red cells). The $m$ columns tile $G$, so there are $mn$ cosets of $K$ in all: $[G:K] = [G:H]\,[H:K]$.*
 
 > [!theorem] Theorem §29.6: Cauchy's Theorem
 > Let $G$ be finite and $p$ a prime dividing $|G|$. Then $G$ has an element of order $p$.

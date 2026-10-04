@@ -75,8 +75,7 @@ $\mathbb{Z}$ modulo $n\mathbb{Z}$ is the model for every quotient: $\mathbb{Z}/n
 
 *$\mathbb{Z}$ elsewhere:* ← [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ and nℤ|Chapter 4]] · no later appearance yet · [[The integers ℤ and the subgroups nℤ|all appearances]]
 
-## ℤ/nℤ and Uₙ
-
+## ℤ∕nℤ and Uₙ
 $\mathbb{Z}/4\mathbb{Z}$ is the first quotient computed with representatives: $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ is cyclic of order $2$, but unlike $S_3/A_3$ no subgroup of representatives realizes it. The First Isomorphism Theorem explains Chapter 4's $\mathbb{Z}/6\mathbb{Z} \to U_7$, and the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$.
 
 ![[§40 Quotient Groups#^ex-40-2]]
@@ -85,7 +84,7 @@ $\mathbb{Z}/4\mathbb{Z}$ is the first quotient computed with representatives: $(
 
 The contrast with $S_3/A_3$ is [[§40 Quotient Groups#^rem-40-3|Life Is Especially Nice When S Is a Subgroup]] (in the $S_3$ part); $\mathbb{Z}/6\mathbb{Z} \to U_7$ is item (3) of [[§41 The First Isomorphism Theorem#^ex-41-1|The First Isomorphism Theorem in Action]] (in the $A_n$ part).
 
-*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ/nℤ and Uₙ|Chapter 6]] · no later appearance yet · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
+*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] · no later appearance yet · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

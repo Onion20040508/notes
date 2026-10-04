@@ -27,13 +27,12 @@ The items, all in [[§21 The Sign Homomorphism and the Alternating Group|§21]]:
 
 *$A_n$ elsewhere:* first appearance · [[§44 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] → · [[The alternating group A₅|all appearances]]
 
-## ℤ/nℤ and Uₙ
-
+## ℤ∕nℤ and Uₙ
 [[§22 The Structure of Uₙ|§22]] is devoted to $U_n$: the Chinese remainder theorem splits it into a product of unit groups of prime powers, which gives Euler's totient formula and describes $U_{15}$, $U_{10}$ and $U_{24}$ as products of cyclic groups.
 
 The items, all in [[§22 The Structure of Uₙ|§22]]: [[§22 The Structure of Uₙ#^thm-22-2|Uₙ as a Product of Prime-Power Unit Groups]], [[§22 The Structure of Uₙ#^cor-22-3|Euler's Totient Formula]], [[§22 The Structure of Uₙ#^ex-22-1|Unit Groups via the Decomposition]].
 
-*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ/nℤ and Uₙ|Chapter 4]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ/nℤ and Uₙ|Chapter 6]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
+*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

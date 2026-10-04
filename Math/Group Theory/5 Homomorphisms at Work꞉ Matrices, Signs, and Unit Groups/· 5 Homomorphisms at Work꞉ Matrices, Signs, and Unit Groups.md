@@ -19,13 +19,14 @@ Three substantial applications of the homomorphism language, mostly from Problem
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations]]
 - [[§21 The Sign Homomorphism and the Alternating Group]]
 - [[§22 The Structure of Uₙ]]
+- [[§23 S₃, Aₙ, Uₙ and GLₙ]]
 
 ## Central results
-- [[The Sign Homomorphism]] (§20.3)
+- [[The Sign Homomorphism]] (§21.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|Theorem §20.2: Linear Extension]]: 19 later results
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^cor-20-3|Corollary §20.3: Permutations of the Basis Give Invertible Linear Maps]]: 18 later results
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|Proposition §20.5: σ ↦ M(σ) Is an Injective Homomorphism Sₙ → GLₙ(k)]]: 13 later results
-- [[The Sign Homomorphism|Theorem §20.3: The Sign Is a Homomorphism]]: 11 later results
+- [[The Sign Homomorphism|Theorem §21.3: The Sign Is a Homomorphism]]: 11 later results

@@ -97,7 +97,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-8|Proposition §21.8]] (590 §21.8).
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]] (LADR 3.13), [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]] (LADR 3.18).
-> - Kernels are even normal: [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]] (§36.2).
+> - Kernels are even normal: [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]] (§39.2).
 > - Computational version for linear maps: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]].
 
 > [!theorem] Proposition §15.3: Surjectivity and Injectivity via Image and Kernel
@@ -157,7 +157,7 @@ tags: [group-theory, math493]
 *Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - The normal-subgroup version: [[§39 Sources of Normal Subgroups#^prop-39-4|Preimages and Images of Normal Subgroups]] (§36.4).
+> - The normal-subgroup version: [[§39 Sources of Normal Subgroups#^prop-39-4|Preimages and Images of Normal Subgroups]] (§39.4).
 
 > [!remark] Remark: Kernels Are Normal: A Preview
 > Kernels are not merely subgroups but *normal* subgroups: $\varphi(ghg^{-1}) = \varphi(g)\varphi(h)\varphi(g)^{-1} = e$ whenever $\varphi(h) = e$ ([[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]). Images need not be normal.

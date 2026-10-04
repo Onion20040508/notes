@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 27.2", "Lagrange"]
+aliases: ["MATH 493 29.2", "Lagrange"]
 tags: [group-theory, hub]
 ---
 ![[§29 The Index and Lagrange's Theorem#^thm-29-2]]

@@ -59,7 +59,7 @@ tags: [group-theory, math493]
 > 1. $S_X$ acts on $X$ by $\sigma \star x = \sigma(x)$; the axioms are $(\sigma\tau)(x) = \sigma(\tau(x))$ and $\operatorname{id}(x) = x$.
 > 2. $G = \mathbb{R}^\times$ acts on any real vector space $V$ by scalar multiplication, $c \star v = cv$: $c_1(c_2 v) = (c_1 c_2)v$ and $1 v = v$.
 > 3. $GL_n(k)$ acts on $k^n$ by $A \star v = Av$: associativity of matrix multiplication and $I v = v$.
-> 4. $S_n$ acts on $k^n$ by $\sigma \star v = M(\sigma) v$, and on $k[x_1, \ldots, x_n]$ by permuting variables ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|§19]]); the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|compatibility proved there]] is the first axiom.
+> 4. $S_n$ acts on $k^n$ by $\sigma \star v = M(\sigma) v$, and on $k[x_1, \ldots, x_n]$ by permuting variables ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|§20]]); the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|compatibility proved there]] is the first axiom.
 > 5. Every group acts on itself by **left multiplication**, $g \star x = gx$ (the axioms are associativity and $ex = x$), and by **conjugation**, $g \star x = gxg^{-1}$ (the axiom is $c_g \circ c_h = c_{gh}$, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]).
 > 6. The **trivial action**: $g \star x = x$ for all $g, x$.
 
@@ -251,7 +251,7 @@ tags: [group-theory, math493]
 *Uses:* [[§25 Actions#^thm-25-5|§25.5]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]]
 
 ![[m493-23-1.svg]]
-*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §23.6.*
+*The embedding of a group of order $n$ into $GL_n(k)$: Cayley's theorem, relabelling, and the permutation representation, each injective. Their composite (blue) is the embedding of Corollary §25.6.*
 
 > [!remark]- Connections
 > - The small representations the next remark asks for begin with characters: [[§45 Characters#^rem-45-4|One-Dimensional Representations]].

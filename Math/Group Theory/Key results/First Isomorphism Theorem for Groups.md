@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 38.1", "first isomorphism theorem (groups)"]
+aliases: ["MATH 493 41.1", "first isomorphism theorem (groups)"]
 tags: [group-theory, hub]
 ---
 ![[§41 The First Isomorphism Theorem#^thm-41-1]]

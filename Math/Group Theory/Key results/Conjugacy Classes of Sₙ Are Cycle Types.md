@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 31.3"]
+aliases: ["MATH 493 33.3"]
 tags: [group-theory, hub]
 ---
 ![[§33 Conjugacy Classes#^thm-33-3]]

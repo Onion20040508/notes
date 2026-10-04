@@ -16,5 +16,5 @@ tags: [linear-algebra, hub]
 ## Connections
 - Same statement for groups in MATH 493 (see the group version below) and for rings.
 - Universal property: any linear map that kills $\nullsp T$ factors uniquely through $\pi$.
-- Group version: [[First Isomorphism Theorem for Groups]] (MATH 493 §38.1), where the kernel is always a normal subgroup but the image need not be.
+- Group version: [[First Isomorphism Theorem for Groups]] (MATH 493 §41.1), where the kernel is always a normal subgroup but the image need not be.
 - The universal property is proved in 591 as [[§20 Linear Algebra Toolkit#^prop-20-6|591 Prop. §20.6]]: a linear map vanishing on W factors uniquely through V∕W.

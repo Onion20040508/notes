@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 36.2"]
+aliases: ["MATH 493 39.2"]
 tags: [group-theory, hub]
 ---
 ![[§39 Sources of Normal Subgroups#^prop-39-2]]

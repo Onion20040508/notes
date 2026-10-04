@@ -80,7 +80,7 @@ tags: [linear-algebra]
 ^ladr-9-32
 
 > [!remark]- Connections
-> - Developed in 493: the sign via inversions, [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]], and its multiplicativity, [[The Sign Homomorphism]] (493 Thm. §20.3).
+> - Developed in 493: the sign via inversions, [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]], and its multiplicativity, [[The Sign Homomorphism]] (493 Thm. §21.3).
 > - Same definition, by inversions, in 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|591 Def. §10.3]], with its properties in [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|591 Prop. §10.2]].
 
 > [!example] Example 9.33: Signs (p. 349)

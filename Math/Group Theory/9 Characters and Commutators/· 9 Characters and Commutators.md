@@ -18,6 +18,7 @@ tags: [chapter, group-theory]
 ## Sections
 - [[§45 Characters]]
 - [[§46 Commutators]]
+- [[§47 S₃, Aₙ and GLₙ]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

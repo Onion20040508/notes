@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 > - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-17|Remark after Definition §21.12]] (kernels are normal).
 > - Converse: [[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]]; used in [[§43 Simple Groups#^prop-43-3|Homomorphisms out of a Simple Group]].
 
-The converse also holds: every normal subgroup is the kernel of a homomorphism, namely of the projection onto the quotient group ([[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]], §37).
+The converse also holds: every normal subgroup is the kernel of a homomorphism, namely of the projection onto the quotient group ([[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]], §40).
 
 > [!example] Example §39.2: Kernels
 > 1. $A_n = \operatorname{Ker}(\operatorname{sgn})$ for the sign $\operatorname{sgn}: S_n \to \{\pm 1\}$, giving a second proof that $A_n \trianglelefteq S_n$ (lecture).
@@ -74,7 +74,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-3
 
 > [!proof]+ Proof
-> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First Isomorphism Theorem#^rem-41-1|§38]]).
+> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First Isomorphism Theorem#^rem-41-1|§41]]).
 
 ^pf-39-3
 
@@ -130,7 +130,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-6
 
 > [!proof]+ Proof
-> **(1)** The kernel of an action is the intersection of all stabilizers, and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First Isomorphism Theorem#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §38).
+> **(1)** The kernel of an action is the intersection of all stabilizers, and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First Isomorphism Theorem#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §41).
 
 ^pf-39-6
 

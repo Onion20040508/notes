@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 39.2", "diamond isomorphism theorem", "H/(H ∩ N) ≅ HN/N"]
+aliases: ["MATH 493 42.2", "diamond isomorphism theorem", "H/(H ∩ N) ≅ HN/N"]
 tags: [group-theory, hub]
 ---
 ![[§42 The Second and Third Isomorphism Theorems#^thm-42-2]]
@@ -16,8 +16,8 @@ tags: [group-theory, hub]
 - [[§40 Quotient Groups#^def-40-1|Definition §40.1: Quotient Group]]
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
 - [[§41 The First Isomorphism Theorem#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
-- [[§42 The Second and Third Isomorphism Theorems#^lem-42-1|Lemma §42.1: HN Is a Subgroup When N Is Normal]]
 - [[§42 The Second and Third Isomorphism Theorems#^def-42-1|Definition §42.1: The Product Set HN]]
+- [[§42 The Second and Third Isomorphism Theorems#^lem-42-1|Lemma §42.1: HN Is a Subgroup When N Is Normal]]
 
 ## Used in (Group Theory)
 - [[§42 The Second and Third Isomorphism Theorems#^cor-42-3|Corollary §42.3: Subgroup Representatives, Again]]

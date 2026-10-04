@@ -63,7 +63,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 *Uses:* [[§24 Equivalence Relations and Partitions#^def-24-1|Def. §24.1]], [[§24 Equivalence Relations and Partitions#^def-24-2|Def. §24.2]], [[§24 Equivalence Relations and Partitions#^def-24-3|Def. §24.3]]
 
 ![[m493-22-1.svg]]
-*Proposition §22.1: the equivalence classes cut $X$ into disjoint pieces. If $x_1 \sim x_2$, their classes coincide (blue); a point $x_3$ not related to $x_1$ has a class (red) disjoint from it. No two classes partially overlap, and every point lies in its own class.*
+*Proposition §24.1: the equivalence classes cut $X$ into disjoint pieces. If $x_1 \sim x_2$, their classes coincide (blue); a point $x_3$ not related to $x_1$ has a class (red) disjoint from it. No two classes partially overlap, and every point lies in its own class.*
 
 > [!remark]- Connections
 > - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 §12.3).

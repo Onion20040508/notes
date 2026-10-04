@@ -67,7 +67,7 @@ tags: [group-theory, math493]
 
 ^pf-38-2
 
-*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§35)]]
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]
 
 > [!remark]- Connections
 > - Worksheet form: [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]] (WS 6.1).
@@ -100,7 +100,7 @@ tags: [group-theory, math493]
 > - Lecture form: [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]].
 
 > [!remark] Remark: Relation to the Lecture
-> Four of the five conditions have already appeared: (1) is characterization (2) of [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]] (lecture), (4) is its characterization (4), (5) is the well-definedness of coset multiplication ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), and (2) is [[§39 Sources of Normal Subgroups#^prop-39-7|Normal Subgroups Are Unions of Conjugacy Classes]] (§36). Condition (3) is new: it phrases normality through the action of $G$ on $G/N$ from Worksheet 5 ([[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]).
+> Four of the five conditions have already appeared: (1) is characterization (2) of [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]] (lecture), (4) is its characterization (4), (5) is the well-definedness of coset multiplication ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), and (2) is [[§39 Sources of Normal Subgroups#^prop-39-7|Normal Subgroups Are Unions of Conjugacy Classes]] (§39). Condition (3) is new: it phrases normality through the action of $G$ on $G/N$ from Worksheet 5 ([[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]).
 
 ^rem-38-3
 

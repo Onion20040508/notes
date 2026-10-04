@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 33.3"]
+aliases: ["MATH 493 35.3"]
 tags: [group-theory, hub]
 ---
 ![[§35 The Center#^thm-35-3]]

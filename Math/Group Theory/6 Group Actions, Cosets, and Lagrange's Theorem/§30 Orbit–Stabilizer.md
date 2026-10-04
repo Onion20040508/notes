@@ -177,7 +177,7 @@ tags: [group-theory, math493]
 ^ex-30-2
 
 ![[m493-28-3.svg]]
-*The cosets of $H = \{e, (1\,2)\}$ in $S_3$, sorted as in §28.4: each left coset $\alpha H$ (row) collects the permutations with one value of $\alpha(3)$, each right coset $H\alpha$ (column) those with one value of $\alpha^{-1}(3)$. The pair $\alpha = (1\,2\,3)$, $\beta = (1\,3)$ (red) share a row, since $\alpha(3) = \beta(3) = 1$, but not a column, since $\alpha^{-1}(3) = 2 \neq 1 = \beta^{-1}(3)$. The left half is the orbit bijection $S_3/H \to \{1,2,3\}$ of §28.5.*
+*The cosets of $H = \{e, (1\,2)\}$ in $S_3$, sorted as in §30.4: each left coset $\alpha H$ (row) collects the permutations with one value of $\alpha(3)$, each right coset $H\alpha$ (column) those with one value of $\alpha^{-1}(3)$. The pair $\alpha = (1\,2\,3)$, $\beta = (1\,3)$ (red) share a row, since $\alpha(3) = \beta(3) = 1$, but not a column, since $\alpha^{-1}(3) = 2 \neq 1 = \beta^{-1}(3)$. The left half is the orbit bijection $S_3/H \to \{1,2,3\}$ of §30.5.*
 
 > [!remark] Remark: Why the Bijection $G/H \to H\backslash G$ Uses $g^{-1}$
 > This example explains the shape of the map in [[§28 Left and Right Cosets#^prop-28-3|§28.3]]. Left cosets of the stabilizer record $\alpha(n)$; right cosets record $\alpha^{-1}(n)$. The two decompositions of $S_n$ are therefore genuinely different — they sort permutations by different data — but they are matched by the operation $\alpha \mapsto \alpha^{-1}$, which converts one datum into the other. This is exactly why the natural bijection is $gH \mapsto Hg^{-1}$ and not $gH \mapsto Hg$.

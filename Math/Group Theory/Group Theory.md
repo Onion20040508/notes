@@ -11,15 +11,15 @@ tags: [subject, group-theory]
 ---
 # Group Theory
 
-MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§42 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`.
+MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§47 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`.
 
 ## Roadmap
-These notes follow the course, and the course studies groups through two families of examples and one organizing idea. Along the *numbers* thread live $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ and the unit groups $U_n$: abelian, mostly cyclic, and governed by the [[Division Algorithm|division algorithm]]. Along the *symmetries* thread live $S_n$ and $GL_n(k)$: non-abelian, and computed with cycles and matrices. Chapters 1–3 set up both families; Chapters 4–5 compare them through *homomorphisms*, which [[Classification of Cyclic Groups|classify the cyclic groups]] and produce [[The Sign Homomorphism|the sign]] and the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrices]]. The organizing idea is the *group action* (Chapter 6): an action of $G$ on a set is the same thing as a homomorphism $G \to S_X$ ([[Actions Are Homomorphisms to S_X|§23.3]]). Cosets are the orbits of a subgroup acting by multiplication, which gives [[Lagrange's Theorem]]; conjugation is $G$ acting on itself, which gives conjugacy classes, the [[Class Equation|class equation]] and the [[§35 The Center#^def-35-1|center]] (Chapter 7); and the subgroups whose cosets can be multiplied are the normal ones, which gives [[Quotient Groups|quotient groups]] and the [[First Isomorphism Theorem for Groups|First Isomorphism Theorem]] (Chapter 8). The two threads meet again in the [[§45 Characters#^def-45-1|characters]] of Chapter 9: homomorphisms to abelian groups, of which the sign is the first example.
+These notes follow the course, and the course studies groups through two families of examples and one organizing idea. Along the *numbers* thread live $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ and the unit groups $U_n$: abelian, mostly cyclic, and governed by the [[Division Algorithm|division algorithm]]. Along the *symmetries* thread live $S_n$ and $GL_n(k)$: non-abelian, and computed with cycles and matrices. Chapters 1–3 set up both families; Chapters 4–5 compare them through *homomorphisms*, which [[Classification of Cyclic Groups|classify the cyclic groups]] and produce [[The Sign Homomorphism|the sign]] and the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrices]]. The organizing idea is the *group action* (Chapter 6): an action of $G$ on a set is the same thing as a homomorphism $G \to S_X$ ([[Actions Are Homomorphisms to S_X|§25.3]]). Cosets are the orbits of a subgroup acting by multiplication, which gives [[Lagrange's Theorem]]; conjugation is $G$ acting on itself, which gives conjugacy classes, the [[Class Equation|class equation]] and the [[§35 The Center#^def-35-1|center]] (Chapter 7); and the subgroups whose cosets can be multiplied are the normal ones, which gives [[Quotient Groups|quotient groups]] and the [[First Isomorphism Theorem for Groups|First Isomorphism Theorem]] (Chapter 8). The two threads meet again in the [[§45 Characters#^def-45-1|characters]] of Chapter 9: homomorphisms to abelian groups, of which the sign is the first example.
 
 ![[m493-0-1.svg]]
 *The roadmap: the numbers thread (teal), the symmetries thread (violet), and actions (orange); arrow labels are the bridges.*
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ ([[Subgroups of ℤ|§5.1]]) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the [[Classification of Cyclic Groups]] shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]) turns permutations into matrices, and the determinant then gives the sign ([[The Sign Homomorphism|§20.3]]). The central bridge is [[Actions Are Homomorphisms to S_X]]: every construction below it — cosets and Lagrange ([[Lagrange's Theorem|§27.2]]), orbit–stabilizer ([[Orbit–Stabilizer Theorem|§28.3]]), conjugacy classes and the class equation ([[Class Equation|§32.4]]) — is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes ([[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]) and exactly the subgroups for which coset multiplication is well defined ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), which is what makes $G/N$ a group ([[Quotient Groups|§37.1]]). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ ([[§46 Commutators#^def-46-3|Def. §46.3]]); the sign, met on the symmetries thread, is the first nontrivial example.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ ([[Subgroups of ℤ|§5.1]]) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the [[Classification of Cyclic Groups]] shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]) turns permutations into matrices, and the determinant then gives the sign ([[The Sign Homomorphism|§21.3]]). The central bridge is [[Actions Are Homomorphisms to S_X]]: every construction below it — cosets and Lagrange ([[Lagrange's Theorem|§29.2]]), orbit–stabilizer ([[Orbit–Stabilizer Theorem|§30.3]]), conjugacy classes and the class equation ([[Class Equation|§34.4]]) — is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes ([[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]]) and exactly the subgroups for which coset multiplication is well defined ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), which is what makes $G/N$ a group ([[Quotient Groups|§40.1]]). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ ([[§46 Commutators#^def-46-3|Def. §46.3]]); the sign, met on the symmetries thread, is the first nontrivial example.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -95,23 +95,23 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Injective iff Trivial Kernel]] (§15.3)
 - [[Classification of Cyclic Groups]] (§17.1)
 - [[Subgroups of Cyclic Groups Are Cyclic]] (§17.4)
-- [[The Sign Homomorphism]] (§20.3)
-- [[Actions Are Homomorphisms to S_X]] (§23.3)
-- [[Cayley's Theorem]] (§23.5)
-- [[Cosets Partition a Group]] (§26.2)
-- [[Lagrange's Theorem]] (§27.2)
-- [[Groups of Prime Order Are Cyclic]] (§27.7)
-- [[Orbit–Stabilizer Theorem]] (§28.3)
-- [[Burnside's Lemma]] (§28.6)
-- [[Conjugacy Classes of Sₙ Are Cycle Types]] (§31.3)
-- [[Class Equation]] (§32.4)
-- [[p-Groups Have Nontrivial Center]] (§33.3)
-- [[Characterizations of Normality]] (§35.2)
-- [[Kernels Are Normal]] (§36.2)
-- [[Quotient Groups]] (§37.1)
-- [[First Isomorphism Theorem for Groups]] (§38.1)
-- [[Second Isomorphism Theorem for Groups]] (§39.2)
-- [[Aₙ Is Simple for n ≥ 5]] (§40.9)
+- [[The Sign Homomorphism]] (§21.3)
+- [[Actions Are Homomorphisms to S_X]] (§25.3)
+- [[Cayley's Theorem]] (§25.5)
+- [[Cosets Partition a Group]] (§28.2)
+- [[Lagrange's Theorem]] (§29.2)
+- [[Groups of Prime Order Are Cyclic]] (§29.7)
+- [[Orbit–Stabilizer Theorem]] (§30.3)
+- [[Burnside's Lemma]] (§30.6)
+- [[Conjugacy Classes of Sₙ Are Cycle Types]] (§33.3)
+- [[Class Equation]] (§34.4)
+- [[p-Groups Have Nontrivial Center]] (§35.3)
+- [[Characterizations of Normality]] (§38.2)
+- [[Kernels Are Normal]] (§39.2)
+- [[Quotient Groups]] (§40.1)
+- [[First Isomorphism Theorem for Groups]] (§41.1)
+- [[Second Isomorphism Theorem for Groups]] (§42.2)
+- [[Aₙ Is Simple for n ≥ 5]] (§43.9)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.

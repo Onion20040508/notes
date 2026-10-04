@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 ^def-18-2
 
 > [!remark]- Connections
-> - The classes of conjugate elements: [[§33 Conjugacy Classes#^def-33-1|Conjugacy Class]] (§31.1).
+> - The classes of conjugate elements: [[§33 Conjugacy Classes#^def-33-1|Conjugacy Class]] (§33.1).
 
 > [!theorem] Proposition §18.1: Conjugation Is an Automorphism
 > Let $G$ be a group and $a \in G$. Let $c_a: G \to G$, $c_a(g) = a g a^{-1}$, be conjugation by $a$.
@@ -52,7 +52,7 @@ tags: [group-theory, math493]
 *Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-1|Def. §18.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!remark]- Connections
-> - Conjugation as an action of $G$ on itself: [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|The Conjugation Action]] (§32.1).
+> - Conjugation as an action of $G$ on itself: [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|The Conjugation Action]] (§34.1).
 
 > [!remark] Remark: Earlier Occurrences of Conjugation
 > Conjugation is the operation behind the mixed hypothesis of [[§2 First Consequences of the Axioms#^prop-2-1|WS 1.1]] ($g h_1 = h_2 g$ says $h_2 = c_g(h_1)$) and behind the [[§12 Multiplying and Conjugating Cycles#^prop-12-1|relabeling of cycles]] in $S_n$ ($\sigma\,(a_1 \cdots a_r)\,\sigma^{-1} = (\sigma(a_1) \cdots \sigma(a_r))$, which is $c_\sigma$ applied to a cycle). In an abelian group every $c_a$ is the identity; the extent to which $c_a \neq \operatorname{id}$ measures non-commutativity.

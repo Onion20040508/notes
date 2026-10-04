@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 32.4"]
+aliases: ["MATH 493 34.4"]
 tags: [group-theory, hub]
 ---
 ![[§34 Conjugation as an Action and the Class Equation#^thm-34-4]]

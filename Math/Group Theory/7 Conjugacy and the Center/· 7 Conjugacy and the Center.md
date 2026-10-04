@@ -19,11 +19,12 @@ Conjugation is the action of a group on itself that detects non-commutativity. T
 - [[§33 Conjugacy Classes]]
 - [[§34 Conjugation as an Action and the Class Equation]]
 - [[§35 The Center]]
+- [[§36 S₃, S₄ and GLₙ]]
 
 ## Central results
-- [[Conjugacy Classes of Sₙ Are Cycle Types]] (§31.3)
-- [[Class Equation]] (§32.4)
-- [[p-Groups Have Nontrivial Center]] (§33.3)
+- [[Conjugacy Classes of Sₙ Are Cycle Types]] (§33.3)
+- [[Class Equation]] (§34.4)
+- [[p-Groups Have Nontrivial Center]] (§35.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

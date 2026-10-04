@@ -21,6 +21,7 @@ This chapter studies maps that respect the group operation. After multiplication
 - [[§16 Isomorphisms]]
 - [[§17 Cyclic Groups]]
 - [[§18 Conjugation, Products, and Pointwise Products]]
+- [[§19 S₃, ℤ∕nℤ and Uₙ]]
 
 ## Central results
 - [[Injective iff Trivial Kernel]] (§15.3)

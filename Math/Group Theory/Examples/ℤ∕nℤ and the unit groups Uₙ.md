@@ -32,22 +32,22 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 - Every cyclic group of order $n$ is isomorphic to $\mathbb{Z}/n\mathbb{Z}$ ([[§17 Cyclic Groups#^thm-17-1|§17]])
 - Generators and subgroups of a finite cyclic group ([[§17 Cyclic Groups#^cor-17-6|§17]])
 - The six subgroups of $\mathbb{Z}/12\mathbb{Z}$ ([[§17 Cyclic Groups#^ex-17-1|§17]])
-- $U_n$ is the product of the unit groups of its prime-power factors ([[§22 The Structure of Uₙ#^thm-22-2|§21]])
-- Euler's totient formula ([[§22 The Structure of Uₙ#^cor-22-3|§21]])
-- Examples: $U_{15}$, $U_{10}$, $U_{24}$ as products of cyclic groups ([[§22 The Structure of Uₙ#^ex-22-1|§21]])
-- $\mathbb{Z}/3\mathbb{Z}$ rotating a triangle, and $\mathbb{Z}/4\mathbb{Z}$ acting unfaithfully on two points ([[§25 Actions#^ex-25-3|§23]])
-- Fermat's little theorem, from Lagrange applied to $U_p$ ([[§29 The Index and Lagrange's Theorem#^cor-29-4|§27]])
-- Every group of prime order $p$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ ([[§29 The Index and Lagrange's Theorem#^thm-29-7|§27]])
-- One group of each prime order; two of order $4$ and two of order $6$ ([[§29 The Index and Lagrange's Theorem#^rem-29-3|§27]])
-- $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§37]])
-- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ computed with representatives ([[§40 Quotient Groups#^ex-40-2|§37]])
-- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives ([[§40 Quotient Groups#^rem-40-3|§37]])
-- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First Isomorphism Theorem#^ex-41-1|§38]])
-- The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§43 Simple Groups#^thm-43-1|§40]])
+- $U_n$ is the product of the unit groups of its prime-power factors ([[§22 The Structure of Uₙ#^thm-22-2|§22]])
+- Euler's totient formula ([[§22 The Structure of Uₙ#^cor-22-3|§22]])
+- Examples: $U_{15}$, $U_{10}$, $U_{24}$ as products of cyclic groups ([[§22 The Structure of Uₙ#^ex-22-1|§22]])
+- $\mathbb{Z}/3\mathbb{Z}$ rotating a triangle, and $\mathbb{Z}/4\mathbb{Z}$ acting unfaithfully on two points ([[§25 Actions#^ex-25-3|§25]])
+- Fermat's little theorem, from Lagrange applied to $U_p$ ([[§29 The Index and Lagrange's Theorem#^cor-29-4|§29]])
+- Every group of prime order $p$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ ([[§29 The Index and Lagrange's Theorem#^thm-29-7|§29]])
+- One group of each prime order; two of order $4$ and two of order $6$ ([[§29 The Index and Lagrange's Theorem#^rem-29-3|§29]])
+- $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§40]])
+- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ computed with representatives ([[§40 Quotient Groups#^ex-40-2|§40]])
+- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives ([[§40 Quotient Groups#^rem-40-3|§40]])
+- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First Isomorphism Theorem#^ex-41-1|§41]])
+- The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§43 Simple Groups#^thm-43-1|§43]])
 
 ## Chapter by chapter
 
-Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ/nℤ and Uₙ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ/nℤ and Uₙ|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ/nℤ and Uₙ|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ/nℤ and Uₙ|Chapter 6]] · [[§44 S₃, S₄, A₄ and A₅#ℤ/nℤ and Uₙ|Chapter 8]].
+Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ∕nℤ and Uₙ|Chapter 1]] · [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] · [[§44 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]].
 
 ## $(\mathbb{Z}/n\mathbb{Z}, +)$ is a group; the nonzero classes form a group under multiplication iff $n$ is prime
 ![[§3 Basic Examples of Groups#^ex-3-1]]

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 20.3", "sgn is a homomorphism", "parity of a permutation"]
+aliases: ["MATH 493 21.3", "sgn is a homomorphism", "parity of a permutation"]
 tags: [group-theory, hub]
 ---
 ![[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3]]

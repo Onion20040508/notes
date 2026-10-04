@@ -27,17 +27,17 @@ The central chapter of the first half of the course. A group [[§25 Actions#^def
 - [[§32 Linear Groups, the Cube, S₃ and A₄]]
 
 ## Central results
-- [[Actions Are Homomorphisms to S_X]] (§23.3)
-- [[Cayley's Theorem]] (§23.5)
-- [[Cosets Partition a Group]] (§26.2)
-- [[Lagrange's Theorem]] (§27.2)
-- [[Groups of Prime Order Are Cyclic]] (§27.7)
-- [[Orbit–Stabilizer Theorem]] (§28.3)
-- [[Burnside's Lemma]] (§28.6)
+- [[Actions Are Homomorphisms to S_X]] (§25.3)
+- [[Cayley's Theorem]] (§25.5)
+- [[Cosets Partition a Group]] (§28.2)
+- [[Lagrange's Theorem]] (§29.2)
+- [[Groups of Prime Order Are Cyclic]] (§29.7)
+- [[Orbit–Stabilizer Theorem]] (§30.3)
+- [[Burnside's Lemma]] (§30.6)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]]: 49 later results
-- [[Cosets Partition a Group|Proposition §26.2: Cosets Are the Equivalence Classes]]: 47 later results
+- [[Cosets Partition a Group|Proposition §28.2: Cosets Are the Equivalence Classes]]: 47 later results
 - [[§29 The Index and Lagrange's Theorem#^prop-29-1|Proposition §29.1: All Cosets Have the Same Size]]: 33 later results
-- [[Lagrange's Theorem|Theorem §27.2: Lagrange]]: 32 later results
+- [[Lagrange's Theorem|Theorem §29.2: Lagrange]]: 32 later results

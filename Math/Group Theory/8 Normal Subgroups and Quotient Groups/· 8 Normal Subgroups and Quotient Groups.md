@@ -23,18 +23,19 @@ Normal subgroups are exactly the subgroups for which multiplication of cosets is
 - [[§41 The First Isomorphism Theorem]]
 - [[§42 The Second and Third Isomorphism Theorems]]
 - [[§43 Simple Groups]]
+- [[§44 S₃, S₄, A₄ and A₅]]
 
 ## Central results
-- [[Characterizations of Normality]] (§35.2)
-- [[Kernels Are Normal]] (§36.2)
-- [[Quotient Groups]] (§37.1)
-- [[First Isomorphism Theorem for Groups]] (§38.1)
-- [[Second Isomorphism Theorem for Groups]] (§39.2)
-- [[Aₙ Is Simple for n ≥ 5]] (§40.9)
+- [[Characterizations of Normality]] (§38.2)
+- [[Kernels Are Normal]] (§39.2)
+- [[Quotient Groups]] (§40.1)
+- [[First Isomorphism Theorem for Groups]] (§41.1)
+- [[Second Isomorphism Theorem for Groups]] (§42.2)
+- [[Aₙ Is Simple for n ≥ 5]] (§43.9)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Characterizations of Normality|Proposition §35.2: Characterizations of Normality]]: 15 later results
-- [[Kernels Are Normal|Proposition §36.2: Kernels Are Normal]]: 10 later results
+- [[Characterizations of Normality|Proposition §38.2: Characterizations of Normality]]: 15 later results
+- [[Kernels Are Normal|Proposition §39.2: Kernels Are Normal]]: 10 later results
 - [[§37 Multiplying Cosets#^prop-37-1|Proposition §37.1: When Coset Multiplication Is Well Defined]]: 9 later results
-- [[Quotient Groups|Theorem §37.1: G/N Is a Group]]: 8 later results
+- [[Quotient Groups|Theorem §40.1: G/N Is a Group]]: 8 later results

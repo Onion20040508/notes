@@ -17,8 +17,8 @@ The additive group $(\mathbb{Z}, +)$, the infinite cyclic group, and its subgrou
 - Reduction $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ has kernel $n\mathbb{Z}$ ([[§15 Homomorphisms#^ex-15-1|§15]])
 - Every infinite cyclic group is isomorphic to $\mathbb{Z}$ ([[§17 Cyclic Groups#^thm-17-1|§17]])
 - The homomorphism $\mathbb{Z} \to G$, $k \mapsto g^k$, has kernel $N\mathbb{Z}$ ([[§17 Cyclic Groups#^prop-17-3|§17]])
-- $\mathbb{Z}$ modulo $n\mathbb{Z}$ is the model case for quotients ([[§37 Multiplying Cosets#^rem-37-1|§34]])
-- $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by the normal subgroup $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§37]])
+- $\mathbb{Z}$ modulo $n\mathbb{Z}$ is the model case for quotients ([[§37 Multiplying Cosets#^rem-37-1|§37]])
+- $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by the normal subgroup $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 
 ## Chapter by chapter
 

@@ -168,7 +168,7 @@ tags: [group-theory, math493]
 *Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]]
 
 > [!remark] Remark: Using These to Distinguish Groups
-> Both give non-isomorphism tests. For instance $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$ while $|Z(S_3)| = 1$ ([[§35 The Center#^def-35-1|§33]]), re-proving $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly. And since the subgroup lattices correspond, a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup: $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0],[2]\}$ and $U_8$ has $\{1,3\}$, whereas $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none ([[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]]).
+> Both give non-isomorphism tests. For instance $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$ while $|Z(S_3)| = 1$ ([[§35 The Center#^def-35-1|§35]]), re-proving $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly. And since the subgroup lattices correspond, a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup: $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0],[2]\}$ and $U_8$ has $\{1,3\}$, whereas $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none ([[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]]).
 
 ^rem-16-4
 

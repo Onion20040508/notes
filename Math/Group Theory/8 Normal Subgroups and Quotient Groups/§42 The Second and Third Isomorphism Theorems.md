@@ -48,7 +48,7 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > *$\pi(H) = \pi(HN)$.* For $h \in H$, $\pi(h) = \pi(he) \in \pi(HN)$. For $hn \in HN$, $\pi(hn) = \pi(h)\pi(n) = \pi(h) \in \pi(H)$, since $n \in N = \operatorname{Ker}\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]).
 >
-> *Two applications of the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]]* (§38). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]]) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$ ([[§42 The Second and Third Isomorphism Theorems#^lem-42-1|§42.1]]), so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
+> *Two applications of the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]]* (§41). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]]) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$ ([[§42 The Second and Third Isomorphism Theorems#^lem-42-1|§42.1]]), so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
 
 ^pf-42-2
 
@@ -65,14 +65,14 @@ tags: [group-theory, math493]
 ^cor-42-3
 
 > [!proof]+ Proof
-> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §37.4). The [[§42 The Second and Third Isomorphism Theorems#^thm-42-2|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §40.4). The [[§42 The Second and Third Isomorphism Theorems#^thm-42-2|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 
 ^pf-42-3
 
 *Uses:* [[§42 The Second and Third Isomorphism Theorems#^thm-42-2|§42.2]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§40 Quotient Groups#^prop-40-4|§40.4]]
 
 > [!remark]- Connections
-> - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]] (§37.4).
+> - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]] (§40.4).
 
 > [!theorem] Theorem §42.4: Third Isomorphism Theorem
 > Let $N \subseteq K$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$. Then $K/N$ is a normal subgroup of $G/N$ ([[§40 Quotient Groups#^def-40-1|Def. §40.1]]), and $(G/N)/(K/N) \cong G/K$.

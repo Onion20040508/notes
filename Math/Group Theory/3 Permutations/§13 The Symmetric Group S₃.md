@@ -40,7 +40,7 @@ Recall from The Group $S_3$ in Detail ([[§10 Cycle Notation and the Group S₃#
 *Uses:* [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 ![[m493-13-1.svg]]
-*The subgroup lattice of $S_3$, arranged by order; lines denote inclusion. Shaded blue: the normal subgroups ([[§38 Normal Subgroups#^def-38-1|§35]]). Every order divides $6$, and nothing sits at order $4$ or $5$ (see the remark below).*
+*The subgroup lattice of $S_3$, arranged by order; lines denote inclusion. Shaded blue: the normal subgroups ([[§38 Normal Subgroups#^def-38-1|§38]]). Every order divides $6$, and nothing sits at order $4$ or $5$ (see the remark below).*
 
 > [!remark]- Connections
 > - The worksheet summary alongside $\mathbb{Z}$, $\mathbb{Z}^2$, $\mathbb{R}$, $GL_n$: [[§5 A Zoo of Subgroups#^rem-5-3|Summary of WS 1.7]].

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 35.2", "normal subgroup criteria"]
+aliases: ["MATH 493 38.2", "normal subgroup criteria"]
 tags: [group-theory, hub]
 ---
 ![[§38 Normal Subgroups#^prop-38-2]]

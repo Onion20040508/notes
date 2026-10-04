@@ -10,13 +10,13 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 15.*
 
 > [!remark] Remark: The Question
-> If $\alpha: G \to H$ is a homomorphism, then $\operatorname{Ker}\alpha$ is normal in $G$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]], §36). Conversely, if $N \trianglelefteq G$, is $N = \operatorname{Ker}\alpha$ for some homomorphism $\alpha$? The answer is yes: we construct a group $G/N$ and a homomorphism $G \to G/N$ with kernel exactly $N$.
+> If $\alpha: G \to H$ is a homomorphism, then $\operatorname{Ker}\alpha$ is normal in $G$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]], §39). Conversely, if $N \trianglelefteq G$, is $N = \operatorname{Ker}\alpha$ for some homomorphism $\alpha$? The answer is yes: we construct a group $G/N$ and a homomorphism $G \to G/N$ with kernel exactly $N$.
 >
 > *Source: lecture*
 
 ^rem-40-1
 
-Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]], §35, whose proof includes the lecture's direct argument). So $G/N = \{gN : g \in G\} = \{Ng : g \in G\}$, and for a normal subgroup there is no ambiguity between left and right cosets.
+Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]], §38, whose proof includes the lecture's direct argument). So $G/N = \{gN : g \in G\} = \{Ng : g \in G\}$, and for a normal subgroup there is no ambiguity between left and right cosets.
 
 > [!definition] Definition §40.1: Quotient Group
 > Let $N \trianglelefteq G$. The **quotient group** $G/N$ (read “$G$ mod $N$”) is the set of cosets $\{gN : g \in G\}$ with the operation
@@ -41,7 +41,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^thm-40-1
 
 > [!proof]+ Proof
-> The operation is well defined by [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]] (§34), where the lecture's set-product proof is recorded as a second proof. Every property reduces to the corresponding property of $G$ by computing with representatives: *associativity*, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; *identity*, $(eN)(gN) = gN = (gN)(eN)$; *inverses*, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
+> The operation is well defined by [[§37 Multiplying Cosets#^prop-37-1|When Coset Multiplication Is Well Defined]] (§37), where the lecture's set-product proof is recorded as a second proof. Every property reduces to the corresponding property of $G$ by computing with representatives: *associativity*, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; *identity*, $(eN)(gN) = gN = (gN)(eN)$; *inverses*, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]).
 
 ^pf-40-1
 
@@ -147,14 +147,14 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^prop-40-4
 
 > [!proof]+ Proof
-> The composite is the restriction of the projection $\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§42 The Second and Third Isomorphism Theorems#^thm-42-2|Second Isomorphism Theorem]], §39.2.)
+> The composite is the restriction of the projection $\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]) to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the [[§42 The Second and Third Isomorphism Theorems#^thm-42-2|Second Isomorphism Theorem]], §42.2.)
 
 ^pf-40-4
 
 *Uses:* [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - Re-proved from the Second Isomorphism Theorem: [[§42 The Second and Third Isomorphism Theorems#^cor-42-3|Subgroup Representatives, Again]] (§38.5).
+> - Re-proved from the Second Isomorphism Theorem: [[§42 The Second and Third Isomorphism Theorems#^cor-42-3|Subgroup Representatives, Again]] (§42.3).
 > - Vector-space analogue: a complement $W$ of $U$ ([[§5 Bases#^ladr-2-33|LADR 2.33]]) plays the role of $S$, with $V/U \cong W$; for groups such a subgroup need not exist ([[§40 Quotient Groups#^rem-40-3|Remark]] below).
 
 > [!remark] Remark: Life Is Especially Nice When $S$ Is a Subgroup

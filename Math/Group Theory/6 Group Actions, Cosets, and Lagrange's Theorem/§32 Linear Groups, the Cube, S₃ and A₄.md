@@ -135,7 +135,7 @@ tags: [group-theory, math493]
 ^pf-32-5
 
 ![[m493-30-3.svg]]
-*The four body diagonals of $C = [-1,1]^3$, numbered $1$–$4$ at their upper ends; each joins a vertex to the opposite vertex through the centre. Every rotation of the cube permutes these four lines, which is the homomorphism $G \to S_4$ of §30.5.*
+*The four body diagonals of $C = [-1,1]^3$, numbered $1$–$4$ at their upper ends; each joins a vertex to the opposite vertex through the centre. Every rotation of the cube permutes these four lines, which is the homomorphism $G \to S_4$ of §32.5.*
 
 > [!remark] Remark: The Cleanest Description
 > Since $|G| = 24 = |S_4|$, it is enough to show that the homomorphism $G \to S_4$ is injective, i.e. that the action on the diagonals is faithful. This identification is the cleanest description of the rotation group.
@@ -162,7 +162,7 @@ Burnside's lemma for $S_3$ on $\{1, 2, 3\}$ and on itself is in [[§30 Orbit–S
 
 ## S₄, A₄ and the Klein Four-Group V
 
-$A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit–stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ/nℤ and Uₙ|Chapter 4]] as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
+$A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit–stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
 
 ![[§29 The Index and Lagrange's Theorem#^ex-29-1]]
 
@@ -172,8 +172,7 @@ The two groups of order $4$ are named in [[§29 The Index and Lagrange's Theorem
 
 *$S_4$, $A_4$ and $V$ elsewhere:* first appearance · [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] → · [[S₄, A₄ and the Klein four-group|all appearances]]
 
-## ℤ/nℤ and Uₙ
-
+## ℤ∕nℤ and Uₙ
 Lagrange's theorem pays off for the cyclic groups: Fermat's little theorem is Lagrange in $U_p$, and every group of prime order $p$ is $\mathbb{Z}/p\mathbb{Z}$, the chapter's one complete classification. $\mathbb{Z}/3\mathbb{Z}$ and $\mathbb{Z}/4\mathbb{Z}$ also serve as small groups acting on sets.
 
 ![[§29 The Index and Lagrange's Theorem#^cor-29-4]]
@@ -184,7 +183,7 @@ Lagrange's theorem pays off for the cyclic groups: Fermat's little theorem is La
 
 The actions of $\mathbb{Z}/3\mathbb{Z}$ on a triangle and of $\mathbb{Z}/4\mathbb{Z}$ on two points are in [[§25 Actions#^ex-25-3|Seeing the Permutations]] (in the $S_3$ part).
 
-*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ/nℤ and Uₙ|Chapter 5]] · [[§44 S₃, S₄, A₄ and A₅#ℤ/nℤ and Uₙ|Chapter 8]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
+*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] · [[§44 S₃, S₄, A₄ and A₅#ℤ∕nℤ and Uₙ|Chapter 8]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

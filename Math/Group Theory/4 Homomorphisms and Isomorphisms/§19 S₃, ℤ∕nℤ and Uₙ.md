@@ -33,8 +33,7 @@ The reduction $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, with kernel $n\mathbb{Z}$
 
 *$\mathbb{Z}$ elsewhere:* ← [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§44 S₃, S₄, A₄ and A₅#ℤ and nℤ|Chapter 8]] → · [[The integers ℤ and the subgroups nℤ|all appearances]]
 
-## ℤ/nℤ and Uₙ
-
+## ℤ∕nℤ and Uₙ
 The small groups $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $U_5$, $U_7$ and $U_8$ are the chapter's worked cases. Their tables are written out; $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ and $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ are cyclic, while $U_8$, in which every element squares to $1$, is the Klein four-group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. The subgroups of a finite cyclic group are read off from the divisors of its order.
 
 ![[§14 Multiplication Tables#^ex-14-1]]
@@ -61,7 +60,7 @@ The small groups $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $U_5$, $U_7
 
 [[§16 Isomorphisms#^prop-16-3|Two Isomorphism Invariants]] (in the $S_3$ part) also separates $\mathbb{Z}/4\mathbb{Z}$ from $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
 
-*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ/nℤ and Uₙ|Chapter 5]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
+*$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[· 2 Arithmetic Modulo n|Chapter 2]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#ℤ∕nℤ and Uₙ|Chapter 5]] → · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
 ## GLₙ, SLₙ and O(n)
 

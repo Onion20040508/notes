@@ -48,7 +48,7 @@ Since the right side is computed from the chosen representatives $g_1, g_2$, thi
 
 ^pf-37-1
 
-*Uses:* [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§35)]]
+*Uses:* [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]
 
 ![[m493-34-1.svg]]
 *Left: for $H = \{e, (1\,2)\}$, both $e$ and $(1\,2)$ represent the coset $H$, but multiplying them by $(1\,3)$ (red) lands in two different cosets, $(1\,3)H$ and $(2\,3)H$, so $H \cdot (1\,3)H$ has no well-defined value. This is the ($\Rightarrow$) step of the proof with $h = (1\,2)$ and $g = (1\,3)$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin H$. Right: for the normal subgroup $A_3$, every representative of $A_3$ times $(1\,3)$ lands in the same coset $(1\,2)A_3$.*

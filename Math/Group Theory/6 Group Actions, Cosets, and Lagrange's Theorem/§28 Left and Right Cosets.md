@@ -159,4 +159,4 @@ tags: [group-theory, math493]
 ^ex-28-2
 
 ![[m493-26-2.svg]]
-*Inversion $g \mapsto g^{-1}$ fixes $e$ and the three transpositions and swaps $(1\,2\,3) \leftrightarrow (1\,3\,2)$ (red), so it carries each left coset of $H = \{e, (1\,2)\}$ (blue) onto a right coset: $(1\,3)H \mapsto H(1\,3)$ and $(2\,3)H \mapsto H(2\,3)$. This is the bijection $gH \mapsto Hg^{-1}$ of §26.3; by contrast $gH \mapsto Hg$ would send the single coset $(1\,3)H = (1\,2\,3)H$ to both $H(1\,3)$ and $H(1\,2\,3) = H(2\,3)$.*
+*Inversion $g \mapsto g^{-1}$ fixes $e$ and the three transpositions and swaps $(1\,2\,3) \leftrightarrow (1\,3\,2)$ (red), so it carries each left coset of $H = \{e, (1\,2)\}$ (blue) onto a right coset: $(1\,3)H \mapsto H(1\,3)$ and $(2\,3)H \mapsto H(2\,3)$. This is the bijection $gH \mapsto Hg^{-1}$ of §28.3; by contrast $gH \mapsto Hg$ would send the single coset $(1\,3)H = (1\,2\,3)H$ to both $H(1\,3)$ and $H(1\,2\,3) = H(2\,3)$.*

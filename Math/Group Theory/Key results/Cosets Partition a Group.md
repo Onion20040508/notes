@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 26.2", "cosets are equivalence classes"]
+aliases: ["MATH 493 28.2", "cosets are equivalence classes"]
 tags: [group-theory, hub]
 ---
 ![[§28 Left and Right Cosets#^prop-28-2]]

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 28.3", "orbit-stabilizer"]
+aliases: ["MATH 493 30.3", "orbit-stabilizer"]
 tags: [group-theory, hub]
 ---
 ![[§30 Orbit–Stabilizer#^thm-30-3]]
