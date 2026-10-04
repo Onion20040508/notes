@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|Theorem §29.4: The Tangent Space of a Product]]
 - [[§32 Submersions#^def-32-2|Definition §32.2: Regular Points and Critical Points]]
 - [[§32 Submersions#^thm-32-4|Theorem §32.4: Local Normal Form for Submersions]]
-- [[§33 Submanifolds#^def-33-1|Definition §33.1: Submanifold and Adapted Charts]]
 - [[§33 Submanifolds#^prop-33-1|Proposition §33.1: Two Observations on Adapted Charts]]
+- [[§33 Submanifolds#^def-33-1|Definition §33.1: Submanifold and Adapted Charts]]
 - [[§33 Submanifolds#^prop-33-4|Proposition §33.4: Tangent Spaces of a Submanifold]]
 
 ## Its proof uses (other subjects)
@@ -27,7 +27,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§33 Submanifolds#^cor-33-7|Corollary §33.7: Fibres of Submersions Are Submanifolds]]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-2|Proposition §39.2: The Unit Quaternions]]
+- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-4|Proposition §39.4: The Unit Quaternions]]
 
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§33 Submanifolds#^cor-33-7|§33.7]]), in particular every fibre of a fibration ([[§34 Fibrations#^prop-34-2|§34.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§33 Submanifolds#^prop-33-8|§33.8]], [[§33 Submanifolds#^rem-33-2|The Regular Value Theorems — Old and New]]).

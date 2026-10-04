@@ -53,7 +53,7 @@ graph TD
   X3 -.->|18| C2
   X3 -.->|10| C3
   X3 -.->|16| C4
-  X3 -.->|17| C5
+  X3 -.->|18| C5
   X2 -.->|5| C1
   X2 -.->|6| C2
   X2 -.->|14| C3
@@ -109,7 +109,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields (defined,
 - [[Immersion Normal Form]] (§36.1)
 - [[Images of Embeddings Are Submanifolds]] (§37.1)
 - [[Injective Proper Immersions Are Embeddings]] (§37.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§39.8)
+- [[SU(2) Is a Double Cover of SO(3)]] (§39.10)
 
 ## Summaries
 - [[Differentiable Manifolds Lee Concordance]]: notation, where the course's route differs from Lee's, the chapter map, and every Lee result cited in these notes with its counterpart here.
@@ -140,9 +140,9 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Linear Algebra]]**
 - [[Fundamental theorem of linear maps]] (8)
+- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (7)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
 - [[Invertible ⟺ nonzero determinant]] (6)
-- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (6)
 - [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (4)
 - [[§34 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (3)
 - [[Linear map lemma]] (3)

@@ -15,13 +15,13 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Derivations and the Abstract Tangent Space#^lem-26-8|Lemma §26.8: Open Subsets Have the Same Abstract Tangent Spaces]]
 - [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|Proposition §26.9: Charts Are Diffeomorphisms]]
 - [[§28 The Differential in Coordinates#^thm-28-2|Theorem §28.2: The Matrix of the Differential]]
-- [[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1: Inverse Function Theorem]]
 - [[§31 Local Diffeomorphisms#^def-31-1|Definition §31.1: Local Diffeomorphism]]
+- [[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1: Inverse Function Theorem]]
 
 ## Used in (Differentiable Manifolds)
 - [[§31 Local Diffeomorphisms#^cor-31-3|Corollary §31.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-39-8|Theorem §39.8: The Double Cover SU(2) → SO(3)]]
+- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^thm-39-10|Theorem §39.10: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Used for.** Diffeomorphisms are exactly the bijective local diffeomorphisms ([[§31 Local Diffeomorphisms#^cor-31-3|§31.3]]), and a map between manifolds of equal dimension that is a submersion, or an immersion, at every point is a local diffeomorphism ([[§32 Submersions#^prop-32-1|§32.1]]). The same inverse-function step, with [[§32 Submersions#^lem-32-3|§32.3]], builds the new chart in the [[Submersion Normal Form]].

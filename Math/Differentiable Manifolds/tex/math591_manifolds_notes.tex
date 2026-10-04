@@ -8553,30 +8553,27 @@ For $p, q \in \mathbb{H}$: $\overline{pq} = \bar q\, \bar p$, $\ q \bar q = \bar
 \textit{(Not proved in the submitted solution, where the problem stated it; filled in.)} Both sides of $\overline{pq} = \bar q \bar p$ are real-bilinear in $(p, q)$, so it suffices to check basis elements, where it reads, for instance, $\overline{ij} = \bar k = -k$ and $\bar j \bar i = (-j)(-i) = ji = -k$. Expanding $q \bar q$, the cross terms cancel in pairs ($x_1 x_2 (-ij - ji) = 0$, and so on) and the squares give $x_0^2 + x_1^2 + x_2^2 + x_3^2$. Then $|pq|^2 = pq\, \overline{pq} = p\, q \bar q\, \bar p = |q|^2 p \bar p = |p|^2 |q|^2$, using that the real number $|q|^2$ commutes with everything. The rest follows.
 \end{proof}
 
-\begin{propbox}[The Unit Quaternions]\thmlabel{prop:s3-lie-group}
-$S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold of dimension $3$ and a group whose multiplication and inversion are smooth. It is connected: every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
-\end{propbox}
-
-\begin{proof}
-\textit{(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)} $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ (Theorem~\ref{thm:rvt-manifolds}). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ (Lemma~\ref{lem:maps-into-submanifold}). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
-\end{proof}
-
-\begin{proof}[Second proof of the submanifold claim: hyperspherical charts (the submitted solution)]
-\textit{(Assignment~4, Problem~3(a), as submitted. Points of $\mathbb{H} = \mathbb{R}^4$ are written $\vec x = (x_0, x_1, x_2, x_3)$, the standard basis vectors are $\vec e_0, \ldots, \vec e_3$, and an ``embedded submanifold'' is a submanifold in the sense of Definition~\ref{def:submanifold}. The group and connectedness claims are proved above.)} Throughout, $c_k = \cos\theta_k$ and $s_k = \sin\theta_k$.
-
-\textbf{$S^3$ is an embedded submanifold of $\mathbb{R}^4$.} By the definition from lecture (Definition~\ref{def:submanifold}), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
-\[
-U \cap S^3 = \{ \vec u \in U : y^4(\vec u) = 0 \};
-\]
-such a chart is \emph{adapted} to $S^3$. Any diffeomorphism from an open subset of $\mathbb{R}^4$ onto an open subset of $\mathbb{R}^4$ is a chart of the standard smooth structure (Lemma~\ref{lem:diffeo-chart}).
-
-\emph{(i) Hyperspherical coordinates.} Let
+\begin{defbox}[Hyperspherical Coordinates]\deflabel{def:hyperspherical}
+Points of $\mathbb{H} = \mathbb{R}^4$ are written $\vec x = (x_0, x_1, x_2, x_3)$, and the standard basis vectors are $\vec e_0, \ldots, \vec e_3$. Throughout, $c_k = \cos\theta_k$ and $s_k = \sin\theta_k$. The \textbf{hyperspherical coordinates} $(r, \theta_1, \theta_2, \theta_3)$ on $\mathbb{R}^4$ are given by the map $\Phi$ below. Let
 \[
 \Phi : (0, \infty) \times \mathbb{R}^3 \to \mathbb{R}^4, \qquad \Phi(r, \theta_1, \theta_2, \theta_3) = \bigl( r c_1,\ r s_1 c_2,\ r s_1 s_2 c_3,\ r s_1 s_2 s_3 \bigr).
 \]
 It is smooth, and using $c_k^2 + s_k^2 = 1$ three times, $|\Phi(r, \theta)|^2 = r^2\bigl(c_1^2 + s_1^2 c_2^2 + s_1^2 s_2^2\bigr) = r^2\bigl(c_1^2 + s_1^2\bigr) = r^2$, so $|\Phi(r, \theta)| = r$.
+\end{defbox}
 
-\emph{(ii) Its Jacobian.} With columns indexed by $r, \theta_1, \theta_2, \theta_3$,
+\begin{lembox}[The Jacobian of Hyperspherical Coordinates]\thmlabel{lem:hyperspherical-jacobian}
+The map $\Phi$ of Definition~\ref{def:hyperspherical} has Jacobian determinant
+\[
+\det \Phi'(r, \theta) = r^3 \sin^2\theta_1 \, \sin\theta_2 .
+\]
+For $r = 1$ it vanishes exactly when $\sin\theta_1 = 0$ or $\sin\theta_2 = 0$, and then $\Phi(1, \theta)$ lies on the circle
+\[
+B = \{ \vec x \in S^3 : x_2 = x_3 = 0 \}.
+\]
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~3(a), as submitted.)} With columns indexed by $r, \theta_1, \theta_2, \theta_3$,
 \[
 \Phi'(r, \theta) = \begin{pmatrix}
 c_1 & -r s_1 & 0 & 0 \\
@@ -8593,8 +8590,24 @@ For $r = 1$ it vanishes exactly when $\sin\theta_1 = 0$, where $\Phi(1, \theta) 
 \[
 B = \{ \vec x \in S^3 : x_2 = x_3 = 0 \}.
 \]
+\end{proof}
 
-\emph{(iii) Inverting $\Phi$ off $B$.} Let $p = (x_0, x_1, x_2, x_3) \in S^3 \setminus B$, so $x_2^2 + x_3^2 > 0$. Since $x_0^2 = 1 - x_1^2 - x_2^2 - x_3^2 < 1$, there is $\theta_1 \in (0, \pi)$ with $c_1 = x_0$, and then $s_1 = \sqrt{1 - x_0^2} > 0$. Since $(x_1/s_1)^2 = x_1^2 / (x_1^2 + x_2^2 + x_3^2) < 1$, there is $\theta_2 \in (0, \pi)$ with $c_2 = x_1/s_1$, and then $s_2 > 0$. Now $x_2^2 + x_3^2 = 1 - c_1^2 - s_1^2 c_2^2 = s_1^2 s_2^2$, so $(x_2, x_3)/(s_1 s_2)$ lies on the unit circle and equals $(c_3, s_3)$ for some $\theta_3$. Then $\Phi(1, \theta) = p$ and $\det \Phi'(1, \theta) = s_1^2 s_2 \neq 0$.
+\begin{propbox}[Hyperspherical Charts Are Adapted to $S^3$]\thmlabel{prop:hyperspherical-charts}
+Let $\Phi$ and $B$ be as in Definition~\ref{def:hyperspherical} and Lemma~\ref{lem:hyperspherical-jacobian}. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ (Definition~\ref{def:submanifold}):
+\begin{enumerate}
+    \item if $p \notin B$, then $p = \Phi(1, \theta)$ for some $\theta$, and for a suitable open $W \ni (1, \theta)$ in $(0, \infty) \times \mathbb{R}^3$ the map $\psi_p = \tau \circ (\Phi|_W)^{-1}$, where $\tau(r, \theta_1, \theta_2, \theta_3) = (\theta_1, \theta_2, \theta_3, r - 1)$, is such a chart, with last coordinate $y^4 = r - 1$;
+    \item if $p \in B$, the same construction with $\tilde\Phi = P \circ \Phi$ in place of $\Phi$, where $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, gives such a chart.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~4, Problem~3(a), as submitted.)} Steps (i) and (ii) of the submitted solution are Definition~\ref{def:hyperspherical} and Lemma~\ref{lem:hyperspherical-jacobian}. By the definition from lecture (Definition~\ref{def:submanifold}), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
+\[
+U \cap S^3 = \{ \vec u \in U : y^4(\vec u) = 0 \};
+\]
+such a chart is \emph{adapted} to $S^3$. Any diffeomorphism from an open subset of $\mathbb{R}^4$ onto an open subset of $\mathbb{R}^4$ is a chart of the standard smooth structure (Lemma~\ref{lem:diffeo-chart}).
+
+\emph{(iii) Inverting $\Phi$ off $B$.} Let $p = (x_0, x_1, x_2, x_3) \in S^3 \setminus B$, so $x_2^2 + x_3^2 > 0$. Since $x_0^2 = 1 - x_1^2 - x_2^2 - x_3^2 < 1$, there is $\theta_1 \in (0, \pi)$ with $c_1 = x_0$, and then $s_1 = \sqrt{1 - x_0^2} > 0$. Since $(x_1/s_1)^2 = x_1^2 / (x_1^2 + x_2^2 + x_3^2) < 1$, there is $\theta_2 \in (0, \pi)$ with $c_2 = x_1/s_1$, and then $s_2 > 0$. Now $x_2^2 + x_3^2 = 1 - c_1^2 - s_1^2 c_2^2 = s_1^2 s_2^2$, so $(x_2, x_3)/(s_1 s_2)$ lies on the unit circle and equals $(c_3, s_3)$ for some $\theta_3$. Then $\Phi(1, \theta) = p$ and $\det \Phi'(1, \theta) = s_1^2 s_2 \neq 0$ (Lemma~\ref{lem:hyperspherical-jacobian}).
 
 \emph{(iv) Adapted charts off $B$.} With $p$ and $\theta$ as in (iii), the inverse function theorem (Theorem~\ref{thm:inverse-function}) gives an open $W \ni (1, \theta)$ in $(0, \infty) \times \mathbb{R}^3$ such that $U_p = \Phi(W)$ is open and $\Phi|_W : W \to U_p$ is a diffeomorphism. Let
 \[
@@ -8604,7 +8617,19 @@ a diffeomorphism onto the open set $\tau(W)$, hence a chart about $p$, with last
 
 \emph{(v) Adapted charts on $B$.} Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear isometry of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)--(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
 
-Hence every point of $S^3$ lies in an adapted chart, and $S^3$ is an embedded submanifold of $\mathbb{R}^4$ of codimension $1$.
+Hence every point of $S^3$ lies in an adapted chart.
+\end{proof}
+
+\begin{propbox}[The Unit Quaternions]\thmlabel{prop:s3-lie-group}
+$S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold of dimension $3$ and a group whose multiplication and inversion are smooth. It is connected: every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
+\end{propbox}
+
+\begin{proof}
+\textit{(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)} $1$ is a regular value of $f(x) = |x|^2$, since $f'(x) = 2x^{\mathsf T} \neq 0$ on $S^3$, so $S^3$ is a submanifold of codimension $1$ (Theorem~\ref{thm:rvt-manifolds}). Multiplication is polynomial in the coordinates and inversion is $q \mapsto \bar q$, linear; both are smooth into $\mathbb{R}^4$ and land in $S^3$, hence are smooth into $S^3$ (Lemma~\ref{lem:maps-into-submanifold}). For the polar form, write $q = x_0 + v$ with $v \in \mathbb{H}_0$; if $q \neq \pm 1$ then $v \neq 0$, $x_0^2 + |v|^2 = 1$, and $\theta = \arccos x_0 \in (0, \pi)$, $u = v/|v|$ work, since $|v| = \sin\theta$. The path stays in $S^3$ because $|\cos t + \sin t\, u|^2 = \cos^2 t + \sin^2 t$; and $-1$ is joined to $1$ by $t \mapsto \cos t + \sin t\, i$, $t \in [0, \pi]$.
+\end{proof}
+
+\begin{proof}[Second proof of the submanifold claim: hyperspherical charts (the submitted solution)]
+\textit{(Assignment~4, Problem~3(a), as submitted. An ``embedded submanifold'' is a submanifold in the sense of Definition~\ref{def:submanifold}. The group and connectedness claims are proved above.)} \textbf{$S^3$ is an embedded submanifold of $\mathbb{R}^4$.} By Proposition~\ref{prop:hyperspherical-charts}, every point of $S^3$ lies in a chart of $\mathbb{R}^4$ adapted to $S^3$, so $S^3$ is a submanifold of $\mathbb{R}^4$ of codimension $1$ (Definition~\ref{def:submanifold}).
 \end{proof}
 
 \subsection{\texorpdfstring{$S^3$ and $\mathrm{SU}(2)$}{S3 and SU(2)}}\label{sub:s3-su2}
@@ -8634,7 +8659,7 @@ which is the matrix shown. Its determinant is $|a|^2 + |b|^2 = |q|^2$; and $R_q$
 \end{proof}
 
 \begin{proof}[Second proof of (3): adapted charts (the submitted solution)]
-\textit{(Assignment~4, Problem~3, as submitted: its notation and setup, its proof that $\mathrm{SU}(2)$ is a submanifold and $F$ is smooth, and, moved here from its part~(b), its proof that $F^{-1}$ is smooth; together they give (3). The adapted charts of $\mathbb{R}^4$ are those of the second proof of Proposition~\ref{prop:s3-lie-group}. What the submitted solution takes from the problem --- that $F$ is a bijection onto $\mathrm{SU}(2)$, and that $\SO(3)$ is a submanifold of dimension~$3$ --- is proved in (2) above and in Theorem~\ref{thm:classical-summary}.)}
+\textit{(Assignment~4, Problem~3, as submitted: its notation and setup, its proof that $\mathrm{SU}(2)$ is a submanifold and $F$ is smooth, and, moved here from its part~(b), its proof that $F^{-1}$ is smooth; together they give (3). The adapted charts of $\mathbb{R}^4$ are those of Proposition~\ref{prop:hyperspherical-charts}. What the submitted solution takes from the problem --- that $F$ is a bijection onto $\mathrm{SU}(2)$, and that $\SO(3)$ is a submanifold of dimension~$3$ --- is proved in (2) above and in Theorem~\ref{thm:classical-summary}.)}
 
 \textbf{Notation.} The problem writes $dF_p$ for the differential of a smooth map $F$ at a point $p$. As in lecture and in Problem 1 (Proposition~\ref{prop:zero-differential}), we write $F_{*,p}$ instead, so that $dF_p = F_{*,p}$. Since we work in $\mathbb{R}^4$ (see below), the problem's point $1 \in S^3$ is $\vec e_0$; thus the problem's $T_1 S^3$, $\sigma_j = dF_1(\vec e_j)$ and $dG_I(\sigma_j)$ are, in our notation, $T_{\vec e_0} S^3$, $\sigma_j = F_{*,\vec e_0}(\vec e_j)$ and $G_{*,I}(\sigma_j)$.
 
@@ -8656,7 +8681,7 @@ By the problem, $F : S^3 \to \mathrm{SU}(2)$ is a bijection, and $F = L|_{S^3}$,
 \[
 \mathrm{SU}(2) = L(S^3) = \Lambda\bigl( S^3 \times \{0\} \bigr).
 \]
-Let $M \in \mathrm{SU}(2)$, say $M = L(p)$ with $p \in S^3$, and let $(U, \psi = (y^1, \ldots, y^4))$ be an adapted chart of $\mathbb{R}^4$ at $p$ as constructed above (in the second proof of Proposition~\ref{prop:s3-lie-group}). Then $\Lambda(U \times \mathbb{R}^4)$ is an open neighborhood of $M$, and
+Let $M \in \mathrm{SU}(2)$, say $M = L(p)$ with $p \in S^3$, and let $(U, \psi = (y^1, \ldots, y^4))$ be an adapted chart of $\mathbb{R}^4$ at $p$ as constructed above (in Proposition~\ref{prop:hyperspherical-charts}). Then $\Lambda(U \times \mathbb{R}^4)$ is an open neighborhood of $M$, and
 \[
 \Psi = (\psi \times \mathrm{id}_{\mathbb{R}^4}) \circ \Lambda^{-1} : \Lambda(U \times \mathbb{R}^4) \to \psi(U) \times \mathbb{R}^4,
 \]
@@ -8699,7 +8724,7 @@ at $t = 0$. The three matrices are linearly independent (compare the $(1,1)$, $(
 \end{proof}
 
 \begin{proof}[Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)]
-\textit{(Assignment~4, Problem~3(a), as submitted, in the notation of the second proof of Proposition~\ref{prop:s3-su2}: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{*,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)--(v) and the map $\tilde\Phi$ are those of the second proof of Proposition~\ref{prop:s3-lie-group}. That the $\sigma_j$ form a basis is shown in the proof above, and again in the second proof of Theorem~\ref{thm:double-cover}.)}
+\textit{(Assignment~4, Problem~3(a), as submitted, in the notation of the second proof of Proposition~\ref{prop:s3-su2}: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{*,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)--(v) are Definition~\ref{def:hyperspherical}, Lemma~\ref{lem:hyperspherical-jacobian} and the steps (iii)--(v) of the proof of Proposition~\ref{prop:hyperspherical-charts}, and the map $\tilde\Phi$ is that of Proposition~\ref{prop:hyperspherical-charts}. That the $\sigma_j$ form a basis is shown in the proof above, and again in the second proof of Theorem~\ref{thm:double-cover}.)}
 
 \textbf{The tangent space $T_{\vec e_0} S^3$.} By the result from lecture on tangent spaces of submanifolds (Proposition~\ref{prop:submanifold-tangent}), if $\psi = (y^1, \ldots, y^4)$ is an adapted chart at $p \in S^3$, then $\iota_{*p} : T_p S^3 \to T_p\mathbb{R}^4$ is injective and
 \[

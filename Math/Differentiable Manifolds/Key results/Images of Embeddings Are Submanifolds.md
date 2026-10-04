@@ -16,8 +16,8 @@ tags: [differentiable-manifolds, hub]
 - [[§33 Submanifolds#^def-33-1|Definition §33.1: Submanifold and Adapted Charts]]
 - [[§36 Immersions#^thm-36-1|Theorem §36.1: Local Normal Form for Immersions]]
 - [[§36 Immersions#^cor-36-2|Corollary §36.2: The Local Image of an Immersion]]
-- [[§37 Embeddings#^def-37-1|Definition §37.1: Embedding]]
 - [[§37 Embeddings#^rem-37-1|Remark: Where Is Injectivity Used?]]
+- [[§37 Embeddings#^def-37-1|Definition §37.1: Embedding]]
 
 ## Its proof uses (other subjects)
 - [[§9 Continuous Functions#^prop-9-2|590 §9.2: Equivalent Definition of Homeomorphism]]
@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Embeddings#^prop-37-7|Proposition §37.7: Images of Embeddings Are Locally Closed]]
 - [[§37 Embeddings#^cor-37-8|Corollary §37.8: Dense Submanifolds Are Open]]
 - [[§37 Embeddings#^prop-37-11|Proposition §37.11: The Irrational Line on the Torus]]
-- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-3|Proposition §39.3: S³ Is SU(2)]]
+- [[§39 Worked Example꞉ The Double Cover SU(2) → SO(3)#^prop-39-5|Proposition §39.5: S³ Is SU(2)]]
 
 ## Connections
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§37 Embeddings#^cor-37-3|§37.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.
