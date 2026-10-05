@@ -117,7 +117,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 *Uses:* [[§44 Vector Fields#^def-44-3|Def. §44.3]], [[§44 Vector Fields#^def-44-2|Def. §44.2]], [[§44 Vector Fields#^prop-44-1|§44.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]]
 
-The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§44 Vector Fields#^prop-44-5|Proposition §44.5]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§44 Vector Fields#^lem-44-4|Lemma §44.4]]), and its proof needs bump functions, so these come first.
+The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field ([[§44 Vector Fields#^prop-44-6|Proposition §44.6]], at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality ([[§44 Vector Fields#^lem-44-4|Lemma §44.4]]), and its proof needs bump functions, so these come first.
 
 > [!definition] Definition §44.4: Local Operator
 > An operator $D : C^\infty(M) \to C^\infty(M)$ is **local** if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
@@ -134,26 +134,31 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§7 Interior and Closure#^def-7-1|closure]]* of the set where it is nonzero,
 >
 > $$
-> \operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} ,
+> \operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} .
 > $$
->
-> and $C^\infty_0(M)$ is the set of smooth functions with [[§15 Compact Spaces#^def-15-2|compact]] support.
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
 ^def-44-5
 
-> [!definition] Definition §44.6: Bump Function
-> Let $p \in M$. A **bump function at $p$** is a $\chi \in C^\infty_0(M)$ ([[§44 Vector Fields#^def-44-5|Definition §44.5]]) with $\chi \equiv 1$ on a neighbourhood of $p$.
+> [!definition] Definition §44.6: Compactly Supported Functions
+> $C^\infty_0(M)$ is the set of smooth functions $\chi : M \to \mathbb{R}$ whose support ([[§44 Vector Fields#^def-44-5|Definition §44.5]]) is [[§15 Compact Spaces#^def-15-2|compact]].
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
 ^def-44-6
 
+> [!definition] Definition §44.7: Bump Function
+> Let $p \in M$. A **bump function at $p$** is a $\chi \in C^\infty_0(M)$ ([[§44 Vector Fields#^def-44-6|Definition §44.6]]) with $\chi \equiv 1$ on a neighbourhood of $p$.
+>
+> *Lee: Ch. 2, Partitions of Unity*
+
+^def-44-7
+
 “It's a technical term, and it's not a joke”: the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set — “smooth, but not analytic”, since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
 
 ![[m591-44-3.svg]]
-*A bump function at $p$, as drawn on the board. $M$ is the plane; $\chi \equiv 1$ on a disc around $p$ (the top of the cylinder, at height $1$), and the graph of $\chi$ (orange) falls smoothly back to $0$ and stays $0$ outside the compact set $\operatorname{supp}\chi$ (dashed). The cross-section below shows the same function along a line through $p$.*
+*A bump function at $p$, after the board sketch, with the front quarter cut away. $M$ is a plane, and the graph of $\chi$ is a surface over it: $\chi \equiv 1$ on a disc around $p$ (the blue plateau, at height $1$); from its edge the graph falls smoothly to $0$ (orange); and $\chi = 0$ outside the compact set $\operatorname{supp}\chi$, whose boundary is the dashed circle on $M$. The two cut faces show the profile of $\chi$ along two rays from $p$, and $p$ lies on $M$ at their inner corner, directly below the plateau, where $\chi(p) = 1$. The cross-section below shows the same profile along a whole line through $p$.*
 
 ![[m591-45-1.svg]]
 *A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of Uribe's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.*
@@ -161,7 +166,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 **Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as Uribe said (“and then you take the closure of that”). Without the closure, the support of a bump function would not be compact.
 
 > [!theorem] Proposition §44.3: Bump Functions Exist
-> For every open $U \subseteq M$ and every $p \in U$ there is a [[§44 Vector Fields#^def-44-6|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
+> For every open $U \subseteq M$ and every $p \in U$ there is a [[§44 Vector Fields#^def-44-7|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
 >
 > *Lee: Proposition 2.25*
 
@@ -191,19 +196,54 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > [!remark]- Connections
 > - The pointwise version, a derivation of $C^\infty(M)$ at $p$ only sees a function near $p$ (Lee, Proposition 3.8), in the proof of [[§26 Derivations and the Abstract Tangent Space#^prop-26-3|Germ Derivations and Global Derivations, §26.3]].
 
-> [!remark] Remark: Differential Operators
-> The operators $D_\mathbf{X}$, $\mathbf{X} \in \mathfrak{X}(M)$ ([[§44 Vector Fields#^lem-44-2|Lemma §44.2]]), together with the multiplication operators $f \mapsto gf$, generate under composition and sums the ring of *differential operators* on $M$; all of them are [[§44 Vector Fields#^def-44-4|local]]. Uribe stated the converse “FYI”, without proof: every linear local operator is a differential operator. This is Peetre's theorem; its precise form says that a linear local operator is, near each point, a differential operator of finite order — on a non-compact $M$ the order need not be bounded globally. Stated, not proved, here.
+*Lecture 15, before the proof of the lemma: “I want to make an observation.”*
+
+> [!definition] Definition §44.8: Multiplication Operator
+> For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
+
+^def-44-8
+
+> [!definition] Definition §44.9: Differential Operators
+> The **ring of differential operators** on $M$, written $\mathrm{Diff}(M)$ here, is the subring of the $\mathbb{R}$-linear maps $C^\infty(M) \to C^\infty(M)$ (with sum and composition) generated by
+>
+> $$
+> D_\mathbf{X} \quad (\mathbf{X} \in \mathfrak{X}(M)) \qquad \text{and} \qquad m_g \quad (g \in C^\infty(M)) ,
+> $$
+>
+> the operators of [[§44 Vector Fields#^lem-44-2|Lemma §44.2]] and [[§44 Vector Fields#^def-44-8|Definition §44.8]]. Its elements, the **differential operators**, are the finite sums of finite composites of such operators.
+
+^def-44-9
+
+Uribe: “I can take a vector field, apply it … I can compose that with multiplication by a function, or compose it with another vector field, and do finitely many of these things, and add linear combinations of such things.” (The name $\mathrm{Diff}(M)$ is not from lecture.)
+
+> [!example] Example §44.1: Differential Operators in Coordinates
+> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$. On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$: for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. So in a chart a differential operator is a finite sum $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
+
+^ex-44-1
+
+> [!remark] Remark: Differential Operators Are Local
+> Every differential operator is a local operator ([[§44 Vector Fields#^def-44-4|Definition §44.4]]). *(Lecture 15: “these are all local operators”; the reason is filled in.)* The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs ([[§26 Derivations and the Abstract Tangent Space#^def-26-1|Definition §26.1]]). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
 
 ^rem-44-3
 
-> [!theorem] Proposition §44.5: Derivations Are Vector Fields
+> [!theorem] Theorem §44.5: Local Operators Are Differential Operators
+> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a neighbourhood $U$ on which, in a chart, $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for some $k$ and smooth $a_\alpha$. Conversely, every differential operator is local ([[§44 Vector Fields#^rem-44-3|Remark: Differential Operators Are Local]]).
+
+^thm-44-5
+
+> [!proof]+ Proof (not given in this course)
+> Stated in Lecture 15 “FYI”: “There's a theorem which is that every local operator … is a differential operator, and conversely, of course, the converse is easy. … We're not going to prove this theorem, but it's true.” It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
+
+^pf-44-5
+
+> [!theorem] Proposition §44.6: Derivations Are Vector Fields
 > Conversely, every [[§44 Vector Fields#^def-44-3|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§44 Vector Fields#^lem-44-2|Lemma §44.2]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > *Lee: Proposition 8.15*
 
-^prop-44-5
+^prop-44-6
 
 > [!proof]+ Proof (to be filled)
 > Stated in Lecture 15 as “the goal”; the proof is to come. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§44 Vector Fields#^lem-44-4|Lemma §44.4]]) bridges the two.
 
-^pf-44-5
+^pf-44-6

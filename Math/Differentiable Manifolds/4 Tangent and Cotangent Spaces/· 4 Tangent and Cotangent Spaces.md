@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§25 Germs#^prop-25-1|Proposition §25.1: Agreement Near a Point Is an Equivalence Relation]]: 87 later results
-- [[§25 Germs#^prop-25-2|Proposition §25.2: C_p^∞(M) Is an ℝ-Algebra]]: 87 later results
-- [[§26 Derivations and the Abstract Tangent Space#^prop-26-3|Proposition §26.3: Germ Derivations and Global Derivations]]: 87 later results
+- [[§25 Germs#^prop-25-1|Proposition §25.1: Agreement Near a Point Is an Equivalence Relation]]: 88 later results
+- [[§25 Germs#^prop-25-2|Proposition §25.2: C_p^∞(M) Is an ℝ-Algebra]]: 88 later results
+- [[§26 Derivations and the Abstract Tangent Space#^prop-26-3|Proposition §26.3: Germ Derivations and Global Derivations]]: 88 later results
 - [[§26 Derivations and the Abstract Tangent Space#^prop-26-4|Proposition §26.4: Properties of the Pullback]]: 80 later results

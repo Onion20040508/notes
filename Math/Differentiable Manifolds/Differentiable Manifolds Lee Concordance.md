@@ -152,7 +152,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 7-4 | [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1\|Prop. §11.1]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-2\|Cor. §11.2]] |
 | Problem 7-22 | [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1\|Def. §38.1]] |
 | Proposition 8.1 | [[§44 Vector Fields#^prop-44-1\|Prop. §44.1]] |
-| Proposition 8.15 | [[§44 Vector Fields#^prop-44-5\|Prop. §44.5]] |
+| Proposition 8.15 | [[§44 Vector Fields#^prop-44-6\|Prop. §44.6]] |
 | Example 10.3 | [[§34 Fibrations#^ex-34-2\|Ex. §34.2]] |
 | Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^def-20-2\|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
 | Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-3\|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
