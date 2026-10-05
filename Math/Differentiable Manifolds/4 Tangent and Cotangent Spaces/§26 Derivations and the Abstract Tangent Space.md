@@ -201,7 +201,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 *Above, the definition as a diagram: $F_{\ast p}D = D \circ F_p^{\ast}$, a derivation at $F(p)$ obtained by first pulling the germ back to $p$ and then applying $D$. Below, the directions. Points move forward along $F$; functions move backward, since a function on $N$ composed with $F$ is a function on $M$; and derivations, being dual to functions, reverse the arrow once more and move forward again.*
 
 > [!remark]- Connections
-> - Pushforward as the transpose of pullback: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§20 Linear Algebra Toolkit#^def-20-2|Def. §20.2]].
+> - Pushforward as the transpose of pullback: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]].
 > - On open subsets of Euclidean space it is the Jacobian: [[§28 The Differential in Coordinates#^prop-28-5|§28.5]]; the calculus differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
 
 > [!theorem] Proposition §26.5: The Differential Is a Linear Map of Abstract Tangent Spaces

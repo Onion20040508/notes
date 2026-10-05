@@ -59,7 +59,7 @@ tags: [multivariable-analysis, hub]
 - [[§28 The Differential in Coordinates#^cor-28-3|Corollary §28.3: The Chain Rule in Coordinates]]
 - [[§28 The Differential in Coordinates#^prop-28-5|Proposition §28.5: Agreement with the Vector-Space Differential]]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
-- [[§42 The Cotangent Bundle#^prop-42-1|Proposition §42.1: The Cotangent Transition Maps]]
+- [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2: The Cotangent Transition Maps]]
 
 ## Connections
 - **Proof idea.** Split the increment of g into single-variable increments and apply the one-variable [[Mean Value Theorem]]. Continuity of the partials controls the intermediate points. The 451 version is the [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]] (§28.3). Under differentiability alone, see [[§6 Differentiability#^thm-6-9|Theorem §6.9]].

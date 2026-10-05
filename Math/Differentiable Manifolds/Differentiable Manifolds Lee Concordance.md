@@ -149,9 +149,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 7-22 | [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1\|Def. §38.1]] |
 | Example 10.3 | [[§34 Fibrations#^ex-34-2\|Ex. §34.2]] |
 | Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
-| Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-2\|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
+| Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-3\|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
 | Proposition 11.8 | [[§20 Linear Algebra Toolkit#^prop-20-3\|Prop. §20.3]] |
-| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-1\|Prop. §42.1]] |
+| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-2\|Prop. §42.2]] |
 | Proposition 11.20 | [[§30 The Cotangent Space#^cor-30-4\|Cor. §30.4]] |
 | Problem 11-4 | [[§26 Derivations and the Abstract Tangent Space#^def-26-3\|Def. §26.3]], [[§30 The Cotangent Space#^prop-30-5\|Prop. §30.5]], [[§30 The Cotangent Space#^prop-30-6\|Prop. §30.6]], [[§30 The Cotangent Space#^thm-30-8\|Thm. §30.8]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |

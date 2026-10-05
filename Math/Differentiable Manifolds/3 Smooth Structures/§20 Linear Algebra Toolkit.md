@@ -31,8 +31,15 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-20-1
 
-> [!definition] Definition §20.1: Dual Space and Dual Basis
-> The **dual space** of $V$ is $V^{\ast} = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are **linear functionals**, or **covectors**. If $(e_1, \ldots, e_n)$ is a basis of $V$, the **dual basis** $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
+> [!definition] Definition §20.1: Dual Space
+> The **dual space** of $V$ is $V^{\ast} = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are **linear functionals**, or **covectors**.
+>
+> *Lee: Proposition 11.1*
+
+^def-20-1
+
+> [!definition] Definition §20.2: Dual Basis
+> If $(e_1, \ldots, e_n)$ is a basis of $V$, the **dual basis** $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors ([[§20 Linear Algebra Toolkit#^def-20-1|Definition §20.1]]) with
 >
 > $$
 > \varepsilon^i(e_j) = \delta^i_j ,
@@ -42,7 +49,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 11.1*
 
-^def-20-1
+^def-20-2
 
 > [!remark]- Connections
 > - Home in linear algebra (written $V'$ there): [[§12 Duality#^ladr-3-110|LADR 3.110 (dual space)]], [[§12 Duality#^ladr-3-112|LADR 3.112 (dual basis)]].
@@ -97,7 +104,7 @@ tags: [differentiable-manifolds, math591]
 
 ^rem-20-1
 
-> [!definition] Definition §20.2: Dual Map
+> [!definition] Definition §20.3: Dual Map
 > The **dual map**, or **transpose**, of a linear map $A : V \to W$ is
 >
 > $$
@@ -106,7 +113,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 11.4*
 
-^def-20-2
+^def-20-3
 
 ![[m591-10-1.svg]]
 *A linear map $A : V \to W$ carries vectors forward; its dual map $A^{\ast} : W^{\ast} \to V^{\ast}$ carries covectors backward.*
@@ -132,12 +139,12 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^pf-20-4
 
-*Uses:* [[§20 Linear Algebra Toolkit#^def-20-2|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 > [!remark]- Connections
 > - Home: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]], [[§12 Duality#^ladr-3-120|LADR 3.120 (algebraic properties)]], [[§12 Duality#^ladr-3-132|LADR 3.132 (matrix of the dual map is the transpose)]]; (3) is [[§12 Duality#^ladr-3-128|LADR 3.128]] and [[§12 Duality#^ladr-3-130|LADR 3.130]] (null space and range of the dual map).
 
-> [!definition] Definition §20.3: Bilinear Pairing
+> [!definition] Definition §20.4: Bilinear Pairing
 > A **bilinear pairing** is a map $B : V \times W \to \mathbb{R}$ that is linear in each argument separately. It induces linear maps
 >
 > $$
@@ -146,7 +153,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 >
 > $B$ is **left non-degenerate** if $B(v, w) = 0$ for all $w$ implies $v = 0$, i.e. $B^\flat$ is injective; **right non-degenerate** if $B(v, w) = 0$ for all $v$ implies $w = 0$, i.e. $B^\sharp$ is injective; and **non-degenerate** if both.
 
-^def-20-3
+^def-20-4
 
 > [!remark]- Connections
 > - Same notion in LADR: [[§35 Tensor Products#^ladr-9-68|LADR 9.68]] (bilinear functionals on V × W); the case W = V is a bilinear form, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
@@ -169,7 +176,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^pf-20-5
 
-*Uses:* [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§20 Linear Algebra Toolkit#^def-20-4|Def. §20.4]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
 > - Applied to the pairing of tangent vectors with germs: [[§30 The Cotangent Space#^prop-30-7|§30.7]], [[§30 The Cotangent Space#^thm-30-8|§30.8]].
@@ -180,7 +187,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^rem-20-2
 
-> [!definition] Definition §20.4: Quotient Vector Space
+> [!definition] Definition §20.5: Quotient Vector Space
 > Let $W \subseteq V$ be a linear subspace. The **quotient space** $V/W$ is the set of cosets $v + W = \{v + w \mid w \in W\}$, with
 >
 > $$
@@ -191,7 +198,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 >
 > *Lee: App. B, Vector Spaces*
 
-^def-20-4
+^def-20-5
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99 (quotient space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|LADR 3.102 (operations)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|LADR 3.104 (quotient map)]].
@@ -210,7 +217,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^pf-20-6
 
-*Uses:* [[§20 Linear Algebra Toolkit#^def-20-4|Def. §20.4]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§20 Linear Algebra Toolkit#^def-20-5|Def. §20.5]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 ![[m591-10-2.svg]]
 *The universal property of the quotient: a linear map $A$ with $W \subseteq \ker A$ factors uniquely as $A = \bar A \circ \pi$.*
@@ -219,12 +226,12 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
-> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§30 The Cotangent Space#^def-30-2|Def. §30.2]].
+> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§30 The Cotangent Space#^def-30-3|Def. §30.3]].
 
-> [!definition] Definition §20.5: Direct Sum
+> [!definition] Definition §20.6: Direct Sum
 > The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear. A vector space $U$ is the **internal direct sum** of subspaces $U_1, U_2$, written $U = U_1 \oplus U_2$, if every $u \in U$ is $u_1 + u_2$ for unique $u_1 \in U_1$, $u_2 \in U_2$.
 
-^def-20-5
+^def-20-6
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87 (product of vector spaces)]], [[§3 Subspaces#^ladr-1-41|LADR 1.41 (internal direct sum)]].
@@ -242,7 +249,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 
 ^pf-20-7
 
-*Uses:* [[§20 Linear Algebra Toolkit#^def-20-5|Def. §20.5]]
+*Uses:* [[§20 Linear Algebra Toolkit#^def-20-6|Def. §20.6]]
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92 (dimension of a product)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93 (products and direct sums)]], [[Condition for a direct sum|LADR 1.45]].

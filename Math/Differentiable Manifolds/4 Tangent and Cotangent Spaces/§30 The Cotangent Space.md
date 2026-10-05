@@ -15,18 +15,23 @@ tags: [differentiable-manifolds, math591]
 
 On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mathbb{R}$ the abstract tangent space $T_c\mathbb{R}$ has the basis $\{\partial/\partial r|_c\}$ (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]), and we identify $T_c\mathbb{R} \cong \mathbb{R}$ once and for all by $\partial/\partial r|_c \mapsto 1$ — “we identify this with $\mathbb{R}$ forever.”
 
-> [!definition] Definition §30.1: Cotangent Space and the Differential of a Function
+> [!definition] Definition §30.1: Cotangent Space
 > Let $M$ be a smooth manifold and $p \in M$. The **cotangent space** of $M$ at $p$ is the dual of the abstract tangent space,
 >
 > $$
 > T_p^*M = (T_pM)^* .
 > $$
 >
-> For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the **differential** of $f$ at $p$ is $df_p = f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition [[§30 The Cotangent Space#^prop-30-1|§30.1]]); it is linear, so $df_p \in T_p^{\ast}M$.
->
 > *Lee: Ch. 11, Covectors*
 
 ^def-30-1
+
+> [!definition] Definition §30.2: The Differential of a Function
+> Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the **differential** of $f$ at $p$ is $df_p = f_{\ast p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition [[§30 The Cotangent Space#^prop-30-1|§30.1]]); it is linear, so $df_p \in T_p^{\ast}M$, the cotangent space of [[§30 The Cotangent Space#^def-30-1|Definition §30.1]].
+>
+> *Lee: Ch. 11, Covectors*
+
+^def-30-2
 
 ![[m591-13-1.svg]]
 *The differential of a function is its pushforward followed by the permanent identification of every tangent space of $\mathbb{R}$ with $\mathbb{R}$; so $df_p$ is the pushforward $f_{\ast p}$ under another name. The notation $T_p^{\ast}M$ puts the star on the $T$ “to save some ink.”*
@@ -143,10 +148,10 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 *Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone — “as you can see, it has the natural definition $I_p/I_p^2$.” The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§20 Linear Algebra Toolkit#^thm-20-5|Linear Algebra Toolkit]] for free.*
 
-> [!definition] Definition §30.2: The Space $I_p/I_p^2$
-> $I_p/I_p^2$ is the quotient vector space (Definition [[§20 Linear Algebra Toolkit#^def-20-4|§20.4]]) of $I_p$ by its subspace $I_p^2$ (Lemma [[§26 Derivations and the Abstract Tangent Space#^lem-26-1|§26.1]]). The class of $[f] \in I_p$ is written ${[}[f]{]} = [f] + I_p^2$, and ${[}[f]{]} = {[}[f']{]}$ iff $[f'] - [f] \in I_p^2$.
+> [!definition] Definition §30.3: The Space $I_p/I_p^2$
+> $I_p/I_p^2$ is the quotient vector space (Definition [[§20 Linear Algebra Toolkit#^def-20-5|§20.5]]) of $I_p$ by its subspace $I_p^2$ (Lemma [[§26 Derivations and the Abstract Tangent Space#^lem-26-1|§26.1]]). The class of $[f] \in I_p$ is written ${[}[f]{]} = [f] + I_p^2$, and ${[}[f]{]} = {[}[f']{]}$ iff $[f'] - [f] \in I_p^2$.
 
-^def-30-2
+^def-30-3
 
 > [!remark]- Connections
 > - The quotient space construction: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
@@ -216,21 +221,21 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 ^pf-30-6
 
-*Uses:* [[§30 The Cotangent Space#^prop-30-5|§30.5]], [[§30 The Cotangent Space#^def-30-2|Def. §30.2]], [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]]
+*Uses:* [[§30 The Cotangent Space#^prop-30-5|§30.5]], [[§30 The Cotangent Space#^def-30-3|Def. §30.3]], [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]]
 
 This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]): the coefficients of ${[}[f]{]}$ are the first partials of $f$, just as the coefficients of a derivation $D$ were its values $D[x^i]$.
 
-> [!definition] Definition §30.3: The Pairing Between Tangent Vectors and $I_p/I_p^2$
+> [!definition] Definition §30.4: The Pairing Between Tangent Vectors and $I_p/I_p^2$
 > The **pairing** of $T_pM$ with $I_p/I_p^2$ is
 >
 > $$
 > \langle\ ,\ \rangle : T_pM \times I_p/I_p^2 \to \mathbb{R}, \qquad \langle D, {[}[f]{]} \rangle = D[f] .
 > $$
 
-^def-30-3
+^def-30-4
 
 > [!theorem] Proposition §30.7: The Pairing Is Well Defined and Non-Degenerate
-> The pairing of Definition [[§30 The Cotangent Space#^def-30-3|§30.3]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§20 Linear Algebra Toolkit#^def-20-3|§20.3]].
+> The pairing of Definition [[§30 The Cotangent Space#^def-30-4|§30.4]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§20 Linear Algebra Toolkit#^def-20-4|§20.4]].
 >
 > *Lee: no counterpart; Lee proves Problem 11-4(b) without a pairing*
 
@@ -245,7 +250,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 ^pf-30-7
 
-*Uses:* [[§30 The Cotangent Space#^def-30-3|Def. §30.3]], [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§20 Linear Algebra Toolkit#^prop-20-6|§20.6]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§30 The Cotangent Space#^prop-30-5|§30.5]]
+*Uses:* [[§30 The Cotangent Space#^def-30-4|Def. §30.4]], [[§20 Linear Algebra Toolkit#^def-20-4|Def. §20.4]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§20 Linear Algebra Toolkit#^prop-20-6|§20.6]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§30 The Cotangent Space#^prop-30-5|§30.5]]
 
 > [!theorem] Theorem §30.8: The Cotangent Space from Germs
 > 1. The pairing induces isomorphisms
@@ -268,7 +273,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 ^pf-30-8
 
-*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§30 The Cotangent Space#^prop-30-7|§30.7]], [[§20 Linear Algebra Toolkit#^thm-20-5|§20.5]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§30 The Cotangent Space#^def-30-3|Def. §30.3]]
+*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§30 The Cotangent Space#^prop-30-7|§30.7]], [[§20 Linear Algebra Toolkit#^thm-20-5|§20.5]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§30 The Cotangent Space#^def-30-4|Def. §30.4]]
 
 ![[m591-13-3.svg]]
 *The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
@@ -306,8 +311,8 @@ Equal dimension is what makes the isomorphisms of Theorem [[§30 The Cotangent S
 
 *Lecture 15. A smooth map pushes tangent vectors forward; dually, it pulls covectors back. “Functions pull back by composition, and you can pull back actually any one-form by using the dual map of the forward star.”*
 
-> [!definition] Definition §30.4: Pullback of Covectors
-> Let $F : M \to N$ be smooth and $p \in M$. The **pullback of covectors** at $p$ is the dual map ([[§20 Linear Algebra Toolkit#^def-20-2|Definition §20.2]]) of the pushforward $F_{\ast p} : T_pM \to T_{F(p)}N$:
+> [!definition] Definition §30.5: Pullback of Covectors
+> Let $F : M \to N$ be smooth and $p \in M$. The **pullback of covectors** at $p$ is the dual map ([[§20 Linear Algebra Toolkit#^def-20-3|Definition §20.3]]) of the pushforward $F_{\ast p} : T_pM \to T_{F(p)}N$:
 >
 > $$
 > F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big(F_{*p}v\big) .
@@ -315,15 +320,15 @@ Equal dimension is what makes the isomorphisms of Theorem [[§30 The Cotangent S
 >
 > *Lee: Ch. 11, Pullbacks of Covector Fields*
 
-^def-30-4
+^def-30-5
 
 > [!remark]- Connections
-> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§44 The Operator d and Pullbacks of One-Forms#^def-44-1|Def. §44.1]].
+> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§43 One-Forms#^def-43-2|Def. §43.2]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 
 > [!remark] Remark: One Symbol for Two Pullbacks
-> The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-4|Definition §26.4]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§30 The Cotangent Space#^def-30-4|Definition §30.4]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
+> The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-4|Definition §26.4]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§30 The Cotangent Space#^def-30-5|Definition §30.5]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.
 
 ^rem-30-5
 
@@ -349,7 +354,7 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 
 ^pf-30-10
 
-*Uses:* [[§30 The Cotangent Space#^def-30-4|Def. §30.4]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§20 Linear Algebra Toolkit#^def-20-2|Def. §20.2]]
+*Uses:* [[§30 The Cotangent Space#^def-30-5|Def. §30.5]], [[§30 The Cotangent Space#^prop-30-1|§30.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]]
 
 > [!remark] Remark: The Two Differentials Meet
 > In $\mathbb{R}^n$, with the dot-product identification of [[§30 The Cotangent Space#^rem-30-2|Remark (Differential — Not Gradient)]], the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_{\ast}$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
@@ -357,4 +362,4 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 ^rem-30-6
 
 > [!remark]- Connections
-> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]. The field version: [[§44 The Operator d and Pullbacks of One-Forms#^cor-44-3|Cor. §44.3]].
+> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]. The field version: [[§43 One-Forms#^cor-43-4|Cor. §43.4]].

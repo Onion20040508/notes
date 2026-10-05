@@ -5,7 +5,7 @@ chapter: 6
 section: 42
 tags: [differentiable-manifolds, math591]
 ---
-← [[§41 The Tangent Bundle]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§43 Vector Fields and One-Forms]] →
+← [[§41 The Tangent Bundle]] · ↑ [[· 6 Bundles and Vector Fields]] · [[§43 One-Forms]] →
 
 *Stage: bundles — The cotangent spaces assembled into $T^{\ast}M$, with charts from the dual bases; covector components transform by the inverse transpose.*
 
@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]].
 
-> [!theorem] Proposition §42.1: The Cotangent Transition Maps
+> [!theorem] Proposition §42.2: The Cotangent Transition Maps
 > For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
 >
 > $$
@@ -44,12 +44,12 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 11.9*
 
-^prop-42-1
+^prop-42-2
 
 > [!proof]+ Proof
 > *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* The formula for $dx^i|_p$ is [[§30 The Cotangent Space#^lem-30-2|Lemma §30.2]] applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in [[§41 The Tangent Bundle#^prop-41-2|Proposition §41.2]]; the fibration and linearity statements follow as in [[§41 The Tangent Bundle#^cor-41-3|Corollary §41.3]].
 
-^pf-42-1
+^pf-42-2
 
 *Uses:* [[§42 The Cotangent Bundle#^def-42-1|Def. §42.1]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§41 The Tangent Bundle#^cor-41-3|§41.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]]
 

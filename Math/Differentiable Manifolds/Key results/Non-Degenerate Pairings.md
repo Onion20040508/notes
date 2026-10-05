@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§20 Linear Algebra Toolkit#^prop-20-1|Proposition §20.1: Standing Facts from Linear Algebra]]
 - [[§20 Linear Algebra Toolkit#^prop-20-2|Proposition §20.2: The Dual Basis]]
-- [[§20 Linear Algebra Toolkit#^def-20-3|Definition §20.3: Bilinear Pairing]]
+- [[§20 Linear Algebra Toolkit#^def-20-4|Definition §20.4: Bilinear Pairing]]
 
 ## Its proof uses (other subjects)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (Linear Algebra)

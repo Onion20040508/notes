@@ -126,7 +126,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T]], [[§12 Duality#^ladr-3-130|The range of T]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T (LADR 3.132)]].
 > - Not the adjoint $T^*$ of Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
-> - Same definition in 591, written with a star and called the transpose: [[§20 Linear Algebra Toolkit#^def-20-2|591 Def. §20.2]], with its properties in [[§20 Linear Algebra Toolkit#^prop-20-4|591 Prop. §20.4]].
+> - Same definition in 591, written with a star and called the transpose: [[§20 Linear Algebra Toolkit#^def-20-3|591 Def. §20.3]], with its properties in [[§20 Linear Algebra Toolkit#^prop-20-4|591 Prop. §20.4]].
 
 > [!example] Example 3.119: Dual map of the differentiation linear map (p. 108)
 > $D:\Poly(\R)\to\Poly(\R)$, $Dp=p'$. The dual map $D'$ pulls a functional back by precomposing with $D$:
@@ -316,7 +316,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
-> - This is why covector components change by the transpose of the inverse Jacobian: [[§42 The Cotangent Bundle#^prop-42-1|591 Prop. §42.1]].
+> - This is why covector components change by the transpose of the inverse Jacobian: [[§42 The Cotangent Bundle#^prop-42-2|591 Prop. §42.2]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank

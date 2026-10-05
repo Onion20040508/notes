@@ -4416,8 +4416,13 @@ Let $A : V \to W$ be linear, with $V$ and $W$ finite-dimensional.
 Imported from linear algebra without proof; proved in Axler, \emph{Linear Algebra Done Right} (see also Lee, Corollary~B.21 and Proposition~B.24). To be filled.
 \end{proof}
 
-\begin{defbox}[Dual Space and Dual Basis]\deflabel{def:dual}
-The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}. If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
+\begin{defbox}[Dual Space]\deflabel{def:dual}
+The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}.
+\leeref{Proposition 11.1}
+\end{defbox}
+
+\begin{defbox}[Dual Basis]\deflabel{def:dual-basis}
+If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors (Definition~\ref{def:dual}) with
 \[
 \varepsilon^i(e_j) = \delta^i_j ,
 \]
@@ -6563,12 +6568,16 @@ This is the second of Uribe's three views, and it uses the velocities of Assignm
 
 On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mathbb{R}$ the abstract tangent space $T_c\mathbb{R}$ has the basis $\{\partial/\partial r|_c\}$ (Theorem~\ref{thm:tangent-basis}), and we identify $T_c\mathbb{R} \cong \mathbb{R}$ once and for all by $\partial/\partial r|_c \mapsto 1$ --- ``we identify this with $\mathbb{R}$ forever.''
 
-\begin{defbox}[Cotangent Space and the Differential of a Function]\deflabel{def:cotangent}
+\begin{defbox}[Cotangent Space]\deflabel{def:cotangent}
 Let $M$ be a smooth manifold and $p \in M$. The \textbf{cotangent space} of $M$ at $p$ is the dual of the abstract tangent space,
 \[
 T_p^*M = (T_pM)^* .
 \]
-For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$.
+\leeref{Ch.~11, \emph{Covectors}}
+\end{defbox}
+
+\begin{defbox}[The Differential of a Function]\deflabel{def:differential-function}
+Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
 \leeref{Ch.~11, \emph{Covectors}}
 \end{defbox}
 
@@ -9022,10 +9031,14 @@ The example continues with covectors in Example~\ref{ex:recap-covectors-plane}.
 
 Keep one picture in mind: $M$ is a surface, $f$ is the temperature on it, and you are walking on it. A tangent vector is a direction to walk in. This section is about the objects that \emph{eat} directions.
 
-\textbf{Step 1: covectors are linear functions on a vector space.} The dual space $V^*$ of a vector space $V$ consists of the linear maps $V \to \mathbb{R}$, its elements are called \emph{covectors}, and a basis $(e_i)$ of $V$ has a dual basis $(\varepsilon^i)$ with $\varepsilon^i(e_j) = \delta^i_j$ (Definition~\ref{def:dual}). Components come out by evaluation, $\lambda = \sum_i \lambda(e_i)\, \varepsilon^i$ (Proposition~\ref{prop:dual-basis}). A linear map $A : V \to W$ has a dual map $A^* : W^* \to V^*$, $A^*\lambda = \lambda \circ A$, which goes \emph{backwards} (Definition~\ref{def:dual-map}).
+\textbf{Step 1: covectors are linear functions on a vector space.} The dual space $V^*$ of a vector space $V$ consists of the linear maps $V \to \mathbb{R}$, its elements are called \emph{covectors}, and a basis $(e_i)$ of $V$ has a dual basis $(\varepsilon^i)$ with $\varepsilon^i(e_j) = \delta^i_j$ (Definitions~\ref{def:dual} and~\ref{def:dual-basis}). Components come out by evaluation, $\lambda = \sum_i \lambda(e_i)\, \varepsilon^i$ (Proposition~\ref{prop:dual-basis}). A linear map $A : V \to W$ has a dual map $A^* : W^* \to V^*$, $A^*\lambda = \lambda \circ A$, which goes \emph{backwards} (Definition~\ref{def:dual-map}).
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:dual} (Dual Space and Dual Basis).} The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}. If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
+\textbf{Recall: Definition~\ref{def:dual} (Dual Space).} The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:dual-basis} (Dual Basis).} If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors (Definition~\ref{def:dual}) with
 \[
 \varepsilon^i(e_j) = \delta^i_j ,
 \]
@@ -9042,22 +9055,25 @@ A^* : W^* \to V^*, \qquad A^*(\lambda) = \lambda \circ A .
 \textbf{Step 2: the cotangent space.} At $p \in M$, $T_p^*M = (T_pM)^*$ (Definition~\ref{def:cotangent}). A covector $\alpha \in T_p^*M$ eats a direction $v \in T_pM$ and returns a number $\alpha(v)$: think of it as a price list for the first step of a walk.
 
 \begin{quote}
-\textbf{Recall: Definition~\ref{def:cotangent} (Cotangent Space and the Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. The \textbf{cotangent space} of $M$ at $p$ is the dual of the abstract tangent space,
+\textbf{Recall: Definition~\ref{def:cotangent} (Cotangent Space).} Let $M$ be a smooth manifold and $p \in M$. The \textbf{cotangent space} of $M$ at $p$ is the dual of the abstract tangent space,
 \[
 T_p^*M = (T_pM)^* .
 \]
-For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$.
 \end{quote}
 
 \textbf{Step 3: a function produces a covector, its differential.} The \emph{differential} of $f$ at $p$ is the covector
 \[
 df_p \in T_p^*M, \qquad df_p(v) = v[f]
 \]
-(Definition~\ref{def:cotangent} and Proposition~\ref{prop:df-derivation}): feed it a direction, and it returns how fast the temperature changes that way. Officially $df_p$ is the pushforward $f_{*p} : T_pM \to T_{f(p)}\mathbb{R}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$, so it is the differential of Step~5 of \ref{sec:recap-tangent} for the special target $N = \mathbb{R}$. In a chart the differentials $dx^i|_p$ of the coordinate functions form the basis dual to $\partial/\partial x^i|_p$, and
+(Definition~\ref{def:differential-function} and Proposition~\ref{prop:df-derivation}): feed it a direction, and it returns how fast the temperature changes that way. Officially $df_p$ is the pushforward $f_{*p} : T_pM \to T_{f(p)}\mathbb{R}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$, so it is the differential of Step~5 of \ref{sec:recap-tangent} for the special target $N = \mathbb{R}$. In a chart the differentials $dx^i|_p$ of the coordinate functions form the basis dual to $\partial/\partial x^i|_p$, and
 \[
 df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p
 \]
 (Lemma~\ref{lem:df-coords}); the components of any covector are found by evaluation, $\alpha = \sum_j \alpha(\partial/\partial x^j|_p)\, dx^j|_p$ (Corollary~\ref{cor:covector-components}). This is the formula of multivariable calculus, but $df_p$ is \emph{not} the gradient: turning the covector $df_p$ into a vector needs an inner product, which a manifold does not come with (Remark~\ref{rem:differential-not-gradient}). In $\mathbb{R}^n$ with the dot product, $df_p(v) = \nabla f(p) \cdot v$.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:differential-function} (The Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$, the cotangent space of Definition~\ref{def:cotangent}.
+\end{quote}
 
 \begin{quote}
 \textbf{Recall: Lemma~\ref{lem:df-coords} (The Differential in Coordinates).} Let $(x^1, \ldots, x^m)$ be coordinates near $p$, and write $dx^i|_p$ for the differential at $p$ of the coordinate function $x^i$. Then $\{dx^1|_p, \ldots, dx^m|_p\}$ is the dual basis of $\{\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p\}$, so $\dim T_p^*M = m$ (Proposition~\ref{prop:dual-basis}), and for every smooth $f$ defined near $p$,
@@ -9137,7 +9153,7 @@ Name & Symbol & Takes \ldots\ to \ldots & Defined in \\
 \hline
 differential of a map between vector spaces & $dF_p$ & a vector in $X$ to a vector in $Y$ (the Jacobian) & Definition~\ref{def:vs-differential} \\
 differential (pushforward) of a smooth map & $F_{*p}$ & $T_pM \to T_{F(p)}N$ & Definition~\ref{def:pushforward} \\
-differential of a function at $p$ & $df_p$ & $T_pM \to \mathbb{R}$, a covector & Definition~\ref{def:cotangent} \\
+differential of a function at $p$ & $df_p$ & $T_pM \to \mathbb{R}$, a covector & Definition~\ref{def:differential-function} \\
 the operator $d$ & $d$ & a function $f$ to the one-form $df$ & Proposition~\ref{prop:d-operator} \\
 \hline
 \end{tabular}
@@ -9164,7 +9180,7 @@ covector $\alpha \in T^*_{F(p)}N$ & backward & $(F_p^*\alpha)(v) = \alpha(F_{*p}
 
 Things that \emph{are} somewhere move forward with the points; things that \emph{eat} move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
 
-\textbf{What this chapter builds.} So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ (\ref{sec:tangent-bundle}), and the cotangent spaces into the cotangent bundle $T^*M$ (\ref{sec:cotangent-bundle}). A smooth choice of a tangent vector at every point is a vector field, and of a covector at every point a one-form (\ref{sec:fields}). Then $d$ turns functions into one-forms and $F^*$ pulls one-forms back (\ref{sec:d-operator}), and a vector field differentiates functions everywhere at once (\ref{sec:vf-operators}).
+\textbf{What this chapter builds.} So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ (\ref{sec:tangent-bundle}), and the cotangent spaces into the cotangent bundle $T^*M$ (\ref{sec:cotangent-bundle}). A smooth choice of a covector at every point is a one-form; $d$ turns functions into one-forms, and $F^*$ pulls one-forms back (\ref{sec:d-operator}). A smooth choice of a tangent vector at every point is a vector field, and a vector field differentiates functions everywhere at once (\ref{sec:fields}).
 
 \begin{exbox}[Covectors in the Plane]\exlabel{ex:recap-covectors-plane}
 Continue Example~\ref{ex:recap-vectors-plane}: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{*p}v = 6\,\partial_u + 2\,\partial_w$.
@@ -9230,16 +9246,21 @@ The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical
 
 \textit{Lecture 13. ``Back to the tangent bundle.'' $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.}
 
-\begin{defbox}[Trivializations and Charts of $TM$]\deflabel{def:tb-charts}
+\begin{defbox}[Local Trivializations of $TM$]\deflabel{def:tb-charts}
 Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The \textbf{local trivialization} over $U$ is
 \[
 \Phi : TU \longrightarrow U \times \mathbb{R}^m, \qquad \Phi(p, v) = (p, v^1, \ldots, v^m), \qquad \text{where } v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p ,
 \]
-the components of $v$ in the coordinate basis (Theorem~\ref{thm:tangent-basis}); and the \textbf{chart} of $TM$ is
+the components of $v$ in the coordinate basis (Theorem~\ref{thm:tangent-basis}). It is a bijection, and $\mathrm{pr}_1 \circ \Phi = \pi$ --- ``that's why I call it a trivialization.''
+\leeref{Proposition 3.18}
+\end{defbox}
+
+\begin{defbox}[Charts of $TM$]\deflabel{def:tb-chart}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ (Definition~\ref{def:tb-charts}). The \textbf{chart} of $TM$ over $U$ is
 \[
 \tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
 \]
-Both are bijections, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$ for $\tilde\varphi$; and $\mathrm{pr}_1 \circ \Phi = \pi$ --- ``that's why I call it a trivialization.''
+It is a bijection, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$.
 \leeref{Proposition 3.18}
 \end{defbox}
 
@@ -9352,82 +9373,106 @@ Proposition~\ref{prop:trivialization-section} turns local trivializations into l
 
 \textit{Lecture 13 defined the cotangent bundle --- ``completely analogous'' to the tangent bundle, with the dual bases in place of the coordinate bases; Lecture 15 returned to it for the homework.}
 
-\begin{defbox}[The Cotangent Bundle]\deflabel{def:cotangent-bundle}
-The \textbf{cotangent bundle} of $M$ is
+\begin{defbox}[The Cotangent Bundle as a Set]\deflabel{def:cotangent-bundle}
+Let $M$ be a smooth manifold of dimension $m$. Its \textbf{cotangent bundle} is the set
 \[
-T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M,
+T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M = \{\, (p, \xi) : p \in M,\ \xi \in T_p^*M \,\},
 \]
-with projection $\pi(p, \xi) = p$. For a chart $(U, \varphi = (x^i))$ of $M$, its chart is
+all the cotangent spaces (Definition~\ref{def:cotangent}) put together. It comes with the \textbf{projection} $\pi : T^*M \to M$, $\pi(p, \xi) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_p^*M$ is identified with $T_p^*M$; and with the \textbf{zero section} $\zeta : M \to T^*M$, $\zeta(p) = (p, 0)$.
+\leeref{Ch.~11, \emph{The Cotangent Bundle}}
+\end{defbox}
+
+The definitions and results of this section run parallel to those for the tangent bundle in \ref{sec:tangent-bundle}, item for item, with the dual bases $dx^i|_p$ in place of the coordinate bases $\partial/\partial x^i|_p$. Lecture~13 gave the charts and the transition maps; the rest is filled in, following Section~\ref{sec:tangent-bundle}.
+
+\subsection{Trivializations and Charts}\label{sub:ctb-charts}
+
+\begin{defbox}[Local Trivializations of $T^*M$]\deflabel{def:ctb-trivialization}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $T^*U = \pi^{-1}(U) = \{(p, \xi) \in T^*M : p \in U\}$, the covectors at points of $U$. The \textbf{local trivialization} of $T^*M$ over $U$ is
 \[
-T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big),
+\Psi : T^*U \longrightarrow U \times \mathbb{R}^m, \qquad \Psi(p, \xi) = (p, \xi_1, \ldots, \xi_m), \qquad \text{where } \xi = \sum_{i=1}^m \xi_i\, dx^i\big|_p ,
 \]
-where $T^*U = \pi^{-1}(U)$ and $\xi = \sum_i \xi_i\, dx^i|_p$ in the dual basis (Definition~\ref{def:cotangent}). Because the bases $dx^i|_p$ and $\partial/\partial x^i|_p$ are dual to each other, the components are computed by evaluation, $\xi_i = \xi\big(\partial/\partial x^i|_p\big)$. Keeping $p$ instead of its coordinates, $(p, \xi) \mapsto (p, \xi_1, \ldots, \xi_m)$ is a local trivialization $T^*U \to U \times \mathbb{R}^m$.
+the components of $\xi$ in the dual basis. Because the bases $dx^i|_p$ and $\partial/\partial x^i|_p$ are dual to each other, the components are computed by evaluation, $\xi_i = \xi\big(\partial/\partial x^i|_p\big)$ (Corollary~\ref{cor:covector-components}). $\Psi$ is a bijection, and $\mathrm{pr}_1 \circ \Psi = \pi$.
 \leeref{Proposition 11.9}
 \end{defbox}
 
-\begin{propbox}[The Cotangent Transition Maps]\thmlabel{prop:cotangent-transition}
-For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
+\begin{defbox}[Charts of $T^*M$]\deflabel{def:ctb-chart}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ (Definition~\ref{def:ctb-trivialization}). The \textbf{chart} of $T^*M$ over $U$ --- the \textbf{standard coordinates} on $T^*U$ --- is
+\[
+\hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big).
+\]
+It is a bijection, with inverse $(r, \xi) \mapsto \big(\varphi^{-1}(r), \sum_i \xi_i\, dx^i|_{\varphi^{-1}(r)}\big)$.
+\leeref{Proposition 11.9}
+\end{defbox}
+
+\begin{propbox}[The Topology of $T^*M$]\thmlabel{prop:ctb-topology}
+There is a unique topology on $T^*M$ for which every $T^*U$ is open and every chart $\hat\varphi : T^*U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^*M$ is a topological manifold of dimension $2m$.
+\leeref{Lemma 1.35 and Proposition 11.9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture --- ``completely analogous''; filled in.)} The proof of Proposition~\ref{prop:tb-topology} uses only two facts about the charts $\tilde\varphi$: each is a bijection of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m$, and each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a homeomorphism between the open sets $\varphi(U \cap V) \times \mathbb{R}^m$ and $\psi(U \cap V) \times \mathbb{R}^m$. Both hold for the charts $\hat\varphi$: the first by Definition~\ref{def:ctb-chart}, and the second by the computation in the proof of Proposition~\ref{prop:cotangent-transition} below, which uses only the definitions of the charts, not any topology on $T^*M$. With $\hat\varphi$, $\hat\psi$ and $T^*U$ in place of $\tilde\varphi$, $\tilde\psi$ and $TU$, the proof then goes through word for word:
+\begin{itemize}
+    \item declare $W \subseteq T^*M$ open if $\hat\varphi(W \cap T^*U)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$; this is a topology, since each $\hat\varphi$ is a bijection;
+    \item each $T^*U$ is open, because $\hat\psi(T^*U \cap T^*V) = \psi(U \cap V) \times \mathbb{R}^m$ is open, and each $\hat\varphi$ is a homeomorphism onto its open image, because the transition maps are homeomorphisms;
+    \item any topology with these two properties has the same open sets, since $W = \bigcup_U (W \cap T^*U)$;
+    \item $T^*M$ is locally Euclidean of dimension $2m$, through the charts;
+    \item it is Hausdorff: two covectors at the same point lie in one $T^*U$, homeomorphic to a subset of $\mathbb{R}^{2m}$, and covectors at distinct points $p \neq q$ lie in the disjoint open sets $T^*U$, $T^*V$ for charts with disjoint domains $U \ni p$, $V \ni q$;
+    \item it is second countable: countably many chart domains $U_B$ cover $M$, so the countably many open sets $T^*U_B$, each with a countable basis, cover $T^*M$.
+\end{itemize}
+\end{proof}
+
+\begin{propbox}[The Smooth Atlas of $T^*M$]\thmlabel{prop:cotangent-transition}
+The charts $(T^*U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $T^*M$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
 \[
 dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
 \]
-So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components, and the charts of $T^*M$ form a smooth atlas making $\pi : T^*M \to M$ a vector bundle with fibre $\mathbb{R}^m$.
+So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components: with $\tau = \psi \circ \varphi^{-1}$, the transition map is
+\[
+\hat\psi \circ \hat\varphi^{-1}(r, \xi) = \Big( \tau(r),\ \big(\tau'(r)^{-1}\big)^{\mathsf T} \xi \Big) .
+\]
 \leeref{Proposition 11.9}
 \end{propbox}
 
 \begin{proof}
 \textit{(Lecture~13: ``completely analogous'', with the change ``we use the dual basis'', and the formula for $dx^i$ given; the rest is filled in.)} The formula for $dx^i|_p$ is Lemma~\ref{lem:df-coords} applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in Proposition~\ref{prop:tb-atlas}; the fibration and linearity statements follow as in Corollary~\ref{cor:tb-fibration}.
+Explicitly, with $p = \varphi^{-1}(r)$, the matrix $\big[\partial y^i/\partial x^j(p)\big]$ is $\tau'(r)$ (Proposition~\ref{prop:upstairs-downstairs}), so $\big[\partial x^i/\partial y^j(p)\big] = \tau'(r)^{-1}$ and $\eta = \big(\tau'(r)^{-1}\big)^{\mathsf T}\xi$, which is the displayed transition map. Its entries are smooth in $r$: those of $\tau'(r)$ are, and the inverse of an invertible matrix is given by Cramer's rule, a quotient of polynomials in the entries by the nonzero determinant. The inverse transition map is the same formula with the two charts exchanged.
 \end{proof}
 
-\textit{Lecture~15 returned to the cotangent bundle --- ``we did define it, but it was all very quick'' --- because the homework uses it: ``the standard coordinates on $T^*M$, which are also trivializations'', with the components found by evaluating on the dual basis, as in Definition~\ref{def:cotangent-bundle}. He also recalled that the cotangent space has a description from germs, $T_p^*M \cong I_p/I_p^2$ (Theorem~\ref{thm:cotangent-ideal}): ``the cotangent space is, in a way, very extremely natural from the point of view of functions.''}
+\begin{corbox}[The Cotangent Bundle Is a Fibration]\thmlabel{cor:ctb-fibration}
+With the smooth structure of Proposition~\ref{prop:cotangent-transition}:
+\begin{enumerate}
+    \item $T^*M$ is a smooth manifold of dimension $2m$, and $\pi : T^*M \to M$ is smooth;
+    \item the $\Psi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Psi$ restricts on the fibre $T_p^*M$ to a linear isomorphism $T_p^*M \to \{p\} \times \mathbb{R}^m$; so $T^*M$ is a vector bundle;
+    \item the image $\zeta(M)$ of the zero section is a submanifold of $T^*M$ of codimension $m$.
+\end{enumerate}
+\leeref{Proposition 11.9}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, as Corollary~\ref{cor:tb-fibration}.)} (1) By Propositions~\ref{prop:ctb-topology} and~\ref{prop:cotangent-transition}. In the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth. (2) $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi$ is a composite of diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), and $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^*U$ cover $T^*M$ and the $U$ cover $M$. On $T_p^*M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\hat\varphi$, $\zeta(M) \cap T^*U = \{\xi_1 = \cdots = \xi_m = 0\}$, so the charts $\hat\varphi$ are adapted to $\zeta(M)$ (Definition~\ref{def:submanifold}).
+\end{proof}
+
+\subsection{Lecture 15 and the Standard Coordinates}\label{sub:ctb-lecture15}
+
+\textit{Lecture~15 returned to the cotangent bundle --- ``we did define it, but it was all very quick'' --- because the homework uses it: ``the standard coordinates on $T^*M$, which are also trivializations'', with the components found by evaluating on the dual basis, as in Definitions~\ref{def:ctb-trivialization} and~\ref{def:ctb-chart}. He also recalled that the cotangent space has a description from germs, $T_p^*M \cong I_p/I_p^2$ (Theorem~\ref{thm:cotangent-ideal}): ``the cotangent space is, in a way, very extremely natural from the point of view of functions.''}
 
 \textbf{Transcription note.} Page~40 of the handwritten notes writes the standard coordinates as a map on $T^*M$; they are defined on $T^*U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 
 ``We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.'' $TM$ and $T^*M$ are isomorphic as vector bundles, ``but not naturally isomorphic --- we have to make choices to construct an isomorphism'' (a metric, for instance, as in the remark on conormal spaces). This is stated, not proved, here.
 
 % ============================================================================
-% SECTION: VECTOR FIELDS AND ONE-FORMS
+% SECTION: ONE-FORMS
 % ============================================================================
 
-\section{Vector Fields and One-Forms}\label{sec:fields}\label{sub:sections}\label{sub:one-forms}
+\section{One-Forms}\label{sub:one-forms}\label{sec:d-operator}
 
-\roadmark{Stage: fields}{Smooth sections of $TM$ and of $T^*M$: a tangent vector, or a covector, at every point, chosen smoothly --- and the coordinate test for smoothness.}
+\roadmark{Stage: fields}{Smooth sections of $T^*M$, a covector at every point; functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.}
 
-\textit{Lectures 13 and 15. A section of a fibration (Definition~\ref{def:section}) picks one point in every fibre; for the tangent and cotangent bundles that point is a vector, or a covector, at every point of $M$. Every vector bundle has sections, the zero section at least --- unlike a general fibration: the Hopf fibration has none (Remark~\ref{rem:sections-need-not-exist}).}
+\textit{Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions --- ``which will be the beginning of a chain of operators when we discuss the de Rham cohomology.''}
 
-\subsection{Vector Fields}\label{sub:vector-fields}
+A one-form is a section of the cotangent bundle (Definition~\ref{def:section}): it picks a covector in every fibre $T_p^*M$. Every vector bundle has sections, the zero section at least --- unlike a general fibration: the Hopf fibration has none (Remark~\ref{rem:sections-need-not-exist}).
 
-\begin{defbox}[Vector Field]\deflabel{def:vector-field}
-A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
-\leeref{Ch.~8, \emph{Vector Fields}}
-\end{defbox}
-
-\textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
-
-\begin{defbox}[The Space of Vector Fields]\deflabel{def:vector-fields-space}
-A vector field on $M$ is a smooth section $X$ of the tangent bundle $TM \to M$ (Definition~\ref{def:vector-field}); its value at $p$ is written $X_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on. The set of all vector fields on $M$ is denoted
-\[
-\mathfrak{X}(M) \qquad \text{(\LaTeX: \texttt{\textbackslash mathfrak\{X\}})}.
-\]
-It is a real vector space, and functions multiply vector fields pointwise: $(fX)_p = f(p) X_p$.
-\leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
-\end{defbox}
-
-\begin{propbox}[Vector Fields in Coordinates]\thmlabel{prop:vf-coords}
-Let $X$ be a section of $TM$ (not assumed smooth) and $(U, \varphi = (x^j))$ a chart. Then on $U$
-\[
-X = \sum_{j=1}^m X^j\, \frac{\partial}{\partial x^j}, \qquad X^j(p) = X_p[x^j] = dx^j|_p(X_p),
-\]
-and $X$ is smooth on $U$ if and only if the coefficient functions $X^1, \ldots, X^m$ are smooth on $U$.
-\leeref{Proposition 8.1}
-\end{propbox}
-
-\begin{proof}
-\textit{(Stated in Lecture~15, ``analogously'' to one-forms; filled in.)} The expansion is the basis theorem at each point, with coefficients $X_p[x^j]$ (Theorem~\ref{thm:tangent-basis}). In the chart $\tilde\varphi$ of $TM$ (Definition~\ref{def:tb-charts}) the coordinate representation of $X$ is $r \mapsto \big(r, X^1(\varphi^{-1}(r)), \ldots, X^m(\varphi^{-1}(r))\big)$, smooth exactly when every $X^j \circ \varphi^{-1}$ is.
-\end{proof}
-
-\subsection{One-Forms}\label{sub:one-forms-def}
-
-\textit{Lecture 15. The sections of the cotangent bundle.}
+\subsection{One-Forms and Their Coordinates}\label{sub:one-forms-def}
 
 \begin{defbox}[One-Form]\deflabel{def:one-form}
 A \textbf{one-form} (or \emph{$1$-form}, or \emph{covector field}) on $M$ is a smooth section $\theta : M \to T^*M$ of the cotangent bundle: $\pi \circ \theta = \mathrm{id}_M$, so that $\theta$ assigns to every $p \in M$ a covector in $T_p^*M$. This value is written $\theta_p$, not $\theta(p)$, and it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$. The space of one-forms on $M$ is written $C^\infty(M, T^*M)$ (Uribe's notation; also $\Omega^1(M)$).
@@ -9446,18 +9491,10 @@ and $\theta$ is smooth on $U$ if and only if the coefficient functions $\theta_1
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~15 stated it --- ``smoothness of the form will translate into these functions being smooth''; the proof is filled in.)} At each $p$ the $dx^j|_p$ form a basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$, which gives the expansion and the formula for $\theta_j(p)$. In the chart of $T^*M$ over $U$ (Definition~\ref{def:cotangent-bundle}) and the chart $\varphi$ of $M$, the coordinate representation of $\theta$ is $r \mapsto \big(r, \theta_1(\varphi^{-1}(r)), \ldots, \theta_m(\varphi^{-1}(r))\big)$, which is smooth exactly when every $\theta_j \circ \varphi^{-1}$ is.
+\textit{(Lecture~15 stated it --- ``smoothness of the form will translate into these functions being smooth''; the proof is filled in.)} At each $p$ the $dx^j|_p$ form a basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$, which gives the expansion and the formula for $\theta_j(p)$. In the chart of $T^*M$ over $U$ (Definition~\ref{def:ctb-chart}) and the chart $\varphi$ of $M$, the coordinate representation of $\theta$ is $r \mapsto \big(r, \theta_1(\varphi^{-1}(r)), \ldots, \theta_m(\varphi^{-1}(r))\big)$, which is smooth exactly when every $\theta_j \circ \varphi^{-1}$ is.
 \end{proof}
 
-% ============================================================================
-% SECTION: THE OPERATOR D AND PULLBACKS
-% ============================================================================
-
-\section{The Operator $d$ and Pullbacks of One-Forms}\label{sec:d-operator}
-
-\roadmark{Stage: fields}{Functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.}
-
-\textit{Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions --- ``which will be the beginning of a chain of operators when we discuss the de Rham cohomology.''}
+\subsection{The Operator $d$}\label{sub:d-operator}
 
 \begin{propbox}[The Differential of a Function Is a One-Form]\thmlabel{prop:d-operator}
 For $f \in C^\infty(M)$, the section $df : p \mapsto df_p$ is a one-form, given in a chart by
@@ -9653,6 +9690,47 @@ In particular $F^*\theta$ is smooth whenever $\theta$ is.
 \textit{(Not from lecture; filled in.)} Evaluate both sides on $\partial/\partial x^i|_p$: by definition the left side gives $\sum_j \theta_j(F(p))\, dy^j|_{F(p)}\big(F_{*p}\, \partial/\partial x^i|_p\big)$, and $F_{*p}\, \partial/\partial x^i|_p = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$ (Theorem~\ref{lem:differential-matrix}). Smoothness follows from Proposition~\ref{prop:one-form-coords}.
 \end{proof}
 
+% ============================================================================
+% SECTION: VECTOR FIELDS
+% ============================================================================
+
+\section{Vector Fields}\label{sec:fields}\label{sub:sections}\label{sub:vector-fields}\label{sec:vf-operators}
+
+\roadmark{Stage: fields}{Smooth sections of $TM$, a tangent vector at every point --- and vector fields acting on functions, as derivations of $C^\infty(M)$.}
+
+\textit{Lecture 15: ``now we want to start a big chapter, new chapter, and now it is on vector fields.'' References: Lee Ch.~8.} The definition itself was given in Lectures~12 and~13, with the tangent bundle; Lecture~15 restated it ``analogously'' to one-forms.
+
+\subsection{Vector Fields and Their Coordinates}\label{sub:vf-def}
+
+\begin{defbox}[Vector Field]\deflabel{def:vector-field}
+A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
+\leeref{Ch.~8, \emph{Vector Fields}}
+\end{defbox}
+
+\textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
+
+\begin{defbox}[The Space of Vector Fields]\deflabel{def:vector-fields-space}
+A vector field on $M$ is a smooth section $\mathbf{X}$ of the tangent bundle $TM \to M$ (Definition~\ref{def:vector-field}); its value at $p$ is written $\mathbf{X}_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on. The set of all vector fields on $M$ is denoted
+\[
+\mathfrak{X}(M) \qquad \text{(\LaTeX: \texttt{\textbackslash mathfrak\{X\}})}.
+\]
+It is a real vector space, and functions multiply vector fields pointwise: $(f\mathbf{X})_p = f(p) \mathbf{X}_p$.
+\leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
+\end{defbox}
+
+\begin{propbox}[Vector Fields in Coordinates]\thmlabel{prop:vf-coords}
+Let $\mathbf{X}$ be a section of $TM$ (not assumed smooth) and $(U, \varphi = (x^j))$ a chart. Then on $U$
+\[
+\mathbf{X} = \sum_{j=1}^m \mathbf{X}^j\, \frac{\partial}{\partial x^j}, \qquad \mathbf{X}^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p),
+\]
+and $\mathbf{X}$ is smooth on $U$ if and only if the coefficient functions $\mathbf{X}^1, \ldots, \mathbf{X}^m$ are smooth on $U$.
+\leeref{Proposition 8.1}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~15, ``analogously'' to one-forms; filled in.)} The expansion is the basis theorem at each point, with coefficients $\mathbf{X}_p[x^j]$ (Theorem~\ref{thm:tangent-basis}). In the chart $\tilde\varphi$ of $TM$ (Definition~\ref{def:tb-chart}) the coordinate representation of $\mathbf{X}$ is $r \mapsto \big(r, \mathbf{X}^1(\varphi^{-1}(r)), \ldots, \mathbf{X}^m(\varphi^{-1}(r))\big)$, smooth exactly when every $\mathbf{X}^j \circ \varphi^{-1}$ is.
+\end{proof}
+
 \begin{rembox}[Vector Fields and One-Forms Side by Side]\label{rem:fields-side-by-side}
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
@@ -9660,23 +9738,15 @@ In particular $F^*\theta$ is smooth whenever $\theta$ is.
 \hline
 Field & A section of & In a chart & Picture \\
 \hline
-vector field $X$ & $TM$ (Definition~\ref{def:vector-field}) & $\sum_j X^j\, \partial/\partial x^j$ & wind on the surface \\
+vector field $\mathbf{X}$ & $TM$ (Definition~\ref{def:vector-field}) & $\sum_j \mathbf{X}^j\, \partial/\partial x^j$ & wind on the surface \\
 one-form $\theta$ & $T^*M$ (Definition~\ref{def:one-form}) & $\sum_j \theta_j\, dx^j$ & a rule pricing every step \\
 \hline
 \end{tabular}
 \end{center}
-Every function gives a one-form, $f \mapsto df$ (Proposition~\ref{prop:d-operator}), but not every one-form is a $df$ (Proposition~\ref{prop:exactness-test}). A one-form and a vector field together give a function, $p \mapsto \theta_p(X_p)$. And a vector field acting on a function gives a function, $p \mapsto X_p[f]$ --- the starting point of \ref{sec:vf-operators}.
+Every function gives a one-form, $f \mapsto df$ (Proposition~\ref{prop:d-operator}), but not every one-form is a $df$ (Proposition~\ref{prop:exactness-test}). A one-form and a vector field together give a function, $p \mapsto \theta_p(\mathbf{X}_p)$. And a vector field acting on a function gives a function, $p \mapsto \mathbf{X}_p[f]$ --- the starting point of the next subsection.
 \end{rembox}
 
-% ============================================================================
-% SECTION: VECTOR FIELDS AS DERIVATIONS
-% ============================================================================
-
-\section{Vector Fields as Derivations}\label{sec:vf-operators}
-
-\roadmark{Stage: fields}{Vector fields acting on functions: derivations of $C^\infty(M)$, local operators, and the bump functions that connect global and local.}
-
-\textit{Lecture 15: ``now we want to start a big chapter, new chapter, and now it is on vector fields.'' References: Lee Ch.~8.}
+\subsection{Vector Fields as Derivations}\label{sub:vf-derivations}
 
 \begin{rembox}[Two Faces of a Vector Field]\label{rem:two-faces-vector-field}
 ``Just as tangent vectors, fields have a double life.'' Tangent vectors were defined as derivations and then shown to be velocities of curves (\ref{sec:velocities}). Vector fields likewise have two faces: \emph{operators on functions}, studied first because it continues the definition by derivations; and \emph{dynamics on $M$} --- integral curves, the trajectories that follow the field, to come later.
@@ -9692,11 +9762,11 @@ Compare a derivation \emph{at a point} (Definition~\ref{def:derivation}), which 
 \end{defbox}
 
 \begin{lembox}[A Vector Field Is a Derivation]\thmlabel{lem:vf-derivation}
-For $X \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$, the function $D_Xf : p \mapsto X_p[f]$ is smooth, and $D_X : C^\infty(M) \to C^\infty(M)$ is a derivation. In a chart, $D_Xf = \sum_j X^j\, \partial f/\partial x^j$. (Lee writes $Xf$ for $D_Xf$.)
+For $\mathbf{X} \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a derivation. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
 \end{lembox}
 
 \begin{proof}
-\textit{(Lecture~15: linearity and the product rule are ``an immediate consequence of the corresponding properties for tangent vectors'', applied at each point. Smoothness of $D_Xf$, which the lecture did not address, is filled in.)} In a chart, $X_p[f] = \sum_j X^j(p)\, \partial f/\partial x^j(p)$ by Proposition~\ref{prop:vf-coords}, a sum of products of smooth functions. At each $p$, $X_p[fg] = f(p)\, X_p[g] + g(p)\, X_p[f]$ because $X_p$ is a derivation at $p$; that is the product rule for $D_X$, and linearity is the same.
+\textit{(Lecture~15: linearity and the product rule are ``an immediate consequence of the corresponding properties for tangent vectors'', applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)} In a chart, $\mathbf{X}_p[f] = \sum_j \mathbf{X}^j(p)\, \partial f/\partial x^j(p)$ by Proposition~\ref{prop:vf-coords}, a sum of products of smooth functions. At each $p$, $\mathbf{X}_p[fg] = f(p)\, \mathbf{X}_p[g] + g(p)\, \mathbf{X}_p[f]$ because $\mathbf{X}_p$ is a derivation at $p$; that is the product rule for $D_\mathbf{X}$, and linearity is the same.
 \end{proof}
 
 The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field (Proposition~\ref{prop:derivations-are-fields}, at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality (Lemma~\ref{lem:derivation-local}), and its proof needs bump functions, so these come first.
@@ -9710,12 +9780,17 @@ f|_U = g|_U \quad \Longrightarrow \quad (Df)|_U = (Dg)|_U .
 
 ``Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data'': knowing $f$ on $U$ determines $Df$ on $U$.
 
-\begin{defbox}[Support and Bump Function]\deflabel{def:bump-function}
+\begin{defbox}[Support]\deflabel{def:support}
 The \textbf{support} of a function $\chi : M \to \mathbb{R}$ is the \emph{closure} of the set where it is nonzero,
 \[
 \operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} ,
 \]
-and $C^\infty_0(M)$ is the set of smooth functions with compact support. A \textbf{bump function at $p$} is a $\chi \in C^\infty_0(M)$ with $\chi \equiv 1$ on a neighbourhood of $p$.
+and $C^\infty_0(M)$ is the set of smooth functions with compact support.
+\leeref{Ch.~2, \emph{Partitions of Unity}}
+\end{defbox}
+
+\begin{defbox}[Bump Function]\deflabel{def:bump-function}
+Let $p \in M$. A \textbf{bump function at $p$} is a $\chi \in C^\infty_0(M)$ (Definition~\ref{def:support}) with $\chi \equiv 1$ on a neighbourhood of $p$.
 \leeref{Ch.~2, \emph{Partitions of Unity}}
 \end{defbox}
 
@@ -9756,18 +9831,17 @@ Stated in Lecture~15; the proof ``uses the existence of bump functions'' (Propos
 \end{proof}
 
 \begin{rembox}[Differential Operators]\label{rem:differential-operators}
-The operators $D_X$, $X \in \mathfrak{X}(M)$, together with the multiplication operators $f \mapsto gf$, generate under composition and sums the ring of \emph{differential operators} on $M$; all of them are local. Uribe stated the converse ``FYI'', without proof: every linear local operator is a differential operator. This is Peetre's theorem; its precise form says that a linear local operator is, near each point, a differential operator of finite order --- on a non-compact $M$ the order need not be bounded globally. Stated, not proved, here.
+The operators $D_\mathbf{X}$, $\mathbf{X} \in \mathfrak{X}(M)$, together with the multiplication operators $f \mapsto gf$, generate under composition and sums the ring of \emph{differential operators} on $M$; all of them are local. Uribe stated the converse ``FYI'', without proof: every linear local operator is a differential operator. This is Peetre's theorem; its precise form says that a linear local operator is, near each point, a differential operator of finite order --- on a non-compact $M$ the order need not be bounded globally. Stated, not proved, here.
 \end{rembox}
 
 \begin{propbox}[Derivations Are Vector Fields]\thmlabel{prop:derivations-are-fields}
-Conversely, every derivation $D$ of $C^\infty(M)$ is of the form $D = D_X$ for a unique $X \in \mathfrak{X}(M)$.
+Conversely, every derivation $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
 \leeref{Proposition 8.15}
 \end{propbox}
 
 \begin{proof}[Proof (to be filled)]
 Stated in Lecture~15 as ``the goal''; the proof is to come. ``It's not an immediate thing at all \ldots\ tangent vectors are defined in terms of germs'', local objects near a point, ``whereas'' a derivation of $C^\infty(M)$ ``a priori'' acts on functions on all of $M$. Locality (Lemma~\ref{lem:derivation-local}) bridges the two.
 \end{proof}
-
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -9845,10 +9919,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:double-cover}\ The double cover $\mathrm{SU}(2) \to \SO(3)$ & Problems 7-22 and 7-23 (quaternions); Examples 7.27--7.30 (matrix groups) \\
 \ref{sec:recap-tangent}--\ref{sec:recap-objects}\ Recaps: tangent vectors, covectors & Chapters 3 and 11 (overview) \\
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\
-\ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9) \\
-\ref{sec:fields}\ Vector fields and one-forms & Chapter 8 (Proposition 8.1); Chapter 11, \emph{Covector Fields} (Proposition 11.11) \\
-\ref{sec:d-operator}\ The operator $d$, pullbacks & Chapter 11 (Proposition 11.25, Example 11.36, Corollary 11.50) \\
-\ref{sec:vf-operators}\ Vector fields as derivations & Chapter 8 (Proposition 8.15); Proposition 2.25 (bump functions) \\
+\ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9); Lemma 1.35 \\
+\ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
+\ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 (bump functions) \\
 \bottomrule
 \end{longtable}
 
@@ -9902,7 +9975,7 @@ Proposition 3.10 & Cor.~\ref{cor:tangent-basis-consequences} \\
 Proposition 3.13 & Prop.~\ref{prop:differential-agree}, Cor.~\ref{cor:tangent-vs} \\
 Proposition 3.14 & Thm.~\ref{thm:tangent-product}, Cor.~\ref{cor:tangent-product-coords}, Ex.~\ref{ex:product-projection-submersion} \\
 Proposition 3.15 & Thm.~\ref{thm:tangent-basis} \\
-Proposition 3.18 & Def.~\ref{def:tb-charts}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tb-atlas}, Prop.~\ref{prop:tangent-bundle-claim} \\
+Proposition 3.18 & Def.~\ref{def:tb-charts}, Def.~\ref{def:tb-chart}, Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:tb-atlas}, Prop.~\ref{prop:tangent-bundle-claim} \\
 Proposition 3.23 & Thm.~\ref{thm:every-vector-velocity} \\
 Proposition 3.24 & Cor.~\ref{cor:velocity-composite} \\
 Corollary 3.25 & Thm.~\ref{thm:vs-differential-curves}, Cor.~\ref{cor:velocity-composite} \\
@@ -9936,7 +10009,7 @@ Problem 7-22 & Def.~\ref{def:quaternions} \\
 Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\
 Proposition 8.15 & Prop.~\ref{prop:derivations-are-fields} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
-Proposition 11.1 & Def.~\ref{def:dual}, Prop.~\ref{prop:dual-basis} \\
+Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
 Proposition 11.9 & Def.~\ref{def:cotangent-bundle}, Prop.~\ref{prop:cotangent-transition} \\

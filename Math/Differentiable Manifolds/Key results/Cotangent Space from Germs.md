@@ -16,7 +16,7 @@ tags: [differentiable-manifolds, hub]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5: Basis Theorem]]
 - [[§30 The Cotangent Space#^prop-30-1|Proposition §30.1: The Differential Evaluates Derivations]]
 - [[§30 The Cotangent Space#^lem-30-2|Lemma §30.2: The Differential in Coordinates]]
-- [[§30 The Cotangent Space#^def-30-3|Definition §30.3: The Pairing Between Tangent Vectors and I_p/I_p²]]
+- [[§30 The Cotangent Space#^def-30-4|Definition §30.4: The Pairing Between Tangent Vectors and I_p/I_p²]]
 - [[§30 The Cotangent Space#^prop-30-7|Proposition §30.7: The Pairing Is Well Defined and Non-Degenerate]]
 
 ## Used in (Differentiable Manifolds)

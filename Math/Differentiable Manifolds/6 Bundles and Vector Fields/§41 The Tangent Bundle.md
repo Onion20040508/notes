@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, math591]
 *The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical line over $p$ (in general a copy of $\mathbb{R}^m$); the point $(p, v)$ lies on it, and the zero section $\zeta$ lifts each $p$ straight up to $(p, 0)$, placing a copy of $M$ horizontally inside $TM$.*
 
 ![[m591-17-6.svg]]
-*$TS^1$ as a cylinder. Left: the usual picture, each tangent line touching the circle at its point. Right: the bundle picture of the remark — each tangent line $T_pS^1$ (red) stands upright over $p$, and the zero section $\zeta(S^1)$ (blue) runs around the waist. Here the bundle is a genuine product $S^1 \times \mathbb{R}$: two angle charts ([[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]) differ by a constant on each piece of their overlap, so their coordinate vectors $\partial/\partial\theta$ agree, and $c\,\partial/\partial\theta|_p \mapsto (p, c)$ is a global trivialization. The green circle is the vector field $\partial/\partial\theta$ ([[§43 Vector Fields and One-Forms#^def-43-1|Definition §43.1]]), a section that never meets the zero section.*
+*$TS^1$ as a cylinder. Left: the usual picture, each tangent line touching the circle at its point. Right: the bundle picture of the remark — each tangent line $T_pS^1$ (red) stands upright over $p$, and the zero section $\zeta(S^1)$ (blue) runs around the waist. Here the bundle is a genuine product $S^1 \times \mathbb{R}$: two angle charts ([[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]) differ by a constant on each piece of their overlap, so their coordinate vectors $\partial/\partial\theta$ agree, and $c\,\partial/\partial\theta|_p \mapsto (p, c)$ is a global trivialization. The green circle is the vector field $\partial/\partial\theta$ ([[§44 Vector Fields#^def-44-1|Definition §44.1]]), a section that never meets the zero section.*
 
 *Status.* [[§41 The Tangent Bundle#^prop-41-4|Proposition §41.4]], below, was stated in Lecture 12 — “the claim, which takes a lot of detail to prove” — and made precise in Lecture 13 ([[§41 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; “putting all that together gives us a map” $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
@@ -41,24 +41,31 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 13. “Back to the tangent bundle.” $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.*
 
-> [!definition] Definition §41.2: Trivializations and Charts of $TM$
+> [!definition] Definition §41.2: Local Trivializations of $TM$
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The **local trivialization** over $U$ is
 >
 > $$
 > \Phi : TU \longrightarrow U \times \mathbb{R}^m, \qquad \Phi(p, v) = (p, v^1, \ldots, v^m), \qquad \text{where } v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p ,
 > $$
 >
-> the components of $v$ in the coordinate basis ([[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5]]); and the **chart** of $TM$ is
+> the components of $v$ in the coordinate basis ([[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5]]). It is a bijection, and $\mathrm{pr}_1 \circ \Phi = \pi$ — “that's why I call it a trivialization.”
+>
+> *Lee: Proposition 3.18*
+
+^def-41-2
+
+> [!definition] Definition §41.3: Charts of $TM$
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ ([[§41 The Tangent Bundle#^def-41-2|Definition §41.2]]). The **chart** of $TM$ over $U$ is
 >
 > $$
 > \tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
 > $$
 >
-> Both are bijections, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$ for $\tilde\varphi$; and $\mathrm{pr}_1 \circ \Phi = \pi$ — “that's why I call it a trivialization.”
+> It is a bijection, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$.
 >
 > *Lee: Proposition 3.18*
 
-^def-41-2
+^def-41-3
 
 ![[m591-17-2.svg]]
 *The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§34 Fibrations#^def-34-1|Definition §34.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*

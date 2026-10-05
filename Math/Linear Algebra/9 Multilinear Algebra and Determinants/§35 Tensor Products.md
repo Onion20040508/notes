@@ -14,7 +14,7 @@ tags: [linear-algebra]
 ^ladr-9-68
 
 > [!remark]- Connections
-> - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-3|591 Def. §20.3]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
+> - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-4|591 Def. §20.4]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
 
 > [!example] Example 9.69: Bilinear functionals (p. 371)
 > - $\beta(v,w)=\varphi(v)\tau(w)$ on $V\times W$, for $\varphi\in V'$, $\tau\in W'$.
