@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: level C — C1, C2a, C2b, C3, C4, C5a, C5b (drafts until revised for Lecture 10), CA written
+status: level C — C1, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), CA written
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -47,11 +47,11 @@ graph TD
   C1 -->|114| C5a
   C2a -->|1| C5a
   C3 -->|88| C5a
-  C1 -->|2| C5b
-  C2a -->|56| C5b
-  C2b -->|81| C5b
+  C1 -->|1| C5b
+  C2a -->|87| C5b
+  C2b -->|117| C5b
   C3 -->|3| C5b
-  C5a -->|102| C5b
+  C5a -->|126| C5b
   C1 -->|5| CA
   C2a -->|7| CA
   C2b -->|43| CA
@@ -73,9 +73,9 @@ graph TD
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|133| C4
-  C5b -.->|22| C5a
+  C5b -.->|25| C5a
   CA -.->|6| C5a
-  CA -.->|90| C5b
+  CA -.->|112| C5b
 ```
 
 ## Planned

@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C5b The Quantum Spinor Field]] · ↑ [[Quantum Field Theory]]
 
 **Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (5), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (7), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (43)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (105), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (193), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (379), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (133), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (90)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (105), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (193), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (379), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (11), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (133), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (6), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (112)
 
 ## Sections
 - [[§CA.1 Exchanging Limits, Derivatives and Integrals]] — 513 notes App. A §A.1

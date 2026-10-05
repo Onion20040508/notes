@@ -47,7 +47,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > **What the derivation shows**
 > - No step divides by $m$: valid for $m = 0$.
 > - $2E_{\mathbf p}$ is the time component of a four-vector, so it changes with the frame → [[§C5a.6 Normalization, Spin Sums and Helicity#^rem-c5a-6-1|Remark: Why u†u depends on the frame and ūu does not]].
-> - Used in: the Hamiltonian of the quantized field ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]], draft).
+> - Used in: the Hamiltonian of the quantized field ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]]).
 
 ^der-c5a-6-1
 
@@ -215,7 +215,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 >
 > **What the derivation shows**
 > - The relation pairs $\mathbf p$ with $-\mathbf p$ because the $\mathbf x$-integral of $\psi^\dagger\psi$-type quantities produces $\delta^3(\mathbf p + \mathbf q)$ for the cross terms between $e^{-ip\cdot x}$ and $e^{+iq\cdot x}$, exactly as for the scalar field ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-4|§C2a.1, Remark: Why the modes decouple]]).
-> - Used in: the cross terms of $H$, $\mathbf P$ and $Q$ of the quantized Dirac field ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]], draft), where they vanish by this theorem.
+> - Used in: the cross terms of $H$, $\mathbf P$ and $Q$ of the quantized Dirac field, where they vanish by this theorem: this flipped-momentum version is the one needed when the Dirac field is quantized, because the $\mathbf x$ integral in the Hamiltonian pairs $\mathbf p$ with $-\mathbf p$ (the user's PHY 513 notes, Ch. 9, Derivation "Orthogonality of u and v", as updated for Lecture 10; Lecture 10, slide 19) — [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2b|Derivation §C5b.3.2, second route]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]].
 > - Valid for $m \ge 0$.
 
 ^der-c5a-6-6
@@ -512,7 +512,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > **Step 4** (orthonormal basis). $(\lambda\xi_{-\lambda})^\dagger(\lambda'\xi_{-\lambda'}) = \lambda\lambda'\delta_{\lambda\lambda'} = \delta_{\lambda\lambda'}$ ($\lambda^2 = 1$; [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]]). Theorems §C5a.6.3, §C5a.6.4 and §C5a.6.8 then apply.
 >
 > **What the derivation shows**
-> - ⚑ By-product: the column $v(p, \lambda)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]], draft); the factor $\lambda$ is a phase convention.
+> - ⚑ By-product: the column $v(p, \lambda)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]); the factor $\lambda$ is a phase convention.
 > - With $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ and [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]]: $-i\sigma^2\xi_+^* = (-e^{-i\phi}\sin\frac\theta2, \cos\frac\theta2) = \xi_-$ and $-i\sigma^2\xi_-^* = (-\cos\frac\theta2, -e^{i\phi}\sin\frac\theta2) = -\xi_+$, i.e. $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^*$: Yu's $v$ spinor is built from the conjugate-spin two-spinor, the pairing that charge conjugation will make systematic (QFT C9, planned).
 
 ^der-c5a-6-13
@@ -581,8 +581,8 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 ^rem-c5a-6-5
 
 > [!remark]- Connections
-> - $u^\dagger u = 2E_{\mathbf p}$ is the same weight as the relativistic normalization of states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); with it the Dirac mode expansion has the scalar field's $1/\sqrt{2E_{\mathbf p}}$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]], draft), and one-particle Dirac states are normalized exactly as scalar ones.
-> - The orthogonality of $u(\mathbf p)$ and $v(-\mathbf p)$ is the spinor counterpart of the scalar field's pairing of $\mathbf p$ with $-\mathbf p$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-4|§C2a.1, Remark: Why the modes decouple]]): it removes the $a^\dagger b^\dagger$ and $ba$ cross terms of $H$ (mode operators named as in [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-1|§C5b.1, Caution: Notation for the Dirac mode operators]]), as the $a_{\mathbf p}a_{-\mathbf p}$ terms cancelled for $\phi$.
+> - $u^\dagger u = 2E_{\mathbf p}$ is the same weight as the relativistic normalization of states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); with it the Dirac mode expansion has the scalar field's $1/\sqrt{2E_{\mathbf p}}$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]), and one-particle Dirac states are normalized exactly as scalar ones.
+> - The orthogonality of $u(\mathbf p)$ and $v(-\mathbf p)$ is the spinor counterpart of the scalar field's pairing of $\mathbf p$ with $-\mathbf p$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-4|§C2a.1, Remark: Why the modes decouple]]): it removes the $a^\dagger b^\dagger$ and $ba$ cross terms of $H$ (mode operators named as in [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-1|§C5b.1, Caution: Names for the Dirac field and its mode operators across sources]]), as the $a_{\mathbf p}a_{-\mathbf p}$ terms cancelled for $\phi$.
 > - The indefinite form $\bar ab$, positive on $u$ and negative on $v$, parallels the Klein–Gordon inner product, positive on positive-frequency and negative on negative-frequency modes ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-3|Remark: Why this inner product, and why it is indefinite]]); $\psi^\dagger\psi = \bar\psi\gamma^0\psi$ is positive for both, which is why the Dirac charge before quantization is positive and its energy is not ([[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], Connections).
 > - The spin sums are the numerators of the Dirac propagator: $\slashed{p} + m$ at the positive-energy pole and $\slashed{p} - m$ (with $p \to -p$) at the negative one ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft; [[P2 Green's Functions by Contour Integration|P2]], Dirac row); summed over spins, squared amplitudes become traces ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]).
 > - $\Lambda_\pm = (\pm\slashed{p} + m)/2m$ are the covariant versions of $\frac12(1 \pm \beta)$, the projectors onto the large and small components of Quantum Mechanics' Dirac spinors at rest ([[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]).
