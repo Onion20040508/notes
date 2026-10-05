@@ -25,7 +25,7 @@ tags: [topology, hub]
 - [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|Theorem §14.3: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
 - [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|Proposition §17.4: ℂP¹ Is the Riemann Sphere]]
 - [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|Proposition §17.6: The Two Topologies on ℝPⁿ Agree]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover#^thm-39-10|Theorem §39.10: The Double Cover SU(2) → SO(3)]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10|Theorem §38.10: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Mechanism.** It chains [[Closed Subspace of a Compact Space is Compact]], [[Continuous Image of a Compact Space is Compact]] and [[Compact Subspace of a Hausdorff Space is Closed]] to show f is a closed map, so f⁻¹ is continuous for free ([[§15 Compact Spaces#^rem-15-6|Why This Theorem is Powerful]]).

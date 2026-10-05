@@ -5,7 +5,7 @@ chapter: 5
 section: 34
 tags: [differentiable-manifolds, math591]
 ---
-← [[§33 Submanifolds]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§35 The Tangent Bundle]] →
+← [[§33 Submanifolds]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§35 Immersions]] →
 
 *Stage: bundles — Submersions that are locally products.*
 
@@ -31,8 +31,8 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 ^def-34-1
 
 > [!remark]- Connections
-> - The first major example: [[§35 The Tangent Bundle#^cor-35-3|the tangent bundle, §35.3]]; sections of a fibration: [[§35 The Tangent Bundle#^def-35-3|Def. §35.3]].
-> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps (§28)]].
+> - The first major example: [[§41 The Tangent Bundle#^cor-41-3|the tangent bundle, §41.3]]; sections of a fibration: [[§34 Fibrations#^def-34-2|Def. §34.2]].
+> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps (§31)]].
 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
@@ -57,7 +57,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 *Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]], [[§32 Submersions#^def-32-1|Def. §32.1]], [[§32 Submersions#^ex-32-2|Ex. §32.2]], [[§32 Submersions#^cor-32-6|§32.6]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
 
-The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§38 Projective Spaces and the Hopf Fibration|§38]].
+The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§37 Projective Spaces and the Hopf Fibration|§37]].
 
 > [!remark] Remark: What Comes Next
 > Tangent bundles, cotangent bundles and vector bundles are fibrations “with additional structure, where the fibres are vector spaces.” The basic notion of fibration is more general: its fibre $F$ is any manifold.
@@ -65,7 +65,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^rem-34-1
 
 > [!remark]- Connections
-> - [[§35 The Tangent Bundle#^cor-35-3|The tangent bundle is a fibration, §35.3]]; [[§35 The Tangent Bundle#^def-35-5|the cotangent bundle, Def. §35.5]]; [[§35 The Tangent Bundle#^rem-35-2|Remark: Vector Bundles (§32)]].
+> - [[§41 The Tangent Bundle#^cor-41-3|The tangent bundle is a fibration, §41.3]]; [[§42 The Cotangent Bundle#^def-42-1|the cotangent bundle, Def. §42.1]]; [[§41 The Tangent Bundle#^rem-41-2|Remark: Vector Bundles (§41)]].
 
 **Transcription note.** Stating the idea of a fibration, Uribe first said “$U$ open in $M$”; a student corrected it to open in $B$, as in the definition.
 
@@ -171,21 +171,34 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 
 **Transcription note.** Page 35 of the handwritten notes labels the second missing point over $t = 0$ as $(1, 1)$; it is $(1, 0)$.
 
-## Local Sections
+## Sections and Local Sections
 
 *From Assignment 4, Problem 4, whose hint — “declare that $\Phi_i \circ s_i$ includes $U_i \to U_i \times \{1\}$, and extend the definition of $\Phi_i$ by equivariance” — contains a general principle: local trivializations and local sections are two descriptions of the same thing.*
 
-> [!definition] Definition §34.2: Local Section
+> [!definition] Definition §34.2: Section
+> Let $\pi : E \to B$ be a fibration. A **section** of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: “if you first go up and then down, you get the identity on the base.” It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
+>
+> *Lee: Ch. 10, Sections of Vector Bundles*
+
+^def-34-2
+
+![[m591-17-4.svg]]
+*$\pi \circ s = \mathrm{id}_B$. A section goes up, the projection comes down, and the round trip is the identity on the base.*
+
+![[m591-17-5.svg]]
+*The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is “a copy of $B$” inside $E$.*
+
+> [!definition] Definition §34.3: Local Section
 > Let $\pi : E \to B$ be smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]) and $U \subseteq B$ open. A **local section** of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
 >
 > *Lee: Ch. 10, Local and Global Sections of Vector Bundles*
 
-^def-34-2
+^def-34-3
 
-The *global* sections of [[§35 The Tangent Bundle#Sections and Vector Fields|§35, Sections and Vector Fields]], below, are the local sections over $U = B$.
+A section in the sense of [[§34 Fibrations#^def-34-2|Definition §34.2]] is a local section over $U = B$; to stress the difference, it is also called a *global* section.
 
 > [!theorem] Proposition §34.4: Local Trivializations Give Local Sections
-> Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization ([[§34 Fibrations#^def-34-1|Def. §34.1]]). For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section ([[§34 Fibrations#^def-34-2|Def. §34.2]]) over $U$.
+> Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization ([[§34 Fibrations#^def-34-1|Def. §34.1]]). For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section ([[§34 Fibrations#^def-34-3|Def. §34.3]]) over $U$.
 
 ^prop-34-4
 
@@ -194,4 +207,4 @@ The *global* sections of [[§35 The Tangent Bundle#Sections and Vector Fields|§
 
 ^pf-34-4
 
-*Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§34 Fibrations#^def-34-2|Def. §34.2]], [[§18 Smooth Functions and Smooth Maps#^prop-18-9|§18.9]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]]
+*Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§34 Fibrations#^def-34-3|Def. §34.3]], [[§18 Smooth Functions and Smooth Maps#^prop-18-9|§18.9]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]]

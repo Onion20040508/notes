@@ -5,12 +5,12 @@ chapter: 4
 section: 26
 tags: [differentiable-manifolds, math591]
 ---
-← [[§25 Tangent Spaces II꞉ Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§27 Coordinate Derivations and the Basis Theorem]] →
+← [[§25 Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§27 Coordinate Derivations and the Basis Theorem]] →
 
 *Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
-> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
+> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
 
 ^rem-26-1
 
@@ -27,7 +27,7 @@ tags: [differentiable-manifolds, math591]
 > D\big([f][g]\big) \;=\; f(p)\, D[g] \;+\; g(p)\, D[f] \qquad \text{for all } [f], [g] \in C_p^\infty(M),
 > $$
 >
-> where $f(p) = [f](p)$ is the evaluation of Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-4|§25.4]].
+> where $f(p) = [f](p)$ is the evaluation of Proposition [[§25 Germs#^prop-25-2|§25.2]].
 >
 > *Lee: Ch. 3, Tangent Vectors, on $C^\infty(M)$ rather than germs*
 
@@ -60,8 +60,8 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
 
 > [!remark]- Connections
-> - The geometric tangent space it replaces: [[§23 Tangent Spaces I꞉ The Geometric Picture#^def-23-1|Def. §23.1]]; the two agree by [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]].
-> - Its dual, the cotangent space: [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|Def. §30.1]]; all the $T_pM$ together: [[§35 The Tangent Bundle#^def-35-1|the tangent bundle, Def. §35.1]].
+> - The geometric tangent space it replaces: [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]]; the two agree by [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]].
+> - Its dual, the cotangent space: [[§30 The Cotangent Space#^def-30-1|Def. §30.1]]; all the $T_pM$ together: [[§41 The Tangent Bundle#^def-41-1|the tangent bundle, Def. §41.1]].
 
 > [!definition] Definition §26.3: The Ideal of Germs Vanishing at a Point
 > The **ideal of germs vanishing at $p$** is
@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 > I_p = \{\, [f] \in C_p^\infty(M) \mid f(p) = 0 \,\},
 > $$
 >
-> the kernel of evaluation at $p$ (Definition [[§25 Tangent Spaces II꞉ Germs#^def-25-4|§25.4]]). Its **square** $I_p^2$ is the set of all finite sums $\sum_k [u_k][w_k]$ of products of two elements of $I_p$, the empty sum $0$ included.
+> the kernel of evaluation at $p$ (Definition [[§25 Germs#^def-25-3|§25.3]]). Its **square** $I_p^2$ is the set of all finite sums $\sum_k [u_k][w_k]$ of products of two elements of $I_p$, the empty sum $0$ included.
 >
 > *Lee: Problem 11-4, where $I_p \subseteq C^\infty(M)$ consists of global functions*
 
@@ -82,11 +82,11 @@ tags: [differentiable-manifolds, math591]
 ^lem-26-1
 
 > [!proof]+ Proof
-> $I_p$ is the kernel of the algebra homomorphism of evaluation (Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-4|§25.4]]), hence a linear subspace and an ideal: $[g][f] \in I_p$ whenever $[f] \in I_p$, since $g(p)f(p) = 0$. $I_p^2$ is closed under sums by construction and under scalars since $c\,[u][w] = [cu][w]$ with $[cu] \in I_p$; and each product $[u][w]$ lies in $I_p$, since $u(p)w(p) = 0$.
+> $I_p$ is the kernel of the algebra homomorphism of evaluation (Proposition [[§25 Germs#^prop-25-2|§25.2]]), hence a linear subspace and an ideal: $[g][f] \in I_p$ whenever $[f] \in I_p$, since $g(p)f(p) = 0$. $I_p^2$ is closed under sums by construction and under scalars since $c\,[u][w] = [cu][w]$ with $[cu] \in I_p$; and each product $[u][w]$ lies in $I_p$, since $u(p)w(p) = 0$.
 
 ^pf-26-1
 
-*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-4|§25.4]]
+*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]], [[§25 Germs#^prop-25-2|§25.2]]
 
 > [!theorem] Lemma §26.2: First Properties of Derivations
 > Let $D$ be a derivation at $p$, and $I_p$, $I_p^2$ as in Definition [[§26 Derivations and the Abstract Tangent Space#^def-26-3|§26.3]].
@@ -131,7 +131,7 @@ Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is �
 
 ^pf-26-3
 
-*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-2|Def. §26.2]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-4|§25.4]]
+*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-2|Def. §26.2]], [[§25 Germs#^prop-25-2|§25.2]]
 
 **Comparison with Lee.** This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition 3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition 3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all — Lemma [[§26 Derivations and the Abstract Tangent Space#^lem-26-8|§26.8]] is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
@@ -174,7 +174,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 
 ^pf-26-4
 
-*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-4|Def. §26.4]], [[§25 Tangent Spaces II꞉ Germs#^def-25-2|Def. §25.2]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-4|§25.4]], [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]]
+*Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-4|Def. §26.4]], [[§25 Germs#^def-25-1|Def. §25.1]], [[§25 Germs#^prop-25-2|§25.2]], [[§26 Derivations and the Abstract Tangent Space#^def-26-3|Def. §26.3]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]]
 
 > [!definition] Definition §26.5: Pushforward — the Differential
 > Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ — that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The **pushforward** of $D$ along $F$ is the map
@@ -304,7 +304,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 
 ^pf-26-8
 
-*Uses:* [[§26 Derivations and the Abstract Tangent Space#^prop-26-4|§26.4]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-5|§26.5]], [[§25 Tangent Spaces II꞉ Germs#^def-25-3|Def. §25.3]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§26 Derivations and the Abstract Tangent Space#^prop-26-4|§26.4]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-5|§26.5]], [[§25 Germs#^def-25-2|Def. §25.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!theorem] Proposition §26.9: Charts Are Diffeomorphisms
 > If $(U, \varphi)$ is a smooth chart of $M$, then $\varphi : U \to \varphi(U)$ is a diffeomorphism. Consequently, for every $p \in U$,

@@ -46,7 +46,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in linear algebra (written $V'$ there): [[§12 Duality#^ladr-3-110|LADR 3.110 (dual space)]], [[§12 Duality#^ladr-3-112|LADR 3.112 (dual basis)]].
-> - Applied to $T_pM$: the cotangent space, [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|Def. §30.1]].
+> - Applied to $T_pM$: the cotangent space, [[§30 The Cotangent Space#^def-30-1|Def. §30.1]].
 
 > [!theorem] Proposition §20.2: The Dual Basis
 > Let $(e_1, \ldots, e_n)$ be a basis of $V$ with dual basis $(\varepsilon^1, \ldots, \varepsilon^n)$. Then $(\varepsilon^i)$ is a basis of $V^*$, so $\dim V^* = \dim V$, and for all $v \in V$ and $\lambda \in V^*$,
@@ -93,7 +93,7 @@ tags: [differentiable-manifolds, math591]
 > - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[§12 Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
 
 > [!remark] Remark
-> A finite-dimensional $V$ is also isomorphic to $V^{\ast}$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{\ast \ast}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|Lecture 10]] did with $T_pM$ and $T_p^{\ast}M$, while the dual of $T_p^{\ast}M$ may be silently identified with $T_pM$.
+> A finite-dimensional $V$ is also isomorphic to $V^{\ast}$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{\ast \ast}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§30 The Cotangent Space#^def-30-1|Lecture 10]] did with $T_pM$ and $T_p^{\ast}M$, while the dual of $T_p^{\ast}M$ may be silently identified with $T_pM$.
 
 ^rem-20-1
 
@@ -172,11 +172,11 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 *Uses:* [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
-> - Applied to the pairing of tangent vectors with germs: [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-6|§30.6]], [[§30 Tangent Spaces III꞉ The Cotangent Space#^thm-30-7|§30.7]].
+> - Applied to the pairing of tangent vectors with germs: [[§30 The Cotangent Space#^prop-30-7|§30.7]], [[§30 The Cotangent Space#^thm-30-8|§30.8]].
 > - Bilinear forms on a single space in LADR: [[§32 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
-> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§30 Tangent Spaces III꞉ The Cotangent Space#^thm-30-7|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
+> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§30 The Cotangent Space#^thm-30-8|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
 
 ^rem-20-2
 
@@ -215,11 +215,11 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ![[m591-10-2.svg]]
 *The universal property of the quotient: a linear map $A$ with $W \subseteq \ker A$ factors uniquely as $A = \bar A \circ \pi$.*
 
-The universal property as a triangle: a linear map that kills $W$ descends to $V/W$. It is the linear counterpart of the universal property of quotient maps, Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]], with “vanishes on $W$” in place of “constant on the fibres” — and the proof is the same: define the map on a class by choosing a representative, and check the choice does not matter. [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-6|Assignment 3, Problem 3(a)]] is an instance: a derivation kills $I_p^2$, so its restriction to $I_p$ descends to $I_p/I_p^2$.
+The universal property as a triangle: a linear map that kills $W$ descends to $V/W$. It is the linear counterpart of the universal property of quotient maps, Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]], with “vanishes on $W$” in place of “constant on the fibres” — and the proof is the same: define the map on a class by choosing a representative, and check the choice does not matter. [[§30 The Cotangent Space#^prop-30-7|Assignment 3, Problem 3(a)]] is an instance: a derivation kills $I_p^2$, so its restriction to $I_p$ descends to $I_p/I_p^2$.
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103 (quotient space is a vector space)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105 (dimension)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|LADR 3.106]] and [[First isomorphism theorem|LADR 3.107 (first isomorphism theorem)]] for the induced map.
-> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-2|Def. §30.2]].
+> - Topological counterpart: [[Universal Property of Quotient Maps|590 §12 (universal property of quotient maps)]]; applied in [[§30 The Cotangent Space#^def-30-2|Def. §30.2]].
 
 > [!definition] Definition §20.5: Direct Sum
 > The **direct sum** of vector spaces $V$ and $W$ is $V \oplus W = V \times W$ with the componentwise operations $(v, w) + (v', w') = (v + v', w + w')$ and $c(v, w) = (cv, cw)$. It comes with the **inclusions** $\iota_V(v) = (v, 0)$, $\iota_W(w) = (0, w)$ and the **projections** $\pi_V(v, w) = v$, $\pi_W(v, w) = w$, all linear. A vector space $U$ is the **internal direct sum** of subspaces $U_1, U_2$, written $U = U_1 \oplus U_2$, if every $u \in U$ is $u_1 + u_2$ for unique $u_1 \in U_1$, $u_2 \in U_2$.

@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§20 Linear Algebra Toolkit#^prop-20-1|Proposition §20.1: Standing Facts from Linear Algebra]]
-- [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
+- [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|Theorem §26.6: The Chain Rule]]
 - [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|Theorem §29.4: The Tangent Space of a Product]]
 - [[§32 Submersions#^def-32-2|Definition §32.2: Regular Points and Critical Points]]
@@ -27,7 +27,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§33 Submanifolds#^cor-33-7|Corollary §33.7: Fibres of Submersions Are Submanifolds]]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-4|Proposition §39.4: The Unit Quaternions]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-4|Proposition §38.4: The Unit Quaternions]]
 
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§33 Submanifolds#^cor-33-7|§33.7]]), in particular every fibre of a fibration ([[§34 Fibrations#^prop-34-2|§34.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§33 Submanifolds#^prop-33-8|§33.8]], [[§33 Submanifolds#^rem-33-2|The Regular Value Theorems — Old and New]]).

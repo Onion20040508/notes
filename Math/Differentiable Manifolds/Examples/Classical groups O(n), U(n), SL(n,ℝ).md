@@ -30,12 +30,12 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - $\mathrm{SO}(n)$ is a smooth manifold and $\mathrm{O}(n)$ is compact ([[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-2|§22]])
 - $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$ ([[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|§22]])
 - $\mathrm{U}(n)$ is compact ([[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5|§22]])
-- $T_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-2|§23]])
-- $T_I\mathrm{U}(n) = \mathfrak{u}(n)$, the skew-Hermitian matrices ([[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-3|§23]])
-- Summary: dimensions and tangent spaces of the classical groups ([[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|§23]])
-- The adjoint action of $G$ on its tangent space at $I$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^prop-23-6|§23]])
-- $\mathrm{SO}(3)$ and infinitesimal rotations: the hat map ([[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-4|§23]])
-- Dimension checks through homogeneous spaces of classical groups ([[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|§23]])
+- $T_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$ ([[§23 The Geometric Tangent Space#^ex-23-2|§23]])
+- $T_I\mathrm{U}(n) = \mathfrak{u}(n)$, the skew-Hermitian matrices ([[§23 The Geometric Tangent Space#^ex-23-3|§23]])
+- Summary: dimensions and tangent spaces of the classical groups ([[§23 The Geometric Tangent Space#^thm-23-5|§23]])
+- The adjoint action of $G$ on its tangent space at $I$ ([[§23 The Geometric Tangent Space#^prop-23-6|§23]])
+- $\mathrm{SO}(3)$ and infinitesimal rotations: the hat map ([[§23 The Geometric Tangent Space#^ex-23-4|§23]])
+- Dimension checks through homogeneous spaces of classical groups ([[§23 The Geometric Tangent Space#^rem-23-9|§23]])
 
 ## $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$
 ![[§7 The Regular Value Theorem#^rem-7-9]]
@@ -110,19 +110,19 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5]]
 
 ## $T_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-2]]
+![[§23 The Geometric Tangent Space#^ex-23-2]]
 
 ## $T_I\mathrm{U}(n) = \mathfrak{u}(n)$, the skew-Hermitian matrices
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-3]]
+![[§23 The Geometric Tangent Space#^ex-23-3]]
 
 ## Summary: dimensions and tangent spaces of the classical groups
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5]]
+![[§23 The Geometric Tangent Space#^thm-23-5]]
 
 ## The adjoint action of $G$ on its tangent space at $I$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^prop-23-6]]
+![[§23 The Geometric Tangent Space#^prop-23-6]]
 
 ## $\mathrm{SO}(3)$ and infinitesimal rotations: the hat map
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-4]]
+![[§23 The Geometric Tangent Space#^ex-23-4]]
 
 ## Dimension checks through homogeneous spaces of classical groups
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9]]
+![[§23 The Geometric Tangent Space#^rem-23-9]]

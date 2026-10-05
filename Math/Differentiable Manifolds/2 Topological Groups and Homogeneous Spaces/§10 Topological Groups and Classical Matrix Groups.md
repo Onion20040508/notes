@@ -168,7 +168,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§9 Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
 
 > [!remark]- Connections
-> - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|§23.5]].
+> - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]].
 
 The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 The Classical Groups|§15]].
 

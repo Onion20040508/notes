@@ -267,11 +267,11 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > F'(x_0)\begin{pmatrix} x \\ y \\ u \\ v \end{pmatrix} = \begin{pmatrix} -2y + 2u \\ 2x + 2v \end{pmatrix},
 > $$
 >
-> which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
+> which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
 
 ^pf-ex-7-2
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]
 
 > [!remark]- Connections
 > - The notion of submanifold the problem asks about: [[§33 Submanifolds#^def-33-1|Def. §33.1]]; regular level sets are submanifolds by [[§33 Submanifolds#^thm-33-6|§33.6]].
@@ -330,7 +330,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§9 Matrices#^ladr-3-58|LADR 3.58]]
 
 > [!theorem] Corollary §7.7: Holomorphic Regular Value Theorem
-> Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§19 Manifolds in Euclidean Space#^prop-19-2|Proposition §19.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
+> Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§19 Manifolds in Euclidean Space#^prop-19-2|Proposition §19.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
 >
 > *Lee: no counterpart; from Assignment 2*
 

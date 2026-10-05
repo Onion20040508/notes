@@ -24,11 +24,11 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Local Diffeomorphisms#^thm-31-2|Theorem §31.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§33 Submanifolds#^thm-33-6|Theorem §33.6: The Regular Value Theorem for Manifolds]]
 - [[§34 Fibrations#^prop-34-1|Proposition §34.1: Fibres and Fibrations]]
-- [[§37 Embeddings#^cor-37-3|Corollary §37.3: An Embedding Is a Diffeomorphism onto Its Image]]
-- [[§37 Embeddings#^prop-37-11|Proposition §37.11: The Irrational Line on the Torus]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-5|Proposition §39.5: S³ Is SU(2)]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover#^lem-39-9|Lemma §39.9: Translating the Differential]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover#^thm-39-10|Theorem §39.10: The Double Cover SU(2) → SO(3)]]
+- [[§36 Embeddings#^cor-36-3|Corollary §36.3: An Embedding Is a Diffeomorphism onto Its Image]]
+- [[§36 Embeddings#^prop-36-11|Proposition §36.11: The Irrational Line on the Torus]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|Proposition §38.5: S³ Is SU(2)]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-9|Lemma §38.9: Translating the Differential]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10|Theorem §38.10: The Double Cover SU(2) → SO(3)]]
 
 ## Connections
 - **Used for.** Diffeomorphisms induce isomorphisms of tangent spaces ([[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]]), so a chart identifies T_pM with a tangent space of an open subset of ℝⁿ ([[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]]); this is how the [[Basis Theorem for Tangent Spaces]] is proved. It also gives the chain rule and the change of coordinates in matrices ([[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§28 The Differential in Coordinates#^cor-28-4|§28.4]]), differentials computed by curves ([[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]]) and the [[Local Diffeomorphism Criterion]].

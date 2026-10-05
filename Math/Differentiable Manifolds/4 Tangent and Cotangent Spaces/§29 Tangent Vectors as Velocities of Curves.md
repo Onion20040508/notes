@@ -5,7 +5,7 @@ chapter: 4
 section: 29
 tags: [differentiable-manifolds, math591]
 ---
-← [[§28 The Differential in Coordinates]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§30 Tangent Spaces III꞉ The Cotangent Space]] →
+← [[§28 The Differential in Coordinates]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§30 The Cotangent Space]] →
 
 *Stage: abstract — The other face of a tangent vector: every derivation is the velocity of a curve, on every manifold. Tangent spaces of products split.*
 
@@ -23,7 +23,7 @@ tags: [differentiable-manifolds, math591]
 ^def-29-1
 
 > [!remark]- Connections
-> - The geometric velocity $\gamma'(0)$ of a curve in $\mathbb{R}^N$: [[§23 Tangent Spaces I꞉ The Geometric Picture#^def-23-1|Def. §23.1]]; differentials computed by curves between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]].
+> - The geometric velocity $\gamma'(0)$ of a curve in $\mathbb{R}^N$: [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]]; differentials computed by curves between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]].
 > - In ℝ³ the velocity is $\mathbf r'(t)$: [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Calc Def. §89.1]], [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
 
 The explicit formula is the definition of the pushforward: $\gamma_{\ast 0}(d/dt|_0)[f] = d/dt|_0\,[f \circ \gamma]$, the ordinary derivative at $0$ of the function $f \circ \gamma$, which is defined near $0$. Lee writes $\gamma'(0)$ for $D_\gamma$. These notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, which is a *geometric* tangent vector, and write $D_\gamma$ for the abstract one, as Assignment 3 does.
@@ -111,7 +111,7 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 *The same construction as a diagram: the curve is built downstairs as $c$ and lifted by $\varphi^{-1}$, and the triangle commutes, $\varphi \circ \gamma = c$.*
 
 > [!remark] Remark: The Two Faces Reconciled
-> Theorem [[§29 Tangent Vectors as Velocities of Curves#^thm-29-2|§29.2]] says the map $\gamma \mapsto D_\gamma$, from smooth curves through $p$ to $T_pM$, is onto. By Proposition [[§29 Tangent Vectors as Velocities of Curves#^prop-29-1|§29.1]], two curves have the same velocity exactly when their coordinate curves have the same velocity in one chart, and then in every chart. So $T_pM$ may equally be described as *curves through $p$, modulo having the same velocity in coordinates* — the intrinsic “velocities of curves” definition of the tangent space, now a theorem, on every manifold, with no ambient space. For a regular level set, the abstract velocity $D_\gamma$ is the derivation $D_{\gamma'(0)}$ attached to the geometric velocity $\gamma'(0) \in T^{\mathrm{geo}}_pM$ (Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-1|§25.1]](2)). So the identification of Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]] is the statement that the two notions of velocity agree.
+> Theorem [[§29 Tangent Vectors as Velocities of Curves#^thm-29-2|§29.2]] says the map $\gamma \mapsto D_\gamma$, from smooth curves through $p$ to $T_pM$, is onto. By Proposition [[§29 Tangent Vectors as Velocities of Curves#^prop-29-1|§29.1]], two curves have the same velocity exactly when their coordinate curves have the same velocity in one chart, and then in every chart. So $T_pM$ may equally be described as *curves through $p$, modulo having the same velocity in coordinates* — the intrinsic “velocities of curves” definition of the tangent space, now a theorem, on every manifold, with no ambient space. For a regular level set, the abstract velocity $D_\gamma$ is the derivation $D_{\gamma'(0)}$ attached to the geometric velocity $\gamma'(0) \in T^{\mathrm{geo}}_pM$ (Proposition [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]](2)). So the identification of Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]] is the statement that the two notions of velocity agree.
 
 ^rem-29-1
 

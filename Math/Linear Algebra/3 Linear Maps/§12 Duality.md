@@ -39,7 +39,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Dimension: [[§12 Duality#^ladr-3-111|Dim V′ = dim V]]. Basis: [[§12 Duality#^ladr-3-112|Dual basis]], [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]]. Maps induce dual maps: [[§12 Duality#^ladr-3-118|Dual map, T′]].
 > - For a normed space 556 keeps only the bounded functionals and adds the dual norm: [[§30 Bras, Kets, and the Riesz Map#^def-30-1|556 Def. §30.1]].
-> - Same definition in 591 ([[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]]); the dual of a tangent space is the cotangent space, [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|591 Def. §30.1]].
+> - Same definition in 591 ([[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]]); the dual of a tangent space is the cotangent space, [[§30 The Cotangent Space#^def-30-1|591 Def. §30.1]].
 
 > [!theorem] Theorem 3.111: Dim V′ = dim V
 > If $V$ is finite-dimensional, then $V'$ is finite-dimensional and $\dim V'=\dim V$.
@@ -72,7 +72,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - $\varphi_j$ reads off the $j$-th coordinate: [[§12 Duality#^ladr-3-114|Dual basis gives coefficients for linear combination]]. It is a basis: [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]].
 > - Physics: $\langle e_j|$ against an orthonormal $|e_k\rangle$; index notation $e^j(e_k)=\delta^j_k$ for upper/lower indices.
-> - Same in 591: [[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]], a basis of the dual by [[§20 Linear Algebra Toolkit#^prop-20-2|591 Prop. §20.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§30 Tangent Spaces III꞉ The Cotangent Space#^lem-30-2|591 Lemma §30.2]].
+> - Same in 591: [[§20 Linear Algebra Toolkit#^def-20-1|591 Def. §20.1]], a basis of the dual by [[§20 Linear Algebra Toolkit#^prop-20-2|591 Prop. §20.2]]; the differentials of the coordinate functions form the dual basis of the coordinate derivations, [[§30 The Cotangent Space#^lem-30-2|591 Lemma §30.2]].
 
 > [!example] Example 3.113: The dual basis of the standard basis of Fⁿ (p. 106)
 > On $\F^n$ let $\varphi_j(x_1,\dots,x_n)=x_j$ (select the $j$-th coordinate). Then $\varphi_j(e_k)=1$ if $k=j$ and $0$ otherwise, so $\varphi_1,\dots,\varphi_n$ is the dual basis of the standard basis ([[§12 Duality#^ladr-3-112|3.112]]). In index notation: $e^j(e_k)=\delta^j_k$.
@@ -316,7 +316,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
 > - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T (LADR 7.9)]].
-> - This is why covector components change by the transpose of the inverse Jacobian: [[§35 The Tangent Bundle#^prop-35-5|591 Prop. §35.5]].
+> - This is why covector components change by the transpose of the inverse Jacobian: [[§42 The Cotangent Bundle#^prop-42-1|591 Prop. §42.1]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
 > [!theorem] Theorem 3.133: Column rank equals row rank

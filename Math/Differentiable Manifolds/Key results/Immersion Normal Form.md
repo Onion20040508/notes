@@ -5,10 +5,10 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 36.1", "local normal form for immersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§36 Immersions#^thm-36-1]]
+![[§35 Immersions#^thm-35-1]]
 
 ## Treated in
-- [[§36 Immersions#^thm-36-1|Theorem §36.1: Local Normal Form for Immersions]], in [[§36 Immersions]]
+- [[§35 Immersions#^thm-35-1|Theorem §35.1: Local Normal Form for Immersions]], in [[§35 Immersions]]
 
 ## Its proof uses
 - [[§2 Topological Manifolds#^lem-2-10|Lemma §2.10: Restricting and Recomposing Charts]]
@@ -23,18 +23,18 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Local Diffeomorphisms#^thm-31-1|Theorem §31.1: Inverse Function Theorem]]
 - [[§32 Submersions#^lem-32-3|Lemma §32.3: Diffeomorphisms onto Open Sets Are Charts]]
 - [[§32 Submersions#^thm-32-4|Theorem §32.4: Local Normal Form for Submersions]]
-- [[§36 Immersions#^def-36-1|Definition §36.1: Immersions]]
+- [[§35 Immersions#^def-35-1|Definition §35.1: Immersions]]
 
 ## Its proof uses (other subjects)
 - [[§9 Matrices#^ladr-3-57|LADR 3.57 Column rank equals row rank]]
 
 ## Used in (Differentiable Manifolds)
-- [[§36 Immersions#^cor-36-2|Corollary §36.2: The Local Image of an Immersion]]
-- [[§37 Embeddings#^thm-37-1|Theorem §37.1: The Image of an Embedding Is a Submanifold]]
-- [[§37 Embeddings#^prop-37-2|Proposition §37.2: Immersions That Are Open onto Their Images]]
+- [[§35 Immersions#^cor-35-2|Corollary §35.2: The Local Image of an Immersion]]
+- [[§36 Embeddings#^thm-36-1|Theorem §36.1: The Image of an Embedding Is a Submanifold]]
+- [[§36 Embeddings#^prop-36-2|Proposition §36.2: Immersions That Are Open onto Their Images]]
 
 ## Connections
-- **Used for.** Locally, the image of an immersion is a submanifold of codimension n − m ([[§36 Immersions#^cor-36-2|§36.2]]).
-- **Only local.** Globally the image need not be a submanifold. γ(t) = (t² − 1, t³ − t) crosses itself, making an X at the origin ([[§36 Immersions#^ex-36-1|Ex. §36.1]]). An injective immersion can run back into a point of its own image, making a T there, and then it is not a homeomorphism onto its image ([[§36 Immersions#^ex-36-2|Ex. §36.2]]).
+- **Used for.** Locally, the image of an immersion is a submanifold of codimension n − m ([[§35 Immersions#^cor-35-2|§35.2]]).
+- **Only local.** Globally the image need not be a submanifold. γ(t) = (t² − 1, t³ − t) crosses itself, making an X at the origin ([[§35 Immersions#^ex-35-1|Ex. §35.1]]). An injective immersion can run back into a point of its own image, making a T there, and then it is not a homeomorphism onto its image ([[§35 Immersions#^ex-35-2|Ex. §35.2]]).
 - **Same idea elsewhere.** It mirrors the [[Submersion Normal Form]]: there F is locally a projection, here an inclusion. The case m = n is the [[Local Diffeomorphism Criterion]], from the [[Inverse Function Theorem (several variables)]]. In ℝⁿ⁺ᵏ the internal description of a manifold is a parametrization with injective derivative that is a homeomorphism onto its image ([[§19 Manifolds in Euclidean Space#^def-19-1|Def. §19.1]]), and [[§19 Manifolds in Euclidean Space#^thm-19-1|§19.1]] matches it with the level-set description.
 - **Next: embeddings.** The immersions that are homeomorphisms onto their images have submanifolds as images ([[Images of Embeddings Are Submanifolds|§33.1]]), and an injective proper immersion is one ([[Injective Proper Immersions Are Embeddings|§33.5]]). Beyond what has been announced, Whitney's theorem embeds every manifold in some ℝᴺ.

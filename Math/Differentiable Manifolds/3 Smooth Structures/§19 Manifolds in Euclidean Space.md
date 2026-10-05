@@ -51,8 +51,8 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]]) and the inverse function theorem [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §13.2]]).
-> - The external description becomes the regular value theorem for manifolds, [[§33 Submanifolds#^thm-33-6|§33.6]], and adapted charts, [[§33 Submanifolds#^def-33-1|Def. §33.1]]; the internal one becomes the local normal form for immersions, [[§36 Immersions#^thm-36-1|§36.1]].
-> - The tangent space in both pictures: [[§23 Tangent Spaces I꞉ The Geometric Picture#^cor-23-4|§23.4]].
+> - The external description becomes the regular value theorem for manifolds, [[§33 Submanifolds#^thm-33-6|§33.6]], and adapted charts, [[§33 Submanifolds#^def-33-1|Def. §33.1]]; the internal one becomes the local normal form for immersions, [[§35 Immersions#^thm-35-1|§35.1]].
+> - The tangent space in both pictures: [[§23 The Geometric Tangent Space#^cor-23-4|§23.4]].
 
 > [!example] Example §19.1: The Circle in Three Descriptions
 > Near the point $p = (0,1)$ of $S^1 \subseteq \mathbb{R}^2$ (here $n = k = 1$):
@@ -195,7 +195,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§33 Submanifolds#^lem-33-3|§33.3]].
 
-Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|Ex. §38.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
+Not stated in lecture; filled in because it is used repeatedly — tacitly in the next proof, and explicitly for $S^n \to \mathbb{RP}^n$ in [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|Ex. §37.1]]. In words: maps *out of* a level set may be computed by restricting ambient formulas, and maps *into* one may be computed as maps into the ambient space.
 
 > [!theorem] Proposition §19.4: The Three Circle Atlases Define One Smooth Structure
 > The four-chart atlas ([[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]]), the angle atlas ([[§16 Differentiable Structures#^ex-16-4|Ex. §16.4]]) and the stereographic atlas ([[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]]) on $S^1$ are pairwise compatible. All three generate the smooth structure that Proposition [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]] gives $S^1 = F^{-1}(1)$, $F(x,y) = x^2 + y^2$.

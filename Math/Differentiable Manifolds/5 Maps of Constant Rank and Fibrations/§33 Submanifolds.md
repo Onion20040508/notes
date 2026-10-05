@@ -5,7 +5,7 @@ chapter: 5
 section: 33
 tags: [differentiable-manifolds, math591]
 ---
-← [[§32 Submersions]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§34 Fibrations]] →
+← [[§32 Submersions]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§34 Fibrations]] →
 
 *Stage: submanifolds — Subsets of a manifold that are locally coordinate slices — the equations thread, completed.*
 
@@ -31,7 +31,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^def-33-1
 
 > [!remark]- Connections
-> - Immersed images, the other kind of “submanifold” still to come: [[§36 Immersions#^cor-36-2|§36.2]], [[§36 Immersions#^rem-36-1|Embeddings — Next Time]].
+> - Immersed images, the other kind of “submanifold” still to come: [[§35 Immersions#^cor-35-2|§35.2]], [[§35 Immersions#^rem-35-1|Embeddings — Next Time]].
 > - Codimension in the Euclidean setting: [[§24 Transversality#^def-24-1|Def. §24.1]].
 
 > [!theorem] Proposition §33.1: Two Observations on Adapted Charts
@@ -156,7 +156,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-33-5
 
-*Uses:* [[§33 Submanifolds#^def-33-2|Def. §33.2]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§30 Tangent Spaces III꞉ The Cotangent Space#^lem-30-2|§30.2]], [[§33 Submanifolds#^prop-33-4|§33.4]]
+*Uses:* [[§33 Submanifolds#^def-33-2|Def. §33.2]], [[§20 Linear Algebra Toolkit#^prop-20-2|§20.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§33 Submanifolds#^prop-33-4|§33.4]]
 
 > [!remark]- Connections
 > - The dimension count in general: [[§12 Duality#^ladr-3-125|LADR 3.125]] ($\dim U^0 = \dim V - \dim U$).
@@ -171,7 +171,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 > [!remark]- Connections
 > - With an inner product: the orthogonal complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and the identification of covectors with vectors, [[Riesz representation theorem|LADR 6.42]].
-> - The same point for gradients: [[§30 Tangent Spaces III꞉ The Cotangent Space#^rem-30-2|Differential — Not Gradient]].
+> - The same point for gradients: [[§30 The Cotangent Space#^rem-30-2|Differential — Not Gradient]].
 
 ## The Regular Value Theorem for Manifolds
 
@@ -200,7 +200,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > “These are not of the type $x_b = 0$, but of the type $x_a$ equals a constant”: the first $n$ coordinates equal a constant vector. By the observations after the definition (Proposition [[§33 Submanifolds#^prop-33-1|§33.1]]) — any constant, and any $n$ of the coordinates — $S$ has an adapted chart at $p$, of codimension $n$. *(Completion.)* The second equivalence uses that $\psi$ is injective on $V$, which contains $F(q')$; the last is the normal form.
 >
-> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|§29.4]]); so $F_{\ast p} \circ \iota_{\ast p} = 0$ and $\iota_{\ast p}(T_pS) \subseteq \ker F_{\ast p}$. The left side has dimension $m - n$, since $\iota_{\ast p}$ is injective (Proposition [[§33 Submanifolds#^prop-33-4|§33.4]]); the right side has dimension $m - n$ by rank–nullity, since $F_{\ast p}$ is onto (Proposition [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]]). A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]), one level up.
+> *The tangent space.* *(Completion. In lecture: “I won't bother checking the kernel thing, because everything really reduces to the Euclidean [case].”)* The composite $F \circ \iota : S \to N$ is constant, with value $q$, and the pushforward along a constant map is zero (as in the proof of Theorem [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|§29.4]]); so $F_{\ast p} \circ \iota_{\ast p} = 0$ and $\iota_{\ast p}(T_pS) \subseteq \ker F_{\ast p}$. The left side has dimension $m - n$, since $\iota_{\ast p}$ is injective (Proposition [[§33 Submanifolds#^prop-33-4|§33.4]]); the right side has dimension $m - n$ by rank–nullity, since $F_{\ast p}$ is onto (Proposition [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]]). A subspace of the same finite dimension is everything, so the two are equal. This is the argument of Lecture 8 for $T^{\mathrm{geo}}_pM = \ker F'(p)$ (Theorem [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]), one level up.
 
 ^pf-33-6
 
@@ -210,7 +210,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 *The proof in one square, as on the board. In the normal-form charts $\tilde F$ is the projection onto the first $n$ coordinates, so the level set $S \cap U = F^{-1}(q) \cap U$ is carried by $\hat\varphi$ onto a fibre of a projection: the slice where the first $n$ coordinates equal $\psi(q)$.*
 
 > [!remark]- Connections
-> - The earlier regular value theorems it contains: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§28 The Differential in Coordinates#^cor-28-8|§28.8]] (see the remark below); the tangent-space statement generalizes [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]].
+> - The earlier regular value theorems it contains: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§28 The Differential in Coordinates#^cor-28-8|§28.8]] (see the remark below); the tangent-space statement generalizes [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]].
 > - Constraint sets $\{g_1 = c_1, \ldots, g_k = c_k\}$ in multivariable analysis: [[§14 Optimization and Lagrange Multipliers#^thm-14-3|452 §14.3]] (Lagrange multipliers with several constraints).
 > - Fibres of submersions that are all copies of one fibre: [[§34 Fibrations#^def-34-1|fibrations, Def. §34.1]].
 
@@ -255,8 +255,8 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > (1) Let $p \in S$. As in the construction of the graph charts, after reordering the coordinates write the points of $\mathbb{R}^{n+k}$ as $(x, y) \in \mathbb{R}^n \times \mathbb{R}^k$ with $\partial F/\partial y\,(p)$ invertible, so that the graph chart near $p$ is $(x, y) \mapsto x$ on $S$. Let $\Phi(x, y) = (x, F(x, y) - c)$. Its Jacobian at $p$ is $\begin{pmatrix} I_n & 0 \\ \partial F/\partial x & \partial F/\partial y \end{pmatrix}$, which is invertible, so by the inverse function theorem $\Phi$ restricts to a diffeomorphism of an open $U \ni p$ onto an open set, and by Lemma [[§32 Submersions#^lem-32-3|§32.3]] it is a smooth chart of $W$. Its last $k$ components are $F - c$, which vanish exactly on $S \cap U$, so $\Phi$ is adapted, and its induced chart is $\Phi_S = x|_{S \cap U}$: the graph chart. So near each of its points, every graph chart is an induced chart. Induced charts are pairwise compatible, and smoothness of a transition map is local, so every graph chart is compatible with every induced chart, and the two atlases determine the same maximal atlas (Theorem [[§16 Differentiable Structures#^thm-16-5|§16.5]]).
 >
-> (2) Let $v \in T^{\mathrm{geo}}_pS$, and let $\gamma$ be the lifted line of Definition [[§25 Tangent Spaces II꞉ Germs#^def-25-1|§25.1]], a curve in $S$ with $\gamma(0) = p$ and $\gamma'(0) = v$, so that $D_v = D_\gamma$. By Corollary [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], $\iota_{*p}D_v = D_{\iota \circ \gamma}$, the derivation $g \mapsto (g \circ \gamma)'(0) = \nabla g(p) \cdot v$ at $p$ — the directional derivative in the direction $v$, which is $v$ under Corollary [[§28 The Differential in Coordinates#^cor-28-6|§28.6]]. Since $v \mapsto D_v$ is onto $T_pS$ (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]]), $\iota_{*p}(T_pS) = T^{\mathrm{geo}}_pS$, and $T^{\mathrm{geo}}_pS = \ker F'(p)$ by Theorem [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]. This matches $\ker F_{*p}$ in Theorem [[§33 Submanifolds#^thm-33-6|§33.6]], $F_{*p}$ being $F'(p)$.
+> (2) Let $v \in T^{\mathrm{geo}}_pS$, and let $\gamma$ be the lifted line of Definition [[§23 The Geometric Tangent Space#^def-23-4|§23.4]], a curve in $S$ with $\gamma(0) = p$ and $\gamma'(0) = v$, so that $D_v = D_\gamma$. By Corollary [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], $\iota_{*p}D_v = D_{\iota \circ \gamma}$, the derivation $g \mapsto (g \circ \gamma)'(0) = \nabla g(p) \cdot v$ at $p$ — the directional derivative in the direction $v$, which is $v$ under Corollary [[§28 The Differential in Coordinates#^cor-28-6|§28.6]]. Since $v \mapsto D_v$ is onto $T_pS$ (Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]]), $\iota_{*p}(T_pS) = T^{\mathrm{geo}}_pS$, and $T^{\mathrm{geo}}_pS = \ker F'(p)$ by Theorem [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]. This matches $\ker F_{*p}$ in Theorem [[§33 Submanifolds#^thm-33-6|§33.6]], $F_{*p}$ being $F'(p)$.
 
 ^pf-33-8
 
-*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§33 Submanifolds#^prop-33-2|§33.2]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§25 Tangent Spaces II꞉ Germs#^def-25-1|Def. §25.1]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^cor-28-6|§28.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[Directional Derivative Formula|452 §7.1]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§33 Submanifolds#^prop-33-2|§33.2]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^cor-28-6|§28.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[Directional Derivative Formula|452 §7.1]], [[Multivariable Chain Rule|452 §10.2]]

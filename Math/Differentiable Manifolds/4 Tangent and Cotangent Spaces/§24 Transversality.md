@@ -5,7 +5,7 @@ chapter: 4
 section: 24
 tags: [differentiable-manifolds, math591]
 ---
-← [[§23 Tangent Spaces I꞉ The Geometric Picture]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§25 Tangent Spaces II꞉ Germs]] →
+← [[§23 The Geometric Tangent Space]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§25 Germs]] →
 
 *Stage: geometric — When is the preimage of a regular level set again a regular level set? A condition that does not mention the defining map.*
 
@@ -17,7 +17,7 @@ $$
 S = G^{-1}(0) \subseteq \mathbb{R}^k ,
 $$
 
-a smooth manifold of dimension $k - \ell$ with $T^{\mathrm{geo}}_qS = \ker G'(q)$ for $q \in S$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]]). Its codimension, in the sense of the next definition, is $\operatorname{codim} S = k - \dim S = \ell$, the number of equations cutting it out.
+a smooth manifold of dimension $k - \ell$ with $T^{\mathrm{geo}}_qS = \ker G'(q)$ for $q \in S$ ([[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3]]). Its codimension, in the sense of the next definition, is $\operatorname{codim} S = k - \dim S = \ell$, the number of equations cutting it out.
 
 > [!definition] Definition §24.1: Codimension
 > If $S \subseteq \mathbb{R}^k$ is a manifold of dimension $s$ — for instance a regular level set — its **codimension** in $\mathbb{R}^k$ is $\operatorname{codim} S = k - s$.
@@ -78,7 +78,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 >
 > so $(G\circ F)'(p)$ is surjective. As $p \in M$ was arbitrary, $0$ is a regular value, and surjectivity at a point of $M$ forces $N \ge \ell$.
 >
-> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and Proposition [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], $M$ is a smooth manifold of dimension $N - \ell$, so $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]],
+> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and Proposition [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], $M$ is a smooth manifold of dimension $N - \ell$, so $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3]],
 >
 > $$
 > T^{\mathrm{geo}}_pM = \ker\big(G'(q)F'(p)\big) = \{v \mid F'(p)v \in \ker G'(q)\} = F'(p)^{-1}(T^{\mathrm{geo}}_qS).
@@ -86,7 +86,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-24-1
 
-*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §10.2]]
 
 **Comparison with Lee.** Lee's Theorem 6.30 states this for a smooth map transverse to an *embedded submanifold* $S \subseteq M$, after the theory of submanifolds (Chapter 5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof — pull $G$ back along $F$ — is the one Lee uses locally.
 
@@ -110,7 +110,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-24-2
 
-*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^thm-24-1|§24.1]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]]
+*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^thm-24-1|§24.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]]
 
 > [!remark] Remark: An Intrinsic Statement with a Chosen Proof
 > [[§24 Transversality#^prop-24-2|Proposition §24.2]] is the precise content of the parenthetical. Transversality is not merely a sufficient condition: it *is* the regular value condition for $G \circ F$, rewritten so that $G$ disappears. The hypothesis of [[§24 Transversality#^thm-24-1|Theorem §24.1]] and both of its conclusions — that $M$ is a manifold, and the formula for $T^{\mathrm{geo}}_pM$ — involve only $F$ and $S$; only the proof picks a defining function $G$. This is the same pattern as for charts: a statement that does not depend on a choice, proved by making one. Two things remain for later. The smooth structure on $M$ is built through $G$, and its independence of $G$ is a statement about submanifolds. And $S$ need only be cut out by some $G$ *near each point*, which will turn out to hold for every embedded submanifold, so the theorem localizes.
@@ -127,7 +127,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-24-3
 
-*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^thm-24-1|§24.1]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]
+*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^thm-24-1|§24.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]
 
 > [!remark]- Connections
 > - The regular value theorem for maps between manifolds: [[§33 Submanifolds#^thm-33-6|§33.6]], compared with this version in [[§33 Submanifolds#^prop-33-8|§33.8]].
@@ -169,11 +169,11 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 > \dim(T_1 + T_2) = \dim T_1 + \dim T_2 - \dim(T_1 \cap T_2) = (k - \ell_1) + (k - \ell_2) - \dim(T_1 \cap T_2),
 > $$
 >
-> which equals $k$ iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. The two conditions coincide. When they hold throughout $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$, the point $0$ is a regular value of $(G_1, G_2)$, and Theorems [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]] give a manifold of codimension $\ell_1 + \ell_2$ with geometric tangent space $\ker(G_1,G_2)'(q) = T_1 \cap T_2$.
+> which equals $k$ iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. The two conditions coincide. When they hold throughout $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$, the point $0$ is a regular value of $(G_1, G_2)$, and Theorems [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]] give a manifold of codimension $\ell_1 + \ell_2$ with geometric tangent space $\ker(G_1,G_2)'(q) = T_1 \cap T_2$.
 
 ^pf-24-4
 
-*Uses:* [[§24 Transversality#^def-24-3|Def. §24.3]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
+*Uses:* [[§24 Transversality#^def-24-3|Def. §24.3]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
 
 > [!example] Example §24.1: The Sphere and the Plane Re-read
 > The figure in [[§7 The Regular Value Theorem#^rem-7-3|§7]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.
@@ -183,7 +183,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^ex-24-1
 
-The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§38 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§39 SU(2) → SO(3)꞉ The Double Cover#^prop-39-5|the unit quaternions as SU(2)]].
+The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 The Geometric Tangent Space#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§37 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|the unit quaternions as SU(2)]].
 
 > [!example] Example §24.2: Two Ways Transversality Can Fail
 > Let $S$ be the $x$-axis in $\mathbb{R}^2$, cut out by $G(x,y) = y$, so $T^{\mathrm{geo}}_qS$ is the $x$-axis at every $q \in S$, and $\ell = 1$. For $F : \mathbb{R} \to \mathbb{R}^2$ the theorem predicts $\dim F^{-1}(S) = 1 - 1 = 0$.
@@ -213,6 +213,6 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^rem-24-4
 
 > [!remark] Remark: What Is Still Missing
-> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§23 Tangent Spaces I꞉ The Geometric Picture#^def-23-1|Definition §23.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|Theorem §23.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§25 Tangent Spaces II꞉ Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
+> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§23 The Geometric Tangent Space#^def-23-1|Definition §23.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§25 Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
 
 ^rem-24-5

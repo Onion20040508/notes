@@ -5,13 +5,13 @@ chapter: 5
 section: 31
 tags: [differentiable-manifolds, math591]
 ---
-← [[§30 Tangent Spaces III꞉ The Cotangent Space]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§32 Submersions]] →
+← [[§30 The Cotangent Space]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§32 Submersions]] →
 
 *Stage: maps — Properties of the linear maps $F_{\ast p}$ control the local behaviour of $F$ itself.*
 
 *References: Lee Ch. 4. Lecture 10.*
 
-Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§36 Immersions|§36]]; everything up to the tangent bundle is the theory of submersions. “That's why we're discussing them in this context.”
+Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§35 Immersions|§35]]; everything up to the tangent bundle is the theory of submersions. “That's why we're discussing them in this context.”
 
 > [!definition] Definition §31.1: Local Diffeomorphism
 > A smooth map $F : M \to N$ is a **local diffeomorphism** if for every $p \in M$ there are neighbourhoods $U$ of $p$ and $V$ of $F(p)$ with $F(U) = V$ such that $F|_U^V : U \to V$ — the restriction of $F$ to $U$, regarded as a map onto $V$ — has a smooth inverse. Such an inverse $G : V \to U$ is a **local inverse** of $F$ at $p$.
@@ -45,7 +45,7 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 > [!remark]- Connections
 > - As a covering map of topological spaces: [[§24 Covering Spaces#^thm-24-2|590 §24.2]] ($\mathbb{R} \to S^1$ is a covering map).
 
-The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§38 Projective Spaces and the Hopf Fibration|§38]].
+The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§37 Projective Spaces and the Hopf Fibration|§37]].
 
 > [!remark] Remark: Covering Maps
 > Uribe noted that $\mathbb{R} \to S^1$ and $S^n \to \mathbb{RP}^n$ are *covering maps*, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two. Covering maps were not defined in lecture and the distinction was postponed (“we're running a little bit behind schedule”); it is Lee Ch. 4.

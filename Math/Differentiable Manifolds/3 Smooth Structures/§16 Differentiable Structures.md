@@ -267,7 +267,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 *Uses:* [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]]
 
 > [!remark]- Connections
-> - Compatible with the other two circle atlases: [[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|Remark after §14.4]].
+> - Compatible with the other two circle atlases: [[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|Remark after §17.4]].
 > - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§27 The Fundamental Group of Sⁿ#^pf-27-3|590 §27, proof of Thm. §27.3]].
 
 ![[m591-8-3.svg]]

@@ -16,11 +16,11 @@ tags: [chapter, differentiable-manifolds]
 - [[§32 Submersions]]
 - [[§33 Submanifolds]]
 - [[§34 Fibrations]]
-- [[§35 The Tangent Bundle]]
-- [[§36 Immersions]]
-- [[§37 Embeddings]]
-- [[§38 Projective Spaces and the Hopf Fibration]]
-- [[§39 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§41 The Tangent Bundle]]
+- [[§35 Immersions]]
+- [[§36 Embeddings]]
+- [[§37 Projective Spaces and the Hopf Fibration]]
+- [[§38 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Central results
 - [[Local Diffeomorphism Criterion]] (§31.2)

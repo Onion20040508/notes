@@ -24,9 +24,9 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 - For $n = 1$ the transition $w \mapsto 1/w$ is the complex stereographic transition ([[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|§17]])
 - $\mathbb{RP}^n$ is a compact smooth $n$-manifold with the same kind of atlas ([[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17]])
 - The quotient and Grassmannian topologies on $\mathbb{RP}^n$ agree, and $\mathbb{RP}^1 \cong S^1$ ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|§17]])
-- Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|§23]])
+- Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$ ([[§23 The Geometric Tangent Space#^rem-23-9|§23]])
 - Regular level sets of the moment map $\mathbb{CP}^n \to \mathbb{R}^n$, computed in one chart ([[§28 The Differential in Coordinates#^rem-28-5|§28]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|§38]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|§37]])
 - $S^n \to \mathbb{RP}^n$ is a covering map ([[§31 Local Diffeomorphisms#^rem-31-2|§31]])
 
 ## Definition: $\mathbb{CP}^n = S^{2n+1}/{\sim}$, with $z \sim \xi z$ for $\xi \in S^1$
@@ -84,13 +84,13 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 ![[§17 Projective Spaces as Smooth Manifolds#^prop-17-6]]
 
 ## Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9]]
+![[§23 The Geometric Tangent Space#^rem-23-9]]
 
 ## Regular level sets of the moment map $\mathbb{CP}^n \to \mathbb{R}^n$, computed in one chart
 ![[§28 The Differential in Coordinates#^rem-28-5]]
 
 ## $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism
-![[§38 Projective Spaces and the Hopf Fibration#^ex-38-1]]
+![[§37 Projective Spaces and the Hopf Fibration#^ex-37-1]]
 
 ## $S^n \to \mathbb{RP}^n$ is a covering map
 ![[§31 Local Diffeomorphisms#^rem-31-2]]

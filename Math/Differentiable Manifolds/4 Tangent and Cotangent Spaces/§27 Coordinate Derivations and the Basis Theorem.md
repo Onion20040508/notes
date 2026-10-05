@@ -76,7 +76,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-27-1
 
-*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]], [[§25 Tangent Spaces II꞉ Germs#^def-25-2|Def. §25.2]], [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§6 Differentiability#^thm-6-4|452 §6.4]]
+*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]], [[§25 Germs#^def-25-1|Def. §25.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§6 Differentiability#^thm-6-4|452 §6.4]]
 
 The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — “a theorem from calculus” that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
@@ -175,7 +175,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 
 ^pf-27-4
 
-*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-3|§27.3]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§25 Tangent Spaces II꞉ Germs#^def-25-3|Def. §25.3]], [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]]
+*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-3|§27.3]], [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]], [[§25 Germs#^def-25-2|Def. §25.2]], [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]]
 
 > [!theorem] Theorem §27.5: Basis Theorem
 > Let $M$ be a smooth $n$-manifold, $p \in M$, and $(U, \varphi)$ any smooth chart with $p \in U$. Then
@@ -228,8 +228,8 @@ $$
 *The proof in one diagram — the defining triangle of the pushforward, for the chart. Downstairs the Euclidean formula computes $\tilde D$ on everything; the two pullback identities displayed under the diagram carry the answer back upstairs, turning $\tilde D[r^i]$ into $D[x^i]$ and $\tilde D[f_\varphi]$ into $D[f]$.*
 
 > [!remark]- Connections
-> - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§30 Tangent Spaces III꞉ The Cotangent Space#^lem-30-2|§30.2]]; cf. [[§12 Duality#^ladr-3-114|LADR 3.114]].
-> - The components in the coordinate basis give the charts of the tangent bundle: [[§35 The Tangent Bundle#^def-35-2|Def. §35.2]].
+> - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§30 The Cotangent Space#^lem-30-2|§30.2]]; cf. [[§12 Duality#^ladr-3-114|LADR 3.114]].
+> - The components in the coordinate basis give the charts of the tangent bundle: [[§41 The Tangent Bundle#^def-41-2|Def. §41.2]].
 
 **Reconciliation with the lecture.** This is the lecture's proof, in the lecture's order of ideas but with the pushforward defined before it is used rather than after. Two details of the board version. It opens with “$\forall\, [f] \in I_p$”: restricting to germs vanishing at $p$ is harmless, since $D[f] = D[f - f(p)]$ by Lemma [[§26 Derivations and the Abstract Tangent Space#^lem-26-2|§26.2]](1), but the argument works verbatim for every germ. And the notes had filled in a proof of this theorem before Lecture 9, via two reduction lemmas; those were the pushforward by an inclusion and by the chart in disguise, and they now appear as Lemma [[§26 Derivations and the Abstract Tangent Space#^lem-26-8|§26.8]] and Corollary [[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]].
 
@@ -249,11 +249,11 @@ $$
 ^thm-27-6
 
 > [!proof]+ Proof
-> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-2|§25.2]]; that $D_v$ really is a derivation is Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-1|§25.1]]; surjectivity follows from the [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|basis theorem]], both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
+> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]]; that $D_v$ really is a derivation is Proposition [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]]; surjectivity follows from the [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|basis theorem]], both spaces having dimension $n$. Even once it is proved, the notes keep the notations apart: $T^{\mathrm{geo}}_pM$ is the geometric tangent space, $T_pM$ the abstract one.
 
 ^pf-27-6
 
-*Uses:* [[§23 Tangent Spaces I꞉ The Geometric Picture#^def-23-1|Def. §23.1]], [[§25 Tangent Spaces II꞉ Germs#^def-25-1|Def. §25.1]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-1|§25.1]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-2|§25.2]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]], [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]
 
 > [!remark]- Connections
 > - Proved in detail in [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Consequences, §27.7]], once the basis theorem gives $\dim T_pM = n$.
@@ -267,19 +267,19 @@ $$
 ^cor-27-7
 
 > [!proof]+ Proof
-> The first claim is Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]. For the second, $v \mapsto D_v$ is linear and injective (Proposition [[§25 Tangent Spaces II꞉ Germs#^prop-25-2|§25.2]]) between spaces of dimension $n$ — the geometric tangent space $T^{\mathrm{geo}}_pM$ by Theorem [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], the abstract tangent space $T_pM$ by Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]] — hence an isomorphism.
+> The first claim is Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]]. For the second, $v \mapsto D_v$ is linear and injective (Proposition [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]]) between spaces of dimension $n$ — the geometric tangent space $T^{\mathrm{geo}}_pM$ by Theorem [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], the abstract tangent space $T_pM$ by Theorem [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]] — hence an isomorphism.
 
 ^pf-27-7
 
-*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-2|§25.2]], [[§25 Tangent Spaces II꞉ Germs#^prop-25-1|§25.1]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]], [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
 > - This is the detailed proof of [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Ambient and Abstract Agree, §27.6]], stated just above.
 
-**Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
+**Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
 
 > [!remark] Remark: A Derivation Sees Only the First Derivatives
-> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§30 Tangent Spaces III꞉ The Cotangent Space#The Cotangent Space from Germs|§30, The Cotangent Space from Germs]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§30 Tangent Spaces III꞉ The Cotangent Space#^prop-30-4|§30.4]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|§30.1]], built with no dualizing at all (Theorem [[§30 Tangent Spaces III꞉ The Cotangent Space#^thm-30-7|§30.7]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
+> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§30 The Cotangent Space#The Cotangent Space from Germs|§30, The Cotangent Space from Germs]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§30 The Cotangent Space#^prop-30-5|§30.5]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§30 The Cotangent Space#^def-30-1|§30.1]], built with no dualizing at all (Theorem [[§30 The Cotangent Space#^thm-30-8|§30.8]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 
 ^rem-27-3
 
@@ -301,7 +301,7 @@ $$
 
 *Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§27 Coordinate Derivations and the Basis Theorem#^def-27-1|Def. §27.1]], [[§6 Dimension#^ladr-2-34|LADR 2.34]]
 
-This is less obvious than it looks: the space of germs $C^\infty_p(M)$ ([[§25 Tangent Spaces II꞉ Germs#^def-25-3|Def. §25.3]]) on which the derivations act is infinite-dimensional, and it is the Hadamard lemma ([[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|§27.2]]) behind the basis theorem that cuts the derivations down to exactly $n$ dimensions.
+This is less obvious than it looks: the space of germs $C^\infty_p(M)$ ([[§25 Germs#^def-25-2|Def. §25.2]]) on which the derivations act is infinite-dimensional, and it is the Hadamard lemma ([[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|§27.2]]) behind the basis theorem that cuts the derivations down to exactly $n$ dimensions.
 
 > [!theorem] Corollary §27.9: Smooth Invariance of Dimension
 > If $U \subseteq \mathbb{R}^m$ and $V \subseteq \mathbb{R}^n$ are nonempty open sets and $F : U \to V$ is a diffeomorphism ([[§16 Differentiable Structures#^def-16-3|Def. §16.3]]), then $m = n$. Consequently two smooth charts ([[§18 Smooth Functions and Smooth Maps#^def-18-1|Def. §18.1]]) of a smooth manifold at the same point have targets of the same dimension.

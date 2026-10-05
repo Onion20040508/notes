@@ -173,7 +173,7 @@ $$
 > [g] \longmapsto \sum_i v^i\, \frac{\partial g}{\partial r^i}(a) = \frac{d}{dt}\Big|_{t=0} g(a + tv),
 > $$
 >
-> the directional derivative $D_v$ of [[§25 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]].
+> the directional derivative $D_v$ of [[§25 Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]].
 >
 > *Lee: Proposition 3.13 and Corollary 3.3*
 
@@ -210,7 +210,7 @@ $$
 *Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§28 The Differential in Coordinates#^prop-28-5|§28.5]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-1|Def. §21.1]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-3|Def. §21.3]]
 
 > [!remark] Remark
-> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]]. It also closes a loop opened in [[§25 Tangent Spaces II꞉ Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
+> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]]. It also closes a loop opened in [[§25 Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 
 ^rem-28-3
 
@@ -275,7 +275,7 @@ $$
 
 ^rem-28-5
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|U(1) is the circle]]; an orbit space in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§28 The Differential in Coordinates#^rem-28-5|Remark: The Strategy]]; and the base of the Hopf fibration in [[§38 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|U(1) is the circle]]; an orbit space in [[§12 Group Actions and Orbit Spaces#^ex-12-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§17 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§23 The Geometric Tangent Space#^rem-23-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§28 The Differential in Coordinates#^rem-28-5|Remark: The Strategy]]; and the base of the Hopf fibration in [[§37 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
 > [!theorem] Corollary §28.8: Regular Level Sets Are Topological Manifolds
 > Let $F : M \to N$ be a smooth map between smooth manifolds of dimensions $m$ and $n$, and $c \in N$ a regular value of $F$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $m - n$ (or empty).

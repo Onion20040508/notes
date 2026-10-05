@@ -29,8 +29,8 @@ tags: [topology, hub]
 - [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|Theorem §14.3: Homogeneous Spaces Are Homeomorphic to Coset Spaces]]
 - [[§16 Differentiable Structures#^prop-16-3|Proposition §16.3: The Circle Needs More Than One Chart]]
 - [[§32 Submersions#^thm-32-7|Theorem §32.7: Submersions from Compact Manifolds]]
-- [[§37 Embeddings#^prop-37-4|Proposition §37.4: Proper Maps into Manifolds Are Closed]]
-- [[§37 Embeddings#^prop-37-9|Proposition §37.9: Closed Embeddings Are the Proper Ones]]
+- [[§36 Embeddings#^prop-36-4|Proposition §36.4: Proper Maps into Manifolds Are Closed]]
+- [[§36 Embeddings#^prop-36-9|Proposition §36.9: Closed Embeddings Are the Proper Ones]]
 
 ## Used in (Multivariable Analysis)
 - [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]

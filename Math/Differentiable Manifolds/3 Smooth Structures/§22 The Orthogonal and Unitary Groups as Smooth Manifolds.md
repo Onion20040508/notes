@@ -5,11 +5,11 @@ chapter: 3
 section: 22
 tags: [differentiable-manifolds, math591]
 ---
-← [[§21 The Differential of a Map Between Vector Spaces]] · ↑ [[· 3 Smooth Structures]] · [[§23 Tangent Spaces I꞉ The Geometric Picture]] →
+← [[§21 The Differential of a Map Between Vector Spaces]] · ↑ [[· 3 Smooth Structures]] · [[§23 The Geometric Tangent Space]] →
 
 *Stage: linear — The matrix groups become smooth level sets: $\mathrm{O}(n)$ and $\mathrm{U}(n)$ by the regular value theorem, with the differential computed along straight lines.*
 
-The classical groups through the course: defined in [[§10 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§15 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§12 Group Actions and Orbit Spaces#^ex-12-4|the rotations of the plane]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§13 Homogeneous Spaces#^ex-13-2|the isotropy of the north pole]] and [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|the orthogonal group]] and [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|the unitary group]]; their tangent spaces at the identity in [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|The Classical Groups]], with [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-4|the infinitesimal rotations]]; and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§39 SU(2) → SO(3)꞉ The Double Cover#^thm-39-10|The Double Cover]].
+The classical groups through the course: defined in [[§10 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§15 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§12 Group Actions and Orbit Spaces#^ex-12-4|the rotations of the plane]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§13 Homogeneous Spaces#^ex-13-2|the isotropy of the north pole]] and [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|the orthogonal group]] and [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|the unitary group]]; their tangent spaces at the identity in [[§23 The Geometric Tangent Space#^thm-23-5|The Classical Groups]], with [[§23 The Geometric Tangent Space#^ex-23-4|the infinitesimal rotations]]; and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10|The Double Cover]].
 
 The promise of [[§11 The Classical Groups Are Topological Manifolds|§11, The Classical Groups Are Topological Manifolds]] can now be kept, with [[§21 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] supplying the meaning of every step.
 
@@ -86,7 +86,7 @@ The promise of [[§11 The Classical Groups Are Topological Manifolds|§11, The C
 
 > [!remark]- Connections
 > - $\mathrm{O}(n)$ as a group in 493: [[Matrix groups GLₙ, SLₙ and O(n)]]; the analogous level-set argument for $\mathrm{SL}(n,\mathbb{R})$: [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]].
-> - Its tangent spaces: [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-2|Ex. §23.2]]; all classical groups: [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-5|§23.5]].
+> - Its tangent spaces: [[§23 The Geometric Tangent Space#^ex-23-2|Ex. §23.2]]; all classical groups: [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]].
 > - Used in Relativity: $\dim SO(3) = 3$ counts the rotation parameters when a proper orthochronous Lorentz transformation is written as a boost times a rotation — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]].
 
 > [!remark] Remark
@@ -130,10 +130,10 @@ The promise of [[§11 The Classical Groups Are Topological Manifolds|§11, The C
 *Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]]
 
 > [!remark]- Connections
-> - This kernel is the geometric tangent space $T^{\mathrm{geo}}_g\mathrm{O}(n)$: [[§23 Tangent Spaces I꞉ The Geometric Picture#^thm-23-3|§23.3]], [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-2|Ex. §23.2]].
+> - This kernel is the geometric tangent space $T^{\mathrm{geo}}_g\mathrm{O}(n)$: [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§23 The Geometric Tangent Space#^ex-23-2|Ex. §23.2]].
 
 > [!remark] Remark: Two Readings of the Dimension
-> A student asked for a combinatorial reason that $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$, “like choosing two out of $n$.” There are now two: the level-set count $n^2 - \tfrac{n(n+1)}{2}$ from the regular value theorem, and the kernel count $\binom{n}{2}$ from Proposition [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-1|§22.1]]. They agree by [[§20 Linear Algebra Toolkit#^prop-20-1|rank–nullity]]: $dF_g$ is surjective onto a space of dimension $\tfrac{n(n+1)}{2}$, so its kernel has dimension $n^2 - \tfrac{n(n+1)}{2}$. The kernel is not yet officially anything, but Uribe named it ahead of time: it is the *geometric tangent space* $T^{\mathrm{geo}}_g\mathrm{O}(n)$ to $\mathrm{O}(n)$ at $g$ (see [[§23 Tangent Spaces I꞉ The Geometric Picture|§23]]), and at $g = I$ the skew-symmetric matrices will be the *Lie algebra* $\mathfrak{so}(n)$, “in some number of weeks.” The same move produced $\nabla\det$ in Proposition [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], and it will recur whenever a classical group is presented as a level set.
+> A student asked for a combinatorial reason that $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$, “like choosing two out of $n$.” There are now two: the level-set count $n^2 - \tfrac{n(n+1)}{2}$ from the regular value theorem, and the kernel count $\binom{n}{2}$ from Proposition [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-1|§22.1]]. They agree by [[§20 Linear Algebra Toolkit#^prop-20-1|rank–nullity]]: $dF_g$ is surjective onto a space of dimension $\tfrac{n(n+1)}{2}$, so its kernel has dimension $n^2 - \tfrac{n(n+1)}{2}$. The kernel is not yet officially anything, but Uribe named it ahead of time: it is the *geometric tangent space* $T^{\mathrm{geo}}_g\mathrm{O}(n)$ to $\mathrm{O}(n)$ at $g$ (see [[§23 The Geometric Tangent Space|§23]]), and at $g = I$ the skew-symmetric matrices will be the *Lie algebra* $\mathfrak{so}(n)$, “in some number of weeks.” The same move produced $\nabla\det$ in Proposition [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], and it will recur whenever a classical group is presented as a level set.
 
 ^rem-22-3
 
@@ -249,7 +249,7 @@ The vertical arrows are the real-linear identifications of [[§10 Topological Gr
 
 > [!remark]- Connections
 > - Unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|Ex. §10.3]].
-> - Its tangent spaces: [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-3|Ex. §23.3]].
+> - Its tangent spaces: [[§23 The Geometric Tangent Space#^ex-23-3|Ex. §23.3]].
 
 > [!remark] Remark
 > **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^{\ast} + gh^{\ast}$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which differs from $i\,dF_g(h)$ unless $gh^{\ast} = 0$. This is the conjugation in $g^{\ast}$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
@@ -275,7 +275,7 @@ The vertical arrows are the real-linear identifications of [[§10 Topological Gr
 *Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|§22.3]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]]
 
 > [!remark]- Connections
-> - The geometric tangent space of $\mathrm{U}(n)$: [[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-3|Ex. §23.3]]; the orthogonal analogue: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-1|§22.1]].
+> - The geometric tangent space of $\mathrm{U}(n)$: [[§23 The Geometric Tangent Space#^ex-23-3|Ex. §23.3]]; the orthogonal analogue: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-1|§22.1]].
 
 > [!theorem] Corollary §22.5: $\mathrm{U}(n)$ Is Compact
 > $\mathrm{U}(n)$ is a compact smooth manifold of dimension $n^2$.

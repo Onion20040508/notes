@@ -258,16 +258,20 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-0.95) {Ch.~1};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-3.8) {Ch.~2};
 \node[draw=teal!70!black, fill=teal!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (SM) at (0,-15.6) {\textbf{Submanifolds} \ref*{sec:submanifolds}\\ regular value theorem for manifolds};
-\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-15.6) {\textbf{Bundles} \ref*{sec:fibrations}--\ref*{sec:tangent-bundle}\\ fibrations, $TM$, $T^*M$, vector fields};
+\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (BU) at (6.9,-15.6) {\textbf{Fibrations} \ref*{sec:fibrations}\\ fibrations, local sections};
+\node[draw=blue!60!black, fill=blue!5, rounded corners=3pt, text width=6.2cm, align=center, font=\footnotesize, inner sep=4pt] (BF) at (4.6,-20.0) {\textbf{Bundles and fields} \ref*{sec:recap-tangent}--\ref*{sec:vf-operators}\\ recaps; $TM$, $T^*M$; vector fields, one-forms, $d$};
+\draw[->, thick, gray!70] (BU) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {sections} (BF);
 \draw[->, thick, teal!60!black] (T1) -- node[font=\scriptsize, fill=white, inner sep=1.5pt, align=center] {equations,\\ completed} (SM);
 \draw[->, thick, gray!70] (M) -- node[pos=0.55, font=\scriptsize, fill=white, inner sep=1.5pt] {normal form} (SM);
 \draw[->, thick, gray!70] (SM) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {fibres} (BU);
-\draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BU.east);
+\draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BF.east);
 \node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-17.8) {\ref*{sec:immersions}--\ref*{sec:embeddings}\\ immersions and embeddings};
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-15.6) {Ch.~5};
+\node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-20.0) {Ch.~6};
+\draw[gray!35, dashed] (-2.5,-18.95) -- (11.4,-18.95);
 \draw[gray!35, dashed] (-2.5,-3.05) -- (11.4,-3.05);
 \draw[gray!35, dashed] (-2.5,-4.8) -- (11.4,-4.8);
 \draw[gray!35, dashed] (-2.5,-8.85) -- (11.4,-8.85);
@@ -4899,7 +4903,7 @@ It is closed in $\Mat(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ as $F^{-1}(I)$ with
 
 \chapter{Tangent and Cotangent Spaces}
 
-\section{Tangent Spaces I: The Geometric Picture}\label{sec:tangent}
+\section{The Geometric Tangent Space}\label{sec:tangent}
 
 \roadmark{Stage: geometric}{Tangent vectors as velocities inside the ambient space, $T^{\geo}_pM = \ker F'(p)$ --- available only for manifolds presented by equations.}
 
@@ -5198,6 +5202,63 @@ The geometric tangent space has the same dimension at every point, and it is the
 
 The count is the geometric meaning of ``$k$ independent equations in $n + k$ unknowns'': each equation removes one tangent direction, and $n$ remain at every point. Theorem~\ref{thm:tangent-dimension} gives the same number for the abstract tangent space, as it must, since the two spaces are isomorphic (Theorem~\ref{thm:ambient-abstract}).
 
+\subsection{From Tangent Vectors to Derivations}\label{sub:derivations-motivation}
+
+\textit{Motivation only; nothing in this subsection is used later, but it is where the abstract definition comes from.}
+
+Keep $M = F^{-1}(c)$ and, by Lemmas \ref{lem:tangent-local} and \ref{lem:tangent-graph}, assume $M$ is the graph of a smooth $G : A \to \mathbb{R}^k$ over an open $A \subseteq \mathbb{R}^n$, with chart $\varphi : M \to A$ the projection $(x, G(x)) \mapsto x$ and $p = (x_0, G(x_0))$. Let $f : M \to \mathbb{R}$ be smooth, so that $f_\varphi = f \circ \varphi^{-1} : A \to \mathbb{R}$ is smooth (Definition~\ref{def:smooth-function}).
+
+Given $v \in T^{\geo}_pM$, Lemma~\ref{lem:tangent-graph} provides a unique $u \in \mathbb{R}^n$ with $v = (u, G'(x_0)u)$. Lift the straight line $t \mapsto x_0 + tu$ from the chart to the manifold:
+\[
+\gamma(t) = \big(x_0 + tu,\; G(x_0 + tu)\big), \qquad \gamma(0) = p, \quad \gamma'(0) = v .
+\]
+
+\begin{center}
+\begin{tikzcd}[row sep=3.0em, column sep=3.6em]
+M \arrow[r, "f"] \arrow[d, shift right=0.6ex, "\varphi"'] & \mathbb{R} \\
+A \subseteq \mathbb{R}^n \arrow[u, shift right=0.6ex, "\varphi^{-1}"'] \arrow[ur, "f_\varphi"'] &
+\end{tikzcd}
+\end{center}
+
+The chart triangle for the graph case, as drawn on the board. Downstairs is the open set $A \subseteq \mathbb{R}^n$; upstairs is the manifold. The chart $\varphi(x, G(x)) = x$ and its inverse $\varphi^{-1}(x) = (x, G(x))$ pass between them, and the triangle commutes: $f = f_\varphi \circ \varphi$. Smoothness of $f$ \emph{means} smoothness of $f_\varphi$, so every computation with $f$ can be pushed downstairs, done in ordinary calculus, and read back. That is the manoeuvre in the next definition: the curve is built downstairs as a straight line, lifted upstairs by $\varphi^{-1}$, and the derivative taken downstairs again. ``Upstairs and downstairs are very useful terminologies.''
+
+\begin{defbox}[The Directional Derivative Attached to a Tangent Vector]\deflabel{def:Dv}
+Let $M \subseteq \mathbb{R}^{n+k}$ be the graph of a smooth $G : A \to \mathbb{R}^k$ on an open $A \subseteq \mathbb{R}^n$, with chart $\varphi(x, G(x)) = x$, and $p = (x_0, G(x_0))$. Let $v \in T^{\geo}_pM$, let $u \in \mathbb{R}^n$ be the vector with $v = (u, G'(x_0)u)$ (Lemma~\ref{lem:tangent-graph}), and let $\gamma(t) = (x_0 + tu, G(x_0 + tu))$ be the lifted line, a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = v$. For $f$ a smooth real-valued function on a neighbourhood of $p$ in $M$, set
+\[
+D_v(f) \;=\; \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) \;=\; \frac{d}{dt}\Big|_{t=0} f_\varphi(x_0 + tu) \;=\; u \cdot \nabla f_\varphi(x_0),
+\]
+the second equality because $\varphi(\gamma(t)) = x_0 + tu$ and $f = f_\varphi \circ \varphi$, the third by the chain rule. So $D_v$ takes a smooth function defined near $p$ and returns a real number, and it depends only on the values of $f$ near $p$ --- which is what the germs of the next subsection make precise.
+\leeref{Proposition 3.2 (in $\mathbb{R}^n$)}
+\end{defbox}
+
+\begin{propbox}[Basic Properties of $D_v$]\thmlabel{prop:Dv-properties}
+In the setting of Definition~\ref{def:Dv}:
+\begin{enumerate}
+    \item $D_v(f)$ depends only on the germ of $f$ at $p$;
+    \item if $\sigma$ is \emph{any} smooth curve in $M$ with $\sigma(0) = p$ and $\sigma'(0) = v$, then $D_v(f) = \frac{d}{dt}\big|_{t=0} f(\sigma(t))$; so $D_v$ depends on $v$ alone, not on the curve used to define it;
+    \item $D_v$ is linear and obeys the product rule $D_v(fg) = f(p)\,D_v(g) + g(p)\,D_v(f)$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+(1) $\gamma(t)$ lies in any given neighbourhood of $p$ for $|t|$ small, so only the values of $f$ near $p$ enter --- ``we don't need the whole manifold.'' (2) The chart $\varphi$ is the restriction to $M$ of the linear projection $(x,y) \mapsto x$, so $\varphi \circ \sigma$ is a smooth curve in $A$ whose velocity at $0$ is the first component $u$ of $v$. Since $f \circ \sigma = f_\varphi \circ (\varphi \circ \sigma)$, the chain rule gives $\frac{d}{dt}\big|_0 f(\sigma(t)) = \nabla f_\varphi(x_0) \cdot u = D_v(f)$. (3) Linearity and the product rule are inherited from those of the gradient, $\nabla(f_\varphi g_\varphi) = f_\varphi \nabla g_\varphi + g_\varphi \nabla f_\varphi$, evaluated at $x_0$, where $f_\varphi(x_0) = f(p)$.
+\end{proof}
+
+\begin{propbox}[$D_v$ Determines $v$]\thmlabel{prop:Dv-determines-v}
+The map $v \mapsto D_v$ is injective on $T^{\geo}_pM$: if $D_v = D_{v'}$ then $v = v'$.
+\leeref{Proposition 3.2(b)}
+\end{propbox}
+
+\begin{proof}
+Write $v = (u, G'(x_0)u)$ and $v' = (u', G'(x_0)u')$. For $i = 1, \ldots, n$ let $x^i : M \to \mathbb{R}$ be the $i$-th coordinate of the chart, so $(x^i)_\varphi = r^i$ is the $i$-th coordinate function on $A$ and $\nabla (x^i)_\varphi = e_i$. Then $D_v(x^i) = u \cdot e_i = u^i$. If $D_v = D_{v'}$, applying both to $x^i$ gives $u^i = (u')^i$ for every $i$, so $u = u'$ and hence $v = v'$.
+\end{proof}
+
+\begin{rembox}\label{rem:abstract-tangent}
+Uribe's version of this argument: the numbers $D_v(f) = u \cdot \nabla f_\varphi(x_0)$ range over the dot products of $u$ with an arbitrary vector, because the gradient of a function at a point can be prescribed freely; so knowing all of them determines $u$. Taking $f$ to be the coordinate functions is the cheapest way to prescribe it.
+
+The conclusion is that a tangent vector loses nothing by being replaced by the operator it defines --- and the operator, unlike the vector, makes sense with no ambient space in sight. \emph{Tangent vectors will be defined as operators:} you feed them a function and they return a number.
+\end{rembox}
+
 % ============================================================================
 % SECTION: TRANSVERSALITY
 % ============================================================================
@@ -5400,70 +5461,11 @@ and Theorem~\ref{thm:transverse-preimage} becomes the statement that \emph{the p
 Everything above presupposes an ambient $\mathbb{R}^{n+k}$: Definition~\ref{def:geometric-tangent} of the geometric tangent space $T^{\geo}_pM$ uses its vector space structure to differentiate $\gamma$, and Theorem~\ref{thm:tangent-kernel} uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available --- ``if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.'' The next sections build the \emph{abstract} tangent space $T_pM$ from the charts alone.
 \end{rembox}
 
-\section{Tangent Spaces II: Germs}\label{sec:abstract-tangent}
+\section{Germs}\label{sub:germs}\label{sec:abstract-tangent}
 
-\roadmark{Stage: abstract}{Tangent vectors as derivations of germs --- available for every manifold, including those built by quotients. First the motivation, then germs, the objects derivations act on.}
+\roadmark{Stage: abstract}{Germs of smooth functions at a point --- the objects that derivations act on, available on every manifold, including those built by quotients. The motivation from geometric tangent vectors closes \ref{sec:tangent}.}
 
-\subsection{From Tangent Vectors to Derivations}\label{sub:derivations-motivation}
-
-\textit{Motivation only; nothing in this subsection is used later, but it is where the abstract definition comes from.}
-
-Keep $M = F^{-1}(c)$ and, by Lemmas \ref{lem:tangent-local} and \ref{lem:tangent-graph}, assume $M$ is the graph of a smooth $G : A \to \mathbb{R}^k$ over an open $A \subseteq \mathbb{R}^n$, with chart $\varphi : M \to A$ the projection $(x, G(x)) \mapsto x$ and $p = (x_0, G(x_0))$. Let $f : M \to \mathbb{R}$ be smooth, so that $f_\varphi = f \circ \varphi^{-1} : A \to \mathbb{R}$ is smooth (Definition~\ref{def:smooth-function}).
-
-Given $v \in T^{\geo}_pM$, Lemma~\ref{lem:tangent-graph} provides a unique $u \in \mathbb{R}^n$ with $v = (u, G'(x_0)u)$. Lift the straight line $t \mapsto x_0 + tu$ from the chart to the manifold:
-\[
-\gamma(t) = \big(x_0 + tu,\; G(x_0 + tu)\big), \qquad \gamma(0) = p, \quad \gamma'(0) = v .
-\]
-
-\begin{center}
-\begin{tikzcd}[row sep=3.0em, column sep=3.6em]
-M \arrow[r, "f"] \arrow[d, shift right=0.6ex, "\varphi"'] & \mathbb{R} \\
-A \subseteq \mathbb{R}^n \arrow[u, shift right=0.6ex, "\varphi^{-1}"'] \arrow[ur, "f_\varphi"'] &
-\end{tikzcd}
-\end{center}
-
-The chart triangle for the graph case, as drawn on the board. Downstairs is the open set $A \subseteq \mathbb{R}^n$; upstairs is the manifold. The chart $\varphi(x, G(x)) = x$ and its inverse $\varphi^{-1}(x) = (x, G(x))$ pass between them, and the triangle commutes: $f = f_\varphi \circ \varphi$. Smoothness of $f$ \emph{means} smoothness of $f_\varphi$, so every computation with $f$ can be pushed downstairs, done in ordinary calculus, and read back. That is the manoeuvre in the next definition: the curve is built downstairs as a straight line, lifted upstairs by $\varphi^{-1}$, and the derivative taken downstairs again. ``Upstairs and downstairs are very useful terminologies.''
-
-\begin{defbox}[The Directional Derivative Attached to a Tangent Vector]\deflabel{def:Dv}
-Let $M \subseteq \mathbb{R}^{n+k}$ be the graph of a smooth $G : A \to \mathbb{R}^k$ on an open $A \subseteq \mathbb{R}^n$, with chart $\varphi(x, G(x)) = x$, and $p = (x_0, G(x_0))$. Let $v \in T^{\geo}_pM$, let $u \in \mathbb{R}^n$ be the vector with $v = (u, G'(x_0)u)$ (Lemma~\ref{lem:tangent-graph}), and let $\gamma(t) = (x_0 + tu, G(x_0 + tu))$ be the lifted line, a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = v$. For $f$ a smooth real-valued function on a neighbourhood of $p$ in $M$, set
-\[
-D_v(f) \;=\; \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) \;=\; \frac{d}{dt}\Big|_{t=0} f_\varphi(x_0 + tu) \;=\; u \cdot \nabla f_\varphi(x_0),
-\]
-the second equality because $\varphi(\gamma(t)) = x_0 + tu$ and $f = f_\varphi \circ \varphi$, the third by the chain rule. So $D_v$ takes a smooth function defined near $p$ and returns a real number, and it depends only on the values of $f$ near $p$ --- which is what the germs of the next subsection make precise.
-\leeref{Proposition 3.2 (in $\mathbb{R}^n$)}
-\end{defbox}
-
-\begin{propbox}[Basic Properties of $D_v$]\thmlabel{prop:Dv-properties}
-In the setting of Definition~\ref{def:Dv}:
-\begin{enumerate}
-    \item $D_v(f)$ depends only on the germ of $f$ at $p$;
-    \item if $\sigma$ is \emph{any} smooth curve in $M$ with $\sigma(0) = p$ and $\sigma'(0) = v$, then $D_v(f) = \frac{d}{dt}\big|_{t=0} f(\sigma(t))$; so $D_v$ depends on $v$ alone, not on the curve used to define it;
-    \item $D_v$ is linear and obeys the product rule $D_v(fg) = f(p)\,D_v(g) + g(p)\,D_v(f)$.
-\end{enumerate}
-\end{propbox}
-
-\begin{proof}
-(1) $\gamma(t)$ lies in any given neighbourhood of $p$ for $|t|$ small, so only the values of $f$ near $p$ enter --- ``we don't need the whole manifold.'' (2) The chart $\varphi$ is the restriction to $M$ of the linear projection $(x,y) \mapsto x$, so $\varphi \circ \sigma$ is a smooth curve in $A$ whose velocity at $0$ is the first component $u$ of $v$. Since $f \circ \sigma = f_\varphi \circ (\varphi \circ \sigma)$, the chain rule gives $\frac{d}{dt}\big|_0 f(\sigma(t)) = \nabla f_\varphi(x_0) \cdot u = D_v(f)$. (3) Linearity and the product rule are inherited from those of the gradient, $\nabla(f_\varphi g_\varphi) = f_\varphi \nabla g_\varphi + g_\varphi \nabla f_\varphi$, evaluated at $x_0$, where $f_\varphi(x_0) = f(p)$.
-\end{proof}
-
-\begin{propbox}[$D_v$ Determines $v$]\thmlabel{prop:Dv-determines-v}
-The map $v \mapsto D_v$ is injective on $T^{\geo}_pM$: if $D_v = D_{v'}$ then $v = v'$.
-\leeref{Proposition 3.2(b)}
-\end{propbox}
-
-\begin{proof}
-Write $v = (u, G'(x_0)u)$ and $v' = (u', G'(x_0)u')$. For $i = 1, \ldots, n$ let $x^i : M \to \mathbb{R}$ be the $i$-th coordinate of the chart, so $(x^i)_\varphi = r^i$ is the $i$-th coordinate function on $A$ and $\nabla (x^i)_\varphi = e_i$. Then $D_v(x^i) = u \cdot e_i = u^i$. If $D_v = D_{v'}$, applying both to $x^i$ gives $u^i = (u')^i$ for every $i$, so $u = u'$ and hence $v = v'$.
-\end{proof}
-
-\begin{rembox}\label{rem:abstract-tangent}
-Uribe's version of this argument: the numbers $D_v(f) = u \cdot \nabla f_\varphi(x_0)$ range over the dot products of $u$ with an arbitrary vector, because the gradient of a function at a point can be prescribed freely; so knowing all of them determines $u$. Taking $f$ to be the coordinate functions is the cheapest way to prescribe it.
-
-The conclusion is that a tangent vector loses nothing by being replaced by the operator it defines --- and the operator, unlike the vector, makes sense with no ambient space in sight. \emph{Tangent vectors will be defined as operators:} you feed them a function and they return a number.
-\end{rembox}
-
-\subsection{Germs}\label{sub:germs}
-
-Point (1) of the note above is made official first: the objects a derivation eats are not functions but germs.
+Point (1) of Proposition~\ref{prop:Dv-properties}, at the end of \ref{sec:tangent}, is made official here: the objects a derivation eats are not functions but germs.
 
 \begin{defbox}[Agreement Near a Point]\deflabel{def:germ-relation}
 Let $M$ be a smooth manifold and $p \in M$. Consider pairs $(f, U)$ with $U \subseteq M$ open, $p \in U$, and $f : U \to \mathbb{R}$ smooth. Two such pairs \textbf{agree near $p$}, written $(f,U) \sim (g,V)$, if
@@ -6548,7 +6550,7 @@ $\gamma_i = \pi_i \circ \gamma$, so $\pi_{i*}D_\gamma = D_{\pi_i \circ \gamma} =
 
 This is the second of Uribe's three views, and it uses the velocities of Assignment~3, Problem~2 (\ref{sub:velocities}).
 
-\section{Tangent Spaces III: The Cotangent Space}\label{sec:cotangent}
+\section{The Cotangent Space}\label{sec:cotangent}
 
 \roadmark{Stage: abstract, dual}{Differentials of functions and the cotangent space: defined as a dual, then recovered from germs alone.}
 
@@ -6597,6 +6599,19 @@ df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p .
 
 \begin{proof}
 \textit{(Lecture~10: ``it suffices to check the identity on basis vectors.'' In lecture the left side came from the matrix of $f_{*p}$ (Theorem~\ref{lem:differential-matrix}), a $1 \times m$ row --- ``remember, gradients are across'', after a student first proposed $m \times 1$ --- whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition~\ref{prop:df-derivation} gives the same value directly.)} By Proposition~\ref{prop:df-derivation}, $dx^i|_p(\partial/\partial x^j|_p) = \partial x^i/\partial x^j(p) = \partial r^i/\partial r^j = \delta^i_j$, which is the defining property of the dual basis (Definition~\ref{def:dual}). Two linear functionals agree if they agree on a basis (Proposition~\ref{fact:linalg}(2)), so it suffices to evaluate both sides of the formula on $\partial/\partial x^j|_p$. The left side gives $\partial f/\partial x^j(p)$, again by Proposition~\ref{prop:df-derivation}; the right side gives $\sum_i \partial f/\partial x^i(p)\,\delta^i_j = \partial f/\partial x^j(p)$.
+\end{proof}
+
+\begin{corbox}[Components of a Covector]\thmlabel{cor:covector-components}
+In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\alpha \in T_p^*M$ is
+\[
+\alpha = \sum_{j=1}^m a_j\, dx^j\big|_p, \qquad a_j = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) .
+\]
+The numbers $a_1, \ldots, a_m$ are the \textbf{components} of $\alpha$ in the chart.
+\leeref{Ch.~11, \emph{Covectors}}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~15 recalled the basis $dx^j|_p$ --- ``a fact that I forgot to mention to remind you'' --- and read off the components by evaluation.)} By Lemma~\ref{lem:df-coords} the $dx^j|_p$ form the basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$, and Proposition~\ref{prop:dual-basis} expands every element of a dual space in the dual basis with the coefficients $\alpha(\partial/\partial x^j|_p)$.
 \end{proof}
 
 \begin{corbox}[Properties of the Differential of a Function]\thmlabel{cor:df-properties}
@@ -6758,6 +6773,10 @@ The isomorphisms are defined without any chart.
 (1) $T_pM$ is finite-dimensional (Theorem~\ref{thm:tangent-basis}) and the pairing is non-degenerate (Proposition~\ref{prop:cotangent-pairing}), so Theorem~\ref{thm:pairing} applies. (2) $\Phi([[f]])(D) = \langle D, [[f]] \rangle = D[f] = df_p(D)$ by Proposition~\ref{prop:df-derivation}. (3) By (2), $\Phi([[x^i - x^i(p)]]) = d(x^i - x^i(p))_p = dx^i|_p$, since a constant has zero differential (Lemma~\ref{lem:derivation-properties}(1)); and the $dx^i|_p$ are dual to the $\partial/\partial x^i|_p$ by Lemma~\ref{lem:df-coords}. Every map in (1) is defined by $\langle D, [[f]] \rangle = D[f]$, which mentions no chart.
 \end{proof}
 
+\begin{rembox}[The Most Natural Description]\label{rem:cotangent-natural}
+Lecture~15 came back to this theorem: ``the cotangent space is, in a way, very extremely natural from the point of view of functions.'' The tangent space needed derivations; the cotangent space needs only functions --- germs vanishing at $p$, modulo those vanishing to second order. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not.
+\end{rembox}
+
 \begin{center}
 \begin{tikzcd}[row sep=1.4em, column sep=3.6em]
 I_p/I_p^2 \arrow[r, "\Phi", "\cong"'] & T_p^*M \arrow[r, dash, "\text{dual to}"] & T_pM \\
@@ -6786,7 +6805,52 @@ Equal dimension is what makes the isomorphisms of Theorem~\ref{thm:cotangent-ide
 
 \textbf{Comparison with Lee.} In the text of Chapter~11, Lee defines the cotangent space as the dual $(T_pM)^*$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem~11-4. Part~(a) is Proposition~\ref{prop:second-order}, down to the phrase ``vanishes to second order'', and part~(b) is Theorem~\ref{thm:cotangent-ideal}(1)--(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition~\ref{prop:germ-global}). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment~3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^*M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual --- the order Uribe called in some ways more natural --- and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem~3-8; here Theorem~\ref{thm:every-vector-velocity}). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
 
-\chapter{Maps of Constant Rank and Bundles}
+
+% ============================================================================
+% Lecture 15 (Mon Oct 5, 2026)
+% ============================================================================
+\subsection{Pulling Back Covectors}\label{sub:pullback-covectors}
+
+\textit{Lecture 15. A smooth map pushes tangent vectors forward; dually, it pulls covectors back. ``Functions pull back by composition, and you can pull back actually any one-form by using the dual map of the forward star.''}
+
+\begin{defbox}[Pullback of Covectors]\deflabel{def:pullback-covector}
+Let $F : M \to N$ be smooth and $p \in M$. The \textbf{pullback of covectors} at $p$ is the dual map (Definition~\ref{def:dual-map}) of the pushforward $F_{*p} : T_pM \to T_{F(p)}N$:
+\[
+F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big(F_{*p}v\big) .
+\]
+\leeref{Ch.~11, \emph{Pullbacks of Covector Fields}}
+\end{defbox}
+
+Directions: points and vectors move \emph{forward} along $F$, from $M$ to $N$; functions and covectors move \emph{backward}, from $N$ to $M$, because they are things that eat --- to evaluate one on $M$, push the input to $N$ and evaluate there.
+
+\begin{rembox}[One Symbol for Two Pullbacks]\label{rem:two-pullbacks}
+The symbol $F_p^*$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ (Definition~\ref{def:germ-pullback}); on covectors it is the dual map $T^*_{F(p)}N \to T_p^*M$ of Definition~\ref{def:pullback-covector}. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^*(dg_{F(p)}) = d\big(F_p^*[g]\big)_p$.
+\end{rembox}
+
+\begin{propbox}[Pullback Commutes with $d$]\thmlabel{prop:pullback-d}
+Let $F : M \to N$ be smooth, $p \in M$, and $f$ smooth near $F(p)$. Then
+\[
+F_p^*\big(df_{F(p)}\big) = d(f \circ F)_p \quad \text{in } T_p^*M .
+\]
+\leeref{Proposition 11.25}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~15 --- ``every equal sign is a definition \ldots\ maybe this is best to be reflected upon at your coffee shop of choice.'')} For $v \in T_pM$:
+\[
+F_p^*\big(df_{F(p)}\big)(v) = df_{F(p)}\big(F_{*p}v\big) = \big(F_{*p}v\big)[f] = v[f \circ F] = d(f \circ F)_p(v) .
+\]
+The first equality is the definition of the dual map; the second, of the differential of a function, applied to the vector $F_{*p}v \in T_{F(p)}N$; the third, of the pushforward; the fourth, of the differential of $f \circ F$. Two covectors that agree on every $v$ are equal.
+\end{proof}
+
+In $\mathbb{R}^n$, with the dot-product identification of the figure above, the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+
+\begin{rembox}[The Two Differentials Meet]\label{rem:pullback-d-chain-rule}
+In $\mathbb{R}^n$, with the dot-product identification of Remark~\ref{rem:differential-not-gradient}, the proposition is the chain rule in the form $\nabla(f \circ F) = J_F^{\mathsf T}\, \nabla f$. Uribe added that the pushforward $F_*$ ``we should have called the differential of $F$ ages ago'': for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{*p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+\end{rembox}
+
+
+\chapter{Maps of Constant Rank and Fibrations}
 
 % ============================================================================
 \section{Local Diffeomorphisms}\label{sec:special-maps}
@@ -7711,182 +7775,9 @@ The fibres over a few values of $t$. The origin, grey, is missing from every fib
 
 \textbf{Transcription note.} Page~35 of the handwritten notes labels the second missing point over $t = 0$ as $(1, 1)$; it is $(1, 0)$.
 
-\subsection{Local Sections}\label{sub:local-sections}
+\subsection{Sections and Local Sections}\label{sub:local-sections}
 
 \textit{From Assignment~4, Problem~4, whose hint --- ``declare that $\Phi_i \circ s_i$ includes $U_i \to U_i \times \{1\}$, and extend the definition of $\Phi_i$ by equivariance'' --- contains a general principle: local trivializations and local sections are two descriptions of the same thing.}
-
-\begin{defbox}[Local Section]\deflabel{def:local-section}
-Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A \textbf{local section} of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
-\leeref{Ch.~10, \emph{Local and Global Sections of Vector Bundles}}
-\end{defbox}
-
-The \emph{global} sections of \ref{sub:sections}, below, are the local sections over $U = B$.
-
-\begin{propbox}[Local Trivializations Give Local Sections]\thmlabel{prop:trivialization-section}
-Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization. For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section over $U$.
-\end{propbox}
-
-\begin{proof}
-\textit{(Not from lecture; filled in.)} $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
-\end{proof}
-
-\section{The Tangent Bundle}\label{sec:tangent-bundle}
-
-\roadmark{Stage: bundles}{All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.}
-
-\textit{Lecture 12. ``Again, these constructions, especially the cotangent [bundle], are basic parts of the basic theory.'' The tangent bundle was introduced as a set, with its projection and zero section; its topology, smooth structure and charts come next lecture.}
-
-\begin{defbox}[The Tangent Bundle as a Set]\deflabel{def:tangent-bundle-set}
-Let $M$ be a smooth manifold of dimension $m$. Its \textbf{tangent bundle} is the set
-\[
-TM = \bigcup_{p \in M} \{p\} \times T_pM = \{\, (p, v) : p \in M,\ v \in T_pM \,\},
-\]
-all the tangent spaces ``put together in one big set.'' It comes with the \textbf{projection} $\pi : TM \to M$, $\pi(p, v) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_pM$ is identified with $T_pM$; and with the \textbf{zero section} $\zeta : M \to TM$, $\zeta(p) = (p, 0)$, which is one-to-one because every tangent space has a distinguished element, its zero.
-\leeref{Ch.~3, \emph{The Tangent Bundle}}
-\end{defbox}
-
-\begin{rembox}[The Picture Changes]\label{rem:picture-changes}
-``There are several psychological inflection steps that one needs to make. The most important one is that we're going to think of $TM$ as fibering over $M$.'' A tangent space is usually drawn touching $M$, lying along it. In the bundle picture it stands \emph{vertically}, as the fibre over its point, and $M$ itself sits horizontally inside $TM$ as the zero section --- the tangent spaces become ``transversal'' to it.
-\end{rembox}
-
-\begin{center}
-\begin{tikzpicture}[scale=0.9]
-\draw[red!70!black, thick] (0,-1.5) rectangle (6,1.5); \node[red!70!black, font=\footnotesize, anchor=south west] at (6.05,1.1) {$TM$};
-\draw[gray!40] (0.70,-1.5) -- (0.70,1.5);
-\draw[gray!40] (1.40,-1.5) -- (1.40,1.5);
-\draw[gray!40] (3.20,-1.5) -- (3.20,1.5);
-\draw[gray!40] (3.90,-1.5) -- (3.90,1.5);
-\draw[gray!40] (4.60,-1.5) -- (4.60,1.5);
-\draw[gray!40] (5.30,-1.5) -- (5.30,1.5);
-\draw[teal!60!black, very thick] (2.3,-1.5) -- (2.3,1.5) node[above, font=\footnotesize] {$\pi^{-1}(p) = T_pM$};
-\draw[orange!85!black, very thick] (0,0) -- (6,0) node[right, font=\footnotesize] {zero section $\zeta(M)$};
-\fill (2.3,0) circle (1.7pt); \node[font=\scriptsize, anchor=north west] at (2.33,-0.02) {$(p, 0)$};
-\fill[teal!60!black] (2.3,0.95) circle (1.5pt) node[right, font=\scriptsize] {$(p, v)$};
-\draw[thick, gray!70] (0,-2.6) -- (6,-2.6) node[right, font=\footnotesize, text=black] {$M$};
-\fill (2.3,-2.6) circle (1.7pt) node[below, font=\scriptsize] {$p$};
-\draw[->, gray!70] (-0.3,-0.6) -- node[left, font=\footnotesize] {$\pi$} (-0.3,-2.4);
-\draw[->, dashed, orange!85!black] (5.0,-2.45) to[bend right=25] node[right, font=\scriptsize] {$\zeta$} (5.0,-0.12);
-\end{tikzpicture}
-\end{center}
-
-The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical line over $p$ (in general a copy of $\mathbb{R}^m$); the point $(p, v)$ lies on it, and the zero section $\zeta$ lifts each $p$ straight up to $(p, 0)$, placing a copy of $M$ horizontally inside $TM$.
-
-
-\textit{Status.} Proposition~\ref{prop:tangent-bundle-claim}, below, was stated in Lecture~12 --- ``the claim, which takes a lot of detail to prove'' --- and made precise in Lecture~13 (\ref{sub:tb-charts}), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; ``putting all that together gives us a map'' $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
-
-\subsection{Trivializations and Charts}\label{sub:tb-charts}
-
-\textit{Lecture 13. ``Back to the tangent bundle.'' $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.}
-
-\begin{defbox}[Trivializations and Charts of $TM$]\deflabel{def:tb-charts}
-Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The \textbf{local trivialization} over $U$ is
-\[
-\Phi : TU \longrightarrow U \times \mathbb{R}^m, \qquad \Phi(p, v) = (p, v^1, \ldots, v^m), \qquad \text{where } v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p ,
-\]
-the components of $v$ in the coordinate basis (Theorem~\ref{thm:tangent-basis}); and the \textbf{chart} of $TM$ is
-\[
-\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
-\]
-Both are bijections, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$ for $\tilde\varphi$; and $\mathrm{pr}_1 \circ \Phi = \pi$ --- ``that's why I call it a trivialization.''
-\leeref{Proposition 3.18}
-\end{defbox}
-
-\begin{center}
-\begin{tikzcd}[column sep=4.6em, row sep=3em]
-TU \arrow[r, "\Phi"] \arrow[dr, "\pi"'] \arrow[rr, bend left=28, "\tilde\varphi"] & U \times \mathbb{R}^m \arrow[r, "\varphi \times \mathrm{id}"] \arrow[d, "\mathrm{pr}_1"] & \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m} \\
-& U &
-\end{tikzcd}
-\end{center}
-
-The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ --- the fibration diagram of Definition~\ref{def:fibration} --- and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.
-
-\begin{propbox}[The Topology of $TM$]\thmlabel{prop:tb-topology}
-There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$.
-\leeref{Lemma 1.35 and Proposition 3.18}
-\end{propbox}
-
-\begin{proof}
-\textit{(Stated in Lecture~13 without proof --- ``it's all point-set topology, and of course everything is in Lee \ldots\ see Lee''; filled in, following Lee's smooth manifold chart lemma.)} Throughout, $(U, \varphi)$ and $(V, \psi)$ denote smooth charts of $M$.
-
-\emph{The transition maps.} The computation in the proof of Proposition~\ref{prop:tb-atlas} below uses only the definitions of the charts, not any topology on $TM$. It shows that $\tilde\psi \circ \tilde\varphi^{-1}$ maps the open set $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ bijectively onto the open set $\psi(U \cap V) \times \mathbb{R}^m$, by a smooth map whose inverse, $\tilde\varphi \circ \tilde\psi^{-1}$, is given by the same formula with the two charts exchanged. So each transition map is a homeomorphism between open subsets of $\mathbb{R}^{2m}$.
-
-\emph{The topology.} Declare $W \subseteq TM$ open if $\tilde\varphi(W \cap TU)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$. This is a topology: $\emptyset$ and $TM$ are open, the latter because $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$ is open; and since each $\tilde\varphi$ is a bijection, it carries unions and finite intersections of subsets of $TU$ to unions and finite intersections of their images.
-
-\emph{Each $TU$ is open, and each $\tilde\varphi$ is a homeomorphism onto an open set.} For any chart $(V, \psi)$, $\tilde\psi(TU \cap TV) = \psi(U \cap V) \times \mathbb{R}^m$ is open, so $TU$ is open. If $W \subseteq TU$ is open, then $\tilde\varphi(W) = \tilde\varphi(W \cap TU)$ is open by definition, so $\tilde\varphi$ is an open map. For continuity, let $O \subseteq \varphi(U) \times \mathbb{R}^m$ be open and $W = \tilde\varphi^{-1}(O)$. For any chart $(V, \psi)$,
-\[
-\tilde\psi(W \cap TV) = \big(\tilde\psi \circ \tilde\varphi^{-1}\big)\Big(O \cap \big(\varphi(U \cap V) \times \mathbb{R}^m\big)\Big),
-\]
-the image of an open set under a homeomorphism between open sets, hence open. So $W$ is open.
-
-\emph{Uniqueness.} Let $\tau'$ be any topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism. If $W \in \tau'$, then $W \cap TU$ is open in $TU$, so $\tilde\varphi(W \cap TU)$ is open, and $W$ is open in the topology above. Conversely, if $W$ is open above, then each $W \cap TU = \tilde\varphi^{-1}\big(\tilde\varphi(W \cap TU)\big)$ is open in $TU$, hence in $\tau'$ since $TU \in \tau'$, and $W = \bigcup_U (W \cap TU) \in \tau'$.
-
-\emph{Locally Euclidean.} Every point of $TM$ lies in some $TU$, which is open and homeomorphic, by $\tilde\varphi$, to an open subset of $\mathbb{R}^{2m}$.
-
-\emph{Hausdorff.} Let $(p, v) \ne (q, w)$. If $p = q$, both points lie in one $TU$, homeomorphic to a subset of the Hausdorff space $\mathbb{R}^{2m}$; disjoint open sets of $TU$ separating them are open in $TM$, because $TU$ is. If $p \ne q$, choose charts with disjoint domains $U \ni p$ and $V \ni q$, possible because $M$ is Hausdorff (shrink the domains, Lemma~\ref{lem:chart-modify}); then $TU$ and $TV$ are disjoint open sets containing the two points.
-
-\emph{Second countable.} Let $\mathcal{B}$ be a countable basis of $M$. For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then in some $B \in \mathcal{B}$ with $p \in B \subseteq U$. So the countably many open sets $TU_B$ cover $TM$. Each is homeomorphic to an open subset of $\mathbb{R}^{2m}$, so has a countable basis, whose members are open in $TM$; the union of these countably many bases is countable and is a basis of $TM$, since any open $W \ni (p, v)$ meets some $TU_B$ containing $(p, v)$ in a set open in $TU_B$.
-\end{proof}
-
-The same argument, word for word, builds the topology of the cotangent bundle (\ref{sub:cotangent-bundle}), with the dual bases in place of the coordinate bases.
-
-\begin{propbox}[The Smooth Atlas of $TM$]\thmlabel{prop:tb-atlas}
-The charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $TM$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$ of $M$, the transition map is
-\[
-\tilde\psi \circ \tilde\varphi^{-1}(r, v) = \Big( \psi \circ \varphi^{-1}(r), \ \ \sum_{j=1}^m \frac{\partial y^1}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j, \ \ldots, \ \sum_{j=1}^m \frac{\partial y^m}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j \Big) .
-\]
-\leeref{Proposition 3.18}
-\end{propbox}
-
-\begin{proof}
-\textit{(Lecture~13: ``the only thing that I want to have a look at is \ldots\ the transition functions of the atlas, because this is how people handle tangent vectors.'' Completed here.)} The domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$. Let $p \in U \cap V$ and $v \in T_pM$, written in both bases:
-\[
-v = \sum_j v^j \frac{\partial}{\partial x^j}\Big|_p = \sum_i w^i \frac{\partial}{\partial y^i}\Big|_p .
-\]
-The first component of the transition is $\psi \circ \varphi^{-1}$, smooth because the charts of $M$ are compatible. For the rest we need the $w$'s in terms of the $v$'s: ``a change of basis formula from 217, which I always forget.'' By the universal formula (Theorem~\ref{thm:tangent-basis}), the $i$-th coefficient of a derivation $D$ in the basis $\partial/\partial y^i|_p$ is $D[y^i]$; applied to $D = \partial/\partial x^j|_p$ it gives
-\[
-\frac{\partial}{\partial x^j}\Big|_p = \sum_i \frac{\partial y^i}{\partial x^j}(p) \frac{\partial}{\partial y^i}\Big|_p, \qquad\text{so}\qquad w^i = \sum_j \frac{\partial y^i}{\partial x^j}(p)\, v^j ,
-\]
-comparing coefficients in the basis $\partial/\partial y^i|_p$. (In lecture Uribe expanded $\partial/\partial y^j$ in the other basis and first solved for the $v$'s --- ``I did it backwards'' --- then took the other direction ``by the same argument''.) With $p = \varphi^{-1}(r)$ this is the displayed formula. The coefficients are smooth functions of $r$: by Proposition~\ref{prop:upstairs-downstairs}, $\partial y^i/\partial x^j(\varphi^{-1}(r)) = \partial(\psi \circ \varphi^{-1})^i/\partial r^j(r)$, the entries of the Jacobian of the transition map of $M$. So the transition map of $TM$ is $(r, v) \mapsto \big(\psi \circ \varphi^{-1}(r), (\psi \circ \varphi^{-1})'(r)\, v\big)$, smooth.
-\end{proof}
-
-\begin{center}
-\begin{tikzcd}[column sep=5.4em, row sep=3em]
-& TU \cap TV \arrow[dl, "\tilde\varphi"'] \arrow[dr, "\tilde\psi"] & \\
-\varphi(U \cap V) \times \mathbb{R}^m \arrow[rr, "{(r, v) \,\mapsto\, (\psi \circ \varphi^{-1}(r),\ (\psi \circ \varphi^{-1})'(r)\, v)}"'] & & \psi(U \cap V) \times \mathbb{R}^m
-\end{tikzcd}
-\end{center}
-
-The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.
-
-The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more --- the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
-
-\begin{corbox}[The Tangent Bundle Is a Fibration]\thmlabel{cor:tb-fibration}
-With the smooth structure of Proposition~\ref{prop:tb-atlas}:
-\begin{enumerate}
-    \item $TM$ is a smooth manifold of dimension $2m$, and $\pi : TM \to M$ is smooth;
-    \item the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
-    \item the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
-\end{enumerate}
-With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tangent-bundle-claim} below in full.
-\end{corbox}
-
-\begin{proof}
-\textit{((1) and (2) are the lecture's observations --- ``in these coordinates, the projection is just projection onto the first $m$ components \ldots\ so we get a beautiful fibration''; the details and (3) are filled in.)} (1) In the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, which is smooth. (2) $\Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi$ is a composite of diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), and $\mathrm{pr}_1 \circ \Phi = \pi$; the $TU$ cover $TM$, the $U$ cover $M$. On $T_pM$, $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\tilde\varphi$, $\zeta(M) \cap TU = \{v^1 = \cdots = v^m = 0\}$, so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ (Definition~\ref{def:submanifold}).
-\end{proof}
-\begin{propbox}[The Tangent Bundle Is a Manifold (Claim)]\thmlabel{prop:tangent-bundle-claim}
-$TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
-\leeref{Proposition 3.18}
-\end{propbox}
-
-\begin{proof}[Proof]
-Proposition~\ref{prop:tb-topology} gives the topology, and Corollary~\ref{cor:tb-fibration} the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
-\end{proof}
-
-\begin{rembox}[Vector Bundles]\label{rem:vector-bundles}
-$TM$ is in fact a \emph{vector bundle}: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. Uribe postponed the general definition --- ``it takes another 10 minutes of axioms'' --- but these are the two features: ``the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise.'' Vector bundles are ``fun objects'' in their own right; K-theory is built from them.
-\end{rembox}
-
-\subsection{Sections and Vector Fields}\label{sub:sections}
 
 \begin{defbox}[Section]\deflabel{def:section}
 Let $\pi : E \to B$ be a fibration. A \textbf{section} of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: ``if you first go up and then down, you get the identity on the base.'' It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
@@ -7928,42 +7819,20 @@ A section goes up, the projection comes down, and the round trip is the identity
 
 The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once --- at $s(b)$ in the fibre over $b$ --- so its image $s(B)$ is ``a copy of $B$'' inside $E$.
 
-
-That the Hopf fibration has no global section is recorded in Section~\ref{sec:ex-hopf}.
-
-
-\begin{defbox}[Vector Field]\deflabel{def:vector-field}
-A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
-\leeref{Ch.~8, \emph{Vector Fields}}
+\begin{defbox}[Local Section]\deflabel{def:local-section}
+Let $\pi : E \to B$ be smooth and $U \subseteq B$ open. A \textbf{local section} of $\pi$ over $U$ is a smooth map $s : U \to E$ with $\pi \circ s = \mathrm{id}_U$.
+\leeref{Ch.~10, \emph{Local and Global Sections of Vector Bundles}}
 \end{defbox}
 
-\textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
+A section in the sense of Definition~\ref{def:section} is a local section over $U = B$; to stress the difference, it is also called a \emph{global} section.
 
-\subsection{The Cotangent Bundle}\label{sub:cotangent-bundle}
-
-\begin{defbox}[The Cotangent Bundle]\deflabel{def:cotangent-bundle}
-The \textbf{cotangent bundle} of $M$ is
-\[
-T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M,
-\]
-with projection $\pi(p, \xi) = p$. For a chart $(U, \varphi = (x^i))$ of $M$, its chart is $(p, \xi) \mapsto (x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m)$, where $\xi = \sum_i \xi_i\, dx^i|_p$ in the dual basis (Definition~\ref{def:cotangent}).
-\leeref{Proposition 11.9}
-\end{defbox}
-
-\begin{propbox}[The Cotangent Transition Maps]\thmlabel{prop:cotangent-transition}
-For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
-\[
-dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
-\]
-So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components, and the charts of $T^*M$ form a smooth atlas making $\pi : T^*M \to M$ a vector bundle with fibre $\mathbb{R}^m$.
-\leeref{Proposition 11.9}
+\begin{propbox}[Local Trivializations Give Local Sections]\thmlabel{prop:trivialization-section}
+Let $\pi : E \to B$ be a fibration with fibre $F$, and $\phi : \pi^{-1}(U) \to U \times F$ a local trivialization. For every $f_0 \in F$, the map $s(u) = \phi^{-1}(u, f_0)$ is a local section over $U$.
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~13: ``completely analogous'', with the change ``we use the dual basis'', and the formula for $dx^i$ given; the rest is filled in.)} The formula for $dx^i|_p$ is Lemma~\ref{lem:df-coords} applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in Proposition~\ref{prop:tb-atlas}; the fibration and linearity statements follow as in Corollary~\ref{cor:tb-fibration}.
+\textit{(Not from lecture; filled in.)} $s$ is smooth, a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$; and $\pi(s(u)) = \mathrm{pr}_1\big(\phi(s(u))\big) = \mathrm{pr}_1(u, f_0) = u$, because $\pi = \mathrm{pr}_1 \circ \phi$.
 \end{proof}
-
-``We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.'' $TM$ and $T^*M$ are isomorphic as vector bundles, ``but not naturally isomorphic --- we have to make choices to construct an isomorphism'' (a metric, for instance, as in the remark on conormal spaces). This is stated, not proved, here.
 
 \section{Immersions}\label{sec:immersions}
 
@@ -8516,9 +8385,6 @@ and the trivialization $\Psi_{s_i}^{-1}$ it gives is the one of Example~\ref{ex:
 \textit{(Assignment~4, Problem~4; the global statement is the fact of Remark~\ref{rem:sections-need-not-exist} above, stated there without proof.)} $\hat z$ is independent of the representative $z$, smooth in the chart $\varphi_i$ (it is $\varphi_i([z])$ with a $1$ inserted in slot~$i$), and nonzero, so $s_i$ is smooth and lands in $S^{2n+1}$; it spans the line of $z$, so $\pi \circ s_i = \mathrm{id}$. For $|z| = 1$ with $z_i \neq 0$, $s_i([z]) = \bar z_i z / |z_i|$, so $\langle z, s_i([z]) \rangle = z_i \langle z, z \rangle / |z_i| = z_i/|z_i|$. By Proposition~\ref{prop:hopf-section-trivialization} a global section would make $\pi$ globally trivial, $S^{2n+1} \cong \mathbb{CP}^n \times S^1$; that this is impossible for $n \ge 1$ is the fact of Remark~\ref{rem:sections-need-not-exist}.
 \end{proof}
 
-\begin{rembox}[The Same Principle Elsewhere]\label{rem:same-principle-elsewhere}
-For the tangent bundle the dictionary is between trivializations and \emph{frames}: the trivialization $\Phi$ of a chart (Definition~\ref{def:tb-charts}) corresponds to the $m$ local sections $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example~10.18 and Proposition~10.19). For the Hopf fibration one section suffices because the fibre is a single orbit of the free $S^1$-action. That is the general pattern of \emph{principal bundles}, where a group acts freely and transitively on each fibre; it is stated here, not proved.
-\end{rembox}
 \section{\texorpdfstring{$\mathrm{SU}(2) \to \SO(3)$}{SU(2) -> SO(3)}: The Double Cover}\label{sec:double-cover}
 
 \roadmark{Stage: maps}{One example that uses everything so far: submanifolds, embeddings, local diffeomorphisms, and translation in a group.}
@@ -8956,6 +8822,953 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 $G$ is a local diffeomorphism that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\SO(3)$ are indistinguishable --- their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ --- but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\SO(3) \cong \mathbb{RP}^3$. Every fibre $G^{-1}(A) = \{\pm g\}$ is two points, and $G$ is a proper surjective submersion onto the connected $\SO(3)$, so Ehresmann's theorem (Theorem~\ref{thm:ehresmann}, stated without proof) makes it a fibration whose fibre is two points: a double cover. The smooth version of the last statement --- that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ --- needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism, and is not proved here.
 \end{rembox}
 
+\chapter{Bundles and Vector Fields}
+
+% ============================================================================
+% SECTION: RECAP: GERMS, DERIVATIONS AND TANGENT VECTORS
+% ============================================================================
+
+\section{Recap: Germs, Derivations and Tangent Vectors}\label{sec:recap-tangent}
+
+\roadmark{Stage: recap}{Chapter~4's road from arrows to derivations, retraced in one place before tangent vectors are gathered into bundles and fields.}
+
+\textit{Not from lecture: a recap written for these notes at the start of the chapter on bundles and vector fields. Nothing here is new. Every object is defined, and every fact proved, where the cross-reference points; this section puts them in order and says why each step was taken.}
+
+\textbf{The problem.} On a surface in $\mathbb{R}^3$ a tangent vector is an arrow: the velocity of a curve that stays on the surface (Definition~\ref{def:geometric-tangent}). An abstract manifold, built from charts or as a quotient, sits in no ambient space, so there is nowhere for an arrow to live. The course solved this by keeping not the arrow but \emph{what the arrow does to functions}. Six steps lead from one to the other.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:geometric-tangent} (Geometric Tangent Space).} The \textbf{geometric} (or \textbf{ambient}) \textbf{tangent space} to $M$ at $p$ is
+\[
+T^{\geo}_pM \;=\; \Big\{\, \gamma'(0) \;\Big|\; \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^{n+k} \text{ smooth},\ \varepsilon > 0,\ \gamma\big((-\varepsilon,\varepsilon)\big) \subseteq M,\ \gamma(0) = p \,\Big\} \subseteq \mathbb{R}^{n+k},
+\]
+where $\gamma'(0) = \frac{d\gamma}{dt}\big|_{t=0}$ is the ordinary derivative of a curve in $\mathbb{R}^{n+k}$. In words: $T^{\geo}_pM$ is the set of velocities at $p$ of smooth curves that pass through $p$ while staying on $M$. The same definition applies verbatim with $\mathbb{R}^{n+k}$ replaced by any finite-dimensional real vector space containing $M$, such as $\Mat(n,\mathbb{R})$, with $\gamma'(0)$ computed in that space.
+\end{quote}
+
+\textbf{Step 1: an arrow differentiates functions.} For a geometric tangent vector $v$ at $p$ and a function $f$ near $p$, the number
+\[
+D_v(f) = \frac{d}{dt}\Big|_{t=0} f(\gamma(t))
+\]
+is the rate of change of $f$ along a curve $\gamma$ through $p$ with velocity $v$ (Definition~\ref{def:Dv}). The map $f \mapsto D_v(f)$ is linear and obeys the product rule (Proposition~\ref{prop:Dv-properties}), and it determines $v$ (Proposition~\ref{prop:Dv-determines-v}). So nothing is lost by remembering only how $v$ acts on functions.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:Dv} (The Directional Derivative Attached to a Tangent Vector).} Let $M \subseteq \mathbb{R}^{n+k}$ be the graph of a smooth $G : A \to \mathbb{R}^k$ on an open $A \subseteq \mathbb{R}^n$, with chart $\varphi(x, G(x)) = x$, and $p = (x_0, G(x_0))$. Let $v \in T^{\geo}_pM$, let $u \in \mathbb{R}^n$ be the vector with $v = (u, G'(x_0)u)$ (Lemma~\ref{lem:tangent-graph}), and let $\gamma(t) = (x_0 + tu, G(x_0 + tu))$ be the lifted line, a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = v$. For $f$ a smooth real-valued function on a neighbourhood of $p$ in $M$, set
+\[
+D_v(f) \;=\; \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) \;=\; \frac{d}{dt}\Big|_{t=0} f_\varphi(x_0 + tu) \;=\; u \cdot \nabla f_\varphi(x_0),
+\]
+the second equality because $\varphi(\gamma(t)) = x_0 + tu$ and $f = f_\varphi \circ \varphi$, the third by the chain rule. So $D_v$ takes a smooth function defined near $p$ and returns a real number, and it depends only on the values of $f$ near $p$ --- which is what the germs of the next subsection make precise.
+\end{quote}
+
+\textbf{Step 2: only the behaviour near $p$ matters, so use germs.} $D_v(f)$ depends on $f$ only on a neighbourhood of $p$, however small. Two functions defined near $p$ \emph{agree near $p$} if they coincide on some open set around $p$ (Definition~\ref{def:germ-relation}); a \emph{germ} at $p$ is an equivalence class $[f]$ of this relation, and $C^\infty_p(M)$ is the set of germs (Definition~\ref{def:germ}). A germ remembers $f$ near $p$ without committing to a particular neighbourhood --- no single neighbourhood serves every representative (Example~\ref{ex:germ-no-common-nbhd}). Germs can be added and multiplied, and evaluated at $p$: $[f](p) = f(p)$ (Proposition~\ref{prop:germ-algebra}). The germs vanishing at $p$ form the ideal $I_p$ (Definition~\ref{def:Ip}), which returns in the cotangent space.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:germ-relation} (Agreement Near a Point).} Let $M$ be a smooth manifold and $p \in M$. Consider pairs $(f, U)$ with $U \subseteq M$ open, $p \in U$, and $f : U \to \mathbb{R}$ smooth. Two such pairs \textbf{agree near $p$}, written $(f,U) \sim (g,V)$, if
+\[
+\text{there is an open } W \text{ with } p \in W \subseteq U \cap V \text{ and } f|_W = g|_W .
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:germ} (Germs of Smooth Functions).} An equivalence class $[f]$ of the relation $\sim$ of Definition~\ref{def:germ-relation} is a \textbf{(}$C^\infty$\textbf{) germ at $p$}, and each pair $(f,U)$ in it is a \textbf{representative} of the germ. The set of all germs at $p$ is denoted $C_p^\infty(M)$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:Ip} (The Ideal of Germs Vanishing at a Point).} The \textbf{ideal of germs vanishing at $p$} is
+\[
+I_p = \{\, [f] \in C_p^\infty(M) \mid f(p) = 0 \,\},
+\]
+the kernel of evaluation at $p$ (Definition~\ref{def:germ-evaluation}). Its \textbf{square} $I_p^2$ is the set of all finite sums $\sum_k [u_k][w_k]$ of products of two elements of $I_p$, the empty sum $0$ included.
+\end{quote}
+
+\textbf{Step 3: a tangent vector is a derivation.} The two properties of $D_v$ become the definition. A \emph{derivation at $p$} is a linear map $D : C^\infty_p(M) \to \mathbb{R}$ with the Leibniz rule $D([f][g]) = f(p)\,D[g] + g(p)\,D[f]$ (Definition~\ref{def:derivation}), and the \emph{tangent space} $T_pM$ is the vector space of all derivations at $p$ (Definition~\ref{def:abstract-tangent}). A tangent vector is therefore a machine: feed it a germ at $p$, and it returns a number. Lee lets derivations act on global functions $C^\infty(M)$ instead of germs; the two spaces are canonically isomorphic (Proposition~\ref{prop:germ-global}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:derivation} (Derivation at a Point).} Let $M$ be a smooth manifold and $p \in M$. A \textbf{derivation at $p$} is an $\mathbb{R}$-linear map
+\[
+D : C_p^\infty(M) \longrightarrow \mathbb{R}
+\]
+satisfying the \textbf{Leibniz rule}
+\[
+D\big([f][g]\big) \;=\; f(p)\, D[g] \;+\; g(p)\, D[f] \qquad \text{for all } [f], [g] \in C_p^\infty(M),
+\]
+where $f(p) = [f](p)$ is the evaluation of Proposition~\ref{prop:germ-algebra}.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:abstract-tangent} (The Abstract Tangent Space).} The \textbf{(abstract) tangent space} to $M$ at $p$ is
+\[
+T_pM \;=\; \{\, \text{all derivations at } p \,\},
+\]
+a real vector space under the pointwise operations $(D + D')[f] = D[f] + D'[f]$ and $(\lambda D)[f] = \lambda\, D[f]$. An element $D \in T_pM$ is a \textbf{tangent vector} at $p$. It is not an arrow in any ambient space but a function on germs, $D : C^\infty_p(M) \to \mathbb{R}$, so $D[f]$ is a real number for each germ $[f]$ at $p$.
+\end{quote}
+
+\textbf{Step 4: coordinates give a basis.} In a chart $(U, \varphi = (x^1, \ldots, x^m))$, the \emph{coordinate derivation} $\partial/\partial x^i|_p$ takes the $i$-th partial derivative of the coordinate representation $f \circ \varphi^{-1}$ at $\varphi(p)$ (Definition~\ref{def:coordinate-derivation}). The Basis Theorem says these $m$ derivations form a basis of $T_pM$, and the \emph{universal formula} gives the components of any $D$: they are the values of $D$ on the coordinate functions,
+\[
+D = \sum_{i=1}^m D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p
+\]
+(Theorem~\ref{thm:tangent-basis}). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism (Theorem~\ref{thm:ambient-abstract}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:coordinate-derivation} (Coordinate Derivations).} Let $(U,\varphi)$ be a smooth chart with $p \in U$, with coordinate functions $x^1, \ldots, x^n$ (Definition~\ref{def:coordinate-functions}), and let $i \in \{1,\ldots,n\}$. Define $\dfrac{\partial}{\partial x^i}\Big|_p : C_p^\infty(M) \to \mathbb{R}$ by
+\[
+\frac{\partial}{\partial x^i}\Big|_p [f] \;:=\; \frac{\partial f_\varphi}{\partial r^i}\big(\varphi(p)\big),
+\]
+the ordinary $i$-th partial derivative at $\varphi(p)$ of the coordinate representation $f_\varphi = f \circ \varphi^{-1}$. For a function $f$ smooth near $p$ we also write
+\[
+\frac{\partial f}{\partial x^i}(p) \;:=\; \frac{\partial}{\partial x^i}\Big|_p [f] \;=\; \frac{\partial f_\varphi}{\partial r^i}\big(\varphi(p)\big),
+\]
+the \textbf{partial derivative} of $f$ with respect to the coordinate $x^i$. It is defined by going downstairs: there is no other way to differentiate a function on a manifold with respect to a coordinate.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:tangent-basis} (Basis Theorem).} Let $M$ be a smooth $n$-manifold, $p \in M$, and $(U, \varphi)$ any smooth chart with $p \in U$. Then
+\[
+\left\{ \frac{\partial}{\partial x^1}\Big|_p, \ \ldots, \ \frac{\partial}{\partial x^n}\Big|_p \right\}
+\]
+is a basis of $T_pM$; in particular $\dim T_pM = n$. Explicitly, every derivation $D$ at $p$ satisfies the \textbf{universal formula}
+\[
+D \;=\; \sum_{i=1}^n D\big[x^i\big]\, \frac{\partial}{\partial x^i}\Big|_p .
+\]
+\end{quote}
+
+\textbf{Step 5: maps push vectors forward.} Let $F : M \to N$ be smooth. Germs travel \emph{backwards} along $F$: a germ $[g]$ at $F(p)$ pulls back to the germ $F_p^*[g] = [g \circ F]$ at $p$ (Definition~\ref{def:germ-pullback}). Tangent vectors then travel \emph{forwards}: the \emph{pushforward}, or \emph{differential}, of $F$ at $p$ is
+\[
+F_{*p} : T_pM \to T_{F(p)}N, \qquad (F_{*p}D)[g] = D\big(F_p^*[g]\big) = D[g \circ F]
+\]
+(Definition~\ref{def:pushforward}) --- to see how $F_{*p}D$ differentiates $g$, pull $g$ back and let $D$ differentiate it. The chain rule is $(G \circ F)_{*p} = G_{*F(p)} \circ F_{*p}$ (Theorem~\ref{prop:pushforward-functorial}). In charts the matrix of $F_{*p}$ is the Jacobian of the coordinate representation (Theorem~\ref{lem:differential-matrix}, with Proposition~\ref{prop:upstairs-downstairs}), and on open subsets of Euclidean space $F_{*p}$ \emph{is} the ordinary derivative, the differential $dF_p$ of Definition~\ref{def:vs-differential} (Proposition~\ref{prop:differential-agree}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:germ-pullback} (Pullback of Germs).} Let $F : M \to N$ be a smooth map between smooth manifolds, and $p \in M$, so that $F(p)$ is a point of $N$. Let $[g] \in C^\infty_{F(p)}(N)$ be a germ \emph{at the point $F(p)$ of $N$}, with a representative $(g, V)$: $V \subseteq N$ is open with $F(p) \in V$, and $g : V \to \mathbb{R}$ is smooth. Then $F^{-1}(V)$ is an open neighbourhood of $p$ in $M$, and $g \circ F : F^{-1}(V) \to \mathbb{R}$ is smooth (Lemma~\ref{lem:composition-smooth}), so $(g \circ F, F^{-1}(V))$ represents a germ at $p$ on $M$. The \textbf{pullback} of germs along $F$ at $p$ is the map
+\[
+F_p^* : C^\infty_{F(p)}(N) \longrightarrow C^\infty_p(M), \qquad F_p^*[g] = [\,g \circ F\,],
+\]
+which takes a germ on $N$ at $F(p)$ to a germ on $M$ at $p$. It does not depend on the representative $(g, V)$ (Proposition~\ref{prop:pullback-properties}).
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:pushforward} (Pushforward --- the Differential).} Let $F : M \to N$ be smooth and $p \in M$, and let $D \in T_pM$ be a tangent vector at $p$ --- that is, a derivation at $p$, a linear map $D : C^\infty_p(M) \to \mathbb{R}$ satisfying the Leibniz rule. The \textbf{pushforward} of $D$ along $F$ is the map
+\[
+F_{*p}D : C^\infty_{F(p)}(N) \longrightarrow \mathbb{R}, \qquad \big(F_{*p}D\big)[g] \;:=\; D\big(F_p^*[g]\big) = D[\,g \circ F\,],
+\]
+defined on germs $[g]$ at $F(p)$ on $N$: pull the germ back to $p$, then apply $D$. In one line, $F_{*p}D = D \circ F_p^*$. It is a derivation at $F(p)$, i.e.\ an element of $T_{F(p)}N$ (Proposition~\ref{prop:pushforward-derivation}). Letting $D$ vary gives the \textbf{pushforward}, or \textbf{differential}, of $F$ at $p$,
+\[
+F_{*p} : T_pM \longrightarrow T_{F(p)}N, \qquad D \longmapsto F_{*p}D,
+\]
+a map from tangent vectors at $p$ in $M$ to tangent vectors at $F(p)$ in $N$, also written $dF_p$. (Uribe: ``the awkward notation $F_{*p}$.'') So $F_{*p}$ acts on derivations; its value $F_{*p}D$ is again a derivation, which acts on germs at $F(p)$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:vs-differential} (The Differential).} Let $F : X \to Y$ be smooth and $p \in X$. Choose linear coordinates $L$ on $X$ and $K$ on $Y$, let $\widetilde F = K \circ F \circ L^{-1}$ be the coordinate representation (Definition~\ref{def:linear-coords}), and put $\tilde p = L(p)$. The \textbf{differential} of $F$ at $p$ is the unique linear map $dF_p : X \to Y$ making the square commute:
+\[
+\begin{tikzcd}[row sep=2.2em, column sep=3.6em]
+X \arrow[r, "dF_p"] \arrow[d, "L"'] & Y \arrow[d, "K"] \\
+\mathbb{R}^m \arrow[r, "\widetilde F'(\tilde p)"'] & \mathbb{R}^n
+\end{tikzcd}
+\qquad\qquad dF_p = K^{-1} \circ \widetilde F'(\tilde p) \circ L.
+\]
+\end{quote}
+
+\textbf{Step 6: back to arrows, through curves.} A smooth curve $\gamma$ with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{*0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ (Definition~\ref{def:velocity}), and every tangent vector is the velocity of some curve (Theorem~\ref{thm:every-vector-velocity}). So the arrow picture survives on every manifold, as ``the velocity of a curve'', even where there is no ambient space to draw the arrow in.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:velocity} (Smooth Curve and Its Velocity).} Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A \textbf{smooth curve} in $M$ is a smooth map $\gamma : J \to M$. If $\gamma(0) = p$, the \textbf{velocity} of $\gamma$ at $0$ is the abstract tangent vector
+\[
+D_\gamma = \gamma_{*0}\Big(\frac{d}{dt}\Big|_0\Big) \in T_pM, \qquad\text{explicitly}\qquad D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big).
+\]
+\end{quote}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.24\textwidth} p{0.3\textwidth} p{0.36\textwidth}}
+\hline
+Object & What it is & What it does \\
+\hline
+germ $[f]$ at $p$ & $f$ near $p$, neighbourhood forgotten & has a value $f(p)$; can be differentiated \\
+tangent vector $D \in T_pM$ & a derivation at $p$ & eats a germ at $p$, returns $D[f] \in \mathbb{R}$ \\
+$\partial/\partial x^i|_p$ & a coordinate derivation & returns the $i$-th partial in the chart \\
+$F_p^*$ & pullback of germs & germ at $F(p)$ $\mapsto$ germ at $p$ \\
+$F_{*p}$ & pushforward (differential) of $F$ & vector at $p$ $\mapsto$ vector at $F(p)$ \\
+$D_\gamma$ & velocity of a curve & the arrow picture, on any manifold \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{exbox}[Vectors in the Plane in Three Ways]\exlabel{ex:recap-vectors-plane}
+On $M = \mathbb{R}^2$ with coordinates $(x, y)$, let $p = (1, 2)$, $f(x, y) = x^2 y$, and
+\[
+v = 3\,\frac{\partial}{\partial x}\Big|_p - \frac{\partial}{\partial y}\Big|_p \in T_pM .
+\]
+\begin{enumerate}
+    \item \emph{As a derivation.} $v[f] = 3\, \partial_x f(p) - \partial_y f(p) = 3 \cdot 2xy\big|_p - x^2\big|_p = 3 \cdot 4 - 1 = 11$.
+    \item \emph{As a velocity.} The curve $\gamma(t) = (1 + 3t,\ 2 - t)$ has $\gamma(0) = p$ and velocity $v$, since $D_\gamma[x] = 3$ and $D_\gamma[y] = -1$ (universal formula). Indeed $f(\gamma(t)) = (1 + 3t)^2 (2 - t)$, whose derivative at $t = 0$ is $2 \cdot 3 \cdot 2 - 1 = 11$.
+    \item \emph{Pushed forward.} Let $F : \mathbb{R}^2 \to \mathbb{R}^2$, $F(x, y) = (x^2,\ x + y)$, with coordinates $(u, w)$ on the target, so $F(p) = (1, 3)$. The Jacobian at $p$ is $\begin{pmatrix} 2x & 0 \\ 1 & 1 \end{pmatrix}_p = \begin{pmatrix} 2 & 0 \\ 1 & 1 \end{pmatrix}$, so
+    \[
+    F_{*p} v = (2 \cdot 3 + 0)\, \frac{\partial}{\partial u}\Big|_{F(p)} + (3 - 1)\, \frac{\partial}{\partial w}\Big|_{F(p)} = 6\, \frac{\partial}{\partial u} + 2\, \frac{\partial}{\partial w} .
+    \]
+    By the definition instead: $(F_{*p}v)[u] = v[u \circ F] = v[x^2] = 3 \cdot 2 = 6$ and $(F_{*p}v)[w] = v[x + y] = 3 - 1 = 2$, the same components by the universal formula.
+\end{enumerate}
+The example continues with covectors in Example~\ref{ex:recap-covectors-plane}.
+\end{exbox}
+
+
+% ============================================================================
+% SECTION: RECAP: COVECTORS AND THE FOUR DIFFERENTIALS
+% ============================================================================
+
+\section{Recap: Covectors and the Four Differentials}\label{sec:recap-objects}
+
+\roadmark{Stage: recap}{Covectors, the differential of a function, pullbacks --- and the four objects that the course calls ``the differential'', side by side.}
+
+\textit{Not from lecture: a recap written for these notes, continuing \ref{sec:recap-tangent}. Nothing here is new; every object is defined, and every fact proved, where the cross-reference points.}
+
+Keep one picture in mind: $M$ is a surface, $f$ is the temperature on it, and you are walking on it. A tangent vector is a direction to walk in. This section is about the objects that \emph{eat} directions.
+
+\textbf{Step 1: covectors are linear functions on a vector space.} The dual space $V^*$ of a vector space $V$ consists of the linear maps $V \to \mathbb{R}$, its elements are called \emph{covectors}, and a basis $(e_i)$ of $V$ has a dual basis $(\varepsilon^i)$ with $\varepsilon^i(e_j) = \delta^i_j$ (Definition~\ref{def:dual}). Components come out by evaluation, $\lambda = \sum_i \lambda(e_i)\, \varepsilon^i$ (Proposition~\ref{prop:dual-basis}). A linear map $A : V \to W$ has a dual map $A^* : W^* \to V^*$, $A^*\lambda = \lambda \circ A$, which goes \emph{backwards} (Definition~\ref{def:dual-map}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:dual} (Dual Space and Dual Basis).} The \textbf{dual space} of $V$ is $V^* = \{\lambda : V \to \mathbb{R} \mid \lambda \text{ linear}\}$, a vector space under pointwise operations; its elements are \textbf{linear functionals}, or \textbf{covectors}. If $(e_1, \ldots, e_n)$ is a basis of $V$, the \textbf{dual basis} $(\varepsilon^1, \ldots, \varepsilon^n)$ consists of the covectors with
+\[
+\varepsilon^i(e_j) = \delta^i_j ,
+\]
+which exist and are unique by Proposition~\ref{fact:linalg}(2).
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:dual-map} (Dual Map).} The \textbf{dual map}, or \textbf{transpose}, of a linear map $A : V \to W$ is
+\[
+A^* : W^* \to V^*, \qquad A^*(\lambda) = \lambda \circ A .
+\]
+\end{quote}
+
+\textbf{Step 2: the cotangent space.} At $p \in M$, $T_p^*M = (T_pM)^*$ (Definition~\ref{def:cotangent}). A covector $\alpha \in T_p^*M$ eats a direction $v \in T_pM$ and returns a number $\alpha(v)$: think of it as a price list for the first step of a walk.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:cotangent} (Cotangent Space and the Differential of a Function).} Let $M$ be a smooth manifold and $p \in M$. The \textbf{cotangent space} of $M$ at $p$ is the dual of the abstract tangent space,
+\[
+T_p^*M = (T_pM)^* .
+\]
+For a smooth $f : M \to \mathbb{R}$ (or one defined only near $p$), the \textbf{differential} of $f$ at $p$ is $df_p = f_{*p} : T_pM \to T_{f(p)}\mathbb{R} \cong \mathbb{R}$. Here $T_{f(p)}\mathbb{R}$ is identified with $\mathbb{R}$ by $c\,\partial/\partial r|_{f(p)} \mapsto c$, the derivation $\partial/\partial r|_{f(p)}$ being a basis (Theorem~\ref{thm:tangent-basis}). So $df_p$ takes a tangent vector $D \in T_pM$ and returns a number, $df_p(D) = D[f]$ (Proposition~\ref{prop:df-derivation}); it is linear, so $df_p \in T_p^*M$.
+\end{quote}
+
+\textbf{Step 3: a function produces a covector, its differential.} The \emph{differential} of $f$ at $p$ is the covector
+\[
+df_p \in T_p^*M, \qquad df_p(v) = v[f]
+\]
+(Definition~\ref{def:cotangent} and Proposition~\ref{prop:df-derivation}): feed it a direction, and it returns how fast the temperature changes that way. Officially $df_p$ is the pushforward $f_{*p} : T_pM \to T_{f(p)}\mathbb{R}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$, so it is the differential of Step~5 of \ref{sec:recap-tangent} for the special target $N = \mathbb{R}$. In a chart the differentials $dx^i|_p$ of the coordinate functions form the basis dual to $\partial/\partial x^i|_p$, and
+\[
+df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p
+\]
+(Lemma~\ref{lem:df-coords}); the components of any covector are found by evaluation, $\alpha = \sum_j \alpha(\partial/\partial x^j|_p)\, dx^j|_p$ (Corollary~\ref{cor:covector-components}). This is the formula of multivariable calculus, but $df_p$ is \emph{not} the gradient: turning the covector $df_p$ into a vector needs an inner product, which a manifold does not come with (Remark~\ref{rem:differential-not-gradient}). In $\mathbb{R}^n$ with the dot product, $df_p(v) = \nabla f(p) \cdot v$.
+
+\begin{quote}
+\textbf{Recall: Lemma~\ref{lem:df-coords} (The Differential in Coordinates).} Let $(x^1, \ldots, x^m)$ be coordinates near $p$, and write $dx^i|_p$ for the differential at $p$ of the coordinate function $x^i$. Then $\{dx^1|_p, \ldots, dx^m|_p\}$ is the dual basis of $\{\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p\}$, so $\dim T_p^*M = m$ (Proposition~\ref{prop:dual-basis}), and for every smooth $f$ defined near $p$,
+\[
+df_p = \sum_{i=1}^m \frac{\partial f}{\partial x^i}(p)\, dx^i\big|_p .
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Corollary~\ref{cor:covector-components} (Components of a Covector).} In a chart $(x^1, \ldots, x^m)$ near $p$, every covector $\alpha \in T_p^*M$ is
+\[
+\alpha = \sum_{j=1}^m a_j\, dx^j\big|_p, \qquad a_j = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) .
+\]
+The numbers $a_1, \ldots, a_m$ are the \textbf{components} of $\alpha$ in the chart.
+\end{quote}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\begin{scope}
+\clip (-1.7,-1.9) rectangle (2.7,2.3);
+\foreach \c in {-4,...,6} \draw[violet!55, thick] ({(\c+2)/2},-2) -- ({(\c-2.4)/2},2.4);
+\end{scope}
+\draw[gray!60] (-1.7,-1.9) rectangle (2.7,2.3);
+\foreach \c in {0,1,2,3} \node[violet!75!black, font=\scriptsize] at ({(\c-2.45)/2+0.13},2.48) {$\c$};
+\fill (0,0) circle (1.6pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, very thick, teal!65!black] (0,0) -- (1,1) node[above right, font=\scriptsize] {$v$};
+\draw[->, very thick, orange!85!black] (0,0) -- (0.6,-1.2) node[below right, font=\scriptsize] {$w$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.9,0.9) {$\alpha = 2\,dx + dy$:\\ the lines $\alpha = 0, 1, 2, 3, \ldots$};
+\node[font=\scriptsize, align=left, anchor=west, teal!65!black] at (2.9,0.0) {$\alpha(v) = 3$: $v$ crosses three lines};
+\node[font=\scriptsize, align=left, anchor=west, orange!85!black] at (2.9,-0.6) {$\alpha(w) = 0$: $w$ runs along them};
+\end{tikzpicture}
+\end{center}
+
+A covector drawn as a stack of parallel lines. In $\mathbb{R}^2$ (or in one tangent space, after choosing a basis) the covector $\alpha = 2\,dx + dy$ is pictured by its level lines $\{\alpha = 0\}, \{\alpha = 1\}, \ldots$; its value on an arrow is the number of lines the arrow crosses, with sign. $v = \partial_x + \partial_y$ crosses three, so $\alpha(v) = 3$; $w = 0.6\,\partial_x - 1.2\,\partial_y$ runs along the lines, so $\alpha(w) = 0$. For $\alpha = df_p$ the lines are the level sets of the linear approximation of $f$ at $p$: closely spaced lines mean a steep $f$. An arrow and a stack of lines are different kinds of objects; only an inner product turns one into the other.
+
+\textbf{Step 4: the cotangent space from germs alone.} The differential of $f$ depends only on $f$ to first order: $T_p^*M \cong I_p/I_p^2$, the germs vanishing at $p$ modulo those vanishing to second order, by $[[f - f(p)]] \mapsto df_p$ (Theorem~\ref{thm:cotangent-ideal}). So covectors can be built from functions without mentioning tangent vectors at all --- the cotangent space is ``very extremely natural from the point of view of functions'' (Remark~\ref{rem:cotangent-natural}).
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:Ip-quotient} (The Space $I_p/I_p^2$).} $I_p/I_p^2$ is the quotient vector space (Definition~\ref{def:quotient-vs}) of $I_p$ by its subspace $I_p^2$ (Lemma~\ref{lem:Ip-subspaces}). The class of $[f] \in I_p$ is written $[[f]] = [f] + I_p^2$, and $[[f]] = [[f']]$ iff $[f'] - [f] \in I_p^2$.
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Theorem~\ref{thm:cotangent-ideal} (The Cotangent Space from Germs).} \begin{enumerate}
+    \item The pairing induces isomorphisms
+    \[
+    T_pM \xrightarrow{\ \cong\ } \big(I_p/I_p^2\big)^*, \qquad\qquad \Phi : I_p/I_p^2 \xrightarrow{\ \cong\ } (T_pM)^* = T_p^*M .
+    \]
+    \item $\Phi([[f]]) = df_p$: the isomorphism sends the class of a germ to its differential.
+    \item In any chart, $\Phi$ carries the basis $[[x^i - x^i(p)]]$ of $I_p/I_p^2$ to the basis $dx^i|_p$ of $T_p^*M$, which is dual to the basis $\partial/\partial x^i|_p$ of $T_pM$.
+\end{enumerate}
+The isomorphisms are defined without any chart.
+\end{quote}
+
+\textbf{Step 5: covectors pull back.} For $F : M \to N$, the dual map of $F_{*p}$ is the \emph{pullback of covectors} $F_p^* : T^*_{F(p)}N \to T_p^*M$, $(F_p^*\alpha)(v) = \alpha(F_{*p}v)$ (Definition~\ref{def:pullback-covector}). It commutes with differentials: $F_p^*(df_{F(p)}) = d(f \circ F)_p$ (Proposition~\ref{prop:pullback-d}), which is the chain rule in covector form. The same symbol $F_p^*$ already denoted the pullback of germs (Step~5 of \ref{sec:recap-tangent}); the two are compatible, as Remark~\ref{rem:two-pullbacks} explains.
+
+\begin{quote}
+\textbf{Recall: Definition~\ref{def:pullback-covector} (Pullback of Covectors).} Let $F : M \to N$ be smooth and $p \in M$. The \textbf{pullback of covectors} at $p$ is the dual map (Definition~\ref{def:dual-map}) of the pushforward $F_{*p} : T_pM \to T_{F(p)}N$:
+\[
+F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big(F_{*p}v\big) .
+\]
+\end{quote}
+
+\begin{quote}
+\textbf{Recall: Proposition~\ref{prop:pullback-d} (Pullback Commutes with $d$).} Let $F : M \to N$ be smooth, $p \in M$, and $f$ smooth near $F(p)$. Then
+\[
+F_p^*\big(df_{F(p)}\big) = d(f \circ F)_p \quad \text{in } T_p^*M .
+\]
+\end{quote}
+
+\textbf{Step 6: the word ``differential''.} The course uses it for four objects. They are one idea at four levels of generality.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.25\textwidth} p{0.13\textwidth} p{0.27\textwidth} p{0.25\textwidth}}
+\hline
+Name & Symbol & Takes \ldots\ to \ldots & Defined in \\
+\hline
+differential of a map between vector spaces & $dF_p$ & a vector in $X$ to a vector in $Y$ (the Jacobian) & Definition~\ref{def:vs-differential} \\
+differential (pushforward) of a smooth map & $F_{*p}$ & $T_pM \to T_{F(p)}N$ & Definition~\ref{def:pushforward} \\
+differential of a function at $p$ & $df_p$ & $T_pM \to \mathbb{R}$, a covector & Definition~\ref{def:cotangent} \\
+the operator $d$ & $d$ & a function $f$ to the one-form $df$ & Proposition~\ref{prop:d-operator} \\
+\hline
+\end{tabular}
+\end{center}
+
+How they fit: on open subsets of $\mathbb{R}^n$ the second is the first (Proposition~\ref{prop:differential-agree}); Lee writes $dF_p$ for what these notes call $F_{*p}$, and Uribe said in Lecture~15 that $F_{*p}$ ``we should have called the differential of $F$ ages ago''. The third is the second for maps into $\mathbb{R}$. The fourth collects the third over all points: $df$ is the field $p \mapsto df_p$, a one-form (\ref{sec:d-operator}).
+
+\textbf{Step 7: forward and backward.} Given $F : M \to N$:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.27\textwidth} p{0.14\textwidth} p{0.48\textwidth}}
+\hline
+Object & Moves & Rule \\
+\hline
+point $p \in M$ & forward & $p \mapsto F(p)$ \\
+tangent vector $v \in T_pM$ & forward & $F_{*p}v \in T_{F(p)}N$ (Definition~\ref{def:pushforward}) \\
+function $f$ on $N$ & backward & $F^*f = f \circ F$ on $M$ \\
+germ $[g]$ at $F(p)$ & backward & $F_p^*[g] = [g \circ F]$ (Definition~\ref{def:germ-pullback}) \\
+covector $\alpha \in T^*_{F(p)}N$ & backward & $(F_p^*\alpha)(v) = \alpha(F_{*p}v)$ (Definition~\ref{def:pullback-covector}) \\
+\hline
+\end{tabular}
+\end{center}
+
+Things that \emph{are} somewhere move forward with the points; things that \emph{eat} move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
+
+\textbf{What this chapter builds.} So far every object lives at a single point. This chapter lets the point vary. The tangent spaces are assembled into one manifold, the tangent bundle $TM$ (\ref{sec:tangent-bundle}), and the cotangent spaces into the cotangent bundle $T^*M$ (\ref{sec:cotangent-bundle}). A smooth choice of a tangent vector at every point is a vector field, and of a covector at every point a one-form (\ref{sec:fields}). Then $d$ turns functions into one-forms and $F^*$ pulls one-forms back (\ref{sec:d-operator}), and a vector field differentiates functions everywhere at once (\ref{sec:vf-operators}).
+
+\begin{exbox}[Covectors in the Plane]\exlabel{ex:recap-covectors-plane}
+Continue Example~\ref{ex:recap-vectors-plane}: $p = (1, 2)$, $f = x^2 y$, $v = 3\,\partial_x - \partial_y$, and $F(x, y) = (x^2, x + y)$ with $F(p) = (1, 3)$ and $F_{*p}v = 6\,\partial_u + 2\,\partial_w$.
+\begin{enumerate}
+    \item \emph{The differential of $f$.} $df_p = \partial_x f(p)\, dx + \partial_y f(p)\, dy = 4\, dx + dy$, and $df_p(v) = 4 \cdot 3 + 1 \cdot (-1) = 11 = v[f]$, as Step~3 promises.
+    \item \emph{A covector at $F(p)$.} Let $g(u, w) = u w^2$ on the target. Then $dg_{F(p)} = w^2\, du + 2uw\, dw = 9\, du + 6\, dw$ at $(1, 3)$.
+    \item \emph{Its pullback, by definition.} $(F_p^* dg_{F(p)})(v) = dg_{F(p)}(F_{*p}v) = 9 \cdot 6 + 6 \cdot 2 = 66$.
+    \item \emph{Its pullback, by the chain rule.} $g \circ F = x^2 (x + y)^2$, with $\partial_x (g \circ F)(p) = 2x(x+y)^2 + 2x^2(x+y) = 18 + 6 = 24$ and $\partial_y (g \circ F)(p) = 2x^2(x+y) = 6$. So $d(g \circ F)_p = 24\, dx + 6\, dy$, and $d(g \circ F)_p(v) = 72 - 6 = 66$: the two agree, as Proposition~\ref{prop:pullback-d} says.
+    \item \emph{The transpose.} The components of $F_p^*$ come from the \emph{transpose} of the Jacobian: $\begin{pmatrix} 2 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 9 \\ 6 \end{pmatrix} = \begin{pmatrix} 24 \\ 6 \end{pmatrix}$. Vectors are pushed forward by the Jacobian, covectors pulled back by its transpose.
+\end{enumerate}
+\end{exbox}
+
+
+% ============================================================================
+% SECTION: THE TANGENT BUNDLE
+% ============================================================================
+
+\section{The Tangent Bundle}\label{sec:tangent-bundle}
+
+\roadmark{Stage: bundles}{All the tangent spaces of $M$, assembled into a single manifold that fibres over $M$.}
+
+\textit{Lecture 12. ``Again, these constructions, especially the cotangent [bundle], are basic parts of the basic theory.'' The tangent bundle was introduced as a set, with its projection and zero section; its topology, smooth structure and charts come next lecture.}
+
+\begin{defbox}[The Tangent Bundle as a Set]\deflabel{def:tangent-bundle-set}
+Let $M$ be a smooth manifold of dimension $m$. Its \textbf{tangent bundle} is the set
+\[
+TM = \bigcup_{p \in M} \{p\} \times T_pM = \{\, (p, v) : p \in M,\ v \in T_pM \,\},
+\]
+all the tangent spaces ``put together in one big set.'' It comes with the \textbf{projection} $\pi : TM \to M$, $\pi(p, v) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_pM$ is identified with $T_pM$; and with the \textbf{zero section} $\zeta : M \to TM$, $\zeta(p) = (p, 0)$, which is one-to-one because every tangent space has a distinguished element, its zero.
+\leeref{Ch.~3, \emph{The Tangent Bundle}}
+\end{defbox}
+
+\begin{rembox}[The Picture Changes]\label{rem:picture-changes}
+``There are several psychological inflection steps that one needs to make. The most important one is that we're going to think of $TM$ as fibering over $M$.'' A tangent space is usually drawn touching $M$, lying along it. In the bundle picture it stands \emph{vertically}, as the fibre over its point, and $M$ itself sits horizontally inside $TM$ as the zero section --- the tangent spaces become ``transversal'' to it.
+\end{rembox}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[red!70!black, thick] (0,-1.5) rectangle (6,1.5); \node[red!70!black, font=\footnotesize, anchor=south west] at (6.05,1.1) {$TM$};
+\draw[gray!40] (0.70,-1.5) -- (0.70,1.5);
+\draw[gray!40] (1.40,-1.5) -- (1.40,1.5);
+\draw[gray!40] (3.20,-1.5) -- (3.20,1.5);
+\draw[gray!40] (3.90,-1.5) -- (3.90,1.5);
+\draw[gray!40] (4.60,-1.5) -- (4.60,1.5);
+\draw[gray!40] (5.30,-1.5) -- (5.30,1.5);
+\draw[teal!60!black, very thick] (2.3,-1.5) -- (2.3,1.5) node[above, font=\footnotesize] {$\pi^{-1}(p) = T_pM$};
+\draw[orange!85!black, very thick] (0,0) -- (6,0) node[right, font=\footnotesize] {zero section $\zeta(M)$};
+\fill (2.3,0) circle (1.7pt); \node[font=\scriptsize, anchor=north west] at (2.33,-0.02) {$(p, 0)$};
+\fill[teal!60!black] (2.3,0.95) circle (1.5pt) node[right, font=\scriptsize] {$(p, v)$};
+\draw[thick, gray!70] (0,-2.6) -- (6,-2.6) node[right, font=\footnotesize, text=black] {$M$};
+\fill (2.3,-2.6) circle (1.7pt) node[below, font=\scriptsize] {$p$};
+\draw[->, gray!70] (-0.3,-0.6) -- node[left, font=\footnotesize] {$\pi$} (-0.3,-2.4);
+\draw[->, dashed, orange!85!black] (5.0,-2.45) to[bend right=25] node[right, font=\scriptsize] {$\zeta$} (5.0,-0.12);
+\end{tikzpicture}
+\end{center}
+
+The tangent bundle as a fibration. Each fibre $\pi^{-1}(p) = T_pM$ is a vertical line over $p$ (in general a copy of $\mathbb{R}^m$); the point $(p, v)$ lies on it, and the zero section $\zeta$ lifts each $p$ straight up to $(p, 0)$, placing a copy of $M$ horizontally inside $TM$.
+
+
+\textit{Status.} Proposition~\ref{prop:tangent-bundle-claim}, below, was stated in Lecture~12 --- ``the claim, which takes a lot of detail to prove'' --- and made precise in Lecture~13 (\ref{sub:tb-charts}), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; ``putting all that together gives us a map'' $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
+
+\subsection{Trivializations and Charts}\label{sub:tb-charts}
+
+\textit{Lecture 13. ``Back to the tangent bundle.'' $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.}
+
+\begin{defbox}[Trivializations and Charts of $TM$]\deflabel{def:tb-charts}
+Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The \textbf{local trivialization} over $U$ is
+\[
+\Phi : TU \longrightarrow U \times \mathbb{R}^m, \qquad \Phi(p, v) = (p, v^1, \ldots, v^m), \qquad \text{where } v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p ,
+\]
+the components of $v$ in the coordinate basis (Theorem~\ref{thm:tangent-basis}); and the \textbf{chart} of $TM$ is
+\[
+\tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
+\]
+Both are bijections, with inverse $(r, v) \mapsto \big(\varphi^{-1}(r), \sum_i v^i\, \partial/\partial x^i|_{\varphi^{-1}(r)}\big)$ for $\tilde\varphi$; and $\mathrm{pr}_1 \circ \Phi = \pi$ --- ``that's why I call it a trivialization.''
+\leeref{Proposition 3.18}
+\end{defbox}
+
+\begin{center}
+\begin{tikzcd}[column sep=4.6em, row sep=3em]
+TU \arrow[r, "\Phi"] \arrow[dr, "\pi"'] \arrow[rr, bend left=28, "\tilde\varphi"] & U \times \mathbb{R}^m \arrow[r, "\varphi \times \mathrm{id}"] \arrow[d, "\mathrm{pr}_1"] & \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m} \\
+& U &
+\end{tikzcd}
+\end{center}
+
+The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ --- the fibration diagram of Definition~\ref{def:fibration} --- and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.
+
+\begin{propbox}[The Topology of $TM$]\thmlabel{prop:tb-topology}
+There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$.
+\leeref{Lemma 1.35 and Proposition 3.18}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~13 without proof --- ``it's all point-set topology, and of course everything is in Lee \ldots\ see Lee''; filled in, following Lee's smooth manifold chart lemma.)} Throughout, $(U, \varphi)$ and $(V, \psi)$ denote smooth charts of $M$.
+
+\emph{The transition maps.} The computation in the proof of Proposition~\ref{prop:tb-atlas} below uses only the definitions of the charts, not any topology on $TM$. It shows that $\tilde\psi \circ \tilde\varphi^{-1}$ maps the open set $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ bijectively onto the open set $\psi(U \cap V) \times \mathbb{R}^m$, by a smooth map whose inverse, $\tilde\varphi \circ \tilde\psi^{-1}$, is given by the same formula with the two charts exchanged. So each transition map is a homeomorphism between open subsets of $\mathbb{R}^{2m}$.
+
+\emph{The topology.} Declare $W \subseteq TM$ open if $\tilde\varphi(W \cap TU)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$. This is a topology: $\emptyset$ and $TM$ are open, the latter because $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$ is open; and since each $\tilde\varphi$ is a bijection, it carries unions and finite intersections of subsets of $TU$ to unions and finite intersections of their images.
+
+\emph{Each $TU$ is open, and each $\tilde\varphi$ is a homeomorphism onto an open set.} For any chart $(V, \psi)$, $\tilde\psi(TU \cap TV) = \psi(U \cap V) \times \mathbb{R}^m$ is open, so $TU$ is open. If $W \subseteq TU$ is open, then $\tilde\varphi(W) = \tilde\varphi(W \cap TU)$ is open by definition, so $\tilde\varphi$ is an open map. For continuity, let $O \subseteq \varphi(U) \times \mathbb{R}^m$ be open and $W = \tilde\varphi^{-1}(O)$. For any chart $(V, \psi)$,
+\[
+\tilde\psi(W \cap TV) = \big(\tilde\psi \circ \tilde\varphi^{-1}\big)\Big(O \cap \big(\varphi(U \cap V) \times \mathbb{R}^m\big)\Big),
+\]
+the image of an open set under a homeomorphism between open sets, hence open. So $W$ is open.
+
+\emph{Uniqueness.} Let $\tau'$ be any topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism. If $W \in \tau'$, then $W \cap TU$ is open in $TU$, so $\tilde\varphi(W \cap TU)$ is open, and $W$ is open in the topology above. Conversely, if $W$ is open above, then each $W \cap TU = \tilde\varphi^{-1}\big(\tilde\varphi(W \cap TU)\big)$ is open in $TU$, hence in $\tau'$ since $TU \in \tau'$, and $W = \bigcup_U (W \cap TU) \in \tau'$.
+
+\emph{Locally Euclidean.} Every point of $TM$ lies in some $TU$, which is open and homeomorphic, by $\tilde\varphi$, to an open subset of $\mathbb{R}^{2m}$.
+
+\emph{Hausdorff.} Let $(p, v) \ne (q, w)$. If $p = q$, both points lie in one $TU$, homeomorphic to a subset of the Hausdorff space $\mathbb{R}^{2m}$; disjoint open sets of $TU$ separating them are open in $TM$, because $TU$ is. If $p \ne q$, choose charts with disjoint domains $U \ni p$ and $V \ni q$, possible because $M$ is Hausdorff (shrink the domains, Lemma~\ref{lem:chart-modify}); then $TU$ and $TV$ are disjoint open sets containing the two points.
+
+\emph{Second countable.} Let $\mathcal{B}$ be a countable basis of $M$. For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then in some $B \in \mathcal{B}$ with $p \in B \subseteq U$. So the countably many open sets $TU_B$ cover $TM$. Each is homeomorphic to an open subset of $\mathbb{R}^{2m}$, so has a countable basis, whose members are open in $TM$; the union of these countably many bases is countable and is a basis of $TM$, since any open $W \ni (p, v)$ meets some $TU_B$ containing $(p, v)$ in a set open in $TU_B$.
+\end{proof}
+
+The same argument, word for word, builds the topology of the cotangent bundle (\ref{sub:cotangent-bundle}), with the dual bases in place of the coordinate bases.
+
+\begin{propbox}[The Smooth Atlas of $TM$]\thmlabel{prop:tb-atlas}
+The charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $TM$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$ of $M$, the transition map is
+\[
+\tilde\psi \circ \tilde\varphi^{-1}(r, v) = \Big( \psi \circ \varphi^{-1}(r), \ \ \sum_{j=1}^m \frac{\partial y^1}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j, \ \ldots, \ \sum_{j=1}^m \frac{\partial y^m}{\partial x^j}\big(\varphi^{-1}(r)\big)\, v^j \Big) .
+\]
+\leeref{Proposition 3.18}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~13: ``the only thing that I want to have a look at is \ldots\ the transition functions of the atlas, because this is how people handle tangent vectors.'' Completed here.)} The domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$. Let $p \in U \cap V$ and $v \in T_pM$, written in both bases:
+\[
+v = \sum_j v^j \frac{\partial}{\partial x^j}\Big|_p = \sum_i w^i \frac{\partial}{\partial y^i}\Big|_p .
+\]
+The first component of the transition is $\psi \circ \varphi^{-1}$, smooth because the charts of $M$ are compatible. For the rest we need the $w$'s in terms of the $v$'s: ``a change of basis formula from 217, which I always forget.'' By the universal formula (Theorem~\ref{thm:tangent-basis}), the $i$-th coefficient of a derivation $D$ in the basis $\partial/\partial y^i|_p$ is $D[y^i]$; applied to $D = \partial/\partial x^j|_p$ it gives
+\[
+\frac{\partial}{\partial x^j}\Big|_p = \sum_i \frac{\partial y^i}{\partial x^j}(p) \frac{\partial}{\partial y^i}\Big|_p, \qquad\text{so}\qquad w^i = \sum_j \frac{\partial y^i}{\partial x^j}(p)\, v^j ,
+\]
+comparing coefficients in the basis $\partial/\partial y^i|_p$. (In lecture Uribe expanded $\partial/\partial y^j$ in the other basis and first solved for the $v$'s --- ``I did it backwards'' --- then took the other direction ``by the same argument''.) With $p = \varphi^{-1}(r)$ this is the displayed formula. The coefficients are smooth functions of $r$: by Proposition~\ref{prop:upstairs-downstairs}, $\partial y^i/\partial x^j(\varphi^{-1}(r)) = \partial(\psi \circ \varphi^{-1})^i/\partial r^j(r)$, the entries of the Jacobian of the transition map of $M$. So the transition map of $TM$ is $(r, v) \mapsto \big(\psi \circ \varphi^{-1}(r), (\psi \circ \varphi^{-1})'(r)\, v\big)$, smooth.
+\end{proof}
+
+\begin{center}
+\begin{tikzcd}[column sep=5.4em, row sep=3em]
+& TU \cap TV \arrow[dl, "\tilde\varphi"'] \arrow[dr, "\tilde\psi"] & \\
+\varphi(U \cap V) \times \mathbb{R}^m \arrow[rr, "{(r, v) \,\mapsto\, (\psi \circ \varphi^{-1}(r),\ (\psi \circ \varphi^{-1})'(r)\, v)}"'] & & \psi(U \cap V) \times \mathbb{R}^m
+\end{tikzcd}
+\end{center}
+
+The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.
+
+The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more --- the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
+
+\begin{corbox}[The Tangent Bundle Is a Fibration]\thmlabel{cor:tb-fibration}
+With the smooth structure of Proposition~\ref{prop:tb-atlas}:
+\begin{enumerate}
+    \item $TM$ is a smooth manifold of dimension $2m$, and $\pi : TM \to M$ is smooth;
+    \item the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
+    \item the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
+\end{enumerate}
+With Proposition~\ref{prop:tb-topology}, this proves Proposition~\ref{prop:tangent-bundle-claim} below in full.
+\end{corbox}
+
+\begin{proof}
+\textit{((1) and (2) are the lecture's observations --- ``in these coordinates, the projection is just projection onto the first $m$ components \ldots\ so we get a beautiful fibration''; the details and (3) are filled in.)} (1) In the charts $\tilde\varphi$ and $\varphi$, $\pi$ is $(r, v) \mapsto r$, which is smooth. (2) $\Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi$ is a composite of diffeomorphisms (Proposition~\ref{prop:chart-diffeo}), and $\mathrm{pr}_1 \circ \Phi = \pi$; the $TU$ cover $TM$, the $U$ cover $M$. On $T_pM$, $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\tilde\varphi$, $\zeta(M) \cap TU = \{v^1 = \cdots = v^m = 0\}$, so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ (Definition~\ref{def:submanifold}).
+\end{proof}
+\begin{propbox}[The Tangent Bundle Is a Manifold (Claim)]\thmlabel{prop:tangent-bundle-claim}
+$TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
+\leeref{Proposition 3.18}
+\end{propbox}
+
+\begin{proof}[Proof]
+Proposition~\ref{prop:tb-topology} gives the topology, and Corollary~\ref{cor:tb-fibration} the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
+\end{proof}
+
+\begin{rembox}[Vector Bundles]\label{rem:vector-bundles}
+$TM$ is in fact a \emph{vector bundle}: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. Uribe postponed the general definition --- ``it takes another 10 minutes of axioms'' --- but these are the two features: ``the fibres are abstract vector spaces, and you can find trivializations which restrict to linear isomorphisms fibrewise.'' Vector bundles are ``fun objects'' in their own right; K-theory is built from them.
+\end{rembox}
+
+\begin{rembox}[Trivializations and Frames]\label{rem:same-principle-elsewhere}
+Proposition~\ref{prop:trivialization-section} turns local trivializations into local sections. For the tangent bundle the dictionary is between trivializations and \emph{frames}: the trivialization $\Phi$ of a chart (Definition~\ref{def:tb-charts}) corresponds to the $m$ local sections $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example~10.18 and Proposition~10.19). For the Hopf fibration one section suffices because the fibre is a single orbit of the free $S^1$-action. That is the general pattern of \emph{principal bundles}, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+\end{rembox}
+
+% ============================================================================
+% SECTION: THE COTANGENT BUNDLE
+% ============================================================================
+
+\section{The Cotangent Bundle}\label{sec:cotangent-bundle}\label{sub:cotangent-bundle}
+
+\roadmark{Stage: bundles}{The cotangent spaces assembled into $T^*M$, with charts from the dual bases; covector components transform by the inverse transpose.}
+
+\textit{Lecture 13 defined the cotangent bundle --- ``completely analogous'' to the tangent bundle, with the dual bases in place of the coordinate bases; Lecture 15 returned to it for the homework.}
+
+\begin{defbox}[The Cotangent Bundle]\deflabel{def:cotangent-bundle}
+The \textbf{cotangent bundle} of $M$ is
+\[
+T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M,
+\]
+with projection $\pi(p, \xi) = p$. For a chart $(U, \varphi = (x^i))$ of $M$, its chart is
+\[
+T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big),
+\]
+where $T^*U = \pi^{-1}(U)$ and $\xi = \sum_i \xi_i\, dx^i|_p$ in the dual basis (Definition~\ref{def:cotangent}). Because the bases $dx^i|_p$ and $\partial/\partial x^i|_p$ are dual to each other, the components are computed by evaluation, $\xi_i = \xi\big(\partial/\partial x^i|_p\big)$. Keeping $p$ instead of its coordinates, $(p, \xi) \mapsto (p, \xi_1, \ldots, \xi_m)$ is a local trivialization $T^*U \to U \times \mathbb{R}^m$.
+\leeref{Proposition 11.9}
+\end{defbox}
+
+\begin{propbox}[The Cotangent Transition Maps]\thmlabel{prop:cotangent-transition}
+For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
+\[
+dx^i|_p = \sum_j \frac{\partial x^i}{\partial y^j}(p)\, dy^j|_p, \qquad \eta_j = \sum_i \frac{\partial x^i}{\partial y^j}(p)\, \xi_i .
+\]
+So the covector components transform by the transpose of the inverse of the matrix that transforms tangent components, and the charts of $T^*M$ form a smooth atlas making $\pi : T^*M \to M$ a vector bundle with fibre $\mathbb{R}^m$.
+\leeref{Proposition 11.9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~13: ``completely analogous'', with the change ``we use the dual basis'', and the formula for $dx^i$ given; the rest is filled in.)} The formula for $dx^i|_p$ is Lemma~\ref{lem:df-coords} applied to the function $x^i$ in the chart $\psi$. Substituting it into $\sum_i \xi_i\, dx^i|_p$ and comparing coefficients of $dy^j|_p$ gives $\eta_j$. The matrix $\big[\partial x^i/\partial y^j\big]$ is the inverse of $\big[\partial y^i/\partial x^j\big]$ (chain rule), so the tangent components transform by $A = \big[\partial y^i/\partial x^j\big]$ and the covector components by $(A^{-1})^{\mathsf T}$. Its entries are smooth functions of the base point, so the transition maps are smooth, as in Proposition~\ref{prop:tb-atlas}; the fibration and linearity statements follow as in Corollary~\ref{cor:tb-fibration}.
+\end{proof}
+
+\textit{Lecture~15 returned to the cotangent bundle --- ``we did define it, but it was all very quick'' --- because the homework uses it: ``the standard coordinates on $T^*M$, which are also trivializations'', with the components found by evaluating on the dual basis, as in Definition~\ref{def:cotangent-bundle}. He also recalled that the cotangent space has a description from germs, $T_p^*M \cong I_p/I_p^2$ (Theorem~\ref{thm:cotangent-ideal}): ``the cotangent space is, in a way, very extremely natural from the point of view of functions.''}
+
+\textbf{Transcription note.} Page~40 of the handwritten notes writes the standard coordinates as a map on $T^*M$; they are defined on $T^*U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
+
+``We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.'' $TM$ and $T^*M$ are isomorphic as vector bundles, ``but not naturally isomorphic --- we have to make choices to construct an isomorphism'' (a metric, for instance, as in the remark on conormal spaces). This is stated, not proved, here.
+
+% ============================================================================
+% SECTION: VECTOR FIELDS AND ONE-FORMS
+% ============================================================================
+
+\section{Vector Fields and One-Forms}\label{sec:fields}\label{sub:sections}\label{sub:one-forms}
+
+\roadmark{Stage: fields}{Smooth sections of $TM$ and of $T^*M$: a tangent vector, or a covector, at every point, chosen smoothly --- and the coordinate test for smoothness.}
+
+\textit{Lectures 13 and 15. A section of a fibration (Definition~\ref{def:section}) picks one point in every fibre; for the tangent and cotangent bundles that point is a vector, or a covector, at every point of $M$. Every vector bundle has sections, the zero section at least --- unlike a general fibration: the Hopf fibration has none (Remark~\ref{rem:sections-need-not-exist}).}
+
+\subsection{Vector Fields}\label{sub:vector-fields}
+
+\begin{defbox}[Vector Field]\deflabel{def:vector-field}
+A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $X : M \to TM$ with $X(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
+\leeref{Ch.~8, \emph{Vector Fields}}
+\end{defbox}
+
+\textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
+
+\begin{defbox}[The Space of Vector Fields]\deflabel{def:vector-fields-space}
+A vector field on $M$ is a smooth section $X$ of the tangent bundle $TM \to M$ (Definition~\ref{def:vector-field}); its value at $p$ is written $X_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on. The set of all vector fields on $M$ is denoted
+\[
+\mathfrak{X}(M) \qquad \text{(\LaTeX: \texttt{\textbackslash mathfrak\{X\}})}.
+\]
+It is a real vector space, and functions multiply vector fields pointwise: $(fX)_p = f(p) X_p$.
+\leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
+\end{defbox}
+
+\begin{propbox}[Vector Fields in Coordinates]\thmlabel{prop:vf-coords}
+Let $X$ be a section of $TM$ (not assumed smooth) and $(U, \varphi = (x^j))$ a chart. Then on $U$
+\[
+X = \sum_{j=1}^m X^j\, \frac{\partial}{\partial x^j}, \qquad X^j(p) = X_p[x^j] = dx^j|_p(X_p),
+\]
+and $X$ is smooth on $U$ if and only if the coefficient functions $X^1, \ldots, X^m$ are smooth on $U$.
+\leeref{Proposition 8.1}
+\end{propbox}
+
+\begin{proof}
+\textit{(Stated in Lecture~15, ``analogously'' to one-forms; filled in.)} The expansion is the basis theorem at each point, with coefficients $X_p[x^j]$ (Theorem~\ref{thm:tangent-basis}). In the chart $\tilde\varphi$ of $TM$ (Definition~\ref{def:tb-charts}) the coordinate representation of $X$ is $r \mapsto \big(r, X^1(\varphi^{-1}(r)), \ldots, X^m(\varphi^{-1}(r))\big)$, smooth exactly when every $X^j \circ \varphi^{-1}$ is.
+\end{proof}
+
+\subsection{One-Forms}\label{sub:one-forms-def}
+
+\textit{Lecture 15. The sections of the cotangent bundle.}
+
+\begin{defbox}[One-Form]\deflabel{def:one-form}
+A \textbf{one-form} (or \emph{$1$-form}, or \emph{covector field}) on $M$ is a smooth section $\theta : M \to T^*M$ of the cotangent bundle: $\pi \circ \theta = \mathrm{id}_M$, so that $\theta$ assigns to every $p \in M$ a covector in $T_p^*M$. This value is written $\theta_p$, not $\theta(p)$, and it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$. The space of one-forms on $M$ is written $C^\infty(M, T^*M)$ (Uribe's notation; also $\Omega^1(M)$).
+\leeref{Ch.~11, \emph{Covector Fields}}
+\end{defbox}
+
+Uribe on the notation: ``$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable'' --- so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes \emph{every} one-form, and the examples come next.
+
+\begin{propbox}[One-Forms in Coordinates]\thmlabel{prop:one-form-coords}
+Let $\theta$ be a section of $T^*M \to M$ (not assumed smooth) and $(U, \varphi = (x^i))$ a chart. Then on $U$
+\[
+\theta = \sum_{j=1}^m \theta_j\, dx^j, \qquad \theta_j(p) = \theta_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big),
+\]
+and $\theta$ is smooth on $U$ if and only if the coefficient functions $\theta_1, \ldots, \theta_m$ are smooth on $U$.
+\leeref{Proposition 11.11}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~15 stated it --- ``smoothness of the form will translate into these functions being smooth''; the proof is filled in.)} At each $p$ the $dx^j|_p$ form a basis of $T_p^*M$ dual to the $\partial/\partial x^j|_p$, which gives the expansion and the formula for $\theta_j(p)$. In the chart of $T^*M$ over $U$ (Definition~\ref{def:cotangent-bundle}) and the chart $\varphi$ of $M$, the coordinate representation of $\theta$ is $r \mapsto \big(r, \theta_1(\varphi^{-1}(r)), \ldots, \theta_m(\varphi^{-1}(r))\big)$, which is smooth exactly when every $\theta_j \circ \varphi^{-1}$ is.
+\end{proof}
+
+% ============================================================================
+% SECTION: THE OPERATOR D AND PULLBACKS
+% ============================================================================
+
+\section{The Operator $d$ and Pullbacks of One-Forms}\label{sec:d-operator}
+
+\roadmark{Stage: fields}{Functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.}
+
+\textit{Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions --- ``which will be the beginning of a chain of operators when we discuss the de Rham cohomology.''}
+
+\begin{propbox}[The Differential of a Function Is a One-Form]\thmlabel{prop:d-operator}
+For $f \in C^\infty(M)$, the section $df : p \mapsto df_p$ is a one-form, given in a chart by
+\[
+df = \sum_{j=1}^m \frac{\partial f}{\partial x^j}\, dx^j .
+\]
+The resulting operator $d : C^\infty(M) \to C^\infty(M, T^*M)$, $f \mapsto df$, is $\mathbb{R}$-linear and satisfies $d(fg) = f\, dg + g\, df$.
+\leeref{Ch.~11, \emph{The Differential of a Function}}
+\end{propbox}
+
+\begin{proof}
+\textit{(The coordinate formula is Lemma~\ref{lem:df-coords}, which Lecture~15 recalled; the rest is filled in.)} The coefficients $\partial f/\partial x^j$ are smooth, so $df$ is smooth by Proposition~\ref{prop:one-form-coords}. For $v \in T_pM$, $d(fg)_p(v) = v[fg] = f(p)\, v[g] + g(p)\, v[f]$ because $v$ is a derivation, and linearity is the same one line.
+\end{proof}
+
+\begin{exbox}[Two One-Forms on the Plane]\exlabel{ex:two-one-forms}
+On $\mathbb{R}^2$ with coordinates $x, y$, any expression $a(x,y)\, dx + b(x,y)\, dy$ with smooth $a, b$ is a one-form. Uribe's two examples:
+\[
+\theta = \tfrac12\,(x\, dy - y\, dx), \qquad \sigma = \tfrac12\,(x\, dx + y\, dy) .
+\]
+$\sigma$ is the differential of a function: $\sigma = d\big(\tfrac14(x^2 + y^2)\big)$.
+\end{exbox}
+
+$\theta$ is not the differential of any function, as the next proposition shows.
+
+\begin{propbox}[A Necessary Condition for Being a Differential]\thmlabel{prop:exactness-test}
+If $\theta = \sum_j \theta_j\, dx^j = df$ on a chart domain $U$ for some $f \in C^\infty(U)$, then
+\[
+\frac{\partial \theta_j}{\partial x^k} = \frac{\partial \theta_k}{\partial x^j} \qquad \text{for all } j, k .
+\]
+In particular, $\theta = \tfrac12(x\,dy - y\,dx)$ is not $df$ for any $f$ on any open subset of $\mathbb{R}^2$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~15.)} If $\theta = df$ then $\theta_j = \partial f/\partial x^j$ for every $j$ (Proposition~\ref{prop:d-operator}), and so $\partial\theta_j/\partial x^k = \partial^2 f/\partial x^k \partial x^j$. By equality of mixed partials (Clairaut's theorem) this is $\partial^2 f/\partial x^j \partial x^k = \partial\theta_k/\partial x^j$. \textit{(Completion.)} For $\theta = \tfrac12(x\,dy - y\,dx)$, $\theta_x = -\tfrac{y}{2}$ and $\theta_y = \tfrac{x}{2}$, so $\partial\theta_y/\partial x = \tfrac12 \neq -\tfrac12 = \partial\theta_x/\partial y$.
+\end{proof}
+
+``You know this from multivariable calculus in various different forms. Not every vector field is a gradient field'': the condition is the vanishing of the curl, ``a curl condition.''
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[->, gray!50] (-2.00,0) -- (2.00,0) node[right, font=\scriptsize, text=gray!70!black] {$x$};
+\draw[->, gray!50] (0.00,-2.0) -- (0.00,2.0) node[above, font=\scriptsize, text=gray!70!black] {$y$};
+\draw[gray!30, dashed] (0.00,0) circle (0.60);
+\draw[gray!30, dashed] (0.00,0) circle (1.10);
+\draw[gray!30, dashed] (0.00,0) circle (1.60);
+\draw[->, violet!75!black, thick] (-1.657,-1.343) -- (-1.343,-1.657);
+\draw[->, violet!75!black, thick] (-1.605,-0.843) -- (-1.395,-1.157);
+\draw[->, violet!75!black, thick] (-1.552,-0.343) -- (-1.448,-0.657);
+\draw[->, violet!75!black, thick] (-1.500,0.158) -- (-1.500,-0.158);
+\draw[->, violet!75!black, thick] (-1.448,0.657) -- (-1.552,0.343);
+\draw[->, violet!75!black, thick] (-1.395,1.157) -- (-1.605,0.843);
+\draw[->, violet!75!black, thick] (-1.343,1.657) -- (-1.657,1.343);
+\draw[->, violet!75!black, thick] (-1.157,-1.395) -- (-0.843,-1.605);
+\draw[->, violet!75!black, thick] (-1.105,-0.895) -- (-0.895,-1.105);
+\draw[->, violet!75!black, thick] (-1.052,-0.395) -- (-0.948,-0.605);
+\draw[->, violet!75!black, thick] (-1.000,0.105) -- (-1.000,-0.105);
+\draw[->, violet!75!black, thick] (-0.948,0.605) -- (-1.052,0.395);
+\draw[->, violet!75!black, thick] (-0.895,1.105) -- (-1.105,0.895);
+\draw[->, violet!75!black, thick] (-0.843,1.605) -- (-1.157,1.395);
+\draw[->, violet!75!black, thick] (-0.657,-1.448) -- (-0.343,-1.552);
+\draw[->, violet!75!black, thick] (-0.605,-0.948) -- (-0.395,-1.052);
+\draw[->, violet!75!black, thick] (-0.552,-0.448) -- (-0.448,-0.552);
+\draw[->, violet!75!black, thick] (-0.500,0.052) -- (-0.500,-0.052);
+\draw[->, violet!75!black, thick] (-0.448,0.552) -- (-0.552,0.448);
+\draw[->, violet!75!black, thick] (-0.395,1.052) -- (-0.605,0.948);
+\draw[->, violet!75!black, thick] (-0.343,1.552) -- (-0.657,1.448);
+\draw[->, violet!75!black, thick] (-0.158,-1.500) -- (0.158,-1.500);
+\draw[->, violet!75!black, thick] (-0.105,-1.000) -- (0.105,-1.000);
+\draw[->, violet!75!black, thick] (-0.052,-0.500) -- (0.052,-0.500);
+\draw[->, violet!75!black, thick] (0.052,0.500) -- (-0.052,0.500);
+\draw[->, violet!75!black, thick] (0.105,1.000) -- (-0.105,1.000);
+\draw[->, violet!75!black, thick] (0.158,1.500) -- (-0.158,1.500);
+\draw[->, violet!75!black, thick] (0.343,-1.552) -- (0.657,-1.448);
+\draw[->, violet!75!black, thick] (0.395,-1.052) -- (0.605,-0.948);
+\draw[->, violet!75!black, thick] (0.448,-0.552) -- (0.552,-0.448);
+\draw[->, violet!75!black, thick] (0.500,-0.052) -- (0.500,0.052);
+\draw[->, violet!75!black, thick] (0.552,0.448) -- (0.448,0.552);
+\draw[->, violet!75!black, thick] (0.605,0.948) -- (0.395,1.052);
+\draw[->, violet!75!black, thick] (0.657,1.448) -- (0.343,1.552);
+\draw[->, violet!75!black, thick] (0.843,-1.605) -- (1.157,-1.395);
+\draw[->, violet!75!black, thick] (0.895,-1.105) -- (1.105,-0.895);
+\draw[->, violet!75!black, thick] (0.948,-0.605) -- (1.052,-0.395);
+\draw[->, violet!75!black, thick] (1.000,-0.105) -- (1.000,0.105);
+\draw[->, violet!75!black, thick] (1.052,0.395) -- (0.948,0.605);
+\draw[->, violet!75!black, thick] (1.105,0.895) -- (0.895,1.105);
+\draw[->, violet!75!black, thick] (1.157,1.395) -- (0.843,1.605);
+\draw[->, violet!75!black, thick] (1.343,-1.657) -- (1.657,-1.343);
+\draw[->, violet!75!black, thick] (1.395,-1.157) -- (1.605,-0.843);
+\draw[->, violet!75!black, thick] (1.448,-0.657) -- (1.552,-0.343);
+\draw[->, violet!75!black, thick] (1.500,-0.158) -- (1.500,0.158);
+\draw[->, violet!75!black, thick] (1.552,0.343) -- (1.448,0.657);
+\draw[->, violet!75!black, thick] (1.605,0.843) -- (1.395,1.157);
+\draw[->, violet!75!black, thick] (1.657,1.343) -- (1.343,1.657);
+\draw[->, gray!50] (3.40,0) -- (7.40,0) node[right, font=\scriptsize, text=gray!70!black] {$x$};
+\draw[->, gray!50] (5.40,-2.0) -- (5.40,2.0) node[above, font=\scriptsize, text=gray!70!black] {$y$};
+\draw[teal!45, dashed] (5.40,0) circle (0.60);
+\draw[teal!45, dashed] (5.40,0) circle (1.10);
+\draw[teal!45, dashed] (5.40,0) circle (1.60);
+\draw[->, teal!65!black, thick] (4.058,-1.343) -- (3.743,-1.657);
+\draw[->, teal!65!black, thick] (4.058,-0.895) -- (3.743,-1.105);
+\draw[->, teal!65!black, thick] (4.058,-0.448) -- (3.743,-0.552);
+\draw[->, teal!65!black, thick] (4.058,0.000) -- (3.743,0.000);
+\draw[->, teal!65!black, thick] (4.058,0.448) -- (3.743,0.552);
+\draw[->, teal!65!black, thick] (4.058,0.895) -- (3.743,1.105);
+\draw[->, teal!65!black, thick] (4.058,1.343) -- (3.743,1.657);
+\draw[->, teal!65!black, thick] (4.505,-1.343) -- (4.295,-1.657);
+\draw[->, teal!65!black, thick] (4.505,-0.895) -- (4.295,-1.105);
+\draw[->, teal!65!black, thick] (4.505,-0.448) -- (4.295,-0.552);
+\draw[->, teal!65!black, thick] (4.505,0.000) -- (4.295,0.000);
+\draw[->, teal!65!black, thick] (4.505,0.448) -- (4.295,0.552);
+\draw[->, teal!65!black, thick] (4.505,0.895) -- (4.295,1.105);
+\draw[->, teal!65!black, thick] (4.505,1.343) -- (4.295,1.657);
+\draw[->, teal!65!black, thick] (4.953,-1.343) -- (4.848,-1.657);
+\draw[->, teal!65!black, thick] (4.953,-0.895) -- (4.848,-1.105);
+\draw[->, teal!65!black, thick] (4.953,-0.448) -- (4.848,-0.552);
+\draw[->, teal!65!black, thick] (4.953,0.000) -- (4.848,0.000);
+\draw[->, teal!65!black, thick] (4.953,0.448) -- (4.848,0.552);
+\draw[->, teal!65!black, thick] (4.953,0.895) -- (4.848,1.105);
+\draw[->, teal!65!black, thick] (4.953,1.343) -- (4.848,1.657);
+\draw[->, teal!65!black, thick] (5.400,-1.343) -- (5.400,-1.657);
+\draw[->, teal!65!black, thick] (5.400,-0.895) -- (5.400,-1.105);
+\draw[->, teal!65!black, thick] (5.400,-0.448) -- (5.400,-0.552);
+\draw[->, teal!65!black, thick] (5.400,0.448) -- (5.400,0.552);
+\draw[->, teal!65!black, thick] (5.400,0.895) -- (5.400,1.105);
+\draw[->, teal!65!black, thick] (5.400,1.343) -- (5.400,1.657);
+\draw[->, teal!65!black, thick] (5.848,-1.343) -- (5.953,-1.657);
+\draw[->, teal!65!black, thick] (5.848,-0.895) -- (5.953,-1.105);
+\draw[->, teal!65!black, thick] (5.848,-0.448) -- (5.953,-0.552);
+\draw[->, teal!65!black, thick] (5.848,0.000) -- (5.953,0.000);
+\draw[->, teal!65!black, thick] (5.848,0.448) -- (5.953,0.552);
+\draw[->, teal!65!black, thick] (5.848,0.895) -- (5.953,1.105);
+\draw[->, teal!65!black, thick] (5.848,1.343) -- (5.953,1.657);
+\draw[->, teal!65!black, thick] (6.295,-1.343) -- (6.505,-1.657);
+\draw[->, teal!65!black, thick] (6.295,-0.895) -- (6.505,-1.105);
+\draw[->, teal!65!black, thick] (6.295,-0.448) -- (6.505,-0.552);
+\draw[->, teal!65!black, thick] (6.295,0.000) -- (6.505,0.000);
+\draw[->, teal!65!black, thick] (6.295,0.448) -- (6.505,0.552);
+\draw[->, teal!65!black, thick] (6.295,0.895) -- (6.505,1.105);
+\draw[->, teal!65!black, thick] (6.295,1.343) -- (6.505,1.657);
+\draw[->, teal!65!black, thick] (6.743,-1.343) -- (7.058,-1.657);
+\draw[->, teal!65!black, thick] (6.743,-0.895) -- (7.058,-1.105);
+\draw[->, teal!65!black, thick] (6.743,-0.448) -- (7.058,-0.552);
+\draw[->, teal!65!black, thick] (6.743,0.000) -- (7.058,0.000);
+\draw[->, teal!65!black, thick] (6.743,0.448) -- (7.058,0.552);
+\draw[->, teal!65!black, thick] (6.743,0.895) -- (7.058,1.105);
+\draw[->, teal!65!black, thick] (6.743,1.343) -- (7.058,1.657);
+\node[font=\footnotesize, violet!75!black] at (0,2.75) {$\theta = \tfrac12(x\,dy - y\,dx)$};
+\node[font=\footnotesize, teal!65!black] at (5.4,2.75) {$\sigma = \tfrac12(x\,dx + y\,dy) = d\big(\tfrac14(x^2+y^2)\big)$};
+\node[font=\scriptsize, align=center] at (0,-2.45) {arrows run along the circles:\\ not the gradient of any $f$};
+\node[font=\scriptsize, align=center] at (5.4,-2.45) {arrows cross the level circles of $f$\\ at right angles: a gradient};
+\end{tikzpicture}
+\end{center}
+
+The two forms of Example~\ref{ex:two-one-forms}, drawn as arrows. A one-form is not an arrow --- it eats arrows --- so the picture uses the Euclidean dot product to turn $a\,dx + b\,dy$ into the vector $(a, b)$; this identification is available in $\mathbb{R}^2$, not on a general manifold, and it is how ``$df$'' becomes the ``gradient'' of calculus. Right: $\sigma = df$ for $f = \tfrac14(x^2+y^2)$, and its arrows cross the level circles of $f$ at right angles, as a gradient's must. Left: $\theta$'s arrows run \emph{along} the circles. If $\theta$ were $df$, then $f$ would increase steadily all the way around a circle and return to its starting value --- impossible.
+
+\begin{rembox}[The Condition Is Not Sufficient]\label{rem:condition-not-sufficient}
+The mixed-partials condition is necessary but not sufficient, and Uribe flagged this as ``the beginning of de Rham theory'': whether it suffices ``has to do with the topology of the domain.'' The standard example (Lee, Example~11.36; not from lecture) is
+\[
+\omega = \frac{x\, dy - y\, dx}{x^2 + y^2} \quad \text{on } \mathbb{R}^2 \setminus \{0\} .
+\]
+It satisfies the condition: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$. But it is not $df$. Along the circle $c(t) = (\cos t, \sin t)$, with velocity $c'(t) = -\sin t\, \partial_x + \cos t\, \partial_y$ (\ref{sec:velocities}), one finds $\omega(c'(t)) = 1$. If $\omega = df$, then $(f \circ c)'(t) = df(c'(t)) = 1$, so $f(c(2\pi)) - f(c(0)) = 2\pi$; but $c(2\pi) = c(0)$. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ --- indeed on any star-shaped domain --- the condition is sufficient (Lee, Corollary~11.50).
+\end{rembox}
+
+\subsection{Pullbacks of One-Forms}\label{sub:pullback-one-forms}
+
+\begin{defbox}[Pullback of One-Forms]\deflabel{def:pullback-one-form}
+Let $F : M \to N$ be smooth. The \textbf{pullback} of functions is $F^*f = f \circ F$. For a one-form $\theta$ on $N$, the \textbf{pullback} $F^*\theta$ is the section of $T^*M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ (Definition~\ref{def:pullback-covector}):
+\[
+(F^*\theta)_p = F_p^*\big(\theta_{F(p)}\big), \qquad (F^*\theta)_p(v) = \theta_{F(p)}\big(F_{*p}v\big) .
+\]
+It is smooth, hence a one-form, by Proposition~\ref{prop:pullback-coords} below.
+\leeref{Ch.~11, \emph{Pullbacks of Covector Fields}}
+\end{defbox}
+
+\begin{corbox}[Pullback Commutes with $d$]\thmlabel{cor:pullback-d-forms}
+Let $F : M \to N$ be smooth and $f \in C^\infty(N)$. Then $F^*(df) = d(F^*f)$ as one-forms on $M$.
+\leeref{Proposition 11.25}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture~15 stated it in this form, ``one says that the pullback map commutes with $d$''.)} At each $p \in M$ the two sides are $F_p^*(df_{F(p)})$ and $d(f \circ F)_p$, which agree by Proposition~\ref{prop:pullback-d}.
+\end{proof}
+
+\begin{propbox}[Pullbacks in Coordinates]\thmlabel{prop:pullback-coords}
+In charts $(x^i)$ on $M$ and $(y^j)$ on $N$, with $F^j = y^j \circ F$,
+\[
+F^*\Big(\sum_j \theta_j\, dy^j\Big) = \sum_i \Big( \sum_j (\theta_j \circ F)\, \frac{\partial F^j}{\partial x^i} \Big)\, dx^i .
+\]
+In particular $F^*\theta$ is smooth whenever $\theta$ is.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Evaluate both sides on $\partial/\partial x^i|_p$: by definition the left side gives $\sum_j \theta_j(F(p))\, dy^j|_{F(p)}\big(F_{*p}\, \partial/\partial x^i|_p\big)$, and $F_{*p}\, \partial/\partial x^i|_p = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$ (Theorem~\ref{lem:differential-matrix}). Smoothness follows from Proposition~\ref{prop:one-form-coords}.
+\end{proof}
+
+\begin{rembox}[Vector Fields and One-Forms Side by Side]\label{rem:fields-side-by-side}
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{0.2\textwidth} p{0.26\textwidth} p{0.2\textwidth} p{0.22\textwidth}}
+\hline
+Field & A section of & In a chart & Picture \\
+\hline
+vector field $X$ & $TM$ (Definition~\ref{def:vector-field}) & $\sum_j X^j\, \partial/\partial x^j$ & wind on the surface \\
+one-form $\theta$ & $T^*M$ (Definition~\ref{def:one-form}) & $\sum_j \theta_j\, dx^j$ & a rule pricing every step \\
+\hline
+\end{tabular}
+\end{center}
+Every function gives a one-form, $f \mapsto df$ (Proposition~\ref{prop:d-operator}), but not every one-form is a $df$ (Proposition~\ref{prop:exactness-test}). A one-form and a vector field together give a function, $p \mapsto \theta_p(X_p)$. And a vector field acting on a function gives a function, $p \mapsto X_p[f]$ --- the starting point of \ref{sec:vf-operators}.
+\end{rembox}
+
+% ============================================================================
+% SECTION: VECTOR FIELDS AS DERIVATIONS
+% ============================================================================
+
+\section{Vector Fields as Derivations}\label{sec:vf-operators}
+
+\roadmark{Stage: fields}{Vector fields acting on functions: derivations of $C^\infty(M)$, local operators, and the bump functions that connect global and local.}
+
+\textit{Lecture 15: ``now we want to start a big chapter, new chapter, and now it is on vector fields.'' References: Lee Ch.~8.}
+
+\begin{rembox}[Two Faces of a Vector Field]\label{rem:two-faces-vector-field}
+``Just as tangent vectors, fields have a double life.'' Tangent vectors were defined as derivations and then shown to be velocities of curves (\ref{sec:velocities}). Vector fields likewise have two faces: \emph{operators on functions}, studied first because it continues the definition by derivations; and \emph{dynamics on $M$} --- integral curves, the trajectories that follow the field, to come later.
+\end{rembox}
+
+\begin{defbox}[Derivation of $C^\infty(M)$]\deflabel{def:global-derivation}
+A \textbf{derivation} of $C^\infty(M)$ is an $\mathbb{R}$-linear map $D : C^\infty(M) \to C^\infty(M)$ satisfying the product rule
+\[
+D(fg) = f\, Dg + g\, Df \qquad \text{for all } f, g \in C^\infty(M).
+\]
+Compare a derivation \emph{at a point} (Definition~\ref{def:derivation}), which takes values in $\mathbb{R}$ and acts on germs.
+\leeref{Ch.~8, \emph{Vector Fields as Derivations}}
+\end{defbox}
+
+\begin{lembox}[A Vector Field Is a Derivation]\thmlabel{lem:vf-derivation}
+For $X \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$, the function $D_Xf : p \mapsto X_p[f]$ is smooth, and $D_X : C^\infty(M) \to C^\infty(M)$ is a derivation. In a chart, $D_Xf = \sum_j X^j\, \partial f/\partial x^j$. (Lee writes $Xf$ for $D_Xf$.)
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~15: linearity and the product rule are ``an immediate consequence of the corresponding properties for tangent vectors'', applied at each point. Smoothness of $D_Xf$, which the lecture did not address, is filled in.)} In a chart, $X_p[f] = \sum_j X^j(p)\, \partial f/\partial x^j(p)$ by Proposition~\ref{prop:vf-coords}, a sum of products of smooth functions. At each $p$, $X_p[fg] = f(p)\, X_p[g] + g(p)\, X_p[f]$ because $X_p$ is a derivation at $p$; that is the product rule for $D_X$, and linearity is the same.
+\end{proof}
+
+The goal of this section is the converse of the lemma: every derivation of $C^\infty(M)$ comes from a vector field (Proposition~\ref{prop:derivations-are-fields}, at the end). Tangent vectors act on germs, which only see a neighbourhood of a point, while a derivation of $C^\infty(M)$ acts on functions on all of $M$. The bridge is locality (Lemma~\ref{lem:derivation-local}), and its proof needs bump functions, so these come first.
+
+\begin{defbox}[Local Operator]\deflabel{def:local-operator}
+An operator $D : C^\infty(M) \to C^\infty(M)$ is \textbf{local} if for every open $U \subseteq M$ and all $f, g \in C^\infty(M)$,
+\[
+f|_U = g|_U \quad \Longrightarrow \quad (Df)|_U = (Dg)|_U .
+\]
+\end{defbox}
+
+``Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data'': knowing $f$ on $U$ determines $Df$ on $U$.
+
+\begin{defbox}[Support and Bump Function]\deflabel{def:bump-function}
+The \textbf{support} of a function $\chi : M \to \mathbb{R}$ is the \emph{closure} of the set where it is nonzero,
+\[
+\operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} ,
+\]
+and $C^\infty_0(M)$ is the set of smooth functions with compact support. A \textbf{bump function at $p$} is a $\chi \in C^\infty_0(M)$ with $\chi \equiv 1$ on a neighbourhood of $p$.
+\leeref{Ch.~2, \emph{Partitions of Unity}}
+\end{defbox}
+
+``It's a technical term, and it's not a joke'': the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set --- ``smooth, but not analytic'', since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[thick, gray!70] (-3.0,0) -- (3.0,0) node[right, font=\footnotesize, text=black] {$M$};
+\draw[orange!85!black, very thick] (-2.600,0.000) -- (-2.587,0.000) -- (-2.574,0.000) -- (-2.561,0.000) -- (-2.548,0.000) -- (-2.535,0.000) -- (-2.522,0.000) -- (-2.509,0.000) -- (-2.496,0.000) -- (-2.483,0.000) -- (-2.470,0.000) -- (-2.457,0.000) -- (-2.444,0.000) -- (-2.431,0.000) -- (-2.418,0.000) -- (-2.405,0.000) -- (-2.391,0.000) -- (-2.378,0.000) -- (-2.365,0.000) -- (-2.352,0.000) -- (-2.339,0.000) -- (-2.326,0.000) -- (-2.313,0.000) -- (-2.300,0.000) -- (-2.287,0.000) -- (-2.274,0.000) -- (-2.261,0.000) -- (-2.248,0.000) -- (-2.235,0.000) -- (-2.222,0.000) -- (-2.209,0.000) -- (-2.196,0.000) -- (-2.183,0.000) -- (-2.170,0.000) -- (-2.157,0.000) -- (-2.144,0.000) -- (-2.131,0.000) -- (-2.118,0.000) -- (-2.105,0.000) -- (-2.092,0.000) -- (-2.079,0.000) -- (-2.066,0.000) -- (-2.053,0.000) -- (-2.040,0.000) -- (-2.027,0.000) -- (-2.014,0.000) -- (-2.001,0.000) -- (-1.987,0.000) -- (-1.974,0.000) -- (-1.961,0.000) -- (-1.948,0.000) -- (-1.935,0.000) -- (-1.922,0.000) -- (-1.909,0.000) -- (-1.896,0.000) -- (-1.883,0.000) -- (-1.870,0.000) -- (-1.857,0.000) -- (-1.844,0.000) -- (-1.831,0.000) -- (-1.818,0.000) -- (-1.805,0.000) -- (-1.792,0.000) -- (-1.779,0.000) -- (-1.766,0.000) -- (-1.753,0.000) -- (-1.740,0.000) -- (-1.727,0.000) -- (-1.714,0.000) -- (-1.701,0.000) -- (-1.688,0.000) -- (-1.675,0.000) -- (-1.662,0.000) -- (-1.649,0.000) -- (-1.636,0.000) -- (-1.623,0.000) -- (-1.610,0.000) -- (-1.596,0.000) -- (-1.583,0.000) -- (-1.570,0.000) -- (-1.557,0.000) -- (-1.544,0.000) -- (-1.531,0.000) -- (-1.518,0.000) -- (-1.505,0.000) -- (-1.492,0.001) -- (-1.479,0.001) -- (-1.466,0.003) -- (-1.453,0.007) -- (-1.440,0.012) -- (-1.427,0.019) -- (-1.414,0.029) -- (-1.401,0.043) -- (-1.388,0.059) -- (-1.375,0.079) -- (-1.362,0.102) -- (-1.349,0.128) -- (-1.336,0.158) -- (-1.323,0.190) -- (-1.310,0.226) -- (-1.297,0.264) -- (-1.284,0.304) -- (-1.271,0.347) -- (-1.258,0.391) -- (-1.245,0.437) -- (-1.232,0.485) -- (-1.219,0.533) -- (-1.206,0.583) -- (-1.192,0.633) -- (-1.179,0.684) -- (-1.166,0.735) -- (-1.153,0.787) -- (-1.140,0.838) -- (-1.127,0.889) -- (-1.114,0.941) -- (-1.101,0.991) -- (-1.088,1.041) -- (-1.075,1.090) -- (-1.062,1.138) -- (-1.049,1.185) -- (-1.036,1.230) -- (-1.023,1.274) -- (-1.010,1.315) -- (-0.997,1.355) -- (-0.984,1.392) -- (-0.971,1.426) -- (-0.958,1.457) -- (-0.945,1.485) -- (-0.932,1.510) -- (-0.919,1.531) -- (-0.906,1.549) -- (-0.893,1.564) -- (-0.880,1.576) -- (-0.867,1.585) -- (-0.854,1.591) -- (-0.841,1.595) -- (-0.828,1.598) -- (-0.815,1.599) -- (-0.802,1.600) -- (-0.788,1.600) -- (-0.775,1.600) -- (-0.762,1.600) -- (-0.749,1.600) -- (-0.736,1.600) -- (-0.723,1.600) -- (-0.710,1.600) -- (-0.697,1.600) -- (-0.684,1.600) -- (-0.671,1.600) -- (-0.658,1.600) -- (-0.645,1.600) -- (-0.632,1.600) -- (-0.619,1.600) -- (-0.606,1.600) -- (-0.593,1.600) -- (-0.580,1.600) -- (-0.567,1.600) -- (-0.554,1.600) -- (-0.541,1.600) -- (-0.528,1.600) -- (-0.515,1.600) -- (-0.502,1.600) -- (-0.489,1.600) -- (-0.476,1.600) -- (-0.463,1.600) -- (-0.450,1.600) -- (-0.437,1.600) -- (-0.424,1.600) -- (-0.411,1.600) -- (-0.397,1.600) -- (-0.384,1.600) -- (-0.371,1.600) -- (-0.358,1.600) -- (-0.345,1.600) -- (-0.332,1.600) -- (-0.319,1.600) -- (-0.306,1.600) -- (-0.293,1.600) -- (-0.280,1.600) -- (-0.267,1.600) -- (-0.254,1.600) -- (-0.241,1.600) -- (-0.228,1.600) -- (-0.215,1.600) -- (-0.202,1.600) -- (-0.189,1.600) -- (-0.176,1.600) -- (-0.163,1.600) -- (-0.150,1.600) -- (-0.137,1.600) -- (-0.124,1.600) -- (-0.111,1.600) -- (-0.098,1.600) -- (-0.085,1.600) -- (-0.072,1.600) -- (-0.059,1.600) -- (-0.046,1.600) -- (-0.033,1.600) -- (-0.020,1.600) -- (-0.007,1.600) -- (0.007,1.600) -- (0.020,1.600) -- (0.033,1.600) -- (0.046,1.600) -- (0.059,1.600) -- (0.072,1.600) -- (0.085,1.600) -- (0.098,1.600) -- (0.111,1.600) -- (0.124,1.600) -- (0.137,1.600) -- (0.150,1.600) -- (0.163,1.600) -- (0.176,1.600) -- (0.189,1.600) -- (0.202,1.600) -- (0.215,1.600) -- (0.228,1.600) -- (0.241,1.600) -- (0.254,1.600) -- (0.267,1.600) -- (0.280,1.600) -- (0.293,1.600) -- (0.306,1.600) -- (0.319,1.600) -- (0.332,1.600) -- (0.345,1.600) -- (0.358,1.600) -- (0.371,1.600) -- (0.384,1.600) -- (0.397,1.600) -- (0.411,1.600) -- (0.424,1.600) -- (0.437,1.600) -- (0.450,1.600) -- (0.463,1.600) -- (0.476,1.600) -- (0.489,1.600) -- (0.502,1.600) -- (0.515,1.600) -- (0.528,1.600) -- (0.541,1.600) -- (0.554,1.600) -- (0.567,1.600) -- (0.580,1.600) -- (0.593,1.600) -- (0.606,1.600) -- (0.619,1.600) -- (0.632,1.600) -- (0.645,1.600) -- (0.658,1.600) -- (0.671,1.600) -- (0.684,1.600) -- (0.697,1.600) -- (0.710,1.600) -- (0.723,1.600) -- (0.736,1.600) -- (0.749,1.600) -- (0.762,1.600) -- (0.775,1.600) -- (0.788,1.600) -- (0.802,1.600) -- (0.815,1.599) -- (0.828,1.598) -- (0.841,1.595) -- (0.854,1.591) -- (0.867,1.585) -- (0.880,1.576) -- (0.893,1.564) -- (0.906,1.549) -- (0.919,1.531) -- (0.932,1.510) -- (0.945,1.485) -- (0.958,1.457) -- (0.971,1.426) -- (0.984,1.392) -- (0.997,1.355) -- (1.010,1.315) -- (1.023,1.274) -- (1.036,1.230) -- (1.049,1.185) -- (1.062,1.138) -- (1.075,1.090) -- (1.088,1.041) -- (1.101,0.991) -- (1.114,0.941) -- (1.127,0.889) -- (1.140,0.838) -- (1.153,0.787) -- (1.166,0.735) -- (1.179,0.684) -- (1.192,0.633) -- (1.206,0.583) -- (1.219,0.533) -- (1.232,0.485) -- (1.245,0.437) -- (1.258,0.391) -- (1.271,0.347) -- (1.284,0.304) -- (1.297,0.264) -- (1.310,0.226) -- (1.323,0.190) -- (1.336,0.158) -- (1.349,0.128) -- (1.362,0.102) -- (1.375,0.079) -- (1.388,0.059) -- (1.401,0.043) -- (1.414,0.029) -- (1.427,0.019) -- (1.440,0.012) -- (1.453,0.007) -- (1.466,0.003) -- (1.479,0.001) -- (1.492,0.001) -- (1.505,0.000) -- (1.518,0.000) -- (1.531,0.000) -- (1.544,0.000) -- (1.557,0.000) -- (1.570,0.000) -- (1.583,0.000) -- (1.596,0.000) -- (1.610,0.000) -- (1.623,0.000) -- (1.636,0.000) -- (1.649,0.000) -- (1.662,0.000) -- (1.675,0.000) -- (1.688,0.000) -- (1.701,0.000) -- (1.714,0.000) -- (1.727,0.000) -- (1.740,0.000) -- (1.753,0.000) -- (1.766,0.000) -- (1.779,0.000) -- (1.792,0.000) -- (1.805,0.000) -- (1.818,0.000) -- (1.831,0.000) -- (1.844,0.000) -- (1.857,0.000) -- (1.870,0.000) -- (1.883,0.000) -- (1.896,0.000) -- (1.909,0.000) -- (1.922,0.000) -- (1.935,0.000) -- (1.948,0.000) -- (1.961,0.000) -- (1.974,0.000) -- (1.987,0.000) -- (2.001,0.000) -- (2.014,0.000) -- (2.027,0.000) -- (2.040,0.000) -- (2.053,0.000) -- (2.066,0.000) -- (2.079,0.000) -- (2.092,0.000) -- (2.105,0.000) -- (2.118,0.000) -- (2.131,0.000) -- (2.144,0.000) -- (2.157,0.000) -- (2.170,0.000) -- (2.183,0.000) -- (2.196,0.000) -- (2.209,0.000) -- (2.222,0.000) -- (2.235,0.000) -- (2.248,0.000) -- (2.261,0.000) -- (2.274,0.000) -- (2.287,0.000) -- (2.300,0.000) -- (2.313,0.000) -- (2.326,0.000) -- (2.339,0.000) -- (2.352,0.000) -- (2.365,0.000) -- (2.378,0.000) -- (2.391,0.000) -- (2.405,0.000) -- (2.418,0.000) -- (2.431,0.000) -- (2.444,0.000) -- (2.457,0.000) -- (2.470,0.000) -- (2.483,0.000) -- (2.496,0.000) -- (2.509,0.000) -- (2.522,0.000) -- (2.535,0.000) -- (2.548,0.000) -- (2.561,0.000) -- (2.574,0.000) -- (2.587,0.000) -- (2.600,0.000);
+\draw[gray!50, dashed] (-3.0,1.60) -- (3.0,1.60) node[right, font=\scriptsize, text=gray!70!black] {$1$};
+\fill (0,0) circle (1.6pt) node[below, font=\scriptsize] {$p$};
+\draw[teal!60!black, line width=2.2pt] (-0.70,1.82) -- (0.70,1.82);
+\node[teal!60!black, font=\scriptsize, above] at (0,1.85) {$\chi \equiv 1$ near $p$};
+\draw[violet!70!black, |-|, thick] (-1.60,-0.55) -- node[below, font=\scriptsize] {$\operatorname{supp}\chi$, compact} (1.60,-0.55);
+\draw[gray!70!black, thick] (-2.4,-1.35) -- node[below, font=\scriptsize] {the open set $U \ni p$} (2.4,-1.35); \node[gray!70!black, font=\large] at (-2.42,-1.35) {(}; \node[gray!70!black, font=\large] at (2.42,-1.35) {)};
+\end{tikzpicture}
+\end{center}
+
+A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of Uribe's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.
+
+\textbf{Transcription note.} Page~41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the \emph{closure} of that set, as Uribe said (``and then you take the closure of that''). Without the closure, the support of a bump function would not be compact.
+
+\begin{propbox}[Bump Functions Exist]\thmlabel{prop:bump-existence}
+For every open $U \subseteq M$ and every $p \in U$ there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
+\leeref{Proposition 2.25}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~15, to be proved next week --- ``the week before the exam'', so Uribe will prove ``technical things that you will not be using in homework.'' ``The existence is not so obvious, but it's true.''
+\end{proof}
+
+\begin{lembox}[Derivations Are Local]\thmlabel{lem:derivation-local}
+Every derivation of $C^\infty(M)$ is a local operator.
+\end{lembox}
+
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~15; the proof ``uses the existence of bump functions'' (Proposition~\ref{prop:bump-existence}, above) and is to come.
+\end{proof}
+
+\begin{rembox}[Differential Operators]\label{rem:differential-operators}
+The operators $D_X$, $X \in \mathfrak{X}(M)$, together with the multiplication operators $f \mapsto gf$, generate under composition and sums the ring of \emph{differential operators} on $M$; all of them are local. Uribe stated the converse ``FYI'', without proof: every linear local operator is a differential operator. This is Peetre's theorem; its precise form says that a linear local operator is, near each point, a differential operator of finite order --- on a non-compact $M$ the order need not be bounded globally. Stated, not proved, here.
+\end{rembox}
+
+\begin{propbox}[Derivations Are Vector Fields]\thmlabel{prop:derivations-are-fields}
+Conversely, every derivation $D$ of $C^\infty(M)$ is of the form $D = D_X$ for a unique $X \in \mathfrak{X}(M)$.
+\leeref{Proposition 8.15}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Stated in Lecture~15 as ``the goal''; the proof is to come. ``It's not an immediate thing at all \ldots\ tangent vectors are defined in terms of germs'', local objects near a point, ``whereas'' a derivation of $C^\infty(M)$ ``a priori'' acts on functions on all of $M$. Locality (Lemma~\ref{lem:derivation-local}) bridges the two.
+\end{proof}
+
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -9021,16 +9834,21 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:smooth-structures}\ Differentiable structures & Chapter 1, \emph{Smooth Structures}, Examples 1.22--1.34; Chapter 2 \\
 \ref{sec:euclidean}\ Manifolds in Euclidean space & Example 1.32; Chapter 5 \\
 \ref{sec:vector-spaces}\ Vector spaces and matrix groups & Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 \\
-\ref{sec:tangent}\ Tangent spaces I: geometric & Propositions 3.2, 5.37 and 5.38; Theorem 6.30 \\
-\ref{sec:abstract-tangent}\ Tangent spaces II: abstract & Chapter 3 throughout, including Proposition 3.14 (products) \\
-\ref{sec:cotangent}\ Tangent spaces III: cotangent & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
+\ref{sec:tangent}\ The geometric tangent space & Propositions 3.2, 5.37 and 5.38; Theorem 6.30 \\
+\ref{sec:abstract-tangent}--\ref{sec:velocities}\ Germs, derivations, the abstract tangent space & Chapter 3 throughout, including Proposition 3.14 (products) \\
+\ref{sec:cotangent}\ The cotangent space & Chapter 11, \emph{Covectors}; Problem 11-4 for $I_p/I_p^2$ \\
 \ref{sec:special-maps}--\ref{sec:submersions}\ Local diffeomorphisms, submersions & Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 \\
 \ref{sec:submanifolds}\ Submanifolds & Chapter 5, \emph{Embedded Submanifolds} (Theorem 5.8, Corollary 5.14, Propositions 5.35--5.38) \\
-\ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee \\
-\ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) \\
+\ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
 \ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\
 \ref{sec:double-cover}\ The double cover $\mathrm{SU}(2) \to \SO(3)$ & Problems 7-22 and 7-23 (quaternions); Examples 7.27--7.30 (matrix groups) \\
+\ref{sec:recap-tangent}--\ref{sec:recap-objects}\ Recaps: tangent vectors, covectors & Chapters 3 and 11 (overview) \\
+\ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\
+\ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9) \\
+\ref{sec:fields}\ Vector fields and one-forms & Chapter 8 (Proposition 8.1); Chapter 11, \emph{Covector Fields} (Proposition 11.11) \\
+\ref{sec:d-operator}\ The operator $d$, pullbacks & Chapter 11 (Proposition 11.25, Example 11.36, Corollary 11.50) \\
+\ref{sec:vf-operators}\ Vector fields as derivations & Chapter 8 (Proposition 8.15); Proposition 2.25 (bump functions) \\
 \bottomrule
 \end{longtable}
 
@@ -9072,7 +9890,7 @@ Problem 1-9 & Def.~\ref{def:cpn}, Prop.~\ref{prop:cpn}, Prop.~\ref{prop:cpn-comp
 Proposition 2.5 & Prop.~\ref{prop:smooth-map-charts} \\
 Proposition 2.10 & Lem.~\ref{lem:composition-smooth} \\
 Proposition 2.15 & Prop.~\ref{prop:diffeomorphic-equivalence} \\
-Proposition 2.25 & Prop.~\ref{prop:germ-global} \\
+Proposition 2.25 & Prop.~\ref{prop:germ-global}, Prop.~\ref{prop:bump-existence} \\
 Lemma 3.1 & Lem.~\ref{lem:derivation-properties} \\
 Proposition 3.2 & Def.~\ref{def:Dv}, Prop.~\ref{prop:Dv-determines-v}, Lem.~\ref{lem:hadamard}, Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:ambient-abstract} \\
 Corollary 3.3 & Cor.~\ref{cor:derivations-Rn}, Thm.~\ref{thm:tangent-basis}, Prop.~\ref{prop:differential-agree} \\
@@ -9093,7 +9911,7 @@ Theorem 4.5 & Thm.~\ref{thm:local-diffeo-criterion} \\
 Proposition 4.6 & Cor.~\ref{cor:bijective-local-diffeo} \\
 Proposition 4.8 & Thm.~\ref{thm:local-diffeo-criterion}, Prop.~\ref{prop:dimension-constraints} \\
 Theorem 4.12 & Thm.~\ref{thm:submersion-normal-form}, Thm.~\ref{thm:immersion-normal-form} \\
-Example 4.20 & Prop.~\ref{prop:irrational-line} \\
+Example 4.20 & Prop.~\ref{prop:irrational-line}, Ex.~\ref{ex:irrational-line} \\
 Lemma 4.21 & Lem.~\ref{lem:dirichlet} \\
 Proposition 4.22 & Thm.~\ref{thm:proper-embedding}, Cor.~\ref{cor:compact-embedding} \\
 Proposition 4.28 & Cor.~\ref{cor:submersion-open-map} \\
@@ -9115,12 +9933,16 @@ Example 7.29 & Def.~\ref{def:complex-groups}, Thm.~\ref{thm:classical-manifolds}
 Example 7.30 & Def.~\ref{def:complex-groups}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary} \\
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
 Problem 7-22 & Def.~\ref{def:quaternions} \\
+Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\
+Proposition 8.15 & Prop.~\ref{prop:derivations-are-fields} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
 Proposition 11.9 & Def.~\ref{def:cotangent-bundle}, Prop.~\ref{prop:cotangent-transition} \\
+Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
+Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
 Problem 11-4 & Def.~\ref{def:Ip}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Lemma 21.1 & Lem.~\ref{lem:Lg}, Lem.~\ref{lem:orbit-open}, Prop.~\ref{prop:GH-open-sets} \\

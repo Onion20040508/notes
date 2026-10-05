@@ -15,10 +15,10 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 - $\mathbb{CP}^1$ is homeomorphic to $S^2$, via stereographic projection ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|§17]])
 - Homeomorphic does not imply diffeomorphic: Milnor's exotic $7$-spheres ([[§18 Smooth Functions and Smooth Maps#^rem-18-4|§18]])
 - $S^7$ carries smooth structures not diffeomorphic to the standard one ([[§18 Smooth Functions and Smooth Maps#^rem-18-8|§18]])
-- $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-1|§23]])
-- Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|§23]])
+- $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$ ([[§23 The Geometric Tangent Space#^ex-23-1|§23]])
+- Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$ ([[§23 The Geometric Tangent Space#^rem-23-9|§23]])
 - $S^2$ meets the plane $z = c$ transversally exactly when $c \neq \pm 1$ ([[§24 Transversality#^ex-24-1|§24]])
-- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§38 Projective Spaces and the Hopf Fibration#^ex-38-1|§38]])
+- $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism ([[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|§37]])
 
 ## $S^2$ is a topological $2$-manifold, by hemisphere charts
 ![[§8 Spheres#^ex-8-1]]
@@ -48,13 +48,13 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 ![[§18 Smooth Functions and Smooth Maps#^rem-18-8]]
 
 ## $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^ex-23-1]]
+![[§23 The Geometric Tangent Space#^ex-23-1]]
 
 ## Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9]]
+![[§23 The Geometric Tangent Space#^rem-23-9]]
 
 ## $S^2$ meets the plane $z = c$ transversally exactly when $c \neq \pm 1$
 ![[§24 Transversality#^ex-24-1]]
 
 ## $S^n \to \mathbb{RP}^n$ is a two-to-one local diffeomorphism
-![[§38 Projective Spaces and the Hopf Fibration#^ex-38-1]]
+![[§37 Projective Spaces and the Hopf Fibration#^ex-37-1]]

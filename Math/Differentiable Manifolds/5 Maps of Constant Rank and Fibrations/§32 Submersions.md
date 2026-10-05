@@ -5,7 +5,7 @@ chapter: 5
 section: 32
 tags: [differentiable-manifolds, math591]
 ---
-← [[§31 Local Diffeomorphisms]] · ↑ [[· 5 Maps of Constant Rank and Bundles]] · [[§33 Submanifolds]] →
+← [[§31 Local Diffeomorphisms]] · ↑ [[· 5 Maps of Constant Rank and Fibrations]] · [[§33 Submanifolds]] →
 
 *Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§33 Submanifolds|§33]]).*
 
@@ -17,10 +17,10 @@ tags: [differentiable-manifolds, math591]
 ^def-32-1
 
 > [!remark]- Connections
-> - The lecture's definition of immersion, with its normal form: [[§36 Immersions#^def-36-1|Def. §36.1]], [[§36 Immersions#^thm-36-1|§36.1]].
+> - The lecture's definition of immersion, with its normal form: [[§35 Immersions#^def-35-1|Def. §35.1]], [[§35 Immersions#^thm-35-1|§35.1]].
 > - Submersion at $p$ = regular point: [[§28 The Differential in Coordinates#^def-28-1|Def. §28.1]], [[§32 Submersions#^def-32-2|Def. §32.2]].
 
-The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§36 Immersions|§36]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§28 The Differential in Coordinates#^def-28-1|§28.1]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
+The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§35 Immersions|§35]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§28 The Differential in Coordinates#^def-28-1|§28.1]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
 > [!theorem] Proposition §32.1: Dimension Constraints
 > Let $F : M \to N$ be smooth, $m = \dim M$, $n = \dim N$, and $p \in M$.
@@ -69,7 +69,7 @@ Lecture 11 supplied it (Theorem [[§29 Tangent Vectors as Velocities of Curves#^
 
 *Uses:* [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|§29.4]], [[§32 Submersions#^def-32-1|Def. §32.1]]
 
-The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§38 Projective Spaces and the Hopf Fibration|§38]].
+The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§37 Projective Spaces and the Hopf Fibration|§37]].
 
 > [!definition] Definition §32.2: Regular Points and Critical Points
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
@@ -100,11 +100,11 @@ Uribe called (3) “kind of a trivial way to be [regular], but important”: it 
 ^prop-32-2
 
 > [!proof]+ Proof
-> The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|§30.1]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” The second equivalence is Lemma [[§30 Tangent Spaces III꞉ The Cotangent Space#^lem-30-2|§30.2]].
+> The image of the linear map $df_p$ is a subspace of the one-dimensional $T_{f(p)}\mathbb{R} \cong \mathbb{R}$ (Definition [[§30 The Cotangent Space#^def-30-1|§30.1]]), so it is $0$ or everything — “dimensions of images cannot be fractional.” The second equivalence is Lemma [[§30 The Cotangent Space#^lem-30-2|§30.2]].
 
 ^pf-32-2
 
-*Uses:* [[§32 Submersions#^def-32-2|Def. §32.2]], [[§30 Tangent Spaces III꞉ The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 Tangent Spaces III꞉ The Cotangent Space#^lem-30-2|§30.2]]
+*Uses:* [[§32 Submersions#^def-32-2|Def. §32.2]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 §14.1]] (Fermat's theorem).
@@ -139,7 +139,7 @@ This is the definition of critical point Uribe sent to the class by email, and i
 ^thm-32-4
 
 > [!remark]- Connections
-> - The counterpart for immersions: [[§36 Immersions#^thm-36-1|§36.1]]. The main application: the regular value theorem for manifolds, [[§33 Submanifolds#^thm-33-6|§33.6]].
+> - The counterpart for immersions: [[§35 Immersions#^thm-35-1|§35.1]]. The main application: the regular value theorem for manifolds, [[§33 Submanifolds#^thm-33-6|§33.6]].
 
 Stated in Lecture 10 and proved in Lecture 11, below. The inequality $n \le m$ needs no theorem — a surjective linear map cannot raise dimension — but the normal form does: it says that every submersion, in suitable coordinates, *is* a projection.
 

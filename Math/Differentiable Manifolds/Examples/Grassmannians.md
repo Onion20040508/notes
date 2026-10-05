@@ -13,7 +13,7 @@ The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$ of $k$-dimensional linear subspac
 - $\mathrm{Gr}_k(\mathbb{R}^n) \cong \mathrm{O}(n)/(\mathrm{O}(k) \times \mathrm{O}(n-k))$ is compact, Hausdorff and second countable ([[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14]])
 - Expected dimension $k(n-k)$, and the missing charts ([[§14 The Topology of G∕H and Real Grassmannians#^rem-14-4|§14]])
 - For $k = 1$ the Grassmannian topology agrees with the quotient topology on $\mathbb{RP}^n$ ([[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|§17]])
-- Dimension check: $\dim \mathrm{O}(n) - \dim \mathrm{O}(k) - \dim \mathrm{O}(n-k) = k(n-k)$ ([[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9|§23]])
+- Dimension check: $\dim \mathrm{O}(n) - \dim \mathrm{O}(k) - \dim \mathrm{O}(n-k) = k(n-k)$ ([[§23 The Geometric Tangent Space#^rem-23-9|§23]])
 
 ## Definition, and $\mathrm{Gr}_1(\mathbb{R}^n) = \mathbb{RP}^{n-1}$
 ![[§14 The Topology of G∕H and Real Grassmannians#^def-14-3]]
@@ -37,4 +37,4 @@ The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n)$ of $k$-dimensional linear subspac
 ![[§17 Projective Spaces as Smooth Manifolds#^prop-17-6]]
 
 ## Dimension check: $\dim \mathrm{O}(n) - \dim \mathrm{O}(k) - \dim \mathrm{O}(n-k) = k(n-k)$
-![[§23 Tangent Spaces I꞉ The Geometric Picture#^rem-23-9]]
+![[§23 The Geometric Tangent Space#^rem-23-9]]
