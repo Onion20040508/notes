@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, hub]
 - [[§16 Differentiable Structures#^def-16-6|Definition §16.6: Atlas]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5: Basis Theorem]]
 - [[§28 The Differential in Coordinates#^prop-28-1|Proposition §28.1: Partial Derivatives Upstairs and Downstairs]]
-- [[§41 The Tangent Bundle#^def-41-2|Definition §41.2: Local Trivializations of TM]]
+- [[§41 The Tangent Bundle#^def-41-4|Definition §41.4: Local Trivializations of TM]]
 
 ## Its proof uses (other subjects)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 Change-of-basis formula]]

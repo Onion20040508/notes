@@ -120,7 +120,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§28 The Differential in Coordinates#^prop-28-5\|Prop. §28.5]], [[§28 The Differential in Coordinates#^cor-28-6\|Cor. §28.6]] |
 | Proposition 3.14 | [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4\|Thm. §29.4]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-5\|Cor. §29.5]], [[§32 Submersions#^ex-32-2\|Ex. §32.2]] |
 | Proposition 3.15 | [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5\|Thm. §27.5]] |
-| Proposition 3.18 | [[§41 The Tangent Bundle#^def-41-2\|Def. §41.2]], [[§41 The Tangent Bundle#^def-41-3\|Def. §41.3]], [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]], [[§41 The Tangent Bundle#^prop-41-2\|Prop. §41.2]], [[§41 The Tangent Bundle#^prop-41-4\|Prop. §41.4]] |
+| Proposition 3.18 | [[§41 The Tangent Bundle#^def-41-4\|Def. §41.4]], [[§41 The Tangent Bundle#^def-41-5\|Def. §41.5]], [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]], [[§41 The Tangent Bundle#^prop-41-2\|Prop. §41.2]], [[§41 The Tangent Bundle#^prop-41-4\|Prop. §41.4]] |
 | Proposition 3.23 | [[§29 Tangent Vectors as Velocities of Curves#^thm-29-2\|Thm. §29.2]] |
 | Proposition 3.24 | [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3\|Cor. §29.3]] |
 | Corollary 3.25 | [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3\|Thm. §21.3]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3\|Cor. §29.3]] |
@@ -157,7 +157,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^def-20-2\|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
 | Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-3\|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
 | Proposition 11.8 | [[§20 Linear Algebra Toolkit#^prop-20-3\|Prop. §20.3]] |
-| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-2\|Prop. §42.2]], [[§42 The Cotangent Bundle#^def-42-2\|Def. §42.2]], [[§42 The Cotangent Bundle#^def-42-3\|Def. §42.3]], [[§42 The Cotangent Bundle#^prop-42-1\|Prop. §42.1]], [[§42 The Cotangent Bundle#^cor-42-3\|Cor. §42.3]] |
+| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-2\|Prop. §42.2]], [[§42 The Cotangent Bundle#^def-42-4\|Def. §42.4]], [[§42 The Cotangent Bundle#^def-42-5\|Def. §42.5]], [[§42 The Cotangent Bundle#^prop-42-1\|Prop. §42.1]], [[§42 The Cotangent Bundle#^cor-42-3\|Cor. §42.3]] |
 | Proposition 11.11 | [[§43 One-Forms#^prop-43-1\|Prop. §43.1]] |
 | Proposition 11.20 | [[§30 The Cotangent Space#^cor-30-4\|Cor. §30.4]] |
 | Proposition 11.25 | [[§30 The Cotangent Space#^prop-30-10\|Prop. §30.10]], [[§43 One-Forms#^cor-43-4\|Cor. §43.4]] |

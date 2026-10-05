@@ -18,11 +18,37 @@ tags: [differentiable-manifolds, math591]
 > T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M = \{\, (p, \xi) : p \in M,\ \xi \in T_p^*M \,\},
 > $$
 >
-> all the cotangent spaces ([[§30 The Cotangent Space#^def-30-1|Definition §30.1]]) put together. It comes with the **projection** $\pi : T^{\ast}M \to M$, $\pi(p, \xi) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_p^{\ast}M$ is identified with $T_p^{\ast}M$; and with the **zero section** $\zeta : M \to T^{\ast}M$, $\zeta(p) = (p, 0)$.
+> all the cotangent spaces ([[§30 The Cotangent Space#^def-30-1|Definition §30.1]]) put together.
 >
 > *Lee: Ch. 11, The Cotangent Bundle*
 
 ^def-42-1
+
+> [!definition] Definition §42.2: The Projection of $T^*M$
+> The **projection** of the cotangent bundle is
+>
+> $$
+> \pi : T^*M \longrightarrow M, \qquad \pi(p, \xi) = p .
+> $$
+>
+> Its fibre over $p$, $\pi^{-1}(p) = \{p\} \times T_p^{\ast}M$, is identified with $T_p^{\ast}M$.
+>
+> *Lee: Ch. 11, The Cotangent Bundle*
+
+^def-42-2
+
+> [!definition] Definition §42.3: The Zero Section of $T^*M$
+> The **zero section** of the cotangent bundle is
+>
+> $$
+> \zeta : M \longrightarrow T^*M, \qquad \zeta(p) = (p, 0) .
+> $$
+>
+> It is one-to-one, as for $TM$ ([[§41 The Tangent Bundle#^def-41-3|Definition §41.3]]): every cotangent space has a distinguished element, its zero.
+>
+> *Lee: Ch. 11, The Cotangent Bundle*
+
+^def-42-3
 
 > [!remark]- Connections
 > - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]].
@@ -31,7 +57,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ## Trivializations and Charts
 
-> [!definition] Definition §42.2: Local Trivializations of $T^*M$
+> [!definition] Definition §42.4: Local Trivializations of $T^*M$
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $T^{\ast}U = \pi^{-1}(U) = \{(p, \xi) \in T^{\ast}M : p \in U\}$, the covectors at points of $U$. The **local trivialization** of $T^{\ast}M$ over $U$ is
 >
 > $$
@@ -42,10 +68,10 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > *Lee: Proposition 11.9*
 
-^def-42-2
+^def-42-4
 
-> [!definition] Definition §42.3: Charts of $T^*M$
-> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ ([[§42 The Cotangent Bundle#^def-42-2|Definition §42.2]]). The **chart** of $T^{\ast}M$ over $U$ — the **standard coordinates** on $T^{\ast}U$ — is
+> [!definition] Definition §42.5: Charts of $T^*M$
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Psi$ the local trivialization over $U$ ([[§42 The Cotangent Bundle#^def-42-4|Definition §42.4]]). The **chart** of $T^{\ast}M$ over $U$ — the **standard coordinates** on $T^{\ast}U$ — is
 >
 > $$
 > \hat\varphi = (\varphi \times \mathrm{id}) \circ \Psi : T^*U \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, \xi) \longmapsto \big(x^1(p), \ldots, x^m(p), \xi_1, \ldots, \xi_m\big).
@@ -55,7 +81,7 @@ The definitions and results of this section run parallel to those for the tangen
 >
 > *Lee: Proposition 11.9*
 
-^def-42-3
+^def-42-5
 
 > [!theorem] Proposition §42.1: The Topology of $T^*M$
 > There is a unique topology on $T^{\ast}M$ for which every $T^{\ast}U$ is open and every chart $\hat\varphi : T^{\ast}U \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $T^{\ast}M$ is a topological manifold of dimension $2m$.
@@ -65,7 +91,7 @@ The definitions and results of this section run parallel to those for the tangen
 ^prop-42-1
 
 > [!proof]+ Proof
-> *(Not from lecture — “completely analogous”; filled in.)* The proof of [[§41 The Tangent Bundle#^prop-41-1|Proposition §41.1]] uses only two facts about the charts $\tilde\varphi$: each is a bijection of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m$, and each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a homeomorphism between the open sets $\varphi(U \cap V) \times \mathbb{R}^m$ and $\psi(U \cap V) \times \mathbb{R}^m$. Both hold for the charts $\hat\varphi$: the first by [[§42 The Cotangent Bundle#^def-42-3|Definition §42.3]], and the second by the computation in the proof of [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2]] below, which uses only the definitions of the charts, not any topology on $T^{\ast}M$. With $\hat\varphi$, $\hat\psi$ and $T^{\ast}U$ in place of $\tilde\varphi$, $\tilde\psi$ and $TU$, the proof then goes through word for word:
+> *(Not from lecture — “completely analogous”; filled in.)* The proof of [[§41 The Tangent Bundle#^prop-41-1|Proposition §41.1]] uses only two facts about the charts $\tilde\varphi$: each is a bijection of $TU$ onto the open set $\varphi(U) \times \mathbb{R}^m$, and each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is a homeomorphism between the open sets $\varphi(U \cap V) \times \mathbb{R}^m$ and $\psi(U \cap V) \times \mathbb{R}^m$. Both hold for the charts $\hat\varphi$: the first by [[§42 The Cotangent Bundle#^def-42-5|Definition §42.5]], and the second by the computation in the proof of [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2]] below, which uses only the definitions of the charts, not any topology on $T^{\ast}M$. With $\hat\varphi$, $\hat\psi$ and $T^{\ast}U$ in place of $\tilde\varphi$, $\tilde\psi$ and $TU$, the proof then goes through word for word:
 > - declare $W \subseteq T^{\ast}M$ open if $\hat\varphi(W \cap T^{\ast}U)$ is open in $\mathbb{R}^{2m}$ for every chart $(U, \varphi)$; this is a topology, since each $\hat\varphi$ is a bijection;
 > - each $T^{\ast}U$ is open, because $\hat\psi(T^{\ast}U \cap T^{\ast}V) = \psi(U \cap V) \times \mathbb{R}^m$ is open, and each $\hat\varphi$ is a homeomorphism onto its open image, because the transition maps are homeomorphisms;
 > - any topology with these two properties has the same open sets, since $W = \bigcup_U (W \cap T^{\ast}U)$;
@@ -75,7 +101,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-42-1
 
-*Uses:* [[§41 The Tangent Bundle#^prop-41-1|§41.1]], [[§42 The Cotangent Bundle#^def-42-3|Def. §42.3]], [[§42 The Cotangent Bundle#^prop-42-2|§42.2]]
+*Uses:* [[§41 The Tangent Bundle#^prop-41-1|§41.1]], [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]], [[§42 The Cotangent Bundle#^prop-42-2|§42.2]]
 
 > [!theorem] Proposition §42.2: The Smooth Atlas of $T^*M$
 > The charts $(T^{\ast}U, \hat\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on $T^{\ast}M$. For charts $\varphi = (x^i)$ and $\psi = (y^j)$, if $\xi = \sum_i \xi_i\, dx^i|_p = \sum_j \eta_j\, dy^j|_p$, then
@@ -100,7 +126,7 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-42-2
 
-*Uses:* [[§42 The Cotangent Bundle#^def-42-3|Def. §42.3]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§41 The Tangent Bundle#^cor-41-3|§41.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]]
+*Uses:* [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§41 The Tangent Bundle#^cor-41-3|§41.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
@@ -121,11 +147,11 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-42-3
 
-*Uses:* [[§42 The Cotangent Bundle#^prop-42-1|§42.1]], [[§42 The Cotangent Bundle#^prop-42-2|§42.2]], [[§42 The Cotangent Bundle#^def-42-2|Def. §42.2]], [[§42 The Cotangent Bundle#^def-42-3|Def. §42.3]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§34 Fibrations#^def-34-1|Def. §34.1]]
+*Uses:* [[§42 The Cotangent Bundle#^prop-42-1|§42.1]], [[§42 The Cotangent Bundle#^prop-42-2|§42.2]], [[§42 The Cotangent Bundle#^def-42-4|Def. §42.4]], [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§34 Fibrations#^def-34-1|Def. §34.1]]
 
 ## Lecture 15 and the Standard Coordinates
 
-*Lecture 15 returned to the cotangent bundle — “we did define it, but it was all very quick” — because the homework uses it: “the standard coordinates on $T^{\ast}M$, which are also trivializations”, with the components found by evaluating on the dual basis, as in [[§42 The Cotangent Bundle#^def-42-2|Definitions §42.2]] and [[§42 The Cotangent Bundle#^def-42-3|§42.3]]. He also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§30 The Cotangent Space#^thm-30-8|Theorem §30.8]]): “the cotangent space is, in a way, very extremely natural from the point of view of functions.”*
+*Lecture 15 returned to the cotangent bundle — “we did define it, but it was all very quick” — because the homework uses it: “the standard coordinates on $T^{\ast}M$, which are also trivializations”, with the components found by evaluating on the dual basis, as in [[§42 The Cotangent Bundle#^def-42-4|Definitions §42.4]] and [[§42 The Cotangent Bundle#^def-42-5|§42.5]]. He also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§30 The Cotangent Space#^thm-30-8|Theorem §30.8]]): “the cotangent space is, in a way, very extremely natural from the point of view of functions.”*
 
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 

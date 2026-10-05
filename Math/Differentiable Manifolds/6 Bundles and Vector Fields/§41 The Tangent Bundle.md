@@ -18,11 +18,37 @@ tags: [differentiable-manifolds, math591]
 > TM = \bigcup_{p \in M} \{p\} \times T_pM = \{\, (p, v) : p \in M,\ v \in T_pM \,\},
 > $$
 >
-> all the tangent spaces “put together in one big set.” It comes with the **projection** $\pi : TM \to M$, $\pi(p, v) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_pM$ is identified with $T_pM$; and with the **zero section** $\zeta : M \to TM$, $\zeta(p) = (p, 0)$, which is one-to-one because every tangent space has a distinguished element, its zero.
+> all the tangent spaces “put together in one big set.”
 >
 > *Lee: Ch. 3, The Tangent Bundle*
 
 ^def-41-1
+
+> [!definition] Definition §41.2: The Projection of $TM$
+> The **projection** of the tangent bundle is
+>
+> $$
+> \pi : TM \longrightarrow M, \qquad \pi(p, v) = p .
+> $$
+>
+> Its fibre over $p$, $\pi^{-1}(p) = \{p\} \times T_pM$, is identified with $T_pM$.
+>
+> *Lee: Ch. 3, The Tangent Bundle*
+
+^def-41-2
+
+> [!definition] Definition §41.3: The Zero Section of $TM$
+> The **zero section** of the tangent bundle is
+>
+> $$
+> \zeta : M \longrightarrow TM, \qquad \zeta(p) = (p, 0) .
+> $$
+>
+> It is one-to-one because every tangent space has a distinguished element, its zero.
+>
+> *Lee: Ch. 3, The Tangent Bundle*
+
+^def-41-3
 
 > [!remark] Remark: The Picture Changes
 > “There are several psychological inflection steps that one needs to make. The most important one is that we're going to think of $TM$ as fibering over $M$.” A tangent space is usually drawn touching $M$, lying along it. In the bundle picture it stands *vertically*, as the fibre over its point, and $M$ itself sits horizontally inside $TM$ as the zero section — the tangent spaces become “transversal” to it.
@@ -41,7 +67,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 13. “Back to the tangent bundle.” $TM$ has been defined as a set; its charts come from charts of $M$ and the coordinate bases.*
 
-> [!definition] Definition §41.2: Local Trivializations of $TM$
+> [!definition] Definition §41.4: Local Trivializations of $TM$
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, and $TU = \pi^{-1}(U) = \{(p, v) \in TM : p \in U\}$, the tangent vectors at points of $U$. The **local trivialization** over $U$ is
 >
 > $$
@@ -52,10 +78,10 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 3.18*
 
-^def-41-2
+^def-41-4
 
-> [!definition] Definition §41.3: Charts of $TM$
-> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ ([[§41 The Tangent Bundle#^def-41-2|Definition §41.2]]). The **chart** of $TM$ over $U$ is
+> [!definition] Definition §41.5: Charts of $TM$
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $\Phi$ the local trivialization over $U$ ([[§41 The Tangent Bundle#^def-41-4|Definition §41.4]]). The **chart** of $TM$ over $U$ is
 >
 > $$
 > \tilde\varphi = (\varphi \times \mathrm{id}) \circ \Phi : TU \longrightarrow \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}, \qquad (p, v) \longmapsto \big(x^1(p), \ldots, x^m(p), v^1, \ldots, v^m\big).
@@ -65,7 +91,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Proposition 3.18*
 
-^def-41-3
+^def-41-5
 
 ![[m591-17-2.svg]]
 *The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§34 Fibrations#^def-34-1|Definition §34.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
@@ -102,7 +128,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-41-1
 
-*Uses:* [[§41 The Tangent Bundle#^def-41-2|Def. §41.2]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
+*Uses:* [[§41 The Tangent Bundle#^def-41-4|Def. §41.4]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
 
 The same argument, word for word, builds the topology of the cotangent bundle ([[§42 The Cotangent Bundle|§42]]), with the dual bases in place of the coordinate bases.
 
@@ -134,7 +160,7 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 
 ^pf-41-2
 
-*Uses:* [[§41 The Tangent Bundle#^def-41-2|Def. §41.2]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
+*Uses:* [[§41 The Tangent Bundle#^def-41-4|Def. §41.4]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]]
 
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
@@ -159,7 +185,7 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 
 ^pf-41-3
 
-*Uses:* [[§41 The Tangent Bundle#^def-41-2|Def. §41.2]], [[§41 The Tangent Bundle#^prop-41-1|§41.1]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§18 Smooth Functions and Smooth Maps#^def-18-6|Def. §18.6]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
+*Uses:* [[§41 The Tangent Bundle#^def-41-4|Def. §41.4]], [[§41 The Tangent Bundle#^prop-41-1|§41.1]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§18 Smooth Functions and Smooth Maps#^def-18-6|Def. §18.6]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]
 
 > [!theorem] Proposition §41.4: The Tangent Bundle Is a Manifold (Claim)
 > $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
@@ -181,6 +207,6 @@ The transition map of $TM$, in one line: the base point moves by the transition 
 ^rem-41-2
 
 > [!remark] Remark: Trivializations and Frames
-> [[§34 Fibrations#^prop-34-4|Proposition §34.4]] turns local trivializations into local sections. For the tangent bundle the dictionary is between trivializations and *frames*: the trivialization $\Phi$ of a chart (Definition [[§41 The Tangent Bundle#^def-41-2|§41.2]]) corresponds to the $m$ local sections ([[§34 Fibrations#^def-34-3|Def. §34.3]]) $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle ([[§41 The Tangent Bundle#^rem-41-2|Rem. in §41]]) of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example 10.18 and Proposition 10.19). For the Hopf fibration one section suffices because the fibre is a single orbit ([[§12 Group Actions and Orbit Spaces#^def-12-3|Def. §12.3]]) of the free $S^1$-action. That is the general pattern of *principal bundles*, where a group acts freely and transitively on each fibre; it is stated here, not proved.
+> [[§34 Fibrations#^prop-34-4|Proposition §34.4]] turns local trivializations into local sections. For the tangent bundle the dictionary is between trivializations and *frames*: the trivialization $\Phi$ of a chart (Definition [[§41 The Tangent Bundle#^def-41-4|§41.4]]) corresponds to the $m$ local sections ([[§34 Fibrations#^def-34-3|Def. §34.3]]) $u \mapsto \partial/\partial x^i|_u$, since $\Phi^{-1}(u, e_i) = \partial/\partial x^i|_u$; for a vector bundle ([[§41 The Tangent Bundle#^rem-41-2|Rem. in §41]]) of rank $m$ one local section is not enough, and it takes $m$ sections that are linearly independent at every point (Lee, Example 10.18 and Proposition 10.19). For the Hopf fibration one section suffices because the fibre is a single orbit ([[§12 Group Actions and Orbit Spaces#^def-12-3|Def. §12.3]]) of the free $S^1$-action. That is the general pattern of *principal bundles*, where a group acts freely and transitively on each fibre; it is stated here, not proved.
 
 ^rem-41-3

@@ -63,7 +63,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 ^prop-43-1
 
 > [!proof]+ Proof
-> *(Lecture 15 stated it — “smoothness of the form will translate into these functions being smooth”; the proof is filled in.)* At each $p$ the $dx^j|_p$ form a basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$, which gives the expansion and the formula for $\theta_j(p)$. In the chart of $T^{\ast}M$ over $U$ ([[§42 The Cotangent Bundle#^def-42-3|Definition §42.3]]) and the chart $\varphi$ of $M$, the coordinate representation of $\theta$ is $r \mapsto \big(r, \theta_1(\varphi^{-1}(r)), \ldots, \theta_m(\varphi^{-1}(r))\big)$, which is smooth exactly when every $\theta_j \circ \varphi^{-1}$ is.
+> *(Lecture 15 stated it — “smoothness of the form will translate into these functions being smooth”; the proof is filled in.)* At each $p$ the $dx^j|_p$ form a basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$, which gives the expansion and the formula for $\theta_j(p)$. In the chart of $T^{\ast}M$ over $U$ ([[§42 The Cotangent Bundle#^def-42-5|Definition §42.5]]) and the chart $\varphi$ of $M$, the coordinate representation of $\theta$ is $r \mapsto \big(r, \theta_1(\varphi^{-1}(r)), \ldots, \theta_m(\varphi^{-1}(r))\big)$, which is smooth exactly when every $\theta_j \circ \varphi^{-1}$ is.
 
 ^pf-43-1
 

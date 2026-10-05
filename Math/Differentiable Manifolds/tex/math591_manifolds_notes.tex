@@ -9209,7 +9209,25 @@ Let $M$ be a smooth manifold of dimension $m$. Its \textbf{tangent bundle} is th
 \[
 TM = \bigcup_{p \in M} \{p\} \times T_pM = \{\, (p, v) : p \in M,\ v \in T_pM \,\},
 \]
-all the tangent spaces ``put together in one big set.'' It comes with the \textbf{projection} $\pi : TM \to M$, $\pi(p, v) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_pM$ is identified with $T_pM$; and with the \textbf{zero section} $\zeta : M \to TM$, $\zeta(p) = (p, 0)$, which is one-to-one because every tangent space has a distinguished element, its zero.
+all the tangent spaces ``put together in one big set.''
+\leeref{Ch.~3, \emph{The Tangent Bundle}}
+\end{defbox}
+
+\begin{defbox}[The Projection of $TM$]\deflabel{def:tb-projection}
+The \textbf{projection} of the tangent bundle is
+\[
+\pi : TM \longrightarrow M, \qquad \pi(p, v) = p .
+\]
+Its fibre over $p$, $\pi^{-1}(p) = \{p\} \times T_pM$, is identified with $T_pM$.
+\leeref{Ch.~3, \emph{The Tangent Bundle}}
+\end{defbox}
+
+\begin{defbox}[The Zero Section of $TM$]\deflabel{def:tb-zero-section}
+The \textbf{zero section} of the tangent bundle is
+\[
+\zeta : M \longrightarrow TM, \qquad \zeta(p) = (p, 0) .
+\]
+It is one-to-one because every tangent space has a distinguished element, its zero.
 \leeref{Ch.~3, \emph{The Tangent Bundle}}
 \end{defbox}
 
@@ -9378,7 +9396,25 @@ Let $M$ be a smooth manifold of dimension $m$. Its \textbf{cotangent bundle} is 
 \[
 T^*M = \bigcup_{p \in M} \{p\} \times T_p^*M = \{\, (p, \xi) : p \in M,\ \xi \in T_p^*M \,\},
 \]
-all the cotangent spaces (Definition~\ref{def:cotangent}) put together. It comes with the \textbf{projection} $\pi : T^*M \to M$, $\pi(p, \xi) = p$, whose fibre $\pi^{-1}(p) = \{p\} \times T_p^*M$ is identified with $T_p^*M$; and with the \textbf{zero section} $\zeta : M \to T^*M$, $\zeta(p) = (p, 0)$.
+all the cotangent spaces (Definition~\ref{def:cotangent}) put together.
+\leeref{Ch.~11, \emph{The Cotangent Bundle}}
+\end{defbox}
+
+\begin{defbox}[The Projection of $T^*M$]\deflabel{def:ctb-projection}
+The \textbf{projection} of the cotangent bundle is
+\[
+\pi : T^*M \longrightarrow M, \qquad \pi(p, \xi) = p .
+\]
+Its fibre over $p$, $\pi^{-1}(p) = \{p\} \times T_p^*M$, is identified with $T_p^*M$.
+\leeref{Ch.~11, \emph{The Cotangent Bundle}}
+\end{defbox}
+
+\begin{defbox}[The Zero Section of $T^*M$]\deflabel{def:ctb-zero-section}
+The \textbf{zero section} of the cotangent bundle is
+\[
+\zeta : M \longrightarrow T^*M, \qquad \zeta(p) = (p, 0) .
+\]
+It is one-to-one, as for $TM$ (Definition~\ref{def:tb-zero-section}): every cotangent space has a distinguished element, its zero.
 \leeref{Ch.~11, \emph{The Cotangent Bundle}}
 \end{defbox}
 
@@ -9786,12 +9822,22 @@ A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\th
 
 \textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
 
+\textbf{Notation.} The value of a vector field $\mathbf{X}$ (Definition~\ref{def:vector-field}) at $p$ is written $\mathbf{X}_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on.
+
 \begin{defbox}[The Space of Vector Fields]\deflabel{def:vector-fields-space}
-A vector field on $M$ is a smooth section $\mathbf{X}$ of the tangent bundle $TM \to M$ (Definition~\ref{def:vector-field}); its value at $p$ is written $\mathbf{X}_p \in T_pM$, again with $p$ as a subscript, to make room for the function a tangent vector acts on. The set of all vector fields on $M$ is denoted
+The set of all vector fields on $M$ is denoted
 \[
 \mathfrak{X}(M) \qquad \text{(\LaTeX: \texttt{\textbackslash mathfrak\{X\}})}.
 \]
-It is a real vector space, and functions multiply vector fields pointwise: $(f\mathbf{X})_p = f(p) \mathbf{X}_p$.
+It is a real vector space under pointwise addition and scalar multiplication.
+\leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
+\end{defbox}
+
+\begin{defbox}[Product of a Function and a Vector Field]\deflabel{def:function-times-field}
+For $f \in C^\infty(M)$ and $\mathbf{X} \in \mathfrak{X}(M)$, the product $f\mathbf{X}$ is defined pointwise:
+\[
+(f\mathbf{X})_p = f(p)\, \mathbf{X}_p \qquad \text{for every } p \in M .
+\]
 \leeref{Ch.~8, \emph{Vector Fields on Manifolds}}
 \end{defbox}
 
