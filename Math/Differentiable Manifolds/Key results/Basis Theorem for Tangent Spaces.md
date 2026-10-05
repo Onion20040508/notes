@@ -28,7 +28,9 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4|Theorem §29.4: The Tangent Space of a Product]]
 - [[§30 The Cotangent Space#^prop-30-1|Proposition §30.1: The Differential Evaluates Derivations]]
 - [[§30 The Cotangent Space#^thm-30-8|Theorem §30.8: The Cotangent Space from Germs]]
+- [[§39 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-39-1|Example §39.1: Vectors in the Plane in Three Ways]]
 - [[§41 The Tangent Bundle#^prop-41-2|Proposition §41.2: The Smooth Atlas of TM]]
+- [[§44 Vector Fields#^prop-44-1|Proposition §44.1: Vector Fields in Coordinates]]
 
 ## Connections
 - **Used for.** dim T_pM = n, which finishes [[Ambient and Abstract Tangent Spaces Agree]] ([[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|§27.7]]). The coordinate bases give the [[Matrix of the Differential]], the dual bases dxⁱ|_p of T*_pM ([[§30 The Cotangent Space#^lem-30-2|§30.2]]), the charts of TM ([[Tangent Bundle Is a Smooth Manifold]]) and the straight-line curves of [[Every Tangent Vector Is a Velocity]].

@@ -53,22 +53,26 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§2 Topological Manifolds\|§2]] Topological manifolds | Chapter 1, *Topological Manifolds*; Problems 1-1 and 1-2 |
 | [[§3 Subspaces and Products\|§3]]–[[§6 Open Quotients\|§6]] Subspaces, products, quotients | Appendix A, *Subspaces, Products, Disjoint Unions, and Quotients*; Problem 1-9 |
 | [[§7 The Regular Value Theorem\|§7]] Regular value theorem | Appendix C (Theorem C.40); Example 1.32; Corollary 5.14 |
-| [[§10 Topological Groups and Classical Matrix Groups\|§10]]–[[§11 The Classical Groups Are Topological Manifolds\|§11]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Propositions 21.34 and 21.35; Problem 7-4 |
+| [[§10 Topological Groups and Classical Matrix Groups\|§10]] Topological and matrix groups | Chapter 7, Examples 7.27–7.30; Propositions 21.34 and 21.35; Problem 7-4 |
 | [[§12 Group Actions and Orbit Spaces\|§12]] Actions and orbit spaces | Chapter 7, *Group Actions and Equivariant Maps*; Lemma 21.1, Proposition 21.4 |
-| [[§13 Homogeneous Spaces\|§13]]–[[§14 The Topology of G∕H and Real Grassmannians\|§14]] Homogeneous spaces | Theorems 21.17–21.20; Examples 1.36 and 21.21 |
-| [[§16 Differentiable Structures\|§16]]–[[§18 Smooth Functions and Smooth Maps\|§18]] Differentiable structures | Chapter 1, *Smooth Structures*, Examples 1.22–1.34; Chapter 2 |
+| [[§13 Homogeneous Spaces\|§13]] Homogeneous spaces | Theorems 21.17–21.20; Examples 1.36 and 21.21 |
+| [[§16 Differentiable Structures\|§16]] Differentiable structures | Chapter 1, *Smooth Structures*, Examples 1.22–1.34; Chapter 2 |
 | [[§19 Manifolds in Euclidean Space\|§19]] Manifolds in Euclidean space | Example 1.32; Chapter 5 |
-| [[§20 Linear Algebra Toolkit\|§20]]–[[§22 The Orthogonal and Unitary Groups as Smooth Manifolds\|§22]] Vector spaces and matrix groups | Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 |
-| [[§23 The Geometric Tangent Space\|§23]]–[[§24 Transversality\|§24]] Tangent spaces I: geometric | Propositions 3.2, 5.37 and 5.38; Theorem 6.30 |
-| [[§25 Germs\|§25]]–[[§29 Tangent Vectors as Velocities of Curves\|§29]] Tangent spaces II: abstract | Chapter 3 throughout, including Proposition 3.14 (products) |
-| [[§30 The Cotangent Space\|§30]] Tangent spaces III: cotangent | Chapter 11, *Covectors*; Problem 11-4 for $I_p/I_p^2$ |
+| [[§20 Linear Algebra Toolkit\|§20]] Vector spaces and matrix groups | Appendix B; Chapter 11 (dual spaces); Example 1.24; Examples 7.27 and 7.29 |
+| [[§23 The Geometric Tangent Space\|§23]] The geometric tangent space | Propositions 3.2, 5.37 and 5.38; Theorem 6.30 |
+| [[§25 Germs\|§25]]–[[§29 Tangent Vectors as Velocities of Curves\|§29]] Germs, derivations, the abstract tangent space | Chapter 3 throughout, including Proposition 3.14 (products) |
+| [[§30 The Cotangent Space\|§30]] The cotangent space | Chapter 11, *Covectors*; Problem 11-4 for $I_p/I_p^2$ |
 | [[§31 Local Diffeomorphisms\|§31]]–[[§32 Submersions\|§32]] Local diffeomorphisms, submersions | Chapter 4 (Propositions 4.1 and 4.28, Theorem 4.12); Theorem C.34 |
 | [[§33 Submanifolds\|§33]] Submanifolds | Chapter 5, *Embedded Submanifolds* (Theorem 5.8, Corollary 5.14, Propositions 5.35–5.38) |
-| [[§34 Fibrations\|§34]] Fibrations | smooth fiber bundles (Chapter 10); Ehresmann's theorem is not in Lee |
-| [[§41 The Tangent Bundle\|§41]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18); Proposition 11.9 (cotangent bundle); Chapter 8 (vector fields); Chapter 10 (sections) |
+| [[§34 Fibrations\|§34]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
 | [[§35 Immersions\|§35]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§36 Embeddings\|§36]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
 | [[§38 SU(2) → SO(3)꞉ The Double Cover\|§38]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§39 Recap꞉ Germs, Derivations and Tangent Vectors\|§39]]–[[§40 Recap꞉ Covectors and the Four Differentials\|§40]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
+| [[§41 The Tangent Bundle\|§41]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
+| [[§42 The Cotangent Bundle\|§42]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
+| [[§43 One-Forms\|§43]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
+| [[§44 Vector Fields\|§44]] Vector fields | Chapter 8 (Propositions 8.1 and 8.15); Proposition 2.25 (bump functions) |
 
 ## A.4 Index from Lee to these notes
 
@@ -94,7 +98,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.32 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2\|Prop. §19.2]] |
 | Example 1.33 | [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5\|Cor. §17.5]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6\|Prop. §17.6]] |
 | Example 1.34 | [[§18 Smooth Functions and Smooth Maps#^prop-18-8\|Prop. §18.8]] |
-| Lemma 1.35 | [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]] |
+| Lemma 1.35 | [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]], [[§42 The Cotangent Bundle#^prop-42-1\|Prop. §42.1]] |
 | Example 1.36 | [[§14 The Topology of G∕H and Real Grassmannians#^def-14-3\|Def. §14.3]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8\|Cor. §14.8]] |
 | Problem 1-1 | [[§1 Point-Set Topology Review#^ex-1-4\|Ex. §1.4]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-1\|Ex. §4.1]] |
 | Problem 1-2 | [[§2 Topological Manifolds#^ex-2-3\|Ex. §2.3]], [[§2 Topological Manifolds#^prop-2-4\|Prop. §2.4]] |
@@ -104,7 +108,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 2.5 | [[§18 Smooth Functions and Smooth Maps#^prop-18-2\|Prop. §18.2]] |
 | Proposition 2.10 | [[§18 Smooth Functions and Smooth Maps#^lem-18-4\|Lem. §18.4]] |
 | Proposition 2.15 | [[§18 Smooth Functions and Smooth Maps#^prop-18-5\|Prop. §18.5]] |
-| Proposition 2.25 | [[§26 Derivations and the Abstract Tangent Space#^prop-26-3\|Prop. §26.3]] |
+| Proposition 2.25 | [[§26 Derivations and the Abstract Tangent Space#^prop-26-3\|Prop. §26.3]], [[§44 Vector Fields#^prop-44-3\|Prop. §44.3]] |
 | Lemma 3.1 | [[§26 Derivations and the Abstract Tangent Space#^lem-26-2\|Lem. §26.2]] |
 | Proposition 3.2 | [[§23 The Geometric Tangent Space#^def-23-4\|Def. §23.4]], [[§23 The Geometric Tangent Space#^prop-23-9\|Prop. §23.9]], [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2\|Lem. §27.2]], [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-4\|Cor. §27.4]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6\|Thm. §27.6]] |
 | Corollary 3.3 | [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-4\|Cor. §27.4]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5\|Thm. §27.5]], [[§28 The Differential in Coordinates#^prop-28-5\|Prop. §28.5]] |
@@ -116,7 +120,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§28 The Differential in Coordinates#^prop-28-5\|Prop. §28.5]], [[§28 The Differential in Coordinates#^cor-28-6\|Cor. §28.6]] |
 | Proposition 3.14 | [[§29 Tangent Vectors as Velocities of Curves#^thm-29-4\|Thm. §29.4]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-5\|Cor. §29.5]], [[§32 Submersions#^ex-32-2\|Ex. §32.2]] |
 | Proposition 3.15 | [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5\|Thm. §27.5]] |
-| Proposition 3.18 | [[§41 The Tangent Bundle#^def-41-2\|Def. §41.2]], [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]], [[§41 The Tangent Bundle#^prop-41-2\|Prop. §41.2]], [[§41 The Tangent Bundle#^prop-41-4\|Prop. §41.4]] |
+| Proposition 3.18 | [[§41 The Tangent Bundle#^def-41-2\|Def. §41.2]], [[§41 The Tangent Bundle#^def-41-3\|Def. §41.3]], [[§41 The Tangent Bundle#^prop-41-1\|Prop. §41.1]], [[§41 The Tangent Bundle#^prop-41-2\|Prop. §41.2]], [[§41 The Tangent Bundle#^prop-41-4\|Prop. §41.4]] |
 | Proposition 3.23 | [[§29 Tangent Vectors as Velocities of Curves#^thm-29-2\|Thm. §29.2]] |
 | Proposition 3.24 | [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3\|Cor. §29.3]] |
 | Corollary 3.25 | [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3\|Thm. §21.3]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3\|Cor. §29.3]] |
@@ -147,13 +151,17 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 7.30 | [[§10 Topological Groups and Classical Matrix Groups#^def-10-8\|Def. §10.8]], [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6\|Thm. §11.6]], [[§23 The Geometric Tangent Space#^thm-23-5\|Thm. §23.5]] |
 | Problem 7-4 | [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1\|Prop. §11.1]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-2\|Cor. §11.2]] |
 | Problem 7-22 | [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1\|Def. §38.1]] |
+| Proposition 8.1 | [[§44 Vector Fields#^prop-44-1\|Prop. §44.1]] |
+| Proposition 8.15 | [[§44 Vector Fields#^prop-44-5\|Prop. §44.5]] |
 | Example 10.3 | [[§34 Fibrations#^ex-34-2\|Ex. §34.2]] |
-| Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
+| Proposition 11.1 | [[§20 Linear Algebra Toolkit#^def-20-1\|Def. §20.1]], [[§20 Linear Algebra Toolkit#^def-20-2\|Def. §20.2]], [[§20 Linear Algebra Toolkit#^prop-20-2\|Prop. §20.2]] |
 | Proposition 11.4 | [[§20 Linear Algebra Toolkit#^def-20-3\|Def. §20.3]], [[§20 Linear Algebra Toolkit#^prop-20-4\|Prop. §20.4]] |
 | Proposition 11.8 | [[§20 Linear Algebra Toolkit#^prop-20-3\|Prop. §20.3]] |
-| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-2\|Prop. §42.2]] |
+| Proposition 11.9 | [[§42 The Cotangent Bundle#^def-42-1\|Def. §42.1]], [[§42 The Cotangent Bundle#^prop-42-2\|Prop. §42.2]], [[§42 The Cotangent Bundle#^def-42-2\|Def. §42.2]], [[§42 The Cotangent Bundle#^def-42-3\|Def. §42.3]], [[§42 The Cotangent Bundle#^prop-42-1\|Prop. §42.1]], [[§42 The Cotangent Bundle#^cor-42-3\|Cor. §42.3]] |
+| Proposition 11.11 | [[§43 One-Forms#^prop-43-1\|Prop. §43.1]] |
 | Proposition 11.20 | [[§30 The Cotangent Space#^cor-30-4\|Cor. §30.4]] |
-| Problem 11-4 | [[§26 Derivations and the Abstract Tangent Space#^def-26-3\|Def. §26.3]], [[§30 The Cotangent Space#^prop-30-5\|Prop. §30.5]], [[§30 The Cotangent Space#^prop-30-6\|Prop. §30.6]], [[§30 The Cotangent Space#^thm-30-8\|Thm. §30.8]] |
+| Proposition 11.25 | [[§30 The Cotangent Space#^prop-30-10\|Prop. §30.10]], [[§43 One-Forms#^cor-43-4\|Cor. §43.4]] |
+| Problem 11-4 | [[§26 Derivations and the Abstract Tangent Space#^def-26-3\|Def. §26.3]], [[§30 The Cotangent Space#^prop-30-5\|Prop. §30.5]], [[§30 The Cotangent Space#^prop-30-6\|Prop. §30.6]], [[§30 The Cotangent Space#^thm-30-8\|Thm. §30.8]], [[§30 The Cotangent Space#^prop-30-7\|Prop. §30.7]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Lemma 21.1 | [[§12 Group Actions and Orbit Spaces#^lem-12-2\|Lem. §12.2]], [[§12 Group Actions and Orbit Spaces#^lem-12-3\|Lem. §12.3]], [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1\|Prop. §14.1]] |
 | Example 21.3 | [[§12 Group Actions and Orbit Spaces#^ex-12-6\|Ex. §12.6]] |
@@ -168,24 +176,3 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 21.21 | [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-6\|Prop. §14.6]], [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-7\|Prop. §14.7]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8\|Cor. §14.8]] |
 | Proposition 21.34 | [[§15 The Classical Groups#^thm-15-2\|Thm. §15.2]] |
 | Proposition 21.35 | [[§15 The Classical Groups#^prop-15-1\|Prop. §15.1]], [[§15 The Classical Groups#^thm-15-2\|Thm. §15.2]] |
-| Example A.4 | [[§1 Point-Set Topology Review#^ex-1-2\|Ex. §1.2]] |
-| Example A.5 | [[§1 Point-Set Topology Review#^ex-1-3\|Ex. §1.3]], [[§1 Point-Set Topology Review#^prop-1-6\|Prop. §1.6]] |
-| Proposition A.17 | [[§3 Subspaces and Products#^prop-3-3\|Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4\|Cor. §3.4]] |
-| Lemma A.19 | [[§1 Point-Set Topology Review#^prop-1-5\|Prop. §1.5]] |
-| Proposition A.23 | [[§3 Subspaces and Products#^thm-3-10\|Thm. §3.10]], [[§3 Subspaces and Products#^cor-3-11\|Cor. §3.11]] |
-| Theorem A.27 | [[§4 Quotient Spaces and Open Maps#^prop-4-4\|Prop. §4.4]], [[§5 Quotient Maps#^thm-5-1\|Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3\|Cor. §5.3]], [[§5 Quotient Maps#^lem-5-7\|Lem. §5.7]], [[§5 Quotient Maps#^lem-5-8\|Lem. §5.8]] |
-| Theorem A.30 | [[§5 Quotient Maps#^thm-5-1\|Thm. §5.1]], [[§5 Quotient Maps#^cor-5-2\|Cor. §5.2]] |
-| Theorem A.31 | [[§5 Quotient Maps#^prop-5-4\|Prop. §5.4]] |
-| Proposition A.39 | [[§1 Point-Set Topology Review#^prop-1-7\|Prop. §1.7]] |
-| Proposition A.41 | [[§1 Point-Set Topology Review#^prop-1-7\|Prop. §1.7]] |
-| Proposition A.43 | [[§1 Point-Set Topology Review#^prop-1-7\|Prop. §1.7]] |
-| Proposition A.45 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
-| Theorem A.57 | [[§36 Embeddings#^prop-36-4\|Prop. §36.4]] |
-| Corollary B.21 | [[§20 Linear Algebra Toolkit#^prop-20-1\|Prop. §20.1]] |
-| Proposition B.24 | [[§20 Linear Algebra Toolkit#^prop-20-1\|Prop. §20.1]] |
-| Theorem C.15 | [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2\|Lem. §27.2]], [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-3\|Lem. §27.3]] |
-| Theorem C.34 | [[§31 Local Diffeomorphisms#^thm-31-1\|Thm. §31.1]] |
-| Example C.37 | [[§28 The Differential in Coordinates#^ex-28-1\|Ex. §28.1]] |
-| Theorem C.40 | [[§7 The Regular Value Theorem#^thm-7-1\|Thm. §7.1]], [[§7 The Regular Value Theorem#^cor-7-2\|Cor. §7.2]] |

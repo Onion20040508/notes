@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 30.7", "I_p/I_p² ≅ T_p*M", "Lee Problem 11-4"]
+aliases: ["MATH 591 30.8", "I_p/I_p² ≅ T_p*M", "Lee Problem 11-4"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§30 The Cotangent Space#^thm-30-8]]

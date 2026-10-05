@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 39.10", "SU(2) → SO(3) double cover", "spin double cover"]
+aliases: ["MATH 591 38.10", "SU(2) → SO(3) double cover", "spin double cover"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10]]

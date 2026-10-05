@@ -34,6 +34,9 @@ tags: [differentiable-manifolds, hub]
 - [[§33 Submanifolds#^prop-33-8|Proposition §33.8: The Old and New Versions Agree]]
 - [[§35 Immersions#^thm-35-1|Theorem §35.1: Local Normal Form for Immersions]]
 - [[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10|Theorem §38.10: The Double Cover SU(2) → SO(3)]]
+- [[§39 Recap꞉ Germs, Derivations and Tangent Vectors#^ex-39-1|Example §39.1: Vectors in the Plane in Three Ways]]
+- [[§40 Recap꞉ Covectors and the Four Differentials#^ex-40-1|Example §40.1: Covectors in the Plane]]
+- [[§43 One-Forms#^prop-43-5|Proposition §43.5: Pullbacks in Coordinates]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§28 The Differential in Coordinates#^cor-28-4|§28.4]]), agreement with the Jacobian on ℝⁿ ([[§28 The Differential in Coordinates#^prop-28-5|§28.5]]), regular values inside one chart ([[§28 The Differential in Coordinates#^prop-28-7|§28.7]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

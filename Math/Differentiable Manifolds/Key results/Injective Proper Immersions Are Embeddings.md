@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 37.5", "proper embedding", "Lee Proposition 4.22"]
+aliases: ["MATH 591 36.5", "proper embedding", "Lee Proposition 4.22"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§36 Embeddings#^thm-36-5]]

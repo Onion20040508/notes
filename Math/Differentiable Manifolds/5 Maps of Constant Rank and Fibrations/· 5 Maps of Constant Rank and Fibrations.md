@@ -4,19 +4,18 @@ subject: "[[Differentiable Manifolds]]"
 chapter: 5
 tags: [chapter, differentiable-manifolds]
 ---
-# 5 Maps of Constant Rank and Bundles
+# 5 Maps of Constant Rank and Fibrations
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (37), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (44), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (60)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1)
-**Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (47), [[Multivariable Analysis]] (7)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (30), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (40), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (52)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (4)
+**Builds on (other subjects):** [[Linear Algebra]] (15), [[Topology]] (44), [[Multivariable Analysis]] (6)
 
 ## Sections
 - [[§31 Local Diffeomorphisms]]
 - [[§32 Submersions]]
 - [[§33 Submanifolds]]
 - [[§34 Fibrations]]
-- [[§41 The Tangent Bundle]]
 - [[§35 Immersions]]
 - [[§36 Embeddings]]
 - [[§37 Projective Spaces and the Hopf Fibration]]
@@ -26,11 +25,10 @@ tags: [chapter, differentiable-manifolds]
 - [[Local Diffeomorphism Criterion]] (§31.2)
 - [[Submersion Normal Form]] (§32.4)
 - [[Regular Value Theorem for Manifolds]] (§33.6)
-- [[Tangent Bundle Is a Smooth Manifold]] (§35.2)
-- [[Immersion Normal Form]] (§36.1)
-- [[Images of Embeddings Are Submanifolds]] (§37.1)
-- [[Injective Proper Immersions Are Embeddings]] (§37.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§39.10)
+- [[Immersion Normal Form]] (§35.1)
+- [[Images of Embeddings Are Submanifolds]] (§36.1)
+- [[Injective Proper Immersions Are Embeddings]] (§36.5)
+- [[SU(2) Is a Double Cover of SO(3)]] (§38.10)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

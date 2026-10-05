@@ -26,6 +26,9 @@ tags: [multivariable-analysis, hub]
 - [[§22 The Algebra of Differential Forms#^thm-22-5|Theorem §22.5: d² = 0]]
 - [[§22 The Algebra of Differential Forms#^prop-22-9|Proposition §22.9: d² = 0 Is Clairaut's Theorem in Forms Language]]
 
+## Used in (Differentiable Manifolds)
+- [[§43 One-Forms#^prop-43-3|Proposition §43.3: A Necessary Condition for Being a Differential]]
+
 ## Connections
 - **Proof idea.** The mixed second difference I(h, k) is symmetric in the two directions. Applying the one-variable [[Mean Value Theorem]] twice, in either order, writes it as f_xy at one nearby point and as f_yx at another. Continuity at the point finishes the proof.
 - **Where hypotheses matter.** Continuity of the mixed partials is needed. For f = xy(x² − y²)/(x² + y²) with f(0, 0) = 0, both mixed partials exist at the origin, but they are 1 and −1.

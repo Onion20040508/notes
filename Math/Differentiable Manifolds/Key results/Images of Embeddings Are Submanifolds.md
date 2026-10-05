@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 37.1", "embedded submanifold", "Lee Proposition 5.2"]
+aliases: ["MATH 591 36.1", "embedded submanifold", "Lee Proposition 5.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§36 Embeddings#^thm-36-1]]
@@ -16,8 +16,8 @@ tags: [differentiable-manifolds, hub]
 - [[§33 Submanifolds#^def-33-1|Definition §33.1: Submanifold and Adapted Charts]]
 - [[§35 Immersions#^thm-35-1|Theorem §35.1: Local Normal Form for Immersions]]
 - [[§35 Immersions#^cor-35-2|Corollary §35.2: The Local Image of an Immersion]]
-- [[§36 Embeddings#^def-36-1|Definition §36.1: Embedding]]
 - [[§36 Embeddings#^rem-36-1|Remark: Where Is Injectivity Used?]]
+- [[§36 Embeddings#^def-36-1|Definition §36.1: Embedding]]
 
 ## Its proof uses (other subjects)
 - [[§9 Continuous Functions#^prop-9-2|590 §9.2: Equivalent Definition of Homeomorphism]]

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 35.2", "smooth atlas of TM", "Lee Proposition 3.18"]
+aliases: ["MATH 591 41.2", "smooth atlas of TM", "Lee Proposition 3.18"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§41 The Tangent Bundle#^prop-41-2]]
@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, hub]
 - [[§16 Differentiable Structures#^def-16-6|Definition §16.6: Atlas]]
 - [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5: Basis Theorem]]
 - [[§28 The Differential in Coordinates#^prop-28-1|Proposition §28.1: Partial Derivatives Upstairs and Downstairs]]
-- [[§41 The Tangent Bundle#^def-41-2|Definition §41.2: Trivializations and Charts of TM]]
+- [[§41 The Tangent Bundle#^def-41-2|Definition §41.2: Local Trivializations of TM]]
 
 ## Its proof uses (other subjects)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84 Change-of-basis formula]]
@@ -23,7 +23,8 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§41 The Tangent Bundle#^cor-41-3|Corollary §41.3: The Tangent Bundle Is a Fibration]]
 - [[§41 The Tangent Bundle#^prop-41-4|Proposition §41.4: The Tangent Bundle Is a Manifold (Claim)]]
-- [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2: The Cotangent Transition Maps]]
+- [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2: The Smooth Atlas of T^*M]]
+- [[§44 Vector Fields#^prop-44-1|Proposition §44.1: Vector Fields in Coordinates]]
 
 ## Connections
 - **Used for.** TM is a manifold of dimension 2m fibring over M with fibre ℝᵐ, with the zero section a submanifold ([[§41 The Tangent Bundle#^cor-41-3|§41.3]]); vector fields are its sections ([[§44 Vector Fields#^def-44-1|Def. §44.1]]). The same charts with dual bases make T*M a vector bundle ([[§42 The Cotangent Bundle#^prop-42-2|§42.2]]).

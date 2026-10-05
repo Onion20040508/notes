@@ -173,7 +173,7 @@ $$
 > [g] \longmapsto \sum_i v^i\, \frac{\partial g}{\partial r^i}(a) = \frac{d}{dt}\Big|_{t=0} g(a + tv),
 > $$
 >
-> the directional derivative $D_v$ of [[§25 Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]].
+> the directional derivative $D_v$ of [[§23 The Geometric Tangent Space#From Tangent Vectors to Derivations|§23, From Tangent Vectors to Derivations]].
 >
 > *Lee: Proposition 3.13 and Corollary 3.3*
 
@@ -210,7 +210,7 @@ $$
 *Uses:* [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]], [[§28 The Differential in Coordinates#^prop-28-5|§28.5]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-1|Def. §21.1]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-3|Def. §21.3]]
 
 > [!remark] Remark
-> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]]. It also closes a loop opened in [[§25 Germs#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
+> This is what licenses the shared notation $dF_p$: on open subsets of Euclidean spaces the abstract differential *is* the Jacobian, and between vector spaces it is the map of Theorem [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]]. It also closes a loop opened in [[§23 The Geometric Tangent Space#From Tangent Vectors to Derivations|§23, From Tangent Vectors to Derivations]], where a tangent vector $v$ was traded for the operator $D_v$; in $\mathbb{R}^n$ that trade is exactly the identification $e_i \leftrightarrow \partial/\partial r^i$.
 
 ^rem-28-3
 

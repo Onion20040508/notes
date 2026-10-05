@@ -52,7 +52,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-44-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, “analogously” to one-forms; filled in.)* The expansion is the basis theorem at each point, with coefficients $\mathbf{X}_p[x^j]$ ([[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5]]). In the chart $\tilde\varphi$ of $TM$ ([[§41 The Tangent Bundle#^def-41-2|Definition §41.2]]) the coordinate representation of $\mathbf{X}$ is $r \mapsto \big(r, \mathbf{X}^1(\varphi^{-1}(r)), \ldots, \mathbf{X}^m(\varphi^{-1}(r))\big)$, smooth exactly when every $\mathbf{X}^j \circ \varphi^{-1}$ is.
+> *(Stated in Lecture 15, “analogously” to one-forms; filled in.)* The expansion is the basis theorem at each point, with coefficients $\mathbf{X}_p[x^j]$ ([[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|Theorem §27.5]]). In the chart $\tilde\varphi$ of $TM$ ([[§41 The Tangent Bundle#^def-41-3|Definition §41.3]]) the coordinate representation of $\mathbf{X}$ is $r \mapsto \big(r, \mathbf{X}^1(\varphi^{-1}(r)), \ldots, \mathbf{X}^m(\varphi^{-1}(r))\big)$, smooth exactly when every $\mathbf{X}^j \circ \varphi^{-1}$ is.
 
 ^pf-44-1
 

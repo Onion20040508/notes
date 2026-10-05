@@ -265,7 +265,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 \draw[->, thick, gray!70] (M) -- node[pos=0.55, font=\scriptsize, fill=white, inner sep=1.5pt] {normal form} (SM);
 \draw[->, thick, gray!70] (SM) -- node[font=\scriptsize, fill=white, inner sep=1.5pt] {fibres} (BU);
 \draw[->, thick, gray!70] (T2.east) -- ++(0.45,0) |- node[pos=0.25, font=\scriptsize, fill=white, inner sep=1.5pt, rotate=90] {assemble $T_pM$, $T_p^*M$} (BF.east);
-\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (9.2,-17.8) {\ref*{sec:immersions}--\ref*{sec:embeddings}\\ immersions and embeddings};
+\node[draw=gray!70!black, fill=gray!6, rounded corners=3pt, text width=3.9cm, align=center, font=\footnotesize, inner sep=4pt] (IM) at (0,-17.8) {\ref*{sec:immersions}--\ref*{sec:embeddings}\\ immersions and embeddings};
 \draw[->, thick, gray!70] (SM) -- node[pos=0.5, font=\scriptsize, fill=white, inner sep=1.5pt] {images} (IM);
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-6.8) {Ch.~3};
 \node[font=\footnotesize\bfseries, gray!70!black, rotate=90] at (-2.75,-10.9) {Ch.~4};
@@ -9953,7 +9953,7 @@ Example 1.31 & Ex.~\ref{ex:circle-four} \\
 Example 1.32 & Thm.~\ref{thm:regular-value}, Prop.~\ref{prop:level-set-smooth} \\
 Example 1.33 & Cor.~\ref{cor:rpn-atlas}, Prop.~\ref{prop:rpn-topologies} \\
 Example 1.34 & Prop.~\ref{prop:product-manifold} \\
-Lemma 1.35 & Prop.~\ref{prop:tb-topology} \\
+Lemma 1.35 & Prop.~\ref{prop:tb-topology}, Prop.~\ref{prop:ctb-topology} \\
 Example 1.36 & Def.~\ref{def:grassmannian}, Cor.~\ref{cor:grassmannian} \\
 Problem 1-1 & Ex.~\ref{ex:two-origins}, Prop.~\ref{prop:conditions-independent}, Ex.~\ref{ex:two-origins-quotient} \\
 Problem 1-2 & Ex.~\ref{ex:rdisc-times-r}, Prop.~\ref{prop:conditions-independent} \\
@@ -9984,7 +9984,7 @@ Theorem 4.5 & Thm.~\ref{thm:local-diffeo-criterion} \\
 Proposition 4.6 & Cor.~\ref{cor:bijective-local-diffeo} \\
 Proposition 4.8 & Thm.~\ref{thm:local-diffeo-criterion}, Prop.~\ref{prop:dimension-constraints} \\
 Theorem 4.12 & Thm.~\ref{thm:submersion-normal-form}, Thm.~\ref{thm:immersion-normal-form} \\
-Example 4.20 & Prop.~\ref{prop:irrational-line}, Ex.~\ref{ex:irrational-line} \\
+Example 4.20 & Prop.~\ref{prop:irrational-line} \\
 Lemma 4.21 & Lem.~\ref{lem:dirichlet} \\
 Proposition 4.22 & Thm.~\ref{thm:proper-embedding}, Cor.~\ref{cor:compact-embedding} \\
 Proposition 4.28 & Cor.~\ref{cor:submersion-open-map} \\
@@ -10012,11 +10012,11 @@ Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
 Proposition 11.8 & Prop.~\ref{prop:double-dual} \\
-Proposition 11.9 & Def.~\ref{def:cotangent-bundle}, Prop.~\ref{prop:cotangent-transition} \\
+Proposition 11.9 & Def.~\ref{def:cotangent-bundle}, Prop.~\ref{prop:cotangent-transition}, Def.~\ref{def:ctb-trivialization}, Def.~\ref{def:ctb-chart}, Prop.~\ref{prop:ctb-topology}, Cor.~\ref{cor:ctb-fibration} \\
 Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
-Problem 11-4 & Def.~\ref{def:Ip}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
+Problem 11-4 & Def.~\ref{def:Ip}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal}, Prop.~\ref{prop:cotangent-pairing} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Lemma 21.1 & Lem.~\ref{lem:Lg}, Lem.~\ref{lem:orbit-open}, Prop.~\ref{prop:GH-open-sets} \\
 Example 21.3 & Ex.~\ref{ex:nonhausdorff-orbit} \\
@@ -10031,27 +10031,6 @@ Theorem 21.20 & Def.~\ref{def:homogeneous-topology}, Prop.~\ref{prop:homog-basep
 Example 21.21 & Prop.~\ref{prop:On-transitive}, Prop.~\ref{prop:grassmann-isotropy}, Cor.~\ref{cor:grassmannian} \\
 Proposition 21.34 & Thm.~\ref{thm:GL-two-components} \\
 Proposition 21.35 & Prop.~\ref{prop:GL-disconnected}, Thm.~\ref{thm:GL-two-components} \\
-Example A.4 & Ex.~\ref{ex:r-discrete} \\
-Example A.5 & Ex.~\ref{ex:metric-t2}, Prop.~\ref{fact:metric} \\
-Proposition A.17 & Prop.~\ref{prop:univ-subspace}, Cor.~\ref{cor:univ-subspace-characterizes} \\
-Lemma A.19 & Prop.~\ref{fact:cont} \\
-Proposition A.23 & Thm.~\ref{thm:univ-product}, Cor.~\ref{cor:univ-product-characterizes} \\
-Theorem A.27 & Prop.~\ref{prop:saturation-correspondence}, Thm.~\ref{thm:univ-quotient-full}, Cor.~\ref{cor:univ-characterizes}, Lem.~\ref{lem:quotient-restrict}, Lem.~\ref{lem:quotient-restrict-closed} \\
-Theorem A.30 & Thm.~\ref{thm:univ-quotient-full}, Cor.~\ref{prop:univ-quotient} \\
-Theorem A.31 & Prop.~\ref{prop:quotient-map-presents} \\
-Proposition A.39 & Prop.~\ref{fact:conn} \\
-Proposition A.41 & Prop.~\ref{fact:conn} \\
-Proposition A.43 & Prop.~\ref{fact:conn} \\
-Proposition A.45 & Prop.~\ref{fact:compact} \\
-Proposition A.50 & Prop.~\ref{fact:compact} \\
-Lemma A.52 & Prop.~\ref{fact:compact} \\
-Theorem A.57 & Prop.~\ref{prop:proper-closed} \\
-Corollary B.21 & Prop.~\ref{fact:linalg} \\
-Proposition B.24 & Prop.~\ref{fact:linalg} \\
-Theorem C.15 & Lem.~\ref{lem:hadamard}, Lem.~\ref{lem:taylor-hadamard} \\
-Theorem C.34 & Thm.~\ref{thm:inverse-function} \\
-Example C.37 & Ex.~\ref{ex:polar-derivations} \\
-Theorem C.40 & Thm.~\ref{thm:ift-general}, Cor.~\ref{thm:ift} \\
 %LEE-INDEX-ROWS-END
 \bottomrule
 \end{longtable}
