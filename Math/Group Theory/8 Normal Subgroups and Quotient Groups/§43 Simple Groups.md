@@ -176,7 +176,7 @@ tags: [group-theory, math493]
 ^thm-43-9
 
 > [!proof]+ Proof
-> *(Lecture 9/30 proved (1)–(3), the case $(a\,b)(c\,d)$ of (4), and (5). The cases of a $5$-cycle and of two $3$-cycles in (4) were left to a PDF on the course page; they are computed here.)* Since $N$ is normal, $sgs^{-1} \in N$ for every $s \in A_n$ and $g \in N$.
+> *(Lecture 9/30 proved (1)–(3), the case $(a\,b)(c\,d)$ of (4), and (5). The cases of a $5$-cycle and of two $3$-cycles in (4) were left to a PDF on the course page; they are computed here. The PDF's own route is in the remark after this proof, [[§43 Simple Groups#^rem-43-5|Remark (the course handout)]].)* Since $N$ is normal, $sgs^{-1} \in N$ for every $s \in A_n$ and $g \in N$.
 >
 > **(1)** As $g \neq e$, choose $i$ with $g(i) \neq i$, and then $j, k$ with $i, j, k$ distinct and $j, k \notin \{i, g(i)\}$ (possible since $n \geq 4$). By [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Conjugation Relabels a Cycle]], $g\,(i\,j\,k)\,g^{-1} = (g(i)\ g(j)\ g(k))$. This $3$-cycle sends $g(i) \mapsto g(j)$, whereas $(i\,j\,k)$ fixes $g(i)$, because $g(i) \notin \{i, j, k\}$; and $g(j) \neq g(i)$. So $g\,(i\,j\,k)\,g^{-1} \neq (i\,j\,k)$, i.e. $(i\,j\,k)$ does not commute with $g$.
 >
@@ -206,12 +206,35 @@ tags: [group-theory, math493]
 
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§12 Multiplying and Conjugating Cycles#^prop-12-1|§12.1]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§43 Simple Groups#^lem-43-8|§43.8]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§43 Simple Groups#^def-43-1|Def. §43.1]]
 
+> [!remark] Remark: The Course Handout “Simplicity of $A_n$”
+> The handout posted for the cases left open in lecture proves the theorem along the same five steps, following Proof 2 of K. Conrad's note *Simplicity of $A_n$* with some cleverness replaced by computation. It differs from the proof above as follows. Products are composed right to left, as above.
+> - *Step (1), another choice of $k$.* Put $j = g(i) \neq i$ and choose $k \notin \{i, j, g(j)\}$, possible for $n \geq 4$. Then $[g\,(i\,j\,k)](i) = g(j)$, while $[(i\,j\,k)\,g](i) = (i\,j\,k)(j) = k \neq g(j)$, so $(i\,j\,k)$ does not commute with $g$. For $n = 3$ the step fails, since $A_3$ is abelian.
+> - *Step (1), conceptually.* The centralizer $C_{A_n}(g)$ ([[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]]; the handout writes $Z(g)$) is a subgroup of $A_n$. If it contained every $3$-cycle, it would contain a generating set of $A_n$ (Generators of $A_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]), so $C_{A_n}(g) = A_n$ and $g$ would be central in $A_n$. The handout notes that the center of $A_n$ is trivial for $n \geq 4$, but that proving this is no easier than step (1) directly; the viewpoint returns for $PSL_n(F)$ ([[§43 Simple Groups#^thm-43-13|Theorem §43.13]]).
+> - *Step (3).* With $i' = g(i)$, $j' = g(j)$, $k' = g(k)$, the handout writes $h = (i'\,j'\,k')(i\,j\,k)^{-1}$, which fixes every point outside $\{i, j, k, i', j', k'\}$. The type $(a\,b)(c\,d\,e\,f)$ is excluded as above: it needs all six points distinct, and then $h$ is of type $(a\,b\,c)(d\,e\,f)$.
+> - *Step (4), a table.* Each case multiplies $h$, or $h$ renamed, by a second element of $N$ of the same cycle type:
+>
+> | cycle type | product equal to a $3$-cycle | second factor $= \sigma(\text{first})\sigma^{-1}$ |
+> |---|---|---|
+> | $3$ | $(a\,b\,c) = (a\,b\,c)$ | — |
+> | $2+2$ | $[(a\,b)(c\,d)]\,[(a\,b)(d\,e)] = (c\,d\,e)$ | $\sigma = (c\,d\,e)$ |
+> | $5$ | $[(a\,b\,c\,d\,e)]\,[(a\,b\,e\,c\,d)]^{-1} = (a\,e\,c)$ | $\sigma = (c\,e\,d)$ |
+> | $3+3$ | $[(a\,b\,c)(d\,e\,f)]\,[(c\,b\,a)(d\,e\,f)] = (f\,e\,d)$ | $\sigma = (a\,d)(b\,e\,c\,f)$ |
+>
+> Each $\sigma$ is even, so the second factor is an $A_n$-conjugate of the first and lies in $N$; so does its inverse. In the $3+3$ row the two $3$-cycles on $\{a, b, c\}$ cancel and $(d\,e\,f)^2 = (f\,e\,d)$, so this case reaches a $3$-cycle directly, without the detour through a $5$-cycle taken above. The $2+2$ row needs a fifth point $e$, so $n \geq 5$: in $A_4$ no $3$-cycle is a product of double transpositions, since these lie in the subgroup $V$ ([[§43 Simple Groups#^rem-43-7|Why n ≥ 5]]).
+> - *Step (5)* is [[§43 Simple Groups#^lem-43-8|Lemma §43.8]] (3-cycles are conjugate in $A_n$ for $n \geq 5$), with the same proof.
+>
+> As printed, the handout's first sentence says "$A_n$ is normal" for "$A_n$ is simple", step (4) ends with "an $N$-cycle $(ijk)$" for "a $3$-cycle", and the $5$-cycle row reads $[(a\,b\,c\,d\,e)][(a\,b\,e\,c\,d)] = (a\,e\,b)$. That product is the $5$-cycle $(a\,c\,e\,d\,b)$; with the inverse on the second factor, as in the table, it is the $3$-cycle $(a\,e\,c)$.
+>
+> *Source: course handout "Simplicity of $A_n$" (Week 6)*
+
+^rem-43-5
+
 > [!remark] Remark: The Strategy
 > Let $N \trianglelefteq A_n$ with $N \neq \{e\}$; the aim is $N = A_n$. First goal: some $3$-cycle $(i\,j\,k)$ lies in $N$. Second goal: every $3$-cycle lies in $N$. Big goal: $N = A_n$, which then follows because $A_n$ is generated by $3$-cycles (Generators of $A_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]). The argument starts from an arbitrary $g \in N$ with $g \neq e$. On Sept 30 the lecture added the missing link: for $n \geq 5$ the $3$-cycles form a single conjugacy class of $A_n$ ($3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$, [[§43 Simple Groups#^lem-43-8|§43.8]]), so one $3$-cycle in $N$ brings all of them.
 >
 > *Source: lecture 9/28*
 
-^rem-43-5
+^rem-43-6
 
 > [!theorem] Proposition §43.10: The Pair-Partition Homomorphism $S_4 \to S_3$
 > Let $S_4$ act on the three ways of splitting $\{1, 2, 3, 4\}$ into two pairs,
@@ -250,7 +273,7 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 9/30*
 
-^rem-43-6
+^rem-43-7
 
 > [!theorem] Corollary §43.11: Which $A_n$ Are Simple
 > $A_n$ is simple if and only if $n = 3$ or $n \geq 5$.
@@ -297,7 +320,7 @@ tags: [group-theory, math493]
 > [!remark] Remark: Why Finite Fields Here
 > The classification was mentioned only for general culture and is not proved in the course. It explains the notation $\mathbb{F}_q$ in the projective special linear groups $PSL_n(\mathbb{F}_q)$ [[§43 Simple Groups#^def-43-2|below]], one of the three main families of simple groups: the $\mathbb{Z}/p\mathbb{Z}$, the $A_n$ ($n \geq 5$), and the $PSL_n(F)$.
 
-^rem-43-7
+^rem-43-8
 
 > [!definition] Definition §43.2: Projective Special Linear Group
 > Let $F$ be a field and $SL_n(F)$ the group of $n \times n$ matrices over $F$ with determinant $1$. Let $Z = \{\zeta I_n : \zeta \in F,\ \zeta^n = 1\}$, the scalar matrices in $SL_n(F)$. Scalar matrices commute with every matrix, so $Z \subseteq Z(SL_n(F))$ and $Z \trianglelefteq SL_n(F)$. The **projective special linear group** is the quotient $PSL_n(F) := SL_n(F)/Z$.
@@ -333,4 +356,4 @@ tags: [group-theory, math493]
 > [!remark] Remark: About the Proof
 > The proof that $PSL_n(F)$ is simple has many good ideas but is too long to be a worksheet problem. After the cyclic groups $C_p$ and the alternating groups $A_n$ ($n \geq 5$), the $PSL_n(F)$ are the most important simple groups.
 
-^rem-43-8
+^rem-43-9

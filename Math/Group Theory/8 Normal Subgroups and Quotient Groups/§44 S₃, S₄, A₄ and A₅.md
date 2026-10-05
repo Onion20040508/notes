@@ -45,7 +45,7 @@ The normal subgroups of $S_4$ are $\{e\}$, $V$, $A_4$ and $S_4$, read off from i
 
 ![[§43 Simple Groups#^ex-43-1]]
 
-![[§43 Simple Groups#^rem-43-6]]
+![[§43 Simple Groups#^rem-43-7]]
 
 ![[§43 Simple Groups#^ex-43-3]]
 
