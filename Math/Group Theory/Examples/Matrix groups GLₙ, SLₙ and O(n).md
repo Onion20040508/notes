@@ -30,6 +30,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§43 Simple Groups#^def-43-2|§43]])
 - $PSL_n(F)$ is simple, with two exceptions ([[§43 Simple Groups#^thm-43-13|§43]])
 - The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§43 Simple Groups#^ex-43-3|§43]])
+- $GL_2^+(\mathbb{R})/\{\text{scalars}\} \cong PSL_2(\mathbb{R})$ by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-3|§44]])
 - $\det$ is a character of $GL_n(k)$ ([[§45 Characters#^ex-45-1|§45]])
 - Characters are the representations into $GL_1(k) = k^\times$ ([[§45 Characters#^rem-45-4|§45]])
 
@@ -108,6 +109,9 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 
 ## The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$
 ![[§43 Simple Groups#^ex-43-3]]
+
+## $GL_2^+(\mathbb{R})/\{\text{scalars}\} \cong PSL_2(\mathbb{R})$ by the Second Isomorphism Theorem
+![[§44 S₃, S₄, A₄ and A₅#^ex-44-3]]
 
 ## $\det$ is a character of $GL_n(k)$
 ![[§45 Characters#^ex-45-1]]

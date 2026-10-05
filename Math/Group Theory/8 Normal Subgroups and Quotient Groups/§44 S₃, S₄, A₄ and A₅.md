@@ -49,7 +49,12 @@ The normal subgroups of $S_4$ are $\{e\}$, $V$, $A_4$ and $S_4$, read off from i
 
 ![[§43 Simple Groups#^ex-43-3]]
 
-The normal subgroups of $S_4$ and the Second Isomorphism Theorem route to $S_4/V \cong S_3$ are in [[§39 Sources of Normal Subgroups#^ex-39-3|Normal Subgroups of S₃ and S₄]] and [[§44 S₃, S₄, A₄ and A₅#^ex-44-1|The Second Isomorphism Theorem in Action]] (in the $S_3$ part); [[§43 Simple Groups#^cor-43-11|Which Aₙ Are Simple]] records $A_4$ as the exception.
+The normal subgroups of $S_4$ and the Second Isomorphism Theorem route to $S_4/V \cong S_3$ are in [[§39 Sources of Normal Subgroups#^ex-39-3|Normal Subgroups of S₃ and S₄]] and [[§44 S₃, S₄, A₄ and A₅#^ex-44-1|The Second Isomorphism Theorem in Action]] (in the $S_3$ part); [[§43 Simple Groups#^cor-43-11|Which Aₙ Are Simple]] records $A_4$ as the exception. [[§44 S₃, S₄, A₄ and A₅#^ex-44-2|Example §44.2]] (below) lists the six subgroups of $S_4$ containing $V$ through the Correspondence Theorem.
+
+> [!example] Example §44.2: The Correspondence for $S_4$ and $V$
+> Take $G = S_4$ and $N = V$, so $G/N \cong S_3$ ([[§43 Simple Groups#^prop-43-10|Proposition §43.10]]); by the Correspondence Theorem ([[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|Theorem §42.3]]), $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $V$: these are $V$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $V \cup \tau V$ for a transposition $\tau$, e.g. $V \cup (1\,2)V$. Normal ones match normal ones: $V$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
+
+^ex-44-2
 
 *$S_4$, $A_4$ and $V$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#S₄, A₄ and the Klein Four-Group V|Chapter 7]] · no later appearance yet · [[S₄, A₄ and the Klein four-group|all appearances]]
 
@@ -96,6 +101,23 @@ $SL_n$ is normal in $GL_n$ as the kernel of $\det$, with $GL_n(k)/SL_n(k) \cong 
 
 ![[§43 Simple Groups#^thm-43-13]]
 
-$\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]] (both in the $A_n$ part); the exceptions are [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part).
+$\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]] (both in the $A_n$ part); the exceptions are [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part). [[§44 S₃, S₄, A₄ and A₅#^ex-44-3|Example §44.3]] (below) applies the Second Isomorphism Theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalars, reaching $PSL_2(\mathbb{R})$.
+
+> [!example] Example §44.3: $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the Scalars
+> In $G = GL_2(\mathbb{R})$ let $N = SL_2(\mathbb{R}) = \{g : \det g = 1\}$ and $Z = \{zI_2 : z \in \mathbb{R}^\times\}$, the scalar matrices. Both are normal: $SL_2(\mathbb{R})$ is the kernel of $\det$, and scalar matrices commute with every matrix. Their intersection is $SL_2(\mathbb{R}) \cap Z = \{\pm I_2\}$, since $\det(zI_2) = z^2$. Their product is
+>
+> $$ SL_2(\mathbb{R})\,Z = GL_2^+(\mathbb{R}) := \{g : \det g > 0\}: $$
+>
+> $\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\det g = d > 0$ then $g = (\sqrt{d}\,I_2)(g/\sqrt{d})$ with $\det(g/\sqrt{d}) = d/d = 1$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-4|Second Isomorphism Theorem]] then gives two isomorphisms, according to which subgroup plays the normal role:
+> 1. normal subgroup $Z$, other subgroup $SL_2(\mathbb{R})$ (the statement on the board):
+>
+>    $$ GL_2^+(\mathbb{R})/Z \;\cong\; SL_2(\mathbb{R})/\{\pm I_2\} = PSL_2(\mathbb{R}) $$
+>
+>    ([[§43 Simple Groups#^def-43-2|Definition §43.2]]);
+> 2. normal subgroup $SL_2(\mathbb{R})$, other subgroup $Z$: $GL_2^+(\mathbb{R})/SL_2(\mathbb{R}) \cong Z/\{\pm I_2\}$, which is $\cong \mathbb{R}_{>0}$ via $zI_2 \mapsto z^2$.
+>
+> *Source: lecture 10/5*
+
+^ex-44-3
 
 *$GL_n$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§47 S₃, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]] → · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

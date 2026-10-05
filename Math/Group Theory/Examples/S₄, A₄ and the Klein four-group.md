@@ -21,6 +21,7 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - $A_4$ is the exception among the $A_n$ with $n \geq 3$: it is not simple ([[§43 Simple Groups#^cor-43-11|§43]])
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $S_4/V \cong S_3$ by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|§44]])
+- The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-2|§44]])
 
 ## Chapter by chapter
 
@@ -70,3 +71,6 @@ Revisit parts for $S_4$, $A_4$ and $V$, chapter by chapter: [[§32 Linear Groups
 
 ## $S_4/V \cong S_3$ by the Second Isomorphism Theorem
 ![[§44 S₃, S₄, A₄ and A₅#^ex-44-1]]
+
+## The six subgroups of $S_4$ containing $V$, by the Correspondence Theorem
+![[§44 S₃, S₄, A₄ and A₅#^ex-44-2]]
