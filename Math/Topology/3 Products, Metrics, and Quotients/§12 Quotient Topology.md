@@ -290,7 +290,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 *Uses:* [[§12 Quotient Topology#^thm-12-3|§12.3]], [[§12 Quotient Topology#^ex-12-4|Ex. §12.4]]
 
 > [!remark]- Connections
-> - Algebraic counterpart: the first isomorphism theorem, [[§41 The First Isomorphism Theorem#^thm-41-1|493 Thm. §41.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
+> - Algebraic counterpart: the first isomorphism theorem, [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then

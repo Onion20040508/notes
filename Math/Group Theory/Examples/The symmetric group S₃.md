@@ -34,7 +34,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - $S_3/A_3$ is cyclic of order $2$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 - $S_3/A_3$ computed with the representatives $\{e, (2\,3)\}$ ([[§40 Quotient Groups#^ex-40-3|§40]])
 - The representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$ ([[§40 Quotient Groups#^rem-40-3|§40]])
-- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§42 The Second and Third Isomorphism Theorems#^ex-42-1|§42]])
+- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§42]])
 - $S_3$ as the quotient $S_4/V$ ([[§43 Simple Groups#^prop-43-10|§43]])
 - $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/V \cong S_3$, by the Second Isomorphism Theorem ([[§44 S₃, S₄, A₄ and A₅#^ex-44-1|§44]])
@@ -129,7 +129,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§40 Quotient Groups#^rem-40-3]]
 
 ## $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$
-![[§42 The Second and Third Isomorphism Theorems#^ex-42-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-2]]
 
 ## $S_3$ as the quotient $S_4/V$
 ![[§43 Simple Groups#^prop-43-10]]

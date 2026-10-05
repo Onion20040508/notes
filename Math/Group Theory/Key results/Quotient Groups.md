@@ -20,7 +20,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
-- [[§41 The First Isomorphism Theorem#^cor-41-2|Corollary §41.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
+- [[§41 The First and Second Isomorphism Theorems#^cor-41-2|Corollary §41.2: ∣G∣ = ∣Keralpha∣ · ∣Imalpha∣]]
 - [[§46 Commutators#^prop-46-6|Proposition §46.6: The Abelianization Is Abelian]]
 
 ## Connections

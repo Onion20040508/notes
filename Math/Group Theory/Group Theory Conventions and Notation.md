@@ -30,7 +30,7 @@ tags: [group-theory, math493]
 | $G^{\mathrm{ab}}$ | Abelianization $G/[G,G]$. | [[§46 Commutators#^def-46-3\|Def. §46.3]] |
 | $G/N$, $\pi$ | Quotient group by a normal subgroup; canonical projection $g \mapsto gN$. | [[§40 Quotient Groups#^def-40-1\|Def. §40.1]] |
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§43 Simple Groups#^def-43-2\|Def. §43.2]] |
-| $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§42 The Second and Third Isomorphism Theorems#^def-42-1\|Def. §42.1]] |
+| $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§41 The First and Second Isomorphism Theorems#^def-41-1\|Def. §41.1]] |
 | $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§40 Quotient Groups#^def-40-2\|Def. §40.2]] |
 | $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-4\|§40.4]] |
 | *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |

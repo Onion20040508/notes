@@ -56,7 +56,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 states this without proof: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 §21.1 (3)]].
-> - Generalized to orbits: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer, §30.3]]; the homomorphism version: [[§41 The First Isomorphism Theorem#^cor-41-2|§41.2]].
+> - Generalized to orbits: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer, §30.3]]; the homomorphism version: [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]].
 > - Elementary instance: Gauss's proof of Fermat in [[§24★ Congruence Modulo a Prime#^rem-24-1|250 Remark §24.1]] (three proofs of Fermat) is this argument for the powers of $a$ among the nonzero residues modulo $p$.
 
 > [!theorem] Corollary §29.3: Order of an Element Divides $|G|$; $g^{|G|} = e$
@@ -90,7 +90,7 @@ tags: [group-theory, math493]
 > - Same theorem in 250, proved without groups by the bijection of [[§8 Invertibility and Unit Groups#^prop-8-2|§8.2]]: [[§24★ Congruence Modulo a Prime#^thm-24-1|250 Thm. §24.1]].
 
 > [!remark] Remark: Uses of Lagrange
-> The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group: e.g. the subgroups of $S_3$ ([[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]) have orders $1, 2, 3, 6$, and no subgroup of order $4$ or $5$ can exist. [[§29 The Index and Lagrange's Theorem#^cor-29-3|The corollary]] explains the pattern observed in [[§15 Homomorphisms#^ex-15-2|Ex. §15.2]]: for $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, the image had $3$ elements and the kernel $2$, with $3 \cdot 2 = 6$ — the index of $\operatorname{Ker}(\varphi)$ equals $|\operatorname{Im}(\varphi)|$, a fact that the [[§41 The First Isomorphism Theorem#^thm-41-1|first isomorphism theorem]] will make precise. Note also that the [[§29 The Index and Lagrange's Theorem#^ex-29-1|converse of Lagrange fails]] in general: a divisor of $|G|$ need not be the order of a subgroup.
+> The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group: e.g. the subgroups of $S_3$ ([[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]) have orders $1, 2, 3, 6$, and no subgroup of order $4$ or $5$ can exist. [[§29 The Index and Lagrange's Theorem#^cor-29-3|The corollary]] explains the pattern observed in [[§15 Homomorphisms#^ex-15-2|Ex. §15.2]]: for $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, the image had $3$ elements and the kernel $2$, with $3 \cdot 2 = 6$ — the index of $\operatorname{Ker}(\varphi)$ equals $|\operatorname{Im}(\varphi)|$, a fact that the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first isomorphism theorem]] will make precise. Note also that the [[§29 The Index and Lagrange's Theorem#^ex-29-1|converse of Lagrange fails]] in general: a divisor of $|G|$ need not be the order of a subgroup.
 
 ^rem-29-1
 

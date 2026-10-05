@@ -275,7 +275,7 @@ A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equ
 *Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]]
 
 > [!remark]- Connections
-> - The group version: [[§41 The First Isomorphism Theorem#^thm-41-1|493 Thm. §41.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
+> - The group version: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
 
 The proof contains the general principle for defining functions on a quotient set: a rule $[x] \mapsto g(x)$, computed from a representative, defines a function $X/{\sim} \to Z$ exactly when $x \sim x' \Rightarrow g(x) = g(x')$. Otherwise it is not *well defined*.
 

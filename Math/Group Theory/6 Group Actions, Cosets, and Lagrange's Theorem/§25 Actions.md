@@ -234,7 +234,7 @@ tags: [group-theory, math493]
 *Uses:* [[§25 Actions#^ex-25-2|Ex. §25.2]], [[§25 Actions#^def-25-3|Def. §25.3]], [[§25 Actions#^prop-25-4|§25.4]]
 
 > [!remark]- Connections
-> - Revisited through the First Isomorphism Theorem: [[§41 The First Isomorphism Theorem#^rem-41-3|PS 3.1 and PS 3.2 as Instances]].
+> - Revisited through the First Isomorphism Theorem: [[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]].
 
 > [!theorem] Corollary §25.6: Every Finite Group Is a Matrix Group
 > Let $G$ be a group with $n$ elements and $k$ any field. Then $G$ is isomorphic to a subgroup of $GL_n(k)$.

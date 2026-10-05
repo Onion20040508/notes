@@ -26,7 +26,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$ ([[§34 Conjugation as an Action and the Class Equation#^rem-34-2|§34]])
 - $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§39 Sources of Normal Subgroups#^ex-39-2|§39]])
 - Normal and non-normal subgroups of $GL_2(\mathbb{R})$ ([[§39 Sources of Normal Subgroups#^prop-39-8|§39]])
-- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§41 The First Isomorphism Theorem#^ex-41-1|§41]])
+- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41]])
 - The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§43 Simple Groups#^def-43-2|§43]])
 - $PSL_n(F)$ is simple, with two exceptions ([[§43 Simple Groups#^thm-43-13|§43]])
 - The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§43 Simple Groups#^ex-43-3|§43]])
@@ -98,7 +98,7 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 ![[§39 Sources of Normal Subgroups#^prop-39-8]]
 
 ## $GL_n(k)/SL_n(k) \cong k^\times$
-![[§41 The First Isomorphism Theorem#^ex-41-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-1]]
 
 ## The projective special linear group $PSL_n(F) = SL_n(F)/Z$
 ![[§43 Simple Groups#^def-43-2]]

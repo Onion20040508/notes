@@ -11,14 +11,14 @@ tags: [group-theory, math493]
 *Submitted. Each problem is treated in the main text, at the location indicated.*
 
 > [!question] Problem 4.1: Products of Subgroups
-> Let $A$ and $B$ be [[§4 Subgroups#^def-4-1|subgroups]] of $G$, and $AB = \{ab : a \in A,\ b \in B\}$ ([[§42 The Second and Third Isomorphism Theorems#^def-42-1|Def. §42.1]]).
+> Let $A$ and $B$ be [[§4 Subgroups#^def-4-1|subgroups]] of $G$, and $AB = \{ab : a \in A,\ b \in B\}$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]).
 >
 > 1. Give an example to show that $AB$ is not necessarily a subgroup of $G$.
 > 2. Suppose that $B$ is a [[§38 Normal Subgroups#^def-38-1|normal subgroup]] of $G$. Show that $AB$ is a subgroup of $G$. (The same holds if $A$ is normal; only one needs to be written up.)
 
 ^hw-4-1
 
-*Treated in [[§42 The Second and Third Isomorphism Theorems|§42]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§42 The Second and Third Isomorphism Theorems#^lem-42-1|§42.1]]; $AB$ Need Not Be a Subgroup, [[§42 The Second and Third Isomorphism Theorems#^ex-42-1|Ex. §42.1]]).*
+*Treated in [[§42 The Correspondence and Third Isomorphism Theorems|§42]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]; $AB$ Need Not Be a Subgroup, [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]).*
 
 > [!question] Problem 4.2: Normal Subgroups with Trivial Intersection
 > Let $M$ and $N$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ with $M \cap N = \{e\}$. Show that $mn = nm$ for all $m \in M$, $n \in N$. Hint: write the conclusion as $mnm^{-1}n^{-1} = 1$.

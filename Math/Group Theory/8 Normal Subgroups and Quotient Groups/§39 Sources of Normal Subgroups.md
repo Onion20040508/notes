@@ -74,7 +74,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-3
 
 > [!proof]+ Proof
-> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First Isomorphism Theorem#^rem-41-1|§41]]).
+> The inclusion is a homomorphism because the operation of $\langle (1\,2) \rangle$ is that of $S_3$. Its image $\{e, (1\,2)\}$ is not normal: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \{e, (1\,2)\}$ (A Non-Normal Subgroup of $S_3$, [[§38 Normal Subgroups#^ex-38-1|Ex. §38.1]]). The lecture of Fri Sept 25 used the same example in the form $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$ ([[§41 The First and Second Isomorphism Theorems#^rem-41-1|§41]]).
 
 ^pf-39-3
 
@@ -117,7 +117,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 *The proof of PS 3.2: $N = \operatorname{Ker}\varphi$, and $\bar\varphi(gN) = \varphi(g)$ is injective, so $[G : N] \leq n!$.*
 
 > [!remark]- Connections
-> - Re-read through the First Isomorphism Theorem: [[§41 The First Isomorphism Theorem#^rem-41-3|PS 3.1 and PS 3.2 as Instances]]; $N$ is identified in [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core]].
+> - Re-read through the First Isomorphism Theorem: [[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]]; $N$ is identified in [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core]].
 
 > [!theorem] Proposition §39.6: The Normal Core
 > In [[§39 Sources of Normal Subgroups#^thm-39-5|PS 3.2]], let $N = \operatorname{Ker}(G \to S_{G/H})$. Then:
@@ -130,14 +130,14 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 ^prop-39-6
 
 > [!proof]+ Proof
-> **(1)** The kernel of an action is the intersection of all stabilizers, and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First Isomorphism Theorem#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §41).
+> **(1)** The kernel of an action is the intersection of all stabilizers, and $\operatorname{Stab}(xH) = xHx^{-1}$ ([[§31 G Acting on Coset Spaces#^prop-31-1|WS 5.4]]). **(2)** If $M \trianglelefteq G$ and $M \subseteq H$, then $M = xMx^{-1} \subseteq xHx^{-1}$ for every $x$, so $M \subseteq N$ by (1). **(3)** The image of $\bar\varphi$ is $\varphi(G)$, a subgroup of $S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $|S_{G/H}| = n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]]. With the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] this is the statement $G/N \cong \varphi(G)$ ([[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]], §41).
 
 ^pf-39-6
 
-*Uses:* [[§25 Actions#^def-25-3|Def. §25.3]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First Isomorphism Theorem#^thm-41-1|§41.1]]
+*Uses:* [[§25 Actions#^def-25-3|Def. §25.3]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 > [!remark]- Connections
-> - Part (3) recorded again as item 4 of [[§41 The First Isomorphism Theorem#^ex-41-1|The First Isomorphism Theorem in Action]].
+> - Part (3) recorded again as item 4 of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]].
 
 ## Unions of Conjugacy Classes
 

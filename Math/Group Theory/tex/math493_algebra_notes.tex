@@ -204,6 +204,7 @@
 \begin{center}
 \fbox{\parbox{0.85\textwidth}{
 \textbf{Format:} $\sim$2/3 IBL. Worksheets Mon/Wed; Friday = catch-up lecture (first half) + 10-minute quiz (one homework problem), since Fri Sept 18. \\
+\textbf{Pace (from Oct 5):} about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: solvable groups. \\
 \textbf{Homework:} Due Thursday nights via Gradescope. \\
 \textbf{Midterm:} Thursday after fall break. \quad \textbf{Final:} Wednesday after classes end (per registrar). \\
 \textbf{Office hours:} Wed 3--4pm, Thu 10am--12pm, EH 1064 (IBL room). \quad \textbf{Email:} speyer@umich.edu \\
@@ -3593,9 +3594,9 @@ Definition~\ref{def:similar-matrices} identifies conjugacy with similarity; Prop
 
 \chapter{Normal Subgroups and Quotient Groups}\label{ch:normal}
 
-\textit{Source: Lecture (Mon Sept 21); Worksheet 6 (Wed Sept 23); Lecture (Fri Sept 25); Lecture and Worksheet 7 (Mon Sept 28); Lecture (Wed Sept 30); Lecture (Fri Oct 2).}
+\textit{Source: Lecture (Mon Sept 21); Worksheet 6 (Wed Sept 23); Lecture (Fri Sept 25); Lecture and Worksheet 7 (Mon Sept 28); Lecture (Wed Sept 30); Lecture (Fri Oct 2); Lecture and Worksheet 8 (Mon Oct 5).}
 
-Normal subgroups are exactly the subgroups for which multiplication of cosets is well defined, so that the cosets $G/N$ form a group. This chapter gives the equivalent characterizations of normality, the main sources of normal subgroups (index two, kernels, unions of conjugacy classes). It then constructs the quotient group $G/N$ and proves the converse of ``kernels are normal'': every normal subgroup is a kernel, namely of the projection $G \to G/N$. The First Isomorphism Theorem shows that every homomorphic image of $G$ is, up to isomorphism, a quotient of $G$, and it yields the counting formula $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, the group-theoretic counterpart of rank--nullity; computing in $G/N$ with a set of representatives leads to the Second Isomorphism Theorem, $H/(H \cap N) \cong HN/N$. It ends with simple groups, which cannot be broken into a normal subgroup and a quotient: the cyclic groups of prime order, the alternating groups $A_n$ for $n \geq 5$, and the projective special linear groups.
+Normal subgroups are exactly the subgroups for which multiplication of cosets is well defined, so that the cosets $G/N$ form a group. This chapter gives the equivalent characterizations of normality, the main sources of normal subgroups (index two, kernels, unions of conjugacy classes). It then constructs the quotient group $G/N$ and proves the converse of ``kernels are normal'': every normal subgroup is a kernel, namely of the projection $G \to G/N$. The First Isomorphism Theorem shows that every homomorphic image of $G$ is, up to isomorphism, a quotient of $G$, and it yields the counting formula $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$, the group-theoretic counterpart of rank--nullity; computing in $G/N$ with a set of representatives leads to the Second Isomorphism Theorem, $H/(H \cap N) \cong HN/N$ (\ref{sec:first-iso}), and to the correspondence between subgroups of $G/N$ and subgroups of $G$ containing $N$ (\ref{sec:second-iso}). It ends with simple groups, which cannot be broken into a normal subgroup and a quotient: the cyclic groups of prime order, the alternating groups $A_n$ for $n \geq 5$, and the projective special linear groups.
 
 \section{Multiplying Cosets}\label{sec:multiplying-cosets}
 
@@ -3926,7 +3927,7 @@ In $S_3/A_3$ the representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \c
 
 
 
-\section{The First Isomorphism Theorem}\label{sec:first-iso}
+\section{The First and Second Isomorphism Theorems}\label{sec:first-iso}
 
 \textit{Reference: Pinter Ch.\ 16 (there called the Fundamental Homomorphism Theorem).}
 
@@ -3990,19 +3991,16 @@ an injective homomorphism is an isomorphism onto its image, which is exactly the
 \textbf{PS 3.2 (a normal subgroup inside $H$).} The proof defines $\bar\varphi: G/N \to S_{G/H}$, $\bar\varphi(gN) = \varphi(g)$, for $N = \operatorname{Ker}\varphi$, and checks that it is well defined ($g' = gk$ with $k \in N$ gives $\varphi(g') = \varphi(g)$) and injective ($\varphi(g) = \varphi(g')$ gives $g^{-1}g' \in N$). These are the first two steps of the proof of the First Isomorphism Theorem, carried out before the theorem was available, when $G/N$ was only a set of cosets and injectivity gave $[G:N] \leq n!$ by counting. Now that $G/N$ is a group, $\bar\varphi$ is the isomorphism $\beta$ of the theorem onto $\varphi(G) \leq S_{G/H}$, so $[G:N] = |\varphi(G)|$ divides $n!$ by Lagrange.
 \end{rembox}
 
-% ============================================================================
-% SECTION: THE SECOND AND THIRD ISOMORPHISM THEOREMS (Lecture of Fri Oct 2)
-% ============================================================================
 
-\section{The Second and Third Isomorphism Theorems}\label{sec:second-iso}
+\subsection{The Second Isomorphism Theorem}\label{sub:second-iso}
 
-\textit{Source: Lecture (Fri Oct 2).}
+\textit{Source: Lecture (Fri Oct 2); Lecture and Worksheet 8 (Mon Oct 5).}
 
 \begin{defbox}[{The Product Set $HN$}]\label{def:product-set-hn}
 For subgroups $H, N$ of $G$, write $HN := \{hn : h \in H,\ n \in N\}$.
 \end{defbox}
 
-\begin{lembox}[{$HN$ Is a Subgroup When $N$ Is Normal (lecture 10/2; PS 4.1(2))}]\label{lem:hn-subgroup-when-n-normal}
+\begin{lembox}[{$HN$ Is a Subgroup When $N$ Is Normal (lecture 10/2; PS 4.1(2); WS 8.1)}]\label{lem:hn-subgroup-when-n-normal}
 If $H \leq G$ and $N \trianglelefteq G$, then $HN$ is a subgroup of $G$, and it contains both $H$ and $N$.
 \end{lembox}
 
@@ -4016,7 +4014,13 @@ If $H \leq G$ and $N \trianglelefteq G$, then $HN$ is a subgroup of $G$, and it 
 By the symmetric argument, $HN$ is also a subgroup when $H$, rather than $N$, is normal (as PS 4.1(2) notes). Without either hypothesis it can fail: $AB$ Need Not Be a Subgroup, below.
 \end{proof}
 
-\begin{thmbox}[{Second Isomorphism Theorem (lecture 10/2)}]\label{thm:second-isomorphism-theorem}
+\begin{exbox}[{$AB$ Need Not Be a Subgroup (PS 4.1(1))}]\label{ex:ab-need-not-subgroup}
+Without normality, the product set of two subgroups can fail to be a subgroup. In $S_3$ take $A = \{e, (1\,2)\}$ and $B = \{e, (1\,3)\}$. Then
+\[ AB = \{e,\ (1\,3),\ (1\,2),\ (1\,2)(1\,3)\} = \{e,\ (1\,2),\ (1\,3),\ (1\,3\,2)\}, \]
+since $(1\,2)(1\,3)$ sends $1 \mapsto 3 \mapsto 3$, $3 \mapsto 1 \mapsto 2$, $2 \mapsto 2 \mapsto 1$. But $(1\,3\,2)^{-1} = (1\,2\,3) \notin AB$, so $AB$ is not closed under inverses. (Neither $A$ nor $B$ is normal in $S_3$; compare $HN$ Is a Subgroup When $N$ Is Normal, above. Alternatively: $|AB| = 4$ does not divide $6$.)
+\end{exbox}
+
+\begin{thmbox}[{Second Isomorphism Theorem (lecture 10/2, 10/5; WS 8.2)}]\label{thm:second-isomorphism-theorem}
 Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the projection. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$, $\pi(H) = \pi(HN)$, and
 \[ H/(H \cap N) \;\cong\; \pi(H) \;=\; \pi(HN) \;\cong\; HN/N. \]
 In particular $H/(H \cap N) \cong HN/N$.
@@ -4025,7 +4029,7 @@ In particular $H/(H \cap N) \cong HN/N$.
 \begin{proof}
 \emph{$\pi(H) = \pi(HN)$.} For $h \in H$, $\pi(h) = \pi(he) \in \pi(HN)$. For $hn \in HN$, $\pi(hn) = \pi(h)\pi(n) = \pi(h) \in \pi(H)$, since $n \in N = \operatorname{Ker}\pi$.
 
-\emph{Two applications of the First Isomorphism Theorem} (\S 38). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ (Kernels Are Normal) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$, so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
+\emph{Two applications of the First Isomorphism Theorem} (Theorem~\ref{thm:first-isomorphism-theorem}). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ (Kernels Are Normal) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$, so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
 \end{proof}
 
 \begin{center}
@@ -4037,6 +4041,31 @@ H \arrow[dr, dash] & & N \arrow[dl, dash] \\
 \captionof{figure}{The ``diamond'' picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.}
 \end{center}
 
+\begin{lembox}[{Restricting a Homomorphism (lecture 10/5)}]\label{lem:restricting-homomorphism}
+Let $f: X \to Y$ be a homomorphism and $X' \leq X$ a subgroup. Then the restriction $f|_{X'}: X' \to Y$ is a homomorphism with $\operatorname{Ker}(f|_{X'}) = \operatorname{Ker}(f) \cap X'$.
+\end{lembox}
+
+\begin{proof}
+The restriction preserves products because $f$ does. For $x \in X'$, $f|_{X'}(x) = e_Y$ iff $f(x) = e_Y$ iff $x \in \operatorname{Ker} f$; so the kernel is $\operatorname{Ker} f \cap X'$.
+\end{proof}
+
+\begin{rembox}[{The Second Isomorphism Theorem Revisited (lecture 10/5)}]\label{rem:second-iso-revisited}
+The lemma is exactly what the proof of the Second Isomorphism Theorem uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
+\[ SN/N \;\cong\; \pi(SN) \;=\; \pi(S) \;\cong\; S/(S \cap N), \]
+each $\cong$ by the First Isomorphism Theorem. WS 8.2 phrases this as: $\alpha: S \to SN \to SN/N$ is surjective with $\operatorname{Ker}\alpha = S \cap N$.
+\end{rembox}
+
+\begin{rembox}[{Linear Algebra Analogy (lecture 10/5)}]\label{rem:linear-algebra-analogy}
+For subspaces $L_1, L_2$ of a vector space $V$, $\dim(L_1 \cap L_2) = \dim L_1 + \dim L_2 - \dim(L_1 + L_2)$. This is the linear-algebra shadow of the Second Isomorphism Theorem: $(L_1 + L_2)/L_2 \cong L_1/(L_1 \cap L_2)$, and taking dimensions gives the formula. The group version replaces dimensions by orders and sums by products (Corollary~\ref{cor:order-sn}).
+\end{rembox}
+
+\begin{corbox}[{The Order of $SN$ (WS 8.3)}]\label{cor:order-sn}
+Let $N \trianglelefteq G$ and $S \leq G$, with $S$ and $N$ finite. Then
+\[ |SN| = \frac{|S|\,|N|}{|S \cap N|}. \]
+\end{corbox}
+
+\proofpending
+
 \begin{corbox}[{Subgroup Representatives, Again (lecture 10/2)}]\label{cor:subgroup-representatives-again}
 If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cong G/N$.
 \end{corbox}
@@ -4044,6 +4073,70 @@ If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cong G/N$.
 \begin{proof}
 Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ (Representatives Forming a Subgroup, \ref{prop:representatives-forming-subgroup}). The theorem gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 \end{proof}
+
+Example~\ref{ex:gl2-plus-scalars}, in the $GL_n$ part of \ref{sec:rev-ch8}, applies the theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalar matrices.
+
+% ============================================================================
+% SECTION: THE CORRESPONDENCE AND THIRD ISOMORPHISM THEOREMS (Lecture of Fri Oct 2; Lecture and Worksheet 8, Mon Oct 5)
+% ============================================================================
+
+\section{The Correspondence and Third Isomorphism Theorems}\label{sec:second-iso}
+
+\textit{Source: Lecture (Fri Oct 2); Lecture and Worksheet 8 (Mon Oct 5).}
+
+\begin{rembox}[{Notation $A/N$}]\label{rem:notation-a-n}
+For any subgroup $A$, the Second Isomorphism Theorem gives $\pi(A) \cong AN/N$. When $N \subseteq A$, $AN = A$, and $\pi(A) = \{aN : a \in A\}$ is written $A/N$: it is the quotient group $A/N$ (as $N \trianglelefteq A$), sitting inside $G/N$. In this notation, the question of WS 8.4(2) is: if $A/N \trianglelefteq G/N$, i.e.\ $(gag^{-1})N \in A/N$ for all $g$, must $A \trianglelefteq G$? Since $N \subseteq A$, $gAg^{-1}N = A$ forces $gAg^{-1} = A$ (lecture 10/5).
+\end{rembox}
+
+\begin{propbox}[{Images of Subgroups Containing $N$ (WS 8.4; lecture 10/5)}]\label{prop:images-subgroups-containing-n}
+Let $N \trianglelefteq G$, $\pi: G \to G/N$, and let $A$ be a subgroup of $G$ with $N \subseteq A$.
+\begin{enumerate}
+    \item $\pi(A)$ is a subgroup of $G/N$.
+    \item $\pi(A)$ is normal in $G/N$ if and only if $A$ is normal in $G$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textbf{(1)} $\pi(A) = \operatorname{Im}(\pi|_A)$, the image of a homomorphism, hence a subgroup (Image and Kernel Are Subgroups, \ref{prop:image-kernel-subgroups}).
+
+\textbf{(2), $\Leftarrow$.} Let $A \trianglelefteq G$, $\pi(a) \in \pi(A)$ and $gN \in G/N$. Then $(gN)\,\pi(a)\,(gN)^{-1} = \pi(g)\pi(a)\pi(g)^{-1} = \pi(gag^{-1})$, and $gag^{-1} \in A$, so this lies in $\pi(A)$.
+
+\textbf{(2), $\Rightarrow$.} Let $\pi(A) \trianglelefteq G/N$, $a \in A$ and $g \in G$; we need $gag^{-1} \in A$. Now
+\[ \pi(gag^{-1}) = \pi(g)\pi(a)\pi(g)^{-1} \in \pi(A) = A/N, \] so $gag^{-1} = a'n$ for some $a' \in A$ and $n \in N$. Since $N \subseteq A$, $a'n \in A$. (This is the only place the hypothesis $N \subseteq A$ is needed, as discussed in lecture.)
+\end{proof}
+
+\begin{propbox}[{Preimages of Subgroups of $G/N$ (WS 8.5)}]\label{prop:preimages-subgroups-quotient}
+Let $N \trianglelefteq G$, $\pi: G \to G/N$, and let $B$ be a subgroup of $G/N$.
+\begin{enumerate}
+    \item $\pi^{-1}(B)$ is a subgroup of $G$ containing $N$.
+    \item $\pi^{-1}(B)$ is normal in $G$ if and only if $B$ is normal in $G/N$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textbf{(1) (lecture 10/5).} $\pi^{-1}(B) = \{g \in G : \pi(g) \in B\}$. If $n \in N$, then $\pi(n) = e \in B$, so $n \in \pi^{-1}(B)$; in particular $\pi^{-1}(B)$ contains $e$. If $g_1, g_2 \in \pi^{-1}(B)$, then $\pi(g_1g_2) = g_1g_2N = (g_1N)(g_2N) \in B$, since $B$ is a subgroup; so $g_1g_2 \in \pi^{-1}(B)$. Closure under inverses is the same, as $\pi(g^{-1}) = \pi(g)^{-1}$. (This is also a case of Images and Preimages of Subgroups, \ref{prop:images-preimages-subgroups}.)
+
+\textbf{(2).} \textit{To be filled (WS 8.5(2) was not done in class).}
+\end{proof}
+
+\begin{thmbox}[{The Correspondence Theorem (the ``third/fourth isomorphism theorem'' of WS 8)}]\label{thm:correspondence}
+Let $N \trianglelefteq G$ and $\pi: G \to G/N$. The maps $A \mapsto \pi(A)$ and $B \mapsto \pi^{-1}(B)$ are mutually inverse bijections
+\[ \{\text{subgroups of } G \text{ containing } N\} \;\longleftrightarrow\; \{\text{subgroups of } G/N\}, \]
+and they take normal subgroups to normal subgroups. (In the lecture's summary: $\downarrow$ is WS 8.4, Proposition~\ref{prop:images-subgroups-containing-n}; $\uparrow$ is WS 8.5, Proposition~\ref{prop:preimages-subgroups-quotient}.)
+\end{thmbox}
+
+\proofpending
+
+\begin{propbox}[{Quotients Along the Correspondence (WS 8.6)}]\label{prop:quotients-along-correspondence}
+Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
+\begin{enumerate}
+    \item $gA_1 \mapsto \pi(g)B_1$ is a bijection $A_2/A_1 \to B_2/B_1$.
+    \item $A_1 \trianglelefteq A_2$ if and only if $B_1 \trianglelefteq B_2$.
+    \item If $A_1 \trianglelefteq A_2$, then $A_2/A_1 \cong B_2/B_1$.
+\end{enumerate}
+\end{propbox}
+
+\proofpending
 
 \begin{thmbox}[{Third Isomorphism Theorem (named in lecture 10/2; not covered)}]\label{thm:third-isomorphism-theorem}
 Let $N \subseteq K$ be normal subgroups of $G$. Then $K/N$ is a normal subgroup of $G/N$, and $(G/N)/(K/N) \cong G/K$.
@@ -4055,12 +4148,11 @@ Let $N \subseteq K$ be normal subgroups of $G$. Then $K/N$ is a normal subgroup 
 The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
 \end{rembox}
 
-\begin{exbox}[{$AB$ Need Not Be a Subgroup (PS 4.1(1))}]\label{ex:ab-need-not-subgroup}
-Without normality, the product set of two subgroups can fail to be a subgroup. In $S_3$ take $A = \{e, (1\,2)\}$ and $B = \{e, (1\,3)\}$. Then
-\[ AB = \{e,\ (1\,3),\ (1\,2),\ (1\,2)(1\,3)\} = \{e,\ (1\,2),\ (1\,3),\ (1\,3\,2)\}, \]
-since $(1\,2)(1\,3)$ sends $1 \mapsto 3 \mapsto 3$, $3 \mapsto 1 \mapsto 2$, $2 \mapsto 2 \mapsto 1$. But $(1\,3\,2)^{-1} = (1\,2\,3) \notin AB$, so $AB$ is not closed under inverses. (Neither $A$ nor $B$ is normal in $S_3$; compare $HN$ Is a Subgroup When $N$ Is Normal, above. Alternatively: $|AB| = 4$ does not divide $6$.)
-\end{exbox}
+\begin{rembox}[{Naming the Isomorphism Theorems}]\label{rem:naming-isomorphism-theorems}
+Part (3) with $A_1 = K$ and $A_2 = G$ is the Third Isomorphism Theorem, $G/K \cong (G/N)/(K/N)$, Theorem~\ref{thm:third-isomorphism-theorem}, just above. Worksheet 8 calls the correspondence theorem the ``third/fourth isomorphism theorem''; textbooks vary, and many call it the correspondence (or lattice) theorem and number it fourth. Note also that the worksheet's ``$N \subset A$'' allows $A = N$, which corresponds to the trivial subgroup of $G/N$.
+\end{rembox}
 
+Example~\ref{ex:correspondence-s4-v}, in the $S_4$ part of \ref{sec:rev-ch8}, lists the six subgroups of $S_4$ containing $V$.
 
 \section{Simple Groups}\label{sec:simple}
 
@@ -4320,7 +4412,11 @@ Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is n
 
 The normal subgroups of $S_4$ are $\{e\}$, $V$, $A_4$ and $S_4$, read off from its class sizes. The pair-partition homomorphism $S_4 \to S_3$ has kernel $V$, so $S_4/V \cong S_3$; inside $A_4$ it makes $V$ normal and keeps $(1\,2\,3)$ and $(1\,3\,2)$ apart, which is why $A_4$ is the one non-simple $A_n$ with $n \geq 3$.
 
-Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/V \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
+Example~\ref{ex:normal-subgroups-s3-s4} (in the $S_3$ part) finds the normal subgroups; Example~\ref{ex:second-isomorphism-theorem-action}(2) (in the $S_3$ part) obtains $S_4/V \cong S_3$ from the Second Isomorphism Theorem; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} constructs the homomorphism; Example~\ref{ex:a4-1-2-3-1-3-2-not-conjugate} and the remark \emph{Why $n \geq 5$} (\ref{sec:simple}) show where the simplicity proof breaks for $A_4$; Example~\ref{ex:correspondence-s4-v} (below) lists the six subgroups of $S_4$ containing $V$ through the Correspondence Theorem; Corollary~\ref{cor:which-an-simple} and Example~\ref{ex:two-exceptions} record $A_4$ as the exception, with $A_4 \cong PSL_2(\mathbb{F}_3)$.
+
+\begin{exbox}[{The Correspondence for $S_4$ and $V$}]\label{ex:correspondence-s4-v}
+Take $G = S_4$ and $N = V$, so $G/N \cong S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}); by the Correspondence Theorem (\ref{thm:correspondence}). $S_3$ has six subgroups, so it predicts exactly six subgroups of $S_4$ containing $V$: these are $V$, $A_4$, $S_4$, and three subgroups of order $8$, the preimages of the three subgroups of order $2$; each has the form $V \cup \tau V$ for a transposition $\tau$, e.g.\ $V \cup (1\,2)V$. Normal ones match normal ones: $V$, $A_4$, $S_4$ correspond to $\{e\}$, $A_3$, $S_3$.
+\end{exbox}
 
 \textit{$S_4$, $A_4$ and $V$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-s4}); no later appearance yet.}
 
@@ -4352,7 +4448,19 @@ Example~\ref{ex:z-4z-2z-4z} computes the quotient; the remark \emph{Life Is Espe
 
 $SL_n$ is normal in $GL_n$ as the kernel of $\det$, with $GL_n(k)/SL_n(k) \cong k^\times$, while the diagonal and upper triangular subgroups of $GL_2(\mathbb{R})$ are not normal. Dividing $SL_n(F)$ by its scalar matrices gives $PSL_n(F)$, which is simple except for $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$.
 
-Example~\ref{ex:kernels}(2) and Example~\ref{ex:first-isomorphism-theorem-action}(2) (both in the $A_n$ part) treat $\det$; Proposition~\ref{prop:normal-subgroups-gl2-r} (WS~6.3) sorts four subgroups of $GL_2(\mathbb{R})$; Definition~\ref{def:projective-special-linear-group}, Theorem~\ref{thm:psln-f-simple} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) introduce $PSL_n(F)$ and its two exceptions.
+Example~\ref{ex:kernels}(2) and Example~\ref{ex:first-isomorphism-theorem-action}(2) (both in the $A_n$ part) treat $\det$; Proposition~\ref{prop:normal-subgroups-gl2-r} (WS~6.3) sorts four subgroups of $GL_2(\mathbb{R})$; Definition~\ref{def:projective-special-linear-group}, Theorem~\ref{thm:psln-f-simple} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) introduce $PSL_n(F)$ and its two exceptions; Example~\ref{ex:gl2-plus-scalars} (below) applies the Second Isomorphism Theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalars, reaching $PSL_2(\mathbb{R})$.
+
+\begin{exbox}[{$GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the Scalars (lecture 10/5)}]\label{ex:gl2-plus-scalars}
+In $G = GL_2(\mathbb{R})$ let $N = SL_2(\mathbb{R}) = \{g : \det g = 1\}$ and $Z = \{zI_2 : z \in \mathbb{R}^\times\}$, the scalar matrices. Both are normal: $SL_2(\mathbb{R})$ is the kernel of $\det$, and scalar matrices commute with every matrix. Their intersection is $SL_2(\mathbb{R}) \cap Z = \{\pm I_2\}$, since $\det(zI_2) = z^2$. Their product is
+\[ SL_2(\mathbb{R})\,Z = GL_2^+(\mathbb{R}) := \{g : \det g > 0\}: \]
+$\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\det g = d > 0$ then $g = (\sqrt{d}\,I_2)(g/\sqrt{d})$ with $\det(g/\sqrt{d}) = d/d = 1$. The Second Isomorphism Theorem then gives two isomorphisms, according to which subgroup plays the normal role:
+\begin{enumerate}[nosep]
+    \item normal subgroup $Z$, other subgroup $SL_2(\mathbb{R})$ (the statement on the board):
+    \[ GL_2^+(\mathbb{R})/Z \;\cong\; SL_2(\mathbb{R})/\{\pm I_2\} = PSL_2(\mathbb{R}) \]
+(Definition~\ref{def:projective-special-linear-group});
+    \item normal subgroup $SL_2(\mathbb{R})$, other subgroup $Z$: $GL_2^+(\mathbb{R})/SL_2(\mathbb{R}) \cong Z/\{\pm I_2\}$, which is $\cong \mathbb{R}_{>0}$ via $zI_2 \mapsto z^2$.
+\end{enumerate}
+\end{exbox}
 
 \textit{$GL_n$ elsewhere: previous, Chapter~7 (\ref{sec:rev-ch7-gl}); next, Chapter~9 (\ref{sec:rev-ch9-gl}).}
 
@@ -4602,6 +4710,7 @@ Example~\ref{ex:characters}(2) lists $\det$ among the first characters; the rema
     \item \textbf{To show $N \trianglelefteq G$.} Any of: $gNg^{-1} \subseteq N$ for all $g$; $[G : N] = 2$; $N$ is a kernel; $N$ is a union of conjugacy classes (in particular any subgroup of $Z(G)$, and any subgroup when $G$ is abelian) (\ref{sec:normal}, \ref{sec:normal-sources}). \emph{Not} normal: find $g$ and $n \in N$ with $gng^{-1} \notin N$, or $g$ with $gN \neq Ng$.
     \item \textbf{To identify a quotient $G/N$.} Find a surjective homomorphism out of $G$ whose kernel is $N$; then $G/N$ is isomorphic to its target (First Isomorphism Theorem, \ref{sec:first-iso}). For finite $G$, $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
     \item \textbf{To compute in $G/N$.} Choose one representative per coset; to multiply, multiply in $G$ and replace the product by its representative. If the representatives form a subgroup $S$, then $G/N \cong S$ (\ref{prop:representatives-forming-subgroup}). More generally $H/(H \cap N) \cong HN/N$ (Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}).
+    \item \textbf{To find the subgroups of a quotient $G/N$.} They correspond to the subgroups of $G$ containing $N$, via $A \mapsto A/N$, with normal matching normal (Correspondence Theorem, \ref{thm:correspondence}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -4675,6 +4784,7 @@ Mon Sept 28 \newline lecture; Worksheet 7 & The picture so far; simple groups; h
 Wed Sept 30 \newline lecture & Finite fields; WS 7.4 and 7.5 completed; $3$-cycles conjugate in $A_n$; $S_4 \to S_3$ with kernel $V$; why $n \geq 5$ & \ref{sec:simple} \\
 Thu Oct 1 \newline Problem Set 4 & Products of subgroups; commuting normal subgroups; normal core (again); abelianization; characters of $S_n$ & \ref{sec:second-iso} (4.1), \ref{sec:commutators} (4.2, 4.4, 4.5), \ref{sec:normal-sources} (4.3) \\
 Fri Oct 2 \newline lecture & Computing in $G/N$ with representatives; Second Isomorphism Theorem; Third named & \ref{sec:representatives}, \ref{sec:second-iso} \\
+Mon Oct 5 \newline lecture; Worksheet 8 & Second Isomorphism Theorem revisited; $GL_2^+(\mathbb{R})$ example; correspondence theorem (WS 8.4, 8.5(1)); course pace slowed & \ref{sec:first-iso}, \ref{sec:second-iso} \\
 \end{longtable}}
 
 \textbf{Material not from class.} A few results were added to fill gaps and are tagged in their titles: those marked \emph{cf.\ Pinter} or \emph{cf.\ MATH 412} come from the textbook or from the MATH 412 worksheets, not from MATH 493, and are not part of the examinable content unless Speyer covers them. Everything tagged with a worksheet number, a problem-set number, or a lecture date is course material.

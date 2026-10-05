@@ -42,7 +42,7 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 - $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 - $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ computed with representatives ([[§40 Quotient Groups#^ex-40-2|§40]])
 - $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives ([[§40 Quotient Groups#^rem-40-3|§40]])
-- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First Isomorphism Theorem#^ex-41-1|§41]])
+- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41]])
 - The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§43 Simple Groups#^thm-43-1|§43]])
 
 ## Chapter by chapter
@@ -158,7 +158,7 @@ Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 
 ![[§40 Quotient Groups#^rem-40-3]]
 
 ## The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$
-![[§41 The First Isomorphism Theorem#^ex-41-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-1]]
 
 ## The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$
 ![[§43 Simple Groups#^thm-43-1]]

@@ -33,7 +33,7 @@ tags: [group-theory, hub]
 - [[§39 Sources of Normal Subgroups#^thm-39-5|Theorem §39.5: A Normal Subgroup Inside a Subgroup of Finite Index]]
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
 - [[§40 Quotient Groups#^prop-40-3|Proposition §40.3: Multiplying Through Representatives]]
-- [[§41 The First Isomorphism Theorem#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
+- [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
 - [[§46 Commutators#^prop-46-6|Proposition §46.6: The Abelianization Is Abelian]]
 
 ## Connections

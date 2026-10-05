@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Topological analogue: [[Universal Property of Quotient Maps]] (590 §12.3), same factorization triangle.
-> - Generalized to arbitrary normal subgroups by the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]].
+> - Generalized to arbitrary normal subgroups by the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 
 > [!remark] Remark: Where This Is Used

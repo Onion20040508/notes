@@ -163,7 +163,7 @@ tags: [group-theory, math493]
 *The proof for $n = 3$: left multiplication by $(1\,2)$ flips the sign, so it exchanges the three even permutations, $A_3$ (blue), with the three odd ones (red). Being its own inverse it is a bijection, and $|A_3| = 3!/2 = 3$.*
 
 > [!remark]- Connections
-> - Later readings: $A_n$ has index $2$, hence is normal by [[§39 Sources of Normal Subgroups#^prop-39-1|Subgroups of Index 2 Are Normal]]; the count is an instance of [[§41 The First Isomorphism Theorem#^cor-41-2|§41.2]].
+> - Later readings: $A_n$ has index $2$, hence is normal by [[§39 Sources of Normal Subgroups#^prop-39-1|Subgroups of Index 2 Are Normal]]; the count is an instance of [[§41 The First and Second Isomorphism Theorems#^cor-41-2|§41.2]].
 
 > [!theorem] Lemma §21.6: Adjacent Transpositions from $(1\,j)$'s
 > For $k \geq 2$, $\ (k\ \ k{+}1) = (1\,k)\,(1\ k{+}1)\,(1\,k)$; and $(1\,2)$ is itself of the form $(1\,j)$.

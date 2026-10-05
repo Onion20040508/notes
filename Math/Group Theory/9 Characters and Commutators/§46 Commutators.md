@@ -153,7 +153,7 @@ tags: [group-theory, math493]
 *Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§46 Commutators#^def-46-2|Def. §46.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§46 Commutators#^def-46-1|Def. §46.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!example] Example §46.1: The Abelianization of $S_n$
-> For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup and Characters of $S_n$ ([[§46 Commutators#^thm-46-5|§46.5]]), $[S_n, S_n] = A_n$, and the [[§41 The First Isomorphism Theorem#^thm-41-1|First Isomorphism Theorem]] applied to the surjective homomorphism $\operatorname{sgn}$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ ([[§41 The First Isomorphism Theorem#^ex-41-1|Ex. §41.1]]).
+> For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup and Characters of $S_n$ ([[§46 Commutators#^thm-46-5|§46.5]]), $[S_n, S_n] = A_n$, and the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] applied to the surjective homomorphism $\operatorname{sgn}$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]).
 >
 > *Source: not from class*
 
@@ -199,6 +199,6 @@ tags: [group-theory, math493]
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
 
 > [!remark] Remark: Commutators of Normal Subgroups
-> [[§46 Commutators#^pf-46-8|The proof]] shows more: for normal $M, N$, every [[§46 Commutators#^def-46-1|commutator]] $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ ([[§42 The Second and Third Isomorphism Theorems#^def-42-1|Def. §42.1]]) (not from class).
+> [[§46 Commutators#^pf-46-8|The proof]] shows more: for normal $M, N$, every [[§46 Commutators#^def-46-1|commutator]] $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]) (not from class).
 
 ^rem-46-4

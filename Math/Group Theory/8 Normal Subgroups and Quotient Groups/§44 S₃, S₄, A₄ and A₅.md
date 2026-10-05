@@ -31,7 +31,7 @@ $S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\
 
 ^ex-44-1
 
-![[§42 The Second and Third Isomorphism Theorems#^ex-42-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-2]]
 
 $S_3/A_3$ first appears as item (3) of [[§40 Quotient Groups#^ex-40-1|Quotient Groups]] (in the ℤ part); $S_4/V \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$ are in [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]] and [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part).
 
@@ -59,7 +59,7 @@ $A_n$ is normal in $S_n$ twice over, as a subgroup of index $2$ and as the kerne
 
 ![[§39 Sources of Normal Subgroups#^ex-39-2]]
 
-![[§41 The First Isomorphism Theorem#^ex-41-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-1]]
 
 Index $2$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-1|Index-2 Examples]] (in the $S_3$ part). In [[§43 Simple Groups|§43]]: [[§43 Simple Groups#^cor-43-2|Sₙ Is Not Simple for n ≥ 3]], [[§43 Simple Groups#^prop-43-4|Homomorphisms into a Simple Group]] (ℤ/3ℤ into A₅), [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]], [[§43 Simple Groups#^thm-43-7|A₅ Is the Smallest Non-Abelian Simple Group]], [[§43 Simple Groups#^lem-43-8|3-Cycles Are Conjugate in Aₙ]], [[§43 Simple Groups#^thm-43-9|Aₙ Is Simple for n ≥ 5]], [[§43 Simple Groups#^cor-43-11|Which Aₙ Are Simple]].
 
@@ -82,7 +82,7 @@ $\mathbb{Z}/4\mathbb{Z}$ is the first quotient computed with representatives: $(
 
 ![[§43 Simple Groups#^thm-43-1]]
 
-The contrast with $S_3/A_3$ is [[§40 Quotient Groups#^rem-40-3|Life Is Especially Nice When S Is a Subgroup]] (in the $S_3$ part); $\mathbb{Z}/6\mathbb{Z} \to U_7$ is item (3) of [[§41 The First Isomorphism Theorem#^ex-41-1|The First Isomorphism Theorem in Action]] (in the $A_n$ part).
+The contrast with $S_3/A_3$ is [[§40 Quotient Groups#^rem-40-3|Life Is Especially Nice When S Is a Subgroup]] (in the $S_3$ part); $\mathbb{Z}/6\mathbb{Z} \to U_7$ is item (3) of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]] (in the $A_n$ part).
 
 *$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere:* ← [[§32 Linear Groups, the Cube, S₃ and A₄#ℤ∕nℤ and Uₙ|Chapter 6]] · no later appearance yet · [[ℤ∕nℤ and the unit groups Uₙ|all appearances]]
 
@@ -96,6 +96,6 @@ $SL_n$ is normal in $GL_n$ as the kernel of $\det$, with $GL_n(k)/SL_n(k) \cong 
 
 ![[§43 Simple Groups#^thm-43-13]]
 
-$\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and of [[§41 The First Isomorphism Theorem#^ex-41-1|The First Isomorphism Theorem in Action]] (both in the $A_n$ part); the exceptions are [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part).
+$\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]] (both in the $A_n$ part); the exceptions are [[§43 Simple Groups#^ex-43-3|The Two Exceptions]] (in the $S_4$ part).
 
 *$GL_n$ elsewhere:* ← [[§36 S₃, S₄ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 7]] · [[§47 S₃, Aₙ and GLₙ#GLₙ, SLₙ and O(n)|Chapter 9]] → · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]
