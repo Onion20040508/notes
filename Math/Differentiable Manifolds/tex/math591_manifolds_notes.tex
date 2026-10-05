@@ -9475,11 +9475,26 @@ A one-form is a section of the cotangent bundle (Definition~\ref{def:section}): 
 \subsection{One-Forms and Their Coordinates}\label{sub:one-forms-def}
 
 \begin{defbox}[One-Form]\deflabel{def:one-form}
-A \textbf{one-form} (or \emph{$1$-form}, or \emph{covector field}) on $M$ is a smooth section $\theta : M \to T^*M$ of the cotangent bundle: $\pi \circ \theta = \mathrm{id}_M$, so that $\theta$ assigns to every $p \in M$ a covector in $T_p^*M$. This value is written $\theta_p$, not $\theta(p)$, and it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$. The space of one-forms on $M$ is written $C^\infty(M, T^*M)$ (Uribe's notation; also $\Omega^1(M)$).
+A \textbf{one-form} (or \emph{$1$-form}, or \emph{covector field}) on $M$ is a smooth map
+\[
+\theta : M \longrightarrow T^*M
+\]
+such that
+\[
+\theta_p \in T_p^*M \qquad \text{for every } p \in M .
+\]
+Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^*M \to M$: a one-form is a section of the cotangent bundle (Definition~\ref{def:section}).
 \leeref{Ch.~11, \emph{Covector Fields}}
 \end{defbox}
 
+In words: a one-form chooses one covector at every point of $M$, and the choice varies smoothly. Its value at $p$ is written $\theta_p$, not $\theta(p)$; it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$.
+
 Uribe on the notation: ``$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable'' --- so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes \emph{every} one-form, and the examples come next.
+
+\begin{defbox}[The Space of One-Forms]\deflabel{def:one-forms-space}
+The set of all one-forms on $M$ is written $C^\infty(M, T^*M)$ (Uribe's notation; also $\Omega^1(M)$).
+\leeref{Ch.~11, \emph{Covector Fields}}
+\end{defbox}
 
 \begin{propbox}[One-Forms in Coordinates]\thmlabel{prop:one-form-coords}
 Let $\theta$ be a section of $T^*M \to M$ (not assumed smooth) and $(U, \varphi = (x^i))$ a chart. Then on $U$
@@ -9703,9 +9718,19 @@ In particular $F^*\theta$ is smooth whenever $\theta$ is.
 \subsection{Vector Fields and Their Coordinates}\label{sub:vf-def}
 
 \begin{defbox}[Vector Field]\deflabel{def:vector-field}
-A \textbf{vector field} on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$ --- ``for every point, [it] selects a tangent vector at that point.''
+A \textbf{vector field} on $M$ is a smooth map
+\[
+\mathbf{X} : M \longrightarrow TM
+\]
+such that
+\[
+\mathbf{X}(p) \in T_pM \qquad \text{for every } p \in M .
+\]
+Equivalently, $\pi \circ \mathbf{X} = \mathrm{id}_M$ for the projection $\pi : TM \to M$: a vector field is a section of the tangent bundle (Definition~\ref{def:section}).
 \leeref{Ch.~8, \emph{Vector Fields}}
 \end{defbox}
+
+In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly --- ``for every point, [it] selects a tangent vector at that point.
 
 \textbf{Transcription note.} Page~36 of the handwritten notes writes ``Section of $TM \xrightarrow{F} M$''; the map is the projection $\pi$.
 

@@ -14,11 +14,28 @@ tags: [differentiable-manifolds, math591]
 ## Vector Fields and Their Coordinates
 
 > [!definition] Definition §44.1: Vector Field
-> A **vector field** on $M$ is a section of the tangent bundle $\pi : TM \to M$: a smooth map $\mathbf{X} : M \to TM$ with $\mathbf{X}(p) \in T_pM$ for every $p$ — “for every point, [it] selects a tangent vector at that point.”
+> A **vector field** on $M$ is a smooth map
+>
+> $$
+> \mathbf{X} : M \longrightarrow TM
+> $$
+>
+> such that
+>
+> $$
+> \mathbf{X}(p) \in T_pM \qquad \text{for every } p \in M .
+> $$
+>
+> Equivalently, $\pi \circ \mathbf{X} = \mathrm{id}_M$ for the projection $\pi : TM \to M$: a vector field is a section of the tangent bundle ([[§34 Fibrations#^def-34-2|Definition §34.2]]).
 >
 > *Lee: Ch. 8, Vector Fields*
 
 ^def-44-1
+
+In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly — “for every point, [it] selects a tangent vector at that point.”
+
+![[m591-44-2.svg]]
+*A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\theta)\,\partial/\partial\theta$, $c(\theta) = 0.55 + 0.35\sin\theta$. Left: the usual picture, an arrow $\mathbf{X}(p)$ at each point $p$. Right: the tangent bundle $TS^1$, with $S^1$ cut open at $(1,0)$; each fibre $T_pM$ is a vertical line over $p$, and the height of a point on it measures the vector $c\,\partial/\partial\theta$ (above the dashed zero section: counterclockwise). The vector field is the curve $\mathbf{X}(M)$, which meets every fibre exactly once — that is the condition $\mathbf{X}(p) \in T_pM$ — and $\pi \circ \mathbf{X} = \mathrm{id}_M$ says that the point of the curve above $p$ projects back to $p$. The points $p_1, p_2, p_3$ carry the same colour in both pictures.*
 
 > [!remark]- Connections
 > - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §11]].
@@ -134,6 +151,9 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^def-44-6
 
 “It's a technical term, and it's not a joke”: the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set — “smooth, but not analytic”, since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
+
+![[m591-44-3.svg]]
+*A bump function at $p$, as drawn on the board. $M$ is the plane; $\chi \equiv 1$ on a disc around $p$ (the top of the cylinder, at height $1$), and the graph of $\chi$ (orange) falls smoothly back to $0$ and stays $0$ outside the compact set $\operatorname{supp}\chi$ (dashed). The cross-section below shows the same function along a line through $p$.*
 
 ![[m591-45-1.svg]]
 *A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of Uribe's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.*

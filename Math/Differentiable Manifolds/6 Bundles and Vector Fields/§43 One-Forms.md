@@ -16,17 +16,38 @@ A one-form is a section of the cotangent bundle ([[§34 Fibrations#^def-34-2|Def
 ## One-Forms and Their Coordinates
 
 > [!definition] Definition §43.1: One-Form
-> A **one-form** (or *$1$-form*, or *covector field*) on $M$ is a smooth section $\theta : M \to T^{\ast}M$ of the cotangent bundle: $\pi \circ \theta = \mathrm{id}_M$, so that $\theta$ assigns to every $p \in M$ a covector in $T_p^{\ast}M$. This value is written $\theta_p$, not $\theta(p)$, and it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$. The space of one-forms on $M$ is written $C^\infty(M, T^{\ast}M)$ (Uribe's notation; also $\Omega^1(M)$).
+> A **one-form** (or *$1$-form*, or *covector field*) on $M$ is a smooth map
+>
+> $$
+> \theta : M \longrightarrow T^*M
+> $$
+>
+> such that
+>
+> $$
+> \theta_p \in T_p^*M \qquad \text{for every } p \in M .
+> $$
+>
+> Equivalently, $\pi \circ \theta = \mathrm{id}_M$ for the projection $\pi : T^{\ast}M \to M$: a one-form is a section of the cotangent bundle ([[§34 Fibrations#^def-34-2|Definition §34.2]]).
 >
 > *Lee: Ch. 11, Covector Fields*
 
 ^def-43-1
+
+In words: a one-form chooses one covector at every point of $M$, and the choice varies smoothly. Its value at $p$ is written $\theta_p$, not $\theta(p)$; it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$.
 
 > [!remark]- Connections
 > - On open subsets of $\mathbb{R}^n$: [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]] (differential forms, here in degree 1).
 > - The value at one point is a covector, an element of a dual space: [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
 
 Uribe on the notation: “$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable” — so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes *every* one-form, and the examples come next.
+
+> [!definition] Definition §43.2: The Space of One-Forms
+> The set of all one-forms on $M$ is written $C^\infty(M, T^{\ast}M)$ (Uribe's notation; also $\Omega^1(M)$).
+>
+> *Lee: Ch. 11, Covector Fields*
+
+^def-43-2
 
 > [!theorem] Proposition §43.1: One-Forms in Coordinates
 > Let $\theta$ be a section of $T^{\ast}M \to M$ (not assumed smooth) and $(U, \varphi = (x^i))$ a chart. Then on $U$
@@ -129,7 +150,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ## Pullbacks of One-Forms
 
-> [!definition] Definition §43.2: Pullback of One-Forms
+> [!definition] Definition §43.3: Pullback of One-Forms
 > Let $F : M \to N$ be smooth. The **pullback** of functions is $F^{\ast}f = f \circ F$. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§30 The Cotangent Space#^def-30-5|Definition §30.5]]):
 >
 > $$
@@ -140,7 +161,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 >
 > *Lee: Ch. 11, Pullbacks of Covector Fields*
 
-^def-43-2
+^def-43-3
 
 > [!remark]- Connections
 > - At each point $F_p^{\ast}$ is the dual map of $F_{\ast p}$: [[§12 Duality#^ladr-3-118|LADR 3.118]]. On open subsets of $\mathbb{R}^n$: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]].
@@ -157,7 +178,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-43-4
 
-*Uses:* [[§43 One-Forms#^def-43-2|Def. §43.2]], [[§43 One-Forms#^prop-43-2|§43.2]], [[§30 The Cotangent Space#^prop-30-10|§30.10]]
+*Uses:* [[§43 One-Forms#^def-43-3|Def. §43.3]], [[§43 One-Forms#^prop-43-2|§43.2]], [[§30 The Cotangent Space#^prop-30-10|§30.10]]
 
 > [!theorem] Proposition §43.5: Pullbacks in Coordinates
 > In charts $(x^i)$ on $M$ and $(y^j)$ on $N$, with $F^j = y^j \circ F$,
@@ -175,7 +196,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-43-5
 
-*Uses:* [[§43 One-Forms#^def-43-2|Def. §43.2]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§30 The Cotangent Space#^cor-30-3|§30.3]], [[§43 One-Forms#^prop-43-1|§43.1]]
+*Uses:* [[§43 One-Forms#^def-43-3|Def. §43.3]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§30 The Cotangent Space#^cor-30-3|§30.3]], [[§43 One-Forms#^prop-43-1|§43.1]]
 
 > [!remark]- Connections
 > - The substitution $dx_i = \sum_j (\partial x_i/\partial u_j)\, du_j$ of 452: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]; the matrix of a dual map is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].

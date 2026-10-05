@@ -323,7 +323,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§30 The Cotangent S
 ^def-30-5
 
 > [!remark]- Connections
-> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§43 One-Forms#^def-43-2|Def. §43.2]].
+> - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§43 One-Forms#^def-43-3|Def. §43.3]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
 
