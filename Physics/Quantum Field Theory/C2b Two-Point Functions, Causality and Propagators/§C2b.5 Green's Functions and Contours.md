@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One solves the equation once, with a delta function on the right, and the answer is a Green's function. Fourier transformation makes this a division by $m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), which is impossible on the mass shell; the integral needs a contour in the complex $p^0$-plane ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]], [[P2 Green's Functions by Contour Integration|P2]]), and the choice of contour is the choice of boundary condition. The first contour worked out is the retarded one, and the retarded function is the causal commutator of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
 
-*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\phi\phi|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
+*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\phi\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Sources and Green's functions
 

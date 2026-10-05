@@ -197,10 +197,10 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 > With the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], the $H$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] is
 >
 > $$
-> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) + E^D_{\mathrm{vac}}, \qquad :\!H\!: = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) \ge 0 ,
+> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) + E_0^{(\rm D)}, \qquad :\!H\!: = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) \ge 0 ,
 > $$
 >
-> with the normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]] and the constant $E^D_{\mathrm{vac}}$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]. Both species contribute positive energy $E_{\mathbf p}$ per quantum; $:\!H\!:|0\rangle = 0$.
+> with the normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]] and the constant $E_0^{(\rm D)}$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]. Both species contribute positive energy $E_{\mathbf p}$ per quantum; $:\!H\!:|0\rangle = 0$.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] with [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]].
 > *Source: Lecture 10, slides 19 and 23 · the user's PHY 513 notes, Ch. 10 §10.5, eq. (diracH), and §10.7 · PS §3.5, eq. (3.104) · Yu §5.5.2, eq. (5.247) · the user's pre-course notes, §5.5, eq. (dirac-H)*
@@ -239,10 +239,10 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 > The ordering constant of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]] is
 >
 > $$
-> E^D_{\mathrm{vac}} = -2V\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p} = -4E_0, \qquad V = (2\pi)^3\delta^3(\mathbf 0) ,
+> E_0^{(\rm D)} = -2V\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p} = -4E_0, \qquad V = (2\pi)^3\delta^3(\mathbf 0) ,
 > $$
 >
-> with $E_0$ the real scalar's zero-point energy of the same mass ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]): $-\frac12E_{\mathbf p}$ for each of the four modes per momentum (two spins, two species), where each bosonic mode gave $+\frac12E_{\mathbf p}$. In a box with cutoff, $E^D_{\mathrm{vac}}(V, \Lambda) = -2\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$, energy density $\approx -\Lambda^4/4\pi^2$ for $\Lambda \gg m$.
+> with $E_0$ the real scalar's zero-point energy of the same mass ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]): $-\frac12E_{\mathbf p}$ for each of the four modes per momentum (two spins, two species), where each bosonic mode gave $+\frac12E_{\mathbf p}$. In a box with cutoff, $E_0^{(\rm D)}(V, \Lambda) = -2\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$, energy density $\approx -\Lambda^4/4\pi^2$ for $\Lambda \gg m$.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]].
 > *Source: the user's PHY 513 notes, Ch. 10 §10.5 ("The constant": "$-\frac12E_{\mathbf p}$ for each of the four fermionic oscillators per momentum") · Lecture 10 (transcript) · the user's pre-course notes, §5.5 (Remark "The fermionic zero-point energy is negative") · Yu §5.5.2, eq. (5.247), §5.5.4, eq. (5.269) · PS §3.5, after eq. (3.104)*
@@ -250,7 +250,7 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 ^thm-c5b-3-5
 
 > [!derivation]- Derivation
-> **1. The constant.** From Step 3 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-4|Derivation §C5b.3.4]], $E^D_{\mathrm{vac}} = -\sum_{s=1,2}\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = -2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$, with the dictionary $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], 2. Since $E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $E^D_{\mathrm{vac}} = -4E_0$.
+> **1. The constant.** From Step 3 of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-4|Derivation §C5b.3.4]], $E_0^{(\rm D)} = -\sum_{s=1,2}\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = -2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$, with the dictionary $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], 2. Since $E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $E_0^{(\rm D)} = -4E_0$.
 >
 > **2. Mode by mode.** For each fermionic mode $c$ ($c = a^s_{\mathbf p}$ or $b^s_{\mathbf p}$; in the box $\{c, c^\dagger\} = 1$ per mode after rescaling by $V$), $c^\dagger c = \frac12[c^\dagger, c] + \frac12\{c, c^\dagger\} = \frac12[c^\dagger, c] + \frac12$. In the box $H = \sum_{\mathbf k,s}E_{\mathbf k}(a^\dagger a - bb^\dagger)$ becomes, with $-bb^\dagger = b^\dagger b - 1$, $\sum E_{\mathbf k}\bigl[(a^\dagger a - \tfrac12) + (b^\dagger b - \tfrac12)\bigr]$ plus $\sum E(\frac12 + \frac12 - 1) = 0$: each of the four modes per momentum is a fermionic oscillator $E(c^\dagger c - \frac12) = \frac E2[c^\dagger, c]$, with ground-state energy $-\frac E2$. The bosonic oscillator is $\omega(a^\dagger a + \frac12) = \frac\omega2\{a^\dagger, a\}$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-1|§C2a.1, Remark: The oscillator, recalled]]): the sign of the zero-point energy is the sign that turns $\{\cdot,\cdot\}$ into $[\cdot,\cdot]$.
 >

@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 Why is the Feynman contour singled out, and how do all the two-point functions fit together? Rotating the energy integral of the Feynman propagator of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]] to imaginary energies gives the Euclidean propagator, whose position-space form is the Bessel function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]. The section ends with the advanced and anti-Feynman functions and the whole family of two-point functions in one table ([[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-2|Def. §C2b.7.2]]).
 
-*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\phi\phi|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
+*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\phi\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Wick rotation and the Euclidean propagator
 

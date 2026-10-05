@@ -222,13 +222,13 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 >
 > **5. The other ordering.** The same steps with $b$, $b^\dagger$ and $\sum_sv^s\bar v^s = \slashed{p} - m$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-8|Theorem §C5a.6.8]]) give $\langle0|\bar\psi\psi|0\rangle = B\,S^-_W = -B(i\slashed{\partial}_x + m)D_W(-\xi)$ with $B > 0$ (PS (3.95)). The minus sign is the one of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^der-c5b-7-1|Derivation §C5b.7.1]], Step 4.
 >
-> **6. At spacelike $\xi$.** There $D_W(\xi) = D_W(-\xi) = W(r) \equiv \frac{m}{4\pi^2r}K_1(mr)$, smooth and positive ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]; equal because $D$ vanishes there, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]), as functions on an open set, so also their derivatives agree. Hence
+> **6. At spacelike $\xi$.** There $D_W(\xi) = D_W(-\xi) = D_W(r) = \frac{m}{4\pi^2r}K_1(mr)$, smooth and positive ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]; equal because $D$ vanishes there, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]), as functions on an open set, so also their derivatives agree. Hence
 >
 > $$
-> \langle0|[\psi, \bar\psi]|0\rangle = AS^+_W - BS^-_W = (A + B)(i\slashed{\partial} + m)W, \qquad \langle0|\{\psi, \bar\psi\}|0\rangle = AS^+_W + BS^-_W = (A - B)(i\slashed{\partial} + m)W .
+> \langle0|[\psi, \bar\psi]|0\rangle = AS^+_W - BS^-_W = (A + B)(i\slashed{\partial} + m)D_W, \qquad \langle0|\{\psi, \bar\psi\}|0\rangle = AS^+_W + BS^-_W = (A - B)(i\slashed{\partial} + m)D_W .
 > $$
 >
-> **7. Traces.** $\operatorname{tr}\gamma^\mu = 0$ ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]), so $\operatorname{tr}\bigl[(i\slashed{\partial} + m)W\bigr] = 4mW(r) > 0$. The commutator has trace $4m(A + B)W \ne 0$: it does not vanish at any spacelike point. The anticommutator has trace $4m(A - B)W$, nonzero unless $A = B$; for $A = B$ it vanishes identically. (For $m = 0$ use the $\gamma$ part: $W = 1/4\pi^2r^2$ has nonzero gradient, and the same conclusion follows.)
+> **7. Traces.** $\operatorname{tr}\gamma^\mu = 0$ ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]), so $\operatorname{tr}\bigl[(i\slashed{\partial} + m)D_W\bigr] = 4mD_W(r) > 0$. The commutator has trace $4m(A + B)D_W \ne 0$: it does not vanish at any spacelike point. The anticommutator has trace $4m(A - B)D_W$, nonzero unless $A = B$; for $A = B$ it vanishes identically. (For $m = 0$ use the $\gamma$ part: $D_W = 1/4\pi^2r^2$ has nonzero gradient, and the same conclusion follows.)
 >
 > **What the derivation shows**
 > - In the scalar commutator the particle term and the antiparticle term cancel outside the cone ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel; why antiparticles must exist]]); for the Dirac field the spin sum $\slashed{p} - m$ flips the sign of the antiparticle term, and the cancellation needs an anticommutator.
@@ -251,7 +251,7 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 >
 > **3. Commutator: the sum.** Subtracting instead, $\langle0|[\psi_a(x), \bar\psi_b(y)]|0\rangle = (i\slashed{\partial}_x + m)_{ab}\bigl[D_W(x - y) + D_W(y - x)\bigr] = (i\slashed{\partial}_x + m)_{ab}\,D_1(x - y)$, the Hadamard function of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]] differentiated.
 >
-> **4. The Hadamard function lives outside the cone.** At spacelike $\xi$, $D_W(\xi) = D_W(-\xi) = W(r) = \frac{m}{4\pi^2r}K_1(mr) > 0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), so $D_1 = 2W$ there, a smooth positive function on an open set; its trace part $\operatorname{tr}[(i\slashed{\partial} + m)D_1] = 4m\cdot2W \ne 0$ ($\operatorname{tr}\gamma^\mu = 0$, [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]). The commutator version propagates outside the light cone, "and not by a little bit" (Lecture 10).
+> **4. The Hadamard function lives outside the cone.** At spacelike $\xi$, $D_W(\xi) = D_W(-\xi) = D_W(r) = \frac{m}{4\pi^2r}K_1(mr) > 0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), so $D_1 = 2D_W$ there, a smooth positive function on an open set; its trace part $\operatorname{tr}[(i\slashed{\partial} + m)D_1] = 4m\cdot2D_W \ne 0$ ($\operatorname{tr}\gamma^\mu = 0$, [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]). The commutator version propagates outside the light cone, "and not by a little bit" (Lecture 10).
 >
 > **What the derivation shows**
 > - The minus sign that causality needs between the two Wightman terms is supplied by the anticommutator; for the scalar it was supplied by the commutator itself ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel; why antiparticles must exist]]).

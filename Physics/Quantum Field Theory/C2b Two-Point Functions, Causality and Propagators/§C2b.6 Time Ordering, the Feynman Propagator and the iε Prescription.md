@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 Which Green's function is a vacuum expectation value of field operators? The Feynman propagator: the vacuum expectation value of the time-ordered product, defined here, computed with a contour of [[§C2b.5 Green's Functions and Contours|§C2b.5]] from the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]]. The section shows that it is a Green's function as an operator statement, relates time ordering to normal ordering, and turns the contours into the $i\varepsilon$ prescription.
 
-*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\phi\phi|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
+*Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\phi\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Time ordering and the Feynman propagator
 
@@ -24,11 +24,18 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > T\{\phi(x)\phi(y)\} \equiv \theta(x^0 - y^0)\,\phi(x)\phi(y) + \theta(y^0 - x^0)\,\phi(y)\phi(x) ,
 > $$
 >
-> the later operator to the left, with $\theta(0) = \frac12$. For $n$ fields, $T\{\phi(x_1)\cdots\phi(x_n)\} = \phi(x_{\sigma(1)})\cdots\phi(x_{\sigma(n)})$ with $x^0_{\sigma(1)} \ge \cdots \ge x^0_{\sigma(n)}$. The **anti-time-ordered** product $\bar T$ puts the earlier operator to the left. (Fermion fields will add a sign per exchange, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]].)
+> the later operator to the left, with $\theta(0) = \frac12$. For $n$ fields, $T\{\phi(x_1)\cdots\phi(x_n)\} = \phi(x_{\sigma(1)})\cdots\phi(x_{\sigma(n)})$ with $x^0_{\sigma(1)} \ge \cdots \ge x^0_{\sigma(n)}$. The **anti-time-ordered** product $\bar T$ puts the earlier operator to the left. (Fermion fields will add a sign per exchange, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]].) Names in other sources: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-3|Caution: Names for the time-ordered product]].
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6 (Definition "The time-ordered product"), Ch. 6 §6.11 ($\bar T$) · PS §2.4, eq. (2.60) · Yu §6.2, eq. (6.108)*
 
 ^def-c2b-6-1
+
+> [!caution] Caution: Names for the time-ordered product
+> One operation, three bracket styles. These notes write $T\{\phi(x)\phi(y)\}$ everywhere, with braces, as Lecture 6 (slide "Green's Functions and Boundary Conditions": $\langle0|T\{\phi(x)\phi(y)\}|0\rangle$) and the user's PHY 513 notes (Ch. 5 §5.6) do, and the same for $\bar T$, for Dirac fields ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]]) and for vector fields ([[§C4.8 Vector-Field Propagators#^def-c4-8-1|Def. §C4.8.1]]). Peskin–Schroeder write $T\phi(x)\phi(y)$ without brackets (eq. (2.60)) and $T[A_\mu(x)A_\nu(y)]$ with square ones (p. 124); Yu and the user's pre-course notes write $T[\phi(x)\phi(y)]$ (Yu eq. (6.108)). Earlier drafts of this vault sometimes dropped the braces ($\langle0|T\phi\phi|0\rangle$).
+>
+> *Source: Lecture 6, slide "Green's Functions and Boundary Conditions" · the user's PHY 513 notes, Ch. 5 §5.6 · PS §2.4, eq. (2.60); §4.8, p. 124 · Yu §6.2, eq. (6.108) · the user's pre-course notes, §6.2*
+
+^cau-c2b-6-3
 
 > [!theorem] Theorem §C2b.6.1: Properties of Time Ordering
 > 1. $T$ reorders by time labels, so $T\{\phi(x)\phi(y)\} = T\{\phi(y)\phi(x)\}$.
@@ -105,9 +112,9 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 >
 > **Step 4** (relabel). In $\int\frac{d^3p}{(2\pi)^3\,2E}e^{iEt + i\mathbf p\cdot\boldsymbol\xi}$ substitute $\mathbf p \to -\mathbf p$ (Jacobian 1; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$): $e^{iEt - i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot(-\xi)}$, so this is $D_W(-\xi)$. Steps 2–4 give $D_F = \theta(t)D_W(\xi) + \theta(-t)D_W(-\xi)$, the products taken slice by slice ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]], 1).
 >
-> **Step 5** (the operator side). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]] and [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], $\langle0|T\phi(x)\phi(y)|0\rangle = \theta(t)\langle0|\phi(x)\phi(y)|0\rangle + \theta(-t)\langle0|\phi(y)\phi(x)|0\rangle = \theta(t)D_W(\xi) + \theta(-t)D_W(-\xi)$: the contour and the time-ordered product arrive independently at the same function.
+> **Step 5** (the operator side). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]] and [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], $\langle0|T\{\phi(x)\phi(y)\}|0\rangle = \theta(t)\langle0|\phi(x)\phi(y)|0\rangle + \theta(-t)\langle0|\phi(y)\phi(x)|0\rangle = \theta(t)D_W(\xi) + \theta(-t)D_W(-\xi)$: the contour and the time-ordered product arrive independently at the same function.
 >
-> **Step 6** (properties). Evenness (of a distribution: $D_F[f(-\cdot)] = D_F[f]$, [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]): $T$ is symmetric in its arguments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 1), so $D_F(-\xi) = D_F(\xi)$. Invariance: $T\phi\phi$ is frame-independent (Theorem §C2b.6.1, 3) and the vacuum is invariant. Relation: for $t > 0$, $D_R + D_W(-\xi) = D_W(\xi) - D_W(-\xi) + D_W(-\xi) = D_W(\xi)$; for $t < 0$, $0 + D_W(-\xi)$.
+> **Step 6** (properties). Evenness (of a distribution: $D_F[f(-\cdot)] = D_F[f]$, [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]): $T$ is symmetric in its arguments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 1), so $D_F(-\xi) = D_F(\xi)$. Invariance: $T\{\phi\phi\}$ is frame-independent (Theorem §C2b.6.1, 3) and the vacuum is invariant. Relation: for $t > 0$, $D_R + D_W(-\xi) = D_W(\xi) - D_W(-\xi) + D_W(-\xi) = D_W(\xi)$; for $t < 0$, $0 + D_W(-\xi)$.
 >
 > **What the derivation shows.**
 > - Where the retarded function says "the source acts, then there are consequences", the Feynman function is neutral about which of $x$ and $y$ came first and includes both, each with positive energy flowing forward.
@@ -122,7 +129,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > **Step 1** (the operator definition). By Step 5 above and [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], with $\mathbf p \to -\mathbf p$ in the second term ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$; the iterated integral read as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], Step 2),
 >
 > $$
-> \langle0|T\phi(x)\phi(y)|0\rangle = \int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot\boldsymbol\xi}\Bigl[\theta(t)\frac{e^{-iEt}}{2E} + \theta(-t)\frac{e^{iEt}}{2E}\Bigr].
+> \langle0|T\{\phi(x)\phi(y)\}|0\rangle = \int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot\boldsymbol\xi}\Bigl[\theta(t)\frac{e^{-iEt}}{2E} + \theta(-t)\frac{e^{iEt}}{2E}\Bigr].
 > $$
 >
 > **Step 2** (a contour identity; Yu (6.198)). For $\varepsilon > 0$ let $f(p^0) = e^{-ip^0t}/\{[p^0 - (E - i\varepsilon)][p^0 + (E - i\varepsilon)]\}$, simple poles at $E - i\varepsilon$ (fourth quadrant) and $-E + i\varepsilon$ (second). For $t > 0$ close downward (clockwise), enclosing $E - i\varepsilon$: $\int_{\mathbb R}f = -2\pi i\frac{e^{-i(E - i\varepsilon)t}}{2(E - i\varepsilon)}$. For $t < 0$ close upward (counterclockwise), enclosing $-(E - i\varepsilon)$: $\int_{\mathbb R}f = 2\pi i\frac{e^{i(E - i\varepsilon)t}}{-2(E - i\varepsilon)}$. As $\varepsilon \to 0^+$,
@@ -136,7 +143,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > **Step 4** (multiply by $i/2\pi$; Yu (6.207)–(6.208)). $\theta(t)\frac{e^{-iEt}}{2E} + \theta(-t)\frac{e^{iEt}}{2E} = \int\frac{dp^0}{2\pi}\frac{i\,e^{-ip^0t}}{p^2 - m^2 + i\varepsilon}$. Inserting into Step 1 and combining $d^3p\,dp^0 = d^4p$, $e^{-ip^0t + i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot\xi}$ (the four-dimensional integral does not converge absolutely; the formula holds in $\mathcal S'(\mathbb R^4)$ in the limit $\varepsilon \to 0^+$, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]]; at fixed $\mathbf p$ the limit of Step 2 is pointwise for $t \ne 0$ and bounded by $\pi/E$, so it is also a limit in $\mathcal S'(\mathbb R)$, [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]):
 >
 > $$
-> \langle0|T\phi(x)\phi(y)|0\rangle = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{-ip\cdot\xi}}{p^2 - m^2 + i\varepsilon} \qquad \text{(Yu (6.210))}.
+> \langle0|T\{\phi(x)\phi(y)\}|0\rangle = \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,e^{-ip\cdot\xi}}{p^2 - m^2 + i\varepsilon} \qquad \text{(Yu (6.210))}.
 > $$
 >
 > **What the derivation shows.**
@@ -419,7 +426,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 *Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-11|Theorem §CA.3.11]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]
 
 > [!remark] Remark: Preview: the propagator as a Gaussian covariance
-> In the path integral (QFT C11, planned; PS §9.1–9.2; Yu §11.1–11.2) time-ordered vacuum correlators are averages over field histories, $\langle0|T\phi(x)\phi(y)|0\rangle = \int\mathcal D\phi\,\phi(x)\phi(y)e^{iS}/\int\mathcal D\phi\,e^{iS}$, with $S = \frac12\int\phi(-\partial^2 - m^2)\phi$. In momentum space this is a Gaussian with kernel $K = p^2 - m^2$, which converges only with a damping $e^{-\frac\varepsilon2\int\phi^2}$; its covariance is then $i(K + i\varepsilon)^{-1} = \tilde D_F$. The $i\varepsilon$ prescribed here becomes the condition for the integral to exist, time ordering is produced rather than imposed, and with $t = -i\tau$ the weight becomes $e^{-S_E}$, whose covariance is $D_E$. Choosing the vacuum as initial and final state selects the Feynman inverse of the Klein–Gordon operator (the second variation of the action, [[§C1.9 The Action Principle and the Euler–Lagrange Equations#^rem-c1-9-6|§C1.9, Remark: The second variation is the operator whose inverse is the propagator]]), not the retarded one: contours are boundary conditions once more. The integral of a total derivative gives $(\partial^2 + m^2)D_F = -i\delta^4$ in one line, the free Schwinger–Dyson equation.
+> In the path integral (QFT C11, planned; PS §9.1–9.2; Yu §11.1–11.2) time-ordered vacuum correlators are averages over field histories, $\langle0|T\{\phi(x)\phi(y)\}|0\rangle = \int\mathcal D\phi\,\phi(x)\phi(y)e^{iS}/\int\mathcal D\phi\,e^{iS}$, with $S = \frac12\int\phi(-\partial^2 - m^2)\phi$. In momentum space this is a Gaussian with kernel $K = p^2 - m^2$, which converges only with a damping $e^{-\frac\varepsilon2\int\phi^2}$; its covariance is then $i(K + i\varepsilon)^{-1} = \tilde D_F$. The $i\varepsilon$ prescribed here becomes the condition for the integral to exist, time ordering is produced rather than imposed, and with $t = -i\tau$ the weight becomes $e^{-S_E}$, whose covariance is $D_E$. Choosing the vacuum as initial and final state selects the Feynman inverse of the Klein–Gordon operator (the second variation of the action, [[§C1.9 The Action Principle and the Euler–Lagrange Equations#^rem-c1-9-6|§C1.9, Remark: The second variation is the operator whose inverse is the propagator]]), not the retarded one: contours are boundary conditions once more. The integral of a total derivative gives $(\partial^2 + m^2)D_F = -i\delta^4$ in one line, the free Schwinger–Dyson equation.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (Principle "Looking ahead: the path integral (Lectures 23–24)")*
 
