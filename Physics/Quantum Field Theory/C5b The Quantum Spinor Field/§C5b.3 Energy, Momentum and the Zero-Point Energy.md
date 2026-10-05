@@ -22,7 +22,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 > H_{\text{s.p.}}\,u^s(p)\,e^{-ip\cdot x} = +E_{\mathbf p}\,u^s(p)\,e^{-ip\cdot x}, \qquad H_{\text{s.p.}}\,v^s(p)\,e^{ip\cdot x} = -E_{\mathbf p}\,v^s(p)\,e^{ip\cdot x} .
 > $$
 >
-> In momentum space $h(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$ and $h(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$: the eigenvalues of $h(\mathbf p)$ are $\pm E_{\mathbf p}$, each twice.
+> In momentum space $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$ and $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$: the eigenvalues of $H_{\text{s.p.}}(\mathbf p)$ are $\pm E_{\mathbf p}$, each twice.
 >
 > *Source: Lecture 10, slides 16–17 · the user's PHY 513 notes, Ch. 10 §10.5 (Derivation "Its eigenstates: energy $+E_{\mathbf p}$ and $-E_{\mathbf p}$") · PS §3.5, p. 53*
 
@@ -37,12 +37,12 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 >
 > **4. The $v$ solutions.** $v^s(p)e^{ip\cdot x}$ solves the same equation ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]]); Steps 1–2 are identical. Now $e^{ip\cdot x} = e^{iE_{\mathbf p}t}e^{-i\mathbf p\cdot\mathbf x}$ and $i\partial_0e^{iE_{\mathbf p}t} = -E_{\mathbf p}e^{iE_{\mathbf p}t}$: the eigenvalue is $-E_{\mathbf p}$.
 >
-> **5. Momentum space.** On $e^{i\mathbf k\cdot\mathbf x}$, $-i\partial_j \to k^j$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), so $H_{\text{s.p.}} \to h(\mathbf k) = \gamma^0(\gamma^jk^j + m)$. In Step 3 the spatial momentum is $\mathbf k = \mathbf p$: $h(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$. In Step 4 it is $\mathbf k = -\mathbf p$: $h(-\mathbf p)v^s(p) = -E_{\mathbf p}v^s(p)$, i.e., renaming $\mathbf p \to -\mathbf p$, $h(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$. The four vectors $u^{1,2}(p)$, $v^{1,2}(\tilde p)$ are independent (orthogonal, [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]), so these are all four eigenvalues of the $4\times4$ matrix $h(\mathbf p)$.
+> **5. Momentum space.** On $e^{i\mathbf k\cdot\mathbf x}$, $-i\partial_j \to k^j$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), so $H_{\text{s.p.}} \to H_{\text{s.p.}}(\mathbf k) = \gamma^0(\gamma^jk^j + m)$. In Step 3 the spatial momentum is $\mathbf k = \mathbf p$: $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$. In Step 4 it is $\mathbf k = -\mathbf p$: $H_{\text{s.p.}}(-\mathbf p)v^s(p) = -E_{\mathbf p}v^s(p)$, i.e., renaming $\mathbf p \to -\mathbf p$, $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$. The four vectors $u^{1,2}(p)$, $v^{1,2}(\tilde p)$ are independent (orthogonal, [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]), so these are all four eigenvalues of the $4\times4$ matrix $H_{\text{s.p.}}(\mathbf p)$.
 >
 > ⚑ By-product: the time derivative was removed from $\mathcal H$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]), but the solutions still satisfy the full equation, so the eigenvalue of $H_{\text{s.p.}}$ is whatever $i\partial_t$ gives — negative for the $v$ solutions → [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^cau-c5b-3-1|Caution: Negative energies are a problem only if ψ is a wave function]].
 >
 > **What the derivation shows**
-> - The lecture's route uses only the Dirac equation; a second route, by squaring ($h(\mathbf p)$ Hermitian with $h(\mathbf p)^2 = E_{\mathbf p}^2$), is Steps 2–3 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]] and Step 7 of [[§C5a.3 The Dirac Equation and Its Lagrangian#^der-c5a-3-9|Derivation §C5a.3.9]].
+> - The lecture's route uses only the Dirac equation; a second route, by squaring ($H_{\text{s.p.}}(\mathbf p)$ Hermitian with $H_{\text{s.p.}}(\mathbf p)^2 = E_{\mathbf p}^2$), is Steps 2–3 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]] and Step 7 of [[§C5a.3 The Dirac Equation and Its Lagrangian#^der-c5a-3-9|Derivation §C5a.3.9]].
 > - Used next: $H_{\text{s.p.}}$ acting inside $H = \int\psi^\dagger H_{\text{s.p.}}\psi$ multiplies the $u$ terms of the field by $E_{\mathbf p}$ and the $v$ terms by $-E_{\mathbf p}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]]).
 
 ^der-c5b-3-1
@@ -73,7 +73,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 ^thm-c5b-3-2
 
 > [!derivation]- Derivation
-> **1. $H_{\text{s.p.}}$ on the modes.** By Steps 3 and 5 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]], $H_{\text{s.p.}}\bigl(u^r(q)e^{-iq\cdot x}\bigr) = E_{\mathbf q}u^r(q)e^{-iq\cdot x}$ and $H_{\text{s.p.}}\bigl(v^r(q)e^{iq\cdot x}\bigr) = -E_{\mathbf q}v^r(q)e^{iq\cdot x}$ (the spatial momentum of $e^{iq\cdot x}$ is $-\mathbf q$, and $h(-\mathbf q)v^r(q) = -E_{\mathbf q}v^r(q)$). So
+> **1. $H_{\text{s.p.}}$ on the modes.** By Steps 3 and 5 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]], $H_{\text{s.p.}}\bigl(u^r(q)e^{-iq\cdot x}\bigr) = E_{\mathbf q}u^r(q)e^{-iq\cdot x}$ and $H_{\text{s.p.}}\bigl(v^r(q)e^{iq\cdot x}\bigr) = -E_{\mathbf q}v^r(q)e^{iq\cdot x}$ (the spatial momentum of $e^{iq\cdot x}$ is $-\mathbf q$, and $H_{\text{s.p.}}(-\mathbf q)v^r(q) = -E_{\mathbf q}v^r(q)$). So
 >
 > $$
 > H_{\text{s.p.}}\psi = \int\frac{d^3q}{(2\pi)^3}\frac{E_{\mathbf q}}{\sqrt{2E_{\mathbf q}}}\sum_r\Bigl(a^r_{\mathbf q}u^r(q)e^{-iq\cdot x} - b^{r\dagger}_{\mathbf q}v^r(q)e^{iq\cdot x}\Bigr) .
@@ -112,7 +112,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 > [!derivation]- Derivation (second route, Lecture 10: at t = 0 with flipped momenta)
 > **1. Evaluate at $t = 0$.** $H$ does not depend on time (first derivation), so evaluate it at $t = 0$ with the relabelled expansions of Step 1 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-4b|Derivation §C5b.2.4, second route]]: $\psi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\sum_s\bigl(a^s_{\mathbf p}u^s(p) + b^{s\dagger}_{-\mathbf p}v^s(\tilde p)\bigr)$, and $\psi^\dagger$ with its own variables $\mathbf p'$, $r$.
 >
-> **2. $H_{\text{s.p.}}$ on the coefficients.** On $e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}}$ acts as $h(\mathbf p)$, and $h(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$, $h(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]); it acts on the c-number spinors only:
+> **2. $H_{\text{s.p.}}$ on the coefficients.** On $e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}}$ acts as $H_{\text{s.p.}}(\mathbf p)$, and $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$, $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]); it acts on the c-number spinors only:
 >
 > $$
 > H_{\text{s.p.}}\psi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{e^{i\mathbf p\cdot\mathbf x}}{\sqrt{2E_{\mathbf p}}}\sum_s\Bigl(E_{\mathbf p}\,a^s_{\mathbf p}u^s(p) - E_{\mathbf p}\,b^{s\dagger}_{-\mathbf p}v^s(\tilde p)\Bigr) .
@@ -197,7 +197,7 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 > With the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], the $H$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] is
 >
 > $$
-> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) + E^{D}_{\mathrm{vac}}, \qquad :\!H\!: = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) \ge 0 ,
+> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) + E^D_{\mathrm{vac}}, \qquad :\!H\!: = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) \ge 0 ,
 > $$
 >
 > with the normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]] and the constant $E^D_{\mathrm{vac}}$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]. Both species contribute positive energy $E_{\mathbf p}$ per quantum; $:\!H\!:|0\rangle = 0$.

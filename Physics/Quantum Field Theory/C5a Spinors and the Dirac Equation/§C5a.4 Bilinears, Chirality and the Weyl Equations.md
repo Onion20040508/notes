@@ -123,7 +123,7 @@ Which Lorentz tensors can be built from a Dirac field, how does the field split 
 > \bar\psi\psi,\quad \bar\psi\,i\gamma^5\psi,\quad \bar\psi\gamma^\mu\psi,\quad \bar\psi\gamma^\mu\gamma^5\psi,\quad \bar\psi\sigma^{\mu\nu}\psi \quad\text{are real},
 > $$
 >
-> while $\bar\psi\gamma^5\psi$ is imaginary. After quantization the same computation makes them Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
+> while $\bar\psi\gamma^5\psi$ is imaginary. After quantization the same computation makes them Hermitian operators, once the product of two field operators at one point is defined by normal ordering ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) and smeared with a test function (operator-valued distributions, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
 >
 > *Source: Yu §5.3, eqs. (5.97)–(5.101) · the user's PHY 513 notes, Ch. 8 §8.8 ("Yu (5.97)–(5.101) give the reality of the bilinears") · the user's pre-course notes, §5.3*
 
@@ -143,7 +143,7 @@ Which Lorentz tensors can be built from a Dirac field, how does the field split 
 >
 > **What the derivation shows**
 > - The bar operation $\Gamma \mapsto \gamma^0\Gamma^\dagger\gamma^0$ is the adjoint with respect to the indefinite form $\gamma^0$ of [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]]; the standard basis is chosen self-adjoint.
-> - Step 1 used only $(AB)^\dagger = B^\dagger A^\dagger$, valid also for operator-valued components: the quantized bilinears are Hermitian ([[§C5b.1 Quantizing the Dirac Field|§C5b.1]]).
+> - Step 1 used only $(AB)^\dagger = B^\dagger A^\dagger$, valid also for operator-valued components: the quantized bilinears are Hermitian ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]).
 
 ^der-c5a-4-3
 
@@ -319,7 +319,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > **6. Helicity.** For spin $\frac12$ the spin operator in each Weyl block is $\frac12\boldsymbol\sigma$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]]), so the spin along $\hat{\mathbf p}$ is $\hat{\mathbf p}\cdot\boldsymbol\sigma/2 = \mp\frac12$ ([[§C3.6★ Massless Particles and Helicity#^def-c3-6-1|Def. §C3.6.1]]).
 >
 > **What the derivation shows**
-> - Chirality and helicity coincide for massless positive-frequency solutions: left-handed means helicity $-\frac12$. For the negative-frequency solutions $\xi\,e^{+ip\cdot x}$ the condition is the same, $(p^0 + \boldsymbol\sigma\cdot\mathbf p)\xi = 0$ (step 1 with $p \to -p$ gives $-(\bar\sigma\cdot p)\xi = 0$); after quantization they describe the antiparticle, which carries the opposite helicity $+\frac12$ ([[§C5b.1 Quantizing the Dirac Field|§C5b.1]]): the neutrino–antineutrino pair of [[§C3.6★ Massless Particles and Helicity|§C3.6★]].
+> - Chirality and helicity coincide for massless positive-frequency solutions: left-handed means helicity $-\frac12$. For the negative-frequency solutions $\xi\,e^{+ip\cdot x}$ the condition is the same, $(p^0 + \boldsymbol\sigma\cdot\mathbf p)\xi = 0$ (step 1 with $p \to -p$ gives $-(\bar\sigma\cdot p)\xi = 0$); after quantization they describe the antiparticle, which carries the opposite helicity $+\frac12$ ([[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]): the neutrino–antineutrino pair of [[§C3.6★ Massless Particles and Helicity|§C3.6★]].
 > - ⚑ By-product: half the components of a Weyl spinor are removed for each momentum; a Weyl field has one physical polarization per momentum, the minimal content of a massless spin-½ particle (the little-group count of [[§C3.6★ Massless Particles and Helicity#^thm-c3-6-6|Theorem §C3.6.6]]).
 > - For massive Dirac spinors helicity is frame dependent; it approaches chirality at high energy ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-14|Theorem §C5a.6.14]]).
 > - Assumption: the plane wave solves the Weyl equation pointwise; as a field on spacetime it is not square integrable but a tempered distribution, and the equation holds also in $\mathcal S'$, as for the Dirac plane waves ([[§C5a.3 The Dirac Equation and Its Lagrangian#^rem-c5a-3-6|§C5a.3, Remark: In what sense the equations hold]]).
@@ -336,7 +336,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 ^rem-c5a-4-1
 
 > [!remark]- ★ Remark: A Majorana mass needs no second field
-> By [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]] and [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-11|Theorem §C5a.1.11]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-10|Theorem §C5a.1.10]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
+> By [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]] and [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-11|Theorem §C5a.1.11]], $\sigma^2\psi_L^{\ast}$ transforms like a right-handed spinor, so a single left-handed field can supply its own partner: $\psi_L^{\mathsf T}\varepsilon\,\psi_L$ is Lorentz invariant, because $\Lambda_L^{\mathsf T}\varepsilon\Lambda_L = (\det\Lambda_L)\varepsilon = \varepsilon$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-10|Theorem §C5a.1.10]]). This is a *Majorana* mass. For commuting components it vanishes identically, $\psi^{\mathsf T}\varepsilon\psi = \psi_1\psi_2 - \psi_2\psi_1 = 0$ (with $\varepsilon^{12} = 1$); it exists only for anticommuting fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|Principle §C5b.1.2]]; Majorana fields, QFT C9, planned). Whether neutrino masses are of Dirac or Majorana type is not known.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Caution "'A neutrino mass needs a right-handed neutrino'")*
 
@@ -373,7 +373,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > **6. Charge.** $j^0 = \bar\psi\gamma^0\psi = \psi^\dagger(\gamma^0)^2\psi = \psi^\dagger\psi = \sum_a\lvert\psi_a\rvert^2 \ge 0$. $Q$ is constant for fields falling off faster than $1/r^2$ ([[§C1.11 Noether's Theorem#^thm-c1-11-3|Theorem §C1.11.3]]). Reality: [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]]; vector law: [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]].
 >
 > **What the derivation shows**
-> - ⚑ By-product: the classical charge is positive definite, unlike the scalar's ([[§C1.11 Noether's Theorem#^thm-c1-11-5|Theorem §C1.11.5]]); it is Quantum Mechanics' probability density. After quantization with anticommutators, normal-ordered, it becomes particles minus antiparticles and can have either sign ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-15|Theorem §C5b.1.15]]).
+> - ⚑ By-product: the classical charge is positive definite, unlike the scalar's ([[§C1.11 Noether's Theorem#^thm-c1-11-5|Theorem §C1.11.5]]); it is Quantum Mechanics' probability density. After quantization with anticommutators, normal-ordered, it becomes particles minus antiparticles and can have either sign ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
 > - ⚑ By-product: the sign of the Noether current is opposite to the conventional one, as for the complex scalar ([[§C1.11 Noether's Theorem#^cau-c1-11-3|§C1.11, Caution: Sign and normalization of the U(1) current]]).
 > - Used next: coupled to the photon, $e\,j^\mu A_\mu$ (QFT C8, planned); its matrix elements are split by the Gordon identity ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-9|Theorem §C5a.7.9]]).
 
@@ -491,8 +491,8 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > **3. Conservation.** By Theorem §C5a.4.11 and [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-6|Theorem §C1.12.6]], $dP^\nu/dt = 0$ for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
 >
 > **What the derivation shows**
-> - $\mathbf P$ is the expectation of the one-particle momentum operator $-i\nabla$ in the "wave function" $\psi$, and $H$ that of $h_D$: the field charges look like one-particle expectation values, the reason the Dirac sea picture works as far as it does.
-> - ⚑ By-product: classically $H$ is unbounded below (negative-frequency modes, [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]); in mode form after quantization it is positive only with anticommutators ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]]).
+> - $\mathbf P$ is the expectation of the one-particle momentum operator $-i\nabla$ in the "wave function" $\psi$, and $H$ that of $H_{\text{s.p.}}$: the field charges look like one-particle expectation values, the reason the Dirac sea picture works as far as it does.
+> - ⚑ By-product: classically $H$ is unbounded below (negative-frequency modes, [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]); in mode form after quantization it is positive only with anticommutators ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-4|Theorem §C5b.3.4]]).
 > - The canonical momentum $\pi_\psi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]) is a field, conjugate to $\psi$ in the brackets; $\mathbf P$ is a number (an operator after quantization) generating translations. Problem Set 5's note makes the same distinction.
 
 ^der-c5a-4-12
@@ -532,7 +532,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > **6. Total.** $J^i = L^i + S^i$ by [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1-12-3|Def. §C1.12.3]].
 >
 > **What the derivation shows**
-> - ⚑ By-product: the Dirac field carries spin $\frac12$: $\frac12\boldsymbol\Sigma$ has $(\frac12\Sigma^i)(\frac12\Sigma^i) = \frac34\mathbb 1$, two spin-½ doublets, one per Weyl block. Peskin–Schroeder prove the particle's spin from this charge after quantization ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-20|Theorem §C5b.1.20]]).
+> - ⚑ By-product: the Dirac field carries spin $\frac12$: $\frac12\boldsymbol\Sigma$ has $(\frac12\Sigma^i)(\frac12\Sigma^i) = \frac34\mathbb 1$, two spin-½ doublets, one per Weyl block. Peskin–Schroeder prove the particle's spin from this charge after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-4|Theorem §C5b.4.4]]).
 > - Only $\mathbf J$ is conserved, not $\mathbf L$ and $\mathbf S$ separately: $\partial_\lambda\mathcal S^{\lambda\mu\nu} = T^{\nu\mu} - T^{\mu\nu} \ne 0$ ([[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-8|Theorem §C1.12.8]]).
 > - Used next: the symmetric tensor (Theorem §C5a.4.14).
 
@@ -611,7 +611,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 > [!remark]- Connections
 > - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The tensor bilinear transforms like $F^{\mu\nu}$, and the Gordon identity shows it is the magnetic-moment part of the vector current, which gives $g = 2$ — [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-9|Theorem §C5a.7.9]], [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]].
-> - The positive conserved density $\psi^\dagger\psi$ is Quantum Mechanics' probability density; in the field theory it is the time component of a Noether current, and after quantization a charge of either sign — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C1.11 Noether's Theorem#^thm-c1-11-5|Theorem §C1.11.5]], [[§C5b.1 Quantizing the Dirac Field|§C5b.1]].
+> - The positive conserved density $\psi^\dagger\psi$ is Quantum Mechanics' probability density; in the field theory it is the time component of a Noether current, and after quantization a charge of either sign — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C1.11 Noether's Theorem#^thm-c1-11-5|Theorem §C1.11.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - Chirality is a property of the Lorentz representation, helicity of a state; the Weyl equation ties them for massless particles, which is why a single Weyl field realizes one helicity of Wigner's massless classification — [[§C3.6★ Massless Particles and Helicity#^thm-c3-6-6|Theorem §C3.6.6]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-14|Theorem §C5a.6.14]].
 > - The spin current $\bar\psi\gamma^\lambda S^{\mu\nu}\psi$ is the field-theoretic origin of the electron's spin $\frac12$ and of the non-conservation of $\mathbf L$ alone; Belinfante's improvement moves the spin into a symmetric $\hat T$ — [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-8|Theorem §C1.12.8]], [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-10|Theorem §C1.12.10]], [[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]].
 > - Mass breaks chiral symmetry because it pairs left with right; the same statement in group language is that $\gamma^0$, the invariant form, swaps the Weyl blocks — [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^rem-c5a-1-3|§C5a.1, Remark: Kinematics allows one handedness, a mass needs both]].

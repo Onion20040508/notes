@@ -19,7 +19,7 @@ The notes of [[Quantum Field Theory]] follow Yu's chapter order; this log follow
 | 7 | Sep 23 | The Lorentz group | §3.1, pp. 40–41 | Ch. 7, Ch. 8 (first part) | [[§C1.4 The Lorentz Group\|§C1.4]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators\|§C1.6]] (vector representation; algebra derived); representations and Poincaré: [[§C3.1 Groups, Algebras and Representations of Rotations\|§C3.1]]–[[§C3.4 Quantum Poincaré Transformations\|§C3.4]]; spinor representation: [[§C5a.1 Weyl Spinors and SL(2,C)\|§C5a.1]]–[[§C5a.2 The Clifford Algebra and the Dirac Representation\|§C5a.2]] |
 | 8 | Sep 28 | The Dirac equation | §3.2 | Ch. 8 | [[§C5a.1 Weyl Spinors and SL(2,C)\|§C5a.1]]–[[§C5a.2 The Clifford Algebra and the Dirac Representation\|§C5a.2]] (continued), [[§C5a.3 The Dirac Equation and Its Lagrangian\|§C5a.3]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations\|§C5a.4]] |
 | 9 | Sep 30 | Solutions to the Dirac equation | §3.3 | Ch. 9 | [[§C5a.5 Plane-Wave Solutions\|§C5a.5]], [[§C5a.6 Normalization, Spin Sums and Helicity\|§C5a.6]] |
-| 10 | Oct 5 | Quantization of the Dirac field | §3.5 | — | [[§C5b.1 Quantizing the Dirac Field\|§C5b.1]], [[§C5b.2 The Dirac Propagator and Spin–Statistics\|§C5b.2]] (*draft*) |
+| 10 | Oct 5 | Quantization of the Dirac field | §3.5 | — | [[§C5b.1 Canonical Quantization of the Dirac Field\|§C5b.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator\|§C5b.8]] (*draft*) |
 | 11 | | Parity | §3.6 | — | QFT C9 (planned) |
 | 12 | | C, T and CPT | §3.6; §3.4 pp. 49–51 | — | QFT C9 (planned) |
 | — | Oct 14 | Midterm | | | |

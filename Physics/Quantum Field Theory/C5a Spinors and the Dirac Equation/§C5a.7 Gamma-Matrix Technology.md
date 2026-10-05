@@ -7,7 +7,7 @@ section: C5a.7
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5a.6 Normalization, Spin Sums and Helicity]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5b.1 Quantizing the Dirac Field]] →
+← [[§C5a.6 Normalization, Spin Sums and Helicity]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5b.1 Canonical Quantization of the Dirac Field]] →
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77).*
 
@@ -425,7 +425,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 > [!remark]- Connections
 > - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|Theorem §C5a.2.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
-> - Casimir's trick turns spin sums into traces: the spin sums of [[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]] are what the trace theorems are for; the Dirac propagator's numerator $\slashed{p} + m$ is the same spin sum, so loop traces use the same identities — [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-7|Theorem §C5a.6.7]], [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-8|Theorem §C5b.2.8]].
+> - Casimir's trick turns spin sums into traces: the spin sums of [[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]] are what the trace theorems are for; the Dirac propagator's numerator $\slashed{p} + m$ is the same spin sum, so loop traces use the same identities — [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-7|Theorem §C5a.6.7]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
 > - The duality $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ is the Hodge star of antisymmetric tensors in matrix form; its eigenspaces are the $(1, 0)$ and $(0, 1)$ halves, the same split as $\mathbf E \mp i\mathbf B$ — [[§C1.5 Vectors, Tensors and Index Notation#^thm-c1-5-7|Theorem §C1.5.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The Gordon split of the current into convection and spin magnetization is the relativistic version of the Pauli equation's $\frac{e}{2m}(\mathbf L + 2\mathbf S)\cdot\mathbf B$, with $g = 2$ — [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]].
 > - $\gamma_\mu\gamma^\mu = d$ makes the contraction identities dimension dependent, the starting point of $\gamma$ algebra in dimensional regularization — QFT C7 (planned).

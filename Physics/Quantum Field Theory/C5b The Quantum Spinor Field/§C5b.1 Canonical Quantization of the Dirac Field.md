@@ -25,7 +25,7 @@ This is the spinor counterpart of [[§C2a.1 Canonical Quantization of Fields|§C
 > | spin label of $u$, $v$ | $s = 1, 2$ | $s = 1, 2$ | $s = 1, 2$ | helicity $\lambda = \pm$ |
 > | one-particle states | $\vert\mathbf p, s\rangle$, $\vert\mathbf p, s\rangle^c$ | $\vert\mathbf p, s\rangle$, $\vert\mathbf p, s\rangle^c$ | $\vert\mathbf p, s\rangle$; antifermion unnamed | $\vert\mathbf p^+, \lambda\rangle$, $\vert\mathbf p^-, \lambda\rangle$ |
 > | momentum density | $\Pi_\psi = i\psi^\dagger$ | $\pi = i\psi^\dagger$ | $i\psi^\dagger$ | $\pi = i\psi^\dagger$ |
-> | kernel of $\mathcal H$ | $H_{\text{s.p.}}$ | $H_{\text{s.p.}}$ ($h_D$ in §C5a.3) | unnamed, eq. (3.85) | — |
+> | kernel of $\mathcal H$ | $H_{\text{s.p.}}$ | $H_{\text{s.p.}}$ (Caution below) | unnamed, eq. (3.85) | — |
 >
 > The superscript $c$ on the antifermion state is for "conjugate". Peskin–Schroeder's pp. 52–57 use a provisional labelling ($b^s_{-\mathbf p}v^s(-\mathbf p)$ in eq. (3.87), then $\tilde b = b^\dagger$ in eq. (3.98)) that they ask the reader to forget from eq. (3.99) on; only the final one is used here. Other texts write $b$, $d$ (Sakurai, Srednicki) or $b$, $c$.
 >
@@ -49,11 +49,18 @@ This is the spinor counterpart of [[§C2a.1 Canonical Quantization of Fields|§C
 > H_{\text{s.p.}} \equiv \gamma^0\bigl(-i\boldsymbol\gamma\cdot\nabla + m\bigr) = -i\boldsymbol\alpha\cdot\nabla + \beta m, \qquad \boldsymbol\gamma\cdot\nabla \equiv \gamma^j\partial_j, \quad \boldsymbol\alpha = \gamma^0\boldsymbol\gamma, \ \beta = \gamma^0 ,
 > $$
 >
-> the kernel of the Hamiltonian density, $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]], where it is written $h_D$). It is Hermitian ($\boldsymbol\alpha$, $\beta$ Hermitian, same theorem), and on $e^{i\mathbf p\cdot\mathbf x}$ it acts as the matrix $h(\mathbf p) = \gamma^0(\gamma^jp^j + m)$. It is the Hamiltonian that relativistic quantum mechanics takes for a four-component wave function ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]).
+> the kernel of the Hamiltonian density, $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]). It is Hermitian ($\boldsymbol\alpha$, $\beta$ Hermitian, same theorem), and on $e^{i\mathbf p\cdot\mathbf x}$ it acts as the matrix $H_{\text{s.p.}}(\mathbf p) = \gamma^0(\gamma^jp^j + m)$ (names in other sources: [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-2|Caution: Names for the single-particle Hamiltonian]]). It is the Hamiltonian that relativistic quantum mechanics takes for a four-component wave function ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]).
 >
 > *Source: Lecture 10, slide 16 · the user's PHY 513 notes, Ch. 10 §10.5 (Definition "The single-particle Hamiltonian"; there $\gamma^0\gamma^i$ is called anti-Hermitian: it is Hermitian, $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^0 = -\gamma^i\gamma^0 = \gamma^0\gamma^i$, Step 5 of [[§C5a.3 The Dirac Equation and Its Lagrangian#^der-c5a-3-9|Derivation §C5a.3.9]], which is what makes $\gamma^0\gamma^i(-i\partial_i)$ Hermitian) · PS §3.5, eq. (3.85)*
 
 ^def-c5b-1-1
+
+> [!caution] Caution: Names for the single-particle Hamiltonian
+> One operator, several names. These notes write $H_{\text{s.p.}}$ everywhere, as Lecture 10 (slide 16) and the user's PHY 513 notes (Ch. 10 §10.5) do; earlier drafts of this vault wrote $h_D$ for it and $h(\mathbf p)$ for its momentum-space form, now $H_{\text{s.p.}}(\mathbf p)$. Quantum Mechanics (Sakurai) calls it the Dirac Hamiltonian, $H = c\,\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$, acting on a four-component wave function ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]); Peskin–Schroeder write it out without a name, $-i\gamma^0\boldsymbol\gamma\cdot\nabla + m\gamma^0$ (eq. (3.85)). In momentum space, with $\hbar = c = 1$, $H_{\text{s.p.}}(\mathbf p) = \boldsymbol\alpha\cdot\mathbf p + \beta m = \gamma^0(\gamma^jp^j + m)$. Not to be confused with the field Hamiltonian $H = \int d^3x\,\psi^\dagger H_{\text{s.p.}}\psi$, an operator on Fock space ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]), or with the density $\mathcal H$.
+>
+> *Source: Lecture 10, slide 16 · the user's PHY 513 notes, Ch. 10 §10.5 · PS §3.5, eq. (3.85) · Sakurai, eqs. (8.51)–(8.53), as in QM §C13.2★*
+
+^cau-c5b-1-2
 
 > [!model] Model §C5b.1.1: The Free Dirac Field as a Canonical System
 > The free Dirac field of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]], $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$, has the four canonical pairs $(\psi_a, \pi_a)$ with $\pi_a = i\psi_a^\dagger$ and no momentum conjugate to $\bar\psi$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), and the Hamiltonian
@@ -82,7 +89,7 @@ This is the spinor counterpart of [[§C2a.1 Canonical Quantization of Fields|§C
 >
 > *Source: Lecture 10, slides 5–6 · the user's PHY 513 notes, Ch. 10 §10.1 (Caution "The provisional quantization, and why it is strange") · PS §3.5, pp. 52–56 · Yu §5.5.1*
 
-^cau-c5b-1-2
+^cau-c5b-1-3
 
 ## The postulate, and the theorem behind it
 
@@ -176,7 +183,7 @@ This is the spinor counterpart of [[§C2a.1 Canonical Quantization of Fields|§C
 *Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
 > [!remark]- Connections
-> - The puzzle of [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-2|Caution: The provisional commutator quantization]] is the quantum face of a classical fact: a Lagrangian of first order in time has momenta that are functions of the coordinates, so phase space is half as large and the canonical pairs are $(\psi, \psi^\dagger)$ — [[§C1.10 Hamiltonian Field Theory#^rem-c1-10-3|§C1.10, Remark: Constraints and first-order Lagrangians]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]].
+> - The puzzle of [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-3|Caution: The provisional commutator quantization]] is the quantum face of a classical fact: a Lagrangian of first order in time has momenta that are functions of the coordinates, so phase space is half as large and the canonical pairs are $(\psi, \psi^\dagger)$ — [[§C1.10 Hamiltonian Field Theory#^rem-c1-10-3|§C1.10, Remark: Constraints and first-order Lagrangians]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]].
 > - The anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-2|Principle §C5b.1.2]] have the form of the fermionic field relations of nonrelativistic second quantization; the relativistic field adds two species in one local field, spinors, and a statistics that is forced rather than chosen — [[§C12.2★ Second Quantization#^thm-c12-2-3|QM Theorem §C12.2.3]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-6|§C5b.2, Remark: What the field adds to the anticommutators of second quantization]].
 > - Microcausality for fermions is an anticommutator statement, and the Feynman propagator of the Dirac field carries the fermionic sign of time ordering — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]; the spin–statistics theorem ties the anticommutators of this section to spin ½, the representations with the sign $-1$ under a $2\pi$ rotation — [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-3|Principle §C5b.1.3]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations|§C3.2]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]].
 > - The anticommutators make smeared fermion fields bounded ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]]), so the distributional care needed in this chapter is only for point values and coincident labels: the plane-wave delta in $\mathcal S'$, the split exponentials for wave packets, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, the box for δ³(0), integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]; for the scalar the smeared fields are unbounded and the canonical relations are identities of unbounded operators — [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]].
