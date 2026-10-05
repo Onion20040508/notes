@@ -2,20 +2,20 @@
 type: section
 subject: "[[Quantum Field Theory]]"
 level: C
-chapter: C2
-section: C2.9
+chapter: C2b
+section: C2b.3
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C2.8 The Wightman Function]] · ↑ [[· C2 The Quantum Scalar Field]] · [[§C2.10 Microcausality and the Commutator Function]] →
+← [[§C2b.2 The Wightman Function]] · ↑ [[· C2b Two-Point Functions, Causality and Propagators]] · [[§C2b.4 Microcausality and the Commutator Function]] →
 
 *Sources: the user's PHY 513 notes, Ch. 5 §§5.4, 5.7, App. A §A.3, and the Bessel computations of Ch. 2 §2.2 · PHY 513 Lecture 5 (Larsen, 16 Sep 2026; no slides, reconstructed in the user's notes) · Peskin & Schroeder §2.4, pp. 26–27 · PHY 513, Problem Set 4, Problems 2(a) and 3(a).*
 
-What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a given spacetime point? Its Bessel-function forms are computed here once for the whole subject: one Euclidean evaluation ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]]) continued, through the boundary value of [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], to every spacetime point (Theorems §C2.9.2–§C2.9.5). The commutator function of [[§C2.10 Microcausality and the Commutator Function|§C2.10]] and the Feynman function of [[§C2.13 Wick Rotation and the Two-Point Family|§C2.13]] are read off from these forms.
+What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a given spacetime point? Its Bessel-function forms are computed here once for the whole subject: one Euclidean evaluation ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]) continued, through the boundary value of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], to every spacetime point (Theorems §C2b.3.2–§C2b.3.5). The commutator function of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]] and the Feynman function of [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] are read off from these forms.
 
-*Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2.1 Canonical Quantization of Fields#^cau-c2-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
+*Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
-> [!theorem] Theorem §C2.9.1: The Wightman Function at Imaginary Time
+> [!theorem] Theorem §C2b.3.1: The Wightman Function at Imaginary Time
 > For $\tau > 0$, with $p_E = (p_4, \mathbf p)$, $x_E = (\tau, \boldsymbol\xi)$, Euclidean products and $R = \sqrt{\tau^2 + \boldsymbol\xi^2}$,
 >
 > $$
@@ -26,10 +26,10 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "The relativistic amplitude in closed form", Steps 1–4, where it is the auxiliary function $D_E$), Ch. 5 §5.4*
 
-^thm-c2-9-1
+^thm-c2b-3-1
 
 > [!derivation]- Derivation
-> **Step 1** (the first equality). Put $z = -i\tau$ in [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]]: $-iE_{\mathbf p}z = -iE_{\mathbf p}(-i\tau) = -E_{\mathbf p}\tau$.
+> **Step 1** (the first equality). Put $z = -i\tau$ in [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]]: $-iE_{\mathbf p}z = -iE_{\mathbf p}(-i\tau) = -E_{\mathbf p}\tau$.
 >
 > **Step 2** (a fourth momentum, by residues). For $E > 0$ and $\tau > 0$ consider $g(p_4) = \frac{e^{ip_4\tau}}{(p_4 - iE)(p_4 + iE)}$, poles at $\pm iE$. Since $|e^{ip_4\tau}| = e^{-\tau\operatorname{Im}p_4} \le 1$ for $\operatorname{Im}p_4 \ge 0$, close the real line upward ([[P2 Green's Functions by Contour Integration#^p2-4|P2, step 4]]); on the semicircle of radius $L > E$ (a letter other than the $R$ of the statement), $|g| \le 1/(L^2 - E^2)$, so the arc is at most $\pi L/(L^2 - E^2) \to 0$ as $L \to \infty$ (ML, [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]). The closed contour is counterclockwise and encloses only $p_4 = iE$, with residue $\frac{e^{i(iE)\tau}}{2iE} = \frac{e^{-E\tau}}{2iE}$ ([[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]). By the residue theorem ([[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]),
 >
@@ -37,9 +37,9 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 > \int_{-\infty}^{\infty}\frac{dp_4}{2\pi}\,\frac{e^{ip_4\tau}}{p_4^2 + E^2} = \frac{1}{2\pi}\cdot2\pi i\cdot\frac{e^{-E\tau}}{2iE} = \frac{e^{-E\tau}}{2E} .
 > $$
 >
-> With $E = E_{\mathbf p}$, $p_4^2 + E_{\mathbf p}^2 = p_4^2 + \mathbf p^2 + m^2 = p_E^2 + m^2$, and inserting this for each $\mathbf p$ gives the second equality, read as the iterated integral ($\mathbf p$ outside). (The four-dimensional integral does not converge absolutely, since $\int d^4p_E/(p_E^2 + m^2) = \infty$; as an identity in $\mathcal S'(\mathbb R^4)$ it is the transform of the bounded function $1/(p_E^2 + m^2)$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], which at $x_E \ne 0$ is the smooth function computed here: [[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-4|Theorem §C2.13.4]], 3.)
+> With $E = E_{\mathbf p}$, $p_4^2 + E_{\mathbf p}^2 = p_4^2 + \mathbf p^2 + m^2 = p_E^2 + m^2$, and inserting this for each $\mathbf p$ gives the second equality, read as the iterated integral ($\mathbf p$ outside). (The four-dimensional integral does not converge absolutely, since $\int d^4p_E/(p_E^2 + m^2) = \infty$; as an identity in $\mathcal S'(\mathbb R^4)$ it is the transform of the bounded function $1/(p_E^2 + m^2)$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], which at $x_E \ne 0$ is the smooth function computed here: [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], 3.)
 >
-> ⚑ By-product: the four-dimensional form is the Euclidean propagator $D_E$, whose home is [[§C2.13 Wick Rotation and the Two-Point Family#^def-c2-13-1|Def. §C2.13.1]]; it is manifestly invariant under rotations of $(\tau, \boldsymbol\xi)$, so the result depends on $R$ only.
+> ⚑ By-product: the four-dimensional form is the Euclidean propagator $D_E$, whose home is [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-1|Def. §C2b.7.1]]; it is manifestly invariant under rotations of $(\tau, \boldsymbol\xi)$, so the result depends on $R$ only.
 >
 > **Step 3** (Schwinger parametrization for each $\mathbf p$). $\frac{1}{p_4^2 + E^2} = \int_0^\infty ds\,e^{-s(p_4^2 + E^2)}$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], 2). The $s$ and $p_4$ integrals may be exchanged: the modulus of the integrand has $\int ds\int dp_4\,e^{-s(p_4^2 + E^2)} = \int_0^\infty ds\,\sqrt{\pi/s}\,e^{-sE^2} < \infty$ ([[Tonelli's Theorem|551 Tonelli's theorem]], then Fubini). The $p_4$ integral is a one-dimensional Gaussian (Theorem §CA.5.1, 1 with $n = 1$):
 >
@@ -53,7 +53,7 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 > W(-i\tau, \boldsymbol\xi) = \int_0^\infty ds\;\frac{e^{-\tau^2/4s}}{(4\pi s)^{1/2}}\,e^{-sm^2}\,\frac{e^{-\boldsymbol\xi^2/4s}}{(4\pi s)^{3/2}} = \frac{1}{16\pi^2}\int_0^\infty\frac{ds}{s^2}\,\exp\Bigl(-sm^2 - \frac{R^2}{4s}\Bigr).
 > $$
 >
-> ⚑ By-product: $\tau > 0$ is what makes every exchange legitimate; at $\tau = 0$ the small-$s$ region diverges, the same divergence as Step 6 of Theorem §C2.8.1. (Doing the Schwinger step on the four-dimensional integral at once, as the user's notes do, exchanges integrals that are not jointly absolutely convergent near $s = 0$; doing $p_4$ first, as here, avoids this.)
+> ⚑ By-product: $\tau > 0$ is what makes every exchange legitimate; at $\tau = 0$ the small-$s$ region diverges, the same divergence as Step 6 of Theorem §C2b.2.1. (Doing the Schwinger step on the four-dimensional integral at once, as the user's notes do, exchanges integrals that are not jointly absolutely convergent near $s = 0$; doing $p_4$ first, as here, avoids this.)
 >
 > **Step 5** (change of variables, $m > 0$). Substitute $s = \frac{R}{2m}e^u$, $u \in (-\infty, \infty)$ as $s \in (0, \infty)$. Then $sm^2 = \frac{mR}{2}e^u$, $\frac{R^2}{4s} = \frac{mR}{2}e^{-u}$, so the exponent is $-\frac{mR}{2}(e^u + e^{-u}) = -mR\cosh u$; and $ds = s\,du$, so $\frac{ds}{s^2} = \frac{du}{s} = \frac{2m}{R}e^{-u}\,du$:
 >
@@ -65,18 +65,18 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > **Step 7** ($m = 0$). Step 5 needs $m > 0$. For $m = 0$, Step 4 gives $\frac{1}{16\pi^2}\int_0^\infty\frac{ds}{s^2}e^{-R^2/4s}$; with $v = 1/s$, $dv = -ds/s^2$, this is $\frac{1}{16\pi^2}\int_0^\infty dv\,e^{-R^2v/4} = \frac{1}{16\pi^2}\cdot\frac{4}{R^2} = \frac{1}{4\pi^2R^2}$, which is also the $m \to 0$ limit of Step 6 since $K_1(z) \simeq 1/z$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3).
 >
-> ⚑ By-product: the $m > 0$ form and the $m = 0$ form are related by the small-argument limit of $K_1$; the massless function reappears as the light-cone singularity of the massive one → [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-5|Theorem §C2.9.5]].
+> ⚑ By-product: the $m > 0$ form and the $m = 0$ form are related by the small-argument limit of $K_1$; the massless function reappears as the light-cone singularity of the massive one → [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
 >
 > **What the derivation shows.**
 > - Three tools in sequence: a residue (a fourth momentum), a Gaussian (after Schwinger's parametrization), and a change of variables to the integral representation of $K_1$.
 > - Four-dimensional Euclidean rotation invariance: Lorentz invariance continued to imaginary time.
-> - Used next: the continuation to every $\xi$ (Theorem §C2.9.2); the Euclidean propagator (§C2.13, Def. §C2.13.1); [[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-4|Theorem §C1.3.4]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
+> - Used next: the continuation to every $\xi$ (Theorem §C2b.3.2); the Euclidean propagator (§C2b.7, Def. §C2b.7.1); [[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-4|Theorem §C1.3.4]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
 
-^der-c2-9-1
+^der-c2b-3-1
 
-*Uses:* [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[Tonelli's Theorem|551 Tonelli's theorem]]
+*Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[Tonelli's Theorem|551 Tonelli's theorem]]
 
-> [!theorem] Theorem §C2.9.2: The Wightman Function in the Lower Half-Plane
+> [!theorem] Theorem §C2b.3.2: The Wightman Function in the Lower Half-Plane
 > For $\operatorname{Im}z < 0$,
 >
 > $$
@@ -87,7 +87,7 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Derivation "$D_W$ everywhere, by analytic continuation", the Claim)*
 
-^thm-c2-9-2
+^thm-c2b-3-2
 
 > [!derivation]- Derivation
 > **Step 1** (where $s^2$ goes). Write $z = a - ib$, $b > 0$. Then $\boldsymbol\xi^2 - z^2 = \boldsymbol\xi^2 - a^2 + b^2 + 2iab$. Its imaginary part $2ab$ vanishes only for $a = 0$, and there the value is $\boldsymbol\xi^2 + b^2 > 0$. So for $\operatorname{Im}z < 0$, $\boldsymbol\xi^2 - z^2$ never lies on $(-\infty, 0]$.
@@ -98,20 +98,20 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > **Step 3** (the right side is analytic). $K_1$ is analytic on $\operatorname{Re}w > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]); composed with $ms(z)$ and divided by $s \ne 0$ it is analytic on the lower half-plane.
 >
-> **Step 4** (agreement on a ray). On $z = -i\tau$, $\tau > 0$: $s = \sqrt{\boldsymbol\xi^2 + \tau^2} = R$, and the two sides agree by [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]].
+> **Step 4** (agreement on a ray). On $z = -i\tau$, $\tau > 0$: $s = \sqrt{\boldsymbol\xi^2 + \tau^2} = R$, and the two sides agree by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]].
 >
-> **Step 5** (identity theorem). $W$ is analytic on the lower half-plane ([[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]]), which is connected, and the ray has accumulation points in it. By [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]] the two functions agree everywhere there. For $m = 0$ the same argument with $1/4\pi^2s^2$.
+> **Step 5** (identity theorem). $W$ is analytic on the lower half-plane ([[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]]), which is connected, and the ray has accumulation points in it. By [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]] the two functions agree everywhere there. For $m = 0$ the same argument with $1/4\pi^2s^2$.
 >
 > **What the derivation shows.**
 > - No new integral is done: one Euclidean evaluation plus analyticity gives the function everywhere.
-> - The only singularities of $W$ as a function of $s^2 = \boldsymbol\xi^2 - z^2$ are the $1/s^2$ pole at $s^2 = 0$, the light cone (Theorem §C2.9.5), and the cut of $\sqrt{s^2}$ and $K_1$ along the negative axis, the timelike region.
-> - Used next: the three boundary values (Theorems §C2.9.3–§C2.9.5) and the Feynman function in position space ([[§C2.13 Wick Rotation and the Two-Point Family#^thm-c2-13-3|Theorem §C2.13.3]]).
+> - The only singularities of $W$ as a function of $s^2 = \boldsymbol\xi^2 - z^2$ are the $1/s^2$ pole at $s^2 = 0$, the light cone (Theorem §C2b.3.5), and the cut of $\sqrt{s^2}$ and $K_1$ along the negative axis, the timelike region.
+> - Used next: the three boundary values (Theorems §C2b.3.3–§C2b.3.5) and the Feynman function in position space ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-3|Theorem §C2b.7.3]]).
 
-^der-c2-9-2
+^der-c2b-3-2
 
-*Uses:* [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]], [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
+*Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
 
-> [!theorem] Theorem §C2.9.3: The Wightman Function at Spacelike Separation
+> [!theorem] Theorem §C2b.3.3: The Wightman Function at Spacelike Separation
 > For $\xi^2 = -r^2 < 0$,
 >
 > $$
@@ -126,16 +126,16 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 · PS §2.4, eq. (2.52) · PHY 513, Problem Set 4, Problem 3(a)*
 
-^thm-c2-9-3
+^thm-c2b-3-3
 
 > [!derivation]- Derivation
-> **Step 1** (the limit). Put $z = t - i\varepsilon$, $t = \xi^0$, in [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]]: $s^2 = \boldsymbol\xi^2 - (t - i\varepsilon)^2 = \boldsymbol\xi^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to \boldsymbol\xi^2 - t^2 = r^2 > 0$.
+> **Step 1** (the limit). Put $z = t - i\varepsilon$, $t = \xi^0$, in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]: $s^2 = \boldsymbol\xi^2 - (t - i\varepsilon)^2 = \boldsymbol\xi^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to \boldsymbol\xi^2 - t^2 = r^2 > 0$.
 >
-> **Step 2** (smoothness). $r^2$ is a positive real number, away from the cut of $\sqrt{\ }$ and of $K_1$; the right side of Theorem §C2.9.2 is continuous there, so the limit exists pointwise, locally uniformly in the spacelike region, and therefore also as a generalized function there: integrated against a test function supported in that open region it converges by uniform convergence, so the distribution $D_W$ of Theorem §C2.8.5, restricted to the region ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]), is this function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]], 1). With $s \to r$: $D_W = mK_1(mr)/4\pi^2r$.
+> **Step 2** (smoothness). $r^2$ is a positive real number, away from the cut of $\sqrt{\ }$ and of $K_1$; the right side of Theorem §C2b.3.2 is continuous there, so the limit exists pointwise, locally uniformly in the spacelike region, and therefore also as a generalized function there: integrated against a test function supported in that open region it converges by uniform convergence, so the distribution $D_W$ of Theorem §C2b.2.5, restricted to the region ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]), is this function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1). With $s \to r$: $D_W = mK_1(mr)/4\pi^2r$.
 >
 > **Step 3** (real and positive). $K_1(x) = \int_0^\infty e^{-x\cosh u}\cosh u\,du > 0$ for $x > 0$.
 >
-> ⚑ By-product: $D_W$ is *real* at spacelike separation; since $[\phi(x), \phi(y)] = 2i\operatorname{Im}D_W$, this is microcausality → [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]], second route.
+> ⚑ By-product: $D_W$ is *real* at spacelike separation; since $[\phi(x), \phi(y)] = 2i\operatorname{Im}D_W$, this is microcausality → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], second route.
 >
 > **Step 4** (short distance). $K_1(x) = 1/x + O(x\ln x)$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3), so $D_W \simeq \frac{m}{4\pi^2r}\cdot\frac{1}{mr} = \frac{1}{4\pi^2r^2}$, the massless function.
 >
@@ -147,21 +147,21 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > using $2(2\pi)^{3/2} = 4\sqrt2\,\pi^{3/2}$.
 >
-> ⚑ By-product: the decay length is the Compton wavelength $1/m$ ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-2|REL Def. §B4.1.2]]), and the Hadamard function $D_1 = 2D_W$ is the same function → [[§C2.10 Microcausality and the Commutator Function#^rem-c2-10-3|Remark: Influence and correlation]].
+> ⚑ By-product: the decay length is the Compton wavelength $1/m$ ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-2|REL Def. §B4.1.2]]), and the Hadamard function $D_1 = 2D_W$ is the same function → [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-3|Remark: Influence and correlation]].
 >
 > **What the derivation shows.**
 > - Outside the light cone the boundary value is an ordinary smooth function; the $i\varepsilon$ is needed only to define it on and inside the cone.
-> - The leak outside the cone is exponentially small but nonzero; it is a correlation, not an influence (Theorem §C2.10.5).
+> - The leak outside the cone is exponentially small but nonzero; it is a correlation, not an influence (Theorem §C2b.4.5).
 > - Two further routes below compute the equal-time value directly, without analytic continuation.
 
-^der-c2-9-3
+^der-c2b-3-3
 
-*Uses:* [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
 
 > [!derivation]- Derivation (second route: the contour around the branch cut, at equal times)
-> This is the lecture's and PS's computation (PS eq. (2.52), Fig. 2.3), with the three points that need care made explicit. By Theorem §C2.8.3 it suffices to take $\xi^0 = 0$, $|\boldsymbol\xi| = r$.
+> This is the lecture's and PS's computation (PS eq. (2.52), Fig. 2.3), with the three points that need care made explicit. By Theorem §C2b.2.3 it suffices to take $\xi^0 = 0$, $|\boldsymbol\xi| = r$.
 >
-> **Step 1** (equal times). At $\xi^0 = 0$, $e^{-ip\cdot\xi} = e^{+i\mathbf p\cdot\boldsymbol\xi}$, and with the convergence factor of [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], Step 5, understood (sense: $\boldsymbol\xi \ne 0$ at $\xi^0 = 0$ is a spacelike point, where $D_W$ is a smooth function, [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]], 1; its value there is the pointwise limit $\varepsilon \to 0^+$ of $W(-i\varepsilon, \boldsymbol\xi)$, and every step below is done at $\varepsilon > 0$, where the integral converges absolutely, before the limit),
+> **Step 1** (equal times). At $\xi^0 = 0$, $e^{-ip\cdot\xi} = e^{+i\mathbf p\cdot\boldsymbol\xi}$, and with the convergence factor of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], Step 5, understood (sense: $\boldsymbol\xi \ne 0$ at $\xi^0 = 0$ is a spacelike point, where $D_W$ is a smooth function, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1; its value there is the pointwise limit $\varepsilon \to 0^+$ of $W(-i\varepsilon, \boldsymbol\xi)$, and every step below is done at $\varepsilon > 0$, where the integral converges absolutely, before the limit),
 >
 > $$
 > D_W(r) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,e^{i\mathbf p\cdot\boldsymbol\xi} .
@@ -215,7 +215,7 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 > [!derivation]- Derivation (third route: real variables only)
 > No contours: a substitution, a table integral, and the interchange theorems of [[§CA.1 Exchanging Limits, Derivatives and Integrals|§CA.1]].
 >
-> **Step 1** (regulate). From Step 2 of the second route, $D_W(r) = \frac{1}{4\pi^2r}\int_0^\infty dp\,\frac{p\sin pr}{\sqrt{p^2 + m^2}} = -\frac{i}{2(2\pi)^2r}\int_0^\infty dp\,\frac{p}{\sqrt{p^2 + m^2}}(e^{ipr} - e^{-ipr})$, which does not converge. Damp both exponentials by $e^{-\varepsilon p}$ (the problem set's $r \to r \pm i\varepsilon$; a damping factor in the sense of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], removed by a pointwise limit at fixed $r > 0$ in Steps 3–4, which is legitimate because $D_W$ is a smooth function at spacelike points, [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]], 1):
+> **Step 1** (regulate). From Step 2 of the second route, $D_W(r) = \frac{1}{4\pi^2r}\int_0^\infty dp\,\frac{p\sin pr}{\sqrt{p^2 + m^2}} = -\frac{i}{2(2\pi)^2r}\int_0^\infty dp\,\frac{p}{\sqrt{p^2 + m^2}}(e^{ipr} - e^{-ipr})$, which does not converge. Damp both exponentials by $e^{-\varepsilon p}$ (the problem set's $r \to r \pm i\varepsilon$; a damping factor in the sense of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], removed by a pointwise limit at fixed $r > 0$ in Steps 3–4, which is legitimate because $D_W$ is a smooth function at spacelike points, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1):
 >
 > $$
 > \Delta_\varepsilon(r) \equiv \int_0^\infty dp\,\frac{p\,e^{-\varepsilon p}}{\sqrt{p^2 + m^2}}\bigl(e^{ipr} - e^{-ipr}\bigr), \qquad D_W(r) = -\frac{i}{2(2\pi)^2r}\lim_{\varepsilon\to0^+}\Delta_\varepsilon(r),
@@ -251,14 +251,14 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > **What the derivation shows.**
 > - Every exchange of a limit with an integral or a derivative is licensed by a named theorem; the one that needs uniform convergence is the derivative (Step 4).
-> - The regulator $e^{-\varepsilon p}$ differs from the covariant $e^{-\varepsilon E_{\mathbf p}}$ of Theorem §C2.8.5; at spacelike separation both limits are the same smooth function, so the choice does not matter there.
+> - The regulator $e^{-\varepsilon p}$ differs from the covariant $e^{-\varepsilon E_{\mathbf p}}$ of Theorem §C2b.2.5; at spacelike separation both limits are the same smooth function, so the choice does not matter there.
 > - Three independent routes (analytic continuation, contour, real variables) give one answer.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Derivation "A third route: real variables only") · PHY 513, Problem Set 4, Problem 3(a)*
 
 *Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|Theorem §CA.1.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]]
 
-> [!theorem] Theorem §C2.9.4: The Wightman Function at Timelike Separation
+> [!theorem] Theorem §C2b.3.4: The Wightman Function at Timelike Separation
 > For $\xi^2 = \tau^2 > 0$,
 >
 > $$
@@ -273,10 +273,10 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (timelike case), §5.7 (Derivation "Explicit forms") · PS §2.4, eq. (2.51)*
 
-^thm-c2-9-4
+^thm-c2b-3-4
 
 > [!derivation]- Derivation
-> **Step 1** (the limit of $s$). With $z = t - i\varepsilon$, $s^2 = \boldsymbol\xi^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to -\tau^2 + i0\cdot\operatorname{sgn}(t)$: for $t > 0$ the point approaches the negative real axis from above, for $t < 0$ from below. The principal root of $-\tau^2 + i0$ is $+i\tau$, of $-\tau^2 - i0$ it is $-i\tau$. So $s \to i\operatorname{sgn}(t)\,\tau$. The limit is pointwise and locally uniform in the open timelike region, so, as in Step 2 of Derivation §C2.9.3, it is the restriction of the distribution $D_W$ there ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]], 1).
+> **Step 1** (the limit of $s$). With $z = t - i\varepsilon$, $s^2 = \boldsymbol\xi^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to -\tau^2 + i0\cdot\operatorname{sgn}(t)$: for $t > 0$ the point approaches the negative real axis from above, for $t < 0$ from below. The principal root of $-\tau^2 + i0$ is $+i\tau$, of $-\tau^2 - i0$ it is $-i\tau$. So $s \to i\operatorname{sgn}(t)\,\tau$. The limit is pointwise and locally uniform in the open timelike region, so, as in Step 2 of Derivation §C2b.3.3, it is the restriction of the distribution $D_W$ there ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1).
 >
 > **Step 2** ($t > 0$). $D_W = \frac{mK_1(im\tau)}{4\pi^2\cdot i\tau}$. The continuation formula $K_1(ix) = -\frac\pi2\bigl[J_1(x) - iY_1(x)\bigr]$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3), with $x = m\tau$, gives
 >
@@ -286,9 +286,9 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > using $-1/i = i$.
 >
-> **Step 3** ($t < 0$). $D_W(\xi) = \overline{D_W(-\xi)}$ ([[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]], 2), and $-\xi$ has positive time component: $D_W = \frac{m}{8\pi\tau}[Y_1 - iJ_1]$. Together, the factor $\operatorname{sgn}(\xi^0)$ on $J_1$.
+> **Step 3** ($t < 0$). $D_W(\xi) = \overline{D_W(-\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], 2), and $-\xi$ has positive time component: $D_W = \frac{m}{8\pi\tau}[Y_1 - iJ_1]$. Together, the factor $\operatorname{sgn}(\xi^0)$ on $J_1$.
 >
-> ⚑ By-product: the values on the two sheets are complex conjugates, not equal, so $D_W(\xi) - D_W(-\xi) \ne 0$ inside the cone: the commutator does not vanish there → [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]; and $\operatorname{Re}D_W = \frac12D_1$, $\operatorname{Im}D_W = \frac12D$ → [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-8|Theorem §C2.10.8]].
+> ⚑ By-product: the values on the two sheets are complex conjugates, not equal, so $D_W(\xi) - D_W(-\xi) \ne 0$ inside the cone: the commutator does not vanish there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]; and $\operatorname{Re}D_W = \frac12D_1$, $\operatorname{Im}D_W = \frac12D$ → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]].
 >
 > **Step 4** (late times at $\boldsymbol\xi = 0$). Here $\tau = t$. With $J_1(x) \simeq \sqrt{2/\pi x}\cos(x - \frac{3\pi}4)$ and $Y_1(x) \simeq \sqrt{2/\pi x}\sin(x - \frac{3\pi}4)$ (Theorem §CA.5.4, 4), and $\theta = mt - \frac{3\pi}{4}$: $Y_1 + iJ_1 \simeq \sqrt{\frac{2}{\pi mt}}(\sin\theta + i\cos\theta) = i\sqrt{\frac{2}{\pi mt}}\,e^{-i\theta}$. Hence
 >
@@ -302,99 +302,99 @@ What is the Wightman function of [[§C2.8 The Wightman Function|§C2.8]] at a gi
 >
 > **What the derivation shows.**
 > - Inside the cone $K_1$ of imaginary argument becomes a Hankel function: oscillation instead of decay.
-> - At late times only the lowest energy $E = m$ survives dephasing (PS's $e^{-imt}$), with the $t^{-3/2}$ of a spreading packet; continuing $r \to it$ in Theorem §C2.9.3 gives the same prefactor.
-> - Used next: the commutator and Hadamard functions inside the cone (Theorem §C2.10.8).
+> - At late times only the lowest energy $E = m$ survives dephasing (PS's $e^{-imt}$), with the $t^{-3/2}$ of a spreading packet; continuing $r \to it$ in Theorem §C2b.3.3 gives the same prefactor.
+> - Used next: the commutator and Hadamard functions inside the cone (Theorem §C2b.4.8).
 
-^der-c2-9-4
+^der-c2b-3-4
 
-*Uses:* [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]], [[§C2.8 The Wightman Function#^thm-c2-8-4|Theorem §C2.8.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]]
 
-> [!theorem] Theorem §C2.9.5: The Wightman Function near the Light Cone
+> [!theorem] Theorem §C2b.3.5: The Wightman Function near the Light Cone
 > As $\xi^2 \to 0$,
 >
 > $$
 > D_W(\xi) = -\frac{1}{4\pi^2\bigl[(\xi^0 - i\varepsilon)^2 - \boldsymbol\xi^2\bigr]} + \frac{m^2}{8\pi^2}\ln\frac{ms}{2} + \cdots, \qquad s = \sqrt{\boldsymbol\xi^2 - (\xi^0 - i\varepsilon)^2} :
 > $$
 >
-> the leading term is the massless Wightman function, exact for $m = 0$, and is a generalized function singular on the whole cone; the logarithm is locally integrable (the distributional statement is [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]]).
+> the leading term is the massless Wightman function, exact for $m = 0$, and is a generalized function singular on the whole cone; the logarithm is locally integrable (the distributional statement is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (light-cone case), §5.7 (the expansion of $K_1$) · PHY 513, Problem Set 4, Problem 2(a)*
 
-^thm-c2-9-5
+^thm-c2b-3-5
 
 > [!derivation]- Derivation
-> **Step 1** (expand $K_1$). $K_1(w) = \frac1w + \frac w2\ln\frac w2 + O(w)$ for $w \to 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3). With $w = ms$ in [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]]:
+> **Step 1** (expand $K_1$). $K_1(w) = \frac1w + \frac w2\ln\frac w2 + O(w)$ for $w \to 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3). With $w = ms$ in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]:
 >
 > $$
 > \frac{m}{4\pi^2s}K_1(ms) = \frac{m}{4\pi^2s}\Bigl[\frac{1}{ms} + \frac{ms}{2}\ln\frac{ms}{2} + O(ms)\Bigr] = \frac{1}{4\pi^2s^2} + \frac{m^2}{8\pi^2}\ln\frac{ms}{2} + O(m^2) .
 > $$
 >
-> **Step 2** (the leading term). $s^2 = \boldsymbol\xi^2 - z^2$ with $z = \xi^0 - i\varepsilon$, so $\frac{1}{4\pi^2s^2} = -\frac{1}{4\pi^2(z^2 - \boldsymbol\xi^2)}$. For $m = 0$ this is exact (Theorem §C2.9.2).
+> **Step 2** (the leading term). $s^2 = \boldsymbol\xi^2 - z^2$ with $z = \xi^0 - i\varepsilon$, so $\frac{1}{4\pi^2s^2} = -\frac{1}{4\pi^2(z^2 - \boldsymbol\xi^2)}$. For $m = 0$ this is exact (Theorem §C2b.3.2).
 >
-> **Step 3** (which terms are singular). $1/s^2$ blows up on the whole cone $\xi^2 = 0$; as $\varepsilon \to 0$ it is defined only as a generalized function, the boundary value of Theorem §C2.8.5; explicitly, $1/s^2 = 1/\bigl(-(\xi^0 - i\varepsilon)^2 + \boldsymbol\xi^2\bigr)$ is the $F_\varepsilon$ of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], whose limit is $1/(-\xi^2 + i0\,\xi^0)$ ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-6|Theorem §C2.9.6]], 3). $\ln s$ diverges only logarithmically, which is locally integrable, and changes by $i\pi\operatorname{sgn}(\xi^0)/2$ across the cone, a finite jump ($\ln s = \frac12\log s^2$ with $s^2 \to -\xi^2 + i0\,\xi^0$, and $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$, [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], 1).
+> **Step 3** (which terms are singular). $1/s^2$ blows up on the whole cone $\xi^2 = 0$; as $\varepsilon \to 0$ it is defined only as a generalized function, the boundary value of Theorem §C2b.2.5; explicitly, $1/s^2 = 1/\bigl(-(\xi^0 - i\varepsilon)^2 + \boldsymbol\xi^2\bigr)$ is the $F_\varepsilon$ of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], whose limit is $1/(-\xi^2 + i0\,\xi^0)$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 3). $\ln s$ diverges only logarithmically, which is locally integrable, and changes by $i\pi\operatorname{sgn}(\xi^0)/2$ across the cone, a finite jump ($\ln s = \frac12\log s^2$ with $s^2 \to -\xi^2 + i0\,\xi^0$, and $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$, [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], 1).
 >
-> ⚑ By-product: the jump of $\frac{m^2}{8\pi^2}\ln s$ gives $\operatorname{Im}D_W = \frac{m^2}{16\pi}$ just inside the future cone, so the commutator function jumps by a finite amount there → [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-8|Theorem §C2.10.8]]; and the $1/\xi^2$ singularity at coincident points is the divergence of the zero-point energy → [[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2-12-3|§C2.12, Remark: The zero-point energy is the Wightman function at coincident points]].
+> ⚑ By-product: the jump of $\frac{m^2}{8\pi^2}\ln s$ gives $\operatorname{Im}D_W = \frac{m^2}{16\pi}$ just inside the future cone, so the commutator function jumps by a finite amount there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]; and the $1/\xi^2$ singularity at coincident points is the divergence of the zero-point energy → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: The zero-point energy is the Wightman function at coincident points]].
 >
 > **What the derivation shows.**
 > - Every massive two-point function has the massless one as its light-cone singularity: the short-distance behaviour does not know about $m$.
 > - The definition by boundary values is indispensable exactly here.
-> - Used next: the massless commutator and Hadamard functions by Sokhotski–Plemelj (Theorem §C2.10.7).
+> - Used next: the massless commutator and Hadamard functions by Sokhotski–Plemelj (Theorem §C2b.4.7).
 
-^der-c2-9-5
+^der-c2b-3-5
 
-*Uses:* [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]], [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
 
 ![[ph-qft-c2-5-1.svg]]
-*The Wightman function in units $m = 1$. Left: outside the light cone (equal times) it is real and positive, $1/4\pi^2r^2$ at short distance and $e^{-mr}$ beyond the Compton wavelength (Theorem §C2.9.3); the two-term asymptotic form (with the $3/8mr$ correction) is within 2 % by $mr = 2$, the leading term alone within 14 %. Right: inside, at $\boldsymbol\xi = 0$, it oscillates as $e^{-imt}$ inside a $t^{-3/2}$ envelope (Theorem §C2.9.4); its imaginary part is $\tfrac12D$ and its real part $\tfrac12D_1$. Adapted from the user's PHY 513 notes, Fig. 5.1.*
+*The Wightman function in units $m = 1$. Left: outside the light cone (equal times) it is real and positive, $1/4\pi^2r^2$ at short distance and $e^{-mr}$ beyond the Compton wavelength (Theorem §C2b.3.3); the two-term asymptotic form (with the $3/8mr$ correction) is within 2 % by $mr = 2$, the leading term alone within 14 %. Right: inside, at $\boldsymbol\xi = 0$, it oscillates as $e^{-imt}$ inside a $t^{-3/2}$ envelope (Theorem §C2b.3.4); its imaginary part is $\tfrac12D$ and its real part $\tfrac12D_1$. Adapted from the user's PHY 513 notes, Fig. 5.1.*
 
 > [!remark] Remark: What the two regimes say
-> Outside the cone $D_W$ is damped on the Compton scale $1/m$ but not zero; the prefactor $r^{-3/2}$ is the spreading of a wave in three dimensions, and continuing $r \to it$ turns $r^{-3/2}e^{-mr}$ into the timelike $e^{-3\pi i/4}t^{-3/2}e^{-imt}$. Inside, at late times only the lowest energy $E = m$ survives dephasing (PS eq. (2.51)). The exponent $e^{-m\sqrt{-\xi^2}}$ at a general spacelike point also follows from steepest descent ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]), and the three regimes are three boundary values of one analytic function of $s^2 = -\xi^2$ (Theorem §C2.9.2): positive real outside, negative real inside, zero on the cone.
+> Outside the cone $D_W$ is damped on the Compton scale $1/m$ but not zero; the prefactor $r^{-3/2}$ is the spreading of a wave in three dimensions, and continuing $r \to it$ turns $r^{-3/2}e^{-mr}$ into the timelike $e^{-3\pi i/4}t^{-3/2}e^{-imt}$. Inside, at late times only the lowest energy $E = m$ survives dephasing (PS eq. (2.51)). The exponent $e^{-m\sqrt{-\xi^2}}$ at a general spacelike point also follows from steepest descent ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]), and the three regimes are three boundary values of one analytic function of $s^2 = -\xi^2$ (Theorem §C2b.3.2): positive real outside, negative real inside, zero on the cone.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 · PS §2.4, eq. (2.51)*
 
-^rem-c2-9-1
+^rem-c2b-3-1
 
-> [!theorem] Theorem §C2.9.6: The Wightman Function as a Distribution: Off the Cone and on It
-> 1. On the open set $\xi^2 \ne 0$ the distribution $D_W$ ([[§C2.8 The Wightman Function#^thm-c2-8-2|Theorem §C2.8.2]]) is the real-analytic function of Theorems §C2.9.3–§C2.9.4: $D_W[f] = \int d^4\xi\,f(\xi)\,D_W(\xi)$ for every test function $f$ supported off the light cone.
+> [!theorem] Theorem §C2b.3.6: The Wightman Function as a Distribution: Off the Cone and on It
+> 1. On the open set $\xi^2 \ne 0$ the distribution $D_W$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]) is the real-analytic function of Theorems §C2b.3.3–§C2b.3.4: $D_W[f] = \int d^4\xi\,f(\xi)\,D_W(\xi)$ for every test function $f$ supported off the light cone.
 > 2. $\operatorname{sing\,supp}D_W$ is the whole light cone $\xi^2 = 0$, tip included ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]).
 > 3. On all of $\mathbb R^4$, $D_W = \dfrac{1}{4\pi^2}\,\dfrac{1}{-\xi^2 + i0\,\xi^0} + L = -\dfrac{1}{4\pi^2}\,\mathcal P\frac{1}{\xi^2} - \dfrac{i}{4\pi}\operatorname{sgn}(\xi^0)\,\delta(\xi^2) + L$, with the light-cone boundary value of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]] and $L$ a locally integrable function ($L = 0$ for $m = 0$) with a logarithmic singularity and a finite jump on the cone. The $-i0\,\xi^0$ is the boundary value from $\operatorname{Im}\xi^0 < 0$ written covariantly.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (light-cone case, "defined only as a generalized function"), §5.7 · stated here as distributions (standard: Gel'fand & Shilov 1, Ch. III; Streater & Wightman, Ch. 2)*
 
-^thm-c2-9-6
+^thm-c2b-3-6
 
 > [!derivation]- Derivation
-> **Step 1** (off the cone). Let $f \in \mathcal D$ be supported in $\{\xi^2 \ne 0\}$; its support is compact, so it keeps a positive distance from the cone. On it, $W(\xi^0 - i\varepsilon, \boldsymbol\xi)$ converges uniformly to the functions of [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]] and [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-4|Theorem §C2.9.4]] (Step 2 and Step 1 of their derivations: $s^2$ stays in a compact set away from $0$, approached from one side of the cut). So $\int f\,W(\cdot - i\varepsilon) \to \int f\,D_W(\xi)\,d^4\xi$, while by [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]] the same integrals tend to $D_W[f]$. Part 1.
+> **Step 1** (off the cone). Let $f \in \mathcal D$ be supported in $\{\xi^2 \ne 0\}$; its support is compact, so it keeps a positive distance from the cone. On it, $W(\xi^0 - i\varepsilon, \boldsymbol\xi)$ converges uniformly to the functions of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]] and [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]] (Step 2 and Step 1 of their derivations: $s^2$ stays in a compact set away from $0$, approached from one side of the cut). So $\int f\,W(\cdot - i\varepsilon) \to \int f\,D_W(\xi)\,d^4\xi$, while by [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]] the same integrals tend to $D_W[f]$. Part 1.
 >
 > **Step 2** (smooth there). Off the cone the functions are $mK_1(mr)/4\pi^2r$ with $r = \sqrt{-\xi^2} > 0$ and $\frac{m}{8\pi\tau}[Y_1 + i\operatorname{sgn}(\xi^0)J_1](m\tau)$ with $\tau = \sqrt{\xi^2} > 0$, analytic functions of $\xi$ (Bessel functions of arguments bounded away from $0$; $\operatorname{sgn}\xi^0$ is constant on each sheet). So $\operatorname{sing\,supp}D_W \subseteq \{\xi^2 = 0\}$.
 >
-> **Step 3** (split off the light-cone term). By [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]], $W(\xi^0 - i\varepsilon, \boldsymbol\xi) = \mathcal W(s_\varepsilon^2)$ with $\mathcal W(w) = mK_1(m\sqrt w)/4\pi^2\sqrt w$ and $s_\varepsilon^2 = -(\xi^0 - i\varepsilon)^2 + \boldsymbol\xi^2 = -\xi^2 + 2i\varepsilon\xi^0 + \varepsilon^2$. Write $\mathcal W(w) = \frac{1}{4\pi^2w} + \ell(w)$. The first term at $w = s_\varepsilon^2$ is $\frac{1}{4\pi^2}F_\varepsilon$ with the $F_\varepsilon$ of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], which converges in $\mathcal S'(\mathbb R^4)$ to $\frac{1}{4\pi^2}\frac{1}{-\xi^2 + i0\,\xi^0}$ (part 1 there).
+> **Step 3** (split off the light-cone term). By [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], $W(\xi^0 - i\varepsilon, \boldsymbol\xi) = \mathcal W(s_\varepsilon^2)$ with $\mathcal W(w) = mK_1(m\sqrt w)/4\pi^2\sqrt w$ and $s_\varepsilon^2 = -(\xi^0 - i\varepsilon)^2 + \boldsymbol\xi^2 = -\xi^2 + 2i\varepsilon\xi^0 + \varepsilon^2$. Write $\mathcal W(w) = \frac{1}{4\pi^2w} + \ell(w)$. The first term at $w = s_\varepsilon^2$ is $\frac{1}{4\pi^2}F_\varepsilon$ with the $F_\varepsilon$ of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], which converges in $\mathcal S'(\mathbb R^4)$ to $\frac{1}{4\pi^2}\frac{1}{-\xi^2 + i0\,\xi^0}$ (part 1 there).
 >
-> **Step 4** (the remainder is mild). From $zK_1(z) = 1 + \frac{z^2}{2}\ln\frac z2\,A(z^2) + z^2B(z^2)$ with $A$, $B$ entire and $A(0) = 1$ (the series behind [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3), $\ell(w) = \frac{m^2}{8\pi^2}\ln\frac{m\sqrt w}{2}\,A(m^2w) + \frac{m^2}{4\pi^2}B(m^2w)$, so $|\ell(w)| \le C_R(1 + |\ln|w||)$ for $|w| \le R$. Now $|s_\varepsilon^2| \ge |\xi^2|$: for $\xi^2 \le 0$ the real part $-\xi^2 + \varepsilon^2$ already exceeds $|\xi^2|$; for $\xi^2 = a > 0$, $(\xi^0)^2 \ge a$ gives $|s_\varepsilon^2|^2 = (\varepsilon^2 - a)^2 + 4\varepsilon^2(\xi^0)^2 \ge (\varepsilon^2 + a)^2$. Hence on every compact set $|\ell(s_\varepsilon^2)| \le C(1 + |\ln|\xi^2||)$, independent of $\varepsilon \le 1$, and $\ln|\xi^2|$ is locally integrable on $\mathbb R^4$ (the cone has codimension one; near $\xi = 0$, $|\xi^2|$ vanishes only quadratically). By dominated convergence ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]) $\ell(s_\varepsilon^2) \to L \equiv \ell(-\xi^2 + i0\,\xi^0)$ in $L^1_{\mathrm{loc}}$, hence as distributions; since $W$ and the first term converge in $\mathcal S'$, so does $\ell(s_\varepsilon^2)$, with the same limit $L$. For $m = 0$, $\ell \equiv 0$ (Theorem §C2.9.2).
+> **Step 4** (the remainder is mild). From $zK_1(z) = 1 + \frac{z^2}{2}\ln\frac z2\,A(z^2) + z^2B(z^2)$ with $A$, $B$ entire and $A(0) = 1$ (the series behind [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3), $\ell(w) = \frac{m^2}{8\pi^2}\ln\frac{m\sqrt w}{2}\,A(m^2w) + \frac{m^2}{4\pi^2}B(m^2w)$, so $|\ell(w)| \le C_R(1 + |\ln|w||)$ for $|w| \le R$. Now $|s_\varepsilon^2| \ge |\xi^2|$: for $\xi^2 \le 0$ the real part $-\xi^2 + \varepsilon^2$ already exceeds $|\xi^2|$; for $\xi^2 = a > 0$, $(\xi^0)^2 \ge a$ gives $|s_\varepsilon^2|^2 = (\varepsilon^2 - a)^2 + 4\varepsilon^2(\xi^0)^2 \ge (\varepsilon^2 + a)^2$. Hence on every compact set $|\ell(s_\varepsilon^2)| \le C(1 + |\ln|\xi^2||)$, independent of $\varepsilon \le 1$, and $\ln|\xi^2|$ is locally integrable on $\mathbb R^4$ (the cone has codimension one; near $\xi = 0$, $|\xi^2|$ vanishes only quadratically). By dominated convergence ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]) $\ell(s_\varepsilon^2) \to L \equiv \ell(-\xi^2 + i0\,\xi^0)$ in $L^1_{\mathrm{loc}}$, hence as distributions; since $W$ and the first term converge in $\mathcal S'$, so does $\ell(s_\varepsilon^2)$, with the same limit $L$. For $m = 0$, $\ell \equiv 0$ (Theorem §C2b.3.2).
 >
-> **Step 5** (the jump of $L$). Inside the future cone $\ln\sqrt{w} = \frac12\log(-\tau^2 + i0) = \ln\tau + \frac{i\pi}{2}$, outside it is real ([[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], 1): a finite jump of $\frac{m^2}{8\pi^2}\cdot\frac{i\pi}{2}$ times $A(0) = 1$, the jump of Step 3 of Derivation §C2.9.5.
+> **Step 5** (the jump of $L$). Inside the future cone $\ln\sqrt{w} = \frac12\log(-\tau^2 + i0) = \ln\tau + \frac{i\pi}{2}$, outside it is real ([[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], 1): a finite jump of $\frac{m^2}{8\pi^2}\cdot\frac{i\pi}{2}$ times $A(0) = 1$, the jump of Step 3 of Derivation §C2b.3.5.
 >
 > **Step 6** (the cone term written out). [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], 2: $\frac{1}{-\xi^2 + i0\,\xi^0} = -\mathcal P\frac{1}{\xi^2} - i\pi\operatorname{sgn}(\xi^0)\,\delta(\xi^2)$. Dividing by $4\pi^2$ gives part 3.
 >
 > **Step 7** (the cone is singular). Near a point $\xi_0 \ne 0$ of the cone, $\operatorname{Im}D_W = -\frac{1}{4\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) + \operatorname{Im}L$, since $\mathcal P\frac{1}{\xi^2}$ is real. $\delta(\xi^2)$ is a surface measure on the cone ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2): test functions concentrating on a patch of the cone keep $\delta(\xi^2)[\varphi_n]$ fixed while $\int\varphi_n\,g \to 0$ for every locally integrable $g$. So $\operatorname{Im}D_W$ is not a locally integrable function near $\xi_0$, let alone smooth: $\xi_0 \in \operatorname{sing\,supp}D_W$. The singular support is closed, so it contains the tip. With Step 2, part 2.
 >
-> ⚑ By-product: the coefficient of $\delta(\xi^2)$ is $-\frac{i}{4\pi}\operatorname{sgn}(\xi^0)$, fixed by the sign of $i0\,\xi^0$; twice its imaginary part is the light-cone term $-\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2)$ of the commutator function → [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-7|Theorem §C2.10.7]], [[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-8|Theorem §C2.10.8]].
+> ⚑ By-product: the coefficient of $\delta(\xi^2)$ is $-\frac{i}{4\pi}\operatorname{sgn}(\xi^0)$, fixed by the sign of $i0\,\xi^0$; twice its imaginary part is the light-cone term $-\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2)$ of the commutator function → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]].
 >
 > **What the derivation shows.**
-> - The Bessel forms are honest values of $D_W$ wherever it has values, off the cone; on the cone it has none, and the boundary value of Theorem §C2.8.5 fixes exactly how it acts there: a principal value, a $\delta(\xi^2)$ with a definite sign, and an integrable logarithm.
+> - The Bessel forms are honest values of $D_W$ wherever it has values, off the cone; on the cone it has none, and the boundary value of Theorem §C2b.2.5 fixes exactly how it acts there: a principal value, a $\delta(\xi^2)$ with a definite sign, and an integrable logarithm.
 > - The light-cone structure is mass independent; $m$ enters only the locally integrable remainder.
-> - Used next: the support of $D$ and $D_1$ ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-4|Theorem §C2.10.4]]), the product $\theta(\xi^0)D$ ([[§C2.11 Green's Functions and Contours#^thm-c2-11-6|Theorem §C2.11.6]]), the coincident singularity removed by normal ordering ([[§C2.12 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2-12-6|Theorem §C2.12.6]]).
+> - Used next: the support of $D$ and $D_1$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]]), the product $\theta(\xi^0)D$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]), the coincident singularity removed by normal ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]).
 
-^der-c2-9-6
+^der-c2b-3-6
 
-*Uses:* [[§C2.8 The Wightman Function#^thm-c2-8-2|Theorem §C2.8.2]], [[§C2.8 The Wightman Function#^thm-c2-8-5|Theorem §C2.8.5]], [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-2|Theorem §C2.9.2]], [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-4|Theorem §C2.9.4]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!remark]- Connections
-> - The Euclidean function of Theorem §C2.9.1, integrated over Euclidean time, gives $\int d\tau\,\frac{mK_1(m\sqrt{\tau^2 + r^2})}{4\pi^2\sqrt{\tau^2 + r^2}} = \frac{e^{-mr}}{4\pi r}$, the Yukawa potential, because the $\tau$ integral sets $p_4 = 0$ and leaves the static propagator $1/(\mathbf p^2 + m^2)$: [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]. The same $e^{-mr}$ sets the range of the correlations $D_1$ and of meson exchange, QFT C7 (planned).
-> - Imaginary time turns $e^{-iHt}$ into $e^{-H\tau}$; for the oscillator this links propagator and partition function ([[§C4.1 Propagators#^thm-c4-1-6|QM Theorem §C4.1.6]]), and the thermal ★ remark of §C2.10 is its field version ([[§C2.10 Microcausality and the Commutator Function#^rem-c2-10-6|★ Remark: Other states]]); the Bose–Einstein occupation is [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions#^thm-b10-1-2|TH Theorem §B10.1.2]].
-> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] (boundary values of analytic functions) is why every value here is a limit of the one function $W$ of Theorem §C2.9.2, and why the limit is a distribution where it is not a function.
-> - [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]] (the light-cone boundary value $1/(-x^2 + i0\,x^0)$) is the leading singularity of $D_W$ for every mass, Theorem §C2.9.6, 3; [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]] (logarithms at the real axis) gives the finite jump of the subleading term.
+> - The Euclidean function of Theorem §C2b.3.1, integrated over Euclidean time, gives $\int d\tau\,\frac{mK_1(m\sqrt{\tau^2 + r^2})}{4\pi^2\sqrt{\tau^2 + r^2}} = \frac{e^{-mr}}{4\pi r}$, the Yukawa potential, because the $\tau$ integral sets $p_4 = 0$ and leaves the static propagator $1/(\mathbf p^2 + m^2)$: [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]. The same $e^{-mr}$ sets the range of the correlations $D_1$ and of meson exchange, QFT C7 (planned).
+> - Imaginary time turns $e^{-iHt}$ into $e^{-H\tau}$; for the oscillator this links propagator and partition function ([[§C4.1 Propagators#^thm-c4-1-6|QM Theorem §C4.1.6]]), and the thermal ★ remark of §C2b.4 is its field version ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-6|★ Remark: Other states]]); the Bose–Einstein occupation is [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions#^thm-b10-1-2|TH Theorem §B10.1.2]].
+> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] (boundary values of analytic functions) is why every value here is a limit of the one function $W$ of Theorem §C2b.3.2, and why the limit is a distribution where it is not a function.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]] (the light-cone boundary value $1/(-x^2 + i0\,x^0)$) is the leading singularity of $D_W$ for every mass, Theorem §C2b.3.6, 3; [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]] (logarithms at the real axis) gives the finite jump of the subleading term.
 > - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]] (support and singular support) states where $D_W$ is a function: everywhere except the light cone.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] (the transform on $\mathcal S'$) gives the four-dimensional Euclidean integral of Theorem §C2.9.1 its meaning; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-12|Theorem §CA.3.12]] (rotations, frame choice) reduce the equal-time integral to one dimension.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] (the transform on $\mathcal S'$) gives the four-dimensional Euclidean integral of Theorem §C2b.3.1 its meaning; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-12|Theorem §CA.3.12]] (rotations, frame choice) reduce the equal-time integral to one dimension.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] (damping factors) is the regulator $e^{-\varepsilon p}$ of the third route, removed pointwise because the target is a smooth function there.
-> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|Theorem §CA.1.2]] and [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] license every exchange of a limit with an integral or a derivative in the three routes and in the remainder estimate of Theorem §C2.9.6.
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|Theorem §CA.1.2]] and [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] license every exchange of a limit with an integral or a derivative in the three routes and in the remainder estimate of Theorem §C2b.3.6.

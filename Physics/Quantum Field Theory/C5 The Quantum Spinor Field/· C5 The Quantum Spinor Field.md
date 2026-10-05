@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5 The Quantum Spinor Field
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (116), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (138), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (91), [[· CA Mathematical Methods|CA Mathematical Methods]] (96)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (7), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (17), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (10)
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (116), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (57), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (81), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (91), [[· CA Mathematical Methods|CA Mathematical Methods]] (96)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (7), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (17), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (10)
 
 ## Sections
 - [[§C5.1 Weyl Spinors and SL(2,C)]] — 

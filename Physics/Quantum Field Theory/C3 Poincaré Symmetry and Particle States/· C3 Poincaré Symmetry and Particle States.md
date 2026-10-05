@@ -6,10 +6,10 @@ chapter: C3
 tags: [chapter, quantum-field-theory]
 ---
 # C3 Poincaré Symmetry and Particle States
-← [[· C2 The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
+← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (103), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (48), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
-**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (24), [[· C2 The Quantum Scalar Field|C2 The Quantum Scalar Field]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (66), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (91)
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (103), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
+**Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (24), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (66), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (91)
 
 ## Sections
 - [[§C3.1 Groups, Algebras and Representations of Rotations]] — 

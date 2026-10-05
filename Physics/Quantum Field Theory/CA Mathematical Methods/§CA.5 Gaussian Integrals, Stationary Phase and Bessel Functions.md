@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §§A.6–A.8 and the saddle-point computation of Ch. 2 §2.2 · DLMF §§10.25–10.40 and Abramowitz & Stegun §9.6–9.7 (cited in the user's notes).*
 
-The two-point functions of the free field are Gaussian integrals in disguise, evaluated at a saddle or summed into a modified Bessel function $K_\nu$. Two of the tools already have homes in Quantum Mechanics and are only recalled here: the Gaussian and Fresnel integrals with complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]) and the stationary-phase formula ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]); Laplace's method appears inline in Stirling's formula ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]). New here: the $n$-dimensional Gaussian Fourier transform with Schwinger's parametrization, steepest descent through a *complex* saddle and why it fixes the exponential factor, and the function $K_\nu$ with everything the course uses derived from one integral representation. The single evaluation of a two-point function in terms of $K_1$ is [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]]; this section supplies its tools.
+The two-point functions of the free field are Gaussian integrals in disguise, evaluated at a saddle or summed into a modified Bessel function $K_\nu$. Two of the tools already have homes in Quantum Mechanics and are only recalled here: the Gaussian and Fresnel integrals with complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]) and the stationary-phase formula ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]); Laplace's method appears inline in Stirling's formula ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]). New here: the $n$-dimensional Gaussian Fourier transform with Schwinger's parametrization, steepest descent through a *complex* saddle and why it fixes the exponential factor, and the function $K_\nu$ with everything the course uses derived from one integral representation. The single evaluation of a two-point function in terms of $K_1$ is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]; this section supplies its tools.
 
 ## Gaussian integrals
 
@@ -43,14 +43,14 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **What the derivation shows.**
 > - With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel; Schwinger's trick trades a denominator that couples the components for an exponential that factorizes → [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-1|Remark: Why the parametrization helps]].
-> - Used in: the Euclidean evaluation of the Wightman function ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]], Steps 3–4), with $n = 1$ and $n = 3$; the nonrelativistic single-particle amplitude ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-3|Theorem §C1.3.3]]).
+> - Used in: the Euclidean evaluation of the Wightman function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], Steps 3–4), with $n = 1$ and $n = 3$; the nonrelativistic single-particle amplitude ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-3|Theorem §C1.3.3]]).
 
 ^der-ca-5-1
 
 *Uses:* [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]], [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]]
 
 > [!remark] Remark: Why the parametrization helps
-> Schwinger's trick trades a denominator, which couples the components of $\mathbf p$ through $\mathbf p^2 + m^2$, for an exponential, which factorizes. Every momentum integral then becomes a product of one-dimensional Gaussians, and the remaining single integral over $s$ is where the special function appears: for the Euclidean propagator it is $\int ds\,s^{-2}e^{-sm^2 - R^2/4s}$, a $K_1$ ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-1|Theorem §C2.9.1]]). With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel, the Euclidean version of the free propagator of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]; loop integrals (QFT C7, planned) are done the same way.
+> Schwinger's trick trades a denominator, which couples the components of $\mathbf p$ through $\mathbf p^2 + m^2$, for an exponential, which factorizes. Every momentum integral then becomes a product of one-dimensional Gaussians, and the remaining single integral over $s$ is where the special function appears: for the Euclidean propagator it is $\int ds\,s^{-2}e^{-sm^2 - R^2/4s}$, a $K_1$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]). With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel, the Euclidean version of the free propagator of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]; loop integrals (QFT C7, planned) are done the same way.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2, App. A §A.6*
 
@@ -105,9 +105,9 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 ^rem-ca-5-2
 
 > [!example] Example §CA.5.1: The Exponent of the Wightman Function Outside the Light Cone
-> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2.10 Microcausality and the Commutator Function#^thm-c2-10-5|Theorem §C2.10.5]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
+> For $0 < t < r$ write $\rho = \sqrt{r^2 - t^2}$. Find the saddle point, the exponent and the leading prefactor of $D_W(t, r)$ for $m\rho \gg 1$. (For $t < 0$ nothing new: at spacelike separation $D_W(-\xi) = D_W(\xi)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]) and $D_W$ depends on $\boldsymbol\xi$ only through $r$, so $D_W(-t, r) = D_W(t, r)$.)
 >
-> **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
+> **Step 1** (one-dimensional form). As in Steps 2–3 of the second route of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], now with the factor $e^{-iE_{\mathbf p}t}$ kept (angular integral, then folding onto the whole line),
 >
 > $$
 > D_W(t, r) = \frac{1}{8\pi^2ir}\int_{-\infty}^{\infty}dp\;\frac{p}{\sqrt{p^2 + m^2}}\,e^{iS(p)}, \qquad S(p) = pr - t\sqrt{p^2 + m^2} .
@@ -115,7 +115,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **Step 2** (stationary points). $S'(p) = r - \frac{pt}{\sqrt{p^2 + m^2}} = 0$ gives $r^2(p^2 + m^2) = p^2t^2$, i.e. $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < |t|$) the root is real, $r/t = p/E_p$, the classical velocity, and stationary phase reproduces the oscillating amplitude. Outside, no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$.
 >
-> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch is fixed by the saddle condition itself: $S'(p_0) = r - p_0t/\sqrt{p_0^2 + m^2} = 0$ requires $\sqrt{p_0^2 + m^2} = p_0t/r = imt/\rho$, the value on the right lip of the cut of [[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], second route, Step 5.
+> **Step 3** (the branch at the saddle). $p_0^2 + m^2 = m^2(1 - r^2/\rho^2) = -m^2t^2/\rho^2$, and the branch is fixed by the saddle condition itself: $S'(p_0) = r - p_0t/\sqrt{p_0^2 + m^2} = 0$ requires $\sqrt{p_0^2 + m^2} = p_0t/r = imt/\rho$, the value on the right lip of the cut of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Step 5.
 >
 > **Step 4** (the exponent). $S(p_0) = \frac{imr}{\rho}\,r - t\,\frac{imt}{\rho} = \frac{im(r^2 - t^2)}{\rho} = im\rho$, so $e^{iS(p_0)} = e^{-m\rho} = e^{-m\sqrt{r^2 - t^2}}$.
 >
@@ -129,7 +129,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > D_W \simeq \frac{1}{8\pi^2ir}\cdot\frac rt\cdot e^{-m\rho}\cdot it\sqrt{\frac{2\pi m}{\rho^3}} = \frac{\sqrt{2\pi m}}{8\pi^2}\,\rho^{-3/2}e^{-m\rho} = \frac{\sqrt m}{2(2\pi\rho)^{3/2}}\,e^{-m\rho},
 > $$
 >
-> the leading term of the exact result ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], with $\sqrt{-\xi^2} = \rho$), now at any spacelike point and not only at equal times.
+> the leading term of the exact result ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], with $\sqrt{-\xi^2} = \rho$), now at any spacelike point and not only at equal times.
 >
 > **Step 8** (why it is right). $|p_0| = mr/\rho > m$, so the saddle lies on the cut from $im$ to $i\infty$. On the cut the exponent of the dominant lip is the real function $-\varrho r + t\sqrt{\varrho^2 - m^2}$ of $p = i\varrho$, maximal at $\varrho = mr/\rho$ with value $-m\rho$: Laplace's method on the cut gives the same answer (Remark above). As $t \to 0$ the saddle runs into the branch point $im$, where the cut representation of the equal-time computation takes over.
 >
@@ -188,7 +188,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **What the derivation shows.**
 > - Everything used in the course follows from the single integral representation.
-> - The two ends of $K_1$ are the physics of the two-point function: $1/z$ is the massless light-cone singularity ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-5|Theorem §C2.9.5]]), $e^{-z}$ the Compton-length decay ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]]).
+> - The two ends of $K_1$ are the physics of the two-point function: $1/z$ is the massless light-cone singularity ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]]), $e^{-z}$ the Compton-length decay ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
 
 ^der-ca-5-3
 
@@ -209,7 +209,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **Step 2** (part 2: the two forms). Substitute $t = \sinh v$, $dt = \cosh v\,dv = \sqrt{t^2 + 1}\,dv$. Convergence: Dirichlet's test ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-2|Theorem §CA.1.2]]).
 >
-> **Step 3** (part 2: the value). A table integral (A&S 9.6.21). It also follows from the keyhole computation of the equal-time Wightman function, which shows $\int_{-\infty}^\infty\frac{e^{ipr}dp}{\sqrt{p^2 + m^2}} = 2K_0(mr)$ ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-3|Theorem §C2.9.3]], second route, Steps 6–7); the imaginary part of the left side vanishes by oddness, and its real part is $2\int_0^\infty\frac{\cos pr\,dp}{\sqrt{p^2 + m^2}}$, which with $p = mt$ is $2\int_0^\infty\frac{\cos(mrt)}{\sqrt{t^2 + 1}}dt$.
+> **Step 3** (part 2: the value). A table integral (A&S 9.6.21). It also follows from the keyhole computation of the equal-time Wightman function, which shows $\int_{-\infty}^\infty\frac{e^{ipr}dp}{\sqrt{p^2 + m^2}} = 2K_0(mr)$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Steps 6–7); the imaginary part of the left side vanishes by oddness, and its real part is $2\int_0^\infty\frac{\cos pr\,dp}{\sqrt{p^2 + m^2}}$, which with $p = mt$ is $2\int_0^\infty\frac{\cos(mrt)}{\sqrt{t^2 + 1}}dt$.
 >
 > **Step 4** (parts 3–4). The connection formula (DLMF 10.27.8) and the Hankel asymptotics (DLMF 10.17.3) are quoted; the user's notes checked 3 numerically.
 >
@@ -217,7 +217,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 >
 > **What the derivation shows.**
 > - Part 1 is the cut integral of the equal-time Wightman function and, before differentiation, PS eq. (2.52).
-> - Part 3 is how $K_1$'s decay outside the light cone becomes the oscillation of $J_1$, $Y_1$ inside ([[§C2.9 Explicit Forms of the Wightman Function#^thm-c2-9-4|Theorem §C2.9.4]]).
+> - Part 3 is how $K_1$'s decay outside the light cone becomes the oscillation of $J_1$, $Y_1$ inside ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]]).
 
 ^der-ca-5-4
 
@@ -235,6 +235,6 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > - Laplace's method is how Stirling's formula is proved ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-5|TH Theorem §B4.1.5]]) and why the canonical ensemble is sharply peaked ([[§B7.2 Free Energy from the Partition Function|TH §B7.2]]); the Gamma function in the small-$z$ form of $K_\nu$ is [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]].
 > - Stationary phase is the classical limit of the path integral ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]), the Fresnel-zone construction of optics ([[§B11.3 Fresnel Diffraction and Zone Plates#^thm-b11-3-2|WO Theorem §B11.3.2]]) and the eikonal approximation ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); the complex saddle of Example §CA.5.1 is the field-theory analogue of tunnelling under a barrier, where WKB's exponent $e^{-\int|p|\,dx}$ is likewise a saddle value ([[§B9.4 Tunnelling and the Connection Formulas|QM §B9.4]]).
 > - The $n$-dimensional Gaussian with $s = it/2m$ is the free nonrelativistic propagator ([[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]); with $s$ real it is the heat kernel of diffusion ([[§B4.2 Random Walks, the Central Limit Theorem and Diffusion#^thm-b4-2-6|TH Theorem §B4.2.6]]). [[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-3|Theorem §C1.3.3]] uses it for the single-particle amplitude, and QFT C11 (planned) for Gaussian path integrals.
-> - The same $K_\nu$ counts the particles produced by a source switched on over a time $T$ ([[§C2.14 Particle Production by a Classical Source#^ex-c2-14-1|Example §C2.14.1]]): both integrate over the mass shell in hyperbolic variables.
+> - The same $K_\nu$ counts the particles produced by a source switched on over a time $T$ ([[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1|Example §C2b.8.1]]): both integrate over the mass shell in hyperbolic variables.
 > - **Used in** (C1 places): Theorem §CA.5.1 — the nonrelativistic amplitude ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-3|Theorem §C1.3.3]]); Def. §CA.5.1 and Theorem §CA.5.3 — the relativistic amplitude at spacelike separation and its leak ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-6|Theorem §C1.3.6]], [[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-7|Theorem §C1.3.7]]); Theorem §CA.5.2, Remark: When the saddle sits on a branch cut, and Example §CA.5.1 — the saddle-point route to the leak ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-7|Theorem §C1.3.7]]); Theorem §CA.5.4 — the timelike amplitude ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-8|Theorem §C1.3.8]]).
 > - **Used in** (Electromagnetism C places): Def. §CA.5.1 and Theorems §CA.5.3–§CA.5.4 — modified Bessel functions in cylindrical boundary-value problems: the four kinds of Bessel function, the separated solutions, and what boundary-value problems need of them ([[§C6.3 Separation in Cylindrical and Polar Coordinates#^def-c6-3-1|EM Def. §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-1|EM Theorem §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]]).
