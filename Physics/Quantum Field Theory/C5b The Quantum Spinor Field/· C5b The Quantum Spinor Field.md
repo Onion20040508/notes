@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
 **Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (87), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (3), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (126), [[· CA Mathematical Methods|CA Mathematical Methods]] (112)
-**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (25)
+**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (26)
 
 ## Sections
 - [[§C5b.1 Canonical Quantization of the Dirac Field]] — 

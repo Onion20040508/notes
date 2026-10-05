@@ -383,10 +383,10 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 ^def-c5a-6-2
 
 > [!theorem] Theorem §C5a.6.11: The Helicity Two-Spinors
-> For $\hat{\mathbf p} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$, $0 \le \theta \le \pi$, the helicity two-spinors with phases chosen to reduce to $(1, 0)^{\mathsf T}$ and $(0, 1)^{\mathsf T}$ for $\hat{\mathbf p} = +\hat{\mathbf z}$ are
+> For $\hat{\mathbf p} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$, $0 \le \theta \le \pi$, the helicity two-spinors with phases chosen to reduce to $(1, 0)^{\mathsf T}$ and $(0, 1)^{\mathsf T}$ for $\hat{\mathbf p} = +\hat{\mathbf z}$ are
 >
 > $$
-> \xi_+(\hat{\mathbf p}) = \begin{pmatrix}\cos\frac\theta2\\ e^{i\phi}\sin\frac\theta2\end{pmatrix}, \qquad \xi_-(\hat{\mathbf p}) = \begin{pmatrix}-e^{-i\phi}\sin\frac\theta2\\ \cos\frac\theta2\end{pmatrix} .
+> \xi_+(\hat{\mathbf p}) = \begin{pmatrix}\cos\frac\theta2\\ e^{i\varphi}\sin\frac\theta2\end{pmatrix}, \qquad \xi_-(\hat{\mathbf p}) = \begin{pmatrix}-e^{-i\varphi}\sin\frac\theta2\\ \cos\frac\theta2\end{pmatrix} .
 > $$
 >
 > They are an orthonormal and complete spin basis ([[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]]).
@@ -398,15 +398,15 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > [!derivation]- Derivation
 > This is the user's submitted solution of PHY 513, Problem Set 5, Problem 6.
 >
-> **Step 1** (the operator). With the Pauli matrices, $\hat{\mathbf p}\cdot\boldsymbol\sigma = \sin\theta\cos\phi\,\sigma^1 + \sin\theta\sin\phi\,\sigma^2 + \cos\theta\,\sigma^3$; adding the three matrices entry by entry, the off-diagonal entries are $\sin\theta(\cos\phi \mp i\sin\phi) = \sin\theta\,e^{\mp i\phi}$:
+> **Step 1** (the operator). With the Pauli matrices, $\hat{\mathbf p}\cdot\boldsymbol\sigma = \sin\theta\cos\varphi\,\sigma^1 + \sin\theta\sin\varphi\,\sigma^2 + \cos\theta\,\sigma^3$; adding the three matrices entry by entry, the off-diagonal entries are $\sin\theta(\cos\varphi \mp i\sin\varphi) = \sin\theta\,e^{\mp i\varphi}$:
 >
 > $$
-> \hat{\mathbf p}\cdot\boldsymbol\sigma = \begin{pmatrix}\cos\theta & \sin\theta\,e^{-i\phi}\\ \sin\theta\,e^{i\phi} & -\cos\theta\end{pmatrix} .
+> \hat{\mathbf p}\cdot\boldsymbol\sigma = \begin{pmatrix}\cos\theta & \sin\theta\,e^{-i\varphi}\\ \sin\theta\,e^{i\varphi} & -\cos\theta\end{pmatrix} .
 > $$
 >
 > The helicity equation $(\hat{\mathbf p}\cdot\boldsymbol\sigma/2)\xi = \pm\frac12\xi$, with the $\frac12$ cancelled, is $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi = \lambda\xi$, $\lambda = \pm1$. Check: $\det(\hat{\mathbf p}\cdot\boldsymbol\sigma - \lambda) = (\cos\theta - \lambda)(-\cos\theta - \lambda) - \sin^2\theta = \lambda^2 - \cos^2\theta - \sin^2\theta = \lambda^2 - 1$, zero for $\lambda = \pm1$.
 >
-> **Step 2** (remove $\phi$). With $\xi = (x, y)$, the rows are $x\cos\theta + y\sin\theta\,e^{-i\phi} = \lambda x$ and $x\sin\theta\,e^{i\phi} - y\cos\theta = \lambda y$. Substitute $x = e^{-i\phi/2}x'$, $y = e^{i\phi/2}y'$: the first row becomes $e^{-i\phi/2}(x'\cos\theta + y'\sin\theta) = \lambda e^{-i\phi/2}x'$ (since $e^{i\phi/2}e^{-i\phi} = e^{-i\phi/2}$), the second $e^{i\phi/2}(x'\sin\theta - y'\cos\theta) = \lambda e^{i\phi/2}y'$. Cancelling the phases,
+> **Step 2** (remove $\varphi$). With $\xi = (x, y)$, the rows are $x\cos\theta + y\sin\theta\,e^{-i\varphi} = \lambda x$ and $x\sin\theta\,e^{i\varphi} - y\cos\theta = \lambda y$. Substitute $x = e^{-i\varphi/2}x'$, $y = e^{i\varphi/2}y'$: the first row becomes $e^{-i\varphi/2}(x'\cos\theta + y'\sin\theta) = \lambda e^{-i\varphi/2}x'$ (since $e^{i\varphi/2}e^{-i\varphi} = e^{-i\varphi/2}$), the second $e^{i\varphi/2}(x'\sin\theta - y'\cos\theta) = \lambda e^{i\varphi/2}y'$. Cancelling the phases,
 >
 > $$
 > x'\cos\theta + y'\sin\theta = \lambda x', \qquad x'\sin\theta - y'\cos\theta = \lambda y' .
@@ -418,28 +418,28 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > \lambda = +1:\ \begin{pmatrix}x'\\ y'\end{pmatrix} = c_+\begin{pmatrix}1 + \cos\theta\\ \sin\theta\end{pmatrix}, \qquad \lambda = -1:\ \begin{pmatrix}x'\\ y'\end{pmatrix} = c_-\begin{pmatrix}-\sin\theta\\ 1 + \cos\theta\end{pmatrix} .
 > $$
 >
-> Multiplying back the phases: $\xi_+ = c_+(e^{-i\phi/2}(1 + \cos\theta),\ e^{i\phi/2}\sin\theta)$, $\xi_- = c_-(-e^{-i\phi/2}\sin\theta,\ e^{i\phi/2}(1 + \cos\theta))$.
+> Multiplying back the phases: $\xi_+ = c_+(e^{-i\varphi/2}(1 + \cos\theta),\ e^{i\varphi/2}\sin\theta)$, $\xi_- = c_-(-e^{-i\varphi/2}\sin\theta,\ e^{i\varphi/2}(1 + \cos\theta))$.
 >
-> **Step 4** (normalize). $\xi_+^\dagger\xi_+ = |c_+|^2\bigl((1 + \cos\theta)^2 + \sin^2\theta\bigr) = |c_+|^2(1 + 2\cos\theta + \cos^2\theta + \sin^2\theta) = |c_+|^2(2 + 2\cos\theta)$ (the phases $e^{\pm i\phi/2}$ cancel against their conjugates), and the same for $\xi_-$. With the half-angle identities $1 + \cos\theta = 2\cos^2\frac\theta2$, $\sin\theta = 2\sin\frac\theta2\cos\frac\theta2$: $2 + 2\cos\theta = 4\cos^2\frac\theta2$, so for $0 \le \theta < \pi$, $c_+ = e^{i\alpha}/(2\cos\frac\theta2)$, $c_- = e^{i\beta}/(2\cos\frac\theta2)$, phases $\alpha, \beta$ free. Substituting the half-angle forms into the components, the factor $2\cos\frac\theta2$ cancels:
+> **Step 4** (normalize). $\xi_+^\dagger\xi_+ = |c_+|^2\bigl((1 + \cos\theta)^2 + \sin^2\theta\bigr) = |c_+|^2(1 + 2\cos\theta + \cos^2\theta + \sin^2\theta) = |c_+|^2(2 + 2\cos\theta)$ (the phases $e^{\pm i\varphi/2}$ cancel against their conjugates), and the same for $\xi_-$. With the half-angle identities $1 + \cos\theta = 2\cos^2\frac\theta2$, $\sin\theta = 2\sin\frac\theta2\cos\frac\theta2$: $2 + 2\cos\theta = 4\cos^2\frac\theta2$, so for $0 \le \theta < \pi$, $c_+ = e^{i\alpha}/(2\cos\frac\theta2)$, $c_- = e^{i\beta}/(2\cos\frac\theta2)$, phases $\alpha, \beta$ free. Substituting the half-angle forms into the components, the factor $2\cos\frac\theta2$ cancels:
 >
 > $$
-> \xi_+ = e^{i\alpha}\begin{pmatrix}e^{-i\phi/2}\cos\frac\theta2\\ e^{i\phi/2}\sin\frac\theta2\end{pmatrix}, \qquad \xi_- = e^{i\beta}\begin{pmatrix}-e^{-i\phi/2}\sin\frac\theta2\\ e^{i\phi/2}\cos\frac\theta2\end{pmatrix} .
+> \xi_+ = e^{i\alpha}\begin{pmatrix}e^{-i\varphi/2}\cos\frac\theta2\\ e^{i\varphi/2}\sin\frac\theta2\end{pmatrix}, \qquad \xi_- = e^{i\beta}\begin{pmatrix}-e^{-i\varphi/2}\sin\frac\theta2\\ e^{i\varphi/2}\cos\frac\theta2\end{pmatrix} .
 > $$
 >
-> **Step 5** (fix the phases). At $\theta = 0$: $\xi_+ = e^{i\alpha}(e^{-i\phi/2}, 0)$, $\xi_- = e^{i\beta}(0, e^{i\phi/2})$. These are $(1, 0)$ and $(0, 1)$ for $\alpha = \phi/2$, $\beta = -\phi/2$, which gives the statement. ⚑ By-product: this phase choice is singular at $\theta = \pi$ → [[§C5a.6 Normalization, Spin Sums and Helicity#^cau-c5a-6-2|Caution: No phase convention is smooth on the whole sphere]].
+> **Step 5** (fix the phases). At $\theta = 0$: $\xi_+ = e^{i\alpha}(e^{-i\varphi/2}, 0)$, $\xi_- = e^{i\beta}(0, e^{i\varphi/2})$. These are $(1, 0)$ and $(0, 1)$ for $\alpha = \varphi/2$, $\beta = -\varphi/2$, which gives the statement. ⚑ By-product: this phase choice is singular at $\theta = \pi$ → [[§C5a.6 Normalization, Spin Sums and Helicity#^cau-c5a-6-2|Caution: No phase convention is smooth on the whole sphere]].
 >
 > **Step 6** (direct check for all $0 \le \theta \le \pi$, which also covers $\theta = \pi$ excluded in Step 4). With $\sin\theta\cos\frac\theta2 - \cos\theta\sin\frac\theta2 = \sin(\theta - \frac\theta2) = \sin\frac\theta2$ and $\cos\theta\cos\frac\theta2 + \sin\theta\sin\frac\theta2 = \cos\frac\theta2$:
 >
 > $$
-> (\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_+ = \begin{pmatrix}\cos\theta\cos\frac\theta2 + \sin\theta\sin\frac\theta2\\ e^{i\phi}(\sin\theta\cos\frac\theta2 - \cos\theta\sin\frac\theta2)\end{pmatrix} = \xi_+, \qquad (\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_- = \begin{pmatrix}e^{-i\phi}(\sin\theta\cos\frac\theta2 - \cos\theta\sin\frac\theta2)\\ -(\sin\theta\sin\frac\theta2 + \cos\theta\cos\frac\theta2)\end{pmatrix} = -\xi_- ,
+> (\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_+ = \begin{pmatrix}\cos\theta\cos\frac\theta2 + \sin\theta\sin\frac\theta2\\ e^{i\varphi}(\sin\theta\cos\frac\theta2 - \cos\theta\sin\frac\theta2)\end{pmatrix} = \xi_+, \qquad (\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_- = \begin{pmatrix}e^{-i\varphi}(\sin\theta\cos\frac\theta2 - \cos\theta\sin\frac\theta2)\\ -(\sin\theta\sin\frac\theta2 + \cos\theta\cos\frac\theta2)\end{pmatrix} = -\xi_- ,
 > $$
 >
 > and $\xi_\pm^\dagger\xi_\pm = \cos^2\frac\theta2 + \sin^2\frac\theta2 = 1$. (End of the user's solution.)
 >
-> **Step 7** (orthogonality and completeness). $\xi_+^\dagger\xi_- = \cos\frac\theta2(-e^{-i\phi}\sin\frac\theta2) + e^{-i\phi}\sin\frac\theta2\cos\frac\theta2 = 0$; also automatic, as eigenvectors of the Hermitian $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $+1 \neq -1$. Two orthonormal vectors in $\mathbb C^2$ form a basis, and completeness follows as in [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]].
+> **Step 7** (orthogonality and completeness). $\xi_+^\dagger\xi_- = \cos\frac\theta2(-e^{-i\varphi}\sin\frac\theta2) + e^{-i\varphi}\sin\frac\theta2\cos\frac\theta2 = 0$; also automatic, as eigenvectors of the Hermitian $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $+1 \neq -1$. Two orthonormal vectors in $\mathbb C^2$ form a basis, and completeness follows as in [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]].
 >
 > **What the derivation shows**
-> - The phase substitution of Step 2 removes $\phi$ from the equations; $\phi$ re-enters only through the phase convention.
+> - The phase substitution of Step 2 removes $\varphi$ from the equations; $\varphi$ re-enters only through the phase convention.
 > - These are the spin-$\frac12$ eigenspinors along an axis of Quantum Mechanics ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-5|QM Theorem §B6.1.5]]); Griffiths' $\chi_-^{(r)}$ is $-\xi_-$, a different phase convention.
 
 ^der-c5a-6-11
@@ -447,12 +447,12 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 *Uses:* [[§B6.1 Spin One-Half and the Pauli Matrices#^def-b6-1-2|QM Def. §B6.1.2]], [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]]
 
 > [!derivation]- Derivation (second route: Yu's Cartesian form)
-> Yu writes $\xi_+(\mathbf p) = \frac1{\sqrt{2|\mathbf p|(|\mathbf p| + p^3)}}\bigl(|\mathbf p| + p^3,\ p^1 + ip^2\bigr)$ and $\xi_-(\mathbf p) = \frac1{\sqrt{2|\mathbf p|(|\mathbf p| + p^3)}}\bigl(-p^1 + ip^2,\ |\mathbf p| + p^3\bigr)$ (5.162) and checks the eigenvalue equations, orthonormality and completeness by direct multiplication (5.170)–(5.175). In angles: $|\mathbf p| + p^3 = |\mathbf p|(1 + \cos\theta) = 2|\mathbf p|\cos^2\frac\theta2$; $p^1 \pm ip^2 = |\mathbf p|\sin\theta\,e^{\pm i\phi} = 2|\mathbf p|\sin\frac\theta2\cos\frac\theta2\,e^{\pm i\phi}$; the prefactor is $1/\sqrt{4|\mathbf p|^2\cos^2\frac\theta2} = 1/(2|\mathbf p|\cos\frac\theta2)$ for $\theta < \pi$. Dividing, $\xi_+ = (\cos\frac\theta2, e^{i\phi}\sin\frac\theta2)$ and $\xi_- = (-e^{-i\phi}\sin\frac\theta2, \cos\frac\theta2)$: the same spinors with the same phases. Yu's form is singular at $p^3 = -|\mathbf p|$ ($\theta = \pi$), the same point as in Step 4 above.
+> Yu writes $\xi_+(\mathbf p) = \frac1{\sqrt{2|\mathbf p|(|\mathbf p| + p^3)}}\bigl(|\mathbf p| + p^3,\ p^1 + ip^2\bigr)$ and $\xi_-(\mathbf p) = \frac1{\sqrt{2|\mathbf p|(|\mathbf p| + p^3)}}\bigl(-p^1 + ip^2,\ |\mathbf p| + p^3\bigr)$ (5.162) and checks the eigenvalue equations, orthonormality and completeness by direct multiplication (5.170)–(5.175). In angles: $|\mathbf p| + p^3 = |\mathbf p|(1 + \cos\theta) = 2|\mathbf p|\cos^2\frac\theta2$; $p^1 \pm ip^2 = |\mathbf p|\sin\theta\,e^{\pm i\varphi} = 2|\mathbf p|\sin\frac\theta2\cos\frac\theta2\,e^{\pm i\varphi}$; the prefactor is $1/\sqrt{4|\mathbf p|^2\cos^2\frac\theta2} = 1/(2|\mathbf p|\cos\frac\theta2)$ for $\theta < \pi$. Dividing, $\xi_+ = (\cos\frac\theta2, e^{i\varphi}\sin\frac\theta2)$ and $\xi_- = (-e^{-i\varphi}\sin\frac\theta2, \cos\frac\theta2)$: the same spinors with the same phases. Yu's form is singular at $p^3 = -|\mathbf p|$ ($\theta = \pi$), the same point as in Step 4 above.
 >
 > *Source: Yu §5.4.2, eqs. (5.160)–(5.175) · the user's PHY 513 notes, Ch. 9 §9.3 ("These ξ± are exactly Yu's helicity states ξ_λ (5.162), written in angles")*
 
 > [!caution] Caution: No phase convention is smooth on the whole sphere
-> At $\theta = \pi$ the spinors of [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]] are $\xi_+ = (0, e^{i\phi})$, $\xi_- = (-e^{-i\phi}, 0)$: they depend on $\phi$, which is meaningless at the south pole, so the phase convention is discontinuous there. Any other smooth phase choice fails somewhere: the helicity eigenvector, as a function of $\hat{\mathbf p}$ on the sphere, cannot be given a global continuous phase. It is the same obstruction as for the rotation $R(\hat{\mathbf p})$ in [[§C3.6★ Massless Particles and Helicity#^def-c3-6-1|Def. §C3.6.1]] ("no choice is continuous on the whole sphere"), and it carries Berry's phase of a spin $\frac12$ ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-8|QM Theorem §C9.4.8]]). Physical results (spin sums, $|{\rm amplitudes}|^2$) do not depend on the phases.
+> At $\theta = \pi$ the spinors of [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]] are $\xi_+ = (0, e^{i\varphi})$, $\xi_- = (-e^{-i\varphi}, 0)$: they depend on $\varphi$, which is meaningless at the south pole, so the phase convention is discontinuous there. Any other smooth phase choice fails somewhere: the helicity eigenvector, as a function of $\hat{\mathbf p}$ on the sphere, cannot be given a global continuous phase. It is the same obstruction as for the rotation $R(\hat{\mathbf p})$ in [[§C3.6★ Massless Particles and Helicity#^def-c3-6-1|Def. §C3.6.1]] ("no choice is continuous on the whole sphere"), and it carries Berry's phase of a spin $\frac12$ ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-8|QM Theorem §C9.4.8]]). Physical results (spin sums, $|{\rm amplitudes}|^2$) do not depend on the phases.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 ("at θ = π the phase convention is singular, a feature of any smooth choice of phase on the sphere") · the user's write-up of PHY 513, Problem Set 5, Problem 6 (the division by cos(θ/2))*
 
@@ -465,7 +465,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > u_\pm(p) = \begin{pmatrix}\sqrt{E_{\mathbf p} \mp |\mathbf p|}\;\xi_\pm\\ \sqrt{E_{\mathbf p} \pm |\mathbf p|}\;\xi_\pm\end{pmatrix}, \qquad h\,u_\pm = \pm\tfrac12\,u_\pm .
 > $$
 >
-> In Yu's notation $\omega_\lambda \equiv \sqrt{E_{\mathbf p} + \lambda|\mathbf p|}$, $u(p, \lambda) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, with $\omega_\lambda\omega_{-\lambda} = m$. All normalizations and the spin sum of this section hold for them.
+> With Yu's abbreviation $\omega_\lambda \equiv \sqrt{E_{\mathbf p} + \lambda|\mathbf p|}$, $u_\lambda(p) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ for $\lambda = \pm$, with $\omega_\lambda\omega_{-\lambda} = m$ (names in other sources: [[§C5a.5 Plane-Wave Solutions#^cau-c5a-5-3|§C5a.5, Caution: Names for the plane-wave spinors]]). All normalizations and the spin sum of this section hold for them.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis", part "The Dirac spinors") · Yu §5.4.2, eqs. (5.165)–(5.181) · the user's pre-course notes, §5.4 · PS §3.3, eqs. (3.52)–(3.54)*
 
@@ -493,7 +493,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 > With $\eta^s = \lambda\,\xi_{-\lambda}$ ($\lambda = \pm$) in [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]],
 >
 > $$
-> v(p, \lambda) = \begin{pmatrix}\lambda\,\omega_\lambda\,\xi_{-\lambda}\\ -\lambda\,\omega_{-\lambda}\,\xi_{-\lambda}\end{pmatrix}, \qquad h\,v(p, \lambda) = -\tfrac\lambda2\,v(p, \lambda) ,
+> v_\lambda(p) = \begin{pmatrix}\lambda\,\omega_\lambda\,\xi_{-\lambda}\\ -\lambda\,\omega_{-\lambda}\,\xi_{-\lambda}\end{pmatrix}, \qquad h\,v_\lambda(p) = -\tfrac\lambda2\,v_\lambda(p) ,
 > $$
 >
 > Yu's choice; $\{\lambda\xi_{-\lambda}\}$ is an orthonormal spin basis, so $\bar vv = -2m$, $v^\dagger v = 2E$ and $\sum_\lambda v\bar v = \slashed{p} - m$ hold for it.
@@ -507,13 +507,13 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 >
 > **Step 2** (insert). $v = (\sqrt{p\cdot\sigma}\,\lambda\xi_{-\lambda},\ -\sqrt{p\cdot\bar\sigma}\,\lambda\xi_{-\lambda}) = (\lambda\omega_\lambda\xi_{-\lambda},\ -\lambda\omega_{-\lambda}\xi_{-\lambda})$.
 >
-> **Step 3** (helicity of the column). $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_{-\lambda} = -\lambda\,\xi_{-\lambda}$, so $h\,v(p, \lambda) = -\frac\lambda2v(p, \lambda)$.
+> **Step 3** (helicity of the column). $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi_{-\lambda} = -\lambda\,\xi_{-\lambda}$, so $h\,v_\lambda(p) = -\frac\lambda2v_\lambda(p)$.
 >
 > **Step 4** (orthonormal basis). $(\lambda\xi_{-\lambda})^\dagger(\lambda'\xi_{-\lambda'}) = \lambda\lambda'\delta_{\lambda\lambda'} = \delta_{\lambda\lambda'}$ ($\lambda^2 = 1$; [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]]). Theorems §C5a.6.3, §C5a.6.4 and §C5a.6.8 then apply.
 >
 > **What the derivation shows**
-> - ⚑ By-product: the column $v(p, \lambda)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]); the factor $\lambda$ is a phase convention.
-> - With $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ and [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]]: $-i\sigma^2\xi_+^* = (-e^{-i\phi}\sin\frac\theta2, \cos\frac\theta2) = \xi_-$ and $-i\sigma^2\xi_-^* = (-\cos\frac\theta2, -e^{i\phi}\sin\frac\theta2) = -\xi_+$, i.e. $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^*$: Yu's $v$ spinor is built from the conjugate-spin two-spinor, the pairing that charge conjugation will make systematic (QFT C9, planned).
+> - ⚑ By-product: the column $v_\lambda(p)$ has helicity $-\lambda/2$, yet it is labelled $\lambda$: the label is the helicity of the *antiparticle* that its coefficient creates, which is opposite to that of the column. This is shown only after quantization (Yu §5.5.4; [[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]); the factor $\lambda$ is a phase convention.
+> - With $-i\sigma^2 = \begin{pmatrix}0 & -1\\ 1 & 0\end{pmatrix}$ and [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-11|Theorem §C5a.6.11]]: $-i\sigma^2\xi_+^* = (-e^{-i\varphi}\sin\frac\theta2, \cos\frac\theta2) = \xi_-$ and $-i\sigma^2\xi_-^* = (-\cos\frac\theta2, -e^{i\varphi}\sin\frac\theta2) = -\xi_+$, i.e. $\lambda\xi_{-\lambda} = -i\sigma^2\xi_\lambda^*$: Yu's $v$ spinor is built from the conjugate-spin two-spinor, the pairing that charge conjugation will make systematic (QFT C9, planned).
 
 ^der-c5a-6-13
 
@@ -556,7 +556,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 *Uses:* [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-12|Theorem §C5a.6.12]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-13|Theorem §C5a.6.13]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-9|Theorem §C5a.5.9]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-14|Theorem §C5a.2.14]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^def-c5a-4-3|Def. §C5a.4.3]]
 
 > [!remark] Remark: The mass is what connects the two chiral blocks
-> In $u(p, \lambda) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ the two Weyl blocks have sizes $\omega_{-\lambda}$ and $\omega_\lambda$ with $\omega_\lambda\omega_{-\lambda} = m$: the "wrong" chirality is present with amplitude $m/\omega_\lambda$. At rest both blocks are equal ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]); boosting shrinks one and grows the other; at $m = 0$ one vanishes. This is the plane-wave form of the Dirac equation in Weyl components, where only $m$ couples $\psi_L$ and $\psi_R$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-6|Theorem §C5a.4.6]]). Chirality is Lorentz invariant but, for $m > 0$, not conserved; helicity is conserved by free motion but, for $m > 0$, frame dependent ([[§C5a.6 Normalization, Spin Sums and Helicity#^rem-c5a-6-3|Remark: The helicity of a massive particle depends on the frame]]); at $m = 0$ they coincide and both are good labels. Interactions that couple to one chirality (the vector coupling $\bar\psi\gamma^\mu\psi$ preserves chirality) therefore suppress helicity flips by powers of $m/E$ — the helicity structure of QED amplitudes at high energy (Lecture 20; QFT C8, planned).
+> In $u_\lambda(p) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ the two Weyl blocks have sizes $\omega_{-\lambda}$ and $\omega_\lambda$ with $\omega_\lambda\omega_{-\lambda} = m$: the "wrong" chirality is present with amplitude $m/\omega_\lambda$. At rest both blocks are equal ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]); boosting shrinks one and grows the other; at $m = 0$ one vanishes. This is the plane-wave form of the Dirac equation in Weyl components, where only $m$ couples $\psi_L$ and $\psi_R$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-6|Theorem §C5a.4.6]]). Chirality is Lorentz invariant but, for $m > 0$, not conserved; helicity is conserved by free motion but, for $m > 0$, frame dependent ([[§C5a.6 Normalization, Spin Sums and Helicity#^rem-c5a-6-3|Remark: The helicity of a massive particle depends on the frame]]); at $m = 0$ they coincide and both are good labels. Interactions that couple to one chirality (the vector coupling $\bar\psi\gamma^\mu\psi$ preserves chirality) therefore suppress helicity flips by powers of $m/E$ — the helicity structure of QED amplitudes at high energy (Lecture 20; QFT C8, planned).
 >
 > *Source: the user's pre-course notes, §5.4 (note "Rest frame, and what ω_λω_{−λ} = m means": "the mass, divided by the energy scale, is the amplitude with which the 'wrong' chirality is populated") · PS §3.3, p. 47*
 
@@ -582,7 +582,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions|§C5a.5
 
 > [!remark]- Connections
 > - $u^\dagger u = 2E_{\mathbf p}$ is the same weight as the relativistic normalization of states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); with it the Dirac mode expansion has the scalar field's $1/\sqrt{2E_{\mathbf p}}$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]), and one-particle Dirac states are normalized exactly as scalar ones.
-> - The orthogonality of $u(\mathbf p)$ and $v(-\mathbf p)$ is the spinor counterpart of the scalar field's pairing of $\mathbf p$ with $-\mathbf p$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-4|§C2a.1, Remark: Why the modes decouple]]): it removes the $a^\dagger b^\dagger$ and $ba$ cross terms of $H$ (mode operators named as in [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-1|§C5b.1, Caution: Names for the Dirac field and its mode operators across sources]]), as the $a_{\mathbf p}a_{-\mathbf p}$ terms cancelled for $\phi$.
+> - The orthogonality of $u^r(p)$ and $v^s(\tilde p)$, $\tilde p = (E_{\mathbf p}, -\mathbf p)$, is the spinor counterpart of the scalar field's pairing of $\mathbf p$ with $-\mathbf p$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-4|§C2a.1, Remark: Why the modes decouple]]): it removes the $a^\dagger b^\dagger$ and $ba$ cross terms of $H$ (mode operators named as in [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-1|§C5b.1, Caution: Names for the Dirac field and its mode operators across sources]]), as the $a_{\mathbf p}a_{-\mathbf p}$ terms cancelled for $\phi$.
 > - The indefinite form $\bar ab$, positive on $u$ and negative on $v$, parallels the Klein–Gordon inner product, positive on positive-frequency and negative on negative-frequency modes ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-3|Remark: Why this inner product, and why it is indefinite]]); $\psi^\dagger\psi = \bar\psi\gamma^0\psi$ is positive for both, which is why the Dirac charge before quantization is positive and its energy is not ([[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], Connections).
 > - The spin sums are the numerators of the Dirac propagator: $\slashed{p} + m$ at the positive-energy pole and $\slashed{p} - m$ (with $p \to -p$) at the negative one ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft; [[P2 Green's Functions by Contour Integration|P2]], Dirac row); summed over spins, squared amplitudes become traces ([[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|Theorem §C5a.7.3]]).
 > - $\Lambda_\pm = (\pm\slashed{p} + m)/2m$ are the covariant versions of $\frac12(1 \pm \beta)$, the projectors onto the large and small components of Quantum Mechanics' Dirac spinors at rest ([[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]).

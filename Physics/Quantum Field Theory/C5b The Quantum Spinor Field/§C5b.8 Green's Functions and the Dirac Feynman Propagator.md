@@ -226,7 +226,7 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 >
 > the limit of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]. So $\tilde S_F = \dfrac{i}{\slashed{p} - m + i\varepsilon}$, PS's and the user's form, is a matrix inverse taken before the limit.
 >
-> *Source: the user's pre-course notes, §6.4 ("$1/(\slashed{p} - m + i\epsilon)$ is understood as the inverse matrix") · PS §3.5, eq. (3.120) · the limit justified here*
+> *Source: the user's pre-course notes, §6.4 ("$1/(\slashed{p} - m + i\varepsilon)$ is understood as the inverse matrix") · PS §3.5, eq. (3.120) · the limit justified here*
 
 ^thm-c5b-8-5
 

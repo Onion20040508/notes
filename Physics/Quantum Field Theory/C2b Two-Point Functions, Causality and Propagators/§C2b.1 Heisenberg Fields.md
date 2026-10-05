@@ -142,7 +142,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > 2. $\phi(f)$ depends on $\tilde f$ only through its values on the mass shell $p^2 = m^2$.
 > 3. The Klein–Gordon equation holds as an identity of operator-valued distributions: $\phi\bigl((\partial^2 + m^2)f\bigr) = 0$ for every $f$, which is what $(\partial^2 + m^2)\phi = 0$ means.
 >
-> *Source: the user's PHY 513 notes, App. A §A.4 ($\hat\phi[\varphi] = \int d^4x\,\varphi(x)\hat\phi(x)$), Ch. 6 §6.2 ("operator-valued distribution") · stated here for the Heisenberg field (standard: Streater & Wightman, Ch. 3; Reed & Simon II, §X.7)*
+> *Source: the user's PHY 513 notes, App. A §A.4 ($\phi[\varphi] = \int d^4x\,\varphi(x)\phi(x)$), Ch. 6 §6.2 ("operator-valued distribution") · stated here for the Heisenberg field (standard: Streater & Wightman, Ch. 3; Reed & Simon II, §X.7)*
 
 ^thm-c2b-1-2
 
@@ -290,7 +290,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > \langle0|\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}, \qquad \langle\mathbf p|\phi(x)|0\rangle = e^{ip\cdot x} .
 > $$
 >
-> *Source: the user's PHY 513 notes, Ch. 5 §5.3, Ch. 6 §6.7 (the split $\hat\phi^\pm$) · PS §2.4, p. 26 · Yu §6.3, eqs. (6.132)–(6.133)*
+> *Source: the user's PHY 513 notes, Ch. 5 §5.3, Ch. 6 §6.7 (the split $\phi^\pm$) · PS §2.4, p. 26 · Yu §6.3, eqs. (6.132)–(6.133)*
 
 ^thm-c2b-1-4
 

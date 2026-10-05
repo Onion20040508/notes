@@ -25,7 +25,7 @@ What are the solutions of the free Dirac equation? The equation and its covarian
 ^def-c5a-5-1
 
 > [!remark] Remark: Why the sign sits in the exponent, not in p⁰
-> The Klein–Gordon equation allows $e^{-ik\cdot x}$ with $k^0 = \pm E_{\mathbf k}$. The root $k^0 = -E_{\mathbf k}$ gives $e^{+iE_{\mathbf k}t + i\mathbf k\cdot\mathbf x}$, which is $e^{+ip\cdot x}$ with $p = (E_{\mathbf k}, -\mathbf k)$: the same function, relabelled by $\mathbf p = -\mathbf k$. Keeping both roots *and* both exponents would count every solution twice. The course keeps $p^0 > 0$ and puts the sign in the exponent (PS: "rather than having $p^0 < 0$"); Yu first writes the negative-energy eigenvectors $w^{(-)}(-E_{\mathbf k}, \mathbf k)$ and then makes exactly this relabelling, $v(\mathbf k) \equiv w^{(-)}(-E_{\mathbf k}, -\mathbf k)$ (5.134)–(5.137). The same relabelling turned $\tilde a_{\mathbf k}$ into $a^\dagger_{\mathbf p}$ for the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-2|Derivation §C2a.2.2, step 3]]), and it is the reason why, in [[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]], $u(\mathbf p)$ is orthogonal to $v(-\mathbf p)$ rather than to $v(\mathbf p)$.
+> The Klein–Gordon equation allows $e^{-ik\cdot x}$ with $k^0 = \pm E_{\mathbf k}$. The root $k^0 = -E_{\mathbf k}$ gives $e^{+iE_{\mathbf k}t + i\mathbf k\cdot\mathbf x}$, which is $e^{+ip\cdot x}$ with $p = (E_{\mathbf k}, -\mathbf k)$: the same function, relabelled by $\mathbf p = -\mathbf k$. Keeping both roots *and* both exponents would count every solution twice. The course keeps $p^0 > 0$ and puts the sign in the exponent (PS: "rather than having $p^0 < 0$"); Yu first writes the negative-energy eigenvectors $w^{(-)}(-E_{\mathbf k}, \mathbf k)$ and then makes exactly this relabelling, $v(\mathbf k) \equiv w^{(-)}(-E_{\mathbf k}, -\mathbf k)$ (5.134)–(5.137). The same relabelling turned $\tilde a_{\mathbf k}$ into $a^\dagger_{\mathbf p}$ for the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^der-c2a-2-2|Derivation §C2a.2.2, step 3]]), and it is the reason why, in [[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]], $u^r(p)$ is orthogonal to $v^s(\tilde p)$, $\tilde p = (E_{\mathbf p}, -\mathbf p)$, rather than to $v^s(p)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.1 · PS §3.3, p. 48 · Yu §5.4.1, eqs. (5.128)–(5.138)*
 
@@ -150,7 +150,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 >
 > **What the derivation shows**
 > - The same count, from $\det$ instead of $\operatorname{tr}$, and with the Hermitian Dirac Hamiltonian $H_{\text{s.p.}}(\mathbf k)$ supplying diagonalizability for free.
-> - ⚑ By-product: $u(\mathbf p)$ and $v(-\mathbf p)$ are eigenvectors of the *same* Hermitian $H_{\text{s.p.}}(\mathbf p)$ with eigenvalues $+E_{\mathbf p}$ and $-E_{\mathbf p}$, hence orthogonal in $\mathbb C^4$ → second route of [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]].
+> - ⚑ By-product: $u^r(p)$ and $v^s(\tilde p)$ are eigenvectors of the *same* Hermitian $H_{\text{s.p.}}(\mathbf p)$ with eigenvalues $+E_{\mathbf p}$ and $-E_{\mathbf p}$, hence orthogonal in $\mathbb C^4$ → second route of [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]].
 > - $H_{\text{s.p.}}(\mathbf k) = \boldsymbol\alpha\cdot\mathbf k + \beta m$ with $\alpha^i = \gamma^0\gamma^i$, $\beta = \gamma^0$ is the Dirac Hamiltonian of Quantum Mechanics ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) in momentum space.
 >
 > *Source: Yu §5.4.1, eqs. (5.118)–(5.131) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions") · the user's PHY 513 notes, Ch. 9, "Correspondence with Yu"*
@@ -169,7 +169,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 ## The rest frame
 
 > [!theorem] Theorem §C5a.5.3: Rest-Frame Solutions
-> At $p_0 \equiv (m, \mathbf 0)$, $m > 0$, the solutions of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]] are exactly
+> At the standard momentum $k \equiv (m, \mathbf 0)$ ([[§C3.5★ Particle States and the Little Group#^def-c3-5-1|Def. §C3.5.1]]), $m > 0$, the solutions of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]] are exactly
 >
 > $$
 > u_0 = \sqrt m\begin{pmatrix}\xi\\ \xi\end{pmatrix}, \qquad v_0 = \sqrt m\begin{pmatrix}\eta^s\\ -\eta^s\end{pmatrix},
@@ -182,7 +182,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 ^thm-c5a-5-3
 
 > [!derivation]- Derivation
-> **Step 1** (the matrix at rest). At $p_0 = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
+> **Step 1** (the matrix at rest). At $p = k = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
 >
 > $$
 > \slashed{p} - m = m\begin{pmatrix}-\mathbb 1 & \mathbb 1\\ \mathbb 1 & -\mathbb 1\end{pmatrix}, \qquad \slashed{p} + m = m\begin{pmatrix}\mathbb 1 & \mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix} .
@@ -219,7 +219,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 >
 > **Step 2** (on $u_0$). $J^k u_0 = \frac12\operatorname{diag}(\sigma^k, \sigma^k)\sqrt m(\xi, \xi) = \sqrt m(\frac12\sigma^k\xi, \frac12\sigma^k\xi) = u_0(\frac12\sigma^k\xi)$: both halves are acted on by the same $2\times2$ matrix, so the equality of the halves is preserved. For $v_0 = \sqrt m(\eta^s, -\eta^s)$ the same block acts on $\eta^s$ and on $-\eta^s$, giving $v_0(\frac12\sigma^k\eta^s)$; the relative sign rides along.
 >
-> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|§C5a.2, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $p_0$ is rotation-invariant; this is the Wigner rotation $W(R, p_0) = R$ → [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]].
+> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|§C5a.2, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]].
 >
 > **What the derivation shows**
 > - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
@@ -404,7 +404,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 *Uses:* [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]]
 
 > [!theorem] Theorem §C5a.5.8: The Spinor Boost from Rest to Momentum p
-> Let $m > 0$ and let $L(p)$ be the pure boost along $\hat{\mathbf p}$ that takes $p_0 = (m, \mathbf 0)$ to $p = (E_{\mathbf p}, \mathbf p)$, with rapidity $\eta$: $\cosh\eta = E_{\mathbf p}/m = \gamma$, $\sinh\eta = |\mathbf p|/m = \gamma v$. Its spinor matrix ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]), the exponential of the boost generators $S^{0i}$ along $\hat{\mathbf p}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]]), is
+> Let $m > 0$ and let $L(p)$ be the pure boost along $\hat{\mathbf p}$ that takes $k = (m, \mathbf 0)$ to $p = (E_{\mathbf p}, \mathbf p)$, with rapidity $\eta$: $\cosh\eta = E_{\mathbf p}/m = \gamma$, $\sinh\eta = |\mathbf p|/m = \gamma v$. Its spinor matrix ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]), the exponential of the boost generators $S^{0i}$ along $\hat{\mathbf p}$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]]), is
 >
 > $$
 > \Lambda_{1/2}(p) \equiv \exp\Bigl(-\frac\eta2\begin{pmatrix}\hat{\mathbf p}\cdot\boldsymbol\sigma & 0\\ 0 & -\hat{\mathbf p}\cdot\boldsymbol\sigma\end{pmatrix}\Bigr) = \begin{pmatrix}\sqrt{\dfrac{p\cdot\sigma}m} & 0\\[1ex] 0 & \sqrt{\dfrac{p\cdot\bar\sigma}m}\end{pmatrix} .
@@ -417,10 +417,10 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 ^thm-c5a-5-8
 
 > [!derivation]- Derivation
-> **Step 1** (the vector boost along $\hat{\mathbf n}$). Take $\omega_{0i} = -\omega_{i0} = \eta\,\hat n^i$ for a unit vector $\hat{\mathbf n}$, all other $\omega_{\mu\nu} = 0$. In the vector representation this is $e^{\eta N}$ with $N = \hat n^iM^{0i}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], whose part 2 gives the entries of $M^{03}$; $M^{0i}$ likewise has $1$ in the $(0, i)$ and $(i, 0)$ places). So $N(x^0, \mathbf x) = (\hat{\mathbf n}\cdot\mathbf x,\ \hat{\mathbf n}\,x^0)$, and on $p_0 = (m, \mathbf 0)$: $Np_0 = (0, m\hat{\mathbf n})$, $N^2p_0 = (m, \mathbf 0) = p_0$. Summing the exponential series, even powers give $\cosh\eta\,p_0$ and odd powers $\sinh\eta\,Np_0$:
+> **Step 1** (the vector boost along $\hat{\mathbf n}$). Take $\omega_{0i} = -\omega_{i0} = \eta\,\hat n^i$ for a unit vector $\hat{\mathbf n}$, all other $\omega_{\mu\nu} = 0$. In the vector representation this is $e^{\eta N}$ with $N = \hat n^iM^{0i}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], whose part 2 gives the entries of $M^{03}$; $M^{0i}$ likewise has $1$ in the $(0, i)$ and $(i, 0)$ places). So $N(x^0, \mathbf x) = (\hat{\mathbf n}\cdot\mathbf x,\ \hat{\mathbf n}\,x^0)$, and on $k = (m, \mathbf 0)$: $Nk = (0, m\hat{\mathbf n})$, $N^2k = (m, \mathbf 0) = k$. Summing the exponential series, even powers give $\cosh\eta\,k$ and odd powers $\sinh\eta\,Nk$:
 >
 > $$
-> e^{\eta N}p_0 = (m\cosh\eta,\ m\sinh\eta\,\hat{\mathbf n}) .
+> e^{\eta N}k = (m\cosh\eta,\ m\sinh\eta\,\hat{\mathbf n}) .
 > $$
 >
 > Setting this equal to $p = (E_{\mathbf p}, \mathbf p)$: $\hat{\mathbf n} = \hat{\mathbf p}$, $\cosh\eta = E_{\mathbf p}/m$, $\sinh\eta = |\mathbf p|/m$ (consistent: $\cosh^2\eta - \sinh^2\eta = (E^2 - \mathbf p^2)/m^2 = 1$). For $\hat{\mathbf n} = \hat{\mathbf z}$ this is $\gamma$ and $\gamma v$ of [[§C1.4 The Lorentz Group#^def-c1-4-2|Def. §C1.4.2]].
@@ -463,20 +463,22 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 > 1. For $m > 0$, $u^s(p) = \Lambda_{1/2}(p)\,u^s_0$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-8|Theorem §C5a.5.8]]) with $u_0^s = \sqrt m(\xi^s, \xi^s)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]): the rest-frame solution boosted; $u^1$, $u^2$ span $\ker(\slashed{p} - m)$.
 > 2. The formula holds for every direction of $\mathbf p$ and also for $m = 0$, where there is no rest frame and it is checked directly; then $u^1$, $u^2$ span $\ker\slashed{p}$.
 >
+> Names in other sources: [[§C5a.5 Plane-Wave Solutions#^cau-c5a-5-3|Caution: Names for the plane-wave spinors]].
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 (Principle "The positive-frequency solutions"), §9.4 (Derivation "Check: u(p) solves the Dirac equation in every frame") · PHY 513 Lecture 9, Part A ("General Solution to Dirac Equation") and Part B ("Practical Manipulations") · PS §3.3, eqs. (3.50), (3.59) · Yu §5.4.2, eq. (5.157)*
 
 ^thm-c5a-5-9
 
 > [!derivation]- Derivation
-> **Step 1** (start at rest). By [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]] and [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]], $\psi_0(x) = u^s_0\,e^{-ip_0\cdot x}$ solves the Dirac equation, $p_0 = (m, \mathbf 0)$.
+> **Step 1** (start at rest). By [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]] and [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]], $\psi_0(x) = u^s_0\,e^{-ik\cdot x}$ solves the Dirac equation, $k = (m, \mathbf 0)$.
 >
 > **Step 2** (covariance). If $\psi$ solves the Dirac equation, so does $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$ for every $\Lambda$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-1|Theorem §C5a.3.1]]). Take $\Lambda = L(p)$ of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-8|Theorem §C5a.5.8]]:
 >
 > $$
-> \psi'(x) = \Lambda_{1/2}(p)\,u^s_0\;e^{-ip_0\cdot(L(p)^{-1}x)} .
+> \psi'(x) = \Lambda_{1/2}(p)\,u^s_0\;e^{-ik\cdot(L(p)^{-1}x)} .
 > $$
 >
-> **Step 3** (the exponent). Lorentz transformations preserve the Minkowski product ([[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]): $p_0\cdot(L^{-1}x) = (Lp_0)\cdot(LL^{-1}x) = p\cdot x$, with $Lp_0 = p$. So $\psi'(x) = \Lambda_{1/2}(p)u^s_0\,e^{-ip\cdot x}$: a positive-frequency plane wave of momentum $p$, and by Theorem §C5a.5.1 its column solves $(\slashed{p} - m)\Lambda_{1/2}(p)u^s_0 = 0$.
+> **Step 3** (the exponent). Lorentz transformations preserve the Minkowski product ([[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]): $k\cdot(L^{-1}x) = (Lk)\cdot(LL^{-1}x) = p\cdot x$, with $Lk = p$. So $\psi'(x) = \Lambda_{1/2}(p)u^s_0\,e^{-ip\cdot x}$: a positive-frequency plane wave of momentum $p$, and by Theorem §C5a.5.1 its column solves $(\slashed{p} - m)\Lambda_{1/2}(p)u^s_0 = 0$.
 >
 > **Step 4** (multiply the matrices). With [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-8|Theorem §C5a.5.8]], block by block,
 >
@@ -489,7 +491,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 > **Step 5** (they span). $\Lambda_{1/2}(p)$ is invertible (an exponential), so it maps the two independent $u^1_0$, $u^2_0$ to two independent $u^1(p)$, $u^2(p)$, which lie in the two-dimensional $\ker(\slashed{p} - m)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]) and therefore span it. Part 1.
 >
 > **What the derivation shows**
-> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|p_0, \sigma\rangle$ ([[§C3.5★ Particle States and the Little Group#^thm-c3-5-4|Theorem §C3.5.4]]).
+> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.5★ Particle States and the Little Group#^thm-c3-5-4|Theorem §C3.5.4]]).
 > - Assumption $m > 0$ (rest frame, $1/\sqrt m$); the massless case needs the second route.
 > - Used next: $v(p)$ by the same four steps ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]]); normalizations ([[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]]); mode expansion ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
 
@@ -564,7 +566,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 >
 > **Step 3** (rest frame). [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]: $v_0^s = \sqrt m(\eta^s, -\eta^s)$. *Difference:* the lower half is minus the upper half.
 >
-> **Step 4** (boost). As in Steps 2–3 of [[§C5a.5 Plane-Wave Solutions#^der-c5a-5-9|Derivation §C5a.5.9]], $\Lambda_{1/2}(p)v_0^s\,e^{+ip_0\cdot(L^{-1}x)} = \Lambda_{1/2}(p)v_0^s\,e^{+ip\cdot x}$ is a solution, the Minkowski product being invariant whatever the sign in front of it. The boost acts on each half separately and the minus sign rides along:
+> **Step 4** (boost). As in Steps 2–3 of [[§C5a.5 Plane-Wave Solutions#^der-c5a-5-9|Derivation §C5a.5.9]], $\Lambda_{1/2}(p)v_0^s\,e^{+ik\cdot(L^{-1}x)} = \Lambda_{1/2}(p)v_0^s\,e^{+ip\cdot x}$ is a solution, the Minkowski product being invariant whatever the sign in front of it. The boost acts on each half separately and the minus sign rides along:
 >
 > $$
 > \Lambda_{1/2}(p)\,v_0^s = \begin{pmatrix}\sqrt{p\cdot\sigma/m}\;\sqrt m\,\eta^s\\ \sqrt{p\cdot\bar\sigma/m}\;(-\sqrt m\,\eta^s)\end{pmatrix} = \begin{pmatrix}\sqrt{p\cdot\sigma}\;\eta^s\\ -\sqrt{p\cdot\bar\sigma}\;\eta^s\end{pmatrix} = v^s(p) .
@@ -596,6 +598,13 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 
 ^cau-c5a-5-2
 
+> [!caution] Caution: Names for the plane-wave spinors
+> These notes write $u^s(p)$, $v^s(p)$, with the on-shell four-momentum as argument and $s = 1, 2$ labelling the spin basis $\xi^s$, $\eta^s$ ([[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]]), as Lecture 9, the user's PHY 513 notes and Peskin–Schroeder (eqs. (3.50), (3.62)) do; a second spin index is $r$. In the helicity basis they write $u_\lambda(p)$, $v_\lambda(p)$, $\lambda = \pm$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-12|Theorem §C5a.6.12]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-13|Theorem §C5a.6.13]]). Yu and the user's pre-course notes use only the helicity basis and write $u(p, \lambda)$, $v(p, \lambda)$ (Yu §5.4.2). Quantum Mechanics, after Sakurai, writes $u^{(\pm)}(\mathbf p)$ for the positive- and negative-energy solutions of one particle ([[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]); its $u^{(-)}(\mathbf p)$ corresponds to $v^s(\tilde p)$ here, $\tilde p = (E_{\mathbf p}, -\mathbf p)$, up to the change of basis and normalization. Earlier drafts of this vault also wrote $u(p, s)$, $u(\mathbf p)$ and $v(p, \lambda)$.
+>
+> *Source: Lecture 9, Parts A and C · the user's PHY 513 notes, Ch. 9 §§9.3–9.5 · PS §3.3, eqs. (3.50), (3.62) · Yu §5.4.2, eqs. (5.157), (5.165)–(5.181) · Sakurai, as in QM §C13.3★*
+
+^cau-c5a-5-3
+
 > [!remark] Remark: In what sense a general solution is a superposition of these plane waves
 > A plane wave $u(p)e^{-ip\cdot x}$ is a smooth, bounded solution: a tempered distribution, not a square-integrable wave function (as for $e^{-ip\cdot x}$ in [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|§C2a.4, Caution: Plane-wave states are not normalizable]]). A solution with Cauchy data whose spatial Fourier transform is a wave packet (Schwartz) is an absolutely convergent integral over $\mathbf p$ of $u^s(p)e^{-ip\cdot x}$ and $v^s(p)e^{+ip\cdot x}$ with wave-packet coefficients: for $m > 0$ the spinors are smooth and polynomially bounded ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]]), so a coefficient times a spinor is again a wave packet, and the integrals and their $x$-derivatives may be exchanged ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]). Any tempered solution has a spacetime Fourier transform supported on the two sheets $p^0 = \pm E_{\mathbf p}$ of the mass shell, where the Dirac equation acts as the matrix $\pm\slashed{p}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]). For the quantum field the coefficients become operators, and the superposition holds as an operator-valued distribution, i.e. after smearing with test functions ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]; the field: [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]). The massless spinors are continuous but not smooth at $\mathbf p = 0$; they are still integrable against wave packets.
 >
@@ -604,8 +613,8 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 ^rem-c5a-5-6
 
 > [!remark] Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics
-> Quantum Mechanics solves the free Dirac equation as a wave equation for one particle, in the Dirac basis, with $u^{(\pm)}$ of energy $\pm E_p$ normalized to $u^\dagger u = 2E_p/(E_p + mc^2)$ ([[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]; matrix conventions [[§C13.2★ The Dirac Equation#^cau-c13-2-1|QM Caution: Dirac matrices]]). The field theory changes three things:
-> - **The negative-energy solutions are relabelled**, not interpreted as states: $u^{(-)}(\mathbf p)e^{i(\mathbf p\cdot\mathbf x + E_pt)}$ is $v(\tilde p)e^{+i\tilde p\cdot x}$ with $\tilde p = (E_p, -\mathbf p)$, a positive-$p^0$ label for a coefficient that becomes an antiparticle creation operator, instead of a Dirac sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]).
+> Quantum Mechanics solves the free Dirac equation as a wave equation for one particle, in the Dirac basis, with $u^{(\pm)}$ of energy $\pm E_{\mathbf p}$ normalized to $u^\dagger u = 2E_{\mathbf p}/(E_{\mathbf p} + mc^2)$ ([[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|QM Theorem §C13.3.1]]; matrix conventions [[§C13.2★ The Dirac Equation#^cau-c13-2-1|QM Caution: Dirac matrices]]). The field theory changes three things:
+> - **The negative-energy solutions are relabelled**, not interpreted as states: $u^{(-)}(\mathbf p)e^{i(\mathbf p\cdot\mathbf x + E_{\mathbf p}t)}$ is $v^s(\tilde p)e^{+i\tilde p\cdot x}$ with $\tilde p = (E_{\mathbf p}, -\mathbf p)$, a positive-$p^0$ label for a coefficient that becomes an antiparticle creation operator, instead of a Dirac sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]).
 > - **The construction comes from the Lorentz group**: solve at rest, boost with $\Lambda_{1/2}$; this needs the chiral basis, in which boosts are block-diagonal.
 > - **The normalization is covariant**: $\bar uu = 2m$ in every frame and $u^\dagger u = 2E_{\mathbf p}$, the energy weight of relativistically normalized states ([[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]]).
 >
@@ -622,7 +631,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 ^rem-c5a-5-7
 
 > [!remark]- Connections
-> - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $p_0 = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.5.4).
+> - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.5.4).
 > - $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ is positive Hermitian in each block: the "boost" factor of the polar decomposition, the $SL(2, \mathbb C)$ version of "every Lorentz transformation is a boost times a rotation" ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]] and its Connections; [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]); the upper block is the left-handed $SL(2, \mathbb C)$ matrix of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] (covering the vector representation, [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-7|Theorem §C5a.1.7]]).
 > - The eigenvalue count (two $u$'s, two $v$'s) uses only $\slashed{p}^{\,2} = p^2$ and $\operatorname{tr}\gamma^\mu = 0$; the same "square root of $p^2$" is why the Dirac operator squares to the Klein–Gordon operator ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]).
 > - The rest-frame projector structure, $\frac12(\mathbb 1 \pm \gamma^0)$ on $u_0$ and $v_0$, is the $\mathbf p = 0$ case of the energy projectors $\frac{\pm\slashed{p} + m}{2m}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-10|Theorem §C5a.6.10]]), the numerator of the Dirac propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft).

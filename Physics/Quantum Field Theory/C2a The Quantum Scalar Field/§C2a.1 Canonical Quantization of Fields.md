@@ -16,7 +16,9 @@ How is a field, a system with one coordinate at every point of space, turned int
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$ ([[§C1.2 Natural Units and Dimensional Analysis#^def-c1-2-1|Def. §C1.2.1]]); $g = \operatorname{diag}(+,-,-,-)$, so $p\cdot x = p^0t - \mathbf p\cdot\mathbf x$; $E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$; spatial Fourier transforms $f(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\tilde f(\mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$, with $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$, an identity of tempered distributions in $\mathbf k$ and not a convergent integral ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; the other rules in [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]). Relativity B keeps $c$ explicit; here it is set to one.
 
 > [!caution] Caution: Eₚ, not ωₚ; π, not Π
-> Lectures 4–5 write the mode frequency as $\omega_{\mathbf p}$ and the momentum density as $\Pi(\mathbf x)$ (also Problem Set 3). These notes write $E_{\mathbf p}$ and $\pi(\mathbf x)$, as Peskin–Schroeder do from their eq. (2.33) on: the frequency of mode $\mathbf p$ *is* the energy of a particle of momentum $\mathbf p$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+> Lectures 4–5 write the mode frequency as $\omega_{\mathbf p}$ and the momentum density as $\Pi(\mathbf x)$ (also Problem Set 3). These notes write $E_{\mathbf p}$ and $\pi(\mathbf x)$, as Peskin–Schroeder do from their eq. (2.33) on: the frequency of mode $\mathbf p$ *is* the energy of a particle of momentum $\mathbf p$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]). The user's PHY 513 notes use both, mostly $\omega_{\mathbf p}$ (Concordance: "both $\sqrt{\mathbf p^2 + m^2}$"); Yu writes $E_{\mathbf p}$, the user's pre-course notes $E_{\vec p}$, Quantum Mechanics (C13★, after Sakurai) $E_p$ with $c$ restored. A nonrelativistic oscillator keeps its own $\omega$. The lectures and the user's notes also put hats on operators, $\hat\phi$, $\hat\pi$, $\hat a_{\mathbf p}$; these notes drop them, as Peskin–Schroeder do.
+>
+> *Source: Lectures 4–5 · Problem Set 3 · PS §2.3, p. 22 · Yu §2.3 · the user's PHY 513 notes, Concordance · the user's pre-course notes, §3 · QM §C13.1★*
 
 ^cau-c2a-1-1
 
@@ -66,7 +68,7 @@ $$
 >
 > Hermitian operators. $\phi$ and $\pi$ are operator-valued distributions on space ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): the symbols $\phi(\mathbf x)$, $\pi(\mathbf x)$ are the kernels through which these operators are written, not operators themselves.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": "operator-valued distributions, defined after smearing with test functions") and App. A §A.4 ($\hat\phi[\varphi] = \int d^4x\,\varphi(x)\hat\phi(x)$), here on a time slice · standard (Streater & Wightman, Ch. 3)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": "operator-valued distributions, defined after smearing with test functions") and App. A §A.4 ($\phi[\varphi] = \int d^4x\,\varphi(x)\phi(x)$), here on a time slice · standard (Streater & Wightman, Ch. 3)*
 
 ^def-c2a-1-1
 

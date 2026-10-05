@@ -356,7 +356,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > a one-particle wave packet ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]]). As $f$ narrows to $\delta^3(\cdot - \mathbf x)$ the norm diverges, like $\Lambda^2/8\pi^2$ with a momentum cutoff $\Lambda$: $\phi(\mathbf x)|0\rangle$ is not a vector, only its pairings $\langle g|\phi(\mathbf x)|0\rangle$ with wave packets are numbers.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\hat\phi(\mathbf x)$ is an operator-valued distribution) and §4.9 · stated and derived here*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\phi(\mathbf x)$ is an operator-valued distribution) and §4.9 · stated and derived here*
 
 ^thm-c2a-4-8
 

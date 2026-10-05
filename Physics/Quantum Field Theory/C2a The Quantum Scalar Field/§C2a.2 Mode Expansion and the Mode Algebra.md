@@ -438,7 +438,7 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 >
 > $a^\dagger$ is an operator-valued distribution on momentum space ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]), and so is $a$ (antilinear in $g$: $g \mapsto a(\bar g)$ is linear), and $a^\dagger(g)$ creates one quantum in the wave packet $g$.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\hat a^\dagger_{\mathbf p}$ is an operator-valued distribution, defined after smearing; the packet operator of "Macroscopic occupation") · standard (Streater & Wightman, Ch. 3)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $a^\dagger_{\mathbf p}$ is an operator-valued distribution, defined after smearing; the packet operator of "Macroscopic occupation") · standard (Streater & Wightman, Ch. 3)*
 
 ^def-c2a-2-2
 

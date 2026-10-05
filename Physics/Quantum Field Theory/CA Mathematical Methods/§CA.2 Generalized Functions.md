@@ -705,7 +705,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 > [!definition] Definition §CA.2.8: Operator-Valued Distribution
 > Let $\mathcal H$ be a Hilbert space and $\mathcal D_0 \subset \mathcal H$ a dense subspace. An **operator-valued (tempered) distribution** on $\mathbb R^n$ is a map $f \mapsto \Phi(f)$ from $\mathcal S(\mathbb R^n)$ to linear operators defined on $\mathcal D_0$, with $\Phi(f)\mathcal D_0 \subseteq \mathcal D_0$, linear in $f$, such that for all $\Psi_1, \Psi_2 \in \mathcal D_0$ the matrix element $f \mapsto \langle\Psi_1|\Phi(f)|\Psi_2\rangle$ is a tempered distribution. One writes $\Phi(f) = \int d^nx\,f(x)\,\Phi(x)$; the symbol $\Phi(x)$ is the kernel of this notation, not an operator.
 >
-> *Source: standard; stated here (Streater & Wightman, Ch. 3) · the user's PHY 513 notes, App. A §A.4 and Ch. 6 §6.2 ("operator-valued distribution", $\hat\phi[\varphi] = \int d^4x\,\varphi(x)\hat\phi(x)$)*
+> *Source: standard; stated here (Streater & Wightman, Ch. 3) · the user's PHY 513 notes, App. A §A.4 and Ch. 6 §6.2 ("operator-valued distribution", $\phi[\varphi] = \int d^4x\,\varphi(x)\phi(x)$)*
 
 ^def-ca-2-8
 

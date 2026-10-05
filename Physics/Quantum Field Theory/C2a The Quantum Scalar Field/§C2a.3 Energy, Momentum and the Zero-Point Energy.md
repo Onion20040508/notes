@@ -168,7 +168,7 @@ What are the energy and momentum of the free real field? With the mode expansion
 > E_0 = V\int\frac{d^3p}{(2\pi)^3}\,\frac{E_{\mathbf p}}{2}, \qquad V = (2\pi)^3\delta^3(\mathbf 0) = \int d^3x .
 > $$
 >
-> It diverges twice: in the infrared, in proportion to the volume $V$ of space; in the ultraviolet, through the energy density $\varepsilon_0 = E_0/V$, which with a momentum cutoff $\Lambda \gg m$ is $\varepsilon_0 \approx \Lambda^4/16\pi^2$. It is a c-number: it commutes with every operator.
+> It diverges twice: in the infrared, in proportion to the volume $V$ of space; in the ultraviolet, through the energy density $\varepsilon_0 = E_0/V$, which with a momentum cutoff $\Lambda \gg m$ is $\varepsilon_0 \approx \Lambda^4/16\pi^2$. It is a c-number: it commutes with every operator. (Names in other sources, and the zero-point energies of the other fields: [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^cau-c2a-3-1|Caution: Names for the zero-point energy]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy") · PS §2.3, after eq. (2.31) · Yu §2.3.3, eqs. (2.132), (2.134); the cutoff estimate computed here*
 
@@ -217,6 +217,13 @@ What are the energy and momentum of the free real field? With the mode expansion
 ^der-c2a-3-3
 
 *Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-9|Theorem §CA.3.9]]
+
+> [!caution] Caution: Names for the zero-point energy
+> One kind of constant, one letter. These notes write $E_0$ for the zero-point (vacuum) energy of the real scalar field and mark the other fields with a superscript: $2E_0$ for the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]]), $E_0^{(\rm P)} = 3E_0$ for the Proca field ([[§C4.4★ Quantizing the Massive Vector Field#^thm-c4-4-6|Theorem §C4.4.6]]), $E_0^{(\gamma)}$ for the covariantly quantized photon, four polarizations at $m = 0$ ([[§C4.6 Covariant Quantization and the Indefinite Metric#^thm-c4-6-10|Theorem §C4.6.10]]), and $E_0^{(\rm D)} = -4E_0$ for the Dirac field ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]). Yu and the user's pre-course notes write $E_{\rm vac}$ for every field (Yu eqs. (2.150), (4.242), (5.269)), Yu keeping $E_0$ for one oscillator; Peskin–Schroeder ("this infinite constant term", after eq. (2.31)), Lecture 4 and the user's PHY 513 notes (Ch. 4 §4.6, Caution "The zero-point energy") leave it unnamed; earlier drafts of this vault wrote $E_{\rm vac}$ for the photon and $E^D_{\rm vac}$ for the Dirac field. Quantum Mechanics uses $E_0 = \frac12\hbar\omega$ for the ground-state energy of one oscillator ([[§B4.1 Ladder Operators and the Spectrum|QM §B4.1]]): the same letter, one mode instead of all of them.
+>
+> *Source: Yu, eqs. (2.150), (4.242), (5.269) · PS §2.3, p. 22 · the user's PHY 513 notes, Ch. 4 §4.6 · the user's pre-course notes, §3*
+
+^cau-c2a-3-1
 
 > [!theorem] Theorem §C2a.3.4: Momentum in Mode Form
 > The field momentum $\mathbf P = -\int d^3x\,\pi\nabla\phi$ (the Noether charge of spatial translations; [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-6|Theorem §C1.12.6]]) is

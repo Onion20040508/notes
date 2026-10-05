@@ -30,20 +30,20 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 ^thm-c5b-2-1
 
 > [!derivation]- Derivation
-> **1. Fourier transform in space.** Write $\psi(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\hat\psi(t, \mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$ (for a classical field in $\mathcal S$; in general in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]). Since $-i\nabla e^{i\mathbf p\cdot\mathbf x} = \mathbf p\,e^{i\mathbf p\cdot\mathbf x}$ (derivative ↔ multiplication, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), the Dirac equation $i\partial_t\psi = H_{\text{s.p.}}\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]) becomes, momentum by momentum,
+> **1. Fourier transform in space.** Write $\psi(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\tilde\psi(t, \mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$ (for a classical field in $\mathcal S$; in general in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]). Since $-i\nabla e^{i\mathbf p\cdot\mathbf x} = \mathbf p\,e^{i\mathbf p\cdot\mathbf x}$ (derivative ↔ multiplication, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), the Dirac equation $i\partial_t\psi = H_{\text{s.p.}}\psi$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]) becomes, momentum by momentum,
 >
 > $$
-> i\partial_t\hat\psi(t, \mathbf p) = H_{\text{s.p.}}(\mathbf p)\,\hat\psi(t, \mathbf p), \qquad H_{\text{s.p.}}(\mathbf p) = \boldsymbol\alpha\cdot\mathbf p + \beta m = \gamma^0\gamma^ip^i + \gamma^0m .
+> i\partial_t\tilde\psi(t, \mathbf p) = H_{\text{s.p.}}(\mathbf p)\,\tilde\psi(t, \mathbf p), \qquad H_{\text{s.p.}}(\mathbf p) = \boldsymbol\alpha\cdot\mathbf p + \beta m = \gamma^0\gamma^ip^i + \gamma^0m .
 > $$
 >
 > **2. $H_{\text{s.p.}}(\mathbf p)$ is Hermitian with $H_{\text{s.p.}}(\mathbf p)^2 = E_{\mathbf p}^2$.** $\gamma^0$ is Hermitian and $\gamma^i$ anti-Hermitian ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]), so $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^0 = -\gamma^i\gamma^0 = \gamma^0\gamma^i$. From the Clifford algebra ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]) with $(\gamma^0)^2 = 1$: $\alpha^i\alpha^j + \alpha^j\alpha^i = -(\gamma^i\gamma^j + \gamma^j\gamma^i) = -2g^{ij} = 2\delta^{ij}$ and $\alpha^i\beta + \beta\alpha^i = \gamma^0\gamma^i\gamma^0 + \gamma^i = -\gamma^i + \gamma^i = 0$. Squaring, $h^2 = \mathbf p^2 + m^2 = E_{\mathbf p}^2$, so the eigenvalues are $\pm E_{\mathbf p}$ (this is the second route of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]).
 >
 > **3. The eigenvectors.** Multiplying $(\slashed{p} - m)u^s(p) = 0$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]]; slash: [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-2|Def. §C5a.3.2]]) by $\gamma^0$ gives $(E_{\mathbf p} - \gamma^0\gamma^ip^i - \gamma^0m)u^s = 0$: $H_{\text{s.p.}}(\mathbf p)u^s(p) = +E_{\mathbf p}u^s(p)$. Multiplying $(\slashed{\tilde p} + m)v^s(\tilde p) = 0$ by $\gamma^0$, with $\slashed{\tilde p} = \gamma^0E_{\mathbf p} + \gamma^ip^i$: $(E_{\mathbf p} + \gamma^0\gamma^ip^i + \gamma^0m)v^s(\tilde p) = 0$, i.e. $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$. The four vectors $u^1(p), u^2(p), v^1(\tilde p), v^2(\tilde p)$ are orthogonal ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]), each of norm squared $2E_{\mathbf p}$: a basis of $\mathbb C^4$ (PS p. 53).
 >
-> **4. Solve the ordinary differential equation.** Expanding $\hat\psi(t, \mathbf p)$ in this eigenbasis, each component evolves with its own phase:
+> **4. Solve the ordinary differential equation.** Expanding $\tilde\psi(t, \mathbf p)$ in this eigenbasis, each component evolves with its own phase:
 >
 > $$
-> \hat\psi(t, \mathbf p) = \frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\Bigl(a^s_{\mathbf p}\,u^s(p)\,e^{-iE_{\mathbf p}t} + \beta^s_{\mathbf p}\,v^s(\tilde p)\,e^{+iE_{\mathbf p}t}\Bigr) ,
+> \tilde\psi(t, \mathbf p) = \frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\Bigl(a^s_{\mathbf p}\,u^s(p)\,e^{-iE_{\mathbf p}t} + \beta^s_{\mathbf p}\,v^s(\tilde p)\,e^{+iE_{\mathbf p}t}\Bigr) ,
 > $$
 >
 > with four free coefficients per $\mathbf p$; the factor $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, as for the scalar ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]).
