@@ -6,9 +6,9 @@ chapter: C4
 tags: [chapter, quantum-field-theory]
 ---
 # C4 The Quantum Vector Field
-← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5 The Quantum Spinor Field]] →
+← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5a Spinors and the Dirac Equation]] →
 
-**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (104), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (88), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (51), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (66), [[· C5 The Quantum Spinor Field|C5 The Quantum Spinor Field]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (133)
+**Builds on:** [[· C1 Preliminaries|C1 Preliminaries]] (104), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (88), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (51), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (66), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (133)
 **Used by:** [[· C1 Preliminaries|C1 Preliminaries]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5)
 
 ## Sections

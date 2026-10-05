@@ -2,22 +2,22 @@
 type: section
 subject: "[[Quantum Field Theory]]"
 level: C
-chapter: C5
-section: C5.1
+chapter: C5a
+section: C5a.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C4.8 Vector-Field Propagators]] · ↑ [[· C5 The Quantum Spinor Field]] · [[§C5.2 The Clifford Algebra and the Dirac Representation]] →
+← [[§C4.8 Vector-Field Propagators]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.2 The Clifford Algebra and the Dirac Representation]] →
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.2 (Weyl spinors: Derivations "How the two halves transform", "Index calculus for Weyl spinors", "The double cover made explicit", "The left-handed Weyl matrices are this covering") and §8.3 (What each spinor index labels) · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.2, pp. 43–44, eqs. (3.36)–(3.42) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), and §5.2, eq. (5.74) · the user's pre-course notes, §5.2 (Remark "SL(2,C) made explicit").*
 
-What are the two-dimensional spinor representations $(\frac12, 0)$ and $(0, \frac12)$ as matrices, which group do they represent, and how are spinor indices handled? [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-6|Theorem §C3.2.6]] produced them abstractly, as exponentials of $\frac12\boldsymbol\sigma$ at a complex angle, and [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]] found that they are defined only up to sign on $SO^+(1,3)$; the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]. This section turns four-vectors into $2\times2$ Hermitian matrices with $\sigma^\mu$, builds the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ from it, proves that $SL(2,\mathbb C)$ is the simply connected double cover, and uses it to deliver what §C3.2 deferred: the representations $(j_+, j_-)$ with $j_+ + j_-$ an integer are honest representations of $SO^+(1,3)$. It ends with the index calculus of Weyl spinors (undotted and dotted indices, the invariant $\varepsilon$) and the four-vector as a bispinor. The Dirac matrices built from these blocks are [[§C5.2 The Clifford Algebra and the Dirac Representation|§C5.2]].
+What are the two-dimensional spinor representations $(\frac12, 0)$ and $(0, \frac12)$ as matrices, which group do they represent, and how are spinor indices handled? [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-6|Theorem §C3.2.6]] produced them abstractly, as exponentials of $\frac12\boldsymbol\sigma$ at a complex angle, and [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]] found that they are defined only up to sign on $SO^+(1,3)$; the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]. This section turns four-vectors into $2\times2$ Hermitian matrices with $\sigma^\mu$, builds the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ from it, proves that $SL(2,\mathbb C)$ is the simply connected double cover, and uses it to deliver what §C3.2 deferred: the representations $(j_+, j_-)$ with $j_+ + j_-$ an integer are honest representations of $SO^+(1,3)$. It ends with the index calculus of Weyl spinors (undotted and dotted indices, the invariant $\varepsilon$) and the four-vector as a bispinor. The Dirac matrices built from these blocks are [[§C5a.2 The Clifford Algebra and the Dirac Representation|§C5a.2]].
 
 *Conventions* ([[Larsen PHY 513]]): $g = \operatorname{diag}(+,-,-,-)$; active reading; $\Lambda = e^{\omega} = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$, $(\omega)^\mu{}_\nu = \omega^\mu{}_\nu$; $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ (so $\omega_{ij} = \varepsilon_{ijk}\theta_k$), $\eta_i = \omega_{0i}$; $K_i = \mathcal J^{0i}$, so that $(\frac12, 0)$ is Peskin–Schroeder's $\psi_L$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]]). Pauli matrices $\boldsymbol\sigma = (\sigma^1, \sigma^2, \sigma^3)$, with the product rule of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
 
 ## The matrices σ^μ and σ̄^μ
 
-> [!definition] Definition §C5.1.1: The Matrices σ^μ and σ̄^μ
+> [!definition] Definition §C5a.1.1: The Matrices σ^μ and σ̄^μ
 > With $\mathbb 1$ the $2\times2$ identity and the Pauli matrices $\boldsymbol\sigma$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^def-b6-1-2|QM Def. §B6.1.2]]),
 >
 > $$
@@ -28,19 +28,19 @@ What are the two-dimensional spinor representations $(\frac12, 0)$ and $(0, \fra
 >
 > *Source: PS §3.2, eq. (3.41) · Yu §5.2, eq. (5.74); Exercise 3.7, eq. (3.259) · PHY 513 Lecture 8, Part C ("Notation $\sigma^\mu = (1, \vec\sigma)$, $\bar\sigma^\mu = (1, -\vec\sigma)$") · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit")*
 
-^def-c5-1-1
+^def-c5a-1-1
 
 The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\bar\psi$ (PS p. 44). Note that $\sigma_\mu$ and $\bar\sigma^\mu$ have the same entries: lowering the index of $\sigma$ and replacing $\sigma$ by $\bar\sigma$ both flip the sign of the spatial part.
 
-> [!theorem] Theorem §C5.1.1: Identities of σ^μ and σ̄^μ
-> For $\sigma^\mu$, $\bar\sigma^\mu$, $X$, $\bar X$ of [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-1|Def. §C5.1.1]]:
+> [!theorem] Theorem §C5a.1.1: Identities of σ^μ and σ̄^μ
+> For $\sigma^\mu$, $\bar\sigma^\mu$, $X$, $\bar X$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]]:
 > 1. $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$.
 > 2. $\sigma^\mu\bar\sigma^\nu + \sigma^\nu\bar\sigma^\mu = 2g^{\mu\nu}\mathbb 1$ and $\bar\sigma^\mu\sigma^\nu + \bar\sigma^\nu\sigma^\mu = 2g^{\mu\nu}\mathbb 1$; in particular $X\bar X = \bar XX = x^2\,\mathbb 1$.
 > 3. $\sigma^2(\sigma^\mu)^*\sigma^2 = \bar\sigma^\mu$ and $\sigma^2(\bar\sigma^\mu)^*\sigma^2 = \sigma^\mu$.
 >
 > *Source: Yu Exercise 3.7, eq. (3.260) (the inverse $x^\mu = \frac12\operatorname{tr}(X\bar\sigma^\mu)$, which is part 1) · the user's PHY 513 notes, Ch. 8 §8.2 ("from $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$ the inverse is …") · PS eq. (3.38) (part 3 for $\boldsymbol\sigma$) · the case-by-case computation written out here*
 
-^thm-c5-1-1
+^thm-c5a-1-1
 
 > [!derivation]- Derivation
 > The only input is the Pauli product rule $\sigma^i\sigma^j = \delta^{ij}\mathbb 1 + i\varepsilon^{ijk}\sigma^k$, with $\operatorname{tr}\sigma^i = 0$ and $\operatorname{tr}\mathbb 1 = 2$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]). Latin indices run over $1, 2, 3$.
@@ -54,17 +54,17 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 > **4. Conjugation by σ².** $\sigma^1$ and $\sigma^3$ are real and $\sigma^2$ is imaginary, so $(\sigma^1)^{\ast} = \sigma^1$, $(\sigma^2)^{\ast} = -\sigma^2$, $(\sigma^3)^{\ast} = \sigma^3$. Since $(\sigma^2)^2 = \mathbb 1$ and $\sigma^2$ anticommutes with $\sigma^1, \sigma^3$: $\sigma^2\sigma^1\sigma^2 = -\sigma^1(\sigma^2)^2 = -\sigma^1$, $\sigma^2(-\sigma^2)\sigma^2 = -\sigma^2$, $\sigma^2\sigma^3\sigma^2 = -\sigma^3$. So $\sigma^2(\sigma^i)^{\ast}\sigma^2 = -\sigma^i$ for each $i$ (PS (3.38)), while $\sigma^2\mathbb 1^{\ast}\sigma^2 = \mathbb 1$. Hence $\sigma^2(\sigma^\mu)^{\ast}\sigma^2 = (\mathbb 1, -\boldsymbol\sigma) = \bar\sigma^\mu$, and conjugating $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ the same way gives $(\mathbb 1, \boldsymbol\sigma) = \sigma^\mu$.
 >
 > **What the derivation shows**
-> - Part 2 is a "Clifford algebra" for the pair $(\sigma, \bar\sigma)$: neither set alone squares to $g$, but $\sigma$ followed by $\bar\sigma$ does. Stacking them into a $4\times4$ matrix is exactly the chiral Dirac matrix → [[§C5.2 The Clifford Algebra and the Dirac Representation#^def-c5-2-2|Def. §C5.2.2]].
+> - Part 2 is a "Clifford algebra" for the pair $(\sigma, \bar\sigma)$: neither set alone squares to $g$, but $\sigma$ followed by $\bar\sigma$ does. Stacking them into a $4\times4$ matrix is exactly the chiral Dirac matrix → [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]].
 > - $X\bar X = x^2$ makes $\det X = x^2$ plausible ($\det X\cdot\det\bar X = (x^2)^2$, and the two determinants are equal): the next theorems use it.
-> - Part 3 is the matrix form of "complex conjugation exchanges the two Weyl representations" → Theorem §C5.1.2, part 3.
+> - Part 3 is the matrix form of "complex conjugation exchanges the two Weyl representations" → Theorem §C5a.1.2, part 3.
 
-^der-c5-1-1
+^der-c5a-1-1
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-1|Def. §C5.1.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
 ## The Weyl matrices and SL(2, C)
 
-> [!definition] Definition §C5.1.2: The Weyl Matrices and the Group SL(2, C)
+> [!definition] Definition §C5a.1.2: The Weyl Matrices and the Group SL(2, C)
 > For Lorentz parameters $\omega_{\mu\nu}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^def-c1-6-1|Def. §C1.6.1]]), with angles $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ and rapidities $\eta_i = \omega_{0i}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^def-c1-6-2|Def. §C1.6.2]]), the **left- and right-handed Weyl matrices** $\Lambda_L$, $\Lambda_R$ are the matrices of the representations $(\frac12, 0)$ and $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-6|Theorem §C3.2.6]]; the representation $(j_+, j_-)$: [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^def-c3-2-2|Def. §C3.2.2]]), with $\mathbf J = \frac12\boldsymbol\sigma$ and $\mathbf K = -\frac i2\boldsymbol\sigma$ for $\Lambda_L$, $\mathbf K = +\frac i2\boldsymbol\sigma$ for $\Lambda_R$ (with $K_i = \mathcal J^{0i}$; the opposite sign of $\mathbf K$ exchanges the two, [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^cau-c3-2-2|Caution: Which one is (½, 0) depends on the sign of K]]):
 >
 > $$
@@ -75,12 +75,12 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 >
 > *Source: PHY 513 Lecture 8, Part C ("$\psi_L \to e^{-i\vec\theta\cdot\vec\sigma/2 - \vec\eta\cdot\vec\sigma/2}\psi_L$, $\psi_R \to e^{-i\vec\theta\cdot\vec\sigma/2 + \vec\eta\cdot\vec\sigma/2}\psi_R$") · PS §3.2, eqs. (3.36)–(3.37) · the user's PHY 513 notes, Ch. 8 §8.2 ($U_L$, $U_R$, eq. (weyllaws)) · Yu Exercise 3.7(c)*
 
-^def-c5-1-2
+^def-c5a-1-2
 
-The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used here because they are not unitary, and $U$ is kept for the unitary operators on states ([[§C3.4 Quantum Poincaré Transformations#^pr-c3-4-1|Principle §C3.4.1]]). The handwritten Lecture 7 notes call the two halves $\xi$ and $\eta$; the Lecture 8 slides and Peskin–Schroeder use $\psi_L$, $\psi_R$. That these laws come out of the Dirac matrices is [[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-9|Theorem §C5.2.9]]; here they are taken from the representation theory of §C3.2 directly. $SL(2, \mathbb C)$ is a group because $\det(\lambda_1\lambda_2) = \det\lambda_1\det\lambda_2$ and $\det\lambda^{-1} = (\det\lambda)^{-1}$; it has $8 - 2 = 6$ real parameters, as many as $SO^+(1,3)$.
+The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used here because they are not unitary, and $U$ is kept for the unitary operators on states ([[§C3.4 Quantum Poincaré Transformations#^pr-c3-4-1|Principle §C3.4.1]]). The handwritten Lecture 7 notes call the two halves $\xi$ and $\eta$; the Lecture 8 slides and Peskin–Schroeder use $\psi_L$, $\psi_R$. That these laws come out of the Dirac matrices is [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]; here they are taken from the representation theory of §C3.2 directly. $SL(2, \mathbb C)$ is a group because $\det(\lambda_1\lambda_2) = \det\lambda_1\det\lambda_2$ and $\det\lambda^{-1} = (\det\lambda)^{-1}$; it has $8 - 2 = 6$ real parameters, as many as $SO^+(1,3)$.
 
-> [!theorem] Theorem §C5.1.2: The Weyl Matrices Lie in SL(2, C)
-> For the Weyl matrices of [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]] and every $\omega$:
+> [!theorem] Theorem §C5a.1.2: The Weyl Matrices Lie in SL(2, C)
+> For the Weyl matrices of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] and every $\omega$:
 > 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$;
 > 2. $\Lambda_R(\omega) = \bigl(\Lambda_L(\omega)^\dagger\bigr)^{-1}$;
 > 3. $\Lambda_L(\omega)^* = \sigma^2\,\Lambda_R(\omega)\,\sigma^2$;
@@ -88,7 +88,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Both have unit determinant", "$U_R = (U_L^\dagger)^{-1}$"; Derivation "The two halves are irreducible, inequivalent, and related by conjugation") · the user's pre-course notes, §5.2 (Remark "SL(2,C) made explicit") · PS eq. (3.38)*
 
-^thm-c5-1-2
+^thm-c5a-1-2
 
 > [!derivation]- Derivation
 > Write $\Lambda_L = e^{A_L}$, $\Lambda_R = e^{A_R}$ with $A_L = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ and $A_R = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ ($\boldsymbol\theta$, $\boldsymbol\eta$ real).
@@ -97,23 +97,23 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **2. Adjoint and inverse.** Term by term in the exponential series, $(e^A)^\dagger = e^{A^\dagger}$; and $(e^A)^{-1} = e^{-A}$. The $\sigma^i$ are Hermitian and $\boldsymbol\theta$, $\boldsymbol\eta$ real, so $A_L^\dagger = +\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$: the adjoint flips the sign of the rotation term only. Then $(\Lambda_L^\dagger)^{-1} = e^{-A_L^\dagger} = e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma} = e^{A_R} = \Lambda_R$.
 >
-> **3. Complex conjugate.** $(e^A)^{\ast} = e^{A^{\ast}}$ term by term, and $A_L^{\ast} = +\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma^{\ast} - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma^{\ast}$. By Theorem §C5.1.1, step 4, $\sigma^2(\sigma^i)^{\ast}\sigma^2 = -\sigma^i$, so $\sigma^2A_L^{\ast}\sigma^2 = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma = A_R$. Since $(\sigma^2)^2 = \mathbb 1$, $(\sigma^2Y\sigma^2)^n = \sigma^2Y^n\sigma^2$ for every $n$, hence $\sigma^2e^{Y}\sigma^2 = e^{\sigma^2Y\sigma^2}$. With $Y = A_L^{\ast}$: $\sigma^2\Lambda_L^{\ast}\sigma^2 = e^{A_R} = \Lambda_R$, i.e. $\Lambda_L^{\ast} = \sigma^2\Lambda_R\sigma^2$. ⚑ By-product: $\sigma^2\psi_L^{\ast}$ transforms like $\psi_R$, since $\sigma^2\psi_L^{\ast} \to \sigma^2\Lambda_L^{\ast}\psi_L^{\ast} = \Lambda_R\,\sigma^2\psi_L^{\ast}$; this is the spin-½ case of [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]], in index form Theorem §C5.1.11.
+> **3. Complex conjugate.** $(e^A)^{\ast} = e^{A^{\ast}}$ term by term, and $A_L^{\ast} = +\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma^{\ast} - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma^{\ast}$. By Theorem §C5a.1.1, step 4, $\sigma^2(\sigma^i)^{\ast}\sigma^2 = -\sigma^i$, so $\sigma^2A_L^{\ast}\sigma^2 = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma = A_R$. Since $(\sigma^2)^2 = \mathbb 1$, $(\sigma^2Y\sigma^2)^n = \sigma^2Y^n\sigma^2$ for every $n$, hence $\sigma^2e^{Y}\sigma^2 = e^{\sigma^2Y\sigma^2}$. With $Y = A_L^{\ast}$: $\sigma^2\Lambda_L^{\ast}\sigma^2 = e^{A_R} = \Lambda_R$, i.e. $\Lambda_L^{\ast} = \sigma^2\Lambda_R\sigma^2$. ⚑ By-product: $\sigma^2\psi_L^{\ast}$ transforms like $\psi_R$, since $\sigma^2\psi_L^{\ast} \to \sigma^2\Lambda_L^{\ast}\psi_L^{\ast} = \Lambda_R\,\sigma^2\psi_L^{\ast}$; this is the spin-½ case of [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]], in index form Theorem §C5a.1.11.
 >
 > **4. Rotations and boosts.** For $\boldsymbol\eta = 0$, $A_L = A_R = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma$ is anti-Hermitian and traceless, so $e^{A_L}$ is unitary of determinant $1$: an element of $SU(2)$, the spin-½ rotation matrix ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]). For $\boldsymbol\theta = 0$, $A_L = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ is Hermitian with eigenvalues $\mp\frac12|\boldsymbol\eta|$, so $e^{A_L}$ is Hermitian with eigenvalues $e^{\mp|\boldsymbol\eta|/2} > 0$, unitary only for $\boldsymbol\eta = 0$ (as in [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|Theorem §C3.2.12]]).
 >
 > **What the derivation shows**
 > - Both Weyl representations take values in the same group $SL(2, \mathbb C)$. They differ by the automorphism $\lambda \mapsto (\lambda^\dagger)^{-1}$ of that group, which is the identity on $SU(2)$ (rotations) and inverts the Hermitian part (boosts).
-> - Unit determinant is what will make $\varepsilon$ an invariant (Theorem §C5.1.10); unitarity fails exactly for boosts.
-> - Used next: the covering map (Theorems §C5.1.5–§C5.1.8) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-9|Theorem §C5.2.9]]).
+> - Unit determinant is what will make $\varepsilon$ an invariant (Theorem §C5a.1.10); unitarity fails exactly for boosts.
+> - Used next: the covering map (Theorems §C5a.1.5–§C5a.1.8) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]).
 
-^der-c5-1-2
+^der-c5a-1-2
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-1|Theorem §C5.1.1]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^der-c1-6-4|Derivation §C1.6.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^der-c1-6-4|Derivation §C1.6.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]
 
 ## Four-vectors as Hermitian matrices
 
-> [!theorem] Theorem §C5.1.3: Four-Vectors as Hermitian Matrices
-> 1. $x \mapsto X = x_\mu\sigma^\mu$ ([[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-1|Def. §C5.1.1]]) is a real-linear bijection from $\mathbb R^4$ onto the Hermitian $2\times2$ matrices, with inverse $x^\nu = \frac12\operatorname{tr}(X\bar\sigma^\nu)$, and
+> [!theorem] Theorem §C5a.1.3: Four-Vectors as Hermitian Matrices
+> 1. $x \mapsto X = x_\mu\sigma^\mu$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]]) is a real-linear bijection from $\mathbb R^4$ onto the Hermitian $2\times2$ matrices, with inverse $x^\nu = \frac12\operatorname{tr}(X\bar\sigma^\nu)$, and
 >
 > $$
 > X = \begin{pmatrix} x^0 - x^3 & -x^1 + ix^2 \\ -x^1 - ix^2 & x^0 + x^3 \end{pmatrix}, \qquad \det X = x_\mu x^\mu .
@@ -124,35 +124,35 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: Yu Exercise 3.7, eqs. (3.259)–(3.260) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", part (a)) · part 3 written out here*
 
-^thm-c5-1-3
+^thm-c5a-1-3
 
 > [!derivation]- Derivation
 > **1. The matrix.** $X = x_0\mathbb 1 + x_i\sigma^i$ with $x_0 = x^0$, $x_i = -x^i$, i.e. $X = x^0\mathbb 1 - x^1\sigma^1 - x^2\sigma^2 - x^3\sigma^3$. Inserting $\sigma^1 = \begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\sigma^2 = \begin{pmatrix}0&-i\\i&0\end{pmatrix}$, $\sigma^3 = \begin{pmatrix}1&0\\0&-1\end{pmatrix}$: the diagonal is $x^0 \mp x^3$; the upper-right entry is $-x^1 - x^2(-i) = -x^1 + ix^2$; the lower-left is $-x^1 - x^2(i) = -x^1 - ix^2$. The two off-diagonal entries are complex conjugates and the diagonal is real: $X$ is Hermitian.
 >
-> **2. Onto, and the inverse.** Every Hermitian $2\times2$ matrix is $a_0\mathbb 1 + \mathbf a\cdot\boldsymbol\sigma$ with real $a_0, \mathbf a$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], part 4); it is $X$ for $x^0 = a_0$, $\mathbf x = -\mathbf a$. For the inverse, multiply $X = x_\mu\sigma^\mu$ by $\bar\sigma^\nu$ and take the trace: $\operatorname{tr}(X\bar\sigma^\nu) = x_\mu\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2x_\mu g^{\mu\nu} = 2x^\nu$ (Theorem §C5.1.1, 1). So $x$ is recovered from $X$, and the map is injective.
+> **2. Onto, and the inverse.** Every Hermitian $2\times2$ matrix is $a_0\mathbb 1 + \mathbf a\cdot\boldsymbol\sigma$ with real $a_0, \mathbf a$ ([[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], part 4); it is $X$ for $x^0 = a_0$, $\mathbf x = -\mathbf a$. For the inverse, multiply $X = x_\mu\sigma^\mu$ by $\bar\sigma^\nu$ and take the trace: $\operatorname{tr}(X\bar\sigma^\nu) = x_\mu\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2x_\mu g^{\mu\nu} = 2x^\nu$ (Theorem §C5a.1.1, 1). So $x$ is recovered from $X$, and the map is injective.
 >
 > **3. Determinant.** From step 1, $\det X = (x^0 - x^3)(x^0 + x^3) - (-x^1 + ix^2)(-x^1 - ix^2) = (x^0)^2 - (x^3)^2 - \bigl((x^1)^2 + (x^2)^2\bigr) = x_\mu x^\mu$, using $(-x^1 + ix^2)(-x^1 - ix^2) = (x^1)^2 - (ix^2)^2 = (x^1)^2 + (x^2)^2$.
 >
-> **4. Part 2.** $\bar X = x^0\mathbb 1 + \mathbf x\cdot\boldsymbol\sigma$ is $X$ with $\mathbf x \to -\mathbf x$, so it is Hermitian, the map is onto by the same argument, and $\det\bar X = (x^0)^2 - \mathbf x^2$. The inverse uses $\operatorname{tr}(\bar\sigma^\mu\sigma^\nu) = 2g^{\mu\nu}$, which follows from Theorem §C5.1.1, 1 by cyclicity of the trace.
+> **4. Part 2.** $\bar X = x^0\mathbb 1 + \mathbf x\cdot\boldsymbol\sigma$ is $X$ with $\mathbf x \to -\mathbf x$, so it is Hermitian, the map is onto by the same argument, and $\det\bar X = (x^0)^2 - \mathbf x^2$. The inverse uses $\operatorname{tr}(\bar\sigma^\mu\sigma^\nu) = 2g^{\mu\nu}$, which follows from Theorem §C5a.1.1, 1 by cyclicity of the trace.
 >
 > **5. Part 3.** $\operatorname{tr}X = 2x^0$ (the $\sigma^i$ are traceless). The eigenvalues $\lambda_\pm$ of the Hermitian $X$ are real with $\lambda_+ + \lambda_- = 2x^0$ and $\lambda_+\lambda_- = \det X = x^2$. Both are $\ge 0$ and not both $0$ iff the product is $\ge 0$ and the sum is $> 0$, i.e. iff $x^2 \ge 0$ and $x^0 > 0$.
 >
 > **What the derivation shows**
-> - The Minkowski interval is a determinant, and the forward light cone is the cone of positive semidefinite matrices. Any operation on $X$ that preserves Hermiticity and the determinant therefore preserves the interval: that is how $SL(2, \mathbb C)$ will act (Theorem §C5.1.5).
+> - The Minkowski interval is a determinant, and the forward light cone is the cone of positive semidefinite matrices. Any operation on $X$ that preserves Hermiticity and the determinant therefore preserves the interval: that is how $SL(2, \mathbb C)$ will act (Theorem §C5a.1.5).
 > - The spatial part alone, $\mathbf x\cdot\boldsymbol\sigma$ (traceless Hermitian), is the dictionary of the rotation case, with $\det(\mathbf x\cdot\boldsymbol\sigma) = -|\mathbf x|^2$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]).
 
-^der-c5-1-3
+^der-c5a-1-3
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-1|Def. §C5.1.1]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-1|Theorem §C5.1.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
 ## The covering map
 
-> [!theorem] Theorem §C5.1.4: SL(2, C) Is Connected and Simply Connected
-> Every $\lambda \in SL(2, \mathbb C)$ ([[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]]) is uniquely $\lambda = e^{h}U$ with $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]) and $h$ traceless Hermitian, $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ for a unique $\boldsymbol\eta \in \mathbb R^3$, and $\lambda \mapsto (\boldsymbol\eta, U)$ is a homeomorphism $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$. Hence $SL(2, \mathbb C)$ is path-connected and simply connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]).
+> [!theorem] Theorem §C5a.1.4: SL(2, C) Is Connected and Simply Connected
+> Every $\lambda \in SL(2, \mathbb C)$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]) is uniquely $\lambda = e^{h}U$ with $U \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]) and $h$ traceless Hermitian, $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ for a unique $\boldsymbol\eta \in \mathbb R^3$, and $\lambda \mapsto (\boldsymbol\eta, U)$ is a homeomorphism $SL(2, \mathbb C) \cong \mathbb R^3\times S^3$. Hence $SL(2, \mathbb C)$ is path-connected and simply connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]).
 >
 > *Source: Yu Exercise 3.7(d), eq. (3.265) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", part (d)) · the continuity of the decomposition quoted from the functional calculus*
 
-^thm-c5-1-4
+^thm-c5a-1-4
 
 > [!derivation]- Derivation
 > **1. The positive part.** $\lambda\lambda^\dagger$ is Hermitian and positive definite: $v^\dagger\lambda\lambda^\dagger v = |\lambda^\dagger v|^2 > 0$ for $v \ne 0$, since $\lambda$ is invertible. By the spectral theorem it is $W\operatorname{diag}(p_1, p_2)W^\dagger$ with $W$ unitary and $p_k > 0$. Set $h = \frac12W\operatorname{diag}(\ln p_1, \ln p_2)W^\dagger$, Hermitian, so that $e^{2h} = \lambda\lambda^\dagger$ ($e^{WDW^\dagger} = We^DW^\dagger$ term by term). It is the unique Hermitian $h$ with $e^{2h} = \lambda\lambda^\dagger$: $e^{2h}$ and $h$ have the same eigenvectors, and $\ln$ is injective on $(0, \infty)$; equivalently $e^h$ is the unique positive square root of $\lambda\lambda^\dagger$ ([[§24 Positive Operators#^ladr-7-39|LADR 7.39]]).
@@ -171,14 +171,14 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > - $SL(2, \mathbb C)$ is "rotations times boosts": $U$ will map to a rotation and $e^h$ to a pure boost, the $2\times2$ counterpart of $\Lambda = B(u)R$ ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]]).
 > - The noncompact factor $\mathbb R^3$ is topologically trivial; all the topology sits in the compact factor, and for $SL(2, \mathbb C)$ that factor is the simply connected $S^3$.
 > - One input was quoted: the continuity of the matrix logarithm on positive matrices.
-> - Used next: connectedness puts the image of the covering map in $SO^+(1,3)$ (Theorem §C5.1.5); simple connectivity makes it the universal cover (Theorem §C5.1.8).
+> - Used next: connectedness puts the image of the covering map in $SO^+(1,3)$ (Theorem §C5a.1.5); simple connectivity makes it the universal cover (Theorem §C5a.1.8).
 
-^der-c5-1-4
+^der-c5a-1-4
 
 *Uses:* [[§24 Positive Operators#^ladr-7-39|LADR 7.39]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-93|LADR 7.93]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]], [[§27 The Fundamental Group of Sⁿ#^thm-27-3|590 Thm. §27.3]], [[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]]; quoted: continuity of the logarithm of positive matrices
 
-> [!theorem] Theorem §C5.1.5: Every Element of SL(2, C) Gives a Lorentz Transformation
-> For $\lambda \in SL(2, \mathbb C)$ define $\Lambda(\lambda)$ through the dictionary $x \leftrightarrow x_\mu\sigma^\mu$ of [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-3|Theorem §C5.1.3]] by
+> [!theorem] Theorem §C5a.1.5: Every Element of SL(2, C) Gives a Lorentz Transformation
+> For $\lambda \in SL(2, \mathbb C)$ define $\Lambda(\lambda)$ through the dictionary $x \leftrightarrow x_\mu\sigma^\mu$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-3|Theorem §C5a.1.3]] by
 >
 > $$
 > \lambda\,(x_\mu\sigma^\mu)\,\lambda^\dagger = \bigl(\Lambda(\lambda)x\bigr)_\mu\sigma^\mu, \qquad\text{i.e.}\qquad \Lambda(\lambda)^\mu{}_\nu = \tfrac12\operatorname{tr}\bigl(\lambda\sigma_\nu\lambda^\dagger\bar\sigma^\mu\bigr) .
@@ -188,32 +188,32 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: Yu Exercise 3.7(b)–(c), eqs. (3.261)–(3.264), (d) · the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", parts (b), (d))*
 
-^thm-c5-1-5
+^thm-c5a-1-5
 
 > [!derivation]- Derivation
-> **1. A real linear map.** For Hermitian $X$, $(\lambda X\lambda^\dagger)^\dagger = \lambda X^\dagger\lambda^\dagger = \lambda X\lambda^\dagger$ is Hermitian, so by Theorem §C5.1.3 it is $X'$ for a unique real $x'$. $X$ is linear in $x$ and $X \mapsto \lambda X\lambda^\dagger$ is linear, so $x' = \Lambda(\lambda)x$ with $\Lambda(\lambda)$ a real $4\times4$ matrix. Its entries: $X = x_\nu\sigma^\nu = x^\nu\sigma_\nu$, and by the inverse formula $x'^\mu = \frac12\operatorname{tr}(\lambda x^\nu\sigma_\nu\lambda^\dagger\bar\sigma^\mu)$, which gives the trace formula; it is a polynomial in the entries of $\lambda$ and $\lambda^{\ast}$, hence continuous.
+> **1. A real linear map.** For Hermitian $X$, $(\lambda X\lambda^\dagger)^\dagger = \lambda X^\dagger\lambda^\dagger = \lambda X\lambda^\dagger$ is Hermitian, so by Theorem §C5a.1.3 it is $X'$ for a unique real $x'$. $X$ is linear in $x$ and $X \mapsto \lambda X\lambda^\dagger$ is linear, so $x' = \Lambda(\lambda)x$ with $\Lambda(\lambda)$ a real $4\times4$ matrix. Its entries: $X = x_\nu\sigma^\nu = x^\nu\sigma_\nu$, and by the inverse formula $x'^\mu = \frac12\operatorname{tr}(\lambda x^\nu\sigma_\nu\lambda^\dagger\bar\sigma^\mu)$, which gives the trace formula; it is a polynomial in the entries of $\lambda$ and $\lambda^{\ast}$, hence continuous.
 >
-> **2. The interval is preserved.** $\det X' = \det\lambda\,\det X\,\det\lambda^\dagger = |\det\lambda|^2\det X = \det X$, i.e. $x'^2 = x^2$ (Theorem §C5.1.3). A linear map preserving the quadratic form preserves the bilinear form, by polarization: $x\cdot y = \frac12\bigl((x + y)^2 - x^2 - y^2\bigr)$. So $\Lambda(\lambda)^{\mathsf T}g\Lambda(\lambda) = g$: $\Lambda(\lambda) \in O(1,3)$ ([[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]).
+> **2. The interval is preserved.** $\det X' = \det\lambda\,\det X\,\det\lambda^\dagger = |\det\lambda|^2\det X = \det X$, i.e. $x'^2 = x^2$ (Theorem §C5a.1.3). A linear map preserving the quadratic form preserves the bilinear form, by polarization: $x\cdot y = \frac12\bigl((x + y)^2 - x^2 - y^2\bigr)$. So $\Lambda(\lambda)^{\mathsf T}g\Lambda(\lambda) = g$: $\Lambda(\lambda) \in O(1,3)$ ([[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]]).
 >
 > **3. Homomorphism.** $(\lambda_1\lambda_2)X(\lambda_1\lambda_2)^\dagger = \lambda_1(\lambda_2X\lambda_2^\dagger)\lambda_1^\dagger$: first $x \mapsto \Lambda(\lambda_2)x$, then $\Lambda(\lambda_1)$. By injectivity of $x \mapsto X$, $\Lambda(\lambda_1\lambda_2) = \Lambda(\lambda_1)\Lambda(\lambda_2)$. For $\lambda = \mathbb 1$, $X' = X$, so $\Lambda(\mathbb 1) = \mathbb 1$.
 >
-> **4. Proper and orthochronous.** $SL(2, \mathbb C)$ is path-connected (Theorem §C5.1.4) and $\pi$ is continuous (step 1), so the image $\pi(SL(2, \mathbb C))$ is a path-connected subset of $O(1,3)$ containing $\pi(\mathbb 1) = \mathbb 1$. It therefore lies in the component of the identity, which is $SO^+(1,3)$ ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], 2).
+> **4. Proper and orthochronous.** $SL(2, \mathbb C)$ is path-connected (Theorem §C5a.1.4) and $\pi$ is continuous (step 1), so the image $\pi(SL(2, \mathbb C))$ is a path-connected subset of $O(1,3)$ containing $\pi(\mathbb 1) = \mathbb 1$. It therefore lies in the component of the identity, which is $SO^+(1,3)$ ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], 2).
 >
 > **What the derivation shows**
-> - Only $|\det\lambda| = 1$ was used for step 2; Yu then fixes the phase by $\det\lambda = 1$, since $\lambda$ and $e^{i\alpha}\lambda$ give the same $\Lambda$. The group $SL(2, \mathbb C)$ is what remains after that redundancy is removed, up to the sign left over in Theorem §C5.1.6.
+> - Only $|\det\lambda| = 1$ was used for step 2; Yu then fixes the phase by $\det\lambda = 1$, since $\lambda$ and $e^{i\alpha}\lambda$ give the same $\Lambda$. The group $SL(2, \mathbb C)$ is what remains after that redundancy is removed, up to the sign left over in Theorem §C5a.1.6.
 > - Determinant $+1$ and $\Lambda^0{}_0 > 0$ were not checked by hand: connectedness does it. Directly, $\Lambda^0{}_0 = \frac12\operatorname{tr}(\lambda\lambda^\dagger) > 0$.
-> - Used next: the kernel (Theorem §C5.1.6), the link to the parameters $\omega$ (Theorem §C5.1.7).
+> - Used next: the kernel (Theorem §C5a.1.6), the link to the parameters $\omega$ (Theorem §C5a.1.7).
 
-^der-c5-1-5
+^der-c5a-1-5
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-3|Theorem §C5.1.3]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|Theorem §C5.1.4]], [[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]], [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|Theorem §C5a.1.4]], [[§C1.4 The Lorentz Group#^def-c1-4-1|Def. §C1.4.1]], [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]]
 
-> [!theorem] Theorem §C5.1.6: The Kernel Is ±1
-> For the homomorphism $\pi$ of [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-5|Theorem §C5.1.5]], $\pi(\lambda) = \mathbb 1$ iff $\lambda = \pm\mathbb 1$. Hence $\pi(\lambda) = \pi(\lambda')$ iff $\lambda' = \pm\lambda$.
+> [!theorem] Theorem §C5a.1.6: The Kernel Is ±1
+> For the homomorphism $\pi$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-5|Theorem §C5a.1.5]], $\pi(\lambda) = \mathbb 1$ iff $\lambda = \pm\mathbb 1$. Hence $\pi(\lambda) = \pi(\lambda')$ iff $\lambda' = \pm\lambda$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit", part (c)) · Yu Exercise 3.7(d) (paragraph after (3.265))*
 
-^thm-c5-1-6
+^thm-c5a-1-6
 
 > [!derivation]- Derivation
 > **1. ±1 are in the kernel.** $(\pm\mathbb 1)X(\pm\mathbb 1)^\dagger = X$, and $\det(\pm\mathbb 1) = 1$.
@@ -224,19 +224,19 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **4. The scalar.** $\det(c\mathbb 1) = c^2 = 1$ gives $c = \pm1$.
 >
-> **5. Fibres.** $\pi(\lambda) = \pi(\lambda')$ iff $\pi(\lambda'\lambda^{-1}) = \mathbb 1$ (homomorphism, Theorem §C5.1.5) iff $\lambda'\lambda^{-1} = \pm\mathbb 1$.
+> **5. Fibres.** $\pi(\lambda) = \pi(\lambda')$ iff $\pi(\lambda'\lambda^{-1}) = \mathbb 1$ (homomorphism, Theorem §C5a.1.5) iff $\lambda'\lambda^{-1} = \pm\mathbb 1$.
 >
 > **What the derivation shows**
 > - The sign ambiguity is the only one: two spinor matrices $\pm\lambda$ for each Lorentz transformation. This is the matrix origin of "a spinor's matrix is fixed only up to sign" ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]).
 > - The argument is that of the rotation case ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], 3), with $X = \mathbb 1$ added to force unitarity first.
 
-^der-c5-1-6
+^der-c5a-1-6
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-5|Theorem §C5.1.5]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
-> [!theorem] Theorem §C5.1.7: The Weyl Matrices Cover the Vector Representation
-> For the Weyl matrices $\Lambda_L(\omega)$, $\Lambda_R(\omega)$ of [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]] and every $\omega$, with $\Lambda = e^{\omega}$ the vector-representation matrix of the same parameters ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^def-c1-6-1|Def. §C1.6.1]]):
-> 1. $\Lambda_L(\omega)\,(x_\mu\sigma^\mu)\,\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\sigma^\mu$, i.e. $\pi(\Lambda_L(\omega)) = e^{\omega}$ ($\pi$ of [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-5|Theorem §C5.1.5]]); and $\Lambda_R(\omega)\,(x_\mu\bar\sigma^\mu)\,\Lambda_R(\omega)^\dagger = (\Lambda x)_\mu\bar\sigma^\mu$.
+> [!theorem] Theorem §C5a.1.7: The Weyl Matrices Cover the Vector Representation
+> For the Weyl matrices $\Lambda_L(\omega)$, $\Lambda_R(\omega)$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] and every $\omega$, with $\Lambda = e^{\omega}$ the vector-representation matrix of the same parameters ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^def-c1-6-1|Def. §C1.6.1]]):
+> 1. $\Lambda_L(\omega)\,(x_\mu\sigma^\mu)\,\Lambda_L(\omega)^\dagger = (\Lambda x)_\mu\sigma^\mu$, i.e. $\pi(\Lambda_L(\omega)) = e^{\omega}$ ($\pi$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-5|Theorem §C5a.1.5]]); and $\Lambda_R(\omega)\,(x_\mu\bar\sigma^\mu)\,\Lambda_R(\omega)^\dagger = (\Lambda x)_\mu\bar\sigma^\mu$.
 > 2. Equivalently, $\bar\sigma^\mu$ and $\sigma^\mu$ are invariant under the Weyl matrices:
 >
 > $$
@@ -245,7 +245,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering", eq. (SL2Ccover); checked numerically there, and again here) · Yu Exercise 3.7(e), eqs. (3.267)–(3.268) (rotation about z) · part 2 and the series argument written out here*
 
-^thm-c5-1-7
+^thm-c5a-1-7
 
 > [!derivation]- Derivation
 > Write $\Phi(x) = x_\mu\sigma^\mu$, $\bar\Phi(x) = x_\mu\bar\sigma^\mu$, and $\Lambda_L(s\omega) = e^{sA_L}$, $A_L = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ (the exponent is linear in $\omega$).
@@ -272,55 +272,55 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > using $-\frac i2\cdot(-2i) = -1$. Comparing with step 1: $L\circ\Phi = \Phi\circ\omega$ as maps $\mathbb R^4 \to M_2(\mathbb C)$.
 >
-> **3. Exponentiate.** Left multiplication $\ell(M) = A_LM$ and right multiplication $r(M) = MA_L^\dagger$ commute as linear maps of $M_2(\mathbb C)$ ($A_L(MA_L^\dagger) = (A_LM)A_L^\dagger$), so $e^{s(\ell + r)} = e^{s\ell}e^{sr}$ (the binomial argument of [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-3|Derivation §C3.2.3]], step 3), i.e. $e^{sL}(M) = e^{sA_L}Me^{sA_L^\dagger} = \Lambda_L(s\omega)M\Lambda_L(s\omega)^\dagger$ (with $(e^{sA_L})^\dagger = e^{sA_L^\dagger}$). Iterating step 2, $L^n\circ\Phi = \Phi\circ\omega^n$ for every $n$, so summing the series (both converge absolutely; $\Phi$ is linear) $e^{sL}\circ\Phi = \Phi\circ e^{s\omega}$. At $s = 1$: $\Lambda_L(\omega)\Phi(x)\Lambda_L(\omega)^\dagger = \Phi(e^\omega x)$, part 1 for $\Lambda_L$. By the definition of $\pi$ (Theorem §C5.1.5), $\pi(\Lambda_L(\omega)) = e^{\omega}$.
+> **3. Exponentiate.** Left multiplication $\ell(M) = A_LM$ and right multiplication $r(M) = MA_L^\dagger$ commute as linear maps of $M_2(\mathbb C)$ ($A_L(MA_L^\dagger) = (A_LM)A_L^\dagger$), so $e^{s(\ell + r)} = e^{s\ell}e^{sr}$ (the binomial argument of [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-3|Derivation §C3.2.3]], step 3), i.e. $e^{sL}(M) = e^{sA_L}Me^{sA_L^\dagger} = \Lambda_L(s\omega)M\Lambda_L(s\omega)^\dagger$ (with $(e^{sA_L})^\dagger = e^{sA_L^\dagger}$). Iterating step 2, $L^n\circ\Phi = \Phi\circ\omega^n$ for every $n$, so summing the series (both converge absolutely; $\Phi$ is linear) $e^{sL}\circ\Phi = \Phi\circ e^{s\omega}$. At $s = 1$: $\Lambda_L(\omega)\Phi(x)\Lambda_L(\omega)^\dagger = \Phi(e^\omega x)$, part 1 for $\Lambda_L$. By the definition of $\pi$ (Theorem §C5a.1.5), $\pi(\Lambda_L(\omega)) = e^{\omega}$.
 >
 > **4. The right-handed matrices.** $A_R = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ and $\bar\Phi(x) = x^0\mathbb 1 + \mathbf x\cdot\boldsymbol\sigma$. Then $A_R\bar\Phi + \bar\Phi A_R^\dagger = -\frac i2[\boldsymbol\theta\cdot\boldsymbol\sigma, \bar\Phi] + \frac12\{\boldsymbol\eta\cdot\boldsymbol\sigma, \bar\Phi\} = -\frac i2\cdot2i(\boldsymbol\theta\times\mathbf x)\cdot\boldsymbol\sigma + \frac12\bigl(2x^0\boldsymbol\eta\cdot\boldsymbol\sigma + 2(\boldsymbol\eta\cdot\mathbf x)\mathbb 1\bigr) = (\boldsymbol\eta\cdot\mathbf x)\mathbb 1 + (x^0\boldsymbol\eta + \boldsymbol\theta\times\mathbf x)\cdot\boldsymbol\sigma = \bar\Phi(\omega x)$, the signs of both the rotation and the boost term having flipped relative to step 2 together with the sign of $\mathbf x$ in $\bar\Phi$. Step 3 applies verbatim.
 >
-> **5. Part 2.** Multiply part 1 by $\bar\sigma^\nu$ and take the trace. The right side gives $\operatorname{tr}(\Phi(\Lambda x)\bar\sigma^\nu) = 2(\Lambda x)^\nu = \Lambda^\nu{}_\mu\operatorname{tr}(\Phi(x)\bar\sigma^\mu)$ (Theorem §C5.1.3). The left side, by cyclicity, is $\operatorname{tr}(\Phi(x)\,\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L)$. So $\operatorname{tr}\bigl(X\,(\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L - \Lambda^\nu{}_\mu\bar\sigma^\mu)\bigr) = 0$ for every Hermitian $X$, hence (complex-linearly) for every $X \in M_2(\mathbb C)$, since every matrix is $H_1 + iH_2$ with $H_k$ Hermitian. Taking $X = E_{ji}$ picks out the $(i, j)$ entry of the bracket, so the bracket vanishes. The same with $\Lambda_R$, $\bar\Phi$ and $\operatorname{tr}(\bar X\sigma^\nu) = 2x^\nu$ gives $\Lambda_R^\dagger\sigma^\nu\Lambda_R = \Lambda^\nu{}_\mu\sigma^\mu$.
+> **5. Part 2.** Multiply part 1 by $\bar\sigma^\nu$ and take the trace. The right side gives $\operatorname{tr}(\Phi(\Lambda x)\bar\sigma^\nu) = 2(\Lambda x)^\nu = \Lambda^\nu{}_\mu\operatorname{tr}(\Phi(x)\bar\sigma^\mu)$ (Theorem §C5a.1.3). The left side, by cyclicity, is $\operatorname{tr}(\Phi(x)\,\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L)$. So $\operatorname{tr}\bigl(X\,(\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L - \Lambda^\nu{}_\mu\bar\sigma^\mu)\bigr) = 0$ for every Hermitian $X$, hence (complex-linearly) for every $X \in M_2(\mathbb C)$, since every matrix is $H_1 + iH_2$ with $H_k$ Hermitian. Taking $X = E_{ji}$ picks out the $(i, j)$ entry of the bracket, so the bracket vanishes. The same with $\Lambda_R$, $\bar\Phi$ and $\operatorname{tr}(\bar X\sigma^\nu) = 2x^\nu$ gives $\Lambda_R^\dagger\sigma^\nu\Lambda_R = \Lambda^\nu{}_\mu\sigma^\mu$.
 >
-> **6. Check: rotation about z.** $\boldsymbol\theta = \theta\hat{\mathbf z}$: $\Lambda_L = \operatorname{diag}(e^{-i\theta/2}, e^{i\theta/2})$, and in the matrix of Theorem §C5.1.3 the off-diagonal entry $-x^1 + ix^2$ is multiplied by $e^{-i\theta/2}\cdot\overline{e^{i\theta/2}} = e^{-i\theta}$, which is the active rotation $(x^1, x^2) \mapsto (x^1\cos\theta - x^2\sin\theta, x^1\sin\theta + x^2\cos\theta)$ ([[§C1.4 The Lorentz Group#^def-c1-4-2|Def. §C1.4.2]]). Yu's $\lambda(\theta) = \operatorname{diag}(e^{i\theta/2}, e^{-i\theta/2})$ in (3.267) is $\Lambda_L$ at $-\theta$, the passive rotation of (3.268).
+> **6. Check: rotation about z.** $\boldsymbol\theta = \theta\hat{\mathbf z}$: $\Lambda_L = \operatorname{diag}(e^{-i\theta/2}, e^{i\theta/2})$, and in the matrix of Theorem §C5a.1.3 the off-diagonal entry $-x^1 + ix^2$ is multiplied by $e^{-i\theta/2}\cdot\overline{e^{i\theta/2}} = e^{-i\theta}$, which is the active rotation $(x^1, x^2) \mapsto (x^1\cos\theta - x^2\sin\theta, x^1\sin\theta + x^2\cos\theta)$ ([[§C1.4 The Lorentz Group#^def-c1-4-2|Def. §C1.4.2]]). Yu's $\lambda(\theta) = \operatorname{diag}(e^{i\theta/2}, e^{-i\theta/2})$ in (3.267) is $\Lambda_L$ at $-\theta$, the passive rotation of (3.268).
 >
 > **What the derivation shows**
 > - The same six numbers $\omega_{\mu\nu}$ produce $\Lambda_L(\omega)$ and $e^\omega$, and the covering map sends one to the other. The half-angles of $\Lambda_L$ become full angles because $\lambda$ acts on $X$ twice, once from each side.
-> - Part 2 says that $\bar\sigma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $\gamma^\mu$ will be ([[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-12|Theorem §C5.2.12]]); it is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (QFT §C5.4, the Weyl Lagrangian).
+> - Part 2 says that $\bar\sigma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $\gamma^\mu$ will be ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-12|Theorem §C5a.2.12]]); it is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (QFT §C5a.4, the Weyl Lagrangian).
 > - $\Lambda_R(\omega) = (\Lambda_L(\omega)^\dagger)^{-1}$ is *not* $\Lambda_L$ of another $\omega$ with the same $\sigma$: it covers $e^\omega$ through $\bar\sigma$. Using $\sigma$ for $\Lambda_R$ would give the parity image of $e^\omega$.
-> - Used next: $\pi$ is onto (Theorem §C5.1.8), and every $(j_+, j_-)$ integrates (Theorem §C5.1.9).
+> - Used next: $\pi$ is onto (Theorem §C5a.1.8), and every $(j_+, j_-)$ integrates (Theorem §C5a.1.9).
 
-^der-c5-1-7
+^der-c5a-1-7
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-3|Theorem §C5.1.3]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-5|Theorem §C5.1.5]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-2|Theorem §C1.6.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-3|Derivation §C3.2.3]], [[§C1.4 The Lorentz Group#^def-c1-4-2|Def. §C1.4.2]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-5|Theorem §C5a.1.5]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-2|Theorem §C1.6.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-3|Derivation §C3.2.3]], [[§C1.4 The Lorentz Group#^def-c1-4-2|Def. §C1.4.2]]
 
-> [!theorem] Theorem §C5.1.8: SL(2, C) Is the Double Cover of SO⁺(1,3)
+> [!theorem] Theorem §C5a.1.8: SL(2, C) Is the Double Cover of SO⁺(1,3)
 > 1. $\pi: SL(2, \mathbb C) \to SO^+(1,3)$ is onto, and $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm\mathbb 1\}$.
 > 2. $SO^+(1,3)$ is homeomorphic to $\mathbb R^3\times SO(3)$, so its fundamental group ([[§23 The Fundamental Group#^def-23-2|590 Def. §23.2]]) is $\pi_1(SO^+(1,3)) \cong \mathbb Z_2$: it is doubly connected, as anticipated in [[§C3.1 Groups, Algebras and Representations of Rotations#^rem-c3-1-8|§C3.1, Remark: The same pattern for the Lorentz group]]. The non-contractible loops are those homotopic to a rotation through $2\pi$; the lift ([[§24 Covering Spaces#^def-24-6|590 Def. §24.6]]) of that loop to $SL(2, \mathbb C)$ starting at $\mathbb 1$, $\theta \mapsto \Lambda_L(\theta\hat{\mathbf z}) = e^{-i\theta\sigma^3/2}$, ends at $-\mathbb 1$.
-> 3. Under $\pi$, $U \in SU(2)$ goes to the rotation $\operatorname{diag}(1, R(U))$ of [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], and $e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ to the pure boost $e^{\omega}$ with $\omega_{0i} = \eta_i$, $\omega_{ij} = 0$. $\pi$ is a covering map ([[§24 Covering Spaces#^def-24-2|590 Def. §24.2]]), and since $SL(2, \mathbb C)$ is simply connected ([[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|Theorem §C5.1.4]]), it is the universal covering group of $SO^+(1,3)$.
+> 3. Under $\pi$, $U \in SU(2)$ goes to the rotation $\operatorname{diag}(1, R(U))$ of [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], and $e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ to the pure boost $e^{\omega}$ with $\omega_{0i} = \eta_i$, $\omega_{ij} = 0$. $\pi$ is a covering map ([[§24 Covering Spaces#^def-24-2|590 Def. §24.2]]), and since $SL(2, \mathbb C)$ is simply connected ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|Theorem §C5a.1.4]]), it is the universal covering group of $SO^+(1,3)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering": "every element of $\mathrm{SO}^+(1,3)$ is reached … $\mathrm{SO}^+(1,3) \cong \mathbb{RP}^3\times\mathbb R^3$") · Yu Exercise 3.7(d) · Yu §3.2 (the covering group of SO⁺(1,3) named, below Fig. 3.5) · the user's pre-course notes, §5.2 (Remark "SL(2,C) made explicit": kernel and surjectivity "stated, not proved here") · the user's PHY 513 notes, Ch. 7 §7.2 (end of Derivation "Why the sign appears": the topological argument) · that a surjective Lie-group homomorphism with bijective differential is a covering map, quoted*
 
-^thm-c5-1-8
+^thm-c5a-1-8
 
 > [!derivation]- Derivation
-> **1. Onto.** Every $\Lambda \in SO^+(1,3)$ is a boost times a rotation, $\Lambda = B(u)R$ ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]]), and each factor is an exponential $e^{\omega_1}$, $e^{\omega_2}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]]; a boost along $\hat{\mathbf n}$ is $e^{\omega}$ with $\omega_{0i} = \eta n_i$, as used in [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-12|Derivation §C3.2.12]], step 5). By Theorem §C5.1.7, $\pi(\Lambda_L(\omega_1)\Lambda_L(\omega_2)) = e^{\omega_1}e^{\omega_2} = \Lambda$.
+> **1. Onto.** Every $\Lambda \in SO^+(1,3)$ is a boost times a rotation, $\Lambda = B(u)R$ ([[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]]), and each factor is an exponential $e^{\omega_1}$, $e^{\omega_2}$ ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]]; a boost along $\hat{\mathbf n}$ is $e^{\omega}$ with $\omega_{0i} = \eta n_i$, as used in [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-12|Derivation §C3.2.12]], step 5). By Theorem §C5a.1.7, $\pi(\Lambda_L(\omega_1)\Lambda_L(\omega_2)) = e^{\omega_1}e^{\omega_2} = \Lambda$.
 >
-> **2. The quotient.** $\pi$ is an onto homomorphism with kernel $\{\pm\mathbb 1\}$ (Theorem §C5.1.6), so $SL(2, \mathbb C)/\{\pm\mathbb 1\} \cong SO^+(1,3)$ by the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]).
+> **2. The quotient.** $\pi$ is an onto homomorphism with kernel $\{\pm\mathbb 1\}$ (Theorem §C5a.1.6), so $SL(2, \mathbb C)/\{\pm\mathbb 1\} \cong SO^+(1,3)$ by the first isomorphism theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]]).
 >
 > **3. The topology of SO⁺(1,3).** By [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], $\Lambda = B(u)R$ with $u = \Lambda e_0$, the first column, $u = (\gamma, \mathbf u)$, $\gamma = \sqrt{1 + \mathbf u^2}$. The map $\Lambda \mapsto (\mathbf u, R)$, $R = B(u)^{-1}\Lambda$, is continuous (the entries of $B(u)$ are continuous in $\mathbf u$, $\gamma \ge 1$), and its inverse $(\mathbf u, R) \mapsto B(u)R$ is continuous: a homeomorphism $SO^+(1,3) \cong \mathbb R^3\times SO(3)$. Hence $\pi_1(SO^+(1,3)) \cong \pi_1(\mathbb R^3)\times\pi_1(SO(3)) = 1\times\mathbb Z_2$ ([[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]]; [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]]), and a loop is non-contractible iff its $SO(3)$ component is, i.e. iff it is homotopic to the $2\pi$ rotation loop.
 >
-> **4. The lift of the 2π loop.** $\theta \mapsto \Lambda_L(\theta\hat{\mathbf z}) = e^{-i\theta\sigma^3/2}$, $0 \le \theta \le 2\pi$, is continuous, starts at $\mathbb 1$, and lies over the rotation loop by Theorem §C5.1.7. At $\theta = 2\pi$ it is $\operatorname{diag}(e^{-i\pi}, e^{i\pi}) = -\mathbb 1$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]]): a closed loop downstairs whose lift is open. ⚑ By-product: this is the "$2\pi$ rotation $= -1$" of every half-integer representation, now seen as the endpoint of a lift → [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]].
+> **4. The lift of the 2π loop.** $\theta \mapsto \Lambda_L(\theta\hat{\mathbf z}) = e^{-i\theta\sigma^3/2}$, $0 \le \theta \le 2\pi$, is continuous, starts at $\mathbb 1$, and lies over the rotation loop by Theorem §C5a.1.7. At $\theta = 2\pi$ it is $\operatorname{diag}(e^{-i\pi}, e^{i\pi}) = -\mathbb 1$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]]): a closed loop downstairs whose lift is open. ⚑ By-product: this is the "$2\pi$ rotation $= -1$" of every half-integer representation, now seen as the endpoint of a lift → [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]].
 >
-> **5. The two decompositions match.** For $U \in SU(2)$, $UXU^\dagger = x^0\mathbb 1 - U(\mathbf x\cdot\boldsymbol\sigma)U^\dagger = x^0\mathbb 1 - (R(U)\mathbf x)\cdot\boldsymbol\sigma$ by the definition of $R(U)$ in QM Theorem §C5.2.6, so $\pi(U) = \operatorname{diag}(1, R(U))$. For $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$, $e^h = \Lambda_L(\omega)$ with $\boldsymbol\theta = 0$, so $\pi(e^h) = e^{\omega}$, a pure boost (Theorem §C5.1.7). The polar decomposition $\lambda = e^hU$ of Theorem §C5.1.4 is mapped to "boost times rotation".
+> **5. The two decompositions match.** For $U \in SU(2)$, $UXU^\dagger = x^0\mathbb 1 - U(\mathbf x\cdot\boldsymbol\sigma)U^\dagger = x^0\mathbb 1 - (R(U)\mathbf x)\cdot\boldsymbol\sigma$ by the definition of $R(U)$ in QM Theorem §C5.2.6, so $\pi(U) = \operatorname{diag}(1, R(U))$. For $h = -\frac12\boldsymbol\eta\cdot\boldsymbol\sigma$, $e^h = \Lambda_L(\omega)$ with $\boldsymbol\theta = 0$, so $\pi(e^h) = e^{\omega}$, a pure boost (Theorem §C5a.1.7). The polar decomposition $\lambda = e^hU$ of Theorem §C5a.1.4 is mapped to "boost times rotation".
 >
-> **6. Universal cover.** $\pi$ is a continuous surjective homomorphism of Lie groups whose differential at $\mathbb 1$ sends the generator $A_L(\omega)$ to $\omega$ (step 2 of Derivation §C5.1.7), a bijection between the two six-dimensional algebras; such a map is a covering map (quoted). A simply connected covering space is the universal cover, and its fibre $\{\pm\mathbb 1\}$ has as many points as $\pi_1(SO^+(1,3))$ has elements, consistently with step 3 ([[§24 Covering Spaces#^thm-24-9|590 Thm. §24.9]]).
+> **6. Universal cover.** $\pi$ is a continuous surjective homomorphism of Lie groups whose differential at $\mathbb 1$ sends the generator $A_L(\omega)$ to $\omega$ (step 2 of Derivation §C5a.1.7), a bijection between the two six-dimensional algebras; such a map is a covering map (quoted). A simply connected covering space is the universal cover, and its fibre $\{\pm\mathbb 1\}$ has as many points as $\pi_1(SO^+(1,3))$ has elements, consistently with step 3 ([[§24 Covering Spaces#^thm-24-9|590 Thm. §24.9]]).
 >
 > **What the derivation shows**
 > - All topology of the Lorentz group is that of its rotation subgroup: boosts form a contractible $\mathbb R^3$, and the cover unwraps only the $SO(3)$ factor into $S^3$. This makes the remark of §C3.1 precise.
 > - $SO^+(1,3) \cong \mathbb{RP}^3\times\mathbb R^3$, $SL(2, \mathbb C) \cong S^3\times\mathbb R^3$, the $\pm$ identification acting on the sphere only.
 > - One input was quoted: that $\pi$ is a covering map. Everything needed later (onto, kernel, the lift of the $2\pi$ loop) was derived.
-> - Used next: integrating $(j_+, j_-)$ (Theorem §C5.1.9).
+> - Used next: integrating $(j_+, j_-)$ (Theorem §C5a.1.9).
 
-^der-c5-1-8
+^der-c5a-1-8
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|Theorem §C5.1.4]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-6|Theorem §C5.1.6]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-7|Theorem §C5.1.7]], [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]], [[§24 Covering Spaces#^thm-24-9|590 Thm. §24.9]]; quoted: a surjective Lie-group homomorphism with bijective differential is a covering map
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|Theorem §C5a.1.4]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-7|Theorem §C5a.1.7]], [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], [[§C1.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1-6-3|Theorem §C1.6.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]], [[§24 Covering Spaces#^thm-24-9|590 Thm. §24.9]]; quoted: a surjective Lie-group homomorphism with bijective differential is a covering map
 
 > [!remark] Remark: The rotation story, one level up
 >
@@ -337,11 +337,11 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The double cover made explicit": "Rotations had $U^\dagger\sigma^iU = R^i{}_j\sigma^j$ … The Lorentz version turns a four-vector into a $2\times2$ matrix")*
 
-^rem-c5-1-1
+^rem-c5a-1-1
 
 ## Every finite-dimensional representation integrates
 
-> [!theorem] Theorem §C5.1.9: Integer (j₊, j₋) Are Representations of SO⁺(1,3)
+> [!theorem] Theorem §C5a.1.9: Integer (j₊, j₋) Are Representations of SO⁺(1,3)
 > 1. On $V_{j_+}\otimes V_{j_-}$, $V_j$ the homogeneous polynomials of degree $2j$ in $z \in \mathbb C^2$ (the spin-$j$ space of [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-7|Theorem §C3.1.7]]), the matrices
 >
 > $$
@@ -354,12 +354,12 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.2 (spin $j$ on polynomials), §7.4.4 (the sign rule) and Ch. 8 §8.1 ("the Dirac representation is a representation of the double cover") · the proof written out here*
 
-^thm-c5-1-9
+^thm-c5a-1-9
 
 > [!derivation]- Derivation
 > **1. A representation of SL(2, C).** For any invertible $M_1, M_2$: $(D^{(j)}(M_1)D^{(j)}(M_2)P)(z) = (D^{(j)}(M_2)P)(M_1^{\mathsf T}z) = P(M_2^{\mathsf T}M_1^{\mathsf T}z) = P((M_1M_2)^{\mathsf T}z)$, so $D^{(j)}(M_1M_2) = D^{(j)}(M_1)D^{(j)}(M_2)$; $D^{(j)}(M)P$ is again homogeneous of degree $2j$. The map $\lambda \mapsto (\lambda^\dagger)^{-1}$ is a homomorphism: $((\lambda_1\lambda_2)^\dagger)^{-1} = (\lambda_2^\dagger\lambda_1^\dagger)^{-1} = (\lambda_1^\dagger)^{-1}(\lambda_2^\dagger)^{-1}$. A tensor product of representations is one, $(A\otimes B)(A'\otimes B') = AA'\otimes BB'$. So $\tilde D(\lambda_1\lambda_2) = \tilde D(\lambda_1)\tilde D(\lambda_2)$.
 >
-> **2. On the Weyl matrices.** With $\boldsymbol\alpha = \boldsymbol\theta - i\boldsymbol\eta \in \mathbb C^3$: $\Lambda_L(\omega) = e^{-i\boldsymbol\alpha\cdot\boldsymbol\sigma/2}$ and $(\Lambda_L(\omega)^\dagger)^{-1} = \Lambda_R(\omega) = e^{-i\bar{\boldsymbol\alpha}\cdot\boldsymbol\sigma/2}$, $\bar{\boldsymbol\alpha} = \boldsymbol\theta + i\boldsymbol\eta$ (Theorem §C5.1.2, 2). So $\tilde D(\Lambda_L(\omega)) = f_{j_+}(\boldsymbol\alpha)\otimes f_{j_-}(\bar{\boldsymbol\alpha})$ with $f_j(\boldsymbol\alpha) \equiv D^{(j)}(e^{-i\boldsymbol\alpha\cdot\boldsymbol\sigma/2})$.
+> **2. On the Weyl matrices.** With $\boldsymbol\alpha = \boldsymbol\theta - i\boldsymbol\eta \in \mathbb C^3$: $\Lambda_L(\omega) = e^{-i\boldsymbol\alpha\cdot\boldsymbol\sigma/2}$ and $(\Lambda_L(\omega)^\dagger)^{-1} = \Lambda_R(\omega) = e^{-i\bar{\boldsymbol\alpha}\cdot\boldsymbol\sigma/2}$, $\bar{\boldsymbol\alpha} = \boldsymbol\theta + i\boldsymbol\eta$ (Theorem §C5a.1.2, 2). So $\tilde D(\Lambda_L(\omega)) = f_{j_+}(\boldsymbol\alpha)\otimes f_{j_-}(\bar{\boldsymbol\alpha})$ with $f_j(\boldsymbol\alpha) \equiv D^{(j)}(e^{-i\boldsymbol\alpha\cdot\boldsymbol\sigma/2})$.
 >
 > **3. Real angles.** For real $\boldsymbol\alpha = s\hat{\mathbf n}$, $s \mapsto e^{-is\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$ is a one-parameter subgroup of $SU(2)$, so $s \mapsto f_j(s\hat{\mathbf n})$ is a one-parameter group of matrices whose derivative at $0$ is $-i\hat{\mathbf n}\cdot\mathbf J^{(j)}$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-7|Theorem §C3.1.7]], 1: $D^{(j)}$ on $SU(2)$ has the spin-$j$ matrices as generators). A one-parameter group is fixed by its derivative at $0$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]]), so $f_j(\boldsymbol\alpha) = g_j(\boldsymbol\alpha) \equiv e^{-i\boldsymbol\alpha\cdot\mathbf J^{(j)}}$ for all $\boldsymbol\alpha \in \mathbb R^3$.
 >
@@ -369,9 +369,9 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **6. The element −1.** $P$ is homogeneous of degree $2j$, so $(D^{(j)}(-\mathbb 1)P)(z) = P(-z) = (-1)^{2j}P(z)$; and $((-\mathbb 1)^\dagger)^{-1} = -\mathbb 1$. Hence $\tilde D(-\mathbb 1) = (-1)^{2j_+}(-1)^{2j_-} = (-1)^{2(j_+ + j_-)}$.
 >
-> **7. Uniqueness.** Every $\lambda$ is $\pm\Lambda_L(\omega_1)\Lambda_L(\omega_2)$: $\pi(\lambda) = e^{\omega_1}e^{\omega_2}$ (step 1 of Derivation §C5.1.8) $= \pi(\Lambda_L(\omega_1)\Lambda_L(\omega_2))$, and Theorem §C5.1.6; and $-\mathbb 1 = \Lambda_L(2\pi\hat{\mathbf z})$. So the Weyl matrices generate $SL(2, \mathbb C)$, and a continuous representation is fixed by its values on them. On each one-parameter group $s \mapsto \Lambda_L(s\omega)$ these values form a one-parameter group of matrices, fixed by its derivative at $s = 0$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]]), i.e. by the generators, which step 5 identified.
+> **7. Uniqueness.** Every $\lambda$ is $\pm\Lambda_L(\omega_1)\Lambda_L(\omega_2)$: $\pi(\lambda) = e^{\omega_1}e^{\omega_2}$ (step 1 of Derivation §C5a.1.8) $= \pi(\Lambda_L(\omega_1)\Lambda_L(\omega_2))$, and Theorem §C5a.1.6; and $-\mathbb 1 = \Lambda_L(2\pi\hat{\mathbf z})$. So the Weyl matrices generate $SL(2, \mathbb C)$, and a continuous representation is fixed by its values on them. On each one-parameter group $s \mapsto \Lambda_L(s\omega)$ these values form a one-parameter group of matrices, fixed by its derivative at $s = 0$ ([[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]]), i.e. by the generators, which step 5 identified.
 >
-> **8. Descending to SO⁺(1,3).** Let $j_+ + j_-$ be an integer. Then $\tilde D(-\lambda) = \tilde D(-\mathbb 1)\tilde D(\lambda) = \tilde D(\lambda)$. For $\Lambda \in SO^+(1,3)$ there is $\lambda$ with $\pi(\lambda) = \Lambda$ (Theorem §C5.1.8), and the only other is $-\lambda$ (Theorem §C5.1.6), so $D(\Lambda) = \tilde D(\lambda)$ is well defined. If $\pi(\lambda_k) = \Lambda_k$ then $\pi(\lambda_1\lambda_2) = \Lambda_1\Lambda_2$, so $D(\Lambda_1\Lambda_2) = \tilde D(\lambda_1\lambda_2) = D(\Lambda_1)D(\Lambda_2)$: a representation. Its value on $e^\omega = \pi(\Lambda_L(\omega))$ is $\exp(-\frac i2\omega_{\mu\nu}D(\mathcal J^{\mu\nu}))$ by step 5, so it is *the* representation that §C3.2 wrote down on exponentials. For $j_+ + j_-$ half an odd integer, $\tilde D(-\lambda) = -\tilde D(\lambda)$, so the two lifts of $\Lambda$ give opposite matrices, and no choice of signs gives a representation ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]], 3).
+> **8. Descending to SO⁺(1,3).** Let $j_+ + j_-$ be an integer. Then $\tilde D(-\lambda) = \tilde D(-\mathbb 1)\tilde D(\lambda) = \tilde D(\lambda)$. For $\Lambda \in SO^+(1,3)$ there is $\lambda$ with $\pi(\lambda) = \Lambda$ (Theorem §C5a.1.8), and the only other is $-\lambda$ (Theorem §C5a.1.6), so $D(\Lambda) = \tilde D(\lambda)$ is well defined. If $\pi(\lambda_k) = \Lambda_k$ then $\pi(\lambda_1\lambda_2) = \Lambda_1\Lambda_2$, so $D(\Lambda_1\Lambda_2) = \tilde D(\lambda_1\lambda_2) = D(\Lambda_1)D(\Lambda_2)$: a representation. Its value on $e^\omega = \pi(\Lambda_L(\omega))$ is $\exp(-\frac i2\omega_{\mu\nu}D(\mathcal J^{\mu\nu}))$ by step 5, so it is *the* representation that §C3.2 wrote down on exponentials. For $j_+ + j_-$ half an odd integer, $\tilde D(-\lambda) = -\tilde D(\lambda)$, so the two lifts of $\Lambda$ give opposite matrices, and no choice of signs gives a representation ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]], 3).
 >
 > **9. Part 3.** By [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-5|Theorem §C3.2.5]] every finite-dimensional representation of the algebra is a direct sum of pieces $(j_+, j_-)$; integrate each by steps 1–5 and add. The sum descends to $SO^+(1,3)$ iff $\tilde D(-\mathbb 1) = \mathbb 1$, i.e. iff every piece has $(-1)^{2(j_+ + j_-)} = 1$.
 >
@@ -379,23 +379,23 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > - $(j_+, j_-)$ is literally $2j_+$ symmetrized left-handed slots and $2j_-$ symmetrized right-handed slots: $D^{(j)}(\lambda)$ acts by one $\lambda$ per variable $z$, as spin $j$ acts by one $U$ per slot in the rotation case.
 > - The sign $(-1)^{2(j_+ + j_-)}$ of §C3.2 is the parity of the total number of spinor slots, the value of $\tilde D$ on the kernel of the covering.
 > - The only analytic input is the identity theorem: the complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization (§C3.2) are honest complex arguments of entire functions.
-> - Used next: the Dirac representation as the case $(\frac12, 0)\oplus(0, \frac12)$ ([[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-9|Theorem §C5.2.9]]); fields of every spin ([[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]).
+> - Used next: the Dirac representation as the case $(\frac12, 0)\oplus(0, \frac12)$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]); fields of every spin ([[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]).
 
-^der-c5-1-9
+^der-c5a-1-9
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-2|Theorem §C5.1.2]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-6|Theorem §C5.1.6]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-7|Theorem §C5.1.7]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-8|Theorem §C5.1.8]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-7|Theorem §C3.1.7]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^def-c3-2-2|Def. §C3.2.2]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-3|Theorem §C3.2.3]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-5|Theorem §C3.2.5]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-8|Derivation §C3.2.8]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]]; the identity theorem for entire functions
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-7|Theorem §C5a.1.7]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|Theorem §C5a.1.8]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-2|Theorem §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-7|Theorem §C3.1.7]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^def-c3-2-2|Def. §C3.2.2]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-3|Theorem §C3.2.3]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-5|Theorem §C3.2.5]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^der-c3-2-8|Derivation §C3.2.8]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]]; the identity theorem for entire functions
 
 ## Spinor indices
 
-> [!definition] Definition §C5.1.3: Undotted and Dotted Spinor Indices
-> - A left-handed spinor carries a lower **undotted** index, $\psi_a$ ($a = 1, 2$), with $\psi_a \to (\Lambda_L)_a{}^b\psi_b$ ($\Lambda_L$, $\Lambda_R$ of [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-2|Def. §C5.1.2]]); a right-handed one an upper **dotted** index, $\psi^{\dot a}$, with $\psi^{\dot a} \to (\Lambda_R)^{\dot a}{}_{\dot b}\psi^{\dot b}$.
+> [!definition] Definition §C5a.1.3: Undotted and Dotted Spinor Indices
+> - A left-handed spinor carries a lower **undotted** index, $\psi_a$ ($a = 1, 2$), with $\psi_a \to (\Lambda_L)_a{}^b\psi_b$ ($\Lambda_L$, $\Lambda_R$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]]); a right-handed one an upper **dotted** index, $\psi^{\dot a}$, with $\psi^{\dot a} \to (\Lambda_R)^{\dot a}{}_{\dot b}\psi^{\dot b}$.
 > - $\varepsilon^{12} = -\varepsilon^{21} = +1$, $\varepsilon_{12} = -\varepsilon_{21} = -1$ (zero on the diagonal), so $\varepsilon^{ab}\varepsilon_{bc} = \delta^a{}_c$; indices are raised and lowered by $\psi^a = \varepsilon^{ab}\psi_b$, $\psi_a = \varepsilon_{ab}\psi^b$, and the same numbers $\varepsilon^{\dot a\dot b}$, $\varepsilon_{\dot a\dot b}$ for dotted indices.
 > - Complex conjugation turns an undotted index into a dotted one at the same height: $\bar\psi_{\dot a} \equiv (\psi_a)^*$, $\bar\psi^{a} \equiv (\psi^{\dot a})^*$.
-> - $\sigma^\mu$ ([[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-1|Def. §C5.1.1]]) carries $(\sigma^\mu)_{a\dot b}$ and $\bar\sigma^\mu$ carries $(\bar\sigma^\mu)^{\dot ab}$. A repeated index is summed only as one upper and one lower index of the same kind.
+> - $\sigma^\mu$ ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-1|Def. §C5a.1.1]]) carries $(\sigma^\mu)_{a\dot b}$ and $\bar\sigma^\mu$ carries $(\bar\sigma^\mu)^{\dot ab}$. A repeated index is summed only as one upper and one lower index of the same kind.
 >
-> *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Give left-handed spinors a lower index … Right-handed indices are conventionally dotted, $\psi_R^{\dot a}$") · the index positions of $\sigma^\mu$, $\bar\sigma^\mu$ derived here (Theorem §C5.1.12)*
+> *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Give left-handed spinors a lower index … Right-handed indices are conventionally dotted, $\psi_R^{\dot a}$") · the index positions of $\sigma^\mu$, $\bar\sigma^\mu$ derived here (Theorem §C5a.1.12)*
 
-^def-c5-1-3
+^def-c5a-1-3
 
 As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = i\sigma^2$, and $\varepsilon_{ab}$ is $E^{-1} = -E$. The definition is a bookkeeping device: each index position names a transformation law, and the theorems below say which contractions are invariant.
 
@@ -404,16 +404,16 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.4.6 (Caution "Which one is (½, 0) depends on the sign of K"), Ch. 8 §8.2 · PS eq. (3.38)*
 
-^cau-c5-1-1
+^cau-c5a-1-1
 
-> [!theorem] Theorem §C5.1.10: ε Is the Invariant Form of a Weyl Slot
-> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-3|Def. §C5.1.3]], $M^{\mathsf T}EM = (\det M)\,E$. Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
+> [!theorem] Theorem §C5a.1.10: ε Is the Invariant Form of a Weyl Slot
+> 1. For every $2\times2$ matrix $M$, with $E = (\varepsilon^{ab})$ of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], $M^{\mathsf T}EM = (\det M)\,E$. Hence $\varepsilon$ is invariant under $SL(2, \mathbb C)$: $\Lambda_L^{\mathsf T}E\Lambda_L = E$, $\Lambda_R^{\mathsf T}E\Lambda_R = E$.
 > 2. An upper undotted index transforms with $(\Lambda_L^{\mathsf T})^{-1}$: $\psi^a \to \psi^b(\Lambda_L^{-1})_b{}^a$.
 > 3. $\chi^a\psi_a = \varepsilon^{ab}\chi_b\psi_a$ is invariant; $\chi_a\psi^a = -\chi^a\psi_a$; for commuting components $\psi^a\psi_a = 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "$M^{\mathsf T}EM = (\det M)E$ … $E$ is an invariant bilinear form on the left-handed slot … the position of the contracted index matters"; checked numerically there)*
 
-^thm-c5-1-10
+^thm-c5a-1-10
 
 > [!derivation]- Derivation
 > **1. The determinant identity.** Write $M = \begin{pmatrix}m_{11}&m_{12}\\m_{21}&m_{22}\end{pmatrix}$. Then $EM = \begin{pmatrix}m_{21}&m_{22}\\-m_{11}&-m_{12}\end{pmatrix}$ and
@@ -422,74 +422,74 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > M^{\mathsf T}EM = \begin{pmatrix}m_{11}&m_{21}\\m_{12}&m_{22}\end{pmatrix}\begin{pmatrix}m_{21}&m_{22}\\-m_{11}&-m_{12}\end{pmatrix} = \begin{pmatrix}m_{11}m_{21} - m_{21}m_{11} & m_{11}m_{22} - m_{21}m_{12}\\ m_{12}m_{21} - m_{22}m_{11} & m_{12}m_{22} - m_{22}m_{12}\end{pmatrix} = (\det M)\,E .
 > $$
 >
-> With $\det\Lambda_L = \det\Lambda_R = 1$ (Theorem §C5.1.2) the form is invariant.
+> With $\det\Lambda_L = \det\Lambda_R = 1$ (Theorem §C5a.1.2) the form is invariant.
 >
 > **2. Raising an index.** As columns, $\psi^{\uparrow} = E\psi$. Under $\psi \to \Lambda_L\psi$, $\psi^\uparrow \to E\Lambda_L\psi = (E\Lambda_LE^{-1})\psi^\uparrow$. From part 1, $\Lambda_L^{\mathsf T}E\Lambda_L = E$, so $E\Lambda_LE^{-1} = (\Lambda_L^{\mathsf T})^{-1}$ (multiply on the left by $(\Lambda_L^{\mathsf T})^{-1}$ and on the right by $E^{-1}$). In components $(\Lambda_L^{\mathsf T})^{-1}$ acting on $\psi^\uparrow$ is $\psi^b(\Lambda_L^{-1})_b{}^a$.
 >
 > **3. The invariant.** $\chi^a\psi_a = \sum_a(E\chi)_a\psi_a = (E\chi)^{\mathsf T}\psi = \chi^{\mathsf T}E^{\mathsf T}\psi$. Under the transformation it becomes $\chi^{\mathsf T}\Lambda_L^{\mathsf T}E^{\mathsf T}\Lambda_L\psi = -\chi^{\mathsf T}(\Lambda_L^{\mathsf T}E\Lambda_L)\psi = -\chi^{\mathsf T}E\psi = \chi^{\mathsf T}E^{\mathsf T}\psi$, using $E^{\mathsf T} = -E$ and part 1. Equivalently, an upper index (step 2) against a lower one: $(\Lambda_L^{-1})_b{}^a(\Lambda_L)_a{}^c = \delta_b{}^c$.
 >
-> **4. The sign.** $\chi_a\psi^a = \chi_a\varepsilon^{ab}\psi_b = -\varepsilon^{ba}\chi_a\psi_b = -\chi^b\psi_b$, by antisymmetry of $\varepsilon$ and relabelling. For commuting numbers $\psi^a\psi_a = \varepsilon^{ab}\psi_b\psi_a$ is an antisymmetric matrix contracted with the symmetric $\psi_b\psi_a$: zero. ⚑ By-product: for anticommuting (Grassmann-valued) components $\psi_b\psi_a = -\psi_a\psi_b$ and $\psi^a\psi_a = \varepsilon^{12}\psi_2\psi_1 + \varepsilon^{21}\psi_1\psi_2 = \psi_2\psi_1 - \psi_1\psi_2 = -2\psi_1\psi_2 \ne 0$: a Lorentz-invariant mass term built from one Weyl field alone exists only for anticommuting fields (Majorana masses, QFT C9, planned; anticommuting fields, [[§C5.8 Quantizing the Dirac Field|§C5.8]]).
+> **4. The sign.** $\chi_a\psi^a = \chi_a\varepsilon^{ab}\psi_b = -\varepsilon^{ba}\chi_a\psi_b = -\chi^b\psi_b$, by antisymmetry of $\varepsilon$ and relabelling. For commuting numbers $\psi^a\psi_a = \varepsilon^{ab}\psi_b\psi_a$ is an antisymmetric matrix contracted with the symmetric $\psi_b\psi_a$: zero. ⚑ By-product: for anticommuting (Grassmann-valued) components $\psi_b\psi_a = -\psi_a\psi_b$ and $\psi^a\psi_a = \varepsilon^{12}\psi_2\psi_1 + \varepsilon^{21}\psi_1\psi_2 = \psi_2\psi_1 - \psi_1\psi_2 = -2\psi_1\psi_2 \ne 0$: a Lorentz-invariant mass term built from one Weyl field alone exists only for anticommuting fields (Majorana masses, QFT C9, planned; anticommuting fields, [[§C5b.1 Quantizing the Dirac Field|§C5b.1]]).
 >
 > **What the derivation shows**
 > - $\varepsilon$ plays for a Weyl slot the role $g$ plays for a vector slot (an invariant bilinear form that raises and lowers), but it is antisymmetric; that is why index positions in a contraction matter and why a single slot's "length squared" vanishes.
 > - Invariance of $\varepsilon$ is exactly $\det = 1$: $SL(2, \mathbb C)$ is the group of complex $2\times2$ matrices preserving an antisymmetric form, $Sp(2, \mathbb C)$.
 
-^der-c5-1-10
+^der-c5a-1-10
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-3|Def. §C5.1.3]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-2|Theorem §C5.1.2]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]]
 
-> [!theorem] Theorem §C5.1.11: Dotted Indices, Conjugation and the Invariant Pairings
+> [!theorem] Theorem §C5a.1.11: Dotted Indices, Conjugation and the Invariant Pairings
 > 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
 > 2. Invariant pairings: $\psi_R^\dagger\chi_L = \bar\psi^a\chi_a$, $\psi_L^\dagger\chi_R = \bar\psi_{\dot a}\chi^{\dot a}$, $\chi^a\psi_a$, $\chi_{\dot a}\psi^{\dot a}$. A dotted index is never contracted with an undotted one: $\chi_R^{\mathsf T}E\psi_L$ is not invariant.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Right-handed spinors are a different slot … The two slots are paired instead through complex conjugation"; Derivation "The two halves … related by conjugation") · PS eq. (3.38)*
 
-^thm-c5-1-11
+^thm-c5a-1-11
 
 > [!derivation]- Derivation
-> **1. Conjugating a left-handed spinor.** $\psi_L \to \Lambda_L\psi_L$ gives $\psi_L^{\ast} \to \Lambda_L^{\ast}\psi_L^{\ast}$. Raise with $E$: $E\psi_L^{\ast} \to E\Lambda_L^{\ast}E^{-1}\,E\psi_L^{\ast}$. By Theorem §C5.1.2, 3, $\Lambda_L^{\ast} = \sigma^2\Lambda_R\sigma^2$; with $E = i\sigma^2$, $E^{-1} = -i\sigma^2$ and $(\sigma^2)^2 = \mathbb 1$: $E\Lambda_L^{\ast}E^{-1} = (i\sigma^2)\sigma^2\Lambda_R\sigma^2(-i\sigma^2) = \Lambda_R$. So $E\psi_L^{\ast}$ transforms with $\Lambda_R$.
+> **1. Conjugating a left-handed spinor.** $\psi_L \to \Lambda_L\psi_L$ gives $\psi_L^{\ast} \to \Lambda_L^{\ast}\psi_L^{\ast}$. Raise with $E$: $E\psi_L^{\ast} \to E\Lambda_L^{\ast}E^{-1}\,E\psi_L^{\ast}$. By Theorem §C5a.1.2, 3, $\Lambda_L^{\ast} = \sigma^2\Lambda_R\sigma^2$; with $E = i\sigma^2$, $E^{-1} = -i\sigma^2$ and $(\sigma^2)^2 = \mathbb 1$: $E\Lambda_L^{\ast}E^{-1} = (i\sigma^2)\sigma^2\Lambda_R\sigma^2(-i\sigma^2) = \Lambda_R$. So $E\psi_L^{\ast}$ transforms with $\Lambda_R$.
 >
-> **2. Conjugating a right-handed spinor.** $\Lambda_R = (\Lambda_L^\dagger)^{-1}$ (Theorem §C5.1.2, 2), so $\Lambda_R^{\ast} = ((\Lambda_L^\dagger)^{\ast})^{-1} = (\Lambda_L^{\mathsf T})^{-1}$, which is the law of an upper undotted index (Theorem §C5.1.10, 2).
+> **2. Conjugating a right-handed spinor.** $\Lambda_R = (\Lambda_L^\dagger)^{-1}$ (Theorem §C5a.1.2, 2), so $\Lambda_R^{\ast} = ((\Lambda_L^\dagger)^{\ast})^{-1} = (\Lambda_L^{\mathsf T})^{-1}$, which is the law of an upper undotted index (Theorem §C5a.1.10, 2).
 >
 > **3. The pairings without ε.** $\psi_R^\dagger\chi_L \to \psi_R^\dagger\Lambda_R^\dagger\Lambda_L\chi_L$, and $\Lambda_R^\dagger = \Lambda_L^{-1}$ (the adjoint of step 2's relation), so it is invariant: an upper undotted index ($\psi_R^{\ast}$, step 2) against a lower undotted one. Likewise $\psi_L^\dagger\chi_R \to \psi_L^\dagger\Lambda_L^\dagger\Lambda_R\chi_R = \psi_L^\dagger\chi_R$, since $\Lambda_L^\dagger\Lambda_R = \Lambda_L^\dagger(\Lambda_L^\dagger)^{-1} = \mathbb 1$.
 >
-> **4. The pairings with ε.** $\chi^a\psi_a$ is Theorem §C5.1.10, 3. For dotted indices, $\chi_R^{\mathsf T}E\psi_R \to \chi_R^{\mathsf T}\Lambda_R^{\mathsf T}E\Lambda_R\psi_R = \chi_R^{\mathsf T}E\psi_R$ since $\det\Lambda_R = 1$ (Theorem §C5.1.10, 1).
+> **4. The pairings with ε.** $\chi^a\psi_a$ is Theorem §C5a.1.10, 3. For dotted indices, $\chi_R^{\mathsf T}E\psi_R \to \chi_R^{\mathsf T}\Lambda_R^{\mathsf T}E\Lambda_R\psi_R = \chi_R^{\mathsf T}E\psi_R$ since $\det\Lambda_R = 1$ (Theorem §C5a.1.10, 1).
 >
 > **5. A mixed contraction fails.** $\chi_R^{\mathsf T}E\psi_L \to \chi_R^{\mathsf T}\Lambda_R^{\mathsf T}E\Lambda_L\psi_L$. Using $E\Lambda_L = (\Lambda_L^{\mathsf T})^{-1}E$: $\Lambda_R^{\mathsf T}E\Lambda_L = (\Lambda_L^{-1}\Lambda_R)^{\mathsf T}E$. For a pure boost $\Lambda_L^{-1}\Lambda_R = e^{\boldsymbol\eta\cdot\boldsymbol\sigma} \ne \mathbb 1$, so the form changes.
 >
 > **What the derivation shows**
 > - Complex conjugation exchanges the two kinds of index, and $\varepsilon$ moves an index up or down: together they show that the conjugate of $(\frac12, 0)$ is $(0, \frac12)$, the spin-½ case of Theorem §C3.2.11 in index form.
-> - The invariants that pair left with right are built with $\dagger$, not with $\varepsilon$; in Dirac form they are $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$, so the Dirac mass term $m\bar\psi\psi$ necessarily couples the two handednesses (QFT §C5.3–§C5.4).
+> - The invariants that pair left with right are built with $\dagger$, not with $\varepsilon$; in Dirac form they are $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$, so the Dirac mass term $m\bar\psi\psi$ necessarily couples the two handednesses (QFT §C5a.3–§C5a.4).
 
-^der-c5-1-11
+^der-c5a-1-11
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-3|Def. §C5.1.3]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-2|Theorem §C5.1.2]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-10|Theorem §C5.1.10]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-10|Theorem §C5a.1.10]]
 
-> [!theorem] Theorem §C5.1.12: A Four-Vector Is a Bispinor
-> 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5.1 Weyl Spinors and SL(2,C)#^def-c5-1-3|Def. §C5.1.3]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
+> [!theorem] Theorem §C5a.1.12: A Four-Vector Is a Bispinor
+> 1. $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one lower undotted and one lower dotted index ([[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-3|Def. §C5a.1.3]]): $x \to \Lambda x$ is $X_{a\dot b} \to (\Lambda_L)_a{}^c(\Lambda_L^*)_{\dot b}{}^{\dot d}X_{c\dot d}$.
 > 2. $(\bar\sigma^\mu)^{\dot aa} = \varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b}$, and $x^\mu = \frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a}$.
 > 3. So the vector representation ([[§C1.6 Infinitesimal Lorentz Transformations and Generators#^def-c1-6-1|Def. §C1.6.1]]) is equivalent to $(\frac12, 0)\otimes\overline{(\frac12, 0)}$; the conjugate is $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]]), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-7|Theorem §C3.2.7]]), with $x \mapsto X$ the equivalence.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering", paragraph "What (SL2Ccover) says about indices": "a four-vector is an object with one left-handed and one right-handed spinor index") · part 2 written out here*
 
-^thm-c5-1-12
+^thm-c5a-1-12
 
 > [!derivation]- Derivation
-> **1. Part 1.** By Theorem §C5.1.7, 1, $x \to \Lambda x$ corresponds to $X \to \Lambda_LX\Lambda_L^\dagger$. In components, $(\Lambda_LX\Lambda_L^\dagger)_{a\dot b} = (\Lambda_L)_a{}^cX_{c\dot d}(\Lambda_L^\dagger)^{\dot d}{}_{\dot b} = (\Lambda_L)_a{}^c(\Lambda_L^{\ast})_{\dot b}{}^{\dot d}X_{c\dot d}$, since $(\Lambda_L^\dagger)_{dk} = (\Lambda_L^{\ast})_{kd}$. The first index transforms with $\Lambda_L$ (lower undotted), the second with $\Lambda_L^{\ast}$ (lower dotted, Theorem §C5.1.11, 1).
+> **1. Part 1.** By Theorem §C5a.1.7, 1, $x \to \Lambda x$ corresponds to $X \to \Lambda_LX\Lambda_L^\dagger$. In components, $(\Lambda_LX\Lambda_L^\dagger)_{a\dot b} = (\Lambda_L)_a{}^cX_{c\dot d}(\Lambda_L^\dagger)^{\dot d}{}_{\dot b} = (\Lambda_L)_a{}^c(\Lambda_L^{\ast})_{\dot b}{}^{\dot d}X_{c\dot d}$, since $(\Lambda_L^\dagger)_{dk} = (\Lambda_L^{\ast})_{kd}$. The first index transforms with $\Lambda_L$ (lower undotted), the second with $\Lambda_L^{\ast}$ (lower dotted, Theorem §C5a.1.11, 1).
 >
-> **2. ε on σ.** As matrices, $\varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b} = (E(\sigma^\mu)^{\mathsf T}E^{\mathsf T})_{\dot aa}$. Since $\sigma^\mu$ is Hermitian, $(\sigma^\mu)^{\mathsf T} = (\sigma^\mu)^{\ast}$; with $E = i\sigma^2$ and $E^{\mathsf T} = -i\sigma^2$ ($\sigma^2$ is antisymmetric): $E(\sigma^\mu)^{\ast}E^{\mathsf T} = \sigma^2(\sigma^\mu)^{\ast}\sigma^2 = \bar\sigma^\mu$ (Theorem §C5.1.1, 3).
+> **2. ε on σ.** As matrices, $\varepsilon^{\dot a\dot b}\varepsilon^{ab}(\sigma^\mu)_{b\dot b} = (E(\sigma^\mu)^{\mathsf T}E^{\mathsf T})_{\dot aa}$. Since $\sigma^\mu$ is Hermitian, $(\sigma^\mu)^{\mathsf T} = (\sigma^\mu)^{\ast}$; with $E = i\sigma^2$ and $E^{\mathsf T} = -i\sigma^2$ ($\sigma^2$ is antisymmetric): $E(\sigma^\mu)^{\ast}E^{\mathsf T} = \sigma^2(\sigma^\mu)^{\ast}\sigma^2 = \bar\sigma^\mu$ (Theorem §C5a.1.1, 3).
 >
-> **3. The inverse.** $\frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a} = \frac12\operatorname{tr}(X\bar\sigma^\mu) = x^\mu$ (Theorem §C5.1.3).
+> **3. The inverse.** $\frac12(\bar\sigma^\mu)^{\dot aa}X_{a\dot a} = \frac12\operatorname{tr}(X\bar\sigma^\mu) = x^\mu$ (Theorem §C5a.1.3).
 >
-> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §C5.1.3, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5.1.11, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]]).
+> **4. Part 3.** By part 1 the four-vector space, via the bijection $x \mapsto X$ (Theorem §C5a.1.3, extended complex-linearly to $\mathbb C^4 \to M_2(\mathbb C)$), is the tensor product of the left-handed representation and its complex conjugate. The conjugate is equivalent to $(0, \frac12)$ by $E$ (Theorem §C5a.1.11, 1), and $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]]).
 >
 > **What the derivation shows**
 > - Theorem §C3.2.7 identified the vector as $(\frac12, \frac12)$ by Casimirs; here the identification is an explicit map, and the two "spins ½" of the label are the two indices of $X_{a\dot b}$.
-> - $\sigma^\mu_{a\dot b}$ is the invariant tensor that converts a vector index into an undotted–dotted pair; the Dirac matrices are built from it ([[§C5.2 The Clifford Algebra and the Dirac Representation#^rem-c5-2-6|§C5.2, Remark: What each Dirac index labels]]).
+> - $\sigma^\mu_{a\dot b}$ is the invariant tensor that converts a vector index into an undotted–dotted pair; the Dirac matrices are built from it ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-6|§C5a.2, Remark: What each Dirac index labels]]).
 
-^der-c5-1-12
+^der-c5a-1-12
 
-*Uses:* [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-1|Theorem §C5.1.1]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-3|Theorem §C5.1.3]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-7|Theorem §C5.1.7]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-11|Theorem §C5.1.11]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]]
+*Uses:* [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-3|Theorem §C5a.1.3]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-7|Theorem §C5a.1.7]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-11|Theorem §C5a.1.11]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-9|Theorem §C3.2.9]]
 
 > [!remark] Remark: What each Weyl index labels
 >
@@ -502,32 +502,32 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > | $\varepsilon^{ab}$, $\varepsilon^{\dot a\dot b}$ | invariant | the two invariant forms |
 > | $(\sigma^\mu)_{a\dot b}$, $(\bar\sigma^\mu)^{\dot aa}$ | invariant | one vector slot, one slot of each kind |
 >
-> Three rules: contract an upper with a lower index of the same kind; conjugation dots or undots an index and keeps its height; $\varepsilon$ raises and lowers, with a sign that depends on which position is contracted. Spinor indices are never moved with $g$. The Dirac index is an undotted and a dotted index stacked ([[§C5.2 The Clifford Algebra and the Dirac Representation#^rem-c5-2-6|§C5.2, Remark: What each Dirac index labels]]).
+> Three rules: contract an upper with a lower index of the same kind; conjugation dots or undots an index and keeps its height; $\varepsilon$ raises and lowers, with a sign that depends on which position is contracted. Spinor indices are never moved with $g$. The Dirac index is an undotted and a dotted index stacked ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-6|§C5a.2, Remark: What each Dirac index labels]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.3 (table and "The practical test, continued"), §8.2*
 
-^rem-c5-1-2
+^rem-c5a-1-2
 
 > [!remark] Remark: Kinematics allows one handedness, a mass needs both
-> Lorentz transformations never mix $\psi_L$ and $\psi_R$ (their matrices are separate), so kinematics allows a theory of one Weyl field alone. Dynamics decides: the only invariants pairing a spinor with a conjugate spinor are $\psi_R^\dagger\chi_L$ and $\psi_L^\dagger\chi_R$ (Theorem §C5.1.11), so a Dirac mass term couples left to right, and a single Weyl field describes a massless particle (Lecture 7: "Weyl spinors are massless particles. Mass couples $\xi$ and $\eta$"). The equations are [[§C5.4 Bilinears, Chirality and the Weyl Equations|§C5.4]]; that one-handed fields describe neutrinos in the Standard Model is beyond the course.
+> Lorentz transformations never mix $\psi_L$ and $\psi_R$ (their matrices are separate), so kinematics allows a theory of one Weyl field alone. Dynamics decides: the only invariants pairing a spinor with a conjugate spinor are $\psi_R^\dagger\chi_L$ and $\psi_L^\dagger\chi_R$ (Theorem §C5a.1.11), so a Dirac mass term couples left to right, and a single Weyl field describes a massless particle (Lecture 7: "Weyl spinors are massless particles. Mass couples $\xi$ and $\eta$"). The equations are [[§C5a.4 Bilinears, Chirality and the Weyl Equations|§C5a.4]]; that one-handed fields describe neutrinos in the Standard Model is beyond the course.
 >
 > *Source: PHY 513 Lecture 7, Part B (slide "Spinors and Boosts") · the user's PHY 513 notes, Ch. 8 §8.2 (paragraph "Physics of the split")*
 
-^rem-c5-1-3
+^rem-c5a-1-3
 
 > [!remark]- ★ Remark: Null vectors, spinors and the celestial sphere
-> A future null vector has $\det X = 0$ and $\operatorname{tr}X > 0$, so $X$ is positive semidefinite of rank one (Theorem §C5.1.3, 3): $X = \xi\xi^\dagger$ for a column $\xi \in \mathbb C^2$, unique up to a phase. Then $\lambda X\lambda^\dagger = (\lambda\xi)(\lambda\xi)^\dagger$: the Lorentz group acts on null vectors through a left-handed spinor, $\xi \to \lambda\xi$. Null rays (null vectors up to positive scale) are spinors up to complex scale, the points $z = \xi_1/\xi_2$ of the Riemann sphere $\mathbb{CP}^1$ — the sky seen by an observer — and $\lambda = \begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts on it by the Möbius transformation $z \mapsto (az + b)/(cz + d)$. Boosts thus act on the celestial sphere as conformal maps (aberration). The phase of $\xi$, invisible in $X$, is the spinor's extra datum, the "flag" of Penrose's flagpole picture.
+> A future null vector has $\det X = 0$ and $\operatorname{tr}X > 0$, so $X$ is positive semidefinite of rank one (Theorem §C5a.1.3, 3): $X = \xi\xi^\dagger$ for a column $\xi \in \mathbb C^2$, unique up to a phase. Then $\lambda X\lambda^\dagger = (\lambda\xi)(\lambda\xi)^\dagger$: the Lorentz group acts on null vectors through a left-handed spinor, $\xi \to \lambda\xi$. Null rays (null vectors up to positive scale) are spinors up to complex scale, the points $z = \xi_1/\xi_2$ of the Riemann sphere $\mathbb{CP}^1$ — the sky seen by an observer — and $\lambda = \begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts on it by the Möbius transformation $z \mapsto (az + b)/(cz + d)$. Boosts thus act on the celestial sphere as conformal maps (aberration). The phase of $\xi$, invisible in $X$, is the spinor's extra datum, the "flag" of Penrose's flagpole picture.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "The left-handed Weyl matrices are this covering", parenthetical "the celestial sphere")*
 
-^rem-c5-1-4
+^rem-c5a-1-4
 
 > [!remark]- Connections
 > - The covering $SL(2, \mathbb C) \to SO^+(1,3)$ restricts on $SU(2)$ to Quantum Mechanics' covering of $SO(3)$, and the polar decomposition $\lambda = e^hU$ is the spinor image of "boost times rotation" — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C1.4 The Lorentz Group#^thm-c1-4-3|Theorem §C1.4.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]].
 > - The sign $(-1)^{2(j_+ + j_-)}$ of a $2\pi$ rotation is the value of a representation on the kernel $\{\pm\mathbb 1\}$ of the covering map, and the endpoint of the lift of the $2\pi$ loop: algebra (§C3.2), topology (§C3.1) and the explicit group meet here — [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|Theorem §C3.1.8]].
-> - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5.8 Quantizing the Dirac Field|§C5.8]], [[§C5.9 The Dirac Propagator and Spin–Statistics|§C5.9]].
+> - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5b.1 Quantizing the Dirac Field|§C5b.1]], [[§C5b.2 The Dirac Propagator and Spin–Statistics|§C5b.2]].
 > - The complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization in §C3.2 are literally the arguments of $\Lambda_L$ and $\Lambda_R$, and complex conjugation exchanging them is $\Lambda_L^* = \sigma^2\Lambda_R\sigma^2$ — [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-3|Theorem §C3.2.3]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-11|Theorem §C3.2.11]].
-> - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors (★ remark above; helicity spinors, QFT §C5.6) — [[§C3.6★ Massless Particles and Helicity#^def-c3-6-1|Def. §C3.6.1]].
-> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5.2 The Clifford Algebra and the Dirac Representation#^def-c5-2-2|Def. §C5.2.2]], [[§C5.2 The Clifford Algebra and the Dirac Representation#^thm-c5-2-12|Theorem §C5.2.12]].
+> - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors (★ remark above; helicity spinors, QFT §C5a.6) — [[§C3.6★ Massless Particles and Helicity#^def-c3-6-1|Def. §C3.6.1]].
+> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-12|Theorem §C5a.2.12]].
 > - $\varepsilon$ for spinors parallels $g$ for vectors and the symplectic form of Hamiltonian mechanics: $SL(2, \mathbb C) = Sp(2, \mathbb C)$ preserves an antisymmetric form, as canonical transformations preserve $\{q, p\}$ — [[§C1.10 Hamiltonian Field Theory|§C1.10]].
 > - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|Theorem §C3.1.5]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|Theorem §C3.2.12]].

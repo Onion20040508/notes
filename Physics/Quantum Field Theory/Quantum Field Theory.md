@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: level C pilot (C2, CA)
+status: level C — C1, C2a, C2b, C3, C4, C5a, C5b (drafts until revised for Lecture 10), CA written
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -17,7 +17,8 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C2b Two-Point Functions, Causality and Propagators]]
 - [[· C3 Poincaré Symmetry and Particle States]] (★ §C3.5, §C3.6)
 - [[· C4 The Quantum Vector Field]] (★ §C4.2, §C4.3, §C4.4)
-- [[· C5 The Quantum Spinor Field]]
+- [[· C5a Spinors and the Dirac Equation]]
+- [[· C5b The Quantum Spinor Field]]
 - [[· CA Mathematical Methods]]
 
 ### How the chapters build on each other
@@ -30,7 +31,8 @@ graph TD
   C2b["C2b Two-Point Functions, Causality and Propagators"]
   C3["C3 Poincaré Symmetry and Particle States"]
   C4["C4 The Quantum Vector Field"]
-  C5["C5 The Quantum Spinor Field"]
+  C5a["C5a Spinors and the Dirac Equation"]
+  C5b["C5b The Quantum Spinor Field"]
   CA["CA Mathematical Methods"]
   C1 -->|4| C2a
   C1 -->|9| C2b
@@ -42,10 +44,14 @@ graph TD
   C2a -->|88| C4
   C2b -->|51| C4
   C3 -->|66| C4
-  C1 -->|116| C5
-  C2a -->|57| C5
-  C2b -->|81| C5
-  C3 -->|91| C5
+  C1 -->|114| C5a
+  C2a -->|1| C5a
+  C3 -->|88| C5a
+  C1 -->|2| C5b
+  C2a -->|56| C5b
+  C2b -->|81| C5b
+  C3 -->|3| C5b
+  C5a -->|102| C5b
   C1 -->|5| CA
   C2a -->|7| CA
   C2b -->|43| CA
@@ -53,19 +59,23 @@ graph TD
   C2b -.->|39| C1
   C3 -.->|24| C1
   C4 -.->|3| C1
-  C5 -.->|7| C1
+  C5a -.->|7| C1
   CA -.->|105| C1
   C2b -.->|17| C2a
   C3 -.->|1| C2a
-  C5 -.->|1| C2a
+  C5b -.->|1| C2a
   CA -.->|193| C2a
   CA -.->|379| C2b
   C4 -.->|5| C3
-  C5 -.->|17| C3
+  C5a -.->|16| C3
+  C5b -.->|1| C3
   CA -.->|11| C3
-  C5 -.->|10| C4
+  C5a -.->|1| C4
+  C5b -.->|9| C4
   CA -.->|133| C4
-  CA -.->|96| C5
+  C5b -.->|22| C5a
+  CA -.->|6| C5a
+  CA -.->|90| C5b
 ```
 
 ## Planned

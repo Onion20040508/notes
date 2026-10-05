@@ -1,0 +1,839 @@
+---
+type: section
+subject: "[[Quantum Field Theory]]"
+level: C
+chapter: C5b
+section: C5b.1
+conventions: "[[Larsen PHY 513]]"
+tags: [quantum-field-theory, level-c, draft]
+---
+← [[§C5a.7 Gamma-Matrix Technology]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C5b.2 The Dirac Propagator and Spin–Statistics]] →
+
+*Sources: the user's pre-course notes, §5.5 · Yu Zhao-Huan, 量子场论讲义, §5.4.3 and §5.5 · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 52–62.*
+
+*Draft: written ahead of PHY 513 Lecture 10 from the user's pre-course notes, Yu and Peskin–Schroeder; to be revised after the lecture.*
+
+How is the Dirac field turned into a quantum theory, and why does the recipe that worked for scalars fail? The classical ingredients are in place: the free Dirac field and its canonical momentum $\pi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), its Hamiltonian density ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]), and the plane-wave spinors $u^s(p)$, $v^s(p)$ with their normalizations and spin sums ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-9|Theorem §C5a.5.9]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]], [[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]]). This section runs [[P1 Canonical Quantization]] on them: the mode expansion and the classical $H$ come out as for the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]]), but the equal-time commutators of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]] give either negative norms or an energy unbounded below. Anticommutators cure both, and with them come Fermi statistics, the Pauli principle, a negative zero-point energy and antiparticles without a Dirac sea. Quantum Mechanics met the anticommutators as an algebra chosen per species ([[§C12.2★ Second Quantization|QM §C12.2★]]) and the negative energies as a filled sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]); what the field adds is said where each appears.
+
+*Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, chiral basis for the Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-2|Def. §C5a.2.2]]), $\bar\psi = \psi^\dagger\gamma^0$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-3|Def. §C5a.3.3]]), $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ with $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ whenever $p$ labels a mode, $m > 0$; $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ as in [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]; spatial transforms as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], with $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$ an identity in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). Spin labels $r, s \in \{1, 2\}$ refer to the spin basis $\xi^s$, $\eta^s$ of [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]].
+
+> [!caution] Caution: Notation for the Dirac mode operators across sources
+> These notes follow Peskin–Schroeder and the user's PHY 513 notes: $a^s_{\mathbf p}$ annihilates a fermion, $b^s_{\mathbf p}$ an antifermion, $s = 1, 2$ the spin label of $u^s(p)$, $v^s(p)$. Yu and the user's pre-course notes write $a_{\mathbf p,\lambda}$, $b_{\mathbf p,\lambda}$, $u(\mathbf p, \lambda)$, $v(\mathbf p, \lambda)$ with the helicity $\lambda = \pm$ as label, and $|\mathbf p^\pm, \lambda\rangle$ for the one-particle states. Peskin–Schroeder's pp. 52–57 use a provisional labelling ($b^s_{-\mathbf p}v^s(-\mathbf p)$ in eq. (3.87), then $\tilde b = b^\dagger$ in eq. (3.98)) that they ask the reader to forget from eq. (3.99) on; only the final one is used here. Other texts write $b$, $d$ (Sakurai, Srednicki) or $b$, $c$; the lecture's choice will be recorded after Lecture 10.
+>
+> *Source: PS §3.5, eqs. (3.87), (3.98)–(3.99) · Yu §5.4.3, §5.5.4*
+
+^cau-c5b-1-1
+
+## The canonical system and its modes
+
+> [!model] Model §C5b.1.1: The Free Dirac Field as a Canonical System
+> The free Dirac field of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]], $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$, has the four canonical pairs $(\psi_a, \pi_a)$ with $\pi_a = i\psi_a^\dagger$ and no momentum conjugate to $\bar\psi$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), and the Hamiltonian
+>
+> $$
+> H = \int d^3x\;\psi^\dagger h_D\,\psi, \qquad h_D = -i\boldsymbol\alpha\cdot\nabla + \beta m, \quad \boldsymbol\alpha = \gamma^0\boldsymbol\gamma, \ \beta = \gamma^0 ,
+> $$
+>
+> the integral of the density of [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]; on solutions of the Dirac equation ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-1|Def. §C5a.3.1]]) $h_D\psi = i\partial_t\psi$.
+>
+> *Assumptions:* $m > 0$; the field and its derivatives fall off at spatial infinity (classically), or are read against wave packets (quantum). The quantization rule is not part of the model: it is decided below ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]]).
+> *Source: PS §3.5, eqs. (3.83)–(3.85) · Yu §5.4.3, eqs. (5.219), (5.222) · the user's pre-course notes, §5.5*
+
+^mod-c5b-1-1
+
+> [!remark] Remark: A first-order system: the momentum is ψ† itself
+> The Lagrangian is linear in $\dot\psi$, so $\pi = i\psi^\dagger$ does not contain $\dot\psi$ and the Legendre map cannot be inverted; the velocities drop out of $\mathcal H$ by themselves ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]]; [[§C1.10 Hamiltonian Field Theory#^rem-c1-10-3|§C1.10, Remark: Constraints and first-order Lagrangians]]). The phase space is therefore $(\psi_a, \psi^\dagger_a)$, four complex coordinates, half as many as four complex scalar fields would have: $\psi^\dagger$ is not a second canonical coordinate as $\phi^\dagger$ was for the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]), but the momentum of $\psi$ (Yu, after eq. (5.220)). The complex scalar's crossover $\pi = \dot\phi^\dagger$ is here taken one step further: $\pi$ is $\psi^\dagger$ itself.
+>
+> *Source: Yu §5.4.3, eqs. (5.219)–(5.220) · PS §3.5, p. 52*
+
+^rem-c5b-1-1
+
+> [!theorem] Theorem §C5b.1.2: Mode Expansion of the Dirac Field
+> Every solution of the Dirac equation ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-1|Def. §C5a.3.1]]) is
+>
+> $$
+> \psi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{s=1,2}\Bigl(a^s_{\mathbf p}\,u^s(p)\,e^{-ip\cdot x} + b^{s\dagger}_{\mathbf p}\,v^s(p)\,e^{ip\cdot x}\Bigr), \qquad \bar\psi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{s}\Bigl(b^s_{\mathbf p}\,\bar v^s(p)\,e^{-ip\cdot x} + a^{s\dagger}_{\mathbf p}\,\bar u^s(p)\,e^{ip\cdot x}\Bigr) ,
+> $$
+>
+> with the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-9|Theorem §C5a.5.9]] and [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]] and four coefficients per momentum. Classically $a^s_{\mathbf p}$ and $b^{s\dagger}_{\mathbf p} \equiv \overline{b^s_{\mathbf p}}$ are complex amplitudes; quantization makes them operator-valued distributions in $\mathbf p$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], componentwise in $s$), and $\psi$ an operator-valued distribution ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
+>
+> *Source: PS §3.5, eqs. (3.87), (3.99)–(3.100) · Yu §5.4, eqs. (5.216)–(5.218) · the user's pre-course notes, §5.4*
+
+^thm-c5b-1-2
+
+> [!derivation]- Derivation
+> **1. Fourier transform in space.** Write $\psi(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\hat\psi(t, \mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$ (for a classical field in $\mathcal S$; in general in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]). Since $-i\nabla e^{i\mathbf p\cdot\mathbf x} = \mathbf p\,e^{i\mathbf p\cdot\mathbf x}$ (derivative ↔ multiplication, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), the Dirac equation $i\partial_t\psi = h_D\psi$ ([[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]) becomes, momentum by momentum,
+>
+> $$
+> i\partial_t\hat\psi(t, \mathbf p) = h(\mathbf p)\,\hat\psi(t, \mathbf p), \qquad h(\mathbf p) = \boldsymbol\alpha\cdot\mathbf p + \beta m = \gamma^0\gamma^ip^i + \gamma^0m .
+> $$
+>
+> **2. $h(\mathbf p)$ is Hermitian with $h(\mathbf p)^2 = E_{\mathbf p}^2$.** $\gamma^0$ is Hermitian and $\gamma^i$ anti-Hermitian ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]), so $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^0 = -\gamma^i\gamma^0 = \gamma^0\gamma^i$. From the Clifford algebra ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]) with $(\gamma^0)^2 = 1$: $\alpha^i\alpha^j + \alpha^j\alpha^i = -(\gamma^i\gamma^j + \gamma^j\gamma^i) = -2g^{ij} = 2\delta^{ij}$ and $\alpha^i\beta + \beta\alpha^i = \gamma^0\gamma^i\gamma^0 + \gamma^i = -\gamma^i + \gamma^i = 0$. Squaring, $h^2 = \mathbf p^2 + m^2 = E_{\mathbf p}^2$, so the eigenvalues are $\pm E_{\mathbf p}$ (this is the second route of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]).
+>
+> **3. The eigenvectors.** Multiplying $(\slashed{p} - m)u^s(p) = 0$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]]; slash: [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-2|Def. §C5a.3.2]]) by $\gamma^0$ gives $(E_{\mathbf p} - \gamma^0\gamma^ip^i - \gamma^0m)u^s = 0$: $h(\mathbf p)u^s(p) = +E_{\mathbf p}u^s(p)$. Multiplying $(\slashed{\tilde p} + m)v^s(\tilde p) = 0$ by $\gamma^0$, with $\slashed{\tilde p} = \gamma^0E_{\mathbf p} + \gamma^ip^i$: $(E_{\mathbf p} + \gamma^0\gamma^ip^i + \gamma^0m)v^s(\tilde p) = 0$, i.e. $h(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$. The four vectors $u^1(p), u^2(p), v^1(\tilde p), v^2(\tilde p)$ are orthogonal ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]), each of norm squared $2E_{\mathbf p}$: a basis of $\mathbb C^4$ (PS p. 53).
+>
+> **4. Solve the ordinary differential equation.** Expanding $\hat\psi(t, \mathbf p)$ in this eigenbasis, each component evolves with its own phase:
+>
+> $$
+> \hat\psi(t, \mathbf p) = \frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\Bigl(a^s_{\mathbf p}\,u^s(p)\,e^{-iE_{\mathbf p}t} + \beta^s_{\mathbf p}\,v^s(\tilde p)\,e^{+iE_{\mathbf p}t}\Bigr) ,
+> $$
+>
+> with four free coefficients per $\mathbf p$; the factor $1/\sqrt{2E_{\mathbf p}}$ is a normalization choice, as for the scalar ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]).
+>
+> **5. Back to space; relabel.** Insert into Step 1. In the second term substitute $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1: Jacobian $1$, $E_{-\mathbf p} = E_{\mathbf p}$, and $\tilde p \to p$ because $(E_{\mathbf p}, -(-\mathbf p)) = p$): the exponential becomes $e^{iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = e^{ip\cdot x}$ and the spinor $v^s(p)$. Name the coefficient $b^{s\dagger}_{\mathbf p} \equiv \beta^s_{-\mathbf p}$. This gives $\psi$ as stated; $\bar\psi = \psi^\dagger\gamma^0$ follows term by term with $u^{s\dagger}\gamma^0 = \bar u^s$, $v^{s\dagger}\gamma^0 = \bar v^s$.
+>
+> ⚑ By-product: the name $b^\dagger$ on the negative-frequency coefficient is a definition, not a result; whether $b$ or $b^\dagger$ annihilates the vacuum is decided only by positivity of the energy → [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-6|Remark: Empty and filled are labels]].
+>
+> **6. Sense.** For the quantum field the coefficients are operator-valued distributions and the integral is read after smearing ([[§C5a.5 Plane-Wave Solutions#^rem-c5a-5-6|§C5a.5, Remark: In what sense a general solution is a superposition of these plane waves]]). The spinors are smooth and polynomially bounded in $\mathbf p$ for $m > 0$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]]), so for $f \in \mathcal S(\mathbb R^3, \mathbb C^4)$ the functions $g_s(\mathbf p) = u^{s\dagger}(p)\hat f(\mathbf p)/\sqrt{2E_{\mathbf p}}$ and $h_s(\mathbf p) = \hat f(-\mathbf p)^\dagger v^s(p)/\sqrt{2E_{\mathbf p}}$ are in $\mathcal S$, and at $t = 0$, $\int d^3x\,f^\dagger\psi = \sum_s\bigl(a^s(g_s) + b^{s\dagger}(h_s)\bigr)$ with the smeared operators of [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]].
+>
+> **What the derivation shows**
+> - Four modes per momentum: two eigenvalues $\pm E_{\mathbf p}$ of $h(\mathbf p)$, each twice; the negative-energy eigenvectors appear, after relabelling, as $v^s(p)e^{+ip\cdot x}$.
+> - Assumptions used: $m > 0$ (smooth spinors), fall-off or smearing.
+> - Used next: mode extraction ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]]) and $H$ in modes ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]]).
+
+^der-c5b-1-2
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-3|P1, step 3]]
+
+> [!theorem] Theorem §C5b.1.3: Mode Extraction
+> At any time $t$, with the spinors of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-9|Theorem §C5a.5.9]] and [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]],
+>
+> $$
+> a^s_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{ip\cdot x}\,u^{s\dagger}(p)\,\psi(x), \qquad b^{s\dagger}_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\;e^{-ip\cdot x}\,v^{s\dagger}(p)\,\psi(x) ,
+> $$
+>
+> and by adjoints $a^{s\dagger}_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{-ip\cdot x}\psi^\dagger(x)u^s(p)$, $b^s_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}\psi^\dagger(x)v^s(p)$: $a$ and $b^\dagger$ come from $\psi$, $a^\dagger$ and $b$ from $\psi^\dagger$. The right sides do not depend on $t$. As identities of operator-valued distributions in $\mathbf p$ they hold after smearing, $a^s(g) = \int d^3x\,(F^s_g)^\dagger\psi$ with $F^s_g(x) = \int\frac{d^3p}{(2\pi)^3}\frac{g(\mathbf p)}{\sqrt{2E_{\mathbf p}}}u^s(p)e^{-ip\cdot x}$.
+>
+> *Source: Yu §5.4.3, eqs. (5.224)–(5.227) · the user's pre-course notes, §5.5 (verified there)*
+
+^thm-c5b-1-3
+
+> [!derivation]- Derivation
+> **1. Substitute.** Insert [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] with variable $\mathbf q$ and spin label $r$:
+>
+> $$
+> \int d^3x\,e^{ip\cdot x}u^{s\dagger}(p)\psi(x) = \int d^3x\int\frac{d^3q}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf q}}}\sum_r\Bigl(u^{s\dagger}(p)u^r(q)\,a^r_{\mathbf q}\,e^{i(p-q)\cdot x} + u^{s\dagger}(p)v^r(q)\,b^{r\dagger}_{\mathbf q}\,e^{i(p+q)\cdot x}\Bigr) .
+> $$
+>
+> **2. Split the exponentials.** $e^{i(p-q)\cdot x} = e^{i(E_{\mathbf p} - E_{\mathbf q})t}e^{-i(\mathbf p - \mathbf q)\cdot\mathbf x}$ and $e^{i(p+q)\cdot x} = e^{i(E_{\mathbf p} + E_{\mathbf q})t}e^{-i(\mathbf p + \mathbf q)\cdot\mathbf x}$; the time phases ride along ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], the split-exponential rule; exchange of the $\mathbf x$- and $\mathbf q$-integrals valid for wave packets).
+>
+> **3. The $d^3x$ integrals.** $\int d^3x\,e^{-i(\mathbf p \mp \mathbf q)\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf p \mp \mathbf q)$, identities in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
+>
+> **4. Integrate the deltas over $\mathbf q$.** First term: $\mathbf q = \mathbf p$, phase $1$, $E_{\mathbf q} = E_{\mathbf p}$; the smooth prefactor is evaluated on the support ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). Second term: $\mathbf q = -\mathbf p$, so $q = (E_{\mathbf p}, -\mathbf p) = \tilde p$ and the phase is $e^{2iE_{\mathbf p}t}$:
+>
+> $$
+> \frac{1}{\sqrt{2E_{\mathbf p}}}\sum_r\Bigl(u^{s\dagger}(p)u^r(p)\,a^r_{\mathbf p} + u^{s\dagger}(p)v^r(\tilde p)\,b^{r\dagger}_{-\mathbf p}\,e^{2iE_{\mathbf p}t}\Bigr) .
+> $$
+>
+> **5. Orthogonality.** $u^{s\dagger}(p)u^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]]); $u^{s\dagger}(p)v^r(\tilde p) = 0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]). Dropped: the whole $b^\dagger$ term, by the orthogonality of the $\pm E$ eigenvectors of $h(\mathbf p)$, together with its time dependence. What remains is $\sqrt{2E_{\mathbf p}}\,a^s_{\mathbf p}$; divide by $\sqrt{2E_{\mathbf p}}$.
+>
+> **6. The $b^\dagger$ formula.** The same steps with $e^{-ip\cdot x}v^{s\dagger}(p)$: the $a$ term now has $\int d^3x\,e^{-i(p+q)\cdot x}$, so $\mathbf q = -\mathbf p$ and the factor $v^{s\dagger}(p)u^r(\tilde p) = 0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]); the $b^\dagger$ term has $\mathbf q = \mathbf p$, phase $1$, and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]). The adjoint formulas follow by taking adjoints.
+>
+> **7. Smeared form.** Multiply the $a$ formula by $\overline{g(\mathbf p)}$ and integrate $\int\frac{d^3p}{(2\pi)^3}$: the $\mathbf p$-integral of $\overline{g}\,e^{ip\cdot x}u^{s\dagger}/\sqrt{2E}$ is $(F^s_g)^\dagger$, a Schwartz function of $\mathbf x$ for $g \in \mathcal S$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]]), so $a^s(g) = \int d^3x\,(F^s_g)^\dagger\psi$ is a smeared field.
+>
+> ⚑ By-product: the extraction uses the positive product $\int d^3x\,\psi_1^\dagger\psi_2$, not the indefinite Klein–Gordon product → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-2|Remark: A positive inner product]].
+>
+> **What the derivation shows**
+> - Time independence comes from the mode functions solving the Dirac equation; the $b^\dagger$ admixture is killed by $u^\dagger(p)v(\tilde p) = 0$, not by a mass-shell argument.
+> - Used next: the algebra of the mode operators ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-7|Theorem §C5b.1.7]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]]).
+
+^der-c5b-1-3
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+
+> [!remark] Remark: A positive inner product
+> With $f^s_{\mathbf p} \equiv u^s(p)e^{-ip\cdot x}/\sqrt{2E_{\mathbf p}}$ and $g^s_{\mathbf p} \equiv v^s(p)e^{ip\cdot x}/\sqrt{2E_{\mathbf p}}$, [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]] reads $a^s_{\mathbf p} = \langle f^s_{\mathbf p}, \psi\rangle$ and $b^{s\dagger}_{\mathbf p} = \langle g^s_{\mathbf p}, \psi\rangle$ with $\langle\chi, \psi\rangle = \int d^3x\,\chi^\dagger\psi$, a positive and conserved product (its density is the charge density $\psi^\dagger\psi$ of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]]). For the scalar the conserved product was the Klein–Gordon one, indefinite, and the negative-frequency coefficient came out with a minus sign, $a^\dagger_{\mathbf p} = -(f^*_{\mathbf p}, \phi)$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^rem-c2a-2-3|§C2a.2, Remark: Why this inner product, and why it is indefinite]]). Here both kinds of coefficient come out with a plus sign. The indefiniteness has not disappeared: it has moved into the energy ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-6|Theorem §C5b.1.6]]).
+>
+> *Source: Yu §5.4.3, eqs. (5.224)–(5.227) · PS §3.5, p. 53 (eigenfunctions of $h_D$)*
+
+^rem-c5b-1-2
+
+> [!theorem] Theorem §C5b.1.4: The Hamiltonian in Modes, before Any Algebra
+> Substituting the expansion of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] into $H = \int d^3x\,\psi^\dagger h_D\psi$ ([[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]]) gives, with the operators in the order in which they arise and no (anti)commutation relation used,
+>
+> $$
+> H = \sum_{s}\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^s_{\mathbf p}b^{s\dagger}_{\mathbf p}\Bigr) ,
+> $$
+>
+> independent of time. The terms that change the number of quanta ($a^\dagger b^\dagger$, $ba$) vanish identically.
+>
+> *Source: Yu §5.4.3, eq. (5.223) · PS §3.5, eq. (3.90) (in their provisional labelling) · the user's pre-course notes, §5.5*
+
+^thm-c5b-1-4
+
+> [!derivation]- Derivation
+> **1. $h_D$ on the modes.** By Steps 3 and 5 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-2|Derivation §C5b.1.2]], $h_D\bigl(u^r(q)e^{-iq\cdot x}\bigr) = E_{\mathbf q}u^r(q)e^{-iq\cdot x}$ and $h_D\bigl(v^r(q)e^{iq\cdot x}\bigr) = -E_{\mathbf q}v^r(q)e^{iq\cdot x}$ (the spatial momentum of $e^{iq\cdot x}$ is $-\mathbf q$, and $h(-\mathbf q)v^r(q) = -E_{\mathbf q}v^r(q)$). So
+>
+> $$
+> h_D\psi = \int\frac{d^3q}{(2\pi)^3}\frac{E_{\mathbf q}}{\sqrt{2E_{\mathbf q}}}\sum_r\Bigl(a^r_{\mathbf q}u^r(q)e^{-iq\cdot x} - b^{r\dagger}_{\mathbf q}v^r(q)e^{iq\cdot x}\Bigr) .
+> $$
+>
+> **2. Multiply by $\psi^\dagger$, all four terms.** With $\psi^\dagger = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_s\bigl(a^{s\dagger}_{\mathbf p}u^{s\dagger}(p)e^{ip\cdot x} + b^s_{\mathbf p}v^{s\dagger}(p)e^{-ip\cdot x}\bigr)$ (variable $\mathbf p$, label $s$), keeping each operator product in its order:
+>
+> $$
+> \psi^\dagger h_D\psi = \int\frac{d^3p\,d^3q}{(2\pi)^6}\frac{E_{\mathbf q}}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(q)\,a^{s\dagger}_{\mathbf p}a^r_{\mathbf q}e^{i(p-q)\cdot x} - u^{s\dagger}(p)v^r(q)\,a^{s\dagger}_{\mathbf p}b^{r\dagger}_{\mathbf q}e^{i(p+q)\cdot x} + v^{s\dagger}(p)u^r(q)\,b^s_{\mathbf p}a^r_{\mathbf q}e^{-i(p+q)\cdot x} - v^{s\dagger}(p)v^r(q)\,b^s_{\mathbf p}b^{r\dagger}_{\mathbf q}e^{-i(p-q)\cdot x}\Bigr] .
+> $$
+>
+> **3. The $d^3x$ integral.** As in Steps 2–3 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-3|Derivation §C5b.1.3]] (split exponentials, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]; plane-wave delta in $\mathcal S'$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]): the $p - q$ terms give $(2\pi)^3\delta^3(\mathbf p - \mathbf q)e^{\pm i(E_{\mathbf p} - E_{\mathbf q})t}$, the $p + q$ terms $(2\pi)^3\delta^3(\mathbf p + \mathbf q)e^{\pm i(E_{\mathbf p} + E_{\mathbf q})t}$.
+>
+> **4. Integrate over $\mathbf q$.** In the first and fourth terms $\mathbf q = \mathbf p$, phase $1$, prefactor $E_{\mathbf p}/2E_{\mathbf p} = \frac12$; in the second and third $\mathbf q = -\mathbf p$, $q = \tilde p$, phases $e^{\pm2iE_{\mathbf p}t}$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1):
+>
+> $$
+> H = \int\frac{d^3p}{(2\pi)^3}\,\frac12\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(p)\,a^{s\dagger}_{\mathbf p}a^r_{\mathbf p} - v^{s\dagger}(p)v^r(p)\,b^s_{\mathbf p}b^{r\dagger}_{\mathbf p} - u^{s\dagger}(p)v^r(\tilde p)\,a^{s\dagger}_{\mathbf p}b^{r\dagger}_{-\mathbf p}e^{2iE_{\mathbf p}t} + v^{s\dagger}(p)u^r(\tilde p)\,b^s_{\mathbf p}a^r_{-\mathbf p}e^{-2iE_{\mathbf p}t}\Bigr] .
+> $$
+>
+> **5. Number-changing terms vanish.** $u^{s\dagger}(p)v^r(\tilde p) = v^{s\dagger}(p)u^r(\tilde p) = 0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]). Dropped: both time-dependent terms, by spinor orthogonality alone. (For the scalar fields the same terms died by the mass shell, by a mixed commutator, or by cancellation: [[§C2a.5 The Complex Scalar Field and Its Charge#^der-c2a-5-6|Derivation §C2a.5.6]], What the derivation shows.)
+>
+> **6. Normalizations.** $u^{s\dagger}(p)u^r(p) = v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]); with the $\frac12$ this gives $E_{\mathbf p}\bigl(a^{s\dagger}a^s - b^sb^{s\dagger}\bigr)$, summed over $s$. No time dependence is left.
+>
+> ⚑ By-product: the $b$ term carries a minus sign and the order $bb^\dagger$; for c-number amplitudes the classical energy is indefinite → [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-6|Theorem §C5b.1.6]]; for operators, which way it goes depends on the algebra → [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]].
+>
+> **What the derivation shows**
+> - $H$ is diagonal in the modes before any quantization rule is chosen; only the reordering of $bb^\dagger$ remains to be done.
+> - Assumptions used: the operator form of $H$ (on solutions), smearing for the exchange of integrals.
+
+^der-c5b-1-4
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+
+> [!theorem] Theorem §C5b.1.5: The Charge in Modes, before Any Algebra
+> For the charge $Q \equiv \int d^3x\,\psi^\dagger\psi$, the time component of the vector current $\bar\psi\gamma^\mu\psi$ of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]] integrated over space (normalized as in PS; the Noether charge of $\psi \to e^{i\alpha}\psi$ in the sign convention of [[§C1.11 Noether's Theorem#^cau-c1-11-3|§C1.11, Caution: Sign and normalization of the U(1) current]] is $-Q$), the expansion of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] gives, in the order as it arises,
+>
+> $$
+> Q = \sum_s\int\frac{d^3p}{(2\pi)^3}\Bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^s_{\mathbf p}b^{s\dagger}_{\mathbf p}\Bigr) .
+> $$
+>
+> *Source: PS §3.5, p. 62 (first form of eq. (3.113)) · Yu §5.5.3, eqs. (5.264)–(5.267)*
+
+^thm-c5b-1-5
+
+> [!derivation]- Derivation
+> **1. Differences from Derivation §C5b.1.4.** Replace $h_D\psi$ by $\psi$: in Step 1 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-4|Derivation §C5b.1.4]] the factor $E_{\mathbf q}$ becomes $1$ and the minus sign in front of the $b^\dagger$ term becomes a plus. Steps 2–4 then give
+>
+> $$
+> Q = \int\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\mathbf p}}\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(p)\,a^{s\dagger}_{\mathbf p}a^r_{\mathbf p} + v^{s\dagger}(p)v^r(p)\,b^s_{\mathbf p}b^{r\dagger}_{\mathbf p} + u^{s\dagger}(p)v^r(\tilde p)\,a^{s\dagger}_{\mathbf p}b^{r\dagger}_{-\mathbf p}e^{2iE_{\mathbf p}t} + v^{s\dagger}(p)u^r(\tilde p)\,b^s_{\mathbf p}a^r_{-\mathbf p}e^{-2iE_{\mathbf p}t}\Bigr] .
+> $$
+>
+> **2. Orthogonality and normalization.** The last two terms vanish by [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]; the first two give $2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]), which cancels the $1/2E_{\mathbf p}$.
+>
+> **What the derivation shows**
+> - Where $H$ had a relative minus sign between the species, $Q$ has a plus: the positive density $\psi^\dagger\psi$ in modes.
+
+^der-c5b-1-5
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-4|Derivation §C5b.1.4]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]
+
+> [!theorem] Theorem §C5b.1.6: The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive
+> For a classical Dirac field with c-number amplitudes $a^s, b^s \in \mathcal S(\mathbb R^3)$ in the expansion of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]], with $H$ and $Q$ of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]] and [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]],
+>
+> $$
+> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(|a^s_{\mathbf p}|^2 - |b^s_{\mathbf p}|^2\bigr), \qquad Q = \sum_s\int\frac{d^3p}{(2\pi)^3}\bigl(|a^s_{\mathbf p}|^2 + |b^s_{\mathbf p}|^2\bigr) = \int d^3x\,\psi^\dagger\psi \ge 0 :
+> $$
+>
+> $H$ takes every real value and is unbounded below; $Q$ vanishes only for $\psi = 0$. These are the negative energies and the positive density of the Dirac equation of Quantum Mechanics ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]]), now for the classical field.
+>
+> *Source: PS §3.5, p. 54 (after eq. (3.90)) · Yu §5.5.1, after eq. (5.237) · the user's pre-course notes, §5.4 (end) and §5.5*
+
+^thm-c5b-1-6
+
+> [!derivation]- Derivation
+> **1. c-numbers commute.** For complex amplitudes $b^sb^{s\ast} = |b^s|^2$, so [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]] and [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]] become the displayed integrals (absolutely convergent for Schwartz amplitudes).
+>
+> **2. Unbounded below.** Take $a = 0$ and $b^1 = \lambda g$ with $g \ne 0$: $H = -\lambda^2\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}|g|^2 \to -\infty$ as $\lambda \to \infty$. With $b = 0$, $H$ is as large as one likes; by continuity in $\lambda$ every real value occurs.
+>
+> **3. Positive charge.** $Q$ is a sum of squares; it is $\int d^3x\,\psi^\dagger\psi$ by its definition, and vanishes only if every amplitude does, i.e. $\psi = 0$ (Plancherel, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]).
+>
+> **What the derivation shows**
+> - Classically the Dirac field has the opposite pathology from the complex scalar, whose charge was indefinite and energy positive ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]]). Quantization has to exchange the two roles.
+
+^der-c5b-1-6
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]
+
+## Why commutators fail
+
+> [!theorem] Theorem §C5b.1.7: Commutators Give the Antiparticle Modes a Negative Algebra
+> Suppose the canonical pairs $(\psi_a, \pi_a = i\psi^\dagger_a)$ of [[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]] are quantized by the bosonic rule of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]], i.e. at equal times
+>
+> $$
+> [\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)] = \delta_{ab}\,\delta^3(\mathbf x - \mathbf y), \qquad [\psi_a(\mathbf x), \psi_b(\mathbf y)] = [\psi^\dagger_a(\mathbf x), \psi^\dagger_b(\mathbf y)] = 0 .
+> $$
+>
+> Then the mode operators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] obey
+>
+> $$
+> [a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}] = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q), \qquad [b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}] = -(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q) ,
+> $$
+>
+> and all other commutators, including the mixed ones, vanish (identities of distributions in $(\mathbf p, \mathbf q)$; smeared, $[b^r(g), b^{s\dagger}(h)] = -\delta^{rs}\int\frac{d^3p}{(2\pi)^3}\overline gh$).
+>
+> *Source: Yu §5.5.1, eqs. (5.228)–(5.236) · the user's pre-course notes, §5.5 ("Failure of canonical commutation relations") · PS §3.5, eqs. (3.86)–(3.90)*
+
+^thm-c5b-1-7
+
+> [!derivation]- Derivation
+> **1. The canonical relation in terms of $\psi^\dagger$.** $[\psi_a, \pi_b] = i\delta_{ab}\delta^3$ with $\pi_b = i\psi_b^\dagger$ is $[\psi_a, \psi_b^\dagger] = \delta_{ab}\delta^3$; reversed, $[\psi_b^\dagger(\mathbf y), \psi_a(\mathbf x)] = -\delta_{ab}\delta^3(\mathbf x - \mathbf y)$.
+>
+> **2. $[a, a^\dagger]$.** With [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]] at a common time $t$, pulling the c-number spinors and phases out of the commutator,
+>
+> $$
+> [a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}] = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,u^{r\dagger}_a(p)\,[\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)]\,u^s_b(q) = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,u^{r\dagger}(p)u^s(q) ,
+> $$
+>
+> the $\delta^3(\mathbf x - \mathbf y)$ having been integrated over $\mathbf y$ (the pairing of [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]], with the mode functions made test functions by smearing in momentum). The $d^3x$ integral is $(2\pi)^3\delta^3(\mathbf p - \mathbf q)e^{i(E_{\mathbf p} - E_{\mathbf q})t}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]); on its support the phase is $1$ and $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]]): $+(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$.
+>
+> **3. $[b, b^\dagger]$: the same relation in the opposite order.** Now $b^r_{\mathbf p}$ is built from $\psi^\dagger$ and $b^{s\dagger}_{\mathbf q}$ from $\psi$:
+>
+> $$
+> [b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}] = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,d^3y\;e^{ip\cdot x - iq\cdot y}\,v^{s\dagger}_b(q)\,[\psi^\dagger_a(\mathbf x), \psi_b(\mathbf y)]\,v^r_a(p) = -\frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,v^{s\dagger}(q)v^r(p) ,
+> $$
+>
+> by Step 1. The same delta and $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]) give $-(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$. ⚑ By-product: the sign comes only from the order in which the canonical relation enters → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-3|Remark: One algebraic fact]].
+>
+> **4. Mixed: $[a, b]$.** Both $a^r_{\mathbf p}$ (from $\psi$) and $b^s_{\mathbf q}$ (from $\psi^\dagger$) enter: $[a^r_{\mathbf p}, b^s_{\mathbf q}] = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\,e^{i(p+q)\cdot x}u^{r\dagger}(p)v^s(q) = \frac{e^{2iE_{\mathbf p}t}}{2E_{\mathbf p}}(2\pi)^3\delta^3(\mathbf p + \mathbf q)\,u^{r\dagger}(p)v^s(\tilde p) = 0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]). Dropped: the spinor product, on the support of δ.
+>
+> **5. The rest.** $[a, a]$ and $[a, b^\dagger]$ involve only $[\psi, \psi] = 0$; $[b, b]$ and $[a^\dagger, b]$ only $[\psi^\dagger, \psi^\dagger] = 0$; the remaining ones are adjoints of these.
+>
+> **6. Smeared.** Multiply Step 3 by $\overline{g(\mathbf p)}h(\mathbf q)$ and integrate (as in [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]): $[b^r(g), b^{s\dagger}(h)] = -\delta^{rs}\int\frac{d^3p}{(2\pi)^3}\overline gh$.
+>
+> **What the derivation shows**
+> - The computation is that of the scalar fields ([[§C2a.5 The Complex Scalar Field and Its Charge#^der-c2a-5-3|Derivation §C2a.5.3]]) with the positive Dirac product in place of the Klein–Gordon product; the minus sign is not a slip but the order of $\psi^\dagger$ and $\psi$.
+
+^der-c5b-1-7
+
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]
+
+> [!remark] Remark: One algebraic fact
+> $a$ is extracted from $\psi$ and $a^\dagger$ from $\psi^\dagger$, but $b$ from $\psi^\dagger$ and $b^\dagger$ from $\psi$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]]). So $[a, a^\dagger]$ contains $[\psi, \psi^\dagger]$ and $[b, b^\dagger]$ contains $[\psi^\dagger, \psi]$: the same canonical relation, in the opposite order. A commutator changes sign under that exchange, $[\psi^\dagger, \psi] = -[\psi, \psi^\dagger]$; an anticommutator does not, $\{\psi^\dagger, \psi\} = \{\psi, \psi^\dagger\}$. This single fact is the whole difference between the two quantizations of the Dirac field.
+>
+> *Source: the user's pre-course notes, §5.5 ("the same canonical relation enters the two computations in opposite order")*
+
+^rem-c5b-1-3
+
+> [!theorem] Theorem §C5b.1.8: Commutators Allow No Positive Norm with Positive Energy
+> Quantize with the commutators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-7|Theorem §C5b.1.7]]; $H$ is that of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]].
+> 1. If a normalized $|0\rangle$ is annihilated by every $a^s_{\mathbf p}$ and $b^s_{\mathbf p}$, then $\|b^{s\dagger}(g)|0\rangle\|^2 = -\int\frac{d^3p}{(2\pi)^3}|g|^2 < 0$ for every $g \ne 0$ in $\mathcal S$: the antiparticle states have negative norm, although $[H, b^{s\dagger}_{\mathbf p}] = +E_{\mathbf p}b^{s\dagger}_{\mathbf p}$ still raises the energy.
+> 2. If instead $d^s_{\mathbf p} \equiv b^{s\dagger}_{\mathbf p}$ annihilates $|0\rangle$, then $[d, d^\dagger] = +(2\pi)^3\delta^{rs}\delta^3$, norms are positive, and $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}\bigl(a^{s\dagger}a^s - d^{s\dagger}d^s\bigr)$: the normalized $n$-quantum states $(n!)^{-1/2}d^{s\dagger}(g)^n|0\rangle$, $\int\frac{d^3p}{(2\pi)^3}|g|^2 = 1$, have energy expectation $-n\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}|g|^2$, unbounded below.
+>
+> Either way there is no Hilbert space with positive norm on which $H$ is bounded below: the Dirac field cannot be quantized with commutators.
+>
+> *Source: PS §3.5, p. 54 (after eq. (3.90)) · Yu §5.5.1, after eq. (5.237), and Exercise 5.10 as worked in the user's pre-course notes, §5.5 · the user's pre-course notes, §5.5 ("The disease is sharper than a naive reading suggests")*
+
+^thm-c5b-1-8
+
+> [!derivation]- Derivation
+> **1. Smeared operators.** $b^s(g) = \int\frac{d^3p}{(2\pi)^3}\overline{g(\mathbf p)}b^s_{\mathbf p}$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]]); by Step 6 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-7|Derivation §C5b.1.7]], $[b^s(g), b^{s\dagger}(g)] = -\int\frac{d^3p}{(2\pi)^3}|g|^2$.
+>
+> **2. Part 1, the norm.** Since $b^s(g)|0\rangle = 0$, $\|b^{s\dagger}(g)|0\rangle\|^2 = \langle0|b^s(g)b^{s\dagger}(g)|0\rangle = \langle0|[b^s(g), b^{s\dagger}(g)]|0\rangle + \langle0|b^{s\dagger}(g)b^s(g)|0\rangle = -\int\frac{d^3p}{(2\pi)^3}|g|^2 + 0$. A vector of negative squared norm does not exist in a Hilbert space. (Unsmeared, $\langle\mathbf p^-|\mathbf p^-\rangle = -2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$, the user's pre-course notes; the smeared form avoids the valueless $\delta^3(\mathbf 0)$, [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].)
+>
+> **3. Part 1, the spectrum.** $[-E_{\mathbf q}b^r_{\mathbf q}b^{r\dagger}_{\mathbf q}, b^{s\dagger}_{\mathbf p}] = -E_{\mathbf q}[b^r_{\mathbf q}, b^{s\dagger}_{\mathbf p}]b^{r\dagger}_{\mathbf q}$ (the other term has $[b^{r\dagger}, b^{s\dagger}] = 0$) $= +E_{\mathbf q}(2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)b^{r\dagger}_{\mathbf q}$; integrating, $[H, b^{s\dagger}_{\mathbf p}] = E_{\mathbf p}b^{s\dagger}_{\mathbf p}$. The $a$ part commutes with $b^\dagger$. So $b^\dagger$ raises the eigenvalue: the failure is in the metric, not in the spectrum (the user's pre-course notes). The diagonal matrix element $\langle0|b^s(g)\,H\,b^{s\dagger}(g)|0\rangle$ is then the (positive) energy times the negative squared norm of Step 2, hence negative: the negative energy expectation values recorded in the user's pre-course notes come from the indefinite metric.
+>
+> **4. Part 2, relabel.** With $d \equiv b^\dagger$, $d^\dagger = b$: $[d^r_{\mathbf p}, d^{s\dagger}_{\mathbf q}] = [b^{r\dagger}_{\mathbf p}, b^s_{\mathbf q}] = -[b^s_{\mathbf q}, b^{r\dagger}_{\mathbf p}] = +(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$: a bosonic oscillator algebra with positive norms, as for the scalar ([[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]]). In $H$, $-b^sb^{s\dagger} = -d^{s\dagger}d^s$ with no reordering, hence no constant.
+>
+> **5. Part 2, the energy.** As for the scalar, $[-\int E\,d^\dagger d, d^{s\dagger}(g)] = -d^{s\dagger}(E_{\mathbf p}g)$, so $d^{s\dagger}(g)$ lowers the energy by the packet's mean energy; $n$ quanta may occupy one packet because the $d^\dagger$ commute ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]), and pushing $H$ through the $n$ creation operators one at a time (as in [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-2|Derivation §C2a.4.2]], step 4) gives $\langle H\rangle = -n\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}|g|^2$, with norm $1$ for the stated normalization. As $n \to \infty$ the energy goes to $-\infty$ (PS: "by creating more and more particles with $b^\dagger$, we can lower the energy indefinitely").
+>
+> **6. No third option.** The canonical relations fix $[b, b^\dagger] < 0$ (Theorem §C5b.1.7); a vacuum must be annihilated by one of $b$, $b^\dagger$ in each mode for a Fock space to be built; Steps 2 and 5 exhaust the two choices.
+>
+> **What the derivation shows**
+> - The two textbook diagnoses are the two horns of one dilemma: Yu keeps $b$ as annihilator and finds negative norms; Peskin–Schroeder keep positive norms and find energy unbounded below.
+> - Assumptions used: a Fock vacuum, and $H$ as computed before any reordering.
+> - Used next: the cure ([[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]]); the causality version of the same failure is [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-5|Theorem §C5b.2.5]].
+
+^der-c5b-1-8
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-7|Theorem §C5b.1.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
+
+## Anticommutators
+
+> [!principle] Principle §C5b.1.9: Equal-Time Canonical Anticommutation Relations
+> The Dirac field is quantized by promoting the canonical pairs $(\psi_a, \pi_a = i\psi^\dagger_a)$ of [[§C5b.1 Quantizing the Dirac Field#^mod-c5b-1-1|Model §C5b.1.1]] to operators with, at equal times,
+>
+> $$
+> \{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = \delta_{ab}\,\delta^3(\mathbf x - \mathbf y), \qquad \{\psi_a(\mathbf x), \psi_b(\mathbf y)\} = \{\psi^\dagger_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = 0 ,
+> $$
+>
+> equivalently $\{\psi_a, \pi_b\} = i\delta_{ab}\delta^3$, and taking as Hamiltonian the $H$ of the model read as an operator. ($\{A, B\} \equiv AB + BA$.) This is **Jordan–Wigner** quantization, in place of the commutators of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-1|Principle §C2a.1.1]].
+>
+> *Domain:* fields of half-odd-integer spin (here the Dirac field), Schrödinger-picture operators or Heisenberg operators at a common time; integer-spin fields keep commutators. The relations are identities of operator-valued distributions ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-10|Theorem §C5b.1.10]]). The operator ordering in $H$ is not fixed by the principle ([[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]]). The choice is forced by positivity ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]]) and by causality ([[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-5|Theorem §C5b.2.5]]).
+>
+> *Source: PS §3.5, eqs. (3.96), (3.102) · Yu §5.5.2, eqs. (5.238)–(5.239) · the user's pre-course notes, §5.5, eq. (car)*
+
+^pr-c5b-1-9
+
+> [!definition] Definition §C5b.1.1: Smeared Dirac Field on a Time Slice
+> For $f \in \mathcal S(\mathbb R^3, \mathbb C^4)$ ([[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], componentwise), the **smeared Dirac field** and its adjoint on a time slice are
+>
+> $$
+> \psi(f) = \int d^3x\;f(\mathbf x)^\dagger\psi(\mathbf x) = \sum_a\int d^3x\;\overline{f_a(\mathbf x)}\,\psi_a(\mathbf x), \qquad \psi^\dagger(f) \equiv \psi(f)^\dagger = \int d^3x\;\psi^\dagger(\mathbf x)f(\mathbf x) ;
+> $$
+>
+> $\psi(f)$ is antilinear and $\psi^\dagger(f)$ linear in $f$, and $\langle f, g\rangle \equiv \int d^3x\,f^\dagger g$ is the $L^2(\mathbb R^3, \mathbb C^4)$ product. As for the scalar ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]]), $\psi(\mathbf x)$ is the kernel of these operators, an operator-valued distribution ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 4 §4.8 and App. A §A.4 (smeared operators, for the scalar) · written here for the Dirac field*
+
+^def-c5b-1-1
+
+> [!theorem] Theorem §C5b.1.10: The Anticommutators Are Identities after Smearing; Smeared Fermi Fields Are Bounded
+> For $f, g \in \mathcal S(\mathbb R^3, \mathbb C^4)$ ([[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-1|Def. §C5b.1.1]]):
+> 1. [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]] means $\{\psi(f), \psi^\dagger(g)\} = \langle f, g\rangle$ and $\{\psi(f), \psi(g)\} = 0$.
+> 2. $\psi(f)^2 = 0$, and $\|\psi(f)\| = \|\psi^\dagger(f)\| = \|f\|_{L^2}$: the smeared field is a **bounded** operator, and extends by continuity to every $f \in L^2(\mathbb R^3, \mathbb C^4)$.
+> 3. The field at a point is still not an operator: it would need $\|f\|_{L^2} = \infty$ ($f \to \delta$), and $\{\psi_a(\mathbf x), \psi^\dagger_a(\mathbf x)\} = \delta^3(\mathbf 0)$ has no value.
+>
+> Bosonic smeared fields are unbounded ([[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]], Step 4: each pair with $\int fg = 1$ is a canonical pair $[Q, P] = i$, which has no bounded solutions).
+>
+> *Source: stated and derived here (standard: Bratteli & Robinson, Operator Algebras and Quantum Statistical Mechanics 2, §5.2.2) · the user's PHY 513 notes, App. A §A.4 (smeared operators)*
+
+^thm-c5b-1-10
+
+> [!derivation]- Derivation
+> **1. Part 1.** Exactly Steps 1–3 of [[§C2a.1 Canonical Quantization of Fields#^der-c2a-1-2|Derivation §C2a.1.2]] with the anticommutator in place of the commutator (it is bilinear too): pairing $\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\}$ with $\overline{f_a(\mathbf x)}g_b(\mathbf y)$ gives $\{\psi(f), \psi^\dagger(g)\}$ on the left and $\sum_a\int d^3x\,\overline{f_a}g_a = \langle f, g\rangle$ on the right, the kernel $\delta_{ab}\delta^3(\mathbf x - \mathbf y)$ acting as in Step 2 there ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], change of variables with Jacobian $1$). The other relation has kernel $0$.
+>
+> **2. Nilpotency.** $A \equiv \psi(f)$ satisfies $2A^2 = \{A, A\} = 0$ by part 1.
+>
+> **3. A projection.** Let $c = \|f\|^2_{L^2} > 0$ and $P \equiv A^\dagger A/c$. Then $P^\dagger = P$ and, using $AA^\dagger = c - A^\dagger A$ (part 1 with $g = f$) and $A^2 = 0$,
+>
+> $$
+> P^2 = \frac{A^\dagger(AA^\dagger)A}{c^2} = \frac{A^\dagger(c - A^\dagger A)A}{c^2} = \frac{A^\dagger A}{c} - \frac{(A^\dagger)^2A^2}{c^2} = P .
+> $$
+>
+> **4. The norm.** For any state $\Psi$, $\|A\Psi\|^2 = \langle\Psi, A^\dagger A\Psi\rangle = c\,\langle\Psi, P\Psi\rangle \le c\|\Psi\|^2$, with equality on the range of $P$. That range is not $\{0\}$: $P = 0$ would give $A = 0$, hence $AA^\dagger + A^\dagger A = 0 \ne c$. So $\|A\| = \sqrt c = \|f\|_{L^2}$, and $\|A^\dagger\| = \|A\|$. A bounded operator depending continuously on $f$ in the $L^2$ norm extends to the closure of $\mathcal S$ in $L^2$, which is $L^2$.
+>
+> **5. Part 3.** For a nascent delta $f_\varepsilon = \rho_\varepsilon e_a$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 3), $\|f_\varepsilon\|^2_{L^2} = \int\rho_\varepsilon^2 = \varepsilon^{-3}\int\rho^2 \to \infty$: no limit operator. The coincident anticommutator is δ at its singular point ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 3).
+>
+> ⚑ By-product: $\psi(f)^2 = 0$ is the Pauli principle at the level of the field: a smeared Fermi field is a two-level system for every $f$ → [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-19|Theorem §C5b.1.19]], [[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]], 3.
+>
+> **What the derivation shows**
+> - Anticommutators make the smeared fields bounded, so domain questions that the scalar field raises do not arise for fermions; the singularity is only in the point limit.
+> - Used next: the mode algebra ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]]).
+
+^der-c5b-1-10
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-1|Def. §C5b.1.1]], [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-2|Theorem §C2a.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
+
+> [!remark] Remark: What the field adds to the anticommutators of second quantization
+> The relations of [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]] have the form of the field-operator relations of nonrelativistic second quantization ([[§C12.2★ Second Quantization#^thm-c12-2-3|QM Theorem §C12.2.3]], fermion sign), and the mode algebra below has the form of [[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]]. Rule 2 applies; the field adds:
+> - **Two kinds of quanta in one local field.** The nonrelativistic $\hat\psi(\mathbf x)$ contains only annihilators and $\hat\psi^\dagger(\mathbf x)|\mathbf 0\rangle$ is a particle at $\mathbf x$. The Dirac $\psi$ annihilates fermions *and* creates antifermions ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]]); it does not annihilate the vacuum.
+> - **Spinors and relativistic normalization.** The mode functions carry $u^s$, $v^s$ and the factors $(2\pi)^3$, $1/\sqrt{2E_{\mathbf p}}$; the covariant combination is $\{\psi, \bar\psi\} = \gamma^0\delta^3$ at equal times ([[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-2|Theorem §C5b.2.2]]).
+> - **The statistics is not chosen.** Quantum Mechanics postulates the symmetry type per species ([[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^pr-c12-1-4|QM Principle §C12.1.4]]); here commutators are excluded by positivity ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]]) and by causality ([[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-5|Theorem §C5b.2.5]]).
+>
+> *Source: the user's pre-course notes, §5.5 ("this single algebraic fact is the entire difference") · PS §3.5, pp. 57–58*
+
+^rem-c5b-1-4
+
+> [!theorem] Theorem §C5b.1.11: The Mode Algebra of the Dirac Field
+> Under [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]], the mode operators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] satisfy
+>
+> $$
+> \{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = \{b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q) ,
+> $$
+>
+> all other anticommutators vanish (including $\{a, b\}$, $\{a, b^\dagger\}$, $\{a^\dagger, a^\dagger\}$), and conversely these relations give back the principle. As distributions in $(\mathbf p, \mathbf q)$: smeared as in [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], $\{a^r(g), a^{s\dagger}(h)\} = \{b^r(g), b^{s\dagger}(h)\} = \delta^{rs}\int\frac{d^3p}{(2\pi)^3}\overline gh$, and $a^s(g)$, $b^s(g)$ are bounded with norm $\bigl(\int\frac{d^3p}{(2\pi)^3}|g|^2\bigr)^{1/2}$. Two independent species, each with two spin states.
+>
+> *Source: PS §3.5, eqs. (3.97), (3.101) · Yu §5.5.2, eqs. (5.240)–(5.246) · the user's pre-course notes, §5.5*
+
+^thm-c5b-1-11
+
+> [!derivation]- Derivation
+> **1. Same steps, braces instead of brackets.** Steps 2–5 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-7|Derivation §C5b.1.7]] go through verbatim with $\{\cdot, \cdot\}$ for $[\cdot, \cdot]$: c-number factors leave an anticommutator as they leave a commutator, and the pairing of the delta is that of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-10|Theorem §C5b.1.10]].
+>
+> **2. $\{a, a^\dagger\}$.** As Step 2 there: $+(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]]).
+>
+> **3. $\{b, b^\dagger\}$: the difference.** The relation enters as $\{\psi^\dagger_a(\mathbf x), \psi_b(\mathbf y)\} = +\delta_{ab}\delta^3(\mathbf x - \mathbf y)$, symmetric under the exchange that cost a sign before:
+>
+> $$
+> \{b^r_{\mathbf p}, b^{s\dagger}_{\mathbf q}\} = \frac{1}{\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\int d^3x\;e^{i(p-q)\cdot x}\,v^{s\dagger}(q)v^r(p) = \frac{(2\pi)^3\delta^3(\mathbf p - \mathbf q)}{2E_{\mathbf p}}\,2E_{\mathbf p}\delta^{rs}
+> $$
+>
+> ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]]): the normal sign (Yu, after eq. (5.242)).
+>
+> **4. Mixed and like pairs.** $\{a, b\} \propto u^{r\dagger}(p)v^s(\tilde p)(2\pi)^3\delta^3(\mathbf p + \mathbf q) = 0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]); $\{a, a\}$, $\{a, b^\dagger\}$ contain only $\{\psi, \psi\} = 0$; $\{b, b\}$, $\{a^\dagger, b\}$ only $\{\psi^\dagger, \psi^\dagger\} = 0$; the rest are adjoints.
+>
+> **5. Smeared, and bounded.** Pairing with $\overline{g(\mathbf p)}h(\mathbf q)$ gives the smeared relations. With $A = a^s(g)$, $\{A, A\} = 0$ and $\{A, A^\dagger\} = \int|g|^2$: Steps 2–4 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-10|Derivation §C5b.1.10]] give $\|a^s(g)\|^2 = \int\frac{d^3p}{(2\pi)^3}|g|^2$; the same for $b$.
+>
+> **What the derivation shows**
+> - Nothing changes in the computation but the symmetry of the bracket, and the antiparticle algebra acquires the positive sign.
+> - $(a^{s\dagger}(g))^2 = 0$: each smeared mode is occupied at most once.
+
+^der-c5b-1-11
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-7|Derivation §C5b.1.7]], [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-9|Principle §C5b.1.9]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-10|Theorem §C5b.1.10]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-1|Theorem §C5a.6.1]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-3|Theorem §C5a.6.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+
+> [!derivation]- Derivation (second route: from the mode algebra back to the field, by the spin sums)
+> **1. Substitute.** At a common time, with $\psi$ from [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] and $\psi^\dagger$ its adjoint, only $\{a, a^\dagger\}$ and $\{b^\dagger, b\}$ survive:
+>
+> $$
+> \{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = \int\frac{d^3p\,d^3q}{(2\pi)^6\sqrt{4E_{\mathbf p}E_{\mathbf q}}}\sum_{r,s}\Bigl(\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\}u^r_a(p)u^{s*}_b(q)e^{-ip\cdot x + iq\cdot y} + \{b^{r\dagger}_{\mathbf p}, b^s_{\mathbf q}\}v^r_a(p)v^{s*}_b(q)e^{ip\cdot x - iq\cdot y}\Bigr) .
+> $$
+>
+> **2. Integrate $\mathbf q$.** Both anticommutators are $(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$; at equal times $e^{-ip\cdot(x - y)} = e^{i\mathbf p\cdot(\mathbf x - \mathbf y)}$ and $e^{ip\cdot(x - y)} = e^{-i\mathbf p\cdot(\mathbf x - \mathbf y)}$:
+>
+> $$
+> \int\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\Bigl(\sum_su^s(p)u^{s\dagger}(p)\,e^{i\mathbf p\cdot(\mathbf x - \mathbf y)} + \sum_sv^s(p)v^{s\dagger}(p)\,e^{-i\mathbf p\cdot(\mathbf x - \mathbf y)}\Bigr)_{ab} .
+> $$
+>
+> **3. Spin sums.** $\sum_su^su^{s\dagger} = \sum_su^s\bar u^s\gamma^0 = (\slashed{p} + m)\gamma^0$ and $\sum_sv^sv^{s\dagger} = (\slashed{p} - m)\gamma^0$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-7|Theorem §C5a.6.7]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-8|Theorem §C5a.6.8]]; $(\gamma^0)^2 = 1$).
+>
+> **4. Relabel the second term.** $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$): the phase becomes $e^{i\mathbf p\cdot(\mathbf x - \mathbf y)}$ and $\slashed{p} - m \to \gamma^0E_{\mathbf p} + \gamma^ip^i - m$. Adding $\gamma^0E_{\mathbf p} - \gamma^ip^i + m$ from the first term: $2E_{\mathbf p}\gamma^0$; times $\gamma^0$, $2E_{\mathbf p}$.
+>
+> **5. Result.** $\int\frac{d^3p}{(2\pi)^3}e^{i\mathbf p\cdot(\mathbf x - \mathbf y)}\delta_{ab} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). $\{\psi, \psi\}$ contains only $\{a, b^\dagger\} = 0$ and $\{b^\dagger, a\} = 0$, hence vanishes.
+>
+> **What the derivation shows**
+> - The two spin sums add to the identity only after relabelling: the $u$'s and $v$'s alone are incomplete ([[§C5a.6 Normalization, Spin Sums and Helicity#^rem-c5a-6-2|§C5a.6, Remark: Why neither spin sum is the identity]]), and the field needs both species to be local.
+>
+> *Source: PS §3.5, eq. (3.89) (with anticommutators in place of their commutators) · computed here*
+
+^der-c5b-1-11b
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-7|Theorem §C5a.6.7]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-8|Theorem §C5a.6.8]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-4|P1, step 4]]
+
+## Energy, momentum and charge
+
+> [!definition] Definition §C5b.1.2: Normal Ordering of Fermion Operators
+> The **normal-ordered** product $:\!X\!:$ of creation and annihilation operators places all creation operators to the left of all annihilation operators, with a factor $-1$ for every exchange of two fermion operators made in the rearrangement; bosonic operators are moved without sign as in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]. For example $:\!b^r_{\mathbf p}b^{s\dagger}_{\mathbf q}\!: = -b^{s\dagger}_{\mathbf q}b^r_{\mathbf p}$ and $:\!\psi^\dagger_a\psi_b\!:$ is extended linearly through the mode expansion of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]]. Then $\langle0|{:}X{:}|0\rangle = 0$ for the vacuum of [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]].
+>
+> *Source: PS §3.5, after eq. (3.104) ("the infinite constant term that comes from anticommuting $b$ and $b^\dagger$"), §4.7 (sign rule, cited) · Yu §6.3 (fermionic normal products, cited)*
+
+^def-c5b-1-2
+
+> [!theorem] Theorem §C5b.1.12: The Hamiltonian of the Dirac Field
+> With the anticommutators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], the $H$ of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]] is
+>
+> $$
+> H = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) + E^{D}_{\mathrm{vac}}, \qquad :\!H\!: = \sum_s\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) \ge 0 ,
+> $$
+>
+> with the normal ordering of [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]] and the constant $E^D_{\mathrm{vac}}$ of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-13|Theorem §C5b.1.13]]. Both species contribute positive energy $E_{\mathbf p}$ per quantum; $:\!H\!:|0\rangle = 0$.
+>
+> *Source: PS §3.5, eq. (3.104) · Yu §5.5.2, eq. (5.247) · the user's pre-course notes, §5.5, eq. (dirac-H)*
+
+^thm-c5b-1-12
+
+> [!derivation]- Derivation
+> **1. Start from the unreordered form.** $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^s_{\mathbf p}b^{s\dagger}_{\mathbf p})$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]]), valid for any algebra.
+>
+> **2. Reorder with the anticommutator.** $b^s_{\mathbf p}b^{s\dagger}_{\mathbf p} = -b^{s\dagger}_{\mathbf p}b^s_{\mathbf p} + \{b^s_{\mathbf p}, b^{s\dagger}_{\mathbf p}\} = -b^{s\dagger}_{\mathbf p}b^s_{\mathbf p} + (2\pi)^3\delta^3(\mathbf 0)$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]] at coincident labels). Hence $-b^sb^{s\dagger} = +b^{s\dagger}b^s - (2\pi)^3\delta^3(\mathbf 0)$: the minus sign of Theorem §C5b.1.4 is turned into a plus by the anticommutator.
+>
+> **3. Collect.** $H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(a^{s\dagger}a^s + b^{s\dagger}b^s) - \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$. ⚑ By-product: the constant is negative → [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-13|Theorem §C5b.1.13]]. *Sense:* $\delta^3(\mathbf 0)$ has no value; the constant is defined in the box of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
+>
+> **4. Normal order.** By [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]], $:\!a^\dagger a\!: = a^\dagger a$ and $:\!-bb^\dagger\!: = +b^\dagger b$, so $:\!H\!:$ is the operator part; every term ends in an annihilator, so $:\!H\!:|0\rangle = 0$, and $\langle\Psi|{:}H{:}|\Psi\rangle = \sum_s\int E_{\mathbf p}(\|a^s_{\mathbf p}\Psi\|^2 + \|b^s_{\mathbf p}\Psi\|^2) \ge 0$ (read with wave packets, as in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
+>
+> **What the derivation shows**
+> - Positivity of the energy is produced by the reordering sign, and the ordering constant is where the sign of the algebra shows.
+> - Assumptions used: the algebra of Theorem §C5b.1.11; the box for $\delta^3(\mathbf 0)$.
+
+^der-c5b-1-12
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+
+> [!theorem] Theorem §C5b.1.13: The Fermionic Zero-Point Energy Is Negative
+> The ordering constant of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]] is
+>
+> $$
+> E^D_{\mathrm{vac}} = -2V\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p} = -4E_0, \qquad V = (2\pi)^3\delta^3(\mathbf 0) ,
+> $$
+>
+> with $E_0$ the real scalar's zero-point energy of the same mass ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]): $-\frac12E_{\mathbf p}$ for each of the four modes per momentum (two spins, two species), where each bosonic mode gave $+\frac12E_{\mathbf p}$. In a box with cutoff, $E^D_{\mathrm{vac}}(V, \Lambda) = -2\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$, energy density $\approx -\Lambda^4/4\pi^2$ for $\Lambda \gg m$.
+>
+> *Source: the user's pre-course notes, §5.5 (Remark "The fermionic zero-point energy is negative") · Yu §5.5.2, eq. (5.247), §5.5.4, eq. (5.269) · PS §3.5, after eq. (3.104)*
+
+^thm-c5b-1-13
+
+> [!derivation]- Derivation
+> **1. The constant.** From Step 3 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-12|Derivation §C5b.1.12]], $E^D_{\mathrm{vac}} = -\sum_{s=1,2}\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = -2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$, with the dictionary $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], 2. Since $E_0 = V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$, $E^D_{\mathrm{vac}} = -4E_0$.
+>
+> **2. Mode by mode.** For each fermionic mode $c$ ($c = a^s_{\mathbf p}$ or $b^s_{\mathbf p}$; in the box $\{c, c^\dagger\} = 1$ per mode after rescaling by $V$), $c^\dagger c = \frac12[c^\dagger, c] + \frac12\{c, c^\dagger\} = \frac12[c^\dagger, c] + \frac12$. In the box $H = \sum_{\mathbf k,s}E_{\mathbf k}(a^\dagger a - bb^\dagger)$ becomes, with $-bb^\dagger = b^\dagger b - 1$, $\sum E_{\mathbf k}\bigl[(a^\dagger a - \tfrac12) + (b^\dagger b - \tfrac12)\bigr]$ plus $\sum E(\frac12 + \frac12 - 1) = 0$: each of the four modes per momentum is a fermionic oscillator $E(c^\dagger c - \frac12) = \frac E2[c^\dagger, c]$, with ground-state energy $-\frac E2$. The bosonic oscillator is $\omega(a^\dagger a + \frac12) = \frac\omega2\{a^\dagger, a\}$ ([[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-1|§C2a.1, Remark: The oscillator, recalled]]): the sign of the zero-point energy is the sign that turns $\{\cdot,\cdot\}$ into $[\cdot,\cdot]$.
+>
+> **3. Box with cutoff.** As in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-2|Derivation §C2a.3.2]]: two spins times $-\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$; per volume $-2\int_{|\mathbf p|<\Lambda}\frac{d^3p}{(2\pi)^3}E_{\mathbf p} \approx -2\cdot\frac{4\pi}{(2\pi)^3}\frac{\Lambda^4}{4} = -\frac{\Lambda^4}{4\pi^2}$ for $\Lambda \gg m$, four times the scalar's $\Lambda^4/16\pi^2$ with the opposite sign.
+>
+> **What the derivation shows**
+> - A negative infinite constant, removed by normal ordering exactly as the scalar's; for energy differences it is harmless ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]]).
+> - It is the energy of Dirac's filled sea → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-8|Remark: The Dirac sea, read in the field]].
+
+^der-c5b-1-13
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-1|§C2a.1, Remark: The oscillator, recalled]]
+
+> [!remark]- ★ Remark: Bose and Fermi zero-point energies have opposite signs
+> Each bosonic mode contributes $+\frac12E$ and each fermionic mode $-\frac12E$. A theory with equal numbers of bosonic and fermionic modes of equal masses has cancelling zero-point energies; supersymmetric theories are built this way (stated in the user's pre-course notes, outside the course).
+>
+> *Source: the user's pre-course notes, §5.5 (Remark "The fermionic zero-point energy is negative")*
+
+^rem-c5b-1-5
+
+> [!remark] Remark: Empty and filled are labels
+> Take one pair $b$, $b^\dagger$ with $\{b, b^\dagger\} = 1$, $b^2 = 0$. If $b|0\rangle = 0$, then $|1\rangle = b^\dagger|0\rangle$, $b|1\rangle = |0\rangle$, $b^\dagger|1\rangle = 0$: a two-state space ([[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]], 3). One could equally call $|1\rangle$ empty and $\tilde b = b^\dagger$ its annihilator: $\{\tilde b, \tilde b^\dagger\} = 1$ again, because the anticommutator is symmetric. The two descriptions are the same until an observable, here the energy, says which state is lower; the lower one is called empty, and the dagger goes on the operator that creates positive energy. With commutators the relabelling changes the sign of the algebra ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], 2), which is why the trick is available only for fermions; and $(\tilde b^\dagger)^2 = 0$ means a mode cannot be filled twice.
+>
+> *Source: PS §3.5, pp. 57 (the single pair $b$, $b^\dagger$; eq. (3.98))*
+
+^rem-c5b-1-6
+
+> [!theorem] Theorem §C5b.1.14: Momentum of the Dirac Field
+> The field momentum $\mathbf P = -\int d^3x\,\pi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]]; general form [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-6|Theorem §C1.12.6]]) is, under the anticommutators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]],
+>
+> $$
+> \mathbf P = \sum_s\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) ,
+> $$
+>
+> with no constant and no ordering choice: fermions and antifermions of label $\mathbf p$ both carry momentum $\mathbf p$.
+>
+> *Source: PS §3.5, eq. (3.105) · Yu §5.5.2, eqs. (5.257)–(5.258)*
+
+^thm-c5b-1-14
+
+> [!derivation]- Derivation
+> **1. $-i\nabla$ on the modes.** $-i\nabla e^{-iq\cdot x} = -i(i\mathbf q)e^{-iq\cdot x} = \mathbf q\,e^{-iq\cdot x}$ and $-i\nabla e^{iq\cdot x} = -\mathbf q\,e^{iq\cdot x}$, since $\pm q\cdot x$ contains $\mp\mathbf q\cdot\mathbf x$. So $(-i\nabla)\psi$ is Step 1 of [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-4|Derivation §C5b.1.4]] with $E_{\mathbf q}$ replaced by $\mathbf q$ (and the same relative minus sign).
+>
+> **2. Steps 2–5 of Derivation §C5b.1.4 unchanged.** The cross terms vanish by [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]]; in the diagonal terms $\mathbf q = \mathbf p$ and the prefactor is $\mathbf p/2E_{\mathbf p}$, times $2E_{\mathbf p}\delta^{rs}$:
+>
+> $$
+> \mathbf P = \sum_s\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^s_{\mathbf p}b^{s\dagger}_{\mathbf p}\bigr) .
+> $$
+>
+> **3. Reorder.** As in [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-12|Derivation §C5b.1.12]], Step 2: $-b^sb^{s\dagger} = b^{s\dagger}b^s - (2\pi)^3\delta^3(\mathbf 0)$. The constant is $-2V\int\frac{d^3p}{(2\pi)^3}\mathbf p$, an odd integrand: zero for any rotation-invariant cutoff (in the box, $\mathbf k$ and $-\mathbf k$ pair off), as in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^der-c2a-3-4|Derivation §C2a.3.4]], step 7.
+>
+> **What the derivation shows**
+> - The relabelling $\mathbf p \to -\mathbf p$ in [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-2|Derivation §C5b.1.2]], Step 5, is why the antifermion of label $\mathbf p$ has momentum $+\mathbf p$.
+
+^der-c5b-1-14
+
+*Uses:* [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]], [[§C5b.1 Quantizing the Dirac Field#^der-c5b-1-4|Derivation §C5b.1.4]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-6|Theorem §C5a.6.6]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+
+> [!theorem] Theorem §C5b.1.15: The Charge Counts Fermions Minus Antifermions
+> The normal-ordered charge ([[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]]) of the current of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]] is
+>
+> $$
+> Q = \int d^3x\;:\!\psi^\dagger\psi\!: \; = \sum_s\int\frac{d^3p}{(2\pi)^3}\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} - b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) = N_a - N_b ,
+> $$
+>
+> conserved, $[Q, H] = [Q, \mathbf P] = 0$. Without normal ordering $Q$ would contain the constant $+2V\int\frac{d^3p}{(2\pi)^3}$ (normalization as in [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]]; electric charge = $Q$ times the charge of the fermion).
+>
+> *Source: PS §3.5, eq. (3.113) · Yu §5.5.3, eq. (5.267) (with $q = 1$) · the user's pre-course notes, §5.5 ("$U(1)$ global symmetry")*
+
+^thm-c5b-1-15
+
+> [!derivation]- Derivation
+> **1. Unreordered form.** $\int d^3x\,\psi^\dagger\psi = \sum_s\int\frac{d^3p}{(2\pi)^3}(a^{s\dagger}a^s + b^sb^{s\dagger})$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]]).
+>
+> **2. Reorder.** $b^sb^{s\dagger} = -b^{s\dagger}b^s + (2\pi)^3\delta^3(\mathbf 0)$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]]): $\int\psi^\dagger\psi = \sum_s\int(a^{s\dagger}a^s - b^{s\dagger}b^s) + 2V\int\frac{d^3p}{(2\pi)^3}$. ⚑ By-product: a positive infinite vacuum charge (in the box, $+2\mathcal N(V, \Lambda)$, two per momentum cell) → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-7|Remark: The vacuum charge, and why the order is forced]]. Normal ordering drops it ([[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]]).
+>
+> **3. Conservation.** $Q$, $:\!H\!:$ and $\mathbf P$ are integrals of the number densities $a^{s\dagger}_{\mathbf p}a^s_{\mathbf p}$, $b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}$. These commute with each other. By the Leibniz rule $[AB, X] = A[B, X] + [A, X]B$ and the identity $[X, CD] = \{X, C\}D - C\{X, D\}$ (expand: $XCD - CDX = XCD + CXD - CXD - CDX$), $[a^\dagger_{\mathbf p}a_{\mathbf p}, a^\dagger_{\mathbf q}a_{\mathbf q}] = a^\dagger_{\mathbf p}[a_{\mathbf p}, a^\dagger_{\mathbf q}a_{\mathbf q}] + [a^\dagger_{\mathbf p}, a^\dagger_{\mathbf q}a_{\mathbf q}]a_{\mathbf p} = a^\dagger_{\mathbf p}\{a_{\mathbf p}, a^\dagger_{\mathbf q}\}a_{\mathbf q} - a^\dagger_{\mathbf q}\{a^\dagger_{\mathbf p}, a_{\mathbf q}\}a_{\mathbf p}$ (other anticommutators zero) $= (2\pi)^3\delta^3(\mathbf p - \mathbf q)(a^\dagger_{\mathbf p}a_{\mathbf q} - a^\dagger_{\mathbf q}a_{\mathbf p}) = 0$ on the support of δ; across species the anticommutators vanish. So $[Q, H] = [Q, \mathbf P] = 0$.
+>
+> **What the derivation shows**
+> - Classically $\int\psi^\dagger\psi \ge 0$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-6|Theorem §C5b.1.6]]); the reordering sign makes the antifermions count negatively. The roles of $H$ and $Q$ are now those of the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]]).
+
+^der-c5b-1-15
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-5|Theorem §C5b.1.5]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-14|Theorem §C5b.1.14]], [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
+
+> [!remark] Remark: The vacuum charge, and why the order is forced
+> As for the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-2|§C2a.5, Remark: Why the vacuum must be neutral]]), an ordering constant in the charge would be observable: the unordered $\int\psi^\dagger\psi$ gives the vacuum the charge $+2V\int\frac{d^3p}{(2\pi)^3}$ (Yu's "zero-point charge", eq. (5.267)), of the opposite sign to the scalar's. The vacuum must be neutral, so the order is fixed by physics. Normal ordering achieves it; so does the antisymmetrized density $\frac12[\psi^\dagger_a, \psi_a]$ (summed over $a$): in modes $\psi_a\psi^\dagger_a$ gives $aa^\dagger + b^\dagger b$ where $\psi^\dagger_a\psi_a$ gave $a^\dagger a + bb^\dagger$, and $\frac12\bigl[(a^\dagger a + bb^\dagger) - (aa^\dagger + b^\dagger b)\bigr] = a^\dagger a - b^\dagger b$ with the constants cancelling (computed here). The positive density of the Dirac equation ([[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]]) thus becomes, after quantization, a charge density with eigenvalues of both signs: rule 2, the same density with a new meaning.
+>
+> *Source: Yu §5.5.3, eq. (5.267) · the user's pre-course notes, §5.5 (Remark "Antiparticles without hole theory": "$Q/q$ counts particles minus antiparticles")*
+
+^rem-c5b-1-7
+
+> [!theorem] Theorem §C5b.1.16: Ladder Relations
+> For any operators, $[AB, C] = A\{B, C\} - \{A, C\}B$. With [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]] and $H$, $\mathbf P$, $Q$ of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-14|Theorem §C5b.1.14]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-15|Theorem §C5b.1.15]] (normal ordered),
+>
+> $$
+> [H, a^{s\dagger}_{\mathbf p}] = E_{\mathbf p}a^{s\dagger}_{\mathbf p}, \quad [H, b^{s\dagger}_{\mathbf p}] = E_{\mathbf p}b^{s\dagger}_{\mathbf p}, \quad [\mathbf P, a^{s\dagger}_{\mathbf p}] = \mathbf p\,a^{s\dagger}_{\mathbf p}, \quad [\mathbf P, b^{s\dagger}_{\mathbf p}] = \mathbf p\,b^{s\dagger}_{\mathbf p}, \quad [Q, a^{s\dagger}_{\mathbf p}] = a^{s\dagger}_{\mathbf p}, \quad [Q, b^{s\dagger}_{\mathbf p}] = -b^{s\dagger}_{\mathbf p} ,
+> $$
+>
+> and the adjoint relations for $a$, $b$ with the opposite signs: Hamiltonian and charges are bilinear, so commutators with them are ordinary commutators although the fields anticommute.
+>
+> *Source: Yu §5.5.2, eqs. (5.248)–(5.251) · the user's pre-course notes, §5.5 ("the mixed identity converts the anticommutators into the needed commutators")*
+
+^thm-c5b-1-16
+
+> [!derivation]- Derivation
+> **1. The identity.** $A\{B, C\} - \{A, C\}B = ABC + ACB - ACB - CAB = ABC - CAB = [AB, C]$.
+>
+> **2. $H$ and $a^\dagger$.** With $A = a^{r\dagger}_{\mathbf q}$, $B = a^r_{\mathbf q}$, $C = a^{s\dagger}_{\mathbf p}$: $[a^{r\dagger}_{\mathbf q}a^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}] = a^{r\dagger}_{\mathbf q}\{a^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}\} - \{a^{r\dagger}_{\mathbf q}, a^{s\dagger}_{\mathbf p}\}a^r_{\mathbf q} = a^{r\dagger}_{\mathbf q}(2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p) - 0$. The $b^\dagger b$ terms give $b^{r\dagger}_{\mathbf q}\{b^r_{\mathbf q}, a^{s\dagger}_{\mathbf p}\} - \{b^{r\dagger}_{\mathbf q}, a^{s\dagger}_{\mathbf p}\}b^r_{\mathbf q} = 0$. Multiplying by $E_{\mathbf q}$ and integrating $\int\frac{d^3q}{(2\pi)^3}\sum_r$: $E_{\mathbf p}a^{s\dagger}_{\mathbf p}$.
+>
+> **3. $H$ and $b^\dagger$.** The same with the species exchanged: $E_{\mathbf p}b^{s\dagger}_{\mathbf p}$; the sign is $+$ because $:\!H\!:$ contains $+b^\dagger b$.
+>
+> **4. $H$ and the annihilators.** $[a^{r\dagger}_{\mathbf q}a^r_{\mathbf q}, a^s_{\mathbf p}] = a^{r\dagger}_{\mathbf q}\{a^r_{\mathbf q}, a^s_{\mathbf p}\} - \{a^{r\dagger}_{\mathbf q}, a^s_{\mathbf p}\}a^r_{\mathbf q} = -(2\pi)^3\delta^{rs}\delta^3(\mathbf q - \mathbf p)a^r_{\mathbf q}$, so $[H, a^s_{\mathbf p}] = -E_{\mathbf p}a^s_{\mathbf p}$; likewise for $b$ (Yu (5.249), (5.251)).
+>
+> **5. $\mathbf P$ and $Q$.** Replace the weight $E_{\mathbf q}$ by $\mathbf q$, and by $+1$ for $a^\dagger a$ and $-1$ for $b^\dagger b$. Constants commute with everything, so the unordered forms give the same relations.
+>
+> **What the derivation shows**
+> - $a^\dagger$ and $b^\dagger$ both raise the energy by $E_{\mathbf p}$ and the momentum by $\mathbf p$, and change the charge by $\pm1$.
+
+^der-c5b-1-16
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-14|Theorem §C5b.1.14]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-15|Theorem §C5b.1.15]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
+
+## Particles
+
+> [!principle] Principle §C5b.1.17: The Dirac Vacuum and the Fermionic Fock Space
+> There is a normalized state $|0\rangle$, unique up to a phase, with $a^s_{\mathbf p}|0\rangle = b^s_{\mathbf p}|0\rangle = 0$ for all $\mathbf p$, $s$, and the space of states is the Fock space it generates with the creation operators of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]],
+>
+> $$
+> \mathcal F = \bigoplus_{n,\bar n\ge0}\Lambda^n\mathcal H_1\otimes\Lambda^{\bar n}\bar{\mathcal H}_1, \qquad \mathcal H_1 \cong \bar{\mathcal H}_1 \cong \mathbb C^2\otimes L^2\Bigl(\mathbb R^3, \frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigr) ,
+> $$
+>
+> antisymmetric powers ($\Lambda^n$) of the one-fermion and one-antifermion spaces, with spin label $s$ and the invariant measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; inner products are computed by moving annihilators to the right with the anticommutators, one sign per exchange.
+>
+> *Domain:* the free Dirac field. That the annihilators are $b$ and not $b^\dagger$ is fixed by positivity of the energy ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-6|Remark: Empty and filled are labels]]), not by the expansion; irreducibility is asserted, as for the scalar ([[§C2a.4 Particles and Relativistic Normalization#^pr-c2a-4-1|Principle §C2a.4.1]]).
+>
+> *Source: PS §3.5, eq. (3.103) · Yu §5.5.4, eqs. (5.268)–(5.269) · the user's pre-course notes, §5.5*
+
+^pr-c5b-1-17
+
+> [!theorem] Theorem §C5b.1.18: Fermions and Antifermions
+> The one-particle states
+>
+> $$
+> |\mathbf p, s\rangle \equiv \sqrt{2E_{\mathbf p}}\,a^{s\dagger}_{\mathbf p}|0\rangle, \qquad |\bar{\mathbf p}, s\rangle \equiv \sqrt{2E_{\mathbf p}}\,b^{s\dagger}_{\mathbf p}|0\rangle
+> $$
+>
+> (the vacuum of [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]], relativistic normalization as in [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]) have energy $E_{\mathbf p}$ (eigenvalue of $:\!H\!:$, [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-12|Theorem §C5b.1.12]]), momentum $\mathbf p$, and charge $Q = +1$ (fermion) and $-1$ (antifermion) ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-15|Theorem §C5b.1.15]]); both have mass $m$ and two spin states. Their overlaps are positive,
+>
+> $$
+> \langle\mathbf p, r|\mathbf q, s\rangle = \langle\bar{\mathbf p}, r|\bar{\mathbf q}, s\rangle = 2E_{\mathbf p}(2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q), \qquad \langle\bar{\mathbf p}, r|\mathbf q, s\rangle = 0 ,
+> $$
+>
+> distributions in $(\mathbf p, \mathbf q)$ as for the scalar ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|Theorem §C2a.4.6]]); physical states are wave packets ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]]).
+>
+> *Source: PS §3.5, eqs. (3.106)–(3.107) · Yu §5.5.4, eqs. (5.270)–(5.275) · the user's pre-course notes, §5.5*
+
+^thm-c5b-1-18
+
+> [!derivation]- Derivation
+> **1. Eigenvalues.** $:\!H\!:|0\rangle = \mathbf P|0\rangle = Q|0\rangle = 0$ (each term ends in an annihilator). By [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-16|Theorem §C5b.1.16]], $:\!H\!:a^{s\dagger}_{\mathbf p}|0\rangle = [{:}H{:}, a^{s\dagger}_{\mathbf p}]|0\rangle = E_{\mathbf p}a^{s\dagger}_{\mathbf p}|0\rangle$; the same for $\mathbf P$ (eigenvalue $\mathbf p$) and $Q$ ($+1$), and for $b^{s\dagger}_{\mathbf p}$ with $Q$-eigenvalue $-1$. (With the unordered $H$ both energies are shifted by $E^D_{\mathrm{vac}}$, Yu (5.274).)
+>
+> **2. Overlaps.** $\langle0|a^r_{\mathbf p}a^{s\dagger}_{\mathbf q}|0\rangle = \langle0|\bigl(\{a^r_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} - a^{s\dagger}_{\mathbf q}a^r_{\mathbf p}\bigr)|0\rangle = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$; multiplying by $\sqrt{2E_{\mathbf p}2E_{\mathbf q}}$ and evaluating on the support of δ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1) gives $2E_{\mathbf p}$. The same for $b$. Mixed: $\langle0|b^r_{\mathbf p}a^{s\dagger}_{\mathbf q}|0\rangle = -\langle0|a^{s\dagger}_{\mathbf q}b^r_{\mathbf p}|0\rangle = 0$, since $\{b, a^\dagger\} = 0$.
+>
+> **3. Positivity.** With commutators the $b$-overlap had the opposite sign ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]], 1); the anticommutator restores it. Smeared, $\|a^{s\dagger}(g)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3}|g|^2 > 0$.
+>
+> **What the derivation shows**
+> - Both species have the same dispersion $E_{\mathbf p}$ because both sit in one field on one mass shell; opposite charge because they sit in its two frequency parts, as for the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]).
+
+^der-c5b-1-18
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-16|Theorem §C5b.1.16]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-7|P1, steps 6–7]]
+
+> [!theorem] Theorem §C5b.1.19: Fermi–Dirac Statistics and the Pauli Exclusion Principle
+> In the Fock space of [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]], with the algebra of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]]:
+> 1. $a^{r\dagger}_{\mathbf p}a^{s\dagger}_{\mathbf q} = -a^{s\dagger}_{\mathbf q}a^{r\dagger}_{\mathbf p}$ (likewise for $b^\dagger$, and $a^\dagger b^\dagger = -b^\dagger a^\dagger$): a multiparticle state changes sign when two identical quanta are exchanged. The quanta are fermions.
+> 2. *(Pauli)* $a^{s\dagger}(g)^2 = b^{s\dagger}(g)^2 = 0$ for every wave packet $g$: no two identical fermions occupy the same one-particle state (spin label and packet); in kernel form, $a^{s\dagger}_{\mathbf p}a^{s\dagger}_{\mathbf p}|0\rangle = 0$.
+> 3. For $|\mathbf p_1s_1; \mathbf p_2s_2\rangle \equiv \sqrt{4E_{\mathbf p_1}E_{\mathbf p_2}}\,a^{s_1\dagger}_{\mathbf p_1}a^{s_2\dagger}_{\mathbf p_2}|0\rangle$,
+>
+> $$
+> \langle\mathbf q_1r_1; \mathbf q_2r_2|\mathbf p_1s_1; \mathbf p_2s_2\rangle = 4E_{\mathbf p_1}E_{\mathbf p_2}(2\pi)^6\Bigl[\delta^{r_1s_1}\delta^{r_2s_2}\delta^3(\mathbf p_1 - \mathbf q_1)\delta^3(\mathbf p_2 - \mathbf q_2) - \delta^{r_1s_2}\delta^{r_2s_1}\delta^3(\mathbf p_1 - \mathbf q_2)\delta^3(\mathbf p_2 - \mathbf q_1)\Bigr] ,
+> $$
+>
+> with a minus sign where two bosons have a plus ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]).
+>
+> *Source: PS §3.5, p. 57 · Yu §5.5.4, eqs. (5.289)–(5.295) · the user's pre-course notes, §5.5*
+
+^thm-c5b-1-19
+
+> [!derivation]- Derivation
+> **1. Antisymmetry.** $\{a^{r\dagger}_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = 0$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]]); similarly for $b^\dagger$ and between $a^\dagger$, $b^\dagger$. In a product of creation operators acting on $|0\rangle$, moving one past another costs $-1$; exchanging the $i$-th and $j$-th takes an odd number of adjacent moves, so the state changes sign (Yu (5.290)–(5.291)).
+>
+> **2. Pauli.** Smeared, $\{a^{s\dagger}(g), a^{s\dagger}(g)\} = 0$, i.e. $2a^{s\dagger}(g)^2 = 0$. The kernel form is the statement at coinciding labels, which the identity $\{a^{s\dagger}_{\mathbf p}, a^{s\dagger}_{\mathbf q}\} = 0$ contains (its right side has no δ, so no valueless constant arises at $\mathbf p = \mathbf q$). ⚑ By-product: exclusion is a consequence of the anticommutators, not an extra input, and it holds for every one-particle state at once → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-8|Remark: The Dirac sea, read in the field]].
+>
+> **3. Two-particle overlap: first annihilator.** $\langle\mathbf q_1r_1; \mathbf q_2r_2| = \sqrt{4E_{\mathbf q_1}E_{\mathbf q_2}}\langle0|a^{r_2}_{\mathbf q_2}a^{r_1}_{\mathbf q_1}$. Move $a^{r_1}_{\mathbf q_1}$ to the right:
+>
+> $$
+> a^{r_1}_{\mathbf q_1}a^{s_1\dagger}_{\mathbf p_1}a^{s_2\dagger}_{\mathbf p_2}|0\rangle = (2\pi)^3\delta^{r_1s_1}\delta^3(\mathbf q_1 - \mathbf p_1)\,a^{s_2\dagger}_{\mathbf p_2}|0\rangle - a^{s_1\dagger}_{\mathbf p_1}\,(2\pi)^3\delta^{r_1s_2}\delta^3(\mathbf q_1 - \mathbf p_2)|0\rangle ,
+> $$
+>
+> the minus sign from passing $a^{s_1\dagger}_{\mathbf p_1}$.
+>
+> **4. Second annihilator.** $\langle0|a^{r_2}_{\mathbf q_2}a^{s\dagger}_{\mathbf p}|0\rangle = (2\pi)^3\delta^{r_2s}\delta^3(\mathbf q_2 - \mathbf p)$ for both terms: direct minus exchanged. The prefactor $\sqrt{16E_{\mathbf q_1}E_{\mathbf q_2}E_{\mathbf p_1}E_{\mathbf p_2}}$ is $4E_{\mathbf p_1}E_{\mathbf p_2}$ on the support of either product of deltas. *Sense:* an identity of distributions in the four momenta; paired with packets it is $\langle g_1, h_1\rangle\langle g_2, h_2\rangle - \langle g_1, h_2\rangle\langle g_2, h_1\rangle$, as in [[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-3|Derivation §C2a.4.3]], step 3, with the sign changed.
+>
+> **What the derivation shows**
+> - Fermi statistics comes with the field; Quantum Mechanics had to postulate it per species ([[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^pr-c12-1-4|QM Principle §C12.1.4]]; same algebra, [[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]]).
+
+^der-c5b-1-19
+
+*Uses:* [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
+
+*Procedure:* [[P1 Canonical Quantization#^p1-6|P1, step 6]]
+
+> [!theorem] Theorem §C5b.1.20: Dirac Quanta Have Spin One-Half
+> With the angular momentum $\mathbf J = \int d^3x\,:\!\psi^\dagger\bigl(\mathbf x\times(-i\nabla) + \tfrac12\boldsymbol\Sigma\bigr)\psi\!:$ of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]] (normal ordered, [[§C5b.1 Quantizing the Dirac Field#^def-c5b-1-2|Def. §C5b.1.2]], so $\mathbf J|0\rangle = 0$; $\boldsymbol\Sigma = \operatorname{diag}(\boldsymbol\sigma, \boldsymbol\sigma)$, [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]]) and the spin bases $\xi^s$, $\eta^s$ of [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]], the zero-momentum states satisfy
+>
+> $$
+> J_z\,a^{s\dagger}_{\mathbf 0}|0\rangle = \sum_r\Bigl(\xi^{r\dagger}\tfrac{\sigma^3}{2}\xi^s\Bigr)a^{r\dagger}_{\mathbf 0}|0\rangle, \qquad J_z\,b^{s\dagger}_{\mathbf 0}|0\rangle = -\sum_r\Bigl(\eta^{s\dagger}\tfrac{\sigma^3}{2}\eta^r\Bigr)b^{r\dagger}_{\mathbf 0}|0\rangle .
+> $$
+>
+> For $\sigma^3$-eigenvectors $\xi^s, \eta^s \in \{(1, 0)^T, (0, 1)^T\}$: the fermion has $J_z = \pm\frac12$, the antifermion $J_z = \mp\frac12$, opposite to its two-spinor.
+>
+> *Source: PS §3.5, pp. 60–61, eqs. (3.111)–(3.112)*
+
+^thm-c5b-1-20
+
+> [!derivation]- Derivation
+> **1. Reduce to a commutator.** $J_z|0\rangle = 0$, so $J_za^{s\dagger}_{\mathbf 0}|0\rangle = [J_z, a^{s\dagger}_{\mathbf 0}]|0\rangle$ (PS). With $J_z = \int d^3x\,\psi^\dagger_aM_{ab}\psi_b$, $M = (\mathbf x\times(-i\nabla))_z + \frac12\Sigma^3$, the identity of [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-16|Theorem §C5b.1.16]] gives $[\psi^\dagger_aM_{ab}\psi_b, C] = \psi^\dagger_aM_{ab}\{\psi_b, C\} - \{\psi^\dagger_a, C\}M_{ab}\psi_b$ (the normal-ordering constant commutes).
+>
+> **2. The anticommutators with $a^{s\dagger}_{\mathbf 0}$.** From [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]] and [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], $\{\psi(x), a^{s\dagger}_{\mathbf 0}\} = \frac{1}{\sqrt{2m}}u^s(0)e^{-imt}$ (the $\mathbf p$-integral against $(2\pi)^3\delta^3(\mathbf p)$; $E_{\mathbf 0} = m$) and $\{\psi^\dagger(x), a^{s\dagger}_{\mathbf 0}\} = 0$. So $[J_z, a^{s\dagger}_{\mathbf 0}] = \frac{e^{-imt}}{\sqrt{2m}}\int d^3x\,\psi^\dagger(x)\,M\,u^s(0)$.
+>
+> **3. Orbital part.** $u^s(0)$ is constant in $\mathbf x$, so $(\mathbf x\times(-i\nabla))_zu^s(0) = 0$. Dropped: the orbital term.
+>
+> **4. Spin part.** $\int d^3x\,\psi^\dagger(x) = \frac{1}{\sqrt{2m}}\sum_r\bigl(a^{r\dagger}_{\mathbf 0}u^{r\dagger}(0)e^{imt} + b^r_{\mathbf 0}v^{r\dagger}(0)e^{-imt}\bigr)$ (the $d^3x$ integral gives $(2\pi)^3\delta^3(\mathbf p)$, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). Hence
+>
+> $$
+> [J_z, a^{s\dagger}_{\mathbf 0}] = \frac{1}{2m}\sum_r\Bigl(u^{r\dagger}(0)\tfrac12\Sigma^3u^s(0)\,a^{r\dagger}_{\mathbf 0} + v^{r\dagger}(0)\tfrac12\Sigma^3u^s(0)\,e^{-2imt}\,b^r_{\mathbf 0}\Bigr) .
+> $$
+>
+> **5. Rest-frame spinors.** $u^s(0) = \sqrt m(\xi^s, \xi^s)$, $v^s(0) = \sqrt m(\eta^s, -\eta^s)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]]), and $\Sigma^3 = \operatorname{diag}(\sigma^3, \sigma^3)$: $u^{r\dagger}(0)\Sigma^3u^s(0) = 2m\,\xi^{r\dagger}\sigma^3\xi^s$ and $v^{r\dagger}(0)\Sigma^3u^s(0) = m(\eta^{r\dagger}\sigma^3\xi^s - \eta^{r\dagger}\sigma^3\xi^s) = 0$. Dropped: the $b$ term, identically. This gives the first formula.
+>
+> **6. Antifermion.** Now $\{\psi(x), b^{s\dagger}_{\mathbf 0}\} = 0$ and $\{\psi^\dagger(x), b^{s\dagger}_{\mathbf 0}\} = \frac{1}{\sqrt{2m}}v^{s\dagger}(0)e^{-imt}$, so $[J_z, b^{s\dagger}_{\mathbf 0}] = -\frac{e^{-imt}}{\sqrt{2m}}\int d^3x\,v^{s\dagger}(0)M\psi(x)$: the operator now stands on the *right* of the spinor, and the order of the $b$ terms is reversed (PS: "an extra minus sign"). The orbital term is $\int d^3x\,v^{s\dagger}(0)(x\partial_y - y\partial_x)\psi = -\int d^3x\,(\partial_yx - \partial_xy)v^{s\dagger}(0)\psi = 0$ by parts (fall-off; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]). With $\int d^3x\,\psi = \frac{1}{\sqrt{2m}}\sum_r(a^r_{\mathbf 0}u^r(0)e^{-imt} + b^{r\dagger}_{\mathbf 0}v^r(0)e^{imt})$, the $a$ term annihilates $|0\rangle$ (and has $v^\dagger\Sigma^3u = 0$), and $v^{s\dagger}(0)\Sigma^3v^r(0) = 2m\,\eta^{s\dagger}\sigma^3\eta^r$: the second formula.
+>
+> **7. Sense.** $a^{s\dagger}_{\mathbf 0}$ is the kernel of $a^{s\dagger}(g)$ at $\mathbf p = 0$, and the formulas are identities of operator-valued distributions evaluated there (PS's computation). For packets $g$ near $\mathbf p = 0$ the orbital part and the $\mathbf p$-dependence of $u^s(p)$ add terms that vanish at $\mathbf p = 0$; the general statement is the little-group spin of [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|Theorem §C3.5.8]] (draft: to be revisited after Lecture 10).
+>
+> ⚑ By-product: an antifermion built on $\eta^s = (1, 0)^T$ has $J_z = -\frac12$, as a hole in a state of $J_z = +\frac12$ would → [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-8|Remark: The Dirac sea, read in the field]]; with Yu's helicity labelling ($\eta^s = \lambda\xi_{-\lambda}$, [[§C5a.5 Plane-Wave Solutions#^cau-c5a-5-2|§C5a.5, Caution: η means two things]] and [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-13|Theorem §C5a.6.13]]) the antiparticle's helicity equals its label (Yu (5.276)–(5.286)).
+>
+> **What the derivation shows**
+> - The spin $\frac12$ is that of the rest-frame two-spinors: the field's quanta are the massive spin-$\frac12$ states of Wigner's classification.
+
+^der-c5b-1-20
+
+*Uses:* [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-3|Theorem §C5a.5.3]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-2|Theorem §C5b.1.2]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-11|Theorem §C5b.1.11]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-16|Theorem §C5b.1.16]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|Theorem §C3.5.8]]
+
+> [!remark] Remark: The Dirac sea, read in the field
+> Second-quantize the one-particle Dirac Hamiltonian $h_D$ as a one-body operator in the manner of [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]]: one fermionic mode $c$ per eigenvector of $h(\mathbf p)$, $H = \sum(E\,c_+^\dagger c_+ - E\,c_-^\dagger c_-)$. That is [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-4|Theorem §C5b.1.4]] with $c_+ = a$ and $c_- = b^\dagger$. Dirac's sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]) is the state with every negative-energy mode filled, annihilated by every $c_-^\dagger = b$: it *is* the field vacuum of [[§C5b.1 Quantizing the Dirac Field#^pr-c5b-1-17|Principle §C5b.1.17]]. Its energy relative to the empty state, $-\sum E$ over the negative modes, is $E^D_{\mathrm{vac}}$ ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-13|Theorem §C5b.1.13]]); its electron number is the vacuum charge $+2V\int\frac{d^3p}{(2\pi)^3}$ ([[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-7|Remark: The vacuum charge, and why the order is forced]]); a hole has the reversed spin ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-20|Theorem §C5b.1.20]]). For the free field the two pictures are the same Fock space. What the field adds:
+> - the vacuum is defined directly, and normal ordering removes the sea's infinite energy and charge, instead of positing an unobservable background;
+> - antiparticles are the quanta of $b^\dagger$ for bosons too ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]), where no sea can be filled;
+> - exclusion, which hole theory needed as an input to stabilize the sea, is a consequence of the anticommutators ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-19|Theorem §C5b.1.19]]).
+>
+> *Source: PS §3.5, pp. 57, 61 ("This reversal of sign agrees with the prediction of Dirac hole theory") · the user's pre-course notes, §5.5 (Remark "Antiparticles without hole theory") · the identification $c_- = b^\dagger$ written out here*
+
+^rem-c5b-1-8
+
+> [!remark] Remark: Lorentz covariance of the quantized field
+> With $U(\Lambda)a^s_{\mathbf p}U^{-1}(\Lambda) = \sqrt{E_{\Lambda p}/E_{\mathbf p}}\,a^s_{\Lambda\mathbf p}$ (spin axis along the boost or rotation axis) and the covariance of the spinors, Peskin–Schroeder obtain $U(\Lambda)\psi(x)U^{-1}(\Lambda) = \Lambda_{1/2}^{-1}\psi(\Lambda x)$, eqs. (3.108)–(3.110): the spinor instance ($D = \Lambda_{1/2}$, [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]) of [[§C3.4 Quantum Poincaré Transformations#^pr-c3-4-8|Principle §C3.4.8]], which for the free scalar was a theorem ([[§C3.4 Quantum Poincaré Transformations#^thm-c3-4-12|Theorem §C3.4.12]]). For general spin axes the mode operators transform with the Wigner rotation of [[§C3.5★ Particle States and the Little Group#^thm-c3-5-4|Theorem §C3.5.4]]. Not derived here (draft); $\langle\mathbf p, r|\mathbf q, s\rangle$ is Lorentz invariant ([[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-18|Theorem §C5b.1.18]]), which is what makes $U(\Lambda)$ unitary although $\Lambda_{1/2}$ is not.
+>
+> *Source: PS §3.5, pp. 59–60, eqs. (3.106)–(3.110)*
+
+^rem-c5b-1-9
+
+> [!remark]- Connections
+> - The free Dirac Hamiltonian is the second-quantized form of the one-particle Dirac Hamiltonian, $H = \int\psi^\dagger h_D\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $h_D$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.1 Quantizing the Dirac Field#^rem-c5b-1-8|Remark: The Dirac sea, read in the field]].
+> - The complex scalar and the Dirac field have the same two-species structure, with the roles reversed classically (scalar: positive energy, indefinite charge; Dirac: indefinite energy, positive charge) and made equal by quantization with the matching statistics — [[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-6|Theorem §C5b.1.6]], [[§C5b.1 Quantizing the Dirac Field#^thm-c5b-1-15|Theorem §C5b.1.15]].
+> - The sign of the zero-point energy, $+\frac12\omega$ for $\{a^\dagger, a\}/2$ and $-\frac12\omega$ for $[c^\dagger, c]/2$, is the oscillator form of the boson–fermion difference; both are the same singular coincident product, δ³(0) in modes or a two-point function at zero separation — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: The zero-point energy is the Wightman function at coincident points]], [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-1|Theorem §C5b.2.1]].
+> - Microcausality for fermions is an anticommutator statement, and the Feynman propagator of the Dirac field carries the fermionic sign of time ordering — [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-8|Theorem §C5b.2.8]]; the spin–statistics theorem ties the anticommutators of this section to spin $\frac12$ — [[§C5b.2 The Dirac Propagator and Spin–Statistics#^thm-c5b-2-6|Theorem §C5b.2.6]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations|§C3.2]] (the sign of a $2\pi$ rotation in half-integer representations).
+> - The anticommutators make smeared fermion fields bounded (Theorem §C5b.1.10), so the distributional care needed here is only for point values and coincident labels: the plane-wave delta in $\mathcal S'$, the split exponentials for wave packets, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, the box for δ³(0), integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]].
+> - The charge $Q$ becomes the electric charge once $\psi$ is coupled to the photon by a local phase, which makes the Dirac field the matter of quantum electrodynamics — QFT C8 (planned); charge conjugation exchanging $a$ and $b$ — QFT C9 (planned).

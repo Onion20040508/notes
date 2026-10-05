@@ -7,7 +7,7 @@ tags: [quantum-field-theory, card]
 ---
 # Scalar Field Card
 
-One-page reference for the free real and complex scalar field (canonical quantization, states, coherent states, two-point functions, classical source); every formula is stated and derived in its home box in [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (the Poincaré action in [[· C3 Poincaré Symmetry and Particle States|C3]]), linked after it. Conventions: $\hbar = c = 1$, $g = \mathrm{diag}(+,-,-,-)$, $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ on shell, $\xi = x - y$.
+One-page reference for the free real and complex scalar field (canonical quantization, states, coherent states, two-point functions, classical source); every formula is stated and derived in its home box in [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] and [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (the Poincaré action in [[· C3 Poincaré Symmetry and Particle States|C3]]), linked after it. Conventions: $\hbar = c = 1$, $g = \mathrm{diag}(+,-,-,-)$, $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ on shell, $\xi = x - y$.
 
 ## 1. Lagrangian, momentum, Hamiltonian; commutators
 

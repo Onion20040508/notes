@@ -89,7 +89,7 @@ tags: [linear-algebra]
 *Uses:* [[§24 Positive Operators#^ladr-7-38|7.38]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
 
 > [!remark]- Connections
-> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5.5 Plane-Wave Solutions#^def-c5-5-4|QFT Def. §C5.5.4]], [[§C5.5 Plane-Wave Solutions#^thm-c5-5-7|QFT Theorem §C5.5.7]], [[§C5.1 Weyl Spinors and SL(2,C)#^thm-c5-1-4|QFT Theorem §C5.1.4]].
+> - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|QFT Def. §C5a.5.4]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-7|QFT Theorem §C5a.5.7]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]].
 
 > [!remark] Notation 7.40: √T (p. 253)
 
