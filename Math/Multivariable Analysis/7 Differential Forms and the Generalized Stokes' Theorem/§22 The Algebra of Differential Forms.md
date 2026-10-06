@@ -156,6 +156,8 @@ We can now formalize the computation from [[§21 Introduction to Differential Fo
 
 ^rem-22-2
 
+*Chain ([[Polar and spherical coordinates|polar and spherical coordinates]]):* ← [[§20a The Unit Sphere and Spherical Coordinates|Chapter 6]]
+
 **Carrying out the pullback** produces determinants of minors of the Jacobian matrix $J = \big[\frac{\partial x_i}{\partial u_j}\big]$ (which is $n \times k$):
 
 $$

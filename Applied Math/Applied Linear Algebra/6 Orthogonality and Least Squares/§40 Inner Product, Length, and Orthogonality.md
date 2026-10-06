@@ -30,7 +30,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 > [!remark]- Connections
 > - In $\mathbb{R}^2$ and $\mathbb{R}^3$ this is Stewart's dot product, [[§82 The Dot Product#^def-82-1|Calc Def. §82.1]], with the same properties [[§82 The Dot Product#^thm-82-1|Calc Thm. §82.1]].
-> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product on $\mathbb{R}^n$) and [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], where the properties of Theorem §40.1 become the axioms of an inner product on any vector space, over $\mathbb{R}$ or $\mathbb{C}$ (here: [[§46 Inner Product Spaces#^def-46-1|Definition §46.1]]).
+> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product on $\mathbb{R}^n$) and [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], where the properties of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]] become the axioms of an inner product on any vector space, over $\mathbb{R}$ or $\mathbb{C}$ (here: [[§46 Inner Product Spaces#^def-46-1|Definition §46.1]]).
 > - See also: for vectors with complex entries BDP distinguishes $\mathbf{x}^T\mathbf{y}$ from the inner product $(\mathbf{x}, \mathbf{y}) = \mathbf{x}^T\overline{\mathbf{y}}$, which gives the length and orthogonality, [[§28 Matrices#^def-28-3|331 Def. §28.3]], [[§28 Matrices#^prop-28-2|331 Prop. §28.2]]; the two products compared on an example, [[§28 Matrices#^ex-28-2|331 Ex. §28.2]].
 
 > [!example] Example §40.1: Computing Inner Products
@@ -103,7 +103,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > \|\mathbf{v}\| = \sqrt{\mathbf{v} \cdot \mathbf{v}} = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}, \qquad\text{so}\qquad \|\mathbf{v}\|^2 = \mathbf{v} \cdot \mathbf{v} .
 > $$
 >
-> The square root exists because $\mathbf{v} \cdot \mathbf{v} \ge 0$ (Theorem §40.1(d)). For $\mathbf{v} = (a, b) \in \mathbb{R}^2$, $\|\mathbf{v}\| = \sqrt{a^2 + b^2}$ is the length of the segment from the origin to the point $(a, b)$, by the Pythagorean Theorem of plane geometry; the diagonal of a box gives the same in $\mathbb{R}^3$.
+> The square root exists because $\mathbf{v} \cdot \mathbf{v} \ge 0$ ([[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]](d)). For $\mathbf{v} = (a, b) \in \mathbb{R}^2$, $\|\mathbf{v}\| = \sqrt{a^2 + b^2}$ is the length of the segment from the origin to the point $(a, b)$, by the Pythagorean Theorem of plane geometry; the diagonal of a box gives the same in $\mathbb{R}^3$.
 >
 > *Lay: 6.1, Definition*
 
@@ -121,7 +121,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 ^prop-40-2
 
 > [!proof]+ Proof
-> By Theorem §40.1(c), used twice, $\|c\mathbf{v}\|^2 = (c\mathbf{v}) \cdot (c\mathbf{v}) = c^2\,(\mathbf{v} \cdot \mathbf{v}) = c^2\|\mathbf{v}\|^2$. Both $\|c\mathbf{v}\|$ and $|c|\,\|\mathbf{v}\|$ are nonnegative, and $\sqrt{c^2} = |c|$, so taking square roots gives the claim.
+> By [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]](c), used twice, $\|c\mathbf{v}\|^2 = (c\mathbf{v}) \cdot (c\mathbf{v}) = c^2\,(\mathbf{v} \cdot \mathbf{v}) = c^2\|\mathbf{v}\|^2$. Both $\|c\mathbf{v}\|$ and $|c|\,\|\mathbf{v}\|$ are nonnegative, and $\sqrt{c^2} = |c|$, so taking square roots gives the claim.
 
 ^pf-40-2
 
@@ -134,7 +134,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > \mathbf{u} = \frac{1}{\|\mathbf{v}\|}\,\mathbf{v}
 > $$
 >
-> is a unit vector, since $\|\mathbf{u}\| = \frac{1}{\|\mathbf{v}\|}\|\mathbf{v}\| = 1$ by Proposition §40.2. Passing from $\mathbf{v}$ to $\mathbf{u}$ is called **normalizing** $\mathbf{v}$, and $\mathbf{u}$ is said to be *in the same direction* as $\mathbf{v}$.
+> is a unit vector, since $\|\mathbf{u}\| = \frac{1}{\|\mathbf{v}\|}\|\mathbf{v}\| = 1$ by [[§40 Inner Product, Length, and Orthogonality#^prop-40-2|Proposition §40.2]]. Passing from $\mathbf{v}$ to $\mathbf{u}$ is called **normalizing** $\mathbf{v}$, and $\mathbf{u}$ is said to be *in the same direction* as $\mathbf{v}$.
 >
 > *Lay: 6.1 (text)*
 
@@ -213,7 +213,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 ^prop-40-3
 
 > [!proof]+ Proof
-> By Theorem §40.1(b) (and (a) to use it in the second slot),
+> By [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]](b) (and (a) to use it in the second slot),
 >
 > $$
 > \begin{aligned}
@@ -224,21 +224,21 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > \end{aligned}
 > $$
 >
-> using $\mathbf{v} \cdot \mathbf{u} = \mathbf{u} \cdot \mathbf{v}$ in the last step. Replacing $\mathbf{v}$ by $-\mathbf{v}$, and using $\|-\mathbf{v}\| = \|\mathbf{v}\|$ and $\mathbf{u} \cdot (-\mathbf{v}) = -\mathbf{u} \cdot \mathbf{v}$ (Theorem §40.1(c)), gives the second formula.
+> using $\mathbf{v} \cdot \mathbf{u} = \mathbf{u} \cdot \mathbf{v}$ in the last step. Replacing $\mathbf{v}$ by $-\mathbf{v}$, and using $\|-\mathbf{v}\| = \|\mathbf{v}\|$ and $\mathbf{u} \cdot (-\mathbf{v}) = -\mathbf{u} \cdot \mathbf{v}$ ([[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]](c)), gives the second formula.
 
 ^pf-40-3
 
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-2|§40.2]]
 
 > [!remark] Remark: Why the Inner Product Detects Right Angles
-> In $\mathbb{R}^2$ or $\mathbb{R}^3$, the lines through $\mathbf{0}$ and $\mathbf{u}$ and through $\mathbf{0}$ and $\mathbf{v}$ are perpendicular exactly when $\mathbf{u}$ is as far from $\mathbf{v}$ as from $-\mathbf{v}$: the points equidistant from $\mathbf{v}$ and $-\mathbf{v}$ form the perpendicular bisector of the segment from $-\mathbf{v}$ to $\mathbf{v}$, which is the line (or plane) through $\mathbf{0}$ perpendicular to $\mathbf{v}$. By Proposition §40.3,
+> In $\mathbb{R}^2$ or $\mathbb{R}^3$, the lines through $\mathbf{0}$ and $\mathbf{u}$ and through $\mathbf{0}$ and $\mathbf{v}$ are perpendicular exactly when $\mathbf{u}$ is as far from $\mathbf{v}$ as from $-\mathbf{v}$: the points equidistant from $\mathbf{v}$ and $-\mathbf{v}$ form the perpendicular bisector of the segment from $-\mathbf{v}$ to $\mathbf{v}$, which is the line (or plane) through $\mathbf{0}$ perpendicular to $\mathbf{v}$. By [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]],
 >
 > $$
 > \operatorname{dist}(\mathbf{u}, -\mathbf{v})^2 = \|\mathbf{u} + \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 + 2\,\mathbf{u} \cdot \mathbf{v}, \qquad
 > \operatorname{dist}(\mathbf{u}, \mathbf{v})^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 - 2\,\mathbf{u} \cdot \mathbf{v} .
 > $$
 >
-> These are equal if and only if $2\,\mathbf{u} \cdot \mathbf{v} = -2\,\mathbf{u} \cdot \mathbf{v}$, that is, $\mathbf{u} \cdot \mathbf{v} = 0$. So in the plane and in space, perpendicularity means $\mathbf{u} \cdot \mathbf{v} = 0$; Definition §40.5 takes this as the definition in $\mathbb{R}^n$.
+> These are equal if and only if $2\,\mathbf{u} \cdot \mathbf{v} = -2\,\mathbf{u} \cdot \mathbf{v}$, that is, $\mathbf{u} \cdot \mathbf{v} = 0$. So in the plane and in space, perpendicularity means $\mathbf{u} \cdot \mathbf{v} = 0$; [[§40 Inner Product, Length, and Orthogonality#^def-40-5|Definition §40.5]] takes this as the definition in $\mathbb{R}^n$.
 
 ^rem-40-1
 
@@ -263,9 +263,9 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 ^thm-40-4
 
 > [!proof]+ Proof
-> By Proposition §40.3, $\|\mathbf{u} + \mathbf{v}\|^2 - \|\mathbf{u}\|^2 - \|\mathbf{v}\|^2 = 2\,\mathbf{u} \cdot \mathbf{v}$. This is $0$ if and only if $\mathbf{u} \cdot \mathbf{v} = 0$, that is, if and only if $\mathbf{u}$ and $\mathbf{v}$ are orthogonal.
+> By [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]], $\|\mathbf{u} + \mathbf{v}\|^2 - \|\mathbf{u}\|^2 - \|\mathbf{v}\|^2 = 2\,\mathbf{u} \cdot \mathbf{v}$. This is $0$ if and only if $\mathbf{u} \cdot \mathbf{v} = 0$, that is, if and only if $\mathbf{u}$ and $\mathbf{v}$ are orthogonal.
 >
-> (The lecture used the difference instead: for the right triangle with legs $\mathbf{u}$, $\mathbf{v}$ and hypotenuse $\mathbf{u} - \mathbf{v}$, the second formula of Proposition §40.3 gives $\|\mathbf{u} - \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2$ when $\mathbf{u} \cdot \mathbf{v} = 0$. It left as an exercise to recover the school formula $b = c\cos\varphi$ for a right triangle with leg $b$, hypotenuse $c$ and angle $\varphi$ between them: with legs $\mathbf{u} \perp \mathbf{v}$ and hypotenuse $\mathbf{h} = \mathbf{u} + \mathbf{v}$, Theorem §40.9 gives $\|\mathbf{h}\|\,\|\mathbf{v}\|\cos\varphi = \mathbf{h} \cdot \mathbf{v} = \mathbf{u} \cdot \mathbf{v} + \mathbf{v} \cdot \mathbf{v} = \|\mathbf{v}\|^2$, so $\|\mathbf{v}\| = \|\mathbf{h}\|\cos\varphi$.)
+> (The lecture used the difference instead: for the right triangle with legs $\mathbf{u}$, $\mathbf{v}$ and hypotenuse $\mathbf{u} - \mathbf{v}$, the second formula of [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]] gives $\|\mathbf{u} - \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2$ when $\mathbf{u} \cdot \mathbf{v} = 0$. It left as an exercise to recover the school formula $b = c\cos\varphi$ for a right triangle with leg $b$, hypotenuse $c$ and angle $\varphi$ between them: with legs $\mathbf{u} \perp \mathbf{v}$ and hypotenuse $\mathbf{h} = \mathbf{u} + \mathbf{v}$, [[§40 Inner Product, Length, and Orthogonality#^thm-40-9|Theorem §40.9]] gives $\|\mathbf{h}\|\,\|\mathbf{v}\|\cos\varphi = \mathbf{h} \cdot \mathbf{v} = \mathbf{u} \cdot \mathbf{v} + \mathbf{v} \cdot \mathbf{v} = \|\mathbf{v}\|^2$, so $\|\mathbf{v}\| = \|\mathbf{h}\|\cos\varphi$.)
 
 ^pf-40-4
 
@@ -302,7 +302,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > [!proof]+ Proof
 > Lay suggests these proofs in Exercises 29–31.
 >
-> (1) If $\mathbf{x} \in W^\perp$, then $\mathbf{x}$ is orthogonal to every vector of $W$, in particular to the vectors of a spanning set. Conversely, let $W = \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ and $\mathbf{x} \cdot \mathbf{v}_j = 0$ for every $j$. Any $\mathbf{w} \in W$ is $\mathbf{w} = c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p$, and by the linear-combination rule of Theorem §40.1,
+> (1) If $\mathbf{x} \in W^\perp$, then $\mathbf{x}$ is orthogonal to every vector of $W$, in particular to the vectors of a spanning set. Conversely, let $W = \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ and $\mathbf{x} \cdot \mathbf{v}_j = 0$ for every $j$. Any $\mathbf{w} \in W$ is $\mathbf{w} = c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p$, and by the linear-combination rule of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]],
 >
 > $$
 > \mathbf{w} \cdot \mathbf{x} = c_1(\mathbf{v}_1 \cdot \mathbf{x}) + \cdots + c_p(\mathbf{v}_p \cdot \mathbf{x}) = 0 .
@@ -310,7 +310,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 >
 > (2) $\mathbf{0} \in W^\perp$. Let $\mathbf{z}, \mathbf{z}_1, \mathbf{z}_2 \in W^\perp$, $c$ a scalar, and $\mathbf{u} \in W$. Then $(c\mathbf{z}) \cdot \mathbf{u} = c(\mathbf{z} \cdot \mathbf{u}) = 0$ and $(\mathbf{z}_1 + \mathbf{z}_2) \cdot \mathbf{u} = \mathbf{z}_1 \cdot \mathbf{u} + \mathbf{z}_2 \cdot \mathbf{u} = 0$. Since $\mathbf{u}$ was arbitrary, $c\mathbf{z}$ and $\mathbf{z}_1 + \mathbf{z}_2$ lie in $W^\perp$, which is therefore closed under scalar multiplication and addition.
 >
-> (3) If $\mathbf{x} \in W$ and $\mathbf{x} \in W^\perp$, then $\mathbf{x}$ is orthogonal to itself: $\mathbf{x} \cdot \mathbf{x} = 0$, so $\mathbf{x} = \mathbf{0}$ by Theorem §40.1(d).
+> (3) If $\mathbf{x} \in W$ and $\mathbf{x} \in W^\perp$, then $\mathbf{x}$ is orthogonal to itself: $\mathbf{x} \cdot \mathbf{x} = 0$, so $\mathbf{x} = \mathbf{0}$ by [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]](d).
 
 ^pf-40-5
 
@@ -330,7 +330,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > [!proof]+ Proof
 > Both equalities of sets are proved by showing two inclusions.
 >
-> Let $\mathbf{r}_1, \ldots, \mathbf{r}_m \in \mathbb{R}^n$ be the rows of $A$, written as vectors. By the row–column rule, the $i$th entry of $A\mathbf{x}$ is $\mathbf{r}_i \cdot \mathbf{x}$. If $\mathbf{x} \in \operatorname{Nul} A$, then $A\mathbf{x} = \mathbf{0}$, so $\mathbf{r}_i \cdot \mathbf{x} = 0$ for every $i$. The rows span $\operatorname{Row} A$, so $\mathbf{x} \in (\operatorname{Row} A)^\perp$ by Theorem §40.5(1). Conversely, if $\mathbf{x} \in (\operatorname{Row} A)^\perp$, then $\mathbf{x}$ is orthogonal to each row, every entry of $A\mathbf{x}$ is $0$, and $\mathbf{x} \in \operatorname{Nul} A$. This proves $(\operatorname{Row} A)^\perp = \operatorname{Nul} A$.
+> Let $\mathbf{r}_1, \ldots, \mathbf{r}_m \in \mathbb{R}^n$ be the rows of $A$, written as vectors. By the row–column rule, the $i$th entry of $A\mathbf{x}$ is $\mathbf{r}_i \cdot \mathbf{x}$. If $\mathbf{x} \in \operatorname{Nul} A$, then $A\mathbf{x} = \mathbf{0}$, so $\mathbf{r}_i \cdot \mathbf{x} = 0$ for every $i$. The rows span $\operatorname{Row} A$, so $\mathbf{x} \in (\operatorname{Row} A)^\perp$ by [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5]](1). Conversely, if $\mathbf{x} \in (\operatorname{Row} A)^\perp$, then $\mathbf{x}$ is orthogonal to each row, every entry of $A\mathbf{x}$ is $0$, and $\mathbf{x} \in \operatorname{Nul} A$. This proves $(\operatorname{Row} A)^\perp = \operatorname{Nul} A$.
 >
 > This holds for every matrix, in particular for $A^T$: $(\operatorname{Row} A^T)^\perp = \operatorname{Nul} A^T$. The rows of $A^T$ are the columns of $A$, so $\operatorname{Row} A^T = \operatorname{Col} A$, which gives the second statement.
 
@@ -339,7 +339,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§4 The Matrix Equation Ax = b#^prop-4-4|§4.4]] (row–vector rule), [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|Def. §24.3]] (row space)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] (Proposition §40.7 and Corollary §40.8 below).
+> - Rigorous treatment: [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ([[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]] and [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8]] below).
 > - In a Hilbert space the orthogonal complement ([[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]) of any set is a closed subspace, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]], and the double complement is the closed span, [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
 
 > [!theorem] Proposition §40.7: Dimension of the Orthogonal Complement
@@ -354,7 +354,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 ^prop-40-7
 
 > [!proof]+ Proof
-> If $W = \{\mathbf{0}\}$, then $W^\perp = \mathbb{R}^n$ and the formula reads $0 + n = n$. Otherwise let $\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ be a basis of $W$, $1 \le p \le n$, and let $A$ be the $p \times n$ matrix with rows $\mathbf{b}_1^T, \ldots, \mathbf{b}_p^T$. Then $W = \operatorname{Row} A$, and by Theorem §40.6, $W^\perp = (\operatorname{Row} A)^\perp = \operatorname{Nul} A$. By the Rank Theorem,
+> If $W = \{\mathbf{0}\}$, then $W^\perp = \mathbb{R}^n$ and the formula reads $0 + n = n$. Otherwise let $\{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ be a basis of $W$, $1 \le p \le n$, and let $A$ be the $p \times n$ matrix with rows $\mathbf{b}_1^T, \ldots, \mathbf{b}_p^T$. Then $W = \operatorname{Row} A$, and by [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]], $W^\perp = (\operatorname{Row} A)^\perp = \operatorname{Nul} A$. By the Rank Theorem,
 >
 > $$
 > \dim W + \dim W^\perp = \dim \operatorname{Row} A + \dim \operatorname{Nul} A = \operatorname{rank} A + \dim \operatorname{Nul} A = n .
@@ -371,27 +371,27 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > (\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Col} A^T \qquad\text{and}\qquad (\operatorname{Nul} A^T)^\perp = \operatorname{Col} A .
 > $$
 >
-> The lecture stated the orthogonality theorem as $(\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Col} A^T$ together with $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ (Theorem §40.6).
+> The lecture stated the orthogonality theorem as $(\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Col} A^T$ together with $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ ([[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]).
 >
 > *Source: 235 lecture L22*
 
 ^cor-40-8
 
 > [!proof]+ Proof
-> Every $\mathbf{w} \in W$ is orthogonal to every vector of $W^\perp$, so $W \subseteq (W^\perp)^\perp$. By Proposition §40.7, applied to $W$ and then to $W^\perp$,
+> Every $\mathbf{w} \in W$ is orthogonal to every vector of $W^\perp$, so $W \subseteq (W^\perp)^\perp$. By [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]], applied to $W$ and then to $W^\perp$,
 >
 > $$
 > \dim (W^\perp)^\perp = n - \dim W^\perp = n - (n - \dim W) = \dim W .
 > $$
 >
-> A subspace of $(W^\perp)^\perp$ with the same dimension is all of it (a basis of $W$ is a linearly independent set of $\dim (W^\perp)^\perp$ vectors there, hence a basis, by the Basis Theorem; this is [[§27 The Dimension of a Vector Space#^cor-27-6|Corollary §27.6]]). So $W = (W^\perp)^\perp$. Taking complements in Theorem §40.6 gives $(\operatorname{Nul} A)^\perp = ((\operatorname{Row} A)^\perp)^\perp = \operatorname{Row} A$ and $(\operatorname{Nul} A^T)^\perp = \operatorname{Col} A$.
+> A subspace of $(W^\perp)^\perp$ with the same dimension is all of it (a basis of $W$ is a linearly independent set of $\dim (W^\perp)^\perp$ vectors there, hence a basis, by the Basis Theorem; this is [[§27 The Dimension of a Vector Space#^cor-27-6|Corollary §27.6]]). So $W = (W^\perp)^\perp$. Taking complements in [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]] gives $(\operatorname{Nul} A)^\perp = ((\operatorname{Row} A)^\perp)^\perp = \operatorname{Row} A$ and $(\operatorname{Nul} A^T)^\perp = \operatorname{Col} A$.
 
 ^pf-40-8
 
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (the Basis Theorem), [[§27 The Dimension of a Vector Space#^cor-27-6|§27.6]]
 
 ![[m235-40-1.svg]]
-*The four fundamental subspaces of an $m \times n$ matrix $A$. In $\mathbb{R}^n$, $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements (Theorem §40.6); in $\mathbb{R}^m$, so are $\operatorname{Col} A$ and $\operatorname{Nul} A^T$. Their dimensions add up to $n$ and to $m$ (Proposition §40.7): $\operatorname{rank} A + \dim \operatorname{Nul} A = n$ and $\operatorname{rank} A + \dim \operatorname{Nul} A^T = m$.*
+*The four fundamental subspaces of an $m \times n$ matrix $A$. In $\mathbb{R}^n$, $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements ([[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]); in $\mathbb{R}^m$, so are $\operatorname{Col} A$ and $\operatorname{Nul} A^T$. Their dimensions add up to $n$ and to $m$ ([[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]]): $\operatorname{rank} A + \dim \operatorname{Nul} A = n$ and $\operatorname{rank} A + \dim \operatorname{Nul} A^T = m$.*
 
 > [!example] Example §40.4: A Plane and Its Normal Line
 > **(a)** Let $W$ be a plane through the origin in $\mathbb{R}^3$ and $L$ the line through the origin perpendicular to $W$. For nonzero $\mathbf{z} \in L$ and $\mathbf{w} \in W$, the segments from $\mathbf{0}$ to $\mathbf{z}$ and to $\mathbf{w}$ are perpendicular, so $\mathbf{z} \cdot \mathbf{w} = 0$. In fact $L$ consists of *all* vectors orthogonal to $W$, and $W$ of all vectors orthogonal to $L$:
@@ -406,7 +406,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > W = \{\mathbf{x} : \mathbf{v} \cdot \mathbf{x} = 0\} = \operatorname{Nul} \begin{bmatrix} 1 & 2 & -1 \end{bmatrix} = \operatorname{Span}\{\mathbf{v}\}^\perp .
 > $$
 >
-> By Corollary §40.8, $W^\perp = (\operatorname{Span}\{\mathbf{v}\}^\perp)^\perp = \operatorname{Span}\{\mathbf{v}\}$: a vector $\mathbf{y}$ is orthogonal to $W$ if and only if $\mathbf{y} = \lambda\mathbf{v}$ for some scalar $\lambda$, that is, $\mathbf{y}$ is proportional to $(1, 2, -1)$. The dimensions agree with Proposition §40.7: $2 + 1 = 3$.
+> By [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8]], $W^\perp = (\operatorname{Span}\{\mathbf{v}\}^\perp)^\perp = \operatorname{Span}\{\mathbf{v}\}$: a vector $\mathbf{y}$ is orthogonal to $W$ if and only if $\mathbf{y} = \lambda\mathbf{v}$ for some scalar $\lambda$, that is, $\mathbf{y}$ is proportional to $(1, 2, -1)$. The dimensions agree with [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]]: $2 + 1 = 3$.
 >
 > *Lay: Example 6.1.6*
 > *Source: 235 lecture L22*
@@ -422,7 +422,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 >
 > and $\mathbf{u} = (0, 1, 1, 0)$. Show that $\mathbf{u} \in W^\perp$.
 >
-> **Method 1: a spanning set.** By Theorem §40.5(1) it is enough to check $\mathbf{u}$ against a finite set spanning $W$. Solving the system ($x_3 = -x_2$ from the second equation, then $x_1 = -x_4$ from the first), $W$ is the $2$-dimensional plane
+> **Method 1: a spanning set.** By [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5]](1) it is enough to check $\mathbf{u}$ against a finite set spanning $W$. Solving the system ($x_3 = -x_2$ from the second equation, then $x_1 = -x_4$ from the first), $W$ is the $2$-dimensional plane
 >
 > $$
 > W = \operatorname{Span}\{\mathbf{w}_1, \mathbf{w}_2\}, \qquad \mathbf{w}_1 = \begin{bmatrix} 1 \\ 0 \\ 0 \\ -1 \end{bmatrix}, \quad \mathbf{w}_2 = \begin{bmatrix} 0 \\ 1 \\ -1 \\ 0 \end{bmatrix} .
@@ -436,7 +436,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > A = \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 1 & 0 \end{bmatrix}, \qquad\text{so}\qquad W^\perp = (\operatorname{Nul} A)^\perp = \operatorname{Row} A = \operatorname{Span}\{\mathbf{r}_1, \mathbf{r}_2\}
 > $$
 >
-> by Corollary §40.8, where $\mathbf{r}_1 = (1, 1, 1, 1)$ and $\mathbf{r}_2 = (0, 1, 1, 0)$ are the rows. The question becomes whether $\mathbf{u} \in \operatorname{Span}\{\mathbf{r}_1, \mathbf{r}_2\}$, and here $\mathbf{u} = \mathbf{r}_2$. This is the quickest solution; it needs no basis of $W$.
+> by [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|Corollary §40.8]], where $\mathbf{r}_1 = (1, 1, 1, 1)$ and $\mathbf{r}_2 = (0, 1, 1, 0)$ are the rows. The question becomes whether $\mathbf{u} \in \operatorname{Span}\{\mathbf{r}_1, \mathbf{r}_2\}$, and here $\mathbf{u} = \mathbf{r}_2$. This is the quickest solution; it needs no basis of $W$.
 >
 > *Source: 235 lecture L22*
 
@@ -474,7 +474,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > \end{aligned}
 > $$
 >
-> In $\mathbb{R}^3$ the three points $\mathbf{0}$, $\mathbf{u}$, $\mathbf{v}$ still span a triangle in a plane, the law of cosines applies to it, and the same computation with a third coordinate gives $u_1v_1 + u_2v_2 + u_3v_3$. (If $\mathbf{u}$ and $\mathbf{v}$ lie on one line, the triangle is degenerate, $\vartheta = 0$ or $\pi$, and the formula is checked directly from $\mathbf{v} = c\mathbf{u}$.) Equivalently, the middle line is Proposition §40.3.
+> In $\mathbb{R}^3$ the three points $\mathbf{0}$, $\mathbf{u}$, $\mathbf{v}$ still span a triangle in a plane, the law of cosines applies to it, and the same computation with a third coordinate gives $u_1v_1 + u_2v_2 + u_3v_3$. (If $\mathbf{u}$ and $\mathbf{v}$ lie on one line, the triangle is degenerate, $\vartheta = 0$ or $\pi$, and the formula is checked directly from $\mathbf{v} = c\mathbf{u}$.) Equivalently, the middle line is [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]].
 
 ^pf-40-9
 

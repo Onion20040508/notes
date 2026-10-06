@@ -50,7 +50,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 > [!theorem] Proposition §14.9: Integral over Null Sets and A.E. Equal Functions
 > Let $f, g$ be non-negative measurable functions on $E \in \mathcal{M}$.
 > - (i) If $m(E) = 0$, then $\int_E f\,dx = 0$.
-> - (ii) If $f(x) = g(x)$ [[§12 Measurable Functions#^def-12-5|a.e.]] on $E$, then $\int_E f\,dx = \int_E g\,dx$.
+> - (ii) If $f(x) = g(x)$ [[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|a.e.]] on $E$, then $\int_E f\,dx = \int_E g\,dx$.
 
 ^prop-14-9
 
@@ -67,7 +67,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 ^pf-14-9
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-2|§14.2]], [[§12 Measurable Functions#^def-12-5|Def. §12.5]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
+*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-2|§14.2]], [[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|Def. §12.5]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
 
 > [!theorem] Proposition §14.10: Integrability Implies A.E. Finiteness
 > Let $f \geq 0$ be measurable on $E \in \mathcal{M}$. If $f$ is integrable on $E$ (i.e., $\int_E f\,dx < \infty$), then $f$ is a.e. finite on $E$. (We adopt the convention $0 \cdot \infty = 0$.)
@@ -135,15 +135,15 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 > \int_E \lim_{m \to \infty} S_m\,dx = \lim_{m \to \infty} \int_E S_m\,dx = \lim_{m \to \infty} \sum_{k=1}^{m} \int_E f_k\,dx = \sum_{k=1}^{\infty} \int_E f_k\,dx,
 > $$
 >
-> where the second equality uses [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity of the integral]] for finite sums.
+> where the second equality uses [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|linearity of the integral]] for finite sums.
 
 ^pf-14-12
 
-*Uses:* [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+*Uses:* [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]]
 
 > [!remark]- Connections
 > - Contrast with MATH 451, where term-by-term integration of a series needs uniform convergence ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]], e.g. via the [[§25 More on Uniform Convergence#^thm-25-3|Weierstrass M-test]]).
-> - Signed version: [[§15 The General Lebesgue Integral#^cor-15-9|Corollary §15.9]].
+> - Signed version: [[§15a The Dominated Convergence Theorem#^cor-15-9|Corollary §15.9]].
 
 > [!theorem] Corollary §14.13: Countable Additivity of the Integral over Disjoint Sets
 > Let $\{E_k\}_{k=1}^{\infty}$ be a sequence of pairwise disjoint measurable sets in $\mathbb{R}^n$, and let $E = \bigcup_{k=1}^{\infty} E_k$. If $f$ is a non-negative measurable function, then:
@@ -155,7 +155,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 ^cor-14-13
 
 > [!proof]+ Proof
-> Define $f_k(x) = f(x)\,\chi_{E_k}(x)$. Since the $E_k$ are pairwise disjoint, $f(x) = \sum_{k=1}^{\infty} f_k(x)$ for all $x \in E$. By [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|MCT II]]:
+> Define $f_k(x) = f(x)\,\chi_{E_k}(x)$. Since the $E_k$ are pairwise disjoint, $f(x) = \sum_{k=1}^{\infty} f_k(x)$ for all $x \in E$. By [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|MCT II]]:
 >
 > $$
 > \int_E f\,dx = \int_E \sum_{k=1}^{\infty} f_k\,dx = \sum_{k=1}^{\infty} \int_E f_k\,dx = \sum_{k=1}^{\infty} \int_{E_k} f\,dx,
@@ -165,7 +165,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 ^pf-14-13
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|§14.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
+*Uses:* [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|§14.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-6|§14.6]]
 
 ## The Induced Measure
 
@@ -182,9 +182,9 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 > [!remark] Remark
 > To verify that $\nu$ is a measure, we check the axioms:
-> - (i) $\nu(\emptyset) = \int_\emptyset f\,dx = 0$ ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|integral over null set]]).
+> - (i) $\nu(\emptyset) = \int_\emptyset f\,dx = 0$ ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|integral over null set]]).
 > - (ii) $\nu(E) \geq 0$ for all $E \in \mathcal{M}$ (since $f \geq 0$).
-> - (iii) **Countable additivity**: If $\{E_k\}$ are pairwise disjoint measurable sets, then by the [[§14 The Lebesgue Integral for Simple Functions#^cor-14-13|corollary above]]:
+> - (iii) **Countable additivity**: If $\{E_k\}$ are pairwise disjoint measurable sets, then by the [[§14a Consequences of the Monotone Convergence Theorem#^cor-14-13|corollary above]]:
 >
 > $$
 > \nu\!\left(\bigcup_{k=1}^{\infty} E_k\right) = \int_{\bigcup E_k} f\,dx = \sum_{k=1}^{\infty} \int_{E_k} f\,dx = \sum_{k=1}^{\infty} \nu(E_k).
@@ -223,7 +223,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 > \lim_{k \to \infty} \int_E g_k\,dx = \int_E (f_1 - f)\,dx.
 > $$
 >
-> Since $f_1 \geq f_k \geq 0$ and $\int f_k \leq \int f_1 < \infty$, by the [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|subtraction rule]] ($\int(f - g) = \int f - \int g$ when $f \geq g \geq 0$ and $\int g < \infty$; this is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|Theorem §14.8]] (ii) applied to $f = g + (f - g)$, after subtracting the finite number $\int g$):
+> Since $f_1 \geq f_k \geq 0$ and $\int f_k \leq \int f_1 < \infty$, by the [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|subtraction rule]] ($\int(f - g) = \int f - \int g$ when $f \geq g \geq 0$ and $\int g < \infty$; this is [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|Theorem §14.8]] (ii) applied to $f = g + (f - g)$, after subtracting the finite number $\int g$):
 >
 > **Left side**:
 >
@@ -251,7 +251,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 ^pf-14-14
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]]
 
 > [!remark] Remark: The Nonnegativity Assumption Can Be Dropped
 > Once the [[§15 The General Lebesgue Integral#^def-15-1|general Lebesgue integral]] and its [[§15 The General Lebesgue Integral#^thm-15-2|linearity]] are available ([[§15 The General Lebesgue Integral|§15]]), the nonnegativity assumption is unnecessary. For a decreasing sequence $f_1 \geq f_2 \geq \cdots$ of *any* measurable functions with $f_1 \in L(E)$, the same conclusion holds. The proof is identical: define $g_k = f_1 - f_k \geq 0$ (nonneg because $f_k \leq f_1$, *not* because $f_k \geq 0$), apply the increasing MCT to $g_k \nearrow f_1 - f$, then use linearity of the integral to cancel $\int f_1 < \infty$.
@@ -262,7 +262,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 > |---|---|---|
 > | **Condition** | $f_k \geq 0$ (lower bound) | $f_1 \in L$ (integrable upper bound) |
 > | **Why** | Integrals well-defined (can be $+\infty$) | Need to subtract; $\infty - \infty$ undefined |
-> | **Compare** | [[Continuity of Measure\|Cont. of measure from below]] | [[§11 Borel Sets and Measure Spaces#^prop-11-13\|Cont. of measure from above]] ($m(E_1) < \infty$) |
+> | **Compare** | [[Continuity of Measure\|Cont. of measure from below]] | [[§11a Approximation and Continuity of Measure#^prop-11-13\|Cont. of measure from above]] ($m(E_1) < \infty$) |
 >
 > The increasing case needs a lower bound to ensure integrals exist; the decreasing case needs an *integrable* upper bound to allow subtraction.
 
@@ -286,8 +286,8 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 > [!proof]+ Proof
 > Define $g_l(x) = \inf_{k \geq l} f_k(x)$. Then:
-> - Each $g_l$ is non-negative and measurable ([[§12 Measurable Functions#^thm-12-6|infimum of measurable functions]]).
-> - $\liminf_{k \to \infty} f_k(x) = \lim_{l \to \infty} g_l(x)$ (by [[§12 Measurable Functions#^rem-12-4|definition]] of $\liminf$).
+> - Each $g_l$ is non-negative and measurable ([[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|infimum of measurable functions]]).
+> - $\liminf_{k \to \infty} f_k(x) = \lim_{l \to \infty} g_l(x)$ (by [[§12a Limits and Positive Parts of Measurable Functions#^rem-12-4|definition]] of $\liminf$).
 > - $g_l(x) \leq g_{l+1}(x)$ for all $x \in E$ (as $l$ increases, the infimum is taken over fewer terms).
 >
 > By the [[Monotone Convergence Theorem (Lebesgue)|MCT]] applied to the increasing sequence $\{g_l\}$:
@@ -316,7 +316,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 ^pf-14-15
 
-*Uses:* [[§12 Measurable Functions#^thm-12-6|§12.6]], [[§12 Measurable Functions#^rem-12-4|Rem. §12.4]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|§12.6]], [[§12a Limits and Positive Parts of Measurable Functions#^rem-12-4|Rem. §12.4]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
 
 > [!example] Example §14.1: Fatou's Inequality Can Be Strict
 > Define $f_k: [0, 1] \to \mathbb{R}$ by:
@@ -355,7 +355,7 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 
 ^ex-14-2
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]]
+*Uses:* [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]]
 
 > [!remark] Remark: Why Sup and Not Inf in the Definition of the Integral?
 > For $f \geq 0$ measurable, the integral is defined as:
@@ -364,9 +364,11 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 > \int_E f\,dx = \sup\left\{\int_E h\,dx \;\middle|\; 0 \leq h \leq f,\; h \text{ simple}\right\}.
 > $$
 >
-> One might ask: why not instead take $\inf\!\left\{\int_E h\,dx \mid h \geq f,\; h \text{ simple}\right\}$? The answer is that this infimum does not work in general. For instance, if one tried to define it for $f = \chi_V$ where $V$ is a [[§11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]] (not measurable, so $\chi_V$ lies outside the scope of the definition), any simple function $h \geq f$ satisfies $h \geq \chi_V$, but the integral of $h$ does not “see” $V$ in a controlled way. More fundamentally, the sup definition builds the integral from below using functions we understand completely (simple functions), and the [[Monotone Convergence Theorem (Lebesgue)|MCT]] guarantees this sup equals the “true” integral. The inf approach would require an analogous convergence theorem from above, which does not hold without additional integrability hypotheses.
+> One might ask: why not instead take $\inf\!\left\{\int_E h\,dx \mid h \geq f,\; h \text{ simple}\right\}$? The answer is that this infimum does not work in general. For instance, if one tried to define it for $f = \chi_V$ where $V$ is a [[§11b The Vitali Set and the Cantor Set#^def-11-12|Vitali set]] (not measurable, so $\chi_V$ lies outside the scope of the definition), any simple function $h \geq f$ satisfies $h \geq \chi_V$, but the integral of $h$ does not “see” $V$ in a controlled way. More fundamentally, the sup definition builds the integral from below using functions we understand completely (simple functions), and the [[Monotone Convergence Theorem (Lebesgue)|MCT]] guarantees this sup equals the “true” integral. The inf approach would require an analogous convergence theorem from above, which does not hold without additional integrability hypotheses.
 
 ^rem-14-7
 
 > [!remark]- Connections
 > - The Riemann integral uses both sides (upper and lower Darboux integrals must agree): [[§8 Motivation꞉ The Riemann Integral#^rem-8-1|Rem. §8.1]], [[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]]. The Vitali set is non-measurable by [[The Vitali Set is Not Measurable|Theorem §11.20]].
+
+*Chain (Vitali set):* ← [[§13a ℚ, Vitali and Cantor Sets, xᵏ and Escaping Mass#The Vitali Set|Chapter 3]]

@@ -9,10 +9,10 @@ tags: [measure-theory, math551]
 
 ## Egorov's Theorem
 
-Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functions#^def-12-8|almost everywhere convergence]] is “almost” [[§12 Measurable Functions#^def-12-9|uniform convergence]].
+Egorov's theorem states that on sets of finite measure, [[§12b Simple Functions and Modes of Convergence#^def-12-new1|almost everywhere convergence]] is “almost” [[§12b Simple Functions and Modes of Convergence#^def-12-9|uniform convergence]].
 
 > [!theorem] Theorem §13.1: Egorov's Theorem
-> Let $E \in \mathcal{M}$ with $m(E) < \infty$. Let $f, f_1, f_2, \ldots$ be a sequence of [[§12 Measurable Functions#^ex-12-3|a.e. finite]] [[§12 Measurable Functions#^def-12-2|measurable functions]] on $E$ such that $f_k \to f$ a.e. on $E$.
+> Let $E \in \mathcal{M}$ with $m(E) < \infty$. Let $f, f_1, f_2, \ldots$ be a sequence of [[§12a Limits and Positive Parts of Measurable Functions#^ex-12-3|a.e. finite]] [[§12 Measurable Functions#^def-12-2|measurable functions]] on $E$ such that $f_k \to f$ a.e. on $E$.
 >
 > Then for all $\delta > 0$, there exists a measurable set $E_\delta \subseteq E$ with $m(E_\delta) < \delta$ such that $f_k \to f$ **uniformly** on $E \setminus E_\delta$.
 
@@ -27,7 +27,7 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 >
 > **Step 2: Define the key sets.**
 >
-> For $j, \ell \in \mathbb{N}$, [[§12 Measurable Functions#^def-12-10|define]]:
+> For $j, \ell \in \mathbb{N}$, [[§12b Simple Functions and Modes of Convergence#^def-12-new2|define]]:
 >
 > $$
 > E_\ell^{(j)} = \bigcup_{k=\ell}^{\infty} \left\{ x \in E : |f_k(x) - f(x)| \geq \frac{1}{j} \right\}.
@@ -46,7 +46,7 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 >
 > **Step 4: Apply continuity of measure from above.**
 >
-> Since $E_\ell^{(j)} \searrow \emptyset$ as $\ell \to \infty$ and $m(E_1^{(j)}) \leq m(E) < \infty$, by [[§11 Borel Sets and Measure Spaces#^prop-11-13|continuity of measure]]:
+> Since $E_\ell^{(j)} \searrow \emptyset$ as $\ell \to \infty$ and $m(E_1^{(j)}) \leq m(E) < \infty$, by [[§11a Approximation and Continuity of Measure#^prop-11-13|continuity of measure]]:
 >
 > $$
 > \lim_{\ell \to \infty} m(E_\ell^{(j)}) = m\left(\bigcap_{\ell=1}^{\infty} E_\ell^{(j)}\right) = 0.
@@ -82,11 +82,11 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 > |f_k(x) - f(x)| < \frac{1}{j} < \epsilon.
 > $$
 >
-> The bound $\ell_j$ depends only on $j$ (equivalently, $\epsilon$), not on $x$. This is [[§12 Measurable Functions#^def-12-9|uniform convergence]].
+> The bound $\ell_j$ depends only on $j$ (equivalently, $\epsilon$), not on $x$. This is [[§12b Simple Functions and Modes of Convergence#^def-12-9|uniform convergence]].
 
 ^pf-13-1
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^ex-12-3|Ex. §12.3]], [[§12 Measurable Functions#^def-12-8|Def. §12.8]], [[§12 Measurable Functions#^def-12-10|Def. §12.10]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12 Measurable Functions#^def-12-9|Def. §12.9]], [[§14 Series#^ex-14-4|451 Ex. §14.4]], [[Archimedean Property|451 Archimedean Property]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12a Limits and Positive Parts of Measurable Functions#^ex-12-3|Ex. §12.3]], [[§12b Simple Functions and Modes of Convergence#^def-12-8|Def. §12.8]], [[§12b Simple Functions and Modes of Convergence#^def-12-new1|Def. §12.9]], [[§12b Simple Functions and Modes of Convergence#^def-12-new2|Def. §12.11]], [[§11a Approximation and Continuity of Measure#^prop-11-13|§11.13]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12b Simple Functions and Modes of Convergence#^def-12-9|Def. §12.9]], [[§14 Series#^ex-14-4|451 Ex. §14.4]], [[Archimedean Property|451 Archimedean Property]]
 
 > [!remark]- Connections
 > - MATH 451 uniform convergence: [[§24 Uniform Convergence#^def-24-2|451 Definition §24.2]].
@@ -95,7 +95,7 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 > [!example] Example §13.1: Illustration of Egorov's Theorem
 > Let $f_k(x) = x^k$ for $x \in [0, 1]$. Then $f_k \to f$ pointwise where $f(x) = 0$ for $0 \leq x < 1$ and $f(1) = 1$.
 >
-> The convergence is **not uniform** on $[0, 1]$ ([[§12 Measurable Functions#^ex-12-4|Example §12.4]]): for $0 \leq x < 1$, we need $x^k < \epsilon$, which requires $k > \frac{\ln \epsilon}{\ln x} \to \infty$ as $x \to 1^-$.
+> The convergence is **not uniform** on $[0, 1]$ ([[§12b Simple Functions and Modes of Convergence#^ex-12-4|Example §12.4]]): for $0 \leq x < 1$, we need $x^k < \epsilon$, which requires $k > \frac{\ln \epsilon}{\ln x} \to \infty$ as $x \to 1^-$.
 >
 > However, for any $\delta > 0$, the convergence **is uniform** on $[0, 1 - \delta]$:
 >
@@ -122,7 +122,7 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 *Why Egorov needs $m(E) < \infty$: $f_k = \chi_{[k,k+1]}$ is a bump sliding off to infinity. At each fixed $x$ (red) the values are eventually $0$, so $f_k \to 0$ pointwise, but $\sup f_k = 1$ for every $k$. Removing a set of finite measure cannot stop the bump, which eventually meets whatever remains.*
 
 > [!remark]- Connections
-> - Finiteness is exactly the hypothesis of [[§11 Borel Sets and Measure Spaces#^prop-11-13|continuity from above]] used in Step 4; compare [[§14 The Lebesgue Integral for Simple Functions#^rem-14-6|Why the Finiteness Hypothesis is Necessary]] for decreasing MCT.
+> - Finiteness is exactly the hypothesis of [[§11a Approximation and Continuity of Measure#^prop-11-13|continuity from above]] used in Step 4; compare [[§14a Consequences of the Monotone Convergence Theorem#^rem-14-6|Why the Finiteness Hypothesis is Necessary]] for decreasing MCT.
 
 ## Lusin's Theorem
 
@@ -157,7 +157,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 *Uses:* [[Characterization of the Supremum|451 Characterization of the Supremum]], [[§5 Topology of ℝⁿ#^thm-5-1|§5.1]], [[§5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[§11 Metric Topology#^thm-11-9|590 §11.9]]
 
 ![[m551-13-3.svg]]
-*Lemma §13.2. Left: for disjoint compact $F_1$, $F_2$ the infimum of distances is attained at some $x_0 \in F_1$, $y_0 \in F_2$ (by Bolzano–Weierstrass), so $d(F_1, F_2) = d(x_0, y_0) > 0$. Right: without boundedness this fails. The closed sets $F_1$ (a ray of the $x$-axis) and $F_2$ (a branch of a hyperbola) are disjoint, but the gap between them (red) shrinks to $0$.*
+*[[§13 Egorov's and Lusin's Theorems#^lem-13-2|Lemma §13.2]]. Left: for disjoint compact $F_1$, $F_2$ the infimum of distances is attained at some $x_0 \in F_1$, $y_0 \in F_2$ (by Bolzano–Weierstrass), so $d(F_1, F_2) = d(x_0, y_0) > 0$. Right: without boundedness this fails. The closed sets $F_1$ (a ray of the $x$-axis) and $F_2$ (a branch of a hyperbola) are disjoint, but the gap between them (red) shrinks to $0$.*
 
 > [!remark]- Connections
 > - Same compactness-via-sequences mechanism in general metric spaces: [[§16 Limit Point Compactness#^thm-16-2|590 Theorem §16.2]], and the uniform-radius statement [[Lebesgue Number Lemma]].
@@ -174,7 +174,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 > [!proof]+ Proof
 > **Step 1: Simple functions.**
 >
-> Assume $f$ is a [[§12 Measurable Functions#^prop-12-13|simple measurable function]]:
+> Assume $f$ is a [[§12b Simple Functions and Modes of Convergence#^prop-12-13|simple measurable function]]:
 >
 > $$
 > f(x) = \sum_{i=1}^{k} a_i \chi_{A_i}(x),
@@ -204,7 +204,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 >
 > Assume $f$ is bounded and measurable on $E$.
 >
-> By the [[§12 Measurable Functions#^thm-12-17|uniform approximation theorem]], there exists a sequence of simple measurable functions $\{\varphi_k\}$ such that $\varphi_k \to f$ uniformly on $E$.
+> By the [[§12b Simple Functions and Modes of Convergence#^thm-12-17|uniform approximation theorem]], there exists a sequence of simple measurable functions $\{\varphi_k\}$ such that $\varphi_k \to f$ uniformly on $E$.
 >
 > By Step 1, for each $k$, there exists a closed set $F_k \subseteq E$ with $m(E \setminus F_k) < \frac{\delta}{2^k}$ such that $\varphi_k$ is continuous on $F_k$.
 >
@@ -214,7 +214,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 > E \setminus F = \bigcup_{k=1}^{\infty} (E \setminus F_k), \quad \text{so} \quad m(E \setminus F) \leq \sum_{k=1}^{\infty} m(E \setminus F_k) < \sum_{k=1}^{\infty} \frac{\delta}{2^k} = \delta.
 > $$
 >
-> Since $F \subseteq F_k$ for all $k$, each $\varphi_k$ is continuous on $F$. Since $\varphi_k \to f$ uniformly on $E$ (hence on $F$), and [[§12 Measurable Functions#^thm-12-16|uniform limits of continuous functions are continuous]], $f$ is continuous on $F$.
+> Since $F \subseteq F_k$ for all $k$, each $\varphi_k$ is continuous on $F$. Since $\varphi_k \to f$ uniformly on $E$ (hence on $F$), and [[§12b Simple Functions and Modes of Convergence#^thm-12-16|uniform limits of continuous functions are continuous]], $f$ is continuous on $F$.
 >
 > **Step 3: General real-valued measurable functions.**
 >
@@ -242,10 +242,10 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 
 ^pf-13-3
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§12 Measurable Functions#^thm-12-17|§12.17]], [[§12 Measurable Functions#^thm-12-16|§12.16]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Continuous Functions#^thm-17-2|451 §17.2]], [[§17 Continuous Functions#^thm-17-3|451 §17.3]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12b Simple Functions and Modes of Convergence#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§12b Simple Functions and Modes of Convergence#^thm-12-17|§12.17]], [[§12b Simple Functions and Modes of Convergence#^thm-12-16|§12.16]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Continuous Functions#^thm-17-2|451 §17.2]], [[§17 Continuous Functions#^thm-17-3|451 §17.3]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
 
 ![[m551-13-4.svg]]
-*Step 1 of Lusin's theorem, with the $A_i$ drawn as intervals for simplicity. Inside each $A_i$ we choose a closed $F_i$ (thick) with $m(A_i \setminus F_i)$ small; what is removed, $E \setminus F$ (red), is a small set around the jumps of $f$ (dotted). On $F = F_0 \cup F_1 \cup F_2$ the function equals the constant $a_i$ on each $F_i$, and different $F_i$ are a positive distance apart (Lemma §13.2), so $f|_F$ is locally constant, hence continuous.*
+*Step 1 of Lusin's theorem, with the $A_i$ drawn as intervals for simplicity. Inside each $A_i$ we choose a closed $F_i$ (thick) with $m(A_i \setminus F_i)$ small; what is removed, $E \setminus F$ (red), is a small set around the jumps of $f$ (dotted). On $F = F_0 \cup F_1 \cup F_2$ the function equals the constant $a_i$ on each $F_i$, and different $F_i$ are a positive distance apart ([[§13 Egorov's and Lusin's Theorems#^lem-13-2|Lemma §13.2]]), so $f|_F$ is locally constant, hence continuous.*
 
 > [!remark]- Connections
 > - “Continuous on $F$” means $f|_F$ is continuous in the [[§5 Subspace Topology#^def-5-1|subspace topology]]; by the (not covered) [[§20 Normal Spaces#^rem-20-3|Tietze Extension Theorem]] on the normal space $\mathbb{R}^n$, $f|_F$ then extends to a continuous function on all of $\mathbb{R}^n$.
@@ -258,7 +258,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 
 ^rem-13-2
 
-> [!remark] Remark: Core Philosophy of Egorov and Lusin (Sections 12–13)
+> [!remark] Remark: Core Philosophy of Egorov and Lusin (Sections [[§12 Measurable Functions|§12]]–[[§13 Egorov's and Lusin's Theorems|§13]])
 > The theorems of [[Egorov's Theorem|Egorov]] and [[Lusin's Theorem|Lusin]] share a single organizing principle: **measurability buys near-regularity**. Given any $\delta > 0$, we can excise a set of measure less than $\delta$ from the domain so that the remaining behavior becomes “classical”:
 >
 > | **Theorem** | **Remove $m < \delta$** | **Upgrade on remainder** |

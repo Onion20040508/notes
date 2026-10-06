@@ -40,7 +40,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 ^def-53-1
 
 > [!theorem] Theorem §53.1: The Laws of Arithmetic Hold in ℂ
-> The usual laws of arithmetic for $\mathbb{R}$ also hold for $\mathbb{C}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, and every $z$ has an additive inverse. (Multiplicative inverses: Proposition §53.4.) For this reason, multiplication is usually computed by algebraic expansion: multiply each term by each term, use $i^2 = -1$, and collect the result in the form $a + bi$.
+> The usual laws of arithmetic for $\mathbb{R}$ also hold for $\mathbb{C}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, and every $z$ has an additive inverse. (Multiplicative inverses: [[§53 Complex Numbers#^prop-53-4|Proposition §53.4]].) For this reason, multiplication is usually computed by algebraic expansion: multiply each term by each term, use $i^2 = -1$, and collect the result in the form $a + bi$.
 >
 > *Lay: Appendix B (text)*
 
@@ -191,7 +191,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 > \frac wz = \frac{3 + 4i}{5 - 2i} = \frac{3 + 4i}{5 - 2i} \cdot \frac{5 + 2i}{5 + 2i} = \frac{15 + 6i + 20i + 8i^2}{5^2 + (-2)^2} = \frac{15 - 8 + 26i}{29} = \frac{7 + 26i}{29} = \frac{7}{29} + \frac{26}{29}i .
 > $$
 >
-> **(b)** By Proposition §53.4, with $|2 + 3i|^2 = 4 + 9 = 13$,
+> **(b)** By [[§53 Complex Numbers#^prop-53-4|Proposition §53.4]], with $|2 + 3i|^2 = 4 + 9 = 13$,
 >
 > $$
 > (2 + 3i)^{-1} = \frac{2 - 3i}{13} = \frac{2}{13} - \frac{3}{13}i .
@@ -215,8 +215,15 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 
 ^def-53-5
 
-> [!definition] Definition §53.6: Argument; Polar Form
-> Let $z = a + bi$ be a nonzero complex number, and let $\varphi$ be the angle between the positive real axis and the point $(a, b)$, with $-\pi < \varphi \le \pi$. The angle $\varphi$ is called the **argument** of $z$; we write $\varphi = \arg z$. These are **polar coordinates** in $\mathbb{R}^2$: from trigonometry, $a = |z|\cos\varphi$ and $b = |z|\sin\varphi$, so
+> [!definition] Definition §53.6: Argument
+> Let $z = a + bi$ be a nonzero complex number, and let $\varphi$ be the angle between the positive real axis and the point $(a, b)$, with $-\pi < \varphi \le \pi$. The angle $\varphi$ is called the **argument** of $z$; we write $\varphi = \arg z$.
+>
+> *Lay: Appendix B (text)*
+
+^def-53-6
+
+> [!definition] Definition §53.6: Polar Form
+> Let $z = a + bi$ be a nonzero complex number, with modulus $|z|$ and argument $\varphi = \arg z$ ([[§53 Complex Numbers#^def-53-6|Definition §53.6]]). These are **polar coordinates** in $\mathbb{R}^2$: from trigonometry, $a = |z|\cos\varphi$ and $b = |z|\sin\varphi$, so
 >
 > $$
 > z = a + bi = |z|(\cos\varphi + i\sin\varphi) .
@@ -224,10 +231,10 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 >
 > *Lay: Appendix B (text)*
 
-^def-53-6
+^def-53-new1
 
 ![[m235-53-1.svg]]
-*(a) The point $z = a + bi$ at distance $|z|$ and angle $\varphi = \arg z$ from the origin; its legs are $a = |z|\cos\varphi$ and $b = |z|\sin\varphi$, and the conjugate $\bar z$ is its mirror image in the real axis. (b) Example §53.3: multiplying by $i$ (absolute value $1$, argument $\pi/2$) rotates $z = 3 + i$ through a right angle to $iz = -1 + 3i$, without changing its length.*
+*(a) The point $z = a + bi$ at distance $|z|$ and angle $\varphi = \arg z$ from the origin; its legs are $a = |z|\cos\varphi$ and $b = |z|\sin\varphi$, and the conjugate $\bar z$ is its mirror image in the real axis. (b) [[§53 Complex Numbers#^ex-53-3|Example §53.3]]: multiplying by $i$ (absolute value $1$, argument $\pi/2$) rotates $z = 3 + i$ through a right angle to $iz = -1 + 3i$, without changing its length.*
 
 > [!theorem] Theorem §53.5: Multiplication and Division in Polar Form
 > If $z = |z|(\cos\varphi + i\sin\varphi)$ and $w = |w|(\cos\vartheta + i\sin\vartheta)$ are nonzero, then
@@ -263,7 +270,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 
 ^pf-53-5
 
-*Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§53 Complex Numbers#^prop-53-4|§53.4]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
+*Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§53 Complex Numbers#^def-53-new1|Def. §53.6]], [[§53 Complex Numbers#^prop-53-4|§53.4]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
 > [!remark]- Connections
 > - Complex-variables version: [[§8 Products and Powers in Exponential Form#^thm-8-1|342 Thm. §8.1]] (the same rule in the exponential form $z = re^{i\theta}$ of [[§7 Exponential Form#^def-7-1|342 Def. §7.1]]) and [[§9 Arguments of Products and Quotients#^thm-9-1|342 Thm. §9.1]] (in what sense $\arg(wz) = \arg w + \arg z$).
@@ -367,12 +374,12 @@ $$
 > M_{a + bi} = r \begin{bmatrix} a/r & -b/r \\ b/r & a/r \end{bmatrix} = r \begin{bmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{bmatrix},
 > $$
 >
-> a scaling by $|z|$ composed with the rotation by $\arg z$, which is Theorem §53.5 in matrix form. This is the model for every real $2 \times 2$ matrix with complex eigenvalues ([[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]]).
+> a scaling by $|z|$ composed with the rotation by $\arg z$, which is [[§53 Complex Numbers#^thm-53-5|Theorem §53.5]] in matrix form. This is the model for every real $2 \times 2$ matrix with complex eigenvalues ([[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]]).
 >
 > *Source: 235 lecture L21*
 
 ^rem-53-3
 
 > [!remark]- Connections
-> - Non-real roots of a real polynomial, and hence non-real eigenvalues of a real matrix, come in conjugate pairs $\lambda, \bar\lambda$ (take conjugates in $p(\lambda) = 0$, using properties 2–3 of Theorem §53.3): [[§13 Polynomials#^ladr-4-14|LADR 4.14]]. That every polynomial has a root in $\mathbb{C}$ is the fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-12|LADR 4.12]] (hub [[Fundamental theorem of algebra, first version]]).
+> - Non-real roots of a real polynomial, and hence non-real eigenvalues of a real matrix, come in conjugate pairs $\lambda, \bar\lambda$ (take conjugates in $p(\lambda) = 0$, using properties 2–3 of [[§53 Complex Numbers#^thm-53-3|Theorem §53.3]]): [[§13 Polynomials#^ladr-4-14|LADR 4.14]]. That every polynomial has a root in $\mathbb{C}$ is the fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-12|LADR 4.12]] (hub [[Fundamental theorem of algebra, first version]]).
 > - Complex-variables version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (the fundamental theorem of algebra, proved from Liouville's theorem).

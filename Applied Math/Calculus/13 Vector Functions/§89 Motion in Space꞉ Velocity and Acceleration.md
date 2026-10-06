@@ -101,7 +101,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ^prop-89-2
 
 > [!proof]+ Proof
-> $\mathbf{v}$ is an antiderivative of $\mathbf{a}$ and $\mathbf{r}$ an antiderivative of $\mathbf{v}$ ([[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]]). By the Fundamental Theorem of Calculus for vector functions ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Theorem §87.5]]), $\int_{t_0}^t \mathbf{a}(u)\,du = \mathbf{v}(t) - \mathbf{v}(t_0)$ and $\int_{t_0}^t \mathbf{v}(u)\,du = \mathbf{r}(t) - \mathbf{r}(t_0)$.
+> $\mathbf{v}$ is an antiderivative of $\mathbf{a}$ and $\mathbf{r}$ an antiderivative of $\mathbf{v}$ ([[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-new2|Definition §89.3]]). By the Fundamental Theorem of Calculus for vector functions ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Theorem §87.5]]), $\int_{t_0}^t \mathbf{a}(u)\,du = \mathbf{v}(t) - \mathbf{v}(t_0)$ and $\int_{t_0}^t \mathbf{v}(u)\,du = \mathbf{r}(t) - \mathbf{r}(t_0)$.
 
 ^pf-89-2
 

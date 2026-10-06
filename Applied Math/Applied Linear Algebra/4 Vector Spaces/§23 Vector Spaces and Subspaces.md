@@ -99,7 +99,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 > \mathbf{u} + (-1)\mathbf{u} = 1\mathbf{u} + (-1)\mathbf{u} = (1 + (-1))\mathbf{u} = 0\mathbf{u} = \mathbf{0} .
 > $$
 >
-> So $(-1)\mathbf{u}$ has the property that defines $-\mathbf{u}$, and by the uniqueness of negatives (Proposition §23.1), $(-1)\mathbf{u} = -\mathbf{u}$.
+> So $(-1)\mathbf{u}$ has the property that defines $-\mathbf{u}$, and by the uniqueness of negatives ([[§23 Vector Spaces and Subspaces#^prop-23-1|Proposition §23.1]]), $(-1)\mathbf{u} = -\mathbf{u}$.
 
 ^pf-23-2
 
@@ -168,7 +168,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 ^prop-23-3
 
 > [!proof]+ Proof
-> Properties (a), (b), (c) of Definition §23.2 are Axioms 4, 1 and 6 for $H$. Axioms 2, 3 and 7–10 hold in $H$ automatically, because they hold for all elements of $V$, including those in $H$. Axiom 5 also holds in $H$: if $\mathbf{u}$ is in $H$, then $(-1)\mathbf{u}$ is in $H$ by property (c), and $(-1)\mathbf{u} = -\mathbf{u}$ by equation (3) of Proposition §23.2. For the converse, $V$ contains $\mathbf{0}$ and is closed under its own operations by Axioms 1, 4, 6.
+> Properties (a), (b), (c) of [[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]] are Axioms 4, 1 and 6 for $H$. Axioms 2, 3 and 7–10 hold in $H$ automatically, because they hold for all elements of $V$, including those in $H$. Axiom 5 also holds in $H$: if $\mathbf{u}$ is in $H$, then $(-1)\mathbf{u}$ is in $H$ by property (c), and $(-1)\mathbf{u} = -\mathbf{u}$ by equation (3) of [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2]]. For the converse, $V$ contains $\mathbf{0}$ and is closed under its own operations by Axioms 1, 4, 6.
 
 ^pf-23-3
 
@@ -177,7 +177,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 The term *subspace* is used when at least two vector spaces are in mind, one inside the other; "subspace of $V$" identifies $V$ as the larger space.
 
 > [!example] Example §23.2: Subspaces
-> **(a) The zero subspace.** The set $\{\mathbf{0}\}$ consisting only of the zero vector of $V$ is a subspace: $\mathbf{0} + \mathbf{0} = \mathbf{0}$ and $c\mathbf{0} = \mathbf{0}$ (Proposition §23.2). It is written $\{\mathbf{0}\}$. At the other extreme, $V$ is a subspace of itself.
+> **(a) The zero subspace.** The set $\{\mathbf{0}\}$ consisting only of the zero vector of $V$ is a subspace: $\mathbf{0} + \mathbf{0} = \mathbf{0}$ and $c\mathbf{0} = \mathbf{0}$ ([[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2]]). It is written $\{\mathbf{0}\}$. At the other extreme, $V$ is a subspace of itself.
 >
 > **(b) Polynomials and smooth functions.** $\mathbb{P}$ is a subspace of the space of all real-valued functions on $\mathbb{R}$, and for each $n \ge 0$, $\mathbb{P}_n$ is a subspace of $\mathbb{P}$: it contains the zero polynomial, and sums and scalar multiples of polynomials of degree at most $n$ again have degree at most $n$. The lecture's chain is
 >
@@ -240,7 +240,7 @@ As in Chapter 1, a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p
 > [!proof]+ Proof
 > *Lay proves the case $p = 2$ (Example 4.1.10) and says it "can easily be generalized".* Let $H = \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$.
 >
-> **(a)** $\mathbf{0} = 0\mathbf{v}_1 + \cdots + 0\mathbf{v}_p$ (Proposition §23.2(1) and Axiom 4), so $\mathbf{0}$ is in $H$.
+> **(a)** $\mathbf{0} = 0\mathbf{v}_1 + \cdots + 0\mathbf{v}_p$ ([[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2]](1) and Axiom 4), so $\mathbf{0}$ is in $H$.
 >
 > **(b)** Take two vectors of $H$, $\mathbf{u} = s_1\mathbf{v}_1 + \cdots + s_p\mathbf{v}_p$ and $\mathbf{w} = t_1\mathbf{v}_1 + \cdots + t_p\mathbf{v}_p$. By Axioms 2, 3 and 8,
 >
@@ -287,7 +287,7 @@ In $\mathbb{R}^3$, every nonzero subspace other than $\mathbb{R}^3$ itself is ei
 > \begin{bmatrix} a - 3b \\ b - a \\ a \\ b \end{bmatrix} = a\begin{bmatrix} 1 \\ -1 \\ 1 \\ 0 \end{bmatrix} + b\begin{bmatrix} -3 \\ 1 \\ 0 \\ 1 \end{bmatrix} = a\mathbf{v}_1 + b\mathbf{v}_2 .
 > $$
 >
-> So $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$, a subspace of $\mathbb{R}^4$ by Theorem §23.4, with spanning set $\{\mathbf{v}_1, \mathbf{v}_2\}$.
+> So $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$, a subspace of $\mathbb{R}^4$ by [[§23 Vector Spaces and Subspaces#^thm-23-4|Theorem §23.4]], with spanning set $\{\mathbf{v}_1, \mathbf{v}_2\}$.
 >
 > **(b)** For what values of $h$ is $\mathbf{y} = (-4, 3, h)$ in the subspace of $\mathbb{R}^3$ spanned by $\mathbf{v}_1 = (1, -1, -2)$, $\mathbf{v}_2 = (5, -4, -7)$, $\mathbf{v}_3 = (-3, 1, 0)$?
 >
@@ -305,9 +305,9 @@ In $\mathbb{R}^3$, every nonzero subspace other than $\mathbb{R}^3$ itself is ei
 
 > [!remark] Remark: Method — Is H a Subspace?
 > 1. **Zero vector.** Check whether $\mathbf{0} \in H$. If not, $H$ is not a subspace; stop.
-> 2. **Parametric description.** If $H$ is given by parameters, $H = \{a\mathbf{v}_1 + b\mathbf{v}_2 + \cdots\}$, then $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \ldots\}$ is a subspace (Theorem §23.4), and the $\mathbf{v}_i$ form a spanning set (Example §23.4(a)).
+> 2. **Parametric description.** If $H$ is given by parameters, $H = \{a\mathbf{v}_1 + b\mathbf{v}_2 + \cdots\}$, then $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \ldots\}$ is a subspace ([[§23 Vector Spaces and Subspaces#^thm-23-4|Theorem §23.4]]), and the $\mathbf{v}_i$ form a spanning set ([[§23 Vector Spaces and Subspaces#^ex-23-4|Example §23.4]](a)).
 > 3. **Homogeneous equations.** If $H$ is the set of solutions of homogeneous linear equations, then $H = \operatorname{Nul} A$ is a subspace ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|Theorem §24.1]]); solving the equations gives a spanning set.
-> 4. **Directly.** Otherwise check closure under addition and scalar multiplication from Definition §23.2.
-> 5. **To disprove**, give one specific counterexample: two vectors of $H$ whose sum is not in $H$, or one vector and one scalar (Example §23.3).
+> 4. **Directly.** Otherwise check closure under addition and scalar multiplication from [[§23 Vector Spaces and Subspaces#^def-23-2|Definition §23.2]].
+> 5. **To disprove**, give one specific counterexample: two vectors of $H$ whose sum is not in $H$, or one vector and one scalar ([[§23 Vector Spaces and Subspaces#^ex-23-3|Example §23.3]]).
 
 ^rem-23-2

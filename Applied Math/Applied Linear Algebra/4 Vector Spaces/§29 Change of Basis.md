@@ -49,9 +49,9 @@ A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf
 ^ex-29-1
 
 ![[m235-29-1.svg]]
-*One vector $\mathbf{x}$, two coordinate grids. Left: the grid of $\mathcal{B}$; $\mathbf{x}$ is the diagonal of the parallelogram on $3\mathbf{b}_1$ and $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 1)$. Right: the grid of $\mathcal{C}$ (with $\mathbf{b}_1 = 4\mathbf{c}_1 + \mathbf{c}_2$, $\mathbf{b}_2 = -6\mathbf{c}_1 + \mathbf{c}_2$ as in Example §29.1, drawn for $\mathbf{c}_1 = (0.6, -0.2)$, $\mathbf{c}_2 = (0.2, 0.6)$); the same $\mathbf{x}$ is $6\mathbf{c}_1 + 4\mathbf{c}_2$, so $[\mathbf{x}]_{\mathcal C} = (6, 4)$.*
+*One vector $\mathbf{x}$, two coordinate grids. Left: the grid of $\mathcal{B}$; $\mathbf{x}$ is the diagonal of the parallelogram on $3\mathbf{b}_1$ and $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 1)$. Right: the grid of $\mathcal{C}$ (with $\mathbf{b}_1 = 4\mathbf{c}_1 + \mathbf{c}_2$, $\mathbf{b}_2 = -6\mathbf{c}_1 + \mathbf{c}_2$ as in [[§29 Change of Basis#^ex-29-1|Example §29.1]], drawn for $\mathbf{c}_1 = (0.6, -0.2)$, $\mathbf{c}_2 = (0.2, 0.6)$); the same $\mathbf{x}$ is $6\mathbf{c}_1 + 4\mathbf{c}_2$, so $[\mathbf{x}]_{\mathcal C} = (6, 4)$.*
 
-The argument of Example §29.1 works for any two bases.
+The argument of [[§29 Change of Basis#^ex-29-1|Example §29.1]] works for any two bases.
 
 > [!theorem] Theorem §29.1: The Change-of-Coordinates Matrix
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ and $\mathcal{C} = \{\mathbf{c}_1, \ldots, \mathbf{c}_n\}$ be bases of a vector space $V$. Then there is a unique $n \times n$ matrix $P_{\mathcal C \leftarrow \mathcal B}$ such that
@@ -71,7 +71,7 @@ The argument of Example §29.1 works for any two bases.
 ^thm-29-1
 
 > [!proof]+ Proof
-> Lay derives (4) in Example §29.1 and leaves the general proof to Exercises 15 and 16, which outline the following argument (lecture L17 gives the existence part the same way).
+> Lay derives (4) in [[§29 Change of Basis#^ex-29-1|Example §29.1]] and leaves the general proof to Exercises 15 and 16, which outline the following argument (lecture L17 gives the existence part the same way).
 >
 > **The matrix (5) works.** Let $\mathbf{x} \in V$. Since $\mathcal{B}$ spans $V$, there are scalars $x_1, \ldots, x_n$ with $\mathbf{x} = x_1\mathbf{b}_1 + \cdots + x_n\mathbf{b}_n$, that is, $[\mathbf{x}]_{\mathcal B} = (x_1, \ldots, x_n)$. Apply the coordinate mapping of $\mathcal{C}$, which is linear ([[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]):
 >
@@ -88,7 +88,7 @@ The argument of Example §29.1 works for any two bases.
 *Uses:* [[§26 Coordinate Systems#^thm-26-3|§26.3]], [[§26 Coordinate Systems#^def-26-1|Def. §26.1]] (coordinates of a basis vector), [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]]
 
 > [!definition] Definition §29.1: Change-of-Coordinates Matrix
-> The matrix $P_{\mathcal C \leftarrow \mathcal B}$ of Theorem §29.1 is the **change-of-coordinates matrix from $\mathcal{B}$ to $\mathcal{C}$**. Multiplication by $P_{\mathcal C \leftarrow \mathcal B}$ converts $\mathcal{B}$-coordinates into $\mathcal{C}$-coordinates:
+> The matrix $P_{\mathcal C \leftarrow \mathcal B}$ of [[§29 Change of Basis#^thm-29-1|Theorem §29.1]] is the **change-of-coordinates matrix from $\mathcal{B}$ to $\mathcal{C}$**. Multiplication by $P_{\mathcal C \leftarrow \mathcal B}$ converts $\mathcal{B}$-coordinates into $\mathcal{C}$-coordinates:
 >
 > $$
 > V \xrightarrow{\ [\ ]_{\mathcal B}\ } \mathbb{R}^n \xrightarrow{\ P_{\mathcal C \leftarrow \mathcal B}\ } \mathbb{R}^n \qquad\text{equals}\qquad V \xrightarrow{\ [\ ]_{\mathcal C}\ } \mathbb{R}^n .
@@ -121,7 +121,7 @@ The argument of Example §29.1 works for any two bases.
 > (P_{\mathcal C \leftarrow \mathcal B})^{-1} [\mathbf{x}]_{\mathcal C} = [\mathbf{x}]_{\mathcal B} \qquad \text{for all } \mathbf{x} \in V .
 > $$
 >
-> So $(P_{\mathcal C \leftarrow \mathcal B})^{-1}$ converts $\mathcal{C}$-coordinates into $\mathcal{B}$-coordinates. By the uniqueness in Theorem §29.1 (with $\mathcal{B}$ and $\mathcal{C}$ interchanged), it is $P_{\mathcal B \leftarrow \mathcal C}$. (Lay reads (6) off the displayed equation; the uniqueness statement is what makes it exact.)
+> So $(P_{\mathcal C \leftarrow \mathcal B})^{-1}$ converts $\mathcal{C}$-coordinates into $\mathcal{B}$-coordinates. By the uniqueness in [[§29 Change of Basis#^thm-29-1|Theorem §29.1]] (with $\mathcal{B}$ and $\mathcal{C}$ interchanged), it is $P_{\mathcal B \leftarrow \mathcal C}$. (Lay reads (6) off the displayed equation; the uniqueness statement is what makes it exact.)
 
 ^pf-29-2
 
@@ -146,9 +146,9 @@ The argument of Example §29.1 works for any two bases.
 > [!proof]+ Proof
 > (a) For a vector $\mathbf{b}$ of $\mathbb{R}^n$, $\mathbf{b} = b_1\mathbf{e}_1 + \cdots + b_n\mathbf{e}_n$, so $[\mathbf{b}]_{\mathcal E} = \mathbf{b}$. By (5), the columns of $P_{\mathcal E \leftarrow \mathcal B}$ are $[\mathbf{b}_i]_{\mathcal E} = \mathbf{b}_i$.
 >
-> (c) For every $\mathbf{x}$, $[\mathbf{x}]_{\mathcal D} = P_{\mathcal D \leftarrow \mathcal C}[\mathbf{x}]_{\mathcal C} = P_{\mathcal D \leftarrow \mathcal C} P_{\mathcal C \leftarrow \mathcal B}[\mathbf{x}]_{\mathcal B}$. So the product satisfies (4) for the pair $\mathcal{B}$, $\mathcal{D}$, and by uniqueness in Theorem §29.1 it equals $P_{\mathcal D \leftarrow \mathcal B}$.
+> (c) For every $\mathbf{x}$, $[\mathbf{x}]_{\mathcal D} = P_{\mathcal D \leftarrow \mathcal C}[\mathbf{x}]_{\mathcal C} = P_{\mathcal D \leftarrow \mathcal C} P_{\mathcal C \leftarrow \mathcal B}[\mathbf{x}]_{\mathcal B}$. So the product satisfies (4) for the pair $\mathcal{B}$, $\mathcal{D}$, and by uniqueness in [[§29 Change of Basis#^thm-29-1|Theorem §29.1]] it equals $P_{\mathcal D \leftarrow \mathcal B}$.
 >
-> (b) By (c) with $\mathcal{E}$ in the middle, (a) and Theorem §29.2:
+> (b) By (c) with $\mathcal{E}$ in the middle, (a) and [[§29 Change of Basis#^thm-29-2|Theorem §29.2]]:
 >
 > $$
 > P_{\mathcal C \leftarrow \mathcal B} = P_{\mathcal C \leftarrow \mathcal E}\, P_{\mathcal E \leftarrow \mathcal B} = (P_{\mathcal E \leftarrow \mathcal C})^{-1} P_{\mathcal E \leftarrow \mathcal B} = P_{\mathcal C}^{-1} P_{\mathcal B} .
@@ -170,7 +170,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 > [\mathbf{c}_1\ \cdots\ \mathbf{c}_n \mid \mathbf{b}_1\ \cdots\ \mathbf{b}_n] \sim [\, I \mid P_{\mathcal C \leftarrow \mathcal B} \,] .
 > $$
 >
-> 3. The right block is $P_{\mathcal C \leftarrow \mathcal B}$: its $j$th column solves $[\mathbf{c}_1\ \cdots\ \mathbf{c}_n]\,\mathbf{y} = \mathbf{b}_j$, so it is $[\mathbf{b}_j]_{\mathcal C}$. (The row operations multiply by $P_{\mathcal C}^{-1}$, in accordance with Proposition §29.3(b).)
+> 3. The right block is $P_{\mathcal C \leftarrow \mathcal B}$: its $j$th column solves $[\mathbf{c}_1\ \cdots\ \mathbf{c}_n]\,\mathbf{y} = \mathbf{b}_j$, so it is $[\mathbf{b}_j]_{\mathcal C}$. (The row operations multiply by $P_{\mathcal C}^{-1}$, in accordance with [[§29 Change of Basis#^prop-29-3|Proposition §29.3]](b).)
 > 4. For the other direction either invert ($P_{\mathcal B \leftarrow \mathcal C} = (P_{\mathcal C \leftarrow \mathcal B})^{-1}$) or reduce $[\mathbf{b}_1\ \cdots\ \mathbf{b}_n \mid \mathbf{c}_1\ \cdots\ \mathbf{c}_n] \sim [\, I \mid P_{\mathcal B \leftarrow \mathcal C} \,]$. The special case $[\mathbf{b}_1\ \cdots\ \mathbf{b}_n \mid I] \sim [\, I \mid P_{\mathcal B \leftarrow \mathcal E} \,]$ is the computation of $P_{\mathcal B}^{-1}$.
 >
 > Variant (lecture L17): reducing $[\mathbf{b}_1\ \cdots\ \mathbf{b}_n \mid \mathbf{c}_1\ \cdots\ \mathbf{c}_n]$ until the *right* block is $I$ leaves $P_{\mathcal C}^{-1}P_{\mathcal B} = P_{\mathcal C \leftarrow \mathcal B}$ on the left. For matrices larger than $2 \times 2$, one row reduction is faster than computing $P_{\mathcal C}^{-1}$ and then $P_{\mathcal C}^{-1}P_{\mathcal B}$.
@@ -213,7 +213,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 > \qquad P_{\mathcal B \leftarrow \mathcal C} = \begin{bmatrix} 5 & 3 \\ 6 & 4 \end{bmatrix} .
 > $$
 >
-> **(b)** By Theorem §29.2 with $\mathcal{B}$ and $\mathcal{C}$ interchanged, and the $2 \times 2$ [[§12 The Inverse of a Matrix#^thm-12-2|inverse formula]] ($\det = 20 - 18 = 2$):
+> **(b)** By [[§29 Change of Basis#^thm-29-2|Theorem §29.2]] with $\mathcal{B}$ and $\mathcal{C}$ interchanged, and the $2 \times 2$ [[§12 The Inverse of a Matrix#^thm-12-2|inverse formula]] ($\det = 20 - 18 = 2$):
 >
 > $$
 > P_{\mathcal C \leftarrow \mathcal B} = (P_{\mathcal B \leftarrow \mathcal C})^{-1} = \frac12 \begin{bmatrix} 4 & -3 \\ -6 & 5 \end{bmatrix} = \begin{bmatrix} 2 & -3/2 \\ -3 & 5/2 \end{bmatrix} .

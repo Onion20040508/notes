@@ -17,14 +17,21 @@ Real problems often lead to linear systems with infinitely many solutions, and t
 
 Suppose a nation's economy is divided into sectors (manufacturing, communication, services, …), and for each sector its total output for one year is known, together with exactly how this output is divided ("exchanged") among the sectors.
 
-> [!definition] Definition §6.1: Exchange Table, Price, Equilibrium Prices
-> In Leontief's **exchange model**, the **exchange table** of an economy lists, in the column of each sector, the fractions of that sector's total output purchased by each sector (one row per purchasing sector); each column sums to $1$, since all output is accounted for. The **price** of a sector's output is the total dollar value of that output. Prices are **equilibrium prices** if the income of each sector exactly balances its expenses.
+> [!definition] Definition §6.1: Exchange Table
+> In Leontief's **exchange model**, the **exchange table** of an economy lists, in the column of each sector, the fractions of that sector's total output purchased by each sector (one row per purchasing sector); each column sums to $1$, since all output is accounted for.
 >
 > A sector looks *down its column* to see where its output goes, and *across its row* to see what it needs as inputs.
 >
 > *Lay: 1.6 (text)*
 
 ^def-6-1
+
+> [!definition] Definition §6.1: Equilibrium Prices
+> The **price** of a sector's output is the total dollar value of that output. Prices are **equilibrium prices** if the income of each sector exactly balances its expenses.
+>
+> *Lay: 1.6 (text)*
+
+^def-6-new1
 
 > [!theorem] Theorem §6.1: Existence of Equilibrium Prices (Leontief)
 > There exist equilibrium prices that can be assigned to the total outputs of the various sectors in such a way that the income of each sector exactly balances its expenses.
@@ -33,7 +40,7 @@ Suppose a nation's economy is divided into sectors (manufacturing, communication
 
 ^thm-6-1
 
-*Lay omits the proof ("Leontief proved the following result"). That a nonzero solution exists is elementary (Remark below). That it can be chosen with all prices nonnegative is the real content: the exchange table $E$ is a stochastic matrix ([[§31 Applications to Markov Chains#^def-31-1|Definition §31.1]]: nonnegative columns summing to $1$), equilibrium prices are the solutions of $E\mathbf{p} = \mathbf{p}$, and a stochastic matrix has a steady-state vector by [[§31 Applications to Markov Chains#^prop-31-2|Proposition §31.2]]. A steady-state vector $\mathbf{q}$ of $E$ is a probability vector with $E\mathbf{q} = \mathbf{q}$, so it is a nonzero price vector with all entries $\ge 0$, and so is every positive multiple of it.*
+*Lay omits the proof ("Leontief proved the following result"). That a nonzero solution exists is elementary (Remark below). That it can be chosen with all prices nonnegative is the real content: the exchange table $E$ is a stochastic matrix ([[§31 Applications to Markov Chains#^def-31-new1|Definition §31.1]]: nonnegative columns summing to $1$), equilibrium prices are the solutions of $E\mathbf{p} = \mathbf{p}$, and a stochastic matrix has a steady-state vector by [[§31 Applications to Markov Chains#^prop-31-2|Proposition §31.2]]. A steady-state vector $\mathbf{q}$ of $E$ is a probability vector with $E\mathbf{q} = \mathbf{q}$, so it is a nonzero price vector with all entries $\ge 0$, and so is every positive multiple of it.*
 
 > [!remark] Remark: Why a Nonzero Price Vector Exists
 > Let $E$ be the exchange table and $\mathbf{p}$ the price vector. Row $i$ of $E$ times $\mathbf{p}$ is the expense of sector $i$, so the equilibrium condition is $\mathbf{p} = E\mathbf{p}$, a homogeneous system with coefficient matrix $I - E$. Each column of $E$ sums to $1$, so each column of $I - E$ sums to $0$: the rows of $I - E$ add up to the zero row. Adding all other rows to the last row is a sequence of replacement operations that turns the last row into zeros. So $I - E$ has a row without a pivot. A square coefficient matrix with fewer pivots than columns has a free variable, so $(I - E)\mathbf{p} = \mathbf{0}$ has a nontrivial solution ([[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]]).
@@ -140,12 +147,19 @@ The general input–output ("production") model, of which this is a simpler rela
 
 ## Network Flow
 
-> [!definition] Definition §6.2: Network, Junction, Branch, Conservation of Flow
-> A **network** consists of a set of points called **junctions** (or **nodes**), with lines or arcs called **branches** connecting some or all of the junctions. The direction of flow in each branch is indicated, and the flow amount (or rate) is either shown or denoted by a variable. The basic assumption of **network flow** is that *the total flow into the network equals the total flow out of the network, and the total flow into each junction equals the total flow out of the junction*. So each junction gives one linear equation: for instance, $30$ units flowing into a junction that has outgoing flows $x_1$, $x_2$ give $x_1 + x_2 = 30$.
+> [!definition] Definition §6.2: Network
+> A **network** consists of a set of points called **junctions** (or **nodes**), with lines or arcs called **branches** connecting some or all of the junctions. The direction of flow in each branch is indicated, and the flow amount (or rate) is either shown or denoted by a variable.
 >
 > *Lay: 1.6 (text)*
 
 ^def-6-2
+
+> [!definition] Definition §6.2: Conservation of Flow
+> The basic assumption of **network flow** is that *the total flow into the network equals the total flow out of the network, and the total flow into each junction equals the total flow out of the junction*. So each junction gives one linear equation: for instance, $30$ units flowing into a junction that has outgoing flows $x_1$, $x_2$ give $x_1 + x_2 = 30$.
+>
+> *Lay: 1.6 (text)*
+
+^def-6-new2
 
 > [!example] Example §6.3: Traffic in Downtown Baltimore
 > The network below shows the traffic flow (vehicles per hour) over several one-way streets in downtown Baltimore during a typical early afternoon. Determine the general flow pattern.
@@ -184,4 +198,4 @@ The general input–output ("production") model, of which this is a simpler rela
 ^ex-6-3
 
 ![[m235-6-1.svg]]
-*The street network of Example §6.3 (redrawn). Black arrows are flows into or out of the network, blue arrows the internal branches. Conservation at $A$, $B$, $C$, $D$ gives four equations, and conservation for the whole network gives $x_3 = 400$.*
+*The street network of [[§6 Applications of Linear Systems#^ex-6-3|Example §6.3]] (redrawn). Black arrows are flows into or out of the network, blue arrows the internal branches. Conservation at $A$, $B$, $C$, $D$ gives four equations, and conservation for the whole network gives $x_3 = 400$.*

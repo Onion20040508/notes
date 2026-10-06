@@ -55,7 +55,7 @@ Vector notation turns the general solution of a linear system into a geometric o
 > \begin{bmatrix} 3 & 5 & -4 & 0 \\ 0 & 3 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> $x_3$ is free, so there are nontrivial solutions, one for each choice of $x_3$ (Corollary §5.1). Continue to the reduced echelon form ($\tfrac13 R_2$, $R_1 - 5R_2$, $\tfrac13 R_1$):
+> $x_3$ is free, so there are nontrivial solutions, one for each choice of $x_3$ ([[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]]). Continue to the reduced echelon form ($\tfrac13 R_2$, $R_1 - 5R_2$, $\tfrac13 R_1$):
 >
 > $$
 > \begin{bmatrix} 1 & 0 & -\tfrac43 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix},
@@ -116,7 +116,7 @@ Vector notation turns the general solution of a linear system into a geometric o
 
 *Uses:* [[§4 The Matrix Equation Ax = b#^thm-4-5|§4.5]], [[§2 Row Reduction and Echelon Forms#^def-2-4|Def. §2.4]], [[§3 Vector Equations#^def-3-4|Def. §3.4]]
 
-One free variable gives a line through the origin (Example §5.1); two or more give a plane through the origin as a good mental image (Example §5.2). The same picture serves for $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ in general ([[§3 Vector Equations#^rem-3-2|§3, Remark]]). The solution set of $A\mathbf{x} = \mathbf{0}$ is the null space of $A$ ([[§18 Subspaces of ℝⁿ#^def-18-3|Definition §18.3]]).
+One free variable gives a line through the origin ([[§5 Solution Sets of Linear Systems#^ex-5-1|Example §5.1]]); two or more give a plane through the origin as a good mental image ([[§5 Solution Sets of Linear Systems#^ex-5-2|Example §5.2]]). The same picture serves for $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ in general ([[§3 Vector Equations#^rem-3-2|§3, Remark]]). The solution set of $A\mathbf{x} = \mathbf{0}$ is the null space of $A$ ([[§18 Subspaces of ℝⁿ#^def-18-3|Definition §18.3]]).
 
 ## Parametric Vector Form
 
@@ -127,7 +127,7 @@ One free variable gives a line through the origin (Example §5.1); two or more g
 > \mathbf{x} = s\mathbf{u} + t\mathbf{v} \qquad (s, t \in \mathbb{R})
 > $$
 >
-> to stress that the parameters range over all real numbers. In Example §5.1, $\mathbf{x} = x_3\mathbf{v}$ (or $\mathbf{x} = t\mathbf{v}$, $t \in \mathbb{R}$) is a parametric vector equation of a line. Whenever a solution set is described explicitly with vectors in this way, the solution is in **parametric vector form**.
+> to stress that the parameters range over all real numbers. In [[§5 Solution Sets of Linear Systems#^ex-5-1|Example §5.1]], $\mathbf{x} = x_3\mathbf{v}$ (or $\mathbf{x} = t\mathbf{v}$, $t \in \mathbb{R}$) is a parametric vector equation of a line. Whenever a solution set is described explicitly with vectors in this way, the solution is in **parametric vector form**.
 >
 > *Lay: 1.5 (text)*
 
@@ -142,7 +142,7 @@ One free variable gives a line through the origin (Example §5.1); two or more g
 > A = \begin{bmatrix} 3 & 5 & -4 \\ -3 & -2 & 4 \\ 6 & 1 & -8 \end{bmatrix}, \qquad \mathbf{b} = \begin{bmatrix} 7 \\ -1 \\ -4 \end{bmatrix} .
 > $$
 >
-> $A$ is the coefficient matrix of Example §5.1. The same row operations ($R_2 + R_1$ gives $[\,0\ 3\ 0\ 6\,]$; $R_3 - 2R_1$ gives $[\,0\ {-9}\ 0\ {-18}\,]$; $R_3 + 3R_2$ gives a zero row; then $\tfrac13 R_2 = [\,0\ 1\ 0\ 2\,]$, $R_1 - 5R_2 = [\,3\ 0\ {-4}\ {-3}\,]$, $\tfrac13 R_1$) give
+> $A$ is the coefficient matrix of [[§5 Solution Sets of Linear Systems#^ex-5-1|Example §5.1]]. The same row operations ($R_2 + R_1$ gives $[\,0\ 3\ 0\ 6\,]$; $R_3 - 2R_1$ gives $[\,0\ {-9}\ 0\ {-18}\,]$; $R_3 + 3R_2$ gives a zero row; then $\tfrac13 R_2 = [\,0\ 1\ 0\ 2\,]$, $R_1 - 5R_2 = [\,3\ 0\ {-4}\ {-3}\,]$, $\tfrac13 R_1$) give
 >
 > $$
 > \begin{bmatrix} 3 & 5 & -4 & 7 \\ -3 & -2 & 4 & -1 \\ 6 & 1 & -8 & -4 \end{bmatrix}
@@ -163,7 +163,7 @@ One free variable gives a line through the origin (Example §5.1); two or more g
 
 ^ex-5-3
 
-Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to $\mathbf{v} + \mathbf{p}$: it moves $\mathbf{v}$ in a direction parallel to the line through $\mathbf{p}$ and $\mathbf{0}$. Translating every point of a line $L$ by $\mathbf{p}$ gives a line parallel to $L$. Equation (3) is **the equation of the line through $\mathbf{p}$ parallel to $\mathbf{v}$**. So the solution set of $A\mathbf{x} = \mathbf{b}$ in Example §5.3 is a line through $\mathbf{p}$ parallel to the solution set of $A\mathbf{x} = \mathbf{0}$.
+Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to $\mathbf{v} + \mathbf{p}$: it moves $\mathbf{v}$ in a direction parallel to the line through $\mathbf{p}$ and $\mathbf{0}$. Translating every point of a line $L$ by $\mathbf{p}$ gives a line parallel to $L$. Equation (3) is **the equation of the line through $\mathbf{p}$ parallel to $\mathbf{v}$**. So the solution set of $A\mathbf{x} = \mathbf{b}$ in [[§5 Solution Sets of Linear Systems#^ex-5-3|Example §5.3]] is a line through $\mathbf{p}$ parallel to the solution set of $A\mathbf{x} = \mathbf{0}$.
 
 ![[m235-5-1.svg]]
 *Parallel solution sets. The solutions $t\mathbf{v}$ of $A\mathbf{x} = \mathbf{0}$ form a line through $\mathbf{0}$; adding one particular solution $\mathbf{p}$ of $A\mathbf{x} = \mathbf{b}$ to each of them (dashed) gives all solutions $\mathbf{p} + t\mathbf{v}$ of $A\mathbf{x} = \mathbf{b}$, the parallel line through $\mathbf{p}$.*
@@ -189,7 +189,7 @@ Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to 
 > - The line $\mathbf{x} = \mathbf{p} + t\mathbf{v}$ is Stewart's vector equation of a line, [[§84 Equations of Lines and Planes#^thm-84-1|Calc Thm. §84.1]].
 > - See also: the same structure for linear differential equations, general solution = solution of the homogeneous equation + one particular solution: [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|331 Thm. §17.2]] (for $ay'' + by' + cy = g$) and [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|331 Thm. §35.1]] (for systems $\mathbf{x}' = P(t)\mathbf{x} + \mathbf{g}$).
 
-So if $A\mathbf{x} = \mathbf{b}$ has a solution, its solution set is the solution set of $A\mathbf{x} = \mathbf{0}$ translated by *any* particular solution $\mathbf{p}$. With two free variables it is a plane parallel to the plane of homogeneous solutions. Even for $n > 3$, the mental image of the solution set of a consistent system $A\mathbf{x} = \mathbf{b}$ with $\mathbf{b} \ne \mathbf{0}$ is a single nonzero point, or a line or plane not passing through the origin. *Warning:* Theorem §5.3 applies only to an equation $A\mathbf{x} = \mathbf{b}$ that has at least one solution $\mathbf{p}$; when $A\mathbf{x} = \mathbf{b}$ has no solution, the solution set is empty.
+So if $A\mathbf{x} = \mathbf{b}$ has a solution, its solution set is the solution set of $A\mathbf{x} = \mathbf{0}$ translated by *any* particular solution $\mathbf{p}$. With two free variables it is a plane parallel to the plane of homogeneous solutions. Even for $n > 3$, the mental image of the solution set of a consistent system $A\mathbf{x} = \mathbf{b}$ with $\mathbf{b} \ne \mathbf{0}$ is a single nonzero point, or a line or plane not passing through the origin. *Warning:* [[§5 Solution Sets of Linear Systems#^thm-5-3|Theorem §5.3]] applies only to an equation $A\mathbf{x} = \mathbf{b}$ that has at least one solution $\mathbf{p}$; when $A\mathbf{x} = \mathbf{b}$ has no solution, the solution set is empty.
 
 > [!remark] Remark: Method — Writing a Solution Set (of a Consistent System) in Parametric Vector Form
 > 1. Row reduce the augmented matrix to reduced echelon form.
@@ -197,7 +197,7 @@ So if $A\mathbf{x} = \mathbf{b}$ has a solution, its solution set is the solutio
 > 3. Write a typical solution $\mathbf{x}$ as a vector whose entries depend on the free variables, if any.
 > 4. Decompose $\mathbf{x}$ into a linear combination of vectors (with numeric entries) using the free variables as parameters.
 >
-> The constant vector in step 4 is a particular solution $\mathbf{p}$; the vectors multiplying the free variables span the solution set of $A\mathbf{x} = \mathbf{0}$ (Theorem §5.3). [[§2 Row Reduction and Echelon Forms#^ex-2-5|Example §2.5]] is a five-variable instance.
+> The constant vector in step 4 is a particular solution $\mathbf{p}$; the vectors multiplying the free variables span the solution set of $A\mathbf{x} = \mathbf{0}$ ([[§5 Solution Sets of Linear Systems#^thm-5-3|Theorem §5.3]]). [[§2 Row Reduction and Echelon Forms#^ex-2-5|Example §2.5]] is a five-variable instance.
 
 ^rem-5-1
 
@@ -224,7 +224,7 @@ So if $A\mathbf{x} = \mathbf{b}$ has a solution, its solution set is the solutio
 >
 > The planes intersect in the line through $\mathbf{p} = (4, -1, 0)$ in the direction $\mathbf{v} = (-3, 2, 1)$. **Check:** $\mathbf{p}$: $4 - 4 = 0$, $8 + 1 = 9$; $\mathbf{v}$: $-3 + 8 - 5 = 0$, $-6 - 2 + 8 = 0$.
 >
-> **(b)** Write the general solution of $10x_1 - 3x_2 - 2x_3 = 7$ in parametric vector form and compare with Example §5.2.
+> **(b)** Write the general solution of $10x_1 - 3x_2 - 2x_3 = 7$ in parametric vector form and compare with [[§5 Solution Sets of Linear Systems#^ex-5-2|Example §5.2]].
 >
 > $x_1 = .7 + .3x_2 + .2x_3$ with $x_2, x_3$ free, so
 >
@@ -232,7 +232,7 @@ So if $A\mathbf{x} = \mathbf{b}$ has a solution, its solution set is the solutio
 > \mathbf{x} = \begin{bmatrix} .7 \\ 0 \\ 0 \end{bmatrix} + x_2\begin{bmatrix} .3 \\ 1 \\ 0 \end{bmatrix} + x_3\begin{bmatrix} .2 \\ 0 \\ 1 \end{bmatrix} = \mathbf{p} + x_2\mathbf{u} + x_3\mathbf{v} .
 > $$
 >
-> The solution set is the plane through $\mathbf{p} = (.7, 0, 0)$ parallel to the plane $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ of Example §5.2, as Theorem §5.3 predicts.
+> The solution set is the plane through $\mathbf{p} = (.7, 0, 0)$ parallel to the plane $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ of [[§5 Solution Sets of Linear Systems#^ex-5-2|Example §5.2]], as [[§5 Solution Sets of Linear Systems#^thm-5-3|Theorem §5.3]] predicts.
 >
 > *Lay: 1.5, Practice Problems 1 and 2*
 

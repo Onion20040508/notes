@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 A discrete dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$ describes a state vector that changes in steps: populations by age class, owls and rats, the distribution of a Markov chain. Writing the initial vector in an eigenvector basis turns the system into independent scalar recursions, $\mathbf{x}_k = c_1\lambda_1^k\mathbf{v}_1 + \cdots + c_n\lambda_n^k\mathbf{v}_n$. The long-term behavior is then read off from the eigenvalues: the eigenvalue of largest absolute value sets the eventual growth rate, and its eigenvector the eventual proportions. In the plane the eigenvalues classify the pictures. The origin is an attractor when both eigenvalues are less than $1$ in absolute value, a repeller when both exceed $1$, and a saddle point otherwise. Complex eigenvalues produce spirals. The section ends with the spotted owl model of the chapter introduction.
 
-Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ and corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$, arranged so that $|\lambda_1| \ge |\lambda_2| \ge \cdots \ge |\lambda_n|$.
+Until [[§37 Discrete Dynamical Systems#^ex-37-4|Example §37.4]] we assume that $A$ is diagonalizable, with $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ and corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$, arranged so that $|\lambda_1| \ge |\lambda_2| \ge \cdots \ge |\lambda_n|$.
 
 > [!theorem] Theorem §37.1: The Eigenvector Decomposition of a Solution
 > Let $A$ be as above. Since $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ is a basis for $\mathbb{R}^n$, any initial vector can be written uniquely as
@@ -60,7 +60,7 @@ Until Example §37.4 we assume that $A$ is diagonalizable, with $n$ linearly ind
 >
 > **Eigenvectors.** $A\begin{bmatrix} 10 \\ 13 \end{bmatrix} = \begin{bmatrix} 5 + 5.2 \\ -1.04 + 14.3 \end{bmatrix} = \begin{bmatrix} 10.2 \\ 13.26 \end{bmatrix} = 1.02\begin{bmatrix} 10 \\ 13 \end{bmatrix}$ and $A\begin{bmatrix} 5 \\ 1 \end{bmatrix} = \begin{bmatrix} 2.9 \\ .58 \end{bmatrix} = .58\begin{bmatrix} 5 \\ 1 \end{bmatrix}$, so $\mathbf{v}_1 = (10, 13)$ and $\mathbf{v}_2 = (5, 1)$.
 >
-> **Solution.** Writing $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, Theorem §37.1 gives, for $k \ge 0$,
+> **Solution.** Writing $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]] gives, for $k \ge 0$,
 >
 > $$
 > \mathbf{x}_k = c_1(1.02)^k\begin{bmatrix} 10 \\ 13 \end{bmatrix} + c_2(.58)^k\begin{bmatrix} 5 \\ 1 \end{bmatrix} .
@@ -131,8 +131,15 @@ The case $\lambda_1 = 1$ is [[§33 The Characteristic Equation#^ex-33-4|Example 
 
 When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what happens to an initial point $\mathbf{x}_0$ in $\mathbb{R}^2$ as it is transformed repeatedly by $\mathbf{x} \mapsto A\mathbf{x}$.
 
-> [!definition] Definition §37.1: Trajectory; Attractor, Repeller, Saddle Point
-> The graph of $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ is called a **trajectory** of the dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$. The origin is
+> [!definition] Definition §37.1: Trajectory
+> The graph of $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ is called a **trajectory** of the dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$.
+>
+> *Lay: 5.6 (text)*
+
+^def-37-1
+
+> [!definition] Definition §37.1: Attractor, Repeller, Saddle Point
+> The origin is
 > - an **attractor** of the system if all trajectories tend toward $\mathbf{0}$;
 > - a **repeller** if all solutions except the (constant) zero solution are unbounded and tend away from the origin;
 > - a **saddle point** if the origin attracts solutions from some directions and repels them in other directions.
@@ -141,7 +148,7 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 >
 > *Lay: 5.6 (text)*
 
-^def-37-1
+^def-37-new1
 
 > [!remark]- Connections
 > - ODE version: trajectories and phase portraits of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]], and asymptotic stability of the equilibrium $\mathbf{0}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|331 Def. §31.1]]. The last sentence in dimension one: an equilibrium $u^*$ of $u_{n+1} = g(u_n)$ is asymptotically stable if $|g'(u^*)| < 1$ and unstable if $|g'(u^*)| > 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lemma §12.5]].
@@ -157,14 +164,14 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 ^prop-37-3
 
 > [!proof]+ Proof
-> By Theorem §37.1, $\mathbf{x}_k = c_1\lambda_1^k\mathbf{v}_1 + c_2\lambda_2^k\mathbf{v}_2$, where $(c_1, c_2)$ is the coordinate vector of $\mathbf{x}_0$ in the eigenvector basis; $\mathbf{x}_k$ is unbounded exactly when one of the coefficients $c_i\lambda_i^k$ is unbounded (the coordinates of a vector are bounded exactly when the vector is, since $[\mathbf{x}]_{\mathcal{B}} = P^{-1}\mathbf{x}$ and $\mathbf{x} = P[\mathbf{x}]_{\mathcal{B}}$).
+> By [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]], $\mathbf{x}_k = c_1\lambda_1^k\mathbf{v}_1 + c_2\lambda_2^k\mathbf{v}_2$, where $(c_1, c_2)$ is the coordinate vector of $\mathbf{x}_0$ in the eigenvector basis; $\mathbf{x}_k$ is unbounded exactly when one of the coefficients $c_i\lambda_i^k$ is unbounded (the coordinates of a vector are bounded exactly when the vector is, since $[\mathbf{x}]_{\mathcal{B}} = P^{-1}\mathbf{x}$ and $\mathbf{x} = P[\mathbf{x}]_{\mathcal{B}}$).
 > 1. $|\lambda_i| < 1$ gives $\lambda_i^k \to 0$ for both $i$, so $\mathbf{x}_k \to \mathbf{0}$. The $\mathbf{v}_2$-component decays fastest, since $|\lambda_2|^k \le |\lambda_1|^k$.
 > 2. If $\mathbf{x}_0 \ne \mathbf{0}$, some $c_i \ne 0$, and $|c_i\lambda_i^k| = |c_i||\lambda_i|^k \to \infty$. The $\mathbf{v}_1$-component grows fastest.
 > 3. If $c_1 = 0$ ($\mathbf{x}_0$ on the line through $\mathbf{v}_2$), then $\mathbf{x}_k = c_2\lambda_2^k\mathbf{v}_2 \to \mathbf{0}$. If $c_1 \ne 0$, then $|c_1\lambda_1^k| \to \infty$ and $\{\mathbf{x}_k\}$ is unbounded.
 
 ^pf-37-3
 
-*Uses:* [[§37 Discrete Dynamical Systems#^thm-37-1|§37.1]], [[§37 Discrete Dynamical Systems#^def-37-1|Def. §37.1]]
+*Uses:* [[§37 Discrete Dynamical Systems#^thm-37-1|§37.1]], [[§37 Discrete Dynamical Systems#^def-37-new1|Def. §37.1]]
 
 > [!remark]- Connections
 > - ODE version: [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]], the classification of the origin for $\mathbf{x}' = A\mathbf{x}$ (saddle point, node, spiral point, center), where the sign of the real part of each eigenvalue plays the role of $|\lambda|$ compared with $1$. The $1 \times 1$ case $y_{k+1} = \rho y_k$: the solution $\rho^ky_0$ tends to $0$ for every $y_0$ exactly when $|\rho| < 1$, [[§12★ First-Order Difference Equations#^prop-12-1|331 Prop. §12.1]].
@@ -233,20 +240,20 @@ The evolution of $y_1(k)$, for example, is unaffected by what happens to $y_2(k)
 > [!example] Example §37.3: A Saddle Point in Eigenvector Coordinates
 > Show that the origin is a saddle point for solutions of $\mathbf{x}_{k+1} = A\mathbf{x}_k$, where $A = \begin{bmatrix} 1.25 & -.75 \\ -.75 & 1.25 \end{bmatrix}$, and find the directions of greatest attraction and greatest repulsion.
 >
-> $\det(A - \lambda I) = (1.25 - \lambda)^2 - .5625$, which is $0$ when $1.25 - \lambda = \pm .75$: the eigenvalues are $2$ and $.5$. Eigenvectors: $A\begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \end{bmatrix}$ and $A\begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} .5 \\ .5 \end{bmatrix}$, so $\mathbf{v}_1 = (1, -1)$ for $\lambda = 2$ and $\mathbf{v}_2 = (1, 1)$ for $\lambda = .5$. Since $|2| > 1$ and $|.5| < 1$, the origin is a saddle point (Proposition §37.3). If $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, then
+> $\det(A - \lambda I) = (1.25 - \lambda)^2 - .5625$, which is $0$ when $1.25 - \lambda = \pm .75$: the eigenvalues are $2$ and $.5$. Eigenvectors: $A\begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \end{bmatrix}$ and $A\begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} .5 \\ .5 \end{bmatrix}$, so $\mathbf{v}_1 = (1, -1)$ for $\lambda = 2$ and $\mathbf{v}_2 = (1, 1)$ for $\lambda = .5$. Since $|2| > 1$ and $|.5| < 1$, the origin is a saddle point ([[§37 Discrete Dynamical Systems#^prop-37-3|Proposition §37.3]]). If $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, then
 >
 > $$
 > \mathbf{x}_k = c_12^k\mathbf{v}_1 + c_2(.5)^k\mathbf{v}_2 . \qquad (9)
 > $$
 >
-> This looks just like (8) of Example §37.2(c), with $\mathbf{v}_1$ and $\mathbf{v}_2$ in place of the standard basis: by Theorem §37.4, in the coordinates $\mathbf{y} = P^{-1}\mathbf{x}$ the system *is* Example §37.2(c). The direction of greatest repulsion is the line through $\mathbf{0}$ and $\mathbf{v}_1$; if $\mathbf{x}_0$ is on it, $c_2 = 0$ and $\mathbf{x}_k$ moves quickly away from $\mathbf{0}$. The direction of greatest attraction is the line through $\mathbf{v}_2$. The trajectories are the hyperbola-like curves of Example §37.2(c), turned by $45°$ so that their axes are the eigenvector lines $x_2 = -x_1$ and $x_2 = x_1$.
+> This looks just like (8) of [[§37 Discrete Dynamical Systems#^ex-37-2|Example §37.2]](c), with $\mathbf{v}_1$ and $\mathbf{v}_2$ in place of the standard basis: by [[§37 Discrete Dynamical Systems#^thm-37-4|Theorem §37.4]], in the coordinates $\mathbf{y} = P^{-1}\mathbf{x}$ the system *is* [[§37 Discrete Dynamical Systems#^ex-37-2|Example §37.2]](c). The direction of greatest repulsion is the line through $\mathbf{0}$ and $\mathbf{v}_1$; if $\mathbf{x}_0$ is on it, $c_2 = 0$ and $\mathbf{x}_k$ moves quickly away from $\mathbf{0}$. The direction of greatest attraction is the line through $\mathbf{v}_2$. The trajectories are the hyperbola-like curves of [[§37 Discrete Dynamical Systems#^ex-37-2|Example §37.2]](c), turned by $45°$ so that their axes are the eigenvector lines $x_2 = -x_1$ and $x_2 = x_1$.
 >
 > *Lay: Example 5.6.5*
 
 ^ex-37-3
 
 ![[m235-37-1.svg]]
-*Trajectories in the three main cases. (a) Attractor, Example §37.2(a): starting on the square with corners $(\pm 3, \pm 3)$, the points approach $\mathbf{0}$ and flatten toward the $x_1$-axis, because the $x_2$-component decays faster ($.64 < .8$). (b) Saddle point, Example §37.3: points drift toward $\mathbf{0}$ along the attracting eigenvector line through $\mathbf{v}_2 = (1, 1)$ (green) and are then pushed out along the repelling line through $\mathbf{v}_1 = (1, -1)$ (red). (c) Spiral attractor, Example §37.4: complex eigenvalues $.9 \pm .2i$ of modulus $\approx .92 < 1$ make the points turn and spiral inward.*
+*Trajectories in the three main cases. (a) Attractor, [[§37 Discrete Dynamical Systems#^ex-37-2|Example §37.2]](a): starting on the square with corners $(\pm 3, \pm 3)$, the points approach $\mathbf{0}$ and flatten toward the $x_1$-axis, because the $x_2$-component decays faster ($.64 < .8$). (b) Saddle point, [[§37 Discrete Dynamical Systems#^ex-37-3|Example §37.3]]: points drift toward $\mathbf{0}$ along the attracting eigenvector line through $\mathbf{v}_2 = (1, 1)$ (green) and are then pushed out along the repelling line through $\mathbf{v}_1 = (1, -1)$ (red). (c) Spiral attractor, [[§37 Discrete Dynamical Systems#^ex-37-4|Example §37.4]]: complex eigenvalues $.9 \pm .2i$ of modulus $\approx .92 < 1$ make the points turn and spiral inward.*
 
 ## Complex Eigenvalues
 
@@ -293,7 +300,7 @@ When a real $2 \times 2$ matrix $A$ has complex eigenvalues, it is not diagonali
 > \mathbf{x}_k = c_1(1.01)^k\mathbf{v}_1 + c_2(-.03 + .26i)^k\mathbf{v}_2 + c_3(-.03 - .26i)^k\mathbf{v}_3 .
 > $$
 >
-> The last two terms tend to $\mathbf{0}$, so $\mathbf{x}_k$ becomes more and more like the real vector $c_1(1.01)^k\mathbf{v}_1$, and Proposition §37.2 applies. It can be shown that $c_1 > 0$ when the entries of $\mathbf{x}_0$ are nonnegative (and $\mathbf{x}_0 \ne \mathbf{0}$; compare [[§32 Eigenvectors and Eigenvalues#^rem-32-2|Remark: The Perron–Frobenius Theorem]]). So the owl population grows slowly, with long-term growth rate $1.01$ per year, and by (7) its eventual distribution by life stages is given by $\mathbf{v}_1$: for every $31$ adults, about $10$ juveniles and $3$ subadults.
+> The last two terms tend to $\mathbf{0}$, so $\mathbf{x}_k$ becomes more and more like the real vector $c_1(1.01)^k\mathbf{v}_1$, and [[§37 Discrete Dynamical Systems#^prop-37-2|Proposition §37.2]] applies. It can be shown that $c_1 > 0$ when the entries of $\mathbf{x}_0$ are nonnegative (and $\mathbf{x}_0 \ne \mathbf{0}$; compare [[§32 Eigenvectors and Eigenvalues#^rem-32-2|Remark: The Perron–Frobenius Theorem]]). So the owl population grows slowly, with long-term growth rate $1.01$ per year, and by (7) its eventual distribution by life stages is given by $\mathbf{v}_1$: for every $31$ adults, about $10$ juveniles and $3$ subadults.
 >
 > *(Numerical check: the eigenvalues of (10) are $.9836$ and $-.0218 \pm .2059i$; with the entry $.3$ they are $1.0090$ and $-.0345 \pm .2617i$, and $\mathbf{v}_1 \approx (10, 2.97, 30.58)$.)*
 >

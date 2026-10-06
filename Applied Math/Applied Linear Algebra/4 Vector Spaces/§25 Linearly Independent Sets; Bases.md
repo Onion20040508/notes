@@ -57,9 +57,9 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 *Uses:* [[§25 Linearly Independent Sets; Bases#^def-25-1|Def. §25.1]], [[§23 Vector Spaces and Subspaces#^prop-23-2|§23.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]] (linearly independent lists) and the linear dependence lemma [[§4 Span and Linear Independence#^ladr-2-19|LADR 2.19]], which adds that removing such a $\mathbf{v}_j$ does not change the span (part (a) of Theorem §25.2 below). Axler works with lists, Lay with indexed sets; the difference is only that a list may repeat a vector.
+> - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]] (linearly independent lists) and the linear dependence lemma [[§4 Span and Linear Independence#^ladr-2-19|LADR 2.19]], which adds that removing such a $\mathbf{v}_j$ does not change the span (part (a) of [[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]] below). Axler works with lists, Lay with indexed sets; the difference is only that a list may repeat a vector.
 
-The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, equation (1) usually cannot be written as a system of $n$ linear equations, so the vectors cannot be made the columns of a matrix $A$ and studied through $A\mathbf{x} = \mathbf{0}$. One must rely on the definition and on Theorem §25.1, until coordinates ([[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]]) translate the problem back to $\mathbb{R}^n$.
+The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, equation (1) usually cannot be written as a system of $n$ linear equations, so the vectors cannot be made the columns of a matrix $A$ and studied through $A\mathbf{x} = \mathbf{0}$. One must rely on the definition and on [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]], until coordinates ([[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]]) translate the problem back to $\mathbb{R}^n$.
 
 > [!example] Example §25.1: Dependence and Independence Among Functions
 > **(a)** Let $\mathbf{p}_1(t) = 1$, $\mathbf{p}_2(t) = t$, $\mathbf{p}_3(t) = 4 - t$. Then $\{\mathbf{p}_1, \mathbf{p}_2, \mathbf{p}_3\}$ is linearly dependent in $\mathbb{P}$, because $\mathbf{p}_3 = 4\mathbf{p}_1 - \mathbf{p}_2$.
@@ -209,7 +209,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 *Uses:* [[§25 Linearly Independent Sets; Bases#^thm-25-1|§25.1]], [[§25 Linearly Independent Sets; Bases#^thm-25-2|§25.2]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|Def. §24.2]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]] (row equivalent systems have the same solutions)
 
 > [!remark] Remark: Warning — Use the Pivot Columns of A Itself
-> The pivot columns are evident once $A$ is reduced only to *echelon* form. But the basis for $\operatorname{Col} A$ consists of the pivot columns *of $A$*, not of the echelon form: row operations can change the column space. In Example §25.4(b), every column of the echelon form $B$ has last entry $0$, so the columns of $B$ cannot span $\operatorname{Col} A$, which contains $\mathbf{a}_1 = (1, 3, 2, 5)$.
+> The pivot columns are evident once $A$ is reduced only to *echelon* form. But the basis for $\operatorname{Col} A$ consists of the pivot columns *of $A$*, not of the echelon form: row operations can change the column space. In [[§25 Linearly Independent Sets; Bases#^ex-25-4|Example §25.4]](b), every column of the echelon form $B$ has last entry $0$, so the columns of $B$ cannot span $\operatorname{Col} A$, which contains $\mathbf{a}_1 = (1, 3, 2, 5)$.
 
 ^rem-25-1
 
@@ -230,7 +230,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 > B = [\mathbf{b}_1 \ \cdots \ \mathbf{b}_5] = \begin{bmatrix} 1 & 4 & 0 & 2 & 0 \\ 0 & 0 & 1 & -1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> Each nonpivot column is a combination of the pivot columns: $\mathbf{b}_2 = 4\mathbf{b}_1$ and $\mathbf{b}_4 = 2\mathbf{b}_1 - \mathbf{b}_3$. By the Spanning Set Theorem we may discard $\mathbf{b}_2$ and $\mathbf{b}_4$, and $S = \{\mathbf{b}_1, \mathbf{b}_3, \mathbf{b}_5\} = \{\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3\}$ (in $\mathbb{R}^4$) still spans $\operatorname{Col} B$. Since $\mathbf{b}_1 \ne \mathbf{0}$ and no vector in $S$ is a combination of those before it, $S$ is linearly independent (Theorem §25.1), so $S$ is a basis for $\operatorname{Col} B$.
+> Each nonpivot column is a combination of the pivot columns: $\mathbf{b}_2 = 4\mathbf{b}_1$ and $\mathbf{b}_4 = 2\mathbf{b}_1 - \mathbf{b}_3$. By the Spanning Set Theorem we may discard $\mathbf{b}_2$ and $\mathbf{b}_4$, and $S = \{\mathbf{b}_1, \mathbf{b}_3, \mathbf{b}_5\} = \{\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3\}$ (in $\mathbb{R}^4$) still spans $\operatorname{Col} B$. Since $\mathbf{b}_1 \ne \mathbf{0}$ and no vector in $S$ is a combination of those before it, $S$ is linearly independent ([[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]), so $S$ is a basis for $\operatorname{Col} B$.
 >
 > **(b) The same pattern before reduction.** The matrix
 >
@@ -267,7 +267,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 ## Two Views of a Basis
 
 > [!remark] Remark: A Basis Is a Minimal Spanning Set and a Maximal Independent Set
-> When the Spanning Set Theorem is used, deletion of vectors must stop when the set becomes linearly independent: if one more vector were deleted, it would not be a linear combination of the remaining ones (Theorem §25.1), so the smaller set would no longer span $V$. Thus **a basis is a spanning set that is as small as possible.**
+> When the Spanning Set Theorem is used, deletion of vectors must stop when the set becomes linearly independent: if one more vector were deleted, it would not be a linear combination of the remaining ones ([[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]), so the smaller set would no longer span $V$. Thus **a basis is a spanning set that is as small as possible.**
 >
 > A basis is also **a linearly independent set that is as large as possible**: if $S$ is a basis for $V$ and $S$ is enlarged by one vector $\mathbf{w}$ from $V$, the new set cannot be linearly independent, because $S$ spans $V$, so $\mathbf{w}$ is a linear combination of the elements of $S$.
 
@@ -304,7 +304,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 ^ex-25-5
 
 > [!remark]- Remark: Bases with Infinitely Many Elements
-> The lecture points out that a basis need not be finite. In Lay's sense (finite linear combinations), the polynomials $\{1, t, t^2, t^3, \ldots\}$ form a basis of $\mathbb{P}$: every polynomial is a *finite* combination of them, and they are independent by the argument of Example §25.2(c). The lecture also calls the harmonics $\sin 2\pi nx$, $\cos 2\pi nx$ ($n = 0, 1, 2, \ldots$) a basis of $C^\infty([0, 1])$, citing Fourier's theorem $f = \sum_n (a_n \sin 2\pi nx + b_n \cos 2\pi nx)$. That is a statement about *infinite series*, which converge only in a suitable sense (for instance in the mean, [[§47 Applications of Inner Product Spaces#^thm-47-4|Theorem §47.4]]; Fourier series: [[§47 Applications of Inner Product Spaces#^def-47-6|Definition §47.6]]); the harmonics are not a basis in the sense of Definition §25.2, since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space ([[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]); as the lecture says, such bases are a subject of real analysis.
+> The lecture points out that a basis need not be finite. In Lay's sense (finite linear combinations), the polynomials $\{1, t, t^2, t^3, \ldots\}$ form a basis of $\mathbb{P}$: every polynomial is a *finite* combination of them, and they are independent by the argument of [[§25 Linearly Independent Sets; Bases#^ex-25-2|Example §25.2]](c). The lecture also calls the harmonics $\sin 2\pi nx$, $\cos 2\pi nx$ ($n = 0, 1, 2, \ldots$) a basis of $C^\infty([0, 1])$, citing Fourier's theorem $f = \sum_n (a_n \sin 2\pi nx + b_n \cos 2\pi nx)$. That is a statement about *infinite series*, which converge only in a suitable sense (for instance in the mean, [[§47 Applications of Inner Product Spaces#^thm-47-4|Theorem §47.4]]; Fourier series: [[§47 Applications of Inner Product Spaces#^def-47-6|Definition §47.6]]); the harmonics are not a basis in the sense of [[§25 Linearly Independent Sets; Bases#^def-25-2|Definition §25.2]], since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space ([[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]); as the lecture says, such bases are a subject of real analysis.
 >
 > *Source: 235 lectures L14, L15*
 

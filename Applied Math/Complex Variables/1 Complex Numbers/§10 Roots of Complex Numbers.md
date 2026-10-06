@@ -41,7 +41,7 @@ As $\theta$ increases, the point $z = re^{i\theta}$ moves counterclockwise aroun
 
 ^pf-10-1
 
-*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§119 Trigonometry#^thm-119-5|Calc Thm. §119.5]] (periodicity)
+*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§119 Trigonometry#^thm-119-5|Calc Thm. §119.5]] (periodicity)
 
 ## The nth Roots
 
@@ -92,12 +92,19 @@ An **$n$th root** of a nonzero complex number $z_0$ ($n = 2, 3, \ldots$) is a nu
 > [!remark]- Connections
 > - Theorem §10.2 shows that the polynomial $z^n - z_0$ has exactly $n$ distinct zeros. That a polynomial of degree $n$ has at most $n$ zeros is [[§13 Polynomials#^ladr-4-8|LADR 4.8]]; that every nonconstant polynomial has a zero is the fundamental theorem of algebra, [[§13 Polynomials#^ladr-4-12|LADR 4.12]] (hub [[Fundamental theorem of algebra, first version]]), proved in this subject in [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|Theorem §58.2]].
 
-> [!definition] Definition §10.1: The Set of Roots; Principal Root
-> The symbol $z_0^{1/n}$ denotes the **set** of $n$th roots of $z_0$. In particular, if $z_0$ is a positive real number $r_0$, the symbol $r_0^{1/n}$ denotes the entire set of roots, and $\sqrt[n]{r_0}$ is reserved for the one positive root. When the value of $\theta_0$ used in (1) is the principal value $\operatorname{Arg} z_0$ ([[§7 Exponential Form#^def-7-1|Definition §7.1]]) ($-\pi < \theta_0 \le \pi$), the number $c_0$ is called the **principal root**. Thus when $z_0$ is a positive real number $r_0$, its principal root is $\sqrt[n]{r_0}$.
+> [!definition] Definition §10.1: The Set of Roots
+> The symbol $z_0^{1/n}$ denotes the **set** of $n$th roots of $z_0$. In particular, if $z_0$ is a positive real number $r_0$, the symbol $r_0^{1/n}$ denotes the entire set of roots, and $\sqrt[n]{r_0}$ is reserved for the one positive root.
 >
 > *B&C: Sec. 10 (text)*
 
 ^def-10-1
+
+> [!definition] Definition §10.2: Principal Root
+> When the value of $\theta_0$ used in (1) is the principal value $\operatorname{Arg} z_0$ ([[§7 Exponential Form#^def-7-new2|Definition §7.3]]) ($-\pi < \theta_0 \le \pi$), the number $c_0$ is called the **principal root**. Thus when $z_0$ is a positive real number $r_0$, its principal root is $\sqrt[n]{r_0}$.
+>
+> *B&C: Sec. 10 (text)*
+
+^def-10-new1
 
 > [!theorem] Proposition §10.3: Roots Through a Root of Unity
 > Let

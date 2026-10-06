@@ -14,12 +14,14 @@ tags: [chapter, multivariable-analysis]
 ## Sections
 - [[§21 Introduction to Differential Forms]]
 - [[§22 The Algebra of Differential Forms]]
+- [[§22a The Exterior Derivative]]
+- [[§22b Closed and Exact Forms]]
 - [[§23 The Generalized Stokes' Theorem]]
 
 ## Central results
-- [[Exterior Derivative Squares to Zero]] (§22.5)
-- [[Poincaré Lemma]] (§22.12)
-- [[Generalized Stokes' Theorem]] (§23.1)
+- [[Exterior Derivative Squares to Zero]] ([[§22a The Exterior Derivative#^thm-22-5|§22.5]])
+- [[Poincaré Lemma]] ([[§22b Closed and Exact Forms#^prop-22-12|§22.12]])
+- [[Generalized Stokes' Theorem]] ([[§23 The Generalized Stokes' Theorem#^thm-23-1|§23.1]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

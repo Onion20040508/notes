@@ -328,4 +328,4 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 ^ex-61-5
 
 ![[m233-61-2.svg]]
-*The current in the circuit of [[§61 Linear Equations#^ex-61-4|Examples §61.4]] and §61.5. (a) With a battery, $I(t) = 5(1 - e^{-3t})$ rises to its limiting value $5$ A and is already within $5\%$ of it at $t = 1$. (b) With a generator, the same decaying term $\frac{50}{101}e^{-3t}$ (orange) pushes the first oscillations upward; after about one second only the steady oscillation of amplitude $5/\sqrt{101} \approx 0.50$ A (between the blue lines) is left.*
+*The current in the circuit of [[§61 Linear Equations#^ex-61-4|Examples §61.4]] and [[§61 Linear Equations#^ex-61-5|§61.5]]. (a) With a battery, $I(t) = 5(1 - e^{-3t})$ rises to its limiting value $5$ A and is already within $5\%$ of it at $t = 1$. (b) With a generator, the same decaying term $\frac{50}{101}e^{-3t}$ (orange) pushes the first oscillations upward; after about one second only the steady oscillation of amplitude $5/\sqrt{101} \approx 0.50$ A (between the blue lines) is left.*

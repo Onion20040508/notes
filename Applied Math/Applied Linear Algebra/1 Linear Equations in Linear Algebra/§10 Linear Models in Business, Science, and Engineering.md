@@ -53,22 +53,39 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ## Linear Equations and Electrical Networks
 
-> [!definition] Definition §10.1: Loop Currents, Ohm's Law, Kirchhoff's Voltage Law
+> [!definition] Definition §10.1: Ohm's Law
 > In an electrical network, a voltage source such as a battery forces a current through the network. **Ohm's law:** the voltage drop across a resistor is
 >
 > $$
 > V = RI,
 > $$
 >
-> with $V$ in volts, the resistance $R$ in ohms ($\Omega$) and the current $I$ in amperes. A **loop current** is assigned to each closed loop, in an arbitrarily chosen direction; a negative value means the actual flow is opposite to the chosen direction. A battery counts positive if the chosen direction runs from its positive (longer) side around to its negative (shorter) side, negative otherwise.
->
-> **Kirchhoff's voltage law.** The algebraic sum of the $RI$ voltage drops in one direction around a loop equals the algebraic sum of the voltage sources in the same direction around the loop.
->
-> **Kirchhoff's current law** (used for branch currents): the current in a branch is the algebraic sum of the loop currents passing through it.
+> with $V$ in volts, the resistance $R$ in ohms ($\Omega$) and the current $I$ in amperes.
 >
 > *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
 
 ^def-10-1
+
+> [!definition] Definition §10.1: Loop Current
+> A **loop current** is assigned to each closed loop, in an arbitrarily chosen direction; a negative value means the actual flow is opposite to the chosen direction. A battery counts positive if the chosen direction runs from its positive (longer) side around to its negative (shorter) side, negative otherwise.
+>
+> *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
+
+^def-10-new1
+
+> [!definition] Definition §10.1: Kirchhoff's Voltage Law
+> **Kirchhoff's voltage law.** The algebraic sum of the $RI$ voltage drops in one direction around a loop equals the algebraic sum of the voltage sources in the same direction around the loop.
+>
+> *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
+
+^def-10-new2
+
+> [!definition] Definition §10.1: Kirchhoff's Current Law
+> **Kirchhoff's current law** (used for branch currents): the current in a branch is the algebraic sum of the loop currents passing through it.
+>
+> *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
+
+^def-10-new3
 
 > [!remark]- Connections
 > - The physics of these laws (conservation of energy around a loop, of charge at a junction): [[§A6.3 Kirchhoff's Rules]] in Electromagnetism; Ohm's law in [[§A5.3 Resistivity, Resistance and Ohm's Law]].
@@ -167,8 +184,10 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 > \mathbf{x}_2 = M\mathbf{x}_1 = \begin{bmatrix} .95 & .03 \\ .05 & .97 \end{bmatrix}\begin{bmatrix} 582{,}000 \\ 418{,}000 \end{bmatrix} = \begin{bmatrix} 552{,}900 + 12{,}540 \\ 29{,}100 + 405{,}460 \end{bmatrix} = \begin{bmatrix} 565{,}440 \\ 434{,}560 \end{bmatrix} .
 > $$
 >
-> The total stays $1{,}000{,}000$, since each column of $M$ sums to $1$: everyone is somewhere. The model is linear because $\mathbf{x}_k \mapsto \mathbf{x}_{k+1}$ is a linear transformation: the number of people who move is *proportional* to the number in each area, and the cumulative effect is found by *adding* the movements from the different areas. ($M$ is a stochastic matrix, [[§31 Applications to Markov Chains#^def-31-1|Definition §31.1]]; the long-run behavior of $\mathbf{x}_k$ is given by [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]].)
+> The total stays $1{,}000{,}000$, since each column of $M$ sums to $1$: everyone is somewhere. The model is linear because $\mathbf{x}_k \mapsto \mathbf{x}_{k+1}$ is a linear transformation: the number of people who move is *proportional* to the number in each area, and the cumulative effect is found by *adding* the movements from the different areas. ($M$ is a stochastic matrix, [[§31 Applications to Markov Chains#^def-31-new1|Definition §31.1]]; the long-run behavior of $\mathbf{x}_k$ is given by [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]].)
 >
 > *Lay: Example 1.10.3*
 
 ^ex-10-3
+
+*Chain: later in [[§31 Applications to Markov Chains#^ex-31-1|Chapter 4]] (a Markov chain) · [[§33 The Characteristic Equation#^ex-33-4|Chapter 5]] (eigenvalues)*

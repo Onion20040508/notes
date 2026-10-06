@@ -143,7 +143,7 @@ $$
 
 ^def-93-new1
 
-In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] directly; the next theorem is the convenient sufficient condition.
+In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]] directly; the next theorem is the convenient sufficient condition.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Differentiability#^def-6-1|452 Def. §6.1]] asks for $\Delta z = A\,\Delta x + B\,\Delta y + o\big(\sqrt{\Delta x^2 + \Delta y^2}\big)$. This is equivalent to Stewart's form, with $\rho = \sqrt{\Delta x^2 + \Delta y^2}$: $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ is $o(\rho)$ since $|\Delta x|, |\Delta y| \le \rho$; conversely an $o(\rho)$ remainder $R$ equals $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ with $\varepsilon_1 = R\,\Delta x / \rho^2$ and $\varepsilon_2 = R\,\Delta y / \rho^2$, both at most $|R|/\rho$ in absolute value. The function of the remark "Partial Derivatives Are Not Enough", doubled, is [[§6 Differentiability#^ex-6-1|452 Ex. §6.1]], and the derivative as a linear map is [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
@@ -156,7 +156,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 ^thm-93-2
 
 > [!proof]+ Proof
-> Let $\Delta z = f(a + \Delta x, b + \Delta y) - f(a, b)$. By [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] we have to show that
+> Let $\Delta z = f(a + \Delta x, b + \Delta y) - f(a, b)$. By [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]] we have to show that
 >
 > $$
 > \Delta z = f_x(a, b)\,\Delta x + f_y(a, b)\,\Delta y + \varepsilon_1\,\Delta x + \varepsilon_2\,\Delta y
@@ -370,7 +370,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 >
 > **(b)** The dimensions of a rectangular box are measured as $75$ cm, $60$ cm and $40$ cm, each correct to within $\varepsilon$ cm. Estimate the largest possible error in the calculated volume, and evaluate it for $\varepsilon = 0.2$.
 >
-> $V = xyz$, so $dV = yz\,dx + xz\,dy + xy\,dz$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]]). With $dx = dy = dz = \varepsilon$ and $x = 75$, $y = 60$, $z = 40$:
+> $V = xyz$, so $dV = yz\,dx + xz\,dy + xy\,dz$ ([[§93 Tangent Planes and Linear Approximations#^def-93-new3|Definition §93.7]]). With $dx = dy = dz = \varepsilon$ and $x = 75$, $y = 60$, $z = 40$:
 >
 > $$
 > \Delta V \approx dV = (60)(40)\varepsilon + (75)(40)\varepsilon + (75)(60)\varepsilon = (2400 + 3000 + 4500)\varepsilon = 9900\varepsilon .

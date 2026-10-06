@@ -37,7 +37,7 @@ The product formula of [[§8 Products and Powers in Exponential Form|§8]] says 
 >
 > with $r_1r_2 = |z_1||z_2| = |z_1z_2| > 0$. So $\theta_1 + \theta_2$ is a value of $\arg(z_1z_2)$ (Fig. 9 of B&C), which settles the case where $\arg z_1$ and $\arg z_2$ are specified.
 >
-> If, on the other hand, values of $\arg(z_1z_2)$ and $\arg z_1$ are specified, then by (2) of [[§7 Exponential Form#^def-7-1|Definition §7.1]] they correspond to particular choices of $n$ and $n_1$ in the expressions
+> If, on the other hand, values of $\arg(z_1z_2)$ and $\arg z_1$ are specified, then by (2) of [[§7 Exponential Form#^def-7-new2|Definition §7.3]] they correspond to particular choices of $n$ and $n_1$ in the expressions
 >
 > $$
 > \arg(z_1z_2) = (\theta_1 + \theta_2) + 2n\pi \quad (n = 0, \pm1, \ldots) \qquad\text{and}\qquad \arg z_1 = \theta_1 + 2n_1\pi \quad (n_1 = 0, \pm1, \ldots) .
@@ -55,7 +55,7 @@ The product formula of [[§8 Products and Powers in Exponential Form|§8]] says 
 
 ^pf-9-1
 
-*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§6 Complex Conjugates#^thm-6-4|§6.4]]
+*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-new1|Def. §7.2]], [[§7 Exponential Form#^def-7-new2|Def. §7.3]], [[§6 Complex Conjugates#^thm-6-4|§6.4]]
 
 > [!remark]- Connections
 > - The computational treatment states this with single values (multiplication adds arguments): [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]]. The set interpretation is what makes the statement exactly true.
@@ -82,7 +82,7 @@ Statement (2) is sometimes valid when $\arg$ is replaced everywhere by $\operato
 ^cor-9-2
 
 > [!proof]+ Proof
-> **(3)** If $z_2 = r_2e^{i\theta_2}$, then by (3) of [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]], $z_2^{-1} = \frac{1}{r_2}e^{-i\theta_2}$. So $-\theta_2$ is a value of $\arg(z_2^{-1})$, and by (2) of [[§7 Exponential Form#^def-7-1|Definition §7.1]] the set of all values is $\{-\theta_2 + 2n\pi\} = \{-(\theta_2 + 2(-n)\pi)\}$, which, as $n$ runs over the integers, is the set of negatives of all values of $\arg z_2$.
+> **(3)** If $z_2 = r_2e^{i\theta_2}$, then by (3) of [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]], $z_2^{-1} = \frac{1}{r_2}e^{-i\theta_2}$. So $-\theta_2$ is a value of $\arg(z_2^{-1})$, and by (2) of [[§7 Exponential Form#^def-7-new2|Definition §7.3]] the set of all values is $\{-\theta_2 + 2n\pi\} = \{-(\theta_2 + 2(-n)\pi)\}$, which, as $n$ runs over the integers, is the set of negatives of all values of $\arg z_2$.
 >
 > **(4)** By Theorem §9.1 applied to $z_1/z_2 = z_1z_2^{-1}$,
 >
@@ -94,7 +94,7 @@ Statement (2) is sometimes valid when $\arg$ is replaced everywhere by $\operato
 
 ^pf-9-2
 
-*Uses:* [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-1|Def. §7.1]]
+*Uses:* [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-new1|Def. §7.2]], [[§7 Exponential Form#^def-7-new2|Def. §7.3]]
 
 ## Examples
 

@@ -66,7 +66,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 > \begin{aligned} a - 2b + 5c - d &= 0 \\ -a - b + c \phantom{{}- d} &= 0 \end{aligned}
 > $$
 >
-> so $H = \operatorname{Nul}\begin{bmatrix} 1 & -2 & 5 & -1 \\ -1 & -1 & 1 & 0 \end{bmatrix}$ is a subspace of $\mathbb{R}^4$ by Theorem §24.1. It matters that the equations are *homogeneous*: the solution set of a nonhomogeneous system never contains $\mathbf{0}$, so it is never a subspace (and it may be empty).
+> so $H = \operatorname{Nul}\begin{bmatrix} 1 & -2 & 5 & -1 \\ -1 & -1 & 1 & 0 \end{bmatrix}$ is a subspace of $\mathbb{R}^4$ by [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|Theorem §24.1]]. It matters that the equations are *homogeneous*: the solution set of a nonhomogeneous system never contains $\mathbf{0}$, so it is never a subspace (and it may be empty).
 >
 > *Lay: Examples 4.2.1 and 4.2.2*
 
@@ -120,7 +120,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 ^prop-24-2
 
 > [!proof]+ Proof
-> Part 2 is the construction: one vector for each free variable. For part 1, let $x_{j_1}, \ldots, x_{j_k}$ be the free variables and $\mathbf{u}_1, \ldots, \mathbf{u}_k$ the vectors, with $\mathbf{x} = x_{j_1}\mathbf{u}_1 + \cdots + x_{j_k}\mathbf{u}_k$. Entry $j_i$ of $\mathbf{x}$ is the free variable $x_{j_i}$ itself, so entry $j_i$ of $\mathbf{u}_i$ is $1$ and entry $j_i$ of every other $\mathbf{u}_l$ is $0$ (in Example §24.2, look at entries 2, 4, 5). Hence if $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$, entry $j_i$ of the left side is $c_i$, so every $c_i = 0$.
+> Part 2 is the construction: one vector for each free variable. For part 1, let $x_{j_1}, \ldots, x_{j_k}$ be the free variables and $\mathbf{u}_1, \ldots, \mathbf{u}_k$ the vectors, with $\mathbf{x} = x_{j_1}\mathbf{u}_1 + \cdots + x_{j_k}\mathbf{u}_k$. Entry $j_i$ of $\mathbf{x}$ is the free variable $x_{j_i}$ itself, so entry $j_i$ of $\mathbf{u}_i$ is $1$ and entry $j_i$ of every other $\mathbf{u}_l$ is $0$ (in [[§24 Null Spaces, Column Spaces, and Linear Transformations#^ex-24-2|Example §24.2]], look at entries 2, 4, 5). Hence if $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$, entry $j_i$ of the left side is $c_i$, so every $c_i = 0$.
 
 ^pf-24-2
 
@@ -201,7 +201,7 @@ The course checklist lists the row space with $\operatorname{Nul} A$ and $\opera
 > \operatorname{Row} A = \operatorname{Col} A^T ,
 > $$
 >
-> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ (Theorem §24.3 for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases#^rem-25-2|§25, Remark: Method — Bases for Nul A, Col A and Row A]]). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of $A$* to keep.
+> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-3|Theorem §24.3]] for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases#^rem-25-2|§25, Remark: Method — Bases for Nul A, Col A and Row A]]). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of $A$* to keep.
 >
 > *Lay: 4.6, Definition (text)*
 > *Source: 235 lecture L16*
@@ -278,12 +278,19 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 ^def-24-4
 
-> [!definition] Definition §24.5: Kernel and Range
-> Let $T: V \to W$ be a linear transformation. The **kernel** (or **null space**) of $T$ is the set of all $\mathbf{u}$ in $V$ such that $T(\mathbf{u}) = \mathbf{0}$, the zero vector of $W$. The **range** of $T$ is the set of all vectors in $W$ of the form $T(\mathbf{x})$ for some $\mathbf{x}$ in $V$. If $T$ is a matrix transformation, $T(\mathbf{x}) = A\mathbf{x}$, then the kernel and the range of $T$ are the null space and the column space of $A$.
+> [!definition] Definition §24.5: Kernel
+> Let $T: V \to W$ be a linear transformation. The **kernel** (or **null space**) of $T$ is the set of all $\mathbf{u}$ in $V$ such that $T(\mathbf{u}) = \mathbf{0}$, the zero vector of $W$.
 >
 > *Lay: 4.2 (text)*
 
 ^def-24-5
+
+> [!definition] Definition §24.5: Range of a Linear Transformation
+> Let $T: V \to W$ be a linear transformation. The **range** of $T$ is the set of all vectors in $W$ of the form $T(\mathbf{x})$ for some $\mathbf{x}$ in $V$. If $T$ is a matrix transformation, $T(\mathbf{x}) = A\mathbf{x}$, then the kernel and the range of $T$ are the null space and the column space of $A$.
+>
+> *Lay: 4.2 (text)*
+
+^def-24-new1
 
 > [!theorem] Theorem §24.5: Kernel and Range Are Subspaces
 > If $T: V \to W$ is a linear transformation, then the kernel of $T$ is a subspace of $V$ and the range of $T$ is a subspace of $W$.
@@ -295,13 +302,13 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 > [!proof]+ Proof
 > First, $T(\mathbf{0}) = T(0 \cdot \mathbf{0}) = 0\,T(\mathbf{0}) = \mathbf{0}$ by (ii) and [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2]].
 >
-> **Kernel** (Lay: "essentially the same" as the proof of Theorem §24.1). $\mathbf{0}$ is in the kernel. If $T(\mathbf{u}) = \mathbf{0}$ and $T(\mathbf{v}) = \mathbf{0}$, then $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) = \mathbf{0}$ and $T(c\mathbf{u}) = cT(\mathbf{u}) = c\mathbf{0} = \mathbf{0}$.
+> **Kernel** (Lay: "essentially the same" as the proof of [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|Theorem §24.1]]). $\mathbf{0}$ is in the kernel. If $T(\mathbf{u}) = \mathbf{0}$ and $T(\mathbf{v}) = \mathbf{0}$, then $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v}) = \mathbf{0}$ and $T(c\mathbf{u}) = cT(\mathbf{u}) = c\mathbf{0} = \mathbf{0}$.
 >
 > **Range.** $\mathbf{0} = T(\mathbf{0})$ is in the range. If $\mathbf{w}_1 = T(\mathbf{x}_1)$ and $\mathbf{w}_2 = T(\mathbf{x}_2)$ are in the range, then $\mathbf{w}_1 + \mathbf{w}_2 = T(\mathbf{x}_1 + \mathbf{x}_2)$ and $c\mathbf{w}_1 = T(c\mathbf{x}_1)$ are in the range.
 
 ^pf-24-5
 
-*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|Def. §24.4]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|Def. §24.5]], [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]], [[§23 Vector Spaces and Subspaces#^prop-23-2|§23.2]]
+*Uses:* [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|Def. §24.4]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|Def. §24.5]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-new1|Def. §24.5]], [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]], [[§23 Vector Spaces and Subspaces#^prop-23-2|§23.2]]
 
 > [!remark]- Connections
 > - Rigorous treatment: linear maps [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]; null space and range are subspaces, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; injective iff null space $= \{0\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]] (item 8 of the table). Their dimensions add up to $\dim V$: the [[§8 Null Spaces and Ranges#^ladr-3-21|fundamental theorem of linear maps (LADR 3.21)]], whose matrix form is the Rank Theorem, [[§28 Rank#^thm-28-3|Theorem §28.3]].

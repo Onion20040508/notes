@@ -201,20 +201,32 @@ $$
 (as^2 + bs + c)Y(s) - (as + b)y_0 - ay_0' = G(s) .
 $$
 
-> [!definition] Definition §26.2: Transfer Function and Impulse Response
+> [!definition] Definition §26.2: Input–Output Problem
 > The problem (20), (21) is an **input–output problem**: the coefficients $a$, $b$, $c$ describe a physical system, $g(t)$ is the **input** to the system, $y_0$ and $y_0'$ describe its initial state, and the solution $y(t)$ is the **output** at time $t$.
 >
-> The **transfer function** of the system is
+> *BDP: 6.6 (text), Equation (27)*
+
+^def-26-2
+
+> [!definition] Definition §26.2: Transfer Function
+> The **transfer function** of the system of the input–output problem (20), (21) is
 >
 > $$
 > H(s) = \frac{1}{as^2 + bs + c} . \qquad (27)
 > $$
 >
-> It depends only on the system ($a$, $b$, $c$), not on the input; with zero initial state it is the ratio of the transforms of the output and the input. Its inverse transform $h(t) = \mathcal{L}^{-1}\{H(s)\}$ is the **impulse response** of the system.
+> It depends only on the system ($a$, $b$, $c$), not on the input; with zero initial state it is the ratio of the transforms of the output and the input.
 >
 > *BDP: 6.6 (text), Equation (27)*
 
-^def-26-2
+^def-26-new1
+
+> [!definition] Definition §26.2: Impulse Response
+> Let $H(s)$ be the transfer function (27). Its inverse transform $h(t) = \mathcal{L}^{-1}\{H(s)\}$ is the **impulse response** of the system.
+>
+> *BDP: 6.6 (text), Equation (27)*
+
+^def-26-new2
 
 > [!theorem] Theorem §26.3: Structure of the Solution of an Input–Output Problem
 > The solution of (20), (21) is
@@ -250,7 +262,7 @@ $$
 
 ^pf-26-3
 
-*Uses:* [[§26★ The Convolution Integral#^def-26-2|Def. §26.2]], [[§26★ The Convolution Integral#^thm-26-2|§26.2]], [[§25 Impulse Functions#^thm-25-2|§25.2]], [[§22 Solution of Initial Value Problems#^prop-22-3|§22.3]] (the transformed equation), [[§22 Solution of Initial Value Problems#^thm-22-4|§22.4]] (uniqueness of the inverse transform)
+*Uses:* [[§26★ The Convolution Integral#^def-26-2|Def. §26.2]], [[§26★ The Convolution Integral#^def-26-new1|Def. §26.2]], [[§26★ The Convolution Integral#^def-26-new2|Def. §26.2]], [[§26★ The Convolution Integral#^thm-26-2|§26.2]], [[§25 Impulse Functions#^thm-25-2|§25.2]], [[§22 Solution of Initial Value Problems#^prop-22-3|§22.3]] (the transformed equation), [[§22 Solution of Initial Value Problems#^thm-22-4|§22.4]] (uniqueness of the inverse transform)
 
 > [!remark]- Connections
 > - The same splitting $y = \phi + \psi$, for variable coefficients and without transforms: [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]] (for the equation divided by $a$), where $\psi(t) = \int_{t_0}^t K(t, \tau)\,g(\tau)/a\,d\tau$ with the kernel $K(t, \tau) = \big(y_1(\tau)y_2(t) - y_1(t)y_2(\tau)\big)/W[y_1, y_2](\tau)$. For constant coefficients $K(t, \tau)/a = h(t - \tau)$ depends only on $t - \tau$, and the integral is the convolution (28).

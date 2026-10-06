@@ -362,7 +362,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > S = \int_\alpha^\beta 2\pi y \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt .
 > $$
 >
-> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in [[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]].
+> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in [[§64 Calculus with Parametric Curves#^def-64-new1|Definition §64.2]].
 >
 > *Stewart: 10.2, Formula 9*
 

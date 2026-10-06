@@ -46,7 +46,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 > [!remark]- Connections
 > - MATH 452 counterpart, where area of a rectangle is likewise defined by hand: [[§15 Multivariable Integration#^def-15-1|452 Def. §15.1]].
-> - How a linear map rescales volume: [[§34 Determinants#^ladr-9-61|LADR 9.61]], used for null sets in [[§18 Differentiation Theory#^thm-18-22|Thm. §18.22]].
+> - How a linear map rescales volume: [[§34 Determinants#^ladr-9-61|LADR 9.61]], used for null sets in [[§18b Differentiating the Integral#^thm-18-22|Thm. §18.22]].
 
 ## Outer Measure
 
@@ -122,11 +122,11 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 *Uses:* [[§9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
 
 ![[m551-9-2.svg]]
-*The covering of Example §9.2 for $n = 2$: the $k$-th point $x_k$ (red) gets an open square $I_k$ (dashed) of half-side $\epsilon/2^k$, so the squares shrink geometrically. Their total area is $(2\epsilon)^2 \cdot \tfrac{1}{2^2 - 1}$, which tends to $0$ with $\epsilon$ — however the points are arranged, even densely as with $\mathbb{Q}^2$.*
+*The covering of [[§9 Lebesgue Outer Measure#^ex-9-2|Example §9.2]] for $n = 2$: the $k$-th point $x_k$ (red) gets an open square $I_k$ (dashed) of half-side $\epsilon/2^k$, so the squares shrink geometrically. Their total area is $(2\epsilon)^2 \cdot \tfrac{1}{2^2 - 1}$, which tends to $0$ with $\epsilon$ — however the points are arranged, even densely as with $\mathbb{Q}^2$.*
 
 > [!remark]- Connections
 > - $\mathbb{Q}$ is countable ([[§3 Countability of Rationals and Unions#^cor-3-2|Cor. §3.2]]), so it is a null set; the [[Dirichlet and Thomae functions|Dirichlet function]] of [[§8 Motivation꞉ The Riemann Integral#^ex-8-2|Ex. §8.2]] is its indicator on $[0,1]$.
-> - The converse fails: the [[§11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]] is uncountable and null.
+> - The converse fails: the [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Cantor set]] is uncountable and null.
 
 ## Properties of Outer Measure
 
@@ -221,7 +221,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 *Uses:* [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[§9 Lebesgue Outer Measure#^prop-9-1|§9.1]]
 
 ![[m551-9-3.svg]]
-*The two halves of Proposition §9.2. Left (upper bound): a single open rectangle $I_\epsilon$ (dashed red), enlarged by $\epsilon$ on every side, already covers $\bar I$, and $|I_\epsilon| \to |I|$. Right (lower bound): by Heine–Borel any L-covering of $\bar I$ has a finite subcover $I_{k_1}, \dots, I_{k_m}$ (dashed red); overlaps (darker) are counted more than once, so the total volume can only exceed $|I|$ — the claim whose proof Remark §9.2 omits.*
+*The two halves of [[§9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2]]. Left (upper bound): a single open rectangle $I_\epsilon$ (dashed red), enlarged by $\epsilon$ on every side, already covers $\bar I$, and $|I_\epsilon| \to |I|$. Right (lower bound): by Heine–Borel any L-covering of $\bar I$ has a finite subcover $I_{k_1}, \dots, I_{k_m}$ (dashed red); overlaps (darker) are counted more than once, so the total volume can only exceed $|I|$ — the claim whose proof [[§9 Lebesgue Outer Measure#^rem-9-2|Remark §9.2]] omits.*
 
 > [!remark]- Connections
 > - Topology version of the compactness step: [[Heine–Borel Theorem]].
@@ -259,5 +259,5 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 *Uses:* [[§9 Lebesgue Outer Measure#^def-9-2|Def. §9.2]], [[§9 Lebesgue Outer Measure#^def-9-3|Def. §9.3]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]]
 
 > [!remark]- Connections
-> - Measurable sets are carried to measurable sets: [[§11 Borel Sets and Measure Spaces#^lem-11-15|Lemma §11.15]]; key input to the [[The Vitali Set is Not Measurable|Vitali set]].
+> - Measurable sets are carried to measurable sets: [[§11b The Vitali Set and the Cantor Set#^lem-11-15|Lemma §11.15]]; key input to the [[The Vitali Set is Not Measurable|Vitali set]].
 > - Translation invariance of the integral: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|Thm. §17.1]].

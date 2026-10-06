@@ -14,11 +14,13 @@ tags: [chapter, multivariable-analysis]
 ## Sections
 - [[§16 Line Integrals and Green's Theorem]]
 - [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]]
+- [[§17a Conservation of Mass and Laplace's Equation]]
+- [[§17b Radial Functions]]
 
 ## Central results
-- [[Green's Theorem]] (§16.1)
-- [[Divergence Theorem in ℝⁿ]] (§17.1)
-- [[Green's First Identity]] (§17.2)
+- [[Green's Theorem]] ([[§16 Line Integrals and Green's Theorem#^thm-16-1|§16.1]])
+- [[Divergence Theorem in ℝⁿ]] ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|§17.1]])
+- [[Green's First Identity]] ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|§17.2]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

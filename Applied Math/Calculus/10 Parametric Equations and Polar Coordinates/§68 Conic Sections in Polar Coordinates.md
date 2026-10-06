@@ -78,7 +78,7 @@ tags: [calculus]
 > c^2 = a^2 - b^2 = \frac{e^2d^2 - e^2d^2(1 - e^2)}{(1 - e^2)^2} = \frac{e^4d^2}{(1 - e^2)^2}, \qquad c = \frac{e^2d}{1 - e^2} = -h . \qquad (5)
 > $$
 >
-> So the right-hand focus $(h + c, 0) = (0, 0)$ is $F$: the focus of [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]] is a focus in the sense of §67. Dividing, $c/a = \dfrac{e^2d/(1 - e^2)}{ed/(1 - e^2)} = e$.
+> So the right-hand focus $(h + c, 0) = (0, 0)$ is $F$: the focus of [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]] is a focus in the sense of [[§67 Conic Sections|§67]]. Dividing, $c/a = \dfrac{e^2d/(1 - e^2)}{ed/(1 - e^2)} = e$.
 >
 > **$e > 1$.** Then $1 - e^2 < 0$, and multiplying (3) by $(1 - e^2)^2/(e^2d^2)$ gives the hyperbola $\dfrac{(x - h)^2}{a^2} - \dfrac{y^2}{b^2} = 1$ with $h = \dfrac{e^2d}{e^2 - 1}$, $a^2 = \dfrac{e^2d^2}{(e^2 - 1)^2}$, $b^2 = \dfrac{e^2d^2}{e^2 - 1}$. By [[§67 Conic Sections#^thm-67-5|Theorem §67.5]], $c^2 = a^2 + b^2 = \dfrac{e^2d^2 + e^2d^2(e^2 - 1)}{(e^2 - 1)^2} = \dfrac{e^4d^2}{(e^2 - 1)^2}$, so $c = \dfrac{e^2d}{e^2 - 1} = h$. The focus $(h - c, 0) = (0, 0)$ is $F$, and again $e = c/a$, now with $c^2 = a^2 + b^2$.
 >

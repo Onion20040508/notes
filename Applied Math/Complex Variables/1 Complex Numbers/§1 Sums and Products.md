@@ -29,18 +29,23 @@ Brown–Churchill define a complex number as an ordered pair of real numbers, th
 
 ^def-1-1
 
-> [!definition] Definition §1.2: Real and Imaginary Parts; Equality
+> [!definition] Definition §1.2: Real and Imaginary Parts
 > For $z = (x, y)$, the real numbers $x$ and $y$ are the **real part** and the **imaginary part** of $z$:
 >
 > $$
 > x = \operatorname{Re} z, \qquad y = \operatorname{Im} z . \qquad (2)
 > $$
 >
+> *B&C: Sec. 1 (text)*
+
+^def-1-2
+
+> [!definition] Definition §1.3: Equality of Complex Numbers
 > Two complex numbers are **equal**, $z_1 = z_2$, when they have the same real parts and the same imaginary parts, that is, when they are the same point of the plane.
 >
 > *B&C: Sec. 1 (text)*
 
-^def-1-2
+^def-1-new1
 
 > [!definition] Definition §1.3: Sum and Product
 > The **sum** and **product** of $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ are

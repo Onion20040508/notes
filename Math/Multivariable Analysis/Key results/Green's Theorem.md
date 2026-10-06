@@ -14,7 +14,8 @@ tags: [multivariable-analysis, hub]
 - [[§15 Multivariable Integration#^thm-15-4|Theorem §15.4: Additivity over Domains]]
 - [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
 - [[§15 Multivariable Integration#^thm-15-10|Theorem §15.10: Fubini for Type II Regions]]
-- [[§15 Multivariable Integration#^def-15-12|Definition §15.12: Type I and Type II Regions]]
+- [[§15c Fubini's Theorem#^def-15-12|Definition §15.12: Type I Region]]
+- [[§15c Fubini's Theorem#^def-15-new5|Definition §15.12: Type II Region]]
 
 ## Its proof uses (other subjects)
 - [[Fundamental Theorem of Calculus]] (Single Variable Analysis)

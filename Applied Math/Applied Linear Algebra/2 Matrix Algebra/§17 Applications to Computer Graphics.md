@@ -46,7 +46,7 @@ A picture on a screen is stored as a list of points, the columns of a data matri
 ^ex-17-1
 
 ![[m235-17-1.svg]]
-*Example §17.1. Left: the regular N with its eight vertices. Middle: the sheared N, data matrix $AD$; each vertex moves right by a quarter of its height (dashed: the original). Right: the composite $SA$, which also squeezes the width by the factor $.75$. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*
+*[[§17 Applications to Computer Graphics#^ex-17-1|Example §17.1]]. Left: the regular N with its eight vertices. Middle: the sheared N, data matrix $AD$; each vertex moves right by a quarter of its height (dashed: the original). Right: the composite $SA$, which also squeezes the width by the factor $.75$. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*
 
 > [!remark] Remark: Why Figures Are Built from Segments
 > The standard transformations of computer graphics map line segments onto line segments (for a linear $T$, the segment $\{(1 - t)\mathbf{p} + t\mathbf{q} : 0 \le t \le 1\}$ goes to $\{(1 - t)T(\mathbf{p}) + tT(\mathbf{q})\}$, the segment between the images; Lay's Exercise 27 in Section 1.8, [[§8 Introduction to Linear Transformations|§8]]). So once the vertices of an object have been transformed, their images can be joined by the appropriate segments to produce the image of the whole object. Curved letters are stored with additional formulas for the curves, and curves are often approximated by short segments.
@@ -101,7 +101,7 @@ Translating an object does not correspond directly to matrix multiplication, bec
 > [!example] Example §17.2: Composite Transformations in Homogeneous Coordinates
 > **(a)** Find the $3 \times 3$ matrix of the composite transformation: a scaling by $.3$, then a rotation of $90^\circ$ about the origin, and finally a translation that adds $(-.5, 2)$ to each point of a figure.
 >
-> For $\varphi = \pi/2$, $\sin\varphi = 1$ and $\cos\varphi = 0$. By Proposition §17.1, the three steps take $(x, y, 1)$ successively to
+> For $\varphi = \pi/2$, $\sin\varphi = 1$ and $\cos\varphi = 0$. By [[§17 Applications to Computer Graphics#^prop-17-1|Proposition §17.1]], the three steps take $(x, y, 1)$ successively to
 >
 > $$
 > \begin{bmatrix} .3 & 0 & 0 \\ 0 & .3 & 0 \\ 0 & 0 & 1 \end{bmatrix}\begin{bmatrix} x \\ y \\ 1 \end{bmatrix}, \qquad
@@ -211,7 +211,7 @@ A three-dimensional object is shown on the two-dimensional screen by projecting 
 > \frac{x^*}{d} = \frac{x}{d - z} \qquad\text{and}\qquad x^* = \frac{dx}{d - z} = \frac{x}{1 - z/d} .
 > $$
 >
-> The same argument in the $yz$-plane gives $y^* = y/(1 - z/d)$. (The picture has $0 < x$ and $z < d$; the formulas hold for all points with $z \ne d$, as the parametrization shows: the line through $(0, 0, d)$ and $(x, y, z)$ consists of the points $(tx,\ ty,\ d + t(z - d))$, and the third coordinate is $0$ exactly when $t = d/(d - z)$, which gives $x^* = dx/(d - z)$ and $y^* = dy/(d - z)$.) So $(x, y, z, 1)$ must go to $\big(\frac{x}{1 - z/d}, \frac{y}{1 - z/d}, 0, 1\big)$. Scaling by $1 - z/d$, we may instead use $(x, y, 0, 1 - z/d)$ as homogeneous coordinates for the image (Definition §17.2), and the displayed product shows that $P$ produces exactly these coordinates.
+> The same argument in the $yz$-plane gives $y^* = y/(1 - z/d)$. (The picture has $0 < x$ and $z < d$; the formulas hold for all points with $z \ne d$, as the parametrization shows: the line through $(0, 0, d)$ and $(x, y, z)$ consists of the points $(tx,\ ty,\ d + t(z - d))$, and the third coordinate is $0$ exactly when $t = d/(d - z)$, which gives $x^* = dx/(d - z)$ and $y^* = dy/(d - z)$.) So $(x, y, z, 1)$ must go to $\big(\frac{x}{1 - z/d}, \frac{y}{1 - z/d}, 0, 1\big)$. Scaling by $1 - z/d$, we may instead use $(x, y, 0, 1 - z/d)$ as homogeneous coordinates for the image ([[§17 Applications to Computer Graphics#^def-17-2|Definition §17.2]]), and the displayed product shows that $P$ produces exactly these coordinates.
 
 ^pf-17-2
 

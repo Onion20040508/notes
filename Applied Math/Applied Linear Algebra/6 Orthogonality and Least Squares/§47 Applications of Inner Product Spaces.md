@@ -100,7 +100,7 @@ Three applications show what the inner products of [[§46 Inner Product Spaces|�
 ^ex-47-1
 
 ![[m235-47-1.svg]]
-*Example §47.1: the ordinary least-squares line $y = 4 - 0.1x$ (blue) and the weighted one $y = 4.3 + 0.2x$ (red). The weighted fit uses $w = 2$ for the three filled points and $w = 1$ for the two hollow, less reliable ones, so in the weighted SS(E) their squared residuals count $4$ times less.*
+*[[§47 Applications of Inner Product Spaces#^ex-47-1|Example §47.1]]: the ordinary least-squares line $y = 4 - 0.1x$ (blue) and the weighted one $y = 4.3 + 0.2x$ (red). The weighted fit uses $w = 2$ for the three filled points and $w = 1$ for the two hollow, less reliable ones, so in the weighted SS(E) their squared residuals count $4$ times less.*
 
 ## Trend Analysis of Data
 
@@ -143,7 +143,7 @@ Three applications show what the inner products of [[§46 Inner Product Spaces|�
 > \hat p = \frac{20}{5}p_0 - \frac{1}{10}p_1 - \frac{7}{14}p_2, \qquad \hat p(t) = 4 - 0.1t - 0.5(t^2 - 2) .
 > $$
 >
-> The coefficient of $p_2$ is not small compared with the others, so it is reasonable to conclude that the trend is at least quadratic. (The first two coefficients, $4$ and $-0.1$, reproduce the ordinary least-squares line $y = 4 - 0.1t$ of Example §47.1: projecting onto $\mathbb{P}_1$ just drops the $p_2$ term.)
+> The coefficient of $p_2$ is not small compared with the others, so it is reasonable to conclude that the trend is at least quadratic. (The first two coefficients, $4$ and $-0.1$, reproduce the ordinary least-squares line $y = 4 - 0.1t$ of [[§47 Applications of Inner Product Spaces#^ex-47-1|Example §47.1]]: projecting onto $\mathbb{P}_1$ just drops the $p_2$ term.)
 >
 > *Lay: Example 6.8.2*
 
@@ -243,7 +243,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 > a_k = \frac{\langle f, \cos kt\rangle}{\langle \cos kt, \cos kt\rangle}, \qquad b_k = \frac{\langle f, \sin kt\rangle}{\langle \sin kt, \sin kt\rangle} .
 > $$
 >
-> By Proposition §47.2 the denominators are $\pi$, which gives (7). The coefficient of the constant function $1$ is
+> By [[§47 Applications of Inner Product Spaces#^prop-47-2|Proposition §47.2]] the denominators are $\pi$, which gives (7). The coefficient of the constant function $1$ is
 >
 > $$
 > \frac{\langle f, 1\rangle}{\langle 1, 1\rangle} = \frac{1}{2\pi}\int_0^{2\pi}f(t) \cdot 1\,dt = \frac12\Big[\frac1\pi\int_0^{2\pi}f(t)\cos(0 \cdot t)\,dt\Big] = \frac{a_0}{2} .
@@ -290,7 +290,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 ^ex-47-3
 
 ![[m235-47-2.svg]]
-*Example §47.3: $f(t) = t$ (black) and its third-order (left) and fourth-order (right) Fourier approximations (blue). The approximations oscillate around the line and are pulled toward $\pi$ at both ends of $[0, 2\pi]$, where the periodic extension of $f$ jumps from $2\pi$ back to $0$; the error is small in the mean-square sense, not at every point.*
+*[[§47 Applications of Inner Product Spaces#^ex-47-3|Example §47.3]]: $f(t) = t$ (black) and its third-order (left) and fourth-order (right) Fourier approximations (blue). The approximations oscillate around the line and are pulled toward $\pi$ at both ends of $[0, 2\pi]$, where the periodic extension of $f$ jumps from $2\pi$ back to $0$; the error is small in the mean-square sense, not at every point.*
 
 > [!definition] Definition §47.5: Mean Square Error
 > The norm $\|f - \operatorname{proj}_W f\|$ of the difference between $f$ and a Fourier approximation is the **mean square error** of the approximation (*mean*, because the norm is defined by an integral).
@@ -316,11 +316,11 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 
 > [!remark]- Connections
 > - Fourier series in $L^2$, with Parseval's equality $\int_0^{2\pi}|f|^2 = \sum |c_n|^2$: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]]; the finite Bessel inequality $\|\operatorname{proj}_W f\| \le \|f\|$ ([[§46 Inner Product Spaces#^prop-46-3|Proposition §46.3]] here) is [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]].
-> - Convergence in the mean does not give convergence at every point: in the figure after Example §47.3 the approximations of $t$ miss the endpoint values $0$ and $2\pi$.
+> - Convergence in the mean does not give convergence at every point: in the figure after [[§47 Applications of Inner Product Spaces#^ex-47-3|Example §47.3]] the approximations of $t$ miss the endpoint values $0$ and $2\pi$.
 > - See also: [[§11★ Mean Error and Convergence in Mean#^thm-11-6|341 Thm. §11.6]] (convergence in the mean for every $f$ with $\int f^2$ finite, from the minimum error in [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]]), with Parseval's equality, [[§11★ Mean Error and Convergence in Mean#^thm-11-4|341 Thm. §11.4]].
 
 > [!definition] Definition §47.6: Fourier Series
-> Because of Theorem §47.4 one writes
+> Because of [[§47 Applications of Inner Product Spaces#^thm-47-4|Theorem §47.4]] one writes
 >
 > $$
 > f(t) = \frac{a_0}{2} + \sum_{m=1}^\infty (a_m\cos mt + b_m\sin mt),

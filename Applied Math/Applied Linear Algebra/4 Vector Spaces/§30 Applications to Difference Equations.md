@@ -86,7 +86,7 @@ If no Casorati matrix is invertible, the signals may or may not be linearly inde
 > \sim \begin{bmatrix} 1 & 1 & 1 \\ 0 & -3 & 2 \\ 0 & 0 & 10 \end{bmatrix} .
 > $$
 >
-> Three pivots, so $C(0)$ is invertible, and $1^k$, $(-2)^k$, $3^k$ are linearly independent by Proposition §30.1.
+> Three pivots, so $C(0)$ is invertible, and $1^k$, $(-2)^k$, $3^k$ are linearly independent by [[§30 Applications to Difference Equations#^prop-30-1|Proposition §30.1]].
 >
 > *Lay: Example 4.8.2*
 
@@ -146,7 +146,7 @@ If no Casorati matrix is invertible, the signals may or may not be linearly inde
 ^ex-30-2
 
 ![[m235-30-1.svg]]
-*Example §30.2. Top: the input $y_k = \cos(\pi k/4)$ (blue stems, sampled from the blue curve) and the filter's output $z_k = y_{k+1}$ (red circles), the same wave shifted one step to the left. Bottom: the input $w_k = \cos(3\pi k/4)$, sampled from a faster wave; the output is $0$ for every $k$ (red circles on the axis).*
+*[[§30 Applications to Difference Equations#^ex-30-2|Example §30.2]]. Top: the input $y_k = \cos(\pi k/4)$ (blue stems, sampled from the blue curve) and the filter's output $z_k = y_{k+1}$ (red circles), the same wave shifted one step to the left. Bottom: the input $w_k = \cos(3\pi k/4)$, sampled from a faster wave; the output is $0$ for every $k$ (red circles on the axis).*
 
 Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
@@ -168,7 +168,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 ^def-30-4
 
 > [!theorem] Proposition §30.2: Exponential Solutions
-> A nonzero signal $\{r^k\}$ ($r \ne 0$) satisfies the homogeneous difference equation of Definition §30.4 if and only if $r$ is a root of its auxiliary equation.
+> A nonzero signal $\{r^k\}$ ($r \ne 0$) satisfies the homogeneous difference equation of [[§30 Applications to Difference Equations#^def-30-4|Definition §30.4]] if and only if $r$ is a root of its auxiliary equation.
 >
 > *Lay: 4.8 (text and Example 4.8.4)*
 
@@ -188,7 +188,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 *Uses:* [[§30 Applications to Difference Equations#^def-30-4|Def. §30.4]]
 
 > [!remark] Remark: Repeated and Complex Roots
-> Lay does not treat repeated roots of the auxiliary equation (then $\{r^k\}$ gives fewer than $n$ solutions; a root $r$ of multiplicity two also gives $\{k r^k\}$, as in Exercise 5). Lecture L18 poses the recurrence $A_{n+1} = 2A_n - A_{n-1}$ as an exercise (the left side is written $A_n$ there), asking for a formula of the Fibonacci shape $(\mu_1^n - \mu_2^n)/c$; its auxiliary equation $r^2 - 2r + 1 = (r - 1)^2$ has the double root $1$, so that shape does not apply, and the solutions are $\{1\}$ and $\{k\}$: $A_k = c_1 + c_2 k$, the arithmetic progressions (Casorati matrix at $k = 0$: $\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}$, invertible). When the auxiliary equation has a complex root, the difference equation has real solutions of the form $s^k\cos k\omega$ and $s^k\sin k\omega$ for constants $s$ and $\omega$: the signal $w_k = \cos(3\pi k/4)$ of Example §30.2 is one ($s = 1$, $\omega = 3\pi/4$; the auxiliary equation $.35r^2 + .5r + .35 = 0$ has the roots $e^{\pm 3\pi i/4}$). Complex numbers and $e^{i\theta}$: [[§53 Complex Numbers#^rem-53-1|Remark: Euler's Formula]]. For differential equations the same substitution, $y = e^{rt}$ in place of $y_k = r^k$, leads to the characteristic equation: [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|331 Thm. §13.1]].
+> Lay does not treat repeated roots of the auxiliary equation (then $\{r^k\}$ gives fewer than $n$ solutions; a root $r$ of multiplicity two also gives $\{k r^k\}$, as in Exercise 5). Lecture L18 poses the recurrence $A_{n+1} = 2A_n - A_{n-1}$ as an exercise (the left side is written $A_n$ there), asking for a formula of the Fibonacci shape $(\mu_1^n - \mu_2^n)/c$; its auxiliary equation $r^2 - 2r + 1 = (r - 1)^2$ has the double root $1$, so that shape does not apply, and the solutions are $\{1\}$ and $\{k\}$: $A_k = c_1 + c_2 k$, the arithmetic progressions (Casorati matrix at $k = 0$: $\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}$, invertible). When the auxiliary equation has a complex root, the difference equation has real solutions of the form $s^k\cos k\omega$ and $s^k\sin k\omega$ for constants $s$ and $\omega$: the signal $w_k = \cos(3\pi k/4)$ of [[§30 Applications to Difference Equations#^ex-30-2|Example §30.2]] is one ($s = 1$, $\omega = 3\pi/4$; the auxiliary equation $.35r^2 + .5r + .35 = 0$ has the roots $e^{\pm 3\pi i/4}$). Complex numbers and $e^{i\theta}$: [[§53 Complex Numbers#^rem-53-1|Remark: Euler's Formula]]. For differential equations the same substitution, $y = e^{rt}$ in place of $y_k = r^k$, leads to the characteristic equation: [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|331 Thm. §13.1]].
 
 ^rem-30-1
 
@@ -272,13 +272,13 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 ^thm-30-5
 
 > [!proof]+ Proof
-> $H$ is a subspace of $\mathbb{S}$, the kernel of a linear transformation (Proposition §30.3). For $\{y_k\}$ in $H$, let $F\{y_k\}$ be the vector of its first $n$ values,
+> $H$ is a subspace of $\mathbb{S}$, the kernel of a linear transformation ([[§30 Applications to Difference Equations#^prop-30-3|Proposition §30.3]]). For $\{y_k\}$ in $H$, let $F\{y_k\}$ be the vector of its first $n$ values,
 >
 > $$
 > F\{y_k\} = (y_0, y_1, \ldots, y_{n-1}) \in \mathbb{R}^n .
 > $$
 >
-> $F : H \to \mathbb{R}^n$ is linear (the values at $0, \ldots, n-1$ of a sum or multiple of signals are the sums or multiples of the values). Given any vector $(y_0, y_1, \ldots, y_{n-1})$ in $\mathbb{R}^n$, Theorem §30.4 (with $z_k = 0$; here $a_n \ne 0$ is part of the definition of order $n$) says there is a unique signal $\{y_k\}$ in $H$ with $F\{y_k\} = (y_0, y_1, \ldots, y_{n-1})$. Existence says $F$ is onto $\mathbb{R}^n$, uniqueness that $F$ is one-to-one. So $F$ is an isomorphism, and $\dim H = \dim \mathbb{R}^n = n$ by [[§27 The Dimension of a Vector Space#^prop-27-7|Proposition §27.7]].
+> $F : H \to \mathbb{R}^n$ is linear (the values at $0, \ldots, n-1$ of a sum or multiple of signals are the sums or multiples of the values). Given any vector $(y_0, y_1, \ldots, y_{n-1})$ in $\mathbb{R}^n$, [[§30 Applications to Difference Equations#^thm-30-4|Theorem §30.4]] (with $z_k = 0$; here $a_n \ne 0$ is part of the definition of order $n$) says there is a unique signal $\{y_k\}$ in $H$ with $F\{y_k\} = (y_0, y_1, \ldots, y_{n-1})$. Existence says $F$ is onto $\mathbb{R}^n$, uniqueness that $F$ is one-to-one. So $F$ is an isomorphism, and $\dim H = \dim \mathbb{R}^n = n$ by [[§27 The Dimension of a Vector Space#^prop-27-7|Proposition §27.7]].
 
 ^pf-30-5
 
@@ -296,14 +296,14 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 ^prop-30-6
 
 > [!proof]+ Proof
-> Lay states this and refers to the Study Guide; here is a short argument from Theorem §30.4. If $C(k)$ is invertible for some $k$, the signals are independent by Proposition §30.1. Suppose instead that $C(k_0)$ is singular for some $k_0$. Then there is $\mathbf{c} = (c_1, \ldots, c_n) \ne \mathbf{0}$ with $C(k_0)\mathbf{c} = \mathbf{0}$. The combination $\{x_k\} = c_1\{u^{(1)}_k\} + \cdots + c_n\{u^{(n)}_k\}$ of the given solutions is a solution of (10) (Proposition §30.3), and $C(k_0)\mathbf{c} = \mathbf{0}$ says $x_{k_0} = x_{k_0+1} = \cdots = x_{k_0+n-1} = 0$. The zero signal is also a solution with these $n$ consecutive values. Theorem §30.4, applied after shifting the index so that $k_0$ becomes $0$, says such a solution is unique, so $\{x_k\}$ is the zero signal. Thus a nontrivial combination of the signals vanishes: they are linearly dependent, and then (by the first case) no $C(k)$ can be invertible.
+> Lay states this and refers to the Study Guide; here is a short argument from [[§30 Applications to Difference Equations#^thm-30-4|Theorem §30.4]]. If $C(k)$ is invertible for some $k$, the signals are independent by [[§30 Applications to Difference Equations#^prop-30-1|Proposition §30.1]]. Suppose instead that $C(k_0)$ is singular for some $k_0$. Then there is $\mathbf{c} = (c_1, \ldots, c_n) \ne \mathbf{0}$ with $C(k_0)\mathbf{c} = \mathbf{0}$. The combination $\{x_k\} = c_1\{u^{(1)}_k\} + \cdots + c_n\{u^{(n)}_k\}$ of the given solutions is a solution of (10) ([[§30 Applications to Difference Equations#^prop-30-3|Proposition §30.3]]), and $C(k_0)\mathbf{c} = \mathbf{0}$ says $x_{k_0} = x_{k_0+1} = \cdots = x_{k_0+n-1} = 0$. The zero signal is also a solution with these $n$ consecutive values. [[§30 Applications to Difference Equations#^thm-30-4|Theorem §30.4]], applied after shifting the index so that $k_0$ becomes $0$, says such a solution is unique, so $\{x_k\}$ is the zero signal. Thus a nontrivial combination of the signals vanishes: they are linearly dependent, and then (by the first case) no $C(k)$ can be invertible.
 
 ^pf-30-6
 
 *Uses:* [[§30 Applications to Difference Equations#^prop-30-1|§30.1]], [[§30 Applications to Difference Equations#^prop-30-3|§30.3]], [[§30 Applications to Difference Equations#^thm-30-4|§30.4]]
 
 > [!definition] Definition §30.5: Fundamental Set of Solutions
-> A basis for the subspace of all solutions of the homogeneous equation (10) is a **fundamental set of solutions** of (10). Exhibiting one is the standard way to describe the "general solution". By Theorem §30.5 and the [[§27 The Dimension of a Vector Space#^thm-27-5|Basis Theorem]], any $n$ linearly independent solutions of (10) automatically span the $n$-dimensional solution space, so they form a fundamental set.
+> A basis for the subspace of all solutions of the homogeneous equation (10) is a **fundamental set of solutions** of (10). Exhibiting one is the standard way to describe the "general solution". By [[§30 Applications to Difference Equations#^thm-30-5|Theorem §30.5]] and the [[§27 The Dimension of a Vector Space#^thm-27-5|Basis Theorem]], any $n$ linearly independent solutions of (10) automatically span the $n$-dimensional solution space, so they form a fundamental set.
 >
 > *Lay: 4.8 (text)*
 
@@ -311,9 +311,9 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
 > [!remark] Remark: Method — Solving a Homogeneous Linear Difference Equation
 > 1. Normalize to $y_{k+n} + a_1 y_{k+n-1} + \cdots + a_n y_k = 0$ and write the auxiliary equation $r^n + a_1 r^{n-1} + \cdots + a_n = 0$.
-> 2. Find its roots. Each root $r$ gives a solution $\{r^k\}$ (Proposition §30.2).
-> 3. If there are $n$ distinct roots, the $n$ signals $r_i^k$ are linearly independent (check with a Casorati matrix at a convenient $k$, Proposition §30.1), hence a fundamental set (Definition §30.5). The general solution is $y_k = c_1 r_1^k + \cdots + c_n r_n^k$.
-> 4. Given initial values $y_0, \ldots, y_{n-1}$, solve the linear system for $c_1, \ldots, c_n$; its coefficient matrix is the Casorati matrix $C(0)$, so the solution is unique (Theorem §30.4).
+> 2. Find its roots. Each root $r$ gives a solution $\{r^k\}$ ([[§30 Applications to Difference Equations#^prop-30-2|Proposition §30.2]]).
+> 3. If there are $n$ distinct roots, the $n$ signals $r_i^k$ are linearly independent (check with a Casorati matrix at a convenient $k$, [[§30 Applications to Difference Equations#^prop-30-1|Proposition §30.1]]), hence a fundamental set ([[§30 Applications to Difference Equations#^def-30-5|Definition §30.5]]). The general solution is $y_k = c_1 r_1^k + \cdots + c_n r_n^k$.
+> 4. Given initial values $y_0, \ldots, y_{n-1}$, solve the linear system for $c_1, \ldots, c_n$; its coefficient matrix is the Casorati matrix $C(0)$, so the solution is unique ([[§30 Applications to Difference Equations#^thm-30-4|Theorem §30.4]]).
 > 5. Nonhomogeneous equation: add one particular solution ([[§30 Applications to Difference Equations#^thm-30-7|Theorem §30.7]]).
 
 ^rem-30-2
@@ -331,13 +331,13 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 > r^{k+3} - 2r^{k+2} - 5r^{k+1} + 6r^k = r^k(r^3 - 2r^2 - 5r + 6) = r^k(r - 1)(r + 2)(r - 3)
 > $$
 >
-> (check: $(r - 1)(r + 2) = r^2 + r - 2$, and $(r^2 + r - 2)(r - 3) = r^3 - 2r^2 - 5r + 6$). By Proposition §30.2, $1^k$, $(-2)^k$ and $3^k$ are solutions. For instance
+> (check: $(r - 1)(r + 2) = r^2 + r - 2$, and $(r^2 + r - 2)(r - 3) = r^3 - 2r^2 - 5r + 6$). By [[§30 Applications to Difference Equations#^prop-30-2|Proposition §30.2]], $1^k$, $(-2)^k$ and $3^k$ are solutions. For instance
 >
 > $$
 > 3^{k+3} - 2 \cdot 3^{k+2} - 5 \cdot 3^{k+1} + 6 \cdot 3^k = 3^k(27 - 18 - 15 + 6) = 0 \quad \text{for all } k .
 > $$
 >
-> **A basis.** By Example §30.1 the three solutions are linearly independent. In general it can be hard to verify directly that a set of signals *spans* the solution space, but here there is no need: by Theorem §30.5 the solution space is exactly three-dimensional, and by the Basis Theorem three linearly independent vectors in a three-dimensional space form a basis. So $1^k$, $(-2)^k$, $3^k$ is a fundamental set, and every solution is $y_k = c_1 + c_2(-2)^k + c_3 3^k$.
+> **A basis.** By [[§30 Applications to Difference Equations#^ex-30-1|Example §30.1]] the three solutions are linearly independent. In general it can be hard to verify directly that a set of signals *spans* the solution space, but here there is no need: by [[§30 Applications to Difference Equations#^thm-30-5|Theorem §30.5]] the solution space is exactly three-dimensional, and by the Basis Theorem three linearly independent vectors in a three-dimensional space form a basis. So $1^k$, $(-2)^k$, $3^k$ is a fundamental set, and every solution is $y_k = c_1 + c_2(-2)^k + c_3 3^k$.
 >
 > *Lay: Examples 4.8.4 and 4.8.5*
 
@@ -352,7 +352,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 > r^2 - r - 1 = 0, \qquad r = \frac{1 \pm \sqrt5}{2}: \qquad \varphi = \frac{1 + \sqrt5}{2} \approx 1.618, \qquad \psi = \frac{1 - \sqrt5}{2} \approx -0.618 .
 > $$
 >
-> **A fundamental set.** $\{\varphi^k\}$ and $\{\psi^k\}$ are solutions (Proposition §30.2). Their Casorati matrix at $k = 0$ is $\begin{bmatrix} 1 & 1 \\ \varphi & \psi \end{bmatrix}$, with determinant $\psi - \varphi = -\sqrt5 \ne 0$, so they are independent, and by Theorem §30.5 ($n = 2$) and the Basis Theorem they form a basis of the solution space. So $F_k = c_1\varphi^k + c_2\psi^k$ for some $c_1, c_2$.
+> **A fundamental set.** $\{\varphi^k\}$ and $\{\psi^k\}$ are solutions ([[§30 Applications to Difference Equations#^prop-30-2|Proposition §30.2]]). Their Casorati matrix at $k = 0$ is $\begin{bmatrix} 1 & 1 \\ \varphi & \psi \end{bmatrix}$, with determinant $\psi - \varphi = -\sqrt5 \ne 0$, so they are independent, and by [[§30 Applications to Difference Equations#^thm-30-5|Theorem §30.5]] ($n = 2$) and the Basis Theorem they form a basis of the solution space. So $F_k = c_1\varphi^k + c_2\psi^k$ for some $c_1, c_2$.
 >
 > **Initial values.** $k = 0$: $c_1 + c_2 = 0$. $k = 1$: $c_1\varphi + c_2\psi = 1$. Substituting $c_2 = -c_1$ gives $c_1(\varphi - \psi) = c_1\sqrt5 = 1$. Hence
 >
@@ -370,7 +370,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 >
 > the golden ratio: the ratios $\frac21, \frac32, \frac53, \frac85, \frac{13}{8}, \frac{21}{13}, \ldots$ approach $\varphi$.
 >
-> **The lecture's route.** L18 writes the recurrence as a first-order system (Proposition §30.8): $\mathbf{v}_k = \begin{bmatrix} F_k \\ F_{k+1} \end{bmatrix}$ satisfies $\mathbf{v}_{k+1} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\mathbf{v}_k$, so $\mathbf{v}_k = A^k\mathbf{v}_0$. The eigenvalues of $A$ are the roots $\varphi$, $\psi$ of $\det(A - \lambda I) = \lambda^2 - \lambda - 1$, with eigenvectors $\mathbf{u} = (1, \varphi)$ and $\mathbf{v} = (1, \psi)$. Since $\mathbf{u} - \mathbf{v} = (0, \sqrt5) = \sqrt5\,\mathbf{v}_0$, one gets $\mathbf{v}_k = A^k\mathbf{v}_0 = \frac{1}{\sqrt5}(\varphi^k\mathbf{u} - \psi^k\mathbf{v})$, whose first entry is the same formula. (Eigenvectors: Chapter 5, [[§32 Eigenvectors and Eigenvalues#^ex-32-4|Example §32.4]] and [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]].)
+> **The lecture's route.** L18 writes the recurrence as a first-order system ([[§30 Applications to Difference Equations#^prop-30-8|Proposition §30.8]]): $\mathbf{v}_k = \begin{bmatrix} F_k \\ F_{k+1} \end{bmatrix}$ satisfies $\mathbf{v}_{k+1} = \begin{bmatrix} 0 & 1 \\ 1 & 1 \end{bmatrix}\mathbf{v}_k$, so $\mathbf{v}_k = A^k\mathbf{v}_0$. The eigenvalues of $A$ are the roots $\varphi$, $\psi$ of $\det(A - \lambda I) = \lambda^2 - \lambda - 1$, with eigenvectors $\mathbf{u} = (1, \varphi)$ and $\mathbf{v} = (1, \psi)$. Since $\mathbf{u} - \mathbf{v} = (0, \sqrt5) = \sqrt5\,\mathbf{v}_0$, one gets $\mathbf{v}_k = A^k\mathbf{v}_0 = \frac{1}{\sqrt5}(\varphi^k\mathbf{u} - \psi^k\mathbf{v})$, whose first entry is the same formula. (Eigenvectors: Chapter 5, [[§32 Eigenvectors and Eigenvalues#^ex-32-4|Example §32.4]] and [[§37 Discrete Dynamical Systems#^thm-37-1|Theorem §37.1]].)
 >
 > *The lecture first lists $F_0 = F_1 = 1$ and then uses $\mathbf{v}_0 = (F_0, F_1) = (0, 1)$; the closed formula $F_n = (\varphi^n - \psi^n)/\sqrt5$ it derives is the one for $F_0 = 0$, $F_1 = 1$, used here.*
 >
@@ -399,7 +399,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 ^thm-30-7
 
 > [!proof]+ Proof
-> Let $T$ be the linear transformation of Proposition §30.3, so (11) reads $T\{y_k\} = \{z_k\}$, and let $\{p_k\}$ be one solution: $T\{p_k\} = \{z_k\}$. If $\{u_k\}$ solves the homogeneous equation, $T\{u_k\} = 0$, then $T\{p_k + u_k\} = \{z_k\} + 0 = \{z_k\}$, so $\{p_k + u_k\}$ solves (11). Conversely, if $\{y_k\}$ solves (11), then $T\{y_k - p_k\} = \{z_k\} - \{z_k\} = 0$, so $\{u_k\} = \{y_k - p_k\}$ is in the kernel of $T$ and $\{y_k\} = \{p_k\} + \{u_k\}$. Writing $\{u_k\}$ in a fundamental set gives the statement.
+> Let $T$ be the linear transformation of [[§30 Applications to Difference Equations#^prop-30-3|Proposition §30.3]], so (11) reads $T\{y_k\} = \{z_k\}$, and let $\{p_k\}$ be one solution: $T\{p_k\} = \{z_k\}$. If $\{u_k\}$ solves the homogeneous equation, $T\{u_k\} = 0$, then $T\{p_k + u_k\} = \{z_k\} + 0 = \{z_k\}$, so $\{p_k + u_k\}$ solves (11). Conversely, if $\{y_k\}$ solves (11), then $T\{y_k - p_k\} = \{z_k\} - \{z_k\} = 0$, so $\{u_k\} = \{y_k - p_k\}$ is in the kernel of $T$ and $\{y_k\} = \{p_k\} + \{u_k\}$. Writing $\{u_k\}$ in a fundamental set gives the statement.
 
 ^pf-30-7
 
@@ -423,9 +423,9 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 > (k + 2)^2 - 4(k + 1)^2 + 3k^2 = (k^2 + 4k + 4) - 4(k^2 + 2k + 1) + 3k^2 = -4k .
 > $$
 >
-> **The homogeneous equation** $y_{k+2} - 4y_{k+1} + 3y_k = 0$ has auxiliary equation $r^2 - 4r + 3 = (r - 1)(r - 3) = 0$, with roots $1$ and $3$. So $1^k$ and $3^k$ are solutions; they are not multiples of each other, hence linearly independent, and by Theorem §30.5 the solution space is two-dimensional, so they form a basis.
+> **The homogeneous equation** $y_{k+2} - 4y_{k+1} + 3y_k = 0$ has auxiliary equation $r^2 - 4r + 3 = (r - 1)(r - 3) = 0$, with roots $1$ and $3$. So $1^k$ and $3^k$ are solutions; they are not multiples of each other, hence linearly independent, and by [[§30 Applications to Difference Equations#^thm-30-5|Theorem §30.5]] the solution space is two-dimensional, so they form a basis.
 >
-> **General solution.** By Theorem §30.7,
+> **General solution.** By [[§30 Applications to Difference Equations#^thm-30-7|Theorem §30.7]],
 >
 > $$
 > y_k = k^2 + c_1 1^k + c_2 3^k = k^2 + c_1 + c_2 3^k .

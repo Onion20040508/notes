@@ -29,15 +29,15 @@ This section answers [[§18 Differentiation Theory#^rem-18-1|the central questio
 ^thm-18-21
 
 > [!proof]+ Proof
-> Write $E = \bigcup_{m=1}^{\infty} F_m \cup Z$, where each $F_m$ is bounded and closed with $m(F_m) < \infty$, and $m(Z) = 0$ ([[Inner Regularity of Lebesgue Measure|§11.10]], as in the proof of [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]]). Then $T(E) = \bigcup_{m=1}^{\infty} T(F_m) \cup T(Z)$. By [[§18 Differentiation Theory#^thm-18-20|the previous theorem]], each $T(F_m)$ is bounded and closed, hence [[§11 Borel Sets and Measure Spaces#^cor-11-7|measurable]]. By hypothesis, $m^*(T(Z)) = 0$, so $T(Z)$ is [[§10 Lebesgue Measurable Sets#^ex-10-1|measurable]]. A countable union of measurable sets is measurable, so $T(E) \in \mathcal{M}(\mathbb{R}^n)$.
+> Write $E = \bigcup_{m=1}^{\infty} F_m \cup Z$, where each $F_m$ is bounded and closed with $m(F_m) < \infty$, and $m(Z) = 0$ ([[Inner Regularity of Lebesgue Measure|§11.10]], as in the proof of [[§17a Applications of Tonelli's Theorem#^thm-17-8|§17.8]]). Then $T(E) = \bigcup_{m=1}^{\infty} T(F_m) \cup T(Z)$. By [[§18b Differentiating the Integral#^thm-18-20|the previous theorem]], each $T(F_m)$ is bounded and closed, hence [[§11 Borel Sets and Measure Spaces#^cor-11-7|measurable]]. By hypothesis, $m^*(T(Z)) = 0$, so $T(Z)$ is [[§10 Lebesgue Measurable Sets#^ex-10-1|measurable]]. A countable union of measurable sets is measurable, so $T(E) \in \mathcal{M}(\mathbb{R}^n)$.
 
 ^pf-18-21
 
-*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§18 Differentiation Theory#^thm-18-20|§18.20]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
+*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§18b Differentiating the Integral#^thm-18-20|§18.20]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!remark]- Connections
 > - MATH 452 analogue for Jordan content: [[§15 Multivariable Integration#^prop-15-16|C¹ Diffeomorphisms Preserve Jordan Measurability]] (452 §15.16).
-> - Applied to AC functions via [[§18 Differentiation Theory#^thm-18-19|§18.19]] (for $n = 1$) and to linear maps via [[§18 Differentiation Theory#^thm-18-22|§18.22]].
+> - Applied to AC functions via [[§18c Absolute Continuity and the FTC#^thm-18-19|§18.19]] (for $n = 1$) and to linear maps via [[§18b Differentiating the Integral#^thm-18-22|§18.22]].
 
 > [!theorem] Theorem §18.22: Linear Maps Preserve Null Sets
 > Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a linear map. Then $m^*(Z) = 0 \implies m^*(T(Z)) = 0$.
@@ -79,11 +79,11 @@ This section answers [[§18 Differentiation Theory#^rem-18-1|the central questio
 > \{x \in \mathbb{R}^n : (f \circ T)(x) > \alpha\} = (f \circ T)^{-1}((\alpha, \infty)) = T^{-1}(f^{-1}((\alpha, \infty))).
 > $$
 >
-> Since $f$ is [[§12 Measurable Functions#^def-12-2|measurable]], $A = f^{-1}((\alpha, \infty)) \in \mathcal{M}(\mathbb{R}^n)$. Since $T^{-1}$ is an invertible linear map (hence continuous and [[§18 Differentiation Theory#^thm-18-22|preserving null sets]]), $T^{-1}(A) \in \mathcal{M}(\mathbb{R}^n)$ by [[§18 Differentiation Theory#^thm-18-21|the theorem above]]. So $f \circ T$ is measurable.
+> Since $f$ is [[§12 Measurable Functions#^def-12-2|measurable]], $A = f^{-1}((\alpha, \infty)) \in \mathcal{M}(\mathbb{R}^n)$. Since $T^{-1}$ is an invertible linear map (hence continuous and [[§18b Differentiating the Integral#^thm-18-22|preserving null sets]]), $T^{-1}(A) \in \mathcal{M}(\mathbb{R}^n)$ by [[§18b Differentiating the Integral#^thm-18-21|the theorem above]]. So $f \circ T$ is measurable.
 
 ^pf-18-23
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§18 Differentiation Theory#^thm-18-22|§18.22]], [[§18 Differentiation Theory#^thm-18-21|§18.21]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§18b Differentiating the Integral#^thm-18-22|§18.22]], [[§18b Differentiating the Integral#^thm-18-21|§18.21]]
 
 > [!theorem] Proposition §18.24: Measurability of $f(x + t)$ on $\mathbb{R}^2$
 > If $f$ is a measurable function on $\mathbb{R}$, then $(x, t) \mapsto f(x + t)$ is a measurable function on $\mathbb{R}^2$.
@@ -91,7 +91,7 @@ This section answers [[§18 Differentiation Theory#^rem-18-1|the central questio
 ^prop-18-24
 
 > [!proof]+ Proof
-> Define $F: \mathbb{R}^2 \to \mathbb{R}$ by $F(x, y) = f(x)$. Then $F$ is measurable on $\mathbb{R}^2$: for each $\alpha$, $\{(x,y) : F(x,y) > \alpha\} = \{x : f(x) > \alpha\} \times \mathbb{R}$, which is measurable ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|product of a measurable set with ℝ]]).
+> Define $F: \mathbb{R}^2 \to \mathbb{R}$ by $F(x, y) = f(x)$. Then $F$ is measurable on $\mathbb{R}^2$: for each $\alpha$, $\{(x,y) : F(x,y) > \alpha\} = \{x : f(x) > \alpha\} \times \mathbb{R}$, which is measurable ([[§17a Applications of Tonelli's Theorem#^thm-17-8|product of a measurable set with ℝ]]).
 >
 > Define the invertible linear map $T: \mathbb{R}^2 \to \mathbb{R}^2$ by $T(x, t) = (x + t,\; x - t)$, so $T^{-1}(u, v) = ((u+v)/2,\; (u-v)/2)$. Then:
 >
@@ -99,11 +99,11 @@ This section answers [[§18 Differentiation Theory#^rem-18-1|the central questio
 > F(T(x, t)) = F(x + t,\; x - t) = f(x + t).
 > $$
 >
-> By [[§18 Differentiation Theory#^cor-18-23|the corollary above]], $F \circ T$ is measurable on $\mathbb{R}^2$.
+> By [[§18b Differentiating the Integral#^cor-18-23|the corollary above]], $F \circ T$ is measurable on $\mathbb{R}^2$.
 
 ^pf-18-24
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[§18 Differentiation Theory#^cor-18-23|§18.23]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§17a Applications of Tonelli's Theorem#^thm-17-8|§17.8]], [[§18b Differentiating the Integral#^cor-18-23|§18.23]]
 
 ## Differentiating the Integral: $F'(x) = f(x)$ A.E.
 
@@ -143,7 +143,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 >
 > where we used the triangle inequality under the integral and swapped the order of integration (justified by Tonelli, since $g(x,t) = |f(x+t) - f(x)|$ is measurable on $\mathbb{R}^2$).
 >
-> *Measurability of $g$*: By [[§18 Differentiation Theory#^prop-18-24|the proposition above]], $(x, t) \mapsto f(x+t)$ is measurable on $\mathbb{R}^2$. Since $f(x)$ is also measurable on $\mathbb{R}^2$ (constant in $t$), $g(x, t) = |f(x+t) - f(x)|$ is [[§12 Measurable Functions#^thm-12-3|measurable]].
+> *Measurability of $g$*: By [[§18b Differentiating the Integral#^prop-18-24|the proposition above]], $(x, t) \mapsto f(x+t)$ is measurable on $\mathbb{R}^2$. Since $f(x)$ is also measurable on $\mathbb{R}^2$ (constant in $t$), $g(x, t) = |f(x+t) - f(x)|$ is [[§12 Measurable Functions#^thm-12-3|measurable]].
 >
 > By the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|average continuity theorem]] ([[§17 Invariance Properties and Fubini's Theorem|§17]]), for every $\varepsilon > 0$ there exists $\delta > 0$ such that $|t| < \delta$ implies $\int_{\mathbb{R}} |f(x+t) - f(x)|\,dx < \varepsilon$. So for $0 < h < \delta$:
 >
@@ -153,7 +153,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 
 ^pf-18-25
 
-*Uses:* [[Tonelli's Theorem|§17.3]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[§16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]], [[§18 Differentiation Theory#^prop-18-24|§18.24]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|§17.2]]
+*Uses:* [[Tonelli's Theorem|§17.3]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[§16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]], [[§18b Differentiating the Integral#^prop-18-24|§18.24]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|§17.2]]
 
 > [!theorem] Theorem §18.26: Differentiation of the Integral
 > Let $f \in L(\mathbb{R})$. Define $F(x) = \int_a^x f(t)\,dt$. Then $F$ is differentiable a.e. and $F'(x) = f(x)$ a.e.
@@ -161,7 +161,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 ^thm-18-26
 
 > [!proof]+ Proof
-> By the [[§18 Differentiation Theory#^lem-18-25|Averaging Lemma]], $F_h \to f$ in $L^1$ as $h \to 0$. In particular, there exists a sequence $h_n \to 0$ such that $F_{h_n} \to f$ pointwise a.e. (every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence; [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|§19.17]]).
+> By the [[§18b Differentiating the Integral#^lem-18-25|Averaging Lemma]], $F_h \to f$ in $L^1$ as $h \to 0$. In particular, there exists a sequence $h_n \to 0$ such that $F_{h_n} \to f$ pointwise a.e. (every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence; [[§19a Lᵖ as a Banach Space#^cor-19-17|§19.17]]).
 >
 > But:
 >
@@ -171,15 +171,15 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 >
 > So $\frac{F(x+h_n) - F(x)}{h_n} \to f(x)$ a.e. along the sequence $\{h_n\}$.
 >
-> To promote this to a full derivative (limit as $h \to 0$, not just along a sequence): we already know $F \in BV([a,b])$ (by the [[§18 Differentiation Theory#^thm-18-8|Total Variation Theorem]]), hence $F$ is differentiable a.e. (by [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's theorem]]; [[§18 Differentiation Theory#^cor-18-10|§18.10]]). Where $F'(x)$ exists, it must equal $f(x)$ (since the subsequential limit $f(x)$ is the only possible limit). Therefore $F'(x) = f(x)$ a.e.
+> To promote this to a full derivative (limit as $h \to 0$, not just along a sequence): we already know $F \in BV([a,b])$ (by the [[§18 Differentiation Theory#^thm-18-8|Total Variation Theorem]]), hence $F$ is differentiable a.e. (by [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's theorem]]; [[§18a Lebesgue's Differentiation Theorem#^cor-18-10|§18.10]]). Where $F'(x)$ exists, it must equal $f(x)$ (since the subsequential limit $f(x)$ is the only possible limit). Therefore $F'(x) = f(x)$ a.e.
 
 ^pf-18-26
 
-*Uses:* [[§18 Differentiation Theory#^lem-18-25|§18.25]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|§19.17]], [[§18 Differentiation Theory#^thm-18-8|§18.8]], [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18 Differentiation Theory#^cor-18-10|§18.10]]
+*Uses:* [[§18b Differentiating the Integral#^lem-18-25|§18.25]], [[§19a Lᵖ as a Banach Space#^cor-19-17|§19.17]], [[§18 Differentiation Theory#^thm-18-8|§18.8]], [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18a Lebesgue's Differentiation Theorem#^cor-18-10|§18.10]]
 
 > [!remark]- Connections
 > - MATH 451 counterpart: FTC II ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) gives $F'(x_0) = f(x_0)$ at every point where $f$ is continuous; here continuity is dropped at the cost of “a.e.”.
-> - Completes the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] (§18.13).
+> - Completes the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] ([[§18c Absolute Continuity and the FTC#^thm-18-13|§18.13]]).
 
 > [!definition] Definition §18.5: Lebesgue Point
 > Let $f \in L(\mathbb{R})$ and define $F(x) = \int_a^x f(t)\,dt$. A point $x_0$ is called a **Lebesgue point** of $f$ if $F'(x_0)$ exists and $F'(x_0) = f(x_0)$, i.e.:
@@ -188,9 +188,9 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 > \lim_{h \to 0} \frac{1}{h}\int_0^h f(x_0 + t)\,dt = f(x_0).
 > $$
 >
-> [[§18 Differentiation Theory#^thm-18-26|The theorem above]] shows that a.e. point is a Lebesgue point of $f$. (This is weaker than the standard notion of a Lebesgue point, which asks that $\lim_{h \to 0} \frac{1}{2h}\int_{-h}^{h} |f(x_0 + t) - f(x_0)|\,dt = 0$; that stronger property also holds at a.e. point, but it is not needed here.)
+> [[§18b Differentiating the Integral#^thm-18-26|The theorem above]] shows that a.e. point is a Lebesgue point of $f$. (This is weaker than the standard notion of a Lebesgue point, which asks that $\lim_{h \to 0} \frac{1}{2h}\int_{-h}^{h} |f(x_0 + t) - f(x_0)|\,dt = 0$; that stronger property also holds at a.e. point, but it is not needed here.)
 
 ^def-18-5
 
 ![[m551-18-7.svg]]
-*Averages over shrinking windows. With $F_h(x_0) = \frac1h\int_0^h f(x_0 + t)\,dt$ as in the [[§18 Differentiation Theory#^lem-18-25|Averaging Lemma]], the average height of $f$ (blue) over $[x_0, x_0 + h]$ is the dashed level, and over the shorter window $[x_0, x_0 + h']$ it is the red one. Each average is a difference quotient of the integral function, so $x_0$ is a Lebesgue point exactly when these averages tend to $f(x_0)$ as the window shrinks; by [[§18 Differentiation Theory#^thm-18-26|Theorem §18.26]] this happens at a.e. $x_0$.*
+*Averages over shrinking windows. With $F_h(x_0) = \frac1h\int_0^h f(x_0 + t)\,dt$ as in the [[§18b Differentiating the Integral#^lem-18-25|Averaging Lemma]], the average height of $f$ (blue) over $[x_0, x_0 + h]$ is the dashed level, and over the shorter window $[x_0, x_0 + h']$ it is the red one. Each average is a difference quotient of the integral function, so $x_0$ is a Lebesgue point exactly when these averages tend to $f(x_0)$ as the window shrinks; by [[§18b Differentiating the Integral#^thm-18-26|Theorem §18.26]] this happens at a.e. $x_0$.*

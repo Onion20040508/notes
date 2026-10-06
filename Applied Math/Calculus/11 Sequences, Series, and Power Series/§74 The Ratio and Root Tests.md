@@ -111,7 +111,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 >
 > For $a_n = 1/n^2$: $\displaystyle\left| \frac{a_{n+1}}{a_n} \right| = \frac{1/(n+1)^2}{1/n^2} = \left( \frac{n}{n+1} \right)^2 \to 1$.
 >
-> In both cases the Ratio Test gives no answer. The first series is the harmonic series, which diverges; the second is a $p$-series with $p > 1$, which converges. So a ratio limit of $1$ is compatible with either behavior, which proves part (iii). The Ratio Test always fails for $p$-series, and is usually conclusive when $a_n$ contains an exponential or a factorial, as in [[§74 The Ratio and Root Tests#^ex-74-1|Examples §74.1]] and §74.2.
+> In both cases the Ratio Test gives no answer. The first series is the harmonic series, which diverges; the second is a $p$-series with $p > 1$, which converges. So a ratio limit of $1$ is compatible with either behavior, which proves part (iii). The Ratio Test always fails for $p$-series, and is usually conclusive when $a_n$ contains an exponential or a factorial, as in [[§74 The Ratio and Root Tests#^ex-74-1|Examples §74.1]] and [[§74 The Ratio and Root Tests#^ex-74-2|§74.2]].
 >
 > *Stewart: Example 11.6.3*
 

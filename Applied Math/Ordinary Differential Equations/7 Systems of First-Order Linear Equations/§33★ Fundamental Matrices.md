@@ -404,7 +404,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 >
 > and multiplying on the left by $\mathbf{T}^{-1}$ gives (32). The eigenvalues of $\mathbf{D}$ are its diagonal entries $\lambda_1, \ldots, \lambda_n$, those of $\mathbf{A}$. Finally $\mathbf{T}\mathbf{e}^{(k)} = \boldsymbol{\xi}^{(k)}$, so $\mathbf{T}^{-1}\boldsymbol{\xi}^{(k)} = \mathbf{e}^{(k)}$.
 >
-> **(b)** (BDP: "it is easy to verify"; here is the verification.) With the inner product $(\mathbf{x}, \mathbf{y}) = \sum_k x_k\overline{y_k}$ of [[§28 Matrices#^def-28-3|Definition §28.3]],
+> **(b)** (BDP: "it is easy to verify"; here is the verification.) With the inner product $(\mathbf{x}, \mathbf{y}) = \sum_k x_k\overline{y_k}$ of [[§28 Matrices#^def-28-new2|Definition §28.3]],
 >
 > $$
 > (\mathbf{T}^*\mathbf{T})_{ij} = \sum_{k=1}^n \overline{T_{ki}}\,T_{kj} = \sum_{k=1}^n \xi_k^{(j)}\,\overline{\xi_k^{(i)}} = (\boldsymbol{\xi}^{(j)}, \boldsymbol{\xi}^{(i)}) = \begin{cases} 1, & i = j, \\ 0, & i \ne j. \end{cases}
@@ -416,7 +416,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 
 ^pf-33-7
 
-*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|§29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]], [[§28 Matrices#^def-28-3|Def. §28.3]] (inner product)
+*Uses:* [[§33★ Fundamental Matrices#^def-33-4|Def. §33.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|§29.4]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|§29.5]], [[§28 Matrices#^def-28-new2|Def. §28.3]] (inner product)
 
 > [!remark]- Connections
 > - The same theorem in Lay: [[§34 Diagonalization#^thm-34-1|235 Thm. §34.1]] (written $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$, with $\mathbf{P} = \mathbf{T}$); rigorous operator form, [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]].

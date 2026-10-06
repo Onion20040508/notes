@@ -182,7 +182,7 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 > [!remark] Remark: Method — Computing a Flux Integral
 > 1. **Parametrize $S$** (graph, cylindrical or spherical coordinates, plane) and find the parameter domain $D$. For a closed or piecewise-smooth surface, list the pieces.
 > 2. **Compute the normal** $\mathbf{r}_u \times \mathbf{r}_v$ (for a graph $z = g$, simply $\langle -g_x, -g_y, 1 \rangle$).
-> 3. **Check the orientation** at one convenient point: upward or downward, outward or inward (closed surfaces: outward, [[§113a Oriented Surfaces and Flux#^def-113-6|Definition §113.6]]). If it is wrong, change the sign.
+> 3. **Check the orientation** at one convenient point: upward or downward, outward or inward (closed surfaces: outward, [[§113a Oriented Surfaces and Flux#^def-113-new2|Definition §113.7]]). If it is wrong, change the sign.
 > 4. **Substitute** the parametrization into $\mathbf{F}$, dot with the normal, and integrate over $D$ (Formula 9 or 10). For a vertical normal on a horizontal piece, $\mathbf{F} \cdot (\pm\mathbf{k}) = \pm R$; for a sphere of radius $a$, the unit normal is $\mathbf{x}/a$.
 > 5. **Look for shortcuts**: if $S$ is closed, the Divergence Theorem ([[§115 The Divergence Theorem#^thm-115-1|Theorem §115.1]]) may be easier; if $\mathbf{F}$ is a curl, Stokes' Theorem ([[§114 Stokes' Theorem#^thm-114-1|Theorem §114.1]]) lets you change the surface.
 

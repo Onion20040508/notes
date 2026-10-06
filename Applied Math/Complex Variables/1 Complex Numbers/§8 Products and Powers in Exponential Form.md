@@ -61,7 +61,7 @@ The addition formulas of trigonometry say exactly that $e^{i\theta_1}e^{i\theta_
 
 ^pf-8-1
 
-*Uses:* [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas), [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§3 Further Algebraic Properties#^prop-3-3|§3.3]]
+*Uses:* [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas), [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§3 Further Algebraic Properties#^prop-3-3|§3.3]]
 
 > [!remark]- Connections
 > - The same theorem in the computational treatment: [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]]; in matrix form, multiplication by $re^{i\theta}$ is $r$ times the rotation matrix through $\theta$, [[§53 Complex Numbers#^rem-53-3|235 Remark: Complex Numbers as 2 × 2 Matrices]].

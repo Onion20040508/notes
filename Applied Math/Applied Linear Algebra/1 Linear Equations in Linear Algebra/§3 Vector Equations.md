@@ -122,7 +122,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 > \mathbf{y} = c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p
 > $$
 >
-> is a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ with **weights** $c_1, \ldots, c_p$. Property (ii) of Theorem §3.2 allows the parentheses to be omitted. The weights can be any real numbers, including zero: $\sqrt3\,\mathbf{v}_1 + \mathbf{v}_2$, $\tfrac12\mathbf{v}_1$ ($= \tfrac12\mathbf{v}_1 + 0\mathbf{v}_2$) and $\mathbf{0}$ ($= 0\mathbf{v}_1 + 0\mathbf{v}_2$) are linear combinations of $\mathbf{v}_1$ and $\mathbf{v}_2$.
+> is a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ with **weights** $c_1, \ldots, c_p$. Property (ii) of [[§3 Vector Equations#^thm-3-2|Theorem §3.2]] allows the parentheses to be omitted. The weights can be any real numbers, including zero: $\sqrt3\,\mathbf{v}_1 + \mathbf{v}_2$, $\tfrac12\mathbf{v}_1$ ($= \tfrac12\mathbf{v}_1 + 0\mathbf{v}_2$) and $\mathbf{0}$ ($= 0\mathbf{v}_1 + 0\mathbf{v}_2$) are linear combinations of $\mathbf{v}_1$ and $\mathbf{v}_2$.
 >
 > *Lay: 1.3 (text)*
 
@@ -153,7 +153,7 @@ Geometrically, $c_1\mathbf{v}_1 + c_2\mathbf{v}_2$ gives instructions for travel
 ^thm-3-3
 
 > [!proof]+ Proof
-> Let $\mathbf{a}_j$ have entries $a_{1j}, \ldots, a_{mj}$ and $\mathbf{b}$ have entries $b_1, \ldots, b_m$. By the definitions of scalar multiplication and addition (Definition §3.2), the left side of the vector equation is the vector whose $i$th entry is $a_{i1}x_1 + a_{i2}x_2 + \cdots + a_{in}x_n$. Two vectors are equal exactly when their corresponding entries are equal, so $(x_1, \ldots, x_n)$ satisfies the vector equation if and only if
+> Let $\mathbf{a}_j$ have entries $a_{1j}, \ldots, a_{mj}$ and $\mathbf{b}$ have entries $b_1, \ldots, b_m$. By the definitions of scalar multiplication and addition ([[§3 Vector Equations#^def-3-2|Definition §3.2]]), the left side of the vector equation is the vector whose $i$th entry is $a_{i1}x_1 + a_{i2}x_2 + \cdots + a_{in}x_n$. Two vectors are equal exactly when their corresponding entries are equal, so $(x_1, \ldots, x_n)$ satisfies the vector equation if and only if
 >
 > $$
 > a_{i1}x_1 + a_{i2}x_2 + \cdots + a_{in}x_n = b_i \qquad (i = 1, \ldots, m),
@@ -163,7 +163,7 @@ Geometrically, $c_1\mathbf{v}_1 + c_2\mathbf{v}_2$ gives instructions for travel
 
 ^pf-3-3
 
-*Uses:* [[§3 Vector Equations#^def-3-1|Def. §3.1]], [[§3 Vector Equations#^def-3-2|Def. §3.2]], [[§1 Systems of Linear Equations#^def-1-4|Def. §1.4]]
+*Uses:* [[§3 Vector Equations#^def-3-1|Def. §3.1]], [[§3 Vector Equations#^def-3-2|Def. §3.2]], [[§1 Systems of Linear Equations#^def-1-new3|Def. §1.4]]
 
 The augmented matrix can be written down at once: put the vectors into the columns in the order in which they appear in the vector equation.
 
@@ -180,7 +180,7 @@ The augmented matrix can be written down at once: put the vectors into the colum
 
 ^def-3-4
 
-By Theorem §3.3, asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ amounts to asking whether the vector equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{b}$ has a solution, or equivalently whether the linear system with augmented matrix $[\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\ \ \mathbf{b}\,]$ is consistent. The span contains every scalar multiple of each $\mathbf{v}_j$ (for example $c\mathbf{v}_1 = c\mathbf{v}_1 + 0\mathbf{v}_2 + \cdots + 0\mathbf{v}_p$), and in particular it contains $\mathbf{0}$.
+By [[§3 Vector Equations#^thm-3-3|Theorem §3.3]], asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ amounts to asking whether the vector equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{b}$ has a solution, or equivalently whether the linear system with augmented matrix $[\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\ \ \mathbf{b}\,]$ is consistent. The span contains every scalar multiple of each $\mathbf{v}_j$ (for example $c\mathbf{v}_1 = c\mathbf{v}_1 + 0\mathbf{v}_2 + \cdots + 0\mathbf{v}_p$), and in particular it contains $\mathbf{0}$.
 
 > [!theorem] Proposition §3.4: Sums and Multiples Stay in the Span
 > If $\mathbf{u}$ and $\mathbf{v}$ are in $\operatorname{Span}\{\mathbf{w}_1, \ldots, \mathbf{w}_p\}$, then so are $\mathbf{u} + \mathbf{v}$ and $c\mathbf{u}$ for every scalar $c$.
@@ -190,7 +190,7 @@ By Theorem §3.3, asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathb
 ^prop-3-4
 
 > [!proof]+ Proof
-> By Definition §3.4 there are scalars $c_1, \ldots, c_p$ and $d_1, \ldots, d_p$ with $\mathbf{u} = c_1\mathbf{w}_1 + \cdots + c_p\mathbf{w}_p$ and $\mathbf{v} = d_1\mathbf{w}_1 + \cdots + d_p\mathbf{w}_p$. Regrouping by the algebraic properties of $\mathbb{R}^n$ (commutativity, associativity and property (vi)),
+> By [[§3 Vector Equations#^def-3-4|Definition §3.4]] there are scalars $c_1, \ldots, c_p$ and $d_1, \ldots, d_p$ with $\mathbf{u} = c_1\mathbf{w}_1 + \cdots + c_p\mathbf{w}_p$ and $\mathbf{v} = d_1\mathbf{w}_1 + \cdots + d_p\mathbf{w}_p$. Regrouping by the algebraic properties of $\mathbb{R}^n$ (commutativity, associativity and property (vi)),
 >
 > $$
 > \mathbf{u} + \mathbf{v} = (c_1 + d_1)\mathbf{w}_1 + \cdots + (c_p + d_p)\mathbf{w}_p ,
@@ -262,7 +262,7 @@ These two closure properties are what will make every span a *subspace* ([[§18 
 > \mathbf{b} = 1 \cdot \mathbf{v}_1 + 2\mathbf{v}_2 \quad (\ast), \qquad \mathbf{b} = 2\mathbf{v}_3 \quad (\ast\ast),
 > $$
 >
-> so $\mathbf{b}$ is a linear combination of $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ in at least two ways: $1\mathbf{v}_1 + 2\mathbf{v}_2 + 0\mathbf{v}_3$ and $0\mathbf{v}_1 + 0\mathbf{v}_2 + 2\mathbf{v}_3$. Mixing them gives more: $\tfrac13(\ast) + \tfrac23(\ast\ast)$ yields $\big(\tfrac13 + \tfrac23\big)\mathbf{b} = \mathbf{b} = \tfrac13\mathbf{v}_1 + \tfrac23\mathbf{v}_2 + \tfrac43\mathbf{v}_3$. **Check:** $\tfrac13 + \tfrac13 + \tfrac43 = 2$ and $\tfrac13 + 0 + \tfrac23 = 1$. In terms of Theorem §3.3: the system with augmented matrix $[\,\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3\ \mathbf{b}\,]$ has 2 equations and 3 unknowns, so it has a free variable and, being consistent, infinitely many solutions. Uniqueness of weights is the subject of [[§7 Linear Independence|§7]].
+> so $\mathbf{b}$ is a linear combination of $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$ in at least two ways: $1\mathbf{v}_1 + 2\mathbf{v}_2 + 0\mathbf{v}_3$ and $0\mathbf{v}_1 + 0\mathbf{v}_2 + 2\mathbf{v}_3$. Mixing them gives more: $\tfrac13(\ast) + \tfrac23(\ast\ast)$ yields $\big(\tfrac13 + \tfrac23\big)\mathbf{b} = \mathbf{b} = \tfrac13\mathbf{v}_1 + \tfrac23\mathbf{v}_2 + \tfrac43\mathbf{v}_3$. **Check:** $\tfrac13 + \tfrac13 + \tfrac43 = 2$ and $\tfrac13 + 0 + \tfrac23 = 1$. In terms of [[§3 Vector Equations#^thm-3-3|Theorem §3.3]]: the system with augmented matrix $[\,\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3\ \mathbf{b}\,]$ has 2 equations and 3 unknowns, so it has a free variable and, being consistent, infinitely many solutions. Uniqueness of weights is the subject of [[§7 Linear Independence|§7]].
 >
 > *The lecture writes the weight of $\mathbf{v}_3$ in the mixed combination as $\tfrac23$; it is $\tfrac23 \cdot 2 = \tfrac43$, as the check confirms.*
 >

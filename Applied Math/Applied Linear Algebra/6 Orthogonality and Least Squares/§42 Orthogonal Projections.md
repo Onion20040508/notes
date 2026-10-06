@@ -79,7 +79,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]]
 
 > [!definition] Definition §42.1: Orthogonal Projection onto a Subspace
-> The vector $\hat{\mathbf{y}}$ in (1) is the **orthogonal projection of $\mathbf{y}$ onto $W$**, written $\operatorname{proj}_W \mathbf{y}$. By the uniqueness in Theorem §42.1 it depends only on $W$, not on the orthogonal basis used in (2). When $W$ is one-dimensional, (2) has one term and agrees with [[§41 Orthogonal Sets#^def-41-3|Definition §41.3]].
+> The vector $\hat{\mathbf{y}}$ in (1) is the **orthogonal projection of $\mathbf{y}$ onto $W$**, written $\operatorname{proj}_W \mathbf{y}$. By the uniqueness in [[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]] it depends only on $W$, not on the orthogonal basis used in (2). When $W$ is one-dimensional, (2) has one term and agrees with [[§41 Orthogonal Sets#^def-41-3|Definition §41.3]].
 >
 > *Lay: 6.3 (text)*
 
@@ -108,13 +108,13 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > \mathbf{y} - \hat{\mathbf{y}} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} - \begin{bmatrix} -2/5 \\ 2 \\ 1/5 \end{bmatrix} = \begin{bmatrix} 7/5 \\ 0 \\ 14/5 \end{bmatrix} .
 > $$
 >
-> Theorem §42.1 guarantees $\mathbf{y} - \hat{\mathbf{y}} \in W^\perp$; as a check on the arithmetic, $(\mathbf{y} - \hat{\mathbf{y}}) \cdot \mathbf{u}_1 = \frac{14}{5} + 0 - \frac{14}{5} = 0$ and $(\mathbf{y} - \hat{\mathbf{y}}) \cdot \mathbf{u}_2 = -\frac{14}{5} + 0 + \frac{14}{5} = 0$. The decomposition is
+> [[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]] guarantees $\mathbf{y} - \hat{\mathbf{y}} \in W^\perp$; as a check on the arithmetic, $(\mathbf{y} - \hat{\mathbf{y}}) \cdot \mathbf{u}_1 = \frac{14}{5} + 0 - \frac{14}{5} = 0$ and $(\mathbf{y} - \hat{\mathbf{y}}) \cdot \mathbf{u}_2 = -\frac{14}{5} + 0 + \frac{14}{5} = 0$. The decomposition is
 >
 > $$
 > \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} = \begin{bmatrix} -2/5 \\ 2 \\ 1/5 \end{bmatrix} + \begin{bmatrix} 7/5 \\ 0 \\ 14/5 \end{bmatrix},
 > $$
 >
-> and by the Best Approximation Theorem (Theorem §42.3 below) $\hat{\mathbf{y}} = (-\frac25, 2, \frac15)$ is the point of $W$ closest to $\mathbf{y}$.
+> and by the Best Approximation Theorem ([[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]] below) $\hat{\mathbf{y}} = (-\frac25, 2, \frac15)$ is the point of $W$ closest to $\mathbf{y}$.
 >
 > *Lay: Examples 6.3.2 and 6.3.3*
 
@@ -135,7 +135,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 ^prop-42-2
 
 > [!proof]+ Proof
-> $\mathbf{y} = \mathbf{y} + \mathbf{0}$ is a decomposition with $\mathbf{y} \in W$ and $\mathbf{0} \in W^\perp$. By the uniqueness in Theorem §42.1, $\operatorname{proj}_W \mathbf{y} = \mathbf{y}$. (Equivalently: for an orthogonal basis $\{\mathbf{u}_j\}$ of $W$, formula (2) is exactly the expansion of $\mathbf{y}$ in [[§41 Orthogonal Sets#^thm-41-2|Theorem §41.2]].)
+> $\mathbf{y} = \mathbf{y} + \mathbf{0}$ is a decomposition with $\mathbf{y} \in W$ and $\mathbf{0} \in W^\perp$. By the uniqueness in [[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]], $\operatorname{proj}_W \mathbf{y} = \mathbf{y}$. (Equivalently: for an orthogonal basis $\{\mathbf{u}_j\}$ of $W$, formula (2) is exactly the expansion of $\mathbf{y}$ in [[§41 Orthogonal Sets#^thm-41-2|Theorem §41.2]].)
 
 ^pf-42-2
 
@@ -152,7 +152,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > \operatorname{proj}_W \mathbf{y} = \frac{88}{66}\mathbf{u}_1 - \frac{2}{6}\mathbf{u}_2 = \frac43\begin{bmatrix} -7 \\ 1 \\ 4 \end{bmatrix} - \frac13\begin{bmatrix} -1 \\ 1 \\ -2 \end{bmatrix} = \frac13\begin{bmatrix} -28 + 1 \\ 4 - 1 \\ 16 + 2 \end{bmatrix} = \begin{bmatrix} -9 \\ 1 \\ 6 \end{bmatrix} = \mathbf{y} .
 > $$
 >
-> So $\mathbf{y}$ happens to be the combination $\frac43\mathbf{u}_1 - \frac13\mathbf{u}_2$ of the basis, $\mathbf{y} \in W$, and the closest point of $W$ to $\mathbf{y}$ is $\mathbf{y}$ itself (Proposition §42.2).
+> So $\mathbf{y}$ happens to be the combination $\frac43\mathbf{u}_1 - \frac13\mathbf{u}_2$ of the basis, $\mathbf{y} \in W$, and the closest point of $W$ to $\mathbf{y}$ is $\mathbf{y}$ itself ([[§42 Orthogonal Projections#^prop-42-2|Proposition §42.2]]).
 >
 > *Lay: 6.3, Practice Problem 1*
 
@@ -191,12 +191,12 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 *Uses:* [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]]
 
 ![[m235-42-1.svg]]
-*The orthogonal projection $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ onto a plane $W$ through $\mathbf{0}$. The component $\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}}$ (red) is orthogonal to $W$ (Theorem §42.1). For any other $\mathbf{v} \in W$, the triangle $\mathbf{y}, \hat{\mathbf{y}}, \mathbf{v}$ has a right angle at $\hat{\mathbf{y}}$, so its hypotenuse $\|\mathbf{y} - \mathbf{v}\|$ is longer than the leg $\|\mathbf{y} - \hat{\mathbf{y}}\|$ (Theorem §42.3).*
+*The orthogonal projection $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ onto a plane $W$ through $\mathbf{0}$. The component $\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}}$ (red) is orthogonal to $W$ ([[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]]). For any other $\mathbf{v} \in W$, the triangle $\mathbf{y}, \hat{\mathbf{y}}, \mathbf{v}$ has a right angle at $\hat{\mathbf{y}}$, so its hypotenuse $\|\mathbf{y} - \mathbf{v}\|$ is longer than the leg $\|\mathbf{y} - \hat{\mathbf{y}}\|$ ([[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]]).*
 
-> [!definition] Definition §42.2: Best Approximation; Distance to a Subspace
-> The vector $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ is called the **best approximation to $\mathbf{y}$ by elements of $W$**. The **distance from a point $\mathbf{y}$ in $\mathbb{R}^n$ to a subspace $W$** is the distance from $\mathbf{y}$ to the nearest point in $W$; by Theorem §42.3 it equals $\|\mathbf{y} - \operatorname{proj}_W \mathbf{y}\|$.
+> [!definition] Definition §42.2: Best Approximation
+> The vector $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ is called the **best approximation to $\mathbf{y}$ by elements of $W$**.
 >
-> Thinking of $\|\mathbf{y} - \mathbf{v}\|$ as the "error" of using $\mathbf{v}$ in place of $\mathbf{y}$, Theorem §42.3 says that the error is smallest exactly for $\mathbf{v} = \hat{\mathbf{y}}$. This also gives a second proof that $\hat{\mathbf{y}}$ does not depend on the orthogonal basis used to compute it: whichever basis is used, the result is the unique closest point of $W$ to $\mathbf{y}$.
+> Thinking of $\|\mathbf{y} - \mathbf{v}\|$ as the "error" of using $\mathbf{v}$ in place of $\mathbf{y}$, [[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]] says that the error is smallest exactly for $\mathbf{v} = \hat{\mathbf{y}}$. This also gives a second proof that $\hat{\mathbf{y}}$ does not depend on the orthogonal basis used to compute it: whichever basis is used, the result is the unique closest point of $W$ to $\mathbf{y}$.
 >
 > *Lay: 6.3 (text); Example 6.3.4*
 
@@ -206,6 +206,13 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > - Rigorous treatment: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] ($\|v - P_Uv\| \le \|v - u\|$, with equality only for $u = P_Uv$; same Pythagorean proof).
 > - For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§22 Projection and Orthogonal Decomposition#^thm-22-2|556 Thm. §22.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
 > - Fourier version: for the integral inner product of [[§46 Inner Product Spaces|§46]], the truncated Fourier series is the best mean-square approximation by [[§47 Applications of Inner Product Spaces#^def-47-3|trigonometric polynomials]], [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]].
+
+> [!definition] Definition §42.2: Distance to a Subspace
+> The **distance from a point $\mathbf{y}$ in $\mathbb{R}^n$ to a subspace $W$** is the distance from $\mathbf{y}$ to the nearest point in $W$; by [[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]] it equals $\|\mathbf{y} - \operatorname{proj}_W \mathbf{y}\|$.
+>
+> *Lay: 6.3 (text); Example 6.3.4*
+
+^def-42-new1
 
 > [!example] Example §42.4: The Distance from a Point to a Plane
 > Find the distance from $\mathbf{y}$ to $W = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$, where
@@ -221,7 +228,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > \mathbf{y} - \hat{\mathbf{y}} = \begin{bmatrix} -1 \\ -5 \\ 10 \end{bmatrix} - \begin{bmatrix} -1 \\ -8 \\ 4 \end{bmatrix} = \begin{bmatrix} 0 \\ 3 \\ 6 \end{bmatrix} .
 > $$
 >
-> By Theorem §42.3 the distance is $\|\mathbf{y} - \hat{\mathbf{y}}\| = \sqrt{0 + 9 + 36} = \sqrt{45} = 3\sqrt5$.
+> By [[§42 Orthogonal Projections#^thm-42-3|Theorem §42.3]] the distance is $\|\mathbf{y} - \hat{\mathbf{y}}\| = \sqrt{0 + 9 + 36} = \sqrt{45} = 3\sqrt5$.
 >
 > *Lay: Example 6.3.4*
 
@@ -255,8 +262,8 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > Let $U$ be an $n \times p$ matrix with orthonormal columns and $W = \operatorname{Col} U$. Then
 >
 > $$
-> U^TU\mathbf{x} = I_p\mathbf{x} = \mathbf{x} \ \text{ for all } \mathbf{x} \in \mathbb{R}^p \quad \text{(Theorem §41.4)}, \qquad
-> UU^T\mathbf{y} = \operatorname{proj}_W \mathbf{y} \ \text{ for all } \mathbf{y} \in \mathbb{R}^n \quad \text{(Theorem §42.4)} .
+> U^TU\mathbf{x} = I_p\mathbf{x} = \mathbf{x} \ \text{ for all } \mathbf{x} \in \mathbb{R}^p \quad \text{([[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4]])}, \qquad
+> UU^T\mathbf{y} = \operatorname{proj}_W \mathbf{y} \ \text{ for all } \mathbf{y} \in \mathbb{R}^n \quad \text{([[§42 Orthogonal Projections#^thm-42-4|Theorem §42.4]])} .
 > $$
 >
 > The $n \times n$ matrix $UU^T$ is the identity only when $p = n$: then $U$ is an orthogonal matrix, $W = \mathbb{R}^n$, and $UU^T\mathbf{y} = \mathbf{y}$. Formula (5) also shows that $\mathbf{y} \mapsto \operatorname{proj}_W \mathbf{y}$ is a linear transformation: $\operatorname{proj}_W(\mathbf{x} + \mathbf{y}) = UU^T\mathbf{x} + UU^T\mathbf{y} = \operatorname{proj}_W \mathbf{x} + \operatorname{proj}_W \mathbf{y}$ (Lay's Practice Problem 2), and similarly for scalar multiples. Formula (4) is important in theory, but its unit vectors usually carry square roots; for hand calculations Lay recommends formula (2) with an orthogonal basis.

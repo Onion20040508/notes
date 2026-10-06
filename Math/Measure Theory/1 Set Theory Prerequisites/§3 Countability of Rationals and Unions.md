@@ -50,7 +50,9 @@ tags: [measure-theory, math551]
 *Uses:* [[§3 Countability of Rationals and Unions#^prop-3-1|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]]
 
 ![[m551-3-1.svg]]
-*The first proof in a picture: row $n$ is $A_n = \{\tfrac mn : m \in \mathbb{N}\}$, and $\mathbb{Q}_+ = \bigcup_n A_n$. Walking the diagonals (red) as in Example §1.3 reaches every entry, so every positive rational gets listed; grey entries such as $\tfrac22 = \tfrac11$ are repeats and are simply skipped. Allowing repeats is exactly why a *surjection* $\mathbb{N} \times \mathbb{N} \to \mathbb{Q}_+$ is enough.*
+*The first proof in a picture: row $n$ is $A_n = \{\tfrac mn : m \in \mathbb{N}\}$, and $\mathbb{Q}_+ = \bigcup_n A_n$. Walking the diagonals (red) as in [[§1 Countability and Set Theory#^ex-1-3|Example §1.3]] reaches every entry, so every positive rational gets listed; grey entries such as $\tfrac22 = \tfrac11$ are repeats and are simply skipped. Allowing repeats is exactly why a *surjection* $\mathbb{N} \times \mathbb{N} \to \mathbb{Q}_+$ is enough.*
 
 > [!remark]- Connections
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
+
+*Chain:* [[§8a The Rationals ℚ|Chapter 2]] →

@@ -143,7 +143,7 @@ Curvature is the rate at which the unit tangent vector turns per unit of arc len
 >
 > At $(0, 0)$, $\kappa = 2$; at $(1, 1)$, $\kappa = 2/5^{3/2} \approx 0.18$; at $(2, 4)$, $\kappa = 2/17^{3/2} \approx 0.03$. As $x \to \pm\infty$, $\kappa(x) \to 0$: the parabola becomes nearly straight.
 >
-> **(d)** *The osculating circle of $y = x^2$ at the origin* ([[§88a Curvature, the TNB Frame and Torsion#^def-88-6|Definition §88.6]] below). By (c) its radius is $1/\kappa(0) = \frac12$. The tangent at the origin is horizontal, so $\mathbf{N} = \langle 0, 1 \rangle$ points up into the parabola, and the center of curvature is $\big(0, \frac12\big)$. The osculating circle is $x^2 + \big(y - \frac12\big)^2 = \frac14$.
+> **(d)** *The osculating circle of $y = x^2$ at the origin* ([[§88a Curvature, the TNB Frame and Torsion#^def-88-new3|Definition §88.8]] below). By (c) its radius is $1/\kappa(0) = \frac12$. The tangent at the origin is horizontal, so $\mathbf{N} = \langle 0, 1 \rangle$ points up into the parabola, and the center of curvature is $\big(0, \frac12\big)$. The osculating circle is $x^2 + \big(y - \frac12\big)^2 = \frac14$.
 >
 > *Stewart: Examples 13.3.3, 13.3.4, 13.3.5 and 13.3.9*
 

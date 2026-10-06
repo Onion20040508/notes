@@ -159,12 +159,19 @@ The nonhomogeneous system (2) is tied to (3) as for a single equation: the diffe
 
 *Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (existence and uniqueness)
 
-> [!definition] Definition §30.3: Fundamental Set of Solutions; General Solution
-> Any set of solutions $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ of (3) that is linearly independent at each point of $\alpha < t < \beta$ is a **fundamental set of solutions** on that interval. For a fundamental set, the expression (11) with arbitrary constants $c_1, \ldots, c_n$ contains every solution of (3) ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]]), and only solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]]); it is called the **general solution** of (3).
+> [!definition] Definition §30.3: Fundamental Set of Solutions
+> Any set of solutions $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ of (3) that is linearly independent at each point of $\alpha < t < \beta$ is a **fundamental set of solutions** on that interval.
 >
 > *BDP: 7.4 (text)*
 
 ^def-30-3
+
+> [!definition] Definition §30.3: General Solution
+> Let $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ be a fundamental set of solutions of (3) ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]). For a fundamental set, the expression (11) with arbitrary constants $c_1, \ldots, c_n$ contains every solution of (3) ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]]), and only solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]]); it is called the **general solution** of (3).
+>
+> *BDP: 7.4 (text)*
+
+^def-30-new1
 
 > [!remark]- Connections
 > - Theorems [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]] and [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|§30.2]] say that the solutions of (3) form an $n$-dimensional vector space, with a fundamental set as a basis: the map $\mathbf{x} \mapsto \mathbf{x}(t_0)$ is a linear bijection onto $\mathbb{R}^n$ (or $\mathbb{C}^n$), an isomorphism in the sense of [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], so the dimension is $n$ by [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]. Lay states this without proof for constant $A$ ([[§38 Applications to Differential Equations|235 §38]], after [[§38 Applications to Differential Equations#^prop-38-1|235 Prop. §38.1]]); this section is its proof.

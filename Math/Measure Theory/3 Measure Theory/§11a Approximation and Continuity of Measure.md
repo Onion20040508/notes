@@ -79,7 +79,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 ^pf-11-8
 
-*Uses:* [[§9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[§11 Borel Sets and Measure Spaces#^thm-11-6|§11.6]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]]
+*Uses:* [[§9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[§11 Borel Sets and Measure Spaces#^thm-11-6|§11.6]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§11a Approximation and Continuity of Measure#^def-11-8|Def. §11.8]]
 
 > [!theorem] Proposition §11.9: Outer Approximation of Arbitrary Sets
 > Let $A \subseteq \mathbb{R}^n$. Then there exists a $G_\delta$ set $H$ with $H \supseteq A$ and $m^*(A) = m(H)$.
@@ -105,7 +105,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 ^thm-11-10
 
 ![[m551-11-2.svg]]
-*Regularity of Lebesgue measure: a measurable $E$ (black outline) is squeezed between a closed $F \subseteq E$ (blue) and an open $G \supseteq E$ (dashed red), with both shells $E \setminus F$ (orange) and $G \setminus E$ (red) of measure $< \epsilon$ (Theorems §11.8 and §11.10, part 1). The inner half comes from the outer one by complements: the proof takes an open set containing $E^c$ and lets $F$ be its complement.*
+*Regularity of Lebesgue measure: a measurable $E$ (black outline) is squeezed between a closed $F \subseteq E$ (blue) and an open $G \supseteq E$ (dashed red), with both shells $E \setminus F$ (orange) and $G \setminus E$ (red) of measure $< \epsilon$ ([[§11a Approximation and Continuity of Measure#^thm-11-8|Theorems §11.8]] and [[§11a Approximation and Continuity of Measure#^thm-11-10|§11.10]], part 1). The inner half comes from the outer one by complements: the proof takes an open set containing $E^c$ and lets $F$ be its complement.*
 
 > [!proof]+ Proof
 > **(1)** Since $E \in \mathcal{M}$, we have $E^c \in \mathcal{M}$. By the outer approximation theorem ([[Outer Regularity of Lebesgue Measure|Thm. §11.8]] (1)), there exists an open set $G \supseteq E^c$ with $m(G \setminus E^c) < \epsilon$.
@@ -130,10 +130,10 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 ^pf-11-10
 
-*Uses:* [[§10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[§5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§11 Borel Sets and Measure Spaces#^def-11-new1|Def. §11.9]]
+*Uses:* [[§10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[§5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§11a Approximation and Continuity of Measure#^def-11-new1|Def. §11.9]]
 
 > [!remark]- Connections
-> - Inner approximation by closed sets drives [[Lusin's Theorem|Lusin's Theorem]] (§13.3).
+> - Inner approximation by closed sets drives [[Lusin's Theorem|Lusin's Theorem]] ([[§13 Egorov's and Lusin's Theorems#^thm-13-3|§13.3]]).
 
 ## Continuity of Measure
 
@@ -172,7 +172,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 *Uses:* [[§10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§10 Lebesgue Measurable Sets#^lem-10-2|§10.2]]
 
 > [!remark]- Connections
-> - Integral analogues: [[§14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5]] (integral over increasing sets) and the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] (§14.4).
+> - Integral analogues: [[§14 The Lebesgue Integral for Simple Functions#^lem-14-5|Lemma §14.5]] (integral over increasing sets) and the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] ([[§14 The Lebesgue Integral for Simple Functions#^thm-14-4|§14.4]]).
 
 > [!theorem] Proposition §11.13: Continuity of Measure from Above
 > Let $E_1 \supseteq E_2 \supseteq \cdots$ be measurable sets with $m(E_1) < \infty$. Then
@@ -203,7 +203,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 *Uses:* [[Continuity of Measure|§11.12]], [[§10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!remark]- Connections
-> - Used in [[Egorov's Theorem|Egorov's Theorem]] (§13.1); integral analogue: [[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|decreasing MCT]] (§14.14).
+> - Used in [[Egorov's Theorem|Egorov's Theorem]] ([[§13 Egorov's and Lusin's Theorems#^thm-13-1|§13.1]]); integral analogue: [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|decreasing MCT]] ([[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|§14.14]]).
 
 > [!remark] Remark
 > The hypothesis $m(E_1) < \infty$ in continuity from above is essential. For example, take $E_n = [n, \infty)$. Then $E_1 \supseteq E_2 \supseteq \cdots$, $m(E_n) = \infty$ for all $n$, but $\bigcap_n E_n = \emptyset$, so $m(\bigcap_n E_n) = 0 \neq \infty = \lim_{n \to \infty} m(E_n)$.
@@ -211,7 +211,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 ^rem-11-5
 
 > [!remark]- Connections
-> - Same obstruction for integrals: [[§14 The Lebesgue Integral for Simple Functions#^rem-14-6|Rem. §14.6]].
+> - Same obstruction for integrals: [[§14a Consequences of the Monotone Convergence Theorem#^rem-14-6|Rem. §14.6]].
 
 ## Symmetric Difference and Approximation by Finite Unions of Rectangles
 
@@ -239,7 +239,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 ^thm-11-11
 
 ![[m551-11-3.svg]]
-*Theorem §11.11 (2): a set $E$ of finite measure (blue) and a finite union $G$ of rectangles (black outline). The symmetric difference $E \triangle G$ (red) — the part of $E$ that $G$ misses plus the part of $G$ outside $E$ — can be made to have measure $< \epsilon$. In the proof, $G$ comes from a finite subcover of a compact $K \subseteq E$.*
+*[[§11a Approximation and Continuity of Measure#^thm-11-11|Theorem §11.11]] (2): a set $E$ of finite measure (blue) and a finite union $G$ of rectangles (black outline). The symmetric difference $E \triangle G$ (red) — the part of $E$ that $G$ misses plus the part of $G$ outside $E$ — can be made to have measure $< \epsilon$. In the proof, $G$ comes from a finite subcover of a compact $K \subseteq E$.*
 
 > [!proof]+ Proof
 > **(1)** Since $E$ is measurable, $E^c$ is also measurable. By the approximation theorem (closed sets from below, [[Inner Regularity of Lebesgue Measure|Thm. §11.10]]), there exists a closed set $K \subseteq E$ such that $m(E \setminus K) < \epsilon/2$.
@@ -256,7 +256,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 > m(E \setminus K_k) \leq m(E \setminus K) + m(E \setminus [-k/2, k/2]^n).
 > $$
 >
-> Define $E_k = E \cap ([-k/2, k/2]^n)^c = E \setminus [-k/2, k/2]^n$. Since $([-(k+1)/2, (k+1)/2]^n)^c \subseteq ([-k/2, k/2]^n)^c$, the sequence $E_k$ is decreasing. Since $m(E_1) \leq m(E) < \infty$, by [[§11 Borel Sets and Measure Spaces#^prop-11-13|continuity of measure from above]]:
+> Define $E_k = E \cap ([-k/2, k/2]^n)^c = E \setminus [-k/2, k/2]^n$. Since $([-(k+1)/2, (k+1)/2]^n)^c \subseteq ([-k/2, k/2]^n)^c$, the sequence $E_k$ is decreasing. Since $m(E_1) \leq m(E) < \infty$, by [[§11a Approximation and Continuity of Measure#^prop-11-13|continuity of measure from above]]:
 >
 > $$
 > \lim_{k \to \infty} m(E_k) = m\left(\bigcap_{k=1}^{\infty} E_k\right) = m(E \setminus \mathbb{R}^n) = m(\emptyset) = 0.
@@ -296,10 +296,10 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 ^pf-11-11
 
-*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[§9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[§11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]]
+*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§11a Approximation and Continuity of Measure#^prop-11-13|§11.13]], [[§9 Lebesgue Outer Measure#^rem-9-1|Rem. §9.1]], [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[§11 Borel Sets and Measure Spaces#^prop-11-5|§11.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§11a Approximation and Continuity of Measure#^def-11-9|Def. §11.9]]
 
 > [!remark]- Connections
-> - Function version: [[§16 The L¹ Space and Density Theorems#^thm-16-6|step functions are dense in L¹]] (Thm. §16.6).
+> - Function version: [[§16 The L¹ Space and Density Theorems#^thm-16-6|step functions are dense in L¹]] ([[§16 The L¹ Space and Density Theorems#^thm-16-6|Thm. §16.6]]).
 > - MATH 452 counterpart: Jordan content is defined by approximating with finite unions of squares, [[§15 Multivariable Integration#^def-15-4|452 Def. §15.4]].
 
 > [!remark] Remark

@@ -40,7 +40,7 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 *An example of different Dini derivatives: $f(x) = x\sin(1/x)$ for $x > 0$ and $f(x) = 0$ for $x \leq 0$, at $x_0 = 0$. The right difference quotient $\frac{f(h) - f(0)}{h} = \sin(1/h)$ is the slope of the red secant, and as $h \to 0^+$ it sweeps through all of $[-1, 1]$, so $D^+f(0) = 1$ and $D_+f(0) = -1$ (dashed lines). From the left the quotient is $0$, so $D^-f(0) = D_-f(0) = 0$. Since $D^+f(0) = 1 > 0 = D_-f(0)$, $f$ is not differentiable at $0$.*
 
 > [!remark]- Connections
-> - One-sided derivatives in MATH 451: the one-sided limits of [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]] applied to the difference quotient; limsup/liminf as in [[§12 Measurable Functions#^rem-12-4|Remark: Recalling Limsup and Liminf]].
+> - One-sided derivatives in MATH 451: the one-sided limits of [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]] applied to the difference quotient; limsup/liminf as in [[§12a Limits and Positive Parts of Measurable Functions#^rem-12-4|Remark: Recalling Limsup and Liminf]].
 
 ## Lebesgue's Theorem on Differentiability of Monotone Functions
 
@@ -62,7 +62,7 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 > \end{aligned}
 > $$
 >
-> We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in [[§18 Differentiation Theory#^rem-18-3|the remark above]]), so $f$ is differentiable at $x_0$ in the extended sense; that the common value is finite a.e. follows from (ii).
+> We show $m(E_1) = m(E_2) = 0$. If $x_0 \in (a, b) \setminus (E_1 \cup E_2)$, then $D^+ f(x_0) \leq D_- f(x_0)$ and $D^- f(x_0) \leq D_+ f(x_0)$, which forces all four Dini derivatives to be equal (as argued in [[§18a Lebesgue's Differentiation Theorem#^rem-18-3|the remark above]]), so $f$ is differentiable at $x_0$ in the extended sense; that the common value is finite a.e. follows from (ii).
 >
 > **Showing $m(E_1) = 0$.** Write $E_1$ as a countable union:
 >
@@ -138,7 +138,7 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 
 ^pf-18-9
 
-*Uses:* [[§18 Differentiation Theory#^def-18-3|Def. §18.3]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[§18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
+*Uses:* [[§18a Lebesgue's Differentiation Theorem#^def-18-3|Def. §18.3]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[§18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]]
 
 > [!proof]+ Proof of (iii): The Integral Inequality
 > Extend $f$ by setting $f(x) = f(b)$ for $x > b$. Define the difference quotients:
@@ -183,14 +183,14 @@ A monotone function is differentiable almost everywhere. The proof compares the 
 *Uses:* [[Fatou's Lemma|§14.15]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|§17.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§12 Measurable Functions#^ex-12-1|Ex. §12.1]]
 
 > [!proof]+ Proof of (ii): Integrability of $f'$
-> Since $f$ is increasing, $f' \geq 0$ wherever it exists. The integral inequality (iii) gives $\int_a^b f'\,dx \leq f(b) - f(a) < \infty$, so $f' \in L([a, b])$. In particular, $f'$ is finite a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|integrability implies a.e. finiteness]]).
+> Since $f$ is increasing, $f' \geq 0$ wherever it exists. The integral inequality (iii) gives $\int_a^b f'\,dx \leq f(b) - f(a) < \infty$, so $f' \in L([a, b])$. In particular, $f'$ is finite a.e. ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|integrability implies a.e. finiteness]]).
 
 ^pf-18-9-3
 
-*Uses:* [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]]
+*Uses:* [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]]
 
 > [!remark] Remark
-> The inequality in (iii) can be strict: for the [[§18 Differentiation Theory#^ex-18-4|Cantor function]] (“devil's staircase”), $f$ is increasing and continuous on $[0,1]$ with $f(0) = 0$, $f(1) = 1$, but $f' = 0$ a.e., so $\int_0^1 f'\,dx = 0 < 1 = f(1) - f(0)$. A similar statement holds for decreasing functions.
+> The inequality in (iii) can be strict: for the [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] (“devil's staircase”), $f$ is increasing and continuous on $[0,1]$ with $f(0) = 0$, $f(1) = 1$, but $f' = 0$ a.e., so $\int_0^1 f'\,dx = 0 < 1 = f(1) - f(0)$. A similar statement holds for decreasing functions.
 
 ^rem-18-4
 

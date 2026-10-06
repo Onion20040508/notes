@@ -96,15 +96,22 @@ $$
 > - The same structure for linear difference equations, "one particular solution plus the general solution of the homogeneous equation": [[§30 Applications to Difference Equations#^thm-30-7|235 Thm. §30.7]].
 > - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|341 Thm. §2.2]] (the same statement in Powers' review of ODEs).
 
-> [!definition] Definition §17.1: Complementary Solution; Particular Solution
-> The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$. Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]], solving (1) takes three steps:
+> [!definition] Definition §17.1: Complementary Solution
+> The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$.
+>
+> *BDP: 3.5 (text)*
+
+^def-17-1
+
+> [!definition] Definition §17.1: Particular Solution
+> Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]], solving (1) takes three steps:
 > 1. find the complementary solution $y_c(t) = c_1y_1(t) + c_2y_2(t)$;
 > 2. find any particular solution $Y(t)$;
 > 3. form the sum $y = y_c(t) + Y(t)$.
 >
 > *BDP: 3.5 (text)*
 
-^def-17-1
+^def-17-new1
 
 Step 1 is solved for constant coefficients by [[§16 Repeated Roots; Reduction of Order#^thm-16-2|Theorem §16.2]]. For step 2 there are two methods: undetermined coefficients (this section) and variation of parameters ([[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1]]).
 
@@ -219,6 +226,17 @@ A forcing term that is a sum is split into its terms:
 
 The procedure of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^ex-17-1|Example §17.1]] can fail in one way: the assumed form may itself solve the homogeneous equation.
 
+> [!remark] Remark: Why It Works
+> BDP motivates the factor $t^s$ by its Example 3.5.5, $y'' - 3y' - 4y = 2e^{-t}$ (20). The guess $Y = Ae^{-t}$ gives $Y'' - 3Y' - 4Y = (A + 3A - 4A)e^{-t} = 0$, and $0 = 2e^{-t}$ is impossible. The reason: the roots of $r^2 - 3r - 4 = (r + 1)(r - 4)$ are $-1$ and $4$, so $e^{-t}$ solves the homogeneous equation, and no multiple of it can produce $2e^{-t}$. The first-order analog $y' + y = 2e^{-t}$ shows the way: with the [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|integrating factor]] $e^t$, $(e^ty)' = 2$, so $y = 2te^{-t} + ce^{-t}$, and the particular part carries an extra factor $t$. Accordingly, try $Y = Ate^{-t}$: then $Y' = Ae^{-t} - Ate^{-t}$, $Y'' = -2Ae^{-t} + Ate^{-t}$, and
+>
+> $$
+> Y'' - 3Y' - 4Y = (-2A - 3A)e^{-t} + (A + 3A - 4A)te^{-t} = -5Ae^{-t} = 2e^{-t} ,
+> $$
+>
+> so $A = -\frac25$ and $Y(t) = -\frac25te^{-t}$ (26). In general: if the assumed form duplicates a solution of the homogeneous equation, multiply it by $t$; occasionally once more by $t$; for a second-order equation it is never necessary to go further.
+
+^rem-17-1
+
 > [!theorem] Theorem §17.4: Trial Forms for Undetermined Coefficients
 > Consider $ay'' + by' + cy = g_i(t)$ with constants $a \ne 0$, $b$, $c$. For each $g_i$ below there is a particular solution $Y_i$ of the form shown.
 >
@@ -233,17 +251,6 @@ The procedure of [[§17 Nonhomogeneous Equations; Method of Undetermined Coeffic
 > *BDP: Table 3.5.1*
 
 ^thm-17-4
-
-> [!remark] Remark: Why It Works
-> BDP motivates the factor $t^s$ by its Example 3.5.5, $y'' - 3y' - 4y = 2e^{-t}$ (20). The guess $Y = Ae^{-t}$ gives $Y'' - 3Y' - 4Y = (A + 3A - 4A)e^{-t} = 0$, and $0 = 2e^{-t}$ is impossible. The reason: the roots of $r^2 - 3r - 4 = (r + 1)(r - 4)$ are $-1$ and $4$, so $e^{-t}$ solves the homogeneous equation, and no multiple of it can produce $2e^{-t}$. The first-order analog $y' + y = 2e^{-t}$ shows the way: with the [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|integrating factor]] $e^t$, $(e^ty)' = 2$, so $y = 2te^{-t} + ce^{-t}$, and the particular part carries an extra factor $t$. Accordingly, try $Y = Ate^{-t}$: then $Y' = Ae^{-t} - Ate^{-t}$, $Y'' = -2Ae^{-t} + Ate^{-t}$, and
->
-> $$
-> Y'' - 3Y' - 4Y = (-2A - 3A)e^{-t} + (A + 3A - 4A)te^{-t} = -5Ae^{-t} = 2e^{-t} ,
-> $$
->
-> so $A = -\frac25$ and $Y(t) = -\frac25te^{-t}$ (26). In general: if the assumed form duplicates a solution of the homogeneous equation, multiply it by $t$; occasionally once more by $t$; for a second-order equation it is never necessary to go further.
-
-^rem-17-1
 
 > [!proof]- Proof
 > Write $Z(r) = ar^2 + br + c$ for the characteristic polynomial; then $Z'(r) = 2ar + b$.

@@ -74,8 +74,8 @@ tags: [measure-theory, math551]
 *Uses:* [[§16 The L¹ Space and Density Theorems#^lem-16-2|§16.2]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
-> - Gives that $x \mapsto \int_a^x g$ is absolutely continuous ([[§18 Differentiation Theory#^def-18-4|Def. §18.4]], [[§18 Differentiation Theory#^thm-18-12|Theorem §18.12]]); compare uniform continuity: [[§18 Differentiation Theory#^rem-18-7|Rem. §18.7]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]].
-> - In the language of [[§14 The Lebesgue Integral for Simple Functions#^def-14-3|Def. §14.3]]: the measure $\nu(e) = \int_e |f|$ is small on sets of small Lebesgue measure.
+> - Gives that $x \mapsto \int_a^x g$ is absolutely continuous ([[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§18c Absolute Continuity and the FTC#^thm-18-12|Theorem §18.12]]); compare uniform continuity: [[§18c Absolute Continuity and the FTC#^rem-18-7|Rem. §18.7]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]].
+> - In the language of [[§14a Consequences of the Monotone Convergence Theorem#^def-14-3|Def. §14.3]]: the measure $\nu(e) = \int_e |f|$ is small on sets of small Lebesgue measure.
 
 > [!theorem] Theorem §16.3: Tail Decay of the Integral
 > Let $f \in L(E)$. Then for every $\varepsilon > 0$, there exists $R > 0$ such that for all $r > R$:
@@ -134,8 +134,8 @@ tags: [measure-theory, math551]
 ^thm-16-4
 
 > [!remark]- Connections
-> - (i)–(ii) are [[§15 The General Lebesgue Integral#^thm-15-2|Theorem §15.2]], (iii) is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], (iv) is [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]] with [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]].
-> - Norm axioms: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]]; the linear-algebra model is [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and the [[Triangle inequality]] (LADR 6.17), though the $L^1$ norm does not come from an inner product. Generalized in [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|Theorem §19.10]].
+> - (i)–(ii) are [[§15 The General Lebesgue Integral#^thm-15-2|Theorem §15.2]], (iii) is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], (iv) is [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|Proposition §14.11]] with [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]].
+> - Norm axioms: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]]; the linear-algebra model is [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and the [[Triangle inequality]] (LADR 6.17), though the $L^1$ norm does not come from an inner product. Generalized in [[§19a Lᵖ as a Banach Space#^thm-19-10|Theorem §19.10]].
 
 > [!definition] Definition §16.3: $L^1$ Metric
 > Define $d(f, g) = \|f - g\|_1 = \int_E |f - g|\,dx$. Then $d$ is a [[§11 Metric Topology#^def-11-1|metric]] on $L^1(E)$ (with the convention that $f = g$ if $f = g$ a.e.), and $(L^1(E), d)$ is a metric space.
@@ -144,7 +144,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - Metric spaces in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]]; normed $\Rightarrow$ metric in general: [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]].
-> - $(L^1(E), d)$ is complete by [[Riesz–Fischer Theorem|Riesz–Fischer]] (§19.18).
+> - $(L^1(E), d)$ is complete by [[Riesz–Fischer Theorem|Riesz–Fischer]] ([[§19a Lᵖ as a Banach Space#^thm-19-18|§19.18]]).
 
 > [!definition] Definition §16.4: Convergence in $L^1$
 > We say $f_k \to f$ in $L^1(E)$ if $\lim_{k \to \infty} \|f_k - f\|_1 = \lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$.
@@ -152,7 +152,7 @@ tags: [measure-theory, math551]
 ^def-16-new2
 
 > [!remark]- Connections
-> - The DCT yields $L^1$ convergence: [[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]].
+> - The DCT yields $L^1$ convergence: [[§15a The Dominated Convergence Theorem#^rem-15-4|Rem. §15.4]].
 
 ## Density of Simple Functions in $L^1$
 
@@ -166,16 +166,16 @@ tags: [measure-theory, math551]
 ^thm-16-5
 
 > [!proof]+ Proof
-> By the [[§12 Measurable Functions#^thm-12-15|Simple Function Approximation Theorem]], for any measurable $f$ there exists a sequence of simple functions $\varphi_k$ with $|\varphi_k(x)| \leq |f(x)|$ for all $x \in E$ and $\varphi_k(x) \to f(x)$ pointwise. Since $|\varphi_k - f| \leq 2|f| \in L^1(E)$, by [[Dominated Convergence Theorem|DCT]]: $\int_E |\varphi_k - f|\,dx \to 0$.
+> By the [[§12b Simple Functions and Modes of Convergence#^thm-12-15|Simple Function Approximation Theorem]], for any measurable $f$ there exists a sequence of simple functions $\varphi_k$ with $|\varphi_k(x)| \leq |f(x)|$ for all $x \in E$ and $\varphi_k(x) \to f(x)$ pointwise. Since $|\varphi_k - f| \leq 2|f| \in L^1(E)$, by [[Dominated Convergence Theorem|DCT]]: $\int_E |\varphi_k - f|\,dx \to 0$.
 
 ^pf-16-5
 
-*Uses:* [[§12 Measurable Functions#^thm-12-15|§12.15]], [[Dominated Convergence Theorem|§15.8]]
+*Uses:* [[§12b Simple Functions and Modes of Convergence#^thm-12-15|§12.15]], [[Dominated Convergence Theorem|§15.8]]
 
 ## Density of Step Functions in $L^1$
 
 > [!theorem] Theorem §16.6: Step Functions are Dense in $L^1$
-> Let $f \in L^1(E)$. Then for every $\varepsilon > 0$, there exists a [[§15 The General Lebesgue Integral#^def-15-2|step function]] $\psi$ on $\mathbb{R}^n$ such that $\|f - \psi\|_1 < \varepsilon$.
+> Let $f \in L^1(E)$. Then for every $\varepsilon > 0$, there exists a [[§15a The Dominated Convergence Theorem#^def-15-2|step function]] $\psi$ on $\mathbb{R}^n$ such that $\|f - \psi\|_1 < \varepsilon$.
 >
 > (Equivalently, there exist step functions $\psi_k$ with $\|\psi_k - f\|_1 \to 0$.)
 
@@ -190,7 +190,7 @@ tags: [measure-theory, math551]
 > \int_{\mathbb{R}^n} |\chi_{E_1} - \chi_{E_2}|\,dx = m(E_1 \setminus E_2) + m(E_2 \setminus E_1) = m(E_1 \triangle E_2).
 > $$
 >
-> By the [[§11 Borel Sets and Measure Spaces#^thm-11-11|approximation theorem]] ([[§11 Borel Sets and Measure Spaces|§11]]), for any $\varepsilon > 0$ there exist rectangles $R_1, \ldots, R_p$ with $m(S \triangle \bigcup_{j=1}^p R_j) < \varepsilon$. Since $\bigcup_{j=1}^p R_j$ can be written as a union of disjoint rectangles $I_1, \ldots, I_m$ (by splitting overlaps), $\chi_{\bigcup R_j} = \sum_{j=1}^{m} \chi_{I_j}$ is a step function. Thus $\|\chi_S - \psi\|_1 = m(S \triangle \bigcup R_j) < \varepsilon$.
+> By the [[§11a Approximation and Continuity of Measure#^thm-11-11|approximation theorem]] ([[§11 Borel Sets and Measure Spaces|§11]]), for any $\varepsilon > 0$ there exist rectangles $R_1, \ldots, R_p$ with $m(S \triangle \bigcup_{j=1}^p R_j) < \varepsilon$. Since $\bigcup_{j=1}^p R_j$ can be written as a union of disjoint rectangles $I_1, \ldots, I_m$ (by splitting overlaps), $\chi_{\bigcup R_j} = \sum_{j=1}^{m} \chi_{I_j}$ is a step function. Thus $\|\chi_S - \psi\|_1 = m(S \triangle \bigcup R_j) < \varepsilon$.
 >
 > **Step 2: Simple functions $\to$ step functions.** Any simple function $\varphi = \sum a_j \chi_{S_j}$ (with $m(S_j) < \infty$) can be approximated by step functions: approximate each $\chi_{S_j}$ by a step function $\psi_j$ with $\|\chi_{S_j} - \psi_j\|_1 < \varepsilon/(p\,\max|a_j|)$, then $\psi = \sum a_j \psi_j$ is a step function with $\|\varphi - \psi\|_1 < \varepsilon$.
 >
@@ -198,19 +198,19 @@ tags: [measure-theory, math551]
 
 ^pf-16-6
 
-*Uses:* [[§11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[§11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]], [[§9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[§16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]]
+*Uses:* [[§11a Approximation and Continuity of Measure#^def-11-9|Def. §11.9]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[§11a Approximation and Continuity of Measure#^thm-11-11|§11.11]], [[§9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[§16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]]
 
 ![[m551-16-2.svg]]
 *Step 1 in the plane: a measurable $S$ with $m(S) < \infty$ (blue boundary) is approximated by finitely many disjoint rectangles $I_1, \dots, I_m$ (gray grid). The step function $\psi = \chi_{\bigcup_j I_j}$ differs from $\chi_S$ exactly on the symmetric difference $S \triangle \bigcup_j I_j$ (red), so $\|\chi_S - \psi\|_1 = m(S \triangle \bigcup_j I_j) < \varepsilon$.*
 
 > [!remark]- Connections
 > - Step 1 is the Lebesgue relaxation of Jordan measurability ([[§15 Multivariable Integration#^def-15-5|452 Def. §15.5]]), which demands finite unions of squares approximating from inside *and* outside.
-> - The MATH 451 Riemann integral is itself built from step functions: [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]], [[§15 The General Lebesgue Integral#^rem-15-6|Rem. §15.6]].
+> - The MATH 451 Riemann integral is itself built from step functions: [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]], [[§15a The Dominated Convergence Theorem#^rem-15-6|Rem. §15.6]].
 > - Used in PDEs: the standard route to the Riemann–Lebesgue lemma (check step functions by direct integration, then approximate); its case of sectionally continuous functions on an interval is [[§12★ Proof of Convergence#^lem-12-3|341 Lemma §12.3]] (proved there from [[§11★ Mean Error and Convergence in Mean#^thm-11-3|Bessel's inequality]]), and it is one of the two analytic facts behind the Fourier integral theorem, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]].
 
 ## Density of Compactly Supported Continuous Functions
 
-Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $g: \mathbb{R}^n \to \mathbb{R}$ is **compactly supported** if $\operatorname{supp} g = \overline{\{x : g(x) \neq 0\}}$ is compact (i.e., [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|bounded and closed]] in $\mathbb{R}^n$). Equivalently, $g(x) = 0$ outside some large ball. We write $C_c(\mathbb{R}^n)$ for the space of compactly supported continuous functions.
+Recall ([[§12b Simple Functions and Modes of Convergence#^def-12-7|Definition §12.7]]): a function $g: \mathbb{R}^n \to \mathbb{R}$ is **compactly supported** if $\operatorname{supp} g = \overline{\{x : g(x) \neq 0\}}$ is compact (i.e., [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|bounded and closed]] in $\mathbb{R}^n$). Equivalently, $g(x) = 0$ outside some large ball. We write $C_c(\mathbb{R}^n)$ for the space of compactly supported continuous functions.
 
 > [!theorem] Theorem §16.7: Compactly Supported Continuous Functions are Dense in $L^1$
 > Let $f \in L^1(E)$. Then for every $\varepsilon > 0$, there exists a compactly supported continuous function $g$ on $\mathbb{R}^n$ such that $\|f - g\|_1 < \varepsilon$.
@@ -239,7 +239,7 @@ Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $
 > \end{aligned}
 > $$
 >
-> Integrating (one variable at a time, which uses [[Tonelli's Theorem]] (§17.3), proved later) and using $m(R_2) < \infty$ and $\|g_1\|_1 \leq \|\chi_{R_1}\|_1 + \|\chi_{R_1} - g_1\|_1 < m(R_1) + \varepsilon'$:
+> Integrating (one variable at a time, which uses [[Tonelli's Theorem]] ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|§17.3]]), proved later) and using $m(R_2) < \infty$ and $\|g_1\|_1 \leq \|\chi_{R_1}\|_1 + \|\chi_{R_1} - g_1\|_1 < m(R_1) + \varepsilon'$:
 >
 > $$
 > \|\chi_R - g\|_1 \leq m(R_2)\,\|\chi_{R_1} - g_1\|_1 + \|g_1\|_1\,\|\chi_{R_2} - g_2\|_1 < \varepsilon'(m(R_2) + m(R_1) + \varepsilon').
@@ -251,15 +251,15 @@ Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $
 
 ^pf-16-7
 
-*Uses:* [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[§16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§12 Measurable Functions#^def-12-7|Def. §12.7]], [[§9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Tonelli's Theorem|§17.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+*Uses:* [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[§16 The L¹ Space and Density Theorems#^thm-16-4|§16.4]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§12b Simple Functions and Modes of Convergence#^def-12-7|Def. §12.7]], [[§9 Lebesgue Outer Measure#^def-9-1|Def. §9.1]], [[Tonelli's Theorem|§17.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 ![[m551-16-3.svg]]
 *The case $n = 1$: the trapezoid $g$ (blue) is $0$ outside $(a - \varepsilon', b + \varepsilon')$, equal to $1$ on $(a + \varepsilon', b - \varepsilon')$, and linear in between, so it is continuous with compact support. It differs from $\chi_{(a,b)}$ (black; hollow dots mark the values not taken at $a$, $b$) only on the two transition intervals, of total length $4\varepsilon'$, and there by at most $1$ (red), so $\|\chi_{(a,b)} - g\|_1 \leq 4\varepsilon'$.*
 
 > [!remark]- Connections
-> - Continuous functions are closed under uniform limits ([[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§12 Measurable Functions#^thm-12-16|§12.16]]), so the density holds only for the weaker $L^1$ distance (cf. [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|Rem. §19.4]]).
-> - The $n = 2$ step integrates a product $\varphi(x)\,\chi_{R_2}(y)$ one variable at a time, an instance of [[Tonelli's Theorem]] (§17.3), proved only later; the Riemann analogue is the MATH 452 [[Fubini's Theorem]].
-> - Used for [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|Theorem §17.2]] (average continuity); $L^p$ version [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §15.12).
+> - Continuous functions are closed under uniform limits ([[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§12b Simple Functions and Modes of Convergence#^thm-12-16|§12.16]]), so the density holds only for the weaker $L^1$ distance (cf. [[§19a Lᵖ as a Banach Space#^rem-19-4|Rem. §19.4]]).
+> - The $n = 2$ step integrates a product $\varphi(x)\,\chi_{R_2}(y)$ one variable at a time, an instance of [[Tonelli's Theorem]] ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|§17.3]]), proved only later; the Riemann analogue is the MATH 452 [[Fubini's Theorem]].
+> - Used for [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|Theorem §17.2]] (average continuity); $L^p$ version [[§19a Lᵖ as a Banach Space#^thm-19-19|Theorem §19.19]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §15.12).
 > - For all $1 \le p < \infty$, with smooth compactly supported approximants: [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|556 Thm. §17.4]].
 
 > [!remark] Remark: The Approximation Chain for $L^1$
@@ -274,4 +274,4 @@ Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $
 ^rem-16-1
 
 > [!remark]- Connections
-> - The $L^p$ chain: [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-4|Rem. §19.4]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Corollary §19.20]] (separability).
+> - The $L^p$ chain: [[§19a Lᵖ as a Banach Space#^rem-19-4|Rem. §19.4]], [[§19a Lᵖ as a Banach Space#^cor-19-20|Corollary §19.20]] (separability).

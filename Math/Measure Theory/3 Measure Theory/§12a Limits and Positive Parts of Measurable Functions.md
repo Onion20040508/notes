@@ -53,13 +53,13 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 > \limsup_{k \to \infty} f_k(x) = \inf_{j \geq 1} \sup_{k \geq j} f_k(x), \qquad \liminf_{k \to \infty} f_k(x) = \sup_{j \geq 1} \inf_{k \geq j} f_k(x).
 > $$
 >
-> For each fixed $j$, let $g_j(x) = \sup_{k \geq j} f_k(x)$. By [[§12 Measurable Functions#^thm-12-6|the previous theorem]], each $g_j$ is measurable. Then $\limsup_{k \to \infty} f_k(x) = \inf_{j \geq 1} g_j(x)$ is measurable as the infimum of measurable functions.
+> For each fixed $j$, let $g_j(x) = \sup_{k \geq j} f_k(x)$. By [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|the previous theorem]], each $g_j$ is measurable. Then $\limsup_{k \to \infty} f_k(x) = \inf_{j \geq 1} g_j(x)$ is measurable as the infimum of measurable functions.
 >
 > Similarly for $\liminf$.
 
 ^pf-12-7
 
-*Uses:* [[§12 Measurable Functions#^thm-12-6|§12.6]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|§12.6]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
 
 > [!remark] Remark: Recalling Limsup and Liminf for Sequences
 > For a sequence $\{a_k\}$ of real numbers:
@@ -82,11 +82,11 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^pf-12-8
 
-*Uses:* [[§12 Measurable Functions#^thm-12-7|§12.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-7|§12.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]]
 
 > [!remark]- Connections
-> - Contrast with continuity: a pointwise limit of continuous functions need not be continuous ([[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]]); measurability survives pointwise limits, continuity needs uniform ones ([[§12 Measurable Functions#^thm-12-16|Theorem §12.16]]).
-> - The a.e. version: [[§12 Measurable Functions#^rem-12-7|Remark: A.e. Convergence Preserves Measurability]].
+> - Contrast with continuity: a pointwise limit of continuous functions need not be continuous ([[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]]); measurability survives pointwise limits, continuity needs uniform ones ([[§12b Simple Functions and Modes of Convergence#^thm-12-16|Theorem §12.16]]).
+> - The a.e. version: [[§12b Simple Functions and Modes of Convergence#^rem-12-7|Remark: A.e. Convergence Preserves Measurability]].
 
 ## Reciprocals and Quotients of Measurable Functions
 
@@ -96,7 +96,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 ^prop-12-9
 
 > [!proof]+ Proof
-> Let $Z = \{x \in E : f(x) = 0\}$. Since $f$ is measurable, $Z = \{f \leq 0\} \cap \{f \geq 0\}$ is measurable, and $m(Z) = 0$ by hypothesis ([[§12 Measurable Functions#^def-12-5|a.e.]]). Let $E_0 = E \setminus Z$, which is measurable.
+> Let $Z = \{x \in E : f(x) = 0\}$. Since $f$ is measurable, $Z = \{f \leq 0\} \cap \{f \geq 0\}$ is measurable, and $m(Z) = 0$ by hypothesis ([[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|a.e.]]). Let $E_0 = E \setminus Z$, which is measurable.
 >
 > Define $g(x) = 1/f(x)$ for $x \in E_0$ and $g(x) = 0$ for $x \in Z$. We show $g$ is measurable on $E$.
 >
@@ -127,7 +127,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^pf-12-9
 
-*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§12 Measurable Functions#^def-12-5|Def. §12.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§12 Measurable Functions#^def-12-2|Def. §12.2]]
+*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|Def. §12.5]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§12 Measurable Functions#^def-12-2|Def. §12.2]]
 
 > [!remark] Remark
 > Since the product and sum of measurable functions are measurable ([[§12 Measurable Functions#^thm-12-3|Theorem §12.3]]), this immediately gives: if $f$ and $g$ are measurable and $g \neq 0$ a.e., then $f/g = f \cdot (1/g)$ is measurable.
@@ -151,7 +151,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 ^def-12-4
 
 ![[m551-12-2.svg]]
-*Positive and negative parts: $f^+$ (blue) keeps the part of the graph of $f$ above the axis, $f^-$ (red) flips the part below (dashed) upward, and each is $0$ where the other is active. Hence $f = f^+ - f^-$ and $|f| = f^+ + f^-$ (Proposition §12.10).*
+*Positive and negative parts: $f^+$ (blue) keeps the part of the graph of $f$ above the axis, $f^-$ (red) flips the part below (dashed) upward, and each is $0$ where the other is active. Hence $f = f^+ - f^-$ and $|f| = f^+ + f^-$ ([[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|Proposition §12.10]]).*
 
 > [!theorem] Proposition §12.10: Properties of $f^+$ and $f^-$
 > For any $f: E \to \overline{\mathbb{R}}$:
@@ -167,7 +167,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^pf-12-10
 
-*Uses:* [[§12 Measurable Functions#^def-12-4|Def. §12.4]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]]
 
 > [!theorem] Proposition §12.11: Measurability of $f^+$ and $f^-$
 > $f: E \to \overline{\mathbb{R}}$ is measurable if and only if both $f^+$ and $f^-$ are measurable.
@@ -199,7 +199,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^pf-12-11
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^prop-12-10|§12.10]], [[§12 Measurable Functions#^prop-12-2|§12.2]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|§12.10]], [[§12 Measurable Functions#^prop-12-2|§12.2]]
 
 > [!remark]- Connections
 > - The splitting $f = f^+ - f^-$ is how the general integral is defined: [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]].
@@ -253,4 +253,4 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 *Uses:* [[§10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§12 Measurable Functions#^def-12-2|Def. §12.2]]
 
 > [!remark]- Connections
-> - This is where completeness of Lebesgue measure (every subset of a null set is measurable) enters; the integral ignores such changes too: [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|Proposition §14.9]].
+> - This is where completeness of Lebesgue measure (every subset of a null set is measurable) enters; the integral ignores such changes too: [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|Proposition §14.9]].

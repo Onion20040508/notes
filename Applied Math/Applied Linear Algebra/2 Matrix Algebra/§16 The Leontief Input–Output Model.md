@@ -105,33 +105,7 @@ Leontief asked whether there is a production level $\mathbf{x}$ at which the amo
 
 ^ex-16-1
 
-If $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] applied to (5) gives $\mathbf{x} = (I - C)^{-1}\mathbf{d}$. The next theorem shows that in most practical cases $I - C$ *is* invertible and the production vector is **economically feasible**: its entries are nonnegative. The **column sum** of a column is the sum of its entries. Ordinarily the column sums of a consumption matrix are less than 1, because a sector should need less than one unit's worth of inputs to produce one unit of output.
-
-> [!theorem] Theorem §16.1: Feasible Production
-> Let $C$ be the consumption matrix for an economy, and let $\mathbf{d}$ be the final demand. If $C$ and $\mathbf{d}$ have nonnegative entries and if each column sum of $C$ is less than 1, then $(I - C)^{-1}$ exists and the production vector
->
-> $$
-> \mathbf{x} = (I - C)^{-1}\mathbf{d}
-> $$
->
-> has nonnegative entries and is the unique solution of
->
-> $$
-> \mathbf{x} = C\mathbf{x} + \mathbf{d} .
-> $$
->
-> *Lay: Theorem 11 (2.6)*
-
-^thm-16-1
-
-> [!proof]- Proof
-> *Lay gives this as a sketch:* he gives no formal proof, only the discussion of the next subsection, which "will suggest why the theorem is true". The step he leaves as "it can be shown" is proved in Proposition §16.2 below, which does not use this theorem.
->
-> By Proposition §16.2, $I - C$ is invertible and $(I - C)^{-1}$ is the limit of the partial sums $S_m = I + C + C^2 + \cdots + C^m$. Each $S_m$ has nonnegative entries, because $C$ does and sums and products of matrices with nonnegative entries have nonnegative entries. A limit of nonnegative numbers is nonnegative, so $(I - C)^{-1}$ has nonnegative entries. Then so does $\mathbf{x} = (I - C)^{-1}\mathbf{d}$, since $\mathbf{d}$ does. (This is Lay's remark that (6) shows the entries in $\mathbf{x}$ are nonnegative when those in $C$ and $\mathbf{d}$ are.) Finally, since $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] says that $(I - C)\mathbf{x} = \mathbf{d}$, which is the same equation as $\mathbf{x} = C\mathbf{x} + \mathbf{d}$, has the unique solution $\mathbf{x} = (I - C)^{-1}\mathbf{d}$.
-
-^pf-16-1
-
-*Uses:* [[§16 The Leontief Input–Output Model#^prop-16-2|§16.2]], [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]]
+The **column sum** of a column is the sum of its entries. Ordinarily the column sums of a consumption matrix are less than 1, because a sector should need less than one unit's worth of inputs to produce one unit of output.
 
 ## A Formula for (I − C)⁻¹
 
@@ -195,20 +169,48 @@ $$
 
 In actual input–output models, powers of the consumption matrix approach the zero matrix rather quickly, so (8) is a practical way to compute $(I - C)^{-1}$. Likewise $C^m\mathbf{d} \to \mathbf{0}$ quickly for any $\mathbf{d}$, and (6) is a practical way to solve $(I - C)\mathbf{x} = \mathbf{d}$.
 
+If $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] applied to (5) gives $\mathbf{x} = (I - C)^{-1}\mathbf{d}$. The next theorem shows that in most practical cases $I - C$ *is* invertible and the production vector is **economically feasible**: its entries are nonnegative.
+
+> [!theorem] Theorem §16.1: Feasible Production
+> Let $C$ be the consumption matrix for an economy, and let $\mathbf{d}$ be the final demand. If $C$ and $\mathbf{d}$ have nonnegative entries and if each column sum of $C$ is less than 1, then $(I - C)^{-1}$ exists and the production vector
+>
+> $$
+> \mathbf{x} = (I - C)^{-1}\mathbf{d}
+> $$
+>
+> has nonnegative entries and is the unique solution of
+>
+> $$
+> \mathbf{x} = C\mathbf{x} + \mathbf{d} .
+> $$
+>
+> *Lay: Theorem 11 (2.6)*
+
+^thm-16-1
+
+> [!proof]- Proof
+> *Lay gives this as a sketch:* he gives no formal proof, only the discussion of the subsection A Formula for (I − C)⁻¹ (placed above here; in Lay it follows the theorem), which "will suggest why the theorem is true". The step he leaves as "it can be shown" is proved in [[§16 The Leontief Input–Output Model#^prop-16-2|Proposition §16.2]] above, which does not use this theorem.
+>
+> By [[§16 The Leontief Input–Output Model#^prop-16-2|Proposition §16.2]], $I - C$ is invertible and $(I - C)^{-1}$ is the limit of the partial sums $S_m = I + C + C^2 + \cdots + C^m$. Each $S_m$ has nonnegative entries, because $C$ does and sums and products of matrices with nonnegative entries have nonnegative entries. A limit of nonnegative numbers is nonnegative, so $(I - C)^{-1}$ has nonnegative entries. Then so does $\mathbf{x} = (I - C)^{-1}\mathbf{d}$, since $\mathbf{d}$ does. (This is Lay's remark that (6) shows the entries in $\mathbf{x}$ are nonnegative when those in $C$ and $\mathbf{d}$ are.) Finally, since $I - C$ is invertible, [[§12 The Inverse of a Matrix#^thm-12-3|Theorem §12.3]] says that $(I - C)\mathbf{x} = \mathbf{d}$, which is the same equation as $\mathbf{x} = C\mathbf{x} + \mathbf{d}$, has the unique solution $\mathbf{x} = (I - C)^{-1}\mathbf{d}$.
+
+^pf-16-1
+
+*Uses:* [[§16 The Leontief Input–Output Model#^prop-16-2|§16.2]], [[§12 The Inverse of a Matrix#^thm-12-3|§12.3]]
+
 ## The Economic Importance of the Entries of (I − C)⁻¹
 
 The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must change when the final demand $\mathbf{d}$ changes. Since $\mathbf{x} = (I - C)^{-1}\mathbf{d}$ depends linearly on $\mathbf{d}$, increasing $\mathbf{d}$ by $\mathbf{e}_j$ increases $\mathbf{x}$ by $(I - C)^{-1}\mathbf{e}_j$: **the entries in column $j$ of $(I - C)^{-1}$ are the increased amounts the sectors must produce to satisfy an increase of 1 unit in the final demand for the output of sector $j$.** (Lay's Exercise 8.)
 
 > [!example] Example §16.2: The Inverse for the Three-Sector Economy
-> For the consumption matrix (3) of Example §16.1, row reducing $[\,I - C \ \ I\,]$ (or using the inverse formula [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|Theorem §22.2]]) gives
+> For the consumption matrix (3) of [[§16 The Leontief Input–Output Model#^ex-16-1|Example §16.1]], row reducing $[\,I - C \ \ I\,]$ (or using the inverse formula [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|Theorem §22.2]]) gives
 >
 > $$
 > (I - C)^{-1} = \frac{1}{27}\begin{bmatrix} 80 & 50 & 30 \\ 25 & 55 & 15 \\ 15 & 15 & 45 \end{bmatrix} \approx \begin{bmatrix} 2.96 & 1.85 & 1.11 \\ .93 & 2.04 & .56 \\ .56 & .56 & 1.67 \end{bmatrix} .
 > $$
 >
-> (Check, row 1 of $I - C$ times column 1: $\tfrac{1}{27}(.5 \cdot 80 - .4 \cdot 25 - .2 \cdot 15) = \tfrac{1}{27}(40 - 10 - 3) = 1$.) All entries are nonnegative (here even positive), as Theorem §16.1 predicts (the column sums of $C$ are $.8$, $.8$, $.6$).
+> (Check, row 1 of $I - C$ times column 1: $\tfrac{1}{27}(.5 \cdot 80 - .4 \cdot 25 - .2 \cdot 15) = \tfrac{1}{27}(40 - 10 - 3) = 1$.) All entries are nonnegative (here even positive), as [[§16 The Leontief Input–Output Model#^thm-16-1|Theorem §16.1]] predicts (the column sums of $C$ are $.8$, $.8$, $.6$).
 >
-> **Production.** $(I - C)^{-1}\mathbf{d}$ for $\mathbf{d} = (50, 30, 20)$ gives $\tfrac{1}{27}(4000 + 1500 + 600,\ 1250 + 1650 + 300,\ 750 + 450 + 900) = (6100/27,\ 3200/27,\ 2100/27)$, as in Example §16.1 ($2100/27 = 700/9$).
+> **Production.** $(I - C)^{-1}\mathbf{d}$ for $\mathbf{d} = (50, 30, 20)$ gives $\tfrac{1}{27}(4000 + 1500 + 600,\ 1250 + 1650 + 300,\ 750 + 450 + 900) = (6100/27,\ 3200/27,\ 2100/27)$, as in [[§16 The Leontief Input–Output Model#^ex-16-1|Example §16.1]] ($2100/27 = 700/9$).
 >
 > **Rounds of demand.** The partial sums $(I + C + \cdots + C^m)\mathbf{d}$ of (6) approach this production vector:
 >
@@ -235,7 +237,7 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 > C = \begin{bmatrix} .2 & .4 \\ .5 & .3 \end{bmatrix}, \qquad \mathbf{d} = \begin{bmatrix} 20 \\ 30 \end{bmatrix} .
 > $$
 >
-> The column sums are $.7$ and $.7$, so Theorem §16.1 applies. Solving with [[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]]: $I - C = \begin{bmatrix} .8 & -.4 \\ -.5 & .7 \end{bmatrix}$ has determinant $.56 - .20 = .36$, so
+> The column sums are $.7$ and $.7$, so [[§16 The Leontief Input–Output Model#^thm-16-1|Theorem §16.1]] applies. Solving with [[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]]: $I - C = \begin{bmatrix} .8 & -.4 \\ -.5 & .7 \end{bmatrix}$ has determinant $.56 - .20 = .36$, so
 >
 > $$
 > \mathbf{x} = (I - C)^{-1}\mathbf{d} = \frac{1}{.36}\begin{bmatrix} .7 & .4 \\ .5 & .8 \end{bmatrix}\begin{bmatrix} 20 \\ 30 \end{bmatrix} = \frac{1}{.36}\begin{bmatrix} 26 \\ 34 \end{bmatrix} \approx \begin{bmatrix} 72.2 \\ 94.4 \end{bmatrix} .

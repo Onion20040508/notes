@@ -314,7 +314,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 ## Curl-Free Fields on ℝ³ Are Conservative
 
-Stokes' Theorem supplies the proof, announced in §111 after [[§111 Curl and Divergence#^cor-111-2|Corollary §111.2]] (of which it is a partial converse), of the three-dimensional test for conservative fields.
+Stokes' Theorem supplies the proof, announced in [[§111 Curl and Divergence|§111]] after [[§111 Curl and Divergence#^cor-111-2|Corollary §111.2]] (of which it is a partial converse), of the three-dimensional test for conservative fields.
 
 > [!theorem] Theorem §114.4: Curl-Free Fields on ℝ³ Are Conservative
 > If $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is a [[§107 Vector Fields#^def-107-4|conservative vector field]].

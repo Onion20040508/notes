@@ -11,9 +11,9 @@ tags: [multivariable-analysis, hub]
 - [[§6 Differentiability#^thm-6-2|Theorem §6.2: Continuous Partials Imply Differentiability]], in [[§6 Differentiability]]
 
 ## Its proof uses
-- [[§2 Open and Closed Sets#^def-2-4|Definition §2.4: Open and Closed Sets]]
+- [[§2 Open and Closed Sets#^def-2-4|Definition §2.4: Open Set]]
 - [[§3 Continuity and Limits of Functions#^def-3-1|Definition §3.1: Continuity]]
-- [[§3 Continuity and Limits of Functions#^def-3-3|Definition §3.3: Big-O and Little-o Notation]]
+- [[§3 Continuity and Limits of Functions#^def-3-new1|Definition §3.3: Little-o Notation]]
 - [[§4 Partial Derivatives#^def-4-1|Definition §4.1: Partial Derivatives]]
 - [[§6 Differentiability#^def-6-1|Definition §6.1: Differentiability]]
 

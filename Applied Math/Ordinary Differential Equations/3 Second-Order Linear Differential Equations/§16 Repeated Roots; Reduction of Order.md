@@ -100,7 +100,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 ^pf-16-1
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Def. §14.2]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]]
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Def. §14.2]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Def. §14.3]]
 
 > [!example] Example §16.1: A Repeated Root
 > Solve $y'' - 8y' + 16y = 0$, $y(0) = -3$, $y'(0) = 2$.

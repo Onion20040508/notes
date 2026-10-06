@@ -126,7 +126,7 @@ tags: [measure-theory, math551]
 ^def-7-new1
 
 ![[m551-7-2.svg]]
-*Left: a half-open rectangle in $\mathbb{R}^2$ contains its top and right edges (solid) but not its bottom and left edges (dashed); of the four corners only $(b_1, b_2)$ belongs to it. Right: this is what lets a dyadic square $R^{(k)}_{\mathbf{j}}$ split into $2^n = 4$ children $R^{(k+1)}_{2\mathbf{j}+\boldsymbol{\epsilon}}$ with no overlaps and no gaps (property (b) in the proof of Proposition §7.3) — each shared edge belongs to exactly one child.*
+*Left: a half-open rectangle in $\mathbb{R}^2$ contains its top and right edges (solid) but not its bottom and left edges (dashed); of the four corners only $(b_1, b_2)$ belongs to it. Right: this is what lets a dyadic square $R^{(k)}_{\mathbf{j}}$ split into $2^n = 4$ children $R^{(k+1)}_{2\mathbf{j}+\boldsymbol{\epsilon}}$ with no overlaps and no gaps (property (b) in the proof of [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3]]) — each shared edge belongs to exactly one child.*
 
 > [!theorem] Proposition §7.3: Open Sets in $\mathbb{R}^n$ as Unions of Rectangles
 > Any open set $O \subseteq \mathbb{R}^n$ is a countable union of mutually disjoint half-open half-closed rectangles (more precisely, cubes).
@@ -199,7 +199,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§7 Structure of Open Sets#^def-7-new1|Def. §7.2]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
 ![[m551-7-3.svg]]
-*The proof of Proposition §7.3 run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*
+*The proof of [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3]] run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*
 
 > [!remark]- Connections
 > - MATH 452: the same dyadic grid gives the inner Jordan approximations, $\mathcal{S}_i^-$ = dyadic squares inside $D$ ([[§15 Multivariable Integration#^def-15-3|452 Def. §15.3]]); for an open set they exhaust it.

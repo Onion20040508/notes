@@ -36,7 +36,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 ^ex-43-1
 
 ![[m235-43-1.svg]]
-*Example §43.1, drawn in the plane $W$. The first Gram–Schmidt step keeps $\mathbf{v}_1 = \mathbf{x}_1$ and replaces $\mathbf{x}_2$ by its component $\mathbf{v}_2 = \mathbf{x}_2 - \mathbf{p}$ orthogonal to $\mathbf{x}_1$ (red), where $\mathbf{p} = \frac13\mathbf{x}_1$ is the projection of $\mathbf{x}_2$ onto $\mathbf{x}_1$. Both $\{\mathbf{x}_1, \mathbf{x}_2\}$ and $\{\mathbf{v}_1, \mathbf{v}_2\}$ span $W$.*
+*[[§43 The Gram–Schmidt Process#^ex-43-1|Example §43.1]], drawn in the plane $W$. The first Gram–Schmidt step keeps $\mathbf{v}_1 = \mathbf{x}_1$ and replaces $\mathbf{x}_2$ by its component $\mathbf{v}_2 = \mathbf{x}_2 - \mathbf{p}$ orthogonal to $\mathbf{x}_1$ (red), where $\mathbf{p} = \frac13\mathbf{x}_1$ is the projection of $\mathbf{x}_2$ onto $\mathbf{x}_1$. Both $\{\mathbf{x}_1, \mathbf{x}_2\}$ and $\{\mathbf{v}_1, \mathbf{v}_2\}$ span $W$.*
 
 > [!example] Example §43.2: The Full Process in ℝ⁴
 > Let
@@ -130,7 +130,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 ^cor-43-2
 
 > [!proof]+ Proof
-> $W$ has an ordinary basis $\{\mathbf{x}_1, \ldots, \mathbf{x}_p\}$, since a subspace of the finite-dimensional space $\mathbb{R}^n$ is finite-dimensional. Applying Theorem §43.1 to it gives an orthogonal basis $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$. The process uses only orthogonal projections onto the subspaces $W_k$, which already have orthogonal bases at that stage, so it does not presuppose the corollary. Normalizing each $\mathbf{v}_k$ gives an orthonormal set ([[§41 Orthogonal Sets#^def-41-4|Definition §41.4]]) of $p$ vectors spanning $W$, an orthonormal basis.
+> $W$ has an ordinary basis $\{\mathbf{x}_1, \ldots, \mathbf{x}_p\}$, since a subspace of the finite-dimensional space $\mathbb{R}^n$ is finite-dimensional. Applying [[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1]] to it gives an orthogonal basis $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$. The process uses only orthogonal projections onto the subspaces $W_k$, which already have orthogonal bases at that stage, so it does not presuppose the corollary. Normalizing each $\mathbf{v}_k$ gives an orthonormal set ([[§41 Orthogonal Sets#^def-41-4|Definition §41.4]]) of $p$ vectors spanning $W$, an orthonormal basis.
 
 ^pf-43-2
 
@@ -143,7 +143,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 > Given a basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ of $W$:
 > 1. Put $\mathbf{v}_1 = \mathbf{x}_1$.
 > 2. For $k = 2, \ldots, p$: compute $\mathbf{v}_k = \mathbf{x}_k - \sum_{j < k} \frac{\mathbf{x}_k \cdot \mathbf{v}_j}{\mathbf{v}_j \cdot \mathbf{v}_j}\mathbf{v}_j$, that is, subtract from $\mathbf{x}_k$ its projection onto $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_{k-1}\}$, always using the *new* vectors $\mathbf{v}_j$ (not the $\mathbf{x}_j$) in the denominators.
-> 3. Optionally scale each $\mathbf{v}_k$ to clear fractions before using it in later steps (Step 2′ of Example §43.2).
+> 3. Optionally scale each $\mathbf{v}_k$ to clear fractions before using it in later steps (Step 2′ of [[§43 The Gram–Schmidt Process#^ex-43-2|Example §43.2]]).
 > 4. Check $\mathbf{v}_k \cdot \mathbf{v}_j = 0$ for $j < k$ as you go. A zero $\mathbf{v}_k$ means that $\mathbf{x}_k$ depended on the earlier vectors: the $\mathbf{x}$'s were not a basis.
 > 5. For an orthonormal basis, normalize at the end: $\mathbf{u}_k = \mathbf{v}_k / \|\mathbf{v}_k\|$. Doing it last keeps square roots out of the intermediate steps.
 >
@@ -161,7 +161,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 ^thm-43-3
 
 > [!proof]+ Proof
-> The columns $\mathbf{x}_1, \ldots, \mathbf{x}_n$ of $A$ form a basis of $\operatorname{Col} A$. Construct an orthonormal basis $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ of $W = \operatorname{Col} A$ with property (1) of Theorem §43.1, for instance by Gram–Schmidt followed by normalization, and let
+> The columns $\mathbf{x}_1, \ldots, \mathbf{x}_n$ of $A$ form a basis of $\operatorname{Col} A$. Construct an orthonormal basis $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$ of $W = \operatorname{Col} A$ with property (1) of [[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1]], for instance by Gram–Schmidt followed by normalization, and let
 >
 > $$
 > Q = [\,\mathbf{u}_1\ \mathbf{u}_2\ \cdots\ \mathbf{u}_n\,] .
@@ -208,7 +208,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 > A = \begin{bmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix} .
 > $$
 >
-> **Orthogonal basis.** The columns of $A$ are $\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3$ of Example §43.2, which produced the orthogonal basis $\mathbf{v}_1 = (1, 1, 1, 1)$, $\mathbf{v}_2' = (-3, 1, 1, 1)$, $\mathbf{v}_3 = (0, -\frac23, \frac13, \frac13)$ of $\operatorname{Col} A$. Scale $\mathbf{v}_3$ to $\mathbf{v}_3' = 3\mathbf{v}_3 = (0, -2, 1, 1)$.
+> **Orthogonal basis.** The columns of $A$ are $\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3$ of [[§43 The Gram–Schmidt Process#^ex-43-2|Example §43.2]], which produced the orthogonal basis $\mathbf{v}_1 = (1, 1, 1, 1)$, $\mathbf{v}_2' = (-3, 1, 1, 1)$, $\mathbf{v}_3 = (0, -\frac23, \frac13, \frac13)$ of $\operatorname{Col} A$. Scale $\mathbf{v}_3$ to $\mathbf{v}_3' = 3\mathbf{v}_3 = (0, -2, 1, 1)$.
 >
 > **Q.** The lengths are $\|\mathbf{v}_1\| = 2$, $\|\mathbf{v}_2'\| = \sqrt{12}$, $\|\mathbf{v}_3'\| = \sqrt6$, so
 >
@@ -232,6 +232,6 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 > [!remark]- Remark: Numerical Notes
 > 1. On a computer, roundoff error builds up as the $\mathbf{u}_k$ are computed one by one: for $j$ and $k$ large but unequal, $\mathbf{u}_j^T\mathbf{u}_k$ may not be close enough to $0$. Rearranging the order of the calculations ("modified Gram–Schmidt") reduces this loss of orthogonality substantially, but a different computer QR factorization is usually preferred because it yields a more accurate orthonormal basis, even though it needs about twice as much arithmetic.
-> 2. That method left-multiplies $A$ by a sequence of orthogonal matrices until $A$ becomes upper triangular, in analogy with the left multiplication by elementary matrices that produces an LU factorization ([[§15 Matrix Factorizations#^def-15-1|Definition §15.1]]).
+> 2. That method left-multiplies $A$ by a sequence of orthogonal matrices until $A$ becomes upper triangular, in analogy with the left multiplication by elementary matrices that produces an LU factorization ([[§15 Matrix Factorizations#^def-15-new1|Definition §15.1]]).
 
 ^rem-43-3

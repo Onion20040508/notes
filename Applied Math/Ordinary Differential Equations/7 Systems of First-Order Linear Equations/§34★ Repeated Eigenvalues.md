@@ -16,7 +16,7 @@ This section finishes the constant-coefficient system $\mathbf{x}' = \mathbf{A}\
 
 ## Repeated Eigenvalues
 
-Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$ (7), so that $\rho$ is an eigenvalue of algebraic multiplicity $m$. Its geometric multiplicity ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-5|Definition §29.5]]), the number of linearly independent eigenvectors, may be less than $m$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-3|Theorem §29.3]]). There are two possibilities.
+Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$ (7), so that $\rho$ is an eigenvalue of algebraic multiplicity $m$. Its geometric multiplicity ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-new2|Definition §29.5]]), the number of linearly independent eigenvectors, may be less than $m$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-3|Theorem §29.3]]). There are two possibilities.
 
 > [!theorem] Proposition §34.1: A Repeated Eigenvalue with a Full Set of Eigenvectors
 > Let $\rho$ be an eigenvalue of $\mathbf{A}$ of algebraic multiplicity $m$ that has $m$ linearly independent eigenvectors $\boldsymbol{\xi}^{(1)}, \ldots, \boldsymbol{\xi}^{(m)}$. Then

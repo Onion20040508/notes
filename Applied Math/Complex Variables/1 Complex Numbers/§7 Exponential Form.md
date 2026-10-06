@@ -15,22 +15,14 @@ Polar coordinates describe a nonzero complex number by its distance $r = |z|$ fr
 
 ## Polar Form and Arguments
 
-> [!definition] Definition §7.1: Polar Form, Argument, Principal Argument
+> [!definition] Definition §7.1: Polar Form
 > Let $r$ and $\theta$ be polar coordinates of the point $(x, y)$ corresponding to a **nonzero** complex number $z = x + iy$. Since $x = r\cos\theta$ and $y = r\sin\theta$, $z$ can be written in **polar form** as
 >
 > $$
 > z = r(\cos\theta + i\sin\theta) . \qquad (1)
 > $$
 >
-> - In complex analysis $r$ is not allowed to be negative: $r = |z|$, the length of the radius vector for $z$.
-> - The real number $\theta$ is the angle, in radians, that $z$ makes with the positive real axis when $z$ is interpreted as a radius vector. It has infinitely many possible values, including negative ones, that differ by integral multiples of $2\pi$; they can be determined from $\tan\theta = y/x$ once the quadrant containing $z$ is specified. Each value of $\theta$ is an **argument** of $z$, and the set of all such values is denoted by $\arg z$.
-> - The **principal value** of $\arg z$, denoted $\operatorname{Arg} z$, is the unique value $\Theta$ with $-\pi < \Theta \le \pi$. Then
->
-> $$
-> \arg z = \operatorname{Arg} z + 2n\pi \qquad (n = 0, \pm1, \pm2, \ldots) . \qquad (2)
-> $$
->
-> When $z$ is a negative real number, $\operatorname{Arg} z = \pi$, not $-\pi$. When $z = 0$ the coordinate $\theta$ is undefined, so it is understood that $z \ne 0$ whenever polar coordinates are used.
+> In complex analysis $r$ is not allowed to be negative: $r = |z|$, the length of the radius vector for $z$. When $z = 0$ the coordinate $\theta$ is undefined, so it is understood that $z \ne 0$ whenever polar coordinates are used.
 >
 > *B&C: Sec. 7, Equations (1)–(2)*
 
@@ -40,20 +32,36 @@ Polar coordinates describe a nonzero complex number by its distance $r = |z|$ fr
 > - Polar coordinates in Calculus: [[§65 Polar Coordinates#^def-65-1|Calc Def. §65.1]] and the conversion formulas [[§65 Polar Coordinates#^thm-65-2|Calc Thm. §65.2]]. Calculus allows $r < 0$; here $r = |z| \ge 0$ always, and all the freedom is in $\theta$.
 > - Earlier treatment of the argument and polar form: [[§53 Complex Numbers#^def-53-6|235 Def. §53.6]].
 
+> [!definition] Definition §7.2: Argument
+> The real number $\theta$ in the polar form (1) is the angle, in radians, that $z$ makes with the positive real axis when $z$ is interpreted as a radius vector. It has infinitely many possible values, including negative ones, that differ by integral multiples of $2\pi$; they can be determined from $\tan\theta = y/x$ once the quadrant containing $z$ is specified. Each value of $\theta$ is an **argument** of $z$, and the set of all such values is denoted by $\arg z$.
+>
+> *B&C: Sec. 7, Equations (1)–(2)*
+
+^def-7-new1
+
+> [!definition] Definition §7.3: Principal Argument
+> The **principal value** of $\arg z$, denoted $\operatorname{Arg} z$, is the unique value $\Theta$ with $-\pi < \Theta \le \pi$. Then
+>
+> $$
+> \arg z = \operatorname{Arg} z + 2n\pi \qquad (n = 0, \pm1, \pm2, \ldots) . \qquad (2)
+> $$
+>
+> When $z$ is a negative real number, $\operatorname{Arg} z = \pi$, not $-\pi$.
+>
+> *B&C: Sec. 7, Equations (1)–(2)*
+
+^def-7-new2
+
 Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any particular value of $\arg z$: if $\theta_0$ is one value, $\arg z = \theta_0 + 2n\pi$ ($n = 0, \pm1, \ldots$).
 
-> [!definition] Definition §7.2: Euler's Formula and Exponential Form
+> [!definition] Definition §7.2: Euler's Formula
 > The symbol $e^{i\theta}$, or $\exp(i\theta)$, is defined by **Euler's formula**
 >
 > $$
 > e^{i\theta} = \cos\theta + i\sin\theta , \qquad (3)
 > $$
 >
-> where $\theta$ is measured in radians, with the agreement $e^{-i\theta} = e^{i(-\theta)}$. It allows the polar form (1) to be written more compactly in **exponential form**:
->
-> $$
-> z = re^{i\theta} . \qquad (4)
-> $$
+> where $\theta$ is measured in radians, with the agreement $e^{-i\theta} = e^{i(-\theta)}$.
 >
 > *B&C: Sec. 7, Equations (3)–(4)*
 
@@ -61,6 +69,17 @@ Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any parti
 
 > [!remark]- Connections
 > - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of $e^x$, $\cos x$, $\sin x$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]]; see also [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. In this subject the choice of the symbol is justified in [[§30 The Exponential Function#^def-30-1|Definition §30.1]], where $e^z$ is defined for all complex $z$ and (3) becomes a special case.
+
+> [!definition] Definition §7.5: Exponential Form
+> Euler's formula (3) allows the polar form (1) to be written more compactly in **exponential form**:
+>
+> $$
+> z = re^{i\theta} . \qquad (4)
+> $$
+>
+> *B&C: Sec. 7, Equations (3)–(4)*
+
+^def-7-new3
 
 With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered at the origin with radius $1$, at the point reached by turning through the angle $\theta$ from the positive real axis. Their values can therefore be read off that circle without reference to Euler's formula ([[§7 Exponential Form#^ex-7-3|Example §7.3]]).
 
@@ -99,7 +118,7 @@ With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered
 
 ^pf-7-1
 
-*Uses:* [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]], [[§119 Trigonometry#^thm-119-4|Calc Thm. §119.4]] ($\cos^2\theta + \sin^2\theta = 1$)
+*Uses:* [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]], [[§119 Trigonometry#^thm-119-4|Calc Thm. §119.4]] ($\cos^2\theta + \sin^2\theta = 1$)
 
 This parametrization is the standard contour of the subject: the circle in Cauchy's integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) and in the residue theorem is traversed as $z = z_0 + Re^{i\theta}$.
 

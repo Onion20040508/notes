@@ -69,9 +69,9 @@ The lecture also proved the converse, which Lay does not state.
 ^prop-28-2
 
 > [!proof]+ Proof
-> "Only if" is Theorem §28.1. For "if", the lecture's reason is that the reduced echelon form is unique: $A$ and $B$ are row equivalent exactly when they have the same reduced echelon form ([[§2 Row Reduction and Echelon Forms#^thm-2-1|Theorem §2.1]]). It remains to see that the reduced echelon form is determined by the row space; the lecture asserts this, and here is why.
+> "Only if" is [[§28 Rank#^thm-28-1|Theorem §28.1]]. For "if", the lecture's reason is that the reduced echelon form is unique: $A$ and $B$ are row equivalent exactly when they have the same reduced echelon form ([[§2 Row Reduction and Echelon Forms#^thm-2-1|Theorem §2.1]]). It remains to see that the reduced echelon form is determined by the row space; the lecture asserts this, and here is why.
 >
-> Let $R$ and $S$ be the reduced echelon forms of $A$ and $B$. By Theorem §28.1, $\operatorname{Row} R = \operatorname{Row} A = \operatorname{Row} B = \operatorname{Row} S$; call this subspace $W$. Let $\mathbf{r}_1, \ldots, \mathbf{r}_k$ be the nonzero rows of $R$, with leading $1$s in columns $p_1 < \cdots < p_k$. Column $p_i$ of $R$ has a $1$ in row $i$ and $0$ elsewhere.
+> Let $R$ and $S$ be the reduced echelon forms of $A$ and $B$. By [[§28 Rank#^thm-28-1|Theorem §28.1]], $\operatorname{Row} R = \operatorname{Row} A = \operatorname{Row} B = \operatorname{Row} S$; call this subspace $W$. Let $\mathbf{r}_1, \ldots, \mathbf{r}_k$ be the nonzero rows of $R$, with leading $1$s in columns $p_1 < \cdots < p_k$. Column $p_i$ of $R$ has a $1$ in row $i$ and $0$ elsewhere.
 >
 > *The pivot columns are determined by $W$.* Let $\mathbf{w} = c_1\mathbf{r}_1 + \cdots + c_k\mathbf{r}_k$ be a nonzero vector in $W$, and let $i$ be the smallest index with $c_i \ne 0$. The rows $\mathbf{r}_l$ with $l \ge i$ are zero in all columns left of $p_i$, and in column $p_i$ only $\mathbf{r}_i$ is nonzero. So the first nonzero entry of $\mathbf{w}$ is $c_i$, in column $p_i$. Hence $\{p_1, \ldots, p_k\}$ is exactly the set of positions where nonzero vectors of $W$ have their first nonzero entry. The same holds for $S$, so $S$ has the same pivot columns $p_1, \ldots, p_k$ (and the same number $k = \dim W$ of nonzero rows).
 >
@@ -98,7 +98,7 @@ The lecture also proved the converse, which Lay does not state.
 > A \sim B = \begin{bmatrix} 1 & 3 & -5 & 1 & 5 \\ 0 & 1 & -2 & 2 & -7 \\ 0 & 0 & 0 & -4 & 20 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> **Row A.** By Theorem §28.1, the nonzero rows of $B$ form a basis:
+> **Row A.** By [[§28 Rank#^thm-28-1|Theorem §28.1]], the nonzero rows of $B$ form a basis:
 >
 > $$
 > \{(1, 3, -5, 1, 5),\ (0, 1, -2, 2, -7),\ (0, 0, 0, -4, 20)\} .
@@ -133,7 +133,7 @@ The lecture also proved the converse, which Lay does not state.
 
 > [!remark] Remark: Method — Bases for Row A, Col A and Nul A
 > 1. Row reduce $A$ to an echelon form $B$.
-> 2. **Row A:** the nonzero rows of $B$ (Theorem §28.1).
+> 2. **Row A:** the nonzero rows of $B$ ([[§28 Rank#^thm-28-1|Theorem §28.1]]).
 > 3. **Col A:** the columns of $A$ in the pivot positions of $B$ — columns of $A$, not of $B$.
 > 4. **Nul A:** continue to the reduced echelon form, solve $A\mathbf{x} = \mathbf{0}$ for the basic variables, and write the solution in parametric vector form; the vectors multiplying the free variables form a basis.
 > 5. **A basis of Row A made of rows of A** (Lay's footnote; the lecture's route "$\operatorname{Row} A = \operatorname{Col} A^T$"): row reduce $A^T$ and take the pivot columns of $A^T$. These are rows of $A$.
@@ -171,7 +171,7 @@ The lecture also proved the converse, which Lay does not state.
 ^thm-28-3
 
 > [!proof]+ Proof
-> By [[§25 Linearly Independent Sets; Bases#^thm-25-3|Theorem §25.3]], the pivot columns of $A$ form a basis of $\operatorname{Col} A$, so $\operatorname{rank} A$ is the number of pivot columns of $A$, that is, the number of pivot positions in an echelon form $B$ of $A$. Since $B$ has one nonzero row for each pivot, and these rows form a basis for $\operatorname{Row} A$ (Theorem §28.1), the rank of $A$ is also $\dim \operatorname{Row} A$.
+> By [[§25 Linearly Independent Sets; Bases#^thm-25-3|Theorem §25.3]], the pivot columns of $A$ form a basis of $\operatorname{Col} A$, so $\operatorname{rank} A$ is the number of pivot columns of $A$, that is, the number of pivot positions in an echelon form $B$ of $A$. Since $B$ has one nonzero row for each pivot, and these rows form a basis for $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]]), the rank of $A$ is also $\dim \operatorname{Row} A$.
 >
 > By [[§27 The Dimension of a Vector Space#^thm-27-8|Theorem §27.8]], $\dim \operatorname{Nul} A$ is the number of free variables in $A\mathbf{x} = \mathbf{0}$, that is, the number of columns of $A$ that are *not* pivot columns. (It is the number of these columns, not the columns themselves, that is related to $\operatorname{Nul} A$.) Obviously
 >
@@ -219,7 +219,7 @@ The lecture also proved the converse, which Lay does not state.
 > [!example] Example §28.2: Counting with the Rank Theorem
 > **(a)** If $A$ is a $7 \times 9$ matrix with a two-dimensional null space, what is the rank of $A$? Since $A$ has $9$ columns, $\operatorname{rank} A + 2 = 9$, so $\operatorname{rank} A = 7$.
 >
-> **(b)** Could a $6 \times 9$ matrix $A$, that is, a linear map $A : \mathbb{R}^9 \to \mathbb{R}^6$, have a two-dimensional null space? No. By the Rank Theorem $\dim \operatorname{Nul} A = 9 - \operatorname{rank} A$, and the columns of $A$ are vectors in $\mathbb{R}^6$, so $\operatorname{rank} A = \dim \operatorname{Col} A \le 6$ (Corollary §28.4). Hence
+> **(b)** Could a $6 \times 9$ matrix $A$, that is, a linear map $A : \mathbb{R}^9 \to \mathbb{R}^6$, have a two-dimensional null space? No. By the Rank Theorem $\dim \operatorname{Nul} A = 9 - \operatorname{rank} A$, and the columns of $A$ are vectors in $\mathbb{R}^6$, so $\operatorname{rank} A = \dim \operatorname{Col} A \le 6$ ([[§28 Rank#^cor-28-4|Corollary §28.4]]). Hence
 >
 > $$
 > \dim \operatorname{Nul} A = 9 - \operatorname{rank} A \ge 9 - 6 = 3 > 2 .
@@ -257,7 +257,7 @@ The lecture also proved the converse, which Lay does not state.
 ^ex-28-3
 
 ![[m235-28-1.svg]]
-*Example §28.3. Left, the domain $\mathbb{R}^3$: $\operatorname{Row} A$ is the $x_1x_3$-plane (blue) and $\operatorname{Nul} A$ is the $x_2$-axis (red), perpendicular to it. Right, the codomain $\mathbb{R}^3$: $\operatorname{Col} A$, the range of $\mathbf{x} \mapsto A\mathbf{x}$, is the plane $x_1 = x_2$ (blue), and $\operatorname{Nul} A^T$ is the line through $(1, -1, 0)$ (red). The map squeezes the red line on the left to $\mathbf{0}$ and carries the blue plane on the left one-to-one onto the blue plane on the right.*
+*[[§28 Rank#^ex-28-3|Example §28.3]]. Left, the domain $\mathbb{R}^3$: $\operatorname{Row} A$ is the $x_1x_3$-plane (blue) and $\operatorname{Nul} A$ is the $x_2$-axis (red), perpendicular to it. Right, the codomain $\mathbb{R}^3$: $\operatorname{Col} A$, the range of $\mathbf{x} \mapsto A\mathbf{x}$, is the plane $x_1 = x_2$ (blue), and $\operatorname{Nul} A^T$ is the line through $(1, -1, 0)$ (red). The map squeezes the red line on the left to $\mathbf{0}$ and carries the blue plane on the left one-to-one onto the blue plane on the right.*
 
 > [!remark] Remark: Images of a Basis
 > If $\mathbf{b}_1, \ldots, \mathbf{b}_n$ is a basis of $\mathbb{R}^n$ and $A$ is $m \times n$, then the largest number of linearly independent vectors among $A\mathbf{b}_1, \ldots, A\mathbf{b}_n$ is $\operatorname{rank} A$. Indeed, every $\mathbf{x} \in \mathbb{R}^n$ is $c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n$, so $A\mathbf{x} = c_1 A\mathbf{b}_1 + \cdots + c_n A\mathbf{b}_n$ and the vectors $A\mathbf{b}_i$ span $\operatorname{Col} A$. By the Spanning Set Theorem a subset of them is a basis of $\operatorname{Col} A$, with $\operatorname{rank} A$ elements; and by [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]] no more than $\operatorname{rank} A$ of them can be independent. (In the lecture's picture: a map $\mathbb{R}^3 \to \mathbb{R}^2$ of rank $2$ sends a basis to three vectors in a plane, two of them independent.)

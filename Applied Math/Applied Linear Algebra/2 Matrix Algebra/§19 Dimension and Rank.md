@@ -79,7 +79,9 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 ^ex-19-1
 
 ![[m235-19-1.svg]]
-*Example §19.1. The plane $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ in $\mathbb{R}^3$ with the grid of the coordinate system defined by $\mathcal{B}$: grid lines are $c_1 = \text{const}$ and $c_2 = \text{const}$. The point $\mathbf{x} = 2\mathbf{v}_1 + 3\mathbf{v}_2$ has $\mathcal{B}$-coordinates $(2, 3)$, although as a vector of $\mathbb{R}^3$ it is $(3, 12, 7)$.*
+*[[§19 Dimension and Rank#^ex-19-1|Example §19.1]]. The plane $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ in $\mathbb{R}^3$ with the grid of the coordinate system defined by $\mathcal{B}$: grid lines are $c_1 = \text{const}$ and $c_2 = \text{const}$. The point $\mathbf{x} = 2\mathbf{v}_1 + 3\mathbf{v}_2$ has $\mathcal{B}$-coordinates $(2, 3)$, although as a vector of $\mathbb{R}^3$ it is $(3, 12, 7)$.*
+
+*Chain: the same computation later in [[§26 Coordinate Systems#^ex-26-5|Chapter 4]], part (a)*
 
 > [!remark] Remark: A Subspace with a Basis of p Vectors Looks Like ℝᵖ
 > Although the points of $H$ in [[§19 Dimension and Rank#^ex-19-1|Example §19.1]] are in $\mathbb{R}^3$, they are completely determined by their coordinate vectors, which belong to $\mathbb{R}^2$; the grid makes $H$ "look" like $\mathbb{R}^2$. The correspondence $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ is a one-to-one correspondence between $H$ and $\mathbb{R}^2$ that preserves linear combinations. Such a correspondence is called an **isomorphism**, and $H$ is **isomorphic** to $\mathbb{R}^2$. In general, if $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ is a basis for $H$, then $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal{B}}$ makes $H$ look and act like $\mathbb{R}^p$, even though the vectors of $H$ may have more than $p$ entries. Details in [[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]]; rigorously, [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]] and [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]] (hub [[Dimension shows whether vector spaces are isomorphic]]).

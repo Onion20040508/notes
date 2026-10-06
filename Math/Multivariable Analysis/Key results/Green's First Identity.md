@@ -13,7 +13,9 @@ tags: [multivariable-analysis, hub]
 ## Its proof uses
 - [[§6 Differentiability#^thm-6-4|Theorem §6.4: Product Rule for Partial Derivatives]]
 - [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|Theorem §17.1: Divergence Theorem in ℝⁿ]]
-- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Definition §17.2: Gradient and Laplacian]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Definition §17.2: Gradient]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|Definition §17.2: Laplacian]]
+- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new2|Definition §17.2: Normal Derivative]]
 
 ## Used in (Multivariable Analysis)
 - [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-1|Example §17.1: Uniqueness for the Dirichlet Problem]]

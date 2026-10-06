@@ -15,12 +15,19 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ## Markov Chains
 
-> [!definition] Definition §31.1: Probability Vector; Stochastic Matrix
-> A **probability vector** is a vector with nonnegative entries that add up to $1$. A **stochastic matrix** is a square matrix whose columns are probability vectors.
+> [!definition] Definition §31.1: Probability Vector
+> A **probability vector** is a vector with nonnegative entries that add up to $1$.
 >
 > *Lay: 4.9 (text)*
 
 ^def-31-1
+
+> [!definition] Definition §31.1: Stochastic Matrix
+> A **stochastic matrix** is a square matrix whose columns are probability vectors.
+>
+> *Lay: 4.9 (text)*
+
+^def-31-new1
 
 > [!definition] Definition §31.2: Markov Chain; State Vector
 > A **Markov chain** is a sequence of probability vectors $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ together with a stochastic matrix $P$ such that
@@ -60,7 +67,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^pf-31-1
 
-*Uses:* [[§31 Applications to Markov Chains#^def-31-1|Def. §31.1]], [[§11 Matrix Operations#^prop-11-3|§11.3]] (columns of a product)
+*Uses:* [[§31 Applications to Markov Chains#^def-31-1|Def. §31.1]], [[§31 Applications to Markov Chains#^def-31-new1|Def. §31.1]], [[§11 Matrix Operations#^prop-11-3|§11.3]] (columns of a product)
 
 > [!remark]- Remark: Numerical Note — Powers or Steps
 > To compute a specific vector such as $\mathbf{x}_3$, fewer arithmetic operations are needed to compute $\mathbf{x}_1$, $\mathbf{x}_2$, $\mathbf{x}_3$ one step at a time than to compute $P^3$ and then $P^3\mathbf{x}_0$. For a small matrix (say $30 \times 30$) the machine time is insignificant either way, and a command computing $P^3\mathbf{x}_0$ may be preferred because it takes fewer keystrokes.
@@ -97,6 +104,8 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 > *Lay: Example 4.9.1*
 
 ^ex-31-1
+
+*Chain: earlier in [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Chapter 1]] · later in [[§33 The Characteristic Equation#^ex-33-4|Chapter 5]]*
 
 > [!example] Example §31.2: Voting Patterns
 > The outcome of a congressional election at a voting precinct is recorded every two years by a vector $\mathbf{x} \in \mathbb{R}^3$ listing the fractions voting Democratic (D), Republican (R) and Libertarian (L). If the outcome of one election depends only on the preceding one, the sequence of these vectors may be a Markov chain. Take the stochastic matrix
@@ -160,14 +169,14 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > P^2 = \begin{bmatrix} .37 & .26 & .33 \\ .45 & .70 & .45 \\ .18 & .04 & .22 \end{bmatrix}
 > $$
 >
-> is strictly positive, so $P$ is regular (Definition §31.4), and Theorem §31.3 explains the convergence.
+> is strictly positive, so $P$ is regular ([[§31 Applications to Markov Chains#^def-31-4|Definition §31.4]]), and [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] explains the convergence.
 >
 > *Lay: Example 4.9.3 and 4.9 (text)*
 
 ^ex-31-3
 
 ![[m235-31-1.svg]]
-*Example §31.3: the three entries of $\mathbf{x}_k$ for $k = 0, 1, \ldots, 15$, starting from $\mathbf{x}_0 = (1, 0, 0)$. They level off at the entries $.3$, $.6$, $.1$ of the steady-state vector $\mathbf{q}$ (dashed). At every $k$ the three values add up to $1$.*
+*[[§31 Applications to Markov Chains#^ex-31-3|Example §31.3]]: the three entries of $\mathbf{x}_k$ for $k = 0, 1, \ldots, 15$, starting from $\mathbf{x}_0 = (1, 0, 0)$. They level off at the entries $.3$, $.6$, $.1$ of the steady-state vector $\mathbf{q}$ (dashed). At every $k$ the three values add up to $1$.*
 
 ## Steady-State Vectors
 
@@ -178,7 +187,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > P\mathbf{q} = \mathbf{q} .
 > $$
 >
-> In Example §31.3, $\mathbf{q} = (.3, .6, .1)$ is a steady-state vector for $P$.
+> In [[§31 Applications to Markov Chains#^ex-31-3|Example §31.3]], $\mathbf{q} = (.3, .6, .1)$ is a steady-state vector for $P$.
 >
 > *Lay: 4.9 (text)*
 
@@ -200,7 +209,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > \mathbf{a}_N = \frac{1}{N}\big(\mathbf{x}_0 + P\mathbf{x}_0 + \cdots + P^{N-1}\mathbf{x}_0\big), \qquad N = 1, 2, \ldots
 > $$
 >
-> Each $P^k\mathbf{x}_0$ is a probability vector (Proposition §31.1), so $\mathbf{a}_N$ has nonnegative entries adding up to $\frac{1}{N} \cdot N = 1$: it is a probability vector. Telescoping,
+> Each $P^k\mathbf{x}_0$ is a probability vector ([[§31 Applications to Markov Chains#^prop-31-1|Proposition §31.1]]), so $\mathbf{a}_N$ has nonnegative entries adding up to $\frac{1}{N} \cdot N = 1$: it is a probability vector. Telescoping,
 >
 > $$
 > P\mathbf{a}_N - \mathbf{a}_N = \frac{1}{N}\big(P^N\mathbf{x}_0 - \mathbf{x}_0\big) ,
@@ -242,7 +251,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > \qquad \text{Check: } P\mathbf{q} = \begin{bmatrix} 18/70 + 12/70 \\ 12/70 + 28/70 \end{bmatrix} = \begin{bmatrix} 30/70 \\ 40/70 \end{bmatrix} = \mathbf{q} .
 > $$
 >
-> **(b)** The migration matrix $M$ of Example §31.1. Here $M - I = \begin{bmatrix} -.05 & .03 \\ .05 & -.03 \end{bmatrix}$; the second row is $-1$ times the first, and the first gives $x_1 = \frac35 x_2$. With $x_2 = 5$, $\mathbf{w} = (3, 5)$ and
+> **(b)** The migration matrix $M$ of [[§31 Applications to Markov Chains#^ex-31-1|Example §31.1]]. Here $M - I = \begin{bmatrix} -.05 & .03 \\ .05 & -.03 \end{bmatrix}$; the second row is $-1$ times the first, and the first gives $x_1 = \frac35 x_2$. With $x_2 = 5$, $\mathbf{w} = (3, 5)$ and
 >
 > $$
 > \mathbf{q} = \frac18 \begin{bmatrix} 3 \\ 5 \end{bmatrix} = \begin{bmatrix} .375 \\ .625 \end{bmatrix},
@@ -256,12 +265,19 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 
 ^ex-31-4
 
-> [!definition] Definition §31.4: Regular Stochastic Matrix; Convergence
-> A stochastic matrix $P$ is **regular** if some matrix power $P^k$ contains only strictly positive entries. A sequence of vectors $\{\mathbf{x}_k : k = 1, 2, \ldots\}$ **converges** to a vector $\mathbf{q}$ as $k \to \infty$ if the entries of $\mathbf{x}_k$ can be made as close as desired to the corresponding entries of $\mathbf{q}$ by taking $k$ sufficiently large.
+> [!definition] Definition §31.4: Regular Stochastic Matrix
+> A stochastic matrix $P$ is **regular** if some matrix power $P^k$ contains only strictly positive entries.
 >
 > *Lay: 4.9 (text)*
 
 ^def-31-4
+
+> [!definition] Definition §31.4: Convergence of a Sequence of Vectors
+> A sequence of vectors $\{\mathbf{x}_k : k = 1, 2, \ldots\}$ **converges** to a vector $\mathbf{q}$ as $k \to \infty$ if the entries of $\mathbf{x}_k$ can be made as close as desired to the corresponding entries of $\mathbf{q}$ by taking $k$ sufficiently large.
+>
+> *Lay: 4.9 (text)*
+
+^def-31-new2
 
 > [!remark]- Connections
 > - Convergence of a vector sequence is convergence of each entry as a sequence of numbers, [[§69 Sequences#^def-69-2|Calc Def. §69.2]] (precise form [[§69 Sequences#^def-69-3|Calc Def. §69.3]]).
@@ -278,18 +294,18 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 The striking part of the theorem is that the initial state has no effect on the long-term behavior of the chain.
 
 > [!remark] Remark: Why It Works
-> Lecture L18 explains the picture for a $2 \times 2$ matrix $A$ with positive entries. $A$ maps the closed first quadrant $\mathbb{R}^2_+$ into a narrower cone $A(\mathbb{R}^2_+)$, the region between the rays through the columns $A\mathbf{e}_1$ and $A\mathbf{e}_2$. Then $A^2(\mathbb{R}^2_+) = A(A(\mathbb{R}^2_+))$ is narrower still, and so on: the cones $A^k(\mathbb{R}^2_+)$ close down on a single ray, by the Perron–Frobenius theorem the ray of a vector $\mathbf{u}$ with positive entries and $A\mathbf{u} = \lambda\mathbf{u}$, $\lambda > 0$. So the direction of $A^k\mathbf{x}$ approaches that of $\mathbf{u}$ for every $\mathbf{x}$ in the quadrant. For a regular stochastic $P$ the same holds in $\mathbb{R}^n$. Here $\lambda = 1$: adding up the entries of $P\mathbf{u} = \lambda\mathbf{u}$ gives $S\mathbf{u} = \lambda S\mathbf{u}$ by $SP = S$ (Proposition §31.1), and $S\mathbf{u} > 0$. Since every $\mathbf{x}_k$ is a probability vector, its entries add up to $1$, so not only the direction but the vector itself converges: to the multiple $\mathbf{q}$ of $\mathbf{u}$ whose entries add up to $1$.
+> Lecture L18 explains the picture for a $2 \times 2$ matrix $A$ with positive entries. $A$ maps the closed first quadrant $\mathbb{R}^2_+$ into a narrower cone $A(\mathbb{R}^2_+)$, the region between the rays through the columns $A\mathbf{e}_1$ and $A\mathbf{e}_2$. Then $A^2(\mathbb{R}^2_+) = A(A(\mathbb{R}^2_+))$ is narrower still, and so on: the cones $A^k(\mathbb{R}^2_+)$ close down on a single ray, by the Perron–Frobenius theorem the ray of a vector $\mathbf{u}$ with positive entries and $A\mathbf{u} = \lambda\mathbf{u}$, $\lambda > 0$. So the direction of $A^k\mathbf{x}$ approaches that of $\mathbf{u}$ for every $\mathbf{x}$ in the quadrant. For a regular stochastic $P$ the same holds in $\mathbb{R}^n$. Here $\lambda = 1$: adding up the entries of $P\mathbf{u} = \lambda\mathbf{u}$ gives $S\mathbf{u} = \lambda S\mathbf{u}$ by $SP = S$ ([[§31 Applications to Markov Chains#^prop-31-1|Proposition §31.1]]), and $S\mathbf{u} > 0$. Since every $\mathbf{x}_k$ is a probability vector, its entries add up to $1$, so not only the direction but the vector itself converges: to the multiple $\mathbf{q}$ of $\mathbf{u}$ whose entries add up to $1$.
 >
 > *Source: 235 lecture L18*
 
 ^rem-31-3
 
 > [!example] Example §31.5: The Voting Pattern in the Long Run
-> In Example §31.2, what percentage of the voters are likely to vote for the Republican candidate in some election many years from now, assuming the election outcomes form a Markov chain?
+> In [[§31 Applications to Markov Chains#^ex-31-2|Example §31.2]], what percentage of the voters are likely to vote for the Republican candidate in some election many years from now, assuming the election outcomes form a Markov chain?
 >
 > **The wrong approach** for hand computation: pick some $\mathbf{x}_0$ and compute $\mathbf{x}_1, \ldots, \mathbf{x}_k$ for a large $k$. There is no way of knowing how many vectors to compute, and the limiting values remain uncertain.
 >
-> **The right approach:** compute the steady-state vector and appeal to Theorem §31.3 ($P$ has only positive entries, so it is regular with $k = 1$). Subtract $1$ from each diagonal entry of $P$ and multiply the augmented matrix by $10$:
+> **The right approach:** compute the steady-state vector and appeal to [[§31 Applications to Markov Chains#^thm-31-3|Theorem §31.3]] ($P$ has only positive entries, so it is regular with $k = 1$). Subtract $1$ from each diagonal entry of $P$ and multiply the augmented matrix by $10$:
 >
 > $$
 > [\,(P - I)\ \ \mathbf{0}\,] = \begin{bmatrix} -.3 & .1 & .3 & 0 \\ .2 & -.2 & .3 & 0 \\ .1 & .1 & -.6 & 0 \end{bmatrix},

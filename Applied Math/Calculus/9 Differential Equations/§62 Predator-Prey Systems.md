@@ -171,7 +171,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 ^ex-62-2
 
 ![[m233-62-1.svg]]
-*Phase portrait of the rabbit–wolf system of [[§62 Predator-Prey Systems#^ex-62-1|Examples §62.1]] and §62.2. The grey arrows show the direction of $(dR/dt, dW/dt)$, so they give the direction field of $dW/dR$ and the sense of travel. The red trajectory through $P_0(1000, 40)$ is traversed counterclockwise; $R$ turns at $P_1$ and $P_3$ on the line $W = 80$, and $W$ turns at $P_2$ and $P_0$ on the line $R = 1000$. Two smaller trajectories (blue) circle the equilibrium point $(1000, 80)$ as well.*
+*Phase portrait of the rabbit–wolf system of [[§62 Predator-Prey Systems#^ex-62-1|Examples §62.1]] and [[§62 Predator-Prey Systems#^ex-62-2|§62.2]]. The grey arrows show the direction of $(dR/dt, dW/dt)$, so they give the direction field of $dW/dR$ and the sense of travel. The red trajectory through $P_0(1000, 40)$ is traversed counterclockwise; $R$ turns at $P_1$ and $P_3$ on the line $W = 80$, and $W$ turns at $P_2$ and $P_0$ on the line $R = 1000$. Two smaller trajectories (blue) circle the equilibrium point $(1000, 80)$ as well.*
 
 ![[m233-62-2.svg]]
 *$R(t)$ (blue, left scale) and $W(t)$ (red, right scale) for the solution with $R(0) = 1000$, $W(0) = 40$, computed numerically. One cycle takes about $T \approx 170$ months. The rabbits peak at $t_1 \approx 36$, the wolves at $t_2 \approx 63$, and the rabbits bottom out at $t_3 \approx 110$. The wolf peak trails the rabbit peak by about $27$ months, and the wolf minimum trails the rabbit minimum by about $60$ months; on average the lag is about a quarter cycle.*

@@ -10,7 +10,7 @@ tags: [measure-theory, math551]
 ## Definition and Well-Definedness
 
 > [!definition] Definition §14.1: Lebesgue Integral of a Non-Negative Simple Function
-> Let $h$ be a non-negative measurable [[§12 Measurable Functions#^def-12-6|simple function]] on $\mathbb{R}^n$, let $E \in \mathcal{M}$, $E \subseteq \mathbb{R}^n$. Write
+> Let $h$ be a non-negative measurable [[§12b Simple Functions and Modes of Convergence#^def-12-6|simple function]] on $\mathbb{R}^n$, let $E \in \mathcal{M}$, $E \subseteq \mathbb{R}^n$. Write
 >
 > $$
 > h(x) = \sum_{j=1}^{p} a_j \, \chi_{A_j}(x),
@@ -25,7 +25,7 @@ tags: [measure-theory, math551]
 ^def-14-1
 
 > [!remark]- Connections
-> - The representation with disjoint $A_j$ is the [[§12 Measurable Functions#^prop-12-13|canonical representation]] (Prop. §12.13); $m$ is [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]] (Def. §10.5).
+> - The representation with disjoint $A_j$ is the [[§12b Simple Functions and Modes of Convergence#^prop-12-13|canonical representation]] ([[§12b Simple Functions and Modes of Convergence#^prop-12-13|Prop. §12.13]]); $m$ is [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]] ([[§10 Lebesgue Measurable Sets#^def-10-5|Def. §10.5]]).
 > - For $h$ a step function on $[a,b]$ this is a Riemann sum: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]].
 
 > [!remark] Remark: Well-Definedness
@@ -264,7 +264,7 @@ We now extend the integral from simple functions to general non-negative measura
 ^thm-14-4
 
 > [!proof]+ Proof
-> Define $f(x) = \lim_{k \to \infty} f_k(x)$. Since $\{f_k\}$ is an increasing sequence of non-negative measurable functions, $f$ is measurable (as the [[§12 Measurable Functions#^cor-12-8|pointwise limit of measurable functions]]) and $f(x) \geq 0$.
+> Define $f(x) = \lim_{k \to \infty} f_k(x)$. Since $\{f_k\}$ is an increasing sequence of non-negative measurable functions, $f$ is measurable (as the [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|pointwise limit of measurable functions]]) and $f(x) \geq 0$.
 >
 > **Step 1: $\lim_{k \to \infty} \int_E f_k\,dx \leq \int_E f\,dx$.**
 >
@@ -292,7 +292,7 @@ We now extend the integral from simple functions to general non-negative measura
 
 ^pf-14-4
 
-*Uses:* [[§12 Measurable Functions#^cor-12-8|§12.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-2|Def. §14.2]], [[Monotone Convergence Theorem|451 §10.1]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|§12.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-2|Def. §14.2]], [[Monotone Convergence Theorem|451 §10.1]]
 
 > [!proof]+ Proof of the MCT (continued)
 > **Applying the lemma.** Fix $c \in (0, 1)$ and define:
@@ -346,6 +346,6 @@ We now extend the integral from simple functions to general non-negative measura
 > [!remark]- Connections
 > - Not to be confused with the MATH 451 [[Monotone Convergence Theorem]] for sequences of numbers, which it uses in Step 1.
 > - The Riemann integral has no such theorem: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (increasing $f_n \nearrow$ Dirichlet function). Riemann-side exchange of limit and integral needs uniform convergence: [[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]].
-> - Summarized with Fatou and DCT in [[§15 The General Lebesgue Integral#^rem-15-3|Rem. §15.3]]; the $L^p$ theory ([[§19 Normed Linear Spaces and Lᵖ Spaces|§19]]) and Tonelli ([[Tonelli's Theorem|§17.3]]) build on it.
+> - Summarized with Fatou and DCT in [[§15a The Dominated Convergence Theorem#^rem-15-3|Rem. §15.3]]; the $L^p$ theory ([[§19 Normed Linear Spaces and Lᵖ Spaces|§19]]) and Tonelli ([[Tonelli's Theorem|§17.3]]) build on it.
 
 The consequences of the MCT (linearity, MCT II, the induced measure, the decreasing MCT and Fatou's lemma) continue in [[§14a Consequences of the Monotone Convergence Theorem]].

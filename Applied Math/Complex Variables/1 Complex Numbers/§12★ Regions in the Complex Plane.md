@@ -16,14 +16,21 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ## Neighborhoods and Boundary Points
 
-> [!definition] Definition §12.1: Neighborhood; Deleted Neighborhood
+> [!definition] Definition §12.1: Neighborhood
 > The **$\varepsilon$ neighborhood** of a point $z_0$ is the set
 >
 > $$
 > |z - z_0| < \varepsilon \qquad (1)
 > $$
 >
-> of all points $z$ lying inside but not on the circle centered at $z_0$ with a specified positive radius $\varepsilon$. When the value of $\varepsilon$ is understood or immaterial, it is called just a **neighborhood**. A **deleted neighborhood**, or punctured disk, is the set
+> of all points $z$ lying inside but not on the circle centered at $z_0$ with a specified positive radius $\varepsilon$. When the value of $\varepsilon$ is understood or immaterial, it is called just a **neighborhood**.
+>
+> *B&C: Sec. 12, Equations (1)–(2)*
+
+^def-12-1
+
+> [!definition] Definition §12.2: Deleted Neighborhood
+> A **deleted neighborhood**, or punctured disk, is the set
 >
 > $$
 > 0 < |z - z_0| < \varepsilon \qquad (2)
@@ -33,24 +40,49 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 >
 > *B&C: Sec. 12, Equations (1)–(2)*
 
-^def-12-1
+^def-12-new1
 
-> [!definition] Definition §12.2: Interior, Exterior and Boundary Points
-> Let $S$ be a set of points of the plane.
-> - A point $z_0$ is an **interior point** of $S$ if there is some neighborhood of $z_0$ that contains only points of $S$.
-> - It is an **exterior point** of $S$ if there is a neighborhood of it containing no points of $S$.
-> - If $z_0$ is neither of these, it is a **boundary point** of $S$. A boundary point is therefore a point all of whose neighborhoods contain at least one point in $S$ and at least one point not in $S$. The totality of all boundary points is the **boundary** of $S$.
+> [!definition] Definition §12.2: Interior Point
+> Let $S$ be a set of points of the plane. A point $z_0$ is an **interior point** of $S$ if there is some neighborhood of $z_0$ that contains only points of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
 ^def-12-2
 
-> [!definition] Definition §12.3: Open and Closed Sets; Closure
-> A set is **open** if it does not contain any of its boundary points. A set is **closed** if it contains all of its boundary points. The **closure** of a set $S$ is the closed set consisting of all points in $S$ together with the boundary of $S$.
+> [!definition] Definition §12.4: Exterior Point
+> Let $S$ be a set of points of the plane. A point $z_0$ is an **exterior point** of $S$ if there is a neighborhood of it containing no points of $S$.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new2
+
+> [!definition] Definition §12.5: Boundary Point
+> Let $S$ be a set of points of the plane. If a point $z_0$ is neither an interior point nor an exterior point of $S$, it is a **boundary point** of $S$. A boundary point is therefore a point all of whose neighborhoods contain at least one point in $S$ and at least one point not in $S$. The totality of all boundary points is the **boundary** of $S$.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new3
+
+> [!definition] Definition §12.3: Open Set
+> A set is **open** if it does not contain any of its boundary points.
 >
 > *B&C: Sec. 12 (text)*
 
 ^def-12-3
+
+> [!definition] Definition §12.7: Closed Set
+> A set is **closed** if it contains all of its boundary points.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new4
+
+> [!definition] Definition §12.8: Closure
+> The **closure** of a set $S$ is the closed set consisting of all points in $S$ together with the boundary of $S$.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new5
 
 > [!remark]- Connections
 > - The same definitions in $\mathbb{R}^n$, with open balls for neighborhoods: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior, exterior, boundary points), [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]] (open and closed sets), [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]] (closure). The plane $\mathbb{C}$ with distance $|z_1 - z_2|$ is $\mathbb{R}^2$ with its Euclidean metric ([[§4 Vectors and Moduli#^prop-4-2|Proposition §4.2]]).
@@ -77,8 +109,8 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 
 ## Connected Sets, Domains and Regions
 
-> [!definition] Definition §12.4: Connected Set, Domain, Region
-> An open set $S$ is **connected** if each pair of points $z_1$ and $z_2$ in it can be joined by a **polygonal line**, consisting of a finite number of line segments joined end to end, that lies entirely in $S$. A nonempty open set that is connected is called a **domain**. A domain together with some, none, or all of its boundary points is referred to as a **region**.
+> [!definition] Definition §12.4: Connected Set
+> An open set $S$ is **connected** if each pair of points $z_1$ and $z_2$ in it can be joined by a **polygonal line**, consisting of a finite number of line segments joined end to end, that lies entirely in $S$.
 >
 > *B&C: Sec. 12 (text)*
 
@@ -86,6 +118,20 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 
 > [!remark]- Connections
 > - For open subsets of the plane, B&C's polygonal definition agrees with topological connectedness, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]. A polygonal line is a path, so a polygonally connected set is path-connected, hence connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]]. Conversely, in a connected open set the points reachable from a fixed point by polygonal lines form a nonempty subset that is both open and closed in it, hence everything: the argument of [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]], with a segment inside a disk in place of a path in a chart.
+
+> [!definition] Definition §12.10: Domain
+> A nonempty open set that is connected is called a **domain**.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new6
+
+> [!definition] Definition §12.11: Region
+> A domain together with some, none, or all of its boundary points is referred to as a **region**.
+>
+> *B&C: Sec. 12 (text)*
+
+^def-12-new7
 
 > [!definition] Definition §12.5: Bounded Set
 > A set $S$ is **bounded** if every point of $S$ lies inside some circle $|z| = R$; otherwise it is **unbounded**.

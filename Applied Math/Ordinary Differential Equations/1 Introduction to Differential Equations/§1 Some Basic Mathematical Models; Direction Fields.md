@@ -15,10 +15,8 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Differential Equations as Mathematical Models
 
-> [!definition] Definition §1.1: Differential Equation; Mathematical Model
-> A **differential equation** is an equation containing derivatives of an unknown function. A differential equation that describes some physical process is called a **mathematical model** of the process.
->
-> Constants in a model that depend on the particular object or situation, and may take a range of values (such as the mass $m$ and the drag coefficient $\gamma$ below), are called **parameters**. Constants with a fixed value for all objects (such as $g$) are physical constants.
+> [!definition] Definition §1.1: Differential Equation
+> A **differential equation** is an equation containing derivatives of an unknown function.
 >
 > *BDP: 1.1 (text)*
 
@@ -26,6 +24,15 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 > [!remark]- Connections
 > - See also: [[§57 Modeling with Differential Equations#^def-57-5|Calc Def. §57.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models: natural growth, [[§57 Modeling with Differential Equations#^def-57-1|Calc Def. §57.1]], and the spring, [[§57 Modeling with Differential Equations#^def-57-4|Calc Def. §57.4]].
+
+> [!definition] Definition §1.1: Mathematical Model
+> A differential equation that describes some physical process is called a **mathematical model** of the process.
+>
+> Constants in a model that depend on the particular object or situation, and may take a range of values (such as the mass $m$ and the drag coefficient $\gamma$ below), are called **parameters**. Constants with a fixed value for all objects (such as $g$) are physical constants.
+>
+> *BDP: 1.1 (text)*
+
+^def-1-new1
 
 > [!example] Example §1.1: A Falling Object
 > Formulate a differential equation for the motion of an object falling in the atmosphere near sea level.

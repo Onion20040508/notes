@@ -78,7 +78,7 @@ Chapter 5 left the question of which matrices are diagonalizable without a simpl
 
 ^ex-48-1
 
-The orthogonality of the eigenvectors in Example §48.1 is no accident: they belong to distinct eigenvalues of a symmetric matrix.
+The orthogonality of the eigenvectors in [[§48★ Diagonalization of Symmetric Matrices#^ex-48-1|Example §48.1]] is no accident: they belong to distinct eigenvalues of a symmetric matrix.
 
 > [!theorem] Theorem §48.1: Eigenvectors of a Symmetric Matrix Are Orthogonal
 > If $A$ is symmetric, then any two eigenvectors from different eigenspaces are orthogonal.
@@ -184,7 +184,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 > \mathbf{u}_3 = \frac{1}{\|2\mathbf{v}_3\|} 2\mathbf{v}_3 = \frac13 \begin{bmatrix} -2 \\ -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2/3 \\ -1/3 \\ 2/3 \end{bmatrix}.
 > $$
 >
-> **Assemble.** By Theorem §48.1, $\mathbf{u}_3$ is orthogonal to $\mathbf{u}_1$ and $\mathbf{u}_2$ automatically (check: $\mathbf{u}_3 \cdot \mathbf{u}_1 = \frac{1}{3\sqrt2}(-2 + 2) = 0$). So $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\}$ is orthonormal, and with
+> **Assemble.** By [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|Theorem §48.1]], $\mathbf{u}_3$ is orthogonal to $\mathbf{u}_1$ and $\mathbf{u}_2$ automatically (check: $\mathbf{u}_3 \cdot \mathbf{u}_1 = \frac{1}{3\sqrt2}(-2 + 2) = 0$). So $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\}$ is orthonormal, and with
 >
 > $$
 > P = [\,\mathbf{u}_1\ \ \mathbf{u}_2\ \ \mathbf{u}_3\,] = \begin{bmatrix} 1/\sqrt2 & -1/\sqrt{18} & -2/3 \\ 0 & 4/\sqrt{18} & -1/3 \\ 1/\sqrt2 & 1/\sqrt{18} & 2/3 \end{bmatrix}, \qquad
@@ -201,10 +201,10 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 
 > [!remark] Remark: Method — Orthogonal Diagonalization
 > To orthogonally diagonalize a symmetric $n \times n$ matrix $A$:
-> 1. Find the eigenvalues: the roots of $\det(A - \lambda I) = 0$. All are real (Theorem §48.3(a)).
+> 1. Find the eigenvalues: the roots of $\det(A - \lambda I) = 0$. All are real ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3]](a)).
 > 2. For each eigenvalue $\lambda$, find a basis of the eigenspace $\operatorname{Nul}(A - \lambda I)$ by row reduction.
-> 3. If an eigenspace has dimension $\ge 2$, apply Gram–Schmidt to its basis to get an orthogonal basis of that eigenspace. Eigenvectors from *different* eigenspaces are already orthogonal (Theorem §48.1); never mix eigenvectors of different eigenvalues in Gram–Schmidt.
-> 4. Normalize every vector. Together they form an orthonormal basis $\mathbf{u}_1, \dots, \mathbf{u}_n$ of $\mathbb{R}^n$ (Theorem §48.3(b) guarantees there are $n$ of them).
+> 3. If an eigenspace has dimension $\ge 2$, apply Gram–Schmidt to its basis to get an orthogonal basis of that eigenspace. Eigenvectors from *different* eigenspaces are already orthogonal ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|Theorem §48.1]]); never mix eigenvectors of different eigenvalues in Gram–Schmidt.
+> 4. Normalize every vector. Together they form an orthonormal basis $\mathbf{u}_1, \dots, \mathbf{u}_n$ of $\mathbb{R}^n$ ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3]](b) guarantees there are $n$ of them).
 > 5. Set $P = [\,\mathbf{u}_1\ \cdots\ \mathbf{u}_n\,]$ and $D = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$, listing each eigenvalue in the column position of its eigenvector. Then $A = PDP^T$.
 
 ^rem-48-1
@@ -212,7 +212,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 ## The Spectral Theorem
 
 > [!definition] Definition §48.3: Spectrum
-> The set of eigenvalues of a matrix $A$ is sometimes called the **spectrum** of $A$. A description of the eigenvalues and eigenvectors of a class of matrices, such as Theorem §48.3, is called a **spectral theorem**.
+> The set of eigenvalues of a matrix $A$ is sometimes called the **spectrum** of $A$. A description of the eigenvalues and eigenvectors of a class of matrices, such as [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3]], is called a **spectral theorem**.
 >
 > *Lay: 7.1 (text)*
 
@@ -240,7 +240,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 >
 > using that a $1 \times 1$ matrix equals its transpose and $A^T = A$. So $q$ is real. On the other hand $q = \bar{\mathbf{x}}^T (\lambda \mathbf{x}) = \lambda\, \bar{\mathbf{x}}^T \mathbf{x}$, and $\bar{\mathbf{x}}^T \mathbf{x} = |x_1|^2 + \cdots + |x_n|^2$ is real and positive. Hence $\lambda = q / (\bar{\mathbf{x}}^T \mathbf{x})$ is real. Since $A - \lambda I$ is then a real singular matrix, $\lambda$ also has a *real* eigenvector.
 >
-> **(c)** is Theorem §48.1.
+> **(c)** is [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|Theorem §48.1]].
 >
 > **(d) Step 1: Schur factorization.** *Claim: an $n \times n$ real matrix $A$ whose $n$ eigenvalues (with multiplicity) are all real can be written $A = URU^T$ with $U$ orthogonal and $R$ upper triangular.* Induction on $n$; for $n = 1$ take $U = [1]$. For $n > 1$, let $\lambda_1$ be an eigenvalue and $\mathbf{u}_1$ a real unit eigenvector (it exists because $A - \lambda_1 I$ is a real singular matrix, as at the end of (a)). Extend $\{\mathbf{u}_1\}$ to a basis of $\mathbb{R}^n$ and apply Gram–Schmidt ([[§43 The Gram–Schmidt Process#^thm-43-1|Theorem §43.1]]), which keeps $\mathbf{u}_1$ first: this gives an orthonormal basis $\mathbf{u}_1, \mathbf{w}_2, \dots, \mathbf{w}_n$. Let $W = [\,\mathbf{w}_2\ \cdots\ \mathbf{w}_n\,]$ and $U_1 = [\,\mathbf{u}_1\ \ W\,]$, an orthogonal matrix. By block multiplication,
 >
@@ -321,12 +321,19 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 
 *Uses:* [[§14 Partitioned Matrices#^thm-14-3|§14.3]] (column–row expansion), [[§41 Orthogonal Sets#^def-41-3|Def. §41.3]] (orthogonal projection onto a line), [[§41 Orthogonal Sets#^thm-41-4|§41.4]]
 
-> [!definition] Definition §48.4: Spectral Decomposition; Projection Matrix
-> The representation (2) of a symmetric matrix $A$ is called a **spectral decomposition** of $A$, because it breaks up $A$ into pieces determined by the spectrum (eigenvalues) of $A$. Each matrix $\mathbf{u}_j \mathbf{u}_j^T$ ($\mathbf{u}_j$ a unit vector) is a **projection matrix**, in the sense of Theorem §48.4: it sends $\mathbf{x}$ to its orthogonal projection onto $\operatorname{Span}\{\mathbf{u}_j\}$.
+> [!definition] Definition §48.4: Spectral Decomposition
+> The representation (2) of a symmetric matrix $A$ is called a **spectral decomposition** of $A$, because it breaks up $A$ into pieces determined by the spectrum (eigenvalues) of $A$.
 >
 > *Lay: 7.1 (text)*
 
 ^def-48-4
+
+> [!definition] Definition §48.4: Projection Matrix
+> Each matrix $\mathbf{u}_j \mathbf{u}_j^T$ ($\mathbf{u}_j$ a unit vector) is a **projection matrix**, in the sense of [[§48★ Diagonalization of Symmetric Matrices#^thm-48-4|Theorem §48.4]]: it sends $\mathbf{x}$ to its orthogonal projection onto $\operatorname{Span}\{\mathbf{u}_j\}$.
+>
+> *Lay: 7.1 (text)*
+
+^def-48-new1
 
 > [!example] Example §48.3: A Spectral Decomposition
 > Construct a spectral decomposition of the matrix $A$ that has the orthogonal diagonalization
@@ -355,7 +362,7 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 ^ex-48-3
 
 ![[m235-48-1.svg]]
-*The symmetric matrix $A = \begin{bmatrix} 7 & 2 \\ 2 & 4 \end{bmatrix}$ of Example §48.3 maps the unit circle onto an ellipse. Its orthonormal eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) lie along perpendicular lines (green), and $A$ just stretches them by the eigenvalues $8$ and $3$: these images are the semi-axes of the ellipse. A non-symmetric diagonalizable matrix also stretches along eigenvector lines, but those lines are not perpendicular.*
+*The symmetric matrix $A = \begin{bmatrix} 7 & 2 \\ 2 & 4 \end{bmatrix}$ of [[§48★ Diagonalization of Symmetric Matrices#^ex-48-3|Example §48.3]] maps the unit circle onto an ellipse. Its orthonormal eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) lie along perpendicular lines (green), and $A$ just stretches them by the eigenvalues $8$ and $3$: these images are the semi-axes of the ellipse. A non-symmetric diagonalizable matrix also stretches along eigenvector lines, but those lines are not perpendicular.*
 
 > [!remark]- Connections
 > - Rigorous treatment: in the language of [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection $P_U$), (2) reads $T = \sum_\lambda \lambda P_{E(\lambda, T)}$, a sum over the distinct eigenvalues of projections onto the mutually orthogonal eigenspaces; this is how the spectral theorem is stated for self-adjoint operators in infinite dimensions.
@@ -366,6 +373,6 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 ^rem-48-2
 
 > [!remark]- Remark: Powers of Symmetric Matrices
-> If $A$ is symmetric, so is $A^2$: $(A^2)^T = (AA)^T = A^T A^T = AA = A^2$. Hence, by Theorem §48.2, if $A$ is orthogonally diagonalizable, so is $A^2$; explicitly, $A^2 = PDP^T PDP^T = PD^2P^T$, with the same eigenvectors and squared eigenvalues. (Lay's Practice Problems 1–2.)
+> If $A$ is symmetric, so is $A^2$: $(A^2)^T = (AA)^T = A^T A^T = AA = A^2$. Hence, by [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|Theorem §48.2]], if $A$ is orthogonally diagonalizable, so is $A^2$; explicitly, $A^2 = PDP^T PDP^T = PD^2P^T$, with the same eigenvectors and squared eigenvalues. (Lay's Practice Problems 1–2.)
 
 ^rem-48-3

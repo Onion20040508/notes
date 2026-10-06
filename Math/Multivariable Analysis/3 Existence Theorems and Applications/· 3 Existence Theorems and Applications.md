@@ -15,12 +15,14 @@ tags: [chapter, multivariable-analysis]
 - [[§12 The Implicit Function Theorem]]
 - [[§13 The Inverse Function Theorem]]
 - [[§14 Optimization and Lagrange Multipliers]]
+- [[§14a Second-Order Sufficient Conditions]]
+- [[§14b The Unit Circle and Polar Coordinates]]
 
 ## Central results
-- [[Implicit Function Theorem]] (§12.1)
-- [[Inverse Function Theorem (several variables)]] (§13.2)
-- [[Method of Lagrange Multipliers]] (§14.2)
-- [[Second Derivative Test in Several Variables]] (§14.4)
+- [[Implicit Function Theorem]] ([[§12 The Implicit Function Theorem#^thm-12-1|§12.1]])
+- [[Inverse Function Theorem (several variables)]] ([[§13 The Inverse Function Theorem#^thm-13-2|§13.2]])
+- [[Method of Lagrange Multipliers]] ([[§14 Optimization and Lagrange Multipliers#^thm-14-2|§14.2]])
+- [[Second Derivative Test in Several Variables]] ([[§14a Second-Order Sufficient Conditions#^thm-14-4|§14.4]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

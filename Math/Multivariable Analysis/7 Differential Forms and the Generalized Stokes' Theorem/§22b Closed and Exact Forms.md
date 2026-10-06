@@ -201,6 +201,10 @@ The converse — is every closed form exact? — is the central question. Equiva
 
 *Uses:* [[§22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]], [[§22 The Algebra of Differential Forms#^def-22-new2|Def. §22.8]], [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^def-22-5|Def. §22.5]], [[Multivariable Chain Rule|§10.2]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
+*Chain ([[Angle form on the punctured plane|angle form]]):* ← [[§13 The Inverse Function Theorem#^ex-13-3|Chapter 3]]
+
+*Chain ([[Unit circle and unit sphere|unit circle]]):* ← [[§22a The Exterior Derivative#^ex-22-5|§22.5]]
+
 What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the removed origin. The closed curve $\boldsymbol{\gamma}$ wraps around this hole, and the form $\omega$ detects it. On domains without holes, this failure does not occur:
 
 ![[m452-22-2.svg]]

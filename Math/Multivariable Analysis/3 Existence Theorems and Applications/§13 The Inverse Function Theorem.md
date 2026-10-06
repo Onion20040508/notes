@@ -409,6 +409,8 @@ $$
 
 ^ex-13-3
 
+*Chain ([[Angle form on the punctured plane|angle form]]):* [[§22b Closed and Exact Forms#^prop-22-11|Chapter 7]] →
+
 > [!remark]- Connections
 > - The conversion formulas with worked examples: [[§65 Polar Coordinates#^thm-65-2|Calc Thm. §65.2]].
 

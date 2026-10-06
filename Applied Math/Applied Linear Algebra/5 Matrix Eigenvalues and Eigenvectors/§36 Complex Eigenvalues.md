@@ -75,7 +75,7 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 > A\mathbf{v}_2 = \begin{bmatrix} .5(-2 + 4i) - .6(5) \\ .75(-2 + 4i) + 1.1(5) \end{bmatrix} = \begin{bmatrix} -4 + 2i \\ 4 + 3i \end{bmatrix}, \qquad (.8 + .6i)\mathbf{v}_2 = \begin{bmatrix} -1.6 + 3.2i - 1.2i + 2.4i^2 \\ 4 + 3i \end{bmatrix} = \begin{bmatrix} -4 + 2i \\ 4 + 3i \end{bmatrix} .
 > $$
 >
-> The eigenvalues $.8 \mp .6i$ are complex conjugates, and so are the eigenvectors: $\mathbf{v}_2 = \overline{\mathbf{v}_1}$ (Theorem §36.2).
+> The eigenvalues $.8 \mp .6i$ are complex conjugates, and so are the eigenvectors: $\mathbf{v}_2 = \overline{\mathbf{v}_1}$ ([[§36 Complex Eigenvalues#^thm-36-2|Theorem §36.2]]).
 >
 > *Lay: Examples 5.5.2 and 5.5.5*
 
@@ -85,13 +85,13 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 > Let $\lambda$ be a (complex) eigenvalue of the $2 \times 2$ matrix $A$, and let $(p, q)$ be a row of $A - \lambda I$ that is not zero.
 > 1. The equation $px_1 + qx_2 = 0$ alone determines the eigenspace; the other row is a complex multiple of this one and can be ignored.
 > 2. Take $\mathbf{v} = \begin{bmatrix} -q \\ p \end{bmatrix}$ (or any nonzero multiple; scale to clear decimals).
-> 3. For a real $A$, the eigenvector for $\bar\lambda$ is $\overline{\mathbf{v}}$ (Theorem §36.2), so only one of the two needs computing.
+> 3. For a real $A$, the eigenvector for $\bar\lambda$ is $\overline{\mathbf{v}}$ ([[§36 Complex Eigenvalues#^thm-36-2|Theorem §36.2]]), so only one of the two needs computing.
 >
 > For example, with the second row $(.75,\ .3 + .6i)$ of (1), step 2 gives $(-.3 - .6i,\ .75)$, which is $\frac{3}{20}\mathbf{v}_1$.
 
 ^rem-36-1
 
-Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which becomes visible when the iterates of a point are plotted.
+Surprisingly, the matrix of [[§36 Complex Eigenvalues#^ex-36-2|Example §36.2]] acts essentially as a rotation, which becomes visible when the iterates of a point are plotted.
 
 > [!example] Example §36.3: Iterates Lie on an Ellipse
 > With $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$ and $\mathbf{x}_0 = (2, 0)$, compute $\mathbf{x}_{k+1} = A\mathbf{x}_k$:
@@ -101,7 +101,7 @@ Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which
 > \mathbf{x}_2 = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}\begin{bmatrix} 1.0 \\ 1.5 \end{bmatrix} = \begin{bmatrix} .5 - .9 \\ .75 + 1.65 \end{bmatrix} = \begin{bmatrix} -.4 \\ 2.4 \end{bmatrix}, \qquad \ldots
 > $$
 >
-> The points $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ circle the origin counterclockwise along an elliptical orbit and never settle down. The reason is Example §36.4 below: $A$ is a pure rotation in a suitable coordinate system.
+> The points $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ circle the origin counterclockwise along an elliptical orbit and never settle down. The reason is [[§36 Complex Eigenvalues#^ex-36-4|Example §36.4]] below: $A$ is a pure rotation in a suitable coordinate system.
 >
 > *Lay: Example 5.5.3*
 
@@ -161,14 +161,14 @@ Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which
 ^thm-36-2
 
 > [!proof]+ Proof
-> By Proposition §36.1, $A\overline{\mathbf{x}} = \overline{A\mathbf{x}} = \overline{\lambda\mathbf{x}} = \bar\lambda\,\overline{\mathbf{x}}$, and $\overline{\mathbf{x}} \ne \mathbf{0}$ because $\mathbf{x} \ne \mathbf{0}$.
+> By [[§36 Complex Eigenvalues#^prop-36-1|Proposition §36.1]], $A\overline{\mathbf{x}} = \overline{A\mathbf{x}} = \overline{\lambda\mathbf{x}} = \bar\lambda\,\overline{\mathbf{x}}$, and $\overline{\mathbf{x}} \ne \mathbf{0}$ because $\mathbf{x} \ne \mathbf{0}$.
 
 ^pf-36-2
 
 *Uses:* [[§36 Complex Eigenvalues#^prop-36-1|§36.1]]
 
 > [!remark]- Connections
-> - Rigorous treatment: the non-real zeros of a polynomial with real coefficients come in conjugate pairs, [[§13 Polynomials#^ladr-4-14|LADR 4.14]] (applied to the characteristic polynomial, this gives the eigenvalue half of Theorem §36.2); over $\mathbb{R}$ such a pair is an irreducible quadratic factor, [[§13 Polynomials#^ladr-4-16|LADR 4.16]].
+> - Rigorous treatment: the non-real zeros of a polynomial with real coefficients come in conjugate pairs, [[§13 Polynomials#^ladr-4-14|LADR 4.14]] (applied to the characteristic polynomial, this gives the eigenvalue half of [[§36 Complex Eigenvalues#^thm-36-2|Theorem §36.2]]); over $\mathbb{R}$ such a pair is an irreducible quadratic factor, [[§13 Polynomials#^ladr-4-16|LADR 4.16]].
 > - ODE version: [[§32 Complex-Valued Eigenvalues#^thm-32-1|331 Thm. §32.1]] (the same statement, and the resulting solutions $\boldsymbol{\xi}e^{rt}$ and $\overline{\boldsymbol{\xi}}e^{\bar rt}$ of $\mathbf{x}' = A\mathbf{x}$ are complex conjugates of each other).
 
 The next result is the basic "building block" for all real $2 \times 2$ matrices with complex eigenvalues.
@@ -203,7 +203,7 @@ The next result is the basic "building block" for all real $2 \times 2$ matrices
 
 ^pf-36-3
 
-*Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§33 The Characteristic Equation#^thm-33-4|§33.4]]
+*Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§53 Complex Numbers#^def-53-new1|Def. §53.6]], [[§33 The Characteristic Equation#^thm-33-4|§33.4]]
 
 > [!remark]- Connections
 > - See also: [[§96★ Linear Transformations#^prop-96-1|342 Prop. §96.1]] (the map $w = Az$ rotates through $\operatorname{Arg} A$ and scales by $|A|$), [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the Cauchy–Riemann equations make the Jacobian of an analytic map a rotation–scaling matrix) and [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|342 Thm. §112.1]] (so analytic maps preserve angles where $f' \ne 0$).
@@ -216,10 +216,10 @@ $$
 
 which is De Moivre's Theorem ([[§53 Complex Numbers#^thm-53-6|Theorem §53.6]]) in matrix form.
 
-Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C$. The proof uses two facts: for a real matrix, $A(\operatorname{Re}\mathbf{x}) = \operatorname{Re}(A\mathbf{x})$ and $A(\operatorname{Im}\mathbf{x}) = \operatorname{Im}(A\mathbf{x})$ (Proposition §36.1), and the real and imaginary parts of an eigenvector for a complex eigenvalue are linearly independent.
+Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C$. The proof uses two facts: for a real matrix, $A(\operatorname{Re}\mathbf{x}) = \operatorname{Re}(A\mathbf{x})$ and $A(\operatorname{Im}\mathbf{x}) = \operatorname{Im}(A\mathbf{x})$ ([[§36 Complex Eigenvalues#^prop-36-1|Proposition §36.1]]), and the real and imaginary parts of an eigenvector for a complex eigenvalue are linearly independent.
 
 > [!example] Example §36.4: The Rotation Inside A
-> Let $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$, $\lambda = .8 - .6i$ and $\mathbf{v}_1 = \begin{bmatrix} -2 - 4i \\ 5 \end{bmatrix}$, as in Example §36.2. Let $P$ be the real $2 \times 2$ matrix
+> Let $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$, $\lambda = .8 - .6i$ and $\mathbf{v}_1 = \begin{bmatrix} -2 - 4i \\ 5 \end{bmatrix}$, as in [[§36 Complex Eigenvalues#^ex-36-2|Example §36.2]]. Let $P$ be the real $2 \times 2$ matrix
 >
 > $$
 > P = [\,\operatorname{Re}\mathbf{v}_1 \;\; \operatorname{Im}\mathbf{v}_1\,] = \begin{bmatrix} -2 & -4 \\ 5 & 0 \end{bmatrix} .
@@ -231,7 +231,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 > C = P^{-1}AP = \frac{1}{20}\begin{bmatrix} 0 & 4 \\ -5 & -2 \end{bmatrix}\begin{bmatrix} -4 & -2 \\ 4 & -3 \end{bmatrix} = \frac{1}{20}\begin{bmatrix} 16 & -12 \\ 12 & 16 \end{bmatrix} = \begin{bmatrix} .8 & -.6 \\ .6 & .8 \end{bmatrix} .
 > $$
 >
-> By Proposition §36.3, $C$ is a pure rotation, since $|\lambda|^2 = (.8)^2 + (.6)^2 = 1$ (through the angle $\varphi$ with $\cos\varphi = .8$, $\sin\varphi = .6$, about $36.9°$). From $C = P^{-1}AP$,
+> By [[§36 Complex Eigenvalues#^prop-36-3|Proposition §36.3]], $C$ is a pure rotation, since $|\lambda|^2 = (.8)^2 + (.6)^2 = 1$ (through the angle $\varphi$ with $\cos\varphi = .8$, $\sin\varphi = .6$, about $36.9°$). From $C = P^{-1}AP$,
 >
 > $$
 > A = PCP^{-1} = P\begin{bmatrix} .8 & -.6 \\ .6 & .8 \end{bmatrix}P^{-1} .
@@ -243,7 +243,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 > \mathbf{x} \xrightarrow{\ P^{-1}\ } \mathbf{u} \xrightarrow{\ C \text{ (rotation)}\ } C\mathbf{u} \xrightarrow{\ P\ } A\mathbf{x} .
 > $$
 >
-> The rotation produces an ellipse, as in Example §36.3, instead of a circle, because the coordinate system given by the columns of $P$ is not rectangular and does not have equal unit lengths on its two axes.
+> The rotation produces an ellipse, as in [[§36 Complex Eigenvalues#^ex-36-3|Example §36.3]], instead of a circle, because the coordinate system given by the columns of $P$ is not rectangular and does not have equal unit lengths on its two axes.
 >
 > *Lay: Example 5.5.7*
 
@@ -271,7 +271,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 > \lambda\mathbf{v} = (a - bi)(\mathbf{x} + i\mathbf{y}) = (a\mathbf{x} + b\mathbf{y}) + i(-b\mathbf{x} + a\mathbf{y}) .
 > $$
 >
-> Taking real and imaginary parts of $A\mathbf{v} = \lambda\mathbf{v}$, and using $A\mathbf{x} = \operatorname{Re}(A\mathbf{v})$ and $A\mathbf{y} = \operatorname{Im}(A\mathbf{v})$ (Proposition §36.1),
+> Taking real and imaginary parts of $A\mathbf{v} = \lambda\mathbf{v}$, and using $A\mathbf{x} = \operatorname{Re}(A\mathbf{v})$ and $A\mathbf{y} = \operatorname{Im}(A\mathbf{v})$ ([[§36 Complex Eigenvalues#^prop-36-1|Proposition §36.1]]),
 >
 > $$
 > A\mathbf{x} = a\mathbf{x} + b\mathbf{y}, \qquad A\mathbf{y} = -b\mathbf{x} + a\mathbf{y} .
@@ -290,16 +290,16 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 *Uses:* [[§36 Complex Eigenvalues#^prop-36-1|§36.1]], [[§36 Complex Eigenvalues#^def-36-2|Def. §36.2]], [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem: independent columns make a square matrix invertible)
 
 > [!remark]- Connections
-> - Rigorous treatment: on a real vector space, an irreducible quadratic factor $x^2 + bx + c$ ($b^2 < 4c$) of the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-24|LADR 5.24]]) gives two-dimensional invariant subspaces without real eigenvectors, [[§15 The Minimal Polynomial#^ladr-5-33|LADR 5.33]] (and hence every operator on an odd-dimensional real space has an eigenvalue, [[§15 The Minimal Polynomial#^ladr-5-34|LADR 5.34]]). Theorem §36.4 is the explicit $2 \times 2$ form: on the plane spanned by $\operatorname{Re}\mathbf{v}$, $\operatorname{Im}\mathbf{v}$ the matrix acts as a rotation–scaling.
+> - Rigorous treatment: on a real vector space, an irreducible quadratic factor $x^2 + bx + c$ ($b^2 < 4c$) of the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-24|LADR 5.24]]) gives two-dimensional invariant subspaces without real eigenvectors, [[§15 The Minimal Polynomial#^ladr-5-33|LADR 5.33]] (and hence every operator on an odd-dimensional real space has an eigenvalue, [[§15 The Minimal Polynomial#^ladr-5-34|LADR 5.34]]). [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]] is the explicit $2 \times 2$ form: on the plane spanned by $\operatorname{Re}\mathbf{v}$, $\operatorname{Im}\mathbf{v}$ the matrix acts as a rotation–scaling.
 > - See also: for $\mathbf{x}' = A\mathbf{x}$ the same two real vectors, the real and imaginary parts of a complex eigenvector, give two independent real solutions, [[§32 Complex-Valued Eigenvalues#^thm-32-2|331 Thm. §32.2]], whose independence proof re-proves the fact in Step 1 of the proof above.
 
 > [!remark] Remark: Signs and Conventions
-> Lay pairs the eigenvalue $a - bi$ with $C = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$. The lecture uses the eigenvalue $\lambda = a + bi$ with eigenvector $\mathbf{v}$; then $P = [\,\operatorname{Re}\mathbf{v} \;\; \operatorname{Im}\mathbf{v}\,]$ gives $AP = P\begin{bmatrix} a & b \\ -b & a \end{bmatrix}$, that is, $P^{-1}AP = M_{a - bi}$. Both are Theorem §36.4: the eigenvector of $a + bi$ is the conjugate of the eigenvector of $a - bi$ (Theorem §36.2), and conjugating $\mathbf{v}$ changes the sign of $\operatorname{Im}\mathbf{v}$, the second column of $P$, which changes the signs of the off-diagonal entries of $C$.
+> Lay pairs the eigenvalue $a - bi$ with $C = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$. The lecture uses the eigenvalue $\lambda = a + bi$ with eigenvector $\mathbf{v}$; then $P = [\,\operatorname{Re}\mathbf{v} \;\; \operatorname{Im}\mathbf{v}\,]$ gives $AP = P\begin{bmatrix} a & b \\ -b & a \end{bmatrix}$, that is, $P^{-1}AP = M_{a - bi}$. Both are [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]]: the eigenvector of $a + bi$ is the conjugate of the eigenvector of $a - bi$ ([[§36 Complex Eigenvalues#^thm-36-2|Theorem §36.2]]), and conjugating $\mathbf{v}$ changes the sign of $\operatorname{Im}\mathbf{v}$, the second column of $P$, which changes the signs of the off-diagonal entries of $C$.
 
 ^rem-36-2
 
 > [!example] Example §36.5: Powers of a Matrix with Complex Eigenvalues
-> Let $A = \begin{bmatrix} 1 & -2 \\ 1 & 3 \end{bmatrix}$. Find its eigenvalues, write $A = PCP^{-1}$ as in Theorem §36.4, and describe $A^N$ for large $N$.
+> Let $A = \begin{bmatrix} 1 & -2 \\ 1 & 3 \end{bmatrix}$. Find its eigenvalues, write $A = PCP^{-1}$ as in [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]], and describe $A^N$ for large $N$.
 >
 > **Eigenvalues.** $\det(A - \lambda I) = (1 - \lambda)(3 - \lambda) + 2 = \lambda^2 - 4\lambda + 5$, so
 >
@@ -309,7 +309,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 >
 > **Eigenvector for $\lambda = 2 + i$.** $A - (2 + i)I = \begin{bmatrix} -1 - i & -2 \\ 1 & 1 - i \end{bmatrix}$. Multiplying the second row by $-1 - i$ gives $(-1 - i,\ (1 - i)(-1 - i)) = (-1 - i, -2)$, the first row, as expected. So the eigenspace is given by $(-1 - i)x_1 - 2x_2 = 0$, and $\mathbf{v} = \begin{bmatrix} 2 \\ -1 - i \end{bmatrix}$. (Check, second row: $2 + (1 - i)(-1 - i) = 2 + (-1 - 1) = 0$.)
 >
-> **The factorization.** Theorem §36.4 uses the eigenvalue $a - bi = 2 - i$ (so $a = 2$, $b = 1$) and its eigenvector $\overline{\mathbf{v}} = (2, -1 + i)$:
+> **The factorization.** [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]] uses the eigenvalue $a - bi = 2 - i$ (so $a = 2$, $b = 1$) and its eigenvector $\overline{\mathbf{v}} = (2, -1 + i)$:
 >
 > $$
 > P = \begin{bmatrix} 2 & 0 \\ -1 & 1 \end{bmatrix}, \qquad C = \begin{bmatrix} 2 & -1 \\ 1 & 2 \end{bmatrix}; \qquad
@@ -333,7 +333,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 ^ex-36-5
 
 > [!remark] Remark: Higher Dimensions
-> The phenomenon persists in higher dimensions. If $A$ is a $3 \times 3$ real matrix with a complex eigenvalue, there is a plane in $\mathbb{R}^3$ on which $A$ acts as a rotation, possibly combined with a scaling: every vector in the plane is mapped to a vector in the same plane, and the plane is **invariant** under $A$ (it is spanned by $\operatorname{Re}\mathbf{v}$ and $\operatorname{Im}\mathbf{v}$, by Step 2 of the proof of Theorem §36.4). For example,
+> The phenomenon persists in higher dimensions. If $A$ is a $3 \times 3$ real matrix with a complex eigenvalue, there is a plane in $\mathbb{R}^3$ on which $A$ acts as a rotation, possibly combined with a scaling: every vector in the plane is mapped to a vector in the same plane, and the plane is **invariant** under $A$ (it is spanned by $\operatorname{Re}\mathbf{v}$ and $\operatorname{Im}\mathbf{v}$, by Step 2 of the proof of [[§36 Complex Eigenvalues#^thm-36-4|Theorem §36.4]]). For example,
 >
 > $$
 > A = \begin{bmatrix} .8 & -.6 & 0 \\ .6 & .8 & 0 \\ 0 & 0 & 1.07 \end{bmatrix}

@@ -337,7 +337,7 @@ To show a hypothesis is necessary, construct a counterexample where the conclusi
 > - **HW6 P1(b)**: $f_k = 1/k$ on $\mathbb{R}$: $\int f_k = \infty$ for all $k$, but $f_k \to 0$ with $\int f = 0$.
 > - **HW8 P1(b)**: $f_k = -\chi_{\{|x|>k\}}$: increasing, $\int f_k = -\infty$ for all $k$, but $f_k \to 0$ with $\int f = 0$.
 > - **HW8 P5(b)**: If $g$ is unbounded on every co-null set, construct $f = \sum \frac{1}{j^2 m(A_{k_j}')} \chi_{A_{k_j}'}$ with $\int |f| = \sum 1/j^2 < \infty$ but $\int |fg| \geq \sum k_j/j^2 \geq \sum 1/j = \infty$.
-> - **HW10 P5(a)**: $f(x) = x\sin(\pi/x)$ not [[§18 Differentiation Theory#^def-18-2|BV]] — partition at $x_k = 2/(2k+1)$ gives variation $\geq \sum 1/(k+2)$, divergent (compare [[§18 Differentiation Theory#^ex-18-3|Example §18.3]]).
+> - **HW10 P5(a)**: $f(x) = x\sin(\pi/x)$ not [[§18 Differentiation Theory#^def-18-new1|BV]] — partition at $x_k = 2/(2k+1)$ gives variation $\geq \sum 1/(k+2)$, divergent (compare [[§18 Differentiation Theory#^ex-18-3|Example §18.3]]).
 
 ^ex-19-24
 

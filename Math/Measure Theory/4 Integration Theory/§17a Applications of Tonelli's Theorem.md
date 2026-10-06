@@ -69,8 +69,8 @@ tags: [measure-theory, math551]
 
 ^pf-17-8
 
-> [!proof]+ Proof of [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|Theorem §17.8]] (continued)
-> **Step 3: Conclusion.** By the [[§17 Invariance Properties and Fubini's Theorem#^lem-17-9|lemma]], $F_m^{(1)} \times Z_2$, $Z_1 \times F_k^{(2)}$, and $Z_1 \times Z_2$ all have measure zero (for the last, take $E = Z_2$ or use $Z_1 \times Z_2 \subseteq Z_1 \times [-k,k]^q$ and take $k \to \infty$). Their countable unions also have measure zero. Hence $E_1 \times E_2$ is measurable.
+> [!proof]+ Proof of [[§17a Applications of Tonelli's Theorem#^thm-17-8|Theorem §17.8]] (continued)
+> **Step 3: Conclusion.** By the [[§17a Applications of Tonelli's Theorem#^lem-17-9|lemma]], $F_m^{(1)} \times Z_2$, $Z_1 \times F_k^{(2)}$, and $Z_1 \times Z_2$ all have measure zero (for the last, take $E = Z_2$ or use $Z_1 \times Z_2 \subseteq Z_1 \times [-k,k]^q$ and take $k \to \infty$). Their countable unions also have measure zero. Hence $E_1 \times E_2$ is measurable.
 >
 > **Step 4: The measure formula.** Apply [[Tonelli's Theorem|Tonelli]] to $\chi_{E_1 \times E_2}(x, y) = \chi_{E_1}(x)\,\chi_{E_2}(y)$:
 >
@@ -80,11 +80,11 @@ tags: [measure-theory, math551]
 
 ^pf-17-8-cont
 
-*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§17 Invariance Properties and Fubini's Theorem#^lem-17-9|§17.9]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Tonelli's Theorem|§17.3]]
+*Uses:* [[Inner Regularity of Lebesgue Measure|§11.10]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§17a Applications of Tonelli's Theorem#^lem-17-9|§17.9]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Tonelli's Theorem|§17.3]]
 
 > [!remark]- Connections
 > - The case of rectangles is the definition of volume ([[§9 Lebesgue Outer Measure#^def-9-2|Def. §9.2]]); the theorem extends it to all measurable “rectangles” $E_1 \times E_2$.
-> - Used in [[§17 Invariance Properties and Fubini's Theorem#^cor-17-10|The Graph Has Measure Zero]], the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|Subgraph Theorem]], and [[§18 Differentiation Theory#^prop-18-24|Measurability of f(x + t)]] (§18.24).
+> - Used in [[§17a Applications of Tonelli's Theorem#^cor-17-10|The Graph Has Measure Zero]], the [[§17a Applications of Tonelli's Theorem#^thm-17-11|Subgraph Theorem]], and [[§18b Differentiating the Integral#^prop-18-24|Measurability of f(x + t)]] ([[§18b Differentiating the Integral#^prop-18-24|§18.24]]).
 
 > [!theorem] Corollary §17.10: The Graph Has Measure Zero
 > Let $f$ be a real-valued measurable function on $E$, $E \in \mathcal{M}(\mathbb{R}^n)$. Define the **graph** of $f$ by:
@@ -104,7 +104,7 @@ tags: [measure-theory, math551]
 > G_E(f) \subseteq \bigcup_{k=-\infty}^{\infty} \bigl(E_k \times [k\delta, (k+1)\delta]\bigr).
 > $$
 >
-> By the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|product set theorem]], each $E_k \times [k\delta, (k+1)\delta]$ is measurable with measure $m(E_k) \cdot \delta$. By [[Properties of Lebesgue Outer Measure|countable subadditivity]]:
+> By the [[§17a Applications of Tonelli's Theorem#^thm-17-8|product set theorem]], each $E_k \times [k\delta, (k+1)\delta]$ is measurable with measure $m(E_k) \cdot \delta$. By [[Properties of Lebesgue Outer Measure|countable subadditivity]]:
 >
 > $$
 > m(G_E(f)) \leq \sum_{k=-\infty}^{\infty} m(E_k) \cdot \delta = \delta \sum_{k=-\infty}^{\infty} m(E_k) = \delta \cdot m(E).
@@ -116,7 +116,7 @@ tags: [measure-theory, math551]
 
 ^pf-17-10
 
-*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
+*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§17a Applications of Tonelli's Theorem#^thm-17-8|§17.8]], [[Properties of Lebesgue Outer Measure|§9.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§10 Lebesgue Measurable Sets#^ex-10-1|Ex. §10.1]]
 
 ![[m551-17-2.svg]]
 *Why a graph is null (here $n = 1$, $E = [0,1]$). Cut the range into bands $[k\delta, (k+1)\delta]$ (dotted). The part of the graph $G_E(f)$ (red) over $E_k = \{k\delta \leq f < (k+1)\delta\}$ lies in the box $E_k \times [k\delta, (k+1)\delta]$ of measure $\delta\, m(E_k)$. One band is highlighted: its $E_k$ (blue on the axis) has three pieces, since it is a level set rather than an interval. The boxes cover the graph, their total measure is $\delta \sum_k m(E_k)$, and $\delta$ can be taken arbitrarily small.*
@@ -143,13 +143,13 @@ tags: [measure-theory, math551]
 ^thm-17-11
 
 > [!proof]+ Proof
-> **Step 1: Simple functions.** If $f(x) = \sum_{j=1}^{p} a_j\,\chi_{A_j}(x)$ with $a_j \geq 0$ and $\{A_j\}$ pairwise disjoint measurable, $\bigcup A_j = E$ ([[§12 Measurable Functions#^prop-12-13|§12.13]]), then:
+> **Step 1: Simple functions.** If $f(x) = \sum_{j=1}^{p} a_j\,\chi_{A_j}(x)$ with $a_j \geq 0$ and $\{A_j\}$ pairwise disjoint measurable, $\bigcup A_j = E$ ([[§12b Simple Functions and Modes of Convergence#^prop-12-13|§12.13]]), then:
 >
 > $$
 > \underline{G}(f) = \bigcup_{j=1}^{p} A_j \times [0, a_j),
 > $$
 >
-> which is measurable (finite union of [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|product sets]]). Its measure is:
+> which is measurable (finite union of [[§17a Applications of Tonelli's Theorem#^thm-17-8|product sets]]). Its measure is:
 >
 > $$
 > m(\underline{G}(f)) = \sum_{j=1}^{p} m(A_j) \cdot a_j = \int_E f\,dx.
@@ -173,7 +173,7 @@ tags: [measure-theory, math551]
 
 ^pf-17-11
 
-*Uses:* [[§12 Measurable Functions#^prop-12-13|§12.13]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-8|§17.8]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Simple Function Approximation Theorem|§12.14]], [[Continuity of Measure|§11.12]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Tonelli's Theorem|§17.3]]
+*Uses:* [[§12b Simple Functions and Modes of Convergence#^prop-12-13|§12.13]], [[§17a Applications of Tonelli's Theorem#^thm-17-8|§17.8]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Simple Function Approximation Theorem|§12.14]], [[Continuity of Measure|§11.12]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Tonelli's Theorem|§17.3]]
 
 > [!remark]- Connections
 > - “Integral = area under the graph” is the MATH 451 picture of the Riemann integral via [[§32 The Definition of the Riemann Integral#^def-32-1|upper and lower sums]]; here it becomes a theorem about Lebesgue measure in $\mathbb{R}^{n+1}$.
@@ -224,7 +224,7 @@ tags: [measure-theory, math551]
 > \text{RHS} = \int_0^{\infty} p\,\lambda^{p-1} \int_E \chi_{\{|f(x)| > \lambda\}}(x)\,dx\,d\lambda.
 > $$
 >
-> Define $F(x, \lambda) = p\,\lambda^{p-1}\,\chi_{\{(x, \lambda)\,:\, x \in E,\; 0 \leq \lambda < |f(x)|\}}$. Then $F$ is non-negative and measurable on $\mathbb{R}^n \times \mathbb{R}$ ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|§17.11]]).
+> Define $F(x, \lambda) = p\,\lambda^{p-1}\,\chi_{\{(x, \lambda)\,:\, x \in E,\; 0 \leq \lambda < |f(x)|\}}$. Then $F$ is non-negative and measurable on $\mathbb{R}^n \times \mathbb{R}$ ([[§17a Applications of Tonelli's Theorem#^thm-17-11|§17.11]]).
 >
 > By [[Tonelli's Theorem|Tonelli's theorem]] (swapping order of integration):
 >
@@ -239,7 +239,7 @@ tags: [measure-theory, math551]
 
 ^pf-17-13
 
-*Uses:* [[Tonelli's Theorem|§17.3]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|§17.11]], [[Riemann Integrable Implies Lebesgue Integrable|§15.10]], [[Fundamental Theorem of Calculus|451 §34.1]]
+*Uses:* [[Tonelli's Theorem|§17.3]], [[§17a Applications of Tonelli's Theorem#^thm-17-11|§17.11]], [[Riemann Integrable Implies Lebesgue Integrable|§15.10]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark] Remark: Interpretation
 > When $p = 1$, the formula reduces to:
@@ -250,7 +250,7 @@ tags: [measure-theory, math551]
 >
 > This says: the integral of $|f|$ equals the “area under the distribution function curve.” Geometrically, instead of slicing vertically (integrating $|f|$ over $x$), we slice horizontally (integrating the measure of superlevel sets over $\lambda$). This is exactly the Cavalieri principle from calculus, made rigorous via Tonelli.
 >
-> The layer cake formula is the foundation for defining $L^p$ norms ([[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]]) in terms of distribution functions, and is crucial in interpolation theory and harmonic analysis.
+> The layer cake formula is the foundation for defining $L^p$ norms ([[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new2|Def. §19.6]]) in terms of distribution functions, and is crucial in interpolation theory and harmonic analysis.
 
 ^rem-17-5
 
@@ -258,5 +258,5 @@ tags: [measure-theory, math551]
 *The layer cake formula for $p = 1$, with $E = [0,1]$. Slicing the region under $|f|$ (blue) horizontally at height $\lambda$ cuts out the superlevel set $\{|f| > \lambda\}$ (red, left); its measure is the value $f^{\ast}(\lambda)$ of the distribution function (red segment, right). Integrating the slice lengths over $\lambda$ gives the area under $f^{\ast}$, which is the area under $|f|$: Tonelli on the subgraph, sliced the other way.*
 
 > [!remark]- Connections
-> - The $p = 1$ case is the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|Subgraph Theorem]] read with horizontal slices, i.e. the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem]] applied to $\underline{G}(\vert f\vert)$ in the other variable.
+> - The $p = 1$ case is the [[§17a Applications of Tonelli's Theorem#^thm-17-11|Subgraph Theorem]] read with horizontal slices, i.e. the [[§17a Applications of Tonelli's Theorem#^thm-17-7|Cross-Section Theorem]] applied to $\underline{G}(\vert f\vert)$ in the other variable.
 > - The $L^p$ spaces it feeds into: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]].

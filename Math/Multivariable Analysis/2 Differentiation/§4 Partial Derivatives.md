@@ -96,3 +96,5 @@ tags: [multivariable-analysis, math452]
 > Note: $\Delta r = r_{xx} + r_{yy} = \dfrac{1}{r}$.
 
 ^ex-4-2
+
+*Chain ([[Radial functions|radial functions]]):* [[§17b Radial Functions|Chapter 5]] →

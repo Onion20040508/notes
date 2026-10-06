@@ -49,20 +49,20 @@ The SVD imitates the following property of diagonalization. If $A$ is symmetric,
 >
 > and the maximum length is $\|A\mathbf{v}_1\| = \sqrt{324 + 36} = \sqrt{360} = 6\sqrt{10}$.
 >
-> **The minor axis.** By Proposition §51.2 below, the maximum of $\|A\mathbf{x}\|$ over unit vectors orthogonal to $\mathbf{v}_1$ is attained at $\mathbf{v}_2$:
+> **The minor axis.** By [[§51★ The Singular Value Decomposition#^prop-51-2|Proposition §51.2]] below, the maximum of $\|A\mathbf{x}\|$ over unit vectors orthogonal to $\mathbf{v}_1$ is attained at $\mathbf{v}_2$:
 >
 > $$
 > A\mathbf{v}_2 = \begin{bmatrix} (-8 - 11 + 28)/3 \\ (-16 - 7 - 4)/3 \end{bmatrix} = \begin{bmatrix} 3 \\ -9 \end{bmatrix}, \qquad \|A\mathbf{v}_2\| = \sqrt{90} = 3\sqrt{10} .
 > $$
 >
-> This point is on the minor axis of the ellipse, just as $A\mathbf{v}_1$ is on the major axis; and $A\mathbf{v}_3 = \mathbf{0}$. The singular values of $A$ (Definition §51.1) are $\sigma_1 = \sqrt{360} = 6\sqrt{10}$, $\sigma_2 = \sqrt{90} = 3\sqrt{10}$, $\sigma_3 = 0$: the first two are the lengths of the semi-axes of the ellipse.
+> This point is on the minor axis of the ellipse, just as $A\mathbf{v}_1$ is on the major axis; and $A\mathbf{v}_3 = \mathbf{0}$. The singular values of $A$ ([[§51★ The Singular Value Decomposition#^def-51-1|Definition §51.1]]) are $\sigma_1 = \sqrt{360} = 6\sqrt{10}$, $\sigma_2 = \sqrt{90} = 3\sqrt{10}$, $\sigma_3 = 0$: the first two are the lengths of the semi-axes of the ellipse.
 >
 > *Lay: Examples 7.4.1 and 7.4.2*
 
 ^ex-51-1
 
 ![[m235-51-1.svg]]
-*Example §51.1: the image of the unit sphere of $\mathbb{R}^3$ under $A$ is the region bounded by an ellipse in $\mathbb{R}^2$. Its semi-axes are $A\mathbf{v}_1 = (18, 6)$ and $A\mathbf{v}_2 = (3, -9)$, perpendicular (Theorem §51.3), of lengths $\sigma_1 = 6\sqrt{10}$ and $\sigma_2 = 3\sqrt{10}$. The direction $\mathbf{v}_3$ is collapsed to $\mathbf{0}$, so the sphere is flattened onto the plane, filling the inside of the ellipse.*
+*[[§51★ The Singular Value Decomposition#^ex-51-1|Example §51.1]]: the image of the unit sphere of $\mathbb{R}^3$ under $A$ is the region bounded by an ellipse in $\mathbb{R}^2$. Its semi-axes are $A\mathbf{v}_1 = (18, 6)$ and $A\mathbf{v}_2 = (3, -9)$, perpendicular ([[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3]]), of lengths $\sigma_1 = 6\sqrt{10}$ and $\sigma_2 = 3\sqrt{10}$. The direction $\mathbf{v}_3$ is collapsed to $\mathbf{0}$, so the sphere is flattened onto the plane, filling the inside of the ellipse.*
 
 > [!theorem] Proposition §51.1: The Eigenvalues of AᵀA
 > Let $A$ be an $m \times n$ matrix. Then $A^TA$ is symmetric and can be orthogonally diagonalized. If $\{\mathbf{v}_1, \dots, \mathbf{v}_n\}$ is an orthonormal basis for $\mathbb{R}^n$ consisting of eigenvectors of $A^TA$, with eigenvalues $\lambda_1, \dots, \lambda_n$, then
@@ -124,9 +124,9 @@ By renumbering if necessary, we may assume the eigenvalues are arranged so that 
 *Uses:* [[§50★ Constrained Optimization#^thm-50-1|§50.1]], [[§50★ Constrained Optimization#^thm-50-4|§50.4]], [[§51★ The Singular Value Decomposition#^prop-51-1|§51.1]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§26 Singular Value Decomposition#^ladr-7-65|LADR 7.65]] defines the singular values of any linear map $T : V \to W$ between inner product spaces exactly this way, from the positive operator $T^*T$ ([[§26 Singular Value Decomposition#^ladr-7-64|LADR 7.64]]: $T^*T$ is positive, $\operatorname{null} T^*T = \operatorname{null} T$). The first part of Proposition §51.2 is "the norm of $T$ is its largest singular value", [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
+> - Rigorous treatment: [[§26 Singular Value Decomposition#^ladr-7-65|LADR 7.65]] defines the singular values of any linear map $T : V \to W$ between inner product spaces exactly this way, from the positive operator $T^*T$ ([[§26 Singular Value Decomposition#^ladr-7-64|LADR 7.64]]: $T^*T$ is positive, $\operatorname{null} T^*T = \operatorname{null} T$). The first part of [[§51★ The Singular Value Decomposition#^prop-51-2|Proposition §51.2]] is "the norm of $T$ is its largest singular value", [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
 
-The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal. This is no accident.
+The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in [[§51★ The Singular Value Decomposition#^ex-51-1|Example §51.1]] are orthogonal. This is no accident.
 
 > [!theorem] Theorem §51.3: An Orthogonal Basis for Col A
 > Suppose $\{\mathbf{v}_1, \dots, \mathbf{v}_n\}$ is an orthonormal basis of $\mathbb{R}^n$ consisting of eigenvectors of $A^TA$, arranged so that the corresponding eigenvalues of $A^TA$ satisfy $\lambda_1 \ge \cdots \ge \lambda_n$, and suppose $A$ has $r$ nonzero singular values. Then $\{A\mathbf{v}_1, \dots, A\mathbf{v}_r\}$ is an orthogonal basis for $\operatorname{Col} A$, and $\operatorname{rank} A = r$.
@@ -155,7 +155,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 *Uses:* [[§51★ The Singular Value Decomposition#^prop-51-1|§51.1]], [[§51★ The Singular Value Decomposition#^def-51-1|Def. §51.1]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§28 Rank#^def-28-1|Def. §28.1]] (rank)
 
 > [!remark]- Remark: Numerical Note — Effective Rank
-> The rank of $A$ may be very sensitive to small changes in its entries. Counting pivot columns does not work well when a computer row reduces $A$: roundoff error often creates an echelon form with full rank. In practice, the most reliable way to estimate the rank of a large matrix is to count its nonzero singular values (Theorem §51.3), treating extremely small nonzero singular values as zero. The number that remains is the **effective rank** of the matrix.
+> The rank of $A$ may be very sensitive to small changes in its entries. Counting pivot columns does not work well when a computer row reduces $A$: roundoff error often creates an echelon form with full rank. In practice, the most reliable way to estimate the rank of a large matrix is to count its nonzero singular values ([[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3]]), treating extremely small nonzero singular values as zero. The number that remains is the **effective rank** of the matrix.
 
 ^rem-51-1
 
@@ -179,7 +179,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 ^thm-51-4
 
 > [!proof]+ Proof
-> Let $\lambda_i$ and $\mathbf{v}_i$ be as in Theorem §51.3, so that $\{A\mathbf{v}_1, \dots, A\mathbf{v}_r\}$ is an orthogonal basis for $\operatorname{Col} A$. Normalize each $A\mathbf{v}_i$ to obtain an orthonormal basis $\{\mathbf{u}_1, \dots, \mathbf{u}_r\}$, where
+> Let $\lambda_i$ and $\mathbf{v}_i$ be as in [[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3]], so that $\{A\mathbf{v}_1, \dots, A\mathbf{v}_r\}$ is an orthogonal basis for $\operatorname{Col} A$. Normalize each $A\mathbf{v}_i$ to obtain an orthonormal basis $\{\mathbf{u}_1, \dots, \mathbf{u}_r\}$, where
 >
 > $$
 > \mathbf{u}_i = \frac{1}{\|A\mathbf{v}_i\|} A\mathbf{v}_i = \frac{1}{\sigma_i} A\mathbf{v}_i
@@ -235,9 +235,9 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 ^rem-51-2
 
 > [!example] Example §51.2: An SVD of a 2 × 3 Matrix
-> Use Example §51.1 to construct a singular value decomposition of $A = \begin{bmatrix} 4 & 11 & 14 \\ 8 & 7 & -2 \end{bmatrix}$.
+> Use [[§51★ The Singular Value Decomposition#^ex-51-1|Example §51.1]] to construct a singular value decomposition of $A = \begin{bmatrix} 4 & 11 & 14 \\ 8 & 7 & -2 \end{bmatrix}$.
 >
-> **Step 1.** Example §51.1 orthogonally diagonalized $A^TA$: eigenvalues $360, 90, 0$ with unit eigenvectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$.
+> **Step 1.** [[§51★ The Singular Value Decomposition#^ex-51-1|Example §51.1]] orthogonally diagonalized $A^TA$: eigenvalues $360, 90, 0$ with unit eigenvectors $\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$.
 >
 > **Step 2.** The eigenvalues are already in decreasing order, so
 >
@@ -353,9 +353,9 @@ The two orthogonal matrices $U$ and $V$ do not affect lengths of vectors or angl
 ^thm-51-5
 
 > [!proof]+ Proof
-> Comparing columns in $AV = U\Sigma$ gives $A\mathbf{v}_i = \sigma_i\mathbf{u}_i$ for $i \le r$ and $A\mathbf{v}_i = \mathbf{0}$ for $i > r$. (Lay takes the SVD from the construction in Theorem §51.4; this column comparison makes the argument work for any SVD.)
+> Comparing columns in $AV = U\Sigma$ gives $A\mathbf{v}_i = \sigma_i\mathbf{u}_i$ for $i \le r$ and $A\mathbf{v}_i = \mathbf{0}$ for $i > r$. (Lay takes the SVD from the construction in [[§51★ The Singular Value Decomposition#^thm-51-4|Theorem §51.4]]; this column comparison makes the argument work for any SVD.)
 >
-> **(5)** The vectors $A\mathbf{v}_1, \dots, A\mathbf{v}_r$ are nonzero and orthogonal, hence a basis of $\operatorname{Col} A$ by Theorem §51.3 (its proof applies verbatim, since by Definition §51.2 the $\mathbf{v}_i$ are orthonormal eigenvectors of $A^TA$ for the eigenvalues $\sigma_i^2$); so their normalizations $\mathbf{u}_1, \dots, \mathbf{u}_r$ are an orthonormal basis.
+> **(5)** The vectors $A\mathbf{v}_1, \dots, A\mathbf{v}_r$ are nonzero and orthogonal, hence a basis of $\operatorname{Col} A$ by [[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3]] (its proof applies verbatim, since by [[§51★ The Singular Value Decomposition#^def-51-2|Definition §51.2]] the $\mathbf{v}_i$ are orthonormal eigenvectors of $A^TA$ for the eigenvalues $\sigma_i^2$); so their normalizations $\mathbf{u}_1, \dots, \mathbf{u}_r$ are an orthonormal basis.
 >
 > **(6)** Recall that $(\operatorname{Col} A)^\perp = \operatorname{Nul} A^T$ ([[§40 Inner Product, Length, and Orthogonality#^thm-40-6|Theorem §40.6]]). The vectors $\mathbf{u}_{r+1}, \dots, \mathbf{u}_m$ are orthonormal and orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_r$, hence to $\operatorname{Col} A$, so they lie in $\operatorname{Nul} A^T$. There are $m - r$ of them, and $\dim (\operatorname{Col} A)^\perp = m - r$ ([[§40 Inner Product, Length, and Orthogonality#^prop-40-7|Proposition §40.7]]), so by the Basis Theorem ([[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]]) they form a basis.
 >
@@ -367,7 +367,7 @@ The two orthogonal matrices $U$ and $V$ do not affect lengths of vectors or angl
 
 *Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§51★ The Singular Value Decomposition#^def-51-2|Def. §51.2]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|§40.6]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]] (Basis Theorem), [[§28 Rank#^thm-28-3|§28.3]] (Rank Theorem), [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]] (dimension of $W^\perp$)
 
-Explicit orthonormal bases for the four fundamental subspaces are useful in some calculations, particularly in constrained optimization problems. In Example §51.3: $\operatorname{Col} A$ is the line spanned by $\mathbf{u}_1$, $\operatorname{Nul} A^T$ the plane spanned by $\mathbf{u}_2, \mathbf{u}_3$, $\operatorname{Row} A$ the line spanned by $\mathbf{v}_1$, and $\operatorname{Nul} A$ the line spanned by $\mathbf{v}_2$.
+Explicit orthonormal bases for the four fundamental subspaces are useful in some calculations, particularly in constrained optimization problems. In [[§51★ The Singular Value Decomposition#^ex-51-3|Example §51.3]]: $\operatorname{Col} A$ is the line spanned by $\mathbf{u}_1$, $\operatorname{Nul} A^T$ the plane spanned by $\mathbf{u}_2, \mathbf{u}_3$, $\operatorname{Row} A$ the line spanned by $\mathbf{v}_1$, and $\operatorname{Nul} A$ the line spanned by $\mathbf{v}_2$.
 
 The four fundamental subspaces and the singular values provide the final statements of the Invertible Matrix Theorem. (Statements about $A^T$ were omitted from earlier versions to avoid nearly doubling their length.)
 
@@ -391,7 +391,7 @@ The four fundamental subspaces and the singular values provide the final stateme
 >
 > **(w)** $\operatorname{Row} A = \operatorname{Col} A^T$, so (w) says the columns of $A^T$ span $\mathbb{R}^n$, that is (statement (h) for $A^T$), $A^T$ is invertible, that is, $A$ is invertible. (Equivalently: $\dim \operatorname{Row} A = \operatorname{rank} A$, and $\operatorname{rank} A = n$ is statement (p) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].)
 >
-> **(x)** By Theorem §51.3, the number of nonzero singular values of $A$ is $\operatorname{rank} A$, and $\operatorname{rank} A = n$ is statement (p) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].
+> **(x)** By [[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3]], the number of nonzero singular values of $A$ is $\operatorname{rank} A$, and $\operatorname{rank} A = n$ is statement (p) of [[§19 Dimension and Rank#^thm-19-3|Theorem §19.3]].
 
 ^pf-51-6
 
@@ -425,8 +425,15 @@ The four fundamental subspaces and the singular values provide the final stateme
 
 *Uses:* [[§51★ The Singular Value Decomposition#^thm-51-4|§51.4]], [[§14 Partitioned Matrices#^prop-14-2|§14.2]] (block multiplication)
 
-> [!definition] Definition §51.4: Reduced SVD; Pseudoinverse
-> The factorization (9), $A = U_rDV_r^T$, is called a **reduced singular value decomposition** of $A$. Since the diagonal entries of $D$ are nonzero, $D$ is invertible, and the matrix
+> [!definition] Definition §51.4: Reduced SVD
+> The factorization (9), $A = U_rDV_r^T$, is called a **reduced singular value decomposition** of $A$.
+>
+> *Lay: Example 7.4.7, Equation (10)*
+
+^def-51-4
+
+> [!definition] Definition §51.4: Pseudoinverse
+> Since the diagonal entries of $D$ are nonzero, $D$ is invertible, and the matrix
 >
 > $$
 > A^+ = V_r D^{-1} U_r^T \qquad (10)
@@ -436,7 +443,7 @@ The four fundamental subspaces and the singular values provide the final stateme
 >
 > *Lay: Example 7.4.7, Equation (10)*
 
-^def-51-4
+^def-51-new1
 
 > [!theorem] Theorem §51.8: Least-Squares Solution by the Pseudoinverse
 > Given the equation $A\mathbf{x} = \mathbf{b}$, let
@@ -467,10 +474,10 @@ The four fundamental subspaces and the singular values provide the final stateme
 *Uses:* [[§51★ The Singular Value Decomposition#^prop-51-7|§51.7]], [[§51★ The Singular Value Decomposition#^thm-51-5|§51.5]], [[§42 Orthogonal Projections#^thm-42-4|§42.4]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§44 Least-Squares Problems#^def-44-1|Def. §44.1]] (least-squares solutions), [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]] (Pythagorean Theorem)
 
 > [!remark]- Connections
-> - Rigorous treatment: the pseudoinverse $T^\dagger$ is defined in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|LADR 6.68]] without the SVD (invert $T$ on $(\operatorname{null} T)^\perp \to \operatorname{range} T$, after projecting), and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|LADR 6.70]] proves exactly Theorem §51.8, best approximate solution of smallest norm. Its SVD formula, Lay's (10), is [[§26 Singular Value Decomposition#^ladr-7-75|LADR 7.75]]: "swap the singular vectors and invert the positive singular values".
+> - Rigorous treatment: the pseudoinverse $T^\dagger$ is defined in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|LADR 6.68]] without the SVD (invert $T$ on $(\operatorname{null} T)^\perp \to \operatorname{range} T$, after projecting), and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|LADR 6.70]] proves exactly [[§51★ The Singular Value Decomposition#^thm-51-8|Theorem §51.8]], best approximate solution of smallest norm. Its SVD formula, Lay's (10), is [[§26 Singular Value Decomposition#^ladr-7-75|LADR 7.75]]: "swap the singular vectors and invert the positive singular values".
 
 > [!example] Example §51.4: A Pseudoinverse
-> Find the reduced SVD and the pseudoinverse of the matrix $A = \begin{bmatrix} 1 & -1 \\ -2 & 2 \\ 2 & -2 \end{bmatrix}$ of Example §51.3.
+> Find the reduced SVD and the pseudoinverse of the matrix $A = \begin{bmatrix} 1 & -1 \\ -2 & 2 \\ 2 & -2 \end{bmatrix}$ of [[§51★ The Singular Value Decomposition#^ex-51-3|Example §51.3]].
 >
 > There $r = 1$, $D = [\,3\sqrt2\,]$, $U_r = \mathbf{u}_1 = \frac13(1, -2, 2)$ and $V_r = \mathbf{v}_1 = \frac{1}{\sqrt2}(1, -1)$. The reduced SVD is
 >
@@ -484,13 +491,13 @@ The four fundamental subspaces and the singular values provide the final stateme
 > A^+ = V_rD^{-1}U_r^T = \frac{1}{\sqrt2} \begin{bmatrix} 1 \\ -1 \end{bmatrix} \cdot \frac{1}{3\sqrt2} \cdot \frac13 [\,1\ \ -2\ \ 2\,] = \frac{1}{18} \begin{bmatrix} 1 & -2 & 2 \\ -1 & 2 & -2 \end{bmatrix}.
 > $$
 >
-> Check Theorem §51.8: $AA^+ = \frac{1}{18}\begin{bmatrix} 1 \\ -2 \\ 2 \end{bmatrix}[\,1\ \ -1\,]\begin{bmatrix} 1 & -2 & 2 \\ -1 & 2 & -2 \end{bmatrix} = \frac{1}{18} \cdot 2 \begin{bmatrix} 1 \\ -2 \\ 2 \end{bmatrix}[\,1\ \ -2\ \ 2\,] = \frac19 \begin{bmatrix} 1 & -2 & 2 \\ -2 & 4 & -4 \\ 2 & -4 & 4 \end{bmatrix} = \mathbf{u}_1\mathbf{u}_1^T$, the projection onto the line $\operatorname{Col} A$ ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-4|Theorem §48.4]]). So for any $\mathbf{b}$, $\hat{\mathbf{x}} = A^+\mathbf{b} = \frac{b_1 - 2b_2 + 2b_3}{18}(1, -1)$ is the least-squares solution of smallest length; it lies on the line $\operatorname{Row} A$ spanned by $(1, -1)$.
+> Check [[§51★ The Singular Value Decomposition#^thm-51-8|Theorem §51.8]]: $AA^+ = \frac{1}{18}\begin{bmatrix} 1 \\ -2 \\ 2 \end{bmatrix}[\,1\ \ -1\,]\begin{bmatrix} 1 & -2 & 2 \\ -1 & 2 & -2 \end{bmatrix} = \frac{1}{18} \cdot 2 \begin{bmatrix} 1 \\ -2 \\ 2 \end{bmatrix}[\,1\ \ -2\ \ 2\,] = \frac19 \begin{bmatrix} 1 & -2 & 2 \\ -2 & 4 & -4 \\ 2 & -4 & 4 \end{bmatrix} = \mathbf{u}_1\mathbf{u}_1^T$, the projection onto the line $\operatorname{Col} A$ ([[§48★ Diagonalization of Symmetric Matrices#^thm-48-4|Theorem §48.4]]). So for any $\mathbf{b}$, $\hat{\mathbf{x}} = A^+\mathbf{b} = \frac{b_1 - 2b_2 + 2b_3}{18}(1, -1)$ is the least-squares solution of smallest length; it lies on the line $\operatorname{Row} A$ spanned by $(1, -1)$.
 >
 > *Lay: Examples 7.4.4, 7.4.7 and 7.4.8 (combined)*
 
 ^ex-51-4
 
 > [!remark]- Remark: Numerical Note
-> Examples §51.1–§51.4 show how singular values can be computed by hand. In practice, the computation of $A^TA$ should be avoided, since any errors in the entries of $A$ are squared in the entries of $A^TA$. Fast iterative methods produce the singular values and singular vectors of $A$ directly, accurately to many decimal places. Lay's Practice Problems note two consequences of the SVD: $A^T = V\Sigma^TU^T$ is an SVD of $A^T$, so $A$ and $A^T$ have the same nonzero singular values; and for square $A$, $AA^T = U\Sigma^2U^T$ and $A^TA = V\Sigma^2V^T$ are orthogonally similar, $AA^T = Q^T(A^TA)Q$ with $Q = VU^T$. (Lay's Practice Problem 2 prints $A^TA = Q^T(A^TA)Q$; the remark after it shows that $AA^T$ is meant on the left.)
+> Examples [[§51★ The Singular Value Decomposition#^ex-51-1|§51.1]]–[[§51★ The Singular Value Decomposition#^ex-51-4|§51.4]] show how singular values can be computed by hand. In practice, the computation of $A^TA$ should be avoided, since any errors in the entries of $A$ are squared in the entries of $A^TA$. Fast iterative methods produce the singular values and singular vectors of $A$ directly, accurately to many decimal places. Lay's Practice Problems note two consequences of the SVD: $A^T = V\Sigma^TU^T$ is an SVD of $A^T$, so $A$ and $A^T$ have the same nonzero singular values; and for square $A$, $AA^T = U\Sigma^2U^T$ and $A^TA = V\Sigma^2V^T$ are orthogonally similar, $AA^T = Q^T(A^TA)Q$ with $Q = VU^T$. (Lay's Practice Problem 2 prints $A^TA = Q^T(A^TA)Q$; the remark after it shows that $AA^T$ is meant on the left.)
 
 ^rem-51-3

@@ -87,11 +87,11 @@ When $A\mathbf{x} = \mathbf{b}$ has no solution, the best one can do is to make 
 > [!remark] Remark: Method — Least Squares via the Normal Equations
 > To find the least-squares solutions of $A\mathbf{x} = \mathbf{b}$:
 > 1. Compute $A^TA$ ($n \times n$, symmetric) and $A^T\mathbf{b}$ ($n \times 1$).
-> 2. Solve $A^TA\mathbf{x} = A^T\mathbf{b}$ by row reducing $[\,A^TA \ \ A^T\mathbf{b}\,]$. This system is always consistent (Theorem §44.1). Free variables give infinitely many least-squares solutions.
-> 3. If $A^TA$ is invertible and $2 \times 2$, it is quicker to use $\hat{\mathbf{x}} = (A^TA)^{-1}A^T\mathbf{b}$ (Theorem §44.2).
-> 4. If needed, the least-squares error is $\|\mathbf{b} - A\hat{\mathbf{x}}\|$ (Definition §44.3).
+> 2. Solve $A^TA\mathbf{x} = A^T\mathbf{b}$ by row reducing $[\,A^TA \ \ A^T\mathbf{b}\,]$. This system is always consistent ([[§44 Least-Squares Problems#^thm-44-1|Theorem §44.1]]). Free variables give infinitely many least-squares solutions.
+> 3. If $A^TA$ is invertible and $2 \times 2$, it is quicker to use $\hat{\mathbf{x}} = (A^TA)^{-1}A^T\mathbf{b}$ ([[§44 Least-Squares Problems#^thm-44-2|Theorem §44.2]]).
+> 4. If needed, the least-squares error is $\|\mathbf{b} - A\hat{\mathbf{x}}\|$ ([[§44 Least-Squares Problems#^def-44-3|Definition §44.3]]).
 >
-> Shortcuts: if the columns of $A$ are orthogonal, compute $\hat{\mathbf{b}}$ by the projection formula and read off $\hat{\mathbf{x}}$ (Example §44.4); if $A = QR$ is known, solve $R\mathbf{x} = Q^T\mathbf{b}$ (Theorem §44.3). If $\mathbf{b}$ is orthogonal to the columns of $A$, then $\hat{\mathbf{b}} = \mathbf{0}$ and the least-squares solutions are the solutions of $A\mathbf{x} = \mathbf{0}$.
+> Shortcuts: if the columns of $A$ are orthogonal, compute $\hat{\mathbf{b}}$ by the projection formula and read off $\hat{\mathbf{x}}$ ([[§44 Least-Squares Problems#^ex-44-4|Example §44.4]]); if $A = QR$ is known, solve $R\mathbf{x} = Q^T\mathbf{b}$ ([[§44 Least-Squares Problems#^thm-44-3|Theorem §44.3]]). If $\mathbf{b}$ is orthogonal to the columns of $A$, then $\hat{\mathbf{b}} = \mathbf{0}$ and the least-squares solutions are the solutions of $A\mathbf{x} = \mathbf{0}$.
 
 ^rem-44-1
 
@@ -182,11 +182,11 @@ When $A\mathbf{x} = \mathbf{b}$ has no solution, the best one can do is to make 
 >
 > so $A\mathbf{x} = \mathbf{0}$.
 >
-> **(a) ⇔ (b).** By the proof of Theorem §44.1, the least-squares solutions of $A\mathbf{x} = \mathbf{b}$ are the solutions of the consistent equation $A\mathbf{x} = \hat{\mathbf{b}}$. Its solution set is $\mathbf{p} + \operatorname{Nul} A$ for any particular solution $\mathbf{p}$, so it is a single vector if and only if $\operatorname{Nul} A = \{\mathbf{0}\}$, that is, if and only if the columns of $A$ are linearly independent. (For (a) ⇒ (b), apply this to any one $\mathbf{b}$, say $\mathbf{b} = \mathbf{0}$.)
+> **(a) ⇔ (b).** By the proof of [[§44 Least-Squares Problems#^thm-44-1|Theorem §44.1]], the least-squares solutions of $A\mathbf{x} = \mathbf{b}$ are the solutions of the consistent equation $A\mathbf{x} = \hat{\mathbf{b}}$. Its solution set is $\mathbf{p} + \operatorname{Nul} A$ for any particular solution $\mathbf{p}$, so it is a single vector if and only if $\operatorname{Nul} A = \{\mathbf{0}\}$, that is, if and only if the columns of $A$ are linearly independent. (For (a) ⇒ (b), apply this to any one $\mathbf{b}$, say $\mathbf{b} = \mathbf{0}$.)
 >
 > **(b) ⇔ (c).** $A^TA$ is a square $n \times n$ matrix, so by the Invertible Matrix Theorem it is invertible if and only if $\operatorname{Nul}(A^TA) = \{\mathbf{0}\}$. By the key fact this means $\operatorname{Nul} A = \{\mathbf{0}\}$, which is (b).
 >
-> **Formula (4).** If $A^TA$ is invertible, the normal equations $A^TA\mathbf{x} = A^T\mathbf{b}$ have the unique solution $(A^TA)^{-1}A^T\mathbf{b}$, which by Theorem §44.1 is the least-squares solution.
+> **Formula (4).** If $A^TA$ is invertible, the normal equations $A^TA\mathbf{x} = A^T\mathbf{b}$ have the unique solution $(A^TA)^{-1}A^T\mathbf{b}$, which by [[§44 Least-Squares Problems#^thm-44-1|Theorem §44.1]] is the least-squares solution.
 
 ^pf-44-2
 
@@ -202,7 +202,7 @@ Formula (4) is mainly of theoretical use, and for hand calculations when $A^TA$ 
 ^def-44-3
 
 > [!example] Example §44.3: The Least-Squares Error
-> For $A$ and $\mathbf{b}$ as in Example §44.1, find the least-squares error.
+> For $A$ and $\mathbf{b}$ as in [[§44 Least-Squares Problems#^ex-44-1|Example §44.1]], find the least-squares error.
 >
 > With $\hat{\mathbf{x}} = (1, 2)$,
 >
@@ -271,7 +271,7 @@ Formula (4) is mainly of theoretical use, and for hand calculations when $A^TA$ 
 > A\hat{\mathbf{x}} = QR\hat{\mathbf{x}} = QRR^{-1}Q^T\mathbf{b} = QQ^T\mathbf{b} .
 > $$
 >
-> The columns of $Q$ form an orthonormal basis of $\operatorname{Col} A$, so by [[§42 Orthogonal Projections#^thm-42-4|Theorem §42.4]], $QQ^T\mathbf{b}$ is the orthogonal projection $\hat{\mathbf{b}}$ of $\mathbf{b}$ onto $\operatorname{Col} A$. Thus $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$, and $\hat{\mathbf{x}}$ is a least-squares solution (proof of Theorem §44.1). It is the only one by Theorem §44.2, since the columns of $A$ are independent.
+> The columns of $Q$ form an orthonormal basis of $\operatorname{Col} A$, so by [[§42 Orthogonal Projections#^thm-42-4|Theorem §42.4]], $QQ^T\mathbf{b}$ is the orthogonal projection $\hat{\mathbf{b}}$ of $\mathbf{b}$ onto $\operatorname{Col} A$. Thus $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$, and $\hat{\mathbf{x}}$ is a least-squares solution (proof of [[§44 Least-Squares Problems#^thm-44-1|Theorem §44.1]]). It is the only one by [[§44 Least-Squares Problems#^thm-44-2|Theorem §44.2]], since the columns of $A$ are independent.
 
 ^pf-44-3
 

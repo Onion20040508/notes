@@ -51,13 +51,13 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 ^thm-27-2
 
 > [!proof]+ Proof
-> Let $\mathcal{B}_1$ be a basis of $n$ vectors and $\mathcal{B}_2$ any other basis of $V$. Since $\mathcal{B}_1$ is a basis and $\mathcal{B}_2$ is linearly independent, $\mathcal{B}_2$ has no more than $n$ vectors, by Theorem §27.1. Since $\mathcal{B}_2$ is a basis and $\mathcal{B}_1$ is linearly independent, Theorem §27.1 applied with the roles exchanged shows that $\mathcal{B}_1$ has no more vectors than $\mathcal{B}_2$, so $\mathcal{B}_2$ has at least $n$ vectors. Thus $\mathcal{B}_2$ has exactly $n$ vectors.
+> Let $\mathcal{B}_1$ be a basis of $n$ vectors and $\mathcal{B}_2$ any other basis of $V$. Since $\mathcal{B}_1$ is a basis and $\mathcal{B}_2$ is linearly independent, $\mathcal{B}_2$ has no more than $n$ vectors, by [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]]. Since $\mathcal{B}_2$ is a basis and $\mathcal{B}_1$ is linearly independent, [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]] applied with the roles exchanged shows that $\mathcal{B}_1$ has no more vectors than $\mathcal{B}_2$, so $\mathcal{B}_2$ has at least $n$ vectors. Thus $\mathcal{B}_2$ has exactly $n$ vectors.
 
 ^pf-27-2
 
 *Uses:* [[§27 The Dimension of a Vector Space#^thm-27-1|§27.1]]
 
-If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset of $S$ is a basis of $V$, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]). By Theorem §27.2 all such bases have the same size, so the following definition makes sense.
+If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset of $S$ is a basis of $V$, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]). By [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]] all such bases have the same size, so the following definition makes sense.
 
 > [!definition] Definition §27.1: Finite-Dimensional; Dimension
 > If $V$ is spanned by a finite set, then $V$ is **finite-dimensional**, and the **dimension** of $V$, written $\dim V$, is the number of vectors in a basis for $V$. The dimension of the zero vector space $\{\mathbf{0}\}$ is defined to be $0$. If $V$ is not spanned by a finite set, then $V$ is **infinite-dimensional**.
@@ -67,7 +67,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 ^def-27-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§6 Dimension#^ladr-2-34|LADR 2.34]] (basis length does not depend on basis) and [[§6 Dimension#^ladr-2-35|LADR 2.35]]. Axler proves Theorem §27.1 without coordinates, from [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]] (a linearly independent list is never longer than a spanning list), by trading spanning vectors for independent ones; infinite-dimensional spaces: [[§4 Span and Linear Independence#^ladr-2-13|LADR 2.13]].
+> - Rigorous treatment: [[§6 Dimension#^ladr-2-34|LADR 2.34]] (basis length does not depend on basis) and [[§6 Dimension#^ladr-2-35|LADR 2.35]]. Axler proves [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]] without coordinates, from [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]] (a linearly independent list is never longer than a spanning list), by trading spanning vectors for independent ones; infinite-dimensional spaces: [[§4 Span and Linear Independence#^ladr-2-13|LADR 2.13]].
 
 > [!example] Example §27.1: Dimensions of the Standard Spaces
 > **$\mathbb{R}^n$.** The standard basis $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ has $n$ vectors, so $\dim \mathbb{R}^n = n$. (L16: "any basis of $\mathbb{R}^4$ has exactly $4$ vectors.")
@@ -141,7 +141,7 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 >
 > Otherwise there is some $\mathbf{u}_{k+1}$ in $H$ that is not in $\operatorname{Span} S$. Then $\{\mathbf{u}_1, \ldots, \mathbf{u}_k, \mathbf{u}_{k+1}\}$ is linearly independent: no vector in it is a linear combination of the vectors before it ([[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1]]), since $\mathbf{u}_1, \ldots, \mathbf{u}_k$ are independent and $\mathbf{u}_{k+1} \notin \operatorname{Span} S$. (Lecture L16 checks this directly. Suppose $c_1\mathbf{u}_1 + \cdots + c_{k+1}\mathbf{u}_{k+1} = \mathbf{0}$. If $c_{k+1} \ne 0$, then $\mathbf{u}_{k+1} = -\frac{c_1}{c_{k+1}}\mathbf{u}_1 - \cdots - \frac{c_k}{c_{k+1}}\mathbf{u}_k$ lies in $\operatorname{Span} S$, a contradiction. So $c_{k+1} = 0$, and then $c_1\mathbf{u}_1 + \cdots + c_k\mathbf{u}_k = \mathbf{0}$ forces $c_1 = \cdots = c_k = 0$.)
 >
-> So long as the new set does not span $H$, repeat: each step produces a larger linearly independent set in $H \subseteq V$. By Theorem §27.1 a linearly independent set in $V$ has at most $\dim V$ vectors, so the process stops after at most $\dim V - k$ steps. When it stops, the expanded set spans $H$, hence is a basis for $H$ with at most $\dim V$ vectors: $H$ is finite-dimensional and $\dim H \le \dim V$.
+> So long as the new set does not span $H$, repeat: each step produces a larger linearly independent set in $H \subseteq V$. By [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]] a linearly independent set in $V$ has at most $\dim V$ vectors, so the process stops after at most $\dim V - k$ steps. When it stops, the expanded set spans $H$, hence is a basis for $H$ with at most $\dim V$ vectors: $H$ is finite-dimensional and $\dim H \le \dim V$.
 
 ^pf-27-3
 
@@ -162,7 +162,7 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 ^cor-27-4
 
 > [!proof]+ Proof
-> 1 is Theorem §27.1. For 2, let $S$ span $V$. If $V = \{\mathbf{0}\}$ there is nothing to prove ($n = 0$). Otherwise, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]) some subset $S'$ of $S$ is a basis of $V$, and $S'$ has exactly $n$ vectors by Theorem §27.2. So $S$ has at least $n$ vectors.
+> 1 is [[§27 The Dimension of a Vector Space#^thm-27-1|Theorem §27.1]]. For 2, let $S$ span $V$. If $V = \{\mathbf{0}\}$ there is nothing to prove ($n = 0$). Otherwise, by the Spanning Set Theorem ([[§25 Linearly Independent Sets; Bases#^thm-25-2|Theorem §25.2]]) some subset $S'$ of $S$ is a basis of $V$, and $S'$ has exactly $n$ vectors by [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]. So $S$ has at least $n$ vectors.
 
 ^pf-27-4
 
@@ -178,7 +178,7 @@ When the dimension is known, the search for a basis is simplified: with the righ
 ^thm-27-5
 
 > [!proof]+ Proof
-> **Independent sets.** By Theorem §27.3 (with $H = V$), a linearly independent set $S$ of $p$ elements can be extended to a basis for $V$. That basis must contain exactly $p$ elements, since $\dim V = p$ (Theorem §27.2). So nothing was added: $S$ is already a basis for $V$.
+> **Independent sets.** By [[§27 The Dimension of a Vector Space#^thm-27-3|Theorem §27.3]] (with $H = V$), a linearly independent set $S$ of $p$ elements can be extended to a basis for $V$. That basis must contain exactly $p$ elements, since $\dim V = p$ ([[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]). So nothing was added: $S$ is already a basis for $V$.
 >
 > **Spanning sets.** Suppose $S$ has $p$ elements and spans $V$. Since $V$ is nonzero, the Spanning Set Theorem gives a subset $S'$ of $S$ that is a basis of $V$. Since $\dim V = p$, $S'$ contains $p$ vectors, so $S' = S$ and $S$ is a basis.
 
@@ -214,7 +214,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 ^cor-27-6
 
 > [!proof]+ Proof
-> Let $n = \dim H = \dim V$. If $n = 0$, then $H = V = \{\mathbf{0}\}$. Otherwise a basis of $H$ is a linearly independent set of exactly $n$ vectors in $V$, hence a basis of $V$ by the Basis Theorem. So $V = \operatorname{Span}(\text{basis}) = H$. The statement about $\mathbb{R}^n$ follows with Theorem §27.3.
+> Let $n = \dim H = \dim V$. If $n = 0$, then $H = V = \{\mathbf{0}\}$. Otherwise a basis of $H$ is a linearly independent set of exactly $n$ vectors in $V$, hence a basis of $V$ by the Basis Theorem. So $V = \operatorname{Span}(\text{basis}) = H$. The statement about $\mathbb{R}^n$ follows with [[§27 The Dimension of a Vector Space#^thm-27-3|Theorem §27.3]].
 
 ^pf-27-6
 
@@ -230,7 +230,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 ^prop-27-7
 
 > [!proof]+ Proof
-> $T(H)$ is a subspace: it is the range of the restriction of $T$ to $H$, a linear map $H \to W$, so [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|Theorem §24.5]] applies (this is Lay's Exercise 35 in Section 4.2). Let $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ be a basis of $H$ (if $H = \{\mathbf{0}\}$, then $T(H) = \{\mathbf{0}\}$ and both dimensions are $0$). Every vector of $T(H)$ is $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p)$, so $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ span $T(H)$, and $\dim T(H) \le p$ by Corollary §27.4. This is 1.
+> $T(H)$ is a subspace: it is the range of the restriction of $T$ to $H$, a linear map $H \to W$, so [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|Theorem §24.5]] applies (this is Lay's Exercise 35 in Section 4.2). Let $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ be a basis of $H$ (if $H = \{\mathbf{0}\}$, then $T(H) = \{\mathbf{0}\}$ and both dimensions are $0$). Every vector of $T(H)$ is $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p)$, so $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ span $T(H)$, and $\dim T(H) \le p$ by [[§27 The Dimension of a Vector Space#^cor-27-4|Corollary §27.4]]. This is 1.
 >
 > For 2, suppose also $c_1 T(\mathbf{v}_1) + \cdots + c_p T(\mathbf{v}_p) = \mathbf{0}$. Then $T(c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p) = \mathbf{0} = T(\mathbf{0})$, and since $T$ is one-to-one, $c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p = \mathbf{0}$, so all $c_i = 0$. Thus $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ is a basis of $T(H)$ and $\dim T(H) = p = \dim H$. With $H = V$ and $T$ onto, $T(V) = W$, so $\dim W = \dim V$.
 

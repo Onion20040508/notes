@@ -12,7 +12,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 ## Definition and Integrability
 
 > [!definition] Definition §15.1: Lebesgue Integral of a General Measurable Function
-> Let $f$ be a measurable function on $E$, $E \in \mathcal{M}$. Recall the [[§12 Measurable Functions#^def-12-4|decomposition]] $f(x) = f^+(x) - f^-(x)$, where:
+> Let $f$ be a measurable function on $E$, $E \in \mathcal{M}$. Recall the [[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|decomposition]] $f(x) = f^+(x) - f^-(x)$, where:
 >
 > $$
 > f^+(x) = \max\{f(x), 0\}, \qquad f^-(x) = \max\{-f(x), 0\}.
@@ -59,15 +59,15 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 ^prop-15-1
 
 > [!proof]+ Proof
-> **(i)** and **(ii)** follow from the [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|corresponding properties for non-negative functions]] applied to $f^+$ and $f^-$ separately.
+> **(i)** and **(ii)** follow from the [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|corresponding properties for non-negative functions]] applied to $f^+$ and $f^-$ separately.
 >
-> **(iii)** $f \in L(E) \Rightarrow |f| \in L(E)$ (since $\int_E |f|\,dx < \infty$). Since $|f| \geq 0$ is integrable, $|f|$ is a.e. finite (by [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|Proposition §14.10]]), hence $f$ is a.e. finite.
+> **(iii)** $f \in L(E) \Rightarrow |f| \in L(E)$ (since $\int_E |f|\,dx < \infty$). Since $|f| \geq 0$ is integrable, $|f|$ is a.e. finite (by [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|Proposition §14.10]]), hence $f$ is a.e. finite.
 >
 > **(iv)** $\int_E |f|\,dx \leq \int_E g\,dx < \infty$, so $f \in L(E)$.
 
 ^pf-15-1
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[§15 The General Lebesgue Integral#^rem-15-1|Rem. §15.1]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
+*Uses:* [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§15 The General Lebesgue Integral#^rem-15-1|Rem. §15.1]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
 
 > [!example] Example §15.1: Bounded Measurable Functions on Finite Measure Sets
 > If $g$ is a bounded measurable function on $E$ with $m(E) < \infty$, then $g \in L(E)$. Indeed, $|g(x)| \leq M$ for all $x \in E$, so $\int_E |g|\,dx \leq M \cdot m(E) < \infty$.
@@ -115,7 +115,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 > (f+g)^+ + f^- + g^- = (f+g)^- + f^+ + g^+.
 > $$
 >
-> Both sides are sums of non-negative measurable functions, so by [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity for non-negative functions]]:
+> Both sides are sums of non-negative measurable functions, so by [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|linearity for non-negative functions]]:
 >
 > $$
 > \int_E (f+g)^+\,dx + \int_E f^-\,dx + \int_E g^-\,dx = \int_E (f+g)^-\,dx + \int_E f^+\,dx + \int_E g^+\,dx.
@@ -131,7 +131,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ^pf-15-2
 
-*Uses:* [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§12 Measurable Functions#^def-12-4|Def. §12.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§15 The General Lebesgue Integral#^rem-15-1|Rem. §15.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
+*Uses:* [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§15 The General Lebesgue Integral#^rem-15-1|Rem. §15.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
 > - Riemann counterpart: [[§33 Properties of the Riemann Integral#^thm-33-2|451 §33.2]]. Linearity makes $L^1(E)$ a vector space ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]).
@@ -146,10 +146,10 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ^pf-15-3
 
-*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]]
 
 > [!remark]- Connections
-> - This is the triangle inequality of the $L^1$ norm ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]](iii)); its $L^p$ version is [[Minkowski's Inequality|Minkowski's inequality]] (§19.9). Norm axioms in LADR: [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
+> - This is the triangle inequality of the $L^1$ norm ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]](iii)); its $L^p$ version is [[Minkowski's Inequality|Minkowski's inequality]] ([[§19a Lᵖ as a Banach Space#^thm-19-9|§19.9]]). Norm axioms in LADR: [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]], [[Triangle inequality|LADR 6.17]].
 
 ## Countable Additivity and Domain Restriction
 
@@ -163,7 +163,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 ^thm-15-4
 
 > [!proof]+ Proof
-> Apply [[§14 The Lebesgue Integral for Simple Functions#^cor-14-13|countable additivity for non-negative functions]] to $f^+$ and $f^-$ separately:
+> Apply [[§14a Consequences of the Monotone Convergence Theorem#^cor-14-13|countable additivity for non-negative functions]] to $f^+$ and $f^-$ separately:
 >
 > $$
 > \int_E f^+\,dx = \sum_{k=1}^{\infty} \int_{E_k} f^+\,dx, \qquad \int_E f^-\,dx = \sum_{k=1}^{\infty} \int_{E_k} f^-\,dx.
@@ -177,12 +177,12 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ^pf-15-4
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^cor-14-13|§14.13]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§14 Series#^prop-14-3|451 §14.3]]
+*Uses:* [[§14a Consequences of the Monotone Convergence Theorem#^cor-14-13|§14.13]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§14 Series#^prop-14-3|451 §14.3]]
 
 > [!remark] Remark: Domain Restriction and Signed Induced Measure
 > If $f \in L(E)$ and $A \subseteq E$, $A \in \mathcal{M}$, then $f \in L(A)$ (since $\int_A |f|\,dx \leq \int_E |f|\,dx < \infty$).
 >
-> If $f \in L(E)$, the map $\nu(A) = \int_A f\,dx$ defines a **signed measure** on measurable subsets of $E$: it satisfies $\nu(\emptyset) = 0$ and countable additivity, but can take negative values (unlike a [[§11 Borel Sets and Measure Spaces#^def-11-6|measure]]). This generalizes the [[§14 The Lebesgue Integral for Simple Functions#^def-14-3|induced measure from §14]].
+> If $f \in L(E)$, the map $\nu(A) = \int_A f\,dx$ defines a **signed measure** on measurable subsets of $E$: it satisfies $\nu(\emptyset) = 0$ and countable additivity, but can take negative values (unlike a [[§11 Borel Sets and Measure Spaces#^def-11-6|measure]]). This generalizes the [[§14a Consequences of the Monotone Convergence Theorem#^def-14-3|induced measure from §14]].
 
 ^rem-15-2
 
@@ -191,7 +191,7 @@ We now extend the Lebesgue integral from non-negative functions to general measu
 
 ## Vanishing Integral Implies A.E. Zero
 
-The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Functions|§14]] ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]): if $f \geq 0$ and $\int_E f\,dx = 0$, then $f = 0$ a.e. We now extend to general measurable functions.
+The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Functions|§14]] ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|Proposition §14.11]]): if $f \geq 0$ and $\int_E f\,dx = 0$, then $f = 0$ a.e. We now extend to general measurable functions.
 
 > [!theorem] Proposition §15.5: General Measurable Functions
 > Let $f$ be measurable on $E$. If $\int_A f\,dx = 0$ for all $A \subseteq E$, $A \in \mathcal{M}$, then $f(x) = 0$ a.e. on $E$.
@@ -209,7 +209,7 @@ The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Func
 
 ^pf-15-5
 
-*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]]
 
 > [!example] Example §15.2: Application: Vanishing Integrals over Intervals
 > Let $f \in L([a,b])$. If $\int_a^c f(x)\,dx = 0$ for all $a \leq c \leq b$, then $f(x) = 0$ a.e. on $[a,b]$.
@@ -249,15 +249,15 @@ The non-negative case was proved in [[§14 The Lebesgue Integral for Simple Func
 >
 > By [[Inner Regularity of Lebesgue Measure|inner regularity]], there exists a closed set $F \subseteq E_+$ with $m(F) > 0$. On $F$, $f(x) > 0$ (since $F \subseteq E_+$), so $f^+(x) = f(x) > 0$ on $F$.
 >
-> By Step 1, $\int_F f\,dx = 0$, hence $\int_F f^+\,dx = \int_F f\,dx + \int_F f^-\,dx = 0 + 0 = 0$ (since $f^- = 0$ on $F \subseteq E_+$). But $f^+ > 0$ on $F$ with $m(F) > 0$, so by the [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|previous proposition]] (non-negative function with zero integral $\Rightarrow$ a.e. zero), $f^+ = 0$ a.e. on $F$. This contradicts $f^+ > 0$ everywhere on $F$.
+> By Step 1, $\int_F f\,dx = 0$, hence $\int_F f^+\,dx = \int_F f\,dx + \int_F f^-\,dx = 0 + 0 = 0$ (since $f^- = 0$ on $F \subseteq E_+$). But $f^+ > 0$ on $F$ with $m(F) > 0$, so by the [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|previous proposition]] (non-negative function with zero integral $\Rightarrow$ a.e. zero), $f^+ = 0$ a.e. on $F$. This contradicts $f^+ > 0$ everywhere on $F$.
 >
 > Hence $m(E_+) = 0$, so $f^+ = 0$ a.e. Similarly $f^- = 0$ a.e., giving $f = 0$ a.e.
 
 ^pf-ex-15-2
 
-*Uses:* [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§9 Lebesgue Outer Measure#^ex-9-1|Ex. §9.1]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]]
+*Uses:* [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§9 Lebesgue Outer Measure#^ex-9-1|Ex. §9.1]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]]
 
 > [!remark]- Connections
-> - With $F(x) = \int_a^x f$, this says $F \equiv 0 \Rightarrow f = 0$ a.e., the uniqueness half of the Lebesgue [[Fundamental Theorem of Calculus for Lebesgue Integrals|Fundamental Theorem of Calculus]] (§18.13); compare the MATH 451 [[Fundamental Theorem of Calculus]].
+> - With $F(x) = \int_a^x f$, this says $F \equiv 0 \Rightarrow f = 0$ a.e., the uniqueness half of the Lebesgue [[Fundamental Theorem of Calculus for Lebesgue Integrals|Fundamental Theorem of Calculus]] ([[§18c Absolute Continuity and the FTC#^thm-18-13|§18.13]]); compare the MATH 451 [[Fundamental Theorem of Calculus]].
 
 Dominated and reverse Fatou, the Dominated Convergence Theorem and its applications continue in [[§15a The Dominated Convergence Theorem]].

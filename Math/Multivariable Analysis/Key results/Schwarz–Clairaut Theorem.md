@@ -11,7 +11,7 @@ tags: [multivariable-analysis, hub]
 - [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]], in [[§5 Equality of Mixed Partials]]
 
 ## Its proof uses
-- [[§2 Open and Closed Sets#^def-2-4|Definition §2.4: Open and Closed Sets]]
+- [[§2 Open and Closed Sets#^def-2-4|Definition §2.4: Open Set]]
 - [[§3 Continuity and Limits of Functions#^def-3-1|Definition §3.1: Continuity]]
 - [[§3 Continuity and Limits of Functions#^def-3-2|Definition §3.2: Limit of a Function]]
 - [[§4 Partial Derivatives#^def-4-1|Definition §4.1: Partial Derivatives]]

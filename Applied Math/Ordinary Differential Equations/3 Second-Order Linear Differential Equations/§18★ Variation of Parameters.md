@@ -168,7 +168,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 
 ^pf-18-1
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|§14.8]] (Abel's theorem), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]] (fundamental set), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|§17.2]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|§14.8]] (Abel's theorem), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Def. §14.3]] (fundamental set), [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|§17.2]] (Theorem 3.5.2), [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (FTC, Part 1)
 
 > [!remark]- Connections
 > - The derivative of $\int_{t_0}^t h(s)\,ds$ for continuous $h$: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II).

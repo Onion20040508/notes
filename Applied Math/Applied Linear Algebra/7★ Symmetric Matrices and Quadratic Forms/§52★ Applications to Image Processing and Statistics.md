@@ -12,7 +12,7 @@ tags: [applied-linear-algebra, math235, extension]
 *Lay, Section 7.5.*
 ★ *Beyond MATH 235: the course ended with inner products (Ch. 6); Chapter 7 is included from Lay as the continuation.*
 
-Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \times N$ matrix whose columns are points in $\mathbb{R}^p$. Principal component analysis looks for an orthogonal change of variable that makes the new variables uncorrelated and orders them by decreasing variance. This is exactly the orthogonal diagonalization of the covariance matrix $S$, a symmetric positive semidefinite matrix. The eigenvectors of $S$ are the principal components, and the eigenvalues are the variances of the new variables. Total variance is preserved, so when a few eigenvalues dominate, the data are essentially low-dimensional and can be described by a few variables. The constrained optimization theorems of §50 show that the first principal component is the direction of maximal variance. In practice the computation is done with the SVD of §51.
+Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \times N$ matrix whose columns are points in $\mathbb{R}^p$. Principal component analysis looks for an orthogonal change of variable that makes the new variables uncorrelated and orders them by decreasing variance. This is exactly the orthogonal diagonalization of the covariance matrix $S$, a symmetric positive semidefinite matrix. The eigenvectors of $S$ are the principal components, and the eigenvalues are the variances of the new variables. Total variance is preserved, so when a few eigenvalues dominate, the data are essentially low-dimensional and can be described by a few variables. The constrained optimization theorems of [[§50★ Constrained Optimization|§50★]] show that the first principal component is the direction of maximal variance. In practice the computation is done with the SVD of [[§51★ The Singular Value Decomposition|§51★]].
 
 ## Multivariate Data
 
@@ -30,14 +30,21 @@ Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \
 
 ## Mean and Covariance
 
-> [!definition] Definition §52.2: Sample Mean; Mean-Deviation Form
+> [!definition] Definition §52.2: Sample Mean
 > Let $[\,\mathbf{X}_1\ \cdots\ \mathbf{X}_N\,]$ be a $p \times N$ matrix of observations. The **sample mean** of the observation vectors is
 >
 > $$
 > \mathbf{M} = \frac1N (\mathbf{X}_1 + \cdots + \mathbf{X}_N) ,
 > $$
 >
-> the "center" of the scatter plot. For $k = 1, \dots, N$ let $\hat{\mathbf{X}}_k = \mathbf{X}_k - \mathbf{M}$. The columns of the $p \times N$ matrix
+> the "center" of the scatter plot.
+>
+> *Lay: 7.5 (text)*
+
+^def-52-2
+
+> [!definition] Definition §52.2: Mean-Deviation Form
+> For $k = 1, \dots, N$ let $\hat{\mathbf{X}}_k = \mathbf{X}_k - \mathbf{M}$. The columns of the $p \times N$ matrix
 >
 > $$
 > B = [\,\hat{\mathbf{X}}_1\ \ \hat{\mathbf{X}}_2\ \cdots\ \hat{\mathbf{X}}_N\,]
@@ -47,7 +54,7 @@ Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \
 >
 > *Lay: 7.5 (text)*
 
-^def-52-2
+^def-52-new1
 
 > [!definition] Definition §52.3: Covariance Matrix
 > The (sample) **covariance matrix** of the observations is the $p \times p$ matrix
@@ -85,17 +92,37 @@ Multivariate data (lists of $p$ measurements on each of $N$ objects) form a $p \
 > [!remark]- Connections
 > - Rigorous treatment: $T^*T$ (here $T = B^T$) is a positive operator, [[§26 Singular Value Decomposition#^ladr-7-64|LADR 7.64]](a); and conversely every positive operator has this form, [[§24 Positive Operators#^ladr-7-38|LADR 7.38]](f).
 
-> [!definition] Definition §52.4: Variance, Total Variance, Trace, Covariance
+> [!definition] Definition §52.4: Variance
 > Let $S = [s_{ij}]$ be the covariance matrix, and let $\mathbf{X}$ represent a vector that varies over the set of observation vectors, with coordinates $x_1, \dots, x_p$ (so $x_1$, for example, is a scalar that varies over the set of first coordinates of $\mathbf{X}_1, \dots, \mathbf{X}_N$).
-> - For $j = 1, \dots, p$, the diagonal entry $s_{jj}$ is the **variance** of $x_j$. It measures the spread of the values of $x_j$: if $m_j$ is the $j$th entry of $\mathbf{M}$, then $s_{jj} = \frac{1}{N-1}\sum_{k=1}^N (x_{j,k} - m_j)^2$ is the usual sample variance of the $N$ numbers $x_{j,1}, \dots, x_{j,N}$ (row $j$ of $B$ dotted with itself, divided by $N - 1$; Exercise 13).
-> - The **total variance** of the data is the sum of the variances on the diagonal of $S$. The sum of the diagonal entries of a square matrix $S$ is the **trace** of $S$, written $\operatorname{tr}(S)$. Thus $\{\text{total variance}\} = \operatorname{tr}(S)$.
-> - For $i \ne j$, the entry $s_{ij}$ is the **covariance** of $x_i$ and $x_j$. If $s_{ij} = 0$, then $x_i$ and $x_j$ are **uncorrelated**.
+>
+> For $j = 1, \dots, p$, the diagonal entry $s_{jj}$ is the **variance** of $x_j$. It measures the spread of the values of $x_j$: if $m_j$ is the $j$th entry of $\mathbf{M}$, then $s_{jj} = \frac{1}{N-1}\sum_{k=1}^N (x_{j,k} - m_j)^2$ is the usual sample variance of the $N$ numbers $x_{j,1}, \dots, x_{j,N}$ (row $j$ of $B$ dotted with itself, divided by $N - 1$; Exercise 13).
+>
+> *Lay: 7.5 (text)*
+
+^def-52-4
+
+> [!definition] Definition §52.4: Total Variance
+> The **total variance** of the data is the sum of the variances on the diagonal of $S$.
+>
+> *Lay: 7.5 (text)*
+
+^def-52-new2
+
+> [!definition] Definition §52.4: Trace
+> The sum of the diagonal entries of a square matrix $S$ is the **trace** of $S$, written $\operatorname{tr}(S)$. Thus $\{\text{total variance}\} = \operatorname{tr}(S)$.
+>
+> *Lay: 7.5 (text)*
+
+^def-52-new3
+
+> [!definition] Definition §52.4: Covariance
+> For $i \ne j$, the entry $s_{ij}$ is the **covariance** of $x_i$ and $x_j$. If $s_{ij} = 0$, then $x_i$ and $x_j$ are **uncorrelated**.
 >
 > Analysis of the multivariate data is greatly simplified when most or all of the variables $x_1, \dots, x_p$ are uncorrelated, that is, when the covariance matrix is diagonal or nearly diagonal.
 >
 > *Lay: 7.5 (text)*
 
-^def-52-4
+^def-52-new4
 
 > [!example] Example §52.1: Sample Mean and Covariance Matrix
 > Three measurements are made on each of four individuals in a random sample from a population. The observation vectors are
@@ -163,7 +190,7 @@ with the property that the new variables $y_1, \dots, y_p$ are uncorrelated and 
 
 ^pf-52-2
 
-*Uses:* [[§52★ Applications to Image Processing and Statistics#^def-52-2|Def. §52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-3|Def. §52.3]]
+*Uses:* [[§52★ Applications to Image Processing and Statistics#^def-52-new1|Def. §52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-3|Def. §52.3]]
 
 So the desired orthogonal matrix $P$ is one that makes $P^TSP$ diagonal. Let $D$ be a diagonal matrix with the eigenvalues $\lambda_1, \dots, \lambda_p$ of $S$ on the diagonal, arranged so that $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_p \ge 0$, and let $P$ be an orthogonal matrix whose columns are corresponding unit eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_p$ (Spectral Theorem, [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3]]). Then $S = PDP^T$ and $P^TSP = D$: the new variables are uncorrelated, with variances $\lambda_1 \ge \cdots \ge \lambda_p$.
 
@@ -186,15 +213,15 @@ So the desired orthogonal matrix $P$ is one that makes $P^TSP$ diagonal. Let $D$
 > 1. Arrange the data as a $p \times N$ matrix of observations and compute the sample mean $\mathbf{M}$.
 > 2. Subtract $\mathbf{M}$ from every column to get $B$ in mean-deviation form, and compute $S = \frac{1}{N-1}BB^T$.
 > 3. Find the eigenvalues $\lambda_1 \ge \cdots \ge \lambda_p \ge 0$ of $S$ and corresponding unit eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_p$: the principal components.
-> 4. The new variables are $y_j = \mathbf{u}_j^T\mathbf{X}$ (with $\mathbf{X}$ in mean-deviation form); $y_j$ has variance $\lambda_j$, and $y_j$ explains the fraction $\lambda_j/\operatorname{tr}(S)$ of the total variance (Proposition §52.3).
+> 4. The new variables are $y_j = \mathbf{u}_j^T\mathbf{X}$ (with $\mathbf{X}$ in mean-deviation form); $y_j$ has variance $\lambda_j$, and $y_j$ explains the fraction $\lambda_j/\operatorname{tr}(S)$ of the total variance ([[§52★ Applications to Image Processing and Statistics#^prop-52-3|Proposition §52.3]]).
 > 5. Keep the first few $y_j$ that together explain most of the variance; the data are essentially that many-dimensional.
 >
-> For large data sets, steps 2–3 are carried out with the SVD instead (Proposition §52.5).
+> For large data sets, steps 2–3 are carried out with the SVD instead ([[§52★ Applications to Image Processing and Statistics#^prop-52-5|Proposition §52.5]]).
 
 ^rem-52-1
 
 > [!example] Example §52.2: Principal Components of a Satellite Image
-> The initial data for the multispectral image of Railroad Valley, Nevada (three spectral bands, Definition §52.1) consisted of 4 million vectors in $\mathbb{R}^3$, with covariance matrix
+> The initial data for the multispectral image of Railroad Valley, Nevada (three spectral bands, [[§52★ Applications to Image Processing and Statistics#^def-52-1|Definition §52.1]]) consisted of 4 million vectors in $\mathbb{R}^3$, with covariance matrix
 >
 > $$
 > S = \begin{bmatrix} 2382.78 & 2611.84 & 2136.20 \\ 2611.84 & 3106.47 & 2553.90 \\ 2136.20 & 2553.90 & 2650.71 \end{bmatrix}.
@@ -225,7 +252,7 @@ So the desired orthogonal matrix $P$ is one that makes $P^TSP$ diagonal. Let $D$
 > \operatorname{tr}(D) = 7614.23 + 427.63 + 98.10 = 8139.96 ,
 > $$
 >
-> which equals $\operatorname{tr}(S) = 2382.78 + 3106.47 + 2650.71 = 8139.96$, as Proposition §52.3 predicts. The components explain
+> which equals $\operatorname{tr}(S) = 2382.78 + 3106.47 + 2650.71 = 8139.96$, as [[§52★ Applications to Image Processing and Statistics#^prop-52-3|Proposition §52.3]] predicts. The components explain
 >
 > $$
 > \frac{7614.23}{8139.96} = 93.5\%, \qquad \frac{427.63}{8139.96} = 5.3\%, \qquad \frac{98.10}{8139.96} = 1.2\%
@@ -257,7 +284,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 ^prop-52-3
 
 > [!proof]+ Proof
-> (Lay: "roughly speaking, this is true because left-multiplication by $P$ does not change the lengths of vectors or the angles between them"; the proof is Exercise 12.) By Proposition §52.2, the covariance matrix of the $\mathbf{Y}_k = P^T\mathbf{X}_k$ is $P^TSP$, so it suffices to show $\operatorname{tr}(P^TSP) = \operatorname{tr}(S)$. The trace satisfies $\operatorname{tr}(FG) = \operatorname{tr}(GF)$ whenever both products are defined (Lay's Exercise 25 of Section 5.4), since both equal $\sum_{i,j} f_{ij}g_{ji}$. With $F = P^T$ and $G = SP$:
+> (Lay: "roughly speaking, this is true because left-multiplication by $P$ does not change the lengths of vectors or the angles between them"; the proof is Exercise 12.) By [[§52★ Applications to Image Processing and Statistics#^prop-52-2|Proposition §52.2]], the covariance matrix of the $\mathbf{Y}_k = P^T\mathbf{X}_k$ is $P^TSP$, so it suffices to show $\operatorname{tr}(P^TSP) = \operatorname{tr}(S)$. The trace satisfies $\operatorname{tr}(FG) = \operatorname{tr}(GF)$ whenever both products are defined (Lay's Exercise 25 of Section 5.4), since both equal $\sum_{i,j} f_{ij}g_{ji}$. With $F = P^T$ and $G = SP$:
 >
 > $$
 > \operatorname{tr}(P^TSP) = \operatorname{tr}(SPP^T) = \operatorname{tr}(S) ,
@@ -267,7 +294,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 
 ^pf-52-3
 
-*Uses:* [[§52★ Applications to Image Processing and Statistics#^prop-52-2|§52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-4|Def. §52.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices: $PP^T = I$)
+*Uses:* [[§52★ Applications to Image Processing and Statistics#^prop-52-2|§52.2]], [[§52★ Applications to Image Processing and Statistics#^def-52-new2|Def. §52.4]], [[§52★ Applications to Image Processing and Statistics#^def-52-new3|Def. §52.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices: $PP^T = I$)
 
 ## Characterizations of Principal Component Variables
 
@@ -292,7 +319,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 
 ^pf-52-4
 
-*Uses:* [[§50★ Constrained Optimization#^thm-50-1|§50.1]], [[§50★ Constrained Optimization#^thm-50-4|§50.4]], [[§52★ Applications to Image Processing and Statistics#^def-52-3|Def. §52.3]], [[§52★ Applications to Image Processing and Statistics#^def-52-4|Def. §52.4]], [[§52★ Applications to Image Processing and Statistics#^prop-52-1|§52.1]]
+*Uses:* [[§50★ Constrained Optimization#^thm-50-1|§50.1]], [[§50★ Constrained Optimization#^thm-50-4|§50.4]], [[§52★ Applications to Image Processing and Statistics#^def-52-3|Def. §52.3]], [[§52★ Applications to Image Processing and Statistics#^def-52-4|Def. §52.4]], [[§52★ Applications to Image Processing and Statistics#^def-52-new4|Def. §52.4]], [[§52★ Applications to Image Processing and Statistics#^prop-52-1|§52.1]]
 
 > [!remark]- Connections
 > - Keeping the first $k$ principal components is the best rank-$k$ approximation of the data matrix $B^T/\sqrt{N-1}$: truncate its SVD after $k$ terms, [[§27 Consequences of Singular Value Decomposition#^ladr-7-92|LADR 7.92]] (Eckart–Young; there in the operator norm, with error $\sigma_{k+1}$).
@@ -353,11 +380,11 @@ The SVD is the main tool for principal component analysis in practice: iterative
 >
 > where $\hat w$ and $\hat h$ are weight and height in mean-deviation form. The variance of this index over the data set is $\lambda_1 \approx 123.02$. Since the total variance is $\operatorname{tr}(S) = 100 + 25 = 125$, the size index accounts for practically all ($123.02/125 \approx 98.4\%$) of the variance of the data.
 >
-> **The line of the first principal component.** In parametric vector form, $\mathbf{x} = \mathbf{M} + t\mathbf{u}$. It is the best approximation to the data in the sense that the sum of the squares of the *orthogonal* distances from the data points to the line is minimized: principal component analysis is equivalent to **orthogonal regression**. (Compare the least-squares line of [[§45 Applications to Linear Models#^def-45-2|Definition §45.2]], which minimizes *vertical* distances.)
+> **The line of the first principal component.** In parametric vector form, $\mathbf{x} = \mathbf{M} + t\mathbf{u}$. It is the best approximation to the data in the sense that the sum of the squares of the *orthogonal* distances from the data points to the line is minimized: principal component analysis is equivalent to **orthogonal regression**. (Compare the least-squares line of [[§45 Applications to Linear Models#^def-45-new1|Definition §45.2]], which minimizes *vertical* distances.)
 >
 > *Lay: 7.5, Practice Problems 1–2*
 
 ^ex-52-3
 
 ![[m235-52-1.svg]]
-*Example §52.3: the five boys (black, with axes starting at $w = 112$, $h = 54$), their mean $\mathbf{M}$ and the first principal component $\mathbf{u}$ (green). The blue line $\mathbf{M} + t\mathbf{u}$ minimizes the sum of the squared perpendicular distances (red). Both axes use the same scale, so perpendicular looks perpendicular; the second principal component, with variance only $1.98$, measures the small spread across the line.*
+*[[§52★ Applications to Image Processing and Statistics#^ex-52-3|Example §52.3]]: the five boys (black, with axes starting at $w = 112$, $h = 54$), their mean $\mathbf{M}$ and the first principal component $\mathbf{u}$ (green). The blue line $\mathbf{M} + t\mathbf{u}$ minimizes the sum of the squared perpendicular distances (red). Both axes use the same scale, so perpendicular looks perpendicular; the second principal component, with variance only $1.98$, measures the small spread across the line.*

@@ -18,13 +18,13 @@ tags: [measure-theory, math551]
 >
 > Is $F$ differentiable, and if so, is $F'(x) = f(x)$ a.e.?
 >
-> Writing $f = f^+ - f^-$ ([[§12 Measurable Functions#^def-12-4|Def. §12.4]]), we have $F(x) = F_1(x) - F_2(x)$ where $F_1(x) = \int_a^x f^+(t)\,dt$ and $F_2(x) = \int_a^x f^-(t)\,dt$ are both increasing functions. So the question reduces to understanding the differentiability of monotone functions.
+> Writing $f = f^+ - f^-$ ([[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]]), we have $F(x) = F_1(x) - F_2(x)$ where $F_1(x) = \int_a^x f^+(t)\,dt$ and $F_2(x) = \int_a^x f^-(t)\,dt$ are both increasing functions. So the question reduces to understanding the differentiability of monotone functions.
 
 ^rem-18-1
 
 > [!remark]- Connections
 > - For continuous $f$ the answer is the MATH 451 [[Fundamental Theorem of Calculus]] (FTC II, 451 §34.4): $F' = f$ at every point of continuity.
-> - Answered in general by [[§18 Differentiation Theory#^thm-18-26|Differentiation of the Integral]] (§18.26).
+> - Answered in general by [[§18b Differentiating the Integral#^thm-18-26|Differentiation of the Integral]] ([[§18b Differentiating the Integral#^thm-18-26|§18.26]]).
 
 ## Monotone Functions and Continuity
 
@@ -59,7 +59,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - MATH 451 states this fact without proof alongside [[§33 Properties of the Riemann Integral#^thm-33-1|Monotonic Functions Are Integrable]] (451 §33.1).
-> - Monotone functions are also [[§12 Measurable Functions#^ex-12-1|measurable]] (Ex. §12.1).
+> - Monotone functions are also [[§12 Measurable Functions#^ex-12-1|measurable]] ([[§12 Measurable Functions#^ex-12-1|Ex. §12.1]]).
 
 ## Vitali Covering
 
@@ -72,6 +72,8 @@ tags: [measure-theory, math551]
 > $\Gamma = \{[r - 1/m, r + 1/m] \cap [0,1] : r \in \mathbb{Q} \cap [0,1],\; m \in \mathbb{N}\}$ is a Vitali covering of $[0, 1]$: for any $x \in [0,1]$ and $\varepsilon > 0$, choose $r \in \mathbb{Q}$ close to $x$ and $m$ large enough.
 
 ^ex-18-1
+
+*Chain:* ← [[§13a ℚ, Vitali and Cantor Sets, xᵏ and Escaping Mass#The Rationals ℚ|Chapter 3]] · [[§19b Power Singularities 1∕xᵃ and ℚ#The Rationals ℚ|Chapter 6]] →
 
 > [!remark] Remark: Notation
 > For a closed interval $I \subseteq \mathbb{R}$, let $\hat{I}$ denote the interval concentric with $I$ and with $|\hat{I}| = 5|I|$ (i.e., scaled by factor $5$ about the center).
@@ -134,8 +136,8 @@ tags: [measure-theory, math551]
 *The Vitali covering argument. (a) The set $E$ (black) and a Vitali covering $\Gamma$ (blue; a genuine one has arbitrarily short intervals around every point of $E$). (b) Greedy selection: each new interval is disjoint from the earlier ones and longer than half of any remaining candidate, giving $I_1, I_2, I_3$. A point $x_0 \in E$ not covered by $I_1$ (take $n_0 = 1$) lies in some $J \in \Gamma$ (red, dashed) disjoint from $I_1$; here $J$ first meets $I_2$. (c) The selection rule gives $|J| \leq \delta_1 < 2|I_2|$, and an interval that meets $I_2$ and is shorter than $2|I_2|$ lies inside the $5\times$ dilation $\hat I_2$ (shaded). So the dilations $\hat I_j$, $j > n_0$, cover everything that $I_1, \dots, I_{n_0}$ miss, at total cost $5\sum_{j > n_0} |I_j|$.*
 
 > [!remark]- Connections
-> - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] (§18.9) and once in [[§18 Differentiation Theory#^thm-18-27|Theorem §18.27]] (non-constant functions with zero derivative).
-> - Compare the compactness arguments of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] (§6.4): there a finite subcover, here finitely many *disjoint* intervals covering all but a small set.
+> - Used twice in [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]] ([[§18a Lebesgue's Differentiation Theorem#^thm-18-9|§18.9]]) and once in [[§18c Absolute Continuity and the FTC#^thm-18-27|Theorem §18.27]] (non-constant functions with zero derivative).
+> - Compare the compactness arguments of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] ([[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|§6.4]]): there a finite subcover, here finitely many *disjoint* intervals covering all but a small set.
 
 ## Functions of Bounded Variation
 
@@ -192,7 +194,7 @@ tags: [measure-theory, math551]
 *Uses:* [[Mean Value Theorem|451 §29.3]], [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]]
 
 > [!remark]- Connections
-> - The same MVT estimate gives [[§29 The Mean Value Theorem#^prop-29-8|the Mean Value Inequality]] (451 §29.8) and [[§19 Uniform Continuity#^thm-19-5|Bounded Derivative Implies Uniform Continuity]] (451 §19.5); in the language below, $f$ is Lipschitz, hence [[§18 Differentiation Theory#^prop-18-11|AC]] (§18.11).
+> - The same MVT estimate gives [[§29 The Mean Value Theorem#^prop-29-8|the Mean Value Inequality]] (451 §29.8) and [[§19 Uniform Continuity#^thm-19-5|Bounded Derivative Implies Uniform Continuity]] (451 §19.5); in the language below, $f$ is Lipschitz, hence [[§18c Absolute Continuity and the FTC#^prop-18-11|AC]] ([[§18c Absolute Continuity and the FTC#^prop-18-11|§18.11]]).
 
 > [!example] Example §18.3: A Continuous Function Not in BV
 > Define $f(x) = \sqrt{x}\sin(\pi/x)$ for $0 < x \leq 1$ and $f(0) = 0$. Then $f$ is continuous on $[0, 1]$ but $f \notin BV([0, 1])$: the oscillations near $0$ accumulate enough variation to make $\bigvee_0^1(f) = \infty$.
@@ -332,7 +334,7 @@ tags: [measure-theory, math551]
 >
 > **Lower bound ($\bigvee_a^b(F) \geq \int_a^b |f|\,dt$):**
 >
-> *Step 1: Step functions.* Assume $f(x) = \sum_{i=0}^{n-1} c_i\,\chi_{[x_i, x_{i+1})}$ is a [[§15 The General Lebesgue Integral#^def-15-2|step function]] on the partition $\Delta: a = x_0 < \cdots < x_n = b$. Then:
+> *Step 1: Step functions.* Assume $f(x) = \sum_{i=0}^{n-1} c_i\,\chi_{[x_i, x_{i+1})}$ is a [[§15a The Dominated Convergence Theorem#^def-15-2|step function]] on the partition $\Delta: a = x_0 < \cdots < x_n = b$. Then:
 >
 > $$
 > v_\Delta(F) = \sum_{i=0}^{n-1} |F(x_{i+1}) - F(x_i)| = \sum_{i=0}^{n-1} \left|\int_{x_i}^{x_{i+1}} c_i\,dt\right| = \sum_{i=0}^{n-1} |c_i|(x_{i+1} - x_i) = \int_a^b |f(t)|\,dt.
@@ -358,6 +360,6 @@ tags: [measure-theory, math551]
 
 ^pf-18-8
 
-*Uses:* [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[§15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[§18 Differentiation Theory#^prop-18-4|§18.4]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]]
+*Uses:* [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]], [[§15a The Dominated Convergence Theorem#^def-15-2|Def. §15.2]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[§18 Differentiation Theory#^prop-18-4|§18.4]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]]
 
 Dini derivatives and Lebesgue's differentiation theorem continue in [[§18a Lebesgue's Differentiation Theorem]]; differentiation of the integral follows in [[§18b Differentiating the Integral]], and absolute continuity and the FTC in [[§18c Absolute Continuity and the FTC]].

@@ -15,7 +15,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 
 ## Matrices, Conjugates and Adjoints
 
-> [!definition] Definition §28.1: Matrix; Transpose, Conjugate and Adjoint
+> [!definition] Definition §28.1: Matrix
 > Matrices are denoted by boldface capitals $\mathbf{A}, \mathbf{B}, \ldots$ (occasionally Greek: $\mathbf{\Phi}, \mathbf{\Psi}$). An $m \times n$ **matrix** is a rectangular array of $m$ rows and $n$ columns,
 >
 > $$
@@ -23,11 +23,18 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 > $$
 >
 > whose elements $a_{ij}$ (row $i$, column $j$) may be **complex numbers**.
+>
+> A **square matrix** has $m = n$ and is said to be of **order** $n$. A (column) **vector** is an $n \times 1$ matrix, denoted by boldface lowercase $\mathbf{x}, \mathbf{y}, \boldsymbol{\xi}, \boldsymbol{\eta}, \ldots$; its transpose $\mathbf{x}^T$ is a $1 \times n$ row vector.
+>
+> *BDP: 7.2 (text), Equation (1)*
+
+^def-28-1
+
+> [!definition] Definition §28.1: Transpose, Conjugate and Adjoint
+> For a matrix $\mathbf{A} = (a_{ij})$ as in (1):
 > - The **transpose** of $\mathbf{A} = (a_{ij})$ is $\mathbf{A}^T = (a_{ji})$: rows and columns interchanged.
 > - The **conjugate** of $\mathbf{A}$ is $\overline{\mathbf{A}} = (\overline{a_{ij}})$: every element replaced by its complex conjugate.
 > - The **adjoint** of $\mathbf{A}$ is the transpose of the conjugate, $\mathbf{A}^{\ast} = \overline{\mathbf{A}}^T$.
->
-> A **square matrix** has $m = n$ and is said to be of **order** $n$. A (column) **vector** is an $n \times 1$ matrix, denoted by boldface lowercase $\mathbf{x}, \mathbf{y}, \boldsymbol{\xi}, \boldsymbol{\eta}, \ldots$; its transpose $\mathbf{x}^T$ is a $1 \times n$ row vector.
 >
 > For example,
 >
@@ -40,7 +47,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 >
 > *BDP: 7.2 (text), Equation (1)*
 
-^def-28-1
+^def-28-new1
 
 > [!remark]- Connections
 > - Real matrices and the transpose: [[§11 Matrix Operations#^def-11-1|235 Def. §11.1]], [[§11 Matrix Operations#^def-11-6|235 Def. §11.6]]. Conjugates of complex vectors and matrices: [[§36 Complex Eigenvalues#^def-36-2|235 Def. §36.2]], with the rules $\overline{\mathbf{A}\mathbf{x}} = \overline{\mathbf{A}}\,\overline{\mathbf{x}}$ in [[§36 Complex Eigenvalues#^prop-36-1|235 Prop. §36.1]].
@@ -116,26 +123,41 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 
 ## Products of Vectors; the Inner Product
 
-> [!definition] Definition §28.3: Dot Product, Inner Product, Length, Orthogonality
-> For vectors $\mathbf{x}$, $\mathbf{y}$ with $n$ (real or complex) components:
-> - the product $\mathbf{x}^T\mathbf{y}$, the $n$-dimensional extension of the dot product, is
+> [!definition] Definition §28.3: Dot Product xᵀy
+> For vectors $\mathbf{x}$, $\mathbf{y}$ with $n$ (real or complex) components, the product $\mathbf{x}^T\mathbf{y}$, the $n$-dimensional extension of the dot product, is
 >
 > $$
 > \mathbf{x}^T\mathbf{y} = \sum_{i=1}^n x_iy_i ; \qquad (13)
 > $$
 >
-> - the **scalar product** or **inner product** is
+> *BDP: 7.2 (text), Equations (13) and (15)*
+
+^def-28-3
+
+> [!definition] Definition §28.3: Inner Product
+> For vectors $\mathbf{x}$, $\mathbf{y}$ with $n$ (real or complex) components, the **scalar product** or **inner product** is
 >
 > $$
 > (\mathbf{x}, \mathbf{y}) = \sum_{i=1}^n x_i\overline{y_i} ; \qquad (15)
 > $$
 >
-> - the **length** or **magnitude** of $\mathbf{x}$ is $\|\mathbf{x}\| = (\mathbf{x}, \mathbf{x})^{1/2}$;
-> - $\mathbf{x}$ and $\mathbf{y}$ are **orthogonal** if $(\mathbf{x}, \mathbf{y}) = 0$. For example, $\mathbf{i}, \mathbf{j}, \mathbf{k}$ form an orthogonal set.
+> *BDP: 7.2 (text), Equations (13) and (15)*
+
+^def-28-new2
+
+> [!definition] Definition §28.3: Length
+> For a vector $\mathbf{x}$ with $n$ (real or complex) components, the **length** or **magnitude** of $\mathbf{x}$ is $\|\mathbf{x}\| = (\mathbf{x}, \mathbf{x})^{1/2}$, with the inner product (15).
 >
 > *BDP: 7.2 (text), Equations (13) and (15)*
 
-^def-28-3
+^def-28-new3
+
+> [!definition] Definition §28.3: Orthogonality
+> Vectors $\mathbf{x}$ and $\mathbf{y}$ are **orthogonal** if $(\mathbf{x}, \mathbf{y}) = 0$, with the inner product (15). For example, $\mathbf{i}, \mathbf{j}, \mathbf{k}$ form an orthogonal set.
+>
+> *BDP: 7.2 (text), Equations (13) and (15)*
+
+^def-28-new4
 
 > [!theorem] Proposition §28.2: Properties of the Two Products
 > For vectors $\mathbf{x}, \mathbf{y}, \mathbf{z}$ with $n$ components and a number $\alpha$:
@@ -167,7 +189,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 
 ^pf-28-2
 
-*Uses:* [[§28 Matrices#^def-28-3|Def. §28.3]], [[§53 Complex Numbers#^prop-53-2|235 Prop. §53.2]] ($z\overline{z} = |z|^2$), [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (conjugate of a product)
+*Uses:* [[§28 Matrices#^def-28-3|Def. §28.3]], [[§28 Matrices#^def-28-new2|Def. §28.3]], [[§53 Complex Numbers#^prop-53-2|235 Prop. §53.2]] ($z\overline{z} = |z|^2$), [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (conjugate of a product)
 
 > [!remark]- Connections
 > - $(\mathbf{x}, \mathbf{y})$ is the Euclidean inner product on $\mathbb{C}^n$, [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]](a), with the same convention as BDP: linear in the first slot, conjugate-linear in the second; (17)–(18) are the axioms [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]] and their consequences [[§19 Inner Products and Norms#^ladr-6-6|LADR 6.6]]. Physics puts the conjugate on the other slot (the warning after LADR 6.2).
@@ -194,7 +216,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 
 ## Inverses and Determinants
 
-> [!definition] Definition §28.4: Inverse; Minor, Cofactor, Determinant
+> [!definition] Definition §28.4: Inverse
 > An $n \times n$ matrix $\mathbf{A}$ is **nonsingular** or **invertible** if there is a matrix $\mathbf{B}$ with $\mathbf{AB} = \mathbf{I}$ and $\mathbf{BA} = \mathbf{I}$. Such a $\mathbf{B}$ is unique; it is the **inverse** $\mathbf{A}^{-1}$, and
 >
 > $$
@@ -203,7 +225,12 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 >
 > Matrices without an inverse are **singular** or **noninvertible**.
 >
-> The **minor** $M_{ij}$ of the element $a_{ij}$ is the determinant of the matrix obtained by deleting row $i$ and column $j$ of $\mathbf{A}$; the **cofactor** is
+> *BDP: 7.2 (text), Equations (22)–(23)*
+
+^def-28-4
+
+> [!definition] Definition §28.4: Minor, Cofactor and Determinant
+> For an $n \times n$ matrix $\mathbf{A}$: The **minor** $M_{ij}$ of the element $a_{ij}$ is the determinant of the matrix obtained by deleting row $i$ and column $j$ of $\mathbf{A}$; the **cofactor** is
 >
 > $$
 > C_{ij} = (-1)^{i+j}M_{ij} . \qquad (23)
@@ -214,7 +241,7 @@ To write the linear system (14) of [[§27 Introduction to Systems of First-Order
 > *BDP (p. 290) prints the first-row expansion as $C_{11} + C_{12} + \cdots + C_{1n}$, without the factors $a_{1j}$; the formula above is the correct one.*
 > *BDP: 7.2 (text), Equations (22)–(23)*
 
-^def-28-4
+^def-28-new5
 
 > [!theorem] Theorem §28.3: Determinant Test and Cofactor Formula for the Inverse
 > $\mathbf{A}$ is nonsingular if and only if $\det\mathbf{A} \ne 0$; equivalently, $\mathbf{A}$ is singular if and only if $\det\mathbf{A} = 0$. When $\det\mathbf{A} \ne 0$, the elements of $\mathbf{B} = \mathbf{A}^{-1}$ are

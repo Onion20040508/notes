@@ -15,20 +15,32 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ## Matrix Notation
 
-> [!definition] Definition §11.1: Matrix Notation; Diagonal, Identity and Zero Matrices
+> [!definition] Definition §11.1: Matrix Notation
 > An **$m \times n$ matrix** $A$ has $m$ rows and $n$ columns. The scalar in row $i$ and column $j$ is the **$(i, j)$-entry** $a_{ij}$ of $A$, and we write $A = [\,a_{ij}\,]$. Each column is a vector in $\mathbb{R}^m$; with columns $\mathbf{a}_1, \ldots, \mathbf{a}_n$,
 >
 > $$
 > A = \begin{bmatrix} \mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n \end{bmatrix}, \qquad a_{ij} = \text{the } i\text{th entry of } \mathbf{a}_j .
 > $$
 >
-> - The **diagonal entries** of $A$ are $a_{11}, a_{22}, a_{33}, \ldots$; they form the **main diagonal**.
-> - A **diagonal matrix** is a square $n \times n$ matrix whose nondiagonal entries are all zero. The $n \times n$ **identity matrix** $I_n$ (diagonal entries $1$) is an example.
-> - A **zero matrix**, written $0$, is a matrix all of whose entries are zero. Its size is usually clear from the context.
+> The **diagonal entries** of $A$ are $a_{11}, a_{22}, a_{33}, \ldots$; they form the **main diagonal**.
 >
 > *Lay: 2.1 (text)*
 
 ^def-11-1
+
+> [!definition] Definition §11.1: Diagonal Matrix; Identity Matrix
+> A **diagonal matrix** is a square $n \times n$ matrix whose nondiagonal entries are all zero. The $n \times n$ **identity matrix** $I_n$ (diagonal entries $1$) is an example.
+>
+> *Lay: 2.1 (text)*
+
+^def-11-new1
+
+> [!definition] Definition §11.1: Zero Matrix
+> A **zero matrix**, written $0$, is a matrix all of whose entries are zero. Its size is usually clear from the context.
+>
+> *Lay: 2.1 (text)*
+
+^def-11-new2
 
 ## Sums and Scalar Multiples
 
@@ -154,7 +166,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 ^prop-11-3
 
 > [!proof]+ Proof
-> By Definition §11.3, column $j$ of $AB$ is $A\mathbf{b}_j$, and by the definition of a matrix–vector product, $A\mathbf{b}_j$ is the combination of the columns of $A$ with the entries $b_{1j}, \ldots, b_{nj}$ of $\mathbf{b}_j$ as weights.
+> By [[§11 Matrix Operations#^def-11-3|Definition §11.3]], column $j$ of $AB$ is $A\mathbf{b}_j$, and by the definition of a matrix–vector product, $A\mathbf{b}_j$ is the combination of the columns of $A$ with the entries $b_{1j}, \ldots, b_{nj}$ of $\mathbf{b}_j$ as weights.
 
 ^pf-11-3
 
@@ -190,7 +202,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 ^prop-11-5
 
 > [!proof]+ Proof
-> $\operatorname{row}_i(A)$ is a $1 \times n$ matrix, so $\operatorname{row}_i(A)\,B$ is a $1 \times p$ matrix. By the row–column rule (Proposition §11.4) its $j$th entry is $a_{i1}b_{1j} + \cdots + a_{in}b_{nj}$, which by the same rule is the $(i, j)$-entry of $AB$, the $j$th entry of $\operatorname{row}_i(AB)$.
+> $\operatorname{row}_i(A)$ is a $1 \times n$ matrix, so $\operatorname{row}_i(A)\,B$ is a $1 \times p$ matrix. By the row–column rule ([[§11 Matrix Operations#^prop-11-4|Proposition §11.4]]) its $j$th entry is $a_{i1}b_{1j} + \cdots + a_{in}b_{nj}$, which by the same rule is the $(i, j)$-entry of $AB$, the $j$th entry of $\operatorname{row}_i(AB)$.
 
 ^pf-11-5
 
@@ -258,7 +270,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 > BA = \begin{bmatrix} 6 & 7 \\ 8 & 9 \end{bmatrix}\begin{bmatrix} 1 & 2 \\ 3 & 5 \end{bmatrix} = \begin{bmatrix} 6 \cdot 1 + 7 \cdot 3 & 6 \cdot 2 + 7 \cdot 5 \\ 8 \cdot 1 + 9 \cdot 3 & 8 \cdot 2 + 9 \cdot 5 \end{bmatrix} = \begin{bmatrix} 27 & 47 \\ 35 & 61 \end{bmatrix},
 > $$
 >
-> so $\mathbf{z} = B(A\mathbf{x}) = (BA)\mathbf{x}$, as Theorem §11.2 predicts. The map applied first, $A$, stands on the right.
+> so $\mathbf{z} = B(A\mathbf{x}) = (BA)\mathbf{x}$, as [[§11 Matrix Operations#^thm-11-2|Theorem §11.2]] predicts. The map applied first, $A$, stands on the right.
 >
 > *Source: 235 lecture L7*
 
@@ -280,13 +292,13 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 ^thm-11-6
 
 > [!proof]+ Proof
-> **(a)** Let $C = [\,\mathbf{c}_1 \ \cdots \ \mathbf{c}_p\,]$. By Definition §11.3, $BC = [\,B\mathbf{c}_1 \ \cdots \ B\mathbf{c}_p\,]$, and again by the definition,
+> **(a)** Let $C = [\,\mathbf{c}_1 \ \cdots \ \mathbf{c}_p\,]$. By [[§11 Matrix Operations#^def-11-3|Definition §11.3]], $BC = [\,B\mathbf{c}_1 \ \cdots \ B\mathbf{c}_p\,]$, and again by the definition,
 >
 > $$
 > A(BC) = \begin{bmatrix} A(B\mathbf{c}_1) & \cdots & A(B\mathbf{c}_p) \end{bmatrix} = \begin{bmatrix} (AB)\mathbf{c}_1 & \cdots & (AB)\mathbf{c}_p \end{bmatrix} = (AB)C,
 > $$
 >
-> using equation (1) of Theorem §11.2 for each column. (Lay also notes a second proof: matrix multiplication corresponds to composition of functions, and composition of functions is associative.)
+> using equation (1) of [[§11 Matrix Operations#^thm-11-2|Theorem §11.2]] for each column. (Lay also notes a second proof: matrix multiplication corresponds to composition of functions, and composition of functions is associative.)
 >
 > **(b)** (Lay's Exercise 29.) By the row–column rule, the $(i, j)$-entry of $A(B + C)$ is
 >
@@ -375,7 +387,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 ^ex-11-3
 
 ![[m235-11-1.svg]]
-*Example §11.3(b) with $\varphi = 50^\circ$. Top: project, then rotate ($R_\varphi P$): $\mathbf{e}_1$ is unchanged by $P$ and ends at $(\cos\varphi, \sin\varphi)$. Bottom: rotate, then project ($PR_\varphi$): $\mathbf{e}_1$ is rotated and then flattened to $(\cos\varphi, 0)$. The two composites send $\mathbf{e}_1$ to different vectors, so $R_\varphi P \ne PR_\varphi$.*
+*[[§11 Matrix Operations#^ex-11-3|Example §11.3]](b) with $\varphi = 50^\circ$. Top: project, then rotate ($R_\varphi P$): $\mathbf{e}_1$ is unchanged by $P$ and ends at $(\cos\varphi, \sin\varphi)$. Bottom: rotate, then project ($PR_\varphi$): $\mathbf{e}_1$ is rotated and then flattened to $(\cos\varphi, 0)$. The two composites send $\mathbf{e}_1$ to different vectors, so $R_\varphi P \ne PR_\varphi$.*
 
 ## Powers of a Matrix
 
@@ -496,7 +508,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 ^cor-11-8
 
 > [!proof]+ Proof
-> Induction on $k$; the case $k = 2$ is Theorem §11.7(d). If the formula holds for $k - 1$ factors, then by (d) applied to $A_1 \cdots A_{k-1}$ and $A_k$,
+> Induction on $k$; the case $k = 2$ is [[§11 Matrix Operations#^thm-11-7|Theorem §11.7]](d). If the formula holds for $k - 1$ factors, then by (d) applied to $A_1 \cdots A_{k-1}$ and $A_k$,
 >
 > $$
 > (A_1 \cdots A_{k-1}A_k)^T = A_k^T(A_1 \cdots A_{k-1})^T = A_k^TA_{k-1}^T \cdots A_1^T .
@@ -507,13 +519,13 @@ The associative and distributive laws say that parentheses can be inserted and r
 *Uses:* [[§11 Matrix Operations#^thm-11-7|§11.7]], [[§11 Matrix Operations#^thm-11-6|§11.6]] (associativity)
 
 > [!example] Example §11.5: Transposes and Matrix Equations
-> **(a)** Simplify $(A - 3B^2)^T$ for $n \times n$ matrices $A$ and $B$. By Theorem §11.7(b), (c) and Corollary §11.8,
+> **(a)** Simplify $(A - 3B^2)^T$ for $n \times n$ matrices $A$ and $B$. By [[§11 Matrix Operations#^thm-11-7|Theorem §11.7]](b), (c) and [[§11 Matrix Operations#^cor-11-8|Corollary §11.8]],
 >
 > $$
 > (A - 3B^2)^T = A^T + (-3BB)^T = A^T - 3(BB)^T = A^T - 3B^TB^T = A^T - 3(B^T)^2 .
 > $$
 >
-> **(b)** Given $B = 2A - 3C^T$, find $A$, for $B = \begin{bmatrix} 1 & 0 \\ 4 & -2 \end{bmatrix}$ and $C = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix}$. The rules of Theorem §11.1 allow solving as for numbers: $2A = B + 3C^T$, so $A = \tfrac12(B + 3C^T)$. Here
+> **(b)** Given $B = 2A - 3C^T$, find $A$, for $B = \begin{bmatrix} 1 & 0 \\ 4 & -2 \end{bmatrix}$ and $C = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix}$. The rules of [[§11 Matrix Operations#^thm-11-1|Theorem §11.1]] allow solving as for numbers: $2A = B + 3C^T$, so $A = \tfrac12(B + 3C^T)$. Here
 >
 > $$
 > C^T = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix}, \qquad B + 3C^T = \begin{bmatrix} 1 + 3 & 0 - 3 \\ 4 + 6 & -2 + 9 \end{bmatrix} = \begin{bmatrix} 4 & -3 \\ 10 & 7 \end{bmatrix}, \qquad A = \begin{bmatrix} 2 & -3/2 \\ 5 & 7/2 \end{bmatrix} .
@@ -521,7 +533,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 >
 > Check: $2A - 3C^T = \begin{bmatrix} 4 & -3 \\ 10 & 7 \end{bmatrix} - \begin{bmatrix} 3 & -3 \\ 6 & 9 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 4 & -2 \end{bmatrix} = B$.
 >
-> **(c)** Vectors are $n \times 1$ matrices, so Theorem §11.7 applies to them. For $A = \begin{bmatrix} 1 & -3 \\ -2 & 4 \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} 5 \\ 3 \end{bmatrix}$: $A\mathbf{x} = \begin{bmatrix} 5 - 9 \\ -10 + 12 \end{bmatrix} = \begin{bmatrix} -4 \\ 2 \end{bmatrix}$, so $(A\mathbf{x})^T = \begin{bmatrix} -4 & 2 \end{bmatrix}$, and indeed
+> **(c)** Vectors are $n \times 1$ matrices, so [[§11 Matrix Operations#^thm-11-7|Theorem §11.7]] applies to them. For $A = \begin{bmatrix} 1 & -3 \\ -2 & 4 \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} 5 \\ 3 \end{bmatrix}$: $A\mathbf{x} = \begin{bmatrix} 5 - 9 \\ -10 + 12 \end{bmatrix} = \begin{bmatrix} -4 \\ 2 \end{bmatrix}$, so $(A\mathbf{x})^T = \begin{bmatrix} -4 & 2 \end{bmatrix}$, and indeed
 >
 > $$
 > \mathbf{x}^TA^T = \begin{bmatrix} 5 & 3 \end{bmatrix}\begin{bmatrix} 1 & -2 \\ -3 & 4 \end{bmatrix} = \begin{bmatrix} 5 - 9 & -10 + 12 \end{bmatrix} = \begin{bmatrix} -4 & 2 \end{bmatrix} .
@@ -535,12 +547,12 @@ The associative and distributive laws say that parentheses can be inserted and r
 ^ex-11-5
 
 > [!remark] Remark: Inner and Outer Products
-> For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ (as $n \times 1$ matrices), the $1 \times 1$ matrix $\mathbf{u}^T\mathbf{v} = u_1v_1 + \cdots + u_nv_n$ is the **scalar product** or **inner product** of $\mathbf{u}$ and $\mathbf{v}$, written as a number ([[§40 Inner Product, Length, and Orthogonality#^def-40-1|Definition §40.1]]). The $n \times n$ matrix $\mathbf{u}\mathbf{v}^T$ is their **outer product**. By Theorem §11.7(d), $\mathbf{v}^T\mathbf{u} = (\mathbf{u}^T\mathbf{v})^T = \mathbf{u}^T\mathbf{v}$ and $\mathbf{v}\mathbf{u}^T = (\mathbf{u}\mathbf{v}^T)^T$. Outer products reappear in the column–row expansion of $AB$ ([[§14 Partitioned Matrices#^thm-14-3|Theorem §14.3]]) and in [[§11 Matrix Operations#^ex-11-4|Example §11.4]](b). (Lay's Exercises 27–28.)
+> For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ (as $n \times 1$ matrices), the $1 \times 1$ matrix $\mathbf{u}^T\mathbf{v} = u_1v_1 + \cdots + u_nv_n$ is the **scalar product** or **inner product** of $\mathbf{u}$ and $\mathbf{v}$, written as a number ([[§40 Inner Product, Length, and Orthogonality#^def-40-1|Definition §40.1]]). The $n \times n$ matrix $\mathbf{u}\mathbf{v}^T$ is their **outer product**. By [[§11 Matrix Operations#^thm-11-7|Theorem §11.7]](d), $\mathbf{v}^T\mathbf{u} = (\mathbf{u}^T\mathbf{v})^T = \mathbf{u}^T\mathbf{v}$ and $\mathbf{v}\mathbf{u}^T = (\mathbf{u}\mathbf{v}^T)^T$. Outer products reappear in the column–row expansion of $AB$ ([[§14 Partitioned Matrices#^thm-14-3|Theorem §14.3]]) and in [[§11 Matrix Operations#^ex-11-4|Example §11.4]](b). (Lay's Exercises 27–28.)
 
 ^rem-11-4
 
 > [!remark]- Remark: Numerical Notes
-> 1. The fastest way to compute $AB$ on a computer depends on how matrices are stored. The standard high-performance algorithms, such as those in LAPACK, compute $AB$ by columns, as in Definition §11.3 (a C++ version computes it by rows).
+> 1. The fastest way to compute $AB$ on a computer depends on how matrices are stored. The standard high-performance algorithms, such as those in LAPACK, compute $AB$ by columns, as in [[§11 Matrix Operations#^def-11-3|Definition §11.3]] (a C++ version computes it by rows).
 > 2. The column definition suits parallel processing: the columns of $B$ are assigned to different processors, which compute the corresponding columns of $AB$ independently and simultaneously.
 
 ^rem-11-5

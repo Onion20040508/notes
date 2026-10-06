@@ -207,7 +207,7 @@ $$
 > W = \begin{vmatrix} e^{r_1t} & e^{r_2t} \\ r_1e^{r_1t} & r_2e^{r_2t} \end{vmatrix} = (r_2 - r_1)\exp[(r_1 + r_2)t] ,
 > $$
 >
-> which is never zero because the exponential never vanishes and $r_2 - r_1 \ne 0$. So $y_1$, $y_2$ form a fundamental set ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]]), and $c_1e^{r_1t} + c_2e^{r_2t}$ is the general solution, as claimed in [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]].
+> which is never zero because the exponential never vanishes and $r_2 - r_1 \ne 0$. So $y_1$, $y_2$ form a fundamental set ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Definition §14.3]]), and $c_1e^{r_1t} + c_2e^{r_2t}$ is the general solution, as claimed in [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]].
 >
 > *BDP: Examples 3.2.3 and 3.2.4*
 
@@ -249,18 +249,25 @@ $$
 
 *Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|§14.3]]
 
-> [!definition] Definition §14.3: General Solution; Fundamental Set of Solutions
+> [!definition] Definition §14.3: General Solution
 > If $y_1$ and $y_2$ are solutions of (2) whose Wronskian is not everywhere zero, the expression
 >
 > $$
 > y = c_1y_1(t) + c_2y_2(t)
 > $$
 >
-> with arbitrary constant coefficients is called the **general solution** of (2), and $y_1$ and $y_2$ are said to form a **fundamental set of solutions** of (2). By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the general solution contains all solutions. So to find all solutions of (2) one needs only two solutions with nonzero Wronskian.
+> with arbitrary constant coefficients is called the **general solution** of (2). By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the general solution contains all solutions. So to find all solutions of (2) one needs only two solutions with nonzero Wronskian.
 >
 > *BDP: 3.2 (text)*
 
 ^def-14-3
+
+> [!definition] Definition §14.3: Fundamental Set of Solutions
+> If $y_1$ and $y_2$ are solutions of (2) whose Wronskian is not everywhere zero, then $y_1$ and $y_2$ are said to form a **fundamental set of solutions** of (2).
+>
+> *BDP: 3.2 (text)*
+
+^def-14-new1
 
 > [!remark]- Connections
 > - The map $y \mapsto (y(t_0), y'(t_0))$ from the solution space to $\mathbb{R}^2$ is an isomorphism ([[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]]; see the remark below), so the solution space has dimension $2$ ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]), and two linearly independent solutions are automatically a basis ([[§6 Dimension#^ladr-2-38|LADR 2.38]], [[§27 The Dimension of a Vector Space#^thm-27-5|235 Thm. §27.5]]).
@@ -287,7 +294,7 @@ $$
 > W[e^{5t}, e^{-2t}] = \begin{vmatrix} e^{5t} & e^{-2t} \\ 5e^{5t} & -2e^{-2t} \end{vmatrix} = -2e^{3t} - 5e^{3t} = -7e^{3t} \ne 0
 > $$
 >
-> for every $t$, so $y_1$, $y_2$ form a fundamental set ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]]).
+> for every $t$, so $y_1$, $y_2$ form a fundamental set ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Definition §14.3]]).
 >
 > **(c)** By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the general solution is $y = c_1e^{5t} + c_2e^{-2t}$.
 >
@@ -323,13 +330,13 @@ $$
 > W[y_1, y_2](t_0) = \begin{vmatrix} y_1(t_0) & y_2(t_0) \\ y_1'(t_0) & y_2'(t_0) \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = 1 \ne 0 ,
 > $$
 >
-> so they form a fundamental set by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]] (and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]).
+> so they form a fundamental set by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Definition §14.3]] (and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]).
 >
 > The difficult part, the existence of the two solutions, is carried by Theorem §14.1. The theorem does not say how to find $y_1$ and $y_2$; it only guarantees that a fundamental set always exists.
 
 ^pf-14-5
 
-*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]]
+*Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-new1|Def. §14.3]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]]
 
 > [!example] Example §14.4: The Fundamental Set of Theorem §14.5
 > Find the fundamental set $y_1$, $y_2$ specified by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-5|Theorem §14.5]] for $y'' - y = 0$ with initial point $t_0 = 0$.

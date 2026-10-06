@@ -84,7 +84,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 > - The theorem divides the $n \times n$ matrices into two disjoint classes, invertible (nonsingular) and singular. The *negation* of each statement describes every singular matrix: an $n \times n$ singular matrix is not row equivalent to $I_n$, has fewer than $n$ pivot positions, has linearly dependent columns, and so on.
 > - The theorem applies **only to square matrices**. If the columns of a $4 \times 3$ matrix are linearly independent, nothing follows about the existence of solutions of $A\mathbf{x} = \mathbf{b}$.
 > - In practice the quickest test is (c): row reduce to an echelon form and count pivots. The lecture calls a pivot in every row the most practical criterion for invertibility.
-> - The lecture (L9) defines an $n \times n$ matrix $A$ to be invertible when $AB = I$ for some $n \times n$ matrix $B$, without also asking for $BA = I$. By (k) $\Rightarrow$ (a) this describes the same matrices as Lay's two-sided definition, and Corollary §13.2 below shows that such a $B$ is $A^{-1}$.
+> - The lecture (L9) defines an $n \times n$ matrix $A$ to be invertible when $AB = I$ for some $n \times n$ matrix $B$, without also asking for $BA = I$. By (k) $\Rightarrow$ (a) this describes the same matrices as Lay's two-sided definition, and [[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]] below shows that such a $B$ is $A^{-1}$.
 
 ^rem-13-1
 
@@ -96,7 +96,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 ^cor-13-2
 
 > [!proof]+ Proof
-> $AB = I$ is statement (k) for $A$ (with $D = B$), so $A$ is invertible by Theorem §13.1. Multiplying $AB = I$ on the left by $A^{-1}$ gives $B = A^{-1}(AB) = A^{-1}I = A^{-1}$ (Lay's Exercise 8 in Section 2.2). Then $B$ is invertible with $B^{-1} = (A^{-1})^{-1} = A$ by [[§12 The Inverse of a Matrix#^thm-12-4|Theorem §12.4]](a).
+> $AB = I$ is statement (k) for $A$ (with $D = B$), so $A$ is invertible by [[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]. Multiplying $AB = I$ on the left by $A^{-1}$ gives $B = A^{-1}(AB) = A^{-1}I = A^{-1}$ (Lay's Exercise 8 in Section 2.2). Then $B$ is invertible with $B^{-1} = (A^{-1})^{-1} = A$ by [[§12 The Inverse of a Matrix#^thm-12-4|Theorem §12.4]](a).
 
 ^pf-13-2
 
@@ -135,7 +135,7 @@ Matrix multiplication corresponds to composition of linear transformations ([[§
 > \end{aligned}
 > $$
 >
-> By Theorem §13.3 such an $S$ is unique and linear. It is called the **inverse** of $T$ and written $T^{-1}$.
+> By [[§13 Characterizations of Invertible Matrices#^thm-13-3|Theorem §13.3]] such an $S$ is unique and linear. It is called the **inverse** of $T$ and written $T^{-1}$.
 >
 > *Lay: 2.3 (text)*
 
@@ -146,7 +146,7 @@ Matrix multiplication corresponds to composition of linear transformations ([[§
 > - one-to-one means $A\mathbf{x} = A\mathbf{y} \Rightarrow \mathbf{x} = \mathbf{y}$, i.e. $A(\mathbf{x} - \mathbf{y}) = \mathbf{0} \Rightarrow \mathbf{x} - \mathbf{y} = \mathbf{0}$, i.e. $A\mathbf{z} = \mathbf{0}$ only for $\mathbf{z} = \mathbf{0}$: a pivot in every column;
 > - onto means $A\mathbf{x} = \mathbf{b}$ is consistent for every $\mathbf{b}$: a pivot in every row.
 >
-> Both together force $m = n$, and for square $A$ either one alone suffices (Theorem §13.1). (Sets: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]], invertible means bijective. The lecture's aside on infinite sets, a bijection between $\mathbb{Z}$ and $\mathbb{Q}$ but none between $\mathbb{Z}$ and $\mathbb{R}$, and the Bernstein–Cantor theorem: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]], [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]], [[§14 Counting Infinite Sets#^thm-14-14|250 Thm. §14.14]].)
+> Both together force $m = n$, and for square $A$ either one alone suffices ([[§13 Characterizations of Invertible Matrices#^thm-13-1|Theorem §13.1]]). (Sets: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]], invertible means bijective. The lecture's aside on infinite sets, a bijection between $\mathbb{Z}$ and $\mathbb{Q}$ but none between $\mathbb{Z}$ and $\mathbb{R}$, and the Bernstein–Cantor theorem: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]], [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]], [[§14 Counting Infinite Sets#^thm-14-14|250 Thm. §14.14]].)
 >
 > *Source: 235 lectures L6, L8*
 
@@ -186,7 +186,7 @@ Matrix multiplication corresponds to composition of linear transformations ([[§
 > [!example] Example §13.2: A One-to-One Transformation of ℝⁿ Is Invertible
 > What can be said about a one-to-one linear transformation $T$ from $\mathbb{R}^n$ into $\mathbb{R}^n$?
 >
-> The columns of the standard matrix $A$ of $T$ are linearly independent ([[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](b)). So $A$ is invertible by the Invertible Matrix Theorem, statement (e), and then by statement (i) $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$. Also $T$ is invertible, by Theorem §13.3.
+> The columns of the standard matrix $A$ of $T$ are linearly independent ([[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](b)). So $A$ is invertible by the Invertible Matrix Theorem, statement (e), and then by statement (i) $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$. Also $T$ is invertible, by [[§13 Characterizations of Invertible Matrices#^thm-13-3|Theorem §13.3]].
 >
 > *Lay: Example 2.3.2*
 

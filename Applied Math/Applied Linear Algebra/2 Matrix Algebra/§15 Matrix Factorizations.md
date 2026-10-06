@@ -23,9 +23,14 @@ $$
 
 When $A$ is invertible one could compute $A^{-1}$ and then $A^{-1}\mathbf{b}_1$, $A^{-1}\mathbf{b}_2$, and so on (as the lecture suggests in [[§12 The Inverse of a Matrix#^ex-12-2|Example §12.2]]). It is more efficient to solve the first equation by row reduction, obtaining an LU factorization of $A$ at the same time, and to solve the others with the factorization.
 
-> [!definition] Definition §15.1: Unit Lower Triangular Matrix; LU Factorization
+> [!definition] Definition §15.1: Unit Lower Triangular Matrix
 > A square matrix $L$ is **lower triangular** if all its entries above the main diagonal are zero, and **unit lower triangular** if moreover all its diagonal entries are $1$.
 >
+> *Lay: 2.5 (text)*
+
+^def-15-1
+
+> [!definition] Definition §15.1: LU Factorization
 > Let $A$ be an $m \times n$ matrix. An **LU factorization** of $A$ is an equation
 >
 > $$
@@ -38,11 +43,11 @@ When $A$ is invertible one could compute $A^{-1}$ and then $A^{-1}\mathbf{b}_1$,
 > A = \underbrace{\begin{bmatrix} 1 & 0 & 0 & 0 \\ * & 1 & 0 & 0 \\ * & * & 1 & 0 \\ * & * & * & 1 \end{bmatrix}}_{L} \underbrace{\begin{bmatrix} \blacksquare & * & * & * & * \\ 0 & \blacksquare & * & * & * \\ 0 & 0 & 0 & \blacksquare & * \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix}}_{U} \qquad (\blacksquare \ne 0) .
 > $$
 >
-> $L$ is invertible (it row reduces to $I$ by downward replacements, Proposition §15.1).
+> $L$ is invertible (it row reduces to $I$ by downward replacements, [[§15 Matrix Factorizations#^prop-15-1|Proposition §15.1]]).
 >
 > *Lay: 2.5 (text)*
 
-^def-15-1
+^def-15-new1
 
 When $A = LU$, the equation $A\mathbf{x} = \mathbf{b}$ can be written $L(U\mathbf{x}) = \mathbf{b}$. Writing $\mathbf{y}$ for $U\mathbf{x}$, we find $\mathbf{x}$ by solving the pair of equations
 
@@ -136,7 +141,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 ^thm-15-2
 
 > [!proof]+ Proof
-> Each allowed replacement, adding $a$ times row $j$ to row $i > j$, is left multiplication by $E_{ij}(a)$ ([[§12 The Inverse of a Matrix#^prop-12-6|Proposition §12.6]]), which is unit lower triangular because its one off-diagonal entry is in position $(i, j)$ with $i > j$. This gives (3). By Proposition §15.1 the product $E_p \cdots E_1$ is unit lower triangular and invertible, and so is its inverse $L$; multiplying (3) on the left by $L$ gives $A = LU$. Also
+> Each allowed replacement, adding $a$ times row $j$ to row $i > j$, is left multiplication by $E_{ij}(a)$ ([[§12 The Inverse of a Matrix#^prop-12-6|Proposition §12.6]]), which is unit lower triangular because its one off-diagonal entry is in position $(i, j)$ with $i > j$. This gives (3). By [[§15 Matrix Factorizations#^prop-15-1|Proposition §15.1]] the product $E_p \cdots E_1$ is unit lower triangular and invertible, and so is its inverse $L$; multiplying (3) on the left by $L$ gives $A = LU$. Also
 >
 > $$
 > E_p \cdots E_1L = (E_p \cdots E_1)(E_p \cdots E_1)^{-1} = I,
@@ -152,7 +157,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 > 1. Reduce $A$ to an echelon form $U$ by a sequence of row replacement operations (each adding a multiple of a row to a row below it), if possible.
 > 2. Place entries in $L$ such that the *same sequence of row operations* reduces $L$ to $I$. In practice: at each pivot column, take the entries of the current matrix from the pivot down (the entries used to choose the row operations), divide them by the pivot, and place the result into the corresponding column of $L$, on and below the diagonal. If $A$ has fewer pivot columns than rows, fill the remaining columns of $L$ from the identity matrix.
 >
-> Step 1 is not always possible (a row interchange may be needed); when it is, Theorem §15.2 shows that step 2 produces an acceptable $L$. Each entry of $L$ below the diagonal is the multiplier $\ell$ in the operation "row $i$ $-$ $\ell$ · (pivot row)" that cleared that position.
+> Step 1 is not always possible (a row interchange may be needed); when it is, [[§15 Matrix Factorizations#^thm-15-2|Theorem §15.2]] shows that step 2 produces an acceptable $L$. Each entry of $L$ below the diagonal is the multiplier $\ell$ in the operation "row $i$ $-$ $\ell$ · (pivot row)" that cleared that position.
 >
 > *Lay: 2.5, Algorithm for an LU Factorization*
 
@@ -255,14 +260,28 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ## A Matrix Factorization in Electrical Engineering
 
-> [!definition] Definition §15.2: Transfer Matrix; Series and Shunt Circuits
+> [!definition] Definition §15.2: Transfer Matrix
 > Consider an electric circuit with input and output terminals. Record the input voltage and current by $\begin{bmatrix} v_1 \\ i_1 \end{bmatrix}$ (volts, amps) and the output voltage and current by $\begin{bmatrix} v_2 \\ i_2 \end{bmatrix}$. If the transformation $\begin{bmatrix} v_1 \\ i_1 \end{bmatrix} \mapsto \begin{bmatrix} v_2 \\ i_2 \end{bmatrix}$ is linear, its matrix $A$, with
 >
 > $$
 > \begin{bmatrix} v_2 \\ i_2 \end{bmatrix} = A\begin{bmatrix} v_1 \\ i_1 \end{bmatrix},
 > $$
 >
-> is the **transfer matrix** of the circuit. A **ladder network** connects circuits in series, so that the output of one is the input of the next. A **series circuit** has one resistor $R_1$ (ohms) in the line; a **shunt circuit** has one resistor $R_2$ across the two lines. By [[§10 Linear Models in Business, Science, and Engineering#^def-10-1|Ohm's law and Kirchhoff's laws]], their transfer matrices are
+> is the **transfer matrix** of the circuit.
+>
+> *Lay: 2.5 (text)*
+
+^def-15-2
+
+> [!definition] Definition §15.2: Ladder Network
+> A **ladder network** connects circuits in series, so that the output of one is the input of the next.
+>
+> *Lay: 2.5 (text)*
+
+^def-15-new2
+
+> [!definition] Definition §15.2: Series and Shunt Circuits
+> A **series circuit** has one resistor $R_1$ (ohms) in the line; a **shunt circuit** has one resistor $R_2$ across the two lines. By [[§10 Linear Models in Business, Science, and Engineering#^def-10-1|Ohm's law and Kirchhoff's laws]], their transfer matrices are
 >
 > $$
 > \underbrace{\begin{bmatrix} 1 & -R_1 \\ 0 & 1 \end{bmatrix}}_{\text{series circuit}} \qquad\text{and}\qquad \underbrace{\begin{bmatrix} 1 & 0 \\ -1/R_2 & 1 \end{bmatrix}}_{\text{shunt circuit}} .
@@ -270,7 +289,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 >
 > *Lay: 2.5 (text)*
 
-^def-15-2
+^def-15-new3
 
 > [!example] Example §15.4: Designing a Ladder Network
 > **(a)** Compute the transfer matrix of the ladder network formed by a series circuit (resistance $R_1$) followed by a shunt circuit (resistance $R_2$).

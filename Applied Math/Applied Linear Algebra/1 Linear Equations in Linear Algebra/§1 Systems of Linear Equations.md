@@ -30,8 +30,15 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 ^def-1-1
 
-> [!definition] Definition §1.2: Linear System, Solution, Solution Set, Equivalent Systems
-> A **system of linear equations** (or **linear system**) is a collection of one or more linear equations involving the same variables $x_1, \ldots, x_n$. A **solution** of the system is a list $(s_1, \ldots, s_n)$ of numbers that makes each equation a true statement when $s_1, \ldots, s_n$ are substituted for $x_1, \ldots, x_n$. The set of all solutions is the **solution set** of the system. Two linear systems are **equivalent** if they have the same solution set.
+> [!definition] Definition §1.2: Linear System
+> A **system of linear equations** (or **linear system**) is a collection of one or more linear equations involving the same variables $x_1, \ldots, x_n$.
+>
+> *Lay: 1.1 (text)*
+
+^def-1-2
+
+> [!definition] Definition §1.2: Solution; Solution Set
+> A **solution** of the system is a list $(s_1, \ldots, s_n)$ of numbers that makes each equation a true statement when $s_1, \ldots, s_n$ are substituted for $x_1, \ldots, x_n$. The set of all solutions is the **solution set** of the system.
 >
 > For example, $(5, 6.5, 3)$ is a solution of
 >
@@ -46,7 +53,14 @@ A linear system is solved by replacing it with a simpler system that has the sam
 >
 > *Lay: 1.1 (text)*
 
-^def-1-2
+^def-1-new1
+
+> [!definition] Definition §1.2: Equivalent Systems
+> Two linear systems are **equivalent** if they have the same solution set.
+>
+> *Lay: 1.1 (text)*
+
+^def-1-new2
 
 A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§2 Row Reduction and Echelon Forms#^cor-2-4|Corollary §2.4]], from Lay's Theorem 2, the Existence and Uniqueness Theorem ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]).
 
@@ -78,8 +92,18 @@ A system of two equations in two unknowns asks for the intersection of two lines
 
 ## Matrix Notation
 
-> [!definition] Definition §1.4: Matrix, Coefficient Matrix, Augmented Matrix, Size
-> A **matrix** is a rectangular array of numbers. Given a linear system with the coefficients of each variable aligned in columns, the matrix of the coefficients is the **coefficient matrix** (or matrix of coefficients) of the system, and the coefficient matrix with an added column containing the constants from the right sides of the equations is the **augmented matrix** of the system. For the system
+> [!definition] Definition §1.4: Matrix
+> A **matrix** is a rectangular array of numbers.
+>
+> *Lay: 1.1 (text)*
+
+^def-1-4
+
+> [!remark]- Connections
+> - Rigorous treatment: [[§9 Matrices#^ladr-3-29|LADR 3.29]] (an $m$-by-$n$ matrix with entries $A_{j,k}$). Axler meets linear systems only as one application of linear maps, writing the system as $T(x) = c$ for a linear $T: \mathbb{F}^n \to \mathbb{F}^m$ ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]], [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]); Lay starts from the systems and reaches linear maps in [[§8 Introduction to Linear Transformations|§8]].
+
+> [!definition] Definition §1.4: Coefficient Matrix and Augmented Matrix
+> Given a linear system with the coefficients of each variable aligned in columns, the matrix of the coefficients is the **coefficient matrix** (or matrix of coefficients) of the system, and the coefficient matrix with an added column containing the constants from the right sides of the equations is the **augmented matrix** of the system. For the system
 >
 > $$
 > \begin{aligned}
@@ -98,14 +122,18 @@ A system of two equations in two unknowns asks for the intersection of two lines
 > \begin{bmatrix} 1 & -2 & 1 & 0 \\ 0 & 2 & -8 & 8 \\ 5 & 0 & -5 & 10 \end{bmatrix} . \qquad (4)
 > $$
 >
-> (The second row contains a zero because the second equation can be written $0 \cdot x_1 + 2x_2 - 8x_3 = 8$.) The **size** of a matrix tells how many rows and columns it has: an **$m \times n$ matrix** ("$m$ by $n$") has $m$ rows and $n$ columns, rows always first. The augmented matrix (4) is $3 \times 4$. (The lecture calls the coefficient matrix the **main part** of the augmented matrix.)
+> (The second row contains a zero because the second equation can be written $0 \cdot x_1 + 2x_2 - 8x_3 = 8$.) (The lecture calls the coefficient matrix the **main part** of the augmented matrix.)
 >
 > *Lay: 1.1 (text)*
 
-^def-1-4
+^def-1-new3
 
-> [!remark]- Connections
-> - Rigorous treatment: [[§9 Matrices#^ladr-3-29|LADR 3.29]] (an $m$-by-$n$ matrix with entries $A_{j,k}$). Axler meets linear systems only as one application of linear maps, writing the system as $T(x) = c$ for a linear $T: \mathbb{F}^n \to \mathbb{F}^m$ ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]], [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]); Lay starts from the systems and reaches linear maps in [[§8 Introduction to Linear Transformations|§8]].
+> [!definition] Definition §1.4: Size of a Matrix
+> The **size** of a matrix tells how many rows and columns it has: an **$m \times n$ matrix** ("$m$ by $n$") has $m$ rows and $n$ columns, rows always first. The augmented matrix (4) is $3 \times 4$.
+>
+> *Lay: 1.1 (text)*
+
+^def-1-new4
 
 ## Solving a Linear System
 
@@ -161,11 +189,11 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > - **Scaling.** If equation $i$, $a_1x_1 + \cdots + a_nx_n = b$, is replaced by $ca_1x_1 + \cdots + ca_nx_n = cb$, then substituting gives $c(a_1s_1 + \cdots + a_ns_n) = cb$, which holds because $a_1s_1 + \cdots + a_ns_n = b$.
 > - **Replacement.** If equation $j$, $\sum_k a_{jk}x_k = b_j$, is replaced by $\sum_k (a_{jk} + ca_{ik})x_k = b_j + cb_i$, then $\sum_k (a_{jk} + ca_{ik})s_k = \sum_k a_{jk}s_k + c\sum_k a_{ik}s_k = b_j + cb_i$.
 >
-> In each case the other equations are untouched, so every solution of the original system is a solution of the new one. Conversely, by Proposition §1.1 the original system is obtained from the new one by row operations, so the same argument shows that every solution of the new system is a solution of the original. The two solution sets are equal.
+> In each case the other equations are untouched, so every solution of the original system is a solution of the new one. Conversely, by [[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1]] the original system is obtained from the new one by row operations, so the same argument shows that every solution of the new system is a solution of the original. The two solution sets are equal.
 
 ^pf-1-2
 
-*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^def-1-2|Def. §1.2]], [[§1 Systems of Linear Equations#^def-1-5|Def. §1.5]]
+*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^def-1-new1|Def. §1.2]], [[§1 Systems of Linear Equations#^def-1-5|Def. §1.5]]
 
 > [!example] Example §1.1: Solving a System by Elimination
 > **(a)** Solve system (3).
@@ -238,7 +266,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 ^ex-1-2
 
 ![[m235-1-1.svg]]
-*The three systems of Example §1.2. Two lines in the plane meet in one point (a), are parallel (b), or coincide (c). Row reduction detects (b) as the equation $0 = 1$ and (c) as the equation $0 = 0$.*
+*The three systems of [[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]. Two lines in the plane meet in one point (a), are parallel (b), or coincide (c). Row reduction detects (b) as the equation $0 = 1$ and (c) as the equation $0 = 0$.*
 
 ## Existence and Uniqueness Questions
 
@@ -283,7 +311,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > \end{aligned}
 > $$
 >
-> The last equation, $0x_1 + 0x_2 + 0x_3 = 15$, is never true. By Theorem §1.2 the original system has the same (empty) solution set: it is inconsistent. Geometrically, no point lies on all three planes. A last row of the form $[\,0\ 0\ 0\ \ b\,]$ with $b \ne 0$ is typical of an inconsistent system in triangular form.
+> The last equation, $0x_1 + 0x_2 + 0x_3 = 15$, is never true. By [[§1 Systems of Linear Equations#^thm-1-2|Theorem §1.2]] the original system has the same (empty) solution set: it is inconsistent. Geometrically, no point lies on all three planes. A last row of the form $[\,0\ 0\ 0\ \ b\,]$ with $b \ne 0$ is typical of an inconsistent system in triangular form.
 >
 > *Lay: Example 1.1.3*
 
@@ -325,7 +353,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > \end{aligned}
 > $$
 >
-> Instead of clearing the entries above the diagonal by row operations as in Example §1.1, substitute from the bottom up (**back-substitution**). The last equation gives $z = -2$. Substituting into the second, $2y = 1 - z = 1 + 2 = 3$, so $y = \tfrac32$. Substituting both into the first, $2x = 5 - 3y - z = 5 - \tfrac92 + 2 = \tfrac52$, so $x = \tfrac54$. The solution is $\big(\tfrac54, \tfrac32, -2\big)$. **Check:** $2 \cdot \tfrac54 + 3 \cdot \tfrac32 - 2 = \tfrac52 + \tfrac92 - 2 = 5$ and $2 \cdot \tfrac32 - 2 = 1$.
+> Instead of clearing the entries above the diagonal by row operations as in [[§1 Systems of Linear Equations#^ex-1-1|Example §1.1]], substitute from the bottom up (**back-substitution**). The last equation gives $z = -2$. Substituting into the second, $2y = 1 - z = 1 + 2 = 3$, so $y = \tfrac32$. Substituting both into the first, $2x = 5 - 3y - z = 5 - \tfrac92 + 2 = \tfrac52$, so $x = \tfrac54$. The solution is $\big(\tfrac54, \tfrac32, -2\big)$. **Check:** $2 \cdot \tfrac54 + 3 \cdot \tfrac32 - 2 = \tfrac52 + \tfrac92 - 2 = 5$ and $2 \cdot \tfrac32 - 2 = 1$.
 >
 > This also answers both fundamental questions at once, as in Lay's Example 2: each diagonal coefficient ($2$, $2$, $1$) is nonzero, so each equation determines its variable from the ones below it, a solution exists, and it is unique.
 >

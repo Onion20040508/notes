@@ -54,7 +54,7 @@ This section is the continuous analogue of [[§37 Discrete Dynamical Systems|§3
 
 *Uses:* [[§23 Vector Spaces and Subspaces#^def-23-2|Def. §23.2]] (subspace)
 
-Standard texts on differential equations show that there is always a **fundamental set of solutions** of (1): $n$ linearly independent functions such that every solution is a unique linear combination of them. That is, the solution set is an $n$-dimensional vector space of functions, and a fundamental set is a basis for it; each initial value problem has exactly one solution. Lay does not prove this; for diagonalizable $A$ the fundamental set is constructed explicitly below (Theorem §38.3).
+Standard texts on differential equations show that there is always a **fundamental set of solutions** of (1): $n$ linearly independent functions such that every solution is a unique linear combination of them. That is, the solution set is an $n$-dimensional vector space of functions, and a fundamental set is a basis for it; each initial value problem has exactly one solution. Lay does not prove this; for diagonalizable $A$ the fundamental set is constructed explicitly below ([[§38 Applications to Differential Equations#^thm-38-3|Theorem §38.3]]).
 
 > [!remark]- Connections
 > - ODE version: [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|331 Thm. §30.1]] (superposition for $\mathbf{x}' = P(t)\mathbf{x}$, where the coefficients may depend on $t$).
@@ -111,7 +111,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 >
 > **Eigenvalues and eigenvectors.** $\det(A - \lambda I) = (-1.5 - \lambda)(-1 - \lambda) - .5 = \lambda^2 + 2.5\lambda + 1 = (\lambda + .5)(\lambda + 2)$, so $\lambda_1 = -.5$, $\lambda_2 = -2$. Then $A\begin{bmatrix} 1 \\ 2 \end{bmatrix} = \begin{bmatrix} -.5 \\ -1 \end{bmatrix}$ and $A\begin{bmatrix} -1 \\ 1 \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \end{bmatrix}$, so $\mathbf{v}_1 = (1, 2)$ and $\mathbf{v}_2 = (-1, 1)$.
 >
-> **The solution.** The eigenfunctions $\mathbf{v}_1e^{\lambda_1t}$ and $\mathbf{v}_2e^{\lambda_2t}$ satisfy $\mathbf{x}' = A\mathbf{x}$ (Theorem §38.2), and so does any linear combination (Proposition §38.1):
+> **The solution.** The eigenfunctions $\mathbf{v}_1e^{\lambda_1t}$ and $\mathbf{v}_2e^{\lambda_2t}$ satisfy $\mathbf{x}' = A\mathbf{x}$ ([[§38 Applications to Differential Equations#^thm-38-2|Theorem §38.2]]), and so does any linear combination ([[§38 Applications to Differential Equations#^prop-38-1|Proposition §38.1]]):
 >
 > $$
 > \mathbf{x}(t) = c_1\mathbf{v}_1e^{\lambda_1t} + c_2\mathbf{v}_2e^{\lambda_2t} = c_1\begin{bmatrix} 1 \\ 2 \end{bmatrix}e^{-.5t} + c_2\begin{bmatrix} -1 \\ 1 \end{bmatrix}e^{-2t} .
@@ -137,7 +137,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 > [!definition] Definition §38.2: Attractor (Sink), Repeller (Source), Saddle Point
 > For the dynamical system $\mathbf{x}' = A\mathbf{x}$, the origin is called
-> - an **attractor**, or **sink**, if all trajectories are drawn into the origin (as in Example §38.1, where both eigenvalues are negative). The **direction of greatest attraction** is along the trajectory of the eigenfunction for the more negative eigenvalue; trajectories not on this line become asymptotic to the line of the other eigenvector, because their components in the faster direction decay so rapidly;
+> - an **attractor**, or **sink**, if all trajectories are drawn into the origin (as in [[§38 Applications to Differential Equations#^ex-38-1|Example §38.1]], where both eigenvalues are negative). The **direction of greatest attraction** is along the trajectory of the eigenfunction for the more negative eigenvalue; trajectories not on this line become asymptotic to the line of the other eigenvector, because their components in the faster direction decay so rapidly;
 > - a **repeller**, or **source**, if the trajectories are traversed away from the origin (as when both eigenvalues are positive); the **direction of greatest repulsion** is the line of the eigenfunction for the more positive eigenvalue;
 > - a **saddle point** if some trajectories approach the origin at first and then change direction and move away; this arises whenever $A$ has both positive and negative eigenvalues. The direction of greatest repulsion is the line through the eigenvector for the positive eigenvalue, the direction of greatest attraction the line through the eigenvector for the negative one.
 >
@@ -217,7 +217,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 > \mathbf{x}(t) = P\mathbf{y}(t) = [\,\mathbf{v}_1 \; \cdots \; \mathbf{v}_n\,]\begin{bmatrix} c_1e^{\lambda_1t} \\ \vdots \\ c_ne^{\lambda_nt} \end{bmatrix} = c_1\mathbf{v}_1e^{\lambda_1t} + \cdots + c_n\mathbf{v}_ne^{\lambda_nt} .
 > $$
 >
-> This is the eigenfunction expansion of Examples §38.1 and §38.2. The eigenfunctions are linearly independent as functions: if a combination is the zero function, its value at $t = 0$ is $\sum c_k\mathbf{v}_k = \mathbf{0}$, so all $c_k = 0$.
+> This is the eigenfunction expansion of Examples [[§38 Applications to Differential Equations#^ex-38-1|§38.1]] and [[§38 Applications to Differential Equations#^ex-38-2|§38.2]]. The eigenfunctions are linearly independent as functions: if a combination is the zero function, its value at $t = 0$ is $\sum c_k\mathbf{v}_k = \mathbf{0}$, so all $c_k = 0$.
 
 ^pf-38-3
 
@@ -271,7 +271,7 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 > \frac{d}{dt}e^{\lambda t} = e^{at}(a\cos bt - b\sin bt) + ie^{at}(a\sin bt + b\cos bt) = (a + bi)e^{at}(\cos bt + i\sin bt) = \lambda e^{\lambda t},
 > $$
 >
-> as one checks by multiplying out $(a + bi)(\cos bt + i\sin bt)$. So $\mathbf{x}_1'(t) = \lambda\mathbf{v}e^{\lambda t} = A\mathbf{v}e^{\lambda t} = A\mathbf{x}_1(t)$, as in Theorem §38.2.
+> as one checks by multiplying out $(a + bi)(\cos bt + i\sin bt)$. So $\mathbf{x}_1'(t) = \lambda\mathbf{v}e^{\lambda t} = A\mathbf{v}e^{\lambda t} = A\mathbf{x}_1(t)$, as in [[§38 Applications to Differential Equations#^thm-38-2|Theorem §38.2]].
 >
 > **The real and imaginary parts are solutions.** Lay: they are linear combinations of the solutions $\mathbf{x}_1$ and $\overline{\mathbf{x}_1}$, $\operatorname{Re}\mathbf{x}_1 = \frac12(\mathbf{x}_1 + \overline{\mathbf{x}_1})$ and $\operatorname{Im}\mathbf{x}_1 = \frac{1}{2i}(\mathbf{x}_1 - \overline{\mathbf{x}_1})$. Directly: differentiation commutes with taking real and imaginary parts, and $A$ is real, so by [[§36 Complex Eigenvalues#^prop-36-1|Proposition §36.1]]
 >
@@ -325,7 +325,7 @@ Since $\mathbf{x}_2 = \overline{\mathbf{x}_1}$ has real and imaginary parts $\ma
 > \mathbf{y}_1(t) = \begin{bmatrix} -\sin 5t \\ 2\cos 5t \end{bmatrix}e^{-2t}, \qquad \mathbf{y}_2(t) = \begin{bmatrix} \cos 5t \\ 2\sin 5t \end{bmatrix}e^{-2t} .
 > $$
 >
-> They are linearly independent (Theorem §38.4), hence a basis for the two-dimensional real vector space of solutions, and the general solution is $\mathbf{x}(t) = c_1\mathbf{y}_1(t) + c_2\mathbf{y}_2(t)$.
+> They are linearly independent ([[§38 Applications to Differential Equations#^thm-38-4|Theorem §38.4]]), hence a basis for the two-dimensional real vector space of solutions, and the general solution is $\mathbf{x}(t) = c_1\mathbf{y}_1(t) + c_2\mathbf{y}_2(t)$.
 >
 > **Initial values.** $\mathbf{x}(0) = c_1\begin{bmatrix} 0 \\ 2 \end{bmatrix} + c_2\begin{bmatrix} 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}$ gives $c_2 = 3$ and $c_1 = 1.5$. Thus
 >
@@ -340,4 +340,4 @@ Since $\mathbf{x}_2 = \overline{\mathbf{x}_1}$ has real and imaginary parts $\ma
 ^ex-38-3
 
 ![[m235-38-1.svg]]
-*(a) Example §38.1: trajectories of $\mathbf{x}' = A\mathbf{x}$ with eigenvalues $-.5$ and $-2$. The origin is a sink; the solution from $(5, 4)$ (red) first moves quickly in the $\mathbf{v}_2$-direction (green, fast decay $e^{-2t}$) and then comes in tangent to the line through $\mathbf{v}_1$ (blue, slow decay $e^{-.5t}$). (b) Example §38.3: the trajectory from $(3, 3)$ in the $(i_L, v_C)$-plane spirals into the origin, turning with $\cos 5t$, $\sin 5t$ and shrinking like $e^{-2t}$.*
+*(a) [[§38 Applications to Differential Equations#^ex-38-1|Example §38.1]]: trajectories of $\mathbf{x}' = A\mathbf{x}$ with eigenvalues $-.5$ and $-2$. The origin is a sink; the solution from $(5, 4)$ (red) first moves quickly in the $\mathbf{v}_2$-direction (green, fast decay $e^{-2t}$) and then comes in tangent to the line through $\mathbf{v}_1$ (blue, slow decay $e^{-.5t}$). (b) [[§38 Applications to Differential Equations#^ex-38-3|Example §38.3]]: the trajectory from $(3, 3)$ in the $(i_L, v_C)$-plane spirals into the origin, turning with $\cos 5t$, $\sin 5t$ and shrinking like $e^{-2t}$.*

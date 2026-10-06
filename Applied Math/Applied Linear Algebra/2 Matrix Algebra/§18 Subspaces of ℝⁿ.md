@@ -86,7 +86,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 ^ex-18-2
 
 ![[m235-18-1.svg]]
-*Example §18.2. (a) A line $L$ not through $\mathbf{0}$: the sum $\mathbf{u} + \mathbf{v}$ of two of its vectors leaves it. (b) The first quadrant: $\mathbf{v}$ is in it but $-\mathbf{v}$ is not. (c) The two axes: $(2, 0)$ and $(0, 3)$ are in it but their sum, the diagonal of the parallelogram they span, is not.*
+*[[§18 Subspaces of ℝⁿ#^ex-18-2|Example §18.2]]. (a) A line $L$ not through $\mathbf{0}$: the sum $\mathbf{u} + \mathbf{v}$ of two of its vectors leaves it. (b) The first quadrant: $\mathbf{v}$ is in it but $-\mathbf{v}$ is not. (c) The two axes: $(2, 0)$ and $(0, 3)$ are in it but their sum, the diagonal of the parallelogram they span, is not.*
 
 ## Column Space and Null Space of a Matrix
 

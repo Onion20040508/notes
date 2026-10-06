@@ -12,7 +12,7 @@ tags: [applied-linear-algebra, math235, extension]
 *Lay, Section 7.2.*
 ★ *Beyond MATH 235: the course ended with inner products (Ch. 6); Chapter 7 is included from Lay as the continuation.*
 
-A quadratic form is a homogeneous polynomial of degree two in $n$ variables, such as $x_1^2 - 8x_1x_2 - 5x_2^2$; every one can be written $\mathbf{x}^T A \mathbf{x}$ with $A$ symmetric. Quadratic forms appear as energies in physics, as second-order terms of Taylor expansions, as variances in statistics. The cross-product terms $x_ix_j$ make a form hard to read. The Principal Axes Theorem removes them: the orthogonal diagonalization $A = PDP^T$ of §48 is exactly a rotation of coordinates $\mathbf{x} = P\mathbf{y}$ after which the form is $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$. Two consequences follow at once: the [[§90 Functions of Several Variables#^def-90-4|level curves]] of a two-variable form are conics whose axes are the eigenvectors, and the sign behaviour of the form (positive definite, negative definite, indefinite) is read off from the signs of the eigenvalues.
+A quadratic form is a homogeneous polynomial of degree two in $n$ variables, such as $x_1^2 - 8x_1x_2 - 5x_2^2$; every one can be written $\mathbf{x}^T A \mathbf{x}$ with $A$ symmetric. Quadratic forms appear as energies in physics, as second-order terms of Taylor expansions, as variances in statistics. The cross-product terms $x_ix_j$ make a form hard to read. The Principal Axes Theorem removes them: the orthogonal diagonalization $A = PDP^T$ of [[§48★ Diagonalization of Symmetric Matrices|§48★]] is exactly a rotation of coordinates $\mathbf{x} = P\mathbf{y}$ after which the form is $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$. Two consequences follow at once: the [[§90 Functions of Several Variables#^def-90-4|level curves]] of a two-variable form are conics whose axes are the eigenvectors, and the sign behaviour of the form (positive definite, negative definite, indefinite) is read off from the signs of the eigenvalues.
 
 ## Quadratic Forms
 
@@ -124,7 +124,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 ^thm-49-2
 
 > [!proof]+ Proof
-> (Lay: "the proof was essentially given before Example 4".) By [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|Theorem §48.2]], $A = PDP^T$ with $P$ orthogonal and $D = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$, the $\lambda_i$ being the eigenvalues of $A$. Then $P^T A P = P^T P D P^T P = D$, because $P^T P = I$. By Proposition §49.1, the change of variable $\mathbf{x} = P\mathbf{y}$ gives
+> (Lay: "the proof was essentially given before Example 4".) By [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|Theorem §48.2]], $A = PDP^T$ with $P$ orthogonal and $D = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$, the $\lambda_i$ being the eigenvalues of $A$. Then $P^T A P = P^T P D P^T P = D$, because $P^T P = I$. By [[§49★ Quadratic Forms#^prop-49-1|Proposition §49.1]], the change of variable $\mathbf{x} = P\mathbf{y}$ gives
 >
 > $$
 > \mathbf{x}^T A \mathbf{x} = \mathbf{y}^T (P^T A P) \mathbf{y} = \mathbf{y}^T D \mathbf{y} = \lambda_1 y_1^2 + \cdots + \lambda_n y_n^2 ,
@@ -251,14 +251,14 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 >
 > The ellipse has semi-axes $4$ along the line $x_2 = x_1$ (direction $\mathbf{u}_1$) and $\sqrt{48/7} \approx 2.62$ along $x_2 = -x_1$ (direction $\mathbf{u}_2$). $P$ is the rotation by $45^\circ$.
 >
-> **(b)** The graph of $x_1^2 - 8x_1x_2 - 5x_2^2 = 16$ is $\mathbf{x}^T A \mathbf{x} = 16$ for the matrix of Example §49.2. There $\mathbf{x} = P\mathbf{y}$ turned the equation into $3y_1^2 - 7y_2^2 = 16$, a hyperbola in standard position in the $\mathbf{y}$-coordinates, with vertices at $y_1 = \pm 4/\sqrt3 \approx \pm 2.31$ on the $y_1$-axis. The positive $y_1$-axis points in the direction of the first column $(2, -1)/\sqrt5$ of $P$, and the positive $y_2$-axis in the direction of the second column $(1, 2)/\sqrt5$.
+> **(b)** The graph of $x_1^2 - 8x_1x_2 - 5x_2^2 = 16$ is $\mathbf{x}^T A \mathbf{x} = 16$ for the matrix of [[§49★ Quadratic Forms#^ex-49-2|Example §49.2]]. There $\mathbf{x} = P\mathbf{y}$ turned the equation into $3y_1^2 - 7y_2^2 = 16$, a hyperbola in standard position in the $\mathbf{y}$-coordinates, with vertices at $y_1 = \pm 4/\sqrt3 \approx \pm 2.31$ on the $y_1$-axis. The positive $y_1$-axis points in the direction of the first column $(2, -1)/\sqrt5$ of $P$, and the positive $y_2$-axis in the direction of the second column $(1, 2)/\sqrt5$.
 >
 > *Lay: Example 7.2.5 and Figure 3*
 
 ^ex-49-3
 
 ![[m235-49-1.svg]]
-*The two conics of Example §49.3, with their principal axes (green) and the unit eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) that span them. In the $y_1y_2$ coordinate system each curve is in standard position; the cross-product term $-4x_1x_2$ or $-8x_1x_2$ only records that the axes have been rotated away from the $x_1x_2$ axes.*
+*The two conics of [[§49★ Quadratic Forms#^ex-49-3|Example §49.3]], with their principal axes (green) and the unit eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) that span them. In the $y_1y_2$ coordinate system each curve is in standard position; the cross-product term $-4x_1x_2$ or $-8x_1x_2$ only records that the axes have been rotated away from the $x_1x_2$ axes.*
 
 ## Classifying Quadratic Forms
 
@@ -341,7 +341,7 @@ For $A$ an $n \times n$ matrix, $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ is a
 > (3 - \lambda)\big[(2 - \lambda)(1 - \lambda) - 4\big] - 2\big[2(1 - \lambda)\big] = (3 - \lambda)(\lambda^2 - 3\lambda - 2) - 4 + 4\lambda = -\lambda^3 + 6\lambda^2 - 3\lambda - 10 ,
 > $$
 >
-> and $-\lambda^3 + 6\lambda^2 - 3\lambda - 10 = -(\lambda - 5)(\lambda - 2)(\lambda + 1)$. The eigenvalues are $5$, $2$ and $-1$: both signs occur, so by Theorem §49.4 $Q$ is **indefinite**, not positive definite.
+> and $-\lambda^3 + 6\lambda^2 - 3\lambda - 10 = -(\lambda - 5)(\lambda - 2)(\lambda + 1)$. The eigenvalues are $5$, $2$ and $-1$: both signs occur, so by [[§49★ Quadratic Forms#^thm-49-4|Theorem §49.4]] $Q$ is **indefinite**, not positive definite.
 >
 > To see a negative value, take an eigenvector for $-1$: $A + I = \begin{bmatrix} 4 & 2 & 0 \\ 2 & 3 & 2 \\ 0 & 2 & 2 \end{bmatrix}$ has null space spanned by $\mathbf{x} = (1, -2, 2)$, and
 >
@@ -358,7 +358,7 @@ For $A$ an $n \times n$ matrix, $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ is a
 > [!remark] Remark: Method — Classifying a Quadratic Form
 > 1. Write the symmetric matrix $A$ of the form.
 > 2. Find the eigenvalues of $A$ (they are real by [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3]]); eigenvectors are not needed.
-> 3. Read off the type from their signs (Theorem §49.4 and Proposition §49.5): all $> 0$ positive definite; all $< 0$ negative definite; both signs indefinite; all $\ge 0$ with some $= 0$ positive semidefinite (but not definite); all $\le 0$ with some $= 0$ negative semidefinite.
+> 3. Read off the type from their signs ([[§49★ Quadratic Forms#^thm-49-4|Theorem §49.4]] and [[§49★ Quadratic Forms#^prop-49-5|Proposition §49.5]]): all $> 0$ positive definite; all $< 0$ negative definite; both signs indefinite; all $\ge 0$ with some $= 0$ positive semidefinite (but not definite); all $\le 0$ with some $= 0$ negative semidefinite.
 > 4. For a $2 \times 2$ matrix $\begin{bmatrix} a & b \\ b & d \end{bmatrix}$, $\lambda_1\lambda_2 = \det A$ and $\lambda_1 + \lambda_2 = a + d$, so: $\det A > 0$ and $a > 0$ gives positive definite, $\det A > 0$ and $a < 0$ negative definite, $\det A < 0$ indefinite (Lay's Exercises 23–24).
 
 ^rem-49-2

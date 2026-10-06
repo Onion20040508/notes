@@ -19,7 +19,7 @@ tags: [measure-theory, math551]
 ^thm-17-1
 
 > [!proof]+ Proof
-> **Step 1: Characteristic functions.** Let $f(x) = \chi_E(x)$ for $E \in \mathcal{M}$. Then $f(x + h) = \chi_{E-h}(x)$ (where $E - h = \{x : x + h \in E\}$). Since $E - h \in \mathcal{M}$ and $m(E - h) = m(E)$ ([[§11 Borel Sets and Measure Spaces#^lem-11-15|translation invariance of Lebesgue measure]]):
+> **Step 1: Characteristic functions.** Let $f(x) = \chi_E(x)$ for $E \in \mathcal{M}$. Then $f(x + h) = \chi_{E-h}(x)$ (where $E - h = \{x : x + h \in E\}$). Since $E - h \in \mathcal{M}$ and $m(E - h) = m(E)$ ([[§11b The Vitali Set and the Cantor Set#^lem-11-15|translation invariance of Lebesgue measure]]):
 >
 > $$
 > \int_{\mathbb{R}^n} \chi_{E-h}\,dx = m(E - h) = m(E) = \int_{\mathbb{R}^n} \chi_E\,dx.
@@ -27,7 +27,7 @@ tags: [measure-theory, math551]
 >
 > The result extends to simple functions by [[§14 The Lebesgue Integral for Simple Functions#^prop-14-1|linearity]].
 >
-> **Step 2: General $f \in L(\mathbb{R}^n)$.** Write $f = f^+ - f^-$, where $f^+, f^- \geq 0$ are both in $L(\mathbb{R}^n)$ ([[§12 Measurable Functions#^def-12-4|Def. §12.4]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]]).
+> **Step 2: General $f \in L(\mathbb{R}^n)$.** Write $f = f^+ - f^-$, where $f^+, f^- \geq 0$ are both in $L(\mathbb{R}^n)$ ([[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]]).
 >
 > *For $f^+$*: By the [[Simple Function Approximation Theorem|Simple Function Approximation Theorem]], there exists an increasing sequence of non-negative simple functions $\varphi_k \nearrow f^+$ pointwise. Then $\varphi_k(x + h) \nearrow f^+(x + h)$ pointwise (shifting preserves monotonicity and limits). Each $\varphi_k(\cdot + h)$ is a simple function (it is $\sum a_j \chi_{A_j - h}$, a linear combination of characteristic functions of translated sets), so by Step 1:
 >
@@ -59,12 +59,12 @@ tags: [measure-theory, math551]
 
 ^pf-17-1
 
-*Uses:* [[§11 Borel Sets and Measure Spaces#^lem-11-15|§11.15]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-1|§14.1]], [[§12 Measurable Functions#^def-12-4|Def. §12.4]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[Simple Function Approximation Theorem|§12.14]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]]
+*Uses:* [[§11b The Vitali Set and the Cantor Set#^lem-11-15|§11.15]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-1|§14.1]], [[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[Simple Function Approximation Theorem|§12.14]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]]
 
 > [!remark]- Connections
-> - The set-level statement: [[§9 Lebesgue Outer Measure#^prop-9-3|Translation Invariance of Outer Measure]] (§9.3) and [[§11 Borel Sets and Measure Spaces#^lem-11-15|of Measure]] (§11.15).
+> - The set-level statement: [[§9 Lebesgue Outer Measure#^prop-9-3|Translation Invariance of Outer Measure]] ([[§9 Lebesgue Outer Measure#^prop-9-3|§9.3]]) and [[§11b The Vitali Set and the Cantor Set#^lem-11-15|of Measure]] ([[§11b The Vitali Set and the Cantor Set#^lem-11-15|§11.15]]).
 > - The Riemann analogue is the translation $u = x + h$ in the [[Change of Variables Formula (multiple integrals)]] (452), whose Jacobian is $1$.
-> - Used in [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|Average Continuity]] and in the [[§18 Differentiation Theory#^lem-18-25|Averaging Lemma]] (§18.25).
+> - Used in [[§17 Invariance Properties and Fubini's Theorem#^thm-17-2|Average Continuity]] and in the [[§18b Differentiating the Integral#^lem-18-25|Averaging Lemma]] ([[§18b Differentiating the Integral#^lem-18-25|§18.25]]).
 
 ## Average Continuity ($L^1$ Continuity of Translation)
 
@@ -119,7 +119,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - Uniform continuity on a compact set is the MATH 451 fact [[§19 Uniform Continuity#^thm-19-1|Uniform Continuity on Closed Bounded Intervals]] in one variable; the $\mathbb{R}^n$ version comes from compactness ([[Heine–Borel Theorem]]).
-> - Used in the [[§18 Differentiation Theory#^lem-18-25|Averaging Lemma]] (§18.25), hence in [[§18 Differentiation Theory#^thm-18-26|Differentiation of the Integral]] (§18.26).
+> - Used in the [[§18b Differentiating the Integral#^lem-18-25|Averaging Lemma]] ([[§18b Differentiating the Integral#^lem-18-25|§18.25]]), hence in [[§18b Differentiating the Integral#^thm-18-26|Differentiation of the Integral]] ([[§18b Differentiating the Integral#^thm-18-26|§18.26]]).
 
 ## Tonelli's Theorem: The Question
 
@@ -156,8 +156,8 @@ Tonelli's theorem, which answers these questions for non-negative $f$, is stated
 *A cross-section: the vertical line over $x \in \mathbb{R}^p$ meets $E$ in $E_x$ (red; here two segments). The theorem says that integrating the sizes $m(E_x)$ over $x$ recovers $m(E)$ (Cavalieri's principle); it is Tonelli's theorem for $f = \chi_E$.*
 
 > [!remark]- Connections
-> - This is Tonelli applied to $\chi_E$: see [[§17 Invariance Properties and Fubini's Theorem#^thm-17-7|Cross-Section Theorem (Restated)]] (§17.7) and its proof.
-> - Its geometric content is Cavalieri's principle; compare the [[§17 Invariance Properties and Fubini's Theorem#^thm-17-13|Layer Cake Formula]] (§17.13).
+> - This is Tonelli applied to $\chi_E$: see [[§17a Applications of Tonelli's Theorem#^thm-17-7|Cross-Section Theorem (Restated)]] ([[§17a Applications of Tonelli's Theorem#^thm-17-7|§17.7]]) and its proof.
+> - Its geometric content is Cavalieri's principle; compare the [[§17a Applications of Tonelli's Theorem#^thm-17-13|Layer Cake Formula]] ([[§17a Applications of Tonelli's Theorem#^thm-17-13|§17.13]]).
 > - Computational version: volume by slicing, V = ∫ A(x) dx, [[§40 Volumes#^def-40-2|Calc Def. §40.2]] (with worked examples).
 
 > [!definition] Definition §17.2: The Tonelli Class $\mathcal{F}$
@@ -176,7 +176,7 @@ Tonelli's theorem, which answers these questions for non-negative $f$, is stated
 > [!proof]+ Proof
 > **(1)** is immediate from the definition (scale all three conclusions by $a$).
 >
-> **(2)** Assume $f, g \in \mathcal{F}$ and $g \in L(\mathbb{R}^n)$. Since $g \in \mathcal{F}$, there exists a null set $Z_1 \subseteq \mathbb{R}^p$ such that for all $x_0 \in \mathbb{R}^p \setminus Z_1$, $g(x_0, y)$ is measurable w.r.t. $y$, and $F_g$ is measurable with $\int F_g\,dx = \iint g < \infty$. Hence $F_g \in L(\mathbb{R}^p)$, so $F_g$ is [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|a.e. finite]]: there exists $Z \supseteq Z_1$, $m(Z) = 0$, such that for all $x \in \mathbb{R}^p \setminus Z$, $g(x, y)$ is measurable w.r.t. $y$ and $0 \leq \int g(x,y)\,dy < \infty$.
+> **(2)** Assume $f, g \in \mathcal{F}$ and $g \in L(\mathbb{R}^n)$. Since $g \in \mathcal{F}$, there exists a null set $Z_1 \subseteq \mathbb{R}^p$ such that for all $x_0 \in \mathbb{R}^p \setminus Z_1$, $g(x_0, y)$ is measurable w.r.t. $y$, and $F_g$ is measurable with $\int F_g\,dx = \iint g < \infty$. Hence $F_g \in L(\mathbb{R}^p)$, so $F_g$ is [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|a.e. finite]]: there exists $Z \supseteq Z_1$, $m(Z) = 0$, such that for all $x \in \mathbb{R}^p \setminus Z$, $g(x, y)$ is measurable w.r.t. $y$ and $0 \leq \int g(x,y)\,dy < \infty$.
 >
 > Similarly, $f \in \mathcal{F}$ gives a null set $Z_2$ outside which $f(x, y)$ is measurable w.r.t. $y$. Let $Z' = Z \cup Z_2$, $m(Z') = 0$.
 >
@@ -188,7 +188,7 @@ Tonelli's theorem, which answers these questions for non-negative $f$, is stated
 >
 > **(3)** Let $f_k \in \mathcal{F}$ with $f_k \leq f_{k+1}$ and $f = \lim f_k$. For each $k$, there exists a null set $Z_k$ with $f_k(x_0, y)$ measurable w.r.t. $y$ for $x_0 \notin Z_k$. Let $Z = \bigcup Z_k$, $m(Z) = 0$.
 >
-> For $x_0 \notin Z$: $f(x_0, y) = \lim f_k(x_0, y)$ is [[§12 Measurable Functions#^cor-12-8|measurable]] w.r.t. $y$. By [[Monotone Convergence Theorem (Lebesgue)|MCT]] in $y$: $F_f(x) = \lim F_{f_k}(x)$. Since $F_{f_k} \nearrow F_f$ with each $F_{f_k}$ measurable, $F_f$ is measurable. By MCT in $x$:
+> For $x_0 \notin Z$: $f(x_0, y) = \lim f_k(x_0, y)$ is [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|measurable]] w.r.t. $y$. By [[Monotone Convergence Theorem (Lebesgue)|MCT]] in $y$: $F_f(x) = \lim F_{f_k}(x)$. Since $F_{f_k} \nearrow F_f$ with each $F_{f_k}$ measurable, $F_f$ is measurable. By MCT in $x$:
 >
 > $$
 > \int F_f\,dx = \lim \int F_{f_k}\,dx = \lim \iint f_k = \iint f.
@@ -198,7 +198,7 @@ Tonelli's theorem, which answers these questions for non-negative $f$, is stated
 
 ^pf-17-5
 
-*Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12 Measurable Functions#^cor-12-8|§12.8]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]]
+*Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|§12.8]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]]
 
 ## Statement and Proof of Tonelli's Theorem
 
@@ -217,11 +217,11 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 >
 > **Step 1: Rectangles.** $\chi_I \in \mathcal{F}$ for any rectangle $I = I_1 \times I_2$. Direct: $\chi_I(x,y) = \chi_{I_1}(x)\,\chi_{I_2}(y)$, so $F(x) = m(I_2)\,\chi_{I_1}(x)$ and $\int F\,dx = m(I_1)\,m(I_2) = m(I)$.
 >
-> **Step 2: Open sets.** $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by [[§7 Structure of Open Sets#^prop-7-3|§7]]). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step 1, since $\mathcal{F}$ is closed under finite sums: if $f, g \in \mathcal{F}$, then off the union of their two null sets $(f+g)(x, \cdot)$ is measurable and $F_{f+g} = F_f + F_g$, and $\int F_{f+g}\,dx = \int F_f\,dx + \int F_g\,dx = \iint f + \iint g = \iint (f+g)$ by linearity of the integral of non-negative functions ([[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|Theorem §14.8]]). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property (3).
+> **Step 2: Open sets.** $\chi_O \in \mathcal{F}$ for any open $O \subseteq \mathbb{R}^n$. Write $O = \bigsqcup_{j=1}^{\infty} I_j$ (countable disjoint half-open rectangles by [[§7 Structure of Open Sets#^prop-7-3|§7]]). Then $\chi_O = \lim_{k \to \infty} \sum_{j=1}^{k} \chi_{I_j}$. Each partial sum is in $\mathcal{F}$ by Step 1, since $\mathcal{F}$ is closed under finite sums: if $f, g \in \mathcal{F}$, then off the union of their two null sets $(f+g)(x, \cdot)$ is measurable and $F_{f+g} = F_f + F_g$, and $\int F_{f+g}\,dx = \int F_f\,dx + \int F_g\,dx = \iint f + \iint g = \iint (f+g)$ by linearity of the integral of non-negative functions ([[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|Theorem §14.8]]). The sequence is increasing, so $\chi_O \in \mathcal{F}$ by property (3).
 >
-> **Step 3: $G_\delta$ sets.** $\chi_G \in \mathcal{F}$ for any $G_\delta$ set ([[§11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]]) $G$ with $m(G) < \infty$. Write $G = \bigcap_{k=1}^{\infty} U_k$ with $U_k$ open. Define $O_k = \bigcap_{j=1}^{k} U_j$ (open, decreasing, $\bigcap O_k = G$). WLOG $m(O_1) < \infty$. Then $\chi_{O_k} \searrow \chi_G$, each $\chi_{O_k} \in \mathcal{F}$ by Step 2, and $\chi_{O_1} \in L$. By property (4), $\chi_G \in \mathcal{F}$.
+> **Step 3: $G_\delta$ sets.** $\chi_G \in \mathcal{F}$ for any $G_\delta$ set ([[§11a Approximation and Continuity of Measure#^def-11-8|Def. §11.8]]) $G$ with $m(G) < \infty$. Write $G = \bigcap_{k=1}^{\infty} U_k$ with $U_k$ open. Define $O_k = \bigcap_{j=1}^{k} U_j$ (open, decreasing, $\bigcap O_k = G$). WLOG $m(O_1) < \infty$. Then $\chi_{O_k} \searrow \chi_G$, each $\chi_{O_k} \in \mathcal{F}$ by Step 2, and $\chi_{O_1} \in L$. By property (4), $\chi_G \in \mathcal{F}$.
 >
-> **Step 4: Null sets.** $\chi_Z \in \mathcal{F}$ for any $Z$ with $m(Z) = 0$. Choose open $O_j \supseteq Z$ with $m(O_j) < 1/j$ ([[Outer Regularity of Lebesgue Measure|§11.8]]). Let $G_0 = \bigcap_j O_j$, a $G_\delta$ set with $G_0 \supseteq Z$ and $m(G_0) = 0$. By Step 3, $\chi_{G_0} \in \mathcal{F}$, so $\int_{\mathbb{R}^p} m((G_0)_x)\,dx = 0$, giving $m((G_0)_x) = 0$ a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]]). Since $Z_x \subseteq (G_0)_x$, $m(Z_x) = 0$ a.e., so $\chi_Z \in \mathcal{F}$.
+> **Step 4: Null sets.** $\chi_Z \in \mathcal{F}$ for any $Z$ with $m(Z) = 0$. Choose open $O_j \supseteq Z$ with $m(O_j) < 1/j$ ([[Outer Regularity of Lebesgue Measure|§11.8]]). Let $G_0 = \bigcap_j O_j$, a $G_\delta$ set with $G_0 \supseteq Z$ and $m(G_0) = 0$. By Step 3, $\chi_{G_0} \in \mathcal{F}$, so $\int_{\mathbb{R}^p} m((G_0)_x)\,dx = 0$, giving $m((G_0)_x) = 0$ a.e. ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]]). Since $Z_x \subseteq (G_0)_x$, $m(Z_x) = 0$ a.e., so $\chi_Z \in \mathcal{F}$.
 >
 > **Step 5: Measurable sets with $m(E) < \infty$.** Write $E = G \setminus Z$ with $G$ a $G_\delta$ set, $m(Z) = 0$ ([[Outer Regularity of Lebesgue Measure|§11.8]]). Then $\chi_E = \chi_G - \chi_Z$, with $\chi_G \in \mathcal{F}$ (Step 3) and $\chi_Z \in \mathcal{F} \cap L$ (Step 4). By property (2), $\chi_E \in \mathcal{F}$.
 >
@@ -233,7 +233,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-3
 
-*Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§7 Structure of Open Sets#^prop-7-3|§7.3]], [[§11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
+*Uses:* [[§17 Invariance Properties and Fubini's Theorem#^def-17-2|Def. §17.2]], [[§17 Invariance Properties and Fubini's Theorem#^lem-17-5|§17.5]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§7 Structure of Open Sets#^prop-7-3|§7.3]], [[§11a Approximation and Continuity of Measure#^def-11-8|Def. §11.8]], [[Outer Regularity of Lebesgue Measure|§11.8]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]], [[Simple Function Approximation Theorem|§12.14]]
 
 > [!remark]- Connections
 > - Riemann counterpart for non-negative integrands in MATH 452: [[§15 Multivariable Integration#^thm-15-12|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
@@ -255,13 +255,13 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 > [!proof]+ Proof
 > **Step 1: Integrability of the slices.**
 >
-> Since $|f| = f^+ + f^- \geq 0$ is measurable ([[§12 Measurable Functions#^prop-12-10|§12.10]]) and $\int_{\mathbb{R}^n} |f|\,dx\,dy < \infty$, apply [[Tonelli's Theorem|Tonelli's theorem]] to $|f|$:
+> Since $|f| = f^+ + f^- \geq 0$ is measurable ([[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|§12.10]]) and $\int_{\mathbb{R}^n} |f|\,dx\,dy < \infty$, apply [[Tonelli's Theorem|Tonelli's theorem]] to $|f|$:
 >
 > $$
 > \int_{\mathbb{R}^p} \left(\int_{\mathbb{R}^q} |f(x, y)|\,dy\right) dx = \iint_{\mathbb{R}^n} |f(x, y)|\,dx\,dy < \infty.
 > $$
 >
-> Since the left side is finite, the inner integral $\int_{\mathbb{R}^q} |f(x, y)|\,dy$ must be finite for a.e. $x \in \mathbb{R}^p$ (if it were $+\infty$ on a set of positive measure, the outer integral would be $+\infty$; [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]]). Therefore $f(x, \cdot) \in L(\mathbb{R}^q)$ for a.e. $x$. This proves (i).
+> Since the left side is finite, the inner integral $\int_{\mathbb{R}^q} |f(x, y)|\,dy$ must be finite for a.e. $x \in \mathbb{R}^p$ (if it were $+\infty$ on a set of positive measure, the outer integral would be $+\infty$; [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]]). Therefore $f(x, \cdot) \in L(\mathbb{R}^q)$ for a.e. $x$. This proves (i).
 >
 > **Step 2: Apply Tonelli to $f^+$ and $f^-$ separately.**
 >
@@ -306,11 +306,11 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 
 ^pf-17-6
 
-*Uses:* [[Tonelli's Theorem|§17.3]], [[§12 Measurable Functions#^prop-12-10|§12.10]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]]
+*Uses:* [[Tonelli's Theorem|§17.3]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|§12.10]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]]
 
 > [!remark]- Connections
 > - MATH 452 Riemann version: [[Fubini's Theorem]] (452 §15.8), for continuous $f$ on a rectangle, extended to [[§15 Multivariable Integration#^thm-15-9|Type I regions]] (452 §15.9).
-> - Used for the volume of sheared rectangles in [[§18 Differentiation Theory#^thm-18-22|Linear Maps Preserve Null Sets]] (§18.22).
+> - Used for the volume of sheared rectangles in [[§18b Differentiating the Integral#^thm-18-22|Linear Maps Preserve Null Sets]] ([[§18b Differentiating the Integral#^thm-18-22|§18.22]]).
 > - Computational version for continuous functions on boxes: [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] and [[§103 Triple Integrals#^thm-103-1|Calc Thm. §103.1]] (with worked examples).
 > - Used in ODEs: reversing the order of integration proves the algebraic properties of convolution, [[§26★ The Convolution Integral#^prop-26-1|331 Prop. §26.1]], and the convolution theorem $\mathcal{L}\{f * g\} = F(s)G(s)$, [[§26★ The Convolution Integral#^thm-26-2|331 Thm. §26.2]].
 > - Used in PDEs: reversing the order of integration turns the Fourier-integral solution of the infinite rod into heat-kernel form, [[§27 Infinite Rod#^thm-27-3|341 Thm. §27.3]]; it also gives the convolution step when the heat equation is solved by Fourier transform, [[§15★ Complex Methods#^ex-15-4|341 Ex. §15.4]], and the Laplace transform of $f(t)/t$, [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]].

@@ -53,7 +53,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 >
 > *$g_l^-$ is increasing*: By a similar case analysis, $g_l^- \leq g_{l+1}^-$.
 >
-> Since $|g_l(x)| = |\sup_{k \geq l} f_k(x)| \leq \sup_{k \geq l} |f_k(x)| \leq F(x)$, we have $g_l^+(x) \leq F(x)$, so $\int_E g_l^+\,dx \leq \int_E F\,dx < \infty$. By the [[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|MCT for decreasing sequences]] (applicable since $g_l^+$ is decreasing with $\int_E g_1^+ < \infty$):
+> Since $|g_l(x)| = |\sup_{k \geq l} f_k(x)| \leq \sup_{k \geq l} |f_k(x)| \leq F(x)$, we have $g_l^+(x) \leq F(x)$, so $\int_E g_l^+\,dx \leq \int_E F\,dx < \infty$. By the [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|MCT for decreasing sequences]] (applicable since $g_l^+$ is decreasing with $\int_E g_1^+ < \infty$):
 >
 > $$
 > \lim_{l \to \infty} \int_E g_l^+\,dx = \int_E \lim_{l \to \infty} g_l^+\,dx.
@@ -87,7 +87,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 ^pf-15-7
 
-*Uses:* [[§12 Measurable Functions#^thm-12-6|§12.6]], [[§12 Measurable Functions#^rem-12-4|Rem. §12.4]], [[§12 Measurable Functions#^def-12-4|Def. §12.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|§14.14]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|§12.6]], [[§12a Limits and Positive Parts of Measurable Functions#^rem-12-4|Rem. §12.4]], [[§12a Limits and Positive Parts of Measurable Functions#^def-12-4|Def. §12.4]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|§14.14]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|451 Def. §10.3]]
 
 ## The Dominated Convergence Theorem
 
@@ -107,7 +107,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > [!proof]+ Proof
 > Since $|f_k| \leq F$ a.e. and $f_k \to f$ a.e., we have $|f| \leq F$ a.e., so $f \in L(E)$.
 >
-> By the [[§15 The General Lebesgue Integral#^thm-15-6|dominated Fatou's lemma]] and [[§15 The General Lebesgue Integral#^thm-15-7|reverse Fatou's lemma]]:
+> By the [[§15a The Dominated Convergence Theorem#^thm-15-6|dominated Fatou's lemma]] and [[§15a The Dominated Convergence Theorem#^thm-15-7|reverse Fatou's lemma]]:
 >
 > $$
 > \int_E \liminf_{k \to \infty} f_k\,dx \;\leq\; \liminf_{k \to \infty} \int_E f_k\,dx \;\leq\; \limsup_{k \to \infty} \int_E f_k\,dx \;\leq\; \int_E \limsup_{k \to \infty} f_k\,dx.
@@ -121,11 +121,11 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 ^pf-15-8
 
-*Uses:* [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§15 The General Lebesgue Integral#^thm-15-6|§15.6]], [[§15 The General Lebesgue Integral#^thm-15-7|§15.7]], [[§12 Measurable Functions#^rem-12-7|Rem. §12.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]], [[Squeeze Theorem|451 §8.1]]
+*Uses:* [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[§15a The Dominated Convergence Theorem#^thm-15-6|§15.6]], [[§15a The Dominated Convergence Theorem#^thm-15-7|§15.7]], [[§12b Simple Functions and Modes of Convergence#^rem-12-7|Rem. §12.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]], [[Squeeze Theorem|451 §8.1]]
 
 > [!remark]- Connections
 > - MATH 451 exchanges limit and integral only under uniform convergence: [[§25 More on Uniform Convergence#^thm-25-1|451 §25.1]], [[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]. On $[a,b]$, a uniformly convergent sequence of bounded functions is dominated by a constant, so the DCT contains these.
-> - The $L^p$ theory ([[§19 Normed Linear Spaces and Lᵖ Spaces|§19]]) leans on the DCT throughout. [[Fubini's Theorem (Lebesgue)|Fubini's Theorem]] (§17.6) does not: it applies [[Tonelli's Theorem]] to $f^+$ and $f^-$ and subtracts.
+> - The $L^p$ theory ([[§19 Normed Linear Spaces and Lᵖ Spaces|§19]]) leans on the DCT throughout. [[Fubini's Theorem (Lebesgue)|Fubini's Theorem]] ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|§17.6]]) does not: it applies [[Tonelli's Theorem]] to $f^+$ and $f^-$ and subtracts.
 > - Used in PDEs: differentiation under the integral sign, which shows that the Fourier-integral solution of the semi-infinite rod satisfies the heat equation, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], and passes $\partial/\partial x$ through the Laplace transform, [[§53★ Partial Differential Equations#^thm-53-1|341 Thm. §53.1]].
 > - Used in Quantum Field Theory: differentiation under the integral sign with a dominating function independent of the parameter, the check behind every exchange of limit, derivative and integral in the field calculations — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|QFT Theorem §CA.1.1]].
 
@@ -138,15 +138,15 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > | [[Fatou's Lemma\|Fatou]] | $f_k \geq 0$ | $\int \liminf f_k \leq \liminf \int f_k$ |
 > | [[Dominated Convergence Theorem\|DCT]] | $\vert f_k\vert \leq F \in L$, $f_k \to f$ a.e. | $\lim \int f_k = \int f$ |
 >
-> The MCT requires monotonicity but no domination. The DCT requires domination but no monotonicity. Fatou is the weakest conclusion but requires the least: only non-negativity (or [[§15 The General Lebesgue Integral#^thm-15-6|domination for signed functions]]).
+> The MCT requires monotonicity but no domination. The DCT requires domination but no monotonicity. Fatou is the weakest conclusion but requires the least: only non-negativity (or [[§15a The Dominated Convergence Theorem#^thm-15-6|domination for signed functions]]).
 
 ^rem-15-3
 
 ![[m551-15-2.svg]]
-*Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[§13 Egorov's and Lusin's Theorems#^rem-13-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[§14 The Lebesgue Integral for Simple Functions#^ex-14-1|Ex. §14.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
+*Why the DCT needs an integrable dominator. Both sequences tend to $0$ at every point while $\int f_k = 1$ for every $k$, so $\lim \int f_k \neq \int \lim f_k$. (a) The sliding block $f_k = \chi_{[k,k+1]}$ of [[§13 Egorov's and Lusin's Theorems#^rem-13-1|Rem. §13.1]]: the smallest possible dominator $\sup_k f_k = \chi_{[1,\infty)}$ (red) has infinite integral. (b) The bumps $f_k = k\,\chi_{(0,1/k)}$ of [[§14a Consequences of the Monotone Convergence Theorem#^ex-14-1|Ex. §14.1]]: $\sup_k f_k$ is the red staircase, equal to $k$ on $[\frac{1}{k+1}, \frac1k)$, which is at least $\frac1x - 1$ and not integrable near $0$. Any $F$ with $|f_k| \leq F$ lies above the red graph, so no $F \in L$ exists; only Fatou's inequality survives, and it is strict.*
 
 > [!remark]- Connections
-> - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§12 Measurable Functions#^def-12-9|Def. §12.9]]).
+> - The MATH 451 row this table replaces: $f_n \to f$ uniformly on $[a,b]$ gives $\lim \int f_n = \int f$ ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]; [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§12b Simple Functions and Modes of Convergence#^def-12-9|Def. §12.9]]).
 > - Why a new integral was needed for such theorems: [[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]] (Riemann integrable functions are not closed under pointwise limits).
 
 > [!proof]+ Alternative Proof of DCT via Fatou
@@ -178,15 +178,15 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 ^pf-15-8-2
 
-*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Fatou's Lemma|§14.15]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]]
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Fatou's Lemma|§14.15]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]], [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]]
 
 > [!remark] Remark: $L^1$ Convergence
-> The alternative proof actually establishes a stronger conclusion: under the hypotheses of DCT, $\lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$, i.e., $f_k \to f$ in $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^def-16-2|Def. §16.2]]). This is strictly stronger than $\lim \int f_k = \int f$, which is convergence of the integrals.
+> The alternative proof actually establishes a stronger conclusion: under the hypotheses of DCT, $\lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$, i.e., $f_k \to f$ in $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^def-16-new2|Def. §16.4]]). This is strictly stronger than $\lim \int f_k = \int f$, which is convergence of the integrals.
 
 ^rem-15-4
 
 > [!remark]- Connections
-> - This $L^1$ form of the DCT drives the density theorems [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]] and [[§16 The L¹ Space and Density Theorems#^lem-16-2|§16.2]]; its $L^p$ analogue is used in [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]].
+> - This $L^1$ form of the DCT drives the density theorems [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]] and [[§16 The L¹ Space and Density Theorems#^lem-16-2|§16.2]]; its $L^p$ analogue is used in [[§19a Lᵖ as a Banach Space#^thm-19-19|§19.19]].
 
 ## Absolute Convergence of Series in $L^1$
 
@@ -202,13 +202,13 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 ^cor-15-9
 
 > [!proof]+ Proof
-> Since $|f_k| \in L(E)$ is non-negative measurable, by [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|MCT II]]:
+> Since $|f_k| \in L(E)$ is non-negative measurable, by [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|MCT II]]:
 >
 > $$
 > \sum_{k=1}^{\infty} \int_E |f_k|\,dx = \int_E \sum_{k=1}^{\infty} |f_k(x)|\,dx < \infty.
 > $$
 >
-> Therefore $\sum_{k=1}^{\infty} |f_k(x)| < \infty$ a.e. on $E$ ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|integrable non-negative function is a.e. finite]]). This means $\sum f_k(x)$ converges absolutely a.e.
+> Therefore $\sum_{k=1}^{\infty} |f_k(x)| < \infty$ a.e. on $E$ ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|integrable non-negative function is a.e. finite]]). This means $\sum f_k(x)$ converges absolutely a.e.
 >
 > Let $S_m(x) = \sum_{k=1}^{m} f_k(x)$ and $S(x) = \lim_{m \to \infty} S_m(x)$ (defined a.e.). Define $g(x) = \sum_{k=1}^{\infty} |f_k(x)| \in L(E)$. Then $|S_m(x)| \leq \sum_{k=1}^{m} |f_k(x)| \leq g(x)$ for all $x \in E$. Since $S_m \to S$ a.e. and $|S_m| \leq g \in L(E)$, by [[Dominated Convergence Theorem|DCT]]:
 >
@@ -218,11 +218,11 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 ^pf-15-9
 
-*Uses:* [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|§14.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[§14 Series#^prop-14-6|451 §14.6]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Dominated Convergence Theorem|§15.8]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]]
+*Uses:* [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|§14.12]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§14 Series#^prop-14-6|451 §14.6]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Dominated Convergence Theorem|§15.8]], [[§15 The General Lebesgue Integral#^thm-15-2|§15.2]]
 
 > [!remark]- Connections
 > - MATH 451 analogue: the [[§25 More on Uniform Convergence#^thm-25-3|Weierstrass M-test]] (451 §25.3) gives term-by-term integration from $\sum \sup |f_k| < \infty$; here $\sum \int |f_k| < \infty$ suffices.
-> - $L^p$ version: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|Corollary §19.14]]; the key step in [[Riesz–Fischer Theorem|Riesz–Fischer]] (§19.18).
+> - $L^p$ version: [[§19a Lᵖ as a Banach Space#^cor-19-14|Corollary §19.14]]; the key step in [[Riesz–Fischer Theorem|Riesz–Fischer]] ([[§19a Lᵖ as a Banach Space#^thm-19-18|§19.18]]).
 
 ## Riemann Integrable Functions are Lebesgue Integrable
 
@@ -290,15 +290,15 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 > \lim_{k \to \infty} \int_0^1 \psi_k\,dx = \lim_{k \to \infty} \int_0^1 \varphi_k\,dx = \int_{[0,1]}^R f\,dx.
 > $$
 >
-> Now $\psi_k - \varphi_k \geq 0$ and $\psi_k - \varphi_k \searrow \psi - \varphi \geq 0$. Since $\int_0^1 (\psi_1 - \varphi_1)\,dx < \infty$ (both are bounded), by the [[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|decreasing version of the MCT]] applied to the difference:
+> Now $\psi_k - \varphi_k \geq 0$ and $\psi_k - \varphi_k \searrow \psi - \varphi \geq 0$. Since $\int_0^1 (\psi_1 - \varphi_1)\,dx < \infty$ (both are bounded), by the [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|decreasing version of the MCT]] applied to the difference:
 >
 > $$
 > \int_0^1 (\psi - \varphi)\,dx = \lim_{k \to \infty} \int_0^1 (\psi_k - \varphi_k)\,dx = 0.
 > $$
 >
-> Since $\psi - \varphi \geq 0$ and $\int_0^1 (\psi - \varphi)\,dx = 0$, the [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|vanishing integral result]] gives $\psi(x) = \varphi(x)$ a.e. on $[0,1]$.
+> Since $\psi - \varphi \geq 0$ and $\int_0^1 (\psi - \varphi)\,dx = 0$, the [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|vanishing integral result]] gives $\psi(x) = \varphi(x)$ a.e. on $[0,1]$.
 >
-> Since $\varphi(x) \leq f(x) \leq \psi(x)$ and $\varphi = \psi$ a.e., we have $f(x) = \varphi(x) = \psi(x)$ a.e. In particular, $f(x) = \lim_{k \to \infty} \varphi_k(x)$ a.e., and $f$ is measurable, since it equals the measurable function $\varphi$ (a pointwise limit of simple functions) a.e. ([[§12 Measurable Functions#^prop-12-12|Prop. §12.12]]).
+> Since $\varphi(x) \leq f(x) \leq \psi(x)$ and $\varphi = \psi$ a.e., we have $f(x) = \varphi(x) = \psi(x)$ a.e. In particular, $f(x) = \lim_{k \to \infty} \varphi_k(x)$ a.e., and $f$ is measurable, since it equals the measurable function $\varphi$ (a pointwise limit of simple functions) a.e. ([[§12a Limits and Positive Parts of Measurable Functions#^prop-12-12|Prop. §12.12]]).
 >
 > Since $|\varphi_k(x)| \leq M$ for all $k$ (where $M = \sup_{[0,1]} |f|$) and $m([0,1]) < \infty$, the constant function $M$ dominates. By [[Dominated Convergence Theorem|DCT]]:
 >
@@ -308,7 +308,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 
 ^pf-15-10
 
-*Uses:* [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]], [[§15 The General Lebesgue Integral#^rem-15-6|Rem. §15.6]], [[§15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-14|§14.14]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[§12 Measurable Functions#^prop-12-12|§12.12]], [[§15 The General Lebesgue Integral#^ex-15-1|Ex. §15.1]], [[Dominated Convergence Theorem|§15.8]], [[§32 The Definition of the Riemann Integral#^lem-32-2|451 §32.2]]
+*Uses:* [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]], [[§15a The Dominated Convergence Theorem#^rem-15-6|Rem. §15.6]], [[§15a The Dominated Convergence Theorem#^def-15-2|Def. §15.2]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-14|§14.14]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-12|§12.12]], [[§15 The General Lebesgue Integral#^ex-15-1|Ex. §15.1]], [[Dominated Convergence Theorem|§15.8]], [[§32 The Definition of the Riemann Integral#^lem-32-2|451 §32.2]]
 
 ![[m551-15-3.svg]]
 *The proof with $k = 3$ (dyadic intervals of length $\frac18$): the lower step function $\varphi_k$ (blue, the infimum on each interval) and the upper step function $\psi_k$ (red, the supremum) trap $f$. The gray area is $\int_0^1 (\psi_k - \varphi_k)$, the gap between the upper and lower sums; Riemann integrability makes it tend to $0$, which forces $\varphi = \psi = f$ a.e., and the DCT with the constant dominator $M$ then gives $\int^L f = \lim \int \varphi_k = \int^R f$.*

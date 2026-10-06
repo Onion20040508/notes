@@ -56,7 +56,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 *Uses:* [[§26 Coordinate Systems#^thm-26-3|§26.3]] (the coordinate mapping is linear), [[§4 The Matrix Equation Ax = b#^def-4-1|Def. §4.1]] ($A\mathbf{x}$ as a combination of columns)
 
 > [!definition] Definition §35.1: Matrix for T Relative to Bases
-> The matrix $M$ of Theorem §35.1 is called the **matrix for $T$ relative to the bases $\mathcal{B}$ and $\mathcal{C}$**, a matrix representation of $T$. Its $j$th column is the $\mathcal{C}$-coordinate vector of the image of the $j$th basis vector $\mathbf{b}_j$.
+> The matrix $M$ of [[§35 Eigenvectors and Linear Transformations#^thm-35-1|Theorem §35.1]] is called the **matrix for $T$ relative to the bases $\mathcal{B}$ and $\mathcal{C}$**, a matrix representation of $T$. Its $j$th column is the $\mathcal{C}$-coordinate vector of the image of the $j$th basis vector $\mathbf{b}_j$.
 >
 > If $W = V$ and $\mathcal{C} = \mathcal{B}$, then $M$ is called the **matrix for $T$ relative to $\mathcal{B}$**, or simply the **$\mathcal{B}$-matrix for $T$**, and is denoted $[T]_{\mathcal{B}}$. It satisfies
 >
@@ -153,7 +153,7 @@ In applied problems a linear transformation of $\mathbb{R}^n$ usually appears fi
 
 *Uses:* [[§35 Eigenvectors and Linear Transformations#^def-35-1|Def. §35.1]], [[§26 Coordinate Systems#^prop-26-2|§26.2]] (the change-of-coordinates equation), [[§11 Matrix Operations#^def-11-3|Def. §11.3]] (the product $AB$ column by column)
 
-For example, $A = \begin{bmatrix} 7 & 2 \\ -4 & 1 \end{bmatrix} = PDP^{-1}$ with $P = \begin{bmatrix} 1 & 1 \\ -1 & -2 \end{bmatrix}$, $D = \begin{bmatrix} 5 & 0 \\ 0 & 3 \end{bmatrix}$ ([[§34 Diagonalization#^ex-34-1|Example §34.1]]). The columns $\mathbf{b}_1 = (1, -1)$, $\mathbf{b}_2 = (1, -2)$ of $P$ are eigenvectors of $A$, and by Theorem §35.2, $D$ is the $\mathcal{B}$-matrix of $T(\mathbf{x}) = A\mathbf{x}$ for $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$. The mappings $\mathbf{x} \mapsto A\mathbf{x}$ and $\mathbf{u} \mapsto D\mathbf{u}$ describe the same linear transformation, relative to different bases (Lay, Example 5.4.3).
+For example, $A = \begin{bmatrix} 7 & 2 \\ -4 & 1 \end{bmatrix} = PDP^{-1}$ with $P = \begin{bmatrix} 1 & 1 \\ -1 & -2 \end{bmatrix}$, $D = \begin{bmatrix} 5 & 0 \\ 0 & 3 \end{bmatrix}$ ([[§34 Diagonalization#^ex-34-1|Example §34.1]]). The columns $\mathbf{b}_1 = (1, -1)$, $\mathbf{b}_2 = (1, -2)$ of $P$ are eigenvectors of $A$, and by [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]], $D$ is the $\mathcal{B}$-matrix of $T(\mathbf{x}) = A\mathbf{x}$ for $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$. The mappings $\mathbf{x} \mapsto A\mathbf{x}$ and $\mathbf{u} \mapsto D\mathbf{u}$ describe the same linear transformation, relative to different bases (Lay, Example 5.4.3).
 
 ## Similarity of Matrix Representations
 
@@ -229,9 +229,9 @@ Every square matrix is similar to a matrix in Jordan form, using a basis of eige
 *Uses:* [[§34 Diagonalization#^thm-34-2|§34.2]], [[§28 Rank#^thm-28-3|§28.3]] (the Rank Theorem), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem)
 
 > [!remark]- Connections
-> - ODE version: the Jordan form, [[§34★ Repeated Eigenvalues#^def-34-3|331 Def. §34.3]], and the exponential of a Jordan block, $e^{Jt} = e^{\lambda t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$, [[§34★ Repeated Eigenvalues#^prop-34-3|331 Prop. §34.3]]. Case 2(b) is the double eigenvalue with one eigenvector, where $\mathbf{x}' = A\mathbf{x}$ needs the generalized eigenvector $\boldsymbol{\eta}$ with $(A - \lambda I)\boldsymbol{\eta} = \boldsymbol{\xi}$ (Lay's $\mathbf{b}_2$ in Example §35.3), [[§34★ Repeated Eigenvalues#^thm-34-2|331 Thm. §34.2]], [[§34★ Repeated Eigenvalues#^def-34-2|331 Def. §34.2]].
+> - ODE version: the Jordan form, [[§34★ Repeated Eigenvalues#^def-34-3|331 Def. §34.3]], and the exponential of a Jordan block, $e^{Jt} = e^{\lambda t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$, [[§34★ Repeated Eigenvalues#^prop-34-3|331 Prop. §34.3]]. Case 2(b) is the double eigenvalue with one eigenvector, where $\mathbf{x}' = A\mathbf{x}$ needs the generalized eigenvector $\boldsymbol{\eta}$ with $(A - \lambda I)\boldsymbol{\eta} = \boldsymbol{\xi}$ (Lay's $\mathbf{b}_2$ in [[§35 Eigenvectors and Linear Transformations#^ex-35-3|Example §35.3]]), [[§34★ Repeated Eigenvalues#^thm-34-2|331 Thm. §34.2]], [[§34★ Repeated Eigenvalues#^def-34-2|331 Def. §34.2]].
 
-In Example §35.3, $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
+In [[§35 Eigenvectors and Linear Transformations#^ex-35-3|Example §35.3]], $N = A + 2I$ and $N\mathbf{b}_2 = (12 - 9, 8 - 6) = (3, 2) = \mathbf{b}_1$: Lay's basis is exactly the one built in the proof.
 
 A diagonal $\mathcal{B}$-matrix makes the powers of a transformation easy to compute, also when $V$ is not $\mathbb{R}^n$: by (5), applied $N$ times, $[T^N(\mathbf{x})]_{\mathcal{B}} = [T]_{\mathcal{B}}^N[\mathbf{x}]_{\mathcal{B}}$.
 

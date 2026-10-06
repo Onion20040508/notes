@@ -81,7 +81,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > C_{ij} = (-1)^{i+j} \det A_{ij} . \qquad (4)
 > $$
 >
-> With this notation Definition §20.2 reads
+> With this notation [[§20 Introduction to Determinants#^def-20-2|Definition §20.2]] reads
 >
 > $$
 > \det A = a_{11}C_{11} + a_{12}C_{12} + \cdots + a_{1n}C_{1n},
@@ -119,7 +119,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > \begin{bmatrix} + & - & + & \cdots \\ - & + & - & \\ + & - & + & \\ \vdots & & & \ddots \end{bmatrix}
 > $$
 >
-> Theorem §20.1 pays off when a row or column contains many zeros: the terms with $a_{ij} = 0$ need no cofactor. In particular, if a whole row or column is zero, the expansion along it is a sum of zeros, so $\det A = 0$. From now on zero terms are omitted from expansions.
+> [[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]] pays off when a row or column contains many zeros: the terms with $a_{ij} = 0$ need no cofactor. In particular, if a whole row or column is zero, the expansion along it is a sum of zeros, so $\det A = 0$. From now on zero terms are omitted from expansions.
 
 ^rem-20-2
 
@@ -130,13 +130,13 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > A = \begin{bmatrix} 1 & 5 & 0 \\ 2 & 4 & -1 \\ 0 & -2 & 0 \end{bmatrix} .
 > $$
 >
-> **Across the first row** (Definition §20.2):
+> **Across the first row** ([[§20 Introduction to Determinants#^def-20-2|Definition §20.2]]):
 >
 > $$
 > \det A = 1 \cdot \begin{vmatrix} 4 & -1 \\ -2 & 0 \end{vmatrix} - 5 \begin{vmatrix} 2 & -1 \\ 0 & 0 \end{vmatrix} + 0 \begin{vmatrix} 2 & 4 \\ 0 & -2 \end{vmatrix} = 1(0 - 2) - 5(0 - 0) + 0(-4 - 0) = -2 .
 > $$
 >
-> **Across the third row** (Theorem §20.1), which has two zeros:
+> **Across the third row** ([[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]]), which has two zeros:
 >
 > $$
 > \det A = a_{31}C_{31} + a_{32}C_{32} + a_{33}C_{33} = 0 + (-1)^{3+2}(-2) \begin{vmatrix} 1 & 0 \\ 2 & -1 \end{vmatrix} + 0 = -(-2)(-1) = -2 .
@@ -194,7 +194,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > \det A = 3 \cdot 2 \cdot \begin{vmatrix} 1 & 5 & 0 \\ 2 & 4 & -1 \\ 0 & -2 & 0 \end{vmatrix} = 3 \cdot 2 \cdot (-2) = -12,
 > $$
 >
-> using Example §20.1 for the $3 \times 3$ determinant.
+> using [[§20 Introduction to Determinants#^ex-20-1|Example §20.1]] for the $3 \times 3$ determinant.
 >
 > *Lay: Example 3.1.3*
 
@@ -208,11 +208,11 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 ^thm-20-2
 
 > [!proof]+ Proof
-> *Lay says only that the method of Example §20.3 "is easily adapted"; here is the induction.* For $n = 1$ there is nothing to prove. Let $n \ge 2$ and assume the result for $(n-1) \times (n-1)$ triangular matrices.
+> *Lay says only that the method of [[§20 Introduction to Determinants#^ex-20-3|Example §20.3]] "is easily adapted"; here is the induction.* For $n = 1$ there is nothing to prove. Let $n \ge 2$ and assume the result for $(n-1) \times (n-1)$ triangular matrices.
 >
-> If $A$ is **upper** triangular, the only possibly nonzero entry of its first column is $a_{11}$, so the cofactor expansion down column 1 (Theorem §20.1) gives $\det A = a_{11}C_{11} = a_{11}\det A_{11}$. Deleting row 1 and column 1 of an upper triangular matrix leaves an upper triangular matrix with diagonal $a_{22}, \ldots, a_{nn}$, so by the induction hypothesis $\det A_{11} = a_{22}\cdots a_{nn}$, and $\det A = a_{11}a_{22}\cdots a_{nn}$.
+> If $A$ is **upper** triangular, the only possibly nonzero entry of its first column is $a_{11}$, so the cofactor expansion down column 1 ([[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]]) gives $\det A = a_{11}C_{11} = a_{11}\det A_{11}$. Deleting row 1 and column 1 of an upper triangular matrix leaves an upper triangular matrix with diagonal $a_{22}, \ldots, a_{nn}$, so by the induction hypothesis $\det A_{11} = a_{22}\cdots a_{nn}$, and $\det A = a_{11}a_{22}\cdots a_{nn}$.
 >
-> If $A$ is **lower** triangular, the only possibly nonzero entry of its first row is $a_{11}$, so Definition §20.2 itself gives $\det A = a_{11}\det A_{11}$, where $A_{11}$ is lower triangular with diagonal $a_{22}, \ldots, a_{nn}$; conclude as before.
+> If $A$ is **lower** triangular, the only possibly nonzero entry of its first row is $a_{11}$, so [[§20 Introduction to Determinants#^def-20-2|Definition §20.2]] itself gives $\det A = a_{11}\det A_{11}$, where $A_{11}$ is lower triangular with diagonal $a_{22}, \ldots, a_{nn}$; conclude as before.
 
 ^pf-20-2
 
@@ -243,7 +243,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 ^prop-20-3
 
 > [!proof]+ Proof
-> Expand across the first row (Definition §20.2) and multiply out the three $2 \times 2$ determinants:
+> Expand across the first row ([[§20 Introduction to Determinants#^def-20-2|Definition §20.2]]) and multiply out the three $2 \times 2$ determinants:
 >
 > $$
 > \det A = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31}) .
@@ -262,7 +262,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > A = \begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix},
 > $$
 >
-> Proposition §20.3 gives
+> [[§20 Introduction to Determinants#^prop-20-3|Proposition §20.3]] gives
 >
 > $$
 > \det A = 1 \cdot 5 \cdot 9 + 2 \cdot 6 \cdot 7 + 3 \cdot 4 \cdot 8 - 3 \cdot 5 \cdot 7 - 1 \cdot 6 \cdot 8 - 2 \cdot 4 \cdot 9 = 45 + 84 + 96 - 105 - 48 - 72 = 0 .

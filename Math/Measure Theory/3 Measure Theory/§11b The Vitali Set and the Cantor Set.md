@@ -40,7 +40,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 *Uses:* [[§9 Lebesgue Outer Measure#^prop-9-3|§9.3]], [[§10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[§10 Lebesgue Measurable Sets#^def-10-5|Def. §10.5]]
 
 > [!remark]- Connections
-> - Integral version: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|Thm. §17.1]]; for invertible linear maps instead of translations: [[§18 Differentiation Theory#^cor-18-23|Cor. §18.23]].
+> - Integral version: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-1|Thm. §17.1]]; for invertible linear maps instead of translations: [[§18b Differentiating the Integral#^cor-18-23|Cor. §18.23]].
 
 > [!definition] Definition §11.10: Equivalence Relation
 > For $x, y \in [0, 1]$, we say $x$ and $y$ are **equivalent**, written $x \sim y$, if $x - y \in \mathbb{Q}$.
@@ -80,7 +80,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 ^pf-11-17
 
-*Uses:* [[§11 Borel Sets and Measure Spaces#^def-11-10|Def. §11.10]], [[§11 Borel Sets and Measure Spaces#^prop-11-16|§11.16]], [[§11 Borel Sets and Measure Spaces#^def-11-11|Def. §11.11]]
+*Uses:* [[§11b The Vitali Set and the Cantor Set#^def-11-10|Def. §11.10]], [[§11b The Vitali Set and the Cantor Set#^prop-11-16|§11.16]], [[§11b The Vitali Set and the Cantor Set#^def-11-11|Def. §11.11]]
 
 > [!remark]- Connections
 > - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
@@ -127,7 +127,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 
 ^pf-11-19
 
-*Uses:* [[§11 Borel Sets and Measure Spaces#^def-11-12|Def. §11.12]], [[§11 Borel Sets and Measure Spaces#^prop-11-17|§11.17]], [[§11 Borel Sets and Measure Spaces#^prop-11-18|§11.18]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]]
+*Uses:* [[§11b The Vitali Set and the Cantor Set#^def-11-12|Def. §11.12]], [[§11b The Vitali Set and the Cantor Set#^prop-11-17|§11.17]], [[§11b The Vitali Set and the Cantor Set#^prop-11-18|§11.18]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]]
 
 ![[m551-11-4.svg]]
 *The Vitali argument: $V$ (red) contains one point from each class of $\sim$, and its rational translates $r_j + V$ (blue; a few of the countably many, with $V = 0 + V$ itself among them) are pairwise disjoint. Together they cover $[0,1]$ (shaded) but stay inside $[-1,2]$. If they all had measure $m(V)$ we would need $1 \leq \sum_j m(V) \leq 3$, which is impossible whether $m(V) = 0$ or $m(V) > 0$. (The tick marks only stand in for $V$, which cannot actually be drawn.)*
@@ -138,9 +138,9 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 ^thm-11-20
 
 > [!proof]+ Proof
-> Suppose for contradiction that $V \in \mathcal{M}$. Then by [[§11 Borel Sets and Measure Spaces#^lem-11-15|translation invariance]], $r_j + V \in \mathcal{M}$ and $m(r_j + V) = m(V)$ for all $j$.
+> Suppose for contradiction that $V \in \mathcal{M}$. Then by [[§11b The Vitali Set and the Cantor Set#^lem-11-15|translation invariance]], $r_j + V \in \mathcal{M}$ and $m(r_j + V) = m(V)$ for all $j$.
 >
-> Since the sets $\{r_j + V\}$ are pairwise disjoint and measurable, and $[0, 1] \subseteq \bigcup_j (r_j + V) \subseteq [-1, 2]$ ([[§11 Borel Sets and Measure Spaces#^prop-11-19|Prop. §11.19]]), we have by [[Lebesgue Measurable Sets Form a σ-Algebra|countable additivity]] and [[Properties of Lebesgue Outer Measure|monotonicity]]:
+> Since the sets $\{r_j + V\}$ are pairwise disjoint and measurable, and $[0, 1] \subseteq \bigcup_j (r_j + V) \subseteq [-1, 2]$ ([[§11b The Vitali Set and the Cantor Set#^prop-11-19|Prop. §11.19]]), we have by [[Lebesgue Measurable Sets Form a σ-Algebra|countable additivity]] and [[Properties of Lebesgue Outer Measure|monotonicity]]:
 >
 > $$
 > 1 = m([0, 1]) \leq m\left(\bigcup_{j=1}^{\infty} (r_j + V)\right) = \sum_{j=1}^{\infty} m(r_j + V) = \sum_{j=1}^{\infty} m(V) \leq m([-1, 2]) = 3.
@@ -154,7 +154,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 
 ^pf-11-20
 
-*Uses:* [[§11 Borel Sets and Measure Spaces#^lem-11-15|§11.15]], [[§11 Borel Sets and Measure Spaces#^prop-11-19|§11.19]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]]
+*Uses:* [[§11b The Vitali Set and the Cantor Set#^lem-11-15|§11.15]], [[§11b The Vitali Set and the Cantor Set#^prop-11-19|§11.19]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]]
 
 > [!remark]- Connections
 > - The “partition wall” failure described in [[§10 Lebesgue Measurable Sets#^rem-10-2|Rem. §10.2]] (item 4).
@@ -188,7 +188,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 ^def-11-13
 
 ![[m551-11-5.svg]]
-*The first steps of the Cantor construction: $C_{n+1}$ removes the open middle third (dashed red) of every interval of $C_n$, leaving $2^n$ intervals of length $3^{-n}$ with total length $(2/3)^n \to 0$. The labels under $C_1$ and $C_2$ are the first ternary digits of the points in each interval. Only $0$s and $2$s survive, which is how Proposition §11.21 (4) matches $C$ with binary sequences.*
+*The first steps of the Cantor construction: $C_{n+1}$ removes the open middle third (dashed red) of every interval of $C_n$, leaving $2^n$ intervals of length $3^{-n}$ with total length $(2/3)^n \to 0$. The labels under $C_1$ and $C_2$ are the first ternary digits of the points in each interval. Only $0$s and $2$s survive, which is how [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Proposition §11.21]] (4) matches $C$ with binary sequences.*
 
 > [!remark]- Connections
 > - First met in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Rem. §13.5]].
@@ -239,7 +239,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 *Uses:* [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§5 Topology of ℝⁿ#^thm-5-2|§5.2]], [[§11 Borel Sets and Measure Spaces#^ex-11-1|Ex. §11.1]], [[§11 Borel Sets and Measure Spaces#^cor-11-7|§11.7]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§16 Decimal Expansions of Real Numbers (Not Covered)|451 §16]]
 
 > [!remark]- Connections
-> - The digit map $f$ is the Cantor function restricted to $C$: [[§18 Differentiation Theory#^ex-18-4|Ex. §18.4]].
+> - The digit map $f$ is the Cantor function restricted to $C$: [[§18c Absolute Continuity and the FTC#^ex-18-4|Ex. §18.4]].
 
 > [!remark] Remark
 > The Cantor set demonstrates that:
@@ -250,4 +250,4 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 ^rem-11-7
 
 > [!remark]- Connections
-> - Cardinality $2^{\aleph_0}$: [[§4 Uncountability#^ex-4-1|binary sequences]] (Ex. §4.1); comparing cardinalities: [[Cantor–Bernstein Theorem|Cantor–Bernstein]] (§2.1).
+> - Cardinality $2^{\aleph_0}$: [[§4 Uncountability#^ex-4-1|binary sequences]] ([[§4 Uncountability#^ex-4-1|Ex. §4.1]]); comparing cardinalities: [[Cantor–Bernstein Theorem|Cantor–Bernstein]] ([[§2 The Cantor–Bernstein Theorem#^thm-2-1|§2.1]]).

@@ -12,7 +12,7 @@ tags: [applied-linear-algebra, math235, extension]
 *Lay, Section 7.3.*
 ★ *Beyond MATH 235: the course ended with inner products (Ch. 6); Chapter 7 is included from Lay as the continuation.*
 
-How large and how small can a quadratic form $\mathbf{x}^T A \mathbf{x}$ be on the unit sphere $\|\mathbf{x}\| = 1$? The answer is exactly the largest and the smallest eigenvalue of $A$, attained at the corresponding unit eigenvectors. Adding the constraints that $\mathbf{x}$ be orthogonal to the first few eigenvectors picks out the next eigenvalues one by one, so all eigenvalues of a symmetric matrix are solutions of optimization problems. The proofs are one line each after the Principal Axes Theorem of §49: in the coordinates of the principal axes the form is $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$, and an orthogonal change of variable keeps the sphere a sphere. These results drive the singular value decomposition (§51) and principal component analysis (§52).
+How large and how small can a quadratic form $\mathbf{x}^T A \mathbf{x}$ be on the unit sphere $\|\mathbf{x}\| = 1$? The answer is exactly the largest and the smallest eigenvalue of $A$, attained at the corresponding unit eigenvectors. Adding the constraints that $\mathbf{x}$ be orthogonal to the first few eigenvectors picks out the next eigenvalues one by one, so all eigenvalues of a symmetric matrix are solutions of optimization problems. The proofs are one line each after the Principal Axes Theorem of [[§49★ Quadratic Forms|§49★]]: in the coordinates of the principal axes the form is $\lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$, and an orthogonal change of variable keeps the sphere a sphere. These results drive the singular value decomposition ([[§51★ The Singular Value Decomposition|§51★]]) and principal component analysis ([[§52★ Applications to Image Processing and Statistics|§52★]]).
 
 ## Maximum and Minimum on the Unit Sphere
 
@@ -58,7 +58,7 @@ The expanded version is the one commonly used in applications. When the form has
 > m = \min\{\mathbf{x}^T A \mathbf{x} : \|\mathbf{x}\| = 1\}, \qquad M = \max\{\mathbf{x}^T A \mathbf{x} : \|\mathbf{x}\| = 1\} . \qquad (2)
 > $$
 >
-> Here *minimum* and *maximum* (and *least* and *greatest* below) refer to the natural order of the real numbers, not to magnitudes. That the minimum and maximum exist is part of Theorem §50.1.
+> Here *minimum* and *maximum* (and *least* and *greatest* below) refer to the natural order of the real numbers, not to magnitudes. That the minimum and maximum exist is part of [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]].
 >
 > *Lay: 7.3, Equation (2)*
 
@@ -100,7 +100,7 @@ The expanded version is the one commonly used in applications. When the form has
 
 > [!remark]- Connections
 > - The same answer by Lagrange multipliers: maximize $f(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ subject to $g(\mathbf{x}) = \mathbf{x}^T\mathbf{x} - 1 = 0$. Since $\nabla f = 2A\mathbf{x}$ (using $A^T = A$) and $\nabla g = 2\mathbf{x} \ne \mathbf{0}$ on the sphere, the Lagrange condition $\nabla f = \lambda \nabla g$ is exactly $A\mathbf{x} = \lambda\mathbf{x}$: the constrained critical points are the unit eigenvectors, and there $f(\mathbf{x}) = \lambda\,\mathbf{x}^T\mathbf{x} = \lambda$. The sphere is compact ([[Heine–Borel Theorem|590 Thm. §15.12]]), so the maximum and minimum exist ([[Continuous Image of a Compact Space is Compact|590 Thm. §15.3]]) and are the largest and smallest eigenvalues. See [[§97 Lagrange Multipliers#^thm-97-1|Calc Thm. §97.1]] and, rigorously in $\mathbb{R}^n$, [[§14 Optimization and Lagrange Multipliers#^thm-14-3|452 Thm. §14.3]]. The proof above avoids calculus altogether.
-> - For a symmetric $A$, Theorem §50.1 also gives $\max_{\|\mathbf{x}\| = 1} \|A\mathbf{x}\| = \max_i |\lambda_i|$, the operator norm: [[§27 Consequences of Singular Value Decomposition#^ladr-7-90|LADR 7.90]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
+> - For a symmetric $A$, [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]] also gives $\max_{\|\mathbf{x}\| = 1} \|A\mathbf{x}\| = \max_i |\lambda_i|$, the operator norm: [[§27 Consequences of Singular Value Decomposition#^ladr-7-90|LADR 7.90]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
 > - PDE version: [[§33★ Estimation of Eigenvalues#^thm-33-2|341 Thm. §33.2]] (Rayleigh's bound: the lowest eigenvalue of a Sturm–Liouville problem is at most the Rayleigh quotient $N(y)/D(y)$ of any trial function, with equality for the first eigenfunction, [[§33★ Estimation of Eigenvalues#^prop-33-1|341 Prop. §33.1]]).
 
 > [!theorem] Corollary §50.2: The Range of a Quadratic Form on the Unit Sphere
@@ -115,7 +115,7 @@ The expanded version is the one commonly used in applications. When the form has
 > [!proof]+ Proof
 > **(a)** (Exercise 12.) Let $A\mathbf{x} = \lambda\mathbf{x}$ with $\mathbf{x}$ a unit vector (normalize any eigenvector). Then $\mathbf{x}^T A \mathbf{x} = \mathbf{x}^T(\lambda\mathbf{x}) = \lambda\,\mathbf{x}^T\mathbf{x} = \lambda$, so $\lambda$ is one of the values in (2), and $m \le \lambda \le M$.
 >
-> **(b)** (Exercise 13.) By definition every value lies in $[m, M]$. Conversely, let $m \le t \le M$. As in the proof of Theorem §50.1, let $\mathbf{u}_1$ and $\mathbf{u}_n$ be the first and last columns of an orthogonal $P$ that diagonalizes $A$, unit eigenvectors for $M$ and $m$ ($\mathbf{u}_1 \cdot \mathbf{u}_n = 0$ if $n \ge 2$; for $n = 1$ there is nothing to prove). Write $t = (1 - \alpha)m + \alpha M$ with $0 \le \alpha \le 1$ (possible since $t$ lies between $m$ and $M$), and let
+> **(b)** (Exercise 13.) By definition every value lies in $[m, M]$. Conversely, let $m \le t \le M$. As in the proof of [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]], let $\mathbf{u}_1$ and $\mathbf{u}_n$ be the first and last columns of an orthogonal $P$ that diagonalizes $A$, unit eigenvectors for $M$ and $m$ ($\mathbf{u}_1 \cdot \mathbf{u}_n = 0$ if $n \ge 2$; for $n = 1$ there is nothing to prove). Write $t = (1 - \alpha)m + \alpha M$ with $0 \le \alpha \le 1$ (possible since $t$ lies between $m$ and $M$), and let
 >
 > $$
 > \mathbf{x} = \sqrt{1 - \alpha}\,\mathbf{u}_n + \sqrt{\alpha}\,\mathbf{u}_1 .
@@ -134,7 +134,7 @@ The expanded version is the one commonly used in applications. When the form has
 > [!example] Example §50.2: The Maximum of a Form With Cross-Product Terms
 > Let $A = \begin{bmatrix} 3 & 2 & 1 \\ 2 & 3 & 1 \\ 1 & 1 & 4 \end{bmatrix}$. Find the maximum value of the quadratic form $\mathbf{x}^T A \mathbf{x}$ subject to the constraint $\mathbf{x}^T\mathbf{x} = 1$, and find a unit vector at which this maximum is attained.
 >
-> By Theorem §50.1, the maximum is the greatest eigenvalue of $A$. The characteristic equation is
+> By [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]], the maximum is the greatest eigenvalue of $A$. The characteristic equation is
 >
 > $$
 > 0 = -\lambda^3 + 10\lambda^2 - 27\lambda + 18 = -(\lambda - 6)(\lambda - 3)(\lambda - 1) ,
@@ -172,8 +172,39 @@ The expanded version is the one commonly used in applications. When the form has
 
 ## Further Constraints: The Other Eigenvalues
 
+> [!theorem] Theorem §50.4: All Eigenvalues as Constrained Maxima
+> Let $A$ be a symmetric $n \times n$ matrix with an orthogonal diagonalization $A = PDP^{-1}$, where the entries on the diagonal of $D$ are arranged so that $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_n$ and where the columns of $P$ are corresponding unit eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_n$. Then for $k = 2, \dots, n$, the maximum value of $\mathbf{x}^T A \mathbf{x}$ subject to the constraints
+>
+> $$
+> \mathbf{x}^T\mathbf{x} = 1, \qquad \mathbf{x}^T\mathbf{u}_1 = 0, \qquad \dots, \qquad \mathbf{x}^T\mathbf{u}_{k-1} = 0
+> $$
+>
+> is the eigenvalue $\lambda_k$, and this maximum is attained at $\mathbf{x} = \mathbf{u}_k$.
+>
+> *Lay: Theorem 8 (7.3)*
+
+^thm-50-4
+
+*Lay omits the proof; the argument of [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]] carries over directly, as follows.*
+
+> [!proof]+ Proof
+> Change variable by $\mathbf{x} = P\mathbf{y}$, so $\mathbf{y} = P^T\mathbf{x}$, whose $i$th entry is $y_i = \mathbf{u}_i^T\mathbf{x}$. As in the proof of [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]], $\|\mathbf{y}\| = \|\mathbf{x}\|$ and $\mathbf{x}^TA\mathbf{x} = \lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$. The constraints $\mathbf{x}^T\mathbf{u}_i = 0$ for $i < k$ say exactly that $y_1 = \cdots = y_{k-1} = 0$. For such a unit vector, using $\lambda_i \le \lambda_k$ for $i \ge k$,
+>
+> $$
+> \mathbf{x}^T A \mathbf{x} = \lambda_k y_k^2 + \lambda_{k+1} y_{k+1}^2 + \cdots + \lambda_n y_n^2 \le \lambda_k (y_k^2 + \cdots + y_n^2) = \lambda_k \|\mathbf{y}\|^2 = \lambda_k .
+> $$
+>
+> The vector $\mathbf{x} = \mathbf{u}_k = P\mathbf{e}_k$ is a unit vector orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$ (the columns of $P$ are orthonormal), so it satisfies the constraints, and $\mathbf{u}_k^T A \mathbf{u}_k = \lambda_k \mathbf{u}_k^T\mathbf{u}_k = \lambda_k$. So the constrained maximum is $\lambda_k$, attained at $\mathbf{u}_k$.
+
+^pf-50-4
+
+*Uses:* [[§50★ Constrained Optimization#^thm-50-1|§50.1]], [[§49★ Quadratic Forms#^thm-49-2|§49.2]]
+
+> [!remark]- Connections
+> - [[§50★ Constrained Optimization#^thm-50-4|Theorem §50.4]] depends on the eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$. The Courant–Fischer min-max theorem (not in Lay, nor yet in the vault) removes that dependence: $\lambda_k = \max_{\dim W = k}\ \min\{\mathbf{x}^TA\mathbf{x} : \mathbf{x} \in W,\ \|\mathbf{x}\| = 1\}$. The same "next singular value" mechanism gives the best rank-$k$ approximation of a matrix, [[§27 Consequences of Singular Value Decomposition#^ladr-7-92|LADR 7.92]].
+
 > [!theorem] Theorem §50.3: The Second Eigenvalue
-> Let $A$, $\lambda_1$ and $\mathbf{u}_1$ be as in Theorem §50.1. Then the maximum value of $\mathbf{x}^T A \mathbf{x}$ subject to the constraints
+> Let $A$, $\lambda_1$ and $\mathbf{u}_1$ be as in [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]]. Then the maximum value of $\mathbf{x}^T A \mathbf{x}$ subject to the constraints
 >
 > $$
 > \mathbf{x}^T\mathbf{x} = 1, \qquad \mathbf{x}^T\mathbf{u}_1 = 0
@@ -186,7 +217,7 @@ The expanded version is the one commonly used in applications. When the form has
 ^thm-50-3
 
 > [!proof]+ Proof
-> *Lay gives this as a sketch* ("an argument similar to the one above in which the theorem is reduced to the case where the matrix of the quadratic form is diagonal", with Example §50.4 below as the diagonal case). It is the case $k = 2$ of Theorem §50.4, whose proof follows.
+> *Lay gives this as a sketch* ("an argument similar to the one above in which the theorem is reduced to the case where the matrix of the quadratic form is diagonal", with [[§50★ Constrained Optimization#^ex-50-4|Example §50.4]] below as the diagonal case). It is the case $k = 2$ of [[§50★ Constrained Optimization#^thm-50-4|Theorem §50.4]], whose proof is given above.
 
 ^pf-50-3
 
@@ -203,13 +234,13 @@ The expanded version is the one commonly used in applications. When the form has
 >
 > The value $4$ is attained at $\mathbf{x} = (0, 1, 0)$, an eigenvector for the second greatest eigenvalue. So the constrained maximum is $4$.
 >
-> **(b) The matrix of Example §50.2.** Let $\mathbf{u}_1 = (1, 1, 1)/\sqrt3$ be the unit eigenvector for the greatest eigenvalue $6$ of $A = \begin{bmatrix} 3 & 2 & 1 \\ 2 & 3 & 1 \\ 1 & 1 & 4 \end{bmatrix}$. Find the maximum of $\mathbf{x}^T A \mathbf{x}$ subject to
+> **(b) The matrix of [[§50★ Constrained Optimization#^ex-50-2|Example §50.2]].** Let $\mathbf{u}_1 = (1, 1, 1)/\sqrt3$ be the unit eigenvector for the greatest eigenvalue $6$ of $A = \begin{bmatrix} 3 & 2 & 1 \\ 2 & 3 & 1 \\ 1 & 1 & 4 \end{bmatrix}$. Find the maximum of $\mathbf{x}^T A \mathbf{x}$ subject to
 >
 > $$
 > \mathbf{x}^T\mathbf{x} = 1, \qquad \mathbf{x}^T\mathbf{u}_1 = 0 . \qquad (4)
 > $$
 >
-> By Theorem §50.3 it is the second greatest eigenvalue, $\lambda = 3$. Solve $(A - 3I)\mathbf{x} = \mathbf{0}$:
+> By [[§50★ Constrained Optimization#^thm-50-3|Theorem §50.3]] it is the second greatest eigenvalue, $\lambda = 3$. Solve $(A - 3I)\mathbf{x} = \mathbf{0}$:
 >
 > $$
 > A - 3I = \begin{bmatrix} 0 & 2 & 1 \\ 2 & 0 & 1 \\ 1 & 1 & 1 \end{bmatrix} \sim \begin{bmatrix} 1 & 0 & 1/2 \\ 0 & 1 & 1/2 \\ 0 & 0 & 0 \end{bmatrix}
@@ -223,43 +254,12 @@ The expanded version is the one commonly used in applications. When the form has
 
 ^ex-50-4
 
-> [!theorem] Theorem §50.4: All Eigenvalues as Constrained Maxima
-> Let $A$ be a symmetric $n \times n$ matrix with an orthogonal diagonalization $A = PDP^{-1}$, where the entries on the diagonal of $D$ are arranged so that $\lambda_1 \ge \lambda_2 \ge \cdots \ge \lambda_n$ and where the columns of $P$ are corresponding unit eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_n$. Then for $k = 2, \dots, n$, the maximum value of $\mathbf{x}^T A \mathbf{x}$ subject to the constraints
->
-> $$
-> \mathbf{x}^T\mathbf{x} = 1, \qquad \mathbf{x}^T\mathbf{u}_1 = 0, \qquad \dots, \qquad \mathbf{x}^T\mathbf{u}_{k-1} = 0
-> $$
->
-> is the eigenvalue $\lambda_k$, and this maximum is attained at $\mathbf{x} = \mathbf{u}_k$.
->
-> *Lay: Theorem 8 (7.3)*
-
-^thm-50-4
-
-*Lay omits the proof; the argument of Theorem §50.1 carries over directly, as follows.*
-
-> [!proof]+ Proof
-> Change variable by $\mathbf{x} = P\mathbf{y}$, so $\mathbf{y} = P^T\mathbf{x}$, whose $i$th entry is $y_i = \mathbf{u}_i^T\mathbf{x}$. As in the proof of Theorem §50.1, $\|\mathbf{y}\| = \|\mathbf{x}\|$ and $\mathbf{x}^TA\mathbf{x} = \lambda_1 y_1^2 + \cdots + \lambda_n y_n^2$. The constraints $\mathbf{x}^T\mathbf{u}_i = 0$ for $i < k$ say exactly that $y_1 = \cdots = y_{k-1} = 0$. For such a unit vector, using $\lambda_i \le \lambda_k$ for $i \ge k$,
->
-> $$
-> \mathbf{x}^T A \mathbf{x} = \lambda_k y_k^2 + \lambda_{k+1} y_{k+1}^2 + \cdots + \lambda_n y_n^2 \le \lambda_k (y_k^2 + \cdots + y_n^2) = \lambda_k \|\mathbf{y}\|^2 = \lambda_k .
-> $$
->
-> The vector $\mathbf{x} = \mathbf{u}_k = P\mathbf{e}_k$ is a unit vector orthogonal to $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$ (the columns of $P$ are orthonormal), so it satisfies the constraints, and $\mathbf{u}_k^T A \mathbf{u}_k = \lambda_k \mathbf{u}_k^T\mathbf{u}_k = \lambda_k$. So the constrained maximum is $\lambda_k$, attained at $\mathbf{u}_k$.
-
-^pf-50-4
-
-*Uses:* [[§50★ Constrained Optimization#^thm-50-1|§50.1]], [[§49★ Quadratic Forms#^thm-49-2|§49.2]]
-
-> [!remark]- Connections
-> - Theorem §50.4 depends on the eigenvectors $\mathbf{u}_1, \dots, \mathbf{u}_{k-1}$. The Courant–Fischer min-max theorem (not in Lay, nor yet in the vault) removes that dependence: $\lambda_k = \max_{\dim W = k}\ \min\{\mathbf{x}^TA\mathbf{x} : \mathbf{x} \in W,\ \|\mathbf{x}\| = 1\}$. The same "next singular value" mechanism gives the best rank-$k$ approximation of a matrix, [[§27 Consequences of Singular Value Decomposition#^ladr-7-92|LADR 7.92]].
-
 > [!remark] Remark: Method — Constrained Extremes of a Quadratic Form
 > To find the maximum and minimum of $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ subject to $\|\mathbf{x}\| = 1$:
 > 1. Write the symmetric matrix $A$ of $Q$.
-> 2. Find its eigenvalues $\lambda_1 \ge \cdots \ge \lambda_n$. The maximum is $\lambda_1$ and the minimum is $\lambda_n$ (Theorem §50.1).
-> 3. To locate them, find unit eigenvectors $\mathbf{u}_1$ and $\mathbf{u}_n$. With the extra constraint $\mathbf{x} \perp \mathbf{u}_1, \dots, \mathbf{u}_{k-1}$, the maximum is $\lambda_k$ at $\mathbf{u}_k$ (Theorem §50.4).
-> 4. If the constraint is not a unit sphere but an ellipse or ellipsoid $\sum (x_i/a_i)^2 = 1$, first rescale each variable, $x_i = a_i \tilde x_i$, to turn it into $\tilde{\mathbf{x}}^T\tilde{\mathbf{x}} = 1$ (Example §50.5), then return to the original variables at the end.
+> 2. Find its eigenvalues $\lambda_1 \ge \cdots \ge \lambda_n$. The maximum is $\lambda_1$ and the minimum is $\lambda_n$ ([[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]]).
+> 3. To locate them, find unit eigenvectors $\mathbf{u}_1$ and $\mathbf{u}_n$. With the extra constraint $\mathbf{x} \perp \mathbf{u}_1, \dots, \mathbf{u}_{k-1}$, the maximum is $\lambda_k$ at $\mathbf{u}_k$ ([[§50★ Constrained Optimization#^thm-50-4|Theorem §50.4]]).
+> 4. If the constraint is not a unit sphere but an ellipse or ellipsoid $\sum (x_i/a_i)^2 = 1$, first rescale each variable, $x_i = a_i \tilde x_i$, to turn it into $\tilde{\mathbf{x}}^T\tilde{\mathbf{x}} = 1$ ([[§50★ Constrained Optimization#^ex-50-5|Example §50.5]]), then return to the original variables at the end.
 
 ^rem-50-1
 
@@ -282,7 +282,7 @@ The expanded version is the one commonly used in applications. When the form has
 >
 > and define $x_1 = x/3$, $x_2 = y/2$, that is, $x = 3x_1$, $y = 2x_2$. The constraint becomes $x_1^2 + x_2^2 = 1$, and the utility becomes $q(3x_1, 2x_2) = (3x_1)(2x_2) = 6x_1x_2$.
 >
-> **Apply Theorem §50.1.** With $\mathbf{x} = (x_1, x_2)$, the problem is to maximize $Q(\mathbf{x}) = 6x_1x_2 = \mathbf{x}^T A \mathbf{x}$ subject to $\mathbf{x}^T\mathbf{x} = 1$, where
+> **Apply [[§50★ Constrained Optimization#^thm-50-1|Theorem §50.1]].** With $\mathbf{x} = (x_1, x_2)$, the problem is to maximize $Q(\mathbf{x}) = 6x_1x_2 = \mathbf{x}^T A \mathbf{x}$ subject to $\mathbf{x}^T\mathbf{x} = 1$, where
 >
 > $$
 > A = \begin{bmatrix} 0 & 3 \\ 3 & 0 \end{bmatrix}.
@@ -303,4 +303,4 @@ The expanded version is the one commonly used in applications. When the form has
 ^ex-50-5
 
 ![[m235-50-1.svg]]
-*Example §50.5. The feasible set (blue) is a quarter of the region inside the ellipse $4x^2 + 9y^2 = 36$. Utility increases across the indifference curves $xy = 2, 3, 4$; the best schedule is where the highest attainable one, $xy = 3$ (red), touches the constraint curve, at $(3/\sqrt2, \sqrt2) \approx (2.1, 1.4)$. That the two curves are tangent there is the Lagrange condition $\nabla(xy) \parallel \nabla(4x^2 + 9y^2)$.*
+*[[§50★ Constrained Optimization#^ex-50-5|Example §50.5]]. The feasible set (blue) is a quarter of the region inside the ellipse $4x^2 + 9y^2 = 36$. Utility increases across the indifference curves $xy = 2, 3, 4$; the best schedule is where the highest attainable one, $xy = 3$ (red), touches the constraint curve, at $(3/\sqrt2, \sqrt2) \approx (2.1, 1.4)$. That the two curves are tangent there is the Lagrange condition $\nabla(xy) \parallel \nabla(4x^2 + 9y^2)$.*

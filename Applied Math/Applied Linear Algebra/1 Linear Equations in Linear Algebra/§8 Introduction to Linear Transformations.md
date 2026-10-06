@@ -23,12 +23,19 @@ $$
 $$
 say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mathbf{b} = (5, 8)$ and transforms $\mathbf{u} = (1, 4, -1, 3)$ into the zero vector. Solving $A\mathbf{x} = \mathbf{b}$ amounts to finding all vectors $\mathbf{x}$ in $\mathbb{R}^4$ that are transformed into $\mathbf{b}$ in $\mathbb{R}^2$.
 
-> [!definition] Definition §8.1: Transformation, Domain, Codomain, Image, Range
-> A **transformation** (or **function** or **mapping**) $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a rule that assigns to each vector $\mathbf{x}$ in $\mathbb{R}^n$ a vector $T(\mathbf{x})$ in $\mathbb{R}^m$. The set $\mathbb{R}^n$ is the **domain** of $T$, and $\mathbb{R}^m$ is the **codomain** of $T$; the notation $T: \mathbb{R}^n \to \mathbb{R}^m$ records both. For $\mathbf{x}$ in $\mathbb{R}^n$, the vector $T(\mathbf{x})$ is the **image** of $\mathbf{x}$ (under the action of $T$). The set of all images $T(\mathbf{x})$ is the **range** of $T$. (The lecture calls the range the *image of $T$*, and describes $T$ as a vector-valued function on $\mathbb{R}^n$.)
+> [!definition] Definition §8.1: Transformation, Domain, Codomain
+> A **transformation** (or **function** or **mapping**) $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a rule that assigns to each vector $\mathbf{x}$ in $\mathbb{R}^n$ a vector $T(\mathbf{x})$ in $\mathbb{R}^m$. The set $\mathbb{R}^n$ is the **domain** of $T$, and $\mathbb{R}^m$ is the **codomain** of $T$; the notation $T: \mathbb{R}^n \to \mathbb{R}^m$ records both.
 >
 > *Lay: 1.8 (text)*
 
 ^def-8-1
+
+> [!definition] Definition §8.1: Image and Range
+> Let $T: \mathbb{R}^n \to \mathbb{R}^m$ be a transformation. For $\mathbf{x}$ in $\mathbb{R}^n$, the vector $T(\mathbf{x})$ is the **image** of $\mathbf{x}$ (under the action of $T$). The set of all images $T(\mathbf{x})$ is the **range** of $T$. (The lecture calls the range the *image of $T$*, and describes $T$ as a vector-valued function on $\mathbb{R}^n$.)
+>
+> *Lay: 1.8 (text)*
+
+^def-8-new1
 
 > [!remark]- Connections
 > - The general notions: function [[§8 Functions#^def-8-1|250 Def. §8.1]] and its image [[§8 Functions#^def-8-9|250 Def. §8.9]]; the range here is that image, and the codomain is the target set.
@@ -98,7 +105,7 @@ say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mat
 > \begin{bmatrix} 1 & -3 & 3 \\ 0 & 1 & -.5 \\ 0 & 0 & 10 \end{bmatrix} .
 > $$
 >
-> The third equation is $0 = 10$: no solution, so $\mathbf{c}$ is not in the range of $T$. The range is not all of $\mathbb{R}^3$; by Proposition §8.1 it is the plane spanned by the two columns of $A$.
+> The third equation is $0 = 10$: no solution, so $\mathbf{c}$ is not in the range of $T$. The range is not all of $\mathbb{R}^3$; by [[§8 Introduction to Linear Transformations#^prop-8-1|Proposition §8.1]] it is the plane spanned by the two columns of $A$.
 >
 > *Lay: Example 1.8.1*
 > *Source: 235 lecture L5*
@@ -127,7 +134,7 @@ say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mat
 ^ex-8-2
 
 ![[m235-8-1.svg]]
-*The shear of Example §8.2(b). Vertical grid lines (blue) are tilted, horizontal ones (red) slide to the right by three times their height; straight lines stay straight and parallel lines stay parallel.*
+*The shear of [[§8 Introduction to Linear Transformations#^ex-8-2|Example §8.2]](b). Vertical grid lines (blue) are tilted, horizontal ones (red) slide to the right by three times their height; straight lines stay straight and parallel lines stay parallel.*
 
 ## Linear Transformations
 
@@ -156,7 +163,7 @@ By [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]], $\mathbf{x} \mapst
 ^prop-8-2
 
 > [!proof]+ Proof
-> Properties (i) and (ii) of Definition §8.3 for $T(\mathbf{x}) = A\mathbf{x}$ are parts (a) and (b) of [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]].
+> Properties (i) and (ii) of [[§8 Introduction to Linear Transformations#^def-8-3|Definition §8.3]] for $T(\mathbf{x}) = A\mathbf{x}$ are parts (a) and (b) of [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]].
 
 ^pf-8-2
 
@@ -232,7 +239,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 ^ex-8-3
 
 > [!remark] Remark: Recognizing a Linear Transformation
-> In practice (lecture): $T: \mathbb{R}^n \to \mathbb{R}^m$, $T(\mathbf{x}) = \big(f_1(x_1, \ldots, x_n), \ldots, f_m(x_1, \ldots, x_n)\big)$, is linear if and only if each component $f_i$ is a linear function of the $x$'s with no constant term, $f_i = a_{i1}x_1 + \cdots + a_{in}x_n$ (so $f_i(0, \ldots, 0) = 0$). Then $T(\mathbf{x}) = A\mathbf{x}$ with $A = [a_{ij}]$. "If" is Proposition §8.2; "only if" follows from [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]]: a linear $T$ is $\mathbf{x} \mapsto A\mathbf{x}$, and the $i$th entry of $A\mathbf{x}$ is such a linear expression ([[§4 The Matrix Equation Ax = b#^prop-4-4|row–vector rule]]).
+> In practice (lecture): $T: \mathbb{R}^n \to \mathbb{R}^m$, $T(\mathbf{x}) = \big(f_1(x_1, \ldots, x_n), \ldots, f_m(x_1, \ldots, x_n)\big)$, is linear if and only if each component $f_i$ is a linear function of the $x$'s with no constant term, $f_i = a_{i1}x_1 + \cdots + a_{in}x_n$ (so $f_i(0, \ldots, 0) = 0$). Then $T(\mathbf{x}) = A\mathbf{x}$ with $A = [a_{ij}]$. "If" is [[§8 Introduction to Linear Transformations#^prop-8-2|Proposition §8.2]]; "only if" follows from [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]]: a linear $T$ is $\mathbf{x} \mapsto A\mathbf{x}$, and the $i$th entry of $A\mathbf{x}$ is such a linear expression ([[§4 The Matrix Equation Ax = b#^prop-4-4|row–vector rule]]).
 >
 > *Source: 235 lectures Feb-18 and L5*
 
@@ -279,7 +286,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 > T(\mathbf{p} + t\mathbf{v}) = T(\mathbf{p}) + tT(\mathbf{v}), \qquad t \in \mathbb{R},
 > $$
 >
-> which is the line through $T(\mathbf{p})$ in the direction $T(\mathbf{v})$ if $T(\mathbf{v}) \ne \mathbf{0}$, and the single point $T(\mathbf{p})$ if $T(\mathbf{v}) = \mathbf{0}$. Restricting to $0 \le t \le 1$: the segment from $\mathbf{p}$ to $\mathbf{p} + \mathbf{v}$ goes to the segment from $T(\mathbf{p})$ to $T(\mathbf{p}) + T(\mathbf{v})$ (or a point). In particular the segment from $\mathbf{0}$ to $\mathbf{u}$ goes to the segment from $\mathbf{0}$ to $T(\mathbf{u})$. (Lay leaves these facts to Exercises 25 and 27 and Practice Problem 3.) Parallel lines $\mathbf{p} + t\mathbf{v}$, $\mathbf{q} + t\mathbf{v}$ go to parallel lines (same direction $T(\mathbf{v})$), which is why a linear map turns a square grid into a grid of parallelograms (Figure above), while a nonlinear map such as the polar map of Example §8.3(d) bends it.
+> which is the line through $T(\mathbf{p})$ in the direction $T(\mathbf{v})$ if $T(\mathbf{v}) \ne \mathbf{0}$, and the single point $T(\mathbf{p})$ if $T(\mathbf{v}) = \mathbf{0}$. Restricting to $0 \le t \le 1$: the segment from $\mathbf{p}$ to $\mathbf{p} + \mathbf{v}$ goes to the segment from $T(\mathbf{p})$ to $T(\mathbf{p}) + T(\mathbf{v})$ (or a point). In particular the segment from $\mathbf{0}$ to $\mathbf{u}$ goes to the segment from $\mathbf{0}$ to $T(\mathbf{u})$. (Lay leaves these facts to Exercises 25 and 27 and Practice Problem 3.) Parallel lines $\mathbf{p} + t\mathbf{v}$, $\mathbf{q} + t\mathbf{v}$ go to parallel lines (same direction $T(\mathbf{v})$), which is why a linear map turns a square grid into a grid of parallelograms (Figure above), while a nonlinear map such as the polar map of [[§8 Introduction to Linear Transformations#^ex-8-3|Example §8.3]](d) bends it.
 >
 > The lecture states a converse: $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear if and only if it maps every straight line to a straight line or a point and $T(\mathbf{0}) = \mathbf{0}$. *As stated, the converse needs an extra hypothesis: $T(x_1, x_2) = (x_1^3, 0)$ maps every line onto the $x_1$-axis or onto a point and fixes $\mathbf{0}$, but is not linear. It becomes true for bijections ([[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]]) $T: \mathbb{R}^n \to \mathbb{R}^n$ with $n \ge 2$ (the fundamental theorem of affine geometry: such a map is $\mathbf{x} \mapsto A\mathbf{x} + \mathbf{b}$, and $T(\mathbf{0}) = \mathbf{0}$ forces $\mathbf{b} = \mathbf{0}$).*
 >

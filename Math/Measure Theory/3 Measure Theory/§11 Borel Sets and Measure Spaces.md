@@ -116,7 +116,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 
 > [!remark]- Connections
 > - Lebesgue measure $(\mathbb{R}^n, \mathcal{M}, m)$: [[§10 Lebesgue Measurable Sets#^def-10-5|Def. §10.5]] with [[Lebesgue Measurable Sets Form a σ-Algebra|Thm. §10.3]].
-> - New measures from integrals: [[§14 The Lebesgue Integral for Simple Functions#^def-14-3|Def. §14.3]]; $L^p$ over a general measure space: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]].
+> - New measures from integrals: [[§14a Consequences of the Monotone Convergence Theorem#^def-14-3|Def. §14.3]]; $L^p$ over a general measure space: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]].
 
 > [!example] Example §11.2: Examples of Measures
 > - **Counting measure:** $(X, \mathcal{P}(X), \mu)$ where $\mu(E) = |E|$ (the [[§10 Counting#^def-10-1|cardinality]], 250 Def. §10.1) if $E$ is finite, and $\mu(E) = \infty$ if $E$ is infinite.
@@ -244,15 +244,15 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > [!remark] Remark: The Borel Hierarchy and Measurability
 > The inclusion $\mathcal{B} \subseteq \mathcal{M}$ is extremely useful in practice: any set that can be constructed from open sets using countable unions, countable intersections, and complements is automatically Lebesgue measurable. This includes:
 > - All open and closed sets
-> - Countable intersections of open sets ($G_\delta$ sets, [[§11 Borel Sets and Measure Spaces#^def-11-8|Def. §11.8]])
+> - Countable intersections of open sets ($G_\delta$ sets, [[§11a Approximation and Continuity of Measure#^def-11-8|Def. §11.8]])
 > - Countable unions of closed sets ($F_\sigma$ sets)
 > - Any set built from these by iterating countable operations
 >
-> In particular, to show a set like the [[§11 Borel Sets and Measure Spaces#^def-11-13|Cantor set]] is measurable, we need only observe that it is closed (hence Borel) — no direct verification of the Carathéodory condition is required.
+> In particular, to show a set like the [[§11b The Vitali Set and the Cantor Set#^def-11-13|Cantor set]] is measurable, we need only observe that it is closed (hence Borel) — no direct verification of the Carathéodory condition is required.
 >
 > This raises natural questions:
 > 1. **Is $\mathcal{B} = \mathcal{M}$?** No — there exist Lebesgue measurable sets that are not Borel. (The proof requires more advanced tools.)
-> 2. **Is every subset of $\mathbb{R}^n$ measurable?** No — we will construct the [[§11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]], which is [[The Vitali Set is Not Measurable|not]] in $\mathcal{M}$. Such sets cannot be built from open sets by countable operations; their construction requires the Axiom of Choice.
+> 2. **Is every subset of $\mathbb{R}^n$ measurable?** No — we will construct the [[§11b The Vitali Set and the Cantor Set#^def-11-12|Vitali set]], which is [[The Vitali Set is Not Measurable|not]] in $\mathcal{M}$. Such sets cannot be built from open sets by countable operations; their construction requires the Axiom of Choice.
 > 3. **How close are measurable sets to Borel sets?** Very close! The approximation theorems below ([[Outer Regularity of Lebesgue Measure|Thm. §11.8]], [[Inner Regularity of Lebesgue Measure|Thm. §11.10]]) show that every measurable set differs from a Borel set ($G_\delta$ or $F_\sigma$) by a set of measure zero.
 
 ^rem-11-2

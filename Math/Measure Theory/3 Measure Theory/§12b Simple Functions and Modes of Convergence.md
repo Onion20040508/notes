@@ -121,14 +121,14 @@ The following theorem shows that every non-negative measurable function can be a
 
 ^pf-12-14
 
-*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§12 Measurable Functions#^def-12-3|Def. §12.3]], [[§12 Measurable Functions#^prop-12-1|§12.1]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[§12 Measurable Functions#^def-12-6|Def. §12.6]]
+*Uses:* [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§12 Measurable Functions#^def-12-3|Def. §12.3]], [[§12 Measurable Functions#^prop-12-1|§12.1]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[§12b Simple Functions and Modes of Convergence#^def-12-6|Def. §12.6]]
 
 ![[m551-12-3.svg]]
-*The staircase of Theorem §12.14. $\varphi_2$ (orange, shaded) rounds $f$ (blue) down to the grid of step $\tfrac12$ (gray lines) and is capped at $2$ on $E_2 = \{f \geq 2\}$; $\varphi_3$ (red) uses step $\tfrac14$ and cap $3$. Each step sits over a level set $E_{kj}$, so it is the range that gets partitioned. Halving the step can only raise a value, so $\varphi_2 \leq \varphi_3 \leq f$, and $f - \varphi_k < 2^{-(k-1)}$ wherever $f < k$.*
+*The staircase of [[§12b Simple Functions and Modes of Convergence#^thm-12-14|Theorem §12.14]]. $\varphi_2$ (orange, shaded) rounds $f$ (blue) down to the grid of step $\tfrac12$ (gray lines) and is capped at $2$ on $E_2 = \{f \geq 2\}$; $\varphi_3$ (red) uses step $\tfrac14$ and cap $3$. Each step sits over a level set $E_{kj}$, so it is the range that gets partitioned. Halving the step can only raise a value, so $\varphi_2 \leq \varphi_3 \leq f$, and $f - \varphi_k < 2^{-(k-1)}$ wherever $f < k$.*
 
 > [!remark]- Connections
 > - Partitions the *range* of $f$, where Darboux sums partition the *domain*: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[§32 The Definition of the Riemann Integral|451 §32]].
-> - With the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|linearity of the integral]].
+> - With the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|linearity of the integral]].
 
 > [!theorem] Theorem §12.15: Approximation by Simple Functions: General Case
 > Let $f: E \to \overline{\mathbb{R}}$ be a measurable function. Then there exists a sequence of measurable simple functions $\{\psi_k\}_{k \geq 1}$ such that:
@@ -138,7 +138,7 @@ The following theorem shows that every non-negative measurable function can be a
 ^thm-12-15
 
 > [!proof]+ Proof
-> Write $f = f^+ - f^-$, where $f^+, f^- \geq 0$ are [[§12 Measurable Functions#^prop-12-11|measurable]].
+> Write $f = f^+ - f^-$, where $f^+, f^- \geq 0$ are [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-11|measurable]].
 >
 > By [[Simple Function Approximation Theorem|the previous theorem]], there exist increasing sequences of non-negative simple functions $\{\varphi_k^{(1)}\}$ and $\{\varphi_k^{(2)}\}$ with
 >
@@ -147,13 +147,13 @@ The following theorem shows that every non-negative measurable function can be a
 > $$
 >
 > Define $\psi_k(x) = \varphi_k^{(1)}(x) - \varphi_k^{(2)}(x)$. Then:
-> - $\psi_k$ is simple ([[§12 Measurable Functions#^rem-12-6|the difference of two simple functions is simple]]).
+> - $\psi_k$ is simple ([[§12b Simple Functions and Modes of Convergence#^rem-12-6|the difference of two simple functions is simple]]).
 > - $\psi_k(x) \to f^+(x) - f^-(x) = f(x)$ for all $x \in E$.
 > - $|\psi_k(x)| \leq \varphi_k^{(1)}(x) + \varphi_k^{(2)}(x) \leq f^+(x) + f^-(x) = |f(x)|$.
 
 ^pf-12-15
 
-*Uses:* [[§12 Measurable Functions#^prop-12-11|§12.11]], [[Simple Function Approximation Theorem|§12.14]], [[§12 Measurable Functions#^prop-12-10|§12.10]], [[§12 Measurable Functions#^rem-12-6|Rem. §12.6]]
+*Uses:* [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-11|§12.11]], [[Simple Function Approximation Theorem|§12.14]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|§12.10]], [[§12b Simple Functions and Modes of Convergence#^rem-12-6|Rem. §12.6]]
 
 > [!remark] Remark
 > The difference of two simple functions is simple: if $\varphi = \sum a_i \chi_{A_i}$ and $\psi = \sum b_j \chi_{B_j}$, then $\varphi - \psi$ takes only finitely many values (at most $|\{a_i\}| \cdot |\{b_j\}|$ distinct values).
@@ -161,7 +161,7 @@ The following theorem shows that every non-negative measurable function can be a
 ^rem-12-6
 
 > [!remark]- Connections
-> - Used for density of simple functions: [[§16 The L¹ Space and Density Theorems#^thm-16-5|in L¹ (Theorem §16.5)]] and [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|in Lᵖ (Theorem §19.19)]].
+> - Used for density of simple functions: [[§16 The L¹ Space and Density Theorems#^thm-16-5|in L¹ (Theorem §16.5)]] and [[§19a Lᵖ as a Banach Space#^thm-19-19|in Lᵖ (Theorem §19.19)]].
 
 ## Modes of Convergence
 
@@ -231,7 +231,7 @@ The following theorem shows that every non-negative measurable function can be a
 > - Used in Step 2 of [[Lusin's Theorem|Lusin's Theorem]].
 
 > [!remark] Remark: A.e. Convergence Preserves Measurability
-> If $\{f_k\}$ is a sequence of measurable functions on $E$ and $f_k \to f$ a.e. on $E$, then $f$ is measurable. (This follows from the fact that [[§12 Measurable Functions#^cor-12-8|pointwise limits of measurable functions are measurable]], combined with the proposition that [[§12 Measurable Functions#^prop-12-12|functions equal a.e. to measurable functions are measurable]].)
+> If $\{f_k\}$ is a sequence of measurable functions on $E$ and $f_k \to f$ a.e. on $E$, then $f$ is measurable. (This follows from the fact that [[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|pointwise limits of measurable functions are measurable]], combined with the proposition that [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-12|functions equal a.e. to measurable functions are measurable]].)
 
 ^rem-12-7
 
@@ -269,7 +269,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 ^pf-12-17
 
-*Uses:* [[Simple Function Approximation Theorem|§12.14]], [[§12 Measurable Functions#^thm-12-15|§12.15]], [[§12 Measurable Functions#^prop-12-10|§12.10]], [[§12 Measurable Functions#^prop-12-11|§12.11]], [[§12 Measurable Functions#^def-12-9|Def. §12.9]], [[§24 Uniform Convergence#^thm-24-1|451 §24.1]]
+*Uses:* [[Simple Function Approximation Theorem|§12.14]], [[§12b Simple Functions and Modes of Convergence#^thm-12-15|§12.15]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-10|§12.10]], [[§12a Limits and Positive Parts of Measurable Functions#^prop-12-11|§12.11]], [[§12b Simple Functions and Modes of Convergence#^def-12-9|Def. §12.9]], [[§24 Uniform Convergence#^thm-24-1|451 §24.1]]
 
 > [!remark]- Connections
 > - Used in Step 2 of [[Lusin's Theorem|Lusin's Theorem]].
@@ -319,7 +319,7 @@ The following characterization translates the $\epsilon$-$N$ definition of conve
 > E \setminus C = \bigcup_{j=1}^{\infty} \bigcap_{\ell=1}^{\infty} \bigcup_{k=\ell}^{\infty} \left\{ x \in E : |f_k(x) - f(x)| \geq \frac{1}{j} \right\}.
 > $$
 >
-> The statement “$f_k \to f$ [[§12 Measurable Functions#^def-12-new1|a.e.]] on $E$” is equivalent to $m(E \setminus C) = 0$.
+> The statement “$f_k \to f$ [[§12b Simple Functions and Modes of Convergence#^def-12-new1|a.e.]] on $E$” is equivalent to $m(E \setminus C) = 0$.
 
 ^def-12-new2
 

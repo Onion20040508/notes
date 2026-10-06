@@ -51,7 +51,7 @@ The columns of the $n \times n$ identity matrix $I_n$ are the **standard basis v
 > - Rigorous treatment: a linear map is determined by its values on a basis, which may be prescribed freely, [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]; the standard matrix is Axler's $\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-31|LADR 3.31]]) for the standard bases. Axler allows any bases of any finite-dimensional $V$ and $W$, which Lay reaches in [[§35 Eigenvectors and Linear Transformations#^def-35-1|Definition §35.1]].
 
 > [!definition] Definition §9.1: Standard Matrix
-> The matrix $A = [\,T(\mathbf{e}_1)\ \cdots\ T(\mathbf{e}_n)\,]$ of Theorem §9.1 is the **standard matrix for the linear transformation $T$**.
+> The matrix $A = [\,T(\mathbf{e}_1)\ \cdots\ T(\mathbf{e}_n)\,]$ of [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]] is the **standard matrix for the linear transformation $T$**.
 >
 > *Lay: 1.9 (text)*
 
@@ -92,7 +92,7 @@ So every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix
 > T(\mathbf{e}_2) = \begin{bmatrix} \cos(\varphi + \tfrac{\pi}{2}) \\ \sin(\varphi + \tfrac{\pi}{2}) \end{bmatrix} = \begin{bmatrix} -\sin\varphi \\ \cos\varphi \end{bmatrix} .
 > $$
 >
-> By Theorem §9.1,
+> By [[§9 The Matrix of a Linear Transformation#^thm-9-1|Theorem §9.1]],
 >
 > $$
 > A = \begin{bmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{bmatrix} .
@@ -106,7 +106,7 @@ So every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix
 ^ex-9-2
 
 ![[m235-9-1.svg]]
-*The rotation of Example §9.2(b): $\mathbf{e}_1$ and $\mathbf{e}_2$ (blue) turn through $\varphi$ into the columns of the standard matrix (red), and the unit square turns with them.*
+*The rotation of [[§9 The Matrix of a Linear Transformation#^ex-9-2|Example §9.2]](b): $\mathbf{e}_1$ and $\mathbf{e}_2$ (blue) turn through $\varphi$ into the columns of the standard matrix (red), and the unit square turns with them.*
 
 ## Geometric Linear Transformations of ℝ²
 
@@ -208,7 +208,7 @@ The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the r
 *Uses:* [[§8 Introduction to Linear Transformations#^prop-8-3|§8.3]], [[§9 The Matrix of a Linear Transformation#^def-9-3|Def. §9.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Examples §9.4 and §9.5 ($\mathbb{R}^4 \to \mathbb{R}^3$ is never one-to-one, $\mathbb{R}^2 \to \mathbb{R}^3$ never onto) are [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]] and [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]], respectively.
+> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Examples [[§9 The Matrix of a Linear Transformation#^ex-9-4|§9.4]] and [[§9 The Matrix of a Linear Transformation#^ex-9-5|§9.5]] ($\mathbb{R}^4 \to \mathbb{R}^3$ is never one-to-one, $\mathbb{R}^2 \to \mathbb{R}^3$ never onto) are [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]] and [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]], respectively.
 
 > [!theorem] Theorem §9.3: Onto and One-to-One via the Standard Matrix
 > Let $T: \mathbb{R}^n \to \mathbb{R}^m$ be a linear transformation, and let $A$ be the standard matrix for $T$. Then:
@@ -226,7 +226,7 @@ The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the r
 >
 > **(a)** By [[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]], the columns of $A$ span $\mathbb{R}^m$ if and only if $A\mathbf{x} = \mathbf{b}$ is consistent for each $\mathbf{b}$ in $\mathbb{R}^m$, that is, if and only if $T(\mathbf{x}) = \mathbf{b}$ has at least one solution for every $\mathbf{b}$. This is true if and only if $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^m$.
 >
-> **(b)** The equations $T(\mathbf{x}) = \mathbf{0}$ and $A\mathbf{x} = \mathbf{0}$ are the same except for notation. By Theorem §9.2, $T$ is one-to-one if and only if $A\mathbf{x} = \mathbf{0}$ has only the trivial solution, which happens if and only if the columns of $A$ are linearly independent ([[§7 Linear Independence#^prop-7-1|Proposition §7.1]]).
+> **(b)** The equations $T(\mathbf{x}) = \mathbf{0}$ and $A\mathbf{x} = \mathbf{0}$ are the same except for notation. By [[§9 The Matrix of a Linear Transformation#^thm-9-2|Theorem §9.2]], $T$ is one-to-one if and only if $A\mathbf{x} = \mathbf{0}$ has only the trivial solution, which happens if and only if the columns of $A$ are linearly independent ([[§7 Linear Independence#^prop-7-1|Proposition §7.1]]).
 
 ^pf-9-3
 
@@ -243,7 +243,7 @@ In pivot terms: $T$ is onto iff $A$ has a pivot in every row, and one-to-one iff
 > T(\mathbf{x}) = \begin{bmatrix} 3x_1 + x_2 \\ 5x_1 + 7x_2 \\ x_1 + 3x_2 \end{bmatrix} = \begin{bmatrix} 3 & 1 \\ 5 & 7 \\ 1 & 3 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = A\mathbf{x},
 > $$
 >
-> so $T$ is linear with standard matrix $A$. The two columns $\mathbf{a}_1 = (3, 5, 1)$ and $\mathbf{a}_2 = (1, 7, 3)$ are not multiples of each other (the ratios of corresponding entries, $1/3$ and $7/5$, differ), so they are linearly independent, and $T$ is one-to-one by Theorem §9.3(b). But $A$ is $3 \times 2$: it has at most 2 pivots, never 3, so its columns cannot span $\mathbb{R}^3$ ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]]), and $T$ is not onto $\mathbb{R}^3$. Its range is the plane $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2\}$.
+> so $T$ is linear with standard matrix $A$. The two columns $\mathbf{a}_1 = (3, 5, 1)$ and $\mathbf{a}_2 = (1, 7, 3)$ are not multiples of each other (the ratios of corresponding entries, $1/3$ and $7/5$, differ), so they are linearly independent, and $T$ is one-to-one by [[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]](b). But $A$ is $3 \times 2$: it has at most 2 pivots, never 3, so its columns cannot span $\mathbb{R}^3$ ([[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]]), and $T$ is not onto $\mathbb{R}^3$. Its range is the plane $\operatorname{Span}\{\mathbf{a}_1, \mathbf{a}_2\}$.
 >
 > **(b)** Suppose $A$ is a $7 \times 5$ matrix with 5 pivots, and $T(\mathbf{x}) = A\mathbf{x}$. Every one of the 5 columns has a pivot, so $A\mathbf{x} = \mathbf{0}$ has no free variable and $T$ is one-to-one. Only 5 of the 7 rows have pivots, so $T$ is not onto $\mathbb{R}^7$.
 >

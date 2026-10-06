@@ -28,7 +28,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 > c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_p\mathbf{v}_p = \mathbf{0} ; \qquad (2)
 > $$
 >
-> equation (2), with weights not all zero, is a **linear dependence relation** among $\mathbf{v}_1, \ldots, \mathbf{v}_p$. A set is linearly dependent if and only if it is not linearly independent. For brevity, "$\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly dependent" means that $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is a linearly dependent set, and likewise for independent. (The lecture's form: $\mathbf{v}_1, \ldots, \mathbf{v}_m$ are linearly dependent if $A\mathbf{x} = \mathbf{0}$, $A = [\,\mathbf{v}_1\ \cdots\ \mathbf{v}_m\,]$, has a solution $\mathbf{x} \ne \mathbf{0}$; see Proposition §7.1.)
+> equation (2), with weights not all zero, is a **linear dependence relation** among $\mathbf{v}_1, \ldots, \mathbf{v}_p$. A set is linearly dependent if and only if it is not linearly independent. For brevity, "$\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly dependent" means that $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is a linearly dependent set, and likewise for independent. (The lecture's form: $\mathbf{v}_1, \ldots, \mathbf{v}_m$ are linearly dependent if $A\mathbf{x} = \mathbf{0}$, $A = [\,\mathbf{v}_1\ \cdots\ \mathbf{v}_m\,]$, has a solution $\mathbf{x} \ne \mathbf{0}$; see [[§7 Linear Independence#^prop-7-1|Proposition §7.1]].)
 >
 > *Lay: 1.7, Definition*
 
@@ -46,7 +46,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 ^prop-7-1
 
 > [!proof]+ Proof
-> If $A = [\,\mathbf{a}_1\ \cdots\ \mathbf{a}_n\,]$, then $A\mathbf{x} = x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n$ ([[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]]). So the solutions of $A\mathbf{x} = \mathbf{0}$ are exactly the lists of weights $(x_1, \ldots, x_n)$ with $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = \mathbf{0}$; each linear dependence relation among the columns is a nontrivial solution and conversely. Now apply Definition §7.1.
+> If $A = [\,\mathbf{a}_1\ \cdots\ \mathbf{a}_n\,]$, then $A\mathbf{x} = x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n$ ([[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]]). So the solutions of $A\mathbf{x} = \mathbf{0}$ are exactly the lists of weights $(x_1, \ldots, x_n)$ with $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = \mathbf{0}$; each linear dependence relation among the columns is a nontrivial solution and conversely. Now apply [[§7 Linear Independence#^def-7-1|Definition §7.1]].
 
 ^pf-7-1
 
@@ -79,7 +79,7 @@ By [[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]], the test is
 > 10\mathbf{v}_1 - 5\mathbf{v}_2 + 5\mathbf{v}_3 = \mathbf{0}
 > $$
 >
-> (one of infinitely many; $x_3 = 1$ gives $\mathbf{v}_2 = 2\mathbf{v}_1 + \mathbf{v}_3$). **Check:** $2(1, 2, 3) + (2, 1, 0) = (4, 5, 6)$. As the lecture concludes, $\mathbf{v}_3$ is redundant: $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\} = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is a plane (Proposition §7.5).
+> (one of infinitely many; $x_3 = 1$ gives $\mathbf{v}_2 = 2\mathbf{v}_1 + \mathbf{v}_3$). **Check:** $2(1, 2, 3) + (2, 1, 0) = (4, 5, 6)$. As the lecture concludes, $\mathbf{v}_3$ is redundant: $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\} = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is a plane ([[§7 Linear Independence#^prop-7-5|Proposition §7.5]]).
 >
 > **(b)** Are the columns of $A = \begin{bmatrix} 0 & 1 & 4 \\ 1 & 2 & -1 \\ 5 & 8 & 0 \end{bmatrix}$ linearly independent? Interchange rows 1 and 2, then $R_3 - 5R_1$, then $R_3 + 2R_2$:
 >
@@ -148,7 +148,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 > c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_p\mathbf{v}_p = \mathbf{0} .
 > $$
 >
-> Let $j$ be the largest subscript for which $c_j \ne 0$. If $j = 1$, then $c_1\mathbf{v}_1 = \mathbf{0}$ with $c_1 \ne 0$, which is impossible because $\mathbf{v}_1 \ne \mathbf{0}$ (Proposition §7.2). So $j > 1$, and
+> Let $j$ be the largest subscript for which $c_j \ne 0$. If $j = 1$, then $c_1\mathbf{v}_1 = \mathbf{0}$ with $c_1 \ne 0$, which is impossible because $\mathbf{v}_1 \ne \mathbf{0}$ ([[§7 Linear Independence#^prop-7-2|Proposition §7.2]]). So $j > 1$, and
 >
 > $$
 > c_1\mathbf{v}_1 + \cdots + c_j\mathbf{v}_j + 0\mathbf{v}_{j+1} + \cdots + 0\mathbf{v}_p = \mathbf{0}, \qquad
@@ -166,10 +166,10 @@ So for two vectors no row operations are needed: check by inspection whether one
 *Uses:* [[§7 Linear Independence#^def-7-1|Def. §7.1]], [[§7 Linear Independence#^prop-7-2|§7.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: the linear dependence lemma, [[§4 Span and Linear Independence#^ladr-2-19|LADR 2.19]], with the same "largest index with nonzero weight" proof; Axler adds that removing such a $\mathbf{v}_j$ does not change the span (Proposition §7.5 below), the step behind every "a spanning list contains a basis" argument.
+> - Rigorous treatment: the linear dependence lemma, [[§4 Span and Linear Independence#^ladr-2-19|LADR 2.19]], with the same "largest index with nonzero weight" proof; Axler adds that removing such a $\mathbf{v}_j$ does not change the span ([[§7 Linear Independence#^prop-7-5|Proposition §7.5]] below), the step behind every "a spanning list contains a basis" argument.
 
 > [!remark] Remark: Warning
-> Theorem §7.4 does *not* say that *every* vector in a linearly dependent set is a linear combination of the preceding (or of the other) vectors. For example, $\{(1, 0, 0), (2, 0, 0), (0, 0, 1)\}$ is dependent, but $(0, 0, 1)$ is not a combination of the other two.
+> [[§7 Linear Independence#^thm-7-4|Theorem §7.4]] does *not* say that *every* vector in a linearly dependent set is a linear combination of the preceding (or of the other) vectors. For example, $\{(1, 0, 0), (2, 0, 0), (0, 0, 1)\}$ is dependent, but $(0, 0, 1)$ is not a combination of the other two.
 
 ^rem-7-1
 
@@ -180,7 +180,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 > \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_m\} = \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_{j-1}, \mathbf{v}_{j+1}, \ldots, \mathbf{v}_m\} .
 > $$
 >
-> By Theorem §7.4, a set of two or more vectors is linearly dependent exactly when it contains a redundant vector. So a linearly dependent set has too many vectors for a parametric description of its span.
+> By [[§7 Linear Independence#^thm-7-4|Theorem §7.4]], a set of two or more vectors is linearly dependent exactly when it contains a redundant vector. So a linearly dependent set has too many vectors for a parametric description of its span.
 >
 > *Source: 235 lecture Feb-18*
 
@@ -220,7 +220,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 > -13\mathbf{v}_1 - 5\mathbf{v}_2 + 7\mathbf{v}_3 = \mathbf{0} .
 > $$
 >
-> **Check:** first entries $-13 - 15 + 28 = 0$; second $52 - 10 - 42 = 0$; third $39 + 10 - 49 = 0$. All three weights are nonzero, so *each* vector is a combination of the other two and is redundant. By Proposition §7.5,
+> **Check:** first entries $-13 - 15 + 28 = 0$; second $52 - 10 - 42 = 0$; third $39 + 10 - 49 = 0$. All three weights are nonzero, so *each* vector is a combination of the other two and is redundant. By [[§7 Linear Independence#^prop-7-5|Proposition §7.5]],
 >
 > $$
 > \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\} = \operatorname{Span}\{\mathbf{v}_2, \mathbf{v}_3\} = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_3\} = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\} .
@@ -235,18 +235,18 @@ So for two vectors no row operations are needed: check by inspection whether one
 ^ex-7-2
 
 > [!example] Example §7.3: Two Vectors, and a Third in Their Plane
-> **(a)** $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: $\mathbf{v}_2 = 2\mathbf{v}_1$, so $-2\mathbf{v}_1 + \mathbf{v}_2 = \mathbf{0}$ and the set is dependent. $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: neither is a multiple of the other ($6/3 \ne 2/2$), so the set is independent (Proposition §7.3).
+> **(a)** $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: $\mathbf{v}_2 = 2\mathbf{v}_1$, so $-2\mathbf{v}_1 + \mathbf{v}_2 = \mathbf{0}$ and the set is dependent. $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: neither is a multiple of the other ($6/3 \ne 2/2$), so the set is independent ([[§7 Linear Independence#^prop-7-3|Proposition §7.3]]).
 >
 > **(b)** Let $\mathbf{u} = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 1 \\ 6 \\ 0 \end{bmatrix}$. Describe $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$, and explain why $\mathbf{w}$ is in $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ if and only if $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is linearly dependent.
 >
-> Neither of $\mathbf{u}$, $\mathbf{v}$ is a multiple of the other, so they are independent and span a plane in $\mathbb{R}^3$: the $x_1x_2$-plane ($x_3 = 0$), since both have third entry $0$ and any $(a, b, 0)$ is a combination of them. If $\mathbf{w}$ is a combination of $\mathbf{u}$ and $\mathbf{v}$, then $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent by Theorem §7.4. Conversely, if $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent, then since $\mathbf{u} \ne \mathbf{0}$, Theorem §7.4 makes some vector a combination of the *preceding* ones. It is not $\mathbf{v}$ (not a multiple of $\mathbf{u}$), so it is $\mathbf{w}$, and $\mathbf{w}$ lies in $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$. The same holds for any $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ in $\mathbb{R}^3$ with $\mathbf{u}$, $\mathbf{v}$ independent: the set is dependent if and only if $\mathbf{w}$ lies in the plane spanned by $\mathbf{u}$ and $\mathbf{v}$.
+> Neither of $\mathbf{u}$, $\mathbf{v}$ is a multiple of the other, so they are independent and span a plane in $\mathbb{R}^3$: the $x_1x_2$-plane ($x_3 = 0$), since both have third entry $0$ and any $(a, b, 0)$ is a combination of them. If $\mathbf{w}$ is a combination of $\mathbf{u}$ and $\mathbf{v}$, then $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent by [[§7 Linear Independence#^thm-7-4|Theorem §7.4]]. Conversely, if $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent, then since $\mathbf{u} \ne \mathbf{0}$, [[§7 Linear Independence#^thm-7-4|Theorem §7.4]] makes some vector a combination of the *preceding* ones. It is not $\mathbf{v}$ (not a multiple of $\mathbf{u}$), so it is $\mathbf{w}$, and $\mathbf{w}$ lies in $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$. The same holds for any $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ in $\mathbb{R}^3$ with $\mathbf{u}$, $\mathbf{v}$ independent: the set is dependent if and only if $\mathbf{w}$ lies in the plane spanned by $\mathbf{u}$ and $\mathbf{v}$.
 >
 > *Lay: Examples 1.7.3 and 1.7.4*
 
 ^ex-7-3
 
 ![[m235-7-1.svg]]
-*Example §7.3(b): $\mathbf{u}$ and $\mathbf{v}$ span the $x_1x_2$-plane. If $\mathbf{w}$ lies in that plane, $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent (left); if $\mathbf{w}$ leaves the plane, the set is independent (right).*
+*[[§7 Linear Independence#^ex-7-3|Example §7.3]](b): $\mathbf{u}$ and $\mathbf{v}$ span the $x_1x_2$-plane. If $\mathbf{w}$ lies in that plane, $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent (left); if $\mathbf{w}$ leaves the plane, the set is independent (right).*
 
 ## Automatic Dependence
 
@@ -258,7 +258,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 ^thm-7-6
 
 > [!proof]+ Proof
-> Let $A = [\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\,]$. Then $A$ is $n \times p$, and $A\mathbf{x} = \mathbf{0}$ is a system of $n$ equations in $p$ unknowns. At most one pivot fits in each row, so there are at most $n$ pivot columns; if $p > n$, there are more variables than equations, and some variable is free. Hence $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution ([[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]]), and the columns of $A$ are linearly dependent (Proposition §7.1). In matrix form: a wide $n \times p$ matrix ($p > n$) always has dependent columns.
+> Let $A = [\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\,]$. Then $A$ is $n \times p$, and $A\mathbf{x} = \mathbf{0}$ is a system of $n$ equations in $p$ unknowns. At most one pivot fits in each row, so there are at most $n$ pivot columns; if $p > n$, there are more variables than equations, and some variable is free. Hence $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution ([[§5 Solution Sets of Linear Systems#^cor-5-1|Corollary §5.1]]), and the columns of $A$ are linearly dependent ([[§7 Linear Independence#^prop-7-1|Proposition §7.1]]). In matrix form: a wide $n \times p$ matrix ($p > n$) always has dependent columns.
 
 ^pf-7-6
 
@@ -267,7 +267,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 > [!remark]- Connections
 > - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]] (an independent list is never longer than a spanning list), applied with the spanning list $\mathbf{e}_1, \ldots, \mathbf{e}_n$ of $\mathbb{R}^n$ ([[§4 Span and Linear Independence#^ladr-2-23|LADR 2.23]]); Axler proves it by exchanging vectors, Lay by counting pivots. Equivalent form for homogeneous systems: [[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]].
 
-*Warning:* Theorem §7.6 says nothing when the number of vectors does *not* exceed the number of entries.
+*Warning:* [[§7 Linear Independence#^thm-7-6|Theorem §7.6]] says nothing when the number of vectors does *not* exceed the number of entries.
 
 > [!theorem] Theorem §7.7: A Set Containing Zero Is Dependent
 > If a set $S = \{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ in $\mathbb{R}^n$ contains the zero vector, then the set is linearly dependent.
@@ -284,13 +284,13 @@ So for two vectors no row operations are needed: check by inspection whether one
 *Uses:* [[§7 Linear Independence#^def-7-1|Def. §7.1]]
 
 > [!example] Example §7.4: Deciding by Inspection
-> **(a)** $\begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 4 \\ -1 \end{bmatrix}, \begin{bmatrix} -2 \\ 2 \end{bmatrix}$ are dependent by Theorem §7.6 (three vectors with two entries each), although none of them is a multiple of another.
+> **(a)** $\begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 4 \\ -1 \end{bmatrix}, \begin{bmatrix} -2 \\ 2 \end{bmatrix}$ are dependent by [[§7 Linear Independence#^thm-7-6|Theorem §7.6]] (three vectors with two entries each), although none of them is a multiple of another.
 >
-> **(b)** $\begin{bmatrix} 1 \\ 7 \\ 6 \end{bmatrix}, \begin{bmatrix} 2 \\ 0 \\ 9 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \\ 5 \end{bmatrix}, \begin{bmatrix} 4 \\ 1 \\ 8 \end{bmatrix}$: four vectors in $\mathbb{R}^3$, dependent by Theorem §7.6.
+> **(b)** $\begin{bmatrix} 1 \\ 7 \\ 6 \end{bmatrix}, \begin{bmatrix} 2 \\ 0 \\ 9 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \\ 5 \end{bmatrix}, \begin{bmatrix} 4 \\ 1 \\ 8 \end{bmatrix}$: four vectors in $\mathbb{R}^3$, dependent by [[§7 Linear Independence#^thm-7-6|Theorem §7.6]].
 >
-> **(c)** $\begin{bmatrix} 2 \\ 3 \\ 5 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\ 8 \end{bmatrix}$: Theorem §7.6 does not apply, but the set contains $\mathbf{0}$, so it is dependent by Theorem §7.7.
+> **(c)** $\begin{bmatrix} 2 \\ 3 \\ 5 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\ 8 \end{bmatrix}$: [[§7 Linear Independence#^thm-7-6|Theorem §7.6]] does not apply, but the set contains $\mathbf{0}$, so it is dependent by [[§7 Linear Independence#^thm-7-7|Theorem §7.7]].
 >
-> **(d)** $\begin{bmatrix} -2 \\ 4 \\ 6 \\ 10 \end{bmatrix}, \begin{bmatrix} 3 \\ -6 \\ -9 \\ 15 \end{bmatrix}$: the second vector looks like $-\tfrac32$ times the first, and this holds for the first three pairs of entries ($3, -6, -9$), but $-\tfrac32 \cdot 10 = -15 \ne 15$. Neither vector is a multiple of the other, so the set is independent (Proposition §7.3).
+> **(d)** $\begin{bmatrix} -2 \\ 4 \\ 6 \\ 10 \end{bmatrix}, \begin{bmatrix} 3 \\ -6 \\ -9 \\ 15 \end{bmatrix}$: the second vector looks like $-\tfrac32$ times the first, and this holds for the first three pairs of entries ($3, -6, -9$), but $-\tfrac32 \cdot 10 = -15 \ne 15$. Neither vector is a multiple of the other, so the set is independent ([[§7 Linear Independence#^prop-7-3|Proposition §7.3]]).
 >
 > *Lay: Examples 1.7.5 and 1.7.6*
 

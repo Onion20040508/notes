@@ -14,8 +14,11 @@ tags: [multivariable-analysis, hub]
 - [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]]
 - [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1|Theorem §9.1: Derivatives of F(t)]]
 - [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-2|Theorem §9.2: Multivariable Taylor's Theorem]]
-- [[§14 Optimization and Lagrange Multipliers#^def-14-1|Definition §14.1: Local Maximum/Minimum]]
-- [[§14 Optimization and Lagrange Multipliers#^def-14-3|Definition §14.3: Positive/Negative Definite]]
+- [[§14 Optimization and Lagrange Multipliers#^def-14-1|Definition §14.1: Local Maximum]]
+- [[§14 Optimization and Lagrange Multipliers#^def-14-new1|Definition §14.1: Local Minimum]]
+- [[§14a Second-Order Sufficient Conditions#^def-14-3|Definition §14.3: Positive Definite]]
+- [[§14a Second-Order Sufficient Conditions#^def-14-new2|Definition §14.3: Negative Definite]]
+- [[§14a Second-Order Sufficient Conditions#^def-14-new3|Definition §14.3: Indefinite]]
 
 ## Its proof uses (other subjects)
 - [[Real spectral theorem]] (Linear Algebra)

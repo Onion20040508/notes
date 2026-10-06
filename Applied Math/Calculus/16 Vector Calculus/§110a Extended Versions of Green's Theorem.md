@@ -11,7 +11,7 @@ tags: [calculus, math233]
 
 *Stewart, Section 16.4 · MATH 233 (UMass, Spring 2023): Practice Final Exam (Q2), Chapter 16 Review (Q6(a)).*
 
-Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^thm-110-1|Theorem §110.1]]) to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in §109 (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
+Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^thm-110-1|Theorem §110.1]]) to regions with holes. That gives the standard calculation for fields with a singularity, such as $(-y\,\mathbf{i} + x\,\mathbf{j})/(x^2 + y^2)$, and the proof of the test for conservative fields announced in [[§109 The Fundamental Theorem for Line Integrals|§109]] (the converse of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]).
 
 ## Extended Versions of Green's Theorem
 
@@ -162,7 +162,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 
 ## Curl-Free Fields on Simply-Connected Regions
 
-Green's Theorem supplies the proof, promised in §109 after [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]], of the test for conservative vector fields in the plane.
+Green's Theorem supplies the proof, promised in [[§109 The Fundamental Theorem for Line Integrals|§109]] after [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]], of the test for conservative vector fields in the plane.
 
 > [!theorem] Theorem §110.5: Test for Conservative Fields
 > Let $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j}$ be a vector field on an open simply-connected region $D$. Suppose that $P$ and $Q$ have continuous first-order partial derivatives and

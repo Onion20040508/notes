@@ -22,7 +22,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 >
 > **Question**: Is $f \in BV([a, b])$ *sufficient* for ($\ast$)?
 >
-> **Answer**: **No.** The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] provides a counterexample.
+> **Answer**: **No.** The [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] provides a counterexample.
 
 ^rem-18-5
 
@@ -30,7 +30,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 > - ($*$) is FTC I of MATH 451 ([[Fundamental Theorem of Calculus|451 §34.1]]), which assumes $f$ continuous on $[a,b]$ and differentiable everywhere on $(a,b)$ with Riemann-integrable $f'$.
 
 > [!example] Example §18.4: The Cantor Function (Devil's Staircase)
-> The **Cantor set** $C \subseteq [0, 1]$ ([[§11 Borel Sets and Measure Spaces#^def-11-13|Def. §11.13]]) is obtained by repeatedly removing middle thirds: $C = \bigcap_{n=0}^{\infty} C_n$ where $C_0 = [0,1]$, $C_1 = [0, 1/3] \cup [2/3, 1]$, etc. The set $C$ is closed, uncountable, and has $m(C) = 0$ ([[§11 Borel Sets and Measure Spaces#^prop-11-21|§11.21]]).
+> The **Cantor set** $C \subseteq [0, 1]$ ([[§11b The Vitali Set and the Cantor Set#^def-11-13|Def. §11.13]]) is obtained by repeatedly removing middle thirds: $C = \bigcap_{n=0}^{\infty} C_n$ where $C_0 = [0,1]$, $C_1 = [0, 1/3] \cup [2/3, 1]$, etc. The set $C$ is closed, uncountable, and has $m(C) = 0$ ([[§11b The Vitali Set and the Cantor Set#^prop-11-21|§11.21]]).
 >
 > The **Cantor function** $\varphi: [0, 1] \to [0, 1]$ is defined via the ternary expansion: for $x \in C$, write $x = \sum_{i=1}^{\infty} 2a_i / 3^i$ (with $a_i \in \{0, 1\}$), and set $\varphi(x) = \sum_{i=1}^{\infty} a_i / 2^i$. Extend $\varphi$ to $[0, 1]$ by constancy on each removed interval. Then:
 >
@@ -49,11 +49,11 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^ex-18-4
 
 ![[m551-18-6.svg]]
-*The Cantor function $\varphi$ (blue). It is constant on every removed middle third (for example $\varphi = \frac12$ on $(\frac13, \frac23)$), so $\varphi' = 0$ off $C$. All of its growth happens over $C$: the second stage $C_2$ (red on the axis) consists of four intervals of total length $\frac49$, and over each of them $\varphi$ rises by $\frac14$ (red boxes), a total rise of $1$. At stage $n$ there are $2^n$ boxes of total width $(\frac23)^n \to 0$ and total height still $1$. This is the failure of absolute continuity in [[§18 Differentiation Theory#^rem-18-7|Rem. §18.7]].*
+*The Cantor function $\varphi$ (blue). It is constant on every removed middle third (for example $\varphi = \frac12$ on $(\frac13, \frac23)$), so $\varphi' = 0$ off $C$. All of its growth happens over $C$: the second stage $C_2$ (red on the axis) consists of four intervals of total length $\frac49$, and over each of them $\varphi$ rises by $\frac14$ (red boxes), a total rise of $1$. At stage $n$ there are $2^n$ boxes of total width $(\frac23)^n \to 0$ and total height still $1$. This is the failure of absolute continuity in [[§18c Absolute Continuity and the FTC#^rem-18-7|Rem. §18.7]].*
 
 > [!remark]- Connections
-> - The Cantor set in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Remark §13.5]]; in this course: [[§11 Borel Sets and Measure Spaces#^prop-11-21|Properties of the Cantor Set]] (§11.21).
-> - $\varphi \in BV$ by [[§18 Differentiation Theory#^ex-18-2|Ex. §18.2]]; it is the singular part in [[§18 Differentiation Theory#^thm-18-15|Lebesgue Decomposition]] (§18.15) and fails [[§18 Differentiation Theory#^thm-18-19|AC Functions Map Null Sets to Null Sets]] (§18.19).
+> - The Cantor set in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Remark §13.5]]; in this course: [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Properties of the Cantor Set]] ([[§11b The Vitali Set and the Cantor Set#^prop-11-21|§11.21]]).
+> - $\varphi \in BV$ by [[§18 Differentiation Theory#^ex-18-2|Ex. §18.2]]; it is the singular part in [[§18c Absolute Continuity and the FTC#^thm-18-15|Lebesgue Decomposition]] ([[§18c Absolute Continuity and the FTC#^thm-18-15|§18.15]]) and fails [[§18c Absolute Continuity and the FTC#^thm-18-19|AC Functions Map Null Sets to Null Sets]] ([[§18c Absolute Continuity and the FTC#^thm-18-19|§18.19]]).
 
 > [!remark] Remark
 > This shows that BV is not sufficient for the FTC. The missing condition is **absolute continuity**.
@@ -70,7 +70,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^def-18-4
 
 > [!remark]- Connections
-> - The function-level version of [[§16 The L¹ Space and Density Theorems#^thm-16-1|Absolute Continuity of the Integral]] (§16.1); [[§18 Differentiation Theory#^thm-18-12|Theorem §18.12]] makes the link.
+> - The function-level version of [[§16 The L¹ Space and Density Theorems#^thm-16-1|Absolute Continuity of the Integral]] ([[§16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]]); [[§18c Absolute Continuity and the FTC#^thm-18-12|Theorem §18.12]] makes the link.
 > - With $n = 1$ it is [[§19 Uniform Continuity#^def-19-1|uniform continuity]] (451 Def. §19.1).
 
 > [!remark] Remark: Comparison with Uniform Continuity
@@ -100,7 +100,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^prop-18-11
 
 > [!proof]+ Proof
-> **(i)** Taking $n = 1$ in the [[§18 Differentiation Theory#^def-18-4|AC definition]]: for every $\varepsilon > 0$, there exists $\delta > 0$ such that $|y - x| < \delta$ implies $|f(y) - f(x)| < \varepsilon$. This is exactly [[§19 Uniform Continuity#^def-19-1|uniform continuity]], which implies continuity.
+> **(i)** Taking $n = 1$ in the [[§18c Absolute Continuity and the FTC#^def-18-4|AC definition]]: for every $\varepsilon > 0$, there exists $\delta > 0$ such that $|y - x| < \delta$ implies $|f(y) - f(x)| < \varepsilon$. This is exactly [[§19 Uniform Continuity#^def-19-1|uniform continuity]], which implies continuity.
 >
 > **(ii)** Given $\varepsilon > 0$, choose $\delta_f, \delta_g > 0$ from the AC condition for $f$ and $g$ respectively (with $\varepsilon$ replaced by $\varepsilon/(2\max(|c_1|, 1))$ and $\varepsilon/(2\max(|c_2|, 1))$). Let $\delta = \min(\delta_f, \delta_g)$. For any disjoint intervals $(x_j, y_j) \subseteq (a, b)$ with $\sum (y_j - x_j) < \delta$:
 >
@@ -118,7 +118,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-11
 
-*Uses:* [[§18 Differentiation Theory#^def-18-4|Def. §18.4]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]]
+*Uses:* [[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]]
 
 > [!theorem] Theorem §18.12: The Integral Function is Absolutely Continuous
 > If $g \in L([a, b])$, then $G(x) = \int_a^x g(t)\,dt$ is in $AC([a, b])$.
@@ -134,7 +134,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-12
 
-*Uses:* [[§16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[§18 Differentiation Theory#^def-18-4|Def. §18.4]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]]
+*Uses:* [[§16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§15 The General Lebesgue Integral#^thm-15-4|§15.4]]
 
 > [!remark]- Connections
 > - MATH 451 counterpart: in FTC II ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) the integral function of a bounded integrable $f$ is uniformly continuous (in fact Lipschitz).
@@ -145,7 +145,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^thm-18-16
 
 > [!proof]+ Proof
-> Take $\varepsilon = 1$ in the [[§18 Differentiation Theory#^def-18-4|AC definition]]: there exists $\delta_0 > 0$ such that for any disjoint intervals $(x_j, y_j) \subseteq (a, b)$ with $\sum (y_j - x_j) < \delta_0$, we have $\sum |f(y_j) - f(x_j)| \leq 1$.
+> Take $\varepsilon = 1$ in the [[§18c Absolute Continuity and the FTC#^def-18-4|AC definition]]: there exists $\delta_0 > 0$ such that for any disjoint intervals $(x_j, y_j) \subseteq (a, b)$ with $\sum (y_j - x_j) < \delta_0$, we have $\sum |f(y_j) - f(x_j)| \leq 1$.
 >
 > Divide $[a, b]$ into $n$ subintervals $[c_j, c_{j+1}]$ of length $(b - a)/n < \delta_0$ (choose $n$ large enough). Fix any subinterval $[c_j, c_{j+1}]$ and take any partition $c_j = t_0 < t_1 < \cdots < t_m = c_{j+1}$. The intervals $(t_0, t_1), \ldots, (t_{m-1}, t_m)$ are disjoint in $(a, b)$ with total length:
 >
@@ -161,7 +161,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-16
 
-*Uses:* [[§18 Differentiation Theory#^def-18-4|Def. §18.4]], [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]], [[§18 Differentiation Theory#^prop-18-5|§18.5]]
+*Uses:* [[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§18 Differentiation Theory#^def-18-2|Def. §18.2]], [[§18 Differentiation Theory#^def-18-new1|Def. §18.3]], [[§18 Differentiation Theory#^prop-18-5|§18.5]]
 
 > [!remark] Remark: The Hierarchy
 > Summarizing:
@@ -170,15 +170,17 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 > \operatorname{Lip}([a,b]) \subsetneq AC([a,b]) \subsetneq BV([a,b]) \cap C([a,b]).
 > $$
 >
-> The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] shows $BV \cap C \not\subseteq AC$. The function $\sqrt{x}$ on $[0, 1]$ shows $AC \not\subseteq \operatorname{Lip}$ (it is AC since $\sqrt{x} = \int_0^x \frac{1}{2\sqrt{t}}\,dt$ with $\frac{1}{2\sqrt{t}} \in L$, but $|\sqrt{x}|/|x| \to \infty$).
+> The [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] shows $BV \cap C \not\subseteq AC$. The function $\sqrt{x}$ on $[0, 1]$ shows $AC \not\subseteq \operatorname{Lip}$ (it is AC since $\sqrt{x} = \int_0^x \frac{1}{2\sqrt{t}}\,dt$ with $\frac{1}{2\sqrt{t}} \in L$, but $|\sqrt{x}|/|x| \to \infty$).
 
 ^rem-18-9
 
 > [!remark]- Connections
-> - The inclusions: [[§18 Differentiation Theory#^prop-18-11|§18.11]] (iii) and [[§18 Differentiation Theory#^thm-18-16|§18.16]]; MATH 451 shows $\sqrt{x}$ is uniformly continuous on $[0,\infty)$ ([[§19 Uniform Continuity#^ex-19-5|451 Ex. §19.5]]).
+> - The inclusions: [[§18c Absolute Continuity and the FTC#^prop-18-11|§18.11]] (iii) and [[§18c Absolute Continuity and the FTC#^thm-18-16|§18.16]]; MATH 451 shows $\sqrt{x}$ is uniformly continuous on $[0,\infty)$ ([[§19 Uniform Continuity#^ex-19-5|451 Ex. §19.5]]).
+
+*Chain (power singularities):* [[§19b Power Singularities 1∕xᵃ and ℚ#Power Singularities|Chapter 6]] →
 
 > [!remark] Remark
-> If $\tilde{F}(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$, then $\tilde{F}$ is differentiable a.e. with $\tilde{F}' = f' - f' = 0$ a.e. on $(a,b)$. The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] shows $\tilde{F}$ can be non-constant: $\tilde{F} \equiv \varphi$ satisfies $\varphi' = 0$ a.e. but $\varphi(1) - \varphi(0) = 1$. So the FTC fails precisely when $\tilde{F}$ is a “Cantor-like” component.
+> If $\tilde{F}(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$, then $\tilde{F}$ is differentiable a.e. with $\tilde{F}' = f' - f' = 0$ a.e. on $(a,b)$. The [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] shows $\tilde{F}$ can be non-constant: $\tilde{F} \equiv \varphi$ satisfies $\varphi' = 0$ a.e. but $\varphi(1) - \varphi(0) = 1$. So the FTC fails precisely when $\tilde{F}$ is a “Cantor-like” component.
 
 ^rem-18-11
 
@@ -246,11 +248,11 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-27
 
-*Uses:* [[§18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[§18 Differentiation Theory#^def-18-4|Def. §18.4]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Properties of Lebesgue Outer Measure|§9.1]]
+*Uses:* [[§18 Differentiation Theory#^def-18-1|Def. §18.1]], [[Vitali Covering Theorem|§18.2]], [[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]], [[§9 Lebesgue Outer Measure#^prop-9-2|§9.2]], [[Properties of Lebesgue Outer Measure|§9.1]]
 
 > [!remark]- Connections
-> - MATH 451 counterpart: [[§29 The Mean Value Theorem#^cor-29-4|Vanishing Derivative Means Constant]] (451 §29.4), proved with the [[Mean Value Theorem]] when $f' = 0$ *everywhere*; the [[§18 Differentiation Theory#^ex-18-4|Cantor function]] shows “a.e.” needs the extra AC hypothesis.
-> - Used in the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] (§18.13).
+> - MATH 451 counterpart: [[§29 The Mean Value Theorem#^cor-29-4|Vanishing Derivative Means Constant]] (451 §29.4), proved with the [[Mean Value Theorem]] when $f' = 0$ *everywhere*; the [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] shows “a.e.” needs the extra AC hypothesis.
+> - Used in the proof of [[Fundamental Theorem of Calculus for Lebesgue Integrals|the FTC for Lebesgue integrals]] ([[§18c Absolute Continuity and the FTC#^thm-18-13|§18.13]]).
 
 ## The Fundamental Theorem of Calculus for Lebesgue Integrals
 
@@ -262,15 +264,15 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^thm-18-13
 
 > [!proof]+ Proof of the Fundamental Theorem of Calculus
-> **(ii) $\Rightarrow$ (i):** Assume $f$ is differentiable a.e., $f' \in L([a, b])$, and $f(x) - f(a) = \int_a^x f'(t)\,dt$ for all $x$. Then $f(x) = f(a) + \int_a^x f'(t)\,dt$. Since $f' \in L([a,b])$, the function $x \mapsto \int_a^x f'(t)\,dt$ is in $AC([a, b])$ by [[§18 Differentiation Theory#^thm-18-12|the theorem above]] (integral functions are AC). Adding the constant $f(a)$ preserves absolute continuity ([[§18 Differentiation Theory#^prop-18-11|property (ii)]]). Hence $f \in AC([a, b])$.
+> **(ii) $\Rightarrow$ (i):** Assume $f$ is differentiable a.e., $f' \in L([a, b])$, and $f(x) - f(a) = \int_a^x f'(t)\,dt$ for all $x$. Then $f(x) = f(a) + \int_a^x f'(t)\,dt$. Since $f' \in L([a,b])$, the function $x \mapsto \int_a^x f'(t)\,dt$ is in $AC([a, b])$ by [[§18c Absolute Continuity and the FTC#^thm-18-12|the theorem above]] (integral functions are AC). Adding the constant $f(a)$ preserves absolute continuity ([[§18c Absolute Continuity and the FTC#^prop-18-11|property (ii)]]). Hence $f \in AC([a, b])$.
 >
-> **(i) $\Rightarrow$ (ii):** Assume $f \in AC([a, b])$. Then $f \in BV([a, b])$ ([[§18 Differentiation Theory#^thm-18-16|AC ⟹ BV, proved above]]), so $f$ is differentiable a.e. on $(a, b)$ with $f' \in L([a, b])$ (by the [[§18 Differentiation Theory#^cor-18-10|BV differentiability corollary]]). It remains to show $f(x) - f(a) = \int_a^x f'(t)\,dt$ for all $x \in [a, b]$.
+> **(i) $\Rightarrow$ (ii):** Assume $f \in AC([a, b])$. Then $f \in BV([a, b])$ ([[§18c Absolute Continuity and the FTC#^thm-18-16|AC ⟹ BV, proved above]]), so $f$ is differentiable a.e. on $(a, b)$ with $f' \in L([a, b])$ (by the [[§18a Lebesgue's Differentiation Theorem#^cor-18-10|BV differentiability corollary]]). It remains to show $f(x) - f(a) = \int_a^x f'(t)\,dt$ for all $x \in [a, b]$.
 >
 > Define $F(x) = f(x) - f(a) - \int_a^x f'(t)\,dt$. Since $f \in AC([a, b])$ and $\int_a^x f'(t)\,dt \in AC([a, b])$ (by the theorem above: integral functions are AC), and $AC$ is closed under linear combinations (property (ii)), we have $F \in AC([a, b])$.
 >
-> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in an earlier subsection; [[§18 Differentiation Theory#^thm-18-26|§18.26]]).
+> Moreover, $F'(x) = f'(x) - f'(x) = 0$ a.e. on $(a, b)$ (using the fact that $(\int_a^x f'\,dt)' = f'(x)$ a.e., proved in an earlier subsection; [[§18b Differentiating the Integral#^thm-18-26|§18.26]]).
 >
-> By the lemma on non-constant functions with zero derivative ([[§18 Differentiation Theory#^thm-18-27|Theorem §18.27]]), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
+> By the lemma on non-constant functions with zero derivative ([[§18c Absolute Continuity and the FTC#^thm-18-27|Theorem §18.27]]), if $F$ were not constant, then $F$ would not be absolutely continuous. But $F \in AC([a, b])$, so $F$ must be constant. Since $F(a) = f(a) - f(a) - 0 = 0$, we conclude $F(x) = 0$ for all $x \in [a, b]$, i.e.:
 >
 > $$
 > f(x) - f(a) = \int_a^x f'(t)\,dt \qquad \forall\, x \in [a, b].
@@ -278,7 +280,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-13
 
-*Uses:* [[§18 Differentiation Theory#^thm-18-12|§18.12]], [[§18 Differentiation Theory#^prop-18-11|§18.11]], [[§18 Differentiation Theory#^thm-18-16|§18.16]], [[§18 Differentiation Theory#^cor-18-10|§18.10]], [[§18 Differentiation Theory#^thm-18-26|§18.26]], [[§18 Differentiation Theory#^thm-18-27|§18.27]]
+*Uses:* [[§18c Absolute Continuity and the FTC#^thm-18-12|§18.12]], [[§18c Absolute Continuity and the FTC#^prop-18-11|§18.11]], [[§18c Absolute Continuity and the FTC#^thm-18-16|§18.16]], [[§18a Lebesgue's Differentiation Theorem#^cor-18-10|§18.10]], [[§18b Differentiating the Integral#^thm-18-26|§18.26]], [[§18c Absolute Continuity and the FTC#^thm-18-27|§18.27]]
 
 > [!remark]- Connections
 > - MATH 451 versions: [[Fundamental Theorem of Calculus]] (FTC I, 451 §34.1: $f$ continuous, differentiable on $(a,b)$, with Riemann-integrable $f'$; FTC II, 451 §34.4: the integral function).
@@ -301,7 +303,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 >
 > where the interchange of sum and integral is justified as follows.
 >
-> **(i)** Since $\sum |g_k'| < \infty$ a.e. (by $\sum \int |g_k'| < \infty$ and [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|MCT]]), $\sum g_k'$ converges absolutely a.e. By [[Dominated Convergence Theorem|DCT]] (with dominating function $\sum |g_k'| \in L$):
+> **(i)** Since $\sum |g_k'| < \infty$ a.e. (by $\sum \int |g_k'| < \infty$ and [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|MCT]]), $\sum g_k'$ converges absolutely a.e. By [[Dominated Convergence Theorem|DCT]] (with dominating function $\sum |g_k'| \in L$):
 >
 > $$
 > \lim_{n \to \infty} \int_c^x \sum_{k=1}^{n} g_k'(t)\,dt = \int_c^x \sum_{k=1}^{\infty} g_k'(t)\,dt.
@@ -309,16 +311,16 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 >
 > Since $\sum g_k(c)$ converges, $\sum g_k(x)$ converges for all $x$.
 >
-> **(ii)** $\sum g_k(x) = \sum g_k(c) + \int_c^x h(t)\,dt$ where $h = \sum g_k' \in L([a, b])$. The integral function of an $L$ function is $AC$ ([[§18 Differentiation Theory#^thm-18-12|integral functions are AC]]), and adding a constant preserves $AC$. So $\sum g_k \in AC$.
+> **(ii)** $\sum g_k(x) = \sum g_k(c) + \int_c^x h(t)\,dt$ where $h = \sum g_k' \in L([a, b])$. The integral function of an $L$ function is $AC$ ([[§18c Absolute Continuity and the FTC#^thm-18-12|integral functions are AC]]), and adding a constant preserves $AC$. So $\sum g_k \in AC$.
 >
-> **(iii)** Differentiating, the constant $\sum g_k(c)$ drops out and [[§18 Differentiation Theory#^thm-18-26|differentiation of the integral]] ([[§18 Differentiation Theory#^thm-18-26|Theorem §18.26]], proved earlier) gives $(\sum g_k)'(x) = \left(\int_c^x h\,dt\right)' = h(x) = \sum g_k'(x)$ a.e.
+> **(iii)** Differentiating, the constant $\sum g_k(c)$ drops out and [[§18b Differentiating the Integral#^thm-18-26|differentiation of the integral]] ([[§18b Differentiating the Integral#^thm-18-26|Theorem §18.26]], proved earlier) gives $(\sum g_k)'(x) = \left(\int_c^x h\,dt\right)' = h(x) = \sum g_k'(x)$ a.e.
 
 ^pf-18-14
 
-*Uses:* [[Fundamental Theorem of Calculus for Lebesgue Integrals|§18.13]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|§14.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[Dominated Convergence Theorem|§15.8]], [[§18 Differentiation Theory#^thm-18-12|§18.12]], [[§18 Differentiation Theory#^prop-18-11|§18.11]], [[§18 Differentiation Theory#^thm-18-26|§18.26]]
+*Uses:* [[Fundamental Theorem of Calculus for Lebesgue Integrals|§18.13]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-12|§14.12]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[Dominated Convergence Theorem|§15.8]], [[§18c Absolute Continuity and the FTC#^thm-18-12|§18.12]], [[§18c Absolute Continuity and the FTC#^prop-18-11|§18.11]], [[§18b Differentiating the Integral#^thm-18-26|§18.26]]
 
 > [!remark]- Connections
-> - The interchange is [[§15 The General Lebesgue Integral#^cor-15-9|Absolute Convergence in L¹]] (§15.9).
+> - The interchange is [[§15a The Dominated Convergence Theorem#^cor-15-9|Absolute Convergence in L¹]] ([[§15a The Dominated Convergence Theorem#^cor-15-9|§15.9]]).
 > - MATH 451 counterpart for power series, where uniform convergence does the work: [[§26 Differentiation and Integration of Power Series#^thm-26-4|Term-by-Term Calculus for Power Series]] (451 §26.4).
 
 > [!theorem] Theorem §18.15: Lebesgue Decomposition of Increasing Functions
@@ -335,7 +337,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 > g(x) = f(a) + \int_a^x f'(t)\,dt, \qquad h(x) = f(x) - g(x).
 > $$
 >
-> $g$ is increasing (since $f' \geq 0$) and $g \in AC$ ([[§18 Differentiation Theory#^thm-18-12|integral of an L function]]). By [[§18 Differentiation Theory#^thm-18-26|differentiation of the integral]] ([[§18 Differentiation Theory#^thm-18-26|Theorem §18.26]], proved earlier; applied to $f'$ extended by $0$ outside $[a, b]$), $g' = f'$ a.e.
+> $g$ is increasing (since $f' \geq 0$) and $g \in AC$ ([[§18c Absolute Continuity and the FTC#^thm-18-12|integral of an L function]]). By [[§18b Differentiating the Integral#^thm-18-26|differentiation of the integral]] ([[§18b Differentiating the Integral#^thm-18-26|Theorem §18.26]], proved earlier; applied to $f'$ extended by $0$ outside $[a, b]$), $g' = f'$ a.e.
 >
 > $h$ is increasing: for $x < y$, $g(y) - g(x) = \int_x^y f' \leq f(y) - f(x)$ (by [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's integral inequality for increasing functions]]), so $h(y) - h(x) = (f(y) - f(x)) - (g(y) - g(x)) \geq 0$.
 >
@@ -343,10 +345,10 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-15
 
-*Uses:* [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18 Differentiation Theory#^thm-18-12|§18.12]], [[§18 Differentiation Theory#^thm-18-26|§18.26]]
+*Uses:* [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18c Absolute Continuity and the FTC#^thm-18-12|§18.12]], [[§18b Differentiating the Integral#^thm-18-26|§18.26]]
 
 > [!remark] Remark
-> The function $h$ is called the **singular part** of $f$: it is increasing yet gains all its growth on a set of measure zero ($\{h' > 0\}$ has measure zero). The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] is the prototypical example of a purely singular increasing function.
+> The function $h$ is called the **singular part** of $f$: it is increasing yet gains all its growth on a set of measure zero ($\{h' > 0\}$ has measure zero). The [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]] is the prototypical example of a purely singular increasing function.
 
 ^rem-18-8
 
@@ -356,11 +358,11 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^lem-18-17
 
 > [!proof]+ Proof
-> Any collection of disjoint intervals in $(c, d)$ is also a collection of disjoint intervals in $(a, b)$, so the same $\delta$ from the [[§18 Differentiation Theory#^def-18-4|AC condition]] on $[a, b]$ works on $[c, d]$.
+> Any collection of disjoint intervals in $(c, d)$ is also a collection of disjoint intervals in $(a, b)$, so the same $\delta$ from the [[§18c Absolute Continuity and the FTC#^def-18-4|AC condition]] on $[a, b]$ works on $[c, d]$.
 
 ^pf-18-17
 
-*Uses:* [[§18 Differentiation Theory#^def-18-4|Def. §18.4]]
+*Uses:* [[§18c Absolute Continuity and the FTC#^def-18-4|Def. §18.4]]
 
 > [!theorem] Lemma §18.18: Image Measure Bounded by Total Variation
 > If $f$ is continuous on $[c, d]$, then $f((c, d))$ is an interval and $m(f((c, d))) \leq \bigvee_c^d(f)$.
@@ -389,7 +391,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 ^thm-18-19
 
 > [!proof]+ Proof
-> Since $f \in AC([a, b])$, by the [[Fundamental Theorem of Calculus for Lebesgue Integrals|FTC]], $f' \in L([a, b])$ and $f(x) = f(a) + \int_a^x f'(t)\,dt$. By [[§18 Differentiation Theory#^lem-18-17|the first lemma]], $f$ is AC on any $[c, d] \subseteq [a, b]$, so $f(x) = f(c) + \int_c^x f'(t)\,dt$ on $[c, d]$. Applying the total variation formula for integral functions ([[§18 Differentiation Theory#^thm-18-8|§18.8]]) to $f' \in L([c, d])$:
+> Since $f \in AC([a, b])$, by the [[Fundamental Theorem of Calculus for Lebesgue Integrals|FTC]], $f' \in L([a, b])$ and $f(x) = f(a) + \int_a^x f'(t)\,dt$. By [[§18c Absolute Continuity and the FTC#^lem-18-17|the first lemma]], $f$ is AC on any $[c, d] \subseteq [a, b]$, so $f(x) = f(c) + \int_c^x f'(t)\,dt$ on $[c, d]$. Applying the total variation formula for integral functions ([[§18 Differentiation Theory#^thm-18-8|§18.8]]) to $f' \in L([c, d])$:
 >
 > $$
 > \bigvee_c^d(f) = \bigvee_c^d\!\left(f(c) + \int_c^x f'(t)\,dt\right) = \bigvee_c^d\!\left(\int_c^x f'(t)\,dt\right) = \int_c^d |f'(t)|\,dt,
@@ -405,7 +407,7 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 >
 > Since $m(Z) = 0$, there exist countably many open intervals $\{I_k\}_{k=1}^{\infty}$ with $Z \subseteq \bigcup_{k=1}^{\infty} I_k$ and $\sum_{k=1}^{\infty} m(I_k) < \delta$ ([[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]]). Let $G = (\bigcup_{k=1}^{\infty} I_k) \cap (a, b)$. Then $G$ is open in $(a, b)$, $Z \setminus \{a, b\} \subseteq G$, and $m(G) < \delta$. Write $G$ as a [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|countable disjoint union of open intervals]]: $G = \bigcup_{k=1}^{\infty} (a_k, b_k)$.
 >
-> Since $\{a, b\}$ has measure zero, $m(f(\{a, b\})) = 0$ (finitely many points), so it suffices to show $m(f(Z \setminus \{a, b\})) = 0$. By [[§18 Differentiation Theory#^lem-18-18|the second lemma]] and the total variation identity:
+> Since $\{a, b\}$ has measure zero, $m(f(\{a, b\})) = 0$ (finitely many points), so it suffices to show $m(f(Z \setminus \{a, b\})) = 0$. By [[§18c Absolute Continuity and the FTC#^lem-18-18|the second lemma]] and the total variation identity:
 >
 > $$
 > m(f((a_k, b_k))) \leq \bigvee_{a_k}^{b_k}(f) = \int_{a_k}^{b_k} |f'(t)|\,dt.
@@ -421,9 +423,9 @@ Bounded variation is necessary but not sufficient for $f(x) - f(a) = \int_a^x f'
 
 ^pf-18-19
 
-*Uses:* [[Fundamental Theorem of Calculus for Lebesgue Integrals|§18.13]], [[§18 Differentiation Theory#^lem-18-17|§18.17]], [[§18 Differentiation Theory#^thm-18-8|§18.8]], [[§16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§18 Differentiation Theory#^lem-18-18|§18.18]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§14 The Lebesgue Integral for Simple Functions#^cor-14-13|§14.13]], [[§9 Lebesgue Outer Measure#^ex-9-1|Ex. §9.1]]
+*Uses:* [[Fundamental Theorem of Calculus for Lebesgue Integrals|§18.13]], [[§18c Absolute Continuity and the FTC#^lem-18-17|§18.17]], [[§18 Differentiation Theory#^thm-18-8|§18.8]], [[§16 The L¹ Space and Density Theorems#^thm-16-1|§16.1]], [[§9 Lebesgue Outer Measure#^def-9-4|Def. §9.4]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§18c Absolute Continuity and the FTC#^lem-18-18|§18.18]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§14a Consequences of the Monotone Convergence Theorem#^cor-14-13|§14.13]], [[§9 Lebesgue Outer Measure#^ex-9-1|Ex. §9.1]]
 
 > [!remark] Remark
-> This is a strong property of AC functions: they cannot “spread” null sets. The [[§18 Differentiation Theory#^ex-18-4|Cantor function]], by contrast, maps the Cantor set ($m = 0$) onto $[0, 1]$ ($m = 1$) — another illustration of why $BV \cap C \not\subseteq AC$.
+> This is a strong property of AC functions: they cannot “spread” null sets. The [[§18c Absolute Continuity and the FTC#^ex-18-4|Cantor function]], by contrast, maps the Cantor set ($m = 0$) onto $[0, 1]$ ($m = 1$) — another illustration of why $BV \cap C \not\subseteq AC$.
 
 ^rem-18-10

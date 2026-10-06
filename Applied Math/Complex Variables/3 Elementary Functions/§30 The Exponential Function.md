@@ -60,11 +60,11 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 ^prop-30-1
 
 > [!proof]+ Proof
-> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form#^def-7-2|Definition §7.2]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
+> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form#^def-7-new3|Definition §7.5]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
 
 ^pf-30-1
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]]
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]]
 
 > [!theorem] Theorem §30.2: The Law of Exponents
 > For all complex numbers $z_1$, $z_2$,

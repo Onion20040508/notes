@@ -28,14 +28,19 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 
 ## Least-Squares Lines
 
-> [!definition] Definition §45.2: Residuals and the Least-Squares Line
+> [!definition] Definition §45.2: Residual
 > Let $(x_1, y_1), \ldots, (x_n, y_n)$ be data points and $y = \beta_0 + \beta_1x$ a line. For each $j$, $y_j$ is the **observed value** of $y$, and $\beta_0 + \beta_1x_j$ (the point of the line with the same $x$-coordinate) is the **predicted** $y$-value. Their difference $y_j - (\beta_0 + \beta_1x_j)$ is a **residual**.
->
-> The **least-squares line** is the line $y = \beta_0 + \beta_1x$ that minimizes the sum of the squares of the residuals. It is also called the **line of regression of $y$ on $x$** (any errors in the data are assumed to be only in the $y$-coordinates), and $\beta_0$, $\beta_1$ are the (linear) **regression coefficients**. Lay writes $y = \beta_0 + \beta_1x$ instead of $y = mx + b$.
 >
 > *Lay: 6.6 (text)*
 
 ^def-45-2
+
+> [!definition] Definition §45.2: Least-Squares Line
+> The **least-squares line** is the line $y = \beta_0 + \beta_1x$ that minimizes the sum of the squares of the residuals. It is also called the **line of regression of $y$ on $x$** (any errors in the data are assumed to be only in the $y$-coordinates), and $\beta_0$, $\beta_1$ are the (linear) **regression coefficients**. Lay writes $y = \beta_0 + \beta_1x$ instead of $y = mx + b$.
+>
+> *Lay: 6.6 (text)*
+
+^def-45-new1
 
 > [!theorem] Proposition §45.1: The Least-Squares Line Is a Least-Squares Solution
 > Let
@@ -64,7 +69,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 *Uses:* [[§44 Least-Squares Problems#^def-44-1|Def. §44.1]], [[§44 Least-Squares Problems#^thm-44-1|§44.1]]
 
 > [!remark]- Connections
-> - The regression lines and the quadratic model of Calculus are computed this way (there by calculator): [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-3|Calc Def. §2.3]], [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-2|Calc Ex. §2.2]] (a regression line), [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-3|Calc Ex. §2.3]] (a quadratic fit to real data, the model of Example §45.2(a)).
+> - The regression lines and the quadratic model of Calculus are computed this way (there by calculator): [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-3|Calc Def. §2.3]], [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-2|Calc Ex. §2.2]] (a regression line), [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-3|Calc Ex. §2.3]] (a quadratic fit to real data, the model of [[§45 Applications to Linear Models#^ex-45-2|Example §45.2]](a)).
 > - Rigorous treatment of the minimization: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] with $U = \operatorname{Col} X$.
 
 > [!definition] Definition §45.3: Mean-Deviation Form
@@ -120,7 +125,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 >
 > The least-squares line is $y = \frac27 + \frac{5}{14}x$. Its predicted values at $x = 2, 5, 7, 8$ are $1, \frac{29}{14}, \frac{39}{14}, \frac{44}{14}$, so the residuals are $0, -\frac{1}{14}, \frac{3}{14}, -\frac{2}{14}$ (they sum to $0$), and the minimal sum of squared residuals is $\frac{0 + 1 + 9 + 4}{196} = \frac{1}{14}$.
 >
-> **The same line in mean-deviation form.** Here $\bar{x} = \frac{22}{4} = 5.5$, so $\mathbf{x}^{\ast} = (-3.5, -0.5, 1.5, 2.5)$, and $\bar{y} = \frac94$. By Proposition §45.2,
+> **The same line in mean-deviation form.** Here $\bar{x} = \frac{22}{4} = 5.5$, so $\mathbf{x}^{\ast} = (-3.5, -0.5, 1.5, 2.5)$, and $\bar{y} = \frac94$. By [[§45 Applications to Linear Models#^prop-45-2|Proposition §45.2]],
 >
 > $$
 > \beta_1^* = \frac{-3.5 - 1 + 4.5 + 7.5}{12.25 + 0.25 + 2.25 + 6.25} = \frac{7.5}{21} = \frac{5}{14}, \qquad
@@ -134,7 +139,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 ^ex-45-1
 
 ![[m235-45-1.svg]]
-*Example §45.1: the least-squares line $y = \frac27 + \frac{5}{14}x$ and the four data points. The residuals are the vertical segments from each data point to the line (red, drawn to scale; at $x = 2$ the point lies on the line); the line minimizes the sum of their squares. It passes through $(\bar{x}, \bar{y}) = (5.5, 2.25)$ (Proposition §45.2).*
+*[[§45 Applications to Linear Models#^ex-45-1|Example §45.1]]: the least-squares line $y = \frac27 + \frac{5}{14}x$ and the four data points. The residuals are the vertical segments from each data point to the line (red, drawn to scale; at $x = 2$ the point lies on the line); the line minimizes the sum of their squares. It passes through $(\bar{x}, \bar{y}) = (5.5, 2.25)$ ([[§45 Applications to Linear Models#^prop-45-2|Proposition §45.2]]).*
 
 ## The General Linear Model
 
@@ -199,7 +204,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 
 ## Multiple Regression
 
-> [!definition] Definition §45.5: Multiple Regression; Trend Surface
+> [!definition] Definition §45.5: Multiple Regression
 > When an experiment has two independent variables $u$, $v$ and one dependent variable $y$, a prediction equation such as
 >
 > $$
@@ -208,11 +213,18 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 > y = \beta_0 + \beta_1u + \beta_2v + \beta_3u^2 + \beta_4uv + \beta_5v^2 \quad (5)
 > $$
 >
-> is fitted by **multiple regression**. Both are linear models, being linear in the parameters (even though $u$ and $v$ are multiplied in (5)); in general any $y = \beta_0f_0(u, v) + \cdots + \beta_kf_k(u, v)$ with known $f_i$ is. In geology, a least-squares fit of this kind (erosion surfaces, glacial cirques, soil pH) is called a **trend surface**; the fit by (4) is the **least-squares plane**.
+> is fitted by **multiple regression**. Both are linear models, being linear in the parameters (even though $u$ and $v$ are multiplied in (5)); in general any $y = \beta_0f_0(u, v) + \cdots + \beta_kf_k(u, v)$ with known $f_i$ is.
 >
 > *Lay: 6.6 (text)*
 
 ^def-45-5
+
+> [!definition] Definition §45.5: Trend Surface
+> In geology, a least-squares fit of this kind (erosion surfaces, glacial cirques, soil pH) is called a **trend surface**; the fit by (4) is the **least-squares plane**.
+>
+> *Lay: 6.6 (text)*
+
+^def-45-new2
 
 > [!example] Example §45.3: A Least-Squares Plane
 > Local models of terrain are built from data $(u_1, v_1, y_1), \ldots, (u_n, v_n, y_n)$, where $u_j$, $v_j$, $y_j$ are latitude, longitude and altitude. Describe the linear model based on (4) that gives a least-squares fit.

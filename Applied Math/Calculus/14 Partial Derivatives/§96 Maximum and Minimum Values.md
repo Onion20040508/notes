@@ -314,7 +314,7 @@ For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all poin
 > - The one-variable case on $[a, b]$, proved from completeness: [[Extreme Value Theorem]] (451). Hub for the higher-dimensional ingredient: [[Heine–Borel Theorem]].
 > - Complex-variables version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (the modulus of a continuous complex function on a closed bounded region attains a maximum) and, for analytic functions, [[§59 Maximum Modulus Principle#^cor-59-4|342 Cor. §59.4]] (that maximum is on the boundary).
 
-By [[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]], if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] of §25.
+By [[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]], if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] of [[§25 Maximum and Minimum Values|§25]].
 
 > [!remark] Remark: Method — Absolute Extrema on a Closed Bounded Set
 > To find the absolute maximum and minimum values of a continuous function $f$ on a closed, bounded set $D$:
@@ -322,7 +322,7 @@ By [[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]], if $f$ has an e
 > 2. Find the extreme values of $f$ on the boundary of $D$.
 > 3. The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.
 >
-> For step 2, parametrize each piece of the boundary and use one-variable calculus ([[§96 Maximum and Minimum Values#^ex-96-5|Example §96.5]]), or use [[§97 Lagrange Multipliers#^rem-97-2|Lagrange multipliers]] (§97).
+> For step 2, parametrize each piece of the boundary and use one-variable calculus ([[§96 Maximum and Minimum Values#^ex-96-5|Example §96.5]]), or use [[§97 Lagrange Multipliers#^rem-97-2|Lagrange multipliers]] ([[§97 Lagrange Multipliers|§97]]).
 >
 > *Stewart: 14.7, Box 9*
 

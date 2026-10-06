@@ -125,8 +125,8 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > - The step "zero derivative on an interval implies constant": [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], from the Mean Value Theorem; equal derivatives differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
 > - See also: [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]] (the case $b = 0$, proved the same way) and [[§60 Models for Population Growth#^thm-60-1|Calc Thm. §60.1]] (Stewart's separation-of-variables derivation). Stewart's [[§60 Models for Population Growth#^rem-60-1|Calc Remark: Emigration]], $dP/dt = kP - m$, is (3) with $a = k$, $b = m$: the mice and owls of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-3|Example §1.3]].
 
-> [!definition] Definition §2.2: General Solution; Integral Curves
-> For $a \ne 0$, the expression (17), which contains all possible solutions of (3), is called the **general solution** of (3). Its geometric representation, the infinite family of graphs of (17), one for each value of $c$, is the family of **integral curves** of the equation. Satisfying an initial condition amounts to picking out the integral curve through the given initial point.
+> [!definition] Definition §2.2: General Solution
+> For $a \ne 0$, the expression (17), which contains all possible solutions of (3), is called the **general solution** of (3).
 >
 > *BDP: 1.2 (text)*
 
@@ -134,6 +134,13 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 
 > [!remark]- Connections
 > - See also: [[§57 Modeling with Differential Equations#^def-57-6|Calc Def. §57.6]] (solution and general solution) and [[§57 Modeling with Differential Equations#^def-57-7|Calc Def. §57.7]] (initial condition, initial-value problem), Stewart's versions of [[§2 Solutions of Some Differential Equations#^def-2-1|Definitions §2.1]] and [[§2 Solutions of Some Differential Equations#^def-2-2|§2.2]].
+
+> [!definition] Definition §2.2: Integral Curves
+> Let (17) be the general solution of (3) ([[§2 Solutions of Some Differential Equations#^def-2-2|Definition §2.2]]). Its geometric representation, the infinite family of graphs of (17), one for each value of $c$, is the family of **integral curves** of the equation. Satisfying an initial condition amounts to picking out the integral curve through the given initial point.
+>
+> *BDP: 1.2 (text)*
+
+^def-2-new1
 
 > [!remark] Remark: What the Formula Says About the Two Models
 > **Field mice.** With $a = r > 0$ and $b = k > 0$, (18) becomes

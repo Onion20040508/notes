@@ -42,18 +42,25 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-28|LADR 2.28]], where uniqueness of the representation is shown to be *equivalent* to being a basis; the coordinate vector is Axler's $\mathcal{M}(v)$, [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]. In an orthogonal basis the weights have a closed formula: [[§41 Orthogonal Sets#^thm-41-2|Theorem §41.2]].
 
-> [!definition] Definition §26.1: Coordinates; Coordinate Vector; Coordinate Mapping
+> [!definition] Definition §26.1: Coordinates; Coordinate Vector
 > Suppose $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ is a basis for $V$ and $\mathbf{x}$ is in $V$. The **coordinates of $\mathbf{x}$ relative to the basis $\mathcal{B}$** (the **$\mathcal{B}$-coordinates of $\mathbf{x}$**) are the weights $c_1, \ldots, c_n$ such that $\mathbf{x} = c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n$. The vector in $\mathbb{R}^n$
 >
 > $$
 > [\mathbf{x}]_{\mathcal B} = \begin{bmatrix} c_1 \\ \vdots \\ c_n \end{bmatrix}
 > $$
 >
-> is the **coordinate vector of $\mathbf{x}$ (relative to $\mathcal{B}$)**, or the **$\mathcal{B}$-coordinate vector of $\mathbf{x}$**, and the mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is the **coordinate mapping (determined by $\mathcal{B}$)**. The definition assumes that $\mathcal{B}$ is an *indexed* set, its vectors listed in a fixed order, so that $[\mathbf{x}]_{\mathcal B}$ is unambiguous. Theorem §26.1 makes the coordinates well defined.
+> is the **coordinate vector of $\mathbf{x}$ (relative to $\mathcal{B}$)**, or the **$\mathcal{B}$-coordinate vector of $\mathbf{x}$**. The definition assumes that $\mathcal{B}$ is an *indexed* set, its vectors listed in a fixed order, so that $[\mathbf{x}]_{\mathcal B}$ is unambiguous. [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1]] makes the coordinates well defined.
 >
 > *Lay: 4.4, Definition*
 
 ^def-26-1
+
+> [!definition] Definition §26.1: Coordinate Mapping
+> For a basis $\mathcal{B}$ of $V$ ([[§26 Coordinate Systems#^def-26-1|Definition §26.1]]), the mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is the **coordinate mapping (determined by $\mathcal{B}$)**.
+>
+> *Lay: 4.4, Definition*
+
+^def-26-new1
 
 > [!example] Example §26.1: From Coordinates to the Vector
 > **(a)** Let $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ with $\mathbf{b}_1 = (1, 0)$, $\mathbf{b}_2 = (1, 2)$. If $[\mathbf{x}]_{\mathcal B} = (-2, 3)$, the coordinates say how to build $\mathbf{x}$ from $\mathcal{B}$:
@@ -72,7 +79,7 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 ^ex-26-1
 
 > [!remark] Remark: Coordinates as Graph Paper
-> A coordinate system on a set is a one-to-one mapping of its points into $\mathbb{R}^n$. Ordinary graph paper is the coordinate system of the standard basis: $\mathbf{x} = (1, 6)$ lies $1$ unit in the $\mathbf{e}_1$ direction and $6$ units in the $\mathbf{e}_2$ direction. Erasing the standard grid and drawing instead the grid of lines parallel to $\mathbf{b}_1$ and $\mathbf{b}_2$ through the integer multiples of the other vector gives "$\mathcal{B}$-graph paper", on which the same point has the new address $[\mathbf{x}]_{\mathcal B}$: in Example §26.1(a), $-2$ units in the $\mathbf{b}_1$ direction and $3$ units in the $\mathbf{b}_2$ direction (figure below, for Example §26.2). In crystallography, for instance, a basis $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ along three edges of a unit cell gives the natural coordinates of the atoms: $(\tfrac12, \tfrac12, 1)$ is the centre of the top face.
+> A coordinate system on a set is a one-to-one mapping of its points into $\mathbb{R}^n$. Ordinary graph paper is the coordinate system of the standard basis: $\mathbf{x} = (1, 6)$ lies $1$ unit in the $\mathbf{e}_1$ direction and $6$ units in the $\mathbf{e}_2$ direction. Erasing the standard grid and drawing instead the grid of lines parallel to $\mathbf{b}_1$ and $\mathbf{b}_2$ through the integer multiples of the other vector gives "$\mathcal{B}$-graph paper", on which the same point has the new address $[\mathbf{x}]_{\mathcal B}$: in [[§26 Coordinate Systems#^ex-26-1|Example §26.1]](a), $-2$ units in the $\mathbf{b}_1$ direction and $3$ units in the $\mathbf{b}_2$ direction (figure below, for [[§26 Coordinate Systems#^ex-26-2|Example §26.2]]). In crystallography, for instance, a basis $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ along three edges of a unit cell gives the natural coordinates of the atoms: $(\tfrac12, \tfrac12, 1)$ is the centre of the top face.
 
 ^rem-26-1
 
@@ -101,7 +108,7 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 ^ex-26-2
 
 ![[m235-26-1.svg]]
-*Example §26.2 on two kinds of graph paper. On the standard grid the point $\mathbf{x}$ has address $(4, 5)$. On the grid built from $\mathbf{b}_1$ (blue lines) and $\mathbf{b}_2$ (green lines), the same point is reached by going $3$ steps along $\mathbf{b}_1$ and then $2$ steps along $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 2)$.*
+*[[§26 Coordinate Systems#^ex-26-2|Example §26.2]] on two kinds of graph paper. On the standard grid the point $\mathbf{x}$ has address $(4, 5)$. On the grid built from $\mathbf{b}_1$ (blue lines) and $\mathbf{b}_2$ (green lines), the same point is reached by going $3$ steps along $\mathbf{b}_1$ and then $2$ steps along $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 2)$.*
 
 The matrix in (3) changes the $\mathcal{B}$-coordinates of a vector into its standard coordinates. The same works for any basis of $\mathbb{R}^n$.
 
@@ -164,7 +171,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > [\mathbf{u} + \mathbf{w}]_{\mathcal B} = \begin{bmatrix} c_1 + d_1 \\ \vdots \\ c_n + d_n \end{bmatrix} = \begin{bmatrix} c_1 \\ \vdots \\ c_n \end{bmatrix} + \begin{bmatrix} d_1 \\ \vdots \\ d_n \end{bmatrix} = [\mathbf{u}]_{\mathcal B} + [\mathbf{w}]_{\mathcal B} .
 > $$
 >
-> For a scalar $r$, $r\mathbf{u} = (rc_1)\mathbf{b}_1 + \cdots + (rc_n)\mathbf{b}_n$, so $[r\mathbf{u}]_{\mathcal B} = (rc_1, \ldots, rc_n) = r[\mathbf{u}]_{\mathcal B}$. (These use Theorem §26.1: the displayed combinations are *the* representations of $\mathbf{u} + \mathbf{w}$ and $r\mathbf{u}$.) Equation (5) follows by applying these two rules repeatedly.
+> For a scalar $r$, $r\mathbf{u} = (rc_1)\mathbf{b}_1 + \cdots + (rc_n)\mathbf{b}_n$, so $[r\mathbf{u}]_{\mathcal B} = (rc_1, \ldots, rc_n) = r[\mathbf{u}]_{\mathcal B}$. (These use [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1]]: the displayed combinations are *the* representations of $\mathbf{u} + \mathbf{w}$ and $r\mathbf{u}$.) Equation (5) follows by applying these two rules repeatedly.
 >
 > **One-to-one** (Lay's Exercise 23). If $[\mathbf{u}]_{\mathcal B} = [\mathbf{w}]_{\mathcal B} = (c_1, \ldots, c_n)$, then $\mathbf{u} = c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n = \mathbf{w}$.
 >
@@ -172,10 +179,10 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 
 ^pf-26-3
 
-*Uses:* [[§26 Coordinate Systems#^thm-26-1|§26.1]], [[§26 Coordinate Systems#^def-26-1|Def. §26.1]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|Def. §24.4]]
+*Uses:* [[§26 Coordinate Systems#^thm-26-1|§26.1]], [[§26 Coordinate Systems#^def-26-1|Def. §26.1]], [[§26 Coordinate Systems#^def-26-new1|Def. §26.1]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|Def. §24.4]]
 
 > [!definition] Definition §26.3: Isomorphism
-> A one-to-one linear transformation from a vector space $V$ onto a vector space $W$ is an **isomorphism** from $V$ onto $W$ (Greek *iso*, "the same", and *morph*, "form" or "structure"). The notation and terminology of $V$ and $W$ may differ, but the two spaces are indistinguishable as vector spaces: *every vector space calculation in $V$ is accurately reproduced in $W$, and vice versa*. By Theorem §26.3, any real vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$.
+> A one-to-one linear transformation from a vector space $V$ onto a vector space $W$ is an **isomorphism** from $V$ onto $W$ (Greek *iso*, "the same", and *morph*, "form" or "structure"). The notation and terminology of $V$ and $W$ may differ, but the two spaces are indistinguishable as vector spaces: *every vector space calculation in $V$ is accurately reproduced in $W$, and vice versa*. By [[§26 Coordinate Systems#^thm-26-3|Theorem §26.3]], any real vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$.
 >
 > *Lay: 4.4 (text)*
 
@@ -249,7 +256,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > \begin{bmatrix} 1 & 4 & 3 & 0 \\ 0 & 1 & 2 & 0 \\ 2 & 5 & 0 & 0 \end{bmatrix} \sim \begin{bmatrix} 1 & 4 & 3 & 0 \\ 0 & 1 & 2 & 0 \\ 0 & -3 & -6 & 0 \end{bmatrix} \sim \begin{bmatrix} 1 & 4 & 3 & 0 \\ 0 & 1 & 2 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix} .
 > $$
 >
-> $x_3$ is free, so the columns of $A$ are linearly dependent, and by Corollary §26.4 so are the polynomials. In fact column 3 is $2$ times column 2 minus $5$ times column 1, and the corresponding relation for the polynomials is
+> $x_3$ is free, so the columns of $A$ are linearly dependent, and by [[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]] so are the polynomials. In fact column 3 is $2$ times column 2 minus $5$ times column 1, and the corresponding relation for the polynomials is
 >
 > $$
 > 3 + 2t = 2(4 + t + 5t^2) - 5(1 + 2t^2) .
@@ -283,8 +290,10 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > c_1 + c_2 = 6, \qquad c_1 + c_3 = 3, \qquad c_2 + c_3 = -1 .
 > $$
 >
-> Adding all three, $2(c_1 + c_2 + c_3) = 8$, so $c_1 + c_2 + c_3 = 4$, and then $c_3 = 4 - 6 = -2$, $c_2 = 4 - 3 = 1$, $c_1 = 4 - (-1) = 5$. So $[\mathbf{p}]_{\mathcal B} = (5, 1, -2)$. Check: $5(1 + t) + (1 + t^2) - 2(t + t^2) = 6 + 3t - t^2$. (In coordinates relative to $\{1, t, t^2\}$ this is the system with matrix $\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \end{bmatrix}$, of determinant $-2 \ne 0$, which also confirms that $\mathcal{B}$ is a basis, by Corollary §26.4.)
+> Adding all three, $2(c_1 + c_2 + c_3) = 8$, so $c_1 + c_2 + c_3 = 4$, and then $c_3 = 4 - 6 = -2$, $c_2 = 4 - 3 = 1$, $c_1 = 4 - (-1) = 5$. So $[\mathbf{p}]_{\mathcal B} = (5, 1, -2)$. Check: $5(1 + t) + (1 + t^2) - 2(t + t^2) = 6 + 3t - t^2$. (In coordinates relative to $\{1, t, t^2\}$ this is the system with matrix $\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \end{bmatrix}$, of determinant $-2 \ne 0$, which also confirms that $\mathcal{B}$ is a basis, by [[§26 Coordinate Systems#^cor-26-4|Corollary §26.4]].)
 >
 > *Lay: Example 4.4.7; 4.4, Practice Problem 2*
 
 ^ex-26-5
+
+*Chain: part (a) is the computation of [[§19 Dimension and Rank#^ex-19-1|Chapter 2]]*

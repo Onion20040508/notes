@@ -124,20 +124,32 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ## Solutions and Initial Value Problems
 
-> [!definition] Definition §27.1: First-Order System; Solution; Initial Value Problem
+> [!definition] Definition §27.1: System of First-Order Equations
 > A **system of $n$ first-order differential equations** has the form
 >
 > $$
 > x_1' = F_1(t, x_1, x_2, \ldots, x_n), \quad x_2' = F_2(t, x_1, x_2, \ldots, x_n), \quad \ldots, \quad x_n' = F_n(t, x_1, x_2, \ldots, x_n) . \qquad (11)
 > $$
 >
+> *BDP: 7.1 (text), Equations (11)–(13)*
+
+^def-27-1
+
+> [!definition] Definition §27.1: Solution of a System
 > A **solution** of (11) on the interval $I: \alpha < t < \beta$ consists of $n$ functions
 >
 > $$
 > x_1 = \phi_1(t), \quad x_2 = \phi_2(t), \quad \ldots, \quad x_n = \phi_n(t), \qquad (12)
 > $$
 >
-> each differentiable at all points of $I$, that satisfy (11) at all points of $I$. Given $n$ **initial conditions**
+> each differentiable at all points of $I$, that satisfy (11) at all points of $I$.
+>
+> *BDP: 7.1 (text), Equations (11)–(13)*
+
+^def-27-new1
+
+> [!definition] Definition §27.1: Initial Value Problem for a System
+> Given $n$ **initial conditions**
 >
 > $$
 > x_1(t_0) = x_1^0, \quad x_2(t_0) = x_2^0, \quad \ldots, \quad x_n(t_0) = x_n^0, \qquad (13)
@@ -145,11 +157,16 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 >
 > with $t_0 \in I$ and prescribed numbers $x_1^0, \ldots, x_n^0$, the equations (11) and (13) together form an **initial value problem**.
 >
+> *BDP: 7.1 (text), Equations (11)–(13)*
+
+^def-27-new2
+
+> [!definition] Definition §27.1: Trajectory
 > A solution (12) is a set of parametric equations in $n$-dimensional space: as $t$ runs through $I$, the point $(\phi_1(t), \ldots, \phi_n(t))$ traces a curve, the **trajectory** or path of a particle moving according to (11). The initial conditions fix its starting point. For $n = 2$ the trajectory lies in the $x_1x_2$-plane, where it is easiest to visualize.
 >
 > *BDP: 7.1 (text), Equations (11)–(13)*
 
-^def-27-1
+^def-27-new3
 
 > [!remark]- Connections
 > - A nonlinear system of the form (11) with $n = 2$, and its trajectories in the phase plane: the predator–prey equations [[§62 Predator-Prey Systems#^def-62-1|Calc Def. §62.1]], [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]] (Stewart's treatment).

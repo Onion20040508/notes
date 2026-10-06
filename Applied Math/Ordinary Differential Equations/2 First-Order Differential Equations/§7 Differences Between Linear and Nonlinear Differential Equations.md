@@ -130,6 +130,8 @@ $$
 
 *Uses:* [[§11 The Existence and Uniqueness Theorem#^thm-11-8|§11.8]], [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|§7.1]]
 
+*Forward reference: [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]] (BDP Theorem 2.4.2, stated above) is proved later, in [[§11 The Existence and Uniqueness Theorem|§11]] (BDP 2.8).*
+
 > [!remark]- Connections
 > - Stewart quotes this uniqueness theorem without proof and uses it the same way, to show that solution curves do not cross: [[§59 Separable Equations#^rem-59-2|Calc Remark: Solution Curves Do Not Cross]].
 

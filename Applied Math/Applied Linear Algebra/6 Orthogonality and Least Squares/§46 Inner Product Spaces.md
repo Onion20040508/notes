@@ -28,7 +28,7 @@ Length, distance and orthogonality in $\mathbb{R}^n$ were built from four proper
 ^def-46-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of Example §46.1 and the integral inner product of Example §46.4. Same definition in [[§20 Definition and Examples#^def-20-1|556 Def. §20.1]].
+> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of [[§46 Inner Product Spaces#^ex-46-1|Example §46.1]] and the integral inner product of [[§46 Inner Product Spaces#^ex-46-4|Example §46.4]]. Same definition in [[§20 Definition and Examples#^def-20-1|556 Def. §20.1]].
 > - The function-space examples become complete only after enlarging $C[a, b]$ to $L^2[a, b]$: [[§20 Definition and Examples#^ex-20-3|556 Ex. §20.3]]; an inner product space of continuous functions that is not complete is [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-2|556 Ex. §21.2]].
 
 > [!example] Example §46.1: A Weighted Inner Product on ℝ²
@@ -67,7 +67,7 @@ From now on, polynomials and other functions in an inner product space are writt
 > \langle p, q\rangle = p(t_0)q(t_0) + p(t_1)q(t_1) + \cdots + p(t_n)q(t_n) . \tag{2}
 > $$
 >
-> Axioms 1–3 follow as in Example §46.1 (each term is symmetric and linear in $p$). For Axiom 4: $\langle p, p\rangle = [p(t_0)]^2 + \cdots + [p(t_n)]^2 \ge 0$, and $\langle \mathbf{0}, \mathbf{0}\rangle = 0$ for the zero polynomial $\mathbf{0}$. If $\langle p, p\rangle = 0$, then $p$ vanishes at the $n + 1$ points $t_0, \ldots, t_n$. A nonzero polynomial of degree at most $n$ has at most $n$ roots, so $p$ is the zero polynomial. So (2) is an inner product on $\mathbb{P}_n$.
+> Axioms 1–3 follow as in [[§46 Inner Product Spaces#^ex-46-1|Example §46.1]] (each term is symmetric and linear in $p$). For Axiom 4: $\langle p, p\rangle = [p(t_0)]^2 + \cdots + [p(t_n)]^2 \ge 0$, and $\langle \mathbf{0}, \mathbf{0}\rangle = 0$ for the zero polynomial $\mathbf{0}$. If $\langle p, p\rangle = 0$, then $p$ vanishes at the $n + 1$ points $t_0, \ldots, t_n$. A nonzero polynomial of degree at most $n$ has at most $n$ roots, so $p$ is the zero polynomial. So (2) is an inner product on $\mathbb{P}_n$.
 >
 > **(b) Computing.** Let $V = \mathbb{P}_2$ with $t_0 = 0$, $t_1 = \frac12$, $t_2 = 1$, and let $p(t) = 12t^2$, $q(t) = 2t - 1$. The values are $p(0), p(\frac12), p(1) = 0, 3, 12$ and $q(0), q(\frac12), q(1) = -1, 0, 1$. So
 >
@@ -75,7 +75,7 @@ From now on, polynomials and other functions in an inner product space are writt
 > \langle p, q\rangle = (0)(-1) + (3)(0) + (12)(1) = 12, \qquad \langle q, q\rangle = (-1)^2 + 0^2 + 1^2 = 2 .
 > $$
 >
-> **(c) Lengths** (Definition §46.2 below):
+> **(c) Lengths** ([[§46 Inner Product Spaces#^def-46-2|Definition §46.2]] below):
 >
 > $$
 > \|p\|^2 = \langle p, p\rangle = 0^2 + 3^2 + 12^2 = 153, \quad \|p\| = \sqrt{153}; \qquad \|q\| = \sqrt{\langle q, q\rangle} = \sqrt2 .
@@ -118,7 +118,7 @@ From now on, polynomials and other functions in an inner product space are writt
 > - the **distance between $\mathbf{u}$ and $\mathbf{v}$** is $\|\mathbf{u} - \mathbf{v}\|$;
 > - $\mathbf{u}$ and $\mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v}\rangle = 0$.
 >
-> The square root exists by Axiom 4, but $\langle \mathbf{v}, \mathbf{v}\rangle$ need not be a "sum of squares", since $\mathbf{v}$ need not be in $\mathbb{R}^n$. As in [[§40 Inner Product, Length, and Orthogonality#^prop-40-2|Proposition §40.2]], $\|c\mathbf{v}\| = |c|\,\|\mathbf{v}\|$ (by Axiom 3 and Proposition §46.1(3)).
+> The square root exists by Axiom 4, but $\langle \mathbf{v}, \mathbf{v}\rangle$ need not be a "sum of squares", since $\mathbf{v}$ need not be in $\mathbb{R}^n$. As in [[§40 Inner Product, Length, and Orthogonality#^prop-40-2|Proposition §40.2]], $\|c\mathbf{v}\| = |c|\,\|\mathbf{v}\|$ (by Axiom 3 and [[§46 Inner Product Spaces#^prop-46-1|Proposition §46.1]](3)).
 >
 > *Lay: 6.7 (text)*
 
@@ -145,7 +145,7 @@ From now on, polynomials and other functions in an inner product space are writt
 
 > [!proof]+ Proof
 > Lay states that these hold "just as in $\mathbb{R}^n$". Indeed, the proofs of [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]] (orthogonal sets of nonzero vectors are independent), [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5]] (the vectors orthogonal to $W$ form a subspace meeting $W$ only in $\mathbf{0}$, and orthogonality to a spanning set suffices), [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]] and the Pythagorean Theorem [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], the Orthogonal Decomposition Theorem [[§42 Orthogonal Projections#^thm-42-1|§42.1]], the Best Approximation Theorem [[§42 Orthogonal Projections#^thm-42-3|§42.3]] and Gram–Schmidt [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]] use only:
-> - the properties (a)–(d) of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]], which hold for $\langle\ ,\ \rangle$ by the axioms and Proposition §46.1;
+> - the properties (a)–(d) of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]], which hold for $\langle\ ,\ \rangle$ by the axioms and [[§46 Inner Product Spaces#^prop-46-1|Proposition §46.1]];
 > - dimension counting inside the finite-dimensional spaces $W$ and $W_k = \operatorname{Span}\{\mathbf{x}_1, \ldots, \mathbf{x}_k\}$ (the Basis Theorem, [[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]], which Lay proves for any vector space).
 >
 > They never use coordinates of vectors in $\mathbb{R}^n$, or the dimension of the ambient space. So they hold verbatim with $\mathbf{u} \cdot \mathbf{v}$ replaced by $\langle \mathbf{u}, \mathbf{v}\rangle$, even when $V$ is infinite-dimensional, as $C[a, b]$ is. (Only $W$ must be finite-dimensional: Gram–Schmidt and the projection formula need a finite basis of $W$.) Uniqueness of the decomposition shows that the projection does not depend on the orthogonal basis chosen, exactly as in [[§42 Orthogonal Projections#^def-42-1|Definition §42.1]].
@@ -157,7 +157,7 @@ From now on, polynomials and other functions in an inner product space are writt
 > [!remark]- Connections
 > - PDE version: [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (part 3 for the integral inner product: the truncated Fourier series is the best mean-square approximation by trigonometric polynomials); Gram–Schmidt applied to $1, x, x^2, \ldots$ in $C[-1, 1]$ gives, up to scaling, the Legendre polynomials, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]], orthogonal by [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]].
 
-A common problem in applied mathematics is to approximate a function $f$ in a space $V$ of functions by a function $g$ from a specified subspace $W$. How close the approximation is depends on how $\|f - g\|$ is defined. When the distance comes from an inner product, Theorem §46.2(3) says that **the best approximation to $f$ by functions in $W$ is the orthogonal projection of $f$ onto $W$**.
+A common problem in applied mathematics is to approximate a function $f$ in a space $V$ of functions by a function $g$ from a specified subspace $W$. How close the approximation is depends on how $\|f - g\|$ is defined. When the distance comes from an inner product, [[§46 Inner Product Spaces#^thm-46-2|Theorem §46.2]](3) says that **the best approximation to $f$ by functions in $W$ is the orthogonal projection of $f$ onto $W$**.
 
 > [!example] Example §46.3: Orthogonal Polynomials and a Best Approximation
 > Let $V = \mathbb{P}_4$ with the inner product (2) given by evaluation at $-2, -1, 0, 1, 2$, and view $\mathbb{P}_2$ as a subspace of $V$.
@@ -186,7 +186,7 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 > \langle p, p_0\rangle = -3 + \tfrac92 + 5 + \tfrac92 - 3 = 8, \qquad \langle p, p_1\rangle = 6 - \tfrac92 + 0 + \tfrac92 - 6 = 0, \qquad \langle p, p_2\rangle = -6 - \tfrac92 - 10 - \tfrac92 - 6 = -31,
 > $$
 >
-> and $\langle p_0, p_0\rangle = 5$, $\langle p_2, p_2\rangle = 4 + 1 + 4 + 1 + 4 = 14$. By Theorem §46.2,
+> and $\langle p_0, p_0\rangle = 5$, $\langle p_2, p_2\rangle = 4 + 1 + 4 + 1 + 4 = 14$. By [[§46 Inner Product Spaces#^thm-46-2|Theorem §46.2]],
 >
 > $$
 > \hat{p} = \operatorname{proj}_{\mathbb{P}_2} p = \frac{\langle p, p_0\rangle}{\langle p_0, p_0\rangle}p_0 + \frac{\langle p, p_1\rangle}{\langle p_1, p_1\rangle}p_1 + \frac{\langle p, p_2\rangle}{\langle p_2, p_2\rangle}p_2 = \frac85p_0 - \frac{31}{14}p_2 = \frac85 - \frac{31}{14}(t^2 - 2) .
@@ -199,7 +199,7 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 ^ex-46-3
 
 ![[m235-46-1.svg]]
-*Example §46.3: $p(t) = 5 - \frac12t^4$ (blue) and its best approximation $\hat{p}(t) = \frac85 - \frac{31}{14}(t^2 - 2)$ in $\mathbb{P}_2$ (red), for the inner product given by evaluation at the five marked points $t = -2, \ldots, 2$. Away from these points the two graphs separate; the inner product does not see that.*
+*[[§46 Inner Product Spaces#^ex-46-3|Example §46.3]]: $p(t) = 5 - \frac12t^4$ (blue) and its best approximation $\hat{p}(t) = \frac85 - \frac{31}{14}(t^2 - 2)$ in $\mathbb{P}_2$ (red), for the inner product given by evaluation at the five marked points $t = -2, \ldots, 2$. Away from these points the two graphs separate; the inner product does not see that.*
 
 ## Two Inequalities
 
@@ -217,7 +217,7 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 ^prop-46-3
 
 > [!proof]+ Proof
-> By Theorem §46.2(2), $\mathbf{v} = \operatorname{proj}_W \mathbf{v} + (\mathbf{v} - \operatorname{proj}_W \mathbf{v})$, where the first term lies in $W$ and the second is orthogonal to $W$, in particular to the first term. The Pythagorean Theorem (valid in $V$ by Theorem §46.2's proof: $\|\mathbf{a} + \mathbf{b}\|^2 = \|\mathbf{a}\|^2 + \|\mathbf{b}\|^2 + 2\langle \mathbf{a}, \mathbf{b}\rangle$) gives the equality, and dropping the nonnegative second term gives the inequality.
+> By [[§46 Inner Product Spaces#^thm-46-2|Theorem §46.2]](2), $\mathbf{v} = \operatorname{proj}_W \mathbf{v} + (\mathbf{v} - \operatorname{proj}_W \mathbf{v})$, where the first term lies in $W$ and the second is orthogonal to $W$, in particular to the first term. The Pythagorean Theorem (valid in $V$ by [[§46 Inner Product Spaces#^thm-46-2|Theorem §46.2]]'s proof: $\|\mathbf{a} + \mathbf{b}\|^2 = \|\mathbf{a}\|^2 + \|\mathbf{b}\|^2 + 2\langle \mathbf{a}, \mathbf{b}\rangle$) gives the equality, and dropping the nonnegative second term gives the inequality.
 
 ^pf-46-3
 
@@ -235,13 +235,13 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 ^thm-46-4
 
 > [!proof]+ Proof
-> If $\mathbf{u} = \mathbf{0}$, both sides of (4) are $0$ (Proposition §46.1(1)), so (4) holds. If $\mathbf{u} \ne \mathbf{0}$, let $W = \operatorname{Span}\{\mathbf{u}\}$. Using $\|c\mathbf{u}\| = |c|\,\|\mathbf{u}\|$,
+> If $\mathbf{u} = \mathbf{0}$, both sides of (4) are $0$ ([[§46 Inner Product Spaces#^prop-46-1|Proposition §46.1]](1)), so (4) holds. If $\mathbf{u} \ne \mathbf{0}$, let $W = \operatorname{Span}\{\mathbf{u}\}$. Using $\|c\mathbf{u}\| = |c|\,\|\mathbf{u}\|$,
 >
 > $$
 > \|\operatorname{proj}_W \mathbf{v}\| = \Big\| \frac{\langle \mathbf{v}, \mathbf{u}\rangle}{\langle \mathbf{u}, \mathbf{u}\rangle}\mathbf{u} \Big\| = \frac{|\langle \mathbf{v}, \mathbf{u}\rangle|}{|\langle \mathbf{u}, \mathbf{u}\rangle|}\|\mathbf{u}\| = \frac{|\langle \mathbf{v}, \mathbf{u}\rangle|}{\|\mathbf{u}\|^2}\|\mathbf{u}\| = \frac{|\langle \mathbf{u}, \mathbf{v}\rangle|}{\|\mathbf{u}\|} .
 > $$
 >
-> By Proposition §46.3, $\|\operatorname{proj}_W \mathbf{v}\| \le \|\mathbf{v}\|$, so $\dfrac{|\langle \mathbf{u}, \mathbf{v}\rangle|}{\|\mathbf{u}\|} \le \|\mathbf{v}\|$, which is (4).
+> By [[§46 Inner Product Spaces#^prop-46-3|Proposition §46.3]], $\|\operatorname{proj}_W \mathbf{v}\| \le \|\mathbf{v}\|$, so $\dfrac{|\langle \mathbf{u}, \mathbf{v}\rangle|}{\|\mathbf{u}\|} \le \|\mathbf{v}\|$, which is (4).
 
 ^pf-46-4
 
@@ -270,7 +270,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 > \end{aligned}
 > $$
 >
-> The first line expands by Axioms 1, 2 and Proposition §46.1(2). Taking square roots of both (nonnegative) sides gives the triangle inequality.
+> The first line expands by Axioms 1, 2 and [[§46 Inner Product Spaces#^prop-46-1|Proposition §46.1]](2). Taking square roots of both (nonnegative) sides gives the triangle inequality.
 
 ^pf-46-5
 
@@ -283,7 +283,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 ## An Inner Product for C[a, b] (Calculus Required)
 
 > [!remark] Remark: From Evaluation to Integration
-> Let $p$ be a polynomial and $n \ge \deg p$. Evaluation at $n + 1$ points of $[a, b]$ gives a "length" of $p$ (Example §46.2), but it sees only those points. Since $p \in \mathbb{P}_n$ for all large $n$, one can use many more points. Partition $[a, b]$ into $n + 1$ subintervals of length $\Delta t = (b - a)/(n + 1)$ and pick points $t_0, \ldots, t_n$ in them. For large $n$ the evaluation inner product of $\mathbb{P}_n$ gives large values, so scale it down by $n + 1$; since $\frac{1}{n + 1} = \frac{\Delta t}{b - a}$,
+> Let $p$ be a polynomial and $n \ge \deg p$. Evaluation at $n + 1$ points of $[a, b]$ gives a "length" of $p$ ([[§46 Inner Product Spaces#^ex-46-2|Example §46.2]]), but it sees only those points. Since $p \in \mathbb{P}_n$ for all large $n$, one can use many more points. Partition $[a, b]$ into $n + 1$ subintervals of length $\Delta t = (b - a)/(n + 1)$ and pick points $t_0, \ldots, t_n$ in them. For large $n$ the evaluation inner product of $\mathbb{P}_n$ gives large values, so scale it down by $n + 1$; since $\frac{1}{n + 1} = \frac{\Delta t}{b - a}$,
 >
 > $$
 > \langle p, q\rangle = \frac{1}{n + 1}\sum_{j=0}^n p(t_j)q(t_j) = \frac{1}{b - a}\Big[\sum_{j=0}^n p(t_j)q(t_j)\,\Delta t\Big] .

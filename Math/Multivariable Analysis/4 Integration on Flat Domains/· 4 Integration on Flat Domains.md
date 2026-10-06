@@ -13,10 +13,16 @@ tags: [chapter, multivariable-analysis]
 
 ## Sections
 - [[§15 Multivariable Integration]]
+- [[§15a The Definition of the Integral]]
+- [[§15b Properties of the Integral]]
+- [[§15c Fubini's Theorem]]
+- [[§15d The Change of Variables Formula]]
+- [[§15e Change of Variables on General Domains]]
+- [[§15f Polar and Spherical Coordinates]]
 
 ## Central results
-- [[Fubini's Theorem]] (§15.8)
-- [[Change of Variables Formula (multiple integrals)]] (§15.17)
+- [[Fubini's Theorem]] ([[§15c Fubini's Theorem#^thm-15-8|§15.8]])
+- [[Change of Variables Formula (multiple integrals)]] ([[§15e Change of Variables on General Domains#^thm-15-17|§15.17]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

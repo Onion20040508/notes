@@ -21,7 +21,14 @@ Some processes are more naturally discrete than continuous: interest is compound
 > y_{n+1} = f(n, y_n), \qquad n = 0, 1, 2, \ldots \qquad (1)
 > $$
 >
-> is a **first-order difference equation**: first-order because $y_{n+1}$ depends on $y_n$ but not on earlier values $y_{n-1}, y_{n-2}, \ldots$. It is **linear** if $f$ is a linear function of $y_n$, and **nonlinear** otherwise. A **solution** is a sequence of numbers $y_0, y_1, y_2, \ldots$ that satisfies the equation for each $n$. An **initial condition**
+> is a **first-order difference equation**: first-order because $y_{n+1}$ depends on $y_n$ but not on earlier values $y_{n-1}, y_{n-2}, \ldots$. It is **linear** if $f$ is a linear function of $y_n$, and **nonlinear** otherwise.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-1
+
+> [!definition] Definition §12.1: Solution; Initial Condition
+> A **solution** of the difference equation (1) is a sequence of numbers $y_0, y_1, y_2, \ldots$ that satisfies the equation for each $n$. An **initial condition**
 >
 > $$
 > y_0 = \alpha \qquad (2)
@@ -31,28 +38,42 @@ Some processes are more naturally discrete than continuous: interest is compound
 >
 > *BDP: 2.9 (text)*
 
-^def-12-1
+^def-12-new1
 
 Unlike a differential equation, (1) with an initial condition always has exactly one solution: $y_1 = f(0, y_0)$, $y_2 = f(1, y_1)$, and so on, each term determined by the one before. The questions are about the behaviour of $y_n$ as $n \to \infty$.
 
-> [!definition] Definition §12.2: Iterates; Equilibrium Solutions
+> [!definition] Definition §12.2: Iterates
 > Suppose $f$ depends only on $y_n$:
 >
 > $$
 > y_{n+1} = f(y_n), \qquad n = 0, 1, 2, \ldots . \qquad (3)
 > $$
 >
-> Then $y_1 = f(y_0)$, $y_2 = f(f(y_0))$, the **second iterate** of the difference equation, sometimes written $f^2(y_0)$, and in general the **$n$th iterate** is $y_n = f(y_{n-1}) = f^n(y_0)$; computing them is **iterating** the difference equation. Solutions for which $y_n$ has the same value for all $n$ are **equilibrium solutions**. They are found by setting $y_{n+1}$ equal to $y_n$ in (3) and solving
+> Then $y_1 = f(y_0)$, $y_2 = f(f(y_0))$, the **second iterate** of the difference equation, sometimes written $f^2(y_0)$, and in general the **$n$th iterate** is $y_n = f(y_{n-1}) = f^n(y_0)$; computing them is **iterating** the difference equation.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-2
+
+> [!definition] Definition §12.2: Equilibrium Solution
+> Solutions of the difference equation (3) for which $y_n$ has the same value for all $n$ are **equilibrium solutions**. They are found by setting $y_{n+1}$ equal to $y_n$ in (3) and solving
 >
 > $$
 > y_n = f(y_n) \qquad (4)
 > $$
 >
-> for $y_n$. An equilibrium solution $y_n = y^{\ast}$ is **asymptotically stable** if solutions starting sufficiently near $y^{\ast}$ converge to $y^{\ast}$ as $n \to \infty$, and **unstable** if solutions starting arbitrarily near $y^{\ast}$ (other than $y^{\ast}$ itself) move away from it.
+> for $y_n$.
 >
 > *BDP: 2.9 (text)*
 
-^def-12-2
+^def-12-new2
+
+> [!definition] Definition §12.2: Asymptotically Stable and Unstable Equilibria
+> An equilibrium solution $y_n = y^{\ast}$ of (3) is **asymptotically stable** if solutions starting sufficiently near $y^{\ast}$ converge to $y^{\ast}$ as $n \to \infty$, and **unstable** if solutions starting arbitrarily near $y^{\ast}$ (other than $y^{\ast}$ itself) move away from it.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-new3
 
 ## Linear Equations
 
@@ -92,7 +113,7 @@ $$
 
 ^pf-12-1
 
-*Uses:* [[§12★ First-Order Difference Equations#^def-12-2|Def. §12.2]], [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] (the sequence of powers)
+*Uses:* [[§12★ First-Order Difference Equations#^def-12-new2|Def. §12.2]], [[§12★ First-Order Difference Equations#^def-12-new3|Def. §12.2]], [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] (the sequence of powers)
 
 Although $\rho_n$ is intrinsically positive for a population, (6) is valid for any $\rho_n$. If $\rho_n = 0$ for some $n$, then $y_{n+1}$ and all later values are zero: the species has become extinct.
 
@@ -144,7 +165,7 @@ $$
 
 ^pf-12-2
 
-*Uses:* [[§12★ First-Order Difference Equations#^prop-12-1|§12.1]], [[§12★ First-Order Difference Equations#^def-12-2|Def. §12.2]]
+*Uses:* [[§12★ First-Order Difference Equations#^prop-12-1|§12.1]], [[§12★ First-Order Difference Equations#^def-12-new2|Def. §12.2]]
 
 In (11) the first term represents the descendants of the original population, the others the population resulting from immigration in all preceding years; in (14) the two terms are the effects of the original population and of immigration.
 
@@ -252,7 +273,7 @@ Nonlinear difference equations are much more complicated and have much more vari
 
 ^pf-12-4
 
-*Uses:* [[§12★ First-Order Difference Equations#^def-12-2|Def. §12.2]]
+*Uses:* [[§12★ First-Order Difference Equations#^def-12-new2|Def. §12.2]]
 
 Are these equilibrium solutions asymptotically stable? BDP answers by linearizing; the following lemma, which BDP does not state, makes the linearization argument rigorous.
 
@@ -278,16 +299,7 @@ Are these equilibrium solutions asymptotically stable? BDP answers by linearizin
 
 ^pf-12-5
 
-*Uses:* [[§12★ First-Order Difference Equations#^def-12-2|Def. §12.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
-
-> [!theorem] Proposition §12.6: Stability for the Logistic Difference Equation
-> For $u_{n+1} = \rho u_n(1 - u_n)$ with $\rho > 0$:
-> - the equilibrium solution $u_n = 0$ is asymptotically stable for $0 < \rho < 1$ and unstable for $\rho > 1$;
-> - the equilibrium solution $u_n = (\rho - 1)/\rho$ is asymptotically stable for $1 < \rho < 3$, and unstable for $\rho < 1$ and for $\rho > 3$.
->
-> *BDP: 2.9 (text, from the linearizations (24) and (27))*
-
-^prop-12-6
+*Uses:* [[§12★ First-Order Difference Equations#^def-12-new3|Def. §12.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
 > [!remark] Remark: Why It Works
 > This is BDP's argument. Near the equilibrium $u_n = 0$, $u_n^2$ is small compared with $u_n$, and neglecting the quadratic term in (21) leaves the linear equation
@@ -311,6 +323,15 @@ Are these equilibrium solutions asymptotically stable? BDP answers by linearizin
 > Neglecting the quadratic term, $v_{n+1} = (2 - \rho)v_n$ (27), and by (9) $v_n \to 0$ for $|2 - \rho| < 1$, that is $1 < \rho < 3$. What this argument lacks is a theorem saying that the solutions of the nonlinear equation resemble those of the linear one near the equilibrium (for differential equations this is done in BDP's Section 9.3). [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] is that theorem for iterations: $2 - \rho$ and $\rho$ are exactly the values of $g'$ at the two equilibria.
 
 ^rem-12-1
+
+> [!theorem] Proposition §12.6: Stability for the Logistic Difference Equation
+> For $u_{n+1} = \rho u_n(1 - u_n)$ with $\rho > 0$:
+> - the equilibrium solution $u_n = 0$ is asymptotically stable for $0 < \rho < 1$ and unstable for $\rho > 1$;
+> - the equilibrium solution $u_n = (\rho - 1)/\rho$ is asymptotically stable for $1 < \rho < 3$, and unstable for $\rho < 1$ and for $\rho > 3$.
+>
+> *BDP: 2.9 (text, from the linearizations (24) and (27))*
+
+^prop-12-6
 
 > [!proof]+ Proof
 > Here $g(u) = \rho u(1 - u)$ and $g'(u) = \rho(1 - 2u)$. At $u = 0$, $g'(0) = \rho$, which is less than $1$ in absolute value for $0 < \rho < 1$ and greater than $1$ for $\rho > 1$. At $u^* = (\rho - 1)/\rho$, $g'(u^*) = \rho\big(1 - 2(\rho - 1)/\rho\big) = \rho - 2(\rho - 1) = 2 - \rho$, and $|2 - \rho| < 1$ if and only if $1 < \rho < 3$, while $|2 - \rho| > 1$ for $\rho < 1$ and for $\rho > 3$. [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] gives the conclusions.
@@ -356,14 +377,26 @@ In summary, (21) has two equilibrium solutions, $u_n = 0$, asymptotically stable
 
 For $\rho > 3$ neither equilibrium is stable, and the solutions of (21) show increasing complexity as $\rho$ increases.
 
-> [!definition] Definition §12.4: Exchange of Stability; Bifurcation; Chaos
-> - At $\rho = 1$ the equilibrium solutions $u = 0$ and $u = (\rho - 1)/\rho$ cross, and stability passes from one to the other: an **exchange of stability**.
-> - The transition from solutions of one period to solutions of a new period (for (21): from the stable equilibrium to a stable oscillation of period 2 at $\rho = 3$, from period 2 to period 4 at $\rho \cong 3.449$, then periods $8, 16, \ldots$) is called a **bifurcation**, and the value of the parameter at which it occurs is a **bifurcation value**.
-> - Solutions that possess some regularity but no discernible detailed pattern, with an unpredictable fine structure and extreme sensitivity to the initial conditions, are called **chaotic**.
+> [!definition] Definition §12.4: Exchange of Stability
+> For the logistic difference equation (21): at $\rho = 1$ the equilibrium solutions $u = 0$ and $u = (\rho - 1)/\rho$ cross, and stability passes from one to the other: an **exchange of stability**.
 >
 > *BDP: 2.9 (text)*
 
 ^def-12-4
+
+> [!definition] Definition §12.4: Bifurcation
+> The transition from solutions of one period to solutions of a new period (for (21): from the stable equilibrium to a stable oscillation of period 2 at $\rho = 3$, from period 2 to period 4 at $\rho \cong 3.449$, then periods $8, 16, \ldots$) is called a **bifurcation**, and the value of the parameter at which it occurs is a **bifurcation value**.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-new4
+
+> [!definition] Definition §12.4: Chaos
+> Solutions that possess some regularity but no discernible detailed pattern, with an unpredictable fine structure and extreme sensitivity to the initial conditions, are called **chaotic**.
+>
+> *BDP: 2.9 (text)*
+
+^def-12-new5
 
 > [!example] Example §12.3: Period Doubling and Chaos
 > **Period 2.** A solution of period 2 alternates between two values $u_1 \ne u_2$ with $g(u_1) = u_2$ and $g(u_2) = u_1$; these are fixed points of $g \circ g$ that are not fixed points of $g$. For $g(u) = \rho u(1 - u)$,

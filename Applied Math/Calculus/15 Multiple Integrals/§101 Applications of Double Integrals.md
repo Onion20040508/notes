@@ -255,7 +255,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 ^def-101-6
 
 > [!remark]- Connections
-> - For $f \ge 0$ the improper integral over $\mathbb{R}^2$ may always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]. It is what justifies writing $\iint_{\mathbb{R}^2} f\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dx\,dy$ above and in [[§101 Applications of Double Integrals#^ex-101-4|Examples §101.4]] and §101.5.
+> - For $f \ge 0$ the improper integral over $\mathbb{R}^2$ may always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]. It is what justifies writing $\iint_{\mathbb{R}^2} f\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dx\,dy$ above and in [[§101 Applications of Double Integrals#^ex-101-4|Examples §101.4]] and [[§101 Applications of Double Integrals#^ex-101-5|§101.5]].
 
 > [!example] Example §101.4: Normalizing a Joint Density
 > If the joint density function for $X$ and $Y$ is

@@ -321,6 +321,8 @@ With the wedge product, exterior derivative, and $d^2 = 0$ in hand, we can defin
 
 ^ex-22-5
 
+*Chain ([[Unit circle and unit sphere|unit sphere]]):* ← [[§20a The Unit Sphere and Spherical Coordinates|Chapter 6]] · [[§22b Closed and Exact Forms#^pf-22-11|§22b]] →
+
 The following tables summarize the translation at each dimension.
 
 **Dimension 0.** A 0-form is a function $f$. “Integrating” it means evaluating: $\int_{\{p\}} f = f(p)$. Its exterior derivative is the 1-form $df = f_x\,dx + f_y\,dy + f_z\,dz$.

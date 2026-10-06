@@ -27,7 +27,7 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 
 ^pf-19-8
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]]
 
 > [!theorem] Theorem §19.9: Minkowski's Inequality
 > Let $1 \leq p \leq \infty$, $E \in \mathcal{M}(\mathbb{R}^n)$. For all $f, g$ a.e. finite measurable on $E$:
@@ -61,7 +61,7 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 > \int_E |f + g|^p \leq \left(\int_E |f + g|^p\right)^{1/p'} (\|f\|_p + \|g\|_p).
 > $$
 >
-> If $\|f\|_p$ or $\|g\|_p$ is infinite there is nothing to prove; otherwise $\int_E |f + g|^p < \infty$ by [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|Proposition §19.8]], and if $\int_E |f + g|^p = 0$ there is again nothing to prove. Dividing both sides by $(\int_E |f + g|^p)^{1/p'}$, which is therefore finite and nonzero:
+> If $\|f\|_p$ or $\|g\|_p$ is infinite there is nothing to prove; otherwise $\int_E |f + g|^p < \infty$ by [[§19a Lᵖ as a Banach Space#^prop-19-8|Proposition §19.8]], and if $\int_E |f + g|^p = 0$ there is again nothing to prove. Dividing both sides by $(\int_E |f + g|^p)^{1/p'}$, which is therefore finite and nonzero:
 >
 > $$
 > \left(\int_E |f + g|^p\right)^{1 - 1/p'} = \left(\int_E |f + g|^p\right)^{1/p} = \|f + g\|_p \leq \|f\|_p + \|g\|_p.
@@ -69,7 +69,7 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 
 ^pf-19-9
 
-*Uses:* [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|§19.8]]
+*Uses:* [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19a Lᵖ as a Banach Space#^prop-19-8|§19.8]]
 
 > [!remark]- Connections
 > - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]].
@@ -82,13 +82,13 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 
 > [!proof]+ Proof
 > We verify the three norm axioms:
-> - (i) *Positive definiteness:* $\|f\|_p \geq 0$ is clear. $\|f\|_p = 0 \implies f = 0$ a.e. on $E$ (for $p < \infty$: $\int |f|^p = 0$ with $|f|^p \geq 0$ implies $|f|^p = 0$ a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]); for $p = \infty$: $\operatorname{ess\,sup}|f| = 0$ means $|f| \leq 0$ a.e.). This is why we work with $L^p$ (equivalence classes mod a.e. equality) rather than $\mathcal{L}^p$.
-> - (ii) *Homogeneity:* $\|cf\|_p = |c|\,\|f\|_p$ (from the [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|scalar multiplication calculation above]]).
+> - (i) *Positive definiteness:* $\|f\|_p \geq 0$ is clear. $\|f\|_p = 0 \implies f = 0$ a.e. on $E$ (for $p < \infty$: $\int |f|^p = 0$ with $|f|^p \geq 0$ implies $|f|^p = 0$ a.e. ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|Proposition §14.11]]); for $p = \infty$: $\operatorname{ess\,sup}|f| = 0$ means $|f| \leq 0$ a.e.). This is why we work with $L^p$ (equivalence classes mod a.e. equality) rather than $\mathcal{L}^p$.
+> - (ii) *Homogeneity:* $\|cf\|_p = |c|\,\|f\|_p$ (from the [[§19a Lᵖ as a Banach Space#^prop-19-8|scalar multiplication calculation above]]).
 > - (iii) *Triangle inequality:* $\|f + g\|_p \leq \|f\|_p + \|g\|_p$ ([[Minkowski's Inequality|Minkowski's inequality]]).
 
 ^pf-19-10
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|§19.8]], [[Minkowski's Inequality|§19.9]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19a Lᵖ as a Banach Space#^prop-19-8|§19.8]], [[Minkowski's Inequality|§19.9]]
 
 > [!remark]- Connections
 > - The case $p = 1$: [[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]].
@@ -120,13 +120,13 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \int_E \left|\sum_{k=1}^{\infty} f_k\right|^p dx = \lim_{m \to \infty} \int_E |S_m|^p\,dx \leq \lim_{m \to \infty} \left(\sum_{k=1}^{m} \|f_k\|_p\right)^p = \left(\sum_{k=1}^{\infty} \|f_k\|_p\right)^p,
 > $$
 >
-> where the inequality uses the [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|finite sum corollary]]. Taking $p$-th roots gives the result.
+> where the inequality uses the [[§19a Lᵖ as a Banach Space#^cor-19-11|finite sum corollary]]. Taking $p$-th roots gives the result.
 >
 > For $p = \infty$: $|\sum f_k(x)| \leq \sum |f_k(x)| \leq \sum \|f_k\|_\infty$ a.e. (each inequality holding a.e.), so $\|\sum f_k\|_\infty \leq \sum \|f_k\|_\infty$.
 
 ^pf-19-12
 
-*Uses:* [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]
+*Uses:* [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[§19a Lᵖ as a Banach Space#^cor-19-11|§19.11]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]]
 
 > [!theorem] Corollary §19.13: Minkowski for General Measurable Series
 > Let $\{f_k\}_{k=1}^{\infty}$ be a sequence of measurable functions on $E$, and assume $\sum_{k=1}^{\infty} f_k(x)$ converges for a.e. $x \in E$. Then:
@@ -138,11 +138,11 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^cor-19-13
 
 > [!proof]+ Proof
-> We have $|\sum_{k=1}^{\infty} f_k(x)| \leq \sum_{k=1}^{\infty} |f_k(x)|$ for a.e. $x \in E$. By the [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|nonnegative series corollary]] applied to $|f_k|$: $\|\sum |f_k|\|_p \leq \sum \|f_k\|_p$. Therefore $\|\sum f_k\|_p \leq \|\sum |f_k|\|_p \leq \sum \|f_k\|_p$.
+> We have $|\sum_{k=1}^{\infty} f_k(x)| \leq \sum_{k=1}^{\infty} |f_k(x)|$ for a.e. $x \in E$. By the [[§19a Lᵖ as a Banach Space#^cor-19-12|nonnegative series corollary]] applied to $|f_k|$: $\|\sum |f_k|\|_p \leq \sum \|f_k\|_p$. Therefore $\|\sum f_k\|_p \leq \|\sum |f_k|\|_p \leq \sum \|f_k\|_p$.
 
 ^pf-19-13
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|§19.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]]
+*Uses:* [[§19a Lᵖ as a Banach Space#^cor-19-12|§19.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]]
 
 > [!theorem] Corollary §19.14: $L^p$ Absolute Series Test
 > Let $\{f_k\}_{k=1}^{\infty} \subseteq L^p(E)$ with $\sum_{k=1}^{\infty} \|f_k\|_p < \infty$. Then:
@@ -152,18 +152,18 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^cor-19-14
 
 > [!proof]+ Proof
-> **A.e. convergence:** For $1 \leq p < \infty$: by the [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|nonnegative series corollary]], $\|\sum |f_k|\|_p \leq \sum \|f_k\|_p < \infty$, so $\sum |f_k(x)|$ is a.e. finite ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|integrability implies a.e. finiteness]]), hence $\sum f_k(x)$ converges absolutely a.e.
+> **A.e. convergence:** For $1 \leq p < \infty$: by the [[§19a Lᵖ as a Banach Space#^cor-19-12|nonnegative series corollary]], $\|\sum |f_k|\|_p \leq \sum \|f_k\|_p < \infty$, so $\sum |f_k(x)|$ is a.e. finite ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|integrability implies a.e. finiteness]]), hence $\sum f_k(x)$ converges absolutely a.e.
 >
 > For $p = \infty$: $\sum |f_k(x)| \leq \sum \|f_k\|_\infty < \infty$ a.e., so $\sum f_k$ converges absolutely a.e.
 >
-> **Norm bound:** Follows from the [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-13|general measurable series corollary]].
+> **Norm bound:** Follows from the [[§19a Lᵖ as a Banach Space#^cor-19-13|general measurable series corollary]].
 
 ^pf-19-14
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|§19.12]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-10|§14.10]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-13|§19.13]]
+*Uses:* [[§19a Lᵖ as a Banach Space#^cor-19-12|§19.12]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-10|§14.10]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19a Lᵖ as a Banach Space#^cor-19-13|§19.13]]
 
 > [!remark]- Connections
-> - The case $p = 1$: [[§15 The General Lebesgue Integral#^cor-15-9|Corollary §15.9]].
+> - The case $p = 1$: [[§15a The Dominated Convergence Theorem#^cor-15-9|Corollary §15.9]].
 > - The $L^p$ analogue of [[§14 Series#^prop-14-6|absolute convergence implies convergence (451 §14.6)]]; in a normed space this property is equivalent to completeness, which is how it drives [[Riesz–Fischer Theorem|Riesz–Fischer]].
 
 ## $L^p$ Convergence and Completeness
@@ -191,7 +191,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^def-19-new5
 
 > [!remark] Remark
-> The metric $d(f, g) = \|f - g\|_p$ makes $(L^p(E), d)$ a metric space ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]; this follows from the norm axioms verified [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|above]]). Completeness of $L^p$ in this metric is the content of the [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] below.
+> The metric $d(f, g) = \|f - g\|_p$ makes $(L^p(E), d)$ a metric space ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]]; this follows from the norm axioms verified [[§19a Lᵖ as a Banach Space#^thm-19-10|above]]). Completeness of $L^p$ in this metric is the content of the [[Riesz–Fischer Theorem|Riesz–Fischer theorem]] below.
 
 ^rem-19-3
 
@@ -208,7 +208,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 ^pf-19-15
 
-*Uses:* [[Minkowski's Inequality|§19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|§19.10]]
+*Uses:* [[Minkowski's Inequality|§19.9]], [[§19a Lᵖ as a Banach Space#^thm-19-10|§19.10]]
 
 > [!remark]- Connections
 > - (i) is uniqueness of limits in a metric space ([[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451 Rem. §13.4]]; [[§8 Hausdorff Spaces#^thm-8-3|590 §8.3]]), with “equal” meaning equal a.e.
@@ -229,17 +229,17 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \sum_{j=0}^{\infty} \|g_j\|_p \leq \|f_{k_1}\|_p + \sum_{j=1}^{\infty} \frac{1}{2^j} < \infty.
 > $$
 >
-> By the $L^p$ absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|Corollary §19.14]]), $\sum_{j=0}^{\infty} g_j(x)$ converges absolutely for a.e. $x \in E$. Define $f(x) = \sum_{j=0}^{\infty} g_j(x)$ where the series converges (and $f(x) = 0$ elsewhere). Since the partial sums telescope:
+> By the $L^p$ absolute series test ([[§19a Lᵖ as a Banach Space#^cor-19-14|Corollary §19.14]]), $\sum_{j=0}^{\infty} g_j(x)$ converges absolutely for a.e. $x \in E$. Define $f(x) = \sum_{j=0}^{\infty} g_j(x)$ where the series converges (and $f(x) = 0$ elsewhere). Since the partial sums telescope:
 >
 > $$
 > f_{k_{l+1}}(x) = \sum_{j=0}^{l} g_j(x) \to f(x) \quad \text{a.e. on } E.
 > $$
 >
-> Moreover, $f \in L^p$: by the $L^p$ absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|Corollary §19.14]]), $\|f\|_p = \|\sum g_j\|_p \leq \sum \|g_j\|_p < \infty$.
+> Moreover, $f \in L^p$: by the $L^p$ absolute series test ([[§19a Lᵖ as a Banach Space#^cor-19-14|Corollary §19.14]]), $\|f\|_p = \|\sum g_j\|_p \leq \sum \|g_j\|_p < \infty$.
 
 ^pf-19-16
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new4|Def. §19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]
+*Uses:* [[§19a Lᵖ as a Banach Space#^def-19-new4|Def. §19.9]], [[§19a Lᵖ as a Banach Space#^cor-19-14|§19.14]]
 
 > [!theorem] Corollary §19.17: $L^p$ Convergence Implies A.E. Convergent Subsequence
 > If $f_k \to f$ in $L^p(E)$ ($1 \leq p < \infty$), then there exists a subsequence $\{f_{k_j}\}$ with $f_{k_j}(x) \to f(x)$ for a.e. $x \in E$.
@@ -247,14 +247,14 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^cor-19-17
 
 > [!proof]+ Proof
-> Since $f_k \to f$ in $L^p$, $\{f_k\}$ is Cauchy in $L^p$. By [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|the lemma]], there exists a subsequence $\{f_{k_j}\}$ converging a.e. to some $g \in L^p$. By uniqueness of $L^p$ limits ([[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-15|Proposition §19.15]]), $f = g$ a.e., so $f_{k_j} \to f$ a.e.
+> Since $f_k \to f$ in $L^p$, $\{f_k\}$ is Cauchy in $L^p$. By [[§19a Lᵖ as a Banach Space#^lem-19-16|the lemma]], there exists a subsequence $\{f_{k_j}\}$ converging a.e. to some $g \in L^p$. By uniqueness of $L^p$ limits ([[§19a Lᵖ as a Banach Space#^prop-19-15|Proposition §19.15]]), $f = g$ a.e., so $f_{k_j} \to f$ a.e.
 
 ^pf-19-17
 
-*Uses:* [[Minkowski's Inequality|§19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-15|§19.15]]
+*Uses:* [[Minkowski's Inequality|§19.9]], [[§19a Lᵖ as a Banach Space#^lem-19-16|§19.16]], [[§19a Lᵖ as a Banach Space#^prop-19-15|§19.15]]
 
 > [!remark]- Connections
-> - The case $p = 1$ is the step “every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence” in [[§18 Differentiation Theory#^thm-18-26|Differentiation of the Integral (§18.26)]].
+> - The case $p = 1$ is the step “every $L^1$-convergent sequence has a pointwise a.e. convergent subsequence” in [[§18b Differentiating the Integral#^thm-18-26|Differentiation of the Integral (§18.26)]].
 > - Only a subsequence: $L^p$ convergence does not imply a.e. convergence, and a.e. convergence upgrades to $L^1$ convergence under domination ([[Dominated Convergence Theorem|DCT]]).
 
 > [!theorem] Theorem §19.18: Riesz–Fischer Theorem
@@ -273,7 +273,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 >
 > So $\{f_k\}$ is uniformly Cauchy on $E \setminus Z$. By completeness of $\mathbb{R}$ ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]), there exists a bounded function $f$ on $E \setminus Z$ such that $f_k \to f$ [[§24 Uniform Convergence#^def-24-2|uniformly]] on $E \setminus Z$. Set $f = 0$ on $Z$. Then $f \in L^\infty(E)$ and $\|f_k - f\|_\infty \to 0$.
 >
-> **Case 2: $1 \leq p < \infty$.** Let $\{f_k\}$ be Cauchy in $L^p(E)$. By the [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|Cauchy subsequence lemma]], there exists a subsequence $\{f_{k_j}\}$ and $f \in L^p(E)$ with $f_{k_j} \to f$ a.e.
+> **Case 2: $1 \leq p < \infty$.** Let $\{f_k\}$ be Cauchy in $L^p(E)$. By the [[§19a Lᵖ as a Banach Space#^lem-19-16|Cauchy subsequence lemma]], there exists a subsequence $\{f_{k_j}\}$ and $f \in L^p(E)$ with $f_{k_j} \to f$ a.e.
 >
 > It remains to show $f_k \to f$ in $L^p$. For every $\varepsilon > 0$, there exists $N$ such that $\|f_k - f_m\|_p < \varepsilon$ for all $k, m \geq N$. Fix $k \geq N$. For any $k_j \geq N$:
 >
@@ -291,11 +291,11 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 ^pf-19-18
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-8|Def. §19.8]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new4|Def. §19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new5|Def. §19.10]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-16|§19.16]], [[Fatou's Lemma|§14.15]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]]
+*Uses:* [[§19a Lᵖ as a Banach Space#^def-19-8|Def. §19.8]], [[§19a Lᵖ as a Banach Space#^def-19-new4|Def. §19.9]], [[§19a Lᵖ as a Banach Space#^def-19-new5|Def. §19.10]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]], [[§19a Lᵖ as a Banach Space#^lem-19-16|§19.16]], [[Fatou's Lemma|§14.15]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]]
 
 > [!remark]- Connections
 > - $L^p(E)$ is thus a [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|complete metric space (451 Def. §13.3)]], like $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[§19 Inner Products and Norms#^ladr-6-4|LADR 6.4]].
-> - The engine is the absolute series test ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|§19.14]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
+> - The engine is the absolute series test ([[§19a Lᵖ as a Banach Space#^cor-19-14|§19.14]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
 > - Sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|556 Thm. §16.5]] ($\ell^p$ is a Banach space); for $p = 2$ it makes $L^2$ a Hilbert space in the sense of [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]].
 
 ## Density and Separability
@@ -336,7 +336,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^thm-19-19
 
 > [!proof]+ Proof
-> **(i) Simple functions are dense in $L^p$.** Let $f \in L^p(E)$. By the [[§12 Measurable Functions#^thm-12-15|Simple Function Approximation Theorem]], there exists a sequence of simple functions $\varphi_k$ with $|\varphi_k(x)| \leq |f(x)|$ for all $x$ and $\varphi_k(x) \to f(x)$ pointwise.
+> **(i) Simple functions are dense in $L^p$.** Let $f \in L^p(E)$. By the [[§12b Simple Functions and Modes of Convergence#^thm-12-15|Simple Function Approximation Theorem]], there exists a sequence of simple functions $\varphi_k$ with $|\varphi_k(x)| \leq |f(x)|$ for all $x$ and $\varphi_k(x) \to f(x)$ pointwise.
 >
 > Then $|\varphi_k - f|^p \leq (|\varphi_k| + |f|)^p \leq (2|f|)^p = 2^p|f|^p$. Since $f \in L^p$, $2^p|f|^p \in L^1(E)$. By [[Dominated Convergence Theorem|DCT]]:
 >
@@ -344,9 +344,9 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \int_E |\varphi_k - f|^p\,dx \to 0, \qquad \text{i.e.,} \quad \|\varphi_k - f\|_p \to 0.
 > $$
 >
-> **(ii) Step functions are dense in $L^p$.** By (i), it suffices to approximate simple functions by [[§15 The General Lebesgue Integral#^def-15-2|step functions]]. Let $\varphi = \sum_{j=1}^{m} a_j \chi_{S_j}$ with $m(S_j) < \infty$ and the $S_j$ disjoint.
+> **(ii) Step functions are dense in $L^p$.** By (i), it suffices to approximate simple functions by [[§15a The Dominated Convergence Theorem#^def-15-2|step functions]]. Let $\varphi = \sum_{j=1}^{m} a_j \chi_{S_j}$ with $m(S_j) < \infty$ and the $S_j$ disjoint.
 >
-> It suffices to approximate each $\chi_S$ (with $m(S) < \infty$) by a step function in $\|\cdot\|_p$. By the approximation theorem ([[§11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]]), for any $\delta > 0$ there exist disjoint rectangles $I_1, \ldots, I_q$ with $m(S \triangle \bigcup I_j) < \delta$ ([[§11 Borel Sets and Measure Spaces#^def-11-9|symmetric difference]]). Let $\psi = \sum \chi_{I_j}$. Then:
+> It suffices to approximate each $\chi_S$ (with $m(S) < \infty$) by a step function in $\|\cdot\|_p$. By the approximation theorem ([[§11a Approximation and Continuity of Measure#^thm-11-11|§11.11]]), for any $\delta > 0$ there exist disjoint rectangles $I_1, \ldots, I_q$ with $m(S \triangle \bigcup I_j) < \delta$ ([[§11a Approximation and Continuity of Measure#^def-11-9|symmetric difference]]). Let $\psi = \sum \chi_{I_j}$. Then:
 >
 > $$
 > \|\chi_S - \psi\|_p^p = \int |\chi_S - \chi_{\bigcup I_j}|^p\,dx = m(S \triangle \textstyle\bigcup I_j) < \delta,
@@ -368,7 +368,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 ^pf-19-19
 
-*Uses:* [[§12 Measurable Functions#^thm-12-15|§12.15]], [[Dominated Convergence Theorem|§15.8]], [[§15 The General Lebesgue Integral#^def-15-2|Def. §15.2]], [[§11 Borel Sets and Measure Spaces#^thm-11-11|§11.11]], [[§11 Borel Sets and Measure Spaces#^def-11-9|Def. §11.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-11|§19.11]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]]
+*Uses:* [[§12b Simple Functions and Modes of Convergence#^thm-12-15|§12.15]], [[Dominated Convergence Theorem|§15.8]], [[§15a The Dominated Convergence Theorem#^def-15-2|Def. §15.2]], [[§11a Approximation and Continuity of Measure#^thm-11-11|§11.11]], [[§11a Approximation and Continuity of Measure#^def-11-9|Def. §11.9]], [[§19a Lᵖ as a Banach Space#^cor-19-11|§19.11]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]]
 
 > [!remark]- Connections
 > - The $L^1$ versions: [[§16 The L¹ Space and Density Theorems#^thm-16-5|§16.5]], [[§16 The L¹ Space and Density Theorems#^thm-16-6|§16.6]], [[Continuous Functions of Compact Support are Dense in L¹|§16.7]].
@@ -382,24 +382,24 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > C_c(\mathbb{R}^n) \;\longrightarrow\; \text{step functions} \;\longrightarrow\; \text{simple functions} \;\longrightarrow\; L^p(E),
 > $$
 >
-> with each class dense in the next in the $L^p$ norm ($1 \leq p < \infty$). This chain fails for $p = \infty$, but not at the last step: simple functions are dense in $L^\infty$ (uniform approximation of bounded functions, [[§12 Measurable Functions#^thm-12-17|Theorem §12.17]], applied off a null set). It breaks at step functions and $C_c$: for $L^\infty$, continuous functions are *not* dense (e.g., $\chi_{[0,1]}$ cannot be uniformly approximated by continuous functions on $\mathbb{R}$).
+> with each class dense in the next in the $L^p$ norm ($1 \leq p < \infty$). This chain fails for $p = \infty$, but not at the last step: simple functions are dense in $L^\infty$ (uniform approximation of bounded functions, [[§12b Simple Functions and Modes of Convergence#^thm-12-17|Theorem §12.17]], applied off a null set). It breaks at step functions and $C_c$: for $L^\infty$, continuous functions are *not* dense (e.g., $\chi_{[0,1]}$ cannot be uniformly approximated by continuous functions on $\mathbb{R}$).
 
 ^rem-19-4
 
 > [!remark]- Connections
-> - The $L^1$ chain: [[§16 The L¹ Space and Density Theorems#^rem-16-1|Remark §16.1]]. Why $\chi_{[0,1]}$ fails in $L^\infty$: a uniform limit of continuous functions is continuous ([[§12 Measurable Functions#^thm-12-16|§12.16]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]).
+> - The $L^1$ chain: [[§16 The L¹ Space and Density Theorems#^rem-16-1|Remark §16.1]]. Why $\chi_{[0,1]}$ fails in $L^\infty$: a uniform limit of continuous functions is continuous ([[§12b Simple Functions and Modes of Convergence#^thm-12-16|§12.16]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]).
 
 > [!theorem] Corollary §19.20: $L^p$ is Separable for $1 \leq p < \infty$
-> Let $1 \leq p < \infty$. Then $L^p(E)$ is [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new6|separable]].
+> Let $1 \leq p < \infty$. Then $L^p(E)$ is [[§19a Lᵖ as a Banach Space#^def-19-new6|separable]].
 
 ^cor-19-20
 
 > [!proof]+ Proof
-> Let $\mathcal{D} = \{\sum_{j=1}^{n} c_j \chi_{I_j} : c_j \in \mathbb{Q},\; I_j \text{ intervals with rational endpoints, mutually disjoint}, \; n \in \mathbb{N}\}$. Then $\mathcal{D}$ is countable (rational coefficients, rational endpoints, finite sums). By density of step functions in $L^p$ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19]]), any $f \in L^p$ can be approximated by step functions, which can in turn be approximated by elements of $\mathcal{D}$ (replace real coefficients and endpoints by rational ones). Hence $\mathcal{D}$ is dense.
+> Let $\mathcal{D} = \{\sum_{j=1}^{n} c_j \chi_{I_j} : c_j \in \mathbb{Q},\; I_j \text{ intervals with rational endpoints, mutually disjoint}, \; n \in \mathbb{N}\}$. Then $\mathcal{D}$ is countable (rational coefficients, rational endpoints, finite sums). By density of step functions in $L^p$ ([[§19a Lᵖ as a Banach Space#^thm-19-19|Theorem §19.19]]), any $f \in L^p$ can be approximated by step functions, which can in turn be approximated by elements of $\mathcal{D}$ (replace real coefficients and endpoints by rational ones). Hence $\mathcal{D}$ is dense.
 
 ^pf-19-20
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new6|Def. §19.10]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|§19.19]]
+*Uses:* [[§19a Lᵖ as a Banach Space#^def-19-9|Def. §19.9]], [[§19a Lᵖ as a Banach Space#^def-19-new6|Def. §19.10]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§19a Lᵖ as a Banach Space#^thm-19-19|§19.19]]
 
 > [!remark]- Connections
 > - Same result in 556, proved with rational rectangles in ℝⁿ: [[§25 Sequence and Function Spaces#^prop-25-4|556 Prop. §25.4]]; the case $L^2(\mathbb{R}^n)$ is [[§32 Position Eigenstates and Continuous Resolutions#^thm-32-2|556 Thm. §32.2]].
@@ -416,11 +416,11 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \|f_s - f_t\|_\infty = \|\chi_{(\min(s,t),\, \max(s,t))}\|_\infty = 1.
 > $$
 >
-> So $\{f_t\}_{t \in (0,1)}$ is an [[§4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by [[Continuity of Measure|continuity of measure]] from below and [[§11 Borel Sets and Measure Spaces#^prop-11-13|from above]] (using $m(E_0) < \infty$ and that each hyperplane $\{x_1 = t\}$ is null), $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
+> So $\{f_t\}_{t \in (0,1)}$ is an [[§4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by [[Continuity of Measure|continuity of measure]] from below and [[§11a Approximation and Continuity of Measure#^prop-11-13|from above]] (using $m(E_0) < \infty$ and that each hyperplane $\{x_1 = t\}$ is null), $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
 
 ^pf-19-21
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new6|Def. §19.10]], [[Continuity of Measure|§11.12]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19a Lᵖ as a Banach Space#^def-19-9|Def. §19.9]], [[§19a Lᵖ as a Banach Space#^def-19-new6|Def. §19.10]], [[Continuity of Measure|§11.12]], [[§11a Approximation and Continuity of Measure#^prop-11-13|§11.13]]
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[§18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.

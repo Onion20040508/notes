@@ -184,6 +184,8 @@ Here $u(x,y,z)$ is the function in Cartesian coordinates and $v(\psi, \theta, r)
 
 ^rem-19-2
 
+*Chain ([[Radial functions|radial functions]]):* ← [[§17b Radial Functions|Chapter 5]]
+
 > [!remark]- Connections
 > - Computational version: [[§4★ Singular Boundary Value Problems#^lem-4-2|341 Lemma §4.2]] (the substitution $u=v/\rho$ turns the radial part into $v''/\rho$, used for radial heat flow in a sphere).
 > - In physics form: [[§122★ Electrostatic Potential#^prop-122-1|342 Prop. §122.1]] (the potential of a point charge, proportional to 1/r, is harmonic away from the charges).

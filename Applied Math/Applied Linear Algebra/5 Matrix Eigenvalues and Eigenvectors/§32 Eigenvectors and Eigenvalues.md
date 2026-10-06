@@ -83,13 +83,13 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 ^ex-32-1
 
 > [!remark] Remark: Warning — Row Reduction Does Not Find Eigenvalues
-> Row reduction was used in Example §32.1 to find eigen*vectors*, once the eigenvalue was known. It cannot be used to find eigen*values*: an echelon form of $A$ usually does not display the eigenvalues of $A$, because row operations change them. (The tool for eigenvalues is the characteristic equation, [[§33 The Characteristic Equation#^thm-33-4|Theorem §33.4]].)
+> Row reduction was used in [[§32 Eigenvectors and Eigenvalues#^ex-32-1|Example §32.1]] to find eigen*vectors*, once the eigenvalue was known. It cannot be used to find eigen*values*: an echelon form of $A$ usually does not display the eigenvalues of $A$, because row operations change them. (The tool for eigenvalues is the characteristic equation, [[§33 The Characteristic Equation#^thm-33-4|Theorem §33.4]].)
 >
 > *Lay: 5.1 (text)*
 
 ^rem-32-3
 
-The equivalence of $A\mathbf{x} = 7\mathbf{x}$ and $(A - 7I)\mathbf{x} = \mathbf{0}$ in Example §32.1 holds for any $\lambda$ in place of $7$: $\lambda$ is an eigenvalue of $A$ if and only if
+The equivalence of $A\mathbf{x} = 7\mathbf{x}$ and $(A - 7I)\mathbf{x} = \mathbf{0}$ in [[§32 Eigenvectors and Eigenvalues#^ex-32-1|Example §32.1]] holds for any $\lambda$ in place of $7$: $\lambda$ is an eigenvalue of $A$ if and only if
 
 $$
 (A - \lambda I)\mathbf{x} = \mathbf{0} \qquad (3)
@@ -104,7 +104,7 @@ has a nontrivial solution.
 
 ^def-32-2
 
-For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of all multiples of $(1, 1)$, the line through $(1, 1)$ and the origin. From part (a), the eigenspace for $\lambda = -4$ is the line through $(6, -5)$.
+For the matrix of [[§32 Eigenvectors and Eigenvalues#^ex-32-1|Example §32.1]], the eigenspace for $\lambda = 7$ consists of all multiples of $(1, 1)$, the line through $(1, 1)$ and the origin. From part (a), the eigenspace for $\lambda = -4$ is the line through $(6, -5)$.
 
 ![[m235-32-1.svg]]
 *The two eigenspaces of $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$. On the line through $(1, 1)$ (blue) the transformation $\mathbf{x} \mapsto A\mathbf{x}$ is multiplication by $7$: $\mathbf{u} = (1, 1)$ goes to $(7, 7)$. On the line through $(6, -5)$ (red) it is multiplication by $-4$, which reverses direction: $\mathbf{w} = (3/2, -5/4)$ goes to $(-6, 5)$. Every other vector, such as $\mathbf{v} = (3, -2)$ (gray), is moved off its own line: $A\mathbf{v} = (-9, 11)$.*
@@ -184,9 +184,9 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 > - Rigorous treatment: [[§16 Upper-Triangular Matrices#^ladr-5-41|LADR 5.41]] (the eigenvalues of an operator with an upper-triangular matrix are exactly its diagonal entries), proved there without determinants.
 
 > [!example] Example §32.3: Eigenvalues by Inspection
-> Let $A = \begin{bmatrix} 3 & 6 & -8 \\ 0 & 0 & 6 \\ 0 & 0 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 0 & 0 \\ -2 & 1 & 0 \\ 5 & 3 & 4 \end{bmatrix}$. By Theorem §32.1, the eigenvalues of the upper triangular $A$ are $3$, $0$ and $2$, and the eigenvalues of the lower triangular $B$ are $4$ and $1$ (the diagonal entry $4$ occurs twice, but it is one eigenvalue).
+> Let $A = \begin{bmatrix} 3 & 6 & -8 \\ 0 & 0 & 6 \\ 0 & 0 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 0 & 0 \\ -2 & 1 & 0 \\ 5 & 3 & 4 \end{bmatrix}$. By [[§32 Eigenvectors and Eigenvalues#^thm-32-1|Theorem §32.1]], the eigenvalues of the upper triangular $A$ are $3$, $0$ and $2$, and the eigenvalues of the lower triangular $B$ are $4$ and $1$ (the diagonal entry $4$ occurs twice, but it is one eigenvalue).
 >
-> Since $0$ is an eigenvalue of $A$, $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution, and $A$ is not invertible (Theorem §32.2 below). Indeed, its second column is $2$ times its first.
+> Since $0$ is an eigenvalue of $A$, $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution, and $A$ is not invertible ([[§32 Eigenvectors and Eigenvalues#^thm-32-2|Theorem §32.2]] below). Indeed, its second column is $2$ times its first.
 >
 > *Lay: Example 5.1.5*
 
@@ -272,7 +272,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 ^cor-32-4
 
 > [!proof]+ Proof
-> If $\lambda_1, \ldots, \lambda_r$ are distinct eigenvalues of $A$, choose an eigenvector $\mathbf{v}_i$ for each. By Theorem §32.3, $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is a linearly independent set in $\mathbb{R}^n$, so $r \le n$ ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). (The lecture gives a second reason: the eigenvalues are the roots of a polynomial of degree $n$, [[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]], and such a polynomial has at most $n$ roots.)
+> If $\lambda_1, \ldots, \lambda_r$ are distinct eigenvalues of $A$, choose an eigenvector $\mathbf{v}_i$ for each. By [[§32 Eigenvectors and Eigenvalues#^thm-32-3|Theorem §32.3]], $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is a linearly independent set in $\mathbb{R}^n$, so $r \le n$ ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). (The lecture gives a second reason: the eigenvalues are the roots of a polynomial of degree $n$, [[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]], and such a polynomial has at most $n$ roots.)
 
 ^pf-32-4
 
@@ -343,7 +343,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 >
 > **Eigenvectors.** $A - \varphi I = \begin{bmatrix} -\varphi & 1 \\ 1 & 1 - \varphi \end{bmatrix}$. Its second row times $\varphi$ is $(\varphi, \varphi - \varphi^2) = (\varphi, -1)$, the negative of the first row: the rows are proportional, as they must be for an eigenvalue, and the system reduces to $-\varphi u_1 + u_2 = 0$. Taking $u_1 = 1$ gives $\mathbf{u} = \begin{bmatrix} 1 \\ \varphi \end{bmatrix}$. In the same way $\mathbf{v} = \begin{bmatrix} 1 \\ \psi \end{bmatrix}$ is an eigenvector for $\psi$.
 >
-> **Decompose $\mathbf{v}_0$ and apply Theorem §32.5.** $\mathbf{u} - \mathbf{v} = \begin{bmatrix} 0 \\ \varphi - \psi \end{bmatrix} = \sqrt5\,\mathbf{v}_0$, so $\mathbf{v}_0 = \frac{1}{\sqrt5}(\mathbf{u} - \mathbf{v})$ and
+> **Decompose $\mathbf{v}_0$ and apply [[§32 Eigenvectors and Eigenvalues#^thm-32-5|Theorem §32.5]].** $\mathbf{u} - \mathbf{v} = \begin{bmatrix} 0 \\ \varphi - \psi \end{bmatrix} = \sqrt5\,\mathbf{v}_0$, so $\mathbf{v}_0 = \frac{1}{\sqrt5}(\mathbf{u} - \mathbf{v})$ and
 >
 > $$
 > \mathbf{v}_n = A^n\mathbf{v}_0 = \frac{1}{\sqrt5}\big(\varphi^n\mathbf{u} - \psi^n\mathbf{v}\big) = \frac{1}{\sqrt5}\begin{bmatrix} \varphi^n - \psi^n \\ \varphi^{n+1} - \psi^{n+1} \end{bmatrix}, \qquad F_n = \frac{\varphi^n - \psi^n}{\sqrt5} .
@@ -355,6 +355,8 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 
 ^ex-32-4
 
+*Chain: earlier in [[§31a The Fibonacci Numbers|Chapter 4]]*
+
 > [!example] Example §32.5: A Power Applied to a Vector
 > Let $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$. Find $A^{10}\begin{bmatrix} 1 \\ 0 \end{bmatrix}$.
 >
@@ -362,7 +364,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 >
 > **Eigenvectors.** For $\lambda = 5$: $A - 5I = \begin{bmatrix} -4 & 2 \\ 4 & -2 \end{bmatrix}$, and $-4u_1 + 2u_2 = 0$ gives $\mathbf{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}$. For $\lambda = -1$: $A + I = \begin{bmatrix} 2 & 2 \\ 4 & 4 \end{bmatrix}$, and $2v_1 + 2v_2 = 0$ gives $\mathbf{v} = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$.
 >
-> **Decompose.** $\mathbf{u} + 2\mathbf{v} = \begin{bmatrix} 3 \\ 0 \end{bmatrix}$, so $\mathbf{e}_1 = \frac13(\mathbf{u} + 2\mathbf{v})$. By Theorem §32.5, $A^{10}\mathbf{u} = 5^{10}\mathbf{u}$ and $A^{10}\mathbf{v} = (-1)^{10}\mathbf{v} = \mathbf{v}$, so
+> **Decompose.** $\mathbf{u} + 2\mathbf{v} = \begin{bmatrix} 3 \\ 0 \end{bmatrix}$, so $\mathbf{e}_1 = \frac13(\mathbf{u} + 2\mathbf{v})$. By [[§32 Eigenvectors and Eigenvalues#^thm-32-5|Theorem §32.5]], $A^{10}\mathbf{u} = 5^{10}\mathbf{u}$ and $A^{10}\mathbf{v} = (-1)^{10}\mathbf{v} = \mathbf{v}$, so
 >
 > $$
 > A^{10}\mathbf{e}_1 = \frac13\big(5^{10}\mathbf{u} + 2\mathbf{v}\big) = \frac13\left(5^{10}\begin{bmatrix} 1 \\ 2 \end{bmatrix} + 2\begin{bmatrix} 1 \\ -1 \end{bmatrix}\right) = \begin{bmatrix} (5^{10} + 2)/3 \\ (2\cdot 5^{10} - 2)/3 \end{bmatrix} = \begin{bmatrix} 3\,255\,209 \\ 6\,510\,416 \end{bmatrix} .

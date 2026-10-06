@@ -29,7 +29,7 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 ^def-4-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§9 Matrices#^ladr-3-50|LADR 3.50]] proves this as a property of matrix multiplication (there $A\mathbf{b}$ is defined entrywise, and "combination of the columns" is the theorem). Lay makes the column picture the definition and derives the entrywise rule (Proposition §4.4).
+> - Rigorous treatment: [[§9 Matrices#^ladr-3-50|LADR 3.50]] proves this as a property of matrix multiplication (there $A\mathbf{b}$ is defined entrywise, and "combination of the columns" is the theorem). Lay makes the column picture the definition and derives the entrywise rule ([[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4]]).
 
 > [!definition] Definition §4.2: Matrix Equation
 > An equation of the form $A\mathbf{x} = \mathbf{b}$, with $A$ a given $m \times n$ matrix, $\mathbf{b}$ a given vector in $\mathbb{R}^m$ and $\mathbf{x}$ unknown, is a **matrix equation**, as distinguished from a vector equation $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = \mathbf{b}$.
@@ -48,7 +48,7 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 > = \begin{bmatrix} 3 \\ 6 \end{bmatrix} .
 > $$
 >
-> By the row–vector rule (Proposition §4.4 below), each entry is a row of $A$ times $\mathbf{x}$: $1 \cdot 4 + 2 \cdot 3 + (-1) \cdot 7 = 3$ and $0 \cdot 4 + (-5) \cdot 3 + 3 \cdot 7 = 6$.
+> By the row–vector rule ([[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4]] below), each entry is a row of $A$ times $\mathbf{x}$: $1 \cdot 4 + 2 \cdot 3 + (-1) \cdot 7 = 3$ and $0 \cdot 4 + (-5) \cdot 3 + 3 \cdot 7 = 6$.
 >
 > **(b)**
 >
@@ -105,7 +105,7 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 ^thm-4-1
 
 > [!proof]+ Proof
-> By Definition §4.1, $A\mathbf{x}$ is the vector $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n$, so $\mathbf{x}$ satisfies (4) if and only if its entries satisfy (5). By [[§3 Vector Equations#^thm-3-3|Theorem §3.3]], (5) has the same solution set as the system with augmented matrix (6).
+> By [[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]], $A\mathbf{x}$ is the vector $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n$, so $\mathbf{x}$ satisfies (4) if and only if its entries satisfy (5). By [[§3 Vector Equations#^thm-3-3|Theorem §3.3]], (5) has the same solution set as the system with augmented matrix (6).
 
 ^pf-4-1
 
@@ -123,7 +123,7 @@ So a linear system can be viewed in three equivalent ways, as a matrix equation,
 ^cor-4-2
 
 > [!proof]+ Proof
-> A solution $\mathbf{x}$ is a list of weights with $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = A\mathbf{x} = \mathbf{b}$ (Definition §4.1), and such weights exist exactly when $\mathbf{b}$ is in the span ([[§3 Vector Equations#^def-3-4|Definition §3.4]]).
+> A solution $\mathbf{x}$ is a list of weights with $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = A\mathbf{x} = \mathbf{b}$ ([[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]]), and such weights exist exactly when $\mathbf{b}$ is in the span ([[§3 Vector Equations#^def-3-4|Definition §3.4]]).
 
 ^pf-4-2
 
@@ -164,7 +164,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 ^ex-4-2
 
 > [!remark] Remark: Two Descriptions of Every Object
-> The plane of Example §4.2 has two descriptions: as a span, $\{c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + c_3\mathbf{v}_3\}$ (a *parametric* description), and as the solution set of the equation $b_1 - \tfrac12 b_2 + b_3 = 0$ (a *constraint* description). The lecture's "general principle": every object in linear algebra has both a span-like description and an equation-like description, and row reduction converts one into the other. Here row reducing $[\,A\ \ \mathbf{b}\,]$ turned the span into an equation; solving a system ([[§2 Row Reduction and Echelon Forms|§2]], [[§5 Solution Sets of Linear Systems|§5]]) turns equations into a span.
+> The plane of [[§4 The Matrix Equation Ax = b#^ex-4-2|Example §4.2]] has two descriptions: as a span, $\{c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + c_3\mathbf{v}_3\}$ (a *parametric* description), and as the solution set of the equation $b_1 - \tfrac12 b_2 + b_3 = 0$ (a *constraint* description). The lecture's "general principle": every object in linear algebra has both a span-like description and an equation-like description, and row reduction converts one into the other. Here row reducing $[\,A\ \ \mathbf{b}\,]$ turned the span into an equation; solving a system ([[§2 Row Reduction and Echelon Forms|§2]], [[§5 Solution Sets of Linear Systems|§5]]) turns equations into a span.
 >
 > *Source: 235 lecture L3*
 
@@ -193,7 +193,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 ^thm-4-3
 
 > [!proof]+ Proof
-> **(a) ⇔ (b) ⇔ (c).** (a) and (b) are equivalent by Corollary §4.2 applied to each $\mathbf{b}$, and (b) and (c) say the same thing by Definition §4.3. ("By definition", as the lecture puts it: $\mathbf{b} = a_1\mathbf{v}_1 + \cdots + a_n\mathbf{v}_n$ is the same as $\mathbf{b} = A\mathbf{a}$ with $\mathbf{a} = (a_1, \ldots, a_n)$.) So it suffices to show that (a) and (d) are both true or both false.
+> **(a) ⇔ (b) ⇔ (c).** (a) and (b) are equivalent by [[§4 The Matrix Equation Ax = b#^cor-4-2|Corollary §4.2]] applied to each $\mathbf{b}$, and (b) and (c) say the same thing by [[§4 The Matrix Equation Ax = b#^def-4-3|Definition §4.3]]. ("By definition", as the lecture puts it: $\mathbf{b} = a_1\mathbf{v}_1 + \cdots + a_n\mathbf{v}_n$ is the same as $\mathbf{b} = A\mathbf{a}$ with $\mathbf{a} = (a_1, \ldots, a_n)$.) So it suffices to show that (a) and (d) are both true or both false.
 >
 > Let $U$ be an echelon form of $A$. Given $\mathbf{b}$ in $\mathbb{R}^m$, the row operations that reduce $A$ to $U$ reduce $[\,A\ \ \mathbf{b}\,]$ to $[\,U\ \ \mathbf{d}\,]$ for some $\mathbf{d}$ in $\mathbb{R}^m$:
 >
@@ -213,7 +213,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 > - In operator language: the columns of $A$ span $\mathbb{R}^m$ exactly when the map $\mathbf{x} \mapsto A\mathbf{x}$ is onto ([[§9 The Matrix of a Linear Transformation#^thm-9-3|Theorem §9.3]]). A pivot in every row needs at least $m$ columns, so $n < m$ makes (a)–(d) fail; Axler proves this by dimension: [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] (no linear map to a higher-dimensional space is surjective), [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]].
 
 > [!remark] Remark: Warning — Coefficient Matrix, Not Augmented Matrix
-> Theorem §4.3 is about the *coefficient* matrix $A$. If the augmented matrix $[\,A\ \ \mathbf{b}\,]$ has a pivot position in every row, the equation $A\mathbf{x} = \mathbf{b}$ may or may not be consistent: the pivot in the last row may sit in the augmented column. For example, $[\,A\ \ \mathbf{b}\,] = \begin{bmatrix} 1 & 0 & 2 \\ 0 & 0 & 1 \end{bmatrix}$ has a pivot in every row but is inconsistent.
+> [[§4 The Matrix Equation Ax = b#^thm-4-3|Theorem §4.3]] is about the *coefficient* matrix $A$. If the augmented matrix $[\,A\ \ \mathbf{b}\,]$ has a pivot position in every row, the equation $A\mathbf{x} = \mathbf{b}$ may or may not be consistent: the pivot in the last row may sit in the augmented column. For example, $[\,A\ \ \mathbf{b}\,] = \begin{bmatrix} 1 & 0 & 2 \\ 0 & 0 & 1 \end{bmatrix}$ has a pivot in every row but is inconsistent.
 
 ^rem-4-2
 
@@ -257,7 +257,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 ^def-4-4
 
 > [!remark]- Remark: Numerical Note — Columns or Rows?
-> A fast program computes $A\mathbf{x}$ with data stored in contiguous memory. Fortran stores a matrix by columns, so professional Fortran codes compute $A\mathbf{x}$ as a linear combination of the columns (Definition §4.1); C stores matrices by rows, so there $A\mathbf{x}$ should be computed by the row–vector rule (Proposition §4.4).
+> A fast program computes $A\mathbf{x}$ with data stored in contiguous memory. Fortran stores a matrix by columns, so professional Fortran codes compute $A\mathbf{x}$ as a linear combination of the columns ([[§4 The Matrix Equation Ax = b#^def-4-1|Definition §4.1]]); C stores matrices by rows, so there $A\mathbf{x}$ should be computed by the row–vector rule ([[§4 The Matrix Equation Ax = b#^prop-4-4|Proposition §4.4]]).
 
 ^rem-4-3
 
@@ -297,7 +297,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 These two properties are what makes $\mathbf{x} \mapsto A\mathbf{x}$ a *linear transformation* ([[§8 Introduction to Linear Transformations#^def-8-3|Definition §8.3]]).
 
 > [!example] Example §4.3: Checking Linearity
-> Let $A = \begin{bmatrix} 2 & 5 \\ 3 & 1 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 4 \\ -1 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} -3 \\ 5 \end{bmatrix}$. Verify Theorem §4.5(a).
+> Let $A = \begin{bmatrix} 2 & 5 \\ 3 & 1 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 4 \\ -1 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} -3 \\ 5 \end{bmatrix}$. Verify [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]](a).
 >
 > $$
 > \mathbf{u} + \mathbf{v} = \begin{bmatrix} 1 \\ 4 \end{bmatrix}, \qquad A(\mathbf{u} + \mathbf{v}) = \begin{bmatrix} 2 + 20 \\ 3 + 4 \end{bmatrix} = \begin{bmatrix} 22 \\ 7 \end{bmatrix} ;

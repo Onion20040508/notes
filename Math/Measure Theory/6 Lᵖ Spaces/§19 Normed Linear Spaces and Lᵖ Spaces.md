@@ -19,7 +19,7 @@ tags: [measure-theory, math551]
 > - Same definition in 556, over ℝ or ℂ, where subspaces, quotients and complements are developed: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
 
 > [!example] Example §19.1: Linear Spaces in This Course
-> $\mathbb{R}^n$, $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]), $BV([a,b])$ ([[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]]), and $AC([a,b])$ ([[§18 Differentiation Theory#^prop-18-11|Proposition §18.11]]) are all linear spaces.
+> $\mathbb{R}^n$, $L^1(E)$ ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]), $BV([a,b])$ ([[§18 Differentiation Theory#^prop-18-4|Proposition §18.4]]), and $AC([a,b])$ ([[§18c Absolute Continuity and the FTC#^prop-18-11|Proposition §18.11]]) are all linear spaces.
 
 ^ex-19-1
 
@@ -51,7 +51,7 @@ tags: [measure-theory, math551]
 > - Comparing norms on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] ($d$ vs. $d_\infty$).
 
 > [!example] Example §19.3: Norms on Function Spaces
-> $L^1(E)$: $\|f\|_1 = \int_E |f(x)|\,dx$ ([[§16 The L¹ Space and Density Theorems#^def-16-1|Def. §16.1]]). Then $(L^1(E), \|\cdot\|_1)$ is a normed linear space ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]).
+> $L^1(E)$: $\|f\|_1 = \int_E |f(x)|\,dx$ ([[§16 The L¹ Space and Density Theorems#^def-16-new1|Def. §16.2]]). Then $(L^1(E), \|\cdot\|_1)$ is a normed linear space ([[§16 The L¹ Space and Density Theorems#^thm-16-4|Theorem §16.4]]).
 >
 > $BV([a,b])$: $\bigvee_a^b(f)$ ([[§18 Differentiation Theory#^def-18-2|Def. §18.2]]) is a norm on $BV([a,b]) / \{\text{constants}\}$ (since $\bigvee_a^b(f) = 0$ iff $f$ is constant, not necessarily zero).
 
@@ -165,7 +165,7 @@ tags: [measure-theory, math551]
 ## $L^\infty$ and the Essential Supremum
 
 > [!definition] Definition §19.6: $L^\infty$ Space
-> Let $E \in \mathcal{M}(\mathbb{R}^n)$ and $f$ a measurable function on $E$. We say $f \in L^\infty(E)$ if there exists a constant $M > 0$ such that $|f(x)| \leq M$ for [[§12 Measurable Functions#^def-12-5|a.e.]] $x \in E$. Such $f$ is called **essentially bounded**.
+> Let $E \in \mathcal{M}(\mathbb{R}^n)$ and $f$ a measurable function on $E$. We say $f \in L^\infty(E)$ if there exists a constant $M > 0$ such that $|f(x)| \leq M$ for [[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|a.e.]] $x \in E$. Such $f$ is called **essentially bounded**.
 
 ^def-19-6
 
@@ -235,7 +235,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-3
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new3|Def. §19.7]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new3|Def. §19.7]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]], [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|§14.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]]
 
 ## Hölder's Inequality
 
@@ -281,7 +281,7 @@ tags: [measure-theory, math551]
 ^thm-19-5
 
 > [!proof]+ Proof
-> **Case 1: $\|g\|_{p'} = 0$.** Then $g = 0$ a.e. ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]]), so $fg = 0$ a.e., and both sides are $0$.
+> **Case 1: $\|g\|_{p'} = 0$.** Then $g = 0$ a.e. ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|Proposition §14.11]]), so $fg = 0$ a.e., and both sides are $0$.
 >
 > **Case 2: $\|g\|_{p'} \neq 0$ and $\|f\|_p = \infty$.** The right side is $\infty$, so the inequality holds trivially. (We use the convention $0 \cdot \infty = 0$. By symmetry, if $\|f\|_p = 0$ then $f = 0$ a.e. and both sides are $0$, and if $\|f\|_p \neq 0$ and $\|g\|_{p'} = \infty$ the right side is $\infty$. So from now on both norms lie in $(0, \infty)$.)
 >
@@ -313,7 +313,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-5
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|§14.11]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|§19.4]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-11|§14.11]], [[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|§14.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|§19.4]], [[§14a Consequences of the Monotone Convergence Theorem#^thm-14-8|§14.8]]
 
 > [!remark]- Connections
 > - $p = 2$ is the [[Cauchy–Schwarz inequality|Cauchy–Schwarz inequality (LADR 6.14)]] for the $L^2$ inner product of [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|the remark above]]; its Riemann-integral form for continuous functions is [[§19 Inner Products and Norms#^ladr-6-16|LADR 6.16(b)]].

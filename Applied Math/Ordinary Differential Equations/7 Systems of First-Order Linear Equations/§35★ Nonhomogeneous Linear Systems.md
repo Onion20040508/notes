@@ -27,7 +27,7 @@ For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g
 > \mathbf{x} = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t) + \mathbf{v}(t), \qquad (2)
 > $$
 >
-> where $c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is the general solution of the homogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]) and $\mathbf{v}(t)$ is a particular solution of (1).
+> where $c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is the general solution of the homogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-new1|Definition §30.3]]) and $\mathbf{v}(t)$ is a particular solution of (1).
 >
 > *BDP: 7.9 (text), Equation (2); Problem 7.9.12*
 
@@ -44,7 +44,7 @@ For the nonhomogeneous system $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g
 
 ^pf-35-1
 
-*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|§30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]]
+*Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|§30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-new1|Def. §30.3]]
 
 > [!remark]- Connections
 > - The same structure for linear algebraic systems: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (solutions of $A\mathbf{x} = \mathbf{b}$ are a translate of the solutions of $A\mathbf{x} = \mathbf{0}$). In LADR's terms, the solution set of (1) is a translate $\mathbf{v} + U$ of the $n$-dimensional solution space $U$ of the homogeneous system, [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]].

@@ -35,7 +35,7 @@ A space curve is traced by a vector function $\mathbf{r}(t)$ of one parameter; a
 ^def-112-1
 
 > [!remark]- Connections
-> - Parametrized surfaces in 452: [[§18 Surface Integrals#^def-18-1|452 Def. §18.1]], with the tangent vectors [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and the regularity condition $\mathbf{X}_u \times \mathbf{X}_v \ne \mathbf{0}$, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (Stewart's "smooth", [[§112 Parametric Surfaces and Their Areas#^def-112-3|Definition §112.3]] below).
+> - Parametrized surfaces in 452: [[§18 Surface Integrals#^def-18-1|452 Def. §18.1]], with the tangent vectors [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and the regularity condition $\mathbf{X}_u \times \mathbf{X}_v \ne \mathbf{0}$, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (Stewart's "smooth", [[§112 Parametric Surfaces and Their Areas#^def-112-new1|Definition §112.4]] below).
 
 For example, $\mathbf{r}(u, v) = 2\cos u\,\mathbf{i} + v\,\mathbf{j} + 2\sin u\,\mathbf{k}$ satisfies $x^2 + z^2 = 4\cos^2 u + 4\sin^2 u = 4$, with $y = v$ unrestricted: it is the circular cylinder of radius $2$ about the $y$-axis. Restricting the parameters to $0 \le u \le \pi/2$, $0 \le v \le 3$ gives only the quarter of it of length $3$ with $x \ge 0$, $z \ge 0$ (Stewart, Example 16.6.1).
 

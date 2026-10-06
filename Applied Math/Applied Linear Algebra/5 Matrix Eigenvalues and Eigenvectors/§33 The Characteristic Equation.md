@@ -103,7 +103,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > \det(A - \lambda I) = 0
 > $$
 >
-> is called the **characteristic equation** of $A$. Its left side $\det(A - \lambda I)$ is a polynomial in $\lambda$ of degree $n$ (Theorem §33.5), called the **characteristic polynomial** of $A$. The lecture writes $f_A(\lambda) = \det(A - \lambda I_n)$; other common notations are $p_A$ and $\chi_A$.
+> is called the **characteristic equation** of $A$. Its left side $\det(A - \lambda I)$ is a polynomial in $\lambda$ of degree $n$ ([[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]]), called the **characteristic polynomial** of $A$. The lecture writes $f_A(\lambda) = \det(A - \lambda I_n)$; other common notations are $p_A$ and $\chi_A$.
 >
 > *Lay: 5.2 (text)*
 
@@ -121,11 +121,11 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 ^thm-33-4
 
 > [!proof]+ Proof
-> $\lambda$ is an eigenvalue of $A$ if and only if $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution ([[§32 Eigenvectors and Eigenvalues#^def-32-2|equation (3) of §32]]), if and only if $A - \lambda I$ is not invertible (Invertible Matrix Theorem, (a) $\Leftrightarrow$ (d)), if and only if $\det(A - \lambda I) = 0$ (Theorem §33.3(a)). In the lecture's words: $\lambda$ is an eigenvalue $\Leftrightarrow$ $\operatorname{Nul}(A - \lambda I) \ne \{\mathbf{0}\}$ $\Leftrightarrow$ $\det(A - \lambda I) = 0$.
+> $\lambda$ is an eigenvalue of $A$ if and only if $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution ([[§32 Eigenvectors and Eigenvalues#^def-32-2|equation (3) of §32]]), if and only if $A - \lambda I$ is not invertible (Invertible Matrix Theorem, (a) $\Leftrightarrow$ (d)), if and only if $\det(A - \lambda I) = 0$ ([[§33 The Characteristic Equation#^thm-33-3|Theorem §33.3]](a)). In the lecture's words: $\lambda$ is an eigenvalue $\Leftrightarrow$ $\operatorname{Nul}(A - \lambda I) \ne \{\mathbf{0}\}$ $\Leftrightarrow$ $\det(A - \lambda I) = 0$.
 
 ^pf-33-4
 
-*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]] (restated as equation (3) of §32), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
+*Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]] (restated as equation (3) of [[§32 Eigenvectors and Eigenvalues|§32]]), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem), [[§33 The Characteristic Equation#^thm-33-3|§33.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-7|LADR 5.7]] ($\lambda$ is an eigenvalue $\Leftrightarrow$ $T - \lambda I$ is not invertible) together with [[§34 Determinants#^ladr-9-50|LADR 9.50]] (invertible $\Leftrightarrow$ $\det \ne 0$), the same two steps. Axler identifies his characteristic polynomial with $\det(zI - T)$ only later, [[§34 Determinants#^ladr-9-62|LADR 9.62]].
@@ -183,7 +183,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > [!example] Example §33.2: Multiplicities
 > **(a)** Find the characteristic equation of $A = \begin{bmatrix} 5 & -2 & 6 & -1 \\ 0 & 3 & -8 & 0 \\ 0 & 0 & 5 & 4 \\ 0 & 0 & 0 & 1 \end{bmatrix}$.
 >
-> $A - \lambda I$ is upper triangular, so by Theorem §33.3(d)
+> $A - \lambda I$ is upper triangular, so by [[§33 The Characteristic Equation#^thm-33-3|Theorem §33.3]](d)
 >
 > $$
 > \det(A - \lambda I) = \det\begin{bmatrix} 5 - \lambda & -2 & 6 & -1 \\ 0 & 3 - \lambda & -8 & 0 \\ 0 & 0 & 5 - \lambda & 4 \\ 0 & 0 & 0 & 1 - \lambda \end{bmatrix} = (5 - \lambda)(3 - \lambda)(5 - \lambda)(1 - \lambda) .
@@ -193,7 +193,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 >
 > **(b)** The characteristic polynomial of a $6 \times 6$ matrix is $\lambda^6 - 4\lambda^5 - 12\lambda^4$. Find the eigenvalues and their multiplicities.
 >
-> Factor: $\lambda^6 - 4\lambda^5 - 12\lambda^4 = \lambda^4(\lambda^2 - 4\lambda - 12) = \lambda^4(\lambda - 6)(\lambda + 2)$. The eigenvalues are $0$ (multiplicity $4$), $6$ (multiplicity $1$) and $-2$ (multiplicity $1$), listed with multiplicities as $0, 0, 0, 0, 6, -2$. Since $0$ is an eigenvalue, the matrix is not invertible (Theorem §33.2(s)).
+> Factor: $\lambda^6 - 4\lambda^5 - 12\lambda^4 = \lambda^4(\lambda^2 - 4\lambda - 12) = \lambda^4(\lambda - 6)(\lambda + 2)$. The eigenvalues are $0$ (multiplicity $4$), $6$ (multiplicity $1$) and $-2$ (multiplicity $1$), listed with multiplicities as $0, 0, 0, 0, 6, -2$. Since $0$ is an eigenvalue, the matrix is not invertible ([[§33 The Characteristic Equation#^thm-33-2|Theorem §33.2]](s)).
 >
 > *Lay: Examples 5.2.3 and 5.2.4*
 
@@ -202,7 +202,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > [!remark] Remark: Complex Roots and Numerical Practice
 > A polynomial of degree $n$ has at most $n$ roots: if $p(r) = 0$, then $p(\lambda) = (\lambda - r)q(\lambda)$ with $\deg q = n - 1$ (lecture L19). By the **Fundamental Theorem of Algebra** ([[§13 Polynomials#^ladr-4-13|LADR 4.13]]), every polynomial $\lambda^n + c_{n-1}\lambda^{n-1} + \cdots + c_0$ factors as $(\lambda - r_1)\cdots(\lambda - r_n)$ with $r_1, \ldots, r_n$ possibly complex. So the characteristic equation of an $n \times n$ matrix has exactly $n$ roots, counting multiplicities, provided complex roots are allowed. For $n = 2$ the roots of $\lambda^2 + c_1\lambda + c_0$ are $\frac{-c_1 \pm \sqrt D}{2}$ with $D = c_1^2 - 4c_0$, complex when $D < 0$. Complex eigenvalues are studied in [[§36 Complex Eigenvalues|§36]]; until then, scalars are real.
 >
-> In practice, eigenvalues of matrices larger than $2 \times 2$ are found by computer, unless the matrix is triangular or otherwise special: a $3 \times 3$ characteristic polynomial is easy to compute but may be hard to factor. There is no formula or finite algorithm for the roots of a general polynomial of degree $n \ge 5$, and good numerical methods avoid the characteristic polynomial altogether (MATLAB computes it *from* the eigenvalues). Several of them, such as the QR algorithm and Jacobi's method $A_{k+1} = P_k^{-1}A_kP_k$, are built on Theorem §33.6 below; others are in [[§39 Iterative Estimates for Eigenvalues|§39]].
+> In practice, eigenvalues of matrices larger than $2 \times 2$ are found by computer, unless the matrix is triangular or otherwise special: a $3 \times 3$ characteristic polynomial is easy to compute but may be hard to factor. There is no formula or finite algorithm for the roots of a general polynomial of degree $n \ge 5$, and good numerical methods avoid the characteristic polynomial altogether (MATLAB computes it *from* the eigenvalues). Several of them, such as the QR algorithm and Jacobi's method $A_{k+1} = P_k^{-1}A_kP_k$, are built on [[§33 The Characteristic Equation#^thm-33-6|Theorem §33.6]] below; others are in [[§39 Iterative Estimates for Eigenvalues|§39]].
 >
 > *Lay: 5.2 (text); Numerical Notes*
 
@@ -227,7 +227,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > -\lambda^3 + 7\lambda^2 - 11\lambda + 5 .
 > $$
 >
-> (Checks: the coefficient of $(-\lambda)^2$ is $7 = \operatorname{tr} A$, and the constant term is $5 = \det A$, as in Theorem §33.5.)
+> (Checks: the coefficient of $(-\lambda)^2$ is $7 = \operatorname{tr} A$, and the constant term is $5 = \det A$, as in [[§33 The Characteristic Equation#^thm-33-5|Theorem §33.5]].)
 >
 > **The roots.** Try small integer divisors of $5$: at $\lambda = 1$, $-1 + 7 - 11 + 5 = 0$. Dividing by $\lambda - 1$,
 >
@@ -266,13 +266,13 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > B - \lambda I = P^{-1}AP - \lambda P^{-1}P = P^{-1}(AP - \lambda P) = P^{-1}(A - \lambda I)P .
 > $$
 >
-> Using the multiplicative property, Theorem §33.3(b),
+> Using the multiplicative property, [[§33 The Characteristic Equation#^thm-33-3|Theorem §33.3]](b),
 >
 > $$
 > \det(B - \lambda I) = \det\big[P^{-1}(A - \lambda I)P\big] = \det(P^{-1}) \cdot \det(A - \lambda I) \cdot \det(P) . \qquad (2)
 > $$
 >
-> Since $\det(P^{-1}) \cdot \det(P) = \det(P^{-1}P) = \det I = 1$, equation (2) gives $\det(B - \lambda I) = \det(A - \lambda I)$. Equal polynomials have the same roots with the same multiplicities, so by Theorem §33.4 the eigenvalues agree.
+> Since $\det(P^{-1}) \cdot \det(P) = \det(P^{-1}P) = \det I = 1$, equation (2) gives $\det(B - \lambda I) = \det(A - \lambda I)$. Equal polynomials have the same roots with the same multiplicities, so by [[§33 The Characteristic Equation#^thm-33-4|Theorem §33.4]] the eigenvalues agree.
 
 ^pf-33-6
 
@@ -283,7 +283,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > - See also: [[§33 Conjugacy Classes#^def-33-3|493 Def. §33.3]]: similar invertible matrices are conjugate in the group $GL_n$, so the characteristic polynomial is constant on each conjugacy class of $GL_n$.
 
 > [!remark] Remark: Warnings
-> 1. **The converse of Theorem §33.6 is false.** $\begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix}$ and $\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix}$ both have characteristic polynomial $(\lambda - 2)^2$, but they are not similar: $P^{-1}(2I)P = 2I$ for every invertible $P$, so $2I$ is similar only to itself.
+> 1. **The converse of [[§33 The Characteristic Equation#^thm-33-6|Theorem §33.6]] is false.** $\begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix}$ and $\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix}$ both have characteristic polynomial $(\lambda - 2)^2$, but they are not similar: $P^{-1}(2I)P = 2I$ for every invertible $P$, so $2I$ is similar only to itself.
 > 2. **Similarity is not row equivalence.** If $A$ is row equivalent to $B$, then $B = EA$ for some invertible $E$ (a product of elementary matrices), whereas similarity requires $B = P^{-1}AP$. Row operations usually change the eigenvalues. The lecture's extreme case is $n = 1$: a $1 \times 1$ matrix $[a]$ is similar only to itself ($p^{-1}ap = a$), while any two nonzero $1 \times 1$ matrices, such as $[5]$ and $[-7]$, are row equivalent. (The lecture writes row equivalence as $A = CB$ with $B$ invertible; row operations multiply on the left, $A = BC$.)
 >
 > *Lay: 5.2, Warnings; Source: 235 lecture L20*
@@ -342,3 +342,5 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > *Lay: Example 5.2.5*
 
 ^ex-33-4
+
+*Chain: earlier in [[§10 Linear Models in Business, Science, and Engineering#^ex-10-3|Chapter 1]] · [[§31 Applications to Markov Chains#^ex-31-1|Chapter 4]]*

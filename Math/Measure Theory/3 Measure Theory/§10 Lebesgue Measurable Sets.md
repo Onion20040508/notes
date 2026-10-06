@@ -27,7 +27,7 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 ^def-10-1
 
 ![[m551-10-1.svg]]
-*The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^{\ast}(T)$; the inequality $\leq$ is automatic by subadditivity (Remark §10.1).*
+*The Carathéodory criterion: a test set $T$ (black outline) is cut by $E$ (blue) into $T \cap E$ (dark blue) and $T \cap E^c$ (red). $E$ is measurable when, for every such $T$, the outer measures of the two pieces add up exactly to $m^{\ast}(T)$; the inequality $\leq$ is automatic by subadditivity ([[§10 Lebesgue Measurable Sets#^rem-10-1|Remark §10.1]]).*
 
 > [!remark] Remark
 > By [[Properties of Lebesgue Outer Measure|subadditivity]], $m^*(T) \leq m^*(T \cap E) + m^*(T \cap E^c)$ always holds.
@@ -55,7 +55,7 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 > m^*(A \cup B) = m^*(A) + m^*(B).
 > $$
 >
-> This says that sets on opposite sides of $E$'s boundary do not interact metrically—$E$ acts as a perfect partition wall. Non-measurable sets like the [[§11 Borel Sets and Measure Spaces#^def-11-12|Vitali set]] fail this because they have a fractal-like, interlocking structure with their complement: no matter how one attempts the separation, some measure is always trapped at the interface.
+> This says that sets on opposite sides of $E$'s boundary do not interact metrically—$E$ acts as a perfect partition wall. Non-measurable sets like the [[§11b The Vitali Set and the Cantor Set#^def-11-12|Vitali set]] fail this because they have a fractal-like, interlocking structure with their complement: no matter how one attempts the separation, some measure is always trapped at the interface.
 
 ^rem-10-2
 
@@ -81,8 +81,8 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 *Uses:* [[Properties of Lebesgue Outer Measure|§9.1]], [[§10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[§10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]]
 
 > [!remark]- Connections
-> - Examples: finite and countable sets ([[§9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]) and the [[§11 Borel Sets and Measure Spaces#^prop-11-21|Cantor set]].
-> - Underlies “almost everywhere”: [[§12 Measurable Functions#^def-12-5|Def. §12.5]].
+> - Examples: finite and countable sets ([[§9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]) and the [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Cantor set]].
+> - Underlies “almost everywhere”: [[§12a Limits and Positive Parts of Measurable Functions#^def-12-5|Def. §12.5]].
 
 > [!definition] Definition §10.2: The Collection of Measurable Sets
 > We denote the collection of all L-measurable sets by $\mathcal{M}$:
@@ -151,7 +151,7 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 *Uses:* [[§10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[§10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]]
 
 ![[m551-10-2.svg]]
-*The proof of Theorem §10.1 (2): first split $T$ by $E_1$ (blue versus the rest), then split the rest $T \cap E_1^c$ by $E_2$ (green versus red). Blue and green together form $T \cap (E_1 \cup E_2)$, red is $T \cap (E_1 \cup E_2)^c$, and both splits are additive because $E_1$ and $E_2$ are measurable.*
+*The proof of [[§10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1]] (2): first split $T$ by $E_1$ (blue versus the rest), then split the rest $T \cap E_1^c$ by $E_2$ (green versus red). Blue and green together form $T \cap (E_1 \cup E_2)$, red is $T \cap (E_1 \cup E_2)^c$, and both splits are additive because $E_1$ and $E_2$ are measurable.*
 
 ## Algebras and $\sigma$-Algebras
 
@@ -288,11 +288,11 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 *Uses:* [[§10 Lebesgue Measurable Sets#^lem-10-2|§10.2]], [[§10 Lebesgue Measurable Sets#^thm-10-1|§10.1]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§10 Lebesgue Measurable Sets#^def-10-1|Def. §10.1]], [[§10 Lebesgue Measurable Sets#^rem-10-1|Rem. §10.1]], [[§10 Lebesgue Measurable Sets#^def-10-4|Def. §10.4]]
 
 ![[m551-10-3.svg]]
-*Disjointification (Case 2 of Theorem §10.3): $F_1 = E_1$ (blue), $F_2 = E_2 \setminus E_1$ (green), $F_3 = E_3 \setminus (E_1 \cup E_2)$ (orange). Each point of $\bigcup_j E_j$ lands in exactly one $F_k$ — the one for the first $E_k$ containing it — so the $F_k$ are disjoint with the same union, and Case 1 applies.*
+*Disjointification (Case 2 of [[§10 Lebesgue Measurable Sets#^thm-10-3|Theorem §10.3]]): $F_1 = E_1$ (blue), $F_2 = E_2 \setminus E_1$ (green), $F_3 = E_3 \setminus (E_1 \cup E_2)$ (orange). Each point of $\bigcup_j E_j$ lands in exactly one $F_k$ — the one for the first $E_k$ containing it — so the $F_k$ are disjoint with the same union, and Case 1 applies.*
 
 > [!remark]- Connections
-> - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] (§11.2).
-> - Consequences: [[Continuity of Measure|continuity from below]] and [[§11 Borel Sets and Measure Spaces#^prop-11-13|from above]].
+> - The same argument, for an arbitrary outer measure: [[Carathéodory's Theorem|Carathéodory's Theorem]] ([[§11 Borel Sets and Measure Spaces#^thm-11-2|§11.2]]).
+> - Consequences: [[Continuity of Measure|continuity from below]] and [[§11a Approximation and Continuity of Measure#^prop-11-13|from above]].
 
 ## Lebesgue Measure
 
@@ -317,5 +317,5 @@ The answer is **no** in general. [[§9 Lebesgue Outer Measure#^def-9-4|Outer mea
 ^rem-10-4
 
 > [!remark]- Connections
-> - $(\mathbb{R}^n, \mathcal{M}, m)$ is the model [[§11 Borel Sets and Measure Spaces#^def-11-7|measure space]] (Def. §11.7).
+> - $(\mathbb{R}^n, \mathcal{M}, m)$ is the model [[§11 Borel Sets and Measure Spaces#^def-11-7|measure space]] ([[§11 Borel Sets and Measure Spaces#^def-11-7|Def. §11.7]]).
 > - MATH 452 counterpart for Jordan measurable sets: [[§15 Multivariable Integration#^thm-15-1|452 §15.1]] (additivity of Jordan measure).

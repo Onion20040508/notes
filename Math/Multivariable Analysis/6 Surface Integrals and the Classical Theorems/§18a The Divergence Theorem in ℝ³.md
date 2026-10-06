@@ -7,6 +7,8 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[§18 Surface Integrals]] · ↑ [[· 6 Surface Integrals and the Classical Theorems]] · [[§19 The Laplacian in Spherical Coordinates]] →
 
+The proof of the [[Divergence Theorem in ℝ³|Divergence Theorem in ℝ³]] for a solid region bounded by a closed surface, using the flux integrals of [[§18 Surface Integrals|§18]].
+
 ## The Divergence Theorem in $\mathbb{R}^3$: Proof
 
 ### Orientation Convention for Closed Surfaces

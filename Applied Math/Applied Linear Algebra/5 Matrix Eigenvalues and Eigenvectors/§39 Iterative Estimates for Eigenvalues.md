@@ -76,7 +76,7 @@ $$
 ^ex-39-1
 
 ![[m235-39-1.svg]]
-*Example §39.1: the vectors $\mathbf{x}, A\mathbf{x}, \ldots, A^4\mathbf{x}$ (dots) and the lines through $\mathbf{0}$ and $A^k\mathbf{x}$ for $k \le 7$ (gray), which close in on the eigenspace line through $\mathbf{v}_1 = (4, 1)$ (blue). The component $-\frac{9}{10}\mathbf{v}_2$ stays fixed while the $\mathbf{v}_1$-component doubles at each step.*
+*[[§39 Iterative Estimates for Eigenvalues#^ex-39-1|Example §39.1]]: the vectors $\mathbf{x}, A\mathbf{x}, \ldots, A^4\mathbf{x}$ (dots) and the lines through $\mathbf{0}$ and $A^k\mathbf{x}$ for $k \le 7$ (gray), which close in on the eigenspace line through $\mathbf{v}_1 = (4, 1)$ (blue). The component $-\frac{9}{10}\mathbf{v}_2$ stays fixed while the $\mathbf{v}_1$-component doubles at each step.*
 
 The vectors $(\lambda_1)^{-k}A^k\mathbf{x}$ in (3) converge, but we cannot form them, because $\lambda_1$ is unknown. Instead, scale each $A^k\mathbf{x}$ so that its largest entry is $1$. The resulting sequence $\{\mathbf{x}_k\}$ converges to a multiple of $\mathbf{v}_1$ whose largest entry is $1$. And when $\mathbf{x}_k$ is close to an eigenvector for $\lambda_1$, $A\mathbf{x}_k$ is close to $\lambda_1\mathbf{x}_k$, so its entry of largest absolute value is close to $\lambda_1 \cdot 1$. (Lay omits careful proofs of these two statements.)
 
@@ -177,7 +177,7 @@ Suppose, for example, that $\alpha$ is closer to $\lambda_2$ than to the other e
 >    - d. Compute $\mathbf{x}_{k+1} = (1/\mu_k)\mathbf{y}_k$.
 > 4. For almost all choices of $\mathbf{x}_0$, the sequence $\{\nu_k\}$ approaches the eigenvalue $\lambda$ of $A$, and the sequence $\{\mathbf{x}_k\}$ approaches a corresponding eigenvector.
 >
-> The matrix $B = (A - \alpha I)^{-1}$ does not appear: instead of computing $(A - \alpha I)^{-1}\mathbf{x}_k$, it is better to solve $(A - \alpha I)\mathbf{y}_k = \mathbf{x}_k$. Since this system must be solved for each $k$ with the same coefficient matrix, an LU factorization of $A - \alpha I$ ([[§15 Matrix Factorizations#^def-15-1|Definition §15.1]]; [[§15 Matrix Factorizations#^rem-15-1|§15, Remark: Method — Solving Ax = b with an LU Factorization]]) speeds up the process. If no estimate is available for the smallest eigenvalue, take $\alpha = 0$; this works reasonably well if the smallest eigenvalue is much closer to zero than to the others.
+> The matrix $B = (A - \alpha I)^{-1}$ does not appear: instead of computing $(A - \alpha I)^{-1}\mathbf{x}_k$, it is better to solve $(A - \alpha I)\mathbf{y}_k = \mathbf{x}_k$. Since this system must be solved for each $k$ with the same coefficient matrix, an LU factorization of $A - \alpha I$ ([[§15 Matrix Factorizations#^def-15-new1|Definition §15.1]]; [[§15 Matrix Factorizations#^rem-15-1|§15, Remark: Method — Solving Ax = b with an LU Factorization]]) speeds up the process. If no estimate is available for the smallest eigenvalue, take $\alpha = 0$; this works reasonably well if the smallest eigenvalue is much closer to zero than to the others.
 >
 > *Lay: 5.8, boxed algorithm and text*
 

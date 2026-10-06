@@ -50,7 +50,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 ^def-12-2
 
 ![[m551-12-1.svg]]
-*The sets in Definition §12.2 are horizontal slices: $\{f > c\}$ (red, on the $x$-axis) is where the graph lies strictly above the line $y = c$. For this continuous $f$ it is relatively open in $[a,b]$: hollow endpoints where $f = c$, a filled one at $b$ (Example §12.2). For a general measurable $f$ it can be far wilder, but it must still be measurable.*
+*The sets in [[§12 Measurable Functions#^def-12-2|Definition §12.2]] are horizontal slices: $\{f > c\}$ (red, on the $x$-axis) is where the graph lies strictly above the line $y = c$. For this continuous $f$ it is relatively open in $[a,b]$: hollow endpoints where $f = c$, a filled one at $b$ ([[§12 Measurable Functions#^ex-12-2|Example §12.2]]). For a general measurable $f$ it can be far wilder, but it must still be measurable.*
 
 > [!remark] Remark: Geometric Interpretation
 > For a function $f: [a, b] \to \mathbb{R}$, the set $\{x \in [a, b] \mid c_1 < f(x) < c_2\}$ represents the portion of the domain where the graph lies between the horizontal lines $y = c_1$ and $y = c_2$. Measurability ensures that such “horizontal slices” of the domain are always measurable sets.
@@ -240,7 +240,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 *Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^prop-12-2|§12.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]
 
-> [!proof]+ Proof of Theorem §12.3 (continued)
+> [!proof]+ Proof of [[§12 Measurable Functions#^thm-12-3|Theorem §12.3]] (continued)
 > **(3)** We prove this in two steps.
 >
 > *Step 1: $f$ measurable implies $f^2$ measurable.*
@@ -277,7 +277,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 > [!remark]- Connections
 > - The continuous counterpart: [[§17 Continuous Functions#^thm-17-3|451 Theorem §17.3: Arithmetic of Continuous Functions]].
-> - The same “∃ ⇒ countable union” translation drives [[§12 Measurable Functions#^thm-12-6|Theorem §12.6]] and the set of convergence ([[§12 Measurable Functions#^prop-12-18|Proposition §12.18]]).
+> - The same “∃ ⇒ countable union” translation drives [[§12a Limits and Positive Parts of Measurable Functions#^thm-12-6|Theorem §12.6]] and the set of convergence ([[§12b Simple Functions and Modes of Convergence#^prop-12-18|Proposition §12.18]]).
 
 ## Measurability on Subsets and Unions
 

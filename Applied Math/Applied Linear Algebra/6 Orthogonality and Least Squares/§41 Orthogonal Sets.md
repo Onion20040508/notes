@@ -70,7 +70,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 ^thm-41-2
 
 > [!proof]+ Proof
-> As in the proof of Theorem §41.1, orthogonality kills all but one term:
+> As in the proof of [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]], orthogonality kills all but one term:
 >
 > $$
 > \mathbf{y} \cdot \mathbf{u}_j = (c_1\mathbf{u}_1 + \cdots + c_p\mathbf{u}_p) \cdot \mathbf{u}_j = c_j(\mathbf{u}_j \cdot \mathbf{u}_j) .
@@ -104,7 +104,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > \end{aligned}
 > $$
 >
-> The vectors are nonzero, so by Theorem §41.1 they are linearly independent; three independent vectors in $\mathbb{R}^3$ form a basis. So $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\}$ is an orthogonal basis of $\mathbb{R}^3$.
+> The vectors are nonzero, so by [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]] they are linearly independent; three independent vectors in $\mathbb{R}^3$ form a basis. So $\{\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3\}$ is an orthogonal basis of $\mathbb{R}^3$.
 >
 > **(b) Coordinates of y.** Compute
 >
@@ -116,7 +116,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > \mathbf{u}_1 \cdot \mathbf{u}_1 = 9 + 1 + 1 = 11, \quad \mathbf{u}_2 \cdot \mathbf{u}_2 = 1 + 4 + 1 = 6, \quad \mathbf{u}_3 \cdot \mathbf{u}_3 = \tfrac14 + 4 + \tfrac{49}{4} = \tfrac{33}{2} .
 > $$
 >
-> By Theorem §41.2,
+> By [[§41 Orthogonal Sets#^thm-41-2|Theorem §41.2]],
 >
 > $$
 > \mathbf{y} = \frac{11}{11}\mathbf{u}_1 + \frac{-12}{6}\mathbf{u}_2 + \frac{-33}{33/2}\mathbf{u}_3 = \mathbf{u}_1 - 2\mathbf{u}_2 - 2\mathbf{u}_3 .
@@ -150,7 +150,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > \mathbf{y} = \hat{\mathbf{y}} + \mathbf{z}
 > $$
 >
-> with $\hat{\mathbf{y}} = \alpha\mathbf{u}$ a multiple of $\mathbf{u}$ and $\mathbf{z}$ orthogonal to $\mathbf{u}$, namely $\alpha = \dfrac{\mathbf{y} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}$: $\hat{\mathbf{y}}$ is the orthogonal projection of Definition §41.3.
+> with $\hat{\mathbf{y}} = \alpha\mathbf{u}$ a multiple of $\mathbf{u}$ and $\mathbf{z}$ orthogonal to $\mathbf{u}$, namely $\alpha = \dfrac{\mathbf{y} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}$: $\hat{\mathbf{y}}$ is the orthogonal projection of [[§41 Orthogonal Sets#^def-41-3|Definition §41.3]].
 >
 > *Lay: 6.2 (text), Equation (1)*
 
@@ -202,23 +202,23 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 ^ex-41-2
 
 ![[m235-41-1.svg]]
-*Example §41.2. The projection $\hat{\mathbf{y}} = (8, 4)$ of $\mathbf{y} = (7, 6)$ onto the line $L$ through $\mathbf{u} = (4, 2)$ is the foot of the perpendicular from $\mathbf{y}$. The component $\mathbf{y} - \hat{\mathbf{y}} = (-1, 2)$ (red), drawn also from the origin, is orthogonal to $L$, and its length $\sqrt5$ is the distance from $\mathbf{y}$ to $L$.*
+*[[§41 Orthogonal Sets#^ex-41-2|Example §41.2]]. The projection $\hat{\mathbf{y}} = (8, 4)$ of $\mathbf{y} = (7, 6)$ onto the line $L$ through $\mathbf{u} = (4, 2)$ is the foot of the perpendicular from $\mathbf{y}$. The component $\mathbf{y} - \hat{\mathbf{y}} = (-1, 2)$ (red), drawn also from the origin, is orthogonal to $L$, and its length $\sqrt5$ is the distance from $\mathbf{y}$ to $L$.*
 
 > [!remark] Remark: A Geometric Interpretation of Theorem §41.2
-> Each term $\frac{\mathbf{y} \cdot \mathbf{u}_j}{\mathbf{u}_j \cdot \mathbf{u}_j}\mathbf{u}_j$ in Theorem §41.2 is the orthogonal projection of $\mathbf{y}$ onto the line spanned by $\mathbf{u}_j$. So the theorem decomposes each $\mathbf{y} \in \operatorname{Span}\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ into the sum of its projections onto $p$ mutually orthogonal lines. For $W = \mathbb{R}^2 = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$ with $\mathbf{u}_1 \perp \mathbf{u}_2$,
+> Each term $\frac{\mathbf{y} \cdot \mathbf{u}_j}{\mathbf{u}_j \cdot \mathbf{u}_j}\mathbf{u}_j$ in [[§41 Orthogonal Sets#^thm-41-2|Theorem §41.2]] is the orthogonal projection of $\mathbf{y}$ onto the line spanned by $\mathbf{u}_j$. So the theorem decomposes each $\mathbf{y} \in \operatorname{Span}\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ into the sum of its projections onto $p$ mutually orthogonal lines. For $W = \mathbb{R}^2 = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$ with $\mathbf{u}_1 \perp \mathbf{u}_2$,
 >
 > $$
 > \mathbf{y} = \frac{\mathbf{y} \cdot \mathbf{u}_1}{\mathbf{u}_1 \cdot \mathbf{u}_1}\mathbf{u}_1 + \frac{\mathbf{y} \cdot \mathbf{u}_2}{\mathbf{u}_2 \cdot \mathbf{u}_2}\mathbf{u}_2
 > $$
 >
-> writes $\mathbf{y}$ as the sum of its projections onto the two perpendicular axes determined by $\mathbf{u}_1$ and $\mathbf{u}_2$: ordinary coordinates, in a rotated coordinate system. In physics this is the decomposition of a force $\mathbf{y}$ into a component along a direction of interest $\mathbf{u}$ (say the direction of motion) and a component orthogonal to it, computed exactly as in Example §41.2.
+> writes $\mathbf{y}$ as the sum of its projections onto the two perpendicular axes determined by $\mathbf{u}_1$ and $\mathbf{u}_2$: ordinary coordinates, in a rotated coordinate system. In physics this is the decomposition of a force $\mathbf{y}$ into a component along a direction of interest $\mathbf{u}$ (say the direction of motion) and a component orthogonal to it, computed exactly as in [[§41 Orthogonal Sets#^ex-41-2|Example §41.2]].
 
 ^rem-41-1
 
 ## Orthonormal Sets
 
 > [!definition] Definition §41.4: Orthonormal Set; Orthonormal Basis
-> A set $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal set** if it is an orthogonal set of unit vectors. If $W$ is the subspace spanned by such a set, then $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal basis** for $W$; it is a basis because it is linearly independent by Theorem §41.1.
+> A set $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal set** if it is an orthogonal set of unit vectors. If $W$ is the subspace spanned by such a set, then $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal basis** for $W$; it is a basis because it is linearly independent by [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]].
 >
 > The standard basis $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ of $\mathbb{R}^n$, and any nonempty subset of it, is orthonormal. Normalizing each vector of an orthogonal set of nonzero vectors produces an orthonormal set, since $\big(\frac{\mathbf{u}_i}{\|\mathbf{u}_i\|}\big) \cdot \big(\frac{\mathbf{u}_j}{\|\mathbf{u}_j\|}\big) = \frac{\mathbf{u}_i \cdot \mathbf{u}_j}{\|\mathbf{u}_i\|\,\|\mathbf{u}_j\|}$ is still $0$ for $i \ne j$.
 >
@@ -262,7 +262,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 ^thm-41-5
 
 > [!proof]+ Proof
-> Lay leaves this as Exercise 25. (b): by Theorem §41.4,
+> Lay leaves this as Exercise 25. (b): by [[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4]],
 >
 > $$
 > (U\mathbf{x}) \cdot (U\mathbf{y}) = (U\mathbf{x})^T(U\mathbf{y}) = \mathbf{x}^TU^TU\mathbf{y} = \mathbf{x}^TI\mathbf{y} = \mathbf{x} \cdot \mathbf{y} .
@@ -322,9 +322,9 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 ^prop-41-6
 
 > [!proof]+ Proof
-> (1) ⇒ (2): $U^TU = U^{-1}U = I$, so the columns are orthonormal by Theorem §41.4.
+> (1) ⇒ (2): $U^TU = U^{-1}U = I$, so the columns are orthonormal by [[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4]].
 >
-> (2) ⇒ (1): by Theorem §41.4, $U^TU = I$. For square matrices a one-sided inverse is an inverse ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]], from the Invertible Matrix Theorem), so $U$ is invertible with $U^{-1} = U^T$.
+> (2) ⇒ (1): by [[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4]], $U^TU = I$. For square matrices a one-sided inverse is an inverse ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]], from the Invertible Matrix Theorem), so $U$ is invertible with $U^{-1} = U^T$.
 >
 > (1) ⇔ (3): $U$ is orthogonal if and only if $U^T$ is: if $U^{-1} = U^T$, then $(U^T)^{-1} = (U^{-1})^T = (U^T)^T$, and conversely by the same computation for $U^T$. The rows of $U$ are the columns of $U^T$, so (3) for $U$ is (2) for $U^T$, which is equivalent to (1) for $U^T$, hence to (1) for $U$.
 >
@@ -355,9 +355,9 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > \end{aligned}
 > $$
 >
-> So $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ is an orthonormal set, hence an orthonormal basis of $\mathbb{R}^3$. These are the vectors $\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3$ of Example §41.1, normalized ($\|\mathbf{u}_3\| = \sqrt{33/2}$ and $\mathbf{u}_3/\|\mathbf{u}_3\| = (-1, -4, 7)/\sqrt{66}$). Since $U$ is square, it is an orthogonal matrix (Proposition §41.6).
+> So $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ is an orthonormal set, hence an orthonormal basis of $\mathbb{R}^3$. These are the vectors $\mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3$ of [[§41 Orthogonal Sets#^ex-41-1|Example §41.1]], normalized ($\|\mathbf{u}_3\| = \sqrt{33/2}$ and $\mathbf{u}_3/\|\mathbf{u}_3\| = (-1, -4, 7)/\sqrt{66}$). Since $U$ is square, it is an orthogonal matrix ([[§41 Orthogonal Sets#^prop-41-6|Proposition §41.6]]).
 >
-> **The rows are orthonormal too**, as Proposition §41.6 predicts. Every product of two entries has denominator $11$, $6$ or $66$, so compute over $66$:
+> **The rows are orthonormal too**, as [[§41 Orthogonal Sets#^prop-41-6|Proposition §41.6]] predicts. Every product of two entries has denominator $11$, $6$ or $66$, so compute over $66$:
 >
 > $$
 > \begin{aligned}

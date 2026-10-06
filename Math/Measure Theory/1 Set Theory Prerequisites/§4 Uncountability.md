@@ -117,7 +117,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[§2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].
-> - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[§11 Borel Sets and Measure Spaces#^prop-11-21|Proposition §11.21]].
+> - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Proposition §11.21]].
 > - Elementary version: ℝ is uncountable, [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]], by Cantor's diagonal argument on decimal expansions.
 
 ## Power Sets
