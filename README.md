@@ -2,7 +2,7 @@
 
 My mathematics and physics notes, kept as an [Obsidian](https://obsidian.md) vault. Each subject is organized by chapter and section, written in LaTeX-style callouts, and densely cross-linked, so a theorem links to the results its proof uses and, through backlinks, to every place it is used later.
 
-**1,900+ notes · 1,239 sections · 328 key results · ~1,400 figures · 89,000+ links**
+**2,000+ notes · 1,377 sections · 328 key results · ~1,400 figures · 93,000+ links**
 
 ---
 
