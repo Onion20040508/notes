@@ -222,18 +222,23 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 
 ## 6.2 Operations on Sets
 
-> [!definition] Definition §6.6: Intersection; Disjoint Sets
+> [!definition] Definition §6.6: Intersection
 > The **intersection** of sets $A$ and $B$ is the set of elements lying in both:
 >
 > $$
 > A \cap B = \{x \mid x \in A \text{ and } x \in B\}.
 > $$
 >
+> *Eccles: Definition 6.2.1*
+
+^def-6-6
+
+> [!definition] Definition §6.6: Disjoint Sets
 > $A$ and $B$ are **disjoint** if $A \cap B = \emptyset$, i.e. they have no elements in common.
 >
 > *Eccles: Definition 6.2.1*
 
-^def-6-6
+^def-6-new1
 
 > [!definition] Definition §6.7: Union
 > The **union** of sets $A$ and $B$ is the set of elements lying in $A$ or in $B$ (or both):
@@ -289,7 +294,7 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 
 ^pf-6-2
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-new1|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]
 
 ![[m250-6-1.svg]]
 *The Venn diagram of [[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]]: the four rows of the truth table are the four regions. $A - B$ (blue), $A \cap B$ (red) and $B - A$ (green) do not overlap, and together they fill $A \cup B$; the fourth row is the region outside both circles.*
@@ -301,8 +306,8 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 
 ## 6.3 The Power Set
 
-> [!definition] Definition §6.9: Power Set; Singleton
-> The **power set** $\mathcal{P}(X)$ of a set $X$ is the set of all subsets of $X$. Thus $A \in \mathcal{P}(X)$ is another way of writing $A \subseteq X$. A set $\{a\}$ with a single element is a **singleton**.
+> [!definition] Definition §6.9: Power Set
+> The **power set** $\mathcal{P}(X)$ of a set $X$ is the set of all subsets of $X$. Thus $A \in \mathcal{P}(X)$ is another way of writing $A \subseteq X$.
 >
 > *Eccles: Definition 6.3.1*
 
@@ -310,6 +315,13 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 
 > [!remark]- Connections
 > - Developed further in: [[§4 Uncountability#^def-4-1|551 Def. §4.1]] (power set), where Cantor's theorem ([[§4 Uncountability#^thm-4-1|551 Thm. §4.1]]) shows there is no surjection $X \to \mathcal{P}(X)$.
+
+> [!definition] Definition §6.9: Singleton
+> A set $\{a\}$ with a single element is a **singleton**.
+>
+> *Eccles: Definition 6.3.1*
+
+^def-6-new2
 
 > [!example] Example §6.6: The Power Set of a Three-Element Set
 > If $X = \{a, b, c\}$ then
@@ -326,8 +338,15 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 
 In general a set with $n$ elements has $2^n$ subsets: [[§12★ Counting Functions and Subsets#^prop-12-4|Proposition §12.4]].
 
-> [!definition] Definition §6.10: Universal Set; Complement
-> Often all the sets under consideration are subsets of one fixed set $U$, the **universal set**. Once $U$ is fixed, the **complement** of $A \in \mathcal{P}(U)$ is
+> [!definition] Definition §6.10: Universal Set
+> Often all the sets under consideration are subsets of one fixed set $U$, the **universal set**.
+>
+> *Eccles: Definition 6.3.3*
+
+^def-6-10
+
+> [!definition] Definition §6.10: Complement
+> Once $U$ is fixed, the **complement** of $A \in \mathcal{P}(U)$ is
 >
 > $$
 > A^c = U - A = \{x \in U \mid x \notin A\}.
@@ -337,7 +356,7 @@ In general a set with $n$ elements has $2^n$ subsets: [[§12★ Counting Functio
 >
 > *Eccles: Definition 6.3.3*
 
-^def-6-10
+^def-6-new3
 
 Intersection, union and complement of subsets of $U$ correspond to the connectives "and", "or" and "not": for $x \in U$,
 
@@ -382,7 +401,7 @@ So each law of logic from [[§1 The Language of Mathematics|§1]] translates int
 
 ^pf-6-3
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§6 The Language of Set Theory#^ex-6-7|Ex. §6.7]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§6 The Language of Set Theory#^def-6-new3|Def. §6.10]], [[§6 The Language of Set Theory#^ex-6-7|Ex. §6.7]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
 
 Once these laws are available, further identities follow by algebra, without returning to elements.
 

@@ -78,18 +78,39 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 
 ^ex-55-1
 
-> [!definition] Definition §55.3: Supply Function, Producer Surplus and Market Equilibrium
-> The **supply function** $p_S(x)$ of a commodity gives the selling price at which manufacturers will produce $x$ units. For a higher price more is produced, so $p_S$ is increasing. If $X$ units are currently produced, at price $P = p_S(X)$, some producers would have sold for less; the excess is the **producer surplus**,
+> [!definition] Definition §55.3: Supply Function
+> The **supply function** $p_S(x)$ of a commodity gives the selling price at which manufacturers will produce $x$ units. For a higher price more is produced, so $p_S$ is increasing.
+>
+> *Stewart: 8.4, Exercises 9–11 (producer surplus), Exercise 12 (equilibrium), Exercises 13–14 (total surplus)*
+
+^def-55-3
+
+> [!definition] Definition §55.3: Producer Surplus
+> If $X$ units are currently produced, at price $P = p_S(X)$, some producers would have sold for less; the excess is the **producer surplus**,
 >
 > $$
 > \int_0^X \big[ P - p_S(x) \big]\,dx ,
 > $$
 >
-> the area between the line $p = P$ and the supply curve (the same argument as in Remark: Why It Works, with producers in place of consumers). A market is in **equilibrium** when the quantity demanded equals the quantity supplied: the equilibrium quantity and price are the coordinates of the point where the demand and supply curves cross. Consumer surplus plus producer surplus is the **total surplus**; for a good in equilibrium it is maximized.
+> the area between the line $p = P$ and the supply curve (the same argument as in Remark: Why It Works, with producers in place of consumers).
 >
 > *Stewart: 8.4, Exercises 9–11 (producer surplus), Exercise 12 (equilibrium), Exercises 13–14 (total surplus)*
 
-^def-55-3
+^def-55-new1
+
+> [!definition] Definition §55.3: Market Equilibrium
+> A market is in **equilibrium** when the quantity demanded equals the quantity supplied: the equilibrium quantity and price are the coordinates of the point where the demand and supply curves cross.
+>
+> *Stewart: 8.4, Exercises 9–11 (producer surplus), Exercise 12 (equilibrium), Exercises 13–14 (total surplus)*
+
+^def-55-new2
+
+> [!definition] Definition §55.3: Total Surplus
+> Consumer surplus plus producer surplus is the **total surplus**; for a good in equilibrium it is maximized.
+>
+> *Stewart: 8.4, Exercises 9–11 (producer surplus), Exercise 12 (equilibrium), Exercises 13–14 (total surplus)*
+
+^def-55-new3
 
 > [!example] Example §55.2: Market Equilibrium
 > Given the demand curve $p = 50 - \frac{1}{20}x$ and the supply curve $p = 20 + \frac{1}{10}x$, find the quantity and price at which the market is in equilibrium, and the consumer and producer surplus there.
@@ -108,7 +129,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 > \int_0^{200} \Big[ \Big(50 - \frac{x}{20}\Big) - 40 \Big]\,dx = \int_0^{200} \Big( 10 - \frac{x}{20} \Big)\,dx = \Big[ 10x - \frac{x^2}{40} \Big]_0^{200} = 2000 - 1000 = \$1000 .
 > $$
 >
-> **Producer surplus** (Definition §55.3):
+> **Producer surplus** ([[§55 Applications to Economics and Biology#^def-55-new1|Definition §55.3]]):
 >
 > $$
 > \int_0^{200} \Big[ 40 - \Big(20 + \frac{x}{10}\Big) \Big]\,dx = \int_0^{200} \Big( 20 - \frac{x}{10} \Big)\,dx = \Big[ 20x - \frac{x^2}{20} \Big]_0^{200} = 4000 - 2000 = \$2000 .

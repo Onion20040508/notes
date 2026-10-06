@@ -461,18 +461,25 @@ The strong induction principle ([[§5 The Induction Principle#^thm-5-6|Theorem �
 
 ## 7.7 The Cartesian Product of Two Sets
 
-> [!definition] Definition §7.5: Cartesian Product; Ordered Pair
+> [!definition] Definition §7.5: Cartesian Product
 > Given sets $X$ and $Y$, the **Cartesian product** $X \times Y$ is the set of all **ordered pairs** $(x, y)$ with $x \in X$ and $y \in Y$:
 >
 > $$
 > X \times Y = \{(x, y) \mid x \in X \text{ and } y \in Y\}.
 > $$
 >
-> "Ordered" means that $(x_1, y_1) = (x_2, y_2)$ if and only if $x_1 = x_2$ and $y_1 = y_2$; $x$ and $y$ are the **coordinates** of $(x, y)$. We write $X^2 = X \times X$. In pictures $X$ is drawn horizontally and $Y$ vertically.
+> We write $X^2 = X \times X$. In pictures $X$ is drawn horizontally and $Y$ vertically.
 >
 > *Eccles: Definition 7.7.1*
 
 ^def-7-5
+
+> [!definition] Definition §7.5: Ordered Pair
+> "Ordered" means that $(x_1, y_1) = (x_2, y_2)$ if and only if $x_1 = x_2$ and $y_1 = y_2$; $x$ and $y$ are the **coordinates** of $(x, y)$.
+>
+> *Eccles: Definition 7.7.1*
+
+^def-7-new1
 
 > [!example] Example §7.14: Products
 > - For $X = \{a, b, c\}$ and $Y = \{a, b\}$: $X \times Y = \{(a,a), (a,b), (b,a), (b,b), (c,a), (c,b)\}$ and $Y \times X = \{(a,a), (a,b), (a,c), (b,a), (b,b), (b,c)\}$. These are different: $(c, a) \in X \times Y$ but $(c, a) \notin Y \times X$.

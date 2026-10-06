@@ -71,7 +71,7 @@ Partitions are usually described by a property of the elements — the remainder
 
 ^pf-22-1
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new3|Def. §9.4]]
 
 > [!example] Example §22.2: Partitions Given by Functions
 > (a) The partition of $\mathbb{Z}$ into congruence classes modulo $m$ comes from the remainder map $r_m : \mathbb{Z} \to R_m$: its parts are $\overleftarrow{r_m}(\{r\}) = [r]_m$ (the box model of the remark after [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]]).
@@ -93,7 +93,7 @@ Partitions are usually described by a property of the elements — the remainder
 A partition starts from the whole set. The same idea seen from the elements: if a set of people is partitioned into rooms, nobody need know the overall picture, but everyone can see who is in the same room. So a partition determines a *relation*: two elements are related if they lie in the same part.
 
 > [!definition] Definition §22.2: Relation
-> A **relation** on a set $X$ is determined by a property that each [[§7 Quantifiers#^def-7-5|ordered pair]] $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
+> A **relation** on a set $X$ is determined by a property that each [[§7 Quantifiers#^def-7-new1|ordered pair]] $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
 >
 > *Eccles: §22.2 (text before Proposition 22.2.1)*
 > *Source: Sundstrom §7.1 (relation as a subset of $A \times A$)*
@@ -119,17 +119,22 @@ A partition starts from the whole set. The same idea seen from the elements: if 
 
 Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting from the partition $\mathbb{Z}_m$, this produces congruence modulo $m$.
 
-> [!definition] Definition §22.3: Reflexive, Symmetric, Transitive; Equivalence Relation
+> [!definition] Definition §22.3: Reflexive, Symmetric, Transitive
 > Let $\sim$ be a relation on a set $X$. It is
 > 1. **reflexive** when $x \sim x$ for all $x \in X$;
 > 2. **symmetric** when, for all $x, y \in X$, $\ x \sim y \Rightarrow y \sim x$;
 > 3. **transitive** when, for all $x, y, z \in X$, $\ x \sim y$ and $y \sim z \Rightarrow x \sim z$.
 >
+> *Eccles: Definition 22.2.3*
+
+^def-22-3
+
+> [!definition] Definition §22.3: Equivalence Relation
 > An **equivalence relation** on $X$ is a relation that is reflexive, symmetric and transitive.
 >
 > *Eccles: Definition 22.2.3*
 
-^def-22-3
+^def-22-new1
 
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the [[The Vitali Set is Not Measurable|Vitali set]]: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
@@ -177,13 +182,21 @@ Each property is a universal statement, so to show that one *fails* a single cou
 
 In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]] the partition $\mathbb{Z}_m$ was built from the relation of congruence. The construction works for every equivalence relation.
 
-> [!definition] Definition §22.4: Equivalence Class; Quotient Set
+> [!definition] Definition §22.4: Equivalence Class
 > Let $\sim$ be an equivalence relation on a non-empty set $X$. For $a \in X$, the **equivalence class of $a$** is the set of elements equivalent to $a$:
 >
 > $$
 > [a] = \{ x \in X \mid x \sim a \} \subseteq X .
 > $$
 >
+> *Eccles: Definition 22.3.1*
+
+^def-22-4
+
+> [!remark]- Connections
+> - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§11 Borel Sets and Measure Spaces#^def-11-11|551 Def. §11.11]].
+
+> [!definition] Definition §22.4: Quotient Set
 > The set of all equivalence classes is denoted $X/{\sim}$ (the **quotient set**, "$X$ modulo $\sim$"):
 >
 > $$
@@ -194,10 +207,7 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §2
 >
 > *Eccles: Definition 22.3.1*
 
-^def-22-4
-
-> [!remark]- Connections
-> - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§11 Borel Sets and Measure Spaces#^def-11-11|551 Def. §11.11]].
+^def-22-new2
 
 The next theorem generalizes Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]] with the same proof, each property of congruence replaced by the corresponding axiom.
 
@@ -219,7 +229,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 
 ^pf-22-3
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]] (equivalence classes partition a set), applied to cosets in [[Cosets Partition a Group]].
@@ -243,7 +253,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 
 ^pf-22-4
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]]
 
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^prop-24-2|493 Prop. §24.2]] (partitions come from equivalence relations).
@@ -272,7 +282,7 @@ A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equ
 
 ^pf-22-5
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]]
 
 > [!remark]- Connections
 > - The group version: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].
@@ -317,7 +327,7 @@ The proof contains the general principle for defining functions on a quotient se
 
 ## 22.4 Construction of the Rational Numbers
 
-[[§22 Partitions and Equivalence Relations#^ex-22-6|Example §22.6]] *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project, whose motivation is that $\mathbb{Z}$ is not closed under division ($6 \div 4 \notin \mathbb{Z}$): we want a number system extending $\mathbb{Z}$, with the same laws of arithmetic, in which $bx = a$ can be solved for every $b \neq 0$ ([[§22 Partitions and Equivalence Relations#^prop-22-10|Proposition §22.10]]). It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1; [[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). The Project's list of properties of $\mathbb{Z}$ (its §1.1) contains all of these except the last; the last is what makes $bd \neq 0$ whenever $b, d \neq 0$, so that sums and products of fractions are again fractions.
+[[§22 Partitions and Equivalence Relations#^ex-22-6|Example §22.6]] *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-new1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project, whose motivation is that $\mathbb{Z}$ is not closed under division ($6 \div 4 \notin \mathbb{Z}$): we want a number system extending $\mathbb{Z}$, with the same laws of arithmetic, in which $bx = a$ can be solved for every $b \neq 0$ ([[§22 Partitions and Equivalence Relations#^prop-22-10|Proposition §22.10]]). It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1; [[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). The Project's list of properties of $\mathbb{Z}$ (its §1.1) contains all of these except the last; the last is what makes $bd \neq 0$ whenever $b, d \neq 0$, so that sums and products of fractions are again fractions.
 
 > [!definition] Definition §22.5: The Set of Fractions and Its Relation
 > Let
@@ -363,7 +373,7 @@ The proof contains the general principle for defining functions on a quotient se
 
 ^pf-22-6
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]] (no zero divisors)
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]] (no zero divisors)
 
 > [!definition] Definition §22.6: The Rational Numbers
 > The set of **rational numbers** is the quotient set
@@ -567,7 +577,7 @@ The same idea builds $\mathbb{Z}$ from $\mathbb{N} = \{0, 1, 2, \ldots\}$: a pai
 
 ^pf-22-11
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-8|Def. §22.8]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-8|Def. §22.8]], [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]]
 
 > [!definition] Definition §22.9: The Integers
 > The set of **integers** is the quotient set $\mathbb{Z} = (\mathbb{N} \times \mathbb{N})/{\approx}$, with

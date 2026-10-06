@@ -43,16 +43,26 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - Square neighborhoods are the balls of the [[§11 Metric Topology#^ex-11-2|square metric]]; the precise form of this remark is [[§11 Metric Topology#^thm-11-2|Euclidean and Square Metrics Induce Same Topology]] (MATH 590), resting on the inequality of [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Equivalence of the Two Distances]] (MATH 451).
 
-> [!definition] Definition §2.3: Interior, Exterior, and Boundary Points
+> [!definition] Definition §2.3: Interior Point
 > Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
 > - $x$ is an **interior point** of $E$ if $\exists\, \varepsilon > 0$ such that $B(x, \varepsilon) \subseteq E$.
-> - $x$ is an **exterior point** of $E$ if $\exists\, \varepsilon > 0$ such that $B(x, \varepsilon) \subseteq E^c$.
-> - $x$ is a **boundary point** of $E$ if for all $\varepsilon > 0$: $B(x, \varepsilon) \cap E \neq \emptyset$ and $B(x, \varepsilon) \cap E^c \neq \emptyset$.
 
 ^def-2-3
 
+> [!definition] Definition §2.3: Exterior Point
+> Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
+> - $x$ is an **exterior point** of $E$ if $\exists\, \varepsilon > 0$ such that $B(x, \varepsilon) \subseteq E^c$.
+
+^def-2-new1
+
+> [!definition] Definition §2.3: Boundary Point
+> Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
+> - $x$ is a **boundary point** of $E$ if for all $\varepsilon > 0$: $B(x, \varepsilon) \cap E \neq \emptyset$ and $B(x, \varepsilon) \cap E^c \neq \emptyset$.
+
+^def-2-new2
+
 ![[m452-2-1.svg]]
-*The three cases of Definition §2.3, with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
+*The three cases of Definition [[#^def-2-3|§2.3]]–[[#^def-2-new2|§2.3]] (interior, exterior and boundary points), with the open balls $B(x,\varepsilon)$ dashed. An interior point has a ball entirely inside $E$ (green, filled); an exterior point has a ball entirely inside $E^c$ (green, empty); at a boundary point every ball, however small, meets both $E$ and $E^c$ (red).*
 
 > [!remark]- Connections
 > - Interior in a topological space, the largest open subset: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].
@@ -63,12 +73,17 @@ tags: [multivariable-analysis, math452]
 
 ^ex-2-1
 
-> [!definition] Definition §2.4: Open and Closed Sets
+> [!definition] Definition §2.4: Open Set
 > Let $E \subseteq \mathbb{R}^n$.
 > - $E$ is **open** if every point of $E$ is an interior point.
-> - $E$ is **closed** if $E$ contains all its boundary points.
 
 ^def-2-4
+
+> [!definition] Definition §2.4: Closed Set
+> Let $E \subseteq \mathbb{R}^n$.
+> - $E$ is **closed** if $E$ contains all its boundary points.
+
+^def-2-new3
 
 > [!remark]- Connections
 > - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets]].

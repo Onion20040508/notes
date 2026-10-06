@@ -69,14 +69,19 @@ To use Formula 2, evaluate $f(\mathbf{r}(u, v))$ by writing $x = x(u, v)$, $y = 
 
 ^ex-113-1
 
-> [!definition] Definition §113.2: Mass and Center of Mass of a Thin Sheet
+> [!definition] Definition §113.2: Mass of a Thin Sheet
 > If a thin sheet (say, of aluminum foil) has the shape of a surface $S$ and density (mass per unit area) $\rho(x, y, z)$ at $(x, y, z)$, its total **mass** is
 >
 > $$
 > m = \iint_S \rho(x, y, z)\,dS ,
 > $$
 >
-> and its **center of mass** is $(\bar{x}, \bar{y}, \bar{z})$, where
+> *Stewart: 16.7 (text)*
+
+^def-113-2
+
+> [!definition] Definition §113.3: Center of Mass of a Thin Sheet
+> For a thin sheet with the shape of a surface $S$, density $\rho(x, y, z)$ and mass $m$ ([[§113 Surface Integrals#^def-113-2|Definition §113.2]]), its **center of mass** is $(\bar{x}, \bar{y}, \bar{z})$, where
 >
 > $$
 > \bar{x} = \frac1m \iint_S x\,\rho(x, y, z)\,dS, \qquad \bar{y} = \frac1m \iint_S y\,\rho(x, y, z)\,dS, \qquad \bar{z} = \frac1m \iint_S z\,\rho(x, y, z)\,dS .
@@ -84,7 +89,7 @@ To use Formula 2, evaluate $f(\mathbf{r}(u, v))$ by writing $x = x(u, v)$, $y = 
 >
 > *Stewart: 16.7 (text)*
 
-^def-113-2
+^def-113-new1
 
 > [!theorem] Theorem §113.2: Surface Integrals over Graphs
 > If $S$ has equation $z = g(x, y)$ and $D$ is its projection onto the $xy$-plane, then
@@ -171,12 +176,19 @@ $$
 
 which points in the same direction as the position vector: outward from the sphere. The parametrization $\mathbf{r}(\theta, \phi)$ would induce the inward orientation.
 
-> [!definition] Definition §113.6: Closed Surface; Positive Orientation
-> A **closed surface** is a surface that is the boundary of a solid region $E$. For a closed surface, the convention is that the **positive orientation** is the one for which the normal vectors point *outward* from $E$; inward-pointing normals give the negative orientation.
+> [!definition] Definition §113.6: Closed Surface
+> A **closed surface** is a surface that is the boundary of a solid region $E$.
 >
 > *Stewart: 16.7 (text)*
 
 ^def-113-6
+
+> [!definition] Definition §113.7: Positive Orientation of a Closed Surface
+> For a closed surface, the convention is that the **positive orientation** is the one for which the normal vectors point *outward* from $E$; inward-pointing normals give the negative orientation.
+>
+> *Stewart: 16.7 (text)*
+
+^def-113-new2
 
 > [!example] Example §113.2: Choosing the Normal for a Given Orientation
 > Find a normal vector for each surface with the given orientation.
@@ -388,7 +400,7 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 
 ^ex-113-5
 
-> [!definition] Definition §113.8: Electric Flux and Heat Flow
+> [!definition] Definition §113.8: Electric Flux
 > If $\mathbf{E}$ is an electric field ([[§107 Vector Fields#^ex-107-2|Example §107.2]]), the surface integral $\iint_S \mathbf{E} \cdot d\mathbf{S}$ is called the **electric flux** of $\mathbf{E}$ through $S$. **Gauss's Law** of electrostatics says that the net charge enclosed by a closed surface $S$ is
 >
 > $$
@@ -397,10 +409,15 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 >
 > where $\varepsilon_0$ is the permittivity of free space ($\varepsilon_0 \approx 8.8542 \times 10^{-12}\ \mathrm{C^2/N \cdot m^2}$ in SI units).
 >
+> *Stewart: 16.7, Equation 11 and text*
+
+^def-113-8
+
+> [!definition] Definition §113.9: Heat Flow
 > If the temperature at a point $(x, y, z)$ of a body is $u(x, y, z)$, the **heat flow** is the vector field $\mathbf{F} = -K\nabla u$, where the experimentally determined constant $K$ is the **conductivity** of the substance. The rate of heat flow across a surface $S$ in the body is $\iint_S \mathbf{F} \cdot d\mathbf{S} = -K\iint_S \nabla u \cdot d\mathbf{S}$.
 >
 > *Stewart: 16.7, Equation 11 and text*
 
-^def-113-8
+^def-113-new3
 
 For example, if the field of [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]] were an electric field, the charge enclosed by the unit sphere would be $Q = \frac43\pi\varepsilon_0$. And if the temperature in a metal ball is $u = C(x^2 + y^2 + z^2)$, then on the sphere $x^2 + y^2 + z^2 = a^2$, with outward normal $\mathbf{n} = \frac1a\langle x, y, z \rangle$, $\mathbf{F} \cdot \mathbf{n} = -KC\langle 2x, 2y, 2z \rangle \cdot \frac1a\langle x, y, z \rangle = -2aKC$, so the rate of heat flow across the sphere is $-2aKC \cdot 4\pi a^2 = -8KC\pi a^3$ (Stewart, Example 16.7.6).

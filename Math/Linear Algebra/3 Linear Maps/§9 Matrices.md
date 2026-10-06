@@ -13,7 +13,7 @@ tags: [linear-algebra]
 > $$
 > A=\begin{pmatrix}A_{1,1}&\cdots&A_{1,n}\\ \vdots&&\vdots\\ A_{m,1}&\cdots&A_{m,n}\end{pmatrix}.
 > $$
-> $A_{j,k}$ is the entry in row $j$, column $k$. $\F^{m,n}$ denotes the set of $m$-by-$n$ matrices.
+> $A_{j,k}$ is the entry in row $j$, column $k$. $\F^{m,n}$ denotes the set of $m$-by-$n$ matrices ([[§9 Matrices#^ladr-3-39|3.39]]).
 
 ^ladr-3-29
 
@@ -278,10 +278,15 @@ tags: [linear-algebra]
 > - The tool behind [[§9 Matrices#^ladr-3-56|Column–row factorization]] and [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]].
 > - Computational version: (a) is [[§11 Matrix Operations#^prop-11-3|235 Prop. §11.3]]; (b) is [[§11 Matrix Operations#^prop-11-5|235 Prop. §11.5]], row_i(AB) = row_i(A)·B.
 
-> [!definition] Definition 3.52: Column rank, row rank
-> For $A\in\F^{m,n}$: the *column rank* of $A$ is the dimension of the span of its columns in $\F^{m,1}$; the *row rank* is the dimension of the span of its rows in $\F^{1,n}$.
+> [!definition] Definition 3.52: Column rank
+> For $A\in\F^{m,n}$: the *column rank* of $A$ is the dimension of the span of its columns in $\F^{m,1}$.
 
 ^ladr-3-52
+
+> [!definition] Definition 3.52b: Row rank
+> For $A\in\F^{m,n}$: the *row rank* is the dimension of the span of its rows in $\F^{1,n}$.
+
+^ladr-3-52b
 
 > [!remark] Remark: Bounds
 > Both are at most $\min\{m,n\}$.

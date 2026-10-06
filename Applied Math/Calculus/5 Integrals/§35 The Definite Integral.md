@@ -42,14 +42,19 @@ The same limit occurs for areas, for distances, and (Chapters 6 and 8) for lengt
 > - Rigorous treatment: [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]] allows subintervals of unequal width and asks that the Riemann sums be close to the integral as soon as the widest subinterval is short enough (as in the remark on unequal subintervals below). Its equivalence with the upper/lower-sum definition is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]].
 > - Every Riemann integrable function is Lebesgue integrable with the same integral: [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 
-> [!definition] Definition §35.2: Integrand, Limits of Integration, Riemann Sum
+> [!definition] Definition §35.2: Integrand and Limits of Integration
 > In the notation $\int_a^b f(x)\,dx$, the symbol $\int$ (introduced by Leibniz: an elongated S, for "sum") is the **integral sign**, $f(x)$ is the **integrand**, $a$ and $b$ are the **limits of integration**, $a$ is the **lower limit** and $b$ the **upper limit**. For now $dx$ has no meaning by itself: $\int_a^b f(x)\,dx$ is one symbol, and $dx$ only indicates that the independent variable is $x$. Calculating an integral is called **integration**.
->
-> The sum $\sum_{i=1}^{n} f(x_i^{\ast})\,\Delta x$ is a **Riemann sum** (after Bernhard Riemann, 1826–1866). Definition §35.1 says that the integral of an integrable function can be approximated to any desired accuracy by a Riemann sum.
 >
 > *Stewart: 5.2, Notes 1 and 3*
 
 ^def-35-2
+
+> [!definition] Definition §35.2: Riemann Sum
+> The sum $\sum_{i=1}^{n} f(x_i^{\ast})\,\Delta x$ is a **Riemann sum** (after Bernhard Riemann, 1826–1866). Definition §35.1 says that the integral of an integrable function can be approximated to any desired accuracy by a Riemann sum.
+>
+> *Stewart: 5.2, Notes 1 and 3*
+
+^def-35-new1
 
 The definite integral is a *number*; it does not depend on $x$. Any letter can replace $x$ (a **dummy variable**) without changing the value (Stewart, Note 2):
 
@@ -334,7 +339,7 @@ In the following properties $f$ and $g$ are continuous functions, so all the int
 
 ^thm-35-5
 
-*Stewart omits the proof ("not easy to prove in general"). For $a < c < b$ it is [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]. Every other order reduces to that case by Definition §35.4: for instance, if $a < b < c$, then $\int_a^c = \int_a^b + \int_b^c$, so $\int_a^b = \int_a^c - \int_b^c = \int_a^c + \int_c^b$.*
+*Stewart omits the proof ("not easy to prove in general"). For $a < c < b$ it is [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]. Every other order reduces to that case by [[§35 The Definite Integral#^def-35-4|Definition §35.4]]: for instance, if $a < b < c$, then $\int_a^c = \int_a^b + \int_b^c$, so $\int_a^b = \int_a^c - \int_b^c = \int_a^c + \int_c^b$.*
 
 > [!remark] Remark: Why It Works
 > For $f \ge 0$ and $a < c < b$: the area under $y = f(x)$ from $a$ to $c$ plus the area from $c$ to $b$ is the total area from $a$ to $b$.

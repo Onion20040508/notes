@@ -35,7 +35,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 > g(b) - g(a) = \sum_{k=1}^n \bigl( g(t_k) - g(t_{k-1}) \bigr) = \sum_{k=1}^n g'(x_k)\,(t_k - t_{k-1})
 > $$
 >
-> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* ([[§32 The Definition of the Riemann Integral#^def-32-3|Def. §32.3]]) for $g'$. Now bracket each term:
+> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* ([[§32 The Definition of the Riemann Integral#^def-32-new4|Def. §32.3]]) for $g'$. Now bracket each term:
 >
 > $$
 > m\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}) \ \leq\ g'(x_k)(t_k - t_{k-1}) \ \leq\ M\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}),

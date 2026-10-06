@@ -56,9 +56,6 @@ tags: [linear-algebra]
 
 ^ladr-6-49
 
-> [!remark] Remark: $V$ need not be finite-dimensional
-> Only $U$ must be. Without that, it can fail: in the space of continuous functions (or $\ell^2$-type sequence spaces) a dense subspace $U\ne V$ can have $U^\perp=\{0\}$.
-
 > [!proof]+ Proof
 > Let $e_1,\dots,e_m$ be an orthonormal basis of $U$ ([[§20 Orthonormal Bases#^ladr-6-35|6.35]]). For $v\in V$ write
 > $$
@@ -67,6 +64,9 @@ tags: [linear-algebra]
 > $u\in U$, and $\langle w,e_k\rangle=\langle v,e_k\rangle-\langle v,e_k\rangle=0$ for each $k$, so $w\perp\Span(e_1,\dots,e_m)=U$. Thus $V=U+U^\perp$, and $U\cap U^\perp=\{0\}$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]](d)), so the sum is direct ([[§3 Subspaces#^ladr-1-46|1.46]]).
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-35|6.35]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]], [[§3 Subspaces#^ladr-1-46|1.46]]
+
+> [!remark] Remark: $V$ need not be finite-dimensional
+> Only $U$ must be. Without that, it can fail: in the space of continuous functions (or $\ell^2$-type sequence spaces) a dense subspace $U\ne V$ can have $U^\perp=\{0\}$.
 
 > [!remark]- Connections
 > - Defines $P_U$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]); dimensions [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]]; double complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]].
@@ -114,13 +114,13 @@ tags: [linear-algebra]
 
 ^ladr-6-54
 
-> [!remark] Remark: Use
-> To show a subspace is everything, show that only $0$ is orthogonal to it. This is how completeness of a system of functions is proved.
-
 > [!proof]+ Proof
 > If $U^\perp=\{0\}$ then $U=(U^\perp)^\perp=\{0\}^\perp=V$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]](b)). If $U=V$ then $U^\perp=V^\perp=\{0\}$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]](c)).
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]
+
+> [!remark] Remark: Use
+> To show a subspace is everything, show that only $0$ is orthogonal to it. This is how completeness of a system of functions is proved.
 
 > [!definition] Definition 6.55: Orthogonal projection, PU
 > For a finite-dimensional subspace $U$ of $V$, the *orthogonal projection* $P_U\in\Lin(V)$ is defined by: write $v=u+w$ with $u\in U$, $w\in U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]), and set $P_Uv=u$.
@@ -175,9 +175,6 @@ tags: [linear-algebra]
 
 ^ladr-6-58
 
-> [!remark] Remark: Not linear over $\C$
-> $\varphi_{\lambda v}=\bar\lambda\varphi_v$: the map is conjugate-linear. Over $\R$ it is an isomorphism $V\cong V'$ that, unlike [[§12 Duality#^ladr-3-111|3.111]], needs no basis, only the inner product.
-
 > [!proof]+ Proof
 > **Injective:** $\varphi_{v_1}=\varphi_{v_2}$ gives $\langle u,v_1-v_2\rangle=0$ for all $u$; take $u=v_1-v_2$.
 >
@@ -188,6 +185,9 @@ tags: [linear-algebra]
 > where the first term is in $\nullsp\varphi$, hence orthogonal to $v$. Taking the inner product with $v$ gives $\langle u,v\rangle=\varphi(u)$.
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-54|6.54]]
+
+> [!remark] Remark: Not linear over $\C$
+> $\varphi_{\lambda v}=\bar\lambda\varphi_v$: the map is conjugate-linear. Over $\R$ it is an isomorphism $V\cong V'$ that, unlike [[§12 Duality#^ladr-3-111|3.111]], needs no basis, only the inner product.
 
 > [!remark]- Connections
 > - This proof uses only $V=U\oplus U^\perp$ for $U=\nullsp\varphi$, which is why it generalizes to Hilbert spaces (closed subspaces).
@@ -202,9 +202,6 @@ tags: [linear-algebra]
 
 ^ladr-6-61
 
-> [!remark] Remark: Recipe
-> Best approximation from $U$ = orthogonal projection, computed by [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i) after Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). This is least squares, Fourier truncation, and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-63|6.63]].
-
 > [!proof]+ Proof
 > $v-P_Uv\in U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](f)) and $P_Uv-u\in U$, so by [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
 > $$
@@ -213,6 +210,9 @@ tags: [linear-algebra]
 > Equality iff $\|P_Uv-u\|=0$.
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
+
+> [!remark] Remark: Recipe
+> Best approximation from $U$ = orthogonal projection, computed by [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i) after Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). This is least squares, Fourier truncation, and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-63|6.63]].
 
 > [!remark]- Connections
 > - Pseudoinverse version for equations $Tx=b$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]].
@@ -280,9 +280,6 @@ tags: [linear-algebra]
 
 ^ladr-6-69
 
-> [!remark] Remark: One-sided inverses
-> If $T$ is surjective, $TT^\dagger=I_W$; if injective, $T^\dagger T=I_V$.
-
 > [!proof]+ Proof
 > (a) $(\nullsp T)^\perp=V$ and $P_{\range T}=I$.
 >
@@ -292,6 +289,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]
 
+> [!remark] Remark: One-sided inverses
+> If $T$ is surjective, $TT^\dagger=I_W$; if injective, $T^\dagger T=I_V$.
+
 > [!theorem] Theorem 6.70: Pseudoinverse provides best approximate solution or best solution
 > Let $V$ be finite-dimensional, $T\in\Lin(V,W)$, $b\in W$.
 > - (a) For every $x\in V$, $\|T(T^\dagger b)-b\|\le\|Tx-b\|$, with equality iff $x\in T^\dagger b+\nullsp T$.
@@ -299,15 +299,15 @@ tags: [linear-algebra]
 
 ^ladr-6-70
 
-> [!remark] Remark: In words
-> $T^\dagger b$ is the least-squares solution of $Tx=b$, and among all least-squares solutions it has the smallest norm.
-
 > [!proof]+ Proof
 > (a) $Tx-b=(Tx-TT^\dagger b)+(TT^\dagger b-b)$. The first term is in $\range T$; the second is in $(\range T)^\perp$ because $TT^\dagger=P_{\range T}$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-69|6.69]](b), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](f)). By [[§19 Inner Products and Norms#^ladr-6-12|6.12]], $\|Tx-b\|\ge\|TT^\dagger b-b\|$, with equality iff $T(x-T^\dagger b)=0$.
 >
 > (b) $x=(x-T^\dagger b)+T^\dagger b$ with $x-T^\dagger b\in\nullsp T$ and $T^\dagger b\in(\nullsp T)^\perp$; apply [[§19 Inner Products and Norms#^ladr-6-12|6.12]].
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-69|6.69]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
+
+> [!remark] Remark: In words
+> $T^\dagger b$ is the least-squares solution of $Tx=b$, and among all least-squares solutions it has the smallest norm.
 
 > [!remark]- Connections
 > - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-8|235 Thm. §51.8]] ($A^+\mathbf b$ is the least-squares solution of smallest length) and [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]] (least squares via the normal equations).

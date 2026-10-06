@@ -56,7 +56,7 @@ The definition (and the notation $\equiv$) is due to Gauss, *Disquisitiones arit
 
 *Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]]
 
-These properties are used without comment from now on. They say that congruence modulo $m$ is an *equivalence relation* ([[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]]), the theme of [[§22 Partitions and Equivalence Relations|§22]].
+These properties are used without comment from now on. They say that congruence modulo $m$ is an *equivalence relation* ([[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]]), the theme of [[§22 Partitions and Equivalence Relations|§22]].
 
 > [!remark]- Connections
 > - [[§6 Divisibility and Congruence#^prop-6-2|493 Prop. §6.2]] (congruence modulo $n$ is an equivalence relation).

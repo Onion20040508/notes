@@ -13,9 +13,6 @@ tags: [linear-algebra]
 
 ^ladr-7-26
 
-> [!remark] Remark: Meaning
-> $z^2+bz+c$ has no real roots, and a self-adjoint $T$ 'is real', so $T^2+bT+cI$ cannot kill anything. It is in fact positive ([[§24 Positive Operators#^ladr-7-35|7.35]](c)).
-
 > [!proof]+ Proof
 > For $v\ne0$, using $\langle T^2v,v\rangle=\|Tv\|^2$ (self-adjoint) and [[Cauchy–Schwarz inequality|6.14]],
 > $$
@@ -24,6 +21,9 @@ tags: [linear-algebra]
 > So the operator is injective, hence invertible ([[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]).
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
+
+> [!remark] Remark: Meaning
+> $z^2+bz+c$ has no real roots, and a self-adjoint $T$ 'is real', so $T^2+bT+cI$ cannot kill anything. It is in fact positive ([[§24 Positive Operators#^ladr-7-35|7.35]](c)).
 
 > [!theorem] Theorem 7.27: Minimal polynomial of self-adjoint operator
 > If $T$ is self-adjoint, its minimal polynomial is $(z-\lambda_1)\cdots(z-\lambda_m)$ with all $\lambda_k\in\R$.
@@ -49,9 +49,6 @@ tags: [linear-algebra]
 
 ^ladr-7-29
 
-> [!remark] Remark: Geometry
-> A symmetric matrix acts by stretching along perpendicular axes. The unit sphere goes to an ellipsoid whose axes are the eigenvectors (see [[§14 Invariant Subspaces#^ladr-5-8|5.8]] and the figure below).
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): by [[§23 Spectral Theorem#^ladr-7-27|7.27]] and [[§20 Orthonormal Bases#^ladr-6-37|6.37]], $T$ is upper triangular in some orthonormal basis. There $\mathcal{M}(T^*)=\mathcal{M}(T)^t$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]), and $T=T^*$, so the upper-triangular matrix equals its transpose: it is diagonal.
 >
@@ -60,6 +57,9 @@ tags: [linear-algebra]
 > (b)$\iff$(c): as in [[§17 Diagonalizable Operators#^ladr-5-55|5.55]].
 
 *Uses:* [[§23 Spectral Theorem#^ladr-7-27|7.27]], [[§20 Orthonormal Bases#^ladr-6-37|6.37]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
+
+> [!remark] Remark: Geometry
+> A symmetric matrix acts by stretching along perpendicular axes. The unit sphere goes to an ellipsoid whose axes are the eigenvectors (see [[§14 Invariant Subspaces#^ladr-5-8|5.8]] and the figure below).
 
 > [!remark]- Connections
 > - Computational version: [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|235 Thm. §48.3]] (the spectral theorem for symmetric matrices) and [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|235 Thm. §48.2]] (orthogonally diagonalizable iff symmetric), with worked orthogonal diagonalizations.
@@ -90,9 +90,6 @@ tags: [linear-algebra]
 
 ^ladr-7-31
 
-> [!remark] Remark: Why the real theorem needs more
-> Over $\R$ normal is not enough: rotation by $90^\circ$ is normal ($TT^*=I$) but has no real eigenvalues ([[§14 Invariant Subspaces#^ladr-5-9|5.9]]).
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): by Schur ([[§20 Orthonormal Bases#^ladr-6-38|6.38]]), $T$ is upper triangular, $(a_{j,k})$, in an orthonormal basis $e_1,\dots,e_n$. From the matrix,
 > $$
@@ -105,6 +102,9 @@ tags: [linear-algebra]
 > (b)$\iff$(c): as in [[§17 Diagonalizable Operators#^ladr-5-55|5.55]].
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-38|6.38]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
+
+> [!remark] Remark: Why the real theorem needs more
+> Over $\R$ normal is not enough: rotation by $90^\circ$ is normal ($TT^*=I$) but has no real eigenvalues ([[§14 Invariant Subspaces#^ladr-5-9|5.9]]).
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: a change of basis to the eigenbasis of an observable by diagonalizing its matrix, and unitarily equivalent observables with identical spectra — [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-3|QM Theorem §C1.4.3]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-4|QM Theorem §C1.4.4]].

@@ -207,7 +207,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 > A function of the form $f(x) = x^a$, where $a$ is a constant, is a **power function**. The important cases are
 > 1. $a = n$, a positive integer: $x, x^2, x^3, \ldots$ (polynomials with one term);
 > 2. $a = 1/n$, $n$ a positive integer: the root functions (Definition §2.6);
-> 3. $a = -1$: the reciprocal function, and $a = -2$: inverse square laws (Definition §2.7).
+> 3. $a = -1$: the reciprocal function, and $a = -2$: inverse square laws ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-7|Definition §2.7]] and [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-new1|Definition §2.7]]).
 >
 > *Stewart: 1.2 (text)*
 
@@ -243,13 +243,19 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ^def-2-6
 
-> [!definition] Definition §2.7: Reciprocal Function; Inverse Square Law
+> [!definition] Definition §2.7: Reciprocal Function
 > - The **reciprocal function** is $f(x) = x^{-1} = 1/x$. Its graph, $y = 1/x$ or $xy = 1$, is a hyperbola with the coordinate axes as asymptotes. It models quantities that are inversely proportional, such as **Boyle's Law**: at constant temperature, the volume $V$ of a gas is inversely proportional to the pressure $P$, $V = C/P$ with $C$ a constant.
-> - A model of the form $f(x) = C/x^2$ ($a = -2$) is an **inverse square law**: the first quantity is inversely proportional to the square of the second. For instance, the illumination $I$ of an object by a light source is $I = C/x^2$, where $x$ is the distance from the source. Gravitational force, loudness of sound and the electrostatic force between two charged particles obey inverse square laws.
 >
 > *Stewart: 1.2 (text)*
 
 ^def-2-7
+
+> [!definition] Definition §2.7: Inverse Square Law
+> - A model of the form $f(x) = C/x^2$ ($a = -2$) is an **inverse square law**: the first quantity is inversely proportional to the square of the second. For instance, the illumination $I$ of an object by a light source is $I = C/x^2$, where $x$ is the distance from the source. Gravitational force, loudness of sound and the electrostatic force between two charged particles obey inverse square laws.
+>
+> *Stewart: 1.2 (text)*
+
+^def-2-new1
 
 ## Rational Functions
 

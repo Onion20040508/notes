@@ -116,13 +116,13 @@ tags: [linear-algebra]
 
 ^ladr-5-58
 
-> [!remark] Remark: Sufficient, not necessary
-> $T(x,y,z)=(6x,6y,7z)$ has only two eigenvalues but is diagonal in the standard basis. Generic matrices have distinct eigenvalues, so 'most' operators over $\C$ are diagonalizable.
-
 > [!proof]+ Proof
 > One eigenvector per eigenvalue gives $\dim V$ vectors, independent by [[Linearly independent eigenvectors|5.11]], hence a basis ([[§6 Dimension#^ladr-2-38|2.38]]); $T$ is diagonal in it.
 
 *Uses:* [[Linearly independent eigenvectors|5.11]], [[§6 Dimension#^ladr-2-38|2.38]]
+
+> [!remark] Remark: Sufficient, not necessary
+> $T(x,y,z)=(6x,6y,7z)$ has only two eigenvalues but is diagonal in the standard basis. Generic matrices have distinct eigenvalues, so 'most' operators over $\C$ are diagonalizable.
 
 > [!remark]- Connections
 > - Used in [[§17 Diagonalizable Operators#^ladr-5-59|5.59]]. Other sufficient conditions: the spectral theorems [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]].
@@ -162,13 +162,12 @@ tags: [linear-algebra]
 
 ^ladr-5-61
 
+*Chain: later in [[§31a The Operators (4z₂, 0, 5z₃) and (6z₁ + 3z₂ + 4z₃, 6z₂ + 2z₃, 7z₃)#The operator (6z₁ + 3z₂ + 4z₃, 6z₂ + 2z₃, 7z₃)|Chapter 8]]*
+
 > [!theorem] Theorem 5.62: Necessary and sufficient condition for diagonalizability
 > Let $V$ be finite-dimensional and $T\in\Lin(V)$. Then $T$ is diagonalizable iff the minimal polynomial of $T$ equals $(z-\lambda_1)\cdots(z-\lambda_m)$ for some list of **distinct** $\lambda_1,\dots,\lambda_m\in\F$.
 
 ^ladr-5-62
-
-> [!remark] Remark: How to use it
-> To test diagonalizability, compute the minimal polynomial and check for repeated roots ([[§17 Diagonalizable Operators#^ladr-5-61|5.61]]). Over $\C$: $T$ is diagonalizable iff $p(T)=0$ for some polynomial $p$ with distinct roots, e.g. $T^k=I$ implies diagonalizable.
 
 > [!proof]+ Proof
 > ($\Rightarrow$) With a basis of eigenvectors and distinct eigenvalues $\lambda_1,\dots,\lambda_m$, every basis vector is killed by some $T-\lambda_kI$, hence by $(T-\lambda_1I)\cdots(T-\lambda_mI)$ (factors commute). So this product is $0$; it is the minimal polynomial since every eigenvalue must be a zero of the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-27|5.27]]).
@@ -180,6 +179,9 @@ tags: [linear-algebra]
 > so $u=0$ (distinctness). Thus $U+\nullsp(T-\lambda_mI)$ is direct, and by [[Fundamental theorem of linear maps|3.21]] its dimension is $\dim V$, so $V=U\oplus E(\lambda_m,T)$. Combining the eigenvector basis of $U$ with a basis of $E(\lambda_m,T)$ gives a basis of eigenvectors of $V$.
 
 *Uses:* [[§15 The Minimal Polynomial#^ladr-5-27|5.27]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]], [[§15 The Minimal Polynomial#^ladr-5-29|5.29]], [[Fundamental theorem of linear maps|3.21]]
+
+> [!remark] Remark: How to use it
+> To test diagonalizability, compute the minimal polynomial and check for repeated roots ([[§17 Diagonalizable Operators#^ladr-5-61|5.61]]). Over $\C$: $T$ is diagonalizable iff $p(T)=0$ for some polynomial $p$ with distinct roots, e.g. $T^k=I$ implies diagonalizable.
 
 > [!remark]- Connections
 > - Restrictions stay diagonalizable: [[§17 Diagonalizable Operators#^ladr-5-65|5.65]]. Non-diagonalizable operators are handled by Jordan form ([[Jordan form|8.46]]).
@@ -217,14 +219,14 @@ tags: [linear-algebra]
 
 ^ladr-5-67
 
-> [!remark] Remark: Use and a sharper version
-> Small off-diagonal entries force eigenvalues near the diagonal entries. Columns may replace rows (apply the theorem to the transpose). A sharper statement, not proved in Axler, says a union of $k$ disks disjoint from the others contains exactly $k$ eigenvalues.
-
 > [!proof]+ Proof
 > Let $Tw=\lambda w$, $w=\sum c_kv_k\ne0$, and $A=\mathcal{M}(T)$. Comparing coefficients of $v_j$ in $\lambda w=\sum_kc_kTv_k=\sum_j\big(\sum_kA_{j,k}c_k\big)v_j$ gives $\lambda c_j=\sum_kA_{j,k}c_k$. Choose $j$ with $|c_j|$ maximal (so $c_j\ne0$). Then
 > $$
 > |\lambda-A_{j,j}|=\Big|\sum_{k\ne j}A_{j,k}\frac{c_k}{c_j}\Big|\le\sum_{k\ne j}|A_{j,k}| .
 > $$
+
+> [!remark] Remark: Use and a sharper version
+> Small off-diagonal entries force eigenvalues near the diagonal entries. Columns may replace rows (apply the theorem to the transpose). A sharper statement, not proved in Axler, says a union of $k$ disks disjoint from the others contains exactly $k$ eigenvalues.
 
 > [!remark]- Connections
 > - Diagonally dominant matrices ($|A_{j,j}|>\sum_{k\ne j}|A_{j,k}|$ for all $j$) have no eigenvalue $0$, hence are invertible ([[§14 Invariant Subspaces#^ladr-5-7|5.7]]).

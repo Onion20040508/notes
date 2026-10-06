@@ -194,14 +194,19 @@ Linear functions of two variables play the role in multivariable calculus that l
 
 ## Functions of Three or More Variables
 
-> [!definition] Definition §90.5: Function of Three Variables; Level Surfaces
+> [!definition] Definition §90.5: Function of Three Variables
 > A **function of three variables**, $f$, is a rule that assigns to each ordered triple $(x, y, z)$ in a domain $D \subseteq \mathbb{R}^3$ a unique real number denoted by $f(x, y, z)$.
->
-> The **level surfaces** of $f$ are the surfaces with equations $f(x, y, z) = k$, where $k$ is a constant. As the point $(x, y, z)$ moves along a level surface, the value $f(x, y, z)$ stays fixed.
 >
 > *Stewart: 14.1 (text)*
 
 ^def-90-5
+
+> [!definition] Definition §90.6: Level Surfaces
+> The **level surfaces** of a function $f$ of three variables are the surfaces with equations $f(x, y, z) = k$, where $k$ is a constant. As the point $(x, y, z)$ moves along a level surface, the value $f(x, y, z)$ stays fixed.
+>
+> *Stewart: 14.1 (text)*
+
+^def-90-new1
 
 For instance, the temperature $T$ at a point on the surface of the earth depends on the longitude $x$, the latitude $y$ and the time $t$, so $T = f(x, y, t)$. The graph of a function of three variables would lie in four-dimensional space, so we picture $f$ by its level surfaces instead.
 

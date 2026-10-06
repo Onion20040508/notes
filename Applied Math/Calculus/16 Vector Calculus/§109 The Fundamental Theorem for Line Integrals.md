@@ -111,12 +111,19 @@ In general, line integrals are not independent of path ([[§108 Line Integrals#^
 
 Since the line integral of any conservative field is independent of path, $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed path. Physically: the work done by a conservative force field (such as the gravitational or electric field of [[§107 Vector Fields#^ex-107-2|Example §107.2]]) as it moves an object around a closed path is $0$. The next theorem says that the *only* fields with path-independent line integrals are the conservative ones. It is stated and proved for plane curves; the version for space curves is similar.
 
-> [!definition] Definition §109.3: Open and Connected Regions
-> A region $D$ is **open** if for every point $P$ in $D$ there is a disk with center $P$ that lies entirely in $D$ (so $D$ contains none of its [[§96 Maximum and Minimum Values#^def-96-3|boundary points]]). $D$ is **connected** if any two points in $D$ can be joined by a path that lies in $D$.
+> [!definition] Definition §109.3: Open Region
+> A region $D$ is **open** if for every point $P$ in $D$ there is a disk with center $P$ that lies entirely in $D$ (so $D$ contains none of its [[§96 Maximum and Minimum Values#^def-96-3|boundary points]]).
 >
 > *Stewart: 16.3 (text)*
 
 ^def-109-3
+
+> [!definition] Definition §109.4: Connected Region
+> $D$ is **connected** if any two points in $D$ can be joined by a path that lies in $D$.
+>
+> *Stewart: 16.3 (text)*
+
+^def-109-new1
 
 > [!theorem] Theorem §109.3: Path Independence Implies Conservative
 > Suppose $\mathbf{F}$ is a vector field that is continuous on an open connected region $D$. If $\int_C \mathbf{F} \cdot d\mathbf{r}$ is independent of path in $D$, then $\mathbf{F}$ is a conservative vector field on $D$; that is, there exists a function $f$ such that $\nabla f = \mathbf{F}$.
@@ -364,12 +371,19 @@ The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mat
 
 Let a continuous force field $\mathbf{F}$ move an object of mass $m$ along a path $C$ given by $\mathbf{r}(t)$, $a \le t \le b$, from $A = \mathbf{r}(a)$ to $B = \mathbf{r}(b)$. By Newton's Second Law of Motion ([[§89 Motion in Space꞉ Velocity and Acceleration#^rem-89-2|§89, Remark]]), $\mathbf{F}(\mathbf{r}(t)) = m\,\mathbf{r}''(t)$.
 
-> [!definition] Definition §109.6: Kinetic and Potential Energy
-> The **kinetic energy** of an object of mass $m$ moving with velocity $\mathbf{v}(t) = \mathbf{r}'(t)$ is $K = \frac12 m|\mathbf{v}(t)|^2$, half the mass times the square of the speed. If $\mathbf{F} = \nabla f$ is a conservative force field, the **potential energy** of an object at the point $(x, y, z)$ is $P(x, y, z) = -f(x, y, z)$, so that $\mathbf{F} = -\nabla P$.
+> [!definition] Definition §109.6: Kinetic Energy
+> The **kinetic energy** of an object of mass $m$ moving with velocity $\mathbf{v}(t) = \mathbf{r}'(t)$ is $K = \frac12 m|\mathbf{v}(t)|^2$, half the mass times the square of the speed.
 >
 > *Stewart: 16.3 (text)*
 
 ^def-109-6
+
+> [!definition] Definition §109.7: Potential Energy
+> If $\mathbf{F} = \nabla f$ is a conservative force field, the **potential energy** of an object at the point $(x, y, z)$ is $P(x, y, z) = -f(x, y, z)$, so that $\mathbf{F} = -\nabla P$.
+>
+> *Stewart: 16.3 (text)*
+
+^def-109-new2
 
 > [!theorem] Theorem §109.5: Work Equals Change in Kinetic Energy
 > The work done by the force field $\mathbf{F}$ on the object along $C$ is

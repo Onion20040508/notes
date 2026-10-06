@@ -22,12 +22,19 @@ Numbers arose for counting, which needs only the positive integers; subtraction 
 
 The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers ([[§2 Implications#^def-2-8|Definition §2.8]], Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in §22 ([[§22 Partitions and Equivalence Relations#^def-22-6|Definition §22.6]] and [[§22 Partitions and Equivalence Relations#^thm-22-9|Theorem §22.9]]; Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
 
-> [!definition] Definition §13.1: Fraction; the Rational Number It Represents
-> A **fraction** is an expression $a/b$ with $a, b \in \Z$ and $b \ne 0$; $a$ is its **numerator** and $b$ its **denominator**. The fraction $a/b$ **represents** the **rational number** $q$ with $bq = a$. As a temporary notation, write $q = \langle a/b \rangle$.
+> [!definition] Definition §13.1: Fraction
+> A **fraction** is an expression $a/b$ with $a, b \in \Z$ and $b \ne 0$; $a$ is its **numerator** and $b$ its **denominator**.
 >
 > *Eccles: Definition 13.1.1*
 
 ^def-13-1
+
+> [!definition] Definition §13.1: The Rational Number a Fraction Represents
+> The fraction $a/b$ **represents** the **rational number** $q$ with $bq = a$. As a temporary notation, write $q = \langle a/b \rangle$.
+>
+> *Eccles: Definition 13.1.1*
+
+^def-13-new1
 
 Since $1x = a$ has the integer solution $a$, the integers sit inside the rationals: $a = \langle a/1 \rangle$.
 
@@ -49,7 +56,7 @@ Since $1x = a$ has the integer solution $a$, the integers sit inside the rationa
 
 ^pf-13-1
 
-*Uses:* [[§13 Number Systems#^def-13-1|Def. §13.1]]
+*Uses:* [[§13 Number Systems#^def-13-1|Def. §13.1]], [[§13 Number Systems#^def-13-new1|Def. §13.1]]
 
 For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \rangle$.
 
@@ -113,7 +120,7 @@ Whenever an object has several expressions and an operation is defined using an 
 
 *Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§13 Number Systems#^def-13-3|Def. §13.3]]
 
-The multiplication is consistent with Definition [[§13 Number Systems#^def-13-1|§13.1]]: if $q = \langle a/b \rangle$ then $bq = \langle b/1 \times a/b \rangle = \langle ab/b \rangle = \langle a/1 \rangle = a$. From now on we drop $\langle \ \rangle$ and write $a/b$ for the rational number it represents, so $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$; the set of rational numbers is $\Q$. Subtraction and division by non-zero elements are always possible in $\Q$:
+The multiplication is consistent with Definition [[§13 Number Systems#^def-13-new1|§13.1]]: if $q = \langle a/b \rangle$ then $bq = \langle b/1 \times a/b \rangle = \langle ab/b \rangle = \langle a/1 \rangle = a$. From now on we drop $\langle \ \rangle$ and write $a/b$ for the rational number it represents, so $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$; the set of rational numbers is $\Q$. Subtraction and division by non-zero elements are always possible in $\Q$:
 
 $$
 \frac{a}{b} - \frac{c}{d} = \frac{a}{b} + \frac{-c}{d}, \qquad \frac{a}{b} \Big/ \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} \quad (c \ne 0).

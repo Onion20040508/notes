@@ -13,7 +13,7 @@ tags: [topology, math590]
 > [!remark] Remark: The Central Question of Algebraic Topology
 > **Q:** Given topological spaces $X$ and $Y$, are $X$ and $Y$ [[§9 Continuous Functions#^def-9-2|homeomorphic]]?
 >
-> Point-set topology provides some invariants: [[§15 Compact Spaces#^def-15-2|compactness]], [[§13 Connected Spaces#^def-13-1|connectedness]], [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]], etc. These suffice for simple cases:
+> Point-set topology provides some invariants: [[§15 Compact Spaces#^def-15-2|compactness]], [[§13 Connected Spaces#^def-13-new1|connectedness]], [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]], etc. These suffice for simple cases:
 > - $[0,1] \not\cong (0,1)$: one is compact, the other is not.
 > - $\mathbb{R} \not\cong \mathbb{R}^2$: removing a point from $\mathbb{R}$ gives a disconnected space, but $\mathbb{R}^2 \setminus \{p\}$ is still connected.
 >
@@ -86,7 +86,7 @@ tags: [topology, math590]
 > [!theorem] Proposition §21.1: Properties Inherited by Subgroups
 > Let $H \leq G$ be a subgroup. Then:
 > 1. If $G$ is abelian, then $H$ is abelian.
-> 2. If $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]] (defined below), then $H$ is cyclic.
+> 2. If $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|cyclic]] (defined below), then $H$ is cyclic.
 > 3. If $G$ is finite of order $n$, then $|H|$ divides $n$ (Lagrange's theorem).
 
 ^prop-21-1
@@ -100,7 +100,7 @@ tags: [topology, math590]
 
 ^pf-21-1
 
-*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]], [[Division Algorithm|493 §6.1]]
+*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|Def. §21.7]], [[Division Algorithm|493 §6.1]]
 
 > [!remark]- Connections
 > - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]] ([[Lagrange's Theorem]]).
@@ -225,7 +225,7 @@ tags: [topology, math590]
 > If $f: G \to G'$ is an isomorphism, then $G$ and $G'$ have identical group-theoretic structure. In particular:
 > 1. $|G| = |G'|$ (same cardinality).
 > 2. $G$ is abelian if and only if $G'$ is abelian.
-> 3. $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]] (defined below) if and only if $G'$ is cyclic.
+> 3. $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|cyclic]] (defined below) if and only if $G'$ is cyclic.
 > 4. For each $n$, $G$ has an element of order $n$ if and only if $G'$ does.
 
 ^thm-21-6
@@ -241,7 +241,7 @@ tags: [topology, math590]
 
 ^pf-21-6
 
-*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^thm-21-5|§21.5]], [[§21 Algebra Prerequisites꞉ Groups#^thm-21-3|§21.3]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]]
+*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^thm-21-5|§21.5]], [[§21 Algebra Prerequisites꞉ Groups#^thm-21-3|§21.3]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|Def. §21.7]]
 
 > [!remark] Remark: Why Isomorphisms Matter
 > An isomorphism is a **perfect dictionary** between two groups: you can do all your work in whichever group is more convenient, then translate the answer back. For algebraic topology, this has two consequences:
@@ -330,14 +330,23 @@ tags: [topology, math590]
 
 ## Kernel and Image
 
-> [!definition] Definition §21.6: Kernel and Image
+> [!definition] Definition §21.6: Kernel
 > Let $f: G \to G'$ be a homomorphism.
 >
 > $$
-> \ker(f) = \{g \in G \mid f(g) = e_{G'}\}, \qquad \operatorname{im}(f) = \{f(g) \mid g \in G\}.
+> \ker(f) = \{g \in G \mid f(g) = e_{G'}\}.
 > $$
 
 ^def-21-6
+
+> [!definition] Definition §21.6: Image
+> Let $f: G \to G'$ be a homomorphism.
+>
+> $$
+> \operatorname{im}(f) = \{f(g) \mid g \in G\}.
+> $$
+
+^def-21-new1
 
 > [!remark]- Connections
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
@@ -420,15 +429,18 @@ tags: [topology, math590]
 
 ## Cyclic Groups and Free Groups
 
-> [!definition] Definition §21.7: Powers and Generators
+> [!definition] Definition §21.7: Powers
 > Let $G$ be a group and $x \in G$. We define the **powers** of $x$:
 > - $x^n = \underbrace{x \cdot x \cdots x}_{n}$ for $n > 0$ (the $n$-fold product of $x$ with itself),
 > - $x^0 = e$ (the identity element),
 > - $x^{-n} = \underbrace{x^{-1} \cdot x^{-1} \cdots x^{-1}}_{n}$ for $n > 0$.
->
-> If the set $\{x^m \mid m \in \mathbb{Z}\}$ equals all of $G$, then $G$ is called a **cyclic group** and $x$ is called a **generator** of $G$. We write $G = \langle x \rangle$.
 
 ^def-21-7
+
+> [!definition] Definition §21.7: Cyclic Groups and Generators
+> Let $G$ be a group and $x \in G$. If the set $\{x^m \mid m \in \mathbb{Z}\}$ of [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|powers]] equals all of $G$, then $G$ is called a **cyclic group** and $x$ is called a **generator** of $G$. We write $G = \langle x \rangle$.
+
+^def-21-new2
 
 > [!remark] Remark
 > Every cyclic group is isomorphic to either $\mathbb{Z}$ (infinite cyclic) or $\mathbb{Z}/n\mathbb{Z}$ (cyclic of order $n$).
@@ -579,7 +591,7 @@ tags: [topology, math590]
 > [!definition] Definition §21.11: Group Presentation
 > Let $G$ be a group with a family of generators $\{a_\alpha\}_{\alpha \in J}$. Let $F$ be the [[§21 Algebra Prerequisites꞉ Groups#^def-21-10|free group]] on $\{a_\alpha\}$. Then there exists a surjective homomorphism $h: F \to G$ with $h(a_\alpha) = a_\alpha$.
 >
-> Let $N = \ker(h)$, which is a [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|normal subgroup]] of $F$ (defined below, with the [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|quotient group]] $F/N$). Then $F/N \cong G$ (by the [[First Isomorphism Theorem for Groups|first isomorphism theorem]]). Each element of $N$ is called a **relation** on $F$.
+> Let $N = \ker(h)$, which is a [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|normal subgroup]] of $F$ (defined below, with the [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|quotient group]] $F/N$). Then $F/N \cong G$ (by the [[First Isomorphism Theorem for Groups|first isomorphism theorem]]). Each element of $N$ is called a **relation** on $F$.
 >
 > If $\{r_\beta\}_{\beta \in I}$ is a set of elements of $F$ such that $\{r_\beta\}$ and their conjugates generate $N$, then $\{r_\beta\}$ is called a **complete set of relations** for $G$.
 >
@@ -595,7 +607,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Vector-space version of the first isomorphism theorem: [[First isomorphism theorem]] (with [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]).
-> - Why $\ker(h)$ is normal: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-17|Remark after Definition §21.12]]; the quotient $F/N$: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
+> - Why $\ker(h)$ is normal: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-17|Remark after Definition §21.12]]; the quotient $F/N$: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group]].
 
 > [!remark] Remark: Reading the $\langle \mid \rangle$ Notation
 > The bar $\mid$ separates *what you have* (generators) from *what you force* (relations). Building up:
@@ -674,10 +686,15 @@ The notation $\langle a, b \mid r \rangle$ means “force $r = e$.” But what d
 
 ^rem-21-17
 
-> [!definition] Definition §21.13: Cosets and Quotient Group
-> The **left coset** of $N$ by $g$ is $gN = \{gn \mid n \in N\}$. If $N \trianglelefteq G$, the **quotient group** $G/N = \{gN \mid g \in G\}$ with operation $(gN)(hN) = (gh)N$. The canonical map $p: G \to G/N$, $x \mapsto xN$, is a surjective homomorphism with $\ker(p) = N$.
+> [!definition] Definition §21.13: Cosets
+> The **left coset** of $N$ by $g$ is $gN = \{gn \mid n \in N\}$.
 
 ^def-21-13
+
+> [!definition] Definition §21.13: Quotient Group
+> If $N \trianglelefteq G$, the **quotient group** $G/N = \{gN \mid g \in G\}$ with operation $(gN)(hN) = (gh)N$. The canonical map $p: G \to G/N$, $x \mapsto xN$, is a surjective homomorphism with $\ker(p) = N$.
+
+^def-21-new3
 
 > [!remark]- Connections
 > - Linear-algebra versions: cosets ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|Translate]], $G/N$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]], $p$ ↔ [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]].

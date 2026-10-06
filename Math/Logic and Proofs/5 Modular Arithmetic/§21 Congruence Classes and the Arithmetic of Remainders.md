@@ -82,7 +82,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 > - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]].
 
 > [!remark] Remark: The Box Model of the Remainder Map
-> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]])
+> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-new3|Def. §9.4]])
 >
 > $$
 > \overleftarrow{r_m}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
@@ -107,7 +107,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^def-21-2
 
-Each integer $a$ lies in its own class $[a]_m$, and by [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]] two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
+Each integer $a$ lies in its own class $[a]_m$, and by [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]] two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]]).
 
 > [!theorem] Proposition §21.2: $\mathbb{Z}_m$ Has $m$ Elements
 > The set $\mathbb{Z}_m$ is finite of cardinality $m$; its elements are $[r]_m$ for the integers $0 \leq r < m$:

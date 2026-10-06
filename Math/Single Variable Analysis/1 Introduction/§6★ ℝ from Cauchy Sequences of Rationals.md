@@ -8,7 +8,7 @@ tags: [real-analysis, math451, extension]
 ---
 ← [[§6 Dedekind Cuts]] · ↑ [[· 1 Introduction]] · [[§7 Limits of Sequences]] →
 
-★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|§10 Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
+★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10a Cauchy Sequences#^rem-10-4|§10a Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
 
 **Question.** §6 explained why ℝ cannot be defined as "limits of rational sequences" in this course: limits presuppose ℝ. Is there a way to use sequences anyway?
 
@@ -18,18 +18,23 @@ Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ
 
 ## Cauchy Sequences of Rationals
 
-> [!definition] Definition §6★.1: Rational Cauchy Sequence; Null Sequence
+> [!definition] Definition §6★.1: Rational Cauchy Sequence
 > A sequence $(q_n)$ of rational numbers is a **rational Cauchy sequence** if for every rational $\varepsilon > 0$ there is $N$ such that
 >
 > $$
 > |q_n - q_m| < \varepsilon \qquad \text{for all } n, m \geq N.
 > $$
 >
-> It is a **null sequence** if for every rational $\varepsilon > 0$ there is $N$ with $|q_n| < \varepsilon$ for all $n \geq N$. Write $\mathcal{C}$ for the set of rational Cauchy sequences and $\mathcal{N} \subseteq \mathcal{C}$ for the null sequences.
+> Write $\mathcal{C}$ for the set of rational Cauchy sequences.
 >
 > This is [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]] with $\varepsilon$ restricted to $\mathbb{Q}$; nothing outside $\mathbb{Q}$ is mentioned.
 
 ^def-6s-1
+
+> [!definition] Definition §6★.1: Null Sequence
+> Let $(q_n)$ be a sequence of rational numbers. It is a **null sequence** if for every rational $\varepsilon > 0$ there is $N$ with $|q_n| < \varepsilon$ for all $n \geq N$. Write $\mathcal{C}$ for the set of rational Cauchy sequences and $\mathcal{N} \subseteq \mathcal{C}$ for the null sequences.
+
+^def-6s-new1
 
 A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n - q_m| \leq |q_n| + |q_m| < \varepsilon$. So $\mathcal{N} \subseteq \mathcal{C}$ indeed.
 
@@ -164,7 +169,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-4
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new1|Def. §6★.2]]
 
 > [!theorem] Theorem §6★.5: $\widehat{\mathbb{Q}}$ Is a Field Containing $\mathbb{Q}$
 > With the operations of [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|Proposition §6★.3]], $0 = \iota(0)$ and $1 = \iota(1)$, the set $\widehat{\mathbb{Q}}$ satisfies the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]]). The map $\iota$ is injective and preserves sums and products: $\iota(p + q) = \iota(p) + \iota(q)$ and $\iota(pq) = \iota(p)\iota(q)$.
@@ -213,18 +218,21 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ## Order
 
-> [!definition] Definition §6★.4: Positive Classes; the Order on $\widehat{\mathbb{Q}}$
+> [!definition] Definition §6★.4: Positive Classes
 > A class $x \in \widehat{\mathbb{Q}}$ is **positive**, written $x > 0$, if it has a representative $(q_n)$ with
 >
 > $$
 > q_n \geq \delta \quad \text{for all } n \geq N, \qquad \text{for some rational } \delta > 0 \text{ and some } N.
 > $$
->
-> For $x, y \in \widehat{\mathbb{Q}}$ define $x < y$ if $y - x > 0$, and $x \leq y$ if $x < y$ or $x = y$.
 
 ^def-6s-4
 
 "Eventually $q_n > 0$" would not do: $(1/n)$ has all terms positive, yet it represents $0$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^ex-6s-1|Example §6★.1]]). Positivity has to be bounded away from zero, as in [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|Lemma §6★.4]].
+
+> [!definition] Definition §6★.4: The Order on $\widehat{\mathbb{Q}}$
+> For $x, y \in \widehat{\mathbb{Q}}$ define $x < y$ if $y - x > 0$ (positivity as in [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Definition §6★.4]]), and $x \leq y$ if $x < y$ or $x = y$.
+
+^def-6s-new2
 
 > [!theorem] Lemma §6★.6: Properties of Positivity
 > Let $x, y \in \widehat{\mathbb{Q}}$.
@@ -252,7 +260,7 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Def. §6★.4]]
 
 > [!theorem] Theorem §6★.7: $\widehat{\mathbb{Q}}$ Is an Ordered Field
-> With $\leq$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Def. §6★.4]], $\widehat{\mathbb{Q}}$ satisfies the order axioms O1–O5 ([[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]), so it is an ordered field. The embedding preserves order: for $p, q \in \mathbb{Q}$, $p \leq q$ if and only if $\iota(p) \leq \iota(q)$.
+> With $\leq$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]], $\widehat{\mathbb{Q}}$ satisfies the order axioms O1–O5 ([[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]), so it is an ordered field. The embedding preserves order: for $p, q \in \mathbb{Q}$, $p \leq q$ if and only if $\iota(p) \leq \iota(q)$.
 
 ^thm-6s-7
 
@@ -273,7 +281,7 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ^pf-6s-7
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.6]]
 
 Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]]) with the properties of [[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]]. Because $\iota$ preserves sums, products and order, $|\iota(q)| = \iota(|q|)$. Recall that in any ordered field $|a| \leq c$ if and only if $-c \leq a \leq c$.
 
@@ -323,12 +331,19 @@ Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§
 
 Limits and Cauchy sequences make sense in any ordered field: read [[§7 Limits of Sequences#^def-7-2|Def. §7.2]] and [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]] with $\varepsilon$ ranging over the positive elements of the field.
 
-> [!definition] Definition §6★.5: Convergence and Cauchy Sequences in $\widehat{\mathbb{Q}}$
-> A sequence $(x_k)$ in $\widehat{\mathbb{Q}}$ **converges** to $x \in \widehat{\mathbb{Q}}$ if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x| < \varepsilon$ for all $k \geq K$. It is **Cauchy** if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x_m| < \varepsilon$ for all $k, m \geq K$.
+> [!definition] Definition §6★.5: Convergence in $\widehat{\mathbb{Q}}$
+> A sequence $(x_k)$ in $\widehat{\mathbb{Q}}$ **converges** to $x \in \widehat{\mathbb{Q}}$ if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x| < \varepsilon$ for all $k \geq K$.
 >
 > By [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|Proposition §6★.8]](b) it is enough to test $\varepsilon = \iota(\delta)$ with $\delta > 0$ rational.
 
 ^def-6s-5
+
+> [!definition] Definition §6★.5: Cauchy Sequences in $\widehat{\mathbb{Q}}$
+> Let $(x_k)$ be a sequence in $\widehat{\mathbb{Q}}$. It is **Cauchy** if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x_m| < \varepsilon$ for all $k, m \geq K$.
+>
+> As for convergence, by [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|Proposition §6★.8]](b) it is enough to test $\varepsilon = \iota(\delta)$ with $\delta > 0$ rational.
+
+^def-6s-new3
 
 > [!theorem] Corollary §6★.9: A Class Is the Limit of Its Representative
 > If $x = [(q_n)] \in \widehat{\mathbb{Q}}$, then $\iota(q_k) \to x$ in $\widehat{\mathbb{Q}}$ as $k \to \infty$.
@@ -369,7 +384,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 ## Completeness
 
 > [!theorem] Theorem §6★.10: $\widehat{\mathbb{Q}}$ Is Cauchy Complete
-> Every Cauchy sequence in $\widehat{\mathbb{Q}}$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-5|Def. §6★.5]]) converges in $\widehat{\mathbb{Q}}$.
+> Every Cauchy sequence in $\widehat{\mathbb{Q}}$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new3|Def. §6★.5]]) converges in $\widehat{\mathbb{Q}}$.
 
 ^thm-6s-10
 
@@ -521,7 +536,7 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|§6★.12]]
 
 > [!remark] Remark: The Order of Logic, and Functional Analysis
-> The completion of a metric space in functional analysis ([[§11 Completeness#^def-11-3|556 Def. §11.3]], [[§11 Completeness#^def-11-4|556 Def. §11.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§11 Completeness#^prop-11-3|556 Proposition §11.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Def. §6★.4]]) instead of measuring distances.
+> The completion of a metric space in functional analysis ([[§11 Completeness#^def-11-3|556 Def. §11.3]], [[§11 Completeness#^def-11-4|556 Def. §11.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§11 Completeness#^prop-11-3|556 Proposition §11.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]]) instead of measuring distances.
 >
 > Once ℝ exists, the two constructions agree. Applied to $M = \mathbb{Q}$ with $d(p, q) = |p - q|$, 556's equivalence relation is $\sim$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]] (rational tolerances suffice, as in the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]]), so 556's completion $\overline{M}$ for $M = \mathbb{Q}$ is $\widehat{\mathbb{Q}}$ as a set (this $\overline{\mathbb{Q}}$ is not the field of algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]]). The dictionary:
 >

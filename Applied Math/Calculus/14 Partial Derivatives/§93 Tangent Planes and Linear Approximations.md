@@ -119,14 +119,19 @@ $$
 $$
 (Stewart, Equation 3.4.7; [[§17 The Chain Rule#^lem-17-1|Lemma §17.1]]). The definition for two variables copies this.
 
-> [!definition] Definition §93.3: Increment; Differentiable Function of Two Variables
+> [!definition] Definition §93.3: Increment
 > Let $z = f(x, y)$. If $x$ changes from $a$ to $a + \Delta x$ and $y$ changes from $b$ to $b + \Delta y$, the corresponding **increment** of $z$ is
 >
 > $$
 > \Delta z = f(a + \Delta x, b + \Delta y) - f(a, b) . \qquad (6)
 > $$
 >
-> The function $f$ is **differentiable** at $(a, b)$ if $\Delta z$ can be expressed in the form
+> *Stewart: 14.4, Equation 6 and Definition 7*
+
+^def-93-3
+
+> [!definition] Definition §93.4: Differentiable Function of Two Variables
+> Let $z = f(x, y)$, with increment $\Delta z$ as in [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]]. The function $f$ is **differentiable** at $(a, b)$ if $\Delta z$ can be expressed in the form
 >
 > $$
 > \Delta z = f_x(a, b)\,\Delta x + f_y(a, b)\,\Delta y + \varepsilon_1\,\Delta x + \varepsilon_2\,\Delta y ,
@@ -136,7 +141,7 @@ $$
 >
 > *Stewart: 14.4, Equation 6 and Definition 7*
 
-^def-93-3
+^def-93-new1
 
 In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check Definition §93.3 directly; the next theorem is the convenient sufficient condition.
 
@@ -315,14 +320,28 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 
 ## Functions of Three or More Variables
 
-> [!definition] Definition §93.5: Linear Approximation and Differentials in Three Variables
-> Linear approximations, differentiability and differentials are defined in the same way for functions of more than two variables; a differentiable function is defined by an expression like the one in Definition §93.3. For $f(x, y, z)$ the **linear approximation** at $(a, b, c)$ is
+> [!definition] Definition §93.5: Linear Approximation in Three Variables
+> Linear approximations, differentiability and differentials are defined in the same way for functions of more than two variables; a differentiable function is defined by an expression like the one in [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.3]]. For $f(x, y, z)$ the **linear approximation** at $(a, b, c)$ is
 >
 > $$
 > f(x, y, z) \approx f(a, b, c) + f_x(a, b, c)(x - a) + f_y(a, b, c)(y - b) + f_z(a, b, c)(z - c) ,
 > $$
 >
-> and the **linearization** $L(x, y, z)$ is the right side. If $w = f(x, y, z)$, the **increment** of $w$ is $\Delta w = f(x + \Delta x, y + \Delta y, z + \Delta z) - f(x, y, z)$, and the **differential** $dw$ is defined in terms of the differentials $dx$, $dy$, $dz$ of the independent variables by
+> and the **linearization** $L(x, y, z)$ is the right side.
+>
+> *Stewart: 14.4 (text)*
+
+^def-93-5
+
+> [!definition] Definition §93.6: Increment in Three Variables
+> If $w = f(x, y, z)$, the **increment** of $w$ is $\Delta w = f(x + \Delta x, y + \Delta y, z + \Delta z) - f(x, y, z)$.
+>
+> *Stewart: 14.4 (text)*
+
+^def-93-new2
+
+> [!definition] Definition §93.7: Differentials in Three Variables
+> If $w = f(x, y, z)$, the **differential** $dw$ is defined in terms of the differentials $dx$, $dy$, $dz$ of the independent variables by
 >
 > $$
 > dw = \frac{\partial w}{\partial x}\,dx + \frac{\partial w}{\partial y}\,dy + \frac{\partial w}{\partial z}\,dz .
@@ -330,7 +349,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 >
 > *Stewart: 14.4 (text)*
 
-^def-93-5
+^def-93-new3
 
 > [!example] Example §93.4: Estimating Errors with Differentials
 > **(a)** The base radius and height of a right circular cone are measured as $10$ cm and $25$ cm, with a possible error of as much as $\varepsilon$ cm in each. Estimate the maximum error in the calculated volume, and evaluate it for $\varepsilon = 0.1$.

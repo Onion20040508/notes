@@ -124,7 +124,7 @@ For instance, rotating $y = \sin x$, $0 \le x \le 2\pi$, about the $x$-axis give
 
 Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mathbf{j} + z(u, v)\,\mathbf{k}$, and let $P_0$ be the point with position vector $\mathbf{r}(u_0, v_0)$. The grid curve $C_1$ given by $\mathbf{r}(u_0, v)$ passes through $P_0$, and so does the grid curve $C_2$ given by $\mathbf{r}(u, v_0)$.
 
-> [!definition] Definition §112.3: Tangent Vectors, Smooth Surface, Tangent Plane
+> [!definition] Definition §112.3: Tangent Vectors to a Parametric Surface
 > The tangent vectors at $P_0$ to the grid curves $C_1$ and $C_2$ are the partial derivatives
 >
 > $$
@@ -135,11 +135,23 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 > \mathbf{r}_u = \frac{\partial x}{\partial u}(u_0, v_0)\,\mathbf{i} + \frac{\partial y}{\partial u}(u_0, v_0)\,\mathbf{j} + \frac{\partial z}{\partial u}(u_0, v_0)\,\mathbf{k} . \qquad (5)
 > $$
 >
-> If $\mathbf{r}_u \times \mathbf{r}_v$ is never $\mathbf{0}$, the surface $S$ is called **smooth** (it has no "corners"). For a smooth surface, the **tangent plane** at $P_0$ is the plane that contains the tangent vectors $\mathbf{r}_u$ and $\mathbf{r}_v$, and the vector $\mathbf{r}_u \times \mathbf{r}_v$ is a normal vector to the tangent plane.
->
 > *Stewart: 16.6, Equations 4 and 5*
 
 ^def-112-3
+
+> [!definition] Definition §112.4: Smooth Surface
+> If $\mathbf{r}_u \times \mathbf{r}_v$ is never $\mathbf{0}$, the surface $S$ is called **smooth** (it has no "corners").
+>
+> *Stewart: 16.6, Equations 4 and 5*
+
+^def-112-new1
+
+> [!definition] Definition §112.5: Tangent Plane to a Parametric Surface
+> For a smooth surface, the **tangent plane** at $P_0$ is the plane that contains the tangent vectors $\mathbf{r}_u$ and $\mathbf{r}_v$, and the vector $\mathbf{r}_u \times \mathbf{r}_v$ is a normal vector to the tangent plane.
+>
+> *Stewart: 16.6, Equations 4 and 5*
+
+^def-112-new2
 
 > [!example] Example §112.3: A Tangent Plane
 > Find the tangent plane to the surface with parametric equations $x = u^2$, $y = v^2$, $z = u + 2v$ at the point $(1, 1, 3)$.

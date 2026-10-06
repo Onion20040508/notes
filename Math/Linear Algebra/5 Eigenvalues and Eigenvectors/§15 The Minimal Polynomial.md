@@ -13,9 +13,6 @@ tags: [linear-algebra]
 
 ^ladr-5-19
 
-> [!remark] Remark: Both hypotheses are needed
-> Over $\R$: rotation by $90^\circ$ on $\R^2$ has no eigenvalue. In infinite dimensions: multiplication by $z$ on $\Poly(\C)$ has no eigenvalue.
-
 > [!proof]+ Proof
 > Let $\dim V=n>0$, $T\in\Lin(V)$, and $v\ne0$. The $n+1$ vectors $v,Tv,\dots,T^nv$ are linearly dependent, so some nonconstant polynomial $p$ satisfies $p(T)v=0$; take one of smallest degree. By [[Fundamental theorem of algebra, first version]] it has a zero $\lambda\in\C$, and by [[§13 Polynomials#^ladr-4-6|Each zero of a polynomial corresponds to a degree-one factor]] $p(z)=(z-\lambda)q(z)$. Then, using [[§14 Invariant Subspaces#^ladr-5-17|Multiplicative properties]],
 > $$
@@ -24,6 +21,9 @@ tags: [linear-algebra]
 > Since $\deg q<\deg p$, $q(T)v\ne0$, so $q(T)v$ is an eigenvector with eigenvalue $\lambda$.
 
 *Uses:* [[Fundamental theorem of algebra, first version|4.12]], [[§13 Polynomials#^ladr-4-6|4.6]], [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
+
+> [!remark] Remark: Both hypotheses are needed
+> Over $\R$: rotation by $90^\circ$ on $\R^2$ has no eigenvalue. In infinite dimensions: multiplication by $z$ on $\Poly(\C)$ has no eigenvalue.
 
 > [!remark]- Connections
 > - Computational version: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (by the Fundamental Theorem of Algebra the characteristic equation of an $n\times n$ matrix has $n$ complex roots, counted with multiplicity; they are eigenvalues in the sense of [[§36 Complex Eigenvalues#^def-36-1|235 Def. §36.1]]).
@@ -47,9 +47,6 @@ tags: [linear-algebra]
 
 ^ladr-5-22
 
-> [!remark] Remark: Crude bound versus sharp bound
-> $\dim\Lin(V)=(\dim V)^2$ ([[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]) gives an annihilating polynomial of degree $\le(\dim V)^2$ for free; this result sharpens it to $\dim V$ without determinants.
-
 > [!proof]+ Proof
 > **Existence with the bound**, by induction on $\dim V$ (for all operators on all spaces over $\F$ of smaller dimension). If $\dim V=0$, take $p=1$. Otherwise pick $v\ne0$. The list $v,Tv,\dots,T^{\dim V}v$ is dependent, so by [[Linear dependence lemma]] there is a smallest $m\le\dim V$ with
 > $$
@@ -60,6 +57,9 @@ tags: [linear-algebra]
 > **Smallest degree and uniqueness.** *(Filled in.)* Among monic polynomials annihilating $T$ take one of smallest degree. If $p_1,p_2$ both qualify, $p_1-p_2$ has smaller degree and annihilates $T$; if it were nonzero, dividing by its leading coefficient would give a monic annihilator of smaller degree. So $p_1=p_2$.
 
 *Uses:* [[Linear dependence lemma|2.19]], [[Fundamental theorem of linear maps|3.21]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
+
+> [!remark] Remark: Crude bound versus sharp bound
+> $\dim\Lin(V)=(\dim V)^2$ ([[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]) gives an annihilating polynomial of degree $\le(\dim V)^2$ for free; this result sharpens it to $\dim V$ without determinants.
 
 > [!definition] Definition 5.24: Minimal polynomial
 > For finite-dimensional $V$ and $T\in\Lin(V)$, the *minimal polynomial* of $T$ is the unique monic polynomial $p$ of smallest degree with $p(T)=0$.
@@ -153,13 +153,13 @@ tags: [linear-algebra]
 
 ^ladr-5-32
 
-> [!remark] Remark: Inverse as a polynomial
-> *(Filled in.)* If $p(z)=c_0+c_1z+\dots+z^m$ with $c_0\ne0$, then $T\big(c_1I+\dots+T^{m-1}\big)=-c_0I$, so $T^{-1}=-\tfrac1{c_0}\big(c_1I+c_2T+\dots+T^{m-1}\big)$ is a polynomial in $T$.
-
 > [!proof]+ Proof
 > $T$ not invertible $\iff0$ is an eigenvalue ([[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]) $\iff0$ is a zero of $p$ ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]](a)) $\iff p(0)=0$, and $p(0)$ is the constant term.
 
 *Uses:* [[§14 Invariant Subspaces#^ladr-5-7|5.7]], [[§15 The Minimal Polynomial#^ladr-5-27|5.27]]
+
+> [!remark] Remark: Inverse as a polynomial
+> *(Filled in.)* If $p(z)=c_0+c_1z+\dots+z^m$ with $c_0\ne0$, then $T\big(c_1I+\dots+T^{m-1}\big)=-c_0I$, so $T^{-1}=-\tfrac1{c_0}\big(c_1I+c_2T+\dots+T^{m-1}\big)$ is a polynomial in $T$.
 
 > [!remark]- Connections
 > - Determinant analogue: [[Invertible ⟺ nonzero determinant]].
@@ -186,15 +186,15 @@ tags: [linear-algebra]
 
 ^ladr-5-34
 
-> [!remark] Remark: Sharp
-> In every even dimension there are real operators without eigenvalues (block-diagonal rotations).
-
 > [!proof]+ Proof
 > Over $\C$ this is [[Existence of eigenvalues]], so let $\F=\R$, $n=\dim V$ odd, and induct on $n$ in steps of $2$ ($n=1$ is trivial). Let $p$ be the minimal polynomial of $T$ ([[Existence, uniqueness, and degree of minimal polynomial|5.22]]). If $x-\lambda$ divides $p$ for some real $\lambda$, then $\lambda$ is an eigenvalue ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]](a)). Otherwise, by [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]], $p(x)=q(x)(x^2+bx+c)$ with $b^2<4c$ and $q$ monic. Then $q(T)$ vanishes on $\range(T^2+bT+cI)$; since $\deg q<\deg p$, this range is not all of $V$.
 >
 > By [[Fundamental theorem of linear maps]], $\dim V=\dim\nullsp(T^2+bT+cI)+\dim\range(T^2+bT+cI)$. The null space has even dimension ([[§15 The Minimal Polynomial#^ladr-5-33|Even-dimensional null space]]), so the range has odd dimension $<n$. It is invariant ([[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]]), so by induction $T$ restricted to it has an eigenvalue, which is an eigenvalue of $T$.
 
 *Uses:* [[Existence of eigenvalues|5.19]], [[Existence, uniqueness, and degree of minimal polynomial|5.22]], [[§15 The Minimal Polynomial#^ladr-5-27|5.27]], [[§13 Polynomials#^ladr-4-16|4.16]], [[Fundamental theorem of linear maps|3.21]], [[§15 The Minimal Polynomial#^ladr-5-33|5.33]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
+
+> [!remark] Remark: Sharp
+> In every even dimension there are real operators without eigenvalues (block-diagonal rotations).
 
 > [!remark]- Connections
 > - Physics: a rotation of $\R^3$ has a real eigenvalue by this result, necessarily $\pm1$ (norm-preserving; cf. [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|Eigenvalues of unitary operators have absolute value 1]]). For a proper rotation ($\det=1$) the eigenvalue $1$ must occur, giving the rotation axis: the three complex eigenvalues (with multiplicity) have modulus $1$ and multiply to $\det=1$; nonreal ones come in conjugate pairs with product $1$, so the real ones, each $\pm1$ and odd in number, multiply to $1$, and hence not all of them are $-1$.

@@ -74,18 +74,20 @@ tags: [linear-algebra]
 >
 > ![[ladr-5.76-common-eigenbasis.svg|380]]
 
+^ladr-5-76-fig
+
 > [!theorem] Theorem 5.78: Common eigenvector for commuting operators
 > Two commuting operators on a finite-dimensional nonzero complex vector space have a common eigenvector.
 
 ^ladr-5-78
 
-> [!remark] Remark: Common eigenvector, not eigenvalue
-> The two operators need not share an eigenvalue; only the vector is common.
-
 > [!proof]+ Proof
 > Let $\lambda$ be an eigenvalue of $S$ ([[Existence of eigenvalues|5.19]]), so $E(\lambda,S)\ne\{0\}$. It is invariant under $T$ ([[§18 Commuting Operators#^ladr-5-75|5.75]]), so $T|_{E(\lambda,S)}$ has an eigenvector ([[Existence of eigenvalues|5.19]]); it is an eigenvector of both.
 
 *Uses:* [[Existence of eigenvalues|5.19]], [[§18 Commuting Operators#^ladr-5-75|5.75]]
+
+> [!remark] Remark: Common eigenvector, not eigenvalue
+> The two operators need not share an eigenvalue; only the vector is common.
 
 > [!remark]- Connections
 > - Starts the induction in [[§18 Commuting Operators#^ladr-5-80|5.80]].
@@ -122,13 +124,13 @@ tags: [linear-algebra]
 
 ^ladr-5-81
 
-> [!remark] Remark: Commutativity is needed
-> $S=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $T=\begin{pmatrix}0&0\\1&0\end{pmatrix}$ have only the eigenvalue $0$, but $S+T$ has eigenvalues $\pm1$.
-
 > [!proof]+ Proof
 > In a basis making both upper triangular ([[§18 Commuting Operators#^ladr-5-80|5.80]]), $\mathcal{M}(S+T)=\mathcal{M}(S)+\mathcal{M}(T)$ and $\mathcal{M}(ST)=\mathcal{M}(S)\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-35|3.35]], [[§9 Matrices#^ladr-3-43|3.43]]) are upper triangular, with diagonals the entrywise sums and products. By [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]], eigenvalues are diagonal entries in each case.
 
 *Uses:* [[§18 Commuting Operators#^ladr-5-80|5.80]], [[§9 Matrices#^ladr-3-35|3.35]], [[§9 Matrices#^ladr-3-43|3.43]], [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]]
+
+> [!remark] Remark: Commutativity is needed
+> $S=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $T=\begin{pmatrix}0&0\\1&0\end{pmatrix}$ have only the eigenvalue $0$, but $S+T$ has eigenvalues $\pm1$.
 
 > [!remark]- Connections
 > - Physics: for commuting observables, eigenvalues of $A+B$ are sums of joint eigenvalues (e.g. total angular momentum $J_z=L_z+S_z$).

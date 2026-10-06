@@ -350,28 +350,63 @@ Triple integrals are not necessary for computing volumes, but they give an alter
 
 All the applications of double integrals in [[§101 Applications of Double Integrals|§101]] extend to triple integrals. If a solid occupying $E$ has density $\rho(x, y, z)$ (mass per unit volume), divide a box containing $E$ into sub-boxes $B_{ijk}$, let $\rho = 0$ outside $E$, and approximate the mass of the part in $B_{ijk}$ by $\rho(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)\,\Delta V$; adding and passing to the limit gives the following.
 
-> [!definition] Definition §103.5: Mass, Moments, Center of Mass and Moments of Inertia of a Solid
+> [!definition] Definition §103.5: Mass of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$:
 >
 > - the **mass** is $m = \displaystyle\lim_{l, m, n \to \infty} \sum_{i,j,k} \rho(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})\,\Delta V = \iiint_E \rho(x, y, z)\,dV$; (13)
+>
+> *Stewart: 15.6, Equations 13, 14, 15 and 16*
+
+^def-103-5
+
+> [!definition] Definition §103.6: Moments of a Solid
+> For a solid occupying $E$ with density $\rho(x, y, z)$:
+>
 > - the **moments** about the three coordinate planes are
 >
 > $$
 > M_{yz} = \iiint_E x\,\rho\,dV , \qquad M_{xz} = \iiint_E y\,\rho\,dV , \qquad M_{xy} = \iiint_E z\,\rho\,dV ; \qquad (14)
 > $$
 >
+> *Stewart: 15.6, Equations 13, 14, 15 and 16*
+
+^def-103-new1
+
+> [!definition] Definition §103.7: Center of Mass of a Solid
+> For a solid occupying $E$ with density $\rho(x, y, z)$, mass $m$ and moments $M_{yz}$, $M_{xz}$, $M_{xy}$:
+>
 > - the **center of mass** is $(\bar x, \bar y, \bar z)$ with $\bar x = M_{yz}/m$, $\bar y = M_{xz}/m$, $\bar z = M_{xy}/m$ (15); for constant density it is called the **centroid** of $E$;
+>
+> *Stewart: 15.6, Equations 13, 14, 15 and 16*
+
+^def-103-new2
+
+> [!definition] Definition §103.8: Moments of Inertia of a Solid
+> For a solid occupying $E$ with density $\rho(x, y, z)$:
+>
 > - the **moments of inertia** about the three coordinate axes are
 >
 > $$
 > I_x = \iiint_E (y^2 + z^2)\rho\,dV , \qquad I_y = \iiint_E (x^2 + z^2)\rho\,dV , \qquad I_z = \iiint_E (x^2 + y^2)\rho\,dV . \qquad (16)
 > $$
 >
-> Likewise, a charge density $\sigma(x, y, z)$ gives the total **electric charge** $Q = \iiint_E \sigma\,dV$, and the **joint density function** of three [[§56 Probability#^def-56-1|continuous random variables]] $X$, $Y$, $Z$ is a function $f \ge 0$ with $P\big((X, Y, Z) \in E\big) = \iiint_E f\,dV$ and $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dz\,dy\,dx = 1$; in particular $P(a \le X \le b,\ c \le Y \le d,\ r \le Z \le s) = \int_a^b \int_c^d \int_r^s f\,dz\,dy\,dx$.
+> *Stewart: 15.6, Equations 13, 14, 15 and 16*
+
+^def-103-new3
+
+> [!definition] Definition §103.9: Electric Charge of a Solid
+> Likewise, a charge density $\sigma(x, y, z)$ gives the total **electric charge** $Q = \iiint_E \sigma\,dV$.
 >
 > *Stewart: 15.6, Equations 13, 14, 15 and 16*
 
-^def-103-5
+^def-103-new4
+
+> [!definition] Definition §103.10: Joint Density Function of Three Random Variables
+> The **joint density function** of three [[§56 Probability#^def-56-1|continuous random variables]] $X$, $Y$, $Z$ is a function $f \ge 0$ with $P\big((X, Y, Z) \in E\big) = \iiint_E f\,dV$ and $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dz\,dy\,dx = 1$; in particular $P(a \le X \le b,\ c \le Y \le d,\ r \le Z \le s) = \int_a^b \int_c^d \int_r^s f\,dz\,dy\,dx$.
+>
+> *Stewart: 15.6, Equations 13, 14, 15 and 16*
+
+^def-103-new5
 
 For example (Stewart's Example 15.6.6), consider the solid of constant density $\rho$ bounded by the parabolic cylinder $x = y^2$ and the planes $x = z$, $z = 0$ and $x = 1$. The lower and upper surfaces are the planes $z = 0$ and $z = x$, and the projection onto the $xy$-plane is the region between $x = y^2$ and $x = 1$, so as a type 1 region
 

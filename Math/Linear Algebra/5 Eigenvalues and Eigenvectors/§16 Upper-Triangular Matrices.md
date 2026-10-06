@@ -60,15 +60,15 @@ tags: [linear-algebra]
 
 ^ladr-5-39
 
-> [!remark] Remark: Flags
-> A chain $\{0\}\subsetneq U_1\subsetneq\dots\subsetneq U_n=V$ with $\dim U_k=k$ is a *flag*. So: $T$ is upper triangular in some basis iff $T$ preserves some flag.
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): upper triangular means $Tv_j\in\Span(v_1,\dots,v_j)\subseteq\Span(v_1,\dots,v_k)$ for $j\le k$, so $\Span(v_1,\dots,v_k)$ is invariant.
 >
 > (b)$\Rightarrow$(c): take $v_k\in\Span(v_1,\dots,v_k)$.
 >
 > (c)$\Rightarrow$(a): writing $Tv_k$ in the basis uses only $v_1,\dots,v_k$, so column $k$ has zeros below the diagonal.
+
+> [!remark] Remark: Flags
+> A chain $\{0\}\subsetneq U_1\subsetneq\dots\subsetneq U_n=V$ with $\dim U_k=k$ is a *flag*. So: $T$ is upper triangular in some basis iff $T$ preserves some flag.
 
 > [!remark]- Connections
 > - Used in [[§16 Upper-Triangular Matrices#^ladr-5-44|5.44]] and [[§18 Commuting Operators#^ladr-5-80|5.80]].
@@ -87,13 +87,13 @@ tags: [linear-algebra]
 
 ^ladr-5-40
 
-> [!remark] Remark: Cayley–Hamilton preview
-> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the [[§34 Determinants#^ladr-9-63|characteristic polynomial]]; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
-
 > [!proof]+ Proof
 > Let $v_1,\dots,v_n$ be the basis. We show by induction on $k$ that $(T-\lambda_1I)\cdots(T-\lambda_kI)$ kills $v_1,\dots,v_k$. For $k=1$: $Tv_1=\lambda_1v_1$. For the step, $(T-\lambda_kI)v_k\in\Span(v_1,\dots,v_{k-1})$ (the diagonal entry cancels), which the first $k-1$ factors kill; and they kill $v_1,\dots,v_{k-1}$ already. Since the factors commute ([[§14 Invariant Subspaces#^ladr-5-17|5.17]]), adding more factors on the left keeps these vectors killed. For $k=n$ the product vanishes on a basis, hence is $0$.
 
 *Uses:* [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
+
+> [!remark] Remark: Cayley–Hamilton preview
+> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the [[§34 Determinants#^ladr-9-63|characteristic polynomial]]; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
 
 > [!remark]- Connections
 > - Gives the bound on the minimal polynomial used in [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]], [[§16 Upper-Triangular Matrices#^ladr-5-44|5.44]], and in [[§17 Diagonalizable Operators#^ladr-5-61|5.61]].
@@ -103,15 +103,15 @@ tags: [linear-algebra]
 
 ^ladr-5-41
 
-> [!remark] Remark: Not row echelon form
-> Gaussian elimination produces an upper-triangular matrix too, but it is not the matrix of $T$ in any basis and its diagonal is not the eigenvalue list. Also: only $v_1$ is guaranteed to be an eigenvector; $v_k$ is one iff column $k$ is zero off the diagonal.
-
 > [!proof]+ Proof
 > **Diagonal entries are eigenvalues.** $Tv_1=\lambda_1v_1$. For $k\ge2$, $(T-\lambda_kI)v_k\in\Span(v_1,\dots,v_{k-1})$, so $T-\lambda_kI$ maps the $k$-dimensional $\Span(v_1,\dots,v_k)$ into the $(k-1)$-dimensional $\Span(v_1,\dots,v_{k-1})$. By [[§8 Null Spaces and Ranges#^ladr-3-22|3.22]] it is not injective there, giving an eigenvector for $\lambda_k$.
 >
 > **No others.** $q(z)=(z-\lambda_1)\cdots(z-\lambda_n)$ satisfies $q(T)=0$ ([[§16 Upper-Triangular Matrices#^ladr-5-40|5.40]]), so the minimal polynomial divides $q$ ([[§15 The Minimal Polynomial#^ladr-5-29|5.29]]); its zeros, which are the eigenvalues ([[§15 The Minimal Polynomial#^ladr-5-27|5.27]]), are among $\lambda_1,\dots,\lambda_n$.
 
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-22|3.22]], [[§16 Upper-Triangular Matrices#^ladr-5-40|5.40]], [[§15 The Minimal Polynomial#^ladr-5-29|5.29]], [[§15 The Minimal Polynomial#^ladr-5-27|5.27]]
+
+> [!remark] Remark: Not row echelon form
+> Gaussian elimination produces an upper-triangular matrix too, but it is not the matrix of $T$ in any basis and its diagonal is not the eigenvalue list. Also: only $v_1$ is guaranteed to be an eigenvector; $v_k$ is one iff column $k$ is zero off the diagonal.
 
 > [!remark]- Connections
 > - Eigenvalues are hard to compute in general ([[§15 The Minimal Polynomial#^ladr-5-28|5.28]]); upper-triangular form makes them visible.
@@ -127,6 +127,8 @@ tags: [linear-algebra]
 > For $T$ of [[§16 Upper-Triangular Matrices#^ladr-5-36|5.36]] on $\Span(e_1,e_2)$: $Te_1=2e_1$ and $Te_2=e_1+5e_2$, so $T-5I$ sends $e_1\mapsto-3e_1$ and $e_2\mapsto e_1$. It squeezes the plane $\Span(e_1,e_2)$ into the line $\Span(e_1)$, as in the proof of [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]], so some nonzero vector goes to $0$: $(T-5I)(e_1+3e_2)=-3e_1+3e_1=0$. Thus $(1,3,0)$ is an eigenvector for $5$ (red; compare [[§17 Diagonalizable Operators#^ladr-5-59|5.59]]).
 >
 > ![[ladr-5.41-collapse.svg|440]]
+
+^ladr-5-41-fig
 
 > [!example] Example 5.43: Whether T has an upper-triangular matrix can depend on F (p. 158)
 > $T(z_1,z_2,z_3,z_4)=(-z_2,\ z_1,\ 2z_1+3z_3,\ z_3+3z_4)$, i.e.

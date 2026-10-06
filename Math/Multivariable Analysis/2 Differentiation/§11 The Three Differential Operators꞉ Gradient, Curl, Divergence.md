@@ -58,13 +58,23 @@ Geometrically, $\nabla \times \mathbf{F}$ measures the *local rotation* of the f
 
 ## Terminology for Vector Fields
 
-> [!definition] Definition §11.1: Conservative, Irrotational, Solenoidal
+> [!definition] Definition §11.1: Conservative
 > A $C^1$ vector field $\mathbf{F}$ on a domain $D \subseteq \mathbb{R}^3$ is called:
 > - **Conservative** (or a **gradient field**) if $\mathbf{F} = \nabla f$ for some scalar field $f$ (called the *potential*).
-> - **Irrotational** (or **curl-free**) if $\nabla \times \mathbf{F} = \mathbf{0}$ everywhere on $D$.
-> - **Solenoidal** (or **divergence-free** or **incompressible**) if $\nabla \cdot \mathbf{F} = 0$ everywhere on $D$.
 
 ^def-11-1
+
+> [!definition] Definition §11.1: Irrotational
+> A $C^1$ vector field $\mathbf{F}$ on a domain $D \subseteq \mathbb{R}^3$ is called:
+> - **Irrotational** (or **curl-free**) if $\nabla \times \mathbf{F} = \mathbf{0}$ everywhere on $D$.
+
+^def-11-new1
+
+> [!definition] Definition §11.1: Solenoidal
+> A $C^1$ vector field $\mathbf{F}$ on a domain $D \subseteq \mathbb{R}^3$ is called:
+> - **Solenoidal** (or **divergence-free** or **incompressible**) if $\nabla \cdot \mathbf{F} = 0$ everywhere on $D$.
+
+^def-11-new2
 
 > [!remark]- Connections
 > - Divergence and curl return for the integral theorems: [[§16 Line Integrals and Green's Theorem#^def-16-4|Def. §16.4]], [[§16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-1|Def. §17.1]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|Def. §17.2]].

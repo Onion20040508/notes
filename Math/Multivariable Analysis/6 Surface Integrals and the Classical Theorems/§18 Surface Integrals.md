@@ -11,7 +11,7 @@ tags: [multivariable-analysis, math452]
 > The results in this section require increasingly strong conditions on the parametrization $\mathbf{X}$, the surface $S$, and the vector field $\mathbf{F}$. Here is the hierarchy, from weakest to strongest:
 >
 > 1. **Tangent vectors exist:** $\mathbf{X}: D \to \mathbb{R}^3$ is $C^1$ (i.e., all partial derivatives $x_u, x_v, y_u, y_v, z_u, z_v$ exist and are continuous). This ensures the tangent vectors $\mathbf{X}_u, \mathbf{X}_v$ are well-defined and vary continuously.
-> 2. **The parametrization describes a surface (regularity):** $\mathbf{X}$ is $C^1$ *and* the Jacobian $D\mathbf{X}$ ([[§6 Differentiability#^def-6-2|Def. §6.2]]) has rank 2 everywhere, i.e., $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$. This ensures a well-defined tangent plane at every point, and in particular ensures $|\mathbf{X}_u \times \mathbf{X}_v| > 0$ so the area element $dS$ is nondegenerate.
+> 2. **The parametrization describes a surface (regularity):** $\mathbf{X}$ is $C^1$ *and* the Jacobian $D\mathbf{X}$ ([[§6 Differentiability#^def-6-new1|Def. §6.2]]) has rank 2 everywhere, i.e., $\mathbf{X}_u \times \mathbf{X}_v \neq \mathbf{0}$. This ensures a well-defined tangent plane at every point, and in particular ensures $|\mathbf{X}_u \times \mathbf{X}_v| > 0$ so the area element $dS$ is nondegenerate.
 > 3. **The parametrization is injective** (on the interior of $D$): distinct parameter values give distinct surface points, so the surface does not self-intersect. Without this, the “surface area” might count some regions of $S$ multiple times.
 > 4. **Orientability:** A continuous choice of unit normal $\hat{n}$ exists on all of $S$. This is needed for flux integrals (otherwise the sign of $\mathbf{F} \cdot \hat{n}$ is ambiguous). A regular parametrization automatically provides an orientation via $\hat{n} = (\mathbf{X}_u \times \mathbf{X}_v) / |\mathbf{X}_u \times \mathbf{X}_v|$; the question is whether different parametrizations of the same surface give consistent normals. (The Möbius strip is the classical example of a non-orientable surface.)
 > 5. **For the integral theorems** (Divergence, Stokes): the boundary $\partial V$ or $\partial S$ must be **piecewise smooth** (finitely many smooth pieces joined along curves or edges), and the vector field $\mathbf{F}$ must be $C^1$ on an open set containing $\overline{V}$ (or $\overline{S}$). The piecewise smoothness allows us to decompose into pieces on which the proof works, and the $C^1$ condition on $\mathbf{F}$ ensures the divergence $\nabla \cdot \mathbf{F}$ ([[§16 Line Integrals and Green's Theorem#^def-16-4|Def. §16.4]]) (or curl $\nabla \times \mathbf{F}$, [[§16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]]) exists and is continuous.
@@ -121,7 +121,7 @@ These are exactly the tangent vectors to the two families of curves that sweep o
 > \mathbf{X}(u_0 + h, v_0 + k) = \mathbf{X}(u_0, v_0) + D\mathbf{X} \begin{pmatrix} h \\ k \end{pmatrix} + o\!\left(\sqrt{h^2 + k^2}\right)
 > $$
 >
-> where $D\mathbf{X}$ is the $3 \times 2$ Jacobian matrix ([[§6 Differentiability#^def-6-2|Def. §6.2]]) whose columns are $\mathbf{X}_u$ and $\mathbf{X}_v$:
+> where $D\mathbf{X}$ is the $3 \times 2$ Jacobian matrix ([[§6 Differentiability#^def-6-new1|Def. §6.2]]) whose columns are $\mathbf{X}_u$ and $\mathbf{X}_v$:
 >
 > $$
 > D\mathbf{X} = \begin{pmatrix} x_u & x_v \\ y_u & y_v \\ z_u & z_v \end{pmatrix}.

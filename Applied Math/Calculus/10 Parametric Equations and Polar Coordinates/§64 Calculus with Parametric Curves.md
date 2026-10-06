@@ -293,24 +293,31 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 ### The Arc Length Function and Speed
 
-> [!definition] Definition §64.1: Arc Length Function and Arc Length Element
+> [!definition] Definition §64.1: Arc Length Function
 > Let $C$ be given by $x = f(t)$, $y = g(t)$ with $f'$ and $g'$ continuous. The **arc length function** $s(t)$ is the length of $C$ from the initial point $(f(\alpha), g(\alpha))$ to the point $(f(t), g(t))$. By Theorem §64.4,
 >
 > $$
 > s(t) = \int_\alpha^t \sqrt{\Big(\frac{dx}{du}\Big)^2 + \Big(\frac{dy}{du}\Big)^2}\,du
 > $$
 >
-> (the variable of integration is renamed $u$ so that $t$ does not have two meanings). The **arc length element** is
+> (the variable of integration is renamed $u$ so that $t$ does not have two meanings). $s(t)$ is the parametric form of the arc length function [[§52 Arc Length#^def-52-3|Definition §52.3]] (Formula 8.1.5).
+>
+> *Stewart: 10.2, Equations 6 and 7*
+
+^def-64-1
+
+> [!definition] Definition §64.2: Arc Length Element
+> For $C$ as in [[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]], the **arc length element** is
 >
 > $$
 > ds = \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt ,
 > $$
 >
-> so that Theorem §64.4 reads $L = \int ds$, as in [[§52 Arc Length#^def-52-4|Definition §52.4]]; $s(t)$ is the parametric form of the arc length function [[§52 Arc Length#^def-52-3|Definition §52.3]] (Formula 8.1.5).
+> so that Theorem §64.4 reads $L = \int ds$, as in [[§52 Arc Length#^def-52-4|Definition §52.4]].
 >
 > *Stewart: 10.2, Equations 6 and 7*
 
-^def-64-1
+^def-64-new1
 
 > [!definition] Definition §64.2: Speed
 > If $x = f(t)$, $y = g(t)$ is the position of a moving particle at time $t$, its **speed** $v(t)$ at time $t$ is the rate of change of distance traveled (arc length) with respect to time: $v(t) = s'(t)$.

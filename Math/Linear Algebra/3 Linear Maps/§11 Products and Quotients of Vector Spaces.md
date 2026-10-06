@@ -61,11 +61,11 @@ tags: [linear-algebra]
 
 ^ladr-3-92
 
-> [!remark] Remark: Contrast with tensor products
-> Dimensions add for products (and direct sums) but multiply for tensor products ([[§35 Tensor Products#^ladr-9-72|Dimension of the tensor product of two vector spaces]]). In quantum mechanics, combining independent systems uses the tensor product, not the product.
-
 > [!proof]+ Proof
 > Choose a basis of each $V_k$. For each basis vector $e$ of $V_k$, take the element of the product with $e$ in slot $k$ and $0$ elsewhere. *(Filled in.)* These span: $(v_1,\dots,v_m)$ is the sum over $k$ of ($v_k$ expanded in its basis, placed in slot $k$). They are independent: a vanishing combination vanishes slot by slot, and in slot $k$ it is a combination of a basis of $V_k$. So they form a basis, of length $\sum_k\dim V_k$.
+
+> [!remark] Remark: Contrast with tensor products
+> Dimensions add for products (and direct sums) but multiply for tensor products ([[§35 Tensor Products#^ladr-9-72|Dimension of the tensor product of two vector spaces]]). In quantum mechanics, combining independent systems uses the tensor product, not the product.
 
 > [!remark]- Connections
 > - Used in [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]] and in the alternative proof of [[§6 Dimension#^ladr-2-43|Dimension of a sum]].
@@ -79,13 +79,13 @@ tags: [linear-algebra]
 
 ^ladr-3-93
 
-> [!remark] Remark: Always surjective
-> $\Gamma$ is onto by the definition of the sum, so "injective" can be replaced by "invertible": a direct sum is canonically isomorphic to the product.
-
 > [!proof]+ Proof
 > By [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]], $\Gamma$ is injective iff the only way to write $0=v_1+\dots+v_m$ with $v_k\in V_k$ is with all $v_k=0$. By [[Condition for a direct sum]] this is exactly the condition for a direct sum.
 
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[Condition for a direct sum|1.45]]
+
+> [!remark] Remark: Always surjective
+> $\Gamma$ is onto by the definition of the sum, so "injective" can be replaced by "invertible": a direct sum is canonically isomorphic to the product.
 
 > [!remark]- Connections
 > - Dimension version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]].
@@ -98,13 +98,13 @@ tags: [linear-algebra]
 
 ^ladr-3-94
 
-> [!remark] Remark: Case $m=2$
-> Also follows from [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]] and [[§6 Dimension#^ladr-2-43|Dimension of a sum]]: the sum is direct iff $V_1\cap V_2=\{0\}$ iff $\dim(V_1\cap V_2)=0$.
-
 > [!proof]+ Proof
 > $\Gamma$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]] is surjective, so by [[Fundamental theorem of linear maps]] it is injective iff $\dim(V_1+\dots+V_m)=\dim(V_1\times\dots\times V_m)$. Combine with [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]] and [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]].
 
 *Uses:* [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|3.93]], [[Fundamental theorem of linear maps|3.21]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|3.92]]
+
+> [!remark] Remark: Case $m=2$
+> Also follows from [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]] and [[§6 Dimension#^ladr-2-43|Dimension of a sum]]: the sum is direct iff $V_1\cap V_2=\{0\}$ iff $\dim(V_1\cap V_2)=0$.
 
 > [!remark]- Connections
 > - Used to show eigenspace and generalized-eigenspace decompositions fill $V$: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[Generalized eigenspace decomposition]].
@@ -173,11 +173,11 @@ tags: [linear-algebra]
 
 ^ladr-3-101
 
-> [!remark] Remark: Consequence
-> Two translates of a subspace are equal or disjoint, so the translates partition $V$; "$v\sim w\iff v-w\in U$" is the corresponding equivalence relation ([[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]]).
-
 > [!proof]+ Proof
 > If $v-w\in U$ and $u\in U$, then $v+u=w+\big((v-w)+u\big)\in w+U$; so $v+U\subseteq w+U$, and symmetrically, hence equality. Equality trivially gives a nonempty intersection. If $v+u_1=w+u_2$ with $u_1,u_2\in U$, then $v-w=u_2-u_1\in U$.
+
+> [!remark] Remark: Consequence
+> Two translates of a subspace are equal or disjoint, so the translates partition $V$; "$v\sim w\iff v-w\in U$" is the corresponding equivalence relation ([[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]]).
 
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
@@ -265,9 +265,6 @@ tags: [linear-algebra]
 
 ^ladr-3-107
 
-> [!remark] Remark: First isomorphism theorem
-> (d) is the vector-space case of $G/\ker\varphi\cong\operatorname{im}\varphi$. Taking dimensions with [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] recovers [[Fundamental theorem of linear maps]].
-
 > [!proof]+ Proof
 > *(Filled in: [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|Axler 3.106]].)* $\tilde T$ is well defined: if $v+\nullsp T=w+\nullsp T$ then $v-w\in\nullsp T$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]), so $Tv=Tw$. It is linear because $T$ is and the operations on the quotient are computed on representatives.
 >
@@ -280,6 +277,9 @@ tags: [linear-algebra]
 > (d) By (b) and (c), $\tilde T$ viewed as a map onto $\range T$ is an isomorphism.
 
 *Uses:* [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|3.101]]
+
+> [!remark] Remark: First isomorphism theorem
+> (d) is the vector-space case of $G/\ker\varphi\cong\operatorname{im}\varphi$. Taking dimensions with [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] recovers [[Fundamental theorem of linear maps]].
 
 %% ex:3.107-diff %%
 > [!example] Example: Differentiation, and "up to a constant"

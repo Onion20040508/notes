@@ -272,12 +272,19 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ### Plates: Centroids
 
-> [!definition] Definition §54.4: Lamina and Centroid
-> A **lamina** is a flat plate. If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By Theorem §54.5 below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].)
+> [!definition] Definition §54.4: Lamina
+> A **lamina** is a flat plate.
 >
 > *Stewart: 8.3 (text and margin note)*
 
 ^def-54-4
+
+> [!definition] Definition §54.4: Centroid
+> If a lamina of uniform density $\rho$ occupies a region $\mathcal{R}$ of the plane, its center of mass is called the **centroid** of $\mathcal{R}$. (By Theorem §54.5 below it depends only on the shape of $\mathcal{R}$, not on $\rho$. A plate of non-uniform density usually balances elsewhere; that case is treated with double integrals in [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]].)
+>
+> *Stewart: 8.3 (text and margin note)*
+
+^def-54-new1
 
 > [!remark] Remark: The Principles Behind the Formulas
 > Moments of plates are set up so that the following physical principles hold.

@@ -521,7 +521,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 > [!theorem] Theorem §24.9: Properties of the Lifting Correspondence
 > Let $p: E \to B$ be a covering map with $p(e_0) = b_0$.
-> 1. If $E$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]], then $\phi: \pi_1(B, b_0) \to p^{-1}(b_0)$ is surjective.
+> 1. If $E$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]], then $\phi: \pi_1(B, b_0) \to p^{-1}(b_0)$ is surjective.
 > 2. If $E$ is [[§23 The Fundamental Group#^def-23-3|simply connected]], then $\phi$ is bijective.
 
 ^thm-24-9
@@ -626,7 +626,7 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 ^pf-24-11
 
-*Uses:* [[Fundamental Group of the Circle|§24.10]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]]
+*Uses:* [[Fundamental Group of the Circle|§24.10]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|Def. §21.7]]
 
 > [!remark] Remark
 > Since $S^1$ is path-connected, the [[Basepoint Independence of π₁|basepoint independence theorem]] ([[§23 The Fundamental Group|§23]]) gives $\pi_1(S^1, b_0) \cong \pi_1(S^1, b_1)$ for any two basepoints. So we may write $\pi_1(S^1) \cong \mathbb{Z}$ without specifying the basepoint.

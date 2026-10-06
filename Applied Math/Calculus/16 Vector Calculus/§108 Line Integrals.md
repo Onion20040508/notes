@@ -108,14 +108,19 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 
 ^ex-108-1
 
-> [!definition] Definition §108.3: Mass and Center of Mass of a Wire
+> [!definition] Definition §108.3: Mass of a Wire
 > If $\rho(x, y)$ is the [[§20 Rates of Change in the Natural and Social Sciences#^def-20-3|linear density]] at the point $(x, y)$ of a thin wire shaped like a curve $C$, the **mass** of the wire is
 >
 > $$
 > m = \lim_{n \to \infty} \sum_{i=1}^{n} \rho(x_i^*, y_i^*)\,\Delta s_i = \int_C \rho(x, y)\,ds ,
 > $$
 >
-> and its **center of mass** is the point $(\bar{x}, \bar{y})$, where
+> *Stewart: 16.2, Equations 4*
+
+^def-108-3
+
+> [!definition] Definition §108.4: Center of Mass of a Wire
+> For a thin wire shaped like a curve $C$, with linear density $\rho(x, y)$ and mass $m$ ([[§108 Line Integrals#^def-108-3|Definition §108.3]]), its **center of mass** is the point $(\bar{x}, \bar{y})$, where
 >
 > $$
 > \bar{x} = \frac1m \int_C x\,\rho(x, y)\,ds, \qquad \bar{y} = \frac1m \int_C y\,\rho(x, y)\,ds . \qquad (4)
@@ -123,7 +128,7 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 >
 > *Stewart: 16.2, Equations 4*
 
-^def-108-3
+^def-108-new1
 
 For example, a semicircular wire $x^2 + y^2 = 1$, $y \ge 0$, with density $\rho = k(1 - y)$ (thicker near its base) has $m = \int_0^{\pi} k(1 - \sin t)\,dt = k(\pi - 2)$ and, by symmetry and (4), center of mass $\left(0, \frac{4 - \pi}{2(\pi - 2)}\right) \approx (0, 0.38)$ (Stewart, Example 16.2.3).
 

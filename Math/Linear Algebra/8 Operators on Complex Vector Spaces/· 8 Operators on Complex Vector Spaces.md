@@ -15,6 +15,7 @@ tags: [chapter, linear-algebra]
 - [[§29 Generalized Eigenspace Decomposition]]
 - [[§30 Consequences of Generalized Eigenspace Decomposition]]
 - [[§31 Trace꞉ A Connection Between Matrices and Operators]]
+- [[§31a The Operators (4z₂, 0, 5z₃) and (6z₁ + 3z₂ + 4z₃, 6z₂ + 2z₃, 7z₃)]]
 
 ## Central results
 - [[Generalized eigenspace decomposition]] (8.22)

@@ -13,7 +13,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 ## The Generation Theorem
 
 > [!theorem] Theorem §27.1: Generation by Open Cover (Munkres 59.1)
-> Let $X = U \cup V$, where $U$ and $V$ are open in $X$. Suppose $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]] and $x_0 \in U \cap V$. Let $i_U: U \hookrightarrow X$ and $i_V: V \hookrightarrow X$ be the inclusion maps. Then the images of the [[§23 The Fundamental Group#^def-23-4|induced homomorphisms]]
+> Let $X = U \cup V$, where $U$ and $V$ are open in $X$. Suppose $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]] and $x_0 \in U \cap V$. Let $i_U: U \hookrightarrow X$ and $i_V: V \hookrightarrow X$ be the inclusion maps. Then the images of the [[§23 The Fundamental Group#^def-23-4|induced homomorphisms]]
 >
 > $$
 > i_{U*}: \pi_1(U, x_0) \to \pi_1(X, x_0) \qquad \text{and} \qquad i_{V*}: \pi_1(V, x_0) \to \pi_1(X, x_0)
@@ -103,7 +103,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 ## Consequence: Simply Connected Spaces
 
 > [!theorem] Corollary §27.2: Simply Connected from Open Cover
-> Let $X = U \cup V$, where $U$ and $V$ are open and [[§23 The Fundamental Group#^def-23-3|simply connected]], and $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]]. Then $X$ is simply connected.
+> Let $X = U \cup V$, where $U$ and $V$ are open and [[§23 The Fundamental Group#^def-23-3|simply connected]], and $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]]. Then $X$ is simply connected.
 
 ^cor-27-2
 
@@ -166,13 +166,13 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > U \cap V = S^n \setminus \{p, q\} \;\cong\; \mathbb{R}^n \setminus \{\vec{0}\}.
 > $$
 >
-> For $n \geq 2$, $\mathbb{R}^n \setminus \{\vec{0}\}$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]]: given any two points $a, b \neq \vec{0}$, if the straight line from $a$ to $b$ avoids the origin, use it; otherwise, detour slightly (possible in dimension $\geq 2$). Therefore $U \cap V$ is path-connected.
+> For $n \geq 2$, $\mathbb{R}^n \setminus \{\vec{0}\}$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]]: given any two points $a, b \neq \vec{0}$, if the straight line from $a$ to $b$ avoids the origin, use it; otherwise, detour slightly (possible in dimension $\geq 2$). Therefore $U \cap V$ is path-connected.
 >
 > By [[§27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]], $S^n$ is simply connected.
 
 ^pf-27-3
 
-*Uses:* [[§27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[§8 Hausdorff Spaces#^thm-8-1|§8.1]], [[§23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[§9 Continuous Functions#^prop-9-3|§9.3]], [[§23 The Fundamental Group#^cor-23-6|§23.6]], [[§9 Continuous Functions#^def-9-2|Def. §9.2]], [[§26 Deformation Retracts and Homotopy Type#^def-26-6|Def. §26.6]], [[§14 Connected Subspaces of ℝ#^def-14-3|Def. §14.3]]
+*Uses:* [[§27 The Fundamental Group of Sⁿ#^cor-27-2|§27.2]], [[§8 Hausdorff Spaces#^thm-8-1|§8.1]], [[§23 The Fundamental Group#^ex-23-1|Ex. §23.1]], [[§9 Continuous Functions#^prop-9-3|§9.3]], [[§23 The Fundamental Group#^cor-23-6|§23.6]], [[§9 Continuous Functions#^def-9-2|Def. §9.2]], [[§26 Deformation Retracts and Homotopy Type#^def-26-6|Def. §26.6]], [[§14 Connected Subspaces of ℝ#^def-14-new1|Def. §14.3]]
 
 ![[m590-27-2.svg]]
 *Stereographic projection from the north pole $p$ (a cross-section through the $x_{n+1}$-axis): $f(x)$ is where the line from $p$ through $x$ meets the equatorial plane $\mathbb{R}^n = \{x_{n+1} = 0\}$. The lower hemisphere lands inside the unit ball, the upper hemisphere outside it, and points near $p$ run off to infinity, which is why $p$ must be removed. The south pole $q$ goes to $\vec 0$, so removing $q$ as well leaves $\mathbb{R}^n \setminus \{\vec 0\}$.*

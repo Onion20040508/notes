@@ -399,16 +399,21 @@ Stewart's Example 11 classifies the geometric sequence $\{r^n\}$; the result is 
 
 Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, and $a_n = n$ is monotonic but $n \to \infty$. Together they do. If $\{a_n\}$ increases and $a_n \le M$ for all $n$, the terms are forced to crowd together below $M$ and approach some number $L \le M$. Making this precise needs a property of the real numbers.
 
-> [!definition] Definition §69.7: Least Upper Bound; the Completeness Axiom
+> [!definition] Definition §69.7: Least Upper Bound
 > A number $b$ is a **least upper bound** of a set $S$ of real numbers if $b$ is an upper bound for $S$ ($x \le b$ for all $x$ in $S$) and $b \le M$ for every other upper bound $M$ of $S$.
 >
+> *Stewart: 11.1 (text)*
+
+^def-69-7
+
+> [!definition] Definition §69.8: The Completeness Axiom
 > **Completeness Axiom.** If $S$ is a nonempty set of real numbers that has an upper bound $M$ ($x \le M$ for all $x$ in $S$), then $S$ has a least upper bound $b$.
 >
 > The axiom expresses the fact that there is no gap or hole in the real number line ([[§116 Numbers, Inequalities, and Absolute Values#^def-116-2|Definition §116.2]]). In the same way, a nonempty set with a lower bound has a **greatest lower bound**.
 >
 > *Stewart: 11.1 (text)*
 
-^def-69-7
+^def-69-new1
 
 > [!theorem] Theorem §69.9: Monotonic Sequence Theorem
 > Every bounded, monotonic sequence is convergent.

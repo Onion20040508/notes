@@ -66,11 +66,11 @@ tags: [linear-algebra]
 
 ^ladr-7-5
 
-> [!remark] Remark: Conjugate-linear
-> Over $\C$, $T\mapsto T^*$ is not linear because of (b); over $\R$ it is.
-
 > [!proof]+ Proof
 > Each follows by moving operators across the inner product. (a) $\langle(S+T)v,w\rangle=\langle v,S^*w+T^*w\rangle$. (b) $\langle\lambda Tv,w\rangle=\lambda\langle v,T^*w\rangle=\langle v,\bar\lambda T^*w\rangle$. (c) $\langle T^*w,v\rangle=\overline{\langle v,T^*w\rangle}=\overline{\langle Tv,w\rangle}=\langle w,Tv\rangle$. (d) $\langle STv,u\rangle=\langle Tv,S^*u\rangle=\langle v,T^*S^*u\rangle$. (e) clear. (f) take adjoints of $T^{-1}T=I$ and $TT^{-1}=I$ using (d), (e).
+
+> [!remark] Remark: Conjugate-linear
+> Over $\C$, $T\mapsto T^*$ is not linear because of (b); over $\R$ it is.
 
 > [!remark]- Connections
 > - (d) is the reversal familiar from $(AB)^t=B^tA^t$ ([[§9 Matrices#^ladr-3-55|3.55]]) and $(ST)'=T'S'$ ([[§12 Duality#^ladr-3-120|3.120]]).
@@ -84,13 +84,13 @@ tags: [linear-algebra]
 
 ^ladr-7-6
 
-> [!remark] Remark: Linear equations
-> (d) says $Tx=b$ is solvable iff $b\perp\nullsp T^*$: the 'Fredholm alternative' in finite dimensions.
-
 > [!proof]+ Proof
 > (a) $w\in\nullsp T^*\iff\langle v,T^*w\rangle=0\ \forall v\iff\langle Tv,w\rangle=0\ \forall v\iff w\in(\range T)^\perp$. Taking complements of (a) gives (d) ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]]); replacing $T$ by $T^*$ in (a) and (d) gives (c) and (b) ([[§22 Self-Adjoint and Normal Operators#^ladr-7-5|7.5]](c)).
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-5|7.5]]
+
+> [!remark] Remark: Linear equations
+> (d) says $Tx=b$ is solvable iff $b\perp\nullsp T^*$: the 'Fredholm alternative' in finite dimensions.
 
 > [!remark]- Connections
 > - Annihilator versions: [[§12 Duality#^ladr-3-128|3.128]], [[§12 Duality#^ladr-3-130|3.130]]. Dimension consequence: column rank = row rank again, via [[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d).
@@ -126,13 +126,13 @@ tags: [linear-algebra]
 
 ^ladr-7-9
 
-> [!remark] Remark: Orthonormality is essential
-> In a non-orthonormal basis the matrix of $T^*$ is generally not the conjugate transpose.
-
 > [!proof]+ Proof
 > By [[§20 Orthonormal Bases#^ladr-6-30|6.30]](a), $Te_k=\sum_j\langle Te_k,f_j\rangle f_j$, so $\mathcal{M}(T)_{j,k}=\langle Te_k,f_j\rangle$. Likewise $\mathcal{M}(T^*)_{j,k}=\langle T^*f_k,e_j\rangle=\overline{\langle e_j,T^*f_k\rangle}=\overline{\langle Te_j,f_k\rangle}=\overline{\mathcal{M}(T)_{k,j}}$.
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
+
+> [!remark] Remark: Orthonormality is essential
+> In a non-orthonormal basis the matrix of $T^*$ is generally not the conjugate transpose.
 
 > [!definition] Definition 7.10: Self-adjoint
 > $T\in\Lin(V)$ is *self-adjoint* if $T=T^{\ast}$, i.e. $\langle Tv,w\rangle=\langle v,Tw\rangle$ for all $v,w$. In an orthonormal basis: $\mathcal{M}(T)=\mathcal{M}(T)^{\ast}$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]).
@@ -172,15 +172,15 @@ tags: [linear-algebra]
 
 ^ladr-7-13
 
-> [!remark] Remark: False over $\R$
-> Rotation by $90^\circ$ on $\R^2$ has $Tv\perp v$ for every $v$ but $T\ne0$ (picture in [[§14 Invariant Subspaces#^ladr-5-9|5.9]]). The real version needs self-adjointness: [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]].
-
 > [!proof]+ Proof
 > The polarization identity
 > $$
 > \langle Tu,w\rangle=\frac{\langle T(u+w),u+w\rangle-\langle T(u-w),u-w\rangle}{4}+\frac{\langle T(u+iw),u+iw\rangle-\langle T(u-iw),u-iw\rangle}{4}\,i
 > $$
 > (check by expanding) expresses $\langle Tu,w\rangle$ through values $\langle Tv,v\rangle$. If all of these vanish, $\langle Tu,w\rangle=0$ for all $u,w$; take $w=Tu$.
+
+> [!remark] Remark: False over $\R$
+> Rotation by $90^\circ$ on $\R^2$ has $Tv\perp v$ for every $v$ but $T\ne0$ (picture in [[§14 Invariant Subspaces#^ladr-5-9|5.9]]). The real version needs self-adjointness: [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]].
 
 > [!theorem] Theorem 7.14: ⟨Tv, v⟩ is real for all v ⟺ T is self-adjoint (assuming F = C)
 > On a complex inner product space, $T$ is self-adjoint iff $\langle Tv,v\rangle\in\R$ for every $v$.
@@ -247,15 +247,15 @@ tags: [linear-algebra]
 
 ^ladr-7-21
 
-> [!remark] Remark: (c) fails without normality
-> For $T=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $\nullsp T=\range T=\Span(e_1)$.
-
 > [!proof]+ Proof
 > Recall [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]]: $T$ is normal $\iff\|Tv\|=\|T^*v\|$ for all $v$.
 >
 > (a) $Tv=0\iff\|Tv\|=0\iff\|T^*v\|=0$. (b) $\range T=(\nullsp T^*)^\perp=(\nullsp T)^\perp=\range T^*$ by [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]. (c) $V=\nullsp T\oplus(\nullsp T)^\perp=\nullsp T\oplus\range T^*=\nullsp T\oplus\range T$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). (d) Expanding, $(T-\lambda I)(T-\lambda I)^*=TT^*-\bar\lambda T-\lambda T^*+|\lambda|^2I$, symmetric under $TT^*\leftrightarrow T^*T$. (e) By (d) and 7.20, $\|(T-\lambda I)v\|=\|(T^*-\bar\lambda I)v\|$.
 
 *Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-20|7.20]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]
+
+> [!remark] Remark: (c) fails without normality
+> For $T=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $\nullsp T=\range T=\Span(e_1)$.
 
 > [!theorem] Theorem 7.22: Orthogonal eigenvectors for normal operators
 > For normal $T$, eigenvectors for distinct eigenvalues are orthogonal.
@@ -281,13 +281,13 @@ tags: [linear-algebra]
 
 ^ladr-7-23
 
-> [!remark] Remark: Informal title
-> Normal iff the 'real and imaginary parts' of $T$ commute, just as $z=a+ib$ always does for numbers.
-
 > [!proof]+ Proof
 > Set $A=\frac{T+T^*}2$, $B=\frac{T-T^*}{2i}$: both self-adjoint, $T=A+iB$, and a direct computation gives
 > $$
 > AB-BA=\frac{T^*T-TT^*}{2i}.
 > $$
 > So $T$ normal $\Rightarrow AB=BA$. Conversely, if $T=A+iB$ with such $A,B$, then $T^*=A-iB$, so $A,B$ are the formulas above, and $AB=BA$ gives $T^*T=TT^*$.
+
+> [!remark] Remark: Informal title
+> Normal iff the 'real and imaginary parts' of $T$ commute, just as $z=a+ib$ always does for numbers.
 

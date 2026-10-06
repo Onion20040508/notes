@@ -79,7 +79,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ^rem-22-3
 
 > [!theorem] Proposition §22.2: Path-Connectedness Implies Homotopy of Constant Maps
-> If $Y$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]] and $y_0, y_1 \in Y$, then the constant maps $e_{y_0}, e_{y_1}: X \to Y$ are homotopic.
+> If $Y$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]] and $y_0, y_1 \in Y$, then the constant maps $e_{y_0}, e_{y_1}: X \to Y$ are homotopic.
 
 ^prop-22-2
 
@@ -92,7 +92,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^pf-22-2
 
-*Uses:* [[§14 Connected Subspaces of ℝ#^def-14-3|Def. §14.3]], [[§9 Continuous Functions#^thm-9-4|§9.4]]
+*Uses:* [[§14 Connected Subspaces of ℝ#^def-14-new1|Def. §14.3]], [[§9 Continuous Functions#^thm-9-4|§9.4]]
 
 > [!remark] Remark
 > The key idea: a path $p: I \to Y$ is defined on $I$, but we need a homotopy defined on $X \times I$. The projection $\pi_2: X \times I \to I$, $(x, t) \mapsto t$, bridges this gap—composing $p \circ \pi_2$ promotes a path in $Y$ to a homotopy between constant maps on any domain $X$. This technique appears whenever path-connectedness needs to be converted into a homotopy statement.
@@ -107,7 +107,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ^def-22-3
 
 > [!remark]- Connections
-> - Same notion as in the definition of path-connectedness: [[§14 Connected Subspaces of ℝ#^def-14-3|Path and Path-Connected]].
+> - Same notion as in the definition of path-connectedness: [[§14 Connected Subspaces of ℝ#^def-14-3|Path]].
 
 > [!definition] Definition §22.4: Path Homotopy
 > Paths $f, f': I \to X$ with the same endpoints ($f(0) = f'(0) = x_0$, $f(1) = f'(1) = x_1$) are **path homotopic** ($f \simeq_p f'$) if there exists continuous $F: I \times I \to X$ with:

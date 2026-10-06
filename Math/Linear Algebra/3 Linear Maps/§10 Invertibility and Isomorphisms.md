@@ -77,13 +77,13 @@ tags: [linear-algebra]
 
 ^ladr-3-65
 
-> [!remark] Remark: Finite dimension is essential
-> On $\F^\infty$, the backward shift is surjective but not injective and the forward shift is injective but not surjective.
-
 > [!proof]+ Proof
 > By [[Fundamental theorem of linear maps]], $\dim V=\dim\nullsp T+\dim\range T$. If $T$ is injective, then $\dim\nullsp T=0$ ([[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]), so $\dim\range T=\dim V=\dim W$ and $\range T=W$ by [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]. If $T$ is surjective, then $\dim\nullsp T=\dim V-\dim W=0$, so $T$ is injective. Either condition therefore gives both, hence invertibility by [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[§6 Dimension#^ladr-2-39|2.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]]
+
+> [!remark] Remark: Finite dimension is essential
+> On $\F^\infty$, the backward shift is surjective but not injective and the forward shift is injective but not surjective.
 
 > [!remark]- Connections
 > - Finite-set analogue, with cardinality in place of dimension: [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
@@ -143,15 +143,15 @@ tags: [linear-algebra]
 
 ^ladr-3-70
 
-> [!remark] Remark: Why not just study $\F^n$
-> Every $n$-dimensional space is isomorphic to $\F^n$, but only via a choice of basis. Natural constructions (null spaces, ranges, quotients, duals) do not come with preferred bases.
-
 > [!proof]+ Proof
 > ($\Rightarrow$) If $T:V\to W$ is an isomorphism, then $\nullsp T=\{0\}$ and $\range T=W$, so [[Fundamental theorem of linear maps]] gives $\dim V=0+\dim W$.
 >
 > ($\Leftarrow$) Let $v_1,\dots,v_n$ and $w_1,\dots,w_n$ be bases. Define $T(\sum c_kv_k)=\sum c_kw_k$ (a linear map by [[Linear map lemma]]). It is surjective since the $w$'s span, and injective since the $w$'s are independent ($\sum c_kw_k=0\Rightarrow$ all $c_k=0$). So $T$ is an isomorphism by [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]].
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[Linear map lemma|3.4]], [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]]
+
+> [!remark] Remark: Why not just study $\F^n$
+> Every $n$-dimensional space is isomorphic to $\F^n$, but only via a choice of basis. Natural constructions (null spaces, ranges, quotients, duals) do not come with preferred bases.
 
 > [!remark]- Connections
 > - Computational version: [[§26 Coordinate Systems#^thm-26-3|235 Thm. §26.3]] (a space with a basis of n vectors is isomorphic to ℝⁿ) and [[§27 The Dimension of a Vector Space#^prop-27-7|235 Prop. §27.7]] (isomorphic spaces have the same dimension).
@@ -199,9 +199,6 @@ tags: [linear-algebra]
 
 ^ladr-3-76
 
-> [!remark] Remark: Every map is a matrix, after relabeling
-> Identifying $v$ with $\mathcal{M}(v)$, $T$ becomes multiplication by $\mathcal{M}(T)$ on $\F^{n,1}$. The matrix depends on the bases, and choosing bases to simplify it is a central theme later.
-
 > [!proof]+ Proof
 > Write $v=b_1v_1+\dots+b_nv_n$, so $Tv=\sum b_kTv_k$. Since $\mathcal{M}$ is linear on $W$ and $\mathcal{M}(Tv_k)$ is column $k$ of $\mathcal{M}(T)$,
 > $$
@@ -210,6 +207,9 @@ tags: [linear-algebra]
 > by [[§9 Matrices#^ladr-3-50|Linear combination of columns]].
 
 *Uses:* [[§9 Matrices#^ladr-3-50|3.50]]
+
+> [!remark] Remark: Every map is a matrix, after relabeling
+> Identifying $v$ with $\mathcal{M}(v)$, $T$ becomes multiplication by $\mathcal{M}(T)$ on $\F^{n,1}$. The matrix depends on the bases, and choosing bases to simplify it is a central theme later.
 
 > [!remark]- Connections
 > - Used in [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] and in the change-of-basis story [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
@@ -261,13 +261,13 @@ tags: [linear-algebra]
 
 ^ladr-3-81
 
-> [!remark] Remark: Reading $\mathcal{M}(I,(u),(v))$
-> Its column $k$ holds the coordinates of $u_k$ in the basis $v_1,\dots,v_n$: it converts $u$-coordinates into $v$-coordinates.
-
 > [!proof]+ Proof
 > This is [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]] with the bases written out.
 
 *Uses:* [[§9 Matrices#^ladr-3-43|3.43]]
+
+> [!remark] Remark: Reading $\mathcal{M}(I,(u),(v))$
+> Its column $k$ holds the coordinates of $u_k$ in the basis $v_1,\dots,v_n$: it converts $u$-coordinates into $v$-coordinates.
 
 > [!remark]- Connections
 > - Used in [[§10 Invertibility and Isomorphisms#^ladr-3-82|Matrix of identity operator with respect to two bases]] and [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
@@ -312,13 +312,13 @@ tags: [linear-algebra]
 
 ^ladr-3-84
 
-> [!remark] Remark: Reading it right to left
-> $C$ converts $u$-coordinates to $v$-coordinates, $B$ applies $T$ in $v$-coordinates, $C^{-1}$ converts back.
-
 > [!proof]+ Proof
 > By [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]] (with $S=I$, target basis $u$) and [[§10 Invertibility and Isomorphisms#^ladr-3-82|Matrix of identity operator with respect to two bases]]: $A=C^{-1}\,\mathcal{M}(T,(u),(v))$. By [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]] again (with $T$ replaced by $I$ and $S$ by $T$): $\mathcal{M}(T,(u),(v))=BC$. Substitute.
 
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-81|3.81]], [[§10 Invertibility and Isomorphisms#^ladr-3-82|3.82]]
+
+> [!remark] Remark: Reading it right to left
+> $C$ converts $u$-coordinates to $v$-coordinates, $B$ applies $T$ in $v$-coordinates, $C^{-1}$ converts back.
 
 > [!remark]- Connections
 > - Similar matrices describe the same operator; similarity invariants: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[§34 Determinants#^ladr-9-52|Determinant is a similarity invariant]].

@@ -96,9 +96,6 @@ tags: [linear-algebra]
 
 ^ladr-2-33
 
-> [!remark] Remark: Not unique
-> $W$ depends on the choice of extension: in $\R^2$ with $U$ the $x$-axis, every other line through $0$ is a complement. An inner product picks a canonical one, $U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]]).
-
 > [!proof]+ Proof
 > $U$ is finite-dimensional ([[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]]), so it has a basis $u_1,\dots,u_m$ ([[§5 Bases#^ladr-2-31|Basis of finite-dimensional vector space]]). As a linearly independent list in $V$ it extends to a basis $u_1,\dots,u_m,w_1,\dots,w_n$ of $V$ ([[Every linearly independent list extends to a basis]]). Let $W=\Span(w_1,\dots,w_n)$. By [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]] it suffices to show $V=U+W$ and $U\cap W=\{0\}$.
 >
@@ -106,6 +103,9 @@ tags: [linear-algebra]
 > - If $v\in U\cap W$, then $v=\sum a_ku_k=\sum b_jw_j$, so $\sum a_ku_k-\sum b_jw_j=0$ and all coefficients vanish by independence; hence $v=0$.
 
 *Uses:* [[§4 Span and Linear Independence#^ladr-2-25|2.25]], [[§5 Bases#^ladr-2-31|2.31]], [[Every linearly independent list extends to a basis|2.32]], [[§3 Subspaces#^ladr-1-46|1.46]]
+
+> [!remark] Remark: Not unique
+> $W$ depends on the choice of extension: in $\R^2$ with $U$ the $x$-axis, every other line through $0$ is a complement. An inner product picks a canonical one, $U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]]).
 
 > [!remark]- Connections
 > - Dimension count: $\dim W=\dim V-\dim U$, cf. [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] for $V/U$.

@@ -28,11 +28,11 @@ tags: [linear-algebra]
 
 ^ladr-8-49
 
-> [!remark] Remark: Cyclic, not symmetric
-> $\operatorname{tr}(ABC)=\operatorname{tr}(CAB)$, but in general $\operatorname{tr}(ABC)\ne\operatorname{tr}(BAC)$.
-
 > [!proof]+ Proof
 > $\operatorname{tr}(AB)=\sum_j\sum_kA_{j,k}B_{k,j}=\sum_k\sum_jB_{k,j}A_{j,k}=\operatorname{tr}(BA)$.
+
+> [!remark] Remark: Cyclic, not symmetric
+> $\operatorname{tr}(ABC)=\operatorname{tr}(CAB)$, but in general $\operatorname{tr}(ABC)\ne\operatorname{tr}(BAC)$.
 
 > [!remark]- Connections
 > - Used in Quantum Field Theory: cyclicity of the trace makes every $\gamma^\mu$, and every product of an odd number of them, traceless — [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-4|QFT Theorem §C5a.2.4]], [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-3|QFT Theorem §C5a.7.3]].
@@ -79,13 +79,13 @@ tags: [linear-algebra]
 
 ^ladr-8-54
 
-> [!remark] Remark: Constant term
-> The constant term is $(-1)^n$ times the product of the eigenvalues, i.e. $(-1)^n\det T$.
-
 > [!proof]+ Proof
 > $(z-\lambda_1)\cdots(z-\lambda_n)=z^n-(\lambda_1+\dots+\lambda_n)z^{n-1}+\dots+(-1)^n\lambda_1\cdots\lambda_n$; use [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|8.52]].
 
 *Uses:* [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-52|8.52]]
+
+> [!remark] Remark: Constant term
+> The constant term is $(-1)^n$ times the product of the eigenvalues, i.e. $(-1)^n\det T$.
 
 > [!theorem] Theorem 8.55: Trace on an inner product space
 > On an inner product space with orthonormal basis $e_1,\dots,e_n$,
@@ -108,24 +108,24 @@ tags: [linear-algebra]
 
 ^ladr-8-56
 
-> [!remark] Remark: Characterization
-> $\operatorname{tr}$ is the unique linear functional on $\Lin(V)$ with $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ and $\operatorname{tr}I=\dim V$.
-
 > [!proof]+ Proof
 > In a fixed basis, $\mathcal{M}(\lambda T)=\lambda\mathcal{M}(T)$ and $\mathcal{M}(S+T)=\mathcal{M}(S)+\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-38|3.38]], [[§9 Matrices#^ladr-3-35|3.35]]), and matrix trace is linear. And $\operatorname{tr}(ST)=\operatorname{tr}(\mathcal{M}(S)\mathcal{M}(T))=\operatorname{tr}(\mathcal{M}(T)\mathcal{M}(S))=\operatorname{tr}(TS)$ ([[§9 Matrices#^ladr-3-43|3.43]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|8.49]]).
 
 *Uses:* [[§9 Matrices#^ladr-3-38|3.38]], [[§9 Matrices#^ladr-3-35|3.35]], [[§9 Matrices#^ladr-3-43|3.43]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|8.49]]
+
+> [!remark] Remark: Characterization
+> $\operatorname{tr}$ is the unique linear functional on $\Lin(V)$ with $\operatorname{tr}(ST)=\operatorname{tr}(TS)$ and $\operatorname{tr}I=\dim V$.
 
 > [!theorem] Theorem 8.57: Identity operator is not the difference of ST and TS
 > There are no $S,T\in\Lin(V)$ with $ST-TS=I$ (here $V$ is finite-dimensional and nonzero, as throughout Chapter 8; for $V=\{0\}$, $ST-TS=0=I$).
 
 ^ladr-8-57
 
-> [!remark] Remark: Physics
-> So the canonical commutation relation $[\hat x,\hat p]=i\hbar I$ has no finite-dimensional solution: position and momentum must act on an infinite-dimensional space. On $\Poly(\R)$, $D\circ M_x-M_x\circ D=I$ does hold ([[§7 Vector Space of Linear Maps#^ladr-3-9|3.9]]).
-
 > [!proof]+ Proof
 > $\operatorname{tr}(ST-TS)=0$ ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-56|8.56]]) but $\operatorname{tr}I=\dim V\ne0$.
 
 *Uses:* [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-56|8.56]]
+
+> [!remark] Remark: Physics
+> So the canonical commutation relation $[\hat x,\hat p]=i\hbar I$ has no finite-dimensional solution: position and momentum must act on an infinite-dimensional space. On $\Poly(\R)$, $D\circ M_x-M_x\circ D=I$ does hold ([[§7 Vector Space of Linear Maps#^ladr-3-9|3.9]]).
 

@@ -201,20 +201,25 @@ Informally: a subset $A$ is determined by deciding, for each of the $n$ elements
 
 For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14 Counting Infinite Sets#^thm-14-13|Theorem §14.13]]).
 
-> [!definition] Definition §12.5: r-Subsets and Binomial Coefficients
+> [!definition] Definition §12.5: r-Subsets
 > For a set $X$ and a non-negative integer $r$, an **$r$-subset** of $X$ is a subset $A \subseteq X$ with $|A| = r$. The set of $r$-subsets is
 >
 > $$
 > \mathcal{P}_r(X) = \{ A \subseteq X \mid |A| = r \}.
 > $$
 >
-> The **binomial coefficient** (or binomial number) $\binom{n}{r}$, read "$n$ choose $r$", is the cardinality of $\mathcal{P}_r(X)$ when $|X| = n$.
->
 > *Eccles: Definition 12.2.4*
 
 ^def-12-5
 
-The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (images and pre-images of subsets, [[§9 Injections, Surjections and Bijections#^def-9-4|Definition §9.4]]).
+> [!definition] Definition §12.5: Binomial Coefficients
+> The **binomial coefficient** (or binomial number) $\binom{n}{r}$, read "$n$ choose $r$", is the cardinality of $\mathcal{P}_r(X)$ when $|X| = n$.
+>
+> *Eccles: Definition 12.2.4*
+
+^def-12-new1
+
+The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (images and pre-images of subsets, [[§9 Injections, Surjections and Bijections#^def-9-4|Definition §9.4]], [[§9 Injections, Surjections and Bijections#^def-9-new3|Definition §9.4]]).
 
 > [!example] Example §12.2: The Subsets of a 4-Set
 > For $X = \{a, b, c, d\}$:
@@ -306,7 +311,7 @@ Listing subsets, as in Example [[§12★ Counting Functions and Subsets#^ex-12-2
 
 ^pf-12-8
 
-*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§12★ Counting Functions and Subsets#^def-12-5|Def. §12.5]]
+*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§12★ Counting Functions and Subsets#^def-12-5|Def. §12.5]], [[§12★ Counting Functions and Subsets#^def-12-new1|Def. §12.5]]
 
 > [!remark] Remark: Pascal's Triangle
 > This rule gives an inductive way to compute binomial coefficients. It seems to have been found in China by the end of the eleventh century, and is known in the West after Blaise Pascal (1623–1662), who linked the binomial coefficients with probability. Write the numbers $\binom{n}{r}$, $r = 0, 1, \ldots, n$, in row $n$ of a triangle. By Proposition [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]] the border consists of $1$s, and by Pascal's rule each inner entry is the sum of the two entries above it.

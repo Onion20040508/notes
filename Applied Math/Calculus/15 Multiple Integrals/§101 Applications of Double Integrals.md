@@ -17,14 +17,21 @@ Volume is one application of double integrals. This section gives the physical a
 
 In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
 
-> [!definition] Definition §101.1: Density and Mass of a Lamina
+> [!definition] Definition §101.1: Density of a Lamina
 > Suppose a lamina occupies a region $D$ of the $xy$-plane and its **density** (in units of mass per unit area) at a point $(x, y)$ of $D$ is $\rho(x, y)$, where $\rho$ is continuous on $D$. That is,
 >
 > $$
 > \rho(x, y) = \lim \frac{\Delta m}{\Delta A} ,
 > $$
 >
-> where $\Delta m$ and $\Delta A$ are the mass and area of a small rectangle containing $(x, y)$ and the limit is taken as the dimensions of the rectangle approach $0$. Enclose $D$ in a rectangle, divide it into subrectangles $R_{ij}$, and let $\rho = 0$ outside $D$. The mass of the part of the lamina in $R_{ij}$ is approximately $\rho(x_{ij}^{\ast}, y_{ij}^{\ast})\,\Delta A$, and the **total mass** of the lamina is
+> where $\Delta m$ and $\Delta A$ are the mass and area of a small rectangle containing $(x, y)$ and the limit is taken as the dimensions of the rectangle approach $0$.
+>
+> *Stewart: 15.4, Equation 1*
+
+^def-101-1
+
+> [!definition] Definition §101.2: Mass of a Lamina
+> Let a lamina occupy a region $D$ with density $\rho(x, y)$ ([[§101 Applications of Double Integrals#^def-101-1|Definition §101.1]]). Enclose $D$ in a rectangle, divide it into subrectangles $R_{ij}$, and let $\rho = 0$ outside $D$. The mass of the part of the lamina in $R_{ij}$ is approximately $\rho(x_{ij}^{\ast}, y_{ij}^{\ast})\,\Delta A$, and the **total mass** of the lamina is
 >
 > $$
 > m = \lim_{k, l \to \infty} \sum_{i=1}^k \sum_{j=1}^l \rho(x_{ij}^*, y_{ij}^*)\,\Delta A = \iint_D \rho(x, y)\,dA . \qquad (1)
@@ -32,7 +39,7 @@ In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] sin
 >
 > *Stewart: 15.4, Equation 1*
 
-^def-101-1
+^def-101-new1
 
 > [!definition] Definition §101.2: Charge
 > If an electric charge is distributed over a region $D$ with **charge density** $\sigma(x, y)$ (in units of charge per unit area), the **total charge** is
@@ -51,7 +58,7 @@ In [[§54 Applications to Physics and Engineering#^thm-54-5|Theorem §54.5]] sin
 
 The moment of a particle about an axis is its mass times its directed distance from the axis ([[§54 Applications to Physics and Engineering#^def-54-3|Definition §54.3]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
 
-> [!definition] Definition §101.3: Moments and Center of Mass
+> [!definition] Definition §101.3: Moments of a Lamina
 > The **moment** of the lamina **about the $x$-axis** and **about the $y$-axis** are
 >
 > $$
@@ -62,7 +69,12 @@ The moment of a particle about an axis is its mass times its directed distance f
 > M_y = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n x_{ij}^*\,\rho(x_{ij}^*, y_{ij}^*)\,\Delta A = \iint_D x\,\rho(x, y)\,dA . \qquad (4)
 > $$
 >
-> The **center of mass** $(\bar x, \bar y)$ is defined by $m\bar x = M_y$ and $m\bar y = M_x$:
+> *Stewart: 15.4, Equations 3, 4 and 5*
+
+^def-101-3
+
+> [!definition] Definition §101.4: Center of Mass of a Lamina
+> The **center of mass** $(\bar x, \bar y)$ of the lamina is defined by $m\bar x = M_y$ and $m\bar y = M_x$, with the moments of [[§101 Applications of Double Integrals#^def-101-3|Definition §101.3]]:
 >
 > $$
 > \bar x = \frac{M_y}{m} = \frac1m \iint_D x\,\rho(x, y)\,dA , \qquad \bar y = \frac{M_x}{m} = \frac1m \iint_D y\,\rho(x, y)\,dA , \qquad m = \iint_D \rho(x, y)\,dA . \qquad (5)
@@ -70,7 +82,7 @@ The moment of a particle about an axis is its mass times its directed distance f
 >
 > *Stewart: 15.4, Equations 3, 4 and 5*
 
-^def-101-3
+^def-101-new2
 
 Physically, the lamina behaves as if its entire mass were concentrated at its center of mass: supported at $(\bar x, \bar y)$, it balances horizontally.
 

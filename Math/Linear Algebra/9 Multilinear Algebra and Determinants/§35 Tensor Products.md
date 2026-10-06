@@ -8,17 +8,22 @@ tags: [linear-algebra]
 ---
 ← [[§34 Determinants]] · ↑ [[· 9 Multilinear Algebra and Determinants]]
 
-> [!definition] Definition 9.68: Bilinear functional on V× W, the vector space B(V, W)
-> A *bilinear functional* on $V\times W$ is $\beta:V\times W\to\F$, linear in each slot. $\mathcal{B}(V,W)$ is the vector space of them; $\mathcal{B}(V,V)=V^{(2)}$.
+> [!definition] Definition 9.68: Bilinear functional on V× W
+> A *bilinear functional* on $V\times W$ is $\beta:V\times W\to\F$, linear in each slot.
 
 ^ladr-9-68
+
+> [!definition] Definition 9.68b: The vector space B(V, W)
+> $\mathcal{B}(V,W)$ is the vector space of bilinear functionals on $V\times W$; $\mathcal{B}(V,V)=V^{(2)}$.
+
+^ladr-9-68b
 
 > [!remark]- Connections
 > - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-4|591 Def. §20.4]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
 
 > [!example] Example 9.69: Bilinear functionals (p. 371)
 > - $\beta(v,w)=\varphi(v)\tau(w)$ on $V\times W$, for $\varphi\in V'$, $\tau\in W'$.
-> - $\beta(\varphi,\tau)=\varphi(v)\tau(w)$ on $V'\times W'$: this is $v\otimes w$ ([[§35 Tensor Products#^ladr-9-71|9.71]]).
+> - $\beta(\varphi,\tau)=\varphi(v)\tau(w)$ on $V'\times W'$: this is $v\otimes w$ ([[§35 Tensor Products#^ladr-9-71b|9.71b]]).
 > - $\beta(v,\varphi)=\varphi(v)$ on $V\times V'$: the evaluation pairing.
 > - $\beta(v,T)=\varphi(Tv)$ on $V\times\Lin(V)$.
 > - $\beta(A,B)=\operatorname{tr}(AB)$ on $\F^{m,n}\times\F^{n,m}$.
@@ -35,13 +40,18 @@ tags: [linear-algebra]
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-5|9.5]]
 
-> [!definition] Definition 9.71: Tensor product, V⊗ W, v ⊗ w
-> The *tensor product* $V\otimes W=\mathcal{B}(V',W')$. For $v\in V$, $w\in W$, $v\otimes w\in V\otimes W$ is
+> [!definition] Definition 9.71: Tensor product, V⊗ W
+> The *tensor product* $V\otimes W=\mathcal{B}(V',W')$.
+
+^ladr-9-71
+
+> [!definition] Definition 9.71b: v ⊗ w
+> For $v\in V$, $w\in W$, $v\otimes w\in V\otimes W$ is
 > $$
 > (v\otimes w)(\varphi,\tau)=\varphi(v)\tau(w)\qquad(\varphi\in V',\ \tau\in W').
 > $$
 
-^ladr-9-71
+^ladr-9-71b
 
 > [!remark] Remark: Why this definition
 > $\Lin(V,W)$ or $\F^{m,n}$ have the right dimension too, but give no basis-free meaning to $v\otimes w$. What matters is the behavior: bilinearity ([[§35 Tensor Products#^ladr-9-73|9.73]]), bases ([[§35 Tensor Products#^ladr-9-74|9.74]]), and the universal property ([[§35 Tensor Products#^ladr-9-79|9.79]]).
@@ -65,24 +75,24 @@ tags: [linear-algebra]
 
 ^ladr-9-73
 
-> [!remark] Remark: Warning
-> $v\otimes w$ is *not* linear in the pair $(v,w)$: $(2v)\otimes(2w)=4(v\otimes w)$.
-
 > [!proof]+ Proof
 > Evaluate at $(\varphi,\tau)$: $\varphi(v_1+v_2)\tau(w)=\varphi(v_1)\tau(w)+\varphi(v_2)\tau(w)$, and similarly for the others.
+
+> [!remark] Remark: Warning
+> $v\otimes w$ is *not* linear in the pair $(v,w)$: $(2v)\otimes(2w)=4(v\otimes w)$.
 
 > [!theorem] Theorem 9.74: Basis of V⊗ W
 > (a) If $e_1,\dots,e_m$ in $V$ and $f_1,\dots,f_n$ in $W$ are independent, then $\{e_j\otimes f_k\}$ is independent in $V\otimes W$. (b) If they are bases, $\{e_j\otimes f_k\}$ is a basis of $V\otimes W$.
 
 ^ladr-9-74
 
-> [!remark] Remark: Not every tensor is a product
-> Every element is a *sum* of $v\otimes w$'s; e.g. $e_1\otimes f_1+e_2\otimes f_2$ is not a single $v\otimes w$ (its coefficient matrix has rank $2$; compare [[§35 Tensor Products#^ladr-9-76|9.76]]).
-
 > [!proof]+ Proof
 > (a) Choose $\varphi_j\in V'$, $\tau_k\in W'$ with $\varphi_j(e_i)=\delta_{ji}$, $\tau_k(f_l)=\delta_{kl}$ ([[Linear map lemma|3.4]], after extending to bases). If $\sum a_{j,k}e_j\otimes f_k=0$, evaluate at $(\varphi_M,\tau_N)$: $a_{M,N}=0$. (b) (a) gives $mn=\dim(V\otimes W)$ independent vectors ([[§35 Tensor Products#^ladr-9-72|9.72]], [[§6 Dimension#^ladr-2-38|2.38]]).
 
 *Uses:* [[Linear map lemma|3.4]], [[§35 Tensor Products#^ladr-9-72|9.72]], [[§6 Dimension#^ladr-2-38|2.38]]
+
+> [!remark] Remark: Not every tensor is a product
+> Every element is a *sum* of $v\otimes w$'s; e.g. $e_1\otimes f_1+e_2\otimes f_2$ is not a single $v\otimes w$ (its coefficient matrix has rank $2$; compare [[§35 Tensor Products#^ladr-9-76|9.76]]).
 
 > [!example] Example 9.76: Tensor product of element of Fᵐ with element of Fⁿ (p. 374)
 > In $\F^m\otimes\F^n$ with the basis $\{e_j\otimes f_k\}$:
@@ -111,13 +121,13 @@ tags: [linear-algebra]
 
 ^ladr-9-79
 
-> [!remark] Remark: Universal property
-> $\{\text{bilinear }V\times W\to U\}\cong\Lin(V\otimes W,U)$: the tensor product turns bilinear problems into linear ones. This characterizes $V\otimes W$ up to isomorphism.
-
 > [!proof]+ Proof
 > (a) Define $\hat\Gamma$ on the basis by $\hat\Gamma(e_j\otimes f_k)=\Gamma(e_j,f_k)$ ([[Linear map lemma|3.4]], [[§35 Tensor Products#^ladr-9-74|9.74]](b)). For $v=\sum a_je_j$, $w=\sum b_kf_k$: $\hat\Gamma(v\otimes w)=\sum a_jb_k\hat\Gamma(e_j\otimes f_k)=\sum a_jb_k\Gamma(e_j,f_k)=\Gamma(v,w)$. Uniqueness: a linear map is determined on the basis $\{e_j\otimes f_k\}$. (b) $T^\#$ is bilinear by [[§35 Tensor Products#^ladr-9-73|9.73]] and linearity of $T$; uniqueness is clear.
 
 *Uses:* [[Linear map lemma|3.4]], [[§35 Tensor Products#^ladr-9-74|9.74]], [[§35 Tensor Products#^ladr-9-73|9.73]]
+
+> [!remark] Remark: Universal property
+> $\{\text{bilinear }V\times W\to U\}\cong\Lin(V\otimes W,U)$: the tensor product turns bilinear problems into linear ones. This characterizes $V\otimes W$ up to isomorphism.
 
 %% ex:9.79-fig %%
 > [!example] Example: The universal property as a diagram
@@ -155,23 +165,28 @@ tags: [linear-algebra]
 
 ^ladr-9-83
 
-> [!remark] Remark: Point
-> Any orthonormal bases work, not just the ones used to define the inner product.
-
 > [!proof]+ Proof
 > A basis by [[§35 Tensor Products#^ladr-9-74|9.74]](b); $\langle e_j\otimes f_k,e_M\otimes f_N\rangle=\langle e_j,e_M\rangle\langle f_k,f_N\rangle=\delta_{jM}\delta_{kN}$.
 
 *Uses:* [[§35 Tensor Products#^ladr-9-74|9.74]]
+
+> [!remark] Remark: Point
+> Any orthonormal bases work, not just the ones used to define the inner product.
 
 > [!remark] Notation 9.84: $V_1,\dots,V_m$ (p. 378)
 > For the rest of this subsection, $m$ is an integer greater than $1$ and $V_1,\dots,V_m$ are finite-dimensional vector spaces.
 
 ^ladr-9-84
 
-> [!definition] Definition 9.85: m-linear functional, the vector space B(V1, ..., Vm)
-> An *$m$-linear functional* on $V_1\times\dots\times V_m$ is linear in each slot; $\mathcal{B}(V_1,\dots,V_m)$ is the space of them.
+> [!definition] Definition 9.85: m-linear functional
+> An *$m$-linear functional* on $V_1\times\dots\times V_m$ is linear in each slot.
 
 ^ladr-9-85
+
+> [!definition] Definition 9.85b: The vector space B(V1, ..., Vm)
+> $\mathcal{B}(V_1,\dots,V_m)$ is the space of $m$-linear functionals on $V_1\times\dots\times V_m$.
+
+^ladr-9-85b
 
 > [!example] Example 9.86: m-linear functional (p. 378)
 > For $\varphi_k\in V_k'$: $\beta(v_1,\dots,v_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)$ is $m$-linear; sums of these give all of $\mathcal{B}(V_1,\dots,V_m)$.
@@ -188,10 +203,15 @@ tags: [linear-algebra]
 
 *Uses:* [[§35 Tensor Products#^ladr-9-70|9.70]]
 
-> [!definition] Definition 9.88: Tensor product, V1 ⊗ ⋯ ⊗ Vm, v1 ⊗ ⋯ ⊗ vm
-> $V_1\otimes\dots\otimes V_m=\mathcal{B}(V_1',\dots,V_m')$, and $(v_1\otimes\dots\otimes v_m)(\varphi_1,\dots,\varphi_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)$.
+> [!definition] Definition 9.88: Tensor product, V1 ⊗ ⋯ ⊗ Vm
+> $V_1\otimes\dots\otimes V_m=\mathcal{B}(V_1',\dots,V_m')$.
 
 ^ladr-9-88
+
+> [!definition] Definition 9.88b: v1 ⊗ ⋯ ⊗ vm
+> $(v_1\otimes\dots\otimes v_m)(\varphi_1,\dots,\varphi_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)$.
+
+^ladr-9-88b
 
 > [!remark]- Connections
 > - Tensors of type $(r,s)$ in physics and in [[Differentiable Manifolds]]: $V^{\otimes r}\otimes(V')^{\otimes s}$.
@@ -202,13 +222,13 @@ tags: [linear-algebra]
 
 ^ladr-9-89
 
-> [!remark] Remark: Physics
-> $N$ spin-$\tfrac12$ particles live in $(\C^2)^{\otimes N}$, of dimension $2^N$: the exponential growth behind the difficulty of simulating quantum many-body systems.
-
 > [!proof]+ Proof
 > [[§35 Tensor Products#^ladr-9-87|9.87]] and $\dim V_k'=\dim V_k$.
 
 *Uses:* [[§35 Tensor Products#^ladr-9-87|9.87]]
+
+> [!remark] Remark: Physics
+> $N$ spin-$\tfrac12$ particles live in $(\C^2)^{\otimes N}$, of dimension $2^N$: the exponential growth behind the difficulty of simulating quantum many-body systems.
 
 > [!theorem] Theorem 9.90: Basis of V1 ⊗ ⋯ ⊗ Vm
 > If $e^k_1,\dots,e^k_{n_k}$ is a basis of $V_k$, then $\{e^1_{j_1}\otimes\dots\otimes e^m_{j_m}\}$ is a basis of $V_1\otimes\dots\otimes V_m$. So elements are arrays with $m$ indices.

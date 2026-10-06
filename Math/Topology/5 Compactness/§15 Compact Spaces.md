@@ -354,29 +354,12 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^rem-15-6
 
-> [!theorem] Theorem §15.8: Finite Product of Compact Spaces
-> The product of finitely many compact spaces is compact.
-
-^thm-15-8
-
-To prove this, we first establish a key lemma:
+To prove [[§15 Compact Spaces#^thm-15-8|this]] (the finite product theorem below), we first establish a key lemma:
 
 > [!theorem] Lemma §15.9: Tube Lemma
 > Let $X$ and $Y$ be topological spaces with $Y$ compact. If $N$ is an open set of $X \times Y$ containing the “slice” $x_0 \times Y = \{x_0\} \times Y$, then $N$ contains some “tube” $W \times Y$ about $x_0 \times Y$, where $W$ is a neighborhood of $x_0$ in $X$.
 
 ^lem-15-9
-
-> [!remark] Remark: Tube Lemma Intuition
-> The Tube Lemma says: if an open set $N$ contains a vertical slice $\{x_0\} \times Y$, it must contain a “fattened” tube $W \times Y$ around that slice.
->
-> *Why is compactness of $Y$ essential?* Without compactness, the open set $N$ might “pinch” closer and closer to the slice as you move along $Y$, never leaving room for a uniform tube. Compactness forces the “pinching” to stop after finitely many steps, guaranteeing a tube of positive width.
->
-> *Counterexample without compactness:* Let $Y = \mathbb{R}$, $X = \mathbb{R}$, and $N = \{(x, y) : |x| < 1/(|y|+1)\}$. Then $N$ contains $\{0\} \times \mathbb{R}$, but no tube $(-\varepsilon, \varepsilon) \times \mathbb{R}$ fits inside $N$.
-
-^rem-15-7
-
-![[m590-15-5.svg]]
-*The counterexample with $Y=\mathbb{R}$: the open set $N=\{|x|<1/(|y|+1)\}$ (blue) contains the slice $\{0\}\times\mathbb{R}$ but pinches toward it as $|y|\to\infty$. Every candidate tube $(-\varepsilon,\varepsilon)\times\mathbb{R}$ (red dashed) escapes $N$ once $|y|>\frac1\varepsilon-1$ (red regions). Covering the non-compact slice takes infinitely many basis boxes, and their widths have no positive lower bound.*
 
 > [!proof]+ Proof
 > For each $y \in Y$, the point $(x_0, y) \in N$. Since $N$ is open, there exists a [[§4 Product Topology#^def-4-1|basis element]] $B_y \times C_y$ such that $(x_0, y) \in B_y \times C_y \subseteq N$.
@@ -395,6 +378,23 @@ To prove this, we first establish a key lemma:
 
 ![[m590-15-4.svg]]
 *The tube lemma: each point of the slice $x_0\times Y$ (blue line) sits in a basis box $B_{y_i}\times C_{y_i}\subseteq N$ (dashed); finitely many $C_{y_i}$ cover $Y$ by compactness, and $W=\bigcap B_{y_i}$ is the narrowest of the box widths. A point of the tube $W\times Y$ (red) lies in whichever box has its height in $C_{y_j}$, hence in $N$ (blue region).*
+
+> [!remark] Remark: Tube Lemma Intuition
+> The Tube Lemma says: if an open set $N$ contains a vertical slice $\{x_0\} \times Y$, it must contain a “fattened” tube $W \times Y$ around that slice.
+>
+> *Why is compactness of $Y$ essential?* Without compactness, the open set $N$ might “pinch” closer and closer to the slice as you move along $Y$, never leaving room for a uniform tube. Compactness forces the “pinching” to stop after finitely many steps, guaranteeing a tube of positive width.
+>
+> *Counterexample without compactness:* Let $Y = \mathbb{R}$, $X = \mathbb{R}$, and $N = \{(x, y) : |x| < 1/(|y|+1)\}$. Then $N$ contains $\{0\} \times \mathbb{R}$, but no tube $(-\varepsilon, \varepsilon) \times \mathbb{R}$ fits inside $N$.
+
+^rem-15-7
+
+![[m590-15-5.svg]]
+*The counterexample with $Y=\mathbb{R}$: the open set $N=\{|x|<1/(|y|+1)\}$ (blue) contains the slice $\{0\}\times\mathbb{R}$ but pinches toward it as $|y|\to\infty$. Every candidate tube $(-\varepsilon,\varepsilon)\times\mathbb{R}$ (red dashed) escapes $N$ once $|y|>\frac1\varepsilon-1$ (red regions). Covering the non-compact slice takes infinitely many basis boxes, and their widths have no positive lower bound.*
+
+> [!theorem] Theorem §15.8: Finite Product of Compact Spaces
+> The product of finitely many compact spaces is compact.
+
+^thm-15-8
 
 > [!proof]+ Proof of Finite Product Theorem
 > Suffices to prove for two spaces (then use induction). Let $X, Y$ be compact. Let $\mathcal{A}$ be an open covering of $X \times Y$. We show $\mathcal{A}$ has a finite subcover.

@@ -21,7 +21,7 @@ tags: [linear-algebra]
 > Pretend $i^2=-1$ and expand $(a+bi)(c+di)$ with the usual rules: you get exactly the formula above. Conversely the formula gives $i\cdot i=-1$. So there is nothing to memorize.
 
 > [!remark]- Connections
-> - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
+> - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄]], [[§13 Polynomials#^ladr-4-2b|absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
 > - Physics: quantum state spaces are complex vector spaces, which is one reason the whole theory is developed over $\F=\R$ or $\C$.
 > - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (a + bi with i² = −1, real and imaginary parts), with products worked in [[§53 Complex Numbers#^ex-53-1|235 Ex. §53.1]].
 > - Computational version: [[§1 Sums and Products#^def-1-1|342 Def. §1.1]] (complex numbers as ordered pairs, the points of the complex plane) and [[§1 Sums and Products#^prop-1-2|342 Prop. §1.2]] (the rectangular form x + iy, with i² = −1).
@@ -57,7 +57,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - These are the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]); $\R$ and $\C$ are fields. The vector-space axioms [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] copy this list with scalars acting on vectors.
-> - Uniqueness of inverses (the group-theory argument of [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]], used in the proof above) is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction, 1∕α, division]] well defined.
+> - Uniqueness of inverses (the group-theory argument of [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]], used in the proof above) is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction]], [[§1 Rⁿ and Cⁿ#^ladr-1-5b|1∕α, division]] well defined.
 > - Computational version: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
 > - Computational version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]] (commutative, associative and distributive laws) and [[§2 Basic Algebraic Properties#^thm-2-4|342 Thm. §2.4]] (multiplicative inverse), proved from the pair definition, with worked examples.
 
@@ -70,14 +70,19 @@ tags: [linear-algebra]
 
 ^ladr-1-4
 
-> [!definition] Definition 1.5: −α, subtraction, 1∕α, division
+> [!definition] Definition 1.5: −α, subtraction
 > Let $\alpha,\beta\in\C$.
 > - $-\alpha$ is the additive inverse of $\alpha$, i.e. the unique number with $\alpha+(-\alpha)=0$.
 > - Subtraction: $\beta-\alpha=\beta+(-\alpha)$.
+
+^ladr-1-5
+
+> [!definition] Definition 1.5b: 1∕α, division
+> Let $\alpha,\beta\in\C$.
 > - For $\alpha\neq 0$, $1/\alpha$ is the multiplicative inverse, the unique number with $\alpha(1/\alpha)=1$.
 > - Division: $\beta/\alpha=\beta(1/\alpha)$ for $\alpha\ne 0$.
 
-^ladr-1-5
+^ladr-1-5b
 
 > [!remark]- Connections
 > - Well defined because of the uniqueness parts of [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]].

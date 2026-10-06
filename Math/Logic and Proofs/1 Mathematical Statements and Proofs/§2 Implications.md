@@ -87,12 +87,19 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ### Universal implications
 
-> [!definition] Definition §2.2: Universal Statement; Counterexample
-> An implication between predicates, such as $n > 3 \Rightarrow n > 0$ "for integers $n$", is normally asserted as a **universal statement**: it claims that the implication is true for *every* value of the free variable in the stated range (which should be made explicit). It is false precisely when there is at least one value for which the hypothesis is true and the conclusion false; such a value is a **counterexample**. The statement that a counterexample exists, written $P(x) \not\Rightarrow Q(x)$, is an **existence statement**. Quantifiers make this precise in [[§7 Quantifiers|§7]].
+> [!definition] Definition §2.2: Universal Statement
+> An implication between predicates, such as $n > 3 \Rightarrow n > 0$ "for integers $n$", is normally asserted as a **universal statement**: it claims that the implication is true for *every* value of the free variable in the stated range (which should be made explicit).
 >
 > *Eccles: Section 2.1*
 
 ^def-2-2
+
+> [!definition] Definition §2.2: Counterexample
+> A universal statement is false precisely when there is at least one value for which the hypothesis is true and the conclusion false; such a value is a **counterexample**. The statement that a counterexample exists, written $P(x) \not\Rightarrow Q(x)$, is an **existence statement**. Quantifiers make this precise in [[§7 Quantifiers|§7]].
+>
+> *Eccles: Section 2.1*
+
+^def-2-new1
 
 > [!example] Example §2.2: The Range of the Variable Matters
 > **(a)** For real numbers $x$, consider $x > 0 \Rightarrow x \geq 1$:
@@ -113,7 +120,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-2
 
-*Uses:* [[§2 Implications#^def-2-2|Def. §2.2]], [[§2 Implications#^prop-2-1|§2.1]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
+*Uses:* [[§2 Implications#^def-2-2|Def. §2.2]], [[§2 Implications#^def-2-new1|Def. §2.2]], [[§2 Implications#^prop-2-1|§2.1]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
 
 ## Reading Implications
 
@@ -201,11 +208,11 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > [!proof]+ Proof
 > (1) From the columns of $P \Rightarrow Q$ and $Q \Rightarrow P$ in the proof of [[§2 Implications#^prop-2-2|Proposition §2.2]], their conjunction has the values T, F, F, T in the rows (T, T), (T, F), (F, T), (F, F): it is true exactly when $P$ and $Q$ agree.
 >
-> (2) By (1), $F \Leftrightarrow G$ is true for a given assignment exactly when $F$ and $G$ have the same truth value for it. So $F \Leftrightarrow G$ is true for every assignment if and only if $F$ and $G$ agree for every assignment, i.e. $F \equiv G$ ([[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]).
+> (2) By (1), $F \Leftrightarrow G$ is true for a given assignment exactly when $F$ and $G$ have the same truth value for it. So $F \Leftrightarrow G$ is true for every assignment if and only if $F$ and $G$ agree for every assignment, i.e. $F \equiv G$ ([[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]).
 
 ^pf-2-3
 
-*Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]
+*Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]
 
 > [!example] Example §2.4: Reading the Same Equation Many Ways
 > Since $n^2 - n - 2 = (n - 2)(n + 1)$, for integers $n$ we have $n^2 - n - 2 = 0 \Leftrightarrow (n = 2 \text{ or } n = -1)$ ([[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). Write $E$ for $n^2 - n - 2 = 0$. As universal statements about integers $n$:

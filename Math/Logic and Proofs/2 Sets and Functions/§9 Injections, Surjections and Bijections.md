@@ -15,31 +15,48 @@ A function assigns exactly one value to each point of its domain, but says nothi
 
 ## 9.1 Properties of Functions
 
-> [!definition] Definition §9.1: Injection, Surjection, Bijection
-> Let $f : X \to Y$ be a function.
-> 1. $f$ is an **injection** (is **injective**, **one-to-one**) if no element of $Y$ is assigned to more than one element of $X$, i.e. $f$ takes different values at different points:
+> [!definition] Definition §9.1: Injection
+> Let $f : X \to Y$ be a function. $f$ is an **injection** (is **injective**, **one-to-one**) if no element of $Y$ is assigned to more than one element of $X$, i.e. $f$ takes different values at different points:
 >
 > $$
 > \forall x_1, x_2 \in X,\ (x_1 \ne x_2 \Rightarrow f(x_1) \ne f(x_2)), \quad\text{equivalently (contrapositive)}\quad \forall x_1, x_2 \in X,\ (f(x_1) = f(x_2) \Rightarrow x_1 = x_2).
 > $$
->
-> 2. $f$ is a **surjection** (is **surjective**, **onto**) if each element of $Y$ is assigned to some element of $X$, i.e. each point of the codomain is a value:
->
-> $$
-> \forall y \in Y,\ \exists x \in X,\ y = f(x).
-> $$
->
-> 3. $f$ is a **bijection** (is **bijective**, **one-to-one and onto**) if it is both an injection and a surjection.
 >
 > *Eccles: Definition 9.1.1*
 
 ^def-9-1
 
 > [!remark]- Connections
-> - Same notions: [[§1 Countability and Set Theory#^def-1-3|551 Def. §1.3]], [[§1 Countability and Set Theory#^def-1-4|551 Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|551 Def. §1.6]].
-> - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-14|LADR Def. 3.14]] (injective), [[§8 Null Spaces and Ranges#^ladr-3-19|LADR Def. 3.19]] (surjective).
+> - Same notion: [[§1 Countability and Set Theory#^def-1-3|551 Def. §1.3]].
+> - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-14|LADR Def. 3.14]] (injective).
 > - Computational version: one-to-one functions and the horizontal line test, [[§5 Inverse Functions and Logarithms#^def-5-1|Calc Def. §5.1]] and [[§5 Inverse Functions and Logarithms#^thm-5-1|Calc Thm. §5.1]] (with worked examples).
-> - For linear maps of ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-2|235 Def. §9.2]] (onto) and [[§9 The Matrix of a Linear Transformation#^def-9-3|235 Def. §9.3]] (one-to-one), tested by pivot positions in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]], with worked examples.
+> - For linear maps of ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-3|235 Def. §9.3]] (one-to-one), tested by pivot positions in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]], with worked examples.
+
+> [!definition] Definition §9.1: Surjection
+> Let $f : X \to Y$ be a function. $f$ is a **surjection** (is **surjective**, **onto**) if each element of $Y$ is assigned to some element of $X$, i.e. each point of the codomain is a value:
+>
+> $$
+> \forall y \in Y,\ \exists x \in X,\ y = f(x).
+> $$
+>
+> *Eccles: Definition 9.1.1*
+
+^def-9-new1
+
+> [!remark]- Connections
+> - Same notion: [[§1 Countability and Set Theory#^def-1-4|551 Def. §1.4]].
+> - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-19|LADR Def. 3.19]] (surjective).
+> - For linear maps of ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-2|235 Def. §9.2]] (onto), tested by pivot positions in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]], with worked examples.
+
+> [!definition] Definition §9.1: Bijection
+> Let $f : X \to Y$ be a function. $f$ is a **bijection** (is **bijective**, **one-to-one and onto**) if it is both an injection and a surjection.
+>
+> *Eccles: Definition 9.1.1*
+
+^def-9-new2
+
+> [!remark]- Connections
+> - Same notion: [[§1 Countability and Set Theory#^def-1-6|551 Def. §1.6]].
 
 > [!definition] Definition §9.2: Pre-image of an Element
 > Let $f : X \to Y$ and $y \in Y$. A **pre-image** of $y$ (under $f$) is an element $x \in X$ such that $y = f(x)$.
@@ -67,7 +84,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 
 ^pf-9-1
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]]
 
 In each model of a function from [[§8 Functions|§8]]: in a **table of values**, $f$ is injective when no element occurs twice in the second row, surjective when every element of $Y$ occurs, and bijective when every element of $Y$ occurs exactly once. In the **arrow picture** we find pre-images by following arrows backwards; $f$ is bijective when every point of $Y$ is the end of exactly one arrow. In the **box model**, $f$ is injective when no two objects share a box, surjective when no box is empty, and bijective when every box holds exactly one object.
 
@@ -198,7 +215,7 @@ Since injectivity and surjectivity are universal and existential statements, the
 
 ^pf-9-2
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^prop-9-1|§9.1]], [[§8 Functions#^def-8-3|Def. §8.3]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^prop-9-1|§9.1]], [[§8 Functions#^def-8-3|Def. §8.3]]
 
 > [!remark]- Connections
 > - Same result stated with $g \circ f$ and $f \circ g$: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 Prop. §21.4]].
@@ -237,7 +254,7 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 
 ^pf-9-3
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-2|Def. §8.2]], [[§8 Functions#^def-8-3|Def. §8.3]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-new1|Def. §8.2]], [[§8 Functions#^def-8-3|Def. §8.3]]
 
 > [!remark]- Connections
 > - Computational version: the cancellation equations, [[§5 Inverse Functions and Logarithms#^thm-5-2|Calc Thm. §5.2]].
@@ -297,14 +314,19 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 
 The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function between power sets. A function $f : X \to Y$ gives two functions between $\mathcal{P}(X)$ and $\mathcal{P}(Y)$ ([[§6 The Language of Set Theory#^def-6-9|Def. §6.9]]), one in each direction.
 
-> [!definition] Definition §9.4: Image and Pre-image of a Subset
-> Let $f : X \to Y$ be a function.
-> 1. $\overrightarrow{f} : \mathcal{P}(X) \to \mathcal{P}(Y)$ is defined by $\overrightarrow{f}(A) = \{f(x) \mid x \in A\}$ for $A \subseteq X$, the **image** of $A$.
-> 2. $\overleftarrow{f} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is defined by $\overleftarrow{f}(B) = \{x \in X \mid f(x) \in B\}$ for $B \subseteq Y$, the **pre-image** (or inverse image) of $B$.
+> [!definition] Definition §9.4: Image of a Subset
+> Let $f : X \to Y$ be a function. $\overrightarrow{f} : \mathcal{P}(X) \to \mathcal{P}(Y)$ is defined by $\overrightarrow{f}(A) = \{f(x) \mid x \in A\}$ for $A \subseteq X$, the **image** of $A$.
 >
 > *Eccles: Definition 9.3.1*
 
 ^def-9-4
+
+> [!definition] Definition §9.4: Pre-image of a Subset
+> Let $f : X \to Y$ be a function. $\overleftarrow{f} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is defined by $\overleftarrow{f}(B) = \{x \in X \mid f(x) \in B\}$ for $B \subseteq Y$, the **pre-image** (or inverse image) of $B$.
+>
+> *Eccles: Definition 9.3.1*
+
+^def-9-new3
 
 > [!remark] Remark: Notation, and the Two Extensions
 > Most writers denote $\overrightarrow{f}(A)$ simply by $f(A)$ and $\overleftarrow{f}(B)$ by $f^{-1}(B)$ (as in Topology, where continuity is defined by pre-images of open sets, [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], and Measure Theory, where measurability asks that the pre-images $\{x \mid f(x) > c\}$ of rays be measurable sets, [[§12 Measurable Functions#^def-12-2|551 Def. §12.2]]); Eccles's arrows avoid giving two different functions the same name. $\overrightarrow{f}$ extends $f$: $\overrightarrow{f}(\{x_0\}) = \{f(x_0)\}$, and $\overrightarrow{f}(X) = \operatorname{Im} f$. $\overleftarrow{f}(\{y_0\}) = \{x \in X \mid f(x) = y_0\}$ is the set of pre-images of $y_0$, the contents of box $y_0$. If $f$ is a bijection, $\overleftarrow{f}(\{y_0\}) = \{f^{-1}(y_0)\}$, so $\overleftarrow{f}$ extends $f^{-1}$; if $f$ is not surjective, $\overleftarrow{f}(\{y\}) = \emptyset$ for $y \notin \operatorname{Im} f$, and if $f$ is not injective, $\overleftarrow{f}(\{y\})$ has more than one element for some $y$.

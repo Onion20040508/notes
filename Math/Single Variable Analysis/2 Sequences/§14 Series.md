@@ -25,14 +25,19 @@ $$
 
 Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; in example (3) we are adding terms that become smaller and smaller — does that suffice?
 
-> [!definition] Definition §14.1: Series and Partial Sums
+> [!definition] Definition §14.1: Series
 > An **infinite series** (or a **series**) is an infinite sum
 >
 > $$
 > a_1 + a_2 + \cdots = \sum_{n=1}^{\infty} a_n, \qquad a_n \in \mathbb{R}
 > $$
 >
-> (it can also start at any index $m$: $\sum_{n=m}^\infty a_n$; we concentrate on $m = 1$). Its **partial sums** are
+> (it can also start at any index $m$: $\sum_{n=m}^\infty a_n$; we concentrate on $m = 1$).
+
+^def-14-1
+
+> [!definition] Definition §14.1: Partial Sums
+> Let $\sum_{n=1}^{\infty} a_n$ be a series. Its **partial sums** are
 >
 > $$
 > s_n = \sum_{k=1}^{n} a_k,
@@ -40,7 +45,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 >
 > which form a sequence $(s_n)$.
 
-^def-14-1
+^def-14-new1
 
 > [!definition] Definition §14.2: Convergence of a Series
 > If the sequence $(s_n)$ of partial sums converges to a limit $s$, we say the series $\sum_{n=1}^\infty a_n$ **converges** to $s$ and write $\sum_{n=1}^\infty a_n = s$. If $(s_n)$ diverges, we say the series **diverges**; in the special case $s_n \to +\infty$ we say the series diverges to $+\infty$ and write $\sum_{n=1}^\infty a_n = +\infty$.

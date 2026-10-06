@@ -451,7 +451,7 @@ $$
 
 ### Irrotational Flow
 
-An additional physical condition: the flow is **[[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|irrotational]]** (no rotation), meaning:
+An additional physical condition: the flow is **[[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-new1|irrotational]]** (no rotation), meaning:
 
 $$
 \nabla \times \mathbf{u} = 0 \qquad \text{(curl-free / irrotational)}.

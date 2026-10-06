@@ -6,7 +6,7 @@ tags: ["math451", "workhorse"]
 ---
 The series every other series is compared to, and the model power series. Its uses in MATH 451:
 
-- The sequence $a^n$: complete classification ([[§9 Limit Theorems for Sequences#^ex-9-10|§9]])
+- The sequence $a^n$: complete classification ([[§9a Divergence to ±∞ and the Ratio Test#^ex-9-10|§9a]])
 - $\sum a^n=\tfrac1{1-a}$ iff $|a|<1$ ([[§14 Series#^ex-14-4|§14]])
 - Pointwise but not uniform convergence on $(-1,1)$ ([[§24 Uniform Convergence#^ex-24-1|§24]])
 - Uniform convergence on every $[-a,a]$, $a<1$, by the M-test ([[§25 More on Uniform Convergence#^ex-25-3|§25]])
@@ -15,7 +15,7 @@ The series every other series is compared to, and the model power series. Its us
 - The series of $\ln(1+x)$ from $\tfrac1{1+x}=\sum(-x)^n$ ([[§26 Differentiation and Integration of Power Series#^ex-26-4|§26]])
 
 ## The sequence $a^n$: complete classification
-![[§9 Limit Theorems for Sequences#^ex-9-10]]
+![[§9a Divergence to ±∞ and the Ratio Test#^ex-9-10]]
 
 ## $\sum a^n=\tfrac1{1-a}$ iff $|a|<1$
 ![[§14 Series#^ex-14-4]]

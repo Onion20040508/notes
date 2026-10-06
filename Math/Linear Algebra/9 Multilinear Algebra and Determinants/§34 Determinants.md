@@ -76,13 +76,13 @@ tags: [linear-algebra]
 
 ^ladr-9-46
 
-> [!remark] Remark: Not for computing
-> $n!$ terms: $10!>3\times10^6$, $100!\approx10^{158}$. Compute with row reduction ([[§34 Determinants#^ladr-9-57|9.57]]) or a factorization ($LU$/$QR$) and [[§34 Determinants#^ladr-9-48|9.48]].
-
 > [!proof]+ Proof
 > Apply [[§33 Alternating Multilinear Forms#^ladr-9-36|9.36]] on $\F^n$ with the standard basis and the alternating form of [[§34 Determinants#^ladr-9-45|9.45]]: here $b_{j,k}=A_{j,k}$ and $\alpha(e_1,\dots,e_n)=\det I=1$.
 
 *Uses:* [[§33 Alternating Multilinear Forms#^ladr-9-36|9.36]], [[§34 Determinants#^ladr-9-45|9.45]]
+
+> [!remark] Remark: Not for computing
+> $n!$ terms: $10!>3\times10^6$, $100!\approx10^{158}$. Compute with row reduction ([[§34 Determinants#^ladr-9-57|9.57]]) or a factorization ($LU$/$QR$) and [[§34 Determinants#^ladr-9-48|9.48]].
 
 > [!remark]- Connections
 > - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol ([[§22 The Algebra of Differential Forms#^def-22-2|452 Def. §22.2]]).
@@ -120,9 +120,6 @@ tags: [linear-algebra]
 
 ^ladr-9-49
 
-> [!remark] Remark: Why this is 'magic'
-> With the Leibniz formula this is a messy computation; with the abstract definition it is one line: scaling factors compose.
-
 > [!proof]+ Proof
 > (a) For $\alpha\in V^{(n)}_{\mathrm{alt}}$:
 > $$
@@ -131,6 +128,9 @@ tags: [linear-algebra]
 > (b) Take $S,T$ with standard matrices $A,B$; $\mathcal{M}(ST)=AB$ ([[§9 Matrices#^ladr-3-43|3.43]]).
 
 *Uses:* [[§9 Matrices#^ladr-3-43|3.43]]
+
+> [!remark] Remark: Why this is 'magic'
+> With the Leibniz formula this is a messy computation; with the abstract definition it is one line: scaling factors compose.
 
 > [!remark]- Connections
 > - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|493 Def. §20.5]]) it is the sign, [[The Sign Homomorphism]].
@@ -209,15 +209,15 @@ tags: [linear-algebra]
 
 ^ladr-9-56
 
-> [!remark] Remark: Rows vs columns
-> (a) means everything true for columns is true for rows.
-
 > [!proof]+ Proof
 > (a) $\alpha(v_1,\dots,v_n)=\det\big(\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}^t\big)$ is $n$-linear by [[§34 Determinants#^ladr-9-46|9.46]]. It is alternating: if $v_j=v_k$ the matrix $\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}^t$ has two equal rows, so $\big(\cdots\big)^tB$ never equals $I$; the matrix is not invertible and its determinant is $0$ ([[Invertible ⟺ nonzero determinant|9.50]]). It takes the value $1$ on the standard basis, so by [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]] it equals $\det\begin{pmatrix}v_1&\cdots&v_n\end{pmatrix}$.
 >
 > (b) $\mathcal{M}(T')=\mathcal{M}(T)^t$ in dual bases ([[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]]); use (a) and [[§34 Determinants#^ladr-9-53|9.53]]. (c) In an orthonormal basis $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^t$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]); conjugating every entry conjugates the Leibniz sum; use (a).
 
 *Uses:* [[§34 Determinants#^ladr-9-46|9.46]], [[Invertible ⟺ nonzero determinant|9.50]], [[§33 Alternating Multilinear Forms#^ladr-9-37|9.37]], [[§12 Duality#^ladr-3-132|3.132]], [[§34 Determinants#^ladr-9-53|9.53]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
+
+> [!remark] Remark: Rows vs columns
+> (a) means everything true for columns is true for rows.
 
 > [!remark]- Connections
 > - Computational version: [[§21 Properties of Determinants#^thm-21-6|235 Thm. §21.6]] ($\det A^T=\det A$).
@@ -232,9 +232,6 @@ tags: [linear-algebra]
 
 ^ladr-9-57
 
-> [!remark] Remark: Computation
-> Row-reduce to upper-triangular form using (b) and (e), tracking sign changes, then multiply the diagonal ([[§34 Determinants#^ladr-9-48|9.48]]): $O(n^3)$ operations instead of $n!$.
-
 > [!proof]+ Proof
 > $\det$ is an alternating multilinear function of the columns ([[§34 Determinants#^ladr-9-45|9.45]]) and of the rows ([[§34 Determinants#^ladr-9-56|9.56]](a)). (a) is 'alternating', (b) is [[§33 Alternating Multilinear Forms#^ladr-9-30|9.30]], (c) is linearity in one slot, and (d):
 > $$
@@ -243,6 +240,9 @@ tags: [linear-algebra]
 > (e) is (d) for $A^t$.
 
 *Uses:* [[§34 Determinants#^ladr-9-45|9.45]], [[§34 Determinants#^ladr-9-56|9.56]], [[§33 Alternating Multilinear Forms#^ladr-9-30|9.30]]
+
+> [!remark] Remark: Computation
+> Row-reduce to upper-triangular form using (b) and (e), tracking sign changes, then multiply the diagonal ([[§34 Determinants#^ladr-9-48|9.48]]): $O(n^3)$ operations instead of $n!$.
 
 > [!remark]- Connections
 > - Computational version: [[§21 Properties of Determinants#^thm-21-1|235 Thm. §21.1]] (row operations), [[§21 Properties of Determinants#^cor-21-7|235 Cor. §21.7]] (column operations) and [[§21 Properties of Determinants#^cor-21-5|235 Cor. §21.5]] (dependent rows or columns).
@@ -258,13 +258,13 @@ tags: [linear-algebra]
 
 ^ladr-9-58
 
-> [!remark] Remark: Real case
-> Orthogonal operators have $\det=\pm1$: rotations ($+1$) versus reflections ($-1$).
-
 > [!proof]+ Proof
 > $1=\det(S^*S)=\overline{\det S}\,\det S=|\det S|^2$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]](c)).
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-56|9.56]]
+
+> [!remark] Remark: Real case
+> Orthogonal operators have $\det=\pm1$: rotations ($+1$) versus reflections ($-1$).
 
 > [!remark]- Connections
 > - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (an orthogonal matrix has $\det U=\pm1$).
@@ -298,13 +298,13 @@ tags: [linear-algebra]
 
 ^ladr-9-61
 
-> [!remark] Remark: Orientation
-> The sign of $\det T$ records whether $T$ preserves ($+$) or reverses ($-$) orientation; figure below.
-
 > [!proof]+ Proof
 > [[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]] and [[§34 Determinants#^ladr-9-60|9.60]] (if $T$ is not invertible, $T(\Omega)$ lies in a proper subspace and has volume $0=|\det T|$).
 
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]], [[§34 Determinants#^ladr-9-60|9.60]]
+
+> [!remark] Remark: Orientation
+> The sign of $\det T$ records whether $T$ preserves ($+$) or reverses ($-$) orientation; figure below.
 
 > [!remark]- Connections
 > - The Jacobian in the change-of-variables formula $\int_{T(\Omega)}f=\int_\Omega(f\circ T)|\det DT|$; integration of forms on oriented manifolds keeps the sign (Lee, Ch. 16).
@@ -342,13 +342,13 @@ tags: [linear-algebra]
 
 ^ladr-9-64
 
-> [!remark] Remark: Complexification
-> The real case is proved by viewing the same matrix over $\C$: a standard technique.
-
 > [!proof]+ Proof
 > Over $\C$: [[§34 Determinants#^ladr-9-62|9.62]] and [[Cayley–Hamilton theorem|8.29]]. Over $\R$: fix a basis, let $A=\mathcal{M}(T)$ and $S\in\Lin(\C^n)$ with matrix $A$. For real $z$, $q(z)=\det(zI-A)$, which is also the characteristic polynomial of $S$; so $q(S)=0$ by the complex case, i.e. $q(A)=0$, i.e. $q(T)=0$.
 
 *Uses:* [[§34 Determinants#^ladr-9-62|9.62]], [[Cayley–Hamilton theorem|8.29]]
+
+> [!remark] Remark: Complexification
+> The real case is proved by viewing the same matrix over $\C$: a standard technique.
 
 > [!theorem] Theorem 9.65: Characteristic polynomial, trace, and determinant
 > With $n=\dim V$, the characteristic polynomial of $T$ is
@@ -375,9 +375,6 @@ tags: [linear-algebra]
 
 ^ladr-9-66
 
-> [!remark] Remark: Geometry
-> Among parallelepipeds with given edge lengths, the box (orthogonal edges) has the largest volume.
-
 > [!proof]+ Proof
 > If $A$ is not invertible, $\det A=0$. Otherwise $A=QR$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]]), and
 > $$
@@ -386,6 +383,9 @@ tags: [linear-algebra]
 > using [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-58|9.58]], [[§34 Determinants#^ladr-9-48|9.48]], $R_{k,k}\le$ the norm of column $k$ of $R$, and that $Q$ is an isometry.
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]], [[§34 Determinants#^ladr-9-49|9.49]], [[§34 Determinants#^ladr-9-58|9.58]], [[§34 Determinants#^ladr-9-48|9.48]]
+
+> [!remark] Remark: Geometry
+> Among parallelepipeds with given edge lengths, the box (orthogonal edges) has the largest volume.
 
 %% ex:9.66-fig %%
 > [!example] Example: Hadamard's inequality, pictured

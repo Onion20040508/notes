@@ -186,7 +186,7 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 
 ^def-7-3
 
-> [!definition] Definition §7.4: Negative Infinite Limit; One-Sided Infinite Limits
+> [!definition] Definition §7.4: Negative Infinite Limit
 > Let $f$ be a function defined on both sides of $a$, except possibly at $a$ itself. Then
 >
 > $$
@@ -195,6 +195,11 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 >
 > means that the values of $f(x)$ can be made arbitrarily large negative (negative with absolute value as large as we please) by taking $x$ sufficiently close to $a$, but not equal to $a$. It is read "the limit of $f(x)$, as $x$ approaches $a$, is negative infinity", or "$f(x)$ decreases without bound as $x$ approaches $a$". For example, $\lim_{x \to 0} (-1/x^2) = -\infty$.
 >
+> *Stewart: 2.2, Definition 5 and text*
+
+^def-7-4
+
+> [!definition] Definition §7.4: One-Sided Infinite Limits
 > The **one-sided infinite limits**
 >
 > $$
@@ -205,7 +210,7 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 >
 > *Stewart: 2.2, Definition 5 and text*
 
-^def-7-4
+^def-7-new1
 
 > [!remark]- Connections
 > - Rigorous treatment: 451 allows $L = \pm\infty$ in [[§20 Limits of Functions#^def-20-1|451 Def. §20.1]]; its first example is $1/x$ at its four ends, [[§20 Limits of Functions#^ex-20-3|451 Ex. §20.3]] ($\infty$ from the right of $0$, $-\infty$ from the left). For sequences: [[§9 Limit Theorems for Sequences#^def-9-1|451 Def. §9.1]].
@@ -233,7 +238,7 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 > \lim_{x \to 3^+} \frac{2x}{x - 3} = \infty, \qquad \lim_{x \to 3^-} \frac{2x}{x - 3} = -\infty ,
 > $$
 >
-> and by Definition §7.5 the line $x = 3$ is a vertical asymptote.
+> and by [[§7 The Limit of a Function#^def-7-5|Definition §7.5]] the line $x = 3$ is a vertical asymptote.
 >
 > Compare Example §7.4. There $1/x^2 \to \infty$ from both sides, and we write $\lim_{x \to 0} (1/x^2) = \infty$. Here the two sides go to $\infty$ and $-\infty$, so we can only say that $\lim_{x \to 3} \frac{2x}{x - 3}$ does not exist.
 >

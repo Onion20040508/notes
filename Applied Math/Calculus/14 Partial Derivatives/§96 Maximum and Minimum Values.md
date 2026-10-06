@@ -43,12 +43,19 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 
 Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane ([[§93 Tangent Planes and Linear Approximations#^thm-93-1|Theorem §93.1]]) gives $z = z_0$: if the graph of $f$ has a tangent plane at a local maximum or minimum, the tangent plane is horizontal.
 
-> [!definition] Definition §96.2: Critical Point; Saddle Point
-> A point $(a, b)$ is a **critical point** (or **stationary point**) of $f$ if $f_x(a, b) = 0$ and $f_y(a, b) = 0$, or if one of these partial derivatives does not exist. A critical point $(a, b)$ with $f_x(a, b) = f_y(a, b) = 0$ at which $f$ has neither a local maximum nor a local minimum is a **saddle point** of $f$.
+> [!definition] Definition §96.2: Critical Point
+> A point $(a, b)$ is a **critical point** (or **stationary point**) of $f$ if $f_x(a, b) = 0$ and $f_y(a, b) = 0$, or if one of these partial derivatives does not exist.
 >
 > *Stewart: 14.7 (text)*
 
 ^def-96-2
+
+> [!definition] Definition §96.3: Saddle Point
+> A critical point $(a, b)$ with $f_x(a, b) = f_y(a, b) = 0$ at which $f$ has neither a local maximum nor a local minimum is a **saddle point** of $f$.
+>
+> *Stewart: 14.7 (text)*
+
+^def-96-new1
 
 Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then $(a, b)$ is a critical point of $f$. As in one variable, the converse fails: not every critical point gives a maximum or minimum. The name *saddle point* comes from the shape of the graph near the origin in Example §96.1(b). In general the graph near a saddle point need not resemble a saddle, but it crosses its tangent plane there. (A mountain pass is a saddle: for a hiker crossing it the pass is the lowest point of the route, for one walking along the ridge the highest.)
 
@@ -262,16 +269,35 @@ Since $x = 0$ or $y = 0$ gives $V = 0$, a maximum needs $12 - 2xy - x^2 = 0 = 12
 
 ## Absolute Maximum and Minimum Values
 
-> [!definition] Definition §96.3: Absolute Extreme Values; Closed and Bounded Sets
+> [!definition] Definition §96.3: Absolute Extreme Values
 > Let $(a, b)$ be a point in the domain $D$ of a function $f$ of two variables. Then $f(a, b)$ is the
 > - **absolute maximum** value of $f$ on $D$ if $f(a, b) \ge f(x, y)$ for all $(x, y)$ in $D$;
 > - **absolute minimum** value of $f$ on $D$ if $f(a, b) \le f(x, y)$ for all $(x, y)$ in $D$.
 >
-> A **boundary point** of a set $D$ in $\mathbb{R}^2$ is a point $(a, b)$ such that every disk with center $(a, b)$ contains points in $D$ and also points not in $D$. A **closed set** in $\mathbb{R}^2$ is one that contains all its boundary points, and a **bounded set** is one that is contained within some disk.
->
 > *Stewart: 14.7, Definition 7 and text*
 
 ^def-96-3
+
+> [!definition] Definition §96.4: Boundary Point
+> A **boundary point** of a set $D$ in $\mathbb{R}^2$ is a point $(a, b)$ such that every disk with center $(a, b)$ contains points in $D$ and also points not in $D$.
+>
+> *Stewart: 14.7, Definition 7 and text*
+
+^def-96-new2
+
+> [!definition] Definition §96.5: Closed Set
+> A **closed set** in $\mathbb{R}^2$ is one that contains all its boundary points.
+>
+> *Stewart: 14.7, Definition 7 and text*
+
+^def-96-new3
+
+> [!definition] Definition §96.6: Bounded Set
+> A **bounded set** in $\mathbb{R}^2$ is one that is contained within some disk.
+>
+> *Stewart: 14.7, Definition 7 and text*
+
+^def-96-new4
 
 For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all points on or inside the circle $x^2 + y^2 = 1$, is a closed set: it contains all of its boundary points, the points of the circle. If even one point of the boundary circle were omitted, the set would not be closed. A closed set is the two-dimensional analog of a closed interval $[a, b]$, and a bounded set is "finite in extent".
 

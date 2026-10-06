@@ -38,7 +38,7 @@ tags: [topology, math590]
 ## Simply Connected Spaces
 
 > [!definition] Definition §23.3: Simply Connected
-> A space $X$ is **simply connected** if $X$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]] and $\pi_1(X, x_0) = \{[e_{x_0}]\}$ (the trivial group) for some ([[§23 The Fundamental Group#^cor-23-3|hence every]]) basepoint $x_0$.
+> A space $X$ is **simply connected** if $X$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]] and $\pi_1(X, x_0) = \{[e_{x_0}]\}$ (the trivial group) for some ([[§23 The Fundamental Group#^cor-23-3|hence every]]) basepoint $x_0$.
 >
 > Equivalently: $X$ is path-connected and every loop in $X$ can be continuously shrunk to a point.
 >
@@ -153,7 +153,7 @@ tags: [topology, math590]
 *Uses:* [[Properties of Path Concatenation|§22.6]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|§21.4]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-4|Def. §21.4]]
 
 > [!theorem] Corollary §23.3: $\pi_1$ is Independent of Basepoint for Path-Connected Spaces
-> If $X$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]], then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$ for any $x_0, x_1 \in X$. In particular, the isomorphism *type* of $\pi_1(X, x_0)$ is a well-defined invariant of $X$.
+> If $X$ is [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]], then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$ for any $x_0, x_1 \in X$. In particular, the isomorphism *type* of $\pi_1(X, x_0)$ is a well-defined invariant of $X$.
 
 ^cor-23-3
 

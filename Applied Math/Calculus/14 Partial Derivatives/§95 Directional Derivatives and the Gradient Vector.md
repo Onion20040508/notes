@@ -140,7 +140,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ## Functions of Three Variables
 
-> [!definition] Definition §95.3: Directional Derivative and Gradient in Three Variables
+> [!definition] Definition §95.3: Directional Derivative in Three Variables
 > The **directional derivative** of $f$ at $(x_0, y_0, z_0)$ in the direction of a unit vector $\mathbf{u} = \langle a, b, c \rangle$ is
 >
 > $$
@@ -153,7 +153,14 @@ The first vector occurs in many other contexts too, so it gets a name.
 > D_{\mathbf{u}} f(\mathbf{x}_0) = \lim_{h \to 0} \frac{f(\mathbf{x}_0 + h\mathbf{u}) - f(\mathbf{x}_0)}{h} , \qquad (11)
 > $$
 >
-> where $\mathbf{x}_0 = \langle x_0, y_0 \rangle$ or $\langle x_0, y_0, z_0 \rangle$; here $f(\mathbf{x}_0 + h\mathbf{u})$ is the value of $f$ at a point of the line $\mathbf{x} = \mathbf{x}_0 + t\mathbf{u}$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]). The **gradient** of a function of three variables is
+> where $\mathbf{x}_0 = \langle x_0, y_0 \rangle$ or $\langle x_0, y_0, z_0 \rangle$; here $f(\mathbf{x}_0 + h\mathbf{u})$ is the value of $f$ at a point of the line $\mathbf{x} = \mathbf{x}_0 + t\mathbf{u}$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]).
+>
+> *Stewart: 14.6, Definition 10 and Equations 11, 13*
+
+^def-95-3
+
+> [!definition] Definition §95.4: Gradient in Three Variables
+> The **gradient** of a function of three variables is
 >
 > $$
 > \nabla f = \langle f_x, f_y, f_z \rangle = \frac{\partial f}{\partial x}\,\mathbf{i} + \frac{\partial f}{\partial y}\,\mathbf{j} + \frac{\partial f}{\partial z}\,\mathbf{k} . \qquad (13)
@@ -161,7 +168,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 >
 > *Stewart: 14.6, Definition 10 and Equations 11, 13*
 
-^def-95-3
+^def-95-new1
 
 > [!theorem] Theorem §95.3: Directional Derivatives in Three Variables
 > If $f(x, y, z)$ is differentiable and $\mathbf{u} = \langle a, b, c \rangle$ is a unit vector, then
@@ -321,13 +328,18 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 *Uses:* [[§94 The Chain Rule#^thm-94-3|§94.3]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-3|Def. §95.3]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]]
 
-> [!definition] Definition §95.4: Tangent Plane and Normal Line to a Level Surface
+> [!definition] Definition §95.4: Tangent Plane to a Level Surface
 > If $\nabla F(x_0, y_0, z_0) \ne \mathbf{0}$, the **tangent plane to the level surface** $F(x, y, z) = k$ at $P(x_0, y_0, z_0)$ is the plane that passes through $P$ and has normal vector $\nabla F(x_0, y_0, z_0)$:
 >
 > $$
 > F_x(x_0, y_0, z_0)(x - x_0) + F_y(x_0, y_0, z_0)(y - y_0) + F_z(x_0, y_0, z_0)(z - z_0) = 0 . \qquad (19)
 > $$
 >
+> *Stewart: 14.6, Equations 19 and 20*
+
+^def-95-4
+
+> [!definition] Definition §95.5: Normal Line to a Level Surface
 > The **normal line** to $S$ at $P$ is the line through $P$ perpendicular to the tangent plane. Its direction is given by $\nabla F(x_0, y_0, z_0)$, so its symmetric equations are
 >
 > $$
@@ -336,7 +348,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 >
 > *Stewart: 14.6, Equations 19 and 20*
 
-^def-95-4
+^def-95-new2
 
 By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies in this plane, which is the fact used in [[§93 Tangent Planes and Linear Approximations#^ex-93-5|Example §93.5]]. The normal line can also be written in vector form, $\mathbf{r}(t) = \langle x_0, y_0, z_0 \rangle + t\,\nabla F(x_0, y_0, z_0)$ ([[§84 Equations of Lines and Planes#^thm-84-1|Theorem §84.1]]); this form also works when a component of $\nabla F$ is $0$.
 

@@ -36,12 +36,26 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 
 ## 1.1 Mathematical Statements
 
-> [!definition] Definition §1.2: Proposition, Predicate, Statement
-> A **proposition** is a sentence which is either true or false, but not both. A **predicate** is a sentence containing one or more symbols, its **free variables**, which becomes a proposition whenever values are assigned to them; we write $P(n)$ or $P(m, n)$, listing the free variables. A **statement** is a proposition or a predicate; capital letters $P, Q, R$ denote statements. "True" and "false" (T and F) are the two **truth values**.
+> [!definition] Definition §1.2: Proposition
+> A **proposition** is a sentence which is either true or false, but not both.
 >
 > *Eccles: Section 1.1*
 
 ^def-1-2
+
+> [!definition] Definition §1.2: Predicate
+> A **predicate** is a sentence containing one or more symbols, its **free variables**, which becomes a proposition whenever values are assigned to them; we write $P(n)$ or $P(m, n)$, listing the free variables.
+>
+> *Eccles: Section 1.1*
+
+^def-1-new1
+
+> [!definition] Definition §1.2: Statement
+> A **statement** is a proposition or a predicate; capital letters $P, Q, R$ denote statements. "True" and "false" (T and F) are the two **truth values**.
+>
+> *Eccles: Section 1.1*
+
+^def-1-new2
 
 > [!example] Example §1.1: Recognizing Statements
 > In the following list, (i)–(v) are propositions, (vi)–(viii) are predicates, and (ix)–(x) are not statements.
@@ -154,14 +168,21 @@ The negation of a statement is obtained by inserting "not", but this needs care,
 
 The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, in which statements are manipulated like algebraic expressions.
 
-> [!definition] Definition §1.5: Propositional Form; Logical Equivalence
-> A **propositional form** is an expression such as $A \wedge (B \vee \neg C)$ built by connectives from **propositional variables** $A, B, C, \ldots$, which stand for arbitrary statements. Each assignment of truth values to its variables gives the form a truth value, computed from the tables of [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]; the **truth table** of a form in $k$ variables lists all $2^k$ assignments. Two forms $F$ and $G$ are **logically equivalent**, written $F \equiv G$, if they have the same truth value for every assignment; such an equivalence is called a **logical identity**.
+> [!definition] Definition §1.5: Propositional Form
+> A **propositional form** is an expression such as $A \wedge (B \vee \neg C)$ built by connectives from **propositional variables** $A, B, C, \ldots$, which stand for arbitrary statements. Each assignment of truth values to its variables gives the form a truth value, computed from the tables of [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]; the **truth table** of a form in $k$ variables lists all $2^k$ assignments.
+>
+> *Source: MAT 200 supplement §1; Sundstrom §2.2*
+
+^def-1-5
+
+> [!definition] Definition §1.5: Logical Equivalence
+> Two forms $F$ and $G$ are **logically equivalent**, written $F \equiv G$, if they have the same truth value for every assignment; such an equivalence is called a **logical identity**.
 >
 > Two individual propositions are called logically equivalent when they have the same truth value. This is a weak notion ("the square of every even number is even" and "$1 + 1 = 2$" are equivalent merely because both are true); it becomes interesting for predicates, which may be equivalent for every value of the free variable ("$x^2$ is even" and "$(x+1)^2$ is odd", for integers $x$), and for propositional forms.
 >
 > *Source: MAT 200 supplement §1; Sundstrom §2.2*
 
-^def-1-5
+^def-1-new3
 
 > [!theorem] Theorem §1.1: Logical Identities
 > For all propositional forms $A$, $B$, $C$:
@@ -199,7 +220,7 @@ The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, 
 
 ^pf-1-1
 
-*Uses:* [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]
+*Uses:* [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]]
 
 > [!remark] Remark: Substitution
 > The truth value of a compound form depends only on the truth values of its parts. Hence replacing a part of a form by a logically equivalent form gives a logically equivalent form, and the identities of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] may be used exactly like the laws of algebra. By associativity, brackets in repeated conjunctions and disjunctions may be dropped: $A \wedge B \wedge C$, $A_1 \vee A_2 \vee \cdots \vee A_k$. A conjunction of several forms is true exactly when all of them are, a disjunction exactly when at least one is, and De Morgan's laws extend to several terms: $\neg(A_1 \wedge \cdots \wedge A_k) \equiv \neg A_1 \vee \cdots \vee \neg A_k$ and $\neg(A_1 \vee \cdots \vee A_k) \equiv \neg A_1 \wedge \cdots \wedge \neg A_k$.

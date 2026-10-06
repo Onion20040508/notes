@@ -79,13 +79,13 @@ tags: [linear-algebra]
 
 ^ladr-9-7
 
-> [!remark] Remark: Contrast with operators
-> Operators transform by $C^{-1}BC$ ([[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]]); bilinear forms by $C^tBC$. In index language: operators are $(1,1)$-tensors, bilinear forms are $(0,2)$-tensors. They agree exactly when $C^t=C^{-1}$ (orthogonal changes of basis), which is why the difference is invisible in orthonormal frames.
-
 > [!proof]+ Proof
 > Let $T\in\Lin(V)$ with $Tf_k=e_k$ ([[Linear map lemma|3.4]]); then $\mathcal{M}(T,(f))=C$. Put $\alpha(u,v)=\beta(u,Tv)$ and $\rho(u,v)=\alpha(Tu,v)=\beta(Tu,Tv)$. Then $\beta(e_j,e_k)=\rho(f_j,f_k)$, so by [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-6|9.6]] (twice) $A=\mathcal{M}(\rho,(f))=C^t\mathcal{M}(\alpha,(f))=C^tBC$.
 
 *Uses:* [[Linear map lemma|3.4]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-6|9.6]]
+
+> [!remark] Remark: Contrast with operators
+> Operators transform by $C^{-1}BC$ ([[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]]); bilinear forms by $C^tBC$. In index language: operators are $(1,1)$-tensors, bilinear forms are $(0,2)$-tensors. They agree exactly when $C^t=C^{-1}$ (orthogonal changes of basis), which is why the difference is invisible in orthonormal frames.
 
 > [!remark]- Connections
 > - Physics/GR: $g'_{\mu\nu}=\frac{\partial x^\alpha}{\partial x'^\mu}\frac{\partial x^\beta}{\partial x'^\nu}g_{\alpha\beta}$ is this formula.
@@ -136,15 +136,15 @@ tags: [linear-algebra]
 
 ^ladr-9-12
 
-> [!remark] Remark: Why this is easy
-> Unlike operators, every symmetric form can be diagonalized, over any $\F$ (of characteristic $\ne2$): the transformation rule $C^tBC$ is much more flexible than $C^{-1}BC$.
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b)$\Rightarrow$(c) are immediate. (c)$\Rightarrow$(a): expanding $\rho(\sum a_je_j,\sum b_ke_k)=\sum a_jb_k\rho(e_j,e_k)$ and using $\rho(e_j,e_k)=\rho(e_k,e_j)$ gives $\rho(u,w)=\rho(w,u)$. (d)$\Rightarrow$(c): diagonal matrices are symmetric.
 >
 > (a)$\Rightarrow$(d), by induction on $n$; $n=1$ is trivial. If $\rho=0$ any basis works. Otherwise some $v$ has $\rho(v,v)\neq0$: if $\rho(v,v)=0$ for all $v$, then $\rho$ would be alternating as well as symmetric, hence $0$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]], later in this section; its proof does not use 9.12). Let $U=\{u:\rho(u,v)=0\}$, the null space of a nonzero functional, so $\dim U=n-1$ and $v\notin U$, giving $V=\Span(v)\oplus U$. By induction $\rho|_{U\times U}$ is diagonal in a basis $e_1,\dots,e_{n-1}$ of $U$; then in $e_1,\dots,e_{n-1},v$ the matrix of $\rho$ is diagonal (each $\rho(e_j,v)=\rho(v,e_j)=0$).
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]
+
+> [!remark] Remark: Why this is easy
+> Unlike operators, every symmetric form can be diagonalized, over any $\F$ (of characteristic $\ne2$): the transformation rule $C^tBC$ is much more flexible than $C^{-1}BC$.
 
 > [!remark]- Connections
 > - Orthonormal version: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13]]. Sylvester's law of inertia (not in Axler): the numbers of positive, negative and zero diagonal entries do not depend on the diagonalizing basis (for $\F=\R$); e.g. Minkowski space has signature $(1,3)$.
@@ -155,13 +155,13 @@ tags: [linear-algebra]
 
 ^ladr-9-13
 
-> [!remark] Remark: Principal axes
-> This is the principal-axis theorem: the level sets of a quadratic form are ellipsoids/hyperboloids whose axes are orthogonal (figure after [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|9.23]]).
-
 > [!proof]+ Proof
 > Let $f$ be an orthonormal basis, $B=\mathcal{M}(\rho,(f))$ (symmetric, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-12|9.12]]), and $T$ the operator with $\mathcal{M}(T,(f))=B$, self-adjoint ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]). By [[Real spectral theorem|7.29]] there is an orthonormal basis $e$ with $C^{-1}BC$ diagonal, $C=\mathcal{M}(I,(e),(f))$. $C$ is a real unitary matrix, so $C^t=C^{-1}$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|7.57]]), and $\mathcal{M}(\rho,(e))=C^tBC=C^{-1}BC$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7]]).
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-12|9.12]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]], [[Real spectral theorem|7.29]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|7.57]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7]]
+
+> [!remark] Remark: Principal axes
+> This is the principal-axis theorem: the level sets of a quadratic form are ellipsoids/hyperboloids whose axes are orthogonal (figure after [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|9.23]]).
 
 > [!remark]- Connections
 > - Used in Stewart to bring a quadric surface to standard form: [[§85 Cylinders and Quadric Surfaces#^def-85-3|Calc Def. §85.3]].
@@ -241,9 +241,6 @@ tags: [linear-algebra]
 
 ^ladr-9-21
 
-> [!remark] Remark: Polarization
-> $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$ recovers the symmetric form from the quadratic form (compare [[§19 Inner Products and Norms#^ladr-6-21|6.21]]).
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): $q=q_\beta$ and $\beta=\rho+\alpha$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]); $q_\alpha=0$, so $q=q_\rho$. If also $q=q_{\rho'}$, then $\rho'-\rho$ is symmetric with $q_{\rho'-\rho}=0$, i.e. also alternating, so $\rho'=\rho$.
 >
@@ -254,6 +251,9 @@ tags: [linear-algebra]
 > (d)$\Rightarrow$(a): let $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$, symmetric bilinear by hypothesis. Then $q_\rho(v)=\frac12\big(q(2v)-2q(v)\big)=\frac12\big(4q(v)-2q(v)\big)=q(v)$.
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]
+
+> [!remark] Remark: Polarization
+> $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$ recovers the symmetric form from the quadratic form (compare [[§19 Inner Products and Norms#^ladr-6-21|6.21]]).
 
 > [!remark]- Connections
 > - Used in Relativity: invariance of the interval, a quadratic form, gives invariance of the Minkowski scalar product — [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]]; and a quadratic form fixes its symmetric matrix in the proof that the postulates force the invariance of the interval — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-1|REL Theorem §B1.2.1]].

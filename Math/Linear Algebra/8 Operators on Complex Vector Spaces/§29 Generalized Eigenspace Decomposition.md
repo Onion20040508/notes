@@ -40,13 +40,13 @@ tags: [linear-algebra]
 
 ^ladr-8-22
 
-> [!remark] Remark: Meaning
-> On each piece, $T=\lambda_kI+N_k$ with $N_k$ nilpotent. Everything about $T$ reduces to nilpotent operators; Jordan form finishes the job ([[Jordan form|8.46]]).
-
 > [!proof]+ Proof
 > (a) $G(\lambda_k,T)=\nullsp(T-\lambda_kI)^{\dim V}$ ([[§29 Generalized Eigenspace Decomposition#^ladr-8-20|8.20]]) is invariant by [[§14 Invariant Subspaces#^ladr-5-18|5.18]]. (b) $(T-\lambda_kI)^{\dim V}$ kills $G(\lambda_k,T)$. (c) Directness: if $\sum v_k=0$ with $v_k\in G(\lambda_k,T)$, the nonzero $v_k$ would be independent ([[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-12|8.12]]), so all vanish ([[Condition for a direct sum|1.45]]). Spanning: $V$ has a basis of generalized eigenvectors ([[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9]]).
 
 *Uses:* [[§29 Generalized Eigenspace Decomposition#^ladr-8-20|8.20]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-12|8.12]], [[Condition for a direct sum|1.45]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9]]
+
+> [!remark] Remark: Meaning
+> On each piece, $T=\lambda_kI+N_k$ with $N_k$ nilpotent. Everything about $T$ reduces to nilpotent operators; Jordan form finishes the job ([[Jordan form|8.46]]).
 
 > [!definition] Definition 8.23: Multiplicity
 > The *multiplicity* of an eigenvalue $\lambda$ of $T$ is $\dim G(\lambda,T)=\dim\nullsp(T-\lambda I)^{\dim V}$.
@@ -125,13 +125,13 @@ tags: [linear-algebra]
 
 ^ladr-8-30
 
-> [!remark] Remark: When equal
-> If the minimal polynomial has degree $\dim V$ (the generic case), the two coincide.
-
 > [!proof]+ Proof
 > [[Cayley–Hamilton theorem|8.29]] and [[§15 The Minimal Polynomial#^ladr-5-29|5.29]].
 
 *Uses:* [[Cayley–Hamilton theorem|8.29]], [[§15 The Minimal Polynomial#^ladr-5-29|5.29]]
+
+> [!remark] Remark: When equal
+> If the minimal polynomial has degree $\dim V$ (the generic case), the two coincide.
 
 > [!theorem] Theorem 8.31: Multiplicity of an eigenvalue equals number of times on diagonal
 > ($\F=\C$) If $\mathcal{M}(T,(v_1,\dots,v_n))$ is upper triangular, each eigenvalue $\lambda$ appears on its diagonal exactly as many times as its multiplicity.

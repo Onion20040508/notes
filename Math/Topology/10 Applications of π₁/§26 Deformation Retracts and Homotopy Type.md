@@ -133,12 +133,17 @@ tags: [topology, math590]
 > - The full argument, with the retraction constructed: [[§28 Fundamental Group of Some Surfaces#^thm-28-5|π₁(Σ₂) is Non-Abelian]].
 > - $\pi_1(S^1 \vee S^1) \cong F_2$: [[§29 The Seifert–van Kampen Theorem#^ex-29-2|The Figure Eight via van Kampen]].
 
-> [!definition] Definition §26.2: Closed Balls $B^n$ and Spheres $S^{n-1}$
-> The **closed unit ball** in $\mathbb{R}^n$ is $B^n = \{x \in \mathbb{R}^n : \|x\| \leq 1\}$. Its boundary is the **unit sphere** $S^{n-1} = \{x \in \mathbb{R}^n : \|x\| = 1\}$.
+> [!definition] Definition §26.2: Closed Balls $B^n$
+> The **closed unit ball** in $\mathbb{R}^n$ is $B^n = \{x \in \mathbb{R}^n : \|x\| \leq 1\}$.
+
+^def-26-2
+
+> [!definition] Definition §26.2: Spheres $S^{n-1}$
+> Let $B^n$ be the [[§26 Deformation Retracts and Homotopy Type#^def-26-2|closed unit ball]] in $\mathbb{R}^n$. Its boundary is the **unit sphere** $S^{n-1} = \{x \in \mathbb{R}^n : \|x\| = 1\}$.
 >
 > In particular: $B^2 = \{(x,y) \in \mathbb{R}^2 : x^2 + y^2 \leq 1\}$ is the closed unit disk, with boundary $S^1$.
 
-^def-26-2
+^def-26-new1
 
 > [!theorem] Proposition §26.5: $B^n$ is Convex and Simply Connected
 > $B^n$ is convex: if $x, y \in B^n$, then $(1-t)x + ty \in B^n$ for all $t \in [0,1]$.

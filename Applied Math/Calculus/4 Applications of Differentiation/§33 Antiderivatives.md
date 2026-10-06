@@ -201,7 +201,7 @@ A given value such as $F(0) = 2$ fixes the starting point, and hence the one mem
 
 ## Linear Motion
 
-If an object moves in a straight line with position function $s = f(t)$, its velocity is $v(t) = s'(t)$ and its acceleration is $a(t) = v'(t)$ ([[§12 Derivatives and Rates of Change#^def-12-2|Def. §12.2]], [[§20 Rates of Change in the Natural and Social Sciences#^def-20-2|Def. §20.2]]). So the velocity is an antiderivative of the acceleration, and the position is an antiderivative of the velocity. If $a(t)$ and the initial values $s(0)$ and $v(0)$ are known, the position is found by antidifferentiating twice.
+If an object moves in a straight line with position function $s = f(t)$, its velocity is $v(t) = s'(t)$ and its acceleration is $a(t) = v'(t)$ ([[§12 Derivatives and Rates of Change#^def-12-2|Def. §12.2]], [[§20 Rates of Change in the Natural and Social Sciences#^def-20-new1|Def. §20.2]]). So the velocity is an antiderivative of the acceleration, and the position is an antiderivative of the velocity. If $a(t)$ and the initial values $s(0)$ and $v(0)$ are known, the position is found by antidifferentiating twice.
 
 > [!example] Example §33.4: Motion with Given Acceleration
 > **(a)** A particle moves in a straight line with acceleration $a(t) = 6t + 4$. Its initial velocity is $v(0) = -6$ cm/s and its initial displacement is $s(0) = 9$ cm. Find its position function.

@@ -151,20 +151,25 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 
 By Theorem §78.1 and Example §78.1(b), *if* $e^x$ has a power series representation at $0$, it is $\sum x^n/n!$. Whether it *does* is the general question: when is a function with derivatives of all orders equal to the sum of its Taylor series?
 
-> [!definition] Definition §78.2: Taylor Polynomial; Remainder
+> [!definition] Definition §78.2: Taylor Polynomial
 > The **$n$th-degree Taylor polynomial of $f$ at $a$** is the $n$th partial sum of the Taylor series,
 >
 > $$
 > T_n(x) = \sum_{i=0}^{n} \frac{f^{(i)}(a)}{i!} (x - a)^i = f(a) + \frac{f'(a)}{1!} (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \cdots + \frac{f^{(n)}(a)}{n!} (x - a)^n .
 > $$
 >
-> The **remainder** of the Taylor series is $R_n(x) = f(x) - T_n(x)$, so that $f(x) = T_n(x) + R_n(x)$.
->
 > For example, for $e^x$ at $0$: $T_1(x) = 1 + x$, $T_2(x) = 1 + x + \dfrac{x^2}{2!}$, $T_3(x) = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!}$.
 >
 > *Stewart: 11.10 (text)*
 
 ^def-78-2
+
+> [!definition] Definition §78.3: Remainder of the Taylor Series
+> The **remainder** of the Taylor series is $R_n(x) = f(x) - T_n(x)$, so that $f(x) = T_n(x) + R_n(x)$.
+>
+> *Stewart: 11.10 (text)*
+
+^def-78-new1
 
 > [!theorem] Theorem §78.3: Remainder Tending to Zero
 > If $f(x) = T_n(x) + R_n(x)$, where $T_n$ is the $n$th-degree Taylor polynomial of $f$ at $a$, and if
@@ -429,18 +434,23 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 These series, found by Newton by other methods, say that everything about $e^x$, $\sin x$ and $\cos x$ is determined by their derivatives at the single number $0$.
 
-> [!definition] Definition §78.3: Binomial Coefficients; Binomial Series
+> [!definition] Definition §78.3: Binomial Coefficients
 > For any real number $k$ and integer $n \ge 0$, the **binomial coefficients** are
 >
 > $$
 > \binom{k}{n} = \frac{k(k-1)(k-2)\cdots(k - n + 1)}{n!} , \qquad \binom{k}{0} = 1 .
 > $$
 >
+> *Stewart: 11.10 (text)*
+
+^def-78-3
+
+> [!definition] Definition §78.4: Binomial Series
 > The **binomial series** is the Maclaurin series of $(1 + x)^k$, which is $\sum_{n=0}^{\infty} \binom{k}{n} x^n$ (Theorem §78.9).
 >
 > *Stewart: 11.10 (text)*
 
-^def-78-3
+^def-78-new2
 
 > [!theorem] Theorem §78.9: The Binomial Series
 > If $k$ is any real number and $|x| < 1$, then

@@ -78,13 +78,13 @@ tags: [linear-algebra]
 
 ^ladr-6-6
 
-> [!remark] Remark: Sesquilinear
-> So $\langle\cdot,\cdot\rangle$ is linear in the first slot and conjugate-linear in the second ('one and a half' linear).
-
 > [!proof]+ Proof
 > (a) is additivity and homogeneity in the first slot. (b) follows from (a) and [[§7 Vector Space of Linear Maps#^ladr-3-10|3.10]]. (c) $\langle v,0\rangle=\overline{\langle0,v\rangle}=0$. (d) $\langle u,v+w\rangle=\overline{\langle v+w,u\rangle}=\overline{\langle v,u\rangle}+\overline{\langle w,u\rangle}=\langle u,v\rangle+\langle u,w\rangle$. (e) $\langle u,\lambda v\rangle=\overline{\lambda\langle v,u\rangle}=\bar\lambda\,\overline{\langle v,u\rangle}=\bar\lambda\langle u,v\rangle$.
 
 *Uses:* [[§7 Vector Space of Linear Maps#^ladr-3-10|3.10]]
+
+> [!remark] Remark: Sesquilinear
+> So $\langle\cdot,\cdot\rangle$ is linear in the first slot and conjugate-linear in the second ('one and a half' linear).
 
 > [!remark]- Connections
 > - (a) is the functional that [[Riesz representation theorem|6.42]] shows is the only kind.
@@ -116,13 +116,13 @@ tags: [linear-algebra]
 
 ^ladr-6-9
 
-> [!remark] Remark: Working with squares
-> Norms squared are inner products and expand algebraically; this is the standard move.
-
 > [!proof]+ Proof
 > (a) is definiteness. (b) $\|\lambda v\|^2=\langle\lambda v,\lambda v\rangle=\lambda\bar\lambda\langle v,v\rangle=|\lambda|^2\|v\|^2$ ([[§19 Inner Products and Norms#^ladr-6-6|6.6]]); take square roots.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-6|6.6]]
+
+> [!remark] Remark: Working with squares
+> Norms squared are inner products and expand algebraically; this is the standard move.
 
 > [!definition] Definition 6.10: Orthogonal
 > $u,v\in V$ are *orthogonal* if $\langle u,v\rangle=0$ (symmetric in $u,v$ by conjugate symmetry).
@@ -152,11 +152,11 @@ tags: [linear-algebra]
 
 ^ladr-6-12
 
-> [!remark] Remark: Converse
-> Over $\R$ the converse holds (the expansion shows $2\langle u,v\rangle=0$). Over $\C$ it fails: $u=1$, $v=i$ in $\C$ satisfy the equation but $\langle u,v\rangle=-i\ne0$; only $\operatorname{Re}\langle u,v\rangle=0$ follows.
-
 > [!proof]+ Proof
 > $\|u+v\|^2=\langle u,u\rangle+\langle u,v\rangle+\langle v,u\rangle+\langle v,v\rangle=\|u\|^2+\|v\|^2$.
+
+> [!remark] Remark: Converse
+> Over $\R$ the converse holds (the expansion shows $2\langle u,v\rangle=0$). Over $\C$ it fails: $u=1$, $v=i$ in $\C$ satisfy the equation but $\langle u,v\rangle=-i\ne0$; only $\operatorname{Re}\langle u,v\rangle=0$ follows.
 
 > [!remark]- Connections
 > - Used in [[Cauchy–Schwarz inequality|6.14]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]].
@@ -229,9 +229,6 @@ tags: [linear-algebra]
 
 ^ladr-6-17
 
-> [!remark] Remark: Reverse form
-> $\big|\|u\|-\|v\|\big|\le\|u-v\|$, by applying the inequality to $u=(u-v)+v$ and symmetrically.
-
 > [!proof]+ Proof
 > $$
 > \|u+v\|^2=\|u\|^2+\|v\|^2+2\operatorname{Re}\langle u,v\rangle\le\|u\|^2+\|v\|^2+2|\langle u,v\rangle|\le\|u\|^2+\|v\|^2+2\|u\|\|v\|=(\|u\|+\|v\|)^2,
@@ -239,6 +236,9 @@ tags: [linear-algebra]
 > using [[Cauchy–Schwarz inequality|6.14]] in the last step. Equality forces both inequalities to be equalities, i.e. $\langle u,v\rangle=\|u\|\|v\|$. Then equality in [[Cauchy–Schwarz inequality|6.14]] makes one a multiple of the other, and the scalar must be real and $\ge0$ for $\langle u,v\rangle$ to equal $\|u\|\|v\|\ge0$. Conversely a nonnegative multiple gives equality.
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]]
+
+> [!remark] Remark: Reverse form
+> $\big|\|u\|-\|v\|\big|\le\|u-v\|$, by applying the inequality to $u=(u-v)+v$ and symmetrically.
 
 > [!remark]- Connections
 > - Used in Relativity: for timelike vectors in spacetime the inequality reverses, and the straight worldline is the longest — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-2|REL Theorem §B1.3.2]].
@@ -253,11 +253,11 @@ tags: [linear-algebra]
 
 ^ladr-6-21
 
-> [!remark] Remark: Which norms come from inner products
-> A norm comes from an inner product iff it satisfies this identity (Jordan–von Neumann); the inner product is then recovered by polarization, e.g. over $\R$: $\langle u,v\rangle=\tfrac14\big(\|u+v\|^2-\|u-v\|^2\big)$. The max-norm on $\R^2$ fails it: $u=(1,0)$, $v=(0,1)$ give $1+1\ne4$.
-
 > [!proof]+ Proof
 > Expand both squares: the cross terms $\pm(\langle u,v\rangle+\langle v,u\rangle)$ cancel, leaving $2\|u\|^2+2\|v\|^2$.
+
+> [!remark] Remark: Which norms come from inner products
+> A norm comes from an inner product iff it satisfies this identity (Jordan–von Neumann); the inner product is then recovered by polarization, e.g. over $\R$: $\langle u,v\rangle=\tfrac14\big(\|u+v\|^2-\|u-v\|^2\big)$. The max-norm on $\R^2$ fails it: $u=(1,0)$, $v=(0,1)$ give $1+1\ne4$.
 
 > [!remark]- Connections
 > - Geometry: diagonals of a parallelogram (figure below).

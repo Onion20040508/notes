@@ -47,13 +47,13 @@ tags: [linear-algebra]
 
 ^ladr-3-111
 
-> [!remark] Remark: Isomorphic but not canonically
-> $V\cong V'$ by [[Dimension shows whether vector spaces are isomorphic]], but the isomorphism depends on a basis (via [[§12 Duality#^ladr-3-112|Dual basis]]). An inner product gives a canonical one ([[Riesz representation theorem]]); in general only $V\cong V''$ is canonical.
-
 > [!proof]+ Proof
 > By [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]], $\dim V'=\dim\Lin(V,\F)=(\dim V)(\dim\F)=\dim V$.
 
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-72|3.72]]
+
+> [!remark] Remark: Isomorphic but not canonically
+> $V\cong V'$ by [[Dimension shows whether vector spaces are isomorphic]], but the isomorphism depends on a basis (via [[§12 Duality#^ladr-3-112|Dual basis]]). An inner product gives a canonical one ([[Riesz representation theorem]]); in general only $V\cong V''$ is canonical.
 
 > [!remark]- Connections
 > - Used in [[§12 Duality#^ladr-3-116|Dual basis is a basis of the dual space]], [[§12 Duality#^ladr-3-125|Dimension of the annihilator]], [[§12 Duality#^ladr-3-130|The range of T′]].
@@ -149,13 +149,13 @@ tags: [linear-algebra]
 
 ^ladr-3-120
 
-> [!remark] Remark: Order reverses
-> Like $(AB)^t=B^tA^t$, consistent with [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]]. Axler writes $V'$, $T'$ for duality and saves $T^*$ for the adjoint.
-
 > [!proof]+ Proof
 > *(Filled in: (a), (b).)* $(S+T)'(\varphi)=\varphi\circ(S+T)=\varphi\circ S+\varphi\circ T$ since $\varphi$ is additive; similarly $(\lambda T)'(\varphi)=\varphi\circ(\lambda T)=\lambda(\varphi\circ T)$ by homogeneity of $\varphi$.
 >
 > (c) For $\varphi\in U'$: $(ST)'(\varphi)=\varphi\circ(ST)=(\varphi\circ S)\circ T=T'(S'(\varphi))$.
+
+> [!remark] Remark: Order reverses
+> Like $(AB)^t=B^tA^t$, consistent with [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]]. Axler writes $V'$, $T'$ for duality and saves $T^*$ for the adjoint.
 
 > [!remark]- Connections
 > - So $T\mapsto T'$ is a linear map $\Lin(V,W)\to\Lin(W',V')$ reversing composition.
@@ -211,9 +211,6 @@ tags: [linear-algebra]
 
 ^ladr-3-125
 
-> [!remark] Remark: The hands-on proof
-> Alternatively: extend a basis $u_1,\dots,u_m$ of $U$ to a basis $u_1,\dots,u_m,w_1,\dots,w_k$ of $V$; in the dual basis of this basis, the functionals dual to the $w$'s form a basis of $U^0$, as in [[§12 Duality#^ladr-3-123|3.123]].
-
 > [!proof]+ Proof
 > Let $i\in\Lin(U,V)$ be the inclusion; then $i'\in\Lin(V',U')$ and $i'(\varphi)=\varphi|_U$. So $\nullsp i'=U^0$. By [[Fundamental theorem of linear maps]] and [[§12 Duality#^ladr-3-111|Dim V′ = dim V]],
 > $$
@@ -222,6 +219,9 @@ tags: [linear-algebra]
 > *(Filled in: Axler cites an exercise.)* $i'$ is surjective: given $\varphi\in U'$, extend a basis $u_1,\dots,u_m$ of $U$ to a basis $u_1,\dots,u_m,w_1,\dots,w_k$ of $V$ ([[Every linearly independent list extends to a basis]]) and let $\psi\in V'$ agree with $\varphi$ on the $u$'s and vanish on the $w$'s ([[Linear map lemma]]); then $i'(\psi)=\varphi$. Hence $\dim\range i'=\dim U'=\dim U$, giving $\dim U+\dim U^0=\dim V$.
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]], [[§12 Duality#^ladr-3-111|3.111]], [[Every linearly independent list extends to a basis|2.32]], [[Linear map lemma|3.4]]
+
+> [!remark] Remark: The hands-on proof
+> Alternatively: extend a basis $u_1,\dots,u_m$ of $U$ to a basis $u_1,\dots,u_m,w_1,\dots,w_k$ of $V$; in the dual basis of this basis, the functionals dual to the $w$'s form a basis of $U^0$, as in [[§12 Duality#^ladr-3-123|3.123]].
 
 > [!remark]- Connections
 > - Same count as [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]; indeed $U^0\cong(V/U)'$.
@@ -234,15 +234,15 @@ tags: [linear-algebra]
 
 ^ladr-3-127
 
-> [!remark] Remark: How to use it
-> (a) shows a subspace is everything by showing no nonzero functional kills it; (b) shows it is trivial by showing every functional kills it.
-
 > [!proof]+ Proof
 > (a) $U^0=\{0\}\iff\dim U^0=0\iff\dim U=\dim V\iff U=V$, by [[§12 Duality#^ladr-3-125|Dimension of the annihilator]] and [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]].
 >
 > (b) $U^0=V'\iff\dim U^0=\dim V'$ (one direction by [[§6 Dimension#^ladr-2-39|Subspace of full dimension equals the whole space]]) $\iff\dim U^0=\dim V$ ([[§12 Duality#^ladr-3-111|Dim V′ = dim V]]) $\iff\dim U=0$ ([[§12 Duality#^ladr-3-125|Dimension of the annihilator]]) $\iff U=\{0\}$.
 
 *Uses:* [[§12 Duality#^ladr-3-125|3.125]], [[§6 Dimension#^ladr-2-39|2.39]], [[§12 Duality#^ladr-3-111|3.111]]
+
+> [!remark] Remark: How to use it
+> (a) shows a subspace is everything by showing no nonzero functional kills it; (b) shows it is trivial by showing every functional kills it.
 
 > [!remark]- Connections
 > - Gives the surjective/injective dualities in [[§12 Duality#^ladr-3-128|The null space of T′]] and [[§12 Duality#^ladr-3-130|The range of T′]].

@@ -24,15 +24,15 @@ tags: [linear-algebra]
 
 ^ladr-1-34
 
-> [!remark] Remark: Variant
-> "$0\in U$" can be replaced by "$U\neq\varnothing$": take $u\in U$, then $0=0u\in U$ by [[§2 Definition of Vector Space#^ladr-1-30|The number 0 times a vector]].
-
 > [!proof]+ Proof
 > If $U$ is a subspace, the three conditions hold by the definition of vector space.
 >
 > Conversely, assume the three conditions. The first puts the identity of $V$ in $U$; the second and third make addition and scalar multiplication operations on $U$. For $u\in U$, $-u=(-1)u\in U$ by [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]] and closure, so inverses exist in $U$. *(Filled in.)* The remaining axioms (commutativity, associativity, multiplicative identity, distributivity) are identities that hold for all vectors of $V$, hence in particular for those of $U$.
 
 *Uses:* [[§2 Definition of Vector Space#^ladr-1-32|1.32]]
+
+> [!remark] Remark: Variant
+> "$0\in U$" can be replaced by "$U\neq\varnothing$": take $u\in U$, then $0=0u\in U$ by [[§2 Definition of Vector Space#^ladr-1-30|The number 0 times a vector]].
 
 > [!remark]- Connections
 > - The workhorse for every 'is a subspace' claim: [[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]], [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]], [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]].
@@ -92,9 +92,6 @@ tags: [linear-algebra]
 
 ^ladr-1-40
 
-> [!remark] Remark: Analogy
-> Sums of subspaces play the role of unions of sets: the union of two subspaces is usually not a subspace, and the sum is the smallest subspace containing both.
-
 > [!proof]+ Proof
 > *(Filled in.)* $0=0+\dots+0$ lies in the sum;
 > $(v_1+\dots+v_m)+(w_1+\dots+w_m)=(v_1+w_1)+\dots+(v_m+w_m)$ and $\lambda(v_1+\dots+v_m)=\lambda v_1+\dots+\lambda v_m$ stay in the sum because each $V_k$ is a subspace. So the sum is a subspace by [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
@@ -102,6 +99,9 @@ tags: [linear-algebra]
 > It contains each $V_k$ (take all other summands $0$). Any subspace containing every $V_k$ is closed under finite sums, so it contains $V_1+\dots+V_m$.
 
 *Uses:* [[§3 Subspaces#^ladr-1-34|1.34]]
+
+> [!remark] Remark: Analogy
+> Sums of subspaces play the role of unions of sets: the union of two subspaces is usually not a subspace, and the sum is the smallest subspace containing both.
 
 > [!remark]- Connections
 > - Same shape of result: [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]] for spans.
@@ -172,15 +172,15 @@ tags: [linear-algebra]
 
 ^ladr-1-46
 
-> [!remark] Remark: Only for two subspaces
-> Pairwise trivial intersections do not make a sum of three subspaces direct. In $\R^2$ take the lines spanned by $(1,0)$, $(0,1)$, $(1,1)$: all pairwise intersections are $\{0\}$, yet $(1,0)+(0,1)+(-1,-1)=0$.
-
 > [!proof]+ Proof
 > ($\Rightarrow$) If $v\in U\cap W$, then $0=v+(-v)$ with $v\in U$, $-v\in W$. Uniqueness of the representation of $0$ gives $v=0$.
 >
 > ($\Leftarrow$) By [[Condition for a direct sum]] it suffices to show: $0=u+w$ with $u\in U$, $w\in W$ forces $u=w=0$. From $u=-w\in W$ we get $u\in U\cap W=\{0\}$, so $u=0$ and then $w=0$.
 
 *Uses:* [[Condition for a direct sum|1.45]]
+
+> [!remark] Remark: Only for two subspaces
+> Pairwise trivial intersections do not make a sum of three subspaces direct. In $\R^2$ take the lines spanned by $(1,0)$, $(0,1)$, $(1,1)$: all pairwise intersections are $\{0\}$, yet $(1,0)+(0,1)+(-1,-1)=0$.
 
 > [!remark]- Connections
 > - Used to build complements in [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]]. Dimension version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]].

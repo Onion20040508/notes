@@ -327,7 +327,7 @@ Many countries that formerly experienced exponential growth now find their rates
 
 ## Other Models for Population Growth
 
-> [!definition] Definition §60.3: Logistic Models with Harvesting and with a Minimum Population
+> [!definition] Definition §60.3: Logistic Model with Harvesting
 > Two modifications of the logistic equation (4), with constants $k, M > 0$:
 > - **Harvesting.** For a population harvested at a constant rate $c > 0$ (think of a population of fish caught at a constant rate),
 >
@@ -335,6 +335,12 @@ Many countries that formerly experienced exponential growth now find their rates
 >   \frac{dP}{dt} = kP\Big(1 - \frac{P}{M}\Big) - c .
 >   $$
 >
+> *Stewart: 9.4 (text)*
+
+^def-60-3
+
+> [!definition] Definition §60.4: Logistic Model with a Minimum Population
+> The second modification of the logistic equation (4), with constants $k, M > 0$:
 > - **Minimum population.** For a species that tends to become extinct below a minimum population level $m$ (adults may not be able to find suitable mates),
 >
 >   $$
@@ -345,6 +351,6 @@ Many countries that formerly experienced exponential growth now find their rates
 >
 > *Stewart: 9.4 (text)*
 
-^def-60-3
+^def-60-new1
 
 Stewart treats these two equations in Exercises 19–21, and two further models in the exercises: the Gompertz growth function (Exercise 22) and seasonal-growth models (Exercises 23 and 24).

@@ -181,7 +181,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 > \begin{pmatrix} g_x & g_y \end{pmatrix} = \begin{pmatrix} f_\xi & f_\eta \end{pmatrix} \begin{pmatrix} \varphi_x & \varphi_y \\ \psi_x & \psi_y \end{pmatrix}.
 > $$
 >
-> That is: $Dg = Df \cdot D(\varphi, \psi)$ — the [[§6 Differentiability#^def-6-2|Jacobians]] multiply!
+> That is: $Dg = Df \cdot D(\varphi, \psi)$ — the [[§6 Differentiability#^def-6-new1|Jacobians]] multiply!
 
 ^rem-10-2
 

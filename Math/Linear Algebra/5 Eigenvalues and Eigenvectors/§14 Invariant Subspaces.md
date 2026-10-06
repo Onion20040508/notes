@@ -77,13 +77,13 @@ tags: [linear-algebra]
 
 ^ladr-5-7
 
-> [!remark] Remark: Infinite dimensions
-> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) can contain points that are not eigenvalues (continuous spectrum).
-
 > [!proof]+ Proof
 > (a)$\iff$(b): $Tv=\lambda v\iff(T-\lambda I)v=0$, so a nonzero eigenvector is a nonzero element of $\nullsp(T-\lambda I)$ ([[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]). (b)$\iff$(c)$\iff$(d) by [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
 
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
+
+> [!remark] Remark: Infinite dimensions
+> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) can contain points that are not eigenvalues (continuous spectrum).
 
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-32|T not invertible ⟺ constant term of minimal polynomial of T is 0]]. Determinant version: $\det(T-\lambda I)=0$ ([[Invertible ⟺ nonzero determinant]]).
@@ -190,15 +190,15 @@ tags: [linear-algebra]
 
 ^ladr-5-17
 
-> [!remark] Remark: Informally
-> Expanding a product by distributivity does not care whether the symbol is $z$ or $T$: all powers of one operator commute.
-
 > [!proof]+ Proof
 > (a) With $p(z)=\sum_ja_jz^j$ and $q(z)=\sum_kb_kz^k$, $(pq)(z)=\sum_{j,k}a_jb_kz^{j+k}$, so
 > $$
 > (pq)(T)=\sum_{j,k}a_jb_kT^{j+k}=\Big(\sum_ja_jT^j\Big)\Big(\sum_kb_kT^k\Big)=p(T)q(T).
 > $$
 > (b) $p(T)q(T)=(pq)(T)=(qp)(T)=q(T)p(T)$ by (a) twice.
+
+> [!remark] Remark: Informally
+> Expanding a product by distributivity does not care whether the symbol is $z$ or $T$: all powers of one operator commute.
 
 > [!remark]- Connections
 > - Used constantly: [[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]], [[Existence of eigenvalues]], [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]].

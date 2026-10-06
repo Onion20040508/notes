@@ -347,7 +347,7 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 
 ## Partial Differential Equations
 
-> [!definition] Definition §92.5: Laplace's Equation and the Wave Equation
+> [!definition] Definition §92.5: Laplace's Equation
 > The partial differential equation
 >
 > $$
@@ -360,19 +360,29 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 > \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} = 0 . \qquad (5)
 > $$
 >
-> The **wave equation** is
->
-> $$
-> \frac{\partial^2 u}{\partial t^2} = a^2 \frac{\partial^2 u}{\partial x^2} ,
-> $$
->
-> where $a$ is a constant. For instance, $u(x, y) = e^x \sin y$ is harmonic: $u_{xx} = e^x \sin y$ and $u_{yy} = -e^x \sin y$, so $u_{xx} + u_{yy} = 0$. And $u(x, t) = \sin(x - at)$ satisfies the wave equation: $u_{xx} = -\sin(x - at)$ and $u_{tt} = -a^2 \sin(x - at) = a^2 u_{xx}$.
+> For instance, $u(x, y) = e^x \sin y$ is harmonic: $u_{xx} = e^x \sin y$ and $u_{yy} = -e^x \sin y$, so $u_{xx} + u_{yy} = 0$.
 >
 > *Stewart: 14.3, Equation 5, text and Examples 14.3.9, 14.3.10*
 
 ^def-92-5
 
 > [!remark]- Connections
-> - PDE version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (Laplace's equation and harmonic functions, solved in rectangles and disks), [[§29 The Vibrating String#^def-29-2|341 Def. §29.2]] (the wave equation of a vibrating string) and [[§31 d'Alembert's Solution#^thm-31-2|341 Thm. §31.2]] (every solution of the wave equation has the form $\psi(x + ct) + \phi(x - ct)$, like $\sin(x - at)$ here).
+> - PDE version: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] (Laplace's equation and harmonic functions, solved in rectangles and disks).
+
+> [!definition] Definition §92.6: The Wave Equation
+> The **wave equation** is
+>
+> $$
+> \frac{\partial^2 u}{\partial t^2} = a^2 \frac{\partial^2 u}{\partial x^2} ,
+> $$
+>
+> where $a$ is a constant. And $u(x, t) = \sin(x - at)$ satisfies the wave equation: $u_{xx} = -\sin(x - at)$ and $u_{tt} = -a^2 \sin(x - at) = a^2 u_{xx}$.
+>
+> *Stewart: 14.3, Equation 5, text and Examples 14.3.9, 14.3.10*
+
+^def-92-new1
+
+> [!remark]- Connections
+> - PDE version: [[§29 The Vibrating String#^def-29-2|341 Def. §29.2]] (the wave equation of a vibrating string) and [[§31 d'Alembert's Solution#^thm-31-2|341 Thm. §31.2]] (every solution of the wave equation has the form $\psi(x + ct) + \phi(x - ct)$, like $\sin(x - at)$ here).
 
 Harmonic functions describe heat conduction, fluid flow and electric potential; the three-dimensional equation (5) governs, for instance, the strength $u(x, y, z)$ of a magnetic field in geophysics. In the wave equation, $u(x, t)$ is the displacement at time $t$ and at distance $x$ from one end of a vibrating violin string, and $a$ depends on the density and the tension of the string.

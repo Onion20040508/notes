@@ -139,9 +139,6 @@ tags: [linear-algebra]
 
 ^ladr-3-21
 
-> [!remark] Remark: Hypotheses
-> Only $V$ is assumed finite-dimensional; $W$ may be infinite-dimensional. That is why "$\range T$ is finite-dimensional" is part of the conclusion rather than automatic.
-
 > [!proof]+ Proof
 > *(First step filled in: Axler takes the finite-dimensionality of $\nullsp T$ for granted; the rest follows Axler's proof.)* $\nullsp T$ is a subspace of the finite-dimensional space $V$, hence finite-dimensional by [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]]. Let $u_1, \dots, u_m$ be a basis of $\nullsp T$, so $\dim \nullsp T = m$.
 >
@@ -162,6 +159,9 @@ tags: [linear-algebra]
 > Therefore $\dim \range T = n$, and $\dim V = m + n = \dim \nullsp T + \dim \range T$.
 
 *Uses:* [[§4 Span and Linear Independence#^ladr-2-25|2.25]], [[Every linearly independent list extends to a basis|2.32]]
+
+> [!remark] Remark: Hypotheses
+> Only $V$ is assumed finite-dimensional; $W$ may be infinite-dimensional. That is why "$\range T$ is finite-dimensional" is part of the conclusion rather than automatic.
 
 %% ex:3.21-fig %%
 

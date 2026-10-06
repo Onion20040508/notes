@@ -202,15 +202,15 @@ tags: [linear-algebra]
 
 ^ladr-2-19
 
-> [!remark] Remark: The case $k=1$
-> $v_1\in\Span(\,)=\{0\}$ means $v_1=0$; the proof still works with empty sums.
-
 > [!proof]+ Proof
 > Pick $a_1,\dots,a_m$, not all $0$, with $a_1v_1+\dots+a_mv_m=0$, and let $k$ be the **largest** index with $a_k\neq0$. Then
 > $$
 > v_k=-\frac{a_1}{a_k}v_1-\dots-\frac{a_{k-1}}{a_k}v_{k-1}\in\Span(v_1,\dots,v_{k-1}).
 > $$
 > For the second part, let $k$ be any index with $v_k=b_1v_1+\dots+b_{k-1}v_{k-1}$. In any $u=c_1v_1+\dots+c_mv_m$, substitute this expression for $v_k$; the result is a linear combination of the list without $v_k$. So removing $v_k$ keeps the span.
+
+> [!remark] Remark: The case $k=1$
+> $v_1\in\Span(\,)=\{0\}$ means $v_1=0$; the proof still works with empty sums.
 
 > [!remark]- Connections
 > - Computational version: [[§7 Linear Independence#^thm-7-4|235 Thm. §7.4]] in ℝⁿ and [[§25 Linearly Independent Sets; Bases#^thm-25-1|235 Thm. §25.1]] in a vector space (if v₁ ≠ 0, some v_j is a combination of v₁, …, v_{j−1}); removing such a vector keeps the span, [[§7 Linear Independence#^prop-7-5|235 Prop. §7.5]].

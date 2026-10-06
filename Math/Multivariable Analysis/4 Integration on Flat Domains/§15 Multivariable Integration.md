@@ -121,7 +121,7 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 *Inner and outer approximations of an ellipse $D$ with semi-axes $1.75$ and $1.3$. Blue squares lie inside $D$. Red and blue squares together are the squares that meet $D$. With side $1$ ($i = 0$) this gives $A_0^-(D) = 2$ and $A_0^+(D) = 12$. Halving the side ($i = 1$) gives $A_1^-(D) = 5$ and $A_1^+(D) = 11$, a tighter bracket around the true area $\pi \cdot 1.75 \cdot 1.3 \approx 7.15$. The gap $A_i^+ - A_i^-$ is exactly the red squares, and every red square straddles $\partial D$. So the two limits agree precisely when the boundary squares have total area $\to 0$ (the Remark below).*
 
 > [!remark] Remark
-> The difference $A_i^+(D) - A_i^-(D)$ counts squares that straddle the boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-3|Def. §2.3]]). As $i \to \infty$, these boundary squares have total area $\to 0$ if and only if $\partial D$ has “measure zero.”
+> The difference $A_i^+(D) - A_i^-(D)$ counts squares that straddle the boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-new2|Def. §2.3]]). As $i \to \infty$, these boundary squares have total area $\to 0$ if and only if $\partial D$ has “measure zero.”
 >
 > A set $D$ is Jordan measurable $\iff$ its boundary $\partial D$ has Jordan content zero ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]]).
 
@@ -930,7 +930,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 >
 > Let $D = \{(x, y) : a \leq x \leq b, \; \psi(x) \leq y \leq \varphi(x)\}$ where $\psi, \varphi: [a,b] \to \mathbb{R}$ are continuous with $\psi(x) \leq \varphi(x)$ for all $x \in [a, b]$.
 >
-> *Claim: $D$ is closed* ([[§2 Open and Closed Sets#^def-2-4|Def. §2.4]]).
+> *Claim: $D$ is closed* ([[§2 Open and Closed Sets#^def-2-new3|Def. §2.4]]).
 >
 > Suppose $(x_k, y_k) \in D$ and $(x_k, y_k) \to (x_0, y_0)$ ([[§1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]]). Then $x_k \to x_0$ and $y_k \to y_0$. Since $(x_k, y_k) \in D$:
 >
@@ -1128,7 +1128,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ^pf-15-9
 
-*Uses:* [[§2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[§1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[§15 Multivariable Integration#^thm-15-5|§15.5]], [[§15 Multivariable Integration#^cor-15-6|§15.6]], [[Fubini's Theorem|§15.8]], [[Heine–Borel Theorem|590 §15.12]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[§19 Uniform Continuity#^thm-19-1|451 §19.1]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
+*Uses:* [[§2 Open and Closed Sets#^def-2-new3|Def. §2.4]], [[§1 Sequences and Limits in ℝⁿ#^def-1-1|Def. §1.1]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[§15 Multivariable Integration#^thm-15-5|§15.5]], [[§15 Multivariable Integration#^cor-15-6|§15.6]], [[Fubini's Theorem|§15.8]], [[Heine–Borel Theorem|590 §15.12]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[§19 Uniform Continuity#^thm-19-1|451 §19.1]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 §33.5]]
 
 ![[m452-15-8.svg]]
 *Steps 3–5 of the proof. On a grid of side $1/2^k$, each column is stretched to whole squares: from $\psi_k$ (the grid line just below $\inf \psi$ on the column) up to $\varphi_k$ (the grid line just above $\sup \varphi$), and from $a_k$ to $b_k$ horizontally. The resulting staircase $D_k$ (red outline) contains $D$ (blue). Fubini holds exactly on $D_k$, since each column is a rectangle. The error region $D_k \setminus D$ (red) is a thin skin along $\partial D$. By uniform continuity of $\varphi$ and $\psi$, its height in each column is $< 2\varepsilon$, so its total area is $O(\varepsilon)$.*
@@ -1299,7 +1299,7 @@ The factor $|J|$ exactly cancels the area distortion, ensuring both sides comput
 > - Lebesgue null sets allow countably many rectangles ([[§9 Lebesgue Outer Measure#^def-9-4|551 Def. §9.4]]), so every countable set is null ([[§9 Lebesgue Outer Measure#^ex-9-2|551 Ex. §9.2]]); the graph of any measurable function is null by [[§17 Invariance Properties and Fubini's Theorem#^cor-17-10|551 Cor. §17.10]].
 
 > [!definition] Definition §15.14: Jordan Measurable Set
-> A bounded set $D \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-3|Def. §2.3]]) has Jordan measure zero.
+> A bounded set $D \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D$ ([[§2 Open and Closed Sets#^def-2-new2|Def. §2.3]]) has Jordan measure zero.
 
 ^def-15-14
 

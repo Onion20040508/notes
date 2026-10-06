@@ -128,7 +128,7 @@ tags: [topology, math590]
 >
 > This is the precise version of “rubber sheet geometry”: you can stretch, bend, and deform a space continuously (with a continuous inverse), and topology cannot tell the difference. A coffee mug and a doughnut are homeomorphic; a circle and a line segment are not (removing one point from a circle leaves it connected; removing an interior point from a segment does not).
 >
-> The central question of topology is: *when are two spaces homeomorphic?* This motivates topological invariants—[[§15 Compact Spaces#^def-15-2|compactness]], [[§13 Connected Spaces#^def-13-1|connectedness]], [[§23 The Fundamental Group#^def-23-2|fundamental groups]]—properties preserved under homeomorphism that can distinguish non-homeomorphic spaces.
+> The central question of topology is: *when are two spaces homeomorphic?* This motivates topological invariants—[[§15 Compact Spaces#^def-15-2|compactness]], [[§13 Connected Spaces#^def-13-new1|connectedness]], [[§23 The Fundamental Group#^def-23-2|fundamental groups]]—properties preserved under homeomorphism that can distinguish non-homeomorphic spaces.
 
 ^rem-9-2
 

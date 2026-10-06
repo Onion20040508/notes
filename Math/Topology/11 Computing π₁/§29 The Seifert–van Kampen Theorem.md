@@ -16,7 +16,7 @@ tags: [topology, math590]
 ## Statement
 
 > [!theorem] Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)
-> Let $X = A \cup B$, where $A$ and $B$ are open in $X$ and [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]]. Suppose $A \cap B$ is path-connected. Fix $p \in A \cap B$. Let
+> Let $X = A \cup B$, where $A$ and $B$ are open in $X$ and [[§14 Connected Subspaces of ℝ#^def-14-new1|path-connected]]. Suppose $A \cap B$ is path-connected. Fix $p \in A \cap B$. Let
 >
 > $$
 > G = \pi_1(A, p), \qquad H = \pi_1(B, p), \qquad K = \pi_1(A \cap B, p),
@@ -38,7 +38,7 @@ tags: [topology, math590]
 *The setup of van Kampen: $X = A \cup B$ with $A$ (blue) and $B$ (red) open (dashed boundaries) and path-connected, overlapping in the path-connected set $A \cap B$ (purple), which contains the basepoint $p$. The white disks are holes in $X$. A loop $k$ in $A \cap B$ (green) is one element of $K$ but gives two elements, $i_1(k) \in G$ and $i_2(k) \in H$; quotienting by $N$ makes them equal.*
 
 > [!remark]- Connections
-> - In presentation language: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-15|Connection to Van Kampen]]; quotient groups: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
+> - In presentation language: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-15|Connection to Van Kampen]]; quotient groups: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group]].
 > - Its surjectivity half is the [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]] theorem.
 
 > [!proof]+ Proof Sketch (From Lecture)

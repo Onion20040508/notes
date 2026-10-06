@@ -34,14 +34,19 @@ We cannot add infinitely many numbers one by one, but we can add the first $n$ o
 
 Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \cdots + n + \cdots$ grow without bound. Others do: in Zeno's series $\frac12 + \frac14 + \frac18 + \cdots$ the sum of the first $n$ terms is $\frac{2^n - 1}{2^n} = 1 - \frac{1}{2^n}$, which can be made as close to $1$ as we like. The same idea defines the sum of any series.
 
-> [!definition] Definition §70.2: Partial Sums; Convergent Series; Sum
+> [!definition] Definition §70.2: Partial Sums
 > Given a series $\sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \cdots$, its **$n$th partial sum** is
 >
 > $$
 > s_n = \sum_{i=1}^{n} a_i = a_1 + a_2 + \cdots + a_n .
 > $$
 >
-> If the sequence $\{s_n\}$ is convergent and $\lim_{n \to \infty} s_n = s$ exists as a real number, then the series $\sum a_n$ is **convergent**, and we write
+> *Stewart: 11.2, Definition 2*
+
+^def-70-2
+
+> [!definition] Definition §70.3: Convergent Series and Its Sum
+> Let $s_n$ be the $n$th partial sum of a series $\sum_{n=1}^{\infty} a_n$. If the sequence $\{s_n\}$ is convergent and $\lim_{n \to \infty} s_n = s$ exists as a real number, then the series $\sum a_n$ is **convergent**, and we write
 >
 > $$
 > a_1 + a_2 + \cdots + a_n + \cdots = s \qquad\text{or}\qquad \sum_{n=1}^{\infty} a_n = s .
@@ -55,7 +60,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 >
 > *Stewart: 11.2, Definition 2*
 
-^def-70-2
+^def-70-new1
 
 > [!remark] Remark: Two Sequences, and the Analogy with Improper Integrals
 > With every series $\sum a_n$ come two sequences: the sequence $\{a_n\}$ of its *terms* and the sequence $\{s_n\}$ of its *partial sums*. Convergence of the series is about $\{s_n\}$. Compare the improper integral $\int_1^{\infty} f(x)\,dx = \lim_{t \to \infty} \int_1^t f(x)\,dx$ ([[§51 Improper Integrals#^def-51-1|Definition §51.1]]): there we integrate from $1$ to $t$ and let $t \to \infty$; for a series we sum from $1$ to $n$ and let $n \to \infty$.

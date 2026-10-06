@@ -271,14 +271,19 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ## Projections
 
-> [!definition] Definition §82.5: Vector and Scalar Projections
+> [!definition] Definition §82.5: Vector Projection
 > Let $\mathbf{a} = \overrightarrow{PQ}$ and $\mathbf{b} = \overrightarrow{PR}$ have the same initial point $P$, and let $S$ be the foot of the perpendicular from $R$ to the line containing $\overrightarrow{PQ}$. The vector with representation $\overrightarrow{PS}$ is the **vector projection of $\mathbf{b}$ onto $\mathbf{a}$**, written $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ (think of it as the shadow of $\mathbf{b}$).
->
-> The **scalar projection of $\mathbf{b}$ onto $\mathbf{a}$** (also called the **component of $\mathbf{b}$ along $\mathbf{a}$**), written $\operatorname{comp}_{\mathbf{a}}\mathbf{b}$, is the signed magnitude of the vector projection: the number $|\mathbf{b}|\cos\theta$, where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$. It is negative when $\pi/2 < \theta \le \pi$.
 >
 > *Stewart: 12.3 (text)*
 
 ^def-82-5
+
+> [!definition] Definition §82.6: Scalar Projection
+> The **scalar projection of $\mathbf{b}$ onto $\mathbf{a}$** (also called the **component of $\mathbf{b}$ along $\mathbf{a}$**), written $\operatorname{comp}_{\mathbf{a}}\mathbf{b}$, is the signed magnitude of the vector projection: the number $|\mathbf{b}|\cos\theta$, where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$. It is negative when $\pi/2 < \theta \le \pi$.
+>
+> *Stewart: 12.3 (text)*
+
+^def-82-new1
 
 ![[m233-82-1.svg]]
 *The vector projection $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ (red) is the shadow of $\mathbf{b}$ on the line of $\mathbf{a}$: drop the perpendicular from the tip $R$ of $\mathbf{b}$ to that line. Its signed length is $|\mathbf{b}|\cos\theta = \operatorname{comp}_{\mathbf{a}}\mathbf{b}$. (a) For an acute angle the shadow points along $\mathbf{a}$. (b) For an obtuse angle it points against $\mathbf{a}$, and the scalar projection is negative.*

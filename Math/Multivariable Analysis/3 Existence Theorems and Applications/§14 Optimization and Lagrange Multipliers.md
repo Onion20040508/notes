@@ -9,12 +9,15 @@ tags: [multivariable-analysis, math452]
 
 ## Unconstrained Optimization
 
-> [!definition] Definition §14.1: Local Maximum/Minimum
+> [!definition] Definition §14.1: Local Maximum
 > A function $f(x, y)$ has a **local maximum** at $(x_0, y_0)$ if there exists $\delta > 0$ such that $f(x, y) \leq f(x_0, y_0)$ for all $(x, y)$ with $\|(x, y) - (x_0, y_0)\| < \delta$.
->
-> Similarly for **local minimum** with $f(x, y) \geq f(x_0, y_0)$.
 
 ^def-14-1
+
+> [!definition] Definition §14.1: Local Minimum
+> Similarly for **local minimum** with $f(x, y) \geq f(x_0, y_0)$.
+
+^def-14-new1
 
 > [!theorem] Theorem §14.1: Necessary Condition for Extremum — Fermat's Theorem in $\mathbb{R}^n$
 > If $f$ has a local max/min at $(x_0, y_0)$ and the partials $f_x, f_y$ exist there (e.g., $f$ is differentiable there), then
@@ -480,11 +483,9 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 
 ^rem-14-8
 
-> [!definition] Definition §14.3: Positive/Negative Definite
+> [!definition] Definition §14.3: Positive Definite
 > A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
 > - **Positive definite** if $\mathbf{x}^T A \mathbf{x} > 0$ for all $\mathbf{x} \neq \mathbf{0}$.
-> - **Negative definite** if $\mathbf{x}^T A \mathbf{x} < 0$ for all $\mathbf{x} \neq \mathbf{0}$.
-> - **Indefinite** if $\mathbf{x}^T A \mathbf{x}$ takes both positive and negative values.
 >
 > Explicitly, for $\mathbf{x} = (h, k)^T$:
 >
@@ -493,6 +494,18 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > $$
 
 ^def-14-3
+
+> [!definition] Definition §14.3: Negative Definite
+> A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
+> - **Negative definite** if $\mathbf{x}^T A \mathbf{x} < 0$ for all $\mathbf{x} \neq \mathbf{0}$.
+
+^def-14-new2
+
+> [!definition] Definition §14.3: Indefinite
+> A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
+> - **Indefinite** if $\mathbf{x}^T A \mathbf{x}$ takes both positive and negative values.
+
+^def-14-new3
 
 > [!remark]- Connections
 > - $\mathbf{x}^T A \mathbf{x}$ is the quadratic form of $A$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR 9.18]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-20|LADR 9.20]]); positive definite is the strict version of a positive operator ([[§24 Positive Operators#^ladr-7-34|LADR 7.34]]).
@@ -541,7 +554,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 
 ^pf-14-4
 
-*Uses:* [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Taylor's Theorem|§9.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[§14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[§14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]], [[Real spectral theorem|LADR 7.29]]
+*Uses:* [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]], [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1|§9.1]], [[Multivariable Taylor's Theorem|§9.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[§14 Optimization and Lagrange Multipliers#^def-14-3|Def. §14.3]], [[§14 Optimization and Lagrange Multipliers#^def-14-new2|Def. §14.3]], [[§14 Optimization and Lagrange Multipliers#^def-14-new3|Def. §14.3]], [[§14 Optimization and Lagrange Multipliers#^def-14-1|Def. §14.1]], [[§14 Optimization and Lagrange Multipliers#^def-14-new1|Def. §14.1]], [[Real spectral theorem|LADR 7.29]]
 
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable Taylor expansion with Lagrange remainder ([[§31 Taylor's Theorem#^thm-31-2|451 §31.2]]) is the whole engine; in 1D the Hessian is just $f''(x_0)$.

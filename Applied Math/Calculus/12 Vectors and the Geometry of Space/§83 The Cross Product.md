@@ -348,12 +348,26 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 ## Triple Products
 
-> [!definition] Definition §83.3: Scalar and Vector Triple Products
-> The product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ of Property 5 is the **scalar triple product** of $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$. The product $\mathbf{a} \times (\mathbf{b} \times \mathbf{c})$ of Property 6 is the **vector triple product**. Vectors that lie in the same plane (when represented with a common initial point) are **coplanar**.
+> [!definition] Definition §83.3: Scalar Triple Product
+> The product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ of Property 5 is the **scalar triple product** of $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$.
 >
 > *Stewart: 12.4 (text)*
 
 ^def-83-3
+
+> [!definition] Definition §83.4: Vector Triple Product
+> The product $\mathbf{a} \times (\mathbf{b} \times \mathbf{c})$ of Property 6 is the **vector triple product**.
+>
+> *Stewart: 12.4 (text)*
+
+^def-83-new1
+
+> [!definition] Definition §83.5: Coplanar Vectors
+> Vectors that lie in the same plane (when represented with a common initial point) are **coplanar**.
+>
+> *Stewart: 12.4 (text)*
+
+^def-83-new2
 
 > [!theorem] Theorem §83.9: The Scalar Triple Product as a Determinant
 > $$

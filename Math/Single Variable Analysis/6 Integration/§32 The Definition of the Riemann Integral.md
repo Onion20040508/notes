@@ -11,20 +11,28 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ## Darboux Sums and the Darboux Integral
 
-> [!definition] Definition §32.1: Sup and Inf over a Set; Partitions; Upper and Lower Sums
+> [!definition] Definition §32.1: Sup and Inf over a Set
 > Suppose $f$ is *bounded* on $[a,b]$. For any subset $S \subseteq [a,b]$, define
 >
 > $$
 > M(f, S) = \sup\{ f(x) \mid x \in S \}, \qquad m(f, S) = \inf\{ f(x) \mid x \in S \}
 > $$
 >
-> (finite, by boundedness; max and min values may not exist, which is why we use $\sup$ and $\inf$). A **partition** of $[a,b]$ is a division into $n$ subintervals,
+> (finite, by boundedness; max and min values may not exist, which is why we use $\sup$ and $\inf$).
+
+^def-32-1
+
+> [!definition] Definition §32.1: Partition
+> A **partition** of $[a,b]$ is a division into $n$ subintervals,
 >
 > $$
 > P: \quad a = t_0 < t_1 < \cdots < t_n = b.
 > $$
->
-> For each partition define the **upper sum** and **lower sum**
+
+^def-32-new1
+
+> [!definition] Definition §32.1: Upper and Lower Sums
+> Suppose $f$ is *bounded* on $[a,b]$. For each partition define the **upper sum** and **lower sum**
 >
 > $$
 > U(f, P) = \sum_{k=1}^n M\bigl(f, [t_{k-1}, t_k]\bigr)\,(t_k - t_{k-1}), \qquad
@@ -33,22 +41,25 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 >
 > — geometrically, sums of areas of rectangles circumscribing and inscribed in the region under the graph. If the integral exists (whatever it is), it should clearly satisfy $L(f,P) \leq \int_a^b f \leq U(f,P)$.
 
-^def-32-1
+^def-32-new2
 
 > [!remark]- Connections
 > - Two-dimensional version, partitioning a Jordan measurable region into pieces of area |Dᵢ|: [[§15 Multivariable Integration#^def-15-7|452 Def. §15.7]] and [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
 
-> [!definition] Definition §32.2: Darboux Integrals
+> [!definition] Definition §32.2: Darboux Upper and Lower Integrals
 > The **Darboux upper integral** and **lower integral** are
 >
 > $$
 > U(f) = \inf\{ U(f,P) \mid P \text{ a partition of } [a,b] \}, \quad
 > L(f) = \sup\{ L(f,P) \mid P \text{ a partition of } [a,b] \}.
 > $$
->
-> $f$ is called **Darboux integrable** if $L(f) = U(f)$, and then $\int_a^b f\,dx$ is defined to be this common value.
 
 ^def-32-2
+
+> [!definition] Definition §32.2: Darboux Integrability
+> With the Darboux upper and lower integrals $U(f)$ and $L(f)$: $f$ is called **Darboux integrable** if $L(f) = U(f)$, and then $\int_a^b f\,dx$ is defined to be this common value.
+
+^def-32-new3
 
 ![[m451-32-1.svg]]
 *Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted (unlabeled ticks): the gap boxes of the refinement (blue) sit inside the gap boxes of $P$ (red outline), so $U - L$ shrinks subinterval by subinterval — the Refinement Lemma in one picture.*
@@ -116,12 +127,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ## Lower Is at Most Upper
 
-> [!theorem] Theorem §32.1: Lower Integral at Most Upper Integral
-> For every bounded $f: [a,b] \to \mathbb{R}$:    $L(f) \leq U(f)$.
-
-^thm-32-1
-
-Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *different* competitions. The proof goes through two lemmas.
+We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definition of the Riemann Integral#^thm-32-1|Theorem §32.1]] below). Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *different* competitions. The proof goes through two lemmas.
 
 > [!theorem] Lemma §32.2: Refinement Lemma
 > Let $P, Q$ be partitions of $[a,b]$ with $Q$ a **refinement** of $P$ (every cut point of $P$ is a cut point of $Q$). Then
@@ -171,7 +177,12 @@ Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *differe
 
 *Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
 
-> [!proof]+ Proof of Theorem §32.1
+> [!theorem] Theorem §32.1: Lower Integral at Most Upper Integral
+> For every bounded $f: [a,b] \to \mathbb{R}$:    $L(f) \leq U(f)$.
+
+^thm-32-1
+
+> [!proof]+ Proof
 > Fix any partition $Q$. By the Cross Lemma, $U(f,Q)$ is an upper bound for *all* the lower sums, so
 >
 > $$
@@ -270,14 +281,30 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 
 ## Riemann Sums and the Riemann Integral
 
-> [!definition] Definition §32.3: Mesh; Riemann Sums; Riemann Integrability
-> For a partition $P$, define its **mesh** by $\operatorname{mesh}(P) = \max\{ t_k - t_{k-1} \}$ (for the equal partition into $n$ pieces, $\operatorname{mesh} = \tfrac{b-a}{n}$). For bounded $f$, a **Riemann sum** associated with $P$ is
+> [!definition] Definition §32.3: Mesh
+> For a partition $P$, define its **mesh** by $\operatorname{mesh}(P) = \max\{ t_k - t_{k-1} \}$ (for the equal partition into $n$ pieces, $\operatorname{mesh} = \tfrac{b-a}{n}$).
+
+^def-32-3
+
+> [!remark]- Connections
+> - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
+
+> [!definition] Definition §32.3: Riemann Sum
+> For a partition $P$ and bounded $f$, a **Riemann sum** associated with $P$ is
 >
 > $$
 > S = \sum_{k=1}^n f(x_k)\,(t_k - t_{k-1}), \qquad x_k \in [t_{k-1}, t_k] \text{ arbitrary}
 > $$
 >
-> — compare with $U(f,P)$ and $L(f,P)$, which bracket every such $S$. $f$ is called **Riemann integrable** if there exists a value $r$ such that: for every $\varepsilon > 0$ there is $\delta > 0$ such that for every partition $P$ with $\operatorname{mesh}(P) < \delta$ and every Riemann sum $S$ associated with $P$,
+> — compare with $U(f,P)$ and $L(f,P)$, which bracket every such $S$.
+
+^def-32-new4
+
+![[m451-32-2.svg]]
+*A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
+
+> [!definition] Definition §32.3: Riemann Integrability
+> For bounded $f$: $f$ is called **Riemann integrable** if there exists a value $r$ such that: for every $\varepsilon > 0$ there is $\delta > 0$ such that for every partition $P$ with $\operatorname{mesh}(P) < \delta$ and every Riemann sum $S$ associated with $P$,
 >
 > $$
 > |S - r| < \varepsilon.
@@ -285,13 +312,9 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 >
 > The value $r$ is the **Riemann integral** of $f$.
 
-^def-32-3
-
-![[m451-32-2.svg]]
-*A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
+^def-32-new5
 
 > [!remark]- Connections
-> - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
 > - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 > - Computational version: Stewart's definite integral, [[§35 The Definite Integral#^def-35-1|Calc Def. §35.1]]; endpoint approximations, [[§50 Approximate Integration#^def-50-1|Calc Def. §50.1]] (with worked examples).
 

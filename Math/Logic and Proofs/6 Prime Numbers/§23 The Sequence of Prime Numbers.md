@@ -15,14 +15,23 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ## 23.1 Definition and Basic Properties
 
-> [!definition] Definition §23.1: Prime and Composite
-> A positive integer $n$ is **prime** if $n > 1$ and the only positive divisors of $n$ are $1$ and $n$. An integer $n > 1$ that is not prime is **composite**.
+> [!definition] Definition §23.1: Prime
+> A positive integer $n$ is **prime** if $n > 1$ and the only positive divisors of $n$ are $1$ and $n$.
 >
-> Thus $n > 1$ is composite if and only if $n = ab$ for integers $a, b$ with $1 < a < n$ and $1 < b < n$ (a positive divisor $a \ne 1, n$ gives $b = n/a$, which also lies strictly between $1$ and $n$). If a prime $p = ab$ with $a, b$ positive, then $\{a, b\} = \{1, p\}$. The positive integers split into three disjoint sets: the primes $2, 3, 5, 7, 11, 13, \ldots$, the composites $4, 6, 8, 9, 10, \ldots$, and the single **unit** $1$.
+> If a prime $p = ab$ with $a, b$ positive, then $\{a, b\} = \{1, p\}$.
 >
 > *Eccles: Definition 23.1.1*
 
 ^def-23-1
+
+> [!definition] Definition §23.1: Composite
+> An integer $n > 1$ that is not prime is **composite**.
+>
+> Thus $n > 1$ is composite if and only if $n = ab$ for integers $a, b$ with $1 < a < n$ and $1 < b < n$ (a positive divisor $a \ne 1, n$ gives $b = n/a$, which also lies strictly between $1$ and $n$). The positive integers split into three disjoint sets: the primes $2, 3, 5, 7, 11, 13, \ldots$, the composites $4, 6, 8, 9, 10, \ldots$, and the single **unit** $1$.
+>
+> *Eccles: Definition 23.1.1*
+
+^def-23-new1
 
 > [!theorem] Proposition §23.1: Existence of Prime Factorizations
 > Every integer greater than $1$ can be written as a product of prime numbers. (A prime counts as a product of one prime; with the convention that the empty product is $1$, the statement extends to $n = 1$.)
@@ -36,13 +45,13 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 >
 > *Base case.* $2$ is prime, so it is a product of a single prime.
 >
-> *Inductive step.* Suppose, for some $k \ge 2$, that every $n$ with $2 \le n \le k$ is a product of primes. If $k + 1$ is prime, it is a product of one prime. Otherwise $k + 1$ is composite, so $k + 1 = ab$ with $2 \le a, b \le k$ ([[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]]). By the inductive hypothesis $a$ and $b$ are products of primes, and putting the two products side by side writes $k + 1$ as a product of primes.
+> *Inductive step.* Suppose, for some $k \ge 2$, that every $n$ with $2 \le n \le k$ is a product of primes. If $k + 1$ is prime, it is a product of one prime. Otherwise $k + 1$ is composite, so $k + 1 = ab$ with $2 \le a, b \le k$ ([[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]]). By the inductive hypothesis $a$ and $b$ are products of primes, and putting the two products side by side writes $k + 1$ as a product of primes.
 >
 > *Conclusion.* By strong induction, every $n \ge 2$ is a product of primes.
 
 ^pf-23-1
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)
 
 > [!theorem] Theorem §23.2: Euclid's Property of Primes
 > Let $p$ be a prime and $a, b$ positive integers. If $p \mid ab$, then $p \mid a$ or $p \mid b$.
@@ -97,7 +106,7 @@ To decide whether $n$ is prime one can try all smaller divisors; the next result
 
 ^pf-23-3
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]]
 
 > [!example] Example §23.1: The Primes up to 100
 > Write out $2, 3, \ldots, 100$. The first number, $2$, is prime; cross out its other multiples, which are composite. The first number not crossed out, $3$, is prime (it is not a multiple of a smaller prime); cross out its other multiples. Continue with $5$ and $7$. Since every composite $n \le 100$ has a prime factor $\le \sqrt{100} = 10$ ([[§23 The Sequence of Prime Numbers#^prop-23-3|Prop. §23.3]]), and the primes $\le 10$ are $2, 3, 5, 7$, every composite number has now been crossed out. What remains are the primes below $100$:

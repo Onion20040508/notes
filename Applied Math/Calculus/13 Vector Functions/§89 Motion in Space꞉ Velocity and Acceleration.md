@@ -15,14 +15,28 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ## Velocity, Speed, and Acceleration
 
-> [!definition] Definition §89.1: Velocity, Speed and Acceleration
+> [!definition] Definition §89.1: Velocity
 > Suppose a particle moves through space so that its position vector at time $t$ is $\mathbf{r}(t)$. For small $h$, the vector $\dfrac{\mathbf{r}(t + h) - \mathbf{r}(t)}{h}$ is its **average velocity** over a time interval of length $h$: it approximates the direction of motion, and its magnitude is the displacement per unit time. The **velocity vector** at time $t$ is the limit
 >
 > $$
 > \mathbf{v}(t) = \lim_{h \to 0} \frac{\mathbf{r}(t + h) - \mathbf{r}(t)}{h} = \mathbf{r}'(t) .
 > $$
 >
-> So the velocity is also the tangent vector and points along the tangent line. The **speed** at time $t$ is the magnitude $|\mathbf{v}(t)|$ of the velocity, and the **acceleration** is the derivative of the velocity:
+> So the velocity is also the tangent vector and points along the tangent line.
+>
+> *Stewart: 13.4, Equation 2 and text*
+
+^def-89-1
+
+> [!definition] Definition §89.2: Speed
+> The **speed** at time $t$ is the magnitude $|\mathbf{v}(t)|$ of the velocity.
+>
+> *Stewart: 13.4, Equation 2 and text*
+
+^def-89-new1
+
+> [!definition] Definition §89.3: Acceleration
+> The **acceleration** is the derivative of the velocity:
 >
 > $$
 > \mathbf{a}(t) = \mathbf{v}'(t) = \mathbf{r}''(t) .
@@ -30,7 +44,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 >
 > *Stewart: 13.4, Equation 2 and text*
 
-^def-89-1
+^def-89-new2
 
 > [!theorem] Proposition §89.1: Speed Is the Rate of Change of Distance
 > $$

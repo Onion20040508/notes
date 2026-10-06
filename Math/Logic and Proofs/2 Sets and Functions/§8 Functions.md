@@ -45,12 +45,19 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ![[m250-8-1.svg]]
 *The arrow picture of the function in [[§8 Functions#^ex-8-1|Example §8.1]]. The defining property of a function is on the left: one arrow leaves each element of the domain. On the right anything is allowed: $y_1$ receives two arrows, $y_2$ and $y_4$ none.*
 
-> [!definition] Definition §8.2: Constant Function; Identity Function
-> Given sets $X$, $Y$ and $y_0 \in Y$, the **constant function** $c_{y_0} : X \to Y$ is given by $c_{y_0}(x) = y_0$ for all $x \in X$. Given a set $X$, the **identity function** $I_X : X \to X$ is given by $I_X(x) = x$ for all $x \in X$.
+> [!definition] Definition §8.2: Constant Function
+> Given sets $X$, $Y$ and $y_0 \in Y$, the **constant function** $c_{y_0} : X \to Y$ is given by $c_{y_0}(x) = y_0$ for all $x \in X$.
 >
 > *Eccles: Examples 8.1.3, 8.1.4*
 
 ^def-8-2
+
+> [!definition] Definition §8.2: Identity Function
+> Given a set $X$, the **identity function** $I_X : X \to X$ is given by $I_X(x) = x$ for all $x \in X$.
+>
+> *Eccles: Examples 8.1.3, 8.1.4*
+
+^def-8-new1
 
 > [!example] Example §8.2: All Functions Between Small Sets
 > **(a)** For $X = \{a, b, c\}$ and $Y = \{d, e\}$ there are exactly eight functions $X \to Y$, one for each way of choosing a value in $\{d, e\}$ at each of $a, b, c$:
@@ -217,7 +224,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^pf-8-1
 
-*Uses:* [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-2|Def. §8.2]]
+*Uses:* [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-new1|Def. §8.2]]
 
 > [!remark]- Connections
 > - Composites of three functions computed from the inside out: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]], [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]] (c), (d).
@@ -362,7 +369,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ^pf-8-2
 
-*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]]
+*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]], [[§7 Quantifiers#^def-7-new1|Def. §7.5]]
 
 > [!remark]- Connections
 > - Computational version: the vertical line test, [[§1 Four Ways to Represent a Function#^thm-1-1|Calc Thm. §1.1]].

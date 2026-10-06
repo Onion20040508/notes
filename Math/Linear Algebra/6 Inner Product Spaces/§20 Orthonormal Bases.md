@@ -74,13 +74,13 @@ tags: [linear-algebra]
 
 ^ladr-6-26
 
-> [!remark] Remark: Meaning
-> $\sum_k\langle v,e_k\rangle e_k$ is the orthogonal projection of $v$ onto $\Span(e_1,\dots,e_m)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)); the inequality says projection shortens. Equality for all $v$ iff the list is a basis ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](b)).
-
 > [!proof]+ Proof
 > Write $v=u+w$ with $u=\sum_k\langle v,e_k\rangle e_k$ and $w=v-u$. Then $\langle w,e_k\rangle=\langle v,e_k\rangle-\langle v,e_k\rangle=0$ for each $k$, so $w\perp u$. By [[§19 Inner Products and Norms#^ladr-6-12|6.12]] and [[§20 Orthonormal Bases#^ladr-6-24|6.24]], $\|v\|^2=\|u\|^2+\|w\|^2\ge\|u\|^2=\sum_k|\langle v,e_k\rangle|^2$.
 
 *Uses:* [[§19 Inner Products and Norms#^ladr-6-12|6.12]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]]
+
+> [!remark] Remark: Meaning
+> $\sum_k\langle v,e_k\rangle e_k$ is the orthogonal projection of $v$ onto $\Span(e_1,\dots,e_m)$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)); the inequality says projection shortens. Equality for all $v$ iff the list is a basis ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](b)).
 
 > [!remark]- Connections
 > - Physics: the probabilities $|\langle e_k|\psi\rangle|^2$ over any orthonormal set of outcomes sum to at most $\|\psi\|^2=1$.
@@ -119,13 +119,13 @@ tags: [linear-algebra]
 
 ^ladr-6-30
 
-> [!remark] Remark: Coordinates are inner products
-> An orthonormal basis turns $V$ into $\F^n$ isometrically: $v\mapsto(\langle v,e_1\rangle,\dots,\langle v,e_n\rangle)$ preserves inner products by (c). No linear system has to be solved to find coordinates ([[§20 Orthonormal Bases#^ladr-6-31|6.31]]).
-
 > [!proof]+ Proof
 > Write $v=\sum a_ke_k$. Taking the inner product with $e_j$ gives $\langle v,e_j\rangle=a_j$: this is (a). (b) follows from (a) and [[§20 Orthonormal Bases#^ladr-6-24|6.24]]. For (c), take the inner product of $u$ with both sides of (a) and use [[§19 Inner Products and Norms#^ladr-6-6|6.6]](d),(e).
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-24|6.24]], [[§19 Inner Products and Norms#^ladr-6-6|6.6]]
+
+> [!remark] Remark: Coordinates are inner products
+> An orthonormal basis turns $V$ into $\F^n$ isometrically: $v\mapsto(\langle v,e_1\rangle,\dots,\langle v,e_n\rangle)$ preserves inner products by (c). No linear system has to be solved to find coordinates ([[§20 Orthonormal Bases#^ladr-6-31|6.31]]).
 
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§19 Inner Products and Norms#^ladr-6-2|6.2]]).
@@ -150,9 +150,6 @@ tags: [linear-algebra]
 
 ^ladr-6-32
 
-> [!remark] Remark: What each step does
-> $f_k$ is $v_k$ minus its orthogonal projection onto $\Span(e_1,\dots,e_{k-1})$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)): subtract the shadow, keep the perpendicular part, normalize.
-
 > [!proof]+ Proof
 > Induction on $k$. For $k=1$, $e_1$ is a unit multiple of $v_1$. Suppose $e_1,\dots,e_{k-1}$ are orthonormal with $\Span(v_1,\dots,v_{k-1})=\Span(e_1,\dots,e_{k-1})=\Span(f_1,\dots,f_{k-1})$.
 >
@@ -165,6 +162,9 @@ tags: [linear-algebra]
 > **Spans:** $v_k\in\Span(e_1,\dots,e_k)$ from the definition, so $\Span(v_1,\dots,v_k)\subseteq\Span(e_1,\dots,e_k)$; both have dimension $k$ (independent lists, [[§20 Orthonormal Bases#^ladr-6-25|6.25]]), so they are equal ([[§6 Dimension#^ladr-2-39|2.39]]).
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-25|6.25]], [[§6 Dimension#^ladr-2-39|2.39]]
+
+> [!remark] Remark: What each step does
+> $f_k$ is $v_k$ minus its orthogonal projection onto $\Span(e_1,\dots,e_{k-1})$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i)): subtract the shadow, keep the perpendicular part, normalize.
 
 > [!remark]- Connections
 > - Computational version: [[§43 The Gram–Schmidt Process#^thm-43-1|235 Thm. §43.1]] (Gram–Schmidt in $\mathbb R^n$, worked in [[§43 The Gram–Schmidt Process#^ex-43-2|235 Ex. §43.2]]); in an inner product space, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]].
@@ -243,10 +243,15 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Matrix form: every complex square matrix is unitarily similar to an upper-triangular one. Normal operators get a diagonal matrix: [[Complex spectral theorem|7.31]].
 
-> [!definition] Definition 6.39: Linear functional, dual space, V′
-> A *linear functional* on $V$ is a linear map $V\to\F$; the *dual space* is $V'=\Lin(V,\F)$ (as in [[§12 Duality#^ladr-3-110|3.110]]).
+> [!definition] Definition 6.39: Linear functional
+> A *linear functional* on $V$ is a linear map $V\to\F$.
 
 ^ladr-6-39
+
+> [!definition] Definition 6.39b: Dual space, V′
+> The *dual space* is $V'=\Lin(V,\F)$ (as in [[§12 Duality#^ladr-3-110|3.110]]).
+
+^ladr-6-39b
 
 > [!remark]- Connections
 > - On an inner product space every functional is $\langle\cdot,v\rangle$: [[Riesz representation theorem|6.42]].
@@ -269,9 +274,6 @@ tags: [linear-algebra]
 
 ^ladr-6-42
 
-> [!remark] Remark: Basis independence
-> The formula for $v$ seems to depend on the orthonormal basis, but uniqueness shows it does not.
-
 > [!proof]+ Proof
 > **Existence.** Take an orthonormal basis $e_1,\dots,e_n$ ([[§20 Orthonormal Bases#^ladr-6-35|6.35]]). By [[§20 Orthonormal Bases#^ladr-6-30|6.30]](a),
 > $$
@@ -282,6 +284,9 @@ tags: [linear-algebra]
 > **Uniqueness.** If $\langle u,v_1\rangle=\langle u,v_2\rangle$ for all $u$, take $u=v_1-v_2$: $\|v_1-v_2\|^2=0$.
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-35|6.35]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
+
+> [!remark] Remark: Basis independence
+> The formula for $v$ seems to depend on the orthonormal basis, but uniqueness shows it does not.
 
 > [!remark]- Connections
 > - In several variables the gradient is the Riesz representer of the derivative, $Df_{\mathbf p}(\mathbf u)=\nabla f(\mathbf p)\cdot\mathbf u$: [[Directional Derivative Formula|452 Thm. §7.1]].

@@ -42,11 +42,11 @@ tags: [linear-algebra]
 
 ^ladr-7-87
 
-> [!remark] Remark: Distance
-> $\|S-T\|$ is a distance on $\Lin(V,W)$; e.g. invertible operators come arbitrarily close to any $T$.
-
 > [!proof]+ Proof
 > (a) clear. (b) If $\|T\|=0$ then $T$ kills the unit ball, so $Tu=\|u\|T(u/\|u\|)=0$ for $u\ne0$. (c) $\max\|\lambda Tv\|=|\lambda|\max\|Tv\|$. (d) Pick $v$, $\|v\|\le1$, with $\|S+T\|=\|(S+T)v\|\le\|Sv\|+\|Tv\|\le\|S\|+\|T\|$.
+
+> [!remark] Remark: Distance
+> $\|S-T\|$ is a distance on $\Lin(V,W)$; e.g. invertible operators come arbitrarily close to any $T$.
 
 > [!remark]- Connections
 > - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§26 Boundedness and Continuity#^thm-26-5|556 Thm. §26.5]].
@@ -59,13 +59,13 @@ tags: [linear-algebra]
 
 ^ladr-7-88
 
-> [!remark] Remark: Computing
-> (a) is the practical route: form $T^*T$, compute its largest eigenvalue numerically, take the square root.
-
 > [!proof]+ Proof
 > (a) is [[§27 Consequences of Singular Value Decomposition#^ladr-7-82|7.82]]. (b) for $0<\|v\|\le1$, $u=v/\|v\|$ has $\|Tu\|=\|Tv\|/\|v\|\ge\|Tv\|$. (c) $\|T(v/\|v\|)\|\le\|T\|$ gives $\|Tv\|\le\|T\|\|v\|$; conversely if $\|Tv\|\le c\|v\|$ for all $v$, then $\|Tv\|\le c$ on the unit ball, so $\|T\|\le c$.
 
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-82|7.82]]
+
+> [!remark] Remark: Computing
+> (a) is the practical route: form $T^*T$, compute its largest eigenvalue numerically, take the square root.
 
 > [!remark]- Connections
 > - Parts (b) and (c) are [[§26 Boundedness and Continuity#^prop-26-1|556 Prop. §26.1]] (a) and (c), with max replaced by sup.
@@ -87,13 +87,13 @@ tags: [linear-algebra]
 
 ^ladr-7-91
 
-> [!remark] Remark: Via SVD
-> [[§26 Singular Value Decomposition#^ladr-7-75|7.75]] shows $T$ and $T^*$ have the same positive singular values.
-
 > [!proof]+ Proof
 > $\|T^*w\|^2=\langle TT^*w,w\rangle\le\|TT^*w\|\|w\|\le\|T\|\|T^*w\|\|w\|$ ([[Cauchy–Schwarz inequality|6.14]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|7.88]](c)), so $\|T^*w\|\le\|T\|\|w\|$ and $\|T^*\|\le\|T\|$. Apply to $T^*$ and use $(T^*)^*=T$.
 
 *Uses:* [[Cauchy–Schwarz inequality|6.14]], [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|7.88]]
+
+> [!remark] Remark: Via SVD
+> [[§26 Singular Value Decomposition#^ladr-7-75|7.75]] shows $T$ and $T^*$ have the same positive singular values.
 
 > [!theorem] Theorem 7.92: Best approximation by linear map whose range has dimension ≤ k
 > Let $T\in\Lin(V,W)$ with positive singular values $s_1\ge\dots\ge s_m$ and $1\le k<m$. Then
@@ -103,9 +103,6 @@ tags: [linear-algebra]
 > attained by the truncation $T_kv=\sum_{j\le k}s_j\langle v,e_j\rangle f_j$ of an SVD.
 
 ^ladr-7-92
-
-> [!remark] Remark: Eckart–Young
-> This is the operator-norm Eckart–Young theorem: to compress a matrix to rank $k$, keep the top $k$ singular triples. Basis of PCA and image compression.
 
 > [!proof]+ Proof
 > **$T_k$ achieves $s_{k+1}$.** By the SVD ([[Singular value decomposition|7.70]]), $\|(T-T_k)v\|^2=\sum_{j>k}s_j^2|\langle v,e_j\rangle|^2\le s_{k+1}^2\|v\|^2$ (Bessel, [[§20 Orthonormal Bases#^ladr-6-26|6.26]]), with equality at $v=e_{k+1}$.
@@ -118,6 +115,9 @@ tags: [linear-algebra]
 
 *Uses:* [[Singular value decomposition|7.70]], [[§20 Orthonormal Bases#^ladr-6-26|6.26]], [[Length of linearly independent list ≤ length of spanning list|2.22]]
 
+> [!remark] Remark: Eckart–Young
+> This is the operator-norm Eckart–Young theorem: to compress a matrix to rank $k$, keep the top $k$ singular triples. Basis of PCA and image compression.
+
 > [!theorem] Theorem 7.93: Polar decomposition
 > For $T\in\Lin(V)$ there is a unitary $S\in\Lin(V)$ with
 > $$
@@ -126,13 +126,13 @@ tags: [linear-algebra]
 
 ^ladr-7-93
 
-> [!remark] Remark: Number analogy and geometry
-> $z=e^{i\theta}|z|$: every operator is a positive stretch (along the orthogonal axes $e_k$) followed by an isometry. Figure below.
-
 > [!proof]+ Proof
 > Take an SVD $Tv=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$ and extend $e$'s and $f$'s to orthonormal bases of $V$ ([[§20 Orthonormal Bases#^ladr-6-36|6.36]]). Define $Sv=\sum_{k\le n}\langle v,e_k\rangle f_k$: $\|Sv\|^2=\sum|\langle v,e_k\rangle|^2=\|v\|^2$, so $S$ is unitary. By [[§26 Singular Value Decomposition#^ladr-7-75|7.75]], $T^*Tv=\sum_ks_k^2\langle v,e_k\rangle e_k$, so $\sqrt{T^*T}v=\sum_ks_k\langle v,e_k\rangle e_k$ (this operator is positive with square $T^*T$; [[§24 Positive Operators#^ladr-7-39|7.39]]). Then $S\sqrt{T^*T}v=\sum_ks_k\langle v,e_k\rangle f_k=Tv$.
 
 *Uses:* [[§20 Orthonormal Bases#^ladr-6-36|6.36]], [[§26 Singular Value Decomposition#^ladr-7-75|7.75]], [[§24 Positive Operators#^ladr-7-39|7.39]]
+
+> [!remark] Remark: Number analogy and geometry
+> $z=e^{i\theta}|z|$: every operator is a positive stretch (along the orthogonal axes $e_k$) followed by an isometry. Figure below.
 
 > [!remark]- Connections
 > - Physics/mechanics: the polar decomposition of the deformation gradient $F=RU$ into rotation and stretch in continuum mechanics.
@@ -229,11 +229,11 @@ tags: [linear-algebra]
 
 ^ladr-7-107
 
-> [!remark] Remark: Point
-> A generic box goes to a slanted parallelepiped; boxes aligned with the right singular vectors go to boxes. This is what makes volume computable ([[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
-
 > [!proof]+ Proof
 > $T(u+\sum a_kr_ke_k)=Tu+\sum a_kr_ks_kf_k$, since $Te_k=s_kf_k$.
+
+> [!remark] Remark: Point
+> A generic box goes to a slanted parallelepiped; boxes aligned with the right singular vectors go to boxes. This is what makes volume computable ([[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]]).
 
 %% ex:7.107-fig %%
 > [!example] Example: Boxes aligned with the singular vectors, pictured

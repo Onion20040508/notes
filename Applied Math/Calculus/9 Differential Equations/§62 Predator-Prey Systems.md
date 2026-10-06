@@ -37,8 +37,8 @@ Let $R(t)$ be the number of prey (rabbits) and $W(t)$ the number of predators (w
 
 Usually it is impossible to find explicit formulas for $R$ and $W$ as functions of $t$, so the equations are analysed graphically. (Volterra proposed them to explain the variations in the shark and food-fish populations of the Adriatic Sea.)
 
-> [!definition] Definition §62.2: Equilibrium Solutions and Equilibrium Points
-> The constant solutions of a system such as (1) are its **equilibrium solutions**. They are found by setting both derivatives equal to $0$. The corresponding point $(R, W)$ is an **equilibrium point**.
+> [!definition] Definition §62.2: Equilibrium Solutions of a System
+> The constant solutions of a system such as (1) are its **equilibrium solutions**. They are found by setting both derivatives equal to $0$.
 >
 > For (1), $dR/dt = R(k - aW)$ and $dW/dt = W(-r + bR)$ both vanish exactly when $R = W = 0$ or when
 >
@@ -51,6 +51,13 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > *Stewart: 9.6 (text; Example 9.6.1)*
 
 ^def-62-2
+
+> [!definition] Definition §62.3: Equilibrium Points
+> The corresponding point $(R, W)$ of an equilibrium solution of a system such as (1) is an **equilibrium point**.
+>
+> *Stewart: 9.6 (text; Example 9.6.1)*
+
+^def-62-new1
 
 > [!theorem] Proposition §62.1: The Equation of the Phase Trajectories
 > Along a solution of (1), at times when $dR/dt \ne 0$, the predator population $W$ can be regarded as a function of the prey population $R$, and it satisfies the first-order differential equation
@@ -118,12 +125,26 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 
 ^ex-62-1
 
-> [!definition] Definition §62.3: Phase Plane, Phase Trajectory, Phase Portrait
-> When solutions of a system of differential equations such as (1) are drawn as curves in the $RW$-plane, that plane is called the **phase plane**, and the solution curves are **phase trajectories**. So a phase trajectory is the path traced out by the points $(R(t), W(t))$ as time goes by. A **phase portrait** consists of the equilibrium points together with typical phase trajectories.
+> [!definition] Definition §62.3: Phase Plane
+> When solutions of a system of differential equations such as (1) are drawn as curves in the $RW$-plane, that plane is called the **phase plane**.
 >
 > *Stewart: 9.6 (text)*
 
 ^def-62-3
+
+> [!definition] Definition §62.4: Phase Trajectory
+> When solutions of a system such as (1) are drawn in the phase plane, the solution curves are **phase trajectories**. So a phase trajectory is the path traced out by the points $(R(t), W(t))$ as time goes by.
+>
+> *Stewart: 9.6 (text)*
+
+^def-62-new2
+
+> [!definition] Definition §62.5: Phase Portrait
+> A **phase portrait** consists of the equilibrium points together with typical phase trajectories.
+>
+> *Stewart: 9.6 (text)*
+
+^def-62-new3
 
 > [!remark]- Connections
 > - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].

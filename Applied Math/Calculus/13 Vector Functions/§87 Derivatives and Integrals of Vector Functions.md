@@ -28,8 +28,22 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^def-87-1
 
-> [!definition] Definition §87.2: Tangent Vector, Tangent Line, Unit Tangent Vector
-> Let $C$ be the curve defined by $\mathbf{r}$ and $P$ the point with position vector $\mathbf{r}(t)$. If $\mathbf{r}'(t)$ exists and $\mathbf{r}'(t) \ne \mathbf{0}$, it is the **tangent vector** to $C$ at $P$, and the **tangent line** to $C$ at $P$ is the line through $P$ parallel to $\mathbf{r}'(t)$. The **unit tangent vector** is
+> [!definition] Definition §87.2: Tangent Vector
+> Let $C$ be the curve defined by $\mathbf{r}$ and $P$ the point with position vector $\mathbf{r}(t)$. If $\mathbf{r}'(t)$ exists and $\mathbf{r}'(t) \ne \mathbf{0}$, it is the **tangent vector** to $C$ at $P$.
+>
+> *Stewart: 13.2 (text)*
+
+^def-87-2
+
+> [!definition] Definition §87.3: Tangent Line
+> For $C$, $P$ and $\mathbf{r}'(t) \ne \mathbf{0}$ as in [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Definition §87.2]], the **tangent line** to $C$ at $P$ is the line through $P$ parallel to $\mathbf{r}'(t)$.
+>
+> *Stewart: 13.2 (text)*
+
+^def-87-new1
+
+> [!definition] Definition §87.4: Unit Tangent Vector
+> The **unit tangent vector** is
 >
 > $$
 > \mathbf{T}(t) = \frac{\mathbf{r}'(t)}{|\mathbf{r}'(t)|} .
@@ -37,7 +51,7 @@ The calculus of vector functions is one-variable calculus done in each component
 >
 > *Stewart: 13.2 (text)*
 
-^def-87-2
+^def-87-new2
 
 > [!remark] Remark: Why r′ Is Tangent
 > If $P$ and $Q$ have position vectors $\mathbf{r}(t)$ and $\mathbf{r}(t + h)$, then $\overrightarrow{PQ} = \mathbf{r}(t + h) - \mathbf{r}(t)$ is a secant vector. For $h > 0$ the scalar multiple $\frac1h(\mathbf{r}(t + h) - \mathbf{r}(t))$ has the same direction (for $0 < h < 1$ it stretches the secant). As $h \to 0$, $Q$ slides toward $P$ along the curve and this vector appears to approach a vector lying on the tangent line. The same picture shows that $\mathbf{r}'(t)$ points in the direction of increasing $t$ (Stewart's Exercise 60).
@@ -234,11 +248,16 @@ The calculus of vector functions is one-variable calculus done in each component
 > \int_a^b \mathbf{r}(t)\,dt = \lim_{n \to \infty} \sum_{i=1}^n \mathbf{r}(t_i^*)\,\Delta t .
 > $$
 >
+> *Stewart: 13.2 (text)*
+
+^def-87-4
+
+> [!definition] Definition §87.5: Antiderivative of a Vector Function
 > An **antiderivative** of $\mathbf{r}$ is a vector function $\mathbf{R}$ with $\mathbf{R}'(t) = \mathbf{r}(t)$, and $\int \mathbf{r}(t)\,dt$ denotes the indefinite integral (the general antiderivative).
 >
 > *Stewart: 13.2 (text)*
 
-^def-87-4
+^def-87-new3
 
 > [!theorem] Proposition §87.4: Integrate Each Component
 > If $\mathbf{r}(t) = f(t)\,\mathbf{i} + g(t)\,\mathbf{j} + h(t)\,\mathbf{k}$ is continuous on $[a, b]$, then

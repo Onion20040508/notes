@@ -8,17 +8,21 @@ tags: [linear-algebra]
 ---
 ← [[§1 Rⁿ and Cⁿ]] · ↑ [[· 1 Vector Spaces]] · [[§3 Subspaces]] →
 
-> [!definition] Definition 1.19: Addition, scalar multiplication
+> [!definition] Definition 1.19: Addition
 > - An *addition* on a set $V$ is a function assigning an element $u+v\in V$ to each pair $u,v\in V$.
-> - A *scalar multiplication* on $V$ is a function assigning an element $\lambda v\in V$ to each $\lambda\in\F$ and $v\in V$.
 
 ^ladr-1-19
+
+> [!definition] Definition 1.19b: Scalar multiplication
+> - A *scalar multiplication* on $V$ is a function assigning an element $\lambda v\in V$ to each $\lambda\in\F$ and $v\in V$.
+
+^ladr-1-19b
 
 > [!remark]- Connections
 > - The two operations in [[§2 Definition of Vector Space#^ladr-1-20|Vector space]]. Note the closure is built in: results land in $V$.
 
 > [!definition] Definition 1.20: Vector space
-> A *vector space* is a set $V$ with an addition and a scalar multiplication ([[§2 Definition of Vector Space#^ladr-1-19|Addition, scalar multiplication]]) such that:
+> A *vector space* is a set $V$ with an addition and a scalar multiplication ([[§2 Definition of Vector Space#^ladr-1-19|Addition]], [[§2 Definition of Vector Space#^ladr-1-19b|scalar multiplication]]) such that:
 > - **commutativity** $u+v=v+u$;
 > - **associativity** $(u+v)+w=u+(v+w)$ and $(ab)v=a(bv)$;
 > - **additive identity** there is $0\in V$ with $v+0=v$ for all $v$;
@@ -136,11 +140,11 @@ tags: [linear-algebra]
 
 ^ladr-1-30
 
-> [!remark] Remark: Why distributivity
-> The statement mixes scalar multiplication with the additive identity, and distributivity is the only axiom of [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] relating the two operations.
-
 > [!proof]+ Proof
 > $0v=(0+0)v=0v+0v$. Add the additive inverse of $0v$ to both sides to get $0=0v$.
+
+> [!remark] Remark: Why distributivity
+> The statement mixes scalar multiplication with the additive identity, and distributivity is the only axiom of [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] relating the two operations.
 
 > [!remark]- Connections
 > - Companion: [[§2 Definition of Vector Space#^ladr-1-31|A number times the vector 0]] ($a0=0$). Used in [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]].

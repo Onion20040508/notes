@@ -327,37 +327,58 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ## The Normal and Binormal Vectors
 
-> [!definition] Definition §88.5: Unit Normal and Binormal Vectors
+> [!definition] Definition §88.5: Principal Unit Normal Vector
 > Let $\mathbf{r}(t)$ be a smooth space curve. Since $|\mathbf{T}(t)| = 1$, $\mathbf{T}'(t)$ is orthogonal to $\mathbf{T}(t)$ ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|Theorem §87.3]]). At any point where $\kappa \ne 0$ (equivalently $\mathbf{T}' \ne \mathbf{0}$), the **principal unit normal vector** (or **unit normal**) is
 >
 > $$
-> \mathbf{N}(t) = \frac{\mathbf{T}'(t)}{|\mathbf{T}'(t)|} ,
+> \mathbf{N}(t) = \frac{\mathbf{T}'(t)}{|\mathbf{T}'(t)|} .
 > $$
 >
-> and the **binormal vector** is
->
-> $$
-> \mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t) .
-> $$
->
-> $\mathbf{N}$ indicates the direction in which the curve is turning. $\mathbf{B}$ is perpendicular to both $\mathbf{T}$ and $\mathbf{N}$ and is a unit vector (by [[§83 The Cross Product#^thm-83-4|Theorem §83.4]], $|\mathbf{B}| = |\mathbf{T}||\mathbf{N}|\sin\frac{\pi}{2} = 1$). The three mutually orthogonal unit vectors $\mathbf{T}$, $\mathbf{N}$, $\mathbf{B}$ form the **TNB frame**, which moves along the curve; it is basic in differential geometry and in the motion of spacecraft.
+> $\mathbf{N}$ indicates the direction in which the curve is turning.
 >
 > *Stewart: 13.3 (text)*
 
 ^def-88-5
 
+> [!definition] Definition §88.6: Binormal Vector
+> At a point of a smooth space curve $\mathbf{r}(t)$ where $\kappa \ne 0$, the **binormal vector** is
+>
+> $$
+> \mathbf{B}(t) = \mathbf{T}(t) \times \mathbf{N}(t) .
+> $$
+>
+> $\mathbf{B}$ is perpendicular to both $\mathbf{T}$ and $\mathbf{N}$ and is a unit vector (by [[§83 The Cross Product#^thm-83-4|Theorem §83.4]], $|\mathbf{B}| = |\mathbf{T}||\mathbf{N}|\sin\frac{\pi}{2} = 1$). The three mutually orthogonal unit vectors $\mathbf{T}$, $\mathbf{N}$, $\mathbf{B}$ form the **TNB frame**, which moves along the curve; it is basic in differential geometry and in the motion of spacecraft.
+>
+> *Stewart: 13.3 (text)*
+
+^def-88-new1
+
 ![[m233-88-2.svg]]
 *The TNB frame at a point $P$ of the helix $\mathbf{r}(t) = \langle \cos t, \sin t, t \rangle$ (Example §88.5). $\mathbf{T}$ (red) is tangent to the helix, $\mathbf{N} = \langle -\cos t, -\sin t, 0 \rangle$ (blue) is horizontal and points straight at the $z$-axis, around which the helix turns, and $\mathbf{B} = \mathbf{T} \times \mathbf{N}$ (green) completes the right-handed frame.*
 
-> [!definition] Definition §88.6: Normal Plane, Osculating Plane and Osculating Circle
+> [!definition] Definition §88.6: Normal Plane
 > At a point $P$ of a curve $C$:
 > - the **normal plane** is the plane determined by $\mathbf{N}$ and $\mathbf{B}$; it consists of all lines through $P$ orthogonal to the tangent vector $\mathbf{T}$, so $\mathbf{T}$ (or $\mathbf{r}'$) is a normal vector for it;
-> - the **osculating plane** is the plane determined by $\mathbf{T}$ and $\mathbf{N}$; $\mathbf{B}$ is a normal vector for it. (From the Latin *osculum*, "kiss": it is the plane that comes closest to containing the part of the curve near $P$. For a plane curve it is the plane of the curve.)
-> - the **circle of curvature**, or **osculating circle**, is the circle in the osculating plane through $P$ with radius $1/\kappa$ and center a distance $1/\kappa$ from $P$ along $\mathbf{N}$; its center is the **center of curvature**. It is the circle that best describes how $C$ behaves near $P$: it shares the tangent, normal and curvature of $C$ at $P$.
 >
 > *Stewart: 13.3 (text)*
 
 ^def-88-6
+
+> [!definition] Definition §88.7: Osculating Plane
+> At a point $P$ of a curve $C$:
+> - the **osculating plane** is the plane determined by $\mathbf{T}$ and $\mathbf{N}$; $\mathbf{B}$ is a normal vector for it. (From the Latin *osculum*, "kiss": it is the plane that comes closest to containing the part of the curve near $P$. For a plane curve it is the plane of the curve.)
+>
+> *Stewart: 13.3 (text)*
+
+^def-88-new2
+
+> [!definition] Definition §88.8: Osculating Circle
+> At a point $P$ of a curve $C$:
+> - the **circle of curvature**, or **osculating circle**, is the circle in the osculating plane through $P$ with radius $1/\kappa$ and center a distance $1/\kappa$ from $P$ along $\mathbf{N}$; its center is the **center of curvature**. It is the circle that best describes how $C$ behaves near $P$: it shares the tangent, normal and curvature of $C$ at $P$.
+>
+> *Stewart: 13.3 (text)*
+
+^def-88-new3
 
 > [!remark] Remark: Summary of Formulas
 > $$

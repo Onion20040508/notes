@@ -129,14 +129,19 @@ and the approximation improves as $n \to \infty$.
 
 ^def-34-1
 
-> [!definition] Definition §34.2: Sample Points; Lower and Upper Sums
+> [!definition] Definition §34.2: Sample Points
 > Instead of an endpoint, the height of the $i$th rectangle may be the value of $f$ at **any** number $x_i^{\ast}$ in the $i$th subinterval $[x_{i-1}, x_i]$. The numbers $x_1^{\ast}, x_2^{\ast}, \ldots, x_n^{\ast}$ are called **sample points**.
->
-> Choosing each $x_i^{\ast}$ so that $f(x_i^{\ast})$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], since $f$ is continuous on the closed subinterval.)
 >
 > *Stewart: 5.1 (text and Note)*
 
 ^def-34-2
+
+> [!definition] Definition §34.2: Lower and Upper Sums
+> Choosing each $x_i^{\ast}$ so that $f(x_i^{\ast})$ is the minimum value of $f$ on $[x_{i-1}, x_i]$ gives a **lower sum**; choosing the maximum value gives an **upper sum**. (These extreme values exist by the Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]], since $f$ is continuous on the closed subinterval.)
+>
+> *Stewart: 5.1 (text and Note)*
+
+^def-34-new1
 
 In **sigma notation** ([[§120 Sigma Notation#^def-120-1|Def. §120.1]]) a sum with many terms is written compactly, for instance
 
@@ -147,7 +152,7 @@ $$
 where $i$ is the index of summation, running from the value below $\Sigma$ to the value above it. Formula (1) reads $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$.
 
 > [!theorem] Theorem §34.1: The Area as a Limit of Any Riemann Sums
-> Let $f \ge 0$ be continuous on $[a, b]$, and use the notation of Definitions §34.1 and §34.2.
+> Let $f \ge 0$ be continuous on $[a, b]$, and use the notation of Definitions [[§34 The Area and Distance Problems#^def-34-1|§34.1]], [[§34 The Area and Distance Problems#^def-34-2|§34.2]] and [[§34 The Area and Distance Problems#^def-34-new1|§34.2]].
 > 1. The limit $A = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i)\,\Delta x$ in Definition §34.1 exists.
 > 2. Left endpoints give the same value:
 >

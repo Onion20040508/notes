@@ -61,7 +61,7 @@ $$
 ^def-13-1
 
 > [!remark]- Connections
-> - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-2|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]].
+> - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-new1|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]].
 > - Linear-algebra view: the matrix of the linear map $Df$ in the standard bases, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 > - For an analytic map the Cauchy–Riemann equations make the Jacobian matrix a rotation–scaling matrix with determinant |f′|²: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] and [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]].
 

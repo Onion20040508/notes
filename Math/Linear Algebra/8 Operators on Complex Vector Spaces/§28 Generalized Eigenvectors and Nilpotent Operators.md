@@ -30,13 +30,13 @@ tags: [linear-algebra]
 
 ^ladr-8-2
 
-> [!remark] Remark: Slogan
-> Once the chain pauses, it stops for good.
-
 > [!proof]+ Proof
 > Let $k\ge1$; we show $\nullsp T^{m+k+1}\subseteq\nullsp T^{m+k}$ (the other inclusion is [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1]]). If $T^{m+k+1}v=0$ then $T^{m+1}(T^kv)=0$, so $T^kv\in\nullsp T^{m+1}=\nullsp T^m$, i.e. $T^{m+k}v=0$.
 
 *Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1]]
+
+> [!remark] Remark: Slogan
+> Once the chain pauses, it stops for good.
 
 > [!theorem] Theorem 8.3: Null spaces stop growing
 > For $T\in\Lin(V)$,
@@ -81,6 +81,8 @@ tags: [linear-algebra]
 >
 > ![[ladr-8.6-null-range.svg|460]]
 
+^ladr-8-6-fig
+
 > [!definition] Definition 8.8: Generalized eigenvector
 > For an eigenvalue $\lambda$ of $T\in\Lin(V)$, a *generalized eigenvector* for $\lambda$ is a $v\ne0$ with $(T-\lambda I)^kv=0$ for some $k\ge1$. Equivalently $(T-\lambda I)^{\dim V}v=0$ ([[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]]).
 
@@ -99,9 +101,6 @@ tags: [linear-algebra]
 
 ^ladr-8-9
 
-> [!remark] Remark: Over $\R$
-> False in general: rotation of $\R^2$ has no eigenvalues, hence no generalized eigenvectors.
-
 > [!proof]+ Proof
 > Induction on $n=\dim V$; for $n=1$ every nonzero vector is an eigenvector. For $n>1$ let $\lambda$ be an eigenvalue of $T$, which exists because $\F=\C$ ([[Existence of eigenvalues|5.19]]); this is where $\F=\C$ is used. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
 > $$
@@ -110,6 +109,9 @@ tags: [linear-algebra]
 > If the null space is $V$, every nonzero vector is a generalized eigenvector. Otherwise $0<\dim\range(T-\lambda I)^n<n$ (the null space contains an eigenvector). The range is invariant ([[§14 Invariant Subspaces#^ladr-5-18|5.18]]), so by induction it has a basis of generalized eigenvectors of $T$ restricted to it, hence of $T$. Adjoin a basis of $\nullsp(T-\lambda I)^n$.
 
 *Uses:* [[Existence of eigenvalues|5.19]], [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]], [[§14 Invariant Subspaces#^ladr-5-18|5.18]]
+
+> [!remark] Remark: Over $\R$
+> False in general: rotation of $\R^2$ has no eigenvalues, hence no generalized eigenvectors.
 
 > [!example] Example 8.10: Generalized eigenvectors of an operator on C³ (p. 302)
 > Same $T$ on $\C^3$. Eigenvalues $0$ and $5$, with eigenvectors only $(z_1,0,0)$ and $(0,0,z_3)$: not enough to span. With $T^3(z)=(0,0,125z_3)$ and $(T-5I)^3(z)=(-125z_1+300z_2,\ -125z_2,\ 0)$ (verified):
@@ -175,13 +177,13 @@ tags: [linear-algebra]
 
 ^ladr-8-17
 
-> [!remark] Remark: (b) needs $\C$
-> Over $\R$, an operator on $\R^3$ acting as $0$ on a line and as a rotation on the complementary plane has only the eigenvalue $0$ but is not nilpotent.
-
 > [!proof]+ Proof
 > (a) $T^m=0$ makes $T$ non-injective. If $Tv=\lambda v$, $v\ne0$, then $\lambda^mv=T^mv=0$, so $\lambda=0$. (b) The minimal polynomial has only the zero $0$ ([[§15 The Minimal Polynomial#^ladr-5-27|5.27]]) and splits over $\C$, so it is $z^m$ and $T^m=0$.
 
 *Uses:* [[§15 The Minimal Polynomial#^ladr-5-27|5.27]]
+
+> [!remark] Remark: (b) needs $\C$
+> Over $\R$, an operator on $\R^3$ acting as $0$ on a line and as a rotation on the complementary plane has only the eigenvalue $0$ but is not nilpotent.
 
 > [!theorem] Theorem 8.18: Minimal polynomial and upper-triangular matrix of nilpotent operator
 > For $T\in\Lin(V)$, equivalent:

@@ -44,7 +44,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ^rem-6-1
 
 > [!remark] Remark: The $o(\rho)$ Condition
-> The condition $E(h,k) = o(\rho)$ ([[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]]) means:
+> The condition $E(h,k) = o(\rho)$ ([[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]]) means:
 >
 > $$
 > \lim_{(h,k) \to (0,0)} \frac{|E(h,k)|}{\sqrt{h^2 + k^2}} = 0.
@@ -94,33 +94,38 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-def-6-1
 
-*Uses:* [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]]
+*Uses:* [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[§13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[§22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
 > - Computational version: [[§93 Tangent Planes and Linear Approximations#^def-93-3|Calc Def. §93.3]] (increment form, with worked examples).
 > - Complex differentiability is this differentiability for (u, v) plus the Cauchy–Riemann equations: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the equations are necessary) and [[§23 Sufficient Conditions for Differentiability#^cor-23-2|342 Cor. §23.2]] (real differentiability plus Cauchy–Riemann gives f′).
 
-> [!definition] Definition §6.2: The Total Derivative and the Jacobian Matrix
+> [!definition] Definition §6.2: The Total Derivative
 > Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$. The **(total) derivative** of $f$ at $(x_0, y_0)$ is not a number — it is the [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]]
 >
 > $$
 > Df_{(x_0, y_0)}: \mathbb{R}^2 \to \mathbb{R}, \quad (h, k) \mapsto f_x(x_0, y_0) \cdot h + f_y(x_0, y_0) \cdot k.
-> $$
->
-> Its [[§9 Matrices#^ladr-3-31|matrix in the standard basis]] is the **Jacobian matrix**:
->
-> $$
-> Df_{(x_0, y_0)} = \begin{pmatrix} f_x & f_y \end{pmatrix}, \quad Df_{(x_0,y_0)} \begin{pmatrix} h \\ k \end{pmatrix} = f_x \cdot h + f_y \cdot k.
 > $$
 
 ^def-6-2
 
 > [!remark]- Connections
 > - A linear map $\mathbb{R}^2 \to \mathbb{R}$ is a [[§12 Duality#^ladr-3-108|linear functional]] (LADR 3.108), so $Df$ lives in the dual space; this is the viewpoint of the 1-form $df$ in [[§22 The Algebra of Differential Forms#^prop-22-6|Gradient = Differential = 1-Form]].
+> - Computational version: the linearization $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$, [[§93 Tangent Planes and Linear Approximations#^def-93-2|Calc Def. §93.2]] (with worked examples).
+
+> [!definition] Definition §6.2: The Jacobian Matrix
+> Let $f: \mathbb{R}^2 \to \mathbb{R}$ be differentiable at $(x_0, y_0)$, with total derivative $Df_{(x_0, y_0)}$ ([[§6 Differentiability#^def-6-2|Definition §6.2]]). Its [[§9 Matrices#^ladr-3-31|matrix in the standard basis]] is the **Jacobian matrix**:
+>
+> $$
+> Df_{(x_0, y_0)} = \begin{pmatrix} f_x & f_y \end{pmatrix}, \quad Df_{(x_0,y_0)} \begin{pmatrix} h \\ k \end{pmatrix} = f_x \cdot h + f_y \cdot k.
+> $$
+
+^def-6-new1
+
+> [!remark]- Connections
 > - Jacobians of compositions multiply: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
 > - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|591 Def. §21.4]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§28 The Differential in Coordinates#^thm-28-2|591 Thm. §28.2]].
-> - Computational version: the linearization $L(x,y) = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$, [[§93 Tangent Planes and Linear Approximations#^def-93-2|Calc Def. §93.2]] (with worked examples).
 > - The Jacobian is the standard matrix of the linear map Df: [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (its columns are the images of e₁, …, eₙ, with worked examples).
 
 > [!definition] Definition §6.3: Tangent Plane
@@ -174,7 +179,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-1
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§7 Directional Derivatives#^def-7-1|Def. §7.1]], [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§6 Differentiability#^def-6-2|Def. §6.2]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]], [[§7 Directional Derivatives#^def-7-1|Def. §7.1]], [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]
 
 > [!remark]- Connections
 > - Restated with the gradient in §7: [[Directional Derivative Formula|Directional Derivative Formula]].
@@ -306,7 +311,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-2
 
-*Uses:* [[§2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Mean Value Theorem|451 §29.3]]
+*Uses:* [[§2 Open and Closed Sets#^def-2-4|Def. §2.4]], [[§4 Partial Derivatives#^def-4-1|Def. §4.1]], [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]], [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]], [[Mean Value Theorem|451 §29.3]]
 
 ![[m452-6-2.svg]]
 *The same L-shaped path as in [[§4 Partial Derivatives#^thm-4-1|§4.1]]: the two MVTs trade the increments of $f$ along the legs $h$ and $k$ (blue) for $h \cdot f_x(x_0+\alpha(h)h,\,y_0)$ and $k \cdot f_y(x_0+h,\,y_0+\theta(h,k)k)$, evaluated at the red points. Now the point is where those red points go: as $(h,k) \to (0,0)$ the path shrinks (faded copy) and drags them to $(x_0,y_0)$, so continuity of $f_x$ and $f_y$ makes both brackets in $E(h,k)/\rho$ tend to $0$.*
@@ -447,7 +452,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-6
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]]
 
 > [!theorem] Theorem §6.7: Product of Differentiable Functions
 > If $f$ and $g$ are differentiable at $(x_0, y_0)$, then $fg$ is differentiable at $(x_0, y_0)$.
@@ -501,7 +506,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-7
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§6 Differentiability#^thm-6-4|§6.4]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]], [[§6 Differentiability#^thm-6-4|§6.4]]
 
 > [!theorem] Theorem §6.8: Quotient of Differentiable Functions
 > If $f$ and $g$ are differentiable at $(x_0, y_0)$ and $g(x_0, y_0) \neq 0$, then $f/g$ is differentiable at $(x_0, y_0)$.
@@ -539,7 +544,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-8
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§6 Differentiability#^thm-6-7|§6.7]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]], [[§6 Differentiability#^thm-6-7|§6.7]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
 
 > [!theorem] Theorem §6.9: Chain Rule: Composition of Differentiable Functions
 > Let $g(x,y) = f(\varphi(x,y), \psi(x,y))$. If $\varphi, \psi$ are differentiable at $(x_0, y_0)$ and $f$ is differentiable at $(\varphi(x_0, y_0), \psi(x_0, y_0))$, then $g$ is differentiable at $(x_0, y_0)$ with:
@@ -581,7 +586,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ^pf-6-9
 
-*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]]
+*Uses:* [[§6 Differentiability#^def-6-1|Def. §6.1]], [[§3 Continuity and Limits of Functions#^def-3-3|Def. §3.3]], [[§3 Continuity and Limits of Functions#^def-3-new1|Def. §3.3]]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^thm-28-3|Chain Rule]]; the continuity analogue is [[§3 Continuity and Limits of Functions#^thm-3-4|§3.4]].

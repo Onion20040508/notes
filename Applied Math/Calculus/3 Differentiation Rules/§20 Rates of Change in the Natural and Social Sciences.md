@@ -42,24 +42,33 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 
 ## Physics
 
-> [!definition] Definition §20.2: Velocity and Acceleration
+> [!definition] Definition §20.2: Velocity
 > Let $s = f(t)$ be the position function of a particle moving in a straight line. Then $\Delta s / \Delta t$ is its average velocity over a time period $\Delta t$, and
 >
 > $$
 > v = \frac{ds}{dt}
 > $$
 >
-> is its (instantaneous) **velocity**, the rate of change of displacement with respect to time. The **acceleration** is the rate of change of velocity with respect to time:
+> is its (instantaneous) **velocity**, the rate of change of displacement with respect to time.
+>
+> The **speed** is $|v|$.
+>
+> *Stewart: 3.7 (text and Example 3.7.1)*
+
+^def-20-2
+
+> [!definition] Definition §20.2: Acceleration
+> The **acceleration** is the rate of change of velocity with respect to time:
 >
 > $$
 > a(t) = v'(t) = s''(t) .
 > $$
 >
-> The **speed** is $|v|$. The particle **speeds up** when $v$ and $a$ have the same sign (it is pushed in the direction in which it moves) and **slows down** when they have opposite signs.
+> The particle **speeds up** when $v$ and $a$ have the same sign (it is pushed in the direction in which it moves) and **slows down** when they have opposite signs.
 >
 > *Stewart: 3.7 (text and Example 3.7.1)*
 
-^def-20-2
+^def-20-new1
 
 > [!example] Example §20.1: Analyzing the Motion of a Particle
 > The position of a particle is $s = f(t) = t^3 - 6t^2 + 9t$ ($t$ in seconds, $s$ in meters).
@@ -93,7 +102,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 ![[m233-20-1.svg]]
 *Example §20.1: position $s$ (red), velocity $v$ (blue) and acceleration $a$ (green) for $0 \le t \le 5$. The particle reverses direction where $v = 0$ ($t = 1, 3$), and $a = 0$ at $t = 2$. It speeds up on the shaded intervals, where $v$ and $a$ have the same sign, and slows down on the others.*
 
-> [!definition] Definition §20.3: Linear Density and Current
+> [!definition] Definition §20.3: Linear Density
 > **Linear density.** Let the mass of a rod (or piece of wire), measured from its left end to the point $x$, be $m = f(x)$. The mass between $x_1$ and $x_2$ is $\Delta m = f(x_2) - f(x_1)$, and $\Delta m / \Delta x$ is the average density of that part of the rod. The **linear density** at $x_1$ is the limit of these average densities:
 >
 > $$
@@ -102,6 +111,11 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 >
 > the rate of change of mass with respect to length (kg/m). A homogeneous rod has constant density $\rho = m/l$.
 >
+> *Stewart: 3.7 (Examples 3.7.2 and 3.7.3)*
+
+^def-20-3
+
+> [!definition] Definition §20.3: Current
 > **Current.** If $\Delta Q$ is the net charge that passes through a surface (a cross-section of a wire) during a time period $\Delta t$, then $\Delta Q / \Delta t$ is the average current, and the **current** at time $t_1$ is
 >
 > $$
@@ -112,7 +126,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 >
 > *Stewart: 3.7 (Examples 3.7.2 and 3.7.3)*
 
-^def-20-3
+^def-20-new2
 
 > [!example] Example §20.2: Density of a Nonhomogeneous Rod
 > A rod has mass $m = f(x) = \sqrt{x}$ kg from its left end to $x$ m. Over $1 \le x \le 1.2$ the average density is
@@ -173,13 +187,18 @@ Other rates of change in physics include power (the rate at which work is done),
 
 ## Biology
 
-> [!definition] Definition §20.6: Growth Rate and Velocity Gradient
+> [!definition] Definition §20.6: Growth Rate
 > **Growth rate.** If $n = f(t)$ is the number of individuals in an animal or plant population at time $t$, the average rate of growth over $t_1 \le t \le t_2$ is $\Delta n / \Delta t$, and the **instantaneous rate of growth** is
 >
 > $$
 > \text{growth rate} = \lim_{\Delta t \to 0} \frac{\Delta n}{\Delta t} = \frac{dn}{dt} .
 > $$
 >
+> *Stewart: 3.7 (Examples 3.7.6 and 3.7.7)*
+
+^def-20-6
+
+> [!definition] Definition §20.6: Velocity Gradient
 > **Velocity gradient.** If the velocity $v$ of a fluid in a tube depends on the distance $r$ from the axis, the **velocity gradient** is the instantaneous rate of change of velocity with respect to $r$:
 >
 > $$
@@ -188,10 +207,10 @@ Other rates of change in physics include power (the rate at which work is done),
 >
 > *Stewart: 3.7 (Examples 3.7.6 and 3.7.7)*
 
-^def-20-6
+^def-20-new3
 
 > [!remark] Remark: Smooth Models of Discrete Quantities
-> Strictly speaking, a population function $n = f(t)$ is a step function: it jumps by $1$ at every birth or death, so it is discontinuous there and not differentiable. For a large population we replace its graph by a smooth approximating curve and differentiate that. The same applies to the cost of producing $x$ items when $x$ takes only integer values (Definition §20.7).
+> Strictly speaking, a population function $n = f(t)$ is a step function: it jumps by $1$ at every birth or death, so it is discontinuous there and not differentiable. For a large population we replace its graph by a smooth approximating curve and differentiate that. The same applies to the cost of producing $x$ items when $x$ takes only integer values ([[§20 Rates of Change in the Natural and Social Sciences#^def-20-7|Definition §20.7]]).
 
 ^rem-20-1
 

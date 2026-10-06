@@ -112,11 +112,11 @@ tags: [linear-algebra]
 
 ^ladr-3-8
 
-> [!remark] Remark: Not commutative
-> $ST\neq TS$ in general, even when both make sense. For example on $\Poly(\R)$, with $D$ = differentiation and $T$ = multiplication by $x$: $(DT-TD)p=p$.
-
 > [!proof]+ Proof
 > *(Filled in.)* Each identity is checked pointwise. Associativity: both sides send $u$ to $T_1(T_2(T_3u))$. Distributivity: $(S_1+S_2)(Tu)=S_1Tu+S_2Tu$ by definition of $S_1+S_2$; and $S(T_1u+T_2u)=ST_1u+ST_2u$ by additivity of $S$ (this is where linearity of $S$ is needed).
+
+> [!remark] Remark: Not commutative
+> $ST\neq TS$ in general, even when both make sense. For example on $\Poly(\R)$, with $D$ = differentiation and $T$ = multiplication by $x$: $(DT-TD)p=p$.
 
 > [!remark]- Connections
 > - Commutation relations such as $DT-TD=I$ are the prototype of $[\hat{p},\hat{x}]$ in quantum mechanics; in finite dimensions $ST-TS=I$ is impossible ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-57|Identity operator is not the difference of ST and TS]]).

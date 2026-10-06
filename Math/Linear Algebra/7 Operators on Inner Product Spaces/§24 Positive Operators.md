@@ -51,9 +51,6 @@ tags: [linear-algebra]
 
 ^ladr-7-38
 
-> [!remark] Remark: The number analogy
-> $z\in\C$ is $\ge0$ iff it has a $\ge0$ square root (d), iff it has a real square root (e), iff $z=\bar ww$ (f).
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): if $Tv=\lambda v$, $v\ne0$, then $0\le\langle Tv,v\rangle=\lambda\|v\|^2$.
 >
@@ -69,6 +66,9 @@ tags: [linear-algebra]
 
 *Uses:* [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
 
+> [!remark] Remark: The number analogy
+> $z\in\C$ is $\ge0$ iff it has a $\ge0$ square root (d), iff it has a real square root (e), iff $z=\bar ww$ (f).
+
 > [!remark]- Connections
 > - (f) gives the positivity of $T^*T$ that SVD rests on ([[§26 Singular Value Decomposition#^ladr-7-64|Properties of T∗T]]).
 > - Computational version: [[§49★ Quadratic Forms#^prop-49-5|235 Prop. §49.5]] ((a)⟺(b) for symmetric matrices; the definite case is [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]]) and [[§52★ Applications to Image Processing and Statistics#^prop-52-1|235 Prop. §52.1]] ($BB^T$ is positive semidefinite, as in (f)).
@@ -79,15 +79,15 @@ tags: [linear-algebra]
 
 ^ladr-7-39
 
-> [!remark] Remark: Only one positive one
-> Square roots in general are plentiful: $I$ on $\R^2$ has infinitely many (all reflections), but only $I$ itself is positive.
-
 > [!proof]+ Proof
 > Existence is [[§24 Positive Operators#^ladr-7-38|7.38]](d). For uniqueness let $R$ be any positive square root of $T$ and $Tv=\lambda v$; we show $Rv=\sqrt\lambda\,v$, which determines $R$ on an eigenbasis of $T$.
 >
 > Take an orthonormal eigenbasis of $R$ ([[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]): $Re_k=\sqrt{\lambda_k}e_k$, $\lambda_k\ge0$. Write $v=\sum a_ke_k$. Then $\lambda v=Tv=R^2v=\sum a_k\lambda_ke_k$, so $a_k(\lambda-\lambda_k)=0$ for all $k$. Hence $v=\sum_{\lambda_k=\lambda}a_ke_k$ and $Rv=\sum_{\lambda_k=\lambda}a_k\sqrt\lambda\,e_k=\sqrt\lambda\,v$.
 
 *Uses:* [[§24 Positive Operators#^ladr-7-38|7.38]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
+
+> [!remark] Remark: Only one positive one
+> Square roots in general are plentiful: $I$ on $\R^2$ has infinitely many (all reflections), but only $I$ itself is positive.
 
 > [!remark]- Connections
 > - Used in Quantum Field Theory: the positive square roots $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ that boost a Dirac spinor from rest to momentum $p$, and the positive factor in the polar decomposition of $SL(2, \mathbb C)$ — [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|QFT Def. §C5a.5.4]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-7|QFT Theorem §C5a.5.7]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]].

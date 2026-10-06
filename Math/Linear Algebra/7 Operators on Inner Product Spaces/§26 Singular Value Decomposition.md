@@ -85,9 +85,6 @@ tags: [linear-algebra]
 
 ^ladr-7-70
 
-> [!remark] Remark: Reading it
-> Every linear map is: take coordinates along an orthonormal frame in $V$, scale the $k$-th by $s_k$, and place it along an orthonormal frame in $W$. Unlike the spectral theorem, the two frames differ, and the same proof works over $\R$ and $\C$.
-
 > [!proof]+ Proof
 > $T^*T$ is positive ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](a)), so there is an orthonormal basis $e_1,\dots,e_n$ of $V$ with $T^*Te_k=s_k^2e_k$ (spectral theorem, [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]; $s_k=0$ for $k>m$). For $k\le m$ put $f_k=Te_k/s_k$. Then
 > $$
@@ -96,6 +93,9 @@ tags: [linear-algebra]
 > so $f_1,\dots,f_m$ is orthonormal. For $k>m$, $T^*Te_k=0$, hence $Te_k=0$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](b)). So $Tv=\sum_{k\le n}\langle v,e_k\rangle Te_k=\sum_{k\le m}s_k\langle v,e_k\rangle f_k$.
 
 *Uses:* [[§26 Singular Value Decomposition#^ladr-7-64|7.64]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
+
+> [!remark] Remark: Reading it
+> Every linear map is: take coordinates along an orthonormal frame in $V$, scale the $k$-th by $s_k$, and place it along an orthonormal frame in $W$. Unlike the spectral theorem, the two frames differ, and the same proof works over $\R$ and $\C$.
 
 > [!remark]- Connections
 > - Computational version: [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]] ($A=U\Sigma V^T$) and [[§51★ The Singular Value Decomposition#^thm-51-5|235 Thm. §51.5]] ($A\mathbf v_i=\sigma_i\mathbf u_i$), worked in [[§51★ The Singular Value Decomposition#^ex-51-2|235 Ex. §51.2]].
@@ -122,15 +122,15 @@ tags: [linear-algebra]
 
 ^ladr-7-75
 
-> [!remark] Remark: Recipe
-> Adjoint: swap $e$ and $f$. Pseudoinverse: swap and invert the positive singular values (zeros stay zero).
-
 > [!proof]+ Proof
 > **Adjoint.** $\langle Tv,w\rangle=\sum_ks_k\langle v,e_k\rangle\langle f_k,w\rangle=\big\langle v,\sum_ks_k\langle w,f_k\rangle e_k\big\rangle$ ($s_k$ real).
 >
 > **Pseudoinverse.** Let $v=\sum_k\frac{\langle w,f_k\rangle}{s_k}e_k$. Since $Te_k=s_kf_k$, $Tv=\sum_k\langle w,f_k\rangle f_k=P_{\range T}w$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i); $f_1,\dots,f_m$ is an orthonormal basis of $\range T$). Also $v\in\Span(e_1,\dots,e_m)=\range T^{\ast}=(\nullsp T)^\perp$ (by the adjoint formula and [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]]). By the definition [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]], $v=T^\dagger w$.
 
 *Uses:* [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-68|6.68]]
+
+> [!remark] Remark: Recipe
+> Adjoint: swap $e$ and $f$. Pseudoinverse: swap and invert the positive singular values (zeros stay zero).
 
 > [!remark]- Connections
 > - Computational version: [[§51★ The Singular Value Decomposition#^def-51-4|235 Def. §51.4]] ($A^+=V_rD^{-1}U_r^T$, the same formula in matrix form).

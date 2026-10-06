@@ -129,13 +129,18 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 
 People often expect to order everything — in competitions, in admission to schools. This expectation is exactly property O1: any two elements can be compared. But O1 is not always available.
 
-> [!definition] Definition §3.3: Ordered and Partially Ordered Sets
-> A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**). If $\leq$ satisfies only O2, O3 and *reflexivity* ($a \leq a$ for every $a$, which O1 implies but which must be required separately once O1 is dropped), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
+> [!definition] Definition §3.3: Ordered Sets
+> A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**).
 
 ^def-3-3
 
 > [!remark]- Connections
 > - 590 uses the strict form: an order relation, [[§3 Order Topology#^def-3-1|590 Def. §3.1]], which defines the order topology.
+
+> [!definition] Definition §3.3: Partially Ordered Sets
+> Let $\leq$ be a relation on a set. If $\leq$ satisfies only O2, O3 and *reflexivity* ($a \leq a$ for every $a$, which O1 implies but which must be required separately once O1 is dropped), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
+
+^def-3-new1
 
 > [!example] Example §3.1: The Product Order on $\mathbb{R}^2$ Is Partial but Not Linear
 > On the plane $\mathbb{R}^2$, define

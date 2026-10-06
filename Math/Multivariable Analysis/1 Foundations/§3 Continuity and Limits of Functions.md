@@ -280,12 +280,17 @@ The following theorems show that continuous functions are closed under the stand
 > [!remark]- Connections
 > - Worked examples: the two-path test, [[§91 Limits and Continuity#^thm-91-1|Calc Thm. §91.1]], applied to xy/(x² + y²) in [[§91 Limits and Continuity#^ex-91-1|Calc Ex. §91.1]].
 
-> [!definition] Definition §3.3: Big-O and Little-o Notation
+> [!definition] Definition §3.3: Big-O Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.
 > - $f(x, y) = O(\rho)$ means $|f(x, y)| \leq C\rho$ for some constant $C$ near the origin.
-> - $f(x, y) = o(\rho)$ means $\displaystyle\lim_{\rho \to 0} \frac{f(x, y)}{\rho} = 0$ (i.e., $f$ vanishes faster than $\rho$).
 
 ^def-3-3
+
+> [!definition] Definition §3.3: Little-o Notation
+> Let $\rho = \sqrt{x^2 + y^2}$.
+> - $f(x, y) = o(\rho)$ means $\displaystyle\lim_{\rho \to 0} \frac{f(x, y)}{\rho} = 0$ (i.e., $f$ vanishes faster than $\rho$).
+
+^def-3-new1
 
 > [!example] Example §3.3
 > $f(x, y) = x^2 + y^2 = o(\rho)$, since $\dfrac{x^2 + y^2}{\sqrt{x^2 + y^2}} = \sqrt{x^2 + y^2} \to 0$.

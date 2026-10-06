@@ -8,21 +8,31 @@ tags: [linear-algebra]
 ---
 ← [[§12 Duality]] · ↑ [[· 4 Polynomials]] · [[§14 Invariant Subspaces]] →
 
-> [!definition] Definition 4.1: Real part, Re z, imaginary part, Im z
-> For $z=a+bi$ with $a,b\in\R$: the *real part* is $\operatorname{Re}z=a$ and the *imaginary part* is $\operatorname{Im}z=b$. So $z=\operatorname{Re}z+(\operatorname{Im}z)\,i$.
+> [!definition] Definition 4.1: Real part, Re z
+> For $z=a+bi$ with $a,b\in\R$: the *real part* is $\operatorname{Re}z=a$.
 
 ^ladr-4-1
 
+> [!definition] Definition 4.1b: Imaginary part, Im z
+> For $z=a+bi$ with $a,b\in\R$: the *imaginary part* is $\operatorname{Im}z=b$. So $z=\operatorname{Re}z+(\operatorname{Im}z)\,i$.
+
+^ladr-4-1b
+
 > [!remark]- Connections
-> - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]].
+> - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄]], [[§13 Polynomials#^ladr-4-2b|absolute value, ∣z∣]].
 > - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (Re z and Im z).
 
-> [!definition] Definition 4.2: Complex conjugate, z̄, absolute value, |z|
+> [!definition] Definition 4.2: Complex conjugate, z̄
 > For $z\in\C$:
-> - the *complex conjugate* is $\bar z=\operatorname{Re}z-(\operatorname{Im}z)\,i$;
-> - the *absolute value* is $|z|=\sqrt{(\operatorname{Re}z)^2+(\operatorname{Im}z)^2}$.
+> - the *complex conjugate* is $\bar z=\operatorname{Re}z-(\operatorname{Im}z)\,i$.
 
 ^ladr-4-2
+
+> [!definition] Definition 4.2b: Absolute value, |z|
+> For $z\in\C$:
+> - the *absolute value* is $|z|=\sqrt{(\operatorname{Re}z)^2+(\operatorname{Im}z)^2}$.
+
+^ladr-4-2b
 
 > [!remark]- Connections
 > - Properties: [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[§19 Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[§22 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
@@ -52,11 +62,8 @@ tags: [linear-algebra]
 
 ^ladr-4-4
 
-> [!remark] Remark: Reverse triangle inequality
-> $\big||w|-|z|\big|\le|w-z|$ follows by applying the triangle inequality to $w=(w-z)+z$ and to $z=(z-w)+w$.
-
 > [!proof]+ Proof
-> All but the last are direct computations from [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]] (e.g. $(a+bi)(a-bi)=a^2+b^2$). *(Filled in: multiplicativity of $|\cdot|$.)* $|wz|^2=wz\,\overline{wz}=(w\bar w)(z\bar z)=|w|^2|z|^2$.
+> All but the last are direct computations from [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄]], [[§13 Polynomials#^ladr-4-2b|absolute value, ∣z∣]] (e.g. $(a+bi)(a-bi)=a^2+b^2$). *(Filled in: multiplicativity of $|\cdot|$.)* $|wz|^2=wz\,\overline{wz}=(w\bar w)(z\bar z)=|w|^2|z|^2$.
 >
 > **Triangle inequality.**
 > $$
@@ -65,7 +72,10 @@ tags: [linear-algebra]
 > $$
 > using $\operatorname{Re}u\le|u|$ and $|w\bar z|=|w||z|$. Take square roots.
 
-*Uses:* [[§13 Polynomials#^ladr-4-2|4.2]]
+*Uses:* [[§13 Polynomials#^ladr-4-2|4.2]], [[§13 Polynomials#^ladr-4-2b|4.2b]]
+
+> [!remark] Remark: Reverse triangle inequality
+> $\big||w|-|z|\big|\le|w-z|$ follows by applying the triangle inequality to $w=(w-z)+z$ and to $z=(z-w)+w$.
 
 > [!remark]- Connections
 > - The same proof pattern gives the triangle inequality for norms: [[Triangle inequality]], via [[Cauchy–Schwarz inequality]].
@@ -106,13 +116,13 @@ tags: [linear-algebra]
 
 ^ladr-4-8
 
-> [!remark] Remark: Coefficients are unique
-> If a polynomial function had two coefficient lists, their difference would be a nonzero-coefficient polynomial with infinitely many zeros (all of $\F$), contradicting this result. So coefficients and degree are well defined (used in [[§4 Span and Linear Independence#^ladr-2-10|Polynomial, P(F)]], [[§4 Span and Linear Independence#^ladr-2-11|Degree of a polynomial, deg p]]), and $1,z,\dots,z^m$ is linearly independent.
-
 > [!proof]+ Proof
 > Induction on $m$. For $m=1$, $a_0+a_1z$ with $a_1\ne0$ has exactly one zero $-a_0/a_1$. For $m>1$: if $p$ has no zero we are done; otherwise let $p(\lambda)=0$ and write $p=(z-\lambda)q$ with $\deg q=m-1$ ([[§13 Polynomials#^ladr-4-6|Each zero of a polynomial corresponds to a degree-one factor]]). The zeros of $p$ are $\lambda$ together with the zeros of $q$, of which there are at most $m-1$.
 
 *Uses:* [[§13 Polynomials#^ladr-4-6|4.6]]
+
+> [!remark] Remark: Coefficients are unique
+> If a polynomial function had two coefficient lists, their difference would be a nonzero-coefficient polynomial with infinitely many zeros (all of $\F$), contradicting this result. So coefficients and degree are well defined (used in [[§4 Span and Linear Independence#^ladr-2-10|Polynomial, P(F)]], [[§4 Span and Linear Independence#^ladr-2-11|Degree of a polynomial, deg p]]), and $1,z,\dots,z^m$ is linearly independent.
 
 > [!remark]- Connections
 > - Alternative bound on the number of eigenvalues: via [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]] and [[Existence, uniqueness, and degree of minimal polynomial]] (compare [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]]).
@@ -127,9 +137,6 @@ tags: [linear-algebra]
 
 ^ladr-4-9
 
-> [!remark] Remark: A linear-algebra proof
-> No long division: existence and uniqueness both come from a basis of $\Poly_n(\F)$.
-
 > [!proof]+ Proof
 > Let $n=\deg p$, $m=\deg s$. If $n<m$ take $q=0$, $r=p$. Otherwise consider
 > $$
@@ -143,6 +150,9 @@ tags: [linear-algebra]
 
 *Uses:* [[§6 Dimension#^ladr-2-38|2.38]], [[§5 Bases#^ladr-2-28|2.28]]
 
+> [!remark] Remark: A linear-algebra proof
+> No long division: existence and uniqueness both come from a basis of $\Poly_n(\F)$.
+
 > [!remark]- Connections
 > - Key step in [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: every annihilating polynomial is a multiple of the minimal polynomial.
 > - Integer version: [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (hub [[Division Algorithm]]).
@@ -152,9 +162,6 @@ tags: [linear-algebra]
 > Every nonconstant polynomial with complex coefficients has a zero in $\C$.
 
 ^ladr-4-12
-
-> [!remark] Remark: Analysis inside algebra
-> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the [[Extreme Value Theorem|extreme value theorem]], here on a compact disk in $\C$). There is no purely algebraic proof over $\C$.
 
 > [!proof]+ Proof
 > **$k$-th roots exist.** By De Moivre ([[§8 Products and Powers in Exponential Form#^cor-8-3|342 Cor. §8.3]]), $(\cos\theta+i\sin\theta)^k=\cos k\theta+i\sin k\theta$. Writing $w=r(\cos\theta+i\sin\theta)$, the number $r^{1/k}\big(\cos\frac{\theta}{k}+i\sin\frac{\theta}{k}\big)$ is a $k$-th root of $w$.
@@ -166,6 +173,9 @@ tags: [linear-algebra]
 > |q(t\beta)|\le|1+a_kt^k\beta^k|+t^{k+1}c=1-t^k(1-tc).
 > $$
 > With $t=1/(2c)$ this is $<1$, a contradiction. So $p(\zeta)=0$.
+
+> [!remark] Remark: Analysis inside algebra
+> The proof needs a genuinely analytic input: a continuous function on a compact set attains its minimum (the [[Extreme Value Theorem|extreme value theorem]], here on a compact disk in $\C$). There is no purely algebraic proof over $\C$.
 
 %% ex:4.12-fig %%
 > [!example] Example: The key step of the proof, pictured

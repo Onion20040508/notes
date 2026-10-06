@@ -13,9 +13,6 @@ tags: [linear-algebra]
 
 ^ladr-8-39
 
-> [!remark] Remark: Why it works
-> Nilpotency truncates the power series, so there are no convergence questions.
-
 > [!proof]+ Proof
 > Motivated by $\sqrt{1+x}=1+\frac12x-\frac18x^2+\frac1{16}x^3-\cdots$, look for $R=I+a_1T+\dots+a_{m-1}T^{m-1}$ where $T^m=0$. Then
 > $$
@@ -23,18 +20,21 @@ tags: [linear-algebra]
 > $$
 > all terms with $T^{\ge m}$ vanishing. Choose $a_1=\frac12$ and then, recursively, $a_k$ so that the coefficient of $T^k$ is $0$ for $k=2,\dots,m-1$ (possible since $a_k$ enters with coefficient $2$). Then $R^2=I+T$. (The $a_k$ are exactly the Taylor coefficients: $a_2=-\frac18$, $a_3=\frac1{16}$, $a_4=-\frac5{128}$.)
 
+> [!remark] Remark: Why it works
+> Nilpotency truncates the power series, so there are no convergence questions.
+
 > [!theorem] Theorem 8.41: Over C, invertible operators have square roots
 > If $V$ is a complex vector space and $T\in\Lin(V)$ is invertible, then $T$ has a square root.
 
 ^ladr-8-41
 
-> [!remark] Remark: Hypotheses matter
-> Invertibility: $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has no square root. $\C$: $-1$ on $\R$ has none. The same method gives $k$-th roots.
-
 > [!proof]+ Proof
 > On $G(\lambda_k,T)$, $T=\lambda_kI+N_k$ with $N_k$ nilpotent ([[Generalized eigenspace decomposition|8.22]]), and $\lambda_k\ne0$, so $T|_{G(\lambda_k,T)}=\lambda_k(I+N_k/\lambda_k)$. With $\mu_k^2=\lambda_k$ and $S_k^2=I+N_k/\lambda_k$ ([[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-39|8.39]]), $R_k=\mu_kS_k$ is a square root of $T|_{G(\lambda_k,T)}$ mapping $G(\lambda_k,T)$ into itself. For $v=u_1+\dots+u_m$, $u_k\in G(\lambda_k,T)$, set $Rv=R_1u_1+\dots+R_mu_m$. Then $R^2v=\sum R_k^2u_k=\sum Tu_k=Tv$.
 
 *Uses:* [[Generalized eigenspace decomposition|8.22]], [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-39|8.39]]
+
+> [!remark] Remark: Hypotheses matter
+> Invertibility: $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has no square root. $\C$: $-1$ on $\R$ has none. The same method gives $k$-th roots.
 
 > [!remark]- Connections
 > - Compare [[§24 Positive Operators#^ladr-7-39|7.39]]: positive operators have a unique *positive* square root, for any $\F$.
@@ -76,9 +76,6 @@ tags: [linear-algebra]
 
 ^ladr-8-45
 
-> [!remark] Remark: Structure
-> The basis consists of chains $T^{j}v_k$; each chain is one Jordan block, and $\dim\nullsp T$ is the number of blocks (figure in [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-43|8.43]]).
-
 > [!proof]+ Proof
 > Induction on $\dim V$; $\dim V=1$ is trivial. Let $m$ be minimal with $T^m=0$, pick $u$ with $T^{m-1}u\ne0$, and let $U=\Span(u,Tu,\dots,T^{m-1}u)$. This list is independent (if $\sum c_jT^ju=0$ with $k$ the least index with $c_k\ne0$, applying $T^{m-1-k}$ leaves $c_kT^{m-1}u=0$). $U$ is invariant, and $T^{m-1}u,\dots,Tu,u$ is a Jordan basis for $T|_U$ (one block). If $U=V$ we are done.
 >
@@ -96,18 +93,21 @@ tags: [linear-algebra]
 
 *Uses:* [[Fundamental theorem of linear maps|3.21]]
 
+> [!remark] Remark: Structure
+> The basis consists of chains $T^{j}v_k$; each chain is one Jordan block, and $\dim\nullsp T$ is the number of blocks (figure in [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-43|8.43]]).
+
 > [!theorem] Theorem 8.46: Jordan form
 > If $\F=\C$ and $T\in\Lin(V)$, then $V$ has a Jordan basis for $T$.
 
 ^ladr-8-46
 
-> [!remark] Remark: What is determined
-> The block sizes for each eigenvalue are determined by $T$: the number of blocks of size $\ge j$ for $\lambda$ is $\dim\nullsp(T-\lambda I)^j-\dim\nullsp(T-\lambda I)^{j-1}$. Diagonalizable iff all blocks have size $1$.
-
 > [!proof]+ Proof
 > $V=\bigoplus_kG(\lambda_k,T)$ with each $(T-\lambda_kI)|_{G(\lambda_k,T)}$ nilpotent ([[Generalized eigenspace decomposition|8.22]]). Take a Jordan basis for each ([[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45]]); on $G(\lambda_k,T)$ it is a Jordan basis for $T=\lambda_kI+(T-\lambda_kI)$. Concatenate.
 
 *Uses:* [[Generalized eigenspace decomposition|8.22]], [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45]]
+
+> [!remark] Remark: What is determined
+> The block sizes for each eigenvalue are determined by $T$: the number of blocks of size $\ge j$ for $\lambda$ is $\dim\nullsp(T-\lambda I)^j-\dim\nullsp(T-\lambda I)^{j-1}$. Diagonalizable iff all blocks have size $1$.
 
 > [!remark]- Connections
 > - Computational version: [[§35 Eigenvectors and Linear Transformations#^ex-35-3|235 Ex. §35.3]] (a non-diagonalizable $2\times2$ matrix put in Jordan form).

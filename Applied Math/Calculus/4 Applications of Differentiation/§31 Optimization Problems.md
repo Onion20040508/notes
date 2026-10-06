@@ -194,15 +194,27 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 
 ## Applications to Business and Economics
 
-> [!definition] Definition §31.1: Demand, Revenue and Profit Functions
+> [!definition] Definition §31.1: Demand Function
 > Let $C(x)$ be the **cost function**, the cost of producing $x$ units of a product; its derivative $C'(x)$ is the **marginal cost** ([[§20 Rates of Change in the Natural and Social Sciences#^def-20-7|Def. §20.7]]).
 > - If $p(x)$ is the price per unit that the company can charge if it sells $x$ units, then $p$ is the **demand function** (or **price function**). One expects it to be decreasing.
-> - The **revenue function** is $R(x) = x\,p(x)$ (quantity $\times$ price), and its derivative $R'$ is the **marginal revenue function**.
-> - The **profit function** is $P(x) = R(x) - C(x)$, and its derivative $P'$ is the **marginal profit function**.
 >
 > *Stewart: 4.7 (text)*
 
 ^def-31-1
+
+> [!definition] Definition §31.1: Revenue Function
+> - The **revenue function** is $R(x) = x\,p(x)$ (quantity $\times$ price), and its derivative $R'$ is the **marginal revenue function**.
+>
+> *Stewart: 4.7 (text)*
+
+^def-31-new1
+
+> [!definition] Definition §31.1: Profit Function
+> - The **profit function** is $P(x) = R(x) - C(x)$, and its derivative $P'$ is the **marginal profit function**.
+>
+> *Stewart: 4.7 (text)*
+
+^def-31-new2
 
 > [!example] Example §31.5: Maximizing Revenue
 > A store has been selling $200$ TV monitors a week at $\$350$ each. A market survey indicates that for each $\$10$ rebate offered to buyers, the number of monitors sold will increase by $20$ a week. Find the demand function and the revenue function. How large a rebate should the store offer to maximize revenue?

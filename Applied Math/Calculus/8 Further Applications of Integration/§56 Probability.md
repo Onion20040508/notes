@@ -142,7 +142,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \sum_{i=1}^n \bar t_i\, f(\bar t_i)\,\Delta t .
 > $$
 >
-> This is a Riemann sum for $t f(t)$ ([[§35 The Definite Integral#^def-35-2|Definition §35.2]]), with the midpoints as sample points. As $\Delta t \to 0$ and $n \to \infty$ it tends to $\int_0^{60} t f(t)\,dt$ ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]), the **mean waiting time**.
+> This is a Riemann sum for $t f(t)$ ([[§35 The Definite Integral#^def-35-new1|Definition §35.2]]), with the midpoints as sample points. As $\Delta t \to 0$ and $n \to \infty$ it tends to $\int_0^{60} t f(t)\,dt$ ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]), the **mean waiting time**.
 
 ^rem-56-3
 

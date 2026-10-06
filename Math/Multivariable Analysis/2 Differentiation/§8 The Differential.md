@@ -69,7 +69,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > f(x_0 + h, y_0 + k) - f(x_0, y_0) = df\big|_{(x_0, y_0, h, k)} + o(\rho).
 > $$
 >
-> So the differential $df$ is the “best linear approximation” to the change in $f$ (see [[§6 Differentiability#^def-6-2|the total derivative]]; [[§3 Continuity and Limits of Functions#^def-3-3|little-o notation]]).
+> So the differential $df$ is the “best linear approximation” to the change in $f$ (see [[§6 Differentiability#^def-6-2|the total derivative]]; [[§3 Continuity and Limits of Functions#^def-3-new1|little-o notation]]).
 
 ^rem-8-2
 

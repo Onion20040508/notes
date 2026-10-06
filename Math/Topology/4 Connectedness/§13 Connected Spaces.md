@@ -10,12 +10,15 @@ tags: [topology, math590]
 
 ## Definition and Basic Properties
 
-> [!definition] Definition §13.1: Separation and Connected Space
+> [!definition] Definition §13.1: Separation
 > A **separation** of a topological space $X$ is a pair $U, V$ of disjoint nonempty open subsets of $X$ whose union is $X$.
->
-> A space is called **connected** if there doesn't exist a separation of $X$.
 
 ^def-13-1
+
+> [!definition] Definition §13.1: Connected Space
+> A space is called **connected** if there doesn't exist a [[§13 Connected Spaces#^def-13-1|separation]] of $X$.
+
+^def-13-new1
 
 > [!remark]- Connections
 > - In the complex plane: [[§12★ Regions in the Complex Plane#^def-12-4|342 Def. §12.4]] (domains, defined by polygonal connectedness, which for open subsets of the plane agrees with connectedness).

@@ -37,9 +37,6 @@ tags: [linear-algebra]
 
 ^ladr-7-49
 
-> [!remark] Remark: Consequences
-> An isometry maps *some* orthonormal basis to an orthonormal list iff it maps *every* one; and 'preserves norms' is the same as 'preserves inner products' (c).
-
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b): $\langle(I-S^*S)v,v\rangle=\|v\|^2-\|Sv\|^2=0$ for all $v$, and $I-S^*S$ is self-adjoint, so it is $0$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]]).
 >
@@ -52,6 +49,9 @@ tags: [linear-algebra]
 > (e)$\Rightarrow$(a): reading the same computation backwards, $Se_1,\dots,Se_n$ is orthonormal. Then for $v=\sum\langle v,e_k\rangle e_k$, $\|Sv\|^2=\sum|\langle v,e_k\rangle|^2=\|v\|^2$ by [[§20 Orthonormal Bases#^ladr-6-24|6.24]] and [[§20 Orthonormal Bases#^ladr-6-30|6.30]](b).
 
 *Uses:* [[§22 Self-Adjoint and Normal Operators#^ladr-7-16|7.16]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]], [[§20 Orthonormal Bases#^ladr-6-24|6.24]]
+
+> [!remark] Remark: Consequences
+> An isometry maps *some* orthonormal basis to an orthonormal list iff it maps *every* one; and 'preserves norms' is the same as 'preserves inner products' (c).
 
 > [!remark]- Connections
 > - Computational version: [[§41 Orthogonal Sets#^thm-41-4|235 Thm. §41.4]] ($U^TU=I$ iff $U$ has orthonormal columns) and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]].
@@ -103,15 +103,15 @@ tags: [linear-algebra]
 
 ^ladr-7-55
 
-> [!remark] Remark: Unitary = $e^{i\cdot\text{Hermitian}}$
-> Writing $\lambda_k=e^{i\theta_k}$, $S=e^{iA}$ where $A$ is self-adjoint with eigenvalues $\theta_k$ on the same eigenbasis. This is the finite-dimensional Stone theorem.
-
 > [!proof]+ Proof
 > ($\Rightarrow$) $S$ is normal ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]](b)), so [[Complex spectral theorem|7.31]] gives an orthonormal eigenbasis, and [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|7.54]] gives $|\lambda_k|=1$.
 >
 > ($\Leftarrow$) $\langle Se_j,Se_k\rangle=\lambda_j\bar\lambda_k\langle e_j,e_k\rangle=\delta_{jk}$ (since $|\lambda_k|^2=1$), so $Se_1,\dots,Se_n$ is orthonormal and $S$ is unitary ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]](d)).
 
 *Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[Complex spectral theorem|7.31]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|7.54]]
+
+> [!remark] Remark: Unitary = $e^{i\cdot\text{Hermitian}}$
+> Writing $\lambda_k=e^{i\theta_k}$, $S=e^{iA}$ where $A$ is self-adjoint with eigenvalues $\theta_k$ on the same eigenbasis. This is the finite-dimensional Stone theorem.
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: the time-evolution operator of a time-independent Hamiltonian, $\mathscr U = e^{-iHt/\hbar}$, is this description read backwards — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]].
@@ -149,15 +149,15 @@ tags: [linear-algebra]
 
 ^ladr-7-58
 
-> [!remark] Remark: Use
-> $Ax=b\iff Rx=Q^*b$, solved by back substitution; numerically more stable than Gaussian elimination.
-
 > [!proof]+ Proof
 > **Existence.** Let $v_1,\dots,v_n$ be the columns of $A$; Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]) gives an orthonormal basis $e_1,\dots,e_n$ with $\Span(v_1,\dots,v_k)=\Span(e_1,\dots,e_k)$. Put $R_{j,k}=\langle v_k,e_j\rangle$ and let $Q$ have columns $e_1,\dots,e_n$. For $j>k$, $e_j\perp\Span(e_1,\dots,e_k)\ni v_k$, so $R$ is upper triangular. Column $k$ of $QR$ is $\sum_j\langle v_k,e_j\rangle e_j=v_k$ ([[§20 Orthonormal Bases#^ladr-6-30|6.30]](a)), so $QR=A$. From the Gram–Schmidt formulas $v_k=\|f_k\|e_k+(\text{combination of }e_1,\dots,e_{k-1})$, so $R_{k,k}=\|f_k\|>0$.
 >
 > **Uniqueness.** If $A=QR=\hat Q\hat R$, then $U=\hat Q^{\ast}Q=\hat RR^{-1}$ is unitary and upper triangular with positive diagonal. Its inverse $U^{\ast}$ is lower triangular, but the inverse of an invertible upper-triangular matrix is upper triangular; so $U^{\ast}$, hence $U$, is diagonal. A diagonal unitary matrix has $|u_{k,k}|=1$, and $u_{k,k}>0$, so $U=I$: $\hat Q=Q$ and $\hat R=R$.
 
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§20 Orthonormal Bases#^ladr-6-30|6.30]]
+
+> [!remark] Remark: Use
+> $Ax=b\iff Rx=Q^*b$, solved by back substitution; numerically more stable than Gaussian elimination.
 
 > [!remark]- Connections
 > - Gives Cholesky [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-63|7.63]]; used for Hadamard's inequality ([[§34 Determinants#^ladr-9-66|Hadamard’s inequality]]).
@@ -202,15 +202,15 @@ tags: [linear-algebra]
 
 ^ladr-7-63
 
-> [!remark] Remark: Use
-> Solving $Bx=b$ via two triangular systems; sampling correlated Gaussians ($x=R^*z$ has covariance $B$).
-
 > [!proof]+ Proof
 > By [[§24 Positive Operators#^ladr-7-38|7.38]](f), $B=A^*A$ for some $A$, invertible since $B$ is. With $A=QR$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]]), $B=R^*Q^*QR=R^*R$.
 >
 > Uniqueness: if also $B=S^*S$ with $S$ upper triangular, positive diagonal, then $S$ is invertible and $(AS^{-1})^*(AS^{-1})=(S^*)^{-1}BS^{-1}=I$, so $AS^{-1}$ is unitary and $A=(AS^{-1})S$ is a QR factorization. Uniqueness in [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]] gives $S=R$.
 
 *Uses:* [[§24 Positive Operators#^ladr-7-38|7.38]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|7.58]]
+
+> [!remark] Remark: Use
+> Solving $Bx=b$ via two triangular systems; sampling correlated Gaussians ($x=R^*z$ has covariance $B$).
 
 > [!remark]- Connections
 > - Computational version: [[§49★ Quadratic Forms#^rem-49-3|235 Remark §49.3]] (as a fast test for positive definiteness).

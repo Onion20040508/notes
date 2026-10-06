@@ -10,18 +10,25 @@ tags: [topology, math590]
 
 ## Definitions
 
-> [!definition] Definition §7.1: Interior and Closure
+> [!definition] Definition §7.1: Interior
 > Let $A \subseteq X$, where $X$ is a topological space.
 >
 > The **interior** of $A$, denoted $\text{Int}(A)$ or $\mathring{A}$, is the union of all open sets in $X$ contained in $A$.
->
-> The **closure** of $A$, denoted $\text{cl}(A)$ or $\overline{A}$, is the intersection of all closed sets in $X$ containing $A$.
 
 ^def-7-1
 
 > [!remark]- Connections
-> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Closure]] in a metric space, with its [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|Sequential Characterization of the Closure]].
 > - In a normed space: the closure as the set of limits of sequences ([[§10 Normed Linear Spaces#^def-10-7|556 Def. §10.7]]), and interior points through balls ([[§10 Normed Linear Spaces#^def-10-9|556 Def. §10.9]]), which are stronger than the algebraic interior points of [[§6 Convex Sets and the Gauge#^def-6-1|556 Def. §6.1]] ([[§10 Normed Linear Spaces#^ex-10-2|556 Ex. §10.2]]).
+
+> [!definition] Definition §7.1: Closure
+> Let $A \subseteq X$, where $X$ is a topological space.
+>
+> The **closure** of $A$, denoted $\text{cl}(A)$ or $\overline{A}$, is the intersection of all closed sets in $X$ containing $A$.
+
+^def-7-new1
+
+> [!remark]- Connections
+> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Closure]] in a metric space, with its [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|Sequential Characterization of the Closure]].
 
 > [!theorem] Lemma §7.1: Interior and Closure Containment
 > Let $A \subseteq X$ be a subset of a topological space. Then:
@@ -96,12 +103,15 @@ tags: [topology, math590]
 
 ## Neighborhoods
 
-> [!definition] Definition §7.2: Intersects and Neighborhood
+> [!definition] Definition §7.2: Intersects
 > We say a set $A$ **intersects** a set $B$ if $A \cap B \neq \emptyset$.
->
-> If $U \subseteq X$ is an open set containing $x \in X$, we say “$U$ is a **neighborhood** of $x$”.
 
 ^def-7-2
+
+> [!definition] Definition §7.2: Neighborhood
+> If $U \subseteq X$ is an open set containing $x \in X$, we say “$U$ is a **neighborhood** of $x$”.
+
+^def-7-new2
 
 > [!example] Example §7.3
 > $(-\varepsilon, \varepsilon)$ is a neighborhood of $0$ in $\mathbb{R}$.

@@ -17,6 +17,7 @@ tags: [chapter, linear-algebra]
 - [[§25 Isometries, Unitary Operators, and Matrix Factorization]]
 - [[§26 Singular Value Decomposition]]
 - [[§27 Consequences of Singular Value Decomposition]]
+- [[§27a The Operator (2w − 3z, 3w + 2z)]]
 
 ## Central results
 - [[Real spectral theorem]] (7.29)

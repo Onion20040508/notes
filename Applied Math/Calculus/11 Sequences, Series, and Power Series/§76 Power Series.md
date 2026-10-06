@@ -184,9 +184,14 @@ In these examples the set where the series converges is an interval: finite for 
 > - Rigorous treatment: [[§23 Power Series#^thm-23-1|451 Thm. §23.1]] (the same trichotomy) and [[§23 Power Series#^thm-23-2|451 Thm. §23.2]], which also gives a formula for $R$: $R = 1/\limsup |c_n|^{1/n}$ (Cauchy–Hadamard), proved with the Root Test.
 > - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (the interval of convergence becomes a disk, inside the circle of convergence).
 
-> [!definition] Definition §76.3: Radius and Interval of Convergence
+> [!definition] Definition §76.3: Radius of Convergence
 > The number $R$ in case (iii) of Theorem §76.3 is the **radius of convergence** of the power series. By convention, $R = 0$ in case (i) and $R = \infty$ in case (ii).
 >
+> *Stewart: 11.8 (text)*
+
+^def-76-3
+
+> [!definition] Definition §76.4: Interval of Convergence
 > The **interval of convergence** is the interval of all $x$ for which the series converges. In case (i) it is the single point $a$; in case (ii) it is $(-\infty, \infty)$. In case (iii), $|x - a| < R$ reads $a - R < x < a + R$; at an *endpoint* $x = a \pm R$ anything can happen (convergence at one, both or neither endpoint), so there are four possibilities:
 >
 > $$
@@ -195,7 +200,7 @@ In these examples the set where the series converges is an interval: finite for 
 >
 > *Stewart: 11.8 (text)*
 
-^def-76-3
+^def-76-new1
 
 ![[m233-76-1.svg]]
 *Case (iii) of Theorem §76.3. Inside the interval $|x - a| < R$ (blue) the series converges, and in fact converges absolutely (proof of Lemma §76.1). Outside it (red) the series diverges. At the two endpoints $a \pm R$ (orange) the theorem says nothing, and each endpoint must be tested separately.*

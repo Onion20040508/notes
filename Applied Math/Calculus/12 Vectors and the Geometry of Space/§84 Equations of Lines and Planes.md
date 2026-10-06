@@ -38,14 +38,19 @@ A line in space is determined by a point and a direction vector, a plane by a po
 > [!remark]- Connections
 > - Matrix version: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (the solution set of a consistent $A\mathbf{x} = \mathbf{b}$ is $\mathbf{p} + \operatorname{Nul} A$; with one free variable it is the line $\mathbf{x} = \mathbf{p} + t\mathbf{v}$), worked in [[§5 Solution Sets of Linear Systems#^ex-5-3|235 Ex. §5.3]].
 
-> [!definition] Definition §84.1: Vector Equation, Parameter, Direction Numbers
+> [!definition] Definition §84.1: Vector Equation and Parameter
 > Equation (1) is a **vector equation** of $L$, and $t$ is the **parameter**: each value of $t$ gives the position vector of one point of $L$, and as $t$ varies the line is traced out by the tip of $\mathbf{r}$. Positive values of $t$ give points on one side of $P_0$, negative values points on the other side.
->
-> If $\mathbf{v} = \langle a, b, c \rangle$ is used to describe the direction of $L$, then $a$, $b$, $c$ are **direction numbers** of $L$. Any three numbers proportional to $a$, $b$, $c$ are also direction numbers of $L$.
 >
 > *Stewart: 12.5 (text)*
 
 ^def-84-1
+
+> [!definition] Definition §84.2: Direction Numbers
+> If $\mathbf{v} = \langle a, b, c \rangle$ is used to describe the direction of $L$, then $a$, $b$, $c$ are **direction numbers** of $L$. Any three numbers proportional to $a$, $b$, $c$ are also direction numbers of $L$.
+>
+> *Stewart: 12.5 (text)*
+
+^def-84-new1
 
 > [!theorem] Proposition §84.2: Parametric Equations of a Line
 > Parametric equations for the line through the point $(x_0, y_0, z_0)$ and parallel to the direction vector $\langle a, b, c \rangle$ are
@@ -294,12 +299,19 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^ex-84-3
 
-> [!definition] Definition §84.4: Parallel Planes and the Angle Between Planes
-> Two planes are **parallel** if their normal vectors are parallel. If two planes are not parallel, they intersect in a straight line, and the **angle between the two planes** is the acute angle between their normal vectors.
+> [!definition] Definition §84.4: Parallel Planes
+> Two planes are **parallel** if their normal vectors are parallel.
 >
 > *Stewart: 12.5 (text)*
 
 ^def-84-4
+
+> [!definition] Definition §84.5: The Angle Between Planes
+> If two planes are not parallel, they intersect in a straight line, and the **angle between the two planes** is the acute angle between their normal vectors.
+>
+> *Stewart: 12.5 (text)*
+
+^def-84-new2
 
 > [!remark] Remark: A Line as the Intersection of Two Planes
 > Two nonparallel planes $a_1x + b_1y + c_1z + d_1 = 0$ and $a_2x + b_2y + c_2z + d_2 = 0$ meet in a line, so a pair of linear equations can represent a line. The line is perpendicular to both normal vectors, so $\mathbf{n}_1 \times \mathbf{n}_2$ is a direction vector for it ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]); a point on it is found by fixing one variable (often $z = 0$) and solving for the other two. Conversely, the symmetric equations (3) exhibit a line as the intersection of the two planes $\frac{x - x_0}{a} = \frac{y - y_0}{b}$ and $\frac{y - y_0}{b} = \frac{z - z_0}{c}$. Another way to find the line of intersection is to solve the two equations for two of the variables in terms of the third, which serves as the parameter.

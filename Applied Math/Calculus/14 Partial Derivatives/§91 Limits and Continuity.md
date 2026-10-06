@@ -311,8 +311,8 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 
 ## Functions of Three or More Variables
 
-> [!definition] Definition §91.4: Limits and Continuity in Three or More Variables
-> For a function of three variables, $\lim_{(x, y, z) \to (a, b, c)} f(x, y, z) = L$ means: for every $\varepsilon > 0$ there is a $\delta > 0$ such that if $(x, y, z)$ is in the domain of $f$ and $0 < \sqrt{(x - a)^2 + (y - b)^2 + (z - c)^2} < \delta$, then $|f(x, y, z) - L| < \varepsilon$. The function $f$ is **continuous** at $(a, b, c)$ if $\lim_{(x, y, z) \to (a, b, c)} f(x, y, z) = f(a, b, c)$.
+> [!definition] Definition §91.4: Limits in Three or More Variables
+> For a function of three variables, $\lim_{(x, y, z) \to (a, b, c)} f(x, y, z) = L$ means: for every $\varepsilon > 0$ there is a $\delta > 0$ such that if $(x, y, z)$ is in the domain of $f$ and $0 < \sqrt{(x - a)^2 + (y - b)^2 + (z - c)^2} < \delta$, then $|f(x, y, z) - L| < \varepsilon$.
 >
 > In vector notation, for $f$ defined on a subset $D$ of $\mathbb{R}^n$: $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = L$ means that for every $\varepsilon > 0$ there is a $\delta > 0$ such that
 >
@@ -320,11 +320,20 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > \text{if}\quad \mathbf{x} \in D \quad\text{and}\quad 0 < |\mathbf{x} - \mathbf{a}| < \delta \quad\text{then}\quad |f(\mathbf{x}) - L| < \varepsilon , \qquad (7)
 > $$
 >
-> and $f$ is continuous at $\mathbf{a}$ if $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = f(\mathbf{a})$. For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]), for $n = 2$ it is Definition §91.1, and for $n = 3$ the definition just given.
+> For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]), for $n = 2$ it is Definition §91.1, and for $n = 3$ the definition just given.
 >
 > *Stewart: 14.2, Definition 7 and text*
 
 ^def-91-4
+
+> [!definition] Definition §91.5: Continuity in Three or More Variables
+> The function $f$ is **continuous** at $(a, b, c)$ if $\lim_{(x, y, z) \to (a, b, c)} f(x, y, z) = f(a, b, c)$.
+>
+> In vector notation, $f$ is continuous at $\mathbf{a}$ if $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = f(\mathbf{a})$, with the limit of [[§91 Limits and Continuity#^def-91-4|Definition §91.4]].
+>
+> *Stewart: 14.2, Definition 7 and text*
+
+^def-91-new1
 
 For instance, $f(x, y, z) = \dfrac{1}{x^2 + y^2 + z^2 - 1}$ is a rational function of three variables, so it is continuous at every point of $\mathbb{R}^3$ except where $x^2 + y^2 + z^2 = 1$, the sphere with center the origin and radius $1$.
 

@@ -104,8 +104,8 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 Once we have a metric space $(X, d)$, we can define convergence of sequences of points of $X$ — the definitions are word-for-word those for $\mathbb{R}$, with $d$ in place of the absolute value.
 
-> [!definition] Definition §13.2: Convergence and Cauchy in a Metric Space
-> Let $(s_n)$ be a sequence in a metric space $(X,d)$. We say $s_n \to s$ if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s) < \varepsilon$ for all $n \geq N$. The sequence is **Cauchy** if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s_m) < \varepsilon$ for all $m, n \geq N$.
+> [!definition] Definition §13.2: Convergence in a Metric Space
+> Let $(s_n)$ be a sequence in a metric space $(X,d)$. We say $s_n \to s$ if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s) < \varepsilon$ for all $n \geq N$.
 
 ^def-13-2
 
@@ -117,6 +117,11 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > [!remark]- Connections
 > - The case X = ℝⁿ with the Euclidean distance is 452's convergence of sequences: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]].
 > - Convergence in any topological space, with neighborhoods in place of ε-balls: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]].
+
+> [!definition] Definition §13.2: Cauchy Sequence in a Metric Space
+> Let $(s_n)$ be a sequence in a metric space $(X,d)$. The sequence is **Cauchy** if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s_m) < \varepsilon$ for all $m, n \geq N$.
+
+^def-13-new1
 
 > [!theorem] Proposition §13.1: Equivalence of the Two Distances
 > On $\mathbb{R}^n$,
@@ -134,7 +139,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-1
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.3]]
 
 > [!remark]- Connections
 > - In 452 the same inequality makes balls and square neighborhoods interchangeable: [[§2 Open and Closed Sets#^def-2-2|452 Def. §2.2]].
@@ -205,16 +210,21 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 Now we can introduce the most important topological notions.
 
-> [!definition] Definition §13.5: Open and Closed Subsets
+> [!definition] Definition §13.5: Open Subsets
 > Let $(X,d)$ be a metric space. A subset $U \subseteq X$ is called **open** if for every point $x \in U$, there exists a ball of some radius $\varepsilon > 0$ centered at $x$,
 >
 > $$
 > B_d(x, \varepsilon) = \{ y \in X \mid d(y,x) < \varepsilon \},
 > $$
 >
-> that is contained in $U$. A subset $C \subseteq X$ is called **closed** if the complement $X \setminus C$ is open.
+> that is contained in $U$.
 
 ^def-13-5
+
+> [!definition] Definition §13.5: Closed Subsets
+> Let $(X,d)$ be a metric space. A subset $C \subseteq X$ is called **closed** if the complement $X \setminus C$ is open.
+
+^def-13-new2
 
 The name “open” comes from open intervals in $\mathbb{R}$. These notions are the most important ones in topology: a *topological space* can be described as a space together with its collection of open subsets — equivalently, of closed subsets, since each collection determines the other by complementation.
 
@@ -272,7 +282,7 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ^pf-13-5
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
 
 ![[m451-13-4.svg]]
 *The ($\Leftarrow$) direction: if $C$ is not closed, some $x \notin C$ (hollow red) has no ball inside the complement, so every ball $B(x, \tfrac1n)$ (dashed) meets $C$; choosing $s_n \in C \cap B(x, \tfrac1n)$ gives a sequence in $C$ converging to a point outside $C$.*

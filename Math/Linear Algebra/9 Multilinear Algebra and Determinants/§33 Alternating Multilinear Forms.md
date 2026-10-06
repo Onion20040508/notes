@@ -13,10 +13,15 @@ tags: [linear-algebra]
 
 ^ladr-9-24
 
-> [!definition] Definition 9.25: m-linear form, V⁽ᵐ⁾, multilinear form
-> An *$m$-linear form* on $V$ is a function $\beta:V^m\to\F$ that is linear in each slot when the others are fixed. $V^{(m)}$ is the vector space of $m$-linear forms; a *multilinear form* is an $m$-linear form for some $m$.
+> [!definition] Definition 9.25: m-linear form, multilinear form
+> An *$m$-linear form* on $V$ is a function $\beta:V^m\to\F$ that is linear in each slot when the others are fixed. A *multilinear form* is an $m$-linear form for some $m$.
 
 ^ladr-9-25
+
+> [!definition] Definition 9.25b: V⁽ᵐ⁾
+> $V^{(m)}$ is the vector space of $m$-linear forms.
+
+^ladr-9-25b
 
 > [!remark] Remark: Special cases
 > $1$-linear forms are functionals ($V^{(1)}=V'$), $2$-linear forms are bilinear forms.
@@ -119,13 +124,13 @@ tags: [linear-algebra]
 
 ^ladr-9-36
 
-> [!remark] Remark: Leibniz formula
-> The sum is the determinant of the matrix $(b_{j,k})$ ([[§34 Determinants#^ladr-9-46|Formula for determinant of a matrix]]).
-
 > [!proof]+ Proof
 > Expand multilinearly: $\alpha(v_1,\dots,v_n)=\sum_{j_1,\dots,j_n}b_{j_1,1}\cdots b_{j_n,n}\,\alpha(e_{j_1},\dots,e_{j_n})$. Terms with a repeated index vanish, leaving permutations, and $\alpha(e_{j_1},\dots,e_{j_n})=\operatorname{sign}(j_1,\dots,j_n)\alpha(e_1,\dots,e_n)$ ([[§33 Alternating Multilinear Forms#^ladr-9-35|9.35]]).
 
 *Uses:* [[§33 Alternating Multilinear Forms#^ladr-9-35|9.35]]
+
+> [!remark] Remark: Leibniz formula
+> The sum is the determinant of the matrix $(b_{j,k})$ ([[§34 Determinants#^ladr-9-46|Formula for determinant of a matrix]]).
 
 > [!theorem] Theorem 9.37: Dim V^(dim V) alt = 1
 > $\dim V^{(\dim V)}_{\mathrm{alt}}=1$.
@@ -151,13 +156,13 @@ tags: [linear-algebra]
 
 ^ladr-9-39
 
-> [!remark] Remark: Meaning
-> A nonzero top-degree alternating form is a 'volume form': it detects whether $n$ vectors span a nondegenerate parallelepiped.
-
 > [!proof]+ Proof
 > ($\Rightarrow$) [[§33 Alternating Multilinear Forms#^ladr-9-28|9.28]]. ($\Leftarrow$) an independent list of length $n$ is a basis ([[§6 Dimension#^ladr-2-38|2.38]]); if $\alpha(e)=0$, [[§33 Alternating Multilinear Forms#^ladr-9-36|9.36]] would make $\alpha=0$.
 
 *Uses:* [[§33 Alternating Multilinear Forms#^ladr-9-28|9.28]], [[§6 Dimension#^ladr-2-38|2.38]], [[§33 Alternating Multilinear Forms#^ladr-9-36|9.36]]
+
+> [!remark] Remark: Meaning
+> A nonzero top-degree alternating form is a 'volume form': it detects whether $n$ vectors span a nondegenerate parallelepiped.
 
 %% ex:9.39-fig %%
 > [!example] Example: Independent versus dependent, pictured
