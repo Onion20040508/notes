@@ -7,7 +7,7 @@ section: C2a.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum]] · ↑ [[· C2a The Quantum Scalar Field]] · [[§C2a.2 Mode Expansion and the Mode Algebra]] →
+← [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum]] · ↑ [[· C2a The Quantum Scalar Field]] · [[§C2a.2 Mode Expansion and the Mode Algebra]] →
 
 *Sources: the user's PHY 513 notes, Ch. 4 §§4.1–4.2 and Ch. 3 §§3.4–3.5 · PHY 513 Lecture 4 (Larsen) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2–§2.3 · Yu Zhao-Huan, 量子场论讲义, §§2.1–2.3 · the user's pre-course notes, §§3.1–3.3.*
 
@@ -28,21 +28,21 @@ The classical theory to be quantized has its home in Chapter C1b; its boxes are 
 
 ![[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6]]
 
-The canonical momentum and the Hamiltonian, the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and Hamilton's Equations#^def-b7-1-2|CM Def. §B7.1.2]]) done at each point, defined in [[§C1b.3 Hamiltonian Field Theory|§C1b.3]]:
+The canonical momentum and the Hamiltonian, the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and Hamilton's Equations#^def-b7-1-2|CM Def. §B7.1.2]]) done at each point, defined in [[§C1b.4 Hamiltonian Field Theory|§C1b.4]]:
 
-![[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1]]
+![[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1]]
 
 For the free real field they are $\pi = \dot\phi$ and a sum of squares, derived in §C1b.3:
 
-![[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-2]]
+![[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2]]
 
-The field momentum, the Noether charge of space translations, derived from the energy–momentum tensor in [[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.5]] for any set of fields:
+The field momentum, the Noether charge of space translations, derived from the energy–momentum tensor in [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]] for any set of fields:
 
-![[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-5-6]]
+![[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6]]
 
 and for this field, with $T^{0i} = \dot\phi\,\partial^i\phi$ worked out from $\mathcal L$:
 
-![[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-5-1]]
+![[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-6-1]]
 
 Quantization keeps these formulas and reads $\phi$, $\pi$, $H$ and $\mathbf P$ as operators. What it adds is stated next: the quantum model (operators, with the ordering of $H$ left open until [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]]), and the postulate that fixes their algebra.
 
@@ -55,7 +55,7 @@ Quantization keeps these formulas and reads $\phi$, $\pi$, $H$ and $\mathbf P$ a
 > H = \int d^3x\,\Bigl[\tfrac12\pi^2 + \tfrac12(\nabla\phi)^2 + \tfrac12m^2\phi^2\Bigr] ,
 > $$
 >
-> and field momentum $\mathbf P = -\int d^3x\,\pi\nabla\phi$: the quantization of $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), for which classically $\pi = \dot\phi$, with the classical charges of [[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-2|Theorem §C1b.3.2]] and [[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-5-6|Theorem §C1b.5.6]] (recalled above) read as operators. That these operators generate time and space translations of the field is [[§C3.4 Quantum Poincaré Transformations#^thm-c3-4-13|Theorem §C3.4.13]].
+> and field momentum $\mathbf P = -\int d^3x\,\pi\nabla\phi$: the quantization of $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), for which classically $\pi = \dot\phi$, with the classical charges of [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]] and [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] (recalled above) read as operators. That these operators generate time and space translations of the field is [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-13|Theorem §C3.5.13]].
 >
 > *Assumptions:* free (quadratic $\mathcal L$: linear field equation, no interactions); $m > 0$; flat spacetime with an inertial time; infinite space, continuum (delta-function) normalization; the operator ordering in $H$ is fixed in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]; $\mathbf P$ needs no ordering choice ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4, Ch. 4 §4.2 and §4.7 · PHY 513 Lecture 4 · PS §2.3, eqs. (2.31)–(2.33) · Yu §2.3, eqs. (2.79), (2.123)–(2.124)*
@@ -161,7 +161,7 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > | formalism | argument of $\phi$ | role of $t$ |
 > | --- | --- | --- |
 > | Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations\|§C1b.2]]) | $\phi(x)$, $x = (t, \mathbf x)$ | integrated over in $S = \int d^4x\,\mathcal L$ |
-> | Hamiltonian, classical ([[§C1b.3 Hamiltonian Field Theory\|§C1b.3]]) | $\phi(\mathbf x)$, $\pi(\mathbf x)$ on a slice | parameter along the trajectory |
+> | Hamiltonian, classical ([[§C1b.4 Hamiltonian Field Theory\|§C1b.4]]) | $\phi(\mathbf x)$, $\pi(\mathbf x)$ on a slice | parameter along the trajectory |
 > | Schrödinger picture (§C2a.1–§C2a.6) | $\phi(\mathbf x)$, $\pi(\mathbf x)$ | carried by the states |
 > | Heisenberg picture (§C2b.1–§C2b.4) | $\phi(t, \mathbf x)$ | carried by the operators; Klein–Gordon holds |
 >
@@ -173,7 +173,7 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 
 > [!remark]- Connections
 > - The oscillator algebra that each mode will carry, and the fact that its spectrum follows from $[a, a^\dagger] = 1$ alone, is Quantum Mechanics' — [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1|QM Theorem §C3.4.1]], [[§B4.1 Ladder Operators and the Spectrum#^thm-b4-1-4|QM Theorem §B4.1.4]].
-> - The equal-time relations are Dirac's rule $\{\,,\} \to [\,,]/i$ applied to the field's Poisson brackets $\{\phi(\mathbf x), \pi(\mathbf y)\} = \delta^3(\mathbf x - \mathbf y)$ ([[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-5|Theorem §C1b.3.5]]), the continuum version of the fundamental brackets — [[§B8.1 Poisson Brackets#^thm-b8-1-1|CM Theorem §B8.1.1]], [[§B8.1 Poisson Brackets#^rem-b8-1-5|CM Remark: From brackets to commutators]].
+> - The equal-time relations are Dirac's rule $\{\,,\} \to [\,,]/i$ applied to the field's Poisson brackets $\{\phi(\mathbf x), \pi(\mathbf y)\} = \delta^3(\mathbf x - \mathbf y)$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]]), the continuum version of the fundamental brackets — [[§B8.1 Poisson Brackets#^thm-b8-1-1|CM Theorem §B8.1.1]], [[§B8.1 Poisson Brackets#^rem-b8-1-5|CM Remark: From brackets to commutators]].
 > - In quantum mechanics the canonical commutator is derived from translations ([[§C2.2 Translation and Momentum as Its Generator#^thm-c2-2-6|QM Theorem §C2.2.6]]); for fields it is postulated, and the generator property is recovered afterwards: the mode-form momentum of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]] generates translations of $\phi$, as momentum does in [[§C2.2 Translation and Momentum as Its Generator#^pr-c2-2-4|QM Principle §C2.2.4]].
 > - A field is the continuum limit of a chain of coupled masses, and its normal modes are the chain's modes in that limit — [[§B3.2 The Continuum Limit and the Wave Equation#^thm-b3-2-2|WO Theorem §B3.2.2]]; the Klein–Gordon field is the chain with an extra spring tying each mass to its rest position, whose dispersion relation is the plasma relation — [[§B6.2 Dispersion, Phase Velocity and Group Velocity#^thm-b6-2-1|WO Theorem §B6.2.1]].
 > - The delta function with zero width and unit area that replaces $\delta_{ij}$ is the one of Waves and Optics, and it cannot be a ket's wave function, which is why field operators are operator-valued distributions ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]]) — [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-2|WO Def. §B4.4.2]], [[§37 Position Eigenstates and Continuous Resolutions#^rem-37-2|556 Remark: What the position eigenstate would have to be]], [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|Caution: Plane-wave states are not normalizable]].

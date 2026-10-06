@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 5 §§5.4, 5.7, App. A §A.3, and the Bessel computations of Ch. 2 §2.2 · PHY 513 Lecture 5 (Larsen, 16 Sep 2026; no slides, reconstructed in the user's notes) · Peskin & Schroeder §2.4, pp. 26–27 · PHY 513, Problem Set 4, Problems 2(a) and 3(a).*
 
-What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a given spacetime point? Its Bessel-function forms are computed here once for the whole subject: one Euclidean evaluation ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]) continued, through the boundary value of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], to every spacetime point (Theorems §C2b.3.2–§C2b.3.5). The commutator function of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]] and the Feynman function of [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] are read off from these forms.
+What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a given spacetime point? Its Bessel-function forms are computed here once for the whole subject: one Euclidean evaluation ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]) continued, through the boundary value of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], to every spacetime point (Theorems §C2b.3.2–§C2b.3.5). The commutator function of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]] and the Feynman function of [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] are read off from these forms, and so is the exact single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]], one time derivative of $D_W$ (Theorems §C2b.3.7–§C2b.3.10).
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[a_{\mathbf p}, a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
@@ -70,7 +70,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > **What the derivation shows.**
 > - Three tools in sequence: a residue (a fourth momentum), a Gaussian (after Schwinger's parametrization), and a change of variables to the integral representation of $K_1$.
 > - Four-dimensional Euclidean rotation invariance: Lorentz invariance continued to imaginary time.
-> - Used next: the continuation to every $\xi$ (Theorem §C2b.3.2); the Euclidean propagator (§C2b.7, Def. §C2b.7.1); [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
+> - Used next: the continuation to every $\xi$ (Theorem §C2b.3.2); the Euclidean propagator (§C2b.7, Def. §C2b.7.1); [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]] obtains the single-particle amplitude as $-2\partial_\tau$ of this function.
 
 ^der-c2b-3-1
 
@@ -288,7 +288,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 >
 > **Step 3** ($t < 0$). $D_W(\xi) = \overline{D_W(-\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], 2), and $-\xi$ has positive time component: $D_W = \frac{m}{8\pi\tau}[Y_1 - iJ_1]$. Together, the factor $\operatorname{sgn}(\xi^0)$ on $J_1$.
 >
-> ⚑ By-product: the values on the two sheets are complex conjugates, not equal, so $D_W(\xi) - D_W(-\xi) \ne 0$ inside the cone: the commutator does not vanish there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]; and $\operatorname{Re}D_W = \frac12D_1$, $\operatorname{Im}D_W = \frac12D$ → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]].
+> ⚑ By-product: the values on the two sheets are complex conjugates, not equal, so $D_W(\xi) - D_W(-\xi) \ne 0$ inside the cone: the commutator does not vanish there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]; and $\operatorname{Re}D_W = \frac12D_1$, $\operatorname{Im}D_W = \frac12D$ → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]].
 >
 > **Step 4** (late times at $\boldsymbol\xi = 0$). Here $\tau = t$. With $J_1(x) \simeq \sqrt{2/\pi x}\cos(x - \frac{3\pi}4)$ and $Y_1(x) \simeq \sqrt{2/\pi x}\sin(x - \frac{3\pi}4)$ (Theorem §CA.5.4, 4), and $\theta = mt - \frac{3\pi}{4}$: $Y_1 + iJ_1 \simeq \sqrt{\frac{2}{\pi mt}}(\sin\theta + i\cos\theta) = i\sqrt{\frac{2}{\pi mt}}\,e^{-i\theta}$. Hence
 >
@@ -303,7 +303,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > **What the derivation shows.**
 > - Inside the cone $K_1$ of imaginary argument becomes a Hankel function: oscillation instead of decay.
 > - At late times only the lowest energy $E = m$ survives dephasing (PS's $e^{-imt}$), with the $t^{-3/2}$ of a spreading packet; continuing $r \to it$ in Theorem §C2b.3.3 gives the same prefactor.
-> - Used next: the commutator and Hadamard functions inside the cone (Theorem §C2b.4.8).
+> - Used next: the commutator and Hadamard functions inside the cone (Theorem §C2b.4.9).
 
 ^der-c2b-3-4
 
@@ -333,12 +333,12 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 >
 > **Step 3** (which terms are singular). $1/s^2$ blows up on the whole cone $\xi^2 = 0$; as $\varepsilon \to 0$ it is defined only as a generalized function, the boundary value of Theorem §C2b.2.5; explicitly, $1/s^2 = 1/\bigl(-(\xi^0 - i\varepsilon)^2 + \boldsymbol\xi^2\bigr)$ is the $F_\varepsilon$ of [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], whose limit is $1/(-\xi^2 + i0\,\xi^0)$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 3). $\ln s$ diverges only logarithmically, which is locally integrable, and changes by $i\pi\operatorname{sgn}(\xi^0)/2$ across the cone, a finite jump ($\ln s = \frac12\log s^2$ with $s^2 \to -\xi^2 + i0\,\xi^0$, and $\log(x \pm i0) = \ln|x| \pm i\pi\theta(-x)$, [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], 1).
 >
-> ⚑ By-product: the jump of $\frac{m^2}{8\pi^2}\ln s$ gives $\operatorname{Im}D_W = \frac{m^2}{16\pi}$ just inside the future cone, so the commutator function jumps by a finite amount there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]; and the $1/\xi^2$ singularity at coincident points is the divergence of the zero-point energy → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: The zero-point energy is the Wightman function at coincident points]].
+> ⚑ By-product: the jump of $\frac{m^2}{8\pi^2}\ln s$ gives $\operatorname{Im}D_W = \frac{m^2}{16\pi}$ just inside the future cone, so the commutator function jumps by a finite amount there → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]; and the $1/\xi^2$ singularity at coincident points is the divergence of the zero-point energy → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: The zero-point energy is the Wightman function at coincident points]].
 >
 > **What the derivation shows.**
 > - Every massive two-point function has the massless one as its light-cone singularity: the short-distance behaviour does not know about $m$.
 > - The definition by boundary values is indispensable exactly here.
-> - Used next: the massless commutator and Hadamard functions by Sokhotski–Plemelj (Theorem §C2b.4.7).
+> - Used next: the massless commutator and Hadamard functions by Sokhotski–Plemelj (Theorem §C2b.4.8).
 
 ^der-c2b-3-5
 
@@ -378,7 +378,7 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 >
 > **Step 7** (the cone is singular). Near a point $\xi_0 \ne 0$ of the cone, $\operatorname{Im}D_W = -\frac{1}{4\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2) + \operatorname{Im}L$, since $\mathcal P\frac{1}{\xi^2}$ is real. $\delta(\xi^2)$ is a surface measure on the cone ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2): test functions concentrating on a patch of the cone keep $\delta(\xi^2)[\varphi_n]$ fixed while $\int\varphi_n\,g \to 0$ for every locally integrable $g$. So $\operatorname{Im}D_W$ is not a locally integrable function near $\xi_0$, let alone smooth: $\xi_0 \in \operatorname{sing\,supp}D_W$. The singular support is closed, so it contains the tip. With Step 2, part 2.
 >
-> ⚑ By-product: the coefficient of $\delta(\xi^2)$ is $-\frac{i}{4\pi}\operatorname{sgn}(\xi^0)$, fixed by the sign of $i0\,\xi^0$; twice its imaginary part is the light-cone term $-\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2)$ of the commutator function → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]].
+> ⚑ By-product: the coefficient of $\delta(\xi^2)$ is $-\frac{i}{4\pi}\operatorname{sgn}(\xi^0)$, fixed by the sign of $i0\,\xi^0$; twice its imaginary part is the light-cone term $-\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\delta(\xi^2)$ of the commutator function → [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]].
 >
 > **What the derivation shows.**
 > - The Bessel forms are honest values of $D_W$ wherever it has values, off the cone; on the cone it has none, and the boundary value of Theorem §C2b.2.5 fixes exactly how it acts there: a principal value, a $\delta(\xi^2)$ with a definite sign, and an integrable logarithm.
@@ -388,6 +388,230 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 ^der-c2b-3-6
 
 *Uses:* [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-13|Theorem §CA.2.13]], [[§CA.2 Generalized Functions#^thm-ca-2-12|Theorem §CA.2.12]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+
+## The single-particle amplitude, revisited
+
+The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]) is the same mode integral as $D_W$ with the weight $1/2E_{\mathbf p}$ replaced by $1$. [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]] showed with the lecture's saddle point that it leaks outside the light cone; with the Wightman function in hand, its exact values everywhere follow by one time derivative of the closed forms above.
+
+> [!theorem] Theorem §C2b.3.7: The Single-Particle Amplitude Is a Time Derivative of the Wightman Function
+> With $U(z, \mathbf x)$ the analytic single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]] and $W$ the analytic Wightman function of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], for $\operatorname{Im}z < 0$,
+>
+> $$
+> U(z, \mathbf x) = 2i\,\partial_zW(z, \mathbf x), \qquad U = 2i\,\partial_tD_W \quad\text{in } \mathcal S'(\mathbb R^4).
+> $$
+>
+> *Source: derived here, from the user's PHY 513 notes, Ch. 2 §2.2 (Step 2 of Derivation "The relativistic amplitude in closed form": $U_E = -2\partial_\tau D_E$) and Ch. 5 §5.4*
+
+^thm-c2b-3-7
+
+> [!derivation]- Derivation
+> **Step 1** (relation to $W$). $W(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}e^{-iE_{\mathbf p}z + i\mathbf p\cdot\mathbf x}$. Differentiating under the integral (allowed by Step 2 of Derivation §C2b.2.5): $\partial_z\frac{e^{-iE_{\mathbf p}z}}{2E_{\mathbf p}} = \frac{-iE_{\mathbf p}}{2E_{\mathbf p}}e^{-iE_{\mathbf p}z} = -\frac i2e^{-iE_{\mathbf p}z}$. So $\partial_zW = -\frac i2U$, i.e. $U = 2i\,\partial_zW$.
+>
+> **Step 2** (on $\mathbb R^4$). $U = \lim U(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]). By [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], $D_W = \lim W(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$, and the distributional derivative is continuous under such limits ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]): $\partial_tD_W = \lim\,(\partial_zW)(t - i\varepsilon, \cdot) = -\frac i2\lim U(t - i\varepsilon, \cdot) = -\frac i2U$.
+>
+> **What the derivation shows.**
+> - $U$ and $D_W$ are the same mode integral with weights $1$ and $1/2E_{\mathbf p}$: the difference is the relativistic normalization of the states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]).
+> - Every explicit form of $U$ is a time derivative of one above; no new Bessel integral is needed. (The user's notes reach the same point through $U_E = -2\partial_\tau D_E$ at imaginary time, which is Step 1 at $z = -i\tau$.)
+> - Used next: the closed forms (Theorems §C2b.3.8–§C2b.3.10) and the forward–backward decomposition ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]]).
+
+^der-c2b-3-7
+
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]
+
+> [!theorem] Theorem §C2b.3.8: The Relativistic Amplitude at Spacelike Separation
+> For $r > |t|$, with $\rho = \sqrt{r^2 - t^2} = \sqrt{-x^2}$,
+>
+> $$
+> U(t, \mathbf x) = \frac{i\,m^2\,t}{2\pi^2\rho^2}\,K_2(m\rho),
+> $$
+>
+> a smooth function there, purely imaginary and odd in $t$, depending on the point only through the invariant $\rho$ and the factor $t$. Equivalently (cut representation, absolutely convergent), $U = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\,\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr)$. For $m\rho \ll 1$, $U \simeq it/\pi^2\rho^4$; for $m = 0$ the formula $U = it/\pi^2(r^2 - t^2)^2$ is exact at every point off the light cone.
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivations "The relativistic amplitude in closed form" and "The same result directly from the radial integral"; checks (i)–(ii)) · PHY 513 Lecture 2, Part A ("The exact radial integral: a Bessel function")*
+
+^thm-c2b-3-8
+
+> [!derivation]- Derivation
+> **Step 1** ($W$ in the lower half-plane). By [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], for $\operatorname{Im}z < 0$, $W(z, \mathbf x) = \frac{m}{4\pi^2}\,G(s)$ with $G(s) = \frac{K_1(ms)}{s}$ and $s = \sqrt{r^2 - z^2}$ (principal branch, $\operatorname{Re}s > 0$), an analytic function of $z$.
+>
+> **Step 2** (two derivatives). $\partial_zs = \frac{-2z}{2s} = -\frac zs$. With $w = ms$, $G = m\,w^{-1}K_1(w)$, and $\frac{d}{dw}\bigl[w^{-1}K_1(w)\bigr] = -w^{-1}K_2(w)$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 1 with $\nu = 1$), so $\frac{dG}{ds} = m\cdot m\cdot\bigl(-w^{-1}K_2(w)\bigr) = -\frac{mK_2(ms)}{s}$.
+>
+> **Step 3** (the amplitude in the lower half-plane). By the chain rule and [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]],
+>
+> $$
+> \partial_zW = \frac{m}{4\pi^2}\cdot\Bigl(-\frac{mK_2(ms)}{s}\Bigr)\cdot\Bigl(-\frac zs\Bigr) = \frac{m^2z\,K_2(ms)}{4\pi^2s^2}, \qquad U(z, \mathbf x) = 2i\,\partial_zW = \frac{i\,m^2z\,K_2(ms)}{2\pi^2s^2} .
+> $$
+>
+> ⚑ By-product: this one analytic function of $z$ gives $U$ at every real point as a boundary value; the timelike values are [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]].
+>
+> **Step 4** (the spacelike limit). Put $z = t - i\varepsilon$: $s^2 = r^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to \rho^2 > 0$, away from the cut of $\sqrt{\ }$ and of $K_2$ (as in Steps 1–2 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-3|Derivation §C2b.3.3]]). The right side of Step 3 is continuous there, so the limit is locally uniform on the open set $\{r > |t|\}$; integrated against a test function supported in that set it converges to the integral of the limit, so the distribution $U$ is this function there ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]; the same argument as [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1). With $s \to \rho$, $z \to t$: the formula of the theorem.
+>
+> **Step 5** (imaginary and odd). $K_2(x) = \int_0^\infty e^{-x\cosh u}\cosh2u\,du > 0$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]), and $\rho$ is even in $t$; so $U/i$ is real with the sign of $t$.
+>
+> **Step 6** (short distance). $K_2(w) \simeq \frac12\Gamma(2)(2/w)^2 = 2/w^2$ for $w \to 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3), so $U \simeq \frac{im^2t}{2\pi^2\rho^2}\cdot\frac{2}{m^2\rho^2} = \frac{it}{\pi^2\rho^4}$.
+>
+> **Step 7** ($m = 0$). Theorem §C2b.3.2 gives $W = \frac{1}{4\pi^2(r^2 - z^2)}$, so $\partial_zW = \frac{2z}{4\pi^2(r^2 - z^2)^2}$ and $U = 2i\,\partial_zW = \frac{iz}{\pi^2(r^2 - z^2)^2}$. The boundary value at $z = t - i\varepsilon$ is $\frac{it}{\pi^2(r^2 - t^2)^2}$ at every point with $r \neq |t|$, inside the cone as well, since only $(r^2 - z^2)^2$ appears.
+>
+> ⚑ By-product: for $m = 0$ the leak outside the cone is a power law with no length scale at all; for $m > 0$ it is cut off at $\rho \sim 1/m$ → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
+>
+> **What the derivation shows.**
+> - Relativistic kinematics did not cure the leak: $K_2 > 0$, so $U \ne 0$ at every spacelike point with $t \neq 0$.
+> - No Bessel integral was evaluated here; the $K_1$ of Theorem §C2b.3.1 and one differentiation suffice.
+> - A second, independent route below finds the same function without analytic continuation.
+
+^der-c2b-3-8
+
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]
+
+> [!derivation]- Derivation (second route: around the branch cut, in real variables)
+> This is the user's head-on computation of the lecture's integral; it shows where the spacelike condition enters. Take $r > |t|$ and keep $z = t - i\varepsilon$, $\varepsilon > 0$, until Step 5.
+>
+> **Step 1** (start). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], $U(z, r) = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\;p\,e^{i(pr - zE_p)}$, absolutely convergent.
+>
+> **Step 2** (the branch). As a function of complex $p$, $E_p = \sqrt{p^2 + m^2}$ has branch points at $\pm im$; take the cuts along the imaginary axis from $im$ to $i\infty$ and from $-im$ to $-i\infty$, with the branch positive on the real axis. On the upper half-plane minus its cut $E_p$ is analytic, $E_p = p + O(1/p)$ for $\operatorname{Re}p > 0$ and $E_p = -p + O(1/p)$ for $\operatorname{Re}p < 0$ as $|p| \to \infty$. On the lips, $p = i\varrho \pm 0$ with $\varrho > m$: $E_p = +is$ just right of the cut and $-is$ just left, $s = \sqrt{\varrho^2 - m^2} > 0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Step 5).
+>
+> **Step 3** (the arc vanishes exactly outside the cone). On $p = Le^{i\theta}$, $0 \le \theta \le \pi/2$: $i(pr - zE_p) = ip(r - t + i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r - t)\sin\theta + \varepsilon\cos\theta\bigr] + O(1/L)$. For $\pi/2 \le \theta \le \pi$: $i(pr - zE_p) = ip(r + t - i\varepsilon) + O(1/L)$, of real part $-L\bigl[(r + t)\sin\theta + \varepsilon|\cos\theta|\bigr] + O(1/L)$. If $r > |t|$ both brackets are at least $c = \min(r - |t|, \varepsilon) > 0$ (since $\sin\theta + |\cos\theta| \ge 1$), so on the arc $|p\,e^{i(pr - zE_p)}| \le C\,L\,e^{-cL}$, and the arc integral is at most $\pi L\cdot CLe^{-cL} \to 0$ (ML, [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]). If $r < |t|$, one bracket is negative near $\theta = \pi/2$ and the arc grows: the contour cannot be closed.
+>
+> ⚑ By-product: the damping $\varepsilon > 0$ is needed on the arc near $\theta = 0$ and $\pi$, where $\sin\theta \to 0$; the factor $p$, which does not tend to zero, rules out Jordan's lemma without it ([[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]). The spacelike condition $r > |t|$ is exactly the condition for the arc to vanish.
+>
+> **Step 4** (the keyhole). Integrate counterclockwise around $[-L, L]$, the arc to $iL$, down the right lip to $im$, around a small circle at $im$, up the left lip to $iL$, and the arc to $-L$ ([[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]]; the contour of the figure in [[§CA.4 Contour Integration|§CA.4]]). The integrand is analytic inside, so the total is $0$ ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]). The small circle contributes $O(\delta)$ (bounded integrand, length $2\pi\delta$), the arcs $\to 0$ by Step 3. On the lips $p = i\varrho$, $dp = i\,d\varrho$, $p = i\varrho$:
+>
+> $$
+> \text{right lip } (E_p = is):\ i(pr - zE_p) = -\varrho r + zs, \qquad \int_L^m i\,d\varrho\,(i\varrho)\,e^{-\varrho r + zs} = \int_m^L\varrho\,e^{-\varrho r + zs}\,d\varrho ;
+> $$
+>
+> $$
+> \text{left lip } (E_p = -is):\ i(pr - zE_p) = -\varrho r - zs, \qquad \int_m^L i\,d\varrho\,(i\varrho)\,e^{-\varrho r - zs} = -\int_m^L\varrho\,e^{-\varrho r - zs}\,d\varrho .
+> $$
+>
+> So, as $L \to \infty$, $\delta \to 0$: $\int_{-\infty}^\infty dp\,p\,e^{i(pr - zE_p)} = -\int_m^\infty\varrho\,e^{-\varrho r}\bigl(e^{zs} - e^{-zs}\bigr)d\varrho = -2\int_m^\infty\varrho\,e^{-\varrho r}\sinh(zs)\,d\varrho$.
+>
+> **Step 5** (remove $\varepsilon$). $|\sinh((t - i\varepsilon)s)| \le \cosh(ts) \le e^{|t|s} \le e^{|t|\varrho}$, so the integrand is dominated by $\varrho\,e^{-(r - |t|)\varrho}$, integrable and independent of $\varepsilon$ (and locally uniformly in $(t, r)$ on $r > |t|$). By dominated convergence ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]), with $\frac{-2}{4\pi^2ir} = \frac{i}{2\pi^2r}$,
+>
+> $$
+> U(t, \mathbf x) = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\;\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr) \qquad (r > |t|).
+> $$
+>
+> ⚑ By-product: this is the cut representation stated in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]; in it $U$ is manifestly imaginary, odd in $t$, zero at $t = 0$ for $r > 0$ (as $U(0, \cdot) = \delta^3$ requires) and absolutely convergent; its exponent $-\varrho r + t\sqrt{\varrho^2 - m^2}$ is real, and its maximum is the saddle point → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], second route.
+>
+> **Step 6** (hyperbolic variables). Substitute $\varrho = m\cosh w$, $w \in (0, \infty)$: $s = m\sinh w$, $d\varrho = m\sinh w\,dw$, so $\varrho\,d\varrho = m^2\cosh w\sinh w\,dw = \frac{m^2}{2}\sinh2w\,dw$. Encode the point by $r = \rho\cosh\chi$, $t = \rho\sinh\chi$, $\tanh\chi = t/r$, possible because $r > |t|$. Then $\varrho r \mp ts = m\rho(\cosh w\cosh\chi \mp \sinh w\sinh\chi) = m\rho\cosh(w \mp \chi)$, and with $\sinh(ts) = \frac12(e^{ts} - e^{-ts})$,
+>
+> $$
+> \int_m^\infty\varrho\,e^{-\varrho r}\sinh(ts)\,d\varrho = \frac{m^2}{4}\int_0^\infty dw\,\sinh2w\Bigl[e^{-m\rho\cosh(w - \chi)} - e^{-m\rho\cosh(w + \chi)}\Bigr].
+> $$
+>
+> **Step 7** (one integral over the line). In the first term put $v = w - \chi$: $v \in (-\chi, \infty)$, $\sinh2w = \sinh(2v + 2\chi)$. In the second put $v = -(w + \chi)$, so $w = -v - \chi$, $dw = -dv$, $w: 0 \to \infty$ becomes $v: -\chi \to -\infty$, $\cosh(w + \chi) = \cosh v$, $\sinh2w = -\sinh(2v + 2\chi)$; the second term becomes $-\int_{-\chi}^{-\infty}(-\sinh(2v + 2\chi))e^{-m\rho\cosh v}(-dv) = +\int_{-\infty}^{-\chi}\sinh(2v + 2\chi)\,e^{-m\rho\cosh v}dv$. The two pieces join:
+>
+> $$
+> \frac{m^2}{4}\int_{-\infty}^\infty dv\,\sinh(2v + 2\chi)\,e^{-m\rho\cosh v} .
+> $$
+>
+> **Step 8** (the Bessel function). $\sinh(2v + 2\chi) = \sinh2v\cosh2\chi + \cosh2v\sinh2\chi$. The first term is odd in $v$ and absolutely integrable: it gives $0$. The second gives $\sinh2\chi\int_{-\infty}^\infty\cosh2v\,e^{-m\rho\cosh v}dv = 2\sinh2\chi\,K_2(m\rho)$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], $\nu = 2$). With $\sinh2\chi = 2\sinh\chi\cosh\chi = 2tr/\rho^2$ the integral is $\frac{m^2}{4}\cdot2\cdot\frac{2tr}{\rho^2}K_2(m\rho) = \frac{m^2tr}{\rho^2}K_2(m\rho)$.
+>
+> **Step 9** (assemble). $U = \frac{i}{2\pi^2r}\cdot\frac{m^2tr}{\rho^2}K_2(m\rho) = \frac{i\,m^2t}{2\pi^2\rho^2}K_2(m\rho)$.
+>
+> **What the derivation shows.**
+> - The two routes share no intermediate step, so their agreement is a check of both.
+> - The rapidity $\chi$ makes visible that only the invariant $\rho$ and the boost-covariant factor $t$ appear.
+> - The user's notes state the arc condition without the damping factor; with the factor $p$ in the integrand the damping is what makes the arc vanish (Step 3).
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "The same result directly from the radial integral", Steps 1–3, and Fig. 2.2)*
+
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
+
+> [!theorem] Theorem §C2b.3.9: The Spacelike Amplitude at Large Distance
+> For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$,
+>
+> $$
+> U(t, \mathbf x) = \frac{i\,m^{3/2}\,t}{(2\pi\rho)^{3/2}\,\rho}\,e^{-m\rho}\Bigl(1 + \frac{15}{8m\rho} + O\bigl((m\rho)^{-2}\bigr)\Bigr) ,
+> $$
+>
+> and $U \neq 0$ at every spacelike point with $t \neq 0$. The leading term is the saddle-point result of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iii) of Derivation "The relativistic amplitude in closed form") · PHY 513 Lecture 2, Part A ("Quantum Causality is Violated") · PS §2.1, p. 14*
+
+^thm-c2b-3-9
+
+> [!derivation]- Derivation
+> **Step 1** (the large-argument form). $K_2(w) = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{4\cdot2^2 - 1}{8w} + \cdots\bigr] = \sqrt{\pi/2w}\,e^{-w}\bigl[1 + \frac{15}{8w} + \cdots\bigr]$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 2 with $\nu = 2$).
+>
+> **Step 2** (insert). Into [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] with $w = m\rho$:
+>
+> $$
+> \frac{im^2t}{2\pi^2\rho^2}\sqrt{\frac{\pi}{2m\rho}} = \frac{i\,m^{3/2}\,t\,\sqrt\pi}{2^{3/2}\,\pi^2\,\rho^{5/2}} = \frac{i\,m^{3/2}\,t}{2^{3/2}\pi^{3/2}\rho^{5/2}} = \frac{i\,m^{3/2}\,t}{(2\pi\rho)^{3/2}\rho} .
+> $$
+>
+> **Step 3** (nonzero). $K_2(m\rho) > 0$ (Step 5 of Derivation §C2b.3.8), so the asymptotic form only describes the size of a function that vanishes nowhere off $t = 0$.
+>
+> **What the derivation shows.**
+> - Outside the cone the amplitude is small on the scale $1/m$ but not zero: single-particle relativistic quantum mechanics violates [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]. Relativistic kinematics was not the error; there is no algebra mistake to find.
+> - The relative correction $15/8m\rho$ is the $\nu = 2$ case of the same series that gives $3/8mr$ for $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
+
+^der-c2b-3-9
+
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
+
+> [!theorem] Theorem §C2b.3.10: The Relativistic Amplitude at Timelike Separation
+> For $|t| > r$, with $\tau = \sqrt{t^2 - r^2}$,
+>
+> $$
+> U(t, \mathbf x) = \frac{m^2\,t}{4\pi\tau^2}\,H^{(2)}_2(m\tau)\quad (t > 0), \qquad U(-t, \mathbf x) = \overline{U(t, \mathbf x)} ,
+> $$
+>
+> an oscillating function, $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iv) of Derivation "The relativistic amplitude in closed form"; connection formula from DLMF §10.27, checked numerically there) · DLMF §10.17 (Hankel asymptotics)*
+
+^thm-c2b-3-10
+
+> [!derivation]- Derivation
+> **Step 1** (the limit of $s$). In Step 3 of [[§C2b.3 Explicit Forms of the Wightman Function#^der-c2b-3-8|Derivation §C2b.3.8]] put $z = t - i\varepsilon$ with $t > r$: $s^2 = r^2 - t^2 + 2i\varepsilon t + \varepsilon^2 \to -\tau^2 + i0$, and the principal root of $-\tau^2 + i0$ is $+i\tau$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], Step 1). The limit is locally uniform in the open timelike region, so it is the restriction of the distribution $U$ there, as in Step 4 of Derivation §C2b.3.8.
+>
+> **Step 2** ($t > 0$). With $s = i\tau$, $s^2 = -\tau^2$:
+>
+> $$
+> U = \frac{i\,m^2t\,K_2(im\tau)}{2\pi^2(-\tau^2)} = -\frac{i\,m^2t}{2\pi^2\tau^2}K_2(im\tau) .
+> $$
+>
+> The connection formula $K_\nu(ix) = \frac\pi2(-i)^{\nu+1}H^{(2)}_\nu(x)$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3) with $\nu = 2$ and $(-i)^3 = i$ gives $K_2(im\tau) = \frac{i\pi}{2}H^{(2)}_2(m\tau)$, so $U = -\frac{im^2t}{2\pi^2\tau^2}\cdot\frac{i\pi}{2}H^{(2)}_2 = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$.
+>
+> **Step 3** ($t < 0$). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]], $\overline{U(t, \mathbf x)} = \int\frac{d^3p}{(2\pi)^3}e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = U(-t, -\mathbf x)$ (complex conjugation of the transform of $e^{-iE_{\mathbf p}t}$, an identity in $\mathcal S'$). $E_{\mathbf p}$ is even in $\mathbf p$, so $U(-t, \cdot)$ is even in $\mathbf x$ (substitute $\mathbf p \to -\mathbf p$, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1), and $U(-t, -\mathbf x) = U(-t, \mathbf x)$.
+>
+> **Step 4** (late proper times). $H^{(2)}_2(x) \simeq \sqrt{2/\pi x}\,e^{-i(x - 5\pi/4)}$ for $x \to \infty$ (DLMF §10.17), so $|U| \simeq \frac{m^2t}{4\pi\tau^2}\sqrt{\frac{2}{\pi m\tau}} = \frac{\sqrt2\,m^{3/2}t}{4\pi^{3/2}\tau^{5/2}} = \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}$, using $\sqrt2/4 = 2^{-3/2}$.
+>
+> **Step 5** (the cone). The function of Step 3 of Derivation §C2b.3.8 blows up as $s \to 0$: by Step 6 there, $U \simeq iz/\pi^2(r^2 - z^2)^2$ near the cone, a double pole in $r^2 - z^2$. At real $t$ it has no value on the cone and exists there only as the limit in $\mathcal S'$ of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]; by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]] its singular part is $2i\partial_t$ of the light-cone singularity of $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 3).
+>
+> **What the derivation shows.**
+> - Inside and outside the cone are the two sides of the cut of one analytic function: $K_2$ decay outside becomes Hankel oscillation inside, as $K_1$ does for $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]]).
+> - The moduli inside and outside have the same form, $m^{3/2}|t|\,\sigma^{-5/2}(2\pi)^{-3/2}$ with $\sigma = \tau$ or $\rho$; only the exponential differs, a phase inside and a damping outside.
+
+^der-c2b-3-10
+
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
+
+![[ph-qft-c1-3-1.svg]]
+*The single-particle amplitude at fixed $mt = 3$ (units $m = 1$): inside the cone (shaded) the Hankel form of Theorem §C2b.3.10, outside the $K_2$ form of Theorem §C2b.3.8 with its leading asymptotic term (dashed, Theorem §C2b.3.9; Theorem §C1a.3.6). It is singular on the cone and leaks outside it over the Compton wavelength $1/m$. Adapted from the user's PHY 513 notes, Fig. 2.3; recomputed from the closed forms, which were checked against the mode integral at complex $t$.*
+
+> [!example] Example §C2b.3.1: Units Restored in the Single-Particle Amplitude
+> Restore $\hbar$ and $c$ in $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ and in the nonrelativistic prefactor $(m/2\pi it)^{3/2}$, and read off the range of the leak for an electron.
+>
+> **Step 1** (target). $U(t, \cdot) \to \delta^3$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]]), so $U$ has dimension $L^{-3}$, mass dimension $3$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4).
+>
+> **Step 2** (the argument first). $K_2$ needs a pure number ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2): $m\rho$ is $ML$, and the length built from $m$ is $\hbar/mc$, so $m\rho \to mc\rho/\hbar$, the separation in reduced Compton wavelengths, with $\rho = \sqrt{r^2 - c^2t^2}$ ($x^0 = ct$).
+>
+> **Step 3** (the prefactor). $m^2t/\rho^2$ has $M^2TL^{-2}$; the deficit to $L^{-3}$ is $M^{-2}L^{-1}T^{-1} = M^aL^{2a + b}T^{-a - b}$, so $a = -2$, $b = 3$, and the $T$ equation checks: $-a - b = -1$ ([[P4 Restoring ħ and c#^p4-4|P4, step 4]]). Hence
+>
+> $$
+> U(t, \mathbf x) = \frac{i\,m^2c^3\,t}{2\pi^2\hbar^2\rho^2}\,K_2\Bigl(\frac{mc\rho}{\hbar}\Bigr).
+> $$
+>
+> **Step 4** (nonrelativistic). $m/t$ is $MT^{-1}$; with $\hbar$ ($ML^2T^{-1}$) $m/\hbar t$ is $L^{-2}$, so $(m/2\pi it)^{3/2} \to (m/2\pi i\hbar t)^{3/2}$, of dimension $L^{-3}$ (a fractional power is legitimate, rule 3), and the phase becomes $e^{imr^2/2\hbar t}$, as in [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]].
+>
+> **Step 5** (the range). Before any integral, dimensional analysis says the spacelike amplitude can depend on $\rho$ only through $mc\rho/\hbar$. For an electron $\hbar/m_ec \simeq 3.9\times10^{-13}$ m: the distance over which single-particle relativistic quantum mechanics leaks causality.
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Restoring ħ and c: the recipe", example $U$; Rule 3 example; "The scale of causality violation")*
+
+^ex-c2b-3-1
 
 > [!remark]- Connections
 > - The Euclidean function of Theorem §C2b.3.1, integrated over Euclidean time, gives $\int d\tau\,\frac{mK_1(m\sqrt{\tau^2 + r^2})}{4\pi^2\sqrt{\tau^2 + r^2}} = \frac{e^{-mr}}{4\pi r}$, the Yukawa potential, because the $\tau$ integral sets $p_4 = 0$ and leaves the static propagator $1/(\mathbf p^2 + m^2)$: [[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]. The same $e^{-mr}$ sets the range of the correlations $D_1$ and of meson exchange, QFT C7 (planned).

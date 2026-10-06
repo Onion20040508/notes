@@ -25,7 +25,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Stabilizers enter [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; under conjugation the stabilizer is the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]].
 > - Called the isotropy subgroup in 591, [[§14 Homogeneous Spaces#^def-14-3|591 Def. §14.3]]; for a [[§13 Group Actions and Orbit Spaces#^def-13-2|continuous action]] on a space whose points are closed it is a closed subgroup, [[§14 Homogeneous Spaces#^thm-14-2|591 Thm. §14.2]].
-> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-7|QFT Theorem §C3.5.7]], [[§C3.5★ Particle States and the Little Group#^thm-c3-5-8|QFT Theorem §C3.5.8]].
+> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.6★ Particle States and the Little Group#^def-c3-6-1|QFT Def. §C3.6.1]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|QFT Theorem §C3.6.7]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|QFT Theorem §C3.6.8]].
 
 > [!definition] Definition §26.2: Fixed Points
 > For $g \in G$, the **fixed points** of $g$ are
@@ -88,7 +88,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Used in 591 to show that the topology of a homogeneous space does not depend on the base point: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-4|591 Prop. §15.4]].
-> - Used in Quantum Field Theory: another standard momentum on the same orbit has a conjugate little group, with the same representations, so the particle does not depend on the choice — [[§C3.5★ Particle States and the Little Group#^rem-c3-5-1|QFT Remark: What the definition fixes, and what it leaves free]].
+> - Used in Quantum Field Theory: another standard momentum on the same orbit has a conjugate little group, with the same representations, so the particle does not depend on the choice — [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
 > [!theorem] Corollary §26.3: Stabilizers Along an Orbit Are Conjugate
 > If $y = g \star x$ for some $g \in G$ (i.e. $y$ lies in the orbit of $x$, [[§27 Orbits#^def-27-1|Def. §27.1]]), then $\operatorname{Stab}(y) = g \operatorname{Stab}(x) g^{-1}$, and conjugation $c_g$ restricts to an isomorphism $\operatorname{Stab}(x) \to \operatorname{Stab}(y)$. In particular all stabilizers of points in one orbit are isomorphic and have the same order.

@@ -64,7 +64,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > \partial_{x^0}T\{AB\} = \theta(x^0 - y^0)\,\partial_0A\,B + \theta(y^0 - x^0)\,B\,\partial_0A + \delta(x^0 - y^0)\bigl(AB - BA\bigr),
 > $$
 >
-> and the first two terms are $T\{\partial_0A\,B\}$. (Sense: $\delta(x^0 - y^0)[A(x), B(y)]$ is the equal-time value of the commutator times δ, defined when the commutator is a smooth function of $x^0 - y^0$ with values in spatial distributions; for $A, B \in \{\phi, \pi\}$ of the free field it is, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]. For interacting fields this is an assumption.)
+> and the first two terms are $T\{\partial_0A\,B\}$. (Sense: $\delta(x^0 - y^0)[A(x), B(y)]$ is the equal-time value of the commutator times δ, defined when the commutator is a smooth function of $x^0 - y^0$ with values in spatial distributions; for $A, B \in \{\phi, \pi\}$ of the free field it is, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]. For interacting fields this is an assumption.)
 >
 > **What the derivation shows.**
 > - Microcausality is exactly what makes time ordering relativistic: without it the definition would depend on the observer.
@@ -72,7 +72,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 
 ^der-c2b-6-1
 
-*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]
 
 > [!remark] Remark: Why the later operator stands to the left
 > In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields will order its exponential this way (QFT C6, planned). In the lecture's words: time starts on the right, things happen, and time ends on the left.
@@ -213,7 +213,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > \partial_0D_F = \delta(t)\bigl[D_W(\xi) - D_W(-\xi)\bigr] + \theta(t)\,\partial_0D_W(\xi) + \theta(-t)\,\partial_0D_W(-\xi) .
 > $$
 >
-> The bracket is $\langle[\phi(x), \phi(y)]\rangle$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]), and $\delta(t)$ evaluates it at equal times (a smooth function of $t$ times $\delta(t)$ is its value at $0$ times $\delta(t)$, here the spatial distribution $D(0, \cdot)$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]], 2), where it vanishes ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]). Dropped: this contact term, because $[\phi, \phi]_{\text{equal time}} = 0$.
+> The bracket is $\langle[\phi(x), \phi(y)]\rangle$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]), and $\delta(t)$ evaluates it at equal times (a smooth function of $t$ times $\delta(t)$ is its value at $0$ times $\delta(t)$, here the spatial distribution $D(0, \cdot)$, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]], 2), where it vanishes ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]). Dropped: this contact term, because $[\phi, \phi]_{\text{equal time}} = 0$.
 >
 > **Step 3** (second time derivative). Differentiate the two surviving terms:
 >
@@ -221,7 +221,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > \partial_0^2D_F = \delta(t)\bigl[\partial_0D_W(\xi) - \partial_0D_W(-\xi)\bigr] + \theta(t)\,\partial_0^2D_W(\xi) + \theta(-t)\,\partial_0^2D_W(-\xi) .
 > $$
 >
-> Now the bracket is $\partial_{x^0}\langle[\phi(x), \phi(y)]\rangle = \langle[\pi(x), \phi(y)]\rangle$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]), which at equal times is $-[\phi(y), \pi(x)] = -i\delta^3(\mathbf x - \mathbf y)$. The contact term is $\delta(t)(-i)\delta^3 = -i\delta^4(x - y)$ (a product of distributions in different variables, $\delta(t)\otimes\delta^3(\boldsymbol\xi) = \delta^4(\xi)$), and it is not zero.
+> Now the bracket is $\partial_{x^0}\langle[\phi(x), \phi(y)]\rangle = \langle[\pi(x), \phi(y)]\rangle$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]), which at equal times is $-[\phi(y), \pi(x)] = -i\delta^3(\mathbf x - \mathbf y)$. The contact term is $\delta(t)(-i)\delta^3 = -i\delta^4(x - y)$ (a product of distributions in different variables, $\delta(t)\otimes\delta^3(\boldsymbol\xi) = \delta^4(\xi)$), and it is not zero.
 >
 > ⚑ By-product: the source of the Green's function is produced entirely by the switch between the two homogeneous pieces at $t = 0$, with strength set by the canonical commutator → [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-2|Remark: The field equation inside time-ordered products]].
 >
@@ -237,7 +237,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 
 ^der-c2b-6-4
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]
 
 > [!remark] Remark: The field equation inside time-ordered products
 > Theorem §C2b.6.4 says that the field equation holds inside time-ordered products except at coincident points, where delta functions of strength fixed by the canonical commutator replace it. This is the operator counterpart of Theorem §C2b.5.3, 1, where the same source appeared when $\partial^2 + m^2$ cancelled the denominator. With interactions the right side gains the interaction's contribution to the equation of motion: the Schwinger–Dyson equations, one route into perturbation theory (QFT C10–C11, planned).
@@ -426,7 +426,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 *Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-11|Theorem §CA.3.11]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]
 
 > [!remark] Remark: Preview: the propagator as a Gaussian covariance
-> In the path integral (QFT C11, planned; PS §9.1–9.2; Yu §11.1–11.2) time-ordered vacuum correlators are averages over field histories, $\langle0|T\{\phi(x)\phi(y)\}|0\rangle = \int\mathcal D\phi\,\phi(x)\phi(y)e^{iS}/\int\mathcal D\phi\,e^{iS}$, with $S = \frac12\int\phi(-\partial^2 - m^2)\phi$. In momentum space this is a Gaussian with kernel $K = p^2 - m^2$, which converges only with a damping $e^{-\frac\varepsilon2\int\phi^2}$; its covariance is then $i(K + i\varepsilon)^{-1} = \tilde D_F$. The $i\varepsilon$ prescribed here becomes the condition for the integral to exist, time ordering is produced rather than imposed, and with $t = -i\tau$ the weight becomes $e^{-S_E}$, whose covariance is $D_E$. Choosing the vacuum as initial and final state selects the Feynman inverse of the Klein–Gordon operator (the second variation of the action, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-6|§C1b.2, Remark: The second variation is the operator whose inverse is the propagator]]), not the retarded one: contours are boundary conditions once more. The integral of a total derivative gives $(\partial^2 + m^2)D_F = -i\delta^4$ in one line, the free Schwinger–Dyson equation.
+> In the path integral (QFT C11, planned; PS §9.1–9.2; Yu §11.1–11.2) time-ordered vacuum correlators are averages over field histories, $\langle0|T\{\phi(x)\phi(y)\}|0\rangle = \int\mathcal D\phi\,\phi(x)\phi(y)e^{iS}/\int\mathcal D\phi\,e^{iS}$, with $S = \frac12\int\phi(-\partial^2 - m^2)\phi$. In momentum space this is a Gaussian with kernel $K = p^2 - m^2$, which converges only with a damping $e^{-\frac\varepsilon2\int\phi^2}$; its covariance is then $i(K + i\varepsilon)^{-1} = \tilde D_F$. The $i\varepsilon$ prescribed here becomes the condition for the integral to exist, time ordering is produced rather than imposed, and with $t = -i\tau$ the weight becomes $e^{-S_E}$, whose covariance is $D_E$. Choosing the vacuum as initial and final state selects the Feynman inverse of the Klein–Gordon operator (the second variation of the action, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-8|§C1b.2, Remark: The second variation is the operator whose inverse is the propagator]]), not the retarded one: contours are boundary conditions once more. The integral of a total derivative gives $(\partial^2 + m^2)D_F = -i\delta^4$ in one line, the free Schwinger–Dyson equation.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (Principle "Looking ahead: the path integral (Lectures 23–24)")*
 

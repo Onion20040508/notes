@@ -45,12 +45,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|§C2b.4.4]] The Commutator and Hadamard Functions as Distributions
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Commutator and Hadamard Functions of the Massless Field
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massive Field
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|§C2b.4.9]] Commutators at Unequal Times
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times as Distributions
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|§C2b.4.11]] Cauchy Data of the Commutator Function
-- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] The Commutator Function Propagates the Field
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massless Field
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|§C2b.4.9]] Commutator and Hadamard Functions of the Massive Field
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|§C2b.4.11]] Commutators at Unequal Times as Distributions
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|§C2b.4.12]] Cauchy Data of the Commutator Function
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|§C2b.4.13]] The Commutator Function Propagates the Field
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|§C2b.5.2]] Free Fields Live on the Mass Shell
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|§C2b.5.3]] Contours Are Boundary Conditions
 - [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|§C2b.5.4]] Each Contour Is a Fundamental Solution

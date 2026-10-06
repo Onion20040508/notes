@@ -11,20 +11,20 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 2 §2.4 (natural units, restoring ħ and c, rules of dimensional counting, the action is dimensionless, units in the action) and App. A ("Dimensions as one-dimensional vector spaces") · PHY 513 Lecture 2 (Larsen, 2 Sep 2026), Part C · Yu §1.2, eqs. (1.5)–(1.10) · the user's pre-course notes, §1.2 · PHY 513, Problem Set 1, Problem 4, and Problem Set 2, Problems 1(a) and 2(d), with the course solutions.*
 
-What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativity keeps $c$ explicit ([[§B1.1 The Metric and Index Notation#^cau-b1-1-1|REL Caution: The speed of light stays explicit]]), Quantum Mechanics keeps $\hbar$, and the Sakurai chapter of QM C13★ already restores both by rules of thumb ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^cau-c13-1-1|QM Caution: Units, metric and symbols in Chapter C13★]]); charges in Heaviside–Lorentz units are [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]. This section is the single home of the mass dimension and of the rule that restores $\hbar$ and $c$ (run step by step in [[P4 Restoring ħ and c]]), and it fixes the mass dimensions of fields and couplings that [[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-4|Def. §C1b.1.4]] uses to order the terms of a Lagrangian.
+What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativity keeps $c$ explicit ([[§B1.1 The Metric and Index Notation#^cau-b1-1-1|REL Caution: The speed of light stays explicit]]), Quantum Mechanics keeps $\hbar$, and the Sakurai chapter of QM C13★ already restores both by rules of thumb ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^cau-c13-1-1|QM Caution: Units, metric and symbols in Chapter C13★]]); charges in Heaviside–Lorentz units are [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]. This section is the single home of the mass dimension and of the rule that restores $\hbar$ and $c$ (run step by step in [[P4 Restoring ħ and c]]), together with the counting rules that every dimensional argument uses. The mass dimensions of fields and couplings need the action, and are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]].
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$ from here on in the QFT notes; ordinary dimensions are written $M^\alpha L^\beta T^\gamma$ (mass, length, time); $[Q]$ is the mass dimension of $Q$.
 
 ## Natural units and the exponent rule
 
-> [!definition] Definition §C1a.2.1: Natural Units; Mass Dimension
+> [!definition] Definition §C1a.2.1: Natural Units
 > **Natural units** set $\hbar = c = 1$. Mass, energy, momentum, inverse length and inverse time are then measured in one unit,
 >
 > $$
-> M = E = L^{-1} = T^{-1},
+> M = E = L^{-1} = T^{-1} .
 > $$
 >
-> and every quantity $Q$ has a single **mass dimension** $d$, written $[Q] = d$: $Q$ is a pure number times $(\text{mass})^d$. Masses, energies and momenta have $d = 1$, lengths and times $d = -1$, velocities, actions and angular momenta $d = 0$. The conversion constants are
+> The conversion constants are
 >
 > $$
 > \hbar c \simeq 197.3\ \text{MeV fm}, \qquad \hbar \simeq 6.582\times10^{-22}\ \text{MeV s}, \qquad 1\ \text{GeV}^{-1} \simeq 0.1973\ \text{fm} \simeq 6.582\times10^{-25}\ \text{s}.
@@ -33,6 +33,14 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Definition "Natural units and mass dimension") · PHY 513 Lecture 2, Part C ("Mass Dimensions") · Yu §1.2, eqs. (1.5)–(1.10)*
 
 ^def-c1a-2-1
+
+
+> [!definition] Definition §C1a.2.2: Mass Dimension
+> In natural units ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]]) every quantity $Q$ has a single **mass dimension** $d$, written $[Q] = d$: $Q$ is a pure number times $(\text{mass})^d$. Masses, energies and momenta have $d = 1$, lengths and times $d = -1$, velocities, actions and angular momenta $d = 0$.
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Definition "Natural units and mass dimension") · PHY 513 Lecture 2, Part C ("Mass Dimensions") · Yu §1.2, eqs. (1.5)–(1.10)*
+
+^def-c1a-2-2
 
 > [!remark] Remark: Relabelling is not forgetting
 > A physical dimension is three counters: how many powers of kilograms, metres and seconds a quantity carries. Passing to natural units is two steps. **Relabel:** count in kilograms, "$\hbar$'s" and "$c$'s" instead; this is always possible, since a length is $\hbar/(\text{kg}\cdot c)$ and a time $\hbar/(\text{kg}\cdot c^2)$, and nothing is lost. **Forget:** declare $\hbar$ and $c$ to be the number $1$ and stop writing their counters; now a length and a time carry the same single counter, two different things have been identified, and two error checks are gone (a dropped factor of $v$ no longer unbalances the seconds). [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-2|Theorem §C1a.2.2]] makes the two steps precise: a change of basis, then a quotient.
@@ -81,11 +89,11 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 > **What the derivation shows.**
 > - Forgetting $\hbar$ and $c$ loses exactly two integers, and the type of the quantity returns three equations for them: two fix the integers, the third ($M$) is the mass dimension.
 > - The rule applies to a monomial in masses; a formula with several kinds of symbols or several terms is restored by the same matching, term by term ([[P4 Restoring ħ and c#^p4-4|P4, step 4]]).
-> - Used next: the table below, [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]] ($[S] = 0$), and every example of [[P4 Restoring ħ and c]].
+> - Used next: the table below, [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]] ($[S] = 0$), and every example of [[P4 Restoring ħ and c]].
 
 ^der-c1a-2-1
 
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]]
+*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]], [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]
 
 > [!remark] Remark: Mass dimensions of common quantities
 > | Quantity | Ordinary dimension | $d$ | Built from one mass $m$ |
@@ -107,12 +115,12 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 
 ## Why the rule works: dimensions as vector spaces
 
-> [!definition] Definition §C1a.2.2: Dimensions as One-Dimensional Vector Spaces
+> [!definition] Definition §C1a.2.3: Dimensions as One-Dimensional Vector Spaces
 > A **dimension** is an element $(\alpha, \beta, \gamma)$ of the abelian group $\mathbb Z^3$ (or $\mathbb Q^3$ when fractional powers are allowed), written $M^\alpha L^\beta T^\gamma$. To each dimension $D$ belongs a one-dimensional real vector space $V_D$ without a preferred basis: a **unit** is a basis vector $u \in V_D$, and $q \in V_D$ has the numerical value $q/u \in \mathbb R$. Products of quantities lie in tensor products, $V_{D_1}\otimes V_{D_2} = V_{D_1D_2}$; inverses in duals, $V_{D^{-1}} = V_D^{\ast}$; dimensionless quantities in $V_1 = \mathbb R$. A formula is **admissible** if it is defined without choosing units, i.e. equivariant under the independent rescalings $(\mathbb R_{>0})^3$ of the units of mass, length and time.
 >
 > *Source: the user's PHY 513 notes, App. A (Derivation "Dimensions as one-dimensional vector spaces", after Tao, "A mathematical formalisation of dimensional analysis")*
 
-^def-c1a-2-2
+^def-c1a-2-3
 
 > [!theorem] Theorem §C1a.2.2: Natural Units Are a Change of Basis Followed by a Quotient
 > 1. The dimensions $M = (1, 0, 0)$, $[\hbar] = (1, 2, -1)$ and $[c] = (0, 1, -1)$ form a basis of $\mathbb Z^3$; rewriting $M^\alpha L^\beta T^\gamma$ as $M^d\hbar^ac^b$ is an invertible change of basis, with $(d, a, b)$ as in [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]].
@@ -132,20 +140,20 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > An integer matrix with determinant $\pm1$ has an integer inverse (its inverse is $\operatorname{adj}A/\det A$, and the adjugate has integer entries), so the rows form a basis of $\mathbb Z^3$, not only of $\mathbb Q^3$. Every $M^\alpha L^\beta T^\gamma$ is a unique integer combination $M^d\hbar^ac^b$, and solving for $(d, a, b)$ is Steps 2–3 of [[§C1a.2 Natural Units and Dimensional Analysis#^der-c1a-2-1|Derivation §C1a.2.1]].
 >
-> **Step 2** (setting $\hbar = c = 1$). Choosing $\hbar$ as the unit of $V_{[\hbar]}$ and $c$ as the unit of $V_{[c]}$ and then writing their numerical values $1$ identifies $V_{[\hbar]}$ and $V_{[c]}$ with $\mathbb R = V_1$ ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]). Dimensions that differ by a combination of $[\hbar]$ and $[c]$ are thereby identified: the quotient $\mathbb Z^3/\langle[\hbar], [c]\rangle$. In the basis of Step 1 it is the projection $(d, a, b) \mapsto d$. Example: $L = (0, 1, 0)$ has $a = \beta + \gamma = 1$, $b = -1$, $d = -1$, so $L \mapsto -1$, the statement $L = M^{-1}$ of [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]].
+> **Step 2** (setting $\hbar = c = 1$). Choosing $\hbar$ as the unit of $V_{[\hbar]}$ and $c$ as the unit of $V_{[c]}$ and then writing their numerical values $1$ identifies $V_{[\hbar]}$ and $V_{[c]}$ with $\mathbb R = V_1$ ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]]). Dimensions that differ by a combination of $[\hbar]$ and $[c]$ are thereby identified: the quotient $\mathbb Z^3/\langle[\hbar], [c]\rangle$. In the basis of Step 1 it is the projection $(d, a, b) \mapsto d$. Example: $L = (0, 1, 0)$ has $a = \beta + \gamma = 1$, $b = -1$, $d = -1$, so $L \mapsto -1$, the statement $L = M^{-1}$ of [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]] and $[L] = -1$ of [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]].
 >
 > **Step 3** (no inverse; what restores it). The fibre over $d$ is the coset $d\,M + \langle[\hbar], [c]\rangle$, a two-parameter family. A natural-units formula records only $d$; to name the point of the fibre one needs the ordinary dimension $(\alpha, \beta, \gamma)$, after which $(a, b) = (\beta + \gamma, -\beta - 2\gamma)$ is forced by Step 1.
 >
-> ⚑ By-product: the convention "mass dimension" is the choice of the complement $\mathbb Z M$; the complement $\mathbb Z L$ gives the length dimension, which is $-d$. Both are used: [[§C1a.2 Natural Units and Dimensional Analysis#^ex-c1a-2-2|Example §C1a.2.2]] finds $[\phi] = L^{-1}$, which is $[\phi] = 1$ here → [[§C1a.2 Natural Units and Dimensional Analysis#^cau-c1a-2-2|Caution: The physical dimension of a field is a normalization convention]].
+> ⚑ By-product: the convention "mass dimension" is the choice of the complement $\mathbb Z M$; the complement $\mathbb Z L$ gives the length dimension, which is $-d$. Both are used: [[§C1b.3 Mass Dimension, Locality and Power Counting#^ex-c1b-3-2|Example §C1b.3.2]] finds $[\phi] = L^{-1}$, which is $[\phi] = 1$ here → [[§C1b.3 Mass Dimension, Locality and Power Counting#^cau-c1b-3-1|Caution: The physical dimension of a field is a normalization convention]].
 >
 > **What the derivation shows.**
 > - Step 1 is "relabel" and Step 2 is "forget" ([[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-1|Remark: Relabelling is not forgetting]]); the exponent rule is the inverse of the change of basis.
 > - The information lost is the kernel, two integers per quantity, and nothing else.
-> - Used next: the counting rules, which are the admissibility condition of Def. §C1a.2.2 written out ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]]).
+> - Used next: the counting rules, which are the admissibility condition of Def. §C1a.2.3 written out ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]]).
 
 ^der-c1a-2-2
 
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]
+*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]
 
 > [!theorem] Theorem §C1a.2.3: Rules of Dimensional Counting
 > 1. *Sums:* only quantities of equal dimension can be added or equated; every term of a sum or of a Lagrangian has the same mass dimension.
@@ -160,13 +168,13 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 ^thm-c1a-2-3
 
 > [!derivation]- Derivation
-> The user's notes state these rules as a principle; here they are derived from [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]].
+> The user's notes state these rules as a principle; here they are derived from [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]].
 >
 > **Step 1** (rule 1). Addition is defined inside one vector space $V_D$; there is no sum of an element of $V_{D_1}$ and one of $V_{D_2}$ for $D_1 \neq D_2$. Example: $\partial_t$ and $\nabla$ carry $T^{-1}$ and $L^{-1}$, so before $\hbar = c = 1$ they can be added only after converting one, which is why the wave operator is $c^{-2}\partial_t^2 - \nabla^2$ (with $c^2$, not $c$).
 >
 > **Step 2** (rule 2). $e^q = \sum_n q^n/n!$ adds the terms $q^n \in V_D^{\otimes n} = V_{D^n}$; by Step 1 this needs $D^n = D^0 = 1$ for all $n$, i.e. $D = 1$. The same holds for every function defined by a power series, and $\log$ is the inverse of $\exp$. A bare $\log r$ means $\log(r/r_0)$: the change of $r_0$ shifts it by a constant, which is the suppressed scale.
 >
-> **Step 3** (rule 3). $q^n \in V_D^{\otimes n} = V_{D^n}$; for rational exponents, $D^{1/k}$ is the dimension whose $k$-th power is $D$, which is why $\mathbb Q^3$ is allowed ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]). Example: $(m/2\pi it)^{3/2}$ has $d = \frac32(1 + 1) = 3$.
+> **Step 3** (rule 3). $q^n \in V_D^{\otimes n} = V_{D^n}$; for rational exponents, $D^{1/k}$ is the dimension whose $k$-th power is $D$, which is why $\mathbb Q^3$ is allowed ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]]). Example: $(m/2\pi it)^{3/2}$ has $d = \frac32(1 + 1) = 3$.
 >
 > **Step 4** (rule 4). $\partial f/\partial x = \lim\Delta f/\Delta x$ is a quotient of an element of $V_{D_f}$ by one of $V_{D_x}$, so it lies in $V_{D_f}\otimes V_{D_x}^{\ast}$, of dimension $D_fD_x^{-1}$; with $[x^\mu] = -1$ this is $[\partial_\mu] = +1$. An integral is a limit of sums $\sum f\,\Delta x$, of dimension $D_fD_x$; so $[d^4x] = -4$ and $[d^4p] = +4$. The delta function is fixed by $\int d^4x\,\delta^4(x) = 1$, a pure number: $[\delta^4(x)] = -[d^4x] = 4$, and likewise $[\delta^4(p)] = -4$.
 >
@@ -176,159 +184,15 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > **What the derivation shows.**
 > - The rules are not conventions: they are what "defined without choosing units" means.
-> - Rule 4 is the counting behind "each derivative costs one power of mass" ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-6|Theorem §C1a.2.6]]); rule 5 gives the dimension $4 - [\phi] = 3$ of the Euler–Lagrange expression $\partial^2\phi + V'(\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
+> - Rule 4 is the counting behind "each derivative costs one power of mass" ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]]); rule 5 gives the dimension $4 - [\phi] = 3$ of the Euler–Lagrange expression $\partial^2\phi + V'(\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
 
 ^der-c1a-2-3
 
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]
-
-## The action fixes the dimensions of fields and couplings
-
-> [!theorem] Theorem §C1a.2.4: The Action Is Dimensionless
-> In natural units every action is a pure number, $[S] = 0$. Consequently a Lagrangian density in $d$ spacetime dimensions has $[\mathcal L] = d$; in four dimensions
->
-> $$
-> [\mathcal L] = 4 .
-> $$
->
-> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Principle "The master constraint") · PHY 513 Lecture 2, Part C · the user's pre-course notes, §1.2 (Note "Dimensions in natural units")*
-
-^thm-c1a-2-4
-
-> [!derivation]- Derivation
-> **Step 1** (an action is a multiple of $\hbar$). An action has ordinary dimension $ML^2T^{-1}$ (energy times time). [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]: $d = 1 - 2 + 1 = 0$, and $a = \beta + \gamma = 1$, $b = -\beta - 2\gamma = 0$, so $S = (\text{pure number})\cdot\hbar$.
->
-> **Step 2** (why it must be). In quantum mechanics the action enters only through the phase $e^{iS/\hbar}$ of the path integral ([[§C4.2 The Feynman Path Integral#^pr-c4-2-3|QM Principle §C4.2.3]]); the argument of the exponential must be dimensionless ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2), which is Step 1 again.
->
-> **Step 3** (the density). $S = \int d^dx\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]]). By rule 4 of Theorem §C1a.2.3, $[d^dx] = -d$, so $0 = [S] = -d + [\mathcal L]$ and $[\mathcal L] = d$.
->
-> **Step 4** (check in ordinary units). With $S = \int dt\,d^3x\,\mathcal L_E$, $\mathcal L_E$ is an energy per volume, $ML^2T^{-2}\cdot L^{-3} = ML^{-1}T^{-2}$, and the exponent rule gives $d = 1 + 1 + 2 = 4$.
->
-> **What the derivation shows.**
-> - The four is the number of spacetime coordinates: the measure brings four powers of $(\text{mass})^{-1}$, and $\mathcal L$ must supply four powers of mass.
-> - The user's notes take this as a principle ("the master constraint"); here it is a theorem, given the exponent rule and the phase $e^{iS/\hbar}$.
-> - Used next: the dimensions of fields (Theorem §C1a.2.5) and couplings (Theorem §C1a.2.6).
-
-^der-c1a-2-4
-
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], [[§C4.2 The Feynman Path Integral#^pr-c4-2-3|QM Principle §C4.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]]
-
-> [!theorem] Theorem §C1a.2.5: Mass Dimension of Fields
-> In $d$ spacetime dimensions, with canonically normalized kinetic terms,
->
-> $$
-> \tfrac12\partial_\mu\phi\,\partial^\mu\phi \;\Rightarrow\; [\phi] = \tfrac{d-2}{2}, \qquad \bar\psi\,i\gamma^\mu\partial_\mu\psi \;\Rightarrow\; [\psi] = \tfrac{d-1}{2}, \qquad -\tfrac14F_{\mu\nu}F^{\mu\nu} \;\Rightarrow\; [A_\mu] = \tfrac{d-2}{2};
-> $$
->
-> in four dimensions $[\phi] = 1$, $[\psi] = \frac32$, $[A_\mu] = 1$. The kinetic term fixes the mass dimension; no choice of units changes it.
->
-> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions in the scalar Lagrangian"; "Symmetry determines the action" for $\psi$ and $A$) · PHY 513 Lecture 2, Part C · PHY 513, Problem Set 2, Problem 2(d), course solution*
-
-^thm-c1a-2-5
-
-> [!derivation]- Derivation
-> **Step 1** (scalar). By rules 3–4 of [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], $[\partial_\mu\phi\,\partial^\mu\phi] = 2(1 + [\phi])$; the factor $\frac12$ is a pure number. Setting this equal to $[\mathcal L] = d$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]]): $2 + 2[\phi] = d$, $[\phi] = (d - 2)/2$.
->
-> **Step 2** (spinor). The $\gamma^\mu$ are numerical matrices, and $\bar\psi$ has the dimension of $\psi$: $[\bar\psi\,\gamma^\mu\partial_\mu\psi] = 2[\psi] + 1 = d$, so $[\psi] = (d - 1)/2$.
->
-> **Step 3** (vector). $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ has $[F] = [A] + 1$, so $[F_{\mu\nu}F^{\mu\nu}] = 2[A] + 2 = d$ and $[A] = (d - 2)/2$.
->
-> **Step 4** (why the normalization decides). Rescaling $\phi \to \kappa\phi$ with a dimensionful constant $\kappa$ would change $[\phi]$ but multiply the kinetic term by $\kappa^2$; "canonical" means the coefficient is the pure number $\frac12$ ($1$ for $\bar\psi i\slashed{\partial}\psi$, $-\frac14$ for $F^2$), and that requirement defines $[\phi]$.
->
-> ⚑ By-product: a field may enter with a non-canonical, dimensionful coefficient, and then its own dimension is different (the dilaton, [[§C1a.2 Natural Units and Dimensional Analysis#^ex-c1a-2-1|Example §C1a.2.1]]); a coefficient that is a pure number other than $\frac12$ (Problem Set 2, Problem 2 has $\partial_\mu\phi_1\partial^\mu\phi_1$) changes factors of $2$ but not dimensions.
->
-> **What the derivation shows.**
-> - $[\phi] = 1$, $[\pi] = [\dot\phi] = 2$, and $[\delta^3] = 3$ are consistent with $[\phi(\mathbf x), \pi(\mathbf y)] = i\delta^3(\mathbf x - \mathbf y)$ ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]): $1 + 2 = 3$.
-> - Used next: the dimensions of couplings (Theorem §C1a.2.6). The spinor and vector kinetic terms are derived in QFT C5a ([[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]) and C4 ([[§C4.2★ The Proca Field#^mod-c4-2-1|Model §C4.2.1]], [[§C4.2★ The Proca Field#^rem-c4-2-1|§C4.2, Remark: Why F² plus a mass term]]; Maxwell: [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-5-2|Model §C4.5.2]]).
-
-^der-c1a-2-5
-
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]]
-
-> [!theorem] Theorem §C1a.2.6: Mass Dimension of Couplings
-> A term $g_{\mathcal O}\,\mathcal O$ in $\mathcal L$, with $[\mathcal O]$ the sum of the dimensions of its fields plus the number of its derivatives, has
->
-> $$
-> [g_{\mathcal O}] = d - [\mathcal O]; \qquad\text{for } g_n\phi^n:\quad [g_n] = d - n\,\frac{d - 2}{2} .
-> $$
->
-> In four dimensions $[g_n] = 4 - n$: the mass term has $[m^2] = 2$, $\phi^3$ a coupling of dimension $1$, $\phi^4$ a dimensionless coupling, and every term with $[\mathcal O] > 4$ ($\phi$, $A_\mu$ and each derivative counting $1$, $\psi$ counting $\frac32$) a coupling of negative dimension.
->
-> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions in the scalar Lagrangian", "The rule in general dimension") · PHY 513 Lecture 2, Part C · PHY 513, Problem Set 2, Problem 2(d), course solution*
-
-^thm-c1a-2-6
-
-> [!derivation]- Derivation
-> **Step 1** (general term). By rule 1 of [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]] every term of $\mathcal L$ has dimension $[\mathcal L] = d$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]]); by rule 3, $[g_{\mathcal O}\mathcal O] = [g_{\mathcal O}] + [\mathcal O]$. So $[g_{\mathcal O}] = d - [\mathcal O]$.
->
-> **Step 2** ($\phi^n$). $[\phi^n] = n[\phi] = n(d - 2)/2$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]]), so $[g_n] = d - n(d - 2)/2$; at $d = 4$, $[g_n] = 4 - n$.
->
-> **Step 3** (the four-dimensional list). $\frac12m^2\phi^2$: $[m^2] = 2$, i.e. $[m] = 1$, as a mass must. $\lambda\phi^4$: $[\lambda] = 0$. $c_6\phi^6$: $-2$. $(\partial_\mu\phi\,\partial^\mu\phi)^2$: $[\mathcal O] = 4 + 4 = 8$, coupling $-4$. $\phi\,(\partial^2)^2\phi$: $[\mathcal O] = 2 + 4 = 6$, coupling $-2$. Yukawa $\bar\psi\psi\phi$: $3 + 1 = 4$, coupling $0$. Gauge $\bar\psi\gamma^\mu\psi A_\mu$: $3 + 1 = 4$, coupling $0$. Four-fermion $(\bar\psi\psi)^2$: $6$, coupling $-2$.
->
-> **Step 4** (other dimensions). $d = 3$: $[\phi] = \frac12$, $[g_6] = 3 - 3 = 0$. $d = 6$: $[\phi] = 2$, $[g_3] = 6 - 6 = 0$. $d = 2$: $[\phi] = 0$ and $[g_n] = 2$ for every $n$, so every $\phi^n$ term carries a coupling of the same dimension as the mass term.
->
-> ⚑ By-product: a coupling of negative dimension $-k$ must be built from a scale, $g = \hat g/\Lambda^k$; its effects at energy $E$ are suppressed by $(E/\Lambda)^k$, which is the classification into relevant, marginal and irrelevant terms → [[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-4|Def. §C1b.1.4]]. Fermi's constant $G_F \simeq 1.17\times10^{-5}\ \text{GeV}^{-2}$ announces such a scale, $G_F^{-1/2} \simeq 300$ GeV.
->
-> **What the derivation shows.**
-> - In four dimensions $\phi^4$, Yukawa and gauge couplings are exactly the dimensionless ones; in three dimensions $\phi^6$ takes that role, in six $\phi^3$.
-> - Used next: the ordering of terms by relevance ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-4|Def. §C1b.1.4]], [[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^thm-c1b-1-6|Theorem §C1b.1.6]]).
-
-^der-c1a-2-6
-
-*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]], [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]]
-
-> [!example] Example §C1a.2.1: A Field in an Exponent: the Dilaton
-> In four dimensions consider $\mathcal L = -f^2e^{-2\tau}(\partial\tau)^2$ with $(\partial\tau)^2 = \partial_\mu\tau\,\partial^\mu\tau$. Find the mass dimensions of $\tau$ and $f$.
->
-> **Step 1.** $\tau$ sits in an exponent, so $[\tau] = 0$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2).
->
-> **Step 2.** $[\partial_\mu\tau] = 0 + 1$, so $[(\partial\tau)^2] = 2$ (rules 3–4); $[e^{-2\tau}] = 0$.
->
-> **Step 3.** $[\mathcal L] = 4$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]]) gives $2[f] + 0 + 2 = 4$, so $[f] = 1$: the whole dimension of the kinetic term is carried by the constant.
->
-> **Step 4** (the canonical field). For small $\tau$, $e^{-2\tau} \simeq 1$ and $\mathcal L \simeq -f^2(\partial\tau)^2$, which is $-\frac12(\partial\varphi)^2$ for $\varphi = \sqrt2\,f\tau$, the canonical form up to its overall sign, and $[\varphi] = 1$ as [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]] requires. A dimensionless field is a canonical field divided by a mass.
->
-> (The overall sign does not affect dimensions or the field equation; with $g = \operatorname{diag}(+, -, -, -)$ it gives $\dot\tau^2$ a negative coefficient, the form that is standard with the mostly-plus metric. The field equation $\partial^2\tau = (\partial\tau)^2$ of part (b) is an Euler–Lagrange computation, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]].)
->
-> *Source: PHY 513, Problem Set 2, Problem 1(a), with the course solution · the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions of a field in an exponent: the dilaton")*
-
-^ex-c1a-2-1
+*Uses:* [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]]
 
 ## Putting the units back
 
-> [!example] Example §C1a.2.2: Units Restored in the Scalar Action
-> Restore $\hbar$ and $c$ in $S = \int d^4x\bigl(\frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2\bigr)$ and in the dispersion relation $\omega = \sqrt{\mathbf k^2 + m^2}$ of its plane waves.
->
-> **Step 1** (target). $S/\hbar$ is a pure number ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|Theorem §C1a.2.4]]); so write $S/\hbar = \int d^4x\,\mathcal L$ and demand that this integral be dimensionless.
->
-> **Step 2** (the measure). $d^4x = c\,dt\,d^3x$ has dimension $L^4$, so $\mathcal L$ must have dimension $L^{-4}$.
->
-> **Step 3** (anchor: the gradient term). $\frac12(\nabla\phi)^2$ has dimension $[\phi]^2L^{-2}$; setting it equal to $L^{-4}$ gives $[\phi] = L^{-1}$ in this normalization ([[P4 Restoring ħ and c#^p4-5|P4, step 5]]).
->
-> **Step 4** (match the time derivative). $(\partial_t\phi)^2$ has $[\phi]^2T^{-2}$; to match the anchor it needs $c^{-2}$: $\frac{1}{2c^2}(\partial_t\phi)^2$.
->
-> **Step 5** (match the mass term). The coefficient of $\phi^2$ must be an inverse length squared; the length built from a mass is $\hbar/mc$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]), so $m^2 \to (mc/\hbar)^2 = m^2c^4/(\hbar c)^2$. Result:
->
-> $$
-> \frac S\hbar = \int c\,dt\,d^3x\,\Bigl[\frac{1}{2c^2}\Bigl(\frac{\partial\phi}{\partial t}\Bigr)^2 - \frac12(\nabla\phi)^2 - \frac12\Bigl(\frac{mc}{\hbar}\Bigr)^2\phi^2\Bigr].
-> $$
->
-> **Step 6** (dispersion). Everything an energy: $\omega \to \hbar\omega$, $k \to \hbar ck$, $m \to mc^2$, so $\hbar\omega = \sqrt{(\hbar c\mathbf k)^2 + (mc^2)^2}$, i.e. $E = \sqrt{(pc)^2 + (mc^2)^2}$ with $E = \hbar\omega$, $\mathbf p = \hbar\mathbf k$, the dispersion relation of [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-5|REL Theorem §B4.1.5]].
->
-> The Lecture 2 slide writes the first term as $\frac{1}{c^2}(\partial_t\phi)^2$ without the $\frac12$; the $\frac12$ is needed to match the natural-units Lagrangian.
->
-> *Source: PHY 513 Lecture 2, Part C ("Dimensional Analysis") · the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Units in the scalar action")*
-
-^ex-c1a-2-2
-
-> [!caution] Caution: The physical dimension of a field is a normalization convention
-> Example §C1a.2.2 found $[\phi] = L^{-1}$ because it put all constants into $\mathcal L$ and integrated over $c\,dt\,d^3x$. Requiring instead that $\mathcal L$ be an energy density, $ML^{-1}T^{-2}$, gives $[\phi] = (MLT^{-2})^{1/2}$, the dimension of the electrostatic potential in Heaviside–Lorentz units. Both are correct: they differ by a fixed power of $\hbar c$ absorbed into $\phi$, and both give mass dimension $1$ by [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]]. What is not a convention is the mass dimension, fixed by the kinetic term ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]]).
->
-> *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Caution "The physical dimension of a field is a normalization convention")*
-
-^cau-c1a-2-2
-
-> [!example] Example §C1a.2.3: The Annihilation Photons
+> [!example] Example §C1a.2.1: The Annihilation Photons
 > A positron of lab energy $E$ annihilates on an electron at rest, $e^+e^- \to \gamma\gamma$. In natural units the centre-of-mass energy is $E_{\text{CM}} = \sqrt{2m_e(E + m_e)}$ and each photon carries $E_\gamma = \frac12E_{\text{CM}}$. Restore $c$, and find the length scale probed by the photons for $E = 50$ MeV.
 >
 > **Step 1** (restore $c$ in $E_{\text{CM}}$). Target type: energy. Under the root every term must be an energy squared: $m_eE \to (m_ec^2)E$ and $m_e^2 \to (m_ec^2)^2$, so $E_{\text{CM}} = \sqrt{2m_ec^2(E + m_ec^2)}$ (two terms, matched separately: [[P4 Restoring ħ and c#^p4-5|P4, step 5]]).
@@ -341,15 +205,11 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > *Source: PHY 513, Problem Set 1, Problem 4(a)–(d), with the course solution · the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Restoring units: the wavelength of an annihilation photon")*
 
-^ex-c1a-2-3
+^ex-c1a-2-1
 
 > [!remark]- Connections
 > - The rules QM C13★ uses to translate Sakurai's natural-units formulas ($m \to mc^2$ for energies, $m \to mc/\hbar$ for inverse lengths, $e^2 \to e^2/\hbar c$) are [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]] applied type by type: [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^cau-c13-1-1|QM Caution: Units, metric and symbols in Chapter C13★]].
-> - The reduced Compton wavelength of Relativity ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-2|REL Def. §B4.1.2]]) is the exponent rule with $d = -1$; it is the range of the Wightman function outside the light cone ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]) and of the single-particle amplitude ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^ex-c1a-3-1|Example §C1a.3.1]]), and Relativity's Yukawa range ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
-> - $[S] = 0$ is the statement that $S/\hbar$ is a phase in Feynman's sum over paths ([[§C4.2 The Feynman Path Integral#^pr-c4-2-3|QM Principle §C4.2.3]]); the classical limit is the regime $S \gg \hbar$ ([[§C4.2 The Feynman Path Integral#^ex-c4-2-2|QM Example §C4.2.2]]).
-> - The mode expansion of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] is dimensionally consistent: $[\phi] = 1 = [d^3p] - \frac12[E_{\mathbf p}] + [a_{\mathbf p}]$ gives $[a_{\mathbf p}] = -\frac32$, matching $[a_{\mathbf p}, a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ of dimension $-3$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]); then $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}a^\dagger_{\mathbf p}|0\rangle$ has dimension $-1$ and $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3$ dimension $-2$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]). The zero-point energy $V\int\frac{d^3p}{(2\pi)^3}\frac{E_{\mathbf p}}{2}$ has $-3 + 3 + 1 = 1$, an energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-3|Theorem §C2a.3.3]]).
-> - The vector-space formulation ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]) uses the linear algebra of one-dimensional spaces: tensor products for products of quantities and dual spaces for inverses, as in Linear Algebra's dual space and tensor product chapters; the Buckingham $\pi$ theorem is the statement that the admissible invariants are generated by finitely many dimensionless monomials.
-> - The counting of [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-6|Theorem §C1a.2.6]] is what makes "quantum field theory is the long-distance description" ([[§C1a.1 Why Quantum Field Theory#^rem-c1a-1-3|Remark: Fields as the long-distance description]]) operational: only finitely many couplings are not suppressed by powers of $E/\Lambda$ ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-4|Def. §C1b.1.4]]); the dimensionless ones (in four dimensions $\phi^4$, Yukawa, gauge) are those of the renormalizable theories of QFT C6–C8 (planned).
-> - A massless theory with only dimensionless couplings has no scale in its Lagrangian; rule 6 of Theorem §C1a.2.3 then becomes a symmetry, dilatations ([[§C1b.5 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-5-6|★ Remark: Dilatations]]).
+> - The reduced Compton wavelength of Relativity ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-2|REL Def. §B4.1.2]]) is the exponent rule with $d = -1$; it is the range of the Wightman function outside the light cone ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]) and of the single-particle amplitude ([[§C2b.3 Explicit Forms of the Wightman Function#^ex-c2b-3-1|Example §C2b.3.1]]), and Relativity's Yukawa range ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
+> - The vector-space formulation ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-3|Def. §C1a.2.3]]) uses the linear algebra of one-dimensional spaces: tensor products for products of quantities and dual spaces for inverses, as in Linear Algebra's dual space and tensor product chapters; the Buckingham $\pi$ theorem is the statement that the admissible invariants are generated by finitely many dimensionless monomials.
+> - A massless theory with only dimensionless couplings has no scale in its Lagrangian; rule 6 of Theorem §C1a.2.3 then becomes a symmetry, dilatations ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-6-7|★ Remark: Dilatations]]).
 > - In thermal physics $k_B$ is set to $1$ in the same way, identifying temperature with energy; [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions#^thm-b10-1-2|TH Theorem §B10.1.2]] in natural units has the occupation $1/(e^{E/T} - 1)$, whose argument $E/T$ must be dimensionless by rule 2.
-> - Theorems §C1a.2.5–§C1a.2.6 for $N$ scalar fields: the renormalizable potential has couplings of mass dimension 3, 2, 1 and 0, and the mass matrix is the only relevant coupling with two field indices ([[§R1.1 N Real Scalar Fields and Their Potential#^thm-r1-1-2|Thesis Thm. §R1.1.2]]).

@@ -18,7 +18,7 @@ Which first-order field equation can a Dirac spinor obey, why does it look the s
 ## The Dirac equation
 
 > [!definition] Definition §C5a.3.1: The Dirac Equation
-> A **Dirac field** $\psi(x)$ is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
+> A **Dirac field** $\psi(x)$ is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; spinor fields, [[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-2|Def. §C3.4.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
 >
 > $$
 > \bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) = 0, \qquad\text{in components}\qquad \bigl[i(\gamma^\mu)_{ab}\,\partial_\mu - m\,\delta_{ab}\bigr]\psi_b(x) = 0, \quad a = 1, \dots, 4 ,
@@ -125,20 +125,20 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 >
 > **What the derivation shows**
 > - The whole content is one identity, $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: $\gamma^\mu$ is an invariant tensor with one vector slot and two spinor slots, and "contract the vector index with $\partial_\mu$" is the rule that builds a spinor out of a spinor ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-6|§C5a.2, Remark: What each Dirac index labels]]).
-> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by $\Lambda$ only up to sign ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]); the equation is linear and homogeneous, so both signs give the same statement.
+> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by $\Lambda$ only up to sign ([[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-4|§C3.4, Remark: Why a spinor's matrix is fixed only up to sign]]); the equation is linear and homogeneous, so both signs give the same statement.
 > - Assumption: $\psi \in C^1$. For a distribution the same computation holds term by term, since derivatives and linear changes of variables are defined on $\mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
 > - Used next: the Lagrangian is a scalar (Theorem §C5a.3.5); the same push-through gives the transformation of every bilinear ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]]).
 
 ^der-c5a-3-1
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-12|Theorem §C5a.2.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-12|Theorem §C5a.2.12]], [[§C3.4 How Fields Transform under the Lorentz Group#^def-c3-4-2|Def. §C3.4.2]]
 
 The slides phrase the transformation passively ("the physical point that the field is evaluated at does not change but its coordinates do") while the formula is written actively; the two readings give the same formula ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). Quantum Mechanics records the same check with $\hbar$, $c$ and a passive transformation, for one boost ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM Remark: Lorentz covariance and the rapidity]]); here it holds for every $\omega$ because the identity of Theorem §C5a.2.12 is proved for the whole group.
 
 ## The Dirac conjugate
 
 > [!remark] Remark: Why ψ†ψ is not a scalar
-> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-11|Theorem §C5a.2.11]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|Theorem §C3.2.12]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]]).
+> A Lagrangian must be a scalar, so $\psi$ needs a partner that transforms with $\Lambda_{1/2}^{-1}$. The quantum-mechanical candidate $\psi^\dagger$ transforms as $\psi^\dagger \to \psi^\dagger\Lambda_{1/2}^\dagger = \psi^\dagger\exp(+\frac i2\omega_{\mu\nu}S^{\mu\nu\dagger})$, which would be $\psi^\dagger\Lambda_{1/2}^{-1}$ if every $S^{\mu\nu}$ were Hermitian. The rotation generators $S^{ij}$ are; the boost generators $S^{0i}$ are anti-Hermitian ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-11|Theorem §C5a.2.11]]). So $\Lambda_{1/2}$ is unitary on rotations and not on boosts, and $\psi^\dagger\psi$ is invariant under rotations only. This is not a defect of the basis: no finite-dimensional representation of the Lorentz group is unitary ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]]). Indeed $\psi^\dagger\psi$ will turn out to be the time component of the vector $\bar\psi\gamma^\mu\psi$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (opening paragraph; Derivation "Why $\psi^\dagger\psi$ fails", Step 1) · PHY 513 Lecture 8, Part B ("The Hermitean Conjugate Spinor") · PS §3.2, p. 43 · Yu §5.3, eqs. (5.83)–(5.85)*
 
@@ -227,7 +227,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 > \bar\psi'(x) = \bar\psi(\Lambda^{-1}x)\,\Lambda_{1/2}^{-1} ,
 > $$
 >
-> and for any two Dirac fields $\psi$, $\chi$ the number $\bar\psi\chi = \psi^\dagger\gamma^0\chi$ is a Lorentz scalar field ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-2|Def. §C1b.1.2]]), $(\bar\psi'\chi')(x) = (\bar\psi\chi)(\Lambda^{-1}x)$. Moreover $(\bar\psi)^\dagger = \gamma^0\psi$.
+> and for any two Dirac fields $\psi$, $\chi$ the number $\bar\psi\chi = \psi^\dagger\gamma^0\chi$ is a Lorentz scalar field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), $(\bar\psi'\chi')(x) = (\bar\psi\chi)(\Lambda^{-1}x)$. Moreover $(\bar\psi)^\dagger = \gamma^0\psi$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (Derivation, Step 4; Definition "The Dirac conjugate") · PHY 513 Lecture 8, Part B · PS §3.2, eq. (3.33) · Yu §5.3, eqs. (5.91)–(5.92)*
 
@@ -240,7 +240,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 >
 > **2. Multiply by $\gamma^0$ and use Theorem §C5a.3.2.** $\bar\psi'(x) = \psi(y)^\dagger\Lambda_{1/2}^\dagger\gamma^0 = \psi(y)^\dagger\gamma^0\Lambda_{1/2}^{-1} = \bar\psi(y)\Lambda_{1/2}^{-1}$.
 >
-> **3. The pairing.** $(\bar\psi'\chi')(x) = \bar\psi(y)\Lambda_{1/2}^{-1}\Lambda_{1/2}\chi(y) = \bar\psi(y)\chi(y)$: a one-component field whose value at $x$ is the old value at $\Lambda^{-1}x$, the scalar law of [[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-2|Def. §C1b.1.2]].
+> **3. The pairing.** $(\bar\psi'\chi')(x) = \bar\psi(y)\Lambda_{1/2}^{-1}\Lambda_{1/2}\chi(y) = \bar\psi(y)\chi(y)$: a one-component field whose value at $x$ is the old value at $\Lambda^{-1}x$, the scalar law of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]].
 >
 > **4. The adjoint of $\bar\psi$.** $(\psi^\dagger\gamma^0)^\dagger = \gamma^{0\dagger}\psi = \gamma^0\psi$, with $\gamma^{0\dagger} = \gamma^0$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]]).
 >
@@ -251,7 +251,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 
 ^der-c5a-3-3
 
-*Uses:* [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-3|Def. §C5a.3.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-2|Def. §C1b.1.2]]
+*Uses:* [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-3|Def. §C5a.3.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]
 
 ## The Dirac Lagrangian
 
@@ -264,12 +264,12 @@ The slides phrase the transformation passively ("the physical point that the fie
 >
 > where $\bar\psi$ is the Dirac conjugate ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-3|Def. §C5a.3.3]]) and $\slashed{\partial}$ the slash ([[§C5a.3 The Dirac Equation and Its Lagrangian#^def-c5a-3-2|Def. §C5a.3.2]]); $\psi$ and $\bar\psi$ are varied as independent fields. Its field equation is the Dirac equation ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]]).
 >
-> *Assumptions:* classical field with commuting complex components (anticommuting after quantization, [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]); free (quadratic $\mathcal L$, linear equation); $m \ge 0$ a real parameter, the mass ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]; the sign of $m$ is a convention); kinetic term normalized without a factor, which fixes $[\psi] = \frac32$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]]); variations vanishing on the boundary; flat spacetime.
+> *Assumptions:* classical field with commuting complex components (anticommuting after quantization, [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]); free (quadratic $\mathcal L$, linear equation); $m \ge 0$ a real parameter, the mass ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]; the sign of $m$ is a convention); kinetic term normalized without a factor, which fixes $[\psi] = \frac32$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]); variations vanishing on the boundary; flat spacetime.
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8 (Definition "The Dirac Lagrangian", eq. (diracL)) · PHY 513 Lecture 8, Part B ("The Dirac Lagrangian") · PS §3.2, eq. (3.34) · Yu §5.3, eq. (5.103)*
 
 ^mod-c5a-3-4
 
-It is the spinor entry of the list that began with the scalar fields [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], previewed in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-5|§C1b.2, Remark: One equation for every kind of field]]. Two differences from the scalar: $\mathcal L$ is first order in derivatives, so it is linear in the velocities, and it vanishes on solutions ($\mathcal L = \bar\psi\cdot0$). The mass dimension $[\psi] = \frac32$ and its consequence, a coupling of dimension $-2$ for a four-fermion term $(\bar\psi\psi)^2$ (the Fermi constant), are [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|Theorem §C1a.2.5]] and [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-6|Theorem §C1a.2.6]].
+It is the spinor entry of the list that began with the scalar fields [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], previewed in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-7|§C1b.2, Remark: One equation for every kind of field]]. Two differences from the scalar: $\mathcal L$ is first order in derivatives, so it is linear in the velocities, and it vanishes on solutions ($\mathcal L = \bar\psi\cdot0$). The mass dimension $[\psi] = \frac32$ and its consequence, a coupling of dimension $-2$ for a four-fermion term $(\bar\psi\psi)^2$ (the Fermi constant), are [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]] and [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]].
 
 > [!theorem] Theorem §C5a.3.5: The Dirac Lagrangian Is a Lorentz Scalar
 > Under $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]), the density of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] obeys
@@ -278,7 +278,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > \mathcal L'(x) \equiv \bar\psi'(x)\bigl(i\slashed{\partial} - m\bigr)\psi'(x) = \mathcal L(\Lambda^{-1}x) ,
 > $$
 >
-> the law of a scalar field ([[§C1b.1 Scalar Field Theory꞉ Fields, Locality and Symmetry#^def-c1b-1-2|Def. §C1b.1.2]]); so the action $S = \int d^4x\,\mathcal L$ is Lorentz invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]).
+> the law of a scalar field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]); so the action $S = \int d^4x\,\mathcal L$ is Lorentz invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8 (Definition "The Dirac Lagrangian"; Figure "Why $\bar\psi\,i\gamma^\mu\partial_\mu\psi$ is a scalar") · PHY 513 Lecture 8, Part B ("Proof of invariance") · Yu §5.3, eq. (5.102)*
 
@@ -294,7 +294,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > **4. The action.** A density with $\mathcal L'(x) = \mathcal L(\Lambda^{-1}x)$ gives an invariant action by [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]] (substitute $y = \Lambda^{-1}x$, Jacobian $\lvert\det\Lambda^{-1}\rvert = 1$).
 >
 > **What the derivation shows**
-> - Each of the three slots of $\gamma^\mu$ is cancelled by a neighbour transforming with the inverse rule: the row spinor slot by $\bar\psi$, the column slot by $\psi$, the vector slot by $\partial_\mu$ (figure). The mass term uses only the spinor contraction. This is the spinor case of "invariant Lagrangians are $(0, 0)$ pieces" ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-5|§C3.3, Remark: Invariant Lagrangians are (0, 0) pieces]]).
+> - Each of the three slots of $\gamma^\mu$ is cancelled by a neighbour transforming with the inverse rule: the row spinor slot by $\bar\psi$, the column slot by $\psi$, the vector slot by $\partial_\mu$ (figure). The mass term uses only the spinor contraction. This is the spinor case of "invariant Lagrangians are $(0, 0)$ pieces" ([[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-5|§C3.4, Remark: Invariant Lagrangians are (0, 0) pieces]]).
 > - Used next: the field equations (Theorem §C5a.3.6) are covariant because they come from an invariant action.
 
 ^der-c5a-3-5
@@ -389,7 +389,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > **5. Add.** $\mathcal L^{\ast} = i\bar\psi\gamma^\mu\partial_\mu\psi - i\partial_\mu(\bar\psi\gamma^\mu\psi) - m\bar\psi\psi = \mathcal L - i\partial_\mu(\bar\psi\gamma^\mu\psi)$.
 >
-> **6. The symmetric form.** $\frac12(\mathcal L + \mathcal L^{\ast})$ is real, and by step 5 equals $\mathcal L - \frac i2\partial_\mu(\bar\psi\gamma^\mu\psi)$; expanding the derivative with step 3 gives $\mathcal L_{\rm sym}$. ⚑ By-product: $\mathcal L$ and $\mathcal L_{\rm sym}$ differ by a total divergence, so they have the same field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]) but different canonical momenta and canonical $T^{\mu\nu}$ (an improvement, [[§C1b.4 Noether's Theorem#^thm-c1b-4-4|Theorem §C1b.4.4]]).
+> **6. The symmetric form.** $\frac12(\mathcal L + \mathcal L^{\ast})$ is real, and by step 5 equals $\mathcal L - \frac i2\partial_\mu(\bar\psi\gamma^\mu\psi)$; expanding the derivative with step 3 gives $\mathcal L_{\rm sym}$. ⚑ By-product: $\mathcal L$ and $\mathcal L_{\rm sym}$ differ by a total divergence, so they have the same field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]) but different canonical momenta and canonical $T^{\mu\nu}$ (an improvement, [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
 >
 > **7. The action.** $\int d^4x\,\partial_\mu(\bar\psi\gamma^\mu\psi)$ is a surface integral (Gauss), zero for fields vanishing at infinity (fall-off faster than $r^{-3/2}$ in space suffices for the spatial part; the time boundary is the fixed initial and final data of the variational problem). So $S^{\ast} = S$.
 >
@@ -409,7 +409,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 ^rem-c5a-3-3
 
 > [!theorem] Theorem §C5a.3.8: Canonical Momenta of the Dirac Field
-> For [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]], with $\psi$ and $\bar\psi$ as the independent fields, the canonical momenta ([[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]]) are
+> For [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]], with $\psi$ and $\bar\psi$ as the independent fields, the canonical momenta ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]) are
 >
 > $$
 > \pi_\psi \equiv \frac{\partial\mathcal L}{\partial(\partial_0\psi)} = i\bar\psi\gamma^0 = i\psi^\dagger, \qquad \pi_{\bar\psi} \equiv \frac{\partial\mathcal L}{\partial(\partial_0\bar\psi)} = 0 .
@@ -429,16 +429,16 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > **3. $\bar\psi$.** $\mathcal L$ contains no derivative of $\bar\psi$: $\pi_{\bar\psi} = 0$.
 >
 > **What the derivation shows**
-> - The momentum conjugate to $\psi$ is (essentially) $\psi^\dagger$: the complex scalar's crossover $\pi_\phi = \dot\phi^*$ ([[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-3|Theorem §C1b.3.3]]) taken one step further, because $\mathcal L$ is first order in time ([[§C1b.3 Hamiltonian Field Theory#^rem-c1b-3-3|§C1b.3, Remark: Constraints and first-order Lagrangians]]). Phase space is spanned by the values of $\psi$ alone; half as many data as for a second-order equation.
+> - The momentum conjugate to $\psi$ is (essentially) $\psi^\dagger$: the complex scalar's crossover $\pi_\phi = \dot\phi^*$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]) taken one step further, because $\mathcal L$ is first order in time ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]]). Phase space is spanned by the values of $\psi$ alone; half as many data as for a second-order equation.
 > - ⚑ By-product: the momenta depend on the choice among Lagrangians differing by a divergence: $\mathcal L_{\rm sym}$ of Theorem §C5a.3.7 gives $\pi_\psi = \frac i2\psi^\dagger$, $\pi_{\psi^\dagger} = -\frac i2\psi$. The equal-time brackets built from either agree once the constraint is taken into account; the course uses $\pi_\psi = i\psi^\dagger$ → [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-5|★ Theorem §C5b.1.5]]; what quantization needs from the momenta: [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]].
 > - Used next: the equal-time anticommutator $\{\psi_a(\mathbf x), \pi_{\psi,b}(\mathbf y)\} = i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$, i.e. $\{\psi_a, \psi_b^\dagger\} = \delta_{ab}\delta^3$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]).
 
 ^der-c5a-3-8
 
-*Uses:* [[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]
 
 > [!theorem] Theorem §C5a.3.9: The Hamiltonian Density of the Dirac Field
-> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), the Hamiltonian density ([[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]]) of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] is
+> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]) of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] is
 >
 > $$
 > \mathcal H \equiv \pi_\psi\,\dot\psi - \mathcal L = \bar\psi\bigl(-i\gamma^j\partial_j + m\bigr)\psi = \psi^\dagger\bigl(-i\boldsymbol\alpha\cdot\nabla + \beta m\bigr)\psi, \qquad \alpha^j = \gamma^0\gamma^j,\ \beta = \gamma^0 ,
@@ -451,7 +451,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 ^thm-c5a-3-9
 
 > [!derivation]- Derivation
-> **1. Legendre transform.** By [[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.3.8).
+> **1. Legendre transform.** By [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.3.8).
 >
 > **2. Expand $\mathcal L$ into time and space parts.** $\mathcal L = i\bar\psi\gamma^0\partial_0\psi + i\bar\psi\gamma^j\partial_j\psi - m\bar\psi\psi$, and $i\bar\psi\gamma^0\partial_0\psi = i\psi^\dagger(\gamma^0)^2\partial_0\psi = i\psi^\dagger\partial_0\psi$.
 >
@@ -472,7 +472,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 ^der-c5a-3-9
 
-*Uses:* [[§C1b.3 Hamiltonian Field Theory#^def-c1b-3-1|Def. §C1b.3.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]
 
 This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
 
@@ -551,9 +551,9 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 
 > [!remark]- Connections
 > - Quantum Mechanics postulates the Dirac equation for a four-component wave function, with $\boldsymbol\alpha$, $\beta$ chosen to make the equation first order and the density positive; here $\psi$ is a field, the $\gamma$'s and the covariance come from the Lorentz group, the equation follows from a Lagrangian, and $\psi^\dagger\psi$ loses its probability meaning to become a charge density — [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]].
-> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|Theorem §C3.2.12]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
-> - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.3 Hamiltonian Field Theory#^rem-c1b-3-3|§C1b.3, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
+> - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-9|Theorem §C3.3.9]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].
+> - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 > - The unbounded classical energy of Theorem §C5a.3.9 is the Dirac version of the indefinite Klein–Gordon density of Quantum Mechanics; in both cases the field theory reinterprets negative frequency as antiparticles, but only anticommutators make the Dirac Hamiltonian positive — [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - "Dirac implies Klein–Gordon" is what makes the scalar machinery reusable: the mass shell, the invariant measure and the contour rules carry over, and the Dirac propagator is $(i\slashed{\partial} + m)$ times the scalar Feynman propagator — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[P2 Green's Functions by Contour Integration]].
-> - A Lagrangian that is real only up to a divergence, and momenta that change with the divergence, are the field version of adding a total time derivative to a mechanical Lagrangian; the physics (equations, charges) is unchanged, the canonical currents shift by improvements — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]], [[§C1b.4 Noether's Theorem#^thm-c1b-4-4|Theorem §C1b.4.4]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-14|Theorem §C5a.4.14]].
+> - A Lagrangian that is real only up to a divergence, and momenta that change with the divergence, are the field version of adding a total time derivative to a mechanical Lagrangian; the physics (equations, charges) is unchanged, the canonical currents shift by improvements — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-14|Theorem §C5a.4.14]].
 > - The procedure of canonical quantization starts from exactly the data assembled here (Lagrangian, momenta, Hamiltonian density) — [[P1 Canonical Quantization#^p1-1|P1, step 1]].

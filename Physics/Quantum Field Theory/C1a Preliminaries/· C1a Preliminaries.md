@@ -30,17 +30,17 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|§C1a.2.1]] The Exponent Rule
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-2|§C1a.2.2]] Natural Units Are a Change of Basis Followed by a Quotient
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|§C1a.2.3]] Rules of Dimensional Counting
-- [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-4|§C1a.2.4]] The Action Is Dimensionless
-- [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-5|§C1a.2.5]] Mass Dimension of Fields
-- [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-6|§C1a.2.6]] Mass Dimension of Couplings
+- [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|§C1b.3.1]] The Action Is Dimensionless
+- [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|§C1b.3.2]] Mass Dimension of Fields
+- [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|§C1b.3.3]] Mass Dimension of Couplings
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|§C1a.3.2]] The Amplitude Is the Fourier Transform of the Phase
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Nonrelativistic Amplitude Is Nonzero Everywhere
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value and a Time Derivative of the Wightman Function
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude at Spacelike Separation
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-8|§C1a.3.8]] The Relativistic Amplitude at Timelike Separation
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-9|§C1a.3.9]] Forward and Backward Amplitudes
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Leak Is Exponentially Small but Not Zero
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|§C2b.3.10]] The Relativistic Amplitude at Timelike Separation
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Four Components Are the Cosets of SO⁺(1,3)
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] SO⁺(1,3) Is the Component of the Identity
@@ -62,7 +62,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|§C1a.6.2]] The Generators Reproduce ω
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|§C1a.6.3]] Rotations and Boosts as Exponentials
 - [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|§C1a.6.4]] Every Exponential Is Proper Orthochronous
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-5|§C1a.6.5]] The Lorentz Algebra
+- [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|§C3.2.1]] The Lorentz Algebra
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Duality Exchanges E and B; the Two Invariants
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] E ± iB: the Self-Dual Halves of F

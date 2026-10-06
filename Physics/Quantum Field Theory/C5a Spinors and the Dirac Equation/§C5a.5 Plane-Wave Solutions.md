@@ -169,7 +169,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 ## The rest frame
 
 > [!theorem] Theorem §C5a.5.3: Rest-Frame Solutions
-> At the standard momentum $k \equiv (m, \mathbf 0)$ ([[§C3.5★ Particle States and the Little Group#^def-c3-5-1|Def. §C3.5.1]]), $m > 0$, the solutions of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]] are exactly
+> At the standard momentum $k \equiv (m, \mathbf 0)$ ([[§C3.6★ Particle States and the Little Group#^def-c3-6-1|Def. §C3.6.1]]), $m > 0$, the solutions of [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-1|Theorem §C5a.5.1]] are exactly
 >
 > $$
 > u_0 = \sqrt m\begin{pmatrix}\xi\\ \xi\end{pmatrix}, \qquad v_0 = \sqrt m\begin{pmatrix}\eta^s\\ -\eta^s\end{pmatrix},
@@ -219,10 +219,10 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 >
 > **Step 2** (on $u_0$). $J^k u_0 = \frac12\operatorname{diag}(\sigma^k, \sigma^k)\sqrt m(\xi, \xi) = \sqrt m(\frac12\sigma^k\xi, \frac12\sigma^k\xi) = u_0(\frac12\sigma^k\xi)$: both halves are acted on by the same $2\times2$ matrix, so the equality of the halves is preserved. For $v_0 = \sqrt m(\eta^s, -\eta^s)$ the same block acts on $\eta^s$ and on $-\eta^s$, giving $v_0(\frac12\sigma^k\eta^s)$; the relative sign rides along.
 >
-> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|§C5a.2, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]].
+> **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^rem-c5a-2-4|§C5a.2, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]].
 >
 > **What the derivation shows**
-> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-8|Theorem §C3.2.8]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
+> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-5|Theorem §C3.3.5]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
 > - The sign of $\omega_{ij}$ in Step 3 only fixes the orientation of the rotation; the statement $J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ does not depend on it.
 > - Used next: the spin basis ([[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|Def. §C5a.5.3]]); the spin of the *antiparticle* is read off only after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]).
 
@@ -299,7 +299,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 >
 > **What the derivation shows**
 > - The square root acts on the numbers $e^{\pm\eta}$ and does nothing to the projectors; it trades the half-rapidity $\eta/2$ of the spinor for the full rapidity $\eta$ of the vector, where $E$ and $\mathbf p$ live → [[§C5a.5 Plane-Wave Solutions#^rem-c5a-5-4|Remark: Why a square root restores the full rapidity]].
-> - The two Weyl halves are boosted in opposite senses ($e^{\mp\eta\sigma^3/2}$), the hallmark of $(\frac12, 0)$ versus $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-6|Theorem §C3.2.6]]).
+> - The two Weyl halves are boosted in opposite senses ($e^{\mp\eta\sigma^3/2}$), the hallmark of $(\frac12, 0)$ versus $(0, \frac12)$ ([[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-3|Theorem §C3.3.3]]).
 > - Used next: the rapidity in terms of $p$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-8|Theorem §C5a.5.8]]).
 
 ^der-c5a-5-5
@@ -437,7 +437,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 >
 > **What the derivation shows**
 > - The rapidity is a device: it is needed in the intermediate steps and is absent from the result.
-> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by the group element only up to sign ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; [[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-4|§C3.3, Remark: Why a spinor's matrix is fixed only up to sign]]); the exponential of the boost generator, reached from $\mathbb 1$ along the boost path, picks the positive-definite sign. This fixes the overall sign of $u$ and $v$ below.
+> - ⚑ By-product: $\Lambda_{1/2}$ is fixed by the group element only up to sign ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]]; [[§C3.4 How Fields Transform under the Lorentz Group#^rem-c3-4-4|§C3.4, Remark: Why a spinor's matrix is fixed only up to sign]]); the exponential of the boost generator, reached from $\mathbb 1$ along the boost path, picks the positive-definite sign. This fixes the overall sign of $u$ and $v$ below.
 > - $\Lambda_{1/2}(p)$ is Hermitian and positive: the "boost" factor of the polar decomposition of an $SL(2, \mathbb C)$ matrix, block by block.
 
 ^der-c5a-5-8
@@ -491,7 +491,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > **Step 5** (they span). $\Lambda_{1/2}(p)$ is invertible (an exponential), so it maps the two independent $u^1_0$, $u^2_0$ to two independent $u^1(p)$, $u^2(p)$, which lie in the two-dimensional $\ker(\slashed{p} - m)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]) and therefore span it. Part 1.
 >
 > **What the derivation shows**
-> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.5★ Particle States and the Little Group#^thm-c3-5-4|Theorem §C3.5.4]]).
+> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]).
 > - Assumption $m > 0$ (rest frame, $1/\sqrt m$); the massless case needs the second route.
 > - Used next: $v(p)$ by the same four steps ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-10|Theorem §C5a.5.10]]); normalizations ([[§C5a.6 Normalization, Spin Sums and Helicity|§C5a.6]]); mode expansion ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
 
@@ -631,7 +631,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 ^rem-c5a-5-7
 
 > [!remark]- Connections
-> - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.5★ Particle States and the Little Group#^thm-c3-5-9|Theorem §C3.5.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.5.4).
+> - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.5.4).
 > - $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ is positive Hermitian in each block: the "boost" factor of the polar decomposition, the $SL(2, \mathbb C)$ version of "every Lorentz transformation is a boost times a rotation" ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] and its Connections; [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]]); the upper block is the left-handed $SL(2, \mathbb C)$ matrix of [[§C5a.1 Weyl Spinors and SL(2,C)#^def-c5a-1-2|Def. §C5a.1.2]] (covering the vector representation, [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-7|Theorem §C5a.1.7]]).
 > - The eigenvalue count (two $u$'s, two $v$'s) uses only $\slashed{p}^{\,2} = p^2$ and $\operatorname{tr}\gamma^\mu = 0$; the same "square root of $p^2$" is why the Dirac operator squares to the Klein–Gordon operator ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-10|Theorem §C5a.3.10]]).
 > - The rest-frame projector structure, $\frac12(\mathbb 1 \pm \gamma^0)$ on $u_0$ and $v_0$, is the $\mathbf p = 0$ case of the energy projectors $\frac{\pm\slashed{p} + m}{2m}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-10|Theorem §C5a.6.10]]), the numerator of the Dirac propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft).

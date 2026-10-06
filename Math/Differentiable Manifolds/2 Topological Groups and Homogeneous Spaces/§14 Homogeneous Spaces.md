@@ -59,7 +59,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home: [[§26 Stabilizers and Fixed Points#^def-26-1|493 Def. §26.1 (Stabilizer)]], written $\operatorname{Stab}(x_0)$ there.
-> - Used in Quantum Field Theory: the little group of a particle, the isotropy subgroup of its standard momentum in the Lorentz group — [[§C3.5★ Particle States and the Little Group#^def-c3-5-1|QFT Def. §C3.5.1]].
+> - Used in Quantum Field Theory: the little group of a particle, the isotropy subgroup of its standard momentum in the Lorentz group — [[§C3.6★ Particle States and the Little Group#^def-c3-6-1|QFT Def. §C3.6.1]].
 
 > [!theorem] Proposition §14.1: The Isotropy Is a Subgroup
 > $H_{x_0}$ is a subgroup of $G$.
@@ -276,7 +276,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > [!remark]- Connections
 > - Home of this bijection: [[§30 Orbit–Stabilizer#^prop-30-2|493 §30.2 (The Orbit Bijection)]], same proof, for any orbit; hub [[Orbit–Stabilizer Theorem]].
 > - Conversely every $G/H$ carries a transitive action with isotropy $H$ at $eH$: [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
-> - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.5★ Particle States and the Little Group#^rem-c3-5-1|QFT Remark: What the definition fixes, and what it leaves free]].
+> - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
 > [!example] Example §14.3: The Sphere as a Homogeneous Space
 > $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]] with $r = 1$). By Example [[§14 Homogeneous Spaces#^ex-14-2|§14.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by the [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|theorem below]], as spaces),

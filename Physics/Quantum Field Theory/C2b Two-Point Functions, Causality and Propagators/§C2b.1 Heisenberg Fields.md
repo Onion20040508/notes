@@ -31,7 +31,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 ^def-c2b-1-1
 
 > [!remark] Remark: Why field theory works in the Heisenberg picture
-> The definition is QM's Heisenberg picture ([[§C3.3 The Schrödinger and Heisenberg Pictures#^def-c3-3-1|QM Def. §C3.3.1]]) applied to an operator labelled by $\mathbf x$, and the two pictures give the same matrix elements ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-3|QM Theorem §C3.3.3]]). What is new is the reason for preferring it: a time-dependent *state* obeying a Schrödinger equation singles out time, while a time-dependent *operator* $\phi(t, \mathbf x)$ is a function on spacetime that can transform covariantly ([[§C3.4 Quantum Poincaré Transformations#^thm-c3-4-9|Theorem §C3.4.9]], [[§C3.4 Quantum Poincaré Transformations#^thm-c3-4-12|Theorem §C3.4.12]]). Canonical quantization starts in the Schrödinger picture because diagonalizing $H$ at one instant is the continuation of ordinary quantum mechanics ([[P1 Canonical Quantization|P1]]); it then switches.
+> The definition is QM's Heisenberg picture ([[§C3.3 The Schrödinger and Heisenberg Pictures#^def-c3-3-1|QM Def. §C3.3.1]]) applied to an operator labelled by $\mathbf x$, and the two pictures give the same matrix elements ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-3|QM Theorem §C3.3.3]]). What is new is the reason for preferring it: a time-dependent *state* obeying a Schrödinger equation singles out time, while a time-dependent *operator* $\phi(t, \mathbf x)$ is a function on spacetime that can transform covariantly ([[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-9|Theorem §C3.5.9]], [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-12|Theorem §C3.5.12]]). Canonical quantization starts in the Schrödinger picture because diagonalizing $H$ at one instant is the continuation of ordinary quantum mechanics ([[P1 Canonical Quantization|P1]]); it then switches.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.1*
 
@@ -123,7 +123,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > **What the derivation shows.**
 > - Conjugation with $e^{iHt}$ does nothing to $a_{\mathbf p}$ but attach the phase of a positive-energy wave function; $a_{\mathbf p}$ itself stays the time-independent Schrödinger operator (PS's convention).
 > - Only $[a, a^\dagger]$ and the mode form of $H$ were used; the zero-point constant never enters time evolution.
-> - Used next: the two-point functions (Theorems §C2b.2.1, §C2b.4.2) and, through $\pi = \partial_t\phi$, the unequal-time commutators (Theorem §C2b.4.9).
+> - Used next: the two-point functions (Theorems §C2b.2.1, §C2b.4.2) and, through $\pi = \partial_t\phi$, the unequal-time commutators (Theorem §C2b.4.10).
 
 ^der-c2b-1-1
 
@@ -174,7 +174,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > **What the derivation shows.**
 > - Smearing in time as well as in space turns the mode integral into an absolutely convergent one in every matrix element; the decay comes from $\tilde f$ on the shell.
 > - Part 3 is the distributional content of the operator equation of Theorem §C2b.1.3: the free field ignores every off-shell component of a test function.
-> - Used next: the vacuum two-point function as a distribution (Theorem §C2b.2.2), unequal-time commutators (Theorem §C2b.4.10) and the particle number produced by a source (Theorem §C2b.8.4).
+> - Used next: the vacuum two-point function as a distribution (Theorem §C2b.2.2), unequal-time commutators (Theorem §C2b.4.11) and the particle number produced by a source (Theorem §C2b.8.4).
 
 ^der-c2b-1-2
 
@@ -201,7 +201,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > while the right side of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], $i\delta^3(\mathbf x - \mathbf y)$, is a number and is unchanged. One unitary sandwiches the whole product, so the *same* $t$ enters both fields. The same insertion in $[\phi_S(\mathbf x), \phi_S(\mathbf y)]$ and $[\pi_S(\mathbf x), \pi_S(\mathbf y)]$ gives $[\phi(t, \mathbf x), \phi(t, \mathbf y)]$ and $[\pi(t, \mathbf x), \pi(t, \mathbf y)]$, and their right sides, $0$, are unchanged.
 >
-> ⚑ By-product: nothing is said about *different* times → [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|Caution: Equal times only]]; the answer is Theorem §C2b.4.9.
+> ⚑ By-product: nothing is said about *different* times → [[§C2b.1 Heisenberg Fields#^cau-c2b-1-1|Caution: Equal times only]]; the answer is Theorem §C2b.4.10.
 >
 > **Step 2** (the Hamiltonian at time $t$). $H$ commutes with $e^{iHt}$, so $H = e^{iHt}He^{-iHt}$ is the Hamiltonian of [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] with every field replaced by its Heisenberg version at any common time; choose the time $t$ of the operator it will be commuted with (the squares of fields at one point are understood normal-ordered, [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]; the subtracted constant $E_0$ is a number and drops out of every commutator, Step 1 of Derivation §C2b.1.1):
 >
@@ -254,7 +254,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > - Only the equal-time relations and the form of $H$ were used, never the mode expansion; the mode expansion is recovered by solving the operator equation ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]).
 > - Assumption used: fall-off of the field at spatial infinity (Step 5).
 > - Every manipulation with $\delta^3$ is an identity of distributions, valid after smearing in $\mathbf x$; the resulting operator equation means $\phi\bigl((\partial^2 + m^2)f\bigr) = 0$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], 3).
-> - The two first-order equations are Hamilton's equations of the classical field ([[§C1b.3 Hamiltonian Field Theory#^thm-c1b-3-4|Theorem §C1b.3.4]]; this field: [[§C1b.3 Hamiltonian Field Theory#^ex-c1b-3-1|Example §C1b.3.1]]) with operators in place of functions.
+> - The two first-order equations are Hamilton's equations of the classical field ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]]; this field: [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]]) with operators in place of functions.
 > - Used next: every two-point function solves the homogeneous equation (Theorem §C2b.2.4), and the free Schwinger–Dyson equation ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]).
 
 ^der-c2b-1-3
@@ -262,7 +262,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 *Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
 
 > [!caution] Caution: Equal times only
-> - The canonical relations were postulated at one instant. Theorem §C2b.1.3, 1 extends them to every *common* time; at different times nothing has been assumed, and the answer is a theorem ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]).
+> - The canonical relations were postulated at one instant. Theorem §C2b.1.3, 1 extends them to every *common* time; at different times nothing has been assumed, and the answer is a theorem ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]).
 > - $\phi(\mathbf x)$ commutes with $\nabla\phi(\mathbf y)$ because $[\phi(\mathbf x), \phi(\mathbf y)]$ vanishes for *all* $\mathbf x, \mathbf y$. The same move on $[\phi, \pi]$ gives $\nabla\delta^3 \neq 0$.
 > - Inside the commutator with $H$, $(-\nabla^2 + m^2)\phi$ may not be replaced by $-\partial_t^2\phi$: the equality is true, but a time derivative involves nearby *different* times, about which the postulates say nothing. Compute at equal times, then read off the time dependence.
 >
@@ -328,9 +328,9 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 ^rem-c2b-1-4
 
 > [!remark]- Connections
-> - [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]] is the time component of a four-dimensional statement, $\phi(x) = e^{iP\cdot x}\phi(0)e^{-iP\cdot x}$, equivalently $[\phi, P^\mu] = i\partial^\mu\phi$: translation invariance on the Hilbert space — [[§C3.4 Quantum Poincaré Transformations#^thm-c3-4-9|Theorem §C3.4.9]].
+> - [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]] is the time component of a four-dimensional statement, $\phi(x) = e^{iP\cdot x}\phi(0)e^{-iP\cdot x}$, equivalently $[\phi, P^\mu] = i\partial^\mu\phi$: translation invariance on the Hilbert space — [[§C3.5 Quantum Poincaré Transformations#^thm-c3-5-9|Theorem §C3.5.9]].
 > - Theorem §C2b.1.1 is the field version of the oscillator in the Heisenberg picture, $a(t) = ae^{-i\omega t}$: [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-2|QM Theorem §C3.4.2]]; the same phase makes a coherent state stay coherent in [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-5|Theorem §C2a.6.5]].
-> - The Heisenberg field is the operator whose vacuum correlations are the two-point functions: the Wightman function is built from it in [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], and its commutator at unequal times is the commutator function of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|Theorem §C2b.4.9]]; the positive- and negative-frequency parts of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] are what normal ordering and contractions separate — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]].
+> - The Heisenberg field is the operator whose vacuum correlations are the two-point functions: the Wightman function is built from it in [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], and its commutator at unequal times is the commutator function of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]; the positive- and negative-frequency parts of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] are what normal ordering and contractions separate — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]].
 > - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] (operator-valued distributions) is what the Heisenberg field is: Theorem §C2b.1.2 smears it over spacetime, the four-dimensional version of the time-slice smearing of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]].
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform maps $\mathcal S$ to $\mathcal S$) supplies the on-shell decay of $\tilde f$ that makes $\phi(f)|0\rangle$ normalizable; the same decay makes the particle number of a source finite ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]).
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] (exchanging the $x$- and $p$-integrals) is the step that turns the formal mode expansion into $\phi(f)$, valid because the coefficients are smeared.
