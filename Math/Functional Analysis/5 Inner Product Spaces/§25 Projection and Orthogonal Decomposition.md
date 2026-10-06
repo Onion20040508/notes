@@ -169,7 +169,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^pf-25-3
 
-*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
+*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|LADR 6.48]].
@@ -241,7 +241,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^pf-25-4
 
-*Uses:* [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|§23.1 (5.1)]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-3|Def. §25.3]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
+*Uses:* [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|§23.1 (5.1)]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^def-25-3|Def. §25.3]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
 
 > [!remark]- Connections
 > - Announced in Chapter 1 as the missing hypothesis of [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (orthogonal complement as a model of the quotient).
@@ -273,7 +273,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^pf-25-5
 
-*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
+*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
 
 > [!remark]- Connections
 > - Re-proved for orthonormal sets: [[§27 Orthonormal Sets and Bases#^prop-27-9|§27.9]].
@@ -376,7 +376,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^pf-25-7
 
-*Uses:* [[§22 Definition and Examples#^ex-22-3|Ex. §22.3]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]
+*Uses:* [[§22 Definition and Examples#^ex-22-3|Ex. §22.3]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]
 
 > [!remark]- Connections
 > - The parity operator in the quantum mechanics chapter: [[§35 The Completeness Relation#^ex-35-1|Ex. §35.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].

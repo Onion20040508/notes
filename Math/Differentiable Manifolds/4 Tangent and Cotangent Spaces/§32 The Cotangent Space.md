@@ -187,7 +187,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 ^pf-32-5
 
-*Uses:* [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]
+*Uses:* [[§32 The Cotangent Space#^lem-32-2|§32.2]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]
 
 > [!remark] Remark
 > The proposition is the conceptual centre of Problem 3. $I_p$ consists of the germs vanishing to *first* order at $p$, and $I_p^2$ of those vanishing to *second* order — value and first derivatives zero. So the quotient $I_p/I_p^2$ remembers exactly the first derivatives of a germ that vanishes at $p$, and nothing else. It only needs first-order Hadamard: the vanishing of $f_i(a)$ is what puts the second factor in $I_p$.
@@ -221,7 +221,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 ^pf-32-6
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-5|§32.5]], [[§32 The Cotangent Space#^def-32-3|Def. §32.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-5|§32.5]], [[§32 The Cotangent Space#^def-32-3|Def. §32.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]]
 
 This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]]): the coefficients of ${[}[f]{]}$ are the first partials of $f$, just as the coefficients of a derivation $D$ were its values $D[x^i]$.
 
@@ -235,7 +235,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 ^def-32-4
 
 > [!theorem] Proposition §32.7: The Pairing Is Well Defined and Non-Degenerate
-> The pairing of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§21 Linear Algebra Toolkit#^def-21-4|§21.4]].
+> The pairing of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]] is well defined, bilinear, and non-degenerate in the sense of Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]].
 >
 > *Lee: no counterpart; Lee proves Problem 11-4(b) without a pairing*
 
@@ -250,7 +250,7 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 ^pf-32-7
 
-*Uses:* [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^prop-32-5|§32.5]]
+*Uses:* [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§32 The Cotangent Space#^prop-32-1|§32.1]], [[§32 The Cotangent Space#^prop-32-5|§32.5]]
 
 > [!theorem] Theorem §32.8: The Cotangent Space from Germs
 > 1. The pairing induces isomorphisms

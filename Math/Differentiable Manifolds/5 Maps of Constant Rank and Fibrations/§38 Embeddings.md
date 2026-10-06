@@ -72,17 +72,17 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(M) \cap (V' \cap W) = F(U) = \{\, x \in V' \cap W : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\},
 > $$
 >
-> the first equality because $F(M) \cap W = F(U) \subseteq V'$, the second by $(*)$ intersected with $W$. So $(V' \cap W, \psi)$ is an adapted chart at $q$ ([[§35 Submanifolds#^def-35-1|Definition §35.1]]), and $F(M)$ is a submanifold of codimension $n - m$.
+> the first equality because $F(M) \cap W = F(U) \subseteq V'$, the second by $(*)$ intersected with $W$. So $(V' \cap W, \psi)$ is an adapted chart at $q$ ([[§35 Submanifolds#^def-35-2|Definition §35.2]]), and $F(M)$ is a submanifold of codimension $n - m$.
 
 ^pf-38-1
 
-*Uses:* [[§38 Embeddings#^def-38-1|Def. §38.1]], [[§37 Immersions#^thm-37-1|§37.1]], [[§37 Immersions#^cor-37-2|§37.2]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§10 Continuous Functions#^prop-10-2|590 §10.2]]
+*Uses:* [[§38 Embeddings#^def-38-1|Def. §38.1]], [[§37 Immersions#^thm-37-1|§37.1]], [[§37 Immersions#^cor-37-2|§37.2]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§10 Continuous Functions#^prop-10-2|590 §10.2]]
 
 ![[m591-33-3.svg]]
 *The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.*
 
 > [!remark]- Connections
-> - Submanifolds and adapted charts: [[§35 Submanifolds#^def-35-1|Def. §35.1]]; the other main source of submanifolds, level sets: [[§35 Submanifolds#^thm-35-6|§35.6]].
+> - Submanifolds and adapted charts: [[§35 Submanifolds#^def-35-2|Def. §35.2]]; the other main source of submanifolds, level sets: [[§35 Submanifolds#^thm-35-6|§35.6]].
 > - The local statement this globalizes: [[§37 Immersions#^cor-37-2|§37.2]], from the [[Immersion Normal Form]].
 
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
@@ -107,7 +107,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 *Uses:* [[§38 Embeddings#^pf-38-1|proof of §38.1]], [[§37 Immersions#^thm-37-1|§37.1]], [[§37 Immersions#^cor-37-2|§37.2]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§33 Local Diffeomorphisms#^ex-33-1|Ex. §33.1]], [[§34 Submersions#^cor-34-6|§34.6]], [[§37 Immersions#^ex-37-2|Ex. §37.2]]
 
 > [!theorem] Corollary §38.3: An Embedding Is a Diffeomorphism onto Its Image
-> If $F : M \to N$ is an embedding ([[§38 Embeddings#^def-38-1|Def. §38.1]]), then $F : M \to F(M)$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]), $F(M)$ carrying its induced smooth structure as a submanifold ([[§35 Submanifolds#^prop-35-2|§35.2]]).
+> If $F : M \to N$ is an embedding ([[§38 Embeddings#^def-38-1|Def. §38.1]]), then $F : M \to F(M)$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]), $F(M)$ carrying its induced smooth structure as a submanifold ([[§35 Submanifolds#^prop-35-2|§35.2]]).
 
 ^cor-38-3
 
@@ -208,11 +208,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 ^prop-38-7
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* At each point of the submanifold $S$ there is an adapted chart $(V, \psi)$ ([[§35 Submanifolds#^def-35-1|Definition §35.1]]), in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions. For the equivalence in the definition: if $U$ is the union of these $V$, a point of $U \setminus S$ lies in some $V \setminus S$, which is open, so $U \setminus S$ is open and $S$ is closed in $U$.
+> *(Not from lecture; filled in.)* At each point of the submanifold $S$ there is an adapted chart $(V, \psi)$ ([[§35 Submanifolds#^def-35-2|Definition §35.2]]), in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions. For the equivalence in the definition: if $U$ is the union of these $V$, a point of $U \setminus S$ lies in some $V \setminus S$, which is open, so $U \setminus S$ is open and $S$ is closed in $U$.
 
 ^pf-38-7
 
-*Uses:* [[§38 Embeddings#^def-38-3|Def. §38.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]
+*Uses:* [[§38 Embeddings#^def-38-3|Def. §38.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]
 
 > [!theorem] Corollary §38.8: Dense Submanifolds Are Open
 > A dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) regular submanifold ([[§35 Submanifolds#^def-35-1|Def. §35.1]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§38 Embeddings#^def-38-1|Def. §38.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
@@ -224,7 +224,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-38-8
 
-*Uses:* [[§38 Embeddings#^prop-38-7|§38.7]], [[§38 Embeddings#^def-38-3|Def. §38.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]]
+*Uses:* [[§38 Embeddings#^prop-38-7|§38.7]], [[§38 Embeddings#^def-38-3|Def. §38.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§38 Embeddings#^thm-38-1|§38.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]]
 
 > [!remark]- Connections
 > - Dense subsets in 590: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], with the [[Closure Characterization|590 closure characterization]].

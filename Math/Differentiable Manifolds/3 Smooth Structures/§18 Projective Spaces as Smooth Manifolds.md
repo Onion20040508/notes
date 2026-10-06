@@ -70,7 +70,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-18-1
 
-*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-1|Def. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §13.3]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
+*Uses:* [[§18 Projective Spaces as Smooth Manifolds#^def-18-1|Def. §18.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §13.3]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
 > - $\mathbb{CP}^n$ as the orbit space of $\mathbb{C}^\times$: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]]; the home of quotient maps and their universal property: [[§13 Quotient Topology|590 §13]].
@@ -188,7 +188,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-18-6
 
-*Uses:* [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§10 Continuous Functions#^thm-10-4|590 §10.4 (local formulation of continuity)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]
+*Uses:* [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§17 Differentiable Structures#^ex-17-3|Ex. §17.3]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§10 Continuous Functions#^thm-10-4|590 §10.4 (local formulation of continuity)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]
 
 > [!remark]- Connections
 > - $P^1 \cong S^1$ in 590: [[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 §38.3]]; Grassmannians as homogeneous spaces: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]].

@@ -86,7 +86,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-1
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]]
 
 **Comparison with Lee.** Lee's Theorem 6.30 states this for a smooth map transverse to an *embedded submanifold* $S \subseteq M$, after the theory of submanifolds (Chapter 5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof — pull $G$ back along $F$ — is the one Lee uses locally.
 
@@ -110,7 +110,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-2
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
 
 > [!remark] Remark: An Intrinsic Statement with a Chosen Proof
 > [[§26 Transversality#^prop-26-2|Proposition §26.2]] is the precise content of the parenthetical. Transversality is not merely a sufficient condition: it *is* the regular value condition for $G \circ F$, rewritten so that $G$ disappears. The hypothesis of [[§26 Transversality#^thm-26-1|Theorem §26.1]] and both of its conclusions — that $M$ is a manifold, and the formula for $T^{\mathrm{geo}}_pM$ — involve only $F$ and $S$; only the proof picks a defining function $G$. This is the same pattern as for charts: a statement that does not depend on a choice, proved by making one. Two things remain for later. The smooth structure on $M$ is built through $G$, and its independence of $G$ is a statement about submanifolds. And $S$ need only be cut out by some $G$ *near each point*, which will turn out to hold for every embedded submanifold, so the theorem localizes.
@@ -173,7 +173,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-4
 
-*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
+*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]]
 
 > [!example] Example §26.1: The Sphere and the Plane Re-read
 > The figure in [[§7 The Regular Value Theorem#^rem-7-3|§7]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.

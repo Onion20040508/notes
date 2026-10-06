@@ -48,7 +48,7 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spa
 
 ^pf-15-1
 
-*Uses:* [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]]
+*Uses:* [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]]
 
 > [!theorem] Corollary §15.2: $\pi$ Is a Quotient Map
 > $\pi : G \to G/H$ is a quotient map in the sense of Definition [[§5 Quotient Maps#^def-5-1|§5.1]], and consequently a map $g : G/H \to Z$ into a topological space is continuous if and only if $g \circ \pi : G \to Z$ is continuous.

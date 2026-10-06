@@ -82,7 +82,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 ^pf-ex-23-1
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|Def. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|Def. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
 
 > [!remark]- Connections
 > - $\mathrm{O}(n)$ as a group in 493: [[Matrix groups GLₙ, SLₙ and O(n)]]; the analogous level-set argument for $\mathrm{SL}(n,\mathbb{R})$: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
@@ -245,7 +245,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 
 ^pf-ex-23-2
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|Def. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|Def. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
 
 > [!remark]- Connections
 > - Unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]].
@@ -289,7 +289,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 
 ^pf-23-5
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]]
 
 > [!remark]- Connections
 > - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]](1) is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

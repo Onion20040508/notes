@@ -9,18 +9,27 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: maps — Maps with surjective differentials: locally projections, by the normal form — the tool that makes the regular value theorem work on any manifold ([[§35 Submanifolds|§35]]).*
 
-> [!definition] Definition §34.1: Submersion and Immersion
-> Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{\ast p}$ is onto, and a **submersion** if it is a submersion at every point. $F$ is an **immersion at $p$** if $F_{\ast p}$ is injective, and an **immersion** if it is one at every point.
+> [!definition] Definition §34.1: Submersion
+> Let $F : M \to N$ be smooth and $p \in M$. $F$ is a **submersion at $p$** if $F_{\ast p}$ is onto, and a **submersion** if it is a submersion at every point.
 >
 > *Lee: Ch. 4, Maps of Constant Rank*
 
 ^def-34-1
 
 > [!remark]- Connections
-> - The lecture's definition of immersion, with its normal form: [[§37 Immersions#^def-37-1|Def. §37.1]], [[§37 Immersions#^thm-37-1|§37.1]].
-> - Submersion at $p$ = regular point: [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - Submersion at $p$ = regular point: [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§34 Submersions#^def-34-3|Def. §34.3]].
 
-The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§37 Immersions|§37]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
+> [!definition] Definition §34.2: Immersion
+> Let $F : M \to N$ be smooth and $p \in M$. $F$ is an **immersion at $p$** if $F_{\ast p}$ is injective, and an **immersion** if it is one at every point.
+>
+> *Lee: Ch. 4, Maps of Constant Rank*
+
+^def-34-2
+
+> [!remark]- Connections
+> - The lecture's definition of immersion, with its normal form: [[§37 Immersions#^def-37-1|Def. §37.1]], [[§37 Immersions#^thm-37-1|§37.1]].
+
+The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§37 Immersions|§37]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-2|§30.2]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
 > [!theorem] Proposition §34.1: Dimension Constraints
 > Let $F : M \to N$ be smooth, $m = \dim M$, $n = \dim N$, and $p \in M$.
@@ -74,15 +83,23 @@ The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§3
 > [!definition] Definition §34.3: Regular Points and Critical Points
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
 > 1. $p \in M$ is a **regular point** of $F$ if $F$ is a submersion at $p$, i.e. $F_{\ast p}$ is onto — which forces $n \le m$. Otherwise $p$ is a **critical point**, also called a **singular point**.
-> 2. $q \in N$ is a **regular value** of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a **critical value** otherwise.
-> 3. In particular every $q \notin F(M)$ is a regular value: its preimage is empty, and “everything is true for the empty set.”
->
-> These are the notions of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]].
 
 ^def-34-3
 
 > [!remark]- Connections
-> - The two earlier definitions of regular point/value: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean, Lecture 3) and [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] (manifolds, via rank).
+> - The two earlier definitions of regular point: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]] (Euclidean, Lecture 3) and [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]] (manifolds, via rank).
+
+> [!definition] Definition §34.4: Regular Values and Critical Values
+> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
+> 2. $q \in N$ is a **regular value** of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a **critical value** otherwise.
+> 3. In particular every $q \notin F(M)$ is a regular value: its preimage is empty, and “everything is true for the empty set.”
+>
+> These are the notions of Definitions [[§30 The Differential in Coordinates#^def-30-2|§30.2]] and [[§30 The Differential in Coordinates#^def-30-3|§30.3]], now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]].
+
+^def-34-4
+
+> [!remark]- Connections
+> - The two earlier definitions of regular value: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean, Lecture 3) and [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] (manifolds, via rank).
 
 Uribe called (3) “kind of a trivial way to be [regular], but important”: it matters in Sard's theorem, about the set of regular values, which is still to come. **Transcription note.** Page 29 of the handwritten notes has “if $q \in \operatorname{Im} F$, then $q$ is regular”; the audio has “if $q$ is not in the image of $F$”, as in (3). The same page writes the preimage in (2) as $F^{-1}(p)$ for $F^{-1}(q)$.
 
@@ -109,7 +126,7 @@ Uribe called (3) “kind of a trivial way to be [regular], but important”: it 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 §17.1]] (Fermat's theorem).
 
-This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]] for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
+This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]] for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
 
 > [!theorem] Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts
 > Let $U \subseteq M$ be open and $\hat\varphi : U \to \mathbb{R}^m$ smooth, with $\hat\varphi(U)$ open and $\hat\varphi : U \to \hat\varphi(U)$ a diffeomorphism. Then $(U, \hat\varphi)$ is a smooth chart of $M$.

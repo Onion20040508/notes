@@ -15,7 +15,7 @@ The third special type of map, dual to the submersions of [[§34 Submersions|§3
 
 ## Immersions
 
-*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§34 Submersions#^def-34-1|Definition §34.1]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§44 The Tangent Bundle|§44]]).*
+*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§34 Submersions#^def-34-2|Definition §34.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§44 The Tangent Bundle|§44]]).*
 
 > [!definition] Definition §37.1: Immersions
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
@@ -25,7 +25,7 @@ The third special type of map, dual to the submersions of [[§34 Submersions|§3
 ^def-37-1
 
 > [!remark]- Connections
-> - The earlier definition, stated with submersions: [[§34 Submersions#^def-34-1|Def. §34.1]]; the dimension constraint there: [[§34 Submersions#^prop-34-1|§34.1]].
+> - The earlier definition, stated with submersions: [[§34 Submersions#^def-34-2|Def. §34.2]]; the dimension constraint there: [[§34 Submersions#^prop-34-1|§34.1]].
 > - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
 > - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
@@ -55,7 +55,7 @@ The third special type of map, dual to the submersions of [[§34 Submersions|§3
 > \tilde\varphi = \big(F^1, \ldots, F^m\big)\big|_U : U \longrightarrow \tilde\varphi(U) \subseteq \mathbb{R}^m .
 > $$
 >
-> *(Completion.)* As in step 8 of the [[§34 Submersions#^pf-34-4|proof of Theorem §34.4]]: the inverse function theorem gives an open $W \ni \varphi_0(p)$ on which $\tilde\varphi \circ \varphi_0^{-1}$ is a [[§17 Differentiable Structures#^def-17-3|diffeomorphism]] onto an open set; put $U = \varphi_0^{-1}(W)$; then $\tilde\varphi$ maps $U$ [[§19 Smooth Functions and Smooth Maps#^def-19-3|diffeomorphically]] onto an open set, and is a chart by [[§34 Submersions#^lem-34-3|Lemma §34.3]].
+> *(Completion.)* As in step 8 of the [[§34 Submersions#^pf-34-4|proof of Theorem §34.4]]: the inverse function theorem gives an open $W \ni \varphi_0(p)$ on which $\tilde\varphi \circ \varphi_0^{-1}$ is a [[§17 Differentiable Structures#^def-17-3|diffeomorphism]] onto an open set; put $U = \varphi_0^{-1}(W)$; then $\tilde\varphi$ maps $U$ [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphically]] onto an open set, and is a chart by [[§34 Submersions#^lem-34-3|Lemma §34.3]].
 >
 > *5. In the new chart, $F$ is a graph.* Let $\hat F = \psi \circ F \circ \tilde\varphi^{-1} : \tilde\varphi(U) \to \psi(V_0)$. By the definition of $\tilde\varphi$, the first $m$ components of $\hat F(r)$ are $F^i(\tilde\varphi^{-1}(r)) = r^i$, so
 >
@@ -119,11 +119,11 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > V' = \big\{\, q \in V : \big(y^1(q), \ldots, y^m(q)\big) \in \varphi(U) \,\big\},
 > $$
 >
-> open in $N$ because $\varphi(U)$ is open, and containing $F(U)$ because $\psi(F(u)) = (\varphi(u), \vec 0)$. We claim $F(U) = \{ q \in V' : y^{m+1}(q) = \cdots = y^n(q) = 0 \}$. The inclusion $\subseteq$ is clear. Conversely, if $q \in V'$ has $\psi(q) = (r, \vec 0)$ with $r \in \varphi(U)$, then $\psi(q) = \tilde F(r) = \psi\big(F(\varphi^{-1}(r))\big)$, so $q = F(\varphi^{-1}(r))$ because $\psi$ is injective. So $(V', \psi|_{V'})$ is an adapted chart ([[§35 Submanifolds#^def-35-1|Definition §35.1]]) at every point of $F(U)$, and $F(U)$ is a submanifold of codimension $n - m$. No restriction of $U$ was needed: the worry was that $\psi(V) \cap (\mathbb{R}^m \times \{\vec 0\})$ might contain points not of the form $\tilde F(r)$ with $r \in \varphi(U)$, and passing to $V'$ removes exactly those.
+> open in $N$ because $\varphi(U)$ is open, and containing $F(U)$ because $\psi(F(u)) = (\varphi(u), \vec 0)$. We claim $F(U) = \{ q \in V' : y^{m+1}(q) = \cdots = y^n(q) = 0 \}$. The inclusion $\subseteq$ is clear. Conversely, if $q \in V'$ has $\psi(q) = (r, \vec 0)$ with $r \in \varphi(U)$, then $\psi(q) = \tilde F(r) = \psi\big(F(\varphi^{-1}(r))\big)$, so $q = F(\varphi^{-1}(r))$ because $\psi$ is injective. So $(V', \psi|_{V'})$ is an adapted chart ([[§35 Submanifolds#^def-35-2|Definition §35.2]]) at every point of $F(U)$, and $F(U)$ is a submanifold of codimension $n - m$. No restriction of $U$ was needed: the worry was that $\psi(V) \cap (\mathbb{R}^m \times \{\vec 0\})$ might contain points not of the form $\tilde F(r)$ with $r \in \varphi(U)$, and passing to $V'$ removes exactly those.
 
 ^pf-37-2
 
-*Uses:* [[§37 Immersions#^thm-37-1|§37.1]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§37 Immersions#^thm-37-1|§37.1]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
 
 > [!remark]- Connections
 > - The global version needs a topological condition: [[§37 Immersions#^rem-37-1|Remark: Embeddings — Next Time]].

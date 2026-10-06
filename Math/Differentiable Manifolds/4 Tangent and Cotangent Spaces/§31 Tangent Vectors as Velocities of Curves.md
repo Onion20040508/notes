@@ -11,8 +11,15 @@ tags: [differentiable-manifolds, math591]
 
 *Assignment 3, Problem 2.* Tangent vectors were introduced with two faces: velocities of curves, and derivations (the [[§28 Derivations and the Abstract Tangent Space#^rem-28-1|remark]] at the start of [[§28 Derivations and the Abstract Tangent Space|§28, Derivations and the Abstract Tangent Space]]). For regular level sets the two were identified by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], through the ambient space. This section identifies them on *every* smooth manifold, with no ambient space at all.
 
-> [!definition] Definition §31.2: Smooth Curve and Its Velocity
-> Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A **smooth curve** in $M$ is a smooth map $\gamma : J \to M$. If $\gamma(0) = p$, the **velocity** of $\gamma$ at $0$ is the abstract tangent vector
+> [!definition] Definition §31.1: Smooth Curve
+> Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A **smooth curve** in $M$ is a smooth map $\gamma : J \to M$.
+>
+> *Lee: Ch. 3, Velocity Vectors of Curves*
+
+^def-31-1
+
+> [!definition] Definition §31.2: Velocity of a Curve
+> Let $\gamma : J \to M$ be a smooth curve ([[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Definition §31.1]]). If $\gamma(0) = p$, the **velocity** of $\gamma$ at $0$ is the abstract tangent vector
 >
 > $$
 > D_\gamma = \gamma_{*0}\Big(\frac{d}{dt}\Big|_0\Big) \in T_pM, \qquad\text{explicitly}\qquad D_\gamma[f] = \frac{d}{dt}\Big|_{t=0} f\big(\gamma(t)\big).
@@ -78,7 +85,7 @@ Each input $r^j$ of $f_\varphi$ moves at speed $(c^j)'(0)$ along the curve, and 
 
 ^pf-31-2
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
 Assignment 3's solution first treats the basis vectors $\partial/\partial x^i|_p$, using curves with $c'(0) = e_i$, and then the general case. The general argument contains the basis case, with $a = e_i$ and $c(t) = \varphi(p) + t\,e_i$, so it is presented here alone.
 
@@ -119,7 +126,7 @@ This is Lee's main computational tool: to find $F_{*p}(D)$, choose any curve wit
 
 *Lecture 11. “There is a natural isomorphism” between the tangent space of a product and the direct sum of the tangent spaces of the factors — “natural meaning coordinate-free.” Uribe gave three ways to see it: by the inclusions of the factors, by curves, and in coordinates. He added that this part of the course is, in his experience, “the most abstract, somehow the hardest part”, and that while physicists tend to favour coordinates and pure mathematicians abstract settings, “you need both.”*
 
-Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_1 \to M_1 \times M_2$, $\iota_2 = \iota^{p_1} : M_2 \to M_1 \times M_2$ are the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]).
+Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_1 \to M_1 \times M_2$, $\iota_2 = \iota^{p_1} : M_2 \to M_1 \times M_2$ are the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]).
 
 > [!theorem] Theorem §31.4: The Tangent Space of a Product
 > The linear map
@@ -145,7 +152,7 @@ Throughout, $p = (p_1, p_2) \in M_1 \times M_2$, and $\iota_1 = \iota^{p_2} : M_
 
 ^pf-31-4
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§21 Linear Algebra Toolkit#^prop-21-7|§21.7]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§21 Linear Algebra Toolkit#^prop-21-7|§21.7]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 ![[m591-12-16.svg]]
 

@@ -30,7 +30,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^ex-5-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
 
 > [!definition] Definition §5.2: Maps Constant on Fibres
 > Let $p : X \to Y$ be a map. A map $g : X \to Z$ is **constant on the fibres of $p$** if it is constant on $p^{-1}(\{y\})$ for every $y \in Y$; equivalently, $p(x) = p(x')$ implies $g(x) = g(x')$.
@@ -160,7 +160,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-5-4
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].

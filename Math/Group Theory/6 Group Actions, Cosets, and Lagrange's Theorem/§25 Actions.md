@@ -212,7 +212,7 @@ tags: [group-theory, math493]
 ^def-25-4
 
 > [!definition] Definition §25.5: Faithful Action
-> The action is **faithful** if its kernel is $\{e\}$, i.e. if only the identity fixes every point.
+> The action is **faithful** if its [[§25 Actions#^def-25-4|kernel]] is $\{e\}$, i.e. if only the identity fixes every point.
 
 ^def-25-5
 

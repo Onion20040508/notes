@@ -33,6 +33,8 @@ is the rate of change of $f$ along a curve $\gamma$ through $p$ with velocity $v
 
 ![[§28 Derivations and the Abstract Tangent Space#^def-28-3]]
 
+![[§28 Derivations and the Abstract Tangent Space#^def-28-4]]
+
 **Step 3: a tangent vector is a derivation.** The two properties of $D_v$ become the definition. A *derivation at $p$* is a linear map $D : C^\infty_p(M) \to \mathbb{R}$ with the Leibniz rule $D([f][g]) = f(p)\,D[g] + g(p)\,D[f]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]), and the *tangent space* $T_pM$ is the vector space of all derivations at $p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]). A tangent vector is therefore a machine: feed it a germ at $p$, and it returns a number. Lee lets derivations act on global functions $C^\infty(M)$ instead of germs; the two spaces are canonically isomorphic ([[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3]]).
 
 ![[§28 Derivations and the Abstract Tangent Space#^def-28-1]]
@@ -67,6 +69,8 @@ $$
 
 **Step 6: back to arrows, through curves.** A smooth curve $\gamma$ with $\gamma(0) = p$ has the velocity $D_\gamma = \gamma_{\ast 0}(d/dt|_0)$, which differentiates $f$ by $D_\gamma[f] = (f \circ \gamma)'(0)$ ([[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2]]), and every tangent vector is the velocity of some curve ([[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2]]). So the arrow picture survives on every manifold, as “the velocity of a curve”, even where there is no ambient space to draw the arrow in.
 
+![[§31 Tangent Vectors as Velocities of Curves#^def-31-1]]
+
 ![[§31 Tangent Vectors as Velocities of Curves#^def-31-2]]
 
 | Object | What it is | What it does |
@@ -99,4 +103,4 @@ $$
 
 ^ex-42-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|§29.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]

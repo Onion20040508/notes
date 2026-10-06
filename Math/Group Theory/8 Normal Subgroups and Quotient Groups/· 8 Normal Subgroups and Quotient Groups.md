@@ -31,7 +31,7 @@ Normal subgroups are exactly the subgroups for which multiplication of cosets is
 - [[Kernels Are Normal]] (§39.2)
 - [[Quotient Groups]] (§40.1)
 - [[First Isomorphism Theorem for Groups]] (§41.1)
-- [[Second Isomorphism Theorem for Groups]] (§41.4)
+- [[Second Isomorphism Theorem for Groups]] (§41.5)
 - [[Correspondence Theorem for Groups]] (§42.3)
 - [[Third Isomorphism Theorem for Groups]] (§42.5)
 - [[Aₙ Is Simple for n ≥ 5]] (§43.9)

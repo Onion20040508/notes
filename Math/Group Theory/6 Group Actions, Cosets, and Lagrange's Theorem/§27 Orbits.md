@@ -27,7 +27,7 @@ tags: [group-theory, math493]
 > - With topologies: orbits as in [[§13 Group Actions and Orbit Spaces#^def-13-3|591 Def. §13.3]].
 
 > [!definition] Definition §27.2: Orbit Space
-> The set of all orbits is written $G \backslash X$ (for a right action, $X/G$).
+> The set of all [[§27 Orbits#^def-27-1|orbits]] is written $G \backslash X$ (for a right action, $X/G$).
 >
 > *Source: WS 4*
 
@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 > - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-3|591 Ex. §13.3]]).
 
 > [!definition] Definition §27.3: Transitive Action
-> The action is **transitive** if there is only one orbit, i.e. $Gx = X$ for some (equivalently every) $x$.
+> The action is **transitive** if there is only one [[§27 Orbits#^def-27-1|orbit]], i.e. $Gx = X$ for some (equivalently every) $x$.
 >
 > *Source: WS 4*
 

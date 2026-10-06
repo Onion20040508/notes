@@ -323,7 +323,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-ex-13-6
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§9 Hausdorff Spaces#^thm-9-3|590 §9.3]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§9 Hausdorff Spaces#^thm-9-3|590 §9.3]]
 
 > [!remark] Remark: What the Example Shows
 > Every hypothesis of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] except compactness of $G$ holds here, so compactness is not removable. Seen through the criterion: the relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] the graph $\Gamma$ must fail to be closed — and indeed $\big((1,\tfrac1n),(\tfrac1n,1)\big) \in \Gamma$ converges to $\big((1,0),(0,1)\big) \notin \Gamma$. The mechanism is that the orbits, the hyperbolas $xy = c$ together with the two half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.

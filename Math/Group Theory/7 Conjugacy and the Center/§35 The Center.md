@@ -17,7 +17,7 @@ tags: [group-theory, math493]
 ^def-35-1
 
 > [!definition] Definition §35.2: The Center $Z(G)$
-> The set of all central elements in $G$ is called the **center** of $G$ and written $Z(G)$.
+> The set of all [[§35 The Center#^def-35-1|central elements]] in $G$ is called the **center** of $G$ and written $Z(G)$.
 >
 > *Source: WS 3*
 

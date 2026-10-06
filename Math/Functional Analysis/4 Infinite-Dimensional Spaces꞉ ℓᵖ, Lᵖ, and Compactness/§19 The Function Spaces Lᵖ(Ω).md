@@ -140,7 +140,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 
 ^pf-19-5
 
-*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§12 Completeness#^thm-12-1|§12.1]], [[§12 Completeness#^lem-12-2|§12.2]]
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^thm-12-1|§12.1]], [[§12 Completeness#^lem-12-2|§12.2]]
 
 ![[m556-14-3.svg]]
 *Why the step $f = \chi_{[1/2,1]}$ has no uniform approximation: a continuous $g$ with $\|f - g\|_{L^\infty} < \tfrac12$ would have to stay in the open gray band around $f$, below $\tfrac12$ on $[0, \tfrac12)$ and above $\tfrac12$ on $[\tfrac12, 1]$. Being continuous, $g$ must reach the level $\tfrac12$, and wherever it does it leaves the band (red). Compare the ramps of [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]], which do approach a step in $L^p$.*

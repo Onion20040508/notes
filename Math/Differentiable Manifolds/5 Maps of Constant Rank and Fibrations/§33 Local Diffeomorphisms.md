@@ -45,6 +45,8 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 > [!remark]- Connections
 > - As a covering map of topological spaces: [[§31 Covering Spaces#^thm-31-2|590 §31.2]] ($\mathbb{R} \to S^1$ is a covering map).
 
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§33 Local Diffeomorphisms#^ex-33-1|the circle covered by a line]].
+
 The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§39 Projective Spaces and the Hopf Fibration|§39]].
 
 > [!remark] Remark: Covering Maps

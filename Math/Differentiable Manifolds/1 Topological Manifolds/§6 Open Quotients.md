@@ -50,7 +50,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-6-1
 
-*Uses:* [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
+*Uses:* [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 ![[m591-3-6.svg]]
 *The direction ($\Leftarrow$): a point $(x,y)$ off the closed graph $\Gamma$ has a box $U \times V$ missing $\Gamma$, and then $\pi(U)$ and $\pi(V)$ separate $[x]$ from $[y]$.*

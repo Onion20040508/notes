@@ -166,7 +166,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 ^pf-ex-30-1
 
-*Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
+*Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]
 
 > [!remark] Remark
 > Wu noted that $C^m(\overline{\Omega})$ is complete in this norm and left that to the class; it is not needed for the example. For $m = 1$ and $\Omega = (a,b)$ it is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
@@ -284,7 +284,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 ^pf-30-5
 
-*Uses:* [[§12 Completeness#^pf-12-1|§12.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-1|Def. §30.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
+*Uses:* [[§12 Completeness#^pf-12-1|§12.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-1|Def. §30.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!proof]+ Proof of (2)
 > (Lecture 10.) Assume $Y$ is complete, and let $\{T_n\}$ be a Cauchy sequence in $\mathcal{L}(X, Y)$: for every $\varepsilon > 0$ there is $N$ with $\|T_n - T_k\| < \varepsilon$ for all $n, k \ge N$.
@@ -321,7 +321,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 ^pf-30-5-2
 
-*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-5|§30.5 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-5|§30.5 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].

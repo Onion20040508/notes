@@ -235,7 +235,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ## Technique 16: Non-Separability from an Uncountable Separated Family
 
 > [!remark] Remark: Strategy
-> To show a space is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a [[§11 Normed Linear Spaces#^def-11-7|dense]] set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
+> To show a space is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a [[§11 Normed Linear Spaces#^def-11-8|dense]] set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
 
 ^rem-t16
 

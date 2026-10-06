@@ -11,7 +11,7 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§16 The Classical Groups#^thm-16-2|§15]])
 - $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§10]])
 - $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections ([[§16 The Classical Groups#^ex-16-1|§15]])
-- The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§10]])
+- The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§10]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11]])
 - $\mathrm{U}(1)$ is the circle ([[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§10]])
 - The classical groups are topological manifolds ([[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|§11]])
 - Jacobi's formula for the derivative of $\det$ ([[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§11]])
@@ -54,6 +54,8 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 
 ## The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$
 ![[§11 Topological Groups and Classical Matrix Groups#^def-11-9]]
+
+![[§11 Topological Groups and Classical Matrix Groups#^def-11-10]]
 
 ## $\mathrm{U}(1)$ is the circle
 ![[§11 Topological Groups and Classical Matrix Groups#^ex-11-3]]

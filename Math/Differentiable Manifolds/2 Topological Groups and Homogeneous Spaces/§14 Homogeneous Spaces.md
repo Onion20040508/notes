@@ -124,7 +124,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-ex-14-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-4|§4.4]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^prop-4-4|§4.4]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]]
 
 > [!remark]- Connections
 > - $X$ is indiscrete, the standard non-$T_1$ space: [[Discrete and indiscrete topologies]].
@@ -271,7 +271,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-14-5
 
-*Uses:* [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§14 Homogeneous Spaces#^def-14-2|Def. §14.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]
+*Uses:* [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§14 Homogeneous Spaces#^def-14-1|Def. §14.1]], [[§14 Homogeneous Spaces#^def-14-2|Def. §14.2]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]
 
 > [!remark]- Connections
 > - Home of this bijection: [[§30 Orbit–Stabilizer#^prop-30-2|493 §30.2 (The Orbit Bijection)]], same proof, for any orbit; hub [[Orbit–Stabilizer Theorem]].

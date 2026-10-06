@@ -113,7 +113,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-11-2
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|493 §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 §21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 §21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|493 §21.7]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-3|Def. §11.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|493 §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 §21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 §21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|493 §21.7]]
 
 > [!remark]- Connections
 > - Home in 493: [[The Sign Homomorphism]] ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|493 §21.3]]); parity of factorizations, [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|493 §21.4]]; transpositions generate $S_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|493 §21.7]].
@@ -143,7 +143,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-11-3
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-3|Def. §11.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
 
 > [!definition] Definition §11.5: General Linear Group
 > The **general linear group** is

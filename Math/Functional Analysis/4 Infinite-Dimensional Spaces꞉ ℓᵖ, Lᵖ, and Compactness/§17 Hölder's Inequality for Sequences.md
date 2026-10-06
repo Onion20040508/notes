@@ -108,7 +108,7 @@ For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Mean
 
 ^pf-17-1
 
-*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]
+*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]
 
 > [!remark]- Connections
 > - The integral version, home of the inequality in the vault: [[Hölder's Inequality|551 §34.5]], proved by the same normalize–Young–integrate argument; in this course [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] (cited) and [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-7|§19.7]] (continuous functions, HW3).

@@ -320,7 +320,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 ^pf-27-9
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
 > [!remark]- Connections
 > - The same two steps proved earlier for arbitrary sets: $E^\perp = Y^\perp$ is [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], and $\overline{\operatorname{span}}\,E = (E^\perp)^\perp$ is [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]].

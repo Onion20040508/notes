@@ -9,7 +9,7 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 *Revisit sections:* [[§4 ℝⁿ and ℓ²|Chapter 1]] · [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§29 Sequence and Function Spaces|Chapter 5]] · [[§33 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]]
 
 - The completion is complete by the plan of the $\ell^p$ proof, with a diagonal candidate ([[§13 The Completion of a Normed Space#^rem-13-2|§13]])
-- The sequence space $\ell$ and the $p$-norms, with values in $[0, \infty]$ ([[§17 Hölder's Inequality for Sequences#^def-17-1|§17]])
+- The sequence space $\ell$ and the $p$-norms, with values in $[0, \infty]$ ([[§17 Hölder's Inequality for Sequences#^def-17-1|§17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|§17.2]])
 - On all of $\ell$ the $p$-norms may be infinite; they are norms where they are finite ([[§17 Hölder's Inequality for Sequences#^rem-17-1|§17]])
 - Definition of $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|§18]])
 - $\ell^p$ is a normed linear space ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3|§18]])
@@ -34,6 +34,8 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 
 ## The sequence space $\ell$ and the $p$-norms, with values in $[0, \infty]$
 ![[§17 Hölder's Inequality for Sequences#^def-17-1]]
+
+![[§17 Hölder's Inequality for Sequences#^def-17-2]]
 
 ## On all of $\ell$ the $p$-norms may be infinite; they are norms where they are finite
 ![[§17 Hölder's Inequality for Sequences#^rem-17-1]]

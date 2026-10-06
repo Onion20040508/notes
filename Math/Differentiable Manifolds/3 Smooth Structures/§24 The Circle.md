@@ -21,7 +21,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 
 ^ex-24-1
 
-*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]]
+*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]]
 
 ![[m591-9-1.svg]]
 *The circle described externally, as the zero set of $F = x^2 + y^2 - 1$ with nonvanishing gradient, and internally, as the image of $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $(0,\pi)$.*

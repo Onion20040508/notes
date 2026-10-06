@@ -205,7 +205,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^pf-13-2
 
-*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]
+*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
 > - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).

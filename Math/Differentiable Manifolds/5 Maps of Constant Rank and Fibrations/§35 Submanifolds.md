@@ -17,14 +17,14 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 
 *Lecture 12 (Mon Sep 28). “I know we're in the middle of discussing submersions and fibrations, but we need the notion of submanifold. So let's pause to discuss that. It's not difficult.” The local model is a lower-dimensional Euclidean space inside a higher-dimensional one: $\mathbb{R}^{m-k} \subseteq \mathbb{R}^m$ as the points whose last $k$ coordinates vanish, $x \mapsto (x, \vec 0)$.*
 
-> [!definition] Definition §35.1: Submanifold and Adapted Charts
+> [!definition] Definition §35.1: Submanifold
 > Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a subset with the subspace topology, and $0 \le k \le m$. For a chart $\varphi = (x^1, \ldots, x^m)$ write $x_a = (x^1, \ldots, x^{m-k})$ for its first $m - k$ components and $x_b = (x^{m-k+1}, \ldots, x^m)$ for its last $k$. Then $S$ is a **submanifold of $M$ of codimension $k$** if every $p \in S$ lies in the domain of a smooth chart $(U, \varphi)$ of $M$ with
 >
 > $$
 > U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 > $$
 >
-> Such charts are **adapted** to $S$; “a random chart of $M$ is not adapted.” In an adapted chart, $U \cap S$ is cut out by the $k$ equations $x^{m-k+1} = \cdots = x^m = 0$, exactly as in the local model. These are sometimes called **regular** or **embedded** submanifolds, as opposed to the immersed submanifolds still to come.
+> These are sometimes called **regular** or **embedded** submanifolds, as opposed to the immersed submanifolds still to come.
 >
 > *Lee: Theorem 5.8*
 
@@ -33,6 +33,13 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > [!remark]- Connections
 > - Immersed images, the other kind of “submanifold” still to come: [[§37 Immersions#^cor-37-2|§37.2]], [[§37 Immersions#^rem-37-1|Embeddings — Next Time]].
 > - Codimension in the Euclidean setting: [[§26 Transversality#^def-26-1|Def. §26.1]].
+
+> [!definition] Definition §35.2: Adapted Chart
+> Let $M$, $S$ and $k$ be as in [[§35 Submanifolds#^def-35-1|Definition §35.1]]. Such charts — smooth charts $(U, \varphi)$ of $M$ with $U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}$ — are **adapted** to $S$; “a random chart of $M$ is not adapted.” In an adapted chart, $U \cap S$ is cut out by the $k$ equations $x^{m-k+1} = \cdots = x^m = 0$, exactly as in the local model.
+>
+> *Lee: Theorem 5.8*
+
+^def-35-2
 
 > [!theorem] Proposition §35.1: Two Observations on Adapted Charts
 > Let $(U, \varphi)$ be a smooth chart of $M$, and suppose that $U \cap S$ is cut out in it by setting some $k$ of the coordinates equal to constants:
@@ -80,7 +87,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 
 ^pf-35-2
 
-*Uses:* [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]]
+*Uses:* [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]]
 
 ![[m591-15-1.svg]]
 *An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.*
@@ -178,7 +185,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 *Lecture 12. “And now we go back to submersions” — to “[the] wonderful version of the regular value theorem.”*
 
 > [!theorem] Theorem §35.6: The Regular Value Theorem for Manifolds
-> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition [[§34 Submersions#^def-34-3|§34.3]]). Then $S = F^{-1}(q)$ is a submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
+> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$, and let $q \in N$ be a regular value of $F$ (Definition [[§34 Submersions#^def-34-4|§34.4]]). Then $S = F^{-1}(q)$ is a submanifold of $M$ of codimension $n$ (possibly empty), so $\dim S = m - n$, and for every $p \in S$
 >
 > $$
 > \iota_{*p}(T_pS) = \ker F_{*p} .
@@ -204,7 +211,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-35-6
 
-*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§34 Submersions#^thm-34-4|§34.4]], [[§35 Submanifolds#^prop-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§34 Submersions#^thm-34-4|§34.4]], [[§35 Submanifolds#^prop-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 ![[m591-15-5.svg]]
 *The proof in one square, as on the board. In the normal-form charts $\tilde F$ is the projection onto the first $n$ coordinates, so the level set $S \cap U = F^{-1}(q) \cap U$ is carried by $\hat\varphi$ onto a fibre of a projection: the slice where the first $n$ coordinates equal $\psi(q)$.*
@@ -226,7 +233,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-35-7
 
-*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§35 Submanifolds#^thm-35-6|§35.6]]
+*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§34 Submersions#^def-34-4|Def. §34.4]], [[§35 Submanifolds#^thm-35-6|§35.6]]
 
 > [!remark] Remark: The Regular Value Theorems — Old and New
 > The notes now contain the regular value theorem in five forms. They are one idea met at increasing generality, not competing statements.
@@ -259,4 +266,4 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-35-8
 
-*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§34 Submersions#^lem-34-3|§34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^prop-35-2|§35.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§35 Submanifolds#^thm-35-6|§35.6]], [[Directional Derivative Formula|452 §9.1]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[§34 Submersions#^lem-34-3|§34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§35 Submanifolds#^prop-35-2|§35.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|§31.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§35 Submanifolds#^thm-35-6|§35.6]], [[Directional Derivative Formula|452 §9.1]], [[Multivariable Chain Rule|452 §12.2]]

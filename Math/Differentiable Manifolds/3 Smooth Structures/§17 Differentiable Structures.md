@@ -68,7 +68,7 @@ tags: [differentiable-manifolds, math591]
 ^def-17-3
 
 > [!remark]- Connections
-> - The general notion for smooth manifolds: [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]; the two agree by [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]].
+> - The general notion for smooth manifolds: [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]; the two agree by [[§19 Smooth Functions and Smooth Maps#^prop-19-3|§19.3]].
 > - The local version: [[§33 Local Diffeomorphisms#^def-33-1|Def. §33.1]]; detected by the differential via the [[§33 Local Diffeomorphisms#^thm-33-1|inverse function theorem, §33.1]].
 > - The $C^1$ version is the class of substitutions in the change of variables formula, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]].
 > - The topological analogue: homeomorphism, [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].

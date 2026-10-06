@@ -67,7 +67,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§36 Fibrations\|§36]] Fibrations | smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee |
 | [[§37 Immersions\|§37]] Immersions | Chapter 4, *Immersions* (Theorem 4.12); Example 4.19 |
 | [[§38 Embeddings\|§38]] Embeddings | Chapter 4, *Embeddings* (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 |
-| [[§41 SU(2) → SO(3)꞉ The Double Cover\|§41]] The double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
+| [[§40 The Unit Quaternions and SU(2)\|§40]]–[[§41 SU(2) → SO(3)꞉ The Double Cover\|§41]] The unit quaternions and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ | Problems 7-22 and 7-23 (quaternions); Examples 7.27–7.30 (matrix groups) |
 | [[§42 Recap꞉ Germs, Derivations and Tangent Vectors\|§42]]–[[§43 Recap꞉ Covectors and the Four Differentials\|§43]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
 | [[§44 The Tangent Bundle\|§44]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
 | [[§45 The Cotangent Bundle\|§45]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
@@ -90,7 +90,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§17 Differentiable Structures#^ex-17-1\|Ex. §17.1]] |
 | Example 1.23 | [[§19 Smooth Functions and Smooth Maps#^ex-19-1\|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-7\|Cor. §19.7]], [[§19 Smooth Functions and Smooth Maps#^ex-19-2\|Ex. §19.2]] |
-| Example 1.24 | [[§22 The Differential of a Map Between Vector Spaces#^def-22-1\|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|Prop. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|Def. §22.4]] |
+| Example 1.24 | [[§22 The Differential of a Map Between Vector Spaces#^def-22-1\|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2\|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|Prop. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|Def. §22.4]] |
 | Example 1.25 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-2\|Def. §11.2]] |
 | Example 1.26 | [[§3 Subspaces and Products#^prop-3-6\|Prop. §3.6]], [[§3 Subspaces and Products#^def-3-2\|Def. §3.2]] |
 | Example 1.27 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-5\|Def. §11.5]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]] |
@@ -136,7 +136,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 4-5 | [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4\|Prop. §18.4]], [[§39 Projective Spaces and the Hopf Fibration#^ex-39-2\|Ex. §39.2]], [[§39 Projective Spaces and the Hopf Fibration#^ex-39-3\|Ex. §39.3]] |
 | Proposition 5.2 | [[§38 Embeddings#^thm-38-1\|Thm. §38.1]] |
 | Proposition 5.5 | [[§38 Embeddings#^prop-38-9\|Prop. §38.9]] |
-| Theorem 5.8 | [[§35 Submanifolds#^def-35-1\|Def. §35.1]], [[§35 Submanifolds#^prop-35-2\|Prop. §35.2]] |
+| Theorem 5.8 | [[§35 Submanifolds#^def-35-1\|Def. §35.1]], [[§35 Submanifolds#^def-35-2\|Def. §35.2]], [[§35 Submanifolds#^prop-35-2\|Prop. §35.2]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-3\|Thm. §7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§35 Submanifolds#^thm-35-6\|Thm. §35.6]] |
 | Corollary 5.30 | [[§35 Submanifolds#^lem-35-3\|Lem. §35.3]] |
 | Proposition 5.35 | [[§35 Submanifolds#^prop-35-4\|Prop. §35.4]] |
@@ -147,8 +147,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
 | Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
 | Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
-| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
-| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
+| Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
+| Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
 | Problem 7-22 | [[§40 The Unit Quaternions and SU(2)#^def-40-1\|Def. §40.1]] |
 | Proposition 8.1 | [[§47 Vector Fields#^prop-47-1\|Prop. §47.1]] |
@@ -161,15 +161,15 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 11.11 | [[§46 One-Forms#^prop-46-1\|Prop. §46.1]] |
 | Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-4\|Cor. §32.4]] |
 | Proposition 11.25 | [[§32 The Cotangent Space#^prop-32-10\|Prop. §32.10]], [[§46 One-Forms#^cor-46-4\|Cor. §46.4]] |
-| Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§32 The Cotangent Space#^prop-32-5\|Prop. §32.5]], [[§32 The Cotangent Space#^prop-32-6\|Prop. §32.6]], [[§32 The Cotangent Space#^thm-32-8\|Thm. §32.8]], [[§32 The Cotangent Space#^prop-32-7\|Prop. §32.7]] |
+| Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§32 The Cotangent Space#^prop-32-5\|Prop. §32.5]], [[§32 The Cotangent Space#^prop-32-6\|Prop. §32.6]], [[§32 The Cotangent Space#^thm-32-8\|Thm. §32.8]], [[§32 The Cotangent Space#^prop-32-7\|Prop. §32.7]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
 | Example 21.3 | [[§13 Group Actions and Orbit Spaces#^ex-13-6\|Ex. §13.6]] |
 | Proposition 21.4 | [[§13 Group Actions and Orbit Spaces#^def-13-4\|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^cor-13-4\|Cor. §13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5\|Thm. §13.5]] |
 | Corollary 21.6 | [[§13 Group Actions and Orbit Spaces#^cor-13-4\|Cor. §13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5\|Thm. §13.5]] |
 | Example 21.14 | [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1\|Ex. §15.1]] |
-| Example 21.15 | [[§14 Homogeneous Spaces#^def-14-2\|Def. §14.2]], [[§14 Homogeneous Spaces#^ex-14-3\|Ex. §14.3]] |
-| Theorem 21.17 | [[§14 Homogeneous Spaces#^def-14-5\|Def. §14.5]], [[§14 Homogeneous Spaces#^lem-14-3\|Lem. §14.3]], [[§14 Homogeneous Spaces#^def-14-7\|Def. §14.7]], [[§14 Homogeneous Spaces#^prop-14-4\|Prop. §14.4]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1\|Def. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2\|Cor. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5\|Cor. §15.5]] |
+| Example 21.15 | [[§14 Homogeneous Spaces#^def-14-1\|Def. §14.1]], [[§14 Homogeneous Spaces#^def-14-2\|Def. §14.2]], [[§14 Homogeneous Spaces#^ex-14-3\|Ex. §14.3]] |
+| Theorem 21.17 | [[§14 Homogeneous Spaces#^def-14-5\|Def. §14.5]], [[§14 Homogeneous Spaces#^def-14-6\|Def. §14.6]], [[§14 Homogeneous Spaces#^lem-14-3\|Lem. §14.3]], [[§14 Homogeneous Spaces#^def-14-7\|Def. §14.7]], [[§14 Homogeneous Spaces#^prop-14-4\|Prop. §14.4]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1\|Def. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2\|Cor. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5\|Cor. §15.5]] |
 | Theorem 21.18 | [[§14 Homogeneous Spaces#^thm-14-2\|Thm. §14.2]], [[§14 Homogeneous Spaces#^lem-14-5\|Lem. §14.5]], [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|Thm. §15.3]] |
 | Example 21.19 | [[§14 Homogeneous Spaces#^ex-14-3\|Ex. §14.3]] |
 | Theorem 21.20 | [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2\|Def. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-4\|Prop. §15.4]] |

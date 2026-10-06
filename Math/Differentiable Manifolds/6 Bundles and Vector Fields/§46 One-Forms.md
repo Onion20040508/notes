@@ -150,8 +150,15 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ## Pullbacks of One-Forms
 
+> [!definition] Definition §46.3: Pullback of Functions
+> Let $F : M \to N$ be smooth. The **pullback** of functions is $F^{\ast}f = f \circ F$.
+>
+> *Lee: Ch. 11, Pullbacks of Covector Fields*
+
+^def-46-3
+
 > [!definition] Definition §46.4: Pullback of One-Forms
-> Let $F : M \to N$ be smooth. The **pullback** of functions is $F^{\ast}f = f \circ F$. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§32 The Cotangent Space#^def-32-5|Definition §32.5]]):
+> Let $F : M \to N$ be smooth. For a one-form $\theta$ on $N$, the **pullback** $F^{\ast}\theta$ is the section of $T^{\ast}M$ whose value at $p$ is the pullback of the covector $\theta_{F(p)}$ ([[§32 The Cotangent Space#^def-32-5|Definition §32.5]]):
 >
 > $$
 > (F^*\theta)_p = F_p^*\big(\theta_{F(p)}\big), \qquad (F^*\theta)_p(v) = \theta_{F(p)}\big(F_{*p}v\big) .
@@ -178,7 +185,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-46-4
 
-*Uses:* [[§46 One-Forms#^def-46-4|Def. §46.4]], [[§46 One-Forms#^prop-46-2|§46.2]], [[§32 The Cotangent Space#^prop-32-10|§32.10]]
+*Uses:* [[§46 One-Forms#^def-46-3|Def. §46.3]], [[§46 One-Forms#^def-46-4|Def. §46.4]], [[§46 One-Forms#^prop-46-2|§46.2]], [[§32 The Cotangent Space#^prop-32-10|§32.10]]
 
 > [!theorem] Proposition §46.5: Pullbacks in Coordinates
 > In charts $(x^i)$ on $M$ and $(y^j)$ on $N$, with $F^j = y^j \circ F$,

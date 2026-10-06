@@ -53,7 +53,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-4-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]]
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^rem-13-4|590 §13, The Quotient Topology is the Finest Making p Continuous]].
@@ -154,7 +154,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^ex-4-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]]
 
 > [!definition] Definition §4.5: Saturation
 > Let $\sim$ be an equivalence relation on a set $X$ with quotient map $\pi : X \to X/{\sim}$. For any subset $U \subseteq X$, the **saturation** of $U$ is
@@ -206,7 +206,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-4
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]
 
 > [!theorem] Proposition §4.5: Openness via Saturations
 > $\sim$ is open $\iff$ for every open $U \subseteq X$, the saturation $\tilde U = \pi^{-1}(\pi(U))$ is open in $X$.
@@ -218,7 +218,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-5
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]]
 
 > [!remark]- Connections
 > - Applied to orbit relations: [[§13 Group Actions and Orbit Spaces#^lem-13-3|Orbit Relations Are Open, §13.3]]; to cosets: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]].
@@ -258,7 +258,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 
 ^pf-ex-4-4
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-4|§1.4]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-4|§1.4]]
 
 > [!remark]- Connections
 > - First and second countability in MATH 590: [[§22 Countability Axioms#^def-22-2|590 Def. §22.2]], [[§22 Countability Axioms#^def-22-3|590 Def. §22.3]].

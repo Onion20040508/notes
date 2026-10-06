@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 > Let $G$ be a group and $a \in G$. Let $c_a: G \to G$, $c_a(g) = a g a^{-1}$, be conjugation by $a$.
 > 1. $c_a$ is a group homomorphism.
 > 2. $c_a$ is an automorphism of $G$, with inverse $c_{a^{-1}}$.
-> 3. $c_a \circ c_b = c_{ab}$ for all $a, b \in G$; hence $a \mapsto c_a$ is a group homomorphism $G \to \operatorname{Aut}(G)$. Its image consists of the inner automorphisms of $G$.
+> 3. $c_a \circ c_b = c_{ab}$ for all $a, b \in G$; hence $a \mapsto c_a$ is a group homomorphism $G \to \operatorname{Aut}(G)$. Its image consists of the [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|inner automorphisms]] of $G$.
 >
 > *Source: PS 1.2*
 

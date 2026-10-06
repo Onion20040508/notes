@@ -198,7 +198,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 ^pf-7-3
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
 > - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-8|§30.8]] and [[§35 Submanifolds#^thm-35-6|§35.6]].
@@ -242,7 +242,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ^pf-7-5
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!example] Example §7.2: A Level Set in $\mathbb{R}^4$
 > *(Qualifying Review, August 2013; Assignment 2, Problem 3.)* Define
@@ -285,7 +285,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ^pf-ex-7-2
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
 > - The notion of submanifold the problem asks about: [[§35 Submanifolds#^def-35-1|Def. §35.1]]; regular level sets are submanifolds by [[§35 Submanifolds#^thm-35-6|§35.6]].
@@ -355,7 +355,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 
 ^pf-7-7
 
-*Uses:* [[§7 The Regular Value Theorem#^lem-7-6|§7.6]], [[§7 The Regular Value Theorem#^def-7-5|Def. §7.5]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
+*Uses:* [[§7 The Regular Value Theorem#^lem-7-6|§7.6]], [[§7 The Regular Value Theorem#^def-7-5|Def. §7.5]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
 
 > [!remark] Remark: The Example Re-read
 > For $f(z,w) = z^2 - w^2 + 2w$ the complex Jacobian is the row $(2z,\ 2 - 2w)$. In the notation of [[§7 The Regular Value Theorem#^ex-7-2|Example §7.2]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$ has real and imaginary parts

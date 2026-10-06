@@ -50,7 +50,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-20-1
 
-*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§33 Local Diffeomorphisms#^thm-33-1|§33.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
@@ -122,7 +122,7 @@ The proof in one picture. The transition function between two graph charts facto
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
-> - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-3|Def. §34.3]] (manifolds).
+> - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] and [[§34 Submersions#^def-34-4|Def. §34.4]] (manifolds).
 > - Generalized to level sets in manifolds: [[§35 Submanifolds#^thm-35-6|§35.6]]; the two structures agree by [[§35 Submanifolds#^prop-35-8|§35.8]].
 
 > [!example] Example §20.1: A Surface in $\mathbb{R}^3$

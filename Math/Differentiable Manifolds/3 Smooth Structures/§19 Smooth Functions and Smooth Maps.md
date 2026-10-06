@@ -133,7 +133,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-3
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark] Remark
 > Not stated in lecture. The word is defined twice because the logic needs it twice: [[§17 Differentiable Structures#^def-17-3|Def. §17.3]] must exist before smooth manifolds do, since compatibility of charts is phrased with it, and [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]] is the general notion. The proposition is what licenses using one word for both. A third notion, the *local* diffeomorphism of [[§33 Local Diffeomorphisms|§33]], is genuinely different; [[§33 Local Diffeomorphisms#^cor-33-3|§33.3]] relates it to the other two.
@@ -188,7 +188,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-5
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-5|Def. §19.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]
 
 > [!remark] Remark
 > The converse of (2) is false: Milnor's exotic $7$-spheres are homeomorphic to $S^7$ but not diffeomorphic to it (see the [[§19 Smooth Functions and Smooth Maps#^rem-19-8|remark on distinct structures]]). Two further distinctions are worth keeping apart. *Different smooth structures* on one set may still be *diffeomorphic*: in [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]], $\mathbb{R}$ and $\widetilde{\mathbb{R}}$ have different maximal atlases, yet $x \mapsto x^3$ is a diffeomorphism between them. And being diffeomorphic is a property of a *pair* of manifolds, while being a diffeomorphism is a property of a *map*: $\mathrm{id} : \mathbb{R} \to \widetilde{\mathbb{R}}$ is not a diffeomorphism even though the two are diffeomorphic.
@@ -241,7 +241,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-ex-19-1
 
-*Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-2|Def. §17.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-2|Def. §17.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
 > - The general mechanism: [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]] and [[§19 Smooth Functions and Smooth Maps#^cor-19-7|§19.7]]; this example redone as a transported structure: [[§19 Smooth Functions and Smooth Maps#^ex-19-2|Ex. §19.2]].
@@ -270,7 +270,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-6
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]
 
 > [!definition] Definition §19.6: Transported Smooth Structure
 > In the situation of [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], the smooth structure on $X$ generated by $\mathcal{A}_h$ — the unique one for which $h$ is a diffeomorphism — is the smooth structure **transported** along $h$.
@@ -303,7 +303,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-7
 
-*Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
+*Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
 ![[m591-8-10.svg]]
 *The proof of (2) in one square. Upstairs, $h$ is the map between the two manifolds; the vertical arrows are their charts, $h$ on the left and $\mathrm{id}$ on the right. The square commutes, so the coordinate representation along the bottom is the identity: $h$ is as smooth as a map can be, even when, as a map of standard $\mathbb{R}^n$, it is not differentiable at all.*
@@ -388,7 +388,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 
 ^pf-19-9
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
 > - Projections are submersions: [[§34 Submersions#^ex-34-2|Ex. §34.2]]; their differentials: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]].

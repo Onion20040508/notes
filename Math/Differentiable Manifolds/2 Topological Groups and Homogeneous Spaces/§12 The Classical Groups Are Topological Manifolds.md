@@ -62,7 +62,7 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 
 ^pf-12-1
 
-*Uses:* [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|§11.2]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
+*Uses:* [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-3|Def. §11.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Def. §11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|§11.2]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
 
 > [!remark]- Connections
 > - The same computation without coordinates, as the differential of $\det$: [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]].

@@ -143,11 +143,11 @@ The definitions and results of this section run parallel to those for the tangen
 ^cor-45-3
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in, as [[§44 The Tangent Bundle#^cor-44-3|Corollary §44.3]].)* (1) By [[§45 The Cotangent Bundle#^prop-45-1|Propositions §45.1]] and [[§45 The Cotangent Bundle#^prop-45-2|§45.2]]. In the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth. (2) $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi$ is a composite of diffeomorphisms ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9]]), and $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^{\ast}U$ cover $T^{\ast}M$ and the $U$ cover $M$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\hat\varphi$, $\zeta(M) \cap T^{\ast}U = \{\xi_1 = \cdots = \xi_m = 0\}$, so the charts $\hat\varphi$ are adapted to $\zeta(M)$ ([[§35 Submanifolds#^def-35-1|Definition §35.1]]).
+> *(Not from lecture; filled in, as [[§44 The Tangent Bundle#^cor-44-3|Corollary §44.3]].)* (1) By [[§45 The Cotangent Bundle#^prop-45-1|Propositions §45.1]] and [[§45 The Cotangent Bundle#^prop-45-2|§45.2]]. In the charts $\hat\varphi$ and $\varphi$, $\pi$ is $(r, \xi) \mapsto r$, which is smooth. (2) $\Psi = (\varphi^{-1} \times \mathrm{id}) \circ \hat\varphi$ is a composite of diffeomorphisms ([[§28 Derivations and the Abstract Tangent Space#^prop-28-9|Proposition §28.9]]), and $\mathrm{pr}_1 \circ \Psi = \pi$; the $T^{\ast}U$ cover $T^{\ast}M$ and the $U$ cover $M$. On $T_p^{\ast}M$, $\Psi$ is $\xi \mapsto (p, \xi_1, \ldots, \xi_m)$, taking components in a basis, which is a linear isomorphism. (3) In the chart $\hat\varphi$, $\zeta(M) \cap T^{\ast}U = \{\xi_1 = \cdots = \xi_m = 0\}$, so the charts $\hat\varphi$ are adapted to $\zeta(M)$ ([[§35 Submanifolds#^def-35-2|Definition §35.2]]).
 
 ^pf-45-3
 
-*Uses:* [[§45 The Cotangent Bundle#^prop-45-1|§45.1]], [[§45 The Cotangent Bundle#^prop-45-2|§45.2]], [[§45 The Cotangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Cotangent Bundle#^def-45-5|Def. §45.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§36 Fibrations#^def-36-1|Def. §36.1]]
+*Uses:* [[§45 The Cotangent Bundle#^prop-45-1|§45.1]], [[§45 The Cotangent Bundle#^prop-45-2|§45.2]], [[§45 The Cotangent Bundle#^def-45-4|Def. §45.4]], [[§45 The Cotangent Bundle#^def-45-5|Def. §45.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§36 Fibrations#^def-36-1|Def. §36.1]]
 
 ## Lecture 15 and the Standard Coordinates
 

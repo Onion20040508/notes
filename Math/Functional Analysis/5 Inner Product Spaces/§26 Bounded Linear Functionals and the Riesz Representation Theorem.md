@@ -103,7 +103,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 ^pf-26-3
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-2|§26.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-2|§26.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 > [!remark] Remark
 > Two points raised in lecture. The step $k = \ell(x_1)/\ell(x_0)$ may look like dividing vectors, but it is not: $\ell(x_1)$ and $\ell(x_0)$ are numbers, and the vector identity $x_1 = kx_0$ is obtained afterwards from $N \cap N^\perp = \{0\}$. And a student asked why this shows $\dim N^\perp = 1$: an arbitrary element $x_1$ of $N^\perp$ was shown to be a multiple of one fixed nonzero $x_0$.
@@ -161,7 +161,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 ^pf-26-4-2
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^pf-26-4|§26.4 (1)]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^pf-26-4|§26.4 (1)]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*

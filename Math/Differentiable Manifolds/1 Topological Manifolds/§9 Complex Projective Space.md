@@ -104,7 +104,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1-2
 
-*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]
 
 > [!remark] Remark
 > The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|Example §13.6]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
@@ -182,7 +182,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^ex-9-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark] Remark: Where This Is Going
 > $\mathbb{CP}^n$ is “one of the main examples of manifolds” and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition — charts on $\mathbb{CP}^n$ — which is supplied in [[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]], together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.

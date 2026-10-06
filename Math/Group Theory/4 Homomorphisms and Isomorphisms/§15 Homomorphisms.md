@@ -52,6 +52,7 @@ tags: [group-theory, math493]
 ^def-15-2
 
 > [!remark]- Connections
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-7|Image]] (590 Def. §26.7).
 > - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (LADR 3.16).
 > - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-6|235 Def. §30.6]] (range), computed as Col A.
 
@@ -65,7 +66,7 @@ tags: [group-theory, math493]
 ^def-15-3
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-6|Kernel]] (590 §21.6).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-6|Kernel]] (590 Def. §26.6).
 > - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11).
 > - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]] (kernel), computed as Nul A.
 > - Used in Quantum Mechanics: the homomorphism $SU(2) \to SO(3)$ has kernel $\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].

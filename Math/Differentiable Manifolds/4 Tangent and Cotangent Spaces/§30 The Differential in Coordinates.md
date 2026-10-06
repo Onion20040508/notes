@@ -214,19 +214,39 @@ $$
 
 ^rem-30-3
 
-> [!definition] Definition §30.3: Rank and Regular Values of a Smooth Map
-> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation. A point $p$ is a **regular point** of $F$ if $F_{\ast p}$ is surjective, and $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point.
+> [!definition] Definition §30.1: Rank of a Smooth Map
+> Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
+>
+> *Lee: Ch. 4 and Ch. 5, p. 105*
+
+^def-30-1
+
+> [!remark]- Connections
+> - The rank of a matrix, in the Euclidean setting: [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]].
+
+> [!definition] Definition §30.2: Regular Point of a Smooth Map
+> Let $F : M \to N$ be a smooth map. A point $p$ is a **regular point** of $F$ if $F_{\ast p}$ is surjective.
+>
+> *Lee: Ch. 4 and Ch. 5, p. 105*
+
+^def-30-2
+
+> [!remark]- Connections
+> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]; restated with critical points in [[§34 Submersions#^def-34-3|Def. §34.3]].
+> - A regular point is a point where $F$ is a submersion: [[§34 Submersions#^def-34-1|Def. §34.1]].
+
+> [!definition] Definition §30.3: Regular Value of a Smooth Map
+> Let $F : M \to N$ be a smooth map. A value $c \in N$ is a **regular value** if every $p \in F^{-1}(c)$ is a regular point ([[§30 The Differential in Coordinates#^def-30-2|Definition §30.2]]).
 >
 > *Lee: Ch. 4 and Ch. 5, p. 105*
 
 ^def-30-3
 
 > [!remark]- Connections
-> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical points in [[§34 Submersions#^def-34-3|Def. §34.3]].
-> - A regular point is a point where $F$ is a submersion: [[§34 Submersions#^def-34-1|Def. §34.1]].
+> - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§34 Submersions#^def-34-4|Def. §34.4]].
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§34 Submersions#^def-34-1|§34.1]]; maps with bijective, surjective and injective differentials are the subject of [[§33 Local Diffeomorphisms|§33]].
+> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. So only properties of $F_{\ast p}$ that survive such changes — its rank, kernel and image, injectivity and surjectivity — are properties of $F$, which is why the definition above is phrased through $F_{\ast p}$ rather than through a matrix. By Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]] it agrees with Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]] in the Euclidean case. A regular point is exactly a point at which $F$ is a *submersion*, in the sense of Definition [[§34 Submersions#^def-34-1|§34.1]]; maps with bijective, surjective and injective differentials are the subject of [[§33 Local Diffeomorphisms|§33]].
 
 ^rem-30-4
 
@@ -259,7 +279,7 @@ $$
 
 ^pf-30-7
 
-*Uses:* [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
+*Uses:* [[§30 The Differential in Coordinates#^def-30-2|Def. §30.2]], [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
 ![[m591-12-13.svg]]
 *The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{\ast p}$ upstairs is the rank of $\tilde F'$ downstairs.*

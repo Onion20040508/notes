@@ -81,7 +81,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | Ch. 1, direct sum | Definition [[§1 Linear Spaces#^def-1-4\|§1.4]] | Direct Sum |
 | Ch. 1, definition of linear span | Definition [[§1 Linear Spaces#^def-1-5\|§1.5]] | Linear Span |
 | Ch. 1, equivalence mod $Y$ | Definition [[§2 Quotient Spaces and Complements#^def-2-1\|§2.1]] | Equivalence mod $Y$ |
-| Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-2\|§2.2]] | Equivalence Class and Quotient Space |
+| Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-2\|§2.2]] | Equivalence Class |
+| Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-3\|§2.3]] | Quotient Space |
 | Ch. 1, quotient space | Proposition [[§2 Quotient Spaces and Complements#^prop-2-1\|§2.1]] | $X/Y$ is a Linear Space |
 | Ch. 1, definition of linear map | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1\|§3.1]] | Linear Map |
 | Ch. 1, definition of isomorphism; Remark 2 | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2\|§3.2]] | Isomorphism |
@@ -94,7 +95,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §3.1, definition of linear functional | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5\|§3.5]] | Linear Functional |
 | §3.1, definition of interior point | Definition [[§7 Convex Sets and the Gauge#^def-7-1\|§7.1]] | Interior Point |
 | §3.1, equation (8) | Definition [[§7 Convex Sets and the Gauge#^def-7-2\|§7.2]] | Gauge |
-| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-1\|§5.1]] | Positive Homogeneous; Subadditive |
+| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-1\|§5.1]] | Positive Homogeneous |
+| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-2\|§5.2]] | Subadditive |
 | §3.1, Thm 1 | Theorem [[§5 Statement and Motivation#^thm-5-2\|§5.2]] | Hahn–Banach |
 | §3.1, proof of Thm 1 | Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1\|§6.1]] | One-Step Extension |
 | §3.1, proof of Thm 1 | Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2\|§6.2]] | Zorn's Lemma |
@@ -104,7 +106,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §3.1, Thms 3–4 | Corollary [[§7 Convex Sets and the Gauge#^cor-7-8\|§7.8]] | Convex Sets of Interior Points are Sublevel Sets |
 | §3.1, Thm 4 | Proposition [[§7 Convex Sets and the Gauge#^prop-7-1\|§7.1]] | Positive Homogeneous Subadditive $p$ Gives a Convex Set |
 | §3.1, Thm 4(i) | Proposition [[§7 Convex Sets and the Gauge#^prop-7-2\|§7.2]] | Every Point of $\{p < 1\}$ is Interior |
-| §3.2, hyperplanes | Definition [[§5 Statement and Motivation#^def-5-3\|§5.3]] | Hyperplane; Half-Space |
+| §3.2, hyperplanes | Definition [[§5 Statement and Motivation#^def-5-3\|§5.3]] | Hyperplane |
+| §3.2, hyperplanes | Definition [[§5 Statement and Motivation#^def-5-4\|§5.4]] | Half-Space |
 | §3.2, Thm 5 | Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1\|§8.1]] | Hyperplane Separation; Geometric Hahn–Banach |
 | §3.3, Thm 8 | Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2\|§9.2]] | Complex Hahn–Banach |
 | §5.1, (1)–(3) | Definition [[§11 Normed Linear Spaces#^def-11-1\|§11.1]] | Norm; Normed Linear Space |
@@ -124,7 +127,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §5.1, definition of separable space | Definition [[§28 Existence of Orthonormal Bases and Separability#^def-28-1\|§28.1]] | Separable Space |
 | §5.1, construction (ii) and Exercise 1 | Proposition [[§14 New Normed Spaces from Old#^prop-14-7\|§14.7]] | Norms on a Direct Sum |
 | §5.1, Thm 1 | Theorem [[§14 New Normed Spaces from Old#^thm-14-8\|§14.8]] | Quotient Norm |
-| §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]] | Closure; Dense Subset |
+| §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]] | Closure |
+| §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§11 Normed Linear Spaces#^def-11-8\|§11.8]] | Dense Subset |
 | §5.1, Thm 2 (part (d)) | Proposition [[§11 Normed Linear Spaces#^prop-11-6\|§11.6]] | Properties of the Closure |
 | §5.1, Thm 3 | Theorem [[§13 The Completion of a Normed Space#^thm-13-1\|§13.1]] | The Completion of a Normed Space is a Banach Space |
 | §5.1, Thms 4–5 | Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1\|§18.1]] | Minkowski's Inequality for Sequences |
@@ -137,7 +141,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.1, definition of Hilbert space | Definition [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1\|§23.1]] | Hilbert Space |
 | §6.1, Example 1 | Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2\|§23.2]] | An Inner Product Space that is Not a Hilbert Space |
 | §6.1, (6) | Proposition [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1\|§24.1]] | Parallelogram Law and Polarization |
-| §6.1 and §6.2, definitions | Definition [[§25 Projection and Orthogonal Decomposition#^def-25-1\|§25.1]] | Orthogonality; Orthogonal Complement |
+| §6.1 and §6.2, definitions | Definition [[§25 Projection and Orthogonal Decomposition#^def-25-1\|§25.1]] | Orthogonality |
+| §6.1 and §6.2, definitions | Definition [[§25 Projection and Orthogonal Decomposition#^def-25-2\|§25.2]] | Orthogonal Complement |
 | §6.1, Thm 1 | Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1\|§23.1]] | Cauchy–Schwarz |
 | §6.1, Exercise 1 | Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2\|§24.2]] | Jordan–von Neumann |
 | §6.1, Exercise 2 | Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1\|§25.1]] | The Inner Product is Continuous |
@@ -157,8 +162,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.4, closed linear span | Definition [[§11 Normed Linear Spaces#^def-11-9\|§11.9]] | Closed Linear Span |
 | §6.4, definition of orthonormal set | Definition [[§27 Orthonormal Sets and Bases#^def-27-1\|§27.1]] | Orthogonal and Orthonormal Sets |
 | §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§27 Orthonormal Sets and Bases#^prop-27-9\|§27.9]]) | Definition [[§27 Orthonormal Sets and Bases#^def-27-4\|§27.4]] | Orthonormal Basis |
-| §6.4, Thm $9'$ | Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3\|§28.3]] | Separable Hilbert Spaces and Countable Bases |
 | §6.4, Thm $9'$ | Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2\|§28.2]] | Gram–Schmidt |
+| §6.4, Thm $9'$ | Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3\|§28.3]] | Separable Hilbert Spaces and Countable Bases |
 | §6.4, Thm 7 | Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6\|§25.6]] | The Double Complement |
 | §6.4, definition of orthonormal base and Thm 7 | Proposition [[§27 Orthonormal Sets and Bases#^prop-27-9\|§27.9]] | Lax's Definition of Orthonormal Base Agrees |
 | §6.4, Lemma 8 | Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8\|§27.8]] | Characterizations of an Orthonormal Basis |
@@ -168,7 +173,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §8.1, Thm 3 | Corollary [[§31 Dual Spaces#^cor-31-1\|§31.1]] | The Dual is Always a Banach Space |
 | §8.3, Thm 11 | Theorem [[§31 Dual Spaces#^thm-31-4\|§31.4]] | The Dual of $L^p$ |
 | §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
-| §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map; Operator Norm |
+| §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map |
+| §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-3\|§30.3]] | Operator Norm |
 | §15.1, (3) and ($3'$) | Proposition [[§30 Boundedness and Continuity#^prop-30-1\|§30.1]] | The Operator Norm |
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |

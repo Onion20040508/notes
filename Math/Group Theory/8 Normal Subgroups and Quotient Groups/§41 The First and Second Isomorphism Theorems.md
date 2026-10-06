@@ -151,7 +151,7 @@ tags: [group-theory, math493]
 
 ^pf-41-4
 
-*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
+*Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^def-15-3|Def. §15.3]]
 
 > [!theorem] Theorem §41.5: Second Isomorphism Theorem
 > Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the [[§40 Quotient Groups#^def-40-1|projection]]. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), $\pi(H) = \pi(HN)$, and

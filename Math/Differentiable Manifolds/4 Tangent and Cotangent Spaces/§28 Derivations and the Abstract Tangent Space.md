@@ -70,11 +70,18 @@ tags: [differentiable-manifolds, math591]
 > I_p = \{\, [f] \in C_p^\infty(M) \mid f(p) = 0 \,\},
 > $$
 >
-> the kernel of evaluation at $p$ (Definition [[§27 Germs#^def-27-3|§27.3]]). Its **square** $I_p^2$ is the set of all finite sums $\sum_k [u_k][w_k]$ of products of two elements of $I_p$, the empty sum $0$ included.
+> the kernel of evaluation at $p$ (Definition [[§27 Germs#^def-27-3|§27.3]]).
 >
 > *Lee: Problem 11-4, where $I_p \subseteq C^\infty(M)$ consists of global functions*
 
 ^def-28-3
+
+> [!definition] Definition §28.4: The Square of $I_p$
+> The **square** $I_p^2$ of $I_p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-3|Definition §28.3]]) is the set of all finite sums $\sum_k [u_k][w_k]$ of products of two elements of $I_p$, the empty sum $0$ included.
+>
+> *Lee: Problem 11-4, where $I_p \subseteq C^\infty(M)$ consists of global functions*
+
+^def-28-4
 
 > [!theorem] Lemma §28.1: $I_p$ and $I_p^2$
 > $I_p$ is an ideal of $C_p^\infty(M)$ and $I_p^2 \subseteq I_p$; both are linear subspaces.
@@ -86,10 +93,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-28-1
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§27 Germs#^prop-27-2|§27.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
 
 > [!theorem] Lemma §28.2: First Properties of Derivations
-> Let $D$ be a derivation at $p$, and $I_p$, $I_p^2$ as in Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]].
+> Let $D$ be a derivation at $p$, and $I_p$, $I_p^2$ as in Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-3|§28.3]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-4|§28.4]].
 > 1. $D$ annihilates constants: if $c \in \mathbb{R}$ and $\underline{c}$ denotes the germ of the constant function $c$, then $D[\underline{c}] = 0$. Consequently $D[f] = D\big[f - \underline{f(p)}\big]$, so $D$ is determined by its values on $I_p$.
 > 2. $D$ annihilates products of vanishing germs: if $[f], [g] \in I_p$, then $D([f][g]) = 0$. Consequently $D$ vanishes on all of $I_p^2$.
 >
@@ -110,7 +117,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-28-2
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]]
 
 Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is “a very simple consequence of the product rule” and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
 

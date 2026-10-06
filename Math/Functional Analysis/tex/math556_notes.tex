@@ -272,7 +272,7 @@ Functional analysis is, in short, infinite-dimensional linear algebra. In finite
 
 \section{Linear Spaces}\label{sec:lin-spaces}
 
-\roadmark{Stage: algebra}{Threads: dimension. The vocabulary of the course; only finite sums exist (\S\ref{subsec:span}), and the quotient stands in for an orthogonal complement until \ref{sec:projection}.}
+\roadmark{Stage: algebra}{Threads: dimension. The vocabulary of the course; only finite sums exist (\S\ref{subsec:span}).}
 
 \subsection{Definition and Examples}
 
@@ -456,6 +456,13 @@ Conversely, any subspace containing $S$ contains every sum $\sum_{i=1}^k a_i s_i
 The sums in the span are finite. We do not, at this point, know how to form an infinite sum of vectors: an infinite sum requires taking a limit, and a linear space carries no notion of limit. Adding two vectors is part of the structure; passing to infinitely many is not, and must be separately justified once a topology is available. Finite sums are also already enough to produce a subspace, as the proof shows.
 \end{rembox}
 
+% ============================================================================
+% SECTION: QUOTIENT SPACES AND COMPLEMENTS
+% ============================================================================
+\section{Quotient Spaces and Complements}\label{sec:quotients-complements}
+
+\roadmark{Stage: algebra}{Threads: dimension. The quotient stands in for an orthogonal complement until \ref{sec:projection}.}
+
 \subsection{Quotient Spaces}\label{subsec:quotient}
 
 \begin{defbox}[Equivalence mod $Y$]\boxlabel{def:equivalence-mod}
@@ -467,12 +474,16 @@ if $x_1 - x_2 \in Y$.
 \laxref{Ch.~1, equivalence mod $Y$}
 \end{defbox}
 
-\begin{defbox}[Equivalence Class and Quotient Space]\boxlabel{def:equivalence-class-and-quotient}
+\begin{defbox}[Equivalence Class]\boxlabel{def:equivalence-class-and-quotient}
 For $x_0 \in X$, the \textbf{equivalence class} of $x_0$ is
 \[
 [x_0] = \{ x \in X \mid x - x_0 \in Y \} = x_0 + Y.
 \]
-The \textbf{quotient space} $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes:
+\laxref{Ch.~1, quotient space}
+\end{defbox}
+
+\begin{defbox}[Quotient Space]\boxlabel{def:quotient-space}
+The \textbf{quotient space} $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition~\ref{def:equivalence-class-and-quotient}):
 \[
 X / Y = \{ [x] \mid x \in X \}.
 \]
@@ -817,11 +828,10 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$, and there is
 
 \subsection{Positive Homogeneous Subadditive Functions}
 
-\begin{defbox}[Positive Homogeneous; Subadditive]\boxlabel{def:positive-homogeneous-subadditive}
+\begin{defbox}[Positive Homogeneous]\boxlabel{def:positive-homogeneous-subadditive}
 Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
 \begin{enumerate}[label=(\arabic*)]
     \item \textbf{positive homogeneous} if $p(ax) = a\,p(x)$ for all $a \geq 0$ and all $x \in X$;
-    \item \textbf{subadditive} if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
 \end{enumerate}
 \laxref{\S3.1, conditions (1)--(2) of Thm~1}
 \end{defbox}
@@ -829,6 +839,14 @@ Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ i
 \begin{rembox}\label{rem:hb-statement}
 Positive homogeneity only involves scalars $a \geq 0$: multiplying $x$ by a non-negative real number pulls that number out of $p$. Nothing is said about negative scalars, and $p$ is \emph{not} required to be non-negative. (For a norm, non-negativity is part of the definition; here it is not assumed.)
 \end{rembox}
+
+\begin{defbox}[Subadditive]\boxlabel{def:subadditive}
+Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
+\begin{enumerate}[label=(\arabic*), start=2]
+    \item \textbf{subadditive} if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
+\end{enumerate}
+\laxref{\S3.1, conditions (1)--(2) of Thm~1}
+\end{defbox}
 
 \begin{lembox}[{{$p(0) = 0$}}]\boxlabel{lem:p-zero}
 If $p : X \to \mathbb{R}$ is positive homogeneous, then $p(0) = 0$.
@@ -933,8 +951,13 @@ Let $\ell(x) = a \cdot x$ on $\mathbb{R}^n$ with $a \neq 0$.
 \end{itemize}
 \end{exbox}
 
-\begin{defbox}[Hyperplane; Half-Space]\boxlabel{def:hyperplane}
-Let $\ell$ be a nonzero linear functional on a linear space $X$ over $\mathbb{R}$ and $c \in \mathbb{R}$. The set $\{ x \in X : \ell(x) = c \}$ is called a \textbf{hyperplane}, and the sets $\{ \ell(x) < c \}$, $\{ \ell(x) > c \}$ are the two \textbf{half-spaces} it bounds.
+\begin{defbox}[Hyperplane]\boxlabel{def:hyperplane}
+Let $\ell$ be a nonzero linear functional on a linear space $X$ over $\mathbb{R}$ and $c \in \mathbb{R}$. The set $\{ x \in X : \ell(x) = c \}$ is called a \textbf{hyperplane}.
+\laxref{\S3.2, hyperplanes}
+\end{defbox}
+
+\begin{defbox}[Half-Space]\boxlabel{def:half-space}
+Let $\ell$, $c$ and the hyperplane $\{ x \in X : \ell(x) = c \}$ be as in Definition~\ref{def:hyperplane}. The sets $\{ \ell(x) < c \}$, $\{ \ell(x) > c \}$ are the two \textbf{half-spaces} it bounds.
 \laxref{\S3.2, hyperplanes}
 \end{defbox}
 
@@ -1482,7 +1505,7 @@ The corollary is the converse to Proposition~\ref{prop:sublevel-convex}: the set
 
 \roadmark{Stage: algebra}{Threads meet: functionals $\times$ convexity. Hahn--Banach applied to a gauge.}
 
-This is the first application of Hahn--Banach, and the reason the theorem was stated with a general $p$ rather than a norm: the $p$ that gets used is the gauge of a convex set. Recall (Definition~\ref{def:hyperplane}) that for a nonzero linear functional $\ell : X \to \mathbb{R}$ and $c \in \mathbb{R}$, $\{\ell = c\}$ is a hyperplane and $\{\ell < c\}$, $\{\ell > c\}$ are the two half-spaces it bounds; in $\mathbb{R}^n$, with $\ell(x) = a \cdot x$, which side is ``$> c$'' is determined by the direction of $a$.
+This is the first application of Hahn--Banach, and the reason the theorem was stated with a general $p$ rather than a norm: the $p$ that gets used is the gauge of a convex set. Recall (Definitions~\ref{def:hyperplane} and~\ref{def:half-space}) that for a nonzero linear functional $\ell : X \to \mathbb{R}$ and $c \in \mathbb{R}$, $\{\ell = c\}$ is a hyperplane and $\{\ell < c\}$, $\{\ell > c\}$ are the two half-spaces it bounds; in $\mathbb{R}^n$, with $\ell(x) = a \cdot x$, which side is ``$> c$'' is determined by the direction of $a$.
 
 \begin{thmbox}[{{Hyperplane Separation; Geometric Hahn--Banach}}]\boxlabel{thm:separation}
 Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty convex set in which every point is an interior point, and let $y_0 \in X$ with $y_0 \notin K$. Then there is a hyperplane that separates $y_0$ from $K$: there exist a linear functional $\ell : X \to \mathbb{R}$ and $c_0 \in \mathbb{R}$ such that
@@ -1491,10 +1514,6 @@ Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty con
 \]
 \laxref{\S3.2, Thm~5}
 \end{thmbox}
-
-\begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-3}
-The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty, which the proof needs in Step~1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary~5$'$, for a convex set with only \emph{one} interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem~6, separating two disjoint convex sets, one of which has an interior point.
-\end{rembox}
 
 In words: $y_0$ lies \emph{on} the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
 
@@ -1546,6 +1565,10 @@ L(y_0) = c_0, \qquad L(x) < c_0 \quad \text{for all } x \in K. \qedhere
 Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn--Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.
 \end{rembox}
 
+\begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-3}
+The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty, which the proof needs in Step~1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary~5$'$, for a convex set with only \emph{one} interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem~6, separating two disjoint convex sets, one of which has an interior point.
+\end{rembox}
+
 % ============================================================================
 % SECTION 7: COMPLEX HAHN-BANACH
 % ============================================================================
@@ -1556,6 +1579,18 @@ Everything in the proof was already in place; the theorem is an assembly. The ga
 
 For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, since $\ell(y)$ is complex; the correct hypothesis and conclusion use the modulus, and the homogeneity of $p$ must be strengthened to complex scalars.
 
+\begin{lembox}[Consequences of Complex Homogeneity]\boxlabel{lem:p-complex}
+Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex} below. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
+\end{lembox}
+
+\begin{proof}
+(Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
+\end{proof}
+
+\begin{rembox}\label{rem:hb-complex}
+Theorem~\ref{thm:hb-complex} below does not assume $p \ge 0$. Wu remarked that $p$ is ``very often'' non-negative; under complex homogeneity it is forced. (Not stated in lecture.)
+\end{rembox}
+
 \begin{thmbox}[Complex Hahn--Banach]\boxlabel{thm:hb-complex}
 Let $X$ be a linear space over $\mathbb{C}$ and $p : X \to \mathbb{R}$ a real-valued function satisfying
 \begin{enumerate}[label=(\arabic*)]
@@ -1565,18 +1600,6 @@ Let $X$ be a linear space over $\mathbb{C}$ and $p : X \to \mathbb{R}$ a real-va
 Let $Y$ be a linear subspace of $X$ and $\ell : Y \to \mathbb{C}$ a linear functional satisfying $|\ell(y)| \le p(y)$ for all $y \in Y$. Then $\ell$ can be extended to a linear functional on $X$ satisfying $|\ell(x)| \le p(x)$ for all $x \in X$.
 \laxref{\S3.3, Thm~8}
 \end{thmbox}
-
-\begin{lembox}[Consequences of Complex Homogeneity]\boxlabel{lem:p-complex}
-Let $p : X \to \mathbb{R}$ satisfy (1) and (2) of Theorem~\ref{thm:hb-complex}. Then $p(0) = 0$, $p(-x) = p(x)$ and $p(x) \ge 0$ for all $x \in X$; and, regarding $X$ as a linear space over $\mathbb{R}$, $p$ is positive homogeneous and subadditive.
-\end{lembox}
-
-\begin{proof}
-(Not covered in lecture.) (1) with $a = 0$ gives $p(0) = 0$, and with $a = -1$ gives $p(-x) = p(x)$. By (2), $0 = p(x + (-x)) \le p(x) + p(-x) = 2p(x)$. Restricting (1) to real $a \ge 0$ gives positive homogeneity, and (2) is subadditivity.
-\end{proof}
-
-\begin{rembox}\label{rem:hb-complex}
-The theorem does not assume $p \ge 0$. Wu remarked that $p$ is ``very often'' non-negative; under complex homogeneity it is forced. (Not stated in lecture.)
-\end{rembox}
 
 \begin{proof}
 As elsewhere, $\ell$ is the given functional on $Y$ and $L$ will be its extension. Two further names are needed because the real theorem is applied to one functional while a different one is being built: $u$ below plays the role of ``$\ell$ on $Y$'' in Theorem~\ref{thm:hb}, and $U$ the role of ``$L$'' there; the complex $L$ is then assembled from $U$. The auxiliary $v$ appears only in Step 2 and is never extended. Regard $X$ also as a linear space over $\mathbb{R}$ (same set, same addition, scalar multiplication restricted to real scalars); $Y$ is then a real subspace. ``Real-linear'' means linear with respect to real scalars; ``complex-linear'' with respect to complex scalars.
@@ -1853,12 +1876,16 @@ Convergence refers to a limit \emph{in $X$}; a Cauchy sequence has its terms app
 A subset $S$ of a normed linear space (or metric space) $X$ is \textbf{closed} if it contains the limits of all its convergent sequences: whenever $\{s_n\} \subset S$ and $s_n \to x$ with $x \in X$, then $x \in S$.
 \end{defbox}
 
-\begin{defbox}[Closure; Dense Subset]\boxlabel{def:closure}
+\begin{defbox}[Closure]\boxlabel{def:closure}
 Let $S$ be a subset of a normed linear space (or metric space) $X$. The \textbf{closure} $\overline{S}$ of $S$ is the set of all limits of convergent sequences in $S$:
 \[
 \overline{S} = \{ x \in X : x = \lim_{n \to \infty} s_n \text{ for some sequence } s_n \in S \} .
 \]
-$S$ is \textbf{dense} in $X$ if $\overline{S} = X$.
+\laxref{\S5.1, before Thm~2; ``dense'' in the definition of separable space}
+\end{defbox}
+
+\begin{defbox}[Dense Subset]\boxlabel{def:dense}
+Let $S$ be a subset of a normed linear space (or metric space) $X$, with closure $\overline{S}$ (Definition~\ref{def:closure}). $S$ is \textbf{dense} in $X$ if $\overline{S} = X$.
 \laxref{\S5.1, before Thm~2; ``dense'' in the definition of separable space}
 \end{defbox}
 
@@ -1892,8 +1919,12 @@ The \textbf{closed linear span} of a subset $S$ of a normed linear space $X$ is 
 \laxref{\S6.4, closed linear span}
 \end{defbox}
 
-\begin{defbox}[Open Ball; Metric Interior Point]\boxlabel{def:metric-interior}
-For $x_0 \in X$ and $r > 0$, the \textbf{open ball} of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$. A point $x_0$ of a subset $K \subset X$ is a \textbf{metric interior point} of $K$ if $B_r(x_0) \subset K$ for some $r > 0$.
+\begin{defbox}[Open Ball]\boxlabel{def:open-ball}
+For $x_0 \in X$ and $r > 0$, the \textbf{open ball} of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.
+\end{defbox}
+
+\begin{defbox}[Metric Interior Point]\boxlabel{def:metric-interior}
+A point $x_0$ of a subset $K \subset X$ is a \textbf{metric interior point} of $K$ if $B_r(x_0) \subset K$ for some $r > 0$ (Definition~\ref{def:open-ball}).
 \end{defbox}
 
 \begin{propbox}[Metric Interior Points are Interior Points]\boxlabel{prop:metric-interior}
@@ -2111,6 +2142,13 @@ In general the completion is abstract and cannot be drawn; the picture to keep i
 \end{center}
 In $M = (0,1)$ the Cauchy sequence $x_n = 1/n$ ($n \ge 2$) heads for $0$, which is not in $M$; the completion supplies the missing point.
 \end{exbox}
+
+% ============================================================================
+% SECTION: THE COMPLETION OF A NORMED SPACE
+% ============================================================================
+\section{The Completion of a Normed Space}\label{sec:completion-normed}
+
+\roadmark{Stage: norms}{Thread: completeness. The completion of a normed space is a Banach space, and in practice it can be written down as a concrete space.}
 
 \subsection{Completion of a Normed Linear Space}
 
@@ -2707,8 +2745,12 @@ Young's inequality is the case of the chord lying below the concave graph of $\l
 
 \roadmark{Stage: norms}{Tools. H\"older's inequality, from Young's.}
 
-\begin{defbox}[The Sequence Space $\ell$ and the $p$-Norms]\boxlabel{def:sequence-space-l-p-norms}
-Let $\ell$ denote the set of all infinite sequences $a = (a_1, a_2, \ldots)$ with $a_i \in \mathbb{F}$ ($= \mathbb{R}$ or $\mathbb{C}$). With termwise addition and scalar multiplication, $\ell$ is a linear space. For $a \in \ell$ define
+\begin{defbox}[The Sequence Space $\ell$]\boxlabel{def:sequence-space-l-p-norms}
+Let $\ell$ denote the set of all infinite sequences $a = (a_1, a_2, \ldots)$ with $a_i \in \mathbb{F}$ ($= \mathbb{R}$ or $\mathbb{C}$). With termwise addition and scalar multiplication, $\ell$ is a linear space.
+\end{defbox}
+
+\begin{defbox}[The $p$-Norms]\boxlabel{def:p-norms}
+For $a \in \ell$ (Definition~\ref{def:sequence-space-l-p-norms}) define
 \[
 \|a\|_p = \Bigl( \sum_{i=1}^{\infty} |a_i|^p \Bigr)^{1/p} \quad (1 \le p < \infty), \qquad \|a\|_\infty = \sup_{i} |a_i|,
 \]
@@ -3237,8 +3279,16 @@ In $\mathbb{F}^n$ ($\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$) with any norm, the
 is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in Step 5 of Theorem~\ref{prop:norms-equiv} --- Bolzano--Weierstrass applied $n$ times --- produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition~\ref{prop:norm-continuous}).
 \end{exbox}
 
-\begin{defbox}[Open Set; Open Cover; Compact]\boxlabel{def:compact}
-Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is \textbf{open} if every point of $U$ is a metric interior point of $U$ (Definition~\ref{def:metric-interior}). An \textbf{open cover} of $K \subset X$ is a collection of open sets whose union contains $K$. $K$ is \textbf{compact} if every open cover of $K$ has a finite subcollection that still covers $K$.
+\begin{defbox}[Open Set]\boxlabel{def:open-set}
+Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is \textbf{open} if every point of $U$ is a metric interior point of $U$ (Definition~\ref{def:metric-interior}).
+\end{defbox}
+
+\begin{defbox}[Open Cover]\boxlabel{def:open-cover}
+Let $X$ be a normed linear space (or metric space). An \textbf{open cover} of $K \subset X$ is a collection of open sets (Definition~\ref{def:open-set}) whose union contains $K$.
+\end{defbox}
+
+\begin{defbox}[Compact]\boxlabel{def:compact}
+Let $X$ be a normed linear space (or metric space) and $K \subset X$. $K$ is \textbf{compact} if every open cover of $K$ (Definition~\ref{def:open-cover}) has a finite subcollection that still covers $K$.
 \end{defbox}
 
 \begin{thmbox}[Compactness in Metric Spaces]\boxlabel{thm:compact-seq}
@@ -3550,7 +3600,7 @@ In each example $(x,x)$ is the square of the norm already attached to the space:
 
 \section{Cauchy--Schwarz and the Induced Norm}\label{sec:cauchy-schwarz}
 
-\roadmark{Stage: inner products}{Thread: convexity. Every inner product induces a norm, and the parallelogram law says which norms arise.}
+\roadmark{Stage: inner products}{Thread: convexity. Every inner product induces a norm.}
 
 \subsection{The Cauchy--Schwarz Inequality}
 
@@ -3673,6 +3723,13 @@ Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so thi
 Wu's motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
 \laxref{\S5.1, example (g)}
 \end{exbox}
+
+% ============================================================================
+% SECTION: THE PARALLELOGRAM LAW AND JORDAN--VON NEUMANN
+% ============================================================================
+\section{The Parallelogram Law and Jordan--von Neumann}\label{sec:parallelogram-law}
+
+\roadmark{Stage: inner products}{Thread: convexity. The parallelogram law says which norms arise.}
 
 \subsection{Which Norms Come from an Inner Product}\label{subsec:parallelogram}
 
@@ -3915,8 +3972,13 @@ The statement and proof are Lax's Theorem~6.2, which assumes $K$ nonempty; the h
 
 \subsection{Orthogonal Complements}
 
-\begin{defbox}[Orthogonality; Orthogonal Complement]\boxlabel{def:orth}
-Let $(X, (\cdot,\cdot))$ be an inner product space. Two vectors $x, y \in X$ are \textbf{orthogonal} (or perpendicular), written $x \perp y$, if $(x, y) = 0$. For a subset $M \subset X$, the \textbf{orthogonal complement} of $M$ is
+\begin{defbox}[Orthogonality]\boxlabel{def:orth}
+Let $(X, (\cdot,\cdot))$ be an inner product space. Two vectors $x, y \in X$ are \textbf{orthogonal} (or perpendicular), written $x \perp y$, if $(x, y) = 0$.
+\laxref{\S6.1 and \S6.2, definitions}
+\end{defbox}
+
+\begin{defbox}[Orthogonal Complement]\boxlabel{def:orth-complement}
+Let $(X, (\cdot,\cdot))$ be an inner product space. For a subset $M \subset X$, the \textbf{orthogonal complement} of $M$ is
 \[
 M^\perp = \{ v \in X : (v, y) = 0 \text{ for all } y \in M \} .
 \]
@@ -4177,28 +4239,8 @@ For a linear functional $\ell$ on a normed linear space $X$, the following are e
 
 \subsection{The Riesz Representation Theorem}
 
-\begin{thmbox}[Riesz Representation Theorem]\boxlabel{thm:riesz-rep}
-Let $H$ be a Hilbert space over $\mathbb{F}$.
-\begin{enumerate}[label=(\arabic*)]
-    \item For every $a \in H$, the map $\ell_a : H \to \mathbb{F}$, $\ell_a(x) = (x, a)$, is a bounded linear functional on $H$.
-    \item Conversely, for every bounded linear functional $\ell : H \to \mathbb{F}$ there is a unique $a \in H$ such that
-    \[
-    \ell(x) = (x, a) \qquad \text{for all } x \in H .
-    \]
-\end{enumerate}
-\laxref{\S6.3, Thm~4}
-\end{thmbox}
-
-\begin{rembox}[Reading the Statement]\label{rem:reading-statement-2}
-Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are \emph{no other} bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. Wu's example: on $L^2$, every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the \emph{second} slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
-\end{rembox}
-
-\begin{proof}[Proof of (1)]
-Linearity of $\ell_a$ in $x$ is linearity of the inner product in its first argument. Boundedness is Cauchy--Schwarz (Theorem~\ref{thm:cauchy-schwarz}): $|\ell_a(x)| = |(x, a)| \le \|a\|\,\|x\|$, so $c = \|a\|$ works.
-\end{proof}
-
 % Lecture 8 (2026-09-24)
-The idea of the proof comes from $\mathbb{R}^n$: there $\ell(x) = x \cdot a$, the set $\{\ell = 0\}$ is a hyperplane, and $a$ is a normal vector to it. So one studies the null set of $\ell$ and looks for a vector perpendicular to it. Two facts about the null set are needed first; they are separated out as lemmas.
+The idea of the proof of the Riesz representation theorem (Theorem~\ref{thm:riesz-rep} below) comes from $\mathbb{R}^n$: there $\ell(x) = x \cdot a$, the set $\{\ell = 0\}$ is a hyperplane, and $a$ is a normal vector to it. So one studies the null set of $\ell$ and looks for a vector perpendicular to it. Two facts about the null set are needed first; they are separated out as lemmas.
 
 \begin{lembox}[The Kernel of a Bounded Functional is Closed]\boxlabel{lem:kernel-closed}
 Let $\ell$ be a bounded linear functional on a normed linear space $X$. Then its \textbf{kernel} (or null set)
@@ -4244,6 +4286,22 @@ By Lemma~\ref{lem:kernel-closed}, $N$ is a closed linear subspace, and $N \neq H
 Two points raised in lecture. The step $k = \ell(x_1)/\ell(x_0)$ may look like dividing vectors, but it is not: $\ell(x_1)$ and $\ell(x_0)$ are numbers, and the vector identity $x_1 = kx_0$ is obtained afterwards from $N \cap N^\perp = \{0\}$. And a student asked why this shows $\dim N^\perp = 1$: an arbitrary element $x_1$ of $N^\perp$ was shown to be a multiple of one fixed nonzero $x_0$.
 \end{rembox}
 
+\begin{thmbox}[Riesz Representation Theorem]\boxlabel{thm:riesz-rep}
+Let $H$ be a Hilbert space over $\mathbb{F}$.
+\begin{enumerate}[label=(\arabic*)]
+    \item For every $a \in H$, the map $\ell_a : H \to \mathbb{F}$, $\ell_a(x) = (x, a)$, is a bounded linear functional on $H$.
+    \item Conversely, for every bounded linear functional $\ell : H \to \mathbb{F}$ there is a unique $a \in H$ such that
+    \[
+    \ell(x) = (x, a) \qquad \text{for all } x \in H .
+    \]
+\end{enumerate}
+\laxref{\S6.3, Thm~4}
+\end{thmbox}
+
+\begin{proof}[Proof of (1)]
+Linearity of $\ell_a$ in $x$ is linearity of the inner product in its first argument. Boundedness is Cauchy--Schwarz (Theorem~\ref{thm:cauchy-schwarz}): $|\ell_a(x)| = |(x, a)| \le \|a\|\,\|x\|$, so $c = \|a\|$ works.
+\end{proof}
+
 \begin{proof}[Proof of (2)]
 If $\ell = 0$, then $\ell(x) = (x, 0)$ for all $x$, so $a = 0$ works. Assume $\ell \neq 0$, let $N = \ker \ell$, and fix $0 \neq x_0 \in N^\perp$ (Lemma~\ref{lem:ker-codim1}).
 
@@ -4285,6 +4343,10 @@ the conjugate being needed because the inner product is conjugate-linear in its 
 \end{tikzpicture}
 \end{center}
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e.\ the $N^\perp$-component $kx_0$ of $x$.
+
+\begin{rembox}[Reading the Statement]\label{rem:reading-statement-2}
+Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are \emph{no other} bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. Wu's example: on $L^2$, every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the \emph{second} slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
+\end{rembox}
 
 \begin{rembox}\label{rem:riesz-rep-2}
 Wu on method: ``when we try to prove a big theorem, very often the simple examples we learned, like in linear algebra, give the answer; start with simple examples and go from there.'' Here the finite-dimensional picture dictated both the object to study ($\ker \ell$) and the candidate ($a$ normal to it); the analysis consisted of making the orthogonal decomposition available, which is where completeness of $H$ and boundedness of $\ell$ enter.
@@ -4609,9 +4671,14 @@ since $e^{i(k-j)2\pi} = 1$.
 Read through Theorem~\ref{thm:onbasis-equiv}, this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
 \end{rembox}
 
-\subsection{Existence of Orthonormal Bases and Separability}
+% ============================================================================
+% SECTION: EXISTENCE OF ORTHONORMAL BASES AND SEPARABILITY
+% ============================================================================
+\section{Existence of Orthonormal Bases and Separability}\label{sec:onb-existence}
 
-Both examples have \emph{countable} orthonormal bases. Wu announced for next lecture that every Hilbert space has an orthonormal basis --- which by itself is ``almost useless, because there are too many'' --- and, more usefully, that the countable ones are exactly the bases of separable spaces.
+\roadmark{Stage: inner products}{Thread: dimension. Every Hilbert space has an orthonormal basis; the countable ones are exactly the bases of separable spaces.}
+
+Both examples of \S\ref{sec:onb} (Example~\ref{ex:standard-basis-l-2} and Theorem~\ref{thm:fourier}) have \emph{countable} orthonormal bases. Wu announced for next lecture that every Hilbert space has an orthonormal basis --- which by itself is ``almost useless, because there are too many'' --- and, more usefully, that the countable ones are exactly the bases of separable spaces.
 
 % Lecture 9 (2026-09-29)
 
@@ -4661,28 +4728,7 @@ A normed linear space $X$ is \textbf{separable} if it has a countable dense subs
 \laxref{\S5.1, definition of separable space}
 \end{defbox}
 
-\subsubsection*{Countable Orthonormal Bases}
-
-\begin{thmbox}[Separable Hilbert Spaces and Countable Bases]\boxlabel{thm:sep-countable-onb}
-A Hilbert space $H$ has a countable orthonormal basis if and only if it is separable.
-\laxref{\S6.4, Thm~9$'$}
-\end{thmbox}
-
-\begin{proof}[Proof of ($\Rightarrow$)]
-Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Theorem~\ref{thm:onbasis-equiv}), a finite sum if the basis is finite and a limit of partial sums otherwise. Let
-\[
-D = \bigcup_{n} \Bigl\{ \sum_{j=1}^n a_j e_j : a_j \in \mathbb{Q}_{\mathbb{F}} \Bigr\},
-\]
-the union over $n = 1, 2, \ldots$ (only up to the number of basis vectors if the basis is finite). Each set in the union is in bijection with $\mathbb{Q}_{\mathbb{F}}^n$, so $D$ is countable.
-
-\emph{$D$ is dense.} Let $x \in H$ and $\varepsilon > 0$. The partial sums of the expansion converge to $x$, so there is $n$ with $\bigl\| x - \sum_{j=1}^n (x, e_j) e_j \bigr\| < \varepsilon/2$ (if the basis is finite, take $n$ its size, and this term is $0$). Choose $a_j \in \mathbb{Q}_{\mathbb{F}}$ with $|(x, e_j) - a_j| < \frac{\varepsilon}{2\sqrt{n}}$. By Pythagoras (Lemma~\ref{lem:pythagoras}),
-\[
-\Bigl\| \sum_{j=1}^n \bigl( (x, e_j) - a_j \bigr) e_j \Bigr\|^2 = \sum_{j=1}^n |(x, e_j) - a_j|^2 < n \cdot \frac{\varepsilon^2}{4n} = \frac{\varepsilon^2}{4},
-\]
-so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ (Proposition~\ref{prop:lp-separable} below).
-\end{proof}
-
-For the converse, the countable dense set has to be turned into an orthonormal set, which is the Gram--Schmidt process.
+\subsection{Countable Orthonormal Bases}
 
 \begin{lembox}[Gram--Schmidt]\boxlabel{lem:gram-schmidt}
 Let $y_1, y_2, \ldots$ be a finite or infinite sequence of linearly independent vectors in an inner product space $X$. Then there is an orthonormal sequence $e_1, e_2, \ldots$ (of the same length) with
@@ -4709,6 +4755,27 @@ so $(e_j, e_k) = 0$. \emph{Spans:} $e_j$ is a combination of $y_j$ and $e_1, \ld
 
 Since $e_j$ depends only on $y_1, \ldots, y_j$, the recursion runs through an infinite sequence as well.
 \end{proof}
+
+\begin{thmbox}[Separable Hilbert Spaces and Countable Bases]\boxlabel{thm:sep-countable-onb}
+A Hilbert space $H$ has a countable orthonormal basis if and only if it is separable.
+\laxref{\S6.4, Thm~9$'$}
+\end{thmbox}
+
+\begin{proof}[Proof of ($\Rightarrow$)]
+Assume $H$ has a countable orthonormal basis $\{e_1, e_2, \ldots\}$ (finite or infinite). Then $H = \overline{\operatorname{span}}\{e_1, e_2, \ldots\}$: every $x \in H$ is $x = \sum_j (x, e_j)\, e_j$ (Theorem~\ref{thm:onbasis-equiv}), a finite sum if the basis is finite and a limit of partial sums otherwise. Let
+\[
+D = \bigcup_{n} \Bigl\{ \sum_{j=1}^n a_j e_j : a_j \in \mathbb{Q}_{\mathbb{F}} \Bigr\},
+\]
+the union over $n = 1, 2, \ldots$ (only up to the number of basis vectors if the basis is finite). Each set in the union is in bijection with $\mathbb{Q}_{\mathbb{F}}^n$, so $D$ is countable.
+
+\emph{$D$ is dense.} Let $x \in H$ and $\varepsilon > 0$. The partial sums of the expansion converge to $x$, so there is $n$ with $\bigl\| x - \sum_{j=1}^n (x, e_j) e_j \bigr\| < \varepsilon/2$ (if the basis is finite, take $n$ its size, and this term is $0$). Choose $a_j \in \mathbb{Q}_{\mathbb{F}}$ with $|(x, e_j) - a_j| < \frac{\varepsilon}{2\sqrt{n}}$. By Pythagoras (Lemma~\ref{lem:pythagoras}),
+\[
+\Bigl\| \sum_{j=1}^n \bigl( (x, e_j) - a_j \bigr) e_j \Bigr\|^2 = \sum_{j=1}^n |(x, e_j) - a_j|^2 < n \cdot \frac{\varepsilon^2}{4n} = \frac{\varepsilon^2}{4},
+\]
+so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ (Proposition~\ref{prop:lp-separable} below).
+\end{proof}
+
+For the converse, the countable dense set has to be turned into an orthonormal set, which is the Gram--Schmidt process (Lemma~\ref{lem:gram-schmidt} above).
 
 \begin{proof}[Proof of ($\Leftarrow$) in Theorem~\ref{thm:sep-countable-onb}]
 Assume $D = \{y_1, y_2, \ldots\}$ is a countable dense subset of $H$. If $H = \{0\}$, the empty set is a countable orthonormal basis; assume $H \neq \{0\}$, so $D$ contains a nonzero element.
@@ -4738,7 +4805,7 @@ Hence $x = 0$, and $\{e_j\}$ is complete.
 The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step~3. Only finite linear combinations appear anywhere --- the limit is taken in the inner product, not in the expansion. Compare Proposition~\ref{prop:sep-countable}: in a separable Hilbert space \emph{every} orthonormal set is countable, not just the one constructed here.
 \end{rembox}
 
-\subsubsection*{Classification of Separable Hilbert Spaces}
+\subsection{Classification of Separable Hilbert Spaces}
 
 \begin{defbox}[Isomorphic Hilbert Spaces]\boxlabel{def:hilbert-iso}
 Let $H_1$ and $H_2$ be Hilbert spaces over the same field, with inner products $(\cdot, \cdot)_1$ and $(\cdot, \cdot)_2$. $H_1$ is \textbf{isomorphic} to $H_2$ if there is a map $T : H_1 \to H_2$ that is linear, one-to-one and onto, and preserves the inner product:
@@ -5055,12 +5122,16 @@ x_j \to x^{(0)} \text{ in } (X, \|\cdot\|_X) \implies T x_j \to T x^{(0)} \text{
 \laxref{\S15.1, definition of continuous map}
 \end{defbox}
 
-\begin{defbox}[Bounded Linear Map; Operator Norm]\boxlabel{def:bounded-map}
+\begin{defbox}[Bounded Linear Map]\boxlabel{def:bounded-map}
 A linear map $T : X \to Y$ is \textbf{bounded} if there is $M \ge 0$ with
 \[
 \|T x\|_Y \le M\, \|x\|_X \qquad \text{for all } x \in X .
 \]
-For a bounded $T$ (and $X \neq \{0\}$) its \textbf{norm} is
+\laxref{\S15.1, (2) and (2$'$)}
+\end{defbox}
+
+\begin{defbox}[Operator Norm]\boxlabel{def:operator-norm}
+For a bounded $T : X \to Y$ (Definition~\ref{def:bounded-map}), and $X \neq \{0\}$, its \textbf{norm} is
 \[
 \|T\| = \sup_{\substack{x \in X \\ x \neq 0}} \frac{\|T x\|_Y}{\|x\|_X} ;
 \]
@@ -5138,7 +5209,7 @@ But $T 0 = 0$, so continuity would give $\|T y_n\|_Y = \|T y_n - T0\|_Y \to 0$. 
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
 \begin{rembox}\label{rem:bounded-maps}
-For $Y = \mathbb{F}$ this is Proposition~\ref{prop:bounded-continuous} on linear functionals, and $\|T\|$ is then the dual norm of Definition~\ref{def:dual-space}. The companion chapter's bounded operators on $H$ (Definition~\ref{def:operator}) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
+For $Y = \mathbb{F}$ this is Proposition~\ref{prop:bounded-continuous} on linear functionals, and $\|T\|$ is then the dual norm of Definition~\ref{def:dual-norm}. The companion chapter's bounded operators on $H$ (Definition~\ref{def:operator}) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
 \end{rembox}
 
 % Lecture 10 (2026-10-01)
@@ -5220,7 +5291,7 @@ By Theorem~\ref{prop:norms-equiv}, $\|x\|_1 \le C\|x\|_X$ for some $C$, so $\|Tx
 \end{proof}
 
 \begin{defbox}[{{The Space $\mathcal{L}(X, Y)$}}]\boxlabel{def:LXY}
-$\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition~\ref{def:bounded-map}.
+$\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition~\ref{def:operator-norm}.
 \laxref{\S15.1, definition of $\mathcal{L}(X, U)$}
 \end{defbox}
 
@@ -5607,8 +5678,12 @@ The state space of a quantum system is a Hilbert space $H$ over $\mathbb{C}$, in
 
 \subsection{The Dual Space}
 
-\begin{defbox}[Dual Space and Dual Norm]\boxlabel{def:dual-space}
-Let $X$ be a normed linear space over $\mathbb{F}$. The \textbf{dual space} $X^*$ is the set of bounded linear functionals on $X$ (Definition~\ref{def:bounded-functional}), with pointwise addition and scalar multiplication. For $\ell \in X^*$, its \textbf{norm} is
+\begin{defbox}[Dual Space]\boxlabel{def:dual-space}
+Let $X$ be a normed linear space over $\mathbb{F}$. The \textbf{dual space} $X^*$ is the set of bounded linear functionals on $X$ (Definition~\ref{def:bounded-functional}), with pointwise addition and scalar multiplication.
+\end{defbox}
+
+\begin{defbox}[Dual Norm]\boxlabel{def:dual-norm}
+For $\ell \in X^*$ (Definition~\ref{def:dual-space}), its \textbf{norm} is
 \[
 \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
 \]
@@ -5642,12 +5717,15 @@ The Riesz map needs no basis, only the inner product; in this sense a Hilbert sp
 
 \subsection{Dirac Notation}
 
-\begin{defbox}[{{Kets, Bras, and Outer Products}}]\boxlabel{def:dirac}
+\begin{defbox}[{{Kets and Bras}}]\boxlabel{def:dirac}
 Let $H$ be a Hilbert space. For $a \in H$, the \textbf{ket} $|a\rangle$ denotes $a$ itself, and the \textbf{bra} $\langle a|$ denotes the functional $R(a) = \ell_a \in H^*$, so that
 \[
 \langle a | x \rangle := \langle a|\,(x) = (x, a) .
 \]
-For $a, b \in H$, the \textbf{outer product} $|a\rangle\langle b|$ is the map
+\end{defbox}
+
+\begin{defbox}[{{Outer Products}}]\boxlabel{def:outer-product}
+Let $H$ be a Hilbert space, with kets and bras as in Definition~\ref{def:dirac}. For $a, b \in H$, the \textbf{outer product} $|a\rangle\langle b|$ is the map
 \[
 |a\rangle\langle b| : H \to H, \qquad x \mapsto \langle b | x \rangle\, a = (x, b)\, a .
 \]
@@ -5669,8 +5747,16 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \Id$ is Theorem~\ref{
 
 \subsection{Operators and Projections}
 
-\begin{defbox}[{{Bounded Operator; Operator Norm; Strong Convergence}}]\boxlabel{def:operator}
-Let $H$ be a Hilbert space. A linear map $T : H \to H$ is a \textbf{bounded operator} if there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$; its \textbf{operator norm} $\|T\|$ is the infimum of such $c$. A sequence of bounded operators $T_n$ converges \textbf{strongly} to $T$ if $T_n x \to T x$ for every $x \in H$, and \textbf{in norm} if $\|T_n - T\| \to 0$. The identity operator is written $\Id$.
+\begin{defbox}[{{Bounded Operator}}]\boxlabel{def:operator}
+Let $H$ be a Hilbert space. A linear map $T : H \to H$ is a \textbf{bounded operator} if there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$. The identity operator is written $\Id$.
+\end{defbox}
+
+\begin{defbox}[{{Operator Norm}}]\boxlabel{def:operator-norm-2}
+Let $T : H \to H$ be a bounded operator on a Hilbert space $H$ (Definition~\ref{def:operator}), so that there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$; its \textbf{operator norm} $\|T\|$ is the infimum of such $c$.
+\end{defbox}
+
+\begin{defbox}[{{Strong Convergence}}]\boxlabel{def:strong-convergence}
+Let $H$ be a Hilbert space. A sequence of bounded operators $T_n$ (Definition~\ref{def:operator}) converges \textbf{strongly} to $T$ if $T_n x \to T x$ for every $x \in H$, and \textbf{in norm} if $\|T_n - T\| \to 0$ (Definition~\ref{def:operator-norm-2}).
 \end{defbox}
 
 As for functionals (Lemma~\ref{lem:dual-norm}), $\|Tx\| \le \|T\|\,\|x\|$. Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$.
@@ -6226,7 +6312,7 @@ Orthonormal family & $\{e_\alpha\}_{\alpha \in \Lambda}$, any index set & $\{x_j
 Orthonormal basis & defined by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ & ``orthonormal base'', defined by $\overline{\operatorname{span}} = H$ \\
 Complement & complement $W$ of $Y$ (\S\ref{subsec:complements}); $X = Y \oplus W$ & complementary subspaces \\
 Sobolev space & $H^k_0(\Omega)$, completion of $C_c^\infty(\Omega)$ & $W^{k,p}$, completion of $C^\infty$ functions with finite norm \\
-Separable & countable $D$ with every point a limit of a sequence in $D$ & countable set whose closure is the whole space (the same, by Definition~\ref{def:closure}) \\
+Separable & countable $D$ with every point a limit of a sequence in $D$ & countable set whose closure is the whole space (the same, by Definition~\ref{def:dense}) \\
 \end{longtable}
 }
 
@@ -6264,15 +6350,15 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:separation} Separation & \S3.2, Thm~5 & Strengthenings Cor.~5$'$, Thm~6 not covered. \\
 \ref{sec:hb-complex} Complex Hahn--Banach & \S3.3, Thm~8 & Agnew--Morse (Thm~7) not covered. \\
 \ref{sec:normed} Normed spaces & \S5.1 & Metric notions (convergence, closure, open sets) spelled out in the notes. \\
-\ref{sec:completeness} Completeness & \S5.1, Thm~3; examples (c)--(e) & $C[a,b]$ and the completion proved in full (HW2). \\
+\ref{sec:completeness}--\ref{sec:completion-normed} Completeness & \S5.1, Thm~3; examples (c)--(e) & $C[a,b]$ and the completion proved in full (HW2). \\
 \ref{sec:new-from-old} New spaces from old & \S5.1, (5), Thm~1 & Equivalence of norms in finite dimensions (HW2) is not in Lax. \\
 \ref{sec:young}--\ref{sec:minkowski} Inequalities, $\ell^p$ & \S5.1, examples (a)--(b), Thms~4--5 & See C.2. \\
 \ref{sec:completion-L1-sec} $L^p$ & \S5.1, examples (f)--(g) & See C.2. \\
 \ref{sec:noncompact} Compactness & \S5.2, Thm~6, Lemma~7 & Uniform convexity and Mazur--Ulam (\S5.2 and \S5.3) not covered. \\
-\ref{sec:inner-def}--\ref{sec:cauchy-schwarz} Inner products & \S6.1 & Jordan--von Neumann is Lax's Exercise~1 (HW3). \\
+\ref{sec:inner-def}--\ref{sec:parallelogram-law} Inner products & \S6.1 & Jordan--von Neumann is Lax's Exercise~1 (HW3). \\
 \ref{sec:projection} Projection & \S6.2, Thms~2--3 & \\
 \ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) not covered. \\
-\ref{sec:onb} Orthonormal bases & \S6.4; \S5.1 (separability) & Isometries of $H$ (Thm~10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise~10 (HW5). \\
+\ref{sec:onb}--\ref{sec:onb-existence} Orthonormal bases & \S6.4; \S5.1 (separability) & Isometries of $H$ (Thm~10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise~10 (HW5). \\
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
@@ -6291,7 +6377,8 @@ Ch.~1, sum of subsets & Definition~\ref{def:sum-of-subsets} & Sum of Subsets \\
 Ch.~1, direct sum & Definition~\ref{def:direct-sum} & Direct Sum \\
 Ch.~1, definition of linear span & Definition~\ref{def:linear-span} & Linear Span \\
 Ch.~1, equivalence mod $Y$ & Definition~\ref{def:equivalence-mod} & Equivalence mod $Y$ \\
-Ch.~1, quotient space & Definition~\ref{def:equivalence-class-and-quotient} & Equivalence Class and Quotient Space \\
+Ch.~1, quotient space & Definition~\ref{def:equivalence-class-and-quotient} & Equivalence Class \\
+Ch.~1, quotient space & Definition~\ref{def:quotient-space} & Quotient Space \\
 Ch.~1, quotient space & Proposition~\ref{prop:quotient} & $X/Y$ is a Linear Space \\
 Ch.~1, definition of linear map & Definition~\ref{def:linear-map} & Linear Map \\
 Ch.~1, definition of isomorphism; Remark~2 & Definition~\ref{def:isomorphism} & Isomorphism \\
@@ -6304,7 +6391,8 @@ Ch.~1, Thm~5(vi) and Thm~6(i) & Proposition~\ref{prop:the-smallest-convex-set} &
 \S3.1, definition of linear functional & Definition~\ref{def:linear-functional} & Linear Functional \\
 \S3.1, definition of interior point & Definition~\ref{def:interior} & Interior Point \\
 \S3.1, equation (8) & Definition~\ref{def:gauge} & Gauge \\
-\S3.1, conditions (1)--(2) of Thm~1 & Definition~\ref{def:positive-homogeneous-subadditive} & Positive Homogeneous; Subadditive \\
+\S3.1, conditions (1)--(2) of Thm~1 & Definition~\ref{def:positive-homogeneous-subadditive} & Positive Homogeneous \\
+\S3.1, conditions (1)--(2) of Thm~1 & Definition~\ref{def:subadditive} & Subadditive \\
 \S3.1, Thm~1 & Theorem~\ref{thm:hb} & Hahn--Banach \\
 \S3.1, proof of Thm~1 & Lemma~\ref{lem:one-step} & One-Step Extension \\
 \S3.1, proof of Thm~1 & Theorem~\ref{thm:zorn} & Zorn's Lemma \\
@@ -6314,7 +6402,8 @@ Ch.~1, Thm~5(vi) and Thm~6(i) & Proposition~\ref{prop:the-smallest-convex-set} &
 \S3.1, Thms~3--4 & Corollary~\ref{cor:sublevel} & Convex Sets of Interior Points are Sublevel Sets \\
 \S3.1, Thm~4 & Proposition~\ref{prop:sublevel-convex} & Positive Homogeneous Subadditive $p$ Gives a Convex Set \\
 \S3.1, Thm~4(i) & Proposition~\ref{prop:open-interior} & Every Point of $\{p < 1\}$ is Interior \\
-\S3.2, hyperplanes & Definition~\ref{def:hyperplane} & Hyperplane; Half-Space \\
+\S3.2, hyperplanes & Definition~\ref{def:hyperplane} & Hyperplane \\
+\S3.2, hyperplanes & Definition~\ref{def:half-space} & Half-Space \\
 \S3.2, Thm~5 & Theorem~\ref{thm:separation} & Hyperplane Separation; Geometric Hahn--Banach \\
 \S3.3, Thm~8 & Theorem~\ref{thm:hb-complex} & Complex Hahn--Banach \\
 \S5.1, (1)--(3) & Definition~\ref{def:norm} & Norm; Normed Linear Space \\
@@ -6334,7 +6423,8 @@ Ch.~1, Thm~5(vi) and Thm~6(i) & Proposition~\ref{prop:the-smallest-convex-set} &
 \S5.1, definition of separable space & Definition~\ref{def:separable} & Separable Space \\
 \S5.1, construction (ii) and Exercise~1 & Proposition~\ref{prop:direct-sum-norm} & Norms on a Direct Sum \\
 \S5.1, Thm~1 & Theorem~\ref{thm:quotient-norm} & Quotient Norm \\
-\S5.1, before Thm~2; ``dense'' in the definition of separable space & Definition~\ref{def:closure} & Closure; Dense Subset \\
+\S5.1, before Thm~2; ``dense'' in the definition of separable space & Definition~\ref{def:closure} & Closure \\
+\S5.1, before Thm~2; ``dense'' in the definition of separable space & Definition~\ref{def:dense} & Dense Subset \\
 \S5.1, Thm~2 (part (d)) & Proposition~\ref{prop:closure} & Properties of the Closure \\
 \S5.1, Thm~3 & Theorem~\ref{thm:completion-normed} & The Completion of a Normed Space is a Banach Space \\
 \S5.1, Thms~4--5 & Theorem~\ref{thm:minkowski-seq} & Minkowski's Inequality for Sequences \\
@@ -6347,7 +6437,8 @@ Ch.~1, Thm~5(vi) and Thm~6(i) & Proposition~\ref{prop:the-smallest-convex-set} &
 \S6.1, definition of Hilbert space & Definition~\ref{def:hilbert} & Hilbert Space \\
 \S6.1, Example~1 & Example~\ref{ex:an-inner-product-space} & An Inner Product Space that is Not a Hilbert Space \\
 \S6.1, (6) & Proposition~\ref{prop:parallelogram} & Parallelogram Law and Polarization \\
-\S6.1 and \S6.2, definitions & Definition~\ref{def:orth} & Orthogonality; Orthogonal Complement \\
+\S6.1 and \S6.2, definitions & Definition~\ref{def:orth} & Orthogonality \\
+\S6.1 and \S6.2, definitions & Definition~\ref{def:orth-complement} & Orthogonal Complement \\
 \S6.1, Thm~1 & Theorem~\ref{thm:cauchy-schwarz} & Cauchy--Schwarz \\
 \S6.1, Exercise~1 & Theorem~\ref{thm:jvn} & Jordan--von Neumann \\
 \S6.1, Exercise~2 & Lemma~\ref{lem:ip-continuous} & The Inner Product is Continuous \\
@@ -6368,7 +6459,8 @@ Ch.~1, Thm~5(vi) and Thm~6(i) & Proposition~\ref{prop:the-smallest-convex-set} &
 \S6.4, Thm~9$'$ & Lemma~\ref{lem:gram-schmidt} & Gram--Schmidt \\
 \S6.4, Exercise~10 & Theorem~\ref{thm:sep-classification} & Classification of Separable Hilbert Spaces \\
 \S15.1, definition of continuous map & Definition~\ref{def:cont-map} & Continuous Linear Map \\
-\S15.1, (2) and (2$'$) & Definition~\ref{def:bounded-map} & Bounded Linear Map; Operator Norm \\
+\S15.1, (2) and (2$'$) & Definition~\ref{def:bounded-map} & Bounded Linear Map \\
+\S15.1, (2) and (2$'$) & Definition~\ref{def:operator-norm} & Operator Norm \\
 \S15.1, (3) and (3$'$) & Proposition~\ref{prop:op-norm} & The Operator Norm \\
 \S15.1, definition of $\mathcal{L}(X, U)$ & Definition~\ref{def:LXY} & The Space $\mathcal{L}(X, Y)$ \\
 \S15.1, Thm~1 & Proposition~\ref{prop:cont-bounded} & Continuous if and only if Bounded \\

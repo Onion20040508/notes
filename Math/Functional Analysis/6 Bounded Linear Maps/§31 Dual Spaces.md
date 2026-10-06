@@ -23,7 +23,7 @@ tags: [functional-analysis, math556]
 ^def-31-1
 
 > [!remark]- Connections
-> - The same space in the companion chapter, with the norm as an infimum: [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]], [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§35 The Completeness Relation#^def-35-1|Def. §35.1]].
+> - The same space in the companion chapter, with the norm as an infimum: [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]], [[§34 Bras, Kets, and the Riesz Map#^def-34-2|Def. §34.2]], [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§35 The Completeness Relation#^def-35-1|Def. §35.1]].
 > - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
 
 > [!theorem] Corollary §31.1: The Dual is Always a Banach Space

@@ -86,7 +86,7 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 
 ^pf-32-1
 
-*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§31 Dual Spaces#^thm-31-2|§31.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
+*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§31 Dual Spaces#^thm-31-2|§31.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!theorem] Theorem §32.2: Lax–Milgram
 > Let $H$ be a Hilbert space over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, and let $B : H \times H \to \mathbb{F}$ satisfy

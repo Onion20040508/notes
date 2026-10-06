@@ -75,7 +75,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 
 ^pf-18-1
 
-*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]]
+*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§17 Hölder's Inequality for Sequences#^def-17-3|Def. §17.3]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]]
 
 > [!remark]- Connections
 > - The integral version, home in the vault: [[Minkowski's Inequality|551 §35.2]] (same split-and-Hölder computation; its series corollaries [[§35 Lᵖ as a Banach Space#^cor-35-5|551 §35.5]]–[[§35 Lᵖ as a Banach Space#^cor-35-6|§35.6]]); in this course [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-2|§19.2]] (cited) and Part 1 of the proof of [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] (continuous functions, HW3).
@@ -161,7 +161,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 
 ^pf-18-4
 
-*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
+*Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
 
 ![[m556-13-1.svg]]
 *The unit balls $\{\|x\|_p \le 1\}$ in $\mathbb{R}^2$ increase with $p$; this is (a) for vectors with two nonzero entries. All four norms are equivalent on $\mathbb{R}^2$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]), and (c) is the statement that this fails on $\ell^p$.*

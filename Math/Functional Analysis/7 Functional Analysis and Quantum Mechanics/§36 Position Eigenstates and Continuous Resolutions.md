@@ -23,7 +23,7 @@ Physics also writes $\int |x\rangle\langle x|\,dx = \mathbf{1}$, with an uncount
 
 ^pf-36-1
 
-*Uses:* [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§27 Orthonormal Sets and Bases#^def-27-1|Def. §27.1]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|§23.2]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]]
+*Uses:* [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§27 Orthonormal Sets and Bases#^def-27-1|Def. §27.1]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|§23.2]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]]
 
 ![[m556-24-1.svg]]
 *Two orthonormal vectors $e_\alpha$, $e_\beta$ at distance $\sqrt{2}$ (red), the disjoint balls of radius $\sqrt{2}/2$ around them (dashed), and a point $d_\alpha$, $d_\beta$ of the dense set (blue) in each.*
@@ -122,7 +122,7 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 
 ^pf-36-5
 
-*Uses:* [[§35 Lᵖ as a Banach Space#^cor-35-10|551 §35.10]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§35 The Completeness Relation#^def-35-4|Def. §35.4]], [[§35 The Completeness Relation#^def-35-1|Def. §35.1]], [[Dominated Convergence Theorem]]
+*Uses:* [[§35 Lᵖ as a Banach Space#^cor-35-10|551 §35.10]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§35 The Completeness Relation#^def-35-4|Def. §35.4]], [[§35 The Completeness Relation#^def-35-3|Def. §35.3]], [[Dominated Convergence Theorem]]
 
 ![[m556-24-2.svg]]
 *The Born rule, (d): $(E(B)\psi, \psi) = \int_B |\psi(x)|^2\,dx$ is the shaded red area under $|\psi(x)|^2$ over the region $B$ — the probability of finding the particle in $B$.*
