@@ -153,7 +153,7 @@ Starting from the general form of the solution (4), Powers derives a second form
 > J'(y) = -\int_0^\infty \lambda\sin(\lambda y)e^{-\lambda^2kt}\,d\lambda = -\Big[-\frac{\sin(\lambda y)e^{-\lambda^2kt}}{2kt}\Big]_0^\infty - \frac{y}{2kt}\int_0^\infty \cos(\lambda y)e^{-\lambda^2kt}\,d\lambda = -\frac{y}{2kt}J(y) .
 > $$
 >
-> This first-order linear equation with $J(0) = \sqrt{\pi/(4kt)}$ has the unique solution
+> This [[Integrating Factor Solution Formula|first-order linear equation]] with $J(0) = \sqrt{\pi/(4kt)}$ has the unique solution
 >
 > $$
 > \int_0^\infty \cos\big(\lambda(x' - x)\big)\exp(-\lambda^2kt)\,d\lambda = J(x' - x) = \sqrt{\frac{\pi}{4kt}}\exp\Big[\frac{-(x' - x)^2}{4kt}\Big], \qquad t > 0 .
@@ -163,7 +163,7 @@ Starting from the general form of the solution (4), Powers derives a second form
 
 ^pf-27-3
 
-*Uses:* [[§27 Infinite Rod#^thm-27-2|§27.2]], [[§28★ The Error Function#^prop-28-1|§28.1]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
+*Uses:* [[§27 Infinite Rod#^thm-27-2|§27.2]], [[§28★ The Error Function#^prop-28-1|§28.1]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (first-order linear equations)
 
 > [!remark]- Connections
 > - The reversal of the order of integration is Fubini's theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], whose integrability hypothesis is checked with Tonelli's theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]].

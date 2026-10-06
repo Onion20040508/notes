@@ -169,6 +169,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]].
+> - The inverse by cofactors, $g^{-1} = \operatorname{adj}(g)/\det(g)$, used for continuity of inversion: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|235 Thm. §22.2]], with the adjugate of [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-2|235 Def. §22.2]].
 
 The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 The Classical Groups|§15]].
 

@@ -116,7 +116,7 @@ Expression (1) therefore solves the Dirichlet problem for the half plane $y > 0$
 
 > [!remark] Remark: Method — Dirichlet Problem for a Half Plane or Quadrant
 > 1. **Half plane $y > 0$.** For bounded data $F$ with finitely many jumps, $U$ is the integral (1). For piecewise constant $F$ integrate with $\int\frac{y\,dt}{(t - x)^2 + y^2} = \arctan\frac{t - x}{y}$; each jump of $F$ contributes an angle subtended at $z$.
-> 2. **Quadrant $x > 0$, $y > 0$.** Extend $F$ from $x > 0$ to the whole line, oddly if $U$ must vanish on $x = 0$, evenly if $U_x$ must vanish there, and fold (1) back to an integral over $t > 0$ ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-2|Example §139.2]], [[§139★ Dirichlet Problem for a Half Plane#^ex-139-3|Example §139.3]]).
+> 2. **Quadrant $x > 0$, $y > 0$.** Extend $F$ from $x > 0$ to the whole line, oddly if $U$ must vanish on $x = 0$, evenly if $U_x$ must vanish there (the odd and even extensions of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|341 Def. §7.3]], here on a half line), and fold (1) back to an integral over $t > 0$ ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-2|Example §139.2]], [[§139★ Dirichlet Problem for a Half Plane#^ex-139-3|Example §139.3]]).
 > 3. **Data on both edges.** Superpose a solution with data on one edge and zero on the other, and one with the roles exchanged.
 > 4. **Other half planes.** Interchange or rotate the axes ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-4|Example §139.4]]); for other regions, map conformally onto the half plane.
 > 5. **Checks.** $U$ is bounded by $\sup|F|$, and $U \to F$ at points of continuity of $F$.

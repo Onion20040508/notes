@@ -260,7 +260,7 @@ The kernel and the solution can be expanded in the elementary harmonic functions
 > \lim_{h\to0^+}\int_0^{2\pi}P(r_0, r, \phi - \theta)\,I(h, \phi - \theta_0)\,d\phi = P(r_0, r, \theta - \theta_0) \qquad (r < r_0) .
 > $$
 >
-> For fixed $r < r_0$ and $\theta$, $P(r_0, r, \phi - \theta)$ is continuous in $\phi$ and $I \ge 0$, so by the mean value theorem for definite integrals there is $c$ with $\theta_0 \le c \le \theta_0 + h$ and
+> For fixed $r < r_0$ and $\theta$, $P(r_0, r, \phi - \theta)$ is continuous in $\phi$ and $I \ge 0$, so by the mean value theorem for definite integrals ([[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]], applied on $[\theta_0, \theta_0 + h]$, where $I = 1/h$) there is $c$ with $\theta_0 \le c \le \theta_0 + h$ and
 >
 > $$
 > \int_0^{2\pi}P(r_0, r, \phi - \theta)\,I(h, \phi - \theta_0)\,d\phi = P(r_0, r, c - \theta)\int_{\theta_0}^{\theta_0+h}I(h, \phi - \theta_0)\,d\phi = P(r_0, r, c - \theta) .

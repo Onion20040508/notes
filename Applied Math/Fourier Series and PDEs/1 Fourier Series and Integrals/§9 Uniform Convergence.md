@@ -145,7 +145,7 @@ Another way of proving uniform convergence of a Fourier series is by examining t
 *Powers omits the proof; no other subject in the vault proves it. The remark below, which is not from Powers, shows how it follows from Theorem §9.2 and two later results of this chapter.*
 
 > [!remark]- Remark: Where Theorem §9.3 Comes From
-> Take period $2\pi$. Since $f$ is continuous and $f'$ is sectionally continuous, the Fourier coefficients of $f'$ are $nb_n$ and $-na_n$ ([[§10 Operations on Fourier Series#^thm-10-6|Theorem §10.6]], proof of (8)). Bessel's inequality for $f'$ ([[§11★ Mean Error and Convergence in Mean#^thm-11-3|Theorem §11.3]]) gives $\sum n^2(a_n^2 + b_n^2) \le \frac1\pi\int_{-\pi}^{\pi}(f')^2 < \infty$. By the Cauchy–Schwarz inequality for sums and $(|a_n| + |b_n|)^2 \le 2(a_n^2 + b_n^2)$,
+> Take period $2\pi$. Since $f$ is continuous and $f'$ is sectionally continuous, the Fourier coefficients of $f'$ are $nb_n$ and $-na_n$ ([[§10 Operations on Fourier Series#^thm-10-6|Theorem §10.6]], proof of (8)). Bessel's inequality for $f'$ ([[§11★ Mean Error and Convergence in Mean#^thm-11-3|Theorem §11.3]]) gives $\sum n^2(a_n^2 + b_n^2) \le \frac1\pi\int_{-\pi}^{\pi}(f')^2 < \infty$. By the [[Cauchy–Schwarz inequality]] for sums and $(|a_n| + |b_n|)^2 \le 2(a_n^2 + b_n^2)$,
 >
 > $$
 > \sum_{n=1}^{\infty}\big(|a_n| + |b_n|\big) = \sum_{n=1}^{\infty}\frac1n\cdot n\big(|a_n| + |b_n|\big) \le \Big(\sum_{n=1}^{\infty}\frac{1}{n^2}\Big)^{1/2}\Big(\sum_{n=1}^{\infty} 2n^2\big(a_n^2 + b_n^2\big)\Big)^{1/2} < \infty .

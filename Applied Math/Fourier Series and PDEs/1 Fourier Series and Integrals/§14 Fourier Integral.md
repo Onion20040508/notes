@@ -36,7 +36,7 @@ $$
 where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 > [!remark] Remark: Why It Works
-> Equation (4) is written to look like a Riemann sum for an integral over $0 < \lambda < \infty$, with the frequencies $\lambda_n = n\pi/a$ as sample points spaced $\Delta\lambda = \pi/a$ apart. Imagine $a$ increasing to infinity. Then $\Delta\lambda \to 0$, and
+> Equation (4) is written to look like a Riemann sum ([[§35 The Definite Integral#^def-35-2|Calc Def. §35.2]]) for an integral over $0 < \lambda < \infty$, with the frequencies $\lambda_n = n\pi/a$ as sample points spaced $\Delta\lambda = \pi/a$ apart. Imagine $a$ increasing to infinity. Then $\Delta\lambda \to 0$, and
 >
 > $$
 > A_a(\lambda) \to A(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\cos(\lambda x)\,dx, \qquad B_a(\lambda) \to B(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\sin(\lambda x)\,dx . \qquad (5)\text{–}(6)
@@ -91,7 +91,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 > [!remark]- Connections
 > - The coefficient integrals (9) converge absolutely, since $|f(x)\cos\lambda x| \le |f(x)|$ ([[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]]), and $|A(\lambda)|, |B(\lambda)| \le \frac1\pi\int|f|$. In complex form this is the boundedness of the Fourier transform from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]], where dominated convergence ([[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]) also shows that $A$ and $B$ are continuous.
 > - The two analytic facts a proof needs: $A(\lambda), B(\lambda) \to 0$ as $\lambda \to \infty$ (the Riemann–Lebesgue lemma for absolutely integrable $f$, via the density of step functions, [[§16 The L¹ Space and Density Theorems#^thm-16-6|551 Thm. §16.6]]; the series version is [[§12★ Proof of Convergence#^lem-12-3|Lemma §12.3]]), and the exchange of the $x$- and $\lambda$-integrations in Exercise 1.9.8, which is Fubini's theorem on $\mathbb{R} \times [0, L]$, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]].
-> - Used in Complex Variables: inverting the Laplace transform by the Bromwich integral is this theorem in disguise, [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]], whose proof is complete relative to it.
+> - Used in Complex Variables: inverting the Laplace transform by the Bromwich integral is this theorem in disguise (its complex form, [[§15★ Complex Methods#^thm-15-2|Theorem §15.2]], applied to $e^{-\gamma t}f(t)$ extended by zero to $t < 0$), [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]], whose proof is complete relative to it.
 
 > [!remark] Remark: Reading the Theorem
 > - The right side of (8) is the same as in the Fourier series convergence theorem. Since $f$ is sectionally smooth, it equals $f(x)$ except at the jumps, finitely many in each finite interval; so one often writes (7) instead of (8).

@@ -74,7 +74,7 @@ The two operations of [[§1 Sums and Products|§1]] obey the same basic laws as 
 *Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]]
 
 > [!remark]- Connections
-> - These, with the identities and inverses below, are the field axioms. Linear Algebra proves the same list the same way, by reduction to $\mathbb{R}$: [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]].
+> - These, with the identities and inverses below, are the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]). Linear Algebra proves the same list the same way, by reduction to $\mathbb{R}$: [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]].
 > - The earlier computational treatment states the laws without proof: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]].
 
 By the commutative law for multiplication, $iy = yi$, so one may write $z = x + yi$ instead of $z = x + iy$. By the associative laws, a sum $z_1 + z_2 + z_3$ or a product $z_1z_2z_3$ is well defined without parentheses, as with real numbers.
@@ -151,7 +151,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 > xu - yv = 1, \qquad yu + xv = 0 .
 > $$
 >
-> Its determinant is $x^2 + y^2$, which is positive because $z \ne 0$ means $(x, y) \ne (0, 0)$. So the system has exactly one solution, and by Cramer's rule
+> Its determinant is $x^2 + y^2$, which is positive because $z \ne 0$ means $(x, y) \ne (0, 0)$. So the system has exactly one solution, and by Cramer's rule ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]])
 >
 > $$
 > u = \frac{1 \cdot x - (-y) \cdot 0}{x^2 + y^2} = \frac{x}{x^2 + y^2}, \qquad v = \frac{x \cdot 0 - y \cdot 1}{x^2 + y^2} = \frac{-y}{x^2 + y^2} .
@@ -161,7 +161,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 
 ^pf-2-4
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]], [[§1 Sums and Products#^rem-1-1|§1 Remark]] ($z \cdot 0 = 0$)
+*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]], [[§1 Sums and Products#^rem-1-1|§1 Remark]] ($z \cdot 0 = 0$), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]] (Cramer's rule)
 
 In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]); compare [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
 

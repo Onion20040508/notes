@@ -219,8 +219,8 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 *Uses:* [[§11★ Mean Error and Convergence in Mean#^thm-11-2|§11.2]], [[§11★ Mean Error and Convergence in Mean#^thm-11-4|§11.4]], [[§11★ Mean Error and Convergence in Mean#^def-11-2|Def. §11.2]]
 
 > [!remark]- Connections
-> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]], with the Fourier basis as [[§31 The Completeness Relation#^ex-31-2|556 Ex. §31.2]].
-> - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral ([[Riesz–Fischer Theorem]], 551) but not for the Riemann integral.
+> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§31 The Completeness Relation#^ex-31-2|556 Ex. §31.2]].
+> - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral, where $L^2$ is complete (Riesz–Fischer, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-18|551 Thm. §19.18]]), but not for the Riemann integral.
 
 > [!remark] Remark: Summary
 > If $f$ is defined on $-a < x < a$ and $\int_{-a}^{a}f^2\,dx$ is finite, then:

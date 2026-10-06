@@ -105,7 +105,7 @@ Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in pl
 
 *Uses:* [[§17 Continuous Functions#^thm-17-3|§17.3]]
 
-So a set on which the boundedness conclusion of the EVT holds for *all* continuous functions must contain all its sequential limits: it must be *closed* in the sense of §13. Closedness alone is not enough — $f(x) = x$ is continuous and unbounded on the closed set $\mathbb{R}$ — and the sets that work are exactly the closed *bounded* ones: for these, Step 1 of the proof above goes through verbatim, the limit $x_0$ landing in the set by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|Proposition §13.5]].
+So a set on which the boundedness conclusion of the EVT holds for *all* continuous functions must contain all its sequential limits: it must be *closed* in the sense of §13. Closedness alone is not enough — $f(x) = x$ is continuous and unbounded on every unbounded set, such as the closed set $\mathbb{R}$ — and the sets that work are exactly the closed *bounded* ones: for these, Step 1 of the proof above goes through verbatim, the limit $x_0$ landing in the set by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|Proposition §13.5]].
 
 ## The Intermediate Value Theorem
 

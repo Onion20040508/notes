@@ -198,7 +198,7 @@ This is another important property of continuous functions on closed bounded int
 ^thm-19-5
 
 > [!proof]+ Proof
-> We need the **[[Mean Value Theorem|Mean Value Theorem]]**, which we accept now and prove later ([[· 5 Differentiation|Chapter 5]], §29). For any pair $x, y$ in the interval, the MVT gives a point $c$ between them with
+> We need the **[[Mean Value Theorem|Mean Value Theorem]]**, which we accept now and prove later ([[· 5 Differentiation|Chapter 5]], §29). For any pair $x < y$ in the interval, $f$ is continuous on $[x,y]$ and differentiable on $(x,y)$, so the MVT gives a point $c$ strictly between them — hence in the interior, where $|f'(c)| \leq M$ — with
 >
 > $$
 > f(x) - f(y) = f'(c)(x - y), \qquad \text{hence} \qquad |f(x) - f(y)| = |f'(c)|\,|x-y| \leq M |x - y|

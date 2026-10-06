@@ -102,7 +102,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 > |B\sin(\lambda x)e^{-\lambda^2kt}| \le Me^{-\lambda^2kt_1}, \qquad \Big|\frac{\partial}{\partial x}(\cdots)\Big| \le M\lambda e^{-\lambda^2kt_1}, \qquad \Big|\frac{\partial^2}{\partial x^2}(\cdots)\Big|,\ \frac1k\Big|\frac{\partial}{\partial t}(\cdots)\Big| \le M\lambda^2e^{-\lambda^2kt_1} ,
 > $$
 >
-> and these bounds are integrable over $0 < \lambda < \infty$, independently of $x$ and $t$. So differentiation under the integral sign is legitimate (by the mean value theorem, the difference quotients are dominated by the same bounds, and dominated convergence applies), and
+> and these bounds are integrable over $0 < \lambda < \infty$, independently of $x$ and $t$. So differentiation under the integral sign is legitimate (by the [[Mean Value Theorem|mean value theorem]], the difference quotients are dominated by the same bounds, and dominated convergence applies), and
 >
 > $$
 > \frac{\partial^2u}{\partial x^2} - \frac1k\frac{\partial u}{\partial t} = \int_0^\infty B(\lambda)\big(-\lambda^2 + \lambda^2\big)\sin(\lambda x)e^{-\lambda^2kt}\,d\lambda = 0 .
@@ -118,7 +118,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ^pf-26-2
 
-*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]], [[§14 Fourier Integral#^cor-14-2|§14.2]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]
+*Uses:* [[§26 Semi-Infinite Rod#^prop-26-1|§26.1]], [[§14 Fourier Integral#^def-14-2|Def. §14.2]], [[§14 Fourier Integral#^cor-14-2|§14.2]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]], [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
 > [!remark]- Connections
 > - Differentiation under the integral sign by dominated convergence: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]. The integrals (9) and (10) are improper Riemann integrals in the sense of [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]]; for $t > 0$ the exponential factor makes (9) converge absolutely and very rapidly.

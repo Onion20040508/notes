@@ -342,7 +342,7 @@ All three results—the [[§24 Covering Spaces#^lem-24-12|nullhomotopy extension
 
 ^thm-26-9
 
-*The course proves only the case $n = 1$ ([[No-Retraction Theorem|Theorem §26.6]]). The case $n = 0$ is connectedness: a retraction $B^1 = [-1, 1] \to S^0 = \{-1, 1\}$ would be a continuous surjection from a [[§14 Connected Subspaces of ℝ#^cor-14-2|connected]] space onto a disconnected one, contradicting [[Continuous Image of a Connected Space is Connected|Theorem §13.3]]. For $n \geq 2$ the proof needs homology, and the theorem is taken as given (remark below).*
+*The course proves only the case $n = 1$ ([[No-Retraction Theorem|Theorem §26.6]]). The case $n = 0$ is connectedness: a retraction $B^1 = [-1, 1] \to S^0 = \{-1, 1\}$ would be a continuous surjection (it fixes both points) from a [[§14 Connected Subspaces of ℝ#^cor-14-2|connected]] space onto a disconnected one, contradicting [[Continuous Image of a Connected Space is Connected|Theorem §13.3]]. For $n \geq 2$ the proof needs homology, and the theorem is taken as given (remark below).*
 
 > [!remark] Remark: Why Our Proof Does Not Generalize
 > For $n = 1$, we proved this using $\pi_1$ ([[No-Retraction Theorem|§26.6]]): a retraction $r: B^2 \to S^1$ would force an injection $j_*: \pi_1(S^1) \hookrightarrow \pi_1(B^2)$, i.e., $\mathbb{Z} \hookrightarrow 0$, which is impossible.

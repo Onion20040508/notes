@@ -104,7 +104,7 @@ The closed contour in the Cauchy–Goursat theorem need not be simple when the t
 *Uses:* [[§52 Simply Connected Domains#^cor-52-2|§52.2]]
 
 > [!remark] Remark: Simple Connectivity Is Needed
-> In the punctured plane $0 < |z| < \infty$, which is not simply connected, $f(z) = 1/z$ is analytic but has no antiderivative: the integral around the unit circle is $2\pi i \ne 0$ ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]), while a function with an antiderivative integrates to $0$ around every closed contour ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). On a simply connected domain that excludes $0$, such as the plane cut along a ray from the origin, $1/z$ does have an antiderivative, a branch of $\log z$; [[§52 Simply Connected Domains#^ex-52-3|Example §52.3]] constructs such branches in general.
+> In the punctured plane $0 < |z| < \infty$, which is not simply connected (in Topology its fundamental group is $\mathbb{Z}$: [[Punctured plane|590 Punctured plane]]), $f(z) = 1/z$ is analytic but has no antiderivative: the integral around the unit circle is $2\pi i \ne 0$ ([[§45 Some Examples (Contour Integrals)#^ex-45-5|Example §45.5]]), while a function with an antiderivative integrates to $0$ around every closed contour ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]). On a simply connected domain that excludes $0$, such as the plane cut along a ray from the origin, $1/z$ does have an antiderivative, a branch of $\log z$; [[§52 Simply Connected Domains#^ex-52-3|Example §52.3]] constructs such branches in general.
 
 ^rem-52-1
 

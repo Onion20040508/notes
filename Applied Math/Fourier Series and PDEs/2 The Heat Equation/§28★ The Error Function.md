@@ -64,7 +64,7 @@ $$
 > [!proof]+ Proof
 > **(a)** $\operatorname{erf}(0)$ is an integral over an interval of length zero. Substituting $y = -\eta$ in $\operatorname{erf}(-z) = \frac{2}{\sqrt\pi}\int_0^{-z}e^{-y^2}dy$ gives $-\frac{2}{\sqrt\pi}\int_0^z e^{-\eta^2}d\eta = -\operatorname{erf}(z)$ (Powers' Exercise 2.12.1).
 >
-> **(b)** By the fundamental theorem of calculus, since $e^{-y^2}$ is continuous.
+> **(b)** By the [[Fundamental Theorem of Calculus|fundamental theorem of calculus]], since $e^{-y^2}$ is continuous.
 >
 > **(c)** $\int_a^b = \int_0^b - \int_0^a$, and each is $\frac{\sqrt\pi}2\operatorname{erf}$ of its upper limit.
 >
@@ -98,7 +98,7 @@ $$
 
 ^pf-28-1
 
-*Uses:* [[§28★ The Error Function#^def-28-1|Def. §28.1]], [[§28★ The Error Function#^def-28-2|Def. §28.2]], [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]]
+*Uses:* [[§28★ The Error Function#^def-28-1|Def. §28.1]], [[§28★ The Error Function#^def-28-2|Def. §28.2]], [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC)
 
 > [!remark]- Connections
 > - The Gaussian integral via polar coordinates, with the improper double integral handled rigorously: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]], using the change of variables [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]]; the computational version of the polar change: [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Calc Thm. §100.1]].
@@ -107,7 +107,7 @@ $$
 > [!remark] Remark: More Properties
 > From Proposition §28.1 (Powers' Exercises 2.12.3 and 2.12.6):
 > - $\frac{d}{dz}\operatorname{erfc}(z) = -\frac{2}{\sqrt\pi}e^{-z^2}$, $\operatorname{erfc}(0) = 1$, $\lim_{z \to \infty}\operatorname{erfc}(z) = 0$, $\lim_{z \to -\infty}\operatorname{erfc}(z) = 2$, and $\operatorname{erfc}$ is neither even nor odd.
-> - The standard normal distribution function of probability, $\Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}}e^{-z^2/2}dz$, is $\Phi(x) = \frac12\big[1 + \operatorname{erf}(x/\sqrt2)\big]$.
+> - The distribution function of the standard normal distribution of probability ([[§56 Probability#^def-56-6|Calc Def. §56.6]]), $\Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}}e^{-z^2/2}dz$, is $\Phi(x) = \frac12\big[1 + \operatorname{erf}(x/\sqrt2)\big]$.
 > - Some values: $\operatorname{erf}(0.5) \approx 0.5205$, $\operatorname{erf}(1) \approx 0.8427$, $\operatorname{erf}(2) \approx 0.9953$; so $\operatorname{erf}(z)$ is within $0.5\%$ of $1$ once $z \ge 2$. Tables and approximations are in Abramowitz and Stegun, *Handbook of Mathematical Functions*.
 
 ^rem-28-1

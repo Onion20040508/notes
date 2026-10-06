@@ -101,7 +101,7 @@ $$
 > a_n\cosh(\lambda_ny) + b_n\sinh(\lambda_ny) = c_n\frac{\sinh(\lambda_ny)}{\sinh(\lambda_nb)} + a_n\Big(\cosh(\lambda_ny) - \frac{\cosh(\lambda_nb)}{\sinh(\lambda_nb)}\sinh(\lambda_ny)\Big) .
 > $$
 >
-> (Powers says the last bracket simplifies "from hyperbolic identities"; here is how.) By the subtraction formula $\sinh(A - B) = \sinh A\cosh B - \cosh A\sinh B$,
+> (Powers says the last bracket simplifies "from hyperbolic identities"; here is how.) By the subtraction formula $\sinh(A - B) = \sinh A\cosh B - \cosh A\sinh B$ (the addition formula of [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] with $-B$ in place of $B$),
 >
 > $$
 > \cosh(\lambda_ny) - \frac{\cosh(\lambda_nb)}{\sinh(\lambda_nb)}\sinh(\lambda_ny) = \frac{\sinh(\lambda_nb)\cosh(\lambda_ny) - \cosh(\lambda_nb)\sinh(\lambda_ny)}{\sinh(\lambda_nb)} = \frac{\sinh\big(\lambda_n(b - y)\big)}{\sinh(\lambda_nb)} ,
@@ -111,7 +111,7 @@ $$
 
 ^pf-36-1
 
-*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series)
+*Uses:* [[§35 Potential Equation#^def-35-1|Def. §35.1]], [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]], [[§19 Example꞉ Fixed End Temperatures#^thm-19-2|§19.2]] (the eigenvalue problem), [[§7 Arbitrary Period and Half-Range Expansions#^def-7-4|Def. §7.4]] (sine series), [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] (hyperbolic identities)
 
 > [!remark]- Connections
 > - Why the series really is harmonic inside: for $\delta \le y \le b - \delta$, $\big|\sinh(\lambda_ny)/\sinh(\lambda_nb)\big| \le 2e^{-\lambda_n(b - y)} \le 2e^{-n\pi\delta/a}$ (for $\lambda_n b \ge 1$, say), and the same for the other factor, while $|a_n|, |c_n| \le 2\max|f_i|$. Differentiating term by term only brings in powers of $\lambda_n$, so the series and its differentiated series are dominated by $\sum n^2e^{-n\pi\delta/a} < \infty$; by the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], they converge uniformly and (with [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]]) define a continuous function that may be differentiated term by term. At $y = 0$ and $y = b$ the series reduce to the Fourier sine series of $f_1$, $f_2$, whose convergence is the subject of [[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]].

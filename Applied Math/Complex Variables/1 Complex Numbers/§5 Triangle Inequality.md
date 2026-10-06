@@ -54,7 +54,7 @@ The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for es
 *Uses:* [[§4 Vectors and Moduli#^def-4-1|Def. §4.1]], [[§1 Sums and Products#^def-1-3|Def. §1.3]]
 
 > [!remark]- Connections
-> - The same inequality, proved with conjugates: [[§13 Polynomials#^ladr-4-4|LADR 4.4]]; for norms in any inner product space it follows from Cauchy–Schwarz, [[Triangle inequality]]. The inequality $x_1x_2 + y_1y_2 \le |z_1||z_2|$ in the proof is Cauchy–Schwarz for the dot product in $\mathbb{R}^2$.
+> - The same inequality, proved with conjugates: [[§13 Polynomials#^ladr-4-4|LADR 4.4]]; for norms in any inner product space it follows from Cauchy–Schwarz, [[Triangle inequality]]. The inequality $x_1x_2 + y_1y_2 \le |z_1||z_2|$ in the proof is Cauchy–Schwarz for the dot product in $\mathbb{R}^2$, [[Cauchy–Schwarz inequality]]. The real case $|a + b| \le |a| + |b|$: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]].
 > - Stated without proof in [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (property 6).
 
 > [!remark] Remark: When Equality Holds
@@ -99,6 +99,9 @@ The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for es
 ^pf-5-2
 
 *Uses:* [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§4 Vectors and Moduli#^def-4-1|Def. §4.1]]
+
+> [!remark]- Connections
+> - The same inequality for the norm of any normed linear space: [[§10 Normed Linear Spaces#^lem-10-3|556 Lem. §10.3]].
 
 Geometrically, (2) says that the length of one side of a triangle is at least the difference of the lengths of the other two sides. In practice one needs only (1) and (2): to bound $|z_1 - z_2|$, write it as $|z_1 + (-z_2)|$.
 

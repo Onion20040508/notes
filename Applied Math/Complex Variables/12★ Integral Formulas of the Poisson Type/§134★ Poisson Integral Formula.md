@@ -44,7 +44,7 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 > f(re^{i\theta}) = \frac{r_0^2 - r^2}{2\pi}\int_0^{2\pi}\frac{f(r_0e^{i\phi})}{|s - z|^2}\,d\phi , \qquad (4)
 > $$
 >
-> where, by the law of cosines,
+> where, by the law of cosines ([[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]]),
 >
 > $$
 > |s - z|^2 = r_0^2 - 2r_0r\cos(\phi - \theta) + r^2 . \qquad (5)

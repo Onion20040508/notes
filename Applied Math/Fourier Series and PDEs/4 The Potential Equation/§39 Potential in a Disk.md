@@ -272,7 +272,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 >
 > and the second integral is the $N$th partial sum of the series in (c). So the series in (c) converges to the integral in (d), for any $f$ with $\int|f| < \infty$ (bounded or not).
 >
-> **(e)** Sum the series ([[§15★ Complex Methods|§15★]], Powers' Exercise 1.10.5a). With $\psi = \theta - \phi$ and $w = \rho e^{i\psi}$, $|w| = \rho < 1$, the geometric series gives
+> **(e)** Sum the series ([[§15★ Complex Methods|§15★]], Powers' Exercise 1.10.5a). With $\psi = \theta - \phi$ and $w = \rho e^{i\psi}$, $|w| = \rho < 1$, the geometric series ([[§61 Convergence of Series#^ex-61-1|342 Ex. §61.1]]) gives
 >
 > $$
 > 1 + \sum_{n=1}^{\infty}\rho^n\cos(n\psi) = \operatorname{Re}\sum_{n=0}^{\infty}w^n = \operatorname{Re}\frac{1}{1 - w} = \operatorname{Re}\frac{1 - \bar w}{|1 - w|^2} = \frac{1 - \rho\cos\psi}{1 - 2\rho\cos\psi + \rho^2} .
@@ -288,7 +288,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 ^pf-39-3
 
-*Uses:* [[§39 Potential in a Disk#^thm-39-2|§39.2]], [[§15★ Complex Methods|§15★]] (Exercise 1.10.5a), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test)
+*Uses:* [[§39 Potential in a Disk#^thm-39-2|§39.2]], [[§15★ Complex Methods|§15★]] (Exercise 1.10.5a), [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test), [[§61 Convergence of Series#^ex-61-1|342 Ex. §61.1]] (geometric series)
 
 > [!remark]- Connections
 > - The kernel $\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos(\theta - \phi)}$ is, up to the factor $\frac{1}{2\pi c}$, the normal derivative on the circle of the Green's function of the disk. The general representation of a harmonic function by its boundary values comes from Green's second identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]], applied with the fundamental solution $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; 452 develops these tools but does not compute the kernel of the disk. The half-plane counterpart is [[§38 Potential in Unbounded Regions#^rem-38-2|Remark: The Half-Plane and Its Poisson Formula]].

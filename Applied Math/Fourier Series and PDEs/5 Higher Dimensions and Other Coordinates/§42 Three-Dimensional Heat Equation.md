@@ -215,7 +215,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 >
 > Show that $v$ satisfies the two-dimensional heat equation, and find its boundary and initial conditions.
 >
-> **The $z$-term drops out.** By the fundamental theorem of calculus and the insulation conditions (12),
+> **The $z$-term drops out.** By the [[Fundamental Theorem of Calculus|fundamental theorem of calculus]] and the insulation conditions (12),
 >
 > $$
 > \int_0^c \frac{\partial^2 u}{\partial z^2}\,dz = \frac{\partial u}{\partial z}(x, y, c, t) - \frac{\partial u}{\partial z}(x, y, 0, t) = 0 .

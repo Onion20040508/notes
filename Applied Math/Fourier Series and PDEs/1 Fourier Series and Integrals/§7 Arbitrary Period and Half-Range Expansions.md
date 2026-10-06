@@ -176,6 +176,9 @@ The cosine is symmetric about the vertical axis and the sine is antisymmetric. T
 
 ^def-7-2
 
+> [!remark]- Connections
+> - See also: [[§1 Four Ways to Represent a Function#^def-1-7|Calc Def. §1.7]] (the same definition) and [[§22 Projection and Orthogonal Decomposition#^prop-22-7|556 Prop. §22.7]] (in $L^2[-1, 1]$ the even and the odd functions are orthogonal complements and every $f$ is uniquely $f_e + f_o$; the cosine and sine parts of a Fourier series are the series of $f_e$ and $f_o$).
+
 > [!theorem] Proposition §7.2: Even and Odd Parts; Products
 > Most functions are neither even nor odd, but any function defined on a symmetric interval is the sum of an even and an odd function:
 >

@@ -84,7 +84,7 @@ These two theorems are so natural that one uses them without thinking about it (
 In Theorems §10.3 and §10.4, $f$ is only required to be sectionally continuous. It is not necessary that the Fourier series of $f$ converge at all. Nevertheless the theorems guarantee that the series on the right converges and equals the integral on the left. One important application of Theorem §10.4 is the derivation of the coefficient formulas in [[§6 Periodic Functions and Fourier Series#^prop-6-4|Proposition §6.4]]: with $g = 1$, $\cos mx$, $\sin mx$ on $[-\pi, \pi]$ it justifies exactly the term-by-term integrations made there.
 
 > [!remark]- Remark: Why Theorems §10.3 and §10.4 Hold
-> Both follow from convergence in the mean, [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]] (which rests on Parseval's equality, quoted from Functional Analysis). Let $S_N$ be the partial sums of (1) and suppose first that $[a, b]$ lies in one period interval $[c, c + 2\pi]$. By the Cauchy–Schwarz inequality for integrals,
+> Both follow from convergence in the mean, [[§11★ Mean Error and Convergence in Mean#^thm-11-6|Theorem §11.6]] (which rests on Parseval's equality, [[§11★ Mean Error and Convergence in Mean#^thm-11-4|Theorem §11.4]], quoted from Functional Analysis). Let $S_N$ be the partial sums of (1) and suppose first that $[a, b]$ lies in one period interval $[c, c + 2\pi]$. By the [[Cauchy–Schwarz inequality]] for integrals,
 >
 > $$
 > \Big|\int_a^b\big(f - S_N\big)g\,dx\Big| \le \Big(\int_a^b(f - S_N)^2\,dx\Big)^{1/2}\Big(\int_a^b g^2\,dx\Big)^{1/2} \le \Big(\int_c^{c + 2\pi}(f - S_N)^2\,dx\Big)^{1/2}\Big(\int_a^b g^2\,dx\Big)^{1/2} \longrightarrow 0 ,
@@ -340,7 +340,7 @@ Later on it will frequently happen that a function is known only through its Fou
 *Powers omits the proof; see Remark: Why Theorem §10.7 Holds, an argument that is not from Powers.*
 
 > [!remark]- Remark: Why Theorem §10.7 Holds
-> For $j \le k$, the $j$-times differentiated series has terms bounded by $n^j(|a_n| + |b_n|) \le n^k(|a_n| + |b_n|)$, so by the M-test ([[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]]) it converges uniformly to a continuous function $g_j$; for $j = 0$ the limit is $f$ (at least after correcting $f$ at finitely many points, by [[§9 Uniform Convergence#^thm-9-1|Theorem §9.1]]). Integrating the uniformly convergent series for $g_1$ term by term from $0$ to $x$ ([[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]]) gives back the series of $f$, minus its value at $0$: $\int_0^x g_1 = f(x) - f(0)$. By the fundamental theorem of calculus $f' = g_1$, continuous. Repeat for $g_2, \ldots, g_k$. Finally, a uniformly convergent trigonometric series is the Fourier series of its sum (multiply by $\cos mx$ or $\sin mx$, integrate term by term and use the orthogonality relations), so the differentiated series are the Fourier series of $f', \ldots, f^{(k)}$. This is the argument of [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]](2) for power series.
+> For $j \le k$, the $j$-times differentiated series has terms bounded by $n^j(|a_n| + |b_n|) \le n^k(|a_n| + |b_n|)$, so by the M-test ([[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]]) it converges uniformly to a continuous function $g_j$; for $j = 0$ the limit is $f$ (at least after correcting $f$ at finitely many points, by [[§9 Uniform Convergence#^thm-9-1|Theorem §9.1]]). Integrating the uniformly convergent series for $g_1$ term by term from $0$ to $x$ ([[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]]) gives back the series of $f$, minus its value at $0$: $\int_0^x g_1 = f(x) - f(0)$. By the [[Fundamental Theorem of Calculus|fundamental theorem of calculus]] $f' = g_1$, continuous. Repeat for $g_2, \ldots, g_k$. Finally, a uniformly convergent trigonometric series is the Fourier series of its sum (multiply by $\cos mx$ or $\sin mx$, integrate term by term and use the orthogonality relations), so the differentiated series are the Fourier series of $f', \ldots, f^{(k)}$. This is the argument of [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]](2) for power series.
 >
 > *Source: an argument added in these notes (the M-test and term-by-term integration of uniformly convergent series); not in Powers.*
 
@@ -375,7 +375,7 @@ The lecture adds a simple bound that makes Theorem §10.7 easy to apply.
 > f(x) = \sum_{n=1}^{\infty}e^{-n\alpha}\cos nx ,
 > $$
 >
-> where $\alpha$ is a positive parameter. Here $a_0 = 0$, $a_n = e^{-n\alpha}$, $b_n = 0$. The series $\sum n^ke^{-n\alpha}$ converges for any $k$ (by the integral test; or by the ratio test, since $\frac{(n + 1)^k}{n^k}e^{-\alpha} \to e^{-\alpha} < 1$). By Theorem §10.7, $f$ has derivatives of all orders, and
+> where $\alpha$ is a positive parameter. Here $a_0 = 0$, $a_n = e^{-n\alpha}$, $b_n = 0$. The series $\sum n^ke^{-n\alpha}$ converges for any $k$ (by the [[Integral Test|integral test]]; or by the [[Ratio Test|ratio test]], since $\frac{(n + 1)^k}{n^k}e^{-\alpha} \to e^{-\alpha} < 1$). By Theorem §10.7, $f$ has derivatives of all orders, and
 >
 > $$
 > f'(x) = \sum_{n=1}^{\infty} -ne^{-n\alpha}\sin nx, \qquad f''(x) = \sum_{n=1}^{\infty} -n^2e^{-n\alpha}\cos nx .

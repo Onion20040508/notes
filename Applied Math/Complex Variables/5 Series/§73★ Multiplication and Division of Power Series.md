@@ -42,7 +42,7 @@ Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_
 > (fg)^{(m+1)} = fg^{(m+1)} + \sum_{k=1}^{m}\Big[\binom mk + \binom{m}{k-1}\Big]f^{(k)}g^{(m+1-k)} + f^{(m+1)}g .
 > $$
 >
-> With the identity $\binom mk + \binom{m}{k-1} = \binom{m+1}{k}$ (Pascal's rule, from the proof of [[§3 Further Algebraic Properties#^thm-3-4|Theorem §3.4]]) and $\binom{m+1}{0} = \binom{m+1}{m+1} = 1$,
+> With the identity $\binom mk + \binom{m}{k-1} = \binom{m+1}{k}$ (Pascal's rule, [[§12★ Counting Functions and Subsets#^prop-12-8|250 Prop. §12.8]], proved again in the proof of [[§3 Further Algebraic Properties#^thm-3-4|Theorem §3.4]]) and $\binom{m+1}{0} = \binom{m+1}{m+1} = 1$,
 >
 > $$
 > (fg)^{(m+1)} = fg^{(m+1)} + \sum_{k=1}^{m}\binom{m+1}{k}f^{(k)}g^{(m+1-k)} + f^{(m+1)}g = \sum_{k=0}^{m+1}\binom{m+1}{k}f^{(k)}g^{(m+1-k)} ,

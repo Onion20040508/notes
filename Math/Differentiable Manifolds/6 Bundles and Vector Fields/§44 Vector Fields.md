@@ -39,6 +39,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 > [!remark]- Connections
 > - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §11]].
+> - Computational version: vector fields on regions of $\mathbb{R}^2$ and $\mathbb{R}^3$ in calculus, [[§107 Vector Fields#^def-107-1|Calc Def. §107.1]] and [[§107 Vector Fields#^def-107-2|Calc Def. §107.2]].
 
 **Transcription note.** Page 36 of the handwritten notes writes “Section of $TM \xrightarrow{F} M$”; the map is the projection $\pi$.
 

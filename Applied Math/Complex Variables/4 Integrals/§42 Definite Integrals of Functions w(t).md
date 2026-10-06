@@ -131,7 +131,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 ^ex-42-1
 
 > [!example] Example §42.2: The Mean Value Theorem for Integrals Fails
-> Let $w(t)$ be continuous on $a \le t \le b$. It is not necessarily true that there is a number $c$ in $a < t < b$ such that
+> Let $w(t)$ be continuous on $a \le t \le b$. Unlike the real case ([[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]]), it is not necessarily true that there is a number $c$ in $a < t < b$ such that
 >
 > $$
 > \int_a^b w(t)\,dt = w(c)(b - a) . \qquad (5)

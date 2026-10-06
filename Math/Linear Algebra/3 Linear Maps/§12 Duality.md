@@ -336,5 +336,5 @@ tags: [linear-algebra]
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]], [[§12 Duality#^ladr-3-130|3.130]], [[§12 Duality#^ladr-3-132|3.132]]
 
 > [!remark]- Connections
-> - First proof by column–row factorization: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. A third proof via adjoints: $\dim\range T=\dim\range T^*$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)) with $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^{\,t}$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]).
+> - First proof by column–row factorization: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. A third proof via adjoints: $\dim\range T=\dim\range T^*$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)) with $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^{\,t}$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]), for $T\in\Lin(\F^n,\F^m)$ with the standard inner products and $A=\mathcal{M}(T)$; by [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]] the two dimensions are the column ranks of $A$ and of $\overline{A}^{\,t}$, and conjugating entries changes no rank.
 > - Computational version: [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (dim Row A = dim Col A).

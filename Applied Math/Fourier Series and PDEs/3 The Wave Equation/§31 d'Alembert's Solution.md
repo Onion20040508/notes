@@ -131,7 +131,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 > G(x) = \frac1c\int_0^x g(y)\,dy . \qquad (8)
 > $$
 >
-> Equivalently, $G$ is the solution of the initial value problem $dG/dx = \frac1cg(x)$, $0 < x$, $G(0) = 0$ (at points where $g$ is continuous, by the fundamental theorem of calculus). $\bar f_o$ denotes the odd periodic extension of $f$ with period $2a$, and $\bar G_e$ the even periodic extension of $G$ with period $2a$.
+> Equivalently, $G$ is the solution of the initial value problem $dG/dx = \frac1cg(x)$, $0 < x$, $G(0) = 0$ (at points where $g$ is continuous, by the [[Fundamental Theorem of Calculus|fundamental theorem of calculus]]). $\bar f_o$ denotes the odd periodic extension of $f$ with period $2a$, and $\bar G_e$ the even periodic extension of $G$ with period $2a$.
 >
 > *Powers: 3.3, Equation (8); Exercise 3.3.6*
 

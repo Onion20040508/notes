@@ -132,7 +132,7 @@ Each of the elementary functions of Chapter 3 defines a transformation that is c
 >
 > **By conformality.** The transformation $w = f(z)$ maps the first arc into the vertical line $u = c_1$ and the second into the horizontal line $v = c_2$, which are orthogonal at $w_0 = f(z_0)$. By Theorem §112.1(b) the angle between the arcs at $z_0$ equals the angle between their images, $\pm\pi/2$.
 >
-> **Directly.** The gradients $\nabla u = (u_x, u_y)$ and $\nabla v = (v_x, v_y)$ are normal to the level curves, and by the Cauchy–Riemann equations $v_x = -u_y$, $v_y = u_x$,
+> **Directly.** The gradients $\nabla u = (u_x, u_y)$ and $\nabla v = (v_x, v_y)$ are normal to the level curves ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]]), and by the Cauchy–Riemann equations $v_x = -u_y$, $v_y = u_x$,
 >
 > $$
 > \nabla u \cdot \nabla v = u_xv_x + u_yv_y = -u_xu_y + u_yu_x = 0 ,

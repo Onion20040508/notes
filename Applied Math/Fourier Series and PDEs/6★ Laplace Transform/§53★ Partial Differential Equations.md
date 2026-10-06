@@ -232,6 +232,9 @@ a function that rarely appears in a table of transforms. Powers inverts it by ex
 
 ^pf-53-2
 
+> [!remark]- Connections
+> - Complex-variables version: [[§39★ Hyperbolic Functions#^thm-39-4|342 Thm. §39.4]] (the zeros of $\sinh z$ and $\cosh z$), with the definitions for complex $z$ in [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]], $\cosh(iz) = \cos z$ and $-i\sinh(iz) = \sin z$ in [[§39★ Hyperbolic Functions#^prop-39-2|342 Prop. §39.2]], the addition formulas in [[§39★ Hyperbolic Functions#^prop-39-3|342 Prop. §39.3]], and Euler's formula in [[§7 Exponential Form#^def-7-2|342 Def. §7.2]].
+
 > [!example] Example §53.3: Heating a Rod from Zero Temperature
 > Solve
 >

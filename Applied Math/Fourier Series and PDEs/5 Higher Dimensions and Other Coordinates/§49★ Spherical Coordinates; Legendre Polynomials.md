@@ -261,7 +261,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 >
 > **A differential equation for $F = (x^2 - 1)^n$** (Exercise 5.9.8). $F' = 2nx(x^2 - 1)^{n-1}$, so $(x^2 - 1)F' = 2nxF$.
 >
-> **Differentiate $n + 1$ times** (Exercise 5.9.9). By Leibniz's rule (only the first two derivatives of $x^2 - 1$ and the first derivative of $x$ are nonzero),
+> **Differentiate $n + 1$ times** (Exercise 5.9.9). By Leibniz's rule ([[§73★ Multiplication and Division of Power Series#^lem-73-1|342 Lem. §73.1]]; only the first two derivatives of $x^2 - 1$ and the first derivative of $x$ are nonzero),
 >
 > $$
 > (x^2 - 1)F^{(n+2)} + (n+1)\,2x\,F^{(n+1)} + \frac{(n+1)n}{2}\,2\,F^{(n)} = 2n\big(xF^{(n+1)} + (n+1)F^{(n)}\big) .
@@ -275,7 +275,7 @@ Solutions are found by the power series method: assume $y(x) = a_0 + a_1x + \cdo
 
 ^pf-49-6
 
-*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]]
+*Uses:* [[§49★ Spherical Coordinates; Legendre Polynomials#^thm-49-4|§49.4]], [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|Def. §49.3]], [[§73★ Multiplication and Division of Power Series#^lem-73-1|342 Lem. §73.1]] (Leibniz's rule)
 
 > [!theorem] Proposition §49.7: Recurrence Relations
 > For $n \ge 1$,

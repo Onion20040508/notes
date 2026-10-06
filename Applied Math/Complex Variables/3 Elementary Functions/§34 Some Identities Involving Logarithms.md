@@ -242,7 +242,7 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 >
 > **The right side.** $\frac1n\log z = \frac1n\ln r + i\frac{\Theta + 2q\pi}{n}$ $(q = 0, \pm1, \pm2, \ldots)$.
 >
-> **Comparison.** Every integer $q$ can be written uniquely as $q = pn + k$ with $p$ an integer and $k \in \{0, 1, \ldots, n - 1\}$ (division with remainder), and every such $pn + k$ is an integer. So the two sets of values coincide:
+> **Comparison.** Every integer $q$ can be written uniquely as $q = pn + k$ with $p$ an integer and $k \in \{0, 1, \ldots, n - 1\}$ (division with remainder, [[Division Algorithm|493 Division Algorithm]]), and every such $pn + k$ is an integer. So the two sets of values coincide:
 >
 > $$
 > \log(z^{1/n}) = \frac1n\log z ,

@@ -13,7 +13,7 @@ tags: [linear-algebra]
 
 ^ladr-9-24
 
-> [!definition] Definition 9.25: m-linear form, V⁽ᵐ⁾
+> [!definition] Definition 9.25: m-linear form, V⁽ᵐ⁾, multilinear form
 > An *$m$-linear form* on $V$ is a function $\beta:V^m\to\F$ that is linear in each slot when the others are fixed. $V^{(m)}$ is the vector space of $m$-linear forms; a *multilinear form* is an $m$-linear form for some $m$.
 
 ^ladr-9-25

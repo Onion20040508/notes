@@ -134,7 +134,7 @@ a **nonlinear** equation, which nevertheless can be solved in closed form.
 >
 > The cable is part of a parabola opening upward.
 >
-> **(b) The cable's own weight.** With $\mu = w/T$, (5) reads $u'' = \mu\sqrt{1 + (u')^2}$. The unknown $u$ does not appear, so put $q = u'$: then $q' = \mu\sqrt{1 + q^2}$ is separable, $\int dq/\sqrt{1 + q^2} = \sinh^{-1}q = \mu x + \mu c$ ([[§24 Hyperbolic Functions#^thm-24-4|Calc Thm. §24.4]]), so $q = \sinh\big(\mu(x + c)\big)$ and
+> **(b) The cable's own weight.** With $\mu = w/T$, (5) reads $u'' = \mu\sqrt{1 + (u')^2}$. The unknown $u$ does not appear, so put $q = u'$: then $q' = \mu\sqrt{1 + q^2}$ is [[Solution of Separable Equations|separable]], $\int dq/\sqrt{1 + q^2} = \sinh^{-1}q = \mu x + \mu c$ ([[§24 Hyperbolic Functions#^thm-24-4|Calc Thm. §24.4]]), so $q = \sinh\big(\mu(x + c)\big)$ and
 >
 > $$
 > u(x) = c' + \frac1\mu\cosh\big(\mu(x + c)\big)

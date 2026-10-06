@@ -23,7 +23,7 @@ Chapter 10 uses conformal mapping to solve physical problems governed by Laplace
 > \Phi = -K\,\frac{dT}{dN} \qquad (K > 0). \qquad (1)
 > $$
 >
-> Relation (1) is **Fourier's law**, and the constant $K$ is the **thermal conductivity** of the material, which is assumed to be homogeneous.
+> Relation (1) is **Fourier's law** (in one dimension, [[§3★ Boundary Value Problems#^def-3-2|341 Def. §3.2]]), and the constant $K$ is the **thermal conductivity** of the material, which is assumed to be homogeneous.
 >
 > *B&C: Sec. 118 (text)*
 
@@ -65,11 +65,11 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 > -K\int_{y_1}^{y_2}\big[T_x(x_2, t) - T_x(x_1, t)\big]\,dt - K\int_{x_1}^{x_2}\big[T_y(s, y_2) - T_y(s, y_1)\big]\,ds = -K\iint_R\big(T_{xx} + T_{yy}\big)\,dA ,
 > $$
 >
-> by the fundamental theorem of calculus in each variable and Fubini's theorem (the second partials are continuous). In the steady state with no sources this loss is $0$ for every such $R$. If $T_{xx} + T_{yy}$ were, say, positive at some interior point, by continuity it would be positive on a small rectangle around it, and the integral over that rectangle would be positive: a contradiction. So $T_{xx} + T_{yy} = 0$ everywhere inside, and with the continuity postulates $T$ is harmonic.
+> by the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]) in each variable and Fubini's theorem (the second partials are continuous). In the steady state with no sources this loss is $0$ for every such $R$. If $T_{xx} + T_{yy}$ were, say, positive at some interior point, by continuity it would be positive on a small rectangle around it, and the integral over that rectangle would be positive: a contradiction. So $T_{xx} + T_{yy} = 0$ everywhere inside, and with the continuity postulates $T$ is harmonic.
 
 ^pf-118-1
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
 > - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
@@ -123,6 +123,9 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 > The function $T$ may also denote the concentration of a substance diffusing through a solid; then $K$ is the diffusion constant, and the derivation of (4) applies as well to steady-state diffusion. The maximum principle has a physical reading here: if $T = \operatorname{Re} f$ for $f$ analytic and not constant in a bounded region, $T$ attains its maximum and minimum only on the boundary ([[§59 Maximum Modulus Principle#^cor-59-5|Corollary §59.5]] and [[§59 Maximum Modulus Principle#^ex-59-3|Example §59.3]]). A steady temperature cannot have a hot spot inside: heat would flow away from it in every direction (Fourier's law), the temperature there would drop, and the state would not be steady (B&C Sec. 121, Exercise 13).
 
 ^rem-118-1
+
+> [!remark]- Connections
+> - See also: the maximum principle for any harmonic function on a bounded connected region, not only the real part of a given analytic $f$, proved from the mean value property: [[Maximum Principle for Laplace's Equation|341 Maximum Principle]] ([[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]]). The diffusion analogue of Fourier's law is Fick's first law, [[§17 Derivation and Boundary Conditions#^def-17-10|341 Def. §17.10]].
 
 ## Examples
 

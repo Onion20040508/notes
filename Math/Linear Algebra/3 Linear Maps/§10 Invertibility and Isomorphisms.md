@@ -290,7 +290,7 @@ tags: [linear-algebra]
 > - The change-of-basis matrix $C$ in [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
 > - Computational version: [[§29 Change of Basis#^thm-29-2|235 Thm. §29.2]] ((P_{C←B})⁻¹ = P_{B←C}); M(I, (u), (v)) is the matrix P_{v←u} of [[§29 Change of Basis#^thm-29-1|235 Thm. §29.1]].
 
-> [!example] Example 3.83: Matrix of identity on F² (p. 92)
+> [!example] Example 3.83: Matrix of identity on F² with respect to two bases (p. 92)
 > Bases $u=((4,2),(5,3))$ and $e=((1,0),(0,1))$ of $\F^2$. Since $(4,2)=4e_1+2e_2$ and $(5,3)=5e_1+3e_2$,
 > $$
 > \mathcal{M}\big(I,(u),(e)\big)=\begin{pmatrix}4&5\\2&3\end{pmatrix},\qquad

@@ -185,7 +185,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 *Uses:* [[§6 Periodic Functions and Fourier Series#^prop-6-3|§6.3]]
 
 > [!remark]- Connections
-> - The formulas are the coordinate formula for an orthogonal basis, $c_j = \langle f, u_j\rangle/\langle u_j, u_j\rangle$: in $\mathbb{R}^n$, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]; in an inner product space, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]], here with $\langle f, g\rangle = \int_{-\pi}^{\pi}fg\,dx$ and $\langle\cos nx, \cos nx\rangle = \pi$, $\langle 1, 1\rangle = 2\pi$.
+> - The formulas are the coordinate formula for an orthogonal basis, $c_j = \langle f, u_j\rangle/\langle u_j, u_j\rangle$: in $\mathbb{R}^n$, [[§41 Orthogonal Sets#^thm-41-2|235 Thm. §41.2]]; in an inner product space, [[§46 Inner Product Spaces#^thm-46-2|235 Thm. §46.2]](2), here with $\langle f, g\rangle = \int_{-\pi}^{\pi}fg\,dx$ and, by Proposition §6.3, $\langle 1, 1\rangle = 2\pi$, $\langle\cos nx, \cos nx\rangle = \langle\sin nx, \sin nx\rangle = \pi$ for $n \ge 1$.
 
 > [!definition] Definition §6.2: Fourier Series; Fourier Coefficients
 > Let $f$ be periodic with period $2\pi$ (and integrable over a period). The numbers $a_0$, $a_n$, $b_n$ given by (3)–(5) are the **Fourier coefficients** of $f$, and the series

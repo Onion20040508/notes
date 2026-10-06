@@ -118,7 +118,7 @@ tags: [linear-algebra]
 
 ^ladr-7-8
 
-> [!theorem] Theorem 7.9: Matrix of T∗
+> [!theorem] Theorem 7.9: Matrix of T∗ equals conjugate transpose of matrix of T
 > If $e_1,\dots,e_n$ and $f_1,\dots,f_m$ are **orthonormal** bases of $V$ and $W$, then
 > $$
 > \mathcal{M}\big(T^*,(f),(e)\big)=\mathcal{M}\big(T,(e),(f)\big)^* .

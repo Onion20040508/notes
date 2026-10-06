@@ -89,11 +89,11 @@ This section derives the equation of motion of a taut string, like a guitar or v
 >
 > The left side is $T$ times a difference quotient of $\partial u/\partial x$; as $\Delta x \to 0$ it tends to $T\,\partial^2 u/\partial x^2(x, t)$, which is (4). Dividing (4) by $T$ and writing $\rho/T = 1/c^2$ gives (5).
 >
-> Two approximations are hidden in the model. The mass $\rho\,\Delta x$ is the mass of a piece whose *length* is about $\Delta x$, which is accurate when the slope $u_x$ is small. And the acceleration $u_{tt}$ varies along the piece; (Powers takes it at the left end; here is why that is harmless:) the correct right side of (2) is $\int_x^{x + \Delta x}\rho\,u_{tt}(s, t)\,ds = \rho\,\Delta x\,u_{tt}(\xi, t)$ for some $\xi$ between $x$ and $x + \Delta x$ by the mean value theorem for integrals, and $u_{tt}(\xi, t) \to u_{tt}(x, t)$ as $\Delta x \to 0$ if $u_{tt}$ is continuous.
+> Two approximations are hidden in the model. The mass $\rho\,\Delta x$ is the mass of a piece whose *length* is about $\Delta x$, which is accurate when the slope $u_x$ is small. And the acceleration $u_{tt}$ varies along the piece; (Powers takes it at the left end; here is why that is harmless:) the correct right side of (2) is $\int_x^{x + \Delta x}\rho\,u_{tt}(s, t)\,ds = \rho\,\Delta x\,u_{tt}(\xi, t)$ for some $\xi$ between $x$ and $x + \Delta x$ by the mean value theorem for integrals ([[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]]), and $u_{tt}(\xi, t) \to u_{tt}(x, t)$ as $\Delta x \to 0$ if $u_{tt}$ is continuous.
 
 ^pf-29-1
 
-*Uses:* [[§29 The Vibrating String#^def-29-1|Def. §29.1]]
+*Uses:* [[§29 The Vibrating String#^def-29-1|Def. §29.1]], [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (mean value theorem for integrals)
 
 If $c^2$ is very large (usually on the order of $10^5\ \mathrm{m^2/s^2}$), the last term $g/c^2$ in (5) is negligible ([[§29 The Vibrating String#^ex-29-2|Example §29.2]] shows how small its effect is), and the equation becomes the wave equation.
 
@@ -219,7 +219,7 @@ The derivation of Theorem §29.1 adapts at once when other vertical forces act o
 ^prop-29-2
 
 > [!proof]+ Proof
-> In the vertical balance (2), the force on the piece between $x$ and $x + \Delta x$ is $\int_x^{x + \Delta x}F(s, t)\,ds = F(\eta, t)\,\Delta x$ for some $\eta$ in the interval (mean value theorem for integrals, $F$ continuous), in place of $-mg$. Following the proof of Theorem §29.1,
+> In the vertical balance (2), the force on the piece between $x$ and $x + \Delta x$ is $\int_x^{x + \Delta x}F(s, t)\,ds = F(\eta, t)\,\Delta x$ for some $\eta$ in the interval (mean value theorem for integrals, [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]], $F$ continuous), in place of $-mg$. Following the proof of Theorem §29.1,
 >
 > $$
 > T\Big(\frac{\partial u}{\partial x}(x + \Delta x, t) - \frac{\partial u}{\partial x}(x, t)\Big) + F(\eta, t)\,\Delta x = \rho\,\Delta x\,\frac{\partial^2 u}{\partial t^2} .
@@ -229,7 +229,7 @@ The derivation of Theorem §29.1 adapts at once when other vertical forces act o
 
 ^pf-29-2
 
-*Uses:* [[§29 The Vibrating String#^thm-29-1|§29.1]]
+*Uses:* [[§29 The Vibrating String#^thm-29-1|§29.1]], [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (mean value theorem for integrals)
 
 > [!theorem] Proposition §29.3: The String in a Resisting Medium
 > If the string moves in a medium (such as air) that resists the motion with a force opposite to the velocity and proportional to it, $-r\,u_t$ per unit length ($r > 0$), and gravity is neglected, the equation of motion is

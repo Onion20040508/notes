@@ -142,7 +142,7 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b)$\Rightarrow$(c) are immediate. (c)$\Rightarrow$(a): expanding $\rho(\sum a_je_j,\sum b_ke_k)=\sum a_jb_k\rho(e_j,e_k)$ and using $\rho(e_j,e_k)=\rho(e_k,e_j)$ gives $\rho(u,w)=\rho(w,u)$. (d)$\Rightarrow$(c): diagonal matrices are symmetric.
 >
-> (a)$\Rightarrow$(d), by induction on $n$; $n=1$ is trivial. If $\rho=0$ any basis works. Otherwise some $v$ has $\rho(v,v)\neq0$: if $\rho(v,v)=0$ for all $v$, then $\rho$ would be alternating as well as symmetric, hence $0$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]). Let $U=\{u:\rho(u,v)=0\}$, the null space of a nonzero functional, so $\dim U=n-1$ and $v\notin U$, giving $V=\Span(v)\oplus U$. By induction $\rho|_{U\times U}$ is diagonal in a basis $e_1,\dots,e_{n-1}$ of $U$; then in $e_1,\dots,e_{n-1},v$ the matrix of $\rho$ is diagonal (each $\rho(e_j,v)=\rho(v,e_j)=0$).
+> (a)$\Rightarrow$(d), by induction on $n$; $n=1$ is trivial. If $\rho=0$ any basis works. Otherwise some $v$ has $\rho(v,v)\neq0$: if $\rho(v,v)=0$ for all $v$, then $\rho$ would be alternating as well as symmetric, hence $0$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]], later in this section; its proof does not use 9.12). Let $U=\{u:\rho(u,v)=0\}$, the null space of a nonzero functional, so $\dim U=n-1$ and $v\notin U$, giving $V=\Span(v)\oplus U$. By induction $\rho|_{U\times U}$ is diagonal in a basis $e_1,\dots,e_{n-1}$ of $U$; then in $e_1,\dots,e_{n-1},v$ the matrix of $\rho$ is diagonal (each $\rho(e_j,v)=\rho(v,e_j)=0$).
 
 *Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]
 

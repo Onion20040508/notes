@@ -71,7 +71,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 > g'(t) = w'(t)e^{-h(t)} - w(t)h'(t)e^{-h(t)} = 0 .
 > $$
 >
-> So the real and imaginary parts of $g$ are constant on each subinterval (mean value theorem), hence, by continuity, constant on $[a, b]$: $g(t) = g(a) = w(a)$. Therefore $w(t) = w(a)e^{h(t)}$. Writing $w(a) = \rho(a)e^{i\phi_0}$ and $h = \operatorname{Re}h + i\operatorname{Im}h$,
+> So the real and imaginary parts of $g$ are constant on each subinterval (mean value theorem: [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]), hence, by continuity, constant on $[a, b]$: $g(t) = g(a) = w(a)$. Therefore $w(t) = w(a)e^{h(t)}$. Writing $w(a) = \rho(a)e^{i\phi_0}$ and $h = \operatorname{Re}h + i\operatorname{Im}h$,
 >
 > $$
 > w(t) = \rho(a)e^{\operatorname{Re}h(t)}\,e^{i(\phi_0 + \operatorname{Im}h(t))} = \rho(a)e^{\operatorname{Re}h(t)}\,e^{i\phi(t)} ,
@@ -79,13 +79,13 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 >
 > and taking moduli, $\rho(t) = \rho(a)e^{\operatorname{Re}h(t)}$; so $w(t) = \rho(t)e^{i\phi(t)}$, and $\phi$ is continuous and piecewise smooth.
 >
-> If also $w(t) = \rho(t)e^{i\psi(t)}$, then $e^{i(\phi(t) - \psi(t))} = 1$, so $\phi(t) - \psi(t)$ is a multiple of $2\pi$ for every $t$. A continuous function on an interval whose values lie in the discrete set $2\pi\mathbb{Z}$ is constant (by the intermediate value theorem it cannot jump between two of these values). So $\phi - \psi$ is constant, and $\phi(b) - \phi(a) = \psi(b) - \psi(a)$: the change of argument does not depend on the continuous choice.
+> If also $w(t) = \rho(t)e^{i\psi(t)}$, then $e^{i(\phi(t) - \psi(t))} = 1$, so $\phi(t) - \psi(t)$ is a multiple of $2\pi$ for every $t$. A continuous function on an interval whose values lie in the discrete set $2\pi\mathbb{Z}$ is constant (by the intermediate value theorem, [[§18 Properties of Continuous Functions#^thm-18-3|451 Thm. §18.3]], it cannot jump between two of these values). So $\phi - \psi$ is constant, and $\phi(b) - \phi(a) = \psi(b) - \psi(a)$: the change of argument does not depend on the continuous choice.
 >
 > For $w(t) = f(z(t))$, the chain rule $\frac{d}{dt}f(z(t)) = f'(z(t))z'(t)$ ([[§43 Contours#^prop-43-5|Proposition §43.5]]) holds on each smooth arc, and $f'(z(t))z'(t)/f(z(t))$ is the integrand of $\int_C f'(z)/f(z)\,dz$ in the parametrization ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]); so $\phi(b) - \phi(a) = \operatorname{Im}h(b) = \operatorname{Im}\int_C f'/f\,dz$. This contour integral does not depend on where the closed contour $C$ is started. Finally $w(b) = w(a)$, so $\phi(b)$ and $\phi(a)$ are two values of $\arg w(a)$, and the change is a multiple of $2\pi$.
 
 ^pf-93-1
 
-*Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours#^prop-43-5|§43.5]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]]
+*Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours#^prop-43-5|§43.5]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative), [[§18 Properties of Continuous Functions#^thm-18-3|451 Thm. §18.3]] (intermediate value theorem)
 
 > [!remark]- Connections
 > - In topology the continuous argument is a **lift** of the loop $w(t)/|w(t)|$ through the covering map $\mathbb{R} \to S^1$, $\phi \mapsto e^{i\phi}$: its existence and uniqueness up to $2\pi\mathbb{Z}$ is the path lifting lemma, [[§24 Covering Spaces#^lem-24-6|590 Lem. §24.6]], and the winding number is the class of the loop in $\pi_1(S^1) \cong \mathbb{Z}$, [[§24 Covering Spaces#^thm-24-10|590 Thm. §24.10]]. The formula of Lemma §93.1 constructs the lift explicitly for piecewise smooth loops.
@@ -126,7 +126,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 > [!proof]+ Proof
 > Let $\overline{D} = D \cup C$, a closed bounded set. Every point of $C$ has a disk around it in which $f$ is analytic and, by continuity, nonzero.
 >
-> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem they have an accumulation point $z^{\ast}$ in $\overline{D}$. It is not on $C$, since near points of $C$ there are no poles. So $z^{\ast} \in D$, where $f$ is either analytic at $z^{\ast}$ (then analytic in a disk around it, which contains no pole) or has a pole at $z^{\ast}$ (an isolated singular point, so a punctured disk around it contains no pole). Either way some neighborhood of $z^{\ast}$ contains at most one pole, a contradiction.
+> **Poles.** Suppose there were infinitely many distinct poles. By the Bolzano–Weierstrass theorem, in the form of [[§82 Zeros of Analytic Functions#^ex-82-3|Example §82.3]], they have an accumulation point $z^{\ast}$ in $\overline{D}$. It is not on $C$, since near points of $C$ there are no poles. So $z^{\ast} \in D$, where $f$ is either analytic at $z^{\ast}$ (then analytic in a disk around it, which contains no pole) or has a pole at $z^{\ast}$ (an isolated singular point, so a punctured disk around it contains no pole). Either way some neighborhood of $z^{\ast}$ contains at most one pole, a contradiction.
 >
 > **$f$ is not identically zero.** Let $D_0$ be $D$ with the finitely many poles removed; it is open and connected (a polygonal path in $D$ can be rerouted around finitely many points). If $f \equiv 0$ in $D_0$, then by continuity $f = 0$ at the points of $C$, which are limits of points of $D_0$; but $f \ne 0$ on $C$.
 >
@@ -136,7 +136,7 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 
 ^pf-93-3
 
-*Uses:* [[§93 Argument Principle#^def-93-1|Def. §93.1]], [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|§84.4]], [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|§28.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]]
+*Uses:* [[§93 Argument Principle#^def-93-1|Def. §93.1]], [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§84 Behavior of Functions Near Isolated Singular Points#^thm-84-4|§84.4]], [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|§28.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]], [[§82 Zeros of Analytic Functions#^ex-82-3|Ex. §82.3]] (Bolzano–Weierstrass)
 
 > [!theorem] Theorem §93.4: Argument Principle
 > Let $C$ denote a positively oriented simple closed contour, and suppose that

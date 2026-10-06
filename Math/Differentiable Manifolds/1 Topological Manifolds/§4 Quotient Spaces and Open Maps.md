@@ -29,6 +29,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - Home in MATH 590: [[§12 Quotient Topology#^def-12-3|590 Def. §12.3 (Quotient Space)]], with the topology of [[§12 Quotient Topology#^prop-12-1|590 §12.1]].
 > - Reused for orbit spaces [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]] and coset spaces [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]].
+> - The quotient set $X/{\sim}$ of equivalence classes in 250: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]; the classes partition $X$: [[Equivalence Relations Are Partitions|250 Cor. §22.4]].
 
 > [!theorem] Proposition §4.1: The Quotient Topology Is the Finest Making $\pi$ Continuous
 > The projection $\pi : X \to X/{\sim}$ is continuous, and the quotient topology is the *finest* topology on $X/{\sim}$ with this property: every topology $\mathcal{T}'$ on $X/{\sim}$ for which $\pi$ is continuous is contained in it.

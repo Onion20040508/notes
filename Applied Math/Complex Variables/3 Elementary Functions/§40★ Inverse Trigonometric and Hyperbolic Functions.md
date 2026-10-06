@@ -29,6 +29,9 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 
 ^def-40-1
 
+> [!remark]- Connections
+> - Calculus defines the real inverse functions as single-valued, by restricting $\sin$, $\cos$ and $\tan$ to an interval on which each is one-to-one: [[§5 Inverse Functions and Logarithms#^def-5-5|Calc Def. §5.5]], [[§5 Inverse Functions and Logarithms#^def-5-6|Calc Def. §5.6]], [[§5 Inverse Functions and Logarithms#^def-5-7|Calc Def. §5.7]]. Here $\sin^{-1}z$ is multiple-valued, and single-valued branches come from branches of the square root and the logarithm.
+
 > [!theorem] Proposition §40.1: The Inverse Sine as a Logarithm
 > For every complex $z$,
 >

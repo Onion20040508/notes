@@ -54,7 +54,7 @@ and if $f(z) = u(x, y) + iv(x, y)$ and $z(t) = x(t) + iy(t)$, the integrand $f[z
 > \int_C f(z)\,dz = \int_C \mathbf{V}\cdot d\mathbf{r} + i\int_C \mathbf{V}\cdot\mathbf{n}\,ds = \text{circulation} + i\,\text{flux}
 > $$
 >
-> of $\mathbf{V}$ around $C$. In fluid flow, $f$ is the derivative of the complex potential and $\mathbf{V}$ the velocity; the Cauchy–Riemann equations for $f$ say that $\mathbf{V}$ is irrotational and divergence-free.
+> of $\mathbf{V}$ around $C$. In fluid flow, $f$ is the derivative of the complex potential and $\mathbf{V}$ the velocity; the Cauchy–Riemann equations for $f$ say that $\mathbf{V}$ is irrotational ([[§111 Curl and Divergence#^def-111-2|Calc Def. §111.2]]) and divergence-free ([[§111 Curl and Divergence#^def-111-3|Calc Def. §111.3]]).
 
 ^rem-50-1
 

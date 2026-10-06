@@ -66,9 +66,9 @@ tags: [linear-algebra]
 ^ladr-8-4
 
 > [!proof]+ Proof
-> If $v\in\nullsp T^n\cap\range T^n$, then $v=T^nu$ and $0=T^nv=T^{2n}u$, so $T^nu=0$ by [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], i.e. $v=0$. So the sum is direct ([[§3 Subspaces#^ladr-1-46|1.46]]), and its dimension is $\dim\nullsp T^n+\dim\range T^n=\dim V$ ([[Fundamental theorem of linear maps|3.21]]), so it is $V$.
+> If $v\in\nullsp T^n\cap\range T^n$, then $v=T^nu$ and $0=T^nv=T^{2n}u$, so $T^nu=0$ by [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], i.e. $v=0$. So the sum is direct ([[§3 Subspaces#^ladr-1-46|1.46]]), and its dimension is $\dim\nullsp T^n+\dim\range T^n$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-94|3.94]]) $=\dim V$ ([[Fundamental theorem of linear maps|3.21]]), so it is $V$ ([[§6 Dimension#^ladr-2-39|2.39]]).
 
-*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], [[§3 Subspaces#^ladr-1-46|1.46]], [[Fundamental theorem of linear maps|3.21]]
+*Uses:* [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3]], [[§3 Subspaces#^ladr-1-46|1.46]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|3.94]], [[Fundamental theorem of linear maps|3.21]], [[§6 Dimension#^ladr-2-39|2.39]]
 
 > [!example] Example 8.6: $\F^3=\nullsp T^3\oplus\range T^3$ (p. 299)
 > $T(z_1,z_2,z_3)=(4z_2,0,5z_3)$ on $\F^3$: $\nullsp T=\{(z_1,0,0)\}$ and $\range T=\{(z_1,0,z_3)\}$ intersect, so $\nullsp T+\range T$ is not direct (and not $\F^3$). But $T^3(z_1,z_2,z_3)=(0,0,125z_3)$, so $\nullsp T^3=\{(z_1,z_2,0)\}$, $\range T^3=\{(0,0,z_3)\}$, and $\F^3=\nullsp T^3\oplus\range T^3$, as [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] promises.
@@ -103,7 +103,7 @@ tags: [linear-algebra]
 > False in general: rotation of $\R^2$ has no eigenvalues, hence no generalized eigenvectors.
 
 > [!proof]+ Proof
-> Induction on $n=\dim V$; $n=1$ uses that $T$ has an eigenvalue ($\F=\C$, [[Existence of eigenvalues|5.19]]). For $n>1$ let $\lambda$ be an eigenvalue. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
+> Induction on $n=\dim V$; for $n=1$ every nonzero vector is an eigenvector. For $n>1$ let $\lambda$ be an eigenvalue of $T$, which exists because $\F=\C$ ([[Existence of eigenvalues|5.19]]); this is where $\F=\C$ is used. By [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-4|8.4]] applied to $T-\lambda I$,
 > $$
 > V=\nullsp(T-\lambda I)^n\oplus\range(T-\lambda I)^n .
 > $$

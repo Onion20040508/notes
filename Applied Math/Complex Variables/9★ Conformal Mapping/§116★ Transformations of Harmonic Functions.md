@@ -157,7 +157,7 @@ The theorem can also be proved directly by the chain rule for partial derivative
 > p_{uu}(u, v) + p_{vv}(u, v) = \Phi(u, v)
 > $$
 >
-> in a domain $D_w$, where $\Phi$ is a prescribed function. If an analytic function $w = f(z) = u(x, y) + iv(x, y)$ maps a domain $D_z$ onto $D_w$, then $P(x, y) = p[u(x, y), v(x, y)]$ satisfies the Poisson equation
+> in a domain $D_w$, where $\Phi$ is a prescribed function (in Fourier Series and PDEs the same equation is written $\nabla^2u = -H$, [[§37 Further Examples for a Rectangle#^def-37-1|341 Def. §37.1]]). If an analytic function $w = f(z) = u(x, y) + iv(x, y)$ maps a domain $D_z$ onto $D_w$, then $P(x, y) = p[u(x, y), v(x, y)]$ satisfies the Poisson equation
 >
 > $$
 > P_{xx}(x, y) + P_{yy}(x, y) = \Phi\big[u(x, y), v(x, y)\big]\,|f'(z)|^2

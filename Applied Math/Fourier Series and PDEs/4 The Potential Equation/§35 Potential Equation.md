@@ -58,7 +58,7 @@ Where the equation comes from:
 >
 > Define a **velocity potential** $\phi$ by $u = -\partial\phi/\partial x$, $v = -\partial\phi/\partial y$. Then (B) holds identically and (A) becomes the potential equation.
 >
-> Indeed, if $\phi$ has continuous second partial derivatives, then $\partial u/\partial y - \partial v/\partial x = -\phi_{xy} + \phi_{yx} = 0$ by the equality of mixed partials, so (B) is automatic. Substituting into (A),
+> Indeed, if $\phi$ has continuous second partial derivatives, then $\partial u/\partial y - \partial v/\partial x = -\phi_{xy} + \phi_{yx} = 0$ by the [[Schwarz–Clairaut Theorem|equality of mixed partials]], so (B) is automatic. Substituting into (A),
 >
 > $$
 > \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = -\phi_{xx} - \phi_{yy} = 0 \qquad\Longleftrightarrow\qquad \nabla^2\phi = 0 .

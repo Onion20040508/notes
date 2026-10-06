@@ -218,7 +218,7 @@ found by matching numerators: $c = A_1 + A_2$, $d = -A_1r_2 - A_2r_1$. Then $\ma
 >
 > The first term is the transform of $u_0e^{-at}$. If $F$ is rational, partial fractions invert the second.
 >
-> **By an integrating factor.** Multiply by $e^{at}$:
+> **By an integrating factor** ([[Integrating Factor Solution Formula|331 Thm. §4.2]]). Multiply by $e^{at}$:
 >
 > $$
 > e^{at}(u' + au) = e^{at}f(t), \qquad \big(ue^{at}\big)' = e^{at}f(t), \qquad ue^{at} = \int_0^t e^{at'}f(t')\,dt' + c ,
