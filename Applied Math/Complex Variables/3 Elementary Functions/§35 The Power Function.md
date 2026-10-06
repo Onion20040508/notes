@@ -31,7 +31,7 @@ A complex power is defined through the logarithm, $z^c = e^{c\log z}$, so it inh
 Definition (1) is consistent with what is already known: it gives the usual $z^n$ when $c = n$ $(n = 0, \pm1, \pm2, \ldots)$, by [[§34 Some Identities Involving Logarithms#^prop-34-3|Proposition §34.3]], and the $n$th roots when $c = 1/n$ $(n = \pm1, \pm2, \ldots)$, by [[§34 Some Identities Involving Logarithms#^prop-34-4|Proposition §34.4]]. Definition (1) is in fact suggested by those particular choices of $c$.
 
 > [!remark]- Connections
-> - For a real base $b > 0$, calculus defines $b^x = e^{x\ln b}$, [[§121 The Logarithm Defined as an Integral#^def-121-5|Calc Def. §121.5]]. Definitions (1) and (4) below are the same formula with $\ln$ replaced by the multiple-valued $\log$, and their principal values restrict to it on the positive real axis, since $\operatorname{Log} x = \ln x$.
+> - For a real base $b > 0$, calculus defines $b^x = e^{x\ln b}$, [[§145 General Exponential and Logarithmic Functions#^def-145-1|Calc Def. §145.1]]. Definitions (1) and (4) below are the same formula with $\ln$ replaced by the multiple-valued $\log$, and their principal values restrict to it on the positive real axis, since $\operatorname{Log} x = \ln x$.
 
 > [!theorem] Proposition §35.1: Reciprocal of a Power
 > For $z \ne 0$,
@@ -106,16 +106,16 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 
 ^def-35-2
 
-> [!definition] Definition §35.3: Principal Branch of z^c
+> [!definition] Definition §35.4: Principal Branch of z^c
 > Equation (3) also defines the **principal branch** of $z^c$ on the domain $|z| > 0$, $-\pi < \operatorname{Arg} z < \pi$.
 >
 > *B&C: Sec. 35, Equation (3)*
 
-^def-35-new1
+^def-35-3
 
 ## Exponentials with Base c
 
-> [!definition] Definition §35.3: Exponential Function with Base c
+> [!definition] Definition §35.4: Exponential Function with Base c
 > According to definition (1), the **exponential function with base $c$**, where $c$ is any nonzero complex constant, is
 >
 > $$
@@ -126,7 +126,7 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 >
 > *B&C: Sec. 35, Equation (4)*
 
-^def-35-3
+^def-35-4
 
 Although $e^z$ is, in general, multiple-valued according to (4), with values $e^{z(1 + 2n\pi i)}$ ([[§31 The Logarithmic Function#^ex-31-2|Example §31.2]]), the usual interpretation of $e^z$ ([[§30 The Exponential Function#^def-30-1|Definition §30.1]]) is the one obtained when the principal value of the logarithm is taken, because $\operatorname{Log} e = 1$.
 
@@ -150,16 +150,16 @@ Although $e^z$ is, in general, multiple-valued according to (4), with values $e^
 
 ^pf-35-3
 
-*Uses:* [[§35 The Power Function#^def-35-3|Def. §35.3]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
+*Uses:* [[§35 The Power Function#^def-35-4|Def. §35.4]], [[§30 The Exponential Function#^thm-30-3|§30.3]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 ## Examples
 
 B&C's examples of Section 35 are in [[§36 Examples (The Power Function)|§36]]. The examples below are its exercises on the definitions themselves.
 
 > [!example] Example §35.1: The Principal nth Root Is the Principal Value of z^1/n
-> Show that the principal $n$th root of a nonzero $z_0$ defined in [[§10 Roots of Complex Numbers#^def-10-new1|Definition §10.2]] is the principal value of $z_0^{1/n}$ defined by (3).
+> Show that the principal $n$th root of a nonzero $z_0$ defined in [[§10 Roots of Complex Numbers#^def-10-2|Definition §10.2]] is the principal value of $z_0^{1/n}$ defined by (3).
 >
-> Write $z_0 = r_0e^{i\Theta_0}$ with $\Theta_0 = \operatorname{Arg} z_0$. The principal root of [[§10 Roots of Complex Numbers#^def-10-new1|Definition §10.2]] is the root $c_0 = \sqrt[n]{r_0}\exp\big(i\frac{\Theta_0}{n}\big)$ (the one with $k = 0$). By (3) with $c = 1/n$ and $\operatorname{Log} z_0 = \ln r_0 + i\Theta_0$,
+> Write $z_0 = r_0e^{i\Theta_0}$ with $\Theta_0 = \operatorname{Arg} z_0$. The principal root of [[§10 Roots of Complex Numbers#^def-10-2|Definition §10.2]] is the root $c_0 = \sqrt[n]{r_0}\exp\big(i\frac{\Theta_0}{n}\big)$ (the one with $k = 0$). By (3) with $c = 1/n$ and $\operatorname{Log} z_0 = \ln r_0 + i\Theta_0$,
 >
 > $$
 > \text{P.V. } z_0^{1/n} = \exp\Big(\frac1n\operatorname{Log} z_0\Big) = \exp\Big(\frac1n\ln r_0\Big)\exp\Big(i\frac{\Theta_0}{n}\Big) = \sqrt[n]{r_0}\exp\Big(i\frac{\Theta_0}{n}\Big) = c_0 .

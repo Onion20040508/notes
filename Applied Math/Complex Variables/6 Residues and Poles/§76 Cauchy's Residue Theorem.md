@@ -18,7 +18,7 @@ If $f$ is analytic inside and on a positively oriented simple closed contour $C$
 If $f$ is analytic inside a simple closed contour $C$ except for a *finite* number of singular points, those points are isolated ([[§74 Isolated Singular Points#^prop-74-1|Proposition §74.1]]), and each has a residue.
 
 > [!theorem] Theorem §76.1: Cauchy's Residue Theorem
-> Let $C$ be a [[§43 Contours#^def-43-new5|simple closed contour]], described in the positive sense. If a function $f$ is analytic inside and on $C$ except for a finite number of singular points $z_k$ ($k = 1, 2, \ldots, n$) inside $C$ (Fig. 93 in B&C), then
+> Let $C$ be a [[§43 Contours#^def-43-10|simple closed contour]], described in the positive sense. If a function $f$ is analytic inside and on $C$ except for a finite number of singular points $z_k$ ($k = 1, 2, \ldots, n$) inside $C$ (Fig. 93 in B&C), then
 >
 > $$
 > \int_C f(z)\,dz = 2\pi i\sum_{k=1}^{n}\operatorname{Res}_{z=z_k} f(z) . \qquad (1)
@@ -53,8 +53,8 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 *The proof of the residue theorem. The singular points $z_1, \ldots, z_n$ inside $C$ are enclosed in small disjoint circles $C_k$ (red). Between $C$ and the circles $f$ is analytic, so the integral over $C$ equals the sum of the integrals over the $C_k$, all taken counterclockwise; each of these is $2\pi i$ times one residue.*
 
 > [!remark]- Connections
-> - The Cauchy–Goursat theorem for multiply connected domains, which carries the proof, is the complex form of Green's theorem for a region with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]] (the rigorous [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] is stated for a region bounded by one simple closed curve and extends to holes by the same cutting into pieces), applied to $u$ and $v$ when their partial derivatives are continuous: the Cauchy–Riemann equations ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) make the double integrals vanish. The residue theorem says that all the circulation of $f$ around $C$ is concentrated at the singular points.
-> - Fourier Series and PDEs inverts Laplace transforms by "closing the Bromwich line to the left" and summing residues of $e^{st}U(s)$ ([[§53★ Partial Differential Equations#^rem-53-2|341 Remark: The Extended Heaviside Formula]]): that step is Theorem §76.1 applied to large closed contours.
+> - The Cauchy–Goursat theorem for multiply connected domains, which carries the proof, is the complex form of Green's theorem for a region with holes, [[§131 Extended Versions of Green's Theorem#^thm-131-2|Calc Thm. §131.2]] (the rigorous [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]] is stated for a region bounded by one simple closed curve and extends to holes by the same cutting into pieces), applied to $u$ and $v$ when their partial derivatives are continuous: the Cauchy–Riemann equations ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) make the double integrals vanish. The residue theorem says that all the circulation of $f$ around $C$ is concentrated at the singular points.
+> - Fourier Series and PDEs inverts Laplace transforms by "closing the Bromwich line to the left" and summing residues of $e^{st}U(s)$ ([[§66★ Partial Differential Equations#^rem-66-2|341 Remark: The Extended Heaviside Formula]]): that step is Theorem §76.1 applied to large closed contours.
 
 > [!remark] Remark: Method — Evaluating a Contour Integral by Residues
 > 1. **Draw the contour** and find all singular points of $f$; decide which lie inside $C$. Singular points outside $C$ play no role.

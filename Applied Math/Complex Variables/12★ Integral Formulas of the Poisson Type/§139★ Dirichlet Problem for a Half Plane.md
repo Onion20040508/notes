@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 139
+section: "139★"
 bc: "139"
 aliases: ["B&C 139"]
 tags: [complex-variables, math342, extension]
@@ -43,7 +43,7 @@ The Schwarz integral formula of [[§138★ Schwarz Integral Formula|§138★]] w
 > [!proof]+ Proof
 > **Convergence.** For $y > 0$ the weight $dt/\big((t - x)^2 + y^2\big)$ has finite total mass $\pi/y$, and $F$ is bounded and integrable on bounded intervals, so the integral (1) converges ([[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]]).
 >
-> **$U$ is harmonic.** Let $I(x, y) = \int_{-\infty}^\infty F(t)\,dt/\big((t - x)^2 + y^2\big)$, so that $U = \frac y\pi I$. B&C argues: when $y \ge \varepsilon$ and $|x| \le 1/\varepsilon$ ($\varepsilon$ any positive constant), this integral converges uniformly with respect to $x$ and $y$, and so do the integrals of the partial derivatives of the integrand with respect to $x$ and $y$; each is a finite sum of improper or definite integrals over intervals where $F$ is continuous, with integrands continuous in $t$, $x$, $y$. Consequently each partial derivative of $I$ is the integral of the corresponding derivative of the integrand, whenever $y > 0$. (The uniform bound that makes this work: for $y \ge \varepsilon$, $|x| \le 1/\varepsilon$, the integrand and its first and second partial derivatives in $x$ and $y$ are bounded by $C_\varepsilon/(1 + t^2)$, which is integrable, so differentiation under the integral sign is justified by dominated convergence, [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].) The kernel $y/|t - z|^2 = \operatorname{Im}\frac{1}{t - z}$ is the imaginary part of a function analytic in $z$ for $y > 0$, so it is harmonic and satisfies Laplace's equation in $x$ and $y$ ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]). Since differentiation and integration may be interchanged, $U$ satisfies Laplace's equation too.
+> **$U$ is harmonic.** Let $I(x, y) = \int_{-\infty}^\infty F(t)\,dt/\big((t - x)^2 + y^2\big)$, so that $U = \frac y\pi I$. B&C argues: when $y \ge \varepsilon$ and $|x| \le 1/\varepsilon$ ($\varepsilon$ any positive constant), this integral converges uniformly with respect to $x$ and $y$, and so do the integrals of the partial derivatives of the integrand with respect to $x$ and $y$; each is a finite sum of improper or definite integrals over intervals where $F$ is continuous, with integrands continuous in $t$, $x$, $y$. Consequently each partial derivative of $I$ is the integral of the corresponding derivative of the integrand, whenever $y > 0$. (The uniform bound that makes this work: for $y \ge \varepsilon$, $|x| \le 1/\varepsilon$, the integrand and its first and second partial derivatives in $x$ and $y$ are bounded by $C_\varepsilon/(1 + t^2)$, which is integrable, so differentiation under the integral sign is justified by dominated convergence, [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]].) The kernel $y/|t - z|^2 = \operatorname{Im}\frac{1}{t - z}$ is the imaginary part of a function analytic in $z$ for $y > 0$, so it is harmonic and satisfies Laplace's equation in $x$ and $y$ ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]). Since differentiation and integration may be interchanged, $U$ satisfies Laplace's equation too.
 >
 > **A substitution.** Substitute $t = x + y\tan\tau$, $-\pi/2 < \tau < \pi/2$, so that $dt = y\sec^2\tau\,d\tau$ and $(t - x)^2 + y^2 = y^2\sec^2\tau$:
 >
@@ -75,10 +75,10 @@ The Schwarz integral formula of [[§138★ Schwarz Integral Formula|§138★]] w
 
 ^pf-139-1
 
-*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]] (bounded integrand against a finite weight), [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence)
+*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]] (bounded integrand against a finite weight), [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]] (dominated convergence)
 
 > [!remark]- Connections
-> - [[§38 Potential in Unbounded Regions#^rem-38-2|341 Remark: The Half-Plane and Its Poisson Formula]] reaches (1) from a Fourier integral and states it; Theorem §139.1 is the proof that it solves the Dirichlet problem for bounded data with jumps. The disk version is [[§135★ Dirichlet Problem for a Disk#^thm-135-1|Theorem §135.1]], with the same three-part splitting.
+> - [[§47 Potential in Unbounded Regions#^rem-47-2|341 Remark: The Half-Plane and Its Poisson Formula]] reaches (1) from a Fourier integral and states it; Theorem §139.1 is the proof that it solves the Dirichlet problem for bounded data with jumps. The disk version is [[§135★ Dirichlet Problem for a Disk#^thm-135-1|Theorem §135.1]], with the same three-part splitting.
 
 Expression (1) therefore solves the Dirichlet problem for the half plane $y > 0$, with the boundary condition (2).
 
@@ -116,7 +116,7 @@ Expression (1) therefore solves the Dirichlet problem for the half plane $y > 0$
 
 > [!remark] Remark: Method — Dirichlet Problem for a Half Plane or Quadrant
 > 1. **Half plane $y > 0$.** For bounded data $F$ with finitely many jumps, $U$ is the integral (1). For piecewise constant $F$ integrate with $\int\frac{y\,dt}{(t - x)^2 + y^2} = \arctan\frac{t - x}{y}$; each jump of $F$ contributes an angle subtended at $z$.
-> 2. **Quadrant $x > 0$, $y > 0$.** Extend $F$ from $x > 0$ to the whole line, oddly if $U$ must vanish on $x = 0$, evenly if $U_x$ must vanish there (the odd and even extensions of [[§7 Arbitrary Period and Half-Range Expansions#^def-7-3|341 Def. §7.3]], here on a half line), and fold (1) back to an integral over $t > 0$ ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-2|Example §139.2]], [[§139★ Dirichlet Problem for a Half Plane#^ex-139-3|Example §139.3]]).
+> 2. **Quadrant $x > 0$, $y > 0$.** Extend $F$ from $x > 0$ to the whole line, oddly if $U$ must vanish on $x = 0$, evenly if $U_x$ must vanish there (the odd and even extensions of [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-2|341 Def. §11.2]], here on a half line), and fold (1) back to an integral over $t > 0$ ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-2|Example §139.2]], [[§139★ Dirichlet Problem for a Half Plane#^ex-139-3|Example §139.3]]).
 > 3. **Data on both edges.** Superpose a solution with data on one edge and zero on the other, and one with the roles exchanged.
 > 4. **Other half planes.** Interchange or rotate the axes ([[§139★ Dirichlet Problem for a Half Plane#^ex-139-4|Example §139.4]]); for other regions, map conformally onto the half plane.
 > 5. **Checks.** $U$ is bounded by $\sup|F|$, and $U \to F$ at points of continuity of $F$.
@@ -134,7 +134,7 @@ Expression (1) therefore solves the Dirichlet problem for the half plane $y > 0$
 > U(x, y) = \frac1\pi\int_0^\infty\frac{y\,dt}{(t - x)^2 + y^2} = \frac1\pi\Big[\arctan\frac{t - x}{y}\Big]_{t=0}^{t\to\infty} = \frac12 + \frac1\pi\arctan\frac xy .
 > $$
 >
-> With $z = re^{i\theta}$, $\arctan(x/y) = \frac\pi2 - \theta$, so $U = 1 - \theta/\pi$: the harmonic function that is constant on rays from the origin, $1$ on the positive and $0$ on the negative axis. At the jump $x = 0$ the limit along the vertical is $\frac12$. This is the example in [[§38 Potential in Unbounded Regions#^rem-38-2|341 Remark: The Half-Plane and Its Poisson Formula]]; at $(0.7, 0.4)$ quadrature of (1) and the closed form both give $0.834751$.
+> With $z = re^{i\theta}$, $\arctan(x/y) = \frac\pi2 - \theta$, so $U = 1 - \theta/\pi$: the harmonic function that is constant on rays from the origin, $1$ on the positive and $0$ on the negative axis. At the jump $x = 0$ the limit along the vertical is $\frac12$. This is the example in [[§47 Potential in Unbounded Regions#^rem-47-2|341 Remark: The Half-Plane and Its Poisson Formula]]; at $(0.7, 0.4)$ quadrature of (1) and the closed form both give $0.834751$.
 >
 > *B&C: Sec. 139, equation (1)*
 

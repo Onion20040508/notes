@@ -128,7 +128,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-41-1
 
-*Uses:* [[§41 The Tangent Bundle#^def-41-4|Def. §41.4]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]], [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]]
+*Uses:* [[§41 The Tangent Bundle#^def-41-4|Def. §41.4]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]], [[§22 Countability Axioms#^def-22-3|590 Def. §22.3]]
 
 The same argument, word for word, builds the topology of the cotangent bundle ([[§42 The Cotangent Bundle|§42]]), with the dual bases in place of the coordinate bases.
 
@@ -166,7 +166,7 @@ The same argument, word for word, builds the topology of the cotangent bundle ([
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
 
 > [!remark]- Connections
-> - The same expansion of coordinate derivations: [[§28 The Differential in Coordinates#^cor-28-4|Change of Coordinates, §28.4]]; the Jacobian matrix in 452: [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
+> - The same expansion of coordinate derivations: [[§28 The Differential in Coordinates#^cor-28-4|Change of Coordinates, §28.4]]; the Jacobian matrix in 452: [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 
 The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is Uribe's identity at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 

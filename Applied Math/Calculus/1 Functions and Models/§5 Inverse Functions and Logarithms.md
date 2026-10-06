@@ -7,7 +7,7 @@ stewart: "1.5"
 aliases: ["Stewart 1.5"]
 tags: [calculus]
 ---
-← [[§4 Exponential Functions]] · ↑ [[· 1 Functions and Models]] · [[§5a Logarithmic and Inverse Trigonometric Functions]] →
+← [[§4 Exponential Functions]] · ↑ [[· 1 Functions and Models]] · [[§6 Logarithmic and Inverse Trigonometric Functions]] →
 
 *Stewart, Section 1.5.*
 
@@ -131,7 +131,7 @@ One-to-one functions are important because they are precisely the functions that
 *Uses:* [[§5 Inverse Functions and Logarithms#^def-5-2|Def. §5.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§9 Injections, Surjections and Bijections#^def-9-3|250 Def. §9.3]] defines the inverse by the same "$y = f(x) \iff x = g(y)$", and [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] shows that an inverse exists exactly for bijections. Stewart's $f$ is a bijection from $A$ onto its range $B$: one-to-one by assumption, onto because $B$ is the range.
+> - Rigorous treatment: [[§9 Injections, Surjections and Bijections#^def-9-5|250 Def. §9.5]] defines the inverse by the same "$y = f(x) \iff x = g(y)$", and [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] shows that an inverse exists exactly for bijections. Stewart's $f$ is a bijection from $A$ onto its range $B$: one-to-one by assumption, onto because $B$ is the range.
 > - The cancellation equations characterize the inverse: $g \circ f = I_A$ and $f \circ g = I_B$ hold exactly when $g = f^{-1}$, [[§9 Injections, Surjections and Bijections#^prop-9-3|250 Prop. §9.3]].
 
 > [!remark] Remark: Method — How to Find the Inverse Function of a One-to-One Function f
@@ -189,4 +189,4 @@ Interchanging $x$ and $y$ also gives the graph of $f^{-1}$ from the graph of $f$
 
 ^ex-5-2
 
-*Continued in [[§5a Logarithmic and Inverse Trigonometric Functions]]: logarithmic functions, natural logarithms and inverse trigonometric functions.*
+*Continued in [[§6 Logarithmic and Inverse Trigonometric Functions]]: logarithmic functions, natural logarithms and inverse trigonometric functions.*

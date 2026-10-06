@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 96
+section: "96★"
 bc: "96"
 aliases: ["B&C 96"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§95★ Inverse Laplace Transforms]] · ↑ [[· 8★ Mapping by Elementary Functions]] · [[§97★ The Transformation w = 1∕z]] →
+← [[§95a The Integral of 1∕(√x (x² + 1))]] · ↑ [[· 8★ Mapping by Elementary Functions]] · [[§97★ The Transformation w = 1∕z]] →
 
 *Brown–Churchill, Section 96.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -67,7 +67,7 @@ Chapter 8 returns to the picture of [[§13 Functions and Mappings|§13]] and [[�
 *Uses:* [[§96★ Linear Transformations#^def-96-1|Def. §96.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]] (products in exponential form)
 
 > [!remark]- Connections
-> - In real coordinates, multiplication by $A = a_1 + ia_2$ is the matrix $\begin{bmatrix} a_1 & -a_2 \\ a_2 & a_1\end{bmatrix}$, a scaling by $|A|$ composed with a rotation through $\operatorname{Arg} A$: [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. So $w = Az + B$ is an affine map of $\mathbb{R}^2$ whose linear part is a rotation–scaling matrix.
+> - In real coordinates, multiplication by $A = a_1 + ia_2$ is the matrix $\begin{bmatrix} a_1 & -a_2 \\ a_2 & a_1\end{bmatrix}$, a scaling by $|A|$ composed with a rotation through $\operatorname{Arg} A$: [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]]. So $w = Az + B$ is an affine map of $\mathbb{R}^2$ whose linear part is a rotation–scaling matrix.
 
 > [!remark] Remark: Method — Building a Linear Transformation Between Two Regions
 > To carry a region (strip, half plane, rectangle) onto a congruent or similar one:

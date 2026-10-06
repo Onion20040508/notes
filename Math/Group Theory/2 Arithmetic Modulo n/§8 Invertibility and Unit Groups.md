@@ -137,7 +137,7 @@ tags: [group-theory, math493]
 ^ex-8-4
 
 > [!remark]- Connections
-> - The general rule behind both cases: [[§20 Linear Congruences#^thm-20-4|250 Thm. §20.4]] (solvable iff $\gcd(a, n) \mid b$, then with $\gcd(a, n)$ solutions).
+> - The general rule behind both cases: [[§20 Linear Congruences#^thm-20-5|250 Thm. §20.5]] (solvable iff $\gcd(a, n) \mid b$, then with $\gcd(a, n)$ solutions).
 
 > [!definition] Definition §8.3: Euler's Totient Function
 > For $n \geq 1$, **Euler's totient** $\varphi(n)$ is the number of integers $a$ with $1 \leq a \leq n$ and $\gcd(a, n) = 1$, i.e. the number of invertible classes modulo $n$. Once $U_n$ is defined [[§8 Invertibility and Unit Groups#^def-8-4|below]], $\varphi(n) = |U_n|$.

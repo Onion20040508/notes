@@ -55,4 +55,4 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Elementary version: [[§14 Counting Infinite Sets#^thm-14-10|250 Thm. §14.10]] (Cantor, 1874).
 
-*Chain:* [[§8a The Rationals ℚ|Chapter 2]] →
+*Chain:* [[§9 The Rationals ℚ|Chapter 2]] →

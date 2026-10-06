@@ -33,5 +33,5 @@ tags: [real-analysis, hub]
 ## Connections
 - Sequential compactness of bounded sets; the $\mathbb{R}^n$ version is [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3]].
 - The engine behind the [[Extreme Value Theorem]] and uniform continuity on closed bounded intervals ([[§19 Uniform Continuity#^thm-19-1|Theorem §19.1]]). In topology it becomes 'compact ⟺ sequentially compact' for metric spaces.
-- Topological form: for metric spaces compact, limit point compact and sequentially compact agree, [[§16 Limit Point Compactness#^thm-16-2|590 Thm. §16.2]].
+- Topological form: for metric spaces compact, limit point compact and sequentially compact agree, [[§19 Limit Point Compactness#^thm-19-4|590 Thm. §19.4]].
 - **Also in [[Measure Theory]]:** [[§5 Topology of ℝⁿ#^thm-5-1|551 Thm. §5.1]] (the ℝⁿ version, as in [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Theorem §13.3]]).

@@ -61,10 +61,10 @@ The addition formulas of trigonometry say exactly that $e^{i\theta_1}e^{i\theta_
 
 ^pf-8-1
 
-*Uses:* [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas), [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§3 Further Algebraic Properties#^prop-3-3|§3.3]]
+*Uses:* [[§7 Exponential Form#^def-7-4|Def. §7.4]], [[§7 Exponential Form#^def-7-5|Def. §7.5]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§142 Trigonometry#^thm-142-7|Calc Thm. §142.7]] (addition formulas), [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§3 Further Algebraic Properties#^prop-3-3|§3.3]]
 
 > [!remark]- Connections
-> - The same theorem in the computational treatment: [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]]; in matrix form, multiplication by $re^{i\theta}$ is $r$ times the rotation matrix through $\theta$, [[§53 Complex Numbers#^rem-53-3|235 Remark: Complex Numbers as 2 × 2 Matrices]].
+> - The same theorem in the computational treatment: [[§64 Complex Numbers#^thm-64-5|235 Thm. §64.5]]; in matrix form, multiplication by $re^{i\theta}$ is $r$ times the rotation matrix through $\theta$, [[§64 Complex Numbers#^rem-64-3|235 Remark: Complex Numbers as 2 × 2 Matrices]].
 
 Expressions (1), (2) and (3) are easily remembered by applying the usual algebraic rules for real numbers and $e^x$. Read geometrically, (1) says that multiplying a number by $z_2 = r_2e^{i\theta_2}$ stretches its radius vector by the factor $r_2$ and rotates it counterclockwise through the angle $\theta_2$. Multiplication by $i = e^{i\pi/2}$ is the rotation through $90°$ found in [[§1 Sums and Products#^ex-1-2|Example §1.2]].
 
@@ -135,10 +135,10 @@ Expressions (1), (2) and (3) are easily remembered by applying the usual algebra
 
 ^pf-8-3
 
-*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§7 Exponential Form#^def-7-2|Def. §7.2]]
+*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§7 Exponential Form#^def-7-4|Def. §7.4]]
 
 > [!remark]- Connections
-> - De Moivre's theorem for positive $n$, proved by the same induction: [[§53 Complex Numbers#^thm-53-6|235 Thm. §53.6]].
+> - De Moivre's theorem for positive $n$, proved by the same induction: [[§64 Complex Numbers#^thm-64-6|235 Thm. §64.6]].
 
 ## Examples
 

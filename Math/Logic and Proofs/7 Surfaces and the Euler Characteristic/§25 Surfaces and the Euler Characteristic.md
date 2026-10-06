@@ -18,14 +18,14 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 >
 > After gluing, the images of the corners are the **vertices** of $S$, the images of the sides are its **edges** (two glued sides make one edge), and the polygons are its **faces**; write $V, E, F$ for their numbers. A side that is glued to nothing is a **boundary edge**. The boundary edges form the **boundary** of $S$, which is a disjoint union of circles, the **boundary circles** of $S$.
 >
-> Every point of $S$ has a neighbourhood that looks like an open disk (at points off the boundary) or a half-disk (on the boundary); this is what makes $S$ a *surface*. Different polygonal structures can give the same surface (up to [[§9 Continuous Functions#^def-9-2|homeomorphism]]); each is a **polygonal decomposition** of that surface.
+> Every point of $S$ has a neighbourhood that looks like an open disk (at points off the boundary) or a half-disk (on the boundary); this is what makes $S$ a *surface*. Different polygonal structures can give the same surface (up to [[§10 Continuous Functions#^def-10-2|homeomorphism]]); each is a **polygonal decomposition** of that surface.
 >
 > *Source: lecture (HW6); standard*
 
 ^def-25-1
 
 > [!remark]- Connections
-> - The gluing is a quotient space: [[§12 Quotient Topology#^def-12-3|590 Def. §12.3]]; a single polygon with labelled, oriented sides is [[§29 The Seifert–van Kampen Theorem#^def-29-1|590 Def. §29.1]].
+> - The gluing is a quotient space: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3]]; a single polygon with labelled, oriented sides is [[§39 The Seifert–van Kampen Theorem#^def-39-1|590 Def. §39.1]].
 
 > [!definition] Definition §25.2: Euler Characteristic
 > The **Euler characteristic** of a polygonal surface $S$ is
@@ -88,7 +88,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^rem-25-1
 
 > [!remark]- Connections
-> - The fundamental group gives a different proof that such surfaces are distinct: [[§28 Fundamental Group of Some Surfaces#^cor-28-6|590 Cor. §28.6]] ($S^2$, $T^2$, $P^2$, $\Sigma_2$ are pairwise non-homeomorphic).
+> - The fundamental group gives a different proof that such surfaces are distinct: [[§38 Fundamental Group of Some Surfaces#^cor-38-6|590 Cor. §38.6]] ($S^2$, $T^2$, $P^2$, $\Sigma_2$ are pairwise non-homeomorphic).
 
 ## Cutting and Gluing
 
@@ -188,7 +188,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^ex-25-3
 
 > [!remark]- Connections
-> - The torus as a quotient of the square: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]], with boundary word $aba^{-1}b^{-1}$ in [[§29 The Seifert–van Kampen Theorem#^ex-29-7|590 Ex. §29.7]]; its fundamental group $\mathbb{Z} \times \mathbb{Z}$: [[§23 The Fundamental Group#^cor-23-8|590 Cor. §23.8]]. Workhorse note: [[Torus]].
+> - The torus as a quotient of the square: [[§13 Quotient Topology#^ex-13-3|590 Ex. §13.3]], with boundary word $aba^{-1}b^{-1}$ in [[§39 The Seifert–van Kampen Theorem#^ex-39-7|590 Ex. §39.7]]; its fundamental group $\mathbb{Z} \times \mathbb{Z}$: [[§29 The Fundamental Group#^cor-29-8|590 Cor. §29.8]]. Workhorse note: [[Torus]].
 
 > [!example] Example §25.4: The Genus-2 Surface
 > The genus-$2$ surface ("pretzel", double torus) has $\chi = -2$.
@@ -218,7 +218,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^ex-25-4
 
 > [!remark]- Connections
-> - [[§28 Fundamental Group of Some Surfaces#^def-28-5|590 Def. §28.5]] (the double torus $\Sigma_2$, two tori glued along a removed disk, as in Method 1). Workhorse note: [[Double torus]].
+> - [[§38 Fundamental Group of Some Surfaces#^def-38-5|590 Def. §38.5]] (the double torus $\Sigma_2$, two tori glued along a removed disk, as in Method 1). Workhorse note: [[Double torus]].
 
 > [!example] Example §25.5: The Klein Bottle
 > The **Klein bottle** is obtained from a cylinder by gluing its two boundary circles to each other in the *opposite* direction from the torus; equivalently, it is the square with one pair of opposite sides arrowed in the same direction and the other pair arrowed in opposite directions, each pair glued so that the arrows match (figure below). It cannot be built inside $\mathbb{R}^3$ without the surface passing through itself, and it has only one side. Its Euler characteristic is $0$.
@@ -237,7 +237,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 *Gluing diagrams: glue each pair of equally labelled sides so that the arrows match. For the torus both pairs keep their direction; for the Klein bottle the $b$-sides (red) point opposite ways, so they are glued with a flip. In both, all four corners become a single vertex and $\chi = 1 - 2 + 1 = 0$.*
 
 > [!remark]- Connections
-> - The Klein bottle as the square with boundary word $aba^{-1}b$: [[§29 The Seifert–van Kampen Theorem#^ex-29-7|590 Ex. §29.7]], and its (non-abelian) fundamental group in [[§29 The Seifert–van Kampen Theorem#^ex-29-8|590 Ex. §29.8]].
+> - The Klein bottle as the square with boundary word $aba^{-1}b$: [[§39 The Seifert–van Kampen Theorem#^ex-39-7|590 Ex. §39.7]], and its (non-abelian) fundamental group in [[§39 The Seifert–van Kampen Theorem#^ex-39-8|590 Ex. §39.8]].
 
 ## The General Formula
 
@@ -274,7 +274,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 | genus-$2$ surface | $2$ | $0$ | $-2$ |
 
 > [!theorem] Theorem §25.7: Classification of Surfaces
-> Every [[§15 Compact Spaces#^def-15-2|compact]] [[§13 Connected Spaces#^def-13-new1|connected]] surface is homeomorphic to exactly one of the following:
+> Every [[§18 Compact Spaces#^def-18-2|compact]] [[§15 Connected Spaces#^def-15-2|connected]] surface is homeomorphic to exactly one of the following:
 > - $\Sigma_{h,b}$, a sphere with $h \ge 0$ handles and $b \ge 0$ holes, with $\chi = 2 - 2h - b$ (the two-sided, or *orientable*, surfaces);
 > - a sphere with $k \ge 1$ *crosscaps* (a disk removed and a Möbius band glued in, each lowering $\chi$ by $1$) and $b \ge 0$ holes, with $\chi = 2 - k - b$ (the one-sided surfaces).
 >
@@ -287,4 +287,4 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 ^thm-25-7
 
 > [!remark]- Connections
-> - Developed further in: the projective plane [[§28 Fundamental Group of Some Surfaces#^def-28-1|590 Def. §28.1]], and surfaces as quotients of a single polygon with their fundamental groups, [[§29 The Seifert–van Kampen Theorem#^thm-29-3|590 Thm. §29.3]], [[§29 The Seifert–van Kampen Theorem#^ex-29-8|590 Ex. §29.8]].
+> - Developed further in: the projective plane [[§38 Fundamental Group of Some Surfaces#^def-38-1|590 Def. §38.1]], and surfaces as quotients of a single polygon with their fundamental groups, [[§39 The Seifert–van Kampen Theorem#^thm-39-3|590 Thm. §39.3]], [[§39 The Seifert–van Kampen Theorem#^ex-39-8|590 Ex. §39.8]].

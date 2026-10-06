@@ -12,21 +12,21 @@ tags: [chapter, multivariable-analysis]
 **Builds on (other subjects):** [[Single Variable Analysis]] (13), [[Linear Algebra]] (2), [[Topology]] (8)
 
 ## Sections
-- [[§15 Multivariable Integration]]
-- [[§15a The Definition of the Integral]]
-- [[§15b Properties of the Integral]]
-- [[§15c Fubini's Theorem]]
-- [[§15d The Change of Variables Formula]]
-- [[§15e Change of Variables on General Domains]]
-- [[§15f Polar and Spherical Coordinates]]
+- [[§20 Multivariable Integration]]
+- [[§21 The Definition of the Integral]]
+- [[§22 Properties of the Integral]]
+- [[§23 Fubini's Theorem]]
+- [[§24 The Change of Variables Formula]]
+- [[§25 Change of Variables on General Domains]]
+- [[§26 Polar and Spherical Coordinates]]
 
 ## Central results
-- [[Fubini's Theorem]] ([[§15c Fubini's Theorem#^thm-15-8|§15.8]])
-- [[Change of Variables Formula (multiple integrals)]] ([[§15e Change of Variables on General Domains#^thm-15-17|§15.17]])
+- [[Fubini's Theorem]] ([[§23 Fubini's Theorem#^thm-23-1|§23.1]])
+- [[Change of Variables Formula (multiple integrals)]] ([[§25 Change of Variables on General Domains#^thm-25-3|§25.3]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§15 Multivariable Integration#^thm-15-2|Theorem §15.2: Scalar Multiplication]]: 18 later results
-- [[§15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]: 18 later results
-- [[§15 Multivariable Integration#^thm-15-5|Theorem §15.5: Comparison Theorem]]: 17 later results
-- [[Fubini's Theorem|Theorem §15.8: Fubini's Theorem — Rectangle Case]]: 17 later results
+- [[§22 Properties of the Integral#^thm-22-1|Theorem §22.1: Scalar Multiplication]]: 18 later results
+- [[§22 Properties of the Integral#^thm-22-2|Theorem §22.2: Additivity in the Integrand]]: 18 later results
+- [[§22 Properties of the Integral#^thm-22-4|Theorem §22.4: Comparison Theorem]]: 17 later results
+- [[Fubini's Theorem|Theorem §23.1: Fubini's Theorem — Rectangle Case]]: 17 later results

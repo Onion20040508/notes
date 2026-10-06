@@ -99,7 +99,7 @@ This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] 
 *The difference quotient of Example §22.3 at $z = 0$ is $(\overline{\Delta z}/\Delta z)^2 = e^{-4i\varphi}$ along the ray at angle $\varphi$. It equals $1$ along both axes (blue), which is all that the partial derivatives and the Cauchy–Riemann equations test, and $-1$ along the diagonals (red), so it has no limit at $0$.*
 
 > [!remark]- Connections
-> - The same phenomenon for a real function of two variables: partial derivatives at a point say nothing about approaches along other directions, [[§6 Differentiability#^ex-6-1|452 Ex. §6.1]] ($2xy/(x^2 + y^2)$ has both partials $0$ at the origin and is not differentiable there). Here $u$ and $v$ have partials at $0$ but are not differentiable there; adding continuity of the partials is exactly what [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] and [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] do.
+> - The same phenomenon for a real function of two variables: partial derivatives at a point say nothing about approaches along other directions, [[§7 Differentiability#^ex-7-1|452 Ex. §7.1]] ($2xy/(x^2 + y^2)$ has both partials $0$ at the origin and is not differentiable there). Here $u$ and $v$ have partials at $0$ but are not differentiable there; adding continuity of the partials is exactly what [[§7 Differentiability#^thm-7-2|452 Thm. §7.2]] and [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] do.
 
 ## Locating Points Without a Derivative
 

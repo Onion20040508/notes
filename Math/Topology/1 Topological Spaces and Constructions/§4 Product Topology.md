@@ -23,12 +23,12 @@ tags: [topology, math590]
 *Left: a basis element $U \times V$, an open “rectangle” whose sides are open sets $U \subseteq X$ and $V \subseteq Y$. Right: a general open set $W$ of $X \times Y$ (dashed) is usually not a product, but each point $x \times y \in W$ has a basis element $U \times V \subseteq W$ around it (red), so $W$ is a union of such rectangles (faint red).*
 
 > [!remark]- Connections
-> - Generalized to arbitrary products: [[§10 Product Topology on Arbitrary Products#^def-10-1|Product Topology on Arbitrary Products]].
-> - Preserves connectedness and compactness: [[§13 Connected Spaces#^thm-13-6|Finite Product of Connected Spaces]], [[§15 Compact Spaces#^thm-15-8|Finite Product of Compact Spaces]].
+> - Generalized to arbitrary products: [[§11 Product Topology on Arbitrary Products#^def-11-1|Product Topology on Arbitrary Products]].
+> - Preserves connectedness and compactness: [[§15 Connected Spaces#^thm-15-6|Finite Product of Connected Spaces]], [[§18 Compact Spaces#^thm-18-9|Finite Product of Compact Spaces]].
 > - The same definition in 591, which shows that products inherit the Hausdorff and second-countable conditions: [[§3 Subspaces and Products#^def-3-3|591 Def. §3.3]], [[§3 Subspaces and Products#^thm-3-12|591 Thm. §3.12]].
 
 > [!remark] Remark: Why This Basis for Products?
-> The product topology uses sets $U \times V$ where *each factor is open*—imposing constraints on finitely many coordinates at a time. Why not use arbitrary products of open sets? For two factors this distinction is invisible, but it becomes essential for infinite products ([[§10 Product Topology on Arbitrary Products|Section 10]]): the *[[§10 Product Topology on Arbitrary Products#^def-10-2|box topology]]* imposes constraints on all coordinates simultaneously and behaves pathologically (e.g., $\mathbb{R}^\omega$ in the box topology is not metrizable, and [[§10 Product Topology on Arbitrary Products#^ex-10-2|many natural maps fail to be continuous]]). The product topology, requiring only finitely many coordinate constraints, is the *right* choice: it makes projections continuous, products of compact spaces compact (Tychonoff), and satisfies the [[§10 Product Topology on Arbitrary Products#^thm-10-1|universal property]] that a map into a product is continuous iff each component is.
+> The product topology uses sets $U \times V$ where *each factor is open*—imposing constraints on finitely many coordinates at a time. Why not use arbitrary products of open sets? For two factors this distinction is invisible, but it becomes essential for infinite products ([[§11 Product Topology on Arbitrary Products|Section 10]]): the *[[§11 Product Topology on Arbitrary Products#^def-11-2|box topology]]* imposes constraints on all coordinates simultaneously and behaves pathologically (e.g., $\mathbb{R}^\omega$ in the box topology is not metrizable, and [[§11 Product Topology on Arbitrary Products#^ex-11-2|many natural maps fail to be continuous]]). The product topology, requiring only finitely many coordinate constraints, is the *right* choice: it makes projections continuous, products of compact spaces compact (Tychonoff), and satisfies the [[§11 Product Topology on Arbitrary Products#^thm-11-1|universal property]] that a map into a product is continuous iff each component is.
 
 ^rem-4-1
 
@@ -39,7 +39,7 @@ tags: [topology, math590]
 ^rem-4-2
 
 ![[m590-4-2.svg]]
-*Why $\mathcal{B}$ satisfies axiom (2): the intersection of two basis rectangles $U_1 \times V_1$ and $U_2 \times V_2$ (blue) is the rectangle $(U_1\cap U_2)\times(V_1\cap V_2)$ (red), whose sides are again open. So the intersection is itself a basis element, and it can serve as the $B_3$ of Definition §2.1.*
+*Why $\mathcal{B}$ satisfies axiom (2): the intersection of two basis rectangles $U_1 \times V_1$ and $U_2 \times V_2$ (blue) is the rectangle $(U_1\cap U_2)\times(V_1\cap V_2)$ (red), whose sides are again open. So the intersection is itself a basis element, and it can serve as the $B_3$ of Definition §2.2.*
 
 > [!theorem] Theorem §4.1: Basis for Product Topology
 > If $\mathcal{B}$ is a basis for the topology on $X$, and $\mathcal{C}$ is a basis for the topology on $Y$, then
@@ -83,7 +83,7 @@ tags: [topology, math590]
 ^ex-4-1
 
 > [!remark]- Connections
-> - The same topology from a metric: [[§11 Metric Topology#^ex-11-3|Euclidean Metric Induces Standard Topology]], [[§11 Metric Topology#^thm-11-2|Euclidean and Square Metrics Induce Same Topology]].
+> - The same topology from a metric: [[§12 Metric Topology#^ex-12-3|Euclidean Metric Induces Standard Topology]], [[§12 Metric Topology#^thm-12-2|Euclidean and Square Metrics Induce Same Topology]].
 
 > [!example] Example §4.2: Discrete Product Topology
 > If $X$ and $Y$ have the [[§1 Topological Spaces#^ex-1-3|discrete topology]], what's the product topology on $X \times Y$?

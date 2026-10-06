@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 9
-section: 116
+section: "116★"
 bc: "116"
 aliases: ["B&C 116"]
 tags: [complex-variables, math342, extension]
@@ -28,17 +28,17 @@ Boundary value problems for Laplace's equation (Dirichlet and Neumann problems) 
 >
 > *B&C: Sec. 116 (text)*
 
-^def-116-new1
+^def-116-2
 
 > [!definition] Definition §116.3: Neumann Problem
-> If, in a [[§116★ Transformations of Harmonic Functions#^def-116-1|boundary value problem]], the values of the normal derivative of the function are prescribed on the boundary, it is a **boundary value problem of the second kind**, or a **Neumann problem**. Modifications and combinations of these types of boundary conditions ([[§116★ Transformations of Harmonic Functions#^def-116-new1|Dirichlet]] and Neumann) also arise.
+> If, in a [[§116★ Transformations of Harmonic Functions#^def-116-1|boundary value problem]], the values of the normal derivative of the function are prescribed on the boundary, it is a **boundary value problem of the second kind**, or a **Neumann problem**. Modifications and combinations of these types of boundary conditions ([[§116★ Transformations of Harmonic Functions#^def-116-2|Dirichlet]] and Neumann) also arise.
 >
 > *B&C: Sec. 116 (text)*
 
-^def-116-new2
+^def-116-3
 
 > [!remark]- Connections
-> - The same definitions, with the normal derivative and the mixed (Robin) condition, solved by separation of variables in rectangles and disks: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]; uniqueness of the Dirichlet solution by the maximum principle, [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]], and non-uniqueness for Neumann, [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]].
+> - The same definitions, with the normal derivative and the mixed (Robin) condition, solved by separation of variables in rectangles and disks: [[§44 Potential Equation#^def-44-3|341 Def. §44.3]], [[§44 Potential Equation#^def-44-4|341 Def. §44.4]], [[§44 Potential Equation#^def-44-5|341 Def. §44.5]]; uniqueness of the Dirichlet solution by the maximum principle, [[§49 The Poisson Integral Formula and the Mean Value Property#^cor-49-4|341 Cor. §49.4]], and non-uniqueness for Neumann, [[§44 Potential Equation#^prop-44-1|341 Prop. §44.1]].
 
 The domains most frequently met in applications are simply connected, and a harmonic function on a simply connected domain has a harmonic conjugate ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]). So solutions of boundary value problems on such domains are real or imaginary parts of analytic functions.
 
@@ -159,11 +159,11 @@ The theorem can also be proved directly by the chain rule for partial derivative
 
 ^pf-116-2
 
-*Uses:* [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]], [[Schwarz–Clairaut Theorem|452 Schwarz–Clairaut]] ($h_{uv} = h_{vu}$)
+*Uses:* [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§110 The Chain Rule#^thm-110-2|Calc Thm. §110.2]] (chain rule), [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]], [[Schwarz–Clairaut Theorem|452 Schwarz–Clairaut]] ($h_{uv} = h_{vu}$)
 
 > [!remark]- Connections
-> - The polar form of the Laplacian is a special case. With $s = \ln r$, the map $w = \operatorname{Log} z = s + i\theta$ has $|f'(z)|^2 = 1/r^2$, so $H_{xx} + H_{yy} = r^{-2}(h_{ss} + h_{\theta\theta})$, and $r\partial_r = \partial_s$ turns $h_{ss}$ into $r^2h_{rr} + rh_r$: this is $h_{rr} + \frac1rh_r + \frac1{r^2}h_{\theta\theta}$, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
-> - The general rule behind the factor $|f'|^2$: the Laplacian depends on the metric, and a conformal map multiplies the metric by $|f'|^2$; in two dimensions this rescales $\nabla^2$ but keeps the equation $\nabla^2 h = 0$. Chain rule: [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]].
+> - The polar form of the Laplacian is a special case. With $s = \ln r$, the map $w = \operatorname{Log} z = s + i\theta$ has $|f'(z)|^2 = 1/r^2$, so $H_{xx} + H_{yy} = r^{-2}(h_{ss} + h_{\theta\theta})$, and $r\partial_r = \partial_s$ turns $h_{ss}$ into $r^2h_{rr} + rh_r$: this is $h_{rr} + \frac1rh_r + \frac1{r^2}h_{\theta\theta}$, [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]].
+> - The general rule behind the factor $|f'|^2$: the Laplacian depends on the metric, and a conformal map multiplies the metric by $|f'|^2$; in two dimensions this rescales $\nabla^2$ but keeps the equation $\nabla^2 h = 0$. Chain rule: [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]].
 > - Used in Electromagnetism: analytic maps carry electrostatic solutions, and line charges with their strength (Corollary §116.3), to solutions — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]], [[§C7.5★ Logarithmic Potentials and the Poisson–Boltzmann Equation#^thm-c7-5-1|EM Theorem §C7.5.1]].
 
 > [!theorem] Corollary §116.3: Poisson's Equation Under an Analytic Map
@@ -173,7 +173,7 @@ The theorem can also be proved directly by the chain rule for partial derivative
 > p_{uu}(u, v) + p_{vv}(u, v) = \Phi(u, v)
 > $$
 >
-> in a domain $D_w$, where $\Phi$ is a prescribed function (in Fourier Series and PDEs the same equation is written $\nabla^2u = -H$, [[§37 Further Examples for a Rectangle#^def-37-1|341 Def. §37.1]]). If an analytic function $w = f(z) = u(x, y) + iv(x, y)$ maps a domain $D_z$ onto $D_w$, then $P(x, y) = p[u(x, y), v(x, y)]$ satisfies the Poisson equation
+> in a domain $D_w$, where $\Phi$ is a prescribed function (in Fourier Series and PDEs the same equation is written $\nabla^2u = -H$, [[§46 Further Examples for a Rectangle#^def-46-1|341 Def. §46.1]]). If an analytic function $w = f(z) = u(x, y) + iv(x, y)$ maps a domain $D_z$ onto $D_w$, then $P(x, y) = p[u(x, y), v(x, y)]$ satisfies the Poisson equation
 >
 > $$
 > P_{xx}(x, y) + P_{yy}(x, y) = \Phi\big[u(x, y), v(x, y)\big]\,|f'(z)|^2

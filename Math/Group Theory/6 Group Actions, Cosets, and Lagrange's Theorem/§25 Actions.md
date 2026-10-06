@@ -110,10 +110,10 @@ tags: [group-theory, math493]
 
 ^pf-25-2
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 §21.4]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|590 §26.4]]
 
 > [!remark]- Connections
-> - A two-sided inverse means bijective, in MATH 590: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|Bijectivity via Two-Sided Inverse]] (590 §21.4).
+> - A two-sided inverse means bijective, in MATH 590: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Bijectivity via Two-Sided Inverse]] (590 §21.4).
 
 > [!theorem] Theorem §25.3: Actions Are Homomorphisms to $S_X$
 > Let $G$ be a group and $X$ a set, and recall that $S_X$ is the group of all bijections $X \to X$, with operation composition ($\sigma\tau = \sigma \circ \tau$), identity $\operatorname{id}_X$, and inverses the inverse functions ([[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]). An action of $G$ on $X$ is the same thing as a group homomorphism $\varphi: G \to S_X$. Precisely:

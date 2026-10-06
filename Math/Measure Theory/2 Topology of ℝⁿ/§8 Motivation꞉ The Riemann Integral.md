@@ -5,7 +5,7 @@ chapter: 2
 section: 8
 tags: [measure-theory, math551]
 ---
-← [[§7 Structure of Open Sets]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§9 Lebesgue Outer Measure]] →
+← [[§7 Structure of Open Sets]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§9 The Rationals ℚ]] →
 
 We now begin the transition to measure theory. We start by reviewing the Riemann integral (MATH 451 [[§32 The Definition of the Riemann Integral|§32]]–[[§34 Fundamental Theorem of Calculus|§34]]) and understanding its limitations.
 
@@ -23,7 +23,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^def-8-1
 
 > [!remark]- Connections
-> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-new1|Partitions (451 Def. §32.1)]] and [[§32 The Definition of the Riemann Integral#^def-32-3|Mesh (451 Def. §32.3)]].
+> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-2|Partitions (451 Def. §32.2)]] and [[§32 The Definition of the Riemann Integral#^def-32-6|Mesh (451 Def. §32.6)]].
 
 > [!definition] Definition §8.2: Upper and Lower Sums
 > Let $f: [a, b] \to \mathbb{R}$ be a bounded function and $P = \{x_0, x_1, \ldots, x_n\}$ a partition of $[a, b]$. Define:
@@ -50,7 +50,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 *Lower and upper sums for a partition $P = \{x_0, \ldots, x_4\}$: on each $[x_j, x_{j+1}]$ the blue rectangle has height $m_j$ and the full rectangle height $M_j$ (marked for $j = 2$). $L(f,P)$ is the blue area and $U(f,P)$ the blue plus red area; for continuous $f$ the red strips thin out as $|P| \to 0$ ([[§8 Motivation꞉ The Riemann Integral#^prop-8-1|Proposition §8.1]]).*
 
 > [!remark]- Connections
-> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-new2|Upper and Lower Sums (451 Def. §32.1)]]; MATH 452 multiple-integral version: [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
+> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-3|Upper and Lower Sums (451 Def. §32.3)]]; MATH 452 multiple-integral version: [[§21 The Definition of the Integral#^def-21-2|452 Def. §21.2]].
 
 > [!definition] Definition §8.3: Riemann Integrable
 > A bounded function $f: [a, b] \to \mathbb{R}$ is **Riemann integrable** if
@@ -68,8 +68,8 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^def-8-3
 
 > [!remark]- Connections
-> - MATH 451 defines it through Riemann sums ([[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]]); the mesh form of the Cauchy criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals (451 §32.6)]].
-> - Restated in [[§15a The Dominated Convergence Theorem#^rem-15-6|Riemann Integrability via Step Functions]] and compared with the Lebesgue integral in [[Riemann Integrable Implies Lebesgue Integrable|Theorem §15.10]].
+> - MATH 451 defines it through Riemann sums ([[§32 The Definition of the Riemann Integral#^def-32-8|451 Def. §32.8]]); the mesh form of the Cauchy criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals (451 §32.6)]].
+> - Restated in [[§23 The Dominated Convergence Theorem#^rem-23-6|Riemann Integrability via Step Functions]] and compared with the Lebesgue integral in [[Riemann Integrable Implies Lebesgue Integrable|Theorem §23.5]].
 
 > [!remark] Remark
 > Equivalently, we can define:
@@ -83,7 +83,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^rem-8-1
 
 > [!remark]- Connections
-> - This is the Darboux integral of MATH 451 ([[§32 The Definition of the Riemann Integral#^def-32-new3|451 Def. §32.2]]); the equivalence is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
+> - This is the Darboux integral of MATH 451 ([[§32 The Definition of the Riemann Integral#^def-32-5|451 Def. §32.5]]); the equivalence is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
 
 ## Continuous Functions are Riemann Integrable
 
@@ -119,7 +119,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 
 > [!remark]- Connections
 > - MATH 451 version: [[§32 The Definition of the Riemann Integral#^thm-32-7|Continuous Functions Are Integrable (451 §32.7)]].
-> - Stewart's statement: [[§35 The Definite Integral#^thm-35-1|Calc Thm. §35.1]].
+> - Stewart's statement: [[§39 The Definite Integral#^thm-39-1|Calc Thm. §39.1]].
 
 ## Limitations of the Riemann Integral
 
@@ -166,7 +166,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 
 > [!remark]- Connections
 > - MATH 451: [[§32 The Definition of the Riemann Integral#^ex-32-3|The Dirichlet function is not integrable (451 Ex. §32.3)]]; all its uses are collected in [[Dirichlet and Thomae functions]].
-> - Lebesgue: $\mathbb{Q} \cap [0,1]$ is null ([[§9 Lebesgue Outer Measure#^ex-9-2|Ex. §9.2]]), so $f = 0$ a.e. and its Lebesgue integral is $0$ ([[§14a Consequences of the Monotone Convergence Theorem#^prop-14-9|Proposition §14.9]]).
+> - Lebesgue: $\mathbb{Q} \cap [0,1]$ is null ([[§10 Lebesgue Outer Measure#^ex-10-2|Ex. §10.2]]), so $f = 0$ a.e. and its Lebesgue integral is $0$ ([[§21 Consequences of the Monotone Convergence Theorem#^prop-21-2|Proposition §21.2]]).
 
 > [!remark] Remark
 > Note that $f_n \to f$ pointwise as $n \to \infty$. We have:
@@ -182,4 +182,4 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 
 > [!remark]- Connections
 > - MATH 451 only passes to the limit under uniform convergence: [[§33 Properties of the Riemann Integral#^thm-33-12|Integration of Uniform Limits (451 §33.12)]].
-> - The Lebesgue answer: pointwise limits of measurable functions are measurable ([[§12a Limits and Positive Parts of Measurable Functions#^cor-12-8|Corollary §12.8]]), and integrals pass to the limit under the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] and the [[Dominated Convergence Theorem|Dominated Convergence Theorem]].
+> - The Lebesgue answer: pointwise limits of measurable functions are measurable ([[§16 Limits and Positive Parts of Measurable Functions#^cor-16-3|Corollary §16.3]]), and integrals pass to the limit under the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] and the [[Dominated Convergence Theorem|Dominated Convergence Theorem]].

@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 11
-section: 133
+section: "133★"
 bc: "133"
 aliases: ["B&C 133"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§132★ Flow in a Channel with an Offset]] · ↑ [[· 11★ The Schwarz–Christoffel Transformation]] · [[§134★ Poisson Integral Formula]] →
+← [[§132★ Flow in a Channel with an Offset]] · ↑ [[· 11★ The Schwarz–Christoffel Transformation]] · [[§133a The Square, the Equilateral Triangle and the Step]] →
 
 *Brown–Churchill, Section 133.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*

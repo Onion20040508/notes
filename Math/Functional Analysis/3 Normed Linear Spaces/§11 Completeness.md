@@ -17,7 +17,7 @@ tags: [functional-analysis, math556]
 ^def-11-1
 
 > [!remark]- Connections
-> - Home of the definition: [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|451 Def. §13.3]]; $\mathbb{R}^n$ is complete: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]].
+> - Home of the definition: [[§13 Some Topological Concepts in Metric Spaces#^def-13-4|451 Def. §13.4]]; $\mathbb{R}^n$ is complete: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]].
 
 > [!definition] Definition §11.2: Banach Space
 > A complete normed linear space is called a **Banach space**.
@@ -27,7 +27,7 @@ tags: [functional-analysis, math556]
 ^def-11-2
 
 > [!remark]- Connections
-> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-4|551 Def. §19.4]], with examples [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-4|551 Ex. §19.4]] and the [[Riesz–Fischer Theorem]] ($L^p$ is Banach).
+> - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-5|551 Def. §34.5]], with examples [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-4|551 Ex. §34.4]] and the [[Riesz–Fischer Theorem]] ($L^p$ is Banach).
 
 > [!theorem] Theorem §11.1: $C[a,b]$ with the Supremum Norm is a Banach Space
 > Let $X = C([a,b])$ be the set of continuous functions $f : [a,b] \to \mathbb{F}$, with pointwise operations and
@@ -130,12 +130,12 @@ tags: [functional-analysis, math556]
 
 ^pf-11-1
 
-*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[Extreme Value Theorem|451 Extreme Value Theorem]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
+*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[Extreme Value Theorem|451 Extreme Value Theorem]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of the scalars)
 
 > [!remark]- Connections
 > - Steps 2–3 re-prove the 451 results on uniform convergence: [[§24 Uniform Convergence#^thm-24-1|451 §24.1]] (supremum criterion), [[§24 Uniform Convergence#^thm-24-2|451 §24.2]] (uniform limits preserve continuity).
 > - The pattern of the proof: [[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]].
-> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ form a Cauchy sequence in $C[-h, h]$ with the supremum norm, and their limit is the solution, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
+> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ form a Cauchy sequence in $C[-h, h]$ with the supremum norm, and their limit is the solution, [[§14 The Existence and Uniqueness Theorem#^thm-14-7|331 Thm. §14.7]].
 
 > [!remark] Remark
 > The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one extra step that has no analogue in $\ell^p$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.
@@ -188,7 +188,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 ^def-11-4
 
 > [!remark]- Connections
-> - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (Cauchy sequences and the construction of the reals)]], carried out with rational tolerances in [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]] (why rational: [[§6★ ℝ from Cauchy Sequences of Rationals#^rem-6s-2|451 §6★, order of logic]]).
+> - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10a Cauchy Sequences#^rem-10a-4|451 Remark (Cauchy sequences and the construction of the reals)]], carried out with rational tolerances in [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]] (why rational: [[§6★ ℝ from Cauchy Sequences of Rationals#^rem-6s-2|451 §6★, order of logic]]).
 > - For normed spaces: [[§11 Completeness#^thm-11-4|§11.4]]; concrete completions: [[§11 Completeness#^prop-11-5|§11.5]], [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
@@ -234,10 +234,10 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 ^pf-11-3
 
-*Uses:* [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§10 Normed Linear Spaces#^def-10-3|Def. §10.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§11 Completeness#^thm-11-4|§11.4]]
+*Uses:* [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§10 Normed Linear Spaces#^def-10-3|Def. §10.3]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§11 Completeness#^thm-11-4|§11.4]]
 
 > [!remark]- Connections
-> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark §10.4]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
+> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10a Cauchy Sequences#^rem-10a-4|451 Remark §10.4]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
 > - The normed version, where the linear structure and the norm are added: Theorem [[§11 Completeness#^thm-11-4|§11.4]]; uniqueness: Corollary [[§11 Completeness#^cor-11-6|§11.6]].
 
 > [!example] Example §11.1: Completions of Subsets of $\mathbb{R}^n$
@@ -396,10 +396,10 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 
 ^pf-11-4
 
-*Uses:* [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of $\mathbb{R}$)
+*Uses:* [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^def-11-3|Def. §11.3]], [[§11 Completeness#^def-11-4|Def. §11.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of $\mathbb{R}$)
 
 > [!remark]- Connections
-> - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^rem-10-4|451 Remark (construction of the reals)]]; there $\Phi = \lim$ is [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|451 Theorem §6★.12]], and uniqueness is [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|451 §6★.14]].
+> - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]; there $\Phi = \lim$ is [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|451 Theorem §6★.12]], and uniqueness is [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|451 §6★.14]].
 > - The pattern of the proof: [[Functional Analysis Problem-Solving Techniques#^ex-t5|Technique 5, applications]].
 
 > [!remark] Remark: Comparison with the $\ell^p$ Proof

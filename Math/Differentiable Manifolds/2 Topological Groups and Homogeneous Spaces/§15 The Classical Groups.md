@@ -23,10 +23,10 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 
 ^pf-15-1
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]], [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]
 
 > [!remark]- Connections
-> - The general principle: a continuous map onto a disconnected space forces disconnectedness, contrapositive of [[Continuous Image of a Connected Space is Connected|590 §13.3]].
+> - The general principle: a continuous map onto a disconnected space forces disconnectedness, contrapositive of [[Continuous Image of a Connected Space is Connected|590 §15.3]].
 > - Used in Relativity: the determinant splits the Lorentz group as it splits $O(n)$, and the sign of $\Lambda^0{}_0$ splits it once more, into four components — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
 > [!theorem] Theorem §15.2: Exactly Two Components

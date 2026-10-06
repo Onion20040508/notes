@@ -121,11 +121,11 @@ Two lectures a week (handwritten lecture notes, weeks 1–13; week 11 missing), 
 
 | Weeks | Sections | Notes |
 |---|---|---|
-| 1–3 | 1.1–1.5 Fourier series, 2.1 | §6–§10, §17 |
-| 3–6 | 2.1–2.6 heat equation, 1.9 Fourier integral | §17–§22, §14 |
-| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod | §23–§26 |
-| 9–10 | 3.1–3.4 wave equation, d'Alembert | §29–§32 |
-| 10–13 | 4.1–4.5 potential equation, 5.2–5.3 two-dimensional heat | §35–§39, §42–§43 |
+| 1–3 | 1.1–1.5 Fourier series, 2.1 | §9–§14, §22 |
+| 3–6 | 2.1–2.6 heat equation, 1.9 Fourier integral | §22–§28, §18 |
+| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod | §29–§32 |
+| 9–10 | 3.1–3.4 wave equation, d'Alembert | §37–§40 |
+| 10–13 | 4.1–4.5 potential equation, 5.2–5.3 two-dimensional heat | §44–§48, §52–§53 |
 
 Examples marked *Source: 341 …* come from the lectures, homework, midterms and practice problems.
 

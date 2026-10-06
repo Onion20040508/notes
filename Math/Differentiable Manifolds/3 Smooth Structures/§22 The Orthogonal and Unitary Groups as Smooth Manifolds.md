@@ -25,7 +25,7 @@ The promise of [[§11 The Classical Groups Are Topological Manifolds|§11, The C
 ^def-22-1
 
 > [!remark]- Connections
-> - Symmetric matrices in LADR: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-11|LADR 9.11]], the matrices of symmetric bilinear forms ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]).
+> - Symmetric matrices in LADR: [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-11|LADR 9.11]], the matrices of symmetric bilinear forms ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]).
 
 > [!example] Example §22.1: $\mathrm{O}(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$
 > Define
@@ -149,10 +149,10 @@ The promise of [[§11 The Classical Groups Are Topological Manifolds|§11, The C
 
 ^pf-22-2
 
-*Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §15.12]]
+*Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]]
 
 > [!remark]- Connections
-> - Compactness is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]].
+> - Compactness is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]].
 
 **Transcription note.** Page 20 of the handwritten notes writes “$\ker dF_g(A) = \{A \mid gA^{\mathsf T} + Ag^{\mathsf T} = 0\}$”; the kernel is of the linear map $dF_g$, and the “$(A)$” does not belong. The transposes sit to the right of $g$ throughout because that is how $F$ was written ($gg^{\mathsf T}$, not $g^{\mathsf T}g$); either convention defines $\mathrm{O}(n)$.
 
@@ -181,7 +181,7 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 ^def-22-2
 
 > [!remark]- Connections
-> - Hermitian matrices are the matrices of self-adjoint operators: [[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], with the conjugate transpose of [[§22 Self-Adjoint and Normal Operators#^ladr-7-7|LADR 7.7]].
+> - Hermitian matrices are the matrices of self-adjoint operators: [[§23 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], with the conjugate transpose of [[§23 Self-Adjoint and Normal Operators#^ladr-7-7|LADR 7.7]].
 
 > [!theorem] Lemma §22.3: A One-Sided Inverse Suffices
 > If $g \in \operatorname{Mat}(n,\mathbb{C})$ satisfies $gg^* = I$, then also $g^*g = I$. Consequently $\mathrm{U}(n) = \{g \mid gg^* = I\}$.
@@ -193,10 +193,10 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 
 ^pf-22-3
 
-*Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!remark]- Connections
-> - The general linear-algebra fact: [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68 (ST = I ⟺ TS = I)]]; unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - The general linear-algebra fact: [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68 (ST = I ⟺ TS = I)]]; unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 
 > [!example] Example §22.2: $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$
 > Define
@@ -248,7 +248,7 @@ The vertical arrows are the real-linear identifications of [[§10 Topological Gr
 *Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-22-2|Def. §22.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§21 The Differential of a Map Between Vector Spaces#^def-21-2|Def. §21.2]], [[§21 The Differential of a Map Between Vector Spaces#^lem-21-1|§21.1]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|§22.3]], [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]], [[§21 The Differential of a Map Between Vector Spaces#^cor-21-4|§21.4]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]]
 
 > [!remark]- Connections
-> - Unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|Ex. §10.3]].
+> - Unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§10 Topological Groups and Classical Matrix Groups#^ex-10-3|Ex. §10.3]].
 > - Its tangent spaces: [[§23 The Geometric Tangent Space#^ex-23-3|Ex. §23.3]].
 
 > [!remark] Remark
@@ -289,7 +289,7 @@ The vertical arrows are the real-linear identifications of [[§10 Topological Gr
 
 ^pf-22-5
 
-*Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §15.12]]
+*Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]]
 
 > [!remark]- Connections
-> - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]](1) is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]](1) is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

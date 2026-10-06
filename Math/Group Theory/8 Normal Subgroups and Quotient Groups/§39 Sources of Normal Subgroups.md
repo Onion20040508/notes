@@ -54,7 +54,7 @@ tags: [group-theory, math493]
 *Uses:* [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]]
 
 > [!remark]- Connections
-> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-17|Remark after Definition §21.12]] (kernels are normal).
+> - 590 counterpart: [[§27 Free Groups and Presentations#^rem-27-17|Remark after Definition §21.12]] (kernels are normal).
 > - Converse: [[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]]; used in [[§43 Simple Groups#^prop-43-3|Homomorphisms out of a Simple Group]].
 
 The converse also holds: every normal subgroup is the kernel of a homomorphism, namely of the projection onto the quotient group ([[§40 Quotient Groups#^prop-40-2|Every Normal Subgroup Is a Kernel]], §40).

@@ -170,7 +170,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 *How to draw a conormal covector. Without a metric, a covector $\xi$ on $T_pM$ is drawn by its level lines $\{\xi = \text{const}\}$. For $\xi \in N_pS$ the level line $\xi = 0$ contains $T_pS$, so all of its level lines run* parallel *to $T_pS$ (left). Only once an inner product is chosen does $\xi$ become a vector, perpendicular to its level lines, and $N_pS$ becomes the normal line $(T_pS)^\perp$ (right). The board, and page 33 of the handwritten notes, draw $N_pS$ as a line perpendicular to $T_pS$: that is the right-hand, metric picture.*
 
 > [!remark]- Connections
-> - With an inner product: the orthogonal complement [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and the identification of covectors with vectors, [[Riesz representation theorem|LADR 6.42]].
+> - With an inner product: the orthogonal complement [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and the identification of covectors with vectors, [[Riesz representation theorem|LADR 6.42]].
 > - The same point for gradients: [[§30 The Cotangent Space#^rem-30-2|Differential — Not Gradient]].
 
 ## The Regular Value Theorem for Manifolds
@@ -211,7 +211,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 > [!remark]- Connections
 > - The earlier regular value theorems it contains: [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§28 The Differential in Coordinates#^cor-28-8|§28.8]] (see the remark below); the tangent-space statement generalizes [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]].
-> - Constraint sets $\{g_1 = c_1, \ldots, g_k = c_k\}$ in multivariable analysis: [[§14 Optimization and Lagrange Multipliers#^thm-14-3|452 §14.3]] (Lagrange multipliers with several constraints).
+> - Constraint sets $\{g_1 = c_1, \ldots, g_k = c_k\}$ in multivariable analysis: [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 §17.3]] (Lagrange multipliers with several constraints).
 > - Fibres of submersions that are all copies of one fibre: [[§34 Fibrations#^def-34-1|fibrations, Def. §34.1]].
 
 **Transcription note.** Page 33 of the handwritten notes states the theorem for “$q \in M$ a regular value”; the regular value lies in the target, $q \in N$.
@@ -259,4 +259,4 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-33-8
 
-*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§33 Submanifolds#^prop-33-2|§33.2]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^cor-28-6|§28.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[Directional Derivative Formula|452 §7.1]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§33 Submanifolds#^prop-33-2|§33.2]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^cor-28-6|§28.6]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|§27.6]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[Directional Derivative Formula|452 §9.1]], [[Multivariable Chain Rule|452 §12.2]]

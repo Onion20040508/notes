@@ -7,7 +7,7 @@ eccles: "Ch. 23"
 aliases: ["Eccles 23"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§22 Partitions and Equivalence Relations]] · ↑ [[· 6 Prime Numbers]] · [[§24★ Congruence Modulo a Prime]] →
+← [[§22b The Congruence 290x ≡ 5 (mod 357)]] · ↑ [[· 6 Prime Numbers]] · [[§24★ Congruence Modulo a Prime]] →
 
 *Eccles, Chapter 23 (with Problems VI) · MAT 250 HW8 (Exercises 23.2, 23.4, 23.6; Problems VI Q3, Q7, Q8).*
 
@@ -15,7 +15,7 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ## 23.1 Definition and Basic Properties
 
-> [!definition] Definition §23.1: Prime
+> [!definition] Definition §23.2: Prime
 > A positive integer $n$ is **prime** if $n > 1$ and the only positive divisors of $n$ are $1$ and $n$.
 >
 > If a prime $p = ab$ with $a, b$ positive, then $\{a, b\} = \{1, p\}$.
@@ -24,14 +24,14 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ^def-23-1
 
-> [!definition] Definition §23.1: Composite
+> [!definition] Definition §23.3: Composite
 > An integer $n > 1$ that is not prime is **composite**.
 >
 > Thus $n > 1$ is composite if and only if $n = ab$ for integers $a, b$ with $1 < a < n$ and $1 < b < n$ (a positive divisor $a \ne 1, n$ gives $b = n/a$, which also lies strictly between $1$ and $n$). The positive integers split into three disjoint sets: the primes $2, 3, 5, 7, 11, 13, \ldots$, the composites $4, 6, 8, 9, 10, \ldots$, and the single **unit** $1$.
 >
 > *Eccles: Definition 23.1.1*
 
-^def-23-new1
+^def-23-2
 
 > [!theorem] Proposition §23.1: Existence of Prime Factorizations
 > Every integer greater than $1$ can be written as a product of prime numbers. (A prime counts as a product of one prime; with the convention that the empty product is $1$, the statement extends to $n = 1$.)
@@ -45,13 +45,13 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 >
 > *Base case.* $2$ is prime, so it is a product of a single prime.
 >
-> *Inductive step.* Suppose, for some $k \ge 2$, that every $n$ with $2 \le n \le k$ is a product of primes. If $k + 1$ is prime, it is a product of one prime. Otherwise $k + 1$ is composite, so $k + 1 = ab$ with $2 \le a, b \le k$ ([[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]]). By the inductive hypothesis $a$ and $b$ are products of primes, and putting the two products side by side writes $k + 1$ as a product of primes.
+> *Inductive step.* Suppose, for some $k \ge 2$, that every $n$ with $2 \le n \le k$ is a product of primes. If $k + 1$ is prime, it is a product of one prime. Otherwise $k + 1$ is composite, so $k + 1 = ab$ with $2 \le a, b \le k$ ([[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]]). By the inductive hypothesis $a$ and $b$ are products of primes, and putting the two products side by side writes $k + 1$ as a product of primes.
 >
 > *Conclusion.* By strong induction, every $n \ge 2$ is a product of primes.
 
 ^pf-23-1
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]], [[§5 The Induction Principle#^thm-5-6|§5.6]] (strong induction)
 
 > [!theorem] Theorem §23.2: Euclid's Property of Primes
 > Let $p$ be a prime and $a, b$ positive integers. If $p \mid ab$, then $p \mid a$ or $p \mid b$.
@@ -106,7 +106,7 @@ To decide whether $n$ is prime one can try all smaller divisors; the next result
 
 ^pf-23-3
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-new1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^def-23-1|Def. §23.1]], [[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]], [[§23 The Sequence of Prime Numbers#^prop-23-1|§23.1]]
 
 > [!example] Example §23.1: The Primes up to 100
 > Write out $2, 3, \ldots, 100$. The first number, $2$, is prime; cross out its other multiples, which are composite. The first number not crossed out, $3$, is prime (it is not a multiple of a smaller prime); cross out its other multiples. Continue with $5$ and $7$. Since every composite $n \le 100$ has a prime factor $\le \sqrt{100} = 10$ ([[§23 The Sequence of Prime Numbers#^prop-23-3|Prop. §23.3]]), and the primes $\le 10$ are $2, 3, 5, 7$, every composite number has now been crossed out. What remains are the primes below $100$:
@@ -185,12 +185,12 @@ Factorization into primes is not unique as written, since the factors can be reo
 > [!remark]- Connections
 > - Same theorem in group theory: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (uniqueness there by induction on $n$ rather than by contradiction).
 
-> [!definition] Definition §23.2: Standard Prime Factorization
+> [!definition] Definition §23.4: Standard Prime Factorization
 > The unique expression $n = p_1^{k_1} \cdots p_r^{k_r}$ of [[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]] (primes $p_1 < \cdots < p_r$, exponents $k_i \ge 1$) is the **standard prime factorization** of $n$; for $n = 1$ take $r = 0$ (the empty product). When comparing two numbers it is convenient to list all primes occurring in either and allow exponents $0$: by uniqueness, $p_1^{k_1} \cdots p_r^{k_r} = p_1^{l_1} \cdots p_r^{l_r}$ (distinct primes, exponents $\ge 0$) implies $k_i = l_i$ for every $i$.
 >
 > *Eccles: §23.3 (text after Theorem 23.3.1)*
 
-^def-23-2
+^def-23-3
 
 > [!example] Example §23.2: Unique Factorization Fails for E-primes
 > Let $E$ be the set of even integers, and call an even integer **E-prime** if it is not the product of two other even integers. Then $60$ is a product of E-primes in two genuinely different ways:
@@ -232,11 +232,11 @@ Factorization into primes is not unique as written, since the factors can be reo
 > p_1^{k_1} \cdots p_r^{k_r} = a = bq = p_1^{l_1 + m_1} \cdots p_r^{l_r + m_r} .
 > $$
 >
-> By uniqueness ([[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]]), $k_i = l_i + m_i$, so $0 \le l_i \le k_i$.
+> By uniqueness ([[§23 The Sequence of Prime Numbers#^def-23-3|Def. §23.3]]), $k_i = l_i + m_i$, so $0 \le l_i \le k_i$.
 
 ^pf-23-6
 
-*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], [[§23 The Sequence of Prime Numbers#^thm-23-5|§23.5]], [[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]]
+*Uses:* [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], [[§23 The Sequence of Prime Numbers#^thm-23-5|§23.5]], [[§23 The Sequence of Prime Numbers#^def-23-3|Def. §23.3]]
 
 > [!theorem] Corollary §23.7: The gcd from Prime Factorizations
 > Let $a, b$ be positive integers and $p_1 < \cdots < p_r$ the primes occurring in the factorization of $a$ or of $b$, so that $a = p_1^{k_1} \cdots p_r^{k_r}$ and $b = p_1^{l_1} \cdots p_r^{l_r}$ with $k_i, l_i \ge 0$. Then
@@ -306,7 +306,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 > a^2 = 2^{2k_1} p_2^{2k_2} \cdots p_r^{2k_r}, \qquad 2b^2 = 2^{2l_1 + 1} p_2^{2l_2} \cdots p_r^{2l_r} .
 > $$
 >
-> By uniqueness ([[§23 The Sequence of Prime Numbers#^def-23-2|Def. §23.2]]) the exponents of $2$ agree: $2k_1 = 2l_1 + 1$, an even number equal to an odd one. Contradiction.
+> By uniqueness ([[§23 The Sequence of Prime Numbers#^def-23-3|Def. §23.3]]) the exponents of $2$ agree: $2k_1 = 2l_1 + 1$, an even number equal to an odd one. Contradiction.
 >
 > *What this proof adds.* The proof in §13 needs a fraction in lowest terms and the lemma "$a^2$ even $\Rightarrow$ $a$ even", and has to be redone for each new case. Here neither is needed: the only input is unique factorization, and the contradiction is a count of exponents. The same count works for cube roots in (b), for $\sqrt p$ with any prime $p$ (the exponent of $p$ gives $2k = 2l + 1$), and for $\sqrt n$ whenever some prime occurs in $n$ to an odd power; it also explains [[§13 Number Systems#^ex-13-2|Example §13.2]], since $4 = 2^2$ has even exponents.
 >
@@ -418,15 +418,15 @@ The sequence of primes is very irregular, but it never stops. The proof is from 
 
 ^ex-23-10
 
-> [!definition] Definition §23.3: The Prime-Counting Function
+> [!definition] Definition §23.4: The Prime-Counting Function
 > For $n \in \mathbb{Z}^+$, $\pi(n)$ denotes the number of primes not exceeding $n$. Thus $\pi(2) = 1$, $\pi(10) = 4$, $\pi(100) = 25$, $\pi(1000) = 168$, $\pi(10^6) = 78498$.
 >
 > *Eccles: Definition 23.5.2*
 
-^def-23-3
+^def-23-4
 
 > [!theorem] Theorem §23.9: Prime Number Theorem
-> The ratio of $\pi(n)$ to $n / \log_e n$ tends to $1$ as $n$ grows without bound: the sequence $n \mapsto \dfrac{\pi(n) \log_e n}{n} - 1$ is a null sequence ([[§8 Functions#^def-8-8|Def. §8.8]]).
+> The ratio of $\pi(n)$ to $n / \log_e n$ tends to $1$ as $n$ grows without bound: the sequence $n \mapsto \dfrac{\pi(n) \log_e n}{n} - 1$ is a null sequence ([[§8 Functions#^def-8-9|Def. §8.9]]).
 >
 > (Stated without proof.)
 >

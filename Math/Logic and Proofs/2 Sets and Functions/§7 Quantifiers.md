@@ -7,7 +7,7 @@ eccles: "Ch. 7"
 aliases: ["Eccles 7"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§6 The Language of Set Theory]] · ↑ [[· 2 Sets and Functions]] · [[§8 Functions]] →
+← [[§6a Operations on Sets]] · ↑ [[· 2 Sets and Functions]] · [[§7a Several Quantifiers and the Cartesian Product]] →
 
 *Eccles, Chapter 7 · MAT 250 HW3 (Exercises 7.2, 7.4, 7.5, 7.7) · MAT 200 HW1 (Problem 3) · MAT 200 Practice Midterm 1 (Problems 5–8, Example from L3) · MAT 200 supplement (Helfer).*
 
@@ -116,7 +116,7 @@ Uniqueness statements of this kind recur throughout: the inverse of a bijection 
 ^ex-7-3
 
 > [!theorem] Proposition §7.1: Squares of Even Integers Are Even
-> For integers $n$, if $n$ is even then $n^2$ is even. In symbols, with "even" spelled out ([[§2 Implications#^def-2-7|Def. §2.7]]):
+> For integers $n$, if $n$ is even then $n^2$ is even. In symbols, with "even" spelled out ([[§2 Implications#^def-2-8|Def. §2.8]]):
 >
 > $$
 > \forall n \in \Z,\ \big( (\exists q \in \Z,\ n = 2q) \Rightarrow (\exists p \in \Z,\ n^2 = 2p) \big).
@@ -139,7 +139,7 @@ Uniqueness statements of this kind recur throughout: the inverse of a bijection 
 
 ^pf-7-1
 
-*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§2 Implications#^def-2-7|Def. §2.7]]
+*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§2 Implications#^def-2-8|Def. §2.8]]
 
 > [!example] Example §7.4: Squares of Odd Integers Are Odd
 > **Claim:** for $n \in \Z$, $\ (\exists q \in \Z,\ n = 2q + 1) \Rightarrow (\exists p \in \Z,\ n^2 = 2p + 1)$.
@@ -183,7 +183,7 @@ Disproving a statement $S$ is the same as proving its negation "not $S$". For qu
 
 ^pf-7-2
 
-*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]]
+*Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§6a Operations on Sets#^def-6a-4|Def. §6a.4]]
 
 So a universal statement is disproved by a single **counterexample**, an $a \in A$ with $P(a)$ false; an existential statement is disproved either by proving $\forall a \in A,\ \text{not}\, P(a)$ or by showing that $P(a)$ with $a \in A$ leads to a contradiction ([[§4 Proof by Contradiction#^thm-4-2|Theorem §4.2]]).
 
@@ -215,7 +215,7 @@ So a universal statement is disproved by a single **counterexample**, an $a \in 
 
 ^rem-7-3
 
-Combined with the laws of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] and [[§2 Implications#^prop-2-1|Proposition §2.1]], [[§7 Quantifiers#^thm-7-2|Theorem §7.2]] produces a *useful denial* ([[§1 The Language of Mathematics#^def-1-7|Def. §1.7]]) of any quantified statement: switch each quantifier ($\forall \leftrightarrow \exists$), keeping its domain and the order of the quantifiers, and then deny the predicate using
+Combined with the laws of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] and [[§2 Implications#^prop-2-1|Proposition §2.1]], [[§7 Quantifiers#^thm-7-2|Theorem §7.2]] produces a *useful denial* ([[§1 The Language of Mathematics#^def-1-10|Def. §1.10]]) of any quantified statement: switch each quantifier ($\forall \leftrightarrow \exists$), keeping its domain and the order of the quantifiers, and then deny the predicate using
 
 $$
 \neg\neg P \equiv P, \qquad \neg(P \wedge Q) \equiv \neg P \vee \neg Q, \qquad \neg(P \vee Q) \equiv \neg P \wedge \neg Q, \qquad \neg(P \Rightarrow Q) \equiv P \wedge \neg Q ,
@@ -261,7 +261,7 @@ until "not" is absorbed into the simplest statements ($\neg(x > 2)$ becomes $x \
 >
 > **Truth value.** The statement is true and the denial false. Since $(P \Rightarrow Q) \equiv (\neg P \vee Q)$ ([[§2 Implications#^prop-2-1|Proposition §2.1]]), the statement says $\forall x\ \exists y,\ (x + y > 3 \vee x > 2)$. Given $x$, take $y = 4 - x$: then $x + y = 4 > 3$, so the implication has a false hypothesis and is true. (The denial fails for the same reason: no $x$ has $x + y \le 3$ for *all* $y$.)
 >
-> **Picture.** The set $\{(x, y) \in \R^2 \mid x + y > 3 \text{ or } x > 2\}$ is the union of the half-plane above the line $x + y = 3$ and the half-plane $x > 2$; the statement says that every vertical line $\{x\} \times \R$ meets it (compare the pictures in [[§7 Quantifiers#^ex-7-15|Example §7.15]] and [[§7 Quantifiers#^ex-7-16|Example §7.16]]).
+> **Picture.** The set $\{(x, y) \in \R^2 \mid x + y > 3 \text{ or } x > 2\}$ is the union of the half-plane above the line $x + y = 3$ and the half-plane $x > 2$; the statement says that every vertical line $\{x\} \times \R$ meets it (compare the pictures in [[§7a Several Quantifiers and the Cartesian Product#^ex-7a-8|Example §7a.8]] and [[§7a Several Quantifiers and the Cartesian Product#^ex-7a-9|Example §7a.9]]).
 >
 > *Source: MAT 200 Practice Midterm 1 ("Example from L3")*
 
@@ -292,7 +292,7 @@ A statement $\forall n \in \Z^+,\ P(n)$ says that the subset $\{n \in \Z^+ \mid 
 *Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§6 The Language of Set Theory#^prop-6-1|§6.1]], [[§7 Quantifiers#^def-7-1|Def. §7.1]]
 
 > [!remark]- Connections
-> - This is axiom 3 of Peano's axioms in [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]], and axiom 5 of [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms), from which 451 derives induction ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
+> - This is axiom 3 of Peano's axioms in [[§9 Injections, Surjections and Bijections#^def-9-9|Def. §9.9]], and axiom 5 of [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms), from which 451 derives induction ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
 
 The strong induction principle ([[§5 The Induction Principle#^thm-5-6|Theorem §5.6]]) has a set form in the same way: [[§5 The Induction Principle#^ex-5-9|Example §5.9]].
 

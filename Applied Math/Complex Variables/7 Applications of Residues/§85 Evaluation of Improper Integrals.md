@@ -7,7 +7,7 @@ bc: "85"
 aliases: ["B&C 85"]
 tags: [complex-variables, math342]
 ---
-← [[§84 Behavior of Functions Near Isolated Singular Points]] · ↑ [[· 7 Applications of Residues]] · [[§86 Example (Evaluation of Improper Integrals)]] →
+← [[§84a The Function e^(1∕z)]] · ↑ [[· 7 Applications of Residues]] · [[§86 Example (Evaluation of Improper Integrals)]] →
 
 *Brown–Churchill, Section 85.*
 
@@ -35,7 +35,7 @@ Chapter 7 turns the residue theorem into a tool of real analysis. This section f
 ^def-85-1
 
 > [!remark]- Connections
-> - The rigorous definitions: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]] (half-open intervals) and [[§36 Improper Integrals#^def-36-2|451 Def. §36.2]] (doubly improper integrals, with the same independent limits as in (2)); computational version [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]].
+> - The rigorous definitions: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]] (half-open intervals) and [[§36 Improper Integrals#^def-36-2|451 Def. §36.2]] (doubly improper integrals, with the same independent limits as in (2)); computational version [[§58 Improper Integrals#^def-58-1|Calc Def. §58.1]].
 
 > [!definition] Definition §85.2: Cauchy Principal Value
 > The **Cauchy principal value** (P.V.) of the integral (2) is the number
@@ -223,7 +223,7 @@ Whether the arc integral tends to zero depends only on the degrees. B&C checks i
 
 ^pf-85-4
 
-*Uses:* [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§5 Triangle Inequality#^cor-5-2|§5.2]], [[§5 Triangle Inequality#^cor-5-3|§5.3]], [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (comparison)
+*Uses:* [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§5 Triangle Inequality#^cor-5-2|§5.2]], [[§5 Triangle Inequality#^cor-5-3|§5.3]], [[§58 Improper Integrals#^thm-58-2|Calc Thm. §58.2]] (comparison)
 
 > [!remark] Remark: Method — Improper Integrals of Rational Functions
 > To evaluate $\int_{-\infty}^{\infty} p(x)/q(x)\,dx$ (or $\int_0^\infty$ of an even one):

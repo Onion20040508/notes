@@ -12,7 +12,7 @@ tags: [chapter, measure-theory]
 **Builds on (other subjects):** [[Single Variable Analysis]] (4), [[Linear Algebra]] (1), [[Topology]] (1)
 
 ## Sections
-- [[§19 Normed Linear Spaces and Lᵖ Spaces]]
+- [[§34 Normed Linear Spaces and Lᵖ Spaces]]
 
 ## Central results
 - [[Hölder's Inequality]] (§19.5)
@@ -21,7 +21,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|Proposition §19.2: The Essential Supremum is Achieved A.E.]]: 22 later results
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Lemma §19.4: Young's Inequality]]: 20 later results
-- [[Hölder's Inequality|Theorem §19.5: Hölder's Inequality]]: 19 later results
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|Proposition §19.8: Lᵖ is a Linear Space]]: 17 later results
+- [[§34 Normed Linear Spaces and Lᵖ Spaces#^prop-34-2|Proposition §34.2: The Essential Supremum is Achieved A.E.]]: 22 later results
+- [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|Lemma §34.4: Young's Inequality]]: 20 later results
+- [[Hölder's Inequality|Theorem §34.5: Hölder's Inequality]]: 19 later results
+- [[§35 Lᵖ as a Banach Space#^prop-35-1|Proposition §35.1: Lᵖ is a Linear Space]]: 17 later results

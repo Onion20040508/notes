@@ -21,7 +21,7 @@ tags: [linear-algebra]
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
 > - 556 starts from the same definition ([[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|556 Def. §2.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1|556 Def. §23.1]]) and produces them with Hahn–Banach ([[§4 Statement and Motivation#^thm-4-2|556 Thm. §4.2]]).
 > - Used in Relativity: covariant components $a_\mu$ are the components of a linear functional, and the metric lowers indices — [[§B1.1 The Metric and Index Notation#^rem-b1-1-1|REL Remark: Why two index positions]]; covectors and tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
-> - The differential $df$ of $f:\R^2\to\R$ at a fixed point is a linear functional of the increment $(h,k)$: [[§8 The Differential#^def-8-1|452 Def. §8.1]].
+> - The differential $df$ of $f:\R^2\to\R$ at a fixed point is a linear functional of the increment $(h,k)$: [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 
 > [!example] Example 3.109: Linear functionals (p. 105)
 > Linear functionals:
@@ -92,7 +92,7 @@ tags: [linear-algebra]
 > Write $v=c_1v_1+\dots+c_nv_n$. Applying $\varphi_j$ gives $\varphi_j(v)=c_j$.
 
 > [!remark]- Connections
-> - Orthonormal analogue: [[§20 Orthonormal Bases#^ladr-6-30|Writing a vector as a linear combination of an orthonormal basis]] with $\varphi_j=\ip{\cdot}{e_j}$.
+> - Orthonormal analogue: [[§21 Orthonormal Bases#^ladr-6-30|Writing a vector as a linear combination of an orthonormal basis]] with $\varphi_j=\ip{\cdot}{e_j}$.
 
 %% ex:3.114-fig %%
 > [!example] Example: The dual basis, pictured
@@ -126,7 +126,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T′]], [[§12 Duality#^ladr-3-130|The range of T′]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
-> - Not the adjoint $T^*$ of Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
+> - Not the adjoint $T^*$ of Chapter 7 ([[§23 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
 > - Same definition in 591, written with a star and called the transpose: [[§20 Linear Algebra Toolkit#^def-20-3|591 Def. §20.3]], with its properties in [[§20 Linear Algebra Toolkit#^prop-20-4|591 Prop. §20.4]].
 > - On a manifold, the dual map of the pushforward is the pullback of covectors: [[§30 The Cotangent Space#^def-30-5|591 Def. §30.5]].
 
@@ -169,7 +169,7 @@ tags: [linear-algebra]
 ^ladr-3-121
 
 > [!remark] Remark: Lives in the dual
-> $U^0\subseteq V'$, not in $V$. It is the dual-space stand-in for an orthogonal complement ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|Orthogonal complement, U⟂]]).
+> $U^0\subseteq V'$, not in $V$. It is the dual-space stand-in for an orthogonal complement ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|Orthogonal complement, U⟂]]).
 
 > [!remark]- Connections
 > - A subspace: [[§12 Duality#^ladr-3-124|The annihilator is a subspace]]. Dimension: [[§12 Duality#^ladr-3-125|Dimension of the annihilator]].
@@ -225,7 +225,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Same count as [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]; indeed $U^0\cong(V/U)'$.
-> - Inner-product analogue: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|Dimension of orthogonal complement]].
+> - Inner-product analogue: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|Dimension of orthogonal complement]].
 
 > [!theorem] Theorem 3.127: Condition for the annihilator to equal {0} or the whole space
 > If $V$ is finite-dimensional and $U$ is a subspace, then
@@ -317,7 +317,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Explains [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]](c) as $(AB)^t=B^tA^t$. Used in [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
-> - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§22 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T∗ (LADR 7.9)]].
+> - With respect to orthonormal bases the adjoint has the conjugate transpose: [[§23 Self-Adjoint and Normal Operators#^ladr-7-9|Matrix of T∗ (LADR 7.9)]].
 > - This is why covector components change by the transpose of the inverse Jacobian: [[§42 The Cotangent Bundle#^prop-42-2|591 Prop. §42.2]].
 > - Used in Relativity: because the dual map has the transposed matrix, lower indices transform with the inverse transpose $\Lambda_\mu{}^\nu$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 
@@ -336,5 +336,5 @@ tags: [linear-algebra]
 *Uses:* [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]], [[§12 Duality#^ladr-3-130|3.130]], [[§12 Duality#^ladr-3-132|3.132]]
 
 > [!remark]- Connections
-> - First proof by column–row factorization: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. A third proof via adjoints: $\dim\range T=\dim\range T^*$ ([[§26 Singular Value Decomposition#^ladr-7-64|7.64]](d)) with $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^{\,t}$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]), for $T\in\Lin(\F^n,\F^m)$ with the standard inner products and $A=\mathcal{M}(T)$; by [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]] the two dimensions are the column ranks of $A$ and of $\overline{A}^{\,t}$, and conjugating entries changes no rank.
-> - Computational version: [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (dim Row A = dim Col A).
+> - First proof by column–row factorization: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. A third proof via adjoints: $\dim\range T=\dim\range T^*$ ([[§27 Singular Value Decomposition#^ladr-7-64|7.64]](d)) with $\mathcal{M}(T^*)=\overline{\mathcal{M}(T)}^{\,t}$ ([[§23 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]), for $T\in\Lin(\F^n,\F^m)$ with the standard inner products and $A=\mathcal{M}(T)$; by [[§10 Invertibility and Isomorphisms#^ladr-3-78|3.78]] the two dimensions are the column ranks of $A$ and of $\overline{A}^{\,t}$, and conjugating entries changes no rank.
+> - Computational version: [[§34 Rank#^thm-34-3|235 Thm. §34.3]] (dim Row A = dim Col A).

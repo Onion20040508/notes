@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 7
-section: 88
+section: "88★"
 bc: "88"
 aliases: ["B&C 88"]
 tags: [complex-variables, math342, extension]
@@ -42,7 +42,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 
 ^pf-88-1
 
-*Uses:* [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Calc Thm. §27.1]] (increasing/decreasing test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|Calc Thm. §27.3]] (concavity test)
+*Uses:* [[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-1|Calc Thm. §30.1]] (increasing/decreasing test), [[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-3|Calc Thm. §30.3]] (concavity test)
 
 ![[m342-88-1.svg]]
 *Jordan's inequality: on $0 \le \theta \le \pi/2$ the concave curve $y = \sin\theta$ lies above its chord $y = 2\theta/\pi$, and by symmetry above $y = 2(\pi - \theta)/\pi$ on the other half. So $e^{-R\sin\theta}$ is at most $e^{-2R\theta/\pi}$, whose integral is less than $\pi/(2R)$: the integrand is close to $1$ only on intervals of length about $1/R$ at the two ends.*
@@ -89,7 +89,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 *Uses:* [[§88★ Jordan's Lemma#^lem-88-1|§88.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|§47.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]]
 
 > [!remark]- Connections
-> - Jordan's lemma is what makes the Fourier transform of a function decaying only like $1/x$ computable by residues: the Fourier integral of [[§14 Fourier Integral#^def-14-new1|341 Def. §14.1]] in its complex form [[§15★ Complex Methods#^thm-15-2|341 Thm. §15.2]], whose outer integral is likewise a symmetric limit $\lim_{L\to\infty}\int_{-L}^{L}$. For example, [[§88★ Jordan's Lemma#^ex-88-1|Example §88.1]] below with $3$ replaced by $1$ and $2$ by $x$ gives $\frac2\pi\int_0^\infty\frac{\lambda\sin\lambda x}{1 + \lambda^2}\,d\lambda = e^{-x}$ $(x > 0)$, the representation of [[§14 Fourier Integral#^ex-14-4|341 Ex. §14.4]](b).
+> - Jordan's lemma is what makes the Fourier transform of a function decaying only like $1/x$ computable by residues: the Fourier integral of [[§18 Fourier Integral#^def-18-2|341 Def. §18.2]] in its complex form [[§19★ Complex Methods#^thm-19-2|341 Thm. §19.2]], whose outer integral is likewise a symmetric limit $\lim_{L\to\infty}\int_{-L}^{L}$. For example, [[§88★ Jordan's Lemma#^ex-88-1|Example §88.1]] below with $3$ replaced by $1$ and $2$ by $x$ gives $\frac2\pi\int_0^\infty\frac{\lambda\sin\lambda x}{1 + \lambda^2}\,d\lambda = e^{-x}$ $(x > 0)$, the representation of [[§18 Fourier Integral#^ex-18-4|341 Ex. §18.4]](b).
 
 > [!remark] Remark: What Jordan's Lemma Adds
 > The bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]] gives $\big|\int_{C_R} fe^{iaz}\big| \le M_R\,\pi R$, which tends to zero only if $M_R = o(1/R)$; for $f = p/q$ that is $\deg q \ge \deg p + 2$. Jordan's lemma gives $M_R\pi/a$, which tends to zero as soon as $M_R \to 0$, that is, $\deg q \ge \deg p + 1$. So for rational $f$ with $\deg q = \deg p + 1$ and $a > 0$,
@@ -196,4 +196,4 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 ^ex-88-3
 
 > [!remark]- Connections
-> - The Gaussian integral $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt\pi$ used in (c) is computed in polar coordinates in [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]]. The sector argument rotates the path of integration onto the ray where $e^{iz^2}$ becomes the Gaussian. The related move of shifting the Gaussian integral $\int e^{-(s - ki)^2}\,ds$ off the real axis, by Cauchy–Goursat on a long rectangle, is the "fact from complex analysis" behind the Fourier transform of a Gaussian in [[§15★ Complex Methods#^ex-15-3|341 Ex. §15.3]].
+> - The Gaussian integral $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt\pi$ used in (c) is computed in polar coordinates in [[§25 Change of Variables on General Domains#^ex-25-4|452 Ex. §25.4]]. The sector argument rotates the path of integration onto the ray where $e^{iz^2}$ becomes the Gaussian. The related move of shifting the Gaussian integral $\int e^{-(s - ki)^2}\,ds$ off the real axis, by Cauchy–Goursat on a long rectangle, is the "fact from complex analysis" behind the Fourier transform of a Gaussian in [[§19★ Complex Methods#^ex-19-3|341 Ex. §19.3]].

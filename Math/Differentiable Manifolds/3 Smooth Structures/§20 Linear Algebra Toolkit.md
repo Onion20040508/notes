@@ -156,7 +156,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 ^def-20-4
 
 > [!remark]- Connections
-> - Same notion in LADR: [[§35 Tensor Products#^ladr-9-68|LADR 9.68]] (bilinear functionals on V × W); the case W = V is a bilinear form, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
+> - Same notion in LADR: [[§38 Tensor Products#^ladr-9-68|LADR 9.68]] (bilinear functionals on V × W); the case W = V is a bilinear form, [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
 
 > [!theorem] Theorem §20.5: Non-Degenerate Pairings
 > Let $B : V \times W \to \mathbb{R}$ be a non-degenerate bilinear pairing, and suppose $V$ or $W$ is finite-dimensional. Then both are finite-dimensional, $\dim V = \dim W$, and
@@ -180,7 +180,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 > [!remark]- Connections
 > - Applied to the pairing of tangent vectors with germs: [[§30 The Cotangent Space#^prop-30-7|§30.7]], [[§30 The Cotangent Space#^thm-30-8|§30.8]].
-> - Bilinear forms on a single space in LADR: [[§32 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
+> - Bilinear forms on a single space in LADR: [[§35 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
 > Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§30 The Cotangent Space#^thm-30-8|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.

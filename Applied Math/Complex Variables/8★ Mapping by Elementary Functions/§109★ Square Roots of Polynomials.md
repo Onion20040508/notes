@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 109
+section: "109★"
 bc: "109"
 aliases: ["B&C 109"]
 tags: [complex-variables, math342, extension]
@@ -146,7 +146,7 @@ $$
 
 ^pf-109-3
 
-*Uses:* [[§109★ Square Roots of Polynomials#^thm-109-2|§109.2]], [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]] (continuous image of a connected space), [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]] (path connected implies connected)
+*Uses:* [[§109★ Square Roots of Polynomials#^thm-109-2|§109.2]], [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]] (continuous image of a connected space), [[§16 Connected Subspaces of ℝ#^thm-16-4|590 Thm. §16.4]] (path connected implies connected)
 
 ![[m342-109-1.svg]]
 *$w = F(z)$, the branch (5) of $(z^2 - 1)^{1/2}$, maps the plane slit along $[-1, 1]$ (orange) onto the plane slit along $[-i, i]$. Writing $z = \cosh\zeta$ gives $F(z) = \sinh\zeta$ (checked numerically for $\operatorname{Re}\zeta > 0$, $0 < \operatorname{Im}\zeta < \pi$), so the ellipses $z = \cosh(c + it)$ with foci $\pm1$ (blue) go onto the ellipses $\sinh(c + it)$ with foci $\pm i$, and the confocal hyperbolas (red) onto confocal hyperbolas. The two edges of the slit $[-1, 1]$ open out into the slit $[-i, i]$.*

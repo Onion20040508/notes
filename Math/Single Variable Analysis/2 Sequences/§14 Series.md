@@ -25,7 +25,7 @@ $$
 
 Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; in example (3) we are adding terms that become smaller and smaller — does that suffice?
 
-> [!definition] Definition §14.1: Series
+> [!definition] Definition §14.2: Series
 > An **infinite series** (or a **series**) is an infinite sum
 >
 > $$
@@ -36,7 +36,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 ^def-14-1
 
-> [!definition] Definition §14.1: Partial Sums
+> [!definition] Definition §14.3: Partial Sums
 > Let $\sum_{n=1}^{\infty} a_n$ be a series. Its **partial sums** are
 >
 > $$
@@ -45,12 +45,12 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 >
 > which form a sequence $(s_n)$.
 
-^def-14-new1
+^def-14-2
 
-> [!definition] Definition §14.2: Convergence of a Series
+> [!definition] Definition §14.4: Convergence of a Series
 > If the sequence $(s_n)$ of partial sums converges to a limit $s$, we say the series $\sum_{n=1}^\infty a_n$ **converges** to $s$ and write $\sum_{n=1}^\infty a_n = s$. If $(s_n)$ diverges, we say the series **diverges**; in the special case $s_n \to +\infty$ we say the series diverges to $+\infty$ and write $\sum_{n=1}^\infty a_n = +\infty$.
 
-^def-14-2
+^def-14-3
 
 > [!remark]- Connections
 > - Computational version: [[§61 Convergence of Series#^def-61-1|342 Def. §61.1]] (series of complex numbers), reduced to real series by [[§61 Convergence of Series#^thm-61-1|342 Thm. §61.1]].
@@ -94,7 +94,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 For the harmonic series we cannot find a closed formula for $s_n$, so we need to study general properties of series. Since a series *is* the sequence of its partial sums, every convergence criterion for sequences transfers.
 
-> [!definition] Definition §14.3: Cauchy Criterion
+> [!definition] Definition §14.5: Cauchy Criterion
 > A series $\sum a_n$ is said to satisfy the **Cauchy criterion** if its sequence $(s_n)$ of partial sums is a Cauchy sequence. Explicitly, since for $m \geq n$
 >
 > $$
@@ -107,7 +107,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 > |a_n + a_{n+1} + \cdots + a_m| < \varepsilon.
 > $$
 
-^def-14-3
+^def-14-4
 
 > [!theorem] Theorem §14.1: Cauchy Criterion for Series
 > A series $\sum a_n$ converges if and only if it satisfies the Cauchy criterion.
@@ -119,7 +119,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-1
 
-*Uses:* [[§14 Series#^def-14-3|Def. §14.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|§10.7]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]]
+*Uses:* [[§14 Series#^def-14-4|Def. §14.4]], [[§10a Cauchy Sequences#^thm-10a-1|§10a.1]], [[§10a Cauchy Sequences#^thm-10a-3|§10a.3]]
 
 > [!theorem] Corollary §14.2: Terms of a Convergent Series Tend to Zero
 > If $\sum a_n$ converges, then $a_n \to 0$.
@@ -135,7 +135,7 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Its logic in 250: [[§2 Implications#^ex-2-10|250 Ex. §2.10]] (a necessary condition; the contrapositive is the divergence test; the converse fails).
-> - Computational version: [[§70 Series#^thm-70-4|Calc Thm. §70.4]] and the Test for Divergence, [[§70 Series#^cor-70-5|Calc Cor. §70.5]] (with worked examples).
+> - Computational version: [[§82 Series#^thm-82-4|Calc Thm. §82.4]] and the Test for Divergence, [[§82 Series#^cor-82-5|Calc Cor. §82.5]] (with worked examples).
 > - Computational version: [[§61 Convergence of Series#^cor-61-2|342 Cor. §61.2]] (the same statement for complex series).
 
 > [!theorem] Proposition §14.3: Linearity of Series
@@ -218,17 +218,17 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 > [!remark]- Connections
 > - Used in [[§2 Implications#^ex-2-10|250 Ex. §2.10]](c) as the counterexample to the converse of [[§14 Series#^cor-14-2|Corollary §14.2]].
-> - Computational version: [[§70 Series#^thm-70-3|Calc Thm. §70.3]].
+> - Computational version: [[§82 Series#^thm-82-3|Calc Thm. §82.3]].
 
 ## Absolute Convergence
 
-> [!definition] Definition §14.4: Absolute Convergence
+> [!definition] Definition §14.5: Absolute Convergence
 > Given a series $\sum a_n$: if the series $\sum_{n=1}^\infty |a_n|$ converges, we say $\sum a_n$ **converges absolutely**.
 
-^def-14-4
+^def-14-5
 
 > [!remark]- Connections
-> - Computational version: [[§73 Alternating Series and Absolute Convergence#^def-73-2|Calc Def. §73.2]] (with worked examples).
+> - Computational version: [[§85 Alternating Series and Absolute Convergence#^def-85-2|Calc Def. §85.2]] (with worked examples).
 > - Computational version: [[§61 Convergence of Series#^def-61-2|342 Def. §61.2]] (absolute convergence of complex series).
 
 > [!theorem] Proposition §14.6: Absolute Convergence Implies Convergence
@@ -264,8 +264,8 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 ^rem-14-4
 
 > [!remark]- Connections
-> - The same principle for series of functions: a series with $\sum \|f_k\|_p < \infty$ converges a.e. to a function in $L^p$, [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-14|551 Cor. §19.14]] (for $p = 1$: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]]).
-> - Computational version: [[§73 Alternating Series and Absolute Convergence#^thm-73-3|Calc Thm. §73.3]] (with worked examples).
+> - The same principle for series of functions: a series with $\sum \|f_k\|_p < \infty$ converges a.e. to a function in $L^p$, [[§35 Lᵖ as a Banach Space#^cor-35-7|551 Cor. §35.7]] (for $p = 1$: [[§23 The Dominated Convergence Theorem#^cor-23-4|551 Cor. §23.4]]).
+> - Computational version: [[§85 Alternating Series and Absolute Convergence#^thm-85-3|Calc Thm. §85.3]] (with worked examples).
 
 ## The Comparison Test
 
@@ -289,11 +289,11 @@ For the harmonic series we cannot find a closed formula for $s_n$, so we need to
 
 ^pf-14-7
 
-*Uses:* [[§14 Series#^thm-14-1|§14.1]], [[§14 Series#^prop-14-6|§14.6]], [[Monotone Convergence Theorem|§10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|§10.3]], [[§9 Limit Theorems for Sequences#^lem-9-7|§9.7]]
+*Uses:* [[§14 Series#^thm-14-1|§14.1]], [[§14 Series#^prop-14-6|§14.6]], [[Monotone Convergence Theorem|§10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|§10.3]], [[§9a Divergence to ±∞ and the Ratio Test#^lem-9a-1|§9a.1]]
 
 > [!remark]- Connections
-> - Computational version: [[§72 The Comparison Tests#^thm-72-1|Calc Thm. §72.1]] (with worked examples).
-> - Used in ODEs: comparison with $\sum_k (nK|t|)^k/k!$ shows that every entry of the matrix exponential $e^{\mathbf{A}t}$ converges, [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
+> - Computational version: [[§84 The Comparison Tests#^thm-84-1|Calc Thm. §84.1]] (with worked examples).
+> - Used in ODEs: comparison with $\sum_k (nK|t|)^k/k!$ shows that every entry of the matrix exponential $e^{\mathbf{A}t}$ converges, [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 
 > [!theorem] Proposition §14.8: Bounded Multipliers Preserve Absolute Convergence (HW)
 > If $\sum |a_n|$ converges and $(b_n)$ is a bounded sequence, then $\sum a_n b_n$ converges — absolutely, in fact.
@@ -345,7 +345,7 @@ To use the comparison test, we need a stock of basic series.
 ^ex-14-3
 
 > [!remark]- Connections
-> - Computational version: the p-series by the Integral Test, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]] (with worked examples).
+> - Computational version: the p-series by the Integral Test, [[§83 The Integral Test and Estimates of Sums#^thm-83-2|Calc Thm. §83.2]] (with worked examples).
 
 > [!example] Example §14.4: The Geometric Series
 > For $a \in \mathbb{R}$, the geometric series $\sum_{n=0}^\infty a^n$ converges if and only if $|a| < 1$, with
@@ -359,7 +359,7 @@ To use the comparison test, we need a stock of basic series.
 ^ex-14-4
 
 > [!remark]- Connections
-> - Computational version: [[§70 Series#^thm-70-1|Calc Thm. §70.1]] (with worked examples).
+> - Computational version: [[§82 Series#^thm-82-1|Calc Thm. §82.1]] (with worked examples).
 
 ## The Ratio and Root Tests
 
@@ -396,7 +396,7 @@ To use the comparison test, we need a stock of basic series.
 *Uses:* [[§14 Series#^ex-14-4|Ex. §14.4]], [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^cor-14-2|§14.2]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]]
 
 > [!remark]- Connections
-> - Computational version: [[§74 The Ratio and Root Tests#^thm-74-1|Calc Thm. §74.1]] (with worked examples).
+> - Computational version: [[§86 The Ratio and Root Tests#^thm-86-1|Calc Thm. §86.1]] (with worked examples).
 
 > [!theorem] Theorem §14.10: Root Test
 > Let $r = \limsup_{n\to\infty} |a_n|^{1/n}$.
@@ -421,7 +421,7 @@ To use the comparison test, we need a stock of basic series.
 *Uses:* [[§14 Series#^ex-14-4|Ex. §14.4]], [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^cor-14-2|§14.2]], [[§9 Limit Theorems for Sequences#^ex-9-4|Ex. §9.4]]
 
 > [!remark]- Connections
-> - Computational version: [[§74 The Ratio and Root Tests#^thm-74-2|Calc Thm. §74.2]] (with worked examples).
+> - Computational version: [[§86 The Ratio and Root Tests#^thm-86-2|Calc Thm. §86.2]] (with worked examples).
 
 > [!example] Example §14.5: Three Quick Applications
 > Decide convergence or divergence, by any means:

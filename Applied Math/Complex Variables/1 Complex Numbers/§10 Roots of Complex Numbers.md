@@ -41,7 +41,7 @@ As $\theta$ increases, the point $z = re^{i\theta}$ moves counterclockwise aroun
 
 ^pf-10-1
 
-*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§119 Trigonometry#^thm-119-5|Calc Thm. §119.5]] (periodicity)
+*Uses:* [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§7 Exponential Form#^def-7-4|Def. §7.4]], [[§7 Exponential Form#^def-7-5|Def. §7.5]], [[§142 Trigonometry#^thm-142-5|Calc Thm. §142.5]] (periodicity)
 
 ## The nth Roots
 
@@ -100,11 +100,11 @@ An **$n$th root** of a nonzero complex number $z_0$ ($n = 2, 3, \ldots$) is a nu
 ^def-10-1
 
 > [!definition] Definition §10.2: Principal Root
-> When the value of $\theta_0$ used in (1) is the principal value $\operatorname{Arg} z_0$ ([[§7 Exponential Form#^def-7-new2|Definition §7.3]]) ($-\pi < \theta_0 \le \pi$), the number $c_0$ is called the **principal root**. Thus when $z_0$ is a positive real number $r_0$, its principal root is $\sqrt[n]{r_0}$.
+> When the value of $\theta_0$ used in (1) is the principal value $\operatorname{Arg} z_0$ ([[§7 Exponential Form#^def-7-3|Definition §7.3]]) ($-\pi < \theta_0 \le \pi$), the number $c_0$ is called the **principal root**. Thus when $z_0$ is a positive real number $r_0$, its principal root is $\sqrt[n]{r_0}$.
 >
 > *B&C: Sec. 10 (text)*
 
-^def-10-new1
+^def-10-2
 
 > [!theorem] Proposition §10.3: Roots Through a Root of Unity
 > Let
@@ -141,7 +141,7 @@ An **$n$th root** of a nonzero complex number $z_0$ ($n = 2, 3, \ldots$) is a nu
 *Uses:* [[§10 Roots of Complex Numbers#^thm-10-2|§10.2]], [[§8 Products and Powers in Exponential Form#^cor-8-3|§8.3]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§3 Further Algebraic Properties#^prop-3-3|§3.3]]
 
 > [!remark]- Connections
-> - Multiplication by $\omega_n$ is the rotation of the plane through $2\pi/n$, whose matrix is the rotation matrix of [[§53 Complex Numbers#^rem-53-3|235 Remark: Complex Numbers as 2 × 2 Matrices]] with $r = 1$, $\varphi = 2\pi/n$. Its $n$th power is the identity.
+> - Multiplication by $\omega_n$ is the rotation of the plane through $2\pi/n$, whose matrix is the rotation matrix of [[§64 Complex Numbers#^rem-64-3|235 Remark: Complex Numbers as 2 × 2 Matrices]] with $r = 1$, $\varphi = 2\pi/n$. Its $n$th power is the identity.
 
 > [!remark] Remark: Method — Finding nth Roots
 > A convenient way to remember (1):

@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 7
-section: 95
+section: "95★"
 bc: "95"
 aliases: ["B&C 95"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§94 Rouché's Theorem]] · ↑ [[· 7 Applications of Residues]] · [[§96★ Linear Transformations]] →
+← [[§94 Rouché's Theorem]] · ↑ [[· 7 Applications of Residues]] · [[§95a The Integral of 1∕(√x (x² + 1))]] →
 
 *Brown–Churchill, Section 95.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -43,7 +43,7 @@ $$
 F(s) = \int_0^\infty e^{-st}f(t)\,dt , \qquad (3)
 $$
 
-now for complex $s$. If $f$ is piecewise continuous on every finite interval and $|f(t)| \le Ke^{at}$ for $t \ge 0$, the integral converges absolutely for $\operatorname{Re}s > a$, since $|e^{-st}f(t)| \le Ke^{-(\operatorname{Re}s - a)t}$; this is the proof of [[§21 Definition of the Laplace Transform#^thm-21-2|331 Thm. §21.2]] with $\operatorname{Re}s$ in place of $s$. B&C states that "when fairly general conditions are imposed", the Bromwich integral (2) of the transform $F$ returns $f$; Theorem §95.4 below is such a statement. The computation rests on the residue theorem on the closed contour $L_R + C_R$:
+now for complex $s$. If $f$ is piecewise continuous on every finite interval and $|f(t)| \le Ke^{at}$ for $t \ge 0$, the integral converges absolutely for $\operatorname{Re}s > a$, since $|e^{-st}f(t)| \le Ke^{-(\operatorname{Re}s - a)t}$; this is the proof of [[§26 Definition of the Laplace Transform#^thm-26-2|331 Thm. §26.2]] with $\operatorname{Re}s$ in place of $s$. B&C states that "when fairly general conditions are imposed", the Bromwich integral (2) of the transform $F$ returns $f$; Theorem §95.4 below is such a statement. The computation rests on the residue theorem on the closed contour $L_R + C_R$:
 
 $$
 \int_{L_R} e^{st}F(s)\,ds = 2\pi i\sum_{n=1}^{N}\operatorname{Res}_{s=s_n}\big[e^{st}F(s)\big] - \int_{C_R} e^{st}F(s)\,ds . \qquad (4)
@@ -142,7 +142,7 @@ In heat conduction and vibration problems $F(s)$ typically has infinitely many i
 
 ## The Bromwich Integral Inverts the Transform
 
-Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the function whose transform is $F$ is a separate statement, which B&C leaves at "it can be shown". It is the Fourier integral theorem in disguise. Call $f$ **sectionally smooth** on $[0, \infty)$ if it is sectionally smooth on every finite interval ([[§8 Convergence of Fourier Series#^def-8-4|341 Def. §8.4]]).
+Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the function whose transform is $F$ is a separate statement, which B&C leaves at "it can be shown". It is the Fourier integral theorem in disguise. Call $f$ **sectionally smooth** on $[0, \infty)$ if it is sectionally smooth on every finite interval ([[§12 Convergence of Fourier Series#^def-12-4|341 Def. §12.4]]).
 
 > [!theorem] Theorem §95.4: Inversion by the Bromwich Integral
 > Let $f$ be sectionally smooth on $[0, \infty)$ with $|f(t)| \le Ke^{at}$ for $t \ge 0$, and let $F$ be its Laplace transform (3), $\operatorname{Re}s > a$. Then for every $\gamma > a$ and every $t > 0$,
@@ -164,7 +164,7 @@ Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the
 > \int_{-\infty}^{\infty}|g(\tau)|\,d\tau \le K\int_0^\infty e^{-(\gamma - a)\tau}\,d\tau = \frac{K}{\gamma - a} < \infty .
 > $$
 >
-> So $g$ satisfies the hypotheses of the Fourier integral theorem, and its complex coefficient function ([[§15★ Complex Methods#^def-15-2|341 Def. §15.2]]) is
+> So $g$ satisfies the hypotheses of the Fourier integral theorem, and its complex coefficient function ([[§19★ Complex Methods#^def-19-2|341 Def. §19.2]]) is
 >
 > $$
 > C(\lambda) = \frac{1}{2\pi}\int_{-\infty}^{\infty} g(\tau)e^{-i\lambda\tau}\,d\tau = \frac{1}{2\pi}\int_0^\infty e^{-(\gamma + i\lambda)\tau}f(\tau)\,d\tau = \frac{1}{2\pi}F(\gamma + i\lambda) .
@@ -176,16 +176,16 @@ Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the
 > \frac{1}{2\pi i}\int_{L_R} e^{st}F(s)\,ds = \frac{1}{2\pi}\int_{-R}^{R} e^{(\gamma + i\lambda)t}F(\gamma + i\lambda)\,d\lambda = e^{\gamma t}\int_{-R}^{R} C(\lambda)e^{i\lambda t}\,d\lambda .
 > $$
 >
-> By the complex form of the Fourier integral theorem ([[§15★ Complex Methods#^thm-15-2|341 Thm. §15.2]]), as $R \to \infty$ the right side tends to $e^{\gamma t}\cdot\frac12\big(g(t+) + g(t-)\big)$, and for $t > 0$ this is $\frac12\big(f(t+) + f(t-)\big)$, because $e^{-\gamma\tau}$ is continuous.
+> By the complex form of the Fourier integral theorem ([[§19★ Complex Methods#^thm-19-2|341 Thm. §19.2]]), as $R \to \infty$ the right side tends to $e^{\gamma t}\cdot\frac12\big(g(t+) + g(t-)\big)$, and for $t > 0$ this is $\frac12\big(f(t+) + f(t-)\big)$, because $e^{-\gamma\tau}$ is continuous.
 
 ^pf-95-4
 
-*Uses:* [[§95★ Inverse Laplace Transforms#^def-95-1|Def. §95.1]], [[§15★ Complex Methods#^thm-15-2|341 Thm. §15.2]], [[§15★ Complex Methods#^def-15-2|341 Def. §15.2]], [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]]
+*Uses:* [[§95★ Inverse Laplace Transforms#^def-95-1|Def. §95.1]], [[§19★ Complex Methods#^thm-19-2|341 Thm. §19.2]], [[§19★ Complex Methods#^def-19-2|341 Def. §19.2]], [[§18 Fourier Integral#^thm-18-1|341 Thm. §18.1]]
 
-*The proof is complete relative to the Fourier integral theorem, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]], which the vault states without proof. For rational $F$, Theorem §95.6 below proves the inversion directly, without it.*
+*The proof is complete relative to the Fourier integral theorem, [[§18 Fourier Integral#^thm-18-1|341 Thm. §18.1]], which the vault states without proof. For rational $F$, Theorem §95.6 below proves the inversion directly, without it.*
 
 > [!remark]- Connections
-> - BDP mentions this formula only as "a general formula for the inverse transform [that] requires functions of a complex variable", [[§22 Solution of Initial Value Problems#^def-22-1|331 Def. §22.1]]; Theorem §95.4 is that formula. At $t = 0$ the same computation gives $\frac12f(0+)$, and for $t < 0$ it gives $0$: the Bromwich integral reproduces $f$ extended by zero to negative times.
+> - BDP mentions this formula only as "a general formula for the inverse transform [that] requires functions of a complex variable", [[§27 Solution of Initial Value Problems#^def-27-1|331 Def. §27.1]]; Theorem §95.4 is that formula. At $t = 0$ the same computation gives $\frac12f(0+)$, and for $t < 0$ it gives $0$: the Bromwich integral reproduces $f$ extended by zero to negative times.
 
 > [!theorem] Corollary §95.5: Uniqueness of the Inverse Transform
 > Let $f_1$ and $f_2$ be sectionally smooth on $[0, \infty)$ with $|f_j(t)| \le Ke^{at}$, and suppose their Laplace transforms agree for all real $s > a$. Then $f_1(t) = f_2(t)$ at every $t > 0$ where both are continuous; more precisely, $f_1(t+) + f_1(t-) = f_2(t+) + f_2(t-)$ for all $t > 0$.
@@ -201,7 +201,7 @@ Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the
 > \Big|\frac{F_j(s + h) - F_j(s)}{h} + \int_0^\infty te^{-st}f_j(t)\,dt\Big| \le \int_0^\infty e^{-\sigma t}|f_j(t)|\,\frac{|h|t^2e^{\delta t}}{2}\,dt \le \frac{|h|K}{2}\int_0^\infty t^2e^{-\delta t}\,dt = \frac{|h|K}{\delta^3} ,
 > $$
 >
-> which tends to $0$ with $h$. So $F_j'(s)$ exists for every $s$ in the half plane: $F_j$ is analytic there. (This is the argument of [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]], entry 19, with complex $h$.)
+> which tends to $0$ with $h$. So $F_j'(s)$ exists for every $s$ in the half plane: $F_j$ is analytic there. (This is the argument of [[§27 Solution of Initial Value Problems#^thm-27-6|331 Thm. §27.6]], entry 19, with complex $h$.)
 >
 > **Conclusion.** $F_1 - F_2$ is analytic in the domain $\operatorname{Re}s > a$ and vanishes on the segment $a + 1 \le s \le a + 2$ of the real axis, so it vanishes identically ([[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]]). In particular $F_1 = F_2$ on the line $\operatorname{Re}s = a + 1$, and Theorem §95.4 with $\gamma = a + 1$ gives $\frac12\big(f_1(t+) + f_1(t-)\big) = \frac12\big(f_2(t+) + f_2(t-)\big)$ for $t > 0$.
 
@@ -210,7 +210,7 @@ Theorems §95.2 and §95.3 evaluate the Bromwich integral; that its value is the
 *Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-4|§95.4]], [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|§28.1]], [[§19 Derivatives#^def-19-1|Def. §19.1]]
 
 > [!remark]- Connections
-> - This is Lerch's theorem, [[§22 Solution of Initial Value Problems#^thm-22-4|331 Thm. §22.4]], which BDP states without proof ("it can be shown"), here proved for sectionally smooth functions of exponential order (relative to the Fourier integral theorem). It is what makes a table of transforms, read backwards, a table of inverse transforms.
+> - This is Lerch's theorem, [[§27 Solution of Initial Value Problems#^thm-27-4|331 Thm. §27.4]], which BDP states without proof ("it can be shown"), here proved for sectionally smooth functions of exponential order (relative to the Fourier integral theorem). It is what makes a table of transforms, read backwards, a table of inverse transforms.
 
 ## Rational Transforms
 
@@ -263,16 +263,16 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 *Uses:* [[§95★ Inverse Laplace Transforms#^thm-95-2|§95.2]], [[§83 Zeros and Poles#^thm-83-1|§83.1]], [[§67 Proof of Laurent's Theorem#^thm-67-1|§67.1]], [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|§58.1]], [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]]
 
 > [!remark]- Connections
-> - Part (c) is entry 11 of the table, $\mathcal{L}\{t^ne^{at}\} = n!/(s - a)^{n+1}$, [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]], extended to complex $a$; part (a) is the partial fraction decomposition used in [[§22 Solution of Initial Value Problems#^rem-22-4|331 Remark: Method — Inverting a Rational Transform]], proved here by Liouville's theorem (for real factors: [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]]). At simple poles the residues are $P(s_n)/Q'(s_n)\,e^{s_nt}$, which is Heaviside's formula, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]]; at a double pole, [[§54★ More Difficult Examples#^prop-54-2|341 Prop. §54.2]].
+> - Part (c) is entry 11 of the table, $\mathcal{L}\{t^ne^{at}\} = n!/(s - a)^{n+1}$, [[§27 Solution of Initial Value Problems#^thm-27-6|331 Thm. §27.6]], extended to complex $a$; part (a) is the partial fraction decomposition used in [[§27 Solution of Initial Value Problems#^rem-27-4|331 Remark: Method — Inverting a Rational Transform]], proved here by Liouville's theorem (for real factors: [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-3|Calc Thm. §54.3]]). At simple poles the residues are $P(s_n)/Q'(s_n)\,e^{s_nt}$, which is Heaviside's formula, [[§65★ Partial Fractions and Convolutions#^thm-65-2|341 Thm. §65.2]]; at a double pole, [[§67★ More Difficult Examples#^prop-67-2|341 Prop. §67.2]].
 
 > [!remark] Remark: Why the Extended Heaviside Formula Works
-> In [[§53★ Partial Differential Equations#^rem-53-3|341 Remark: Why It Works]], the solution $u(x, t)$ of a heat or wave problem is recovered from its transform $U(x, s)$ by summing the terms $A_n(x)e^{r_nt}$, the residues of $e^{st}U(x, s)$ at its poles $r_n$. The results above make this precise, for each fixed $x$:
+> In [[§66★ Partial Differential Equations#^rem-66-3|341 Remark: Why It Works]], the solution $u(x, t)$ of a heat or wave problem is recovered from its transform $U(x, s)$ by summing the terms $A_n(x)e^{r_nt}$, the residues of $e^{st}U(x, s)$ at its poles $r_n$. The results above make this precise, for each fixed $x$:
 > - If $u(x, \cdot)$ is sectionally smooth and of exponential order, Theorem §95.4 says that the Bromwich integral of $U(x, \cdot)$ returns $u(x, t)$.
 > - If $U(x, \cdot)$ is a single-valued function of $s$ with only isolated singular points to the left of $\operatorname{Re}s = \gamma$, and is small on a sequence of semicircles $C_{R_N}$ passing between the poles, Theorem §95.3 evaluates that Bromwich integral as the series of residues, grouped by the semicircles.
 >
-> Together, $u(x, t) = \sum_n\operatorname{Res}_{s=r_n}[e^{st}U(x, s)]$, which is the extended Heaviside formula. Example §95.3 shows how the condition on the semicircles is checked for a denominator $\sinh s$. For $\sinh\sqrt s$, as in [[§53★ Partial Differential Equations#^ex-53-3|341 Ex. §53.3]], the same idea works with $w = \sqrt s$:
+> Together, $u(x, t) = \sum_n\operatorname{Res}_{s=r_n}[e^{st}U(x, s)]$, which is the extended Heaviside formula. Example §95.3 shows how the condition on the semicircles is checked for a denominator $\sinh s$. For $\sinh\sqrt s$, as in [[§66★ Partial Differential Equations#^ex-66-3|341 Ex. §66.3]], the same idea works with $w = \sqrt s$:
 >
-> **The estimate for 341 Ex. §53.3.** There $U(x, s) = \dfrac{\sinh(wx) + \sinh(w(1 - x))}{s\sinh w}$ $(0 \le x \le 1)$, which is even in $w$ and so a single-valued function of $s$, with poles at $0$ and $-n^2\pi^2$; compute with the principal root $w = \xi + i\eta$, $\xi \ge 0$, so that $s = \xi^2 - \eta^2 + 2i\xi\eta$. Take $\gamma = 1$ and $R_N = 1 + \eta_N^2$ with $\eta_N = (N + \frac12)\pi$, $N \ge 2$: $C_{R_N}$ crosses the negative axis at $-\eta_N^2$, between the poles. Since $|\sinh(wx)|^2 = \sinh^2(\xi x) + \sin^2(\eta x) \le \cosh^2(\xi x)$, the numerator is at most $e^{\xi x} + e^{\xi(1 - x)} \le 1 + e^{\xi}$ (a convex function of $x$ is largest at an endpoint). *Where $\xi \ge 1$*, $|\sinh w| \ge \sinh\xi \ge \frac12e^{\xi}(1 - e^{-2})$, so the quotient of the numerator by $\sinh w$ is at most $2(1 + e^{-1})/(1 - e^{-2}) < 4$. *Where $\xi < 1$*, write a point of $C_{R_N}$ as $s = 1 - R_N + \varepsilon + iy$ with $\varepsilon = R_N - \sqrt{R_N^2 - y^2} \le y^2/R_N$; here $|y| = 2\xi|\eta| < 2|\eta|$ and $\eta^2 = \xi^2 - \operatorname{Re}s \le R_N$, so $0 \le \varepsilon < 4$, and $\eta^2 = \eta_N^2 + \xi^2 - \varepsilon$ gives $\big|\eta^2 - \eta_N^2\big| < 4$, hence $\big||\eta| - \eta_N\big| < 4/\eta_N \le 4/(2.5\pi) < 0.51$ and $|\sinh w| \ge |\sin\eta| > \cos 0.51 > \frac12$; the quotient is at most $2(1 + e) < 8$. So $|U(x, s)| \le 8/|s| \le 8/(R_N - 1) \to 0$ on $C_{R_N}$, uniformly in $x$, and Theorem §95.3 applies.
+> **The estimate for 341 Ex. §66.3.** There $U(x, s) = \dfrac{\sinh(wx) + \sinh(w(1 - x))}{s\sinh w}$ $(0 \le x \le 1)$, which is even in $w$ and so a single-valued function of $s$, with poles at $0$ and $-n^2\pi^2$; compute with the principal root $w = \xi + i\eta$, $\xi \ge 0$, so that $s = \xi^2 - \eta^2 + 2i\xi\eta$. Take $\gamma = 1$ and $R_N = 1 + \eta_N^2$ with $\eta_N = (N + \frac12)\pi$, $N \ge 2$: $C_{R_N}$ crosses the negative axis at $-\eta_N^2$, between the poles. Since $|\sinh(wx)|^2 = \sinh^2(\xi x) + \sin^2(\eta x) \le \cosh^2(\xi x)$, the numerator is at most $e^{\xi x} + e^{\xi(1 - x)} \le 1 + e^{\xi}$ (a convex function of $x$ is largest at an endpoint). *Where $\xi \ge 1$*, $|\sinh w| \ge \sinh\xi \ge \frac12e^{\xi}(1 - e^{-2})$, so the quotient of the numerator by $\sinh w$ is at most $2(1 + e^{-1})/(1 - e^{-2}) < 4$. *Where $\xi < 1$*, write a point of $C_{R_N}$ as $s = 1 - R_N + \varepsilon + iy$ with $\varepsilon = R_N - \sqrt{R_N^2 - y^2} \le y^2/R_N$; here $|y| = 2\xi|\eta| < 2|\eta|$ and $\eta^2 = \xi^2 - \operatorname{Re}s \le R_N$, so $0 \le \varepsilon < 4$, and $\eta^2 = \eta_N^2 + \xi^2 - \varepsilon$ gives $\big|\eta^2 - \eta_N^2\big| < 4$, hence $\big||\eta| - \eta_N\big| < 4/\eta_N \le 4/(2.5\pi) < 0.51$ and $|\sinh w| \ge |\sin\eta| > \cos 0.51 > \frac12$; the quotient is at most $2(1 + e) < 8$. So $|U(x, s)| \le 8/|s| \le 8/(R_N - 1) \to 0$ on $C_{R_N}$, uniformly in $x$, and Theorem §95.3 applies.
 >
 > When $U$ is not single-valued (a branch point at $s = 0$ from $e^{-\sqrt s\,x}$), the contour must avoid the branch cut, as in [[§91★ Integration Along a Branch Cut|§91★]], and the inverse transform contains an integral along the cut besides the residues.
 
@@ -316,7 +316,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 > f(t) = \phi_1(2i) + \phi_2(-2i) = \frac{e^{i2t}(2i)}{4i} + \frac{e^{-i2t}(-2i)}{-4i} = \frac{e^{i2t} + e^{-i2t}}{2} = \cos2t .
 > $$
 >
-> B&C treats this formally; here Theorem §95.6 applies ($\deg P = 1 < 2 = \deg Q$), so $\cos2t$ is the inverse transform and the Bromwich integral with any $\gamma > 0$ converges to it. It agrees with the table entry $\mathcal{L}\{\cos at\} = s/(s^2 + a^2)$, [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]] (entry 6).
+> B&C treats this formally; here Theorem §95.6 applies ($\deg P = 1 < 2 = \deg Q$), so $\cos2t$ is the inverse transform and the Bromwich integral with any $\gamma > 0$ converges to it. It agrees with the table entry $\mathcal{L}\{\cos at\} = s/(s^2 + a^2)$, [[§27 Solution of Initial Value Problems#^thm-27-6|331 Thm. §27.6]] (entry 6).
 >
 > *B&C: Sec. 95, Example*
 
@@ -390,7 +390,7 @@ For rational $F$ everything can be proved from scratch: the residue sum is an ex
 >
 > B&C's answer, where $f(t)$ is the Bromwich integral taken along the segments $L_{R_N}$.
 >
-> **(e) Which function is it?** The series is the Fourier series of the sawtooth: $x$ on $-1 < x < 1$, extended with period $2$ ([[§7 Arbitrary Period and Half-Range Expansions#^ex-7-3|341 Ex. §7.3]]); it converges to $t$ for $0 < t < 1$, to $t - 2$ for $1 < t < 3$, and so on, and to $0$ at the jumps $t = 1, 3, 5, \ldots$. Conversely, the sawtooth is $f(t) = t - 2\sum_{k\ge1}u_{2k-1}(t)$, with $u_c$ the unit step at $c$, and for $s > 0$, by [[§23 Step Functions#^thm-23-1|331 Thm. §23.1]],
+> **(e) Which function is it?** The series is the Fourier series of the sawtooth: $x$ on $-1 < x < 1$, extended with period $2$ ([[§11 Even and Odd Functions; Half-Range Expansions#^ex-11-1|341 Ex. §11.1]]); it converges to $t$ for $0 < t < 1$, to $t - 2$ for $1 < t < 3$, and so on, and to $0$ at the jumps $t = 1, 3, 5, \ldots$. Conversely, the sawtooth is $f(t) = t - 2\sum_{k\ge1}u_{2k-1}(t)$, with $u_c$ the unit step at $c$, and for $s > 0$, by [[§28 Step Functions#^thm-28-1|331 Thm. §28.1]],
 >
 > $$
 > \mathcal{L}\{f\} = \frac{1}{s^2} - \frac2s\sum_{k\ge1}e^{-(2k-1)s} = \frac{1}{s^2} - \frac2s\cdot\frac{e^{-s}}{1 - e^{-2s}} = \frac{1}{s^2} - \frac{2}{s(e^s - e^{-s})} = \frac{1}{s^2} - \frac{1}{s\sinh s} .

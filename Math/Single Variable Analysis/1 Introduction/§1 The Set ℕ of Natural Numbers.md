@@ -40,7 +40,7 @@ are the numbers we first learn by counting. They feel so natural that one rarely
 ^rem-1-1
 
 > [!remark]- Connections
-> - Elementary version: Peano's axioms with a successor function, [[§9 Injections, Surjections and Bijections#^def-9-6|250 Def. §9.6]]; axiom N5 is the set form of induction, [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
+> - Elementary version: Peano's axioms with a successor function, [[§9 Injections, Surjections and Bijections#^def-9-9|250 Def. §9.9]]; axiom N5 is the set form of induction, [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
 
 ## Mathematical Induction
 
@@ -66,7 +66,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 > [!remark]- Connections
 > - Elementary version: [[§5 The Induction Principle#^def-5-1|250 Def. §5.1]], where induction itself is the axiom and is shown equivalent to the set form N5 in [[§7 Quantifiers#^def-7-4|250 Def. §7.4]].
-> - Computational version: [[§120 Sigma Notation#^def-120-2|Calc Def. §120.2]] (with worked examples).
+> - Computational version: [[§143 Sigma Notation#^def-143-2|Calc Def. §143.2]] (with worked examples).
 
 > [!remark] Remark
 > When applying induction, it is important to state precisely what $P_n$ is. Many failed induction proofs fail at exactly this point: the statement being carried through the induction is not strong enough (see [[§1 The Set ℕ of Natural Numbers#^ex-1-2|Example §1.2]] below) or the starting point is wrong (see [[§1 The Set ℕ of Natural Numbers#^ex-1-3|Example §1.3]]).

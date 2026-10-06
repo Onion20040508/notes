@@ -32,7 +32,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 
 > [!remark]- Connections
 > - The first major example: [[§41 The Tangent Bundle#^cor-41-3|the tangent bundle, §41.3]]; sections of a fibration: [[§34 Fibrations#^def-34-2|Def. §34.2]].
-> - The topological analogue with discrete fibre: [[§24 Covering Spaces#^def-24-2|covering maps, 590 Def. §24.2]]; in 591, [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps (§31)]].
+> - The topological analogue with discrete fibre: [[§31 Covering Spaces#^def-31-2|covering maps, 590 Def. §31.2]]; in 591, [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps (§31)]].
 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
@@ -55,7 +55,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 
 ^pf-34-1
 
-*Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]], [[§32 Submersions#^def-32-1|Def. §32.1]], [[§32 Submersions#^ex-32-2|Ex. §32.2]], [[§32 Submersions#^cor-32-6|§32.6]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
+*Uses:* [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§26 Derivations and the Abstract Tangent Space#^cor-26-7|§26.7]], [[§32 Submersions#^def-32-1|Def. §32.1]], [[§32 Submersions#^ex-32-2|Ex. §32.2]], [[§32 Submersions#^cor-32-6|§32.6]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
 The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§37 Projective Spaces and the Hopf Fibration|§37]].
 
@@ -104,7 +104,7 @@ This upgrades [[§34 Fibrations#^prop-34-1|Proposition §34.1]](1) from homeomor
 
 ^pf-ex-34-1
 
-*Uses:* [[§32 Submersions#^ex-32-1|Ex. §32.1]], [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§34 Fibrations#^prop-34-2|§34.2]], [[§13 Connected Spaces#^thm-13-3|590 §13.3]], [[§14 Connected Subspaces of ℝ#^cor-14-2|590 §14.2]]
+*Uses:* [[§32 Submersions#^ex-32-1|Ex. §32.1]], [[§34 Fibrations#^def-34-1|Def. §34.1]], [[§34 Fibrations#^prop-34-2|§34.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]]
 
 ![[m591-16-4.svg]]
 *The punctured plane over the $x$-axis. Every fibre is a whole vertical line except the one over $0$, which is broken at the missing point into two half-lines. The fibres are all submanifolds ([[§33 Submanifolds#^cor-33-7|Corollary §33.7]]), but not all of the same type.*
@@ -124,7 +124,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *Left: the strip $[0, 1] \times (-1, 1)$, ruled by its fibres, with the core circle in orange; glue the two ends with a half-twist, matching the arrows. Right: the band itself. Each grey segment is a fibre, lying over one point of the orange core circle, and the boundary is a single curve.*
 
 > [!remark]- Connections
-> - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]]; quotient spaces in 590: [[§12 Quotient Topology#^def-12-3|590 Def. §12.3]].
+> - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]]; quotient spaces in 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3]].
 
 ## When Is a Submersion a Fibration?
 
@@ -143,7 +143,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *Status.* Stated in Lecture 13, not proved: “we don't have time to do the proof, and it uses material that we're not going to cover called connections.” Uribe first recalled the case of a compact fibre, then the general statement for proper maps, which is the form given here. The intuition: a connection lets one lift a path from $b$ to $b'$ in the base to paths in $E$, and flow the fibre over $b$ onto the fibre over $b'$; properness is what lets the flow run for as long as needed, so that it identifies the fibres not just one at a time but over a whole neighbourhood — a local trivialization. The transcript renders the name as “Aristotle”; it is Ehresmann.
 
 > [!remark]- Connections
-> - Proper maps were defined earlier, for group actions: [[§12 Group Actions and Orbit Spaces#^def-12-6|Def. §12.6]]; compactness: [[§15 Compact Spaces|590 §15]].
+> - Proper maps were defined earlier, for group actions: [[§12 Group Actions and Orbit Spaces#^def-12-6|Def. §12.6]]; compactness: [[§18 Compact Spaces|590 §18]].
 
 > [!example] Example §34.3: All Fibres Diffeomorphic but Not a Fibration
 > Let

@@ -37,7 +37,7 @@ tags: [functional-analysis, math556]
 ^def-15-2
 
 > [!remark]- Connections
-> - Same definition in Measure Theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|551 Def. §19.7]] (written $p'$ there).
+> - Same definition in Measure Theory: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-10|551 Def. §34.10]] (written $p'$ there).
 
 > [!theorem] Theorem §15.1: Hölder's Inequality for Sequences
 > Let $1 \le p \le \infty$ and let $q$ be the conjugate exponent. For all $a = (a_i), b = (b_i) \in \ell$,
@@ -106,7 +106,7 @@ For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§14 Mean
 *Uses:* [[§15 Hölder's Inequality for Sequences#^def-15-1|Def. §15.1]], [[§15 Hölder's Inequality for Sequences#^def-15-2|Def. §15.2]], [[§14 Means and Young's Inequality#^lem-14-3|§14.3]]
 
 > [!remark]- Connections
-> - The integral version, home of the inequality in the vault: [[Hölder's Inequality|551 §19.5]], proved by the same normalize–Young–integrate argument; in this course [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-1|§17.1]] (cited) and [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] (continuous functions, HW3).
+> - The integral version, home of the inequality in the vault: [[Hölder's Inequality|551 §34.5]], proved by the same normalize–Young–integrate argument; in this course [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-1|§17.1]] (cited) and [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] (continuous functions, HW3).
 > - Used for Minkowski's inequality [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]] and for the convergence of the $\ell^2$ inner product in [[§20 Definition and Examples#^ex-20-2|Ex. §20.2]].
 
 > [!remark] Remark

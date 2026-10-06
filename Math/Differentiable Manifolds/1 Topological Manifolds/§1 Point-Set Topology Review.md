@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Foundations — The point-set tools that every later construction draws on.*
 
-*Reference: Lee Appendix A; MATH 590 notes [[§2 Basis for a Topology|§2]] (bases), [[§8 Hausdorff Spaces|§8]] (Hausdorff), [[§18 Countability Axioms|§18]] (countability axioms).*
+*Reference: Lee Appendix A; MATH 590 notes [[§2 Basis for a Topology|§2]] (bases), [[§9 Hausdorff Spaces|§9]] (Hausdorff), [[§22 Countability Axioms|§22]] (countability axioms).*
 
 > [!remark] Remark: Purpose of this Section
 > This is a reminder, not a first exposure. The point is twofold: (i) recall the two point-set conditions that will be imposed on every manifold (second countability and the Hausdorff property), and (ii) fix the *terminology* used in this course, which differs in small ways from Munkres. Throughout, $X$ denotes a topological space; the topology itself will usually not be given a name.
@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-1
 
 > [!remark]- Connections
-> - Home in 590: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]] (the generative form, recorded here as [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]]).
+> - Home in 590: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§2 Basis for a Topology#^def-2-2|590 Def. §2.2]] (the generative form, recorded here as [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]]).
 
 > [!theorem] Proposition §1.1: Equivalent Formulation of a Basis
 > Let $(U_\alpha)_{\alpha \in A}$ be a collection of open subsets of $X$. The following are equivalent:
@@ -72,7 +72,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-2
 
 > [!remark]- Connections
-> - This is verbatim the 590 definition: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]].
+> - This is verbatim the 590 definition: [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§2 Basis for a Topology#^def-2-2|590 Def. §2.2]].
 
 > [!theorem] Proposition §1.2: The Two Definitions of Basis Agree
 > Let $X$ be a set and $\mathcal{B}$ a collection of subsets of $X$.
@@ -82,7 +82,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-1-2
 
 > [!proof]+ Proof (not given in lecture)
-> (a) That $\mathcal{T}_{\mathcal{B}}$ is a topology was proved in [[§2 Basis for a Topology#^def-2-new1|590 §2]] (axiom 2 is exactly what makes finite intersections open). For $B \in \mathcal{B}$ and $x \in B$, the element $B$ itself witnesses $x \in B \subseteq B$, so $B \in \mathcal{T}_{\mathcal{B}}$. Now let $p \in U$ with $U \in \mathcal{T}_{\mathcal{B}}$; by the very definition of $\mathcal{T}_{\mathcal{B}}$ there is $B \in \mathcal{B}$ with $p \in B \subseteq U$, which is the condition in [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]].
+> (a) That $\mathcal{T}_{\mathcal{B}}$ is a topology was proved in [[§2 Basis for a Topology#^def-2-2|590 §2]] (axiom 2 is exactly what makes finite intersections open). For $B \in \mathcal{B}$ and $x \in B$, the element $B$ itself witnesses $x \in B \subseteq B$, so $B \in \mathcal{T}_{\mathcal{B}}$. Now let $p \in U$ with $U \in \mathcal{T}_{\mathcal{B}}$; by the very definition of $\mathcal{T}_{\mathcal{B}}$ there is $B \in \mathcal{B}$ with $p \in B \subseteq U$, which is the condition in [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]].
 >
 > (b) *Axiom 1:* $X \in \mathcal{T}$ is open, so for $x \in X$ [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] gives $B \in \mathcal{B}$ with $x \in B \subseteq X$. *Axiom 2:* if $B_1, B_2 \in \mathcal{B} \subseteq \mathcal{T}$, then $B_1 \cap B_2 \in \mathcal{T}$ (finite intersection), so for $x \in B_1 \cap B_2$ [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] gives $B_3 \in \mathcal{B}$ with $x \in B_3 \subseteq B_1 \cap B_2$.
 >
@@ -90,7 +90,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-2
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§2 Basis for a Topology#^def-2-1|590 Def. §2.1]], [[§2 Basis for a Topology#^def-2-2|590 Def. §2.2]]
 
 > [!remark] Remark: Which Definition to Use When
 > The proposition says “basis” has a single meaning; the two definitions are just the two directions of use.
@@ -123,7 +123,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-4
 
 > [!remark]- Connections
-> - The 590 counterpart: [[§18 Countability Axioms#^def-18-1|Countable Basis at a Point, 590 §18.1]].
+> - The 590 counterpart: [[§22 Countability Axioms#^def-22-1|Countable Basis at a Point, 590 §22.1]].
 
 > [!theorem] Proposition §1.3: Global and Local Bases
 > Let $X$ be a topological space.
@@ -154,10 +154,10 @@ tags: [differentiable-manifolds, math591]
 ^def-1-5
 
 > [!remark]- Connections
-> - Home in 590: [[§18 Countability Axioms#^def-18-3|590 Def. §18.3]].
+> - Home in 590: [[§22 Countability Axioms#^def-22-3|590 Def. §22.3]].
 
 > [!remark] Remark: Why Second Countability?
-> Second countability is the first of the three conditions defining a manifold. Its job is to keep the space from being “too big.” Concretely, it is what makes *partitions of unity* possible later in the course (via paracompactness), and it forces a manifold to have only countably many connected components ([[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]). Compare [[§18 Countability Axioms#^thm-18-1|590 §18]], where second countability was the hypothesis of the Urysohn metrization theorem.
+> Second countability is the first of the three conditions defining a manifold. Its job is to keep the space from being “too big.” Concretely, it is what makes *partitions of unity* possible later in the course (via paracompactness), and it forces a manifold to have only countably many connected components ([[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]). Compare [[§22 Countability Axioms#^thm-22-1|590 §22]], where second countability was the hypothesis of the Urysohn metrization theorem.
 
 ^rem-1-6
 
@@ -183,10 +183,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-ex-1-1
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§11 Metric Topology#^ex-11-3|590 Ex. §11.3]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§12 Metric Topology#^ex-12-3|590 Ex. §12.3]]
 
 > [!remark]- Connections
-> - The 590 version uses rational boxes instead of balls: [[§18 Countability Axioms#^ex-18-4|590 Ex. §18.4]].
+> - The 590 version uses rational boxes instead of balls: [[§22 Countability Axioms#^ex-22-4|590 Ex. §22.4]].
 
 > [!example] Example §1.2: Non-Example: $\mathbb{R}$ with the Discrete Topology
 > Let $X = \mathbb{R}$ with the discrete topology, so every subset (in particular every singleton $\{x\}$) is open. Then $X$ is *not* second countable.
@@ -200,7 +200,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]]
 
 > [!remark]- Connections
-> - In 590: [[Discrete and indiscrete topologies]]; the general fact that a second-countable space has no uncountable discrete subspace is [[§18 Countability Axioms#^lem-18-2|590 §18.2]].
+> - In 590: [[Discrete and indiscrete topologies]]; the general fact that a second-countable space has no uncountable discrete subspace is [[§22 Countability Axioms#^lem-22-2|590 §22.2]].
 
 > [!definition] Definition §1.6: First Countable at a Point
 > $X$ is **first countable at $x_0 \in X$** if there is a countable basis of neighborhoods of $x_0$ ([[§1 Point-Set Topology Review#^def-1-4|Definition §1.4]]); $X$ is **first countable** if it is first countable at each of its points.
@@ -210,7 +210,7 @@ tags: [differentiable-manifolds, math591]
 ^def-1-6
 
 > [!remark]- Connections
-> - Home in 590: [[§18 Countability Axioms#^def-18-2|590 Def. §18.2]].
+> - Home in 590: [[§22 Countability Axioms#^def-22-2|590 Def. §22.2]].
 
 > [!theorem] Proposition §1.4: Second Countable Implies First Countable
 > A second countable space is first countable at each of its points.
@@ -227,7 +227,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
-> - The same argument in 590: [[§18 Countability Axioms#^rem-18-2|590 §18, remark after Def. §18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
+> - The same argument in 590: [[§22 Countability Axioms#^rem-22-2|590 §22, remark after Def. §18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
 
 > [!remark] Remark
 > The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how [[§4 Quotient Spaces and Open Maps#^ex-4-4|Example §4.4]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false: $\mathbb{R}$ with the discrete topology ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]) is first countable—$\{\{x\}\}$ is a one-element basis of neighborhoods at $x$—but not second countable.
@@ -248,11 +248,11 @@ tags: [differentiable-manifolds, math591]
 ^def-1-7
 
 > [!remark]- Connections
-> - Home in 590: [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
+> - Home in 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]].
 > - For quotients, Hausdorffness is decided by the [[§6 Open Quotients#^thm-6-1|Hausdorff criterion, §6.1]].
 
 > [!remark] Remark
-> There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§19 Separation Axioms#^rem-19-2|590 §19]]). Uribe's editorial: learning all of them is mostly a waste of time. For manifolds, $T_2$ is the one that matters.
+> There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§23 Separation Axioms#^rem-23-2|590 §23]]). Uribe's editorial: learning all of them is mostly a waste of time. For manifolds, $T_2$ is the one that matters.
 
 ^rem-1-8
 
@@ -276,13 +276,13 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-1-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§11 Metric Topology#^def-11-1|590 Def. §11.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§12 Metric Topology#^def-12-1|590 Def. §12.1]]
 
 ![[m591-1-1.svg]]
 *Separating $p \neq q$ in a metric space: the balls $U = B(p, r)$ and $V = B(q, r)$ of radius $r = \tfrac13 d(p,q)$ are disjoint, with a gap of $\tfrac13 d(p,q)$ between them.*
 
 > [!remark]- Connections
-> - Home in 590: [[§11 Metric Topology#^thm-11-4|Every Metric Space is Hausdorff, 590 §11.4]].
+> - Home in 590: [[§12 Metric Topology#^thm-12-4|Every Metric Space is Hausdorff, 590 §12.4]].
 
 > [!example] Example §1.4: Non-Example: The Real Line with Two Origins
 > As a *set*, let
@@ -332,10 +332,10 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
-> - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].
+> - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]].
 
 > [!remark] Remark: The Line with Two Origins as a Quotient
-> Equivalently ([[§4 Quotient Spaces and Open Maps#^prop-4-2|Proposition §4.2]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§12 Quotient Topology|590 §12]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.
+> Equivalently ([[§4 Quotient Spaces and Open Maps#^prop-4-2|Proposition §4.2]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§13 Quotient Topology|590 §13]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.
 
 ^rem-1-9
 
@@ -349,9 +349,9 @@ tags: [differentiable-manifolds, math591]
 > [!theorem] Proposition §1.5: Continuity and Homeomorphisms
 > Let $X, Y$ be topological spaces.
 > 1. $(\ast)$ If $\mathcal{B}$ is a basis for $Y$, then $f : X \to Y$ is continuous if and only if $f^{-1}(B)$ is open in $X$ for every $B \in \mathcal{B}$.
-> 2. A bijection $f : X \to Y$ is a homeomorphism if and only if, for every $U \subseteq X$, $U$ is open in $X$ $\iff$ $f(U)$ is open in $Y$. In particular, homeomorphisms are open maps. ([[§9 Continuous Functions#^prop-9-2|590 §9]])
-> 3. If $f : X \to Y$ is a homeomorphism and $A \subseteq X$, then $f|_A : A \to f(A)$ is a homeomorphism for the subspace topologies; if moreover $A$ is open in $X$, then $f(A)$ is open in $Y$. ([[§9 Continuous Functions#^prop-9-3|590 §9]])
-> 4. A map $F : Z \to X \times Y$ is continuous if and only if $\pi_X \circ F$ and $\pi_Y \circ F$ are continuous. ([[§9 Continuous Functions|590 §9]]; also [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10]])
+> 2. A bijection $f : X \to Y$ is a homeomorphism if and only if, for every $U \subseteq X$, $U$ is open in $X$ $\iff$ $f(U)$ is open in $Y$. In particular, homeomorphisms are open maps. ([[§10 Continuous Functions#^prop-10-2|590 §10]])
+> 3. If $f : X \to Y$ is a homeomorphism and $A \subseteq X$, then $f|_A : A \to f(A)$ is a homeomorphism for the subspace topologies; if moreover $A$ is open in $X$, then $f(A)$ is open in $Y$. ([[§10 Continuous Functions#^prop-10-3|590 §10]])
+> 4. A map $F : Z \to X \times Y$ is continuous if and only if $\pi_X \circ F$ and $\pi_Y \circ F$ are continuous. ([[§10 Continuous Functions|590 §10]]; also [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10]])
 >
 > *Lee: Lemma A.19 and App. A, “Topological Spaces”*
 
@@ -362,28 +362,28 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-5
 
-*Uses:* [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]
 
 > [!proof]+ Proof (to be filled)
-> Parts (2)–(4) are proved in MATH 590 ([[§9 Continuous Functions|590 §9]]); to be filled.
+> Parts (2)–(4) are proved in MATH 590 ([[§10 Continuous Functions|590 §10]]); to be filled.
 
 ^pf-1-5-2
 
 > [!remark]- Connections
-> - Part (1) is also proved in 590, right after [[§9 Continuous Functions#^pf-def-9-1|the definition of continuity, 590 §9.1]]; part (4) is [[§10 Product Topology on Arbitrary Products#^thm-10-1|Continuity into Product Spaces, 590 §10.1]].
+> - Part (1) is also proved in 590, right after [[§10 Continuous Functions#^pf-def-10-1|the definition of continuity, 590 §9.1]]; part (4) is [[§11 Product Topology on Arbitrary Products#^thm-11-1|Continuity into Product Spaces, 590 §11.1]].
 
 > [!theorem] Proposition §1.6: Metric Spaces
 > Let $(X, d)$ be a metric space with the metric topology.
-> 1. $X$ is Hausdorff. ([[§11 Metric Topology#^thm-11-4|590 §11]]; [[§1 Point-Set Topology Review#^ex-1-3|Example §1.3]])
-> 2. For $A \subseteq X$, the subspace topology on $A$ coincides with the metric topology of the restricted metric $d|_{A \times A}$; in particular every subspace of a metric space is metrizable. ([[§11 Metric Topology#^thm-11-6|590 §11]])
-> 3. $X$ is second countable if and only if it is separable (has a countable dense subset). In particular $\mathbb{R}^n$, and hence every subspace of $\mathbb{R}^n$, is second countable. ([[§18 Countability Axioms#^prop-18-4|590 §18]]; [[§1 Point-Set Topology Review#^ex-1-1|Example §1.1]])
+> 1. $X$ is Hausdorff. ([[§12 Metric Topology#^thm-12-4|590 §12]]; [[§1 Point-Set Topology Review#^ex-1-3|Example §1.3]])
+> 2. For $A \subseteq X$, the subspace topology on $A$ coincides with the metric topology of the restricted metric $d|_{A \times A}$; in particular every subspace of a metric space is metrizable. ([[§12 Metric Topology#^thm-12-6|590 §12]])
+> 3. $X$ is second countable if and only if it is separable (has a countable dense subset). In particular $\mathbb{R}^n$, and hence every subspace of $\mathbb{R}^n$, is second countable. ([[§22 Countability Axioms#^prop-22-4|590 §22]]; [[§1 Point-Set Topology Review#^ex-1-1|Example §1.1]])
 >
 > *Lee: Example A.5*
 
 ^prop-1-6
 
 > [!proof]+ Proof (to be filled)
-> Proved in MATH 590 ([[§11 Metric Topology|590 §11]], [[§18 Countability Axioms|590 §18]]); to be filled.
+> Proved in MATH 590 ([[§12 Metric Topology|590 §12]], [[§22 Countability Axioms|590 §22]]); to be filled.
 
 ^pf-1-6
 
@@ -397,9 +397,9 @@ tags: [differentiable-manifolds, math591]
 > [!theorem] Proposition §1.7: Connectedness and Components
 > Let $X$ be a topological space, and components be as in [[§1 Point-Set Topology Review#^def-1-8|Definition §1.8]].
 > 1. The continuous image of a connected space is connected. ([[Continuous Image of a Connected Space is Connected|590 §13]])
-> 2. A union of connected subspaces having a point in common is connected. ([[§13 Connected Spaces#^thm-13-5|590 §13]])
+> 2. A union of connected subspaces having a point in common is connected. ([[§15 Connected Spaces#^thm-15-5|590 §15]])
 > 3. $(\ast)$ The component of $p$ is connected, and the components of $X$ partition $X$: two components are either equal or disjoint.
-> 4. $\mathbb{R}^n$ and its open balls are connected; hence any space homeomorphic to one of them is connected. ([[§14 Connected Subspaces of ℝ|590 §14]], by (1))
+> 4. $\mathbb{R}^n$ and its open balls are connected; hence any space homeomorphic to one of them is connected. ([[§16 Connected Subspaces of ℝ|590 §16]], by (1))
 >
 > *Lee: Propositions A.39, A.41 and A.43*
 
@@ -410,17 +410,17 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-7
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]] (2), [[§13 Connected Spaces#^thm-13-5|590 §13.5]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]] (2), [[§15 Connected Spaces#^thm-15-5|590 §15.5]]
 
 > [!proof]+ Proof (to be filled)
-> Parts (1), (2) and (4) are proved in MATH 590 ([[§13 Connected Spaces|590 §13]], [[§14 Connected Subspaces of ℝ|590 §14]]); to be filled.
+> Parts (1), (2) and (4) are proved in MATH 590 ([[§15 Connected Spaces|590 §15]], [[§16 Connected Subspaces of ℝ|590 §16]]); to be filled.
 
 ^pf-1-7-2
 
 > [!theorem] Proposition §1.8: Compactness
 > 1. (Heine–Borel) A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded. ([[Heine–Borel Theorem|590 §15]])
 > 2. The continuous image of a compact space is compact. ([[Continuous Image of a Compact Space is Compact|590 §15]])
-> 3. A finite product of compact spaces is compact. ([[§15 Compact Spaces#^thm-15-8|590 §15]])
+> 3. A finite product of compact spaces is compact. ([[§18 Compact Spaces#^thm-18-9|590 §18]])
 > 4. A compact subspace of a Hausdorff space is closed. ([[Compact Subspace of a Hausdorff Space is Closed|590 §15]])
 > 5. A closed subset of a compact space is compact. ([[Closed Subspace of a Compact Space is Compact|590 §15]])
 > 6. A continuous bijection from a compact space onto a Hausdorff space is a homeomorphism. ([[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15]]; proof: by (5), (2), (4) it is a closed map)
@@ -430,6 +430,6 @@ tags: [differentiable-manifolds, math591]
 ^prop-1-8
 
 > [!proof]+ Proof (to be filled)
-> Proved in MATH 590 ([[§15 Compact Spaces|590 §15]]); to be filled.
+> Proved in MATH 590 ([[§18 Compact Spaces|590 §18]]); to be filled.
 
 ^pf-1-8

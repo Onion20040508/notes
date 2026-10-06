@@ -53,7 +53,7 @@ With the laws of [[§2 Basic Algebraic Properties|§2]] in place, the remaining 
 >
 > *B&C: Sec. 3, Equations (1) and (2)*
 
-^def-3-new1
+^def-3-2
 
 > [!theorem] Proposition §3.2: Differences and Quotients in Coordinates
 > For $z_1 = (x_1, y_1) = x_1 + iy_1$ and $z_2 = (x_2, y_2) = x_2 + iy_2$,
@@ -77,11 +77,11 @@ With the laws of [[§2 Basic Algebraic Properties|§2]] in place, the remaining 
 > \frac{z_1}{z_2} = (x_1, y_1)\Big(\frac{x_2}{x_2^2 + y_2^2},\ \frac{-y_2}{x_2^2 + y_2^2}\Big) ,
 > $$
 >
-> and the product rule (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]] gives the real part $\big(x_1x_2 - y_1(-y_2)\big)/(x_2^2 + y_2^2)$ and the imaginary part $\big(y_1x_2 + x_1(-y_2)\big)/(x_2^2 + y_2^2)$, which is (4). Equations (5) and (6) are (3) and (4) in the notation $x + iy$.
+> and the product rule (4) of [[§1 Sums and Products#^def-1-4|Definition §1.4]] gives the real part $\big(x_1x_2 - y_1(-y_2)\big)/(x_2^2 + y_2^2)$ and the imaginary part $\big(y_1x_2 + x_1(-y_2)\big)/(x_2^2 + y_2^2)$, which is (4). Equations (5) and (6) are (3) and (4) in the notation $x + iy$.
 
 ^pf-3-2
 
-*Uses:* [[§3 Further Algebraic Properties#^def-3-1|Def. §3.1]], [[§3 Further Algebraic Properties#^def-3-new1|Def. §3.2]], [[§2 Basic Algebraic Properties#^thm-2-3|§2.3]], [[§2 Basic Algebraic Properties#^thm-2-4|§2.4]], [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§3 Further Algebraic Properties#^def-3-1|Def. §3.1]], [[§3 Further Algebraic Properties#^def-3-2|Def. §3.2]], [[§2 Basic Algebraic Properties#^thm-2-3|§2.3]], [[§2 Basic Algebraic Properties#^thm-2-4|§2.4]], [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 ## Rules for Quotients
 
@@ -133,7 +133,7 @@ With the laws of [[§2 Basic Algebraic Properties|§2]] in place, the remaining 
 
 ^pf-3-3
 
-*Uses:* [[§3 Further Algebraic Properties#^def-3-new1|Def. §3.2]], [[§3 Further Algebraic Properties#^thm-3-1|§3.1]], [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§2 Basic Algebraic Properties#^thm-2-4|§2.4]]
+*Uses:* [[§3 Further Algebraic Properties#^def-3-2|Def. §3.2]], [[§3 Further Algebraic Properties#^thm-3-1|§3.1]], [[§2 Basic Algebraic Properties#^thm-2-1|§2.1]], [[§2 Basic Algebraic Properties#^thm-2-4|§2.4]]
 
 > [!remark] Remark: Method — Dividing Complex Numbers
 > Formula (6) is not easy to remember. Instead:

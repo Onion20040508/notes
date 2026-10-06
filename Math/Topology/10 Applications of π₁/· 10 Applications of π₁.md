@@ -12,10 +12,10 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§25 The Fundamental Theorem of Algebra]]
-- [[§25a Retractions and Fixed Points]]
-- [[§26 Deformation Retracts and Homotopy Type]]
-- [[§26a The Punctured Plane, the Figure Eight and the Torus]]
+- [[§33 The Fundamental Theorem of Algebra]]
+- [[§34 Retractions and Fixed Points]]
+- [[§35 Deformation Retracts and Homotopy Type]]
+- [[§36 The Punctured Plane, the Figure Eight and the Torus]]
 
 ## Central results
 - [[Fundamental Theorem of Algebra (topological proof)]] (§25.1)
@@ -25,7 +25,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§25a Retractions and Fixed Points#^lem-26-1|Lemma §26.1: Homotopic Maps and Induced Homomorphisms]]: 5 later results
-- [[§25a Retractions and Fixed Points#^prop-26-3|Proposition §26.3: Algebraic Properties of Retractions]]: 5 later results
-- [[§25a Retractions and Fixed Points#^prop-26-5|Proposition §26.5: Bⁿ is Convex and Simply Connected]]: 3 later results
-- [[§25a Retractions and Fixed Points#^thm-26-2|Theorem §26.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ 0)]]: 2 later results
+- [[§34 Retractions and Fixed Points#^lem-34-1|Lemma §34.1: Homotopic Maps and Induced Homomorphisms]]: 5 later results
+- [[§34 Retractions and Fixed Points#^prop-34-3|Proposition §34.3: Algebraic Properties of Retractions]]: 5 later results
+- [[§34 Retractions and Fixed Points#^prop-34-5|Proposition §34.5: Bⁿ is Convex and Simply Connected]]: 3 later results
+- [[§34 Retractions and Fixed Points#^thm-34-2|Theorem §34.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ 0)]]: 2 later results

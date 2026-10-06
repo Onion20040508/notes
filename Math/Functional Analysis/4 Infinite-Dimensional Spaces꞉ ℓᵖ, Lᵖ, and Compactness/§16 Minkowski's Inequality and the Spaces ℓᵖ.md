@@ -78,7 +78,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 *Uses:* [[§15 Hölder's Inequality for Sequences#^def-15-1|Def. §15.1]], [[§15 Hölder's Inequality for Sequences#^def-15-2|Def. §15.2]], [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]]
 
 > [!remark]- Connections
-> - The integral version, home in the vault: [[Minkowski's Inequality|551 §19.9]] (same split-and-Hölder computation; its series corollaries [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-12|551 §19.12]]–[[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-13|§19.13]]); in this course [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-2|§17.2]] (cited) and Part 1 of the proof of [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] (continuous functions, HW3).
+> - The integral version, home in the vault: [[Minkowski's Inequality|551 §35.2]] (same split-and-Hölder computation; its series corollaries [[§35 Lᵖ as a Banach Space#^cor-35-5|551 §35.5]]–[[§35 Lᵖ as a Banach Space#^cor-35-6|§35.6]]); in this course [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-2|§17.2]] (cited) and Part 1 of the proof of [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]] (continuous functions, HW3).
 > - For $p = 2$ it is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]].
 
 > [!theorem] Lemma §16.2: Minkowski for Finitely Supported Sequences
@@ -114,7 +114,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 ^def-16-1
 
 > [!remark]- Connections
-> - The function-space counterpart: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|551 Def. §19.5]] ($L^p$), [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|551 Def. §19.6]] ($L^\infty$); in this course [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]].
+> - The function-space counterpart: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-6|551 Def. §34.6]] ($L^p$), [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-8|551 Def. §34.8]] ($L^\infty$); in this course [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]].
 
 > [!theorem] Proposition §16.3: $\ell^p$ is a Normed Linear Space
 > For $1 \le p \le \infty$, $\ell^p$ is a linear subspace of $\ell$, and $\|\cdot\|_p$ is a norm on it.
@@ -137,7 +137,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 *Uses:* [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]]
 
 > [!remark]- Connections
-> - The function-space counterpart: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|551 §19.10]] ($L^p$ is a normed linear space).
+> - The function-space counterpart: [[§35 Lᵖ as a Banach Space#^thm-35-3|551 §35.3]] ($L^p$ is a normed linear space).
 
 > [!remark] Remark
 > $\ell^p$ is the first genuinely infinite-dimensional normed space in the course: it contains the linearly independent sequences $e_1 = (1,0,0,\ldots)$, $e_2 = (0,1,0,\ldots)$, …. Unlike the norms $\|\cdot\|_p$ on $\mathbb{R}^n$, the spaces $\ell^p$ for different $p$ are different sets, and their norms are not equivalent where both are defined.
@@ -167,8 +167,8 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 *The unit balls $\{\|x\|_p \le 1\}$ in $\mathbb{R}^2$ increase with $p$; this is (a) for vectors with two nonzero entries. All four norms are equivalent on $\mathbb{R}^2$ (Theorem [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]]), and (c) is the statement that this fails on $\ell^p$.*
 
 > [!remark]- Connections
-> - For functions the inclusion runs the other way on sets of finite measure: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-6|551 §19.6]].
-> - The same unit-ball picture: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]].
+> - For functions the inclusion runs the other way on sets of finite measure: [[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|551 §34.6]].
+> - The same unit-ball picture: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]].
 > - (c) is cited in [[§12 New Normed Spaces from Old#^rem-12-2|Remark §12]] (Finite Dimension is Necessary).
 
 ## Completeness of ℓᵖ
@@ -246,10 +246,10 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 
 ^pf-16-5
 
-*Uses:* [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3|§16.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]
+*Uses:* [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3|§16.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
 
 > [!remark]- Connections
-> - The function-space counterpart: [[Riesz–Fischer Theorem|551 §19.18]] (Riesz–Fischer), cited in this course as [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]].
+> - The function-space counterpart: [[Riesz–Fischer Theorem|551 §35.11]] (Riesz–Fischer), cited in this course as [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-3|§17.3]].
 > - $\ell^2$ is the first infinite-dimensional Hilbert space: [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-1|Ex. §21.1]].
 
 > [!remark] Remark: The Two Limits
@@ -267,7 +267,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > \bigl| a^{(n)}_i - a^{(m)}_i \bigr| \le \Bigl( \sum_{j=1}^\infty \bigl| a^{(n)}_j - a^{(m)}_j \bigr|^p \Bigr)^{1/p} = \|a^{(n)} - a^{(m)}\|_p.
 > $$
 >
-> Hence $\{a^{(n)}_i\}_{n \ge 1}$ is a Cauchy sequence of scalars, and since $\mathbb{R}$ and $\mathbb{C}$ are [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|complete]] it converges:
+> Hence $\{a^{(n)}_i\}_{n \ge 1}$ is a Cauchy sequence of scalars, and since $\mathbb{R}$ and $\mathbb{C}$ are [[§10a Cauchy Sequences#^thm-10a-3|complete]] it converges:
 >
 > $$
 > a_i := \lim_{n \to \infty} a^{(n)}_i \qquad (i = 1, 2, \ldots).

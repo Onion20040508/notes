@@ -118,16 +118,16 @@ They are named after A. L. Cauchy (1789–1857), who discovered and used them, a
 
 ^pf-21-1
 
-*Uses:* [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§15 Limits#^thm-15-1|§15.1]], [[§15 Limits#^cor-15-2|§15.2]], [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]] (partial derivatives)
+*Uses:* [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§15 Limits#^thm-15-1|§15.1]], [[§15 Limits#^cor-15-2|§15.2]], [[§5 Partial Derivatives#^def-5-1|452 Def. §5.1]] (partial derivatives)
 
 > [!remark]- Connections
-> - In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]], with Jacobian matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]])
+> - In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§7 Differentiability#^def-7-1|452 Def. §7.1]], with Jacobian matrix ([[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]])
 >
 > $$
 > \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix} = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} .
 > $$
 >
->   The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of [[§23 Sufficient Conditions for Differentiability|§23]], where continuity of the partials supplies real differentiability through [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]].
+>   The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of [[§23 Sufficient Conditions for Differentiability|§23]], where continuity of the partials supplies real differentiability through [[§7 Differentiability#^thm-7-2|452 Thm. §7.2]].
 > - Used in Electromagnetism: the complex potential of two-dimensional electrostatics, whose real and imaginary parts are the potential and the flux function — [[§C6.4★ The Complex Potential and the Variational Principle#^def-c6-4-1|EM Def. §C6.4.1]], [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
 > [!remark] Remark: What the Theorem Does and Does Not Say

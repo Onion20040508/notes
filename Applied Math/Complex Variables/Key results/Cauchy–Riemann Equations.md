@@ -32,13 +32,13 @@ tags: [complex-variables, hub]
 - [[§117★ Transformations of Boundary Conditions#^lem-117-1|Lemma §117.1: Gradients and Directional Derivatives Are Scaled by ∣f′(z)∣]]
 - [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2: Heat Flows Along the Lines of Flow]]
 - [[§122★ Electrostatic Potential#^prop-122-2|Proposition §122.2: Conductors Are Equipotentials; Flux Lines Follow the Field]]
-- [[§125★ The Stream Function#^prop-125-1|Proposition §125.1: Velocity from the Complex Potential]]
+- [[§125★ The Stream Function#^prop-125-2|Proposition §125.2: Velocity from the Complex Potential]]
 
 ## Connections
-- In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§6 Differentiability#^def-6-1|452 Def. §6.1]], with Jacobian matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]])
+- In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§7 Differentiability#^def-7-1|452 Def. §7.1]], with Jacobian matrix ([[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]])
 
   $$
   \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix} = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} .
   $$
 
-  The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of §23 ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], hub: [[Sufficient Conditions for Complex Differentiability]]), where continuity of the partials supplies real differentiability through [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]].
+  The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of §23 ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], hub: [[Sufficient Conditions for Complex Differentiability]]), where continuity of the partials supplies real differentiability through [[§7 Differentiability#^thm-7-2|452 Thm. §7.2]].

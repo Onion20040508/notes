@@ -109,7 +109,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > u'(t) = y'(t)e^{-at} - a\Big(y(t) - \frac{b}{a}\Big)e^{-at} = \big(ay - b - ay + b\big)e^{-at} = 0 .
 > $$
 >
-> A function with zero derivative on an interval is constant, so $u(t) = c$ and $y(t) = b/a + ce^{at}$ on $I$. In particular a solution that equals $b/a$ at one point has $c = 0$ and is the equilibrium solution. (The multiplier $e^{-at}$ is the integrating factor of [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|Theorem §4.1]], applied to $y' - ay = -b$.)
+> A function with zero derivative on an interval is constant, so $u(t) = c$ and $y(t) = b/a + ce^{at}$ on $I$. In particular a solution that equals $b/a$ at one point has $c = 0$ and is the equilibrium solution. (The multiplier $e^{-at}$ is the integrating factor of [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-1|Theorem §5.1]], applied to $y' - ay = -b$.)
 >
 > **Each such function is a solution.** If $y = b/a + ce^{at}$, then $y' = ace^{at} = a\big(y - \tfrac{b}{a}\big) = ay - b$ for all $t$.
 >
@@ -123,9 +123,9 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 
 > [!remark]- Connections
 > - The step "zero derivative on an interval implies constant": [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], from the Mean Value Theorem; equal derivatives differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
-> - See also: [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]] (the case $b = 0$, proved the same way) and [[§60 Models for Population Growth#^thm-60-1|Calc Thm. §60.1]] (Stewart's separation-of-variables derivation). Stewart's [[§60 Models for Population Growth#^rem-60-1|Calc Remark: Emigration]], $dP/dt = kP - m$, is (3) with $a = k$, $b = m$: the mice and owls of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-3|Example §1.3]].
+> - See also: [[§24 Exponential Growth and Decay#^thm-24-1|Calc Thm. §24.1]] (the case $b = 0$, proved the same way) and [[§69 Models for Population Growth#^thm-69-1|Calc Thm. §69.1]] (Stewart's separation-of-variables derivation). Stewart's [[§69 Models for Population Growth#^rem-69-1|Calc Remark: Emigration]], $dP/dt = kP - m$, is (3) with $a = k$, $b = m$: the mice and owls of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-3|Example §1.3]].
 
-> [!definition] Definition §2.2: General Solution
+> [!definition] Definition §2.3: General Solution
 > For $a \ne 0$, the expression (17), which contains all possible solutions of (3), is called the **general solution** of (3).
 >
 > *BDP: 1.2 (text)*
@@ -133,14 +133,14 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 ^def-2-2
 
 > [!remark]- Connections
-> - See also: [[§57 Modeling with Differential Equations#^def-57-6|Calc Def. §57.6]] (solution and general solution) and [[§57 Modeling with Differential Equations#^def-57-7|Calc Def. §57.7]] (initial condition, initial-value problem), Stewart's versions of [[§2 Solutions of Some Differential Equations#^def-2-1|Definitions §2.1]] and [[§2 Solutions of Some Differential Equations#^def-2-2|§2.2]].
+> - See also: [[§66 Modeling with Differential Equations#^def-66-6|Calc Def. §66.6]] (solution and general solution) and [[§66 Modeling with Differential Equations#^def-66-7|Calc Def. §66.7]] (initial condition, initial-value problem), Stewart's versions of [[§2 Solutions of Some Differential Equations#^def-2-1|Definitions §2.1]] and [[§2 Solutions of Some Differential Equations#^def-2-2|§2.2]].
 
-> [!definition] Definition §2.2: Integral Curves
+> [!definition] Definition §2.3: Integral Curves
 > Let (17) be the general solution of (3) ([[§2 Solutions of Some Differential Equations#^def-2-2|Definition §2.2]]). Its geometric representation, the infinite family of graphs of (17), one for each value of $c$, is the family of **integral curves** of the equation. Satisfying an initial condition amounts to picking out the integral curve through the given initial point.
 >
 > *BDP: 1.2 (text)*
 
-^def-2-new1
+^def-2-3
 
 > [!remark] Remark: What the Formula Says About the Two Models
 > **Field mice.** With $a = r > 0$ and $b = k > 0$, (18) becomes
@@ -223,11 +223,11 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 ## Further Remarks on Mathematical Modeling
 
 > [!remark] Remark: Testing a Model
-> The ultimate test of a model is whether its predictions agree with observation. For the falling object, Newton's laws are well established, but the assumption that drag is proportional to velocity is less certain, and $\gamma$ is hard to measure directly; it is sometimes found indirectly, by timing a fall from a known height and choosing the $\gamma$ that predicts the observed time. For the mice, $r$ and $k$ come from observations that vary considerably, and their constancy is doubtful: a constant predation rate is hard to sustain as the population shrinks, and unlimited exponential growth above $900$ contradicts real populations ([[§8 Autonomous Differential Equations and Population Dynamics|§8]]). If the discrepancies are too large, refine the model, observe more carefully, or both. Accuracy and simplicity usually trade off against each other, and even an imperfect model may explain the qualitative features of a problem.
+> The ultimate test of a model is whether its predictions agree with observation. For the falling object, Newton's laws are well established, but the assumption that drag is proportional to velocity is less certain, and $\gamma$ is hard to measure directly; it is sometimes found indirectly, by timing a fall from a known height and choosing the $\gamma$ that predicts the observed time. For the mice, $r$ and $k$ come from observations that vary considerably, and their constancy is doubtful: a constant predation rate is hard to sustain as the population shrinks, and unlimited exponential growth above $900$ contradicts real populations ([[§9 Autonomous Differential Equations and Population Dynamics|§9]]). If the discrepancies are too large, refine the model, observe more carefully, or both. Accuracy and simplicity usually trade off against each other, and even an imperfect model may explain the qualitative features of a problem.
 
 ^rem-2-2
 
 > [!remark]- Remark: Historical Background (Euler, Lagrange, Laplace)
-> Leonhard Euler (1707–1783) formulated problems of mechanics as differential equations and developed methods to solve them: the condition for exactness and the theory of integrating factors ([[§9 Exact Differential Equations and Integrating Factors|§9]], 1734–35), the general solution of homogeneous linear equations with constant coefficients ([[§13 Homogeneous Differential Equations with Constant Coefficients|§13]], 1743) and its nonhomogeneous extension, power series methods, and a numerical procedure ([[§10 Numerical Approximations꞉ Euler's Method|§10]], 1768–69). Joseph-Louis Lagrange (1736–1813) showed that the general solution of a homogeneous $n$th order linear equation is a linear combination of $n$ independent solutions ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian|§14]]) and developed variation of parameters ([[§18★ Variation of Parameters|§18★]]). Pierre-Simon de Laplace (1749–1827) is known for celestial mechanics, Laplace's equation, and the transform of [[§21 Definition of the Laplace Transform|§21]]. In the nineteenth century the interest turned to existence and uniqueness and to series methods.
+> Leonhard Euler (1707–1783) formulated problems of mechanics as differential equations and developed methods to solve them: the condition for exactness and the theory of integrating factors ([[§11 Exact Differential Equations and Integrating Factors|§11]], 1734–35), the general solution of homogeneous linear equations with constant coefficients ([[§17 Homogeneous Differential Equations with Constant Coefficients|§17]], 1743) and its nonhomogeneous extension, power series methods, and a numerical procedure ([[§13 Numerical Approximations꞉ Euler's Method|§13]], 1768–69). Joseph-Louis Lagrange (1736–1813) showed that the general solution of a homogeneous $n$th order linear equation is a linear combination of $n$ independent solutions ([[§18 Solutions of Linear Homogeneous Equations; the Wronskian|§18]]) and developed variation of parameters ([[§22★ Variation of Parameters|§22★]]). Pierre-Simon de Laplace (1749–1827) is known for celestial mechanics, Laplace's equation, and the transform of [[§26 Definition of the Laplace Transform|§26]]. In the nineteenth century the interest turned to existence and uniqueness and to series methods.
 
 ^rem-2-3

@@ -14,16 +14,16 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Logic and Proofs]] (7), [[Single Variable Analysis]] (13), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (4), [[Complex Variables]] (7)
 
 ## Sections
-- [[§116 Numbers, Inequalities, and Absolute Values]] — Stewart Appendix A
-- [[§117 Coordinate Geometry and Lines]] — Stewart Appendix B
-- [[§118 Graphs of Second-Degree Equations]] — Stewart Appendix C
-- [[§119 Trigonometry]] — Stewart Appendix D
-- [[§120 Sigma Notation]] — Stewart Appendix E
-- [[§121 The Logarithm Defined as an Integral]] — Stewart Appendix G
+- [[§139 Numbers, Inequalities, and Absolute Values]] — Stewart Appendix A
+- [[§140 Coordinate Geometry and Lines]] — Stewart Appendix B
+- [[§141 Graphs of Second-Degree Equations]] — Stewart Appendix C
+- [[§142 Trigonometry]] — Stewart Appendix D
+- [[§143 Sigma Notation]] — Stewart Appendix E
+- [[§144 The Logarithm Defined as an Integral]] — Stewart Appendix G
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-3|Proposition §116.3: The Square Root of a Square]]: 255 later results
-- [[§117 Coordinate Geometry and Lines#^thm-117-1|Theorem §117.1: Distance Formula]]: 253 later results
-- [[§119 Trigonometry#^thm-119-3|Theorem §119.3: Reciprocal and Quotient Identities]]: 244 later results
-- [[§119 Trigonometry#^thm-119-4|Theorem §119.4: Pythagorean Identities]]: 243 later results
+- [[§139 Numbers, Inequalities, and Absolute Values#^prop-139-3|Proposition §139.3: The Square Root of a Square]]: 255 later results
+- [[§140 Coordinate Geometry and Lines#^thm-140-1|Theorem §140.1: Distance Formula]]: 253 later results
+- [[§142 Trigonometry#^thm-142-3|Theorem §142.3: Reciprocal and Quotient Identities]]: 244 later results
+- [[§142 Trigonometry#^thm-142-4|Theorem §142.4: Pythagorean Identities]]: 243 later results

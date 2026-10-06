@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, math591]
 ^def-19-1
 
 > [!remark]- Connections
-> - With $n = 2$ and $k = 1$ the internal description is a regular parametrized surface, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (452 does not require the homeomorphism condition).
+> - With $n = 2$ and $k = 1$ the internal description is a regular parametrized surface, [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]] (452 does not require the homeomorphism condition).
 
 > [!theorem] Theorem §19.1: The Two Descriptions Agree
 > For $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$, the external and internal descriptions near $p$ are equivalent, and each is equivalent to:
@@ -47,10 +47,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-19-1
 
-*Uses:* [[§19 Manifolds in Euclidean Space#^def-19-1|Def. §19.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§19 Manifolds in Euclidean Space#^def-19-1|Def. §19.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
-> - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]]) and the inverse function theorem [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §13.2]]).
+> - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
 > - The external description becomes the regular value theorem for manifolds, [[§33 Submanifolds#^thm-33-6|§33.6]], and adapted charts, [[§33 Submanifolds#^def-33-1|Def. §33.1]]; the internal one becomes the local normal form for immersions, [[§35 Immersions#^thm-35-1|§35.1]].
 > - The tangent space in both pictures: [[§23 The Geometric Tangent Space#^cor-23-4|§23.4]].
 
@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 *The circle described externally, as the zero set of $F = x^2 + y^2 - 1$ with nonvanishing gradient, and internally, as the image of $\alpha(\theta) = (\cos\theta, \sin\theta)$ on $(0,\pi)$.*
 
 > [!remark]- Connections
-> - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
+> - The same circle in 452: [[Unit circle and unit sphere]], solved for $y$ near $(0,1)$ by the implicit function theorem in [[§15 The Implicit Function Theorem#^ex-15-1|452 Ex. §15.1]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
 > “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§11 The Classical Groups Are Topological Manifolds|§11, The Classical Groups Are Topological Manifolds]]. Theorem [[§19 Manifolds in Euclidean Space#^thm-19-1|§19.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
@@ -132,7 +132,7 @@ The proof in one picture. The transition function between two graph charts facto
 
 ^pf-19-2
 
-*Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§19 Manifolds in Euclidean Space#^def-19-2|Def. §19.2]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§19 Manifolds in Euclidean Space#^ex-19-2|Ex. §19.2]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§19 Manifolds in Euclidean Space#^def-19-2|Def. §19.2]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§19 Manifolds in Euclidean Space#^ex-19-2|Ex. §19.2]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]] (Euclidean), [[§28 The Differential in Coordinates#^def-28-1|Def. §28.1]] and [[§32 Submersions#^def-32-2|Def. §32.2]] (manifolds).
@@ -190,7 +190,7 @@ The picture only works because $\partial F/\partial z$ and $\partial F/\partial 
 
 ^pf-19-3
 
-*Uses:* [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§19 Manifolds in Euclidean Space#^def-19-2|Def. §19.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-2|Def. §18.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§19 Manifolds in Euclidean Space#^def-19-2|Def. §19.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-2|Def. §18.2]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
 > - The same statement for embedded submanifolds of any manifold: [[§33 Submanifolds#^lem-33-3|§33.3]].
@@ -213,4 +213,4 @@ Not stated in lecture; filled in because it is used repeatedly — tacitly in th
 
 ^pf-19-4
 
-*Uses:* [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§19 Manifolds in Euclidean Space#^lem-19-3|§19.3]], [[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]], [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§16 Differentiable Structures#^ex-16-4|Ex. §16.4]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§16 Differentiable Structures#^prop-16-2|§16.2]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§19 Manifolds in Euclidean Space#^lem-19-3|§19.3]], [[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]], [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§16 Differentiable Structures#^ex-16-4|Ex. §16.4]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§16 Differentiable Structures#^prop-16-2|§16.2]], [[Multivariable Chain Rule|452 §12.2]]

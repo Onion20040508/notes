@@ -15,7 +15,7 @@ tags: [group-theory, math493]
 ^def-6-1
 
 > [!remark]- Connections
-> - Same definition: [[§2 Implications#^def-2-6|250 Def. §2.6]].
+> - Same definition: [[§2 Implications#^def-2-7|250 Def. §2.7]].
 
 > [!theorem] Lemma §6.1: Division Algorithm
 > Let $m, n \in \mathbb{Z}$ with $n > 0$. There exist unique integers $q$ (the *quotient*) and $r$ (the *remainder*) with
@@ -90,7 +90,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The classes $a + n\mathbb{Z}$ are the cosets of $n\mathbb{Z}$ in $\mathbb{Z}$: [[§28 Left and Right Cosets#^def-28-2|Left and Right Cosets]], [[§24 Equivalence Relations and Partitions#^def-24-2|Equivalence Class]].
-> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|590 Ex. §21.7]].
+> - 590 counterpart: [[§27 Free Groups and Presentations#^ex-27-5|590 Ex. §27.5]].
 > - Elementary version: [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-1|250 Def. §21.1]] (congruence class), with [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|250 Prop. §21.1]] (classes are equal or disjoint).
 
 > [!remark] Remark: The Clock Picture

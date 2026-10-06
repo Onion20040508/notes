@@ -18,7 +18,7 @@ tags: [group-theory, math493]
 ^def-1-1
 
 > [!remark]- Connections
-> - MATH 590 counterpart (same axioms, different order): [[§21 Algebra Prerequisites꞉ Groups#^def-21-1|590 Definition §21.1: Group]].
+> - MATH 590 counterpart (same axioms, different order): [[§26 Algebra Prerequisites꞉ Groups#^def-26-1|590 Definition §26.1: Group]].
 > - A group with a compatible topology: [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|591 Def. §10.1]] (topological group), the setting of the 591 matrix groups and actions.
 > - See also: the informal version in 451, written additively and stated only through inverses, as the step from the semigroup ℕ to ℤ: [[§2 The Set ℚ of Rational Numbers#^def-2-2|451 Def. §2.2]].
 
@@ -54,6 +54,6 @@ tags: [group-theory, math493]
 *The five ways to parenthesize $g_1 g_2 g_3 g_4$, joined by an edge when a single use of axiom (3), $(xy)z = x(yz)$, turns one into the other. The graph is connected, so all five products are equal; the proof above routes every bracketing to the left-normed product $L_4$ (blue).*
 
 > [!remark] Remark: Comparison with MATH 590
-> This is the same definition as in the algebra-prerequisites section of the topology notes ([[§21 Algebra Prerequisites꞉ Groups#^def-21-1|590 Def. §21.1]]), with the axioms listed in a different order. [[§2 First Consequences of the Axioms|WS 1.1–1.4]] below establish the basic uniqueness and cancellation facts, which appeared as [[§21 Algebra Prerequisites꞉ Groups#^rem-21-2|remarks in the 590 notes]].
+> This is the same definition as in the algebra-prerequisites section of the topology notes ([[§26 Algebra Prerequisites꞉ Groups#^def-26-1|590 Def. §26.1]]), with the axioms listed in a different order. [[§2 First Consequences of the Axioms|WS 1.1–1.4]] below establish the basic uniqueness and cancellation facts, which appeared as [[§26 Algebra Prerequisites꞉ Groups#^rem-26-2|remarks in the 590 notes]].
 
 ^rem-1-2

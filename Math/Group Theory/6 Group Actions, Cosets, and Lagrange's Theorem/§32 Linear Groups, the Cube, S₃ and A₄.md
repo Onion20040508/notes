@@ -25,7 +25,7 @@ tags: [group-theory, math493]
 
 ^pf-32-1
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§5 Bases#^ladr-2-32|LADR 2.32]], [[§34 Determinants#^ladr-9-50|LADR 9.50]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-6|Def. §3.6]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§5 Bases#^ladr-2-32|LADR 2.32]], [[§37 Determinants#^ladr-9-50|LADR 9.50]]
 
 > [!remark] Remark: $GL_3$ versus $O_3$
 > Both stabilizers are “matrices with first column $e_1$,” but in $O_3$ orthonormality of the columns additionally forces the first *row* to be $(1,0,0)$, killing the block $b$ and restricting $B$ to $O_2$. Correspondingly the $GL_3$-orbit of $e_1$ is all nonzero vectors, while the $O_3$-orbit is only the unit sphere: a smaller group has smaller orbits and, by [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]], the two effects are linked through $|G| = |Gx|\cdot|\operatorname{Stab}(x)|$ (here in the infinite form $G/\operatorname{Stab}(x) \leftrightarrow Gx$).
@@ -51,7 +51,7 @@ tags: [group-theory, math493]
 
 ^pf-32-2
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§20 Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
 
 ![[m493-30-2.svg]]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*

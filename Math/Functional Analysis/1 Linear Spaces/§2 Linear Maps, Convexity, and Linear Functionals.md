@@ -27,7 +27,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - Linear maps in linear algebra: [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
 > - With norms, the bounded ones: [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (linear transformations between vector spaces, with kernel and range computed), and the matrix case [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]].
+> - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-4|235 Def. §30.4]] (linear transformations between vector spaces, with kernel and range computed), and the matrix case [[§9 Introduction to Linear Transformations#^def-9-4|235 Def. §9.4]].
 
 > [!definition] Definition §2.2: Isomorphism
 > A map $M : X \to Y$ is an **isomorphism** (or **linear isomorphism**) if $M$ is linear, one-to-one, and onto.
@@ -38,7 +38,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Isomorphisms in linear algebra: [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]].
-> - Computational version: [[§26 Coordinate Systems#^def-26-3|235 Def. §26.3]] (isomorphism; the coordinate map onto ℝⁿ is the standard example).
+> - Computational version: [[§32 Coordinate Systems#^def-32-4|235 Def. §32.4]] (isomorphism; the coordinate map onto ℝⁿ is the standard example).
 
 > [!remark] Remark
 > If there is an isomorphism $X \to Y$, the two linear spaces can be regarded as identical as far as the linear structure is concerned: every statement about linear combinations in $X$ transfers to $Y$ and back.
@@ -83,7 +83,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - Convex sets return through the gauge, [[§6 Convex Sets and the Gauge#^def-6-2|Def. §6.2]], and the separation theorem, [[§7 The Hyperplane Separation Theorem#^thm-7-1|§7.1]].
-> - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: [[§23 The Fundamental Group#^ex-23-2|590 Ex. §23.2]].
+> - Convex subsets of ℝⁿ are simply connected, by the straight-line homotopy: [[§29 The Fundamental Group#^ex-29-2|590 Ex. §29.2]].
 
 > [!remark] Remark
 > As $a$ runs over $[0, 1]$, the point $a x_1 + (1 - a) x_2$ runs over the line segment from $x_2$ (at $a = 0$) to $x_1$ (at $a = 1$). So $K$ is convex if and only if it contains the segment joining any two of its points. Values $a > 1$ or $a < 0$ would leave the segment, continuing beyond $x_1$ or beyond $x_2$ respectively; these are excluded.

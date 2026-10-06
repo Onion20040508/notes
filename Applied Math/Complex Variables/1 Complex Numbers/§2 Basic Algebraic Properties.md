@@ -35,7 +35,7 @@ The two operations of [[§1 Sums and Products|§1]] obey the same basic laws as 
 ^thm-2-1
 
 > [!proof]+ Proof
-> B&C say these "follow easily" from the definitions and verify the first one in its Example; here are all five. Write $z = (x, y)$ and $z_k = (x_k, y_k)$, and use [[§1 Sums and Products#^def-1-3|Definition §1.3]] together with the corresponding laws for real numbers.
+> B&C say these "follow easily" from the definitions and verify the first one in its Example; here are all five. Write $z = (x, y)$ and $z_k = (x_k, y_k)$, and use [[§1 Sums and Products#^def-1-4|Definition §1.4]] together with the corresponding laws for real numbers.
 >
 > **Commutative laws** (B&C's Example and Exercise 5).
 >
@@ -71,11 +71,11 @@ The two operations of [[§1 Sums and Products|§1]] obey the same basic laws as 
 
 ^pf-2-1
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 > [!remark]- Connections
 > - These, with the identities and inverses below, are the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]). Linear Algebra proves the same list the same way, by reduction to $\mathbb{R}$: [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]].
-> - The earlier computational treatment states the laws without proof: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]].
+> - The earlier computational treatment states the laws without proof: [[§64 Complex Numbers#^thm-64-1|235 Thm. §64.1]].
 
 By the commutative law for multiplication, $iy = yi$, so one may write $z = x + yi$ instead of $z = x + iy$. By the associative laws, a sum $z_1 + z_2 + z_3$ or a product $z_1z_2z_3$ is well defined without parentheses, as with real numbers.
 
@@ -109,7 +109,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 
 ^pf-2-2
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 > [!theorem] Theorem §2.3: Additive Inverse
 > Each complex number $z = (x, y)$ has an **additive inverse**
@@ -129,7 +129,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 
 ^pf-2-3
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 > [!theorem] Theorem §2.4: Multiplicative Inverse
 > For any nonzero complex number $z = (x, y)$ there is exactly one number $z^{-1}$ with $zz^{-1} = 1$, namely
@@ -145,13 +145,13 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 ^thm-2-4
 
 > [!proof]+ Proof
-> We seek real numbers $u, v$ with $(x, y)(u, v) = (1, 0)$. By (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]], this is the pair of linear simultaneous equations
+> We seek real numbers $u, v$ with $(x, y)(u, v) = (1, 0)$. By (4) of [[§1 Sums and Products#^def-1-4|Definition §1.4]], this is the pair of linear simultaneous equations
 >
 > $$
 > xu - yv = 1, \qquad yu + xv = 0 .
 > $$
 >
-> Its determinant is $x^2 + y^2$, which is positive because $z \ne 0$ means $(x, y) \ne (0, 0)$. So the system has exactly one solution, and by Cramer's rule ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]])
+> Its determinant is $x^2 + y^2$, which is positive because $z \ne 0$ means $(x, y) \ne (0, 0)$. So the system has exactly one solution, and by Cramer's rule ([[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-1|235 Thm. §27.1]])
 >
 > $$
 > u = \frac{1 \cdot x - (-y) \cdot 0}{x^2 + y^2} = \frac{x}{x^2 + y^2}, \qquad v = \frac{x \cdot 0 - y \cdot 1}{x^2 + y^2} = \frac{-y}{x^2 + y^2} .
@@ -161,9 +161,9 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 
 ^pf-2-4
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]], [[§1 Sums and Products#^rem-1-1|§1 Remark]] ($z \cdot 0 = 0$), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]] (Cramer's rule)
+*Uses:* [[§1 Sums and Products#^def-1-4|Def. §1.4]], [[§1 Sums and Products#^rem-1-1|§1 Remark]] ($z \cdot 0 = 0$), [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-1|235 Thm. §27.1]] (Cramer's rule)
 
-In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]); compare [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
+In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugates#^prop-6-3|Proposition §6.3]]); compare [[§64 Complex Numbers#^prop-64-4|235 Prop. §64.4]].
 
 ## Examples
 
@@ -198,7 +198,7 @@ In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugat
 > [!example] Example §2.3: Minus Signs
 > **(a)** Use $-1 = (-1, 0)$ and $z = (x, y)$ to show $(-1)z = -z$. **(b)** Use $i = (0, 1)$ and $y = (y, 0)$ to show $-(iy) = (-i)y$, so that the additive inverse of $z = x + iy$ can be written $-z = -x - iy$ without ambiguity.
 >
-> **(a)** By (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]], $(-1, 0)(x, y) = \big((-1)x - 0 \cdot y,\ 0 \cdot x + (-1)y\big) = (-x, -y)$, which is $-z$ by (5).
+> **(a)** By (4) of [[§1 Sums and Products#^def-1-4|Definition §1.4]], $(-1, 0)(x, y) = \big((-1)x - 0 \cdot y,\ 0 \cdot x + (-1)y\big) = (-x, -y)$, which is $-z$ by (5).
 >
 > **(b)** On one side, $iy = (0, 1)(y, 0) = (0, y)$, so $-(iy) = (0, -y)$ by (5). On the other, $-i = (0, -1)$ by (5), and
 >

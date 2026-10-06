@@ -33,8 +33,8 @@ $$
 ^thm-30-1
 
 > [!remark]- Connections
-> - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Calc Thm. §28.2]] (with worked examples).
-> - Used in PDEs: the one-sided rule handles the difference quotients at $y=0$ in the proof of the Fourier convergence theorem, [[§12★ Proof of Convergence#^thm-12-4|341 Thm. §12.4]].
+> - Computational version: [[§31 Indeterminate Forms and L'Hospital's Rule#^thm-31-2|Calc Thm. §31.2]] (with worked examples).
+> - Used in PDEs: the one-sided rule handles the difference quotients at $y=0$ in the proof of the Fourier convergence theorem, [[§16★ Proof of Convergence#^thm-16-4|341 Thm. §16.4]].
 > - Computational version: [[§20 Rules for Differentiation#^prop-20-5|342 Prop. §20.5]] (the simple complex form, with f′ and g′ evaluated at the point itself; no mean value theorem needed).
 
 The idea: differentiating can *simplify* $f$ and $g$, letting us escape the indeterminate forms. We use the rule first, then prove it.
@@ -123,7 +123,7 @@ since $f(x_1), g(x_1)$ are very small — and the right side, by the following t
 *Uses:* [[§29 The Mean Value Theorem#^thm-29-2|§29.2]]
 
 > [!remark]- Connections
-> - Computational version: [[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-1|Calc Thm. §28.1]].
+> - Computational version: [[§31 Indeterminate Forms and L'Hospital's Rule#^thm-31-1|Calc Thm. §31.1]].
 
 > [!proof]+ Proof of Theorem §30.1 (the case $\tfrac00$ as $x \to a^-$)
 > Assume $f, g \to 0$ as $x \to a^-$, $g' \neq 0$ on some $(a - \delta_0, a)$, and $\tfrac{f'}{g'} \to L$ finite. First, two housekeeping points on $(a-\delta_0, a)$: for $x < x_1$ there, $g(x_1) \neq g(x)$ (otherwise Rolle would give a zero of $g'$ in between); and $g(x) \neq 0$ for $x$ close to $a$ (if $g$ vanished at points arbitrarily close to $a$, Rolle between two such zeros would again contradict $g' \neq 0$).

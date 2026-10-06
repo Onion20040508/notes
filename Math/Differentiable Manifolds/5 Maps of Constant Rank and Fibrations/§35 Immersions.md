@@ -27,7 +27,7 @@ The third special type of map, dual to the submersions of [[§32 Submersions|§3
 > [!remark]- Connections
 > - The earlier definition, stated with submersions: [[§32 Submersions#^def-32-1|Def. §32.1]]; the dimension constraint there: [[§32 Submersions#^prop-32-1|§32.1]].
 > - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
-> - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]].
+> - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
 > [!theorem] Theorem §35.1: Local Normal Form for Immersions
 > Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then there are charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$ is the standard inclusion:
@@ -99,7 +99,7 @@ The third special type of map, dual to the submersions of [[§32 Submersions|§3
 *Status.* Stated in Lecture 13 — “a little bit technical … better do it fresh at the beginning of the class” — and proved at the start of Lecture 14, above. It is the counterpart of [[§32 Submersions#^thm-32-4|Theorem §32.4]]: there $F$ was locally a projection, here it is locally an inclusion.
 
 > [!remark]- Connections
-> - The mirror-image result for submersions: [[§32 Submersions#^thm-32-4|Local Normal Form for Submersions, §32.4]]; the case $m = n$: [[§31 Local Diffeomorphisms#^thm-31-2|§31.2]], via the [[§31 Local Diffeomorphisms#^thm-31-1|Inverse Function Theorem, §31.1]] ([[Inverse Function Theorem (several variables)|452 §13.2]]).
+> - The mirror-image result for submersions: [[§32 Submersions#^thm-32-4|Local Normal Form for Submersions, §32.4]]; the case $m = n$: [[§31 Local Diffeomorphisms#^thm-31-2|§31.2]], via the [[§31 Local Diffeomorphisms#^thm-31-1|Inverse Function Theorem, §31.1]] ([[Inverse Function Theorem (several variables)|452 §16.2]]).
 
 What the image of an immersion looks like — locally a submanifold, globally not necessarily — is taken up next, in [[§35 Immersions#Images of Immersions|Images of Immersions]].
 
@@ -141,7 +141,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 
 ^pf-ex-35-1
 
-*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§28 The Differential in Coordinates#^prop-28-5|§28.5]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§13 Connected Spaces#^thm-13-3|590 §13.3]]
+*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§28 The Differential in Coordinates#^prop-28-5|§28.5]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]]
 
 ![[m591-18-2.svg]]
 *The nodal cubic. The parameter values $t = -1$ and $t = 1$ both land on the origin, where the two branches cross; the arrows show the curve continuing, its domain being all of $\mathbb{R}$. A small disc around the crossing meets the image in an X, which is not a piece of a line.*
@@ -156,7 +156,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 
 ^pf-ex-35-2
 
-*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§11 Metric Topology#^thm-11-9|590 §11.9]]
+*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§12 Metric Topology#^thm-12-9|590 §12.9]]
 
 ![[m591-18-3.svg]]
 *The hook. The domain is an open interval, so neither end is attained: the left end of the image is missing (hollow), and the right end only approaches $P$. But $P$ is in the image, reached at $t_0$ by the strand passing through it — so points of the image near $P$ come from parameters near $t_0$* and *from parameters near $b$, which is exactly the failure of continuity of $\gamma^{-1}$. Lee's figure-eight (Example 4.19) is an explicit instance with both ends returning, $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, where the image near the origin is an X although $\beta$ is injective.*

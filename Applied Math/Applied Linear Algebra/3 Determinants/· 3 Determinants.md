@@ -14,9 +14,9 @@ tags: [chapter, applied-linear-algebra]
 **Developed further in (other subjects):** [[Linear Algebra]] (13), [[Group Theory]] (4), [[Multivariable Analysis]] (1), [[Measure Theory]] (1), [[Calculus]] (5)
 
 ## Sections
-- [[§20 Introduction to Determinants]] — Lay 3.1
-- [[§21 Properties of Determinants]] — Lay 3.2
-- [[§22 Cramer’s Rule, Volume, and Linear Transformations]] — Lay 3.3
+- [[§24 Introduction to Determinants]] — Lay 3.1
+- [[§25 Properties of Determinants]] — Lay 3.2
+- [[§27 Cramer’s Rule, Volume, and Linear Transformations]] — Lay 3.3
 
 ## Central results
 - [[Cofactor Expansion]] (§20.1)
@@ -26,7 +26,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Cofactor Expansion|Theorem §20.1: Cofactor Expansion Along Any Row or Column]]: 99 later results
-- [[§20 Introduction to Determinants#^thm-20-2|Theorem §20.2: Determinant of a Triangular Matrix]]: 98 later results
-- [[§21 Properties of Determinants#^thm-21-1|Theorem §21.1: Row Operations]]: 98 later results
-- [[§21 Properties of Determinants#^prop-21-2|Proposition §21.2: The Determinant from an Echelon Form]]: 98 later results
+- [[Cofactor Expansion|Theorem §24.1: Cofactor Expansion Along Any Row or Column]]: 99 later results
+- [[§24 Introduction to Determinants#^thm-24-2|Theorem §24.2: Determinant of a Triangular Matrix]]: 98 later results
+- [[§25 Properties of Determinants#^thm-25-1|Theorem §25.1: Row Operations]]: 98 later results
+- [[§25 Properties of Determinants#^prop-25-2|Proposition §25.2: The Determinant from an Echelon Form]]: 98 later results

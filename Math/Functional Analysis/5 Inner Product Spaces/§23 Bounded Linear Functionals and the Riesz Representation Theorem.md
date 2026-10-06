@@ -66,7 +66,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 ^thm-23-2
 
 > [!remark]- Connections
-> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
+> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
 > - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§30 Bras, Kets, and the Riesz Map#^thm-30-2|§30.2]].
 
 > [!remark] Remark: Reading the Statement
@@ -219,7 +219,7 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 *Uses:* [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]], [[§22 Projection and Orthogonal Decomposition#^thm-22-2|§22.2]], [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Def. §21.1]]
 
 > [!remark]- Connections
-> - Finite-dimensional counterpart, minimizing the distance to a subspace: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
+> - Finite-dimensional counterpart, minimizing the distance to a subspace: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 > - The pattern as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t17|Technique 17]].
 
 ![[m556-19-2.svg]]

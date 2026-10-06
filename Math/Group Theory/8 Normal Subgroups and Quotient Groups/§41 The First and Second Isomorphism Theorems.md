@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Vector-space version: [[First isomorphism theorem]] (LADR 3.107).
-> - Used in 590 to present a group as $F/N$: [[§21 Algebra Prerequisites꞉ Groups#^def-21-11|Group Presentation]].
+> - Used in 590 to present a group as $F/N$: [[§27 Free Groups and Presentations#^def-27-6|Group Presentation]].
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 > - Used in Quantum Mechanics: $SO(3) \cong SU(2)/\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 > - Used in Quantum Field Theory: $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm1\}$ — [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|QFT Theorem §C5a.1.8]].
@@ -84,7 +84,7 @@ tags: [group-theory, math493]
 *Part 3 of the example, $\alpha: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$. The kernel $N = \{[0], [3]\}$ (red) and its cosets are exactly the fibres of $\alpha$: each coset goes to a single element of the image $I = \{1, 2, 4\}$ (blue). So $\beta(gN) = \alpha(g)$ is well defined and bijective, $(\mathbb{Z}/6\mathbb{Z})/N \cong I$, and $6 = 2 \cdot 3$.*
 
 > [!remark]- Connections
-> - The homomorphism in (2): [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - The homomorphism in (2): [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!remark] Remark: PS 3.1 and PS 3.2 as Instances
 > Both problems of Problem Set 3 that build a homomorphism into a symmetric group are special cases of the theorem.

@@ -23,7 +23,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 ^def-5-1
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§12 Quotient Topology#^def-12-1|590 Def. §12.1]].
+> - Home in MATH 590: [[§13 Quotient Topology#^def-13-1|590 Def. §13.1]].
 
 > [!example] Example §5.1: Projections onto Quotient Spaces Are Quotient Maps
 > The projection $\pi : X \to X/{\sim}$ of [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1]] is a quotient map in the sense of [[§5 Quotient Maps#^def-5-1|Definition §5.1]]: it is surjective, and $W$ is open in $X/{\sim}$ if and only if $\pi^{-1}(W)$ is open in $X$, which is the definition of the quotient topology. The [[§5 Quotient Maps#^prop-5-4|next proposition]] says that these are the only examples.
@@ -78,10 +78,10 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-5-1
 
-*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^def-5-2|Def. §5.2]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^def-5-2|Def. §5.2]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[Universal Property of Quotient Maps|590 §12.3 (Universal Property of Quotient Maps)]]; composites of quotient maps are [[§12 Quotient Topology#^ex-12-4|590 Ex. §12.4]].
+> - Home in MATH 590: [[Universal Property of Quotient Maps|590 §13.3 (Universal Property of Quotient Maps)]]; composites of quotient maps are [[§13 Quotient Topology#^ex-13-4|590 Ex. §13.4]].
 > - Linear counterpart: [[§20 Linear Algebra Toolkit#^prop-20-6|Quotient Spaces and Their Universal Property, §20.6]].
 
 > [!theorem] Corollary §5.2: The Form Used in Practice
@@ -119,10 +119,10 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 *Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^thm-5-1|§5.1]]
 
 > [!remark]- Connections
-> - Uniqueness of the quotient topology in MATH 590: [[§12 Quotient Topology#^prop-12-1|590 §12.1]].
+> - Uniqueness of the quotient topology in MATH 590: [[§13 Quotient Topology#^prop-13-1|590 §13.1]].
 
 > [!remark] Remark: How This Gets Used
-> This is 590 [[§12 Quotient Topology#^thm-12-3|§12]] material (Munkres Theorem 22.2, Lee Theorem A.27), stated there in the full form above; it was not repeated in lecture but is used constantly here. The recipe it encodes is: *to define a continuous map out of a quotient, never define it on the quotient.* Define it upstairs on $X$, check it is constant on the classes, check continuity upstairs — and the theorem delivers a unique continuous map downstairs. Every identification in these notes is made this way:
+> This is 590 [[§13 Quotient Topology#^thm-13-3|§13]] material (Munkres Theorem 22.2, Lee Theorem A.27), stated there in the full form above; it was not repeated in lecture but is used constantly here. The recipe it encodes is: *to define a continuous map out of a quotient, never define it on the quotient.* Define it upstairs on $X$, check it is constant on the classes, check continuity upstairs — and the theorem delivers a unique continuous map downstairs. Every identification in these notes is made this way:
 > - $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$, $[x] \mapsto |x|$, from the norm on $\mathbb{R}^3$ ([[§12 Group Actions and Orbit Spaces#^ex-12-5|Example §12.5]]);
 > - $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$, from the orbit map on $G$ ([[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|Theorem §14.3]]);
 > - $\overline{F} : X/{\sim} \to Y$ recognizing a quotient map ([[§5 Quotient Maps#^prop-5-4|Proposition §5.4]]);
@@ -163,7 +163,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§12 Quotient Topology#^cor-12-4|590 §12.4 (Induced Bijection from Quotient)]].
+> - Home in MATH 590: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].
 
 > [!remark] Remark
 > So “quotient map” and “presentation of the target as a quotient space” are the same notion, and one may use whichever is convenient: to recognize a quotient topology, exhibit a quotient map onto it. Stated without proof in PSet 1, Problem 5.
@@ -183,7 +183,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§12 Quotient Topology#^prop-12-2|590 §12.2]] (open or closed continuous surjections).
+> - Home in MATH 590: [[§13 Quotient Topology#^prop-13-2|590 §13.2]] (open or closed continuous surjections).
 > - Applied to $G \to G/H$: [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-2|§14.2]].
 
 > [!example] Example §5.2: Projections Are Quotient Maps
@@ -243,7 +243,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-5-7
 
-*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
 > - Used for the charts on $\mathbb{CP}^n$: [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|Each φᵢ Is a Chart, §17.1]].
@@ -260,7 +260,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 ^pf-5-8
 
-*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§6 Closed Sets and Limit Points#^thm-6-3|590 §6.3]]
+*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]]
 
 > [!remark] Remark
 > Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property ([[§5 Quotient Maps#^thm-5-1|Theorem §5.1]]) to be applied *locally*, on an open piece of a quotient — which is exactly the situation of a chart on a quotient space ([[§17 Projective Spaces as Smooth Manifolds|§17, Projective Spaces as Smooth Manifolds]]). Both lemmas are from Assignment 2, Problem 2.

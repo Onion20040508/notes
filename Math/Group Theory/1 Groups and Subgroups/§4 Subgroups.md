@@ -20,7 +20,7 @@ tags: [group-theory, math493]
 ^def-4-1
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|590 Definition §21.2: Subgroup]]; linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
+> - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^def-26-2|590 Definition §26.2: Subgroup]]; linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
 > - Topological version: a subgroup of a topological group, with the subspace topology, is a topological group, [[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|591 Prop. §10.1]].
 
 > [!theorem] Proposition §4.1: A Subset That Is a Group Is a Subgroup
@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 ^def-4-2
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Powers]].
+> - MATH 590 counterpart: [[§27 Free Groups and Presentations#^def-27-1|Powers]].
 
 > [!theorem] Lemma §4.4: Exponent Laws
 > For all $g \in G$ and all $m, n \in \mathbb{Z}$:
@@ -232,7 +232,7 @@ tags: [group-theory, math493]
 ^def-4-4
 
 > [!remark]- Connections
-> - In a free group the reduced words *are* unique (no relations): [[§21 Algebra Prerequisites꞉ Groups#^def-21-8|Free Group]] in MATH 590.
+> - In a free group the reduced words *are* unique (no relations): [[§27 Free Groups and Presentations#^def-27-3|Free Group]] in MATH 590.
 
 > [!remark] Remark: Two Checks on the Definition
 > - **Consistency with $k = 1$:** For a single generator, every word $g^{n_1} g^{n_2} \cdots g^{n_N}$ collapses to $g^{n_1 + \cdots + n_N}$ by the [[§4 Subgroups#^lem-4-4|Exponent Laws]], recovering $\langle g \rangle = \{g^n\}$.
@@ -274,7 +274,7 @@ tags: [group-theory, math493]
 ^def-4-5
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|Cyclic Groups and Generators]] (cyclic group, generator).
+> - MATH 590 counterpart: [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (cyclic group, generator).
 > - Every cyclic group is ℤ or ℤ∕nℤ: [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]].
 
 > [!theorem] Proposition §4.8: Every Element of a Finite Group Has Finite Order

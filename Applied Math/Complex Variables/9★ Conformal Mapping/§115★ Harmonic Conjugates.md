@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 9
-section: 115
+section: "115★"
 bc: "115"
 aliases: ["B&C 115"]
 tags: [complex-variables, math342, extension]
@@ -36,7 +36,7 @@ in $D$ ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 ^def-115-1
 
 > [!remark]- Connections
-> - Harmonic functions and the Laplacian: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]], and in $\mathbb{R}^n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]].
+> - Harmonic functions and the Laplacian: [[§44 Potential Equation#^def-44-1|341 Def. §44.1]], [[§44 Potential Equation#^def-44-2|341 Def. §44.2]], and in $\mathbb{R}^n$, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|452 Def. §28.3]].
 
 > [!theorem] Theorem §115.1: Analytic Functions and Harmonic Conjugates
 > A function $f(z) = u(x, y) + iv(x, y)$ is analytic in a domain $D$ if and only if $v$ is a harmonic conjugate of $u$.
@@ -164,7 +164,7 @@ The proof that conjugates exist rests on a fact about line integrals from advanc
 
 ^lem-115-3
 
-*B&C omits the proof (it cites Kaplan, Advanced Mathematics for Engineers); see [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (the field $P\,\mathbf i + Q\,\mathbf j$ is conservative) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]] (the potential is the line integral (7), with gradient (8)).*
+*B&C omits the proof (it cites Kaplan, Advanced Mathematics for Engineers); see [[§131 Extended Versions of Green's Theorem#^thm-131-3|Calc Thm. §131.3]] (the field $P\,\mathbf i + Q\,\mathbf j$ is conservative) and [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Calc Thm. §128.3]] (the potential is the line integral (7), with gradient (8)).*
 
 > [!theorem] Theorem §115.4: Existence of Harmonic Conjugates
 > If a harmonic function $u(x, y)$ is defined on a simply connected domain $D$, it always has a harmonic conjugate $v(x, y)$ in $D$. Consequently every harmonic function on a simply connected domain is the real part of an analytic function. Explicitly, for any fixed point $(x_0, y_0)$ of $D$,
@@ -196,10 +196,10 @@ The proof that conjugates exist rests on a fact about line integrals from advanc
 
 ^pf-115-4
 
-*Uses:* [[§115★ Harmonic Conjugates#^lem-115-3|§115.3]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§115★ Harmonic Conjugates#^prop-115-2|§115.2]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]], [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]], [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]]
+*Uses:* [[§115★ Harmonic Conjugates#^lem-115-3|§115.3]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§115★ Harmonic Conjugates#^prop-115-2|§115.2]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§52 Simply Connected Domains#^def-52-1|Def. §52.1]], [[§131 Extended Versions of Green's Theorem#^thm-131-3|Calc Thm. §131.3]], [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Calc Thm. §128.3]]
 
 > [!remark]- Connections
-> - In vector language, (9) says that $(-u_y, u_x)$, the gradient of $u$ turned through $+\pi/2$, is a conservative field on $D$, and $v$ is its potential: [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (test for conservative fields on simply connected regions) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]]. In the language of forms, $-u_y\,dx + u_x\,dy$ is closed exactly when $u$ is harmonic, and the conjugate exists when it is exact: [[Poincaré Lemma|452 Poincaré Lemma]].
+> - In vector language, (9) says that $(-u_y, u_x)$, the gradient of $u$ turned through $+\pi/2$, is a conservative field on $D$, and $v$ is its potential: [[§131 Extended Versions of Green's Theorem#^thm-131-3|Calc Thm. §131.3]] (test for conservative fields on simply connected regions) and [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Calc Thm. §128.3]]. In the language of forms, $-u_y\,dx + u_x\,dy$ is closed exactly when $u$ is harmonic, and the conjugate exists when it is exact: [[Poincaré Lemma|452 Poincaré Lemma]].
 > - A second proof inside complex analysis: $g = u_x - iu_y$ satisfies the Cauchy–Riemann equations (they are $u_{xx} = -u_{yy}$ and $u_{xy} = u_{yx}$), so it is analytic in $D$; on a simply connected domain it has an antiderivative $G$ ([[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]]); then $G' = (\operatorname{Re}G)_x - i(\operatorname{Re}G)_y = u_x - iu_y$, so $\operatorname{Re}G = u + c$, and $G - c = u + iv$.
 > - Used in Electromagnetism: the flux function as the harmonic conjugate of the potential — [[§C6.4★ The Complex Potential and the Variational Principle#^def-c6-4-1|EM Def. §C6.4.1]], [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
@@ -225,7 +225,7 @@ The proof that conjugates exist rests on a fact about line integrals from advanc
 > [!example] Example §115.4: ln r Needs a Simply Connected Domain
 > **(a)** Show that $u(r, \theta) = \ln r$ is harmonic in the domain $r > 0$, $0 < \theta < 2\pi$, and find its harmonic conjugate there.
 >
-> The polar form of Laplace's equation ([[§27★ Harmonic Functions|§27]], Exercise 1; [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]]) is $u_{rr} + \frac1ru_r + \frac{1}{r^2}u_{\theta\theta} = 0$. For $u = \ln r$: $u_{rr} = -1/r^2$, $\frac1ru_r = 1/r^2$, $u_{\theta\theta} = 0$, so the sum is $0$. The Cauchy–Riemann equations in polar form ([[§24★ Polar Coordinates#^prop-24-1|Proposition §24.1]]), $ru_r = v_\theta$ and $u_\theta = -rv_r$, give $v_\theta = r \cdot \frac1r = 1$ and $v_r = 0$, so $v = \theta + C$. Take $v(r, \theta) = \theta$: then $u + iv = \ln r + i\theta$ is the branch $\log z$ $(0 < \theta < 2\pi)$ of [[§33 Branches and Derivatives of Logarithms#^def-33-1|Definition §33.1]].
+> The polar form of Laplace's equation ([[§27★ Harmonic Functions|§27]], Exercise 1; [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]]) is $u_{rr} + \frac1ru_r + \frac{1}{r^2}u_{\theta\theta} = 0$. For $u = \ln r$: $u_{rr} = -1/r^2$, $\frac1ru_r = 1/r^2$, $u_{\theta\theta} = 0$, so the sum is $0$. The Cauchy–Riemann equations in polar form ([[§24★ Polar Coordinates#^prop-24-1|Proposition §24.1]]), $ru_r = v_\theta$ and $u_\theta = -rv_r$, give $v_\theta = r \cdot \frac1r = 1$ and $v_r = 0$, so $v = \theta + C$. Take $v(r, \theta) = \theta$: then $u + iv = \ln r + i\theta$ is the branch $\log z$ $(0 < \theta < 2\pi)$ of [[§33 Branches and Derivatives of Logarithms#^def-33-1|Definition §33.1]].
 >
 > **(b)** Show that $u = \ln|z| = \frac12\ln(x^2 + y^2)$, which is harmonic in the punctured plane $z \ne 0$, has no harmonic conjugate there. So Theorem §115.4 fails without simple connectivity.
 >

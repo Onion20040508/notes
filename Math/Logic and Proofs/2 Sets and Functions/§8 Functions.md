@@ -7,7 +7,7 @@ eccles: "Ch. 8"
 aliases: ["Eccles 8"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§7 Quantifiers]] · ↑ [[· 2 Sets and Functions]] · [[§9 Injections, Surjections and Bijections]] →
+← [[§7a Several Quantifiers and the Cartesian Product]] · ↑ [[· 2 Sets and Functions]] · [[§9 Injections, Surjections and Bijections]] →
 
 *Eccles, Chapter 8 · MAT 250 HW3 (Exercises 8.2, 8.4, 8.5).*
 
@@ -25,7 +25,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-2|551 Def. §1.2]] (mapping).
 > - Stewart's definition: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
-> - Computational version: [[§8 Introduction to Linear Transformations#^def-8-1|235 Def. §8.1]] (transformations from ℝⁿ to ℝᵐ, with domain, codomain, image and range).
+> - Computational version: [[§9 Introduction to Linear Transformations#^def-9-1|235 Def. §9.1]], [[§9 Introduction to Linear Transformations#^def-9-2|235 Def. §9.2]] (transformations from ℝⁿ to ℝᵐ, with domain, codomain, image and range).
 
 > [!example] Example §8.1: Three Pictures of One Function
 > Let $X = \{x_1, x_2, x_3, x_4\}$ and $Y = \{y_1, y_2, y_3, y_4, y_5\}$. The table
@@ -45,19 +45,19 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ![[m250-8-1.svg]]
 *The arrow picture of the function in [[§8 Functions#^ex-8-1|Example §8.1]]. The defining property of a function is on the left: one arrow leaves each element of the domain. On the right anything is allowed: $y_1$ receives two arrows, $y_2$ and $y_4$ none.*
 
-> [!definition] Definition §8.2: Constant Function
+> [!definition] Definition §8.3: Constant Function
 > Given sets $X$, $Y$ and $y_0 \in Y$, the **constant function** $c_{y_0} : X \to Y$ is given by $c_{y_0}(x) = y_0$ for all $x \in X$.
 >
 > *Eccles: Examples 8.1.3, 8.1.4*
 
 ^def-8-2
 
-> [!definition] Definition §8.2: Identity Function
+> [!definition] Definition §8.4: Identity Function
 > Given a set $X$, the **identity function** $I_X : X \to X$ is given by $I_X(x) = x$ for all $x \in X$.
 >
 > *Eccles: Examples 8.1.3, 8.1.4*
 
-^def-8-new1
+^def-8-3
 
 > [!example] Example §8.2: All Functions Between Small Sets
 > **(a)** For $X = \{a, b, c\}$ and $Y = \{d, e\}$ there are exactly eight functions $X \to Y$, one for each way of choosing a value in $\{d, e\}$ at each of $a, b, c$:
@@ -107,14 +107,14 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > f_3(x) = \begin{cases} \dfrac{x^2 + x - 2}{x - 1} & x \ne 1, \\ 3 & x = 1, \end{cases} \qquad f_4(x) = \begin{cases} \dfrac{x^2 + x - 2}{x - 1} & x \ne 1, \\ 42 & x = 1. \end{cases}
 > $$
 >
-> The value at a single point may be chosen arbitrarily. Here $f_3 = f_2$ ([[§8 Functions#^def-8-3|Def. §8.3]]), because $f_3(1) = 3 = f_2(1)$ was chosen to match, even though the two are defined differently: a function is determined by its values, not by the process that produces them. On the other hand $f_4 \ne f_2$. For $x \mapsto 1/x$ no rewriting removes the gap at $0$, but explicit definition still works: $g(x) = 1/x$ for $x \ne 0$, $g(0) = 73$, defines $g : \R \to \R$.
+> The value at a single point may be chosen arbitrarily. Here $f_3 = f_2$ ([[§8 Functions#^def-8-4|Def. §8.4]]), because $f_3(1) = 3 = f_2(1)$ was chosen to match, even though the two are defined differently: a function is determined by its values, not by the process that produces them. On the other hand $f_4 \ne f_2$. For $x \mapsto 1/x$ no rewriting removes the gap at $0$, but explicit definition still works: $g(x) = 1/x$ for $x \ne 0$, $g(0) = 73$, defines $g : \R \to \R$.
 >
 > *Eccles: Examples 8.1.6, 8.1.7, 8.1.10*
 
 ^ex-8-4
 
 > [!example] Example §8.5: Piecewise Definitions Must Be Well-Defined
-> **(a)** The **modulus** function $\R \to \R$ (the absolute value of [[§1 The Language of Mathematics#^def-1-4|Def. §1.4]], viewed as a function) is
+> **(a)** The **modulus** function $\R \to \R$ (the absolute value of [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]], viewed as a function) is
 >
 > $$
 > |x| = \begin{cases} x & x \ge 0, \\ -x & x \le 0. \end{cases}
@@ -137,23 +137,23 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ^ex-8-5
 
 > [!remark]- Connections
-> - The modulus is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-4|451 Def. §3.4]].
+> - The modulus is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-5|451 Def. §3.5]].
 
-> [!definition] Definition §8.3: Equality of Functions
+> [!definition] Definition §8.5: Equality of Functions
 > Two functions $f : X \to Y$ and $g : X \to Y$ are **equal**, written $f = g$, when they have the same value at each point of the domain: $f(x) = g(x)$ for all $x \in X$. Implicit in this is that equal functions have the same domain and the same codomain.
 >
 > *Eccles: Definition 8.1.9*
 
-^def-8-3
+^def-8-4
 
-> [!definition] Definition §8.4: Restriction
+> [!definition] Definition §8.6: Restriction
 > Let $f : X \to Y$ and $A \subseteq X$. The **restriction** of $f$ to $A$ is the function $f|A : A \to Y$ given by $(f|A)(a) = f(a)$ for all $a \in A$.
 >
 > For example, in [[§8 Functions#^ex-8-2|Example §8.2]] $f_1|\{a, b\} = f_2|\{a, b\}$ is the constant function with value $d$; in [[§8 Functions#^ex-8-3|Example §8.3]] $f_2 = f_1|\R^{\geq}$ and $f_4 = f_3|\R^{\geq}$; in [[§8 Functions#^ex-8-4|Example §8.4]] $f_2|(\R - \{1\}) = f_4|(\R - \{1\}) = f_1$.
 >
 > *Eccles: Definition 8.1.11; Examples 8.1.12*
 
-^def-8-4
+^def-8-5
 
 > [!remark] Remark: Many Pictures, One Notion
 > A table of values, a diagram of arrows, a placing of objects into boxes, a formula, and (below) a graph are all ways of describing a function. Each suits some purposes better than others, and each makes different properties visible; in [[§9 Injections, Surjections and Bijections|§9]], injectivity and surjectivity are read off from each of them. What they share is the defining property: exactly one value at each point of the domain.
@@ -164,7 +164,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ## 8.2 Composition of Functions
 
-> [!definition] Definition §8.5: Composite
+> [!definition] Definition §8.7: Composite
 > Given functions $f : X \to Y$ and $g : Y \to Z$, the **composite** $g \circ f : X \to Z$ (also written $gf$) is defined by
 >
 > $$
@@ -173,7 +173,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 >
 > *Eccles: Definition 8.2.1*
 
-^def-8-5
+^def-8-6
 
 > [!remark]- Connections
 > - Computational version: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]] (with worked examples in [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]]).
@@ -185,12 +185,12 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^rem-8-2
 
-> [!definition] Definition §8.6: Inclusion Function
+> [!definition] Definition §8.8: Inclusion Function
 > If $A \subseteq X$, the **inclusion function** $i : A \to X$ is given by $i(a) = a$ for all $a \in A$. For any $f : X \to Y$, the composite $f \circ i : A \to Y$ equals the restriction $f|A$, since $(f \circ i)(a) = f(a) = (f|A)(a)$.
 >
 > *Eccles: Examples 8.2.2(b)*
 
-^def-8-6
+^def-8-7
 
 > [!example] Example §8.6: Composition Is Not Commutative
 > **(a)** Let $f, g : \R \to \R$, $f(x) = x + 1$, $g(x) = x^2$. Then $(g \circ f)(x) = g(x + 1) = (x + 1)^2$, while $(f \circ g)(x) = f(x^2) = x^2 + 1$. These differ (at $x = 1$: $4 \ne 2$), so $g \circ f \ne f \circ g$.
@@ -216,7 +216,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ^prop-8-1
 
 > [!proof]+ Proof
-> Both sides of each equation are functions with the same domain and codomain, so by [[§8 Functions#^def-8-3|Def. §8.3]] it suffices to compare values. For $x \in X$:
+> Both sides of each equation are functions with the same domain and codomain, so by [[§8 Functions#^def-8-4|Def. §8.4]] it suffices to compare values. For $x \in X$:
 >
 > (1) $\big((h \circ g) \circ f\big)(x) = (h \circ g)(f(x)) = h(g(f(x)))$ and $\big(h \circ (g \circ f)\big)(x) = h\big((g \circ f)(x)\big) = h(g(f(x)))$.
 >
@@ -224,11 +224,11 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^pf-8-1
 
-*Uses:* [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-new1|Def. §8.2]]
+*Uses:* [[§8 Functions#^def-8-4|Def. §8.4]], [[§8 Functions#^def-8-6|Def. §8.6]], [[§8 Functions#^def-8-3|Def. §8.3]]
 
 > [!remark]- Connections
 > - Composites of three functions computed from the inside out: [[§3 New Functions from Old Functions#^def-3-2|Calc Def. §3.2]], [[§3 New Functions from Old Functions#^ex-3-5|Calc Ex. §3.5]] (c), (d).
-> - Matrix version: [[§11 Matrix Operations#^thm-11-6|235 Thm. §11.6]](a), (e) (matrix multiplication, which is composition of linear maps, is associative, with identity I).
+> - Matrix version: [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|235 Thm. §13.1]](a), (e) (matrix multiplication, which is composition of linear maps, is associative, with identity I).
 
 > [!example] Example §8.7: Computing Composites
 > Let $f, g : \R \to \R$ be $f(x) = x^3$ and $g(x) = 1 - x$. Then
@@ -252,16 +252,16 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ## 8.3 Sequences
 
-> [!definition] Definition §8.7: Sequence
+> [!definition] Definition §8.9: Sequence
 > A function $f : \Z^+ \to A$ is a **sequence** in the set $A$. Its value $f(n)$ is often written $x_n$, and the sequence $(x_n)$ or $n \mapsto x_n$.
 >
 > *Eccles: Definition 8.3.1*
 
-^def-8-7
+^def-8-8
 
 Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto 2^n$, $n \mapsto (1 + 1/n)^n$), but the more interesting ones are defined inductively, like the Fibonacci sequence ([[§5 The Induction Principle#^def-5-5|Def. §5.5]]); even $2^n$ and $n!$ are, strictly, inductive definitions ([[§5 The Induction Principle#^def-5-3|Def. §5.3]], [[§5 The Induction Principle#^def-5-4|Def. §5.4]]). A central use of quantifiers is the definition of the limit of a sequence; the simplest case is limit $0$.
 
-> [!definition] Definition §8.8: Null Sequence
+> [!definition] Definition §8.10: Null Sequence
 > A sequence $f : \Z^+ \to \R$ is **null**, written $\lim f = 0$ or $\displaystyle\lim_{n \to \infty} f(n) = 0$, when
 >
 > $$
@@ -270,7 +270,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 >
 > *Eccles: Definition 8.3.2*
 
-^def-8-8
+^def-8-9
 
 > [!remark]- Connections
 > - Developed further in: [[§7 Limits of Sequences#^def-7-2|451 Def. §7.2]] (convergence of a sequence; null means converging to $0$), with sequences as functions on a set of integers in [[§7 Limits of Sequences#^def-7-1|451 Def. §7.1]].
@@ -284,7 +284,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > \frac{1}{\sqrt{n}} < \varepsilon \iff \frac{1}{n} < \varepsilon^2 \iff n > \frac{1}{\varepsilon^2}.
 > $$
 >
-> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7 Quantifiers#^rem-7-4|§7, remark on statements with two quantifiers]]).
+> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7a Several Quantifiers and the Cartesian Product#^rem-7a-4|§7a, remark on statements with two quantifiers]]).
 >
 > **Proof of (a).** Let $\varepsilon \in \R^+$. Choose a positive integer $N > 1/\varepsilon$ (one exists because the positive integers are unbounded in $\R$). If $n \in \Z^+$ and $n \ge N$, then $n > 1/\varepsilon$, so $|1/n| = 1/n < \varepsilon$.
 >
@@ -300,7 +300,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ## 8.4 The Image of a Function
 
-> [!definition] Definition §8.9: Image of a Function
+> [!definition] Definition §8.11: Image of a Function
 > Given $f : X \to Y$, the **image** of $f$ is the subset of the codomain consisting of the values of $f$:
 >
 > $$
@@ -311,12 +311,12 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 >
 > *Eccles: Definition 8.4.1*
 
-^def-8-9
+^def-8-10
 
 > [!remark]- Connections
 > - Same notion, called the range: [[§1 Countability and Set Theory#^def-1-5|551 Def. §1.5]].
 > - The range in Stewart: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
-> - For linear transformations: the range in [[§8 Introduction to Linear Transformations#^def-8-new1|235 Def. §8.1]]; for a matrix it is the column space, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
+> - For linear transformations: the range in [[§9 Introduction to Linear Transformations#^def-9-2|235 Def. §9.2]]; for a matrix it is the column space, [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-2|235 Def. §30.2]].
 
 > [!example] Example §8.9: Functions With Prescribed Images
 > Functions $f_i : \R \to \R$ with:
@@ -333,7 +333,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ## 8.5 The Graph of a Function
 
-> [!definition] Definition §8.10: Graph of a Function
+> [!definition] Definition §8.11: Graph of a Function
 > The **graph** of $f : X \to Y$ is the subset of $X \times Y$
 >
 > $$
@@ -344,7 +344,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 >
 > *Eccles: Definition 8.5.1; Remarks 8.5.2*
 
-^def-8-10
+^def-8-11
 
 > [!remark]- Connections
 > - Stewart's definition: [[§1 Four Ways to Represent a Function#^def-1-2|Calc Def. §1.2]].
@@ -363,13 +363,13 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > [!proof]+ Proof
 > (1) $(x_0, f(x_0)) \in G_f$. If $(x_0, y) \in G_f$, then $y = f(x_0)$; so this is the only point of $G_f$ in the column.
 >
-> (2) For $x_0 \in X$, $(x_0, f(x_0)) \in G_f = G_g$, so $f(x_0) = g(x_0)$. Hence $f = g$ by [[§8 Functions#^def-8-3|Def. §8.3]].
+> (2) For $x_0 \in X$, $(x_0, f(x_0)) \in G_f = G_g$, so $f(x_0) = g(x_0)$. Hence $f = g$ by [[§8 Functions#^def-8-4|Def. §8.4]].
 >
 > (3) For $x_0 \in X$ let $f(x_0)$ be the second coordinate of the unique point of $G$ in $\{x_0\} \times Y$. This assigns a unique element of $Y$ to each $x_0 \in X$, so it is a function $f : X \to Y$. For $(x, y) \in X \times Y$: if $(x, y) \in G$, it is the point of $G$ in the column of $x$, so $y = f(x)$ and $(x, y) \in G_f$; if $y = f(x)$ then $(x, y)$ is that point, so $(x, y) \in G$. Thus $G = G_f$, and $f$ is unique by (2).
 
 ^pf-8-2
 
-*Uses:* [[§8 Functions#^def-8-10|Def. §8.10]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7 Quantifiers#^def-7-5|Def. §7.5]], [[§7 Quantifiers#^def-7-new1|Def. §7.5]]
+*Uses:* [[§8 Functions#^def-8-11|Def. §8.11]], [[§8 Functions#^def-8-4|Def. §8.4]], [[§8 Functions#^def-8-1|Def. §8.1]], [[§7a Several Quantifiers and the Cartesian Product#^def-7a-1|Def. §7a.1]], [[§7a Several Quantifiers and the Cartesian Product#^def-7a-2|Def. §7a.2]]
 
 > [!remark]- Connections
 > - Computational version: the vertical line test, [[§1 Four Ways to Represent a Function#^thm-1-1|Calc Thm. §1.1]].

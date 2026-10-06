@@ -5,7 +5,7 @@ section: 28
 chapter: 5
 tags: [real-analysis, math451]
 ---
-← [[§27 Weierstrass's Approximation Theorem (Not Covered)]] · ↑ [[· 5 Differentiation]] · [[§29 The Mean Value Theorem]] →
+← [[§27a The Power Sequence xⁿ]] · ↑ [[· 5 Differentiation]] · [[§29 The Mean Value Theorem]] →
 
 > [!definition] Definition §28.1: The Derivative
 > Let $I = (\alpha, \beta)$ be an open interval, $f: I \to \mathbb{R}$, and $a \in I$. We say $f$ is **differentiable at $a$** if
@@ -22,8 +22,8 @@ tags: [real-analysis, math451]
 *The derivative as a limit of secant slopes: as $x \to a$, the secants (blue, lighter to darker) through $(a, f(a))$ and $(x, f(x))$ pivot into the tangent line (red), whose slope is $f'(a)$. Only $x \neq a$ is ever used — at $x = a$ there is no secant.*
 
 > [!remark]- Connections
-> - In several variables it splits into partial derivatives, [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]], directional derivatives, [[§7 Directional Derivatives#^def-7-1|452 Def. §7.1]], and differentiability as linear approximation, [[§6 Differentiability#^def-6-1|452 Def. §6.1]].
-> - Computational version: [[§12 Derivatives and Rates of Change#^def-12-3|Calc Def. §12.3]], [[§13 The Derivative as a Function#^def-13-3|Calc Def. §13.3]] (with worked examples).
+> - In several variables it splits into partial derivatives, [[§5 Partial Derivatives#^def-5-1|452 Def. §5.1]], directional derivatives, [[§9 Directional Derivatives#^def-9-1|452 Def. §9.1]], and differentiability as linear approximation, [[§7 Differentiability#^def-7-1|452 Def. §7.1]].
+> - Computational version: [[§14 Derivatives and Rates of Change#^def-14-3|Calc Def. §14.3]], [[§15 The Derivative as a Function#^def-15-3|Calc Def. §15.3]] (with worked examples).
 > - Computational version: [[§19 Derivatives#^def-19-1|342 Def. §19.1]] (the complex derivative, the same difference quotient with z in place of x, with worked examples).
 
 > [!example] Example §28.1: Square Root of the Absolute Value
@@ -68,7 +68,7 @@ tags: [real-analysis, math451]
 ^ex-28-2
 
 > [!remark]- Connections
-> - Computational version: the Power Rule, [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|Calc Thm. §14.2]] (with worked examples).
+> - Computational version: the Power Rule, [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-2|Calc Thm. §17.2]] (with worked examples).
 
 > [!theorem] Theorem §28.1: Differentiable Implies Continuous
 > If $f$ is differentiable at $a$, then $f$ is continuous at $a$.
@@ -89,7 +89,7 @@ tags: [real-analysis, math451]
 *Uses:* [[§20 Limits of Functions#^rem-20-2|§20 Rem. (limit laws)]]
 
 > [!remark]- Connections
-> - Computational version: [[§13 The Derivative as a Function#^thm-13-1|Calc Thm. §13.1]].
+> - Computational version: [[§15 The Derivative as a Function#^thm-15-1|Calc Thm. §15.1]].
 > - Computational version: [[§19 Derivatives#^thm-19-1|342 Thm. §19.1]] (the same statement and proof for complex functions).
 
 > [!remark] Remark: The Converse Fails
@@ -107,7 +107,7 @@ tags: [real-analysis, math451]
 *Continuous but not differentiable. Left: the secant slopes of $\sqrt{|x|}$ at $0$ (red, through $x = \pm 0.4$ and $x = \pm 0.1$) are $\pm\tfrac{1}{\sqrt{|x|}}$ and blow up to $\pm\infty$ — a cusp. Right: $|x+1| + |x| + |x-1|$ is piecewise linear with slopes $-3, -1, 1, 3$; at each corner $-1, 0, 1$ (red) the two one-sided slopes disagree.*
 
 > [!remark]- Connections
-> - Worked examples: $|x|$ at $0$, [[§13 The Derivative as a Function#^ex-13-4|Calc Ex. §13.4]].
+> - Worked examples: $|x|$ at $0$, [[§15 The Derivative as a Function#^ex-15-4|Calc Ex. §15.4]].
 
 > [!theorem] Theorem §28.2: Arithmetic of Derivatives
 > If $f, g$ are differentiable at $a$, then $f \pm g$ and $fg$ are differentiable at $a$, with
@@ -136,8 +136,8 @@ tags: [real-analysis, math451]
 *Uses:* [[§20 Limits of Functions#^rem-20-2|§20 Rem. (limit laws)]], [[§28 Basic Properties of the Derivative#^thm-28-1|§28.1]]
 
 > [!remark]- Connections
-> - Two-variable versions for partial derivatives and for differentiability: [[§6 Differentiability#^thm-6-3|452 Thm. §6.3]] to [[§6 Differentiability#^thm-6-5|452 Thm. §6.5]], and [[§6 Differentiability#^thm-6-6|452 Thm. §6.6]] to [[§6 Differentiability#^thm-6-8|452 Thm. §6.8]].
-> - Computational version: [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Calc Thm. §14.4]], [[§15 The Product and Quotient Rules#^thm-15-1|Calc Thm. §15.1]], [[§15 The Product and Quotient Rules#^thm-15-2|Calc Thm. §15.2]] (with worked examples).
+> - Two-variable versions for partial derivatives and for differentiability: [[§8 Algebra of Differentiable Functions#^thm-8-1|452 Thm. §8.1]] to [[§8 Algebra of Differentiable Functions#^thm-8-3|452 Thm. §8.3]], and [[§8 Algebra of Differentiable Functions#^thm-8-4|452 Thm. §8.4]] to [[§8 Algebra of Differentiable Functions#^thm-8-6|452 Thm. §8.6]].
+> - Computational version: [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-4|Calc Thm. §17.4]], [[§18 The Product and Quotient Rules#^thm-18-1|Calc Thm. §18.1]], [[§18 The Product and Quotient Rules#^thm-18-2|Calc Thm. §18.2]] (with worked examples).
 > - Computational version: [[§20 Rules for Differentiation#^thm-20-2|342 Thm. §20.2]] (sum, product and quotient rules for complex derivatives, with worked examples).
 
 ## The Chain Rule and a Gap
@@ -216,8 +216,8 @@ The most useful theorem:
 ^rem-28-2
 
 > [!remark]- Connections
-> - Several-variable chain rule: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (for differentiable maps) and [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] (with continuous partials).
-> - Computational version: [[§17 The Chain Rule#^thm-17-2|Calc Thm. §17.2]] (with worked examples).
+> - Several-variable chain rule: [[§8 Algebra of Differentiable Functions#^thm-8-7|452 Thm. §8.7]] (for differentiable maps) and [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]] (with continuous partials).
+> - Computational version: [[§20 The Chain Rule#^thm-20-2|Calc Thm. §20.2]] (with worked examples).
 
 > [!example] Example §28.3: Oscillation and Differentiability at Zero
 > **(1)** $f(x) = x \sin\tfrac1x$ ($x \neq 0$), $f(0) = 0$: continuous at $0$ (proved in §17) but *not differentiable* at $0$ — the difference quotient

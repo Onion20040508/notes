@@ -20,7 +20,7 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 
 > [!remark]- Connections
 > - The general definition, for maps $X \to Y$: [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]]; the operator norm as a norm on $\mathcal{L}(X, Y)$: [[§26 Boundedness and Continuity#^thm-26-5|§26.5]].
-> - Finite dimensions: [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
+> - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
 As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]]), $\|Tx\| \le \|T\|\,\|x\|$. Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$.
 
@@ -30,7 +30,7 @@ As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]
 ^def-31-2
 
 > [!remark]- Connections
-> - Finite-dimensional $Y$ in LADR: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]].
+> - Finite-dimensional $Y$ in LADR: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]].
 > - Used in Quantum Mechanics: a selective measurement (filtration) is an orthogonal projection — [[§C1.3 Measurements, Compatible Observables and Uncertainty#^def-c1-3-1|QM Def. §C1.3.1]].
 
 > [!theorem] Proposition §31.1: Finite Sums of Outer Products are Projections
@@ -52,7 +52,7 @@ As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]
 *Uses:* [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]], [[§24 Orthonormal Sets and Bases#^lem-24-2|§24.2]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], [[§31 The Completeness Relation#^def-31-2|Def. §31.2]], [[§24 Orthonormal Sets and Bases#^lem-24-1|§24.1]], [[§30 Bras, Kets, and the Riesz Map#^def-30-2|Def. §30.2]]
 
 > [!remark]- Connections
-> - Finite-dimensional version, $P_U = \sum_k |e_k\rangle\langle e_k|$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]].
+> - Finite-dimensional version, $P_U = \sum_k |e_k\rangle\langle e_k|$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]].
 > - Used in Quantum Field Theory: completeness of a spin basis of $\mathbb C^2$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1$, behind the spin sums of Dirac spinors — [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-3|QFT Def. §C5a.5.3]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-7|QFT Theorem §C5a.6.7]].
 
 > [!example] Example §31.1: Parity
@@ -127,7 +127,7 @@ As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]
 *Uses:* [[§31 The Completeness Relation#^thm-31-2|§31.2]], [[§22 Projection and Orthogonal Decomposition#^lem-22-1|§22.1]], [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]], [[§24 Orthonormal Sets and Bases#^thm-24-5|§24.5]], [[§30 Bras, Kets, and the Riesz Map#^rem-30-1|Remark: Conventions]]
 
 > [!remark]- Connections
-> - Parseval's equality, the case $y = x$: [[§24 Orthonormal Sets and Bases#^thm-24-8|§24.8]](3); in finite dimensions [[§20 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
+> - Parseval's equality, the case $y = x$: [[§24 Orthonormal Sets and Bases#^thm-24-8|§24.8]](3); in finite dimensions [[§21 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
 > - Used in Quantum Mechanics: the evolution of a state expanded in energy eigenkets, by inserting a complete set of states — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-5|QM Theorem §C3.1.5]].
 
 > [!example] Example §31.2: A Particle on a Ring
@@ -137,4 +137,4 @@ As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: the ring's momentum operator and its spectrum — [[§B2.2 Observables and Hermitian Operators#^ex-b2-2-1|QM Example §B2.2.1]]; a molecule rotating in a plane — [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^ex-b5-2-2|QM Example §B5.2.2]].
-> - Computational version: Parseval's identity for real trigonometric Fourier series, used to sum series such as $\sum 1/n^4$: [[Parseval's Equality for Fourier Series|341 Thm. §11.4]].
+> - Computational version: Parseval's identity for real trigonometric Fourier series, used to sum series such as $\sum 1/n^4$: [[Parseval's Equality for Fourier Series|341 Thm. §15.4]].

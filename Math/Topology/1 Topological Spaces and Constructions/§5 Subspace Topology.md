@@ -6,7 +6,7 @@ section: 5
 munkres: "§16"
 tags: [topology, math590]
 ---
-← [[§4 Product Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies]] →
+← [[§4 Product Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§6 Discrete, Indiscrete, Lower Limit and K-Topologies]] →
 
 ## Definition and Basic Properties
 
@@ -22,17 +22,17 @@ tags: [topology, math590]
 ^def-5-1
 
 > [!remark]- Connections
-> - Closed sets of a subspace: [[§6 Closed Sets and Limit Points#^thm-6-2|Closed Sets in Subspaces]]; closures: [[§7 Interior and Closure#^thm-7-2|Closure in Subspace]].
-> - Metric version: [[§11 Metric Topology#^thm-11-6|Subspace of Metric Space]].
+> - Closed sets of a subspace: [[§7 Closed Sets and Limit Points#^thm-7-2|Closed Sets in Subspaces]]; closures: [[§8 Interior and Closure#^thm-8-2|Closure in Subspace]].
+> - Metric version: [[§12 Metric Topology#^thm-12-6|Subspace of Metric Space]].
 > - Characterized by a universal property in 591: a map into a subspace is continuous exactly when it is continuous into the ambient space, [[§3 Subspaces and Products#^prop-3-3|591 Prop. §3.3]], [[§3 Subspaces and Products#^cor-3-4|591 Cor. §3.4]].
 
 > [!remark] Remark: Why the Subspace Topology?
-> The subspace topology is the *unique* topology on $Y$ that makes the [[§9 Continuous Functions#^thm-9-4|inclusion map]] $\iota: Y \hookrightarrow X$ continuous and satisfies a universal property: a function $f: Z \to Y$ is continuous if and only if $\iota \circ f: Z \to X$ is continuous. In other words, this is the coarsest topology on $Y$ such that “being a subset” respects the topological structure. The key subtlety is that open in $Y$ need not be open in $X$—$[0, \tfrac{1}{2})$ is open in $[0,1)$ but not in $\mathbb{R}$. Getting comfortable with this distinction is essential for working with compactness and connectedness in subspaces.
+> The subspace topology is the *unique* topology on $Y$ that makes the [[§10 Continuous Functions#^thm-10-4|inclusion map]] $\iota: Y \hookrightarrow X$ continuous and satisfies a universal property: a function $f: Z \to Y$ is continuous if and only if $\iota \circ f: Z \to X$ is continuous. In other words, this is the coarsest topology on $Y$ such that “being a subset” respects the topological structure. The key subtlety is that open in $Y$ need not be open in $X$—$[0, \tfrac{1}{2})$ is open in $[0,1)$ but not in $\mathbb{R}$. Getting comfortable with this distinction is essential for working with compactness and connectedness in subspaces.
 
 ^rem-5-1
 
 > [!remark]- Connections
-> - Compactness in subspaces: [[§15 Compact Spaces#^lem-15-1|Compactness in Subspaces]]; connectedness: [[§13 Connected Spaces#^lem-13-2|Separation Characterization]] (with [[§13 Connected Spaces#^rem-13-4|Limit Points in X vs. Y]]).
+> - Compactness in subspaces: [[§18 Compact Spaces#^lem-18-1|Compactness in Subspaces]]; connectedness: [[§15 Connected Spaces#^lem-15-2|Separation Characterization]] (with [[§15 Connected Spaces#^rem-15-4|Limit Points in X vs. Y]]).
 
 > [!example] Example §5.1
 > $[0,1) \subseteq \mathbb{R}$. Is $[0, \frac{1}{2}) \subseteq \mathbb{R}$ open in $\mathbb{R}$? No. If $0 \in B \in \mathcal{B}$, then $B \subseteq [0, \frac{1}{2})$ is impossible since $B$ must contain points less than $0$.
@@ -64,7 +64,7 @@ tags: [topology, math590]
 ^pf-5-2
 
 > [!remark]- Connections
-> - Closed analogue: [[§6 Closed Sets and Limit Points#^thm-6-3|Theorem §6.3]].
+> - Closed analogue: [[§7 Closed Sets and Limit Points#^thm-7-3|Theorem §7.3]].
 
 > [!example] Example §5.2
 > $Y = [0,1] \subseteq X = \mathbb{R}$. The subspace topology on $Y$ has basis $\{(a,b) \cap Y \mid a, b \in \mathbb{R}\}$:

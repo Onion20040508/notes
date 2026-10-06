@@ -12,7 +12,7 @@ The concepts above (lim sup and lim inf, [[§10 Monotone Sequences and Cauchy Se
 
 ## Cauchy Sequences
 
-> [!definition] Definition §10.4: Cauchy Sequence
+> [!definition] Definition §10a.1: Cauchy Sequence
 > A sequence $(s_n)$ is called **Cauchy** if for any $\varepsilon > 0$ there exists $N$ such that for any pair $m, n \geq N$,
 >
 > $$
@@ -21,15 +21,15 @@ The concepts above (lim sup and lim inf, [[§10 Monotone Sequences and Cauchy Se
 >
 > Compare with the $(\varepsilon, N)$ definition of the limit: instead of comparing $s_n$ with a limit $s$, we compare the terms *with each other*. The important point: the condition is purely in terms of $(s_n)$.
 
-^def-10-4
+^def-10a-1
 
 > [!remark]- Connections
-> - The same condition with a norm in place of the absolute value: [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; in a metric space, [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.2]].
+> - The same condition with a norm in place of the absolute value: [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]], [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-4|551 Def. §34.4]]; in a metric space, [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|Def. §13.3]].
 
-> [!theorem] Theorem §10.7: Convergent Implies Cauchy
+> [!theorem] Theorem §10a.1: Convergent Implies Cauchy
 > Every convergent sequence is a Cauchy sequence.
 
-^thm-10-7
+^thm-10a-1
 
 > [!proof]+ Proof
 > Let $s = \lim s_n$. For any $\varepsilon > 0$ there exists $N$ such that $|s_n - s| < \tfrac\varepsilon2$ for all $n \geq N$. Then for any pair $m, n \geq N$,
@@ -40,16 +40,16 @@ The concepts above (lim sup and lim inf, [[§10 Monotone Sequences and Cauchy Se
 >
 > So being Cauchy is a *necessary* condition for convergence.
 
-^pf-10-7
+^pf-10a-1
 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
-Conversely, is every Cauchy sequence convergent ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8]] below)? How to prove it? Not clear at first — we must produce a limit out of nothing. Let us analyze: first check boundedness.
+Conversely, is every Cauchy sequence convergent ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]] below)? How to prove it? Not clear at first — we must produce a limit out of nothing. Let us analyze: first check boundedness.
 
-> [!theorem] Lemma §10.9: Cauchy Implies Bounded
+> [!theorem] Lemma §10a.2: Cauchy Implies Bounded
 > If $(s_n)$ is Cauchy, then $(s_n)$ is bounded.
 
-^lem-10-9
+^lem-10a-2
 
 > [!proof]+ Proof
 > Let $\varepsilon = 1$: there exists $N$ such that $|s_n - s_m| < 1$ for all $m, n \geq N$. In particular, taking $m = N$: for all $n \geq N$,
@@ -66,14 +66,14 @@ Conversely, is every Cauchy sequence convergent ([[§10 Monotone Sequences and C
 >
 > Then $|s_n| \leq M$ for all $n \geq 1$.
 
-^pf-10-9
+^pf-10a-2
 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§4 The Completeness Axiom#^ex-4-1|Ex. §4.1]]
 
-> [!theorem] Theorem §10.8: Cauchy Implies Convergent
+> [!theorem] Theorem §10a.3: Cauchy Implies Convergent
 > If $(s_n)$ is a Cauchy sequence of real numbers, then $(s_n)$ is convergent. Combining with the previous theorem: *$(s_n)$ is convergent if and only if it is Cauchy.*
 
-^thm-10-8
+^thm-10a-3
 
 > [!proof]+ Proof
 > Since $(s_n)$ is bounded, $\liminf s_n$ and $\limsup s_n$ are finite. We use the criterion of [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6]]: it suffices to show they are equal — so we try to get information on $\underline{s}_N$, $\overline{s}_N$.
@@ -116,14 +116,14 @@ Conversely, is every Cauchy sequence convergent ([[§10 Monotone Sequences and C
 >
 > and by [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6]](2), $(s_n)$ is convergent.
 
-^pf-10-8
+^pf-10a-3
 
-*Uses:* [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-9|§10.9]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|§10.6]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+*Uses:* [[§10a Cauchy Sequences#^lem-10a-2|§10a.2]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|§10.6]], [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-4|§10.4]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
 
 ![[m451-10-4.svg]]
 *Cauchy implies convergent, with no limit in sight: the band is anchored at a *term* $s_N$ (red), not at a limit. Every later term lies within $\varepsilon$ of $s_N$, so the whole tail — and with it $\underline{s}_N \leq \overline{s}_N$, hence $\liminf s_n$ and $\limsup s_n$ — is caught in an interval of length $2\varepsilon$.*
 
-> [!example] Example §10.3: A Contraction-Type Estimate
+> [!example] Example §10a.1: A Contraction-Type Estimate
 > Assume $(s_n)$ satisfies $|s_{n+1} - s_n| < 2^{-n}$ for all $n \geq 1$. Prove $(s_n)$ is a Cauchy sequence, and hence convergent.
 >
 > We need to see how big $|s_m - s_n|$ is for $m > n$. Telescope through the intermediate terms and apply the [[§3 The Set ℝ of Real Numbers#^thm-3-3|triangle inequality]]:
@@ -147,7 +147,7 @@ Conversely, is every Cauchy sequence convergent ([[§10 Monotone Sequences and C
 >
 > and we are done: $(s_n)$ is Cauchy, hence convergent.
 
-^ex-10-3
+^ex-10a-1
 
 > [!remark] Remark: The Geometric Rate Is Doing the Work (HW)
 > It is *not* enough that consecutive differences tend to $0$: the weaker hypothesis $|s_{n+1} - s_n| < \tfrac1n$ does not imply Cauchy. Counterexample:
@@ -164,11 +164,11 @@ Conversely, is every Cauchy sequence convergent ([[§10 Monotone Sequences and C
 >
 > and since $(s_n)$ is increasing, it exceeds any $M$ from some point on. Unbounded sequences are not Cauchy. (These are the partial sums of the *harmonic series*; the same dyadic estimate returns in §14.) The moral: in the example above, the increments were *summable* — the geometric tail $2^{-n+1}$ stayed uniformly small — whereas mere decay of single increments controls nothing about the accumulated drift.
 
-^rem-10-3
+^rem-10a-3
 
 > [!remark] Remark: Cauchy Sequences and the Construction of the Reals
 > Cauchy sequences can be used to construct $\mathbb{R}$ from $\mathbb{Q}$: real numbers can be identified with equivalence classes of Cauchy sequences of rational numbers (two sequences being equivalent when their difference tends to $0$). This is the second standard construction of $\mathbb{R}$, alongside the [[§6 Dedekind Cuts#^def-6-1|Dedekind cuts]] of §6. Note the logical order in this course, however: we *assumed* $\mathbb{R}$ with completeness, and the theorem above (Cauchy $\Rightarrow$ convergent) is a *consequence* — indeed an equivalent form — of the [[Completeness Axiom|completeness axiom]].
 >
 > ★ The construction is carried out, with proofs, in [[§6★ ℝ from Cauchy Sequences of Rationals]].
 
-^rem-10-4
+^rem-10a-4

@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 137
+section: "137★"
 bc: "137"
 aliases: ["B&C 137"]
 tags: [complex-variables, math342, extension]
@@ -88,7 +88,7 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 ^lem-137-3
 
 > [!proof]+ Proof
-> Let $w(r, \theta) = u(r, -\theta)$. Then $w_r = u_r$, $w_{rr} = u_{rr}$ and $w_{\theta\theta} = u_{\theta\theta}$, all evaluated at $(r, -\theta)$, so the polar form of Laplace's equation ([[§27★ Harmonic Functions|§27★]], Exercise 1; [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]])
+> Let $w(r, \theta) = u(r, -\theta)$. Then $w_r = u_r$, $w_{rr} = u_{rr}$ and $w_{\theta\theta} = u_{\theta\theta}$, all evaluated at $(r, -\theta)$, so the polar form of Laplace's equation ([[§27★ Harmonic Functions|§27★]], Exercise 1; [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]])
 >
 > $$
 > r^2w_{rr}(r, \theta) + rw_r(r, \theta) + w_{\theta\theta}(r, \theta) = \big[r^2u_{rr} + ru_r + u_{\theta\theta}\big](r, -\theta) = 0
@@ -98,7 +98,7 @@ Symmetry and inversion extend the disk formula to three more regions. If the bou
 
 ^pf-137-3
 
-*Uses:* [[§27★ Harmonic Functions|§27★]], [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]] (polar Laplacian)
+*Uses:* [[§27★ Harmonic Functions|§27★]], [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]] (polar Laplacian)
 
 > [!theorem] Theorem §137.4: Dirichlet Problem for the Exterior of a Circle
 > Write $Z = Re^{i\psi}$. The function

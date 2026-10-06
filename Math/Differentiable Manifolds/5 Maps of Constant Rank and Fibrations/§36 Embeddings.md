@@ -16,7 +16,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ## Embeddings and Their Images
 
 > [!definition] Definition §36.1: Embedding
-> A smooth map ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]) $F : M \to N$ is an **embedding** if it is an immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]) and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism ([[§9 Continuous Functions#^def-9-2|590 Def. §9.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]) of $N$. Injectivity is part of being a homeomorphism; Uribe wrote “(injective) immersion” and called the word redundant.
+> A smooth map ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]) $F : M \to N$ is an **embedding** if it is an immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]) and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism ([[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]) of $N$. Injectivity is part of being a homeomorphism; Uribe wrote “(injective) immersion” and called the word redundant.
 >
 > *Lee: Ch. 4, Embeddings*
 
@@ -24,7 +24,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 
 > [!remark]- Connections
 > - Announced at the end of Lecture 13: [[§35 Immersions#^rem-35-1|Remark: Embeddings — Next Time (§35)]]; the two ways an immersion's image can fail to be a submanifold: [[§35 Immersions#^ex-35-1|Ex. §35.1]], [[§35 Immersions#^ex-35-2|Ex. §35.2]].
-> - Homeomorphisms in 590: [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
+> - Homeomorphisms in 590: [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 ![[m591-33-1.svg]]
 *An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§35 Immersions#Images of Immersions|§35]]) is an injective immersion for which the top arrow is not a homeomorphism.*
@@ -76,7 +76,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-1
 
-*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§35 Immersions#^thm-35-1|§35.1]], [[§35 Immersions#^cor-35-2|§35.2]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§9 Continuous Functions#^prop-9-2|590 §9.2]]
+*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§35 Immersions#^thm-35-1|§35.1]], [[§35 Immersions#^cor-35-2|§35.2]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§10 Continuous Functions#^prop-10-2|590 §10.2]]
 
 ![[m591-33-3.svg]]
 *The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.*
@@ -123,7 +123,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 *Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem ([[§34 Fibrations#^thm-34-3|Theorem §34.3]]).*
 
 > [!definition] Definition §36.2: Proper Map
-> A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) for every compact $K \subseteq Y$.
+> A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) for every compact $K \subseteq Y$.
 >
 > *Lee: App. A, Proper Maps*
 
@@ -134,7 +134,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > - The properness hypothesis of [[§34 Fibrations#^thm-34-3|Ehresmann's theorem, §34.3]].
 
 > [!theorem] Proposition §36.4: Proper Maps into Manifolds Are Closed
-> Let $F : M \to N$ be a continuous proper map ([[§36 Embeddings#^def-36-2|Def. §36.2]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§12 Quotient Topology#^def-12-4|590 Def. §12.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
+> Let $F : M \to N$ be a continuous proper map ([[§36 Embeddings#^def-36-2|Def. §36.2]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§13 Quotient Topology#^def-13-4|590 Def. §13.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
 >
 > *Lee: Theorem A.57*
 
@@ -151,11 +151,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-4
 
-*Uses:* [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§15 Compact Spaces#^thm-15-2|590 §15.2]], [[§15 Compact Spaces#^thm-15-3|590 §15.3]], [[§15 Compact Spaces#^thm-15-4|590 §15.4]], [[§7 Interior and Closure#^thm-7-3|590 §7.3]]
+*Uses:* [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§8 Interior and Closure#^thm-8-3|590 §8.3]]
 
 > [!remark]- Connections
-> - The closed-map argument for compact domains in 590, which Claim 1 localizes: [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]]; closed maps: [[§12 Quotient Topology#^def-12-4|590 Def. §12.4]].
-> - Local compactness in 590: [[§17 Local Compactness#^def-17-1|590 Def. §17.1]], [[§17 Local Compactness#^thm-17-6|590 §17.6]].
+> - The closed-map argument for compact domains in 590, which Claim 1 localizes: [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]; closed maps: [[§13 Quotient Topology#^def-13-4|590 Def. §13.4]].
+> - Local compactness in 590: [[§20 Local Compactness#^def-20-1|590 Def. §20.1]], [[§20 Local Compactness#^thm-20-6|590 §20.6]].
 
 > [!theorem] Theorem §36.5: Injective Proper Immersions Are Embeddings
 > An injective proper ([[§36 Embeddings#^def-36-2|Def. §36.2]]) immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]) $F : M \to N$ is an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]).
@@ -169,10 +169,10 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-5
 
-*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^prop-36-4|§36.4]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]]
+*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^prop-36-4|§36.4]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]]
 
 > [!theorem] Corollary §36.6: Injective Immersions of Compact Manifolds
-> If $M$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]), every injective immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]) $F : M \to N$ is an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]).
+> If $M$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]), every injective immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]) $F : M \to N$ is an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]).
 >
 > *Lee: Proposition 4.22*
 
@@ -183,10 +183,10 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-6
 
-*Uses:* [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§36 Embeddings#^thm-36-5|§36.5]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§15 Compact Spaces#^thm-15-4|590 §15.4]], [[§15 Compact Spaces#^thm-15-2|590 §15.2]]
+*Uses:* [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§36 Embeddings#^thm-36-5|§36.5]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]]
 
 > [!remark]- Connections
-> - The topological prototype: a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]] (in 591: [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)).
+> - The topological prototype: a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]] (in 591: [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)).
 
 *An aside from the end of the lecture.* Uribe mentioned that he is developing his own notes for the course, “based on notes that somebody took a few years ago”, edited “the night before”, and asked whether they would help, perhaps shared through Overleaf.
 
@@ -195,12 +195,12 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 *Why does density of the irrational line rule out an embedding? Because the image of an embedding is always closed* locally, *and a dense set that is locally closed is open. Prompted by Assignment 4, Problem 5.*
 
 > [!definition] Definition §36.3: Locally Closed Subset
-> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s.
+> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s.
 
 ^def-36-3
 
 > [!remark]- Connections
-> - Closed sets and closed sets of a subspace in 590: [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]]; the subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
+> - Closed sets and closed sets of a subspace in 590: [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]]; the subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
 
 > [!theorem] Proposition §36.7: Images of Embeddings Are Locally Closed
 > Every regular submanifold ([[§33 Submanifolds#^def-33-1|Def. §33.1]]) of $N$ — in particular the image of an embedding ([[§36 Embeddings#^thm-36-1|Theorem §36.1]]) — is locally closed ([[§36 Embeddings#^def-36-3|Def. §36.3]]) in $N$.
@@ -212,10 +212,10 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-7
 
-*Uses:* [[§36 Embeddings#^def-36-3|Def. §36.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]], [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]
+*Uses:* [[§36 Embeddings#^def-36-3|Def. §36.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]
 
 > [!theorem] Corollary §36.8: Dense Submanifolds Are Open
-> A dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) regular submanifold ([[§33 Submanifolds#^def-33-1|Def. §33.1]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
+> A dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) regular submanifold ([[§33 Submanifolds#^def-33-1|Def. §33.1]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
 
 ^cor-36-8
 
@@ -224,10 +224,10 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-36-8
 
-*Uses:* [[§36 Embeddings#^prop-36-7|§36.7]], [[§36 Embeddings#^def-36-3|Def. §36.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]], [[§7 Interior and Closure#^thm-7-2|590 §7.2]]
+*Uses:* [[§36 Embeddings#^prop-36-7|§36.7]], [[§36 Embeddings#^def-36-3|Def. §36.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]]
 
 > [!remark]- Connections
-> - Dense subsets in 590: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]], with the [[Closure Characterization|590 closure characterization]].
+> - Dense subsets in 590: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], with the [[Closure Characterization|590 closure characterization]].
 
 This is the precise form of Uribe's “no matter how you shrink $V$, you won't be able to isolate only the yellow guy”: at every point of [[§36 Embeddings#^prop-36-11|the irrational line]], local closedness fails.
 
@@ -243,7 +243,7 @@ This is the precise form of Uribe's “no matter how you shrink $V$, you won't b
 
 ^pf-36-9
 
-*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§36 Embeddings#^prop-36-4|§36.4]], [[§36 Embeddings#^thm-36-5|§36.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2]], [[§15 Compact Spaces#^thm-15-2|590 §15.2]], [[§15 Compact Spaces#^thm-15-3|590 §15.3]]
+*Uses:* [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^def-36-2|Def. §36.2]], [[§36 Embeddings#^prop-36-4|§36.4]], [[§36 Embeddings#^thm-36-5|§36.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§18 Compact Spaces#^thm-18-2|590 §18.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]]
 
 | Map | Image | Example separating it from the row above |
 |---|---|---|
@@ -269,7 +269,7 @@ Closedness of the image alone is not enough: the image of the [[§35 Immersions#
 *Status.* Used in Assignment 4, Problem 5, citing Lee; not proved here. (Lee's proof is a [[Pigeonhole Principle|pigeonhole]] argument on the fractional parts of $0, \alpha, \ldots, N\alpha$.)
 
 > [!theorem] Proposition §36.11: The Irrational Line on the Torus
-> Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve $F(t) = [t, \alpha t]$ introduced before [[§36 Embeddings#^thm-36-1|Theorem §36.1]], under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]), its image is dense ([[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]).
+> Let $\alpha$ be irrational and $\gamma : \mathbb{R} \to T^2 = S^1 \times S^1$, $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ — the curve $F(t) = [t, \alpha t]$ introduced before [[§36 Embeddings#^thm-36-1|Theorem §36.1]], under the identification $[x, y] \mapsto (e^{2\pi i x}, e^{2\pi i y})$. Then $\gamma$ is an injective immersion ([[§35 Immersions#^def-35-1|Def. §35.1]]), its image is dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) in $T^2$, and $\gamma$ is not an embedding ([[§36 Embeddings#^def-36-1|Def. §36.1]]).
 >
 > *Lee: Example 4.20*
 
@@ -288,10 +288,10 @@ Closedness of the image alone is not enough: the image of the [[§35 Immersions#
 
 ^pf-36-11
 
-*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§36 Embeddings#^lem-36-10|§36.10]], [[§36 Embeddings#^cor-36-8|§36.8]], [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]]
+*Uses:* [[§35 Immersions#^def-35-1|Def. §35.1]], [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§36 Embeddings#^lem-36-10|§36.10]], [[§36 Embeddings#^cor-36-8|§36.8]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]
 
 > [!remark]- Connections
-> - The torus as a quotient of the square in 590: [[§12 Quotient Topology#^ex-12-3|590 Ex. §12.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§24 Covering Spaces#^ex-24-3|590 Ex. §24.3]]; all the torus's uses: [[Torus|590 Torus]].
+> - The torus as a quotient of the square in 590: [[§13 Quotient Topology#^ex-13-3|590 Ex. §13.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§31 Covering Spaces#^ex-31-3|590 Ex. §31.3]]; all the torus's uses: [[Torus|590 Torus]].
 > - Locally the image is still a submanifold: [[§35 Immersions#^cor-35-2|§35.2]].
 
 ![[m591-34-3.svg]]

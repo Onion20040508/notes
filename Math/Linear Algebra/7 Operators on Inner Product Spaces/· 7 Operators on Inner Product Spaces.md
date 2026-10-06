@@ -11,13 +11,13 @@ tags: [chapter, linear-algebra]
 **Used by:** [[· 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (1), [[· 9 Multilinear Algebra and Determinants|9 Multilinear Algebra and Determinants]] (13)
 
 ## Sections
-- [[§22 Self-Adjoint and Normal Operators]]
-- [[§23 Spectral Theorem]]
-- [[§24 Positive Operators]]
-- [[§25 Isometries, Unitary Operators, and Matrix Factorization]]
-- [[§26 Singular Value Decomposition]]
-- [[§27 Consequences of Singular Value Decomposition]]
-- [[§27a The Operator (2w − 3z, 3w + 2z)]]
+- [[§23 Self-Adjoint and Normal Operators]]
+- [[§24 Spectral Theorem]]
+- [[§25 Positive Operators]]
+- [[§26 Isometries, Unitary Operators, and Matrix Factorization]]
+- [[§27 Singular Value Decomposition]]
+- [[§28 Consequences of Singular Value Decomposition]]
+- [[§29 The Operator (2w − 3z, 3w + 2z)]]
 
 ## Central results
 - [[Real spectral theorem]] (7.29)
@@ -26,7 +26,7 @@ tags: [chapter, linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (via Axler's citations).
-- [[§22 Self-Adjoint and Normal Operators#^ladr-7-5|7.5 Properties of the adjoint]]: 17 later results
-- [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|7.6 Null space and range of T]]: 15 later results
-- [[§22 Self-Adjoint and Normal Operators#^ladr-7-13|7.13 Tv is orthogonal to v for all v ⟺ T = 0 (assuming F = C)]]: 10 later results
-- [[§22 Self-Adjoint and Normal Operators#^ladr-7-12|7.12 Eigenvalues of self-adjoint operators]]: 9 later results
+- [[§23 Self-Adjoint and Normal Operators#^ladr-7-5|7.5 Properties of the adjoint]]: 17 later results
+- [[§23 Self-Adjoint and Normal Operators#^ladr-7-6|7.6 Null space and range of T]]: 15 later results
+- [[§23 Self-Adjoint and Normal Operators#^ladr-7-13|7.13 Tv is orthogonal to v for all v ⟺ T = 0 (assuming F = C)]]: 10 later results
+- [[§23 Self-Adjoint and Normal Operators#^ladr-7-12|7.12 Eigenvalues of self-adjoint operators]]: 9 later results

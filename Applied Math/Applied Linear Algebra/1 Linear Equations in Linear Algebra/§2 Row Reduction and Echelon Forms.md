@@ -7,7 +7,7 @@ lay: "1.2"
 aliases: ["Lay 1.2"]
 tags: [applied-linear-algebra, math235]
 ---
-← [[§1 Systems of Linear Equations]] · ↑ [[· 1 Linear Equations in Linear Algebra]] · [[§2a Solutions of Linear Systems]] →
+← [[§1 Systems of Linear Equations]] · ↑ [[· 1 Linear Equations in Linear Algebra]] · [[§3 Solutions of Linear Systems]] →
 
 *Lay, Section 1.2 and Appendix A · MATH 235 lectures L1, L2.*
 
@@ -112,7 +112,7 @@ A matrix can be row reduced to many different echelon forms, by different sequen
 
 ^pf-2-1
 
-*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§2 Row Reduction and Echelon Forms#^def-2-1|Def. §2.1]], [[§3 Vector Equations#^def-3-3|Def. §3.3]] (linear combinations)
+*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^thm-1-2|§1.2]], [[§2 Row Reduction and Echelon Forms#^def-2-1|Def. §2.1]], [[§4 Vector Equations#^def-4-3|Def. §4.3]] (linear combinations)
 
 > [!definition] Definition §2.2: Echelon Form and Reduced Echelon Form of a Matrix
 > If a matrix $A$ is row equivalent to an echelon matrix $U$, then $U$ is **an echelon form** (or row echelon form) **of $A$**. If $U$ is in reduced echelon form, $U$ is **the reduced echelon form of $A$**; "the" is justified by [[§2 Row Reduction and Echelon Forms#^thm-2-1|Theorem §2.1]]. Matrix programs abbreviate it **RREF** (and an echelon form **REF**).
@@ -243,7 +243,7 @@ A matrix can be row reduced to many different echelon forms, by different sequen
 > \end{aligned}
 > $$
 >
-> Already the echelon form answers both fundamental questions. There is no row $[\,0\ \cdots\ 0\ \ b\,]$ with $b \ne 0$, so the system is consistent ([[§2a Solutions of Linear Systems#^thm-2-3|Theorem §2.3]] below). The basic variables are $x_1, x_2, x_5$ and $x_3, x_4$ are free, so the solution is not unique: there are infinitely many solutions. The reduced echelon form gives them all:
+> Already the echelon form answers both fundamental questions. There is no row $[\,0\ \cdots\ 0\ \ b\,]$ with $b \ne 0$, so the system is consistent ([[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1]] below). The basic variables are $x_1, x_2, x_5$ and $x_3, x_4$ are free, so the solution is not unique: there are infinitely many solutions. The reduced echelon form gives them all:
 >
 > $$
 > x_1 = -24 + 2x_3 - 3x_4, \qquad x_2 = -7 + 2x_3 - 2x_4, \qquad x_3, x_4 \text{ free}, \qquad x_5 = 4 .
@@ -262,4 +262,4 @@ A matrix can be row reduced to many different echelon forms, by different sequen
 
 ^rem-2-2
 
-*Continued in [[§2a Solutions of Linear Systems]]: basic and free variables, parametric descriptions of solution sets, and the Existence and Uniqueness Theorem.*
+*Continued in [[§3 Solutions of Linear Systems]]: basic and free variables, parametric descriptions of solution sets, and the Existence and Uniqueness Theorem.*

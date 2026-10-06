@@ -21,15 +21,15 @@ tags: [real-analysis, hub]
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]]
 
 ## Used in (Multivariable Analysis)
-- [[§4 Partial Derivatives#^thm-4-1|Theorem §4.1: Bounded Partials Imply Continuity]]
-- [[§5 Equality of Mixed Partials#^thm-5-1|Theorem §5.1: Schwarz–Clairaut]]
-- [[§6 Differentiability#^thm-6-2|Theorem §6.2: Continuous Partials Imply Differentiability]]
-- [[§10 Composition of Functions and the Chain Rule#^thm-10-2|Theorem §10.2: Multivariable Chain Rule]]
-- [[§12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
-- [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
+- [[§5 Partial Derivatives#^thm-5-1|Theorem §5.1: Bounded Partials Imply Continuity]]
+- [[§6 Equality of Mixed Partials#^thm-6-1|Theorem §6.1: Schwarz–Clairaut]]
+- [[§7 Differentiability#^thm-7-2|Theorem §7.2: Continuous Partials Imply Differentiability]]
+- [[§12 Composition of Functions and the Chain Rule#^thm-12-2|Theorem §12.2: Multivariable Chain Rule]]
+- [[§15 The Implicit Function Theorem#^thm-15-1|Theorem §15.1: Implicit Function Theorem]]
+- [[§24 The Change of Variables Formula#^thm-24-2|Theorem §24.2: Change of Variables Formula — Rectangular Case]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^prop-18-3|Proposition §18.3: Differentiable Functions with Bounded Derivative are BV]]
+- [[§28 Differentiation Theory#^prop-28-3|Proposition §28.3: Differentiable Functions with Bounded Derivative are BV]]
 
 ## Used in (Differentiable Manifolds)
 - [[§28 The Differential in Coordinates#^prop-28-9|Proposition §28.9: Maps with Zero Differential Are Constant]]
@@ -37,6 +37,6 @@ tags: [real-analysis, hub]
 ## Connections
 - Leads to Taylor's theorem ([[§31 Taylor's Theorem#^thm-31-2|Theorem §31.2]]) and, in its generalized (Cauchy) form ([[§30 L'Hospital's Rule#^thm-30-2|Theorem §30.2]]), to L'Hospital's rule ([[§30 L'Hospital's Rule#^thm-30-1|Theorem §30.1]]).
 - For vector-valued functions the equality version fails (e.g. $t\mapsto(\cos t,\sin t)$ on $[0,2\pi]$); only the mean value inequality survives.
-- **Also in [[Calculus]]:** [[§26 The Mean Value Theorem#^thm-26-2|Calc Thm. §26.2]], with Rolle's Theorem [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (computational treatment with worked examples).
+- **Also in [[Calculus]]:** [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Calc Thm. §29.2]], with Rolle's Theorem [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-1|Calc Thm. §29.1]] (computational treatment with worked examples).
 - **Also in [[Complex Variables]]:** [[§41 Derivatives of Functions w(t)#^ex-41-3|342 Ex. §41.3]] (the failure of the equality version for w(t) = eⁱᵗ on [0, 2π], worked out).
-- **Also in [[Multivariable Analysis]]:** [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-4|452 Thm. §9.4]], with Rolle's theorem [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-3|452 Thm. §9.3]] (restated in an appendix to 452 §9, where Taylor's theorem in several variables rests on them).
+- **Also in [[Multivariable Analysis]]:** [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-4|452 Thm. §11.4]], with Rolle's theorem [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-3|452 Thm. §11.3]] (restated in an appendix to 452 §11, where Taylor's theorem in several variables rests on them).

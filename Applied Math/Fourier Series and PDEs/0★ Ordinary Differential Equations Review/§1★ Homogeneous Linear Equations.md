@@ -2,12 +2,12 @@
 type: section
 subject: "[[Fourier Series and PDEs]]"
 chapter: 0
-section: 1
+section: "1★"
 powers: "0.1"
 aliases: ["Powers 0.1"]
 tags: [fourier-series-and-pdes, math341, extension]
 ---
-↑ [[· 0★ Ordinary Differential Equations Review]] · [[§2★ Nonhomogeneous Linear Equations]] →
+↑ [[· 0★ Ordinary Differential Equations Review]] · [[§2★ Variable Coefficients and Higher-Order Equations]] →
 
 *Powers, Section 0.1 · MAT 341 lecture 8.27 · HW 1.*
 ★ *Beyond MAT 341: the course only reviewed parts of this section (lecture 8.27, HW 1 Q1); it is included in full from Powers.*
@@ -33,7 +33,7 @@ Separation of variables turns every partial differential equation in this subjec
 
 ^def-1-1
 
-This is [[§13 Homogeneous Differential Equations with Constant Coefficients#^def-13-3|331 Def. §13.3]] in Powers' notation: $u$ for the unknown, $k$ and $p$ for the coefficients, $f$ for the inhomogeneity.
+This is [[§17 Homogeneous Differential Equations with Constant Coefficients#^def-17-3|331 Def. §17.3]] in Powers' notation: $u$ for the unknown, $k$ and $p$ for the coefficients, $f$ for the inhomogeneity.
 
 > [!theorem] Theorem §1.1: The First-Order Homogeneous Equation
 > The general solution of
@@ -60,7 +60,7 @@ This is [[§13 Homogeneous Differential Equations with Constant Coefficients#^de
 
 ^thm-1-1
 
-*Powers derives (4) by separating variables, $\frac1u\frac{du}{dt} = k(t)$, $\ln|u| = \int k\,dt + C$, $u = \pm e^Ce^{\int k\,dt}$. Proved in ODE: [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]] (separable equations) and [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (linear equations, which also shows that $u \equiv 0$, lost by dividing by $u$, belongs to the family with $c = 0$).*
+*Powers derives (4) by separating variables, $\frac1u\frac{du}{dt} = k(t)$, $\ln|u| = \int k\,dt + C$, $u = \pm e^Ce^{\int k\,dt}$. Proved in ODE: [[§6 Separable Differential Equations#^thm-6-1|331 Thm. §6.1]] (separable equations) and [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|331 Thm. §5.2]] (linear equations, which also shows that $u \equiv 0$, lost by dividing by $u$, belongs to the family with $c = 0$).*
 
 For example, $du/dt = -tu$ has the general solution $u(t) = ce^{-t^2/2}$, and the initial condition $u(0) = 5$ forces $c = 5$ (Powers' example). MAT 341's HW 1, Problem 1(a), asked for $du/dt = tu$: the same steps give $u(t) = ce^{t^2/2}$.
 
@@ -81,19 +81,19 @@ but its solutions have a simple structure.
 
 ^thm-1-2
 
-*Proved in ODE: [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|331 Thm. §14.2]]. Powers calls it a principle because it holds, with only superficial changes, for many other linear homogeneous equations; it is the starting point of every series solution of a PDE in this subject.*
+*Proved in ODE: [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-2|331 Thm. §18.2]]. Powers calls it a principle because it holds, with only superficial changes, for many other linear homogeneous equations; it is the starting point of every series solution of a PDE in this subject.*
 
 > [!remark]- Connections
-> - Superposition says that $L[u] = u'' + ku' + pu$ is a linear map, so the solutions of (6) form its null space, a subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]].
+> - Superposition says that $L[u] = u'' + ku' + pu$ is a linear map, so the solutions of (6) form its null space, a subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-5|235 Thm. §30.5]].
 
-> [!definition] Definition §1.2: Linear Independence
+> [!definition] Definition §1.3: Linear Independence
 > Two solutions $u_1$, $u_2$ are **linearly independent** on an interval if the only linear combination of them with constant coefficients that is identically $0$ on the interval is the one with both coefficients $0$.
 >
 > *Powers: 0.1 (text), Equation (7)*
 
 ^def-1-2
 
-> [!definition] Definition §1.2: Wronskian
+> [!definition] Definition §1.4: Wronskian
 > The **Wronskian** of two solutions $u_1$ and $u_2$ is
 >
 > $$
@@ -102,9 +102,9 @@ but its solutions have a simple structure.
 >
 > *Powers: 0.1 (text), Equation (7)*
 
-^def-1-new1
+^def-1-3
 
-The Wronskian is [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|331 Def. §14.2]].
+The Wronskian is [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-2|331 Def. §18.2]].
 
 > [!theorem] Theorem §1.3: The Wronskian Test and the General Solution
 > Two solutions of the same linear homogeneous equation (6) are independent on an interval if and only if their Wronskian is nonzero on that interval. If $u_1(t)$, $u_2(t)$ are independent solutions, then
@@ -119,7 +119,7 @@ The Wronskian is [[§14 Solutions of Linear Homogeneous Equations; the Wronskian
 
 ^thm-1-3
 
-*Proved in ODE: [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|331 Thm. §14.3]] (solving for $c_1$, $c_2$), [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|331 Thm. §14.4]] (every solution is of this form), and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|331 Thm. §14.8]] (Abel: the Wronskian of two solutions is either never zero or identically zero, which is why "nonzero at one point" and "nonzero on the interval" agree). The equivalence with linear independence is item 4 of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark: The Solution Space Is a Two-Dimensional Vector Space]].*
+*Proved in ODE: [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-3|331 Thm. §18.3]] (solving for $c_1$, $c_2$), [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-4|331 Thm. §18.4]] (every solution is of this form), and [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-8|331 Thm. §18.8]] (Abel: the Wronskian of two solutions is either never zero or identically zero, which is why "nonzero at one point" and "nonzero on the interval" agree). The equivalence with linear independence is item 4 of [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-18-2|331 Remark: The Solution Space Is a Two-Dimensional Vector Space]].*
 
 The first MAT 341 lecture put the contrast this way: the solutions of the first-order equation (3) form a one-dimensional space, fixed by one initial value; those of (6) a two-dimensional space, fixed by $u(0)$ and $u'(0)$; but the heat equation $u_t = u_{xx}$ has an infinite-dimensional space of solutions ($c_1x + c_2$, $e^{-\lambda^2t}\cos\lambda x$, $e^{-\lambda^2t}\sin\lambda x$ for every $\lambda$, $t^{-1/2}e^{-x^2/4t}$, …), so a partial differential equation is always posed together with boundary and initial conditions.
 
@@ -133,7 +133,7 @@ $$
 
 It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substituting gives $m^2e^{mt} + kme^{mt} + pe^{mt} = 0$, and $e^{mt}$ is never $0$.
 
-> [!definition] Definition §1.3: Characteristic Equation
+> [!definition] Definition §1.5: Characteristic Equation
 > The **characteristic equation** of the differential equation (8) is
 >
 > $$
@@ -144,7 +144,7 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 >
 > *Powers: 0.1, Equation (9)*
 
-^def-1-3
+^def-1-4
 
 > [!theorem] Theorem §1.4: Solutions of the Constant-Coefficient Equation
 > The general solution of $u'' + ku' + pu = 0$ is determined by the roots $m_1$, $m_2$ of the characteristic equation (9):
@@ -171,9 +171,9 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 
 ^thm-1-4
 
-*Proved in ODE: [[§16 Repeated Roots; Reduction of Order#^thm-16-2|331 Thm. §16.2]], which collects [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|331 Thm. §13.2]] (distinct roots), [[§16 Repeated Roots; Reduction of Order#^thm-16-1|331 Thm. §16.1]] (double root) and [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|331 Thm. §15.2]] (complex roots; the trade (10) → (11) is [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|331 Thm. §14.6]]).*
+*Proved in ODE: [[§20 Repeated Roots; Reduction of Order#^thm-20-2|331 Thm. §20.2]], which collects [[§17 Homogeneous Differential Equations with Constant Coefficients#^thm-17-2|331 Thm. §17.2]] (distinct roots), [[§20 Repeated Roots; Reduction of Order#^thm-20-1|331 Thm. §20.1]] (double root) and [[§19 Complex Roots of the Characteristic Equation#^thm-19-2|331 Thm. §19.2]] (complex roots; the trade (10) → (11) is [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-6|331 Thm. §18.6]]).*
 
-> [!definition] Definition §1.4: Hyperbolic Sine and Cosine
+> [!definition] Definition §2.2: Hyperbolic Sine and Cosine
 > The **hyperbolic sine** and **hyperbolic cosine** are
 >
 > $$
@@ -182,12 +182,12 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 >
 > *Powers: 0.1, Equation (16)*
 
-^def-1-4
+^def-1-5
 
-This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivatives $(\sinh A)' = \cosh A$, $(\cosh A)' = \sinh A$ and the identity $\cosh^2 A - \sinh^2 A = 1$ are [[§24 Hyperbolic Functions#^thm-24-2|Calc Thm. §24.2]] and [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]]. For complex arguments the same formulas define [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]], used in [[§53★ Partial Differential Equations#^lem-53-2|Lemma §53.2]].
+This is [[§27 Hyperbolic Functions#^def-27-1|Calc Def. §27.1]]; the derivatives $(\sinh A)' = \cosh A$, $(\cosh A)' = \sinh A$ and the identity $\cosh^2 A - \sinh^2 A = 1$ are [[§27 Hyperbolic Functions#^thm-27-2|Calc Thm. §27.2]] and [[§27 Hyperbolic Functions#^thm-27-1|Calc Thm. §27.1]]. For complex arguments the same formulas define [[§39★ Hyperbolic Functions#^def-39-1|342 Def. §39.1]], used in [[§66★ Partial Differential Equations#^lem-66-2|Lemma §66.2]].
 
 > [!example] Example §1.1: The Two Workhorse Equations
-> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every [[§19 Example꞉ Fixed End Temperatures#^def-19-new1|separation of variables]] in this subject.
+> The equations $u'' + \lambda^2u = 0$ and $u'' - \lambda^2u = 0$, with $\lambda$ a constant, arise in nearly every [[§25 Example꞉ Fixed End Temperatures#^def-25-2|separation of variables]] in this subject.
 >
 > **$u'' + \lambda^2u = 0$ (12).** The characteristic equation $m^2 + \lambda^2 = 0$ has roots $m = \pm i\lambda$. If $\lambda \ne 0$, the third case of Theorem §1.4 applies with $\alpha = 0$, $\beta = \lambda$:
 >
@@ -213,9 +213,9 @@ This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivative
 > u(t) = c_1'\cosh(\lambda t) + c_2'\sinh(\lambda t) .
 > $$
 >
-> Which form to use depends on the boundary conditions: see [[§4★ Singular Boundary Value Problems#^rem-4-2|Remark: Method — Choosing the Form of the Solution]].
+> Which form to use depends on the boundary conditions: see [[§6★ Singular Boundary Value Problems#^rem-6-2|Remark: Method — Choosing the Form of the Solution]].
 >
-> **$\lambda = 0$.** Both equations become $u'' = 0$, with the double root $m = 0$, and the second case gives $u(t) = c_1 + c_2t$. This case must always be checked separately in eigenvalue problems ([[§3★ Boundary Value Problems#^ex-3-5|Example §3.5]]).
+> **$\lambda = 0$.** Both equations become $u'' = 0$, with the double root $m = 0$, and the second case gives $u(t) = c_1 + c_2t$. This case must always be checked separately in eigenvalue problems ([[§5★ Boundary Value Problems#^ex-5-5|Example §5.5]]).
 >
 > *Powers: 0.1, Equations (12)–(16)*
 
@@ -246,6 +246,6 @@ This is [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]]; the derivative
 
 ^ex-1-2
 
-The same classification, with the physics of the damping coefficient, is [[§19 Mechanical and Electrical Vibrations#^thm-19-3|331 Thm. §19.3]].
+The same classification, with the physics of the damping coefficient, is [[§23 Mechanical and Electrical Vibrations#^thm-23-3|331 Thm. §23.3]].
 
-*Continued in [[§1★ Variable Coefficients and Higher-Order Equations]]: the Cauchy–Euler equation, singular points, reduction of order and equations of higher order.*
+*Continued in [[§2★ Variable Coefficients and Higher-Order Equations]]: the Cauchy–Euler equation, singular points, reduction of order and equations of higher order.*

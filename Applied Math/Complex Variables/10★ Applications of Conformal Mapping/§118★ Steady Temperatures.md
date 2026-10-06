@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 118
+section: "118★"
 bc: "118"
 aliases: ["B&C 118"]
 tags: [complex-variables, math342, extension]
@@ -23,18 +23,18 @@ Chapter 10 uses conformal mapping to solve physical problems governed by Laplace
 
 ^def-118-1
 
-> [!definition] Definition §118.2: Fourier's Law
+> [!definition] Definition §118.3: Fourier's Law
 > The flux $\Phi$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]) varies with the normal derivative of the temperature $T$ at the point:
 >
 > $$
 > \Phi = -K\,\frac{dT}{dN} \qquad (K > 0). \qquad (1)
 > $$
 >
-> Relation (1) is **Fourier's law** (in one dimension, [[§3★ Boundary Value Problems#^def-3-2|341 Def. §3.2]]), and the constant $K$ is the **thermal conductivity** of the material, which is assumed to be homogeneous.
+> Relation (1) is **Fourier's law** (in one dimension, [[§5★ Boundary Value Problems#^def-5-2|341 Def. §5.2]]), and the constant $K$ is the **thermal conductivity** of the material, which is assumed to be homogeneous.
 >
 > *B&C: Sec. 118 (text)*
 
-^def-118-new1
+^def-118-2
 
 We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so the flow of heat is two-dimensional and parallel to the $xy$ plane, and to the **steady state**, in which $T$ does not vary with time. It is assumed that no heat is created or destroyed within the solid (no sources or sinks), and that $T(x, y)$ and its partial derivatives of the first and second order are continuous at each interior point. These, with (1), are the postulates of the mathematical theory of heat conduction.
 
@@ -76,26 +76,26 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-1
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-new1|Def. §118.2]] (Fourier's law), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]] (Fourier's law), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§115 Double Integrals Over Rectangles#^thm-115-3|Calc Thm. §115.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
-> - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-new1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
+> - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§44 Potential Equation#^def-44-2|341 Def. §44.2]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§132 Curl and Divergence#^thm-132-5|Calc Thm. §132.5]] (Green's theorem, normal form).
 
 ## Isotherms and Lines of Flow
 
-> [!definition] Definition §118.2: Isotherms
+> [!definition] Definition §118.4: Isotherms
 > The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$.
 >
 > *B&C: Sec. 118 (text)*
 
-^def-118-2
+^def-118-3
 
-> [!definition] Definition §118.3: Lines of Flow
+> [!definition] Definition §118.4: Lines of Flow
 > If $S$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $T$, the curves $S(x, y) = c_2$ are the **lines of flow** of heat.
 >
 > *B&C: Sec. 118 (text)*
 
-^def-118-new2
+^def-118-4
 
 > [!theorem] Proposition §118.2: Heat Flows Along the Lines of Flow
 > Let $T$ be a steady temperature in a thin sheet and $S$ a harmonic conjugate of $T$.
@@ -104,7 +104,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 >
 > **(b)** At each point where the analytic function $T(x, y) + iS(x, y)$ is conformal, the curve $S(x, y) = c_2$ through the point has $\operatorname{grad} T$ as a tangent vector.
 >
-> **(c)** Along a [[§43 Contours#^def-43-4|smooth arc]] $C$ with unit tangent $\mathbf t$ and unit normal $\mathbf N$ obtained by turning $\mathbf t$ through $+\pi/2$,
+> **(c)** Along a [[§43 Contours#^def-43-7|smooth arc]] $C$ with [[§43 Contours#^def-43-8|unit tangent]] $\mathbf t$ and unit normal $\mathbf N$ obtained by turning $\mathbf t$ through $+\pi/2$,
 >
 > $$
 > \frac{dS}{ds} = -\frac{dT}{dN} = \frac{\Phi}{K} ,
@@ -117,7 +117,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 ^prop-118-2
 
 > [!proof]+ Proof
-> **(a)** The gradient is perpendicular to level curves ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]]). By (1) and $dT/dN = \operatorname{grad} T\cdot\mathbf N$, the flux in the direction $\mathbf N$ is $-K\operatorname{grad} T\cdot\mathbf N$, largest when $\mathbf N$ points along $-\operatorname{grad} T$, where it equals $K|\operatorname{grad} T|$.
+> **(a)** The gradient is perpendicular to level curves ([[§112 Tangent Planes to Level Surfaces#^thm-112-3|Calc Thm. §112.3]]). By (1) and $dT/dN = \operatorname{grad} T\cdot\mathbf N$, the flux in the direction $\mathbf N$ is $-K\operatorname{grad} T\cdot\mathbf N$, largest when $\mathbf N$ points along $-\operatorname{grad} T$, where it equals $K|\operatorname{grad} T|$.
 >
 > **(b)** By the Cauchy–Riemann equations $S_x = -T_y$, $S_y = T_x$, so $\operatorname{grad} S = (-T_y, T_x)$ is $\operatorname{grad} T$ turned through $+\pi/2$. Where $T + iS$ is conformal its derivative $T_x - iT_y$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]) is nonzero, so $\operatorname{grad} S \ne \mathbf 0$ and the level curve $S = c_2$ is a smooth curve with normal $\operatorname{grad} S$ (implicit function theorem). Its tangent is perpendicular to $\operatorname{grad} S$, hence parallel to $\operatorname{grad} T$.
 >
@@ -131,7 +131,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ^pf-118-2
 
-*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-new1|Def. §118.2]] (Fourier's law), [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]], [[§118★ Steady Temperatures#^def-118-new2|Def. §118.3]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
+*Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-2|Def. §118.2]] (Fourier's law), [[§118★ Steady Temperatures#^def-118-3|Def. §118.3]], [[§118★ Steady Temperatures#^def-118-4|Def. §118.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112 Tangent Planes to Level Surfaces#^thm-112-3|Calc Thm. §112.3]], [[Implicit Function Theorem|452 Implicit Function Theorem]]
 
 > [!remark] Remark: Other Interpretations; the Maximum Principle
 > The function $T$ may also denote the concentration of a substance diffusing through a solid; then $K$ is the diffusion constant, and the derivation of (4) applies as well to steady-state diffusion. The maximum principle has a physical reading here: if $T = \operatorname{Re} f$ for $f$ analytic and not constant in a bounded region, $T$ attains its maximum and minimum only on the boundary ([[§59 Maximum Modulus Principle#^cor-59-5|Corollary §59.5]] and [[§59 Maximum Modulus Principle#^ex-59-3|Example §59.3]]). A steady temperature cannot have a hot spot inside: heat would flow away from it in every direction (Fourier's law), the temperature there would drop, and the state would not be steady (B&C Sec. 121, Exercise 13).
@@ -139,7 +139,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 ^rem-118-1
 
 > [!remark]- Connections
-> - See also: the maximum principle for any harmonic function on a bounded connected region, not only the real part of a given analytic $f$, proved from the mean value property: [[Maximum Principle for Laplace's Equation|341 Maximum Principle]] ([[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]]). The diffusion analogue of Fourier's law is Fick's first law, [[§17 Derivation and Boundary Conditions#^def-17-10|341 Def. §17.10]].
+> - See also: the maximum principle for any harmonic function on a bounded connected region, not only the real part of a given analytic $f$, proved from the mean value property: [[Maximum Principle for Laplace's Equation|341 Maximum Principle]] ([[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|341 Thm. §49.3]]). The diffusion analogue of Fourier's law is Fick's first law, [[§23 Initial and Boundary Conditions; Diffusion#^def-23-7|341 Def. §23.7]].
 
 ## Examples
 

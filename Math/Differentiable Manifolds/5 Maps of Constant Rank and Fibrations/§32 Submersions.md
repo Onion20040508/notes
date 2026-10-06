@@ -107,7 +107,7 @@ Uribe called (3) “kind of a trivial way to be [regular], but important”: it 
 *Uses:* [[§32 Submersions#^def-32-2|Def. §32.2]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]]
 
 > [!remark]- Connections
-> - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 §14.1]] (Fermat's theorem).
+> - In $\mathbb{R}^n$, critical points are where extrema can occur: [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 §17.1]] (Fermat's theorem).
 
 This is the definition of critical point Uribe sent to the class by email, and it agrees with Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]] for $m = 1$: there $p$ is regular iff $\nabla F(p) \ne 0$.
 
@@ -250,7 +250,7 @@ Uribe singled out Lemma [[§32 Submersions#^lem-32-3|§32.3]] as “an intellect
 *Uses:* [[§32 Submersions#^thm-32-4|§32.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]]
 
 > [!theorem] Theorem §32.7: Submersions from Compact Manifolds
-> Let $M$ be compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty, $N$ connected ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]), and $F : M \to N$ a submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]). Then $F$ is surjective, and $N$ is compact.
+> Let $M$ be compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) and nonempty, $N$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]), and $F : M \to N$ a submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]). Then $F$ is surjective, and $N$ is compact.
 
 ^thm-32-7
 
@@ -259,13 +259,13 @@ Uribe singled out Lemma [[§32 Submersions#^lem-32-3|§32.3]] as “an intellect
 
 ^pf-32-7
 
-*Uses:* [[§32 Submersions#^cor-32-6|§32.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§15 Compact Spaces#^thm-15-3|590 §15.3]], [[§15 Compact Spaces#^thm-15-4|590 §15.4]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]]
+*Uses:* [[§32 Submersions#^cor-32-6|§32.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§18 Compact Spaces#^thm-18-3|590 §18.3]], [[§18 Compact Spaces#^thm-18-4|590 §18.4]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]]
 
 > [!remark]- Connections
-> - The point-set steps: [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §15.4]], and clopen subsets of a connected space, [[§13 Connected Spaces#^lem-13-1|590 Lem. §13.1]]; in 591, [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] and [[§1 Point-Set Topology Review#^prop-1-7|§1.7]].
+> - The point-set steps: [[Continuous Image of a Compact Space is Compact|590 §18.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §18.4]], and clopen subsets of a connected space, [[§15 Connected Spaces#^lem-15-1|590 Lem. §15.1]]; in 591, [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] and [[§1 Point-Set Topology Review#^prop-1-7|§1.7]].
 
 > [!theorem] Corollary §32.8: No Submersions from Compact Manifolds to Euclidean Space
-> If $M$ is compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty and $k \ge 1$, there is no submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]) $M \to \mathbb{R}^k$.
+> If $M$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) and nonempty and $k \ge 1$, there is no submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]) $M \to \mathbb{R}^k$.
 
 ^cor-32-8
 
@@ -274,7 +274,7 @@ Uribe singled out Lemma [[§32 Submersions#^lem-32-3|§32.3]] as “an intellect
 
 ^pf-32-8
 
-*Uses:* [[§32 Submersions#^thm-32-7|§32.7]], [[§14 Connected Subspaces of ℝ#^thm-14-1|590 §14.1]], [[§13 Connected Spaces#^thm-13-6|590 §13.6]], [[Heine–Borel Theorem|590 §15.12]]
+*Uses:* [[§32 Submersions#^thm-32-7|§32.7]], [[§16 Connected Subspaces of ℝ#^thm-16-1|590 §16.1]], [[§15 Connected Spaces#^thm-15-6|590 §15.6]], [[Heine–Borel Theorem|590 §18.12]]
 
 > [!remark]- Connections
 > - Compact subsets of $\mathbb{R}^k$ are bounded: [[Heine–Borel Theorem]].

@@ -20,7 +20,7 @@ tags: [linear-algebra]
 > - A subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]]. Detects injectivity: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]. Its dimension enters [[Fundamental theorem of linear maps]].
 > - Called the kernel elsewhere; quotient by it: [[First isomorphism theorem]].
 > - Group version: the kernel and image of a homomorphism, [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|235 Def. §24.5]] (kernel); for x ↦ Ax it is Nul A, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-1|235 Def. §24.1]].
+> - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]] (kernel); for x ↦ Ax it is Nul A, [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-1|235 Def. §30.1]].
 
 > [!example] Example 3.12: Null space (p. 59)
 > - The zero map $V\to W$ has $\nullsp 0=V$.
@@ -46,8 +46,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Companion: [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]].
 > - Group version: kernel and image of a homomorphism are subgroups, [[§15 Homomorphisms#^prop-15-2|493 Prop. §15.2]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-1|235 Thm. §24.1]] (Nul A is a subspace; also [[§18 Subspaces of ℝⁿ#^thm-18-2|235 Thm. §18.2]]) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]] (kernel and range).
-> - ODE example: the solutions of $L[y] = 0$ form the null space of the differential operator $L$, the principle of superposition, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|331 Thm. §14.2]].
+> - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-1|235 Thm. §30.1]] (Nul A is a subspace; also [[§21 Subspaces of ℝⁿ#^thm-21-2|235 Thm. §21.2]]) and [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-5|235 Thm. §30.5]] (kernel and range).
+> - ODE example: the solutions of $L[y] = 0$ form the null space of the differential operator $L$, the principle of superposition, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-2|331 Thm. §18.2]].
 
 > [!definition] Definition 3.14: Injective
 > A function $T:V\to W$ is *injective* if $Tu=Tv$ implies $u=v$; equivalently, distinct inputs give distinct outputs.
@@ -57,7 +57,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - For linear maps it suffices to test $0$: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
 > - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]].
-> - In ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-3|235 Def. §9.3]] (one-to-one).
+> - In ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-3|235 Def. §10.3]] (one-to-one).
 
 > [!theorem] Theorem 3.15: Injectivity ⟺ null space equals {0}
 > Let $T\in\Lin(V,W)$. Then $T$ is injective if and only if $\nullsp T=\{0\}$.
@@ -75,7 +75,7 @@ tags: [linear-algebra]
 > - Same 'uniqueness at $0$' principle as [[Condition for a direct sum]] and [[§4 Span and Linear Independence#^ladr-2-15|Linearly independent]].
 > - Used in [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]].
 > - Group version: a homomorphism is injective iff its kernel is trivial, [[§15 Homomorphisms#^prop-15-3|493 Prop. §15.3]] (hub [[Injective iff Trivial Kernel]]).
-> - Computational version: [[§9 The Matrix of a Linear Transformation#^thm-9-2|235 Thm. §9.2]] (one-to-one iff T(x) = 0 has only the trivial solution), tested on the standard matrix in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]](b).
+> - Computational version: [[§10 The Matrix of a Linear Transformation#^thm-10-2|235 Thm. §10.2]] (one-to-one iff T(x) = 0 has only the trivial solution), tested on the standard matrix in [[§10 The Matrix of a Linear Transformation#^thm-10-3|235 Thm. §10.3]](b).
 
 > [!definition] Definition 3.16: Range
 > For $T\in\Lin(V,W)$, the *range* of $T$ is
@@ -90,7 +90,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A subspace: [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]]. Surjectivity: [[§8 Null Spaces and Ranges#^ladr-3-19|Surjective]]. Dimension = column rank of the matrix: [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-new1|235 Def. §24.5]] (range); for x ↦ Ax it is Col A, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
+> - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-6|235 Def. §30.6]] (range); for x ↦ Ax it is Col A, [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-2|235 Def. §30.2]].
 
 > [!example] Example 3.17: Range (p. 61)
 > - The zero map has $\range 0=\{0\}$.
@@ -111,7 +111,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-3|235 Thm. §24.3]] (Col A is a subspace) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^thm-24-5|235 Thm. §24.5]].
+> - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-3|235 Thm. §30.3]] (Col A is a subspace) and [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-5|235 Thm. §30.5]].
 
 > [!definition] Definition 3.19: Surjective
 > A function $T:V\to W$ is *surjective* if $\range T=W$.
@@ -123,8 +123,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension obstruction: [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]]. Equivalent to injectivity when dimensions agree: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
-> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-new1|250 Def. §9.1]], part 2.
-> - In ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-2|235 Def. §9.2]] (onto).
+> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-2|250 Def. §9.2]], part 2.
+> - In ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-2|235 Def. §10.2]] (onto).
 
 > [!example] Example 3.20: Surjectivity depends on the target space (p. 62)
 > $D\in\Lin(\Poly_5(\R))$, $Dp=p'$, is not surjective: $x^5$ is not in the range, since derivatives of polynomials of degree $\le5$ have degree $\le4$. But $S\in\Lin(\Poly_5(\R),\Poly_4(\R))$, $Sp=p'$, is surjective. Surjectivity is a property of the map *together with its target* ([[§8 Null Spaces and Ranges#^ladr-3-19|3.19]]).
@@ -167,7 +167,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Group analogue for finite groups: |G| = |Ker α| · |Im α|, [[§41 The First and Second Isomorphism Theorems#^cor-41-2|493 Cor. §41.2]].
-> - Matrix version: [[§19 Dimension and Rank#^thm-19-2|235 Thm. §19.2]] and [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (the Rank Theorem, rank A + dim Nul A = n, with worked examples).
+> - Matrix version: [[§22 Dimension and Rank#^thm-22-2|235 Thm. §22.2]] and [[§34 Rank#^thm-34-3|235 Thm. §34.3]] (the Rank Theorem, rank A + dim Nul A = n, with worked examples).
 
 > [!example] Example: The proof, pictured
 > A map $T:\R^3\to\R^2$ with $\dim\nullsp T=1$. The basis $u_1$ of $\nullsp T$ (red) is extended by $v_1,v_2$ to a basis of $V$. All of $\nullsp T$ collapses to $0$, while $Tv_1,Tv_2$ (blue) form a basis of $\range T$. So $3=1+2$.
@@ -190,7 +190,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Linear equations: [[§8 Null Spaces and Ranges#^ladr-3-26|Homogeneous system of linear equations]].
-> - Matrix version: [[§28 Rank#^cor-28-4|235 Cor. §28.4]] (dim Nul A ≥ n − m, so x ↦ Ax is not one-to-one when n > m).
+> - Matrix version: [[§34 Rank#^cor-34-4|235 Cor. §34.4]] (dim Nul A ≥ n − m, so x ↦ Ax is not one-to-one when n > m).
 
 > [!example] Example 3.23: Linear map from F⁴ to F³ is not injective (p. 63)
 > $T(z_1,z_2,z_3,z_4)=(\sqrt7z_1+\pi z_2+z_4,\ 97z_1+3z_2+2z_3,\ z_2+6z_3+7z_4)$ maps $\F^4\to\F^3$, so it is not injective by [[§8 Null Spaces and Ranges#^ladr-3-22|3.22]], with no computation at all. This is the typical use of [[Fundamental theorem of linear maps|3.21]]: dimension counts decide injectivity and surjectivity before any calculation.
@@ -213,7 +213,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Linear equations: [[§8 Null Spaces and Ranges#^ladr-3-28|Inhomogeneous system of linear equations]].
-> - Matrix version: [[§28 Rank#^cor-28-4|235 Cor. §28.4]] (rank A ≤ n < m, so x ↦ Ax is not onto).
+> - Matrix version: [[§34 Rank#^cor-34-4|235 Cor. §34.4]] (rank A ≤ n < m, so x ↦ Ax is not onto).
 
 > [!theorem] Theorem 3.26: Homogeneous system of linear equations
 > A homogeneous system of linear equations with more variables than equations has nonzero solutions.
@@ -231,7 +231,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Also provable by Gaussian elimination; here it is pure dimension counting. Companion: [[§8 Null Spaces and Ranges#^ladr-3-28|Inhomogeneous system of linear equations]].
-> - Computational version: [[§7 Linear Independence#^thm-7-6|235 Thm. §7.6]] (more columns than rows means dependent columns), via free variables, [[§5 Solution Sets of Linear Systems#^cor-5-1|235 Cor. §5.1]].
+> - Computational version: [[§8 Linear Independence#^thm-8-6|235 Thm. §8.6]] (more columns than rows means dependent columns), via free variables, [[§6 Solution Sets of Linear Systems#^cor-6-1|235 Cor. §6.1]].
 
 > [!theorem] Theorem 3.28: Inhomogeneous system of linear equations
 > An inhomogeneous system of linear equations with more equations than variables has no solution for some choice of the constant terms.
@@ -245,4 +245,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Companion: [[§8 Null Spaces and Ranges#^ladr-3-26|Homogeneous system of linear equations]].
-> - Computational version: [[§4 The Matrix Equation Ax = b#^thm-4-3|235 Thm. §4.3]] (Ax = b is solvable for every b iff A has a pivot in every row, impossible when m > n).
+> - Computational version: [[§5 The Matrix Equation Ax = b#^thm-5-3|235 Thm. §5.3]] (Ax = b is solvable for every b iff A has a pivot in every row, impossible when m > n).

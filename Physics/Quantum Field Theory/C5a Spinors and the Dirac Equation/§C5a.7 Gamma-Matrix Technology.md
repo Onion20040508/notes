@@ -142,7 +142,7 @@ These identities shorten strings in which an index is contracted across other $\
 ^thm-c5a-7-3
 
 > [!derivation]- Derivation
-> The trace is cyclic, $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]), and linear.
+> The trace is cyclic, $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]), and linear.
 >
 > **1. $\operatorname{tr}\mathbb 1 = 4$**: the Dirac matrices are $4\times4$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-5|Theorem §C5a.2.5]]: four is the dimension of every irreducible realization).
 >
@@ -167,7 +167,7 @@ These identities shorten strings in which an index is contracted across other $\
 
 ^der-c5a-7-3
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-13|Theorem §C5a.2.13]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-13|Theorem §C5a.2.13]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
 
 > [!theorem] Theorem §C5a.7.4: Traces with γ⁵
 > $$

@@ -5,7 +5,7 @@ section: 23
 chapter: 4
 tags: [real-analysis, math451]
 ---
-← [[§22 More on Metric Spaces꞉ Connectedness]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§24 Uniform Convergence]] →
+← [[§22a The Square Root Function]] · ↑ [[· 4 Sequences and Series of Functions]] · [[§24 Uniform Convergence]] →
 
 The simplest functions are the constants $a$ and the variable $x$. Starting from them we get all polynomials $a_0 + a_1 x + \cdots + a_n x^n$. Letting $n \to +\infty$, we should get **power series**
 
@@ -27,7 +27,7 @@ We know the value of a polynomial at every $x$. How about a power series? Take $
 ^def-23-1
 
 > [!remark]- Connections
-> - Computational version: [[§76 Power Series#^def-76-2|Calc Def. §76.2]] (with worked examples).
+> - Computational version: [[§88 Power Series#^def-88-2|Calc Def. §88.2]] (with worked examples).
 
 > [!example] Example §23.1: Three Domains of Convergence
 > **(1)** $\sum_{n=0}^\infty x^n$: converges at $x$ iff $|x| < 1$, with
@@ -60,7 +60,7 @@ These examples display the general pattern:
 *Stated here without proof: it is the case split $R = +\infty$, $R = 0$, $0 < R < +\infty$ of [[§23 Power Series#^thm-23-2|Theorem §23.2]] below.*
 
 > [!remark]- Connections
-> - Computational version: [[§76 Power Series#^thm-76-3|Calc Thm. §76.3]] (with worked examples).
+> - Computational version: [[§88 Power Series#^thm-88-3|Calc Thm. §88.3]] (with worked examples).
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|342 Thm. §69.1]] and [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (complex power series converge inside a circle of convergence and diverge outside it).
 
 > [!example] Example §23.2: The Extreme Cases
@@ -104,7 +104,7 @@ The precise version of the trichotomy:
 *Top: the radius theorem — absolute convergence on $(-R, R)$, divergence for $|x| > R$, and no verdict at $\pm R$ (red). Below: the three series of [[§23 Power Series#^ex-23-1|Example §23.1]], all with $R = 1$, whose sets of convergence differ only at the endpoints (filled: included, hollow: excluded).*
 
 > [!remark]- Connections
-> - Computational version: radius of convergence in [[§76 Power Series#^thm-76-3|Calc Thm. §76.3]] (with worked examples).
+> - Computational version: radius of convergence in [[§88 Power Series#^thm-88-3|Calc Thm. §88.3]] (with worked examples).
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (convergence inside, divergence outside the circle of convergence of a complex power series).
 
 > [!remark] Remark

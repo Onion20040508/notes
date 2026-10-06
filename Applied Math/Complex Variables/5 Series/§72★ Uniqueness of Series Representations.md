@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 5
-section: 72
+section: "72★"
 bc: "72"
 aliases: ["B&C 72"]
 tags: [complex-variables, math342, extension]
@@ -87,7 +87,7 @@ A function has only one series representation of each kind. If $\sum a_n(z - z_0
 *Uses:* [[§72★ Uniqueness of Series Representations#^thm-72-1|§72.1]], [[§61 Convergence of Series#^prop-61-4|§61.4]]
 
 > [!remark]- Connections
-> - The real version is [[§78 Taylor and Maclaurin Series#^thm-78-1|Calc Thm. §78.1]] with [[§78 Taylor and Maclaurin Series#^cor-78-2|Calc Cor. §78.2]], proved there by repeated term-by-term differentiation, the route of [[§72★ Uniqueness of Series Representations#^ex-72-3|Example §72.3]]; the rigorous term-by-term calculus is [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]].
+> - The real version is [[§90 Taylor and Maclaurin Series#^thm-90-1|Calc Thm. §90.1]] with [[§90 Taylor and Maclaurin Series#^cor-90-2|Calc Cor. §90.2]], proved there by repeated term-by-term differentiation, the route of [[§72★ Uniqueness of Series Representations#^ex-72-3|Example §72.3]]; the rigorous term-by-term calculus is [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]].
 
 ## Uniqueness of Laurent Series
 

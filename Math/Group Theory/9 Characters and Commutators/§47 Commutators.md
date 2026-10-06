@@ -74,7 +74,7 @@ tags: [group-theory, math493]
 
 ^pf-47-3
 
-*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§34 Determinants#^ladr-9-57|LADR 9.57]], [[§47 Commutators#^prop-47-1|§47.1]]
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§47 Commutators#^prop-47-1|§47.1]]
 
 > [!definition] Definition §47.2: Commutator Subgroup
 > The **commutator subgroup** of $G$, written $[G,G]$ ([[493 Problem Set 4#^hw-4-4|PS 4.4]] writes $D(G)$), is the [[§4 Subgroups#^def-4-4|subgroup generated]] by all [[§47 Commutators#^def-47-1|commutators]] $aba^{-1}b^{-1}$, $a, b \in G$. (A product of commutators need not itself be a commutator, which is why the generated subgroup is taken.)
@@ -134,7 +134,7 @@ tags: [group-theory, math493]
 ^def-47-3
 
 > [!remark]- Connections
-> - In 590, forcing commutativity is the quotient $F_2 \to \mathbb{Z} \times \mathbb{Z}$: [[§21 Algebra Prerequisites꞉ Groups#^ex-21-8|Forcing Commutativity]], [[§21 Algebra Prerequisites꞉ Groups#^rem-21-12|The Hierarchy of Relations]], and “Abelianization” in [[§21 Algebra Prerequisites꞉ Groups#^rem-21-14|Simplifying Presentations]].
+> - In 590, forcing commutativity is the quotient $F_2 \to \mathbb{Z} \times \mathbb{Z}$: [[§27 Free Groups and Presentations#^ex-27-6|Forcing Commutativity]], [[§27 Free Groups and Presentations#^rem-27-12|The Hierarchy of Relations]], and “Abelianization” in [[§27 Free Groups and Presentations#^rem-27-14|Simplifying Presentations]].
 
 > [!theorem] Proposition §47.6: The Abelianization Is Abelian
 > $G/[G,G]$ is abelian.

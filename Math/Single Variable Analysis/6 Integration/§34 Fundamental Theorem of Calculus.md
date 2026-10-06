@@ -35,7 +35,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 > g(b) - g(a) = \sum_{k=1}^n \bigl( g(t_k) - g(t_{k-1}) \bigr) = \sum_{k=1}^n g'(x_k)\,(t_k - t_{k-1})
 > $$
 >
-> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* ([[§32 The Definition of the Riemann Integral#^def-32-new4|Def. §32.3]]) for $g'$. Now bracket each term:
+> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* ([[§32 The Definition of the Riemann Integral#^def-32-7|Def. §32.7]]) for $g'$. Now bracket each term:
 >
 > $$
 > m\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}) \ \leq\ g'(x_k)(t_k - t_{k-1}) \ \leq\ M\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}),
@@ -69,9 +69,9 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 *The proof of FTC I: on each $[t_{k-1}, t_k]$ the Mean Value Theorem gives a point $x_k$ where the tangent (red) is parallel to the chord (dashed), so $g(t_k) - g(t_{k-1}) = g'(x_k)(t_k - t_{k-1})$. Summed, the increments telescope to $g(b) - g(a)$ — while the right side becomes a Riemann sum for $g'$, trapped between $L(g', P)$ and $U(g', P)$.*
 
 > [!remark]- Connections
-> - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]].
-> - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Calc Thm. §36.2]] (Stewart's Part 2 is this FTC I) and the Net Change Theorem, [[§37 Indefinite Integrals and the Net Change Theorem#^thm-37-2|Calc Thm. §37.2]] (with worked examples).
-> - Used in ODEs: the solution $\int_{x_0}^x M(s)\,ds + \int_{y_0}^y N(s)\,ds = 0$ of a separable initial value problem, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and the equivalence of $y' = f(t, y)$, $y(0) = 0$ with an integral equation, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
+> - Lebesgue version: $f(x) - f(a) = \int_a^x f'$ holds exactly for absolutely continuous $f$, [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1|551 Thm. §32.1]].
+> - Computational version: [[§41 The Fundamental Theorem of Calculus#^thm-41-2|Calc Thm. §41.2]] (Stewart's Part 2 is this FTC I) and the Net Change Theorem, [[§42 Indefinite Integrals and the Net Change Theorem#^thm-42-2|Calc Thm. §42.2]] (with worked examples).
+> - Used in ODEs: the solution $\int_{x_0}^x M(s)\,ds + \int_{y_0}^y N(s)\,ds = 0$ of a separable initial value problem, [[§6 Separable Differential Equations#^thm-6-1|331 Thm. §6.1]], and the equivalence of $y' = f(t, y)$, $y(0) = 0$ with an integral equation, [[§14 The Existence and Uniqueness Theorem#^lem-14-2|331 Lemma §14.2]].
 > - Computational version: [[§42 Definite Integrals of Functions w(t)#^thm-42-2|342 Thm. §42.2]] (the same theorem for complex-valued w(t) = u(t) + iv(t), with worked examples).
 
 ## Integration by Parts
@@ -135,10 +135,10 @@ Integration by parts needs a preliminary: products of integrable functions are i
 *Uses:* [[§34 Fundamental Theorem of Calculus#^lem-34-2|§34.2]], [[Fundamental Theorem of Calculus|§34.1]], [[§28 Basic Properties of the Derivative#^thm-28-2|§28.2]], [[§32 The Definition of the Riemann Integral#^thm-32-7|§32.7]]
 
 > [!remark]- Connections
-> - Its several-variable form is Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]], which reduces to this for n = 1.
-> - Computational version: [[§44 Integration by Parts#^thm-44-2|Calc Thm. §44.2]] (with worked examples).
-> - Used in ODEs: integration by parts on each piece gives the transform of a derivative, $\mathcal{L}\{f'\} = s\mathcal{L}\{f\} - f(0)$, [[§22 Solution of Initial Value Problems#^thm-22-1|331 Thm. §22.1]].
-> - Used in PDEs: the Fourier series of $f'$ is the differentiated series of $f$, [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]]; most Fourier coefficients are computed this way, as in [[§6 Periodic Functions and Fourier Series#^ex-6-1|341 Ex. §6.1]].
+> - Its several-variable form is Green's first identity, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|452 Thm. §28.2]], which reduces to this for n = 1.
+> - Computational version: [[§51 Integration by Parts#^thm-51-2|Calc Thm. §51.2]] (with worked examples).
+> - Used in ODEs: integration by parts on each piece gives the transform of a derivative, $\mathcal{L}\{f'\} = s\mathcal{L}\{f\} - f(0)$, [[§27 Solution of Initial Value Problems#^thm-27-1|331 Thm. §27.1]].
+> - Used in PDEs: the Fourier series of $f'$ is the differentiated series of $f$, [[§14 Operations on Fourier Series#^thm-14-6|341 Thm. §14.6]]; most Fourier coefficients are computed this way, as in [[§9 Periodic Functions and Fourier Series#^ex-9-1|341 Ex. §9.1]].
 > - Complex form around a closed contour, where the boundary term vanishes: Steps 4–5 of the proof of [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|342 Thm. §56.1]] (the Cauchy integral formula for derivatives).
 
 ## The Second Fundamental Theorem
@@ -196,11 +196,11 @@ Integration by parts needs a preliminary: products of integrable functions are i
 *The proof in one strip: $F(x)$ is the shaded area, and the increment $F(x+h) - F(x)$ is the thin strip — of area $f(x) h$ up to an error controlled by the continuity of $f$ at $x$. Dividing by $h$: $F'(x) = f(x)$.*
 
 > [!remark]- Connections
-> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]]; computational version, with worked examples: [[Substitution Rule|Calc Thm. §38.1]].
-> - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
-> - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (Stewart's Part 1 is this FTC II; with worked examples).
-> - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]], in variation of parameters, [[§18★ Variation of Parameters#^thm-18-1|331 Thm. §18.1]], and in the integral equation of Picard iteration, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].
-> - Used in PDEs: the integral of a periodic function is the same over every period, [[§6 Periodic Functions and Fourier Series#^prop-6-2|341 Prop. §6.2]] (differentiate in the endpoint).
+> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§24 The Change of Variables Formula#^lem-24-1|452 Lemma §24.1]]; computational version, with worked examples: [[Substitution Rule|Calc Thm. §43.1]].
+> - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§31 Absolute Continuity#^thm-31-2|551 Thm. §31.2]]) and $F' = f$ almost everywhere without any continuity ([[§30 Differentiating the Integral#^thm-30-7|551 Thm. §30.7]]).
+> - Computational version: [[§41 The Fundamental Theorem of Calculus#^thm-41-1|Calc Thm. §41.1]] (Stewart's Part 1 is this FTC II; with worked examples).
+> - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|331 Thm. §5.2]], in variation of parameters, [[§22★ Variation of Parameters#^thm-22-1|331 Thm. §22.1]], and in the integral equation of Picard iteration, [[§14 The Existence and Uniqueness Theorem#^lem-14-2|331 Lemma §14.2]].
+> - Used in PDEs: the integral of a periodic function is the same over every period, [[§9 Periodic Functions and Fourier Series#^prop-9-2|341 Prop. §9.2]] (differentiate in the endpoint).
 
 > [!example] Example §34.1: FTC I from FTC II When the Derivative Is Continuous (HW)
 > The two halves of the FTC are not independent: if $g'$ is *continuous*, FTC I follows from FTC II in three lines. Set $G(x) = \int_a^x g'(t)\,dt$. By FTC II, $G$ is continuous on $[a,b]$ and $G' = g'$ on $(a,b)$; so $G - g$ has vanishing derivative on $(a,b)$ and is constant there (§29), and the constancy extends to the closed interval by continuity of $G - g$. Evaluating the constant at both ends,
@@ -263,4 +263,4 @@ One step deserves scrutiny (HW): the claim “$F' = f$ *everywhere*” — FTC I
 ^rem-34-4
 
 > [!remark]- Connections
-> - Stewart's Appendix G pays the loan for $\log$ and $e^x$ with FTC, defining ln as an integral: [[§121 The Logarithm Defined as an Integral#^def-121-1|Calc Def. §121.1]].
+> - Stewart's Appendix G pays the loan for $\log$ and $e^x$ with FTC, defining ln as an integral: [[§144 The Logarithm Defined as an Integral#^def-144-1|Calc Def. §144.1]].

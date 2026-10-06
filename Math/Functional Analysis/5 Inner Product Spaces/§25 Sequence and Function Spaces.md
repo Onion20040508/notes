@@ -116,7 +116,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^pf-25-2
 
-*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]], [[§25 Sequence and Function Spaces#^prop-25-1|§25.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
+*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]], [[§25 Sequence and Function Spaces#^prop-25-1|§25.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
 
 > [!remark] Remark
 > $c_0$ sits inside $\ell^\infty$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]]) with the same norm (on $c_0$ the supremum is a maximum), and it is closed there: Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. The truncation argument of [[Functional Analysis Problem-Solving Techniques#^rem-t15|Technique 15]] works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm — which is precisely what fails for a general bounded sequence.
@@ -136,7 +136,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 *Uses:* [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1|Def. §16.1]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§4 Uncountability#^thm-4-1|551 §4.1]]
 
 > [!remark]- Connections
-> - The same separated-family argument for functions: [[§25 Sequence and Function Spaces#^prop-25-5|§25.5]], and in the vault home [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 §19.21]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
+> - The same separated-family argument for functions: [[§25 Sequence and Function Spaces#^prop-25-5|§25.5]], and in the vault home [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
 
 The shift on $\ell^2$ preserves the inner product without being onto, and every infinite-dimensional separable Hilbert space is isomorphic to $\ell^2$.
 
@@ -194,10 +194,10 @@ Separability splits the $L^p$ as it split the $\ell^p$:
 
 ^pf-25-4
 
-*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|§17.4]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]], [[Minkowski's Inequality|551 §19.9]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]]
+*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|§17.4]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]], [[Minkowski's Inequality|551 §35.2]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]]
 
 > [!remark]- Connections
-> - Vault home: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], via density of step functions and of $C_c$ in $L^p$, [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|551 §19.19]] (its (iii) is the compactly supported density used in Step 1).
+> - Vault home: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]], via density of step functions and of $C_c$ in $L^p$, [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (its (iii) is the compactly supported density used in Step 1).
 > - The companion chapter's case $L^2(\mathbb{R}^n)$: [[§32 Position Eigenstates and Continuous Resolutions#^thm-32-2|§32.2]].
 
 ![[m556-20-4.svg]]
@@ -225,16 +225,16 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 >
 > a contradiction. So $t \mapsto d_t$ is one-to-one from the [[§4 Uncountability#^ex-4-2|uncountable]] set $(0,1]$ into $D$, and $D$ is uncountable.
 >
-> **Step 2: general $E$ with $m(E) > 0$.** (Not part of the homework.) Let $Q_t = [-t,t]^n$ and $\varphi(t) = m(E \cap Q_t)$ for $t \ge 0$. $\varphi$ is non-decreasing and finite. It is continuous: if $t_k \uparrow t$, then $\bigcup_k Q_{t_k} = (-t,t)^n$, which differs from $Q_t$ by a null set, so $\varphi(t_k) \to \varphi(t)$ by [[§11 Borel Sets and Measure Spaces#^prop-11-12|continuity of measure from below]]; if $t_k \downarrow t$, then $\bigcap_k Q_{t_k} = Q_t$ and the measures are finite, so $\varphi(t_k) \to \varphi(t)$ [[§11 Borel Sets and Measure Spaces#^prop-11-13|from above]]. Also $\varphi(0) = 0$ and $\varphi(t) \to m(E) > 0$ as $t \to \infty$. Let $\gamma = m(E)$ if $m(E) < \infty$ and $\gamma = 1$ otherwise. By the [[Intermediate Value Theorem|intermediate value theorem]], for each $c \in (0, \gamma)$ there is $t_c$ with $\varphi(t_c) = c$; let $f_c = \chi_{E \cap Q_{t_c}}$. For $c < c'$, $\varphi(t_c) < \varphi(t_{c'})$ forces $t_c < t_{c'}$, so $f_{c'} - f_c = \chi_{E \cap (Q_{t_{c'}} \setminus Q_{t_c})}$, the indicator of a set of measure $c' - c > 0$. As in Step 1, $\|f_{c'} - f_c\|_\infty = 1$, and the argument of Step 1, with the uncountable index set $(0, \gamma)$, shows that no countable set is dense in $L^\infty(E)$.
+> **Step 2: general $E$ with $m(E) > 0$.** (Not part of the homework.) Let $Q_t = [-t,t]^n$ and $\varphi(t) = m(E \cap Q_t)$ for $t \ge 0$. $\varphi$ is non-decreasing and finite. It is continuous: if $t_k \uparrow t$, then $\bigcup_k Q_{t_k} = (-t,t)^n$, which differs from $Q_t$ by a null set, so $\varphi(t_k) \to \varphi(t)$ by [[§13 Approximation and Continuity of Measure#^prop-13-4|continuity of measure from below]]; if $t_k \downarrow t$, then $\bigcap_k Q_{t_k} = Q_t$ and the measures are finite, so $\varphi(t_k) \to \varphi(t)$ [[§13 Approximation and Continuity of Measure#^prop-13-5|from above]]. Also $\varphi(0) = 0$ and $\varphi(t) \to m(E) > 0$ as $t \to \infty$. Let $\gamma = m(E)$ if $m(E) < \infty$ and $\gamma = 1$ otherwise. By the [[Intermediate Value Theorem|intermediate value theorem]], for each $c \in (0, \gamma)$ there is $t_c$ with $\varphi(t_c) = c$; let $f_c = \chi_{E \cap Q_{t_c}}$. For $c < c'$, $\varphi(t_c) < \varphi(t_{c'})$ forces $t_c < t_{c'}$, so $f_{c'} - f_c = \chi_{E \cap (Q_{t_{c'}} \setminus Q_{t_c})}$, the indicator of a set of measure $c' - c > 0$. As in Step 1, $\|f_{c'} - f_c\|_\infty = 1$, and the argument of Step 1, with the uncountable index set $(0, \gamma)$, shows that no countable set is dense in $L^\infty(E)$.
 >
 > With the working definition of $L^\infty$ in Definition [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|§17.1]] (bounded functions with the supremum norm) the same families work verbatim, since then $\|\chi_A\| = 1$ for every nonempty $A$.
 
 ^pf-25-5
 
-*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]], [[§11 Borel Sets and Measure Spaces#^prop-11-12|551 §11.12]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|551 §11.13]], [[Intermediate Value Theorem|451 §18.3]]
+*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§24 Orthonormal Sets and Bases#^def-24-5|Def. §24.5]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§13 Approximation and Continuity of Measure#^prop-13-5|551 §13.5]], [[Intermediate Value Theorem|451 §18.3]]
 
 > [!remark]- Connections
-> - Vault home: [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 §19.21]], with the family of indicators of $(0, t)$ and, for general $E$, continuity of measure.
+> - Vault home: [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]], with the family of indicators of $(0, t)$ and, for general $E$, continuity of measure.
 > - The sequence version: [[§25 Sequence and Function Spaces#^prop-25-3|§25.3]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
 
 ![[m556-20-6.svg]]

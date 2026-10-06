@@ -22,7 +22,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§20 Definition and Examples#^ex-20-1|Ex. §20.1]]
 
 > [!remark]- Connections
-> - Finite-dimensional home: bilinear forms [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]], the matrix of a bilinear form [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], and forms ↔ matrices as an isomorphism [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-5|LADR 9.5]].
+> - Finite-dimensional home: bilinear forms [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]], the matrix of a bilinear form [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], and forms ↔ matrices as an isomorphism [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-5|LADR 9.5]].
 
 The theorem below is the infinite-dimensional version. Wu warned against the naive route — expanding $x$ and $y$ in an orthonormal basis and building an infinite matrix — because of the ambiguity in such infinite sums; the [[§27 Dual Spaces#^thm-27-2|Riesz representation theorem]] does the work instead.
 
@@ -38,8 +38,8 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 ^def-28-1
 
 > [!remark]- Connections
-> - An inner product is a sesquilinear form that is also conjugate-symmetric and positive: [[§20 Definition and Examples#^def-20-1|Def. §20.1]]; finite-dimensional home [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
-> - The real case, bilinear forms: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
+> - An inner product is a sesquilinear form that is also conjugate-symmetric and positive: [[§20 Definition and Examples#^def-20-1|Def. §20.1]]; finite-dimensional home [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
+> - The real case, bilinear forms: [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
 
 > [!theorem] Theorem §28.1: Bounded Sesquilinear Forms are Bounded Operators
 > Let $H$ be a Hilbert space over $\mathbb{F}$ and $B : H \times H \to \mathbb{F}$ a bounded sesquilinear form. Then there is a bounded linear map $A : H \to H$ with

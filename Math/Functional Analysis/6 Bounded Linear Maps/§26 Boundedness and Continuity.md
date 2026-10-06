@@ -24,7 +24,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Linear maps between linear spaces, without topology: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|Def. §2.1]]; finite-dimensional home [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]].
-> - Continuity between topological spaces: [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]; for metric spaces it is equivalent to the sequential condition used here, [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
+> - Continuity between topological spaces: [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]; for metric spaces it is equivalent to the sequential condition used here, [[§12 Metric Topology#^thm-12-9|590 Thm. §12.9]].
 
 > [!definition] Definition §26.2: Bounded Linear Map; Operator Norm
 > A linear map $T : X \to Y$ is **bounded** if there is $M \ge 0$ with
@@ -46,7 +46,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ^def-26-2
 
 > [!remark]- Connections
-> - Finite-dimensional home (where the sup is a max): [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
+> - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 > - The case $Y = \mathbb{F}$: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1|Def. §23.1]]; the case $X = Y = H$ in the companion chapter: [[§31 The Completeness Relation#^def-31-1|Def. §31.1]].
 
 > [!theorem] Proposition §26.1: The Operator Norm
@@ -74,7 +74,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 *The operator norm of a linear map $T$ of the Euclidean plane: the unit circle of $X$ (blue, left) is mapped onto an ellipse (right). By (a), $\|T\|$ is the largest $\|Tu\|_Y$ over unit vectors $u$ — here the long semi-axis, attained at $u_0$ (red). By (b) and (c), the circle $\|y\|_Y = \|T\|$ (red, dashed) is the smallest circle about $0$ containing the image: every $Tu$ lies inside it, and a smaller $M$ would cut off $Tu_0$.*
 
 > [!remark]- Connections
-> - Finite-dimensional home: [[§27 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
+> - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
 > - The same statements for the dual norm in the companion chapter: [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]].
 
 > [!theorem] Proposition §26.2: Continuous if and only if Bounded
@@ -208,10 +208,10 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 ^pf-ex-26-2
 
-*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]], [[§15 The General Lebesgue Integral#^prop-15-1|551 §15.1]], [[§15 The General Lebesgue Integral#^thm-15-2|551 §15.2]], [[Dominated Convergence Theorem]]
+*Uses:* [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1|Def. §17.1]], [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]], [[§22 The General Lebesgue Integral#^prop-22-1|551 §22.1]], [[§22 The General Lebesgue Integral#^thm-22-2|551 §22.2]], [[Dominated Convergence Theorem]]
 
 > [!remark]- Connections
-> - Computational version: the Fourier transform in Powers' normalization, [[§15★ Complex Methods#^def-15-2|341 Def. §15.2]], computed for Gaussians and used to solve the heat equation on the line, [[§15★ Complex Methods#^ex-15-4|341 Ex. §15.4]].
+> - Computational version: the Fourier transform in Powers' normalization, [[§19★ Complex Methods#^def-19-2|341 Def. §19.2]], computed for Gaussians and used to solve the heat equation on the line, [[§19★ Complex Methods#^ex-19-4|341 Ex. §19.4]].
 
 > [!theorem] Proposition §26.4: Linear Maps on Finite-Dimensional Spaces are Bounded
 > Let $X$ and $Y$ be normed linear spaces with $\dim X < \infty$. Every linear map $T : X \to Y$ is bounded.
@@ -232,7 +232,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 *Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]]
 
 > [!remark]- Connections
-> - Finite-dimensional home (inner product spaces, where the operator norm is a maximum): [[§27 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
+> - Finite-dimensional home (inner product spaces, where the operator norm is a maximum): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
 > [!definition] Definition §26.3: The Space $\mathcal{L}(X, Y)$
 > $\mathcal{L}(X, Y)$ is the set of all bounded linear maps $T : X \to Y$, with the pointwise operations $(T_1 + T_2)x = T_1 x + T_2 x$ and $(aT)x = a\, Tx$, and the norm $\|T\|$ of Definition [[§26 Boundedness and Continuity#^def-26-2|§26.2]].
@@ -316,10 +316,10 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 *Uses:* [[§26 Boundedness and Continuity#^prop-26-1|§26.1]], [[§26 Boundedness and Continuity#^thm-26-5|§26.5 (1)]], [[§26 Boundedness and Continuity#^def-26-2|Def. §26.2]], [[§26 Boundedness and Continuity#^def-26-3|Def. §26.3]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-4|Def. §10.4]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§10 Normed Linear Spaces#^prop-10-5|§10.5]], [[§11 Completeness#^def-11-1|Def. §11.1]], [[§11 Completeness#^def-11-2|Def. §11.2]]
 
 > [!remark]- Connections
-> - Finite-dimensional home of the norm properties: [[§27 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
+> - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
 > - Banach spaces: [[§11 Completeness#^def-11-2|Def. §11.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§30 Bras, Kets, and the Riesz Map#^def-30-1|Def. §30.1]].
 > - Part (2) with $Y = \mathbb{F}$: the dual is always a Banach space, [[§27 Dual Spaces#^cor-27-1|§27.1]].
-> - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
+> - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 
 > [!remark] Remark: Why $\varepsilon$ Does Not Depend on $x$
 > A student asked whether $\varepsilon$ in Step 3 varies with $x$. It does not: $N$ is chosen from $\|T_n - T_k\| < \varepsilon$ alone, and $\|T_n - T_k\|$ is the supremum of $\|T_n x - T_k x\|_Y/\|x\|_X$ over all $x$, so the single inequality $\|T_n x - T_k x\|_Y \le \varepsilon\|x\|_X$ holds for every $x$ at once. That is what makes $\|T_k - T\| \le \varepsilon$ legitimate at the end. If $N$ depended on $x$, the conclusion would only be pointwise convergence. Wu compared the argument to the proof that a uniformly Cauchy sequence of functions converges uniformly ([[§24 Uniform Convergence#^def-24-2|MATH 451]]): first a pointwise limit, then the uniform bound passes to the limit. The same pattern was used in Part 3 of the proof of Theorem [[§11 Completeness#^pf-11-1|§11.1]].

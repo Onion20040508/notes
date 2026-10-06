@@ -76,7 +76,7 @@ and so on, we arrive at a corollary that was anticipated in [[§27★ Harmonic F
 *Uses:* [[§57 Some Consequences of the Extension#^thm-57-1|§57.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§19 Derivatives#^thm-19-1|§19.1]]
 
 > [!remark]- Connections
-> - In the language of Multivariable Analysis, $u$ and $v$ are $C^\infty$ and satisfy Laplace's equation $\nabla^2u = 0$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]]; so the real part of an analytic function is a potential in the sense of [[§39 Potential in a Disk|341 §39]], and the mean value and maximum principles there apply to it.
+> - In the language of Multivariable Analysis, $u$ and $v$ are $C^\infty$ and satisfy Laplace's equation $\nabla^2u = 0$, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|452 Def. §28.3]]; so the real part of an analytic function is a potential in the sense of [[§48 Potential in a Disk|341 §48]], and the mean value and maximum principles there apply to it.
 
 ## Morera's Theorem
 

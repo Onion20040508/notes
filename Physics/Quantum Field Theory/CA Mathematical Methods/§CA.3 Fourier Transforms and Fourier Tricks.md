@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §§A.2–A.3, Ch. 4 §4.3 (the six rules), Ch. 6 §6.3 (the four-dimensional transform) · standard results stated here, where marked: Stein & Shakarchi, Fourier Analysis (Princeton Lectures I), Ch. 5–6; Hörmander I, Ch. 7; Reed & Simon I, Ch. IX; DLMF §§10.9, 10.22.*
 
-Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short sequence of Fourier moves: write a plane wave, exchange the $\mathbf x$- and $\mathbf p$-integrals, collect a $(2\pi)^3\delta^3$, relabel $\mathbf p \to -\mathbf p$, let a damping factor go to zero. This section states each move as a rule and says in what sense it holds: as an absolutely convergent integral for wave packets, as an identity in $\mathcal S'$ ([[§CA.2 Generalized Functions|§CA.2]]), or as a limit $\varepsilon \to 0^+$. It starts from the transform and the delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-1|WO Def. §B4.4.1]] and [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-3|WO Theorem §B4.4.3]], in that subject's convention, and from Fubini's theorem ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]). New here, beyond the user's six rules: inversion and Plancherel on $\mathcal S$, the transform of distributions, the plane-wave delta function with the reason it is not a convergent integral, the exchange of integrals as Fubini for wave packets, changes of variable, damping factors and the $i\varepsilon$ limits of the propagator denominators, and transforms of Lorentz-invariant functions.
+Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short sequence of Fourier moves: write a plane wave, exchange the $\mathbf x$- and $\mathbf p$-integrals, collect a $(2\pi)^3\delta^3$, relabel $\mathbf p \to -\mathbf p$, let a damping factor go to zero. This section states each move as a rule and says in what sense it holds: as an absolutely convergent integral for wave packets, as an identity in $\mathcal S'$ ([[§CA.2 Generalized Functions|§CA.2]]), or as a limit $\varepsilon \to 0^+$. It starts from the transform and the delta function of [[§B4.4 Fourier Transforms and the Delta Function#^def-b4-4-1|WO Def. §B4.4.1]] and [[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-3|WO Theorem §B4.4.3]], in that subject's convention, and from Fubini's theorem ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]). New here, beyond the user's six rules: inversion and Plancherel on $\mathcal S$, the transform of distributions, the plane-wave delta function with the reason it is not a convergent integral, the exchange of integrals as Fubini for wave packets, changes of variable, damping factors and the $i\varepsilon$ limits of the propagator denominators, and transforms of Lorentz-invariant functions.
 
 ## Conventions
 
@@ -48,7 +48,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > [!derivation]- Derivation
 > **Step 1** ($\mathcal S \to \mathcal S$). Integration by parts (no boundary terms for $f \in \mathcal S$) gives $\int d^3x\,(\partial_jf)e^{-i\mathbf k\cdot\mathbf x} = ik_j\tilde f$, and differentiation under the integral ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2) gives $\partial_{k_j}\tilde f = \int d^3x\,(-ix_j)f\,e^{-i\mathbf k\cdot\mathbf x}$. So $k^\alpha\partial_k^\beta\tilde f$ is the transform of a finite combination of $x^\gamma\partial^\delta f$, each in $\mathcal S \subset L^1$, hence bounded: $\|\tilde f\|_{\alpha,\beta} \le C\sum\|f\|_{\gamma,\delta}$ with $|\gamma| \le |\beta| + 4$ (four extra powers of $|\mathbf x|$ make $\int d^3x$ converge). So $\tilde f \in \mathcal S$, continuously.
 >
-> **Step 2** (regulate the synthesis). For $f \in \mathcal S$ and $\varepsilon > 0$ put $I_\varepsilon(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\mathbf x}e^{-\varepsilon\mathbf k^2}$. Insert $\tilde f(\mathbf k) = \int d^3y\,f(\mathbf y)e^{-i\mathbf k\cdot\mathbf y}$; the double integral of $|f(\mathbf y)|e^{-\varepsilon\mathbf k^2}$ is finite, so Fubini ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]) allows the exchange:
+> **Step 2** (regulate the synthesis). For $f \in \mathcal S$ and $\varepsilon > 0$ put $I_\varepsilon(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\tilde f(\mathbf k)e^{i\mathbf k\cdot\mathbf x}e^{-\varepsilon\mathbf k^2}$. Insert $\tilde f(\mathbf k) = \int d^3y\,f(\mathbf y)e^{-i\mathbf k\cdot\mathbf y}$; the double integral of $|f(\mathbf y)|e^{-\varepsilon\mathbf k^2}$ is finite, so Fubini ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]) allows the exchange:
 >
 > $$
 > I_\varepsilon(\mathbf x) = \int d^3y\,f(\mathbf y)\int\frac{d^3k}{(2\pi)^3}e^{-\varepsilon\mathbf k^2 + i\mathbf k\cdot(\mathbf x - \mathbf y)} = \int d^3y\,f(\mathbf y)\,\frac{e^{-(\mathbf x - \mathbf y)^2/4\varepsilon}}{(4\pi\varepsilon)^{3/2}} ,
@@ -70,7 +70,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-1
 
-*Uses:* [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 > [!theorem] Theorem §CA.3.2: The Fourier Transform of Tempered Distributions
 > For $T \in \mathcal S'$ the transform is $\tilde T[\varphi] \equiv T[\tilde\varphi]$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]). Then:
@@ -224,7 +224,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-5
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]
 
 ## Tricks in mode computations
 
@@ -244,7 +244,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > [!derivation]- Derivation
 > **Step 1** (wave packets in space). $a$ and $b$ are inverse transforms of Schwartz functions, hence Schwartz ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1); $ab \in \mathcal S \subset L^1$, so the left side converges absolutely.
 >
-> **Step 2** (insert $b$, exchange). $\int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int d^3x\,a(\mathbf x)\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Since $\int\!\!\int d^3x\,d^3q\,|a(\mathbf x)||B(\mathbf q)| = \|a\|_{L^1}\|B\|_{L^1} < \infty$, Fubini ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]]) gives
+> **Step 2** (insert $b$, exchange). $\int d^3x\,a(\mathbf x)\,b(\mathbf x) = \int d^3x\,a(\mathbf x)\int\frac{d^3q}{(2\pi)^3}B(\mathbf q)e^{i\mathbf q\cdot\mathbf x}$. Since $\int\!\!\int d^3x\,d^3q\,|a(\mathbf x)||B(\mathbf q)| = \|a\|_{L^1}\|B\|_{L^1} < \infty$, Fubini ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]) gives
 >
 > $$
 > = \int\frac{d^3q}{(2\pi)^3}B(\mathbf q)\int d^3x\,a(\mathbf x)\,e^{i\mathbf q\cdot\mathbf x} .
@@ -267,7 +267,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-6
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §CA.3.7: Changes of Integration Variable: Relabelling, Shifting, Rescaling, Rotating
 > For an integral over all of $\mathbb R^n$ that converges absolutely, or for the pairing of a tempered distribution with a test function ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]):
@@ -278,12 +278,12 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > The domain is unchanged; what changes is the integrand's argument: phases $\mathbf p\cdot\mathbf x \to -\mathbf p\cdot\mathbf x$, operator labels $\mathbf p \to -\mathbf p$, while $E_{-\mathbf p} = E_{R\mathbf p} = E_{\mathbf p}$.
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rule 3: relabelling), App. A §A.3 ("Why the axis may be chosen") · [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.3 (rule 3: relabelling), App. A §A.3 ("Why the axis may be chosen") · [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]*
 
 ^thm-ca-3-7
 
 > [!derivation]- Derivation
-> **Step 1** (the formula). For an invertible affine map $\mathbf p = L\mathbf q + \mathbf a$, the change of variables theorem ([[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]], on balls of growing radius, then dominated convergence) gives $\int d^np\,F(\mathbf p) = |\det L|\int d^nq\,F(L\mathbf q + \mathbf a)$, and $L\mathbb R^n + \mathbf a = \mathbb R^n$: the domain is unchanged.
+> **Step 1** (the formula). For an invertible affine map $\mathbf p = L\mathbf q + \mathbf a$, the change of variables theorem ([[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], on balls of growing radius, then dominated convergence) gives $\int d^np\,F(\mathbf p) = |\det L|\int d^nq\,F(L\mathbf q + \mathbf a)$, and $L\mathbb R^n + \mathbf a = \mathbb R^n$: the domain is unchanged.
 >
 > **Step 2** (the Jacobians). $L = -\mathbb 1$: $|\det L| = |(-1)^n| = 1$. Shift: $L = \mathbb 1$. Rescale: $L = \lambda\mathbb 1$, $|\det L| = |\lambda|^n$. Rotation: $\det R = 1$. Lorentz: $\Lambda^{\mathsf T}g\Lambda = g$ gives $(\det\Lambda)^2 = 1$.
 >
@@ -300,7 +300,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-7
 
-*Uses:* [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
+*Uses:* [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]
 
 > [!theorem] Theorem §CA.3.8: Integration by Parts; the Gradient of a Delta Function
 > For functions on a region $V$ with outward normal $\hat n$,
@@ -318,7 +318,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > [!derivation]- Derivation
 > **Step 1** (product rule). $\partial_i(fg) = (\partial_if)g + f\,\partial_ig$.
 >
-> **Step 2** (divergence theorem). Integrate over $V$ and apply [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]] to the vector field $fg\,\hat e_i$: $\int_V\partial_i(fg) = \oint_{\partial V}n_ifg$. Rearranging gives the first formula.
+> **Step 2** (divergence theorem). Integrate over $V$ and apply [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]] to the vector field $fg\,\hat e_i$: $\int_V\partial_i(fg) = \oint_{\partial V}n_ifg$. Rearranging gives the first formula.
 >
 > **Step 3** (gradients). Take $g \to \partial_ig$ and sum over $i$: $\int_V\nabla f\cdot\nabla g = \oint_{\partial V}f\,\hat n\cdot\nabla g - \int_Vf\nabla^2g$. With $V$ a ball of radius $L \to \infty$, the surface term is dropped when $f\,\partial_rg$ falls off faster than $1/L^2$.
 >
@@ -332,7 +332,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-8
 
-*Uses:* [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
+*Uses:* [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
 
 > [!theorem] Theorem §CA.3.9: Angular Integrals
 > 1. For a radial $f$ and $r = |\mathbf r|$: $\displaystyle\int d^3p\,f(|\mathbf p|)\,e^{i\mathbf p\cdot\mathbf r} = \frac{4\pi}{r}\int_0^\infty dp\,p\,f(p)\sin(pr)$.
@@ -346,7 +346,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 > [!derivation]- Derivation
 > **Step 1** (rotate the integration variable). Let $R$ be a rotation with $R\hat z = \hat r$ and substitute $\mathbf p = R\mathbf q$: $|\det R| = 1$, the domain $\mathbb R^3$ is unchanged, $|\mathbf p| = |\mathbf q|$, and $\mathbf p\cdot\mathbf r = \mathbf q\cdot R^{\mathsf T}\mathbf r = rq_z$. The dummy variable is rotated; nothing is done to $\mathbf r$. This is "choose the polar axis along $\mathbf r$".
 >
-> **Step 2** (spherical coordinates). $\mathbf q = q(\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ has Jacobian $q^2\sin\theta$, so $d^3q = q^2\sin\theta\,dq\,d\theta\,d\varphi$ ([[§15 Multivariable Integration#^rem-15-5|452 Rem. §15.5]]), and $q_z = q\cos\theta$. The integrand does not depend on $\varphi$: that integral gives $2\pi$.
+> **Step 2** (spherical coordinates). $\mathbf q = q(\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ has Jacobian $q^2\sin\theta$, so $d^3q = q^2\sin\theta\,dq\,d\theta\,d\varphi$ ([[§21 The Definition of the Integral#^rem-21-5|452 Rem. §15.5]]), and $q_z = q\cos\theta$. The integrand does not depend on $\varphi$: that integral gives $2\pi$.
 >
 > **Step 3** (the polar angle). Substitute $u = \cos\theta$, $du = -\sin\theta\,d\theta$, which absorbs the $\sin\theta$ of the Jacobian; $\theta: 0 \to \pi$ becomes $u: 1 \to -1$, and the minus sign flips the limits back:
 >
@@ -366,7 +366,7 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 ^der-ca-3-9
 
-*Uses:* [[§15 Multivariable Integration#^rem-15-5|452 Rem. §15.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§21 The Definition of the Integral#^rem-21-5|452 Rem. §15.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 ## Damping factors and iε
 
@@ -490,10 +490,10 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 > [!remark]- Connections
 > - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
-> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]); the divergence theorem behind it is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (Euler–Lagrange: [[§C1.9 The Action Principle and the Euler–Lagrange Equations#^der-c1-9-4|Derivation §C1.9.4]], step 4; Noether charges: [[§C1.11 Noether's Theorem#^thm-c1-11-3|Theorem §C1.11.3]], [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^der-c1-12-10|Derivation §C1.12.10]], step 7).
+> - Integration by parts with a delta function is how $[\pi, H]$ acquires $\nabla^2\phi$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]); the divergence theorem behind it is [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], and the four-dimensional version is the step in every Euler–Lagrange and Noether derivation (Euler–Lagrange: [[§C1.9 The Action Principle and the Euler–Lagrange Equations#^der-c1-9-4|Derivation §C1.9.4]], step 4; Noether charges: [[§C1.11 Noether's Theorem#^thm-c1-11-3|Theorem §C1.11.3]], [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^der-c1-12-10|Derivation §C1.12.10]], step 7).
 > - Plancherel with $(2\pi)^{-3}$ on the momentum side is why the norm of a one-particle wave packet is $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}|g|^2$, and why the number of particles radiated by a source is finite when $\tilde j$ is a Schwartz function ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]).
 > - The damping factor of Theorem §CA.3.10 is the impulse response of a damped oscillator seen from the frequency side ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]) and the adiabatic switching $e^{\eta t}$, $\eta \to 0^+$, of time-dependent perturbation theory ([[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]]).
-> - Inversion for functions that are only piecewise smooth and integrable, with the midpoint value at jumps, is the Fourier integral theorem of [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]]; Theorem §CA.3.1 trades that generality for Schwartz functions, the class on which the transform extends to distributions.
+> - Inversion for functions that are only piecewise smooth and integrable, with the midpoint value at jumps, is the Fourier integral theorem of [[§18 Fourier Integral#^thm-18-1|341 Thm. §18.1]]; Theorem §CA.3.1 trades that generality for Schwartz functions, the class on which the transform extends to distributions.
 > - The Euclidean radial formula with $J_1$ is the four-dimensional analogue of the sine transform of Theorem §CA.3.9: in $n$ dimensions the kernel is $J_{n/2 - 1}(pR)/(pR)^{n/2 - 1}$, which for $n = 3$ is proportional to $\sin(pR)/pR$.
 > - **Used in**, statement by statement (C2a–C2b items):
 >   - Def. §CA.3.1 (conventions): the transform $\tilde f$ of a smearing function — [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] (conventions), [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]].

@@ -17,7 +17,7 @@ tags: [chapter, topology]
 - [[§3 Order Topology]]
 - [[§4 Product Topology]]
 - [[§5 Subspace Topology]]
-- [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies]]
+- [[§6 Discrete, Indiscrete, Lower Limit and K-Topologies]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

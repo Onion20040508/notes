@@ -14,16 +14,16 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Topology]] (1), [[Multivariable Analysis]] (6), [[Differentiable Manifolds]] (2), [[Fourier Series and PDEs]] (2), [[Complex Variables]] (2)
 
 ## Sections
-- [[§63 Curves Defined by Parametric Equations]] — Stewart 10.1
-- [[§64 Calculus with Parametric Curves]] — Stewart 10.2
-- [[§65 Polar Coordinates]] — Stewart 10.3
-- [[§66 Calculus in Polar Coordinates]] — Stewart 10.4
-- [[§67 Conic Sections]] — Stewart 10.5
-- [[§68 Conic Sections in Polar Coordinates]] — Stewart 10.6
+- [[§73 Curves Defined by Parametric Equations]] — Stewart 10.1
+- [[§74 Calculus with Parametric Curves]] — Stewart 10.2
+- [[§75 Polar Coordinates]] — Stewart 10.3
+- [[§76 Calculus in Polar Coordinates]] — Stewart 10.4
+- [[§77 Conic Sections]] — Stewart 10.5
+- [[§78 Conic Sections in Polar Coordinates]] — Stewart 10.6
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§66 Calculus in Polar Coordinates#^thm-66-1|Theorem §66.1: Area of a Sector]]: 9 later results
-- [[§65 Polar Coordinates#^thm-65-2|Theorem §65.2: Converting Between Polar and Cartesian Coordinates]]: 8 later results
-- [[§67 Conic Sections#^thm-67-5|Theorem §67.5: Standard Equation of a Hyperbola]]: 7 later results
-- [[§67 Conic Sections#^thm-67-3|Theorem §67.3: Standard Equation of an Ellipse]]: 6 later results
+- [[§76 Calculus in Polar Coordinates#^thm-76-1|Theorem §76.1: Area of a Sector]]: 9 later results
+- [[§75 Polar Coordinates#^thm-75-2|Theorem §75.2: Converting Between Polar and Cartesian Coordinates]]: 8 later results
+- [[§77 Conic Sections#^thm-77-5|Theorem §77.5: Standard Equation of a Hyperbola]]: 7 later results
+- [[§77 Conic Sections#^thm-77-3|Theorem §77.3: Standard Equation of an Ellipse]]: 6 later results

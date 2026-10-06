@@ -14,14 +14,14 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Multivariable Analysis]] (1), [[Applied Linear Algebra]] (2), [[Ordinary Differential Equations]] (5)
 
 ## Sections
-- [[§55★ Boundary Value Problems]] — Powers 7.1 ★
-- [[§56★ Heat Problems]] — Powers 7.2 ★
-- [[§57★ Wave Equation]] — Powers 7.3 ★
-- [[§58★ Potential Equation]] — Powers 7.4 ★
-- [[§59★ Two-Dimensional Problems]] — Powers 7.5 ★
+- [[§68★ Boundary Value Problems]] — Powers 7.1 ★
+- [[§69★ Heat Problems]] — Powers 7.2 ★
+- [[§70★ Wave Equation]] — Powers 7.3 ★
+- [[§71★ Potential Equation]] — Powers 7.4 ★
+- [[§72★ Two-Dimensional Problems]] — Powers 7.5 ★
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56★ Heat Problems#^thm-56-1|Theorem §56.1: Rule of Thumb for Stability]]: 2 later results
-- [[§57★ Wave Equation#^prop-57-1|Proposition §57.1: The Starting Equation]]: 2 later results
-- [[§57★ Wave Equation#^thm-57-3|Theorem §57.3: Rule of Thumb for Stability of the Wave Scheme]]: 2 later results
+- [[§69★ Heat Problems#^thm-69-1|Theorem §69.1: Rule of Thumb for Stability]]: 2 later results
+- [[§70★ Wave Equation#^prop-70-1|Proposition §70.1: The Starting Equation]]: 2 later results
+- [[§70★ Wave Equation#^thm-70-3|Theorem §70.3: Rule of Thumb for Stability of the Wave Scheme]]: 2 later results

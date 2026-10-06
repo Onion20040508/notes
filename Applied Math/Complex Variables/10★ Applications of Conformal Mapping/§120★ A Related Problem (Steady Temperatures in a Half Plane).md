@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 120
+section: "120★"
 bc: "120"
 aliases: ["B&C 120"]
 tags: [complex-variables, math342, extension]
@@ -90,7 +90,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 ^ex-120-1
 
 > [!remark]- Connections
-> - The same problem by separation of variables: [[§38 Potential in Unbounded Regions#^thm-38-1|341 Thm. §38.1]] gives the series $\frac4\pi\sum_{n\text{ odd}}\frac1n\sin(nx')e^{-ny}$ for the slot $0 < x' < \pi$, and [[§38 Potential in Unbounded Regions#^ex-38-1|341 Ex. §38.1]] sums it to $\frac2\pi\arctan\big(\sin x'/\sinh y\big)$. With $x' = x + \pi/2$, $\sin x' = \cos x$, this is (6). (Numerically, at $(x, y) = (0.3, 0.5)$ both give $0.682105$.) B&C's remark that separation of variables is "more direct, but gives the solution in the form of an infinite series" is exactly this comparison.
+> - The same problem by separation of variables: [[§47 Potential in Unbounded Regions#^thm-47-1|341 Thm. §47.1]] gives the series $\frac4\pi\sum_{n\text{ odd}}\frac1n\sin(nx')e^{-ny}$ for the slot $0 < x' < \pi$, and [[§47 Potential in Unbounded Regions#^ex-47-1|341 Ex. §47.1]] sums it to $\frac2\pi\arctan\big(\sin x'/\sinh y\big)$. With $x' = x + \pi/2$, $\sin x' = \cos x$, this is (6). (Numerically, at $(x, y) = (0.3, 0.5)$ both give $0.682105$.) B&C's remark that separation of variables is "more direct, but gives the solution in the form of an infinite series" is exactly this comparison.
 
 ![[m342-120-1.svg]]
 *Example §120.1. Isotherms $T = 0.1, \ldots, 0.9$ (blue) of $T = \frac2\pi\arctan(\cos x/\sinh y)$ in the slab: every isotherm runs from one bottom edge $(\pm\pi/2, 0)$ to the other, the hotter ones hugging the base $T = 1$ (red). Lines of flow (orange), the level curves of $\ln|(\sin z - 1)/(\sin z + 1)|$, carry heat from the base to the cold sides.*
@@ -107,7 +107,7 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 ^ex-120-2
 
 > [!example] Example §120.3: A Half Strip with One Hot Side
-> Solve the [[§116★ Transformations of Harmonic Functions#^def-116-new1|Dirichlet problem]]
+> Solve the [[§116★ Transformations of Harmonic Functions#^def-116-2|Dirichlet problem]]
 >
 > $$
 > H_{xx} + H_{yy} = 0 \quad \Big(0 < x < \frac\pi2,\ y > 0\Big), \qquad H(x, 0) = 0, \qquad H(0, y) = 1, \qquad H\Big(\frac\pi2, y\Big) = 0 ,

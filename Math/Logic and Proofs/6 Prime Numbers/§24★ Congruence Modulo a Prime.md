@@ -2,7 +2,7 @@
 type: section
 subject: "[[Logic and Proofs]]"
 chapter: 6
-section: 24
+section: "24★"
 eccles: "Ch. 24"
 aliases: ["Eccles 24"]
 tags: [logic-and-proofs, mat250, extension]
@@ -83,21 +83,21 @@ Recall from [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9
 
 Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: trivially for $a = 1$, and for instance $2^3 = 8 \equiv 1 \pmod 7$, while $p - 1 = 6$.
 
-> [!definition] Definition §24.1: Order Modulo $p$
+> [!definition] Definition §24.2: Order Modulo $p$
 > Let $p$ be prime and $a \not\equiv 0 \pmod p$. The **order of $a$ modulo $p$** is the least positive integer $n$ with $a^n \equiv 1 \pmod p$; it exists because the set of such $n$ contains $p - 1$ ([[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]]) and so has a least element (well-ordering, [[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]).
 >
 > *Eccles: §24.1 (text); Problems VI Q13 (order computations)*
 
 ^def-24-1
 
-> [!definition] Definition §24.1: Primitive Root
+> [!definition] Definition §24.2: Primitive Root
 > An $a$ of order $p - 1$ is a **primitive root** modulo $p$.
 >
 > For example, modulo $7$ the powers of $2$ are $2, 4, 1, \ldots$, so $2$ has order $3$; the powers of $3$ are $3, 2, 6, 4, 5, 1$, so $3$ has order $6$ and is a primitive root. Every prime has a primitive root (Eccles quotes this; it is not proved here).
 >
 > *Eccles: §24.1 (text); Problems VI Q13 (order computations)*
 
-^def-24-new1
+^def-24-2
 
 > [!theorem] Proposition §24.3: The Order Divides $p - 1$
 > Let $p$ be prime, $a \not\equiv 0 \pmod p$, and $n$ the order of $a$ modulo $p$. Then for every $m \in \mathbb{N}$, $a^m \equiv 1 \pmod p$ if and only if $n \mid m$. In particular $n \mid p - 1$.
@@ -164,7 +164,7 @@ Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: t
 > [!proof]+ Proof
 > For $p = 2$: $1! = 1 \equiv -1 \pmod 2$. Let $p \ge 3$.
 >
-> *Inverses.* Each $a$ with $1 \le a \le p - 1$ is coprime to $p$, so by Eccles's Theorem 20.1.5 ([[§20 Linear Congruences#^thm-20-3|Theorem §20.3]]) there is a unique $a' \in R_p = \{0, 1, \ldots, p - 1\}$ with $aa' \equiv 1 \pmod p$ — the inverse of $a$ modulo $p$. Clearly $a' \ne 0$, and $(a')' = a$, since $a$ satisfies $a' a \equiv 1$ and the inverse of $a'$ is unique.
+> *Inverses.* Each $a$ with $1 \le a \le p - 1$ is coprime to $p$, so by Eccles's Theorem 20.1.5 ([[§20 Linear Congruences#^thm-20-4|Theorem §20.4]]) there is a unique $a' \in R_p = \{0, 1, \ldots, p - 1\}$ with $aa' \equiv 1 \pmod p$ — the inverse of $a$ modulo $p$. Clearly $a' \ne 0$, and $(a')' = a$, since $a$ satisfies $a' a \equiv 1$ and the inverse of $a'$ is unique.
 >
 > *Which $a$ are their own inverse.* $a' = a$ means $a^2 \equiv 1$, which by [[§24★ Congruence Modulo a Prime#^lem-24-4|Lemma §24.4]] happens exactly for $a \equiv \pm 1$, i.e. $a \in \{1, p - 1\}$.
 >
@@ -178,7 +178,7 @@ Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: t
 
 ^pf-24-5
 
-*Uses:* [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§24★ Congruence Modulo a Prime#^lem-24-4|§24.4]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]
+*Uses:* [[§20 Linear Congruences#^thm-20-4|§20.4]], [[§24★ Congruence Modulo a Prime#^lem-24-4|§24.4]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]
 
 > [!example] Example §24.3: Wilson's Theorem Characterizes Primes
 > For an integer $n > 1$: $n$ is prime $\iff (n - 1)! \equiv -1 \pmod n$.
@@ -233,7 +233,7 @@ The converse of [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6]]
 > [!remark] Remark: Three Proofs of Fermat's Theorem
 > Problems VI gives two more proofs of [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
 > - *Euler's (Q17).* For $0 < i < p$ the binomial coefficient $\binom{p}{i} = \frac{p!}{i!\,(p-i)!}$ is a multiple of $p$: $p$ divides the numerator $p!$ but, by [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], not $i!\,(p-i)!$, whose factors are all $< p$. Hence $(a + b)^p \equiv a^p + b^p \pmod p$ (binomial theorem, [[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10]]), and induction on $a \geq 0$ gives $a^p = ((a - 1) + 1)^p \equiv (a-1)^p + 1 \equiv a$; this extends to all $a$ since $a^p \bmod p$ depends only on $a \bmod p$, and cancelling $a$ when $p \nmid a$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]) gives $a^{p-1} \equiv 1$.
-> - *Gauss's (Q18).* On the nonzero residues define $x_1 \sim x_2 \iff x_1 \equiv x_2 a^k$ for some $k \in \mathbb{Z}^+$. This is an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]]) whose classes $\{x, xa, \ldots, xa^{n-1}\}$ all have $n$ elements, $n$ the order of $a$. (Here the order exists without Fermat: none of $a, a^2, \ldots, a^p$ is divisible by $p$ ([[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]] applied to $|a|^k = |a| \cdots |a|$), so by the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) two of these $p$ powers fall into the same one of the $p - 1$ nonzero residues, $a^i \equiv a^j$ with $i < j$, and cancelling $a^i$, which is coprime to $p$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]), gives $a^{j-i} \equiv 1$.) The classes partition the $p - 1$ nonzero residues, so $n \mid p - 1$ — [[§24★ Congruence Modulo a Prime#^prop-24-3|Proposition §24.3]] without using Fermat — and then $a^{p-1} = (a^n)^{(p-1)/n} \equiv 1$.
+> - *Gauss's (Q18).* On the nonzero residues define $x_1 \sim x_2 \iff x_1 \equiv x_2 a^k$ for some $k \in \mathbb{Z}^+$. This is an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]) whose classes $\{x, xa, \ldots, xa^{n-1}\}$ all have $n$ elements, $n$ the order of $a$. (Here the order exists without Fermat: none of $a, a^2, \ldots, a^p$ is divisible by $p$ ([[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]] applied to $|a|^k = |a| \cdots |a|$), so by the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) two of these $p$ powers fall into the same one of the $p - 1$ nonzero residues, $a^i \equiv a^j$ with $i < j$, and cancelling $a^i$, which is coprime to $p$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]), gives $a^{j-i} \equiv 1$.) The classes partition the $p - 1$ nonzero residues, so $n \mid p - 1$ — [[§24★ Congruence Modulo a Prime#^prop-24-3|Proposition §24.3]] without using Fermat — and then $a^{p-1} = (a^n)^{(p-1)/n} \equiv 1$.
 >
 > Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the [[§28 Left and Right Cosets#^def-28-2|cosets]] of the [[§4 Subgroups#^def-4-1|subgroup]] $\{1, a, \ldots, a^{n-1}\}$ of the nonzero residues.
 

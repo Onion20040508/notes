@@ -14,18 +14,18 @@ tags: [chapter, applied-linear-algebra]
 **Developed further in (other subjects):** [[Linear Algebra]] (35), [[Multivariable Analysis]] (5), [[Topology]] (2), [[Calculus]] (3)
 
 ## Sections
-- [[§48★ Diagonalization of Symmetric Matrices]] — Lay 7.1
-- [[§49★ Quadratic Forms]] — Lay 7.2
-- [[§50★ Constrained Optimization]] — Lay 7.3
-- [[§51★ The Singular Value Decomposition]] — Lay 7.4
-- [[§52★ Applications to Image Processing and Statistics]] — Lay 7.5
+- [[§58★ Diagonalization of Symmetric Matrices]] — Lay 7.1
+- [[§59★ Quadratic Forms]] — Lay 7.2
+- [[§60★ Constrained Optimization]] — Lay 7.3
+- [[§61★ The Singular Value Decomposition]] — Lay 7.4
+- [[§63★ Applications to Image Processing and Statistics]] — Lay 7.5
 
 ## Central results
 - [[The Principal Axes Theorem]] (§49.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§48★ Diagonalization of Symmetric Matrices#^thm-48-1|Theorem §48.1: Eigenvectors of a Symmetric Matrix Are Orthogonal]]: 98 later results
-- [[§48★ Diagonalization of Symmetric Matrices#^thm-48-3|Theorem §48.3: The Spectral Theorem for Symmetric Matrices]]: 98 later results
-- [[§51★ The Singular Value Decomposition#^prop-51-1|Proposition §51.1: The Eigenvalues of AᵀA]]: 98 later results
-- [[§51★ The Singular Value Decomposition#^thm-51-3|Theorem §51.3: An Orthogonal Basis for Col A]]: 98 later results
+- [[§58★ Diagonalization of Symmetric Matrices#^thm-58-1|Theorem §58.1: Eigenvectors of a Symmetric Matrix Are Orthogonal]]: 98 later results
+- [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|Theorem §58.3: The Spectral Theorem for Symmetric Matrices]]: 98 later results
+- [[§61★ The Singular Value Decomposition#^prop-61-1|Proposition §61.1: The Eigenvalues of AᵀA]]: 98 later results
+- [[§61★ The Singular Value Decomposition#^thm-61-3|Theorem §61.3: An Orthogonal Basis for Col A]]: 98 later results

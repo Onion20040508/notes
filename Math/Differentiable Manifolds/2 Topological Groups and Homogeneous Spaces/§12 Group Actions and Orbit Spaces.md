@@ -134,7 +134,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The underlying set is the orbit set of [[§27 Orbits#^def-27-2|493 Def. §27.2 (Orbit Space Notation)]], written $G \backslash X$ there for a left action.
-> - The topology is the quotient topology of [[§12 Quotient Topology#^def-12-3|590 Def. §12.3 (Quotient Space)]].
+> - The topology is the quotient topology of [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]].
 
 > [!example] Example §12.3: $\mathbb{CP}^n$ Is an Orbit Space
 > The relation of [[§9 Complex Projective Space#^def-9-1|Def. §9.1]] on $S^{2n+1}$, $z \sim w \iff w = \xi z$ for some $\xi \in S^1$, is precisely the orbit relation of the action of $\mathrm{U}(1) = S^1$ on $S^{2n+1}$ by scalar multiplication, $\xi \cdot z = \xi z$, which is continuous, being polynomial in the real coordinates. So $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space, and Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] was our first Hausdorff orbit space. Which continuous actions have Hausdorff orbit spaces in general is the subject of Corollary [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]] below.
@@ -187,7 +187,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 *Uses:* [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]], [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[Universal Property of Quotient Maps]]
 
 > [!remark]- Connections
-> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]], [[§27 Orbits#^def-27-2|493 Def. §27.2]]; extending to an orthonormal basis is [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
+> - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]], [[§27 Orbits#^def-27-2|493 Def. §27.2]]; extending to an orthonormal basis is [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
 > - With $r = 1$ this is the transitivity used in [[§13 Homogeneous Spaces#^ex-13-3|The Sphere as a Homogeneous Space, §13.3]].
 
 > [!remark] Remark
@@ -226,7 +226,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-12-2
 
-*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-2|Def. §12.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§12 Group Actions and Orbit Spaces#^def-12-2|Def. §12.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
 > - The algebraic half (2)–(3) is [[§25 Actions#^prop-25-2|493 §25.2 (Each Group Element Acts Bijectively)]]; (2) says $g \mapsto L_g$ is a homomorphism, as in [[§25 Actions#^thm-25-3|493 §25.3]].
@@ -291,7 +291,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-12-4
 
-*Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§3 Subspaces and Products#^thm-3-12|§3.12]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§15 Compact Spaces#^thm-15-8|590 §15.8]]
+*Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§3 Subspaces and Products#^thm-3-12|§3.12]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]]
 
 > [!remark]- Connections
 > - Applied to coset spaces in [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-5|§14.5]] and to $\mathbb{RP}^{n-1} = S^{n-1}/\{\pm I\}$ in [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-3|On the Index]]; the special case $\mathbb{CP}^n$ was [[§9 Complex Projective Space#^prop-9-1|§9.1]].
@@ -323,7 +323,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-ex-12-6
 
-*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§8 Hausdorff Spaces#^thm-8-3|590 §8.3]]
+*Uses:* [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§9 Hausdorff Spaces#^thm-9-3|590 §9.3]]
 
 > [!remark] Remark: What the Example Shows
 > Every hypothesis of Corollary [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]] except compactness of $G$ holds here, so compactness is not removable. Seen through the criterion: the relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] the graph $\Gamma$ must fail to be closed — and indeed $\big((1,\tfrac1n),(\tfrac1n,1)\big) \in \Gamma$ converges to $\big((1,0),(0,1)\big) \notin \Gamma$. The mechanism is that the orbits, the hyperbolas $xy = c$ together with the two half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.

@@ -64,7 +64,7 @@ tags: [group-theory, math493]
 *The orbit map $g \mapsto g \star x$ factors through the coset space $G/\operatorname{Stab}(x)$, and the induced map is a bijection onto the orbit.*
 
 > [!remark]- Connections
-> - The same “factor through the quotient” shape: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem, §41.1]]; in topology, [[Universal Property of Quotient Maps|590 Thm. §12.3 (Universal Property of Quotient Maps)]].
+> - The same “factor through the quotient” shape: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem, §41.1]]; in topology, [[Universal Property of Quotient Maps|590 Thm. §13.3 (Universal Property of Quotient Maps)]].
 > - Topological upgrade: for a continuous transitive action the same bijection G/H → X is continuous, and a homeomorphism when G/H is compact and X Hausdorff, [[§13 Homogeneous Spaces#^lem-13-5|591 Lemma §13.5]], [[Homogeneous Spaces Are Coset Spaces|591 Thm. §14.3]].
 
 > [!theorem] Theorem §30.3: Orbit–Stabilizer

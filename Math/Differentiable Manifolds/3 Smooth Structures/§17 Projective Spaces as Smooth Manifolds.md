@@ -70,10 +70,10 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-17-1
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §12.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[Universal Property of Quotient Maps|590 §13.3]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
-> - $\mathbb{CP}^n$ as the orbit space of $\mathbb{C}^\times$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]]; the home of quotient maps and their universal property: [[§12 Quotient Topology|590 §12]].
+> - $\mathbb{CP}^n$ as the orbit space of $\mathbb{C}^\times$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]]; the home of quotient maps and their universal property: [[§13 Quotient Topology|590 §13]].
 
 > [!remark] Remark
 > This is where [[§5 Quotient Maps#^lem-5-7|§5.7]] earns its place. The map $\tilde\varphi_i$ is defined only on the open piece $\pi^{-1}(U_i)$ — it divides by $z_i$ — so the universal property cannot be applied to $\pi$ itself; it is applied to $\pi$ restricted over $U_i$, which the lemma guarantees is still a quotient map. Every chart on a quotient space is built by this two-step move.
@@ -116,7 +116,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-17-2
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§9 Complex Projective Space#^prop-9-2|§9.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§6 Differentiability#^thm-6-8|452 §6.8]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^thm-16-5|§16.5]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§9 Complex Projective Space#^prop-9-2|§9.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§8 Algebra of Differentiable Functions#^thm-8-6|452 §8.6]]
 
 > [!theorem] Corollary §17.3: $\mathbb{CP}^n$ Is a Complex Manifold
 > The transition functions of the standard atlas are holomorphic. Hence $\mathbb{CP}^n$ is a complex manifold of complex dimension $n$, in the sense of [[§16 Differentiable Structures#^def-16-5|Def. §16.5]].
@@ -142,7 +142,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-17-4
 
-*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§9 Continuous Functions#^thm-9-4|590 §9.4 (local formulation of continuity)]], [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]]
+*Uses:* [[§17 Projective Spaces as Smooth Manifolds#^def-17-1|Def. §17.1]], [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§10 Continuous Functions#^thm-10-4|590 §10.4 (local formulation of continuity)]], [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]
 
 > [!remark] Remark
 > For $n = 1$ there are two standard charts and a single transition function, $w \mapsto 1/w$ on $\mathbb{C} \setminus \{0\}$ — the complex counterpart of the stereographic transition $u \mapsto 1/u$ of [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]].
@@ -150,8 +150,8 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 ^rem-17-2
 
 > [!remark]- Connections
-> - S² as the one-point compactification of ℝ² ≅ ℂ, by the same stereographic projection: [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]].
-> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-new1|342 Def. §17.2]] (the extended complex plane as the Riemann sphere, by stereographic projection); the chart at ∞ is z ↦ 1/z, which reduces limits at ∞ to limits at 0, [[§17 Limits Involving the Point at Infinity#^thm-17-1|342 Thm. §17.1]], and is continuous on the extended plane, [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]].
+> - S² as the one-point compactification of ℝ² ≅ ℂ, by the same stereographic projection: [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]].
+> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-2|342 Def. §17.2]] (the extended complex plane as the Riemann sphere, by stereographic projection); the chart at ∞ is z ↦ 1/z, which reduces limits at ∞ to limits at 0, [[§17 Limits Involving the Point at Infinity#^thm-17-1|342 Thm. §17.1]], and is continuous on the extended plane, [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]].
 
 > [!theorem] Corollary §17.5: Real Projective Space
 > Let $\mathbb{RP}^n = S^n/\{\pm 1\} \cong (\mathbb{R}^{n+1}\setminus\{0\})/\mathbb{R}^\times$, the space of real lines through the origin in $\mathbb{R}^{n+1}$. With $U_i = \{[\vec x] \mid x_i \neq 0\}$ and $\varphi_i([\vec x]) = (x_k/x_i)_{k \neq i}$, the family $\{(U_i, \varphi_i)\}_{i=0}^n$ is a smooth atlas, and $\mathbb{RP}^n$ is a compact smooth manifold of dimension $n$.
@@ -168,7 +168,7 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 *Uses:* [[§9 Complex Projective Space#^prop-9-1|§9.1]], [[§9 Complex Projective Space#^prop-9-2|§9.2]], [[§9 Complex Projective Space#^prop-9-3|§9.3]], [[§17 Projective Spaces as Smooth Manifolds#^prop-17-1|§17.1]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]], [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]]
 
 > [!remark]- Connections
-> - The same space in 590, projective $n$-space: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|Ex. §37.1]].
+> - The same space in 590, projective $n$-space: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2]], [[Projective plane]]; the double cover $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|Ex. §37.1]].
 
 ![[m591-8-6.svg]]
 *The chart $U_0$ of $\mathbb{RP}^1$, drawn in the plane of homogeneous coordinates. A point of $\mathbb{RP}^1$ is a line through the origin. A line $L$ with $x_0 \ne 0$ meets the affine line $x_0 = 1$ in exactly one point, $(1, x_1/x_0)$, and the chart $\varphi_0(L) = x_1/x_0$ records where. The one line with $x_0 = 0$ — the $x_1$-axis, the point $[0:1]$ — is parallel to $x_0 = 1$ and never meets it: it is the point at infinity that $U_0$ misses, and the second chart $U_1$ covers it. On the right, $\mathbb{RP}^1$ drawn as a circle, with $U_0$ everything except the top point. In $\mathbb{RP}^n$ the same picture holds with the affine hyperplane $x_0 = 1$ in place of the line.*
@@ -188,10 +188,10 @@ Let $\pi : \mathbb{C}^{n+1} \setminus \{0\} \to \mathbb{CP}^n$ be the projection
 
 ^pf-17-6
 
-*Uses:* [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|§14.3]], [[§14 The Topology of G∕H and Real Grassmannians#^def-14-2|Def. §14.2]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]], [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§9 Continuous Functions#^thm-9-4|590 §9.4 (local formulation of continuity)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]]
+*Uses:* [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|§14.3]], [[§14 The Topology of G∕H and Real Grassmannians#^def-14-2|Def. §14.2]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]], [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§10 Continuous Functions#^thm-10-4|590 §10.4 (local formulation of continuity)]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]]
 
 > [!remark]- Connections
-> - $P^1 \cong S^1$ in 590: [[§28 Fundamental Group of Some Surfaces#^thm-28-3|590 §28.3]]; Grassmannians as homogeneous spaces: [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]].
+> - $P^1 \cong S^1$ in 590: [[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 §38.3]]; Grassmannians as homogeneous spaces: [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]].
 
 ![[m591-8-7.svg]]
 *The quotient $S^n \to \mathbb{RP}^n$ of [[§17 Projective Spaces as Smooth Manifolds#^prop-17-6|§17.6]], drawn for $n = 2$. A line through the origin meets the sphere in two antipodal points $p$ and $-p$, which $\pi$ identifies. Every line meets the closed upper hemisphere: once if it is not horizontal, and in a pair of antipodal points $q$, $-q$ of the equator if it is. So $\mathbb{RP}^2$ can be pictured as a closed disc with antipodal boundary points glued, as the arrows indicate. For $n = 1$ the same gluing closes a half-circle into a circle, which is $\mathbb{RP}^1 \cong S^1$.*

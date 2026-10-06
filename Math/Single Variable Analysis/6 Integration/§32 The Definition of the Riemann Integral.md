@@ -11,7 +11,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ## Darboux Sums and the Darboux Integral
 
-> [!definition] Definition §32.1: Sup and Inf over a Set
+> [!definition] Definition §32.3: Sup and Inf over a Set
 > Suppose $f$ is *bounded* on $[a,b]$. For any subset $S \subseteq [a,b]$, define
 >
 > $$
@@ -22,16 +22,16 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^def-32-1
 
-> [!definition] Definition §32.1: Partitions
+> [!definition] Definition §32.5: Partitions
 > A **partition** of $[a,b]$ is a division into $n$ subintervals,
 >
 > $$
 > P: \quad a = t_0 < t_1 < \cdots < t_n = b.
 > $$
 
-^def-32-new1
+^def-32-2
 
-> [!definition] Definition §32.1: Upper and Lower Sums
+> [!definition] Definition §32.8: Upper and Lower Sums
 > Suppose $f$ is *bounded* on $[a,b]$. For each partition define the **upper sum** and **lower sum**
 >
 > $$
@@ -41,12 +41,12 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 >
 > — geometrically, sums of areas of rectangles circumscribing and inscribed in the region under the graph. If the integral exists (whatever it is), it should clearly satisfy $L(f,P) \leq \int_a^b f \leq U(f,P)$.
 
-^def-32-new2
+^def-32-3
 
 > [!remark]- Connections
-> - Two-dimensional version, partitioning a Jordan measurable region into pieces of area |Dᵢ|: [[§15 Multivariable Integration#^def-15-7|452 Def. §15.7]] and [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
+> - Two-dimensional version, partitioning a Jordan measurable region into pieces of area |Dᵢ|: [[§21 The Definition of the Integral#^def-21-1|452 Def. §21.1]] and [[§21 The Definition of the Integral#^def-21-2|452 Def. §21.2]].
 
-> [!definition] Definition §32.2: Darboux Upper and Lower Integrals
+> [!definition] Definition §32.4: Darboux Upper and Lower Integrals
 > The **Darboux upper integral** and **lower integral** are
 >
 > $$
@@ -54,18 +54,18 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 > L(f) = \sup\{ L(f,P) \mid P \text{ a partition of } [a,b] \}.
 > $$
 
-^def-32-2
+^def-32-4
 
-> [!definition] Definition §32.2: Darboux Integrability
+> [!definition] Definition §32.5: Darboux Integrability
 > With the Darboux upper and lower integrals $U(f)$ and $L(f)$: $f$ is called **Darboux integrable** if $L(f) = U(f)$, and then $\int_a^b f\,dx$ is defined to be this common value.
 
-^def-32-new3
+^def-32-5
 
 ![[m451-32-1.svg]]
 *Left: an uneven partition $P$; the upper sum (red outline) and lower sum (blue fill) trap the curve. Right: a refinement of $P$ — four more points inserted (unlabeled ticks): the gap boxes of the refinement (blue) sit inside the gap boxes of $P$ (red outline), so $U - L$ shrinks subinterval by subinterval — the Refinement Lemma in one picture.*
 
 > [!remark]- Connections
-> - Double integral over a region, with integrability defined by upper minus lower sum tending to 0: [[§15 Multivariable Integration#^def-15-10|452 Def. §15.10]] and [[§15 Multivariable Integration#^def-15-11|452 Def. §15.11]].
+> - Double integral over a region, with integrability defined by upper minus lower sum tending to 0: [[§21 The Definition of the Integral#^def-21-6|452 Def. §21.6]] and [[§21 The Definition of the Integral#^def-21-7|452 Def. §21.7]].
 
 > [!example] Example §32.1: The Identity Function
 > Show $f(x) = x$ is Darboux integrable on $[0,1]$ and $\int_0^1 x\,dx = \tfrac12$. (We know the value from the Fundamental Theorem — but here we must prove it *from the definition*.)
@@ -123,20 +123,20 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 ^ex-32-3
 
 > [!remark]- Connections
-> - Same example in 551 ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|551 Ex. §8.2]]): the Dirichlet function vanishes off the null set ℚ ([[§9 Lebesgue Outer Measure#^ex-9-2|551 Ex. §9.2]]), so it is Lebesgue integrable with integral 0.
+> - Same example in 551 ([[§8 Motivation꞉ The Riemann Integral#^ex-8-2|551 Ex. §8.2]]): the Dirichlet function vanishes off the null set ℚ ([[§10 Lebesgue Outer Measure#^ex-10-2|551 Ex. §10.2]]), so it is Lebesgue integrable with integral 0.
 
 ## Lower Is at Most Upper
 
-We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definition of the Riemann Integral#^thm-32-1|Theorem §32.1]] below). Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *different* competitions. The proof goes through two lemmas.
+We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definition of the Riemann Integral#^thm-32-3|Theorem §32.3]] below). Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *different* competitions. The proof goes through two lemmas.
 
-> [!theorem] Lemma §32.2: Refinement Lemma
+> [!theorem] Lemma §32.3: Refinement Lemma
 > Let $P, Q$ be partitions of $[a,b]$ with $Q$ a **refinement** of $P$ (every cut point of $P$ is a cut point of $Q$). Then
 >
 > $$
 > L(f, P) \leq L(f, Q) \leq U(f, Q) \leq U(f, P).
 > $$
 
-^lem-32-2
+^lem-32-1
 
 > [!proof]+ Proof
 > The middle inequality holds for any single partition, since $m \leq M$ on each subinterval. For the outer ones, it suffices (by induction on the number of added points) to add *one* cut point $c$ to one subinterval $[t_{k-1}, t_k]$. The sup over a subset is at most the sup over the whole:
@@ -153,16 +153,16 @@ We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definiti
 >
 > and summing over the (unchanged) other subintervals, $U(f,Q) \leq U(f,P)$. Dually, infima over subsets are $\geq$, giving $L(f,Q) \geq L(f,P)$.
 
-^pf-32-2
+^pf-32-1
 
-> [!theorem] Lemma §32.3: Cross Lemma
+> [!theorem] Lemma §32.1: Cross Lemma
 > For *any* two partitions $P, Q$ (with no relation between them):
 >
 > $$
 > L(f, P) \leq U(f, Q).
 > $$
 
-^lem-32-3
+^lem-32-2
 
 > [!proof]+ Proof
 > The trick is a middle stepping-stone: combine $P$ and $Q$ into the common refinement $P \cup Q$ (all cut points of both). It refines both, so by the Refinement Lemma twice:
@@ -173,14 +173,14 @@ We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definiti
 >
 > the middle inequality being the single-partition fact $m \leq M$.
 
-^pf-32-3
+^pf-32-2
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-1|§32.1]]
 
-> [!theorem] Theorem §32.1: Lower Integral at Most Upper Integral
+> [!theorem] Theorem §32.2: Lower Integral at Most Upper Integral
 > For every bounded $f: [a,b] \to \mathbb{R}$:    $L(f) \leq U(f)$.
 
-^thm-32-1
+^thm-32-3
 
 > [!proof]+ Proof
 > Fix any partition $Q$. By the Cross Lemma, $U(f,Q)$ is an upper bound for *all* the lower sums, so
@@ -195,9 +195,9 @@ We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definiti
 > L(f) \leq \inf_Q U(f,Q) = U(f).
 > $$
 
-^pf-32-1
+^pf-32-3
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-3|§32.3]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
 
 ## The Cauchy Criterion for Integrability
 
@@ -237,7 +237,7 @@ This is convenient: we may pick a *special* partition, usually the equal divisio
 
 ^pf-32-4
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]], [[§32 The Definition of the Riemann Integral#^thm-32-1|§32.1]], [[Characterization of the Supremum|§4.3]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-1|§32.1]], [[§32 The Definition of the Riemann Integral#^thm-32-3|§32.3]], [[Characterization of the Supremum|§4.3]]
 
 In computations one usually runs a whole *sequence* of partitions and takes limits — as in the identity-function example above. The following packages that pattern once and for all, value included:
 
@@ -269,7 +269,7 @@ In computations one usually runs a whole *sequence* of partitions and takes limi
 
 ^pf-32-5
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-1|§32.1]], [[Squeeze Theorem|§8.1]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-3|§32.3]], [[Squeeze Theorem|§8.1]]
 
 For example, the equal partitions for $f(x) = x^3$ on $[0, b]$ give (via $\sum_{k=1}^n k^3 = \tfrac{n^2(n+1)^2}{4}$, proved by induction just like the sum of squares in [[§1 The Set ℕ of Natural Numbers#^ex-1-1|Example §1.1]])
 
@@ -281,15 +281,15 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 
 ## Riemann Sums and the Riemann Integral
 
-> [!definition] Definition §32.3: Mesh
+> [!definition] Definition §32.6: Mesh
 > For a partition $P$, define its **mesh** by $\operatorname{mesh}(P) = \max\{ t_k - t_{k-1} \}$ (for the equal partition into $n$ pieces, $\operatorname{mesh} = \tfrac{b-a}{n}$).
 
-^def-32-3
+^def-32-6
 
 > [!remark]- Connections
-> - In the plane the mesh is the largest diameter of a piece: [[§15a The Definition of the Integral#^def-15-new4|452 Def. §15.9]].
+> - In the plane the mesh is the largest diameter of a piece: [[§21 The Definition of the Integral#^def-21-5|452 Def. §21.5]].
 
-> [!definition] Definition §32.3: Riemann Sums
+> [!definition] Definition §32.7: Riemann Sums
 > For a partition $P$ and bounded $f$, a **Riemann sum** associated with $P$ is
 >
 > $$
@@ -298,12 +298,12 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 >
 > — compare with $U(f,P)$ and $L(f,P)$, which bracket every such $S$.
 
-^def-32-new4
+^def-32-7
 
 ![[m451-32-2.svg]]
 *A Riemann sum: both choices are arbitrary — the partition points $t_k$ (unequal lengths; $\operatorname{mesh}(P)$ is the widest) and the tags $x_k$ inside each piece, with rectangle heights $f(x_k)$, neither sup nor inf. Dashed red and blue mark the sup $M$ and inf $m$ of $f$ on each subinterval: every Riemann sum is squeezed, $L(f,P) \leq S \leq U(f,P)$ — the mechanism behind the equivalence theorem below.*
 
-> [!definition] Definition §32.3: Riemann Integrability
+> [!definition] Definition §32.8: Riemann Integrability
 > For bounded $f$: $f$ is called **Riemann integrable** if there exists a value $r$ such that: for every $\varepsilon > 0$ there is $\delta > 0$ such that for every partition $P$ with $\operatorname{mesh}(P) < \delta$ and every Riemann sum $S$ associated with $P$,
 >
 > $$
@@ -312,11 +312,11 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 >
 > The value $r$ is the **Riemann integral** of $f$.
 
-^def-32-new5
+^def-32-8
 
 > [!remark]- Connections
-> - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
-> - Computational version: Stewart's definite integral, [[§35 The Definite Integral#^def-35-1|Calc Def. §35.1]]; endpoint approximations, [[§50 Approximate Integration#^def-50-1|Calc Def. §50.1]] (with worked examples).
+> - Recapped in 551 as [[§8 Motivation꞉ The Riemann Integral#^def-8-3|551 Def. §8.3]]; every Riemann integrable function is Lebesgue integrable with the same integral, [[§23 The Dominated Convergence Theorem#^thm-23-5|551 Thm. §23.5]].
+> - Computational version: Stewart's definite integral, [[§39 The Definite Integral#^def-39-1|Calc Def. §39.1]]; endpoint approximations, [[§57 Approximate Integration#^def-57-1|Calc Def. §57.1]] (with worked examples).
 
 One difficulty in *using* this definition: we need a candidate value $r$ before we can check anything — whereas the Darboux definition asks only for the sup and inf to meet. Fortunately:
 
@@ -328,7 +328,7 @@ One difficulty in *using* this definition: we need a candidate value $r$ before 
 ^thm-32-6
 
 > [!remark]- Connections
-> - Computational version: any sample points give the same limit, [[§34 The Area and Distance Problems#^thm-34-1|Calc Thm. §34.1]] (with worked examples).
+> - Computational version: any sample points give the same limit, [[§38 The Area and Distance Problems#^thm-38-1|Calc Thm. §38.1]] (with worked examples).
 
 These were stated without proof in lecture (the proofs take too much time; see the book for details). The essential difference between the two notions is that Riemann's requires a limit in the $\varepsilon$-$\delta$ sense over the mesh, which (2) supplies on the Darboux side. From now on, “integrable” means either.
 
@@ -363,4 +363,4 @@ These were stated without proof in lecture (the proofs take too much time; see t
 *Uses:* [[§19 Uniform Continuity#^thm-19-1|§19.1]], [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]]
 
 > [!remark]- Connections
-> - Computational version: [[§35 The Definite Integral#^thm-35-1|Calc Thm. §35.1]].
+> - Computational version: [[§39 The Definite Integral#^thm-39-1|Calc Thm. §39.1]].

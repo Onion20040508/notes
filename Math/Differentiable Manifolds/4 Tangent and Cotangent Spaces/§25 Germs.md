@@ -133,7 +133,7 @@ Point (1) of [[§23 The Geometric Tangent Space#^prop-23-8|Proposition §23.8]],
 
 > [!remark]- Connections
 > - The one-variable flat function $e^{-1/x^2}$, a smooth function that is not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; Taylor series: [[§31 Taylor's Theorem#^def-31-1|451 Def. §31.1]].
-> - Taylor expansion in several variables: [[Multivariable Taylor's Theorem|452 §9.2 (Multivariable Taylor's Theorem)]].
+> - Taylor expansion in several variables: [[Multivariable Taylor's Theorem|452 §11.2 (Multivariable Taylor's Theorem)]].
 
 > [!definition] Definition §25.4: Flat Germ
 > A germ $[f] \in C_{x_0}^\infty(\mathbb{R}^n)$ is **flat** if all partial derivatives of $f$, of all orders, vanish at $x_0$; equivalently, $\mathcal{T}[f] = 0$. So the kernel of $\mathcal{T}$ consists exactly of the flat germs.

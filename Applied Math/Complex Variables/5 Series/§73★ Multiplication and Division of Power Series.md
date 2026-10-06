@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 5
-section: 73
+section: "73★"
 bc: "73"
 aliases: ["B&C 73"]
 tags: [complex-variables, math342, extension]
@@ -112,7 +112,7 @@ Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_
 *Uses:* [[§73★ Multiplication and Division of Power Series#^lem-73-1|§73.1]], [[§73★ Multiplication and Division of Power Series#^def-73-1|Def. §73.1]], [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]], [[§72★ Uniqueness of Series Representations#^thm-72-1|§72.1]]
 
 > [!remark]- Connections
-> - The calculus statement is [[§78 Taylor and Maclaurin Series#^thm-78-10|Calc Thm. §78.10]]. In real analysis the Cauchy product of two absolutely convergent series converges to the product of the sums (Mertens' theorem, not in the vault); here analyticity gives the result for power series in one line, with no rearrangement argument.
+> - The calculus statement is [[§91 Taylor Series of Important Functions#^thm-91-4|Calc Thm. §91.4]]. In real analysis the Cauchy product of two absolutely convergent series converges to the product of the sums (Mertens' theorem, not in the vault); here analyticity gives the result for power series in one line, with no rearrangement argument.
 
 ## Quotients
 

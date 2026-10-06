@@ -2,7 +2,7 @@
 type: section
 subject: "[[Logic and Proofs]]"
 chapter: 3
-section: 12
+section: "12★"
 eccles: "Ch. 12"
 aliases: ["Eccles 12"]
 tags: [logic-and-proofs, mat250, extension]
@@ -145,7 +145,7 @@ When $m = n$ an injection $X \to Y$ is automatically a bijection ([[§11 Propert
 
 ## 12.2 Counting Sets of Subsets
 
-Recall ([[§6 The Language of Set Theory#^def-6-9|Definition §6.9]]) that the **power set** of $X$ is the set of its subsets, $\mathcal{P}(X) = \{ A \mid A \subseteq X \}$.
+Recall ([[§6a Operations on Sets#^def-6a-5|Definition §6a.5]]) that the **power set** of $X$ is the set of its subsets, $\mathcal{P}(X) = \{ A \mid A \subseteq X \}$.
 
 Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, for each of the $n$ elements $x$, whether $x \in A$ or $x \notin A$; two choices each time give $2^n$ subsets. Characteristic functions make this precise by turning subsets into functions.
 
@@ -161,19 +161,19 @@ Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, 
 ^def-12-4
 
 > [!remark]- Connections
-> - The same function (also called the indicator function $\mathbf{1}_E$) in measure theory, where it is the building block of simple functions and integrals: [[§12 Measurable Functions#^def-12-3|551 Def. §12.3]].
+> - The same function (also called the indicator function $\mathbf{1}_E$) in measure theory, where it is the building block of simple functions and integrals: [[§15 Measurable Functions#^def-15-3|551 Def. §15.3]].
 
 > [!theorem] Lemma §12.5: Subsets Are Functions to {0, 1}
 > The function $\mathcal{P}(X) \to \operatorname{Fun}(X, \{0, 1\})$, $A \mapsto \chi_A$, is a bijection.
 >
 > *Eccles: Lemma 12.2.3*
 
-^lem-12-5
+^lem-12-4
 
 > [!proof]+ Proof
 > Its inverse is $\chi \mapsto \{ x \in X \mid \chi(x) = 1 \}$, the preimage of $\{1\}$: starting from $A$ we get $\{x \mid \chi_A(x) = 1\} = A$, and starting from $\chi$ the characteristic function of $\{x \mid \chi(x) = 1\}$ takes the value $1$ exactly where $\chi$ does, so it is $\chi$.
 
-^pf-12-5
+^pf-12-4
 
 *Uses:* [[§12★ Counting Functions and Subsets#^def-12-4|Def. §12.4]]
 
@@ -186,22 +186,22 @@ Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, 
 >
 > *Eccles: Proposition 12.2.1*
 
-^prop-12-4
+^prop-12-5
 
 > [!proof]+ Proof
-> If $n = 0$ then $X = \emptyset$ and $\mathcal{P}(X) = \{\emptyset\}$ has $1 = 2^0$ element. If $n \ge 1$, by Lemma [[§12★ Counting Functions and Subsets#^lem-12-5|§12.5]] and Proposition [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]],
+> If $n = 0$ then $X = \emptyset$ and $\mathcal{P}(X) = \{\emptyset\}$ has $1 = 2^0$ element. If $n \ge 1$, by Lemma [[§12★ Counting Functions and Subsets#^lem-12-4|§12.4]] and Proposition [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]],
 >
 > $$
 > |\mathcal{P}(X)| = |\operatorname{Fun}(X, \{0, 1\})| = 2^{|X|}.
 > $$
 
-^pf-12-4
+^pf-12-5
 
-*Uses:* [[§12★ Counting Functions and Subsets#^lem-12-5|§12.5]], [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]], [[§10 Counting#^prop-10-3|§10.3]]
+*Uses:* [[§12★ Counting Functions and Subsets#^lem-12-4|§12.4]], [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]], [[§10 Counting#^prop-10-3|§10.3]]
 
-For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14 Counting Infinite Sets#^thm-14-13|Theorem §14.13]]).
+For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14a Uncountable Sets#^thm-14a-3|Theorem §14a.3]]).
 
-> [!definition] Definition §12.5: r-Subsets
+> [!definition] Definition §12.6: r-Subsets
 > For a set $X$ and a non-negative integer $r$, an **$r$-subset** of $X$ is a subset $A \subseteq X$ with $|A| = r$. The set of $r$-subsets is
 >
 > $$
@@ -212,14 +212,14 @@ For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor
 
 ^def-12-5
 
-> [!definition] Definition §12.5: Binomial Coefficients
+> [!definition] Definition §12.6: Binomial Coefficients
 > The **binomial coefficient** (or binomial number) $\binom{n}{r}$, read "$n$ choose $r$", is the cardinality of $\mathcal{P}_r(X)$ when $|X| = n$.
 >
 > *Eccles: Definition 12.2.4*
 
-^def-12-new1
+^def-12-6
 
-The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (images and pre-images of subsets, [[§9 Injections, Surjections and Bijections#^def-9-4|Definition §9.4]], [[§9 Injections, Surjections and Bijections#^def-9-new3|Definition §9.4]]).
+The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_2|$, there is a bijection $f : X_1 \to X_2$ ([[§10 Counting#^prop-10-3|Proposition §10.3]]); it restricts to a bijection $A \to f(A)$ for each subset $A$, so $|f(A)| = |A|$, and $A \mapsto f(A)$ is a bijection $\mathcal{P}_r(X_1) \to \mathcal{P}_r(X_2)$ with inverse $B \mapsto f^{-1}(B)$ (images and pre-images of subsets, [[§9 Injections, Surjections and Bijections#^def-9-6|Definition §9.6]], [[§9 Injections, Surjections and Bijections#^def-9-7|Definition §9.7]]).
 
 > [!example] Example §12.2: The Subsets of a 4-Set
 > For $X = \{a, b, c, d\}$:
@@ -273,11 +273,11 @@ The number does not depend on which $n$-element set $X$ is used. If $|X_1| = |X_
 ^prop-12-7
 
 > [!proof]+ Proof
-> Let $|X| = n$. Every subset of $X$ has some cardinality $i$ with $0 \le i \le n$ ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]), so $\mathcal{P}(X) = \bigcup_{i=0}^n \mathcal{P}_i(X)$, a union of pairwise disjoint sets (a set has only one cardinality). By Corollary [[§10 Counting#^cor-10-5|§10.5]] and Proposition [[§12★ Counting Functions and Subsets#^prop-12-4|§12.4]], $\sum_{i=0}^n \binom{n}{i} = |\mathcal{P}(X)| = 2^n$.
+> Let $|X| = n$. Every subset of $X$ has some cardinality $i$ with $0 \le i \le n$ ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]]), so $\mathcal{P}(X) = \bigcup_{i=0}^n \mathcal{P}_i(X)$, a union of pairwise disjoint sets (a set has only one cardinality). By Corollary [[§10 Counting#^cor-10-5|§10.5]] and Proposition [[§12★ Counting Functions and Subsets#^prop-12-5|§12.5]], $\sum_{i=0}^n \binom{n}{i} = |\mathcal{P}(X)| = 2^n$.
 
 ^pf-12-7
 
-*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-4|§12.4]], [[§10 Counting#^cor-10-5|§10.5]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]]
+*Uses:* [[§12★ Counting Functions and Subsets#^prop-12-5|§12.5]], [[§10 Counting#^cor-10-5|§10.5]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]]
 
 ### Evaluating binomial coefficients
 
@@ -311,7 +311,7 @@ Listing subsets, as in Example [[§12★ Counting Functions and Subsets#^ex-12-2
 
 ^pf-12-8
 
-*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§12★ Counting Functions and Subsets#^def-12-5|Def. §12.5]], [[§12★ Counting Functions and Subsets#^def-12-new1|Def. §12.5]]
+*Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§12★ Counting Functions and Subsets#^def-12-5|Def. §12.5]], [[§12★ Counting Functions and Subsets#^def-12-6|Def. §12.6]]
 
 > [!remark] Remark: Pascal's Triangle
 > This rule gives an inductive way to compute binomial coefficients. It seems to have been found in China by the end of the eleventh century, and is known in the West after Blaise Pascal (1623–1662), who linked the binomial coefficients with probability. Write the numbers $\binom{n}{r}$, $r = 0, 1, \ldots, n$, in row $n$ of a triangle. By Proposition [[§12★ Counting Functions and Subsets#^prop-12-6|§12.6]] the border consists of $1$s, and by Pascal's rule each inner entry is the sum of the two entries above it.
@@ -408,7 +408,7 @@ A **binomial** is a sum of two terms, such as $a + b$. The binomial coefficients
 
 > [!remark]- Connections
 > - Computational version: [[§3 Further Algebraic Properties#^thm-3-4|342 Thm. §3.4]] (the binomial formula for complex numbers, proved by the same induction).
-> - See also: [[§78 Taylor and Maclaurin Series#^thm-78-9|Calc Thm. §78.9]] (the binomial series: Newton's infinite-series version for any real exponent $k$, valid for $|x| < 1$).
+> - See also: [[§91 Taylor Series of Important Functions#^thm-91-3|Calc Thm. §91.3]] (the binomial series: Newton's infinite-series version for any real exponent $k$, valid for $|x| < 1$).
 
 The same proof works for complex $a$ and $b$. For negative or non-integer exponents there are versions in which the finite sum becomes an infinite series (Newton).
 

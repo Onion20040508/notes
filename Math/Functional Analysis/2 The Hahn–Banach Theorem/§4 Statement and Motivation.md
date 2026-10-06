@@ -21,7 +21,7 @@ tags: [functional-analysis, math556]
 ^def-4-1
 
 > [!remark]- Connections
-> - Norms have both properties, with $|a|$ for every scalar: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|551 Def. §19.2]]; in this course [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], compared with these functions in [[§10 Normed Linear Spaces#^rem-10-2|Relation to Chapter 2]].
+> - Norms have both properties, with $|a|$ for every scalar: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-2|551 Def. §34.2]]; in this course [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], compared with these functions in [[§10 Normed Linear Spaces#^rem-10-2|Relation to Chapter 2]].
 > - The complex-homogeneous version: [[§8 The Complex Hahn–Banach Theorem#^thm-8-1|§8.1]], [[§8 The Complex Hahn–Banach Theorem#^lem-8-2|§8.2]].
 
 > [!remark] Remark
@@ -69,7 +69,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 ^ex-4-1
 
 > [!remark]- Connections
-> - The Euclidean and $\ell^1$ norms on $\mathbb{R}^n$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]]; the Euclidean and max distances: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]; the triangle inequality for $p_1$: [[Triangle inequality|LADR 6.17]].
+> - The Euclidean and $\ell^1$ norms on $\mathbb{R}^n$: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]]; the Euclidean and max distances: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]; the triangle inequality for $p_1$: [[Triangle inequality|LADR 6.17]].
 > - In this course as norms: [[§10 Normed Linear Spaces#^ex-10-1|Ex. §10.1]].
 
 > [!example] Example §4.2: The Sets $\{p < 1\}$ in $\mathbb{R}^2$

@@ -11,17 +11,17 @@ tags: [chapter, linear-algebra]
 **Used by:** no later chapter.
 
 ## Sections
-- [[§32 Bilinear Forms and Quadratic Forms]]
-- [[§33 Alternating Multilinear Forms]]
-- [[§34 Determinants]]
-- [[§35 Tensor Products]]
+- [[§35 Bilinear Forms and Quadratic Forms]]
+- [[§36 Alternating Multilinear Forms]]
+- [[§37 Determinants]]
+- [[§38 Tensor Products]]
 
 ## Central results
 - [[Invertible ⟺ nonzero determinant]] (9.50)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (via Axler's citations).
-- [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16 Characterization of alternating bilinear forms]]: 20 later results
-- [[§33 Alternating Multilinear Forms#^ladr-9-30|9.30 Swapping input vectors in an alternating multilinear form]]: 19 later results
-- [[§33 Alternating Multilinear Forms#^ladr-9-34|9.34 Swapping two entries in a permutation]]: 19 later results
-- [[§33 Alternating Multilinear Forms#^ladr-9-35|9.35 Permutations and alternating multilinear forms]]: 18 later results
+- [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16 Characterization of alternating bilinear forms]]: 20 later results
+- [[§36 Alternating Multilinear Forms#^ladr-9-30|9.30 Swapping input vectors in an alternating multilinear form]]: 19 later results
+- [[§36 Alternating Multilinear Forms#^ladr-9-34|9.34 Swapping two entries in a permutation]]: 19 later results
+- [[§36 Alternating Multilinear Forms#^ladr-9-35|9.35 Permutations and alternating multilinear forms]]: 18 later results

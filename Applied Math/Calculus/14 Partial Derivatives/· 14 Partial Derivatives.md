@@ -14,18 +14,18 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Linear Algebra]] (3), [[Topology]] (1), [[Multivariable Analysis]] (42), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (5), [[Complex Variables]] (4)
 
 ## Sections
-- [[§90 Functions of Several Variables]] — Stewart 14.1
-- [[§91 Limits and Continuity]] — Stewart 14.2
-- [[§92 Partial Derivatives]] — Stewart 14.3
-- [[§93 Tangent Planes and Linear Approximations]] — Stewart 14.4
-- [[§94 The Chain Rule]] — Stewart 14.5
-- [[§95 Directional Derivatives and the Gradient Vector]] — Stewart 14.6
-- [[§96 Maximum and Minimum Values]] — Stewart 14.7
-- [[§97 Lagrange Multipliers]] — Stewart 14.8
+- [[§106 Functions of Several Variables]] — Stewart 14.1
+- [[§107 Limits and Continuity]] — Stewart 14.2
+- [[§108 Partial Derivatives]] — Stewart 14.3
+- [[§109 Tangent Planes and Linear Approximations]] — Stewart 14.4
+- [[§110 The Chain Rule]] — Stewart 14.5
+- [[§111 Directional Derivatives and the Gradient Vector]] — Stewart 14.6
+- [[§113 Maximum and Minimum Values]] — Stewart 14.7
+- [[§114 Lagrange Multipliers]] — Stewart 14.8
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§91 Limits and Continuity#^thm-91-2|Theorem §91.2: Limit Laws for Two Variables]]: 22 later results
-- [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5: Combining Continuous Functions]]: 20 later results
-- [[§94 The Chain Rule#^thm-94-1|Theorem §94.1: The Chain Rule (Case 1)]]: 19 later results
-- [[§94 The Chain Rule#^thm-94-3|Theorem §94.3: The Chain Rule (General Version)]]: 11 later results
+- [[§107 Limits and Continuity#^thm-107-2|Theorem §107.2: Limit Laws for Two Variables]]: 22 later results
+- [[§107 Limits and Continuity#^thm-107-5|Theorem §107.5: Combining Continuous Functions]]: 20 later results
+- [[§110 The Chain Rule#^thm-110-1|Theorem §110.1: The Chain Rule (Case 1)]]: 19 later results
+- [[§110 The Chain Rule#^thm-110-3|Theorem §110.3: The Chain Rule (General Version)]]: 11 later results

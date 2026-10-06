@@ -14,17 +14,17 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Functional Analysis]] (18), [[Single Variable Analysis]] (17), [[Measure Theory]] (6), [[Linear Algebra]] (4), [[Applied Linear Algebra]] (10), [[Ordinary Differential Equations]] (2), [[Calculus]] (8), [[Complex Variables]] (15)
 
 ## Sections
-- [[§6 Periodic Functions and Fourier Series]] — Powers 1.1
-- [[§7 Arbitrary Period and Half-Range Expansions]] — Powers 1.2
-- [[§8 Convergence of Fourier Series]] — Powers 1.3
-- [[§9 Uniform Convergence]] — Powers 1.4
-- [[§10 Operations on Fourier Series]] — Powers 1.5
-- [[§11★ Mean Error and Convergence in Mean]] — Powers 1.6 ★
-- [[§12★ Proof of Convergence]] — Powers 1.7 ★
-- [[§13★ Numerical Determination of Fourier Coefficients]] — Powers 1.8 ★
-- [[§14 Fourier Integral]] — Powers 1.9
-- [[§15★ Complex Methods]] — Powers 1.10 ★
-- [[§16★ Applications of Fourier Series and Integrals]] — Powers 1.11 ★
+- [[§9 Periodic Functions and Fourier Series]] — Powers 1.1
+- [[§10 Arbitrary Period and Half-Range Expansions]] — Powers 1.2
+- [[§12 Convergence of Fourier Series]] — Powers 1.3
+- [[§13 Uniform Convergence]] — Powers 1.4
+- [[§14 Operations on Fourier Series]] — Powers 1.5
+- [[§15★ Mean Error and Convergence in Mean]] — Powers 1.6 ★
+- [[§16★ Proof of Convergence]] — Powers 1.7 ★
+- [[§17★ Numerical Determination of Fourier Coefficients]] — Powers 1.8 ★
+- [[§18 Fourier Integral]] — Powers 1.9
+- [[§19★ Complex Methods]] — Powers 1.10 ★
+- [[§20★ Applications of Fourier Series and Integrals]] — Powers 1.11 ★
 
 ## Central results
 - [[Convergence Theorem for Fourier Series]] (§8.1)
@@ -34,7 +34,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Convergence Theorem for Fourier Series|Theorem §8.1: Convergence of Fourier Series]]: 41 later results
-- [[§6 Periodic Functions and Fourier Series#^prop-6-3|Proposition §6.3: Orthogonality Relations]]: 31 later results
-- [[§6 Periodic Functions and Fourier Series#^prop-6-1|Proposition §6.1: Operations on Periodic Functions]]: 27 later results
-- [[§6 Periodic Functions and Fourier Series#^prop-6-4|Proposition §6.4: Formulas for the Coefficients]]: 27 later results
+- [[Convergence Theorem for Fourier Series|Theorem §12.1: Convergence of Fourier Series]]: 41 later results
+- [[§9 Periodic Functions and Fourier Series#^prop-9-3|Proposition §9.3: Orthogonality Relations]]: 31 later results
+- [[§9 Periodic Functions and Fourier Series#^prop-9-1|Proposition §9.1: Operations on Periodic Functions]]: 27 later results
+- [[§9 Periodic Functions and Fourier Series#^prop-9-4|Proposition §9.4: Formulas for the Coefficients]]: 27 later results

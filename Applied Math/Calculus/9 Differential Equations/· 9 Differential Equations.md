@@ -14,15 +14,15 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (12), [[Multivariable Analysis]] (1), [[Ordinary Differential Equations]] (39)
 
 ## Sections
-- [[§57 Modeling with Differential Equations]] — Stewart 9.1
-- [[§58 Direction Fields and Euler's Method]] — Stewart 9.2
-- [[§59 Separable Equations]] — Stewart 9.3
-- [[§60 Models for Population Growth]] — Stewart 9.4
-- [[§61 Linear Equations]] — Stewart 9.5
-- [[§62 Predator-Prey Systems]] — Stewart 9.6
+- [[§66 Modeling with Differential Equations]] — Stewart 9.1
+- [[§67 Direction Fields and Euler's Method]] — Stewart 9.2
+- [[§68 Separable Equations]] — Stewart 9.3
+- [[§69 Models for Population Growth]] — Stewart 9.4
+- [[§70 Linear Equations]] — Stewart 9.5
+- [[§71 Predator-Prey Systems]] — Stewart 9.6
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§59 Separable Equations#^thm-59-1|Theorem §59.1: Separation of Variables]]: 7 later results
-- [[§60 Models for Population Growth#^thm-60-1|Theorem §60.1: Solution of the Natural Growth Equation]]: 3 later results
-- [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2: Solution of the Logistic Equation]]: 2 later results
+- [[§68 Separable Equations#^thm-68-1|Theorem §68.1: Separation of Variables]]: 7 later results
+- [[§69 Models for Population Growth#^thm-69-1|Theorem §69.1: Solution of the Natural Growth Equation]]: 3 later results
+- [[§69 Models for Population Growth#^thm-69-2|Theorem §69.2: Solution of the Logistic Equation]]: 2 later results

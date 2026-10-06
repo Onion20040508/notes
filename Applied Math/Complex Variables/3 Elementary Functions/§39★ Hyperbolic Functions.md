@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 3
-section: 39
+section: "39★"
 bc: "39"
 aliases: ["B&C 39"]
 tags: [complex-variables, math342, extension]
@@ -28,7 +28,7 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 ^def-39-1
 
 > [!remark]- Connections
-> - The real hyperbolic functions, their identities and derivatives: [[§24 Hyperbolic Functions#^def-24-1|Calc Def. §24.1]], [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]], [[§24 Hyperbolic Functions#^thm-24-2|Calc Thm. §24.2]]. All of them extend to complex $z$, either by the same computations from (1) or by the relations (3)–(4) below.
+> - The real hyperbolic functions, their identities and derivatives: [[§27 Hyperbolic Functions#^def-27-1|Calc Def. §27.1]], [[§27 Hyperbolic Functions#^thm-27-1|Calc Thm. §27.1]], [[§27 Hyperbolic Functions#^thm-27-2|Calc Thm. §27.2]]. All of them extend to complex $z$, either by the same computations from (1) or by the relations (3)–(4) below.
 
 > [!theorem] Proposition §39.1: sinh z and cosh z Are Entire
 > $\sinh z$ and $\cosh z$ are entire, and
@@ -290,7 +290,7 @@ The zeros are presented as a theorem, for comparison with [[§38 Zeros and Singu
 ^ex-39-2
 
 > [!example] Example §39.3: cosh z = −2
-> By (10), $\cosh x\cos y = -2$ and $\sinh x\sin y = 0$. If $\sinh x = 0$, then $x = 0$ and $\cos y = -2$: impossible. So $\sin y = 0$, $y = n\pi$, $\cos y = (-1)^n$, and $(-1)^n\cosh x = -2$ forces $n$ odd and $\cosh x = 2$, that is, $x = \pm\cosh^{-1}2 = \pm\ln(2 + \sqrt3)$ ([[§24 Hyperbolic Functions#^thm-24-3|Calc Thm. §24.3]]). Hence
+> By (10), $\cosh x\cos y = -2$ and $\sinh x\sin y = 0$. If $\sinh x = 0$, then $x = 0$ and $\cos y = -2$: impossible. So $\sin y = 0$, $y = n\pi$, $\cos y = (-1)^n$, and $(-1)^n\cosh x = -2$ forces $n$ odd and $\cosh x = 2$, that is, $x = \pm\cosh^{-1}2 = \pm\ln(2 + \sqrt3)$ ([[§27 Hyperbolic Functions#^thm-27-3|Calc Thm. §27.3]]). Hence
 >
 > $$
 > z = \pm\ln(2 + \sqrt3) + (2n + 1)\pi i \qquad (n = 0, \pm1, \pm2, \ldots) .

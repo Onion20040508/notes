@@ -74,8 +74,8 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 *Uses:* [[§25 More on Uniform Convergence#^thm-25-1|§25.1]]
 
 > [!remark]- Connections
-> - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§14 The Lebesgue Integral for Simple Functions#^thm-14-12|551 Thm. §14.12]] (MCT II), and for absolutely integrable series [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
-> - Fourier-series version: [[§10 Operations on Fourier Series#^thm-10-3|341 Thm. §10.3]] (a Fourier series may be integrated term by term even when it does not converge uniformly), with worked examples.
+> - In 551 term-by-term integration needs no uniform convergence: for non-negative terms it is [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-5|551 Thm. §21.5]] (MCT II), and for absolutely integrable series [[§23 The Dominated Convergence Theorem#^cor-23-4|551 Cor. §23.4]].
+> - Fourier-series version: [[§14 Operations on Fourier Series#^thm-14-3|341 Thm. §14.3]] (a Fourier series may be integrated term by term even when it does not converge uniformly), with worked examples.
 > - Computational version for power series along contours: [[§71★ Integration and Differentiation of Power Series#^thm-71-1|342 Thm. §71.1]] (term-by-term integration, with worked examples).
 
 > [!theorem] Theorem §26.4: Term-by-Term Calculus for Power Series
@@ -123,11 +123,11 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 *Uses:* [[§26 Differentiation and Integration of Power Series#^thm-26-3|§26.3]], [[§26 Differentiation and Integration of Power Series#^thm-26-1|§26.1]], [[§26 Differentiation and Integration of Power Series#^cor-26-2|§26.2]], [[§23 Power Series#^thm-23-2|§23.2]], [[§9 Limit Theorems for Sequences#^ex-9-4|Ex. §9.4]], [[Fundamental Theorem of Calculus|§34.4]]
 
 > [!remark]- Connections
-> - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§18 Differentiation Theory#^cor-18-14|551 Cor. §18.14]].
-> - Computational version: [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]] (with worked examples).
-> - Used in ODEs: each entry of $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ is a power series in $t$ with infinite radius, differentiated term by term to get $\Phi' = \mathbf{A}\Phi$: [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]], [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]].
-> - Fourier-series counterpart: [[§10 Operations on Fourier Series#^thm-10-6|341 Thm. §10.6]] and [[§10 Operations on Fourier Series#^thm-10-7|341 Thm. §10.7]] (differentiation multiplies the $n$th coefficient by $n$, so it needs a continuous periodic extension or fast-decaying coefficients).
-> - Used in PDEs: the Bessel series is differentiated term by term to show that $J_\mu$ solves Bessel's equation, [[§45★ Bessel's Equation#^thm-45-2|341 Thm. §45.2]], and to get the derivative formulas, [[§45★ Bessel's Equation#^thm-45-7|341 Thm. §45.7]].
+> - The differentiation half has a 551 analogue for series of absolutely continuous functions: [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^cor-32-2|551 Cor. §32.2]].
+> - Computational version: [[§89 Representations of Functions as Power Series#^thm-89-1|Calc Thm. §89.1]] (with worked examples).
+> - Used in ODEs: each entry of $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ is a power series in $t$ with infinite radius, differentiated term by term to get $\Phi' = \mathbf{A}\Phi$: [[§39★ Fundamental Matrices#^def-39-3|331 Def. §39.3]], [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
+> - Fourier-series counterpart: [[§14 Operations on Fourier Series#^thm-14-6|341 Thm. §14.6]] and [[§14 Operations on Fourier Series#^thm-14-7|341 Thm. §14.7]] (differentiation multiplies the $n$th coefficient by $n$, so it needs a continuous periodic extension or fast-decaying coefficients).
+> - Used in PDEs: the Bessel series is differentiated term by term to show that $J_\mu$ solves Bessel's equation, [[§55★ Bessel's Equation#^thm-55-2|341 Thm. §55.2]], and to get the derivative formulas, [[§56★ Properties of Bessel Functions#^thm-56-2|341 Thm. §56.2]].
 > - Computational version: [[§71★ Integration and Differentiation of Power Series#^thm-71-4|342 Thm. §71.4]] (term-by-term differentiation) and [[§71★ Integration and Differentiation of Power Series#^thm-71-1|342 Thm. §71.1]] (term-by-term integration) for complex power series.
 
 ## Harvesting Closed Formulas
@@ -191,7 +191,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 *Partial sums $S_N(x) = \sum_{n=0}^{N} \frac{(-1)^n}{2n+1} x^{2n+1}$ for $N = 2, 6, 15$ (blue, darker as $N$ grows) against $\arctan x$ (black). On $(-1,1)$ they close in on $\arctan x$; for $|x| > 1$ (shaded) the terms do not tend to $0$ and the partial sums break away, in directions alternating with the sign of the last term — although $\arctan$ itself is perfectly smooth there. The radius $R = 1$ is a property of the series, not visible in the graph of the function.*
 
 > [!remark]- Connections
-> - Worked examples: the derivative of arctan, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Calc Thm. §19.8]]; the arctangent series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
+> - Worked examples: the derivative of arctan, [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|Calc Thm. §22.8]]; the arctangent series by term-by-term integration, [[§89 Representations of Functions as Power Series#^ex-89-3|Calc Ex. §89.3]].
 
 > [!example] Example §26.4: The Taylor Series of the Logarithm
 > Find the Taylor series of $f(x) = \ln(1+x)$ at $0$. It is easier to start with the derivative:
@@ -209,7 +209,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ^ex-26-4
 
 > [!remark]- Connections
-> - Worked examples: the logarithm series by term-by-term integration, [[§77 Representations of Functions as Power Series#^ex-77-3|Calc Ex. §77.3]].
+> - Worked examples: the logarithm series by term-by-term integration, [[§89 Representations of Functions as Power Series#^ex-89-3|Calc Ex. §89.3]].
 
 > [!example] Example §26.5: Summing Numerical Series
 > The closed formula $\sum_{n\geq1} n x^n = \tfrac{x}{(1-x)^2}$ evaluates series that are not easy to sum directly. At $x = \tfrac12$:
@@ -262,7 +262,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ^ex-26-7
 
 > [!remark]- Connections
-> - Computational version: the same integral normalized as the error function, $\operatorname{erf}(x)=\frac{2}{\sqrt\pi}\int_0^xe^{-y^2}\,dy$, [[§28★ The Error Function#^def-28-1|341 Def. §28.1]], used for heat flow in a long rod.
+> - Computational version: the same integral normalized as the error function, $\operatorname{erf}(x)=\frac{2}{\sqrt\pi}\int_0^xe^{-y^2}\,dy$, [[§34★ The Error Function#^def-34-1|341 Def. §34.1]], used for heat flow in a long rod.
 
 > [!example] Example §26.8: Sine and Cosine from Scratch (HW)
 > The trigonometric functions have run on credit since §17. Here is the first installment of repayment: *define*
@@ -303,7 +303,7 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ^ex-26-8
 
 > [!remark]- Connections
-> - Computational version: the derivative of sine, [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Calc Thm. §16.1]]; the Maclaurin series of sine and cosine, [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]].
+> - Computational version: the derivative of sine, [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Calc Thm. §19.1]]; the Maclaurin series of sine and cosine, [[§91 Taylor Series of Important Functions#^thm-91-1|Calc Thm. §91.1]], [[§91 Taylor Series of Important Functions#^thm-91-2|Calc Thm. §91.2]].
 > - Computational version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the Maclaurin series of eᶻ, sin z, cos z and others, derived from the complex definitions).
 
 > [!remark] Remark: Repaying the Trigonometric Debt
@@ -312,4 +312,4 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 ^rem-26-1
 
 > [!remark]- Connections
-> - Stewart builds the same functions differently: trigonometric functions from angles, [[§119 Trigonometry#^def-119-4|Calc Def. §119.4]]; ln as an integral, [[§121 The Logarithm Defined as an Integral#^def-121-1|Calc Def. §121.1]].
+> - Stewart builds the same functions differently: trigonometric functions from angles, [[§142 Trigonometry#^def-142-4|Calc Def. §142.4]]; ln as an integral, [[§144 The Logarithm Defined as an Integral#^def-144-1|Calc Def. §144.1]].

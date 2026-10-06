@@ -15,9 +15,9 @@ tags: [linear-algebra, hub]
 - [[§4 Span and Linear Independence#^ladr-2-25|2.25 Finite-dimensional subspaces]]
 - [[Every spanning list contains a basis|2.30 Every spanning list contains a basis]]
 - [[Existence, uniqueness, and degree of minimal polynomial|5.22 Existence, uniqueness, and degree of minimal polynomial]]
-- [[§29 Generalized Eigenspace Decomposition#^ladr-8-31|8.31 Multiplicity of an eigenvalue equals number of times on diagonal]]
-- [[§33 Alternating Multilinear Forms#^ladr-9-28|9.28 Alternating multilinear forms and linear dependence]]
+- [[§31 Generalized Eigenspace Decomposition#^ladr-8-31|8.31 Multiplicity of an eigenvalue equals number of times on diagonal]]
+- [[§36 Alternating Multilinear Forms#^ladr-9-28|9.28 Alternating multilinear forms and linear dependence]]
 
 ## Connections
 - The engine of Chapter 2: [[Length of linearly independent list ≤ length of spanning list]], [[§4 Span and Linear Independence#^ladr-2-25|Finite-dimensional subspaces]], [[Every spanning list contains a basis]]. Through those it underlies almost everything that follows.
-- **Also in [[Applied Linear Algebra]]:** [[§7 Linear Independence#^thm-7-4|235 Thm. §7.4]] and [[§25 Linearly Independent Sets; Bases#^thm-25-1|235 Thm. §25.1]] (characterization of linearly dependent sets, with worked examples).
+- **Also in [[Applied Linear Algebra]]:** [[§8 Linear Independence#^thm-8-4|235 Thm. §8.4]] and [[§31 Linearly Independent Sets; Bases#^thm-31-1|235 Thm. §31.1]] (characterization of linearly dependent sets, with worked examples).

@@ -12,7 +12,7 @@ tags: [logic-and-proofs, hub]
 
 ## Its proof uses
 - [[§2 Implications#^def-2-1|Definition §2.1: Implication]]
-- [[§2 Implications#^def-2-4|Definition §2.4: Converse, Contrapositive, Inverse]]
+- [[§2 Implications#^def-2-5|Definition §2.5: Converse, Contrapositive, Inverse]]
 
 ## Used in (Logic and Proofs)
 - [[§2 Implications#^ex-2-3|Example §2.3: Converses and Contrapositives]]

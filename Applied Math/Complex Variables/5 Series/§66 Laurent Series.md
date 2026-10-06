@@ -129,7 +129,7 @@ the $n$th Laurent coefficient of $f$ is the $n$th complex Fourier coefficient of
 ^ex-66-2
 
 > [!remark]- Connections
-> - The Bessel function $J_n$ appears in 341 as a Frobenius series solution of Bessel's equation, [[§45★ Bessel's Equation#^def-45-2|341 Def. §45.2]]. The two definitions agree: multiplying the series of $e^{zw/2} = \sum_j (z/2)^jw^j/j!$ and $e^{-z/(2w)} = \sum_k(-z/2)^kw^{-k}/k!$, both absolutely convergent, and collecting the terms in $w^n$ ($n \ge 0$, $j = n + k$) gives $\sum_{k \ge 0}\frac{(-1)^k(z/2)^{n+2k}}{k!(n + k)!}$, which is the series of 341; the product of two absolutely convergent series may be rearranged this way (B&C proves the Cauchy product only for power series, [[§73★ Multiplication and Division of Power Series#^thm-73-2|Theorem §73.2]]).
+> - The Bessel function $J_n$ appears in 341 as a Frobenius series solution of Bessel's equation, [[§55★ Bessel's Equation#^def-55-2|341 Def. §55.2]]. The two definitions agree: multiplying the series of $e^{zw/2} = \sum_j (z/2)^jw^j/j!$ and $e^{-z/(2w)} = \sum_k(-z/2)^kw^{-k}/k!$, both absolutely convergent, and collecting the terms in $w^n$ ($n \ge 0$, $j = n + k$) gives $\sum_{k \ge 0}\frac{(-1)^k(z/2)^{n+2k}}{k!(n + k)!}$, which is the series of 341; the product of two absolutely convergent series may be rearranged this way (B&C proves the Cauchy product only for power series, [[§73★ Multiplication and Division of Power Series#^thm-73-2|Theorem §73.2]]).
 
 > [!example] Example §66.3: Fourier Series from Laurent Series
 > **Problem.** **(a)** Let $f$ be analytic in an annular domain about the origin that includes the unit circle $z = e^{i\phi}$ $(-\pi \le \phi \le \pi)$. Taking that circle as the path in (2) and (3), show that at every point $z$ of the annulus
@@ -154,11 +154,11 @@ the $n$th Laurent coefficient of $f$ is the $n$th complex Fourier coefficient of
 >
 > a real function. Take real parts in (a): the real part of a convergent series is the series of real parts ([[§61 Convergence of Series#^thm-61-1|Theorem §61.1]]), and $\operatorname{Re}\int_{-\pi}^{\pi}g(\phi)h(\phi)\,d\phi = \int_{-\pi}^{\pi}\operatorname{Re}g(\phi)\,h(\phi)\,d\phi$ when $h$ is real. This gives the formula for $u(\theta)$.
 >
-> Expanding $\cos[n(\theta - \phi)] = \cos n\theta\cos n\phi + \sin n\theta\sin n\phi$ shows that this is the Fourier series of $u$ on $-\pi \le \theta \le \pi$, with the usual coefficients ([[§6 Periodic Functions and Fourier Series#^def-6-2|341 Def. §6.2]]). The hypothesis that $u$ is the real part of a function analytic on an annulus is far more than the Fourier convergence theorem needs ([[§12★ Proof of Convergence#^thm-12-4|341 Thm. §12.4]] asks only for sectional smoothness), but the proof here is two lines.
+> Expanding $\cos[n(\theta - \phi)] = \cos n\theta\cos n\phi + \sin n\theta\sin n\phi$ shows that this is the Fourier series of $u$ on $-\pi \le \theta \le \pi$, with the usual coefficients ([[§9 Periodic Functions and Fourier Series#^def-9-2|341 Def. §9.2]]). The hypothesis that $u$ is the real part of a function analytic on an annulus is far more than the Fourier convergence theorem needs ([[§16★ Proof of Convergence#^thm-16-4|341 Thm. §16.4]] asks only for sectional smoothness), but the proof here is two lines.
 >
 > *B&C: Sec. 68, Exercise 10*
 
 ^ex-66-3
 
 > [!remark]- Connections
-> - Formula (6) identifies the Laurent coefficients on the unit circle with the complex Fourier coefficients of [[§15★ Complex Methods#^def-15-1|341 Def. §15.1]], and the Laurent series with the complex form of the Fourier series, [[§15★ Complex Methods#^thm-15-1|341 Thm. §15.1]]. When $f$ is analytic in the whole disk $|z| < R_2$ with $R_2 > 1$, the negative coefficients vanish and $\operatorname{Re}f(re^{i\theta})$ is the solution of Dirichlet's problem in the unit disk with boundary values $u$, as in [[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]].
+> - Formula (6) identifies the Laurent coefficients on the unit circle with the complex Fourier coefficients of [[§19★ Complex Methods#^def-19-1|341 Def. §19.1]], and the Laurent series with the complex form of the Fourier series, [[§19★ Complex Methods#^thm-19-1|341 Thm. §19.1]]. When $f$ is analytic in the whole disk $|z| < R_2$ with $R_2 > 1$, the negative coefficients vanish and $\operatorname{Re}f(re^{i\theta})$ is the solution of Dirichlet's problem in the unit disk with boundary values $u$, as in [[§48 Potential in a Disk#^thm-48-2|341 Thm. §48.2]].

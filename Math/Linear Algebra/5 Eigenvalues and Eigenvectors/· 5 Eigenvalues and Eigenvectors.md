@@ -16,7 +16,7 @@ tags: [chapter, linear-algebra]
 - [[§16 Upper-Triangular Matrices]]
 - [[§17 Diagonalizable Operators]]
 - [[§18 Commuting Operators]]
-- [[§18a The Companion Operator, (2x + y, 5y + 3z, 8z) and diag(8, 5, 5)]]
+- [[§19 The Companion Operator, (2x + y, 5y + 3z, 8z) and diag(8, 5, 5)]]
 
 ## Central results
 - [[Linearly independent eigenvectors]] (5.11)

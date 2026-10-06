@@ -12,19 +12,19 @@ tags: [chapter, multivariable-analysis]
 **Builds on (other subjects):** [[Single Variable Analysis]] (2), [[Topology]] (2)
 
 ## Sections
-- [[§16 Line Integrals and Green's Theorem]]
-- [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities]]
-- [[§17a Conservation of Mass and Laplace's Equation]]
-- [[§17b Radial Functions]]
+- [[§27 Line Integrals and Green's Theorem]]
+- [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities]]
+- [[§29 Conservation of Mass and Laplace's Equation]]
+- [[§30 Radial Functions]]
 
 ## Central results
-- [[Green's Theorem]] ([[§16 Line Integrals and Green's Theorem#^thm-16-1|§16.1]])
-- [[Divergence Theorem in ℝⁿ]] ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|§17.1]])
-- [[Green's First Identity]] ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|§17.2]])
+- [[Green's Theorem]] ([[§27 Line Integrals and Green's Theorem#^thm-27-1|§27.1]])
+- [[Divergence Theorem in ℝⁿ]] ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|§28.1]])
+- [[Green's First Identity]] ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|§28.2]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Green's Theorem|Theorem §16.1: Green's Theorem]]: 4 later results
-- [[Divergence Theorem in ℝⁿ|Theorem §17.1: Divergence Theorem in ℝⁿ]]: 2 later results
-- [[§16 Line Integrals and Green's Theorem#^thm-16-2|Theorem §16.2: Divergence Theorem in ℝ²]]: 1 later result
-- [[Green's First Identity|Theorem §17.2: Green's First Identity]]: 1 later result
+- [[Green's Theorem|Theorem §27.1: Green's Theorem]]: 4 later results
+- [[Divergence Theorem in ℝⁿ|Theorem §28.1: Divergence Theorem in ℝⁿ]]: 2 later results
+- [[§27 Line Integrals and Green's Theorem#^thm-27-2|Theorem §27.2: Divergence Theorem in ℝ²]]: 1 later result
+- [[Green's First Identity|Theorem §28.2: Green's First Identity]]: 1 later result

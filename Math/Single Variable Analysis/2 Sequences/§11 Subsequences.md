@@ -5,7 +5,7 @@ section: 11
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§10 Monotone Sequences and Cauchy Sequences]] · ↑ [[· 2 Sequences]] · [[§12 Lim Sup and Lim Inf Continued (Skipped)]] →
+← [[§10a Cauchy Sequences]] · ↑ [[· 2 Sequences]] · [[§12 Lim Sup and Lim Inf Continued (Skipped)]] →
 
 We now want to understand the structure of sequences better. Recall: monotone $+$ bounded $\implies$ convergent, and both conditions are needed. If we remove boundedness, we still know what happens: an unbounded increasing sequence tends to $+\infty$, an unbounded decreasing one to $-\infty$. But what can we say about a *bounded* sequence that is not monotone?
 
@@ -23,7 +23,7 @@ Consider $s_n = (-1)^n$, bounded but not convergent. All *even* terms $s_{2n} = 
 ^def-11-1
 
 > [!remark]- Connections
-> - Same definition for sequences in a topological space: [[§16 Limit Point Compactness#^def-16-2|590 Def. §16.2]].
+> - Same definition for sequences in a topological space: [[§19 Limit Point Compactness#^def-19-2|590 Def. §19.2]].
 
 > [!example] Example §11.1: Subsequences of Simple Sequences
 > For $s_n = n$: the even terms $(2k)$, the squares $(k^2)$, the primes, … are all subsequences. For $s_n = 1 + (-1)^n \tfrac1n$: the sequence is not monotone, but the even-indexed subsequence $1 + \tfrac{1}{2k}$ is decreasing and the odd-indexed one $1 - \tfrac{1}{2k+1}$ is increasing — monotone subsequences extracted from a non-monotone sequence.
@@ -87,7 +87,7 @@ Two useful strengthenings, both needed silently in arguments that “pass to a f
 
 ^pf-11-4
 
-*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]], [[§11 Subsequences#^def-11-1|Def. §11.1]]
+*Uses:* [[§9a Divergence to ±∞ and the Ratio Test#^def-9a-1|Def. §9a.1]], [[§11 Subsequences#^def-11-1|Def. §11.1]]
 
 > [!remark] Remark
 > The converse of the theorem fails: convergence of *a* subsequence does not imply convergence of the sequence — $s_n = (-1)^n$ again.

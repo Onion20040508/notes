@@ -16,7 +16,7 @@ tags: [group-theory, hub]
 - [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Definition §21.2: The Sign; Even and Odd Permutations]]
 
 ## Its proof uses (other subjects)
-- [[§34 Determinants#^ladr-9-49|LADR 9.49 Determinant is multiplicative]]
+- [[§37 Determinants#^ladr-9-49|LADR 9.49 Determinant is multiplicative]]
 
 ## Used in (Group Theory)
 - [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Corollary §21.4: Parity of a Permutation]]
@@ -32,4 +32,4 @@ tags: [group-theory, hub]
 ## Connections
 - **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|§21.5]], [[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]), and the parity of a permutation is well defined ([[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]]). Transpositions are not commutators ([[§47 Commutators#^prop-47-3|§47.3]]), and [Sₙ, Sₙ] = Aₙ ([[§47 Commutators#^thm-47-5|§47.5]]), so every character of Sₙ factors through sgn. Aₙ itself has no nontrivial character for n ≥ 5 ([[§47 Commutators#^thm-47-10|§47.10]]).
 - **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|Speyer's Presentation]]). Δ spans a line on which Sₙ acts by sgn ([[§46 Characters#^ex-46-2|Ex. §46.2]]).
-- **Same idea elsewhere.** LADR defines the sign by inversions ([[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) and uses it in the formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]). Multiplicativity of det ([[§34 Determinants#^ladr-9-49|LADR 9.49]]) is what makes sgn a homomorphism here.
+- **Same idea elsewhere.** LADR defines the sign by inversions ([[§36 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) and uses it in the formula for the determinant ([[§37 Determinants#^ladr-9-46|LADR 9.46]]). Multiplicativity of det ([[§37 Determinants#^ladr-9-49|LADR 9.49]]) is what makes sgn a homomorphism here.

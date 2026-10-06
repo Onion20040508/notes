@@ -19,7 +19,8 @@ tags: [complex-variables, hub]
 - [[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1: Cauchy Integral Formula]]
 - [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1: Extended Cauchy Integral Formula]]
 - [[§61 Convergence of Series#^ex-61-1|Example §61.1: The Geometric Series]]
-- [[§61 Convergence of Series#^def-61-3|Definition §61.3: Remainder; Power Series]]
+- [[§61 Convergence of Series#^def-61-3|Definition §61.3: Remainder]]
+- [[§61 Convergence of Series#^def-61-4|Definition §61.4: Power Series]]
 - [[§62 Taylor Series#^def-62-1|Definition §62.1: Taylor Series; Maclaurin Series]]
 
 ## Used in (Complex Variables)
@@ -38,4 +39,4 @@ tags: [complex-variables, hub]
 
 ## Connections
 - In real analysis, convergence of a Taylor series to $f$ is proved from a remainder estimate that needs bounds on all derivatives ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]), and it can fail for a function with derivatives of all orders ([[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]). Here the Cauchy integral formula supplies the bounds automatically: Cauchy's inequality $|f^{(n)}(0)| \le n!M/r_0^n$ ([[§57 Some Consequences of the Extension#^thm-57-4|Theorem §57.4]]) gives $|a_nz^n| \le M(r/r_0)^n$, and summing the tail of this geometric bound from $n = N$ reproduces exactly the estimate $\frac{Mr_0}{r_0 - r}(r/r_0)^N$ of the [[§63 Proof of Taylor's Theorem#^pf-63-1|proof]].
-- The calculus statement "a power series equals the Taylor series of its sum" ([[§78 Taylor and Maclaurin Series#^thm-78-1|Calc Thm. §78.1]]) is the converse direction; in this subject it is [[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]].
+- The calculus statement "a power series equals the Taylor series of its sum" ([[§90 Taylor and Maclaurin Series#^thm-90-1|Calc Thm. §90.1]]) is the converse direction; in this subject it is [[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]].

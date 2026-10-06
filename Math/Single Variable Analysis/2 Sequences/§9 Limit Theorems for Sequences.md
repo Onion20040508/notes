@@ -67,7 +67,7 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 *Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]]
 
 > [!remark]- Connections
-> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+> - Computational version: limit laws for sequences, [[§80 Sequences#^thm-80-3|Calc Thm. §80.3]] (with worked examples).
 
 > [!theorem] Theorem §9.3: Sums and Products
 > If $s_n \to s$ and $t_n \to t$, then
@@ -122,7 +122,7 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 *Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
 
 > [!remark]- Connections
-> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+> - Computational version: limit laws for sequences, [[§80 Sequences#^thm-80-3|Calc Thm. §80.3]] (with worked examples).
 
 **What is next? Division!**
 
@@ -166,7 +166,7 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 *Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§8 A Discussion About Proofs#^ex-8-9|Ex. §8.9]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
 > [!remark]- Connections
-> - Computational version: limit laws for sequences, [[§69 Sequences#^thm-69-3|Calc Thm. §69.3]] (with worked examples).
+> - Computational version: limit laws for sequences, [[§80 Sequences#^thm-80-3|Calc Thm. §80.3]] (with worked examples).
 
 An order-theoretic companion to the arithmetic rules — invoked constantly in these notes as “limits preserve $\leq$”:
 
@@ -193,7 +193,7 @@ An order-theoretic companion to the arithmetic rules — invoked constantly in t
 *Uses:* [[§9 Limit Theorems for Sequences#^thm-9-2|§9.2]], [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]]
 
 > [!remark]- Connections
-> - Computational version for limits of functions: [[§8 Calculating Limits Using the Limit Laws#^thm-8-6|Calc Thm. §8.6]].
+> - Computational version for limits of functions: [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-4|Calc Thm. §10.4]].
 
 > [!remark] Remark
 > *Strict* inequalities are **not** preserved: $0 < \tfrac1n$ for every $n$, yet both limits equal $0$. Passing to the limit can only be trusted with $\leq$.
@@ -310,7 +310,7 @@ To apply the theorems, we need a stock of basic limits.
 ^ex-9-6
 
 > [!remark]- Connections
-> - Worked examples: this recursion is Newton's method, [[§32 Newton's Method#^def-32-1|Calc Def. §32.1]].
+> - Worked examples: this recursion is Newton's method, [[§35 Newton's Method#^def-35-1|Calc Def. §35.1]].
 
 > [!example] Example §9.7: Limit Theorems Prove Non-Existence Too
 > Let $x_1 = 1$ and $x_{n+1} = 3 x_n^2$ for $n \geq 1$.

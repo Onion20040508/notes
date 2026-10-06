@@ -44,7 +44,7 @@ The Cauchy integral formula on a circle says that the value of an analytic funct
 *Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]]
 
 > [!remark]- Connections
-> - The real part of (2) is the mean value property of the harmonic function $u = \operatorname{Re} f$, [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]], proved there from the polar Laplacian instead of from the Cauchy integral formula.
+> - The real part of (2) is the mean value property of the harmonic function $u = \operatorname{Re} f$, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]], proved there from the polar Laplacian instead of from the Cauchy integral formula.
 
 > [!theorem] Lemma §59.2: Local Maximum of the Modulus
 > Suppose that $|f(z)| \le |f(z_0)|$ at each point $z$ in some neighborhood $|z - z_0| < \varepsilon$ in which $f$ is analytic. Then $f(z)$ has the constant value $f(z_0)$ throughout that neighborhood.
@@ -110,7 +110,7 @@ The Cauchy integral formula on a circle says that the value of an analytic funct
 > [!proof]+ Proof
 > Given that $f$ is analytic in $D$, assume that $|f(z)|$ *does* have a maximum value at some point $z_0$ in $D$; we show that $f(z)$ must then be constant throughout $D$. The approach is similar to that of [[§28★ Uniquely Determined Analytic Functions#^lem-28-1|Lemma §28.1]].
 >
-> **A chain of disks.** Let $P$ be any point of $D$ other than $z_0$. Since a domain is connected, there is a polygonal line $L$ lying in $D$ and extending from $z_0$ to $P$ ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]]). Let $d$ be the shortest distance from points of $L$ to the boundary of $D$; it is positive, because $L$ is a closed bounded set inside the open set $D$. (When $D$ is the entire plane, $d$ may have any positive value.) Since $L$ has finite length, there is a finite sequence of points
+> **A chain of disks.** Let $P$ be any point of $D$ other than $z_0$. Since a domain is connected, there is a polygonal line $L$ lying in $D$ and extending from $z_0$ to $P$ ([[§12★ Regions in the Complex Plane#^def-12-10|Definition §12.10]], [[§12★ Regions in the Complex Plane#^def-12-9|§12.9]]). Let $d$ be the shortest distance from points of $L$ to the boundary of $D$; it is positive, because $L$ is a closed bounded set inside the open set $D$. (When $D$ is the entire plane, $d$ may have any positive value.) Since $L$ has finite length, there is a finite sequence of points
 >
 > $$
 > z_0, z_1, z_2, \ldots, z_{n-1}, z_n
@@ -136,13 +136,13 @@ The Cauchy integral formula on a circle says that the value of an analytic funct
 
 ^pf-59-3
 
-*Uses:* [[§59 Maximum Modulus Principle#^lem-59-2|§59.2]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]]
+*Uses:* [[§59 Maximum Modulus Principle#^lem-59-2|§59.2]], [[§12★ Regions in the Complex Plane#^def-12-9|Def. §12.9]], [[§12★ Regions in the Complex Plane#^def-12-10|Def. §12.10]]
 
 ![[m342-59-1.svg]]
 *The chain of neighborhoods in the proof. Each disk $N_k$ has radius $d$, the distance from the polygonal line $L$ to the boundary of $D$, so it lies in $D$; and each center $z_k$ lies in the previous disk. The lemma makes $f$ constant on $N_0$, which fixes the value at $z_1$ and makes $|f|$ maximal there; so $f$ is constant on $N_1$, and so on until $N_n$, which contains $P$.*
 
 > [!remark]- Connections
-> - The same structure (local constancy from a mean value property, then a connectedness argument) proves the maximum principle for harmonic functions, [[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]]. There the connectedness step is the open-and-closed argument of Topology ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]): the set where the maximum is attained is open by the lemma and closed by continuity. B&C uses polygonal lines instead, which is the same thing for plane domains ([[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]] gives one direction).
+> - The same structure (local constancy from a mean value property, then a connectedness argument) proves the maximum principle for harmonic functions, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|341 Thm. §49.3]]. There the connectedness step is the open-and-closed argument of Topology ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]): the set where the maximum is attained is open by the lemma and closed by continuity. B&C uses polygonal lines instead, which is the same thing for plane domains ([[§16 Connected Subspaces of ℝ#^thm-16-4|590 Thm. §16.4]] gives one direction).
 
 If a function $f$ that is analytic at each point in the interior of a closed bounded region $R$ is also continuous throughout $R$, then the modulus $|f(z)|$ has a maximum value somewhere in $R$ ([[§18 Continuity#^thm-18-6|Theorem §18.6]]). That is, there exists a nonnegative constant $M$ such that $|f(z)| \le M$ for all points $z$ in $R$, and equality holds for at least one such point. If $f$ is a constant function, then $|f(z)| = M$ for all $z$ in $R$. If, however, $f(z)$ is not constant, then, according to the theorem just proved, $|f(z)| \ne M$ for any point $z$ in the interior of $R$. We thus arrive at an important corollary.
 
@@ -161,7 +161,7 @@ If a function $f$ that is analytic at each point in the interior of a closed bou
 *Uses:* [[§59 Maximum Modulus Principle#^thm-59-3|§59.3]], [[§18 Continuity#^thm-18-6|§18.6]]
 
 > [!remark]- Connections
-> - "Which is always reached" is compactness: a closed bounded subset of the plane is compact ([[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]]), the continuous image of a compact set is compact ([[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]]), and a compact set of reals has a largest element; in calculus language, [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]]. On an unbounded region the corollary can fail: $e^z$ on the closed half plane $x \ge 0$ has $|e^z| = 1$ on the boundary $x = 0$ but is unbounded inside.
+> - "Which is always reached" is compactness: a closed bounded subset of the plane is compact ([[§18 Compact Spaces#^thm-18-12|590 Thm. §18.12]]), the continuous image of a compact set is compact ([[§18 Compact Spaces#^thm-18-3|590 Thm. §18.3]]), and a compact set of reals has a largest element; in calculus language, [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]]. On an unbounded region the corollary can fail: $e^z$ on the closed half plane $x \ge 0$ has $|e^z| = 1$ on the boundary $x = 0$ but is unbounded inside.
 
 When the function $f$ in the corollary is written $f(z) = u(x, y) + iv(x, y)$, the component function $u(x, y)$ also has a maximum value in $R$ which is assumed on the boundary of $R$ and never in the interior, where it is harmonic ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 
@@ -180,7 +180,7 @@ When the function $f$ in the corollary is written $f(z) = u(x, y) + iv(x, y)$, t
 *Uses:* [[§59 Maximum Modulus Principle#^cor-59-4|§59.4]], [[§25 Analytic Functions#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
-> - The maximum principle for harmonic functions in the PDE course, [[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]], proved there from the mean value property, with uniqueness for Dirichlet's problem as [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]]. Corollary §59.5 is its case $u = \operatorname{Re} f$; on a simply connected domain every harmonic function is such a real part ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]).
+> - The maximum principle for harmonic functions in the PDE course, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|341 Thm. §49.3]], proved there from the mean value property, with uniqueness for Dirichlet's problem as [[§49 The Poisson Integral Formula and the Mean Value Property#^cor-49-4|341 Cor. §49.4]]. Corollary §59.5 is its case $u = \operatorname{Re} f$; on a simply connected domain every harmonic function is such a real part ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]).
 
 Properties of *minimum* values of $|f(z)|$ and $u(x, y)$ are similar; they are treated in Examples §59.2 and §59.3.
 

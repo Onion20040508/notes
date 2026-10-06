@@ -35,7 +35,7 @@ Integrals of $f(z)$ along curves will be defined in [[§44 Contour Integrals#^de
 ^def-41-1
 
 > [!remark]- Connections
-> - A function $w(t) = u(t) + iv(t)$ is a plane curve $\langle u(t), v(t)\rangle$, and (2) is the derivative of a vector function computed component by component: [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Calc Thm. §87.1]]. Multiplication by complex numbers is the extra structure that $\mathbb{R}^2$ lacks.
+> - A function $w(t) = u(t) + iv(t)$ is a plane curve $\langle u(t), v(t)\rangle$, and (2) is the derivative of a vector function computed component by component: [[§101 Derivatives and Integrals of Vector Functions#^thm-101-1|Calc Thm. §101.1]]. Multiplication by complex numbers is the extra structure that $\mathbb{R}^2$ lacks.
 
 B&C notes that the rules of calculus for sums and products apply to $w(t)$ just as they do to real functions, and that verifications can be based on the corresponding real rules. The rule for $w(-t)$ is used in [[§44 Contour Integrals#^thm-44-2|§44]] to integrate along a reversed contour.
 
@@ -126,7 +126,7 @@ B&C notes that the rules of calculus for sums and products apply to $w(t)$ just 
 ^ex-41-2
 
 > [!remark]- Connections
-> - The same rule, proved the same way, is what makes $e^{rt}$ with a complex root $r$ of the characteristic equation a solution of a linear ODE: [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|331 Prop. §15.1]].
+> - The same rule, proved the same way, is what makes $e^{rt}$ with a complex root $r$ of the characteristic equation a solution of a linear ODE: [[§19 Complex Roots of the Characteristic Equation#^prop-19-1|331 Prop. §19.1]].
 
 While many rules of calculus carry over to functions of the form (1), not all of them do.
 

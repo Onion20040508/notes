@@ -15,6 +15,6 @@ This section of the book, dealing with further properties of $\limsup s_n$ and $
 > - $\liminf s_n \leq \limsup s_n$: [[§10 Monotone Sequences and Cauchy Sequences#^prop-10-5|Prop. §10.5]]; a sequence converges exactly when the two agree: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Thm. §10.6]];
 > - they are the largest and smallest subsequence limits: [[§11 Subsequences#^thm-11-6|Thm. §11.6]].
 >
-> They are used in the ratio and root tests for series ([[§14 Series#^thm-14-9|Thm. §14.9]], [[§14 Series#^thm-14-10|Thm. §14.10]]) and in the radius of convergence of a power series ([[§23 Power Series#^thm-23-2|Thm. §23.2]]). Measure Theory recalls the same notions before applying them to sequences of functions: [[§12 Measurable Functions#^rem-12-4|551 §12, Remark: Recalling Limsup and Liminf for Sequences]].
+> They are used in the ratio and root tests for series ([[§14 Series#^thm-14-9|Thm. §14.9]], [[§14 Series#^thm-14-10|Thm. §14.10]]) and in the radius of convergence of a power series ([[§23 Power Series#^thm-23-2|Thm. §23.2]]). Measure Theory recalls the same notions before applying them to sequences of functions: [[§16 Limits and Positive Parts of Measurable Functions#^rem-16-4|551 §16, Remark: Recalling Limsup and Liminf for Sequences]].
 
 ^rem-12-1

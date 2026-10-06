@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 138
+section: "138★"
 bc: "138"
 aliases: ["B&C 138"]
 tags: [complex-variables, math342, extension]
@@ -52,7 +52,7 @@ This is the half-plane analog of [[§134★ Poisson Integral Formula|§134★]].
 
 ^pf-138-1
 
-*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]] (principal value), [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (comparison for improper integrals), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (improper integrals of nonnegative functions)
+*Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]] (ML-inequality), [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]] (principal value), [[§58 Improper Integrals#^thm-58-2|Calc Thm. §58.2]] (comparison for improper integrals), [[§36 Improper Integrals#^thm-36-1|451 Thm. §36.1]] (improper integrals of nonnegative functions)
 
 > [!theorem] Theorem §138.2: Schwarz Integral Formula
 > Let $f = u + iv$ satisfy the hypotheses of Theorem §138.1, and let $z = x + iy$ with $y > 0$. For every complex constant $c$,
@@ -109,7 +109,7 @@ This is the half-plane analog of [[§134★ Poisson Integral Formula|§134★]].
 *Uses:* [[§138★ Schwarz Integral Formula#^thm-138-1|§138.1]]
 
 > [!remark]- Connections
-> - The same half-plane formula (7) is reached in Fourier Series and PDEs by separation of variables: the product solutions $e^{-\lambda y}\cos\lambda x$, $e^{-\lambda y}\sin\lambda x$ are superposed in a Fourier integral, and the $\lambda$-integral is summed under the integral sign; see [[§38 Potential in Unbounded Regions#^rem-38-2|341 Remark: The Half-Plane and Its Poisson Formula]]. Here it comes from the Cauchy integral formula, with $\overline z$ playing the role of the inverse point of [[§134★ Poisson Integral Formula#^def-134-1|Definition §134.1]].
+> - The same half-plane formula (7) is reached in Fourier Series and PDEs by separation of variables: the product solutions $e^{-\lambda y}\cos\lambda x$, $e^{-\lambda y}\sin\lambda x$ are superposed in a Fourier integral, and the $\lambda$-integral is summed under the integral sign; see [[§47 Potential in Unbounded Regions#^rem-47-2|341 Remark: The Half-Plane and Its Poisson Formula]]. Here it comes from the Cauchy integral formula, with $\overline z$ playing the role of the inverse point of [[§134★ Poisson Integral Formula#^def-134-1|Definition §134.1]].
 
 In [[§139★ Dirichlet Problem for a Half Plane|§139★]] the conditions for the validity of (7) and (8) are relaxed.
 

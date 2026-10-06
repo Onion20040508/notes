@@ -108,9 +108,9 @@ Everything from here on uses completeness, and the results are the ones for whic
 *Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|Def. §21.1]], [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|§21.3]], [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|Def. §2.3]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[§10 Normed Linear Spaces#^prop-10-4|§10.4]]
 
 > [!remark]- Connections
-> - The finite-dimensional case, minimizing distance to a subspace: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
+> - The finite-dimensional case, minimizing distance to a subspace: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 > - The minimize-then-perturb pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t11|Technique 11]].
-> - Computational version: [[§42 Orthogonal Projections#^thm-42-3|235 Thm. §42.3]] (the case of a subspace of ℝⁿ, where the closest point is the orthogonal projection, with worked distances).
+> - Computational version: [[§52 Orthogonal Projections#^thm-52-3|235 Thm. §52.3]] (the case of a subspace of ℝⁿ, where the closest point is the orthogonal projection, with worked distances).
 
 > [!remark] Remark: Where Each Hypothesis Enters
 > Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique; in an incomplete inner product space a minimizing sequence need not converge; for $K$ open the infimum need not be attained. The same midpoint argument gives uniqueness.
@@ -139,8 +139,8 @@ Everything from here on uses completeness, and the results are the ones for whic
 ^def-22-1
 
 > [!remark]- Connections
-> - The finite-dimensional home: [[§19 Inner Products and Norms#^ladr-6-10|LADR 6.10]] (orthogonal), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]] (orthogonal complement).
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]] (orthogonal vectors), [[§40 Inner Product, Length, and Orthogonality#^def-40-6|235 Def. §40.6]] (orthogonal complement of a subspace of ℝⁿ).
+> - The finite-dimensional home: [[§20 Inner Products and Norms#^ladr-6-10|LADR 6.10]] (orthogonal), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]] (orthogonal complement).
+> - Computational version: [[§49 Inner Product, Length, and Orthogonality#^def-49-5|235 Def. §49.5]] (orthogonal vectors), [[§50 Orthogonal Complements and Angles#^def-50-1|235 Def. §50.1]] (orthogonal complement of a subspace of ℝⁿ).
 
 Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ iff $y \perp x$ by skew-symmetry.
 
@@ -161,8 +161,8 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *Uses:* [[§22 Projection and Orthogonal Decomposition#^def-22-1|Def. §22.1]], [[§22 Projection and Orthogonal Decomposition#^lem-22-1|§22.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]]
 
 > [!remark]- Connections
-> - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|LADR 6.48]].
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|235 Thm. §40.5]] (in ℝⁿ the complement is a subspace, tested on a spanning set).
+> - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|LADR 6.48]].
+> - Computational version: [[§50 Orthogonal Complements and Angles#^thm-50-1|235 Thm. §50.1]] (in ℝⁿ the complement is a subspace, tested on a spanning set).
 
 > [!definition] Definition §22.2: Internal Direct Sum
 > Let $Y_1, Y_2$ be linear subspaces of a linear space $X$. We write $X = Y_1 \oplus Y_2$, and call $X$ the **internal direct sum** of $Y_1$ and $Y_2$, if for every $x \in X$ there are unique $y_1 \in Y_1$ and $y_2 \in Y_2$ with $x = y_1 + y_2$.
@@ -234,9 +234,9 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - Announced in Chapter 1 as the missing hypothesis of [[§1 Linear Spaces#^cor-1-13|§1.13]] (orthogonal complement as a model of the quotient).
-> - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
+> - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
 > - Used for the Riesz representation theorem: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-23-4|§23.4]].
-> - Computational version: [[§42 Orthogonal Projections#^thm-42-1|235 Thm. §42.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]].
+> - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
 > Corollary [[§1 Linear Spaces#^cor-1-13|§1.13]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§1 Linear Spaces#Quotient Spaces|§1]] suggested; the [[§1 Linear Spaces#^rem-1-10|remark following Corollary §1.13]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-6|§22.6]]).
@@ -266,7 +266,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - Re-proved for orthonormal sets: [[§24 Orthonormal Sets and Bases#^prop-24-9|§24.9]].
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|235 Thm. §40.5]](1) (orthogonality to a subspace of ℝⁿ is tested on a spanning set).
+> - Computational version: [[§50 Orthogonal Complements and Angles#^thm-50-1|235 Thm. §50.1]](1) (orthogonality to a subspace of ℝⁿ is tested on a spanning set).
 
 > [!theorem] Theorem §22.6: The Double Complement
 > For any subset $M$ of a Hilbert space $H$,
@@ -297,9 +297,9 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *Uses:* [[§10 Normed Linear Spaces#^def-10-8|Def. §10.8]], [[§10 Normed Linear Spaces#^def-10-7|Def. §10.7]], [[§22 Projection and Orthogonal Decomposition#^lem-22-5|§22.5]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], [[§20 Definition and Examples#^def-20-1|Def. §20.1]]
 
 > [!remark]- Connections
-> - The finite-dimensional home: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-54|LADR 6.54]].
+> - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-54|LADR 6.54]].
 > - The special case of an orthonormal set, re-proved: [[§24 Orthonormal Sets and Bases#^prop-24-9|§24.9]]; as an application of [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^cor-40-8|235 Cor. §40.8]] (the double complement in ℝⁿ) and [[§40 Inner Product, Length, and Orthogonality#^thm-40-6|235 Thm. §40.6]] (the complement of the rows of a matrix is its null space).
+> - Computational version: [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]] (the double complement in ℝⁿ) and [[§50 Orthogonal Complements and Angles#^thm-50-2|235 Thm. §50.2]] (the complement of the rows of a matrix is its null space).
 
 > [!remark] Remark
 > Without completeness only one inclusion survives: $\overline{\operatorname{span}}\, M \subset (M^\perp)^\perp$ holds in any inner product space, because $(M^\perp)^\perp$ is a closed subspace (Proposition [[§22 Projection and Orthogonal Decomposition#^prop-22-3|§22.3]]) containing $M$. The reverse inclusion is where Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]](2), and hence completeness, is used. The last statement of the theorem is the general form of Proposition [[§24 Orthonormal Sets and Bases#^prop-24-9|§24.9]]: an orthonormal set is complete exactly when its span is dense.
@@ -369,7 +369,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - The parity operator in the quantum mechanics chapter: [[§31 The Completeness Relation#^ex-31-1|Ex. §31.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
-> - Computational version: even and odd functions on a symmetric interval, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2|341 Def. §7.2]]; the split $f = f_e + f_o$ of Step 1, [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-2|341 Prop. §7.2]]; the vanishing integral of an odd function used in Step 2, [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|341 Thm. §7.3]]. There the two parts give the cosine and sine series.
+> - Computational version: even and odd functions on a symmetric interval, [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-1|341 Def. §11.1]]; the split $f = f_e + f_o$ of Step 1, [[§11 Even and Odd Functions; Half-Range Expansions#^prop-11-1|341 Prop. §11.1]]; the vanishing integral of an odd function used in Step 2, [[§11 Even and Odd Functions; Half-Range Expansions#^thm-11-2|341 Thm. §11.2]]. There the two parts give the cosine and sine series.
 
 ![[m556-18-3.svg]]
 *$e^x$ on $[-1,1]$ (black) with its even part $\cosh x$ (red) and odd part $\sinh x$ (blue); at every $x$ the red and blue values add up to the black one.*
@@ -442,7 +442,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 *Uses:* [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]], [[§20 Definition and Examples#^ex-20-3|Ex. §20.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 §34.3]], [[Fundamental Theorem of Calculus|451 §34.4]]
 
 > [!remark]- Connections
-> - The method: [[Functional Analysis Problem-Solving Techniques#^ex-t13|Technique 13]]; the finite-dimensional minimization it rests on: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
+> - The method: [[Functional Analysis Problem-Solving Techniques#^ex-t13|Technique 13]]; the finite-dimensional minimization it rests on: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 
 > [!remark] Remark: Where $g$ Comes From
 > The boundary conditions fix two inner products of $h = f''$ with fixed functions: $\int_a^b h = f'(b) - f'(a) = -1$, and, by Taylor's formula with integral remainder, $\int_a^b (b - x)\,h(x)\,dx = f(b) - f(a) - f'(a)L = -L$. Let $Y = \operatorname{span}\{1, x\}$, a closed (finite-dimensional) subspace of $L^2[a,b]$, and decompose $h = h_Y + h_\perp$ with $h_Y \in Y$, $h_\perp \perp Y$. The two constraints involve only $h_Y$, while $\|h\|^2 = \|h_Y\|^2 + \|h_\perp\|^2 \ge \|h_Y\|^2$ by [[§24 Orthonormal Sets and Bases#^lem-24-1|Pythagoras]]. So the minimum of $\|h\|$ under the constraints is attained by an element of $Y$ — a linear function — and that is why testing against a linear $g$ loses nothing. This is the [[§22 Projection and Orthogonal Decomposition#^thm-22-2|projection theorem]] at work: the constraint set is a closed affine subspace, and its point closest to $0$ lies in the orthogonal complement of the directions along it. It is also a first example of the calculus of variations recast in a Hilbert space.

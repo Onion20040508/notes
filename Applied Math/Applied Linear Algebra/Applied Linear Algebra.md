@@ -10,7 +10,7 @@ tags: [subject, applied-linear-algebra]
 ---
 # Applied Linear Algebra
 
-Matrix linear algebra — linear systems, matrix algebra, determinants, vector spaces, eigenvalues, orthogonality and least squares — following David C. Lay, Steven R. Lay and Judi J. McDonald, *Linear Algebra and Its Applications*, 5th edition (Pearson, 2016), section by section: §1–§52 are Lay's Sections 1.1–7.5 in order (each note's alias gives the Lay number, e.g. "Lay 2.8"), and §53 is his Appendix B (complex numbers; Appendix A's proof is in §2). The course, MATH 235 at UMass Amherst (Alexei Oblomkov), used the 6th edition; its handwritten lecture notes L1–L22 supply examples (*Source: 235 lecture …*). Chapter 7 (★) was not part of the course and is included as its continuation.
+Matrix linear algebra — linear systems, matrix algebra, determinants, vector spaces, eigenvalues, orthogonality and least squares — following David C. Lay, Steven R. Lay and Judi J. McDonald, *Linear Algebra and Its Applications*, 5th edition (Pearson, 2016), section by section: §1–§52 are Lay's Sections 1.1–7.5 in order (each note's alias gives the Lay number, e.g. "Lay 2.8"), and §64 is his Appendix B (complex numbers; Appendix A's proof is in §2). The course, MATH 235 at UMass Amherst (Alexei Oblomkov), used the 6th edition; its handwritten lecture notes L1–L22 supply examples (*Source: 235 lecture …*). Chapter 7 (★) was not part of the course and is included as its continuation.
 
 These are the computational notes: every definition and result Lay states, every proof he gives, his algorithms, and a lean selection of worked examples. The proof-based, operator-theoretic treatment of the same material is [[Linear Algebra]] (Axler, *Linear Algebra Done Right*); the main items here carry a folded *Connections* callout pointing to it.
 
@@ -110,12 +110,12 @@ The instructor's lectures in the course folder, and where they are in these note
 
 | Lectures | Topics | Notes |
 |---|---|---|
-| L1, L02, L2, L3, Feb-18, L5 | row reduction, geometry of linear systems, linear combinations, linear dependence, linear transformations | §1–§9 |
-| L6–L9 | matrix multiplication, powers, inverses | §11–§13 |
-| L10, L14–L17 | subspaces, Nul A, coordinates, rank, change of coordinates | §18–§19, §23–§29 |
-| L11–L13 | determinants, row reduction, Cramer's rule | §20–§22 |
-| L18–L21 | eigenvalues (Fibonacci), diagonalization, multiplicities, complex eigenvalues | §30, §32–§36 |
-| L22 | inner products | §40 |
+| L1, L02, L2, L3, Feb-18, L5 | row reduction, geometry of linear systems, linear combinations, linear dependence, linear transformations | §1–§10 |
+| L6–L9 | matrix multiplication, powers, inverses | §12–§16 |
+| L10, L14–L17 | subspaces, Nul A, coordinates, rank, change of coordinates | §21–§22, §29–§35 |
+| L11–L13 | determinants, row reduction, Cramer's rule | §24–§27 |
+| L18–L21 | eigenvalues (Fibonacci), diagonalization, multiplicities, complex eigenvalues | §36, §40–§44 |
+| L22 | inner products | §49 |
 
 Exams: three (20%, 20%, 25%); online homework and quizzes on MyMathLab (35%). The instructor's section checklist covers Chapters 2–4.
 

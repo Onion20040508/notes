@@ -10,19 +10,19 @@ tags: [measure-theory, math551]
 > [!theorem] Lemma §7.2
 > Any collection of mutually disjoint open intervals on $\mathbb{R}$ is countable.
 
-^lem-7-2
+^lem-7-1
 
 > [!proof]+ Proof
 > For each open interval, choose a rational number contained in it ([[§4 The Completeness Axiom#^thm-4-7|density of ℚ]]). Since the intervals are disjoint, different intervals contain different rationals. This gives an injection from the collection of intervals into $\mathbb{Q}$, which is [[§3 Countability of Rationals and Unions#^cor-3-2|countable]].
 
-^pf-7-2
+^pf-7-1
 
 *Uses:* [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§1 Countability and Set Theory#^def-1-3|Def. §1.3]]
 
 > [!theorem] Proposition §7.1: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
 > Any open set $O \subseteq \mathbb{R}$ is a countable union of mutually disjoint open intervals.
 
-^prop-7-1
+^prop-7-2
 
 > [!proof]+ Proof of Proposition
 > Let $O \subseteq \mathbb{R}$ be open. For each $x \in O$, define:
@@ -83,23 +83,23 @@ tags: [measure-theory, math551]
 >
 > Therefore $(a_x, b_x) = (a_y, b_y)$.
 >
-> **Conclusion:** Let $\mathcal{C} = \{(a_x, b_x) \mid x \in O\}$. The distinct intervals in $\mathcal{C}$ are mutually disjoint. By [[§7 Structure of Open Sets#^lem-7-2|the lemma]], this collection is countable. Write $\mathcal{C}_1 = \{(a_j, b_j) \mid j \in J\}$ for the collection of distinct intervals.
+> **Conclusion:** Let $\mathcal{C} = \{(a_x, b_x) \mid x \in O\}$. The distinct intervals in $\mathcal{C}$ are mutually disjoint. By [[§7 Structure of Open Sets#^lem-7-1|the lemma]], this collection is countable. Write $\mathcal{C}_1 = \{(a_j, b_j) \mid j \in J\}$ for the collection of distinct intervals.
 >
 > Then $O = \bigcup_{x \in O} \{x\} \subseteq \bigcup_{x \in O} (a_x, b_x) = \bigcup_{j \in J} (a_j, b_j) \subseteq O$.
 >
 > Thus $O = \bigcup_{j \in J} (a_j, b_j)$, a countable union of disjoint open intervals.
 
-^pf-7-1
+^pf-7-2
 
-*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§7 Structure of Open Sets#^lem-7-2|§7.2]], [[Completeness Axiom|451 Def. §4.4]], [[Characterization of the Supremum|451 §4.3]]
+*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§7 Structure of Open Sets#^lem-7-1|§7.1]], [[Completeness Axiom|451 Def. §4.4]], [[Characterization of the Supremum|451 §4.3]]
 
 ![[m551-7-1.svg]]
-*An open set $O \subseteq \mathbb{R}$ (blue) and its components. For $x \in O$, stretching left and right as far as $O$ allows gives $(a_x, b_x)$; its endpoints are not in $O$ (red, hollow), since otherwise the interval could be stretched further (Step 3). Distinct components are disjoint and each contains a rational $q_j$ — the injection into $\mathbb{Q}$ of [[§7 Structure of Open Sets#^lem-7-2|Lemma §7.2]] that makes the family countable.*
+*An open set $O \subseteq \mathbb{R}$ (blue) and its components. For $x \in O$, stretching left and right as far as $O$ allows gives $(a_x, b_x)$; its endpoints are not in $O$ (red, hollow), since otherwise the interval could be stretched further (Step 3). Distinct components are disjoint and each contains a rational $q_j$ — the injection into $\mathbb{Q}$ of [[§7 Structure of Open Sets#^lem-7-1|Lemma §7.1]] that makes the family countable.*
 
 > [!remark]- Connections
 > - MATH 451 states this as a fact without proof: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|Structure of open and closed subsets of the line]].
-> - Topology: the intervals $(a_x, b_x)$ built above are the maximal connected subsets of $O$ ([[§14 Connected Subspaces of ℝ#^cor-14-2|intervals in ℝ are connected]]).
-> - Gives the case $n = 1$ of [[§11 Borel Sets and Measure Spaces#^thm-11-6|Open Sets are Measurable]]; used again in [[§15 The General Lebesgue Integral#^ex-15-2|Example §15.2]].
+> - Topology: the intervals $(a_x, b_x)$ built above are the maximal connected subsets of $O$ ([[§16 Connected Subspaces of ℝ#^cor-16-2|intervals in ℝ are connected]]).
+> - Gives the case $n = 1$ of [[§12 Borel Sets and Measure Spaces#^thm-12-6|Open Sets are Measurable]]; used again in [[§22 The General Lebesgue Integral#^ex-22-2|Example §22.2]].
 
 ## Open Sets in $\mathbb{R}^n$
 
@@ -113,8 +113,8 @@ tags: [measure-theory, math551]
 ^def-7-1
 
 > [!remark]- Connections
-> - Rectangles and their volumes are the building blocks of outer measure: [[§9 Lebesgue Outer Measure#^def-9-1|Definition §9.1]].
-> - Topology: open rectangles with rational endpoints form a countable basis of $\mathbb{R}^n$ ([[§18 Countability Axioms#^ex-18-4|590 Ex. §18.4]]).
+> - Rectangles and their volumes are the building blocks of outer measure: [[§10 Lebesgue Outer Measure#^def-10-1|Definition §10.1]].
+> - Topology: open rectangles with rational endpoints form a countable basis of $\mathbb{R}^n$ ([[§22 Countability Axioms#^ex-22-4|590 Ex. §22.4]]).
 
 > [!definition] Definition §7.2: Half-Open Rectangles
 > A **half-open half-closed rectangle** is a set of the form
@@ -123,7 +123,7 @@ tags: [measure-theory, math551]
 > \prod_{j=1}^{n} (a_j, b_j] = (a_1, b_1] \times (a_2, b_2] \times \cdots \times (a_n, b_n].
 > $$
 
-^def-7-new1
+^def-7-2
 
 ![[m551-7-2.svg]]
 *Left: a half-open rectangle in $\mathbb{R}^2$ contains its top and right edges (solid) but not its bottom and left edges (dashed); of the four corners only $(b_1, b_2)$ belongs to it. Right: this is what lets a dyadic square $R^{(k)}_{\mathbf{j}}$ split into $2^n = 4$ children $R^{(k+1)}_{2\mathbf{j}+\boldsymbol{\epsilon}}$ with no overlaps and no gaps (property (b) in the proof of [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3]]) — each shared edge belongs to exactly one child.*
@@ -196,15 +196,15 @@ tags: [measure-theory, math551]
 
 ^pf-7-3
 
-*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§7 Structure of Open Sets#^def-7-new1|Def. §7.2]], [[Countable Union of Countable Sets is Countable|§3.1]]
+*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§7 Structure of Open Sets#^def-7-2|Def. §7.2]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
 ![[m551-7-3.svg]]
 *The proof of [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3]] run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*
 
 > [!remark]- Connections
-> - MATH 452: the same dyadic grid gives the inner Jordan approximations, $\mathcal{S}_i^-$ = dyadic squares inside $D$ ([[§15 Multivariable Integration#^def-15-3|452 Def. §15.3]]); for an open set they exhaust it.
+> - MATH 452: the same dyadic grid gives the inner Jordan approximations, $\mathcal{S}_i^-$ = dyadic squares inside $D$ ([[§20 Multivariable Integration#^def-20-4|452 Def. §20.4]]); for an open set they exhaust it.
 > - Topology: open sets are unions of basis elements ([[§2 Basis for a Topology#^lem-2-1|590 Lemma §2.1]]); here the union is countable and disjoint.
-> - Gives the case $n > 1$ of [[§11 Borel Sets and Measure Spaces#^thm-11-6|Open Sets are Measurable]].
+> - Gives the case $n > 1$ of [[§12 Borel Sets and Measure Spaces#^thm-12-6|Open Sets are Measurable]].
 
 > [!remark] Remark: Why Dyadic Subdivision?
 > Using powers of $2$ (dyadic subdivision) is essential for the refinement property. If we instead subdivided using intervals of length $\frac{1}{k}$, the partition lines would shift at each scale: the partition at $k=2$ has lines at $0, 0.5, 1, \ldots$ while $k=3$ has lines at $0, 0.33, 0.67, 1, \ldots$. These do not align, breaking the nesting structure, so selecting a disjoint subcollection is no longer automatic. With dyadic subdivision, partition lines at scale $k$ are always a subset of partition lines at scale $k+1$, ensuring the refinement property holds.

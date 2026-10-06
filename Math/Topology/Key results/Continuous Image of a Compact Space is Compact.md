@@ -2,23 +2,23 @@
 subject: math
 type: theorem
 source: "[[Topology]]"
-aliases: ["Topology 15.3"]
+aliases: ["Topology 18.3"]
 tags: [topology, hub]
 ---
-![[§15 Compact Spaces#^thm-15-3]]
+![[§18 Compact Spaces#^thm-18-3]]
 
 ## Treated in
-- [[§15 Compact Spaces#^thm-15-3|Theorem §15.3: Continuous Image of Compact is Compact]], in [[§15 Compact Spaces]]
+- [[§18 Compact Spaces#^thm-18-3|Theorem §18.3: Continuous Image of Compact is Compact]], in [[§18 Compact Spaces]]
 
 ## Its proof uses
-- [[§9 Continuous Functions#^def-9-1|Definition §9.1: Continuous Function]]
-- [[§15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]
+- [[§10 Continuous Functions#^def-10-1|Definition §10.1: Continuous Function]]
+- [[§18 Compact Spaces#^lem-18-1|Lemma §18.1: Compactness in Subspaces]]
 
 ## Used in (Topology)
-- [[§15 Compact Spaces#^thm-15-7|Theorem §15.7: Bijection from Compact to Hausdorff]]
-- [[§15 Compact Spaces#^thm-15-8|Theorem §15.8: Finite Product of Compact Spaces]]
-- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
-- [[§25a Retractions and Fixed Points#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
+- [[§18 Compact Spaces#^thm-18-7|Theorem §18.7: Bijection from Compact to Hausdorff]]
+- [[§18 Compact Spaces#^thm-18-9|Theorem §18.9: Finite Product of Compact Spaces]]
+- [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-7|Lemma §32.7: Equivalent Conditions for Nullhomotopy]]
+- [[§34 Retractions and Fixed Points#^lem-34-8|Lemma §34.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
@@ -33,15 +33,15 @@ tags: [topology, hub]
 - [[§36 Embeddings#^prop-36-9|Proposition §36.9: Closed Embeddings Are the Proper Ones]]
 
 ## Used in (Multivariable Analysis)
-- [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14: Change of Variables Formula — Rectangular Case]]
-- [[§15 Multivariable Integration#^thm-15-17|Theorem §15.17: Change of Variables — General Jordan Measurable Domains]]
-- [[§15 Multivariable Integration#^thm-15-9|Theorem §15.9: Fubini for Type I Regions]]
+- [[§24 The Change of Variables Formula#^thm-24-2|Theorem §24.2: Change of Variables Formula — Rectangular Case]]
+- [[§25 Change of Variables on General Domains#^thm-25-3|Theorem §25.3: Change of Variables — General Jordan Measurable Domains]]
+- [[§23 Fubini's Theorem#^thm-23-2|Theorem §23.2: Fubini for Type I Regions]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^thm-18-20|Theorem §18.20: Continuous Maps Preserve Bounded Closed Sets]]
+- [[§30 Differentiating the Integral#^thm-30-1|Theorem §30.1: Continuous Maps Preserve Bounded Closed Sets]]
 
 ## Connections
 - **Generalizes.** With Y = ℝ it is the source of the MATH 451 [[Extreme Value Theorem]]: f([a, b]) is compact, hence closed and bounded by [[Heine–Borel Theorem]].
-- **Invariance.** Compactness is therefore a topological property ([[§15 Compact Spaces#^rem-15-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].
-- **Typical use.** It is step 2 of [[Bijection from Compact to Hausdorff is a Homeomorphism]], so maps from compact to Hausdorff spaces are closed. That is how the cone map Sⁿ × I → Bⁿ⁺¹ is shown to be a quotient map in [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Equivalent Conditions for Nullhomotopy]] (§24.12) and [[§25a Retractions and Fixed Points#^lem-26-8|Generalized Nullhomotopy Lemma]] (§26.8).
+- **Invariance.** Compactness is therefore a topological property ([[§18 Compact Spaces#^rem-18-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].
+- **Typical use.** It is step 2 of [[Bijection from Compact to Hausdorff is a Homeomorphism]], so maps from compact to Hausdorff spaces are closed. That is how the cone map Sⁿ × I → Bⁿ⁺¹ is shown to be a quotient map in [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-7|Equivalent Conditions for Nullhomotopy]] (§24.12) and [[§34 Retractions and Fixed Points#^lem-34-8|Generalized Nullhomotopy Lemma]] (§26.8).
 - **Also in [[Complex Variables]]:** [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (continuous complex functions on closed bounded regions are bounded and attain a maximum modulus; complex-variables version).

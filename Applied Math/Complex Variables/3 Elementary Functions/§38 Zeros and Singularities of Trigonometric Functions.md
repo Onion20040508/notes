@@ -69,10 +69,10 @@ Since $\sin z$ becomes the usual $\sin x$ when $z$ is real, the real numbers $z 
 
 ^pf-38-1
 
-*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|§37.6]], [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37.4]], [[§119 Trigonometry#^prop-119-13|Calc Prop. §119.13]] (real zeros of $\sin x$)
+*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^prop-37-6|§37.6]], [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|§37.4]], [[§142 Trigonometry#^prop-142-13|Calc Prop. §142.13]] (real zeros of $\sin x$)
 
 > [!remark]- Connections
-> - The real zeros: [[§119 Trigonometry#^prop-119-13|Calc Prop. §119.13]] (properties of the graphs of $\sin$ and $\cos$). In the plane, $\sin z$ omits no value at all ([[§38 Zeros and Singularities of Trigonometric Functions#^rem-38-1|Remark: Method — Solving sin z = w₀ and cos z = w₀]]), in contrast with $e^z$, which omits $0$ ([[§30 The Exponential Function#^prop-30-1|Proposition §30.1]]).
+> - The real zeros: [[§142 Trigonometry#^prop-142-13|Calc Prop. §142.13]] (properties of the graphs of $\sin$ and $\cos$). In the plane, $\sin z$ omits no value at all ([[§38 Zeros and Singularities of Trigonometric Functions#^rem-38-1|Remark: Method — Solving sin z = w₀ and cos z = w₀]]), in contrast with $e^z$, which omits $0$ ([[§30 The Exponential Function#^prop-30-1|Proposition §30.1]]).
 
 ## The Other Trigonometric Functions
 

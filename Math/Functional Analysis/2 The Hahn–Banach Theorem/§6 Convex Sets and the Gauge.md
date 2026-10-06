@@ -65,7 +65,7 @@ The converse direction — starting from a convex set and producing a $p$ — is
 ^def-6-1
 
 > [!remark]- Connections
-> - The topological interior: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]]; in $\mathbb{R}^n$, [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
+> - The topological interior: [[§8 Interior and Closure#^def-8-1|590 Def. §8.1]]; in $\mathbb{R}^n$, [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
 > - Metric interior points are interior points in this sense, not conversely: [[§10 Normed Linear Spaces#^prop-10-7|§10.7]], [[§10 Normed Linear Spaces#^ex-10-2|Ex. §10.2]].
 
 > [!remark] Remark: Comparison with the Classical Notion

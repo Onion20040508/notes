@@ -7,7 +7,7 @@ bdp: "1.3"
 aliases: ["BDP 1.3"]
 tags: [ordinary-differential-equations, math331]
 ---
-← [[§2 Solutions of Some Differential Equations]] · ↑ [[· 1 Introduction to Differential Equations]] · [[§4 Linear Differential Equations; Method of Integrating Factors]] →
+← [[§2 Solutions of Some Differential Equations]] · ↑ [[· 1 Introduction to Differential Equations]] · [[§4 The Falling Object and the Field Mice and Owls]] →
 
 *Boyce–DiPrima, Section 1.3 · MATH 331 Chapter 1 review sheet (derivation of the pendulum equation).*
 
@@ -24,7 +24,7 @@ Which method applies to a differential equation depends on what kind of equation
 > L\,\frac{d^2Q(t)}{dt^2} + R\,\frac{dQ(t)}{dt} + \frac{1}{C}\,Q(t) = E(t) \qquad (1)
 > $$
 >
-> (derived in [[§19 Mechanical and Electrical Vibrations#^prop-19-5|Proposition §19.5]]), while the **heat conduction equation** and the **wave equation**
+> (derived in [[§23 Mechanical and Electrical Vibrations#^prop-23-5|Proposition §23.5]]), while the **heat conduction equation** and the **wave equation**
 >
 > $$
 > \alpha^2\,\frac{\partial^2 u(x, t)}{\partial x^2} = \frac{\partial u(x, t)}{\partial t} , \qquad (2)
@@ -45,7 +45,7 @@ Which method applies to a differential equation depends on what kind of equation
 > \frac{dx}{dt} = ax - \alpha xy , \qquad \frac{dy}{dt} = -cy + \gamma xy \qquad (4)
 > $$
 >
-> govern the populations $x(t)$ of a prey species and $y(t)$ of a predator species; the positive constants $a, \alpha, c, \gamma$ come from observation of the particular species. Linear systems are the subject of Chapter 7 ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]).
+> govern the populations $x(t)$ of a prey species and $y(t)$ of a predator species; the positive constants $a, \alpha, c, \gamma$ come from observation of the particular species. Linear systems are the subject of Chapter 7 ([[§33 Introduction to Systems of First-Order Linear Equations|§33]]).
 >
 > *BDP: 1.3 (text)*
 
@@ -90,7 +90,7 @@ Which method applies to a differential equation depends on what kind of equation
 ^def-3-4
 
 > [!remark]- Connections
-> - The left side of (11) defines a map $y \mapsto a_0 y^{(n)} + \cdots + a_n y$ that is linear in the sense of linear algebra: it respects sums and scalar multiples ([[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]]; [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]). This is why the solutions of a linear homogeneous equation form a vector space (the Principle of Superposition, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]]).
+> - The left side of (11) defines a map $y \mapsto a_0 y^{(n)} + \cdots + a_n y$ that is linear in the sense of linear algebra: it respects sums and scalar multiples ([[§9 Introduction to Linear Transformations#^def-9-4|235 Def. §9.4]]; [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]). This is why the solutions of a linear homogeneous equation form a vector space (the Principle of Superposition, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-2|Theorem §18.2]]).
 
 > [!example] Example §3.1: Classifying Equations
 > Classify the equations met so far.
@@ -181,7 +181,7 @@ Which method applies to a differential equation depends on what kind of equation
 *The pendulum released from rest at $\theta = \pi/3$: the nonlinear equation (12) (blue, numerical solution) and its linearization (13) (green, $\theta = \frac{\pi}{3}\cos\sqrt{g/L}\,t$). The linearization predicts the period $2\pi\sqrt{L/g}$; the true period at this amplitude is about $7\%$ longer ($6.74$ instead of $6.28$ in units of $\sqrt{L/g}$, gray marks), so the two drift out of phase.*
 
 > [!remark] Remark: Why Linear Equations Come First
-> The theory and methods for linear equations are highly developed, while for nonlinear equations the theory is more complicated and the methods less satisfactory. Fortunately many important problems lead to linear equations or can be approximated by them, as (13) approximates (12). Still, many phenomena cannot be represented adequately by linear equations. Most of this course is about linear equations; nonlinear ones appear in parts of Chapter 2 ([[§5 Separable Differential Equations|§5]], [[§8 Autonomous Differential Equations and Population Dynamics|§8]], [[§9 Exact Differential Equations and Integrating Factors|§9]]).
+> The theory and methods for linear equations are highly developed, while for nonlinear equations the theory is more complicated and the methods less satisfactory. Fortunately many important problems lead to linear equations or can be approximated by them, as (13) approximates (12). Still, many phenomena cannot be represented adequately by linear equations. Most of this course is about linear equations; nonlinear ones appear in parts of Chapter 2 ([[§6 Separable Differential Equations|§6]], [[§9 Autonomous Differential Equations and Population Dynamics|§9]], [[§11 Exact Differential Equations and Integrating Factors|§11]]).
 
 ^rem-3-1
 
@@ -201,7 +201,7 @@ Which method applies to a differential equation depends on what kind of equation
 ^def-3-6
 
 > [!remark]- Connections
-> - See also: [[§57 Modeling with Differential Equations#^def-57-6|Calc Def. §57.6]] (Stewart's definition of a solution) and [[§57 Modeling with Differential Equations#^rem-57-3|Calc Remark: Method — Checking a Proposed Solution]], the substitution check of [[§3 Classification of Differential Equations#^ex-3-3|Example §3.3]].
+> - See also: [[§66 Modeling with Differential Equations#^def-66-6|Calc Def. §66.6]] (Stewart's definition of a solution) and [[§66 Modeling with Differential Equations#^rem-66-3|Calc Remark: Method — Checking a Proposed Solution]], the substitution check of [[§3 Classification of Differential Equations#^ex-3-3|Example §3.3]].
 
 > [!example] Example §3.3: Verifying a Solution
 > Show that $y_1(t) = \cos t$ and $y_2(t) = \sin t$ are solutions of $y'' + y = 0$ for all $t$.
@@ -219,11 +219,11 @@ Which method applies to a differential equation depends on what kind of equation
 > 2. **Uniqueness.** If solutions exist, how many are there, and what extra conditions single one out? A solution with an arbitrary constant, such as $p = 900 + ce^{t/2}$, is pinned down by an initial condition, but that alone does not rule out *other* solutions with the same initial value. If the problem is known to have a unique solution, then finding one solves it completely.
 > 3. **Determination.** Can a solution actually be found, and how? Finding one also settles existence. But most solutions cannot be expressed in elementary functions, so both exact methods for simple equations and approximation methods for harder ones are needed; without existence theory, a computer might "approximate" a solution that does not exist.
 >
-> The answers for first-order equations are the existence and uniqueness theorems: for linear equations [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] (Theorem 2.4.1), and for nonlinear ones Theorem 2.4.2, stated in [[§7 Differences Between Linear and Nonlinear Differential Equations|§7]] and proved as [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]].
+> The answers for first-order equations are the existence and uniqueness theorems: for linear equations [[§8 Differences Between Linear and Nonlinear Differential Equations#^thm-8-1|Theorem §8.1]] (Theorem 2.4.1), and for nonlinear ones Theorem 2.4.2, stated in [[§8 Differences Between Linear and Nonlinear Differential Equations|§8]] and proved as [[§14 The Existence and Uniqueness Theorem#^thm-14-8|Theorem §14.8]].
 
 ^rem-3-2
 
 > [!remark]- Remark: Technology
-> Numerical algorithms ([[§10 Numerical Approximations꞉ Euler's Method|§10]]) approximate solutions of a wide range of equations to high accuracy within seconds, and graphical displays are often far more illuminating than tables of numbers or complicated formulas. Packages such as Maple, Mathematica and MATLAB perform numerical, graphical and symbolic computations, often solving an equation with a single command. BDP's advice: understand how the methods work by working examples in detail, then use computational tools for routine work, and combine numerical, graphical and analytical methods to understand both the solution and the process it models.
+> Numerical algorithms ([[§13 Numerical Approximations꞉ Euler's Method|§13]]) approximate solutions of a wide range of equations to high accuracy within seconds, and graphical displays are often far more illuminating than tables of numbers or complicated formulas. Packages such as Maple, Mathematica and MATLAB perform numerical, graphical and symbolic computations, often solving an equation with a single command. BDP's advice: understand how the methods work by working examples in detail, then use computational tools for routine work, and combine numerical, graphical and analytical methods to understand both the solution and the process it models.
 
 ^rem-3-3

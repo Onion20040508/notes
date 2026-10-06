@@ -55,9 +55,9 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Equivalent conditions: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]. Existence over $\C$: [[Existence of eigenvalues]]. Zeros of the minimal polynomial: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
-> - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvalues and eigenvectors of an $n\times n$ matrix, with worked examples).
-> - Computational version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-new1|331 Def. §29.4]] (the eigenvalues of a matrix as the roots of $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$, with worked examples).
-> - Computational version: eigenvalues and eigenfunctions of differential operators with boundary conditions, such as $\phi''+\lambda^2\phi=0$ with fixed or insulated ends, [[§3★ Boundary Value Problems#^def-3-3|341 Def. §3.3]], [[§20 Example꞉ Insulated Bar#^def-20-new1|341 Def. §20.1]], computed in worked examples.
+> - Computational version: [[§40 Eigenvectors and Eigenvalues#^def-40-1|235 Def. §40.1]] (eigenvalues and eigenvectors of an $n\times n$ matrix, with worked examples).
+> - Computational version: [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-5|331 Def. §35.5]] (the eigenvalues of a matrix as the roots of $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$, with worked examples).
+> - Computational version: eigenvalues and eigenfunctions of differential operators with boundary conditions, such as $\phi''+\lambda^2\phi=0$ with fixed or insulated ends, [[§5★ Boundary Value Problems#^def-5-4|341 Def. §5.4]], [[§26 Example꞉ Insulated Bar#^def-26-2|341 Def. §26.2]], computed in worked examples.
 
 > [!example] Example 5.6: Eigenvalue (p. 134)
 > $T(x,y,z)=(7x+3z,\ 3x+6y+9z,\ -6y)$ on $\F^3$. Then
@@ -87,7 +87,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-32|T not invertible ⟺ constant term of minimal polynomial of T is 0]]. Determinant version: $\det(T-\lambda I)=0$ ([[Invertible ⟺ nonzero determinant]]).
-> - Computational version: [[§33 The Characteristic Equation#^thm-33-4|235 Thm. §33.4]] ($\lambda$ is an eigenvalue of $A$ iff $\det(A-\lambda I)=0$, i.e. iff $A-\lambda I$ is not invertible) and [[§32 Eigenvectors and Eigenvalues#^thm-32-2|235 Thm. §32.2]] (the case $\lambda=0$).
+> - Computational version: [[§41 The Characteristic Equation#^thm-41-4|235 Thm. §41.4]] ($\lambda$ is an eigenvalue of $A$ iff $\det(A-\lambda I)=0$, i.e. iff $A-\lambda I$ is not invertible) and [[§40 Eigenvectors and Eigenvalues#^thm-40-2|235 Thm. §40.2]] (the case $\lambda=0$).
 
 > [!definition] Definition 5.8: Eigenvector
 > If $\lambda$ is an eigenvalue of $T\in\Lin(V)$, a vector $v$ is an *eigenvector* for $\lambda$ if $v\ne0$ and $Tv=\lambda v$; equivalently $v\in\nullsp(T-\lambda I)\setminus\{0\}$.
@@ -96,7 +96,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Eigenvectors for distinct eigenvalues are independent: [[Linearly independent eigenvectors]]. The eigenspace $E(\lambda,T)=\nullsp(T-\lambda I)$: [[§17 Diagonalizable Operators#^ladr-5-52|Eigenspace, E(λ, T)]].
-> - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvectors of a matrix, found by row reducing $A-\lambda I$).
+> - Computational version: [[§40 Eigenvectors and Eigenvalues#^def-40-1|235 Def. §40.1]] (eigenvectors of a matrix, found by row reducing $A-\lambda I$).
 
 %% ex:5.8-plane %%
 > [!example] Example: Eigenvectors in the plane
@@ -136,8 +136,8 @@ tags: [linear-algebra]
 > with all coefficients nonzero. This is a shorter dependent list, a contradiction.
 
 > [!remark]- Connections
-> - Computational version: [[§32 Eigenvectors and Eigenvalues#^thm-32-3|235 Thm. §32.3]] (the same statement for an $n\times n$ matrix).
-> - Matrix version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|331 Thm. §29.4]] (with worked examples).
+> - Computational version: [[§40 Eigenvectors and Eigenvalues#^thm-40-3|235 Thm. §40.3]] (the same statement for an $n\times n$ matrix).
+> - Matrix version: [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-4|331 Thm. §35.4]] (with worked examples).
 
 > [!theorem] Theorem 5.12: Operator cannot have more eigenvalues than dimension of vector space
 > If $V$ is finite-dimensional, each operator on $V$ has at most $\dim V$ distinct eigenvalues.
@@ -151,7 +151,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Alternative proof: zeros of the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]], [[Existence, uniqueness, and degree of minimal polynomial]], [[§13 Polynomials#^ladr-4-8|Degree m implies at most m zeros]]). With exactly $\dim V$ eigenvalues, $T$ is diagonalizable ([[§17 Diagonalizable Operators#^ladr-5-58|Enough eigenvalues implies diagonalizability]]).
-> - Computational version: [[§32 Eigenvectors and Eigenvalues#^cor-32-4|235 Cor. §32.4]] (an $n\times n$ matrix has at most $n$ distinct eigenvalues).
+> - Computational version: [[§40 Eigenvectors and Eigenvalues#^cor-40-4|235 Cor. §40.4]] (an $n\times n$ matrix has at most $n$ distinct eigenvalues).
 
 > [!remark] Notation 5.13: Tᵐ (p. 137)
 > For $T\in\Lin(V)$ and a positive integer $m$, $T^m=T\cdots T$ ($m$ factors); $T^0=I$; and if $T$ is invertible, $T^{-m}=(T^{-1})^m$.

@@ -2,22 +2,22 @@
 subject: math
 type: theorem
 source: "[[Fourier Series and PDEs]]"
-aliases: ["MAT 341 31.2", "d'Alembert's formula"]
+aliases: ["MAT 341 39.2", "d'Alembert's formula"]
 tags: [fourier-series-and-pdes, hub]
 ---
-![[§31 d'Alembert's Solution#^thm-31-2]]
+![[§39 d'Alembert's Solution#^thm-39-2]]
 
 ## Treated in
-- [[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2: d'Alembert's General Solution]], in [[§31 d'Alembert's Solution]]
+- [[§39 d'Alembert's Solution#^thm-39-2|Theorem §39.2: d'Alembert's General Solution]], in [[§39 d'Alembert's Solution]]
 
 ## Its proof uses
-- [[§31 d'Alembert's Solution#^thm-31-1|Theorem §31.1: The Wave Equation in Characteristic Coordinates]]
+- [[§39 d'Alembert's Solution#^thm-39-1|Theorem §39.1: The Wave Equation in Characteristic Coordinates]]
 
 ## Used in (Fourier Series and PDEs)
-- [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3: d'Alembert's Solution of the Vibrating String Problem]]
-- [[§34★ Wave Equation in Unbounded Regions#^thm-34-2|Theorem §34.2: d'Alembert's Solution of the Semi-Infinite String]]
-- [[§34★ Wave Equation in Unbounded Regions#^thm-34-3|Theorem §34.3: The String Driven at Its End]]
-- [[§34★ Wave Equation in Unbounded Regions#^thm-34-4|Theorem §34.4: d'Alembert's Formula for the Infinite String]]
+- [[§39 d'Alembert's Solution#^thm-39-3|Theorem §39.3: d'Alembert's Solution of the Vibrating String Problem]]
+- [[§42★ Wave Equation in Unbounded Regions#^thm-42-2|Theorem §42.2: d'Alembert's Solution of the Semi-Infinite String]]
+- [[§42★ Wave Equation in Unbounded Regions#^thm-42-3|Theorem §42.3: The String Driven at Its End]]
+- [[§42★ Wave Equation in Unbounded Regions#^thm-42-4|Theorem §42.4: d'Alembert's Formula for the Infinite String]]
 
 ## Connections
-- See [[§31 d'Alembert's Solution]] for context and examples.
+- See [[§39 d'Alembert's Solution]] for context and examples.

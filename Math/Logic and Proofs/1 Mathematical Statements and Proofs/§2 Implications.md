@@ -73,7 +73,7 @@ A proof is a chain of statements, each true because earlier ones are; the link b
 ^prop-2-1
 
 > [!proof]+ Proof
-> (1) Both sides are true in exactly one row of the truth table, the row $P =$ T, $Q =$ F ([[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]).
+> (1) Both sides are true in exactly one row of the truth table, the row $P =$ T, $Q =$ F ([[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]).
 >
 > (2) Negate both sides of (1): by double negation and De Morgan's law, $P \Rightarrow Q \equiv \neg\neg(P \Rightarrow Q) \equiv \neg(P \wedge \neg Q) \equiv \neg P \vee \neg\neg Q \equiv \neg P \vee Q$.
 >
@@ -81,25 +81,25 @@ A proof is a chain of statements, each true because earlier ones are; the link b
 
 ^pf-2-1
 
-*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]]
+*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]]
 
 Part (3) is familiar from speech: "Read the lecture notes or you won't understand the lecture" means "If you don't read the lecture notes, you won't understand the lecture."
 
 ### Universal implications
 
-> [!definition] Definition §2.2: Universal Statement
+> [!definition] Definition §2.3: Universal Statement
 > An implication between predicates, such as $n > 3 \Rightarrow n > 0$ "for integers $n$", is normally asserted as a **universal statement**: it claims that the implication is true for *every* value of the free variable in the stated range (which should be made explicit).
 >
 > *Eccles: Section 2.1*
 
 ^def-2-2
 
-> [!definition] Definition §2.2: Counterexample
+> [!definition] Definition §2.4: Counterexample
 > A universal statement is false precisely when there is at least one value for which the hypothesis is true and the conclusion false; such a value is a **counterexample**. The statement that a counterexample exists, written $P(x) \not\Rightarrow Q(x)$, is an **existence statement**. Quantifiers make this precise in [[§7 Quantifiers|§7]].
 >
 > *Eccles: Section 2.1*
 
-^def-2-new1
+^def-2-3
 
 > [!example] Example §2.2: The Range of the Variable Matters
 > **(a)** For real numbers $x$, consider $x > 0 \Rightarrow x \geq 1$:
@@ -120,11 +120,11 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-2
 
-*Uses:* [[§2 Implications#^def-2-2|Def. §2.2]], [[§2 Implications#^def-2-new1|Def. §2.2]], [[§2 Implications#^prop-2-1|§2.1]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
+*Uses:* [[§2 Implications#^def-2-2|Def. §2.2]], [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^prop-2-1|§2.1]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
 
 ## Reading Implications
 
-> [!definition] Definition §2.3: Ways of Reading an Implication
+> [!definition] Definition §2.5: Ways of Reading an Implication
 > Each of the following means $P \Rightarrow Q$:
 > 1. If $P$ then $Q$.
 > 2. $P$ implies $Q$.
@@ -138,9 +138,9 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 >
 > *Eccles: Section 2.1*
 
-^def-2-3
+^def-2-4
 
-> [!definition] Definition §2.4: Converse, Contrapositive, Inverse
+> [!definition] Definition §2.6: Converse, Contrapositive, Inverse
 > For the implication $P \Rightarrow Q$:
 > - its **converse** is $Q \Rightarrow P$;
 > - its **contrapositive** is $\neg Q \Rightarrow \neg P$;
@@ -149,7 +149,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > *Eccles: Section 2.1 (converse), Section 4.3 (contrapositive)*
 > *Source: MAT 200 supplement §5 (inverse)*
 
-^def-2-4
+^def-2-5
 
 > [!theorem] Proposition §2.2: Contrapositive, Converse and Inverse
 > For statements $P$ and $Q$:
@@ -176,7 +176,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^pf-2-2
 
-*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§2 Implications#^def-2-4|Def. §2.4]]
+*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§2 Implications#^def-2-5|Def. §2.5]]
 
 > [!example] Example §2.3: Converses and Contrapositives
 > **(a)** For integers $n$, $n > 3 \Rightarrow n > 0$ is true but its converse $n > 0 \Rightarrow n > 3$ is false ($n = 1$); $n = 1 \Rightarrow (n-1)(n-2) = 0$ is true but its converse is false ($n = 2$). So "$Q$ if $P$" and "$Q$ only if $P$" must not be confused.
@@ -187,14 +187,14 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-3
 
-*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^prop-2-2|§2.2]]
+*Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]]
 
-> [!definition] Definition §2.5: Biconditional
+> [!definition] Definition §2.7: Biconditional
 > $P \Leftrightarrow Q$ means $(P \Rightarrow Q) \wedge (Q \Rightarrow P)$. It is read: $P$ is **equivalent** to $Q$; $P$ is necessary and sufficient for $Q$; $P$ **if and only if** $Q$ ($P$ iff $Q$); $P$ precisely when $Q$.
 >
 > *Eccles: Section 2.1*
 
-^def-2-5
+^def-2-6
 
 > [!theorem] Proposition §2.3: The Biconditional and Logical Equivalence
 > 1. $P \Leftrightarrow Q$ is true exactly when $P$ and $Q$ have the same truth value.
@@ -208,11 +208,11 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > [!proof]+ Proof
 > (1) From the columns of $P \Rightarrow Q$ and $Q \Rightarrow P$ in the proof of [[§2 Implications#^prop-2-2|Proposition §2.2]], their conjunction has the values T, F, F, T in the rows (T, T), (T, F), (F, T), (F, F): it is true exactly when $P$ and $Q$ agree.
 >
-> (2) By (1), $F \Leftrightarrow G$ is true for a given assignment exactly when $F$ and $G$ have the same truth value for it. So $F \Leftrightarrow G$ is true for every assignment if and only if $F$ and $G$ agree for every assignment, i.e. $F \equiv G$ ([[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]).
+> (2) By (1), $F \Leftrightarrow G$ is true for a given assignment exactly when $F$ and $G$ have the same truth value for it. So $F \Leftrightarrow G$ is true for every assignment if and only if $F$ and $G$ agree for every assignment, i.e. $F \equiv G$ ([[§1 The Language of Mathematics#^def-1-8|Def. §1.8]], [[§1 The Language of Mathematics#^def-1-9|Def. §1.9]]).
 
 ^pf-2-3
 
-*Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]
+*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^def-1-8|Def. §1.8]], [[§1 The Language of Mathematics#^def-1-9|Def. §1.9]]
 
 > [!example] Example §2.4: Reading the Same Equation Many Ways
 > Since $n^2 - n - 2 = (n - 2)(n + 1)$, for integers $n$ we have $n^2 - n - 2 = 0 \Leftrightarrow (n = 2 \text{ or } n = -1)$ ([[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). Write $E$ for $n^2 - n - 2 = 0$. As universal statements about integers $n$:
@@ -237,7 +237,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-4
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-5|Def. §2.5]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§2 Implications#^rem-2-1|Remark (vacuous truth)]]
+*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§2 Implications#^rem-2-1|Remark (vacuous truth)]]
 
 ## Logical Forms with Implications
 
@@ -320,7 +320,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-5
 
-*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]
+*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]
 
 > [!example] Example §2.6: Tautologies and an Absurdity
 > **(a)** $(P \wedge \neg Q) \Rightarrow (P \vee Q)$ is a tautology. In a row where $P$ is false the hypothesis $P \wedge \neg Q$ is false, so the implication is true; in a row where $P$ is true the conclusion $P \vee Q$ is true, so the implication is true.
@@ -334,7 +334,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-6
 
-*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
+*Uses:* [[§2 Implications#^def-2-1|Def. §2.1]], [[§1 The Language of Mathematics#^def-1-9|Def. §1.9]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
 
 > [!example] Example §2.7: Order of Operations and a Tautology
 > Indicate the order of operations in
@@ -364,7 +364,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 > [!example] Example §2.8: Converse, Inverse and Contrapositive
 > Let $a, b$ be real numbers and let $S$ be: *if $a + b > 0$, then $a > 0$ and $b > 0$.* Write down the converse, inverse and contrapositive, and decide which of the four statements are true.
 >
-> **Solution.** By [[§2 Implications#^def-2-4|Def. §2.4]] and De Morgan's law ($\neg(a > 0 \wedge b > 0) \equiv a \leq 0 \vee b \leq 0$):
+> **Solution.** By [[§2 Implications#^def-2-5|Def. §2.5]] and De Morgan's law ($\neg(a > 0 \wedge b > 0) \equiv a \leq 0 \vee b \leq 0$):
 >
 > | | statement | truth |
 > |:--|:--|:-:|
@@ -379,7 +379,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-8
 
-*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§3 Proofs#^def-3-1|Def. §3.1]]
+*Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§3 Proofs#^def-3-1|Def. §3.1]]
 
 > [!example] Example §2.9: "Only If" and "Whenever"
 > Let $x$ be a real number and consider: *$x^2 = 4$ only if $x = 2$ or $x < 0$.*
@@ -403,14 +403,14 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^ex-2-9
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^prop-2-1|§2.1]], [[§1 The Language of Mathematics#^def-1-7|Def. §1.7]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]]
+*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^prop-2-1|§2.1]], [[§1 The Language of Mathematics#^def-1-10|Def. §1.10]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]]
 
 That the negation of "for all $x$, $P(x)$" is "for some $x$, not $P(x)$" is [[§7 Quantifiers#^thm-7-2|Theorem §7.2]], where denials of quantified statements are treated systematically.
 
 > [!example] Example §2.10: A Necessary Condition for Convergence
 > Calculus proves: *if a series $\sum_{n=1}^\infty a_n$ converges, then $\lim_{n \to \infty} a_n = 0$.*
 >
-> (a) This is $P \Rightarrow Q$ with $P$ "$\sum a_n$ converges" and $Q$ "$a_n \to 0$", so $a_n \to 0$ is a **necessary** condition for convergence ([[§2 Implications#^def-2-3|Def. §2.3]]).
+> (a) This is $P \Rightarrow Q$ with $P$ "$\sum a_n$ converges" and $Q$ "$a_n \to 0$", so $a_n \to 0$ is a **necessary** condition for convergence ([[§2 Implications#^def-2-4|Def. §2.4]]).
 >
 > (b) The contrapositive: *if $a_n$ does not tend to $0$, then $\sum a_n$ diverges* (the "divergence test"). It is true, being equivalent to the theorem ([[§2 Implications#^prop-2-2|Proposition §2.2]]). Note that $\neg Q$ includes the case where $\lim a_n$ does not exist.
 >
@@ -422,7 +422,7 @@ That the negation of "for all $x$, $P(x)$" is "for some $x$, not $P(x)$" is [[§
 
 ^ex-2-10
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^prop-2-2|§2.2]]
+*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]]
 
 > [!remark]- Connections
 > - The theorem and the counterexample are proved in analysis: [[§14 Series#^cor-14-2|451 Cor. §14.2]] (terms of a convergent series tend to zero) and [[§14 Series#^thm-14-5|451 Thm. §14.5]] (divergence of the harmonic series).
@@ -437,28 +437,28 @@ That the negation of "for all $x$, $P(x)$" is "for some $x$, not $P(x)$" is [[§
 
 ^ex-2-11
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-5|Def. §2.5]]
+*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^def-2-6|Def. §2.6]]
 
 ## 2.2 Arithmetic
 
 When we meet a new word, or a familiar word in a new setting, we must find out what the writer means by it, not decide how we might have defined it. Here is a familiar example.
 
-> [!definition] Definition §2.6: Divisibility
+> [!definition] Definition §2.8: Divisibility
 > For integers $a$ and $b$, we say that **$b$ divides $a$**, or **$a$ is a multiple of $b$**, written $b \mid a$, if there is an integer $q$ such that $a = bq$. For example $3 \mid 6$ since $6 = 3 \times 2$, $-14 \mid 28$ since $28 = (-14)(-2)$, and $b \mid 0$ for every integer $b$ since $0 = b \times 0$.
 >
 > *Eccles: Definition 2.2.1*
 
-^def-2-6
+^def-2-7
 
 > [!remark]- Connections
 > - The same definition in group theory, where it leads to congruences and $\mathbb{Z}/n\mathbb{Z}$: [[§6 Divisibility and Congruence#^def-6-1|493 Def. §6.1]].
 
-> [!definition] Definition §2.7: Even and Odd
+> [!definition] Definition §2.9: Even and Odd
 > An integer $a$ is **even** if $2$ divides $a$, and **odd** if it is not even.
 >
 > *Eccles: Definitions 2.2.2 and 2.2.3*
 
-^def-2-7
+^def-2-8
 
 The definition of "odd" uses that of "even", which uses that of "divides": to use a definition one works back through the chain.
 
@@ -470,11 +470,11 @@ The definition of "odd" uses that of "even", which uses that of "divides": to us
 ^prop-2-5
 
 > [!proof]+ Proof
-> By [[§2 Implications#^def-2-7|Def. §2.7]], "$101$ is odd" means "$101$ is not even", i.e. $2$ does not divide $101$, i.e. ([[§2 Implications#^def-2-6|Def. §2.6]]) there is no integer $q$ with $2q = 101$. We cannot check the integers one at a time, but every integer $q$ satisfies $q \leq 50$ or $q \geq 51$, since no integer lies strictly between $50$ and $51$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]). Multiplying by $2 > 0$ ([[§3 Proofs#^def-3-1|Def. §3.1]]), either $2q \leq 100$ or $2q \geq 102$, and in both cases $2q \neq 101$. Hence $101$ is not even, so it is odd.
+> By [[§2 Implications#^def-2-8|Def. §2.8]], "$101$ is odd" means "$101$ is not even", i.e. $2$ does not divide $101$, i.e. ([[§2 Implications#^def-2-7|Def. §2.7]]) there is no integer $q$ with $2q = 101$. We cannot check the integers one at a time, but every integer $q$ satisfies $q \leq 50$ or $q \geq 51$, since no integer lies strictly between $50$ and $51$ ([[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]). Multiplying by $2 > 0$ ([[§3 Proofs#^def-3-1|Def. §3.1]]), either $2q \leq 100$ or $2q \geq 102$, and in both cases $2q \neq 101$. Hence $101$ is not even, so it is odd.
 
 ^pf-2-5
 
-*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]], [[§3 Proofs#^def-3-1|Def. §3.1]]
+*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]], [[§3 Proofs#^def-3-1|Def. §3.1]]
 
 The proof rests on the two universal implications $q \leq 50 \Rightarrow 2q \leq 100$ and $q \geq 51 \Rightarrow 2q \geq 102$; a second proof, by contradiction, is in [[§4 Proof by Contradiction#^ex-4-1|Ex. §4.1]]. (Arguing "$101/2 = 50\tfrac12$ is not an integer" is also valid, but uses the rational numbers.)
 
@@ -503,15 +503,15 @@ The proof rests on the two universal implications $q \leq 50 \Rightarrow 2q \leq
 
 ^ex-2-12
 
-*Uses:* [[§2 Implications#^def-2-3|Def. §2.3]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]], [[§5 The Induction Principle#^ex-5-1|Ex. §5.1]]
+*Uses:* [[§2 Implications#^def-2-4|Def. §2.4]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§4 Proof by Contradiction#^ex-4-2|Ex. §4.2]], [[§5 The Induction Principle#^ex-5-1|Ex. §5.1]]
 
 Once the division theorem is available, the step $3 \mid n^2 \Rightarrow 3 \mid n$ also follows by dividing $n$ by $3$ and squaring the possible remainders: [[§15 The Division Theorem#^prop-15-3|Proposition §15.3]].
 
 ## 2.3 Mathematical Truth
 
-Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as self-evident truths; in the modern view, axioms are simply statements assumed to be true, and mathematics explores what follows from them by accepted rules of deduction. (The discovery of non-Euclidean geometries in the nineteenth century showed that different axiom systems can be equally valid.) Developing arithmetic formally from axioms would be cumbersome here: we take the basic algebraic properties of numbers for granted, and state the order properties as axioms in [[§3 Proofs#^def-3-1|Def. §3.1]]. The positive integers have a particularly simple axiom system, Peano's axioms ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]]), one of which is the induction principle of [[§5 The Induction Principle#^def-5-1|Def. §5.1]].
+Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as self-evident truths; in the modern view, axioms are simply statements assumed to be true, and mathematics explores what follows from them by accepted rules of deduction. (The discovery of non-Euclidean geometries in the nineteenth century showed that different axiom systems can be equally valid.) Developing arithmetic formally from axioms would be cumbersome here: we take the basic algebraic properties of numbers for granted, and state the order properties as axioms in [[§3 Proofs#^def-3-1|Def. §3.1]]. The positive integers have a particularly simple axiom system, Peano's axioms ([[§9 Injections, Surjections and Bijections#^def-9-9|Def. §9.9]]), one of which is the induction principle of [[§5 The Induction Principle#^def-5-1|Def. §5.1]].
 
-> [!definition] Definition §2.8: Algebraic Properties of the Real Numbers
+> [!definition] Definition §2.9: Algebraic Properties of the Real Numbers
 > Any two real numbers $a, b$ have a **sum** $a + b$ and a **product** $ab$ (also $a \cdot b$, $a \times b$), which are real numbers, and:
 > 1. *Commutativity.* $a + b = b + a$ and $ab = ba$.
 > 2. *Associativity.* $(a + b) + c = a + (b + c)$ and $(ab)c = a(bc)$.
@@ -525,7 +525,7 @@ Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as s
 >
 > *Eccles: Properties 2.3.1*
 
-^def-2-8
+^def-2-9
 
 > [!remark]- Connections
 > - These are the field axioms: [[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]. In Eccles's terms, $\mathbb{Q}$ and $\mathbb{R}$ are fields and $\mathbb{Z}$ is an integral domain.
@@ -543,4 +543,4 @@ Proofs must start somewhere. Euclid's *Elements* began from axioms regarded as s
 
 ^ex-2-13
 
-*Uses:* [[§2 Implications#^def-2-8|Def. §2.8]]
+*Uses:* [[§2 Implications#^def-2-9|Def. §2.9]]

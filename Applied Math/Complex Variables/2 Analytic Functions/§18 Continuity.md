@@ -200,7 +200,7 @@ The modulus of a continuous function is continuous. B&C leaves this as an exerci
 
 ## Continuous Functions on Closed Bounded Regions
 
-Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points ([[§12★ Regions in the Complex Plane#^def-12-new4|Definition §12.7]]), and **bounded** if it lies inside some circle centered at the origin ([[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]]).
+Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ is **closed** if it contains all of its boundary points ([[§12★ Regions in the Complex Plane#^def-12-7|Definition §12.7]]), and **bounded** if it lies inside some circle centered at the origin ([[§12★ Regions in the Complex Plane#^def-12-12|Definition §12.12]]).
 
 > [!definition] Definition §18.2: Bounded Function
 > A function $f$ is **bounded on $R$** if there is a nonnegative real number $M$ such that $|f(z)| \le M$ for all points $z$ in $R$.
@@ -233,10 +233,10 @@ Recall from [[§12★ Regions in the Complex Plane|§12★]] that a region $R$ i
 
 ^pf-18-6
 
-*Uses:* [[§18 Continuity#^thm-18-4|§18.4]], [[§18 Continuity#^prop-18-5|§18.5]], [[§18 Continuity#^def-18-2|Def. §18.2]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem in two variables)
+*Uses:* [[§18 Continuity#^thm-18-4|§18.4]], [[§18 Continuity#^prop-18-5|§18.5]], [[§18 Continuity#^def-18-2|Def. §18.2]], [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]] (extreme value theorem in two variables)
 
 > [!remark]- Connections
-> - The extreme value theorem for a closed bounded set in $\mathbb{R}^2$ is [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]]; its rigorous proof combines Heine–Borel, [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (closed and bounded in $\mathbb{R}^n$ means compact), with [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]] (the continuous image of a compact set is compact). The one-variable case on $[a, b]$ is [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]].
+> - The extreme value theorem for a closed bounded set in $\mathbb{R}^2$ is [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]]; its rigorous proof combines Heine–Borel, [[§18 Compact Spaces#^thm-18-12|590 Thm. §18.12]] (closed and bounded in $\mathbb{R}^n$ means compact), with [[§18 Compact Spaces#^thm-18-3|590 Thm. §18.3]] (the continuous image of a compact set is compact). The one-variable case on $[a, b]$ is [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]].
 
 > [!example] Example §18.3: The Hypotheses of Theorem §18.6
 > **Both hypotheses hold.** $f(z) = z^2 + 1$ is continuous on the closed disk $|z| \le 1$, which is closed and bounded. Here $|f(z)| \le |z|^2 + 1 \le 2$, with equality exactly when $|z| = 1$ and $z^2$ is a positive multiple of $1$, that is, at $z = \pm 1$. So $M = 2$, attained at $z = \pm1$.

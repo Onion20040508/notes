@@ -17,7 +17,7 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 > [!theorem] Lemma §2.2: Key Lemma for Cantor–Bernstein
 > Let $f: X \to Y$ and $g: Y \to X$ be functions. Then there exist subsets $A \subseteq X$ and $B \subseteq Y$ such that $f(A) = B$ and $g(Y \setminus B) = X \setminus A$.
 
-^lem-2-2
+^lem-2-1
 
 ![[m551-2-1.svg]]
 *What the lemma produces: cuts $X = A \sqcup A^c$ and $Y = B \sqcup B^c$ such that $f$ carries $A$ onto $B$ (blue) and $g$ carries $B^c$ onto $A^c$ (red). For injective $f$ and $g$ both restrictions are bijections, and the proof below glues them into $F = f$ on $A$, $F = g^{-1}$ on $A^c$ — a bijection $X \to Y$.*
@@ -97,15 +97,15 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 >
 > **Conclusion:** We have shown $g(B^c) = A^c$ and $f(A) = B$ by definition. This completes the proof of the lemma.
 
-^pf-2-2
+^pf-2-1
 
 > [!theorem] Theorem §2.1: Cantor–Bernstein
 > Assume there exists an injection $f: X \to Y$ and an injection $g: Y \to X$. Then $X \sim Y$.
 
-^thm-2-1
+^thm-2-2
 
 > [!proof]+ Proof of Cantor–Bernstein assuming the Lemma
-> Assume the [[§2 The Cantor–Bernstein Theorem#^lem-2-2|lemma]] holds. Let $f, g$ be injections and let $A \subseteq X$, $B \subseteq Y$ be as given by the lemma, so that:
+> Assume the [[§2 The Cantor–Bernstein Theorem#^lem-2-1|lemma]] holds. Let $f, g$ be injections and let $A \subseteq X$, $B \subseteq Y$ be as given by the lemma, so that:
 > - $f(A) = B$
 > - $g(B^c) = A^c$  (where $B^c = Y \setminus B$)
 >
@@ -150,9 +150,9 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 >
 > Since $F$ is a [[§1 Countability and Set Theory#^def-1-6|bijection]], we conclude $X \sim Y$.
 
-^pf-2-1
+^pf-2-2
 
-*Uses:* [[§2 The Cantor–Bernstein Theorem#^lem-2-2|§2.2]], [[§1 Countability and Set Theory#^def-1-3|Def. §1.3]], [[§1 Countability and Set Theory#^def-1-4|Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]], [[§1 Countability and Set Theory#^def-1-7|Def. §1.7]]
+*Uses:* [[§2 The Cantor–Bernstein Theorem#^lem-2-1|§2.1]], [[§1 Countability and Set Theory#^def-1-3|Def. §1.3]], [[§1 Countability and Set Theory#^def-1-4|Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]], [[§1 Countability and Set Theory#^def-1-7|Def. §1.7]]
 
 > [!remark] Remark
 > An injection from $X$ to $Y$ shows that $X$ can be embedded into $Y$, i.e., $X$ is equivalent to a subset of $Y$. The Cantor–Bernstein theorem says that if each set can be embedded into the other, then they are equivalent.
@@ -161,4 +161,4 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 
 > [!remark]- Connections
 > - As a proof technique: [[Measure Theory Problem-Solving Techniques#^rem-19-6|Technique 2: The Cantor–Bernstein Squeeze]], applied in [[Measure Theory Problem-Solving Techniques#^ex-19-9|Ex. T2 (HW1)]].
-> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-14|250 Thm. §14.14]], with a complete proof by chains of images.
+> - Elementary version: [[§14a Uncountable Sets#^thm-14a-4|250 Thm. §14a.4]], with a complete proof by chains of images.

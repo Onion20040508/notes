@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 9
-section: 117
+section: "117★"
 bc: "117"
 aliases: ["B&C 117"]
 tags: [complex-variables, math342, extension]
@@ -19,7 +19,7 @@ tags: [complex-variables, math342, extension]
 B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here it comes first. Identify a plane vector $(a, b)$ with the complex number $a + ib$. Then the dot product of two vectors is $\operatorname{Re}(\alpha\bar\beta)$, and the gradients are $\nabla H = H_x + iH_y$ and $\nabla h = h_u + ih_v$.
 
 > [!theorem] Lemma §117.1: Gradients and Directional Derivatives Are Scaled by |f′(z)|
-> Let $w = f(z) = u(x, y) + iv(x, y)$ be a conformal mapping of a [[§43 Contours#^def-43-4|smooth arc]] $C$ onto a smooth arc $\Gamma$, let $h(u, v)$ be differentiable near $\Gamma$, and put $H(x, y) = h[u(x, y), v(x, y)]$. At a point $(x, y)$ of $C$ with image $(u, v)$ on $\Gamma$:
+> Let $w = f(z) = u(x, y) + iv(x, y)$ be a conformal mapping of a [[§43 Contours#^def-43-7|smooth arc]] $C$ onto a smooth arc $\Gamma$, let $h(u, v)$ be differentiable near $\Gamma$, and put $H(x, y) = h[u(x, y), v(x, y)]$. At a point $(x, y)$ of $C$ with image $(u, v)$ on $\Gamma$:
 >
 > **(a)** $\nabla H = \overline{f'(z)}\,\nabla h$; in particular
 >
@@ -86,7 +86,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 
 ^pf-117-1
 
-*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§94 The Chain Rule#^thm-94-2|Calc Thm. §94.2]] (chain rule), [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]] (directional derivative as a dot product)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§110 The Chain Rule#^thm-110-2|Calc Thm. §110.2]] (chain rule), [[§111 Directional Derivatives and the Gradient Vector#^cor-111-2|Calc Cor. §111.2]] (directional derivative as a dot product)
 
 ## The Theorem
 
@@ -136,10 +136,10 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 
 ^pf-117-2
 
-*Uses:* [[§117★ Transformations of Boundary Conditions#^lem-117-1|§117.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]] (the gradient is perpendicular to level curves)
+*Uses:* [[§117★ Transformations of Boundary Conditions#^lem-117-1|§117.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§111 Directional Derivatives and the Gradient Vector#^cor-111-2|Calc Cor. §111.2]], [[§112 Tangent Planes to Level Surfaces#^thm-112-3|Calc Thm. §112.3]] (the gradient is perpendicular to level curves)
 
 > [!remark]- Connections
-> - Normal derivatives and the Dirichlet/Neumann/Robin conditions on a boundary: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]; the normal derivative as $\nabla v\cdot\hat n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new2|452 Def. §17.2]].
+> - Normal derivatives and the Dirichlet/Neumann/Robin conditions on a boundary: [[§44 Potential Equation#^def-44-3|341 Def. §44.3]]; the normal derivative as $\nabla v\cdot\hat n$, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-4|452 Def. §28.4]].
 > - Used in Electromagnetism: conductors (constant potential) and lines of symmetry (zero normal field) keep their boundary conditions under an analytic map — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]].
 
 A condition of another type can change substantially (Example §117.3). By Lemma §117.1, the ratio of a directional derivative of $H$ along $C$ to that of $h$ along $\Gamma$ at the corresponding point is $|f'(z)|$, which in general is not constant along the arc. So $dh/dn = h_0 \ne 0$ becomes $dH/dN = h_0|f'(z)|$, a variable flux; new boundary conditions for the transformed problem can still be written down in any particular case.

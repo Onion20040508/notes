@@ -12,16 +12,16 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§13 Connected Spaces]]
-- [[§14 Connected Subspaces of ℝ]]
-- [[§14a Discrete and Indiscrete Spaces]]
+- [[§15 Connected Spaces]]
+- [[§16 Connected Subspaces of ℝ]]
+- [[§17 Discrete and Indiscrete Spaces]]
 
 ## Central results
 - [[Continuous Image of a Connected Space is Connected]] (§13.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Continuous Image of a Connected Space is Connected|Theorem §13.3: Continuous Image of Connected Space]]: 21 later results
-- [[§13 Connected Spaces#^lem-13-4|Lemma §13.4: Connected Subspace and Separation]]: 20 later results
-- [[§14 Connected Subspaces of ℝ#^thm-14-1|Theorem §14.1: Linear Continuum is Connected]]: 19 later results
-- [[§14 Connected Subspaces of ℝ#^cor-14-2|Corollary §14.2]]: 18 later results
+- [[Continuous Image of a Connected Space is Connected|Theorem §15.3: Continuous Image of Connected Space]]: 21 later results
+- [[§15 Connected Spaces#^lem-15-4|Lemma §15.4: Connected Subspace and Separation]]: 20 later results
+- [[§16 Connected Subspaces of ℝ#^thm-16-1|Theorem §16.1: Linear Continuum is Connected]]: 19 later results
+- [[§16 Connected Subspaces of ℝ#^cor-16-2|Corollary §16.2]]: 18 later results

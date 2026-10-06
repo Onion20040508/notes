@@ -165,7 +165,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Linear-algebra home: the matrix of a linear map, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
-> - Computational version: [[§12 The Inverse of a Matrix#^def-12-4|235 Def. §12.4]] (permutation matrices, all six for n = 3).
+> - Computational version: [[§15 Elementary Matrices and the Inversion Algorithm#^def-15-2|235 Def. §15.2]] (permutation matrices, all six for n = 3).
 
 > [!example] Example §20.2: $M(\sigma)$ for $\sigma = (1\,2\,3)$
 > Since $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 1$, the columns are $e_2, e_3, e_1$:
@@ -202,17 +202,17 @@ tags: [group-theory, math493]
 *Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|Def. §20.5]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|§20.2]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]]
 
 > [!remark]- Connections
-> - Linear-algebra home: matrix of a product is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - Linear-algebra home: matrix of a product is the product of the matrices, [[§9 Matrices#^ladr-3-43|LADR 3.43]]; orthogonal (real unitary) matrices, [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - Composed with $\det$ it gives the sign: [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|The Sign Is a Homomorphism]].
-> - Computational version: the inverse of a permutation matrix is its transpose, worked in [[§12 The Inverse of a Matrix#^ex-12-4|235 Ex. §12.4]](c).
+> - Computational version: the inverse of a permutation matrix is its transpose, worked in [[§15 Elementary Matrices and the Inversion Algorithm#^ex-15-1|235 Ex. §15.1]](c).
 
 > [!remark] Remark: Row vs. Column Convention
-> Some sources define the permutation matrix by rows, “row $i$ is $e_{\sigma(i)}$,” which produces the [[§9 Matrices#^ladr-3-54|transpose]] of ours, i.e. $M(\sigma^{-1})$; under that convention $M(\sigma)M(\tau) = M(\tau\sigma)$, reversed. The column convention above is the one compatible with right-to-left composition, $(f \circ g)(j) = f(g(j))$, as used in this course ([[§10 Cycle Notation and the Group S₃#^rem-10-1|Convention Warning]]). Since $\det M(\sigma^{-1}) = (\det M(\sigma))^{-1}$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]) and the determinant of a permutation matrix is $\pm 1$, the choice does not affect the determinant.
+> Some sources define the permutation matrix by rows, “row $i$ is $e_{\sigma(i)}$,” which produces the [[§9 Matrices#^ladr-3-54|transpose]] of ours, i.e. $M(\sigma^{-1})$; under that convention $M(\sigma)M(\tau) = M(\tau\sigma)$, reversed. The column convention above is the one compatible with right-to-left composition, $(f \circ g)(j) = f(g(j))$, as used in this course ([[§10 Cycle Notation and the Group S₃#^rem-10-1|Convention Warning]]). Since $\det M(\sigma^{-1}) = (\det M(\sigma))^{-1}$ ([[§37 Determinants#^ladr-9-49|LADR 9.49]]) and the determinant of a permutation matrix is $\pm 1$, the choice does not affect the determinant.
 
 ^rem-20-3
 
 > [!remark]- Connections
-> - $\det M(\sigma) = \pm 1$ is proved in [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]]; multiplicativity of $\det$: [[§34 Determinants#^ladr-9-49|LADR 9.49]].
+> - $\det M(\sigma) = \pm 1$ is proved in [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]]; multiplicativity of $\det$: [[§37 Determinants#^ladr-9-49|LADR 9.49]].
 
 > [!definition] Definition §20.6: Representation; Permutation Representation
 > A **representation** of a group $G$ is a homomorphism $G \to GL_n(k)$ for some field $k$ and some $n \geq 1$ (more generally $G \to GL(V)$ for a $k$-vector space $V$). The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-4|WS 1.7]]. Representations in general are the subject of the second half of the course.

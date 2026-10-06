@@ -15,7 +15,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Differential Equations as Mathematical Models
 
-> [!definition] Definition §1.1: Differential Equation
+> [!definition] Definition §1.2: Differential Equation
 > A **differential equation** is an equation containing derivatives of an unknown function.
 >
 > *BDP: 1.1 (text)*
@@ -23,16 +23,16 @@ Laws of nature are often statements about rates, and a law about rates written i
 ^def-1-1
 
 > [!remark]- Connections
-> - See also: [[§57 Modeling with Differential Equations#^def-57-5|Calc Def. §57.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models: natural growth, [[§57 Modeling with Differential Equations#^def-57-1|Calc Def. §57.1]], and the spring, [[§57 Modeling with Differential Equations#^def-57-4|Calc Def. §57.4]].
+> - See also: [[§66 Modeling with Differential Equations#^def-66-5|Calc Def. §66.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models: natural growth, [[§66 Modeling with Differential Equations#^def-66-1|Calc Def. §66.1]], and the spring, [[§66 Modeling with Differential Equations#^def-66-4|Calc Def. §66.4]].
 
-> [!definition] Definition §1.1: Mathematical Model
+> [!definition] Definition §1.3: Mathematical Model
 > A differential equation that describes some physical process is called a **mathematical model** of the process.
 >
 > Constants in a model that depend on the particular object or situation, and may take a range of values (such as the mass $m$ and the drag coefficient $\gamma$ below), are called **parameters**. Constants with a fixed value for all objects (such as $g$) are physical constants.
 >
 > *BDP: 1.1 (text)*
 
-^def-1-new1
+^def-1-2
 
 > [!example] Example §1.1: A Falling Object
 > Formulate a differential equation for the motion of an object falling in the atmosphere near sea level.
@@ -63,7 +63,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Direction Fields
 
-> [!definition] Definition §1.2: Direction Field
+> [!definition] Definition §1.4: Direction Field
 > Consider a first-order equation
 >
 > $$
@@ -76,20 +76,20 @@ Laws of nature are often statements about rates, and a law about rates written i
 >
 > *BDP: 1.1 (text)*
 
-^def-1-2
+^def-1-3
 
 > [!remark]- Connections
-> - See also: [[§58 Direction Fields and Euler's Method#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§58 Direction Fields and Euler's Method#^rem-58-1|Calc Remark: Method — Sketching Solution Curves from a Direction Field]]. The same tangent segments, followed step by step, give Euler's method ([[§10 Numerical Approximations꞉ Euler's Method#^def-10-1|Definition §10.1]]).
-> - Equilibrium solutions ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3|Definition §1.3]] below) in Stewart: [[§57 Modeling with Differential Equations#^def-57-3|Calc Def. §57.3]].
+> - See also: [[§67 Direction Fields and Euler's Method#^def-67-1|Calc Def. §67.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§67 Direction Fields and Euler's Method#^rem-67-1|Calc Remark: Method — Sketching Solution Curves from a Direction Field]]. The same tangent segments, followed step by step, give Euler's method ([[§13 Numerical Approximations꞉ Euler's Method#^def-13-1|Definition §13.1]]).
+> - Equilibrium solutions ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-4|Definition §1.4]] below) in Stewart: [[§66 Modeling with Differential Equations#^def-66-3|Calc Def. §66.3]].
 
-> [!definition] Definition §1.3: Equilibrium Solution
+> [!definition] Definition §1.5: Equilibrium Solution
 > A constant function $y(t) = y_0$ that satisfies the differential equation is an **equilibrium solution**. For an equation $dy/dt = f(y)$ whose rate function does not depend on $t$, the equilibrium solutions are found by solving the algebraic equation $f(y) = 0$.
 >
 > For the falling object, the equilibrium solution is called the **terminal velocity**: it is the velocity at which gravity and drag balance exactly.
 >
 > *BDP: 1.1 (text)*
 
-^def-1-3
+^def-1-4
 
 > [!example] Example §1.2: The Direction Field of the Falling Object
 > Investigate the solutions of $\dfrac{dv}{dt} = 9.8 - \dfrac{v}{5}$ (equation (5)) without solving the equation.
@@ -115,7 +115,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 > [!remark] Remark: Method — Reading a Direction Field
 > For an equation $dy/dt = f(t, y)$:
 > 1. Evaluate $f$ on a grid of points (or along chosen lines $y =$ const, as in [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-2|Example §1.2]]) and draw a short segment of slope $f(t, y)$ at each point.
-> 2. Find the curves where $f = 0$. If $f$ depends only on $y$, these are horizontal lines, and each is an equilibrium solution ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-3|Definition §1.3]]).
+> 2. Find the curves where $f = 0$. If $f$ depends only on $y$, these are horizontal lines, and each is an equilibrium solution ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-4|Definition §1.4]]).
 > 3. Determine the sign of $f$ between them: solutions increase where $f > 0$ and decrease where $f < 0$.
 > 4. Sketch solution curves tangent to the segments everywhere, and read off the behavior as $t \to \infty$ and how it depends on the initial value.
 
@@ -123,9 +123,9 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Field Mice and Owls
 
-In the absence of predators, assume that a population of field mice grows at a rate proportional to its current size. This is not a physical law, but it is a common first hypothesis about population growth (a better model is the logistic equation, [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-3|Definition §8.3]]).
+In the absence of predators, assume that a population of field mice grows at a rate proportional to its current size. This is not a physical law, but it is a common first hypothesis about population growth (a better model is the logistic equation, [[§9 Autonomous Differential Equations and Population Dynamics#^def-9-3|Definition §9.3]]).
 
-> [!definition] Definition §1.4: Rate Constant (Growth Rate)
+> [!definition] Definition §1.5: Rate Constant (Growth Rate)
 > If $p(t)$ is the population at time $t$, the hypothesis is
 >
 > $$
@@ -136,10 +136,10 @@ In the absence of predators, assume that a population of field mice grows at a r
 >
 > *BDP: 1.1 (text)*
 
-^def-1-4
+^def-1-5
 
 > [!remark]- Connections
-> - See also: [[§57 Modeling with Differential Equations#^def-57-1|Calc Def. §57.1]] and [[§21 Exponential Growth and Decay#^def-21-1|Calc Def. §21.1]] (the law of natural growth), whose solutions $p = p(0)e^{rt}$ are found in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]]; here they are the case $b = 0$ of [[§2 Solutions of Some Differential Equations#^thm-2-1|Theorem §2.1]].
+> - See also: [[§66 Modeling with Differential Equations#^def-66-1|Calc Def. §66.1]] and [[§24 Exponential Growth and Decay#^def-24-1|Calc Def. §24.1]] (the law of natural growth), whose solutions $p = p(0)e^{rt}$ are found in [[§24 Exponential Growth and Decay#^thm-24-1|Calc Thm. §24.1]]; here they are the case $b = 0$ of [[§2 Solutions of Some Differential Equations#^thm-2-1|Theorem §2.1]].
 
 > [!example] Example §1.3: Mice Preyed On by Owls
 > Let time be measured in months and suppose $r = 0.5$/month. Several owls in the neighborhood kill $15$ mice per day. Formulate the model and investigate its solutions graphically.
@@ -195,6 +195,6 @@ Successful modeling cannot be reduced to a set of rules, and constructing a sati
 ^rem-1-3
 
 > [!remark]- Remark: Historical Background (Newton, Leibniz, the Bernoullis)
-> Differential equations began with the calculus of Isaac Newton (1643–1727) and Gottfried Wilhelm Leibniz (1646–1716). Newton classified first-order equations into the forms $dy/dx = f(x)$, $dy/dx = f(y)$ and $dy/dx = f(x, y)$, and solved the last by infinite series when $f$ is a polynomial. Leibniz, who introduced the notations $dy/dx$ and $\int$, discovered separation of variables ([[§5 Separable Differential Equations|§5]]) and the reduction of homogeneous equations to separable ones in 1691, and the method for first-order linear equations ([[§4 Linear Differential Equations; Method of Integrating Factors|§4]]) in 1694. The brothers Jakob (1654–1705) and Johann (1667–1748) Bernoulli of Basel developed many methods and applications, and both solved the brachistochrone problem; Johann's son Daniel (1700–1782) worked mainly on partial differential equations.
+> Differential equations began with the calculus of Isaac Newton (1643–1727) and Gottfried Wilhelm Leibniz (1646–1716). Newton classified first-order equations into the forms $dy/dx = f(x)$, $dy/dx = f(y)$ and $dy/dx = f(x, y)$, and solved the last by infinite series when $f$ is a polynomial. Leibniz, who introduced the notations $dy/dx$ and $\int$, discovered separation of variables ([[§6 Separable Differential Equations|§6]]) and the reduction of homogeneous equations to separable ones in 1691, and the method for first-order linear equations ([[§5 Linear Differential Equations; Method of Integrating Factors|§5]]) in 1694. The brothers Jakob (1654–1705) and Johann (1667–1748) Bernoulli of Basel developed many methods and applications, and both solved the brachistochrone problem; Johann's son Daniel (1700–1782) worked mainly on partial differential equations.
 
 ^rem-1-4

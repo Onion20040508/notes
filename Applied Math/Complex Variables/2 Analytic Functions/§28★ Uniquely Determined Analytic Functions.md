@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 2
-section: 28
+section: "28★"
 bc: "28"
 aliases: ["B&C 28"]
 tags: [complex-variables, math342, extension]
@@ -32,7 +32,7 @@ An analytic function on a domain is far more rigid than a differentiable functio
 > [!proof]+ Proof
 > Let $f$ be as stated and let $z_0$ be any point of the subdomain or line segment where $f(z) = 0$. Let $P$ be any other point of $D$.
 >
-> **A polygonal line and a radius.** Since $D$ is a connected open set ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]]), there is a polygonal line $L$, consisting of a finite number of line segments joined end to end and lying entirely in $D$, that extends from $z_0$ to $P$. Let $d$ be the shortest distance from points on $L$ to the boundary of $D$, unless $D$ is the entire plane; in that case $d$ may be any positive number. (B&C takes for granted that $d > 0$; here is why. $L$ is closed and bounded, and the boundary of $D$ is a closed set disjoint from $L$, because $L \subset D$ and $D$ is open. The distance from a point $z$ to the boundary is a continuous function of $z$, positive on $L$, so it attains a positive minimum on $L$.)
+> **A polygonal line and a radius.** Since $D$ is a connected open set ([[§12★ Regions in the Complex Plane#^def-12-9|Definition §12.9]]), there is a polygonal line $L$, consisting of a finite number of line segments joined end to end and lying entirely in $D$, that extends from $z_0$ to $P$. Let $d$ be the shortest distance from points on $L$ to the boundary of $D$, unless $D$ is the entire plane; in that case $d$ may be any positive number. (B&C takes for granted that $d > 0$; here is why. $L$ is closed and bounded, and the boundary of $D$ is a closed set disjoint from $L$, because $L \subset D$ and $D$ is open. The distance from a point $z$ to the boundary is a continuous function of $z$, positive on $L$, so it attains a positive minimum on $L$.)
 >
 > **The disks lie in $D$.** If $z \in L$ and $|w - z| < d$, then $w \in D$. Otherwise the segment from $z$ (in $D$) to $w$ (not in $D$) would contain a boundary point of $D$: the last point $z + t^{\ast}(w - z)$, $t^{\ast} = \sup\{t \in [0, 1] : z + s(w - z) \in D \text{ for } 0 \le s \le t\}$, is a limit of points of $D$ and is not in the open set $D$ (else $t^{\ast}$ could be increased, or $t^{\ast} = 1$ and $w \in D$). That boundary point would be at distance less than $d$ from $z \in L$, contradicting the choice of $d$.
 >
@@ -54,13 +54,13 @@ An analytic function on a domain is far more rigid than a differentiable functio
 
 ^pf-28-1
 
-*Uses:* [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§82 Zeros of Analytic Functions#^thm-82-3|§82.3]], [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (extreme value theorem, applied on the segments of $L$)
+*Uses:* [[§12★ Regions in the Complex Plane#^def-12-9|Def. §12.9]], [[§82 Zeros of Analytic Functions#^thm-82-3|§82.3]], [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (extreme value theorem, applied on the segments of $L$)
 
 ![[m342-28-1.svg]]
 *The proof of Lemma §28.1. The function vanishes on a short segment through $z_0$ (green). A polygonal line $L$ (blue) joins $z_0$ to $P$ inside $D$; the disks $N_k$ of radius $d$, the distance from $L$ to the boundary, stay inside $D$, and each is centered at a point of the previous one. [[§82 Zeros of Analytic Functions#^thm-82-3|Theorem §82.3]] carries "$f \equiv 0$" from each disk to the next, all the way to $P$.*
 
 > [!remark]- Connections
-> - The "$d > 0$" step is the standard fact that a compact set and a disjoint closed set are at positive distance; compactness of $L$ is [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel). The propagation step is a connectedness argument in disguise: the set where $f$ vanishes identically nearby is open and closed in $D$, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]].
+> - The "$d > 0$" step is the standard fact that a compact set and a disjoint closed set are at positive distance; compactness of $L$ is [[§18 Compact Spaces#^thm-18-12|590 Thm. §18.12]] (Heine–Borel). The propagation step is a connectedness argument in disguise: the set where $f$ vanishes identically nearby is open and closed in $D$, [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]].
 
 Suppose now that two functions $f$ and $g$ are analytic in the same domain $D$ and that $f(z) = g(z)$ at each point $z$ of some domain or line segment contained in $D$. The difference $h(z) = f(z) - g(z)$ is also analytic in $D$, and $h(z) = 0$ throughout the subdomain or along the line segment. According to the lemma, $h(z) \equiv 0$ throughout $D$. We thus arrive at the following important theorem.
 
@@ -122,7 +122,7 @@ A more general result, sometimes called the **coincidence principle**, is straig
 
 ^pf-28-4
 
-*Uses:* [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]], [[§28★ Uniquely Determined Analytic Functions#^def-28-1|Def. §28.1]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]]
+*Uses:* [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]], [[§28★ Uniquely Determined Analytic Functions#^def-28-1|Def. §28.1]], [[§12★ Regions in the Complex Plane#^def-12-9|Def. §12.9]]
 
 > [!definition] Definition §28.2: Elements
 > In Proposition §28.4(b), $F$ is the analytic continuation into $D_1 \cup D_2$ of either $f_1$ or $f_2$, and $f_1$ and $f_2$ are called **elements** of $F$.

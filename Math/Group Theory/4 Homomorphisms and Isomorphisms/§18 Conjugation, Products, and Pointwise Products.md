@@ -124,9 +124,9 @@ tags: [group-theory, math493]
 *Part (3) of the proposition: a map $\varphi: K \to G \times H$ (red) is a homomorphism exactly when its components $\pi_1 \circ \varphi$ and $\pi_2 \circ \varphi$ are. A homomorphism into a product is therefore the same thing as a pair of homomorphisms, one into each factor; the diagonal $\Delta = (\operatorname{id}_G, \operatorname{id}_G)$ of part (4) is the case $K = G = H$.*
 
 > [!remark]- Connections
-> - MATH 590 version: [[§21 Algebra Prerequisites꞉ Groups#^def-21-5|Direct Product of Groups]] (590 §21.5).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-5|Direct Product of Groups]] (590 §21.5).
 > - Linear-algebra version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]] (LADR 3.87).
-> - Applied in 590: the isomorphism of π₁ of a product with the product of the π₁'s is the homomorphism induced by the two projections, [[§23 The Fundamental Group#^thm-23-7|590 Thm. §23.7]].
+> - Applied in 590: the isomorphism of π₁ of a product with the product of the π₁'s is the homomorphism induced by the two projections, [[§29 The Fundamental Group#^thm-29-7|590 Thm. §29.7]].
 
 > [!theorem] Proposition §18.4: Characterizations of Abelian Groups
 > For a group $G$, the following are equivalent:

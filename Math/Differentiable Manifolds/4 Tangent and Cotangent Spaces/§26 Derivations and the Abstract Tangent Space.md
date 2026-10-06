@@ -202,7 +202,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 
 > [!remark]- Connections
 > - Pushforward as the transpose of pullback: [[§12 Duality#^ladr-3-118|LADR 3.118 (dual map)]]; 591's version, [[§20 Linear Algebra Toolkit#^def-20-3|Def. §20.3]].
-> - On open subsets of Euclidean space it is the Jacobian: [[§28 The Differential in Coordinates#^prop-28-5|§28.5]]; the calculus differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
+> - On open subsets of Euclidean space it is the Jacobian: [[§28 The Differential in Coordinates#^prop-28-5|§28.5]]; the calculus differential, [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 
 > [!theorem] Proposition §26.5: The Differential Is a Linear Map of Abstract Tangent Spaces
 > For every $D \in T_pM$, $F_{*p}D$ is a derivation at $F(p)$; and $F_{*p} : T_pM \to T_{F(p)}N$ is linear.
@@ -273,7 +273,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 *The upper row is the composite of maps; the lower row says its differential is the composite of the differentials. In coordinates (Corollary [[§28 The Differential in Coordinates#^cor-28-3|§28.3]]) it becomes the multiplication of Jacobian matrices — the chain rule of calculus, now as a statement about manifolds.*
 
 > [!remark]- Connections
-> - The chain rule of calculus: [[Multivariable Chain Rule|452 §10.2 (Multivariable Chain Rule)]].
+> - The chain rule of calculus: [[Multivariable Chain Rule|452 §12.2 (Multivariable Chain Rule)]].
 > - Duals compose in the opposite order, $(ST)' = T'S'$: [[§12 Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§20 Linear Algebra Toolkit#^prop-20-4|§20.4]].
 
 **Lecture 10.** Uribe stated this as the Chain Rule and proved the pullback identity $(G \circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$ on the board — “see, you know that this is the right point of view when proofs become one line” — leaving the dualization as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)

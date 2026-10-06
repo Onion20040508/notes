@@ -19,7 +19,7 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses (other subjects)
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1: Monotone Convergence Theorem]]
-- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8: Cauchy Implies Convergent]]
+- [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
 - (not cited later in the course)

@@ -11,7 +11,7 @@ tags: [subject, measure-theory]
 ---
 # Measure Theory
 
-MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), following Axler, *Measure, Integration & Real Analysis* (chapters 1–5); references Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§19 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
+MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), following Axler, *Measure, Integration & Real Analysis* (chapters 1–5); references Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§34 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved. Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -71,25 +71,25 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Monotone Convergence Theorem]] (2)
 
 **[[Topology]]**
-- [[§6 Closed Sets and Limit Points#^thm-6-1|Theorem §6.1: Properties of Closed Sets]] (3)
-- [[§11 Metric Topology#^def-11-1|Definition §11.1: Metric]] (2)
-- [[§9 Continuous Functions#^def-9-1|Definition §9.1: Continuous Function]] (1)
-- [[§11 Metric Topology#^thm-11-9|Theorem §11.9: Continuity and Sequences]] (1)
-- [[§9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]] (1)
-- [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]] (1)
+- [[§7 Closed Sets and Limit Points#^thm-7-1|Theorem §7.1: Properties of Closed Sets]] (3)
+- [[§12 Metric Topology#^def-12-1|Definition §12.1: Metric]] (2)
+- [[§10 Continuous Functions#^def-10-1|Definition §10.1: Continuous Function]] (1)
+- [[§12 Metric Topology#^thm-12-9|Theorem §12.9: Continuity and Sequences]] (1)
+- [[§10 Continuous Functions#^thm-10-4|Theorem §10.4: Rules for Continuous Functions]] (1)
+- [[§18 Compact Spaces#^rem-18-1|Remark: Why Compactness Matters]] (1)
 - [[Continuous Image of a Compact Space is Compact]] (1)
 - [[Heine–Borel Theorem]] (1)
 
 **[[Linear Algebra]]**
 - [[Triangle inequality]] (1)
 - [[Invertible ⟺ nonzero determinant]] (1)
-- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (1)
-- [[§34 Determinants#^ladr-9-61|Theorem 9.61: T changes volume by factor of |det T|]] (1)
+- [[§37 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (1)
+- [[§37 Determinants#^ladr-9-61|Theorem 9.61: T changes volume by factor of |det T|]] (1)
 - [[§2 Definition of Vector Space#^ladr-1-20|Definition 1.20: Vector space]] (1)
 
 **[[Multivariable Analysis]]**
-- [[§2 Open and Closed Sets#^def-2-3|Definition §2.3: Interior, Exterior, and Boundary Points]] (2)
-- [[§2 Open and Closed Sets#^def-2-5|Definition §2.5: Closure]] (1)
+- [[§2 Open and Closed Sets#^def-2-3|Definition §2.3: Interior Point]] (2)
+- [[§2 Open and Closed Sets#^def-2-8|Definition §2.8: Closure]] (1)
 
 ## Workhorse examples
 - [[Cantor set and Cantor function]]

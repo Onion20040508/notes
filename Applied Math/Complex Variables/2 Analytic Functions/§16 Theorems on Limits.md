@@ -139,7 +139,7 @@ tags: [complex-variables, math342]
 > f(z) = u(x, y) + iv(x, y), \quad F(z) = U(x, y) + iV(x, y), \quad z_0 = x_0 + iy_0, \quad w_0 = u_0 + iv_0, \quad W_0 = U_0 + iV_0 .
 > $$
 >
-> By hypotheses (7) and Theorem §16.1, the limits as $(x, y)$ approaches $(x_0, y_0)$ of $u$, $v$, $U$ and $V$ exist and equal $u_0$, $v_0$, $U_0$ and $V_0$. Limits of real functions of two variables obey the sum, product and quotient laws ([[§91 Limits and Continuity#^thm-91-2|Calc Thm. §91.2]]).
+> By hypotheses (7) and Theorem §16.1, the limits as $(x, y)$ approaches $(x_0, y_0)$ of $u$, $v$, $U$ and $V$ exist and equal $u_0$, $v_0$, $U_0$ and $V_0$. Limits of real functions of two variables obey the sum, product and quotient laws ([[§107 Limits and Continuity#^thm-107-2|Calc Thm. §107.2]]).
 >
 > **(8).** The components of $f + F$ are $u + U$ and $v + V$, with limits $u_0 + U_0$ and $v_0 + V_0$. By Theorem §16.1 again, $f(z) + F(z) \to (u_0 + U_0) + i(v_0 + V_0) = w_0 + W_0$. (Directly from the definition, B&C's Exercise 6(b): choose $\delta$ so that $|f(z) - w_0| < \varepsilon/2$ and $|F(z) - W_0| < \varepsilon/2$ for $0 < |z - z_0| < \delta$; then $|(f + F) - (w_0 + W_0)| < \varepsilon$ by the triangle inequality.)
 >
@@ -169,7 +169,7 @@ tags: [complex-variables, math342]
 
 ^pf-16-2
 
-*Uses:* [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§91 Limits and Continuity#^thm-91-2|Calc Thm. §91.2]] (limit laws in two variables), [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§6 Complex Conjugates#^prop-6-3|§6.3]] ($W\bar W = |W|^2$)
+*Uses:* [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§107 Limits and Continuity#^thm-107-2|Calc Thm. §107.2]] (limit laws in two variables), [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§6 Complex Conjugates#^prop-6-3|§6.3]] ($W\bar W = |W|^2$)
 
 > [!remark]- Connections
 > - Theorem §16.1 is the statement that a function into $\mathbb{R}^2$ has a limit exactly when each coordinate does, because $\max(|a|, |b|) \le |a + ib| \le |a| + |b|$; the same comparison of norms is used for sequences in [[§60 Convergence of Sequences#^thm-60-2|Theorem §60.2]]. The rigorous home of the real limit laws used here is [[§3 Continuity and Limits of Functions|452 §3]] ([[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]] for products, [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] for quotients, stated there for continuity).
@@ -212,7 +212,7 @@ From definition (2) of [[§15 Limits|§15]] it is easy to compute the two basic 
 
 ^pf-16-3
 
-*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§16 Theorems on Limits#^thm-16-2|§16.2]], [[§13 Functions and Mappings#^def-13-3|Def. §13.3]], [[§13 Functions and Mappings#^def-13-new1|Def. §13.4]]
+*Uses:* [[§15 Limits#^def-15-1|Def. §15.1]], [[§16 Theorems on Limits#^thm-16-2|§16.2]], [[§13 Functions and Mappings#^def-13-3|Def. §13.3]], [[§13 Functions and Mappings#^def-13-4|Def. §13.4]]
 
 > [!example] Example §16.1: Cancel, Then Use the Quotient Law
 > Determine whether

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: equations — Topological groups and the classical matrix groups. That the classical groups are manifolds, as level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]), is [[§11 The Classical Groups Are Topological Manifolds|§11]]; acting on spaces, they then feed the quotient thread.*
 
-*Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§12 The Implicit Function Theorem|Implicit Function Theorem]]).*
+*Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§15 The Implicit Function Theorem|Implicit Function Theorem]]).*
 
 > [!remark] Remark: Why This Section
 > Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§11 The Classical Groups Are Topological Manifolds|§11, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§12 Group Actions and Orbit Spaces|§12]]–[[§13 Homogeneous Spaces|§13]]: spheres, projective spaces, Grassmannians.
@@ -52,7 +52,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-10-1
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§4 Subgroups#^def-4-1|493 Def. §4.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§4 Subgroups#^def-4-1|493 Def. §4.1]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 ## Classical Matrix Groups
 
@@ -86,7 +86,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in 493: inversions [[§21 The Sign Homomorphism and the Alternating Group#^def-21-1|493 Def. §21.1]], the sign [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]] (hub: [[The Sign Homomorphism]]).
-> - In linear algebra: [[§33 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
+> - In linear algebra: [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
 
 > [!theorem] Proposition §10.2: Properties of the Sign
 > 1. $\operatorname{sgn} : S_n \to \{\pm 1\}$ is a group homomorphism: $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$.
@@ -114,7 +114,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-10-2
 
 > [!remark]- Connections
-> - [[The symmetric group S₃]] in 493; the explicit $2 \times 2$ and $3 \times 3$ formulas in LADR: [[§34 Determinants#^ladr-9-47|LADR 9.47]].
+> - [[The symmetric group S₃]] in 493; the explicit $2 \times 2$ and $3 \times 3$ formulas in LADR: [[§37 Determinants#^ladr-9-47|LADR 9.47]].
 
 > [!remark] Remark
 > The facts used in the determinant computation of [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|Proposition §11.1]] are exactly (2) and (4) above: the identity permutation contributes with sign $+1$ (which is why the answer is $+\operatorname{tr} V$), and a permutation fixing all but one symbol is the identity (which is why only that one term survives).
@@ -133,7 +133,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-10-3
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§34 Determinants#^ladr-9-46|LADR 9.46]], [[§34 Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[§3 Continuity and Limits of Functions#^thm-3-1|452 §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]]
 
 > [!definition] Definition §10.4: General Linear Group
 > The **general linear group** is
@@ -148,7 +148,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-10-4
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]], workhorse example [[Matrix groups GLₙ, SLₙ and O(n)]].
@@ -165,11 +165,11 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-10-4
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§9 Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§9 Matrices#^ladr-3-46|LADR 3.46]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 §3.3]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
 > - The smooth structure on $\operatorname{Mat}(n,\mathbb{R})$, of which $\mathrm{GL}(n,\mathbb{R})$ is an open subset: [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]]; all the classical groups together: [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]].
-> - The inverse by cofactors, $g^{-1} = \operatorname{adj}(g)/\det(g)$, used for continuity of inversion: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|235 Thm. §22.2]], with the adjugate of [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-2|235 Def. §22.2]].
+> - The inverse by cofactors, $g^{-1} = \operatorname{adj}(g)/\det(g)$, used for continuity of inversion: [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]], with the adjugate of [[§27 Cramer’s Rule, Volume, and Linear Transformations#^def-27-2|235 Def. §27.2]].
 
 The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$, and $\mathrm{U}(1) = S^1$ are collected in [[§15 The Classical Groups|§15]].
 
@@ -178,7 +178,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 
 ^def-10-5
 
-*Uses:* [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|§10.1]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|§10.4]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[Equivalent Conditions for Continuity|590 §9.1]]
+*Uses:* [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|§10.1]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|§10.4]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[Equivalent Conditions for Continuity|590 §10.1]]
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; $\mathrm{SL}_n = \ker\det$, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]].
@@ -196,7 +196,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^def-10-6
 
 > [!remark]- Connections
-> - In linear algebra, the isometries of $\mathbb{R}^n$: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
+> - In linear algebra, the isometries of $\mathbb{R}^n$: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - $\mathrm{O}(n)$ is a manifold of dimension $\tfrac{n(n-1)}{2}$: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]].
 > - Used in Relativity: the Lorentz group $O(1, 3)$, the matrices preserving the form $\eta$, and its four pieces — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
@@ -212,10 +212,10 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 
 ^pf-10-5
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§34 Determinants#^ladr-9-56|LADR 9.56]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]]
 
 > [!remark]- Connections
-> - The real case of [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (characterizations of unitary matrices).
+> - The real case of [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (characterizations of unitary matrices).
 
 > [!definition] Definition §10.7: Special Orthogonal Group
 > $\mathrm{SO}(n,\mathbb{R}) = \mathrm{O}(n,\mathbb{R}) \cap \mathrm{SL}(n,\mathbb{R}) = \{\, g \in \mathrm{O}(n,\mathbb{R}) \mid \det g = 1 \,\}$.
@@ -260,7 +260,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 *Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|§10.4]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
 > [!remark]- Connections
-> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§9 Continuous Functions#^ex-9-5|590 Ex. §9.5]]; unitary matrices in linear algebra: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]]; unitary matrices in linear algebra: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - $\mathrm{U}(n)$ is a manifold of dimension $n^2$: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]].
 > - Used in Quantum Mechanics: $U(2)$ and $SU(2)$ as the groups of spin-½ rotations, $SU(2) \cong S^3$, a double cover of $SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 > - Used in Quantum Field Theory: $SU(2)$, identified with the sphere $S^3$, is compact, and averaging over it makes every finite-dimensional representation of $SU(2)$ and $SO(3)$ unitary and completely reducible; for the non-compact Lorentz group no nontrivial finite-dimensional representation is unitary — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-5|QFT Theorem §C3.1.5]], [[§C3.2 The Lorentz Algebra and Its Finite-Dimensional Representations#^thm-c3-2-12|QFT Theorem §C3.2.12]].
@@ -277,4 +277,4 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^ex-10-3
 
 > [!remark]- Connections
-> - The circle group in 590: [[§9 Continuous Functions#^ex-9-5|590 Ex. §9.5]]; $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ as an orbit space: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]].
+> - The circle group in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]]; $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ as an orbit space: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]].

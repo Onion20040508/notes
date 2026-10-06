@@ -12,10 +12,10 @@ tags: [chapter, topology]
 **Builds on (other subjects):** [[Single Variable Analysis]] (1)
 
 ## Sections
-- [[§15 Compact Spaces]]
-- [[§16 Limit Point Compactness]]
-- [[§17 Local Compactness]]
-- [[§17a Discrete and Indiscrete Spaces]]
+- [[§18 Compact Spaces]]
+- [[§19 Limit Point Compactness]]
+- [[§20 Local Compactness]]
+- [[§21 Discrete and Indiscrete Spaces]]
 
 ## Central results
 - [[Closed Subspace of a Compact Space is Compact]] (§15.2)
@@ -28,7 +28,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]: 30 later results
-- [[§15 Compact Spaces#^thm-15-10|Theorem §15.10: Closed Intervals are Compact]]: 26 later results
-- [[Compact Subspace of a Hausdorff Space is Closed|Theorem §15.4: Compact Subspace of Hausdorff is Closed]]: 24 later results
-- [[Lebesgue Number Lemma|Lemma §16.3: Lebesgue Number Lemma]]: 24 later results
+- [[§18 Compact Spaces#^lem-18-1|Lemma §18.1: Compactness in Subspaces]]: 30 later results
+- [[§18 Compact Spaces#^thm-18-10|Theorem §18.10: Closed Intervals are Compact]]: 26 later results
+- [[Compact Subspace of a Hausdorff Space is Closed|Theorem §18.4: Compact Subspace of Hausdorff is Closed]]: 24 later results
+- [[Lebesgue Number Lemma|Lemma §19.2: Lebesgue Number Lemma]]: 24 later results

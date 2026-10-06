@@ -37,7 +37,7 @@ It is often not easy to check integrability from the definitions — we need pro
 *Why monotone functions are integrable: on each subinterval of the equal partition, the gap between upper and lower rectangles is a box of width $\tfrac{b-a}{n}$ and height $f(t_k) - f(t_{k-1})$ (red). Slid sideways, the boxes stack into one column of height $f(b) - f(a)$ — the telescoping sum — so $U - L = \bigl(f(b) - f(a)\bigr)\tfrac{b-a}{n}$. A jump of $f$ (hollow and filled dots) changes nothing.*
 
 > [!remark]- Connections
-> - The countability of the discontinuities mentioned here is proved in [[§18 Differentiation Theory#^thm-18-1|551 Thm. §18.1]], and a monotone function is even differentiable a.e. by [[§18 Differentiation Theory#^thm-18-9|551 Thm. §18.9]].
+> - The countability of the discontinuities mentioned here is proved in [[§28 Differentiation Theory#^thm-28-1|551 Thm. §28.1]], and a monotone function is even differentiable a.e. by [[§29 Lebesgue's Differentiation Theorem#^thm-29-1|551 Thm. §29.1]].
 
 > [!theorem] Theorem §33.2: Linearity
 > If $f, g: [a,b] \to \mathbb{R}$ are integrable, then:
@@ -77,11 +77,11 @@ It is often not easy to check integrability from the definitions — we need pro
 
 ^pf-33-2
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-1|§32.1]]
 
 > [!remark]- Connections
-> - Double-integral version: [[§15 Multivariable Integration#^thm-15-2|452 Thm. §15.2]] and [[§15 Multivariable Integration#^thm-15-3|452 Thm. §15.3]].
-> - Computational version: [[§35 The Definite Integral#^thm-35-4|Calc Thm. §35.4]] (with worked examples).
+> - Double-integral version: [[§22 Properties of the Integral#^thm-22-1|452 Thm. §22.1]] and [[§22 Properties of the Integral#^thm-22-2|452 Thm. §22.2]].
+> - Computational version: [[§40 Properties of the Definite Integral#^thm-40-1|Calc Thm. §40.1]] (with worked examples).
 
 > [!theorem] Theorem §33.3: Monotonicity of the Integral
 > If $f, g$ are integrable on $[a,b]$ and $f(x) \leq g(x)$ for all $x$, then
@@ -104,8 +104,8 @@ It is often not easy to check integrability from the definitions — we need pro
 *Uses:* [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
 
 > [!remark]- Connections
-> - Double-integral version: [[§15 Multivariable Integration#^thm-15-5|452 Thm. §15.5]].
-> - Computational version: [[§35 The Definite Integral#^thm-35-6|Calc Thm. §35.6]] (with worked examples).
+> - Double-integral version: [[§22 Properties of the Integral#^thm-22-4|452 Thm. §22.4]].
+> - Computational version: [[§40 Properties of the Definite Integral#^thm-40-3|Calc Thm. §40.3]] (with worked examples).
 
 > [!theorem] Theorem §33.4: Absolute Values
 > If $f: [a,b] \to \mathbb{R}$ is integrable, then $|f|$ is integrable, and
@@ -146,7 +146,7 @@ It is often not easy to check integrability from the definitions — we need pro
 ^rem-33-1
 
 > [!remark]- Connections
-> - Double-integral version: [[§15 Multivariable Integration#^cor-15-6|452 Cor. §15.6]].
+> - Double-integral version: [[§22 Properties of the Integral#^cor-22-5|452 Cor. §22.5]].
 
 > [!theorem] Theorem §33.5: Additivity over Subintervals
 > Let $a < c < b$. If $f$ is integrable on $[a,c]$ and on $[c,b]$, then $f$ is integrable on $[a,b]$, and
@@ -171,8 +171,8 @@ It is often not easy to check integrability from the definitions — we need pro
 *Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]]
 
 > [!remark]- Connections
-> - Double-integral version, additivity over almost disjoint regions: [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].
-> - Computational version: [[§35 The Definite Integral#^thm-35-5|Calc Thm. §35.5]] (with worked examples).
+> - Double-integral version, additivity over almost disjoint regions: [[§22 Properties of the Integral#^thm-22-3|452 Thm. §22.3]].
+> - Computational version: [[§40 Properties of the Definite Integral#^thm-40-2|Calc Thm. §40.2]] (with worked examples).
 
 The converse direction — that integrability passes *down* to subintervals — is what makes splitting a given integral legal in the first place:
 
@@ -198,7 +198,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 
 ^pf-33-6
 
-*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-2|§32.2]]
+*Uses:* [[§32 The Definition of the Riemann Integral#^thm-32-4|§32.4]], [[§32 The Definition of the Riemann Integral#^lem-32-1|§32.1]]
 
 > [!remark] Remark
 > Together the two results make integrability on $[a,b]$ *equivalent* to integrability on both halves, and they license every splitting used later: chopping an integral along a partition (as in the [[Fundamental Theorem of Calculus|FTC]]'s telescoping, §34) silently invokes this proposition to know each piece $\int_{t_{k-1}}^{t_k} f$ exists.
@@ -246,7 +246,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 *Positivity of the integral: if $f(x_0) > 0$, continuity keeps $f > \tfrac12 f(x_0)$ on $[x_0 - \varepsilon, x_0 + \varepsilon]$, so the region under $f$ (blue) contains the red rectangle of area $\tfrac12 f(x_0) \cdot 2\varepsilon = f(x_0)\,\varepsilon > 0$ — hence $\int_a^b f \geq f(x_0)\,\varepsilon > 0$.*
 
 > [!remark]- Connections
-> - Lebesgue version without continuity, where the conclusion weakens to $f = 0$ a.e.: [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|551 Prop. §14.11]].
+> - Lebesgue version without continuity, where the conclusion weakens to $f = 0$ a.e.: [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-4|551 Prop. §21.4]].
 
 > [!theorem] Corollary §33.8: Vanishing Integral of a Square
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $\int_a^b f^2\,dx = 0$, then $f \equiv 0$.
@@ -261,7 +261,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 *Uses:* [[§33 Properties of the Riemann Integral#^thm-33-7|§33.7]]
 
 > [!remark]- Connections
-> - Used in Applied Linear Algebra for the positivity axiom of the integral inner product on C[a, b]: [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]].
+> - Used in Applied Linear Algebra for the positivity axiom of the integral inner product on C[a, b]: [[§56 Inner Product Spaces#^ex-56-4|235 Ex. §56.4]].
 
 > [!example] Example §33.1: Orthogonal to Everything Means Zero
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and suppose that for *all* continuous $g: [a,b] \to \mathbb{R}$,
@@ -275,7 +275,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 ^ex-33-1
 
 > [!remark] Remark: Inner Products on Function Spaces
-> In $\mathbb{R}^2$, $\mathbb{R}^3$ we have orthogonality of vectors, governed by the inner product $\langle x, y \rangle = \sum_i x_i y_i$. On the space of continuous functions on $[a,b]$ — an *infinite-dimensional* vector space — the integral supplies an inner product ([[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]]):
+> In $\mathbb{R}^2$, $\mathbb{R}^3$ we have orthogonality of vectors, governed by the inner product $\langle x, y \rangle = \sum_i x_i y_i$. On the space of continuous functions on $[a,b]$ — an *infinite-dimensional* vector space — the integral supplies an inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]]):
 >
 > $$
 > \langle f, g \rangle = \int_a^b f(x)g(x)\,dx.
@@ -286,7 +286,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 ^rem-33-3
 
 > [!remark]- Connections
-> - Computational version: sines and cosines are orthogonal in this inner product, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]], which gives the formulas for the Fourier coefficients, [[§6 Periodic Functions and Fourier Series#^prop-6-4|341 Prop. §6.4]].
+> - Computational version: sines and cosines are orthogonal in this inner product, [[§9 Periodic Functions and Fourier Series#^prop-9-3|341 Prop. §9.3]], which gives the formulas for the Fourier coefficients, [[§9 Periodic Functions and Fourier Series#^prop-9-4|341 Prop. §9.4]].
 
 ## Mean Value Theorems for Integrals
 
@@ -326,8 +326,8 @@ The converse direction — that integrability passes *down* to subintervals — 
 *Left: the rectangle over $[a,b]$ at the mean height $\tfrac{1}{b-a}\int_a^b f$ (red) has the same area as the region under $f$ (blue); a continuous $f$ must cross that height, at some $x_0$. Right: the step function of the remark below jumps over its mean value $0$ — without continuity the mean need not be attained.*
 
 > [!remark]- Connections
-> - Computational version: [[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]] (with worked examples).
-> - Used in ODEs: it proves the sifting property $\int f(t)\,\delta(t - t_0)\,dt = f(t_0)$ of the delta function, [[§25 Impulse Functions#^thm-25-3|331 Thm. §25.3]].
+> - Computational version: [[§49 Average Value of a Function#^thm-49-1|Calc Thm. §49.1]] (with worked examples).
+> - Used in ODEs: it proves the sifting property $\int f(t)\,\delta(t - t_0)\,dt = f(t_0)$ of the delta function, [[§30 Impulse Functions#^thm-30-3|331 Thm. §30.3]].
 
 What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the mean value is attained — it equals the value of $f$ at some point.
 
@@ -449,4 +449,4 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 *Uses:* [[§24 Uniform Convergence#^thm-24-2|§24.2]], [[§32 The Definition of the Riemann Integral#^thm-32-7|§32.7]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]], [[§33 Properties of the Riemann Integral#^thm-33-4|§33.4]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]]
 
 > [!remark]- Connections
-> - The Riemann integral is not closed under monotone limits ([[§8 Motivation꞉ The Riemann Integral#^rem-8-2|551 Rem. §8.2]]); the Lebesgue integral exchanges limit and integral under monotonicity or domination alone: [[§14 The Lebesgue Integral for Simple Functions#^thm-14-4|551 Thm. §14.4]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]].
+> - The Riemann integral is not closed under monotone limits ([[§8 Motivation꞉ The Riemann Integral#^rem-8-2|551 Rem. §8.2]]); the Lebesgue integral exchanges limit and integral under monotonicity or domination alone: [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|551 Thm. §20.7]], [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]].

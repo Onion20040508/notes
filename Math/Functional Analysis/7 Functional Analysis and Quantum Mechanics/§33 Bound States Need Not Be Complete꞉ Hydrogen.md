@@ -60,4 +60,4 @@ tags: [functional-analysis, math556, companion]
 ^rem-33-2
 
 > [!remark]- Connections
-> - The finite-dimensional versions in LADR: adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-1|LADR 7.1]], self-adjoint [[§22 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], unitary [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|LADR 7.51]]; spectral theorem: [[Real spectral theorem]], [[Complex spectral theorem]].
+> - The finite-dimensional versions in LADR: adjoint [[§23 Self-Adjoint and Normal Operators#^ladr-7-1|LADR 7.1]], self-adjoint [[§23 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], unitary [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|LADR 7.51]]; spectral theorem: [[Real spectral theorem]], [[Complex spectral theorem]].

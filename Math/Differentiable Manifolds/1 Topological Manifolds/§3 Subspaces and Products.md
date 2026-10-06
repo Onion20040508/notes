@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — New spaces from old, first the easy constructions: subspaces and products, with the universal properties that make maps into them easy to check.*
 
-*Reference: Lee Appendix A (“Subspaces, Products, Disjoint Unions, and Quotients”); MATH 590 notes [[§5 Subspace Topology|§5]] (subspaces), [[§4 Product Topology|§4]] (products), [[§12 Quotient Topology|§12]] (quotients).*
+*Reference: Lee Appendix A (“Subspaces, Products, Disjoint Unions, and Quotients”); MATH 590 notes [[§5 Subspace Topology|§5]] (subspaces), [[§4 Product Topology|§4]] (products), [[§13 Quotient Topology|§13]] (quotients).*
 
 > [!remark] Remark: Why This Section
 > Many of the most important manifolds are not defined by charts directly but are *constructed* out of other spaces: complex projective space, Grassmannians, moduli spaces are all quotients. Uribe: “quotients are the most important construction; a lot of really neat, important manifolds are constructed as quotients of others.” The guiding question of the lecture, for each construction, is whether the two point-set conditions in the definition of a manifold are *heritable*: if $X$ is $T_2$ and second countable, is the new space too? For subspaces and products the answer is an easy yes; for quotients *everything can go wrong*, and the substance of the lecture is a usable criterion for when it doesn't.
@@ -65,7 +65,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§6 Closed Sets and Limit Points#^thm-6-3|590 §6.3]], used in [[§5 Quotient Maps#^lem-5-8|§5.8]].
+> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]], used in [[§5 Quotient Maps#^lem-5-8|§5.8]].
 
 > [!theorem] Proposition §3.3: Universal Property of the Subspace Topology
 > Let $S \subseteq X$ carry the subspace topology and let $\iota : S \hookrightarrow X$ be the inclusion.
@@ -93,10 +93,10 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-3-3
 
-*Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
-> - In MATH 590 these are the inclusion and range rules of [[§9 Continuous Functions#^thm-9-4|590 §9.4 (Rules for Continuous Functions)]].
+> - In MATH 590 these are the inclusion and range rules of [[§10 Continuous Functions#^thm-10-4|590 §10.4 (Rules for Continuous Functions)]].
 
 > [!theorem] Corollary §3.4: The Universal Property Characterizes the Subspace Topology
 > The subspace topology is the unique topology $\mathcal{T}$ on $S$ such that, for every space $Z$, a map $f : Z \to (S, \mathcal{T})$ is continuous if and only if $\iota \circ f : Z \to X$ is continuous.
@@ -133,7 +133,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 *Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§3 Subspaces and Products#^lem-3-1|§3.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: second countability of subspaces is [[§18 Countability Axioms#^thm-18-3|590 §18.3]]; Hausdorff is [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]].
+> - Home in MATH 590: second countability of subspaces is [[§22 Countability Axioms#^thm-22-3|590 §22.3]]; Hausdorff is [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]].
 > - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
 
 > [!theorem] Proposition §3.6: Open Subsets of Manifolds Are Manifolds
@@ -176,7 +176,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 ^def-3-3
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; arbitrary products in [[§10 Product Topology on Arbitrary Products#^def-10-1|590 Def. §10.1]].
+> - Home in MATH 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; arbitrary products in [[§11 Product Topology on Arbitrary Products#^def-11-1|590 Def. §11.1]].
 > - Smooth version: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|The Product Smooth Structure, §18.8]].
 
 > [!theorem] Proposition §3.7: The Product Basis Generates a Topology
@@ -264,10 +264,10 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^pf-3-10
 
-*Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^prop-3-9|§3.9]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (1), [[§9 Continuous Functions#^thm-9-4|590 §9.4]]
+*Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^prop-3-9|§3.9]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (1), [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
+> - Home in MATH 590: [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
 > - Smooth version: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|§18.8]], [[§18 Smooth Functions and Smooth Maps#^prop-18-9|§18.9]].
 
 > [!remark] Remark: Why the Universal Property Matters
@@ -309,10 +309,10 @@ This completes the pattern: each of the three constructions — subspace, produc
 *Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: second countability of products is [[§18 Countability Axioms#^thm-18-3|590 §18.3]].
+> - Home in MATH 590: second countability of products is [[§22 Countability Axioms#^thm-22-3|590 §22.3]].
 > - Gives product manifolds their point-set hygiene: [[§18 Smooth Functions and Smooth Maps#^prop-18-8|§18.8]].
 
 > [!remark] Remark
-> Both statements extend to finite products by induction. For *infinite* products the story is subtler (product vs. box topology, 590 [[§10 Product Topology on Arbitrary Products#^def-10-2|§10]]), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.
+> Both statements extend to finite products by induction. For *infinite* products the story is subtler (product vs. box topology, 590 [[§11 Product Topology on Arbitrary Products#^def-11-2|§11]]), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.
 
 ^rem-3-6

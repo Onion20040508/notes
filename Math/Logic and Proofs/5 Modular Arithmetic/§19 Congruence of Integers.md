@@ -7,7 +7,7 @@ eccles: "Ch. 19"
 aliases: ["Eccles 19"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§18★ Linear Diophantine Equations]] · ↑ [[· 5 Modular Arithmetic]] · [[§20 Linear Congruences]] →
+← [[§18d The Equation 140m + 63n = 35]] · ↑ [[· 5 Modular Arithmetic]] · [[§20 Linear Congruences]] →
 
 *Eccles, Chapter 19 and Problems V · MAT 200 lecture (syllabus week 11: congruence modulo m, modular arithmetic, the remainder map). No homework survives for this chapter.*
 
@@ -56,7 +56,7 @@ The definition (and the notation $\equiv$) is due to Gauss, *Disquisitiones arit
 
 *Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]]
 
-These properties are used without comment from now on. They say that congruence modulo $m$ is an *equivalence relation* ([[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]]), the theme of [[§22 Partitions and Equivalence Relations|§22]].
+These properties are used without comment from now on. They say that congruence modulo $m$ is an *equivalence relation* ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]), the theme of [[§22 Partitions and Equivalence Relations|§22]].
 
 > [!remark]- Connections
 > - [[§6 Divisibility and Congruence#^prop-6-2|493 Prop. §6.2]] (congruence modulo $n$ is an equivalence relation).

@@ -16,8 +16,8 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Embeddings#^prop-36-4|Proposition §36.4: Proper Maps into Manifolds Are Closed]]
 
 ## Its proof uses (other subjects)
-- [[§6 Closed Sets and Limit Points#^thm-6-2|590 §6.2: Closed Sets in Subspaces]]
-- [[§9 Continuous Functions#^thm-9-1|590 §9.1: Equivalent Conditions for Continuity]]
+- [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2: Closed Sets in Subspaces]]
+- [[§10 Continuous Functions#^thm-10-1|590 §10.1: Equivalent Conditions for Continuity]]
 
 ## Used in (Differentiable Manifolds)
 - [[§36 Embeddings#^cor-36-6|Corollary §36.6: Injective Immersions of Compact Manifolds]]

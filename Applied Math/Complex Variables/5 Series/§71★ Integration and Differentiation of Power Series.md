@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 5
-section: 71
+section: "71★"
 bc: "71"
 aliases: ["B&C 71"]
 tags: [complex-variables, math342, extension]
@@ -109,7 +109,7 @@ The corollary is often helpful in establishing the analyticity of functions and 
 *Uses:* [[§71★ Integration and Differentiation of Power Series#^cor-71-2|§71.2]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]]
 
 > [!remark]- Remark: A Taylor Series Can Converge Further, to Something Else
-> Corollary §71.3 is about convergence *to $f$*. The series itself may converge in a larger disk. Expand $\operatorname{Log}z$ about $z_0 = -1 + i$. The nearest points where $\operatorname{Log}$ fails to be analytic are on its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), the ray $x \le 0$, $y = 0$; the closest is $-1$, at distance $1$. Since $\frac{d}{dz}\operatorname{Log}z = 1/z$, the series is $\operatorname{Log}z_0 + \sum_{n \ge 1}\frac{(-1)^{n+1}}{nz_0^n}(z - z_0)^n$, whose terms are those of the logarithm series of [[§71★ Integration and Differentiation of Power Series#^ex-71-4|Example §71.4]] scaled by $z_0$; it converges in the larger disk $|z - z_0| < |z_0| = \sqrt2$, which reaches the genuine singular point $0$. In that disk its sum is the branch of $\log z$ that agrees with $\operatorname{Log}z$ in the upper half plane, and below the cut it equals $\operatorname{Log}z + 2\pi i$. So in the disk of radius $\sqrt2$ the series does not converge to $\operatorname{Log}z$, in agreement with the corollary. The branch cut, not the series, limits the disk.
+> Corollary §71.3 is about convergence *to $f$*. The series itself may converge in a larger disk. Expand $\operatorname{Log}z$ about $z_0 = -1 + i$. The nearest points where $\operatorname{Log}$ fails to be analytic are on its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]), the ray $x \le 0$, $y = 0$; the closest is $-1$, at distance $1$. Since $\frac{d}{dz}\operatorname{Log}z = 1/z$, the series is $\operatorname{Log}z_0 + \sum_{n \ge 1}\frac{(-1)^{n+1}}{nz_0^n}(z - z_0)^n$, whose terms are those of the logarithm series of [[§71★ Integration and Differentiation of Power Series#^ex-71-4|Example §71.4]] scaled by $z_0$; it converges in the larger disk $|z - z_0| < |z_0| = \sqrt2$, which reaches the genuine singular point $0$. In that disk its sum is the branch of $\log z$ that agrees with $\operatorname{Log}z$ in the upper half plane, and below the cut it equals $\operatorname{Log}z + 2\pi i$. So in the disk of radius $\sqrt2$ the series does not converge to $\operatorname{Log}z$, in agreement with the corollary. The branch cut, not the series, limits the disk.
 
 ^rem-71-1
 
@@ -160,7 +160,7 @@ The corollary is often helpful in establishing the analyticity of functions and 
 Since $S'$ is again analytic in the disk, the theorem can be applied repeatedly: $S$ has derivatives of all orders there, each given by a term-by-term differentiated series ([[§72★ Uniqueness of Series Representations#^ex-72-3|Example §72.3]]).
 
 > [!remark]- Connections
-> - The real counterparts are [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]] (integrating a uniformly convergent series) and [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]] (term-by-term calculus for power series), with the exchange of limit and integral [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]. In 451, differentiating term by term needs a separate argument about the derived series; here it follows from integration, because the Cauchy integral formula expresses a derivative as an integral. The calculus statement is [[§77 Representations of Functions as Power Series#^thm-77-1|Calc Thm. §77.1]].
+> - The real counterparts are [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]] (integrating a uniformly convergent series) and [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]] (term-by-term calculus for power series), with the exchange of limit and integral [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]. In 451, differentiating term by term needs a separate argument about the derived series; here it follows from integration, because the Cauchy integral formula expresses a derivative as an integral. The calculus statement is [[§89 Representations of Functions as Power Series#^thm-89-1|Calc Thm. §89.1]].
 
 ## Examples
 

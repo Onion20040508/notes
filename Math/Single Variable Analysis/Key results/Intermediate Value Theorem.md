@@ -27,10 +27,10 @@ tags: [real-analysis, hub]
 - [[§33 Properties of the Riemann Integral#^prop-33-11|Proposition §33.11: The Witness Can Be Taken Interior]]
 
 ## Used in (Multivariable Analysis)
-- [[§12 The Implicit Function Theorem#^thm-12-1|Theorem §12.1: Implicit Function Theorem]]
+- [[§15 The Implicit Function Theorem#^thm-15-1|Theorem §15.1: Implicit Function Theorem]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^lem-32-5|Lemma §32.5: Image Measure Bounded by Total Variation]]
 
 ## Used in (Functional Analysis)
 - [[§25 Sequence and Function Spaces#^prop-25-5|Proposition §25.5: L^∞(E) is Not Separable]]
@@ -39,5 +39,5 @@ tags: [real-analysis, hub]
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[§22 More on Metric Spaces꞉ Connectedness]].
 - Its proof takes $\sup$ of a set, so it rests on the [[Completeness Axiom]]; over $\mathbb{Q}$ it fails ($x^2-2$ changes sign with no rational zero).
-- The abstract form is proved in 590: [[Continuous Image of a Connected Space is Connected|590 Thm. §13.3]], giving the general [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
-- **Also in [[Calculus]]:** [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (computational treatment with worked examples).
+- The abstract form is proved in 590: [[Continuous Image of a Connected Space is Connected|590 Thm. §15.3]], giving the general [[§16 Connected Subspaces of ℝ#^thm-16-3|590 Thm. §16.3]].
+- **Also in [[Calculus]]:** [[§12 Continuity#^thm-12-10|Calc Thm. §12.10]] (computational treatment with worked examples).

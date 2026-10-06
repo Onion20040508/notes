@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 119
+section: "119★"
 bc: "119"
 aliases: ["B&C 119"]
 tags: [complex-variables, math342, extension]
@@ -19,7 +19,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 > [!example] Example §119.1: A Half Plane with a Heated Segment
 > Find the steady temperatures $T(x, y)$ in a thin semi-infinite plate $y \ge 0$ whose faces are insulated and whose edge $y = 0$ is kept at temperature $0$, except on the segment $-1 < x < 1$, where it is kept at temperature $1$ (B&C's Fig. 155). $T$ is to be bounded. (This is natural if the plate is regarded as the limit of plates $0 \le y \le y_0$ whose upper edge is kept at a fixed temperature, as $y_0 \to \infty$; it would even be reasonable to require $T \to 0$ as $y \to \infty$.)
 >
-> **The [[§116★ Transformations of Harmonic Functions#^def-116-new1|Dirichlet problem]].**
+> **The [[§116★ Transformations of Harmonic Functions#^def-116-2|Dirichlet problem]].**
 >
 > $$
 > T_{xx}(x, y) + T_{yy}(x, y) = 0 \quad (-\infty < x < \infty,\ y > 0), \qquad (1)
@@ -84,7 +84,7 @@ The first application of the method of [[§117★ Transformations of Boundary Co
 ^ex-119-1
 
 > [!remark]- Connections
-> - The same Dirichlet problem by Fourier integrals: the half-plane Poisson formula $u = \frac1\pi\int f(s)\,\frac{y}{y^2 + (x - s)^2}\,ds$, [[§38 Potential in Unbounded Regions#^rem-38-2|341 Rem. §38.2]]; its example with a single jump at $0$ gives $\frac12 + \frac1\pi\arctan(x/y)$, the one-endpoint version of (6). B&C derives the half-plane formula in [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|Theorem §139.1]] (Chapter 12).
+> - The same Dirichlet problem by Fourier integrals: the half-plane Poisson formula $u = \frac1\pi\int f(s)\,\frac{y}{y^2 + (x - s)^2}\,ds$, [[§47 Potential in Unbounded Regions#^rem-47-2|341 Rem. §38.2]]; its example with a single jump at $0$ gives $\frac12 + \frac1\pi\arctan(x/y)$, the one-endpoint version of (6). B&C derives the half-plane formula in [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|Theorem §139.1]] (Chapter 12).
 
 ## Lines of Flow and Uniqueness
 

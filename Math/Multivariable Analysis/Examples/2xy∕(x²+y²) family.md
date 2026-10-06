@@ -8,9 +8,9 @@ The function $f(x,y) = \dfrac{2xy}{x^2 + y^2}$ with $f(0,0) = 0$. In polar coord
 
 - Not continuous at the origin: $f(x,x) = 1$ along $y = x$ ([[§3 Continuity and Limits of Functions#^ex-3-1|§3]])
 - No limit at the origin: along $y = kx$ the value depends on $k$ ([[§3 Continuity and Limits of Functions#^ex-3-2|§3]])
-- Partials exist at the origin, but $f$ is not continuous there ([[§4 Partial Derivatives#^ex-4-1|§4]])
-- Why differentiability is not defined as "the partials exist" ([[§6 Differentiability#^rem-6-1|§6]])
-- Partials exist, but $f$ is not differentiable at the origin ([[§6 Differentiability#^ex-6-1|§6]])
+- Partials exist at the origin, but $f$ is not continuous there ([[§5 Partial Derivatives#^ex-5-1|§5]])
+- Why differentiability is not defined as "the partials exist" ([[§7 Differentiability#^rem-7-1|§7]])
+- Partials exist, but $f$ is not differentiable at the origin ([[§7 Differentiability#^ex-7-1|§7]])
 
 ## Not continuous at the origin: $f(x,x) = 1$ along $y = x$
 ![[§3 Continuity and Limits of Functions#^ex-3-1]]
@@ -19,10 +19,10 @@ The function $f(x,y) = \dfrac{2xy}{x^2 + y^2}$ with $f(0,0) = 0$. In polar coord
 ![[§3 Continuity and Limits of Functions#^ex-3-2]]
 
 ## Partials exist at the origin, but $f$ is not continuous there
-![[§4 Partial Derivatives#^ex-4-1]]
+![[§5 Partial Derivatives#^ex-5-1]]
 
 ## Why differentiability is not defined as "the partials exist"
-![[§6 Differentiability#^rem-6-1]]
+![[§7 Differentiability#^rem-7-1]]
 
 ## Partials exist, but $f$ is not differentiable at the origin
-![[§6 Differentiability#^ex-6-1]]
+![[§7 Differentiability#^ex-7-1]]

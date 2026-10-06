@@ -11,7 +11,7 @@ This section of the book — constructing decimal expansions of real numbers rig
 
 > [!remark] Remark: Decimal Expansions Elsewhere in the Vault
 > - The debt in question: the decimal expansion borrowed in [[§4 The Completeness Axiom#^rem-4-4|§4, Remark: Convincing Ourselves First]], where the [[Archimedean Property]] replaces it.
-> - Logic and Proofs treats infinite decimals as approximations from below: [[§13 Number Systems#^def-13-5|250 Def. §13.5]] (the real number an infinite decimal represents), [[§13 Number Systems#^prop-13-5|250 Prop. §13.5]] (it represents at most one number), [[§13 Number Systems#^ex-13-4|250 Ex. §13.4]] ($0.999\ldots = 1$) and [[§13 Number Systems#^thm-13-7|250 Thm. §13.7]] (recurring decimals are rational). Cantor's diagonal argument there uses decimal expansions to prove that ℝ is uncountable: [[§14 Counting Infinite Sets#^lem-14-11|250 Lemma §14.11]], [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]].
+> - Logic and Proofs treats infinite decimals as approximations from below: [[§13 Number Systems#^def-13-6|250 Def. §13.6]] (the real number an infinite decimal represents), [[§13 Number Systems#^prop-13-5|250 Prop. §13.5]] (it represents at most one number), [[§13 Number Systems#^ex-13-4|250 Ex. §13.4]] ($0.999\ldots = 1$) and [[§13 Number Systems#^thm-13-7|250 Thm. §13.7]] (recurring decimals are rational). Cantor's diagonal argument there uses decimal expansions to prove that ℝ is uncountable: [[§14a Uncountable Sets#^lem-14a-1|250 Lemma §14a.1]], [[§14a Uncountable Sets#^thm-14a-2|250 Thm. §14a.2]].
 > - ★ The truncated decimal expansions of $\sqrt2$ form a rational Cauchy sequence representing $\sqrt2$ in the Cauchy construction: [[§6★ ℝ from Cauchy Sequences of Rationals#^ex-6s-2|Example §6★.2]].
 
 ^rem-16-1

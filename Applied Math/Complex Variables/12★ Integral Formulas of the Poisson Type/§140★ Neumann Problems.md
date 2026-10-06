@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 140
+section: "140★"
 bc: "140"
 aliases: ["B&C 140"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§139★ Dirichlet Problem for a Half Plane]] · ↑ [[· 12★ Integral Formulas of the Poisson Type]]
+← [[§139★ Dirichlet Problem for a Half Plane]] · ↑ [[· 12★ Integral Formulas of the Poisson Type]] · [[§140a The Split Cylinder and the Boundary Values cos θ]] →
 
 *Brown–Churchill, Section 140.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -107,7 +107,7 @@ These observations suggest that $Q$ may be used to write an integral representat
 
 *Uses:* [[§140★ Neumann Problems#^lem-140-1|§140.1]], [[§135★ Dirichlet Problem for a Disk#^thm-135-1|§135.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
-The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
+The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ with insulated faces. Then (5) says that the flux of heat into the disk through its edge is proportional to $G(\theta)$ ([[§118★ Steady Temperatures#^def-118-2|Definition §118.2]]), and (4) is the natural physical requirement that the total rate of flow of heat into the disk be zero, since the temperatures do not vary with time.
 
 > [!remark] Remark: Why the Data Must Have Mean Zero
 > If (4) fails, the integral (3) still defines a harmonic function, but by (2) its normal derivative is
@@ -121,8 +121,8 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 ^rem-140-1
 
 > [!remark]- Connections
-> - Neumann's problem and the non-uniqueness up to a constant: [[§35 Potential Equation#^def-35-new3|341 Def. §35.2]] and [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]]. The compatibility condition $\oint\partial u/\partial n\,ds = 0$ in any region follows from Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]]; the remark above proves it for disks.
-> - $Q = -2r_0\ln|s - z|$ is $-4\pi r_0$ times the fundamental solution $\frac{1}{2\pi}\ln|z - s|$ of the two-dimensional Laplacian, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; (6) represents $U$ as a potential of a single layer of density proportional to $G$ on the circle.
+> - Neumann's problem and the non-uniqueness up to a constant: [[§44 Potential Equation#^def-44-5|341 Def. §44.5]] and [[§44 Potential Equation#^prop-44-1|341 Prop. §44.1]]. The compatibility condition $\oint\partial u/\partial n\,ds = 0$ in any region follows from Green's first identity, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|452 Thm. §28.2]]; the remark above proves it for disks.
+> - $Q = -2r_0\ln|s - z|$ is $-4\pi r_0$ times the fundamental solution $\frac{1}{2\pi}\ln|z - s|$ of the two-dimensional Laplacian, [[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]]; (6) represents $U$ as a potential of a single layer of density proportional to $G$ on the circle.
 
 ## Exterior of a Circle, Half Plane, Quadrant
 
@@ -206,13 +206,13 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 ^thm-140-4
 
 > [!proof]+ Proof
-> **Harmonic.** For each fixed real $t$, $\ln|z - t| = \operatorname{Re}\operatorname{Log}(z - t)$ is harmonic in $\operatorname{Im} z > 0$. (B&C states that (10) is then harmonic; here is why the interchange of differentiation and integration is allowed.) $G$ is bounded (continuous with finitely many jumps on any bounded interval, and $|G(t)| < M|t|^{-a}$ for large $|t|$). For $z$ in a closed disk $K$ in the upper half plane there is $C_K$ with $|\ln|z - t|| \le C_K\big(1 + \ln(1 + |t|)\big)$ and with the first and second partial derivatives of $\ln|z - t|$ in $x$ and $y$ bounded by $C_K/(1 + |t|)$. Since $a > 1$, $|G(t)|\big(1 + \ln(1 + |t|)\big)$ is integrable over the line, so the integral (10) converges and may be differentiated twice under the integral sign (dominated convergence, [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]]). Hence $U$ satisfies Laplace's equation.
+> **Harmonic.** For each fixed real $t$, $\ln|z - t| = \operatorname{Re}\operatorname{Log}(z - t)$ is harmonic in $\operatorname{Im} z > 0$. (B&C states that (10) is then harmonic; here is why the interchange of differentiation and integration is allowed.) $G$ is bounded (continuous with finitely many jumps on any bounded interval, and $|G(t)| < M|t|^{-a}$ for large $|t|$). For $z$ in a closed disk $K$ in the upper half plane there is $C_K$ with $|\ln|z - t|| \le C_K\big(1 + \ln(1 + |t|)\big)$ and with the first and second partial derivatives of $\ln|z - t|$ in $x$ and $y$ bounded by $C_K/(1 + |t|)$. Since $a > 1$, $|G(t)|\big(1 + \ln(1 + |t|)\big)$ is integrable over the line, so the integral (10) converges and may be differentiated twice under the integral sign (dominated convergence, [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]). Hence $U$ satisfies Laplace's equation.
 >
 > **(11) and (12).** Differentiating the second form of (10) under the integral sign, $\frac{\partial}{\partial y}\frac{1}{2\pi}\ln\big[(t - x)^2 + y^2\big] = \frac1\pi\cdot\frac{y}{(t - x)^2 + y^2}$, which gives (11). Thus $U_y$ is the Schwarz integral transform of $G$ ([[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Definition §139.1]]), and since $G$ is bounded with finitely many jumps, [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|Theorem §139.1]] gives (12).
 
 ^pf-140-4
 
-*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|§139.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence)
+*Uses:* [[§139★ Dirichlet Problem for a Half Plane#^def-139-1|Def. §139.1]], [[§139★ Dirichlet Problem for a Half Plane#^thm-139-1|§139.1]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]], [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]] (dominated convergence)
 
 > [!theorem] Corollary §140.5: Neumann Problem for a Quadrant
 > When $G$ is an odd function, expression (10) with $U_0 = 0$ can be written
@@ -244,7 +244,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > 1. **Check the data.** On a closed curve (circle) the prescribed normal derivative must have mean zero, (4); otherwise there is no solution.
 > 2. **Disk.** $U = \frac{1}{2\pi}\int Q\,G\,d\phi + U_0$, (6); the constant $U_0$ is $U$ at the center and is not determined by the data. For trigonometric data expand $\ln(1 - 2\rho\cos\psi + \rho^2) = -2\sum_{n\ge1}\rho^n\cos n\psi/n$ ([[§140★ Neumann Problems#^ex-140-1|Example §140.1]]).
 > 3. **Exterior, half plane, quadrant.** Use (7), (10) or (13); for a quadrant with zero values on one edge use the odd extension, (13); for a semicircle, extend $G$ oddly or evenly across the diameter ([[§140★ Neumann Problems#^ex-140-3|Example §140.3]]).
-> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]); to find the flux through another edge, differentiate the integral under the integral sign.
+> 4. **Fluxes.** In heat problems the normal derivative is $-\Phi/K$ by Fourier's law ([[§118★ Steady Temperatures#^def-118-2|Definition §118.2]]); to find the flux through another edge, differentiate the integral under the integral sign.
 
 ^rem-140-2
 
@@ -284,7 +284,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 > \frac A\pi\ln\Big(1 + \frac{1}{y^2}\Big) .
 > $$
 >
-> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
+> **The data.** By Fourier's law $\Phi = -K\,dT/dN$ ([[§118★ Steady Temperatures#^def-118-2|Definition §118.2]]), with $N$ pointing into the plate ($+y$) on the edge $y = 0$: $-KT_y = A$ on $0 < x < 1$ and $T_y = 0$ for $x > 1$. So $G(x) = -A/K$ on $0 < x < 1$ and $0$ for $x > 1$; extend it oddly. It has compact support, so (9) holds, and (13) gives
 >
 > $$
 > T(x, y) = -\frac{A}{2\pi K}\int_0^1\ln\Big[\frac{(t - x)^2 + y^2}{(t + x)^2 + y^2}\Big]dt ,

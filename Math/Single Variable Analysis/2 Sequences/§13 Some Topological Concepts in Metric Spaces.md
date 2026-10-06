@@ -30,7 +30,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 ^rem-13-1
 
 > [!remark]- Connections
-> - In 590 a metric generates a topology: [[§11 Metric Topology#^def-11-1|590 Def. §11.1]] and [[§11 Metric Topology#^def-11-3|590 Def. §11.3]].
+> - In 590 a metric generates a topology: [[§12 Metric Topology#^def-12-1|590 Def. §12.1]] and [[§12 Metric Topology#^def-12-3|590 Def. §12.3]].
 > - Same definition in 556: [[§10 Normed Linear Spaces#^def-10-3|556 Def. §10.3]], where every normed space is a metric space.
 
 > [!example] Example §13.1: The Real Line
@@ -104,7 +104,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 Once we have a metric space $(X, d)$, we can define convergence of sequences of points of $X$ — the definitions are word-for-word those for $\mathbb{R}$, with $d$ in place of the absolute value.
 
-> [!definition] Definition §13.2: Convergence in a Metric Space
+> [!definition] Definition §13.3: Convergence in a Metric Space
 > Let $(s_n)$ be a sequence in a metric space $(X,d)$. We say $s_n \to s$ if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s) < \varepsilon$ for all $n \geq N$.
 
 ^def-13-2
@@ -116,12 +116,12 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 > [!remark]- Connections
 > - The case X = ℝⁿ with the Euclidean distance is 452's convergence of sequences: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]].
-> - Convergence in any topological space, with neighborhoods in place of ε-balls: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]].
+> - Convergence in any topological space, with neighborhoods in place of ε-balls: [[§8 Interior and Closure#^def-8-6|590 Def. §8.6]].
 
-> [!definition] Definition §13.2: Cauchy Sequence in a Metric Space
+> [!definition] Definition §13.4: Cauchy Sequence in a Metric Space
 > Let $(s_n)$ be a sequence in a metric space $(X,d)$. The sequence is **Cauchy** if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s_m) < \varepsilon$ for all $m, n \geq N$.
 
-^def-13-new1
+^def-13-3
 
 > [!theorem] Proposition §13.1: Equivalence of the Two Distances
 > On $\mathbb{R}^n$,
@@ -139,17 +139,17 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-1
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.2]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|Def. §13.3]]
 
 > [!remark]- Connections
 > - In 452 the same inequality makes balls and square neighborhoods interchangeable: [[§2 Open and Closed Sets#^def-2-2|452 Def. §2.2]].
-> - In 590 the same comparison shows that the Euclidean and square metrics give the same topology: [[§11 Metric Topology#^thm-11-2|590 Thm. §11.2]].
+> - In 590 the same comparison shows that the Euclidean and square metrics give the same topology: [[§12 Metric Topology#^thm-12-2|590 Thm. §12.2]].
 > - The case n = 2, read in ℂ: [[§60 Convergence of Sequences#^thm-60-2|342 Thm. §60.2]] (a complex sequence converges iff its real and imaginary parts converge, from the same two-sided bound on distances).
 
-> [!definition] Definition §13.3: Complete Metric Space
+> [!definition] Definition §13.5: Complete Metric Space
 > A metric space $(X,d)$ is called **complete** if every Cauchy sequence in $X$ is convergent (to a point of $X$).
 
-^def-13-3
+^def-13-4
 
 > [!remark]- Connections
 > - Same definition in 556, where complete normed spaces are Banach spaces: [[§11 Completeness#^def-11-1|556 Def. §11.1]], [[§11 Completeness#^def-11-2|556 Def. §11.2]].
@@ -183,12 +183,12 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-2
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]], [[§10a Cauchy Sequences#^thm-10a-3|§10a.3]]
 
-> [!definition] Definition §13.4: Bounded Sequence in a Metric Space
+> [!definition] Definition §13.7: Bounded Sequence in a Metric Space
 > A sequence $(s_n)$ in $(X,d)$ is **bounded** if there exist a number $M > 0$ and a point $x_0 \in X$ such that $d(s_n, x_0) \leq M$ for all $n \geq 1$ — a direct generalization of bounded sequences of real numbers.
 
-^def-13-4
+^def-13-5
 
 > [!theorem] Theorem §13.3: Bolzano–Weierstrass in $\mathbb{R}^n$
 > Every bounded sequence in $\mathbb{R}^n$ has a convergent subsequence.
@@ -203,14 +203,14 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 *Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§11 Subsequences#^thm-11-1|§11.1]], [[§11 Subsequences#^prop-11-3|§11.3]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]]
 
 > [!remark]- Connections
-> - Topological counterparts: closed bounded subsets of ℝⁿ are compact, [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel), and compact equals sequentially compact for metric spaces, [[§16 Limit Point Compactness#^thm-16-2|590 Thm. §16.2]].
+> - Topological counterparts: closed bounded subsets of ℝⁿ are compact, [[§18 Compact Spaces#^thm-18-12|590 Thm. §18.12]] (Heine–Borel), and compact equals sequentially compact for metric spaces, [[§19 Limit Point Compactness#^thm-19-4|590 Thm. §19.4]].
 > - Same theorem in 551: [[§5 Topology of ℝⁿ#^thm-5-1|551 Thm. §5.1]].
 
 ## Open and Closed Sets
 
 Now we can introduce the most important topological notions.
 
-> [!definition] Definition §13.5: Open Subsets
+> [!definition] Definition §13.8: Open Subsets
 > Let $(X,d)$ be a metric space. A subset $U \subseteq X$ is called **open** if for every point $x \in U$, there exists a ball of some radius $\varepsilon > 0$ centered at $x$,
 >
 > $$
@@ -219,18 +219,18 @@ Now we can introduce the most important topological notions.
 >
 > that is contained in $U$.
 
-^def-13-5
+^def-13-6
 
-> [!definition] Definition §13.5: Closed Subsets
+> [!definition] Definition §13.7: Closed Subsets
 > Let $(X,d)$ be a metric space. A subset $C \subseteq X$ is called **closed** if the complement $X \setminus C$ is open.
 
-^def-13-new2
+^def-13-7
 
 The name “open” comes from open intervals in $\mathbb{R}$. These notions are the most important ones in topology: a *topological space* can be described as a space together with its collection of open subsets — equivalently, of closed subsets, since each collection determines the other by complementation.
 
 > [!remark]- Connections
-> - In ℝⁿ, 452 defines open sets by interior points and closed sets as those containing all their boundary points: [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]].
-> - 590 takes open sets as the primitive notion, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]]; the open sets defined here form the metric topology, [[§11 Metric Topology#^def-11-3|590 Def. §11.3]].
+> - In ℝⁿ, 452 defines open sets by interior points and [[§2 Open and Closed Sets#^def-2-7|closed sets]] as those containing all their boundary points: [[§2 Open and Closed Sets#^def-2-6|452 Def. §2.6]].
+> - 590 takes open sets as the primitive notion, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]]; the open sets defined here form the metric topology, [[§12 Metric Topology#^def-12-3|590 Def. §12.3]].
 
 > [!example] Example §13.6: Open Intervals Are Open
 > Every open interval $(a,b) \subseteq \mathbb{R}$ is an open subset. For any $x \in (a,b)$: $x > a$ and $x < b$, so $x - a > 0$ and $b - x > 0$. Take $\varepsilon < \min\{x - a,\, b - x\}$; then $B(x,\varepsilon) = (x - \varepsilon, x + \varepsilon) \subseteq (a,b)$.
@@ -267,8 +267,8 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 *The first stages of the Cantor set: each stage removes the open middle third of every remaining interval, so stage $k$ consists of $2^k$ closed intervals of length $3^{-k}$. The Cantor set is what survives all stages.*
 
 > [!remark]- Connections
-> - In 590 this property becomes an axiom of a topology, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]], and its closed-set dual is [[§6 Closed Sets and Limit Points#^thm-6-1|590 Thm. §6.1]].
-> - Both facts are proved in 551: open subsets of ℝ as countable disjoint unions of open intervals in [[§7 Structure of Open Sets#^prop-7-1|551 Prop. §7.1]], and the Cantor set (closed, uncountable, null, with no interior) in [[§11 Borel Sets and Measure Spaces#^def-11-13|551 Def. §11.13]] and [[§11 Borel Sets and Measure Spaces#^prop-11-21|551 Prop. §11.21]].
+> - In 590 this property becomes an axiom of a topology, [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]], and its closed-set dual is [[§7 Closed Sets and Limit Points#^thm-7-1|590 Thm. §7.1]].
+> - Both facts are proved in 551: open subsets of ℝ as countable disjoint unions of open intervals in [[§7 Structure of Open Sets#^prop-7-2|551 Prop. §7.2]], and the Cantor set (closed, uncountable, null, with no interior) in [[§14 The Vitali Set and the Cantor Set#^def-14-4|551 Def. §14.4]] and [[§14 The Vitali Set and the Cantor Set#^prop-14-7|551 Prop. §14.7]].
 
 > [!theorem] Proposition §13.5: Sequential Characterization of Closedness
 > $C \subseteq X$ is closed if and only if for every convergent sequence $s_n \to s$ in $X$ with all $s_n \in C$, the limit $s$ lies in $C$ too. So a closed set *contains all limits of sequences of its points* — that is why it is called closed.
@@ -282,28 +282,28 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ^pf-13-5
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-7|Def. §13.7]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
 
 ![[m451-13-4.svg]]
 *The ($\Leftarrow$) direction: if $C$ is not closed, some $x \notin C$ (hollow red) has no ball inside the complement, so every ball $B(x, \tfrac1n)$ (dashed) meets $C$; choosing $s_n \in C \cap B(x, \tfrac1n)$ gives a sequence in $C$ converging to a point outside $C$.*
 
 > [!remark]- Connections
-> - Topological version, with limit points in place of sequences: [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]]; sequences are enough in metrizable spaces by [[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]].
+> - Topological version, with limit points in place of sequences: [[§8 Interior and Closure#^cor-8-5|590 Cor. §8.5]]; sequences are enough in metrizable spaces by [[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]].
 
 ## Closure
 
 One more important notion: how to produce closed sets from arbitrary sets.
 
-> [!definition] Definition §13.6: Closure
+> [!definition] Definition §13.8: Closure
 > For any subset $Y$ of a metric space $(X,d)$, the **closure** of $Y$, denoted $\overline{Y}$, is the smallest closed subset containing $Y$.
 
-^def-13-6
+^def-13-8
 
 Why does such a smallest closed superset exist? Consider *all* closed subsets containing $Y$ (there is at least one, namely $X$), and take their intersection: it is closed (intersection of closed sets is closed — the dual of “union of open is open”), it contains $Y$, and it is contained in every closed superset of $Y$. So it is the smallest one.
 
 > [!remark]- Connections
-> - 452's version in ℝⁿ: the closure is the set together with its boundary points, [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
-> - Closure in any topological space: [[§7 Interior and Closure#^def-7-new1|590 Def. §7.1]].
+> - 452's version in ℝⁿ: the closure is the set together with its boundary points, [[§2 Open and Closed Sets#^def-2-8|452 Def. §2.8]].
+> - Closure in any topological space: [[§8 Interior and Closure#^def-8-2|590 Def. §8.2]].
 
 > [!example] Example §13.7: Closures on the Line
 > If $Y$ is already closed, $\overline{Y} = Y$. For $Y = (a,b) \subset \mathbb{R}$: $\overline{Y} = [a,b]$. For $Y = \mathbb{Q}$, $X = \mathbb{R}$: what is $\overline{\mathbb{Q}}$ (the closure, not the algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]])? Answer: $\overline{\mathbb{Q}} = \mathbb{R}$ — every real number is a limit of a sequence of rationals, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4; choose $s_n \in \mathbb{Q} \cap (x - \tfrac1n, x + \tfrac1n)$).
@@ -319,10 +319,10 @@ Why does such a smallest closed superset exist? Consider *all* closed subsets co
 
 ^prop-13-6
 
-*The notes state this without proof; it is the Sequence Lemma with its converse for metric spaces, [[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]].*
+*The notes state this without proof; it is the Sequence Lemma with its converse for metric spaces, [[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]].*
 
 > [!remark]- Connections
-> - 590's Sequence Lemma, [[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]], gives one inclusion in every space and equality in metrizable ones; the neighborhood form is [[§7 Interior and Closure#^thm-7-3|590 Thm. §7.3]].
+> - 590's Sequence Lemma, [[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]], gives one inclusion in every space and equality in metrizable ones; the neighborhood form is [[§8 Interior and Closure#^thm-8-3|590 Thm. §8.3]].
 
 > [!example] Example §13.8: Two Closures Computed (HW)
 > **(1)** $S = \left\{ \tfrac1n \mid n \in \mathbb{N} \right\}$:    $\overline S = S \cup \{0\}$.

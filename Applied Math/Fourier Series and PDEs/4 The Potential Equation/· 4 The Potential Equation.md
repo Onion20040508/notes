@@ -14,12 +14,12 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11), [[Applied Linear Algebra]] (2), [[Calculus]] (4), [[Complex Variables]] (28)
 
 ## Sections
-- [[§35 Potential Equation]] — Powers 4.1
-- [[§36 Potential in a Rectangle]] — Powers 4.2
-- [[§37 Further Examples for a Rectangle]] — Powers 4.3
-- [[§38 Potential in Unbounded Regions]] — Powers 4.4
-- [[§39 Potential in a Disk]] — Powers 4.5
-- [[§40★ Classification and Limitations]] — Powers 4.6 ★
+- [[§44 Potential Equation]] — Powers 4.1
+- [[§45 Potential in a Rectangle]] — Powers 4.2
+- [[§46 Further Examples for a Rectangle]] — Powers 4.3
+- [[§47 Potential in Unbounded Regions]] — Powers 4.4
+- [[§48 Potential in a Disk]] — Powers 4.5
+- [[§50★ Classification and Limitations]] — Powers 4.6 ★
 
 ## Central results
 - [[Laplacian in Polar Coordinates]] (§35.3)
@@ -30,7 +30,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§39 Potential in a Disk#^prop-39-1|Proposition §39.1: The Periodic Eigenvalue Problem]]: 9 later results
-- [[Dirichlet Problem in a Disk|Theorem §39.2: Solution of Dirichlet's Problem in a Disk]]: 5 later results
-- [[Laplacian in Polar Coordinates|Theorem §35.3: The Laplacian in Polar and Cylindrical Coordinates]]: 3 later results
-- [[§36 Potential in a Rectangle#^thm-36-1|Theorem §36.1: Dirichlet Problem in a Rectangle with Two Nonzero Sides]]: 2 later results
+- [[§48 Potential in a Disk#^prop-48-1|Proposition §48.1: The Periodic Eigenvalue Problem]]: 9 later results
+- [[Dirichlet Problem in a Disk|Theorem §48.2: Solution of Dirichlet's Problem in a Disk]]: 5 later results
+- [[Laplacian in Polar Coordinates|Theorem §44.3: The Laplacian in Polar and Cylindrical Coordinates]]: 3 later results
+- [[§45 Potential in a Rectangle#^thm-45-1|Theorem §45.1: Dirichlet Problem in a Rectangle with Two Nonzero Sides]]: 2 later results

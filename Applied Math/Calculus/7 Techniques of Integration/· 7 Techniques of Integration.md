@@ -14,21 +14,21 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (2), [[Measure Theory]] (1), [[Multivariable Analysis]] (3), [[Fourier Series and PDEs]] (4), [[Ordinary Differential Equations]] (6), [[Complex Variables]] (3)
 
 ## Sections
-- [[§44 Integration by Parts]] — Stewart 7.1
-- [[§45 Trigonometric Integrals]] — Stewart 7.2
-- [[§46 Trigonometric Substitution]] — Stewart 7.3
-- [[§47 Integration of Rational Functions by Partial Fractions]] — Stewart 7.4
-- [[§48 Strategy for Integration]] — Stewart 7.5
-- [[§49 Integration Using Tables and Technology]] — Stewart 7.6
-- [[§50 Approximate Integration]] — Stewart 7.7
-- [[§51 Improper Integrals]] — Stewart 7.8
+- [[§51 Integration by Parts]] — Stewart 7.1
+- [[§52 Trigonometric Integrals]] — Stewart 7.2
+- [[§53 Trigonometric Substitution]] — Stewart 7.3
+- [[§54 Integration of Rational Functions by Partial Fractions]] — Stewart 7.4
+- [[§55 Strategy for Integration]] — Stewart 7.5
+- [[§56 Integration Using Tables and Technology]] — Stewart 7.6
+- [[§57 Approximate Integration]] — Stewart 7.7
+- [[§58 Improper Integrals]] — Stewart 7.8
 
 ## Central results
 - [[Integration by Parts]] (§44.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§45 Trigonometric Integrals#^thm-45-1|Theorem §45.1: Half-Angle Identities]]: 10 later results
-- [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Theorem §47.3: Partial Fraction Decomposition]]: 6 later results
-- [[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3: Integral of Secant]]: 3 later results
-- [[§46 Trigonometric Substitution#^thm-46-1|Theorem §46.1: Inverse Substitution Rule]]: 3 later results
+- [[§52 Trigonometric Integrals#^thm-52-1|Theorem §52.1: Half-Angle Identities]]: 10 later results
+- [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-3|Theorem §54.3: Partial Fraction Decomposition]]: 6 later results
+- [[§52 Trigonometric Integrals#^thm-52-3|Theorem §52.3: Integral of Secant]]: 3 later results
+- [[§53 Trigonometric Substitution#^thm-53-1|Theorem §53.1: Inverse Substitution Rule]]: 3 later results

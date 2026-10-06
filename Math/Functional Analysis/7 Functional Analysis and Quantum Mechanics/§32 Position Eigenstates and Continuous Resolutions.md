@@ -30,9 +30,9 @@ Physics also writes $\int |x\rangle\langle x|\,dx = \mathbf{1}$, with an uncount
 
 > [!remark]- Connections
 > - The countable-basis half of the separability theorem of Chapter 5: [[§24 Orthonormal Sets and Bases#^thm-24-13|§24.13]].
-> - The same count in topology: a space with a countable basis has no uncountable discrete subspace ([[§18 Countability Axioms#^lem-18-2|590 Lemma §18.2]]), and a separable metric space has a countable basis ([[§18 Countability Axioms#^prop-18-4|590 Prop. §18.4]]).
+> - The same count in topology: a space with a countable basis has no uncountable discrete subspace ([[§22 Countability Axioms#^lem-22-2|590 Lemma §22.2]]), and a separable metric space has a countable basis ([[§22 Countability Axioms#^prop-22-4|590 Prop. §22.4]]).
 
-Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of radius $\sqrt{2}/2$ around them are disjoint, and each must catch its own point of the dense set. The same argument shows that $L^\infty$ is not separable (MATH 551 notes, Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#Density and Separability|Density and Separability]]).
+Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of radius $\sqrt{2}/2$ around them are disjoint, and each must catch its own point of the dense set. The same argument shows that $L^\infty$ is not separable (MATH 551 notes, Chapter *$L^p$ Spaces*, subsection [[§35 Lᵖ as a Banach Space#Density and Separability|Density and Separability]]).
 
 > [!theorem] Theorem §32.2: $L^2(\mathbb{R}^n)$ is Separable
 > $L^2(\mathbb{R}^n)$ is separable, and every orthonormal basis of it is countably infinite.
@@ -40,14 +40,14 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 ^thm-32-2
 
 > [!proof]+ Proof
-> Separability is now also the case $p = 2$, $E = \mathbb{R}^n$ of Proposition [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]] (Lecture 9). It is proved in the MATH 551 notes (Chapter *$L^p$ Spaces*, subsection [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|Density and Separability]]): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|§32.1]] every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
+> Separability is now also the case $p = 2$, $E = \mathbb{R}^n$ of Proposition [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]] (Lecture 9). It is proved in the MATH 551 notes (Chapter *$L^p$ Spaces*, subsection [[§35 Lᵖ as a Banach Space#^cor-35-13|Density and Separability]]): finite linear combinations of indicator functions of boxes with rational endpoints, with rational coefficients (with coefficients in $\mathbb{Q} + i\mathbb{Q}$ in the complex case), form a countable dense set. By Proposition [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|§32.1]] every orthonormal basis is countable. It is not finite: the normalized indicators of disjoint unit cubes form an infinite orthonormal set, and a finite orthonormal basis $\{e_1, \ldots, e_N\}$ would make every $x$ a finite combination $\sum_{j \le N} (x, e_j) e_j$, so $L^2(\mathbb{R}^n)$ would have dimension at most $N$ and could not contain $N+1$ orthonormal (hence linearly independent) vectors.
 
 ^pf-32-2
 
-*Uses:* [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]], [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|§32.1]], [[§24 Orthonormal Sets and Bases#^def-24-4|Def. §24.4]], [[§24 Orthonormal Sets and Bases#^thm-24-8|§24.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]]
+*Uses:* [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]], [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]], [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|§32.1]], [[§24 Orthonormal Sets and Bases#^def-24-4|Def. §24.4]], [[§24 Orthonormal Sets and Bases#^thm-24-8|§24.8]], [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]]
 
 > [!remark]- Connections
-> - Separability of $L^p(E)$, proved in Chapter 5: [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]]; its home in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 §19.20]].
+> - Separability of $L^p(E)$, proved in Chapter 5: [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]]; its home in measure theory: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]].
 
 > [!remark] Remark: There is No Dimension Mismatch
 > The *Hilbert dimension* of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|the theorem]] every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ — and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not “countable basis versus uncountable basis” but “orthonormal basis versus a different kind of object.”
@@ -67,7 +67,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 ^pf-32-3
 
 > [!remark]- Connections
-> - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: [[§23 Spectral Theorem#^ladr-7-27|LADR 7.27]].
+> - Contrast with finite dimensions, where every self-adjoint operator has an eigenvalue: [[§24 Spectral Theorem#^ladr-7-27|LADR 7.27]].
 > - Used in Quantum Field Theory: what $\delta(x - x_0)$ is instead, a generalized function acting on test functions, and one level up, field operators at a point as operator-valued distributions — [[§CA.2 Generalized Functions#^def-ca-2-2|QFT Def. §CA.2.2]], [[§CA.2 Generalized Functions#^rem-ca-2-1|QFT Remark: What changes from the working delta function]], [[§CA.2 Generalized Functions#^def-ca-2-8|QFT Def. §CA.2.8]].
 
 > [!theorem] Proposition §32.4: Point Evaluation is Not Bounded
@@ -90,7 +90,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 *The tent functions $\varphi_1, \varphi_2, \varphi_4$ (blue) of the proof. All have $\varphi_n(x_0) = 1$ (red), but $\varphi_n$ lives on $[x_0 - \frac1n, x_0 + \frac1n]$ with $0 \le \varphi_n \le 1$, so $\|\varphi_n\|_2^2$ (for $n = 4$ the shaded area under $\varphi_4^2$) is at most the area $\frac2n$ of the dashed box. A bound $|\varphi(x_0)| \le C\|\varphi\|_2$ would force $\varphi_n(x_0) \to 0$.*
 
 > [!remark]- Connections
-> - The idealization this rules out is the delta function of ODEs, [[§25 Impulse Functions#^def-25-3|331 Def. §25.3]], defined there as a limit of unit pulses (with worked examples).
+> - The idealization this rules out is the delta function of ODEs, [[§30 Impulse Functions#^def-30-3|331 Def. §30.3]], defined there as a limit of unit pulses (with worked examples).
 > - Used in Quantum Field Theory: the same obstruction for a one-particle state of sharp momentum, which is not normalizable, and the wave packets and smeared fields that replace it — [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|QFT Caution: Plane-wave states are not normalizable]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-6|QFT Theorem §C2a.4.6]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-8|QFT Theorem §C2a.4.8]].
 
 > [!remark] Remark: What $|x_0\rangle$ Would Have to Be
@@ -112,7 +112,7 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 ^prop-32-5
 
 > [!proof]+ Proof
-> Let $Y_B = \{ \psi : \psi = 0 \text{ a.e. outside } B \}$, a linear subspace. It is closed: an $L^2$-convergent sequence has an a.e. convergent subsequence (MATH 551 notes, [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|551 Cor. §19.17]]), so a limit of functions vanishing a.e. outside $B$ vanishes a.e. outside $B$. Its orthogonal complement contains every $\phi$ vanishing a.e. on $B$, since then $(\psi, \phi) = \int \psi\bar{\phi} = 0$ for $\psi \in Y_B$. Now $\psi = \chi_B\psi + \chi_{B^c}\psi$ with $\chi_B\psi \in Y_B$ and $\chi_{B^c}\psi \in Y_B^\perp$, so by uniqueness in Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], $P_{Y_B}\psi = \chi_B\psi$, proving (a). (b) is clear. For (c), $\sum_{k \le N} E(B_k)\psi = \chi_{B_1 \cup \cdots \cup B_N}\psi$, and
+> Let $Y_B = \{ \psi : \psi = 0 \text{ a.e. outside } B \}$, a linear subspace. It is closed: an $L^2$-convergent sequence has an a.e. convergent subsequence (MATH 551 notes, [[§35 Lᵖ as a Banach Space#^cor-35-10|551 Cor. §35.10]]), so a limit of functions vanishing a.e. outside $B$ vanishes a.e. outside $B$. Its orthogonal complement contains every $\phi$ vanishing a.e. on $B$, since then $(\psi, \phi) = \int \psi\bar{\phi} = 0$ for $\psi \in Y_B$. Now $\psi = \chi_B\psi + \chi_{B^c}\psi$ with $\chi_B\psi \in Y_B$ and $\chi_{B^c}\psi \in Y_B^\perp$, so by uniqueness in Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], $P_{Y_B}\psi = \chi_B\psi$, proving (a). (b) is clear. For (c), $\sum_{k \le N} E(B_k)\psi = \chi_{B_1 \cup \cdots \cup B_N}\psi$, and
 >
 > $$
 > \Bigl\| E(B)\psi - \sum_{k \le N} E(B_k)\psi \Bigr\|^2 = \int_{\bigcup_{k > N} B_k} |\psi|^2 \to 0
@@ -122,7 +122,7 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 
 ^pf-32-5
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-17|551 §19.17]], [[§22 Projection and Orthogonal Decomposition#^def-22-1|Def. §22.1]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], [[§31 The Completeness Relation#^def-31-2|Def. §31.2]], [[§31 The Completeness Relation#^def-31-1|Def. §31.1]], [[Dominated Convergence Theorem]]
+*Uses:* [[§35 Lᵖ as a Banach Space#^cor-35-10|551 §35.10]], [[§22 Projection and Orthogonal Decomposition#^def-22-1|Def. §22.1]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]], [[§31 The Completeness Relation#^def-31-2|Def. §31.2]], [[§31 The Completeness Relation#^def-31-1|Def. §31.1]], [[Dominated Convergence Theorem]]
 
 ![[m556-24-2.svg]]
 *The Born rule, (d): $(E(B)\psi, \psi) = \int_B |\psi(x)|^2\,dx$ is the shaded red area under $|\psi(x)|^2$ over the region $B$ — the probability of finding the particle in $B$.*

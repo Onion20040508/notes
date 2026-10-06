@@ -3,7 +3,7 @@ type: section
 subject: "[[Topology]]"
 chapter: 1
 section: 3
-munkres: "§3, §14"
+munkres: "§3, §16"
 tags: [topology, math590]
 ---
 ← [[§2 Basis for a Topology]] · ↑ [[· 1 Topological Spaces and Constructions]] · [[§4 Product Topology]] →
@@ -19,7 +19,7 @@ tags: [topology, math590]
 ^def-3-1
 
 > [!remark]- Connections
-> - The same notion with ≤ (ordered set), together with partial orders: [[§3 The Set ℝ of Real Numbers#^def-3-3|451 Def. §3.3]] and [[§3 The Set ℝ of Real Numbers#^def-3-new1|451 Def. §3.3]].
+> - The same notion with ≤ (ordered set), together with partial orders: [[§3 The Set ℝ of Real Numbers#^def-3-3|451 Def. §3.3]] and [[§3 The Set ℝ of Real Numbers#^def-3-4|451 Def. §3.4]].
 
 > [!example] Example §3.1
 > $\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$, or $x^2 = y^2$ and $x < y$.
@@ -109,12 +109,12 @@ tags: [topology, math590]
 > - Intervals $[a_0, b)$, where $a_0$ is the smallest (if any) in $X$
 > - Intervals $(a, b_0]$, where $b_0$ is the largest (if any) in $X$
 >
-> The [[§2 Basis for a Topology#^def-2-new1|topology generated]] by $\mathcal{B}$ is the **order topology** on $X$.
+> The [[§2 Basis for a Topology#^def-2-2|topology generated]] by $\mathcal{B}$ is the **order topology** on $X$.
 
 ^def-3-4
 
 > [!remark]- Connections
-> - Connectedness of linear continua in the order topology: [[§14 Connected Subspaces of ℝ#^thm-14-1|Linear Continuum is Connected]].
+> - Connectedness of linear continua in the order topology: [[§16 Connected Subspaces of ℝ#^thm-16-1|Linear Continuum is Connected]].
 > - Order topology vs. subspace topology: [[§5 Subspace Topology#^ex-5-3|Subspace ≠ Order Topology: I × I]].
 
 > [!example] Example §3.5

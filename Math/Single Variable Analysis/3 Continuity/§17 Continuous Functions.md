@@ -25,8 +25,8 @@ Start with basics. Let $f: \Omega \to \mathbb{R}$ be a real-valued function defi
 ^def-17-1
 
 > [!remark]- Connections
-> - In topological spaces, continuity implies sequential continuity, with the converse for metrizable domains: [[§11 Metric Topology#^thm-11-9|590 Thm. §11.9]].
-> - Computational version: Stewart's definition [[§10 Continuity#^def-10-1|Calc Def. §10.1]]; the sequential form, [[§69 Sequences#^thm-69-6|Calc Thm. §69.6]] (with worked examples).
+> - In topological spaces, continuity implies sequential continuity, with the converse for metrizable domains: [[§12 Metric Topology#^thm-12-9|590 Thm. §12.9]].
+> - Computational version: Stewart's definition [[§12 Continuity#^def-12-1|Calc Def. §12.1]]; the sequential form, [[§80 Sequences#^thm-80-6|Calc Thm. §80.6]] (with worked examples).
 
 > [!example] Example §17.1: Linear and Polynomial Functions
 > $f(x) = 2x$ on $\Omega = \mathbb{R}$ is continuous at every $x_0$: if $x_n \to x_0$, then $f(x_n) = 2x_n \to 2x_0 = f(x_0)$ by the scalar-multiple limit theorem. More generally, every polynomial
@@ -76,7 +76,7 @@ For some functions the sequential definition is not so easy to check directly �
 ^rem-17-1
 
 > [!remark]- Connections
-> - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: [[§11 Metric Topology#^thm-11-7|590 Thm. §11.7]].
+> - For maps between metric spaces, ε-δ continuity is equivalent to the open-set definition: [[§12 Metric Topology#^thm-12-7|590 Thm. §12.7]].
 
 > [!example] Example §17.2: A First Epsilon-Delta Proof
 > $f(x) = 3x$ is continuous at every $x_0 \in \mathbb{R}$. How to get $\delta$? Start with
@@ -138,7 +138,7 @@ For some functions the sequential definition is not so easy to check directly �
 *Damped versus undamped oscillation at $0$. Left: $f(x) = x\sin\tfrac1x$ is trapped between $\pm|x|$ (dashed), so the square with $\delta = \varepsilon$ (red) contains the graph over $|x| < \delta$ — continuity at $0$. Right: $g(x) = \sin\tfrac1x$ oscillates between $\pm1$ ever faster (shaded: infinitely many oscillations); the points $x_n = \tfrac{1}{2n\pi + \pi/2} \to 0$ (red) keep $g(x_n) = 1$, far from $g(0) = 0$.*
 
 > [!remark]- Connections
-> - The graph of sin(1/x) on (0, 1] is the topologist's sine curve, [[§14 Connected Subspaces of ℝ#^ex-14-7|590 Ex. §14.7]], whose closure is connected but not path-connected because of this oscillation at 0.
+> - The graph of sin(1/x) on (0, 1] is the topologist's sine curve, [[§16 Connected Subspaces of ℝ#^ex-16-7|590 Ex. §16.7]], whose closure is connected but not path-connected because of this oscillation at 0.
 
 > [!definition] Definition §17.2: Continuous Function
 > A function $f: \Omega \to \mathbb{R}$ is called **continuous** if it is continuous at *every* point $x_0 \in \Omega$.
@@ -195,7 +195,7 @@ For some functions the sequential definition is not so easy to check directly �
 
 > [!remark]- Connections
 > - Same rules for functions of two variables: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient).
-> - Computational version: [[§10 Continuity#^thm-10-1|Calc Thm. §10.1]] (with worked examples).
+> - Computational version: [[§12 Continuity#^thm-12-1|Calc Thm. §12.1]] (with worked examples).
 > - Computational version: [[§18 Continuity#^prop-18-1|342 Prop. §18.1]] (sums, products, quotients and polynomials of continuous complex functions).
 
 > [!example] Example §17.6: Polynomials and Rational Functions
@@ -204,7 +204,7 @@ For some functions the sequential definition is not so easy to check directly �
 ^ex-17-6
 
 > [!remark]- Connections
-> - Computational version: [[§10 Continuity#^thm-10-2|Calc Thm. §10.2]].
+> - Computational version: [[§12 Continuity#^thm-12-2|Calc Thm. §12.2]].
 
 The most important and useful theorem in this section:
 
@@ -221,9 +221,9 @@ The most important and useful theorem in this section:
 *Uses:* [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
 
 > [!remark]- Connections
-> - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§10 Composition of Functions and the Chain Rule#^thm-10-1|452 Thm. §10.1]].
-> - Composition rule for continuous maps of topological spaces: [[§9 Continuous Functions#^thm-9-4|590 Thm. §9.4]].
-> - Computational version: [[§10 Continuity#^thm-10-9|Calc Thm. §10.9]], with limits of composites in [[§10 Continuity#^thm-10-7|Calc Thm. §10.7]] (with worked examples).
+> - Several-variable versions: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]] and [[§12 Composition of Functions and the Chain Rule#^thm-12-1|452 Thm. §12.1]].
+> - Composition rule for continuous maps of topological spaces: [[§10 Continuous Functions#^thm-10-4|590 Thm. §10.4]].
+> - Computational version: [[§12 Continuity#^thm-12-9|Calc Thm. §12.9]], with limits of composites in [[§12 Continuity#^thm-12-7|Calc Thm. §12.7]] (with worked examples).
 > - Computational version: [[§18 Continuity#^thm-18-2|342 Thm. §18.2]] (composition of continuous complex functions, same proof).
 
 > [!example] Example §17.7: Compositions and Domains

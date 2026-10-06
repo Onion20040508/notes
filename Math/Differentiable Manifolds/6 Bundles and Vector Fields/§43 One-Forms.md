@@ -37,7 +37,7 @@ A one-form is a section of the cotangent bundle ([[§34 Fibrations#^def-34-2|Def
 In words: a one-form chooses one covector at every point of $M$, and the choice varies smoothly. Its value at $p$ is written $\theta_p$, not $\theta(p)$; it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$.
 
 > [!remark]- Connections
-> - On open subsets of $\mathbb{R}^n$: [[§21 Introduction to Differential Forms#^def-21-new1|452 Def. §21.1]] (differential forms, here in degree 1).
+> - On open subsets of $\mathbb{R}^n$: [[§36 Introduction to Differential Forms#^def-36-2|452 Def. §36.2]] (differential forms, here in degree 1).
 > - The value at one point is a covector, an element of a dual space: [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
 
 Uribe on the notation: “$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable” — so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes *every* one-form, and the examples come next.
@@ -93,7 +93,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 
 > [!remark]- Connections
 > - The same rules at a single point: [[§30 The Cotangent Space#^cor-30-4|§30.4]].
-> - On $\mathbb{R}^3$, $d$ on functions is the gradient: [[§22 The Algebra of Differential Forms#^prop-22-2|452 §22.2]], [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6]].
+> - On $\mathbb{R}^3$, $d$ on functions is the gradient: [[§38 The Exterior Derivative#^prop-38-1|452 §38.1]], [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]].
 
 > [!example] Example §43.1: Two One-Forms on the Plane
 > On $\mathbb{R}^2$ with coordinates $x, y$, any expression $a(x,y)\, dx + b(x,y)\, dy$ with smooth $a, b$ is a one-form. Uribe's two examples:
@@ -124,10 +124,10 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 
 ^pf-43-3
 
-*Uses:* [[§43 One-Forms#^prop-43-2|§43.2]], [[§43 One-Forms#^prop-43-1|§43.1]], [[§43 One-Forms#^ex-43-1|Ex. §43.1]], [[Schwarz–Clairaut Theorem|452 §5.1]]
+*Uses:* [[§43 One-Forms#^prop-43-2|§43.2]], [[§43 One-Forms#^prop-43-1|§43.1]], [[§43 One-Forms#^ex-43-1|Ex. §43.1]], [[Schwarz–Clairaut Theorem|452 §6.1]]
 
 > [!remark]- Connections
-> - In 452: exact forms are closed, [[§22 The Algebra of Differential Forms#^prop-22-10|452 §22.10]] (closed and exact: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]); in vector-field language, a gradient field is irrotational, [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-new1|452 Def. §11.1]].
+> - In 452: exact forms are closed, [[§39 Closed and Exact Forms#^prop-39-5|452 §39.5]] (closed and exact: [[§39 Closed and Exact Forms#^def-39-2|452 Def. §39.2]]); in vector-field language, a gradient field is irrotational, [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-13-2|452 Def. §13.2]].
 
 “You know this from multivariable calculus in various different forms. Not every vector field is a gradient field”: the condition is the vanishing of the curl, “a curl condition.”
 
@@ -146,7 +146,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 ^rem-43-1
 
 > [!remark]- Connections
-> - The same form in 452, closed but not exact: [[§22 The Algebra of Differential Forms#^prop-22-11|452 §22.11]]; sufficiency on star-shaped domains: [[Poincaré Lemma|452 §22.12]].
+> - The same form in 452, closed but not exact: [[§39 Closed and Exact Forms#^prop-39-6|452 §39.6]]; sufficiency on star-shaped domains: [[Poincaré Lemma|452 §39.7]].
 
 ## Pullbacks of One-Forms
 
@@ -164,7 +164,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 ^def-43-3
 
 > [!remark]- Connections
-> - At each point $F_p^{\ast}$ is the dual map of $F_{\ast p}$: [[§12 Duality#^ladr-3-118|LADR 3.118]]. On open subsets of $\mathbb{R}^n$: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]].
+> - At each point $F_p^{\ast}$ is the dual map of $F_{\ast p}$: [[§12 Duality#^ladr-3-118|LADR 3.118]]. On open subsets of $\mathbb{R}^n$: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]].
 
 > [!theorem] Corollary §43.4: Pullback Commutes with $d$
 > Let $F : M \to N$ be smooth and $f \in C^\infty(N)$. Then $F^{\ast}(df) = d(F^{\ast}f)$ as one-forms on $M$.
@@ -199,4 +199,4 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 *Uses:* [[§43 One-Forms#^def-43-3|Def. §43.3]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§30 The Cotangent Space#^cor-30-3|§30.3]], [[§43 One-Forms#^prop-43-1|§43.1]]
 
 > [!remark]- Connections
-> - The substitution $dx_i = \sum_j (\partial x_i/\partial u_j)\, du_j$ of 452: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]; the matrix of a dual map is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
+> - The substitution $dx_i = \sum_j (\partial x_i/\partial u_j)\, du_j$ of 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]; the matrix of a dual map is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].

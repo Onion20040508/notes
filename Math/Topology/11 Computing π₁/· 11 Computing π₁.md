@@ -12,10 +12,10 @@ tags: [chapter, topology]
 **Builds on (other subjects):** [[Linear Algebra]] (1)
 
 ## Sections
-- [[§27 The Fundamental Group of Sⁿ]]
-- [[§28 Fundamental Group of Some Surfaces]]
-- [[§29 The Seifert–van Kampen Theorem]]
-- [[§29a The Projective Plane, the Figure Eight, the Double Torus and the Torus]]
+- [[§37 The Fundamental Group of Sⁿ]]
+- [[§38 Fundamental Group of Some Surfaces]]
+- [[§39 The Seifert–van Kampen Theorem]]
+- [[§40 The Projective Plane, the Figure Eight, the Double Torus and the Torus]]
 
 ## Central results
 - [[Sⁿ is Simply Connected for n ≥ 2]] (§27.3)
@@ -23,7 +23,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]: 9 later results
-- [[§27 The Fundamental Group of Sⁿ#^cor-27-2|Corollary §27.2: Simply Connected from Open Cover]]: 4 later results
-- [[Seifert–van Kampen Theorem|Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)]]: 4 later results
-- [[Sⁿ is Simply Connected for n ≥ 2|Theorem §27.3: Sⁿ is Simply Connected for n ≥ 2]]: 3 later results
+- [[§37 The Fundamental Group of Sⁿ#^thm-37-1|Theorem §37.1: Generation by Open Cover (Munkres 59.1)]]: 9 later results
+- [[§37 The Fundamental Group of Sⁿ#^cor-37-2|Corollary §37.2: Simply Connected from Open Cover]]: 4 later results
+- [[Seifert–van Kampen Theorem|Theorem §39.1: Seifert-van Kampen Theorem (Munkres 70.2)]]: 4 later results
+- [[Sⁿ is Simply Connected for n ≥ 2|Theorem §37.3: Sⁿ is Simply Connected for n ≥ 2]]: 3 later results

@@ -36,26 +36,26 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 
 ## 1.1 Mathematical Statements
 
-> [!definition] Definition §1.2: Proposition
+> [!definition] Definition §1.4: Proposition
 > A **proposition** is a sentence which is either true or false, but not both.
 >
 > *Eccles: Section 1.1*
 
 ^def-1-2
 
-> [!definition] Definition §1.2: Predicate
+> [!definition] Definition §1.5: Predicate
 > A **predicate** is a sentence containing one or more symbols, its **free variables**, which becomes a proposition whenever values are assigned to them; we write $P(n)$ or $P(m, n)$, listing the free variables.
 >
 > *Eccles: Section 1.1*
 
-^def-1-new1
+^def-1-3
 
-> [!definition] Definition §1.2: Statement
+> [!definition] Definition §1.6: Statement
 > A **statement** is a proposition or a predicate; capital letters $P, Q, R$ denote statements. "True" and "false" (T and F) are the two **truth values**.
 >
 > *Eccles: Section 1.1*
 
-^def-1-new2
+^def-1-4
 
 > [!example] Example §1.1: Recognizing Statements
 > In the following list, (i)–(v) are propositions, (vi)–(viii) are predicates, and (ix)–(x) are not statements.
@@ -78,7 +78,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 ## 1.2 Logical Connectives
 
-> [!definition] Definition §1.3: Disjunction, Conjunction, Negation
+> [!definition] Definition §1.8: Disjunction, Conjunction, Negation
 > For statements $P$ and $Q$, the **disjunction** "$P$ or $Q$" ($P \vee Q$), the **conjunction** "$P$ and $Q$" ($P \wedge Q$) and the **negation** "not $P$" ($\neg P$) have the truth values
 >
 > | $P$ | $Q$ | $P \vee Q$ | $P \wedge Q$ |
@@ -97,7 +97,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 >
 > *Eccles: Tables 1.2.1 and 1.2.2, Exercise 1.1*
 
-^def-1-3
+^def-1-5
 
 > [!example] Example §1.2: Hidden Connectives
 > Connectives are often hidden in notation.
@@ -116,7 +116,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 ^ex-1-2
 
-> [!definition] Definition §1.4: Absolute Value
+> [!definition] Definition §1.9: Absolute Value
 > The **absolute value** (or modulus) of a real number $a$ is
 >
 > $$
@@ -127,11 +127,11 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 >
 > *Eccles: Section 1.2*
 
-^def-1-4
+^def-1-6
 
 > [!remark]- Connections
-> - The same definition in analysis, with the triangle inequality and $|ab| = |a||b|$: [[§3 The Set ℝ of Real Numbers#^def-3-4|451 Def. §3.4]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]].
-> - Same definition: [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]] (with worked examples).
+> - The same definition in analysis, with the triangle inequality and $|ab| = |a||b|$: [[§3 The Set ℝ of Real Numbers#^def-3-5|451 Def. §3.5]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]].
+> - Same definition: [[§139 Numbers, Inequalities, and Absolute Values#^def-139-6|Calc Def. §139.6]] (with worked examples).
 
 > [!example] Example §1.3: The Square of the Absolute Value
 > For every real number $a$, $|a|^2 = a^2$.
@@ -142,7 +142,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 ^ex-1-3
 
-*Uses:* [[§1 The Language of Mathematics#^def-1-4|Def. §1.4]], [[§2 Implications#^ex-2-13|Ex. §2.13]]
+*Uses:* [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]], [[§2 Implications#^ex-2-13|Ex. §2.13]]
 
 The negation of a statement is obtained by inserting "not", but this needs care, since everyday speech uses "not" loosely.
 
@@ -168,21 +168,21 @@ The negation of a statement is obtained by inserting "not", but this needs care,
 
 The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, in which statements are manipulated like algebraic expressions.
 
-> [!definition] Definition §1.5: Propositional Form
-> A **propositional form** is an expression such as $A \wedge (B \vee \neg C)$ built by connectives from **propositional variables** $A, B, C, \ldots$, which stand for arbitrary statements. Each assignment of truth values to its variables gives the form a truth value, computed from the tables of [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]; the **truth table** of a form in $k$ variables lists all $2^k$ assignments.
+> [!definition] Definition §1.10: Propositional Form
+> A **propositional form** is an expression such as $A \wedge (B \vee \neg C)$ built by connectives from **propositional variables** $A, B, C, \ldots$, which stand for arbitrary statements. Each assignment of truth values to its variables gives the form a truth value, computed from the tables of [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]; the **truth table** of a form in $k$ variables lists all $2^k$ assignments.
 >
 > *Source: MAT 200 supplement §1; Sundstrom §2.2*
 
-^def-1-5
+^def-1-7
 
-> [!definition] Definition §1.5: Logical Equivalence
+> [!definition] Definition §1.11: Logical Equivalence
 > Two forms $F$ and $G$ are **logically equivalent**, written $F \equiv G$, if they have the same truth value for every assignment; such an equivalence is called a **logical identity**.
 >
 > Two individual propositions are called logically equivalent when they have the same truth value. This is a weak notion ("the square of every even number is even" and "$1 + 1 = 2$" are equivalent merely because both are true); it becomes interesting for predicates, which may be equivalent for every value of the free variable ("$x^2$ is even" and "$(x+1)^2$ is odd", for integers $x$), and for propositional forms.
 >
 > *Source: MAT 200 supplement §1; Sundstrom §2.2*
 
-^def-1-new3
+^def-1-8
 
 > [!theorem] Theorem §1.1: Logical Identities
 > For all propositional forms $A$, $B$, $C$:
@@ -199,7 +199,7 @@ The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, 
 ^thm-1-1
 
 > [!proof]+ Proof
-> By [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], a conjunction is true exactly when both parts are true, and a disjunction exactly when at least one part is true. We check, for each identity, that the two sides are true for the same assignments.
+> By [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], a conjunction is true exactly when both parts are true, and a disjunction exactly when at least one part is true. We check, for each identity, that the two sides are true for the same assignments.
 >
 > (1)–(3): Both sides of each conjunction identity are true exactly when all the forms involved are true; both sides of each disjunction identity are true exactly when at least one of them is true.
 >
@@ -220,7 +220,7 @@ The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, 
 
 ^pf-1-1
 
-*Uses:* [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-new3|Def. §1.5]]
+*Uses:* [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-7|Def. §1.7]], [[§1 The Language of Mathematics#^def-1-8|Def. §1.8]]
 
 > [!remark] Remark: Substitution
 > The truth value of a compound form depends only on the truth values of its parts. Hence replacing a part of a form by a logically equivalent form gives a logically equivalent form, and the identities of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] may be used exactly like the laws of algebra. By associativity, brackets in repeated conjunctions and disjunctions may be dropped: $A \wedge B \wedge C$, $A_1 \vee A_2 \vee \cdots \vee A_k$. A conjunction of several forms is true exactly when all of them are, a disjunction exactly when at least one is, and De Morgan's laws extend to several terms: $\neg(A_1 \wedge \cdots \wedge A_k) \equiv \neg A_1 \vee \cdots \vee \neg A_k$ and $\neg(A_1 \vee \cdots \vee A_k) \equiv \neg A_1 \wedge \cdots \wedge \neg A_k$.
@@ -229,12 +229,12 @@ The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, 
 
 ^rem-1-2
 
-> [!definition] Definition §1.6: Tautology and Contradiction
+> [!definition] Definition §1.9: Tautology and Contradiction
 > A propositional form is a **tautology** if it is true for every assignment of truth values to its variables, and a **contradiction** (or **absurdity**) if it is false for every assignment. We write $\top$ for a fixed tautology (or any true statement) and $\bot$ for a fixed contradiction (or any false statement).
 >
 > *Source: MAT 200 supplement §2; Sundstrom §2.1*
 
-^def-1-6
+^def-1-9
 
 > [!theorem] Theorem §1.2: Excluded Middle, Non-Contradiction, Identity and Annihilation
 > For every propositional form $A$:
@@ -248,24 +248,24 @@ The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, 
 ^thm-1-2
 
 > [!proof]+ Proof
-> For every assignment exactly one of $A$, $\neg A$ is true ([[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]). So $A \vee \neg A$ always has a true part and is true, and $A \wedge \neg A$ always has a false part and is false. Since $\top$ is always true, $A \wedge \top$ is true exactly when $A$ is, and $A \vee \top$ is always true; since $\bot$ is always false, $A \vee \bot$ is true exactly when $A$ is, and $A \wedge \bot$ is always false.
+> For every assignment exactly one of $A$, $\neg A$ is true ([[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]). So $A \vee \neg A$ always has a true part and is true, and $A \wedge \neg A$ always has a false part and is false. Since $\top$ is always true, $A \wedge \top$ is true exactly when $A$ is, and $A \vee \top$ is always true; since $\bot$ is always false, $A \vee \bot$ is true exactly when $A$ is, and $A \wedge \bot$ is always false.
 
 ^pf-1-2
 
-*Uses:* [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]
+*Uses:* [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]], [[§1 The Language of Mathematics#^def-1-9|Def. §1.9]]
 
 A contradiction $P \wedge \neg P$ is what a proof by contradiction aims to reach: [[§4 Proof by Contradiction#^def-4-1|Def. §4.1]].
 
 ## Negation and Normal Forms
 
-> [!definition] Definition §1.7: Denial
+> [!definition] Definition §1.10: Denial
 > A **denial** of a statement $P$ is any statement logically equivalent to its negation $\neg P$. A **useful denial** (a denial "in affirmative terms") is one in which negation is applied only to the simplest component statements and, where possible, absorbed into them: $\neg(x < 0)$ becomes $x \geq 0$, and $\neg(x = 2)$ becomes $x \neq 2$.
 >
 > *Source: MAT 200 supplement §3; MAT 200 lecture (practice midterm 1)*
 
-^def-1-7
+^def-1-10
 
-For statements with quantifiers, a useful denial also turns each "for all" into "there exists" and vice versa ([[§7 Quantifiers#^thm-7-2|Theorem §7.2]]; worked denials in [[§7 Quantifiers#^ex-7-7|Ex. §7.7]] and [[§7 Quantifiers#^ex-7-11|Ex. §7.11]]).
+For statements with quantifiers, a useful denial also turns each "for all" into "there exists" and vice versa ([[§7 Quantifiers#^thm-7-2|Theorem §7.2]]; worked denials in [[§7 Quantifiers#^ex-7-7|Ex. §7.7]] and [[§7a Several Quantifiers and the Cartesian Product#^ex-7a-4|Ex. §7a.4]]).
 
 > [!example] Example §1.5: Denying a Compound Statement
 > Let $P$ be $A \wedge (\neg B \vee C)$. By De Morgan's laws and double negation ([[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]]),
@@ -282,7 +282,7 @@ For statements with quantifiers, a useful denial also turns each "for all" into 
 
 *Uses:* [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^rem-1-2|Remark (substitution)]]
 
-> [!definition] Definition §1.8: Disjunctive and Conjunctive Normal Form
+> [!definition] Definition §1.11: Disjunctive and Conjunctive Normal Form
 > A **literal** is a propositional variable or the negation of one. A propositional form is in **disjunctive normal form (DNF)** if it is a disjunction of conjunctions of literals, and in **conjunctive normal form (CNF)** if it is a conjunction of disjunctions of literals. (A single conjunction or disjunction, or a single literal, counts as a one-term case.) For example
 >
 > $$
@@ -291,7 +291,7 @@ For statements with quantifiers, a useful denial also turns each "for all" into 
 >
 > *Source: MAT 200 supplement §4*
 
-^def-1-8
+^def-1-11
 
 > [!theorem] Theorem §1.3: Existence of Normal Forms
 > Every propositional form is logically equivalent to a form in disjunctive normal form and to a form in conjunctive normal form.
@@ -315,7 +315,7 @@ For statements with quantifiers, a useful denial also turns each "for all" into 
 
 ^pf-1-3
 
-*Uses:* [[§1 The Language of Mathematics#^def-1-8|Def. §1.8]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]], [[§1 The Language of Mathematics#^rem-1-2|Remark (substitution)]]
+*Uses:* [[§1 The Language of Mathematics#^def-1-11|Def. §1.11]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]], [[§1 The Language of Mathematics#^rem-1-2|Remark (substitution)]]
 
 > [!remark] Remark: Computing Normal Forms by Rewriting
 > The construction in the proof is often long. In practice one rewrites: (i) push negations inwards with De Morgan's laws, (ii) remove double negations, (iii) distribute $\wedge$ over $\vee$ (for DNF) or $\vee$ over $\wedge$ (for CNF). For example
@@ -351,7 +351,7 @@ For statements with quantifiers, a useful denial also turns each "for all" into 
 
 ^ex-1-6
 
-*Uses:* [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^def-1-8|Def. §1.8]]
+*Uses:* [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^def-1-11|Def. §1.11]]
 
 > [!theorem] Corollary §1.4: Every Truth Table Comes from Not, And, Or
 > 1. A propositional form in $k$ variables has one of $2^{2^k}$ possible truth tables, and every one of them is the truth table of a form built from $\neg$, $\wedge$, $\vee$ alone. In particular there are exactly $2^4 = 16$ binary connectives, and each is expressible by $\neg$, $\wedge$, $\vee$.

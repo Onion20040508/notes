@@ -14,17 +14,17 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (5), [[Applied Linear Algebra]] (2), [[Fourier Series and PDEs]] (2), [[Ordinary Differential Equations]] (7), [[Complex Variables]] (7)
 
 ## Sections
-- [[§14 Derivatives of Polynomials and Exponential Functions]] — Stewart 3.1
-- [[§15 The Product and Quotient Rules]] — Stewart 3.2
-- [[§16 Derivatives of Trigonometric Functions]] — Stewart 3.3
-- [[§17 The Chain Rule]] — Stewart 3.4
-- [[§18 Implicit Differentiation]] — Stewart 3.5
-- [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions]] — Stewart 3.6
-- [[§20 Rates of Change in the Natural and Social Sciences]] — Stewart 3.7
-- [[§21 Exponential Growth and Decay]] — Stewart 3.8
-- [[§22 Related Rates]] — Stewart 3.9
-- [[§23 Linear Approximations and Differentials]] — Stewart 3.10
-- [[§24 Hyperbolic Functions]] — Stewart 3.11
+- [[§17 Derivatives of Polynomials and Exponential Functions]] — Stewart 3.1
+- [[§18 The Product and Quotient Rules]] — Stewart 3.2
+- [[§19 Derivatives of Trigonometric Functions]] — Stewart 3.3
+- [[§20 The Chain Rule]] — Stewart 3.4
+- [[§21 Implicit Differentiation]] — Stewart 3.5
+- [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions]] — Stewart 3.6
+- [[§23 Rates of Change in the Natural and Social Sciences]] — Stewart 3.7
+- [[§24 Exponential Growth and Decay]] — Stewart 3.8
+- [[§25 Related Rates]] — Stewart 3.9
+- [[§26 Linear Approximations and Differentials]] — Stewart 3.10
+- [[§27 Hyperbolic Functions]] — Stewart 3.11
 
 ## Central results
 - [[Product Rule]] (§15.1)
@@ -34,7 +34,7 @@ tags: [chapter, calculus]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-1|Theorem §14.1: Derivative of a Constant Function]]: 211 later results
-- [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorem §14.3: The Constant Multiple Rule]]: 211 later results
-- [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Theorem §14.4: The Sum and Difference Rules]]: 211 later results
-- [[§17 The Chain Rule#^lem-17-1|Lemma §17.1: Differentiability in Increment Form]]: 211 later results
+- [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-1|Theorem §17.1: Derivative of a Constant Function]]: 211 later results
+- [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-3|Theorem §17.3: The Constant Multiple Rule]]: 211 later results
+- [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-4|Theorem §17.4: The Sum and Difference Rules]]: 211 later results
+- [[§20 The Chain Rule#^lem-20-1|Lemma §20.1: Differentiability in Increment Form]]: 211 later results

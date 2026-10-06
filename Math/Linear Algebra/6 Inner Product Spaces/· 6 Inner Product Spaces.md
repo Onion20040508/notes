@@ -11,9 +11,9 @@ tags: [chapter, linear-algebra]
 **Used by:** [[· 7 Operators on Inner Product Spaces|7 Operators on Inner Product Spaces]] (17), [[· 8 Operators on Complex Vector Spaces|8 Operators on Complex Vector Spaces]] (1)
 
 ## Sections
-- [[§19 Inner Products and Norms]]
-- [[§20 Orthonormal Bases]]
-- [[§21 Orthogonal Complements and Minimization Problems]]
+- [[§20 Inner Products and Norms]]
+- [[§21 Orthonormal Bases]]
+- [[§22 Orthogonal Complements and Minimization Problems]]
 
 ## Central results
 - [[Cauchy–Schwarz inequality]] (6.14)
@@ -23,7 +23,7 @@ tags: [chapter, linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (via Axler's citations).
-- [[§19 Inner Products and Norms#^ladr-6-12|6.12 Pythagorean theorem]]: 52 later results
-- [[§20 Orthonormal Bases#^ladr-6-24|6.24 Norm of an orthonormal linear combination]]: 51 later results
-- [[§20 Orthonormal Bases#^ladr-6-26|6.26 Bessel’s inequality]]: 37 later results
-- [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48 Properties of orthogonal complement]]: 36 later results
+- [[§20 Inner Products and Norms#^ladr-6-12|6.12 Pythagorean theorem]]: 52 later results
+- [[§21 Orthonormal Bases#^ladr-6-24|6.24 Norm of an orthonormal linear combination]]: 51 later results
+- [[§21 Orthonormal Bases#^ladr-6-26|6.26 Bessel’s inequality]]: 37 later results
+- [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48 Properties of orthogonal complement]]: 36 later results

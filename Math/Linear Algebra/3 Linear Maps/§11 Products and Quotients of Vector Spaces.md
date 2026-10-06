@@ -65,7 +65,7 @@ tags: [linear-algebra]
 > Choose a basis of each $V_k$. For each basis vector $e$ of $V_k$, take the element of the product with $e$ in slot $k$ and $0$ elsewhere. *(Filled in.)* These span: $(v_1,\dots,v_m)$ is the sum over $k$ of ($v_k$ expanded in its basis, placed in slot $k$). They are independent: a vanishing combination vanishes slot by slot, and in slot $k$ it is a combination of a basis of $V_k$. So they form a basis, of length $\sum_k\dim V_k$.
 
 > [!remark] Remark: Contrast with tensor products
-> Dimensions add for products (and direct sums) but multiply for tensor products ([[§35 Tensor Products#^ladr-9-72|Dimension of the tensor product of two vector spaces]]). In quantum mechanics, combining independent systems uses the tensor product, not the product.
+> Dimensions add for products (and direct sums) but multiply for tensor products ([[§38 Tensor Products#^ladr-9-72|Dimension of the tensor product of two vector spaces]]). In quantum mechanics, combining independent systems uses the tensor product, not the product.
 
 > [!remark]- Connections
 > - Used in [[§11 Products and Quotients of Vector Spaces#^ladr-3-94|A sum is a direct sum if and only if dimensions add up]] and in the alternative proof of [[§6 Dimension#^ladr-2-43|Dimension of a sum]].
@@ -130,9 +130,9 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Translates of a subspace partition $V$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]. They are the points of [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]]. Solution sets of solvable inhomogeneous systems are translates of the null space.
 > - Group version: v + U is the coset of U in the abelian group (V, +), [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]].
-> - In ℝ³: lines $\mathbf r = \mathbf r_0 + t\mathbf v$ and planes $\mathbf n \cdot (\mathbf r - \mathbf r_0) = 0$ are translates of subspaces, [[§84 Equations of Lines and Planes#^thm-84-1|Calc Thm. §84.1]] and [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
-> - Computational version: [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]] (the solutions of Ax = b are a translate p + Nul A).
-> - ODE example: the general solution of a nonhomogeneous linear equation is a particular solution plus the solution space of the homogeneous equation, [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|331 Thm. §17.2]]; for systems, [[§35★ Nonhomogeneous Linear Systems#^thm-35-1|331 Thm. §35.1]].
+> - In ℝ³: lines $\mathbf r = \mathbf r_0 + t\mathbf v$ and planes $\mathbf n \cdot (\mathbf r - \mathbf r_0) = 0$ are translates of subspaces, [[§98 Equations of Lines and Planes#^thm-98-1|Calc Thm. §98.1]] and [[§98 Equations of Lines and Planes#^thm-98-5|Calc Thm. §98.5]] (with worked examples).
+> - Computational version: [[§6 Solution Sets of Linear Systems#^thm-6-3|235 Thm. §6.3]] (the solutions of Ax = b are a translate p + Nul A).
+> - ODE example: the general solution of a nonhomogeneous linear equation is a particular solution plus the solution space of the homogeneous equation, [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-2|331 Thm. §21.2]]; for systems, [[§41★ Nonhomogeneous Linear Systems#^thm-41-1|331 Thm. §41.1]].
 
 > [!example] Example 3.98: Translates (p. 99)
 > - For the line $U$ of [[§11 Products and Quotients of Vector Spaces#^ladr-3-96|3.96]], the translates of $U$ are all lines of slope $2$; for any line $U$ through $0$ in $\R^2$, they are all lines parallel to $U$.
@@ -182,7 +182,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the cosets of a subgroup partition the group, [[§28 Left and Right Cosets#^prop-28-2|493 Prop. §28.2]] (hub [[Cosets Partition a Group]]).
-> - Measure-theory use: viewing $\R$ as a vector space over $\mathbb Q$ (a scalar field outside Axler's $\F$), the translates $x+\mathbb Q$ of the subspace $\mathbb Q$ partition $\R$; the Vitali set picks one point from each class meeting $[0,1]$, [[§11 Borel Sets and Measure Spaces#^def-11-12|551 Def. §11.12]] ([[The Vitali Set is Not Measurable]]).
+> - Measure-theory use: viewing $\R$ as a vector space over $\mathbb Q$ (a scalar field outside Axler's $\F$), the translates $x+\mathbb Q$ of the subspace $\mathbb Q$ partition $\R$; the Vitali set picks one point from each class meeting $[0,1]$, [[§14 The Vitali Set and the Cantor Set#^def-14-3|551 Def. §14.3]] ([[The Vitali Set is Not Measurable]]).
 
 > [!definition] Definition 3.102: Addition and scalar multiplication on V∕U
 > For a subspace $U$ of $V$, define on $V/U$:
@@ -283,7 +283,7 @@ tags: [linear-algebra]
 
 %% ex:3.107-diff %%
 > [!example] Example: Differentiation, and "up to a constant"
-> Let $D\in\Lin(\Poly_3(\R))$, $Dp=p'$. Then $\nullsp D$ is the constants and $\range D=\Poly_2(\R)$. The quotient $\Poly_3(\R)/\nullsp D$ is "polynomials up to an additive constant", and $\tilde D(p+\nullsp D)=p'$ is an isomorphism onto $\Poly_2(\R)$. Its inverse sends $q$ to the coset $\int q+\nullsp D$, i.e. "$\int q+C$": an indefinite integral ([[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Calc Def. §37.1]]) is precisely an element of this quotient. Dimensions: $4-1=3$, as [[Fundamental theorem of linear maps|3.21]] predicts.
+> Let $D\in\Lin(\Poly_3(\R))$, $Dp=p'$. Then $\nullsp D$ is the constants and $\range D=\Poly_2(\R)$. The quotient $\Poly_3(\R)/\nullsp D$ is "polynomials up to an additive constant", and $\tilde D(p+\nullsp D)=p'$ is an isomorphism onto $\Poly_2(\R)$. Its inverse sends $q$ to the coset $\int q+\nullsp D$, i.e. "$\int q+C$": an indefinite integral ([[§42 Indefinite Integrals and the Net Change Theorem#^def-42-1|Calc Def. §42.1]]) is precisely an element of this quotient. Dimensions: $4-1=3$, as [[Fundamental theorem of linear maps|3.21]] predicts.
 >
 > The general picture: $T$ factors as surjection, isomorphism, inclusion.
 >

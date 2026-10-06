@@ -29,7 +29,7 @@ tags: [functional-analysis, math556]
 ^def-10-1
 
 > [!remark]- Connections
-> - The 551 definition (real scalars): [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|551 Def. §19.2]]; the norm of an inner product space is the case treated in [[§19 Inner Products and Norms#^ladr-6-7|LADR 6.7]] (triangle inequality [[Triangle inequality|LADR 6.17]]).
+> - The 551 definition (real scalars): [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-2|551 Def. §34.2]]; the norm of an inner product space is the case treated in [[§20 Inner Products and Norms#^ladr-6-7|LADR 6.7]] (triangle inequality [[Triangle inequality|LADR 6.17]]).
 > - Inner-product norms in this course: [[§21 Cauchy–Schwarz and the Induced Norm|§21]].
 
 > [!definition] Definition §10.2: Seminorm
@@ -78,8 +78,8 @@ tags: [functional-analysis, math556]
 ^ex-10-1
 
 > [!remark]- Connections
-> - The same norms in 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-2|551 Ex. §19.2]] (unit-ball figure); as metrics on $\mathbb{R}^n$: [[§11 Metric Topology#^ex-11-1|590 Ex. §11.1]], [[§11 Metric Topology#^ex-11-5|590 Ex. §11.5]], [[§13 Some Topological Concepts in Metric Spaces#^ex-13-4|451 Ex. §13.4]].
-> - Minkowski's inequality for $L^p$ functions in 551: [[Minkowski's Inequality|551 §19.9]]; the version for sums used here is [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]].
+> - The same norms in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]] (unit-ball figure); as metrics on $\mathbb{R}^n$: [[§12 Metric Topology#^ex-12-1|590 Ex. §12.1]], [[§12 Metric Topology#^ex-12-5|590 Ex. §12.5]], [[§13 Some Topological Concepts in Metric Spaces#^ex-13-4|451 Ex. §13.4]].
+> - Minkowski's inequality for $L^p$ functions in 551: [[Minkowski's Inequality|551 §35.2]]; the version for sums used here is [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]].
 
 ## The Induced Metric
 
@@ -94,7 +94,7 @@ tags: [functional-analysis, math556]
 ^def-10-3
 
 > [!remark]- Connections
-> - Home of the definition: [[§11 Metric Topology#^def-11-1|590 Def. §11.1]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]].
+> - Home of the definition: [[§12 Metric Topology#^def-12-1|590 Def. §12.1]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]].
 
 > [!theorem] Proposition §10.2: A Normed Space is a Metric Space
 > Let $(X, \|\cdot\|)$ be a normed linear space and define $d(x, y) = \|x - y\|$ for $x, y \in X$. Then $(X, d)$ is a metric space.
@@ -111,7 +111,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-3|Def. §10.3]]
 
 > [!remark]- Connections
-> - Same statement and proof in 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|551 §19.1]].
+> - Same statement and proof in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^prop-34-1|551 §34.1]].
 
 The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneous, $d(ax, ay) = |a|\,d(x,y)$; a general metric on a linear space need not be either. Everything available in a metric space — limits, open and closed sets, continuity — is now available in $X$.
 
@@ -127,8 +127,8 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-4
 
 > [!remark]- Connections
-> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
-> - Convergence in a topological space: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]], which for the norm metric is this definition.
+> - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-4|551 Def. §34.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
+> - Convergence in a topological space: [[§8 Interior and Closure#^def-8-6|590 Def. §8.6]], which for the norm metric is this definition.
 
 > [!theorem] Lemma §10.3: Reverse Triangle Inequality
 > For all $x, y$ in a normed linear space $X$,
@@ -193,7 +193,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-5
 
 > [!remark]- Connections
-> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; on $\mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|451 Def. §10.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|451 Def. §13.2]].
+> - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-4|551 Def. §34.4]]; on $\mathbb{R}$: [[§10a Cauchy Sequences#^def-10a-1|451 Def. §10a.1]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|451 Def. §13.3]].
 
 > [!theorem] Proposition §10.5: Limits are Unique; Convergent Sequences are Cauchy
 > Let $\{x_n\}$ be a sequence in a normed linear space $X$.
@@ -210,8 +210,8 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 *Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-4|Def. §10.4]], [[§10 Normed Linear Spaces#^def-10-5|Def. §10.5]]
 
 > [!remark]- Connections
-> - The real-line and metric versions: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|451 §10.7]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
-> - Part (a) holds in every Hausdorff space ([[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]]), and metric spaces are Hausdorff ([[§11 Metric Topology#^thm-11-4|590 Thm. §11.4]]).
+> - The real-line and metric versions: [[§10a Cauchy Sequences#^thm-10a-1|451 §10a.1]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
+> - Part (a) holds in every Hausdorff space ([[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]]), and metric spaces are Hausdorff ([[§12 Metric Topology#^thm-12-4|590 Thm. §12.4]]).
 
 > [!remark] Remark
 > Convergence refers to a limit *in $X$*; a Cauchy sequence has its terms approaching one another with no limit mentioned. The converse of (b) fails: a Cauchy sequence may fail to converge because the point it is heading toward is missing from $X$ — the standard example being a sequence of rationals approaching $\sqrt{2}$ inside $\mathbb{Q}$. Spaces without this defect are the subject of the [[§11 Completeness|next section]]. Both statements, and their proofs, hold verbatim in any metric space.
@@ -224,8 +224,8 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-6
 
 > [!remark]- Connections
-> - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|451 Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-new3|452 Def. §2.4]].
-> - The topological definition (complement open): [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]; in metric spaces it agrees with this one by [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]] and the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]).
+> - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-7|451 Def. §13.7]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-7|452 Def. §2.7]].
+> - The topological definition (complement open): [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]; in metric spaces it agrees with this one by [[§8 Interior and Closure#^cor-8-5|590 Cor. §8.5]] and the Sequence Lemma ([[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]]).
 
 > [!definition] Definition §10.7: Closure; Dense Subset
 > Let $S$ be a subset of a normed linear space (or metric space) $X$. The **closure** $\overline{S}$ of $S$ is the set of all limits of convergent sequences in $S$:
@@ -241,8 +241,8 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-7
 
 > [!remark]- Connections
-> - The closure as smallest closed superset, and its sequential description: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|451 Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
-> - Topological closure and density: [[§7 Interior and Closure#^def-7-new1|590 Def. §7.1]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]); dense: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]].
+> - The closure as smallest closed superset, and its sequential description: [[§13 Some Topological Concepts in Metric Spaces#^def-13-8|451 Def. §13.8]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-8|452 Def. §2.8]].
+> - Topological closure and density: [[§8 Interior and Closure#^def-8-2|590 Def. §8.2]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§12 Metric Topology#^lem-12-8|590 Lemma §12.8]]); dense: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]].
 
 > [!theorem] Proposition §10.6: Properties of the Closure
 > Let $S$ be a subset of a normed linear space $X$.
@@ -290,7 +290,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-9
 
 > [!remark]- Connections
-> - Balls in a metric space and in $\mathbb{R}^n$: [[§11 Metric Topology#^def-11-2|590 Def. §11.2]], [[§2 Open and Closed Sets#^def-2-1|452 Def. §2.1]], [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior points).
+> - Balls in a metric space and in $\mathbb{R}^n$: [[§12 Metric Topology#^def-12-2|590 Def. §12.2]], [[§2 Open and Closed Sets#^def-2-1|452 Def. §2.1]], [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior points).
 
 > [!theorem] Proposition §10.7: Metric Interior Points are Interior Points
 > Let $K$ be a subset of a normed linear space $X$. Every metric interior point of $K$ is an interior point of $K$ in the sense of Definition [[§6 Convex Sets and the Gauge#^def-6-1|§6.1]].

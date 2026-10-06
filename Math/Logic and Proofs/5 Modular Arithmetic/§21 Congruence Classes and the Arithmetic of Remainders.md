@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 21 · MAT 200 lecture (syllabus weeks 11–12: congruence classes, operations on congruence classes). No homework survives for this chapter.*
 
-Instead of saying that integers are *congruent*, we can say that their *congruence classes are equal*: the set of all even integers replaces "an even integer". This is a typical step of abstraction, and it pays: there are only $m$ classes, so counting arguments such as the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) apply, and the classes can be added and multiplied, giving an *arithmetic of remainders* (Dedekind, 1857). As an application, Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] gets a second proof that makes it look almost obvious. Throughout, $m$ is a fixed positive integer.
+Instead of saying that integers are *congruent*, we can say that their *congruence classes are equal*: the set of all even integers replaces "an even integer". This is a typical step of abstraction, and it pays: there are only $m$ classes, so counting arguments such as the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) apply, and the classes can be added and multiplied, giving an *arithmetic of remainders* (Dedekind, 1857). As an application, Theorem [[§20 Linear Congruences#^thm-20-4|§20.4]] gets a second proof that makes it look almost obvious. Throughout, $m$ is a fixed positive integer.
 
 ## 21.1 Congruence Classes
 
@@ -82,7 +82,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 > - Residue classes in group theory: [[§6 Divisibility and Congruence#^def-6-4|493 Def. §6.4]]; the general statement for any equivalence relation is [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]] here, and [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]].
 
 > [!remark] Remark: The Box Model of the Remainder Map
-> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-new3|Def. §9.4]])
+> Picture the remainder map $r_m : \mathbb{Z} \to R_m$ ([[§19 Congruence of Integers#^def-19-3|Def. §19.3]]) as $m$ boxes labelled $0, 1, \ldots, m - 1$, each integer dropped into the box of its remainder (the box model of a function, [[§8 Functions#^ex-8-1|Example §8.1]]). The contents of box $r$ form the pre-image ([[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]])
 >
 > $$
 > \overleftarrow{r_m}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
@@ -107,7 +107,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^def-21-2
 
-Each integer $a$ lies in its own class $[a]_m$, and by [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]] two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]]).
+Each integer $a$ lies in its own class $[a]_m$, and by [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]] two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]]).
 
 > [!theorem] Proposition §21.2: $\mathbb{Z}_m$ Has $m$ Elements
 > The set $\mathbb{Z}_m$ is finite of cardinality $m$; its elements are $[r]_m$ for the integers $0 \leq r < m$:
@@ -225,7 +225,7 @@ The same idea works for every $m$: to add two columns of the table, pick any ele
 
 ^pf-21-4
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§2 Implications#^def-2-8|Def. §2.8]] (the laws in $\mathbb{Z}$)
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§2 Implications#^def-2-9|Def. §2.9]] (the laws in $\mathbb{Z}$)
 
 > [!remark]- Connections
 > - With (1)–(5), $\mathbb{Z}_m$ under $+$ is the group [[§7 The Group ℤ∕nℤ#^def-7-1|493 Def. §7.1]]; it is a field exactly when $m$ is prime, [[§8 Invertibility and Unit Groups#^prop-8-4|493 Prop. §8.4]].
@@ -298,7 +298,7 @@ So the bijection $R_m \to \mathbb{Z}_m$, $a \mapsto [a]_m$ (Proposition [[§21 C
 
 ## 21.4 Linear Congruences in $\mathbb{Z}_m$
 
-Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ in two ways. The set is finite, so every equation can be solved by trying all possibilities. And division behaves differently: in $\mathbb{Z}$ we can always divide only by $\pm 1$, but in $R_m$ there may be other numbers we can always divide by. Since $ax \equiv b \pmod m$ iff $[ax]_m = [b]_m$, i.e. $[a]_m \times [x]_m = [b]_m$, Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] can be restated in $\mathbb{Z}_m$, and finiteness then gives a proof by counting.
+Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ in two ways. The set is finite, so every equation can be solved by trying all possibilities. And division behaves differently: in $\mathbb{Z}$ we can always divide only by $\pm 1$, but in $R_m$ there may be other numbers we can always divide by. Since $ax \equiv b \pmod m$ iff $[ax]_m = [b]_m$, i.e. $[a]_m \times [x]_m = [b]_m$, Theorem [[§20 Linear Congruences#^thm-20-4|§20.4]] can be restated in $\mathbb{Z}_m$, and finiteness then gives a proof by counting.
 
 > [!theorem] Theorem §21.6: Solving $[a][x] = [b]$ in $\mathbb{Z}_m$
 > Suppose that $a$ and $b$ are integers with $a$ and $m$ coprime. Then the equation
@@ -337,7 +337,7 @@ Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ 
 
 ^rem-21-3
 
-This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean-algorithm proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
+This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean-algorithm proof of [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
 
 > [!example] Example §21.4: Rows That Contain Everything
 > In the multiplication table of $R_{10}$ ([[§21 Congruence Classes and the Arithmetic of Remainders#^ex-21-3|Example §21.3]]) the row of $7$ is $0, 7, 4, 1, 8, 5, 2, 9, 6, 3$: every remainder occurs exactly once. So we can always "divide by $7$": $7 \times_{10} x = b$, equivalently $[7]_{10} \times [x]_{10} = [b]_{10}$, has a unique solution for every $b \in R_{10}$. The rows with this property are those of $1, 3, 7, 9$, exactly the elements of $R_{10}$ coprime to $10$; and these are also exactly the rows containing $1$. The row of $5$, by contrast, is $0, 5, 0, 5, \ldots$, missing $1$ and repeating $0$.
@@ -402,11 +402,11 @@ The inverse class is unique: if $aa' \equiv 1 \equiv aa''$, then $a' \equiv a'(a
 ^cor-21-9
 
 > [!proof]+ Proof
-> $a$ is invertible modulo $m$ exactly when $ax \equiv 1 \pmod m$ has a solution. By Theorem [[§20 Linear Congruences#^thm-20-4|§20.4]] this happens iff $\gcd(a, m)$ divides $1$, i.e. iff $\gcd(a, m) = 1$.
+> $a$ is invertible modulo $m$ exactly when $ax \equiv 1 \pmod m$ has a solution. By Theorem [[§20 Linear Congruences#^thm-20-5|§20.5]] this happens iff $\gcd(a, m)$ divides $1$, i.e. iff $\gcd(a, m) = 1$.
 
 ^pf-21-9
 
-*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|Def. §21.5]], [[§20 Linear Congruences#^thm-20-4|§20.4]]
+*Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|Def. §21.5]], [[§20 Linear Congruences#^thm-20-5|§20.5]]
 
 For a prime modulus $p$ every class other than $[0]_p$ is invertible; the counting proof of [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] then leads to Fermat's little theorem, [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
 

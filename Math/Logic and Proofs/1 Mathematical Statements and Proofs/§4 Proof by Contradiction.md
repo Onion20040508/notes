@@ -34,7 +34,7 @@ The direct method is awkward for negative statements, such as non-existence resu
 
 ^pf-4-1
 
-*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^prop-2-5|§2.5]]
+*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§2 Implications#^prop-2-5|§2.5]]
 
 We cannot check all pairs $(m, n)$ one at a time. Instead we showed that the negation of the goal leads to something known to be false: "When you have eliminated the impossible, whatever remains, however improbable, must be the truth" (Sherlock Holmes).
 
@@ -79,7 +79,7 @@ We cannot check all pairs $(m, n)$ one at a time. Instead we showed that the neg
 
 ^ex-4-1
 
-*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§3 Proofs#^cor-3-3|§3.3]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
+*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§3 Proofs#^cor-3-3|§3.3]], [[§5 The Induction Principle#^ex-5-2|Ex. §5.2]]
 
 ## 4.2 Proving Implications by Contradiction
 
@@ -100,7 +100,7 @@ If $P \Rightarrow Q$ is false then $P$ is true and $Q$ is false ([[§2 Implicati
 *Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
-> - The multiplication rules for inequalities in Stewart: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]].
+> - The multiplication rules for inequalities in Stewart: [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-2|Calc Thm. §139.2]].
 
 A direct proof is hard to find here, because the multiplication law depends on the sign of $c$, which is what we are trying to determine. (The same argument works for real $a$, $b$, $c$.)
 
@@ -135,7 +135,7 @@ To prove $P \Rightarrow (Q \vee R)$, assume $P$ and $\neg Q$, and deduce $R$: th
 
 ^pf-4-4
 
-*Uses:* [[§2 Implications#^ex-2-13|Ex. §2.13]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§2 Implications#^prop-2-4|§2.4]]
+*Uses:* [[§2 Implications#^ex-2-13|Ex. §2.13]], [[§2 Implications#^def-2-9|Def. §2.9]], [[§2 Implications#^prop-2-4|§2.4]]
 
 > [!theorem] Proposition §4.5: Signs of a Product
 > For real numbers $a$ and $b$:
@@ -163,7 +163,7 @@ To prove $P \Rightarrow (Q \vee R)$, assume $P$ and $\neg Q$, and deduce $R$: th
 
 *Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§2 Implications#^ex-2-13|Ex. §2.13]]
 
-[[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]] is what we use to solve polynomial equations, and [[§4 Proof by Contradiction#^prop-4-5|Proposition §4.5]] to solve polynomial inequalities ([[§6 The Language of Set Theory#^ex-6-10|Ex. §6.10]]).
+[[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]] is what we use to solve polynomial equations, and [[§4 Proof by Contradiction#^prop-4-5|Proposition §4.5]] to solve polynomial inequalities ([[§6a Operations on Sets#^ex-6a-5|Ex. §6a.5]]).
 
 ## Exercises from the Homework
 
@@ -179,7 +179,7 @@ To prove $P \Rightarrow (Q \vee R)$, assume $P$ and $\neg Q$, and deduce $R$: th
 
 ^ex-4-2
 
-*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]], [[§3 Proofs#^ex-3-3|Ex. §3.3]], [[§5 The Induction Principle#^prop-5-2|§5.2]]
+*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]], [[§3 Proofs#^ex-3-3|Ex. §3.3]], [[§5 The Induction Principle#^prop-5-2|§5.2]]
 
 Eccles's hint to Problems I Q7 instead assumes that the odd integers are exactly those of the form $2q + 1$, which is proved only later ([[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]); with that fact, (b) is the contrapositive of "$n = 2q + 1 \Rightarrow n^2 = 2p + 1$" ([[§7 Quantifiers#^ex-7-4|Ex. §7.4]]). The proof of (b) above needs only [[§5 The Induction Principle#^prop-5-2|Proposition §5.2]].
 
@@ -237,12 +237,12 @@ Eccles's hint to Problems I Q7 instead assumes that the odd integers are exactly
 
 ^ex-4-5
 
-*Uses:* [[§3 Proofs#^ex-3-5|Ex. §3.5]], [[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]], [[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]], [[§1 The Language of Mathematics#^def-1-4|Def. §1.4]], [[§2 Implications#^prop-2-2|§2.2]], [[§4 Proof by Contradiction#^prop-4-5|§4.5]]
+*Uses:* [[§3 Proofs#^ex-3-5|Ex. §3.5]], [[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]], [[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]], [[§2 Implications#^prop-2-2|§2.2]], [[§4 Proof by Contradiction#^prop-4-5|§4.5]]
 
 > [!remark]- Connections
 > - The triangle inequality and $|ab| = |a||b|$ in analysis, proved there by adding $-|a| \leq a \leq |a|$ and $-|b| \leq b \leq |b|$: [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 Thm. §3.3]].
 > - Generalized to inner product spaces: [[Triangle inequality|LADR 6.17]].
-> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (with worked examples).
+> - Computational version: [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-6|Calc Thm. §139.6]] (with worked examples).
 
 > [!example] Example §4.6: The Largest Integer
 > (a) There is no largest integer. (b) What is wrong with the following proof that $1$ is the largest integer, and what does it prove?

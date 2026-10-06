@@ -27,4 +27,4 @@ Once uniform limits of continuous functions are known to be continuous ([[§24 U
 
 ![[§24 Uniform Convergence#^rem-24-1]]
 
-*Chain: later in Measure Theory, [[Power sequence xᵏ]]: [[§12 Measurable Functions#^ex-12-4|551 Ex. §12.4]] (pointwise but not uniform) · [[§13 Egorov's and Lusin's Theorems#^ex-13-1|551 Ex. §13.1]] (uniform on every [0, 1 − δ], as in Egorov's theorem)*
+*Chain: later in Measure Theory, [[Power sequence xᵏ]]: [[§17 Simple Functions and Modes of Convergence#^ex-17-1|551 Ex. §17.1]] (pointwise but not uniform) · [[§18 Egorov's and Lusin's Theorems#^ex-18-1|551 Ex. §18.1]] (uniform on every [0, 1 − δ], as in Egorov's theorem)*

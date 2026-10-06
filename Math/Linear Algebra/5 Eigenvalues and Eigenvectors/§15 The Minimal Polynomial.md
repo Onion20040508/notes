@@ -26,7 +26,7 @@ tags: [linear-algebra]
 > Over $\R$: rotation by $90^\circ$ on $\R^2$ has no eigenvalue. In infinite dimensions: multiplication by $z$ on $\Poly(\C)$ has no eigenvalue.
 
 > [!remark]- Connections
-> - Computational version: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (by the Fundamental Theorem of Algebra the characteristic equation of an $n\times n$ matrix has $n$ complex roots, counted with multiplicity; they are eigenvalues in the sense of [[§36 Complex Eigenvalues#^def-36-1|235 Def. §36.1]]).
+> - Computational version: [[§41 The Characteristic Equation#^rem-41-1|235 Remark §33.1]] (by the Fundamental Theorem of Algebra the characteristic equation of an $n\times n$ matrix has $n$ complex roots, counted with multiplicity; they are eigenvalues in the sense of [[§44 Complex Eigenvalues#^def-44-1|235 Def. §44.1]]).
 > - Used in Quantum Field Theory: an intertwiner of an irreducible complex representation with itself has an eigenvalue, hence is a multiple of the identity (Schur's lemma); $J^3$ on a finite-dimensional complex representation of the rotation algebra has an eigenvector, the start of the highest-weight construction — [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-3|QFT Theorem §C3.1.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-6|QFT Theorem §C3.1.6]].
 
 > [!example] Example 5.20: An operator on a complex vector space with no eigenvalues (p. 143)
@@ -132,7 +132,7 @@ tags: [linear-algebra]
 *Uses:* [[§13 Polynomials#^ladr-4-9|4.9]], [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
 
 > [!remark]- Connections
-> - Minimal polynomial of a restriction divides: [[§15 The Minimal Polynomial#^ladr-5-31|Minimal polynomial of a restriction operator]]. With Cayley–Hamilton: minimal polynomial divides the characteristic polynomial ([[§29 Generalized Eigenspace Decomposition#^ladr-8-30|Characteristic polynomial is a multiple of minimal polynomial]]).
+> - Minimal polynomial of a restriction divides: [[§15 The Minimal Polynomial#^ladr-5-31|Minimal polynomial of a restriction operator]]. With Cayley–Hamilton: minimal polynomial divides the characteristic polynomial ([[§31 Generalized Eigenspace Decomposition#^ladr-8-30|Characteristic polynomial is a multiple of minimal polynomial]]).
 > - Same least-element argument as for subgroups of ℤ, which are all of the form nℤ: [[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]] (hub [[Subgroups of ℤ]]).
 
 > [!theorem] Theorem 5.31: Minimal polynomial of a restriction operator
@@ -197,4 +197,4 @@ tags: [linear-algebra]
 > In every even dimension there are real operators without eigenvalues (block-diagonal rotations).
 
 > [!remark]- Connections
-> - Physics: a rotation of $\R^3$ has a real eigenvalue by this result, necessarily $\pm1$ (norm-preserving; cf. [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|Eigenvalues of unitary operators have absolute value 1]]). For a proper rotation ($\det=1$) the eigenvalue $1$ must occur, giving the rotation axis: the three complex eigenvalues (with multiplicity) have modulus $1$ and multiply to $\det=1$; nonreal ones come in conjugate pairs with product $1$, so the real ones, each $\pm1$ and odd in number, multiply to $1$, and hence not all of them are $-1$.
+> - Physics: a rotation of $\R^3$ has a real eigenvalue by this result, necessarily $\pm1$ (norm-preserving; cf. [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-54|Eigenvalues of unitary operators have absolute value 1]]). For a proper rotation ($\det=1$) the eigenvalue $1$ must occur, giving the rotation axis: the three complex eigenvalues (with multiplicity) have modulus $1$ and multiply to $\det=1$; nonreal ones come in conjugate pairs with product $1$, so the real ones, each $\pm1$ and odd in number, multiply to $1$, and hence not all of them are $-1$.

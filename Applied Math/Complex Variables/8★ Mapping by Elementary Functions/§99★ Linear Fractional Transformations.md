@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 99
+section: "99★"
 bc: "99"
 aliases: ["B&C 99"]
 tags: [complex-variables, math342, extension]
@@ -191,11 +191,11 @@ which recovers $z$ from its image, except that when $c \ne 0$ the value $w = a/c
 > S[T(z)] = \frac{a_2(a_1z + b_1) + b_2(c_1z + d_1)}{c_2(a_1z + b_1) + d_2(c_1z + d_1)} = \frac{(a_2a_1 + b_2c_1)z + (a_2b_1 + b_2d_1)}{(c_2a_1 + d_2c_1)z + (c_2b_1 + d_2d_1)} ,
 > $$
 >
-> and these coefficients are the entries of the matrix product. The determinant of a product is the product of the determinants ([[§34 Determinants#^ladr-9-49|LADR 9.49]]), which gives $a_3d_3 - b_3c_3$. So $S \circ T$ agrees with the linear fractional transformation $R(z) = (a_3z + b_3)/(c_3z + d_3)$ at all but finitely many points of the extended plane. Both are continuous there (Theorem §99.4, applied to $T$, $S$ and $R$), and every one of the finitely many exceptional points is a limit of points where they agree, so they agree everywhere.
+> and these coefficients are the entries of the matrix product. The determinant of a product is the product of the determinants ([[§37 Determinants#^ladr-9-49|LADR 9.49]]), which gives $a_3d_3 - b_3c_3$. So $S \circ T$ agrees with the linear fractional transformation $R(z) = (a_3z + b_3)/(c_3z + d_3)$ at all but finitely many points of the extended plane. Both are continuous there (Theorem §99.4, applied to $T$, $S$ and $R$), and every one of the finitely many exceptional points is a limit of points where they agree, so they agree everywhere.
 
 ^pf-99-5
 
-*Uses:* [[§99★ Linear Fractional Transformations#^thm-99-4|§99.4]], [[§34 Determinants#^ladr-9-49|LADR 9.49]] (determinant of a product)
+*Uses:* [[§99★ Linear Fractional Transformations#^thm-99-4|§99.4]], [[§37 Determinants#^ladr-9-49|LADR 9.49]] (determinant of a product)
 
 > [!remark]- Connections
 > - The correspondence $\begin{bmatrix} a & b \\ c & d\end{bmatrix} \mapsto T$ turns matrix multiplication in $GL_2(\mathbb{C})$, [[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]], into composition of maps, and the inverse matrix gives $T^{-1}$ of (8) up to the factor $1/(ad - bc)$. So the linear fractional transformations form a group under composition, the image of $GL_2(\mathbb{C})$; two matrices give the same map exactly when they are proportional.

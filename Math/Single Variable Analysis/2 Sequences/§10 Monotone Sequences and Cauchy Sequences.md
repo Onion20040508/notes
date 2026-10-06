@@ -5,7 +5,7 @@ section: 10
 chapter: 2
 tags: [real-analysis, math451]
 ---
-← [[§9 Limit Theorems for Sequences]] · ↑ [[· 2 Sequences]] · [[§10a Cauchy Sequences]] →
+← [[§9a Divergence to ±∞ and the Ratio Test]] · ↑ [[· 2 Sequences]] · [[§10a Cauchy Sequences]] →
 
 So far, mainly three ways to determine whether a sequence converges: (1) guess the limit and check the $(\varepsilon, N)$ definition; (2) use basic examples plus the limit theorems and the [[Squeeze Theorem|Squeeze Theorem]]; (3) sometimes, the ratio test. But we need criteria that work *without knowing the value of the limit* — sometimes we need the existence of $\lim s_n$ even when we cannot compute it. In one important case, we can do it.
 
@@ -55,7 +55,7 @@ So far, mainly three ways to determine whether a sequence converges: (1) guess t
 *The proof in one picture: $s = \sup\{s_n\}$ (blue line) is the least upper bound, at or below any other upper bound $M$. Since $s - \varepsilon$ is not an upper bound, some $s_N$ (red) exceeds it — and because the sequence increases, every later term is trapped in the band between $s - \varepsilon$ and $s$.*
 
 > [!remark]- Connections
-> - Computational version: [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (with worked examples).
+> - Computational version: [[§81 Monotonic and Bounded Sequences#^thm-81-1|Calc Thm. §81.1]] (with worked examples).
 
 > [!remark] Remark
 > Both assumptions are needed. Is there a bounded sequence that is not convergent? Yes: $s_n = (-1)^n$ — the monotone condition is missing. And $s_n = n$ is monotone but unbounded.
@@ -146,7 +146,7 @@ The supremum also admits a *sequential* characterization — the limit-language 
 
 ^pf-10-3
 
-*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]]
+*Uses:* [[§9a Divergence to ±∞ and the Ratio Test#^def-9a-1|Def. §9a.1]]
 
 Combining the two theorems: *a monotone sequence always has a limit in $[-\infty, +\infty]$.*
 

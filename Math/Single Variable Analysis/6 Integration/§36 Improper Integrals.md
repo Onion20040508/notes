@@ -28,10 +28,10 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 ^def-36-1
 
 > [!remark]- Connections
-> - Used in PDEs: the Fourier integral, [[§14 Fourier Integral#^def-14-new1|341 Def. §14.1]], and the solution of the semi-infinite rod, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], are improper integrals in this sense.
-> - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
-> - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], [[§51 Improper Integrals#^def-51-2|Calc Def. §51.2]] (with worked examples).
-> - Used in ODEs: the improper integral over $[a, \infty)$ that defines the Laplace transform, [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (with worked examples).
+> - Used in PDEs: the Fourier integral, [[§18 Fourier Integral#^def-18-2|341 Def. §18.2]], and the solution of the semi-infinite rod, [[§32 Semi-Infinite Rod#^thm-32-2|341 Thm. §32.2]], are improper integrals in this sense.
+> - The Lebesgue integral is absolute ([[§22 The General Lebesgue Integral#^rem-22-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§24 The L¹ Space and Density Theorems#^thm-24-3|551 Thm. §24.3]].
+> - Computational version: [[§58 Improper Integrals#^def-58-1|Calc Def. §58.1]], [[§58 Improper Integrals#^def-58-2|Calc Def. §58.2]] (with worked examples).
+> - Used in ODEs: the improper integral over $[a, \infty)$ that defines the Laplace transform, [[§26 Definition of the Laplace Transform#^def-26-1|331 Def. §26.1]] (with worked examples).
 
 > [!remark] Remark: The New Definition Extends the Old One
 > If $b$ is finite and $f$ *is* integrable on $[a,b]$, no conflict arises [Ross Ex. 36.1]: the function $d \mapsto \int_a^d f\,dx$ is Lipschitz, hence continuous, on $[a,b]$ (the continuity clause of [[Fundamental Theorem of Calculus|FTC]] II, §34), so its limit as $d \to b^-$ is its value at $b$ — the ordinary integral. The limit definition extends the old one; it never overwrites it.
@@ -50,7 +50,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 ^def-36-2
 
 > [!remark]- Connections
-> - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]] (with worked examples).
+> - Computational version: [[§58 Improper Integrals#^def-58-1|Calc Def. §58.1]] (with worked examples).
 > - Computational version: [[§85 Evaluation of Improper Integrals#^def-85-2|342 Def. §85.2]] (the Cauchy principal value, the symmetric limit used in residue calculations).
 
 The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replacing $\alpha$ by $\alpha' \in (a,b)$ changes the two summands by $\mp \int_\alpha^{\alpha'} f\,dx$ — a *finite* proper integral, since additivity over subintervals passes through the defining limits — and the two changes cancel in the sum, also in the extended arithmetic above.
@@ -85,7 +85,7 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 *The p-integrals on $[1, \infty)$: the three graphs look alike, but only for $p = 2$ (blue) is the area under the whole tail finite, $\int_1^\infty x^{-2}\,dx = \tfrac{1}{p-1} = 1$; for $p = 1$ (dashed) and $p = \tfrac12$ (red), $\int_1^d$ grows without bound as $d \to \infty$.*
 
 > [!remark]- Connections
-> - Computational version: [[§51 Improper Integrals#^thm-51-1|Calc Thm. §51.1]]; the p-series, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
+> - Computational version: [[§58 Improper Integrals#^thm-58-1|Calc Thm. §58.1]]; the p-series, [[§83 The Integral Test and Estimates of Sums#^thm-83-2|Calc Thm. §83.2]].
 
 > [!example] Example §36.3: A Symbol with No Meaning
 > $\int_0^d \sin x\,dx = 1 - \cos d$ [by [[Fundamental Theorem of Calculus|FTC]] I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
@@ -154,8 +154,8 @@ $$
 *Uses:* [[§36 Improper Integrals#^def-36-3|Def. §36.3]]
 
 > [!remark]- Connections
-> - Computational version: the Comparison Theorem resting on this dichotomy, [[§51 Improper Integrals#^thm-51-2|Calc Thm. §51.2]] (with worked examples).
-> - ODE version: the comparison test for piecewise continuous integrands, [[§21 Definition of the Laplace Transform#^thm-21-1|331 Thm. §21.1]], used for the existence of the Laplace transform.
+> - Computational version: the Comparison Theorem resting on this dichotomy, [[§58 Improper Integrals#^thm-58-2|Calc Thm. §58.2]] (with worked examples).
+> - ODE version: the comparison test for piecewise continuous integrands, [[§26 Definition of the Laplace Transform#^thm-26-1|331 Thm. §26.1]], used for the existence of the Laplace transform.
 
 > [!theorem] Theorem §36.2: Bounded Integrand against a Finite Total Weight
 > Suppose $-\infty < F(-\infty) \leq F(\infty) < \infty$ (finite total weight), and let $f$ be bounded on $\mathbb{R}$ and $F$-integrable on every $[a,b]$. Then $f$ is $F$-integrable on $\mathbb{R}$.
@@ -178,7 +178,7 @@ $$
 *Uses:* [[§36 Improper Integrals#^thm-36-1|§36.1]], [[§36 Improper Integrals#^def-36-3|Def. §36.3]]
 
 > [!remark]- Connections
-> - Used in PDEs: the coefficient integrals of the Fourier integral converge absolutely, since $|f(x)\cos\lambda x|\le|f(x)|$, [[§14 Fourier Integral#^thm-14-1|341 Thm. §14.1]].
+> - Used in PDEs: the coefficient integrals of the Fourier integral converge absolutely, since $|f(x)\cos\lambda x|\le|f(x)|$, [[§18 Fourier Integral#^thm-18-1|341 Thm. §18.1]].
 
 > [!remark] Remark: Distribution Functions
 > An increasing $F: \mathbb{R} \to \mathbb{R}$ with $F(-\infty) = 0$ and $F(\infty) = 1$ is called a **distribution function**: in probability, $F(t)$ is the probability that a numerical outcome is $\leq t$. (The Riemann weight $F(t) = t$ is *not* one — infinite total weight.) The theorem above then says: every bounded, interval-wise $F$-integrable $f$ — every bounded continuous $f$, in particular — can be averaged against a distribution, total weight $1$. Frequently $F$ has a **density**: a function $g \geq 0$ with
@@ -192,7 +192,7 @@ $$
 ^rem-36-3
 
 > [!remark]- Connections
-> - Computational version: probability density functions, [[§56 Probability#^def-56-2|Calc Def. §56.2]] (with worked examples).
+> - Computational version: probability density functions, [[§65 Probability#^def-65-2|Calc Def. §65.2]] (with worked examples).
 
 > [!example] Example §36.4: The Normal Distribution
 > It turns out that
@@ -221,5 +221,5 @@ $$
 *The normal density $g$ (left; total area $1$) and its distribution function $F$ (right): the accumulated area climbs from $0$ to $1$, with $F(0) = \tfrac12$ by symmetry. By the remark above, $F' = g$ everywhere — the sigmoid's slope at $t$ is the bell's height at $t$.*
 
 > [!remark]- Connections
-> - The value √π taken on credit here is computed in 452 via polar coordinates: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
-> - Computational version: [[§56 Probability#^prop-56-3|Calc Prop. §56.3]].
+> - The value √π taken on credit here is computed in 452 via polar coordinates: [[§25 Change of Variables on General Domains#^ex-25-4|452 Ex. §25.4]].
+> - Computational version: [[§65 Probability#^prop-65-3|Calc Prop. §65.3]].

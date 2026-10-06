@@ -38,7 +38,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].
-> - In multivariable calculus: [[§8 The Differential#^def-8-1|452 Def. §8.1]] and [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6 (gradient = differential = 1-form)]].
+> - In multivariable calculus: [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1 (gradient = differential = 1-form)]].
 > - Assembled over all of $M$: the cotangent bundle, [[§42 The Cotangent Bundle#^def-42-1|Def. §42.1]].
 > - Used in Relativity: the differential of a scalar field is why its gradient $\partial_\mu\phi$ carries a lower index — [[§B2.2 Tensors and the Covariance Principle#^rem-b2-2-5|REL Remark: Why the gradient carries a lower index]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-6|REL Theorem §B2.2.6]].
 
@@ -140,7 +140,7 @@ On $\mathbb{R}$ we always use the standard coordinate $r$. For every $c \in \mat
 ^rem-30-2
 
 > [!remark]- Connections
-> - The Calc 3 formula and the gradient it replaces: [[§22 The Algebra of Differential Forms#^prop-22-6|452 §22.6]], [[§8 The Differential#^def-8-1|452 Def. §8.1]].
+> - The Calc 3 formula and the gradient it replaces: [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]], [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 > - Converting a covector into a vector with an inner product: [[Riesz representation theorem|LADR 6.42]].
 > - The same point for normal vectors: [[§33 Submanifolds#^rem-33-1|No Normal Vectors Without a Metric]].
 
@@ -362,4 +362,4 @@ Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functi
 ^rem-30-6
 
 > [!remark]- Connections
-> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]. The field version: [[§43 One-Forms#^cor-43-4|Cor. §43.4]].
+> - The chain rule in 452: [[Multivariable Chain Rule]]. Pullback of forms on $\mathbb{R}^n$ commuting with $d$ in 452: [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]]. The field version: [[§43 One-Forms#^cor-43-4|Cor. §43.4]].

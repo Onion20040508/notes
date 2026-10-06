@@ -51,7 +51,7 @@ The logarithm is defined by solving $e^w = z$. Because $e^w$ has period $2\pi i$
 
 ^pf-31-1
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§10 Roots of Complex Numbers#^prop-10-1|§10.1]], [[§5 Inverse Functions and Logarithms#^cor-5-6|Calc Cor. §5.6]] ($e^u = r \iff u = \ln r$)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§10 Roots of Complex Numbers#^prop-10-1|§10.1]], [[§6 Logarithmic and Inverse Trigonometric Functions#^cor-6-3|Calc Cor. §6.3]] ($e^u = r \iff u = \ln r$)
 
 ## The Logarithm and Its Principal Value
 
@@ -77,7 +77,7 @@ $$
 That is what suggests (2) as the definition.
 
 > [!remark]- Connections
-> - The real logarithm and the identities $e^{\ln x} = x$, $\ln(e^x) = x$: [[§5 Inverse Functions and Logarithms#^def-5-4|Calc Def. §5.4]], [[§5 Inverse Functions and Logarithms#^cor-5-6|Calc Cor. §5.6]]; built from $\ln x = \int_1^x dt/t$ in [[§121 The Logarithm Defined as an Integral#^def-121-1|Calc Def. §121.1]]. On the positive real axis $\ln x$ is a single-valued inverse of $e^x$ because $e^x$ is one-to-one there; in the plane $e^z$ is not one-to-one (period $2\pi i$), and this is why $\log z$ is multiple-valued.
+> - The real logarithm and the identities $e^{\ln x} = x$, $\ln(e^x) = x$: [[§6 Logarithmic and Inverse Trigonometric Functions#^def-6-2|Calc Def. §6.2]], [[§6 Logarithmic and Inverse Trigonometric Functions#^cor-6-3|Calc Cor. §6.3]]; built from $\ln x = \int_1^x dt/t$ in [[§144 The Logarithm Defined as an Integral#^def-144-1|Calc Def. §144.1]]. On the positive real axis $\ln x$ is a single-valued inverse of $e^x$ because $e^x$ is one-to-one there; in the plane $e^z$ is not one-to-one (period $2\pi i$), and this is why $\log z$ is multiple-valued.
 
 > [!theorem] Proposition §31.2: Exponential and Logarithm as Inverses
 > For every nonzero $z$ and every value of $\log z$,

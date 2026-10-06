@@ -19,7 +19,7 @@ tags: [measure-theory, math551]
 ^def-6-1
 
 > [!remark]- Connections
-> - Topology: this is “$\mathcal{C}$ covers $E$” by open sets of the ambient space ([[§15 Compact Spaces#^def-15-3|590 Def. §15.3]]), equivalent for compactness to open coverings of $E$ itself ([[§15 Compact Spaces#^lem-15-1|590 Lemma §15.1]]).
+> - Topology: this is “$\mathcal{C}$ covers $E$” by open sets of the ambient space ([[§18 Compact Spaces#^def-18-3|590 Def. §18.3]]), equivalent for compactness to open coverings of $E$ itself ([[§18 Compact Spaces#^lem-18-1|590 Lemma §18.1]]).
 
 > [!example] Example §6.1: Open cover of the unit interval
 > Let $\mathcal{C} = \{(-1, \frac{1}{2}), (0, 1), (\frac{1}{2}, 2)\}$. Then $\mathcal{C}$ is an open cover of $[0,1]$ since
@@ -48,12 +48,12 @@ tags: [measure-theory, math551]
 *The cover of [[§6 Open Covers and the Heine–Borel Theorem#^ex-6-2|Example §6.2]] for the first few rationals of an enumeration (for instance $r_1 = \tfrac12$, $r_2 = \tfrac13$, $r_3 = \tfrac23$, $r_4 = \tfrac14$, $r_5 = \tfrac34$, with $\epsilon = 0.4$). Each $r_k$ (red) gets an interval $I_k$ of length $2\epsilon/2^k$, so the total length is at most $2\epsilon$ although every rational is covered — the idea behind countable sets having measure zero.*
 
 > [!remark]- Connections
-> - The enumeration exists by [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]; the same $\epsilon/2^k$ cover shows [[§9 Lebesgue Outer Measure#^ex-9-2|Countable Sets Have Measure Zero]].
+> - The enumeration exists by [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]; the same $\epsilon/2^k$ cover shows [[§10 Lebesgue Outer Measure#^ex-10-2|Countable Sets Have Measure Zero]].
 
-> [!theorem] Lemma §6.2
+> [!theorem] Lemma §6.3
 > The set $\{B(r, \frac{1}{k}) \mid r \in \mathbb{Q}^n, k \in \mathbb{N}\}$ is countable.
 
-^lem-6-2
+^lem-6-1
 
 > [!proof]+ Proof
 > We first establish that open balls are uniquely determined by their center and radius.
@@ -118,17 +118,17 @@ tags: [measure-theory, math551]
 >
 > Therefore $\{B(r, \frac{1}{k}) \mid r \in \mathbb{Q}^n, k \in \mathbb{N}\}$ is countable.
 
-^pf-6-2
+^pf-6-1
 
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
 > - Listed as an application of [[Measure Theory Problem-Solving Techniques#^ex-19-8|Technique 1 (Ex. T1, HW1)]].
 
-> [!theorem] Lemma §6.3
+> [!theorem] Lemma §6.1
 > For any open ball $B(x, \rho)$ with $\rho > 0$, there exist $r \in \mathbb{Q}^n$ and $k \in \mathbb{N}$ such that $x \in B(r, \frac{1}{k}) \subseteq B(x, \rho)$.
 
-^lem-6-3
+^lem-6-2
 
 > [!proof]+ Proof
 > Given $B(x, \rho)$, choose $k \in \mathbb{N}$ large enough that $\frac{2}{k} < \rho$, i.e., $k > \frac{2}{\rho}$.
@@ -145,31 +145,31 @@ tags: [measure-theory, math551]
 >
 > Thus $y \in B(x, \rho)$.
 
-^pf-6-3
+^pf-6-2
 
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Archimedean Property|451 §4.5]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Triangle inequality|LADR 6.17]]
 
 ![[m551-6-3.svg]]
-*[[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]]: with $\tfrac2k < \rho$ and a rational point $r$ within $\tfrac1k$ of $x$, the rational ball $B(r,\tfrac1k)$ (red) contains $x$ and fits inside $B(x,\rho)$ (blue). For any $y$ in it, the detour $y \to r \to x$ is shorter than $\tfrac1k + \tfrac1k < \rho$ — the triangle inequality of the proof.*
+*[[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]]: with $\tfrac2k < \rho$ and a rational point $r$ within $\tfrac1k$ of $x$, the rational ball $B(r,\tfrac1k)$ (red) contains $x$ and fits inside $B(x,\rho)$ (blue). For any $y$ in it, the detour $y \to r \to x$ is shorter than $\tfrac1k + \tfrac1k < \rho$ — the triangle inequality of the proof.*
 
 > [!remark]- Connections
-> - Topology: this is the argument that a separable metric space is second-countable ([[§18 Countability Axioms#^prop-18-4|590 §18.4]] (3)), with $D = \mathbb{Q}^n$ ([[§18 Countability Axioms#^ex-18-8|590 Ex. §18.8]]); so the rational balls form a countable [[§2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
+> - Topology: this is the argument that a separable metric space is second-countable ([[§22 Countability Axioms#^prop-22-4|590 §22.4]] (3)), with $D = \mathbb{Q}^n$ ([[§22 Countability Axioms#^ex-22-8|590 Ex. §22.8]]); so the rational balls form a countable [[§2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
 
-> [!theorem] Theorem §6.1: Every Open Cover Has a Countable Subcover
+> [!theorem] Theorem §6.2: Every Open Cover Has a Countable Subcover
 > Every open cover $\mathcal{C}$ has a countable subcover. That is, if $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in I}$, then there exists a countable subcollection $\mathcal{C}_1 = \{\mathcal{O}_{\alpha_j}\}_{j \in J}$ with $J \subseteq I$ countable, such that
 >
 > $$
 > \bigcup_{\alpha \in I} \mathcal{O}_\alpha = \bigcup_{j \in J} \mathcal{O}_{\alpha_j}.
 > $$
 
-^thm-6-1
+^thm-6-3
 
-> [!proof]+ Proof of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-1|Theorem §6.1]] (Countable Subcover)
+> [!proof]+ Proof of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-3|Theorem §6.3]] (Countable Subcover)
 > Let $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in A}$ be an open cover, i.e., $\bigcup_{\alpha \in A} \mathcal{O}_\alpha = E$ for some set $E$.
 >
 > Let $x \in E$. Then $x \in \mathcal{O}_{\alpha_0}$ for some $\alpha_0 \in A$. Since $\mathcal{O}_{\alpha_0}$ is [[§5 Topology of ℝⁿ#^def-5-2|open]], there exists $\rho > 0$ such that $B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
 >
-> By [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]], there exist $r_x \in \mathbb{Q}^n$ and $k_x \in \mathbb{N}$ such that $x \in B(r_x, \frac{1}{k_x}) \subseteq B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
+> By [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]], there exist $r_x \in \mathbb{Q}^n$ and $k_x \in \mathbb{N}$ such that $x \in B(r_x, \frac{1}{k_x}) \subseteq B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
 >
 > Now we have a collection of rational balls:
 >
@@ -177,7 +177,7 @@ tags: [measure-theory, math551]
 > \mathcal{C}_1 = \left\{ B\left(r_x, \frac{1}{k_x}\right) \,\bigg|\, x \in E \right\}.
 > $$
 >
-> Since each ball has center in $\mathbb{Q}^n$ and radius $\frac{1}{k}$ for some $k \in \mathbb{N}$, by [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]], $\mathcal{C}_1$ is a subset of a countable set, hence countable.
+> Since each ball has center in $\mathbb{Q}^n$ and radius $\frac{1}{k}$ for some $k \in \mathbb{N}$, by [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-1|Lemma §6.1]], $\mathcal{C}_1$ is a subset of a countable set, hence countable.
 >
 > Write $\mathcal{C}_1 = \{B_1, B_2, B_3, \ldots\}$ (finite or countably infinite).
 >
@@ -191,12 +191,12 @@ tags: [measure-theory, math551]
 >
 > Thus $\bigcup_{j=1}^\infty \mathcal{O}_{\alpha_j} = E$, so $\{\mathcal{O}_{\alpha_j}\}_{j=1}^\infty$ is a countable subcover.
 
-^pf-6-1
+^pf-6-3
 
-*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|§6.3]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|§6.2]]
+*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|§6.2]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-1|§6.1]]
 
 > [!remark]- Connections
-> - Topology: every subspace of $\mathbb{R}^n$ is [[§18 Countability Axioms#^def-18-6|Lindelöf]], because $\mathbb{R}^n$ is [[§18 Countability Axioms#^ex-18-4|second-countable]] and [[§18 Countability Axioms#^thm-18-6|second-countable spaces are Lindelöf (590 §18.6)]]; the rational balls of the lemmas above are the countable basis.
+> - Topology: every subspace of $\mathbb{R}^n$ is [[§22 Countability Axioms#^def-22-6|Lindelöf]], because $\mathbb{R}^n$ is [[§22 Countability Axioms#^ex-22-4|second-countable]] and [[§22 Countability Axioms#^thm-22-6|second-countable spaces are Lindelöf (590 §22.6)]]; the rational balls of the lemmas above are the countable basis.
 
 ## The Heine–Borel Theorem
 
@@ -206,7 +206,7 @@ tags: [measure-theory, math551]
 ^thm-6-4
 
 > [!proof]+ Proof
-> By [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-1|the previous theorem]], we can assume the open cover $\mathcal{C}$ of $F$ is countable: $\mathcal{C} = \{\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \ldots\}$.
+> By [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-3|the previous theorem]], we can assume the open cover $\mathcal{C}$ of $F$ is countable: $\mathcal{C} = \{\mathcal{O}_1, \mathcal{O}_2, \mathcal{O}_3, \ldots\}$.
 >
 > We have $F \subseteq \bigcup_{j=1}^\infty \mathcal{O}_j$. We want to show $F \subseteq \bigcup_{j=1}^{k_0} \mathcal{O}_j$ for some $k_0 \in \mathbb{N}$.
 >
@@ -238,11 +238,11 @@ tags: [measure-theory, math551]
 
 ^pf-6-4
 
-*Uses:* [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-1|§6.1]], [[§5 Topology of ℝⁿ#^thm-5-2|§5.2]], [[§5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-4|451 §13.4]]
+*Uses:* [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-3|§6.3]], [[§5 Topology of ℝⁿ#^thm-5-2|§5.2]], [[§5 Topology of ℝⁿ#^def-5-3|Def. §5.3]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-4|451 §13.4]]
 
 ![[m551-6-4.svg]]
 *The Heine–Borel proof in one dimension, for a closed interval $F$ covered by open intervals $\mathcal{O}_1, \mathcal{O}_2, \ldots$ (blue). Removing the open sets one at a time leaves closed sets $F_k = F \setminus (\mathcal{O}_1 \cup \cdots \cup \mathcal{O}_k)$ (red) that shrink; if none were empty, Cantor's nested set theorem would produce a point of $F$ in no $\mathcal{O}_j$. Here $F_4 = \emptyset$, so $\mathcal{O}_1, \ldots, \mathcal{O}_4$ is a finite subcover.*
 
 > [!remark]- Connections
-> - Topology: [[Heine–Borel Theorem]] (590 §15.12) proves compact ⟺ closed and bounded via products of [[§15 Compact Spaces#^thm-15-10|compact closed intervals]] and the [[Tube Lemma]]; here only “closed and bounded ⟹ compact” is proved, through countable subcovers and nested sets (the [[§15 Compact Spaces#^thm-15-5|finite intersection property]] in disguise).
-> - Used for the outer measure of closed rectangles ([[§9 Lebesgue Outer Measure#^prop-9-2|Proposition §9.2]]) and for approximation by finite unions of rectangles ([[§11a Approximation and Continuity of Measure#^thm-11-11|Theorem §11.11]]).
+> - Topology: [[Heine–Borel Theorem]] (590 §15.12) proves compact ⟺ closed and bounded via products of [[§18 Compact Spaces#^thm-18-10|compact closed intervals]] and the [[Tube Lemma]]; here only “closed and bounded ⟹ compact” is proved, through countable subcovers and nested sets (the [[§18 Compact Spaces#^thm-18-5|finite intersection property]] in disguise).
+> - Used for the outer measure of closed rectangles ([[§10 Lebesgue Outer Measure#^prop-10-2|Proposition §10.2]]) and for approximation by finite unions of rectangles ([[§13 Approximation and Continuity of Measure#^thm-13-6|Theorem §13.6]]).

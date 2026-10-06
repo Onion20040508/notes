@@ -12,21 +12,21 @@ tags: [chapter, multivariable-analysis]
 **Builds on (other subjects):** [[Single Variable Analysis]] (7), [[Linear Algebra]] (5)
 
 ## Sections
-- [[§12 The Implicit Function Theorem]]
-- [[§13 The Inverse Function Theorem]]
-- [[§14 Optimization and Lagrange Multipliers]]
-- [[§14a Second-Order Sufficient Conditions]]
-- [[§14b The Unit Circle and Polar Coordinates]]
+- [[§15 The Implicit Function Theorem]]
+- [[§16 The Inverse Function Theorem]]
+- [[§17 Optimization and Lagrange Multipliers]]
+- [[§18 Second-Order Sufficient Conditions]]
+- [[§19 The Unit Circle and Polar Coordinates]]
 
 ## Central results
-- [[Implicit Function Theorem]] ([[§12 The Implicit Function Theorem#^thm-12-1|§12.1]])
-- [[Inverse Function Theorem (several variables)]] ([[§13 The Inverse Function Theorem#^thm-13-2|§13.2]])
-- [[Method of Lagrange Multipliers]] ([[§14 Optimization and Lagrange Multipliers#^thm-14-2|§14.2]])
-- [[Second Derivative Test in Several Variables]] ([[§14a Second-Order Sufficient Conditions#^thm-14-4|§14.4]])
+- [[Implicit Function Theorem]] ([[§15 The Implicit Function Theorem#^thm-15-1|§15.1]])
+- [[Inverse Function Theorem (several variables)]] ([[§16 The Inverse Function Theorem#^thm-16-2|§16.2]])
+- [[Method of Lagrange Multipliers]] ([[§17 Optimization and Lagrange Multipliers#^thm-17-2|§17.2]])
+- [[Second Derivative Test in Several Variables]] ([[§18 Second-Order Sufficient Conditions#^thm-18-1|§18.1]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§12 The Implicit Function Theorem#^thm-12-2|Theorem §12.2: Implicit Function Theorem — General Case]]: 5 later results
-- [[Implicit Function Theorem|Theorem §12.1: Implicit Function Theorem]]: 1 later result
-- [[§13 The Inverse Function Theorem#^prop-13-1|Proposition §13.1: Inverse of a 2 × 2 Matrix]]: 1 later result
-- [[§14 Optimization and Lagrange Multipliers#^thm-14-1|Theorem §14.1: Necessary Condition for Extremum — Fermat's Theorem in ℝⁿ]]: 1 later result
+- [[§15 The Implicit Function Theorem#^thm-15-2|Theorem §15.2: Implicit Function Theorem — General Case]]: 5 later results
+- [[Implicit Function Theorem|Theorem §15.1: Implicit Function Theorem]]: 1 later result
+- [[§16 The Inverse Function Theorem#^prop-16-1|Proposition §16.1: Inverse of a 2 × 2 Matrix]]: 1 later result
+- [[§17 Optimization and Lagrange Multipliers#^thm-17-1|Theorem §17.1: Necessary Condition for Extremum — Fermat's Theorem in ℝⁿ]]: 1 later result

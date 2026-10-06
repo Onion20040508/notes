@@ -7,7 +7,7 @@ eccles: "Ch. 22"
 aliases: ["Eccles 22"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§21 Congruence Classes and the Arithmetic of Remainders]] · ↑ [[· 5 Modular Arithmetic]] · [[§23 The Sequence of Prime Numbers]] →
+← [[§21 Congruence Classes and the Arithmetic of Remainders]] · ↑ [[· 5 Modular Arithmetic]] · [[§22a Constructing ℚ and ℤ]] →
 
 *Eccles, Chapter 22 and Problems V · MAT 200 lecture (syllabus week 13: relations, equivalence relations and partitions, quotient sets, constructions of the integers and rational numbers) · the student's Rational Number Project (MAT 250, Oct 2024) · Sundstrom §7.1–7.3.*
 
@@ -16,7 +16,7 @@ Congruence modulo $m$ can be seen in two ways: as a *relation* between integers,
 ## 22.1 Partitions
 
 > [!definition] Definition §22.1: Partition
-> Let $X$ be a set and $\mathcal{P}(X)$ its [[§6 The Language of Set Theory#^def-6-9|power set]], the set of all subsets of $X$. A **partition** of $X$ is a subset $\Pi \subseteq \mathcal{P}(X)$, i.e. a set of subsets of $X$, such that
+> Let $X$ be a set and $\mathcal{P}(X)$ its [[§6a Operations on Sets#^def-6a-5|power set]], the set of all subsets of $X$. A **partition** of $X$ is a subset $\Pi \subseteq \mathcal{P}(X)$, i.e. a set of subsets of $X$, such that
 > 1. the subsets in $\Pi$ are non-empty: $A \in \Pi \Rightarrow A \neq \varnothing$;
 > 2. the subsets in $\Pi$ are disjoint: $\forall A_1, A_2 \in \Pi,\ (A_1 \neq A_2 \Rightarrow A_1 \cap A_2 = \varnothing)$;
 > 3. the subsets in $\Pi$ cover $X$: $\forall x \in X,\ \exists A \in \Pi,\ x \in A$.
@@ -71,7 +71,7 @@ Partitions are usually described by a property of the elements — the remainder
 
 ^pf-22-1
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new3|Def. §9.4]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]], [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]]
 
 > [!example] Example §22.2: Partitions Given by Functions
 > (a) The partition of $\mathbb{Z}$ into congruence classes modulo $m$ comes from the remainder map $r_m : \mathbb{Z} \to R_m$: its parts are $\overleftarrow{r_m}(\{r\}) = [r]_m$ (the box model of the remark after [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]]).
@@ -93,7 +93,7 @@ Partitions are usually described by a property of the elements — the remainder
 A partition starts from the whole set. The same idea seen from the elements: if a set of people is partitioned into rooms, nobody need know the overall picture, but everyone can see who is in the same room. So a partition determines a *relation*: two elements are related if they lie in the same part.
 
 > [!definition] Definition §22.2: Relation
-> A **relation** on a set $X$ is determined by a property that each [[§7 Quantifiers#^def-7-new1|ordered pair]] $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
+> A **relation** on a set $X$ is determined by a property that each [[§7a Several Quantifiers and the Cartesian Product#^def-7a-2|ordered pair]] $(a, b) \in X \times X$ may or may not satisfy. If $(a, b)$ satisfies it we say $a$ and $b$ are **related** and write $a \sim b$; otherwise we write $a \not\sim b$. Formally, a relation on $X$ *is* the subset $R = \{(a, b) \in X \times X \mid a \sim b\}$ of $X \times X$, and $a \sim b$ means $(a, b) \in R$.
 >
 > *Eccles: §22.2 (text before Proposition 22.2.1)*
 > *Source: Sundstrom §7.1 (relation as a subset of $A \times A$)*
@@ -119,7 +119,7 @@ A partition starts from the whole set. The same idea seen from the elements: if 
 
 Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting from the partition $\mathbb{Z}_m$, this produces congruence modulo $m$.
 
-> [!definition] Definition §22.3: Reflexive, Symmetric, Transitive
+> [!definition] Definition §22.4: Reflexive, Symmetric, Transitive
 > Let $\sim$ be a relation on a set $X$. It is
 > 1. **reflexive** when $x \sim x$ for all $x \in X$;
 > 2. **symmetric** when, for all $x, y \in X$, $\ x \sim y \Rightarrow y \sim x$;
@@ -129,15 +129,15 @@ Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting 
 
 ^def-22-3
 
-> [!definition] Definition §22.3: Equivalence Relation
+> [!definition] Definition §22.6: Equivalence Relation
 > An **equivalence relation** on $X$ is a relation that is reflexive, symmetric and transitive.
 >
 > *Eccles: Definition 22.2.3*
 
-^def-22-new1
+^def-22-4
 
 > [!remark]- Connections
-> - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the [[The Vitali Set is Not Measurable|Vitali set]]: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
+> - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the [[The Vitali Set is Not Measurable|Vitali set]]: [[§14 The Vitali Set and the Cantor Set#^def-14-1|551 Def. §14.1]].
 
 Each property is a universal statement, so to show that one *fails* a single counterexample suffices.
 
@@ -152,7 +152,7 @@ Each property is a universal statement, so to show that one *fails* a single cou
 > | $a_1 b_2 = a_2 b_1$ on $\mathbb{Z} \times (\mathbb{Z} - \{0\})$ | yes | yes | yes |
 > | $a \equiv b \pmod m$ on $\mathbb{Z}$ | yes | yes | yes |
 >
-> Transitivity of $ab > 0$: if $ab > 0$ and $bc > 0$ then $ab^2c = (ab)(bc) > 0$, and $b^2 > 0$ (as $b \neq 0$), so $ac > 0$. The equivalence relations are $=$, congruence modulo $m$ (Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]), and the relation on pairs, proved in [[§22 Partitions and Equivalence Relations#^lem-22-6|Lemma §22.6]] below, in §22a; more generally $\sim_\Pi$ for any partition $\Pi$ ([[§22 Partitions and Equivalence Relations#^prop-22-2|Proposition §22.2]]).
+> Transitivity of $ab > 0$: if $ab > 0$ and $bc > 0$ then $ab^2c = (ab)(bc) > 0$, and $b^2 > 0$ (as $b \neq 0$), so $ac > 0$. The equivalence relations are $=$, congruence modulo $m$ (Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]), and the relation on pairs, proved in [[§22a Constructing ℚ and ℤ#^lem-22a-1|Lemma §22a.1]] below, in §22a; more generally $\sim_\Pi$ for any partition $\Pi$ ([[§22 Partitions and Equivalence Relations#^prop-22-2|Proposition §22.2]]).
 >
 > *Eccles: Examples 22.2.2, 22.2.4*
 
@@ -182,7 +182,7 @@ Each property is a universal statement, so to show that one *fails* a single cou
 
 In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]] the partition $\mathbb{Z}_m$ was built from the relation of congruence. The construction works for every equivalence relation.
 
-> [!definition] Definition §22.4: Equivalence Class
+> [!definition] Definition §22a.1: Equivalence Class
 > Let $\sim$ be an equivalence relation on a non-empty set $X$. For $a \in X$, the **equivalence class of $a$** is the set of elements equivalent to $a$:
 >
 > $$
@@ -191,12 +191,12 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §2
 >
 > *Eccles: Definition 22.3.1*
 
-^def-22-4
+^def-22-5
 
 > [!remark]- Connections
-> - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§11 Borel Sets and Measure Spaces#^def-11-11|551 Def. §11.11]].
+> - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§14 The Vitali Set and the Cantor Set#^def-14-2|551 Def. §14.2]].
 
-> [!definition] Definition §22.4: Quotient Set
+> [!definition] Definition §22a.2: Quotient Set
 > The set of all equivalence classes is denoted $X/{\sim}$ (the **quotient set**, "$X$ modulo $\sim$"):
 >
 > $$
@@ -207,7 +207,7 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §2
 >
 > *Eccles: Definition 22.3.1*
 
-^def-22-new2
+^def-22-6
 
 The next theorem generalizes Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]] with the same proof, each property of congruence replaced by the corresponding axiom.
 
@@ -229,7 +229,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 
 ^pf-22-3
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§4 Proof by Contradiction#^thm-4-2|§4.2]]
 
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^prop-24-1|493 Prop. §24.1]] (equivalence classes partition a set), applied to cosets in [[Cosets Partition a Group]].
@@ -253,7 +253,7 @@ The next theorem generalizes Proposition [[§21 Congruence Classes and the Arith
 
 ^pf-22-4
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-new1|Def. §22.3]], [[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^prop-22-2|§22.2]], [[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]], [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]]
 
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^prop-24-2|493 Prop. §24.2]] (partitions come from equivalence relations).
@@ -282,7 +282,7 @@ A surjection $f : X \to Y$ partitions $X$ (Proposition [[§22 Partitions and Equ
 
 ^pf-22-5
 
-*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-new2|Def. §22.4]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]]
+*Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-3|§22.3]], [[§22 Partitions and Equivalence Relations#^def-22-5|Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]], [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]]
 
 > [!remark]- Connections
 > - The group version: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]] (first isomorphism theorem); defining maps on $\mathbb{Z}_n$ by representatives: [[§7 The Group ℤ∕nℤ#^lem-7-2|493 Lemma §7.2]]; the topological version: [[Universal Property of Quotient Maps]].

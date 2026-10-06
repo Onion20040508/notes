@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 7
-section: 89
+section: "89★"
 bc: "89"
 aliases: ["B&C 89"]
 tags: [complex-variables, math342, extension]
@@ -114,7 +114,7 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 *The indented contour of Example §89.1: the legs $L_1$, $L_2$ on the real axis, the large semicircle $C_R$ counterclockwise and the small semicircle $C_\rho$ clockwise around the pole of $e^{iz}/z$ at the origin. The pole is outside the contour, so the integral around it is $0$; in the limit $C_\rho$ contributes $-\pi i$ times the residue, half of a full clockwise circle.*
 
 > [!remark]- Connections
-> - Dirichlet's integral is the value at $x = 0$ of the Fourier integral of the rectangular pulse, [[§14 Fourier Integral#^ex-14-2|341 Ex. §14.2]], and it governs the Gibbs overshoot shown there; Powers evaluates it by real methods (Exercise 1.9.6).
+> - Dirichlet's integral is the value at $x = 0$ of the Fourier integral of the rectangular pulse, [[§18 Fourier Integral#^ex-18-2|341 Ex. §18.2]], and it governs the Gibbs overshoot shown there; Powers evaluates it by real methods (Exercise 1.9.6).
 
 ## Further Examples
 
@@ -144,4 +144,4 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 ^ex-89-2
 
 > [!remark]- Connections
-> - With $a = 0$, $b = 1$ this is $\int_0^\infty\frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac\pi2$, the value used at $x = 0$ for the triangular pulse in [[§14 Fourier Integral#^ex-14-3|341 Ex. §14.3]].
+> - With $a = 0$, $b = 1$ this is $\int_0^\infty\frac{1 - \cos\lambda}{\lambda^2}\,d\lambda = \frac\pi2$, the value used at $x = 0$ for the triangular pulse in [[§18 Fourier Integral#^ex-18-3|341 Ex. §18.3]].

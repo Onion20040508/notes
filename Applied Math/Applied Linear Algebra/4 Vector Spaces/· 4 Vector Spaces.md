@@ -14,15 +14,15 @@ tags: [chapter, applied-linear-algebra]
 **Developed further in (other subjects):** [[Linear Algebra]] (41), [[Logic and Proofs]] (6), [[Functional Analysis]] (5), [[Calculus]] (4)
 
 ## Sections
-- [[§23 Vector Spaces and Subspaces]] — Lay 4.1
-- [[§24 Null Spaces, Column Spaces, and Linear Transformations]] — Lay 4.2
-- [[§25 Linearly Independent Sets; Bases]] — Lay 4.3
-- [[§26 Coordinate Systems]] — Lay 4.4
-- [[§27 The Dimension of a Vector Space]] — Lay 4.5
-- [[§28 Rank]] — Lay 4.6
-- [[§29 Change of Basis]] — Lay 4.7
-- [[§30 Applications to Difference Equations]] — Lay 4.8
-- [[§31 Applications to Markov Chains]] — Lay 4.9
+- [[§29 Vector Spaces and Subspaces]] — Lay 4.1
+- [[§30 Null Spaces, Column Spaces, and Linear Transformations]] — Lay 4.2
+- [[§31 Linearly Independent Sets; Bases]] — Lay 4.3
+- [[§32 Coordinate Systems]] — Lay 4.4
+- [[§33 The Dimension of a Vector Space]] — Lay 4.5
+- [[§34 Rank]] — Lay 4.6
+- [[§35 Change of Basis]] — Lay 4.7
+- [[§36 Applications to Difference Equations]] — Lay 4.8
+- [[§38 Applications to Markov Chains]] — Lay 4.9
 
 ## Central results
 - [[The Coordinate Mapping Is an Isomorphism]] (§26.3)
@@ -32,7 +32,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§23 Vector Spaces and Subspaces#^prop-23-1|Proposition §23.1: The Zero Vector and Negatives Are Unique]]: 122 later results
-- [[§23 Vector Spaces and Subspaces#^prop-23-2|Proposition §23.2: Arithmetic with Zero and Negatives]]: 121 later results
-- [[§25 Linearly Independent Sets; Bases#^thm-25-1|Theorem §25.1: Characterization of Linearly Dependent Sets]]: 112 later results
-- [[§26 Coordinate Systems#^thm-26-1|Theorem §26.1: The Unique Representation Theorem]]: 112 later results
+- [[§29 Vector Spaces and Subspaces#^prop-29-1|Proposition §29.1: The Zero Vector and Negatives Are Unique]]: 122 later results
+- [[§29 Vector Spaces and Subspaces#^prop-29-2|Proposition §29.2: Arithmetic with Zero and Negatives]]: 121 later results
+- [[§31 Linearly Independent Sets; Bases#^thm-31-1|Theorem §31.1: Characterization of Linearly Dependent Sets]]: 112 later results
+- [[§32 Coordinate Systems#^thm-32-1|Theorem §32.1: The Unique Representation Theorem]]: 112 later results

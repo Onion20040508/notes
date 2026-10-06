@@ -61,13 +61,13 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 >
 > and so on. The exponents on the left and right are rational, so all these bounds are already defined, and $2^{\sqrt3}$ is the one number caught between them: $2^{\sqrt3} \approx 3.321997$.
 >
-> The definition is made so that $f(x) = b^x$, $x \in \mathbb{R}$, is an increasing function for $b > 1$ (decreasing for $b < 1$): every hole of the rational graph is filled by the only value that keeps the order. The completed graph has no holes or breaks, which is why $b^x$ is continuous on $\mathbb{R}$ ([[§10 Continuity#^thm-10-6|Theorem §10.6]]).
+> The definition is made so that $f(x) = b^x$, $x \in \mathbb{R}$, is an increasing function for $b > 1$ (decreasing for $b < 1$): every hole of the rational graph is filled by the only value that keeps the order. The completed graph has no holes or breaks, which is why $b^x$ is continuous on $\mathbb{R}$ ([[§12 Continuity#^thm-12-6|Theorem §12.6]]).
 >
 > *Stewart: 1.4 (text)*
 
 ^def-4-3
 
-*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G: $\ln$ is defined as an integral in [[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]], $e^x$ as its inverse in [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], and $b^x = e^{x \ln b}$ in [[§121 The Logarithm Defined as an Integral#^def-121-5|Definition §121.5]], which agrees with [[§4 Exponential Functions#^def-4-2|Definition §4.2]] for rational $x$ ([[§121 The Logarithm Defined as an Integral#^prop-121-4|Proposition §121.4]]) and with [[§4 Exponential Functions#^def-4-3|Definition §4.3]] for irrational $x$ ([[§121 The Logarithm Defined as an Integral#^rem-121-2|Remark: Dictionary with Chapters 1 and 3]]).*
+*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G: $\ln$ is defined as an integral in [[§144 The Logarithm Defined as an Integral#^def-144-1|Definition §144.1]], $e^x$ as its inverse in [[§144 The Logarithm Defined as an Integral#^def-144-3|Definition §144.3]], and $b^x = e^{x \ln b}$ in [[§145 General Exponential and Logarithmic Functions#^def-145-1|Definition §145.1]], which agrees with [[§4 Exponential Functions#^def-4-2|Definition §4.2]] for rational $x$ ([[§144 The Logarithm Defined as an Integral#^prop-144-4|Proposition §144.4]]) and with [[§4 Exponential Functions#^def-4-3|Definition §4.3]] for irrational $x$ ([[§145 General Exponential and Logarithmic Functions#^rem-145-2|Remark: Dictionary with Chapters 1 and 3]]).*
 
 ![[m233-4-2.svg]]
 *(a) $y = 2^x$ plotted at rational $x$ only (here at multiples of $\frac18$); between any two plotted points there are holes at the irrational numbers. (b) Filling the hole at $\sqrt3$: the rational bounds $1.7 < \sqrt3 < 1.8$ (orange) trap $2^{\sqrt3}$ between $2^{1.7} \approx 3.249$ and $2^{1.8} \approx 3.482$, and the finer bounds $1.73 < \sqrt3 < 1.74$ (red) trap it between $2^{1.73} \approx 3.317$ and $2^{1.74} \approx 3.340$. The nested ranges on the $y$-axis shrink to the single value $2^{\sqrt3} \approx 3.322$ (black dot).*
@@ -87,7 +87,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ^thm-4-1
 
-*For rational $x$ and $y$ these are the laws of elementary algebra; Stewart states that they remain true for all real $x$ and $y$ ("it can be proved") but gives no proof in 1.4. Appendix G proves them from the integral definition of $\ln$: [[§121 The Logarithm Defined as an Integral#^thm-121-6|Theorem §121.6]] (for base $e$) and [[§121 The Logarithm Defined as an Integral#^thm-121-9|Theorem §121.9]] (any base).*
+*For rational $x$ and $y$ these are the laws of elementary algebra; Stewart states that they remain true for all real $x$ and $y$ ("it can be proved") but gives no proof in 1.4. Appendix G proves them from the integral definition of $\ln$: [[§144 The Logarithm Defined as an Integral#^thm-144-6|Theorem §144.6]] (for base $e$) and [[§145 General Exponential and Logarithmic Functions#^thm-145-2|Theorem §145.2]] (any base).*
 
 > [!theorem] Proposition §4.2: The Three Kinds of Exponential Functions
 > Let $b > 0$.
@@ -96,13 +96,13 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 > 3. If $b \ne 1$, then $y = b^x$ has domain $\mathbb{R}$ and range $(0, \infty)$.
 > 4. Since $(1/b)^x = 1/b^x = b^{-x}$, the graph of $y = (1/b)^x$ is the reflection of the graph of $y = b^x$ about the $y$-axis.
 >
-> In both cases $b \ne 1$ the $x$-axis is a horizontal asymptote: $b^x \to 0$ as $x \to \infty$ if $b < 1$, and as $x \to -\infty$ if $b > 1$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-2|Definition §11.2]]; for $b = e$, [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-4|Theorem §11.4]]).
+> In both cases $b \ne 1$ the $x$-axis is a horizontal asymptote: $b^x \to 0$ as $x \to \infty$ if $b < 1$, and as $x \to -\infty$ if $b > 1$ ([[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-2|Definition §13.2]]; for $b = e$, [[§13 Limits at Infinity; Horizontal Asymptotes#^thm-13-4|Theorem §13.4]]).
 >
 > *Stewart: 1.4 (text)*
 
 ^prop-4-2
 
-*Stewart reads parts 2 and 3 off the graphs (his Figures 3 and 4). Appendix G proves the monotonicity from the derivative $\frac{d}{dx} b^x = b^x \ln b$: [[§121 The Logarithm Defined as an Integral#^thm-121-10|Theorem §121.10]].*
+*Stewart reads parts 2 and 3 off the graphs (his Figures 3 and 4). Appendix G proves the monotonicity from the derivative $\frac{d}{dx} b^x = b^x \ln b$: [[§145 General Exponential and Logarithmic Functions#^thm-145-3|Theorem §145.3]].*
 
 > [!proof]+ Proof
 > *Of part 4, the only part Stewart justifies.* By [[§4 Exponential Functions#^def-4-2|Definition §4.2]], $1/b > 0$ and $1/b = b^{-1}$. Law 3 of [[§4 Exponential Functions#^thm-4-1|Theorem §4.1]] gives $(1/b)^x = (b^{-1})^x = b^{-x}$. Law 1 gives $b^x \cdot b^{-x} = b^{0} = 1$, so $b^{-x} = 1/b^x$. Hence the point $(x, y)$ is on the graph of $y = b^x$ exactly when $(-x, y)$ is on the graph of $y = (1/b)^x$: the two graphs are mirror images in the $y$-axis.
@@ -163,20 +163,20 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ^ex-4-3
 
-*Chain:* [[§20 Rates of Change in the Natural and Social Sciences#^ex-20-3|Chapter 3]] →
+*Chain:* [[§23 Rates of Change in the Natural and Social Sciences#^ex-23-3|Chapter 3]] →
 
 > [!remark]- Remark: Exponential Models from Data
 > Data that grow or decay like an exponential are fitted by a model $y = a \cdot b^t$ (by least squares, with technology). Stewart's two examples:
 > - World population in the 20th century ($t$ = years since 1900): $P(t) = (1.43653 \times 10^9) \cdot (1.01395)^t$. Here $b > 1$: growth. The slow stretch of the data is explained by the two world wars and the Great Depression. (Example 1.4.3)
 > - Plasma viral load of an HIV patient $t$ days after starting the protease inhibitor ABT-538 (D. Ho et al., *Nature* 373, 1995): $V = 96.39785 \cdot (0.818656)^t$ RNA copies/mL. Here $b < 1$: decay. It fits well for the first month of treatment. (Example 1.4.4)
 >
-> Compound interest and radioactive decay follow in Section 3.8 ([[§21 Exponential Growth and Decay|§21]]).
+> Compound interest and radioactive decay follow in Section 3.8 ([[§24 Exponential Growth and Decay|§24]]).
 
 ^rem-4-1
 
 ## The Number e
 
-Of all bases, one is most convenient for calculus. The choice is governed by how the graph $y = b^x$ crosses the $y$-axis: the tangent line to $y = 2^x$ at $(0, 1)$ has slope $m \approx 0.7$, and the one to $y = 3^x$ has slope $m \approx 1.1$. (Tangent lines are defined precisely in Section 2.7, [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]]; for now, think of the line that touches the graph only at that point. See [[§6 The Tangent and Velocity Problems#^def-6-2|Definition §6.2]].) The formulas of calculus become simplest when this slope is exactly $1$.
+Of all bases, one is most convenient for calculus. The choice is governed by how the graph $y = b^x$ crosses the $y$-axis: the tangent line to $y = 2^x$ at $(0, 1)$ has slope $m \approx 0.7$, and the one to $y = 3^x$ has slope $m \approx 1.1$. (Tangent lines are defined precisely in Section 2.7, [[§14 Derivatives and Rates of Change#^def-14-1|Definition §14.1]]; for now, think of the line that touches the graph only at that point. See [[§7 The Tangent and Velocity Problems#^def-7-2|Definition §7.2]].) The formulas of calculus become simplest when this slope is exactly $1$.
 
 > [!definition] Definition §4.4: The Number e
 > The number $e$ is the base $b$ for which the tangent line to $y = b^x$ at the point $(0, 1)$ has slope exactly $1$. Correct to five decimal places,
@@ -193,7 +193,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 
 ^def-4-4
 
-*Stewart only asserts that such a base exists. Chapter 3 restates the definition as $\lim_{h \to 0} (e^h - 1)/h = 1$ ([[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]]) and obtains the value $2.71828$ from $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-7|Theorem §19.7]]). A rigorous construction is in Appendix G: $e$ is the number with $\ln e = 1$ ([[§121 The Logarithm Defined as an Integral#^def-121-2|Definition §121.2]]), $\frac{d}{dx} e^x = e^x$ ([[§121 The Logarithm Defined as an Integral#^thm-121-7|Theorem §121.7]]), and $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§121 The Logarithm Defined as an Integral#^thm-121-12|Theorem §121.12]]).*
+*Stewart only asserts that such a base exists. Chapter 3 restates the definition as $\lim_{h \to 0} (e^h - 1)/h = 1$ ([[§17 Derivatives of Polynomials and Exponential Functions#^def-17-2|Definition §17.2]]) and obtains the value $2.71828$ from $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-7|Theorem §22.7]]). A rigorous construction is in Appendix G: $e$ is the number with $\ln e = 1$ ([[§144 The Logarithm Defined as an Integral#^def-144-2|Definition §144.2]]), $\frac{d}{dx} e^x = e^x$ ([[§144 The Logarithm Defined as an Integral#^thm-144-7|Theorem §144.7]]), and $e = \lim_{x \to 0}(1 + x)^{1/x}$ ([[§145 General Exponential and Logarithmic Functions#^thm-145-5|Theorem §145.5]]).*
 
 ![[m233-4-1.svg]]
 *Tangent lines (red) to $y = 2^x$, $y = e^x$ and $y = 3^x$ (blue) at the common point $(0, 1)$. Their slopes increase with the base: about $0.69$, exactly $1$, about $1.10$. (Chapter 3 shows that the slope for base $b$ is $\ln b$.) The base $e$ is the one in between whose tangent line is $y = x + 1$.*
@@ -220,7 +220,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 >
 > Stewart graphs $y = e^x$ and $y = 10^6$ together: the curves cross at $x \approx 13.8$, so $e^x > 10^6$ when $x > 13.8$. The exponential has passed a million already at $x = 14$.
 >
-> With the natural logarithm of [[§5 Inverse Functions and Logarithms|§5]] the answer is exact. Since $\ln$ is increasing, $e^x > 10^6$ if and only if $x = \ln(e^x) > \ln 10^6 = 6 \ln 10$ ([[§5 Inverse Functions and Logarithms#^cor-5-6|Corollary §5.6]] and Law 3 of [[§5 Inverse Functions and Logarithms#^thm-5-5|Theorem §5.5]]). So the answer is $x > 6 \ln 10 \approx 6 \times 2.302585 \approx 13.8155$.
+> With the natural logarithm of [[§5 Inverse Functions and Logarithms|§5]] the answer is exact. Since $\ln$ is increasing, $e^x > 10^6$ if and only if $x = \ln(e^x) > \ln 10^6 = 6 \ln 10$ ([[§6 Logarithmic and Inverse Trigonometric Functions#^cor-6-3|Corollary §6.3]] and Law 3 of [[§6 Logarithmic and Inverse Trigonometric Functions#^thm-6-2|Theorem §6.2]]). So the answer is $x > 6 \ln 10 \approx 6 \times 2.302585 \approx 13.8155$.
 >
 > *Stewart: Example 1.4.6*
 

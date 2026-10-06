@@ -14,11 +14,11 @@ tags: [applied-linear-algebra, hub]
 - [[§1 Systems of Linear Equations#^prop-1-1|Proposition §1.1: Row Operations Are Reversible]]
 - [[§1 Systems of Linear Equations#^thm-1-2|Theorem §1.2: Row-Equivalent Systems Have the Same Solution Set]]
 - [[§2 Row Reduction and Echelon Forms#^def-2-1|Definition §2.1: Echelon Form and Reduced Echelon Form]]
-- [[§3 Vector Equations#^def-3-3|Definition §3.3: Linear Combination, Weights]]
+- [[§4 Vector Equations#^def-4-3|Definition §4.3: Linear Combination, Weights]]
 
 ## Used in (Applied Linear Algebra)
 - [[§2 Row Reduction and Echelon Forms#^cor-2-2|Corollary §2.2: Leading Entries Do Not Depend on the Echelon Form]]
-- [[§28 Rank#^prop-28-2|Proposition §28.2: Equal Row Spaces Means Row Equivalent]]
+- [[§34 Rank#^prop-34-2|Proposition §34.2: Equal Row Spaces Means Row Equivalent]]
 
 ## Connections
 - See [[§2 Row Reduction and Echelon Forms]] for context and examples.

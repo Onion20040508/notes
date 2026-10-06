@@ -98,13 +98,13 @@ $$
 *The branch (2) of $\log z$ lives on the plane cut along the ray $\theta = \alpha$ (red, dashed; the origin is removed too). Going once around the origin counterclockwise from the cut, $v = \theta$ increases continuously from $\alpha$ to $\alpha + 2\pi$. At a point of the cut (red dot) two nearby points (green) on opposite sides have values of $v$ near $\alpha$ and near $\alpha + 2\pi$: this jump of $2\pi$ is why the cut must be removed.*
 
 > [!remark]- Connections
-> - The derivative $1/z$ restricts on the positive real axis to $\frac{d}{dx}\ln x = \frac1x$, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Calc Cor. §19.3]]. The real proof differentiates an inverse function; the same route works here, [[§33 Branches and Derivatives of Logarithms#^ex-33-3|Example §33.3]].
-> - Topologically, $z \mapsto e^z$ is a covering map of $\mathbb{C}$ onto $\mathbb{C} \setminus \{0\}$: in polar form it is $x \mapsto e^x$ times the covering $\mathbb{R} \to S^1$, $y \mapsto e^{iy}$ (up to the factor $2\pi$), of [[§24 Covering Spaces#^thm-24-2|590 Thm. §24.2]]. A branch of $\log z$ is a continuous inverse of this covering over the cut plane. No continuous logarithm exists on a circle around $0$: it would lift the generating loop of $\pi_1(S^1) \cong \mathbb{Z}$ to a closed loop, [[§24 Covering Spaces#^thm-24-10|590 Thm. §24.10]]. This is why a cut is unavoidable.
+> - The derivative $1/z$ restricts on the positive real axis to $\frac{d}{dx}\ln x = \frac1x$, [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-3|Calc Cor. §22.3]]. The real proof differentiates an inverse function; the same route works here, [[§33 Branches and Derivatives of Logarithms#^ex-33-3|Example §33.3]].
+> - Topologically, $z \mapsto e^z$ is a covering map of $\mathbb{C}$ onto $\mathbb{C} \setminus \{0\}$: in polar form it is $x \mapsto e^x$ times the covering $\mathbb{R} \to S^1$, $y \mapsto e^{iy}$ (up to the factor $2\pi$), of [[§31 Covering Spaces#^thm-31-2|590 Thm. §31.2]]. A branch of $\log z$ is a continuous inverse of this covering over the cut plane. No continuous logarithm exists on a circle around $0$: it would lift the generating loop of $\pi_1(S^1) \cong \mathbb{Z}$ to a closed loop, [[§32 Lifting and the Fundamental Group of the Circle#^thm-32-5|590 Thm. §32.5]]. This is why a cut is unavoidable.
 
 ## Branches, Branch Cuts, Branch Points
 
 > [!definition] Definition §33.2: Branch of a Multiple-Valued Function
-> A **branch** of a [[§13 Functions and Mappings#^def-13-4|multiple-valued function]] $f$ is any single-valued function $F$ that is analytic in some domain at each point $z$ of which the value $F(z)$ is one of the values of $f$. (The requirement of analyticity prevents $F$ from taking a random selection of the values of $f$.)
+> A **branch** of a [[§13 Functions and Mappings#^def-13-5|multiple-valued function]] $f$ is any single-valued function $F$ that is analytic in some domain at each point $z$ of which the value $F(z)$ is one of the values of $f$. (The requirement of analyticity prevents $F$ from taking a random selection of the values of $f$.)
 >
 > For each fixed $\alpha$, the function (2) is a branch of the multiple-valued function (1).
 >
@@ -112,7 +112,7 @@ $$
 
 ^def-33-2
 
-> [!definition] Definition §33.3: Principal Branch of log z
+> [!definition] Definition §33.4: Principal Branch of log z
 > The function
 >
 > $$
@@ -123,23 +123,23 @@ $$
 >
 > *B&C: Sec. 33 (text), Equation (6)*
 
-^def-33-new1
+^def-33-3
 
-> [!definition] Definition §33.3: Branch Cut
+> [!definition] Definition §33.4: Branch Cut
 > A **branch cut** is a portion of a line or curve that is introduced in order to define a branch $F$ of a multiple-valued function $f$. Points on the branch cut for $F$ are singular points ([[§25 Analytic Functions#^def-25-3|Definition §25.3]]) of $F$.
 >
 > For the branch (2) of the logarithm, the branch cut is the origin together with the ray $\theta = \alpha$; for the principal branch (6) it is the origin together with the ray $\Theta = \pi$, the nonpositive real axis.
 >
 > *B&C: Sec. 33 (text)*
 
-^def-33-3
+^def-33-4
 
 > [!definition] Definition §33.5: Branch Point
 > Any point that is common to all branch cuts of $f$ is called a **branch point**. The origin is a branch point of $\log z$.
 >
 > *B&C: Sec. 33 (text)*
 
-^def-33-new2
+^def-33-5
 
 > [!remark] Remark: Method — Choosing a Branch
 > To make $\log z$, or a function built from it, single-valued and analytic on a given region:

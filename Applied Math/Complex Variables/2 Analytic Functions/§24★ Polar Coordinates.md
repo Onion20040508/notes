@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 2
-section: 24
+section: "24★"
 bc: "24"
 aliases: ["B&C 24"]
 tags: [complex-variables, math342, extension]
@@ -90,10 +90,10 @@ Depending on whether we write $z = x + iy$ or $z = re^{i\theta}$ ($z \ne 0$), th
 
 ^pf-24-1
 
-*Uses:* [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]] (Step 1 of the proof), [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (chain rule)
+*Uses:* [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]] (Step 1 of the proof), [[§8 Algebra of Differentiable Functions#^thm-8-7|452 Thm. §8.7]] (chain rule)
 
 > [!remark]- Connections
-> - The same chain-rule computation, carried one order further, turns the Laplacian into polar form, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]]; with (6) it shows that the components of an analytic function satisfy $r^2u_{rr} + ru_r + u_{\theta\theta} = 0$ (B&C's Sec. 27, Exercise 1; see [[§27★ Harmonic Functions#^def-27-1|Definition §27.1]]).
+> - The same chain-rule computation, carried one order further, turns the Laplacian into polar form, [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]]; with (6) it shows that the components of an analytic function satisfy $r^2u_{rr} + ru_r + u_{\theta\theta} = 0$ (B&C's Sec. 27, Exercise 1; see [[§27★ Harmonic Functions#^def-27-1|Definition §27.1]]).
 
 > [!theorem] Proposition §24.2: The Derivative in Polar Form
 > If $f = u + iv$ is differentiable at $z_0 = r_0e^{i\theta_0} \ne 0$, then at $(r_0, \theta_0)$
@@ -177,7 +177,7 @@ In view of (6) and Proposition §24.2, the theorem of §23 ([[§23 Sufficient Co
 
 ^pf-24-3
 
-*Uses:* [[§24★ Polar Coordinates#^prop-24-1|§24.1]], [[§24★ Polar Coordinates#^prop-24-2|§24.2]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§23 Sufficient Conditions for Differentiability#^cor-23-2|§23.2]], [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (chain rule)
+*Uses:* [[§24★ Polar Coordinates#^prop-24-1|§24.1]], [[§24★ Polar Coordinates#^prop-24-2|§24.2]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§23 Sufficient Conditions for Differentiability#^cor-23-2|§23.2]], [[§8 Algebra of Differentiable Functions#^thm-8-7|452 Thm. §8.7]] (chain rule)
 
 > [!example] Example §24.1: The Function 1/z²
 > If

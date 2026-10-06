@@ -23,5 +23,5 @@ tags: [chapter, real-analysis]
 ## Load-bearing results
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]]: 6 later results depend on it
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]]: 4 later results depend on it
-- [[§32 The Definition of the Riemann Integral#^lem-32-2|Lemma §32.2: Refinement Lemma]]: 3 later results depend on it
+- [[§32 The Definition of the Riemann Integral#^lem-32-1|Lemma §32.1: Refinement Lemma]]: 3 later results depend on it
 - [[§33 Properties of the Riemann Integral#^thm-33-7|Theorem §33.7: Vanishing Integral of a Nonnegative Function]]: 3 later results depend on it

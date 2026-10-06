@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 1
-section: 12
+section: "12★"
 bc: "12"
 aliases: ["B&C 12"]
 tags: [complex-variables, math342, extension]
@@ -29,7 +29,7 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ^def-12-1
 
-> [!definition] Definition §12.2: Deleted Neighborhood
+> [!definition] Definition §12.3: Deleted Neighborhood
 > A **deleted neighborhood**, or punctured disk, is the set
 >
 > $$
@@ -40,52 +40,52 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 >
 > *B&C: Sec. 12, Equations (1)–(2)*
 
-^def-12-new1
+^def-12-2
 
-> [!definition] Definition §12.2: Interior Point
+> [!definition] Definition §12.6: Interior Point
 > Let $S$ be a set of points of the plane. A point $z_0$ is an **interior point** of $S$ if there is some neighborhood of $z_0$ that contains only points of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-2
+^def-12-3
 
-> [!definition] Definition §12.4: Exterior Point
+> [!definition] Definition §12.9: Exterior Point
 > Let $S$ be a set of points of the plane. A point $z_0$ is an **exterior point** of $S$ if there is a neighborhood of it containing no points of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new2
+^def-12-4
 
-> [!definition] Definition §12.5: Boundary Point
+> [!definition] Definition §12.12: Boundary Point
 > Let $S$ be a set of points of the plane. If a point $z_0$ is neither an interior point nor an exterior point of $S$, it is a **boundary point** of $S$. A boundary point is therefore a point all of whose neighborhoods contain at least one point in $S$ and at least one point not in $S$. The totality of all boundary points is the **boundary** of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new3
+^def-12-5
 
-> [!definition] Definition §12.3: Open Set
+> [!definition] Definition §12.13: Open Set
 > A set is **open** if it does not contain any of its boundary points.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-3
+^def-12-6
 
 > [!definition] Definition §12.7: Closed Set
 > A set is **closed** if it contains all of its boundary points.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new4
+^def-12-7
 
 > [!definition] Definition §12.8: Closure
 > The **closure** of a set $S$ is the closed set consisting of all points in $S$ together with the boundary of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new5
+^def-12-8
 
 > [!remark]- Connections
-> - The same definitions in $\mathbb{R}^n$, with open balls for neighborhoods: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior, exterior, boundary points), [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]] (open and closed sets), [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]] (closure). The plane $\mathbb{C}$ with distance $|z_1 - z_2|$ is $\mathbb{R}^2$ with its Euclidean metric ([[§4 Vectors and Moduli#^prop-4-2|Proposition §4.2]]).
+> - The same definitions in $\mathbb{R}^n$, with open balls for neighborhoods: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]] (interior, [[§2 Open and Closed Sets#^def-2-4|exterior]], [[§2 Open and Closed Sets#^def-2-5|boundary points]]), [[§2 Open and Closed Sets#^def-2-6|452 Def. §2.6]] (open and [[§2 Open and Closed Sets#^def-2-7|closed sets]]), [[§2 Open and Closed Sets#^def-2-8|452 Def. §2.8]] (closure). The plane $\mathbb{C}$ with distance $|z_1 - z_2|$ is $\mathbb{R}^2$ with its Euclidean metric ([[§4 Vectors and Moduli#^prop-4-2|Proposition §4.2]]).
 
 > [!theorem] Proposition §12.1: Open Means Every Point Is Interior
 > A set $S$ is open if and only if each of its points is an interior point.
@@ -95,7 +95,7 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 ^prop-12-1
 
 > [!proof]+ Proof
-> B&C leave this as an exercise. By [[§12★ Regions in the Complex Plane#^def-12-2|Definitions §12.2]], [[§12★ Regions in the Complex Plane#^def-12-new2|§12.4]] and [[§12★ Regions in the Complex Plane#^def-12-new3|§12.5]], every point of the plane is exactly one of: an interior point, an exterior point, or a boundary point of $S$.
+> B&C leave this as an exercise. By [[§12★ Regions in the Complex Plane#^def-12-3|Definitions §12.3]], [[§12★ Regions in the Complex Plane#^def-12-4|§12.4]] and [[§12★ Regions in the Complex Plane#^def-12-5|§12.5]], every point of the plane is exactly one of: an interior point, an exterior point, or a boundary point of $S$.
 >
 > Suppose $S$ is open and $z_0 \in S$. Then $z_0$ is not a boundary point, since $S$ contains none. Nor is it an exterior point, since every neighborhood of $z_0$ contains the point $z_0$ of $S$. So $z_0$ is an interior point.
 >
@@ -103,51 +103,51 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ^pf-12-1
 
-*Uses:* [[§12★ Regions in the Complex Plane#^def-12-2|Def. §12.2]], [[§12★ Regions in the Complex Plane#^def-12-new2|Def. §12.4]], [[§12★ Regions in the Complex Plane#^def-12-new3|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-3|Def. §12.3]]
+*Uses:* [[§12★ Regions in the Complex Plane#^def-12-3|Def. §12.3]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§12★ Regions in the Complex Plane#^def-12-5|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-6|Def. §12.6]]
 
 Some sets are neither open nor closed. For a set $S$ to be not open there must be a boundary point that is contained in the set, and for $S$ to be not closed there must be a boundary point not in it ([[§12★ Regions in the Complex Plane#^ex-12-1|Example §12.1]]).
 
 ## Connected Sets, Domains and Regions
 
-> [!definition] Definition §12.4: Connected Set
+> [!definition] Definition §12.9: Connected Set
 > An open set $S$ is **connected** if each pair of points $z_1$ and $z_2$ in it can be joined by a **polygonal line**, consisting of a finite number of line segments joined end to end, that lies entirely in $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-4
+^def-12-9
 
 > [!remark]- Connections
-> - For open subsets of the plane, B&C's polygonal definition agrees with topological connectedness, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]. A polygonal line is a path, so a polygonally connected set is path-connected, hence connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]]. Conversely, in a connected open set the points reachable from a fixed point by polygonal lines form a nonempty subset that is both open and closed in it, hence everything: the argument of [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]], with a segment inside a disk in place of a path in a chart.
+> - For open subsets of the plane, B&C's polygonal definition agrees with topological connectedness, [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]. A polygonal line is a path, so a polygonally connected set is path-connected, hence connected, [[§16 Connected Subspaces of ℝ#^thm-16-4|590 Thm. §16.4]]. Conversely, in a connected open set the points reachable from a fixed point by polygonal lines form a nonempty subset that is both open and closed in it, hence everything: the argument of [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]], with a segment inside a disk in place of a path in a chart.
 
 > [!definition] Definition §12.10: Domain
 > A nonempty open set that is connected is called a **domain**.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new6
+^def-12-10
 
 > [!definition] Definition §12.11: Region
 > A domain together with some, none, or all of its boundary points is referred to as a **region**.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-new7
+^def-12-11
 
-> [!definition] Definition §12.5: Bounded Set
+> [!definition] Definition §12.12: Bounded Set
 > A set $S$ is **bounded** if every point of $S$ lies inside some circle $|z| = R$; otherwise it is **unbounded**.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-5
+^def-12-12
 
 ## Accumulation Points
 
-> [!definition] Definition §12.6: Accumulation Point
+> [!definition] Definition §12.13: Accumulation Point
 > A point $z_0$ is an **accumulation point**, or limit point, of a set $S$ if each deleted neighborhood of $z_0$ contains at least one point of $S$. Thus $z_0$ is *not* an accumulation point of $S$ whenever some deleted neighborhood of $z_0$ contains no point of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
-^def-12-6
+^def-12-13
 
 > [!theorem] Theorem §12.2: Closed Sets and Accumulation Points
 > A set is closed if and only if it contains all of its accumulation points.
@@ -163,10 +163,10 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 
 ^pf-12-2
 
-*Uses:* [[§12★ Regions in the Complex Plane#^def-12-new3|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-new4|Def. §12.7]], [[§12★ Regions in the Complex Plane#^def-12-6|Def. §12.6]]
+*Uses:* [[§12★ Regions in the Complex Plane#^def-12-5|Def. §12.5]], [[§12★ Regions in the Complex Plane#^def-12-7|Def. §12.7]], [[§12★ Regions in the Complex Plane#^def-12-13|Def. §12.13]]
 
 > [!remark]- Connections
-> - In any topological space: limit points [[§7 Interior and Closure#^def-7-3|590 Def. §7.3]], the closure as the set together with its limit points [[§7 Interior and Closure#^thm-7-4|590 Thm. §7.4]], and Theorem §12.2 as [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]].
+> - In any topological space: limit points [[§8 Interior and Closure#^def-8-5|590 Def. §8.5]], the closure as the set together with its limit points [[§8 Interior and Closure#^thm-8-4|590 Thm. §8.4]], and Theorem §12.2 as [[§8 Interior and Closure#^cor-8-5|590 Cor. §8.5]].
 
 ## Examples
 

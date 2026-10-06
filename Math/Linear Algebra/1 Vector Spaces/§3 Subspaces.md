@@ -14,7 +14,7 @@ tags: [linear-algebra]
 ^ladr-1-33
 
 > [!remark]- Connections
-> - The practical test: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]]. Standard subspaces later: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], eigenspaces, orthogonal complements [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|Orthogonal complement, U⟂]].
+> - The practical test: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]]. Standard subspaces later: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], eigenspaces, orthogonal complements [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|Orthogonal complement, U⟂]].
 
 > [!theorem] Theorem 1.34: Conditions for a subspace
 > A subset $U\subseteq V$ is a subspace of $V$ if and only if
@@ -37,7 +37,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The workhorse for every 'is a subspace' claim: [[§3 Subspaces#^ladr-1-40|Sum of subspaces is the smallest containing subspace]], [[§4 Span and Linear Independence#^ladr-2-6|Span is the smallest containing subspace]], [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]].
 > - Group version: the subgroup tests, [[§4 Subgroups#^prop-4-2|493 Prop. §4.2]] (hub [[Subgroup Criteria]]).
-> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-2|235 Def. §23.2]], where Lay takes these three conditions as the definition, and [[§23 Vector Spaces and Subspaces#^prop-23-3|235 Prop. §23.3]] (they make H a vector space); for subspaces of ℝⁿ, [[§18 Subspaces of ℝⁿ#^def-18-1|235 Def. §18.1]].
+> - Computational version: [[§29 Vector Spaces and Subspaces#^def-29-2|235 Def. §29.2]], where Lay takes these three conditions as the definition, and [[§29 Vector Spaces and Subspaces#^prop-29-3|235 Prop. §29.3]] (they make H a vector space); for subspaces of ℝⁿ, [[§21 Subspaces of ℝⁿ#^def-21-1|235 Def. §21.1]].
 
 > [!example] Example 1.35: Subspaces (p. 19)
 > - (a) $\{x\in\F^4 : x_3=5x_4+b\}$ is a subspace iff $b=0$ (for $b\ne0$ it misses $0$).
@@ -51,7 +51,7 @@ tags: [linear-algebra]
 ^ladr-1-35
 
 > [!remark]- Connections
-> - More worked examples: [[§23 Vector Spaces and Subspaces#^ex-23-2|235 Ex. §23.2]] (subspaces, including ℙₙ ⊂ C^∞(ℝ) ⊂ C(ℝ) and convergent sequences) and [[§23 Vector Spaces and Subspaces#^ex-23-3|235 Ex. §23.3]] (sets that fail the test).
+> - More worked examples: [[§29 Vector Spaces and Subspaces#^ex-29-2|235 Ex. §29.2]] (subspaces, including ℙₙ ⊂ C^∞(ℝ) ⊂ C(ℝ) and convergent sequences) and [[§29 Vector Spaces and Subspaces#^ex-29-3|235 Ex. §29.3]] (sets that fail the test).
 > - Rigorous treatment of the closure facts behind (b)–(e), in [[Single Variable Analysis]]: sums of continuous functions, [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]]; sums and constant multiples of derivatives, [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]]; limits of linear combinations of sequences, [[§9 Limit Theorems for Sequences#^cor-9-6|451 Cor. §9.6]] (stated for real sequences; the proof is the same over ℂ).
 
 > [!definition] Definition 1.36: Sum of subspaces
@@ -114,7 +114,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Test with one vector: [[Condition for a direct sum]]. Two subspaces: [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]].
-> - Direct sums organize the rest of the book: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]], [[Generalized eigenspace decomposition]].
+> - Direct sums organize the rest of the book: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]], [[Generalized eigenspace decomposition]].
 > - Physics: decomposing a state space into sectors (eigenspaces of a conserved quantity) is a direct-sum decomposition.
 > - Same notion in 556: [[§22 Projection and Orthogonal Decomposition#^def-22-2|556 Def. §22.2]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism. In 591 both are defined together: [[§20 Linear Algebra Toolkit#^def-20-6|591 Def. §20.6]].
 

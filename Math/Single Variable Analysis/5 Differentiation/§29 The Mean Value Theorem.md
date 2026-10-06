@@ -42,8 +42,8 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 *Uses:* [[§28 Basic Properties of the Derivative#^def-28-1|Def. §28.1]], [[§20 Limits of Functions#^thm-20-2|§20.2]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
 
 > [!remark]- Connections
-> - Fermat's condition in several variables (all partials vanish at an interior extremum): [[§14 Optimization and Lagrange Multipliers#^thm-14-1|452 Thm. §14.1]].
-> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-2|Calc Thm. §25.2]] (with worked examples).
+> - Fermat's condition in several variables (all partials vanish at an interior extremum): [[§17 Optimization and Lagrange Multipliers#^thm-17-1|452 Thm. §17.1]].
+> - Computational version: [[§28 Maximum and Minimum Values#^thm-28-2|Calc Thm. §28.2]] (with worked examples).
 
 > [!theorem] Theorem §29.2: Rolle's Theorem
 > Let $f: [a,b] \to \mathbb{R}$ be continuous, and differentiable at every point of $(a,b)$ (briefly: differentiable on $(a,b)$). If $f(a) = f(b)$, then there exists $x_0 \in (a,b)$ with
@@ -66,8 +66,8 @@ Note the interval is *open*: it has no boundary points, so $x_0$ is automaticall
 *Uses:* [[Extreme Value Theorem|§18.1]], [[§29 The Mean Value Theorem#^thm-29-1|§29.1]]
 
 > [!remark]- Connections
-> - Computational version: [[§26 The Mean Value Theorem#^thm-26-1|Calc Thm. §26.1]] (with worked examples).
-> - Used in PDEs: between consecutive zeros of $J_0$ lies a zero of $J_1=-J_0'$, [[§45★ Bessel's Equation#^cor-45-9|341 Cor. §45.9]].
+> - Computational version: [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-1|Calc Thm. §29.1]] (with worked examples).
+> - Used in PDEs: between consecutive zeros of $J_0$ lies a zero of $J_1=-J_0'$, [[§56★ Properties of Bessel Functions#^cor-56-4|341 Cor. §56.4]].
 
 ## The Mean Value Theorem and Its Corollaries
 
@@ -103,7 +103,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 *The [[Mean Value Theorem|Mean Value Theorem]]: somewhere in $(a,b)$ the tangent (red) is parallel to the secant (dashed). Rolle is the horizontal special case; the proof above is literally this picture — subtract the secant, and the extremum of what remains is $c$.*
 
 > [!remark]- Connections
-> - Computational version: [[§26 The Mean Value Theorem#^thm-26-2|Calc Thm. §26.2]] (with worked examples).
+> - Computational version: [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Calc Thm. §29.2]] (with worked examples).
 > - Fails for complex-valued functions: [[§41 Derivatives of Functions w(t)#^ex-41-3|342 Ex. §41.3]] (w(t) = eⁱᵗ on [0, 2π] has w′ never zero although w(2π) = w(0)).
 
 > [!theorem] Corollary §29.4: Vanishing Derivative Means Constant
@@ -125,9 +125,9 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 *Uses:* [[Mean Value Theorem|§29.3]]
 
 > [!remark]- Connections
-> - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]], with the Cantor function as counterexample ([[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]]).
-> - Computational version: [[§26 The Mean Value Theorem#^thm-26-3|Calc Thm. §26.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§21 Exponential Growth and Decay#^thm-21-1|Calc Thm. §21.1]].
-> - Used in ODEs: every solution of $y' = ay - b$ has the form $b/a + ce^{at}$, [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]], and the solutions of a separable equation are given implicitly by $H_1(x) + H_2(y) = c$, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]]; both proofs show that some function has zero derivative.
+> - If $f' = 0$ only almost everywhere, the conclusion needs absolute continuity: [[§31 Absolute Continuity#^thm-31-4|551 Thm. §31.4]], with the Cantor function as counterexample ([[§31 Absolute Continuity#^ex-31-1|551 Ex. §31.1]]).
+> - Computational version: [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-3|Calc Thm. §29.3]]; used for the uniqueness of solutions of $y' = ky$ in [[§24 Exponential Growth and Decay#^thm-24-1|Calc Thm. §24.1]].
+> - Used in ODEs: every solution of $y' = ay - b$ has the form $b/a + ce^{at}$, [[§2 Solutions of Some Differential Equations#^thm-2-1|331 Thm. §2.1]], and the solutions of a separable equation are given implicitly by $H_1(x) + H_2(y) = c$, [[§6 Separable Differential Equations#^thm-6-1|331 Thm. §6.1]]; both proofs show that some function has zero derivative.
 > - Computational version: [[§25 Analytic Functions#^thm-25-3|342 Thm. §25.3]] (f′ = 0 on a domain of ℂ forces f constant, reduced to this corollary along segments).
 
 > [!theorem] Corollary §29.5: Equal Derivatives Differ by a Constant
@@ -143,8 +143,8 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 *Uses:* [[§29 The Mean Value Theorem#^cor-29-4|§29.4]]
 
 > [!remark]- Connections
-> - Computational version: [[§26 The Mean Value Theorem#^cor-26-4|Calc Cor. §26.4]]; the most general antiderivative, [[§33 Antiderivatives#^thm-33-1|Calc Thm. §33.1]] (with worked examples).
-> - Used in ODEs: the solutions of $y' + p(t)y = g(t)$ are exactly $\frac{1}{\mu}\big(\int_{t_0}^t \mu g\,ds + c\big)$, because $\mu y$ and $\int_{t_0}^t \mu g\,ds$ have the same derivative: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|331 Thm. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]].
+> - Computational version: [[§29 Rolle's Theorem and the Mean Value Theorem#^cor-29-4|Calc Cor. §29.4]]; the most general antiderivative, [[§36 Antiderivatives#^thm-36-1|Calc Thm. §36.1]] (with worked examples).
+> - Used in ODEs: the solutions of $y' + p(t)y = g(t)$ are exactly $\frac{1}{\mu}\big(\int_{t_0}^t \mu g\,ds + c\big)$, because $\mu y$ and $\int_{t_0}^t \mu g\,ds$ have the same derivative: [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-1|331 Thm. §5.1]], [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|331 Thm. §5.2]].
 
 > [!theorem] Proposition §29.6: Vanishing k-th Derivative Means Polynomial (HW)
 > Let $k \geq 1$ and let $f$ be $k$ times differentiable on an open interval $I$ with $f^{(k)} \equiv 0$ on $I$. Then $f$ is a polynomial of degree less than $k$; conversely, every such polynomial has vanishing $k$-th derivative.
@@ -176,7 +176,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 *Uses:* [[Mean Value Theorem|§29.3]]
 
 > [!remark]- Connections
-> - Computational version: [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Calc Thm. §27.1]] (with worked examples).
+> - Computational version: [[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-1|Calc Thm. §30.1]] (with worked examples).
 
 ## Applications
 
@@ -265,8 +265,8 @@ For instance: if $f$ is differentiable on $\mathbb{R}$ with $1 \leq f' \leq 2$ e
 ^rem-29-2
 
 > [!remark]- Connections
-> - Worked examples: the integrating factor for linear equations, [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]]; $y' = x^2 y$ solved in [[§59 Separable Equations#^ex-59-3|Calc Ex. §59.3]].
-> - The integrating factor in full: [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|331 Def. §4.2]] and the solution of $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (with worked examples).
+> - Worked examples: the integrating factor for linear equations, [[§70 Linear Equations#^thm-70-1|Calc Thm. §70.1]]; $y' = x^2 y$ solved in [[§68 Separable Equations#^ex-68-3|Calc Ex. §68.3]].
+> - The integrating factor in full: [[§5 Linear Differential Equations; Method of Integrating Factors#^def-5-2|331 Def. §5.2]] and the solution of $y' + p(t)y = g(t)$, [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|331 Thm. §5.2]] (with worked examples).
 
 ## The Intermediate Value Theorem for Derivatives
 
@@ -369,8 +369,8 @@ This computation finds the *formula* but presupposes the differentiability of $f
 *Left: the graph of $f^{-1}$ (red) is the mirror image of the graph of $f$ (blue) in the line $y = x$; the mirror swaps rise and run, so the tangent at $(y_0, x_0)$ has slope $\tfrac{1}{f'(x_0)}$. Right: for $f(x) = x^3$ at $x_0 = 0$, the horizontal tangent ($f'(0) = 0$) mirrors into a vertical one — $y^{1/3}$ is not differentiable at $0$.*
 
 > [!remark]- Connections
-> - Several-variable version, with an invertible Jacobian in place of a nonzero derivative: [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]].
-> - Computational version: [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Calc Thm. §19.1]] (with worked examples).
+> - Several-variable version, with an invertible Jacobian in place of a nonzero derivative: [[§16 The Inverse Function Theorem#^thm-16-2|452 Thm. §16.2]].
+> - Computational version: [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-1|Calc Thm. §22.1]] (with worked examples).
 
 > [!example] Example §29.6: Arcsine
 > $f(x) = \sin x$ restricted to $\left[-\tfrac\pi2, \tfrac\pi2\right]$ (needed for $\arcsin$ to be well defined — draw the graph of $\sin$), with inverse $f^{-1}(y) = \arcsin y$:

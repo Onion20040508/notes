@@ -39,7 +39,7 @@ tags: [differentiable-manifolds, math591]
 ^def-7-1
 
 > [!remark]- Connections
-> - Home in 452: the total derivative and Jacobian, [[§6 Differentiability#^def-6-2|452 Def. §6.2]] and [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]; the differential, [[§8 The Differential#^def-8-1|452 Def. §8.1]].
+> - Home in 452: the total derivative and Jacobian, [[§7 Differentiability#^def-7-2|452 Def. §7.2]] and [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; the differential, [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 > - Rank: [[§9 Matrices#^ladr-3-58|LADR 3.58]]; row rank equals column rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]].
 > - Coordinate-free differential: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]].
 
@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-7-1
 
 > [!remark]- Connections
-> - The circle as a level set in 452: [[Unit circle and unit sphere]], [[§12 The Implicit Function Theorem#^ex-12-1|452 Ex. §12.1]].
+> - The circle as a level set in 452: [[Unit circle and unit sphere]], [[§15 The Implicit Function Theorem#^ex-15-1|452 Ex. §15.1]].
 
 > [!remark] Remark: Why the Notion Matters
 > The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Example §22.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Proposition [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]] below.
@@ -112,10 +112,10 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 
 ^pf-7-1
 
-*Uses:* [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
+*Uses:* [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
 
 > [!remark]- Connections
-> - The one-equation version is proved in 452: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
+> - The one-equation version is proved in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]] (hub: [[Implicit Function Theorem]]); this vector-valued version has its home here.
 > - Deduced from the inverse function theorem: [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 > [!remark] Remark: Which Variables Are Solved For
@@ -144,7 +144,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-1|§7.1]]
 
 > [!remark]- Connections
-> - Home of the scalar statement: [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]] (the $n$-variable, one-equation IFT, proved there from the two-variable case [[§12 The Implicit Function Theorem#^thm-12-1|452 §12.1]]).
+> - Home of the scalar statement: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]] (the $n$-variable, one-equation IFT, proved there from the two-variable case [[§15 The Implicit Function Theorem#^thm-15-1|452 §15.1]]).
 
 ## The Regular Value Theorem
 
@@ -184,7 +184,7 @@ We need only the scalar case $k = 1$. Write $N = n^2$ and points of $\mathbb{R}^
 
 ^pf-7-3
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-1|§7.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
 > [!remark]- Connections
 > - The smooth structure on $X$: [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]]; for level sets of maps between manifolds: [[§28 The Differential in Coordinates#^cor-28-8|§28.8]] and [[§33 Submanifolds#^thm-33-6|§33.6]].
@@ -387,10 +387,10 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 
 ^pf-ex-7-3
 
-*Uses:* [[§7 The Regular Value Theorem#^ex-7-2|Ex. §7.2]], [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]], [[Polar and spherical coordinates]]
+*Uses:* [[§7 The Regular Value Theorem#^ex-7-2|Ex. §7.2]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[Polar and spherical coordinates]]
 
 > [!remark]- Connections
-> - $\mathbb{C}^\times = \mathbb{R}^2 \setminus \{0\}$ in 590: [[Punctured plane]], which deformation retracts onto $S^1$ ([[§26 Deformation Retracts and Homotopy Type#^ex-26-7|590 Ex. §26.7]]).
+> - $\mathbb{C}^\times = \mathbb{R}^2 \setminus \{0\}$ in 590: [[Punctured plane]], which deformation retracts onto $S^1$ ([[§35 Deformation Retracts and Homotopy Type#^ex-35-6|590 Ex. §35.6]]).
 
 ![[m591-4-5.svg]]
 *The level set $M$, the parameter $s \in \mathbb{C}^\times$, and polar coordinates to the cylinder $S^1 \times \mathbb{R}$.*

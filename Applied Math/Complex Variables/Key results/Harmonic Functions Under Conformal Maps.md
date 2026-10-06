@@ -23,5 +23,5 @@ tags: [complex-variables, hub]
 - [[§137★ Related Boundary Value Problems#^thm-137-4|Theorem §137.4: Dirichlet Problem for the Exterior of a Circle]]
 
 ## Connections
-- The chain-rule proof, [[§116★ Transformations of Harmonic Functions#^prop-116-2|Proposition §116.2]], gives $H_{xx} + H_{yy} = |f'(z)|^2(h_{uu} + h_{vv})$ and needs no harmonic conjugate; with $w = \operatorname{Log} z$ it is the polar form of the Laplacian, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
+- The chain-rule proof, [[§116★ Transformations of Harmonic Functions#^prop-116-2|Proposition §116.2]], gives $H_{xx} + H_{yy} = |f'(z)|^2(h_{uu} + h_{vv})$ and needs no harmonic conjugate; with $w = \operatorname{Log} z$ it is the polar form of the Laplacian, [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]].
 - See [[§116★ Transformations of Harmonic Functions]] for context and examples.

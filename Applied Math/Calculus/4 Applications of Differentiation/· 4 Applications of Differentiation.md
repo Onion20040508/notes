@@ -14,15 +14,15 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (18), [[Measure Theory]] (3), [[Topology]] (1), [[Multivariable Analysis]] (2)
 
 ## Sections
-- [[§25 Maximum and Minimum Values]] — Stewart 4.1
-- [[§26 The Mean Value Theorem]] — Stewart 4.2
-- [[§27 What Derivatives Tell Us About the Shape of a Graph]] — Stewart 4.3
-- [[§28 Indeterminate Forms and L'Hospital's Rule]] — Stewart 4.4
-- [[§29 Summary of Curve Sketching]] — Stewart 4.5
-- [[§30 Graphing with Calculus and Technology]] — Stewart 4.6
-- [[§31 Optimization Problems]] — Stewart 4.7
-- [[§32 Newton's Method]] — Stewart 4.8
-- [[§33 Antiderivatives]] — Stewart 4.9
+- [[§28 Maximum and Minimum Values]] — Stewart 4.1
+- [[§29 Rolle's Theorem and the Mean Value Theorem]] — Stewart 4.2
+- [[§30 What Derivatives Tell Us About the Shape of a Graph]] — Stewart 4.3
+- [[§31 Indeterminate Forms and L'Hospital's Rule]] — Stewart 4.4
+- [[§32 Summary of Curve Sketching]] — Stewart 4.5
+- [[§33 Graphing with Calculus and Technology]] — Stewart 4.6
+- [[§34 Optimization Problems]] — Stewart 4.7
+- [[§35 Newton's Method]] — Stewart 4.8
+- [[§36 Antiderivatives]] — Stewart 4.9
 
 ## Central results
 - [[Fermat's Theorem on Local Extrema]] (§25.2)
@@ -31,7 +31,7 @@ tags: [chapter, calculus]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1: The Extreme Value Theorem]]: 211 later results
-- [[Fermat's Theorem on Local Extrema|Theorem §25.2: Fermat's Theorem]]: 211 later results
-- [[Rolle's Theorem|Theorem §26.1: Rolle's Theorem]]: 211 later results
-- [[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2: The Mean Value Theorem]]: 211 later results
+- [[§28 Maximum and Minimum Values#^thm-28-1|Theorem §28.1: The Extreme Value Theorem]]: 211 later results
+- [[Fermat's Theorem on Local Extrema|Theorem §28.2: Fermat's Theorem]]: 211 later results
+- [[Rolle's Theorem|Theorem §29.1: Rolle's Theorem]]: 211 later results
+- [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Theorem §29.2: The Mean Value Theorem]]: 211 later results

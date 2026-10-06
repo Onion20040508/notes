@@ -22,7 +22,7 @@ The integrand of a contour integral is often a branch of a multiple-valued funct
 > f(z) = z^{1/2} = \exp\Big(\frac12\log z\Big) \qquad (|z| > 0,\ 0 < \arg z < 2\pi)
 > $$
 >
-> of $z^{1/2}$ is not defined at the initial point $z = 3$ of $C$, which lies on its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]). Nevertheless the integral
+> of $z^{1/2}$ is not defined at the initial point $z = 3$ of $C$, which lies on its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]). Nevertheless the integral
 >
 > $$
 > I = \int_C z^{1/2}\,dz \qquad (1)

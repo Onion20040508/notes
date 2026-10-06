@@ -131,7 +131,7 @@ The first theorem provides a useful alternative definition. Both parts of its pr
 ## Isolated Zeros
 
 > [!definition] Definition §82.2: Isolated Zero
-> A zero $z_0$ of a function $f$ is **isolated** if there is a [[§12★ Regions in the Complex Plane#^def-12-new1|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$ in which $f(z)$ is nonzero. A function **has only isolated zeros** if each of its zeros is isolated. (Compare the definition of an isolated singular point, [[§74 Isolated Singular Points#^def-74-1|Definition §74.1]].)
+> A zero $z_0$ of a function $f$ is **isolated** if there is a [[§12★ Regions in the Complex Plane#^def-12-2|deleted neighborhood]] $0 < |z - z_0| < \varepsilon$ of $z_0$ in which $f(z)$ is nonzero. A function **has only isolated zeros** if each of its zeros is isolated. (Compare the definition of an isolated singular point, [[§74 Isolated Singular Points#^def-74-1|Definition §74.1]].)
 >
 > *B&C: Sec. 82 (text)*
 
@@ -198,11 +198,11 @@ The final theorem concerns functions with zeros that are not all isolated. It wa
 *Uses:* [[§82 Zeros of Analytic Functions#^thm-82-2|§82.2]], [[§63 Proof of Taylor's Theorem#^thm-63-1|§63.1]] (Taylor's theorem)
 
 > [!remark]- Connections
-> - Theorem §82.3 is local: it reaches only the disk $N_0$. The global statement, that two functions analytic in a domain $D$ which agree on a subdomain or segment agree throughout $D$ ([[§28★ Uniquely Determined Analytic Functions#^thm-28-2|Theorem §28.2]]), is obtained by chaining such disks along a polygonal path, and rests on $D$ being connected, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]: the set of points near which $f$ vanishes identically is open, and so is the set of points near which it does not (by Theorem §82.2), so one of them is empty.
+> - Theorem §82.3 is local: it reaches only the disk $N_0$. The global statement, that two functions analytic in a domain $D$ which agree on a subdomain or segment agree throughout $D$ ([[§28★ Uniquely Determined Analytic Functions#^thm-28-2|Theorem §28.2]]), is obtained by chaining such disks along a polygonal path, and rests on $D$ being connected, [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]: the set of points near which $f$ vanishes identically is open, and so is the set of points near which it does not (by Theorem §82.2), so one of them is empty.
 > - Nothing like this holds for infinitely differentiable real functions: $e^{-1/x^2}$ (extended by $0$) vanishes with all its derivatives at $0$ without being identically zero near $0$, [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]]; for an analytic function that would force $f \equiv 0$ near the point (proof of Theorem §82.2). Complex analyticity makes the Taylor series converge to the function, which is what the proofs of Theorems §82.2 and §82.3 use.
 
 > [!example] Example §82.3: Finitely Many Zeros and Poles in a Closed Region
-> Let $R$ be the region consisting of all points inside and on a simple closed contour $C$. Use the Bolzano–Weierstrass theorem, in the form *an infinite set of points lying in a closed bounded region $R$ has at least one [[§12★ Regions in the Complex Plane#^def-12-6|accumulation point]] in $R$*, to show:
+> Let $R$ be the region consisting of all points inside and on a simple closed contour $C$. Use the Bolzano–Weierstrass theorem, in the form *an infinite set of points lying in a closed bounded region $R$ has at least one [[§12★ Regions in the Complex Plane#^def-12-13|accumulation point]] in $R$*, to show:
 >
 > **(a)** if $f$ is analytic in $R$ except possibly for poles inside $C$, and all the zeros of $f$ in $R$ are interior to $C$ and of finite order, then those zeros are finite in number;
 >

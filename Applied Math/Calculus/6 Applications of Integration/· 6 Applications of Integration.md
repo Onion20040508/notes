@@ -14,14 +14,14 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Measure Theory]] (2), [[Multivariable Analysis]] (3), [[Ordinary Differential Equations]] (1)
 
 ## Sections
-- [[§39 Areas Between Curves]] — Stewart 6.1
-- [[§40 Volumes]] — Stewart 6.2
-- [[§41 Volumes by Cylindrical Shells]] — Stewart 6.3
-- [[§42 Work]] — Stewart 6.4
-- [[§43 Average Value of a Function]] — Stewart 6.5
+- [[§45 Areas Between Curves]] — Stewart 6.1
+- [[§46 Volumes]] — Stewart 6.2
+- [[§47 Volumes by Cylindrical Shells]] — Stewart 6.3
+- [[§48 Work]] — Stewart 6.4
+- [[§49 Average Value of a Function]] — Stewart 6.5
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1: Area Between Curves]]: 8 later results
-- [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3: Area Between Curves, Integrating with Respect to y]]: 4 later results
-- [[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2: The Shell Method]]: 1 later result
+- [[§45 Areas Between Curves#^thm-45-1|Theorem §45.1: Area Between Curves]]: 8 later results
+- [[§45 Areas Between Curves#^thm-45-3|Theorem §45.3: Area Between Curves, Integrating with Respect to y]]: 4 later results
+- [[§47 Volumes by Cylindrical Shells#^thm-47-2|Theorem §47.2: The Shell Method]]: 1 later result

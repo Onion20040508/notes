@@ -14,11 +14,11 @@ tags: [chapter, applied-linear-algebra]
 **Developed further in (other subjects):** [[Linear Algebra]] (6)
 
 ## Sections
-- [[§53 Complex Numbers]] — Lay Appendix B
+- [[§64 Complex Numbers]] — Lay Appendix B
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§53 Complex Numbers#^thm-53-1|Theorem §53.1: The Laws of Arithmetic Hold in ℂ]]: 102 later results
-- [[§53 Complex Numbers#^prop-53-2|Proposition §53.2: z Times Its Conjugate]]: 101 later results
-- [[§53 Complex Numbers#^thm-53-3|Theorem §53.3: Properties of Conjugates and Absolute Value]]: 100 later results
-- [[§53 Complex Numbers#^prop-53-4|Proposition §53.4: Reciprocals and Quotients]]: 2 later results
+- [[§64 Complex Numbers#^thm-64-1|Theorem §64.1: The Laws of Arithmetic Hold in ℂ]]: 102 later results
+- [[§64 Complex Numbers#^prop-64-2|Proposition §64.2: z Times Its Conjugate]]: 101 later results
+- [[§64 Complex Numbers#^thm-64-3|Theorem §64.3: Properties of Conjugates and Absolute Value]]: 100 later results
+- [[§64 Complex Numbers#^prop-64-4|Proposition §64.4: Reciprocals and Quotients]]: 2 later results

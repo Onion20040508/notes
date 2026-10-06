@@ -29,8 +29,8 @@ tags: [functional-analysis, math556]
 ^def-20-1
 
 > [!remark]- Connections
-> - The finite-dimensional definition: [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§19 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
-> - Computational version: [[§46 Inner Product Spaces#^def-46-1|235 Def. §46.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
+> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
+> - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
 
 > [!remark] Remark: Reading the Complex Axioms
 > Three points.
@@ -58,8 +58,8 @@ tags: [functional-analysis, math556]
 ^ex-20-1
 
 > [!remark]- Connections
-> - [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product), [[§19 Inner Products and Norms#^ladr-6-3|LADR 6.3]] (Euclidean inner product on $\mathbb{F}^n$).
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-1|235 Def. §40.1]] (the dot product on ℝⁿ, with worked computations).
+> - [[§20 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product), [[§20 Inner Products and Norms#^ladr-6-3|LADR 6.3]] (Euclidean inner product on $\mathbb{F}^n$).
+> - Computational version: [[§49 Inner Product, Length, and Orthogonality#^def-49-1|235 Def. §49.1]] (the dot product on ℝⁿ, with worked computations).
 
 > [!example] Example §20.2: $\ell^2$
 > On $\ell^2$, the sequences $a = (a_1, a_2, \ldots)$ with $\|a\|_2 = \bigl(\sum_j |a_j|^2\bigr)^{1/2} < \infty$, define
@@ -92,8 +92,8 @@ tags: [functional-analysis, math556]
 ^ex-20-3
 
 > [!remark]- Connections
-> - $L^2(E)$ as a Hilbert space in 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^rem-19-1|551 Remark §19.1]]; Hölder's inequality there: [[Hölder's Inequality|551 §19.5]].
-> - Computational version: [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]] (the same integral inner product on the continuous functions C[a, b]).
+> - $L^2(E)$ as a Hilbert space in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 Remark §19.1]]; Hölder's inequality there: [[Hölder's Inequality|551 §34.5]].
+> - Computational version: [[§56 Inner Product Spaces#^ex-56-4|235 Ex. §56.4]] (the same integral inner product on the continuous functions C[a, b]).
 
 > [!remark] Remark
 > In each example $(x,x)$ is the square of the norm already attached to the space: $(x,x) = \|x\|_2^2$ on $\mathbb{R}^n$, $\ell^2$, and $L^2$. That is not a coincidence, and the [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2|next section]] shows it holds in general: every inner product determines a norm by $\|x\| = (x,x)^{1/2}$. Note the logical order — an inner product space is a linear space with an inner product, no norm assumed; the norm is produced.

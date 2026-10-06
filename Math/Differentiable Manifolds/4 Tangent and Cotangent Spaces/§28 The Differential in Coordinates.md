@@ -86,7 +86,7 @@ $$
 *Uses:* [[§26 Derivations and the Abstract Tangent Space#^prop-26-5|§26.5]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§9 Matrices#^ladr-3-31|LADR 3.31]]
 
 > [!remark]- Connections
-> - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§6 Differentiability#^def-6-new1|452 Def. §6.2]].
+> - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§7 Differentiability#^def-7-3|452 Def. §7.3]].
 > - The same statement between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]].
 
 > [!remark] Remark
@@ -114,13 +114,13 @@ $$
 
 ^pf-28-3
 
-*Uses:* [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§9 Matrices#^ladr-3-43|LADR 3.43]], [[Multivariable Chain Rule|452 §12.2]]
 
 ![[m591-12-11.svg]]
 *Upstairs the composite of maps between manifolds; downstairs the composite of their coordinate representations. Each square commutes, so the outer rectangle does, and differentiating the bottom row at $\varphi(p)$ multiplies the Jacobians.*
 
 > [!remark]- Connections
-> - The Euclidean chain rule for Jacobians: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|452 §10 (Chain Rule for Jacobians)]]; matrix of a product: [[§9 Matrices#^ladr-3-43|LADR 3.43]].
+> - The Euclidean chain rule for Jacobians: [[§12 Composition of Functions and the Chain Rule#^rem-12-4|452 §12 (Chain Rule for Jacobians)]]; matrix of a product: [[§9 Matrices#^ladr-3-43|LADR 3.43]].
 
 > [!theorem] Corollary §28.4: Change of Coordinates
 > If $(U, \varphi)$ and $(\tilde U, \tilde\varphi)$ are two smooth charts at $p$, with coordinates $x^i$ and $\tilde x^j$, then
@@ -184,10 +184,10 @@ $$
 
 ^pf-28-5
 
-*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
-> - The differential between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]]; in calculus, [[§8 The Differential#^def-8-1|452 Def. §8.1]] and [[Directional Derivative Formula|452 §7.1 (Directional Derivative Formula)]].
+> - The differential between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]]; in calculus, [[§10 The Differential#^def-10-1|452 Def. §10.1]] and [[Directional Derivative Formula|452 §9.1 (Directional Derivative Formula)]].
 
 > [!theorem] Corollary §28.6: The Tangent Space to a Vector Space
 > Let $V$ be a finite-dimensional vector space with its standard smooth structure, and $a \in V$. The map
@@ -259,7 +259,7 @@ $$
 
 ^pf-28-7
 
-*Uses:* [[§28 The Differential in Coordinates#^def-28-1|Def. §28.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
+*Uses:* [[§28 The Differential in Coordinates#^def-28-1|Def. §28.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§20 Linear Algebra Toolkit#^prop-20-1|§20.1]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
 ![[m591-12-13.svg]]
 *The proposition in one square. The level set upstairs is carried by the chart onto a level set downstairs, in Euclidean space, and the question “is $c$ regular?” is carried with it: surjectivity of $F_{\ast p}$ upstairs is the rank of $\tilde F'$ downstairs.*
@@ -295,7 +295,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§33 Submanifolds#^thm-33-6|§33.6]], proved with the local normal form for submersions (Theorem [[§32 Submersions#^thm-32-4|§32.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
 
 > [!theorem] Proposition §28.9: Maps with Zero Differential Are Constant
-> Let $F : M \to N$ be smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]), with $M$ connected ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]). If $F_{\ast p} = 0$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]]) for every $p \in M$, then $F$ is constant.
+> Let $F : M \to N$ be smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]), with $M$ connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]). If $F_{\ast p} = 0$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]]) for every $p \in M$, then $F$ is constant.
 
 ^prop-28-9
 
@@ -306,9 +306,9 @@ This is the topological half of the regular value theorem for manifolds, and it 
 
 ^pf-28-9
 
-*Uses:* [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§9 Continuous Functions#^thm-9-1|590 §9.1]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]]
+*Uses:* [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§29 The Mean Value Theorem#^thm-29-3|451 §29.3]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]]
 
 > [!remark]- Connections
-> - Connectedness via clopen sets: [[§13 Connected Spaces#^lem-13-1|590 Lem. §13.1]]; the one-variable original: [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (vanishing derivative means constant).
+> - Connectedness via clopen sets: [[§15 Connected Spaces#^lem-15-1|590 Lem. §15.1]]; the one-variable original: [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (vanishing derivative means constant).
 
 The hypothesis that $M$ is connected cannot be dropped: on a disconnected $M$, a map that takes different constant values on different components has zero differential everywhere. Locally, the proposition is the familiar fact from calculus that a function with zero derivative on an interval is constant.

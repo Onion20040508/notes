@@ -5,7 +5,7 @@ chapter: 1
 section: 3
 tags: [multivariable-analysis, math452]
 ---
-← [[§2 Open and Closed Sets]] · ↑ [[· 1 Foundations]] · [[§4 Partial Derivatives]] →
+← [[§2 Open and Closed Sets]] · ↑ [[· 1 Foundations]] · [[§4 The Function 2xy∕(x²+y²)]] →
 
 > [!definition] Definition §3.1: Continuity
 > A function $f : \mathbb{R}^2 \to \mathbb{R}$ is **continuous** at $(x_0, y_0)$ if
@@ -21,7 +21,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]] on $\mathbb{R}$, and [[§21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
-> - MATH 590: [[§11 Metric Topology#^thm-11-7|ε-δ Characterization of Continuity]] shows this agrees with the open-set [[§9 Continuous Functions#^def-9-1|definition]].
+> - MATH 590: [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]] shows this agrees with the open-set [[§10 Continuous Functions#^def-10-1|definition]].
 > - Computational version: [[§18 Continuity#^def-18-1|342 Def. §18.1]] (continuity of complex functions, with worked examples).
 
 > [!example] Example §3.1: Discontinuity via Path Dependence
@@ -42,7 +42,7 @@ tags: [multivariable-analysis, math452]
 ^ex-3-1
 
 > [!remark]- Connections
-> - Worked examples: the two-path test, [[§91 Limits and Continuity#^thm-91-1|Calc Thm. §91.1]], applied to xy/(x² + y²) in [[§91 Limits and Continuity#^ex-91-1|Calc Ex. §91.1]].
+> - Worked examples: the two-path test, [[§107 Limits and Continuity#^thm-107-1|Calc Thm. §107.1]], applied to xy/(x² + y²) in [[§107 Limits and Continuity#^ex-107-1|Calc Ex. §107.1]].
 
 ## Algebra of Continuous Functions
 
@@ -91,7 +91,7 @@ The following theorems show that continuous functions are closed under the stand
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
-> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
+> - Computational version: [[§107 Limits and Continuity#^thm-107-5|Calc Thm. §107.5]] (with worked examples).
 
 > [!theorem] Theorem §3.2: Product of Continuous Functions
 > If $f, g : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(x_0, y_0)$, then $f \cdot g$ is continuous at $(x_0, y_0)$.
@@ -142,7 +142,7 @@ The following theorems show that continuous functions are closed under the stand
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
-> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
+> - Computational version: [[§107 Limits and Continuity#^thm-107-5|Calc Thm. §107.5]] (with worked examples).
 
 > [!theorem] Theorem §3.3: Quotient of Continuous Functions
 > If $f, g : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(x_0, y_0)$ and $g(x_0, y_0) \neq 0$, then $f/g$ is continuous at $(x_0, y_0)$.
@@ -187,7 +187,7 @@ The following theorems show that continuous functions are closed under the stand
 *Uses:* [[§3 Continuity and Limits of Functions#^def-3-1|Def. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|§3.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|451 §3.3]]
 
 > [!remark]- Connections
-> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (with worked examples).
+> - Computational version: [[§107 Limits and Continuity#^thm-107-5|Calc Thm. §107.5]] (with worked examples).
 
 > [!theorem] Theorem §3.4: Composition of Continuous Functions
 > If $\varphi, \psi : \mathbb{R}^2 \to \mathbb{R}$ are continuous at $(a, b)$, and $f : \mathbb{R}^2 \to \mathbb{R}$ is continuous at $(\varphi(a,b), \psi(a,b))$, then
@@ -235,9 +235,9 @@ The following theorems show that continuous functions are closed under the stand
 
 > [!remark]- Connections
 > - MATH 451 versions: [[§17 Continuous Functions#^thm-17-3|Arithmetic of Continuous Functions]] and [[§17 Continuous Functions#^thm-17-4|Composition of Continuous Functions]].
-> - MATH 590 version for arbitrary spaces: [[§9 Continuous Functions#^thm-9-4|Rules for Continuous Functions]].
-> - The differentiable analogues: [[§6 Differentiability#^thm-6-6|§6.6]]–[[§6 Differentiability#^thm-6-9|§6.9]]; §3.4 is proved again as [[§10 Composition of Functions and the Chain Rule#^thm-10-1|Continuity of Composition]] in §10.
-> - Computational version: [[§91 Limits and Continuity#^thm-91-5|Calc Thm. §91.5]] (b), composition with a function of one variable.
+> - MATH 590 version for arbitrary spaces: [[§10 Continuous Functions#^thm-10-4|Rules for Continuous Functions]].
+> - The differentiable analogues: [[§8 Algebra of Differentiable Functions#^thm-8-4|§8.4]]–[[§8 Algebra of Differentiable Functions#^thm-8-7|§8.7]]; §3.4 is proved again as [[§12 Composition of Functions and the Chain Rule#^thm-12-1|Continuity of Composition]] in §10.
+> - Computational version: [[§107 Limits and Continuity#^thm-107-5|Calc Thm. §107.5]] (b), composition with a function of one variable.
 > - Computational version: [[§18 Continuity#^thm-18-2|342 Thm. §18.2]] (composition of continuous complex functions).
 
 > [!remark] Remark: Summary: Algebra of Continuous Functions
@@ -264,7 +264,7 @@ The following theorems show that continuous functions are closed under the stand
 
 > [!remark]- Connections
 > - MATH 451 version: [[§20 Limits of Functions#^def-20-1|Limit of a Function Along a Set]] and its [[§20 Limits of Functions#^rem-20-1|epsilon-delta version]].
-> - Computational version: [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]] (with worked examples).
+> - Computational version: [[§107 Limits and Continuity#^def-107-1|Calc Def. §107.1]] (with worked examples).
 > - Computational version: [[§15 Limits#^def-15-1|342 Def. §15.1]] (limits of complex functions: the same ε–δ definition with ℝ² read as ℂ, with worked examples).
 
 > [!example] Example §3.2: Nonexistence of Limit
@@ -278,19 +278,19 @@ The following theorems show that continuous functions are closed under the stand
 *Level structure of $f(x,y) = \frac{2xy}{x^2+y^2}$: on each line $y = kx$ through the origin (hollow: $f$ is not defined there) $f$ is constant, equal to $\frac{2k}{1+k^2}$ — $1$ on $y = x$ (dark red), $-1$ on $y = -x$ (dark blue), $\pm\frac45$ on $y = 2x,\ \tfrac12 x$ and $y = -2x,\ -\tfrac12 x$, and $0$ on both axes. Every disc around the origin (dashed) meets all of these lines, so $f$ takes every value in $[-1,1]$ arbitrarily close to $(0,0)$ and no single limit $A$ can work.*
 
 > [!remark]- Connections
-> - Worked examples: the two-path test, [[§91 Limits and Continuity#^thm-91-1|Calc Thm. §91.1]], applied to xy/(x² + y²) in [[§91 Limits and Continuity#^ex-91-1|Calc Ex. §91.1]].
+> - Worked examples: the two-path test, [[§107 Limits and Continuity#^thm-107-1|Calc Thm. §107.1]], applied to xy/(x² + y²) in [[§107 Limits and Continuity#^ex-107-1|Calc Ex. §107.1]].
 
-> [!definition] Definition §3.3: Big-O Notation
+> [!definition] Definition §3.4: Big-O Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.
 > - $f(x, y) = O(\rho)$ means $|f(x, y)| \leq C\rho$ for some constant $C$ near the origin.
 
 ^def-3-3
 
-> [!definition] Definition §3.3: Little-o Notation
+> [!definition] Definition §3.4: Little-o Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.
 > - $f(x, y) = o(\rho)$ means $\displaystyle\lim_{\rho \to 0} \frac{f(x, y)}{\rho} = 0$ (i.e., $f$ vanishes faster than $\rho$).
 
-^def-3-new1
+^def-3-4
 
 > [!example] Example §3.3
 > $f(x, y) = x^2 + y^2 = o(\rho)$, since $\dfrac{x^2 + y^2}{\sqrt{x^2 + y^2}} = \sqrt{x^2 + y^2} \to 0$.

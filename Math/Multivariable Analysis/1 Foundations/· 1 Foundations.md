@@ -15,7 +15,7 @@ tags: [chapter, multivariable-analysis]
 - [[§1 Sequences and Limits in ℝⁿ]]
 - [[§2 Open and Closed Sets]]
 - [[§3 Continuity and Limits of Functions]]
-- [[§3a The Function 2xy∕(x²+y²)]]
+- [[§4 The Function 2xy∕(x²+y²)]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

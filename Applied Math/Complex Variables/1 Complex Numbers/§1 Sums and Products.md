@@ -40,14 +40,14 @@ Brown–Churchill define a complex number as an ordered pair of real numbers, th
 
 ^def-1-2
 
-> [!definition] Definition §1.3: Equality of Complex Numbers
+> [!definition] Definition §1.4: Equality of Complex Numbers
 > Two complex numbers are **equal**, $z_1 = z_2$, when they have the same real parts and the same imaginary parts, that is, when they are the same point of the plane.
 >
 > *B&C: Sec. 1 (text)*
 
-^def-1-new1
+^def-1-3
 
-> [!definition] Definition §1.3: Sum and Product
+> [!definition] Definition §1.4: Sum and Product
 > The **sum** and **product** of $z_1 = (x_1, y_1)$ and $z_2 = (x_2, y_2)$ are
 >
 > $$
@@ -60,7 +60,7 @@ Brown–Churchill define a complex number as an ordered pair of real numbers, th
 >
 > *B&C: Sec. 1, Equations (3) and (4)*
 
-^def-1-3
+^def-1-4
 
 The sum is the familiar addition of vectors in $\mathbb{R}^2$. The product is new: it is not a dot product (which gives a real number) or a cross product (which leaves the plane), but a way of multiplying two points of the plane to obtain a third. Its geometric meaning, rotation and scaling, appears in [[§8 Products and Powers in Exponential Form|§8]].
 
@@ -82,7 +82,7 @@ The sum is the familiar addition of vectors in $\mathbb{R}^2$. The product is ne
 
 ^pf-1-1
 
-*Uses:* [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 ## The Form x + iy
 
@@ -130,11 +130,11 @@ The sum is the familiar addition of vectors in $\mathbb{R}^2$. The product is ne
 
 ^pf-1-2
 
-*Uses:* [[§1 Sums and Products#^def-1-1|Def. §1.1]], [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§1 Sums and Products#^def-1-1|Def. §1.1]], [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 > [!remark]- Connections
 > - Linear Algebra defines $\mathbb{C}$ the same way, as ordered pairs written $a + bi$ with the operations (3)–(4): [[§1 Rⁿ and Cⁿ#^ladr-1-1|LADR 1.1]], with its arithmetic in [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]].
-> - The vault's earlier, computational treatment, where $a + bi$ is introduced with $i^2 = -1$ as a rule: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]]. This subject is the fuller home.
+> - The vault's earlier, computational treatment, where $a + bi$ is introduced with $i^2 = -1$ as a rule: [[§64 Complex Numbers#^def-64-1|235 Def. §64.1]]. This subject is the fuller home.
 
 > [!remark] Remark: Computing With i
 > The right sides of (7) and (8) are exactly what one gets by manipulating the left sides as if all the symbols were real numbers and replacing $i^2$ by $-1$ whenever it occurs. That this is always legitimate rests on the commutative, associative and distributive laws of [[§2 Basic Algebraic Properties#^thm-2-1|Theorem §2.1]]; from then on, complex arithmetic is done this way. Equation (8) also shows that **any complex number times zero is zero**:

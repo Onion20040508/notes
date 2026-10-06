@@ -7,7 +7,7 @@ eccles: "Ch. 14"
 aliases: ["Eccles 14"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§13 Number Systems]] · ↑ [[· 3 Numbers and Counting]] · [[§15 The Division Theorem]] →
+← [[§13 Number Systems]] · ↑ [[· 3 Numbers and Counting]] · [[§14a Uncountable Sets]] →
 
 *Eccles, Chapter 14 and Problems III (Q12, Q26–Q28) · MAT 250 HW5 (Exercises 14.1–14.4) · MAT 200 lecture (syllabus week 15).*
 
@@ -24,7 +24,7 @@ For finite sets, "same number of elements" means "there is a bijection" ([[§10 
 
 So $X$ is finite of cardinality $n \in \Z^+$ if and only if $X$ is equipotent to $\N_n$.
 
-> [!definition] Definition §14.2: Denumerable Set
+> [!definition] Definition §14.3: Denumerable Set
 > A set $X$ is **denumerable** (or enumerable) if there is a bijection $\Z^+ \to X$, i.e. $X$ is equipotent to $\Z^+$. Such an $X$ has **cardinality $\aleph_0$** ("aleph null"), written $|X| = \aleph_0$.
 >
 > *Eccles: Definition 14.1.2*
@@ -33,12 +33,12 @@ So $X$ is finite of cardinality $n \in \Z^+$ if and only if $X$ is equipotent to
 
 A bijection $f : \Z^+ \to X$ lists the elements of a denumerable set in an infinite list, $X = \{x_1, x_2, \ldots, x_n, \ldots\}$ with $x_n = f(n)$, each element occurring exactly once.
 
-> [!definition] Definition §14.2: Countable and Uncountable Sets
+> [!definition] Definition §14a.1: Countable and Uncountable Sets
 > A set is **countable** if it is finite or denumerable, and **uncountable** if it is not countable.
 >
 > *Eccles: Definition 14.1.2*
 
-^def-14-new1
+^def-14-3
 
 > [!remark] Remark: Terminology Elsewhere
 > Conventions differ. In 451, "countable" means *denumerable* ([[§2 The Set ℚ of Rational Numbers#^def-2-8|451 Def. §2.8]], for infinite sets only), and $\N$ there is $\{1, 2, 3, \ldots\}$, our $\Z^+$. In 551, "countable" means finite or countably infinite, as here ([[§1 Countability and Set Theory#^def-1-8|551 Def. §1.8]]), and "equivalent" means equipotent ([[§1 Countability and Set Theory#^def-1-7|551 Def. §1.7]]).
@@ -173,7 +173,7 @@ The conclusion is an "or" statement, so (as in [[§4 Proof by Contradiction#^ex-
 
 ^pf-14-5
 
-*Uses:* [[§5 The Induction Principle#^cor-5-7|§5.7]] (well-ordering), [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^def-9-new3|Def. §9.4]] (pre-images)
+*Uses:* [[§5 The Induction Principle#^cor-5-7|§5.7]] (well-ordering), [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]] (pre-images)
 
 > [!theorem] Corollary §14.6: Countable Means Injecting into the Positive Integers
 > A set $X$ is countable if and only if there is an injection $X \to \Z^+$.
@@ -348,7 +348,7 @@ Eccles sends $q$ to its fraction in lowest terms. That this fraction is unique i
 
 ^pf-14-10
 
-*Uses:* [[§14 Counting Infinite Sets#^ex-14-1|Ex. §14.1]], [[§14 Counting Infinite Sets#^prop-14-8|§14.8]], [[§14 Counting Infinite Sets#^prop-14-5|§14.5]], [[§14 Counting Infinite Sets#^prop-14-4|§14.4]], [[§14 Counting Infinite Sets#^prop-14-1|§14.1]], [[§13 Number Systems#^def-13-1|Def. §13.1]], [[§13 Number Systems#^def-13-new1|Def. §13.1]]
+*Uses:* [[§14 Counting Infinite Sets#^ex-14-1|Ex. §14.1]], [[§14 Counting Infinite Sets#^prop-14-8|§14.8]], [[§14 Counting Infinite Sets#^prop-14-5|§14.5]], [[§14 Counting Infinite Sets#^prop-14-4|§14.4]], [[§14 Counting Infinite Sets#^prop-14-1|§14.1]], [[§13 Number Systems#^def-13-1|Def. §13.1]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
 
 > [!remark]- Connections
 > - In 451 and 551: [[§2 The Set ℚ of Rational Numbers#^thm-2-5|451 Thm. §2.5]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 Cor. §3.2]] (there via countable unions).

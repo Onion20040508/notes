@@ -42,7 +42,7 @@ tags: [group-theory, math493]
 *Uses:* [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^prop-4-6|§4.6]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
 
 > [!remark]- Connections
-> - Generalized from ℤ to every cyclic group: [[§17 Cyclic Groups#^thm-17-4|Subgroups of Cyclic Groups Are Cyclic]]; the same division-algorithm argument is sketched in MATH 590, [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|590 Proposition §21.1]] (2).
+> - Generalized from ℤ to every cyclic group: [[§17 Cyclic Groups#^thm-17-4|Subgroups of Cyclic Groups Are Cyclic]]; the same division-algorithm argument is sketched in MATH 590, [[§26 Algebra Prerequisites꞉ Groups#^prop-26-1|590 Proposition §26.1]] (2).
 > - The well-ordering step: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (proved there from induction).
 
 > [!theorem] Corollary §5.2: Generated Subgroups of $\mathbb{Z}$, and Bézout
@@ -168,9 +168,9 @@ tags: [group-theory, math493]
 ^ex-5-4
 
 > [!remark]- Connections
-> - The determinant facts used for $SL_n$ and $GL_n(\mathbb{Z})$: [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]], [[§34 Determinants#^ladr-9-50|Invertible ⟺ nonzero determinant]]; a one-sided inverse of a square matrix is two-sided (used for $O(n)$): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]].
+> - The determinant facts used for $SL_n$ and $GL_n(\mathbb{Z})$: [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]], [[§37 Determinants#^ladr-9-50|Invertible ⟺ nonzero determinant]]; a one-sided inverse of a square matrix is two-sided (used for $O(n)$): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]].
 > - Permutation matrices made precise: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]; which of these subgroups are normal: [[§39 Sources of Normal Subgroups#^prop-39-8|Normal Subgroups of GL₂(ℝ)]].
-> - Computational version of the matrix facts used: “inverses by Cramer's rule” is the inverse formula $A^{-1} = (\det A)^{-1} \operatorname{adj} A$, [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-2|235 Thm. §22.2]] (derived from [[Cramer's Rule]]); the block copies use block multiplication and block-diagonal inverses, [[§14 Partitioned Matrices#^prop-14-2|235 Prop. §14.2]] and [[§14 Partitioned Matrices#^prop-14-5|235 Prop. §14.5]].
+> - Computational version of the matrix facts used: “inverses by Cramer's rule” is the inverse formula $A^{-1} = (\det A)^{-1} \operatorname{adj} A$, [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]] (derived from [[Cramer's Rule]]); the block copies use block multiplication and block-diagonal inverses, [[§17 Partitioned Matrices#^prop-17-2|235 Prop. §17.2]] and [[§17 Partitioned Matrices#^prop-17-5|235 Prop. §17.5]].
 
 > [!remark] Remark: Summary of WS 1.7
 > The six groups display the full spectrum: $\mathbb{Z}$ and $S_3$ admit complete, short classifications; $\mathbb{Z}^2$ is classifiable but needs more theory ([[§5 A Zoo of Subgroups#^rem-5-2|rank]]); $\mathbb{R}$ obeys a clean dichotomy but contains wild dense subgroups; and $GL_n(\mathbb{R})$ is inexhaustible — it contains copies of essentially every group we will meet ($C_n$, $S_n$, $(\mathbb{R}, +)$, $\mathbb{R}^\times$, circle rotations, lattice groups). This last fact is the seed of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|representation theory]].

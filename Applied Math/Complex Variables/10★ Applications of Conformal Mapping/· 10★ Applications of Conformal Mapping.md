@@ -28,5 +28,5 @@ tags: [chapter, complex-variables]
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|Theorem §124.4: Existence of a Velocity Potential]]: 4 later results
 - [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2: Heat Flows Along the Lines of Flow]]: 2 later results
-- [[§125★ The Stream Function#^prop-125-2|Proposition §125.2: The Stream Function Measures the Flow Across a Curve]]: 2 later results
+- [[§125★ The Stream Function#^prop-125-1|Proposition §125.1: The Stream Function Measures the Flow Across a Curve]]: 2 later results
 - [[§118★ Steady Temperatures#^prop-118-1|Proposition §118.1: Steady Temperatures Are Harmonic]]: 1 later result

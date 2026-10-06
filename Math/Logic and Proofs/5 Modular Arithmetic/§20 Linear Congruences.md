@@ -92,9 +92,9 @@ Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congru
 
 The condition is also sufficient. The key case is $a$ coprime to $m$, where it holds automatically.
 
-Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
+Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
 
-> [!theorem] Proposition §20.5: Congruences and Diophantine Equations
+> [!theorem] Proposition §20.4: Congruences and Diophantine Equations
 > For integers $a, b$ and a positive integer $m$, the map
 >
 > $$
@@ -105,7 +105,7 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|T
 >
 > *Eccles: Proposition 20.2.1*
 
-^prop-20-5
+^prop-20-3
 
 > [!proof]+ Proof
 > *$f$ maps into the codomain:* if $ax + my = b$, then $ax - b = m(-y)$, so $ax \equiv b \pmod m$.
@@ -114,19 +114,19 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|T
 >
 > *They are inverse:* $f(g(x_0)) = x_0$ is clear. Conversely, if $ax + my = b$, then $my = b - ax$ and, as $m \neq 0$, $y = (b - ax)/m$; so $g(f(x, y)) = (x, y)$. Thus every solution $x_0$ of the congruence has exactly one preimage, $\bigl(x_0, (b - ax_0)/m\bigr)$, and $f$ is a bijection.
 
-^pf-20-5
+^pf-20-3
 
 *Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (a map with a two-sided inverse is a bijection)
 
-> [!theorem] Theorem §20.3: Coprime Coefficient
+> [!theorem] Theorem §20.5: Coprime Coefficient
 > Suppose that $a$ and $b$ are integers with $a$ and $m$ coprime. Then the linear congruence $ax \equiv b \pmod m$ has a solution, and the solution is unique modulo $m$: if $x_0$ is one solution, an integer $x$ is a solution if and only if $x \equiv x_0 \pmod m$.
 >
 > *Eccles: Theorem 20.1.5*
 
-^thm-20-3
+^thm-20-4
 
 > [!proof]+ Proof
-> Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
+> Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-3|§20.3]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
 >
 > *Uniqueness modulo $m$.* For any integer $x$,
 >
@@ -136,14 +136,14 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|T
 >
 > the first step because $b \equiv a x_0$, the second by Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]] since $\gcd(a, m) = 1$.
 
-^pf-20-3
+^pf-20-4
 
-*Uses:* [[§20 Linear Congruences#^prop-20-5|§20.5]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]]
+*Uses:* [[§20 Linear Congruences#^prop-20-3|§20.3]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]]
 
 ([[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] gives a second, non-constructive proof by counting.)
 
 > [!example] Example §20.3: Unique and Non-Unique Solutions
-> (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] predicts since $\gcd(2, 7) = 1$.
+> (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]] predicts since $\gcd(2, 7) = 1$.
 >
 > (b) *Solve $3x \equiv 8 \pmod{11}$.* Since $\gcd(3, 11) = 1$ there is exactly one solution modulo $11$, and we may find it by trying each $x \in R_{11}$:
 >
@@ -159,14 +159,14 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|T
 
 ^ex-20-3
 
-Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Proposition [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§20 Linear Congruences#^cor-20-2|Corollary §20.2]] gives the complete answer. To see where the count comes from, look again at $6x \equiv 15 \pmod{21}$: it reduced to the unique solution $x \equiv 6 \pmod 7$, and the remainders modulo $21$ congruent to $6$ modulo $7$ are $6 + 7q$ for $q = 0, 1, 2$, three of them, and $3 = \gcd(6, 21)$.
+Putting together [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]], Proposition [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§20 Linear Congruences#^cor-20-2|Corollary §20.2]] gives the complete answer. To see where the count comes from, look again at $6x \equiv 15 \pmod{21}$: it reduced to the unique solution $x \equiv 6 \pmod 7$, and the remainders modulo $21$ congruent to $6$ modulo $7$ are $6 + 7q$ for $q = 0, 1, 2$, three of them, and $3 = \gcd(6, 21)$.
 
-> [!theorem] Theorem §20.4: Solvability and Number of Solutions
+> [!theorem] Theorem §20.3: Solvability and Number of Solutions
 > The linear congruence $ax \equiv b \pmod m$ has a solution if and only if $\gcd(a, m)$ divides $b$. In this case the number of solutions modulo $m$ is $\gcd(a, m)$.
 >
 > *Eccles: Theorem 20.1.7*
 
-^thm-20-4
+^thm-20-5
 
 > [!proof]+ Proof
 > Write $d = \gcd(a, m)$ and $m_1 = m/d$, a positive integer.
@@ -179,7 +179,7 @@ Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Propositi
 > ax \equiv b \pmod m \iff \frac{a}{d}\, x \equiv \frac{b}{d} \pmod{m_1} .
 > $$
 >
-> The integers $a/d$ and $m_1$ are coprime (by Bézout, [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]], $d = ar + ms$, so $1 = (a/d) r + m_1 s$; cf. [[§11 Properties of Finite Sets#^prop-11-10|Proposition §11.10]]). By Theorem [[§20 Linear Congruences#^thm-20-3|§20.3]] the right-hand congruence has a solution, unique modulo $m_1$. So solutions exist.
+> The integers $a/d$ and $m_1$ are coprime (by Bézout, [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]], $d = ar + ms$, so $1 = (a/d) r + m_1 s$; cf. [[§11 Properties of Finite Sets#^prop-11-10|Proposition §11.10]]). By Theorem [[§20 Linear Congruences#^thm-20-4|§20.4]] the right-hand congruence has a solution, unique modulo $m_1$. So solutions exist.
 >
 > *Counting.* Let $r_1 \in R_{m_1}$ represent the unique solution modulo $m_1$, so that an integer $x$ is a solution if and only if $x \equiv r_1 \pmod{m_1}$. Every integer $x$ is congruent modulo $m$ to exactly one $r \in R_m$ (Proposition [[§19 Congruence of Integers#^prop-19-4|§19.4]]), and since $m_1 \mid m$, $\ x \equiv r \pmod m$ implies $x \equiv r \pmod{m_1}$; so $x$ is a solution iff $r$ is, i.e. iff $r \equiv r_1 \pmod{m_1}$, i.e. iff $r = r_1 + m_1 q$ for some $q \in \mathbb{Z}$. For such $r$, using $0 \leq r_1 < m_1$ and $m = m_1 d$,
 >
@@ -189,12 +189,12 @@ Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Propositi
 >
 > (If $q \geq 0$ then $r \geq 0$; if $q \leq -1$ then $r \leq r_1 - m_1 < 0$. If $q \leq d - 1$ then $r \leq r_1 + m - m_1 < m$; if $q \geq d$ then $r \geq m$.) So the solutions in $R_m$ are the $d$ distinct numbers $r_1, r_1 + m_1, \ldots, r_1 + (d-1) m_1$, and $x$ is a solution iff $x \equiv r_1 + m_1 q \pmod m$ for some $0 \leq q < d$.
 
-^pf-20-4
+^pf-20-5
 
-*Uses:* [[§20 Linear Congruences#^cor-20-2|§20.2]], [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§19 Congruence of Integers#^prop-19-4|§19.4]], [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
+*Uses:* [[§20 Linear Congruences#^cor-20-2|§20.2]], [[§20 Linear Congruences#^thm-20-4|§20.4]], [[§19 Congruence of Integers#^prop-19-4|§19.4]], [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
 > [!remark] Remark: The Degenerate Case $a = 0$
-> At first sight [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]] says nothing sensible when $a = 0$; checking it there is a good test. Then $\gcd(0, m) = m$, so it says: $0 \cdot x \equiv b \pmod m$ is solvable iff $m \mid b$, and then there are $m$ solutions modulo $m$. Indeed the congruence reads $0 \equiv b \pmod m$, which does not involve $x$: it holds for every $x$ when $m \mid b$ (all $m$ remainders are solutions) and for no $x$ otherwise. A general result that fails in such a simple case would signal something missed.
+> At first sight [[§20 Linear Congruences#^thm-20-5|Theorem §20.5]] says nothing sensible when $a = 0$; checking it there is a good test. Then $\gcd(0, m) = m$, so it says: $0 \cdot x \equiv b \pmod m$ is solvable iff $m \mid b$, and then there are $m$ solutions modulo $m$. Indeed the congruence reads $0 \equiv b \pmod m$, which does not involve $x$: it holds for every $x$ when $m \mid b$ (all $m$ remainders are solutions) and for no $x$ otherwise. A general result that fails in such a simple case would signal something missed.
 >
 > *Source: Eccles Exercise 20.3 and its solution*
 
@@ -205,7 +205,7 @@ Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Propositi
 
 ## 20.2 Linear Congruences and Diophantine Equations
 
-The proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
+The proof of [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]] is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
 
 > [!example] Example §20.4: The Euclidean Algorithm Method
 > *Solve $290x \equiv 5 \pmod{357}$.* Solve $290x + 357y = 5$. The Euclidean algorithm writes each remainder as an integral combination of $357$ and $290$ (in brackets, minus the quotients, as Eccles writes them: each row is the row two above plus the row above times that row's bracket):
@@ -232,7 +232,7 @@ The proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] is constructiv
 ^ex-20-4
 
 > [!example] Example §20.5: A Coefficient Not Coprime to the Modulus
-> *Solve $255x \equiv 15 \pmod{621}$.* The Euclidean algorithm on $621, 255$ gives remainders $621, 255, 111, 33, 12, 9, 3, 0$ (quotients $2, 2, 3, 2, 1, 3$), so $\gcd(255, 621) = 3$, which divides $15$: by Theorem [[§20 Linear Congruences#^thm-20-4|§20.4]] there are $3$ solutions modulo $621$. Writing each remainder as a multiple of $255$ modulo $621$:
+> *Solve $255x \equiv 15 \pmod{621}$.* The Euclidean algorithm on $621, 255$ gives remainders $621, 255, 111, 33, 12, 9, 3, 0$ (quotients $2, 2, 3, 2, 1, 3$), so $\gcd(255, 621) = 3$, which divides $15$: by Theorem [[§20 Linear Congruences#^thm-20-5|§20.5]] there are $3$ solutions modulo $621$. Writing each remainder as a multiple of $255$ modulo $621$:
 >
 > $$
 > 111 \equiv 255 \times (-2), \quad 33 \equiv 255 \times 5, \quad 12 \equiv 255 \times (-17), \quad 9 \equiv 255 \times 39, \quad 3 \equiv 255 \times (-56) .
@@ -257,7 +257,7 @@ The proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] is constructiv
 The correspondence also runs the other way: congruence techniques solve diophantine equations.
 
 > [!example] Example §20.6: A Diophantine Equation via Congruences
-> *Solve $140x + 63y = 35$.* By Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $(x, y) \mapsto x$ is a bijection from its solution set onto that of $140x \equiv 35 \pmod{63}$, and
+> *Solve $140x + 63y = 35$.* By Proposition [[§20 Linear Congruences#^prop-20-3|§20.3]], $(x, y) \mapsto x$ is a bijection from its solution set onto that of $140x \equiv 35 \pmod{63}$, and
 >
 > $$
 > \begin{aligned}

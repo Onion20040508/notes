@@ -51,11 +51,11 @@ The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for es
 
 ^pf-5-1
 
-*Uses:* [[§4 Vectors and Moduli#^def-4-1|Def. §4.1]], [[§1 Sums and Products#^def-1-3|Def. §1.3]]
+*Uses:* [[§4 Vectors and Moduli#^def-4-1|Def. §4.1]], [[§1 Sums and Products#^def-1-4|Def. §1.4]]
 
 > [!remark]- Connections
-> - The same inequality, proved with conjugates: [[§13 Polynomials#^ladr-4-4|LADR 4.4]]; for norms in any inner product space it follows from Cauchy–Schwarz, [[Triangle inequality]]. The inequality $x_1x_2 + y_1y_2 \le |z_1||z_2|$ in the proof is Cauchy–Schwarz for the dot product in $\mathbb{R}^2$, [[Cauchy–Schwarz inequality]]. The real case $|a + b| \le |a| + |b|$: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]].
-> - Stated without proof in [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (property 6).
+> - The same inequality, proved with conjugates: [[§13 Polynomials#^ladr-4-4|LADR 4.4]]; for norms in any inner product space it follows from Cauchy–Schwarz, [[Triangle inequality]]. The inequality $x_1x_2 + y_1y_2 \le |z_1||z_2|$ in the proof is Cauchy–Schwarz for the dot product in $\mathbb{R}^2$, [[Cauchy–Schwarz inequality]]. The real case $|a + b| \le |a| + |b|$: [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-6|Calc Thm. §139.6]].
+> - Stated without proof in [[§64 Complex Numbers#^thm-64-3|235 Thm. §64.3]] (property 6).
 
 > [!remark] Remark: When Equality Holds
 > The proof shows exactly when (1) is an equality: when $x_1x_2 + y_1y_2 = |z_1||z_2|$, that is, when $x_1y_2 - x_2y_1 = 0$ and $x_1x_2 + y_1y_2 \ge 0$. If $z_2 \ne 0$, the first condition says that the vectors $(x_1, y_1)$ and $(x_2, y_2)$ are parallel, $z_1 = tz_2$ with $t$ real, and then the second says $t|z_2|^2 \ge 0$, so $t \ge 0$. Thus $|z_1 + z_2| = |z_1| + |z_2|$ **if and only if one of the numbers is a nonnegative real multiple of the other**: $0$, $z_1$, $z_2$ lie on one ray from the origin.

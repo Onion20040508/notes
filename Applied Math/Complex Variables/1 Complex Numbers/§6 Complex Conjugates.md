@@ -64,10 +64,10 @@ The conjugate $\bar z = x - iy$ is the mirror image of $z$ in the real axis. Con
 
 ^pf-6-1
 
-*Uses:* [[§6 Complex Conjugates#^def-6-1|Def. §6.1]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§3 Further Algebraic Properties#^def-3-1|Def. §3.1]], [[§3 Further Algebraic Properties#^def-3-new1|Def. §3.2]]
+*Uses:* [[§6 Complex Conjugates#^def-6-1|Def. §6.1]], [[§1 Sums and Products#^prop-1-2|§1.2]], [[§3 Further Algebraic Properties#^def-3-1|Def. §3.1]], [[§3 Further Algebraic Properties#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
-> - Linear Algebra's conjugate and its properties: [[§13 Polynomials#^ladr-4-2|LADR 4.2]], [[§13 Polynomials#^ladr-4-4|LADR 4.4]]. Computational version: [[§53 Complex Numbers#^def-53-3|235 Def. §53.3]], [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]].
+> - Linear Algebra's conjugate and its properties: [[§13 Polynomials#^ladr-4-2|LADR 4.2]], [[§13 Polynomials#^ladr-4-4|LADR 4.4]]. Computational version: [[§64 Complex Numbers#^def-64-3|235 Def. §64.3]], [[§64 Complex Numbers#^thm-64-3|235 Thm. §64.3]].
 
 > [!theorem] Proposition §6.2: Real and Imaginary Parts Through Conjugates
 > For $z = x + iy$, $z + \bar z = 2x$ and $z - \bar z = 2iy$. Hence

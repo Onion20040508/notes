@@ -122,16 +122,16 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - Problem sets: [[493 Problem Set 1|PS 1]], [[493 Problem Set 2|PS 2]], [[493 Problem Set 3|PS 3]], [[493 Problem Set 4|PS 4]], [[493 Problem Set 5|PS 5]].
 
 ## Prerequisites from other subjects
-The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§21 Algebra Prerequisites꞉ Groups|Topology §21]] is developed here in full.
+The results from other subjects that this course's proofs and definitions cite most, with the number of citing items. Each chapter note gives per-chapter counts; each hub note lists its own cross-subject dependencies. The group theory summarized in [[§26 Algebra Prerequisites꞉ Groups|Topology §26]] is developed here in full.
 
 **[[Linear Algebra]]**
-- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (4)
-- [[§34 Determinants#^ladr-9-50|Theorem 9.50: Invertible ⟺ nonzero determinant]] (3)
+- [[§37 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (4)
+- [[§37 Determinants#^ladr-9-50|Theorem 9.50: Invertible ⟺ nonzero determinant]] (3)
 - [[§7 Vector Space of Linear Maps#^ladr-3-4|Lemma 3.4: Linear map lemma]] (3)
-- [[§34 Determinants#^ladr-9-57|Theorem 9.57: Helpful results in evaluating determinants]] (3)
+- [[§37 Determinants#^ladr-9-57|Theorem 9.57: Helpful results in evaluating determinants]] (3)
 - [[§9 Matrices#^ladr-3-43|Theorem 3.43: Matrix of product of linear maps]] (2)
 - [[§9 Matrices#^ladr-3-31|Definition 3.31: Matrix of a linear map, M(T)]] (2)
-- [[§34 Determinants#^ladr-9-44|Example 9.44: Determinants of matrices (p. 355)]] (2)
+- [[§37 Determinants#^ladr-9-44|Example 9.44: Determinants of matrices (p. 355)]] (2)
 - [[§4 Span and Linear Independence#^ladr-2-15|Definition 2.15: Linearly independent]] (1)
 
 **[[Single Variable Analysis]]**
@@ -144,7 +144,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§1 The Set ℕ of Natural Numbers#^rem-1-3|Remark (strong induction)]] (1)
 
 **[[Topology]]**
-- [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|Proposition §21.4: Bijectivity via Two-Sided Inverse]] (2)
+- [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Proposition §26.4: Bijectivity via Two-Sided Inverse]] (2)
 
 ## Workhorse examples
 - [[Matrix groups GLₙ, SLₙ and O(n)]]: $GL_n(k)$ and its subgroups $SL_n$, $O(n)$, $SO(n)$; the determinant as homomorphism and character

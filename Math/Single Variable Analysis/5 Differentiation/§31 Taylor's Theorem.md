@@ -37,7 +37,7 @@ So a convergent power series is forced to be $\sum \tfrac{f^{(n)}(0)}{n!} x^n$. 
 ^def-31-1
 
 > [!remark]- Connections
-> - Computational version: [[§78 Taylor and Maclaurin Series#^def-78-1|Calc Def. §78.1]] (with worked examples).
+> - Computational version: [[§90 Taylor and Maclaurin Series#^def-90-1|Calc Def. §90.1]] (with worked examples).
 > - Computational version: [[§62 Taylor Series#^def-62-1|342 Def. §62.1]] (Taylor and Maclaurin series of complex functions, with worked examples).
 
 **Question: is $f(x) = \sum_n \tfrac{f^{(n)}(0)}{n!}x^n$ for every $f$ with all derivatives?** No — two distinct problems:
@@ -65,7 +65,7 @@ $$
 ^pf-31-1
 
 > [!remark]- Connections
-> - Computational version: [[§78 Taylor and Maclaurin Series#^thm-78-3|Calc Thm. §78.3]] (with worked examples).
+> - Computational version: [[§90 Taylor and Maclaurin Series#^thm-90-3|Calc Thm. §90.3]] (with worked examples).
 
 The problem is now to *estimate* $R_n(x)$. Taylor proved the basic theorem — which is why the series bears his name:
 
@@ -122,7 +122,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 *Uses:* [[§29 The Mean Value Theorem#^thm-29-2|§29.2]]
 
 > [!remark]- Connections
-> - Used in PDEs: the $O((\Delta x)^2)$ errors of the central difference quotients, [[§55★ Boundary Value Problems#^prop-55-1|341 Prop. §55.1]].
+> - Used in PDEs: the $O((\Delta x)^2)$ errors of the central difference quotients, [[§68★ Boundary Value Problems#^prop-68-1|341 Prop. §68.1]].
 > - Complex counterpart: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function equals its Taylor series on every disk of analyticity, with no remainder estimate needed).
 
 > [!remark] Remark
@@ -131,9 +131,9 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 ^rem-31-1
 
 > [!remark]- Connections
-> - Two-variable version, proved by applying this theorem along a segment: [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-2|452 Thm. §9.2]].
-> - Computational version: Taylor's Inequality, [[§78 Taylor and Maclaurin Series#^thm-78-4|Calc Thm. §78.4]] (with worked examples).
-> - Used in ODEs: the remainder bound $|e^x - 1 - x| \le \tfrac12 x^2e^{|x|}$ justifies differentiating a Laplace transform under the integral sign, [[§22 Solution of Initial Value Problems#^thm-22-6|331 Thm. §22.6]] (table entry 19).
+> - Two-variable version, proved by applying this theorem along a segment: [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-2|452 Thm. §11.2]].
+> - Computational version: Taylor's Inequality, [[§90 Taylor and Maclaurin Series#^thm-90-4|Calc Thm. §90.4]] (with worked examples).
+> - Used in ODEs: the remainder bound $|e^x - 1 - x| \le \tfrac12 x^2e^{|x|}$ justifies differentiating a Laplace transform under the integral sign, [[§27 Solution of Initial Value Problems#^thm-27-6|331 Thm. §27.6]] (table entry 19).
 
 ## Two Instructive Examples
 
@@ -155,7 +155,7 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 ^ex-31-1
 
 > [!remark]- Connections
-> - Computational version: [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]; the same estimate for $e^x$, [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]].
+> - Computational version: [[§91 Taylor Series of Important Functions#^thm-91-2|Calc Thm. §91.2]]; the same estimate for $e^x$, [[§90 Taylor and Maclaurin Series#^thm-90-6|Calc Thm. §90.6]].
 
 > [!example] Example §31.2: The Logarithm
 > Show that for $x \in [0,1]$, the Taylor series of $f(x) = \log(1+x)$ converges to $\log(1+x)$.
@@ -223,5 +223,5 @@ This is quite important and useful: to prove convergence of the Taylor series, w
 *The two extremes of §31. Left: the partial sums $s_2, s_4, s_8$ (light blue, blue, red) hug $\cos x$ (black) order by order — the remainder dies everywhere. Right: $e^{-1/x^2}$ and its Taylor series (dashed, identically $0$) are visually indistinguishable near the origin — infinitely flat — yet equal only at the single point $x = 0$.*
 
 > [!remark]- Connections
-> - Computational version: Stewart's remark on $e^{-1/x^2}$, [[§78 Taylor and Maclaurin Series#^rem-78-1|Calc Remark §78.1]].
+> - Computational version: Stewart's remark on $e^{-1/x^2}$, [[§90 Taylor and Maclaurin Series#^rem-90-1|Calc Remark §78.1]].
 > - Impossible for analytic functions: [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (an analytic function is the sum of its Taylor series) and [[§82 Zeros of Analytic Functions#^thm-82-2|342 Thm. §82.2]] (a zero of infinite order forces f ≡ 0 near the point).

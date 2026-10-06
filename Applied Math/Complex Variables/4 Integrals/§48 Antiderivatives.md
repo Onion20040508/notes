@@ -64,7 +64,7 @@ $$
 The theorem does *not* claim that any of these statements is true for a given function $f$. It says only that all of them are true or none of them is. Its two main uses are: when an antiderivative is known on a domain containing $C$, (b) evaluates the integral from the endpoints alone, and (c) gives $0$ around closed contours; and when an integral around some closed contour in $D$ is not zero, no antiderivative exists in $D$ (see the remark after the proof in [[§49 Proof of the Theorem (Antiderivatives)#^rem-49-2|§49]]).
 
 > [!remark]- Connections
-> - The real counterpart is the fundamental theorem for line integrals, [[§109 The Fundamental Theorem for Line Integrals#^thm-109-1|Calc Thm. §109.1]]: $\int_C \nabla\phi\cdot d\mathbf{r} = \phi(B) - \phi(A)$. An antiderivative $F$ plays the role of the potential $\phi$, for both real line integrals into which $\int_C f\,dz$ splits.
+> - The real counterpart is the fundamental theorem for line integrals, [[§128 The Fundamental Theorem for Line Integrals#^thm-128-1|Calc Thm. §128.1]]: $\int_C \nabla\phi\cdot d\mathbf{r} = \phi(B) - \phi(A)$. An antiderivative $F$ plays the role of the potential $\phi$, for both real line integrals into which $\int_C f\,dz$ splits.
 
 ## Examples
 
@@ -88,7 +88,7 @@ The theorem does *not* claim that any of these statements is true for a given fu
 >
 > when $C$ is the positively oriented unit circle $z = e^{i\theta}$ $(-\pi \le \theta \le \pi)$ about the origin, and indeed around every closed contour not passing through $0$.
 >
-> The integral of $f(z) = 1/z$ around the same circle *cannot* be evaluated in this way. The derivative of any branch $F(z)$ of $\log z$ is $1/z$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), but $F(z)$ is not differentiable, or even defined, along its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]). If a ray $\theta = \alpha$ from the origin is used to form the branch cut, $F'(z)$ fails to exist at the point where that ray meets the circle $C$. So $C$ does not lie in any domain throughout which $F'(z) = 1/z$, and one cannot make direct use of an antiderivative. (In fact no domain containing $C$ carries an antiderivative of $1/z$, since $\int_C dz/z = 2\pi i \ne 0$; see [[§49 Proof of the Theorem (Antiderivatives)#^rem-49-2|§49]].)
+> The integral of $f(z) = 1/z$ around the same circle *cannot* be evaluated in this way. The derivative of any branch $F(z)$ of $\log z$ is $1/z$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), but $F(z)$ is not differentiable, or even defined, along its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]). If a ray $\theta = \alpha$ from the origin is used to form the branch cut, $F'(z)$ fails to exist at the point where that ray meets the circle $C$. So $C$ does not lie in any domain throughout which $F'(z) = 1/z$, and one cannot make direct use of an antiderivative. (In fact no domain containing $C$ carries an antiderivative of $1/z$, since $\int_C dz/z = 2\pi i \ne 0$; see [[§49 Proof of the Theorem (Antiderivatives)#^rem-49-2|§49]].)
 >
 > *B&C: Sec. 48, Example 2*
 

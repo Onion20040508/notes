@@ -12,12 +12,12 @@ tags: [chapter, topology]
 **Builds on (other subjects):** [[Linear Algebra]] (1)
 
 ## Sections
-- [[§21 Algebra Prerequisites꞉ Groups]]
-- [[§21a Free Groups and Presentations]]
+- [[§26 Algebra Prerequisites꞉ Groups]]
+- [[§27 Free Groups and Presentations]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|Proposition §21.4: Bijectivity via Two-Sided Inverse]]: 22 later results
-- [[§21 Algebra Prerequisites꞉ Groups#^thm-21-3|Theorem §21.3: Homomorphisms Preserve Identity and Inverses]]: 8 later results
-- [[§21 Algebra Prerequisites꞉ Groups#^prop-21-1|Proposition §21.1: Properties Inherited by Subgroups]]: 5 later results
-- [[§21 Algebra Prerequisites꞉ Groups#^thm-21-5|Theorem §21.5: Inverse of an Isomorphism is a Homomorphism]]: 5 later results
+- [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Proposition §26.4: Bijectivity via Two-Sided Inverse]]: 22 later results
+- [[§26 Algebra Prerequisites꞉ Groups#^thm-26-3|Theorem §26.3: Homomorphisms Preserve Identity and Inverses]]: 8 later results
+- [[§26 Algebra Prerequisites꞉ Groups#^prop-26-1|Proposition §26.1: Properties Inherited by Subgroups]]: 5 later results
+- [[§26 Algebra Prerequisites꞉ Groups#^thm-26-5|Theorem §26.5: Inverse of an Isomorphism is a Homomorphism]]: 5 later results

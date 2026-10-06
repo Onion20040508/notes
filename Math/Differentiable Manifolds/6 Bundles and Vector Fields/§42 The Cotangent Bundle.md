@@ -51,7 +51,7 @@ tags: [differentiable-manifolds, math591]
 ^def-42-3
 
 > [!remark]- Connections
-> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-new1|452 Def. §21.1]].
+> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§36 Introduction to Differential Forms#^def-36-2|452 Def. §36.2]].
 
 The definitions and results of this section run parallel to those for the tangent bundle in [[§41 The Tangent Bundle|§41]], item for item, with the dual bases $dx^i|_p$ in place of the coordinate bases $\partial/\partial x^i|_p$. Lecture 13 gave the charts and the transition maps; the rest is filled in, following [[§41 The Tangent Bundle|§41]].
 
@@ -126,11 +126,11 @@ The definitions and results of this section run parallel to those for the tangen
 
 ^pf-42-2
 
-*Uses:* [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§41 The Tangent Bundle#^cor-41-3|§41.3]], [[Multivariable Chain Rule|452 §10.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]]
+*Uses:* [[§42 The Cotangent Bundle#^def-42-5|Def. §42.5]], [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§30 The Cotangent Space#^lem-30-2|§30.2]], [[§28 The Differential in Coordinates#^cor-28-3|§28.3]], [[§41 The Tangent Bundle#^prop-41-2|§41.2]], [[§41 The Tangent Bundle#^cor-41-3|§41.3]], [[Multivariable Chain Rule|452 §12.2]], [[§12 Duality#^ladr-3-132|LADR 3.132]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]]
 
 > [!remark]- Connections
 > - The matrix of a dual map in dual bases is the transpose: [[§12 Duality#^ladr-3-132|LADR 3.132]].
-> - The rule for $dx^i$ is the substitution step of the pullback in 452, [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]], applied to the transition map.
+> - The rule for $dx^i$ is the substitution step of the pullback in 452, [[§37 The Algebra of Differential Forms#^def-37-3|452 Def. §37.3]], applied to the transition map.
 
 > [!theorem] Corollary §42.3: The Cotangent Bundle Is a Fibration
 > With the smooth structure of [[§42 The Cotangent Bundle#^prop-42-2|Proposition §42.2]]:

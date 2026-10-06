@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 11
-section: 131
+section: "131★"
 bc: "131"
 aliases: ["B&C 131"]
 tags: [complex-variables, math342, extension]
@@ -34,13 +34,13 @@ maps the strip onto the half plane ([[§103★ Mappings by the Exponential Funct
 ^prop-131-1
 
 > [!proof]+ Proof
-> This is B&C's argument. Let $F = \phi + i\psi$ be a complex potential of the flow in the $w$ plane, and let $w = g(z)$ be the conformal map. Then $F(g(z))$ is analytic, so it is a complex potential in the $z$ plane, with stream function $\psi(g(z))$ ([[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]]); as in Chapter 10, the same symbol $\psi$ is used for the stream functions in both planes. By [[§125★ The Stream Function#^prop-125-2|Proposition §125.2]], the rate of flow across a curve joining two points is the difference of the values of $\psi$ at its ends. Corresponding curves have corresponding ends, where the two stream functions take the same values, so the rates of flow are equal.
+> This is B&C's argument. Let $F = \phi + i\psi$ be a complex potential of the flow in the $w$ plane, and let $w = g(z)$ be the conformal map. Then $F(g(z))$ is analytic, so it is a complex potential in the $z$ plane, with stream function $\psi(g(z))$ ([[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]]); as in Chapter 10, the same symbol $\psi$ is used for the stream functions in both planes. By [[§125★ The Stream Function#^prop-125-1|Proposition §125.1]], the rate of flow across a curve joining two points is the difference of the values of $\psi$ at its ends. Corresponding curves have corresponding ends, where the two stream functions take the same values, so the rates of flow are equal.
 >
 > For the channel: the rate of flow across a curve joining $w = u_0$ to $w = u_1$ around the slit is $\psi(u_1, 0) - \psi(u_0, 0) = Q$ (taking $\psi(u_0, 0) = 0$). The image curve joins $z = x_0$ to $z = x_1$ in the upper half plane, around $z = 1$, and the rate of flow across it is also $Q$: there is a source at $z = 1$ equal to the source at $w = 0$. The same argument applies at any point. For the sink infinitely far to the left in the strip, use a curve joining the walls $v = 0$ and $v = \pi$ in the left part of the strip: since $z = e^w \to 0$ as $\operatorname{Re} w \to -\infty$, its image is a curve around $z = 0$ joining the two half axes, and it carries the same flow $Q/2$; so there is a sink of strength $Q/2$ at $z = 0$. In the same way the sink at the right-hand end of the strip becomes a sink at infinity in the $z$ plane.
 
 ^pf-131-1
 
-*Uses:* [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
+*Uses:* [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§125★ The Stream Function#^prop-125-1|§125.1]]
 
 ## The Flow through the Slit
 
@@ -75,7 +75,7 @@ maps the strip onto the half plane ([[§103★ Mappings by the Exponential Funct
 >
 > (B&C uses the same symbol $F$ for three distinct functions, once in the $z$ plane and twice in the $w$ plane.)
 >
-> **Velocity.** By [[§125★ The Stream Function#^prop-125-1|Proposition §125.1]] the velocity is the conjugate of $F'$:
+> **Velocity.** By [[§125★ The Stream Function#^prop-125-2|Proposition §125.2]] the velocity is the conjugate of $F'$:
 >
 > $$
 > V = \overline{F'(w)} = \frac{Q}{2\pi}\coth\frac{\overline w}{2} . \qquad (3)

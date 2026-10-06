@@ -32,7 +32,7 @@ Any nonzero $z = x + iy$ is associated with the directed line segment, or **radi
 
 > [!remark]- Connections
 > - Linear Algebra's absolute value is the same definition, [[§13 Polynomials#^ladr-4-2b|LADR 4.2b]], with its properties in [[§13 Polynomials#^ladr-4-4|LADR 4.4]].
-> - Computational version and the complex plane: [[§53 Complex Numbers#^def-53-4|235 Def. §53.4]], [[§53 Complex Numbers#^def-53-5|235 Def. §53.5]].
+> - Computational version and the complex plane: [[§64 Complex Numbers#^def-64-4|235 Def. §64.4]], [[§64 Complex Numbers#^def-64-5|235 Def. §64.5]].
 
 > [!theorem] Proposition §4.1: Modulus and the Real and Imaginary Parts
 > For every complex number $z$,

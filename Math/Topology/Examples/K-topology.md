@@ -8,7 +8,7 @@ The real line $\mathbb{R}_K$ whose basis is the open intervals $(a,b)$ together 
 
 - Definition: the basis $\{(a,b)\} \cup \{(a,b) \setminus K\}$ ([[§2 Basis for a Topology#^ex-2-4|§2]])
 - $\mathbb{R}_K$ is strictly finer than $\mathbb{R}_{\text{std}}$ ([[§2 Basis for a Topology#^ex-2-5|§2]])
-- $\mathbb{R}_K$ is Hausdorff but not regular ([[§19 Separation Axioms#^ex-19-1|§19]])
+- $\mathbb{R}_K$ is Hausdorff but not regular ([[§23 Separation Axioms#^ex-23-1|§23]])
 
 ## Definition: the basis $\{(a,b)\} \cup \{(a,b) \setminus K\}$
 ![[§2 Basis for a Topology#^ex-2-4]]
@@ -17,4 +17,4 @@ The real line $\mathbb{R}_K$ whose basis is the open intervals $(a,b)$ together 
 ![[§2 Basis for a Topology#^ex-2-5]]
 
 ## $\mathbb{R}_K$ is Hausdorff but not regular
-![[§19 Separation Axioms#^ex-19-1]]
+![[§23 Separation Axioms#^ex-23-1]]

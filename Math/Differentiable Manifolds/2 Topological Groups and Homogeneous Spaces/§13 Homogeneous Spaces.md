@@ -99,7 +99,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§13 Homogeneous Spaces#^def-13-3|Def. §13.3]]
 
 > [!remark]- Connections
-> - “Points are closed” is the $T_1$ axiom, [[§19 Separation Axioms#^def-19-1|590 Def. §19.1]]; Hausdorff implies it by [[§8 Hausdorff Spaces#^thm-8-1|590 §8.1]].
+> - “Points are closed” is the $T_1$ axiom, [[§23 Separation Axioms#^def-23-1|590 Def. §23.1]]; Hausdorff implies it by [[§9 Hausdorff Spaces#^thm-9-1|590 §9.1]].
 
 **On the hypothesis.** The board stated the theorem with no condition on $X$, and in that form it is false, as the next example shows. What fails there is precisely that points of $X$ are not closed. Requiring $X$ to be $T_1$ — in particular Hausdorff, which is the case for every manifold — repairs the statement, and costs nothing in the applications: $\mathrm{O}(n)$ acting on $\mathrm{Gr}_k(\mathbb{R}^n)$, $\mathrm{SO}(3)$ on $S^2$, and every other action met here has Hausdorff target.
 
@@ -165,7 +165,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 ^def-13-4
 
 > [!remark]- Connections
-> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|590 Def. §21.13]].
+> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§27 Free Groups and Presentations#^def-27-9|590 Def. §27.9]].
 
 > [!theorem] Lemma §13.3: When Two Cosets Coincide
 > $gH = g'H \iff g^{-1}g' \in H$. Consequently the left cosets partition $G$.

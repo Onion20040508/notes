@@ -33,7 +33,7 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 
 > [!remark]- Connections
 > - Limits of functions of two variables (punctured δ-ball): [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]].
-> - Computational version: [[§7 The Limit of a Function#^def-7-1|Calc Def. §7.1]], made precise in [[§9 The Precise Definition of a Limit#^def-9-1|Calc Def. §9.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Calc Def. §11.4]]; infinite limits [[§9 The Precise Definition of a Limit#^def-9-3|Calc Def. §9.3]] (with worked examples).
+> - Computational version: [[§8 The Limit of a Function#^def-8-1|Calc Def. §8.1]], made precise in [[§11 The Precise Definition of a Limit#^def-11-1|Calc Def. §11.1]]; at infinity [[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-4|Calc Def. §13.4]]; infinite limits [[§11 The Precise Definition of a Limit#^def-11-3|Calc Def. §11.3]] (with worked examples).
 > - Computational version: [[§15 Limits#^def-15-1|342 Def. §15.1]] (the same ε–δ definition for functions of a complex variable, where the deleted neighborhood is a punctured disk, with worked examples).
 
 > [!example] Example §20.1: First Computations
@@ -58,7 +58,7 @@ Recall: $f$ is continuous at $x_0$ if $x_n \to x_0$ implies $f(x_n) \to f(x_0)$.
 *Uses:* [[§20 Limits of Functions#^def-20-1|Def. §20.1]], [[§17 Continuous Functions#^def-17-1|Def. §17.1]]
 
 > [!remark]- Connections
-> - Computational version: [[§10 Continuity#^def-10-1|Calc Def. §10.1]] (with worked examples).
+> - Computational version: [[§12 Continuity#^def-12-1|Calc Def. §12.1]] (with worked examples).
 
 ## Notation: Two-Sided and One-Sided Limits
 
@@ -76,8 +76,8 @@ The notation $\lim_{x\to a^S}$ is a bit inconvenient; in common situations we si
 ^def-20-2
 
 > [!remark]- Connections
-> - Computational version: one-sided limits [[§7 The Limit of a Function#^def-7-2|Calc Def. §7.2]], limits at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-1|Calc Def. §11.1]] (with worked examples).
-> - Computational version: [[§8 Convergence of Fourier Series#^def-8-1|341 Def. §8.1]] (the one-sided limits $f(x+)$, $f(x-)$, whose average a Fourier series converges to at a jump).
+> - Computational version: one-sided limits [[§8 The Limit of a Function#^def-8-2|Calc Def. §8.2]], limits at infinity [[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-1|Calc Def. §13.1]] (with worked examples).
+> - Computational version: [[§12 Convergence of Fourier Series#^def-12-1|341 Def. §12.1]] (the one-sided limits $f(x+)$, $f(x-)$, whose average a Fourier series converges to at a jump).
 
 Why do we need one-sided limits?
 
@@ -104,7 +104,7 @@ Why do we need one-sided limits?
 ^ex-20-3
 
 > [!remark]- Connections
-> - Worked examples: one-sided infinite limits [[§7 The Limit of a Function#^def-7-new1|Calc Def. §7.4]]; reciprocal powers at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Calc Thm. §11.3]].
+> - Worked examples: one-sided infinite limits [[§8 The Limit of a Function#^def-8-5|Calc Def. §8.5]]; reciprocal powers at infinity [[§13 Limits at Infinity; Horizontal Asymptotes#^thm-13-3|Calc Thm. §13.3]].
 
 > [!theorem] Theorem §20.2: Two-Sided Equals Both One-Sided
 > $\displaystyle\lim_{x\to a} f(x) = L$ if and only if
@@ -131,7 +131,7 @@ Why do we need one-sided limits?
 *Uses:* [[§20 Limits of Functions#^rem-20-1|§20 Rem. (epsilon-delta version)]]
 
 > [!remark]- Connections
-> - Computational version: [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Calc Thm. §8.5]] (with worked examples).
+> - Computational version: [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-3|Calc Thm. §10.3]] (with worked examples).
 
 > [!remark] Remark
 > The usual limit theorems (sums, products, quotients) hold for these limits — including the one-sided versions — by the corresponding theorems for sequences; likewise a composition theorem, where one should be careful about matching sides and domains.
@@ -139,7 +139,7 @@ Why do we need one-sided limits?
 ^rem-20-2
 
 > [!remark]- Connections
-> - Computational version: the limit laws [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Calc Thm. §8.1]]; at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-2|Calc Thm. §11.2]] (with worked examples).
+> - Computational version: the limit laws [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|Calc Thm. §9.1]]; at infinity [[§13 Limits at Infinity; Horizontal Asymptotes#^thm-13-2|Calc Thm. §13.2]] (with worked examples).
 
 ## Filling Removable Holes
 
@@ -180,7 +180,7 @@ These notions can be used to *produce* continuous functions: extend a function t
 *Removable versus non-removable. Left: $f$ is undefined at $0$, but both sides approach the same height, so the hole (hollow) is filled by $f(0) = \lim_{x\to0} f(x) = 1$. Right: $g$ approaches $1$ from the right and $-1$ from the left (both hollow); a single value $g(0)$ cannot sit at both ends of the jump.*
 
 > [!remark]- Connections
-> - Computational version: [[§8 Convergence of Fourier Series#^def-8-2|341 Def. §8.2]] (jump, removable and worse discontinuities, classified in worked examples); at a jump a Fourier series converges to the midpoint, [[§8 Convergence of Fourier Series#^thm-8-1|341 Thm. §8.1]].
+> - Computational version: [[§12 Convergence of Fourier Series#^def-12-2|341 Def. §12.2]] (jump, removable and worse discontinuities, classified in worked examples); at a jump a Fourier series converges to the midpoint, [[§12 Convergence of Fourier Series#^thm-12-1|341 Thm. §12.1]].
 
 > [!remark] Remark: Worse than a Jump
 > For $f(x) = \sin\tfrac1x$, $x \neq 0$: not only does $\lim_{x\to0} f(x)$ not exist — the left and right limits do not exist either (the oscillation argument of §17 works from each side). This is much worse than the previous example: the existence of one-sided limits is already a good property of a function.

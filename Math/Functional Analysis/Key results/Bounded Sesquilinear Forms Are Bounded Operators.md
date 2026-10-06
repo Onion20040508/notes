@@ -23,5 +23,5 @@ tags: [functional-analysis, hub]
 
 ## Connections
 - **How.** For fixed y, x ↦ B(x, y) is a bounded linear functional, so by Riesz with norms ([[§27 Dual Spaces#^thm-27-2|§27.2]]) it equals (x, Ay) for a unique Ay. Uniqueness makes A linear, and taking x = Ay gives ‖Ay‖ ≤ M‖y‖.
-- **Finite dimensions.** On ℝⁿ every bilinear form is (x, Ay) for the matrix A = (B(e_i, e_j)) ([[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^ex-28-1|Ex. §28.1]]); this is LADR's matrix of a bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]]). In infinite dimensions Wu avoided the infinite matrix and used the Riesz representation instead.
+- **Finite dimensions.** On ℝⁿ every bilinear form is (x, Ay) for the matrix A = (B(e_i, e_j)) ([[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^ex-28-1|Ex. §28.1]]); this is LADR's matrix of a bilinear form ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]]). In infinite dimensions Wu avoided the infinite matrix and used the Riesz representation instead.
 - **Used for.** It is the first step of [[Lax–Milgram Theorem|Lax–Milgram]]: conditions (1)–(3) produce A, and coercivity is then used to show that A is one-to-one and onto ([[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^rem-28-1|Remark §28]]).

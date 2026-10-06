@@ -12,18 +12,18 @@ tags: [chapter, multivariable-analysis]
 **Builds on (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (2)
 
 ## Sections
-- [[§18 Surface Integrals]]
-- [[§18a Flux Integrals and the Divergence Theorem in ℝ³]]
-- [[§19 The Laplacian in Spherical Coordinates]]
-- [[§20 Stokes' Theorem in ℝ³]]
-- [[§20a The Unit Sphere and Spherical Coordinates]]
+- [[§31 Surface Integrals]]
+- [[§32 Flux Integrals and the Divergence Theorem in ℝ³]]
+- [[§33 The Laplacian in Spherical Coordinates]]
+- [[§34 Stokes' Theorem in ℝ³]]
+- [[§35 The Unit Sphere and Spherical Coordinates]]
 
 ## Central results
-- [[Surface Area via the Gram Matrix]] ([[§18 Surface Integrals#^thm-18-1|§18.1]])
-- [[Divergence Theorem in ℝ³]] ([[§18a Flux Integrals and the Divergence Theorem in ℝ³#^thm-18-2|§18.2]])
-- [[Stokes' Theorem in ℝ³]] ([[§20 Stokes' Theorem in ℝ³#^thm-20-1|§20.1]])
+- [[Surface Area via the Gram Matrix]] ([[§31 Surface Integrals#^thm-31-1|§31.1]])
+- [[Divergence Theorem in ℝ³]] ([[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|§32.1]])
+- [[Stokes' Theorem in ℝ³]] ([[§34 Stokes' Theorem in ℝ³#^thm-34-1|§34.1]])
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Surface Area via the Gram Matrix|Theorem §18.1: Surface Area via the Gram Matrix]]: 3 later results
-- [[Divergence Theorem in ℝ³|Theorem §18.2: Divergence Theorem in ℝ³]]: 1 later result
+- [[Surface Area via the Gram Matrix|Theorem §31.1: Surface Area via the Gram Matrix]]: 3 later results
+- [[Divergence Theorem in ℝ³|Theorem §32.1: Divergence Theorem in ℝ³]]: 1 later result

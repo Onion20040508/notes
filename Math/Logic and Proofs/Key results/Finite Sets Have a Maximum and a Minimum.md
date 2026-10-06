@@ -16,7 +16,7 @@ tags: [logic-and-proofs, hub]
 
 ## Used in (Logic and Proofs)
 - [[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11: Odd Integers]]
-- [[§14 Counting Infinite Sets#^thm-14-16|Theorem §14.16: Algebraic Numbers Are Denumerable, Transcendental Numbers Are Not]]
+- [[§14a Uncountable Sets#^thm-14a-6|Theorem §14a.6: Algebraic Numbers Are Denumerable, Transcendental Numbers Are Not]]
 - [[§15 The Division Theorem#^thm-15-1|Theorem §15.1: The Division Theorem]]
 
 ## Connections

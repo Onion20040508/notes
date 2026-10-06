@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 108
+section: "108★"
 bc: "108"
 aliases: ["B&C 108"]
 tags: [complex-variables, math342, extension]
@@ -37,7 +37,7 @@ the principal root occurring when $k = 0$; and ([[§35 The Power Function#^def-3
 
 ^def-108-1
 
-This is the case $c = 1/2$ of the principal branch of $z^c$, [[§35 The Power Function#^def-35-new1|Definition §35.3]]; it is analytic in its domain ([[§35 The Power Function#^thm-35-2|Theorem §35.2]]).
+This is the case $c = 1/2$ of the principal branch of $z^c$, [[§35 The Power Function#^def-35-3|Definition §35.3]]; it is analytic in its domain ([[§35 The Power Function#^thm-35-2|Theorem §35.2]]).
 
 > [!theorem] Proposition §108.1: The Two Branches ±F₀
 > When $-\pi < \Theta < \pi$ and the branch $\log z = \ln r + i(\Theta + 2\pi)$ is used, (2) gives the branch

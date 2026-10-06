@@ -31,7 +31,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 ^def-74-1
 
 > [!remark]- Connections
-> - "Isolated" is meant in the topological sense: an isolated singular point is not a limit point ([[§12★ Regions in the Complex Plane#^def-12-6|accumulation point]]) of the other singular points, [[§7 Interior and Closure#^def-7-3|590 Def. §7.3]]. In [[§74 Isolated Singular Points#^ex-74-3|Example §74.3]] the origin is a limit point of the singular points $1/n$, and that is exactly why it is not isolated.
+> - "Isolated" is meant in the topological sense: an isolated singular point is not a limit point ([[§12★ Regions in the Complex Plane#^def-12-13|accumulation point]]) of the other singular points, [[§8 Interior and Closure#^def-8-5|590 Def. §8.5]]. In [[§74 Isolated Singular Points#^ex-74-3|Example §74.3]] the origin is a limit point of the singular points $1/n$, and that is exactly why it is not isolated.
 
 > [!example] Example §74.1: A Rational Function
 > The function
@@ -51,7 +51,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 ^ex-74-1
 
 > [!example] Example §74.2: The Origin Is Not an Isolated Singular Point of Log z
-> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms#^def-33-new1|Definition §33.3]])
+> The origin is a singular point of the principal branch ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]])
 >
 > $$
 > F(z) = \operatorname{Log} z = \ln r + i\Theta \qquad (r > 0,\ -\pi < \Theta < \pi)
@@ -63,7 +63,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 > f(z) = \log z = \ln r + i\theta \qquad (r > 0,\ \alpha < \theta < \alpha + 2\pi) ,
 > $$
 >
-> whose branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), the ray $\theta = \alpha$, meets every deleted neighborhood of the origin.
+> whose branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]), the ray $\theta = \alpha$, meets every deleted neighborhood of the origin.
 >
 > *B&C: Sec. 74, Example 2*
 

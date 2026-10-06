@@ -62,7 +62,7 @@ $$
 *Uses:* [[§85 Evaluation of Improper Integrals#^thm-85-3|§85.3]], [[§85 Evaluation of Improper Integrals#^prop-85-4|§85.4]], [[§85 Evaluation of Improper Integrals#^prop-85-1|§85.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47.2]], [[§30 The Exponential Function#^prop-30-1|§30.1]]
 
 > [!remark]- Connections
-> - These are the coefficient functions of the Fourier integral: for real $f$, $A(\lambda) = \frac1\pi\int f(x)\cos\lambda x\,dx$ and $B(\lambda) = \frac1\pi\int f(x)\sin\lambda x\,dx$, [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]], or $C(\lambda) = \frac{1}{2\pi}\int f(x)e^{-i\lambda x}\,dx$, [[§15★ Complex Methods#^def-15-2|341 Def. §15.2]]. Proposition §87.1 computes the Fourier transform of any rational function with $\deg q \ge \deg p + 2$ in closed form; Example §87.2 is the case $f = 1/(x^2 + 1)$.
+> - These are the coefficient functions of the Fourier integral: for real $f$, $A(\lambda) = \frac1\pi\int f(x)\cos\lambda x\,dx$ and $B(\lambda) = \frac1\pi\int f(x)\sin\lambda x\,dx$, [[§18 Fourier Integral#^def-18-1|341 Def. §18.1]], or $C(\lambda) = \frac{1}{2\pi}\int f(x)e^{-i\lambda x}\,dx$, [[§19★ Complex Methods#^def-19-2|341 Def. §19.2]]. Proposition §87.1 computes the Fourier transform of any rational function with $\deg q \ge \deg p + 2$ in closed form; Example §87.2 is the case $f = 1/(x^2 + 1)$.
 
 When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argument, although the integrals may still converge; that case is the subject of Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|Theorem §88.2]]. On a rectangle instead of a semicircle the arc estimate is even easier, because $|e^{iz}| = e^{-y}$ is exponentially small on a high horizontal side: [[§47 Upper Bounds for Moduli of Contour Integrals#^ex-47-5|Example §47.5]](a), an old-final problem, bounds the top side of the rectangle with vertices $\pm A$, $\pm A + iA$ by $2Ae^{-A}/(A^2 - 1)$, and the vertical sides are handled with $\int_0^A e^{-y}\,dy \le 1$.
 
@@ -132,7 +132,7 @@ When $\deg q = \deg p + 1$, the bound $|f| \le K/R$ is too weak for this argumen
 ^ex-87-2
 
 > [!remark]- Connections
-> - Read with $a = |x|$ and the integration variable $\lambda$, this is $e^{-|x|} = \frac2\pi\int_0^\infty\frac{\cos\lambda x}{1 + \lambda^2}\,d\lambda$, the Fourier integral representation of [[§14 Fourier Integral#^ex-14-4|341 Ex. §14.4]](a), which 341 obtains from the [[Fourier Integral Theorem|Fourier integral theorem]]; here it is verified directly, for every $x$.
+> - Read with $a = |x|$ and the integration variable $\lambda$, this is $e^{-|x|} = \frac2\pi\int_0^\infty\frac{\cos\lambda x}{1 + \lambda^2}\,d\lambda$, the Fourier integral representation of [[§18 Fourier Integral#^ex-18-4|341 Ex. §18.4]](a), which 341 obtains from the [[Fourier Integral Theorem|Fourier integral theorem]]; here it is verified directly, for every $x$.
 
 > [!example] Example §87.3: A Double Pole
 > Prove that for all $a > 0$ and $b > 0$,

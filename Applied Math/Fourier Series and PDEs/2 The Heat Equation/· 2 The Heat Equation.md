@@ -14,18 +14,18 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Functional Analysis]] (10), [[Single Variable Analysis]] (6), [[Measure Theory]] (3), [[Multivariable Analysis]] (5), [[Linear Algebra]] (5), [[Applied Linear Algebra]] (11), [[Ordinary Differential Equations]] (3), [[Calculus]] (4)
 
 ## Sections
-- [[§17 Derivation and Boundary Conditions]] — Powers 2.1
-- [[§18 Steady-State Temperatures]] — Powers 2.2
-- [[§19 Example꞉ Fixed End Temperatures]] — Powers 2.3
-- [[§20 Example꞉ Insulated Bar]] — Powers 2.4
-- [[§21 Example꞉ Different Boundary Conditions]] — Powers 2.5
-- [[§22 Example꞉ Convection]] — Powers 2.6
-- [[§23 Sturm–Liouville Problems]] — Powers 2.7
-- [[§24 Expansion in Series of Eigenfunctions]] — Powers 2.8
-- [[§25 Generalities on the Heat Conduction Problem]] — Powers 2.9
-- [[§26 Semi-Infinite Rod]] — Powers 2.10
-- [[§27 Infinite Rod]] — Powers 2.11
-- [[§28★ The Error Function]] — Powers 2.12 ★
+- [[§22 Derivation and Boundary Conditions]] — Powers 2.1
+- [[§24 Steady-State Temperatures]] — Powers 2.2
+- [[§25 Example꞉ Fixed End Temperatures]] — Powers 2.3
+- [[§26 Example꞉ Insulated Bar]] — Powers 2.4
+- [[§27 Example꞉ Different Boundary Conditions]] — Powers 2.5
+- [[§28 Example꞉ Convection]] — Powers 2.6
+- [[§29 Sturm–Liouville Problems]] — Powers 2.7
+- [[§30 Expansion in Series of Eigenfunctions]] — Powers 2.8
+- [[§31 Generalities on the Heat Conduction Problem]] — Powers 2.9
+- [[§32 Semi-Infinite Rod]] — Powers 2.10
+- [[§33 Infinite Rod]] — Powers 2.11
+- [[§34★ The Error Function]] — Powers 2.12 ★
 
 ## Central results
 - [[Solution of the Fixed-End Heat Problem]] (§19.5)
@@ -35,7 +35,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§20 Example꞉ Insulated Bar#^thm-20-1|Theorem §20.1: Eigenvalues for Insulated Ends]]: 22 later results
-- [[§23 Sturm–Liouville Problems#^prop-23-1|Proposition §23.1: Orthogonality for φ″ + λ²φ = 0]]: 21 later results
-- [[§23 Sturm–Liouville Problems#^thm-23-5|Theorem §23.5: Properties of the Eigenvalues]]: 20 later results
-- [[Sturm–Liouville Orthogonality Theorem|Theorem §23.2: Orthogonality of Eigenfunctions (Sturm–Liouville Theorem)]]: 19 later results
+- [[§26 Example꞉ Insulated Bar#^thm-26-1|Theorem §26.1: Eigenvalues for Insulated Ends]]: 22 later results
+- [[§29 Sturm–Liouville Problems#^prop-29-1|Proposition §29.1: Orthogonality for φ″ + λ²φ = 0]]: 21 later results
+- [[§29 Sturm–Liouville Problems#^thm-29-5|Theorem §29.5: Properties of the Eigenvalues]]: 20 later results
+- [[Sturm–Liouville Orthogonality Theorem|Theorem §29.2: Orthogonality of Eigenfunctions (Sturm–Liouville Theorem)]]: 19 later results

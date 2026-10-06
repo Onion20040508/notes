@@ -41,8 +41,8 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 ^def-1-1
 
 > [!remark]- Connections
-> - The same definition in linear algebra: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]; in measure theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-1|551 Def. §19.1]].
-> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-1|235 Def. §23.1]] (the same axioms over ℝ, with worked examples of function and polynomial spaces).
+> - The same definition in linear algebra: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]; in measure theory: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-1|551 Def. §34.1]].
+> - Computational version: [[§29 Vector Spaces and Subspaces#^def-29-1|235 Def. §29.1]] (the same axioms over ℝ, with worked examples of function and polynomial spaces).
 
 > [!remark] Remark
 > The two operations are *closed*: adding two elements of $X$, or multiplying an element of $X$ by a scalar, produces an element of $X$. This is the content of writing $+ : X \times X \to X$ and $kx \in X$ for all $k \in \mathbb{F}$, and is the property that must be checked first when verifying that a given set is a linear space.
@@ -69,7 +69,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - Subspaces in linear algebra: [[§3 Subspaces#^ladr-1-33|LADR 1.33]], with the conditions [[§3 Subspaces#^ladr-1-34|LADR 1.34]].
-> - Computational version: [[§23 Vector Spaces and Subspaces#^def-23-2|235 Def. §23.2]] (the three subspace conditions, with examples and non-examples).
+> - Computational version: [[§29 Vector Spaces and Subspaces#^def-29-2|235 Def. §29.2]] (the three subspace conditions, with examples and non-examples).
 
 > [!theorem] Proposition §1.1: Subspaces Contain the Origin
 > Every linear subspace $Y$ of $X$ contains $0$.
@@ -250,7 +250,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 > [!remark]- Connections
 > - In linear algebra the span is defined by linear combinations and shown to be the smallest containing subspace: [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
-> - Computational version: [[§23 Vector Spaces and Subspaces#^thm-23-4|235 Thm. §23.4]] (the span of finitely many vectors is the smallest subspace containing them, with worked spanning-set examples).
+> - Computational version: [[§29 Vector Spaces and Subspaces#^thm-29-4|235 Thm. §29.4]] (the span of finitely many vectors is the smallest subspace containing them, with worked spanning-set examples).
 
 > [!remark] Remark: Why Only Finite Sums
 > The sums in the span are finite. We do not, at this point, know how to form an infinite sum of vectors: an infinite sum requires taking a limit, and a linear space carries no notion of limit. Adding two vectors is part of the structure; passing to infinitely many is not, and must be separately justified once a topology is available. Finite sums are also already enough to produce a subspace, as the proof shows.
@@ -556,7 +556,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 > [!remark]- Connections
 > - The inner product and $Y^\perp$ in this course: [[§20 Definition and Examples#^def-20-1|Def. §20.1]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]] (the orthogonal decomposition, which supplies $X = Y + Y^\perp$ for closed $Y$ in a Hilbert space).
-> - In finite dimensions: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and $V = U \oplus U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]]).
+> - In finite dimensions: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and $V = U \oplus U^\perp$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]]).
 
 > [!remark] Remark
 > The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]]). It can fail for a general subspace: in $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, since $(z, e_i) = z_i$, so $Y + Y^\perp = Y \neq \ell^2$. Then $Y^\perp$ is *not* a complement — although by Proposition [[§1 Linear Spaces#^prop-1-8|§1.8]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§1 Linear Spaces#^thm-1-11|§1.11]]) is unconditional.

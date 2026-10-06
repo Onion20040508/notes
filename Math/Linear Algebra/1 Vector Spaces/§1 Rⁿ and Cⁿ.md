@@ -23,7 +23,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄]], [[§13 Polynomials#^ladr-4-2b|absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
 > - Physics: quantum state spaces are complex vector spaces, which is one reason the whole theory is developed over $\F=\R$ or $\C$.
-> - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (a + bi with i² = −1, real and imaginary parts), with products worked in [[§53 Complex Numbers#^ex-53-1|235 Ex. §53.1]].
+> - Computational version: [[§64 Complex Numbers#^def-64-1|235 Def. §64.1]] (a + bi with i² = −1, real and imaginary parts), with products worked in [[§64 Complex Numbers#^ex-64-1|235 Ex. §64.1]].
 > - Computational version: [[§1 Sums and Products#^def-1-1|342 Def. §1.1]] (complex numbers as ordered pairs, the points of the complex plane) and [[§1 Sums and Products#^prop-1-2|342 Prop. §1.2]] (the rectangular form x + iy, with i² = −1).
 
 > [!example] Example 1.2: Complex arithmetic (p. 2)
@@ -58,7 +58,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - These are the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]); $\R$ and $\C$ are fields. The vector-space axioms [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] copy this list with scalars acting on vectors.
 > - Uniqueness of inverses (the group-theory argument of [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]], used in the proof above) is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction]], [[§1 Rⁿ and Cⁿ#^ladr-1-5b|1∕α, division]] well defined.
-> - Computational version: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
+> - Computational version: [[§64 Complex Numbers#^thm-64-1|235 Thm. §64.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§64 Complex Numbers#^prop-64-4|235 Prop. §64.4]].
 > - Computational version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]] (commutative, associative and distributive laws) and [[§2 Basic Algebraic Properties#^thm-2-4|342 Thm. §2.4]] (multiplicative inverse), proved from the pair definition, with worked examples.
 
 > [!example] Example 1.4: Commutativity of complex multiplication (p. 3)
@@ -89,7 +89,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Well defined because of the uniqueness parts of [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]].
-> - Computational version: [[§53 Complex Numbers#^def-53-2|235 Def. §53.2]] (subtraction) and [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]] (reciprocals and quotients, with worked examples).
+> - Computational version: [[§64 Complex Numbers#^def-64-2|235 Def. §64.2]] (subtraction) and [[§64 Complex Numbers#^prop-64-4|235 Prop. §64.4]] (reciprocals and quotients, with worked examples).
 
 > [!remark] Notation 1.6: F (p. 4)
 > Throughout, $\F$ stands for either $\R$ or $\C$; elements of $\F$ are called *scalars*.
@@ -132,7 +132,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - With [[§1 Rⁿ and Cⁿ#^ladr-1-13|Addition in Fⁿ]] and [[§1 Rⁿ and Cⁿ#^ladr-1-18|Scalar multiplication in Fⁿ]] it is a vector space ([[§2 Definition of Vector Space#^ladr-1-20|Vector space]]).
 > - Every $n$-dimensional space over $\F$ is isomorphic to $\F^n$: [[Dimension shows whether vector spaces are isomorphic]].
-> - The real case, written as column vectors: [[§3 Vector Equations#^def-3-1|235 Def. §3.1]].
+> - The real case, written as column vectors: [[§4 Vector Equations#^def-4-1|235 Def. §4.1]].
 
 > [!example] Example 1.12: C⁴ (p. 6)
 > $\C^4=\{(z_1,z_2,z_3,z_4):z_k\in\C\}$. It cannot be pictured ($\C^4$ is "8 real dimensions"), but its algebra is exactly as easy as that of $\R^2$. That is the point of working with $\F^n$ abstractly.
@@ -149,8 +149,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in Fⁿ]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
-> - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
-> - In ℝⁿ: [[§3 Vector Equations#^def-3-2|235 Def. §3.2]] (entrywise sum, with examples).
+> - In ℝ² and ℝ³: [[§94 Vectors#^thm-94-4|Calc Thm. §94.4]] (with worked examples).
+> - In ℝⁿ: [[§4 Vector Equations#^def-4-2|235 Def. §4.2]] (entrywise sum, with examples).
 
 > [!theorem] Theorem 1.14: Commutativity of addition in Fⁿ
 > If $x,y\in\F^n$, then $x+y=y+x$.
@@ -167,7 +167,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Model for checking every axiom of [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] for $\F^n$: reduce to the coordinates.
-> - In ℝⁿ: property (i) of [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]], which lists all the vector-space laws of ℝⁿ.
+> - In ℝⁿ: property (i) of [[§4 Vector Equations#^thm-4-2|235 Thm. §4.2]], which lists all the vector-space laws of ℝⁿ.
 
 > [!remark] Notation 1.15: 0 (p. 7)
 > $0$ also denotes the list of length $n$ whose coordinates are all $0$: $0=(0,\dots,0)$.
@@ -186,7 +186,7 @@ tags: [linear-algebra]
 ^ladr-1-16
 
 > [!remark]- Connections
-> - The tip-to-tail picture as a theorem: [[§3 Vector Equations#^thm-3-1|235 Thm. §3.1]] (parallelogram rule for addition in ℝ²).
+> - The tip-to-tail picture as a theorem: [[§4 Vector Equations#^thm-4-1|235 Thm. §4.1]] (parallelogram rule for addition in ℝ²).
 
 > [!definition] Definition 1.17: Additive inverse in Fⁿ, −x
 > For $x\in\F^n$, the *additive inverse* $-x\in\F^n$ is the vector with $x+(-x)=0$. Explicitly $-(x_1,\dots,x_n)=(-x_1,\dots,-x_n)$.
@@ -208,12 +208,12 @@ tags: [linear-algebra]
 ^ladr-1-18
 
 > [!remark] Remark: Scalar times vector
-> The output is a vector. Contrast the [[§19 Inner Products and Norms#^ladr-6-1|Dot product]], which takes two vectors and returns a scalar; that idea is generalized by the [[§19 Inner Products and Norms#^ladr-6-2|Inner product]] in Chapter 6. In $\R^2$, $\lambda x$ stretches or shrinks $x$ by $|\lambda|$ and reverses it when $\lambda<0$.
+> The output is a vector. Contrast the [[§20 Inner Products and Norms#^ladr-6-1|Dot product]], which takes two vectors and returns a scalar; that idea is generalized by the [[§20 Inner Products and Norms#^ladr-6-2|Inner product]] in Chapter 6. In $\R^2$, $\lambda x$ stretches or shrinks $x$ by $|\lambda|$ and reverses it when $\lambda<0$.
 
 > [!remark]- Connections
 > - Together with [[§1 Rⁿ and Cⁿ#^ladr-1-13|Addition in Fⁿ]] this makes $\F^n$ a vector space ([[§2 Definition of Vector Space#^ladr-1-20|Vector space]]).
-> - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
-> - In ℝⁿ: [[§3 Vector Equations#^def-3-2|235 Def. §3.2]] (entrywise scalar multiple, with examples).
+> - In ℝ² and ℝ³: [[§94 Vectors#^thm-94-4|Calc Thm. §94.4]] (with worked examples).
+> - In ℝⁿ: [[§4 Vector Equations#^def-4-2|235 Def. §4.2]] (entrywise scalar multiple, with examples).
 
 %% ex:1.18-fig %%
 > [!example] Example: Scalar multiples, pictured

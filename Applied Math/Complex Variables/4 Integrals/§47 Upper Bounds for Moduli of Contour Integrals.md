@@ -92,13 +92,13 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 > \Big|\int_C f(z)\,dz\Big| \le M\int_a^b |z'(t)|\,dt = ML ,
 > $$
 >
-> the last integral being the length of $C$ ([[§43 Contours#^def-43-new3|Definition §43.6]], summed over the smooth arcs of $C$).
+> the last integral being the length of $C$ ([[§43 Contours#^def-43-6|Definition §43.6]], summed over the smooth arcs of $C$).
 >
 > **Strictness** (B&C: "of course"; here is why). Suppose $|f(z)| < M$ wherever $f$ is defined on $C$, and $L > 0$. Some smooth arc of $C$, say on $[t_{k-1}, t_k]$, has positive length, so $t_{k-1} < t_k$. Inside $[t_{k-1}, t_k]$ choose a subinterval $[c, d]$, $c < d$, containing no point where $f[z(t)]$ is discontinuous (there are only finitely many). The function $g(t) = \big(M - |f[z(t)]|\big)|z'(t)|$ is nonnegative wherever $f[z(t)]$ is defined; on $[c, d]$, made continuous at $c$ and $d$ by one-sided limits, it is continuous, and it is positive on $(c, d)$, because $|f| < M$ there and $z'(t) \ne 0$ inside a smooth arc. A continuous nonnegative function that is positive somewhere has positive integral, so $\int_c^d g\,dt > 0$, while $\int g\,dt \ge 0$ over the rest of $[a, b]$. Hence $\int_a^b g\,dt > 0$, that is, $\int_a^b |f[z(t)]|\,|z'(t)|\,dt < M\int_a^b |z'(t)|\,dt = ML$.
 
 ^pf-47-2
 
-*Uses:* [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|§47.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§43 Contours#^def-43-new3|Def. §43.6]], [[§43 Contours#^def-43-4|Def. §43.4]], [[§33 Properties of the Riemann Integral#^thm-33-7|451 Thm. §33.7]] (a nonnegative continuous function with zero integral vanishes)
+*Uses:* [[§47 Upper Bounds for Moduli of Contour Integrals#^lem-47-1|§47.1]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§43 Contours#^def-43-6|Def. §43.6]], [[§43 Contours#^def-43-7|Def. §43.7]], [[§33 Properties of the Riemann Integral#^thm-33-7|451 Thm. §33.7]] (a nonnegative continuous function with zero integral vanishes)
 
 > [!remark] Remark: Such a Bound Always Exists
 > Since $C$ is a contour and $f$ is piecewise continuous on $C$, a number $M$ as in (5) always exists. On each smooth arc of $C$, $|f[z(t)]|$ (redefined at the ends by its one-sided limits) is continuous on a closed bounded interval, so it reaches a maximum value there by the extreme value theorem; the largest of these finitely many maxima will do. In practice $M$ is found by the triangle inequalities, as in the examples, and need not be the maximum.

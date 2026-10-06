@@ -100,7 +100,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 *Uses:* [[§41 Derivatives of Functions w(t)#^def-41-1|Def. §41.1]], [[§42 Definite Integrals of Functions w(t)#^def-42-1|Def. §42.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]
 
 > [!remark]- Connections
-> - The real theorem is [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]; for plane curves it is [[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Calc Thm. §87.5]], the same statement and the same proof.
+> - The real theorem is [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]; for plane curves it is [[§101 Derivatives and Integrals of Vector Functions#^thm-101-5|Calc Thm. §101.5]], the same statement and the same proof.
 > - [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]] lifts this theorem from the parameter interval to contours in the plane: $\int_C f(z)\,dz = F(z_2) - F(z_1)$ when $F' = f$.
 
 ## Examples
@@ -194,7 +194,7 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 ^ex-42-4
 
 > [!remark]- Connections
-> - Taking real and imaginary parts gives the orthogonality relations of the real Fourier system, [[§6 Periodic Functions and Fourier Series#^prop-6-3|341 Prop. §6.3]]; in complex form it is what makes the coefficients of the complex Fourier series $\frac{1}{2\pi}\int f(\theta)e^{-in\theta}\,d\theta$, [[§15★ Complex Methods#^thm-15-1|341 Thm. §15.1]].
+> - Taking real and imaginary parts gives the orthogonality relations of the real Fourier system, [[§9 Periodic Functions and Fourier Series#^prop-9-3|341 Prop. §9.3]]; in complex form it is what makes the coefficients of the complex Fourier series $\frac{1}{2\pi}\int f(\theta)e^{-in\theta}\,d\theta$, [[§19★ Complex Methods#^thm-19-1|341 Thm. §19.1]].
 
 > [!example] Example §42.5: An Improper Integral
 > Show that $\displaystyle\int_0^{\infty} e^{-zt}\,dt = \frac1z$ when $\operatorname{Re} z > 0$.
@@ -212,4 +212,4 @@ B&C states that the integrals in (2) exist when $u$ and $v$ are piecewise contin
 ^ex-42-5
 
 > [!remark]- Connections
-> - With $z = s$ this is the Laplace transform $\mathcal{L}\{1\} = 1/s$, [[§21 Definition of the Laplace Transform#^ex-21-2|331 Ex. §21.2]], now valid for complex $s$ with $\operatorname{Re} s > 0$. Inverting Laplace transforms by contour integrals is [[§95★ Inverse Laplace Transforms|§95★]].
+> - With $z = s$ this is the Laplace transform $\mathcal{L}\{1\} = 1/s$, [[§26 Definition of the Laplace Transform#^ex-26-2|331 Ex. §26.2]], now valid for complex $s$ with $\operatorname{Re} s > 0$. Inverting Laplace transforms by contour integrals is [[§95★ Inverse Laplace Transforms|§95★]].

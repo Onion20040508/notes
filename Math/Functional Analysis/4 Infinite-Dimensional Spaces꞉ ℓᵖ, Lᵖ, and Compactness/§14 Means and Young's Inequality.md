@@ -24,7 +24,7 @@ tags: [functional-analysis, math556]
 ^pf-14-1
 
 > [!remark]- Connections
-> - Home of the inequality: [[Cauchy–Schwarz inequality|LADR 6.14]]; the $p = 2$ case of [[Hölder's Inequality|551 §19.5]].
+> - Home of the inequality: [[Cauchy–Schwarz inequality|LADR 6.14]]; the $p = 2$ case of [[Hölder's Inequality|551 §34.5]].
 > - Re-proved for every inner product space in [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]]; for infinite sequences it is the case $p = q = 2$ of [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]].
 
 > [!theorem] Lemma §14.2: Arithmetic–Geometric Mean, Two Variables
@@ -65,15 +65,15 @@ The second form says that the geometric mean of two non-negative numbers is at m
 > (1 - \theta) \ln a + \theta \ln b \le \ln\bigl((1 - \theta) a + \theta b\bigr),
 > $$
 >
-> which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Concavity of $\ln$: $(\ln t)'' = -1/t^2 < 0$; see the [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|MATH 551 notes]] for the chord characterization.)
+> which is concavity of $\ln$: the chord joining $(a, \ln a)$ and $(b, \ln b)$ lies below the graph. The point on the chord above $(1-\theta)a + \theta b$ has height $(1-\theta)\ln a + \theta \ln b$ by linearity of the chord, and the graph point above it has height $\ln\bigl((1-\theta)a + \theta b\bigr)$. (Concavity of $\ln$: $(\ln t)'' = -1/t^2 < 0$; see the [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|MATH 551 notes]] for the chord characterization.)
 
 ^pf-14-3
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|551 §19.4]]
+*Uses:* [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|551 §34.4]]
 
 ![[m556-11-1.svg]]
 *Young's inequality is the case of the chord lying below the concave graph of $\ln$; the black dot is the graph value, the red dot the chord value.*
 
 > [!remark]- Connections
-> - Home in Measure Theory: [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|551 §19.4]] (the same inequality with the weights $\theta$, $1 - \theta$ exchanged, proved by the same concavity argument and drawn with the same figure).
-> - Used for Hölder's inequality: [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]] (sequences), [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] (continuous functions), [[Hölder's Inequality|551 §19.5]] (measurable functions).
+> - Home in Measure Theory: [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|551 §34.4]] (the same inequality with the weights $\theta$, $1 - \theta$ exchanged, proved by the same concavity argument and drawn with the same figure).
+> - Used for Hölder's inequality: [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]] (sequences), [[§17 The Function Spaces Lᵖ(Ω)#^lem-17-7|§17.7]] (continuous functions), [[Hölder's Inequality|551 §34.5]] (measurable functions).

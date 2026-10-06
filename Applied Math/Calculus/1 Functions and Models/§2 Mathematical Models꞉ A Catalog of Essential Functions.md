@@ -87,14 +87,14 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 > [!definition] Definition §2.3: Empirical Model
 > An **empirical model** is a model based entirely on collected data, used when no physical law or principle is available. One seeks a curve that "fits" the data, in the sense that it captures their basic trend.
 >
-> For data that lie close to a line, the standard choice is the **regression line**, found by the *method of least squares*: it minimizes the sum of the squares of the vertical distances between the data points and the line (Exercise 14.7.61, [[§96 Maximum and Minimum Values|§96]]). Calculators and software compute it (*linear regression*).
+> For data that lie close to a line, the standard choice is the **regression line**, found by the *method of least squares*: it minimizes the sum of the squares of the vertical distances between the data points and the line (Exercise 14.7.61, [[§113 Maximum and Minimum Values|§113]]). Calculators and software compute it (*linear regression*).
 >
 > *Stewart: 1.2 (text and margin note)*
 
 ^def-2-3
 
 > [!remark]- Connections
-> - Matrix version: [[§45 Applications to Linear Models#^def-45-new1|235 Def. §45.2]] and [[§45 Applications to Linear Models#^prop-45-1|235 Prop. §45.1]] (the regression line is the least-squares solution of $X\boldsymbol\beta = \mathbf{y}$, found from the normal equations [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]]), worked in [[§45 Applications to Linear Models#^ex-45-1|235 Ex. §45.1]]; the quadratic fit of [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-3|Example §2.3]] is the design matrix of [[§45 Applications to Linear Models#^ex-45-2|235 Ex. §45.2]](a).
+> - Matrix version: [[§55 Applications to Linear Models#^def-55-3|235 Def. §55.3]] and [[§55 Applications to Linear Models#^prop-55-1|235 Prop. §55.1]] (the regression line is the least-squares solution of $X\boldsymbol\beta = \mathbf{y}$, found from the normal equations [[§54 Least-Squares Problems#^thm-54-1|235 Thm. §54.1]]), worked in [[§55 Applications to Linear Models#^ex-55-1|235 Ex. §55.1]]; the quadratic fit of [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-3|Example §2.3]] is the design matrix of [[§55 Applications to Linear Models#^ex-55-2|235 Ex. §55.2]](a).
 
 > [!example] Example §2.2: An Empirical Linear Model for CO₂
 > The average carbon dioxide level in the atmosphere, measured at Mauna Loa Observatory (in parts per million), was:
@@ -170,7 +170,7 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 > [!remark]- Connections
 > - Developed further in: [[§4 Span and Linear Independence#^ladr-2-10|LADR 2.10]] and [[§4 Span and Linear Independence#^ladr-2-11|LADR 2.11]] (polynomials over $\mathbb{R}$ or $\mathbb{C}$ and their degree). That the coefficients, hence the degree, are determined by the function is [[§13 Polynomials#^ladr-4-8|LADR 4.8]]: a nonzero polynomial of degree $m$ has at most $m$ zeros.
 
-Polynomials model many quantities in the natural and social sciences; for instance, economists often take a polynomial $P(x)$ for the cost of producing $x$ units of a commodity ([[§20 Rates of Change in the Natural and Social Sciences#^def-20-7|Definition §20.7]]).
+Polynomials model many quantities in the natural and social sciences; for instance, economists often take a polynomial $P(x)$ for the cost of producing $x$ units of a commodity ([[§23 Rates of Change in the Natural and Social Sciences#^def-23-10|Definition §23.10]]).
 
 > [!example] Example §2.3: A Quadratic Model for a Falling Ball
 > A ball is dropped from the upper observation deck of the CN Tower, $450$ m above the ground, and its height $h$ above the ground is recorded at 1-second intervals:
@@ -201,7 +201,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ^ex-2-3
 
-*Chain:* [[§13a The Parabola y = x², the CN Tower Ball, (√(t² + 9) − 3)∕t² and x³ − x#The Ball Dropped from the CN Tower|Chapter 2]] →
+*Chain:* [[§16 The Parabola y = x², the CN Tower Ball, (√(t² + 9) − 3)∕t² and x³ − x#The Ball Dropped from the CN Tower|Chapter 2]] →
 
 ## Power Functions
 
@@ -209,7 +209,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 > A function of the form $f(x) = x^a$, where $a$ is a constant, is a **power function**. The important cases are
 > 1. $a = n$, a positive integer: $x, x^2, x^3, \ldots$ (polynomials with one term);
 > 2. $a = 1/n$, $n$ a positive integer: the root functions ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6|Definition §2.6]]);
-> 3. $a = -1$: the reciprocal function, and $a = -2$: inverse square laws ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-7|Definition §2.7]] and [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-new1|Definition §2.7]]).
+> 3. $a = -1$: the reciprocal function, and $a = -2$: inverse square laws ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-7|Definition §2.7]] and [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-8|Definition §2.8]]).
 >
 > *Stewart: 1.2 (text)*
 
@@ -245,23 +245,23 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ^def-2-6
 
-> [!definition] Definition §2.7: Reciprocal Function
+> [!definition] Definition §2.8: Reciprocal Function
 > - The **reciprocal function** is $f(x) = x^{-1} = 1/x$. Its graph, $y = 1/x$ or $xy = 1$, is a hyperbola with the coordinate axes as asymptotes. It models quantities that are inversely proportional, such as **Boyle's Law**: at constant temperature, the volume $V$ of a gas is inversely proportional to the pressure $P$, $V = C/P$ with $C$ a constant.
 >
 > *Stewart: 1.2 (text)*
 
 ^def-2-7
 
-> [!definition] Definition §2.7: Inverse Square Law
+> [!definition] Definition §2.9: Inverse Square Law
 > - A model of the form $f(x) = C/x^2$ ($a = -2$) is an **inverse square law**: the first quantity is inversely proportional to the square of the second. For instance, the illumination $I$ of an object by a light source is $I = C/x^2$, where $x$ is the distance from the source. Gravitational force, loudness of sound and the electrostatic force between two charged particles obey inverse square laws.
 >
 > *Stewart: 1.2 (text)*
 
-^def-2-new1
+^def-2-8
 
 ## Rational Functions
 
-> [!definition] Definition §2.8: Rational Function
+> [!definition] Definition §2.10: Rational Function
 > A **rational function** is a ratio of two polynomials,
 >
 > $$
@@ -278,11 +278,11 @@ Polynomials model many quantities in the natural and social sciences; for instan
 >
 > *Stewart: 1.2 (text)*
 
-^def-2-8
+^def-2-9
 
 ## Algebraic Functions
 
-> [!definition] Definition §2.9: Algebraic and Transcendental Functions
+> [!definition] Definition §2.11: Algebraic and Transcendental Functions
 > A function is **algebraic** if it can be constructed from polynomials using algebraic operations: addition, subtraction, multiplication, division and taking roots. Every rational function is algebraic. Further examples:
 >
 > $$
@@ -295,7 +295,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 >
 > *Stewart: 1.2 (text)*
 
-^def-2-9
+^def-2-10
 
 > [!remark]- Connections
 > - The same distinction for numbers: [[§2 The Set ℚ of Rational Numbers#^def-2-5|451 Def. §2.5]] (algebraic number) and [[§2 The Set ℚ of Rational Numbers#^def-2-10|451 Def. §2.10]] (transcendental number).
@@ -324,7 +324,7 @@ Trigonometry is reviewed on Stewart's Reference Page 2 and in Appendix D. In cal
 
 ^pf-2-3
 
-*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]] (trigonometric functions of a general angle)
+*Uses:* [[§142 Trigonometry#^def-142-4|Def. §142.4]] (trigonometric functions of a general angle)
 
 > [!theorem] Theorem §2.4: Periodicity
 > Sine and cosine are **periodic** with period $2\pi$: for all values of $x$,
@@ -360,7 +360,7 @@ Trigonometry is reviewed on Stewart's Reference Page 2 and in Appendix D. In cal
 
 ^pf-2-4
 
-*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]]; the $2\pi$-periodicity is also [[§119 Trigonometry#^thm-119-5|Theorem §119.5]]
+*Uses:* [[§142 Trigonometry#^def-142-4|Def. §142.4]]; the $2\pi$-periodicity is also [[§142 Trigonometry#^thm-142-5|Theorem §142.5]]
 
 The periodicity makes sine and cosine suitable for modeling repetitive phenomena such as tides, vibrating springs and sound waves. In [[§3 New Functions from Old Functions#^ex-3-3|Ex. §3.3]] the number of hours of daylight in Philadelphia $t$ days after January 1 is modeled by $L(t) = 12 + 2.8 \sin\big[\frac{2\pi}{365}(t - 80)\big]$.
 
@@ -381,21 +381,21 @@ The periodicity makes sine and cosine suitable for modeling repetitive phenomena
 
 ## Exponential Functions
 
-> [!definition] Definition §2.10: Exponential Function
+> [!definition] Definition §2.12: Exponential Function
 > The **exponential functions** are the functions $f(x) = b^x$, where the base $b$ is a positive constant. For $b \ne 1$ the domain is $(-\infty, \infty)$ and the range is $(0, \infty)$. The graph rises from left to right if $b > 1$ (for example $y = 2^x$) and falls if $b < 1$ (for example $y = (0.5)^x$); both pass through $(0, 1)$. Exponential functions model growth (if $b > 1$) and decline (if $b < 1$), for instance of populations. They are studied in detail in [[§4 Exponential Functions|§4]].
 >
 > *Stewart: 1.2 (text)*
 
-^def-2-10
+^def-2-11
 
 ## Logarithmic Functions
 
-> [!definition] Definition §2.11: Logarithmic Function
-> The **logarithmic functions** are the functions $f(x) = \log_b x$, where the base $b$ is a positive constant ($b \ne 1$). They are the inverse functions of the exponential functions ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]]). The domain is $(0, \infty)$ and the range is $(-\infty, \infty)$. For $b > 1$ the graph passes through $(1, 0)$, and the function increases slowly when $x > 1$, the more slowly the larger the base ($\log_2 x$, $\log_3 x$, $\log_5 x$, $\log_{10} x$).
+> [!definition] Definition §2.12: Logarithmic Function
+> The **logarithmic functions** are the functions $f(x) = \log_b x$, where the base $b$ is a positive constant ($b \ne 1$). They are the inverse functions of the exponential functions ([[§6 Logarithmic and Inverse Trigonometric Functions#^def-6-1|Definition §6.1]]). The domain is $(0, \infty)$ and the range is $(-\infty, \infty)$. For $b > 1$ the graph passes through $(1, 0)$, and the function increases slowly when $x > 1$, the more slowly the larger the base ($\log_2 x$, $\log_3 x$, $\log_5 x$, $\log_{10} x$).
 >
 > *Stewart: 1.2 (text)*
 
-^def-2-11
+^def-2-12
 
 > [!example] Example §2.5: Classifying Functions
 > Classify each function as one of the types above: (a) $f(x) = 5^x$, (b) $g(x) = x^5$, (c) $h(x) = \dfrac{1 + x}{1 - \sqrt{x}}$, (d) $u(t) = 1 - t + 5t^4$.

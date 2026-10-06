@@ -14,19 +14,19 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Linear Algebra]] (1), [[Measure Theory]] (10), [[Multivariable Analysis]] (26), [[Applied Linear Algebra]] (3), [[Fourier Series and PDEs]] (8)
 
 ## Sections
-- [[§98 Double Integrals Over Rectangles]] — Stewart 15.1
-- [[§99 Double Integrals Over General Regions]] — Stewart 15.2
-- [[§100 Double Integrals in Polar Coordinates]] — Stewart 15.3
-- [[§101 Applications of Double Integrals]] — Stewart 15.4
-- [[§102 Surface Area]] — Stewart 15.5
-- [[§103 Triple Integrals]] — Stewart 15.6
-- [[§104 Triple Integrals in Cylindrical Coordinates]] — Stewart 15.7
-- [[§105 Triple Integrals in Spherical Coordinates]] — Stewart 15.8
-- [[§106 Change of Variables in Multiple Integrals]] — Stewart 15.9
+- [[§115 Double Integrals Over Rectangles]] — Stewart 15.1
+- [[§116 Double Integrals Over General Regions]] — Stewart 15.2
+- [[§117 Double Integrals in Polar Coordinates]] — Stewart 15.3
+- [[§118 Applications of Double Integrals]] — Stewart 15.4
+- [[§119 Surface Area]] — Stewart 15.5
+- [[§120 Triple Integrals]] — Stewart 15.6
+- [[§122 Triple Integrals in Cylindrical Coordinates]] — Stewart 15.7
+- [[§123 Triple Integrals in Spherical Coordinates]] — Stewart 15.8
+- [[§124 Change of Variables in Multiple Integrals]] — Stewart 15.9
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§98 Double Integrals Over Rectangles#^thm-98-3|Theorem §98.3: Fubini's Theorem]]: 32 later results
-- [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1: Integrals over Type I Regions]]: 29 later results
-- [[§99 Double Integrals Over General Regions#^thm-99-2|Theorem §99.2: Integrals over Type II Regions]]: 29 later results
-- [[§99 Double Integrals Over General Regions#^thm-99-4|Theorem §99.4: Additivity over Regions]]: 20 later results
+- [[§115 Double Integrals Over Rectangles#^thm-115-3|Theorem §115.3: Fubini's Theorem]]: 32 later results
+- [[§116 Double Integrals Over General Regions#^thm-116-1|Theorem §116.1: Integrals over Type I Regions]]: 29 later results
+- [[§116 Double Integrals Over General Regions#^thm-116-2|Theorem §116.2: Integrals over Type II Regions]]: 29 later results
+- [[§116 Double Integrals Over General Regions#^thm-116-4|Theorem §116.4: Additivity over Regions]]: 20 later results

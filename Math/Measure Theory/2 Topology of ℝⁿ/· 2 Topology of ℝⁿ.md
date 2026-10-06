@@ -23,6 +23,6 @@ tags: [chapter, measure-theory]
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]: 47 later results
+- [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-1|Lemma §6.1]]: 47 later results
 - [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]]: 47 later results
-- [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]]: 47 later results
 - [[§5 Topology of ℝⁿ#^thm-5-2|Theorem §5.2: Cantor's Nested Set Theorem]]: 46 later results

@@ -12,8 +12,8 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§24 Covering Spaces]]
-- [[§24a Lifting and the Fundamental Group of the Circle]]
+- [[§31 Covering Spaces]]
+- [[§32 Lifting and the Fundamental Group of the Circle]]
 
 ## Central results
 - [[Path Lifting Lemma]] (§24.6)
@@ -23,7 +23,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Path Lifting Lemma|Lemma §24.6: Path Lifting Lemma]]: 16 later results
-- [[§24 Covering Spaces#^thm-24-2|Theorem §24.2: p: ℝ → S¹ is a Covering Map]]: 12 later results
-- [[Properties of the Lifting Correspondence|Theorem §24.9: Properties of the Lifting Correspondence]]: 12 later results
-- [[Fundamental Group of the Circle|Theorem §24.10: π₁(S¹) ≅ ℤ]]: 10 later results
+- [[Path Lifting Lemma|Lemma §32.1: Path Lifting Lemma]]: 16 later results
+- [[§31 Covering Spaces#^thm-31-2|Theorem §31.2: p: ℝ → S¹ is a Covering Map]]: 12 later results
+- [[Properties of the Lifting Correspondence|Theorem §32.4: Properties of the Lifting Correspondence]]: 12 later results
+- [[Fundamental Group of the Circle|Theorem §32.5: π₁(S¹) ≅ ℤ]]: 10 later results

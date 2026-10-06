@@ -15,9 +15,9 @@ tags: [linear-algebra, hub]
 
 ## Used in (Linear Algebra)
 - [[Dimension shows whether vector spaces are isomorphic|3.70 Dimension shows whether vector spaces are isomorphic]]
-- [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7 Change-of-basis formula]]
-- [[§35 Tensor Products#^ladr-9-74|9.74 Basis of V⊗ W]]
-- [[§35 Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]
+- [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|9.7 Change-of-basis formula]]
+- [[§38 Tensor Products#^ladr-9-74|9.74 Basis of V⊗ W]]
+- [[§38 Tensor Products#^ladr-9-79|9.79 Converting bilinear maps to linear maps]]
 
 ## Used in (Group Theory)
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^cor-20-3|Corollary §20.3: Permutations of the Basis Give Invertible Linear Maps]]
@@ -32,4 +32,4 @@ tags: [linear-algebra, hub]
 ## Connections
 - The reason a linear map is the same data as its matrix: [[§9 Matrices#^ladr-3-31|Matrix of a linear map, M(T)]], and why $\mathcal{M}$ is bijective in [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
 - Builds the isomorphism in [[Dimension shows whether vector spaces are isomorphic]].
-- **Also in [[Applied Linear Algebra]]:** [[§9 The Matrix of a Linear Transformation#^thm-9-1|235 Thm. §9.1]] (the case of ℝⁿ with the standard basis: T is determined by T(e₁), …, T(eₙ), with worked examples).
+- **Also in [[Applied Linear Algebra]]:** [[§10 The Matrix of a Linear Transformation#^thm-10-1|235 Thm. §10.1]] (the case of ℝⁿ with the standard basis: T is determined by T(e₁), …, T(eₙ), with worked examples).

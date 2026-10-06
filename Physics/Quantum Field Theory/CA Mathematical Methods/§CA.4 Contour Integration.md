@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.5 and Ch. 6 §6.5 (the working rules, stated twice there) · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), "Complex Analysis: a Survival Guide" · PHY 513, Problem Set 4, Problem 1 · Stein & Shakarchi, Complex Analysis, Ch. 1–3 (cited in the user's notes).*
 
-Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] cite. Line integrals in the plane and Green's theorem are [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]; the vault has no complex-analysis subject yet, so this is the interim home.
+Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] cite. Line integrals in the plane and Green's theorem are [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]; the vault has no complex-analysis subject yet, so this is the interim home.
 
 ## Contours and analytic functions
 
@@ -76,7 +76,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > [!derivation]- Derivation
 > **Step 1** (real form). With $f = u + iv$ and $dz = dx + i\,dy$: $\oint f\,dz = \oint(u\,dx - v\,dy) + i\oint(v\,dx + u\,dy)$.
 >
-> **Step 2** (Green's theorem). For $u$, $v$ with continuous partial derivatives, [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]], $\oint(P\,dx + Q\,dy) = \iint(\partial_xQ - \partial_yP)\,dx\,dy$, turns the two pieces into $\iint(-\partial_xv - \partial_yu)$ and $\iint(\partial_xu - \partial_yv)$.
+> **Step 2** (Green's theorem). For $u$, $v$ with continuous partial derivatives, [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], $\oint(P\,dx + Q\,dy) = \iint(\partial_xQ - \partial_yP)\,dx\,dy$, turns the two pieces into $\iint(-\partial_xv - \partial_yu)$ and $\iint(\partial_xu - \partial_yv)$.
 >
 > **Step 3** (Cauchy–Riemann). Both integrands vanish ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]), so $\oint f\,dz = 0$. Goursat's proof removes the continuity assumption.
 >
@@ -90,7 +90,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-2
 
-*Uses:* [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]
+*Uses:* [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]
 
 > [!theorem] Theorem §CA.4.3: Identity Theorem
 > If $f$ and $g$ are analytic on a connected open set $U$ and agree on a subset of $U$ with an accumulation point in $U$, then $f = g$ on all of $U$. In particular an analytic continuation, when it exists, is unique.
@@ -351,7 +351,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > - Example §CA.4.2 is the transform behind every causal response: the energy transform of a retarded propagator is analytic in the upper half-plane ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]), the impulse response of a damped oscillator vanishes before the kick ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]], whose transform $\chi(\omega)$ has its poles in one half-plane), and the retarded Green's function of the Klein–Gordon field passes above both poles ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]).
 > - The half-residue lemma is what QM uses for the imaginary part of the resolvent in the optical theorem ([[§C10.2 The Eikonal Approximation and the Optical Theorem|QM §C10.2]]); its distribution form is [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]].
 > - The identity theorem makes analytic continuation unique; it is what turns one Euclidean evaluation into the Wightman function everywhere ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]) and what extends the Gaussian integral to complex variance ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]).
-> - Green's theorem in the plane ([[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.
+> - Green's theorem in the plane ([[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]) is the whole proof of Cauchy's theorem for smooth $u$, $v$; Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms.
 > - Loop integrals (QFT C7, planned) bring branch cuts back, and the spinor and vector propagators (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4; vector: [[§C4.8 Vector-Field Propagators#^thm-c4-8-3|Theorem §C4.8.3]], [[§C4.8 Vector-Field Propagators#^thm-c4-8-6|Theorem §C4.8.6]]) have numerators that are analytic in $p^0$, so the same residues give them the same $i\varepsilon$ (Yu eq. (6.262)).
 > - **Used in** (C1 places): Def. §CA.4.2 — the single-particle amplitude as a boundary value ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-4|Theorem §C1.3.4]]); Theorems §CA.4.2, §CA.4.6, §CA.4.8 and Caution: Jordan's lemma needs g → 0 — the single-particle amplitude at spacelike separation ([[§C1.3 Causal Structure and the Causality of a Single Particle#^thm-c1-3-6|Theorem §C1.3.6]]).
 > - **Used in** (C5a–C5b places): Theorems §CA.4.4–§CA.4.6 and Caution: Jordan's lemma needs g → 0 — the Dirac Feynman propagator, whose numerator $\slashed{p} + m$ makes the arc decay only like $1/\lvert p^0\rvert$, so that Jordan's lemma replaces the ML estimate ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4).

@@ -10,12 +10,12 @@ tags: [differentiable-manifolds, math591]
 *Thread: equations — The classical groups as regular level sets of polynomial maps ([[§7 The Regular Value Theorem|§7]]): each is a topological manifold.*
 
 > [!remark] Remark: The Method: Level Sets and the Implicit Function Theorem
-> “For the first time, we're going to use some calculus.” $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Uribe's methodological message: the [[§34 Determinants#^ladr-9-46|Leibniz formula]] makes computing $\nabla\det$ directly “a nightmare”; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. “It's nice to compute gradients or differentials using curves.” This kind of computation “will happen several times.”
+> “For the first time, we're going to use some calculus.” $\mathrm{SL}(n,\mathbb{R})$ is a *level set*, $\det^{-1}(1)$, of a smooth function on $\mathbb{R}^{n^2}$. Multivariable calculus says that a level set of $F$ is locally a graph—hence locally Euclidean—near any point where $\nabla F \neq 0$. So the work is to compute $\nabla \det$ and show it does not vanish on $\mathrm{SL}(n,\mathbb{R})$. Uribe's methodological message: the [[§37 Determinants#^ladr-9-46|Leibniz formula]] makes computing $\nabla\det$ directly “a nightmare”; instead, *differentiate along curves* and use the [[Multivariable Chain Rule|chain rule]]. “It's nice to compute gradients or differentials using curves.” This kind of computation “will happen several times.”
 
 ^rem-11-1
 
 > [!remark]- Connections
-> - “Locally a graph near a point with $\nabla F \neq 0$”: [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], home [[§12 The Implicit Function Theorem#^thm-12-2|452 §12.2]].
+> - “Locally a graph near a point with $\nabla F \neq 0$”: [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], home [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]].
 > - Differentiating along curves, made coordinate-free: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]].
 
 Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Definition §10.2]], writing $x_{ij}$ for the coordinate that reads off the $(i,j)$ entry, and for $F : \mathbb{R}^{n^2} \to \mathbb{R}$ differentiable write $\nabla F(g) \in \mathbb{R}^{n^2}$ for the gradient, with components $\partial F/\partial x_{ij}(g)$. The dot product on $\mathbb{R}^{n^2}$ is $A \cdot B = \sum_{i,j} A_{ij} B_{ij}$. The [[Multivariable Chain Rule|chain rule]] for a curve $\gamma$ reads $\frac{d}{dt} F(\gamma(t)) = \nabla F(\gamma(t)) \cdot \gamma'(t)$.
@@ -62,11 +62,11 @@ Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [
 
 ^pf-11-1
 
-*Uses:* [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§34 Determinants#^ladr-9-46|LADR 9.46]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|§10.2]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
+*Uses:* [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-46|LADR 9.46]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|Def. §10.3]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|§10.2]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§28 Basic Properties of the Derivative#^thm-28-2|451 §28.2]]
 
 > [!remark]- Connections
 > - The same computation without coordinates, as the differential of $\det$: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]].
-> - Used in ODEs: along a solution matrix $\mathbf{X}(t)$ of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ it gives $W' = (\operatorname{tr}\mathbf{P})\,W$ for the Wronskian $W = \det\mathbf{X}$, Abel's (Liouville's) formula, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|331 Thm. §30.3]].
+> - Used in ODEs: along a solution matrix $\mathbf{X}(t)$ of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ it gives $W' = (\operatorname{tr}\mathbf{P})\,W$ for the Wronskian $W = \det\mathbf{X}$, Abel's (Liouville's) formula, [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-3|331 Thm. §36.3]].
 > - Used in Quantum Field Theory: at $g = I$, $\det(I + A) = 1 + \operatorname{tr}A$ to first order gives the Jacobian of an infinitesimal change of spacetime coordinates, $d^4x' = [1 + \partial_\mu(\delta x^\mu)]\,d^4x$, which is $1$ for translations and Lorentz transformations — [[§C1.12 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1-12-2|QFT Theorem §C1.12.2]].
 
 In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$, where $\det(g) = 1$ and the factor disappears; the general-$g$ statement (Jacobi's formula) is the same computation with the constant $\det(g)$ carried along.
@@ -95,7 +95,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 ^pf-11-2
 
-*Uses:* [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§9 Matrices#^ladr-3-46|LADR 3.46]]
+*Uses:* [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§9 Matrices#^ladr-3-46|LADR 3.46]]
 
 > [!remark] Remark: The Gradient Itself
 > Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|Proposition §11.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$.
@@ -181,7 +181,7 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 
 ^pf-11-5-2
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-3|§11.3]], [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[Multivariable Chain Rule|452 §10.2 (chain rule)]], [[§10 Product Topology on Arbitrary Products#^thm-10-1|590 §10.1]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|Def. §10.2]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-3|§11.3]], [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
 > - The smooth structure on $\mathrm{SL}(n,\mathbb{R})$: [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]]; its dimension and tangent space among all six classical groups: [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]].

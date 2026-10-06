@@ -27,7 +27,7 @@ tags: [group-theory, math493]
 ^ex-46-1
 
 > [!remark]- Connections
-> - The multiplicativity in (2): [[§34 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
+> - The multiplicativity in (2): [[§37 Determinants#^ladr-9-49|Determinant is multiplicative]] (LADR 9.49).
 
 > [!remark] Remark: Why Characters
 > A character takes the non-commutative multiplication of $G$ and maps it into a commutative group, where computation is much easier. The price is information: as shown below, a character cannot distinguish conjugate elements and sends every commutator to $e_A$, so it sees only the “abelian part” of $G$.
@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Used in [[§47 Commutators#^thm-47-5|The Commutator Subgroup and Characters of Sₙ]] to pin down all characters of $S_n$.
-> - The model case: the determinant, a character of GLₙ, is a similarity invariant, [[§34 Determinants#^ladr-9-52|LADR 9.52]]; the trace is also constant on conjugacy classes, [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]], without being a character.
+> - The model case: the determinant, a character of GLₙ, is a similarity invariant, [[§37 Determinants#^ladr-9-52|LADR 9.52]]; the trace is also constant on conjugacy classes, [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]], without being a character.
 
 > [!remark] Remark: Where Commutativity of $A$ Is Needed
 > The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails: the identity map $S_3 \to S_3$ sends the conjugate elements $(1\,2)$ and $(1\,3)$ to different values. What survives in general is only that $\varphi$ carries conjugates to conjugates: $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h)^{-1}$.

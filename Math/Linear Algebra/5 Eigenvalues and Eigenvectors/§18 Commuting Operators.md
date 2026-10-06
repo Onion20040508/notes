@@ -6,7 +6,7 @@ section: 18
 aliases: ["LADR 5E", "5E Commuting Operators"]
 tags: [linear-algebra]
 ---
-← [[§17 Diagonalizable Operators]] · ↑ [[· 5 Eigenvalues and Eigenvectors]] · [[§19 Inner Products and Norms]] →
+← [[§17 Diagonalizable Operators]] · ↑ [[· 5 Eigenvalues and Eigenvectors]] · [[§19 The Companion Operator, (2x + y, 5y + 3z, 8z) and diag(8, 5, 5)]] →
 
 > [!definition] Definition 5.71: Commute
 > Operators $S,T$ on the same space *commute* if $ST=TS$; square matrices $A,B$ commute if $AB=BA$.

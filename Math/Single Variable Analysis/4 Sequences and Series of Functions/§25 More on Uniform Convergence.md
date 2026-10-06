@@ -34,7 +34,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 *The escaping triangle for $n = 2, 4, 8$: base $[0, \tfrac2n]$ shrinks, peak $n$ grows, area (shaded for $n = 8$) stays exactly $1$. Pointwise the limit is $0$ everywhere, yet the integrals refuse to follow.*
 
 > [!remark]- Connections
-> - 551's version $k\,\chi_{(0,1/k)}$ shows the same escaping mass, makes Fatou's inequality strict and has no integrable dominator: [[§14 The Lebesgue Integral for Simple Functions#^ex-14-1|551 Ex. §14.1]].
+> - 551's version $k\,\chi_{(0,1/k)}$ shows the same escaping mass, makes Fatou's inequality strict and has no integrable dominator: [[§21 Consequences of the Monotone Convergence Theorem#^ex-21-1|551 Ex. §21.1]].
 
 > [!theorem] Theorem §25.1: Uniform Convergence Allows Exchanging Limit and Integral
 > If $f_n \to f$ uniformly on $[a,b]$ (with each $f_n$ continuous, so that $f$ is continuous and all integrals are defined), then
@@ -65,9 +65,9 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 *Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]], [[§33 Properties of the Riemann Integral#^thm-33-3|§33.3]], [[§33 Properties of the Riemann Integral#^thm-33-4|§33.4]]
 
 > [!remark]- Connections
-> - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§15 The General Lebesgue Integral#^thm-15-8|551 Thm. §15.8]] (dominated convergence).
-> - Used in ODEs: passing to the limit in $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ shows that the limit of the Picard iterates solves the integral equation, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
-> - Used in PDEs: [[§24 Expansion in Series of Eigenfunctions#^prop-24-1|341 Prop. §24.1]] (multiplying a uniformly convergent eigenfunction expansion by $\phi_m p$ and integrating term by term gives the coefficient formula).
+> - Lebesgue version, with uniform convergence replaced by a.e. convergence and an integrable bound: [[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]] (dominated convergence).
+> - Used in ODEs: passing to the limit in $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ shows that the limit of the Picard iterates solves the integral equation, [[§14 The Existence and Uniqueness Theorem#^thm-14-7|331 Thm. §14.7]].
+> - Used in PDEs: [[§30 Expansion in Series of Eigenfunctions#^prop-30-1|341 Prop. §30.1]] (multiplying a uniformly convergent eigenfunction expansion by $\phi_m p$ and integrating term by term gives the coefficient formula).
 
 > [!example] Example §25.2: Computing a Limit of Integrals
 > Compute $\displaystyle\lim_{n\to\infty} \int_0^1 \frac{n + \cos x}{2n + \sin^2 x}\,dx$.
@@ -117,7 +117,7 @@ Now we return toward power series — via general series of functions.
 *Uses:* [[§17 Continuous Functions#^thm-17-3|§17.3]], [[§24 Uniform Convergence#^thm-24-2|§24.2]]
 
 > [!remark]- Connections
-> - Computational version: [[§9 Uniform Convergence#^thm-9-1|341 Thm. §9.1]] (a uniformly convergent Fourier series has a continuous sum, so a function with a jump has no uniformly convergent Fourier series).
+> - Computational version: [[§13 Uniform Convergence#^thm-13-1|341 Thm. §13.1]] (a uniformly convergent Fourier series has a continuous sum, so a function with a jump has no uniformly convergent Fourier series).
 
 > [!theorem] Theorem §25.3: Weierstrass M-Test
 > Let $(M_k)$ be a sequence of positive numbers with $\sum_{k=1}^\infty M_k < +\infty$. If $|g_k(x)| \leq M_k$ for all $x \in S$ and all $k$, then $\sum_k g_k(x)$ converges uniformly on $S$.
@@ -138,10 +138,10 @@ Now we return toward power series — via general series of functions.
 *Uses:* [[§14 Series#^thm-14-7|§14.7]], [[§14 Series#^thm-14-1|§14.1]], [[§24 Uniform Convergence#^thm-24-1|§24.1]]
 
 > [!remark]- Connections
-> - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§15 The General Lebesgue Integral#^cor-15-9|551 Cor. §15.9]].
-> - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
-> - Computational version: [[§9 Uniform Convergence#^thm-9-2|341 Thm. §9.2]] (a Fourier series with $\sum(|a_n|+|b_n|)<\infty$ converges uniformly, with worked examples).
-> - Used in PDEs: the series solutions of the heat equation, [[§19 Example꞉ Fixed End Temperatures#^thm-19-5|341 Thm. §19.5]] and [[§25 Generalities on the Heat Conduction Problem#^thm-25-4|341 Thm. §25.4]], and the Poisson integral, [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], where the factor $e^{-\lambda_n^2kt}$ or $r^n$ supplies the summable bound.
+> - Lebesgue analogue for term-by-term integration, assuming only $\sum \int |f_k| < \infty$ instead of uniform bounds: [[§23 The Dominated Convergence Theorem#^cor-23-4|551 Cor. §23.4]].
+> - Used in ODEs: the M-test with $M_k = MK^kh^{k+1}/(k+1)!$ gives the uniform convergence of the Picard iterates in the existence and uniqueness theorem for $y' = f(t, y)$, [[§14 The Existence and Uniqueness Theorem#^thm-14-7|331 Thm. §14.7]].
+> - Computational version: [[§13 Uniform Convergence#^thm-13-2|341 Thm. §13.2]] (a Fourier series with $\sum(|a_n|+|b_n|)<\infty$ converges uniformly, with worked examples).
+> - Used in PDEs: the series solutions of the heat equation, [[§25 Example꞉ Fixed End Temperatures#^thm-25-5|341 Thm. §25.5]] and [[§31 Generalities on the Heat Conduction Problem#^thm-31-4|341 Thm. §31.4]], and the Poisson integral, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]], where the factor $e^{-\lambda_n^2kt}$ or $r^n$ supplies the summable bound.
 > - Applied to complex power series: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-3|342 Thm. §69.3]] (uniform convergence on closed disks inside the circle of convergence, by this test).
 
 > [!example] Example §25.3: Three Applications of the M-Test
@@ -158,7 +158,7 @@ Now we return toward power series — via general series of functions.
 ^ex-25-3
 
 > [!remark]- Connections
-> - Computational version: [[§9 Uniform Convergence#^ex-9-5|341 Ex. §9.5]] (the shifted series $\sum(-1)^n\cos(nx)/n^2$, uniformly convergent by the same bound, summed in closed form as $x^2/4-\pi^2/12$).
+> - Computational version: [[§13 Uniform Convergence#^ex-13-5|341 Ex. §13.5]] (the shifted series $\sum(-1)^n\cos(nx)/n^2$, uniformly convergent by the same bound, summed in closed form as $x^2/4-\pi^2/12$).
 
 > [!example] Example §25.4: When the M-Test Has No Chance
 > Show $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+x^n}$ converges pointwise on $(0,1)$. Does it converge uniformly there?

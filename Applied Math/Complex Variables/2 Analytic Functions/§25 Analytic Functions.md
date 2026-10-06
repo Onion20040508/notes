@@ -69,7 +69,7 @@ A function differentiable at a single point, or along a curve, has no useful str
 *Uses:* [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§25 Analytic Functions#^ex-25-1|Ex. §25.1]]
 
 > [!theorem] Proposition §25.2: Compositions
-> A composition of two analytic functions is analytic. More precisely, suppose that $f(z)$ is analytic in a domain $D$ and that the image ([[§13 Functions and Mappings#^def-13-new2|Definition §13.7]]) of $D$ under the transformation $w = f(z)$ is contained in the domain of definition of a function $g(w)$ that is analytic there. Then the composition $g[f(z)]$ is analytic in $D$, with derivative
+> A composition of two analytic functions is analytic. More precisely, suppose that $f(z)$ is analytic in a domain $D$ and that the image ([[§13 Functions and Mappings#^def-13-7|Definition §13.7]]) of $D$ under the transformation $w = f(z)$ is contained in the domain of definition of a function $g(w)$ that is analytic there. Then the composition $g[f(z)]$ is analytic in $D$, with derivative
 >
 > $$
 > \frac{d}{dz}g[f(z)] = g'[f(z)]\,f'(z) .
@@ -116,14 +116,14 @@ The following property of analytic functions is especially useful, in addition t
 >
 > where $\operatorname{grad} u = u_x\mathbf i + u_y\mathbf j$ is the gradient vector (2). (Formula (1) requires $u$ to be differentiable; it is, because its partial derivatives exist and are continuous, being identically zero, throughout the open set $D$.) Because $u_x$ and $u_y$ are zero everywhere in $D$, $\operatorname{grad} u$ is the zero vector at all points of $L$, and $du/ds = 0$ along $L$. A function of the single variable $s$ with zero derivative on an interval is constant there, so $u$ is constant on $L$: $u(P) = u(P')$.
 >
-> **$u$ is constant in $D$.** Any two points $P$ and $Q$ in $D$ are connected by a polygonal line in $D$, a finite number of line segments joined end to end, since $D$ is a domain ([[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4]]). Applying the previous step to each segment in turn, the values of $u$ at $P$ and $Q$ are the same. So there is a real constant $a$ such that $u(x, y) = a$ throughout $D$. Similarly, $v(x, y) = b$, and $f(z) = a + bi$ at each point of $D$: $f(z) = c$ where $c = a + bi$.
+> **$u$ is constant in $D$.** Any two points $P$ and $Q$ in $D$ are connected by a polygonal line in $D$, a finite number of line segments joined end to end, since $D$ is a domain ([[§12★ Regions in the Complex Plane#^def-12-10|Definition §12.10]], [[§12★ Regions in the Complex Plane#^def-12-9|§12.9]]). Applying the previous step to each segment in turn, the values of $u$ at $P$ and $Q$ are the same. So there is a real constant $a$ such that $u(x, y) = a$ throughout $D$. Similarly, $v(x, y) = b$, and $f(z) = a + bi$ at each point of $D$: $f(z) = c$ where $c = a + bi$.
 
 ^pf-25-3
 
-*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], [[§7 Directional Derivatives#^thm-7-1|452 Thm. §7.1]] (directional derivative formula), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§12★ Regions in the Complex Plane#^def-12-9|Def. §12.9]], [[§12★ Regions in the Complex Plane#^def-12-10|Def. §12.10]], [[§7 Differentiability#^thm-7-2|452 Thm. §7.2]], [[§9 Directional Derivatives#^thm-9-1|452 Thm. §9.1]] (directional derivative formula), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative)
 
 > [!remark]- Connections
-> - The one-variable case is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]; the proof above reduces to it along each segment. Connectedness is essential: on the open set $|z| < 1$ or $|z - 3| < 1$, the function equal to $0$ on the first disk and $1$ on the second has $f' = 0$ but is not constant. B&C's polygonal connectedness implies connectedness in the topological sense, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]].
+> - The one-variable case is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]; the proof above reduces to it along each segment. Connectedness is essential: on the open set $|z| < 1$ or $|z - 3| < 1$, the function equal to $0$ on the first disk and $1$ on the second has $f' = 0$ but is not constant. B&C's polygonal connectedness implies connectedness in the topological sense, [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]].
 
 ## Singular Points
 

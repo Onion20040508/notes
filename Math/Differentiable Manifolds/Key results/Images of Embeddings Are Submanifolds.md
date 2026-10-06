@@ -19,7 +19,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Embeddings#^def-36-1|Definition §36.1: Embedding]]
 
 ## Its proof uses (other subjects)
-- [[§9 Continuous Functions#^prop-9-2|590 §9.2: Equivalent Definition of Homeomorphism]]
+- [[§10 Continuous Functions#^prop-10-2|590 §10.2: Equivalent Definition of Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
 - [[§36 Embeddings#^cor-36-3|Corollary §36.3: An Embedding Is a Diffeomorphism onto Its Image]]

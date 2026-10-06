@@ -35,7 +35,7 @@ tags: [differentiable-manifolds, hub]
 - [[Inverse Function Theorem (several variables)]] (Multivariable Analysis)
 - [[Bijection from Compact to Hausdorff is a Homeomorphism]] (Topology)
 - [[Universal Property of Quotient Maps]] (Topology)
-- [[§9 Continuous Functions#^def-9-2|590 §9.2: Homeomorphism]]
+- [[§10 Continuous Functions#^def-10-2|590 §10.2: Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
 - (not cited later in the course)

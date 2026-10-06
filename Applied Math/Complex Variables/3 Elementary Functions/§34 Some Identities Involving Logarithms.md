@@ -51,10 +51,10 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 
 ^pf-34-1
 
-*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]], [[§5 Inverse Functions and Logarithms#^thm-5-5|Calc Thm. §5.5]] (laws of logarithms)
+*Uses:* [[§31 The Logarithmic Function#^def-31-1|Def. §31.1]], [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]], [[§6 Logarithmic and Inverse Trigonometric Functions#^thm-6-2|Calc Thm. §6.2]] (laws of logarithms)
 
 > [!remark]- Connections
-> - The real law $\ln(xy) = \ln x + \ln y$: [[§5 Inverse Functions and Logarithms#^thm-5-5|Calc Thm. §5.5]], proved rigorously from $\ln x = \int_1^x dt/t$ in [[§121 The Logarithm Defined as an Integral#^thm-121-2|Calc Thm. §121.2]]. Theorem §34.1 is that law for the moduli plus the addition of arguments, [[§53 Complex Numbers#^thm-53-5|235 Thm. §53.5]] (the product has the sum of the arguments, "possibly shifted by $\pm2\pi$").
+> - The real law $\ln(xy) = \ln x + \ln y$: [[§6 Logarithmic and Inverse Trigonometric Functions#^thm-6-2|Calc Thm. §6.2]], proved rigorously from $\ln x = \int_1^x dt/t$ in [[§144 The Logarithm Defined as an Integral#^thm-144-2|Calc Thm. §144.2]]. Theorem §34.1 is that law for the moduli plus the addition of arguments, [[§64 Complex Numbers#^thm-64-5|235 Thm. §64.5]] (the product has the sum of the arguments, "possibly shifted by $\pm2\pi$").
 
 > [!theorem] Theorem §34.2: The Logarithm of a Quotient
 > If $z_1$ and $z_2$ are nonzero, then
@@ -183,7 +183,7 @@ Two further properties of $\log z$ prepare the power function of [[§35 The Powe
 
 ^pf-34-3
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]]
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-2|§8.2]], [[§144 The Logarithm Defined as an Integral#^thm-144-6|Calc Thm. §144.6]]
 
 > [!theorem] Proposition §34.4: Roots
 > If $z \ne 0$, then

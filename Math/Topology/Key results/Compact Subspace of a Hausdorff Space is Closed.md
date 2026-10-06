@@ -2,29 +2,29 @@
 subject: math
 type: theorem
 source: "[[Topology]]"
-aliases: ["Topology 15.4"]
+aliases: ["Topology 18.4"]
 tags: [topology, hub]
 ---
-![[§15 Compact Spaces#^thm-15-4]]
+![[§18 Compact Spaces#^thm-18-4]]
 
 ## Treated in
-- [[§15 Compact Spaces#^thm-15-4|Theorem §15.4: Compact Subspace of Hausdorff is Closed]], in [[§15 Compact Spaces]]
+- [[§18 Compact Spaces#^thm-18-4|Theorem §18.4: Compact Subspace of Hausdorff is Closed]], in [[§18 Compact Spaces]]
 
 ## Its proof uses
-- [[§8 Hausdorff Spaces#^def-8-1|Definition §8.1: Hausdorff Space]]
-- [[§15 Compact Spaces#^lem-15-1|Lemma §15.1: Compactness in Subspaces]]
+- [[§9 Hausdorff Spaces#^def-9-1|Definition §9.1: Hausdorff Space]]
+- [[§18 Compact Spaces#^lem-18-1|Lemma §18.1: Compactness in Subspaces]]
 
 ## Used in (Topology)
-- [[§15 Compact Spaces#^thm-15-7|Theorem §15.7: Bijection from Compact to Hausdorff]]
-- [[§15 Compact Spaces#^thm-15-12|Theorem §15.12: Heine-Borel Theorem for ℝⁿ]]
-- [[§17 Local Compactness#^prop-17-1|Proposition §17.1: The Collection 𝒯_Y is a Topology]]
-- [[§17 Local Compactness#^prop-17-2|Proposition §17.2: X is a Subspace of Y]]
-- [[§17 Local Compactness#^ex-17-5|Example §17.5: ℝ^ω is Not Locally Compact]]
-- [[§17 Local Compactness#^thm-17-5|Theorem §17.5: One-Point Compactification (Munkres 29.1)]]
-- [[§20 Normal Spaces#^thm-20-2|Theorem §20.2: Every Compact Hausdorff Space is Normal]]
-- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
-- [[§25a Retractions and Fixed Points#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
-- [[§27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
+- [[§18 Compact Spaces#^thm-18-7|Theorem §18.7: Bijection from Compact to Hausdorff]]
+- [[§18 Compact Spaces#^thm-18-12|Theorem §18.12: Heine-Borel Theorem for ℝⁿ]]
+- [[§20 Local Compactness#^prop-20-1|Proposition §20.1: The Collection 𝒯_Y is a Topology]]
+- [[§20 Local Compactness#^prop-20-2|Proposition §20.2: X is a Subspace of Y]]
+- [[§20 Local Compactness#^ex-20-5|Example §20.5: ℝ^ω is Not Locally Compact]]
+- [[§20 Local Compactness#^thm-20-5|Theorem §20.5: One-Point Compactification (Munkres 29.1)]]
+- [[§24 Normal Spaces#^thm-24-2|Theorem §24.2: Every Compact Hausdorff Space is Normal]]
+- [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-7|Lemma §32.7: Equivalent Conditions for Nullhomotopy]]
+- [[§34 Retractions and Fixed Points#^lem-34-8|Lemma §34.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
+- [[§37 The Fundamental Group of Sⁿ#^ex-37-1|Example §37.1: Wedge of Two Spheres is Simply Connected]]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
@@ -37,7 +37,7 @@ tags: [topology, hub]
 - [[§36 Embeddings#^cor-36-6|Corollary §36.6: Injective Immersions of Compact Manifolds]]
 
 ## Connections
-- **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§20 Normal Spaces#^thm-20-2|Every Compact Hausdorff Space is Normal]] ([[§20 Normal Spaces#^rem-20-4|The Two-Stage Pattern]]).
+- **Technique.** First separate x from each point of Y, then pass to a finite subcover. The same local-then-global argument, applied twice, proves [[§24 Normal Spaces#^thm-24-2|Every Compact Hausdorff Space is Normal]] ([[§24 Normal Spaces#^rem-24-4|The Two-Stage Pattern]]).
 - **Partner result.** With [[Closed Subspace of a Compact Space is Compact]] it yields [[Bijection from Compact to Hausdorff is a Homeomorphism]]. Since metric spaces are Hausdorff, it also gives the “compact ⇒ closed” half of [[Heine–Borel Theorem]].
-- **Hausdorff is needed.** In the three-point space of [[§7 Interior and Closure#^ex-7-7|Example §7.7]], the one-point set {b} is finite, hence compact, but it is not closed.
-- **Later.** It makes the one-point compactification work ([[§17 Local Compactness#^thm-17-5|One-Point Compactification]], §17.5) and is one reason Hausdorff is the “reasonable” separation axiom ([[§8 Hausdorff Spaces#^rem-8-1|remark in §8]]).
+- **Hausdorff is needed.** In the three-point space of [[§8 Interior and Closure#^ex-8-7|Example §8.7]], the one-point set {b} is finite, hence compact, but it is not closed.
+- **Later.** It makes the one-point compactification work ([[§20 Local Compactness#^thm-20-5|One-Point Compactification]], §17.5) and is one reason Hausdorff is the “reasonable” separation axiom ([[§9 Hausdorff Spaces#^rem-9-1|remark in §9]]).

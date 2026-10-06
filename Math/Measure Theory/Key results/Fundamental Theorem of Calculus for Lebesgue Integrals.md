@@ -2,28 +2,28 @@
 subject: math
 type: theorem
 source: "[[Measure Theory]]"
-aliases: ["MATH 551 18.13", "Lebesgue FTC"]
+aliases: ["MATH 551 32.1", "Lebesgue FTC"]
 tags: [measure-theory, hub]
 ---
-![[§18 Differentiation Theory#^thm-18-13]]
+![[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1]]
 
 ## Treated in
-- [[§18 Differentiation Theory#^thm-18-13|Theorem §18.13: The Fundamental Theorem of Calculus for Lebesgue Integrals]], in [[§18 Differentiation Theory]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1|Theorem §32.1: The Fundamental Theorem of Calculus for Lebesgue Integrals]], in [[§28 Differentiation Theory]]
 
 ## Its proof uses
-- [[§18 Differentiation Theory#^cor-18-10|Corollary §18.10: BV Functions are Differentiable A.E.]]
-- [[§18 Differentiation Theory#^prop-18-11|Proposition §18.11: Basic Properties of AC Functions]]
-- [[§18 Differentiation Theory#^thm-18-12|Theorem §18.12: The Integral Function is Absolutely Continuous]]
-- [[§18 Differentiation Theory#^thm-18-16|Theorem §18.16: AC ⇒ BV]]
-- [[§18 Differentiation Theory#^thm-18-26|Theorem §18.26: Differentiation of the Integral]]
-- [[§18 Differentiation Theory#^thm-18-27|Theorem §18.27]]
+- [[§29 Lebesgue's Differentiation Theorem#^cor-29-2|Corollary §29.2: BV Functions are Differentiable A.E.]]
+- [[§31 Absolute Continuity#^prop-31-1|Proposition §31.1: Basic Properties of AC Functions]]
+- [[§31 Absolute Continuity#^thm-31-2|Theorem §31.2: The Integral Function is Absolutely Continuous]]
+- [[§31 Absolute Continuity#^thm-31-3|Theorem §31.3: AC ⇒ BV]]
+- [[§30 Differentiating the Integral#^thm-30-7|Theorem §30.7: Differentiation of the Integral]]
+- [[§31 Absolute Continuity#^thm-31-4|Theorem §31.4]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^cor-18-14|Corollary §18.14: Term-by-Term Differentiation of AC Series]]
-- [[§18 Differentiation Theory#^thm-18-19|Theorem §18.19: AC Functions Map Null Sets to Null Sets]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^cor-32-2|Corollary §32.2: Term-by-Term Differentiation of AC Series]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-6|Theorem §32.6: AC Functions Map Null Sets to Null Sets]]
 
 ## Connections
-- **Proof idea.** AC ⇒ BV ([[§18 Differentiation Theory#^thm-18-16|§18.16]]), so f′ exists a.e. and is integrable ([[§18 Differentiation Theory#^cor-18-10|§18.10]]). Then F = f − f(a) − ∫ₐˣ f′ is AC ([[§18 Differentiation Theory#^thm-18-12|§18.12]]), F′ = 0 a.e. by [[§18 Differentiation Theory#^thm-18-26|Differentiation of the Integral]] (§18.26), and F is constant by [[§18 Differentiation Theory#^thm-18-27|Theorem §18.27]]. This completes the chain Vitali covering → Lebesgue differentiation → FTC.
+- **Proof idea.** AC ⇒ BV ([[§31 Absolute Continuity#^thm-31-3|§31.3]]), so f′ exists a.e. and is integrable ([[§29 Lebesgue's Differentiation Theorem#^cor-29-2|§29.2]]). Then F = f − f(a) − ∫ₐˣ f′ is AC ([[§31 Absolute Continuity#^thm-31-2|§31.2]]), F′ = 0 a.e. by [[§30 Differentiating the Integral#^thm-30-7|Differentiation of the Integral]] (§18.26), and F is constant by [[§31 Absolute Continuity#^thm-31-4|Theorem §31.4]]. This completes the chain Vitali covering → Lebesgue differentiation → FTC.
 - **Riemann vs Lebesgue.** In the MATH 451 [[Fundamental Theorem of Calculus]], FTC I needs f differentiable everywhere with Riemann-integrable f′, and FTC II gives F′ = f at points of continuity. Here absolute continuity replaces “differentiable everywhere”. The 451 step “f′ = 0 ⇒ constant” ([[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]], from the [[Mean Value Theorem]]) needs AC once f′ = 0 only a.e.
-- **Where hypotheses matter.** BV and continuity are not enough. The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] is continuous and increasing with φ′ = 0 a.e., yet φ(1) − φ(0) = 1. [[§18 Differentiation Theory#^thm-18-15|Lebesgue Decomposition]] (§18.15) splits such a singular part off an increasing function.
-- **Used for.** [[§18 Differentiation Theory#^cor-18-14|Term-by-term differentiation of AC series]] (§18.14) and [[§18 Differentiation Theory#^thm-18-19|AC Functions Map Null Sets to Null Sets]] (§18.19). It is also the tool of [[Measure Theory Problem-Solving Techniques#^rem-19-25|Technique 21: FTC + MCT for Series of Monotone AC Functions]].
+- **Where hypotheses matter.** BV and continuity are not enough. The [[§31 Absolute Continuity#^ex-31-1|Cantor function]] is continuous and increasing with φ′ = 0 a.e., yet φ(1) − φ(0) = 1. [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-3|Lebesgue Decomposition]] (§18.15) splits such a singular part off an increasing function.
+- **Used for.** [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^cor-32-2|Term-by-term differentiation of AC series]] (§18.14) and [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-6|AC Functions Map Null Sets to Null Sets]] (§18.19). It is also the tool of [[Measure Theory Problem-Solving Techniques#^rem-19-25|Technique 21: FTC + MCT for Series of Monotone AC Functions]].

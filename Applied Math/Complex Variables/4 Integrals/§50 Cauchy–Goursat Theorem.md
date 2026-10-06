@@ -45,7 +45,7 @@ and if $f(z) = u(x, y) + iv(x, y)$ and $z(t) = x(t) + iy(t)$, the integrand $f[z
 
 ^pf-50-1
 
-*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§42 Definite Integrals of Functions w(t)#^def-42-1|Def. §42.1]], [[§108 Line Integrals#^def-108-4|Calc Def. §108.4]] (line integrals with respect to $x$ and $y$)
+*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§42 Definite Integrals of Functions w(t)#^def-42-1|Def. §42.1]], [[§126 Line Integrals#^def-126-5|Calc Def. §126.5]] (line integrals with respect to $x$ and $y$)
 
 > [!remark] Remark: Circulation and Flux
 > If $f = u + iv$, the vector field $\mathbf{V} = (u, -v)$, the conjugate $\overline{f}$ read as a vector, satisfies $\mathbf{V}\cdot d\mathbf{r} = u\,dx - v\,dy$ and $\mathbf{V}\cdot\mathbf{n}\,ds = u\,dy + v\,dx$ for the outward normal of a positively oriented curve. So (3) reads
@@ -54,7 +54,7 @@ and if $f(z) = u(x, y) + iv(x, y)$ and $z(t) = x(t) + iy(t)$, the integrand $f[z
 > \int_C f(z)\,dz = \int_C \mathbf{V}\cdot d\mathbf{r} + i\int_C \mathbf{V}\cdot\mathbf{n}\,ds = \text{circulation} + i\,\text{flux}
 > $$
 >
-> of $\mathbf{V}$ around $C$. In fluid flow, $f$ is the derivative of the complex potential and $\mathbf{V}$ the velocity; the Cauchy–Riemann equations for $f$ say that $\mathbf{V}$ is irrotational ([[§111 Curl and Divergence#^def-111-2|Calc Def. §111.2]]) and divergence-free ([[§111 Curl and Divergence#^def-111-3|Calc Def. §111.3]]).
+> of $\mathbf{V}$ around $C$. In fluid flow, $f$ is the derivative of the complex potential and $\mathbf{V}$ the velocity; the Cauchy–Riemann equations for $f$ say that $\mathbf{V}$ is irrotational ([[§132 Curl and Divergence#^def-132-2|Calc Def. §132.2]]) and divergence-free ([[§132 Curl and Divergence#^def-132-3|Calc Def. §132.3]]).
 
 ^rem-50-1
 
@@ -103,10 +103,10 @@ $$
 
 ^pf-50-2
 
-*Uses:* [[§50 Cauchy–Goursat Theorem#^prop-50-1|§50.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]] (Cauchy–Riemann equations and $f' = u_x + iv_x$), [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (Green's theorem), [[§44 Contour Integrals#^thm-44-2|§44.2]], [[§43 Contours#^thm-43-4|§43.4]] (the interior of $C$)
+*Uses:* [[§50 Cauchy–Goursat Theorem#^prop-50-1|§50.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]] (Cauchy–Riemann equations and $f' = u_x + iv_x$), [[§130 Green's Theorem#^thm-130-1|Calc Thm. §130.1]] (Green's theorem), [[§44 Contour Integrals#^thm-44-2|§44.2]], [[§43 Contours#^thm-43-4|§43.4]] (the interior of $C$)
 
 > [!remark]- Connections
-> - Green's theorem: [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]], proved rigorously in [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] (for $C^1$ functions on an open set containing the closed region). The two integrands $Q_x - P_y$ in (4) are the curl and the divergence of the field $\mathbf{V} = (u, -v)$ of the remark on circulation and flux above, so Theorem §50.2 is "curl-free and divergence-free fields have zero circulation and zero flux".
+> - Green's theorem: [[§130 Green's Theorem#^thm-130-1|Calc Thm. §130.1]], proved rigorously in [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]] (for $C^1$ functions on an open set containing the closed region). The two integrands $Q_x - P_y$ in (4) are the curl and the divergence of the field $\mathbf{V} = (u, -v)$ of the remark on circulation and flux above, so Theorem §50.2 is "curl-free and divergence-free fields have zero circulation and zero flux".
 > - Cauchy's theorem says that the real 1-forms $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed (that is the Cauchy–Riemann equations); on a region without holes closed forms are exact, which is the antiderivative of [[§52 Simply Connected Domains#^cor-52-2|Corollary §52.2]].
 
 This result was obtained by Cauchy in the early part of the nineteenth century.
@@ -136,7 +136,7 @@ $$
 The proof in [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)|§51]] takes $C$ positively oriented; the other orientation follows as in the proof of Theorem §50.2. B&C remarks that a reader who wishes to accept the theorem without proof may pass directly to §52. Extensions to closed contours that cross themselves and to domains without holes are in [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]], and to regions with holes in [[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]].
 
 > [!remark] Remark: Method — Showing That an Integral Around a Closed Contour Is Zero
-> 1. **Locate the trouble.** Find where $f$ fails to be analytic: zeros of denominators, branch cuts ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]) of logarithms and powers, points where $f$ involves $\bar z$, $|z|$, $\operatorname{Re} z$.
+> 1. **Locate the trouble.** Find where $f$ fails to be analytic: zeros of denominators, branch cuts ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]) of logarithms and powers, points where $f$ involves $\bar z$, $|z|$, $\operatorname{Re} z$.
 > 2. **Check the region.** If none of these points lies inside or on the simple closed contour $C$, then $\int_C f(z)\,dz = 0$ by the Cauchy–Goursat theorem (and, if $f'$ is visibly continuous there, already by Theorem §50.2). The orientation of $C$ does not matter.
 > 3. **Alternatively**, if $f$ has an antiderivative on a domain containing $C$, the integral is zero by [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]; this works for closed contours that are not simple.
 > 4. **If a trouble point lies inside $C$**, the integral need not vanish ($\int_{|z|=1} dz/z = 2\pi i$); it is computed by deforming $C$ ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), by the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) or by residues ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]). The hypothesis is sufficient, not necessary: $\int_{|z|=1} dz/z^2 = 0$ although $1/z^2$ is not analytic at $0$ ([[§48 Antiderivatives#^ex-48-2|Example §48.2]]).

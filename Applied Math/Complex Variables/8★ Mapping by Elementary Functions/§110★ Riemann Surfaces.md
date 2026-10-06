@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 110
+section: "110★"
 bc: "110"
 aliases: ["B&C 110"]
 tags: [complex-variables, math342, extension]
@@ -17,7 +17,7 @@ A multiple-valued function such as $\log z$ or $z^{1/2}$ becomes single-valued i
 ## The Idea
 
 > [!definition] Definition §110.1: Riemann Surface
-> A **Riemann surface** for a [[§13 Functions and Mappings#^def-13-4|multiple-valued function]] is a generalization of the complex plane consisting of more than one sheet, the sheets being joined along cuts, such that at each point of the surface only one value of the function is assigned. Once a Riemann surface is devised for a given function, the function is single-valued on the surface, and the theory of single-valued functions applies there.
+> A **Riemann surface** for a [[§13 Functions and Mappings#^def-13-5|multiple-valued function]] is a generalization of the complex plane consisting of more than one sheet, the sheets being joined along cuts, such that at each point of the surface only one value of the function is assigned. Once a Riemann surface is devised for a given function, the function is single-valued on the surface, and the theory of single-valued functions applies there.
 >
 > *B&C: Sec. 110 (text)*
 
@@ -43,7 +43,7 @@ In each example below, a point of a sheet has polar coordinates $r$ and $\theta$
 *A sketch of the Riemann surface for $\log z$ over the disk $|z| \le 1$, drawn with height $\theta = \operatorname{Im}\log z$: a spiral staircase in which $R_0$ (blue, $0 \le \theta \le 2\pi$) continues smoothly into $R_1$ (red, $2\pi \le \theta \le 4\pi$) and so on. The green path circles the origin once and climbs from $R_0$ onto $R_1$; above any point of the punctured plane lie infinitely many points of the surface, one on each sheet.*
 
 > [!remark]- Connections
-> - The projection of this surface onto the punctured plane is a covering map with infinitely many sheets, [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]] and [[§24 Covering Spaces#^def-24-5|590 Def. §24.5]]; in the $w$ coordinate it is $w \mapsto e^w$ from $\mathbb{C}$ onto $\mathbb{C} \setminus \{0\}$, the complex form of $p\colon \mathbb{R} \to S^1$, [[§24 Covering Spaces#^thm-24-2|590 Thm. §24.2]]. B&C's sheets are the slices of the evenly covered cut plane.
+> - The projection of this surface onto the punctured plane is a covering map with infinitely many sheets, [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]] and [[§31 Covering Spaces#^def-31-5|590 Def. §31.5]]; in the $w$ coordinate it is $w \mapsto e^w$ from $\mathbb{C}$ onto $\mathbb{C} \setminus \{0\}$, the complex form of $p\colon \mathbb{R} \to S^1$, [[§31 Covering Spaces#^thm-31-2|590 Thm. §31.2]]. B&C's sheets are the slices of the evenly covered cut plane.
 > - In modern terms a Riemann surface is a connected surface with complex charts, a topological manifold of dimension $2$ ([[§2 Topological Manifolds#^def-2-2|591 Def. §2.2]]) whose transition maps are analytic.
 
 > [!example] Example §110.2: A Riemann Surface for z^(1/2)

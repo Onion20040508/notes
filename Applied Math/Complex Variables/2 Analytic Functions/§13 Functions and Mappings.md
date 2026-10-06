@@ -24,7 +24,7 @@ Chapter 2 develops a theory of differentiation for functions of a complex variab
 
 ^def-13-1
 
-The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane#^def-12-new6|Definition §12.10]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
+The domain of definition is often a domain in the sense of [[§12★ Regions in the Complex Plane#^def-12-10|Definition §12.10]] (an open connected set), but it need not be. It is also not always convenient to distinguish in notation between a function and its values; one speaks of "the function $z^2$".
 
 > [!example] Example §13.1: The Function 1/z
 > If $f$ is defined on the set $z \ne 0$ by $w = 1/z$, it may be referred to simply as the function $w = 1/z$, or the function $1/z$. Its domain of definition is the largest set on which the rule makes sense, the punctured plane $z \ne 0$.
@@ -96,23 +96,23 @@ Suppose that $u + iv$ is the value of $f$ at $z = x + iy$, that is, $u + iv = f(
 
 ^def-13-3
 
-> [!definition] Definition §13.4: Rational Function
+> [!definition] Definition §13.5: Rational Function
 > Quotients $P(z)/Q(z)$ of polynomials are **rational functions**; they are defined at each point $z$ where $Q(z) \ne 0$.
 >
 > *B&C: Sec. 13 (text)*
 
-^def-13-new1
+^def-13-4
 
 B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polynomials of degree $0$, which Exercise 10 of Section 20 uses. Polynomials and rational functions are elementary, but important, classes of functions of a complex variable; their limits, continuity and derivatives are found in [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3]], [[§18 Continuity#^prop-18-1|Proposition §18.1]] and [[§20 Rules for Differentiation#^ex-20-2|Example §20.2]].
 
 ## Multiple-Valued Functions
 
-> [!definition] Definition §13.4: Multiple-Valued Function
+> [!definition] Definition §13.6: Multiple-Valued Function
 > A **multiple-valued function** is a rule that assigns more than one value to a point $z$ in the domain of definition. When multiple-valued functions are studied, usually just one of the possible values assigned at each point is taken, in a systematic manner, and a (single-valued) function is constructed from the multiple-valued one.
 >
 > *B&C: Sec. 13 (text)*
 
-^def-13-4
+^def-13-5
 
 > [!example] Example §13.3: The Principal Square Root
 > Let $z$ be any nonzero complex number. By [[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]], $z^{1/2}$ has the two values
@@ -129,7 +129,7 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 >
 > well defined on the set of nonzero numbers. Since zero is the only square root of zero, set $f(0) = 0$; then $f$ is well defined on the entire plane.
 >
-> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]] and [[§35 The Power Function#^def-35-new1|Definition §35.3]].
+> Each value is indeed a square root: $f(z)^2 = r\exp(i\Theta) = z$. For example $f(4i) = 2e^{i\pi/4} = \sqrt2 + i\sqrt2$, and $f(-1) = e^{i\pi/2} = i$. The systematic choice has a price on the negative real axis: points just below $-1$ have $\Theta$ near $-\pi$, so their values $f(z)$ are near $e^{-i\pi/2} = -i$, not near $f(-1) = i$. So $f$ jumps across the negative real axis; such choices are studied as branches in [[§33 Branches and Derivatives of Logarithms#^def-33-2|Definition §33.2]] and [[§35 The Power Function#^def-35-3|Definition §35.3]].
 >
 > *B&C: Sec. 13, Example 5*
 
@@ -139,12 +139,12 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 
 The graph of a real function of a real variable displays its properties, but when $w = f(z)$ with $z$ and $w$ complex there is no such convenient picture, because each of $z$ and $w$ is located in a plane rather than on a line. One can display some information by indicating pairs of corresponding points $z = (x, y)$ and $w = (u, v)$; it is generally simpler to draw the $z$ and $w$ planes separately.
 
-> [!definition] Definition §13.5: Mapping
+> [!definition] Definition §13.6: Mapping
 > When a function $f$ is thought of as carrying points of the $z$ plane to points of the $w$ plane, it is called a **mapping**, or **transformation**.
 >
 > *B&C: Sec. 13 (text)*
 
-^def-13-5
+^def-13-6
 
 > [!definition] Definition §13.7: Image and Range
 > Let $f$ be a mapping with domain of definition $S$.
@@ -154,14 +154,14 @@ The graph of a real function of a real variable displays its properties, but whe
 >
 > *B&C: Sec. 13 (text)*
 
-^def-13-new2
+^def-13-7
 
 > [!definition] Definition §13.8: Inverse Image
 > The **inverse image** of a point $w$ under a mapping $f$ with domain of definition $S$ is the set of all points $z$ in $S$ that have $w$ as their image. It may contain just one point, many points, or none at all; the last case occurs when $w$ is not in the range of $f$.
 >
 > *B&C: Sec. 13 (text)*
 
-^def-13-new3
+^def-13-8
 
 For instance, under $w = z^2$ the inverse image of $w = 4$ is $\{2, -2\}$, and under $w = 1/z$ the inverse image of $w = 0$ is empty, since $0$ is not in the range of $1/z$.
 
@@ -182,6 +182,6 @@ For instance, under $w = z^2$ the inverse image of $w = 4$ is $\{2, -2\}$, and u
 ^ex-13-4
 
 > [!remark]- Connections
-> - Multiplication by a complex number of modulus one as a rotation, and by any $a + bi$ as a rotation followed by a scaling: [[§53 Complex Numbers#^ex-53-3|235 Ex. §53.3]], [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]] (the rotation–scaling matrix of $z \mapsto (a + bi)z$).
+> - Multiplication by a complex number of modulus one as a rotation, and by any $a + bi$ as a rotation followed by a scaling: [[§64 Complex Numbers#^ex-64-3|235 Ex. §64.3]], [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]] (the rotation–scaling matrix of $z \mapsto (a + bi)z$).
 
 More information is usually shown by sketching images of curves and regions than by marking images of single points. The next section does this for $w = z^2$.

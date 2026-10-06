@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 136
+section: "136★"
 bc: "136"
 aliases: ["B&C 136"]
 tags: [complex-variables, math342, extension]
@@ -92,7 +92,7 @@ These examples use the two forms of the solution of the Dirichlet problem for a 
 ^ex-136-1
 
 > [!remark]- Connections
-> - The same problem, rotated by a quarter turn ($V = 1$ on the right half), is [[§39 Potential in a Disk#^ex-39-1|341 Ex. §39.1]], solved there by the Fourier series of the boundary values and summed to $\frac12 + \frac1\pi\arg\frac{c + iz}{c - iz}$; its figure shows the circular level curves.
+> - The same problem, rotated by a quarter turn ($V = 1$ on the right half), is [[§48 Potential in a Disk#^ex-48-1|341 Ex. §48.1]], solved there by the Fourier series of the boundary values and summed to $\frac12 + \frac1\pi\arg\frac{c + iz}{c - iz}$; its figure shows the circular level curves.
 
 > [!example] Example §136.2: A Cylinder with Surface Temperature A cos θ
 > Find the steady temperatures $T(r, \theta)$ in a solid cylinder $r \le r_0$ of infinite length when $T(r_0, \theta) = A\cos\theta$ for a constant $A$.
@@ -117,7 +117,7 @@ These examples use the two forms of the solution of the Dirichlet problem for a 
 > T(r, \theta) = \frac{A}{r_0}(r\cos\theta) = \frac{A}{r_0}x . \qquad (5)
 > $$
 >
-> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures#^def-118-new1|Definition §118.2]]).
+> It is harmonic (linear), equals $A\cos\theta$ on $r = r_0$, and has mean $0$ at the center. Since $\partial T/\partial y = 0$, no heat flows across the plane $y = 0$ ([[§118★ Steady Temperatures#^def-118-2|Definition §118.2]]).
 >
 > *B&C: Sec. 136, Example 2; Exercise 8*
 

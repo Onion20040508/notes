@@ -43,7 +43,7 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 *The helix is the interval $(0, 4\pi)$, lifted so that $F$ becomes the vertical projection onto the circle. On the orange interval $U$ the projection is a diffeomorphism onto the arc $V$; but the point $q \in V$ has a second preimage $t_1 + 2\pi$, on the other turn and outside $U$. Local invertibility does not see it.*
 
 > [!remark]- Connections
-> - As a covering map of topological spaces: [[§24 Covering Spaces#^thm-24-2|590 §24.2]] ($\mathbb{R} \to S^1$ is a covering map).
+> - As a covering map of topological spaces: [[§31 Covering Spaces#^thm-31-2|590 §31.2]] ($\mathbb{R} \to S^1$ is a covering map).
 
 The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§37 Projective Spaces and the Hopf Fibration|§37]].
 
@@ -53,8 +53,8 @@ The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is co
 ^rem-31-2
 
 > [!remark]- Connections
-> - Covering maps are defined in [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]]; the same failure for a half-line, $\mathbb{R}_+ \to S^1$, is [[§24 Covering Spaces#^ex-24-2|590 Ex. §24.2]].
-> - Used in Quantum Mechanics: $S^3 \to \mathbb{RP}^3$ is $SU(2) \to SO(3)$; because $SU(2)$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|590 §27.3]]) and $SO(3)$ is not ([[§28 Fundamental Group of Some Surfaces#^thm-28-3|590 §28.3]]), the sign of a spinor under a rotation by $2\pi$ cannot be removed — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^rem-c5-2-6|QM ★ Remark: Why the sign cannot be removed]].
+> - Covering maps are defined in [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]]; the same failure for a half-line, $\mathbb{R}_+ \to S^1$, is [[§31 Covering Spaces#^ex-31-2|590 Ex. §31.2]].
+> - Used in Quantum Mechanics: $S^3 \to \mathbb{RP}^3$ is $SU(2) \to SO(3)$; because $SU(2)$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|590 §37.3]]) and $SO(3)$ is not ([[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 §38.3]]), the sign of a spinor under a rotation by $2\pi$ cannot be removed — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^rem-c5-2-6|QM ★ Remark: Why the sign cannot be removed]].
 
 The converse direction of the main theorem rests on one theorem from analysis — “that's really what's paying the bills here.”
 
@@ -66,12 +66,12 @@ The converse direction of the main theorem rests on one theorem from analysis �
 ^thm-31-1
 
 > [!proof]+ Proof (to be filled)
-> Taken from analysis, not proved in this course (Lee, Theorem C.34; [[Inverse Function Theorem (several variables)|452 §13.2]] proves the two-variable case). To be filled.
+> Taken from analysis, not proved in this course (Lee, Theorem C.34; [[Inverse Function Theorem (several variables)|452 §16.2]] proves the two-variable case). To be filled.
 
 ^pf-31-1
 
 > [!remark]- Connections
-> - Home in analysis (the two-variable version): [[Inverse Function Theorem (several variables)|452 §13.2]].
+> - Home in analysis (the two-variable version): [[Inverse Function Theorem (several variables)|452 §16.2]].
 > - The implicit function theorem it should not be confused with: [[§7 The Regular Value Theorem#^thm-7-1|§7.1]].
 
 Lee, Theorem C.34; taken from analysis, not proved in the course. It should not be confused with the *implicit* function theorem of [[§7 The Regular Value Theorem|§7]] — the board's “IFT” now means the inverse one. Each theorem can be derived from the other.

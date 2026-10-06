@@ -39,7 +39,7 @@ Recall that $\mathbb{Q}$ is a field: it carries the two operations of addition a
 ^rem-3-2
 
 > [!remark]- Connections
-> - In 250 the same laws are taken as the properties of ℝ, [[§2 Implications#^def-2-8|250 Def. §2.8]], and verified for the constructed ℚ in [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - In 250 the same laws are taken as the properties of ℝ, [[§2 Implications#^def-2-9|250 Def. §2.9]], and verified for the constructed ℚ in [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]].
 > - The same axioms packaged as two abelian groups and a distributive law: [[§3 Basic Examples of Groups#^def-3-3|493 Def. §3.3]].
 
 ## Order Axioms: Ordered Fields
@@ -123,13 +123,13 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 
 > [!remark]- Connections
 > - Parts (d) and (e) in 250: [[§3 Proofs#^prop-3-2|250 Prop. §3.2]], [[§3 Proofs#^cor-3-3|250 Cor. §3.3]] (squares are non-negative, 1 > 0, products of positive numbers are positive).
-> - Computational version: rules for inequalities, [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]] (with worked examples).
+> - Computational version: rules for inequalities, [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-2|Calc Thm. §139.2]] (with worked examples).
 
 ## Partial Orders; $\mathbb{C}$ Is Not an Ordered Field
 
 People often expect to order everything — in competitions, in admission to schools. This expectation is exactly property O1: any two elements can be compared. But O1 is not always available.
 
-> [!definition] Definition §3.3: Ordered Sets
+> [!definition] Definition §3.4: Ordered Sets
 > A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**).
 
 ^def-3-3
@@ -137,10 +137,10 @@ People often expect to order everything — in competitions, in admission to sch
 > [!remark]- Connections
 > - 590 uses the strict form: an order relation, [[§3 Order Topology#^def-3-1|590 Def. §3.1]], which defines the order topology.
 
-> [!definition] Definition §3.3: Partially Ordered Sets
+> [!definition] Definition §3.5: Partially Ordered Sets
 > Let $\leq$ be a relation on a set. If $\leq$ satisfies only O2, O3 and *reflexivity* ($a \leq a$ for every $a$, which O1 implies but which must be required separately once O1 is dropped), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
 
-^def-3-new1
+^def-3-4
 
 > [!example] Example §3.1: The Product Order on $\mathbb{R}^2$ Is Partial but Not Linear
 > On the plane $\mathbb{R}^2$, define
@@ -185,7 +185,7 @@ Since $\mathbb{C}$ can be identified with $\mathbb{R}^2$, the lexicographic orde
 
 For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of absolute value.
 
-> [!definition] Definition §3.4: Absolute Value
+> [!definition] Definition §3.6: Absolute Value
 > For $a \in \mathbb{R}$, define
 >
 > $$
@@ -198,11 +198,11 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 >
 > In the latter case $-a \geq 0$ (property (a)), so in any case $|a| \geq 0$.
 
-^def-3-4
+^def-3-5
 
 > [!remark]- Connections
-> - Same definition: [[§1 The Language of Mathematics#^def-1-4|250 Def. §1.4]].
-> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]] (with worked examples).
+> - Same definition: [[§1 The Language of Mathematics#^def-1-6|250 Def. §1.6]].
+> - Computational version: [[§139 Numbers, Inequalities, and Absolute Values#^def-139-6|Calc Def. §139.6]] (with worked examples).
 
 > [!theorem] Theorem §3.3: Properties of the Absolute Value
 > For all $a, b \in \mathbb{R}$:
@@ -226,7 +226,7 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 ^pf-3-3
 
-*Uses:* [[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
+*Uses:* [[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]]
 
 > [!remark] Remark
 > Think about what these two properties mean: they describe how $|\cdot|$ interacts with the two field operations $+$ and $\times$ — sub-additive for $+$ (with equality exactly when $a, b$ have the same sign), and exactly multiplicative for $\times$.
@@ -235,19 +235,19 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 > [!remark]- Connections
 > - Elementary version: [[§4 Proof by Contradiction#^ex-4-5|250 Ex. §4.5]] (both parts, by comparing squares, with equality in (i) exactly when ab ≥ 0).
-> - Computational version: the triangle inequality, [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Calc Thm. §116.6]] (with worked examples).
+> - Computational version: the triangle inequality, [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-6|Calc Thm. §139.6]] (with worked examples).
 
-> [!definition] Definition §3.5: Distance
+> [!definition] Definition §3.6: Distance
 > The **distance** between two numbers $a, b \in \mathbb{R}$ (two points on the real line) is
 >
 > $$
 > \operatorname{dist}(a, b) = |a - b|.
 > $$
 
-^def-3-5
+^def-3-6
 
 > [!remark]- Connections
-> - Computational version: distance as $|a - b|$ in [[§116 Numbers, Inequalities, and Absolute Values#^def-116-6|Calc Def. §116.6]].
+> - Computational version: distance as $|a - b|$ in [[§139 Numbers, Inequalities, and Absolute Values#^def-139-6|Calc Def. §139.6]].
 
 > [!theorem] Proposition §3.4: Properties of Distance
 > For all $a, b, c \in \mathbb{R}$:
@@ -271,4 +271,4 @@ For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of ab
 
 ^pf-3-4
 
-*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]]
+*Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-6|Def. §3.6]]

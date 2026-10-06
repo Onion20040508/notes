@@ -14,14 +14,14 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (6), [[Ordinary Differential Equations]] (2), [[Complex Variables]] (3)
 
 ## Sections
-- [[§86 Vector Functions and Space Curves]] — Stewart 13.1
-- [[§87 Derivatives and Integrals of Vector Functions]] — Stewart 13.2
-- [[§88 Arc Length and Curvature]] — Stewart 13.3
-- [[§89 Motion in Space꞉ Velocity and Acceleration]] — Stewart 13.4
+- [[§100 Vector Functions and Space Curves]] — Stewart 13.1
+- [[§101 Derivatives and Integrals of Vector Functions]] — Stewart 13.2
+- [[§102 Arc Length and Curvature]] — Stewart 13.3
+- [[§104 Motion in Space꞉ Velocity and Acceleration]] — Stewart 13.4
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§88 Arc Length and Curvature#^thm-88-1|Theorem §88.1: Arc Length Formula]]: 24 later results
-- [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1: Differentiate Each Component]]: 19 later results
-- [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2: Differentiation Rules]]: 11 later results
-- [[§88 Arc Length and Curvature#^prop-88-2|Proposition §88.2: Derivative of Arc Length]]: 9 later results
+- [[§102 Arc Length and Curvature#^thm-102-1|Theorem §102.1: Arc Length Formula]]: 24 later results
+- [[§101 Derivatives and Integrals of Vector Functions#^thm-101-1|Theorem §101.1: Differentiate Each Component]]: 19 later results
+- [[§101 Derivatives and Integrals of Vector Functions#^thm-101-2|Theorem §101.2: Differentiation Rules]]: 11 later results
+- [[§102 Arc Length and Curvature#^prop-102-2|Proposition §102.2: Derivative of Arc Length]]: 9 later results

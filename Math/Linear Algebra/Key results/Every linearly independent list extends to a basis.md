@@ -18,7 +18,7 @@ tags: [linear-algebra, hub]
 - [[§6 Dimension#^ladr-2-38|2.38 Linearly independent list of the right length is a basis]]
 - [[§6 Dimension#^ladr-2-43|2.43 Dimension of a sum]]
 - [[Fundamental theorem of linear maps|3.21 Fundamental theorem of linear maps]]
-- [[§20 Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
+- [[§21 Orthonormal Bases#^ladr-6-36|6.36 Every orthonormal list extends to an orthonormal basis]]
 
 ## Used in (Group Theory)
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|Proposition §32.1: GL_3(ℝ) Acting on ℝ³]]
@@ -29,5 +29,5 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[§6 Dimension#^ladr-2-43|Dimension of a sum]], [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].
-- Inner-product version: [[§20 Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).
-- **Also in [[Applied Linear Algebra]]:** [[§27 The Dimension of a Vector Space#^thm-27-3|235 Thm. §27.3]] (any linearly independent set in a subspace H expands to a basis of H); an independent pair in ℝ³ extended to a basis in [[§25 Linearly Independent Sets; Bases#^ex-25-5|235 Ex. §25.5]](a).
+- Inner-product version: [[§21 Orthonormal Bases#^ladr-6-36|Every orthonormal list extends to an orthonormal basis]] (via [[Gram–Schmidt procedure]]).
+- **Also in [[Applied Linear Algebra]]:** [[§33 The Dimension of a Vector Space#^thm-33-3|235 Thm. §33.3]] (any linearly independent set in a subspace H expands to a basis of H); an independent pair in ℝ³ extended to a basis in [[§31 Linearly Independent Sets; Bases#^ex-31-5|235 Ex. §31.5]](a).

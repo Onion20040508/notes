@@ -36,7 +36,7 @@ Functions arise whenever one quantity depends on another. The area $A$ of a circ
 ^rem-1-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§8 Functions#^def-8-1|250 Def. §8.1]]. There the set $E$ is part of the function and is called its codomain; Stewart's range is the image [[§8 Functions#^def-8-9|250 Def. §8.9]], a subset of the codomain. Stewart's graph ([[§1 Four Ways to Represent a Function#^def-1-2|Definition §1.2]]) is [[§8 Functions#^def-8-10|250 Def. §8.10]].
+> - Rigorous treatment: [[§8 Functions#^def-8-1|250 Def. §8.1]]. There the set $E$ is part of the function and is called its codomain; Stewart's range is the image [[§8 Functions#^def-8-10|250 Def. §8.10]], a subset of the codomain. Stewart's graph ([[§1 Four Ways to Represent a Function#^def-1-2|Definition §1.2]]) is [[§8 Functions#^def-8-11|250 Def. §8.11]].
 
 > [!definition] Definition §1.2: Graph of a Function
 > If $f$ is a function with domain $D$, its **graph** is the set of ordered pairs
@@ -121,7 +121,7 @@ In calculus a function is most often defined by an algebraic formula: $y = 2x - 
 > C(w) = 20w^2 + 36w \cdot \frac{5}{w^2} = 20w^2 + \frac{180}{w}, \qquad w > 0 .
 > $$
 >
-> The domain $w > 0$ comes from the physical situation, not from the formula. Setting up such functions is the first step in the optimization problems of Chapter 4 ([[§31 Optimization Problems|§31]]).
+> The domain $w > 0$ comes from the physical situation, not from the formula. Setting up such functions is the first step in the optimization problems of Chapter 4 ([[§34 Optimization Problems|§34]]).
 >
 > *Stewart: Example 1.1.5*
 
@@ -333,6 +333,6 @@ Not every equation, table or curve defines a function: it must give *exactly one
 > f(x_2) - f(x_1) = x_2^2 - x_1^2 = (x_2 - x_1)(x_2 + x_1) .
 > $$
 >
-> Let $x_1 < x_2$, so $x_2 - x_1 > 0$. If $0 \le x_1 < x_2$, then $x_2 + x_1 > 0$, so $f(x_2) - f(x_1) > 0$: $f$ is increasing on $[0, \infty)$. If $x_1 < x_2 \le 0$, then $x_2 + x_1 < 0$, so $f(x_2) - f(x_1) < 0$: $f$ is decreasing on $(-\infty, 0]$. In Chapter 4 the sign of the derivative gives such conclusions directly ([[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], the Increasing/Decreasing Test).
+> Let $x_1 < x_2$, so $x_2 - x_1 > 0$. If $0 \le x_1 < x_2$, then $x_2 + x_1 > 0$, so $f(x_2) - f(x_1) > 0$: $f$ is increasing on $[0, \infty)$. If $x_1 < x_2 \le 0$, then $x_2 + x_1 < 0$, so $f(x_2) - f(x_1) < 0$: $f$ is decreasing on $(-\infty, 0]$. In Chapter 4 the sign of the derivative gives such conclusions directly ([[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-1|Theorem §30.1]], the Increasing/Decreasing Test).
 
 ^rem-1-4

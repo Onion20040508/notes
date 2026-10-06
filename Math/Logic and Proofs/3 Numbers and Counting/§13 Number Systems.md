@@ -20,21 +20,21 @@ Numbers arose for counting, which needs only the positive integers; subtraction 
 
 ## 13.1 The Rational Numbers
 
-The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers ([[§2 Implications#^def-2-8|Definition §2.8]], Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in §22a ([[§22 Partitions and Equivalence Relations#^def-22-6|Definition §22.6]] and [[§22 Partitions and Equivalence Relations#^thm-22-9|Theorem §22.9]]; Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
+The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers ([[§2 Implications#^def-2-9|Definition §2.9]], Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in §22a ([[§22a Constructing ℚ and ℤ#^def-22a-2|Definition §22a.2]] and [[§22a Constructing ℚ and ℤ#^thm-22a-4|Theorem §22a.4]]; Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
 
-> [!definition] Definition §13.1: Fraction
+> [!definition] Definition §13.2: Fraction
 > A **fraction** is an expression $a/b$ with $a, b \in \Z$ and $b \ne 0$; $a$ is its **numerator** and $b$ its **denominator**.
 >
 > *Eccles: Definition 13.1.1*
 
 ^def-13-1
 
-> [!definition] Definition §13.1: The Rational Number a Fraction Represents
+> [!definition] Definition §13.3: The Rational Number a Fraction Represents
 > The fraction $a/b$ **represents** the **rational number** $q$ with $bq = a$. As a temporary notation, write $q = \langle a/b \rangle$.
 >
 > *Eccles: Definition 13.1.1*
 
-^def-13-new1
+^def-13-2
 
 Since $1x = a$ has the integer solution $a$, the integers sit inside the rationals: $a = \langle a/1 \rangle$.
 
@@ -56,16 +56,16 @@ Since $1x = a$ has the integer solution $a$, the integers sit inside the rationa
 
 ^pf-13-1
 
-*Uses:* [[§13 Number Systems#^def-13-1|Def. §13.1]], [[§13 Number Systems#^def-13-new1|Def. §13.1]]
+*Uses:* [[§13 Number Systems#^def-13-1|Def. §13.1]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
 
 For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \rangle$.
 
-> [!definition] Definition §13.2: Lowest Terms
+> [!definition] Definition §13.4: Lowest Terms
 > The fraction $a/b$ is **in lowest terms** when $b$ is positive and $a$ and $b$ are coprime.
 >
 > *Eccles: Definition 13.1.3*
 
-^def-13-2
+^def-13-3
 
 > [!theorem] Proposition §13.2: Every Rational Number Has a Lowest-Terms Fraction
 > Every rational number is represented by a fraction in lowest terms.
@@ -79,25 +79,25 @@ For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \r
 
 ^pf-13-2
 
-*Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§13 Number Systems#^def-13-2|Def. §13.2]]
+*Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§11 Properties of Finite Sets#^prop-11-10|§11.10]], [[§13 Number Systems#^def-13-3|Def. §13.3]]
 
 The lowest-terms fraction is in fact unique; this needs [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Euclid's lemma]] and is proved later, in [[§17 Consequences of the Euclidean Algorithm#^ex-17-7|Example §17.7]] (Eccles Exercise 17.6). Nothing before §17 uses the uniqueness.
 
 To see how sums look in terms of fractions, let $q_1 = \langle a/b \rangle$ and $q_2 = \langle c/d \rangle$, so $bq_1 = a$ and $dq_2 = c$. Then $bdq_1 = ad$ and $bdq_2 = bc$, so by distributivity $bd(q_1 + q_2) = ad + bc$: $q_1 + q_2$ is represented by $(ad + bc)/bd$. Similarly $bd\,q_1 q_2 = ac$, so $q_1 q_2$ is represented by $ac/bd$.
 
-> [!definition] Definition §13.3: Sum and Product of Fractions
+> [!definition] Definition §13.5: Sum and Product of Fractions
 > $$
 > \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}, \qquad \frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}.
 > $$
 >
 > *Eccles: Definition 13.1.4*
 
-^def-13-3
+^def-13-4
 
 Whenever an object has several expressions and an operation is defined using an expression, one must check that different expressions of the same object give the same answer: that the operation is **well defined**.
 
 > [!theorem] Proposition §13.3: Arithmetic of Fractions Is Well Defined
-> Addition and multiplication of rational numbers are well defined by the formulas of Definition [[§13 Number Systems#^def-13-3|§13.3]]: if $\langle a_1/b_1 \rangle = \langle a_2/b_2 \rangle$ and $\langle c_1/d_1 \rangle = \langle c_2/d_2 \rangle$, then
+> Addition and multiplication of rational numbers are well defined by the formulas of Definition [[§13 Number Systems#^def-13-4|§13.4]]: if $\langle a_1/b_1 \rangle = \langle a_2/b_2 \rangle$ and $\langle c_1/d_1 \rangle = \langle c_2/d_2 \rangle$, then
 >
 > $$
 > \Bigl\langle \frac{a_1}{b_1} + \frac{c_1}{d_1} \Bigr\rangle = \Bigl\langle \frac{a_2}{b_2} + \frac{c_2}{d_2} \Bigr\rangle \quad \text{and} \quad \Bigl\langle \frac{a_1}{b_1} \times \frac{c_1}{d_1} \Bigr\rangle = \Bigl\langle \frac{a_2}{b_2} \times \frac{c_2}{d_2} \Bigr\rangle.
@@ -118,16 +118,16 @@ Whenever an object has several expressions and an operation is defined using an 
 
 ^pf-13-3
 
-*Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§13 Number Systems#^def-13-3|Def. §13.3]]
+*Uses:* [[§13 Number Systems#^prop-13-1|§13.1]], [[§13 Number Systems#^def-13-4|Def. §13.4]]
 
-The multiplication is consistent with Definition [[§13 Number Systems#^def-13-new1|§13.1]]: if $q = \langle a/b \rangle$ then $bq = \langle b/1 \times a/b \rangle = \langle ab/b \rangle = \langle a/1 \rangle = a$. From now on we drop $\langle \ \rangle$ and write $a/b$ for the rational number it represents, so $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$; the set of rational numbers is $\Q$. Subtraction and division by non-zero elements are always possible in $\Q$:
+The multiplication is consistent with Definition [[§13 Number Systems#^def-13-2|§13.2]]: if $q = \langle a/b \rangle$ then $bq = \langle b/1 \times a/b \rangle = \langle ab/b \rangle = \langle a/1 \rangle = a$. From now on we drop $\langle \ \rangle$ and write $a/b$ for the rational number it represents, so $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$; the set of rational numbers is $\Q$. Subtraction and division by non-zero elements are always possible in $\Q$:
 
 $$
 \frac{a}{b} - \frac{c}{d} = \frac{a}{b} + \frac{-c}{d}, \qquad \frac{a}{b} \Big/ \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} \quad (c \ne 0).
 $$
 
 > [!remark]- Connections
-> - Developed further in: [[§22 Partitions and Equivalence Relations#^def-22-6|Def. §22.6]] constructs $\Q$ as the set of classes of pairs $(a, b)$, $b \ne 0$, under $(a, b) \sim (c, d) \iff ad = bc$, the relation of Proposition [[§13 Number Systems#^prop-13-1|§13.1]]; the operations are well defined by [[§22 Partitions and Equivalence Relations#^prop-22-8|§22.8]] and $\Q$ is a field by [[§22 Partitions and Equivalence Relations#^thm-22-9|§22.9]].
+> - Developed further in: [[§22a Constructing ℚ and ℤ#^def-22a-2|Def. §22a.2]] constructs $\Q$ as the set of classes of pairs $(a, b)$, $b \ne 0$, under $(a, b) \sim (c, d) \iff ad = bc$, the relation of Proposition [[§13 Number Systems#^prop-13-1|§13.1]]; the operations are well defined by [[§22a Constructing ℚ and ℤ#^prop-22a-3|§22a.3]] and $\Q$ is a field by [[§22a Constructing ℚ and ℤ#^thm-22a-4|§22a.4]].
 > - "Well defined" as a general notion: [[§7 The Group ℤ∕nℤ#^def-7-2|493 Def. §7.2]]; $\Q$ is a field, [[§2 The Set ℚ of Rational Numbers#^def-2-4|451 Def. §2.4]].
 
 ## 13.2 The Irrationality of √2
@@ -187,12 +187,12 @@ A good number system should measure every length. By Pythagoras's theorem the di
 
 Theorem [[§13 Number Systems#^thm-13-4|§13.4]] shows that rational numbers do not measure all lengths. The **real numbers** extend the number system so that they do.
 
-> [!definition] Definition §13.4: Irrational Number
+> [!definition] Definition §13.6: Irrational Number
 > A real number which is not a rational number is **irrational**. Theorem [[§13 Number Systems#^thm-13-4|§13.4]] says: $\sqrt2$ is irrational.
 >
 > *Eccles: Section 13.3*
 
-^def-13-4
+^def-13-5
 
 Defining the real numbers needs the theory of limits and belongs to analysis. Here real numbers are described by **infinite decimals**: every non-negative real number is represented by an infinite decimal
 
@@ -226,7 +226,7 @@ The idea of an infinite decimal is that its truncations are better and better ap
 
 ^ex-13-3
 
-> [!definition] Definition §13.5: The Real Number an Infinite Decimal Represents
+> [!definition] Definition §13.7: The Real Number an Infinite Decimal Represents
 > An infinite decimal $a_0.a_1 a_2 \ldots a_i \ldots$ **represents** the real number $a$, written $a = a_0.a_1a_2 \ldots a_i \ldots$, when
 >
 > $$
@@ -235,7 +235,7 @@ The idea of an infinite decimal is that its truncations are better and better ap
 >
 > *Eccles: Definition 13.3.2*
 
-^def-13-5
+^def-13-6
 
 The inequalities are $\le$, not $<$, so that rational numbers such as finite decimals are represented too. That every infinite decimal represents *some* real number is one form of the completeness axiom for $\R$. That it represents only one is a consequence of the Archimedean property.
 
@@ -251,7 +251,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 
 ^pf-13-5
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
+*Uses:* [[§13 Number Systems#^def-13-6|Def. §13.6]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!remark]- Connections
 > - The two facts used about $\R$: the [[Completeness Axiom]] ([[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]]) and the [[Archimedean Property]] ([[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]), which 451 derives from completeness. A construction of $\R$ from $\Q$: [[§6 Dedekind Cuts#^def-6-1|451 Def. §6.1]] (Dedekind cuts); ★ by classes of rational Cauchy sequences, [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]], where this section's decimal expansion of √2 reappears as a Cauchy sequence ([[§6★ ℝ from Cauchy Sequences of Rationals#^ex-6s-2|451 Ex. §6★.2]]).
@@ -263,7 +263,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 > 0.\underbrace{99\ldots9}_{n} = \frac{10^n - 1}{10^n} = 1 - \frac{1}{10^n}.
 > $$
 >
-> Intuition may suggest $0.\dot9 < 1$, a common misconception. Go back to what the words mean. If $a = 0.\dot9$, Definition [[§13 Number Systems#^def-13-5|§13.5]] says
+> Intuition may suggest $0.\dot9 < 1$, a common misconception. Go back to what the words mean. If $a = 0.\dot9$, Definition [[§13 Number Systems#^def-13-6|§13.6]] says
 >
 > $$
 > 1 - \frac{1}{10^n} \le a \le 1, \quad \text{i.e.} \quad 0 \le 1 - a \le \frac{1}{10^n} \qquad \text{for all } n \in \Z^+.
@@ -281,7 +281,7 @@ The inequalities are $\le$, not $<$, so that rational numbers such as finite dec
 
 ^ex-13-4
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]
+*Uses:* [[§13 Number Systems#^def-13-6|Def. §13.6]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§4 The Completeness Axiom#^thm-4-5|451 Thm. §4.5]]
 
 > [!example] Example §13.5: The First Decimals of √3
 > Since $1^2 < 3 < 2^2$, $1.7^2 = 2.89 < 3 < 3.24 = 1.8^2$ and $1.73^2 = 2.9929 < 3 < 3.0276 = 1.74^2$, and $a < b \iff a^2 < b^2$ for non-negative reals ([[§4 Proof by Contradiction#^ex-4-5|Example §4.5]]), we get $1.73 < \sqrt3 < 1.74$: $\sqrt3 = 1.73\ldots$
@@ -327,14 +327,14 @@ so it moves the decimal point one place to the right, and the same holds for inf
 
 ^pf-13-6
 
-*Uses:* [[§13 Number Systems#^def-13-5|Def. §13.5]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$)
+*Uses:* [[§13 Number Systems#^def-13-6|Def. §13.6]], [[§5 The Induction Principle#^thm-5-3|§5.3]] (induction from $0$)
 
-> [!definition] Definition §13.6: Recurring Decimal
+> [!definition] Definition §13.7: Recurring Decimal
 > An infinite decimal $a_0.a_1a_2\ldots$ is **recurring** (or repeating) if there are integers $k \ge 0$ and $p \ge 1$ such that $a_{i+p} = a_i$ for all $i > k$: after the $k$th place a block of $p$ digits repeats forever. The repeating block is marked by dots over its first and last digits, as in $7.32\dot0081\dot4 = 7.320081400814\ldots$
 >
 > *Eccles: Example 13.3.3*
 
-^def-13-6
+^def-13-7
 
 > [!theorem] Theorem §13.7: Recurring Decimals Are Rational
 > A recurring infinite decimal represents a rational number.
@@ -360,10 +360,10 @@ The idea: if the repeating block has length $p$, multiply by $10^p$ and subtract
 
 ^pf-13-7
 
-*Uses:* [[§13 Number Systems#^lem-13-6|§13.6]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§13 Number Systems#^def-13-6|Def. §13.6]]
+*Uses:* [[§13 Number Systems#^lem-13-6|§13.6]], [[§13 Number Systems#^prop-13-5|§13.5]], [[§13 Number Systems#^def-13-7|Def. §13.7]]
 
 > [!remark]- Connections
-> - Stewart states both directions: [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-1|Calc Prop. §116.1]].
+> - Stewart states both directions: [[§139 Numbers, Inequalities, and Absolute Values#^prop-139-1|Calc Prop. §139.1]].
 
 > [!example] Example §13.6: 12.79317317… as a Fraction
 > Let $x = 12.79\dot31\dot7 = 12.79317317317\ldots$ The block $317$ has length $3$, so multiply by $10^3$: $1000x = 12793.17\dot31\dot7$. Splitting off the finite parts (Lemma [[§13 Number Systems#^lem-13-6|§13.6]]),

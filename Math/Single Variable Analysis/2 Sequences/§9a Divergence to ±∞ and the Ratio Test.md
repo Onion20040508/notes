@@ -12,7 +12,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 
 ## Divergence to $\pm\infty$
 
-> [!definition] Definition §9.1: Divergence to Infinity
+> [!definition] Definition §9a.1: Divergence to Infinity
 > We say $s_n$ **diverges to $+\infty$**, written $s_n \to +\infty$ or $\lim_{n\to\infty} s_n = +\infty$, if for any positive number $M$ (usually large), there exists $N$ such that for all $n > N$,
 >
 > $$
@@ -21,29 +21,29 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 >
 > Similarly, $s_n \to -\infty$ if for any $M$ there exists $N$ such that $s_n < -M$ for all $n > N$.
 
-^def-9-1
+^def-9a-1
 
 > [!remark]- Connections
-> - Computational version: [[§69 Sequences#^def-69-4|Calc Def. §69.4]] (with worked examples).
+> - Computational version: [[§80 Sequences#^def-80-4|Calc Def. §80.4]] (with worked examples).
 
-> [!example] Example §9.8: Basic Examples
+> [!example] Example §9a.1: Basic Examples
 > $s_n = n^2 \to +\infty$ and $s_n = 3^{n-1} \to +\infty$ (given $M$, take $N > \sqrt{M}$, resp. use $3^{n-1} \geq n$ for $n \geq 1$, provable by induction). Meanwhile $t_n = (-1)^n n$ diverges but tends to neither $+\infty$ nor $-\infty$.
 
-^ex-9-8
+^ex-9a-1
 
-> [!theorem] Lemma §9.7: Squeezing to Infinity
+> [!theorem] Lemma §9a.1: Squeezing to Infinity
 > If $s_n \to +\infty$ and $t_n \geq s_n$ for all $n$, then $t_n \to +\infty$.
 
-^lem-9-7
+^lem-9a-1
 
 > [!proof]+ Proof
 > Given $M$, take $N$ with $s_n > M$ for $n > N$; then $t_n \geq s_n > M$ for $n > N$. (The same proof gives the *eventual* version: it suffices that $t_n \geq s_n$ for $n > N_0$ — replace $N$ by $\max\{N, N_0\}$. Similarly, $t_n \to -\infty$ and $s_n \leq t_n$ eventually force $s_n \to -\infty$. Both refinements were HW.)
 
-^pf-9-7
+^pf-9a-1
 
-*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]]
+*Uses:* [[§9a Divergence to ±∞ and the Ratio Test#^def-9a-1|Def. §9a.1]]
 
-> [!theorem] Proposition §9.8: Adding a Sequence Bounded Below (HW)
+> [!theorem] Proposition §9a.2: Adding a Sequence Bounded Below (HW)
 > If $s_n \to +\infty$ and $\inf\{t_n \mid n \in \mathbb{N}\} > -\infty$, then
 >
 > $$
@@ -52,7 +52,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 >
 > In particular, the conclusion holds whenever $(t_n)$ is bounded, or convergent, or $t_n \to +\infty$.
 
-^prop-9-8
+^prop-9a-2
 
 > [!proof]+ Proof
 > Let $t_0 = \inf\{t_n\} \in \mathbb{R}$, so $t_n \geq t_0$ for all $n$. Given $M > 0$: since $s_n \to +\infty$, there is $N$ with $s_n > M - t_0$ for all $n > N$. Then for such $n$,
@@ -63,11 +63,11 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 >
 > For the particular cases, only $\inf t_n > -\infty$ must be checked: a bounded sequence satisfies it directly; a convergent one is bounded ([[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]); and if $t_n \to +\infty$, then all but finitely many terms exceed $0$, and a finite set of terms is bounded. (Compare the forbidden $(+\infty) - (+\infty)$ of §5: a lower bound on the perturbation is exactly what rules the bad case out.)
 
-^pf-9-8
+^pf-9a-2
 
-*Uses:* [[§9 Limit Theorems for Sequences#^def-9-1|Def. §9.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+*Uses:* [[§9a Divergence to ±∞ and the Ratio Test#^def-9a-1|Def. §9a.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
 
-> [!example] Example §9.9: The Recursion Again
+> [!example] Example §9a.2: The Recursion Again
 > The sequence $x_1 = 1$, $x_{n+1} = 3 x_n^2$ ([[§9 Limit Theorems for Sequences#^ex-9-7|Example §9.7]]) diverges to $+\infty$. Compute: $x_2 = 3$, $x_3 = 3 x_2^2 = 27 > 3^2$. *Claim:* $x_n \geq 3^{n-1}$, by induction: true for $n = 1$; if $x_n \geq 3^{n-1}$, then
 >
 > $$
@@ -76,9 +76,9 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 >
 > Therefore $x_n \to +\infty$ by the squeezing lemma, since $3^{n-1} \to +\infty$.
 
-^ex-9-9
+^ex-9a-2
 
-> [!example] Example §9.10: Complete Classification of the Geometric Sequence
+> [!example] Example §9a.3: Complete Classification of the Geometric Sequence
 > For any $a \in \mathbb{R}$:
 >
 > 1. if $|a| < 1$, then $\lim_{n\to\infty} a^n = 0$;
@@ -91,23 +91,23 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The 
 >
 > *Proofs.* (2) is clear. (1) By the [[Squeeze Theorem|Squeeze Theorem]]: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ ([[§9 Limit Theorems for Sequences#^ex-9-3|Example §9.3]]), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is [[§8 A Discussion About Proofs#^ex-8-6|Example §8.6]]. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
 
-^ex-9-10
+^ex-9a-3
 
 > [!remark]- Connections
-> - Computational version: [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] (with worked examples).
+> - Computational version: [[§80 Sequences#^thm-80-8|Calc Thm. §80.8]] (with worked examples).
 
 ## The Ratio Test
 
 A simple criterion for convergence and divergence:
 
-> [!theorem] Theorem §9.9: Ratio Test
+> [!theorem] Theorem §9a.3: Ratio Test
 > Assume $s_n \neq 0$ for all $n$ and that the limit $L = \displaystyle\lim_{n\to+\infty} \left| \frac{s_{n+1}}{s_n} \right|$ exists.
 >
 > - (a) If $L < 1$, then $\lim s_n = 0$.
 >
 > - (b) If $L > 1$, then $\lim |s_n| = +\infty$, and hence $(s_n)$ is divergent.
 
-^thm-9-9
+^thm-9a-3
 
 > [!proof]+ Proof
 > (a) Pick $\varepsilon > 0$ such that $L + \varepsilon < 1$ (possible since $L < 1$). By assumption, there exists $N$ such that for $n \geq N$,
@@ -138,11 +138,11 @@ A simple criterion for convergence and divergence:
 >
 > Since $b > 1$ and $|s_N| > 0$, the right side tends to $+\infty$ (classification (3) above, scaled), so $|s_n| \to +\infty$ by the squeezing lemma. An unbounded sequence diverges.
 
-^pf-9-9
+^pf-9a-3
 
-*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§8 A Discussion About Proofs#^ex-8-5|Ex. §8.5]], [[§9 Limit Theorems for Sequences#^ex-9-10|Ex. §9.10]], [[§9 Limit Theorems for Sequences#^lem-9-7|§9.7]], [[Squeeze Theorem|§8.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+*Uses:* [[§7 Limits of Sequences#^def-7-2|Def. §7.2]], [[§8 A Discussion About Proofs#^ex-8-5|Ex. §8.5]], [[§9a Divergence to ±∞ and the Ratio Test#^ex-9a-3|Ex. §9a.3]], [[§9a Divergence to ±∞ and the Ratio Test#^lem-9a-1|§9a.1]], [[Squeeze Theorem|§8.1]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
 
-> [!example] Example §9.11: Powers versus Exponentials
+> [!example] Example §9a.4: Powers versus Exponentials
 > Let $a \in \mathbb{R}$ and $p \in \mathbb{R}$. Then:
 >
 > 1. if $|a| < 1$: $\lim_{n\to\infty} \dfrac{a^n}{n^p} = 0$;
@@ -159,16 +159,16 @@ A simple criterion for convergence and divergence:
 >
 > For (2), the same ratio computation gives $L = a > 1$. For (3), the magnitudes $|a|^n / n^p \to +\infty$ by (2) while signs alternate.
 
-^ex-9-11
+^ex-9a-4
 
-> [!example] Example §9.12: Factorials Beat Exponentials
+> [!example] Example §9a.5: Factorials Beat Exponentials
 > For all $a \in \mathbb{R}$: $\displaystyle\lim_{n\to\infty} \frac{a^n}{n!} = 0$. Use the ratio test (for $a \neq 0$):
 >
 > $$
 > \left| \frac{s_{n+1}}{s_n} \right| = \frac{|a|^{n+1}/(n+1)!}{|a|^n/n!} = \frac{|a|}{n+1} \longrightarrow 0 = L < 1. \tag*{$\blacksquare$}
 > $$
 
-^ex-9-12
+^ex-9a-5
 
 > [!remark] Remark: A Scale of Growth Rates
 > We have met different rates of growth, each of a strictly higher order than the previous:
@@ -185,4 +185,4 @@ A simple criterion for convergence and divergence:
 >
 > since the exponential grows at a higher rate than the power $t$. (As with $\log$ in the earlier example, this argument borrows the functions $\log$ and $e^t$ — and limits along a continuous variable — before their rigorous development; the honest statement is that it will become fully rigorous once those tools are available.)
 
-^rem-9-3
+^rem-9a-3

@@ -11,8 +11,9 @@ tags: [logic-and-proofs, hub]
 - [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1: Logical Identities]], in [[§1 The Language of Mathematics]]
 
 ## Its proof uses
-- [[§1 The Language of Mathematics#^def-1-3|Definition §1.3: Disjunction, Conjunction, Negation]]
-- [[§1 The Language of Mathematics#^def-1-5|Definition §1.5: Propositional Form; Logical Equivalence]]
+- [[§1 The Language of Mathematics#^def-1-5|Definition §1.5: Disjunction, Conjunction, Negation]]
+- [[§1 The Language of Mathematics#^def-1-7|Definition §1.7: Propositional Form]]
+- [[§1 The Language of Mathematics#^def-1-8|Definition §1.8: Logical Equivalence]]
 
 ## Used in (Logic and Proofs)
 - [[§1 The Language of Mathematics#^thm-1-3|Theorem §1.3: Existence of Normal Forms]]
@@ -23,7 +24,7 @@ tags: [logic-and-proofs, hub]
 - [[§2 Implications#^prop-2-4|Proposition §2.4: Equivalences Used in Proofs]]
 - [[§2 Implications#^ex-2-7|Example §2.7: Order of Operations and a Tautology]]
 - [[§2 Implications#^ex-2-8|Example §2.8: Converse, Inverse and Contrapositive]]
-- [[§6 The Language of Set Theory#^thm-6-3|Theorem §6.3: The Laws of the Algebra of Sets]]
+- [[§6a Operations on Sets#^thm-6a-2|Theorem §6a.2: The Laws of the Algebra of Sets]]
 
 ## Connections
 - See [[§1 The Language of Mathematics]] for context and examples.

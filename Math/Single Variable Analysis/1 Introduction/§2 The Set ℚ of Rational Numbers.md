@@ -24,7 +24,7 @@ But $\mathbb{N}$ is *not* closed under $-$: if $n > m$, then $m - n \notin \math
 ^def-2-2
 
 > [!remark]- Connections
-> - ℤ constructed from pairs of natural numbers, with its group and ring laws verified: [[§22 Partitions and Equivalence Relations#^def-22-9|250 Def. §22.9]], [[§22 Partitions and Equivalence Relations#^thm-22-13|250 Thm. §22.13]].
+> - ℤ constructed from pairs of natural numbers, with its group and ring laws verified: [[§22a Constructing ℚ and ℤ#^def-22a-5|250 Def. §22a.5]], [[§22a Constructing ℚ and ℤ#^thm-22a-8|250 Thm. §22a.8]].
 > - The full definition (associativity, identity, inverses; not necessarily commutative): [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]].
 
 Next, $\mathbb{Z}$ is also closed under multiplication: for $m, n \in \mathbb{Z}$, $m \times n \in \mathbb{Z}$. We now have two operations $+, \times$, plus the inverse of $+$ (negative numbers), all compatible with each other, and $\mathbb{Z}$ is closed under all of them.
@@ -53,7 +53,7 @@ what is special about $n^{-1}$ is that $n \times n^{-1} = 1$: it is the inverse 
 ^rem-2-1
 
 > [!remark]- Connections
-> - ℚ constructed from fractions as equivalence classes, with all field axioms verified: [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - ℚ constructed from fractions as equivalence classes, with all field axioms verified: [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]].
 
 ## $\sqrt{2}$ Is Not Rational
 
@@ -183,7 +183,7 @@ To get a field containing all such numbers, we need a new notion. What is $\sqrt
 ^def-2-5
 
 > [!remark]- Connections
-> - 250's version, for real numbers and with rational coefficients: [[§14 Counting Infinite Sets#^def-14-4|250 Def. §14.4]].
+> - 250's version, for real numbers and with rational coefficients: [[§14a Uncountable Sets#^def-14a-2|250 Def. §14a.2]].
 
 > [!definition] Definition §2.6: Algebraic Integer
 > If moreover $a_n = 1$, the solution $x$ is called an **algebraic integer**.
@@ -234,7 +234,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 
 > [!remark]- Connections
 > - Same definition: equipotent sets, [[§14 Counting Infinite Sets#^def-14-1|250 Def. §14.1]].
-> - Same definition in 551 (equivalent sets): [[§1 Countability and Set Theory#^def-1-7|551 Def. §1.7]]; two sets that inject into each other are equivalent by [[§2 The Cantor–Bernstein Theorem#^thm-2-1|551 Thm. §2.1]] (Cantor–Bernstein).
+> - Same definition in 551 (equivalent sets): [[§1 Countability and Set Theory#^def-1-7|551 Def. §1.7]]; two sets that inject into each other are equivalent by [[§2 The Cantor–Bernstein Theorem#^thm-2-2|551 Thm. §2.2]] (Cantor–Bernstein).
 
 > [!theorem] Theorem §2.4: $\mathbb{N}$ and $\mathbb{Z}$ Have the Same Size
 > There exists a bijection $f: \mathbb{N} \to \mathbb{Z}$.
@@ -271,7 +271,7 @@ This matching criterion makes sense even when counting does not, so we turn it i
 ^def-2-8
 
 > [!remark]- Connections
-> - 451's countable is 250's denumerable, [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]]; there (as in 551) countable also allows finite sets.
+> - 451's countable is 250's denumerable, [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]]; there (as in 551) [[§14 Counting Infinite Sets#^def-14-3|countable]] also allows finite sets.
 > - 551's countable also allows finite sets: [[§1 Countability and Set Theory#^def-1-8|551 Def. §1.8]].
 
 > [!theorem] Theorem §2.5: $\mathbb{Q}$ Is Countable
@@ -326,7 +326,7 @@ This is more difficult; we do not prove it here.
 ^rem-2-6
 
 > [!remark]- Connections
-> - Proved, for the real algebraic numbers, in [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], by listing the polynomials with rational coefficients as here.
+> - Proved, for the real algebraic numbers, in [[§14a Uncountable Sets#^thm-14a-6|250 Thm. §14a.6]], by listing the polynomials with rational coefficients as here.
 > - The listing step is the general fact that a countable union of countable sets is countable, proved in [[§3 Countability of Rationals and Unions#^prop-3-1|551 Prop. §3.1]].
 
 > [!definition] Definition §2.9: Uncountable
@@ -335,9 +335,9 @@ This is more difficult; we do not prove it here.
 ^def-2-9
 
 > [!remark]- Connections
-> - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-new1|250 Def. §14.2]], where finite sets count as countable, so uncountable sets are automatically infinite.
+> - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-3|250 Def. §14.3]], where finite sets count as countable, so uncountable sets are automatically infinite.
 
-The real line $\mathbb{R}$ is uncountable. This course uses the fact without proof; it is proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]] and, for $[0,1]$, in [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].
+The real line $\mathbb{R}$ is uncountable. This course uses the fact without proof; it is proved by Cantor's diagonal argument in [[§14a Uncountable Sets#^thm-14a-2|250 Thm. §14a.2]] and, for $[0,1]$, in [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].
 
 ## Transcendental Numbers
 
@@ -347,7 +347,7 @@ The real line $\mathbb{R}$ is uncountable. This course uses the fact without pro
 ^def-2-10
 
 > [!remark]- Connections
-> - Same definition: [[§14 Counting Infinite Sets#^def-14-4|250 Def. §14.4]].
+> - Same definition: [[§14a Uncountable Sets#^def-14a-2|250 Def. §14a.2]].
 
 > [!example] Example §2.3: $\pi$ and $e$
 > $\pi$ and $e$ are transcendental. (Both facts are hard theorems.) It is not easy to name more — after all, how do we write down numbers? If we define them as solutions of algebraic equations, we only ever get algebraic numbers.
@@ -378,5 +378,5 @@ The real line $\mathbb{R}$ is uncountable. This course uses the fact without pro
 ^rem-2-7
 
 > [!remark]- Connections
-> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-16|250 Thm. §14.16]], with the uncountability of ℝ proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]].
+> - Elementary version: [[§14a Uncountable Sets#^thm-14a-6|250 Thm. §14a.6]], with the uncountability of ℝ proved by Cantor's diagonal argument in [[§14a Uncountable Sets#^thm-14a-2|250 Thm. §14a.2]].
 > - The uncountability of ℝ it relies on is proved in 551 for the interval $[0,1]$: [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].

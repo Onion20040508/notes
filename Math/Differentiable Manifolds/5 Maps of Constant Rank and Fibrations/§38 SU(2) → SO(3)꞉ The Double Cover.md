@@ -95,7 +95,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-38-2
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-2|Def. §38.2]], [[§34 Determinants#^ladr-9-49|LADR 9.49]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-2|Def. §38.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!theorem] Proposition §38.3: Hyperspherical Charts Are Adapted to $S^3$
 > Let $\Phi$ and $B$ be as in [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-2|Definition §38.2]] and [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-2|Lemma §38.2]]. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ ([[§33 Submanifolds#^def-33-1|Definition §33.1]]):
@@ -123,16 +123,16 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > a diffeomorphism onto the open set $\tau(W)$, hence a chart about $p$, with last component $y^4 = r - 1$. For $\vec u = \Phi(r, \theta') \in U_p$ we have $|\vec u| = r$ by (i), so $\vec u \in S^3 \iff r = 1 \iff y^4(\vec u) = 0$. Thus $\psi_p$ is adapted to $S^3$.
 >
-> *(v) Adapted charts on $B$.* Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|isometry]] of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)–(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
+> *(v) Adapted charts on $B$.* Let $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, a linear [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|isometry]] of $\mathbb{R}^4$ with $\det P = \pm 1$, and $\tilde\Phi = P \circ \Phi$. Then $|\tilde\Phi(r, \theta)| = r$ and $\det \tilde\Phi' = \det P \cdot \det \Phi'$, so (i)–(iv) hold for $\tilde\Phi$ with $B$ replaced by $P(B) = \{ \vec x \in S^3 : x_0 = x_1 = 0 \}$, the angles for $p$ being those of $P^{-1}p$. A point of $B \cap P(B)$ would be $0 \notin S^3$, so $B \cap P(B) = \emptyset$, and every $p \in B$ gets an adapted chart from $\tilde\Phi$.
 >
 > Hence every point of $S^3$ lies in an adapted chart.
 
 ^pf-38-3
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-2|Def. §38.2]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-2|§38.2]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[Inverse Function Theorem (several variables)|452 §13.2]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-2|Def. §38.2]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-2|§38.2]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§32 Submersions#^lem-32-3|§32.3]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]], [[Inverse Function Theorem (several variables)|452 §16.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
 
 > [!theorem] Proposition §38.4: The Unit Quaternions
-> $S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold ([[§33 Submanifolds#^def-33-1|Def. §33.1]]) of dimension $3$ and a group ([[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]]) whose multiplication and inversion are smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]). It is connected ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]): every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
+> $S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold ([[§33 Submanifolds#^def-33-1|Def. §33.1]]) of dimension $3$ and a group ([[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]]) whose multiplication and inversion are smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]). It is connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]): every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
 
 ^prop-38-4
 
@@ -141,7 +141,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-38-4
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§33 Submanifolds#^thm-33-6|§33.6]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
 
 > [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
 >
@@ -153,7 +153,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 > [!remark]- Connections
 > - Topological groups: [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|Def. §10.1]]; the sphere as a level set in 452: [[Unit circle and unit sphere|452 Unit circle and unit sphere]].
-> - $S^3$ is simply connected: [[Sⁿ is Simply Connected for n ≥ 2|590 §27.3]].
+> - $S^3$ is simply connected: [[Sⁿ is Simply Connected for n ≥ 2|590 §37.3]].
 
 ## $S^3$ and $\mathrm{SU}(2)$
 
@@ -185,7 +185,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-38-5
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§36 Embeddings#^cor-36-3|§36.3]], [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§36 Embeddings#^def-36-1|Def. §36.1]], [[§36 Embeddings#^thm-36-1|§36.1]], [[§36 Embeddings#^cor-36-3|§36.3]], [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]]
 
 > [!proof]+ Second proof of (3): adapted charts (the submitted solution)
 >
@@ -248,7 +248,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 *Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-3|§38.3]], [[§32 Submersions#^lem-32-3|§32.3]], [[§33 Submanifolds#^def-33-1|Def. §33.1]], [[§33 Submanifolds#^prop-33-4|§33.4]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§5 Bases#^ladr-2-32|LADR 2.32]]
 
 > [!remark]- Connections
-> - $\mathrm{SU}(2)$ in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]]; unitary matrices in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]].
+> - $\mathrm{SU}(2)$ in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]]; unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]].
 > - The unitary groups in 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]].
 
 The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 The Geometric Tangent Space#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§37 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|the unit quaternions as SU(2)]].
@@ -391,11 +391,11 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-38-7
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-4|§38.4]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §13.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^def-38-1|Def. §38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-1|§38.1]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-4|§38.4]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]
 
 > [!remark]- Connections
 > - The half-angle in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]].
-> - Isometries in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; the kernel $\{\pm 1\}$ as a center in 493: [[§35 The Center#^def-35-1|493 Def. §35.1]].
+> - Isometries in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; the kernel $\{\pm 1\}$ as a center in 493: [[§35 The Center#^def-35-1|493 Def. §35.1]].
 
 The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j(t)$ through $1$ moves at unit speed in $S^3$, but its image rotates by $2t$.
 
@@ -409,10 +409,10 @@ The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j
 
 ^pf-38-8
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§34 Determinants#^ladr-9-56|LADR 9.56]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|Def. §10.7]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|§10.5]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
 
 > [!remark]- Connections
-> - Rotations in Quantum Mechanics, by Euler angles: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-2|QM Def. §C5.2.2]]; isometries in LADR: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
+> - Rotations in Quantum Mechanics, by Euler angles: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-2|QM Def. §C5.2.2]]; isometries in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
 
 ## The Double Cover
 
@@ -446,7 +446,7 @@ This is the left translation of the [[§23 The Geometric Tangent Space#^rem-23-7
 > G_{\ast I}(\sigma_j) = 2\,\hat e_j \qquad (j = 1, 2, 3),
 > $$
 >
-> twice the basis of $\operatorname{Skew}(3, \mathbb{R}) = T_I\,\mathrm{SO}(3)$ given by the hat map ([[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]]). It is two-to-one: $G(g) = G(h)$ iff $h = \pm g$. Consequently $G$ induces a homeomorphism ([[§9 Continuous Functions#^def-9-2|590 Def. §9.2]])
+> twice the basis of $\operatorname{Skew}(3, \mathbb{R}) = T_I\,\mathrm{SO}(3)$ given by the hat map ([[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]]). It is two-to-one: $G(g) = G(h)$ iff $h = \pm g$. Consequently $G$ induces a homeomorphism ([[§10 Continuous Functions#^def-10-2|590 Def. §10.2]])
 >
 > $$
 > \mathrm{SO}(3) \;\cong\; \mathrm{SU}(2)/\{\pm I\} \;\cong\; S^3/\{\pm 1\} \;=\; \mathbb{RP}^3 .
@@ -475,7 +475,7 @@ This is the left translation of the [[§23 The Geometric Tangent Space#^rem-23-7
 
 ^pf-38-10
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|§38.5]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-6|§38.6]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-7|§38.7]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-8|§38.8]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-9|§38.9]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]], [[§23 The Geometric Tangent Space#^ex-23-4|Ex. §23.4]], [[§31 Local Diffeomorphisms#^thm-31-2|§31.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §12.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §15.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|§38.5]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-6|§38.6]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-7|§38.7]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-8|§38.8]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-9|§38.9]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]], [[§23 The Geometric Tangent Space#^ex-23-4|Ex. §23.4]], [[§31 Local Diffeomorphisms#^thm-31-2|§31.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
 
 > [!proof]+ Second proof: the conjugation map computed explicitly (the submitted solution)
 >
@@ -589,11 +589,11 @@ This is the left translation of the [[§23 The Geometric Tangent Space#^rem-23-7
 
 ^pf-38-10-2
 
-*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|§38.5]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-6|§38.6]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-7|§38.7]], [[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §13.2]]
+*Uses:* [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|§38.5]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-6|§38.6]], [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-7|§38.7]], [[§23 The Geometric Tangent Space#^def-23-3|Def. §23.3]], [[§33 Submanifolds#^lem-33-3|§33.3]], [[§26 Derivations and the Abstract Tangent Space#^thm-26-6|§26.6]], [[§29 Tangent Vectors as Velocities of Curves#^cor-29-3|§29.3]], [[§28 The Differential in Coordinates#^thm-28-2|§28.2]], [[§31 Local Diffeomorphisms#^thm-31-1|§31.1]], [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
 
 > [!remark]- Connections
 > - The same theorem in physics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; $\mathrm{SU}(2) \cong S^3$ and $\mathrm{SO}(3) \cong \mathbb{RP}^3$ topologically, with $\pi_1$: [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|QFT Theorem §C3.1.8]].
-> - The algebraic quotient in 493: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 §41.1]]; $\mathbb{RP}^n$ as the quotient $S^n/(x \sim -x)$ in 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2]].
+> - The algebraic quotient in 493: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 §41.1]]; $\mathbb{RP}^n$ as the quotient $S^n/(x \sim -x)$ in 590: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2]].
 
 The classical groups through the course: defined in [[§10 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§15 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§12 Group Actions and Orbit Spaces#^ex-12-4|the rotations of the plane]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§13 Homogeneous Spaces#^ex-13-2|the isotropy of the north pole]] and [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|the orthogonal group]] and [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|the unitary group]]; their tangent spaces at the identity in [[§23 The Geometric Tangent Space#^thm-23-5|The Classical Groups]], with [[§23 The Geometric Tangent Space#^ex-23-4|the infinitesimal rotations]]; and the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§38 SU(2) → SO(3)꞉ The Double Cover#^thm-38-10|The Double Cover]].
 
@@ -609,4 +609,4 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 
 > [!remark]- Connections
 > - The quotient map $S^n \to \mathbb{RP}^n$ as a local diffeomorphism: [[§37 Projective Spaces and the Hopf Fibration#^ex-37-1|Ex. §37.1]]; bijective local diffeomorphisms: [[§31 Local Diffeomorphisms#^cor-31-3|§31.3]].
-> - Covering maps: [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps]]; in 590: [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]], [[Properties of the Lifting Correspondence|590 §24.9]].
+> - Covering maps: [[§31 Local Diffeomorphisms#^rem-31-2|Remark: Covering Maps]]; in 590: [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]], [[Properties of the Lifting Correspondence|590 §32.4]].

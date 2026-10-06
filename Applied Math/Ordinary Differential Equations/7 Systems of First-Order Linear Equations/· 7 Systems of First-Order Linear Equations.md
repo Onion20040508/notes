@@ -14,15 +14,15 @@ tags: [chapter, ordinary-differential-equations]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Linear Algebra]] (30), [[Applied Linear Algebra]] (48), [[Calculus]] (10), [[Functional Analysis]] (4), [[Differentiable Manifolds]] (2), [[Fourier Series and PDEs]] (6)
 
 ## Sections
-- [[§27 Introduction to Systems of First-Order Linear Equations]] — BDP 7.1
-- [[§28 Matrices]] — BDP 7.2
-- [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors]] — BDP 7.3
-- [[§30 Basic Theory of Systems of First-Order Linear Equations]] — BDP 7.4
-- [[§31 Homogeneous Linear Systems with Constant Coefficients]] — BDP 7.5
-- [[§32 Complex-Valued Eigenvalues]] — BDP 7.6
-- [[§33★ Fundamental Matrices]] — BDP 7.7 ★
-- [[§34★ Repeated Eigenvalues]] — BDP 7.8 ★
-- [[§35★ Nonhomogeneous Linear Systems]] — BDP 7.9 ★
+- [[§33 Introduction to Systems of First-Order Linear Equations]] — BDP 7.1
+- [[§34 Matrices]] — BDP 7.2
+- [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors]] — BDP 7.3
+- [[§36 Basic Theory of Systems of First-Order Linear Equations]] — BDP 7.4
+- [[§37 Homogeneous Linear Systems with Constant Coefficients]] — BDP 7.5
+- [[§38 Complex-Valued Eigenvalues]] — BDP 7.6
+- [[§39★ Fundamental Matrices]] — BDP 7.7 ★
+- [[§40★ Repeated Eigenvalues]] — BDP 7.8 ★
+- [[§41★ Nonhomogeneous Linear Systems]] — BDP 7.9 ★
 
 ## Central results
 - [[Existence and Uniqueness for Linear ODE Systems]] (§27.3)
@@ -32,7 +32,7 @@ tags: [chapter, ordinary-differential-equations]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1: Solvability of Ax = b]]: 23 later results
-- [[Existence and Uniqueness for Linear ODE Systems|Theorem §27.3: Existence and Uniqueness for Linear Systems]]: 18 later results
-- [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2: Independence and the Determinant]]: 18 later results
-- [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1: Principle of Superposition]]: 15 later results
+- [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-1|Theorem §35.1: Solvability of Ax = b]]: 23 later results
+- [[Existence and Uniqueness for Linear ODE Systems|Theorem §33.3: Existence and Uniqueness for Linear Systems]]: 18 later results
+- [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-2|Theorem §35.2: Independence and the Determinant]]: 18 later results
+- [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-1|Theorem §36.1: Principle of Superposition]]: 15 later results

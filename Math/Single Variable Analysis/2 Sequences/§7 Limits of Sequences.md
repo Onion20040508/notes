@@ -23,8 +23,8 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 ^def-7-1
 
 > [!remark]- Connections
-> - Elementary version: a sequence as a function on ℤ⁺, [[§8 Functions#^def-8-7|250 Def. §8.7]].
-> - Computational version: [[§69 Sequences#^def-69-1|Calc Def. §69.1]] (with worked examples).
+> - Elementary version: a sequence as a function on ℤ⁺, [[§8 Functions#^def-8-8|250 Def. §8.8]].
+> - Computational version: [[§80 Sequences#^def-80-1|Calc Def. §80.1]] (with worked examples).
 
 > [!example] Example §7.1: First Examples
 > 1. $s_n = 1$: a constant sequence.
@@ -65,7 +65,7 @@ We have discussed the properties of $\mathbb{R}$, including the [[Completeness A
 ^rem-7-1
 
 > [!remark]- Connections
-> - The case s = 0 in 250: null sequences, [[§8 Functions#^def-8-8|250 Def. §8.8]], with the order of the quantifiers ∀ε ∃N discussed in [[§8 Functions#^ex-8-8|250 Ex. §8.8]].
+> - The case s = 0 in 250: null sequences, [[§8 Functions#^def-8-9|250 Def. §8.9]], with the order of the quantifiers ∀ε ∃N discussed in [[§8 Functions#^ex-8-8|250 Ex. §8.8]].
 
 > [!definition] Definition §7.3: Divergence
 > If there exists no real number $s$ such that $(s_n)$ converges to $s$, we say $(s_n)$ **diverges**. For example, $s_n = 2^n$ diverges (it is unbounded; see §9).
@@ -163,4 +163,4 @@ The first property of limits — and our first theorem with a real proof about t
 ^rem-7-3
 
 > [!remark]- Connections
-> - In topological spaces limits are unique when the space is Hausdorff: [[§8 Hausdorff Spaces#^thm-8-3|590 Thm. §8.3]].
+> - In topological spaces limits are unique when the space is Hausdorff: [[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]].

@@ -8,17 +8,17 @@ tags: [real-analysis, math451, extension]
 ---
 ← [[§6 Dedekind Cuts]] · ↑ [[· 1 Introduction]] · [[§7 Limits of Sequences]] →
 
-★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10a Cauchy Sequences#^rem-10-4|§10a Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10a. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
+★ *Beyond MATH 451: the course constructs ℝ only by Dedekind cuts (§6) and names this second route in one sentence ([[§10a Cauchy Sequences#^rem-10a-4|§10a Rem. (construction of the reals)]]). The construction and all proofs below were added in the vault, following the standard order (as in Tao, Analysis I, Ch. 5). The last part, which compares the result with the course's ℝ, uses the limit theorems of §9–§10a. Those are derived from the axioms of §3–§4 alone, so the forward references are not circular.*
 
 **Question.** §6 explained why ℝ cannot be defined as "limits of rational sequences" in this course: limits presuppose ℝ. Is there a way to use sequences anyway?
 
-Yes. The *Cauchy* condition ([[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]]) compares the terms of a sequence with each other and never mentions a limit. If moreover the tolerances $\varepsilon$ are taken to be *rational*, the condition makes sense inside $\mathbb{Q}$ alone. A real number is then *defined* as the common destination of a family of rational Cauchy sequences, that is, as an equivalence class of them. Where Dedekind cuts complete $\mathbb{Q}$ through its **order**, this route completes it through its **distance** $|p - q|$. The distance route is the one that generalizes to metric and normed spaces ([[§11 Completeness#^def-11-4|556 Def. §11.4]]).
+Yes. The *Cauchy* condition ([[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]]) compares the terms of a sequence with each other and never mentions a limit. If moreover the tolerances $\varepsilon$ are taken to be *rational*, the condition makes sense inside $\mathbb{Q}$ alone. A real number is then *defined* as the common destination of a family of rational Cauchy sequences, that is, as an equivalence class of them. Where Dedekind cuts complete $\mathbb{Q}$ through its **order**, this route completes it through its **distance** $|p - q|$. The distance route is the one that generalizes to metric and normed spaces ([[§11 Completeness#^def-11-4|556 Def. §11.4]]).
 
-Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]]. Its properties ([[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]], including the [[Triangle inequality|triangle inequality]]) are proved from the order axioms O1–O5 and [[§3 The Set ℝ of Real Numbers#^prop-3-1|Proposition §3.1]] alone, so they hold in every ordered field, in particular in $\mathbb{Q}$. All $\varepsilon, \delta$ below are positive **rationals** unless stated otherwise.
+Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]]. Its properties ([[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]], including the [[Triangle inequality|triangle inequality]]) are proved from the order axioms O1–O5 and [[§3 The Set ℝ of Real Numbers#^prop-3-1|Proposition §3.1]] alone, so they hold in every ordered field, in particular in $\mathbb{Q}$. All $\varepsilon, \delta$ below are positive **rationals** unless stated otherwise.
 
 ## Cauchy Sequences of Rationals
 
-> [!definition] Definition §6★.1: Rational Cauchy Sequence
+> [!definition] Definition §6★.2: Rational Cauchy Sequence
 > A sequence $(q_n)$ of rational numbers is a **rational Cauchy sequence** if for every rational $\varepsilon > 0$ there is $N$ such that
 >
 > $$
@@ -27,14 +27,14 @@ Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ
 >
 > Write $\mathcal{C}$ for the set of rational Cauchy sequences.
 >
-> This is [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]] with $\varepsilon$ restricted to $\mathbb{Q}$; nothing outside $\mathbb{Q}$ is mentioned.
+> This is [[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]] with $\varepsilon$ restricted to $\mathbb{Q}$; nothing outside $\mathbb{Q}$ is mentioned.
 
 ^def-6s-1
 
-> [!definition] Definition §6★.1: Null Sequence
+> [!definition] Definition §6★.3: Null Sequence
 > Let $(q_n)$ be a sequence of rational numbers. It is a **null sequence** if for every rational $\varepsilon > 0$ there is $N$ with $|q_n| < \varepsilon$ for all $n \geq N$. Write $\mathcal{C}$ for the set of rational Cauchy sequences and $\mathcal{N} \subseteq \mathcal{C}$ for the null sequences.
 
-^def-6s-new1
+^def-6s-2
 
 A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n - q_m| \leq |q_n| + |q_m| < \varepsilon$. So $\mathcal{N} \subseteq \mathcal{C}$ indeed.
 
@@ -50,23 +50,23 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 > M = \max\{\, |q_1|, \ldots, |q_{N-1}|,\ |q_N| + 1 \,\},
 > $$
 >
-> a maximum of finitely many rationals, hence rational, and $M \geq |q_N| + 1 \geq 1$. Every term is covered: $n < N$ by the first entries, $n \geq N$ by the last. (This is [[§10 Monotone Sequences and Cauchy Sequences#^lem-10-9|Lemma §10.9]] inside $\mathbb{Q}$.)
+> a maximum of finitely many rationals, hence rational, and $M \geq |q_N| + 1 \geq 1$. Every term is covered: $n < N$ by the first entries, $n \geq N$ by the last. (This is [[§10a Cauchy Sequences#^lem-10a-2|Lemma §10a.2]] inside $\mathbb{Q}$.)
 
 ^pf-6s-1
 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]]
 
-> [!definition] Definition §6★.2: Equivalent Rational Cauchy Sequences
+> [!definition] Definition §6★.4: Equivalent Rational Cauchy Sequences
 > Two sequences $(p_n), (q_n) \in \mathcal{C}$ are **equivalent**, written $(p_n) \sim (q_n)$, if $(p_n - q_n)$ is a null sequence: for every rational $\varepsilon > 0$ there is $N$ with
 >
 > $$
 > |p_n - q_n| < \varepsilon \qquad \text{for all } n \geq N.
 > $$
 
-^def-6s-2
+^def-6s-3
 
 > [!theorem] Lemma §6★.2: Equivalence of Cauchy Sequences Is an Equivalence Relation
-> The relation $\sim$ on $\mathcal{C}$ is reflexive, symmetric and transitive: an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-new1|250 Def. §22.3]]).
+> The relation $\sim$ on $\mathcal{C}$ is reflexive, symmetric and transitive: an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]).
 
 ^lem-6s-2
 
@@ -79,19 +79,19 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-2
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-3|Def. §6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
-> [!definition] Definition §6★.3: The Cauchy Reals $\widehat{\mathbb{Q}}$
-> Let $\widehat{\mathbb{Q}} = \mathcal{C}/\!\sim$ be the set of equivalence classes (the quotient set of [[§22 Partitions and Equivalence Relations#^def-22-new2|250 Def. §22.4]]), and write $[(q_n)]$ for the class of $(q_n)$. A rational $q$ is sent to the class of the constant sequence:
+> [!definition] Definition §6★.6: The Cauchy Reals $\widehat{\mathbb{Q}}$
+> Let $\widehat{\mathbb{Q}} = \mathcal{C}/\!\sim$ be the set of equivalence classes (the quotient set of [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]), and write $[(q_n)]$ for the class of $(q_n)$. A rational $q$ is sent to the class of the constant sequence:
 >
 > $$
 > \iota : \mathbb{Q} \to \widehat{\mathbb{Q}}, \qquad \iota(q) = [(q, q, q, \ldots)].
 > $$
 
-^def-6s-3
+^def-6s-4
 
 > [!remark]- Connections
-> - The same pattern one level down: 250 builds $\mathbb{Q}$ as classes of pairs of integers, [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]], and checks the field axioms on representatives, [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - The same pattern one level down: 250 builds $\mathbb{Q}$ as classes of pairs of integers, [[§22a Constructing ℚ and ℤ#^def-22a-2|250 Def. §22a.2]], and checks the field axioms on representatives, [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]].
 > - The general version: the completion of a metric space, [[§11 Completeness#^def-11-3|556 Def. §11.3]] and [[§11 Completeness#^def-11-4|556 Def. §11.4]], with $M = \mathbb{Q}$. See the remark on the order of logic below.
 
 > [!example] Example §6★.1: One Number, Many Representatives
@@ -145,7 +145,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-3
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-1|§6★.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-1|§6★.1]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-3|Def. §6★.3]]
 
 > [!theorem] Lemma §6★.4: Bounded Away from Zero
 > Let $(q_n) \in \mathcal{C}$ not be a null sequence. Then there are a rational $\delta > 0$ and an $N$ such that
@@ -169,7 +169,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-4
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new1|Def. §6★.1]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]]
 
 > [!theorem] Theorem §6★.5: $\widehat{\mathbb{Q}}$ Is a Field Containing $\mathbb{Q}$
 > With the operations of [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|Proposition §6★.3]], $0 = \iota(0)$ and $1 = \iota(1)$, the set $\widehat{\mathbb{Q}}$ satisfies the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]]). The map $\iota$ is injective and preserves sums and products: $\iota(p + q) = \iota(p) + \iota(q)$ and $\iota(pq) = \iota(p)\iota(q)$.
@@ -177,7 +177,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 ^thm-6s-5
 
 > [!proof]+ Proof
-> *Axioms 1, 2, 5, 6 (commutativity, $0$ and $1$, associativity, distributivity).* Each is an identity that holds term by term in $\mathbb{Q}$ ([[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]]), so the two sides are represented by the *same* sequence. For example, for distributivity,
+> *Axioms 1, 2, 5, 6 (commutativity, $0$ and $1$, associativity, distributivity).* Each is an identity that holds term by term in $\mathbb{Q}$ ([[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]]), so the two sides are represented by the *same* sequence. For example, for distributivity,
 >
 > $$
 > [(p_n)]\bigl([(q_n)] + [(r_n)]\bigr) = [(p_n (q_n + r_n))] = [(p_n q_n + p_n r_n)] = [(p_n)][(q_n)] + [(p_n)][(r_n)],
@@ -207,7 +207,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-5
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|§6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]], [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|§6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]], [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]]
 
 From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subseteq \widehat{\mathbb{Q}}$ where convenient, as in [[§11 Completeness#^rem-11-3|556 Remark §11 (why classes)]].
 
@@ -218,21 +218,21 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ## Order
 
-> [!definition] Definition §6★.4: Positive Classes
+> [!definition] Definition §6★.8: Positive Classes
 > A class $x \in \widehat{\mathbb{Q}}$ is **positive**, written $x > 0$, if it has a representative $(q_n)$ with
 >
 > $$
 > q_n \geq \delta \quad \text{for all } n \geq N, \qquad \text{for some rational } \delta > 0 \text{ and some } N.
 > $$
 
-^def-6s-4
+^def-6s-5
 
 "Eventually $q_n > 0$" would not do: $(1/n)$ has all terms positive, yet it represents $0$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^ex-6s-1|Example §6★.1]]). Positivity has to be bounded away from zero, as in [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|Lemma §6★.4]].
 
-> [!definition] Definition §6★.4: The Order on $\widehat{\mathbb{Q}}$
-> For $x, y \in \widehat{\mathbb{Q}}$ define $x < y$ if $y - x > 0$ (positivity as in [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Definition §6★.4]]), and $x \leq y$ if $x < y$ or $x = y$.
+> [!definition] Definition §6★.6: The Order on $\widehat{\mathbb{Q}}$
+> For $x, y \in \widehat{\mathbb{Q}}$ define $x < y$ if $y - x > 0$ (positivity as in [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-5|Definition §6★.5]]), and $x \leq y$ if $x < y$ or $x = y$.
 
-^def-6s-new2
+^def-6s-6
 
 > [!theorem] Lemma §6★.6: Properties of Positivity
 > Let $x, y \in \widehat{\mathbb{Q}}$.
@@ -257,10 +257,10 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ^pf-6s-6
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-4|Def. §6★.4]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-5|Def. §6★.5]]
 
 > [!theorem] Theorem §6★.7: $\widehat{\mathbb{Q}}$ Is an Ordered Field
-> With $\leq$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]], $\widehat{\mathbb{Q}}$ satisfies the order axioms O1–O5 ([[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]), so it is an ordered field. The embedding preserves order: for $p, q \in \mathbb{Q}$, $p \leq q$ if and only if $\iota(p) \leq \iota(q)$.
+> With $\leq$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-6|Def. §6★.6]], $\widehat{\mathbb{Q}}$ satisfies the order axioms O1–O5 ([[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]]), so it is an ordered field. The embedding preserves order: for $p, q \in \mathbb{Q}$, $p \leq q$ if and only if $\iota(p) \leq \iota(q)$.
 
 ^thm-6s-7
 
@@ -281,9 +281,9 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ^pf-6s-7
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-6|Def. §6★.6]]
 
-Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]]) with the properties of [[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]]. Because $\iota$ preserves sums, products and order, $|\iota(q)| = \iota(|q|)$. Recall that in any ordered field $|a| \leq c$ if and only if $-c \leq a \leq c$.
+Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]]) with the properties of [[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]]. Because $\iota$ preserves sums, products and order, $|\iota(q)| = \iota(|q|)$. Recall that in any ordered field $|a| \leq c$ if and only if $-c \leq a \leq c$.
 
 ## Rational Approximation
 
@@ -329,21 +329,21 @@ Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§
 
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-1|§6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]]
 
-Limits and Cauchy sequences make sense in any ordered field: read [[§7 Limits of Sequences#^def-7-2|Def. §7.2]] and [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]] with $\varepsilon$ ranging over the positive elements of the field.
+Limits and Cauchy sequences make sense in any ordered field: read [[§7 Limits of Sequences#^def-7-2|Def. §7.2]] and [[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]] with $\varepsilon$ ranging over the positive elements of the field.
 
-> [!definition] Definition §6★.5: Convergence in $\widehat{\mathbb{Q}}$
+> [!definition] Definition §6★.7: Convergence in $\widehat{\mathbb{Q}}$
 > A sequence $(x_k)$ in $\widehat{\mathbb{Q}}$ **converges** to $x \in \widehat{\mathbb{Q}}$ if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x| < \varepsilon$ for all $k \geq K$.
 >
 > By [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|Proposition §6★.8]](b) it is enough to test $\varepsilon = \iota(\delta)$ with $\delta > 0$ rational.
 
-^def-6s-5
+^def-6s-7
 
-> [!definition] Definition §6★.5: Cauchy Sequences in $\widehat{\mathbb{Q}}$
+> [!definition] Definition §6★.8: Cauchy Sequences in $\widehat{\mathbb{Q}}$
 > Let $(x_k)$ be a sequence in $\widehat{\mathbb{Q}}$. It is **Cauchy** if for every positive $\varepsilon \in \widehat{\mathbb{Q}}$ there is $K$ with $|x_k - x_m| < \varepsilon$ for all $k, m \geq K$.
 >
 > As for convergence, by [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|Proposition §6★.8]](b) it is enough to test $\varepsilon = \iota(\delta)$ with $\delta > 0$ rational.
 
-^def-6s-new3
+^def-6s-8
 
 > [!theorem] Corollary §6★.9: A Class Is the Limit of Its Representative
 > If $x = [(q_n)] \in \widehat{\mathbb{Q}}$, then $\iota(q_k) \to x$ in $\widehat{\mathbb{Q}}$ as $k \to \infty$.
@@ -384,7 +384,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 ## Completeness
 
 > [!theorem] Theorem §6★.10: $\widehat{\mathbb{Q}}$ Is Cauchy Complete
-> Every Cauchy sequence in $\widehat{\mathbb{Q}}$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new3|Def. §6★.5]]) converges in $\widehat{\mathbb{Q}}$.
+> Every Cauchy sequence in $\widehat{\mathbb{Q}}$ ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-8|Def. §6★.8]]) converges in $\widehat{\mathbb{Q}}$.
 
 ^thm-6s-10
 
@@ -419,7 +419,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 
 > [!remark]- Connections
 > - The same diagonal argument, with $z_m$ chosen within $1/m$ of $\xi_m$: [[§11 Completeness#^prop-11-3|556 Proposition §11.3]](d), and for normed spaces [[§11 Completeness#^thm-11-4|556 Theorem §11.4]].
-> - In ℝ this is [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8]] (Cauchy implies convergent), which the course derives *from* the completeness axiom. Here the logic runs the other way: Cauchy completeness is built in, and the completeness axiom is derived next.
+> - In ℝ this is [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]] (Cauchy implies convergent), which the course derives *from* the completeness axiom. Here the logic runs the other way: Cauchy completeness is built in, and the completeness axiom is derived next.
 
 > [!theorem] Theorem §6★.11: $\widehat{\mathbb{Q}}$ Satisfies the Completeness Axiom
 > Every nonempty subset $S \subseteq \widehat{\mathbb{Q}}$ that is bounded above has a least upper bound in $\widehat{\mathbb{Q}}$ ([[Completeness Axiom|completeness axiom]], [[§4 The Completeness Axiom#^def-4-4|Def. §4.4]]). So $\widehat{\mathbb{Q}}$ is a complete ordered field.
@@ -451,7 +451,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 
 > [!remark]- Connections
 > - The cut route gets the same axiom from the order directly: the supremum of a bounded family of cuts is their union ([[§6 Dedekind Cuts#^prop-6-5|Proposition §6.5]](iv)).
-> - Here the supremum is written down directly as the class of the bisection endpoints. In an arbitrary Archimedean ordered field the same bisection works with the limit of $(b_k)$ supplied by Cauchy completeness. Conversely, the course derives Cauchy completeness from the least-upper-bound property ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8]]). So for an Archimedean ordered field the two forms of completeness are equivalent.
+> - Here the supremum is written down directly as the class of the bisection endpoints. In an arbitrary Archimedean ordered field the same bisection works with the limit of $(b_k)$ supplied by Cauchy completeness. Conversely, the course derives Cauchy completeness from the least-upper-bound property ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]). So for an Archimedean ordered field the two forms of completeness are equivalent.
 
 ## The Two Routes Give the Same ℝ
 
@@ -469,13 +469,13 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 ^thm-6s-12
 
 > [!proof]+ Proof
-> *Rational versus real tolerances.* For a rational sequence, a condition "$|\,\cdot\,| < \varepsilon$ eventually" holds for all real $\varepsilon > 0$ as soon as it holds for all rational $\varepsilon > 0$: given a real $\varepsilon > 0$, [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]] gives a rational $\varepsilon'$ with $0 < \varepsilon' < \varepsilon$. The converse is trivial. So a rational Cauchy sequence is Cauchy in ℝ ([[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]]), and $(p_n) \sim (q_n)$ if and only if $p_n - q_n \to 0$ in ℝ.
+> *Rational versus real tolerances.* For a rational sequence, a condition "$|\,\cdot\,| < \varepsilon$ eventually" holds for all real $\varepsilon > 0$ as soon as it holds for all rational $\varepsilon > 0$: given a real $\varepsilon > 0$, [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]] gives a rational $\varepsilon'$ with $0 < \varepsilon' < \varepsilon$. The converse is trivial. So a rational Cauchy sequence is Cauchy in ℝ ([[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]]), and $(p_n) \sim (q_n)$ if and only if $p_n - q_n \to 0$ in ℝ.
 >
-> *Well defined.* A rational Cauchy sequence converges in ℝ by [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8]]. If $(p_n) \sim (q_n)$, then $p_n - q_n \to 0$, so $\lim p_n = \lim q_n$ by [[§9 Limit Theorems for Sequences#^cor-9-6|Corollary §9.6]] ($\lim (p_n - q_n) = \lim p_n - \lim q_n$).
+> *Well defined.* A rational Cauchy sequence converges in ℝ by [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]. If $(p_n) \sim (q_n)$, then $p_n - q_n \to 0$, so $\lim p_n = \lim q_n$ by [[§9 Limit Theorems for Sequences#^cor-9-6|Corollary §9.6]] ($\lim (p_n - q_n) = \lim p_n - \lim q_n$).
 >
 > *Injective.* If $\lim p_n = \lim q_n$, the same corollary gives $p_n - q_n \to 0$, i.e. $(p_n) \sim (q_n)$.
 >
-> *Surjective.* Let $r \in \mathbb{R}$. By [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]], for each $n$ pick $q_n \in \mathbb{Q}$ with $r - 1/n < q_n < r$. Then $|q_n - r| < 1/n$, so $q_n \to r$ (by the [[Archimedean Property|Archimedean property]], $1/n < \varepsilon$ for large $n$). A convergent sequence is Cauchy ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|Theorem §10.7]]), so $(q_n) \in \mathcal{C}$ and $\Phi([(q_n)]) = r$.
+> *Surjective.* Let $r \in \mathbb{R}$. By [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]], for each $n$ pick $q_n \in \mathbb{Q}$ with $r - 1/n < q_n < r$. Then $|q_n - r| < 1/n$, so $q_n \to r$ (by the [[Archimedean Property|Archimedean property]], $1/n < \varepsilon$ for large $n$). A convergent sequence is Cauchy ([[§10a Cauchy Sequences#^thm-10a-1|Theorem §10a.1]]), so $(q_n) \in \mathcal{C}$ and $\Phi([(q_n)]) = r$.
 >
 > *Operations.* $\Phi$ of a sum or product is the limit of termwise sums or products, which is the sum or product of the limits ([[§9 Limit Theorems for Sequences#^thm-9-3|Theorem §9.3]]). The constant sequence $q$ has limit $q$, so $\Phi(\iota(q)) = q$.
 >
@@ -483,7 +483,7 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 
 ^pf-6s-12
 
-*Uses:* [[§4 The Completeness Axiom#^thm-4-7|§4.7]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]], [[§9 Limit Theorems for Sequences#^cor-9-6|§9.6]], [[Archimedean Property|§4.5]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|§10.7]], [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
+*Uses:* [[§4 The Completeness Axiom#^thm-4-7|§4.7]], [[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]], [[§10a Cauchy Sequences#^thm-10a-3|§10a.3]], [[§9 Limit Theorems for Sequences#^cor-9-6|§9.6]], [[Archimedean Property|§4.5]], [[§10a Cauchy Sequences#^thm-10a-1|§10a.1]], [[§9 Limit Theorems for Sequences#^thm-9-3|§9.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]]
 
 > [!theorem] Corollary §6★.13: Cauchy Classes and Dedekind Cuts
 > For $x = [(q_n)] \in \widehat{\mathbb{Q}}$ put
@@ -536,9 +536,9 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|§6★.12]]
 
 > [!remark] Remark: The Order of Logic, and Functional Analysis
-> The completion of a metric space in functional analysis ([[§11 Completeness#^def-11-3|556 Def. §11.3]], [[§11 Completeness#^def-11-4|556 Def. §11.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§11 Completeness#^prop-11-3|556 Proposition §11.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]]) instead of measuring distances.
+> The completion of a metric space in functional analysis ([[§11 Completeness#^def-11-3|556 Def. §11.3]], [[§11 Completeness#^def-11-4|556 Def. §11.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§11 Completeness#^prop-11-3|556 Proposition §11.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-6|Def. §6★.6]]) instead of measuring distances.
 >
-> Once ℝ exists, the two constructions agree. Applied to $M = \mathbb{Q}$ with $d(p, q) = |p - q|$, 556's equivalence relation is $\sim$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]] (rational tolerances suffice, as in the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]]), so 556's completion $\overline{M}$ for $M = \mathbb{Q}$ is $\widehat{\mathbb{Q}}$ as a set (this $\overline{\mathbb{Q}}$ is not the field of algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]]). The dictionary:
+> Once ℝ exists, the two constructions agree. Applied to $M = \mathbb{Q}$ with $d(p, q) = |p - q|$, 556's equivalence relation is $\sim$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-3|Def. §6★.3]] (rational tolerances suffice, as in the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]]), so 556's completion $\overline{M}$ for $M = \mathbb{Q}$ is $\widehat{\mathbb{Q}}$ as a set (this $\overline{\mathbb{Q}}$ is not the field of algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]]). The dictionary:
 >
 > | Here | Functional Analysis |
 > |---|---|
@@ -547,7 +547,7 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 > | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12\|Thm. §6★.12]] ($\Phi = \lim$ onto ℝ) | [[§11 Completeness#^prop-11-5\|556 Prop. §11.5]] (identifying a completion: $\Phi = \lim J x_n$) |
 > | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14\|Cor. §6★.14]] (uniqueness) | [[§11 Completeness#^cor-11-6\|556 Cor. §11.6]] (uniqueness of the completion) |
 >
-> So ℝ *is* the completion of $\mathbb{Q}$, in the sense of [[Completion of a Normed Space|556 §11]]: $\mathbb{Q}$ sits densely in ℝ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]), and ℝ is complete ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8]]). Functional analysis then runs the same machine on function spaces: $L^p[a, b]$ is the completion of $C[a, b]$ under $\|\cdot\|_p$ ([[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|556 Proposition §17.8]]).
+> So ℝ *is* the completion of $\mathbb{Q}$, in the sense of [[Completion of a Normed Space|556 §11]]: $\mathbb{Q}$ sits densely in ℝ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]), and ℝ is complete ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]). Functional analysis then runs the same machine on function spaces: $L^p[a, b]$ is the completion of $C[a, b]$ under $\|\cdot\|_p$ ([[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|556 Proposition §17.8]]).
 
 ^rem-6s-2
 

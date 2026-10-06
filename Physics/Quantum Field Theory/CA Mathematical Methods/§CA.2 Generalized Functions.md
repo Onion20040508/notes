@@ -224,7 +224,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 ^thm-ca-2-5
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). For $T = T_\psi$ substitute $y = Ax + a$, so $x = A^{-1}(y - a)$ and $d^nx = |\det A|^{-1}d^ny$ ([[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]], on growing balls, then the limit by dominated convergence); the domain $\mathbb R^n$ is unchanged:
+> **Step 1** (part 1). For $T = T_\psi$ substitute $y = Ax + a$, so $x = A^{-1}(y - a)$ and $d^nx = |\det A|^{-1}d^ny$ ([[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], on growing balls, then the limit by dominated convergence); the domain $\mathbb R^n$ is unchanged:
 >
 > $$
 > \int d^nx\,\psi(Ax + a)\,\varphi(x) = |\det A|^{-1}\int d^ny\,\psi(y)\,\varphi\bigl(A^{-1}(y - a)\bigr) .
@@ -254,7 +254,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^der-ca-2-5
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]
 
 > [!theorem] Theorem §CA.2.6: Invariant Distributions on the Mass Shell and the Light Cone
 > Let $m > 0$ and $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$.

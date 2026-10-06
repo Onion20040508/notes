@@ -30,8 +30,8 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^def-40-1
 
 > [!remark]- Connections
-> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group (590 §21.13)]].
-> - Linear-algebra versions: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]] and [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]]; topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
+> - 590 counterpart: [[§27 Free Groups and Presentations#^def-27-9|Quotient Group (590 §27.9)]].
+> - Linear-algebra versions: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]] and [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]]; topological version: [[§13 Quotient Topology#^def-13-3|Quotient Space]].
 
 > [!theorem] Theorem §40.1: $G/N$ Is a Group
 > Let $N \trianglelefteq G$. With coset multiplication, $G/N$ is a group, with identity $eN = N$ and inverses $(gN)^{-1} = g^{-1}N$. If $G$ is finite, $|G/N| = [G : N] = |G|/|N|$.
@@ -65,7 +65,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 *Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
 
 > [!remark]- Connections
-> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group]].
+> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§27 Free Groups and Presentations#^def-27-9|Quotient Group]].
 
 > [!remark] Remark: Kernels and Normal Subgroups Are the Same Thing
 > Together with [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]], the proposition says: the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$. This is why normality, a condition that looks technical, is the natural one.
@@ -83,7 +83,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 *Part 1 of the example with $n = 3$: the canonical projection $\pi: \mathbb{Z} \to \mathbb{Z}/3\mathbb{Z}$ collapses each coset $a + 3\mathbb{Z}$ (one colour each) to a single element $[a]$ of the quotient group. The grey arrows show adding $[1]$: $[0] \to [1] \to [2] \to [0]$.*
 
 > [!remark]- Connections
-> - 590 version of (1): [[§21 Algebra Prerequisites꞉ Groups#^ex-21-7|Example §21.7]].
+> - 590 version of (1): [[§27 Free Groups and Presentations#^ex-27-5|Example §27.5]].
 
 ## Computing with Representatives
 
@@ -111,7 +111,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 *Uses:* [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]]
 
 > [!remark]- Connections
-> - 590 version: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|multiply representatives, take the coset]] (590 §21).
+> - 590 version: [[§27 Free Groups and Presentations#^rem-27-19|multiply representatives, take the coset]] (590 §26).
 > - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]] (LADR 3.102).
 
 > [!example] Example §40.2: $(\mathbb{Z}/4\mathbb{Z})/(2\mathbb{Z}/4\mathbb{Z})$

@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 123
+section: "123★"
 bc: "123"
 aliases: ["B&C 123"]
 tags: [complex-variables, math342, extension]
@@ -109,7 +109,7 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 ^ex-123-2
 
 > [!remark]- Connections
-> - The series (6) is the rectangle solution of separation of variables, [[§36 Potential in a Rectangle#^thm-36-1|341 Thm. §36.1]], the coefficients $\frac{4}{\pi(2n - 1)}$ being those of the sine series of the constant $1$. The polar Laplacian that (9) satisfies directly is [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]].
+> - The series (6) is the rectangle solution of separation of variables, [[§45 Potential in a Rectangle#^thm-45-1|341 Thm. §45.1]], the coefficients $\frac{4}{\pi(2n - 1)}$ being those of the sine series of the constant $1$. The polar Laplacian that (9) satisfies directly is [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]].
 
 ## More Mapped Problems
 
@@ -153,7 +153,7 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 > V = \frac1\pi\operatorname{Arg}\Big(e^{i\pi/4}\,\frac{1 - z}{z - i}\Big) .
 > $$
 >
-> **On the axis**, $z = 0$: $Z = e^{i\pi/4}\cdot\frac{1}{-i} = e^{i\pi/4}e^{i\pi/2} = e^{i3\pi/4}$, so $V = \frac1\pi\cdot\frac{3\pi}{4} = \frac34$. This agrees with the mean value property: the potential at the center of a circle is the average of its boundary values, $\frac{1}{2\pi}\big(0\cdot\frac\pi2 + 1\cdot\frac{3\pi}{2}\big) = \frac34$ ([[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]]; B&C's version is the Poisson integral, [[§134★ Poisson Integral Formula#^thm-134-1|Theorem §134.1]]).
+> **On the axis**, $z = 0$: $Z = e^{i\pi/4}\cdot\frac{1}{-i} = e^{i\pi/4}e^{i\pi/2} = e^{i3\pi/4}$, so $V = \frac1\pi\cdot\frac{3\pi}{4} = \frac34$. This agrees with the mean value property: the potential at the center of a circle is the average of its boundary values, $\frac{1}{2\pi}\big(0\cdot\frac\pi2 + 1\cdot\frac{3\pi}{2}\big) = \frac34$ ([[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]]; B&C's version is the Poisson integral, [[§134★ Poisson Integral Formula#^thm-134-1|Theorem §134.1]]).
 >
 > *B&C: Sec. 123, Exercise 8*
 

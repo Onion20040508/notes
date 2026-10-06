@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 11
-section: 127
+section: "127★"
 bc: "127"
 aliases: ["B&C 127"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§126★ Flows Around a Corner and Around a Cylinder]] · ↑ [[· 11★ The Schwarz–Christoffel Transformation]] · [[§128★ Schwarz–Christoffel Transformation]] →
+← [[§126a The Heated Segment, the Quadrant, the Sine Half Strip and Flow Around a Corner]] · ↑ [[· 11★ The Schwarz–Christoffel Transformation]] · [[§128★ Schwarz–Christoffel Transformation]] →
 
 *Brown–Churchill, Section 127.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*

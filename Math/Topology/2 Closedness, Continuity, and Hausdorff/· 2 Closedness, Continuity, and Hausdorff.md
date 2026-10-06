@@ -12,10 +12,10 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§6 Closed Sets and Limit Points]]
-- [[§7 Interior and Closure]]
-- [[§8 Hausdorff Spaces]]
-- [[§9 Continuous Functions]]
+- [[§7 Closed Sets and Limit Points]]
+- [[§8 Interior and Closure]]
+- [[§9 Hausdorff Spaces]]
+- [[§10 Continuous Functions]]
 
 ## Central results
 - [[Closure Characterization]] (§7.3)
@@ -24,7 +24,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Closure Characterization|Theorem §7.3: Closure Characterization]]: 44 later results
-- [[§6 Closed Sets and Limit Points#^thm-6-1|Theorem §6.1: Properties of Closed Sets]]: 41 later results
-- [[§7 Interior and Closure#^lem-7-1|Lemma §7.1: Interior and Closure Containment]]: 40 later results
-- [[§9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]]: 37 later results
+- [[Closure Characterization|Theorem §8.3: Closure Characterization]]: 44 later results
+- [[§7 Closed Sets and Limit Points#^thm-7-1|Theorem §7.1: Properties of Closed Sets]]: 41 later results
+- [[§8 Interior and Closure#^lem-8-1|Lemma §8.1: Interior and Closure Containment]]: 40 later results
+- [[§10 Continuous Functions#^thm-10-4|Theorem §10.4: Rules for Continuous Functions]]: 37 later results

@@ -30,7 +30,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 *Uses:* [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]], [[§17 Projective Spaces as Smooth Manifolds#^cor-17-5|§17.5]], [[§19 Manifolds in Euclidean Space#^lem-19-3|§19.3]], [[§26 Derivations and the Abstract Tangent Space#^prop-26-9|§26.9]]
 
 > [!remark]- Connections
-> - As a covering map of topological spaces, for $n = 2$: [[§28 Fundamental Group of Some Surfaces#^thm-28-1|590 §28.1]] ($S^2 \to P^2$ is a covering map).
+> - As a covering map of topological spaces, for $n = 2$: [[§38 Fundamental Group of Some Surfaces#^thm-38-1|590 §38.1]] ($S^2 \to P^2$ is a covering map).
 
 > [!example] Example §37.2: The Projection $S^{2n+1} \to \mathbb{CP}^n$
 > The projection $S^{2n+1} \to \mathbb{CP}^n$ of [[§9 Complex Projective Space|§9]] is a submersion.
@@ -104,7 +104,7 @@ For the Hopf fibration the converse of [[§34 Fibrations#^prop-34-4|Proposition 
 *Uses:* [[§37 Projective Spaces and the Hopf Fibration#^ex-37-3|Ex. §37.3]], [[§34 Fibrations#^def-34-3|Def. §34.3]], [[§19 Manifolds in Euclidean Space#^lem-19-3|§19.3]], [[§18 Smooth Functions and Smooth Maps#^prop-18-9|§18.9]], [[§18 Smooth Functions and Smooth Maps#^lem-18-4|§18.4]], [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]
 
 > [!remark]- Connections
-> - The discrete-fibre analogue: the sheets over an evenly covered set, [[§24 Covering Spaces#^def-24-1|590 Def. §24.1]], each a local section of the covering map, [[§24 Covering Spaces#^def-24-2|590 Def. §24.2]].
+> - The discrete-fibre analogue: the sheets over an evenly covered set, [[§31 Covering Spaces#^def-31-1|590 Def. §31.1]], each a local section of the covering map, [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]].
 > - $\mathbb{CP}^n$ as the orbit space of this circle action: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]].
 
 ![[m591-31-1.svg]]

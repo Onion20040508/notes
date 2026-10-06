@@ -5,19 +5,19 @@ ladr-hub: "9.50"
 aliases: ["LADR 9.50"]
 tags: [linear-algebra, hub]
 ---
-![[§34 Determinants#^ladr-9-50]]
+![[§37 Determinants#^ladr-9-50]]
 
 ## Treated in
-- [[§34 Determinants#^ladr-9-50|Axler 9.50]], in [[§34 Determinants]]
+- [[§37 Determinants#^ladr-9-50|Axler 9.50]], in [[§37 Determinants]]
 
 ## Proof uses
-- [[§34 Determinants#^ladr-9-49|9.49]], [[§33 Alternating Multilinear Forms#^ladr-9-39|9.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|3.80]]
+- [[§37 Determinants#^ladr-9-49|9.49]], [[§36 Alternating Multilinear Forms#^ladr-9-39|9.39]], [[§10 Invertibility and Isomorphisms#^ladr-3-80|3.80]]
 
 ## Used in (Linear Algebra)
-- [[§34 Determinants#^ladr-9-51|9.51 Eigenvalues and determinants]]
+- [[§37 Determinants#^ladr-9-51|9.51 Eigenvalues and determinants]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^thm-18-22|Theorem §18.22: Linear Maps Preserve Null Sets]]
+- [[§30 Differentiating the Integral#^thm-30-3|Theorem §30.3: Linear Maps Preserve Null Sets]]
 
 ## Used in (Group Theory)
 - [[§3 Basic Examples of Groups#^def-3-6|Definition §3.6: General Linear Groups GLₙ(k)]]
@@ -33,6 +33,6 @@ tags: [linear-algebra, hub]
 - [[§38 SU(2) → SO(3)꞉ The Double Cover#^lem-38-8|Lemma §38.8: Every Rotation Has an Axis]]
 
 ## Connections
-- Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§34 Determinants#^ladr-9-51|9.51]]).
-- **Also in [[Applied Linear Algebra]]:** [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (matrix version, proved by row reduction).
-- **Also in [[Ordinary Differential Equations]]:** [[§28 Matrices#^thm-28-3|331 Thm. §28.3]] (matrix version, with the cofactor formula for the inverse and a worked example).
+- Characteristic polynomial: $\lambda$ is an eigenvalue iff $\det(\lambda I-T)=0$ ([[§37 Determinants#^ladr-9-51|9.51]]).
+- **Also in [[Applied Linear Algebra]]:** [[§25 Properties of Determinants#^thm-25-3|235 Thm. §25.3]] (matrix version, proved by row reduction).
+- **Also in [[Ordinary Differential Equations]]:** [[§34 Matrices#^thm-34-3|331 Thm. §34.3]] (matrix version, with the cofactor formula for the inverse and a worked example).

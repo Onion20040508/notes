@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 102
+section: "102★"
 bc: "102"
 aliases: ["B&C 102"]
 tags: [complex-variables, math342, extension]

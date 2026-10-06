@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 122
+section: "122★"
 bc: "122"
 aliases: ["B&C 122"]
 tags: [complex-variables, math342, extension]
@@ -23,12 +23,12 @@ The second physical interpretation of harmonic functions: electrostatics. In a r
 
 ^def-122-1
 
-> [!definition] Definition §122.2: Electrostatic Potential
-> The **electrostatic potential** is a scalar function of the space coordinates such that, at each point, its [[§95 Directional Derivatives and the Gradient Vector#^def-95-1|directional derivative]] in any direction is the negative of the component of the [[§122★ Electrostatic Potential#^def-122-1|field intensity]] in that direction.
+> [!definition] Definition §122.3: Electrostatic Potential
+> The **electrostatic potential** is a scalar function of the space coordinates such that, at each point, its [[§111 Directional Derivatives and the Gradient Vector#^def-111-1|directional derivative]] in any direction is the negative of the component of the [[§122★ Electrostatic Potential#^def-122-1|field intensity]] in that direction.
 >
 > *B&C: Sec. 122 (text)*
 
-^def-122-new1
+^def-122-2
 
 For two stationary charged particles, the force of attraction or repulsion is proportional to the product of the charges and inversely proportional to the square of the distance between them (the inverse-square law).
 
@@ -45,21 +45,21 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 
 ^prop-122-1
 
-*B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that $1/r$ is harmonic in space away from the origin, is [[§19 The Laplacian in Spherical Coordinates#^rem-19-2|452 Rem. §19.2]]; in the plane the corresponding potential of a line charge is $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]] (Example §122.1).*
+*B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that $1/r$ is harmonic in space away from the origin, is [[§33 The Laplacian in Spherical Coordinates#^rem-33-2|452 Rem. §19.2]]; in the plane the corresponding potential of a line charge is $\ln r$, [[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]] (Example §122.1).*
 
-> [!definition] Definition §122.2: Equipotentials
+> [!definition] Definition §122.3: Equipotentials
 > A surface along which $V(x, y)$ is constant is an **equipotential surface** (in the $xy$ plane, an equipotential curve $V(x, y) = c_1$).
 >
 > *B&C: Sec. 122 (text)*
 
-^def-122-2
+^def-122-3
 
 > [!definition] Definition §122.4: Flux Lines
 > If $U$ is a [[§115★ Harmonic Conjugates#^def-115-1|harmonic conjugate]] of $V$, the curves $U(x, y) = c_2$ in the $xy$ plane are the **flux lines**.
 >
 > *B&C: Sec. 122 (text)*
 
-^def-122-new2
+^def-122-4
 
 > [!theorem] Proposition §122.2: Conductors Are Equipotentials; Flux Lines Follow the Field
 > **(a)** In the static case the surface of a conductor is an equipotential.
@@ -71,13 +71,13 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 ^prop-122-2
 
 > [!proof]+ Proof
-> **(a)** (Physical argument, as in B&C.) Charges are free to move on a conducting surface, so in the static case the tangential component of the field intensity there is zero. By [[§122★ Electrostatic Potential#^def-122-new1|Definition §122.2]] the directional derivative of $V$ along the surface is then zero in every tangent direction, so $V$ is constant along the (connected) surface.
+> **(a)** (Physical argument, as in B&C.) Charges are free to move on a conducting surface, so in the static case the tangential component of the field intensity there is zero. By [[§122★ Electrostatic Potential#^def-122-2|Definition §122.2]] the directional derivative of $V$ along the surface is then zero in every tangent direction, so $V$ is constant along the (connected) surface.
 >
 > **(b)** By the Cauchy–Riemann equations $U_x = -V_y$, $U_y = V_x$, so $\operatorname{grad} U$ is $\operatorname{grad} V$ turned through $+\pi/2$, and both are nonzero where $(V + iU)' = V_x - iV_y \ne 0$. The level curves are smooth there, with normals $\operatorname{grad} V$ and $\operatorname{grad} U$, which are perpendicular, so the curves are orthogonal ([[§112★ Preservation of Angles and Scale Factors#^ex-112-2|Example §112.2]]). The tangent of $U = c_2$ is perpendicular to $\operatorname{grad} U$, hence parallel to $\operatorname{grad} V$ and to the field intensity $-\operatorname{grad} V$. (This is [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2]](b) with $V$, $U$ in place of $T$, $S$.)
 
 ^pf-122-2
 
-*Uses:* [[§122★ Electrostatic Potential#^def-122-1|Def. §122.1]], [[§122★ Electrostatic Potential#^def-122-new1|Def. §122.2]], [[§122★ Electrostatic Potential#^def-122-2|Def. §122.2]], [[§122★ Electrostatic Potential#^def-122-new2|Def. §122.4]], [[§122★ Electrostatic Potential#^prop-122-1|§122.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^ex-112-2|Ex. §112.2]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]]
+*Uses:* [[§122★ Electrostatic Potential#^def-122-1|Def. §122.1]], [[§122★ Electrostatic Potential#^def-122-2|Def. §122.2]], [[§122★ Electrostatic Potential#^def-122-3|Def. §122.3]], [[§122★ Electrostatic Potential#^def-122-4|Def. §122.4]], [[§122★ Electrostatic Potential#^prop-122-1|§122.1]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§112★ Preservation of Angles and Scale Factors#^ex-112-2|Ex. §112.2]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]]
 
 > [!remark] Remark: One Mathematical Problem, Several Physical Ones
 > Boundary value problems for the potential $V$ are the same mathematical problems as those for steady temperatures $T$, and, as there, complex variables handle only two-dimensional problems. For instance, the problem of [[§120★ A Related Problem (Steady Temperatures in a Half Plane)#^ex-120-1|Example §120.1]] is also that of the electrostatic potential in the empty space $-\pi/2 < x < \pi/2$, $y > 0$ bounded by the conducting planes $x = \pm\pi/2$ and $y = 0$, insulated from each other at their intersections, when the first two are kept at potential $0$ and the third at potential $1$. The potential in the steady flow of electricity in a plane conducting sheet is also harmonic at points free of sources and sinks, and so is the gravitational potential in empty space.
@@ -85,7 +85,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 ^rem-122-1
 
 > [!remark]- Connections
-> - Laplace's equation for potentials, steady temperatures and ideal flows, and the Dirichlet and Neumann problems: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]], [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]. Gradient fields and potentials of inverse-square force fields in Stewart: [[§107 Vector Fields#^ex-107-2|Calc Ex. §107.2]], [[§107 Vector Fields#^ex-107-4|Calc Ex. §107.4]] (with the opposite sign convention $\mathbf F = \nabla f$).
+> - Laplace's equation for potentials, steady temperatures and ideal flows, and the Dirichlet and Neumann problems: [[§44 Potential Equation#^def-44-1|341 Def. §44.1]], [[§44 Potential Equation#^def-44-3|341 Def. §44.3]], [[§44 Potential Equation#^def-44-4|341 Def. §44.4]], [[§44 Potential Equation#^def-44-5|341 Def. §44.5]]. Gradient fields and potentials of inverse-square force fields in Stewart: [[§125 Vector Fields#^ex-125-2|Calc Ex. §125.2]], [[§125 Vector Fields#^ex-125-4|Calc Ex. §125.4]] (with the opposite sign convention $\mathbf F = \nabla f$).
 
 ## Examples
 
@@ -98,7 +98,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 > V = \frac{\ln r}{\ln r_0} = \frac{\ln(x^2 + y^2)}{2\ln r_0} .
 > $$
 >
-> **Field and flux lines.** The field intensity is $-\operatorname{grad} V = -\dfrac{1}{\ln r_0}\,\dfrac{(x, y)}{x^2 + y^2}$, radial, of size $\dfrac{1}{r|\ln r_0|}$; for $r_0 > 1$ it points inward, from the outer conductor at the higher potential toward the inner one. A harmonic conjugate is $U = \theta/\ln r_0$ (on any slit domain), so the flux lines are the rays $\theta =$ const, orthogonal to the equipotential circles. The potential has the form of a line charge on the axis ([[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]], the fundamental solution $\ln r$).
+> **Field and flux lines.** The field intensity is $-\operatorname{grad} V = -\dfrac{1}{\ln r_0}\,\dfrac{(x, y)}{x^2 + y^2}$, radial, of size $\dfrac{1}{r|\ln r_0|}$; for $r_0 > 1$ it points inward, from the outer conductor at the higher potential toward the inner one. A harmonic conjugate is $U = \theta/\ln r_0$ (on any slit domain), so the flux lines are the rays $\theta =$ const, orthogonal to the equipotential circles. The potential has the form of a line charge on the axis ([[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]], the fundamental solution $\ln r$).
 >
 > *B&C: Sec. 123, Exercise 4*
 

@@ -24,7 +24,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - The geometric velocity $\gamma'(0)$ of a curve in $\mathbb{R}^N$: [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]]; differentials computed by curves between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|§21.3]].
-> - In ℝ³ the velocity is $\mathbf r'(t)$: [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Calc Def. §89.1]], [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
+> - In ℝ³ the velocity is $\mathbf r'(t)$: [[§104 Motion in Space꞉ Velocity and Acceleration#^def-104-1|Calc Def. §104.1]], [[§101 Derivatives and Integrals of Vector Functions#^def-101-2|Calc Def. §101.2]] (with worked examples).
 
 The explicit formula is the definition of the pushforward: $\gamma_{\ast 0}(d/dt|_0)[f] = d/dt|_0\,[f \circ \gamma]$, the ordinary derivative at $0$ of the function $f \circ \gamma$, which is defined near $0$. Lee writes $\gamma'(0)$ for $D_\gamma$. These notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, which is a *geometric* tangent vector, and write $D_\gamma$ for the abstract one, as Assignment 3 does.
 

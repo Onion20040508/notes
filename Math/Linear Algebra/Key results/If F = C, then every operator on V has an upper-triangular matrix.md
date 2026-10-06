@@ -16,5 +16,5 @@ tags: [linear-algebra, hub]
 ## Connections
 - Two commuting operators simultaneously: [[§18 Commuting Operators#^ladr-5-80|5.80]], with the consequence for eigenvalues of sums and products, [[§18 Commuting Operators#^ladr-5-81|5.81]].
 - Once the matrix is upper triangular, the eigenvalues are its diagonal entries: [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]].
-- With an orthonormal basis: Schur's theorem ([[§20 Orthonormal Bases#^ladr-6-38|Schur’s theorem]]).
+- With an orthonormal basis: Schur's theorem ([[§21 Orthonormal Bases#^ladr-6-38|Schur’s theorem]]).
 - Existence only: there is no algorithm computing such a basis exactly (eigenvalues can be non-radical, [[§15 The Minimal Polynomial#^ladr-5-28|5.28]]).

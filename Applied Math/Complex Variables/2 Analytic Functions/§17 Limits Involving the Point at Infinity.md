@@ -22,21 +22,21 @@ Adding a single point $\infty$ to the complex plane makes statements such as "$1
 
 ^def-17-1
 
-> [!definition] Definition §17.2: Riemann Sphere
+> [!definition] Definition §17.3: Riemann Sphere
 > To visualize the extended complex plane, think of the complex plane as passing through the equator of a unit sphere centered at the origin. To each point $z$ of the plane there corresponds exactly one point $P$ on the sphere: the point where the line through $z$ and the north pole $N$ meets the sphere. In like manner, to each point $P$ of the sphere other than $N$ there corresponds exactly one point $z$ of the plane. Letting $N$ correspond to the point at infinity gives a one to one correspondence between the points of the sphere and the points of the extended complex plane. The sphere is the **Riemann sphere**, and the correspondence is **stereographic projection**.
 >
 > *B&C: Sec. 17 (text)*
 
-^def-17-new1
+^def-17-2
 
-> [!definition] Definition §17.2: Neighborhood of Infinity
+> [!definition] Definition §17.4: Neighborhood of Infinity
 > For each small positive number $\varepsilon$, the set $|z| > 1/\varepsilon$ is a **neighborhood of $\infty$**.
 >
 > Hereafter "a point $z$" means a point of the finite plane; when the point at infinity is to be considered, it is mentioned specifically.
 >
 > *B&C: Sec. 17 (text)*
 
-^def-17-2
+^def-17-3
 
 The name is justified by the sphere: the exterior $|z| > 1$ of the unit circle corresponds to the upper hemisphere with the equator and $N$ deleted, and the points exterior to the circle $|z| = 1/\varepsilon$ correspond to the points of the sphere close to $N$. (B&C states this; here is the computation.)
 
@@ -55,13 +55,13 @@ The name is justified by the sphere: the exterior $|z| > 1$ of the unit circle c
 *A vertical cross-section of the Riemann sphere through $N$ and the origin. The line from $N$ through a point $z$ of the plane meets the sphere again at $P$: points outside the unit circle ($z$, red) go to the upper hemisphere, points inside ($z'$, blue) to the lower one. The neighborhood $|z| > 1/\varepsilon$ of $\infty$ (orange, on the plane) corresponds to the orange cap around $N$.*
 
 > [!remark]- Connections
-> - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, [[§17 Local Compactness#^def-17-3|590 Def. §17.3]], and stereographic projection is the homeomorphism with $S^2$ of [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]]. There the neighborhoods of $\infty$ are the complements of compact sets. Every compact $C \subseteq \mathbb{C}$ is bounded, hence inside some disk $|z| \le 1/\varepsilon$, so B&C's neighborhoods $|z| > 1/\varepsilon$ form a base for the same topology at $\infty$.
+> - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, [[§20 Local Compactness#^def-20-3|590 Def. §20.3]], and stereographic projection is the homeomorphism with $S^2$ of [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]]. There the neighborhoods of $\infty$ are the complements of compact sets. Every compact $C \subseteq \mathbb{C}$ is bounded, hence inside some disk $|z| \le 1/\varepsilon$, so B&C's neighborhoods $|z| > 1/\varepsilon$ form a base for the same topology at $\infty$.
 
 ## Limits Involving the Point at Infinity
 
 A meaning is given to $\lim_{z\to z_0} f(z) = w_0$ when $z_0$, or $w_0$, or both, is replaced by $\infty$: in the definition of limit ([[§15 Limits#^def-15-1|Definition §15.1]]) one simply replaces the appropriate neighborhoods of $z_0$ and $w_0$ by neighborhoods of $\infty$.
 
-> [!definition] Definition §17.3: Limits Involving ∞
+> [!definition] Definition §17.4: Limits Involving ∞
 > Let $z_0$ and $w_0$ be points of the (finite) $z$ and $w$ planes.
 > - $\displaystyle\lim_{z\to z_0} f(z) = \infty$ means: for each $\varepsilon > 0$ there is $\delta > 0$ such that $|f(z)| > \dfrac1\varepsilon$ whenever $0 < |z - z_0| < \delta$.
 > - $\displaystyle\lim_{z\to\infty} f(z) = w_0$ means: for each $\varepsilon > 0$ there is $\delta > 0$ such that $|f(z) - w_0| < \varepsilon$ whenever $|z| > \dfrac1\delta$.
@@ -71,7 +71,7 @@ A meaning is given to $\lim_{z\to z_0} f(z) = w_0$ when $z_0$, or $w_0$, or both
 >
 > *B&C: Sec. 17 (text), statements (4), (5) and (6)*
 
-^def-17-3
+^def-17-4
 
 > [!theorem] Theorem §17.1: Reduction to Finite Limits
 > If $z_0$ and $w_0$ are points in the $z$ and $w$ planes, respectively, then
@@ -141,7 +141,7 @@ B&C states the "if" halves, which are the ones used to compute limits; the proof
 
 ^pf-17-1
 
-*Uses:* [[§17 Limits Involving the Point at Infinity#^def-17-3|Def. §17.3]], [[§15 Limits#^def-15-1|Def. §15.1]]
+*Uses:* [[§17 Limits Involving the Point at Infinity#^def-17-4|Def. §17.4]], [[§15 Limits#^def-15-1|Def. §15.1]]
 
 Limits involving $\infty$ are unique, as B&C's Exercise 12 asks one to observe: for $\lim_{z\to\infty} f(z) = w_0$ the proof of [[§15 Limits#^thm-15-1|Theorem §15.1]] goes through with the deleted neighborhoods of $z_0$ replaced by neighborhoods of $\infty$; and $f$ cannot tend both to $\infty$ and to a finite $w_0$, since $|f(z)| > |w_0| + 1$ and $|f(z) - w_0| < 1$ cannot hold at the same point.
 
@@ -227,7 +227,7 @@ The condition $ad - bc \ne 0$ is what keeps $T$ from being constant: if $ad = bc
 > [!example] Example §17.3: Unbounded Sets Reach Every Neighborhood of Infinity
 > Show that a set $S$ is unbounded if and only if every neighborhood of the point at infinity contains at least one point of $S$.
 >
-> By [[§12★ Regions in the Complex Plane#^def-12-5|Definition §12.5]], $S$ is bounded if every point of $S$ lies inside some circle $|z| = R$. So $S$ is unbounded exactly when for every $R > 0$ some point $z \in S$ has $|z| \ge R$.
+> By [[§12★ Regions in the Complex Plane#^def-12-12|Definition §12.12]], $S$ is bounded if every point of $S$ lies inside some circle $|z| = R$. So $S$ is unbounded exactly when for every $R > 0$ some point $z \in S$ has $|z| \ge R$.
 >
 > *If $S$ is unbounded:* given a neighborhood $|z| > 1/\varepsilon$ of $\infty$, apply this with $R = 1/\varepsilon + 1$ to get $z \in S$ with $|z| \ge 1/\varepsilon + 1 > 1/\varepsilon$.
 >

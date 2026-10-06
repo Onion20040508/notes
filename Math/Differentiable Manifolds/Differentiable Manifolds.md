@@ -126,33 +126,33 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Topology]]**
 - [[Heine–Borel Theorem]] (10)
-- [[§9 Continuous Functions#^thm-9-4|Theorem §9.4: Rules for Continuous Functions]] (10)
+- [[§10 Continuous Functions#^thm-10-4|Theorem §10.4: Rules for Continuous Functions]] (10)
 - [[Continuous Image of a Compact Space is Compact]] (7)
 - [[Bijection from Compact to Hausdorff is a Homeomorphism]] (5)
 - [[Compact Subspace of a Hausdorff Space is Closed]] (5)
-- [[§13 Connected Spaces#^def-13-new1|Definition §13.1: Connected Space]] (5)
-- [[§9 Continuous Functions#^def-9-2|Definition §9.2: Homeomorphism]] (5)
-- [[§10 Product Topology on Arbitrary Products#^thm-10-1|Theorem §10.1: Continuity into Product Spaces]] (5)
+- [[§15 Connected Spaces#^def-15-2|Definition §15.2: Connected Space]] (5)
+- [[§10 Continuous Functions#^def-10-2|Definition §10.2: Homeomorphism]] (5)
+- [[§11 Product Topology on Arbitrary Products#^thm-11-1|Theorem §11.1: Continuity into Product Spaces]] (5)
 
 **[[Multivariable Analysis]]**
 - [[Multivariable Chain Rule]] (28)
 - [[Inverse Function Theorem (several variables)]] (4)
 - [[Polar and spherical coordinates]] (2)
 - [[§3 Continuity and Limits of Functions#^thm-3-2|Theorem §3.2: Product of Continuous Functions]] (2)
-- [[§6 Differentiability#^thm-6-4|Theorem §6.4: Product Rule for Partial Derivatives]] (2)
+- [[§8 Algebra of Differentiable Functions#^thm-8-2|Theorem §8.2: Product Rule for Partial Derivatives]] (2)
 - [[Implicit Function Theorem]] (1)
 - [[§3 Continuity and Limits of Functions#^thm-3-1|Theorem §3.1: Sum and Difference of Continuous Functions]] (1)
 - [[§3 Continuity and Limits of Functions#^thm-3-3|Theorem §3.3: Quotient of Continuous Functions]] (1)
 
 **[[Linear Algebra]]**
 - [[Fundamental theorem of linear maps]] (8)
-- [[§34 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (7)
+- [[§37 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (7)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
 - [[Invertible ⟺ nonzero determinant]] (6)
 - [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (4)
-- [[§34 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (3)
+- [[§37 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (3)
 - [[Linear map lemma]] (3)
-- [[§34 Determinants#^ladr-9-46|Theorem 9.46: Formula for determinant of a matrix]] (2)
+- [[§37 Determinants#^ladr-9-46|Theorem 9.46: Formula for determinant of a matrix]] (2)
 
 **[[Group Theory]]**
 - [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]] (4)

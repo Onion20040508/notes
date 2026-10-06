@@ -79,7 +79,7 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 *The proof. The integrand $f(z)/(z - z_0)$ is analytic in the shaded region between $C$ and the small circle $C_\rho$, so the two integrals are equal. On $C_\rho$, $f(z)$ is within $\varepsilon$ of $f(z_0)$ once $\rho$ is small; what remains is $f(z_0)\int_{C_\rho}dz/(z - z_0) = 2\pi i\,f(z_0)$.*
 
 > [!remark]- Connections
-> - For a circle $C$ centered at $z_0$, formula (1) says that $f(z_0)$ is the average of $f$ over the circle: Gauss's mean value theorem, [[§59 Maximum Modulus Principle#^thm-59-1|§59.1]]. Its real part is the mean value property of harmonic functions, [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]], and the Poisson integral formula [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]] is the corresponding statement that a harmonic function in a disk is determined by its boundary values.
+> - For a circle $C$ centered at $z_0$, formula (1) says that $f(z_0)$ is the average of $f$ over the circle: Gauss's mean value theorem, [[§59 Maximum Modulus Principle#^thm-59-1|§59.1]]. Its real part is the mean value property of harmonic functions, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]], and the Poisson integral formula [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]] is the corresponding statement that a harmonic function in a disk is determined by its boundary values.
 
 > [!remark] Remark: Method — Evaluating Contour Integrals by Cauchy's Formula
 > For $\int_C g(z)\,dz$, $C$ a simple closed contour:

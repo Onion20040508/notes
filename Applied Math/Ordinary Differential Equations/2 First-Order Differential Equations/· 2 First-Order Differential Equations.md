@@ -14,15 +14,15 @@ tags: [chapter, ordinary-differential-equations]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (4), [[Calculus]] (25), [[Functional Analysis]] (2), [[Topology]] (1), [[Fourier Series and PDEs]] (4)
 
 ## Sections
-- [[§4 Linear Differential Equations; Method of Integrating Factors]] — BDP 2.1
-- [[§5 Separable Differential Equations]] — BDP 2.2
-- [[§6 Modeling with First-Order Differential Equations]] — BDP 2.3
-- [[§7 Differences Between Linear and Nonlinear Differential Equations]] — BDP 2.4
-- [[§8 Autonomous Differential Equations and Population Dynamics]] — BDP 2.5
-- [[§9 Exact Differential Equations and Integrating Factors]] — BDP 2.6
-- [[§10 Numerical Approximations꞉ Euler's Method]] — BDP 2.7
-- [[§11 The Existence and Uniqueness Theorem]] — BDP 2.8
-- [[§12★ First-Order Difference Equations]] — BDP 2.9 ★
+- [[§5 Linear Differential Equations; Method of Integrating Factors]] — BDP 2.1
+- [[§6 Separable Differential Equations]] — BDP 2.2
+- [[§7 Modeling with First-Order Differential Equations]] — BDP 2.3
+- [[§8 Differences Between Linear and Nonlinear Differential Equations]] — BDP 2.4
+- [[§9 Autonomous Differential Equations and Population Dynamics]] — BDP 2.5
+- [[§11 Exact Differential Equations and Integrating Factors]] — BDP 2.6
+- [[§13 Numerical Approximations꞉ Euler's Method]] — BDP 2.7
+- [[§14 The Existence and Uniqueness Theorem]] — BDP 2.8
+- [[§15★ First-Order Difference Equations]] — BDP 2.9 ★
 
 ## Central results
 - [[Integrating Factor Solution Formula]] (§4.2)
@@ -32,7 +32,7 @@ tags: [chapter, ordinary-differential-equations]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|Theorem §4.1: Integrating Factor for y′ + ay = g(t)]]: 24 later results
-- [[Integrating Factor Solution Formula|Theorem §4.2: Solution of a First-Order Linear Equation]]: 19 later results
-- [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4: The Iterates Exist and Stay in a Bow Tie]]: 7 later results
-- [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5: A Continuous ∂f/∂y Gives a Lipschitz Condition]]: 7 later results
+- [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-1|Theorem §5.1: Integrating Factor for y′ + ay = g(t)]]: 24 later results
+- [[Integrating Factor Solution Formula|Theorem §5.2: Solution of a First-Order Linear Equation]]: 19 later results
+- [[§14 The Existence and Uniqueness Theorem#^lem-14-4|Lemma §14.4: The Iterates Exist and Stay in a Bow Tie]]: 7 later results
+- [[§14 The Existence and Uniqueness Theorem#^lem-14-5|Lemma §14.5: A Continuous ∂f/∂y Gives a Lipschitz Condition]]: 7 later results

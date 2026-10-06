@@ -307,7 +307,7 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 >
 > **Proof.** Since $a_2 \mid a_2 b_1 = a_1 b_2 = b_2 a_1$ and $\gcd(a_2, b_2) = 1$, [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]] gives $a_2 \mid a_1$. Symmetrically, $a_1 \mid a_1 b_2 = a_2 b_1 = b_1 a_2$ and $\gcd(a_1, b_1) = 1$ give $a_1 \mid a_2$. For positive integers, $x \mid y$ implies $x \le y$ (as $y = xk$ with $k \ge 1$). So $a_2 \le a_1 \le a_2$, i.e. $a_1 = a_2$. Cancelling $a_1 \neq 0$ in $a_1 b_2 = a_1 b_1$ gives $b_1 = b_2$.
 >
-> Since $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$ ([[§13 Number Systems#^prop-13-1|Proposition §13.1]]), this shows that a positive rational number has only one expression as a fraction in lowest terms ([[§13 Number Systems#^def-13-2|Definition §13.2]]). The same follows for every rational: a negative $q$ has numerator $< 0$ in every lowest-terms fraction, so apply the claim to $-q$; and $0 = 0/b$ is in lowest terms only for $b = \gcd(0, b) = 1$.
+> Since $a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1$ ([[§13 Number Systems#^prop-13-1|Proposition §13.1]]), this shows that a positive rational number has only one expression as a fraction in lowest terms ([[§13 Number Systems#^def-13-3|Definition §13.3]]). The same follows for every rational: a negative $q$ has numerator $< 0$ in every lowest-terms fraction, so apply the claim to $-q$; and $0 = 0/b$ is in lowest terms only for $b = \gcd(0, b) = 1$.
 >
 > *Eccles: Exercise 17.6*
 > *Source: HW7*

@@ -17,7 +17,7 @@ tags: [group-theory, math493]
 ^def-38-1
 
 > [!remark]- Connections
-> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|Normal Subgroup (590 §21.12)]].
+> - 590 counterpart: [[§27 Free Groups and Presentations#^def-27-7|Normal Subgroup (590 §27.7)]].
 
 > [!theorem] Proposition §38.1: First Examples of Normal Subgroups
 > 1. Every subgroup of an abelian group is normal.

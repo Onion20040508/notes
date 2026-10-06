@@ -14,14 +14,14 @@ tags: [chapter, applied-linear-algebra]
 **Developed further in (other subjects):** [[Linear Algebra]] (32), [[Group Theory]] (2), [[Functional Analysis]] (18), [[Calculus]] (10)
 
 ## Sections
-- [[§40 Inner Product, Length, and Orthogonality]] — Lay 6.1
-- [[§41 Orthogonal Sets]] — Lay 6.2
-- [[§42 Orthogonal Projections]] — Lay 6.3
-- [[§43 The Gram–Schmidt Process]] — Lay 6.4
-- [[§44 Least-Squares Problems]] — Lay 6.5
-- [[§45 Applications to Linear Models]] — Lay 6.6
-- [[§46 Inner Product Spaces]] — Lay 6.7
-- [[§47 Applications of Inner Product Spaces]] — Lay 6.8
+- [[§49 Inner Product, Length, and Orthogonality]] — Lay 6.1
+- [[§51 Orthogonal Sets]] — Lay 6.2
+- [[§52 Orthogonal Projections]] — Lay 6.3
+- [[§53 The Gram–Schmidt Process]] — Lay 6.4
+- [[§54 Least-Squares Problems]] — Lay 6.5
+- [[§55 Applications to Linear Models]] — Lay 6.6
+- [[§56 Inner Product Spaces]] — Lay 6.7
+- [[§57 Applications of Inner Product Spaces]] — Lay 6.8
 
 ## Central results
 - [[The Fundamental Subspaces Are Orthogonal Complements]] (§40.6)
@@ -31,7 +31,7 @@ tags: [chapter, applied-linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1: Properties of the Inner Product]]: 109 later results
-- [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5: Basic Facts About the Orthogonal Complement]]: 101 later results
-- [[The Fundamental Subspaces Are Orthogonal Complements|Theorem §40.6: The Fundamental Subspaces Are Orthogonal Complements]]: 100 later results
-- [[§41 Orthogonal Sets#^thm-41-4|Theorem §41.4: Orthonormal Columns]]: 100 later results
+- [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|Theorem §49.1: Properties of the Inner Product]]: 109 later results
+- [[§50 Orthogonal Complements and Angles#^thm-50-1|Theorem §50.1: Basic Facts About the Orthogonal Complement]]: 101 later results
+- [[The Fundamental Subspaces Are Orthogonal Complements|Theorem §50.2: The Fundamental Subspaces Are Orthogonal Complements]]: 100 later results
+- [[§51 Orthogonal Sets#^thm-51-4|Theorem §51.4: Orthonormal Columns]]: 100 later results

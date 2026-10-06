@@ -22,7 +22,7 @@ Chapter 3 defines analytic functions of $z$ that reduce to the elementary functi
 > e^z = e^xe^{iy} \qquad (z = x + iy), \qquad (1)
 > $$
 >
-> where $e^{iy}$ is given by Euler's formula ([[§7 Exponential Form#^def-7-2|Definition §7.2]])
+> where $e^{iy}$ is given by Euler's formula ([[§7 Exponential Form#^def-7-4|Definition §7.4]])
 >
 > $$
 > e^{iy} = \cos y + i\sin y , \qquad (2)
@@ -35,10 +35,10 @@ Chapter 3 defines analytic functions of $z$ that reduce to the elementary functi
 ^def-30-1
 
 > [!remark]- Connections
-> - [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] defines $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$ in exactly the same way, motivated by substituting $it$ into the series $e^t = \sum t^n/n!$ ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]) and splitting off the series of $\cos t$ and $\sin t$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]); the same computation from the complex-numbers side is [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]].
+> - [[§19 Complex Roots of the Characteristic Equation#^def-19-1|331 Def. §19.1]] defines $e^{(\lambda + i\mu)t} = e^{\lambda t}(\cos\mu t + i\sin\mu t)$ in exactly the same way, motivated by substituting $it$ into the series $e^t = \sum t^n/n!$ ([[§90 Taylor and Maclaurin Series#^thm-90-6|Calc Thm. §90.6]]) and splitting off the series of $\cos t$ and $\sin t$ ([[§91 Taylor Series of Important Functions#^thm-91-1|Calc Thm. §91.1]], [[§91 Taylor Series of Important Functions#^thm-91-2|Calc Thm. §91.2]]); the same computation from the complex-numbers side is [[§64 Complex Numbers#^rem-64-1|235 Remark: Euler's Formula]].
 > - Here the series is a theorem, not a motivation: $e^z = \sum_{n=0}^{\infty} z^n/n!$ for every $z$ is the Maclaurin series of the entire function $e^z$, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]].
 
-Since the *positive* $n$th root $\sqrt[n]{e}$ is assigned to $e^x$ when $x = 1/n$ $(n = 2, 3, \ldots)$, definition (1) says that $e^{1/n} = \sqrt[n]{e}$. This is an exception to the convention of [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]], which would read $e^{1/n}$ as the *set* of $n$th roots of $e$: the symbol $e^z$ always means the single number (1). (The power $c^z$ of [[§35 The Power Function#^def-35-3|Definition §35.3]] is in general multiple-valued, and $e^z$ is the value given by the principal logarithm of $e$.)
+Since the *positive* $n$th root $\sqrt[n]{e}$ is assigned to $e^x$ when $x = 1/n$ $(n = 2, 3, \ldots)$, definition (1) says that $e^{1/n} = \sqrt[n]{e}$. This is an exception to the convention of [[§10 Roots of Complex Numbers#^def-10-1|Definition §10.1]], which would read $e^{1/n}$ as the *set* of $n$th roots of $e$: the symbol $e^z$ always means the single number (1). (The power $c^z$ of [[§35 The Power Function#^def-35-4|Definition §35.4]] is in general multiple-valued, and $e^z$ is the value given by the principal logarithm of $e$.)
 
 Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays the modulus and an argument of $e^z$ at once.
 
@@ -60,11 +60,11 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 ^prop-30-1
 
 > [!proof]+ Proof
-> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form#^def-7-new3|Definition §7.5]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
+> By (1), $e^z = e^x e^{iy}$ is the exponential form $\rho e^{i\phi}$ of a complex number with $\rho = e^x > 0$ and $\phi = y$. The modulus of $\rho e^{i\phi}$ is $\rho$ and its arguments are $\phi + 2n\pi$ ([[§7 Exponential Form#^def-7-5|Definition §7.5]]), which is (3). Since $e^x$ is never zero, $|e^z| = e^x > 0$, which is (4).
 
 ^pf-30-1
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]]
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§7 Exponential Form#^def-7-4|Def. §7.4]], [[§7 Exponential Form#^def-7-5|Def. §7.5]]
 
 > [!theorem] Theorem §30.2: The Law of Exponents
 > For all complex numbers $z_1$, $z_2$,
@@ -104,7 +104,7 @@ Writing (1) as $e^z = \rho e^{i\phi}$ with $\rho = e^x$ and $\phi = y$ displays 
 
 ^pf-30-2
 
-*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§121 The Logarithm Defined as an Integral#^thm-121-6|Calc Thm. §121.6]] (laws of exponents for real $e^x$)
+*Uses:* [[§30 The Exponential Function#^def-30-1|Def. §30.1]], [[§30 The Exponential Function#^prop-30-1|§30.1]], [[§8 Products and Powers in Exponential Form#^thm-8-1|§8.1]], [[§144 The Logarithm Defined as an Integral#^thm-144-6|Calc Thm. §144.6]] (laws of exponents for real $e^x$)
 
 > [!theorem] Theorem §30.3: e^z Is Entire
 > The function $e^z$ is differentiable at every point of the $z$ plane, with

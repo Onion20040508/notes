@@ -75,7 +75,7 @@ The results from other subjects that this course's proofs and definitions cite (
 
 **[[Single Variable Analysis]]**
 - [[Extreme Value Theorem]] (1)
-- [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Definition §13.2: Cauchy Sequence in a Metric Space]] (1)
+- [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|Definition §13.3: Cauchy Sequence in a Metric Space]] (1)
 - [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (1)
 
 **[[Linear Algebra]]**

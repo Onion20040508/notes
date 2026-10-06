@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 111
+section: "111★"
 bc: "111"
 aliases: ["B&C 111"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§110★ Riemann Surfaces]] · ↑ [[· 8★ Mapping by Elementary Functions]] · [[§112★ Preservation of Angles and Scale Factors]] →
+← [[§110★ Riemann Surfaces]] · ↑ [[· 8★ Mapping by Elementary Functions]] · [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)]] →
 
 *Brown–Churchill, Section 111.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*

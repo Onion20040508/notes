@@ -43,7 +43,7 @@ for any positively oriented simple closed contour $C$ around $z_0$ that lies in 
 ^def-75-1
 
 > [!theorem] Theorem §75.1: An Integral Is 2πi Times a Residue
-> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented [[§43 Contours#^def-43-new5|simple closed contour]] around $z_0$ lying in that punctured disk. Then
+> Let $z_0$ be an isolated singular point of $f$, with $f$ analytic in $0 < |z - z_0| < R_2$, and let $C$ be a positively oriented [[§43 Contours#^def-43-10|simple closed contour]] around $z_0$ lying in that punctured disk. Then
 >
 > $$
 > \int_C f(z)\,dz = 2\pi i\operatorname{Res}_{z=z_0} f(z) . \qquad (3)
@@ -195,7 +195,7 @@ Equation (3) is a powerful method for evaluating integrals around simple closed 
 The same reading-off of one coefficient settles a final-exam integral, $\frac{1}{2\pi i}\int_C\big(\frac{1}{z^2} + z + z^3\big)e^{1/z}\,dz = \frac{1}{2!} + \frac{1}{4!} = \frac{13}{24}$ over the unit circle, worked in [[§68 Examples (Proof of Laurent's Theorem)#^ex-68-4|Example §68.4]](b).
 
 > [!remark] Remark: Derivatives Have Zero Residue
-> If $F$ is analytic in a punctured disk $0 < |z - z_0| < R$, then $f = F'$ has residue $0$ at $z_0$. Indeed, let $C$ be the circle $|z - z_0| = r$ with $0 < r < R$. Since $F$ is an antiderivative of $f$ in a domain containing $C$, the integral of $f$ around the closed contour $C$ is zero ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), so $\operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C f(z)\,dz = 0$ by (3). (In terms of series: differentiating the Laurent series of $F$ term by term, $\frac{d}{dz}(z - z_0)^n = n(z - z_0)^{n-1}$, and the power $-1$ would come only from $n = 0$, whose coefficient $n$ is $0$.) For instance, there is **no** function $F$ analytic in $0 < |z| < 1$ with $\operatorname{Res}_{z=0} F'(z) = 1$: $1/z$ has no antiderivative in the punctured disk, which is why $\log z$ needs a branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]).
+> If $F$ is analytic in a punctured disk $0 < |z - z_0| < R$, then $f = F'$ has residue $0$ at $z_0$. Indeed, let $C$ be the circle $|z - z_0| = r$ with $0 < r < R$. Since $F$ is an antiderivative of $f$ in a domain containing $C$, the integral of $f$ around the closed contour $C$ is zero ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), so $\operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C f(z)\,dz = 0$ by (3). (In terms of series: differentiating the Laurent series of $F$ term by term, $\frac{d}{dz}(z - z_0)^n = n(z - z_0)^{n-1}$, and the power $-1$ would come only from $n = 0$, whose coefficient $n$ is $0$.) For instance, there is **no** function $F$ analytic in $0 < |z| < 1$ with $\operatorname{Res}_{z=0} F'(z) = 1$: $1/z$ has no antiderivative in the punctured disk, which is why $\log z$ needs a branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-4|Definition §33.4]]).
 >
 > *Source: 342 practice final (Spring 2005), Q8(b)*
 

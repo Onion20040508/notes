@@ -11,11 +11,11 @@ tags: [chapter, linear-algebra]
 **Used by:** [[· 9 Multilinear Algebra and Determinants|9 Multilinear Algebra and Determinants]] (6)
 
 ## Sections
-- [[§28 Generalized Eigenvectors and Nilpotent Operators]]
-- [[§29 Generalized Eigenspace Decomposition]]
-- [[§30 Consequences of Generalized Eigenspace Decomposition]]
-- [[§31 Trace꞉ A Connection Between Matrices and Operators]]
-- [[§31a The Operators (4z₂, 0, 5z₃) and (6z₁ + 3z₂ + 4z₃, 6z₂ + 2z₃, 7z₃)]]
+- [[§30 Generalized Eigenvectors and Nilpotent Operators]]
+- [[§31 Generalized Eigenspace Decomposition]]
+- [[§32 Consequences of Generalized Eigenspace Decomposition]]
+- [[§33 Trace꞉ A Connection Between Matrices and Operators]]
+- [[§34 The Operators (4z₂, 0, 5z₃) and (6z₁ + 3z₂ + 4z₃, 6z₂ + 2z₃, 7z₃)]]
 
 ## Central results
 - [[Generalized eigenspace decomposition]] (8.22)
@@ -24,7 +24,7 @@ tags: [chapter, linear-algebra]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (via Axler's citations).
-- [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1 Sequence of increasing null spaces]]: 20 later results
-- [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-2|8.2 Equality in the sequence of null spaces]]: 19 later results
-- [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3 Null spaces stop growing]]: 18 later results
-- [[§28 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9 A basis of generalized eigenvectors]]: 16 later results
+- [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-1|8.1 Sequence of increasing null spaces]]: 20 later results
+- [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-2|8.2 Equality in the sequence of null spaces]]: 19 later results
+- [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-3|8.3 Null spaces stop growing]]: 18 later results
+- [[§30 Generalized Eigenvectors and Nilpotent Operators#^ladr-8-9|8.9 A basis of generalized eigenvectors]]: 16 later results

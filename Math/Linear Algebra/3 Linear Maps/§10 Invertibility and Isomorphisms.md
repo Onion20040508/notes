@@ -15,7 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The inverse is unique: [[§10 Invertibility and Isomorphisms#^ladr-3-60|Inverse is unique]] (so we write $T^{-1}$). Criterion: [[§10 Invertibility and Isomorphisms#^ladr-3-63|Invertibility ⟺ injectivity and surjectivity]]. Synonym: isomorphism [[§10 Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]].
-> - In ℝⁿ: [[§13 Characterizations of Invertible Matrices#^def-13-1|235 Def. §13.1]] (invertible linear transformation); for matrices, [[§12 The Inverse of a Matrix#^def-12-1|235 Def. §12.1]].
+> - In ℝⁿ: [[§16 Characterizations of Invertible Matrices#^def-16-1|235 Def. §16.1]] (invertible linear transformation); for matrices, [[§14 The Inverse of a Matrix#^def-14-1|235 Def. §14.1]].
 
 > [!theorem] Theorem 3.60: Inverse is unique
 > An invertible linear map has a unique inverse.
@@ -29,7 +29,7 @@ tags: [linear-algebra]
 > - Same argument as [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]]; same argument for matrices in [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]].
 > - For arbitrary functions: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] (an inverse, when it exists, is unique).
 > - Same argument in any group: [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]].
-> - Matrix version: [[§12 The Inverse of a Matrix#^prop-12-1|235 Prop. §12.1]].
+> - Matrix version: [[§14 The Inverse of a Matrix#^prop-14-1|235 Prop. §14.1]].
 
 > [!remark] Notation 3.61: T⁻¹ (p. 82)
 > If $T\in\Lin(V,W)$ is invertible, its inverse is written $T^{-1}$: the unique $T^{-1}\in\Lin(W,V)$ with $T^{-1}T=I_V$ and $TT^{-1}=I_W$.
@@ -58,7 +58,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Linear bijections automatically have linear inverses. In finite equal dimensions, one condition suffices: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
 > - Set-level version: [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] (a function is invertible if and only if it is bijective); the new point here is that the inverse is linear.
-> - In ℝⁿ: [[§13 Characterizations of Invertible Matrices#^thm-13-3|235 Thm. §13.3]] (T is invertible iff its standard matrix is), with [[§13 Characterizations of Invertible Matrices#^rem-13-2|235 Remark §13.2]] (invertible means one-to-one and onto).
+> - In ℝⁿ: [[§16 Characterizations of Invertible Matrices#^thm-16-3|235 Thm. §16.3]] (T is invertible iff its standard matrix is), with [[§16 Characterizations of Invertible Matrices#^rem-16-2|235 Remark §13.2]] (invertible means one-to-one and onto).
 
 > [!example] Example 3.64: Neither injectivity nor surjectivity implies invertibility (p. 84)
 > In infinite dimensions neither half of [[§10 Invertibility and Isomorphisms#^ladr-3-63|3.63]] suffices:
@@ -87,8 +87,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Finite-set analogue, with cardinality in place of dimension: [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
-> - Matrix version: the Invertible Matrix Theorem, [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]] ((a), (f) and (i) are equivalent for square A).
-> - Analogue for boundary value problems: [[§5★ Green's Functions#^thm-5-3|341 Thm. §5.3]] (a two-point boundary value problem has exactly one solution for every right side unless the homogeneous problem has a nonzero solution, and then it has none or infinitely many).
+> - Matrix version: the Invertible Matrix Theorem, [[§16 Characterizations of Invertible Matrices#^thm-16-1|235 Thm. §16.1]] ((a), (f) and (i) are equivalent for square A).
+> - Analogue for boundary value problems: [[§7★ Green's Functions#^thm-7-3|341 Thm. §7.3]] (a two-point boundary value problem has exactly one solution for every right side unless the homogeneous problem has a nonzero solution, and then it has none or infinitely many).
 
 %% ex:3.65-fig %%
 > [!example] Example: The shifts on $\F^\infty$, pictured
@@ -122,7 +122,7 @@ tags: [linear-algebra]
 > - In a group a one-sided inverse is automatically two-sided, [[§2 First Consequences of the Axioms#^prop-2-6|493 Prop. §2.6]]; here the reason is dimension instead, since L(V) is not a group.
 > - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§24 Orthonormal Sets and Bases#^ex-24-2|556 Ex. §24.2]].
 > - Used in 591 to define the unitary group by one equation: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|591 Lemma §22.3]], proved there with determinants.
-> - Matrix version: [[§13 Characterizations of Invertible Matrices#^cor-13-2|235 Cor. §13.2]] (a one-sided inverse of a square matrix is an inverse).
+> - Matrix version: [[§16 Characterizations of Invertible Matrices#^cor-16-2|235 Cor. §16.2]] (a one-sided inverse of a square matrix is an inverse).
 
 > [!definition] Definition 3.69: Isomorphism, isomorphic
 > An *isomorphism* is an invertible linear map. $V$ and $W$ are *isomorphic* if there is an isomorphism from $V$ onto $W$.
@@ -135,8 +135,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Classified by dimension: [[Dimension shows whether vector spaces are isomorphic]]. First isomorphism theorem: [[First isomorphism theorem]].
 > - Group version: [[§16 Isomorphisms#^def-16-1|493 Def. §16.1]].
-> - Computational version: [[§26 Coordinate Systems#^def-26-3|235 Def. §26.3]].
-> - ODE example: $y \mapsto (y(t_0), y'(t_0))$ is an isomorphism from the solution space of $y'' + py' + qy = 0$ onto $\mathbb{R}^2$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark §14.2]]; for systems, $\mathbf{x} \mapsto \mathbf{x}(t_0)$, [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|331 Thm. §30.2]].
+> - Computational version: [[§32 Coordinate Systems#^def-32-4|235 Def. §32.4]].
+> - ODE example: $y \mapsto (y(t_0), y'(t_0))$ is an isomorphism from the solution space of $y'' + py' + qy = 0$ onto $\mathbb{R}^2$, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-18-2|331 Remark §14.2]]; for systems, $\mathbf{x} \mapsto \mathbf{x}(t_0)$, [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-2|331 Thm. §36.2]].
 
 > [!theorem] Theorem 3.70: Dimension shows whether vector spaces are isomorphic
 > Two finite-dimensional vector spaces over $\F$ are isomorphic if and only if they have the same dimension.
@@ -154,8 +154,8 @@ tags: [linear-algebra]
 > Every $n$-dimensional space is isomorphic to $\F^n$, but only via a choice of basis. Natural constructions (null spaces, ranges, quotients, duals) do not come with preferred bases.
 
 > [!remark]- Connections
-> - Computational version: [[§26 Coordinate Systems#^thm-26-3|235 Thm. §26.3]] (a space with a basis of n vectors is isomorphic to ℝⁿ) and [[§27 The Dimension of a Vector Space#^prop-27-7|235 Prop. §27.7]] (isomorphic spaces have the same dimension).
-> - ODE example: so the solution space of $y'' + py' + qy = 0$ has dimension 2, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|331 Remark §14.2]], and that of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ has dimension $n$, [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|331 Def. §30.3]].
+> - Computational version: [[§32 Coordinate Systems#^thm-32-3|235 Thm. §32.3]] (a space with a basis of n vectors is isomorphic to ℝⁿ) and [[§33 The Dimension of a Vector Space#^prop-33-7|235 Prop. §33.7]] (isomorphic spaces have the same dimension).
+> - ODE example: so the solution space of $y'' + py' + qy = 0$ has dimension 2, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-18-2|331 Remark §14.2]], and that of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ has dimension $n$, [[§36 Basic Theory of Systems of First-Order Linear Equations#^def-36-3|331 Def. §36.3]], [[§36 Basic Theory of Systems of First-Order Linear Equations#^def-36-4|331 Def. §36.4]].
 
 > [!theorem] Theorem 3.72: Dim L(V, W) = (dim V)(dim W)
 > If $V,W$ are finite-dimensional, then $\Lin(V,W)$ is finite-dimensional and $\dim\Lin(V,W)=(\dim V)(\dim W)$.
@@ -181,7 +181,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - How $T$ acts in coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 > - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§21 The Differential of a Map Between Vector Spaces#^def-21-1|591 Def. §21.1]].
-> - Computational version: [[§26 Coordinate Systems#^def-26-1|235 Def. §26.1]] (the coordinate vector [x]_B), an isomorphism onto ℝⁿ by [[§26 Coordinate Systems#^thm-26-3|235 Thm. §26.3]].
+> - Computational version: [[§32 Coordinate Systems#^def-32-1|235 Def. §32.1]] (the coordinate vector [x]_B) and [[§32 Coordinate Systems#^def-32-2|235 Def. §32.2]] (the coordinate mapping), an isomorphism onto ℝⁿ by [[§32 Coordinate Systems#^thm-32-3|235 Thm. §32.3]].
 
 > [!example] Example 3.74: Matrix of a vector (p. 88)
 > - The matrix of $2-7x+5x^3+x^4$ in the standard basis of $\Poly_4(\R)$ is $(2,-7,0,5,1)^t$.
@@ -213,7 +213,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used in [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] and in the change-of-basis story [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
-> - Computational version: [[§35 Eigenvectors and Linear Transformations#^thm-35-1|235 Thm. §35.1]] ([T(x)]_C = M[x]_B).
+> - Computational version: [[§43 Eigenvectors and Linear Transformations#^thm-43-1|235 Thm. §43.1]] ([T(x)]_C = M[x]_B).
 
 > [!theorem] Theorem 3.78: Dimension of range T equals column rank of M(T)
 > If $V,W$ are finite-dimensional and $T\in\Lin(V,W)$, then $\dim\range T$ equals the column rank of $\mathcal{M}(T)$.
@@ -227,7 +227,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - With [[Fundamental theorem of linear maps]]: $\dim V=\dim\nullsp T+\operatorname{rank}\mathcal{M}(T)$, the matrix rank–nullity theorem.
-> - In ℝⁿ: the range of x ↦ Ax is Col A ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]]), of dimension rank A, the number of pivot columns ([[§27 The Dimension of a Vector Space#^thm-27-8|235 Thm. §27.8]]).
+> - In ℝⁿ: the range of x ↦ Ax is Col A ([[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-2|235 Def. §30.2]]), of dimension rank A, the number of pivot columns ([[§33 The Dimension of a Vector Space#^thm-33-8|235 Thm. §33.8]]).
 
 > [!definition] Definition 3.79: Identity matrix, I
 > The $n$-by-$n$ *identity matrix* $I$ has $1$'s on the diagonal and $0$'s elsewhere.
@@ -251,7 +251,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Matrix of an inverse map: [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]]. Determinant test: [[Invertible ⟺ nonzero determinant]].
 > - The invertible n-by-n matrices form a group under multiplication, the general linear group: [[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]].
-> - Computational version: [[§12 The Inverse of a Matrix#^def-12-1|235 Def. §12.1]], with (A⁻¹)⁻¹ = A and (AB)⁻¹ = B⁻¹A⁻¹ in [[§12 The Inverse of a Matrix#^thm-12-4|235 Thm. §12.4]].
+> - Computational version: [[§14 The Inverse of a Matrix#^def-14-1|235 Def. §14.1]], with (A⁻¹)⁻¹ = A and (AB)⁻¹ = B⁻¹A⁻¹ in [[§14 The Inverse of a Matrix#^thm-14-4|235 Thm. §14.4]].
 
 > [!theorem] Theorem 3.81: Matrix of product of linear maps
 > Let $T\in\Lin(U,V)$, $S\in\Lin(V,W)$ with bases $u_1,\dots,u_m$ of $U$, $v_1,\dots,v_n$ of $V$, $w_1,\dots,w_p$ of $W$. Then
@@ -288,7 +288,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The change-of-basis matrix $C$ in [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
-> - Computational version: [[§29 Change of Basis#^thm-29-2|235 Thm. §29.2]] ((P_{C←B})⁻¹ = P_{B←C}); M(I, (u), (v)) is the matrix P_{v←u} of [[§29 Change of Basis#^thm-29-1|235 Thm. §29.1]].
+> - Computational version: [[§35 Change of Basis#^thm-35-2|235 Thm. §35.2]] ((P_{C←B})⁻¹ = P_{B←C}); M(I, (u), (v)) is the matrix P_{v←u} of [[§35 Change of Basis#^thm-35-1|235 Thm. §35.1]].
 
 > [!example] Example 3.83: Matrix of identity on F² with respect to two bases (p. 92)
 > Bases $u=((4,2),(5,3))$ and $e=((1,0),(0,1))$ of $\F^2$. Since $(4,2)=4e_1+2e_2$ and $(5,3)=5e_1+3e_2$,
@@ -301,7 +301,7 @@ tags: [linear-algebra]
 ^ladr-3-83
 
 > [!remark]- Connections
-> - In 235: [[§26 Coordinate Systems#^def-26-2|235 Def. §26.2]] (P_B = [b₁ ⋯ bₙ] converts B-coordinates to standard ones) and [[§26 Coordinate Systems#^prop-26-2|235 Prop. §26.2]] (P_B⁻¹ converts back).
+> - In 235: [[§32 Coordinate Systems#^def-32-3|235 Def. §32.3]] (P_B = [b₁ ⋯ bₙ] converts B-coordinates to standard ones) and [[§32 Coordinate Systems#^prop-32-2|235 Prop. §32.2]] (P_B⁻¹ converts back).
 
 > [!theorem] Theorem 3.84: Change-of-basis formula
 > Let $T\in\Lin(V)$ and let $u_1,\dots,u_n$, $v_1,\dots,v_n$ be bases of $V$. With
@@ -321,12 +321,12 @@ tags: [linear-algebra]
 > $C$ converts $u$-coordinates to $v$-coordinates, $B$ applies $T$ in $v$-coordinates, $C^{-1}$ converts back.
 
 > [!remark]- Connections
-> - Similar matrices describe the same operator; similarity invariants: [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[§34 Determinants#^ladr-9-52|Determinant is a similarity invariant]].
+> - Similar matrices describe the same operator; similarity invariants: [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|Trace of matrix of operator does not depend on basis]], [[§37 Determinants#^ladr-9-52|Determinant is a similarity invariant]].
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
-> - Bilinear-form version (different rule, $C^tBC$): [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
+> - Bilinear-form version (different rule, $C^tBC$): [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
 > - Similarity is conjugation by an invertible matrix; for invertible matrices, similar means conjugate in the general linear group: [[§33 Conjugacy Classes#^def-33-3|493 Def. §33.3]].
 > - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§28 The Differential in Coordinates#^cor-28-4|591 Cor. §28.4]]); it gives the transition maps of the tangent bundle, [[§41 The Tangent Bundle#^prop-41-2|591 Prop. §41.2]].
-> - Computational version: [[§35 Eigenvectors and Linear Transformations#^thm-35-2|235 Thm. §35.2]], [T]_B = P⁻¹AP, so the matrices of one operator are similar ([[§33 The Characteristic Equation#^def-33-3|235 Def. §33.3]]).
+> - Computational version: [[§43 Eigenvectors and Linear Transformations#^thm-43-2|235 Thm. §43.2]], [T]_B = P⁻¹AP, so the matrices of one operator are similar ([[§41 The Characteristic Equation#^def-41-3|235 Def. §41.3]]).
 
 %% ex:3.84-diagram %%
 > [!example] Example: Reading the change-of-basis formula as a diagram
@@ -348,4 +348,4 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - So $T$ is invertible iff $\mathcal{M}(T)$ is (the converse via [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]: an inverse matrix is the matrix of some map).
-> - In ℝⁿ: [[§13 Characterizations of Invertible Matrices#^thm-13-3|235 Thm. §13.3]] (T⁻¹ is x ↦ A⁻¹x).
+> - In ℝⁿ: [[§16 Characterizations of Invertible Matrices#^thm-16-3|235 Thm. §16.3]] (T⁻¹ is x ↦ A⁻¹x).

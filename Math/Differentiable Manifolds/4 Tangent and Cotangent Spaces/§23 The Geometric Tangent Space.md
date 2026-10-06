@@ -34,7 +34,7 @@ Throughout this subsection $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \m
 ^def-23-1
 
 > [!remark]- Connections
-> - The calculus picture: tangent vectors of constraint curves, [[§14 Optimization and Lagrange Multipliers#Geometric Insight: Tangent and Normal Vectors|452 §14]].
+> - The calculus picture: tangent vectors of constraint curves, [[§17 Optimization and Lagrange Multipliers#Geometric Insight: Tangent and Normal Vectors|452 §17]].
 > - The abstract replacement: [[§26 Derivations and the Abstract Tangent Space#^def-26-2|Def. §26.2]], identified with this one in [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Ambient and Abstract Agree, §27.6]]; velocities of curves return in [[§29 Tangent Vectors as Velocities of Curves#^thm-29-2|§29.2]].
 
 > [!remark] Remark
@@ -59,7 +59,7 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 
 ^pf-23-1
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]]
 
 > [!theorem] Lemma §23.2: The Geometric Tangent Space of a Graph
 > Let $A \subseteq \mathbb{R}^n$ be open, $G : A \to \mathbb{R}^k$ smooth, and
@@ -99,7 +99,7 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 
 ^pf-23-2
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[Multivariable Chain Rule|452 §10.2]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 > [!remark] Remark
 > Uribe stated this lemma and left it as an exercise, calling it “not a trivial exercise”; the proof above is short but both inclusions are needed, and the $\supseteq$ half — lifting a straight line from the chart — is the construction that reappears in [[§25 Germs|§25]] as the curve defining $D_v$. In words: *the geometric tangent space to a graph is the graph of the differential.*
@@ -107,7 +107,7 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 ^rem-23-3
 
 > [!remark]- Connections
-> - For $n = 2$, $k = 1$ this is the tangent plane to a graph $z = f(x, y)$, [[§6 Differentiability#^def-6-3|452 Def. §6.3]].
+> - For $n = 2$, $k = 1$ this is the tangent plane to a graph $z = f(x, y)$, [[§7 Differentiability#^def-7-4|452 Def. §7.4]].
 
 > [!theorem] Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian
 > $T^{\mathrm{geo}}_pM = \ker F'(p)$, where $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is the Jacobian at $p$. In particular $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
@@ -137,11 +137,11 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 
 ^pf-23-3
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§23 The Geometric Tangent Space#^lem-23-1|§23.1]], [[§23 The Geometric Tangent Space#^lem-23-2|§23.2]], [[Multivariable Chain Rule|452 §10.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§23 The Geometric Tangent Space#^lem-23-1|§23.1]], [[§23 The Geometric Tangent Space#^lem-23-2|§23.2]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-39|LADR 2.39]]
 
 > [!remark]- Connections
 > - Identified with the abstract tangent space: [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Ambient and Abstract Agree, §27.6]]; for submanifolds, [[§33 Submanifolds#^prop-33-4|§33.4]].
-> - Orthogonality to the gradients is the geometry behind [[Method of Lagrange Multipliers|452 §14.2 (Lagrange multipliers)]].
+> - Orthogonality to the gradients is the geometry behind [[Method of Lagrange Multipliers|452 §17.2 (Lagrange multipliers)]].
 
 > [!remark] Remark
 > The structure is worth noticing, because it is not the obvious one. Only the *easy* inclusion is proved directly; the reverse inclusion is never constructed, but forced by a dimension count. Uribe: “it's best actually to prove something else” — namely the graph lemma, from which both the vector space structure and the dimension of $T^{\mathrm{geo}}_pM$ are immediate, after which “we must have equality.”
@@ -166,7 +166,7 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 
 ^pf-23-4
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §10.2]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §12.2]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark] Remark
 > The corollary is the infinitesimal form of [[§19 Manifolds in Euclidean Space|§19]]: the geometric tangent space can be read off from the *external* description as the kernel of the constraint map, or from the *internal* description as the image of the derivative of a parametrization, and the two agree. The geometric definition, via curves, is the one that makes no reference to either presentation — which is why it is the one that will generalize.
@@ -174,7 +174,7 @@ It is not obvious from [[§23 The Geometric Tangent Space#^def-23-1|Definition �
 ^rem-23-5
 
 > [!remark]- Connections
-> - The image description for surfaces in ℝ³, where $D\mathbf{X}$ has columns $\mathbf{X}_u, \mathbf{X}_v$: [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and [[§18 Surface Integrals#^rem-18-3|452 §18, Regularity as a Rank Condition on the Derivative]].
+> - The image description for surfaces in ℝ³, where $D\mathbf{X}$ has columns $\mathbf{X}_u, \mathbf{X}_v$: [[§31 Surface Integrals#^def-31-2|452 Def. §31.2]] and [[§31 Surface Integrals#^rem-31-3|452 §31, Regularity as a Rank Condition on the Derivative]].
 
 ## Examples
 
@@ -252,7 +252,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-23-5
 
-*Uses:* [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|§11.6]], [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]], [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-2|§22.2]], [[§23 The Geometric Tangent Space#^ex-23-2|Ex. §23.2]], [[§23 The Geometric Tangent Space#^lem-23-1|§23.1]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-4|§22.4]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§23 The Geometric Tangent Space#^ex-23-3|Ex. §23.3]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
+*Uses:* [[§11 The Classical Groups Are Topological Manifolds#^thm-11-6|§11.6]], [[§21 The Differential of a Map Between Vector Spaces#^prop-21-2|§21.2]], [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§11 The Classical Groups Are Topological Manifolds#^cor-11-5|§11.5]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|§11.1]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-1|Ex. §22.1]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-2|§22.2]], [[§23 The Geometric Tangent Space#^ex-23-2|Ex. §23.2]], [[§23 The Geometric Tangent Space#^lem-23-1|§23.1]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-4|§22.4]], [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§23 The Geometric Tangent Space#^ex-23-3|Ex. §23.3]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
 
 > [!remark]- Connections
 > - Used in Relativity: the Lorentz analogue: infinitesimal Lorentz transformations are the matrices antisymmetric with respect to $\eta$, six generators for three rotations and three boosts — [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-6|REL Remark: Infinitesimal Lorentz transformations]].
@@ -283,7 +283,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-23-6
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-2|Def. §23.2]], [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-2|Def. §23.2]], [[§23 The Geometric Tangent Space#^thm-23-5|§23.5]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR 8.49]]
 
 > [!remark] Remark: Left and Right Translates
 > The notes computed $T^{\mathrm{geo}}_g\mathrm{O}(n) = g\cdot\operatorname{Skew}(n)$ by writing $A = gB$ (Proposition [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-1|§22.1]]); [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-22-4|Assignment 2]] computed $T^{\mathrm{geo}}_g\mathrm{U}(n) = \mathfrak{u}(n)\cdot g$ by writing $h = Xg$. Neither choice is privileged, and by [[§23 The Geometric Tangent Space#^prop-23-6|the proposition]] the two agree, $g \cdot \mathfrak{g} = \mathrm{Ad}_g(\mathfrak{g}) \cdot g = \mathfrak{g} \cdot g$. This is the first structural fact about Lie groups to appear in the course: the geometric tangent space at the identity, carried to every other point by left or right multiplication, determines all the geometric tangent spaces. The spaces $\mathfrak{sl}(n)$, $\mathfrak{so}(n)$, $\mathfrak{u}(n)$ in the table will reappear as *Lie algebras*.
@@ -393,7 +393,7 @@ $$
 ^def-23-4
 
 > [!remark]- Connections
-> - The Euclidean directional derivative and its gradient formula: [[Directional Derivative Formula|452 §7.1 (Directional Derivative Formula)]].
+> - The Euclidean directional derivative and its gradient formula: [[Directional Derivative Formula|452 §9.1 (Directional Derivative Formula)]].
 > - In $\mathbb{R}^n$ the trade $v \leftrightarrow D_v$ is exactly the identification of [[§28 The Differential in Coordinates#^prop-28-5|§28.5]]; on an arbitrary manifold, velocities of curves: [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|Def. §29.1]].
 
 > [!theorem] Proposition §23.8: Basic Properties of $D_v$
@@ -409,7 +409,7 @@ $$
 
 ^pf-23-8
 
-*Uses:* [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§23 The Geometric Tangent Space#^lem-23-2|§23.2]], [[Multivariable Chain Rule|452 §10.2]], [[§6 Differentiability#^thm-6-4|452 §6.4]]
+*Uses:* [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§23 The Geometric Tangent Space#^lem-23-2|§23.2]], [[Multivariable Chain Rule|452 §12.2]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]]
 
 > [!theorem] Proposition §23.9: $D_v$ Determines $v$
 > The map $v \mapsto D_v$ is injective on $T^{\mathrm{geo}}_pM$: if $D_v = D_{v'}$ then $v = v'$.

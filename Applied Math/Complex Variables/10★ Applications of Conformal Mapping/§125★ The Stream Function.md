@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 125
+section: "125★"
 bc: "125"
 aliases: ["B&C 125"]
 tags: [complex-variables, math342, extension]
@@ -38,7 +38,7 @@ where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equip
 >
 > *B&C: Sec. 125 (text)*
 
-^def-125-new1
+^def-125-2
 
 > [!definition] Definition §125.3: Complex Potential
 > With $\phi$ the velocity potential and $\psi$ the [[§125★ The Stream Function#^def-125-1|stream function]], the analytic function
@@ -51,7 +51,7 @@ where $\phi$ is the velocity potential; when $V \ne 0$ it is normal to the equip
 >
 > *B&C: Sec. 125 (text)*
 
-^def-125-new2
+^def-125-3
 
 By [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]], equation (9) there, if $\phi$ is harmonic in a simply connected domain $D$, a harmonic conjugate is
 $$
@@ -76,7 +76,7 @@ the integral being independent of path.
 >
 > *B&C: Sec. 125, Equations (4) and (5)*
 
-^prop-125-2
+^prop-125-1
 
 > [!proof]+ Proof
 > (4) is the formula above with $\phi_t(s, t) = q(s, t)$ and $\phi_s(s, t) = p(s, t)$, by (6) of §124. For (5) (B&C refers it to advanced calculus): parametrize each smooth piece of $C$ by arc length, $(s(\sigma), t(\sigma))$; the unit tangent is $\mathbf T = (s', t')$ and the normal turned through $-\pi/2$ is $\mathbf N = (t', -s')$. Then $V_N = (p, q)\cdot\mathbf N = pt' - qs'$, and
@@ -85,12 +85,12 @@ the integral being independent of path.
 > \int_C -q\,ds + p\,dt = \int\big(-q\,s' + p\,t'\big)\,d\sigma = \int_C V_N\,d\sigma .
 > $$
 
-^pf-125-2
+^pf-125-1
 
-*Uses:* [[§115★ Harmonic Conjugates#^thm-115-4|§115.4]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§108 Line Integrals#^thm-108-2|Calc Thm. §108.2]]
+*Uses:* [[§115★ Harmonic Conjugates#^thm-115-4|§115.4]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§126 Line Integrals#^thm-126-2|Calc Thm. §126.2]]
 
 > [!remark]- Connections
-> - The flux of a plane field across a curve as the line integral of its normal component, $\int_C \mathbf F\cdot\mathbf n\,ds = \int_C -q\,dx + p\,dy$ for $\mathbf F = (p, q)$, and its form for closed curves: [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form). In the language of forms, $\psi$ is a primitive of the flux form $-q\,dx + p\,dy$, which is closed exactly when the flow is incompressible.
+> - The flux of a plane field across a curve as the line integral of its normal component, $\int_C \mathbf F\cdot\mathbf n\,ds = \int_C -q\,dx + p\,dy$ for $\mathbf F = (p, q)$, and its form for closed curves: [[§132 Curl and Divergence#^thm-132-5|Calc Thm. §132.5]] (Green's theorem, normal form). In the language of forms, $\psi$ is a primitive of the flux form $-q\,dx + p\,dy$, which is closed exactly when the flow is incompressible.
 
 > [!theorem] Proposition §125.1: Velocity from the Complex Potential
 > The velocity is tangent to the streamline through each point where it is not zero, and
@@ -103,7 +103,7 @@ the integral being independent of path.
 >
 > *B&C: Sec. 125, Equation (3) and text*
 
-^prop-125-1
+^prop-125-2
 
 > [!proof]+ Proof
 > Since $F$ is analytic, $F'(z) = \phi_x + i\psi_x$ ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), and by the Cauchy–Riemann equation $\psi_x = -\phi_y$,
@@ -112,11 +112,11 @@ the integral being independent of path.
 > F'(z) = \phi_x(x, y) - i\phi_y(x, y) .
 > $$
 >
-> Comparing with (2), $V = \overline{F'(z)}$, and $|V| = |F'(z)|$. Where $V \ne 0$, $\operatorname{grad}\psi = (-\phi_y, \phi_x)$ is $\operatorname{grad}\phi$ turned through $+\pi/2$ and is nonzero, so the streamline $\psi = c_2$ is a smooth curve with normal $\operatorname{grad}\psi$ and tangent parallel to $\operatorname{grad}\phi = V$ (as in [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2]](b)). On a boundary arc that fluid cannot cross, the normal component of $V$ is $0$; by [[§125★ The Stream Function#^prop-125-2|Proposition §125.2]] above, $\psi$ changes along the arc at the rate $V_N = 0$, so $\psi$ is constant there and the arc is a streamline.
+> Comparing with (2), $V = \overline{F'(z)}$, and $|V| = |F'(z)|$. Where $V \ne 0$, $\operatorname{grad}\psi = (-\phi_y, \phi_x)$ is $\operatorname{grad}\phi$ turned through $+\pi/2$ and is nonzero, so the streamline $\psi = c_2$ is a smooth curve with normal $\operatorname{grad}\psi$ and tangent parallel to $\operatorname{grad}\phi = V$ (as in [[§118★ Steady Temperatures#^prop-118-2|Proposition §118.2]](b)). On a boundary arc that fluid cannot cross, the normal component of $V$ is $0$; by [[§125★ The Stream Function#^prop-125-1|Proposition §125.1]] above, $\psi$ changes along the arc at the rate $V_N = 0$, so $\psi$ is constant there and the arc is a streamline.
 
-^pf-125-1
+^pf-125-2
 
-*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-new1|Def. §125.2]], [[§125★ The Stream Function#^def-125-new2|Def. §125.3]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-2|§125.2]]
+*Uses:* [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-2|Def. §125.2]], [[§125★ The Stream Function#^def-125-3|Def. §125.3]], [[§124★ Two-Dimensional Fluid Flow#^thm-124-4|§124.4]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§118★ Steady Temperatures#^prop-118-2|§118.2]], [[§125★ The Stream Function#^prop-125-1|§125.1]]
 
 ## Examples
 

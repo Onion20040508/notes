@@ -26,7 +26,7 @@ In each example, associativity is inherited from a known associative operation (
 ^def-3-2
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-5|Direct Product of Groups]]; the vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]].
+> - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^def-26-5|Direct Product of Groups]]; the vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|Product of vector spaces]].
 > - Characterized by its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|The Product and Its Universal Property]].
 
 > [!definition] Definition §3.3: Field (provisional definition)
@@ -40,7 +40,7 @@ In each example, associativity is inherited from a known associative operation (
 ^def-3-3
 
 > [!remark]- Connections
-> - The example ℚ is constructed in 250 and checked to be a field: [[§22 Partitions and Equivalence Relations#^thm-22-9|250 Thm. §22.9]].
+> - The example ℚ is constructed in 250 and checked to be a field: [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]].
 > - The field axioms listed one by one: [[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]].
 
 > [!definition] Definition §3.4: Multiplicative Group of a Field: $k^\times$
@@ -85,7 +85,7 @@ In each example, associativity is inherited from a known associative operation (
 
 ^pf-def-3-5
 
-*Uses:* [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 §21.4]], [[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|590 §26.4]], [[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]
 
 > [!remark]- Connections
 > - Elementary versions: [[§12★ Counting Functions and Subsets#^def-12-3|250 Def. §12.3]] (permutation), [[§12★ Counting Functions and Subsets#^cor-12-3|250 Cor. §12.3]] (there are $n!$ of them), [[§9 Injections, Surjections and Bijections#^ex-9-9|250 Ex. §9.9]] (inverse of a composite, the closure step).
@@ -100,7 +100,7 @@ In each example, associativity is inherited from a known associative operation (
 ^def-3-6
 
 > [!proof]+ Verification
-> **Closure:** If $A, B$ are invertible, then $B^{-1}A^{-1}$ is a two-sided inverse of $AB$ ([[§2 First Consequences of the Axioms#^prop-2-4|WS 1.4]] again: $(AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = I_n$ and symmetrically), so $AB \in GL_n(k)$. *(Equivalently, once determinants are available: $A$ is invertible iff $\det A \neq 0$ ([[§34 Determinants#^ladr-9-50|LADR 9.50]]), and $\det(AB) = \det A \det B \neq 0$ ([[§34 Determinants#^ladr-9-49|LADR 9.49]]).)*
+> **Closure:** If $A, B$ are invertible, then $B^{-1}A^{-1}$ is a two-sided inverse of $AB$ ([[§2 First Consequences of the Axioms#^prop-2-4|WS 1.4]] again: $(AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = I_n$ and symmetrically), so $AB \in GL_n(k)$. *(Equivalently, once determinants are available: $A$ is invertible iff $\det A \neq 0$ ([[§37 Determinants#^ladr-9-50|LADR 9.50]]), and $\det(AB) = \det A \det B \neq 0$ ([[§37 Determinants#^ladr-9-49|LADR 9.49]]).)*
 >
 > **Associativity:** Matrix multiplication is associative — either by direct computation with the entry formula $\left( (AB)C \right)_{il} = \sum_{j,\,m} A_{ij} B_{jm} C_{ml} = \left( A(BC) \right)_{il}$ (both orders of summation give the same double sum), or conceptually: matrices represent linear maps $k^n \to k^n$, matrix multiplication represents composition ([[§9 Matrices#^ladr-3-43|LADR 3.43]]), and composition of functions is associative (as verified for $S_X$, [[§3 Basic Examples of Groups#^pf-def-3-5|Def. §3.5]]).
 >
@@ -113,7 +113,7 @@ In each example, associativity is inherited from a known associative operation (
 
 ^pf-def-3-6
 
-*Uses:* [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§34 Determinants#^ladr-9-50|LADR 9.50]], [[§34 Determinants#^ladr-9-49|LADR 9.49]], [[§9 Matrices#^ladr-3-43|LADR 3.43]]
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]], [[§37 Determinants#^ladr-9-50|LADR 9.50]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§9 Matrices#^ladr-3-43|LADR 3.43]]
 
 ![[m493-3-1.svg]]
 *The two shears of the verification above, $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$, applied to the unit square (dashed): $AB$ carries it to the parallelogram spanned by its columns $(2,1)$ and $(1,1)$ (blue), $BA$ to the one spanned by $(1,1)$ and $(1,2)$ (red). Different images, so $AB \neq BA$ and $GL_2$ is non-abelian.*
@@ -122,7 +122,7 @@ In each example, associativity is inherited from a known associative operation (
 > - Invertible matrices in LADR: [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]].
 > - As a topological group: [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|591 Def. §10.4]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|591 Prop. §10.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§15 The Classical Groups#^thm-15-2|591 Thm. §15.2]].
-> - Computational version: invertible matrices and their inverses by row reduction, [[§12 The Inverse of a Matrix#^def-12-1|235 Def. §12.1]]; the determinant facts used, [[§21 Properties of Determinants#^thm-21-3|235 Thm. §21.3]] (invertible iff det ≠ 0) and [[§21 Properties of Determinants#^thm-21-9|235 Thm. §21.9]] (det is multiplicative).
+> - Computational version: invertible matrices and their inverses by row reduction, [[§14 The Inverse of a Matrix#^def-14-1|235 Def. §14.1]]; the determinant facts used, [[§25 Properties of Determinants#^thm-25-3|235 Thm. §25.3]] (invertible iff det ≠ 0) and [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|235 Thm. §26.4]] (det is multiplicative).
 > - Concrete action of GL₂(ℂ): [[§99★ Linear Fractional Transformations#^prop-99-5|342 Prop. §99.5]] (composing linear fractional transformations multiplies their coefficient matrices, so they form a group, the image of GL₂(ℂ)).
 
 > [!definition] Definition §3.7: Special Linear, Orthogonal, and Special Orthogonal Groups
@@ -136,10 +136,10 @@ In each example, associativity is inherited from a known associative operation (
 ^def-3-7
 
 > [!remark]- Connections
-> - Real orthogonal matrices are the real unitary matrices: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
+> - Real orthogonal matrices are the real unitary matrices: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
 > - The same groups as topological groups and manifolds in 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-5|591 Def. §10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|591 Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|591 Def. §10.7]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 > - Used in Relativity: the Lorentz group is defined as $O(n)$ is, with the metric $\eta$ in place of the identity — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the rotations sit inside it, with $R^{\mathsf T}R = 1$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]].
-> - Computational version: [[§41 Orthogonal Sets#^def-41-5|235 Def. §41.5]] and [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
+> - Computational version: [[§51 Orthogonal Sets#^def-51-5|235 Def. §51.5]] and [[§51 Orthogonal Sets#^prop-51-6|235 Prop. §51.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ acting on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]; it is covered twice by $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 
 > [!example] Example §3.1: Groups and Non-Groups

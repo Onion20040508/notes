@@ -48,7 +48,7 @@ Suppose that $f$ is meromorphic in the domain interior to a positively oriented 
 >
 > *B&C: Sec. 93 (text)*
 
-^def-93-new1
+^def-93-3
 
 B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gamma$, and that the change does not depend on the choices made; the next lemma supplies both.
 
@@ -95,7 +95,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 *Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours#^prop-43-5|§43.5]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative), [[§18 Properties of Continuous Functions#^thm-18-3|451 Thm. §18.3]] (intermediate value theorem)
 
 > [!remark]- Connections
-> - In topology the continuous argument is a **lift** of the loop $w(t)/|w(t)|$ through the covering map $\mathbb{R} \to S^1$, $\phi \mapsto e^{i\phi}$: its existence and uniqueness up to $2\pi\mathbb{Z}$ is the path lifting lemma, [[§24 Covering Spaces#^lem-24-6|590 Lem. §24.6]], and the winding number is the class of the loop in $\pi_1(S^1) \cong \mathbb{Z}$, [[§24 Covering Spaces#^thm-24-10|590 Thm. §24.10]]. The formula of Lemma §93.1 constructs the lift explicitly for piecewise smooth loops.
+> - In topology the continuous argument is a **lift** of the loop $w(t)/|w(t)|$ through the covering map $\mathbb{R} \to S^1$, $\phi \mapsto e^{i\phi}$: its existence and uniqueness up to $2\pi\mathbb{Z}$ is the path lifting lemma, [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-1|590 Lem. §32.1]], and the winding number is the class of the loop in $\pi_1(S^1) \cong \mathbb{Z}$, [[§32 Lifting and the Fundamental Group of the Circle#^thm-32-5|590 Thm. §32.5]]. The formula of Lemma §93.1 constructs the lift explicitly for piecewise smooth loops.
 
 > [!theorem] Proposition §93.2: Winding Number Zero Off a Ray
 > In the notation above, suppose there is a ray from the origin $w = 0$ that does not intersect $\Gamma$. Then $\Delta_C\arg f(z) = 0$: the winding number of $\Gamma$ with respect to the origin is zero.
@@ -115,7 +115,7 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 
 ^pf-93-2
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-new1|Def. §93.3]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-3|Def. §93.3]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]]
 
 In particular, $\Delta_C\arg f(z) = 0$ when $\Gamma$ lies in an open half plane whose boundary passes through the origin, or in a disk not containing the origin.
 
@@ -212,10 +212,10 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 
 ^pf-93-4
 
-*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-new1|Def. §93.3]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§43 Contours#^prop-43-5|§43.5]]
+*Uses:* [[§93 Argument Principle#^lem-93-1|§93.1]], [[§93 Argument Principle#^lem-93-3|§93.3]], [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§93 Argument Principle#^def-93-3|Def. §93.3]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]], [[§76 Cauchy's Residue Theorem#^thm-76-1|§76.1]], [[§43 Contours#^prop-43-5|§43.5]]
 
 > [!remark]- Connections
-> - For polynomials, the argument principle is the analytic form of the winding-number proof of the fundamental theorem of algebra, [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]], which counts how often the image of a large circle winds around $0$ by means of $\pi_1(S^1) \cong \mathbb{Z}$. B&C completes this route in [[§94 Rouché's Theorem#^ex-94-2|Example §94.2]].
+> - For polynomials, the argument principle is the analytic form of the winding-number proof of the fundamental theorem of algebra, [[§33 The Fundamental Theorem of Algebra#^thm-33-1|590 Thm. §33.1]], which counts how often the image of a large circle winds around $0$ by means of $\pi_1(S^1) \cong \mathbb{Z}$. B&C completes this route in [[§94 Rouché's Theorem#^ex-94-2|Example §94.2]].
 
 > [!remark] Remark: Method — Using the Argument Principle
 > - **Counting from the formula.** If the zeros and poles inside $C$ are known, $\Delta_C\arg f = 2\pi(Z - P)$ predicts how the image of $C$ winds around $0$ (Examples §93.1, §93.2).

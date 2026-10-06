@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 3
-section: 40
+section: "40★"
 bc: "40"
 aliases: ["B&C 40"]
 tags: [complex-variables, math342, extension]
@@ -30,7 +30,7 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 ^def-40-1
 
 > [!remark]- Connections
-> - Calculus defines the real inverse functions as single-valued, by restricting $\sin$, $\cos$ and $\tan$ to an interval on which each is one-to-one: [[§5 Inverse Functions and Logarithms#^def-5-5|Calc Def. §5.5]], [[§5 Inverse Functions and Logarithms#^def-5-6|Calc Def. §5.6]], [[§5 Inverse Functions and Logarithms#^def-5-7|Calc Def. §5.7]]. Here $\sin^{-1}z$ is multiple-valued, and single-valued branches come from branches of the square root and the logarithm.
+> - Calculus defines the real inverse functions as single-valued, by restricting $\sin$, $\cos$ and $\tan$ to an interval on which each is one-to-one: [[§6 Logarithmic and Inverse Trigonometric Functions#^def-6-3|Calc Def. §6.3]], [[§6 Logarithmic and Inverse Trigonometric Functions#^def-6-4|Calc Def. §6.4]], [[§6 Logarithmic and Inverse Trigonometric Functions#^def-6-5|Calc Def. §6.5]]. Here $\sin^{-1}z$ is multiple-valued, and single-valued branches come from branches of the square root and the logarithm.
 
 > [!theorem] Proposition §40.1: The Inverse Sine as a Logarithm
 > For every complex $z$,
@@ -198,7 +198,7 @@ The functions $\cos^{-1}z$ and $\tan^{-1}z$ are also multiple-valued. When speci
 *Uses:* [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-1|§40.1]], [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-2|§40.2]], [[§33 Branches and Derivatives of Logarithms#^thm-33-1|§33.1]], [[§20 Rules for Differentiation#^thm-20-2|§20.2]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]]
 
 > [!remark]- Connections
-> - For real $x$ in $(-1, 1)$ and the principal branches these are the calculus formulas $\frac{d}{dx}\sin^{-1}x = \frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\cos^{-1}x = -\frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\tan^{-1}x = \frac{1}{1 + x^2}$: [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-8|Calc Thm. §19.8]], proved there by differentiating an inverse function, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Calc Thm. §19.1]].
+> - For real $x$ in $(-1, 1)$ and the principal branches these are the calculus formulas $\frac{d}{dx}\sin^{-1}x = \frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\cos^{-1}x = -\frac{1}{\sqrt{1 - x^2}}$, $\frac{d}{dx}\tan^{-1}x = \frac{1}{1 + x^2}$: [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|Calc Thm. §22.8]], proved there by differentiating an inverse function, [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-1|Calc Thm. §22.1]].
 
 ## Inverse Hyperbolic Functions
 
@@ -239,7 +239,7 @@ The functions $\cos^{-1}z$ and $\tan^{-1}z$ are also multiple-valued. When speci
 *Uses:* [[§39★ Hyperbolic Functions#^def-39-1|Def. §39.1]], [[§31 The Logarithmic Function#^thm-31-1|§31.1]], [[§11 Examples (Roots of Complex Numbers)#^ex-11-4|Ex. §11.4]]
 
 > [!remark]- Connections
-> - The real formulas, with the positive square root and $\ln$: [[§24 Hyperbolic Functions#^thm-24-3|Calc Thm. §24.3]], proved by the same quadratic in $e^y$; their derivatives, [[§24 Hyperbolic Functions#^thm-24-4|Calc Thm. §24.4]]. In the complex plane the restriction $x \ge 1$ for $\cosh^{-1}x$ and $|x| < 1$ for $\tanh^{-1}x$ disappears, at the price of multiple values.
+> - The real formulas, with the positive square root and $\ln$: [[§27 Hyperbolic Functions#^thm-27-3|Calc Thm. §27.3]], proved by the same quadratic in $e^y$; their derivatives, [[§27 Hyperbolic Functions#^thm-27-4|Calc Thm. §27.4]]. In the complex plane the restriction $x \ge 1$ for $\cosh^{-1}x$ and $|x| < 1$ for $\tanh^{-1}x$ disappears, at the price of multiple values.
 
 ## Examples
 

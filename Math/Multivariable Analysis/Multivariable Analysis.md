@@ -91,15 +91,15 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§9 Matrices#^ladr-3-31|3.31 Matrix of a linear map, M(T)]] (1)
 - [[§9 Matrices#^ladr-3-41|3.41 Matrix multiplication]] (1)
 - [[§10 Invertibility and Isomorphisms#^ladr-3-80|3.80 Invertible, inverse, A⁻¹]] (1)
-- [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-11|9.11 Symmetric matrix]] (1)
-- [[§34 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
-- [[§34 Determinants#^ladr-9-61|9.61 T changes volume by factor of ∣det T∣]] (1)
+- [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-11|9.11 Symmetric matrix]] (1)
+- [[§37 Determinants#^ladr-9-49|9.49 Determinant is multiplicative]] (1)
+- [[§37 Determinants#^ladr-9-61|9.61 T changes volume by factor of ∣det T∣]] (1)
 
 **[[Topology]]**
 - [[Heine–Borel Theorem]] (3)
 - [[Continuous Image of a Compact Space is Compact]] (3)
-- [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]] (2)
-- [[§13 Connected Spaces#^def-13-new1|Definition §13.1: Connected Space]] (2)
+- [[§18 Compact Spaces#^rem-18-1|Remark: Why Compactness Matters]] (2)
+- [[§15 Connected Spaces#^def-15-2|Definition §15.2: Connected Space]] (2)
 
 ## Workhorse examples
 - [[2xy∕(x²+y²) family]]

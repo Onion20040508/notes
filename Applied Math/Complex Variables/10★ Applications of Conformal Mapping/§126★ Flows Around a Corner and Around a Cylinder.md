@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 10
-section: 126
+section: "126★"
 bc: "126"
 aliases: ["B&C 126"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§125★ The Stream Function]] · ↑ [[· 10★ Applications of Conformal Mapping]] · [[§127★ Mapping the Real Axis onto a Polygon]] →
+← [[§125★ The Stream Function]] · ↑ [[· 10★ Applications of Conformal Mapping]] · [[§126a The Heated Segment, the Quadrant, the Sine Half Strip and Flow Around a Corner]] →
 
 *Brown–Churchill, Section 126 (with Exercises 3–6 and 10).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -34,7 +34,7 @@ To find a flow in a region of the $z$ plane, map the region conformally onto one
 
 ^pf-126-1
 
-*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-new1|Def. §125.2]], [[§125★ The Stream Function#^def-125-new2|Def. §125.3]]
+*Uses:* [[§20 Rules for Differentiation#^thm-20-4|§20.4]], [[§115★ Harmonic Conjugates#^thm-115-1|§115.1]], [[§116★ Transformations of Harmonic Functions#^thm-116-1|§116.1]], [[§117★ Transformations of Boundary Conditions#^thm-117-2|§117.2]], [[§125★ The Stream Function#^def-125-1|Def. §125.1]], [[§125★ The Stream Function#^def-125-2|Def. §125.2]], [[§125★ The Stream Function#^def-125-3|Def. §125.3]]
 
 To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used for the complex potential, velocity potential and stream function in both planes.
 
@@ -42,7 +42,7 @@ To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used
 > 1. **Map** the region of flow conformally onto a region where the flow is known, typically $f\colon D_z \to \{v > 0\}$ with the walls going onto the real axis.
 > 2. **Write the complex potential there**: $F = Aw$ for uniform flow to the right in the upper half plane ([[§125★ The Stream Function#^ex-125-1|Example §125.1]]), $A > 0$.
 > 3. **Compose**: $F[f(z)]$ is the complex potential in $D_z$ (Proposition §126.1); the walls are the streamline $\psi = 0$.
-> 4. **Read off** the stream function $\psi = \operatorname{Im}F$ and its streamlines, the velocity $V = \overline{F'(z)}$ and speed $|F'(z)|$ ([[§125★ The Stream Function#^prop-125-1|Proposition §125.1]]), and the pressure from Bernoulli's equation ([[§124★ Two-Dimensional Fluid Flow#^prop-124-3|Proposition §124.3]]): it is greatest where the speed is least, at stagnation points where $F'(z) = 0$. Check the behavior far away (for example $V \to A$).
+> 4. **Read off** the stream function $\psi = \operatorname{Im}F$ and its streamlines, the velocity $V = \overline{F'(z)}$ and speed $|F'(z)|$ ([[§125★ The Stream Function#^prop-125-2|Proposition §125.2]]), and the pressure from Bernoulli's equation ([[§124★ Two-Dimensional Fluid Flow#^prop-124-3|Proposition §124.3]]): it is greatest where the speed is least, at stagnation points where $F'(z) = 0$. Check the behavior far away (for example $V \to A$).
 
 ^rem-126-1
 
@@ -65,7 +65,7 @@ To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used
 >
 > harmonic in the quadrant and zero on its boundary. The streamlines are the branches of the rectangular hyperbolas $2Axy = c_2$ in the quadrant.
 >
-> **Velocity.** By (3) of §125, $V = \overline{2Az} = 2A(x - iy)$. Far up the $y$ axis ($x$ small, $y$ large) this is nearly $-2Ayi$, a downward flow, as required; along the $x$ axis it is $2Ax$, to the right. The speed $|V| = 2A\sqrt{x^2 + y^2}$ is proportional to the distance from the origin. The value of $\psi$ at $(x, y)$ is the rate of flow across a segment from the origin to that point (Proposition [[§125★ The Stream Function#^prop-125-2|§125.2]]); the velocity potential $A(x^2 - y^2)$ is that of [[§124★ Two-Dimensional Fluid Flow#^ex-124-3|Example §124.3]].
+> **Velocity.** By (3) of §125, $V = \overline{2Az} = 2A(x - iy)$. Far up the $y$ axis ($x$ small, $y$ large) this is nearly $-2Ayi$, a downward flow, as required; along the $x$ axis it is $2Ax$, to the right. The speed $|V| = 2A\sqrt{x^2 + y^2}$ is proportional to the distance from the origin. The value of $\psi$ at $(x, y)$ is the rate of flow across a segment from the origin to that point (Proposition [[§125★ The Stream Function#^prop-125-1|§125.1]]); the velocity potential $A(x^2 - y^2)$ is that of [[§124★ Two-Dimensional Fluid Flow#^ex-124-3|Example §124.3]].
 >
 > **Pressure.** By Bernoulli's equation the pressure is greatest where the speed is least. On the closed quadrant $|V| = 2A|z|$ is least, namely $0$, only at the corner $z = 0$: the pressure is greatest at the origin, a stagnation point where the fluid comes to rest ($F'(0) = 0$; the map $z^2$ is not conformal there).
 >

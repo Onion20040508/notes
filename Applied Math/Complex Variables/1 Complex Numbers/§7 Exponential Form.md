@@ -29,15 +29,15 @@ Polar coordinates describe a nonzero complex number by its distance $r = |z|$ fr
 ^def-7-1
 
 > [!remark]- Connections
-> - Polar coordinates in Calculus: [[§65 Polar Coordinates#^def-65-1|Calc Def. §65.1]] and the conversion formulas [[§65 Polar Coordinates#^thm-65-2|Calc Thm. §65.2]]. Calculus allows $r < 0$; here $r = |z| \ge 0$ always, and all the freedom is in $\theta$.
-> - Earlier treatment of the argument and polar form: [[§53 Complex Numbers#^def-53-6|235 Def. §53.6]].
+> - Polar coordinates in Calculus: [[§75 Polar Coordinates#^def-75-1|Calc Def. §75.1]] and the conversion formulas [[§75 Polar Coordinates#^thm-75-2|Calc Thm. §75.2]]. Calculus allows $r < 0$; here $r = |z| \ge 0$ always, and all the freedom is in $\theta$.
+> - Earlier treatment of the argument and polar form: [[§64 Complex Numbers#^def-64-6|235 Def. §64.6]], [[§64 Complex Numbers#^def-64-7|235 Def. §64.7]].
 
-> [!definition] Definition §7.2: Argument
+> [!definition] Definition §7.4: Argument
 > The real number $\theta$ in the polar form (1) is the angle, in radians, that $z$ makes with the positive real axis when $z$ is interpreted as a radius vector. It has infinitely many possible values, including negative ones, that differ by integral multiples of $2\pi$; they can be determined from $\tan\theta = y/x$ once the quadrant containing $z$ is specified. Each value of $\theta$ is an **argument** of $z$, and the set of all such values is denoted by $\arg z$.
 >
 > *B&C: Sec. 7, Equations (1)–(2)*
 
-^def-7-new1
+^def-7-2
 
 > [!definition] Definition §7.3: Principal Argument
 > The **principal value** of $\arg z$, denoted $\operatorname{Arg} z$, is the unique value $\Theta$ with $-\pi < \Theta \le \pi$. Then
@@ -50,11 +50,11 @@ Polar coordinates describe a nonzero complex number by its distance $r = |z|$ fr
 >
 > *B&C: Sec. 7, Equations (1)–(2)*
 
-^def-7-new2
+^def-7-3
 
 Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any particular value of $\arg z$: if $\theta_0$ is one value, $\arg z = \theta_0 + 2n\pi$ ($n = 0, \pm1, \ldots$).
 
-> [!definition] Definition §7.2: Euler's Formula
+> [!definition] Definition §7.4: Euler's Formula
 > The symbol $e^{i\theta}$, or $\exp(i\theta)$, is defined by **Euler's formula**
 >
 > $$
@@ -65,10 +65,10 @@ Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any parti
 >
 > *B&C: Sec. 7, Equations (3)–(4)*
 
-^def-7-2
+^def-7-4
 
 > [!remark]- Connections
-> - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of $e^x$, $\cos x$, $\sin x$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]]; see also [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. In this subject the choice of the symbol is justified in [[§30 The Exponential Function#^def-30-1|Definition §30.1]], where $e^z$ is defined for all complex $z$ and (3) becomes a special case.
+> - Ordinary Differential Equations also takes Euler's formula as a definition, motivated by the power series of $e^x$, $\cos x$, $\sin x$: [[§19 Complex Roots of the Characteristic Equation#^def-19-1|331 Def. §19.1]]; see also [[§64 Complex Numbers#^rem-64-1|235 Remark: Euler's Formula]]. In this subject the choice of the symbol is justified in [[§30 The Exponential Function#^def-30-1|Definition §30.1]], where $e^z$ is defined for all complex $z$ and (3) becomes a special case.
 
 > [!definition] Definition §7.5: Exponential Form
 > Euler's formula (3) allows the polar form (1) to be written more compactly in **exponential form**:
@@ -79,7 +79,7 @@ Equation (2) also shows that $\operatorname{Arg} z$ may be replaced by any parti
 >
 > *B&C: Sec. 7, Equations (3)–(4)*
 
-^def-7-new3
+^def-7-5
 
 With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered at the origin with radius $1$, at the point reached by turning through the angle $\theta$ from the positive real axis. Their values can therefore be read off that circle without reference to Euler's formula ([[§7 Exponential Form#^ex-7-3|Example §7.3]]).
 
@@ -118,7 +118,7 @@ With $r = 1$, (4) says that the numbers $e^{i\theta}$ lie on the circle centered
 
 ^pf-7-1
 
-*Uses:* [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§7 Exponential Form#^def-7-2|Def. §7.2]], [[§7 Exponential Form#^def-7-new3|Def. §7.5]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]], [[§119 Trigonometry#^thm-119-4|Calc Thm. §119.4]] ($\cos^2\theta + \sin^2\theta = 1$)
+*Uses:* [[§7 Exponential Form#^def-7-1|Def. §7.1]], [[§7 Exponential Form#^def-7-4|Def. §7.4]], [[§7 Exponential Form#^def-7-5|Def. §7.5]], [[§4 Vectors and Moduli#^def-4-2|Def. §4.2]], [[§142 Trigonometry#^thm-142-4|Calc Thm. §142.4]] ($\cos^2\theta + \sin^2\theta = 1$)
 
 This parametrization is the standard contour of the subject: the circle in Cauchy's integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) and in the residue theorem is traversed as $z = z_0 + Re^{i\theta}$.
 

@@ -25,7 +25,7 @@ The constructions of [[· 1 Linear Spaces|Chapter 1]] — subspaces, direct sums
 ^def-12-1
 
 > [!remark]- Connections
-> - The prototype on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] (Euclidean vs. max distance), and in topological terms [[§11 Metric Topology#^lem-11-1|590 §11.1]], [[§11 Metric Topology#^thm-11-2|590 §11.2]].
+> - The prototype on $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]] (Euclidean vs. max distance), and in topological terms [[§12 Metric Topology#^lem-12-1|590 §12.1]], [[§12 Metric Topology#^thm-12-2|590 §12.2]].
 
 If $B_1$ and $B_2$ denote the closed unit balls of $\|\cdot\|_1$ and $\|\cdot\|_2$, the definition says exactly that $\tfrac{1}{c_2} B_2 \subset B_1 \subset \tfrac{1}{c_1} B_2$: if $\|x\|_1 \le 1$ then $\|x\|_2 \le 1/c_1$, and if $\|x\|_2 \le 1/c_2$ then $\|x\|_1 \le 1$. Each unit ball is squeezed between two scaled copies of the other.
 
@@ -120,7 +120,7 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 *Uses:* [[§12 New Normed Spaces from Old#^def-12-1|Def. §12.1]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^lem-10-3|§10.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]]
 
 > [!remark]- Connections
-> - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§11 Metric Topology#^thm-11-2|590 §11.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
+> - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§12 Metric Topology#^thm-12-2|590 §12.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
 > - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-4|§16.4]], the compact unit ball [[§18 Compactness and the Unit Ball#^ex-18-1|Ex. §18.1]]; through [[§12 New Normed Spaces from Old#^cor-12-4|§12.4]], completeness of $\ell^p$ ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]).
 
 > [!remark] Remark: Finite Dimension is Necessary
@@ -138,10 +138,10 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 ^pf-12-4
 
-*Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[§12 New Normed Spaces from Old#^prop-12-1|§12.1]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]] (completeness of the scalars)
+*Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[§12 New Normed Spaces from Old#^prop-12-1|§12.1]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of the scalars)
 
 > [!remark]- Connections
-> - Completeness of $\mathbb{R}^n$ with the Euclidean metric: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]; with $\|\cdot\|_1$, $\|\cdot\|_2$: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-4|551 Ex. §19.4]].
+> - Completeness of $\mathbb{R}^n$ with the Euclidean metric: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]; with $\|\cdot\|_1$, $\|\cdot\|_2$: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-4|551 Ex. §34.4]].
 
 > [!theorem] Corollary §12.5: Finite-Dimensional Subspaces are Closed
 > Every finite-dimensional linear subspace $Y$ of a normed linear space $(X, \|\cdot\|)$ is closed in $X$.
@@ -179,7 +179,7 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 *Uses:* [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!remark]- Connections
-> - The restricted norm gives the restricted metric, whose topology is the [[§5 Subspace Topology#^def-5-1|subspace topology]]: [[§11 Metric Topology#^thm-11-6|590 Thm. §11.6]].
+> - The restricted norm gives the restricted metric, whose topology is the [[§5 Subspace Topology#^def-5-1|subspace topology]]: [[§12 Metric Topology#^thm-12-6|590 Thm. §12.6]].
 
 > [!theorem] Proposition §12.7: Norms on a Direct Sum
 > Let $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ be normed linear spaces. Each of the following is a norm on $X \oplus Y$:
@@ -285,7 +285,7 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 *Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-7|Def. §1.7]], [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§10 Normed Linear Spaces#^def-10-1|Def. §10.1]], [[§10 Normed Linear Spaces#^def-10-6|Def. §10.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
 > [!remark]- Connections
-> - The quotient space itself: [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§19 Normed Linear Spaces and Lᵖ Spaces#^ex-19-3|551 Ex. §19.3]] ($BV$ modulo constants).
+> - The quotient space itself: [[§1 Linear Spaces#^prop-1-6|§1.6]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-3|551 Ex. §34.3]] ($BV$ modulo constants).
 > - With an inner product the infimum is attained at the foot of the perpendicular: [[§22 Projection and Orthogonal Decomposition#^thm-22-2|§22.2]], [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]].
 
 > [!theorem] Proposition §12.9: The Quotient Seminorm; Closedness is Necessary

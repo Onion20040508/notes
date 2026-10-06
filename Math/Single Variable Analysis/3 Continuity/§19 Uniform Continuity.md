@@ -26,7 +26,7 @@ In the $(\varepsilon, \delta)$ definition of continuity, one important point: $\
 ^rem-19-1
 
 > [!remark]- Connections
-> - Strengthened in 551 to absolute continuity, which controls finitely many disjoint intervals at once ($n = 1$ gives this definition): [[§18 Differentiation Theory#^def-18-4|551 Def. §18.4]]; the Cantor function is uniformly but not absolutely continuous ([[§18 Differentiation Theory#^rem-18-7|551 Rem. §18.7]]).
+> - Strengthened in 551 to absolute continuity, which controls finitely many disjoint intervals at once ($n = 1$ gives this definition): [[§31 Absolute Continuity#^def-31-1|551 Def. §31.1]]; the Cantor function is uniformly but not absolutely continuous ([[§31 Absolute Continuity#^rem-31-7|551 Rem. §18.7]]).
 
 > [!example] Example §19.1: The Two Faces of the Reciprocal
 > Prove: $f(x) = \tfrac1x$ is uniformly continuous on $[a, +\infty)$ for every $a > 0$, but *not* on $(0, +\infty)$. (Different domains: different functions, different properties!)
@@ -165,7 +165,7 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-3
 
-*Uses:* [[§19 Uniform Continuity#^def-19-1|Def. §19.1]], [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|Def. §10.4]]
+*Uses:* [[§19 Uniform Continuity#^def-19-1|Def. §19.1]], [[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]]
 
 > [!remark] Remark: Warning with Counterexample
 > If $f$ is only continuous but not uniformly continuous, the conclusion fails. To build a counterexample, start from our non-uniformly continuous function $f(x) = \tfrac1x$ on $(0,+\infty)$. Which Cauchy sequence to take? The problem with $f$ is near $0$, so take $s_n \to 0$: say $s_n = \tfrac1n$ — Cauchy, since convergent. But
@@ -188,7 +188,7 @@ This is another important property of continuous functions on closed bounded int
 
 ^pf-19-4
 
-*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-7|§10.7]], [[§19 Uniform Continuity#^thm-19-3|§19.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|§10.8]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
+*Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§10a Cauchy Sequences#^thm-10a-1|§10a.1]], [[§19 Uniform Continuity#^thm-19-3|§19.3]], [[§10a Cauchy Sequences#^thm-10a-3|§10a.3]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]]
 
 ## A Criterion via the Derivative
 

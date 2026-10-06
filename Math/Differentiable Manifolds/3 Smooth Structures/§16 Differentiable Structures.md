@@ -70,8 +70,8 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - The general notion for smooth manifolds: [[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]; the two agree by [[§18 Smooth Functions and Smooth Maps#^prop-18-3|§18.3]].
 > - The local version: [[§31 Local Diffeomorphisms#^def-31-1|Def. §31.1]]; detected by the differential via the [[§31 Local Diffeomorphisms#^thm-31-1|inverse function theorem, §31.1]].
-> - The $C^1$ version is the class of substitutions in the change of variables formula, [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]].
-> - The topological analogue: homeomorphism, [[§9 Continuous Functions#^def-9-2|590 Def. §9.2]].
+> - The $C^1$ version is the class of substitutions in the change of variables formula, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]].
+> - The topological analogue: homeomorphism, [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 > [!definition] Definition §16.4: Smoothly Compatible Charts
 > Two charts $(U, \varphi)$ and $(V, \psi)$ on $M$ are **$C^\infty$-compatible** if the **transition function**
@@ -136,7 +136,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-16-1
 
-*Uses:* [[§16 Differentiable Structures#^def-16-2|Def. §16.2]], [[§16 Differentiable Structures#^def-16-3|Def. §16.3]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§16 Differentiable Structures#^def-16-2|Def. §16.2]], [[§16 Differentiable Structures#^def-16-3|Def. §16.3]], [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark] Remark: The Board Version
 > The lecture gave the direction $(1 \Rightarrow 2)$ in the compact form
@@ -237,7 +237,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 
 ^pf-16-3
 
-*Uses:* [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]], [[Continuous Image of a Compact Space is Compact|590 §15.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §15.4]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^cor-14-2|590 §14.2]]
+*Uses:* [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]], [[Continuous Image of a Compact Space is Compact|590 §18.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §18.4]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]]
 
 > [!remark] Remark
 > “It is absolutely essential to break the circle into charts.” The obstruction is global (compactness), not local: every point of $S^1$ has arbitrarily small neighborhoods that are perfectly good chart domains. A student asked which open sets can serve; the answer is the next proposition.
@@ -268,7 +268,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 
 > [!remark]- Connections
 > - Compatible with the other two circle atlases: [[§19 Manifolds in Euclidean Space#^prop-19-4|§19.4]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§17 Projective Spaces as Smooth Manifolds#^rem-17-2|Remark after §17.4]].
-> - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§27 The Fundamental Group of Sⁿ#^pf-27-3|590 §27, proof of Thm. §27.3]].
+> - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§37 The Fundamental Group of Sⁿ#^pf-37-3|590 §37, proof of Thm. §27.3]].
 
 ![[m591-8-3.svg]]
 *Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. Right, $\sigma_S$: the same construction from the south pole.*
@@ -287,7 +287,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 
 ^pf-16-4
 
-*Uses:* [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§16 Differentiable Structures#^prop-16-3|§16.3]], [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[Continuous Image of a Connected Space is Connected|590 §13.3]], [[§14 Connected Subspaces of ℝ#^rem-14-1|590 §14 (connected subsets of ℝ are intervals)]]
+*Uses:* [[§16 Differentiable Structures#^ex-16-3|Ex. §16.3]], [[§16 Differentiable Structures#^prop-16-3|§16.3]], [[§16 Differentiable Structures#^def-16-1|Def. §16.1]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§16 Connected Subspaces of ℝ#^rem-16-1|590 §16 (connected subsets of ℝ are intervals)]]
 
 > [!example] Example §16.4: Angle Atlas on the Circle
 > Parametrize by angle, which cannot be done globally — the same meta-principle — so use two overlapping ranges:
@@ -363,7 +363,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 
 ^pf-16-5
 
-*Uses:* [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^def-16-7|Def. §16.7]], [[§16 Differentiable Structures#^def-16-8|Def. §16.8]], [[§16 Differentiable Structures#^prop-16-2|§16.2]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§16 Differentiable Structures#^def-16-4|Def. §16.4]], [[§16 Differentiable Structures#^def-16-6|Def. §16.6]], [[§16 Differentiable Structures#^def-16-7|Def. §16.7]], [[§16 Differentiable Structures#^def-16-8|Def. §16.8]], [[§16 Differentiable Structures#^prop-16-2|§16.2]], [[Multivariable Chain Rule|452 §12.2]]
 
 Lecture 5 argued uniqueness only (“anything in one is contained in the other, so they are equal”), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to the lemma: Uribe defined $\overline{\mathcal{A}}$ as above, called maximality “not that hard” and the atlas property “more substantial”, and sketched it — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, “and then you have to do a little bit of diagram chasing” — skipping the details for time. The proof above completes that sketch. That step is the one with content, and the [[§16 Differentiable Structures#^rem-16-7|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
 

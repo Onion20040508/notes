@@ -25,8 +25,8 @@ tags: [linear-algebra, hub]
 - [[§12 Duality#^ladr-3-130|3.130 The range of T]]
 - [[§15 The Minimal Polynomial#^ladr-5-34|5.34 Operators on odd-dimensional vector spaces have eigenvalues]]
 - [[§17 Diagonalizable Operators#^ladr-5-62|5.62 Necessary and sufficient condition for diagonalizability]]
-- [[§26 Singular Value Decomposition#^ladr-7-64|7.64 Properties of T∗T]]
-- [[§30 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45 Every nilpotent operator has a Jordan basis]]
+- [[§27 Singular Value Decomposition#^ladr-7-64|7.64 Properties of T∗T]]
+- [[§32 Consequences of Generalized Eigenspace Decomposition#^ladr-8-45|8.45 Every nilpotent operator has a Jordan basis]]
 
 ## Used in (Group Theory)
 - [[§41 The First and Second Isomorphism Theorems#^rem-41-2|Remark: Rank–Nullity]]
@@ -45,4 +45,4 @@ tags: [linear-algebra, hub]
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).
 - **Isomorphism classes.** [[Dimension shows whether vector spaces are isomorphic]] (3.70) uses it to show isomorphic ⟺ equal dimension.
 - **Matrix form.** With [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] (3.78), it becomes the matrix rank–nullity theorem: $\dim V=\dim\nullsp T+{}$(column rank of $\mathcal{M}(T)$).
-- **Also in [[Applied Linear Algebra]]:** [[§19 Dimension and Rank#^thm-19-2|235 Thm. §19.2]] and [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (the Rank Theorem for matrices, rank A + dim Nul A = n, with worked examples).
+- **Also in [[Applied Linear Algebra]]:** [[§22 Dimension and Rank#^thm-22-2|235 Thm. §22.2]] and [[§34 Rank#^thm-34-3|235 Thm. §34.3]] (the Rank Theorem for matrices, rank A + dim Nul A = n, with worked examples).

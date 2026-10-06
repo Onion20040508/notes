@@ -15,17 +15,17 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Sections
 - [[§1★ Homogeneous Linear Equations]] — Powers 0.1 ★
-- [[§2★ Nonhomogeneous Linear Equations]] — Powers 0.2 ★
-- [[§3★ Boundary Value Problems]] — Powers 0.3 ★
-- [[§4★ Singular Boundary Value Problems]] — Powers 0.4 ★
-- [[§5★ Green's Functions]] — Powers 0.5 ★
+- [[§3★ Nonhomogeneous Linear Equations]] — Powers 0.2 ★
+- [[§5★ Boundary Value Problems]] — Powers 0.3 ★
+- [[§6★ Singular Boundary Value Problems]] — Powers 0.4 ★
+- [[§7★ Green's Functions]] — Powers 0.5 ★
 
 ## Central results
 - [[Green's Function for Boundary Value Problems]] (§5.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§3★ Boundary Value Problems#^prop-3-2|Proposition §3.2: Steady-State Heat Equation in a Rod]]: 14 later results
+- [[§5★ Boundary Value Problems#^prop-5-2|Proposition §5.2: Steady-State Heat Equation in a Rod]]: 14 later results
 - [[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3: The Wronskian Test and the General Solution]]: 13 later results
 - [[§1★ Homogeneous Linear Equations#^thm-1-4|Theorem §1.4: Solutions of the Constant-Coefficient Equation]]: 8 later results
-- [[§1★ Homogeneous Linear Equations#^thm-1-5|Theorem §1.5: Solutions of the Cauchy–Euler Equation]]: 7 later results
+- [[§2★ Variable Coefficients and Higher-Order Equations#^thm-2-1|Theorem §2.1: Solutions of the Cauchy–Euler Equation]]: 7 later results

@@ -26,15 +26,15 @@ tags: [real-analysis, hub]
 - [[§33 Properties of the Riemann Integral#^prop-33-11|Proposition §33.11: The Witness Can Be Taken Interior]]
 
 ## Used in (Multivariable Analysis)
-- [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-3|Theorem §9.3: Rolle's Theorem]]
-- [[§14 Optimization and Lagrange Multipliers#^rem-14-5|Remark]]
-- [[§14 Optimization and Lagrange Multipliers#^rem-14-10|Remark: The Logical Flow: Necessary → Sufficient]]
+- [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-3|Theorem §11.3: Rolle's Theorem]]
+- [[§17 Optimization and Lagrange Multipliers#^rem-17-5|Remark]]
+- [[§18 Second-Order Sufficient Conditions#^rem-18-10|Remark: The Logical Flow: Necessary → Sufficient]]
 
 ## Used in (Measure Theory)
-- [[§18 Differentiation Theory#^lem-18-18|Lemma §18.18: Image Measure Bounded by Total Variation]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^lem-32-5|Lemma §32.5: Image Measure Bounded by Total Variation]]
 
 ## Used in (Topology)
-- [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]]
+- [[§18 Compact Spaces#^rem-18-1|Remark: Why Compactness Matters]]
 
 ## Used in (Functional Analysis)
 - [[§11 Completeness#^thm-11-1|Theorem §11.1: C[a,b] with the Supremum Norm is a Banach Space]]
@@ -42,6 +42,6 @@ tags: [real-analysis, hub]
 ## Connections
 - Abstract form: the continuous image of a compact set is compact. The same fact gives extrema of continuous functions on compact manifolds.
 - Both hypotheses matter: see the workhorse [[Reciprocal function 1∕x]] on $(0,1]$.
-- The abstract form is proved in 590: [[Continuous Image of a Compact Space is Compact|590 Thm. §15.3]], with compact subsets of ℝⁿ identified by [[Heine–Borel Theorem|590 Thm. §15.12]].
-- **Also in [[Calculus]]:** [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (computational treatment with worked examples); two-variable version [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]].
+- The abstract form is proved in 590: [[Continuous Image of a Compact Space is Compact|590 Thm. §18.3]], with compact subsets of ℝⁿ identified by [[Heine–Borel Theorem|590 Thm. §18.12]].
+- **Also in [[Calculus]]:** [[§28 Maximum and Minimum Values#^thm-28-1|Calc Thm. §28.1]] (computational treatment with worked examples); two-variable version [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]].
 - **Also in [[Complex Variables]]:** [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (continuous functions on closed bounded regions of ℂ are bounded and their modulus attains a maximum; complex-variables version).

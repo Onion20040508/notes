@@ -25,7 +25,7 @@ The Cauchy–Goursat theorem concerns a simple closed contour and the region it 
 ^def-52-1
 
 > [!remark]- Connections
-> - In Topology a space is simply connected if it is path connected and every loop in it can be shrunk to a point, [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]. For domains in the plane the two definitions agree; this is a classical consequence of the Jordan curve theorem ([[§43 Contours#^thm-43-4|Theorem §43.4]], stated without proof), and the equivalence is not proved in the vault. B&C's version is the one the integral theorems use: the inside of every simple closed contour in $D$ is a region on which the Cauchy–Goursat theorem can be applied.
+> - In Topology a space is simply connected if it is path connected and every loop in it can be shrunk to a point, [[§29 The Fundamental Group#^def-29-3|590 Def. §29.3]]. For domains in the plane the two definitions agree; this is a classical consequence of the Jordan curve theorem ([[§43 Contours#^thm-43-4|Theorem §43.4]], stated without proof), and the equivalence is not proved in the vault. B&C's version is the one the integral theorems use: the inside of every simple closed contour in $D$ is a region on which the Cauchy–Goursat theorem can be applied.
 
 The closed contour in the Cauchy–Goursat theorem need not be simple when the theorem is adapted to simply connected domains; the contour can actually cross itself.
 

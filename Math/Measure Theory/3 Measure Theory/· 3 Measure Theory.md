@@ -12,11 +12,11 @@ tags: [chapter, measure-theory]
 **Builds on (other subjects):** [[Single Variable Analysis]] (19), [[Topology]] (6), [[Multivariable Analysis]] (3)
 
 ## Sections
-- [[§9 Lebesgue Outer Measure]]
-- [[§10 Lebesgue Measurable Sets]]
-- [[§11 Borel Sets and Measure Spaces]]
-- [[§12 Measurable Functions]]
-- [[§13 Egorov's and Lusin's Theorems]]
+- [[§10 Lebesgue Outer Measure]]
+- [[§11 Lebesgue Measurable Sets]]
+- [[§12 Borel Sets and Measure Spaces]]
+- [[§15 Measurable Functions]]
+- [[§18 Egorov's and Lusin's Theorems]]
 
 ## Central results
 - [[Properties of Lebesgue Outer Measure]] (§9.1)
@@ -32,7 +32,7 @@ tags: [chapter, measure-theory]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Properties of Lebesgue Outer Measure|Proposition §9.1: Basic Properties of Outer Measure]]: 111 later results
-- [[§10 Lebesgue Measurable Sets#^thm-10-1|Theorem §10.1: Closure Properties of ℳ]]: 97 later results
-- [[§10 Lebesgue Measurable Sets#^lem-10-2|Lemma §10.2: Finite Additivity for Disjoint Measurable Sets]]: 96 later results
-- [[Lebesgue Measurable Sets Form a σ-Algebra|Theorem §10.3: ℳ is a σ-Algebra with Countable Additivity]]: 94 later results
+- [[Properties of Lebesgue Outer Measure|Proposition §10.1: Basic Properties of Outer Measure]]: 111 later results
+- [[§11 Lebesgue Measurable Sets#^thm-11-1|Theorem §11.1: Closure Properties of ℳ]]: 97 later results
+- [[§11 Lebesgue Measurable Sets#^lem-11-2|Lemma §11.2: Finite Additivity for Disjoint Measurable Sets]]: 96 later results
+- [[Lebesgue Measurable Sets Form a σ-Algebra|Theorem §11.3: ℳ is a σ-Algebra with Countable Additivity]]: 94 later results

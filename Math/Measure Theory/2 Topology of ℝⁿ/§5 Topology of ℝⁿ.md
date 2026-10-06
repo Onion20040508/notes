@@ -19,9 +19,9 @@ tags: [measure-theory, math551]
 ^def-5-1
 
 > [!remark]- Connections
-> - Topology: the [[§11 Metric Topology#^def-11-2|ε-ball (590 Def. §11.2)]] of a metric; the balls form a basis for the [[§11 Metric Topology#^def-11-3|metric topology]].
+> - Topology: the [[§12 Metric Topology#^def-12-2|ε-ball (590 Def. §12.2)]] of a metric; the balls form a basis for the [[§12 Metric Topology#^def-12-3|metric topology]].
 > - MATH 452: [[§2 Open and Closed Sets#^def-2-1|Open Ball (452 Def. §2.1)]].
-> - Linear algebra: $|y - x|$ is the Euclidean norm of the dot product, [[§19 Inner Products and Norms#^ladr-6-7|Norm (LADR 6.7)]].
+> - Linear algebra: $|y - x|$ is the Euclidean norm of the dot product, [[§20 Inner Products and Norms#^ladr-6-7|Norm (LADR 6.7)]].
 
 > [!definition] Definition §5.2: Open Set
 > A set $\mathcal{O} \subseteq \mathbb{R}^n$ is **open** if for every $x \in \mathcal{O}$, there exists $r > 0$ such that $B(x, r) \subseteq \mathcal{O}$.
@@ -29,7 +29,7 @@ tags: [measure-theory, math551]
 ^def-5-2
 
 > [!remark]- Connections
-> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open Subsets (451 Def. §13.5)]].
+> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Open Subsets (451 Def. §13.6)]].
 > - Topology: the open sets of the metric topology, i.e. unions of basis balls ([[§2 Basis for a Topology#^lem-2-1|590 Lemma §2.1]]); for $n = 1$ the [[§1 Topological Spaces#^ex-1-5|standard topology on ℝ]].
 
 > [!definition] Definition §5.3: Closed Set
@@ -44,7 +44,7 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - The equivalence is [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|Sequential Characterization of Closedness (451 §13.5)]].
-> - Topology takes the complement form as the definition ([[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]); the sequential form holds in metric spaces by the [[§11 Metric Topology#^lem-11-8|Sequence Lemma]].
+> - Topology takes the complement form as the definition ([[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]); the sequential form holds in metric spaces by the [[§12 Metric Topology#^lem-12-8|Sequence Lemma]].
 
 > [!theorem] Theorem §5.1: Bolzano–Weierstrass
 > Let $\{x_k\}_{k=1}^\infty$ be a bounded sequence in $\mathbb{R}^n$. Then there exists a subsequence $\{x_{k_j}\}_{j=1}^\infty$ that converges to some $x_0 \in \mathbb{R}^n$.
@@ -94,8 +94,8 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - MATH 451 states and proves it the same way: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Bolzano–Weierstrass in ℝⁿ (451 §13.3)]].
-> - Topology: in metric spaces compact ⟺ sequentially compact ([[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]); with [[Heine–Borel Theorem|Heine–Borel]] this is the statement that closed bounded subsets of $\mathbb{R}^n$ are sequentially compact.
-> - Used later for [[§13 Egorov's and Lusin's Theorems#^lem-13-2|Distance Between Disjoint Compact Sets]].
+> - Topology: in metric spaces compact ⟺ sequentially compact ([[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]); with [[Heine–Borel Theorem|Heine–Borel]] this is the statement that closed bounded subsets of $\mathbb{R}^n$ are sequentially compact.
+> - Used later for [[§18 Egorov's and Lusin's Theorems#^lem-18-2|Distance Between Disjoint Compact Sets]].
 
 ## Nested Set Theorem
 
@@ -135,5 +135,5 @@ tags: [measure-theory, math551]
 *Nested closed bounded sets $F_1 \supseteq F_2 \supseteq F_3 \supseteq \cdots$ with a chosen point $x_k \in F_k$ (black). All $x_k$ lie in the bounded set $F_1$, so a subsequence converges to some $x_0$ (red); for each $m$ the tail of that subsequence lies in $F_m$, and $F_m$ is closed, so $x_0 \in F_m$ for every $m$.*
 
 > [!remark]- Connections
-> - Topology version for any compact space: [[§15 Compact Spaces#^cor-15-6|Nested Sequence of Closed Sets (590 §15.6)]], a case of the [[§15 Compact Spaces#^thm-15-5|finite intersection property criterion]].
+> - Topology version for any compact space: [[§18 Compact Spaces#^cor-18-6|Nested Sequence of Closed Sets (590 §18.6)]], a case of the [[§18 Compact Spaces#^thm-18-5|finite intersection property criterion]].
 > - The key step in the proof of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]].

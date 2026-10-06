@@ -49,7 +49,7 @@ Since $P \Rightarrow Q$ is automatically true when $P$ is false ([[§2 Implicati
 
 > [!remark]- Connections
 > - The axioms of an ordered field, phrased with $\leq$: [[§3 The Set ℝ of Real Numbers#^def-3-2|451 Def. §3.2]].
-> - Computational version: [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Calc Thm. §116.2]] (with worked examples).
+> - Computational version: [[§139 Numbers, Inequalities, and Absolute Values#^thm-139-2|Calc Thm. §139.2]] (with worked examples).
 
 > [!theorem] Proposition §3.1: Squares of Positive Numbers
 > For positive real numbers $a$ and $b$, $a < b \Rightarrow a^2 < b^2$.
@@ -110,13 +110,13 @@ The hypothesis "$a > 0$ or $a < 0$" was handled by proving the conclusion in eac
 > [!proof]+ Proof
 > (1) If $a = 0$ then $a^2 = 0$ ([[§2 Implications#^ex-2-13|Ex. §2.13]]); if $a \neq 0$ then $a^2 > 0$ by [[§3 Proofs#^prop-3-2|Proposition §3.2]].
 >
-> (2) $1 = 1 \times 1 = 1^2$ and $1 \neq 0$ ([[§2 Implications#^def-2-8|Def. §2.8]]), so $1 > 0$ by (1).
+> (2) $1 = 1 \times 1 = 1^2$ and $1 \neq 0$ ([[§2 Implications#^def-2-9|Def. §2.9]]), so $1 > 0$ by (1).
 >
 > (3) Multiplying $0 < b$ through by $a > 0$ gives $a \cdot 0 < ab$, i.e. $0 < ab$.
 
 ^pf-3-3
 
-*Uses:* [[§3 Proofs#^prop-3-2|§3.2]], [[§2 Implications#^ex-2-13|Ex. §2.13]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]]
+*Uses:* [[§3 Proofs#^prop-3-2|§3.2]], [[§2 Implications#^ex-2-13|Ex. §2.13]], [[§2 Implications#^def-2-9|Def. §2.9]], [[§3 Proofs#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
 > - The same facts for any ordered field, $a^2 \geq 0$ and $0 < 1$: [[§3 The Set ℝ of Real Numbers#^prop-3-1|451 Prop. §3.1]] (d), (e).
@@ -146,12 +146,12 @@ When the goal is more complicated than the givens, it often pays to start from t
 > \end{aligned}
 > $$
 >
-> The first and third steps are algebra ($(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$); the second is the addition law (add $4ab$); the fourth is [[§3 Proofs#^prop-3-2|Proposition §3.2]]; the fifth holds because $a - b = 0$ would give $a = b$ (property 6 of [[§2 Implications#^def-2-8|Def. §2.8]]); and the last is the trichotomy law. Hence $a < b \Rightarrow 4ab < (a + b)^2$. Read forwards, the same chain is the direct proof
+> The first and third steps are algebra ($(a+b)^2 = a^2 + 2ab + b^2$ and $(a-b)^2 = a^2 - 2ab + b^2$); the second is the addition law (add $4ab$); the fourth is [[§3 Proofs#^prop-3-2|Proposition §3.2]]; the fifth holds because $a - b = 0$ would give $a = b$ (property 6 of [[§2 Implications#^def-2-9|Def. §2.9]]); and the last is the trichotomy law. Hence $a < b \Rightarrow 4ab < (a + b)^2$. Read forwards, the same chain is the direct proof
 > $a < b \Rightarrow a \neq b \Rightarrow a - b \neq 0 \Rightarrow 0 < (a-b)^2 \Rightarrow 0 < a^2 - 2ab + b^2 \Rightarrow 4ab < a^2 + 2ab + b^2 \Rightarrow 4ab < (a+b)^2$.
 
 ^pf-3-4
 
-*Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§3 Proofs#^prop-3-2|§3.2]], [[§2 Implications#^def-2-8|Def. §2.8]], [[§2 Implications#^prop-2-4|§2.4]]
+*Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§3 Proofs#^prop-3-2|§3.2]], [[§2 Implications#^def-2-9|Def. §2.9]], [[§2 Implications#^prop-2-4|§2.4]]
 
 > [!remark] Remark: The Direction of the Implications
 > In a backwards construction the implications must point from the given towards the goal, as shown. Here every step except the last also holds in the other direction, but that is irrelevant to the proof. It does answer a further question: since $4ab < (a+b)^2 \iff a \neq b$, the condition $a < b$ is sufficient but not necessary for $4ab < (a+b)^2$ (take $a = 2$, $b = 1$: $8 < 9$), and the necessary and sufficient condition is $a \neq b$. The backwards presentation shows how the proof was found; the forwards one hides it.
@@ -186,13 +186,13 @@ When the goal is more complicated than the givens, it often pays to start from t
 
 ^ex-3-2
 
-*Uses:* [[§3 Proofs#^cor-3-3|§3.3]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§2 Implications#^def-2-8|Def. §2.8]]
+*Uses:* [[§3 Proofs#^cor-3-3|§3.3]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§2 Implications#^def-2-9|Def. §2.9]]
 
 > [!example] Example §3.3: Divisibility Is Transitive; Squares of Even Integers
 > (a) For all integers $a$, $b$, $c$: ($a \mid b$ and $b \mid c$) $\Rightarrow a \mid c$.
 > (b) The square of an even integer is even.
 >
-> **Solution.** (a) Suppose $a \mid b$ and $b \mid c$. By [[§2 Implications#^def-2-6|Def. §2.6]], $b = aq$ for some integer $q$ and $c = bp$ for some integer $p$ (a different letter, since there is no reason for the two integers to be equal). Then $c = bp = (aq)p = a(qp)$, and $qp$ is an integer, so $a \mid c$.
+> **Solution.** (a) Suppose $a \mid b$ and $b \mid c$. By [[§2 Implications#^def-2-7|Def. §2.7]], $b = aq$ for some integer $q$ and $c = bp$ for some integer $p$ (a different letter, since there is no reason for the two integers to be equal). Then $c = bp = (aq)p = a(qp)$, and $qp$ is an integer, so $a \mid c$.
 >
 > (b) If $a$ is even then $2 \mid a$; also $a \mid a^2$ since $a^2 = a \cdot a$. By (a), $2 \mid a^2$, so $a^2$ is even. (Directly: $a = 2q$ gives $a^2 = 2(2q^2)$.)
 >
@@ -201,7 +201,7 @@ When the goal is more complicated than the givens, it often pays to start from t
 
 ^ex-3-3
 
-*Uses:* [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]]
+*Uses:* [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]]
 
 > [!example] Example §3.4: Multiplying a Weak Inequality
 > If $a$, $b$, $c$ are real numbers with $a > 0$, then $b \geq c \Rightarrow ab \geq ac$.
@@ -223,7 +223,7 @@ When the goal is more complicated than the givens, it often pays to start from t
 >
 > **Solution.** (i) Suppose $0 \leq a < b$; then $a = 0$ or $a > 0$. If $a > 0$, then $b > 0$ by transitivity, and $a^2 < b^2$ by [[§3 Proofs#^prop-3-1|Proposition §3.1]]. If $a = 0$, then $b > 0$, so $b^2 > 0 = a^2$ ([[§3 Proofs#^prop-3-2|Proposition §3.2]]).
 >
-> (ii) Since $|a| \geq 0$ ([[§1 The Language of Mathematics#^def-1-4|Def. §1.4]]), $|a| < |b|$ gives $0 \leq |a| < |b|$, so $|a|^2 < |b|^2$ by (i). As $|a|^2 = a^2$ and $|b|^2 = b^2$ ([[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]]), $a^2 < b^2$.
+> (ii) Since $|a| \geq 0$ ([[§1 The Language of Mathematics#^def-1-6|Def. §1.6]]), $|a| < |b|$ gives $0 \leq |a| < |b|$, so $|a|^2 < |b|^2$ by (i). As $|a|^2 = a^2$ and $|b|^2 = b^2$ ([[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]]), $a^2 < b^2$.
 >
 > (iii) If $|a| = |b|$ then $a^2 = |a|^2 = |b|^2 = b^2$.
 >
@@ -236,6 +236,6 @@ When the goal is more complicated than the givens, it often pays to start from t
 
 ^ex-3-5
 
-*Uses:* [[§3 Proofs#^prop-3-1|§3.1]], [[§3 Proofs#^prop-3-2|§3.2]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§1 The Language of Mathematics#^def-1-4|Def. §1.4]], [[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]]
+*Uses:* [[§3 Proofs#^prop-3-1|§3.1]], [[§3 Proofs#^prop-3-2|§3.2]], [[§3 Proofs#^def-3-1|Def. §3.1]], [[§1 The Language of Mathematics#^def-1-6|Def. §1.6]], [[§1 The Language of Mathematics#^ex-1-3|Ex. §1.3]]
 
 The converses of (ii)–(iv) also hold; they are proved through the contrapositive in [[§4 Proof by Contradiction#^ex-4-5|Ex. §4.5]].

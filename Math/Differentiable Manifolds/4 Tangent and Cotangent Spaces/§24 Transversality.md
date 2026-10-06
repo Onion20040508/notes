@@ -86,7 +86,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-24-1
 
-*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[§24 Transversality#^def-24-2|Def. §24.2]], [[§24 Transversality#^def-24-1|Def. §24.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§19 Manifolds in Euclidean Space#^prop-19-2|§19.2]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Multivariable Chain Rule|452 §12.2]]
 
 **Comparison with Lee.** Lee's Theorem 6.30 states this for a smooth map transverse to an *embedded submanifold* $S \subseteq M$, after the theory of submanifolds (Chapter 5). The course's version, for level sets in Euclidean space, needs only the regular value theorem. It is the case where $S$ is cut out by a single global defining map $G$, and the proof — pull $G$ back along $F$ — is the one Lee uses locally.
 

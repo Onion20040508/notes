@@ -14,18 +14,18 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (15), [[Measure Theory]] (4), [[Multivariable Analysis]] (2), [[Fourier Series and PDEs]] (2)
 
 ## Sections
-- [[§34 The Area and Distance Problems]] — Stewart 5.1
-- [[§35 The Definite Integral]] — Stewart 5.2
-- [[§36 The Fundamental Theorem of Calculus]] — Stewart 5.3
-- [[§37 Indefinite Integrals and the Net Change Theorem]] — Stewart 5.4
-- [[§38 The Substitution Rule]] — Stewart 5.5
+- [[§38 The Area and Distance Problems]] — Stewart 5.1
+- [[§39 The Definite Integral]] — Stewart 5.2
+- [[§41 The Fundamental Theorem of Calculus]] — Stewart 5.3
+- [[§42 Indefinite Integrals and the Net Change Theorem]] — Stewart 5.4
+- [[§43 The Substitution Rule]] — Stewart 5.5
 
 ## Central results
 - [[Substitution Rule]] (§38.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§35 The Definite Integral#^thm-35-1|Theorem §35.1: Continuous Functions Are Integrable]]: 220 later results
-- [[§35 The Definite Integral#^thm-35-3|Theorem §35.3: Properties of Sums]]: 218 later results
-- [[§35 The Definite Integral#^thm-35-5|Theorem §35.5: Additivity over Adjacent Intervals]]: 212 later results
-- [[§35 The Definite Integral#^thm-35-2|Theorem §35.2: The Integral as a Limit of Right-Endpoint Sums]]: 211 later results
+- [[§39 The Definite Integral#^thm-39-1|Theorem §39.1: Continuous Functions Are Integrable]]: 220 later results
+- [[§39 The Definite Integral#^thm-39-3|Theorem §39.3: Properties of Sums]]: 218 later results
+- [[§40 Properties of the Definite Integral#^thm-40-2|Theorem §40.2: Additivity over Adjacent Intervals]]: 212 later results
+- [[§39 The Definite Integral#^thm-39-2|Theorem §39.2: The Integral as a Limit of Right-Endpoint Sums]]: 211 later results

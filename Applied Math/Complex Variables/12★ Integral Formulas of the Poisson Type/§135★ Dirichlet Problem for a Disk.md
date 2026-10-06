@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 135
+section: "135★"
 bc: "135"
 aliases: ["B&C 135"]
 tags: [complex-variables, math342, extension]
@@ -43,7 +43,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 ^thm-135-1
 
 > [!proof]+ Proof
-> **$U$ is harmonic.** Since $F$ is piecewise continuous, (1) is a sum of finitely many definite integrals, each with an integrand continuous in $r$, $\theta$ and $\phi$, whose partial derivatives with respect to $r$ and $\theta$ are also continuous. So the order of integration and differentiation with respect to $r$ and $\theta$ can be interchanged; and since $P$ satisfies Laplace's equation in polar coordinates ([[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]](c); [[§27★ Harmonic Functions|§27★]], Exercise 1; [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]])
+> **$U$ is harmonic.** Since $F$ is piecewise continuous, (1) is a sum of finitely many definite integrals, each with an integrand continuous in $r$, $\theta$ and $\phi$, whose partial derivatives with respect to $r$ and $\theta$ are also continuous. So the order of integration and differentiation with respect to $r$ and $\theta$ can be interchanged; and since $P$ satisfies Laplace's equation in polar coordinates ([[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]](c); [[§27★ Harmonic Functions|§27★]], Exercise 1; [[§44 Potential Equation#^thm-44-3|341 Thm. §44.3]])
 >
 > $$
 > r^2P_{rr} + rP_r + P_{\theta\theta} = 0 ,
@@ -122,8 +122,8 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 *Uses:* [[§135★ Dirichlet Problem for a Disk#^def-135-1|Def. §135.1]], [[§134★ Poisson Integral Formula#^prop-134-2|§134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 > [!remark]- Connections
-> - [[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]] solves the same problem by separation of variables, and [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]] sums the series into the Poisson integral; it checks the boundary values through uniform convergence of the series, which needs $f$ continuous and sectionally smooth. The proof above needs only piecewise continuity: it uses that the kernel is a positive weight of mass one concentrating at $\phi = \theta$ ([[§39 Potential in a Disk#^rem-39-2|341 Remark: The Poisson Kernel Is a Weight]]).
-> - In terms of [[§135★ Dirichlet Problem for a Disk#^prop-135-4|Proposition §135.4]], the theorem says that the Fourier series of a piecewise continuous $F$, with its $n$th term damped by $(r/r_0)^n$, tends to $F(\theta)$ as $r \to r_0$ at every point of continuity (Abel summability). The undamped series converges at such points only under a local condition such as sectional smoothness, [[§12★ Proof of Convergence#^thm-12-4|341 Thm. §12.4]].
+> - [[§48 Potential in a Disk#^thm-48-2|341 Thm. §48.2]] solves the same problem by separation of variables, and [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]] sums the series into the Poisson integral; it checks the boundary values through uniform convergence of the series, which needs $f$ continuous and sectionally smooth. The proof above needs only piecewise continuity: it uses that the kernel is a positive weight of mass one concentrating at $\phi = \theta$ ([[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-2|341 Remark: The Poisson Kernel Is a Weight]]).
+> - In terms of [[§135★ Dirichlet Problem for a Disk#^prop-135-4|Proposition §135.4]], the theorem says that the Fourier series of a piecewise continuous $F$, with its $n$th term damped by $(r/r_0)^n$, tends to $F(\theta)$ as $r \to r_0$ at every point of continuity (Abel summability). The undamped series converges at such points only under a local condition such as sectional smoothness, [[§16★ Proof of Convergence#^thm-16-4|341 Thm. §16.4]].
 
 > [!theorem] Corollary §135.2: Mean Value at the Center
 > According to (1), and since $P(r_0, 0, \phi - \theta) = 1$,
@@ -147,7 +147,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 
 ## Series Representations
 
-The kernel and the solution can be expanded in the elementary harmonic functions $r^n\cos n\theta$ and $r^n\sin n\theta$. (B&C leaves the proofs to its Exercises 6 and 7 of Sec. 136, and notes that these results are obtained, for $r_0 = 1$, by separation of variables in its *Fourier Series and Boundary Value Problems*; that derivation is [[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]].)
+The kernel and the solution can be expanded in the elementary harmonic functions $r^n\cos n\theta$ and $r^n\sin n\theta$. (B&C leaves the proofs to its Exercises 6 and 7 of Sec. 136, and notes that these results are obtained, for $r_0 = 1$, by separation of variables in its *Fourier Series and Boundary Value Problems*; that derivation is [[§48 Potential in a Disk#^thm-48-2|341 Thm. §48.2]].)
 
 > [!theorem] Proposition §135.3: Series for the Poisson Kernel
 > For $r < r_0$,

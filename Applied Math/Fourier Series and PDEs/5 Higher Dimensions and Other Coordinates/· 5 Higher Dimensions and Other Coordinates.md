@@ -14,16 +14,16 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Functional Analysis]] (5), [[Single Variable Analysis]] (3), [[Measure Theory]] (1), [[Multivariable Analysis]] (10), [[Linear Algebra]] (6), [[Applied Linear Algebra]] (1), [[Ordinary Differential Equations]] (3), [[Calculus]] (12), [[Complex Variables]] (1)
 
 ## Sections
-- [[§41★ Two-Dimensional Wave Equation꞉ Derivation]] — Powers 5.1 ★
-- [[§42 Three-Dimensional Heat Equation]] — Powers 5.2
-- [[§43 Two-Dimensional Heat Equation꞉ Solution]] — Powers 5.3
-- [[§44★ Problems in Polar Coordinates]] — Powers 5.4 ★
-- [[§45★ Bessel's Equation]] — Powers 5.5 ★
-- [[§46★ Temperature in a Cylinder]] — Powers 5.6 ★
-- [[§47★ Vibrations of a Circular Membrane]] — Powers 5.7 ★
-- [[§48★ Some Applications of Bessel Functions]] — Powers 5.8 ★
-- [[§49★ Spherical Coordinates; Legendre Polynomials]] — Powers 5.9 ★
-- [[§50★ Some Applications of Legendre Polynomials]] — Powers 5.10 ★
+- [[§51★ Two-Dimensional Wave Equation꞉ Derivation]] — Powers 5.1 ★
+- [[§52 Three-Dimensional Heat Equation]] — Powers 5.2
+- [[§53 Two-Dimensional Heat Equation꞉ Solution]] — Powers 5.3
+- [[§54★ Problems in Polar Coordinates]] — Powers 5.4 ★
+- [[§55★ Bessel's Equation]] — Powers 5.5 ★
+- [[§57★ Temperature in a Cylinder]] — Powers 5.6 ★
+- [[§58★ Vibrations of a Circular Membrane]] — Powers 5.7 ★
+- [[§59★ Some Applications of Bessel Functions]] — Powers 5.8 ★
+- [[§60★ Spherical Coordinates; Legendre Polynomials]] — Powers 5.9 ★
+- [[§62★ Some Applications of Legendre Polynomials]] — Powers 5.10 ★
 
 ## Central results
 - [[General Solution of Bessel's Equation]] (§45.5)
@@ -32,7 +32,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§45★ Bessel's Equation#^thm-45-1|Theorem §45.1: The Frobenius Coefficients for Bessel's Equation]]: 21 later results
-- [[§45★ Bessel's Equation#^thm-45-2|Theorem §45.2: J_μ Solves Bessel's Equation]]: 20 later results
-- [[§45★ Bessel's Equation#^thm-45-3|Theorem §45.3: A Second Solution by Reduction of Order]]: 13 later results
-- [[§45★ Bessel's Equation#^thm-45-4|Theorem §45.4: The Second Solution Is Unbounded at the Origin]]: 12 later results
+- [[§55★ Bessel's Equation#^thm-55-1|Theorem §55.1: The Frobenius Coefficients for Bessel's Equation]]: 21 later results
+- [[§55★ Bessel's Equation#^thm-55-2|Theorem §55.2: J_μ Solves Bessel's Equation]]: 20 later results
+- [[§55★ Bessel's Equation#^thm-55-3|Theorem §55.3: A Second Solution by Reduction of Order]]: 13 later results
+- [[§55★ Bessel's Equation#^thm-55-4|Theorem §55.4: The Second Solution Is Unbounded at the Origin]]: 12 later results

@@ -5,21 +5,21 @@ ladr-hub: "7.31"
 aliases: ["LADR 7.31"]
 tags: [linear-algebra, hub]
 ---
-![[§23 Spectral Theorem#^ladr-7-31]]
+![[§24 Spectral Theorem#^ladr-7-31]]
 
 ## Treated in
-- [[§23 Spectral Theorem#^ladr-7-31|Axler 7.31]], in [[§23 Spectral Theorem]]
+- [[§24 Spectral Theorem#^ladr-7-31|Axler 7.31]], in [[§24 Spectral Theorem]]
 
 ## Proof uses
-- [[§20 Orthonormal Bases#^ladr-6-38|6.38]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
+- [[§21 Orthonormal Bases#^ladr-6-38|6.38]], [[§17 Diagonalizable Operators#^ladr-5-55|5.55]]
 
 ## Used in (Linear Algebra)
-- [[§24 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
-- [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-55|7.55 Description of unitary operators on complex inner product spaces]]
-- [[§26 Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
-- [[§34 Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
+- [[§25 Positive Operators#^ladr-7-38|7.38 Characterization of positive operators]]
+- [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-55|7.55 Description of unitary operators on complex inner product spaces]]
+- [[§27 Singular Value Decomposition#^ladr-7-69|7.69 Isometries characterized by having all singular values equal 1]]
+- [[§37 Determinants#^ladr-9-59|9.59 Every positive operator has nonnegative determinant]]
 
 ## Connections
 - Physics: an observable (or any normal operator, e.g. a unitary time evolution) has an orthonormal eigenbasis; commuting normal operators share one ([[§18 Commuting Operators#^ladr-5-76|5.76]]).
 - In infinite dimensions the eigenvectors of a self-adjoint operator need not span: the bound states of hydrogen are not complete, [[§33 Bound States Need Not Be Complete꞉ Hydrogen#^cor-33-2|556 Cor. §33.2]].
-- **Also in [[Ordinary Differential Equations]]:** [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]] and [[§33★ Fundamental Matrices#^thm-33-7|331 Thm. §33.7]] (the Hermitian case: an orthonormal eigenbasis, T⁻¹ = T*, used to solve x′ = Ax).
+- **Also in [[Ordinary Differential Equations]]:** [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-5|331 Thm. §35.5]] and [[§39★ Fundamental Matrices#^thm-39-7|331 Thm. §39.7]] (the Hermitian case: an orthonormal eigenbasis, T⁻¹ = T*, used to solve x′ = Ax).

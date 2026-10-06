@@ -21,10 +21,10 @@ tags: [real-analysis, hub]
 - [[§10 Monotone Sequences and Cauchy Sequences#^prop-10-2|Proposition §10.2: Sequential Characterization of the Supremum]]
 
 ## Used in (Measure Theory)
-- [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]]
-- [[§12 Measurable Functions#^prop-12-18|Proposition §12.18: Convergence as Set Membership]]
-- [[§13 Egorov's and Lusin's Theorems#^thm-13-1|Theorem §13.1: Egorov's Theorem]]
-- [[§13 Egorov's and Lusin's Theorems#^ex-13-1|Example §13.1: Illustration of Egorov's Theorem]]
+- [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|Lemma §6.2]]
+- [[§17 Simple Functions and Modes of Convergence#^prop-17-6|Proposition §17.6: Convergence as Set Membership]]
+- [[§18 Egorov's and Lusin's Theorems#^thm-18-1|Theorem §18.1: Egorov's Theorem]]
+- [[§18 Egorov's and Lusin's Theorems#^ex-18-1|Example §18.1: Illustration of Egorov's Theorem]]
 
 ## Used in (Group Theory)
 - [[§5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]

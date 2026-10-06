@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Section 1.3.*
 
-Starting from the essential functions of [[§2 Mathematical Models꞉ A Catalog of Essential Functions|§2]], this section builds new ones in two ways. Transforming a graph (shifting, stretching, reflecting it, or taking an absolute value) changes the formula in a predictable way, so many graphs can be sketched by hand from one known graph, and a formula can be read off a given graph. Combining two functions (arithmetic operations and composition) produces new functions, whose domains must be worked out. Composition, and the reverse skill of decomposing a function into simpler ones, is what the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]) will act on.
+Starting from the essential functions of [[§2 Mathematical Models꞉ A Catalog of Essential Functions|§2]], this section builds new ones in two ways. Transforming a graph (shifting, stretching, reflecting it, or taking an absolute value) changes the formula in a predictable way, so many graphs can be sketched by hand from one known graph, and a formula can be read off a given graph. Combining two functions (arithmetic operations and composition) produces new functions, whose domains must be worked out. Composition, and the reverse skill of decomposing a function into simpler ones, is what the Chain Rule ([[§20 The Chain Rule#^thm-20-2|Theorem §20.2]]) will act on.
 
 ## Transformations of Functions
 
@@ -185,7 +185,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^def-3-1
 
 > [!remark]- Connections
-> - Developed further in: [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]], where these combinations of continuous functions are shown to be continuous on the common domain (Calculus: [[§10 Continuity#^thm-10-1|§10.1]]).
+> - Developed further in: [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]], where these combinations of continuous functions are shown to be continuous on the common domain (Calculus: [[§12 Continuity#^thm-12-1|§12.1]]).
 
 > [!definition] Definition §3.2: Composite Function
 > Given two functions $f$ and $g$, the **composite function** $f \circ g$ (also called the **composition** of $f$ and $g$, read "$f$ circle $g$") is defined by
@@ -207,7 +207,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^def-3-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§8 Functions#^def-8-5|250 Def. §8.5]], for $f : X \to Y$ and $g : Y \to Z$; Stewart's domain rule is the restriction needed when the values of $g$ do not all lie in the domain of $f$ ([[§8 Functions#^ex-8-6|250 Ex. §8.6]](b)). That $f \circ g \circ h$ needs no brackets is associativity, [[§8 Functions#^prop-8-1|250 Prop. §8.1]].
+> - Rigorous treatment: [[§8 Functions#^def-8-6|250 Def. §8.6]], for $f : X \to Y$ and $g : Y \to Z$; Stewart's domain rule is the restriction needed when the values of $g$ do not all lie in the domain of $f$ ([[§8 Functions#^ex-8-6|250 Ex. §8.6]](b)). That $f \circ g \circ h$ needs no brackets is associativity, [[§8 Functions#^prop-8-1|250 Prop. §8.1]].
 
 > [!remark] Remark: The Order Matters
 > In general $f \circ g \ne g \circ f$. The notation $f \circ g$ means that the function $g$ is applied *first* and then $f$ is applied *second*, the reverse of the order in which the letters are read. [[§3 New Functions from Old Functions#^ex-3-5|Example §3.5]](a) shows two different composites of the same pair of functions.

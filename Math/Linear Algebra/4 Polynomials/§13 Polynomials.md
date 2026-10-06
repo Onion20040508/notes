@@ -20,7 +20,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄]], [[§13 Polynomials#^ladr-4-2b|absolute value, ∣z∣]].
-> - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (Re z and Im z).
+> - Computational version: [[§64 Complex Numbers#^def-64-1|235 Def. §64.1]] (Re z and Im z).
 
 > [!definition] Definition 4.2: Complex conjugate, z̄
 > For $z\in\C$:
@@ -35,8 +35,8 @@ tags: [linear-algebra]
 ^ladr-4-2b
 
 > [!remark]- Connections
-> - Properties: [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[§19 Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[§22 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
-> - Computational version: [[§53 Complex Numbers#^def-53-3|235 Def. §53.3]] and [[§53 Complex Numbers#^def-53-4|235 Def. §53.4]], with worked examples in [[§53 Complex Numbers#^ex-53-2|235 Ex. §53.2]].
+> - Properties: [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]]. The conjugate is why complex inner products are conjugate-symmetric ([[§20 Inner Products and Norms#^ladr-6-2|Inner product]]) and why adjoints involve conjugate transposes ([[§23 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]).
+> - Computational version: [[§64 Complex Numbers#^def-64-3|235 Def. §64.3]] and [[§64 Complex Numbers#^def-64-4|235 Def. §64.4]], with worked examples in [[§64 Complex Numbers#^ex-64-2|235 Ex. §64.2]].
 > - Computational version: [[§4 Vectors and Moduli#^def-4-1|342 Def. §4.1]] (modulus) and [[§6 Complex Conjugates#^def-6-1|342 Def. §6.1]] (conjugate), with their geometry in the complex plane.
 
 > [!example] Example 4.3: Real and imaginary part, complex conjugate, absolute value (p. 120)
@@ -49,7 +49,7 @@ tags: [linear-algebra]
 ^ladr-4-3
 
 > [!remark]- Connections
-> - In 235: [[§53 Complex Numbers#^def-53-5|235 Def. §53.5]] (the complex plane: z̄ is the mirror image in the real axis, |z| the distance to 0).
+> - In 235: [[§64 Complex Numbers#^def-64-5|235 Def. §64.5]] (the complex plane: z̄ is the mirror image in the real axis, |z| the distance to 0).
 
 > [!theorem] Theorem 4.4: Properties of complex numbers
 > For $w,z\in\C$:
@@ -79,7 +79,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The same proof pattern gives the triangle inequality for norms: [[Triangle inequality]], via [[Cauchy–Schwarz inequality]].
-> - Computational version: [[§53 Complex Numbers#^thm-53-3|235 Thm. §53.3]] (stated without proof) and [[§53 Complex Numbers#^prop-53-2|235 Prop. §53.2]] (z z̄ = a² + b²).
+> - Computational version: [[§64 Complex Numbers#^thm-64-3|235 Thm. §64.3]] (stated without proof) and [[§64 Complex Numbers#^prop-64-2|235 Prop. §64.2]] (z z̄ = a² + b²).
 > - Computational version: [[§6 Complex Conjugates#^thm-6-1|342 Thm. §6.1]], [[§6 Complex Conjugates#^prop-6-2|342 Prop. §6.2]], [[§6 Complex Conjugates#^prop-6-3|342 Prop. §6.3]] and [[§6 Complex Conjugates#^thm-6-4|342 Thm. §6.4]] (the conjugate and modulus identities), and [[§5 Triangle Inequality#^thm-5-1|342 Thm. §5.1]] with the reverse form [[§5 Triangle Inequality#^cor-5-2|342 Cor. §5.2]] (triangle inequality, proved in coordinates, with worked bounds).
 
 > [!definition] Definition 4.5: Zero of a polynomial
@@ -126,7 +126,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Alternative bound on the number of eigenvalues: via [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]] and [[Existence, uniqueness, and degree of minimal polynomial]] (compare [[§14 Invariant Subspaces#^ladr-5-12|Operator cannot have more eigenvalues than dimension of vector space]]).
-> - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (via p(λ) = (λ − r)q(λ), for characteristic polynomials).
+> - In 235: [[§41 The Characteristic Equation#^rem-41-1|235 Remark §33.1]] (via p(λ) = (λ − r)q(λ), for characteristic polynomials).
 > - Concrete case where the bound is attained: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]] (zⁿ = z₀ has exactly n distinct nth roots, computed in exponential form, with worked examples).
 
 > [!theorem] Theorem 4.9: Division algorithm for polynomials
@@ -156,7 +156,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Key step in [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: every annihilating polynomial is a multiple of the minimal polynomial.
 > - Integer version: [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (hub [[Division Algorithm]]).
-> - Computational version: long division of polynomials in partial fractions, [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-1|Calc Thm. §47.1]] (with worked examples).
+> - Computational version: long division of polynomials in partial fractions, [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-1|Calc Thm. §54.1]] (with worked examples).
 
 > [!theorem] Theorem 4.12: Fundamental theorem of algebra, first version
 > Every nonconstant polynomial with complex coefficients has a zero in $\C$.
@@ -184,10 +184,10 @@ tags: [linear-algebra]
 > ![[ladr-4.12-fta-step.svg|320]]
 
 > [!remark]- Connections
-> - In 235: stated without proof, in factored form, in [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
+> - In 235: stated without proof, in factored form, in [[§41 The Characteristic Equation#^rem-41-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
 > - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, giving exactly n zeros in a large disk). The minimum argument here is the polynomial case of the minimum modulus principle, [[§59 Maximum Modulus Principle#^ex-59-2|342 Ex. §59.2]].
 > - The k-th roots step, in exponential form: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]].
-> - Analytic input, in topological terms: a closed disk in $\C=\R^2$ is compact ([[Heine–Borel Theorem]]) and its image under the continuous $|p|$ is compact ([[Continuous Image of a Compact Space is Compact]]), so $|p|$ attains a minimum; the interval case is 451's [[Extreme Value Theorem]]. A proof by the fundamental group of the circle ([[Fundamental Group of the Circle|590 Thm. §24.10]]): [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]].
+> - Analytic input, in topological terms: a closed disk in $\C=\R^2$ is compact ([[Heine–Borel Theorem]]) and its image under the continuous $|p|$ is compact ([[Continuous Image of a Compact Space is Compact]]), so $|p|$ attains a minimum; the interval case is 451's [[Extreme Value Theorem]]. A proof by the fundamental group of the circle ([[Fundamental Group of the Circle|590 Thm. §32.5]]): [[§33 The Fundamental Theorem of Algebra#^thm-33-1|590 Thm. §33.1]].
 
 > [!theorem] Theorem 4.13: Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,
@@ -212,7 +212,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Complex minimal polynomials split: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]](b). Real version: [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
-> - In 235: [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (the characteristic polynomial of an n × n matrix has n complex roots, counting multiplicities).
+> - In 235: [[§41 The Characteristic Equation#^rem-41-1|235 Remark §33.1]] (the characteristic polynomial of an n × n matrix has n complex roots, counting multiplicities).
 > - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^cor-58-4|342 Cor. §58.4]] (factorization into linear factors, deduced from the Liouville proof).
 
 > [!theorem] Theorem 4.14: Polynomials with real coefficients have nonreal zeros in pairs
@@ -228,7 +228,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Pairs $(z-\lambda)(z-\bar\lambda)=z^2-2(\operatorname{Re}\lambda)z+|\lambda|^2$: the real quadratic factors of [[§13 Polynomials#^ladr-4-16|Factorization of a polynomial over R]].
 > - Physics: for real (e.g. time-reversal symmetric) problems, complex eigenvalues come in conjugate pairs.
-> - Matrix version: [[§36 Complex Eigenvalues#^thm-36-2|235 Thm. §36.2]] (complex eigenvalues of a real matrix come in conjugate pairs).
+> - Matrix version: [[§44 Complex Eigenvalues#^thm-44-2|235 Thm. §44.2]] (complex eigenvalues of a real matrix come in conjugate pairs).
 > - Worked example: [[§11 Examples (Roots of Complex Numbers)#^ex-11-5|342 Ex. §11.5]] (the zeros of z⁴ + 4 come in conjugate pairs and give its real quadratic factors).
 
 > [!theorem] Theorem 4.15: Factorization of a quadratic polynomial
@@ -275,5 +275,5 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-34|Operators on odd-dimensional vector spaces have eigenvalues]] to find an irreducible quadratic factor of a real minimal polynomial.
 > - Integer analogue: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (unique prime factorization), with linear factors and irreducible quadratics in the role of primes.
-> - Computational version: [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-2|Calc Thm. §47.2]], the factorization used for partial fractions (with worked examples).
+> - Computational version: [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-2|Calc Thm. §54.2]], the factorization used for partial fractions (with worked examples).
 > - Worked example: [[§11 Examples (Roots of Complex Numbers)#^ex-11-5|342 Ex. §11.5]] (z⁴ + 4 factored into two real quadratics by pairing conjugate zeros).

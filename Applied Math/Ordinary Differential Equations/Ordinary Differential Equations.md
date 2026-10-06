@@ -98,12 +98,12 @@ Asynchronous video lectures (no lecture notes in the course folder). Grading: fi
 
 | Written homework | Sections | Notes |
 |---|---|---|
-| 1 | 1.1–2.2 | §1–§5 |
-| 2 | 2.3–2.8 | §6–§11 |
-| 3 | 3.1–3.4 | §13–§16 |
-| 4 | 3.5–3.8 | §17, §19–§20 |
-| 5 | Ch. 6 | §21–§25 |
-| 6 | Ch. 7 | §27–§32 |
+| 1 | 1.1–2.2 | §1–§6 |
+| 2 | 2.3–2.8 | §7–§14 |
+| 3 | 3.1–3.4 | §17–§20 |
+| 4 | 3.5–3.8 | §21, §23–§24 |
+| 5 | Ch. 6 | §26–§30 |
+| 6 | Ch. 7 | §33–§38 |
 
 Examples marked *Source: 331 …* come from the written homework, the Summer 2023 midterm and earlier UMass exams (Spring 2020 midterm, Fall 2021 and Fall 2022 finals).
 

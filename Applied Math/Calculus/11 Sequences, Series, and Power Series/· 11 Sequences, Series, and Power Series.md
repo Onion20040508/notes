@@ -14,17 +14,17 @@ tags: [chapter, calculus]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (48), [[Applied Linear Algebra]] (5), [[Fourier Series and PDEs]] (3), [[Ordinary Differential Equations]] (4), [[Complex Variables]] (10)
 
 ## Sections
-- [[§69 Sequences]] — Stewart 11.1
-- [[§70 Series]] — Stewart 11.2
-- [[§71 The Integral Test and Estimates of Sums]] — Stewart 11.3
-- [[§72 The Comparison Tests]] — Stewart 11.4
-- [[§73 Alternating Series and Absolute Convergence]] — Stewart 11.5
-- [[§74 The Ratio and Root Tests]] — Stewart 11.6
-- [[§75 Strategy for Testing Series]] — Stewart 11.7
-- [[§76 Power Series]] — Stewart 11.8
-- [[§77 Representations of Functions as Power Series]] — Stewart 11.9
-- [[§78 Taylor and Maclaurin Series]] — Stewart 11.10
-- [[§79 Applications of Taylor Polynomials]] — Stewart 11.11
+- [[§80 Sequences]] — Stewart 11.1
+- [[§82 Series]] — Stewart 11.2
+- [[§83 The Integral Test and Estimates of Sums]] — Stewart 11.3
+- [[§84 The Comparison Tests]] — Stewart 11.4
+- [[§85 Alternating Series and Absolute Convergence]] — Stewart 11.5
+- [[§86 The Ratio and Root Tests]] — Stewart 11.6
+- [[§87 Strategy for Testing Series]] — Stewart 11.7
+- [[§88 Power Series]] — Stewart 11.8
+- [[§89 Representations of Functions as Power Series]] — Stewart 11.9
+- [[§90 Taylor and Maclaurin Series]] — Stewart 11.10
+- [[§92 Applications of Taylor Polynomials]] — Stewart 11.11
 
 ## Central results
 - [[Test for Divergence]] (§70.5)
@@ -36,7 +36,7 @@ tags: [chapter, calculus]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§69 Sequences#^thm-69-3|Theorem §69.3: Limit Laws for Sequences]]: 30 later results
-- [[§69 Sequences#^thm-69-4|Theorem §69.4: Squeeze Theorem for Sequences]]: 17 later results
-- [[§69 Sequences#^thm-69-9|Theorem §69.9: Monotonic Sequence Theorem]]: 16 later results
-- [[§69 Sequences#^thm-69-1|Theorem §69.1: Limits Through a Function]]: 14 later results
+- [[§80 Sequences#^thm-80-3|Theorem §80.3: Limit Laws for Sequences]]: 30 later results
+- [[§80 Sequences#^thm-80-4|Theorem §80.4: Squeeze Theorem for Sequences]]: 17 later results
+- [[§81 Monotonic and Bounded Sequences#^thm-81-1|Theorem §81.1: Monotonic Sequence Theorem]]: 16 later results
+- [[§80 Sequences#^thm-80-1|Theorem §80.1: Limits Through a Function]]: 14 later results

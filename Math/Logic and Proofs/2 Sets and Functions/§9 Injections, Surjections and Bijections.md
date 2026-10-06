@@ -15,7 +15,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 
 ## 9.1 Properties of Functions
 
-> [!definition] Definition §9.1: Injection
+> [!definition] Definition §9.3: Injection
 > Let $f : X \to Y$ be a function. $f$ is an **injection** (is **injective**, **one-to-one**) if no element of $Y$ is assigned to more than one element of $X$, i.e. $f$ takes different values at different points:
 >
 > $$
@@ -30,9 +30,9 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > - Same notion: [[§1 Countability and Set Theory#^def-1-3|551 Def. §1.3]].
 > - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-14|LADR Def. 3.14]] (injective).
 > - Computational version: one-to-one functions and the horizontal line test, [[§5 Inverse Functions and Logarithms#^def-5-1|Calc Def. §5.1]] and [[§5 Inverse Functions and Logarithms#^thm-5-1|Calc Thm. §5.1]] (with worked examples).
-> - For linear maps of ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-3|235 Def. §9.3]] (one-to-one), tested by pivot positions in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]], with worked examples.
+> - For linear maps of ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-3|235 Def. §10.3]] (one-to-one), tested by pivot positions in [[§10 The Matrix of a Linear Transformation#^thm-10-3|235 Thm. §10.3]], with worked examples.
 
-> [!definition] Definition §9.1: Surjection
+> [!definition] Definition §9.4: Surjection
 > Let $f : X \to Y$ be a function. $f$ is a **surjection** (is **surjective**, **onto**) if each element of $Y$ is assigned to some element of $X$, i.e. each point of the codomain is a value:
 >
 > $$
@@ -41,29 +41,29 @@ A function assigns exactly one value to each point of its domain, but says nothi
 >
 > *Eccles: Definition 9.1.1*
 
-^def-9-new1
+^def-9-2
 
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-4|551 Def. §1.4]].
 > - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-19|LADR Def. 3.19]] (surjective).
-> - For linear maps of ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-2|235 Def. §9.2]] (onto), tested by pivot positions in [[§9 The Matrix of a Linear Transformation#^thm-9-3|235 Thm. §9.3]], with worked examples.
+> - For linear maps of ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-2|235 Def. §10.2]] (onto), tested by pivot positions in [[§10 The Matrix of a Linear Transformation#^thm-10-3|235 Thm. §10.3]], with worked examples.
 
-> [!definition] Definition §9.1: Bijection
+> [!definition] Definition §9.5: Bijection
 > Let $f : X \to Y$ be a function. $f$ is a **bijection** (is **bijective**, **one-to-one and onto**) if it is both an injection and a surjection.
 >
 > *Eccles: Definition 9.1.1*
 
-^def-9-new2
+^def-9-3
 
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-6|551 Def. §1.6]].
 
-> [!definition] Definition §9.2: Pre-image of an Element
+> [!definition] Definition §9.7: Pre-image of an Element
 > Let $f : X \to Y$ and $y \in Y$. A **pre-image** of $y$ (under $f$) is an element $x \in X$ such that $y = f(x)$.
 >
 > *Eccles: Definition 9.1.2*
 
-^def-9-2
+^def-9-4
 
 > [!theorem] Proposition §9.1: Injectivity and Surjectivity by Counting Pre-images
 > Let $f : X \to Y$. Then
@@ -84,7 +84,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 
 ^pf-9-1
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]], [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§9 Injections, Surjections and Bijections#^def-9-4|Def. §9.4]]
 
 In each model of a function from [[§8 Functions|§8]]: in a **table of values**, $f$ is injective when no element occurs twice in the second row, surjective when every element of $Y$ occurs, and bijective when every element of $Y$ occurs exactly once. In the **arrow picture** we find pre-images by following arrows backwards; $f$ is bijective when every point of $Y$ is the end of exactly one arrow. In the **box model**, $f$ is injective when no two objects share a box, surjective when no box is empty, and bijective when every box holds exactly one object.
 
@@ -165,7 +165,7 @@ Since injectivity and surjectivity are universal and existential statements, the
 
 ## 9.2 Bijections and Inverses
 
-> [!definition] Definition §9.3: Invertible Function; Inverse
+> [!definition] Definition §9.8: Invertible Function; Inverse
 > A function $f : X \to Y$ is **invertible** if there exists a function $g : Y \to X$ such that
 >
 > $$
@@ -176,11 +176,11 @@ Since injectivity and surjectivity are universal and existential statements, the
 >
 > *Eccles: Definition 9.2.1*
 
-^def-9-3
+^def-9-5
 
 > [!remark]- Connections
 > - Computational version: [[§5 Inverse Functions and Logarithms#^def-5-2|Calc Def. §5.2]] (with worked examples).
-> - For linear maps of ℝⁿ: [[§13 Characterizations of Invertible Matrices#^def-13-1|235 Def. §13.1]] (invertible linear transformation).
+> - For linear maps of ℝⁿ: [[§16 Characterizations of Invertible Matrices#^def-16-1|235 Def. §16.1]] (invertible linear transformation).
 
 > [!example] Example §9.5: A Pair of Inverse Functions
 > $f : \R \to \R$, $f(x) = 2x + 1$, and $g : \R \to \R$, $g(x) = (x - 1)/2$, are inverse to each other: for $x, y \in \R$,
@@ -215,13 +215,13 @@ Since injectivity and surjectivity are universal and existential statements, the
 
 ^pf-9-2
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new2|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^prop-9-1|§9.1]], [[§8 Functions#^def-8-3|Def. §8.3]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-5|Def. §9.5]], [[§9 Injections, Surjections and Bijections#^def-9-1|Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-2|Def. §9.2]], [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§9 Injections, Surjections and Bijections#^prop-9-1|§9.1]], [[§8 Functions#^def-8-4|Def. §8.4]]
 
 > [!remark]- Connections
-> - Same result stated with $g \circ f$ and $f \circ g$: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 Prop. §21.4]].
+> - Same result stated with $g \circ f$ and $f \circ g$: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|590 Prop. §26.4]].
 > - For linear maps: [[§10 Invertibility and Isomorphisms#^ladr-3-63|LADR Thm. 3.63]] (invertible iff injective and surjective), with uniqueness of the inverse in [[§10 Invertibility and Isomorphisms#^ladr-3-60|LADR Thm. 3.60]].
 > - In Stewart the inverse is defined exactly for one-to-one functions onto their range: [[§5 Inverse Functions and Logarithms#^def-5-2|Calc Def. §5.2]].
-> - For linear maps of ℝⁿ: [[§13 Characterizations of Invertible Matrices#^rem-13-2|235 Remark §13.2]] (invertible means one-to-one and onto, read off from pivots) and [[§13 Characterizations of Invertible Matrices#^thm-13-3|235 Thm. §13.3]] (T is invertible iff its matrix is).
+> - For linear maps of ℝⁿ: [[§16 Characterizations of Invertible Matrices#^rem-16-2|235 Remark §13.2]] (invertible means one-to-one and onto, read off from pivots) and [[§16 Characterizations of Invertible Matrices#^thm-16-3|235 Thm. §16.3]] (T is invertible iff its matrix is).
 
 Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]], "bijective" and "invertible" are used interchangeably. Many standard functions are not bijections, but become bijections after restricting the domain and shrinking the codomain.
 
@@ -254,7 +254,7 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 
 ^pf-9-3
 
-*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], [[§8 Functions#^def-8-5|Def. §8.5]], [[§8 Functions#^def-8-new1|Def. §8.2]], [[§8 Functions#^def-8-3|Def. §8.3]]
+*Uses:* [[§9 Injections, Surjections and Bijections#^def-9-5|Def. §9.5]], [[§8 Functions#^def-8-6|Def. §8.6]], [[§8 Functions#^def-8-3|Def. §8.3]], [[§8 Functions#^def-8-4|Def. §8.4]]
 
 > [!remark]- Connections
 > - Computational version: the cancellation equations, [[§5 Inverse Functions and Logarithms#^thm-5-2|Calc Thm. §5.2]].
@@ -264,7 +264,7 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 >
 > **(ii)** $f_2 : \R \to \R$, $f_2(x) = x^3 + 1$. For $x, y \in \R$: $y = x^3 + 1 \iff x^3 = y - 1 \iff x = \sqrt[3]{y - 1}$, the last step because cubing is a bijection $\R \to \R$ with inverse the real cube root ([[§9 Injections, Surjections and Bijections#^ex-9-6|Example §9.6]](b)). So $f_2^{-1}(y) = \sqrt[3]{y - 1}$.
 >
-> In both cases the chain of equivalences is exactly the condition of [[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]], so it proves at once that $f_i$ is invertible (hence bijective) and identifies the inverse.
+> In both cases the chain of equivalences is exactly the condition of [[§9 Injections, Surjections and Bijections#^def-9-5|Def. §9.5]], so it proves at once that $f_i$ is invertible (hence bijective) and identifies the inverse.
 >
 > *Source: HW4*
 > *Eccles: Exercise 9.3*
@@ -298,7 +298,7 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 > z = (g \circ f)(x) \iff z = g(f(x)) \iff g^{-1}(z) = f(x) \iff f^{-1}(g^{-1}(z)) = x \iff x = (f^{-1} \circ g^{-1})(z),
 > $$
 >
-> using the defining property of $g^{-1}$ (with $f(x) \in Y$) and then of $f^{-1}$. So $f^{-1} \circ g^{-1}$ is an inverse of $g \circ f$ ([[§9 Injections, Surjections and Bijections#^def-9-3|Def. §9.3]]); hence $g \circ f$ is invertible, so bijective, and since the inverse is unique it equals $f^{-1} \circ g^{-1}$.
+> using the defining property of $g^{-1}$ (with $f(x) \in Y$) and then of $f^{-1}$. So $f^{-1} \circ g^{-1}$ is an inverse of $g \circ f$ ([[§9 Injections, Surjections and Bijections#^def-9-5|Def. §9.5]]); hence $g \circ f$ is invertible, so bijective, and since the inverse is unique it equals $f^{-1} \circ g^{-1}$.
 >
 > Alternatively, by [[§9 Injections, Surjections and Bijections#^prop-9-3|Proposition §9.3]] and associativity ([[§8 Functions#^prop-8-1|Proposition §8.1]]): $(f^{-1} \circ g^{-1}) \circ (g \circ f) = f^{-1} \circ (g^{-1} \circ g) \circ f = f^{-1} \circ I_Y \circ f = f^{-1} \circ f = I_X$, and similarly $(g \circ f) \circ (f^{-1} \circ g^{-1}) = I_Z$. Note the reversal of order, as when taking off shoes and socks.
 >
@@ -312,24 +312,24 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 
 ## 9.3 Functions and Subsets
 
-The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function between power sets. A function $f : X \to Y$ gives two functions between $\mathcal{P}(X)$ and $\mathcal{P}(Y)$ ([[§6 The Language of Set Theory#^def-6-9|Def. §6.9]]), one in each direction.
+The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function between power sets. A function $f : X \to Y$ gives two functions between $\mathcal{P}(X)$ and $\mathcal{P}(Y)$ ([[§6a Operations on Sets#^def-6a-5|Def. §6a.5]]), one in each direction.
 
-> [!definition] Definition §9.4: Image of a Subset
+> [!definition] Definition §9.9: Image of a Subset
 > Let $f : X \to Y$ be a function. $\overrightarrow{f} : \mathcal{P}(X) \to \mathcal{P}(Y)$ is defined by $\overrightarrow{f}(A) = \{f(x) \mid x \in A\}$ for $A \subseteq X$, the **image** of $A$.
 >
 > *Eccles: Definition 9.3.1*
 
-^def-9-4
+^def-9-6
 
-> [!definition] Definition §9.4: Pre-image of a Subset
+> [!definition] Definition §9.10: Pre-image of a Subset
 > Let $f : X \to Y$ be a function. $\overleftarrow{f} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is defined by $\overleftarrow{f}(B) = \{x \in X \mid f(x) \in B\}$ for $B \subseteq Y$, the **pre-image** (or inverse image) of $B$.
 >
 > *Eccles: Definition 9.3.1*
 
-^def-9-new3
+^def-9-7
 
 > [!remark] Remark: Notation, and the Two Extensions
-> Most writers denote $\overrightarrow{f}(A)$ simply by $f(A)$ and $\overleftarrow{f}(B)$ by $f^{-1}(B)$ (as in Topology, where continuity is defined by pre-images of open sets, [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], and Measure Theory, where measurability asks that the pre-images $\{x \mid f(x) > c\}$ of rays be measurable sets, [[§12 Measurable Functions#^def-12-2|551 Def. §12.2]]); Eccles's arrows avoid giving two different functions the same name. $\overrightarrow{f}$ extends $f$: $\overrightarrow{f}(\{x_0\}) = \{f(x_0)\}$, and $\overrightarrow{f}(X) = \operatorname{Im} f$. $\overleftarrow{f}(\{y_0\}) = \{x \in X \mid f(x) = y_0\}$ is the set of pre-images of $y_0$, the contents of box $y_0$. If $f$ is a bijection, $\overleftarrow{f}(\{y_0\}) = \{f^{-1}(y_0)\}$, so $\overleftarrow{f}$ extends $f^{-1}$; if $f$ is not surjective, $\overleftarrow{f}(\{y\}) = \emptyset$ for $y \notin \operatorname{Im} f$, and if $f$ is not injective, $\overleftarrow{f}(\{y\})$ has more than one element for some $y$.
+> Most writers denote $\overrightarrow{f}(A)$ simply by $f(A)$ and $\overleftarrow{f}(B)$ by $f^{-1}(B)$ (as in Topology, where continuity is defined by pre-images of open sets, [[§10 Continuous Functions#^def-10-1|590 Def. §10.1]], and Measure Theory, where measurability asks that the pre-images $\{x \mid f(x) > c\}$ of rays be measurable sets, [[§15 Measurable Functions#^def-15-2|551 Def. §15.2]]); Eccles's arrows avoid giving two different functions the same name. $\overrightarrow{f}$ extends $f$: $\overrightarrow{f}(\{x_0\}) = \{f(x_0)\}$, and $\overrightarrow{f}(X) = \operatorname{Im} f$. $\overleftarrow{f}(\{y_0\}) = \{x \in X \mid f(x) = y_0\}$ is the set of pre-images of $y_0$, the contents of box $y_0$. If $f$ is a bijection, $\overleftarrow{f}(\{y_0\}) = \{f^{-1}(y_0)\}$, so $\overleftarrow{f}$ extends $f^{-1}$; if $f$ is not surjective, $\overleftarrow{f}(\{y\}) = \emptyset$ for $y \notin \operatorname{Im} f$, and if $f$ is not injective, $\overleftarrow{f}(\{y\})$ has more than one element for some $y$.
 >
 > *Eccles: Remarks 9.3.2*
 
@@ -356,7 +356,7 @@ The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function b
 > [!example] Example §9.11: Surjectivity From the Graph
 > **Claim:** $f : X \to Y$ is surjective if and only if every horizontal line meets the graph: $\forall y \in Y,\ (X \times \{y\}) \cap G_f \ne \emptyset$.
 >
-> For fixed $y \in Y$, an element of $(X \times \{y\}) \cap G_f$ is a pair $(x, y)$ with $x \in X$ and $y = f(x)$ ([[§8 Functions#^def-8-10|Def. §8.10]]), so
+> For fixed $y \in Y$, an element of $(X \times \{y\}) \cap G_f$ is a pair $(x, y)$ with $x \in X$ and $y = f(x)$ ([[§8 Functions#^def-8-11|Def. §8.11]]), so
 >
 > $$
 > (X \times \{y\}) \cap G_f = \{(x, y) \mid x \in X,\ f(x) = y\},
@@ -378,14 +378,14 @@ The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function b
 
 The successor of an integer was used to explain the induction principle ([[§5 The Induction Principle#^rem-5-1|§5, remark after Def. §5.1]]); Dedekind observed that the successor function together with the number $1$ captures everything about the positive integers.
 
-> [!definition] Definition §9.5: Successor Function
+> [!definition] Definition §9.8: Successor Function
 > The **successor function** $s : \Z^+ \to \Z^+$ is defined by $s(n) = n + 1$ for $n \in \Z^+$.
 >
 > *Eccles: Definition 9.4.1*
 
-^def-9-5
+^def-9-8
 
-> [!definition] Definition §9.6: Peano's Axioms
+> [!definition] Definition §9.9: Peano's Axioms
 > The set of positive integers $\Z^+$ is a set with a function $s : \Z^+ \to \Z^+$ and an element $1 \in \Z^+$ such that
 > 1. $s$ is an injection;
 > 2. $1$ is not in the image of $s$;
@@ -394,7 +394,7 @@ The successor of an integer was used to explain the induction principle ([[§5 T
 > *Eccles: Axioms 9.4.2*
 > *Source: MAT 200 lecture (syllabus week 9)*
 
-^def-9-6
+^def-9-9
 
 > [!remark] Remark: What the Axioms Say
 > Axiom 3 is the induction principle ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]) in the set form of [[§7 Quantifiers#^def-7-4|Def. §7.4]]. Axiom 1 says distinct numbers have distinct successors, and axiom 2 that counting has a starting point; together with 3 they say that $1, s(1), s(s(1)), \ldots$ runs through $\Z^+$ without repetition. These are axioms *for* $\Z^+$ in the sense that any set $X$ with a function $s : X \to X$ and an element $1 \in X$ satisfying them is in bijection with $\Z^+$ by a bijection matching the two elements $1$ and the two successor functions (Dedekind; proved by induction, not proved here). Addition and multiplication can then be *defined* from $s$.
@@ -406,7 +406,7 @@ The successor of an integer was used to explain the induction principle ([[§5 T
 > [!remark]- Connections
 > - Developed further in: [[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]] (Peano axioms for $\N = \{1, 2, \ldots\}$, the same three axioms with "$s$ is a function into $\N$" split off), from which 451 derives induction in [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]].
 
-> [!definition] Definition §9.7: Addition and Multiplication From the Successor
+> [!definition] Definition §9.10: Addition and Multiplication From the Successor
 > The **sum** $m + n$ of positive integers is defined by induction on $n$:
 > 1. $m + 1 = s(m)$;
 > 2. $m + s(k) = s(m + k)$ for $k \in \Z^+$.
@@ -417,19 +417,19 @@ The successor of an integer was used to explain the induction principle ([[§5 T
 >
 > *Eccles: Definition 9.4.3 (printed "$m \times (k)$" in (2); it is $m \times s(k)$)*
 
-^def-9-7
+^def-9-10
 
 > [!example] Example §9.12: Every Positive Integer Other Than 1 Is a Successor
 > **Claim:** if $n \in \Z^+$ and $n \ne 1$, then $n = s(a)$ for some $a \in \Z^+$.
 >
-> Let $A = \operatorname{Im}(s) \cup \{1\} \subseteq \Z^+$. Then $1 \in A$; and if $n \in A$ then $s(n) \in \operatorname{Im}(s) \subseteq A$. By [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3), $A = \Z^+$. So every $n \ne 1$ lies in $\operatorname{Im}(s)$. (By axiom 1 this $a$ is unique, and by axiom 2 the number $1$ itself is not a successor: every positive integer except $1$ has exactly one predecessor.)
+> Let $A = \operatorname{Im}(s) \cup \{1\} \subseteq \Z^+$. Then $1 \in A$; and if $n \in A$ then $s(n) \in \operatorname{Im}(s) \subseteq A$. By [[§9 Injections, Surjections and Bijections#^def-9-9|Def. §9.9]](3), $A = \Z^+$. So every $n \ne 1$ lies in $\operatorname{Im}(s)$. (By axiom 1 this $a$ is unique, and by axiom 2 the number $1$ itself is not a successor: every positive integer except $1$ has exactly one predecessor.)
 >
 > *Eccles: Problems II, Question 22*
 
 ^ex-9-12
 
 > [!example] Example §9.13: Addition Is Associative and Commutative
-> From [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]] and [[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]](3), used as proof by induction ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]):
+> From [[§9 Injections, Surjections and Bijections#^def-9-10|Def. §9.10]] and [[§9 Injections, Surjections and Bijections#^def-9-9|Def. §9.9]](3), used as proof by induction ([[§5 The Induction Principle#^def-5-1|Def. §5.1]]):
 >
 > **(i) Associativity:** $(a + b) + c = a + (b + c)$ for all $a, b, c \in \Z^+$. Fix $a, b$ and induct on $c$. For $c = 1$: $(a + b) + 1 = s(a + b) = a + s(b) = a + (b + 1)$. If it holds for $c = k$, then
 >
@@ -437,7 +437,7 @@ The successor of an integer was used to explain the induction principle ([[§5 T
 > (a + b) + s(k) = s\big((a + b) + k\big) = s\big(a + (b + k)\big) = a + s(b + k) = a + \big(b + s(k)\big),
 > $$
 >
-> using [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]](2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
+> using [[§9 Injections, Surjections and Bijections#^def-9-10|Def. §9.10]](2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
 >
 > **(ii) Commutativity:** $a + b = b + a$. *Step 1:* $a + 1 = 1 + a$, by induction on $a$. For $a = 1$ it is trivial. If $k + 1 = 1 + k$, then $s(k) + 1 = s(s(k))$ and $1 + s(k) = s(1 + k) = s(k + 1) = s(s(k))$, so $s(k) + 1 = 1 + s(k)$.
 >

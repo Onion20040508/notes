@@ -2,19 +2,19 @@
 subject: math
 type: theorem
 source: "[[Fourier Series and PDEs]]"
-aliases: ["MAT 341 9.3"]
+aliases: ["MAT 341 13.3"]
 tags: [fourier-series-and-pdes, hub]
 ---
-![[§9 Uniform Convergence#^thm-9-3]]
+![[§13 Uniform Convergence#^thm-13-3]]
 
 ## Treated in
-- [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3: Continuous, Sectionally Smooth Functions]], in [[§9 Uniform Convergence]]
+- [[§13 Uniform Convergence#^thm-13-3|Theorem §13.3: Continuous, Sectionally Smooth Functions]], in [[§13 Uniform Convergence]]
 
 ## Its proof uses
 - (no proof in the notes)
 
 ## Used in (Fourier Series and PDEs)
-- [[§9 Uniform Convergence#^thm-9-4|Theorem §9.4: Uniform Convergence on −a ≤ x ≤ a]]
+- [[§13 Uniform Convergence#^thm-13-4|Theorem §13.4: Uniform Convergence on −a ≤ x ≤ a]]
 
 ## Connections
-- See [[§9 Uniform Convergence]] for context and examples.
+- See [[§13 Uniform Convergence]] for context and examples.

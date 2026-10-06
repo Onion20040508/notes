@@ -7,7 +7,7 @@ eccles: "Ch. 15"
 aliases: ["Eccles 15"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§14 Counting Infinite Sets]] · ↑ [[· 4 Arithmetic]] · [[§16 The Euclidean Algorithm]] →
+← [[§14b √2]] · ↑ [[· 4 Arithmetic]] · [[§16 The Euclidean Algorithm]] →
 
 *Eccles, Chapter 15 · MAT 250 HW6 (Exercises 15.1–15.5).*
 

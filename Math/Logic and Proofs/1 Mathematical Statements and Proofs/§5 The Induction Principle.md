@@ -26,10 +26,10 @@ The rules of arithmetic and order do not capture the fact that every positive in
 
 > [!remark]- Connections
 > - In analysis, with $\mathbb{N} = \{1, 2, \ldots\}$: induction is Peano's axiom N5 ([[§1 The Set ℕ of Natural Numbers#^def-1-1|451 Def. §1.1]]), from which the principle is derived ([[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 Thm. §1.1]]).
-> - Stewart's statement: [[§120 Sigma Notation#^def-120-2|Calc Def. §120.2]].
+> - Stewart's statement: [[§143 Sigma Notation#^def-143-2|Calc Def. §143.2]].
 
 > [!remark] Remark: Why Induction Is an Axiom
-> The integer $k + 1$ is the **successor** of $k$, and starting from $1$ and taking successors repeatedly we eventually reach any positive integer: from $P(1)$ and $P(1) \Rightarrow P(2)$ we get $P(2)$, then $P(2) \Rightarrow P(3)$ gives $P(3)$, and so on. Think of the positive integers as a line of dominoes: the inductive step says each domino knocks over the next, the base case that the first one falls. (The analogy is imperfect: dominoes take time to fall, while implication is outside time.) This seems obvious because our idea of the integers includes more than the facts that they can be added, multiplied and compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms ([[§2 Implications#^def-2-8|Def. §2.8]], [[§3 Proofs#^def-3-1|Def. §3.1]]). Checking cases is never a proof: the Goldbach conjecture ([[§1 The Language of Mathematics#^ex-1-1|Ex. §1.1]]) has been verified in an enormous number of cases and is still unproved. The integers are characterized as an ordered integral domain whose positive elements satisfy induction, and the positive integers alone by Peano's axioms, one of which is induction ([[§9 Injections, Surjections and Bijections#^def-9-6|Def. §9.6]], axiom 3): "the essence of the natural number concept is … closure under the successor operation" (Dedekind, 1888). In the language of sets the principle says that a subset of $\mathbb{Z}^+$ which contains $1$ and contains $k + 1$ whenever it contains $k$ is the whole of $\mathbb{Z}^+$; this **set form** is [[§7 Quantifiers#^def-7-4|Def. §7.4]], where it is shown to be equivalent to the version above.
+> The integer $k + 1$ is the **successor** of $k$, and starting from $1$ and taking successors repeatedly we eventually reach any positive integer: from $P(1)$ and $P(1) \Rightarrow P(2)$ we get $P(2)$, then $P(2) \Rightarrow P(3)$ gives $P(3)$, and so on. Think of the positive integers as a line of dominoes: the inductive step says each domino knocks over the next, the base case that the first one falls. (The analogy is imperfect: dominoes take time to fall, while implication is outside time.) This seems obvious because our idea of the integers includes more than the facts that they can be added, multiplied and compared; the induction principle is exactly that extra content, an axiom in addition to the algebraic and order axioms ([[§2 Implications#^def-2-9|Def. §2.9]], [[§3 Proofs#^def-3-1|Def. §3.1]]). Checking cases is never a proof: the Goldbach conjecture ([[§1 The Language of Mathematics#^ex-1-1|Ex. §1.1]]) has been verified in an enormous number of cases and is still unproved. The integers are characterized as an ordered integral domain whose positive elements satisfy induction, and the positive integers alone by Peano's axioms, one of which is induction ([[§9 Injections, Surjections and Bijections#^def-9-9|Def. §9.9]], axiom 3): "the essence of the natural number concept is … closure under the successor operation" (Dedekind, 1888). In the language of sets the principle says that a subset of $\mathbb{Z}^+$ which contains $1$ and contains $k + 1$ whenever it contains $k$ is the whole of $\mathbb{Z}^+$; this **set form** is [[§7 Quantifiers#^def-7-4|Def. §7.4]], where it is shown to be equivalent to the version above.
 
 ^rem-5-1
 
@@ -97,7 +97,7 @@ To find the inductive step we related the goal $k + 1 \leq 2^{k+1}$ to the hypot
 
 ^pf-5-2
 
-*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§2 Implications#^def-2-7|Def. §2.7]]
+*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§2 Implications#^def-2-8|Def. §2.8]]
 
 ## 5.2 Changing the Base Case
 
@@ -173,7 +173,7 @@ A line of dots meaning "and so on", as in $1 + 2 + \cdots + n$, indicates a **de
 ^def-5-2
 
 > [!remark]- Connections
-> - Computational version: [[§120 Sigma Notation#^def-120-1|Calc Def. §120.1]] (with worked examples).
+> - Computational version: [[§143 Sigma Notation#^def-143-1|Calc Def. §143.1]] (with worked examples).
 
 > [!theorem] Proposition §5.5: The Sum of the First n Positive Integers
 > For positive integers $n$,
@@ -204,7 +204,7 @@ A line of dots meaning "and so on", as in $1 + 2 + \cdots + n$, indicates a **de
 *Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§5 The Induction Principle#^def-5-2|Def. §5.2]]
 
 > [!remark]- Connections
-> - Computational version: [[§120 Sigma Notation#^thm-120-2|Calc Thm. §120.2]] (c), with the formulas for Σi² and Σi³.
+> - Computational version: [[§143 Sigma Notation#^thm-143-2|Calc Thm. §143.2]] (c), with the formulas for Σi² and Σi³.
 
 Inductive definitions are implicit in many familiar functions of the non-negative integers.
 
@@ -232,7 +232,7 @@ Inductive definitions are implicit in many familiar functions of the non-negativ
 
 ^def-5-4
 
-Even addition and multiplication of positive integers can be defined inductively from the successor operation ([[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]]).
+Even addition and multiplication of positive integers can be defined inductively from the successor operation ([[§9 Injections, Surjections and Bijections#^def-9-10|Def. §9.10]]).
 
 ## 5.4 The Strong Induction Principle
 
@@ -343,7 +343,7 @@ Conversely, the induction principle can be deduced from well-ordering (Eccles, P
 *Uses:* [[§5 The Induction Principle#^thm-5-6|§5.6]], [[§5 The Induction Principle#^def-5-5|Def. §5.5]], [[§5 The Induction Principle#^ex-5-5|Ex. §5.5]]
 
 > [!remark]- Connections
-> - Computational version: the same formula derived, not just verified, from the linear difference equation, [[§30 Applications to Difference Equations#^ex-30-4|235 Ex. §30.4]] (the same numbers, indexed from F₀ = 0), and by eigenvectors of a 2 × 2 matrix, [[§32 Eigenvectors and Eigenvalues#^ex-32-4|235 Ex. §32.4]].
+> - Computational version: the same formula derived, not just verified, from the linear difference equation, [[§37 Solution Sets of Linear Difference Equations#^ex-37-2|235 Ex. §37.2]] (the same numbers, indexed from F₀ = 0), and by eigenvectors of a 2 × 2 matrix, [[§40 Eigenvectors and Eigenvalues#^ex-40-4|235 Ex. §40.4]].
 
 It is remarkable that a formula for these integers involves $\sqrt5$, which is not even rational (the proof for $\sqrt2$ in [[§13 Number Systems#^thm-13-4|Theorem §13.4]] adapts to it, and [[§23 The Sequence of Prime Numbers#^ex-23-6|Ex. §23.6]] covers $\sqrt p$ for every prime $p$). The ratio $u_{n+1}/u_n$ tends to $\alpha$, the **golden ratio** (since $|\beta| < 1$).
 
@@ -367,7 +367,7 @@ It is remarkable that a formula for these integers involves $\sqrt5$, which is n
 
 ^ex-5-1
 
-*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§2 Implications#^def-2-6|Def. §2.6]], [[§5 The Induction Principle#^def-5-3|Def. §5.3]]
+*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§2 Implications#^def-2-7|Def. §2.7]], [[§5 The Induction Principle#^def-5-3|Def. §5.3]]
 
 > [!example] Example §5.2: Every Positive Integer Is at Least 1
 > (a) For all positive integers $n$, $n \geq 1$. (b) Consequently, for integers $k$ and $m$, $m > k \Rightarrow m \geq k + 1$: no integer lies strictly between $k$ and $k + 1$.
@@ -447,7 +447,7 @@ It is remarkable that a formula for these integers involves $\sqrt5$, which is n
 
 ^ex-5-5
 
-*Uses:* [[§5 The Induction Principle#^thm-5-3|§5.3]], [[§5 The Induction Principle#^def-5-3|Def. §5.3]], [[§2 Implications#^def-2-8|Def. §2.8]]
+*Uses:* [[§5 The Induction Principle#^thm-5-3|§5.3]], [[§5 The Induction Principle#^def-5-3|Def. §5.3]], [[§2 Implications#^def-2-9|Def. §2.9]]
 
 > [!remark]- Connections
 > - The laws for integer exponents in any group, with the same inductions: [[§4 Subgroups#^lem-4-4|493 Lemma §4.4]]. (Eccles extends them to negative exponents for non-zero reals in Problems I Q23.)

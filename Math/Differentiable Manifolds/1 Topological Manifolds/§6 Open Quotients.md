@@ -57,7 +57,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Applied to orbit spaces: [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], [[§12 Group Actions and Orbit Spaces#^thm-12-5|§12.5]]; the failure mode is [[§12 Group Actions and Orbit Spaces#^ex-12-6|Ex. §12.6]].
-> - Hausdorff spaces in MATH 590: [[§8 Hausdorff Spaces#^def-8-1|590 Def. §8.1]]; for the special case of a quotient onto a Hausdorff space, compare [[§12 Quotient Topology#^cor-12-4|590 §12.4]](2).
+> - Hausdorff spaces in MATH 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]]; for the special case of a quotient onto a Hausdorff space, compare [[§13 Quotient Topology#^cor-13-4|590 §13.4]](2).
 
 > [!remark] Remark: No Hausdorff Hypothesis on $X$
 > Mid-statement, Uribe began to add the hypothesis “assume $X$ is Hausdorff”—then stopped: “actually, I don't need that.” The final statement is correct as it stands: no separation assumption on $X$ is required, only openness of the relation. (Openness, moreover, is used only in the direction $\Leftarrow$; the direction $\Rightarrow$ holds for arbitrary equivalence relations, as the [[§6 Open Quotients#^pf-6-1|proof]] shows.)
@@ -113,10 +113,10 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-6-1
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§11 Metric Topology#^lem-11-8|590 §11.8]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§12 Metric Topology#^lem-12-8|590 §12.8]]
 
 > [!remark]- Connections
-> - “A closed set contains the limits of its convergent sequences” is the [[§11 Metric Topology#^lem-11-8|Sequence Lemma, 590 §11.8]].
+> - “A closed set contains the limits of its convergent sequences” is the [[§12 Metric Topology#^lem-12-8|Sequence Lemma, 590 §12.8]].
 
 PSet 1, Problem 2 asks for the non-closedness of $\Gamma$ directly. The sequence argument above needs no metrizability: in any topological space, if $z_n \to z$ with all $z_n$ in a closed set $C$, then $z \in C$ (otherwise the open set $X \setminus C$ would eventually contain the $z_n$).
 

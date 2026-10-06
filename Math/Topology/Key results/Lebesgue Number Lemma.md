@@ -2,25 +2,25 @@
 subject: math
 type: theorem
 source: "[[Topology]]"
-aliases: ["Topology 16.3", "Lebesgue number"]
+aliases: ["Topology 19.2", "Lebesgue number"]
 tags: [topology, hub]
 ---
-![[§16 Limit Point Compactness#^lem-16-3]]
+![[§19 Limit Point Compactness#^lem-19-2]]
 
 ## Treated in
-- [[§16 Limit Point Compactness#^lem-16-3|Lemma §16.3: Lebesgue Number Lemma]], in [[§16 Limit Point Compactness]]
+- [[§19 Limit Point Compactness#^lem-19-2|Lemma §19.2: Lebesgue Number Lemma]], in [[§19 Limit Point Compactness]]
 
 ## Its proof uses
 - (only definitions)
 
 ## Used in (Topology)
-- [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]]
-- [[§24a Lifting and the Fundamental Group of the Circle#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
-- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
-- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
-- [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
-- [[§29 The Seifert–van Kampen Theorem#^thm-29-1|Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
+- [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]]
+- [[§32 Lifting and the Fundamental Group of the Circle#^ex-32-1|Example §32.1: Lifting Loops on S¹ to Paths in ℝ]]
+- [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-1|Lemma §32.1: Path Lifting Lemma]]
+- [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-2|Lemma §32.2: Homotopy Lifting Lemma]]
+- [[§37 The Fundamental Group of Sⁿ#^thm-37-1|Theorem §37.1: Generation by Open Cover (Munkres 59.1)]]
+- [[§39 The Seifert–van Kampen Theorem#^thm-39-1|Theorem §39.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
 
 ## Connections
-- **Compactness.** Together with [[§16 Limit Point Compactness#^lem-16-4|total boundedness]], it gives sequentially compact ⇒ compact in [[§16 Limit Point Compactness#^thm-16-2|Equivalence for Metrizable Spaces]] (§16.2). The metric is used essentially ([[§16 Limit Point Compactness#^rem-16-2|Summary of the Equivalence]]).
-- **Typical use.** It subdivides I or I × I so that each small piece maps into a single member of an open cover. This is used in [[Path Lifting Lemma]], [[Homotopy Lifting Lemma]], [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Generation by Open Cover]] (§27.1) and the hard direction of [[Seifert–van Kampen Theorem]].
+- **Compactness.** Together with [[§19 Limit Point Compactness#^lem-19-3|total boundedness]], it gives sequentially compact ⇒ compact in [[§19 Limit Point Compactness#^thm-19-4|Equivalence for Metrizable Spaces]] (§16.2). The metric is used essentially ([[§19 Limit Point Compactness#^rem-19-2|Summary of the Equivalence]]).
+- **Typical use.** It subdivides I or I × I so that each small piece maps into a single member of an open cover. This is used in [[Path Lifting Lemma]], [[Homotopy Lifting Lemma]], [[§37 The Fundamental Group of Sⁿ#^thm-37-1|Generation by Open Cover]] (§27.1) and the hard direction of [[Seifert–van Kampen Theorem]].

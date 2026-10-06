@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 2
-section: 27
+section: "27★"
 bc: "27"
 aliases: ["B&C 27"]
 tags: [complex-variables, math342, extension]
@@ -30,7 +30,7 @@ Harmonic functions, the solutions of Laplace's equation $H_{xx} + H_{yy} = 0$, d
 ^def-27-1
 
 > [!remark]- Connections
-> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]]. The Laplacian in $\mathbb{R}^n$ and Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]].
+> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: [[§44 Potential Equation#^def-44-1|341 Def. §44.1]]. The Laplacian in $\mathbb{R}^n$ and Green's identities: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|452 Def. §28.3]].
 
 Harmonic functions play an important role in applied mathematics. For example, the temperatures $T(x, y)$ in thin plates lying in the $xy$ plane are often harmonic. A function $V(x, y)$ is harmonic when it denotes an electrostatic potential that varies only with $x$ and $y$ in the interior of a region of three-dimensional space that is free of charges.
 
@@ -74,10 +74,10 @@ Harmonic functions play an important role in applied mathematics. For example, t
 
 ^pf-27-1
 
-*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]], [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]] (Schwarz–Clairaut)
+*Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]], [[§6 Equality of Mixed Partials#^thm-6-1|452 Thm. §6.1]] (Schwarz–Clairaut)
 
 > [!remark]- Connections
-> - Theorem §27.1 is the source of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]. The separation-of-variables solutions of [[§38 Potential in Unbounded Regions#^thm-38-1|341 Thm. §38.1]] are sums of real parts of analytic functions such as $-ie^{in\pi z/a}$; Example §27.1 is the term $n = 1$, $a = \pi$.
+> - Theorem §27.1 is the source of the closed-form solutions of potential problems; the converse direction (every harmonic function on a simply connected domain is the real part of an analytic function, its **harmonic conjugate** being the imaginary part) is [[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]. The separation-of-variables solutions of [[§47 Potential in Unbounded Regions#^thm-47-1|341 Thm. §47.1]] are sums of real parts of analytic functions such as $-ie^{in\pi z/a}$; Example §27.1 is the term $n = 1$, $a = \pi$.
 > - Used in Electromagnetism: the potential and the flux function as real and imaginary parts of the complex potential — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
 > [!example] Example §27.1: Steady Temperatures in a Semi-Infinite Strip

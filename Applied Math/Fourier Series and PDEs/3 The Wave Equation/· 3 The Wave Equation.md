@@ -14,12 +14,12 @@ tags: [chapter, fourier-series-and-pdes]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (2), [[Linear Algebra]] (1), [[Applied Linear Algebra]] (4), [[Ordinary Differential Equations]] (1), [[Calculus]] (1)
 
 ## Sections
-- [[§29 The Vibrating String]] — Powers 3.1
-- [[§30 Solution of the Vibrating String Problem]] — Powers 3.2
-- [[§31 d'Alembert's Solution]] — Powers 3.3
-- [[§32 One-Dimensional Wave Equation꞉ Generalities]] — Powers 3.4
-- [[§33★ Estimation of Eigenvalues]] — Powers 3.5 ★
-- [[§34★ Wave Equation in Unbounded Regions]] — Powers 3.6 ★
+- [[§37 The Vibrating String]] — Powers 3.1
+- [[§38 Solution of the Vibrating String Problem]] — Powers 3.2
+- [[§39 d'Alembert's Solution]] — Powers 3.3
+- [[§40 One-Dimensional Wave Equation꞉ Generalities]] — Powers 3.4
+- [[§41★ Estimation of Eigenvalues]] — Powers 3.5 ★
+- [[§42★ Wave Equation in Unbounded Regions]] — Powers 3.6 ★
 
 ## Central results
 - [[Series Solution of the Vibrating String]] (§30.2)
@@ -27,7 +27,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§31 d'Alembert's Solution#^thm-31-1|Theorem §31.1: The Wave Equation in Characteristic Coordinates]]: 7 later results
-- [[d'Alembert's Solution of the Wave Equation|Theorem §31.2: d'Alembert's General Solution]]: 6 later results
-- [[§30 Solution of the Vibrating String Problem#^prop-30-1|Proposition §30.1: Standing Waves Solve the Homogeneous Problem]]: 5 later results
-- [[Series Solution of the Vibrating String|Theorem §30.2: Series Solution of the Vibrating String Problem]]: 4 later results
+- [[§39 d'Alembert's Solution#^thm-39-1|Theorem §39.1: The Wave Equation in Characteristic Coordinates]]: 7 later results
+- [[d'Alembert's Solution of the Wave Equation|Theorem §39.2: d'Alembert's General Solution]]: 6 later results
+- [[§38 Solution of the Vibrating String Problem#^prop-38-1|Proposition §38.1: Standing Waves Solve the Homogeneous Problem]]: 5 later results
+- [[Series Solution of the Vibrating String|Theorem §38.2: Series Solution of the Vibrating String Problem]]: 4 later results

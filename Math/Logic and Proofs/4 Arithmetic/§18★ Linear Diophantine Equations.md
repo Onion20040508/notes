@@ -2,12 +2,12 @@
 type: section
 subject: "[[Logic and Proofs]]"
 chapter: 4
-section: 18
+section: "18★"
 eccles: "Ch. 18"
 aliases: ["Eccles 18"]
 tags: [logic-and-proofs, mat250, extension]
 ---
-← [[§17 Consequences of the Euclidean Algorithm]] · ↑ [[· 4 Arithmetic]] · [[§19 Congruence of Integers]] →
+← [[§17 Consequences of the Euclidean Algorithm]] · ↑ [[· 4 Arithmetic]] · [[§18a The Pair (7684, 4148)]] →
 
 *Eccles, Chapter 18 (with Problems IV, Q12).*
 ★ *Not in the MAT 250 course record (no homework or syllabus entry for this chapter); included from Eccles because it is the direct application of the Bézout coefficients computed in HW7 ([[§17 Consequences of the Euclidean Algorithm#^ex-17-2|Example §17.2]]).*
@@ -180,7 +180,7 @@ Once (18.1) has one solution, all its solutions come from solving the associated
 
 ^pf-18-3
 
-*Uses:* [[§2 Implications#^def-2-8|Def. §2.8]] (algebraic properties)
+*Uses:* [[§2 Implications#^def-2-9|Def. §2.9]] (algebraic properties)
 
 Putting the pieces together gives the complete answer to the problem. Eccles carries it out in examples; here it is in general form.
 
@@ -217,7 +217,7 @@ Putting the pieces together gives the complete answer to the problem. Eccles car
 
 > [!remark]- Connections
 > - The same structure as for linear equations: the solution set is a translate $(m_0, n_0) + H$ of the solution set $H$ of the homogeneous equation, cf. [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR Def. 3.97]] (translate), where solvable inhomogeneous systems have the [[§8 Null Spaces and Ranges#^ladr-3-11|null space]] as $H$. Here $H = \{(b'q, -a'q)\}$ is a [[§4 Subgroups#^def-4-1|subgroup]] of $\Z^2$ rather than a subspace.
-> - The case $c = 1$ with $b = n$: $am + nk = 1$ is solvable iff $\gcd(a, n) = 1$, which is [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (inverses modulo $n$). Linear congruences return in [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]], whose solvability condition is this theorem read modulo $n$ ([[§20 Linear Congruences#^prop-20-5|Proposition §20.5]]).
+> - The case $c = 1$ with $b = n$: $am + nk = 1$ is solvable iff $\gcd(a, n) = 1$, which is [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (inverses modulo $n$). Linear congruences return in [[§20 Linear Congruences#^thm-20-5|Theorem §20.5]], whose solvability condition is this theorem read modulo $n$ ([[§20 Linear Congruences#^prop-20-3|Proposition §20.3]]).
 
 > [!example] Example §18.3: All Solutions of 140m + 63n = 35
 > From [[§18★ Linear Diophantine Equations#^ex-18-1|Example §18.1]] the particular solution $(-20, 45)$, so by [[§18★ Linear Diophantine Equations#^prop-18-3|Proposition §18.3]] and [[§18★ Linear Diophantine Equations#^ex-18-2|Example §18.2]],

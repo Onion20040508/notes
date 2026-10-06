@@ -140,7 +140,7 @@ It follows that the terms of a convergent series are bounded: a sequence converg
 *Uses:* [[§61 Convergence of Series#^def-61-2|Def. §61.2]], [[§61 Convergence of Series#^thm-61-1|§61.1]], [[§14 Series#^thm-14-7|451 Thm. §14.7]], [[§14 Series#^prop-14-6|451 Prop. §14.6]]
 
 > [!remark]- Connections
-> - The real versions: [[§14 Series#^def-14-2|451 Def. §14.2]] (convergence of a series), [[§14 Series#^cor-14-2|451 Cor. §14.2]], [[§14 Series#^def-14-4|451 Def. §14.4]] and [[§14 Series#^prop-14-6|451 Prop. §14.6]]. In 451 the last is proved with the Cauchy criterion, [[§14 Series#^thm-14-1|451 Thm. §14.1]]; that proof works verbatim in $\mathbb{C}$, because $\mathbb{C}$ is complete and $\big|\sum_{n=N}^{m} z_n\big| \le \sum_{n=N}^{m}|z_n|$.
+> - The real versions: [[§14 Series#^def-14-3|451 Def. §14.3]] (convergence of a series), [[§14 Series#^cor-14-2|451 Cor. §14.2]], [[§14 Series#^def-14-5|451 Def. §14.5]] and [[§14 Series#^prop-14-6|451 Prop. §14.6]]. In 451 the last is proved with the Cauchy criterion, [[§14 Series#^thm-14-1|451 Thm. §14.1]]; that proof works verbatim in $\mathbb{C}$, because $\mathbb{C}$ is complete and $\big|\sum_{n=N}^{m} z_n\big| \le \sum_{n=N}^{m}|z_n|$.
 
 The algebra of convergent series is inherited the same way; B&C leaves it to the exercises, and it is used whenever two expansions are added, as in [[§64 Examples (Proof of Taylor's Theorem)|§64]] and [[§68 Examples (Proof of Laurent's Theorem)|§68]].
 
@@ -194,7 +194,7 @@ The algebra of convergent series is inherited the same way; B&C leaves it to the
 >
 > *B&C: Sec. 61 (text)*
 
-^def-61-new1
+^def-61-4
 
 For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the first $N$ terms, $S_N(z) = \sum_{n=0}^{N-1} a_n(z - z_0)^n$; this keeps $\rho_N(z) = S(z) - S_N(z)$ the tail starting with the term of degree $N$.
 
@@ -242,7 +242,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 ^ex-61-1
 
 > [!remark]- Connections
-> - The real geometric series and its uses in 451: [[Geometric series]]; the convergence statement is [[§14 Series#^ex-14-4|451 Ex. §14.4]], and [[§70 Series#^thm-70-1|Calc Thm. §70.1]] is the calculus version.
+> - The real geometric series and its uses in 451: [[Geometric series]]; the convergence statement is [[§14 Series#^ex-14-4|451 Ex. §14.4]], and [[§82 Series#^thm-82-1|Calc Thm. §82.1]] is the calculus version.
 
 > [!example] Example §61.2: Two Real Series from the Geometric Series
 > **Claim.** For $0 \le r < 1$ and all real $\theta$,
@@ -261,7 +261,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 >
 > **Check.** $r = 0.6$, $\theta = 1.1$: the cosine sum is $-0.107692$ and the sine sum $0.655553$, by direct summation and by the formulas.
 >
-> Doubling the first formula and adding $1$ gives $1 + 2\sum_{n \ge 1} r^n\cos n\theta = \dfrac{1 - r^2}{1 - 2r\cos\theta + r^2}$, the [[§134★ Poisson Integral Formula#^def-134-2|Poisson kernel]] of the unit disk ([[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], step (e) of the proof).
+> Doubling the first formula and adding $1$ gives $1 + 2\sum_{n \ge 1} r^n\cos n\theta = \dfrac{1 - r^2}{1 - 2r\cos\theta + r^2}$, the [[§134★ Poisson Integral Formula#^def-134-2|Poisson kernel]] of the unit disk ([[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]], step (e) of the proof).
 >
 > *B&C: Sec. 61, Exercise 4; Source: 342 HW 9 (optional exercises, p. 185)*
 

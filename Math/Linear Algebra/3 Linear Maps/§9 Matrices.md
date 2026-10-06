@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Matrices of linear maps: [[§9 Matrices#^ladr-3-31|Matrix of a linear map, M(T)]]. Vector space structure: [[§9 Matrices#^ladr-3-34|Matrix addition]], [[§9 Matrices#^ladr-3-36|Scalar multiplication of a matrix]], [[§9 Matrices#^ladr-3-40|Dim F^(m,n) = mn (LADR 3.40)]].
-> - Computational version: [[§11 Matrix Operations#^def-11-1|235 Def. §11.1]] (matrix notation).
+> - Computational version: [[§12 Matrix Operations#^def-12-1|235 Def. §12.1]] (matrix notation).
 
 > [!example] Example 3.30: $A_{j,k}$ equals entry in row $j$, column $k$ of $A$ (p. 69)
 > First index = row, second = column. For
@@ -47,7 +47,7 @@ tags: [linear-algebra]
 > - Compatible with the algebra: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]], [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps (LADR 3.43)]]. Acts on coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
 > - Depends on the bases: [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]]. Much of Chapters 5–8 is about choosing bases that make $\mathcal{M}(T)$ simple.
 > - For the differential of a smooth map in coordinate bases this matrix is the Jacobian: [[§28 The Differential in Coordinates#^thm-28-2|591 Thm. §28.2]].
-> - Computational version: [[§35 Eigenvectors and Linear Transformations#^def-35-1|235 Def. §35.1]] and [[§35 Eigenvectors and Linear Transformations#^thm-35-1|235 Thm. §35.1]] (column j is [T(b_j)]_C); for ℝⁿ → ℝᵐ with the standard bases, [[§9 The Matrix of a Linear Transformation#^def-9-1|235 Def. §9.1]].
+> - Computational version: [[§43 Eigenvectors and Linear Transformations#^def-43-1|235 Def. §43.1]] and [[§43 Eigenvectors and Linear Transformations#^thm-43-1|235 Thm. §43.1]] (column j is [T(b_j)]_C); for ℝⁿ → ℝᵐ with the standard bases, [[§10 The Matrix of a Linear Transformation#^def-10-1|235 Def. §10.1]].
 
 %% ex:3.31-fig %%
 > [!example] Example: Reading $\mathcal{M}(T)$
@@ -73,7 +73,7 @@ tags: [linear-algebra]
 ^ladr-3-33
 
 > [!remark]- Connections
-> - Computational version: [[§35 Eigenvectors and Linear Transformations#^ex-35-2|235 Ex. §35.2]] (differentiation on ℙ₂ with the basis 1, t, t²).
+> - Computational version: [[§43 Eigenvectors and Linear Transformations#^ex-43-2|235 Ex. §43.2]] (differentiation on ℙ₂ with the basis 1, t, t²).
 
 > [!definition] Definition 3.34: Matrix addition
 > The sum of two matrices of the same size is computed entrywise: $(A+C)_{j,k}=A_{j,k}+C_{j,k}$.
@@ -82,7 +82,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Matches addition of maps: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]].
-> - Computational version: [[§11 Matrix Operations#^def-11-2|235 Def. §11.2]].
+> - Computational version: [[§12 Matrix Operations#^def-12-4|235 Def. §12.4]].
 
 > [!theorem] Theorem 3.35: Matrix of the sum of linear maps
 > If $S,T\in\Lin(V,W)$ (same bases throughout), then $\mathcal{M}(S+T)=\mathcal{M}(S)+\mathcal{M}(T)$.
@@ -106,7 +106,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Matches scalar multiples of maps: [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]].
-> - Computational version: [[§11 Matrix Operations#^def-11-2|235 Def. §11.2]].
+> - Computational version: [[§12 Matrix Operations#^def-12-4|235 Def. §12.4]].
 
 > [!example] Example 3.37: Addition and scalar multiplication of matrices (p. 72)
 > $$
@@ -146,7 +146,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Combined with $\Lin(V,W)\cong\F^{m,n}$: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]].
 > - 591 uses this to identify square matrices with a Euclidean space and so give them a topology: [[§10 Topological Groups and Classical Matrix Groups#^def-10-2|591 Def. §10.2]].
-> - Computational version: [[§11 Matrix Operations#^thm-11-1|235 Thm. §11.1]] (the vector-space laws for matrices), and the standard basis of the m × n matrices in [[§25 Linearly Independent Sets; Bases#^ex-25-2|235 Ex. §25.2]](d).
+> - Computational version: [[§12 Matrix Operations#^thm-12-1|235 Thm. §12.1]] (the vector-space laws for matrices), and the standard basis of the m × n matrices in [[§31 Linearly Independent Sets; Bases#^ex-31-2|235 Ex. §31.2]](d).
 
 > [!definition] Definition 3.41: Matrix multiplication
 > If $A$ is $m$-by-$n$ and $B$ is $n$-by-$p$, then $AB$ is the $m$-by-$p$ matrix with
@@ -161,8 +161,8 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Other ways to read the product: [[§9 Matrices#^ladr-3-46|Entry of matrix product equals row times column]], [[§9 Matrices#^ladr-3-48|Column of matrix product equals matrix times column]], [[§9 Matrices#^ladr-3-50|Linear combination of columns]], [[§9 Matrices#^ladr-3-51|Matrix multiplication as linear combinations of columns]].
-> - Computational version: [[§11 Matrix Operations#^def-11-3|235 Def. §11.3]] (columns Ab₁, …, Ab_p), computed entrywise by [[§11 Matrix Operations#^prop-11-4|235 Prop. §11.4]].
-> - Computational version: the row–column rule, [[§28 Matrices#^def-28-2|331 Def. §28.2]], and the laws of matrix algebra, [[§28 Matrices#^prop-28-1|331 Prop. §28.1]] (not commutative: [[§28 Matrices#^ex-28-1|331 Ex. §28.1]]).
+> - Computational version: [[§12 Matrix Operations#^def-12-5|235 Def. §12.5]] (columns Ab₁, …, Ab_p), computed entrywise by [[§12 Matrix Operations#^prop-12-4|235 Prop. §12.4]].
+> - Computational version: the row–column rule, [[§34 Matrices#^def-34-3|331 Def. §34.3]], and the laws of matrix algebra, [[§34 Matrices#^prop-34-1|331 Prop. §34.1]] (not commutative: [[§34 Matrices#^ex-34-1|331 Ex. §34.1]]).
 
 > [!example] Example 3.42: Matrix multiplication (p. 73)
 > A $3$-by-$2$ times a $2$-by-$4$ matrix is $3$-by-$4$:
@@ -191,8 +191,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Restated with explicit bases in [[§10 Invertibility and Isomorphisms#^ladr-3-81|Matrix of product of linear maps (LADR 3.81)]]; used for change of basis [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]] and [[§10 Invertibility and Isomorphisms#^ladr-3-86|Matrix of inverse equals inverse of matrix]].
 > - Applied to differentials it is the chain rule in coordinates: [[§28 The Differential in Coordinates#^cor-28-3|591 Cor. §28.3]].
-> - In ℝⁿ: [[§11 Matrix Operations#^thm-11-2|235 Thm. §11.2]] (multiplication of matrices is composition).
-> - Applied to derivatives it is the matrix form of the chain rule, $J_{g\circ f}=J_g\,J_f$; the two-variable case in partial-derivative form: [[Multivariable Chain Rule|452 Thm. §10.2]].
+> - In ℝⁿ: [[§12 Matrix Operations#^thm-12-2|235 Thm. §12.2]] (multiplication of matrices is composition).
+> - Applied to derivatives it is the matrix form of the chain rule, $J_{g\circ f}=J_g\,J_f$; the two-variable case in partial-derivative form: [[Multivariable Chain Rule|452 Thm. §12.2]].
 
 > [!remark] Notation 3.44: $A_{j,\cdot}$, $A_{\cdot,k}$ (p. 74)
 > For an $m$-by-$n$ matrix $A$: $A_{j,\cdot}$ is the $1$-by-$n$ matrix formed by row $j$ of $A$ ($1\le j\le m$), and $A_{\cdot,k}$ is the $m$-by-$1$ matrix formed by column $k$ of $A$ ($1\le k\le n$).
@@ -220,7 +220,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Column version: [[§9 Matrices#^ladr-3-48|Column of matrix product equals matrix times column]].
-> - Computational version: [[§11 Matrix Operations#^prop-11-4|235 Prop. §11.4]] (row–column rule).
+> - Computational version: [[§12 Matrix Operations#^prop-12-4|235 Prop. §12.4]] (row–column rule).
 
 > [!theorem] Theorem 3.48: Column of matrix product equals matrix times column
 > If $A$ is $m$-by-$n$ and $B$ is $n$-by-$p$, then $(AB)_{\cdot,k}=A\,B_{\cdot,k}$: column $k$ of $AB$ is $A$ times column $k$ of $B$.
@@ -232,7 +232,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Combined with [[§9 Matrices#^ladr-3-50|Linear combination of columns]] gives [[§9 Matrices#^ladr-3-51|Matrix multiplication as linear combinations of columns]].
-> - Computational version: [[§11 Matrix Operations#^def-11-3|235 Def. §11.3]], where Lay takes this as the definition of AB.
+> - Computational version: [[§12 Matrix Operations#^def-12-5|235 Def. §12.5]], where Lay takes this as the definition of AB.
 
 > [!example] Example 3.49: Product of a 3-by-2 matrix and a 2-by-1 matrix (p. 75)
 > $$
@@ -258,7 +258,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Why $\range$ of a matrix map is the column space; used in [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]] and [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
-> - Computational version: [[§4 The Matrix Equation Ax = b#^def-4-1|235 Def. §4.1]], where Lay takes this as the definition of Ax.
+> - Computational version: [[§5 The Matrix Equation Ax = b#^def-5-1|235 Def. §5.1]], where Lay takes this as the definition of Ax.
 
 > [!theorem] Theorem 3.51: Matrix multiplication as linear combinations of columns
 > Let $C$ be $m$-by-$c$ and $R$ be $c$-by-$n$.
@@ -276,7 +276,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The tool behind [[§9 Matrices#^ladr-3-56|Column–row factorization]] and [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]].
-> - Computational version: (a) is [[§11 Matrix Operations#^prop-11-3|235 Prop. §11.3]]; (b) is [[§11 Matrix Operations#^prop-11-5|235 Prop. §11.5]], row_i(AB) = row_i(A)·B.
+> - Computational version: (a) is [[§12 Matrix Operations#^prop-12-3|235 Prop. §12.3]]; (b) is [[§12 Matrix Operations#^prop-12-5|235 Prop. §12.5]], row_i(AB) = row_i(A)·B.
 
 > [!definition] Definition 3.52: Column rank
 > For $A\in\F^{m,n}$: the *column rank* of $A$ is the dimension of the span of its columns in $\F^{m,1}$.
@@ -293,7 +293,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - They are equal: [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]], hence [[§9 Matrices#^ladr-3-58|Rank]]. Column rank $=\dim\range T$: [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
-> - Computational version: rank A = dim Col A, [[§28 Rank#^def-28-1|235 Def. §28.1]]; the row space, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-3|235 Def. §24.3]].
+> - Computational version: rank A = dim Col A, [[§34 Rank#^def-34-1|235 Def. §34.1]]; the row space, [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-3|235 Def. §30.3]].
 
 > [!example] Example 3.53: Column rank and row rank of a 2-by-4 matrix (p. 77)
 > $A=\begin{pmatrix}4&7&1&8\\3&5&2&9\end{pmatrix}$.
@@ -310,8 +310,8 @@ tags: [linear-algebra]
 ^ladr-3-54
 
 > [!remark]- Connections
-> - Swaps row rank and column rank (used in [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]). Complex analogue with conjugation: [[§22 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]; its map-level meaning is the dual map ([[§12 Duality#^ladr-3-118|Dual map, T′]]) or adjoint ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).
-> - Computational version: [[§11 Matrix Operations#^def-11-6|235 Def. §11.6]].
+> - Swaps row rank and column rank (used in [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]). Complex analogue with conjugation: [[§23 Self-Adjoint and Normal Operators#^ladr-7-7|Conjugate transpose, A∗]]; its map-level meaning is the dual map ([[§12 Duality#^ladr-3-118|Dual map, T′]]) or adjoint ([[§23 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).
+> - Computational version: [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^def-13-3|235 Def. §13.3]].
 
 > [!example] Example 3.55: Transpose of a matrix (p. 78)
 > $$
@@ -322,7 +322,7 @@ tags: [linear-algebra]
 ^ladr-3-55
 
 > [!remark]- Connections
-> - The rules, with proofs: [[§11 Matrix Operations#^thm-11-7|235 Thm. §11.7]].
+> - The rules, with proofs: [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|235 Thm. §13.2]].
 
 > [!theorem] Theorem 3.56: Column–row factorization
 > Suppose $A\in\F^{m,n}$ has column rank $c\ge1$. Then $A=CR$ for some $C\in\F^{m,c}$ and $R\in\F^{c,n}$.
@@ -335,7 +335,7 @@ tags: [linear-algebra]
 *Uses:* [[Every spanning list contains a basis|2.30]], [[§9 Matrices#^ladr-3-51|3.51]]
 
 > [!remark]- Connections
-> - Immediately gives [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. Refinements with orthonormal columns: [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]], and the SVD [[§26 Singular Value Decomposition#^ladr-7-80|Matrix version of SVD]].
+> - Immediately gives [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]]. Refinements with orthonormal columns: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-58|QR factorization]], and the SVD [[§27 Singular Value Decomposition#^ladr-7-80|Matrix version of SVD]].
 
 > [!theorem] Theorem 3.57: Column rank equals row rank
 > For every $A\in\F^{m,n}$, the column rank of $A$ equals the row rank of $A$.
@@ -352,7 +352,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Allows [[§9 Matrices#^ladr-3-58|Rank]]. Alternative proof via duality: [[§12 Duality#^ladr-3-133|Column rank equals row rank (LADR 3.133)]].
-> - Computational version: [[§28 Rank#^thm-28-3|235 Thm. §28.3]] (dim Row A = dim Col A, read off an echelon form).
+> - Computational version: [[§34 Rank#^thm-34-3|235 Thm. §34.3]] (dim Row A = dim Col A, read off an echelon form).
 
 > [!definition] Definition 3.58: Rank
 > The *rank* of $A\in\F^{m,n}$ is its column rank (equivalently, by [[§9 Matrices#^ladr-3-57|Column rank equals row rank (LADR 3.57)]], its row rank).
@@ -362,4 +362,4 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Rank–nullity for matrices: [[Fundamental theorem of linear maps]] with [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]] gives $n=\dim\nullsp A+\operatorname{rank}A$.
 > - The rank of a smooth map at a point is the rank of its Jacobian, equivalently of its differential: [[§7 The Regular Value Theorem#^def-7-1|591 Def. §7.1]], [[§28 The Differential in Coordinates#^def-28-1|591 Def. §28.1]].
-> - Computational version: [[§28 Rank#^def-28-1|235 Def. §28.1]] (also [[§19 Dimension and Rank#^def-19-3|235 Def. §19.3]]: the number of pivot columns).
+> - Computational version: [[§34 Rank#^def-34-1|235 Def. §34.1]] (also [[§22 Dimension and Rank#^def-22-3|235 Def. §22.3]]: the number of pivot columns).

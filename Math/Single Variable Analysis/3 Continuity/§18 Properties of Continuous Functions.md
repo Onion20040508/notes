@@ -67,8 +67,8 @@ Boundedness is the basic beginning; the existence of max and min is very importa
 *Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[§9 Limit Theorems for Sequences#^thm-9-1|§9.1]], [[Completeness Axiom|Def. §4.4]], [[Squeeze Theorem|§8.1]], [[§7 Limits of Sequences#^thm-7-1|§7.1]]
 
 > [!remark]- Connections
-> - Abstract form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and [a, b] is compact by [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel).
-> - Computational version: [[§25 Maximum and Minimum Values#^thm-25-1|Calc Thm. §25.1]] (with worked examples).
+> - Abstract form: a continuous image of a compact space is compact, [[§18 Compact Spaces#^thm-18-3|590 Thm. §18.3]], and [a, b] is compact by [[§18 Compact Spaces#^thm-18-12|590 Thm. §18.12]] (Heine–Borel).
+> - Computational version: [[§28 Maximum and Minimum Values#^thm-28-1|Calc Thm. §28.1]] (with worked examples).
 > - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous function on a closed bounded region of ℂ is bounded and its modulus attains a maximum).
 
 > [!remark] Remark: Toward Optimization
@@ -159,8 +159,8 @@ So a set on which the boundedness conclusion of the EVT holds for *all* continuo
 *The set $S = \{x \in [a,b] \mid f(x) < y\}$ (red, on the axis) can be a union of several pieces; its endpoints where $f = y$ are excluded (hollow), while $a \in S$ (filled). The proof does not look for the first crossing but for $x_0 = \sup S$: points of $S$ approach it from the left, giving $f(x_0) \leq y$, and every point to its right lies outside $S$, giving $f(x_0) \geq y$.*
 
 > [!remark]- Connections
-> - Abstract form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]], giving the IVT for any connected domain, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
-> - Computational version: [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (with worked examples).
+> - Abstract form: a continuous image of a connected space is connected, [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]], giving the IVT for any connected domain, [[§16 Connected Subspaces of ℝ#^thm-16-3|590 Thm. §16.3]].
+> - Computational version: [[§12 Continuity#^thm-12-10|Calc Thm. §12.10]] (with worked examples).
 
 > [!theorem] Corollary §18.4: Sign Change Gives a Root
 > If $f: [a,b] \to \mathbb{R}$ is continuous and $f(a)$, $f(b)$ have opposite signs, then there exists $x_0 \in [a,b]$ with $f(x_0) = 0$.
@@ -175,7 +175,7 @@ So a set on which the boundedness conclusion of the EVT holds for *all* continuo
 *Uses:* [[Intermediate Value Theorem|§18.3]]
 
 > [!remark]- Connections
-> - Worked examples: locating a root by a sign change, [[§10 Continuity#^ex-10-5|Calc Ex. §10.5]].
+> - Worked examples: locating a root by a sign change, [[§12 Continuity#^ex-12-5|Calc Ex. §12.5]].
 
 > [!theorem] Corollary §18.5: The Image Is a Closed Interval
 > For continuous $f: [a,b] \to \mathbb{R}$,
@@ -247,7 +247,7 @@ So a set on which the boundedness conclusion of the EVT holds for *all* continuo
 *The graph of $f: [0,1] \to [0,1]$ stays in the unit square: it starts on or above the diagonal and ends on or below it — so it must cross $y = x$. The same picture underlies the chord example below: two continuous curves that swap order must meet.*
 
 > [!remark]- Connections
-> - Since [0, 1] is the ball B¹, this is the case n = 0 of the Brouwer fixed point theorem, proved in 590 for the disc and for all balls: [[§26 Deformation Retracts and Homotopy Type#^thm-26-7|590 Thm. §26.7]], [[§26 Deformation Retracts and Homotopy Type#^thm-26-10|590 Thm. §26.10]].
+> - Since [0, 1] is the ball B¹, this is the case n = 0 of the Brouwer fixed point theorem, proved in 590 for the disc and for all balls: [[§34 Retractions and Fixed Points#^thm-34-7|590 Thm. §34.7]], [[§34 Retractions and Fixed Points#^thm-34-10|590 Thm. §34.10]].
 
 > [!example] Example §18.1: A Chord of Prescribed Length
 > Let $f: [0,2] \to \mathbb{R}$ be continuous with $f(0) = f(2)$. Prove there exist $x, y \in [0,2]$ with
@@ -410,6 +410,6 @@ In one special case, equality does hold.
 ^rem-18-8
 
 > [!remark]- Connections
-> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]].
-> - Computational version: [[§10 Continuity#^thm-10-5|Calc Thm. §10.5]].
-> - Computational version: the logarithm as inverse of the exponential, [[§5 Inverse Functions and Logarithms#^thm-5-4|Calc Thm. §5.4]]; its continuity, [[§10 Continuity#^thm-10-6|Calc Thm. §10.6]].
+> - Topological form: a continuous bijection from a compact space to a Hausdorff space is a homeomorphism, [[§18 Compact Spaces#^thm-18-7|590 Thm. §18.7]].
+> - Computational version: [[§12 Continuity#^thm-12-5|Calc Thm. §12.5]].
+> - Computational version: the logarithm as inverse of the exponential, [[§6 Logarithmic and Inverse Trigonometric Functions#^thm-6-1|Calc Thm. §6.1]]; its continuity, [[§12 Continuity#^thm-12-6|Calc Thm. §12.6]].

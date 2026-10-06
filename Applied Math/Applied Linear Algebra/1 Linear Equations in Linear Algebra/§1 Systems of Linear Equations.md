@@ -30,14 +30,14 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 ^def-1-1
 
-> [!definition] Definition §1.2: Linear System
+> [!definition] Definition §1.4: Linear System
 > A **system of linear equations** (or **linear system**) is a collection of one or more linear equations involving the same variables $x_1, \ldots, x_n$.
 >
 > *Lay: 1.1 (text)*
 
 ^def-1-2
 
-> [!definition] Definition §1.2: Solution; Solution Set
+> [!definition] Definition §1.5: Solution; Solution Set
 > A **solution** of the system is a list $(s_1, \ldots, s_n)$ of numbers that makes each equation a true statement when $s_1, \ldots, s_n$ are substituted for $x_1, \ldots, x_n$. The set of all solutions is the **solution set** of the system.
 >
 > For example, $(5, 6.5, 3)$ is a solution of
@@ -53,23 +53,23 @@ A linear system is solved by replacing it with a simpler system that has the sam
 >
 > *Lay: 1.1 (text)*
 
-^def-1-new1
+^def-1-3
 
-> [!definition] Definition §1.2: Equivalent Systems
+> [!definition] Definition §1.8: Equivalent Systems
 > Two linear systems are **equivalent** if they have the same solution set.
 >
 > *Lay: 1.1 (text)*
 
-^def-1-new2
+^def-1-4
 
-A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§2 Row Reduction and Echelon Forms#^cor-2-4|Corollary §2.4]], from Lay's Theorem 2, the Existence and Uniqueness Theorem ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]).
+A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§3 Solutions of Linear Systems#^cor-3-2|Corollary §3.2]], from Lay's Theorem 2, the Existence and Uniqueness Theorem ([[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1]]).
 
-> [!definition] Definition §1.3: Consistent and Inconsistent Systems
+> [!definition] Definition §1.9: Consistent and Inconsistent Systems
 > A system of linear equations is **consistent** if it has either one solution or infinitely many solutions (that is, at least one solution); it is **inconsistent** if it has no solution.
 >
 > *Lay: 1.1 (text)*
 
-^def-1-3
+^def-1-5
 
 > [!remark] Remark: Why Not Exactly Two Solutions
 > A linear system cannot have exactly two solutions. If $\mathbf{u} = (u_1, \ldots, u_n)$ and $\mathbf{v} = (v_1, \ldots, v_n)$ are both solutions, then so is every point
@@ -84,7 +84,7 @@ A system of two equations in two unknowns asks for the intersection of two lines
 > \sum_i a_i\big((1 - t)u_i + tv_i\big) = (1 - t)\sum_i a_iu_i + t\sum_i a_iv_i = (1 - t)b + tb = b .
 > $$
 >
-> If $\mathbf{u} \ne \mathbf{v}$, different values of $t$ give different points, so two solutions force infinitely many. In the picture, the solution set of each equation in three unknowns is a plane, and two planes that share two points share the whole line through them. The lecture states the finer count "$\infty^a$": a line of solutions is "$\infty^1$", a plane "$\infty^2$", and for $m$ equations in $\ell$ unknowns one expects $\infty^{\ell - m}$ solutions. What is true is that a system has either no solution or $\infty^{k}$ solutions with $k \ge \ell - m$ (and $k \ge 0$, where $\infty^0 = 1$ means a unique solution): the exponent is the number of free variables ([[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]]), and since at most $m$ of the $\ell$ variables have a pivot, at least $\ell - m$ of them are free.
+> If $\mathbf{u} \ne \mathbf{v}$, different values of $t$ give different points, so two solutions force infinitely many. In the picture, the solution set of each equation in three unknowns is a plane, and two planes that share two points share the whole line through them. The lecture states the finer count "$\infty^a$": a line of solutions is "$\infty^1$", a plane "$\infty^2$", and for $m$ equations in $\ell$ unknowns one expects $\infty^{\ell - m}$ solutions. What is true is that a system has either no solution or $\infty^{k}$ solutions with $k \ge \ell - m$ (and $k \ge 0$, where $\infty^0 = 1$ means a unique solution): the exponent is the number of free variables ([[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1]]), and since at most $m$ of the $\ell$ variables have a pivot, at least $\ell - m$ of them are free.
 >
 > *Source: 235 lecture L02*
 
@@ -92,17 +92,17 @@ A system of two equations in two unknowns asks for the intersection of two lines
 
 ## Matrix Notation
 
-> [!definition] Definition §1.4: Matrix
+> [!definition] Definition §1.10: Matrix
 > A **matrix** is a rectangular array of numbers.
 >
 > *Lay: 1.1 (text)*
 
-^def-1-4
+^def-1-6
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§9 Matrices#^ladr-3-29|LADR 3.29]] (an $m$-by-$n$ matrix with entries $A_{j,k}$). Axler meets linear systems only as one application of linear maps, writing the system as $T(x) = c$ for a linear $T: \mathbb{F}^n \to \mathbb{F}^m$ ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]], [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]); Lay starts from the systems and reaches linear maps in [[§8 Introduction to Linear Transformations|§8]].
+> - Rigorous treatment: [[§9 Matrices#^ladr-3-29|LADR 3.29]] (an $m$-by-$n$ matrix with entries $A_{j,k}$). Axler meets linear systems only as one application of linear maps, writing the system as $T(x) = c$ for a linear $T: \mathbb{F}^n \to \mathbb{F}^m$ ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]], [[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]); Lay starts from the systems and reaches linear maps in [[§9 Introduction to Linear Transformations|§9]].
 
-> [!definition] Definition §1.4: Coefficient Matrix and Augmented Matrix
+> [!definition] Definition §1.7: Coefficient Matrix and Augmented Matrix
 > Given a linear system with the coefficients of each variable aligned in columns, the matrix of the coefficients is the **coefficient matrix** (or matrix of coefficients) of the system, and the coefficient matrix with an added column containing the constants from the right sides of the equations is the **augmented matrix** of the system. For the system
 >
 > $$
@@ -126,20 +126,20 @@ A system of two equations in two unknowns asks for the intersection of two lines
 >
 > *Lay: 1.1 (text)*
 
-^def-1-new3
+^def-1-7
 
-> [!definition] Definition §1.4: Size of a Matrix
+> [!definition] Definition §1.8: Size of a Matrix
 > The **size** of a matrix tells how many rows and columns it has: an **$m \times n$ matrix** ("$m$ by $n$") has $m$ rows and $n$ columns, rows always first. The augmented matrix (4) is $3 \times 4$.
 >
 > *Lay: 1.1 (text)*
 
-^def-1-new4
+^def-1-8
 
 ## Solving a Linear System
 
 The strategy is to replace a system by an equivalent system that is easier to solve. Use the $x_1$ term in the first equation to eliminate $x_1$ from the other equations, then the $x_2$ term in the second equation to eliminate $x_2$ from the others, and so on. Three operations on equations are used, and on the augmented matrix they act on rows.
 
-> [!definition] Definition §1.5: Elementary Row Operations
+> [!definition] Definition §1.9: Elementary Row Operations
 > The **elementary row operations** on a matrix are:
 > 1. **(Replacement)** Replace one row by the sum of itself and a multiple of another row ("add to one row a multiple of another row").
 > 2. **(Interchange)** Interchange two rows.
@@ -149,14 +149,14 @@ The strategy is to replace a system by an equivalent system that is easier to so
 >
 > *Lay: 1.1, Elementary Row Operations*
 
-^def-1-5
+^def-1-9
 
-> [!definition] Definition §1.6: Row Equivalent
+> [!definition] Definition §1.10: Row Equivalent
 > Two matrices are **row equivalent** if there is a sequence of elementary row operations that transforms one matrix into the other. We write $A \sim B$.
 >
 > *Lay: 1.1 (text)*
 
-^def-1-6
+^def-1-10
 
 > [!theorem] Proposition §1.1: Row Operations Are Reversible
 > Each elementary row operation can be undone by an elementary row operation of the same type. Consequently, if a sequence of row operations transforms $A$ into $B$, then a sequence of row operations transforms $B$ back into $A$: row equivalence is symmetric.
@@ -174,7 +174,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 
 ^pf-1-1
 
-*Uses:* [[§1 Systems of Linear Equations#^def-1-5|Def. §1.5]], [[§1 Systems of Linear Equations#^def-1-6|Def. §1.6]]
+*Uses:* [[§1 Systems of Linear Equations#^def-1-9|Def. §1.9]], [[§1 Systems of Linear Equations#^def-1-10|Def. §1.10]]
 
 > [!theorem] Theorem §1.2: Row-Equivalent Systems Have the Same Solution Set
 > If the augmented matrices of two linear systems are row equivalent, then the two systems have the same solution set.
@@ -193,7 +193,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 
 ^pf-1-2
 
-*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^def-1-new1|Def. §1.2]], [[§1 Systems of Linear Equations#^def-1-5|Def. §1.5]]
+*Uses:* [[§1 Systems of Linear Equations#^prop-1-1|§1.1]], [[§1 Systems of Linear Equations#^def-1-3|Def. §1.3]], [[§1 Systems of Linear Equations#^def-1-9|Def. §1.9]]
 
 > [!example] Example §1.1: Solving a System by Elimination
 > **(a)** Solve system (3).
@@ -274,7 +274,7 @@ The strategy is to replace a system by an equivalent system that is easier to so
 > 1. Is the system consistent; that is, does at least one solution exist?
 > 2. If a solution exists, is it the only one; that is, is the solution unique?
 >
-> These two questions appear throughout the subject in many guises. Row operations on the augmented matrix answer both: bring the matrix to a triangular form, and read off whether a contradiction $0 = b$ ($b \ne 0$) appears and whether every variable is determined. [[§2 Row Reduction and Echelon Forms#^thm-2-3|Theorem §2.3]] makes this precise.
+> These two questions appear throughout the subject in many guises. Row operations on the augmented matrix answer both: bring the matrix to a triangular form, and read off whether a contradiction $0 = b$ ($b \ne 0$) appears and whether every variable is determined. [[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1]] makes this precise.
 
 ^rem-1-2
 

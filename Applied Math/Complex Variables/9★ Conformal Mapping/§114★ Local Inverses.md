@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 9
-section: 114
+section: "114★"
 bc: "114"
 aliases: ["B&C 114"]
 tags: [complex-variables, math342, extension]
@@ -74,7 +74,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 >
 > and $J \ne 0$ at $(x_0, y_0)$ because $f'(z_0) \ne 0$.
 >
-> **The real inverse.** Continuous first partials and $J \ne 0$ at $(x_0, y_0)$ are the hypotheses of the inverse function theorem ([[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]]). With $u_0 = u(x_0, y_0)$, $v_0 = v(x_0, y_0)$ (3), it gives a continuous transformation
+> **The real inverse.** Continuous first partials and $J \ne 0$ at $(x_0, y_0)$ are the hypotheses of the inverse function theorem ([[§16 The Inverse Function Theorem#^thm-16-2|452 Thm. §16.2]]). With $u_0 = u(x_0, y_0)$, $v_0 = v(x_0, y_0)$ (3), it gives a continuous transformation
 >
 > $$
 > x = x(u, v), \qquad y = y(u, v), \qquad (4)
@@ -108,10 +108,10 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 
 ^pf-114-1
 
-*Uses:* [[§114★ Local Inverses#^def-114-1|Def. §114.1]], [[§114★ Local Inverses#^def-114-2|Def. §114.2]], [[§112★ Preservation of Angles and Scale Factors#^prop-112-2|§112.2]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule), [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]], [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]] (inverse function theorem)
+*Uses:* [[§114★ Local Inverses#^def-114-1|Def. §114.1]], [[§114★ Local Inverses#^def-114-2|Def. §114.2]], [[§112★ Preservation of Angles and Scale Factors#^prop-112-2|§112.2]], [[§57 Some Consequences of the Extension#^cor-57-2|§57.2]], [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§23 Sufficient Conditions for Differentiability#^thm-23-1|§23.1]], [[§20 Rules for Differentiation#^thm-20-4|§20.4]] (chain rule), [[§28★ Uniquely Determined Analytic Functions#^thm-28-2|§28.2]], [[§16 The Inverse Function Theorem#^thm-16-2|452 Thm. §16.2]] (inverse function theorem)
 
 > [!remark]- Connections
-> - The real inverse function theorem in the plane, with the formula $J^{-1}$ for the Jacobian matrix of the inverse used in (5): [[§13 The Inverse Function Theorem#^thm-13-2|452 Thm. §13.2]], and the Jacobian, [[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]. The complex theorem adds only that for an analytic $f$ the Jacobian is $|f'|^2$ and that the inverse again satisfies the Cauchy–Riemann equations.
+> - The real inverse function theorem in the plane, with the formula $J^{-1}$ for the Jacobian matrix of the inverse used in (5): [[§16 The Inverse Function Theorem#^thm-16-2|452 Thm. §16.2]], and the Jacobian, [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]. The complex theorem adds only that for an analytic $f$ the Jacobian is $|f'|^2$ and that the inverse again satisfies the Cauchy–Riemann equations.
 > - The one-variable analogue, where the hypothesis is $f'(x_0) \ne 0$: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]].
 
 ## Examples

@@ -22,7 +22,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Special case of [[§9 Matrices#^ladr-3-31|3.31]] with the same basis on both sides; change of basis is [[§10 Invertibility and Isomorphisms#^ladr-3-84|3.84]].
-> - Computational version: [[§35 Eigenvectors and Linear Transformations#^def-35-1|235 Def. §35.1]] and [[§35 Eigenvectors and Linear Transformations#^thm-35-1|235 Thm. §35.1]] (the matrix of a transformation relative to bases, computed column by column, with worked examples).
+> - Computational version: [[§43 Eigenvectors and Linear Transformations#^def-43-1|235 Def. §43.1]] and [[§43 Eigenvectors and Linear Transformations#^thm-43-1|235 Thm. §43.1]] (the matrix of a transformation relative to bases, computed column by column, with worked examples).
 
 > [!example] Example 5.36: Matrix of an operator with respect to standard basis (p. 154)
 > $T(x,y,z)=(2x+y,\ 5y+3z,\ 8z)$ on $\F^3$. The columns of the matrix are $T(e_1)=(2,0,0)$, $T(e_2)=(1,5,0)$, $T(e_3)=(0,3,8)$:
@@ -39,7 +39,7 @@ tags: [linear-algebra]
 ^ladr-5-37
 
 > [!remark]- Connections
-> - For upper-triangular matrices the diagonal is exactly the list of eigenvalues: [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]]. Its sum is the trace ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|Trace of a matrix]]).
+> - For upper-triangular matrices the diagonal is exactly the list of eigenvalues: [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]]. Its sum is the trace ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|Trace of a matrix]]).
 
 > [!definition] Definition 5.38: Upper-triangular matrix
 > A square matrix is *upper triangular* if all entries below the diagonal are $0$:
@@ -93,7 +93,7 @@ tags: [linear-algebra]
 *Uses:* [[§14 Invariant Subspaces#^ladr-5-17|5.17]]
 
 > [!remark] Remark: Cayley–Hamilton preview
-> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the [[§34 Determinants#^ladr-9-63|characteristic polynomial]]; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
+> The polynomial $(z-\lambda_1)\cdots(z-\lambda_n)$ is the [[§37 Determinants#^ladr-9-63|characteristic polynomial]]; over $\C$ this is already Cayley–Hamilton ([[Cayley–Hamilton theorem|8.29]]).
 
 > [!remark]- Connections
 > - Gives the bound on the minimal polynomial used in [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]], [[§16 Upper-Triangular Matrices#^ladr-5-44|5.44]], and in [[§17 Diagonalizable Operators#^ladr-5-61|5.61]].
@@ -115,7 +115,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Eigenvalues are hard to compute in general ([[§15 The Minimal Polynomial#^ladr-5-28|5.28]]); upper-triangular form makes them visible.
-> - Computational version: [[§32 Eigenvectors and Eigenvalues#^thm-32-1|235 Thm. §32.1]] (the eigenvalues of a triangular matrix are its diagonal entries).
+> - Computational version: [[§40 Eigenvectors and Eigenvalues#^thm-40-1|235 Thm. §40.1]] (the eigenvalues of a triangular matrix are its diagonal entries).
 
 > [!example] Example 5.42: Eigenvalues via an upper-triangular matrix (p. 158)
 > For $T$ of [[§16 Upper-Triangular Matrices#^ladr-5-36|5.36]], the standard matrix is upper triangular with diagonal $2,5,8$, so by [[§16 Upper-Triangular Matrices#^ladr-5-41|5.41]] the eigenvalues are exactly $2$, $5$, $8$, with no computation.

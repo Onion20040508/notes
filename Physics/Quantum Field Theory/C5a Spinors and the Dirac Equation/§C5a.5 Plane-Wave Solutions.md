@@ -295,7 +295,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 > \bigl(e^{-\eta\sigma^3/2}\bigr)^2 = e^{\eta}P_- + e^{-\eta}P_+ = \frac{e^\eta + e^{-\eta}}2\,\mathbb 1 - \frac{e^\eta - e^{-\eta}}2\,\sigma^3 = \cosh\eta\,\mathbb 1 - \sinh\eta\,\sigma^3 .
 > $$
 >
-> **Step 6** (which square root). $e^{-\eta\sigma^3/2} = aP_- + bP_+$ is Hermitian with eigenvalues $a, b > 0$, i.e. positive definite. A positive operator has exactly one positive square root ([[§24 Positive Operators#^ladr-7-39|LADR 7.39]]), so $e^{-\eta\sigma^3/2} = (\cosh\eta - \sinh\eta\,\sigma^3)^{1/2}$ with the positive root. The lower block: $\sigma^3 \to -\sigma^3$ throughout.
+> **Step 6** (which square root). $e^{-\eta\sigma^3/2} = aP_- + bP_+$ is Hermitian with eigenvalues $a, b > 0$, i.e. positive definite. A positive operator has exactly one positive square root ([[§25 Positive Operators#^ladr-7-39|LADR 7.39]]), so $e^{-\eta\sigma^3/2} = (\cosh\eta - \sinh\eta\,\sigma^3)^{1/2}$ with the positive root. The lower block: $\sigma^3 \to -\sigma^3$ throughout.
 >
 > **What the derivation shows**
 > - The square root acts on the numbers $e^{\pm\eta}$ and does nothing to the projectors; it trades the half-rapidity $\eta/2$ of the spinor for the full rapidity $\eta$ of the vector, where $E$ and $\mathbf p$ live → [[§C5a.5 Plane-Wave Solutions#^rem-c5a-5-4|Remark: Why a square root restores the full rapidity]].
@@ -304,7 +304,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 
 ^der-c5a-5-5
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§24 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-4|Def. §C5a.2.4]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!definition] Definition §C5a.5.4: The Square Roots √(p·σ) and √(p·σ̄)
 > For $p^2 = m^2 \ge 0$, $p^0 > 0$, the matrices $p\cdot\sigma$ and $p\cdot\bar\sigma$ ([[§C5a.5 Plane-Wave Solutions#^def-c5a-5-2|Def. §C5a.5.2]]) are positive semidefinite (positive definite for $m > 0$). $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$ denote their unique positive-semidefinite square roots: diagonalize, take the positive roots of the eigenvalues, transform back,
@@ -319,7 +319,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 
 ^def-c5a-5-4
 
-Existence and uniqueness of the positive square root: [[§24 Positive Operators#^ladr-7-39|LADR 7.39]]. The spectral form: $\mathbf p\cdot\boldsymbol\sigma = |\mathbf p|(\Pi_+ - \Pi_-)$ and $\mathbb 1 = \Pi_+ + \Pi_-$, so $p\cdot\sigma = (E_{\mathbf p} - |\mathbf p|)\Pi_+ + (E_{\mathbf p} + |\mathbf p|)\Pi_-$, and the square root of a combination of orthogonal projectors with nonnegative coefficients is the same combination with the square roots of the coefficients (Step 5 of [[§C5a.5 Plane-Wave Solutions#^der-c5a-5-5|Derivation §C5a.5.5]]).
+Existence and uniqueness of the positive square root: [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]. The spectral form: $\mathbf p\cdot\boldsymbol\sigma = |\mathbf p|(\Pi_+ - \Pi_-)$ and $\mathbb 1 = \Pi_+ + \Pi_-$, so $p\cdot\sigma = (E_{\mathbf p} - |\mathbf p|)\Pi_+ + (E_{\mathbf p} + |\mathbf p|)\Pi_-$, and the square root of a combination of orthogonal projectors with nonnegative coefficients is the same combination with the square roots of the coefficients (Step 5 of [[§C5a.5 Plane-Wave Solutions#^der-c5a-5-5|Derivation §C5a.5.5]]).
 
 > [!theorem] Theorem §C5a.5.6: Explicit Square Roots
 > For $m > 0$,
@@ -341,7 +341,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 >
 > **Step 3** (an ansatz and its square). Try $B = (A + m)/c$ with a number $c > 0$. Expanding all terms, $B^2 = (A^2 + 2mA + m^2)/c^2$; inserting Step 2, $B^2 = (2EA - m^2 + 2mA + m^2)/c^2 = 2(E + m)A/c^2$, the $m^2$ terms cancelling. So $B^2 = A$ iff $c^2 = 2(E + m)$; take $c = \sqrt{2(E + m)} > 0$.
 >
-> **Step 4** (positivity, hence uniqueness). $B$ is Hermitian with eigenvalues $(E \mp |\mathbf p| + m)/c$, both positive (since $E \ge |\mathbf p|$ and $m > 0$). By [[§24 Positive Operators#^ladr-7-39|LADR 7.39]] it is *the* positive square root of [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]]. For $p\cdot\bar\sigma$ replace $\mathbf p \to -\mathbf p$ in Steps 1–4 ($\operatorname{tr}$ and $\det$ are unchanged).
+> **Step 4** (positivity, hence uniqueness). $B$ is Hermitian with eigenvalues $(E \mp |\mathbf p| + m)/c$, both positive (since $E \ge |\mathbf p|$ and $m > 0$). By [[§25 Positive Operators#^ladr-7-39|LADR 7.39]] it is *the* positive square root of [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]]. For $p\cdot\bar\sigma$ replace $\mathbf p \to -\mathbf p$ in Steps 1–4 ($\operatorname{tr}$ and $\det$ are unchanged).
 >
 > **Step 5** (smoothness and growth). $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ is a smooth function of $\mathbf p$ for $m > 0$ (the argument of the root is $\ge m^2 > 0$), and $E_{\mathbf p} + m \ge 2m > 0$, so $1/\sqrt{2(E + m)}$ is smooth. The entries of $B$ are $\le (2E + m)/\sqrt{2(E + m)} \le \sqrt{2(E + m)}$, i.e. $O(\sqrt{E_{\mathbf p}})$, and each derivative of $E_{\mathbf p}$ is bounded, so all derivatives are polynomially bounded.
 >
@@ -354,7 +354,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 
 ^der-c5a-5-6
 
-*Uses:* [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]], [[§24 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!theorem] Theorem §C5a.5.7: The Square-Root Identities
 > For $p^2 = m^2 \ge 0$, $p^0 > 0$:
@@ -381,7 +381,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 >
 > **Step 3** (commutation). $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$ are both combinations of the same projectors $\Pi_\pm$ ([[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]]), which commute with each other; so the two roots commute.
 >
-> **Step 4** (part 3). $X \equiv \sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma}$ is then a product of two commuting positive-semidefinite matrices: Hermitian, with eigenvalues the products of the eigenvalues on the common eigenvectors, $\sqrt{E - |\mathbf p|}\sqrt{E + |\mathbf p|} = \sqrt{E^2 - \mathbf p^2} = m$ on both $\Pi_+$ and $\Pi_-$. Hence $X = m\,\Pi_+ + m\,\Pi_- = m\,\mathbb 1$. (Equivalently: $X$ is positive semidefinite and $X^2 = (p\cdot\sigma)(p\cdot\bar\sigma) = m^2$ by Steps 2–3, and the unique positive root of $m^2\mathbb 1$ is $m\,\mathbb 1$, [[§24 Positive Operators#^ladr-7-39|LADR 7.39]].) For $m = 0$ the same computation gives $0$.
+> **Step 4** (part 3). $X \equiv \sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma}$ is then a product of two commuting positive-semidefinite matrices: Hermitian, with eigenvalues the products of the eigenvalues on the common eigenvectors, $\sqrt{E - |\mathbf p|}\sqrt{E + |\mathbf p|} = \sqrt{E^2 - \mathbf p^2} = m$ on both $\Pi_+$ and $\Pi_-$. Hence $X = m\,\Pi_+ + m\,\Pi_- = m\,\mathbb 1$. (Equivalently: $X$ is positive semidefinite and $X^2 = (p\cdot\sigma)(p\cdot\bar\sigma) = m^2$ by Steps 2–3, and the unique positive root of $m^2\mathbb 1$ is $m\,\mathbb 1$, [[§25 Positive Operators#^ladr-7-39|LADR 7.39]].) For $m = 0$ the same computation gives $0$.
 >
 > **What the derivation shows**
 > - Part 3 is the spinor form of $E^2 - \mathbf p^2 = m^2$: the two roots are "inverse up to $m$", $\sqrt{p\cdot\bar\sigma} = m\,(\sqrt{p\cdot\sigma})^{-1}$ for $m > 0$.
@@ -390,7 +390,7 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 
 ^der-c5a-5-7
 
-*Uses:* [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§24 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-2|Def. §C5a.5.2]], [[§C5a.5 Plane-Wave Solutions#^def-c5a-5-4|Def. §C5a.5.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!derivation]- Derivation (second route: from the explicit roots)
 > For $m > 0$, by [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-6|Theorem §C5a.5.6]] and $c^2 = 2(E + m)$,
@@ -637,4 +637,4 @@ Existence and uniqueness of the positive square root: [[§24 Positive Operators#
 > - The rest-frame projector structure, $\frac12(\mathbb 1 \pm \gamma^0)$ on $u_0$ and $v_0$, is the $\mathbf p = 0$ case of the energy projectors $\frac{\pm\slashed{p} + m}{2m}$ ([[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-10|Theorem §C5a.6.10]]), the numerator of the Dirac propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], draft).
 > - The spectral form of $\sqrt{p\cdot\sigma}$ uses the spin projectors along $\hat{\mathbf p}$, $\Pi_\pm = \frac12(\mathbb 1 \pm \hat{\mathbf p}\cdot\boldsymbol\sigma)$, whose eigenvectors are the spin-along-an-axis spinors of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-5|QM Theorem §B6.1.5]]: choosing $\xi$ among them is the helicity basis of [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-12|Theorem §C5a.6.12]].
 > - The Dirac Hamiltonian $H_{\text{s.p.}}(\mathbf k) = \boldsymbol\alpha\cdot\mathbf k + \beta m$ of the second route of Theorem §C5a.5.2 is the Quantum Mechanics Hamiltonian ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]); its eigenvalue $-E$ is the "negative energy" that field theory reads as $v(-\mathbf p)$.
-> - Math: positive square roots and their uniqueness ([[§24 Positive Operators#^ladr-7-39|LADR 7.39]]); a matrix annihilated by a polynomial with distinct roots is diagonalizable (Step 3 of Derivation §C5a.5.2 does this by hand for $x^2 - m^2$); Cayley–Hamilton for $2\times2$ matrices (Theorem §C5a.5.6).
+> - Math: positive square roots and their uniqueness ([[§25 Positive Operators#^ladr-7-39|LADR 7.39]]); a matrix annihilated by a polynomial with distinct roots is diagonalizable (Step 3 of Derivation §C5a.5.2 does this by hand for $x^2 - m^2$); Cayley–Hamilton for $2\times2$ matrices (Theorem §C5a.5.6).

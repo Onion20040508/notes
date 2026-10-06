@@ -70,7 +70,7 @@ tags: [measure-theory, math551]
 *Cantor's diagonal argument on the first five sequences of a proposed list. The diagonal digits $a_n^{(n)}$ (red boxes) are flipped to build $x = (b_n)$ (blue): $x$ differs from $(x)_1$ in position $1$, from $(x)_2$ in position $2$, and so on, so $x$ is missing from the list no matter how the list was chosen.*
 
 > [!remark]- Connections
-> - Topology: the same set $\{0,1\}^\omega$ is an uncountable discrete subspace of $\mathbb{R}^\omega$ with the uniform metric, which is therefore not second-countable ([[§18 Countability Axioms#^ex-18-6|590 Ex. §18.6]]).
+> - Topology: the same set $\{0,1\}^\omega$ is an uncountable discrete subspace of $\mathbb{R}^\omega$ with the uniform metric, which is therefore not second-countable ([[§22 Countability Axioms#^ex-22-6|590 Ex. §22.6]]).
 
 > [!remark] Note
 > If a set can only be written as a finite sequence, then it is countable.
@@ -117,8 +117,8 @@ tags: [measure-theory, math551]
 
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[§2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].
-> - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[§11b The Vitali Set and the Cantor Set#^prop-11-21|Proposition §11.21]].
-> - Elementary version: ℝ is uncountable, [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]], by Cantor's diagonal argument on decimal expansions.
+> - Expansions in a base (ternary digits mapped to binary ones) show that the Cantor set is uncountable: [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Proposition §14.7]].
+> - Elementary version: ℝ is uncountable, [[§14a Uncountable Sets#^thm-14a-2|250 Thm. §14a.2]], by Cantor's diagonal argument on decimal expansions.
 
 ## Power Sets
 
@@ -132,7 +132,7 @@ tags: [measure-theory, math551]
 ^def-4-1
 
 > [!remark]- Connections
-> - Same definition: [[§6 The Language of Set Theory#^def-6-9|250 Def. §6.9]].
+> - Same definition: [[§6a Operations on Sets#^def-6a-5|250 Def. §6a.5]].
 
 > [!theorem] Theorem §4.1: Cantor's Theorem
 > For any set $X$, we have $X \not\sim \mathcal{P}(X)$. That is, there is no bijection from $X$ to its power set.
@@ -157,4 +157,4 @@ tags: [measure-theory, math551]
 *Uses:* [[§4 Uncountability#^def-4-1|Def. §4.1]], [[§1 Countability and Set Theory#^def-1-4|Def. §1.4]], [[§1 Countability and Set Theory#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
-> - Elementary version: [[§14 Counting Infinite Sets#^thm-14-13|250 Thm. §14.13]] (stated as an inequality of cardinalities, with the same diagonal set).
+> - Elementary version: [[§14a Uncountable Sets#^thm-14a-3|250 Thm. §14a.3]] (stated as an inequality of cardinalities, with the same diagonal set).

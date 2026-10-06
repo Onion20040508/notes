@@ -76,7 +76,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-27-1
 
-*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]], [[§25 Germs#^def-25-1|Def. §25.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§6 Differentiability#^thm-6-4|452 §6.4]]
+*Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^def-27-2|Def. §27.2]], [[§25 Germs#^def-25-1|Def. §25.1]], [[§26 Derivations and the Abstract Tangent Space#^def-26-1|Def. §26.1]], [[§8 Algebra of Differentiable Functions#^thm-8-2|452 §8.2]]
 
 The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — “a theorem from calculus” that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
@@ -104,7 +104,7 @@ The proof of the Basis Theorem below needs a form of Taylor expansion whose rema
 
 ^pf-27-2
 
-*Uses:* [[Fundamental Theorem of Calculus|451 §34.1]], [[Multivariable Chain Rule|452 §10.2]]
+*Uses:* [[Fundamental Theorem of Calculus|451 §34.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 **Transcription note.** In Lecture 9 the path in the integral was first written with the wrong endpoints; a student corrected it to the convex combination $t(r - a) + a$, which runs from $a$ at $t = 0$ to $r$ at $t = 1$, as above.
 
@@ -141,7 +141,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 *Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|§27.2]]
 
 > [!remark]- Connections
-> - Taylor's theorem with an estimated remainder: [[Multivariable Taylor's Theorem|452 §9.2 (Multivariable Taylor's Theorem)]]; in one variable, [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]].
+> - Taylor's theorem with an estimated remainder: [[Multivariable Taylor's Theorem|452 §11.2 (Multivariable Taylor's Theorem)]]; in one variable, [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]].
 
 **On the factor $\tfrac12$.** The board states the lemma with $\tfrac12 \sum_{i,j}$ in front of the quadratic term; Uribe added it “just for consistency,” saying it “doesn't matter.” For the *existence* statement that is right — replacing $f_{ij}$ by $2f_{ij}$ converts one form into the other. But the two forms are not interchangeable as written: the iterated proof above produces the version *without* the $\tfrac12$, and with $f_{ij}(a) = \tfrac12 \partial_{ij} f(a)$. The board's normalization is the one in which $f_{ij}(a) = \partial_{ij} f(a)$, matching the Hessian term $\tfrac12 \sum \partial_{ij}f(a)(r^i - a^i)(r^j - a^j)$ of the ordinary Taylor polynomial. A numerical check on a test function confirms the unscaled identity to machine precision and shows the scaled one, with the same $f_{ij}$, to be off. Nothing below depends on the normalization, since only the vanishing of the quadratic term under a derivation is used.
 

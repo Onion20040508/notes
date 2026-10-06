@@ -72,7 +72,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 **Not proved in this course.** The theorem follows from Brouwer's *invariance of domain*; Lee proves it in Chapter 17 (Theorem 17.26) using de Rham cohomology. Note that the statement is purely about point-set topology—no differentiability is assumed—which is what makes it hard: the obvious linear-algebra argument ($\mathbb{R}^n \cong \mathbb{R}^m$ as vector spaces implies $n=m$) is unavailable, because homeomorphisms need not be linear or even differentiable. Compare: $\mathbb{R}$ and $\mathbb{R}^2$ are not homeomorphic by a connectedness argument (remove a point), but already $\mathbb{R}^2$ vs. $\mathbb{R}^3$ needs more.
 
 > [!remark]- Connections
-> - The case ℝ² ≇ ℝ³ is proved in 590 by comparing π₁ of the punctured spaces: [[§23 The Fundamental Group#^rem-23-2|590 §23, Remark: What π₁ Cannot See]].
+> - The case ℝ² ≇ ℝ³ is proved in 590 by comparing π₁ of the punctured spaces: [[§29 The Fundamental Group#^rem-29-2|590 §29, Remark: What π₁ Cannot See]].
 
 > [!theorem] Corollary §2.2: Dimension is Locally Constant
 > Suppose $X$ satisfies the definition of “locally Euclidean” with $n$ allowed to depend on $p$. Then for each $p$ the integer $n(p)$ is well-defined, and $p \mapsto n(p)$ is constant on each connected component of $X$.
@@ -88,7 +88,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-2
 
-*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]
+*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]
 
 > [!theorem] Proposition §2.3: Charts onto Open Subsets Suffice
 > In the definition of locally Euclidean, replacing “$\varphi : U \to \mathbb{R}^n$ is a homeomorphism” by
@@ -126,7 +126,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-3
 
-*Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§9 Continuous Functions#^prop-9-3|590 §9.3]]
+*Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (3), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[§10 Continuous Functions#^prop-10-3|590 §10.3]]
 
 > [!remark] Remark
 > Lee takes the “open subset” version as the *definition* of locally Euclidean and leaves the equivalence as Exercise 1.1. The practical upshot: to verify that a space is locally Euclidean, it is enough to exhibit, around each point, a homeomorphism onto an open ball, or onto an open disk, or onto any open subset of $\mathbb{R}^n$—one never needs to hit all of $\mathbb{R}^n$. This is used in the $S^2$ example ([[§8 Spheres#^ex-8-1|Ex. §8.1]]).
@@ -206,7 +206,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-2
 
-*Uses:* [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 > [!example] Example §2.3: Fails Second Countability: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$
 > Let $X = \mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$, where $\mathbb{R}_{\mathrm{disc}}$ is $\mathbb{R}$ with the discrete topology and the product carries the product topology. As a *set* this is the plane $\mathbb{R}^2$, but topologically it is a completely different animal: each horizontal line $\{a\} \times \mathbb{R}$ is open (product of the open set $\{a\}$ with $\mathbb{R}$), and its subspace topology is the usual one on $\mathbb{R}$. Thus
@@ -291,7 +291,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 ## Connectedness and Path Connectedness
 
 > [!remark] Remark
-> For general topological spaces, path connectedness is strictly stronger than connectedness (the topologist's sine curve is the standard counterexample, [[§14 Connected Subspaces of ℝ#^ex-14-7|590 §14]]). For manifolds the two coincide, because being locally Euclidean makes the space locally path connected. This is PSet 1, Problem 1.
+> For general topological spaces, path connectedness is strictly stronger than connectedness (the topologist's sine curve is the standard counterexample, [[§16 Connected Subspaces of ℝ#^ex-16-7|590 §16]]). For manifolds the two coincide, because being locally Euclidean makes the space locally path connected. This is PSet 1, Problem 1.
 
 ^rem-2-8
 
@@ -303,14 +303,14 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 ^lem-2-7
 
 > [!proof]+ Proof
-> Define $\gamma : [0,1] \to X$ by $\gamma(t) = \alpha(2t)$ for $t \in [0, \tfrac12]$ and $\gamma(t) = \beta(2t-1)$ for $t \in [\tfrac12, 1]$. The two formulas agree at $t = \tfrac12$, where both give $\alpha(1) = b = \beta(0)$, so $\gamma$ is well defined. The sets $[0,\tfrac12]$ and $[\tfrac12,1]$ are closed and cover $[0,1]$, and $\gamma$ is continuous on each (a composite of an affine map with $\alpha$, resp. $\beta$), so $\gamma$ is continuous by the [[Pasting Lemma|pasting lemma]] ([[§9 Continuous Functions#^thm-9-5|590 §9]]). Finally $\gamma(0) = a$, $\gamma(1) = c$. For the reversal, $t \mapsto \alpha(1-t)$ is continuous and runs from $b$ to $a$.
+> Define $\gamma : [0,1] \to X$ by $\gamma(t) = \alpha(2t)$ for $t \in [0, \tfrac12]$ and $\gamma(t) = \beta(2t-1)$ for $t \in [\tfrac12, 1]$. The two formulas agree at $t = \tfrac12$, where both give $\alpha(1) = b = \beta(0)$, so $\gamma$ is well defined. The sets $[0,\tfrac12]$ and $[\tfrac12,1]$ are closed and cover $[0,1]$, and $\gamma$ is continuous on each (a composite of an affine map with $\alpha$, resp. $\beta$), so $\gamma$ is continuous by the [[Pasting Lemma|pasting lemma]] ([[§10 Continuous Functions#^thm-10-5|590 §10]]). Finally $\gamma(0) = a$, $\gamma(1) = c$. For the reversal, $t \mapsto \alpha(1-t)$ is continuous and runs from $b$ to $a$.
 
 ^pf-2-7
 
-*Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]
+*Uses:* [[Pasting Lemma|590 §10.5 (Pasting Lemma)]], [[§16 Connected Subspaces of ℝ#^def-16-4|590 Def. §16.4]]
 
 > [!remark]- Connections
-> - The same concatenation is the product of paths in 590: [[§22 Homotopy of Paths#^def-22-6|590 Def. §22.6]], with its algebra in [[Properties of Path Concatenation]].
+> - The same concatenation is the product of paths in 590: [[§28 Homotopy of Paths#^def-28-6|590 Def. §28.6]], with its algebra in [[Properties of Path Concatenation]].
 
 > [!theorem] Theorem §2.8: Connected Manifolds Are Path Connected
 > A connected topological manifold is path connected.
@@ -336,7 +336,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-8
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-7|§2.7]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-7|§2.7]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§16 Connected Subspaces of ℝ#^def-16-4|590 Def. §16.4]]
 
 > [!theorem] Corollary §2.9: Components of a Manifold
 > Let $M$ be a topological manifold. Then the connected components of $M$ are open, coincide with its path components, and each is itself a topological manifold of the same dimension.
@@ -350,7 +350,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-9
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-8|§2.8]], [[§14 Connected Subspaces of ℝ#^thm-14-4|590 §14.4]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-8|§2.8]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
 
 > [!remark] Remark
 > This is the mechanism behind [[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]: openness of the components is what turns second countability into a bound on their number. It is also the reason [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] can speak of the dimension being constant on components.
@@ -441,7 +441,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 > - Carried out in [[§16 Differentiable Structures#^def-16-2|Def. §16.2]] (smooth in the sense of a chart), [[§16 Differentiable Structures#^rem-16-3|the problem this creates]] and [[§16 Differentiable Structures#^thm-16-1|§16.1]].
 
 > [!theorem] Proposition §2.12: Manifolds Are Locally Compact
-> Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§17 Local Compactness#^def-17-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
+> Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§20 Local Compactness#^def-20-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
 >
 > *Lee: Proposition 1.12*
 
@@ -455,5 +455,5 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 *Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (1, 2, 4, 5), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[Closed Subspace of a Compact Space is Compact]]
 
 > [!remark]- Connections
-> - The home of local compactness: [[§17 Local Compactness#^def-17-1|590 Def. §17.1]] (a compact set containing a neighbourhood); for Hausdorff spaces it is equivalent to the form used here by [[§17 Local Compactness#^thm-17-6|590 §17.6]].
-> - The model case, $\mathbb{R}^n$: [[§17 Local Compactness#^ex-17-3|590 Ex. §17.3]].
+> - The home of local compactness: [[§20 Local Compactness#^def-20-1|590 Def. §20.1]] (a compact set containing a neighbourhood); for Hausdorff spaces it is equivalent to the form used here by [[§20 Local Compactness#^thm-20-6|590 §20.6]].
+> - The model case, $\mathbb{R}^n$: [[§20 Local Compactness#^ex-20-3|590 Ex. §20.3]].

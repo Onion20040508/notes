@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 10 and Problems III (Q4) · MAT 200 lecture (syllabus week 14).*
 
-Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved by induction: [[§10 Counting#^pf-10-2|proof of Lemma §10.2]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
+Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved by induction: [[§10 Counting#^pf-10-1|proof of Lemma §10.2]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
 
 ## 10.1 Counting Finite Sets
 
@@ -61,14 +61,14 @@ For the definition to make sense, two different counts of the same set must give
 >
 > In the inductive step the given statement is $P(k)$ and the goal $P(k+1)$; the $m$ in each is a dummy variable, so rename it $m_1$ in the goal. We are handed an injection $f : \N_{m_1} \to \N_{k+1}$ and must show $m_1 \le k + 1$. The hypothesis $P(k)$ only applies to injections *into $\N_k$*, so the work is to manufacture one from $f$, if necessary by shrinking the domain. (Induction on $m$ also works: Eccles Problems III Q8.)
 
-^rem-11-1
+^rem-10-2
 
 > [!theorem] Lemma §10.2: Injections Between Standard Sets
 > If there is an injection $\N_m \to \N_n$, then $m \le n$.
 >
 > *Eccles: Lemma 10.1.4 (proved in Chapter 11)*
 
-^lem-10-2
+^lem-10-1
 
 > [!proof]+ Proof
 > Induction on $n$.
@@ -89,7 +89,7 @@ For the definition to make sense, two different counts of the same set must give
 >
 > One of the cases holds for every $f$, so $P(k+1)$ follows. By induction $P(n)$ holds for all $n \in \Z^+$.
 
-^pf-10-2
+^pf-10-1
 
 *Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
 
@@ -101,14 +101,14 @@ For the definition to make sense, two different counts of the same set must give
 >
 > *Eccles: Proposition 10.1.3*
 
-^prop-10-1
+^prop-10-2
 
 > [!proof]+ Proof
-> Since $f$ and $g$ are bijections they have inverses $f^{-1} : X \to \N_m$ and $g^{-1} : X \to \N_n$, which are bijections. So $g^{-1} \circ f : \N_m \to \N_n$ is a bijection, in particular an injection, and Lemma [[§10 Counting#^lem-10-2|§10.2]] gives $m \le n$. Reversing the roles of $f$ and $g$, $f^{-1} \circ g : \N_n \to \N_m$ is an injection, so $n \le m$. Hence $m = n$ ([[§4 Proof by Contradiction#^ex-4-4|Example §4.4]]).
+> Since $f$ and $g$ are bijections they have inverses $f^{-1} : X \to \N_m$ and $g^{-1} : X \to \N_n$, which are bijections. So $g^{-1} \circ f : \N_m \to \N_n$ is a bijection, in particular an injection, and Lemma [[§10 Counting#^lem-10-1|§10.1]] gives $m \le n$. Reversing the roles of $f$ and $g$, $f^{-1} \circ g : \N_n \to \N_m$ is an injection, so $n \le m$. Hence $m = n$ ([[§4 Proof by Contradiction#^ex-4-4|Example §4.4]]).
 
-^pf-10-1
+^pf-10-2
 
-*Uses:* [[§10 Counting#^lem-10-2|§10.2]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]], [[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]]
+*Uses:* [[§10 Counting#^lem-10-1|§10.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]], [[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]]
 
 > [!definition] Definition §10.2: Finite and Infinite Sets
 > A set $X$ is **finite** if $|X| = n$ for some non-negative integer $n$, that is, if $X = \emptyset$ or there is a bijection $\N_n \to X$ for some $n \in \Z^+$. Otherwise $X$ is **infinite**.
@@ -134,7 +134,7 @@ For the definition to make sense, two different counts of the same set must give
 *Uses:* [[§10 Counting#^def-10-1|Def. §10.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
 
 > [!remark]- Connections
-> - The same statement in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-3|451 Thm. §2.3]]; for infinite sets it becomes the definition of "same cardinality" ([[§14 Counting Infinite Sets#^def-14-1|Def. §14.1]], [[§14 Counting Infinite Sets#^def-14-3|Def. §14.3]]).
+> - The same statement in 451: [[§2 The Set ℚ of Rational Numbers#^thm-2-3|451 Thm. §2.3]]; for infinite sets it becomes the definition of "same cardinality" ([[§14 Counting Infinite Sets#^def-14-1|Def. §14.1]], [[§14a Uncountable Sets#^def-14a-1|Def. §14a.1]]).
 
 ## 10.2 Two Basic Counting Principles
 
@@ -189,7 +189,7 @@ The conclusion is an "and" statement, but the first part follows from the second
 *Uses:* [[§10 Counting#^thm-10-4|§10.4]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]]
 
 > [!theorem] Theorem §10.6: The Multiplication Principle
-> Let $X$ and $Y$ be finite sets with $|X| = n$ and $|Y| = m$. Then the [[§7 Quantifiers#^def-7-5|Cartesian product]] $X \times Y$ is finite and $|X \times Y| = mn$.
+> Let $X$ and $Y$ be finite sets with $|X| = n$ and $|Y| = m$. Then the [[§7a Several Quantifiers and the Cartesian Product#^def-7a-1|Cartesian product]] $X \times Y$ is finite and $|X \times Y| = mn$.
 >
 > *Eccles: Theorem 10.2.3*
 
@@ -241,7 +241,7 @@ For sets that are not disjoint, adding the cardinalities counts the common eleme
 ^prop-10-7
 
 > [!proof]+ Proof
-> The sets $X - Y$, $Y - X$ and $X \cap Y$ are subsets of finite sets, hence finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]], proved in §11 from the addition principle, without this proposition), and $X \cup Y = (X - Y) \cup (Y - X) \cup (X \cap Y)$ is a union of pairwise disjoint sets ([[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]]). By Corollary [[§10 Counting#^cor-10-5|§10.5]],
+> The sets $X - Y$, $Y - X$ and $X \cap Y$ are subsets of finite sets, hence finite ([[§11 Properties of Finite Sets#^cor-11-4|Corollary §11.4]], proved in §11 from the addition principle, without this proposition), and $X \cup Y = (X - Y) \cup (Y - X) \cup (X \cap Y)$ is a union of pairwise disjoint sets ([[§6a Operations on Sets#^prop-6a-1|Proposition §6a.1]]). By Corollary [[§10 Counting#^cor-10-5|§10.5]],
 >
 > $$
 > |X \cup Y| = |X - Y| + |Y - X| + |X \cap Y|.
@@ -251,7 +251,7 @@ For sets that are not disjoint, adding the cardinalities counts the common eleme
 
 ^pf-10-7
 
-*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§6 The Language of Set Theory#^prop-6-2|§6.2]]
+*Uses:* [[§10 Counting#^cor-10-5|§10.5]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§6a Operations on Sets#^prop-6a-1|§6a.1]]
 
 In the Venn diagram of $X$ and $Y$: counting $X$ and then $Y$ counts the region $X \cap Y$ twice, so it is subtracted once.
 
@@ -282,11 +282,11 @@ In the Venn diagram of $X$ and $Y$: counting $X$ and then $Y$ counts the region 
 > \end{aligned}
 > $$
 >
-> using the distributive law $(X \cup Y) \cap Z = (X \cap Z) \cup (Y \cap Z)$ ([[§6 The Language of Set Theory#^thm-6-3|Theorem §6.3]]). Substituting the second and third lines into the first gives the formula.
+> using the distributive law $(X \cup Y) \cap Z = (X \cap Z) \cup (Y \cap Z)$ ([[§6a Operations on Sets#^thm-6a-2|Theorem §6a.2]]). Substituting the second and third lines into the first gives the formula.
 
 ^pf-10-8
 
-*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]] (distributive law)
+*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§6a Operations on Sets#^thm-6a-2|§6a.2]] (distributive law)
 
 ![[m250-10-1.svg]]
 *Each region is labelled by how often the right-hand side of the formula counts its elements: a point of exactly one set is counted once by the single terms; a point of exactly two sets twice by them and once by an intersection term, $2 - 1$; a point of all three, $3 - 3 + 1$. Every element of the union is counted exactly once.*
@@ -332,7 +332,7 @@ The general principle is proved by induction, with the three-set proof as the mo
 
 ^pf-10-9
 
-*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§6 The Language of Set Theory#^thm-6-3|§6.3]] (distributive law)
+*Uses:* [[§10 Counting#^prop-10-7|§10.7]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§6a Operations on Sets#^thm-6a-2|§6a.2]] (distributive law)
 
 For $n = 2$ and $n = 3$ this is Propositions [[§10 Counting#^prop-10-7|§10.7]] and [[§10 Counting#^prop-10-8|§10.8]]. The figure's pattern persists: an element lying in exactly $r$ of the sets is counted $\binom{r}{1} - \binom{r}{2} + \cdots + (-1)^{r-1}\binom{r}{r} = 1$ times, by the binomial theorem ([[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10]], proved in §12★; see [[§12★ Counting Functions and Subsets#^cor-12-11|Corollary §12.11]]) applied to $(1 - 1)^r = 0$.
 

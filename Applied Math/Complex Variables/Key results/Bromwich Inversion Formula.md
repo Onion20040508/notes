@@ -17,4 +17,4 @@ tags: [complex-variables, hub]
 - [[§95★ Inverse Laplace Transforms#^cor-95-5|Corollary §95.5: Uniqueness of the Inverse Transform]]
 
 ## Connections
-- BDP mentions this formula only as "a general formula for the inverse transform [that] requires functions of a complex variable", [[§22 Solution of Initial Value Problems#^def-22-1|331 Def. §22.1]]; [[§95★ Inverse Laplace Transforms#^thm-95-4|Theorem §95.4]] is that formula. At $t = 0$ the same computation gives $\frac12f(0+)$, and for $t < 0$ it gives $0$: the Bromwich integral reproduces $f$ extended by zero to negative times.
+- BDP mentions this formula only as "a general formula for the inverse transform [that] requires functions of a complex variable", [[§27 Solution of Initial Value Problems#^def-27-1|331 Def. §27.1]]; [[§95★ Inverse Laplace Transforms#^thm-95-4|Theorem §95.4]] is that formula. At $t = 0$ the same computation gives $\frac12f(0+)$, and for $t < 0$ it gives $0$: the Bromwich integral reproduces $f$ extended by zero to negative times.

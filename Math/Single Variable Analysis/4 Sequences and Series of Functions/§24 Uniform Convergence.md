@@ -15,7 +15,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 ^def-24-1
 
 > [!remark]- Connections
-> - 551 weakens it to convergence outside a null set (almost everywhere convergence): [[§12b Simple Functions and Modes of Convergence#^def-12-new1|551 Def. §12.9]].
+> - 551 weakens it to convergence outside a null set (almost everywhere convergence): [[§17 Simple Functions and Modes of Convergence#^def-17-4|551 Def. §17.4]].
 
 > [!definition] Definition §24.2: Uniform Convergence
 > $(f_n)$ **converges uniformly to $f$ on $S$** if for every $\varepsilon > 0$ there exists $N$ such that for all $n \geq N$ *and all $x \in S$*,
@@ -32,8 +32,8 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 *The $\varepsilon$-tube around the limit $f \equiv 0$: uniform convergence means the whole graph of $f_n$ eventually enters the tube. The blue curve is inside; the peak of $n x^n(1-x)$ (height $\to \tfrac1e$ at $x = \tfrac{n}{n+1}$) escapes for every $n$ — the picture behind “Locating the worst point” below.*
 
 > [!remark]- Connections
-> - Restated in 551 as [[§12 Measurable Functions#^def-12-9|551 Def. §12.9]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§13 Egorov's and Lusin's Theorems#^thm-13-1|551 Thm. §13.1]] (Egorov).
-> - Computational version: [[§9 Uniform Convergence#^def-9-new1|341 Def. §9.1]] (pointwise versus uniform convergence, with worked examples for Fourier series).
+> - Restated in 551 as [[§17 Simple Functions and Modes of Convergence#^def-17-5|551 Def. §17.5]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§18 Egorov's and Lusin's Theorems#^thm-18-1|551 Thm. §18.1]] (Egorov).
+> - Computational version: [[§13 Uniform Convergence#^def-13-2|341 Def. §13.2]] (pointwise versus uniform convergence, with worked examples for Fourier series).
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|342 Def. §69.2]] (uniform convergence of complex series, in remainder form).
 
 ## Examples and Non-Examples
@@ -62,8 +62,8 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 ^ex-24-2
 
 > [!remark]- Connections
-> - Same sequence in 551, where it converges uniformly on every $[0, 1-\delta]$, illustrating Egorov's theorem: [[§13 Egorov's and Lusin's Theorems#^ex-13-1|551 Ex. §13.1]].
-> - Computational version: [[§9 Uniform Convergence#^ex-9-1|341 Ex. §9.1]] (continuous functions converging pointwise, not uniformly, to a step).
+> - Same sequence in 551, where it converges uniformly on every $[0, 1-\delta]$, illustrating Egorov's theorem: [[§18 Egorov's and Lusin's Theorems#^ex-18-1|551 Ex. §18.1]].
+> - Computational version: [[§13 Uniform Convergence#^ex-13-1|341 Ex. §13.1]] (continuous functions converging pointwise, not uniformly, to a step).
 
 > [!example] Example §24.3: A Uniform Example
 > $f_n(x) = \tfrac1n \sin x$ converges uniformly to $f \equiv 0$ on $\mathbb{R}$: given $\varepsilon > 0$, take $N > \tfrac1\varepsilon$; then for all $n \geq N$ and *all* $x \in \mathbb{R}$,
@@ -142,7 +142,7 @@ The last example generalizes:
 *Uses:* [[§24 Uniform Convergence#^def-24-2|Def. §24.2]]
 
 > [!remark]- Connections
-> - Computational version: [[§9 Uniform Convergence#^def-9-2|341 Def. §9.2]] (uniform convergence of a Fourier series defined by this criterion: the maximum deviation $\delta_N$ tends to 0).
+> - Computational version: [[§13 Uniform Convergence#^def-13-3|341 Def. §13.3]] (uniform convergence of a Fourier series defined by this criterion: the maximum deviation $\delta_N$ tends to 0).
 
 The two proof strategies, summarized: to prove uniform convergence, bound $|f_n(x) - f(x)|$ *independently of $x$* by something $\to 0$; to disprove it, find points $x_n$ (usually depending on $n$) where $|f_n(x_n) - f(x_n)|$ stays above a fixed $\varepsilon_0$.
 
@@ -187,8 +187,8 @@ Now we reap the applications.
 
 > [!remark]- Connections
 > - Special case for complex power series: [[§70★ Continuity of Sums of Power Series#^thm-70-1|342 Thm. §70.1]] (the sum of a power series is continuous inside its circle of convergence).
-> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§12 Measurable Functions#^thm-12-16|551 Thm. §12.16]], [[§13 Egorov's and Lusin's Theorems#^thm-13-3|551 Thm. §13.3]].
-> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
+> - Restated in 551 for functions on a measurable set, where it is a step in the proof of Lusin's theorem: [[§17 Simple Functions and Modes of Convergence#^thm-17-4|551 Thm. §17.4]], [[§18 Egorov's and Lusin's Theorems#^thm-18-3|551 Thm. §18.3]].
+> - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§14 The Existence and Uniqueness Theorem#^thm-14-7|331 Thm. §14.7]].
 
 > [!remark] Remark
 > This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The [[Contrapositive, Converse and Inverse|contrapositive]] of the theorem is a quick non-uniformity test.

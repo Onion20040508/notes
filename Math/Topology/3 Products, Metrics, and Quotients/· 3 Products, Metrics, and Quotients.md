@@ -12,17 +12,17 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§10 Product Topology on Arbitrary Products]]
-- [[§11 Metric Topology]]
-- [[§12 Quotient Topology]]
-- [[§12a ℝ^ω, Discrete Spaces and the Torus]]
+- [[§11 Product Topology on Arbitrary Products]]
+- [[§12 Metric Topology]]
+- [[§13 Quotient Topology]]
+- [[§14 ℝ^ω, Discrete Spaces and the Torus]]
 
 ## Central results
 - [[Universal Property of Quotient Maps]] (§12.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§10 Product Topology on Arbitrary Products#^thm-10-1|Theorem §10.1: Continuity into Product Spaces]]: 6 later results
-- [[§12 Quotient Topology#^prop-12-2|Proposition §12.2]]: 6 later results
-- [[Universal Property of Quotient Maps|Theorem §12.3: Universal Property]]: 6 later results
-- [[§12 Quotient Topology#^prop-12-1|Proposition §12.1: Existence and Uniqueness of the Quotient Topology]]: 3 later results
+- [[§11 Product Topology on Arbitrary Products#^thm-11-1|Theorem §11.1: Continuity into Product Spaces]]: 6 later results
+- [[§13 Quotient Topology#^prop-13-2|Proposition §13.2]]: 6 later results
+- [[Universal Property of Quotient Maps|Theorem §13.3: Universal Property]]: 6 later results
+- [[§13 Quotient Topology#^prop-13-1|Proposition §13.1: Existence and Uniqueness of the Quotient Topology]]: 3 later results

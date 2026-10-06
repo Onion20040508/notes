@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 9
-section: 112
+section: "112★"
 bc: "112"
 aliases: ["B&C 112"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§111★ Surfaces for Related Functions]] · ↑ [[· 9★ Conformal Mapping]] · [[§113★ Further Examples (Preservation of Angles and Scale Factors)]] →
+← [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)]] · ↑ [[· 9★ Conformal Mapping]] · [[§113★ Further Examples (Preservation of Angles and Scale Factors)]] →
 
 *Brown–Churchill, Section 112.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -16,7 +16,7 @@ An analytic function with nonzero derivative turns every curve through a point b
 
 ## Angle of Rotation
 
-Let $C$ be a smooth arc ([[§43 Contours#^def-43-4|Definition §43.4]]), $z = z(t)$ $(a \le t \le b)$, and let $f(z)$ be defined at all points of $C$. Then
+Let $C$ be a smooth arc ([[§43 Contours#^def-43-7|Definition §43.7]]), $z = z(t)$ $(a \le t \le b)$, and let $f(z)$ be defined at all points of $C$. Then
 
 $$
 w = f[z(t)] \qquad (a \le t \le b)
@@ -34,7 +34,7 @@ $$
 \arg w'(t_0) = \arg f'[z(t_0)] + \arg z'(t_0) . \qquad (2)
 $$
 
-Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours#^def-43-new4|Definition §43.8]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
+Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours#^def-43-8|Definition §43.8]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
 
 > [!definition] Definition §112.1: Angle of Rotation
 > If $f$ is analytic at $z_0$ and $f'(z_0) \ne 0$, the **angle of rotation** of the transformation $w = f(z)$ at $z_0$ is
@@ -83,10 +83,10 @@ Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has
 
 ^pf-112-1
 
-*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Def. §112.1]], [[§43 Contours#^def-43-4|Def. §43.4]] (smooth arcs, unit tangent), [[§43 Contours#^prop-43-5|§43.5]] (chain rule), [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]] ($\arg(z_1z_2) = \arg z_1 + \arg z_2$)
+*Uses:* [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Def. §112.1]], [[§43 Contours#^def-43-7|Def. §43.7]] (smooth arcs), [[§43 Contours#^def-43-8|Def. §43.8]] (unit tangent), [[§43 Contours#^prop-43-5|§43.5]] (chain rule), [[§9 Arguments of Products and Quotients#^thm-9-1|§9.1]] ($\arg(z_1z_2) = \arg z_1 + \arg z_2$)
 
 > [!remark]- Connections
-> - Why it works, in matrix form: by the [[§21 Cauchy–Riemann Equations#^def-21-1|Cauchy–Riemann equations]] the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]], the Jacobian).
+> - Why it works, in matrix form: by the [[§21 Cauchy–Riemann Equations#^def-21-1|Cauchy–Riemann equations]] the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]], the Jacobian).
 > - Used in Electromagnetism: analytic maps carry electrostatic solutions to solutions, field lines staying perpendicular to equipotentials — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]].
 
 Because of this angle-preserving property, the following terms are used.
@@ -132,7 +132,7 @@ Each of the elementary functions of Chapter 3 defines a transformation that is c
 >
 > **By conformality.** The transformation $w = f(z)$ maps the first arc into the vertical line $u = c_1$ and the second into the horizontal line $v = c_2$, which are orthogonal at $w_0 = f(z_0)$. By Theorem §112.1(b) the angle between the arcs at $z_0$ equals the angle between their images, $\pm\pi/2$.
 >
-> **Directly.** The gradients $\nabla u = (u_x, u_y)$ and $\nabla v = (v_x, v_y)$ are normal to the level curves ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]]), and by the Cauchy–Riemann equations $v_x = -u_y$, $v_y = u_x$,
+> **Directly.** The gradients $\nabla u = (u_x, u_y)$ and $\nabla v = (v_x, v_y)$ are normal to the level curves ([[§112 Tangent Planes to Level Surfaces#^thm-112-3|Calc Thm. §112.3]]), and by the Cauchy–Riemann equations $v_x = -u_y$, $v_y = u_x$,
 >
 > $$
 > \nabla u \cdot \nabla v = u_xv_x + u_yv_y = -u_xu_y + u_yu_x = 0 ,

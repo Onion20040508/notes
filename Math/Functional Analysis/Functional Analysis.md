@@ -123,18 +123,18 @@ The results from other subjects that this course's proofs and definitions cite m
 **[[Measure Theory]]**
 - [[Countable Union of Countable Sets is Countable]] (5)
 - [[Dominated Convergence Theorem]] (3)
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-19|Theorem §19.19: Density in Lᵖ]] (3)
+- [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
 - [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
 - [[Riesz–Fischer Theorem]] (2)
 - [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
-- [[§19 Normed Linear Spaces and Lᵖ Spaces#^lem-19-4|Lemma §19.4: Young's Inequality]] (1)
+- [[§34 Normed Linear Spaces and Lᵖ Spaces#^lem-34-4|Lemma §34.4: Young's Inequality]] (1)
 
 **[[Topology]]**
-- [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]] (1)
+- [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|Theorem §10.8: Cauchy Implies Convergent]] (7)
+- [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (7)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[Fundamental Theorem of Calculus]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)

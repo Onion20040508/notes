@@ -2,20 +2,20 @@
 subject: math
 type: theorem
 source: "[[Ordinary Differential Equations]]"
-aliases: ["MATH 331 14.8", "Abel's formula", "Abel–Liouville"]
+aliases: ["MATH 331 18.8", "Abel's formula", "Abel–Liouville"]
 tags: [ordinary-differential-equations, hub]
 ---
-![[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8]]
+![[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-8]]
 
 ## Treated in
-- [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8: Abel's Theorem]], in [[§14 Solutions of Linear Homogeneous Equations; the Wronskian]]
+- [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-8|Theorem §18.8: Abel's Theorem]], in [[§18 Solutions of Linear Homogeneous Equations; the Wronskian]]
 
 ## Its proof uses
-- [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2: Solution of a First-Order Linear Equation]]
-- [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-2|Definition §14.2: Wronskian]]
+- [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|Theorem §5.2: Solution of a First-Order Linear Equation]]
+- [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-2|Definition §18.2: Wronskian]]
 
 ## Used in (Ordinary Differential Equations)
-- [[§18★ Variation of Parameters#^thm-18-1|Theorem §18.1: Variation of Parameters]]
+- [[§22★ Variation of Parameters#^thm-22-1|Theorem §22.1: Variation of Parameters]]
 
 ## Connections
-- See [[§14 Solutions of Linear Homogeneous Equations; the Wronskian]] for context and examples.
+- See [[§18 Solutions of Linear Homogeneous Equations; the Wronskian]] for context and examples.

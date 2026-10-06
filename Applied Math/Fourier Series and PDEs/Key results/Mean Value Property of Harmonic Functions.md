@@ -2,21 +2,21 @@
 subject: math
 type: theorem
 source: "[[Fourier Series and PDEs]]"
-aliases: ["MAT 341 39.4", "mean value property"]
+aliases: ["MAT 341 49.2", "mean value property"]
 tags: [fourier-series-and-pdes, hub]
 ---
-![[§39 Potential in a Disk#^thm-39-4]]
+![[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2]]
 
 ## Treated in
-- [[§39 Potential in a Disk#^thm-39-4|Theorem §39.4: Mean Value Property]], in [[§39 Potential in a Disk]]
+- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|Theorem §49.2: Mean Value Property]], in [[§48 Potential in a Disk]]
 
 ## Its proof uses
-- [[§35 Potential Equation#^thm-35-3|Theorem §35.3: The Laplacian in Polar and Cylindrical Coordinates]]
-- [[§39 Potential in a Disk#^thm-39-2|Theorem §39.2: Solution of Dirichlet's Problem in a Disk]]
+- [[§44 Potential Equation#^thm-44-3|Theorem §44.3: The Laplacian in Polar and Cylindrical Coordinates]]
+- [[§48 Potential in a Disk#^thm-48-2|Theorem §48.2: Solution of Dirichlet's Problem in a Disk]]
 
 ## Used in (Fourier Series and PDEs)
-- [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5: Maximum Principle]]
+- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|Theorem §49.3: Maximum Principle]]
 
 ## Connections
-- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the [[§39 Potential in a Disk#^pf-39-4|proof of (b) in §39]] is a complete two-dimensional version).
+- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-3|452 Ex. §28.3]] (given there as a sketch; the [[§49 The Poisson Integral Formula and the Mean Value Property#^pf-49-2|proof of (b) in §49]] is a complete two-dimensional version).
 - **Also in [[Complex Variables]]:** [[§59 Maximum Modulus Principle#^thm-59-1|342 Thm. §59.1]] (Gauss's mean value theorem for analytic functions, with worked examples).

@@ -136,7 +136,7 @@ If $f(z)$ is given as $u(x, y) + iv(x, y)$, it is sometimes convenient to use on
 > I_1 - I_2 = \frac{-1 + i}{2} .
 > $$
 >
-> [[§50 Cauchy–Goursat Theorem#^ex-50-3|Example §50.3]] recovers this number from Green's theorem ([[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]]).
+> [[§50 Cauchy–Goursat Theorem#^ex-50-3|Example §50.3]] recovers this number from Green's theorem ([[§130 Green's Theorem#^thm-130-1|Calc Thm. §130.1]]).
 >
 > *B&C: Sec. 45, Example 3*
 
@@ -152,7 +152,7 @@ If $f(z)$ is given as $u(x, y) + iv(x, y)$, it is sometimes convenient to use on
 ^rem-45-1
 
 > [!remark]- Connections
-> - The same dichotomy for real vector fields: a line integral is independent of path exactly when it vanishes around every closed path, [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Calc Thm. §109.2]]; the complex version is [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]].
+> - The same dichotomy for real vector fields: a line integral is independent of path exactly when it vanishes around every closed path, [[§128 The Fundamental Theorem for Line Integrals#^thm-128-2|Calc Thm. §128.2]]; the complex version is [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]].
 
 > [!remark] Remark: Method — Evaluating a Contour Integral by Parametrization
 > 1. **Split** $C$ into smooth pieces (segments, arcs of circles) and parametrize each: a segment from $p$ to $q$ as $z = p + (q - p)t$ $(0 \le t \le 1)$; an arc of the circle $|z - z_0| = R$ as $z = z_0 + Re^{i\theta}$; a graph $y = g(x)$ as $z = x + ig(x)$.

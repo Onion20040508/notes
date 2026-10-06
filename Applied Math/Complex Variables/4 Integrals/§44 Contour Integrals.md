@@ -35,12 +35,12 @@ The integral of $f(z)$ along a contour $C$ is defined by pulling it back along a
 ^def-44-1
 
 > [!remark]- Connections
-> - With $f = u + iv$ and $z = x + iy$, (2) splits into two real line integrals with respect to $x$ and $y$, [[§108 Line Integrals#^def-108-4|Calc Def. §108.4]]: $\int_C f\,dz = \int_C u\,dx - v\,dy + i\int_C v\,dx + u\,dy$. This is made precise in [[§50 Cauchy–Goursat Theorem#^prop-50-1|Proposition §50.1]], where it is the bridge to Green's theorem, [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]].
+> - With $f = u + iv$ and $z = x + iy$, (2) splits into two real line integrals with respect to $x$ and $y$, [[§126 Line Integrals#^def-126-5|Calc Def. §126.5]]: $\int_C f\,dz = \int_C u\,dx - v\,dy + i\int_C v\,dx + u\,dy$. This is made precise in [[§50 Cauchy–Goursat Theorem#^prop-50-1|Proposition §50.1]], where it is the bridge to Green's theorem, [[§130 Green's Theorem#^thm-130-1|Calc Thm. §130.1]].
 
-The value does not depend on the parametrization used, for the changes of parameter of [[§43 Contours#^def-43-2|§43]].
+The value does not depend on the parametrization used, for the changes of parameter of [[§43 Contours#^def-43-4|§43]].
 
 > [!theorem] Proposition §44.1: Invariance Under a Change of Parameter
-> Let $C$ be the contour (1), let $f$ be piecewise continuous on $C$, and let $\phi$ be a change of parameter ([[§43 Contours#^def-43-2|Definition §43.2]]), with $Z(\tau) = z[\phi(\tau)]$. Then
+> Let $C$ be the contour (1), let $f$ be piecewise continuous on $C$, and let $\phi$ be a change of parameter ([[§43 Contours#^def-43-4|Definition §43.4]]), with $Z(\tau) = z[\phi(\tau)]$. Then
 >
 > $$
 > \int_a^b f[z(t)]\,z'(t)\,dt = \int_\alpha^\beta f[Z(\tau)]\,Z'(\tau)\,d\tau .
@@ -63,7 +63,7 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ^pf-44-1
 
-*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§43 Contours#^def-43-2|Def. §43.2]], [[§43 Contours#^lem-43-1|§43.1]], [[§43 Contours#^lem-43-2|§43.2]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]]
+*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§43 Contours#^def-43-4|Def. §43.4]], [[§43 Contours#^lem-43-1|§43.1]], [[§43 Contours#^lem-43-2|§43.2]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]]
 
 ## Properties
 
@@ -83,7 +83,7 @@ The value does not depend on the parametrization used, for the changes of parame
 >
 > *B&C: Sec. 44 (text)*
 
-^def-44-new1
+^def-44-3
 
 (A single parametrization of $C_1 + C_2$ is obtained by shifting the parameter interval of $C_2$ linearly so that it starts where that of $C_1$ ends; by Proposition §44.1 it does not matter how.)
 
@@ -131,10 +131,10 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ^pf-44-2
 
-*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§44 Contour Integrals#^def-44-new1|Def. §44.3]], [[§44 Contour Integrals#^prop-44-1|§44.1]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§43 Contours#^lem-43-1|§43.1]]
+*Uses:* [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§44 Contour Integrals#^def-44-2|Def. §44.2]], [[§44 Contour Integrals#^def-44-3|Def. §44.3]], [[§44 Contour Integrals#^prop-44-1|§44.1]], [[§42 Definite Integrals of Functions w(t)#^prop-42-1|§42.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§43 Contours#^lem-43-1|§43.1]]
 
 > [!remark]- Connections
-> - Property (6) is [[§108 Line Integrals#^thm-108-4|Calc Thm. §108.4]] (reversing the orientation of a line integral with respect to $x$ or $y$), and (7) is the additivity over pieces used there for piecewise-smooth curves.
+> - Property (6) is [[§126 Line Integrals#^thm-126-4|Calc Thm. §126.4]] (reversing the orientation of a line integral with respect to $x$ or $y$), and (7) is the additivity over pieces used there for piecewise-smooth curves.
 
 ## Examples from the Definition
 
@@ -231,4 +231,4 @@ The value does not depend on the parametrization used, for the changes of parame
 ^ex-44-4
 
 > [!remark]- Connections
-> - The term-by-term integration in (c) uses the M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], and the integration of uniform limits, [[§33 Properties of the Riemann Integral#^thm-33-12|451 Thm. §33.12]]; in complex form it is computing the $n = 1$ Fourier coefficient of $\theta \mapsto e^{2e^{-i\theta}}$, as in [[§15★ Complex Methods#^thm-15-1|341 Thm. §15.1]].
+> - The term-by-term integration in (c) uses the M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], and the integration of uniform limits, [[§33 Properties of the Riemann Integral#^thm-33-12|451 Thm. §33.12]]; in complex form it is computing the $n = 1$ Fourier coefficient of $\theta \mapsto e^{2e^{-i\theta}}$, as in [[§19★ Complex Methods#^thm-19-1|341 Thm. §19.1]].

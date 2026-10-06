@@ -19,7 +19,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 ^def-18-1
 
 > [!remark]- Connections
-> - The topological definition: [[§16 Limit Point Compactness#^def-16-3|590 Def. §16.3]].
+> - The topological definition: [[§19 Limit Point Compactness#^def-19-3|590 Def. §19.3]].
 
 > [!example] Example §18.1: The Closed Unit Ball in $\mathbb{F}^n$
 > In $\mathbb{F}^n$ ($\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$) with any norm, the closed unit ball
@@ -35,7 +35,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 *Uses:* [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]], [[Bolzano–Weierstrass Theorem|451 §11.5]], [[§10 Normed Linear Spaces#^prop-10-4|§10.4]]
 
 > [!remark]- Connections
-> - In $\mathbb{R}^n$ with the Euclidean norm: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]] (Bolzano–Weierstrass in $\mathbb{R}^n$), and closed bounded sets are compact by [[Heine–Borel Theorem|Heine–Borel (590 §15.12)]].
+> - In $\mathbb{R}^n$ with the Euclidean norm: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]] (Bolzano–Weierstrass in $\mathbb{R}^n$), and closed bounded sets are compact by [[Heine–Borel Theorem|Heine–Borel (590 §18.12)]].
 
 > [!definition] Definition §18.2: Open Set; Open Cover; Compact
 > Let $X$ be a normed linear space (or metric space). A subset $U \subset X$ is **open** if every point of $U$ is a metric interior point of $U$ (Definition [[§10 Normed Linear Spaces#^def-10-9|§10.9]]). An **open cover** of $K \subset X$ is a collection of open sets whose union contains $K$. $K$ is **compact** if every open cover of $K$ has a finite subcollection that still covers $K$.
@@ -43,7 +43,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 ^def-18-2
 
 > [!remark]- Connections
-> - Topology: open sets of the [[§11 Metric Topology#^def-11-3|metric topology (590 Def. §11.3)]], covers [[§15 Compact Spaces#^def-15-1|590 Def. §15.1]], compactness [[§15 Compact Spaces#^def-15-2|590 Def. §15.2]].
+> - Topology: open sets of the [[§12 Metric Topology#^def-12-3|metric topology (590 Def. §12.3)]], covers [[§18 Compact Spaces#^def-18-1|590 Def. §18.1]], compactness [[§18 Compact Spaces#^def-18-2|590 Def. §18.2]].
 
 > [!theorem] Theorem §18.1: Compactness in Metric Spaces
 > A subset of a normed linear space (or metric space) is compact if and only if it is sequentially compact.
@@ -51,14 +51,14 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 ^thm-18-1
 
 > [!proof]+ Proof
-> Not covered in lecture: the question was raised in class and set aside. This is point-set topology; see J. Munkres, *Topology*, [[§16 Limit Point Compactness#^thm-16-2|§28]].
+> Not covered in lecture: the question was raised in class and set aside. This is point-set topology; see J. Munkres, *Topology*, [[§19 Limit Point Compactness#^thm-19-4|§28]].
 
 ^pf-18-1
 
-*Uses:* [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
+*Uses:* [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]
 
 > [!remark]- Connections
-> - Home: [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]] (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).
+> - Home: [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]] (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).
 
 > [!remark] Remark: Which Compactness
 > Only the sequential form is used in these notes, and Theorem [[§18 Compactness and the Unit Ball#^thm-18-1|§18.1]] is not needed for anything that follows; it records that “compact” is unambiguous here.
@@ -263,7 +263,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 
 > [!remark]- Connections
 > - The finite-dimensional contrast: [[§18 Compactness and the Unit Ball#^ex-18-1|Ex. §18.1]], resting on [[Heine–Borel Theorem|Heine–Borel]] / [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]].
-> - Hence no infinite-dimensional normed space is locally compact ([[§17 Local Compactness#^def-17-1|590 Def. §17.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§17 Local Compactness#^ex-17-5|590 Ex. §17.5]].
+> - Hence no infinite-dimensional normed space is locally compact ([[§20 Local Compactness#^def-20-1|590 Def. §20.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§20 Local Compactness#^ex-20-5|590 Ex. §20.5]].
 
 > [!remark] Remark: Where Infinite-Dimensionality Enters
 > This was asked in lecture. The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.

@@ -38,7 +38,7 @@ tags: [functional-analysis, math556]
 
 ^pf-27-1
 
-*Uses:* [[§26 Boundedness and Continuity#^thm-26-5|§26.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§27 Dual Spaces#^def-27-1|Def. §27.1]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-8|451 §10.8]]
+*Uses:* [[§26 Boundedness and Continuity#^thm-26-5|§26.5]], [[§11 Completeness#^def-11-2|Def. §11.2]], [[§27 Dual Spaces#^def-27-1|Def. §27.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
 
 > [!remark] Note: The Pairing $\langle x, \ell \rangle$
 > For $\ell \in X'$ and $x \in X$ one often writes $\ell(x) = \langle x, \ell \rangle$. This is only notation, borrowed from inner product spaces: $\langle x, \ell \rangle$ pairs an element of $X$ with an element of $X'$, and is linear in $x$. In general $X'$ is a different space from $X$; on a Hilbert space the two can be identified, by the next theorem.
@@ -72,7 +72,7 @@ tags: [functional-analysis, math556]
 
 > [!remark]- Connections
 > - This course's first statement, without norms: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|§23.2]]; the companion chapter's isometric Riesz map: [[§30 Bras, Kets, and the Riesz Map#^thm-30-2|§30.2]].
-> - Finite-dimensional home: [[Riesz representation theorem]] ([[§20 Orthonormal Bases#^ladr-6-42|LADR 6.42]]).
+> - Finite-dimensional home: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]]).
 
 > [!theorem] Corollary §27.3: The Riesz Map: $H' \cong H$
 > The map $R : H \to H'$, $R(a) = \ell_a$, is one-to-one, onto, and norm-preserving: $\|R(a)\| = \|a\|$. It is additive, and $R(ca) = \bar{c}\, R(a)$ for scalars $c$; so $R$ is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$.
@@ -116,7 +116,7 @@ tags: [functional-analysis, math556]
 ^rem-27-3
 
 > [!remark]- Connections
-> - Vault home of Hölder's inequality: [[Hölder's Inequality]] ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-5|551 §19.5]]).
+> - Vault home of Hölder's inequality: [[Hölder's Inequality]] ([[§34 Normed Linear Spaces and Lᵖ Spaces#^thm-34-5|551 §34.5]]).
 
 > [!theorem] Theorem §27.4: The Dual of $L^p$
 > Let $1 \le p < \infty$ and $\frac1p + \frac{1}{p'} = 1$. Then $(L^p)' = L^{p'}$: every $\ell \in (L^p)'$ is $\ell(f) = \int f g$ for a unique $g \in L^{p'}$, with $\|\ell\| = \|g\|_{L^{p'}}$.

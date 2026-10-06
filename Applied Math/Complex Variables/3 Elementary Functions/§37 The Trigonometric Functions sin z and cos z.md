@@ -15,7 +15,7 @@ Euler's formula expresses $\sin x$ and $\cos x$ through $e^{\pm ix}$, and the sa
 
 ## Definition and Derivatives
 
-Euler's formula ([[§7 Exponential Form#^def-7-2|Definition §7.2]]) gives $e^{ix} = \cos x + i\sin x$ and $e^{-ix} = \cos x - i\sin x$ for every real $x$. Subtracting and adding, $e^{ix} - e^{-ix} = 2i\sin x$ and $e^{ix} + e^{-ix} = 2\cos x$, that is,
+Euler's formula ([[§7 Exponential Form#^def-7-4|Definition §7.4]]) gives $e^{ix} = \cos x + i\sin x$ and $e^{-ix} = \cos x - i\sin x$ for every real $x$. Subtracting and adding, $e^{ix} - e^{-ix} = 2i\sin x$ and $e^{ix} + e^{-ix} = 2\cos x$, that is,
 
 $$
 \sin x = \frac{e^{ix} - e^{-ix}}{2i} \qquad\text{and}\qquad \cos x = \frac{e^{ix} + e^{-ix}}{2} .
@@ -35,7 +35,7 @@ $$
 ^def-37-1
 
 > [!remark]- Connections
-> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]], [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]], [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]].
+> - The formulas for real $x$ are Euler's formula solved for $\cos$ and $\sin$: [[§19 Complex Roots of the Characteristic Equation#^def-19-1|331 Def. §19.1]], [[§64 Complex Numbers#^rem-64-1|235 Remark: Euler's Formula]]. The Maclaurin series $\sin x = \sum (-1)^nx^{2n+1}/(2n+1)!$ and $\cos x = \sum (-1)^nx^{2n}/(2n)!$ ([[§91 Taylor Series of Important Functions#^thm-91-1|Calc Thm. §91.1]], [[§91 Taylor Series of Important Functions#^thm-91-2|Calc Thm. §91.2]]) remain valid for all complex $z$, as the Maclaurin series of these entire functions, [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]].
 
 > [!theorem] Theorem §37.1: sin z and cos z Are Entire
 > The functions $\sin z$ and $\cos z$ are entire, and
@@ -150,7 +150,7 @@ A variety of identities carry over from trigonometry.
 *Uses:* [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Def. §37.1]], [[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|§37.1]], [[§37 The Trigonometric Functions sin z and cos z#^prop-37-2|§37.2]], [[§30 The Exponential Function#^thm-30-2|§30.2]]
 
 > [!remark]- Connections
-> - The real addition formulas, proved geometrically: [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]]. Here they follow from the law of exponents alone, and they hold for complex arguments; conversely, for real arguments the proof above is a second proof of the calculus formulas, given Euler's formula. [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|331 Prop. §15.1]] runs the argument the other way, deriving the law of exponents from the real addition formulas.
+> - The real addition formulas, proved geometrically: [[§142 Trigonometry#^thm-142-7|Calc Thm. §142.7]]. Here they follow from the law of exponents alone, and they hold for complex arguments; conversely, for real arguments the proof above is a second proof of the calculus formulas, given Euler's formula. [[§19 Complex Roots of the Characteristic Equation#^prop-19-1|331 Prop. §19.1]] runs the argument the other way, deriving the law of exponents from the real addition formulas.
 
 > [!theorem] Corollary §37.4: Double Angles, Shifts, the Pythagorean Identity, Periods
 > For all $z$:
@@ -287,7 +287,7 @@ $$
 
 ^pf-37-6
 
-*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|§37.5]], [[§24 Hyperbolic Functions#^thm-24-1|Calc Thm. §24.1]] ($\cosh^2y - \sinh^2y = 1$)
+*Uses:* [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|§37.5]], [[§27 Hyperbolic Functions#^thm-27-1|Calc Thm. §27.1]] ($\cosh^2y - \sinh^2y = 1$)
 
 ## Examples
 

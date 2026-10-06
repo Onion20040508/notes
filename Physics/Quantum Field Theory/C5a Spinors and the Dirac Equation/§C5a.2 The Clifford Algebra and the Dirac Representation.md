@@ -155,7 +155,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 >
 > **2. Passing one γ through Γ_A.** If $|A| = k$: for $\mu \in A$, $\gamma^\mu$ anticommutes with the $k - 1$ other factors and commutes with itself, so $\gamma^\mu\Gamma_A = (-1)^{k-1}\Gamma_A\gamma^\mu$; for $\nu \notin A$, $\gamma^\nu\Gamma_A = (-1)^k\Gamma_A\gamma^\nu$.
 >
-> **3. Traces.** Let $A \ne \varnothing$. If $k$ is even, pick $\mu \in A$: by step 2, $\Gamma_A = -(\gamma^\mu)^{-1}\Gamma_A\gamma^\mu$, and cyclicity of the trace ([[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]) gives $\operatorname{tr}\Gamma_A = -\operatorname{tr}\Gamma_A = 0$. If $k$ is odd ($k = 1$ or $3$), there is $\nu \notin A$, and $\Gamma_A = -(\gamma^\nu)^{-1}\Gamma_A\gamma^\nu$ gives the same.
+> **3. Traces.** Let $A \ne \varnothing$. If $k$ is even, pick $\mu \in A$: by step 2, $\Gamma_A = -(\gamma^\mu)^{-1}\Gamma_A\gamma^\mu$, and cyclicity of the trace ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]) gives $\operatorname{tr}\Gamma_A = -\operatorname{tr}\Gamma_A = 0$. If $k$ is odd ($k = 1$ or $3$), there is $\nu \notin A$, and $\Gamma_A = -(\gamma^\nu)^{-1}\Gamma_A\gamma^\nu$ gives the same.
 >
 > **4. Independence.** Suppose $\sum_Ac_A\Gamma_A = 0$. Multiply by $\Gamma_B^{-1}$ and take the trace: $\Gamma_B^{-1}\Gamma_A = c_{BB}\Gamma_B\Gamma_A = \pm\Gamma_{A\triangle B}$ is traceless unless $A = B$ (step 3), when it is $\mathbb 1$ with trace $n$. So $nc_B = 0$, $c_B = 0$ for every $B$. Sixteen independent elements of the $n^2$-dimensional space $M_n(\mathbb C)$ need $n^2 \ge 16$: $n \ge 4$.
 >
@@ -169,7 +169,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 
 ^der-c5a-2-4
 
-*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§31 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
+*Uses:* [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
 
 > [!theorem] Theorem §C5a.2.5: Pauli's Fundamental Theorem
 > 1. If $\gamma^\mu$ and $\gamma'^\mu$ are two sets of $4\times4$ Dirac matrices ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]]), there is an invertible $U$ with $\gamma'^\mu = U\gamma^\mu U^{-1}$ for all $\mu$, unique up to a nonzero factor. Conversely, $U\gamma^\mu U^{-1}$ is a set of Dirac matrices for every invertible $U$.

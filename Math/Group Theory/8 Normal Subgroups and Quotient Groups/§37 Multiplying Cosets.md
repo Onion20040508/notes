@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Reference: Pinter Ch. 15.*
 
 > [!remark] Remark: Motivation: Quotients
-> A recurring construction throughout mathematics: impose an equivalence relation on an object and try to transport its structure to the set of equivalence classes. In topology this produces [[§12 Quotient Topology#^def-12-3|quotient spaces]] (590 notes); in algebra it sometimes works and sometimes does not, and it is important to understand exactly when. Here the object is a group $G$, the equivalence relation is left congruence modulo a subgroup $H$ ([[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]), and the classes are the left cosets $gH$, forming the set $G/H$. The model case is $G = \mathbb{Z}$, $H = n\mathbb{Z}$, where the classes are residue classes and $\mathbb{Z}/n\mathbb{Z}$ inherits addition ([[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]]).
+> A recurring construction throughout mathematics: impose an equivalence relation on an object and try to transport its structure to the set of equivalence classes. In topology this produces [[§13 Quotient Topology#^def-13-3|quotient spaces]] (590 notes); in algebra it sometimes works and sometimes does not, and it is important to understand exactly when. Here the object is a group $G$, the equivalence relation is left congruence modulo a subgroup $H$ ([[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]), and the classes are the left cosets $gH$, forming the set $G/H$. The model case is $G = \mathbb{Z}$, $H = n\mathbb{Z}$, where the classes are residue classes and $\mathbb{Z}/n\mathbb{Z}$ inherits addition ([[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]]).
 >
 > *Vector spaces (lecture 9/25).* For a vector space $V$ and a subspace $W$ there is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] $V/W$ in which the vectors of $W$ are set to zero. The construction is the same as for groups; it is easier only because addition of vectors is commutative, so every subspace plays the role of a normal subgroup. For groups one must distinguish subgroups from normal subgroups.
 
@@ -52,6 +52,6 @@ Since the right side is computed from the chosen representatives $g_1, g_2$, thi
 *Left: for $H = \{e, (1\,2)\}$, both $e$ and $(1\,2)$ represent the coset $H$, but multiplying them by $(1\,3)$ (red) lands in two different cosets, $(1\,3)H$ and $(2\,3)H$, so $H \cdot (1\,3)H$ has no well-defined value. This is the ($\Rightarrow$) step of the proof with $h = (1\,2)$ and $g = (1\,3)$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin H$. Right: for the normal subgroup $A_3$, every representative of $A_3$ times $(1\,3)$ lands in the same coset $(1\,2)A_3$.*
 
 > [!remark]- Connections
-> - 590 version of this computation: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-19|Why Normality is Required]].
+> - 590 version of this computation: [[§27 Free Groups and Presentations#^rem-27-19|Why Normality is Required]].
 > - Vector-space version (automatic, since addition commutes): [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]].
 > - Worksheet form of this condition: item (5) of [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]].

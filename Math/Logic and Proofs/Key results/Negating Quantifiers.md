@@ -12,7 +12,7 @@ tags: [logic-and-proofs, hub]
 
 ## Its proof uses
 - [[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1: Basic Facts About Subsets]]
-- [[§6 The Language of Set Theory#^def-6-8|Definition §6.8: Difference]]
+- [[§6a Operations on Sets#^def-6a-4|Definition §6a.4: Difference]]
 - [[§7 Quantifiers#^def-7-1|Definition §7.1: Universal Statement]]
 - [[§7 Quantifiers#^def-7-2|Definition §7.2: Existential Statement]]
 

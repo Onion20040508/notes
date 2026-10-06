@@ -2,12 +2,12 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 12
-section: 134
+section: "134★"
 bc: "134"
 aliases: ["B&C 134"]
 tags: [complex-variables, math342, extension]
 ---
-← [[§133★ Electrostatic Potential about an Edge of a Conducting Plate]] · ↑ [[· 12★ Integral Formulas of the Poisson Type]] · [[§135★ Dirichlet Problem for a Disk]] →
+← [[§133a The Square, the Equilateral Triangle and the Step]] · ↑ [[· 12★ Integral Formulas of the Poisson Type]] · [[§135★ Dirichlet Problem for a Disk]] →
 
 *Brown–Churchill, Section 134.*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
@@ -44,7 +44,7 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 > f(re^{i\theta}) = \frac{r_0^2 - r^2}{2\pi}\int_0^{2\pi}\frac{f(r_0e^{i\phi})}{|s - z|^2}\,d\phi , \qquad (4)
 > $$
 >
-> where, by the law of cosines ([[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]]),
+> where, by the law of cosines ([[§142 Trigonometry#^thm-142-6|Calc Thm. §142.6]]),
 >
 > $$
 > |s - z|^2 = r_0^2 - 2r_0r\cos(\phi - \theta) + r^2 . \qquad (5)
@@ -104,8 +104,8 @@ expresses the value of $f$ at any point $z$ interior to $C_0$ in terms of its va
 *Uses:* [[§54 Cauchy Integral Formula#^thm-54-1|§54.1]] (Cauchy integral formula), [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|§51.3]] (Cauchy–Goursat), [[§134★ Poisson Integral Formula#^def-134-1|Def. §134.1]]
 
 > [!remark]- Connections
-> - The same formula is [[§39 Potential in a Disk#^thm-39-3|341 Thm. §39.3]], proved there from the other end: solve Dirichlet's problem in the disk by separation of variables ([[§39 Potential in a Disk#^thm-39-2|341 Thm. §39.2]]), substitute the Fourier coefficients into the series, and sum the kernel $1 + 2\sum\rho^n\cos n\psi$ as a geometric series. Here the kernel comes from the Cauchy integral formula and the inverse point, with no series at all; [[§135★ Dirichlet Problem for a Disk#^prop-135-3|Proposition §135.3]] recovers the series form, closing the circle between the two proofs.
-> - The kernel is, up to the factor $\frac{1}{2\pi r_0}$, the normal derivative of the Green's function of the disk; the general representation of a harmonic function by its boundary values comes from Green's second identity with the fundamental solution $\ln r$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-3|452 Thm. §17.3]] and [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]].
+> - The same formula is [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]], proved there from the other end: solve Dirichlet's problem in the disk by separation of variables ([[§48 Potential in a Disk#^thm-48-2|341 Thm. §48.2]]), substitute the Fourier coefficients into the series, and sum the kernel $1 + 2\sum\rho^n\cos n\psi$ as a geometric series. Here the kernel comes from the Cauchy integral formula and the inverse point, with no series at all; [[§135★ Dirichlet Problem for a Disk#^prop-135-3|Proposition §135.3]] recovers the series form, closing the circle between the two proofs.
+> - The kernel is, up to the factor $\frac{1}{2\pi r_0}$, the normal derivative of the Green's function of the disk; the general representation of a harmonic function by its boundary values comes from Green's second identity with the fundamental solution $\ln r$, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-3|452 Thm. §28.3]] and [[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]].
 
 Formula (6) holds for every function $u$ harmonic in a domain containing the closed disk $|z| \le r_0$, not only for the real part of a given $f$: such a $u$ is harmonic in a slightly larger open disk, which is simply connected, so it has a harmonic conjugate $v$ there ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]), and $f = u + iv$ is analytic inside and on $C_0$.
 
@@ -172,7 +172,7 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 *Uses:* [[§134★ Poisson Integral Formula#^thm-134-1|§134.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 > [!remark]- Connections
-> - Properties (a), (e), (f) are [[§39 Potential in a Disk#^rem-39-2|341 Remark: The Poisson Kernel Is a Weight]]: the solution is a weighted average of the boundary values, which gives the maximum principle for the disk and, at $r = 0$, the mean value property [[§39 Potential in a Disk#^thm-39-4|341 Thm. §39.4]].
+> - Properties (a), (e), (f) are [[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-2|341 Remark: The Poisson Kernel Is a Weight]]: the solution is a weighted average of the boundary values, which gives the maximum principle for the disk and, at $r = 0$, the mean value property [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]].
 
 Formula (6) can now be written
 

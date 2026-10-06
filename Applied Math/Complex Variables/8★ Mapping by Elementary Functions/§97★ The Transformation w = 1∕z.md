@@ -2,7 +2,7 @@
 type: section
 subject: "[[Complex Variables]]"
 chapter: 8
-section: 97
+section: "97★"
 bc: "97"
 aliases: ["B&C 97"]
 tags: [complex-variables, math342, extension]
@@ -120,7 +120,7 @@ The reciprocal is undefined at $0$ and gives no finite value at $\infty$, but th
 *Uses:* [[§97★ The Transformation w = 1∕z#^def-97-2|Def. §97.2]], [[§17 Limits Involving the Point at Infinity#^thm-17-1|§17.1]], [[§18 Continuity#^prop-18-1|§18.1]]
 
 > [!remark]- Connections
-> - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, homeomorphic to the sphere $S^2$ by stereographic projection: [[§17 Local Compactness#^ex-17-7|590 Ex. §17.7]], [[§17 Local Compactness#^def-17-3|590 Def. §17.3]]. B&C's neighborhoods $|z| > 1/\varepsilon$ of $\infty$ are exactly the complements of closed disks, as in that topology, and Theorem §97.2 says that $T$ is a homeomorphism of the sphere onto itself (on $S^2$ it is the rotation through $\pi$ about the real axis).
+> - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, homeomorphic to the sphere $S^2$ by stereographic projection: [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]], [[§20 Local Compactness#^def-20-3|590 Def. §20.3]]. B&C's neighborhoods $|z| > 1/\varepsilon$ of $\infty$ are exactly the complements of closed disks, as in that topology, and Theorem §97.2 says that $T$ is a homeomorphism of the sphere onto itself (on $S^2$ it is the rotation through $\pi$ about the real axis).
 
 ## Examples
 

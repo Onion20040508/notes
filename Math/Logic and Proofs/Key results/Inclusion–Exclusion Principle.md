@@ -12,7 +12,7 @@ tags: [logic-and-proofs, hub]
 
 ## Its proof uses
 - [[§5 The Induction Principle#^def-5-1|Definition §5.1: The Induction Principle]]
-- [[§6 The Language of Set Theory#^thm-6-3|Theorem §6.3: The Laws of the Algebra of Sets]]
+- [[§6a Operations on Sets#^thm-6a-2|Theorem §6a.2: The Laws of the Algebra of Sets]]
 - [[§10 Counting#^prop-10-7|Proposition §10.7: Inclusion–Exclusion for Two Sets]]
 
 ## Used in (Logic and Proofs)

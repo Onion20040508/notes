@@ -11,7 +11,7 @@ tags: [subject, calculus]
 ---
 # Calculus
 
-Single-variable and multivariable calculus, following James Stewart, Daniel Clegg and Saleem Watson, *Calculus: Early Transcendentals*, 9th edition (Cengage, 2021), section by section: §1–§115 are Stewart's Sections 1.1–16.9 in order (each note's alias gives the Stewart number, e.g. "Stewart 2.5"), and §116–§121 are his Appendices A–E and G (the proofs of Appendix F are written out in the sections of the theorems they prove). Chapters 12–16 are MATH 233 (UMass Amherst, Spring 2023, Maria Nikolaou); its practice exams and reviews supply worked examples (*Source: 233 …*).
+Single-variable and multivariable calculus, following James Stewart, Daniel Clegg and Saleem Watson, *Calculus: Early Transcendentals*, 9th edition (Cengage, 2021), section by section: §1–§137 are Stewart's Sections 1.1–16.9 in order (each note's alias gives the Stewart number, e.g. "Stewart 2.5"), and §139–§144 are his Appendices A–E and G (the proofs of Appendix F are written out in the sections of the theorems they prove). Chapters 12–16 are MATH 233 (UMass Amherst, Spring 2023, Maria Nikolaou); its practice exams and reviews supply worked examples (*Source: 233 …*).
 
 These are the computational notes: every definition and result Stewart states, every proof he gives, his methods, and a lean selection of worked examples. The rigorous theory lives in the Math subjects — limits, continuity, derivatives, the integral and series in [[Single Variable Analysis]], several variables and vector calculus in [[Multivariable Analysis]], vectors and determinants in [[Linear Algebra]] — and the main items here carry a folded *Connections* callout pointing to their rigorous treatment.
 
@@ -189,9 +189,9 @@ graph TD
 ## Course record (MATH 233)
 | Exam | Coverage | Notes |
 |---|---|---|
-| Exam 1 (March 29, 2023) | Stewart 12.1–12.6, 13.1–13.4, 14.1–14.6 | §80–§95 |
-| Exam 2 (April 25, 2023) | 14.7, 14.8, 15.1–15.8 | §96–§105 |
-| Final (May 23, 2023) | cumulative, emphasis on Chapter 16 | §80–§115 |
+| Exam 1 (March 29, 2023) | Stewart 12.1–12.6, 13.1–13.4, 14.1–14.6 | §93–§111 |
+| Exam 2 (April 25, 2023) | 14.7, 14.8, 15.1–15.8 | §113–§123 |
+| Final (May 23, 2023) | cumulative, emphasis on Chapter 16 | §93–§137 |
 
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 

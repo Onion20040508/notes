@@ -7,7 +7,7 @@ eccles: "Ch. 6"
 aliases: ["Eccles 6"]
 tags: [logic-and-proofs, mat250]
 ---
-← [[§5 The Induction Principle]] · ↑ [[· 2 Sets and Functions]] · [[§7 Quantifiers]] →
+← [[§5 The Induction Principle]] · ↑ [[· 2 Sets and Functions]] · [[§6a Operations on Sets]] →
 
 *Eccles, Chapter 6 · MAT 250 HW3 (Exercises 6.1, 6.3, 6.4, 6.6) · MAT 200 HW1 (Problem 5).*
 
@@ -102,7 +102,7 @@ The standard sets of numbers, $\Z$, $\Z^+$, $\N = \{0, 1, 2, \ldots\}$, $\Q$, $\
 
 ^ex-6-3
 
-Quadratic inequalities are solved in the same way, with the sign rules for products in place of the zero-product rule: [[§6 The Language of Set Theory#^ex-6-10|Example §6.10]].
+Quadratic inequalities are solved in the same way, with the sign rules for products in place of the zero-product rule: [[§6a Operations on Sets#^ex-6a-5|Example §6a.5]].
 
 > [!definition] Definition §6.4: The Empty Set
 > The **empty set** $\emptyset$ is the unique set which has no elements at all. (Uniqueness: [[§6 The Language of Set Theory#^prop-6-1|Proposition §6.1]](4).)

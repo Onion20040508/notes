@@ -11,10 +11,12 @@ tags: [complex-variables, hub]
 - [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1: Antiderivatives and Independence of Path]], in [[§49 Proof of the Theorem (Antiderivatives)]]
 
 ## Its proof uses
-- [[§12★ Regions in the Complex Plane#^def-12-4|Definition §12.4: Connected Set, Domain, Region]]
+- [[§12★ Regions in the Complex Plane#^def-12-9|Definition §12.9: Connected Set]]
+- [[§12★ Regions in the Complex Plane#^def-12-10|Definition §12.10: Domain]]
 - [[§42 Definite Integrals of Functions w(t)#^thm-42-2|Theorem §42.2: Fundamental Theorem of Calculus for w(t)]]
 - [[§43 Contours#^prop-43-5|Proposition §43.5: Chain Rule Along an Arc]]
-- [[§44 Contour Integrals#^def-44-2|Definition §44.2: Opposite, Sum and Difference of Contours]]
+- [[§44 Contour Integrals#^def-44-2|Definition §44.2: Opposite of a Contour]]
+- [[§44 Contour Integrals#^def-44-3|Definition §44.3: Sum and Difference of Contours]]
 - [[§44 Contour Integrals#^thm-44-2|Theorem §44.2: Properties of Contour Integrals]]
 - [[§45 Some Examples (Contour Integrals)#^prop-45-1|Proposition §45.1: The Integral of 1 Along a Contour]]
 - [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2: The ML-Inequality]]
@@ -31,5 +33,5 @@ tags: [complex-variables, hub]
 
 ## Connections
 - **Compare.** [[§45 Some Examples (Contour Integrals)#^ex-45-2|Example §45.2: The Integral of z Depends Only on the Endpoints]] is the first instance of path independence, found by direct computation before the theorem.
-- This is the complex form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Calc Thm. §109.2]] (path independence $\Leftrightarrow$ zero around closed paths) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]] (path independence $\Rightarrow$ a potential exists, constructed by the same integral from a base point). Here a single complex derivative $F' = f$ replaces the two conditions $\phi_x = P$, $\phi_y = Q$, because $F' = f$ along both a horizontal and a vertical segment are the same statement.
-- The polygonal connectedness used to define $F$ is path-connectedness, [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]; for open subsets of the plane it is equivalent to connectedness.
+- This is the complex form of [[§128 The Fundamental Theorem for Line Integrals#^thm-128-2|Calc Thm. §128.2]] (path independence $\Leftrightarrow$ zero around closed paths) and [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Calc Thm. §128.3]] (path independence $\Rightarrow$ a potential exists, constructed by the same integral from a base point). Here a single complex derivative $F' = f$ replaces the two conditions $\phi_x = P$, $\phi_y = Q$, because $F' = f$ along both a horizontal and a vertical segment are the same statement.
+- The polygonal connectedness used to define $F$ is path-connectedness, [[§16 Connected Subspaces of ℝ#^def-16-4|590 Def. §16.4]]; for open subsets of the plane it is equivalent to connectedness.

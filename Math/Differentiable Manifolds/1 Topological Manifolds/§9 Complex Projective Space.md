@@ -40,7 +40,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 > [!remark]- Connections
 > - As an orbit space of $\mathrm{U}(1) = S^1$: [[§12 Group Actions and Orbit Spaces#^ex-12-3|Ex. §12.3]] (cf. group actions and orbits, [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]]); charts and smooth structure in [[§17 Projective Spaces as Smooth Manifolds#^def-17-2|Def. §17.2]], [[§17 Projective Spaces as Smooth Manifolds#^thm-17-2|§17.2]]; the projection is a submersion, [[§37 Projective Spaces and the Hopf Fibration#^ex-37-2|Ex. §37.2]].
-> - Real analogue in MATH 590: [[§28 Fundamental Group of Some Surfaces#^def-28-2|590 Def. §28.2 (Projective n-Space)]], [[Projective plane]].
+> - Real analogue in MATH 590: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §9.1: $\mathbb{CP}^n$ is Hausdorff and Second Countable
 > The quotient topology on $\mathbb{CP}^n$ is $T_2$ and second countable.
@@ -80,7 +80,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1
 
-*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§15 Compact Spaces#^thm-15-8|590 §15.8]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§11 Metric Topology#^thm-11-4|590 §11.4]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§12 Metric Topology#^thm-12-4|590 §12.4]]
 
 > [!remark]- Connections
 > - The general form for compact groups acting on compact Hausdorff spaces: [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], of which this is a special case ([[§12 Group Actions and Orbit Spaces#^rem-12-9|§12, Remark]]).
@@ -104,7 +104,7 @@ The following was set up in the last four minutes of lecture; the proof of the c
 
 ^pf-9-1-2
 
-*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§16 Limit Point Compactness#^thm-16-2|590 §16.2]]
+*Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]
 
 > [!remark] Remark
 > The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§12 Group Actions and Orbit Spaces#^cor-12-4|Corollary §12.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§12 Group Actions and Orbit Spaces#^ex-12-6|Example §12.6]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.

@@ -43,7 +43,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-ex-8-1
 
-*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (4), [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
+*Uses:* [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (4), [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 ![[m591-2-1.svg]]
 *The hemisphere chart: projection $(x,y,z) \mapsto (x,y)$ carries the open northern hemisphere $U = \{z > 0\}$ homeomorphically onto the open unit disk in $\mathbb{R}^2$.*
@@ -60,7 +60,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-8-1
 
-*Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§18 Countability Axioms#^thm-18-3|590 §18.3]]
+*Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 > [!remark]- Connections
 > - The hemisphere charts as an atlas: [[§16 Differentiable Structures#^def-16-6|Def. §16.6]]; the circle case with its smooth atlases is [[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]].

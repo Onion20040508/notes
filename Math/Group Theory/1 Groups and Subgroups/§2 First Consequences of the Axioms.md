@@ -99,10 +99,10 @@ tags: [group-theory, math493]
 *Uses:* [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]]
 
 > [!remark]- Connections
-> - Both uniqueness facts (§2.2, §2.3) appear in MATH 590 as a single remark: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-2|Uniqueness of Identity and Inverses]]; the linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-60|Inverse is unique]].
+> - Both uniqueness facts (§2.2, §2.3) appear in MATH 590 as a single remark: [[§26 Algebra Prerequisites꞉ Groups#^rem-26-2|Uniqueness of Identity and Inverses]]; the linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-60|Inverse is unique]].
 
 > [!remark] Remark: The Uniqueness Technique
-> [[§2 First Consequences of the Axioms#^prop-2-3|WS 1.3]] gives the standard technique for computing inverses: since the inverse of $x$ is *unique*, to prove $y = x^{-1}$ it suffices to verify that $y$ satisfies the defining property $x y = y x = e$. [[§2 First Consequences of the Axioms#^prop-2-4|WS 1.4]] and [[§4 Subgroups#^prop-4-5|1.5]] below, and the identity $(AB)^{-1} = B^{-1} A^{-1}$ for [[§10 Invertibility and Isomorphisms#^ladr-3-80|matrices]], are all proved this way. (Compare the [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|590 notes]], where the same pattern proves bijectivity via a two-sided inverse.)
+> [[§2 First Consequences of the Axioms#^prop-2-3|WS 1.3]] gives the standard technique for computing inverses: since the inverse of $x$ is *unique*, to prove $y = x^{-1}$ it suffices to verify that $y$ satisfies the defining property $x y = y x = e$. [[§2 First Consequences of the Axioms#^prop-2-4|WS 1.4]] and [[§4 Subgroups#^prop-4-5|1.5]] below, and the identity $(AB)^{-1} = B^{-1} A^{-1}$ for [[§10 Invertibility and Isomorphisms#^ladr-3-80|matrices]], are all proved this way. (Compare the [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|590 notes]], where the same pattern proves bijectivity via a two-sided inverse.)
 
 ^rem-2-2
 
@@ -171,7 +171,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - For linear maps between spaces of the same finite dimension one-sided also suffices, for a different reason (dimension): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]]; the infinite-dimensional shifts on $\mathbb{F}^\infty$ fail it exactly like the shift on $\mathbb{N}$ ([[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]]).
-> - Functions: a left inverse gives injectivity, a right inverse surjectivity: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|Bijectivity via Two-Sided Inverse]].
+> - Functions: a left inverse gives injectivity, a right inverse surjectivity: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Bijectivity via Two-Sided Inverse]].
 > - See also: the matrix case in 591, where $gg^\ast = I$ already gives $g^\ast g = I$ (by determinants), so U(n) is cut out by one equation: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|591 Lemma §22.3]].
 
 > [!theorem] Proposition §2.7: Unique Solvability of Linear Equations

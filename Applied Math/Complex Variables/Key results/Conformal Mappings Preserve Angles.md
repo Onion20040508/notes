@@ -12,7 +12,8 @@ tags: [complex-variables, hub]
 
 ## Its proof uses
 - [[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1: The Argument of a Product]]
-- [[§43 Contours#^def-43-4|Definition §43.4: Smooth Arc; Unit Tangent]]
+- [[§43 Contours#^def-43-7|Definition §43.7: Smooth Arc]]
+- [[§43 Contours#^def-43-8|Definition §43.8: Unit Tangent]]
 - [[§43 Contours#^prop-43-5|Proposition §43.5: Chain Rule Along an Arc]]
 - [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Definition §112.1: Angle of Rotation]]
 
@@ -22,4 +23,4 @@ tags: [complex-variables, hub]
 - [[§127★ Mapping the Real Axis onto a Polygon#^prop-127-1|Proposition §127.1: Constant Argument Gives a Straight Image]]
 
 ## Connections
-- Why it works, in matrix form: by the Cauchy–Riemann equations the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]], the Jacobian).
+- Why it works, in matrix form: by the Cauchy–Riemann equations the Jacobian matrix of $(x, y) \mapsto (u, v)$ at $z_0$ is $\begin{bmatrix} u_x & -v_x \\ v_x & u_x \end{bmatrix}$ with $u_x + iv_x = f'(z_0)$, a rotation–scaling matrix: rotation through $\arg f'(z_0)$ followed by scaling by $|f'(z_0)|$, [[§44 Complex Eigenvalues#^prop-44-3|235 Prop. §44.3]]. A linear map of that form preserves angles; the tangent vector $z'(t_0)$ is carried to $w'(t_0)$ by this matrix ([[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]], the Jacobian).

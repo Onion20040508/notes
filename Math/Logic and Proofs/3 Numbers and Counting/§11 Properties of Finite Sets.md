@@ -11,11 +11,11 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 11 and Problems III (Q5, Q9–Q11, Q14) · MAT 200 lecture (syllabus week 14).*
 
-Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first recalls the lemma that §10 proves ([[§10 Counting#^lem-10-2|Lemma §10.2]]), which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
+Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first recalls the lemma that §10 proves ([[§10 Counting#^lem-10-1|Lemma §10.1]]), which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
 
 ## 11.1 The Pigeonhole Principle
 
-The key step in showing that cardinality is well defined was [[§10 Counting#^lem-10-2|Lemma §10.2]]: *if there is an injection $\N_m \to \N_n$, then $m \le n$.* Its proof, which Eccles gives at the start of Chapter 11, is given with the lemma in §10: [[§10 Counting#^pf-10-2|proof of Lemma §10.2]].
+The key step in showing that cardinality is well defined was [[§10 Counting#^lem-10-1|Lemma §10.1]]: *if there is an injection $\N_m \to \N_n$, then $m \le n$.* Its proof, which Eccles gives at the start of Chapter 11, is given with the lemma in §10: [[§10 Counting#^pf-10-1|proof of Lemma §10.2]].
 
 The lemma passes at once from the standard sets $\N_n$ to arbitrary finite sets, by composing with bijections.
 
@@ -27,11 +27,11 @@ The lemma passes at once from the standard sets $\N_n$ to arbitrary finite sets,
 ^cor-11-1
 
 > [!proof]+ Proof
-> Let $|X| = m$ and $|Y| = n$, with bijections $g_1 : \N_m \to X$ and $g_2 : \N_n \to Y$. Then $g_2^{-1} \circ f \circ g_1 : \N_m \to X \to Y \to \N_n$ is a composite of injections, hence an injection, and Lemma [[§10 Counting#^lem-10-2|§10.2]] gives $m \le n$.
+> Let $|X| = m$ and $|Y| = n$, with bijections $g_1 : \N_m \to X$ and $g_2 : \N_n \to Y$. Then $g_2^{-1} \circ f \circ g_1 : \N_m \to X \to Y \to \N_n$ is a composite of injections, hence an injection, and Lemma [[§10 Counting#^lem-10-1|§10.1]] gives $m \le n$.
 
 ^pf-11-1
 
-*Uses:* [[§10 Counting#^lem-10-2|§10.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
+*Uses:* [[§10 Counting#^lem-10-1|§10.1]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]]
 
 For example, if a group of people sit in a room on separate chairs, the number of people is at most the number of chairs. The contrapositive is the form usually quoted; Dirichlet called it the "drawer principle".
 
@@ -50,7 +50,7 @@ For example, if a group of people sit in a room on separate chairs, the number o
 
 *Uses:* [[§11 Properties of Finite Sets#^cor-11-1|§11.1]]
 
-The same statement holds for infinite sets, with $|X| > |Y|$ in the sense of [[§14 Counting Infinite Sets#^def-14-3|Definition §14.3]]; there it is the Cantor–Schröder–Bernstein theorem in disguise ([[§14 Counting Infinite Sets#^cor-14-15|Corollary §14.15]]).
+The same statement holds for infinite sets, with $|X| > |Y|$ in the sense of [[§14a Uncountable Sets#^def-14a-1|Definition §14a.1]]; there it is the Cantor–Schröder–Bernstein theorem in disguise ([[§14a Uncountable Sets#^cor-14a-5|Corollary §14a.5]]).
 
 > [!remark]- Connections
 > - The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-8|493 Prop. §4.8]] (and its remark on where finiteness enters).
@@ -77,7 +77,7 @@ The same statement holds for infinite sets, with $|X| > |Y|$ in the sense of [[�
 
 *Uses:* [[§11 Properties of Finite Sets#^thm-11-2|§11.2]]
 
-Mimicking the proof of Lemma [[§10 Counting#^lem-10-2|§10.2]] gives a version in which the domain is not known in advance to be finite.
+Mimicking the proof of Lemma [[§10 Counting#^lem-10-1|§10.1]] gives a version in which the domain is not known in advance to be finite.
 
 > [!theorem] Proposition §11.3: Sets That Inject into a Finite Set
 > If $f : X \to \N_n$ is an injection, then $X$ is finite and $|X| \le n$.
@@ -167,7 +167,7 @@ If two finite sets are known to have the same size, checking that a function bet
 
 > [!remark]- Connections
 > - The linear-algebra twin: a linear map between spaces of the same finite dimension is injective iff surjective, [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]; dimension plays the role of cardinality. Both fail for infinite sets ($n \mapsto n + 1$ on $\Z^+$ is injective and not surjective).
-> - Matrix version: for a square matrix, one-to-one iff onto, part of the Invertible Matrix Theorem [[§13 Characterizations of Invertible Matrices#^thm-13-1|235 Thm. §13.1]].
+> - Matrix version: for a square matrix, one-to-one iff onto, part of the Invertible Matrix Theorem [[§16 Characterizations of Invertible Matrices#^thm-16-1|235 Thm. §16.1]].
 
 ## 11.2 Finite Sets of Real Numbers
 
@@ -240,7 +240,7 @@ The statement mentions no integer, but there is one hidden in it: $|A|$. The inf
 
 ### The greatest common divisor
 
-Recall ([[§2 Implications#^def-2-6|Definition §2.6]]) that $d$ **divides** $a$, $d \mid a$, when $a = dq$ for some integer $q$; then $d$ is a **divisor** or **factor** of $a$ and $a$ is a **multiple** of $d$. Here, as in Eccles, divisors are taken non-zero; every non-zero integer divides $0$. If $a \ne 0$ and $a = dq$, then $q \ne 0$, so $|q| \ge 1$ and $|a| \ge |d|$. Hence for $a \ne 0$ the set of divisors
+Recall ([[§2 Implications#^def-2-7|Definition §2.7]]) that $d$ **divides** $a$, $d \mid a$, when $a = dq$ for some integer $q$; then $d$ is a **divisor** or **factor** of $a$ and $a$ is a **multiple** of $d$. Here, as in Eccles, divisors are taken non-zero; every non-zero integer divides $0$. If $a \ne 0$ and $a = dq$, then $q \ne 0$, so $|q| \ge 1$ and $|a| \ge |d|$. Hence for $a \ne 0$ the set of divisors
 
 $$
 D(a) = \{ n \in \Z \mid n \text{ divides } a \}
@@ -303,7 +303,7 @@ This is what puts fractions in lowest terms in [[§13 Number Systems#^prop-13-2|
 
 ### Odd and even integers
 
-"Odd" was defined to mean "not divisible by $2$" ([[§2 Implications#^def-2-7|Definition §2.7]]). The familiar description of odd numbers as $2q + 1$ is a special case of the division theorem, proved later as [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], and finiteness gives a direct proof now.
+"Odd" was defined to mean "not divisible by $2$" ([[§2 Implications#^def-2-8|Definition §2.8]]). The familiar description of odd numbers as $2q + 1$ is a special case of the division theorem, proved later as [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], and finiteness gives a direct proof now.
 
 > [!theorem] Proposition §11.11: Odd Integers
 > An integer $a$ is odd if and only if $a = 2q + 1$ for some integer $q$.
@@ -329,7 +329,7 @@ This is what puts fractions in lowest terms in [[§13 Number Systems#^prop-13-2|
 
 ^pf-11-11
 
-*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§2 Implications#^def-2-7|Def. §2.7]]
+*Uses:* [[§11 Properties of Finite Sets#^prop-11-9|§11.9]], [[§11 Properties of Finite Sets#^cor-11-4|§11.4]], [[§2 Implications#^def-2-8|Def. §2.8]]
 
 > [!remark]- Connections
 > - The general statement, $a = bq + r$ with $0 \le r < b$, is [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]]; in 493 it is the [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (Division Algorithm), proved there by well-ordering, the infinite counterpart of taking a maximum.

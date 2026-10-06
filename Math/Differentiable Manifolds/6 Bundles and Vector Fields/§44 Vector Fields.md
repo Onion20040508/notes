@@ -38,8 +38,8 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 *A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\theta)\,\partial/\partial\theta$, $c(\theta) = 0.55 + 0.35\sin\theta$. Left: the usual picture, an arrow $\mathbf{X}(p)$ at each point $p$. Right: the tangent bundle $TS^1$, with $S^1$ cut open at $(1,0)$; each fibre $T_pM$ is a vertical line over $p$, and the height of a point on it measures the vector $c\,\partial/\partial\theta$ (above the dashed zero section: counterclockwise). The vector field is the curve $\mathbf{X}(M)$, which meets every fibre exactly once — that is the condition $\mathbf{X}(p) \in T_pM$ — and $\pi \circ \mathbf{X} = \mathrm{id}_M$ says that the point of the curve above $p$ projects back to $p$. The points $p_1, p_2, p_3$ carry the same colour in both pictures.*
 
 > [!remark]- Connections
-> - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §11]].
-> - Computational version: vector fields on regions of $\mathbb{R}^2$ and $\mathbb{R}^3$ in calculus, [[§107 Vector Fields#^def-107-1|Calc Def. §107.1]] and [[§107 Vector Fields#^def-107-2|Calc Def. §107.2]].
+> - Vector fields on open subsets of $\mathbb{R}^3$ in 452: [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §13]].
+> - Computational version: vector fields on regions of $\mathbb{R}^2$ and $\mathbb{R}^3$ in calculus, [[§125 Vector Fields#^def-125-1|Calc Def. §125.1]] and [[§125 Vector Fields#^def-125-2|Calc Def. §125.2]].
 
 **Transcription note.** Page 36 of the handwritten notes writes “Section of $TM \xrightarrow{F} M$”; the map is the projection $\pi$.
 
@@ -145,7 +145,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 “Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data”: knowing $f$ on $U$ determines $Df$ on $U$.
 
 > [!definition] Definition §44.6: Support
-> The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§7 Interior and Closure#^def-7-new1|closure]]* of the set where it is nonzero,
+> The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§8 Interior and Closure#^def-8-2|closure]]* of the set where it is nonzero,
 >
 > $$
 > \operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} .
@@ -156,7 +156,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^def-44-6
 
 > [!definition] Definition §44.7: Compactly Supported Functions
-> $C^\infty_0(M)$ is the set of smooth functions $\chi : M \to \mathbb{R}$ whose support ([[§44 Vector Fields#^def-44-6|Definition §44.6]]) is [[§15 Compact Spaces#^def-15-2|compact]].
+> $C^\infty_0(M)$ is the set of smooth functions $\chi : M \to \mathbb{R}$ whose support ([[§44 Vector Fields#^def-44-6|Definition §44.6]]) is [[§18 Compact Spaces#^def-18-2|compact]].
 >
 > *Lee: Ch. 2, Partitions of Unity*
 

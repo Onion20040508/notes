@@ -12,9 +12,9 @@ tags: [chapter, topology]
 **Builds on (other subjects):** —
 
 ## Sections
-- [[§22 Homotopy of Paths]]
-- [[§23 The Fundamental Group]]
-- [[§23a The Punctured Plane and the Torus]]
+- [[§28 Homotopy of Paths]]
+- [[§29 The Fundamental Group]]
+- [[§30 The Punctured Plane and the Torus]]
 
 ## Central results
 - [[Properties of Path Concatenation]] (§22.6)
@@ -23,7 +23,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Properties of Path Concatenation|Theorem §22.6: Properties of Path Concatenation]]: 24 later results
-- [[Basepoint Independence of π₁|Theorem §23.2: Basepoint Independence]]: 19 later results
-- [[Functoriality of π₁|Theorem §23.5: Functoriality of π₁]]: 17 later results
-- [[§23 The Fundamental Group#^cor-23-3|Corollary §23.3: π₁ is Independent of Basepoint for Path-Connected Spaces]]: 16 later results
+- [[Properties of Path Concatenation|Theorem §28.6: Properties of Path Concatenation]]: 24 later results
+- [[Basepoint Independence of π₁|Theorem §29.2: Basepoint Independence]]: 19 later results
+- [[Functoriality of π₁|Theorem §29.5: Functoriality of π₁]]: 17 later results
+- [[§29 The Fundamental Group#^cor-29-3|Corollary §29.3: π₁ is Independent of Basepoint for Path-Connected Spaces]]: 16 later results

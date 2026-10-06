@@ -14,12 +14,12 @@ tags: [chapter, ordinary-differential-equations]
 **Developed further in (other subjects):** [[Single Variable Analysis]] (3), [[Calculus]] (4), [[Measure Theory]] (3), [[Functional Analysis]] (1), [[Fourier Series and PDEs]] (11), [[Complex Variables]] (9)
 
 ## Sections
-- [[§21 Definition of the Laplace Transform]] — BDP 6.1
-- [[§22 Solution of Initial Value Problems]] — BDP 6.2
-- [[§23 Step Functions]] — BDP 6.3
-- [[§24 Differential Equations with Discontinuous Forcing Functions]] — BDP 6.4
-- [[§25 Impulse Functions]] — BDP 6.5
-- [[§26★ The Convolution Integral]] — BDP 6.6 ★
+- [[§26 Definition of the Laplace Transform]] — BDP 6.1
+- [[§27 Solution of Initial Value Problems]] — BDP 6.2
+- [[§28 Step Functions]] — BDP 6.3
+- [[§29 Differential Equations with Discontinuous Forcing Functions]] — BDP 6.4
+- [[§30 Impulse Functions]] — BDP 6.5
+- [[§31★ The Convolution Integral]] — BDP 6.6 ★
 
 ## Central results
 - [[Laplace Transform of a Derivative]] (§22.1)
@@ -30,7 +30,7 @@ tags: [chapter, ordinary-differential-equations]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Definition of the Laplace Transform#^thm-21-1|Theorem §21.1: Comparison Test for Improper Integrals]]: 10 later results
-- [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2: Existence of the Laplace Transform]]: 9 later results
-- [[Laplace Transform of a Derivative|Theorem §22.1: Transform of a Derivative]]: 5 later results
-- [[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3: Linearity of the Laplace Transform]]: 4 later results
+- [[§26 Definition of the Laplace Transform#^thm-26-1|Theorem §26.1: Comparison Test for Improper Integrals]]: 10 later results
+- [[§26 Definition of the Laplace Transform#^thm-26-2|Theorem §26.2: Existence of the Laplace Transform]]: 9 later results
+- [[Laplace Transform of a Derivative|Theorem §27.1: Transform of a Derivative]]: 5 later results
+- [[§26 Definition of the Laplace Transform#^thm-26-3|Theorem §26.3: Linearity of the Laplace Transform]]: 4 later results

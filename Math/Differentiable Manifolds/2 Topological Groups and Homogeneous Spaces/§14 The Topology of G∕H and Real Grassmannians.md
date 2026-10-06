@@ -25,7 +25,7 @@ Definitions [[§13 Homogeneous Spaces#^def-13-4|§13.4]] and [[§13 Homogeneous 
 ^def-14-1
 
 > [!remark]- Connections
-> - The quotient topology in 590: [[§12 Quotient Topology#^def-12-2|590 Def. §12.2]].
+> - The quotient topology in 590: [[§13 Quotient Topology#^def-13-2|590 Def. §13.2]].
 
 > [!theorem] Proposition §14.1: Three Descriptions of the Open Sets
 > Let $G$ be a topological group, $H \le G$, and $W \subseteq G/H$. The following are equivalent:
@@ -65,7 +65,7 @@ Definitions [[§13 Homogeneous Spaces#^def-13-4|§13.4]] and [[§13 Homogeneous 
 *Uses:* [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]], [[§5 Quotient Maps#^prop-5-5|§5.5]], [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|Def. §14.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
 
 > [!remark]- Connections
-> - In 590: open surjections are quotient maps, [[§12 Quotient Topology#^prop-12-2|590 §12.2]]; the universal property, [[Universal Property of Quotient Maps]].
+> - In 590: open surjections are quotient maps, [[§13 Quotient Topology#^prop-13-2|590 §13.2]]; the universal property, [[Universal Property of Quotient Maps]].
 
 > [!remark] Remark
 > **Openness of $\pi$, for free.** The action of $H$ on $G$ in Proposition [[§13 Homogeneous Spaces#^prop-13-4|§13.4]] is continuous, being the restriction to $H \times G$ of the map $(h,g) \mapsto gh^{-1}$ on $G \times G$, a composite of inversion and multiplication. So by the [[§13 Homogeneous Spaces#^rem-13-3|organizing fact]], Definition [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|§14.1]] *is* the orbit-space topology, and Lemma [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]] — every orbit relation of a continuous action is open — already gives that $\pi$ is an open map. The proof above is that argument written out in the group case, with the translations $L_h$ of Lemma [[§12 Group Actions and Orbit Spaces#^lem-12-2|§12.2]] appearing as right translations $g \mapsto gh$; it is included because the formula $\pi^{-1}(\pi(U)) = UH$ is worth seeing explicitly.
@@ -101,7 +101,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 *Uses:* [[§13 Homogeneous Spaces#^lem-13-5|§13.5]], [[§13 Homogeneous Spaces#^def-13-3|Def. §13.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-2|§14.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Bijection from Compact to Hausdorff is a Homeomorphism]], [[Continuous Image of a Compact Space is Compact]]
 
 > [!remark]- Connections
-> - The same pattern in 590 — a map constant on fibres induces a continuous bijection from the quotient: [[§12 Quotient Topology#^cor-12-4|590 §12.4 (Induced Bijection from Quotient)]].
+> - The same pattern in 590 — a map constant on fibres induces a continuous bijection from the quotient: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].
 > - The underlying bijection is the orbit bijection [[§30 Orbit–Stabilizer#^prop-30-2|493 §30.2]].
 
 > [!example] Example §14.1: The Circle as $\mathbb{R}/\mathbb{Z}$
@@ -135,7 +135,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 The same triangle with $G = \mathbb{R}$. The exponential wraps the line around the circle; it is constant exactly on the cosets $t + \mathbb{Z}$, which is why it descends to the quotient, and the induced bottom arrow is the homeomorphism.
 
 > [!remark]- Connections
-> - In 590 the circle is the quotient $[0,1]/(0 \sim 1)$ via the same map $e^{2\pi i t}$: [[§12 Quotient Topology#^ex-12-2|590 Ex. §12.2]].
+> - In 590 the circle is the quotient $[0,1]/(0 \sim 1)$ via the same map $e^{2\pi i t}$: [[§13 Quotient Topology#^ex-13-2|590 Ex. §13.2]].
 
 > [!example] Example §14.2: A Continuous Bijection That Is Not a Homeomorphism
 > Let $G = \mathbb{R}_{\mathrm{disc}}$, the additive group of real numbers with the discrete topology — a topological group, since every map out of a discrete space is continuous. It acts on $X = \mathbb{R}$, with its usual topology, by translation, $t \cdot x = x + t$. The action is continuous, because $G \times X$ is the disjoint union of the open sets $\{t\} \times X$, on each of which it is a translation. It is transitive, the isotropy group of $0$ is $\{0\}$, and so $G/H = \mathbb{R}_{\mathrm{disc}}$. The map $\Phi : \mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$, $t \mapsto t$, is a continuous bijection but not a homeomorphism: $\{0\}$ is open in $\mathbb{R}_{\mathrm{disc}}$ and not in $\mathbb{R}$. Here $X$ is Hausdorff and $G/H$ is not compact, so Theorem [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|§14.3]](2) does not apply — and its conclusion genuinely fails.
@@ -227,7 +227,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 ^rem-14-3
 
 > [!remark]- Connections
-> - For $n = 3$ this is the projective plane $S^2/(x \sim -x)$ of 590: [[§28 Fundamental Group of Some Surfaces#^def-28-1|590 Def. §28.1]], [[Projective plane]].
+> - For $n = 3$ this is the projective plane $S^2/(x \sim -x)$ of 590: [[§38 Fundamental Group of Some Surfaces#^def-38-1|590 Def. §38.1]], [[Projective plane]].
 
 > [!theorem] Proposition §14.6: $\mathrm{O}(n)$ Acts Transitively on $\mathrm{Gr}_k({\mathbb{R}^n})$
 > For $g \in \mathrm{O}(n)$ and $V \in \mathrm{Gr}_k(\mathbb{R}^n)$ set $g \cdot V = gV = \{\, gv \mid v \in V \,\}$. This defines an action of $\mathrm{O}(n)$ on $\mathrm{Gr}_k(\mathbb{R}^n)$, and the action is transitive.
@@ -243,10 +243,10 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 
 ^pf-14-6
 
-*Uses:* [[§14 The Topology of G∕H and Real Grassmannians#^def-14-3|Def. §14.3]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§13 Homogeneous Spaces#^def-13-1|Def. §13.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[Gram–Schmidt procedure]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
+*Uses:* [[§14 The Topology of G∕H and Real Grassmannians#^def-14-3|Def. §14.3]], [[§12 Group Actions and Orbit Spaces#^def-12-1|Def. §12.1]], [[§13 Homogeneous Spaces#^def-13-1|Def. §13.1]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|Def. §10.6]], [[Gram–Schmidt procedure]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
 
 > [!remark]- Connections
-> - The case $k = 1$ of the orthonormal-basis argument is [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]]; orthonormal bases in LADR: [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
+> - The case $k = 1$ of the orthonormal-basis argument is [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]] and [[§12 Group Actions and Orbit Spaces#^ex-12-5|Ex. §12.5]]; orthonormal bases in LADR: [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].
 
 > [!theorem] Proposition §14.7: Isotropy of the Standard $k$-Plane
 > Let $V_0 = \operatorname{span}(e_1, \ldots, e_k) \in \mathrm{Gr}_k(\mathbb{R}^n)$ be the base point. Then

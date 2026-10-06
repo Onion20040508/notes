@@ -16,11 +16,11 @@ tags: [real-analysis, hub]
 - [[§18 Properties of Continuous Functions#^thm-18-1|Theorem §18.1: Extreme Value Theorem]]
 
 ## Used in (Multivariable Analysis)
-- [[§15 Multivariable Integration#^thm-15-3|Theorem §15.3: Additivity in the Integrand]]
+- [[§22 Properties of the Integral#^thm-22-2|Theorem §22.2: Additivity in the Integrand]]
 
 ## Used in (Measure Theory)
-- [[§15 The General Lebesgue Integral#^thm-15-8|Theorem §15.8: Dominated Convergence Theorem (DCT)]]
+- [[§23 The Dominated Convergence Theorem#^thm-23-3|Theorem §23.3: Dominated Convergence Theorem (DCT)]]
 
 ## Connections
 - The standard way to get a limit without computing it, e.g. in the [[Extreme Value Theorem]] proof and the workhorse [[sin(1∕x) family]] (null times bounded).
-- **Also in [[Calculus]]:** [[§69 Sequences#^thm-69-4|Calc Thm. §69.4]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-7|Calc Thm. §8.7]] (computational treatment with worked examples).
+- **Also in [[Calculus]]:** [[§80 Sequences#^thm-80-4|Calc Thm. §80.4]], [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-5|Calc Thm. §10.5]] (computational treatment with worked examples).
