@@ -32,6 +32,7 @@ tags: [linear-algebra]
 > - Matrix version: [[§12 The Inverse of a Matrix#^prop-12-1|235 Prop. §12.1]].
 
 > [!remark] Notation 3.61: T⁻¹ (p. 82)
+> If $T\in\Lin(V,W)$ is invertible, its inverse is written $T^{-1}$: the unique $T^{-1}\in\Lin(W,V)$ with $T^{-1}T=I_V$ and $TT^{-1}=I_W$.
 
 ^ladr-3-61
 
@@ -162,7 +163,7 @@ tags: [linear-algebra]
 ^ladr-3-72
 
 > [!proof]+ Proof
-> *(Filled in: Axler 3.71.)* Fix bases, $\dim V=n$, $\dim W=m$. The map $\mathcal{M}:\Lin(V,W)\to\F^{m,n}$ is linear by [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]] and [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]]. It is injective: $\mathcal{M}(T)=0$ means $Tv_k=0$ for all $k$, so $T=0$. It is surjective: given $A$, [[Linear map lemma]] gives $T$ with $Tv_k=\sum_jA_{j,k}w_j$. So $\Lin(V,W)\cong\F^{m,n}$, and $\dim\Lin(V,W)=mn$ by [[Dimension shows whether vector spaces are isomorphic]] and [[§9 Matrices#^ladr-3-40|Dim Fᵐ’ⁿ = mn]].
+> *(Filled in: Axler 3.71.)* Fix bases, $\dim V=n$, $\dim W=m$. The map $\mathcal{M}:\Lin(V,W)\to\F^{m,n}$ is linear by [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]] and [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]]. It is injective: $\mathcal{M}(T)=0$ means $Tv_k=0$ for all $k$, so $T=0$. It is surjective: given $A$, [[Linear map lemma]] gives $T$ with $Tv_k=\sum_jA_{j,k}w_j$. So $\Lin(V,W)\cong\F^{m,n}$, and $\dim\Lin(V,W)=mn$ by [[Dimension shows whether vector spaces are isomorphic]] and [[§9 Matrices#^ladr-3-40|Dim F^(m,n) = mn (LADR 3.40)]].
 
 *Uses:* [[§9 Matrices#^ladr-3-35|3.35]], [[§9 Matrices#^ladr-3-38|3.38]], [[Linear map lemma|3.4]], [[Dimension shows whether vector spaces are isomorphic|3.70]], [[§9 Matrices#^ladr-3-40|3.40]]
 
@@ -289,7 +290,7 @@ tags: [linear-algebra]
 > - The change-of-basis matrix $C$ in [[§10 Invertibility and Isomorphisms#^ladr-3-84|Change-of-basis formula (LADR 3.84)]].
 > - Computational version: [[§29 Change of Basis#^thm-29-2|235 Thm. §29.2]] ((P_{C←B})⁻¹ = P_{B←C}); M(I, (u), (v)) is the matrix P_{v←u} of [[§29 Change of Basis#^thm-29-1|235 Thm. §29.1]].
 
-> [!example] Example 3.83: Matrix of identity on F (p. 92)
+> [!example] Example 3.83: Matrix of identity on F² (p. 92)
 > Bases $u=((4,2),(5,3))$ and $e=((1,0),(0,1))$ of $\F^2$. Since $(4,2)=4e_1+2e_2$ and $(5,3)=5e_1+3e_2$,
 > $$
 > \mathcal{M}\big(I,(u),(e)\big)=\begin{pmatrix}4&5\\2&3\end{pmatrix},\qquad

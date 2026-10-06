@@ -171,6 +171,9 @@ Informally: a subset $A$ is determined by deciding, for each of the $n$ elements
 
 ^def-12-4
 
+> [!remark]- Connections
+> - The same function (also called the indicator function $\mathbf{1}_E$) in measure theory, where it is the building block of simple functions and integrals: [[§12 Measurable Functions#^def-12-3|551 Def. §12.3]].
+
 > [!theorem] Lemma §12.5: Subsets Are Functions to {0, 1}
 > The function $\mathcal{P}(X) \to \operatorname{Fun}(X, \{0, 1\})$, $A \mapsto \chi_A$, is a bijection.
 >

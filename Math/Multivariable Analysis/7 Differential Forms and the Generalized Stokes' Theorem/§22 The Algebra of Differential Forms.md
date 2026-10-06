@@ -9,7 +9,7 @@ tags: [multivariable-analysis, math452]
 
 ## The Wedge Product
 
-In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]], we discovered that coordinate substitution *forces* the multiplication of differentials to be anti-commutative. We now axiomatize these rules.
+In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]], we discovered that coordinate substitution *forces* the multiplication of differentials to be anti-commutative. We now axiomatize these rules.
 
 > [!remark] Note: Terminology: Properties of Operations
 > An **operation** takes two inputs and produces one output (like $+$ or $\times$). We say an operation $\star$ is:
@@ -108,7 +108,7 @@ The wedge product is the Levi-Civita symbol promoted from a numerical table to a
 
 ^ex-22-1
 
-We can now formalize the computation from [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]. The key concept is the *pullback*: the operation that translates a form from ambient coordinates to parameter coordinates so that it can be integrated.
+We can now formalize the computation from [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]]. The key concept is the *pullback*: the operation that translates a form from ambient coordinates to parameter coordinates so that it can be integrated.
 
 > [!definition] Definition §22.3: Pullback
 > Let $\omega$ be a differential form on $\mathbb{R}^n$, expressed in the **ambient coordinates** $x_1, \ldots, x_n$.
@@ -159,7 +159,7 @@ $$
 \Phi^*(dx_{i_1} \wedge \cdots \wedge dx_{i_k}) = \det \begin{pmatrix} (x_{i_1})_{u_1} & \cdots & (x_{i_1})_{u_k} \\ \vdots & \ddots & \vdots \\ (x_{i_k})_{u_1} & \cdots & (x_{i_k})_{u_k} \end{pmatrix} du_1 \wedge \cdots \wedge du_k.
 $$
 
-That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21.6]]).
+That is, the pullback of a coordinate $k$-form extracts the $k \times k$ minor of $J$ corresponding to rows $i_1, \ldots, i_k$. This is not a new result — it is what happens when you carry out steps 1 and 2 of the definition. Each $dx_{i_\ell}$ becomes $\sum_j (x_{i_\ell})_{u_j}\,du_j$; wedging $k$ of these and using anti-commutativity kills all terms with repeated $du_j$; the surviving terms are the Leibniz formula for the determinant ([[§34 Determinants#^ladr-9-46|LADR 9.46]]) (compare the informal $2 \times 2$ computation in [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commutative|§21]]).
 
 > [!example] Example §22.2: Pullback Along a Curve (Line Integral, §16)
 > Let $\omega = f_1\,dx + f_2\,dy + f_3\,dz$ be a 1-form on $\mathbb{R}^3$, and $\boldsymbol{\gamma}: [a,b] \to \mathbb{R}^3$ a curve with $\boldsymbol{\gamma}(t) = (x(t), y(t), z(t))$.
@@ -785,6 +785,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[§26 Deformation Retracts and Homotopy Type#^thm-26-2|590 §26.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
+> - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§43 One-Forms#^prop-43-3|591 Prop. §43.3]], yet is not $df$, [[§43 One-Forms#^rem-43-1|591 Remark: The Condition Is Not Sufficient]].
 > - Used in Electromagnetism: $\omega$ is the field $\hat\varphi/s$ of a line current, curl-free off the axis with circulation $2\pi$ around it, so its curl is a delta function on the axis — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^ex-b1-2-2|EM Example §B1.2.2]]; the warning that curl-free is not enough on a region with a hole — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 
 > [!theorem] Proposition §22.12: Poincaré Lemma
@@ -798,7 +799,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 *Why star-shaped is the right hypothesis. Left: from $\mathbf{p}_0$ every segment stays in the domain, so a potential can be built by integrating along these segments (the homotopy operator) — closed forms are exact. Right: in $\mathbb{R}^2\setminus\{\mathbf{0}\}$ no point works as $\mathbf{p}_0$: the segment to the point $\mathbf{p}$ opposite the hole runs through the removed origin, and indeed the closed form of Proposition §22.11 is not exact there.*
 
 > [!remark]- Connections
-> - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy (590 §22.1)]] — so it is [[§23 The Fundamental Group#^def-23-3|simply connected (590 Def. §23.3)]]; the homotopy operator in the proof integrates along exactly these segments.
+> - A star-shaped domain contracts to $\mathbf{p}_0$ along the segments — a [[§22 Homotopy of Paths#^thm-22-1|straight-line homotopy (590 §22.1)]] — so it is [[§23 The Fundamental Group#^def-23-3|simply connected (590 Def. §23.3)]]; the homotopy operator of the standard proof (not given in the course; see below) integrates along exactly these segments.
 > - Used in Electromagnetism: on a star-shaped region a curl-free field is a gradient and a divergence-free field is a curl, which gives the scalar and vector potentials — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^thm-b1-2-3|EM Theorem §B1.2.3]], with the hole case in [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]]. At level C: in four dimensions, every field tensor obeying the Bianchi identity on a star-shaped region has a potential, by the explicit homotopy formula — [[§C1.2 The Field Equations and the Bianchi Identity#^thm-c1-2-5|EM Theorem §C1.2.5]].
 > - Used in Relativity: on a region without holes every field tensor obeying the homogeneous Maxwell pair comes from a four-potential — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]], [[§B4.2 The Electromagnetic Field Tensor#^rem-b4-2-4|REL Remark: Layers, and what comes later]].
 > - Vector-field form: curl-free fields on ℝ³ are conservative, [[§114 Stokes' Theorem#^thm-114-4|Calc Thm. §114.4]], and the plane test on simply-connected regions, [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (with worked examples).

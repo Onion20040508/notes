@@ -163,7 +163,7 @@ To prove $P \Rightarrow (Q \vee R)$, assume $P$ and $\neg Q$, and deduce $R$: th
 
 *Uses:* [[§3 Proofs#^def-3-1|Def. §3.1]], [[§4 Proof by Contradiction#^prop-4-4|§4.4]], [[§2 Implications#^ex-2-13|Ex. §2.13]]
 
-Proposition §4.4 is what we use to solve polynomial equations, and Proposition §4.5 to solve polynomial inequalities ([[§6 The Language of Set Theory#^ex-6-10|Ex. §6.10]]).
+[[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]] is what we use to solve polynomial equations, and [[§4 Proof by Contradiction#^prop-4-5|Proposition §4.5]] to solve polynomial inequalities ([[§6 The Language of Set Theory#^ex-6-10|Ex. §6.10]]).
 
 ## Exercises from the Homework
 

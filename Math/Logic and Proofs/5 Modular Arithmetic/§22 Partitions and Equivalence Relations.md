@@ -76,7 +76,7 @@ Partitions are usually described by a property of the elements — the remainder
 > [!example] Example §22.2: Partitions Given by Functions
 > (a) The partition of $\mathbb{Z}$ into congruence classes modulo $m$ comes from the remainder map $r_m : \mathbb{Z} \to R_m$: its parts are $\overleftarrow{r_m}(\{r\}) = [r]_m$ (the box model of the remark after [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]]).
 >
-> (b) The partition $\{\mathbb{Z}^+, \{0\}, \mathbb{Z}^-\}$ of Example §22.1(d) comes from the sign function
+> (b) The partition $\{\mathbb{Z}^+, \{0\}, \mathbb{Z}^-\}$ of [[§22 Partitions and Equivalence Relations#^ex-22-1|Example §22.1]](d) comes from the sign function
 >
 > $$
 > f : \mathbb{Z} \to \{-1, 0, 1\}, \qquad f(x) = \begin{cases} x/|x| & \text{if } x \neq 0, \\ 0 & \text{if } x = 0. \end{cases}
@@ -147,7 +147,7 @@ Each property is a universal statement, so to show that one *fails* a single cou
 > | $a_1 b_2 = a_2 b_1$ on $\mathbb{Z} \times (\mathbb{Z} - \{0\})$ | yes | yes | yes |
 > | $a \equiv b \pmod m$ on $\mathbb{Z}$ | yes | yes | yes |
 >
-> Transitivity of $ab > 0$: if $ab > 0$ and $bc > 0$ then $ab^2c = (ab)(bc) > 0$, and $b^2 > 0$ (as $b \neq 0$), so $ac > 0$. The equivalence relations are $=$, congruence modulo $m$ (Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]), and the relation on pairs, proved in [[§22 Partitions and Equivalence Relations#^lem-22-6|Lemma §22.6]] below; more generally $\sim_\Pi$ for any partition $\Pi$ (Proposition §22.2).
+> Transitivity of $ab > 0$: if $ab > 0$ and $bc > 0$ then $ab^2c = (ab)(bc) > 0$, and $b^2 > 0$ (as $b \neq 0$), so $ac > 0$. The equivalence relations are $=$, congruence modulo $m$ (Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]), and the relation on pairs, proved in [[§22 Partitions and Equivalence Relations#^lem-22-6|Lemma §22.6]] below; more generally $\sim_\Pi$ for any partition $\Pi$ ([[§22 Partitions and Equivalence Relations#^prop-22-2|Proposition §22.2]]).
 >
 > *Eccles: Examples 22.2.2, 22.2.4*
 
@@ -303,7 +303,7 @@ The proof contains the general principle for defining functions on a quotient se
 > f(a_1, b_1) = f(a_2, b_2) \iff a_1/b_1 = a_2/b_2 \iff a_1 b_2 = a_2 b_1 ,
 > $$
 >
-> so the equivalence relation induced by $f$ as in Proposition [[§22 Partitions and Equivalence Relations#^prop-22-5|§22.5]] is the relation on pairs of Example §22.3, and $f$ (surjective, as every rational is a fraction) induces a bijection
+> so the equivalence relation induced by $f$ as in Proposition [[§22 Partitions and Equivalence Relations#^prop-22-5|§22.5]] is the relation on pairs of [[§22 Partitions and Equivalence Relations#^ex-22-3|Example §22.3]], and $f$ (surjective, as every rational is a fraction) induces a bijection
 >
 > $$
 > F : \bigl(\mathbb{Z} \times (\mathbb{Z} - \{0\})\bigr)/{\sim} \;\to\; \mathbb{Q} .
@@ -317,7 +317,7 @@ The proof contains the general principle for defining functions on a quotient se
 
 ## 22.4 Construction of the Rational Numbers
 
-Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project, whose motivation is that $\mathbb{Z}$ is not closed under division ($6 \div 4 \notin \mathbb{Z}$): we want a number system extending $\mathbb{Z}$, with the same laws of arithmetic, in which $bx = a$ can be solved for every $b \neq 0$ ([[§22 Partitions and Equivalence Relations#^prop-22-10|Proposition §22.10]]). It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1; [[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). The Project's list of properties of $\mathbb{Z}$ (its §1.1) contains all of these except the last; the last is what makes $bd \neq 0$ whenever $b, d \neq 0$, so that sums and products of fractions are again fractions.
+[[§22 Partitions and Equivalence Relations#^ex-22-6|Example §22.6]] *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse it and *define* $\mathbb{Q}$ to be the quotient set, so that a rational number simply *is* a class of fractions; the temporary notation of [[§13 Number Systems#^def-13-1|Definition §13.1]] for "the fraction $a/b$ represents $q$" anticipated $q = [(a, b)]$. This is the construction carried out in the student's Rational Number Project, whose motivation is that $\mathbb{Z}$ is not closed under division ($6 \div 4 \notin \mathbb{Z}$): we want a number system extending $\mathbb{Z}$, with the same laws of arithmetic, in which $bx = a$ can be solved for every $b \neq 0$ ([[§22 Partitions and Equivalence Relations#^prop-22-10|Proposition §22.10]]). It uses only the following properties of $\mathbb{Z}$: addition and multiplication are commutative and associative, multiplication distributes over addition, $0$ and $1$ are identities, every integer has a negative, and there are **no zero divisors**: $ab = 0 \Rightarrow a = 0$ or $b = 0$, equivalently, $cx = cy$ with $c \neq 0$ implies $x = y$ ([[§2 Implications#^def-2-8|Def. §2.8]], Eccles Properties 2.3.1; [[§4 Proof by Contradiction#^prop-4-4|Proposition §4.4]]). The Project's list of properties of $\mathbb{Z}$ (its §1.1) contains all of these except the last; the last is what makes $bd \neq 0$ whenever $b, d \neq 0$, so that sums and products of fractions are again fractions.
 
 > [!definition] Definition §22.5: The Set of Fractions and Its Relation
 > Let
@@ -420,7 +420,7 @@ Example §22.6 *assumed* that $\mathbb{Q}$ exists. With hindsight we can reverse
 >
 > (2) *They extend integer arithmetic.* Treating the integer $a$ as $a/1$: $\ a/1 + b/1 = (a \cdot 1 + 1 \cdot b)/(1 \cdot 1) = (a + b)/1$ and $(a/1)(b/1) = ab/1$.
 >
-> (3) *They must respect $\sim$.* The formulas use representatives, so they define operations on classes only if equivalent inputs give equivalent outputs — Proposition §22.8.
+> (3) *They must respect $\sim$.* The formulas use representatives, so they define operations on classes only if equivalent inputs give equivalent outputs — [[§22 Partitions and Equivalence Relations#^prop-22-8|Proposition §22.8]].
 >
 > *Source: Rational Number Project §3.2, §4.2; Eccles §13.1*
 
@@ -527,7 +527,7 @@ Finally, $\mathbb{Z}$ sits inside the new $\mathbb{Q}$, and $a/b$ really is $a$ 
 
 *Uses:* [[§22 Partitions and Equivalence Relations#^thm-22-9|§22.9]], [[§22 Partitions and Equivalence Relations#^def-22-7|Def. §22.7]]
 
-Identifying each integer $a$ with $\iota(a) = a/1$, we get $\mathbb{Z} \subseteq \mathbb{Q}$, the fraction $a/b$ denotes $[(a, b)]$, and we are back to the usual notation — but now $\mathbb{Q}$ has been *built* from $\mathbb{Z}$ rather than assumed. The order extends too: choosing representatives with $b, d > 0$ (Lemma §22.7(1)), put $a/b < c/d$ iff $ad < bc$; one checks as in Proposition §22.8 that this does not depend on the choice (Eccles Problems III Q21).
+Identifying each integer $a$ with $\iota(a) = a/1$, we get $\mathbb{Z} \subseteq \mathbb{Q}$, the fraction $a/b$ denotes $[(a, b)]$, and we are back to the usual notation — but now $\mathbb{Q}$ has been *built* from $\mathbb{Z}$ rather than assumed. The order extends too: choosing representatives with $b, d > 0$ ([[§22 Partitions and Equivalence Relations#^lem-22-7|Lemma §22.7]](1)), put $a/b < c/d$ iff $ad < bc$; one checks as in [[§22 Partitions and Equivalence Relations#^prop-22-8|Proposition §22.8]] that this does not depend on the choice (Eccles Problems III Q21).
 
 ## 22.5 Construction of the Integers
 

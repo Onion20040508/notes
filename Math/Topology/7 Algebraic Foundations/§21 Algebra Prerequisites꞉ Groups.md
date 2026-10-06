@@ -201,7 +201,7 @@ tags: [topology, math590]
 ^thm-21-5
 
 > [!proof]+ Proof
-> Let $x', y' \in G'$. Since $f$ is surjective, there exist unique $x, y \in G$ with $f(x) = x'$ and $f(y) = y'$. Then:
+> Let $x', y' \in G'$. Since $f$ is bijective, there exist unique $x, y \in G$ with $f(x) = x'$ and $f(y) = y'$. Then:
 >
 > $$
 > f^{-1}(x' \cdot y') = f^{-1}(f(x) \cdot f(y)) = f^{-1}(f(x \cdot y)) = x \cdot y = f^{-1}(x') \cdot f^{-1}(y')
@@ -544,7 +544,7 @@ tags: [topology, math590]
 > |---|---|---|
 > | $\{e\}$ | Trivial | Simply connected spaces ($\mathbb{R}^n$, $S^n$ for $n \geq 2$) |
 > | $\mathbb{Z}$ | Infinite cyclic | $S^1$, cylinder, Möbius band |
-> | $\mathbb{Z}/n\mathbb{Z}$ | Finite cyclic | Lens spaces, $P^n$ ($n \geq 2$) |
+> | $\mathbb{Z}/n\mathbb{Z}$ | Finite cyclic | Lens spaces; for $n = 2$, $P^m$ ($m \geq 2$) |
 > | $\mathbb{Z}^n$ | Free abelian (direct product) | Torus $T^n = (S^1)^n$ |
 > | $F_n \cong \mathbb{Z} * \cdots * \mathbb{Z}$ | Free on $n$ generators (free product) | Wedge of $n$ circles |
 

@@ -102,7 +102,7 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 ^ex-16-1
 
 ![[m250-16-1.svg]]
-*The same computation as geometry. Cut as many $30 \times 30$ squares as possible from a $72 \times 30$ rectangle (blue, quotient $2$). The leftover $12 \times 30$ strip takes two $12$-squares (green), and the leftover $12 \times 6$ strip takes two $6$-squares (red) exactly. The last square side, $6$, measures every side in the picture, so it is a common divisor of $72$ and $30$. Lemma §16.2 says no larger common measure can have been lost along the way.*
+*The same computation as geometry. Cut as many $30 \times 30$ squares as possible from a $72 \times 30$ rectangle (blue, quotient $2$). The leftover $12 \times 30$ strip takes two $12$-squares (green), and the leftover $12 \times 6$ strip takes two $6$-squares (red) exactly. The last square side, $6$, measures every side in the picture, so it is a common divisor of $72$ and $30$. [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]] says no larger common measure can have been lost along the way.*
 
 ## 16.2 The Euclidean Algorithm
 
@@ -219,10 +219,10 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 >
 > The pairs $(u_{n+2}, u_{n+1})$ are the slowest possible: by [[§16 The Euclidean Algorithm#^ex-16-6|Example §16.6]], an $n$-step run needs $b \ge u_{n+1}$.
 >
-> *As printed, the count in Problems IV Q7 is off by one: with $u_1 = u_2 = 1$ the run on $(u_{n+1}, u_n)$ ends at $u_3 = 2 \cdot u_2$. The HW7 solution reaches $n$ by continuing the chain to $(u_2, u_1)$, but $u_3 = u_2 \cdot 1 + u_1$ is not a division step, since its remainder $u_1 = 1$ is not less than $u_2 = 1$.*
->
 > *Eccles: Problems IV, Q7*
 > *Source: HW7*
+>
+> *As printed, the count in Problems IV Q7 is off by one: with $u_1 = u_2 = 1$ the run on $(u_{n+1}, u_n)$ ends at $u_3 = 2 \cdot u_2$. The HW7 solution reaches $n$ by continuing the chain to $(u_2, u_1)$, but $u_3 = u_2 \cdot 1 + u_1$ is not a division step, since its remainder $u_1 = 1$ is not less than $u_2 = 1$.*
 
 ^ex-16-5
 

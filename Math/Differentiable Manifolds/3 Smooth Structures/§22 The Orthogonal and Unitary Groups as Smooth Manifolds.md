@@ -292,4 +292,4 @@ The vertical arrows are the real-linear identifications of [[§10 Topological Gr
 *Uses:* [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-22-2|Ex. §22.2]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|Def. §10.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §15.12]]
 
 > [!remark]- Connections
-> - Proposition §1.8(1) is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
+> - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]](1) is [[Heine–Borel Theorem|590 §15.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

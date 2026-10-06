@@ -219,7 +219,7 @@ Recall ([[§12 Measurable Functions#^def-12-7|Definition §12.7]]): a function $
 > g(x) = \begin{cases} 1 & x \in (a+\varepsilon', b-\varepsilon'), \\ \text{linear} & x \in (a-\varepsilon', a+\varepsilon') \cup (b-\varepsilon', b+\varepsilon'), \\ 0 & x \leq a - \varepsilon' \text{ or } x \geq b + \varepsilon', \end{cases}
 > $$
 >
-> where $0 < \varepsilon' < (b - a)/2$, so that $a + \varepsilon' < b - \varepsilon'$. Then $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|g(x) - \chi_{(a,b)}(x)| \leq 1$ with equality only on the two transition intervals of total length $4\varepsilon'$. Thus $\|\chi_R - g\|_1 \leq 4\varepsilon'$, so choose $\varepsilon' < \min\{\varepsilon/4, (b-a)/2\}$.
+> where $0 < \varepsilon' < (b - a)/2$, so that $a + \varepsilon' < b - \varepsilon'$. Then $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|g(x) - \chi_{(a,b)}(x)| \leq 1$, and $g - \chi_{(a,b)}$ vanishes outside the two transition intervals, of total length $4\varepsilon'$. Thus $\|\chi_R - g\|_1 \leq 4\varepsilon'$, so choose $\varepsilon' < \min\{\varepsilon/4, (b-a)/2\}$.
 >
 > **Case $n = 2$**: If $R = R_1 \times R_2$, let $g_i$ be the compactly supported continuous approximation to $\chi_{R_i}$ from the $n = 1$ case with $\|\chi_{R_i} - g_i\|_1 < \varepsilon'$ and $\sup|g_i| \leq 1$. Define $g(x, y) = g_1(x)\,g_2(y)$. Then:
 >

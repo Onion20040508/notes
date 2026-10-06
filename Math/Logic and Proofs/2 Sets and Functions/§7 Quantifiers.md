@@ -215,7 +215,7 @@ So a universal statement is disproved by a single **counterexample**, an $a \in 
 
 ^rem-7-3
 
-Combined with the laws of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] and [[§2 Implications#^prop-2-1|Proposition §2.1]], Theorem §7.2 produces a *useful denial* ([[§1 The Language of Mathematics#^def-1-7|Def. §1.7]]) of any quantified statement: switch each quantifier ($\forall \leftrightarrow \exists$), keeping its domain and the order of the quantifiers, and then deny the predicate using
+Combined with the laws of [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1]] and [[§2 Implications#^prop-2-1|Proposition §2.1]], [[§7 Quantifiers#^thm-7-2|Theorem §7.2]] produces a *useful denial* ([[§1 The Language of Mathematics#^def-1-7|Def. §1.7]]) of any quantified statement: switch each quantifier ($\forall \leftrightarrow \exists$), keeping its domain and the order of the quantifiers, and then deny the predicate using
 
 $$
 \neg\neg P \equiv P, \qquad \neg(P \wedge Q) \equiv \neg P \vee \neg Q, \qquad \neg(P \vee Q) \equiv \neg P \wedge \neg Q, \qquad \neg(P \Rightarrow Q) \equiv P \wedge \neg Q ,
@@ -339,6 +339,9 @@ The strong induction principle ([[§5 The Induction Principle#^thm-5-6|Theorem �
 ^pf-7-4
 
 *Uses:* [[§7 Quantifiers#^def-7-1|Def. §7.1]], [[§7 Quantifiers#^def-7-2|Def. §7.2]], [[§7 Quantifiers#^ex-7-8|Ex. §7.8]]
+
+> [!remark]- Connections
+> - The same quantifier move in analysis: continuity at every point ($\forall x\, \forall \varepsilon\, \exists \delta$) versus uniform continuity ($\forall \varepsilon\, \exists \delta\, \forall x$), [[§19 Uniform Continuity#^def-19-1|451 Def. §19.1]]; pointwise versus uniform convergence ($N$ depending on $x$ or not), [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]].
 
 > [!example] Example §7.8: The Order of Quantifiers
 > Consider the predicate $m < n$ for $m, n \in \Z^+$.

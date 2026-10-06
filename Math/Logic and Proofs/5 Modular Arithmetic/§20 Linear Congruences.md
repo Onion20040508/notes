@@ -74,7 +74,7 @@ Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congru
 
 ^ex-20-2
 
-Proposition §20.1 gives a necessary condition: if there is a solution, every common divisor of $a$ and $m$ divides $b$. "Every common divisor" sounds like a lot to check, but all common divisors divide $\gcd(a, m)$ ([[§17 Consequences of the Euclidean Algorithm#^cor-17-2|Corollary §17.2]]), so one divisibility captures it.
+[[§20 Linear Congruences#^prop-20-1|Proposition §20.1]] gives a necessary condition: if there is a solution, every common divisor of $a$ and $m$ divides $b$. "Every common divisor" sounds like a lot to check, but all common divisors divide $\gcd(a, m)$ ([[§17 Consequences of the Euclidean Algorithm#^cor-17-2|Corollary §17.2]]), so one divisibility captures it.
 
 > [!theorem] Corollary §20.2: The gcd Condition Is Necessary
 > If the linear congruence $ax \equiv b \pmod m$ has a solution, then $\gcd(a, m)$ divides $b$.
@@ -102,7 +102,7 @@ The condition is also sufficient. The key case is $a$ coprime to $m$, where it h
 The proof is given in 20.2 below, after the link with diophantine equations. ([[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] gives a second, non-constructive proof by counting.)
 
 > [!example] Example §20.3: Unique and Non-Unique Solutions
-> (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as Theorem §20.3 predicts since $\gcd(2, 7) = 1$.
+> (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] predicts since $\gcd(2, 7) = 1$.
 >
 > (b) *Solve $3x \equiv 8 \pmod{11}$.* Since $\gcd(3, 11) = 1$ there is exactly one solution modulo $11$, and we may find it by trying each $x \in R_{11}$:
 >
@@ -118,7 +118,7 @@ The proof is given in 20.2 below, after the link with diophantine equations. ([[
 
 ^ex-20-3
 
-Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop-19-6|§19.6]] and Corollary §20.2 gives the complete answer. To see where the count comes from, look again at $6x \equiv 15 \pmod{21}$: it reduced to the unique solution $x \equiv 6 \pmod 7$, and the remainders modulo $21$ congruent to $6$ modulo $7$ are $6 + 7q$ for $q = 0, 1, 2$, three of them, and $3 = \gcd(6, 21)$.
+Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Proposition [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§20 Linear Congruences#^cor-20-2|Corollary §20.2]] gives the complete answer. To see where the count comes from, look again at $6x \equiv 15 \pmod{21}$: it reduced to the unique solution $x \equiv 6 \pmod 7$, and the remainders modulo $21$ congruent to $6$ modulo $7$ are $6 + 7q$ for $q = 0, 1, 2$, three of them, and $3 = \gcd(6, 21)$.
 
 > [!theorem] Theorem §20.4: Solvability and Number of Solutions
 > The linear congruence $ax \equiv b \pmod m$ has a solution if and only if $\gcd(a, m)$ divides $b$. In this case the number of solutions modulo $m$ is $\gcd(a, m)$.
@@ -153,7 +153,7 @@ Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop
 *Uses:* [[§20 Linear Congruences#^cor-20-2|§20.2]], [[§20 Linear Congruences#^thm-20-3|§20.3]], [[§19 Congruence of Integers#^prop-19-4|§19.4]], [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
 > [!remark] Remark: The Degenerate Case $a = 0$
-> At first sight Theorem §20.4 says nothing sensible when $a = 0$; checking it there is a good test. Then $\gcd(0, m) = m$, so it says: $0 \cdot x \equiv b \pmod m$ is solvable iff $m \mid b$, and then there are $m$ solutions modulo $m$. Indeed the congruence reads $0 \equiv b \pmod m$, which does not involve $x$: it holds for every $x$ when $m \mid b$ (all $m$ remainders are solutions) and for no $x$ otherwise. A general result that fails in such a simple case would signal something missed.
+> At first sight [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]] says nothing sensible when $a = 0$; checking it there is a good test. Then $\gcd(0, m) = m$, so it says: $0 \cdot x \equiv b \pmod m$ is solvable iff $m \mid b$, and then there are $m$ solutions modulo $m$. Indeed the congruence reads $0 \equiv b \pmod m$, which does not involve $x$: it holds for every $x$ when $m \mid b$ (all $m$ remainders are solutions) and for no $x$ otherwise. A general result that fails in such a simple case would signal something missed.
 >
 > *Source: Eccles Exercise 20.3 and its solution*
 
@@ -164,7 +164,7 @@ Putting together Theorem §20.3, Proposition [[§19 Congruence of Integers#^prop
 
 ## 20.2 Linear Congruences and Diophantine Equations
 
-Now a systematic method, which also proves Theorem §20.3. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
+Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
 
 > [!theorem] Proposition §20.5: Congruences and Diophantine Equations
 > For integers $a, b$ and a positive integer $m$, the map

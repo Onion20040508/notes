@@ -3,6 +3,7 @@ type: section
 subject: "[[Topology]]"
 chapter: 1
 section: 1
+munkres: "§12"
 tags: [topology, math590]
 ---
 ↑ [[· 1 Topological Spaces and Constructions]] · [[§2 Basis for a Topology]] →

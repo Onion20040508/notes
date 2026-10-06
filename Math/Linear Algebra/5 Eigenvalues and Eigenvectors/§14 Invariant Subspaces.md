@@ -25,7 +25,7 @@ tags: [linear-algebra]
 ^ladr-5-2
 
 > [!remark] Remark: Examples
-> $\{0\}$, $V$, $\nullsp T$ and $\range T$ are always invariant (Axler 5.4). More generally $\nullsp p(T)$ and $\range p(T)$ are ([[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]]).
+> $\{0\}$, $V$, $\nullsp T$ and $\range T$ are always invariant ([[§14 Invariant Subspaces#^ladr-5-4|5.4]]). More generally $\nullsp p(T)$ and $\range p(T)$ are ([[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]]).
 
 > [!remark]- Connections
 > - One-dimensional invariant subspaces are exactly eigenvector lines: [[§14 Invariant Subspaces#^ladr-5-5|Eigenvalue]], [[§14 Invariant Subspaces#^ladr-5-8|Eigenvector]].
@@ -154,10 +154,12 @@ tags: [linear-algebra]
 > - Computational version: [[§32 Eigenvectors and Eigenvalues#^cor-32-4|235 Cor. §32.4]] (an $n\times n$ matrix has at most $n$ distinct eigenvalues).
 
 > [!remark] Notation 5.13: Tᵐ (p. 137)
+> For $T\in\Lin(V)$ and a positive integer $m$, $T^m=T\cdots T$ ($m$ factors); $T^0=I$; and if $T$ is invertible, $T^{-m}=(T^{-1})^m$.
 
 ^ladr-5-13
 
-> [!remark] Notation 5.14: P(T) (p. 137)
+> [!remark] Notation 5.14: p(T) (p. 137)
+> For $T\in\Lin(V)$ and $p\in\Poly(\F)$ with $p(z)=a_0+a_1z+\dots+a_mz^m$, $p(T)$ is the operator $a_0I+a_1T+\dots+a_mT^m$ on $V$.
 
 ^ladr-5-14
 
@@ -176,7 +178,7 @@ tags: [linear-algebra]
 ^ladr-5-16
 
 > [!remark] Remark: Polynomials of an operator
-> For $T\in\Lin(V)$: $T^0=I$, $T^m=T\cdots T$ ($m$ factors), and for $p(z)=\sum_ja_jz^j$ one sets $p(T)=\sum_ja_jT^j$ (Axler 5.13, 5.15). The map $p\mapsto p(T)$ is linear.
+> For $T\in\Lin(V)$: $T^0=I$, $T^m=T\cdots T$ ($m$ factors), and for $p(z)=\sum_ja_jz^j$ one sets $p(T)=\sum_ja_jT^j$ ([[§14 Invariant Subspaces#^ladr-5-13|5.13]], [[§14 Invariant Subspaces#^ladr-5-14|5.14]]). The map $p\mapsto p(T)$ is linear ([[§14 Invariant Subspaces#^ladr-5-15|5.15]]).
 
 > [!remark]- Connections
 > - Multiplicativity: [[§14 Invariant Subspaces#^ladr-5-17|Multiplicative properties]].
@@ -199,7 +201,7 @@ tags: [linear-algebra]
 > (b) $p(T)q(T)=(pq)(T)=(qp)(T)=q(T)p(T)$ by (a) twice.
 
 > [!remark]- Connections
-> - Used constantly: [[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]], [[Existence of eigenvalues]], [[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]].
+> - Used constantly: [[§14 Invariant Subspaces#^ladr-5-18|Null space and range of p(T) are invariant under T]], [[Existence of eigenvalues]], [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]].
 
 > [!theorem] Theorem 5.18: Null space and range of p(T) are invariant under T
 > For $T\in\Lin(V)$ and $p\in\Poly(\F)$, the subspaces $\nullsp p(T)$ and $\range p(T)$ are invariant under $T$.

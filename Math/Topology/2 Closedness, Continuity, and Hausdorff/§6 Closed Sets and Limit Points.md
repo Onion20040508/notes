@@ -3,6 +3,7 @@ type: section
 subject: "[[Topology]]"
 chapter: 2
 section: 6
+munkres: "§17"
 tags: [topology, math590]
 ---
 ← [[§5 Subspace Topology]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§7 Interior and Closure]] →

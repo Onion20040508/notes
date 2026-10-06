@@ -61,7 +61,7 @@ $$
 ^def-13-1
 
 > [!remark]- Connections
-> - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-2|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Remark §10.4]].
+> - The same matrix as the total derivative of §6: [[§6 Differentiability#^def-6-2|Def. §6.2]]; Jacobians multiply under composition: [[§10 Composition of Functions and the Chain Rule#^rem-10-4|Chain Rule for Jacobians]].
 > - Linear-algebra view: the matrix of the linear map $Df$ in the standard bases, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 > - For an analytic map the Cauchy–Riemann equations make the Jacobian matrix a rotation–scaling matrix with determinant |f′|²: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] and [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]].
 
@@ -250,7 +250,9 @@ $$
 > \psi(f(\tilde{u}, \tilde{v}), g(\tilde{u}, \tilde{v})) = \tilde{v}. \quad \checkmark
 > $$
 >
-> Since $\tilde{u}, \tilde{v}$ were free parameters playing the role of $u, v$, we drop the tildes and conclude: $f(u, v)$ and $g(u, v)$ are the desired inverse functions.
+> Since $\tilde{u}, \tilde{v}$ were free parameters playing the role of $u, v$, we drop the tildes: $(\varphi, \psi) \circ (f, g)$ is the identity near $(u_0, v_0)$.
+>
+> **Step 5: The inverse on the other side.** The theorem asserts $x = f(\varphi(x,y), \psi(x,y))$ and $y = g(\varphi(x,y), \psi(x,y))$, which needs the uniqueness part of [[§12 The Implicit Function Theorem#^thm-12-2|Theorem §12.2]] (a). By it there are $\eta_1, \eta_2 > 0$ such that $X(y, \tilde{u})$ is the only solution $x$ of $\varphi(x, y) = \tilde{u}$ with $|x - x_0| < \eta_1$ (for $(y, \tilde{u})$ near $(y_0, u_0)$), and $Y(\tilde{u}, \tilde{v})$ is the only solution $y$ of $H(y, \tilde{u}, \tilde{v}) = 0$ with $|y - y_0| < \eta_2$ (for $(\tilde{u}, \tilde{v})$ near $(u_0, v_0)$). Let $(x, y)$ be close to $(x_0, y_0)$ and put $u = \varphi(x, y)$, $v = \psi(x, y)$; since $\varphi$ and $\psi$ are continuous, $(u, v)$ is close to $(u_0, v_0)$. Since $\varphi(x, y) = u$ and $|x - x_0| < \eta_1$, uniqueness in Step 1 gives $x = X(y, u)$. Then $H(y, u, v) = \psi(X(y, u), y) - v = \psi(x, y) - v = 0$ with $|y - y_0| < \eta_2$, so uniqueness in Step 2 gives $y = Y(u, v) = g(u, v)$, and then $x = X(g(u, v), u) = f(u, v)$. So $(f, g) \circ (\varphi, \psi)$ is the identity near $(x_0, y_0)$, and $f, g$ are the desired inverse functions. They are continuously differentiable because $X$ and $Y$ are (Theorem §12.2 (b)) and by the [[Multivariable Chain Rule|chain rule]]; the formula for their Jacobian then follows from $(f, g) \circ (\varphi, \psi) = \mathrm{id}$ as in the [[§13 The Inverse Function Theorem#Derivation via Chain Rule|derivation below]].
 
 ^pf-13-2
 
@@ -433,4 +435,4 @@ $$
 ^rem-13-6
 
 > [!remark]- Connections
-> - Why: the [[§10 Composition of Functions and the Chain Rule#^rem-10-4|chain rule for Jacobians]] (Remark §10.4) gives $J_{\Phi^{-1}} J_\Phi = I$, and the determinant is multiplicative ([[§34 Determinants#^ladr-9-49|LADR 9.49]]).
+> - Why: the [[§10 Composition of Functions and the Chain Rule#^rem-10-4|chain rule for Jacobians]] gives $J_{\Phi^{-1}} J_\Phi = I$, and the determinant is multiplicative ([[§34 Determinants#^ladr-9-49|LADR 9.49]]).

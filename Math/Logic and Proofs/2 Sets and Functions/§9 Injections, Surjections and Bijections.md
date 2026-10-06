@@ -206,7 +206,7 @@ Since injectivity and surjectivity are universal and existential statements, the
 > - In Stewart the inverse is defined exactly for one-to-one functions onto their range: [[§5 Inverse Functions and Logarithms#^def-5-2|Calc Def. §5.2]].
 > - For linear maps of ℝⁿ: [[§13 Characterizations of Invertible Matrices#^rem-13-2|235 Remark §13.2]] (invertible means one-to-one and onto, read off from pivots) and [[§13 Characterizations of Invertible Matrices#^thm-13-3|235 Thm. §13.3]] (T is invertible iff its matrix is).
 
-Because of Theorem §9.2, "bijective" and "invertible" are used interchangeably. Many standard functions are not bijections, but become bijections after restricting the domain and shrinking the codomain.
+Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]], "bijective" and "invertible" are used interchangeably. Many standard functions are not bijections, but become bijections after restricting the domain and shrinking the codomain.
 
 > [!example] Example §9.6: Inverse Functions From Calculus
 > Using facts from calculus (not proved here):
@@ -307,7 +307,7 @@ The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function b
 ^def-9-4
 
 > [!remark] Remark: Notation, and the Two Extensions
-> Most writers denote $\overrightarrow{f}(A)$ simply by $f(A)$ and $\overleftarrow{f}(B)$ by $f^{-1}(B)$ (as in Topology and Measure Theory); Eccles's arrows avoid giving two different functions the same name. $\overrightarrow{f}$ extends $f$: $\overrightarrow{f}(\{x_0\}) = \{f(x_0)\}$, and $\overrightarrow{f}(X) = \operatorname{Im} f$. $\overleftarrow{f}(\{y_0\}) = \{x \in X \mid f(x) = y_0\}$ is the set of pre-images of $y_0$, the contents of box $y_0$. If $f$ is a bijection, $\overleftarrow{f}(\{y_0\}) = \{f^{-1}(y_0)\}$, so $\overleftarrow{f}$ extends $f^{-1}$; if $f$ is not surjective, $\overleftarrow{f}(\{y\}) = \emptyset$ for $y \notin \operatorname{Im} f$, and if $f$ is not injective, $\overleftarrow{f}(\{y\})$ has more than one element for some $y$.
+> Most writers denote $\overrightarrow{f}(A)$ simply by $f(A)$ and $\overleftarrow{f}(B)$ by $f^{-1}(B)$ (as in Topology, where continuity is defined by pre-images of open sets, [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]], and Measure Theory, where measurability asks that the pre-images $\{x \mid f(x) > c\}$ of rays be measurable sets, [[§12 Measurable Functions#^def-12-2|551 Def. §12.2]]); Eccles's arrows avoid giving two different functions the same name. $\overrightarrow{f}$ extends $f$: $\overrightarrow{f}(\{x_0\}) = \{f(x_0)\}$, and $\overrightarrow{f}(X) = \operatorname{Im} f$. $\overleftarrow{f}(\{y_0\}) = \{x \in X \mid f(x) = y_0\}$ is the set of pre-images of $y_0$, the contents of box $y_0$. If $f$ is a bijection, $\overleftarrow{f}(\{y_0\}) = \{f^{-1}(y_0)\}$, so $\overleftarrow{f}$ extends $f^{-1}$; if $f$ is not surjective, $\overleftarrow{f}(\{y\}) = \emptyset$ for $y \notin \operatorname{Im} f$, and if $f$ is not injective, $\overleftarrow{f}(\{y\})$ has more than one element for some $y$.
 >
 > *Eccles: Remarks 9.3.2*
 

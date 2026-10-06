@@ -139,9 +139,9 @@ tags: [linear-algebra]
 > [!proof]+ Proof
 > (a)$\Rightarrow$(b)$\Rightarrow$(c) are immediate. (c)$\Rightarrow$(a): expanding $\rho(\sum a_je_j,\sum b_ke_k)=\sum a_jb_k\rho(e_j,e_k)$ and using $\rho(e_j,e_k)=\rho(e_k,e_j)$ gives $\rho(u,w)=\rho(w,u)$. (d)$\Rightarrow$(c): diagonal matrices are symmetric.
 >
-> (a)$\Rightarrow$(d), by induction on $n$; $n=1$ is trivial. If $\rho=0$ any basis works. Otherwise some $v$ has $\rho(v,v)\neq0$: if $\rho(v,v)=0$ for all $v$, then $\rho$ would be alternating as well as symmetric, hence $0$ (9.17, after [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]). Let $U=\{u:\rho(u,v)=0\}$, the null space of a nonzero functional, so $\dim U=n-1$ and $v\notin U$, giving $V=\Span(v)\oplus U$. By induction $\rho|_{U\times U}$ is diagonal in a basis $e_1,\dots,e_{n-1}$ of $U$; then in $e_1,\dots,e_{n-1},v$ the matrix of $\rho$ is diagonal (each $\rho(e_j,v)=\rho(v,e_j)=0$).
+> (a)$\Rightarrow$(d), by induction on $n$; $n=1$ is trivial. If $\rho=0$ any basis works. Otherwise some $v$ has $\rho(v,v)\neq0$: if $\rho(v,v)=0$ for all $v$, then $\rho$ would be alternating as well as symmetric, hence $0$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]). Let $U=\{u:\rho(u,v)=0\}$, the null space of a nonzero functional, so $\dim U=n-1$ and $v\notin U$, giving $V=\Span(v)\oplus U$. By induction $\rho|_{U\times U}$ is diagonal in a basis $e_1,\dots,e_{n-1}$ of $U$; then in $e_1,\dots,e_{n-1},v$ the matrix of $\rho$ is diagonal (each $\rho(e_j,v)=\rho(v,e_j)=0$).
 
-*Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]
+*Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]
 
 > [!remark]- Connections
 > - Orthonormal version: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|9.13]]. Sylvester's law of inertia (not in Axler): the numbers of positive, negative and zero diagonal entries do not depend on the diagonalizing basis (for $\F=\R$); e.g. Minkowski space has signature $(1,3)$.
@@ -191,15 +191,18 @@ tags: [linear-algebra]
 > [!theorem] Theorem 9.17: $V^{(2)}=V^{(2)}_{\mathrm{sym}}\oplus V^{(2)}_{\mathrm{alt}}$
 > Both are subspaces of $V^{(2)}$, and every bilinear form is uniquely a symmetric plus an alternating one.
 >
-> > [!proof]+
-> > For $\beta\in V^{(2)}$ put $\rho(u,w)=\frac{\beta(u,w)+\beta(w,u)}2$ and $\alpha(u,w)=\frac{\beta(u,w)-\beta(w,u)}2$: $\rho$ is symmetric, $\alpha$ is alternating ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]), and $\beta=\rho+\alpha$. If a form is both symmetric and alternating, $\rho(u,w)=\rho(w,u)=-\rho(u,w)$, so it is $0$. Hence the sum is direct.
->
 > In matrices: every square matrix is uniquely symmetric plus antisymmetric, $B=\frac{B+B^t}2+\frac{B-B^t}2$.
 
 ^ladr-9-17
 
+> [!proof]+ Proof
+> For $\beta\in V^{(2)}$ put $\rho(u,w)=\frac{\beta(u,w)+\beta(w,u)}2$ and $\alpha(u,w)=\frac{\beta(u,w)-\beta(w,u)}2$: $\rho$ is symmetric, $\alpha$ is alternating ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]), and $\beta=\rho+\alpha$. If a form is both symmetric and alternating, $\rho(u,w)=\rho(w,u)=-\rho(u,w)$, so it is $0$. Hence the sum is direct.
+
+*Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-16|9.16]]
+
 > [!remark]- Connections
 > - Used in Relativity: every rank-2 Lorentz tensor splits uniquely, and in every frame alike, into symmetric and antisymmetric parts — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]].
+> - For bilinear forms on $\R^n$ in the language of differential forms: [[§22 The Algebra of Differential Forms#^prop-22-8|452 Prop. §22.8]].
 
 > [!definition] Definition 9.18: Quadratic form associated with a bilinear form, qβ
 > For $\beta\in V^{(2)}$, $q_\beta(v)=\beta(v,v)$. A *quadratic form* is a function $q=q_\beta$ for some bilinear $\beta$. $q_\beta=0$ iff $\beta$ is alternating.
@@ -208,6 +211,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§49★ Quadratic Forms#^def-49-1|235 Def. §49.1]] (quadratic forms $\mathbf x^TA\mathbf x$ on $\mathbb R^n$).
+> - In several variables: the second-order term of Taylor's formula is the quadratic form of the Hessian, [[Multivariable Taylor's Theorem|452 Thm. §9.2]], whose sign decides the [[Second Derivative Test in Several Variables|452 Thm. §14.4]].
 
 > [!example] Example 9.19: Quadratic form (p. 341)
 > $\beta(x,y)=x_1y_1-4x_1y_2+8x_1y_3-3x_3y_3$ on $\R^3$ gives $q_\beta(x)=x_1^2-4x_1x_2+8x_1x_3-3x_3^2$.
@@ -238,13 +242,15 @@ tags: [linear-algebra]
 > $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$ recovers the symmetric form from the quadratic form (compare [[§19 Inner Products and Norms#^ladr-6-21|6.21]]).
 
 > [!proof]+ Proof
-> (a)$\Rightarrow$(b): $q=q_\beta$ and $\beta=\rho+\alpha$ (9.17); $q_\alpha=0$, so $q=q_\rho$. If also $q=q_{\rho'}$, then $\rho'-\rho$ is symmetric with $q_{\rho'-\rho}=0$, i.e. also alternating, so $\rho'=\rho$.
+> (a)$\Rightarrow$(b): $q=q_\beta$ and $\beta=\rho+\alpha$ ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]); $q_\alpha=0$, so $q=q_\rho$. If also $q=q_{\rho'}$, then $\rho'-\rho$ is symmetric with $q_{\rho'-\rho}=0$, i.e. also alternating, so $\rho'=\rho$.
 >
 > (b)$\Rightarrow$(c): $q(\lambda v)=\lambda^2\rho(v,v)$, and $q(u+w)-q(u)-q(w)=2\rho(u,w)$.
 >
 > (c)$\Rightarrow$(d): take $\lambda=2$.
 >
 > (d)$\Rightarrow$(a): let $\rho(u,w)=\frac12\big(q(u+w)-q(u)-q(w)\big)$, symmetric bilinear by hypothesis. Then $q_\rho(v)=\frac12\big(q(2v)-2q(v)\big)=\frac12\big(4q(v)-2q(v)\big)=q(v)$.
+
+*Uses:* [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|9.17]]
 
 > [!remark]- Connections
 > - Used in Relativity: invariance of the interval, a quadratic form, gives invariance of the Minkowski scalar product — [[§B1.1 The Metric and Index Notation#^thm-b1-1-1|REL Theorem §B1.1.1]]; and a quadratic form fixes its symmetric matrix in the proof that the postulates force the invariance of the interval — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-1|REL Theorem §B1.2.1]].

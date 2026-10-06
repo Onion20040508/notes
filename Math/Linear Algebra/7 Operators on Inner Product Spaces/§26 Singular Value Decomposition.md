@@ -73,9 +73,9 @@ tags: [linear-algebra]
 ^ladr-7-69
 
 > [!proof]+ Proof
-> $S$ isometry $\iff S^*S=I$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]) $\iff$ all eigenvalues of the self-adjoint $S^*S$ are $1$ (spectral theorem) $\iff$ all singular values are $1$.
+> $S$ isometry $\iff S^*S=I$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]) $\iff$ all eigenvalues of the self-adjoint $S^*S$ are $1$ (spectral theorem, [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]: $S^*S$ is diagonal in an orthonormal basis) $\iff$ all singular values are $1$.
 
-*Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]
+*Uses:* [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]], [[Real spectral theorem|7.29]], [[Complex spectral theorem|7.31]]
 
 > [!theorem] Theorem 7.70: Singular value decomposition
 > Let $T\in\Lin(V,W)$ with positive singular values $s_1\ge\dots\ge s_m$. There are orthonormal lists $e_1,\dots,e_m$ in $V$ and $f_1,\dots,f_m$ in $W$ with
@@ -155,5 +155,5 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The usual 'full' SVD $A=U\Sigma V^*$ with square unitary $U,V$ is obtained by extending the orthonormal columns to bases.
 > - Computational version: [[§51★ The Singular Value Decomposition#^prop-51-7|235 Prop. §51.7]] (the reduced SVD $A=U_rDV_r^T$, the same form) and [[§51★ The Singular Value Decomposition#^thm-51-4|235 Thm. §51.4]].
-> - Used in Quantum Mechanics: the Schmidt decomposition of a pure state of two systems is the singular value decomposition (Theorem 7.70) of its coefficient matrix — [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-2|QM Theorem §C11.3.2]].
+> - Used in Quantum Mechanics: the Schmidt decomposition of a pure state of two systems is the singular value decomposition ([[Singular value decomposition|Theorem 7.70]]) of its coefficient matrix — [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-2|QM Theorem §C11.3.2]].
 

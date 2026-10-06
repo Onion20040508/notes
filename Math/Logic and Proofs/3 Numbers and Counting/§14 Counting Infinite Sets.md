@@ -198,10 +198,10 @@ The conclusion is an "or" statement, so (as in [[§4 Proof by Contradiction#^ex-
 >
 > As in the addition principle ([[§10 Counting#^thm-10-4|Theorem §10.4]]), $h$ is surjective because $f$ and $g$ are, and injective because $f$ and $g$ are and $(A - B) \cap B = \emptyset$.
 >
-> *The HW5 solution uses this map with $A$ in place of $A - B$, which is a bijection only when $A \cap B = \emptyset$; replacing $A$ by $A - B$ handles the general case.*
->
 > *Eccles: Exercise 14.1*
 > *Source: HW5*
+>
+> *The HW5 solution uses this map with $A$ in place of $A - B$, which is a bijection only when $A \cap B = \emptyset$; replacing $A$ by $A - B$ handles the general case.*
 
 ^ex-14-2
 
@@ -236,10 +236,10 @@ Forming unions or products of finite sets normally makes them bigger. For denume
 >
 > *Solution of (b).* Suppose for contradiction that $X - A$ is countable. Since $X = (X - A) \cup A$, if $X - A$ is finite then $X$ is denumerable by Example [[§14 Counting Infinite Sets#^ex-14-2|§14.2]], and if $X - A$ is denumerable then $X$ is denumerable by Proposition [[§14 Counting Infinite Sets#^prop-14-7|§14.7]]. Either way $X$ is countable, a contradiction.
 >
-> *The HW5 solution to (a) uses $a_n \mapsto 2n + 1$, $b_m \mapsto 2m$, which misses $1$ ($2n - 1$ fixes it) and assumes $A \cap B = \emptyset$; part (b) is not in the HW5 solution.*
->
 > *Eccles: Exercise 14.2*
 > *Source: HW5*
+>
+> *The HW5 solution to (a) uses $a_n \mapsto 2n + 1$, $b_m \mapsto 2m$, which misses $1$ ($2n - 1$ fixes it) and assumes $A \cap B = \emptyset$; part (b) is not in the HW5 solution.*
 
 ^ex-14-3
 
@@ -309,10 +309,10 @@ List $A = \{a_1, a_2, \ldots\}$ and $B = \{b_1, b_2, \ldots\}$ and arrange $A \t
 >
 > Disjointness is not essential: without it $F$ is still surjective, the union is infinite (it contains $A_1$), and sending each $x$ to the $\varphi$-least $(n, m)$ with $F(n, m) = x$ is an injection into $\Z^+ \times \Z^+$; so the union is denumerable by Corollary [[§14 Counting Infinite Sets#^cor-14-6|§14.6]].
 >
-> *The HW5 solution proves by induction that $A_1 \cup \cdots \cup A_n$ is denumerable for each $n$, which covers finite unions only; the union of all the $A_n$ needs the array $\Z^+ \times \Z^+$.*
->
 > *Eccles: Exercise 14.3*
 > *Source: HW5*
+>
+> *The HW5 solution proves by induction that $A_1 \cup \cdots \cup A_n$ is denumerable for each $n$, which covers finite unions only; the union of all the $A_n$ needs the array $\Z^+ \times \Z^+$.*
 
 ^ex-14-4
 
@@ -399,7 +399,7 @@ To show that $\R$ is not denumerable is to show that *no* bijection $\Z^+ \to \R
 > b_n = \begin{cases} 1 & \text{if } 0 \le f(n) < 1 \text{ and } a_{nn} = 0, \\ 0 & \text{otherwise}. \end{cases}
 > $$
 >
-> This decimal has only the digits $0$ and $1$, so it does not end in recurring $9$s, and $0 \le b \le 0.1 + 0.1 < 1$. Now fix $n$. If $f(n) \notin [0, 1)$ then $f(n) \ne b$. If $0 \le f(n) < 1$, the $n$th digit $b_n$ of $b$ differs from the $n$th digit $a_{nn}$ of $f(n)$ (if $a_{nn} = 0$ then $b_n = 1$, and if $a_{nn} \ne 0$ then $b_n = 0$), so the two expansions differ, and by Lemma [[§14 Counting Infinite Sets#^lem-14-11|§14.11]](2) $f(n) \ne b$. So $b$ is not a value of $f$.
+> This decimal has only the digits $0$ and $1$, so it does not end in recurring $9$s, and $0 \le b \le 0.b_1 + 10^{-1} \le 0.1 + 0.1 < 1$ (the defining inequalities of [[§13 Number Systems#^def-13-5|Definition §13.5]] at $n = 1$). Now fix $n$. If $f(n) \notin [0, 1)$ then $f(n) \ne b$. If $0 \le f(n) < 1$, the $n$th digit $b_n$ of $b$ differs from the $n$th digit $a_{nn}$ of $f(n)$ (if $a_{nn} = 0$ then $b_n = 1$, and if $a_{nn} \ne 0$ then $b_n = 0$), so the two expansions differ, and by Lemma [[§14 Counting Infinite Sets#^lem-14-11|§14.11]](2) $f(n) \ne b$. So $b$ is not a value of $f$.
 
 ^pf-14-12
 

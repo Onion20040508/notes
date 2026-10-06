@@ -64,7 +64,7 @@ Arithmetic begins with division with remainder: every integer $a$ is $bq + r$ wi
 > - It is the only tool used to classify the subgroups of $\Z$: [[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]].
 
 > [!remark]- Remark: Other Routes to Existence
-> Eccles's footnote: drop the condition $k \ge 0$ and use $A' = \{k \in \Z \mid bk \le a\}$ for every $a$. This set is infinite, since it contains all large negative integers, but it is non-empty and bounded above by $|a|$, so it still has a maximum. Getting that maximum needs the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]], applied to $\{|a| + 1 - k \mid k \in A'\}$) rather than the finite-set fact. Eccles keeps to finite sets, and in practice one handles $a < 0$ through $-a$ anyway, as in Example §15.1 below.
+> Eccles's footnote: drop the condition $k \ge 0$ and use $A' = \{k \in \Z \mid bk \le a\}$ for every $a$. This set is infinite, since it contains all large negative integers, but it is non-empty and bounded above by $|a|$, so it still has a maximum. Getting that maximum needs the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]], applied to $\{|a| + 1 - k \mid k \in A'\}$) rather than the finite-set fact. Eccles keeps to finite sets, and in practice one handles $a < 0$ through $-a$ anyway, as in [[§15 The Division Theorem#^ex-15-1|Example §15.1]] below.
 
 ^rem-15-2
 
@@ -241,9 +241,9 @@ The proof shows more than was asked: for every integer $a$, the remainder of $a^
 >
 > Now $1234567 = 4 \times 308641 + 3$, so its remainder on division by $4$ is $3$. A square has remainder $0$ or $1$, and by uniqueness in [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]] the remainder is determined by the number. So $1234567$ is not a perfect square.
 >
-> *The HW6 solution stops after the first part; the deduction about $1234567$ is added here.*
->
 > *Eccles: Exercise 15.5*
 > *Source: HW6*
+>
+> *The HW6 solution stops after the first part; the deduction about $1234567$ is added here.*
 
 ^ex-15-7

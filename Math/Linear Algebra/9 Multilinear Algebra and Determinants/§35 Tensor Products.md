@@ -48,7 +48,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the state space of a composite system is $\mathcal{H}_A\otimes\mathcal{H}_B$; product states are $v\otimes w$, entangled states are the rest. Compare the direct sum (dimensions add, [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|3.92]]) with the tensor product (dimensions multiply, [[§35 Tensor Products#^ladr-9-72|9.72]]).
-> - Used in Quantum Mechanics: the state space of a composite system is the tensor product of the parts' spaces, with the product basis of Theorem 9.83 — [[§C1.5 Composite Systems and Tensor Products#^pr-c1-5-1|QM Principle §C1.5.1]]; operators on the parts act on it through Theorem 9.79 — [[§C1.5 Composite Systems and Tensor Products#^def-c1-5-1|QM Def. §C1.5.1]]; a state is entangled when it is not a product tensor (Example 9.76) — [[§C1.5 Composite Systems and Tensor Products#^thm-c1-5-3|QM Theorem §C1.5.3]]; the product of two angular-momentum multiplets decomposed into irreducible ones, the Clebsch–Gordan series — [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-2|QM Theorem §C7.1.2]].
+> - Used in Quantum Mechanics: the state space of a composite system is the tensor product of the parts' spaces, with the product basis of [[§35 Tensor Products#^ladr-9-83|Theorem 9.83]] — [[§C1.5 Composite Systems and Tensor Products#^pr-c1-5-1|QM Principle §C1.5.1]]; operators on the parts act on it through [[§35 Tensor Products#^ladr-9-79|Theorem 9.79]] — [[§C1.5 Composite Systems and Tensor Products#^def-c1-5-1|QM Def. §C1.5.1]]; a state is entangled when it is not a product tensor ([[§35 Tensor Products#^ladr-9-76|Example 9.76]]) — [[§C1.5 Composite Systems and Tensor Products#^thm-c1-5-3|QM Theorem §C1.5.3]]; the product of two angular-momentum multiplets decomposed into irreducible ones, the Clebsch–Gordan series — [[§C7.1 Addition of Angular Momenta and Clebsch–Gordan Coefficients#^thm-c7-1-2|QM Theorem §C7.1.2]].
 
 > [!theorem] Theorem 9.72: Dimension of the tensor product of two vector spaces
 > $\dim(V\otimes W)=(\dim V)(\dim W)$.
@@ -84,7 +84,7 @@ tags: [linear-algebra]
 
 *Uses:* [[Linear map lemma|3.4]], [[§35 Tensor Products#^ladr-9-72|9.72]], [[§6 Dimension#^ladr-2-38|2.38]]
 
-> [!example] Example 9.76: Tensor product of element of F (p. 374)
+> [!example] Example 9.76: Tensor product of element of Fᵐ with element of Fⁿ (p. 374)
 > In $\F^m\otimes\F^n$ with the basis $\{e_j\otimes f_k\}$:
 > $$
 > v\otimes w=\sum_{j,k}v_jw_k\,e_j\otimes f_k,
@@ -163,16 +163,17 @@ tags: [linear-algebra]
 
 *Uses:* [[§35 Tensor Products#^ladr-9-74|9.74]]
 
-> [!remark] Notation 9.84: V1, ..., Vm (p. 378)
+> [!remark] Notation 9.84: $V_1,\dots,V_m$ (p. 378)
+> For the rest of this subsection, $m$ is an integer greater than $1$ and $V_1,\dots,V_m$ are finite-dimensional vector spaces.
 
 ^ladr-9-84
 
-> [!definition] Definition 9.85: M-linear functional, the vector space B(V1, ..., Vm)
+> [!definition] Definition 9.85: m-linear functional, the vector space B(V1, ..., Vm)
 > An *$m$-linear functional* on $V_1\times\dots\times V_m$ is linear in each slot; $\mathcal{B}(V_1,\dots,V_m)$ is the space of them.
 
 ^ladr-9-85
 
-> [!example] Example 9.86: M-linear functional (p. 378)
+> [!example] Example 9.86: m-linear functional (p. 378)
 > For $\varphi_k\in V_k'$: $\beta(v_1,\dots,v_m)=\varphi_1(v_1)\cdots\varphi_m(v_m)$ is $m$-linear; sums of these give all of $\mathcal{B}(V_1,\dots,V_m)$.
 
 ^ladr-9-86
@@ -219,7 +220,7 @@ tags: [linear-algebra]
 
 *Uses:* [[§35 Tensor Products#^ladr-9-74|9.74]], [[§35 Tensor Products#^ladr-9-89|9.89]]
 
-> [!definition] Definition 9.91: M-linear map
+> [!definition] Definition 9.91: m-linear map
 > An *$m$-linear map* $V_1\times\dots\times V_m\to U$ is linear in each slot when the others are fixed.
 
 ^ladr-9-91

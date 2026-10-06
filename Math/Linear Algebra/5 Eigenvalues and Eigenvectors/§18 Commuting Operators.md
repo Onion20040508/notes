@@ -52,7 +52,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The engine of 5E: [[§18 Commuting Operators#^ladr-5-76|5.76]], [[§18 Commuting Operators#^ladr-5-78|5.78]]. Physics: a symmetry commuting with $H$ maps each energy eigenspace to itself, which is why degeneracies organize into representations of the symmetry group.
 
-> [!theorem] Theorem 5.76: Simultaneous diagonalizablity ⟺ commutativity
+> [!theorem] Theorem 5.76: Simultaneous diagonalizability ⟺ commutativity
 > Two diagonalizable operators on the same space are diagonal with respect to a common basis iff they commute.
 
 ^ladr-5-76

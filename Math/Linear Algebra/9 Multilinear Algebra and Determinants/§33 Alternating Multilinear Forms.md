@@ -13,7 +13,7 @@ tags: [linear-algebra]
 
 ^ladr-9-24
 
-> [!definition] Definition 9.25: M-linear form, V
+> [!definition] Definition 9.25: m-linear form, V⁽ᵐ⁾
 > An *$m$-linear form* on $V$ is a function $\beta:V^m\to\F$ that is linear in each slot when the others are fixed. $V^{(m)}$ is the vector space of $m$-linear forms; a *multilinear form* is an $m$-linear form for some $m$.
 
 ^ladr-9-25
@@ -24,7 +24,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - In the language of [[Differentiable Manifolds]]: covariant $m$-tensors on $V$.
 
-> [!example] Example 9.26: M-linear forms (p. 346)
+> [!example] Example 9.26: m-linear forms (p. 346)
 > - For $\alpha,\rho\in V^{(2)}$: $\beta(v_1,v_2,v_3,v_4)=\alpha(v_1,v_2)\rho(v_3,v_4)$ is $4$-linear (a tensor product of forms).
 > - $\beta(T_1,\dots,T_m)=\operatorname{tr}(T_1\cdots T_m)$ is $m$-linear on $\Lin(V)$.
 

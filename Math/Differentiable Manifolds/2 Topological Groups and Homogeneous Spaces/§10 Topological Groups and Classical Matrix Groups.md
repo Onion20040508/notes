@@ -215,6 +215,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 
 > [!remark]- Connections
 > - The real case of [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (characterizations of unitary matrices).
+
 > [!definition] Definition §10.7: Special Orthogonal Group
 > $\mathrm{SO}(n,\mathbb{R}) = \mathrm{O}(n,\mathbb{R}) \cap \mathrm{SL}(n,\mathbb{R}) = \{\, g \in \mathrm{O}(n,\mathbb{R}) \mid \det g = 1 \,\}$.
 

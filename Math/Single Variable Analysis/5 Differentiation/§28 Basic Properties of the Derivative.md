@@ -146,7 +146,7 @@ The most useful theorem:
 
 ^thm-28-3
 
-> [!proof]+ Proof
+> [!proof]+ Proof (first attempt)
 > Multiply and divide by $f(x) - f(a)$:
 >
 > $$
@@ -159,7 +159,7 @@ The most useful theorem:
 
 ^pf-28-3
 
-> [!proof]+ Proof
+> [!proof]+ Proof (repaired)
 > The trick: take care of the case $f(x) = f(a)$ by never using $f(x) - f(a)$ as a denominator. Define a new function $h$ on the domain of $g$:
 >
 > $$

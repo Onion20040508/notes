@@ -183,7 +183,7 @@ The introduction described congruence as "same remainder on division by $m$". We
 ^def-19-3
 
 > [!remark] Remark: What "Well-Defined" Means
-> Definition §19.3 does not give a formula for $r_m(a)$; it gives a *condition* that the value must satisfy. Such a conditional definition defines a function only if, for each $a$ in the domain, the condition picks out **exactly one** element of the codomain: at least one (existence) and at most one (uniqueness). That is what "$r_m$ is well defined" asserts, and it is precisely the content of Proposition §19.4. The same check, in a different guise, recurs whenever a function is defined on congruence classes ([[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|Proposition §21.3]]) or on equivalence classes ([[§22 Partitions and Equivalence Relations#^prop-22-5|Proposition §22.5]]).
+> [[§19 Congruence of Integers#^def-19-3|Definition §19.3]] does not give a formula for $r_m(a)$; it gives a *condition* that the value must satisfy. Such a conditional definition defines a function only if, for each $a$ in the domain, the condition picks out **exactly one** element of the codomain: at least one (existence) and at most one (uniqueness). That is what "$r_m$ is well defined" asserts, and it is precisely the content of [[§19 Congruence of Integers#^prop-19-4|Proposition §19.4]]. The same check, in a different guise, recurs whenever a function is defined on congruence classes ([[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|Proposition §21.3]]) or on equivalence classes ([[§22 Partitions and Equivalence Relations#^prop-22-5|Proposition §22.5]]).
 
 ^rem-19-1
 
@@ -362,7 +362,7 @@ Combining the two propositions gives the general cancellation law.
 
 *Uses:* [[§19 Congruence of Integers#^prop-19-6|§19.6]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]]
 
-Division first arises in solving $ax = b$; in modular arithmetic it arises in solving the **linear congruence** $ax \equiv b \pmod m$, i.e. finding *all* integers $x$ satisfying it. For small numbers, Propositions §19.6 and §19.7 used in turn already do this: divide by common factors of $a$, $b$ and $m$ until none remain, then cancel factors coprime to the modulus.
+Division first arises in solving $ax = b$; in modular arithmetic it arises in solving the **linear congruence** $ax \equiv b \pmod m$, i.e. finding *all* integers $x$ satisfying it. For small numbers, Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congruence of Integers#^prop-19-7|§19.7]] used in turn already do this: divide by common factors of $a$, $b$ and $m$ until none remain, then cancel factors coprime to the modulus.
 
 > [!example] Example §19.6: Solving Linear Congruences by Division
 > (a) *Solve $4x \equiv 12 \pmod{14}$.*

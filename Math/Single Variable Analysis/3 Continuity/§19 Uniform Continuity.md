@@ -189,13 +189,13 @@ This is another important property of continuous functions on closed bounded int
 ^thm-19-5
 
 > [!proof]+ Proof
-> We need the **[[Mean Value Theorem|Mean Value Theorem]]**, which we accept now and prove later (Part II). For any pair $x, y$ in the interval, the MVT gives a point $c$ between them with
+> We need the **[[Mean Value Theorem|Mean Value Theorem]]**, which we accept now and prove later ([[· 5 Differentiation|Chapter 5]], §29). For any pair $x, y$ in the interval, the MVT gives a point $c$ between them with
 >
 > $$
 > f(x) - f(y) = f'(c)(x - y), \qquad \text{hence} \qquad |f(x) - f(y)| = |f'(c)|\,|x-y| \leq M |x - y|
 > $$
 >
-> — a simple bound in terms of $|x-y|$. So for every $\varepsilon > 0$, take $\delta = \varepsilon / M$: when $|x - y| < \delta$, $|f(x) - f(y)| \leq M|x-y| < \varepsilon$. Done.
+> — a simple bound in terms of $|x-y|$. So for every $\varepsilon > 0$, take $\delta = \varepsilon / M$ (if $M = 0$, then $f$ is constant and any $\delta$ works): when $|x - y| < \delta$, $|f(x) - f(y)| \leq M|x-y| < \varepsilon$. Done.
 
 ^pf-19-5
 

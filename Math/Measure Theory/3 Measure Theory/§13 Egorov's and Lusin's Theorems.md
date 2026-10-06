@@ -107,7 +107,7 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 
 ^pf-13-1
 
-*Uses:* [[§12 Measurable Functions#^ex-12-3|Ex. §12.3]], [[§12 Measurable Functions#^def-12-8|Def. §12.8]], [[§12 Measurable Functions#^def-12-10|Def. §12.10]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12 Measurable Functions#^def-12-9|Def. §12.9]], [[§14 Series#^ex-14-4|451 Ex. §14.4]], [[Archimedean Property|451 Archimedean Property]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^ex-12-3|Ex. §12.3]], [[§12 Measurable Functions#^def-12-8|Def. §12.8]], [[§12 Measurable Functions#^def-12-10|Def. §12.10]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§12 Measurable Functions#^def-12-9|Def. §12.9]], [[§14 Series#^ex-14-4|451 Ex. §14.4]], [[Archimedean Property|451 Archimedean Property]]
 
 > [!remark]- Connections
 > - MATH 451 uniform convergence: [[§24 Uniform Convergence#^def-24-2|451 Definition §24.2]].
@@ -242,7 +242,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 
 ^pf-13-3
 
-*Uses:* [[§12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§12 Measurable Functions#^thm-12-17|§12.17]], [[§12 Measurable Functions#^thm-12-16|§12.16]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Continuous Functions#^thm-17-2|451 §17.2]], [[§17 Continuous Functions#^thm-17-3|451 §17.3]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
+*Uses:* [[§12 Measurable Functions#^def-12-2|Def. §12.2]], [[§12 Measurable Functions#^prop-12-13|§12.13]], [[Inner Regularity of Lebesgue Measure|§11.10]], [[Properties of Lebesgue Outer Measure|§9.1]], [[§13 Egorov's and Lusin's Theorems#^lem-13-2|§13.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§12 Measurable Functions#^thm-12-17|§12.17]], [[§12 Measurable Functions#^thm-12-16|§12.16]], [[§12 Measurable Functions#^thm-12-3|§12.3]], [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals|§7.1]], [[§12 Measurable Functions#^prop-12-2|§12.2]], [[§6 Closed Sets and Limit Points#^thm-6-1|590 §6.1]], [[§9 Continuous Functions#^thm-9-4|590 §9.4]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Continuous Functions#^thm-17-2|451 §17.2]], [[§17 Continuous Functions#^thm-17-3|451 §17.3]], [[§14 Series#^ex-14-4|451 Ex. §14.4]]
 
 ![[m551-13-4.svg]]
 *Step 1 of Lusin's theorem, with the $A_i$ drawn as intervals for simplicity. Inside each $A_i$ we choose a closed $F_i$ (thick) with $m(A_i \setminus F_i)$ small; what is removed, $E \setminus F$ (red), is a small set around the jumps of $f$ (dotted). On $F = F_0 \cup F_1 \cup F_2$ the function equals the constant $a_i$ on each $F_i$, and different $F_i$ are a positive distance apart (Lemma §13.2), so $f|_F$ is locally constant, hence continuous.*

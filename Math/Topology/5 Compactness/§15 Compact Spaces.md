@@ -261,7 +261,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 ^rem-15-4
 
 > [!remark] Remark: Book Material
-> [[§15 Compact Spaces#^thm-15-5|The following theorem]] (Munkres 26.9) was not covered in lecture but is important. It will be removed if covered later, or kept as supplementary material.
+> [[§15 Compact Spaces#^thm-15-5|The following theorem]] (Munkres 26.9) was not covered in lecture but is important; it is kept as supplementary material.
 
 ^rem-15-5
 
@@ -447,9 +447,9 @@ To prove this, we first establish a key lemma:
 > - If $c = a$: $A_c$ contains $[a, e)$ for some $e > a$.
 > - If $a < c \leq b$: $A_c$ contains $(d, c]$ for some $d < c$ (or $(d, e)$ containing $c$ if $c < b$).
 >
-> In either case, there exists $d < c$ such that $(d, c] \subseteq A_c$ (taking $d = a$ if $c = a$).
->
 > *Claim:* $c \in C$.
+>
+> If $c = a$, then $c \in C$ by Step (2). So assume $a < c$; then there exists $d < c$ such that $(d, c] \subseteq A_c$.
 >
 > Since $c = \sup C$ and $d < c$, there must exist some $z \in C$ with $z > d$. (Otherwise $d$ would be an upper bound for $C$ smaller than $c$, contradicting $c = \sup C$.)
 >

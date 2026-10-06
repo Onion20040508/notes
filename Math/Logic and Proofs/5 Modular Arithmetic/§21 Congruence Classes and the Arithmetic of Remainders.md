@@ -88,7 +88,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 > \overleftarrow{r_m}(\{r\}) = \{x \in \mathbb{Z} \mid r_m(x) = r\} = [r]_m ,
 > $$
 >
-> by Proposition [[§19 Congruence of Integers#^prop-19-5|§19.5]] (as $r_m(r) = r$). So the boxes are the classes, the columns of the table in Example §21.1(b) for $m = 6$, or the columns of a calendar for $m = 7$. For any integer $a$, $\ [a]_m = [r]_m$ iff $r_m(a) = r$; in particular $[a]_m = [r_m(a)]_m$.
+> by Proposition [[§19 Congruence of Integers#^prop-19-5|§19.5]] (as $r_m(r) = r$). So the boxes are the classes, the columns of the table in [[§21 Congruence Classes and the Arithmetic of Remainders#^ex-21-1|Example §21.1]](b) for $m = 6$, or the columns of a calendar for $m = 7$. For any integer $a$, $\ [a]_m = [r]_m$ iff $r_m(a) = r$; in particular $[a]_m = [r_m(a)]_m$.
 >
 > *Source: Eccles Table 21.1.4*
 
@@ -107,7 +107,7 @@ These examples show the classes modulo $m$ *partitioning* $\mathbb{Z}$: two clas
 
 ^def-21-2
 
-Each integer $a$ lies in its own class $[a]_m$, and by Proposition §21.1 two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
+Each integer $a$ lies in its own class $[a]_m$, and by [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|Proposition §21.1]] two classes are equal or disjoint: so $\mathbb{Z}_m$ is a *partition* of $\mathbb{Z}$ into non-empty, pairwise disjoint sets. This is the model example of [[§22 Partitions and Equivalence Relations|§22]], which defines partitions in general ([[§22 Partitions and Equivalence Relations#^def-22-1|Def. §22.1]]), proves Proposition §21.1 for any equivalence relation ([[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3]]), and recovers $\mathbb{Z}_m$ as the quotient set $\mathbb{Z}/{\equiv}$ ([[§22 Partitions and Equivalence Relations#^def-22-4|Def. §22.4]]).
 
 > [!theorem] Proposition §21.2: $\mathbb{Z}_m$ Has $m$ Elements
 > The set $\mathbb{Z}_m$ is finite of cardinality $m$; its elements are $[r]_m$ for the integers $0 \leq r < m$:
@@ -177,7 +177,7 @@ The same idea works for every $m$: to add two columns of the table, pick any ele
 ^def-21-3
 
 > [!remark] Remark: Why Well-Definedness Needs Checking
-> The formulas in Definition §21.3 are written in terms of *representatives*, and a class has many. In $\mathbb{Z}_8$, the third column is $[2]_8 = [10]_8$ and the eighth is $[7]_8 = [31]_8$. With the first representatives, $2 \times 7 = 14 \in [6]_8$; with the second, $10 \times 31 = 310 = 8 \times 38 + 6 \in [6]_8$ too. That the answer is always the same column is exactly what "multiplication is well defined" means; a rule that fails this test defines no function at all ([[§22 Partitions and Equivalence Relations#^ex-22-5|Example §22.5]]).
+> The formulas in [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Definition §21.3]] are written in terms of *representatives*, and a class has many. In $\mathbb{Z}_8$, the third column is $[2]_8 = [10]_8$ and the eighth is $[7]_8 = [31]_8$. With the first representatives, $2 \times 7 = 14 \in [6]_8$; with the second, $10 \times 31 = 310 = 8 \times 38 + 6 \in [6]_8$ too. That the answer is always the same column is exactly what "multiplication is well defined" means; a rule that fails this test defines no function at all ([[§22 Partitions and Equivalence Relations#^ex-22-5|Example §22.5]]).
 
 ^rem-21-2
 
@@ -346,7 +346,7 @@ This proof is **non-constructive**: it guarantees a solution without saying how 
 
 ^ex-21-4
 
-An element is *invertible* when its row contains $1$; we now show that the pattern of Example §21.4 always holds.
+An element is *invertible* when its row contains $1$; we now show that the pattern of [[§21 Congruence Classes and the Arithmetic of Remainders#^ex-21-4|Example §21.4]] always holds.
 
 > [!definition] Definition §21.5: Invertible; Inverse Modulo $m$
 > The element $[a]_m \in \mathbb{Z}_m$ is **invertible** (or $a \in \mathbb{Z}$ is **invertible modulo $m$**) if there is an integer $a'$ with $[a]_m \times [a']_m = [1]_m$, equivalently $a a' \equiv 1 \pmod m$. Then $[a']_m$ is called the **inverse** of $[a]_m$, written $[a']_m = ([a]_m)^{-1}$, and $a'$ is called an **inverse of $a$ modulo $m$**.
@@ -408,17 +408,17 @@ The inverse class is unique: if $aa' \equiv 1 \equiv aa''$, then $a' \equiv a'(a
 
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|Def. §21.5]], [[§20 Linear Congruences#^thm-20-4|§20.4]]
 
-For a prime modulus $p$ every class other than $[0]_p$ is invertible; the counting proof of Theorem §21.6 then leads to Fermat's little theorem, [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
+For a prime modulus $p$ every class other than $[0]_p$ is invertible; the counting proof of [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] then leads to Fermat's little theorem, [[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]].
 
 > [!remark]- Connections
 > - [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (invertibility criterion).
 
 > [!example] Example §21.5: Computing Inverses
-> (a) In $\mathbb{Z}_{10}$ the invertible elements are $[1], [3], [7], [9]$ (the rows of Example §21.3 containing $1$), with $[1]^{-1} = [1]$, $[3]^{-1} = [7]$, $[7]^{-1} = [3]$, $[9]^{-1} = [9]$.
+> (a) In $\mathbb{Z}_{10}$ the invertible elements are $[1], [3], [7], [9]$ (the rows of [[§21 Congruence Classes and the Arithmetic of Remainders#^ex-21-3|Example §21.3]] containing $1$), with $[1]^{-1} = [1]$, $[3]^{-1} = [7]$, $[7]^{-1} = [3]$, $[9]^{-1} = [9]$.
 >
 > (b) Modulo $12$ the invertible elements are $1, 5, 7, 11$ (the elements of $R_{12}$ coprime to $12$), and each is its own inverse: $1, 25, 49, 121 \equiv 1 \pmod{12}$.
 >
-> (c) *$290$ is invertible modulo $357$.* Example [[§20 Linear Congruences#^ex-20-4|§20.4]] found $\gcd(290, 357) = 1$ and $290 \times (-16) \equiv 1 \pmod{357}$, so $([290]_{357})^{-1} = [-16]_{357} = [341]_{357}$. By Proposition §21.7 every congruence $290x \equiv b \pmod{357}$ is now solved by one multiplication:
+> (c) *$290$ is invertible modulo $357$.* Example [[§20 Linear Congruences#^ex-20-4|§20.4]] found $\gcd(290, 357) = 1$ and $290 \times (-16) \equiv 1 \pmod{357}$, so $([290]_{357})^{-1} = [-16]_{357} = [341]_{357}$. By [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-7|Proposition §21.7]] every congruence $290x \equiv b \pmod{357}$ is now solved by one multiplication:
 >
 > | $b$ | $x \equiv -16\, b$ | answer |
 > |---|---|---|

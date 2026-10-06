@@ -79,7 +79,7 @@ tags: [measure-theory, math551]
 
 ## Uncountability of $[0,1]$
 
-> [!example] Example §4.2: Interval 0-1 is uncountable
+> [!example] Example §4.2: The interval $[0,1]$ is uncountable
 > The interval $[0,1]$ is not countable.
 
 ^ex-4-2

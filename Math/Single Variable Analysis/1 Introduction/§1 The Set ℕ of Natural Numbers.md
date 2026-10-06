@@ -57,7 +57,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 ^thm-1-1
 
 > [!proof]+ Proof
-> Let $S = \{n \in \mathbb{N} : P_n \text{ is true}\}$. By (I1), $1 \in S$. By (I2), whenever $n \in S$ we have $n+1 \in S$. By axiom N5, $S = \mathbb{N}$, i.e. $P_n$ is true for every $n \in \mathbb{N}$.
+> Let $S = \{n \in \mathbb{N} : P_n \text{ is true}\}$. By the initial step (1), $1 \in S$. By the induction step (2), whenever $n \in S$ we have $n+1 \in S$. By axiom N5, $S = \mathbb{N}$, i.e. $P_n$ is true for every $n \in \mathbb{N}$.
 
 ^pf-1-1
 

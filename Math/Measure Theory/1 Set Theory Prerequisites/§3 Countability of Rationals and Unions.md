@@ -12,6 +12,8 @@ tags: [measure-theory, math551]
 
 ^ex-3-1
 
+*Proved in [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]] below.*
+
 > [!remark]- Connections
 > - MATH 451 proof by listing lowest-terms fractions along diagonals: [[§2 The Set ℚ of Rational Numbers#^thm-2-5|ℚ is countable (451 §2.5)]].
 

@@ -309,7 +309,7 @@ How to prove it? Not clear at first — we must produce a limit out of nothing. 
 
 ^pf-10-9
 
-> [!proof]+ Proof
+> [!proof]+ Proof of Theorem 10.8
 > Since $(s_n)$ is bounded, $\liminf s_n$ and $\limsup s_n$ are finite. We use the criterion of the previous subsection: it suffices to show they are equal — so we try to get information on $\underline{s}_N$, $\overline{s}_N$.
 >
 > For any $\varepsilon > 0$ there exists $N$ such that for all $m, n \geq N$,

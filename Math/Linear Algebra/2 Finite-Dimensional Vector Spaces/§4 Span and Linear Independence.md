@@ -9,6 +9,7 @@ tags: [linear-algebra]
 ← [[§3 Subspaces]] · ↑ [[· 2 Finite-Dimensional Vector Spaces]] · [[§5 Bases]] →
 
 > [!remark] Notation 2.1: List of vectors (p. 28)
+> Lists of vectors are usually written without surrounding parentheses: $v_1,\dots,v_m$ rather than $(v_1,\dots,v_m)$.
 
 ^ladr-2-1
 
@@ -125,6 +126,7 @@ tags: [linear-algebra]
 > - Computational version: ℙₙ and its degree convention in [[§23 Vector Spaces and Subspaces#^ex-23-1|235 Ex. §23.1]](d).
 
 > [!remark] Notation 2.12: Pm(F) (p. 31)
+> For a nonnegative integer $m$, $\Poly_m(\F)$ is the set of all polynomials with coefficients in $\F$ and degree at most $m$.
 
 ^ladr-2-12
 
@@ -275,5 +277,5 @@ tags: [linear-algebra]
 *Uses:* [[Linear dependence lemma|2.19]], [[Length of linearly independent list ≤ length of spanning list|2.22]]
 
 > [!remark]- Connections
-> - Used implicitly in [[Fundamental theorem of linear maps]] (null space is finite-dimensional) and in [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]].
+> - Used in [[Fundamental theorem of linear maps]] (the null space is finite-dimensional, a step Axler leaves implicit) and in [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]].
 > - Computational version: [[§27 The Dimension of a Vector Space#^thm-27-3|235 Thm. §27.3]] (a subspace of a finite-dimensional space is finite-dimensional).

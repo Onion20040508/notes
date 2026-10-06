@@ -109,7 +109,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Used to show eigenspace and generalized-eigenspace decompositions fill $V$: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[Generalized eigenspace decomposition]].
 
-> [!remark] Notation 3.95: V + U (p. 98)
+> [!remark] Notation 3.95: v + U (p. 98)
+> For $v\in V$ and a subset $U\subseteq V$, $v+U$ is the subset $\{v+u : u\in U\}$ of $V$.
 
 ^ladr-3-95
 
@@ -149,8 +150,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
-> - Same construction as quotient groups and rings in abstract algebra ([[§40 Quotient Groups#^def-40-1|493 Def. §40.1]]): $U$ plays the role of the normal subgroup/ideal.
-> - Group version: the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N.
+> - Group version: the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N; quotient rings by an ideal are the same construction.
 > - Same construction in 556: [[§1 Linear Spaces#^def-1-7|556 Def. §1.7]] and [[§1 Linear Spaces#^prop-1-6|556 Prop. §1.6]]; a norm passes to the quotient only when the subspace is closed, [[§12 New Normed Spaces from Old#^thm-12-8|556 Thm. §12.8]].
 > - Same construction in 591, with its universal property: [[§20 Linear Algebra Toolkit#^def-20-5|591 Def. §20.5]], [[§20 Linear Algebra Toolkit#^prop-20-6|591 Prop. §20.6]]; it builds the cotangent space from germs in [[§30 The Cotangent Space#^def-30-3|591 Def. §30.3]].
 
@@ -182,6 +182,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the cosets of a subgroup partition the group, [[§28 Left and Right Cosets#^prop-28-2|493 Prop. §28.2]] (hub [[Cosets Partition a Group]]).
+> - Measure-theory use: viewing $\R$ as a vector space over $\mathbb Q$ (a scalar field outside Axler's $\F$), the translates $x+\mathbb Q$ of the subspace $\mathbb Q$ partition $\R$; the Vitali set picks one point from each class meeting $[0,1]$, [[§11 Borel Sets and Measure Spaces#^def-11-12|551 Def. §11.12]] ([[The Vitali Set is Not Measurable]]).
 
 > [!definition] Definition 3.102: Addition and scalar multiplication on V∕U
 > For a subspace $U$ of $V$, define on $V/U$:
@@ -250,7 +251,8 @@ tags: [linear-algebra]
 > - Counting analogue: for V over a finite field, |V/U| = |V|/|U| is Lagrange's theorem for (V, +), [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]], and taking logarithms gives this formula.
 > - Without counting dimensions: [[§1 Linear Spaces#^thm-1-11|556 Thm. §1.11]] gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.
 
-> [!remark] Notation 3.106: ̃T (p. 102)
+> [!remark] Notation 3.106: $\tilde T$ (p. 102)
+> For $T\in\Lin(V,W)$, $\tilde T:V/(\nullsp T)\to W$ is the map defined by $\tilde T(v+\nullsp T)=Tv$.
 
 ^ladr-3-106
 

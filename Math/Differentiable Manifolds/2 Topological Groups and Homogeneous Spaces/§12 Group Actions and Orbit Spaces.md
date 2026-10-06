@@ -257,7 +257,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§12 Group Actions and Orbit Spaces#^def-12-4|Def. §12.4]], [[§12 Group Actions and Orbit Spaces#^prop-12-1|§12.1]], [[§12 Group Actions and Orbit Spaces#^lem-12-2|§12.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!remark]- Connections
-> - For $G/H$ this is the openness of the projection: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]] and [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|the remark after §14.1]].
+> - For $G/H$ this is the openness of the projection: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]] and [[§14 The Topology of G∕H and Real Grassmannians#^rem-14-1|the remark after §14.2]].
 
 ## Hausdorff Orbit Spaces
 

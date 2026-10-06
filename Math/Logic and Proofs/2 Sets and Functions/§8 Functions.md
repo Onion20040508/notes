@@ -43,7 +43,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ^ex-8-1
 
 ![[m250-8-1.svg]]
-*The arrow picture of the function in Example §8.1. The defining property of a function is on the left: one arrow leaves each element of the domain. On the right anything is allowed: $y_1$ receives two arrows, $y_2$ and $y_4$ none.*
+*The arrow picture of the function in [[§8 Functions#^ex-8-1|Example §8.1]]. The defining property of a function is on the left: one arrow leaves each element of the domain. On the right anything is allowed: $y_1$ receives two arrows, $y_2$ and $y_4$ none.*
 
 > [!definition] Definition §8.2: Constant Function; Identity Function
 > Given sets $X$, $Y$ and $y_0 \in Y$, the **constant function** $c_{y_0} : X \to Y$ is given by $c_{y_0}(x) = y_0$ for all $x \in X$. Given a set $X$, the **identity function** $I_X : X \to X$ is given by $I_X(x) = x$ for all $x \in X$.
@@ -368,7 +368,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > - Computational version: the vertical line test, [[§1 Four Ways to Represent a Function#^thm-1-1|Calc Thm. §1.1]].
 
 > [!remark] Remark: A Function Is Its Graph
-> Definition §8.1 rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by Proposition §8.2 this captures exactly the same objects, and it reduces functions to sets.
+> [[§8 Functions#^def-8-1|Definition §8.1]] rests on the undefined word "assignment". In more advanced mathematics a function $X \to Y$ is *defined* to be a subset of $X \times Y$ in which each element of $X$ occurs as the first coordinate of exactly one element; by [[§8 Functions#^prop-8-2|Proposition §8.2]] this captures exactly the same objects, and it reduces functions to sets.
 >
 > *Eccles: footnote to Section 8.5*
 

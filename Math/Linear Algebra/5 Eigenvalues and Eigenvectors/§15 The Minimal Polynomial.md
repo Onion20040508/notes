@@ -70,7 +70,7 @@ tags: [linear-algebra]
 > Find the smallest $m$ for which $c_0I+c_1T+\dots+c_{m-1}T^{m-1}=-T^m$ is solvable. Faster in practice: solve $c_0v+\dots+c_{n-1}T^{n-1}v=-T^nv$ for one vector $v$; if the solution is unique, $c_0,\dots,c_{n-1},1$ are the coefficients.
 
 > [!remark]- Connections
-> - Well defined by [[Existence, uniqueness, and degree of minimal polynomial]]. Eigenvalues are its zeros ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]]); it divides every annihilating polynomial ([[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]); diagonalizability criterion: [[§17 Diagonalizable Operators#^ladr-5-62|Necessary and sufficient condition for diagonalizability]].
+> - Well defined by [[Existence, uniqueness, and degree of minimal polynomial]]. Eigenvalues are its zeros ([[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]]); it divides every annihilating polynomial ([[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]); diagonalizability criterion: [[§17 Diagonalizable Operators#^ladr-5-62|Necessary and sufficient condition for diagonalizability]].
 
 > [!example] Example 5.26: Minimal polynomial of an operator on F⁵ (p. 146)
 > Let $T\in\Lin(\F^5)$ have matrix (standard basis)
@@ -119,7 +119,7 @@ tags: [linear-algebra]
 >
 > ![[ladr-5.28-roots.svg|320]]
 
-> [!theorem] Theorem 5.29: Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial
+> [!theorem] Theorem 5.29: q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial
 > Let $V$ be finite-dimensional, $T\in\Lin(V)$, $q\in\Poly(\F)$. Then $q(T)=0$ iff $q$ is a polynomial multiple of the minimal polynomial $p$ of $T$.
 
 ^ladr-5-29
@@ -141,7 +141,7 @@ tags: [linear-algebra]
 ^ladr-5-31
 
 > [!proof]+ Proof
-> Let $p$ be the minimal polynomial of $T$. Then $p(T)u=0$ for all $u\in U$, i.e. $p(T|_U)=0$. Apply [[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]] to $T|_U$.
+> Let $p$ be the minimal polynomial of $T$. Then $p(T)u=0$ for all $u\in U$, i.e. $p(T|_U)=0$. Apply [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]] to $T|_U$.
 
 *Uses:* [[§15 The Minimal Polynomial#^ladr-5-29|5.29]]
 

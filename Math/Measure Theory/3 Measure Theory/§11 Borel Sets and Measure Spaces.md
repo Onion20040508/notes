@@ -751,7 +751,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 > [!remark]- Connections
 > - Linear-algebra analogue: the classes are translates of $\mathbb{Q}$ (a $\mathbb{Q}$-subspace of $\mathbb{R}$), and translates of a subspace are equal or disjoint, [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|LADR 3.101]]; the set of classes is a [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|quotient space]] (LADR 3.99).
 > - General version: classes are equal or disjoint, [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]]; so the classes partition [0, 1], [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
-> - The classes are the cosets x + ℚ of the subgroup ℚ of (ℝ, +), cut down to [0, 1], and cosets partition a group: [[Cosets Partition a Group|493 Prop. §26.2]].
+> - The classes are the cosets x + ℚ of the subgroup ℚ of (ℝ, +), cut down to [0, 1], and cosets partition a group: [[Cosets Partition a Group|493 Prop. §28.2]].
 
 Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence classes, where $I$ is some index set. Note that $\bigcup_{\alpha \in I} E_\alpha = [0, 1]$.
 
@@ -868,7 +868,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 ^prop-11-21
 
 > [!proof]+ Proof
-> **(1)** Each $C_n$ is closed (finite union of closed intervals) and bounded, with $C_0 \supseteq C_1 \supseteq C_2 \supseteq \cdots$. The Cantor set $C = \bigcap_n C_n$ is an [[§6 Closed Sets and Limit Points#^thm-6-1|intersection of closed sets]], hence closed. Since $C \subseteq [0, 1]$, it is bounded. Note that $C \neq \emptyset$: for example, $0 \in C_n$ for all $n$, so $0 \in C$. (Alternatively, the [[§5 Topology of ℝⁿ#^thm-5-2|Nested Intervals Theorem]] guarantees $C \neq \emptyset$.)
+> **(1)** Each $C_n$ is closed (finite union of closed intervals) and bounded, with $C_0 \supseteq C_1 \supseteq C_2 \supseteq \cdots$. The Cantor set $C = \bigcap_n C_n$ is an [[§6 Closed Sets and Limit Points#^thm-6-1|intersection of closed sets]], hence closed. Since $C \subseteq [0, 1]$, it is bounded. Note that $C \neq \emptyset$: for example, $0 \in C_n$ for all $n$, so $0 \in C$. (Alternatively, the [[§5 Topology of ℝⁿ#^thm-5-2|Cantor's Nested Set Theorem]] guarantees $C \neq \emptyset$.)
 >
 > **(2)** Suppose $x_0 \in C$ is an interior point. Then there exists $\delta > 0$ such that $(x_0 - \delta, x_0 + \delta) \subseteq C$. But $C \subseteq C_n$ for all $n$, and $C_n$ is a disjoint union of closed intervals of length $\frac{1}{3^n}$. For $n$ large enough that $\frac{1}{3^n} < 2\delta$, the interval $(x_0 - \delta, x_0 + \delta)$ has length $2\delta > \frac{1}{3^n}$, so it cannot be contained in any single component of $C_n$. Since the components are disjoint, $(x_0 - \delta, x_0 + \delta) \not\subseteq C_n$, contradicting $(x_0 - \delta, x_0 + \delta) \subseteq C \subseteq C_n$.
 >

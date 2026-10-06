@@ -168,10 +168,10 @@ So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] say
 >
 > *Coprimality.* If $c$ divides both $m_k$ and $n_k$, then $c$ divides $m_k n_{k-1} - m_{k-1} n_k = \pm 1$, so $c = \pm 1$. Also $m_k, n_k$ are not both zero, since their combination is $\pm 1$. So $\gcd(m_k, n_k) = 1$. For instance, in [[§17 Consequences of the Euclidean Algorithm#^ex-17-1|Example §17.1]] the last row gives $(-7)(-5) - 3 \cdot 12 = -1 = (-1)^5$.
 >
-> *The HW7 solution proves the identity; the deduction that $m_k$ and $n_k$ are coprime is added here.*
->
 > *Eccles: Problems IV, Q11*
 > *Source: HW7*
+>
+> *The HW7 solution proves the identity; the deduction that $m_k$ and $n_k$ are coprime is added here.*
 
 ^ex-17-4
 
@@ -182,7 +182,7 @@ So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] say
 >
 > (ii)′ $d$ is a multiple of every common divisor: $c \mid a$ and $c \mid b$ $\Rightarrow$ $c \mid d$.
 >
-> Eccles avoids (ii)′ because it is not obvious from it that a gcd exists, and because (ii) says what the words "greatest common divisor" mean. The two definitions agree, and that is a consequence of Theorem §17.1.
+> Eccles avoids (ii)′ because it is not obvious from it that a gcd exists, and because (ii) says what the words "greatest common divisor" mean. The two definitions agree, and that is a consequence of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]].
 
 ^rem-17-2
 
@@ -246,7 +246,7 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 ^prop-17-3
 
 > [!remark] Remark: Using an Existence Statement
-> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$; fresh symbols are clearer here, as recommended in [[§7 Quantifiers#^rem-7-2|the remark in §7.3]].) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
+> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$; fresh symbols are clearer here, as recommended in [[§7 Quantifiers#^rem-7-2|the remark on proving ∀ and ∃ in §7]].) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
 
 ^rem-17-3
 

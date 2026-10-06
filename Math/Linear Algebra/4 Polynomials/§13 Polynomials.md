@@ -14,10 +14,10 @@ tags: [linear-algebra]
 ^ladr-4-1
 
 > [!remark]- Connections
-> - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z, absolute value, ∣z∣]].
+> - Used to define [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]].
 > - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (Re z and Im z).
 
-> [!definition] Definition 4.2: Complex conjugate, z, absolute value, |z|
+> [!definition] Definition 4.2: Complex conjugate, z̄, absolute value, |z|
 > For $z\in\C$:
 > - the *complex conjugate* is $\bar z=\operatorname{Re}z-(\operatorname{Im}z)\,i$;
 > - the *absolute value* is $|z|=\sqrt{(\operatorname{Re}z)^2+(\operatorname{Im}z)^2}$.
@@ -56,7 +56,7 @@ tags: [linear-algebra]
 > $\big||w|-|z|\big|\le|w-z|$ follows by applying the triangle inequality to $w=(w-z)+z$ and to $z=(z-w)+w$.
 
 > [!proof]+ Proof
-> All but the last are direct computations from [[§13 Polynomials#^ladr-4-2|Complex conjugate, z, absolute value, ∣z∣]] (e.g. $(a+bi)(a-bi)=a^2+b^2$). *(Filled in: multiplicativity of $|\cdot|$.)* $|wz|^2=wz\,\overline{wz}=(w\bar w)(z\bar z)=|w|^2|z|^2$.
+> All but the last are direct computations from [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]] (e.g. $(a+bi)(a-bi)=a^2+b^2$). *(Filled in: multiplicativity of $|\cdot|$.)* $|wz|^2=wz\,\overline{wz}=(w\bar w)(z\bar z)=|w|^2|z|^2$.
 >
 > **Triangle inequality.**
 > $$
@@ -144,7 +144,7 @@ tags: [linear-algebra]
 *Uses:* [[§6 Dimension#^ladr-2-38|2.38]], [[§5 Bases#^ladr-2-28|2.28]]
 
 > [!remark]- Connections
-> - Key step in [[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: every annihilating polynomial is a multiple of the minimal polynomial.
+> - Key step in [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]: every annihilating polynomial is a multiple of the minimal polynomial.
 > - Integer version: [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (hub [[Division Algorithm]]).
 > - Computational version: long division of polynomials in partial fractions, [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-1|Calc Thm. §47.1]] (with worked examples).
 
@@ -177,6 +177,7 @@ tags: [linear-algebra]
 > - In 235: stated without proof, in factored form, in [[§33 The Characteristic Equation#^rem-33-1|235 Remark §33.1]] (an n × n matrix has n complex eigenvalues, counting multiplicities).
 > - Computational version: [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-2|342 Thm. §58.2]] (proof by Liouville's theorem) and [[§94 Rouché's Theorem#^ex-94-2|342 Ex. §94.2]] (proof by Rouché's theorem, giving exactly n zeros in a large disk). The minimum argument here is the polynomial case of the minimum modulus principle, [[§59 Maximum Modulus Principle#^ex-59-2|342 Ex. §59.2]].
 > - The k-th roots step, in exponential form: [[§10 Roots of Complex Numbers#^thm-10-2|342 Thm. §10.2]].
+> - Analytic input, in topological terms: a closed disk in $\C=\R^2$ is compact ([[Heine–Borel Theorem]]) and its image under the continuous $|p|$ is compact ([[Continuous Image of a Compact Space is Compact]]), so $|p|$ attains a minimum; the interval case is 451's [[Extreme Value Theorem]]. A proof by the fundamental group of the circle: [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]].
 
 > [!theorem] Theorem 4.13: Fundamental theorem of algebra, second version
 > A nonconstant $p\in\Poly(\C)$ has a factorization, unique up to the order of the factors,

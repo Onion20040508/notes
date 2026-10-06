@@ -292,10 +292,10 @@ Quadratic inequalities are solved in the same way, with the sign rules for produ
 *Uses:* [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-8|Def. §6.8]], [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§1 The Language of Mathematics#^def-1-3|Def. §1.3]]
 
 ![[m250-6-1.svg]]
-*The Venn diagram of Proposition §6.2: the four rows of the truth table are the four regions. $A - B$ (blue), $A \cap B$ (red) and $B - A$ (green) do not overlap, and together they fill $A \cup B$; the fourth row is the region outside both circles.*
+*The Venn diagram of [[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]]: the four rows of the truth table are the four regions. $A - B$ (blue), $A \cap B$ (red) and $B - A$ (green) do not overlap, and together they fill $A \cup B$; the fourth row is the region outside both circles.*
 
 > [!remark] Remark: Venn Diagrams
-> A **Venn diagram** represents sets by regions of the page, and the regions cut out by $k$ overlapping regions correspond to the $2^k$ rows of a truth table. This makes identities like Proposition §6.2 visible, but a diagram is an illustration, not a proof: a region may be empty (the diagram above does not claim $A \cap B \ne \emptyset$), a careless drawing may omit a possible region, and a diagram may contain features with no set-theoretic meaning. The proofs are the truth tables and element arguments.
+> A **Venn diagram** represents sets by regions of the page, and the regions cut out by $k$ overlapping regions correspond to the $2^k$ rows of a truth table. This makes identities like [[§6 The Language of Set Theory#^prop-6-2|Proposition §6.2]] visible, but a diagram is an illustration, not a proof: a region may be empty (the diagram above does not claim $A \cap B \ne \emptyset$), a careless drawing may omit a possible region, and a diagram may contain features with no set-theoretic meaning. The proofs are the truth tables and element arguments.
 
 ^rem-6-3
 
@@ -382,7 +382,7 @@ So each law of logic from [[§1 The Language of Mathematics|§1]] translates int
 
 ^pf-6-3
 
-*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
+*Uses:* [[§6 The Language of Set Theory#^def-6-3|Def. §6.3]], [[§6 The Language of Set Theory#^def-6-6|Def. §6.6]], [[§6 The Language of Set Theory#^def-6-7|Def. §6.7]], [[§6 The Language of Set Theory#^def-6-10|Def. §6.10]], [[§6 The Language of Set Theory#^ex-6-7|Ex. §6.7]], [[§1 The Language of Mathematics#^thm-1-1|§1.1]], [[§1 The Language of Mathematics#^thm-1-2|§1.2]]
 
 Once these laws are available, further identities follow by algebra, without returning to elements.
 

@@ -142,7 +142,7 @@ tags: [linear-algebra]
 > - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
 > - The matrices described here form the groups O(n) and U(n) of 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|591 Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|591 Prop. §10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|591 Def. §10.8]]; orthonormal columns make U(n) compact, [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5|591 Cor. §22.5]].
 > - Computational version: [[§41 Orthogonal Sets#^prop-41-6|235 Prop. §41.6]] and [[§41 Orthogonal Sets#^thm-41-5|235 Thm. §41.5]] (length preservation, as in (c)).
-> - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with Theorem 9.58) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
+> - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with [[§34 Determinants#^ladr-9-58|Theorem 9.58]]) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 
 > [!theorem] Theorem 7.58: QR factorization
 > If $A$ is a square matrix with linearly independent columns, there are unique $Q,R$ with $Q$ unitary, $R$ upper triangular with positive diagonal, and $A=QR$.
@@ -214,5 +214,5 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§49★ Quadratic Forms#^rem-49-3|235 Remark §49.3]] (as a fast test for positive definiteness).
-> - Used in Quantum Mechanics: the Ritz equations $\mathsf H\mathbf c = \varepsilon\mathsf S\mathbf c$ with a positive definite overlap matrix $\mathsf S$ (Definition 7.62), a generalized eigenvalue problem that the Cholesky factorization turns into an ordinary one — [[§C9.3 The Ritz Variational Method#^thm-c9-3-3|QM Theorem §C9.3.3]].
+> - Used in Quantum Mechanics: the Ritz equations $\mathsf H\mathbf c = \varepsilon\mathsf S\mathbf c$ with a positive definite overlap matrix $\mathsf S$ ([[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-62|Definition 7.62]]), a generalized eigenvalue problem that the Cholesky factorization turns into an ordinary one — [[§C9.3 The Ritz Variational Method#^thm-c9-3-3|QM Theorem §C9.3.3]].
 

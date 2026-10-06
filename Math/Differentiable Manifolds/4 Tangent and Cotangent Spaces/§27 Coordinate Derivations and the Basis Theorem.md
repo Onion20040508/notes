@@ -256,7 +256,7 @@ $$
 *Uses:* [[§23 The Geometric Tangent Space#^def-23-1|Def. §23.1]], [[§23 The Geometric Tangent Space#^def-23-4|Def. §23.4]], [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]], [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]
 
 > [!remark]- Connections
-> - Proved in detail in [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Consequences, §27.7]], once the basis theorem gives $\dim T_pM = n$.
+> - The same argument, with both dimension counts cited ([[§23 The Geometric Tangent Space#^thm-23-3|§23.3]] for $T^{\mathrm{geo}}_pM$, the [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|basis theorem]] for $T_pM$), is recorded as [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Consequences, §27.7]].
 > - The same identification read through velocities of curves: [[§29 Tangent Vectors as Velocities of Curves#^rem-29-1|The Two Faces Reconciled]].
 
 > [!theorem] Corollary §27.7: Consequences
@@ -274,7 +274,7 @@ $$
 *Uses:* [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§23 The Geometric Tangent Space#^prop-23-9|§23.9]], [[§23 The Geometric Tangent Space#^prop-23-8|§23.8]], [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
-> - This is the detailed proof of [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Ambient and Abstract Agree, §27.6]], stated just above.
+> - The same argument as the proof of [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-6|Ambient and Abstract Agree, §27.6]], stated just above, with both dimension counts cited.
 
 **Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§23 The Geometric Tangent Space#^thm-23-3|§23.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
 

@@ -258,7 +258,7 @@ We now extend the integral from simple functions to general non-negative measura
 > - If $h(x_0) = 0$: then $f_k(x_0) \geq 0 = c \cdot 0 = c\,h(x_0)$ for all $k$, so $x_0 \in E_k$ for all $k$.
 > - If $h(x_0) > 0$: then $f(x_0) \geq h(x_0) > 0$ (since $h \leq f$). Since $\lim_{k \to \infty} f_k(x_0) = f(x_0)$ and $c\,h(x_0) < h(x_0) \leq f(x_0)$, there exists $l$ large enough such that $f_k(x_0) \geq c\,h(x_0)$ for all $k \geq l$. Hence $x_0 \in \bigcup_{k=1}^{\infty} E_k$.
 >
-> Now, on $E_k$ we have $f_k(x) \geq c\,h(x)$ by definition. Since $E_k \subseteq E$, [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|monotonicity of the domain]] gives $\int_E f_k\,dx \geq \int_{E_k} f_k\,dx$. Since $f_k \geq c\,h$ on $E_k$, monotonicity of the integrand ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|Proposition §14.3(i)]]) gives $\int_{E_k} f_k\,dx \geq \int_{E_k} c\,h\,dx = c\int_{E_k} h\,dx$. Combining:
+> Now, on $E_k$ we have $f_k(x) \geq c\,h(x)$ by definition. Since $E_k \subseteq E$, [[§14 The Lebesgue Integral for Simple Functions#^cor-14-7|monotonicity of the domain]] (Corollary §14.7 below, whose proof does not use the MCT) gives $\int_E f_k\,dx \geq \int_{E_k} f_k\,dx$. Since $f_k \geq c\,h$ on $E_k$, monotonicity of the integrand ([[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|Proposition §14.3(i)]]) gives $\int_{E_k} f_k\,dx \geq \int_{E_k} c\,h\,dx = c\int_{E_k} h\,dx$. Combining:
 >
 > $$
 > \int_E f_k\,dx \geq \int_{E_k} f_k\,dx \geq c \int_{E_k} h\,dx.
@@ -582,7 +582,7 @@ We now extend the integral from simple functions to general non-negative measura
 > \lim_{k \to \infty} \int_E g_k\,dx = \int_E (f_1 - f)\,dx.
 > $$
 >
-> Since $f_1 \geq f_k \geq 0$ and $\int f_k \leq \int f_1 < \infty$, by the [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|subtraction rule]] ($\int(f - g) = \int f - \int g$ when $f \geq g \geq 0$ and $\int g < \infty$):
+> Since $f_1 \geq f_k \geq 0$ and $\int f_k \leq \int f_1 < \infty$, by the [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|subtraction rule]] ($\int(f - g) = \int f - \int g$ when $f \geq g \geq 0$ and $\int g < \infty$; this is Theorem §14.8 (ii) applied to $f = g + (f - g)$, after subtracting the finite number $\int g$):
 >
 > **Left side**:
 >

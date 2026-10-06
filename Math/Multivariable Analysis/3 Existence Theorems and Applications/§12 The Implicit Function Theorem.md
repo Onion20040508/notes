@@ -271,8 +271,8 @@ The Implicit Function Theorem generalizes to functions of more variables.
 > - (ii) $F_y(x_1^{(0)}, x_2^{(0)}, \ldots, x_n^{(0)}, y^{(0)}) \neq 0$
 > - (iii) All partial derivatives $F_{x_1}, \ldots, F_{x_n}, F_y$ are continuous in a neighborhood of $(x^{(0)}, y^{(0)})$
 >
-> Then there exists a function $y = Y(x_1, \ldots, x_n)$ defined in a neighborhood of $(x_1^{(0)}, \ldots, x_n^{(0)})$ such that:
-> - (a) $F(x_1, \ldots, x_n, Y(x_1, \ldots, x_n)) = 0$
+> Then there exist a neighborhood $U$ of $x^{(0)} = (x_1^{(0)}, \ldots, x_n^{(0)})$, a number $\eta > 0$ and a function $y = Y(x_1, \ldots, x_n)$ on $U$ with values in $(y^{(0)} - \eta, y^{(0)} + \eta)$ such that $Y(x^{(0)}) = y^{(0)}$ and:
+> - (a) $F(x_1, \ldots, x_n, Y(x_1, \ldots, x_n)) = 0$ for $x \in U$, and $Y(x)$ is the only solution $y$ of $F(x, y) = 0$ with $|y - y^{(0)}| < \eta$
 > - (b) $Y$ is continuously differentiable with
 >
 > $$
@@ -282,7 +282,7 @@ The Implicit Function Theorem generalizes to functions of more variables.
 ^thm-12-2
 
 > [!remark] Remark
-> The proof follows the same structure as the [[Implicit Function Theorem|two-variable case]]. The condition $F_y \neq 0$ ensures we can solve for $y$ in terms of the other variables.
+> The proof follows the same structure as the [[Implicit Function Theorem|two-variable case]]. The condition $F_y \neq 0$ ensures we can solve for $y$ in terms of the other variables; uniqueness in (a) comes, as in Step 4 there, from $F$ being strictly monotone in $y$ near $(x^{(0)}, y^{(0)})$.
 
 ^rem-12-3
 

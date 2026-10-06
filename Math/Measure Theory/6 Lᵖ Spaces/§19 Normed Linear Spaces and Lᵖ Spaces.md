@@ -425,7 +425,7 @@ tags: [measure-theory, math551]
 > \int_E |f + g|^p \leq \left(\int_E |f + g|^p\right)^{1/p'} (\|f\|_p + \|g\|_p).
 > $$
 >
-> Dividing both sides by $(\int_E |f + g|^p)^{1/p'}$ (assuming this is finite and nonzero):
+> If $\|f\|_p$ or $\|g\|_p$ is infinite there is nothing to prove; otherwise $\int_E |f + g|^p < \infty$ by [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|Proposition §19.8]], and if $\int_E |f + g|^p = 0$ there is again nothing to prove. Dividing both sides by $(\int_E |f + g|^p)^{1/p'}$, which is therefore finite and nonzero:
 >
 > $$
 > \left(\int_E |f + g|^p\right)^{1 - 1/p'} = \left(\int_E |f + g|^p\right)^{1/p} = \|f + g\|_p \leq \|f\|_p + \|g\|_p.
@@ -433,7 +433,7 @@ tags: [measure-theory, math551]
 
 ^pf-19-9
 
-*Uses:* [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]]
+*Uses:* [[§15 The General Lebesgue Integral#^prop-15-3|§15.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-2|§19.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-7|Def. §19.7]], [[Hölder's Inequality|§19.5]], [[§14 The Lebesgue Integral for Simple Functions#^thm-14-8|§14.8]], [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-8|§19.8]]
 
 > [!remark]- Connections
 > - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]].
@@ -464,9 +464,9 @@ tags: [measure-theory, math551]
 
 ^cor-19-11
 
-*Uses:* [[Minkowski's Inequality|§19.9]]
-
 This follows by induction on $m$ from the two-function case ([[Minkowski's Inequality|Theorem §19.9]]).
+
+*Uses:* [[Minkowski's Inequality|§19.9]]
 
 > [!theorem] Corollary §19.12: Minkowski for Nonnegative Series
 > Let $\{f_k\}_{k=1}^{\infty}$ be a sequence of nonnegative measurable functions on $E$. Then:
@@ -565,7 +565,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[Minkowski's Inequality|§19.9]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|§19.10]]
 
 > [!remark]- Connections
-> - (i) is uniqueness of limits in a metric space ([[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451 §13 remark]]; [[§8 Hausdorff Spaces#^thm-8-3|590 §8.3]]), with “equal” meaning equal a.e.
+> - (i) is uniqueness of limits in a metric space ([[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451 Rem. §13.4]]; [[§8 Hausdorff Spaces#^thm-8-3|590 §8.3]]), with “equal” meaning equal a.e.
 
 ## The Riesz–Fischer Theorem
 
@@ -703,7 +703,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 >
 > **(iii) $C_c(\mathbb{R}^n)$ is dense in $L^p$.** By (ii), it suffices to approximate step functions. By linearity, it suffices to approximate $\chi_R$ for a rectangle $R$ with $m(R) < \infty$.
 >
-> Construct the same “trapezoidal” continuous approximation $g$ as in the $L^1$ proof ([[Continuous Functions of Compact Support are Dense in L¹|§16.7]]): $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|\chi_R(x) - g(x)| \leq 1$ with equality only on transition regions of total measure $\leq C\varepsilon'$. Since $|\chi_R - g|^p \leq |\chi_R - g| \leq 1$ (as $0 \leq g \leq 1$):
+> Construct the same “trapezoidal” continuous approximation $g$ as in the $L^1$ proof ([[Continuous Functions of Compact Support are Dense in L¹|§16.7]]): $g$ is continuous, compactly supported, $0 \leq g \leq 1$, and $|\chi_R(x) - g(x)| \leq 1$, and $\chi_R - g$ vanishes outside transition regions of total measure $\leq C\varepsilon'$. Since $|\chi_R - g|^p \leq |\chi_R - g| \leq 1$ (as $0 \leq g \leq 1$):
 >
 > $$
 > \|\chi_R - g\|_p^p = \int |\chi_R - g|^p\,dx \leq \int |\chi_R - g|\,dx = \|\chi_R - g\|_1 < C\varepsilon'.
@@ -732,7 +732,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 ^rem-19-4
 
 > [!remark]- Connections
-> - The $L^1$ chain: [[§16 The L¹ Space and Density Theorems#^rem-16-1|Remark §16]]. Why $\chi_{[0,1]}$ fails in $L^\infty$: a uniform limit of continuous functions is continuous ([[§12 Measurable Functions#^thm-12-16|§12.16]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]).
+> - The $L^1$ chain: [[§16 The L¹ Space and Density Theorems#^rem-16-1|Remark §16.1]]. Why $\chi_{[0,1]}$ fails in $L^\infty$: a uniform limit of continuous functions is continuous ([[§12 Measurable Functions#^thm-12-16|§12.16]], [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]).
 
 > [!theorem] Corollary §19.20: $L^p$ is Separable for $1 \leq p < \infty$
 > Let $1 \leq p < \infty$. Then $L^p(E)$ is [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|separable]].
@@ -765,7 +765,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 ^pf-19-21
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Continuity of Measure|§11.12]]
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[§18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.

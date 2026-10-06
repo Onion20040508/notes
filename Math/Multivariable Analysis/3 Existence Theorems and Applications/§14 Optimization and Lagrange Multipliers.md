@@ -77,7 +77,7 @@ $$
 
 This shows: $\nabla g \perp (x'(t), y'(t))$, i.e., **$\nabla g$ is perpendicular to the tangent vector of the constraint curve**.
 
-In other words, $\nabla g$ is **normal** (perpendicular) to the level curve $g = 0$ (compare [[§7 Directional Derivatives#^rem-7-3|Remark §7.3]]).
+In other words, $\nabla g$ is **normal** (perpendicular) to the level curve $g = 0$ (compare [[§7 Directional Derivatives#^rem-7-3|Gradient and Maximum Rate of Change]]).
 
 ## Derivation of the Lagrange Condition
 
@@ -170,7 +170,7 @@ $$
 > - Computational version: [[§97 Lagrange Multipliers#^thm-97-1|Calc Thm. §97.1]] (with worked examples).
 
 > [!remark] Remark: The Constraint Qualification
-> The condition $\nabla g \neq \mathbf{0}$ is essential. If $\nabla g = \mathbf{0}$ at a point on the constraint curve, that point is called a **singular point** of the constraint ([[§12 The Implicit Function Theorem#^rem-12-1|Remark §12.1]]). The IFT does not apply there, and the Lagrange multiplier method may fail.
+> The condition $\nabla g \neq \mathbf{0}$ is essential. If $\nabla g = \mathbf{0}$ at a point on the constraint curve, that point is called a **singular point** of the constraint ([[§12 The Implicit Function Theorem#^rem-12-1|§12, remark on singular points]]). The IFT does not apply there, and the Lagrange multiplier method may fail.
 >
 > Geometrically, $\nabla g = \mathbf{0}$ means the constraint curve may have a cusp, self-intersection, or isolated point — it's not a smooth curve locally.
 

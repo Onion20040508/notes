@@ -108,7 +108,7 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 ## Taylor's Theorem for Two Variables
 
 > [!theorem] Theorem §9.2: Multivariable Taylor's Theorem
-> Let $f : \mathbb{R}^2 \to \mathbb{R}$ have continuous partial derivatives up to order $N + 1$ in a neighborhood of $(x, y)$. Then:
+> Let $f : \mathbb{R}^2 \to \mathbb{R}$ have continuous partial derivatives up to order $N + 1$ in an open ball $B$ around $(x, y)$, and let $(x + h, y + k) \in B$. Then:
 >
 > $$
 > f(x + h, y + k) = \sum_{m=0}^{N} \frac{1}{m!} \sum_{\ell=0}^{m} \binom{m}{\ell} \frac{\partial^m f}{\partial x^\ell \, \partial y^{m-\ell}}(x, y) \cdot h^\ell k^{m-\ell} + R_{N+1},
@@ -125,7 +125,7 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 ^thm-9-2
 
 > [!proof]+ Proof
-> Apply single-variable [[§31 Taylor's Theorem#^thm-31-2|Taylor's theorem]] to $F(t) = f(x + th, y + tk)$:
+> The segment from $(x, y)$ to $(x + h, y + k)$ lies in the ball $B$, so by [[§9 Taylor's Theorem for Multivariable Functions#^thm-9-1|Theorem §9.1]] the function $F(t) = f(x + th, y + tk)$ has continuous derivatives up to order $N + 1$ on $[0, 1]$. Apply single-variable [[§31 Taylor's Theorem#^thm-31-2|Taylor's theorem]] to $F$:
 >
 > $$
 > F(1) = \sum_{m=0}^{N} \frac{F^{(m)}(0)}{m!} \cdot 1^m + \frac{F^{(N+1)}(\theta)}{(N+1)!} \cdot 1^{N+1}

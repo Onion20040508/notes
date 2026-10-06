@@ -11,6 +11,8 @@ tags: [multivariable-analysis, math452]
 
 *Chapter 4: Integration on Flat Domains.*
 
+**Contents:** [[#Motivation: Integration over General Domains|motivation]] · [[#Jordan Measure: Inner and Outer Approximations|Jordan measure]] · [[#Definition of the Integral|the integral]] · [[#Properties of the Integral|properties]] (incl. polar coordinates, §15.7) · [[#Fubini's Theorem: Rigorous Treatment|Fubini]] (§15.8–§15.12) · [[#General Change of Variables|change of variables]]: [[#Preliminaries|preliminaries]], [[#Main Theorem (Rectangular Domain)|rectangular case]] with three proofs (§15.14), [[#Extension to General Domains|general domains]] (§15.15–§15.18), [[#Geometric Interpretation and Higher Dimensions|ℝⁿ]] (§15.19–§15.20), [[#Common Coordinate Systems and Worked Examples|worked examples]].
+
 ## Motivation: Integration over General Domains
 
 In single-variable calculus, we integrate over intervals $[a, b]$ ([[§32 The Definition of the Riemann Integral|451 §32]]). In multivariable calculus, we want to integrate over more complicated domains $D \subseteq \mathbb{R}^2$ (or $\mathbb{R}^n$).
@@ -200,7 +202,7 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 >
 > Suppose $S \in \mathcal{S}_k^-(D)$ and $S \in \mathcal{S}_k^-(E)$. Then $S \subseteq D$ and $S \subseteq E$.
 >
-> Choose the center $\mathbf{x}$ of $S$. Since $S$ is contained in the interior of itself, $\mathbf{x}$ is an interior point of both $D$ and $E$. But this contradicts $\text{int}(D) \cap \text{int}(E) = \emptyset$.
+> The center $\mathbf{x}$ of $S$ is an interior point of $S$, hence of both $D$ and $E$ (since $S \subseteq D$ and $S \subseteq E$). But this contradicts $\text{int}(D) \cap \text{int}(E) = \emptyset$.
 >
 > Therefore, $\mathcal{S}_k^-(D)$ and $\mathcal{S}_k^-(E)$ are disjoint.
 >
@@ -396,7 +398,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 
 ## Properties of the Integral
 
-Throughout, assume $D$ is bounded and Jordan measurable, and all functions are integrable on $D$.
+Throughout, assume $D$ is bounded and Jordan measurable, and all functions are integrable on $D$. In the proofs, $S_{\mathcal{T}}^+(f)$ and $S_{\mathcal{T}}^-(f)$ denote the upper and lower sums $U(f, \mathcal{T})$ and $L(f, \mathcal{T})$ of [[§15 Multivariable Integration#^def-15-8|Def. §15.8]].
 
 > [!theorem] Theorem §15.2: Scalar Multiplication
 > If $f$ is integrable on $D$ and $c \in \mathbb{R}$, then $cf$ is integrable on $D$ and:
@@ -618,7 +620,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 *Uses:* [[§15 Multivariable Integration#^thm-15-5|§15.5]], [[§15 Multivariable Integration#^def-15-10|Def. §15.10]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]]
 
 > [!remark]- Connections
-> - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-4|Absolute Values]] (451 §33.4), which also proves the integrability of $|f|$ that the proof here takes for granted.
+> - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-4|Absolute Values]] (451 §33.4), whose oscillation argument for the integrability of $|f|$ the proof here repeats.
 
 ### Iterated Integrals: The Simple Case
 
@@ -1248,6 +1250,11 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > - Rigorous version, where measurability of the slices and of the inner integral is proved rather than assumed: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]] (Tonelli).
 > - Used in PDEs: Tonelli's check of absolute integrability, followed by Fubini, justifies reversing the order of integration in the transform of $f(t)/t$, [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]], and in the heat-kernel form of the infinite-rod solution, [[§27 Infinite Rod#^thm-27-3|341 Thm. §27.3]].
 
+> [!remark] Remark: Scope of Theorem §15.12
+> The theorem is quoted without proof, and its hypothesis lies outside this course: "measurable" means Lebesgue measurable, which the Riemann–Jordan theory of this section does not define, and the integrals may be $+\infty$ (for unbounded $f$ or $D$ they are understood in the Lebesgue sense, or as improper integrals). Its precise statement and proof are in Measure Theory: [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]] (Tonelli), followed by [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]] (Fubini for absolutely integrable $f$). In this section it explains the failure in [[§15 Multivariable Integration#^ex-15-2|Example §15.2]] (there $\iint |f|\,dA = +\infty$) and is cited in Step 1 of [[§15 Multivariable Integration#^ex-15-7|Example §15.7]], where the exhaustion argument at the end of the example gives a proof that stays within the course.
+
+^rem-15-15
+
 ## General Change of Variables
 
 **The Core Idea.**
@@ -1385,6 +1392,8 @@ We present three different proofs, each offering a distinct perspective:
 **Proof 1** is the most geometric: it shows why the Jacobian determinant measures area distortion. **Proof 2** is the most analytic: it tracks coordinate changes explicitly. **Proof 3** (from Courant-John) generalizes most easily to $n$ dimensions.
 
 ---
+
+#### First proof: linear case and Taylor linearization
 
 > [!proof]+ First Proof: Linear Case + Taylor Linearization
 > We give a rigorous proof by first establishing the result for linear transformations, then extending to the general $C^1$ case with explicit error estimates.
@@ -1680,79 +1689,9 @@ We present three different proofs, each offering a distinct perspective:
 ![[m452-15-9.svg]]
 *Step 3 of the first proof. The linearized map $L$ sends the small square $R$ to the parallelogram $P$ (red, dashed) of area $|J|\,hk$. Each point of $\Phi(R)$ lies within $r = 2\sqrt2\,\varepsilon/2^m$ of the corresponding point of $P$, as at the top corner (dashed circle of radius $r$). So the boundary of $\Phi(R)$ (blue) stays inside the band of width $r$ around $\partial P$ (gray). The two areas can differ only by the area of that band, at most $\text{perimeter}(P) \cdot r + \pi r^2 = O(\varepsilon/2^{2m})$. That is small even compared with $\text{Area}(P) \sim 1/2^{2m}$.*
 
-> [!remark] Remark: Extension to Arbitrary Domains: Jordan Measurability
-> The proof above assumes $D^{\ast}$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
->
-> **The Problem:** If $D^{\ast}$ is not a rectangle, how do we define the Riemann sum? We can't simply partition $D^{\ast}$ into small squares — some squares will partially overlap the boundary $\partial D^{\ast}$.
->
-> **Solution: Jordan Measurable Domains.**
->
-> *Definition:* A bounded set $D^{\ast} \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D^{\ast}$ has Jordan measure zero, i.e., for any $\varepsilon > 0$, the boundary can be covered by finitely many rectangles with total area $< \varepsilon$ ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]], [[§15 Multivariable Integration#^def-15-14|Def. §15.14]]).
->
-> *Equivalently:* The **inner Jordan measure** (supremum of areas of finite unions of rectangles contained in $D^{\ast}$) equals the **outer Jordan measure** (infimum of areas of finite unions of rectangles containing $D^{\ast}$) ([[§15 Multivariable Integration#^def-15-4|Def. §15.4]], [[§15 Multivariable Integration#^def-15-5|Def. §15.5]]).
->
-> **Procedure for Arbitrary Jordan Measurable $D^{\ast}$:**
->
-> *Step 1:* Enclose $D^{\ast}$ in a large rectangle $R = [a, b] \times [c, d]$.
->
-> *Step 2:* Partition $R$ into small squares of side $1/2^m$. Classify each square $D_{ij}^{(m)}$ as:
-> - **Interior squares:** $D_{ij}^{(m)} \subseteq D^{\ast}$ (entirely inside)
-> - **Exterior squares:** $D_{ij}^{(m)} \cap D^{\ast} = \emptyset$ (entirely outside)
-> - **Boundary squares:** $D_{ij}^{(m)} \cap \partial D^{\ast} \neq \emptyset$ (touch the boundary)
->
-> *Step 3:* For the Riemann sum, sum only over interior squares:
->
-> $$
-> S_m^{\text{inner}} = \sum_{\substack{i,j \\ D_{ij}^{(m)} \subseteq D^*}} f(\varphi(u_{ij}), \psi(u_{ij})) \cdot |J(u_{ij})| \cdot \frac{1}{(2^m)^2}.
-> $$
->
-> Similarly, define the outer sum including boundary squares.
->
-> *Step 4:* Since $\partial D^{\ast}$ has Jordan measure zero:
->
-> $$
-> \#\{\text{boundary squares}\} \cdot \frac{1}{(2^m)^2} \to 0 \quad \text{as } m \to \infty.
-> $$
->
-> Therefore, inner and outer sums converge to the same limit.
->
-> **Additional Assumption Needed:**
->
-> For the Change of Variables formula, we need both $D^*$ and $D = \Phi(D^*)$ to be Jordan measurable.
->
-> *Key Lemma* ([[§15 Multivariable Integration#^prop-15-16|Proposition §15.16]]): If $D^{\ast}$ is Jordan measurable and $\Phi: D^{\ast} \to D$ is a $C^1$ diffeomorphism with $J \neq 0$, then $D = \Phi(D^{\ast})$ is also Jordan measurable.
->
-> *Proof sketch:* The boundary $\partial D = \Phi(\partial D^{\ast})$. Since $\Phi$ is $C^1$ and $\partial D^{\ast}$ has measure zero, the image $\Phi(\partial D^{\ast})$ also has measure zero (Lipschitz maps preserve measure zero sets). $\square$
->
-> **Refined Theorem Statement:**
->
-> > Let $D^{\ast} \subseteq \mathbb{R}^2$ be a **bounded, Jordan measurable** domain. Let $\Phi: \overline{D^{\ast}} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse and $J \neq 0$ on $D^{\ast}$. If $f$ is continuous on $\overline{D}$, then:
-> >
-> > $$
-> > \iint_D f(x, y) \, dx \, dy = \iint_{D^*} f(\varphi(u, v), \psi(u, v)) \cdot |J(u, v)| \, du \, dv.
-> > $$
->
-> **Common Jordan Measurable Domains** ([[§15 Multivariable Integration#^ex-15-3|Ex. §15.3]]):
-> - Rectangles, triangles, polygons
-> - Disks, ellipses
-> - Regions bounded by $C^1$ curves (Type I and Type II regions)
-> - Finite unions and intersections of the above
->
-> **Non-Example:** The set of points in $[0,1]^2$ with both coordinates rational is bounded but *not* Jordan measurable (its boundary is the entire square, which has positive area).
-
-^rem-15-12
-
-> [!remark] Remark: Alternative: Lebesgue Integration
-> In Lebesgue integration theory (MATH 551), the situation is cleaner:
-> - The change of variables formula holds for any **Lebesgue measurable** set $D^{\ast}$.
-> - No need for Jordan measurability — Lebesgue measure handles much more general sets.
-> - The assumption “$J \neq 0$ everywhere” can be relaxed to “$J \neq 0$ almost everywhere.”
->
-> However, for this course (Riemann integration), Jordan measurability is the appropriate condition.
-
-^rem-15-13
-
 ---
+
+#### Second proof: via the Implicit Function Theorem
 
 > [!proof]+ Second Proof: Implicit Function Theorem Approach
 > This approach uses IFT to introduce intermediate coordinates $(x, v)$, reducing the 2D change of variables to two applications of the 1D formula ([[§15 Multivariable Integration#^lem-15-13|Lemma §15.13]]).
@@ -1852,6 +1791,8 @@ We present three different proofs, each offering a distinct perspective:
 *Uses:* [[§15 Multivariable Integration#^lem-15-13|§15.13]], [[§12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Chain Rule|§10.2]], [[§15 Multivariable Integration#^thm-15-9|§15.9]]
 
 ---
+
+#### Third proof: two-step decomposition (Courant–John)
 
 > [!proof]+ Third Proof: Two-Step Decomposition (Courant-John)
 > This approach, from Courant & John's *Introduction to Calculus and Analysis*, decomposes the general transformation into two simpler “primitive” transformations, each changing only one variable at a time. This method extends naturally to higher dimensions.
@@ -1981,6 +1922,80 @@ We present three different proofs, each offering a distinct perspective:
 
 > [!remark]- Connections
 > - The linear-algebra picture: [[§34 Determinants#^ladr-9-61|LADR 9.61]] (volume scales by $|\det T|$) and its orientation remark; $\det$ as signed volume.
+
+#### Remarks: beyond rectangles
+
+> [!remark] Remark: Extension to Arbitrary Domains: Jordan Measurability
+> The three proofs above assume $D^{\ast}$ is a square (or rectangle). For arbitrary domains, we need additional assumptions and a more careful treatment using **Jordan measure**.
+>
+> **The Problem:** If $D^{\ast}$ is not a rectangle, how do we define the Riemann sum? We can't simply partition $D^{\ast}$ into small squares — some squares will partially overlap the boundary $\partial D^{\ast}$.
+>
+> **Solution: Jordan Measurable Domains.**
+>
+> *Definition:* A bounded set $D^{\ast} \subseteq \mathbb{R}^2$ is **Jordan measurable** if its boundary $\partial D^{\ast}$ has Jordan measure zero, i.e., for any $\varepsilon > 0$, the boundary can be covered by finitely many rectangles with total area $< \varepsilon$ ([[§15 Multivariable Integration#^def-15-13|Def. §15.13]], [[§15 Multivariable Integration#^def-15-14|Def. §15.14]]).
+>
+> *Equivalently:* The **inner Jordan measure** (supremum of areas of finite unions of rectangles contained in $D^{\ast}$) equals the **outer Jordan measure** (infimum of areas of finite unions of rectangles containing $D^{\ast}$) ([[§15 Multivariable Integration#^def-15-4|Def. §15.4]], [[§15 Multivariable Integration#^def-15-5|Def. §15.5]]).
+>
+> **Procedure for Arbitrary Jordan Measurable $D^{\ast}$:**
+>
+> *Step 1:* Enclose $D^{\ast}$ in a large rectangle $R = [a, b] \times [c, d]$.
+>
+> *Step 2:* Partition $R$ into small squares of side $1/2^m$. Classify each square $D_{ij}^{(m)}$ as:
+> - **Interior squares:** $D_{ij}^{(m)} \subseteq D^{\ast}$ (entirely inside)
+> - **Exterior squares:** $D_{ij}^{(m)} \cap D^{\ast} = \emptyset$ (entirely outside)
+> - **Boundary squares:** $D_{ij}^{(m)} \cap \partial D^{\ast} \neq \emptyset$ (touch the boundary)
+>
+> *Step 3:* For the Riemann sum, sum only over interior squares:
+>
+> $$
+> S_m^{\text{inner}} = \sum_{\substack{i,j \\ D_{ij}^{(m)} \subseteq D^*}} f(\varphi(u_{ij}), \psi(u_{ij})) \cdot |J(u_{ij})| \cdot \frac{1}{(2^m)^2}.
+> $$
+>
+> Similarly, define the outer sum including boundary squares.
+>
+> *Step 4:* Since $\partial D^{\ast}$ has Jordan measure zero:
+>
+> $$
+> \#\{\text{boundary squares}\} \cdot \frac{1}{(2^m)^2} \to 0 \quad \text{as } m \to \infty.
+> $$
+>
+> Therefore, inner and outer sums converge to the same limit.
+>
+> **Additional Assumption Needed:**
+>
+> For the Change of Variables formula, we need both $D^*$ and $D = \Phi(D^*)$ to be Jordan measurable.
+>
+> *Key Lemma* ([[§15 Multivariable Integration#^prop-15-16|Proposition §15.16]]): If $D^{\ast}$ is Jordan measurable and $\Phi: D^{\ast} \to D$ is a $C^1$ diffeomorphism with $J \neq 0$, then $D = \Phi(D^{\ast})$ is also Jordan measurable.
+>
+> *Proof sketch:* The boundary $\partial D = \Phi(\partial D^{\ast})$. Since $\Phi$ is $C^1$ and $\partial D^{\ast}$ has measure zero, the image $\Phi(\partial D^{\ast})$ also has measure zero (Lipschitz maps preserve measure zero sets). $\square$
+>
+> **Refined Theorem Statement:**
+>
+> > Let $D^{\ast} \subseteq \mathbb{R}^2$ be a **bounded, Jordan measurable** domain. Let $\Phi: \overline{D^{\ast}} \to \overline{D}$ be a $C^1$ bijection with $C^1$ inverse and $J \neq 0$ on $D^{\ast}$. If $f$ is continuous on $\overline{D}$, then:
+> >
+> > $$
+> > \iint_D f(x, y) \, dx \, dy = \iint_{D^*} f(\varphi(u, v), \psi(u, v)) \cdot |J(u, v)| \, du \, dv.
+> > $$
+>
+> **Common Jordan Measurable Domains** ([[§15 Multivariable Integration#^ex-15-3|Ex. §15.3]]):
+> - Rectangles, triangles, polygons
+> - Disks, ellipses
+> - Regions bounded by $C^1$ curves (Type I and Type II regions)
+> - Finite unions and intersections of the above
+>
+> **Non-Example:** The set of points in $[0,1]^2$ with both coordinates rational is bounded but *not* Jordan measurable (its boundary is the entire square, which has positive area).
+
+^rem-15-12
+
+> [!remark] Remark: Alternative: Lebesgue Integration
+> In Lebesgue integration theory (MATH 551), the situation is cleaner:
+> - The change of variables formula holds for any **Lebesgue measurable** set $D^{\ast}$.
+> - No need for Jordan measurability — Lebesgue measure handles much more general sets.
+> - The assumption “$J \neq 0$ everywhere” can be relaxed to “$J \neq 0$ almost everywhere.”
+>
+> However, for this course (Riemann integration), Jordan measurability is the appropriate condition.
+
+^rem-15-13
 
 ### Extension to General Domains
 
@@ -2151,7 +2166,7 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 ### Geometric Interpretation and Higher Dimensions
 
 > [!theorem] Proposition §15.19: Determinants Measure Volume Distortion
-> Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a linear map represented by matrix $A$. Then for any measurable set $E \subseteq \mathbb{R}^n$:
+> Let $T: \mathbb{R}^n \to \mathbb{R}^n$ be a linear map represented by matrix $A$. Then for any bounded Jordan measurable set $E \subseteq \mathbb{R}^n$ (in Lebesgue theory: any Lebesgue measurable set):
 >
 > $$
 > \text{Vol}_n(T(E)) = |\det(A)| \cdot \text{Vol}_n(E).
@@ -2160,6 +2175,8 @@ The proofs above assume $D^*$ is a rectangle. We now extend to arbitrary Jordan 
 > In particular, a unit $n$-cube maps to a parallelepiped of volume $|\det(A)|$.
 
 ^prop-15-19
+
+*The course omits the proof; see [[§34 Determinants#^ladr-9-61|LADR 9.61]], and for $n = 2$ Part I of the first proof of [[§15 Multivariable Integration#^thm-15-14|Theorem §15.14]] (the image of a rectangle).*
 
 > [!remark]- Connections
 > - This is [[§34 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by factor of $|\det T|$), proved there via polar decomposition and singular values ([[§34 Determinants#^ladr-9-60|LADR 9.60]]); the matrix and operator determinants agree by [[§34 Determinants#^ladr-9-53|LADR 9.53]].

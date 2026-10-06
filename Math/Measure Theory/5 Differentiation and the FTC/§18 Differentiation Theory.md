@@ -380,7 +380,7 @@ tags: [measure-theory, math551]
 >
 > which forces $D^+ = D_+ = D^- = D_-$, i.e., $f$ is differentiable at $x_0$ in the extended sense (the common value may be $\pm\infty$; $f'(x_0)$ is a real number when it is finite).
 >
-> Equivalently: $f$ is *not* differentiable at $x_0$ iff $D^+ > D_-$ or $D^- > D_+$ at $x_0$. In other words, some upper Dini derivative strictly exceeds the corresponding lower one.
+> Equivalently: $f$ is *not* differentiable at $x_0$ iff $D^+ > D_-$ or $D^- > D_+$ at $x_0$. In other words, the upper Dini derivative on one side strictly exceeds the lower Dini derivative on the other side.
 
 ^rem-18-3
 
@@ -517,7 +517,7 @@ tags: [measure-theory, math551]
 > \end{aligned}
 > $$
 >
-> Since $f$ is increasing, $f(t) \geq f(b)$ for $t \in [b, b+1/n]$ (using the extension $f(t) = f(b)$ for $t > b$, so actually $f(t) = f(b)$), and $f(t) \leq f(a + 1/n)$ for $t \in [a, a+1/n]$. More precisely:
+> By the extension, $f(t) = f(b)$ for $t \in [b, b+1/n]$; since $f$ is increasing, $f(t) \geq f(a)$ for $t \in [a, a+1/n]$. Hence:
 >
 > $$
 > \int_b^{b+1/n} f(t)\,dt = f(b) \cdot \frac{1}{n}, \qquad \int_a^{a+1/n} f(t)\,dt \geq f(a) \cdot \frac{1}{n}.
@@ -635,7 +635,7 @@ tags: [measure-theory, math551]
 > \text{absolutely continuous} \implies \text{uniformly continuous} \implies \text{continuous.}
 > $$
 >
-> None of the reverse implications hold.
+> None of the reverse implications hold, except that on the compact interval $[a, b]$ continuity already implies uniform continuity ([[§19 Uniform Continuity#^thm-19-1|451 §19.1]]).
 
 ^rem-18-7
 
@@ -747,7 +747,7 @@ tags: [measure-theory, math551]
 >
 > **(ii)** $\sum g_k(x) = \sum g_k(c) + \int_c^x h(t)\,dt$ where $h = \sum g_k' \in L([a, b])$. The integral function of an $L$ function is $AC$ ([[§18 Differentiation Theory#^thm-18-12|integral functions are AC]]), and adding a constant preserves $AC$. So $\sum g_k \in AC$.
 >
-> **(iii)** Differentiating: $(\sum g_k)' = h' = (\int_c^x h\,dt)' = h(x) = \sum g_k'(x)$ a.e.
+> **(iii)** Differentiating, the constant $\sum g_k(c)$ drops out and [[§18 Differentiation Theory#^thm-18-26|differentiation of the integral]] (Theorem §18.26, proved below) gives $(\sum g_k)'(x) = \left(\int_c^x h\,dt\right)' = h(x) = \sum g_k'(x)$ a.e.
 
 ^pf-18-14
 
@@ -771,7 +771,7 @@ tags: [measure-theory, math551]
 > g(x) = f(a) + \int_a^x f'(t)\,dt, \qquad h(x) = f(x) - g(x).
 > $$
 >
-> $g$ is increasing (since $f' \geq 0$) and $g \in AC$ ([[§18 Differentiation Theory#^thm-18-12|integral of an L function]]). By the [[Fundamental Theorem of Calculus for Lebesgue Integrals|FTC]], $g' = f'$ a.e.
+> $g$ is increasing (since $f' \geq 0$) and $g \in AC$ ([[§18 Differentiation Theory#^thm-18-12|integral of an L function]]). By [[§18 Differentiation Theory#^thm-18-26|differentiation of the integral]] (Theorem §18.26, proved below; applied to $f'$ extended by $0$ outside $[a, b]$), $g' = f'$ a.e.
 >
 > $h$ is increasing: for $x < y$, $g(y) - g(x) = \int_x^y f' \leq f(y) - f(x)$ (by [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's integral inequality for increasing functions]]), so $h(y) - h(x) = (f(y) - f(x)) - (g(y) - g(x)) \geq 0$.
 >
@@ -779,7 +779,7 @@ tags: [measure-theory, math551]
 
 ^pf-18-15
 
-*Uses:* [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18 Differentiation Theory#^thm-18-12|§18.12]], [[Fundamental Theorem of Calculus for Lebesgue Integrals|§18.13]]
+*Uses:* [[Lebesgue's Differentiation Theorem for Monotone Functions|§18.9]], [[§18 Differentiation Theory#^thm-18-12|§18.12]], [[§18 Differentiation Theory#^thm-18-26|§18.26]]
 
 > [!remark] Remark
 > The function $h$ is called the **singular part** of $f$: it is increasing yet gains all its growth on a set of measure zero ($\{h' > 0\}$ has measure zero). The [[§18 Differentiation Theory#^ex-18-4|Cantor function]] is the prototypical example of a purely singular increasing function.
@@ -1107,13 +1107,19 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 > [!proof]+ Proof
 > Since $f$ is not constant, there exists $c \in (a, b]$ with $f(c) \neq f(a)$; if $f(c) = f(a)$ for every $c \in (a, b)$, take $c = b$ (the argument below works verbatim with $c = b$). Let $A = \{x \in (a, c) : f'(x) = 0\}$. Since $f' = 0$ a.e., we have $m([a, c] \setminus A) = 0$, so $m(A) = c - a$.
 >
-> For every $x_0 \in A$: $f'(x_0) = 0$ means for every $r > 0$, there exists $\delta_0 > 0$ such that for all $0 < h < \delta_0$:
+> Fix
+>
+> $$
+> r = \frac{|f(c) - f(a)|}{2(c - a)} > 0.
+> $$
+>
+> For every $x_0 \in A$: $f'(x_0) = 0$ gives $\delta_0 > 0$ such that for all $0 < h < \delta_0$:
 >
 > $$
 > |f(x_0 + h) - f(x_0)| < r\,h.
 > $$
 >
-> Define $\Gamma = \{[x, x+h] : x \in A,\; [x, x+h] \subseteq (a, c),\; |f(x+h) - f(x)| < r\,|h|\}$. For any $r > 0$, $\Gamma$ is a [[§18 Differentiation Theory#^def-18-1|Vitali covering]] of $A$.
+> Define $\Gamma = \{[x, x+h] : x \in A,\; h > 0,\; [x, x+h] \subseteq (a, c),\; |f(x+h) - f(x)| < r\,h\}$. By the previous display, $\Gamma$ is a [[§18 Differentiation Theory#^def-18-1|Vitali covering]] of $A$.
 >
 > By the [[Vitali Covering Theorem|Vitali Covering Lemma]]: for every $\delta > 0$, there exist finitely many disjoint intervals $[x_j, x_j + h_j] \in \Gamma$, $j = 1, \ldots, p$, with:
 >
@@ -1123,31 +1129,31 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 >
 > Since $m([a,c] \setminus A) = 0$, this gives $m\!\left([a, c] \setminus \bigcup_{j=1}^{p} [x_j, x_j + h_j]\right) < \delta$.
 >
-> The intervals $[x_j, x_j + h_j] \subseteq (a,c)$ are disjoint, so $\sum h_j \leq c - a$. Ordering them as $a < x_1 < x_1 + h_1 < x_2 < \cdots < x_p + h_p < c$, the “gaps” between them (including the initial and final gaps) have total length:
+> The intervals $[x_j, x_j + h_j] \subseteq (a,c)$ are disjoint, so $\sum h_j \leq c - a$. Ordering them as $a < x_1 < x_1 + h_1 < x_2 < \cdots < x_p + h_p < c$, the “gaps” between them (including the initial and final gaps) are the intervals $(u_i, v_i)$, $i = 0, \ldots, p$, with
 >
 > $$
-> \sum_{j=0}^{p} |(\text{gaps})| = (c - a) - \sum_{j=1}^{p} h_j.
+> (u_0, v_0) = (a, x_1), \qquad (u_i, v_i) = (x_i + h_i,\ x_{i+1}) \ (1 \leq i < p), \qquad (u_p, v_p) = (x_p + h_p,\ c),
 > $$
 >
-> By the triangle inequality:
+> and their total length is:
 >
 > $$
-> |f(c) - f(a)| \leq \sum_{j=0}^{p} |f(\text{gap endpoints})| + \sum_{j=1}^{p} |f(x_j + h_j) - f(x_j)|.
+> \sum_{i=0}^{p} (v_i - u_i) = (c - a) - \sum_{j=1}^{p} h_j = m\!\left([a, c] \setminus \bigcup_{j=1}^{p} [x_j, x_j + h_j]\right) < \delta.
 > $$
 >
-> More precisely, the total oscillation of $f$ on $[a, c]$ decomposes as:
+> By the triangle inequality, the total change of $f$ on $[a, c]$ splits into the changes on the gaps and on the chosen intervals:
 >
 > $$
-> |f(c) - f(a)| \leq \sum_{\text{gaps}} |f \text{ change}| + \sum_{j=1}^{p} |f(x_j + h_j) - f(x_j)| < \sum_{\text{gaps}} |f \text{ change}| + r \sum_{j=1}^{p} h_j \leq \sum_{\text{gaps}} |f \text{ change}| + r(c - a).
+> |f(c) - f(a)| \leq \sum_{i=0}^{p} |f(v_i) - f(u_i)| + \sum_{j=1}^{p} |f(x_j + h_j) - f(x_j)| < \sum_{i=0}^{p} |f(v_i) - f(u_i)| + r \sum_{j=1}^{p} h_j \leq \sum_{i=0}^{p} |f(v_i) - f(u_i)| + r(c - a).
 > $$
 >
-> Take $r = \frac{|f(c) - f(a)|}{2(c - a)}$. Then:
+> With the choice of $r$ above:
 >
 > $$
-> \sum_{\text{gaps}} |f \text{ change}| \geq |f(c) - f(a)| - r(c - a) = \frac{1}{2}|f(c) - f(a)| > 0.
+> \sum_{i=0}^{p} |f(v_i) - f(u_i)| \geq |f(c) - f(a)| - r(c - a) = \frac{1}{2}|f(c) - f(a)| > 0.
 > $$
 >
-> Set $\varepsilon_0 = \frac{1}{2}|f(c) - f(a)|$. The “gaps” are finitely many disjoint subintervals of $[a, c]$ whose total length is $< \delta$ (since they form the complement of the Vitali cover), yet the total oscillation of $f$ on these gaps is $\geq \varepsilon_0$. This shows $f$ is not absolutely continuous.
+> Set $\varepsilon_0 = \frac{1}{2}|f(c) - f(a)|$; it does not depend on $\delta$. The gaps $(u_i, v_i)$ are finitely many disjoint subintervals of $(a, b)$ whose total length is $< \delta$ (they form the complement of the chosen Vitali intervals in $[a, c]$), yet the total oscillation $\sum_i |f(v_i) - f(u_i)|$ of $f$ on these gaps is $\geq \varepsilon_0$. This shows $f$ is not absolutely continuous.
 
 ^pf-18-27
 

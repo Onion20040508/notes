@@ -34,7 +34,7 @@ tags: [linear-algebra]
 > Uniqueness of $0$ and of inverses is not an axiom; it is proved in [[§2 Definition of Vector Space#^ladr-1-26|Unique additive identity]] and [[§2 Definition of Vector Space#^ladr-1-27|Unique additive inverse]]. Likewise $0v=0$ is proved ([[§2 Definition of Vector Space#^ladr-1-30|The number 0 times a vector]]), and it must use distributivity, the only axiom linking addition with scalar multiplication.
 
 > [!remark]- Connections
-> - Examples: $\F^n$ ([[§1 Rⁿ and Cⁿ#^ladr-1-11|Fⁿ, coordinate]]), and $\F^\infty$, $\F^S$ (examples 1.23–1.25 in [[Linear Algebra]]).
+> - Examples: $\F^n$ ([[§1 Rⁿ and Cⁿ#^ladr-1-11|Fⁿ, coordinate]]), and $\F^\infty$ ([[§2 Definition of Vector Space#^ladr-1-23|1.23]]), $\F^S$ ([[§2 Definition of Vector Space#^ladr-1-24|1.24]], [[§2 Definition of Vector Space#^ladr-1-25|1.25]]).
 > - Real or complex: [[§2 Definition of Vector Space#^ladr-1-22|Real vector space, complex vector space]]. Subspaces: [[§3 Subspaces#^ladr-1-33|Subspace]].
 > - Physics: the superposition principle is the statement that states can be added and scaled, i.e. that they live in a vector space.
 > - Forgetting scalar multiplication, (V, +) is an abelian group: [[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]].
@@ -71,6 +71,7 @@ tags: [linear-algebra]
 ^ladr-1-23
 
 > [!remark] Notation 1.24: F^S (p. 13)
+> For a set $S$, $\F^S$ is the set of functions from $S$ to $\F$, with $(f+g)(x)=f(x)+g(x)$ and $(\lambda f)(x)=\lambda f(x)$ for $f,g\in\F^S$, $\lambda\in\F$, $x\in S$.
 
 ^ladr-1-24
 
@@ -115,16 +116,18 @@ tags: [linear-algebra]
 > $$
 
 > [!remark]- Connections
-> - Makes the notation $-v$ and $w-v:=w+(-v)$ legitimate (notation 1.28).
+> - Makes the notation $-v$ and $w-v:=w+(-v)$ legitimate ([[§2 Definition of Vector Space#^ladr-1-28|notation 1.28]]).
 > - Computed concretely in [[§2 Definition of Vector Space#^ladr-1-32|The number −1 times a vector]]: $-v=(-1)v$.
 > - Same argument for inverses in any group: [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]].
 > - Computational version: [[§23 Vector Spaces and Subspaces#^prop-23-1|235 Prop. §23.1]] (uniqueness of the negative −u).
 
 > [!remark] Notation 1.28: −v, w − v (p. 15)
+> For $v,w\in V$, $-v$ is the additive inverse of $v$ (unique by [[§2 Definition of Vector Space#^ladr-1-27|1.27]]), and $w-v$ means $w+(-v)$.
 
 ^ladr-1-28
 
 > [!remark] Notation 1.29: V (p. 15)
+> From now on $V$ denotes a vector space over $\F$.
 
 ^ladr-1-29
 

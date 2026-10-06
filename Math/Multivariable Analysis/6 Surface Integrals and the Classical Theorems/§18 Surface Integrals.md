@@ -73,7 +73,7 @@ The parametrization $\mathbf{X}: D \to \mathbb{R}^3$ is a “change of variables
 ^ex-18-1
 
 ![[m452-18-3.svg]]
-*Example §18.1 on the sphere of radius $R$: the point $\mathbf{X}(\theta,\varphi)$ has longitude $\theta$ (measured in the $xy$-plane from the $x$-axis) and latitude $\varphi$ (measured up from the equator). Through it pass the latitude circle $\varphi = \text{const}$ (a $\theta$-curve) and the meridian $\theta = \text{const}$ (a $\varphi$-curve), whose tangents are $\mathbf{X}_\theta$ and $\mathbf{X}_\varphi$ (red), with lengths $R\cos\varphi$ and $R$. Their cross product has length $R^2\cos\varphi$ — the area factor of Example §18.2. At the poles the latitude circles shrink to a point, so $\mathbf{X}_\theta = \mathbf{0}$: the irregular points of Remark §18.3, a defect of the coordinates, not of the sphere.*
+*Example §18.1 on the sphere of radius $R$: the point $\mathbf{X}(\theta,\varphi)$ has longitude $\theta$ (measured in the $xy$-plane from the $x$-axis) and latitude $\varphi$ (measured up from the equator). Through it pass the latitude circle $\varphi = \text{const}$ (a $\theta$-curve) and the meridian $\theta = \text{const}$ (a $\varphi$-curve), whose tangents are $\mathbf{X}_\theta$ and $\mathbf{X}_\varphi$ (red), with lengths $R\cos\varphi$ and $R$. Their cross product has length $R^2\cos\varphi$ — the area factor of Example §18.2. At the poles the latitude circles shrink to a point, so $\mathbf{X}_\theta = \mathbf{0}$: the irregular points of [[§18 Surface Integrals#^rem-18-3|Regularity as a Rank Condition on the Derivative]], a defect of the coordinates, not of the sphere.*
 
 > [!remark] Remark: Dimension Count
 > A 1D object (curve) in 1D space cannot curve — it fills the whole space. A 1D object in 2D space *can* curve. Similarly, a surface is a 2D object that can curve only when it lives in 3D (or higher) space. The parametrization $\mathbf{X}: \mathbb{R}^2 \to \mathbb{R}^3$ maps a flat 2D domain into 3D, and the image can be curved.
@@ -609,8 +609,8 @@ For a closed surface $\partial V$ bounding a volume $V$:
 > For the full proof, we need this condition *in all three coordinate directions simultaneously*: every line parallel to the $z$-axis meets $V$ in a single interval (for the $c$-component), every line parallel to the $x$-axis meets $V$ in a single interval (for the $a$-component), and similarly for $y$. A domain satisfying all three is called a **simple (or elementary) solid region**.
 >
 > **Examples:**
-> - Convex domains (balls, ellipsoids, tetrahedra) are automatically simple.
-> - Many non-convex domains are also simple: a hemisphere, a solid cone, any region bounded above and below by graphs.
+> - Convex domains (balls, ellipsoids, tetrahedra, a solid hemisphere, a solid cone) are automatically simple.
+> - Simplicity is weaker than convexity: the L-shaped block $\big([0,2]\times[0,1] \,\cup\, [0,1]\times[0,2]\big) \times [0,1]$ is not convex, yet every line parallel to a coordinate axis meets it in a single interval. A region bounded above and below by graphs satisfies the condition in the $z$-direction; the $x$- and $y$-directions must be checked separately.
 > - A solid torus is *not* simple (a vertical line can enter and exit twice), but it can be cut into finitely many simple pieces.
 >
 > **General domains:** If $V$ is not simple, we **decompose** $V$ into finitely many simple solid regions $V_1, \ldots, V_N$ with disjoint interiors. Apply the theorem on each $V_k$ and sum. The boundary integrals on the *internal cuts* (where $V_k$ meets $V_{k+1}$) cancel in pairs: the two sides of a cut have opposite outward normals, so their contributions are equal and opposite.

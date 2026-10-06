@@ -21,7 +21,7 @@ tags: [linear-algebra]
 > Pretend $i^2=-1$ and expand $(a+bi)(c+di)$ with the usual rules: you get exactly the formula above. Conversely the formula gives $i\cdot i=-1$. So there is nothing to memorize.
 
 > [!remark]- Connections
-> - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z, absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
+> - Its arithmetic: [[§1 Rⁿ and Cⁿ#^ladr-1-3|Properties of complex arithmetic]]. Conjugate and absolute value come later in [[§13 Polynomials#^ladr-4-2|Complex conjugate, z̄, absolute value, ∣z∣]] and [[§13 Polynomials#^ladr-4-4|Properties of complex numbers]].
 > - Physics: quantum state spaces are complex vector spaces, which is one reason the whole theory is developed over $\F=\R$ or $\C$.
 > - Computational version: [[§53 Complex Numbers#^def-53-1|235 Def. §53.1]] (a + bi with i² = −1, real and imaginary parts), with products worked in [[§53 Complex Numbers#^ex-53-1|235 Ex. §53.1]].
 > - Computational version: [[§1 Sums and Products#^def-1-1|342 Def. §1.1]] (complex numbers as ordered pairs, the points of the complex plane) and [[§1 Sums and Products#^prop-1-2|342 Prop. §1.2]] (the rectangular form x + iy, with i² = −1).
@@ -85,6 +85,7 @@ tags: [linear-algebra]
 > - Computational version: [[§53 Complex Numbers#^def-53-2|235 Def. §53.2]] (subtraction) and [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]] (reciprocals and quotients, with worked examples).
 
 > [!remark] Notation 1.6: F (p. 4)
+> Throughout, $\F$ stands for either $\R$ or $\C$; elements of $\F$ are called *scalars*.
 
 ^ladr-1-6
 
@@ -111,7 +112,8 @@ tags: [linear-algebra]
 
 ^ladr-1-9
 
-> [!remark] Notation 1.10: N (p. 6)
+> [!remark] Notation 1.10: n (p. 6)
+> Fix a positive integer $n$ for the rest of the chapter.
 
 ^ladr-1-10
 
@@ -139,7 +141,7 @@ tags: [linear-algebra]
 ^ladr-1-13
 
 > [!remark]- Connections
-> - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in F]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
+> - Commutative: [[§1 Rⁿ and Cⁿ#^ladr-1-14|Commutativity of addition in Fⁿ]]. Inverses: [[§1 Rⁿ and Cⁿ#^ladr-1-17|Additive inverse in Fⁿ, −x]].
 > - In ℝ² and ℝ³: [[§81 Vectors#^thm-81-4|Calc Thm. §81.4]] (with worked examples).
 > - In ℝⁿ: [[§3 Vector Equations#^def-3-2|235 Def. §3.2]] (entrywise sum, with examples).
 
@@ -161,6 +163,7 @@ tags: [linear-algebra]
 > - In ℝⁿ: property (i) of [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]], which lists all the vector-space laws of ℝⁿ.
 
 > [!remark] Notation 1.15: 0 (p. 6)
+> $0$ also denotes the list of length $n$ whose coordinates are all $0$: $0=(0,\dots,0)$.
 
 ^ladr-1-15
 

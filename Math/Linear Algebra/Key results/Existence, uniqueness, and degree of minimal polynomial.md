@@ -17,4 +17,4 @@ tags: [linear-algebra, hub]
 - [[§15 The Minimal Polynomial#^ladr-5-34|5.34 Operators on odd-dimensional vector spaces have eigenvalues]]
 
 ## Connections
-- Defines [[§15 The Minimal Polynomial#^ladr-5-24|Minimal polynomial]]. Divisibility: [[§15 The Minimal Polynomial#^ladr-5-29|Q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]. Cayley–Hamilton ([[Cayley–Hamilton theorem]]) gives another annihilator of degree $\dim V$.
+- Defines [[§15 The Minimal Polynomial#^ladr-5-24|Minimal polynomial]]. Divisibility: [[§15 The Minimal Polynomial#^ladr-5-29|q(T) = 0 ⟺ q is a polynomial multiple of the minimal polynomial]]. Cayley–Hamilton ([[Cayley–Hamilton theorem]]) gives another annihilator of degree $\dim V$.
