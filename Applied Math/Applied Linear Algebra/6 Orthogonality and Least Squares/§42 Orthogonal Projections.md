@@ -205,6 +205,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > [!remark]- Connections
 > - Rigorous treatment: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] ($\|v - P_Uv\| \le \|v - u\|$, with equality only for $u = P_Uv$; same Pythagorean proof).
 > - For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§22 Projection and Orthogonal Decomposition#^thm-22-2|556 Thm. §22.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
+> - Fourier version: for the integral inner product of [[§46 Inner Product Spaces|§46]], the truncated Fourier series is the best mean-square approximation by trigonometric polynomials, [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]].
 
 > [!example] Example §42.4: The Distance from a Point to a Plane
 > Find the distance from $\mathbf{y}$ to $W = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$, where

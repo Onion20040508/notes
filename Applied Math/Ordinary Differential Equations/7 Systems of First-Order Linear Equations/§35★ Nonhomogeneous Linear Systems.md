@@ -357,7 +357,7 @@ with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppo
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-3t} + c_2\begin{pmatrix} 1 \\ 1 \end{pmatrix}e^{-t} + \frac12\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-t} + \begin{pmatrix} 1 \\ 1 \end{pmatrix}te^{-t} + \begin{pmatrix} 1 \\ 2 \end{pmatrix}t - \frac13\begin{pmatrix} 4 \\ 5 \end{pmatrix}, \qquad (38)
 > $$
 >
-> the same as (15) of Example §35.1, and equivalent to (21) of Example §35.2.
+> the same as (15) of [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Example §35.1]], and equivalent to (21) of Example §35.2.
 >
 > *BDP: Example 7.9.3*
 

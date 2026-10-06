@@ -78,7 +78,7 @@ Let $\mathbf{A}$ be real. Solutions $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ of $\m
 ^def-32-1
 
 ![[m331-32-1.svg]]
-*Trajectories computed from the real solutions. (a) Spiral point of Example §32.1: $\mathbf{u}$ through $(1, 0)$ (red), $\mathbf{v}$ through $(0, 1)$ (green), and other combinations $c_1\mathbf{u} + c_2\mathbf{v}$ (blue), all spiraling clockwise into the origin; each circuit shrinks by the factor $e^{-\pi} \approx 0.04$. (b) Center of Example §32.2(b), $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$ with eigenvalues $\pm 3i$: every trajectory is an ellipse traversed clockwise with period $2\pi/3$; the red one passes through $(1.5, 0)$.*
+*Trajectories computed from the real solutions. (a) Spiral point of [[§32 Complex-Valued Eigenvalues#^ex-32-1|Example §32.1]]: $\mathbf{u}$ through $(1, 0)$ (red), $\mathbf{v}$ through $(0, 1)$ (green), and other combinations $c_1\mathbf{u} + c_2\mathbf{v}$ (blue), all spiraling clockwise into the origin; each circuit shrinks by the factor $e^{-\pi} \approx 0.04$. (b) Center of [[§32 Complex-Valued Eigenvalues#^ex-32-2|Example §32.2]](b), $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$ with eigenvalues $\pm 3i$: every trajectory is an ellipse traversed clockwise with period $2\pi/3$; the red one passes through $(1.5, 0)$.*
 
 > [!theorem] Theorem §32.1: Conjugate Eigenvalues Have Conjugate Eigenvectors
 > Let $\mathbf{A}$ be real, and let $r_1 = \lambda + i\mu$ be an eigenvalue with eigenvector $\boldsymbol{\xi}^{(1)}$. Then $r_2 = \bar r_1 = \lambda - i\mu$ is an eigenvalue with eigenvector $\boldsymbol{\xi}^{(2)} = \overline{\boldsymbol{\xi}^{(1)}}$, and the corresponding solutions
@@ -153,7 +153,7 @@ So the two complex solutions carry the same information, and either one yields t
 >
 > $\mathbf{x}^{(1)}$ is a solution ([[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|Theorem §31.1]]) and $\mathbf{A}$ is real, so $\mathbf{u}$ and $\mathbf{v}$ are solutions by [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-5|Theorem §30.5]].
 >
-> **Independence.** *BDP leaves this to Problem 22, which outlines the following argument.* Since $\mu \ne 0$, $r_1 \ne \bar r_1$, so the eigenvectors $\boldsymbol{\xi}^{(1)}$ and $\overline{\boldsymbol{\xi}^{(1)}}$ (Theorem §32.1) are linearly independent ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|Theorem §29.4]]).
+> **Independence.** *BDP leaves this to Problem 22, which outlines the following argument.* Since $\mu \ne 0$, $r_1 \ne \bar r_1$, so the eigenvectors $\boldsymbol{\xi}^{(1)}$ and $\overline{\boldsymbol{\xi}^{(1)}}$ ([[§32 Complex-Valued Eigenvalues#^thm-32-1|Theorem §32.1]]) are linearly independent ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-4|Theorem §29.4]]).
 >
 > *$\mathbf{a}$ and $\mathbf{b}$ are independent.* We have $\mathbf{a} = \frac12(\boldsymbol{\xi}^{(1)} + \overline{\boldsymbol{\xi}^{(1)}})$ and $\mathbf{b} = \frac1{2i}(\boldsymbol{\xi}^{(1)} - \overline{\boldsymbol{\xi}^{(1)}})$. If $c_1\mathbf{a} + c_2\mathbf{b} = \mathbf{0}$, then multiplying by $2$,
 >
@@ -187,7 +187,7 @@ So the two complex solutions carry the same information, and either one yields t
 > 2. **One eigenvector.** Find an eigenvector $\boldsymbol{\xi}$ for $r_1 = \lambda + i\mu$ only; one row of $\mathbf{A} - r_1\mathbf{I}$ suffices (the other row is a complex multiple of it). Split $\boldsymbol{\xi} = \mathbf{a} + i\mathbf{b}$.
 > 3. **Real solutions.** Expand $\boldsymbol{\xi}e^{\lambda t}(\cos\mu t + i\sin\mu t)$ and take real and imaginary parts, or use (17) directly.
 > 4. **General solution.** $\mathbf{x} = c_1\mathbf{u}(t) + c_2\mathbf{v}(t)$ (plus terms for the other eigenvalues). For an initial value problem, $\mathbf{x}(0) = c_1\mathbf{a} + c_2\mathbf{b}$.
-> 5. **Type and direction.** The sign of $\lambda$ decides spiral in, spiral out or center (Definition §32.1). For the direction of rotation, compute $\mathbf{A}\mathbf{x}$ at one convenient point, such as $(1, 0)^T$ or $(0, 1)^T$, and see which way the tangent vector turns around the origin.
+> 5. **Type and direction.** The sign of $\lambda$ decides spiral in, spiral out or center ([[§32 Complex-Valued Eigenvalues#^def-32-1|Definition §32.1]]). For the direction of rotation, compute $\mathbf{A}\mathbf{x}$ at one convenient point, such as $(1, 0)^T$ or $(0, 1)^T$, and see which way the tangent vector turns around the origin.
 
 ^rem-32-1
 
@@ -222,7 +222,7 @@ So the two complex solutions carry the same information, and either one yields t
 >
 > *The shape of the trajectories* (the descriptions in [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-3|Definition §31.3]] and [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-4|Definition §31.4]]). Let $c_1 \ne 0$. For a node with $r_2 < r_1 < 0$, $e^{-r_1t}\mathbf{x}(t) = c_1\boldsymbol{\xi}^{(1)} + c_2e^{(r_2 - r_1)t}\boldsymbol{\xi}^{(2)} \to c_1\boldsymbol{\xi}^{(1)}$ as $t \to \infty$, so the direction of $\mathbf{x}(t)$ tends to that of $\pm\boldsymbol{\xi}^{(1)}$: the trajectory enters the origin tangent to the eigenvector of the eigenvalue nearer to $0$. (If $c_1 = 0$ it runs along the line of $\boldsymbol{\xi}^{(2)}$.) For $0 < r_1 < r_2$ the same limit, taken as $t \to -\infty$, shows that trajectories leave the origin tangent to $\boldsymbol{\xi}^{(1)}$. For a saddle with $r_1 > 0 > r_2$ and $c_1c_2 \ne 0$, $e^{-r_1t}\mathbf{x}(t) \to c_1\boldsymbol{\xi}^{(1)}$ as $t \to \infty$ and $e^{-r_2t}\mathbf{x}(t) \to c_2\boldsymbol{\xi}^{(2)}$ as $t \to -\infty$, while $|\mathbf{x}(t)| \to \infty$ at both ends: the trajectory comes in along the line of $\boldsymbol{\xi}^{(2)}$, leaves along that of $\boldsymbol{\xi}^{(1)}$, and never approaches the origin. So the eigenvector lines ($c_1 = 0$ or $c_2 = 0$) are the only trajectories that tend to the origin.
 >
-> **Complex eigenvalues** $\lambda \pm i\mu$, $\mu \ne 0$, with eigenvector $\mathbf{a} + i\mathbf{b}$. By Theorem §32.2, $\mathbf{x} = c_1\mathbf{u} + c_2\mathbf{v}$, and collecting the coefficients of $\mathbf{a}$ and $\mathbf{b}$ in (17),
+> **Complex eigenvalues** $\lambda \pm i\mu$, $\mu \ne 0$, with eigenvector $\mathbf{a} + i\mathbf{b}$. By [[§32 Complex-Valued Eigenvalues#^thm-32-2|Theorem §32.2]], $\mathbf{x} = c_1\mathbf{u} + c_2\mathbf{v}$, and collecting the coefficients of $\mathbf{a}$ and $\mathbf{b}$ in (17),
 >
 > $$
 > \mathbf{x}(t) = e^{\lambda t}\big[(c_1\cos\mu t + c_2\sin\mu t)\,\mathbf{a} + (-c_1\sin\mu t + c_2\cos\mu t)\,\mathbf{b}\big] = \mathbf{T}\mathbf{y}(t), \qquad
@@ -388,7 +388,7 @@ With $y_1 = x_1$, $y_2 = x_2$, $y_3 = x_1'$, $y_4 = x_2'$ this becomes the first
 >
 > Check for $\boldsymbol{\xi}^{(1)}$: $\mathbf{A}\boldsymbol{\xi}^{(1)} = (3i,\ 2i,\ -6 + 3,\ 4 - 6)^T = (3i, 2i, -3, -2)^T = i\,\boldsymbol{\xi}^{(1)}$.
 >
-> **Real solutions.** By Theorem §32.2 with $\lambda = 0$,
+> **Real solutions.** By [[§32 Complex-Valued Eigenvalues#^thm-32-2|Theorem §32.2]] with $\lambda = 0$,
 >
 > $$
 > \boldsymbol{\xi}^{(1)}e^{it} = \begin{pmatrix} 3\cos t \\ 2\cos t \\ -3\sin t \\ -2\sin t \end{pmatrix} + i\begin{pmatrix} 3\sin t \\ 2\sin t \\ 3\cos t \\ 2\cos t \end{pmatrix} = \mathbf{u}^{(1)}(t) + i\mathbf{v}^{(1)}(t), \qquad (29)

@@ -138,7 +138,7 @@ Surprisingly, the matrix of Example §36.2 acts essentially as a rotation, which
 > \overline{A\mathbf{x}} = A\overline{\mathbf{x}}, \qquad A(\operatorname{Re}\mathbf{x}) = \operatorname{Re}(A\mathbf{x}), \qquad A(\operatorname{Im}\mathbf{x}) = \operatorname{Im}(A\mathbf{x}) .
 > $$
 >
-> *Lay: 5.5 (text); Exercise 5.5.25*
+> *Lay: 5.5 (text) and Exercise 25*
 
 ^prop-36-1
 
@@ -188,7 +188,7 @@ The next result is the basic "building block" for all real $2 \times 2$ matrices
 >
 > where $\varphi$ is the angle between the positive $x$-axis and the ray from $(0, 0)$ through $(a, b)$, the **argument** of $a + bi$ ([[§53 Complex Numbers#^def-53-6|Definition §53.6]]). So $\mathbf{x} \mapsto C\mathbf{x}$ is the composition of a rotation through the angle $\varphi$ and a scaling by $|\lambda|$.
 >
-> *Lay: Example 5.5.6; Practice Problem 5.5*
+> *Lay: Example 5.5.6; 5.5, Practice Problem*
 
 ^prop-36-3
 

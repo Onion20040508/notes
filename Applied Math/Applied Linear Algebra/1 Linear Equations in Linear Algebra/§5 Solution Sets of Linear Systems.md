@@ -176,7 +176,7 @@ Geometrically, adding $\mathbf{p}$ to $\mathbf{v}$ *translates* $\mathbf{v}$ to 
 ^thm-5-3
 
 > [!proof]+ Proof
-> Lay proves the first inclusion in the solution to Practice Problem 3 and leaves the second to Exercise 25 (written out here). Both follow from Theorem §4.5.
+> Lay proves the first inclusion in the solution to Practice Problem 3 and leaves the second to Exercise 25 (written out here). Both follow from [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]].
 > - If $A\mathbf{v}_h = \mathbf{0}$ and $\mathbf{w} = \mathbf{p} + \mathbf{v}_h$, then $A\mathbf{w} = A\mathbf{p} + A\mathbf{v}_h = \mathbf{b} + \mathbf{0} = \mathbf{b}$. So every vector of the form $\mathbf{p} + \mathbf{v}_h$ is a solution.
 > - Conversely, let $\mathbf{w}$ be any solution of $A\mathbf{x} = \mathbf{b}$ and put $\mathbf{v}_h = \mathbf{w} - \mathbf{p}$. Then $A\mathbf{v}_h = A\mathbf{w} - A\mathbf{p} = \mathbf{b} - \mathbf{b} = \mathbf{0}$, so $\mathbf{v}_h$ solves the homogeneous equation and $\mathbf{w} = \mathbf{p} + \mathbf{v}_h$ has the stated form.
 

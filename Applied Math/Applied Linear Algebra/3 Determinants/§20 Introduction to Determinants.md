@@ -64,7 +64,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > \det A = a_{11}\det A_{11} - a_{12}\det A_{12} + \cdots + (-1)^{1+n} a_{1n}\det A_{1n} = \sum_{j=1}^{n} (-1)^{1+j} a_{1j} \det A_{1j} .
 > $$
 >
-> The definition is **recursive**: an $n \times n$ determinant is defined by determinants of $(n-1) \times (n-1)$ submatrices. For $n = 2$ it gives $\det A = a_{11}a_{22} - a_{12}a_{21}$, the number of [[§12 The Inverse of a Matrix#^def-12-2|Definition §12.2]]; for $n = 3$ it gives $\Delta$ of Remark §20.1. Another common notation replaces the brackets by vertical bars: $\det A = |A|$.
+> The definition is **recursive**: an $n \times n$ determinant is defined by determinants of $(n-1) \times (n-1)$ submatrices. For $n = 2$ it gives $\det A = a_{11}a_{22} - a_{12}a_{21}$, the number of [[§12 The Inverse of a Matrix#^def-12-2|Definition §12.2]]; for $n = 3$ it gives $\Delta$ of [[§20 Introduction to Determinants#^rem-20-1|Remark: Where the 3 × 3 Formula Comes From]]. Another common notation replaces the brackets by vertical bars: $\det A = |A|$.
 >
 > *Lay: 3.1, Definition*
 
@@ -249,7 +249,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > \det A = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31}) .
 > $$
 >
-> The three positive terms $a_{11}a_{22}a_{33}$, $a_{12}a_{23}a_{31}$, $a_{13}a_{21}a_{32}$ are the downward diagonals, and the three negative terms $a_{11}a_{23}a_{32}$, $a_{12}a_{21}a_{33}$, $a_{13}a_{22}a_{31}$ are the upward diagonals. (This is formula (2) of Remark §20.1.)
+> The three positive terms $a_{11}a_{22}a_{33}$, $a_{12}a_{23}a_{31}$, $a_{13}a_{21}a_{32}$ are the downward diagonals, and the three negative terms $a_{11}a_{23}a_{32}$, $a_{12}a_{21}a_{33}$, $a_{13}a_{22}a_{31}$ are the upward diagonals. (This is formula (2) of [[§20 Introduction to Determinants#^rem-20-1|Remark: Where the 3 × 3 Formula Comes From]].)
 
 ^pf-20-3
 
@@ -278,7 +278,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§12 The Inv
 > - The same $2 \times 2$ and $3 \times 3$ determinants in Calculus, used to compute cross products: [[§83 The Cross Product#^def-83-2|Calc Def. §83.2]], [[§83 The Cross Product#^prop-83-1|Calc Prop. §83.1]]. LADR writes out the six terms as a sum over permutations: [[§34 Determinants#^ladr-9-47|LADR 9.47]].
 
 > [!remark]- Remark: The Cost of Cofactor Expansion
-> Expanding an $n \times n$ determinant by cofactors requires more than $n!$ multiplications. By Stirling's formula $n! \approx \sqrt{2\pi n}\,(n/e)^n$, which the lecture abbreviates to $n! \sim n^n e^{-n}$. Already $25! \approx 1.5 \times 10^{25}$: a computer doing $10^{12}$ multiplications per second would need more than $500{,}000$ years for a $25 \times 25$ determinant. Row reduction ([[§21 Properties of Determinants#^rem-21-3|Remark §21.3]]) needs only about $2n^3/3$ operations.
+> Expanding an $n \times n$ determinant by cofactors requires more than $n!$ multiplications. By Stirling's formula $n! \approx \sqrt{2\pi n}\,(n/e)^n$, which the lecture abbreviates to $n! \sim n^n e^{-n}$. Already $25! \approx 1.5 \times 10^{25}$: a computer doing $10^{12}$ multiplications per second would need more than $500{,}000$ years for a $25 \times 25$ determinant. Row reduction ([[§21 Properties of Determinants#^rem-21-3|§21, Remark: Numerical Notes]]) needs only about $2n^3/3$ operations.
 >
 > The lecture contrasts this with the **permanent**, $\operatorname{perm} A = \sum_j a_{ij} \operatorname{perm} A_{ij}$, the same expansion with all signs $+$. Row operations do not control the permanent, and no polynomial-time method is known: the best known methods, such as Ryser's formula with about $2^n n$ operations, are far faster than $n!$ but still exponential. The lecture links the question to the P vs NP problem. Precisely: computing the permanent is #P-complete (Valiant, 1979), so a polynomial-time algorithm for it would imply P = NP; the converse is not known.
 >

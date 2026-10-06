@@ -277,7 +277,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^pf-88-4
 
-*Uses:* [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|§87.3]], [[§83 The Cross Product#^thm-83-4|§83.4]], [[§83 The Cross Product#^thm-83-8|§83.8]]
+*Uses:* [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|§87.3]], [[§83 The Cross Product#^thm-83-4|§83.4]], [[§83 The Cross Product#^thm-83-8|§83.8]], [[§83 The Cross Product#^ex-83-1|Ex. §83.1]] ($\mathbf{T} \times \mathbf{T} = \mathbf{0}$)
 
 > [!theorem] Corollary §88.5: Curvature of a Plane Curve y = f(x)
 > The curvature of the plane curve $y = f(x)$ is

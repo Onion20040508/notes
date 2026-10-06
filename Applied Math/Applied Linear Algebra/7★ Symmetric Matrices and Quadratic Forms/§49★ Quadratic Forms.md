@@ -134,7 +134,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 
 ^pf-49-2
 
-*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]] ($P^TP = I$)
+*Uses:* [[§48★ Diagonalization of Symmetric Matrices#^thm-48-2|§48.2]], [[§49★ Quadratic Forms#^prop-49-1|§49.1]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]] ($P^TP = I$), [[§49★ Quadratic Forms#^ex-49-1|Ex. §49.1]](a) (a diagonal matrix gives only squares)
 
 > [!definition] Definition §49.3: Principal Axes
 > The columns of $P$ in the Principal Axes Theorem are called the **principal axes** of the quadratic form $\mathbf{x}^T A \mathbf{x}$. They are orthonormal eigenvectors of $A$, and the vector $\mathbf{y}$ is the coordinate vector of $\mathbf{x}$ relative to the orthonormal basis of $\mathbb{R}^n$ given by these principal axes.
@@ -144,7 +144,7 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 ^def-49-3
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|LADR 9.23]](b), diagonalization of a quadratic form by an orthonormal basis, deduced from the bilinear-form version [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] and the real spectral theorem. Axler also notes (9.23(a)) that *without* the orthonormality requirement any quadratic form over any field can be diagonalized, by a non-orthogonal $P$ (completing squares).
+> - Rigorous treatment: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|LADR 9.23]](b), diagonalization of a quadratic form by an orthonormal basis, deduced from the bilinear-form version [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] and the real spectral theorem. Axler also notes (9.23(a)) that *without* the orthonormality requirement any quadratic form over $\mathbf{F} = \mathbb{R}$ or $\mathbb{C}$ can be diagonalized, by a non-orthogonal $P$ (completing squares).
 > - Used in Calculus to bring a quadric surface to standard form by a rotation of axes: [[§85 Cylinders and Quadric Surfaces#^def-85-3|Calc Def. §85.3]].
 > - PDE version: for a second-order PDE with constant coefficients, rotating the $(\xi, \eta)$-axes to the principal axes of $A\xi^2 + B\xi\eta + C\eta^2$ removes the mixed derivative, and the sign of $B^2 - 4AC$ classifies the equation as elliptic, parabolic or hyperbolic, [[§40★ Classification and Limitations#^def-40-1|341 Def. §40.1]].
 

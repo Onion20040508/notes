@@ -197,7 +197,7 @@ The next consequence is used for linear fractional transformations in [[§99★ 
 > \frac{1}{T(1/z)} = \frac{d}{a/z + b} = \frac{dz}{a + bz} \quad\longrightarrow\quad \frac{0}{a} = 0 \qquad (z \to 0) ,
 > $$
 >
-> by Corollary §16.3 (the denominator tends to $a \ne 0$). By (3), $T(z) \to \infty$ as $z \to \infty$.
+> by [[§16 Theorems on Limits#^cor-16-3|Corollary §16.3]] (the denominator tends to $a \ne 0$). By (3), $T(z) \to \infty$ as $z \to \infty$.
 >
 > **2.** Let $c \ne 0$. *At infinity:* for $z \ne 0$ near $0$,
 >

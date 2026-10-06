@@ -135,7 +135,7 @@ This section works the [[§10 Roots of Complex Numbers#^rem-10-1|method of §10]
 > az^2 + bz + c = 0 \iff z^2 + \frac{b}{a}z + \frac{c}{a} = 0 \iff \Big(z + \frac{b}{2a}\Big)^2 = \frac{b^2 - 4ac}{4a^2} \iff \big(2az + b\big)^2 = b^2 - 4ac ,
 > $$
 >
-> the last step multiplying by $4a^2 \ne 0$. So $z$ is a root exactly when $2az + b$ is a square root of $b^2 - 4ac$, that is, $z = \dfrac{-b + w}{2a}$ with $w \in (b^2 - 4ac)^{1/2}$. By Theorem §10.2, if $b^2 - 4ac \ne 0$ it has two square roots $\pm w_0$, giving two roots $z$; if $b^2 - 4ac = 0$ the only root is $z = -b/(2a)$.
+> the last step multiplying by $4a^2 \ne 0$. So $z$ is a root exactly when $2az + b$ is a square root of $b^2 - 4ac$, that is, $z = \dfrac{-b + w}{2a}$ with $w \in (b^2 - 4ac)^{1/2}$. By [[§10 Roots of Complex Numbers#^thm-10-2|Theorem §10.2]], if $b^2 - 4ac \ne 0$ it has two square roots $\pm w_0$, giving two roots $z$; if $b^2 - 4ac = 0$ the only root is $z = -b/(2a)$.
 >
 > **(b)** Here $a = 1$, $b = 2$, $c = 1 - i$, and $b^2 - 4ac = 4 - 4(1 - i) = 4i$. Since $4i = 4\exp[i(\frac\pi2 + 2k\pi)]$, its square roots are $\pm 2e^{i\pi/4} = \pm\sqrt2(1 + i)$. So
 >

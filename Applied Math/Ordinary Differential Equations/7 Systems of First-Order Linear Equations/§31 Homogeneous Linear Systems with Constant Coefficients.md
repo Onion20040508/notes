@@ -117,7 +117,7 @@ The Wronskian of the two solutions is $e^{2t}e^{-3t} = e^{-t} \ne 0$, so they fo
 ^ex-31-1
 
 > [!definition] Definition §31.3: Saddle Point
-> When the eigenvalues of a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ are real and of opposite signs, the origin is called a **saddle point**. The pattern of Example §31.1 is typical: the two eigenvector lines are the only trajectories through the origin, one approached and one left, and all other trajectories come in along the first and depart along the second. Saddle points are always unstable, because almost all trajectories depart from them as $t$ increases.
+> When the eigenvalues of a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ are real and of opposite signs, the origin is called a **saddle point**. The pattern of [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-1|Example §31.1]] is typical: the two eigenvector lines are the only trajectories through the origin, one approached and one left, and all other trajectories come in along the first and depart along the second. Saddle points are always unstable, because almost all trajectories depart from them as $t$ increases.
 >
 > *BDP: 7.5 (text)*
 
@@ -164,7 +164,7 @@ The Wronskian of the two solutions is $e^{2t}e^{-3t} = e^{-t} \ne 0$, so they fo
 ^def-31-4
 
 ![[m331-31-1.svg]]
-*Phase portraits computed from the general solutions (17) and (25). (a) Saddle point of Example §31.1: the trajectory $\mathbf{x}^{(1)}$ (red) leaves the origin along $x_2 = 2x_1$, $\mathbf{x}^{(2)}$ (green) enters it along $x_2 = -2x_1$, and every other trajectory comes in along the green line and leaves along the red one. (b) Asymptotically stable node of Example §31.2: every trajectory enters the origin; except for the green line of the fast eigenvalue $-4$, they arrive tangent to the red line of the slow eigenvalue $-1$.*
+*Phase portraits computed from the general solutions (17) and (25). (a) Saddle point of [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-1|Example §31.1]]: the trajectory $\mathbf{x}^{(1)}$ (red) leaves the origin along $x_2 = 2x_1$, $\mathbf{x}^{(2)}$ (green) enters it along $x_2 = -2x_1$, and every other trajectory comes in along the green line and leaves along the red one. (b) Asymptotically stable node of [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-2|Example §31.2]]: every trajectory enters the origin; except for the green line of the fast eigenvalue $-4$, they arrive tangent to the red line of the slow eigenvalue $-1$.*
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^def-38-2|235 Def. §38.2]], where Lay calls the stable node an *attractor* or *sink* and the unstable one a *repeller* or *source*, and names the eigenvector lines the directions of greatest attraction and repulsion.
@@ -222,7 +222,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > [!remark] Remark: Method — Eigenvector Solutions of x′ = Ax
 > 1. **Eigenvalues.** Solve the characteristic equation $\det(\mathbf{A} - r\mathbf{I}) = 0$. For $2 \times 2$ matrices, $\det(\mathbf{A} - r\mathbf{I}) = r^2 - (\operatorname{tr}\mathbf{A})\,r + \det\mathbf{A}$.
 > 2. **Eigenvectors.** For each eigenvalue, solve $(\mathbf{A} - r\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$. In the $2 \times 2$ case one row suffices: the row $(a, b)$ gives $\boldsymbol{\xi} = (b, -a)^T$ (if not both zero).
-> 3. **General solution.** If there are $n$ independent eigenvectors (Theorem §31.2), $\mathbf{x} = c_1\boldsymbol{\xi}^{(1)}e^{r_1t} + \cdots + c_n\boldsymbol{\xi}^{(n)}e^{r_nt}$. Otherwise see [[§32 Complex-Valued Eigenvalues#^rem-32-1|the method of §32]] (complex eigenvalues) or [[§34★ Repeated Eigenvalues#^rem-34-1|the method of §34★]] (too few eigenvectors).
+> 3. **General solution.** If there are $n$ independent eigenvectors ([[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]]), $\mathbf{x} = c_1\boldsymbol{\xi}^{(1)}e^{r_1t} + \cdots + c_n\boldsymbol{\xi}^{(n)}e^{r_nt}$. Otherwise see [[§32 Complex-Valued Eigenvalues#^rem-32-1|the method of §32]] (complex eigenvalues) or [[§34★ Repeated Eigenvalues#^rem-34-1|the method of §34★]] (too few eigenvectors).
 > 4. **Initial value problem.** Setting $t = 0$ gives the linear system $c_1\boldsymbol{\xi}^{(1)} + \cdots + c_n\boldsymbol{\xi}^{(n)} = \mathbf{x}(0)$ for the constants. Check the answer by substituting $t = 0$.
 > 5. **Phase portrait** ($2 \times 2$, by hand). Draw the two eigenvector lines; on each, the motion is outward if its eigenvalue is positive and inward if negative. Then fill in curves using dominance: as $t \to \infty$ trajectories follow the line of the larger eigenvalue, and as $t \to -\infty$ the line of the smaller one. Opposite signs give a saddle, equal signs a node.
 
@@ -241,7 +241,7 @@ For $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A}$ real and $n \times n$
 > r_1 = 2,\ \boldsymbol{\xi}^{(1)} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}; \qquad r_2 = r_3 = -1,\ \boldsymbol{\xi}^{(2)} = \begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix},\ \boldsymbol{\xi}^{(3)} = \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix} .
 > $$
 >
-> The three eigenvectors are independent (the determinant of the matrix with these columns is $3$), so by Theorem §31.2(b) the general solution is
+> The three eigenvectors are independent (the determinant of the matrix with these columns is $3$), so by [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|Theorem §31.2]](b) the general solution is
 >
 > $$
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}e^{2t} + c_2\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}e^{-t} + c_3\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}e^{-t} . \qquad (34)

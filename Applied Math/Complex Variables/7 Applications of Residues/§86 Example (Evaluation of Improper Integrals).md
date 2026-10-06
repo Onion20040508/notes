@@ -139,13 +139,13 @@ B&C devotes this section to one worked instance of the method of [[§85 Evaluati
 >
 > Hence $2\pi i\sum_k\operatorname{Res} = 2\pi i\cdot\big(-\frac{1}{2n}\big)\cdot\frac{i}{\sin\alpha} = \frac{\pi}{n\sin\alpha}$.
 >
-> **(c) Conclusion.** Since $m < n$, $\deg q = 2n \ge 2m + 2$, so the arc integral vanishes (Proposition §85.4), and the integrand is even:
+> **(c) Conclusion.** Since $m < n$, $\deg q = 2n \ge 2m + 2$, so the arc integral vanishes ([[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]]), and the integrand is even:
 >
 > $$
 > \int_0^\infty\frac{x^{2m}}{x^{2n} + 1}\,dx = \frac{\pi}{2n\sin\alpha} = \frac{\pi}{2n}\csc\Big(\frac{2m + 1}{2n}\pi\Big) .
 > $$
 >
-> **Special cases.** $m = 0$, $n = 3$: $\frac\pi6\csc\frac\pi6 = \frac\pi3$ (Example §86.1). $m = 0$, $n = 2$: $\frac\pi4\csc\frac\pi4 = \frac{\pi}{2\sqrt2}$ (Example §86.2). $m = 1$, $n = 2$: $\int_0^\infty\frac{x^2\,dx}{x^4 + 1} = \frac\pi4\csc\frac{3\pi}{4} = \frac{\pi}{2\sqrt2}$, the Spring 2005 problem; its key disposes of the arc by the criterion $\deg q \ge \deg p + 2$ (Proposition §85.4), finds the residues $\frac14e^{-i\pi/4}$, $\frac14e^{-i3\pi/4}$ at $e^{i\pi/4}$, $e^{i3\pi/4}$ and the same value. $m = 1$, $n = 3$: $\int_0^\infty\frac{x^2\,dx}{1 + x^6} = \frac\pi6\csc\frac\pi2 = \frac\pi6$ (B&C's Exercise 4, the Fall 1999 problem). Quadrature confirms all four (and, for instance, $m = 2$, $n = 5$: $\frac{\pi}{10}$).
+> **Special cases.** $m = 0$, $n = 3$: $\frac\pi6\csc\frac\pi6 = \frac\pi3$ (Example §86.1). $m = 0$, $n = 2$: $\frac\pi4\csc\frac\pi4 = \frac{\pi}{2\sqrt2}$ (Example §86.2). $m = 1$, $n = 2$: $\int_0^\infty\frac{x^2\,dx}{x^4 + 1} = \frac\pi4\csc\frac{3\pi}{4} = \frac{\pi}{2\sqrt2}$, the Spring 2005 problem; its key disposes of the arc by the criterion $\deg q \ge \deg p + 2$ ([[§85 Evaluation of Improper Integrals#^prop-85-4|Proposition §85.4]]), finds the residues $\frac14e^{-i\pi/4}$, $\frac14e^{-i3\pi/4}$ at $e^{i\pi/4}$, $e^{i3\pi/4}$ and the same value. $m = 1$, $n = 3$: $\int_0^\infty\frac{x^2\,dx}{1 + x^6} = \frac\pi6\csc\frac\pi2 = \frac\pi6$ (B&C's Exercise 4, the Fall 1999 problem). Quadrature confirms all four (and, for instance, $m = 2$, $n = 5$: $\frac{\pi}{10}$).
 >
 > *B&C: Sec. 86, Exercise 10; Source: 342 practice final (Spring 2005), Q9, 342 practice final (Fall 1999), Q5*
 

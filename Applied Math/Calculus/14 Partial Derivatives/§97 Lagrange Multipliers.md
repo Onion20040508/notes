@@ -186,8 +186,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 >
 > *In the posted solution of (b), the line "By $y = 2x$" should read $y = 8x$; the points and the values $\pm 3$ are correct.*
 >
-> *Source: 233 Exam 2 Practice Questions, Q6*
-> *Source: 233 Practice Exam 2, Q2*
+> *Source: 233 Exam 2 Practice Questions, Q6; 233 Practice Exam 2, Q2*
 
 ^ex-97-4
 

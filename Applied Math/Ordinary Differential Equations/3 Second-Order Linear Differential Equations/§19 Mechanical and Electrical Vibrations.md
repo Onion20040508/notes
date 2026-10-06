@@ -66,7 +66,7 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 > By Newton's law, $mu'' = f$, the net force on the mass. Four forces act:
 > 1. the weight $w = mg$, downward;
 > 2. the spring force, proportional to the total elongation $L + u$ and restoring: $F_s = -k(L + u)$. This holds also when the spring is compressed: then $L + u < 0$, the force is $k|L + u|$ downward, and $k|L + u| = -k(L + u)$;
-> 3. the damping force $F_d = -\gamma u'$ (Definition §19.2);
+> 3. the damping force $F_d = -\gamma u'$ ([[§19 Mechanical and Electrical Vibrations#^def-19-2|Definition §19.2]]);
 > 4. the external force $F(t)$.
 >
 > Hence
@@ -86,7 +86,7 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 > [!remark] Remark: Method — Setting Up a Spring–Mass Problem
 > 1. **Units.** Fix one unit of length (feet *or* inches, metres *or* centimetres) and of time, and convert all data. In English units weights are given in pounds and $g = 32$ ft/s$^2$.
 > 2. **Mass:** $m = w/g$ (units lb·s$^2$/ft, or kg).
-> 3. **Spring constant:** $k = w/L$ from the equilibrium stretch $L$ (Definition §19.1).
+> 3. **Spring constant:** $k = w/L$ from the equilibrium stretch $L$ ([[§19 Mechanical and Electrical Vibrations#^def-19-1|Definition §19.1]]).
 > 4. **Damping constant:** $\gamma = (\text{resisting force})/(\text{speed})$ from the stated resistance at a stated speed.
 > 5. **Initial conditions:** $u(0)$ is the initial displacement (positive below equilibrium), $u'(0)$ the initial velocity (positive downward). "Released" means $u'(0) = 0$.
 > 6. Write $mu'' + \gamma u' + ku = F(t)$, and solve with the root cases of $mr^2 + \gamma r + k = 0$.
@@ -219,7 +219,7 @@ $$
 >
 > In every case, **every solution tends to $0$ as $t \to \infty$**, whatever the initial conditions. In cases (23) and (24), a solution that is not identically zero passes through the equilibrium $u = 0$ at most once.
 >
-> In case (25), with $A = R\cos\delta$, $B = R\sin\delta$ as in Proposition §19.2,
+> In case (25), with $A = R\cos\delta$, $B = R\sin\delta$ as in [[§19 Mechanical and Electrical Vibrations#^prop-19-2|Proposition §19.2]],
 >
 > $$
 > u = Re^{-\gamma t/(2m)}\cos(\mu t - \delta) , \qquad (26)
@@ -238,7 +238,7 @@ $$
 >
 > **At most one zero.** (BDP states this in the text and leaves it as Problem 3.7.13; here is why.) In case (23), $u(t) = 0$ means $Ae^{r_1t} = -Be^{r_2t}$. If one of $A$, $B$ is zero, so is the other (exponentials never vanish), and $u \equiv 0$. Otherwise the condition reads $e^{(r_1 - r_2)t} = -B/A$ with $r_1 \ne r_2$, and $e^{(r_1 - r_2)t}$ is strictly monotone, so it takes the value $-B/A$ at most once. In case (24), $u(t) = 0$ means $A + Bt = 0$, which has at most one root unless $A = B = 0$.
 >
-> **The form (26)** is Proposition §19.2 applied to $A\cos\mu t + B\sin\mu t$; since $|\cos(\mu t - \delta)| \le 1$, $|u| \le Re^{-\gamma t/(2m)}$.
+> **The form (26)** is [[§19 Mechanical and Electrical Vibrations#^prop-19-2|Proposition §19.2]] applied to $A\cos\mu t + B\sin\mu t$; since $|\cos(\mu t - \delta)| \le 1$, $|u| \le Re^{-\gamma t/(2m)}$.
 
 ^pf-19-3
 
@@ -253,7 +253,7 @@ $$
 > - If $\gamma = 2\sqrt{km}$, the motion is **critically damped**.
 > - If $\gamma > 2\sqrt{km}$, the motion is **overdamped**.
 >
-> In the last two cases the mass does not oscillate: it crosses equilibrium at most once (Theorem §19.3) and creeps back to it. Without damping ($\gamma = 0$) the system is **undamped**.
+> In the last two cases the mass does not oscillate: it crosses equilibrium at most once ([[§19 Mechanical and Electrical Vibrations#^thm-19-3|Theorem §19.3]]) and creeps back to it. Without damping ($\gamma = 0$) the system is **undamped**.
 >
 > *BDP: 3.7 (text)*
 
@@ -333,7 +333,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 > r = \frac{-\gamma \pm \sqrt{\gamma^2 - 40}}{4} .
 > $$
 >
-> By Theorem §19.3 and Definition §19.4, with $4km = 40$ and $2\sqrt{km} = \sqrt{40} = 2\sqrt{10} \approx 6.32$:
+> By [[§19 Mechanical and Electrical Vibrations#^thm-19-3|Theorem §19.3]] and [[§19 Mechanical and Electrical Vibrations#^def-19-4|Definition §19.4]], with $4km = 40$ and $2\sqrt{km} = \sqrt{40} = 2\sqrt{10} \approx 6.32$:
 > - $\gamma = 0$: **undamped**, $y = A\cos\big(\sqrt{5/2}\,t\big) + B\sin\big(\sqrt{5/2}\,t\big)$;
 > - $0 < \gamma < 2\sqrt{10}$: **underdamped**, complex roots with real part $-\gamma/4 < 0$;
 > - $\gamma = 2\sqrt{10}$: **critically damped**, double root $r = -\sqrt{10}/2$;
@@ -346,7 +346,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 ^ex-19-3
 
 ![[m331-19-1.svg]]
-*Example §19.3 with $y(0) = 1$, $y'(0) = 0$. Undamped ($\gamma = 0$, dashed): $y = \cos(\sqrt{5/2}\,t)$. Underdamped ($\gamma = 2$): $y = e^{-t/2}(\cos\frac32 t + \frac13\sin\frac32 t)$ oscillates with decaying amplitude. Critically damped ($\gamma = 2\sqrt{10}$): $y = (1 + \frac{\sqrt{10}}{2}t)e^{-\sqrt{10}\,t/2}$, the fastest return without crossing. Overdamped ($\gamma = 12$): $y \approx 1.088e^{-0.450t} - 0.088e^{-5.550t}$, slowed by its root closer to $0$.*
+*[[§19 Mechanical and Electrical Vibrations#^ex-19-3|Example §19.3]] with $y(0) = 1$, $y'(0) = 0$. Undamped ($\gamma = 0$, dashed): $y = \cos(\sqrt{5/2}\,t)$. Underdamped ($\gamma = 2$): $y = e^{-t/2}(\cos\frac32 t + \frac13\sin\frac32 t)$ oscillates with decaying amplitude. Critically damped ($\gamma = 2\sqrt{10}$): $y = (1 + \frac{\sqrt{10}}{2}t)e^{-\sqrt{10}\,t/2}$, the fastest return without crossing. Overdamped ($\gamma = 12$): $y \approx 1.088e^{-0.450t} - 0.088e^{-5.550t}$, slowed by its root closer to $0$.*
 
 > [!example] Example §19.4: Small Damping
 > The motion of a spring–mass system is governed by
@@ -386,7 +386,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 ^ex-19-4
 
 ![[m331-19-2.svg]]
-*Example §19.4: the solution (blue) stays between the envelopes $\pm\frac{32}{\sqrt{255}}e^{-t/16}$ (red, dashed). The undamped motion $u = 2\cos t$ with the same initial data (grey, dashed) rises and falls almost together with it at first, since $\mu \approx 0.998$ is close to $\omega_0 = 1$; the damping shows in the amplitude, not in the frequency.*
+*[[§19 Mechanical and Electrical Vibrations#^ex-19-4|Example §19.4]]: the solution (blue) stays between the envelopes $\pm\frac{32}{\sqrt{255}}e^{-t/16}$ (red, dashed). The undamped motion $u = 2\cos t$ with the same initial data (grey, dashed) rises and falls almost together with it at first, since $\mu \approx 0.998$ is close to $\omega_0 = 1$; the damping shows in the amplitude, not in the frequency.*
 
 ## Electric Circuits
 
@@ -423,7 +423,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 ^prop-19-5
 
 > [!proof]+ Proof
-> Kirchhoff's law (Definition §19.5) says
+> Kirchhoff's law ([[§19 Mechanical and Electrical Vibrations#^def-19-5|Definition §19.5]]) says
 >
 > $$
 > L\frac{dI}{dt} + RI + \frac1C Q = E(t) . \qquad (32)

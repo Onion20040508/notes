@@ -116,7 +116,7 @@ To use Formula 2, evaluate $f(\mathbf{r}(u, v))$ by writing $x = x(u, v)$, $y = 
 
 *Uses:* [[§113 Surface Integrals#^thm-113-1|§113.1]], [[§112 Parametric Surfaces and Their Areas#^thm-112-2|§112.2]], [[§112 Parametric Surfaces and Their Areas#^prop-112-1|§112.1]]
 
-For example, for $S$: $z = x + y^2$, $0 \le x \le 1$, $0 \le y \le 2$, Formula 4 gives $\iint_S y\,dS = \int_0^1 \int_0^2 y\sqrt{1 + 1 + 4y^2}\,dy\,dx = \sqrt2 \int_0^2 y\sqrt{1 + 2y^2}\,dy = \sqrt2 \cdot \frac14 \cdot \frac23 (1 + 2y^2)^{3/2} \Big]_0^2 = \frac{13\sqrt2}{3}$ (Stewart Example 16.7.2).
+For example, for $S$: $z = x + y^2$, $0 \le x \le 1$, $0 \le y \le 2$, Formula 4 gives $\iint_S y\,dS = \int_0^1 \int_0^2 y\sqrt{1 + 1 + 4y^2}\,dy\,dx = \sqrt2 \int_0^2 y\sqrt{1 + 2y^2}\,dy = \sqrt2 \cdot \frac14 \cdot \frac23 (1 + 2y^2)^{3/2} \Big]_0^2 = \frac{13\sqrt2}{3}$ (Stewart, Example 16.7.2).
 
 > [!definition] Definition §113.3: Piecewise-Smooth Surface
 > A **piecewise-smooth surface** $S$ is a finite union of smooth surfaces $S_1, S_2, \ldots, S_n$ that intersect only along their boundaries. The surface integral of $f$ over $S$ is
@@ -129,7 +129,7 @@ For example, for $S$: $z = x + y^2$, $0 \le x \le 1$, $0 \le y \le 2$, Formula 4
 
 ^def-113-3
 
-For instance, if $S$ consists of the cylinder $x^2 + y^2 = 1$ (sides $S_1$), the unit disk in the plane $z = 0$ (bottom $S_2$) and the part of the plane $z = 1 + x$ above it (top $S_3$), then $\iint_{S_1} z\,dS = \frac{3\pi}{2}$ (parametrize by $\theta$ and $z$, $0 \le z \le 1 + \cos\theta$, with $|\mathbf{r}_\theta \times \mathbf{r}_z| = 1$), $\iint_{S_2} z\,dS = 0$, and $\iint_{S_3} z\,dS = \sqrt2\,\pi$ (Formula 4), so $\iint_S z\,dS = \left(\frac32 + \sqrt2\right)\pi$ (Stewart Example 16.7.3).
+For instance, if $S$ consists of the cylinder $x^2 + y^2 = 1$ (sides $S_1$), the unit disk in the plane $z = 0$ (bottom $S_2$) and the part of the plane $z = 1 + x$ above it (top $S_3$), then $\iint_{S_1} z\,dS = \frac{3\pi}{2}$ (parametrize by $\theta$ and $z$, $0 \le z \le 1 + \cos\theta$, with $|\mathbf{r}_\theta \times \mathbf{r}_z| = 1$), $\iint_{S_2} z\,dS = 0$, and $\iint_{S_3} z\,dS = \sqrt2\,\pi$ (Formula 4), so $\iint_S z\,dS = \left(\frac32 + \sqrt2\right)\pi$ (Stewart, Example 16.7.3).
 
 ## Oriented Surfaces
 
@@ -403,4 +403,4 @@ Compare (9) with $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mat
 
 ^def-113-8
 
-For example, if the field of [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]] were an electric field, the charge enclosed by the unit sphere would be $Q = \frac43\pi\varepsilon_0$. And if the temperature in a metal ball is $u = C(x^2 + y^2 + z^2)$, then on the sphere $x^2 + y^2 + z^2 = a^2$, with outward normal $\mathbf{n} = \frac1a\langle x, y, z \rangle$, $\mathbf{F} \cdot \mathbf{n} = -KC\langle 2x, 2y, 2z \rangle \cdot \frac1a\langle x, y, z \rangle = -2aKC$, so the rate of heat flow across the sphere is $-2aKC \cdot 4\pi a^2 = -8KC\pi a^3$ (Stewart Example 16.7.6).
+For example, if the field of [[§113 Surface Integrals#^ex-113-3|Example §113.3(b)]] were an electric field, the charge enclosed by the unit sphere would be $Q = \frac43\pi\varepsilon_0$. And if the temperature in a metal ball is $u = C(x^2 + y^2 + z^2)$, then on the sphere $x^2 + y^2 + z^2 = a^2$, with outward normal $\mathbf{n} = \frac1a\langle x, y, z \rangle$, $\mathbf{F} \cdot \mathbf{n} = -KC\langle 2x, 2y, 2z \rangle \cdot \frac1a\langle x, y, z \rangle = -2aKC$, so the rate of heat flow across the sphere is $-2aKC \cdot 4\pi a^2 = -8KC\pi a^3$ (Stewart, Example 16.7.6).

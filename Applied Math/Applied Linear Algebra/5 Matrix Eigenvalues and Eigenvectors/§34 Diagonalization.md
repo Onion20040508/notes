@@ -174,6 +174,9 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^thm-32-3|§32.3]], [[§34 Diagonalization#^thm-34-1|§34.1]]
 
+> [!remark]- Connections
+> - Rigorous treatment: [[§17 Diagonalizable Operators#^ladr-5-58|LADR 5.58]] (an operator on $V$ with $\dim V$ distinct eigenvalues is diagonalizable), by the same argument from [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]].
+
 For example, $A = \begin{bmatrix} 5 & -8 & 1 \\ 0 & 0 & 7 \\ 0 & 0 & -2 \end{bmatrix}$ is triangular, so its eigenvalues are $5$, $0$ and $-2$ ([[§32 Eigenvectors and Eigenvalues#^thm-32-1|Theorem §32.1]]); three distinct eigenvalues, so $A$ is diagonalizable (Lay, Example 5.3.5). The lecture's $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ has eigenvalues $5 \ne -1$, with eigenvectors $(1, 2)$ and $(1, -1)$ ([[§32 Eigenvectors and Eigenvalues#^ex-32-5|Example §32.5]]); with $M = \begin{bmatrix} 1 & 1 \\ 2 & -1 \end{bmatrix}$ (these eigenvectors as columns), $AM = \begin{bmatrix} 5 & -1 \\ 10 & 1 \end{bmatrix} = M\begin{bmatrix} 5 & 0 \\ 0 & -1 \end{bmatrix}$, so $M^{-1}AM = \operatorname{diag}(5, -1)$.
 
 The condition is sufficient but not *necessary*: the matrix of Example §34.2 is diagonalizable with only two distinct eigenvalues. Nor is every matrix diagonalizable.

@@ -119,7 +119,7 @@ This appendix is the rigorous development of the exponential and logarithmic fun
 
 ^pf-121-2
 
-*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§26 The Mean Value Theorem#^cor-26-4|§26.4]] (functions with equal derivatives differ by a constant), induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]])
+*Uses:* [[§121 The Logarithm Defined as an Integral#^thm-121-1|§121.1]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§26 The Mean Value Theorem#^cor-26-4|§26.4]] (functions with equal derivatives differ by a constant), induction ([[§120 Sigma Notation#^def-120-2|Def. §120.2]]), [[§4 Exponential Functions#^def-4-2|Def. §4.2]] (rational exponents)
 
 > [!remark]- Connections
 > - Complex-variables version: [[§34 Some Identities Involving Logarithms#^thm-34-1|342 Thm. §34.1]] (the law for the product with the multiple-valued $\log z$, valid as an equality of sets of values).

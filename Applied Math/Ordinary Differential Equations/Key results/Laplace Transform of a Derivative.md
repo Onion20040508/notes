@@ -20,6 +20,6 @@ tags: [ordinary-differential-equations, hub]
 - [[§35★ Nonhomogeneous Linear Systems#^prop-35-5|Proposition §35.5: Transform of the Derivative of a Vector Function]]
 
 ## Connections
-- Integration by parts with $f$ only piecewise smooth: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] requires $u, v$ continuous on $[t_i, t_{i+1}]$, differentiable inside, with integrable derivatives, which is exactly the situation on each piece.
+- Integration by parts with $f$ only piecewise smooth: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]] requires $u, v$ continuous on $[t_i, t_{i+1}]$, differentiable inside, with integrable derivatives, which is exactly the situation on each piece between consecutive discontinuities $t_i$ of $f'$ in the proof ([[§22 Solution of Initial Value Problems#^pf-22-1|§22]]).
 - Continuity of $f$ is essential: if $f$ jumps at $t_i$, the boundary terms no longer cancel and each jump contributes $-e^{-st_i}\big(f(t_i^+) - f(t_i^-)\big)$; step functions are handled by the shift theorem [[§23 Step Functions#^thm-23-2|Theorem §23.2]] instead.
 - **Also in [[Fourier Series and PDEs]]:** [[§51★ Definition and Elementary Properties#^thm-51-4|341 Thm. §51.4]] (the same rule), and its PDE version [[§53★ Partial Differential Equations#^thm-53-1|341 Thm. §53.1]] (transforms of partial derivatives, for heat and wave problems).

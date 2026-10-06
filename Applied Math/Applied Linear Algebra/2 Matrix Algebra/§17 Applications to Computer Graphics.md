@@ -134,7 +134,7 @@ Translating an object does not correspond directly to matrix multiplication, bec
 > = \begin{bmatrix} \sqrt3/2 & 1/2 & \sqrt3 - 5 \\ -1/2 & \sqrt3/2 & -3\sqrt3 + 5 \\ 0 & 0 & 1 \end{bmatrix} .
 > $$
 >
-> *Lay: Example 2.7.6; Practice Problem 2.7*
+> *Lay: Example 2.7.6; 2.7, Practice Problem*
 
 ^ex-17-2
 

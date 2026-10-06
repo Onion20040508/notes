@@ -185,8 +185,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 >
 > For $k < 1$ these are ellipses with center $(0, 0)$ and semiaxes $\sqrt{1 - k^2}$ and $\sqrt{(1 - k^2)/2}$, in the ratio $\sqrt 2 : 1$, so they are not circles; for $k = 1$ the level set is the single point $(0, 0)$. **Answer: concentric ellipses (not circles).**
 >
-> *Source: 233 Midterm 1 Practice Questions, Q22*
-> *Source: 233 Practice Exam 1, Q1(d)*
+> *Source: 233 Midterm 1 Practice Questions, Q22; 233 Practice Exam 1, Q1(d)*
 
 ^ex-90-4
 

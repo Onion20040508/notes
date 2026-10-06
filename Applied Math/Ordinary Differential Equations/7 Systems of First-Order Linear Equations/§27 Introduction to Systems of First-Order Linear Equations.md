@@ -118,7 +118,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > 2. Name the unknown and its first $n - 1$ derivatives: $x_1 = y$, $x_2 = y'$, …, $x_n = y^{(n-1)}$.
 > 3. Write the "chain" $x_1' = x_2, \ldots, x_{n-1}' = x_n$, and the last equation $x_n' = F(t, x_1, \ldots, x_n)$.
 > 4. Translate the initial conditions: $x_k(t_0) = y^{(k-1)}(t_0)$.
-> 5. For a system of higher-order equations (Example §27.1(a)), do the same for each unknown.
+> 5. For a system of higher-order equations ([[§27 Introduction to Systems of First-Order Linear Equations#^ex-27-1|Example §27.1]](a)), do the same for each unknown.
 
 ^rem-27-1
 
@@ -185,7 +185,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 >
 > It is **homogeneous** if $g_1(t), \ldots, g_n(t)$ are all zero on $I$, and **nonhomogeneous** otherwise. In matrix notation ([[§28 Matrices#^def-28-2|Definition §28.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|Definition §30.1]]) it is $\mathbf{x}' = \mathbf{P}(t)\mathbf{x} + \mathbf{g}(t)$.
 >
-> For example, the systems (1) and (2) of Example §27.1 are linear; (1) is nonhomogeneous unless $F_1(t) = F_2(t) = 0$, and (2) is homogeneous.
+> For example, the systems (1) and (2) of [[§27 Introduction to Systems of First-Order Linear Equations#^ex-27-1|Example §27.1]] are linear; (1) is nonhomogeneous unless $F_1(t) = F_2(t) = 0$, and (2) is homogeneous.
 >
 > *BDP: 7.1 (text), Equation (14)*
 
@@ -203,7 +203,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 *BDP omits the proof. It is the system version of Theorem 2.4.1 ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]) and Theorem 3.2.1 ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]]), which is its special case $n = 2$ through Proposition §27.1; no subject in the vault proves it.*
 
-In contrast with the nonlinear case, for a linear system existence and uniqueness hold on the *whole* interval where the hypotheses hold, and the initial values $x_1^0, \ldots, x_n^0$ at $t = t_0$ are completely arbitrary; in Theorem §27.2 the initial point must lie in the region $R$. The rest of Chapter 7 is about linear systems; nonlinear systems are the subject of BDP's Chapters 8 and 9.
+In contrast with the nonlinear case, for a linear system existence and uniqueness hold on the *whole* interval where the hypotheses hold, and the initial values $x_1^0, \ldots, x_n^0$ at $t = t_0$ are completely arbitrary; in [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-2|Theorem §27.2]] the initial point must lie in the region $R$. The rest of Chapter 7 is about linear systems; nonlinear systems are the subject of BDP's Chapters 8 and 9.
 
 > [!example] Example §27.3: Differences of Solutions of a Nonhomogeneous System
 > Let $x = x_1(t)$, $y = y_1(t)$ and $x = x_2(t)$, $y = y_2(t)$ be any two solutions of the linear nonhomogeneous system

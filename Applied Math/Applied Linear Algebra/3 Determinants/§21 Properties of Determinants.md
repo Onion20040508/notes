@@ -89,7 +89,7 @@ tags: [applied-linear-algebra, math235]
 
 ## Computing Determinants by Row Reduction
 
-Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only row replacements and row interchanges; this is always possible by the row reduction algorithm of [[§2 Row Reduction and Echelon Forms#^rem-2-1|Remark §2.1]].
+Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only row replacements and row interchanges; this is always possible by the row reduction algorithm of [[§2 Row Reduction and Echelon Forms#^rem-2-1|§2, Remark: Method — The Row Reduction Algorithm]].
 
 > [!theorem] Proposition §21.2: The Determinant from an Echelon Form
 > If $A$ is reduced to an echelon form $U$ by row replacements and $r$ row interchanges, then $\det A = (-1)^r \det U$, and
@@ -267,7 +267,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 > [!remark]- Remark: Numerical Notes
 > 1. Most computer programs compute $\det A$ for a general matrix by formula (1) of Proposition §21.2.
-> 2. Evaluating an $n \times n$ determinant by row operations takes about $2n^3/3$ arithmetic operations. A $25 \times 25$ determinant needs only about $10{,}000$ operations, a fraction of a second, against the $500{,}000$ years of cofactor expansion ([[§20 Introduction to Determinants#^rem-20-3|Remark §20.3]]). The lecture: "$N!$ steps by the Laplace formula, $\sim N^3$ by row reduction".
+> 2. Evaluating an $n \times n$ determinant by row operations takes about $2n^3/3$ arithmetic operations. A $25 \times 25$ determinant needs only about $10{,}000$ operations, a fraction of a second, against the $500{,}000$ years of cofactor expansion ([[§20 Introduction to Determinants#^rem-20-3|§20, Remark: The Cost of Cofactor Expansion]]). The lecture: "$N!$ steps by the Laplace formula, $\sim N^3$ by row reduction".
 > 3. Computers handle large sparse matrices with special routines, and zero entries speed up hand computation too (Example §21.2).
 
 ^rem-21-3
@@ -360,7 +360,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 ^thm-21-9
 
 > [!remark] Remark: Why It Works
-> The lecture's geometric reason: the linear map $\mathbf{x} \mapsto A\mathbf{x}$ multiplies volumes by $|\det A|$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|Theorem §22.5]], [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|Theorem §22.6]]). Applying $B$ and then $A$ multiplies a volume first by $|\det B|$, then by $|\det A|$; and the composite is the map of $AB$. So $|\det AB| = |\det A|\,|\det B|$, at least up to sign.
+> The lecture's geometric reason: the linear map $\mathbf{x} \mapsto A\mathbf{x}$ multiplies volumes by $|\det A|$ ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|Theorem §22.5]], [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|Theorem §22.6]]). Applying $B$ and then $A$ multiplies a volume first by $|\det B|$, then by $|\det A|$; and the composite is the map of $AB$. So $|\det AB| = |\det A|\,|\det B|$: the geometric argument gives the multiplicative property up to sign.
 >
 > *Source: 235 lecture L12*
 

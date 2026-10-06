@@ -72,7 +72,7 @@ This section applies the methods of [[§4 Linear Differential Equations; Method 
 > r = \frac{100}{45}\ln 50 \approx 8.69 \text{ gal/min} .
 > $$
 >
-> The same model describes a pollutant in a lake or a drug in an organ of the body, where the flow rates may be hard to determine or vary with time, the concentration may be far from uniform, and the inflow and outflow rates may differ (Example §6.2).
+> The same model describes a pollutant in a lake or a drug in an organ of the body, where the flow rates may be hard to determine or vary with time, the concentration may be far from uniform, and the inflow and outflow rates may differ ([[§6 Modeling with First-Order Differential Equations#^ex-6-2|Example §6.2]]).
 >
 > *BDP: Example 2.3.1*
 
@@ -140,7 +140,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 ^prop-6-1
 
 > [!proof]+ Proof
-> In standard form, $\dfrac{dS}{dt} - rS = k$, a linear equation with integrating factor $e^{-rt}$ (Theorem §4.1 with $a = -r$). Then $(e^{-rt}S)' = ke^{-rt}$, so $e^{-rt}S = -\frac kr e^{-rt} + c$ and
+> In standard form, $\dfrac{dS}{dt} - rS = k$, a linear equation with integrating factor $e^{-rt}$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-1|Theorem §4.1]] with $a = -r$). Then $(e^{-rt}S)' = ke^{-rt}$, so $e^{-rt}S = -\frac kr e^{-rt} + c$ and
 >
 > $$
 > S(t) = ce^{rt} - \frac kr .

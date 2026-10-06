@@ -223,7 +223,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 >
 > $BA$ is not defined, since the rows of $B$ have length 2 and the columns of $A$ have length 3. The rule to remember: a product is defined exactly when the length of the rows of the left factor equals the length of the columns of the right factor. Likewise, if $A$ is $3 \times 5$ and $B$ is $5 \times 2$, then $AB$ is $3 \times 2$ and $BA$ is undefined.
 >
-> **(c)** Only one row of a product needs only one row of the left factor (equation (2)). For $A = \begin{bmatrix} 2 & -5 & 0 \\ -1 & 3 & -4 \\ 6 & -8 & -7 \\ -3 & 0 & 9 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & -6 \\ 7 & 1 \\ 3 & 2 \end{bmatrix}$,
+> **(c)** A single row of a product needs only one row of the left factor (equation (2)). For $A = \begin{bmatrix} 2 & -5 & 0 \\ -1 & 3 & -4 \\ 6 & -8 & -7 \\ -3 & 0 & 9 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & -6 \\ 7 & 1 \\ 3 & 2 \end{bmatrix}$,
 >
 > $$
 > \operatorname{row}_2(AB) = \begin{bmatrix} -1 & 3 & -4 \end{bmatrix} \begin{bmatrix} 4 & -6 \\ 7 & 1 \\ 3 & 2 \end{bmatrix} = \begin{bmatrix} -4 + 21 - 12 & 6 + 3 - 8 \end{bmatrix} = \begin{bmatrix} 5 & 1 \end{bmatrix} .
@@ -529,7 +529,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 >
 > Also $\mathbf{x}\mathbf{x}^T = \begin{bmatrix} 25 & 15 \\ 15 & 9 \end{bmatrix}$ and $\mathbf{x}^T\mathbf{x} = [\,25 + 9\,] = 34$, while $A^T\mathbf{x}^T$ is not defined ($\mathbf{x}^T$ has one row, $A^T$ has two columns).
 >
-> *Lay: Practice Problem 2.1.1*
+> *Lay: 2.1, Practice Problem 1*
 > *Source: 235 checklist (2.1)*
 
 ^ex-11-5

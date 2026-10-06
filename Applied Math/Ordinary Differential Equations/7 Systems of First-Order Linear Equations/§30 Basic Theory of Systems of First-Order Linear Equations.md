@@ -78,7 +78,7 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 >
 > and that they form a fundamental set of solutions on $-\infty < t < \infty$.
 >
-> **Solutions.** $\mathbf{x}^{(1)\prime} = (3e^{3t}, 6e^{3t})^T$, and $\mathbf{P}\mathbf{x}^{(1)} = (e^{3t} + 2e^{3t},\ 4e^{3t} + 2e^{3t})^T = (3e^{3t}, 6e^{3t})^T$. Likewise $\mathbf{x}^{(2)\prime} = (-e^{-t}, 2e^{-t})^T$ and $\mathbf{P}\mathbf{x}^{(2)} = (e^{-t} - 2e^{-t},\ 4e^{-t} - 2e^{-t})^T = (-e^{-t}, 2e^{-t})^T$. By Theorem §30.1,
+> **Solutions.** $\mathbf{x}^{(1)\prime} = (3e^{3t}, 6e^{3t})^T$, and $\mathbf{P}\mathbf{x}^{(1)} = (e^{3t} + 2e^{3t},\ 4e^{3t} + 2e^{3t})^T = (3e^{3t}, 6e^{3t})^T$. Likewise $\mathbf{x}^{(2)\prime} = (-e^{-t}, 2e^{-t})^T$ and $\mathbf{P}\mathbf{x}^{(2)} = (e^{-t} - 2e^{-t},\ 4e^{-t} - 2e^{-t})^T = (-e^{-t}, 2e^{-t})^T$. By [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]],
 >
 > $$
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ 2 \end{pmatrix}e^{3t} + c_2\begin{pmatrix} 1 \\ -2 \end{pmatrix}e^{-t} = \begin{pmatrix} c_1e^{3t} + c_2e^{-t} \\ 2c_1e^{3t} - 2c_2e^{-t} \end{pmatrix} \qquad (7)
@@ -92,9 +92,9 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 > W[\mathbf{x}^{(1)}, \mathbf{x}^{(2)}](t) = \begin{vmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{vmatrix} = -2e^{2t} - 2e^{2t} = -4e^{2t} ,
 > $$
 >
-> which is never zero. So the two solutions are independent at every $t$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]), they form a fundamental set (Definition §30.3), and by Theorem §30.2 every solution of (6) is of the form (7).
+> which is never zero. So the two solutions are independent at every $t$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|Theorem §29.2]]), they form a fundamental set ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]), and by [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]] every solution of (6) is of the form (7).
 >
-> **Abel's formula.** Here $p_{11} + p_{22} = 1 + 1 = 2$, and indeed $W = c\,e^{\int 2\,dt} = c\,e^{2t}$ with $c = -4$, as Theorem §30.3 predicts.
+> **Abel's formula.** Here $p_{11} + p_{22} = 1 + 1 = 2$, and indeed $W = c\,e^{\int 2\,dt} = c\,e^{2t}$ with $c = -4$, as [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Theorem §30.3]] predicts.
 >
 > *BDP: 7.4 (text), Equations (5)–(7); 7.5, Equation (16)*
 
@@ -149,9 +149,9 @@ The nonhomogeneous system (2) is tied to (3) as for a single equation: the diffe
 > c_1x_{11}(t_0) + \cdots + c_nx_{1n}(t_0) = y_1, \quad \ldots, \quad c_1x_{n1}(t_0) + \cdots + c_nx_{nn}(t_0) = y_n . \qquad (13)
 > $$
 >
-> This is the linear system $\mathbf{X}(t_0)\mathbf{c} = \mathbf{y}$. Its determinant of coefficients is $W[\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}](t_0)$, which is nonzero because the solutions are independent at $t_0$ (Definition §30.2). So (13) has a unique solution $c_1, \ldots, c_n$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](a)).
+> This is the linear system $\mathbf{X}(t_0)\mathbf{c} = \mathbf{y}$. Its determinant of coefficients is $W[\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}](t_0)$, which is nonzero because the solutions are independent at $t_0$ ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Definition §30.2]]). So (13) has a unique solution $c_1, \ldots, c_n$ ([[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|Theorem §29.1]](a)).
 >
-> With these constants, $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is a solution of (3) (Theorem §30.1) with $\mathbf{z}(t_0) = \mathbf{y} = \mathbf{x}(t_0)$. Both $\mathbf{z}$ and $\mathbf{x}$ solve the initial value problem $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{y}$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), $\mathbf{x}(t) = \mathbf{z}(t)$ on $\alpha < t < \beta$. This is (11).
+> With these constants, $\mathbf{z}(t) = c_1\mathbf{x}^{(1)}(t) + \cdots + c_n\mathbf{x}^{(n)}(t)$ is a solution of (3) ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]]) with $\mathbf{z}(t_0) = \mathbf{y} = \mathbf{x}(t_0)$. Both $\mathbf{z}$ and $\mathbf{x}$ solve the initial value problem $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{y}$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), $\mathbf{x}(t) = \mathbf{z}(t)$ on $\alpha < t < \beta$. This is (11).
 >
 > **Exactly one way.** (BDP asserts this; here is why, as in Problem 15b.) If also $\mathbf{x}(t) = k_1\mathbf{x}^{(1)}(t) + \cdots + k_n\mathbf{x}^{(n)}(t)$, then evaluating at $t_0$ shows that $k_1, \ldots, k_n$ also solve (13), whose solution is unique; so $k_j = c_j$ for all $j$.
 
@@ -160,14 +160,14 @@ The nonhomogeneous system (2) is tied to (3) as for a single equation: the diffe
 *Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|§30.1]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-1|§29.1]], [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-2|§29.2]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (existence and uniqueness)
 
 > [!definition] Definition §30.3: Fundamental Set of Solutions; General Solution
-> Any set of solutions $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ of (3) that is linearly independent at each point of $\alpha < t < \beta$ is a **fundamental set of solutions** on that interval. For a fundamental set, the expression (11) with arbitrary constants $c_1, \ldots, c_n$ contains every solution of (3) (Theorem §30.2), and only solutions (Theorem §30.1); it is called the **general solution** of (3).
+> Any set of solutions $\{\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}\}$ of (3) that is linearly independent at each point of $\alpha < t < \beta$ is a **fundamental set of solutions** on that interval. For a fundamental set, the expression (11) with arbitrary constants $c_1, \ldots, c_n$ contains every solution of (3) ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]]), and only solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-1|Theorem §30.1]]); it is called the **general solution** of (3).
 >
 > *BDP: 7.4 (text)*
 
 ^def-30-3
 
 > [!remark]- Connections
-> - Theorems §30.1 and §30.2 say that the solutions of (3) form an $n$-dimensional vector space, with a fundamental set as a basis: the map $\mathbf{x} \mapsto \mathbf{x}(t_0)$ is a linear bijection onto $\mathbb{R}^n$ (or $\mathbb{C}^n$), an isomorphism in the sense of [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], so the dimension is $n$ by [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]. Lay states this without proof for constant $A$ ([[§38 Applications to Differential Equations|235 §38]], after Prop. §38.1); this section is its proof.
+> - Theorems §30.1 and §30.2 say that the solutions of (3) form an $n$-dimensional vector space, with a fundamental set as a basis: the map $\mathbf{x} \mapsto \mathbf{x}(t_0)$ is a linear bijection onto $\mathbb{R}^n$ (or $\mathbb{C}^n$), an isomorphism in the sense of [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], so the dimension is $n$ by [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]. Lay states this without proof for constant $A$ ([[§38 Applications to Differential Equations|235 §38]], after [[§38 Applications to Differential Equations#^prop-38-1|235 Prop. §38.1]]); this section is its proof.
 
 > [!theorem] Theorem §30.3: Abel's Theorem
 > If $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}$ are solutions of (3) on the interval $\alpha < t < \beta$, then in this interval $W[\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}]$ either is identically zero or else never vanishes. More precisely, $W$ satisfies
@@ -246,16 +246,16 @@ The theorem means that to decide whether $n$ solutions form a fundamental set, i
 ^thm-30-4
 
 > [!proof]+ Proof
-> [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) guarantees that each initial value problem in (16) has a unique solution on $\alpha < t < \beta$. At $t_0$ the matrix $\mathbf{X}(t_0)$ has columns $\mathbf{e}^{(1)}, \ldots, \mathbf{e}^{(n)}$, so it is the identity matrix and $W(t_0) = \det\mathbf{I} = 1 \ne 0$. By Abel's theorem (Theorem §30.3), $W(t) \ne 0$ for every $t$ in the interval, so the solutions are linearly independent at each point (Definition §30.2): they form a fundamental set (Definition §30.3).
+> [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) guarantees that each initial value problem in (16) has a unique solution on $\alpha < t < \beta$. At $t_0$ the matrix $\mathbf{X}(t_0)$ has columns $\mathbf{e}^{(1)}, \ldots, \mathbf{e}^{(n)}$, so it is the identity matrix and $W(t_0) = \det\mathbf{I} = 1 \ne 0$. By Abel's theorem ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Theorem §30.3]]), $W(t) \ne 0$ for every $t$ in the interval, so the solutions are linearly independent at each point ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Definition §30.2]]): they form a fundamental set ([[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Definition §30.3]]).
 
 ^pf-30-4
 
 *Uses:* [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-2|Def. §30.2]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|§30.3]], [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-3|Def. §30.3]]
 
-Once one fundamental set is known, others are obtained as independent linear combinations of it. For theoretical purposes the set of Theorem §30.4 is usually the simplest; as a matrix it reappears as the fundamental matrix $\mathbf{\Phi}(t)$ with $\mathbf{\Phi}(t_0) = \mathbf{I}$ in [[§33★ Fundamental Matrices#^def-33-2|Definition §33.2]].
+Once one fundamental set is known, others are obtained as independent linear combinations of it. For theoretical purposes the set of [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|Theorem §30.4]] is usually the simplest; as a matrix it reappears as the fundamental matrix $\mathbf{\Phi}(t)$ with $\mathbf{\Phi}(t_0) = \mathbf{I}$ in [[§33★ Fundamental Matrices#^def-33-2|Definition §33.2]].
 
 > [!example] Example §30.2: The Fundamental Set Normalized at t = 0
-> For the system (6) of Example §30.1, find the fundamental set of Theorem §30.4 with $t_0 = 0$.
+> For the system (6) of [[§30 Basic Theory of Systems of First-Order Linear Equations#^ex-30-1|Example §30.1]], find the fundamental set of [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|Theorem §30.4]] with $t_0 = 0$.
 >
 > Every solution has the form (7), so we choose $c_1, c_2$ to match the initial values. For $\mathbf{x}(0) = \mathbf{e}^{(1)}$: $c_1 + c_2 = 1$ and $2c_1 - 2c_2 = 0$, so $c_1 = c_2 = \frac12$. For $\mathbf{x}(0) = \mathbf{e}^{(2)}$: $c_1 + c_2 = 0$ and $2c_1 - 2c_2 = 1$, so $c_1 = \frac14$, $c_2 = -\frac14$. Thus
 >
@@ -299,8 +299,8 @@ Just as for second-order linear equations ([[§14 Solutions of Linear Homogeneou
 *Uses:* [[§30 Basic Theory of Systems of First-Order Linear Equations#^def-30-1|Def. §30.1]]
 
 > [!remark] Remark: Summary
-> 1. Any set of $n$ linearly independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ is a fundamental set of solutions (Theorem §30.3 makes "independent at one point" enough).
-> 2. Under the conditions of this section, fundamental sets always exist (Theorem §30.4).
-> 3. Every solution of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ is a linear combination of any fundamental set of solutions (Theorem §30.2).
+> 1. Any set of $n$ linearly independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ is a fundamental set of solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-3|Theorem §30.3]] makes "independent at one point" enough).
+> 2. Under the conditions of this section, fundamental sets always exist ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-4|Theorem §30.4]]).
+> 3. Every solution of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ is a linear combination of any fundamental set of solutions ([[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-2|Theorem §30.2]]).
 
 ^rem-30-1

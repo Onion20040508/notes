@@ -140,7 +140,7 @@ $$
 > y_{n+1} = \rho\Big(\rho^n y_0 + \sum_{j=0}^{n-1}\rho^{n-1-j}b_j\Big) + b_n = \rho^{n+1}y_0 + \sum_{j=0}^{n-1}\rho^{n-j}b_j + b_n = \rho^{n+1}y_0 + \sum_{j=0}^{n}\rho^{n-j}b_j .
 > $$
 >
-> With $b_j = b$, (11) is (13); for $\rho \ne 1$ the finite geometric sum is $1 + \rho + \cdots + \rho^{n-1} = (1 - \rho^n)/(1 - \rho)$, which gives (14), and rearranging gives (15); for $\rho = 1$ the sum is $n$, which gives (16). The constant $y^* = b/(1 - \rho)$ satisfies $\rho y^* + b = \big(\rho b + b(1 - \rho)\big)/(1 - \rho) = y^*$, so it is an equilibrium solution. The limits follow from (15) and Proposition §12.1 applied to $\rho^n\big(y_0 - b/(1 - \rho)\big)$, and from (16) with $b \ne 0$.
+> With $b_j = b$, (11) is (13); for $\rho \ne 1$ the finite geometric sum is $1 + \rho + \cdots + \rho^{n-1} = (1 - \rho^n)/(1 - \rho)$, which gives (14), and rearranging gives (15); for $\rho = 1$ the sum is $n$, which gives (16). The constant $y^* = b/(1 - \rho)$ satisfies $\rho y^* + b = \big(\rho b + b(1 - \rho)\big)/(1 - \rho) = y^*$, so it is an equilibrium solution. The limits follow from (15) and [[§12★ First-Order Difference Equations#^prop-12-1|Proposition §12.1]] applied to $\rho^n\big(y_0 - b/(1 - \rho)\big)$, and from (16) with $b \ne 0$.
 
 ^pf-12-2
 
@@ -308,18 +308,18 @@ Are these equilibrium solutions asymptotically stable? BDP answers by linearizin
 > v_{n+1} = (2 - \rho)v_n - \rho v_n^2 . \qquad (26)
 > $$
 >
-> Neglecting the quadratic term, $v_{n+1} = (2 - \rho)v_n$ (27), and by (9) $v_n \to 0$ for $|2 - \rho| < 1$, that is $1 < \rho < 3$. What this argument lacks is a theorem saying that the solutions of the nonlinear equation resemble those of the linear one near the equilibrium (for differential equations this is done in BDP's Section 9.3). Lemma §12.5 is that theorem for iterations: $2 - \rho$ and $\rho$ are exactly the values of $g'$ at the two equilibria.
+> Neglecting the quadratic term, $v_{n+1} = (2 - \rho)v_n$ (27), and by (9) $v_n \to 0$ for $|2 - \rho| < 1$, that is $1 < \rho < 3$. What this argument lacks is a theorem saying that the solutions of the nonlinear equation resemble those of the linear one near the equilibrium (for differential equations this is done in BDP's Section 9.3). [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] is that theorem for iterations: $2 - \rho$ and $\rho$ are exactly the values of $g'$ at the two equilibria.
 
 ^rem-12-1
 
 > [!proof]+ Proof
-> Here $g(u) = \rho u(1 - u)$ and $g'(u) = \rho(1 - 2u)$. At $u = 0$, $g'(0) = \rho$, which is less than $1$ in absolute value for $0 < \rho < 1$ and greater than $1$ for $\rho > 1$. At $u^* = (\rho - 1)/\rho$, $g'(u^*) = \rho\big(1 - 2(\rho - 1)/\rho\big) = \rho - 2(\rho - 1) = 2 - \rho$, and $|2 - \rho| < 1$ if and only if $1 < \rho < 3$, while $|2 - \rho| > 1$ for $\rho < 1$ and for $\rho > 3$. Lemma §12.5 gives the conclusions.
+> Here $g(u) = \rho u(1 - u)$ and $g'(u) = \rho(1 - 2u)$. At $u = 0$, $g'(0) = \rho$, which is less than $1$ in absolute value for $0 < \rho < 1$ and greater than $1$ for $\rho > 1$. At $u^* = (\rho - 1)/\rho$, $g'(u^*) = \rho\big(1 - 2(\rho - 1)/\rho\big) = \rho - 2(\rho - 1) = 2 - \rho$, and $|2 - \rho| < 1$ if and only if $1 < \rho < 3$, while $|2 - \rho| > 1$ for $\rho < 1$ and for $\rho > 3$. [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] gives the conclusions.
 
 ^pf-12-6
 
 *Uses:* [[§12★ First-Order Difference Equations#^lem-12-5|§12.5]], [[§12★ First-Order Difference Equations#^prop-12-4|§12.4]]
 
-At $\rho = 1$ the two equilibria coincide at $u = 0$ and $g'(0) = 1$, so Lemma §12.5 does not decide. For $0 < u_0 < 1$ the iterates $u_{n+1} = u_n - u_n^2$ decrease and stay positive, so they converge, and the limit $L$ satisfies $L = L - L^2$, so $L = 0$: the equilibrium attracts every population in $(0, 1)$, which is BDP's statement that it is asymptotically stable. (For $u_0 < 0$, outside the population range, $u_{n+1} = u_n - u_n^2 < u_n$ and the iterates decrease to $-\infty$, so the attraction is one-sided.)
+At $\rho = 1$ the two equilibria coincide at $u = 0$ and $g'(0) = 1$, so [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] does not decide. For $0 < u_0 < 1$ the iterates $u_{n+1} = u_n - u_n^2$ decrease and stay positive, so they converge, and the limit $L$ satisfies $L = L - L^2$, so $L = 0$: the equilibrium attracts every population in $(0, 1)$, which is BDP's statement that it is asymptotically stable. (For $u_0 < 0$, outside the population range, $u_{n+1} = u_n - u_n^2 < u_n$ and the iterates decrease to $-\infty$, so the attraction is one-sided.)
 
 > [!remark] Remark: Method — Stairstep (Cobweb) Diagrams
 > To display the solution of $u_{n+1} = g(u_n)$ graphically:
@@ -380,7 +380,7 @@ For $\rho > 3$ neither equilibrium is stable, and the solutions of (21) show inc
 >
 > real and distinct exactly when $\rho > 3$. For $\rho = 3.2$: $u_{1,2} = \dfrac{4.2 \pm \sqrt{0.84}}{6.4} \cong 0.7995$ and $0.5130$. Starting from $u_0 = 0.3$, the iterates $0.3,\ 0.672,\ 0.705,\ 0.665,\ 0.713,\ \ldots$ settle down, for $n$ greater than about 20, to the oscillation between $0.5130$ and $0.7995$, and the same happens for every initial value between $0$ and $1$. In the cobweb diagram the oscillation is a rectangle traversed repeatedly in the clockwise direction (figure above).
 >
-> **Why period 2 becomes unstable.** By the chain rule the slope of $g \circ g$ at $u_1$ is $g'(u_1)g'(u_2) = \rho^2(1 - 2u_1)(1 - 2u_2)$. With $u_1 + u_2 = (\rho + 1)/\rho$ and $u_1u_2 = (\rho + 1)/\rho^2$ (from the quadratic), this is $\rho^2 - 2\rho(\rho + 1) + 4(\rho + 1) = -\rho^2 + 2\rho + 4$. By Lemma §12.5 applied to $g \circ g$, the period-2 solution is stable when $|-\rho^2 + 2\rho + 4| < 1$, that is, when $\rho^2 - 2\rho - 3 > 0$ and $\rho^2 - 2\rho - 5 < 0$: for
+> **Why period 2 becomes unstable.** By the chain rule the slope of $g \circ g$ at $u_1$ is $g'(u_1)g'(u_2) = \rho^2(1 - 2u_1)(1 - 2u_2)$. With $u_1 + u_2 = (\rho + 1)/\rho$ and $u_1u_2 = (\rho + 1)/\rho^2$ (from the quadratic), this is $\rho^2 - 2\rho(\rho + 1) + 4(\rho + 1) = -\rho^2 + 2\rho + 4$. By [[§12★ First-Order Difference Equations#^lem-12-5|Lemma §12.5]] applied to $g \circ g$, the period-2 solution is stable when $|-\rho^2 + 2\rho + 4| < 1$, that is, when $\rho^2 - 2\rho - 3 > 0$ and $\rho^2 - 2\rho - 5 < 0$: for
 >
 > $$
 > 3 < \rho < 1 + \sqrt6 \cong 3.449 .
@@ -397,4 +397,4 @@ For $\rho > 3$ neither equilibrium is stable, and the solutions of (21) show inc
 ![[m331-12-2.svg]]
 *Equilibria and the period-2 solution of $u_{n+1} = \rho u_n(1 - u_n)$ against $\rho$ (solid: asymptotically stable; dashed: unstable). The equilibria $u = 0$ (blue) and $u = (\rho - 1)/\rho$ (red) exchange stability at $\rho = 1$. At $\rho = 3$ the red equilibrium loses stability and the period-2 solution (green) branches off; it is stable until $\rho = 1 + \sqrt6 \cong 3.449$, where the next period doubling occurs.*
 
-The logistic difference equation was one of the first instances of mathematical chaos to be found and studied in detail, by Robert May in 1974. On the basis of his analysis of it as a model for certain insect populations, May suggested that if the growth rate $\rho$ is too large, effective long-range predictions of these populations are impossible. It is increasingly clear that chaotic solutions are much more common than was suspected at first, also for differential equations, and they may be part of the investigation of a wide range of phenomena. Note the contrast with the logistic *differential* equation (20), whose solutions with $y_0 > 0$ all approach $K$ monotonically ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]]): by Proposition §12.3, Euler's method with a step $h$ so large that $\rho = 1 + hr > 3$ does not reproduce this behaviour at all.
+The logistic difference equation was one of the first instances of mathematical chaos to be found and studied in detail, by Robert May in 1974. On the basis of his analysis of it as a model for certain insect populations, May suggested that if the growth rate $\rho$ is too large, effective long-range predictions of these populations are impossible. It is increasingly clear that chaotic solutions are much more common than was suspected at first, also for differential equations, and they may be part of the investigation of a wide range of phenomena. Note the contrast with the logistic *differential* equation (20), whose solutions with $y_0 > 0$ all approach $K$ monotonically ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]]): by [[§12★ First-Order Difference Equations#^prop-12-3|Proposition §12.3]], Euler's method with a step $h$ so large that $\rho = 1 + hr > 3$ does not reproduce this behaviour at all.

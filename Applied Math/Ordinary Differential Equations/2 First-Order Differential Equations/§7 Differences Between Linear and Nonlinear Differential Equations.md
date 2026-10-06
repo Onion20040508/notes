@@ -95,13 +95,13 @@ Choosing the lower limit of integration to be $t_0$ in both integrals makes the 
 ^prop-7-2
 
 > [!proof]+ Proof
-> Equation (6) defines an integrating factor as in (4), with the antiderivative $\int_{t_0}^t p(s)\,ds$ of $p$; and $\int_{t_0}^t \mu(s) g(s)\,ds$ is an antiderivative of $\mu g$. So (7) is (3) for these choices, and by the proof of Theorem §7.1 it gives all solutions of (1) on $I$. At $t = t_0$ both integrals vanish and $\mu(t_0) = e^0 = 1$, so (7) gives $y(t_0) = c$. The initial condition (2) therefore forces $c = y_0$, which is (8).
+> Equation (6) defines an integrating factor as in (4), with the antiderivative $\int_{t_0}^t p(s)\,ds$ of $p$; and $\int_{t_0}^t \mu(s) g(s)\,ds$ is an antiderivative of $\mu g$. So (7) is (3) for these choices, and by the proof of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] it gives all solutions of (1) on $I$. At $t = t_0$ both integrals vanish and $\mu(t_0) = e^0 = 1$, so (7) gives $y(t_0) = c$. The initial condition (2) therefore forces $c = y_0$, which is (8).
 
 ^pf-7-2
 
 *Uses:* [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|§7.1]]
 
-For a nonlinear equation there is no formula like (8), and Theorem §7.1 must be replaced by a more general theorem. BDP states it here as **Theorem 2.4.2**, the existence and uniqueness theorem for first-order nonlinear equations, and proves it in Section 2.8; it is boxed, with the proof by Picard iteration, as [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]:
+For a nonlinear equation there is no formula like (8), and [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] must be replaced by a more general theorem. BDP states it here as **Theorem 2.4.2**, the existence and uniqueness theorem for first-order nonlinear equations, and proves it in Section 2.8; it is boxed, with the proof by Picard iteration, as [[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]:
 
 $$
 \left.\begin{array}{l} f \text{ and } \partial f/\partial y \text{ continuous on a rectangle} \\ \alpha < t < \beta,\ \ \gamma < y < \delta \text{ containing } (t_0, y_0) \end{array}\right\}
@@ -112,7 +112,7 @@ $$
 > [!remark] Remark: Reading Theorem 2.4.2
 > - **It contains Theorem §7.1.** If the equation is linear, $f(t, y) = -p(t)y + g(t)$ and $\partial f/\partial y = -p(t)$, so continuity of $f$ and $\partial f/\partial y$ is equivalent to continuity of $p$ and $g$. What Theorem 2.4.2 loses is the interval: for a linear equation the solution exists on all of $(\alpha, \beta)$, for a nonlinear one only on some interval $(t_0 - h, t_0 + h)$.
 > - **Its hypotheses are sufficient, not necessary.** The conclusion survives under slightly weaker hypotheses on $f$. In fact the *existence* of a solution (but not its uniqueness) follows from the continuity of $f$ alone. (BDP omits the proof of this existence theorem, known as Peano's theorem. What the proof in §11 actually uses of $\partial f/\partial y$ is the Lipschitz bound of [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]].)
-> - **Why the proof is harder.** The proof of Theorem §7.1 is easy because the solution of every linear equation is given by the expression (3). There is no such expression for $y' = f(t, y)$, so the solution has to be constructed as a limit ([[§11 The Existence and Uniqueness Theorem|§11]]).
+> - **Why the proof is harder.** The proof of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] is easy because the solution of every linear equation is given by the expression (3). There is no such expression for $y' = f(t, y)$, so the solution has to be constructed as a limit ([[§11 The Existence and Uniqueness Theorem|§11]]).
 
 ^rem-7-1
 
@@ -124,7 +124,7 @@ $$
 ^cor-7-3
 
 > [!proof]+ Proof
-> Suppose the graphs of two solutions $\phi_1$ and $\phi_2$ meet at a point $(t_0, y_0)$ of $R$. Then both solve the initial value problem $y' = f(t, y)$, $y(t_0) = y_0$. By the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]) they agree on an interval around $t_0$; in the linear case Theorem §7.1 makes them agree on the whole interval. So two solutions whose graphs meet are not two different solutions near the meeting point.
+> Suppose the graphs of two solutions $\phi_1$ and $\phi_2$ meet at a point $(t_0, y_0)$ of $R$. Then both solve the initial value problem $y' = f(t, y)$, $y(t_0) = y_0$. By the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]) they agree on an interval around $t_0$; in the linear case [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] makes them agree on the whole interval. So two solutions whose graphs meet are not two different solutions near the meeting point.
 
 ^pf-7-3
 
@@ -134,7 +134,7 @@ $$
 > - Stewart quotes this uniqueness theorem without proof and uses it the same way, to show that solution curves do not cross: [[§59 Separable Equations#^rem-59-2|Calc Remark: Solution Curves Do Not Cross]].
 
 > [!example] Example §7.1: Where a Linear Problem Has a Solution
-> Use Theorem §7.1 to find an interval in which the initial value problem
+> Use [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] to find an interval in which the initial value problem
 >
 > $$
 > t y' + 2y = 4t^2, \qquad y(1) = 2 \qquad (10),\ (11)
@@ -177,7 +177,7 @@ $$
 >
 > Repeat the analysis when the initial condition is changed to $y(0) = 1$.
 >
-> Theorem §7.1 does not apply, since the equation is nonlinear. For Theorem 2.4.2,
+> [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] does not apply, since the equation is nonlinear. For Theorem 2.4.2,
 >
 > $$
 > f(x, y) = \frac{3x^2 + 4x + 2}{2(y - 1)}, \qquad \frac{\partial f}{\partial y}(x, y) = -\frac{3x^2 + 4x + 2}{2(y - 1)^2} .
@@ -249,11 +249,11 @@ $$
 ^ex-7-3
 
 ![[m331-7-1.svg]]
-*Some solutions of $y' = y^{1/3}$, $y(0) = 0$ (Example §7.3): $\phi_1$ (blue), $\phi_2$ (green), $\psi = 0$ (black), and the functions $\chi$ that rest on the $t$-axis until a time $t_0$ and then leave it upward or downward (red; here $t_0 = 0.6, 1.2, 1.8$). Every point of the $t$-axis is a branching point, which is possible only because $\partial f/\partial y = \frac13 y^{-2/3}$ blows up there.*
+*Some solutions of $y' = y^{1/3}$, $y(0) = 0$ ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-3|Example §7.3]]): $\phi_1$ (blue), $\phi_2$ (green), $\psi = 0$ (black), and the functions $\chi$ that rest on the $t$-axis until a time $t_0$ and then leave it upward or downward (red; here $t_0 = 0.6, 1.2, 1.8$). Every point of the $t$-axis is a branching point, which is possible only because $\partial f/\partial y = \frac13 y^{-2/3}$ blows up there.*
 
 ## Interval of Existence
 
-By Theorem §7.1, the solution of a linear problem (1), (2) exists throughout any interval about $t_0$ on which $p$ and $g$ are continuous; vertical asymptotes and other discontinuities of the solution can occur only at discontinuities of $p$ or $g$. In Example §7.1 the solutions $y = t^2 + c/t^2$ are asymptotic to the $y$-axis, matching the discontinuity of $p(t) = 2/t$ at $t = 0$, but have no other point where they fail to exist or to be differentiable. The one exception, $c = 0$, gives $y = t^2$, which is continuous even at $t = 0$: a solution may remain continuous at a discontinuity of the coefficients.
+By [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]], the solution of a linear problem (1), (2) exists throughout any interval about $t_0$ on which $p$ and $g$ are continuous; vertical asymptotes and other discontinuities of the solution can occur only at discontinuities of $p$ or $g$. In [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-1|Example §7.1]] the solutions $y = t^2 + c/t^2$ are asymptotic to the $y$-axis, matching the discontinuity of $p(t) = 2/t$ at $t = 0$, but have no other point where they fail to exist or to be differentiable. The one exception, $c = 0$, gives $y = t^2$, which is continuous even at $t = 0$: a solution may remain continuous at a discontinuity of the coefficients.
 
 For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval is much harder to find. The solution $y = \phi(t)$ exists as long as the point $(t, \phi(t))$ remains in a region where the hypotheses hold; this is what determines $h$ (in §11, $h = \min(a, b/M)$, [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]). But $\phi$ is usually not known, so it may be impossible to locate $(t, \phi(t))$ with respect to that region, and the interval may have no simple relation to $f$.
 
@@ -306,16 +306,16 @@ For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval
 ^ex-7-4
 
 ![[m331-7-2.svg]]
-*Solutions $y = y_0/(1 - y_0 t)$ of $y' = y^2$ for $y_0 = \pm\frac12, \pm1, \pm2$ (same colour for $\pm y_0$), with the vertical asymptotes $t = 1/y_0$ (dashed). Each solution exists only up to its own asymptote, $t < 1/y_0$ for $y_0 > 0$ and $t > 1/y_0$ for $y_0 < 0$, although $f(t, y) = y^2$ is as smooth as can be. The $t$-axis is the solution $y = 0$; by Corollary §7.3 no other solution touches it.*
+*Solutions $y = y_0/(1 - y_0 t)$ of $y' = y^2$ for $y_0 = \pm\frac12, \pm1, \pm2$ (same colour for $\pm y_0$), with the vertical asymptotes $t = 1/y_0$ (dashed). Each solution exists only up to its own asymptote, $t < 1/y_0$ for $y_0 > 0$ and $t > 1/y_0$ for $y_0 < 0$, although $f(t, y) = y^2$ is as smooth as can be. The $t$-axis is the solution $y = 0$; by [[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]] no other solution touches it.*
 
 ## General Solution
 
-For a first-order linear equation a solution containing one arbitrary constant contains all solutions ((7), by Theorem §7.1). For nonlinear equations this may fail: a formula with an arbitrary constant may miss some solutions.
+For a first-order linear equation a solution containing one arbitrary constant contains all solutions ((7), by [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]). For nonlinear equations this may fail: a formula with an arbitrary constant may miss some solutions.
 
 > [!definition] Definition §7.1: General Solution
 > A **general solution** of a first-order differential equation is an expression containing one arbitrary constant from which *all* solutions follow by specifying the constant (as for $y' = ay - b$ in [[§2 Solutions of Some Differential Equations#^def-2-2|Definition §2.2]]). BDP uses the term only for linear equations, where (7) is a general solution.
 >
-> For nonlinear equations a one-parameter family of solutions need not be a general solution. For $y' = y^2$ (Example §7.4), the expression (22), $y = -1/(t + c)$, contains an arbitrary constant, but $y = 0$ for all $t$ is also a solution and is not obtained from (22) for any value of $c$. This could be anticipated: rewriting the equation in the form (21) required $y \ne 0$. Such "additional" solutions are common for nonlinear equations.
+> For nonlinear equations a one-parameter family of solutions need not be a general solution. For $y' = y^2$ ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]), the expression (22), $y = -1/(t + c)$, contains an arbitrary constant, but $y = 0$ for all $t$ is also a solution and is not obtained from (22) for any value of $c$. This could be anticipated: rewriting the equation in the form (21) required $y \ne 0$. Such "additional" solutions are common for nonlinear equations.
 >
 > *BDP: 2.4 (text)*
 
@@ -338,7 +338,7 @@ For a linear problem, (8) gives the solution $y = \phi(t)$ explicitly: the value
 
 ^def-7-2
 
-If (26) is simple enough, for instance quadratic in $y$ as in Example §7.2, it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 (in [[§5 Separable Differential Equations|§5]], the second as [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
+If (26) is simple enough, for instance quadratic in $y$ as in [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-2|Example §7.2]], it can be solved for $y$ analytically. More often it cannot, and the value of $y$ for a given $t$ must be computed numerically; plotting several such pairs $(t, y)$ sketches the integral curve. Examples §7.2–§7.4 are nonlinear problems whose explicit solution is easy to find; BDP's Examples 2.2.1 and 2.2.3 (in [[§5 Separable Differential Equations|§5]], the second as [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]]) are better left in implicit form, which is the more typical situation. More often than not it is impossible even to find an implicit expression for the solution of a first-order nonlinear equation.
 
 ## Graphical or Numerical Construction of Integral Curves
 
@@ -348,11 +348,11 @@ Because exact solutions of nonlinear equations are so rarely available, methods 
 
 > [!remark] Remark: Linear Versus Nonlinear
 > The linear equation $y' + p(t)y = g(t)$ has three properties:
-> 1. Assuming the coefficients are continuous, there is a general solution (Definition §7.1), containing an arbitrary constant, that includes all solutions of the equation. The solution of an initial value problem is picked out by choosing the constant.
+> 1. Assuming the coefficients are continuous, there is a general solution ([[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-1|Definition §7.1]]), containing an arbitrary constant, that includes all solutions of the equation. The solution of an initial value problem is picked out by choosing the constant.
 > 2. There is an expression for the solution, (7) or (8). Although it involves two integrations, it gives $y = \phi(t)$ explicitly rather than implicitly.
 > 3. The possible points of discontinuity, or singularities, of the solution can be found without solving the problem, as the points of discontinuity of the coefficients. If the coefficients are continuous for all $t$, the solution exists and is differentiable for all $t$.
 >
-> None of these is true, in general, of nonlinear equations. A nonlinear equation may have a solution involving an arbitrary constant and still have other solutions (Example §7.4); there is no general formula for its solutions, and integrating it usually gives an equation that defines the solutions only implicitly (Definition §7.2); and its singularities can usually be found only by solving it, and they are likely to depend on the initial condition as well as on the equation (Example §7.4).
+> None of these is true, in general, of nonlinear equations. A nonlinear equation may have a solution involving an arbitrary constant and still have other solutions ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]); there is no general formula for its solutions, and integrating it usually gives an equation that defines the solutions only implicitly ([[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-2|Definition §7.2]]); and its singularities can usually be found only by solving it, and they are likely to depend on the initial condition as well as on the equation (Example §7.4).
 
 ^rem-7-2
 
@@ -399,8 +399,8 @@ Sometimes a change of the dependent variable converts a nonlinear equation into 
 
 > [!remark] Remark: Method — Bernoulli Equations
 > 1. Write the equation as $y' + p(t)y = q(t)y^n$ and read off $n$.
-> 2. Substitute $v = y^{1-n}$ to get the linear equation $v' + (1 - n)p(t)v = (1 - n)q(t)$ (Proposition §7.4).
-> 3. Solve it with an integrating factor (Proposition §7.2).
+> 2. Substitute $v = y^{1-n}$ to get the linear equation $v' + (1 - n)p(t)v = (1 - n)q(t)$ ([[§7 Differences Between Linear and Nonlinear Differential Equations#^prop-7-4|Proposition §7.4]]).
+> 3. Solve it with an integrating factor ([[§7 Differences Between Linear and Nonlinear Differential Equations#^prop-7-2|Proposition §7.2]]).
 > 4. Return to $y = v^{1/(1-n)}$, and apply the initial condition.
 > 5. Check whether $y = 0$ is a solution (it is when $n > 0$); the substitution divides by $y^n$ and loses it.
 

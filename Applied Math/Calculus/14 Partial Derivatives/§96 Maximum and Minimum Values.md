@@ -204,8 +204,7 @@ When the critical-point equations cannot be solved exactly, they are solved nume
 >
 > So the origin is a saddle point, and **$(\frac13, \frac13)$ is a local maximum**, with value $\frac19 - \frac{1}{27} - \frac{1}{27} = \frac{1}{27}$.
 >
-> *Source: 233 Midterm 1 Practice Questions, Q32 (= Exam 2 Practice Questions, Q1)*
-> *Source: 233 Practice Final Set 1, Part I Q3*
+> *Source: 233 Midterm 1 Practice Questions, Q32 (= Exam 2 Practice Questions, Q1); 233 Practice Final Set 1, Part I Q3*
 
 ^ex-96-3
 

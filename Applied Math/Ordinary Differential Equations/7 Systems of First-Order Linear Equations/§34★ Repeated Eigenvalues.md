@@ -155,10 +155,10 @@ If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eig
 ^ex-34-1
 
 ![[m331-34-1.svg]]
-*Phase portrait of Example §34.1, computed from $\mathbf{x}(t) = e^{2t}[\mathbf{I} + t(\mathbf{A} - 2\mathbf{I})]\mathbf{x}(0)$ (Example §34.2). Green: the eigenvector line $x_2 = -x_1$, carrying $\pm\mathbf{x}^{(1)}$. Red: $\pm\mathbf{x}^{(2)}$, through $(0, \mp1)$ at $t = 0$. Every trajectory leaves the origin tangent to the eigenvector line and turns to run off nearly parallel to it: an unstable improper node. The grey arrows are the direction field $\mathbf{A}\mathbf{x}$.*
+*Phase portrait of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]], computed from $\mathbf{x}(t) = e^{2t}[\mathbf{I} + t(\mathbf{A} - 2\mathbf{I})]\mathbf{x}(0)$ ([[§34★ Repeated Eigenvalues#^ex-34-2|Example §34.2]]). Green: the eigenvector line $x_2 = -x_1$, carrying $\pm\mathbf{x}^{(1)}$. Red: $\pm\mathbf{x}^{(2)}$, through $(0, \mp1)$ at $t = 0$. Every trajectory leaves the origin tangent to the eigenvector line and turns to run off nearly parallel to it: an unstable improper node. The grey arrows are the direction field $\mathbf{A}\mathbf{x}$.*
 
 > [!definition] Definition §34.1: Improper Node
-> For a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ whose coefficient matrix has a repeated eigenvalue with only one independent eigenvector, the origin is called an **improper node**. If the eigenvalue is negative, the trajectories are like those of Example §34.1 but traversed inward, and the improper node is asymptotically stable; if it is positive, the node is unstable.
+> For a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ whose coefficient matrix has a repeated eigenvalue with only one independent eigenvector, the origin is called an **improper node**. If the eigenvalue is negative, the trajectories are like those of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]] but traversed inward, and the improper node is asymptotically stable; if it is positive, the node is unstable.
 >
 > *BDP: 7.8 (text)*
 
@@ -166,7 +166,7 @@ If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eig
 
 One difference from a single second-order equation shows here. For a repeated root $r_1$ of $ay'' + by' + cy = 0$, a term $ce^{r_1t}$ in the second solution is not needed, since it is a multiple of the first solution. For a system, the term $\boldsymbol{\eta}e^{r_1t}$ in (13) is in general *not* a multiple of $\boldsymbol{\xi}e^{r_1t}$, and it must be kept.
 
-Example §34.1 is entirely typical of a double eigenvalue with a single eigenvector.
+[[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]] is entirely typical of a double eigenvalue with a single eigenvector.
 
 > [!theorem] Theorem §34.2: Double Eigenvalue with One Eigenvector
 > Suppose $r = \rho$ is a double eigenvalue of $\mathbf{A}$ with only one linearly independent eigenvector $\boldsymbol{\xi}$:
@@ -234,12 +234,12 @@ $$
 
 > [!remark] Remark: Method — Double Eigenvalue with One Eigenvector
 > To solve $\mathbf{x}' = \mathbf{A}\mathbf{x}$ when $\rho$ is a double root of $\det(\mathbf{A} - r\mathbf{I}) = 0$:
-> 1. **Find the eigenvectors** for $\rho$ by row reducing $\mathbf{A} - \rho\mathbf{I}$. If there are two independent ones, use $\boldsymbol{\xi}^{(1)}e^{\rho t}$, $\boldsymbol{\xi}^{(2)}e^{\rho t}$ (Proposition §34.1) and stop.
+> 1. **Find the eigenvectors** for $\rho$ by row reducing $\mathbf{A} - \rho\mathbf{I}$. If there are two independent ones, use $\boldsymbol{\xi}^{(1)}e^{\rho t}$, $\boldsymbol{\xi}^{(2)}e^{\rho t}$ ([[§34★ Repeated Eigenvalues#^prop-34-1|Proposition §34.1]]) and stop.
 > 2. **If there is only one, $\boldsymbol{\xi}$,** solve $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$ by row reduction. Any particular solution will do; the free multiple of $\boldsymbol{\xi}$ only adds a multiple of the first solution.
 > 3. **Write** $\mathbf{x}^{(1)} = \boldsymbol{\xi}e^{\rho t}$ and $\mathbf{x}^{(2)} = \boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$; the general solution is $c_1\mathbf{x}^{(1)} + c_2\mathbf{x}^{(2)}$ plus the solutions from the other eigenvalues.
 > 4. **Initial conditions:** at $t = 0$, $\mathbf{x}^{(1)}(0) = \boldsymbol{\xi}$ and $\mathbf{x}^{(2)}(0) = \boldsymbol{\eta}$, so solve $c_1\boldsymbol{\xi} + c_2\boldsymbol{\eta} + \cdots = \mathbf{x}^0$.
 >
-> The steps can also be run in reverse order (BDP, Problem 15): for a $2 \times 2$ matrix, $(\mathbf{A} - \rho\mathbf{I})^2 = \mathbf{0}$, so any $\boldsymbol{\eta}$ that is not an eigenvector works, and then $\boldsymbol{\xi} = (\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta}$ is automatically an eigenvector. In Example §34.1, $(\mathbf{A} - 2\mathbf{I})^2 = \begin{pmatrix} -1 & -1 \\ 1 & 1 \end{pmatrix}^2 = \mathbf{0}$, and $\boldsymbol{\eta} = (0, -1)^T$ gives back $\boldsymbol{\xi} = (1, -1)^T$.
+> The steps can also be run in reverse order (BDP, Problem 15): for a $2 \times 2$ matrix, $(\mathbf{A} - \rho\mathbf{I})^2 = \mathbf{0}$, so any $\boldsymbol{\eta}$ that is not an eigenvector works, and then $\boldsymbol{\xi} = (\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta}$ is automatically an eigenvector. In [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]], $(\mathbf{A} - 2\mathbf{I})^2 = \begin{pmatrix} -1 & -1 \\ 1 & 1 \end{pmatrix}^2 = \mathbf{0}$, and $\boldsymbol{\eta} = (0, -1)^T$ gives back $\boldsymbol{\xi} = (1, -1)^T$.
 
 ^rem-34-1
 
@@ -290,7 +290,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > - In the plane: a real $2 \times 2$ matrix is similar to $\operatorname{diag}(\lambda_1, \lambda_2)$, to $\lambda\mathbf{I}$ or to $\begin{pmatrix} \lambda & 1 \\ 0 & \lambda \end{pmatrix}$ when its eigenvalues are real ([[§35 Eigenvectors and Linear Transformations#^thm-35-3|235 Thm. §35.3]]), and to a rotation–scaling matrix when they are complex ([[§36 Complex Eigenvalues#^thm-36-4|235 Thm. §36.4]]). These normal forms are the phase-portrait cases of BDP 7.5, 7.6 and 7.8.
 
 > [!example] Example §34.3: The Jordan Form of A and exp(Jt)
-> Transform $\mathbf{A} = \begin{pmatrix} 1 & -1 \\ 1 & 3 \end{pmatrix}$ of Example §34.1 into its Jordan form, and use it to find a fundamental matrix of $\mathbf{x}' = \mathbf{A}\mathbf{x}$.
+> Transform $\mathbf{A} = \begin{pmatrix} 1 & -1 \\ 1 & 3 \end{pmatrix}$ of [[§34★ Repeated Eigenvalues#^ex-34-1|Example §34.1]] into its Jordan form, and use it to find a fundamental matrix of $\mathbf{x}' = \mathbf{A}\mathbf{x}$.
 >
 > **The Jordan form.** Put the eigenvector $\boldsymbol{\xi} = (1, -1)^T$ in the first column of $\mathbf{T}$ and the generalized eigenvector $\boldsymbol{\eta} = (0, -1)^T$ ($k = 0$ in (17)) in the second:
 >
@@ -324,7 +324,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > \hat{\mathbf{\Psi}}(t) = \begin{pmatrix} e^{2t} & te^{2t} \\ 0 & e^{2t} \end{pmatrix} . \qquad (34)
 > $$
 >
-> Since $\hat{\mathbf{\Psi}}(0) = \mathbf{I}$, this is $e^{\mathbf{J}t}$ ([[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]]), in agreement with Proposition §34.3 below.
+> Since $\hat{\mathbf{\Psi}}(0) = \mathbf{I}$, this is $e^{\mathbf{J}t}$ ([[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]]), in agreement with [[§34★ Repeated Eigenvalues#^prop-34-3|Proposition §34.3]] below.
 >
 > **Back to $\mathbf{x}$.**
 >
@@ -389,20 +389,20 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{J}t}\mathbf{T}^{-1} .
 > $$
 >
-> For Example §34.3 this gives $\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} e^{2t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} = e^{2t}\begin{pmatrix} 1 - t & -t \\ t & 1 + t \end{pmatrix}$, the $\mathbf{\Phi}(t)$ of Example §34.2. The entries $te^{\lambda t}$ and $\frac12t^2e^{\lambda t}$ of $e^{\mathbf{J}t}$ are where the factors $t$, $t^2$ in the solutions come from.
+> For [[§34★ Repeated Eigenvalues#^ex-34-3|Example §34.3]] this gives $\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} e^{2t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} = e^{2t}\begin{pmatrix} 1 - t & -t \\ t & 1 + t \end{pmatrix}$, the $\mathbf{\Phi}(t)$ of Example §34.2. The entries $te^{\lambda t}$ and $\frac12t^2e^{\lambda t}$ of $e^{\mathbf{J}t}$ are where the factors $t$, $t^2$ in the solutions come from.
 
 ^rem-34-2
 
 > [!remark]- Remark: Eigenvalues of Multiplicity 3, and Larger Systems
 > If $\rho$ has algebraic multiplicity $3$, it may have one, two or three independent eigenvectors (BDP, preamble to Problems 17–18).
-> - **Three eigenvectors:** three solutions $\boldsymbol{\xi}^{(i)}e^{\rho t}$ (Proposition §34.1).
+> - **Three eigenvectors:** three solutions $\boldsymbol{\xi}^{(i)}e^{\rho t}$ ([[§34★ Repeated Eigenvalues#^prop-34-1|Proposition §34.1]]).
 > - **One eigenvector $\boldsymbol{\xi}$:** the solutions are
 >
 >   $$
 >   \boldsymbol{\xi}e^{\rho t}, \qquad \boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}, \qquad \boldsymbol{\xi}\frac{t^2}{2}e^{\rho t} + \boldsymbol{\eta}te^{\rho t} + \boldsymbol{\zeta}e^{\rho t},
 >   $$
 >
->   where $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\zeta} = \boldsymbol{\eta}$: a chain of generalized eigenvectors. (Substituting the third: its derivative is $\rho$ times itself plus $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, and so is $\mathbf{A}$ times it, by the three equations.) The Jordan form is the $3 \times 3$ block of Proposition §34.3(b).
+>   where $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\xi} = \mathbf{0}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$, $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\zeta} = \boldsymbol{\eta}$: a chain of generalized eigenvectors. (Substituting the third: its derivative is $\rho$ times itself plus $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, and so is $\mathbf{A}$ times it, by the three equations.) The Jordan form is the $3 \times 3$ block of [[§34★ Repeated Eigenvalues#^prop-34-3|Proposition §34.3]](b).
 > - **Two eigenvectors $\boldsymbol{\xi}^{(1)}, \boldsymbol{\xi}^{(2)}$:** two solutions $\boldsymbol{\xi}^{(i)}e^{\rho t}$, and a third $\boldsymbol{\xi}te^{\rho t} + \boldsymbol{\eta}e^{\rho t}$, where now $\boldsymbol{\xi}$ must be a suitable linear combination of $\boldsymbol{\xi}^{(1)}$ and $\boldsymbol{\xi}^{(2)}$ for $(\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta} = \boldsymbol{\xi}$ to be solvable. Alternatively choose $\boldsymbol{\eta}$ with $(\mathbf{A} - \rho\mathbf{I})^2\boldsymbol{\eta} = \mathbf{0}$, independent of the eigenvectors, and set $\boldsymbol{\xi} = (\mathbf{A} - \rho\mathbf{I})\boldsymbol{\eta}$. The Jordan form has one $2 \times 2$ block and one $1 \times 1$ block for $\rho$.
 >
 > For large $n$ there may be eigenvalues of high algebraic multiplicity $m$ and much lower geometric multiplicity $q$, giving $m - q$ generalized eigenvectors, and repeated complex eigenvalues when $n \ge 4$. The arithmetic is prohibitive by hand even for $n = 3$ or $4$, so software is used routinely. And when the entries of $\mathbf{A}$ come from measurements, it may not even be clear whether two eigenvalues are equal or merely close together.

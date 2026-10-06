@@ -246,7 +246,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 > [!remark] Remark: When to Use Cramer's Rule and the Adjugate
 > - **Conditions.** Cramer's rule applies only to a *square* system with an *invertible* coefficient matrix ($\det A \ne 0$). When $\det A = 0$ it says nothing: the system may be inconsistent or have infinitely many solutions, and row reduction must decide (Example §22.1(b)).
 > - **Advantages.** Both formulas are explicit. They show how the solution or the inverse depends on the entries of $A$ and $\mathbf{b}$, which makes them the tool for theoretical questions: sensitivity of $\mathbf{x}$ to errors in $\mathbf{b}$ or $A$; solutions depending on a parameter (Example §22.1(b)); integrality (if $A$ has integer entries and $\det A = \pm 1$, then $A^{-1} = \pm\operatorname{adj} A$ has integer entries, Lay's Exercise 18). For a $3 \times 3$ matrix with *complex* entries, Cramer's rule is sometimes preferred because row reduction of $[A \ \mathbf{b}]$ with complex arithmetic is messy.
-> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§12 The Inverse of a Matrix#^rem-12-3|Remark §12.3]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
+> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§12 The Inverse of a Matrix#^rem-12-3|§12, Remark: Method — Finding the Inverse of a Matrix]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
 
 ^rem-22-2
 
@@ -391,7 +391,7 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 *Lay outlines the argument (below); a proof needs the theory of area and volume. See [[§15 Multivariable Integration#^prop-15-19|452 Prop. §15.19]] and [[§34 Determinants#^ladr-9-61|LADR 9.61]].*
 
 > [!remark] Remark: Why It Works
-> A planar region $R$ with finite area can be approximated by a grid of small squares lying inside $R$; making the squares small enough, the total area of the squares is as close as desired to the area of $R$. Under $T$, each small square goes to a small parallelogram whose area is $|\det A|$ times the area of the square (Theorem §22.5). So if $R'$ is the union of the squares inside $R$, the area of $T(R')$ is $|\det A|$ times the area of $R'$, and the area of $T(R')$ is close to the area of $T(R)$. A limiting process gives $\{\text{area of } T(R)\} = |\det A| \cdot \{\text{area of } R\}$. The lecture draws the same picture for an arbitrary blob $D$, and composes: applying $S$ and then $T$ multiplies volume by $|\det S|$ and then by $|\det T|$ ([[§21 Properties of Determinants#^rem-21-4|Remark §21.4]]).
+> A planar region $R$ with finite area can be approximated by a grid of small squares lying inside $R$; making the squares small enough, the total area of the squares is as close as desired to the area of $R$. Under $T$, each small square goes to a small parallelogram whose area is $|\det A|$ times the area of the square (Theorem §22.5). So if $R'$ is the union of the squares inside $R$, the area of $T(R')$ is $|\det A|$ times the area of $R'$, and the area of $T(R')$ is close to the area of $T(R)$. A limiting process gives $\{\text{area of } T(R)\} = |\det A| \cdot \{\text{area of } R\}$. The lecture draws the same picture for an arbitrary blob $D$, and composes: applying $S$ and then $T$ multiplies volume by $|\det S|$ and then by $|\det T|$ ([[§21 Properties of Determinants#^rem-21-4|§21, Remark: Why It Works]]).
 
 ^rem-22-3
 
@@ -409,7 +409,7 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 >
 > **(c) The volume of an ellipsoid.** In the same way $A = \operatorname{diag}(a, b, c)$ maps the unit ball onto the solid ellipsoid $\frac{x_1^2}{a^2} + \frac{x_2^2}{b^2} + \frac{x_3^2}{c^2} \le 1$, so its volume is $abc \cdot \frac43\pi = \frac43\pi abc$.
 >
-> *Lay: Example 3.3.5; Practice Problem 3.3; Exercise 31 (3.3)*
+> *Lay: Example 3.3.5; 3.3, Practice Problem and Exercise 31*
 
 ^ex-22-5
 

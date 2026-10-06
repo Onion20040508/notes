@@ -360,7 +360,6 @@ For instance, $f(x, y, z) = \dfrac{1}{x^2 + y^2 + z^2 - 1}$ is a rational functi
 >
 > The rational function $\frac{1}{2x + y}$ is continuous at $(1, 2)$, where $2x + y = 4 \ne 0$. So the limit is $\frac14$.
 >
-> *Source: 233 Midterm 1 Practice Questions, Q23*
-> *Source: 233 Exam 1 Review, Q20*
+> *Source: 233 Midterm 1 Practice Questions, Q23; 233 Exam 1 Review, Q20*
 
 ^ex-91-5

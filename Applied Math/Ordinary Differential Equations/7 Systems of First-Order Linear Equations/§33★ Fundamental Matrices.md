@@ -100,7 +100,7 @@ Placing $n$ independent solutions of $\mathbf{x}' = \mathbf{P}(t)\mathbf{x}$ sid
 > \mathbf{\Psi}(t_0)\mathbf{c} = \mathbf{x}^0 . \qquad (8)
 > $$
 >
-> Since $\mathbf{\Psi}(t_0)$ is nonsingular (Definition §33.1), (8) has the unique solution $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$. Substituting it into (6) gives (10). By the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), this is the only solution of the initial value problem.
+> Since $\mathbf{\Psi}(t_0)$ is nonsingular ([[§33★ Fundamental Matrices#^def-33-1|Definition §33.1]]), (8) has the unique solution $\mathbf{c} = \mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$. Substituting it into (6) gives (10). By the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2), this is the only solution of the initial value problem.
 >
 > **(c)** A matrix function is differentiated entry by entry ([[§28 Matrices#^def-28-5|Definition §28.5]]), so column $j$ of $\mathbf{\Psi}'$ is $\mathbf{x}^{(j)\prime}$. Column $j$ of $\mathbf{P}(t)\mathbf{\Psi}$ is $\mathbf{P}(t)\mathbf{x}^{(j)}$. These agree for every $j$ because each $\mathbf{x}^{(j)}$ solves (1).
 
@@ -147,7 +147,7 @@ In practice one solves (8) by row reduction and substitutes $\mathbf{c}$ into (6
 ^thm-33-2
 
 > [!proof]+ Proof
-> **(a)** Apply Theorem §33.1(b) with $\mathbf{\Psi} = \mathbf{\Phi}$: since $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}^{-1} = \mathbf{I}$, (10) becomes (14).
+> **(a)** Apply [[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](b) with $\mathbf{\Psi} = \mathbf{\Phi}$: since $\mathbf{\Phi}^{-1}(t_0) = \mathbf{I}^{-1} = \mathbf{I}$, (10) becomes (14).
 >
 > **(b)** By Theorem §33.1(b) and part (a), $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)\mathbf{x}^0$ and $\mathbf{\Phi}(t)\mathbf{x}^0$ both solve the same initial value problem, so they are equal for every $t$ (uniqueness, [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]]). Taking $\mathbf{x}^0 = \mathbf{e}^{(j)}$ shows that column $j$ of $\mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(t_0)$ equals column $j$ of $\mathbf{\Phi}(t)$, for each $j$.
 
@@ -158,7 +158,7 @@ In practice one solves (8) by row reduction and substitutes $\mathbf{c}$ into (6
 $\mathbf{\Phi}(t)$ is often more complicated than a convenient $\mathbf{\Psi}(t)$, but it pays off when the same system is to be solved for many initial conditions, as for a physical system started from many initial states: each solution is then one matrix multiplication (14). $\mathbf{\Phi}(t)$ is the transformation that carries the initial state $\mathbf{x}^0$ to the state $\mathbf{x}(t)$ at time $t$.
 
 > [!example] Example §33.2: The Fundamental Matrix with Φ(0) = I
-> For the system $\mathbf{x}' = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}\mathbf{x}$ of Example §33.1, find the fundamental matrix $\mathbf{\Phi}$ such that $\mathbf{\Phi}(0) = \mathbf{I}$.
+> For the system $\mathbf{x}' = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}\mathbf{x}$ of [[§33★ Fundamental Matrices#^ex-33-1|Example §33.1]], find the fundamental matrix $\mathbf{\Phi}$ such that $\mathbf{\Phi}(0) = \mathbf{I}$.
 >
 > The columns of $\mathbf{\Phi}$ are the solutions with
 >
@@ -176,7 +176,7 @@ $\mathbf{\Phi}(t)$ is often more complicated than a convenient $\mathbf{\Psi}(t)
 > \mathbf{\Phi}(t) = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix} . \qquad (16)
 > $$
 >
-> **Check by Theorem §33.2(b).** With $\mathbf{\Psi}$ from Example §33.1, $\mathbf{\Psi}(0) = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}$ has determinant $-4$, so $\mathbf{\Psi}^{-1}(0) = \frac{1}{-4}\begin{pmatrix} -2 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix}$ and
+> **Check by [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](b).** With $\mathbf{\Psi}$ from Example §33.1, $\mathbf{\Psi}(0) = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}$ has determinant $-4$, so $\mathbf{\Psi}^{-1}(0) = \frac{1}{-4}\begin{pmatrix} -2 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix}$ and
 >
 > $$
 > \mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(0) = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}\begin{pmatrix} \frac12 & \frac14 \\ \frac12 & -\frac14 \end{pmatrix} = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix} .
@@ -203,7 +203,7 @@ The scalar initial value problem $x' = ax$, $x(0) = x_0$ has the solution $x = x
 $$
 \mathbf{x}' = \mathbf{A}\mathbf{x}, \qquad \mathbf{x}(0) = \mathbf{x}^0 , \qquad (19)
 $$
-with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0$ with $\mathbf{\Phi}(0) = \mathbf{I}$ (Theorem §33.2). This suggests that $\mathbf{\Phi}(t)$ might have an exponential character. The scalar exponential is the power series $\exp(at) = 1 + \sum_{k=1}^\infty a^kt^k/k!$, which converges for all $t$ ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]); replace $a$ by $\mathbf{A}$ and $1$ by $\mathbf{I}$.
+with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi}(t)\mathbf{x}^0$ with $\mathbf{\Phi}(0) = \mathbf{I}$ ([[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]]). This suggests that $\mathbf{\Phi}(t)$ might have an exponential character. The scalar exponential is the power series $\exp(at) = 1 + \sum_{k=1}^\infty a^kt^k/k!$, which converges for all $t$ ([[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]]); replace $a$ by $\mathbf{A}$ and $1$ by $\mathbf{I}$.
 
 > [!definition] Definition §33.3: The Matrix Exponential
 > Let $\mathbf{A}$ be a constant $n \times n$ matrix. The **matrix exponential** $\exp(\mathbf{A}t) = e^{\mathbf{A}t}$ is the sum of the series
@@ -296,7 +296,7 @@ with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi
 > \mathbf{Z}' = \mathbf{A}\mathbf{Z}, \qquad \mathbf{Z}(0) = \mathbf{I} \qquad (27)
 > $$
 >
-> ($\mathbf{\Phi}$ by Theorem §33.1(c) and Definition §33.2, $e^{\mathbf{A}t}$ by Theorem §33.3). Read column by column, (27) says that column $j$ of $\mathbf{Z}$ solves $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = \mathbf{e}^{(j)}$. The entries of $\mathbf{A}$ are constants, continuous for all $t$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) this problem has only one solution: column $j$ of $\mathbf{\Phi}(t)$ equals column $j$ of $e^{\mathbf{A}t}$ for each $j$. (BDP calls this "the uniqueness part of Theorem 7.1.2 (extended to matrix differential equations)"; the extension is just this column-by-column reading.) Then (28) is Theorem §33.2(a).
+> ($\mathbf{\Phi}$ by [[§33★ Fundamental Matrices#^thm-33-1|Theorem §33.1]](c) and [[§33★ Fundamental Matrices#^def-33-2|Definition §33.2]], $e^{\mathbf{A}t}$ by [[§33★ Fundamental Matrices#^thm-33-3|Theorem §33.3]]). Read column by column, (27) says that column $j$ of $\mathbf{Z}$ solves $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(0) = \mathbf{e}^{(j)}$. The entries of $\mathbf{A}$ are constants, continuous for all $t$, so by the uniqueness part of [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|Theorem §27.3]] (BDP Theorem 7.1.2) this problem has only one solution: column $j$ of $\mathbf{\Phi}(t)$ equals column $j$ of $e^{\mathbf{A}t}$ for each $j$. (BDP calls this "the uniqueness part of Theorem 7.1.2 (extended to matrix differential equations)"; the extension is just this column-by-column reading.) Then (28) is [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](a).
 
 ^pf-33-4
 
@@ -343,7 +343,7 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 *Uses:* [[§33★ Fundamental Matrices#^thm-33-3|§33.3]], [[§33★ Fundamental Matrices#^thm-33-4|§33.4]], [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]] (uniqueness)
 
 > [!remark] Remark: Starting at t₀ ≠ 0; Sums in the Exponent
-> - **Initial time $t_0$.** For constant $\mathbf{A}$, the fundamental matrix with $\mathbf{\Phi}(t_0) = \mathbf{I}$ is $e^{\mathbf{A}(t - t_0)}$: by Theorem §33.2(b) with $\mathbf{\Psi} = e^{\mathbf{A}t}$ and Proposition §33.6(c), it is $e^{\mathbf{A}t}(e^{\mathbf{A}t_0})^{-1} = e^{\mathbf{A}(t - t_0)}$. So $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{x}^0$ has the solution $\mathbf{x} = e^{\mathbf{A}(t - t_0)}\mathbf{x}^0$.
+> - **Initial time $t_0$.** For constant $\mathbf{A}$, the fundamental matrix with $\mathbf{\Phi}(t_0) = \mathbf{I}$ is $e^{\mathbf{A}(t - t_0)}$: by [[§33★ Fundamental Matrices#^thm-33-2|Theorem §33.2]](b) with $\mathbf{\Psi} = e^{\mathbf{A}t}$ and [[§33★ Fundamental Matrices#^prop-33-6|Proposition §33.6]](c), it is $e^{\mathbf{A}t}(e^{\mathbf{A}t_0})^{-1} = e^{\mathbf{A}(t - t_0)}$. So $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{x}(t_0) = \mathbf{x}^0$ has the solution $\mathbf{x} = e^{\mathbf{A}(t - t_0)}\mathbf{x}^0$.
 > - **What the law does not say.** Proposition §33.6 multiplies exponentials of the *same* matrix. For two matrices $\mathbf{B}$, $\mathbf{C}$ that do not commute, $e^{\mathbf{B}}e^{\mathbf{C}}$ (the series (23) at $t = 1$) is in general not $e^{\mathbf{B} + \mathbf{C}}$. For $\mathbf{B} = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $\mathbf{C} = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$, $\mathbf{B}^2 = \mathbf{C}^2 = \mathbf{0}$, so $e^{\mathbf{B}}e^{\mathbf{C}} = (\mathbf{I} + \mathbf{B})(\mathbf{I} + \mathbf{C}) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}$; but $(\mathbf{B} + \mathbf{C})^2 = \mathbf{I}$, so $e^{\mathbf{B} + \mathbf{C}} = \cosh 1\,\mathbf{I} + \sinh 1\,(\mathbf{B} + \mathbf{C})$, whose diagonal entries are $\cosh 1 \approx 1.543$.
 
 ^rem-33-2
@@ -450,7 +450,7 @@ Now return to $\mathbf{x}' = \mathbf{A}\mathbf{x}$. Sections 7.5 and 7.6 started
 > [!proof]+ Proof
 > **(a)** $\mathbf{T}$ is constant, so $\mathbf{x}' = \mathbf{T}\mathbf{y}'$, and (37) becomes $\mathbf{T}\mathbf{y}' = \mathbf{A}\mathbf{T}\mathbf{y}$ (39). Multiplying by $\mathbf{T}^{-1}$ gives $\mathbf{y}' = (\mathbf{T}^{-1}\mathbf{A}\mathbf{T})\mathbf{y}$ (40), which is (41) by Theorem §33.7.
 >
-> **(b)** By Proposition §33.5, $e^{\mathbf{D}t}$ is the diagonal matrix with entries $e^{r_kt}$. By Theorem §33.3, $\mathbf{Q}' = \mathbf{D}\mathbf{Q}$, so each column of $\mathbf{Q}$ solves (41), and $\det\mathbf{Q}(t) = e^{(r_1 + \cdots + r_n)t} \ne 0$, so the columns are linearly independent at every $t$.
+> **(b)** By [[§33★ Fundamental Matrices#^prop-33-5|Proposition §33.5]], $e^{\mathbf{D}t}$ is the diagonal matrix with entries $e^{r_kt}$. By [[§33★ Fundamental Matrices#^thm-33-3|Theorem §33.3]], $\mathbf{Q}' = \mathbf{D}\mathbf{Q}$, so each column of $\mathbf{Q}$ solves (41), and $\det\mathbf{Q}(t) = e^{(r_1 + \cdots + r_n)t} \ne 0$, so the columns are linearly independent at every $t$.
 >
 > **(c)** $\mathbf{\Psi}' = \mathbf{T}\mathbf{Q}' = \mathbf{T}\mathbf{D}\mathbf{Q} = \mathbf{A}\mathbf{T}\mathbf{Q} = \mathbf{A}\mathbf{\Psi}$, using $\mathbf{T}\mathbf{D} = \mathbf{A}\mathbf{T}$ (30). So the columns of $\mathbf{\Psi}$ solve (37), and $\det\mathbf{\Psi}(t) = \det\mathbf{T}\,\det\mathbf{Q}(t) \ne 0$. Column $k$ of $\mathbf{T}\mathbf{Q}$ is $\mathbf{T}(e^{r_kt}\mathbf{e}^{(k)}) = e^{r_kt}\boldsymbol{\xi}^{(k)}$, which gives (44).
 >
@@ -468,7 +468,7 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > [!example] Example §33.3: Diagonalizing A and Recovering Ψ and Φ
 > Let $\mathbf{A} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}$ (33). Find the similarity transformation matrix $\mathbf{T}$, show that $\mathbf{A}$ can be diagonalized, and use the diagonal system to obtain a fundamental matrix for $\mathbf{x}' = \mathbf{A}\mathbf{x}$.
 >
-> **Diagonalizing.** The eigenvalues and eigenvectors are $r_1 = 3$, $\boldsymbol{\xi}^{(1)} = (1, 2)^T$ and $r_2 = -1$, $\boldsymbol{\xi}^{(2)} = (1, -2)^T$ (Example §33.1). So
+> **Diagonalizing.** The eigenvalues and eigenvectors are $r_1 = 3$, $\boldsymbol{\xi}^{(1)} = (1, 2)^T$ and $r_2 = -1$, $\boldsymbol{\xi}^{(2)} = (1, -2)^T$ ([[§33★ Fundamental Matrices#^ex-33-1|Example §33.1]]). So
 >
 > $$
 > \mathbf{T} = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}, \qquad \det\mathbf{T} = -4, \qquad \mathbf{T}^{-1} = \frac{1}{-4}\begin{pmatrix} -2 & -1 \\ -2 & 1 \end{pmatrix} = \begin{pmatrix} \frac12 & \frac14 \\[2pt] \frac12 & -\frac14 \end{pmatrix} . \qquad (35)
@@ -486,7 +486,7 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > \mathbf{D}^2 = \begin{pmatrix} 9 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \mathbf{D}^3 = \begin{pmatrix} 27 & 0 \\ 0 & -1 \end{pmatrix}, \qquad \ldots, \qquad \mathbf{D}^k = \begin{pmatrix} 3^k & 0 \\ 0 & (-1)^k \end{pmatrix},
 > $$
 >
-> so by the series (23) (Proposition §33.5), $e^{\mathbf{D}t} = \begin{pmatrix} e^{3t} & 0 \\ 0 & e^{-t} \end{pmatrix}$ (48).
+> so by the series (23) ([[§33★ Fundamental Matrices#^prop-33-5|Proposition §33.5]]), $e^{\mathbf{D}t} = \begin{pmatrix} e^{3t} & 0 \\ 0 & e^{-t} \end{pmatrix}$ (48).
 >
 > **Back to $\mathbf{x}$.**
 >
@@ -494,13 +494,13 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > \mathbf{\Psi}(t) = \mathbf{T}e^{\mathbf{D}t} = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}\begin{pmatrix} e^{3t} & 0 \\ 0 & e^{-t} \end{pmatrix} = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}, \qquad (49)
 > $$
 >
-> the fundamental matrix of Example §33.1. Going one step further (Theorem §33.8(d)),
+> the fundamental matrix of Example §33.1. Going one step further ([[§33★ Fundamental Matrices#^thm-33-8|Theorem §33.8]](d)),
 >
 > $$
 > e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1} = \begin{pmatrix} e^{3t} & e^{-t} \\ 2e^{3t} & -2e^{-t} \end{pmatrix}\begin{pmatrix} \frac12 & \frac14 \\[2pt] \frac12 & -\frac14 \end{pmatrix} = \begin{pmatrix} \frac12 e^{3t} + \frac12 e^{-t} & \frac14 e^{3t} - \frac14 e^{-t} \\[4pt] e^{3t} - e^{-t} & \frac12 e^{3t} + \frac12 e^{-t} \end{pmatrix},
 > $$
 >
-> which is the matrix $\mathbf{\Phi}(t)$ of Example §33.2, as Theorem §33.4 predicts.
+> which is the matrix $\mathbf{\Phi}(t)$ of [[§33★ Fundamental Matrices#^ex-33-2|Example §33.2]], as [[§33★ Fundamental Matrices#^thm-33-4|Theorem §33.4]] predicts.
 >
 > *BDP: Examples 7.7.3 and 7.7.4*
 

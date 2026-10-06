@@ -105,7 +105,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 > c_0 \cdot 1 + c_1t + c_2t^2 + \cdots + c_nt^n = \mathbf{0}(t) \qquad (2)
 > $$
 >
-> as functions, the polynomial on the left has the same values as the zero polynomial, so every real number is a zero of it. A polynomial of degree at most $n$ with more than $n$ zeros is the zero polynomial (a fundamental theorem of algebra), so $c_0 = \cdots = c_n = 0$. Thus $S$ is linearly independent, hence a basis. The lecture calls it the **monomial basis**.
+> as functions, the polynomial on the left has the same values as the zero polynomial, so every real number is a zero of it. A polynomial of degree at most $n$ with more than $n$ zeros is the zero polynomial (a basic fact of algebra, [[§13 Polynomials#^ladr-4-8|LADR 4.8]]), so $c_0 = \cdots = c_n = 0$. Thus $S$ is linearly independent, hence a basis. The lecture calls it the **monomial basis**.
 >
 > **(d) The standard basis of $M_{2 \times 2}$** consists of
 >
@@ -184,7 +184,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 
 ## Bases for Nul A, Col A and Row A
 
-**Nul A.** The method of [[§24 Null Spaces, Column Spaces, and Linear Transformations#^rem-24-1|Remark §24.1]] produces a linearly independent spanning set when $\operatorname{Nul} A \ne \{\mathbf{0}\}$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^prop-24-2|Proposition §24.2]]), that is, a *basis* for $\operatorname{Nul} A$, with one vector for each free variable.
+**Nul A.** The method of [[§24 Null Spaces, Column Spaces, and Linear Transformations#^rem-24-1|§24, Remark: Method — A Spanning Set for Nul A]] produces a linearly independent spanning set when $\operatorname{Nul} A \ne \{\mathbf{0}\}$ ([[§24 Null Spaces, Column Spaces, and Linear Transformations#^prop-24-2|Proposition §24.2]]), that is, a *basis* for $\operatorname{Nul} A$, with one vector for each free variable.
 
 **Col A.** The key observation: if $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ is row reduced to $B = [\mathbf{b}_1 \ \cdots \ \mathbf{b}_n]$, the columns of $B$ are often totally different from those of $A$, but the equations $A\mathbf{x} = \mathbf{0}$ and $B\mathbf{x} = \mathbf{0}$ have exactly the same solutions. So
 
@@ -296,7 +296,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 >
 > The only potentially bad row is the last one, and for $\mathbf{w} \in W$ its last entry $w_1 + w_2 + w_3$ is $0$. So $a\mathbf{v}_1 + b\mathbf{v}_2 = \mathbf{w}$ is solvable for every $\mathbf{w}$ in $W$.
 >
-> So $\{\mathbf{v}_1, \mathbf{v}_2\}$ is a basis of $W$. (Equivalently, $W = \operatorname{Nul}\,[1 \ 1 \ 1]$, and the method of Remark §25.2 with free variables $y$, $z$ gives the basis $\{(-1, 1, 0), (-1, 0, 1)\}$.)
+> So $\{\mathbf{v}_1, \mathbf{v}_2\}$ is a basis of $W$. (Equivalently, $W = \operatorname{Nul}\,[1 \ 1 \ 1]$, and the method of [[§25 Linearly Independent Sets; Bases#^rem-25-2|Remark: Method — Bases for Nul A, Col A and Row A]] with free variables $y$, $z$ gives the basis $\{(-1, 1, 0), (-1, 0, 1)\}$.)
 >
 > *Lay: Example 4.3.10*
 > *Source: 235 lecture L14*

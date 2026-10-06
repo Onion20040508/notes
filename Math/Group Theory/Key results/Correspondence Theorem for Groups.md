@@ -18,7 +18,7 @@ tags: [group-theory, hub]
 - [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2: The Correspondence for S_4 and V]]
 
 ## Connections
-- **How.** Push subgroups down with $\pi$ and pull them back with $\pi^{-1}$ ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]); the hypothesis $N \subseteq A$ is what makes $\pi^{-1}(\pi(A)) = A$, and it is used exactly once, for “normal downstairs ⇒ normal upstairs”.
-- **Names.** Worksheet 8 calls it the “third/fourth isomorphism theorem”; many texts call it the correspondence or lattice theorem ([[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-3|Remark]]). Its part (3) along the correspondence ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]]) contains the [[Third Isomorphism Theorem for Groups]].
-- **Example.** $S_4/V \cong S_3$ has six subgroups, so exactly six subgroups of $S_4$ contain $V$ ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45.2]]).
-- **Use.** To find the subgroups of a quotient, find the subgroups containing $N$ ([[Group Theory Toolkit]]).
+- **How.** Push subgroups down with π and pull them back with π⁻¹ ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]); the hypothesis N ⊆ A is what makes π⁻¹(π(A)) = A, and it is used exactly once, for “normal downstairs ⇒ normal upstairs”.
+- **Names.** Worksheet 8 calls it the “third/fourth isomorphism theorem”; many texts call it the correspondence or lattice theorem ([[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-3|Remark]]). Part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]] (§42.4) contains the [[Third Isomorphism Theorem for Groups]].
+- **Example.** S₄/V ≅ S₃ has six subgroups, so exactly six subgroups of S₄ contain V ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Ex. §45.2]]).
+- **Use.** To find the subgroups of a quotient, find the subgroups containing N ([[Group Theory Toolkit]]).

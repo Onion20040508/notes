@@ -68,7 +68,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Sharper generating sets: [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|Generators of Sₙ]] (PS 1.5(3)); the parity of the number of factors: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Parity of a Permutation]].
-> - Used in Quantum Mechanics: with Proposition §12.1, in the proof that a permutation can act on a physical state of identical particles only as $+1$ or as its sign — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-5|QM Theorem §C12.1.5]].
+> - Used in Quantum Mechanics: with [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Proposition §12.1]], in the proof that a permutation can act on a physical state of identical particles only as $+1$ or as its sign — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-5|QM Theorem §C12.1.5]].
 
 > [!remark] Remark: Cycles Need Not Be Disjoint
 > Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions — e.g. $(1\,2)(2\,3) = (1\,2\,3)$ — and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]] (Parity of a Permutation).

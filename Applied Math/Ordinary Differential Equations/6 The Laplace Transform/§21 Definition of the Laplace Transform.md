@@ -67,7 +67,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 > \int_\alpha^\beta f(t)\,dt = \int_{t_0}^{t_1} f(t)\,dt + \cdots + \int_{t_{n-1}}^{t_n} f(t)\,dt , \qquad (2)
 > $$
 >
-> and it does not depend on the values of $f$ at the partition points, or on whether $f$ is defined there at all. So if $f$ is piecewise continuous on $t \ge a$, then $\int_a^A f(t)\,dt$ exists for every $A > a$; whether $\int_a^\infty f(t)\,dt$ converges is a separate question (Example §21.1).
+> and it does not depend on the values of $f$ at the partition points, or on whether $f$ is defined there at all. So if $f$ is piecewise continuous on $t \ge a$, then $\int_a^A f(t)\,dt$ exists for every $A > a$; whether $\int_a^\infty f(t)\,dt$ converges is a separate question ([[§21 Definition of the Laplace Transform#^ex-21-1|Example §21.1]]).
 >
 > *BDP: 6.1 (text)*
 
@@ -158,7 +158,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 > \int_0^\infty e^{-st}f(t)\,dt = \int_0^M e^{-st}f(t)\,dt + \int_M^\infty e^{-st}f(t)\,dt . \qquad (5)
 > $$
 >
-> **First integral.** $e^{-st}$ is continuous and $f$ is piecewise continuous on $[0, M]$ by hypothesis 1, so $e^{-st}f(t)$ is piecewise continuous there and the integral exists (Definition §21.2).
+> **First integral.** $e^{-st}$ is continuous and $f$ is piecewise continuous on $[0, M]$ by hypothesis 1, so $e^{-st}f(t)$ is piecewise continuous there and the integral exists ([[§21 Definition of the Laplace Transform#^def-21-2|Definition §21.2]]).
 >
 > **Second integral.** $e^{-st}f(t)$ is piecewise continuous for $t \ge M$, and by hypothesis 2,
 >
@@ -166,7 +166,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 > |e^{-st}f(t)| \le Ke^{-st}e^{at} = Ke^{(a - s)t}, \qquad t \ge M .
 > $$
 >
-> By Example §21.1(b) with $c = a - s < 0$, $\int_M^\infty Ke^{(a - s)t}\,dt = Ke^{(a-s)M}/(s - a)$ converges. By the comparison test (Theorem §21.1, with $g(t) = Ke^{(a - s)t}$), $\int_M^\infty e^{-st}f(t)\,dt$ converges.
+> By [[§21 Definition of the Laplace Transform#^ex-21-1|Example §21.1]](b) with $c = a - s < 0$, $\int_M^\infty Ke^{(a - s)t}\,dt = Ke^{(a-s)M}/(s - a)$ converges. By the comparison test ([[§21 Definition of the Laplace Transform#^thm-21-1|Theorem §21.1]], with $g(t) = Ke^{(a - s)t}$), $\int_M^\infty e^{-st}f(t)\,dt$ converges.
 >
 > Since $\int_0^A = \int_0^M + \int_M^A$ for $A > M$, the limit of $\int_0^A e^{-st}f(t)\,dt$ as $A \to \infty$ exists, so $F(s)$ exists.
 
@@ -177,10 +177,10 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 > [!remark]- Connections
 > - For complex $s$ the same comparison, with $\operatorname{Re}s$ in place of $s$, gives absolute convergence for $\operatorname{Re}s > a$; this is where the Bromwich inversion formula of [[§95★ Inverse Laplace Transforms|342 §95★]] starts.
 
-Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise continuous and of exponential order**. Except in [[§25 Impulse Functions|§25]] (BDP 6.5), the chapter deals almost exclusively with such functions.
+Functions satisfying the hypotheses of [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2]] are called **piecewise continuous and of exponential order**. Except in [[§25 Impulse Functions|§25]] (BDP 6.5), the chapter deals almost exclusively with such functions.
 
 > [!example] Example §21.2: The Transforms of 1 and of an Exponential
-> **(a)** For $f(t) = 1$, $t \ge 0$, as in Example §21.1(b):
+> **(a)** For $f(t) = 1$, $t \ge 0$, as in [[§21 Definition of the Laplace Transform#^ex-21-1|Example §21.1]](b):
 >
 > $$
 > \mathcal{L}\{1\} = \int_0^\infty e^{-st}\,dt = -\lim_{A \to \infty} \frac{e^{-st}}{s}\bigg|_0^A = \frac1s, \qquad s > 0 .
@@ -271,7 +271,7 @@ Functions satisfying the hypotheses of Theorem §21.2 are called **piecewise con
 >
 > **(b)** Find the Laplace transform of $f(t) = 5e^{-2t} - 3\sin(4t)$, $t \ge 0$.
 >
-> By linearity (Theorem §21.3) and Example §21.2(b) with $a = -2$ and part (a) with $a = 4$,
+> By linearity ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]) and [[§21 Definition of the Laplace Transform#^ex-21-2|Example §21.2]](b) with $a = -2$ and part (a) with $a = 4$,
 >
 > $$
 > \mathcal{L}\{f(t)\} = 5\mathcal{L}\{e^{-2t}\} - 3\mathcal{L}\{\sin(4t)\} = \frac{5}{s + 2} - \frac{12}{s^2 + 16}, \qquad s > 0 ,

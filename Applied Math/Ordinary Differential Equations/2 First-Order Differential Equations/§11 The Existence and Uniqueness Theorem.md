@@ -224,14 +224,14 @@ The uniqueness argument rests on an inequality that BDP proves inside Example 1;
 > |\phi(t) - \psi(t)| \le A\int_0^t |\phi(s) - \psi(s)|\,ds \qquad\text{for } 0 \le t \le A/2 . \qquad (17)
 > $$
 >
-> By Lemma §11.3 (with $w = |\phi - \psi|$ and $c = A/2$), $\phi = \psi$ on $[0, A/2]$; since $A$ is arbitrary, $\phi(t) = \psi(t)$ for all $t \ge 0$. For $t \le 0$ the same argument applies to $\tilde\phi(\tau) = \phi(-\tau)$ and $\tilde\psi(\tau) = \psi(-\tau)$, $\tau \ge 0$: they satisfy $\tilde\phi(\tau) - \tilde\psi(\tau) = \int_0^\tau 2\sigma\big(\tilde\phi(\sigma) - \tilde\psi(\sigma)\big)d\sigma$ (substitute $s = -\sigma$). So (8) has only one solution.
+> By [[§11 The Existence and Uniqueness Theorem#^lem-11-3|Lemma §11.3]] (with $w = |\phi - \psi|$ and $c = A/2$), $\phi = \psi$ on $[0, A/2]$; since $A$ is arbitrary, $\phi(t) = \psi(t)$ for all $t \ge 0$. For $t \le 0$ the same argument applies to $\tilde\phi(\tau) = \phi(-\tau)$ and $\tilde\psi(\tau) = \psi(-\tau)$, $\tau \ge 0$: they satisfy $\tilde\phi(\tau) - \tilde\psi(\tau) = \int_0^\tau 2\sigma\big(\tilde\phi(\sigma) - \tilde\psi(\sigma)\big)d\sigma$ (substitute $s = -\sigma$). So (8) has only one solution.
 >
 > *BDP: Example 2.8.1*
 
 ^ex-11-1
 
 ![[m331-11-1.svg]]
-*The first four Picard iterates of Example §11.1, $\phi_1 = t^2$, $\phi_2 = t^2 + t^4/2$, $\phi_3$, $\phi_4$, and the solution $\phi = e^{t^2} - 1$ (dashed). As $n$ increases the iterates stay close to $\phi$ over a gradually increasing interval: $\phi - \phi_n$ is the tail $\sum_{k > n} t^{2k}/k!$, which is tiny for $|t| < 1$ and grows quickly beyond.*
+*The first four Picard iterates of [[§11 The Existence and Uniqueness Theorem#^ex-11-1|Example §11.1]], $\phi_1 = t^2$, $\phi_2 = t^2 + t^4/2$, $\phi_3$, $\phi_4$, and the solution $\phi = e^{t^2} - 1$ (dashed). As $n$ increases the iterates stay close to $\phi$ over a gradually increasing interval: $\phi - \phi_n$ is the tail $\sum_{k > n} t^{2k}/k!$, which is tiny for $|t| < 1$ and grows quickly beyond.*
 
 ## The General Case
 
@@ -241,7 +241,7 @@ $$
 R\colon\ |t| \le a, \quad |y| \le b ,
 $$
 
-and $\phi_n$ are the Picard iterates (4)–(7). In Example §11.1, $f$ and $\partial f/\partial y$ were continuous in the whole $ty$-plane and every iterate could be computed explicitly. In general $f$ is known to be continuous only in $R$, and the iterates cannot be computed. The danger is that at some stage the graph of $\phi_k$ contains points outside $R$; then computing $\phi_{k+1}$ would require evaluating $f$ where it is not known to be continuous, or even to exist. To avoid this, $t$ may have to be restricted to a smaller interval than $|t| \le a$.
+and $\phi_n$ are the Picard iterates (4)–(7). In [[§11 The Existence and Uniqueness Theorem#^ex-11-1|Example §11.1]], $f$ and $\partial f/\partial y$ were continuous in the whole $ty$-plane and every iterate could be computed explicitly. In general $f$ is known to be continuous only in $R$, and the iterates cannot be computed. The danger is that at some stage the graph of $\phi_k$ contains points outside $R$; then computing $\phi_{k+1}$ would require evaluating $f$ where it is not known to be continuous, or even to exist. To avoid this, $t$ may have to be restricted to a smaller interval than $|t| \le a$.
 
 > [!theorem] Lemma §11.4: The Iterates Exist and Stay in a Bow Tie
 > Since $f$ is continuous on the closed bounded set $R$, it is bounded there: there is $M \ge 0$ with
@@ -278,7 +278,7 @@ and $\phi_n$ are the Picard iterates (4)–(7). In Example §11.1, $f$ and $\par
 If $b/M < a$, a larger $h$ may be obtainable by finding a better (smaller) bound $M$ for $|f|$, if this is possible.
 
 ![[m331-11-2.svg]]
-*The bow tie of Lemma §11.4 when $b/M < a$. Every iterate passes through the origin with slope at most $M$ in absolute value, so its graph (green) stays between the lines $y = \pm Mt$ (orange region). This region stays inside the rectangle $R$ only for $|t| \le b/M$, which is why the theorem gives a solution on $|t| \le h = \min(a, b/M)$ (red dashed lines) rather than on all of $|t| \le a$.*
+*The bow tie of [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] when $b/M < a$. Every iterate passes through the origin with slope at most $M$ in absolute value, so its graph (green) stays between the lines $y = \pm Mt$ (orange region). This region stays inside the rectangle $R$ only for $|t| \le b/M$, which is why the theorem gives a solution on $|t| \le h = \min(a, b/M)$ (red dashed lines) rather than on all of $|t| \le a$.*
 
 For the convergence (question 2), write $\phi_n$ as a partial sum of a series:
 
@@ -320,7 +320,7 @@ and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\par
 *Uses:* [[§11 The Existence and Uniqueness Theorem#^def-11-3|Def. §11.3]], [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]] (extreme value theorem), [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
 > [!theorem] Lemma §11.6: Estimate of Successive Differences
-> With $M$, $h$ as in Lemma §11.4 and $K$ as in Lemma §11.5, for every $n \ge 1$ and $|t| \le h$,
+> With $M$, $h$ as in [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] and $K$ as in [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]], for every $n \ge 1$ and $|t| \le h$,
 >
 > $$
 > |\phi_n(t) - \phi_{n-1}(t)| \le \frac{MK^{n-1}|t|^n}{n!} \le \frac{MK^{n-1}h^n}{n!} .
@@ -331,7 +331,7 @@ and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\par
 ^lem-11-6
 
 > [!proof]+ Proof
-> By Lemma §11.4 the graphs of all iterates lie in $D \subseteq R$, so for $|s| \le h$ the points $(s, \phi_n(s))$ and $(s, \phi_{n-1}(s))$ are in $R$ with the same $s$ coordinate, and by Lemma §11.5 (Problem 15)
+> By [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] the graphs of all iterates lie in $D \subseteq R$, so for $|s| \le h$ the points $(s, \phi_n(s))$ and $(s, \phi_{n-1}(s))$ are in $R$ with the same $s$ coordinate, and by [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]] (Problem 15)
 >
 > $$
 > \big|f(s, \phi_n(s)) - f(s, \phi_{n-1}(s))\big| \le K\,|\phi_n(s) - \phi_{n-1}(s)| .
@@ -367,11 +367,11 @@ Now all four questions can be answered.
 ^thm-11-7
 
 > [!proof]- Proof
-> Let $M$, $h$ and $D$ be as in Lemma §11.4 and $K$ as in Lemma §11.5.
+> Let $M$, $h$ and $D$ be as in [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] and $K$ as in Lemma §11.5.
 >
 > **1. All iterates exist.** By Lemma §11.4 every $\phi_n$ is defined and continuous on $I = [-h, h]$, with graph in $D$.
 >
-> **2. The sequence converges uniformly.** By (24), $\phi_n$ is the $n$th partial sum of the series $\phi_1 + \sum_{k \ge 1}(\phi_{k+1} - \phi_k)$ of continuous functions on $I$. By Lemma §11.6, for every $t$ in $I$,
+> **2. The sequence converges uniformly.** By (24), $\phi_n$ is the $n$th partial sum of the series $\phi_1 + \sum_{k \ge 1}(\phi_{k+1} - \phi_k)$ of continuous functions on $I$. By [[§11 The Existence and Uniqueness Theorem#^lem-11-6|Lemma §11.6]], for every $t$ in $I$,
 >
 > $$
 > |\phi_1(t)| \le Mh, \qquad |\phi_{k+1}(t) - \phi_k(t)| \le \frac{MK^k h^{k+1}}{(k + 1)!} =: M_k \quad (k \ge 1) .
@@ -407,7 +407,7 @@ Now all four questions can be answered.
 > \big| f(s, \phi_n(s)) - f(s, \phi(s)) \big| \le K\,|\phi_n(s) - \phi(s)| \le K \sup_{I} |\phi_n - \phi| \longrightarrow 0 ,
 > $$
 >
-> so $f(s, \phi_n(s)) \to f(s, \phi(s))$ uniformly on $I$, and these are continuous functions of $s$. Uniform convergence allows exchanging limit and integral (on $[0, t]$, or on $[t, 0]$ if $t < 0$), which gives (29). So $\phi$ satisfies the integral equation (3) on $I$, and by Lemma §11.2 it is a solution of the initial value problem (2) on $|t| \le h$.
+> so $f(s, \phi_n(s)) \to f(s, \phi(s))$ uniformly on $I$, and these are continuous functions of $s$. Uniform convergence allows exchanging limit and integral (on $[0, t]$, or on $[t, 0]$ if $t < 0$), which gives (29). So $\phi$ satisfies the integral equation (3) on $I$, and by [[§11 The Existence and Uniqueness Theorem#^lem-11-2|Lemma §11.2]] it is a solution of the initial value problem (2) on $|t| \le h$.
 >
 > **4. Uniqueness.** Let $\psi$ be any solution of (2) on an interval $|t| \le h'$ with $h' \le h$.
 >
@@ -419,7 +419,7 @@ Now all four questions can be answered.
 > |\phi(t) - \psi(t)| = \left| \int_0^t \big[f(s, \phi(s)) - f(s, \psi(s))\big]\,ds \right| \le \int_0^t \big| f(s, \phi(s)) - f(s, \psi(s)) \big|\,ds \le K \int_0^t |\phi(s) - \psi(s)|\,ds , \qquad (30)
 > $$
 >
-> using the Lipschitz condition, which applies because both graphs lie in $D$. This is the inequality (17) of Example §11.1 with $A = K$ (replace $K$ by $K + 1$ if $K = 0$, so that $A > 0$). By Lemma §11.3 with $w = |\phi - \psi|$, $\phi = \psi$ on $[0, h']$. For $-h' \le t \le 0$, apply the same argument to $\tilde\phi(\tau) = \phi(-\tau)$ and $\tilde\psi(\tau) = \psi(-\tau)$: the substitution $s = -\sigma$ gives $|\tilde\phi(\tau) - \tilde\psi(\tau)| \le K\int_0^\tau |\tilde\phi(\sigma) - \tilde\psi(\sigma)|\,d\sigma$ for $0 \le \tau \le h'$, and Lemma §11.3 again gives $\tilde\phi = \tilde\psi$. So there is no solution of (2) other than the one generated by the method of successive approximations.
+> using the Lipschitz condition, which applies because both graphs lie in $D$. This is the inequality (17) of [[§11 The Existence and Uniqueness Theorem#^ex-11-1|Example §11.1]] with $A = K$ (replace $K$ by $K + 1$ if $K = 0$, so that $A > 0$). By [[§11 The Existence and Uniqueness Theorem#^lem-11-3|Lemma §11.3]] with $w = |\phi - \psi|$, $\phi = \psi$ on $[0, h']$. For $-h' \le t \le 0$, apply the same argument to $\tilde\phi(\tau) = \phi(-\tau)$ and $\tilde\psi(\tau) = \psi(-\tau)$: the substitution $s = -\sigma$ gives $|\tilde\phi(\tau) - \tilde\psi(\tau)| \le K\int_0^\tau |\tilde\phi(\sigma) - \tilde\psi(\sigma)|\,d\sigma$ for $0 \le \tau \le h'$, and Lemma §11.3 again gives $\tilde\phi = \tilde\psi$. So there is no solution of (2) other than the one generated by the method of successive approximations.
 
 ^pf-11-7
 
@@ -427,7 +427,7 @@ Now all four questions can be answered.
 
 > [!remark]- Connections
 > - Rigorous tools, all from Single Variable Analysis: uniform convergence, [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]]; the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], applied to the series (24) with $M_k = MK^kh^{k+1}/(k+1)!$; continuity of the limit, [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]; and the exchange of limit and integral, [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]] and [[§33 Properties of the Riemann Integral#^thm-33-12|451 Thm. §33.12]]. No other subject in the vault proves the existence and uniqueness theorem; this proof is its home.
-> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves (Lemma §11.4), a solution is a fixed point $T\phi = \phi$, and Lemma §11.6 says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§11 Completeness#^thm-11-1|556 Thm. §11.1]]: this is the abstract reason the iterates converge.
+> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves ([[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]), a solution is a fixed point $T\phi = \phi$, and [[§11 The Existence and Uniqueness Theorem#^lem-11-6|Lemma §11.6]] says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§11 Completeness#^thm-11-1|556 Thm. §11.1]]: this is the abstract reason the iterates converge.
 
 > [!remark]- Remark: What Uniform Convergence Is For
 > Two of BDP's problems show why step 3 of the proof needs uniform convergence.
@@ -439,7 +439,7 @@ Now all four questions can be answered.
 ^rem-11-1
 
 > [!remark] Remark: A Lipschitz Condition Is Enough
-> The proof used the continuity of $\partial f/\partial y$ only through the Lipschitz condition (Lemma §11.5): steps 2–4 need just $|f(t, y_1) - f(t, y_2)| \le K|y_1 - y_2|$. So Theorem §11.7 remains true, with the same proof, if the hypothesis "$\partial f/\partial y$ is continuous" is replaced by "$f$ satisfies a Lipschitz condition in $R$", a slightly stronger theorem. For example, $f(t, y) = |y|$ is not differentiable in $y$ at $y = 0$, but $\big||y_1| - |y_2|\big| \le |y_1 - y_2|$, so $y' = |y|$, $y(0) = 0$ has the unique solution $y = 0$. By contrast $f(y) = y^{1/3}$ satisfies no Lipschitz condition near $y = 0$ (the quotient $y^{1/3}/y = y^{-2/3}$ is unbounded), and [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-3|Example §7.3]] shows that uniqueness then fails.
+> The proof used the continuity of $\partial f/\partial y$ only through the Lipschitz condition ([[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]]): steps 2–4 need just $|f(t, y_1) - f(t, y_2)| \le K|y_1 - y_2|$. So [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] remains true, with the same proof, if the hypothesis "$\partial f/\partial y$ is continuous" is replaced by "$f$ satisfies a Lipschitz condition in $R$", a slightly stronger theorem. For example, $f(t, y) = |y|$ is not differentiable in $y$ at $y = 0$, but $\big||y_1| - |y_2|\big| \le |y_1 - y_2|$, so $y' = |y|$, $y(0) = 0$ has the unique solution $y = 0$. By contrast $f(y) = y^{1/3}$ satisfies no Lipschitz condition near $y = 0$ (the quotient $y^{1/3}/y = y^{-2/3}$ is unbounded), and [[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-3|Example §7.3]] shows that uniqueness then fails.
 
 ^rem-11-2
 
@@ -457,7 +457,7 @@ Translating back to an arbitrary initial point gives the theorem as stated in Se
 ^thm-11-8
 
 > [!proof]+ Proof
-> Since the rectangle is open, choose $a, b > 0$ so small that the closed rectangle $|t - t_0| \le a$, $|y - y_0| \le b$ lies inside it; $f$ and $\partial f/\partial y$ are continuous there. By Lemma §11.1, $g(s, w) = f(t_0 + s, y_0 + w)$ and $\partial g/\partial w$ are continuous on $|s| \le a$, $|w| \le b$. Theorem §11.7 gives $h$ with $0 < h \le a$ and a unique solution $\psi$ of $w' = g(s, w)$, $w(0) = 0$ on $|s| \le h$. By Lemma §11.1, $\phi(t) = y_0 + \psi(t - t_0)$ solves (9) on $|t - t_0| \le h$, in particular on $t_0 - h < t < t_0 + h$, which lies in $(\alpha, \beta)$ since $h \le a$.
+> Since the rectangle is open, choose $a, b > 0$ so small that the closed rectangle $|t - t_0| \le a$, $|y - y_0| \le b$ lies inside it; $f$ and $\partial f/\partial y$ are continuous there. By [[§11 The Existence and Uniqueness Theorem#^lem-11-1|Lemma §11.1]], $g(s, w) = f(t_0 + s, y_0 + w)$ and $\partial g/\partial w$ are continuous on $|s| \le a$, $|w| \le b$. [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] gives $h$ with $0 < h \le a$ and a unique solution $\psi$ of $w' = g(s, w)$, $w(0) = 0$ on $|s| \le h$. By Lemma §11.1, $\phi(t) = y_0 + \psi(t - t_0)$ solves (9) on $|t - t_0| \le h$, in particular on $t_0 - h < t < t_0 + h$, which lies in $(\alpha, \beta)$ since $h \le a$.
 >
 > For uniqueness, let $\chi$ be another solution of (9) on $t_0 - h < t < t_0 + h$, and let $0 < h' < h$. On $|t - t_0| \le h'$, $\chi(t_0 + s) - y_0$ solves the translated problem on $|s| \le h'$ (Lemma §11.1), so by the last statement of Theorem §11.7 it equals $\psi$ there; that is, $\chi = \phi$ on $|t - t_0| \le h'$. Since $h' < h$ was arbitrary, $\chi = \phi$ on the whole interval.
 
@@ -465,22 +465,22 @@ Translating back to an arbitrary initial point gives the theorem as stated in Se
 
 *Uses:* [[§11 The Existence and Uniqueness Theorem#^lem-11-1|§11.1]], [[§11 The Existence and Uniqueness Theorem#^thm-11-7|§11.7]]
 
-Theorem §11.8 contains the linear theorem's hypotheses as a special case ([[§7 Differences Between Linear and Nonlinear Differential Equations#^rem-7-1|Remark: Reading Theorem 2.4.2]]) and gives the geometric consequence that solution curves do not cross ([[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]]). The value $h = \min(a, b/M)$ is usually far from the true interval of existence, as the next example shows.
+[[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]] contains the linear theorem's hypotheses as a special case ([[§7 Differences Between Linear and Nonlinear Differential Equations#^rem-7-1|Remark: Reading Theorem 2.4.2]]) and gives the geometric consequence that solution curves do not cross ([[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]]). The value $h = \min(a, b/M)$ is usually far from the true interval of existence, as the next example shows.
 
 > [!example] Example §11.2: The Interval Given by the Proof
 > For $y' = y^2$, $y(0) = 1$ ([[§7 Differences Between Linear and Nonlinear Differential Equations#^ex-7-4|Example §7.4]]), compare the interval of existence guaranteed by the proof with the true one.
 >
-> **Translate.** With $w = y - 1$ (Lemma §11.1), the problem is $w' = (1 + w)^2$, $w(0) = 0$. On the rectangle $|t| \le a$, $|w| \le b$,
+> **Translate.** With $w = y - 1$ ([[§11 The Existence and Uniqueness Theorem#^lem-11-1|Lemma §11.1]]), the problem is $w' = (1 + w)^2$, $w(0) = 0$. On the rectangle $|t| \le a$, $|w| \le b$,
 >
 > $$
 > M = \max |g| = (1 + b)^2, \qquad K = \max \Big|\frac{\partial g}{\partial w}\Big| = \max |2(1 + w)| = 2(1 + b) ,
 > $$
 >
-> so the proof gives a solution on $|t| \le h = \min\big(a,\ b/(1 + b)^2\big)$. Since $f$ is continuous everywhere, $a$ can be as large as we like, and the best choice of $b$ maximizes $b/(1 + b)^2$: its derivative $\big((1 + b)^2 - 2b(1 + b)\big)/(1 + b)^4 = (1 - b)/(1 + b)^3$ vanishes at $b = 1$, giving the value $\frac14$. So Theorem §11.7 guarantees the solution on $|t| \le \frac14$.
+> so the proof gives a solution on $|t| \le h = \min\big(a,\ b/(1 + b)^2\big)$. Since $f$ is continuous everywhere, $a$ can be as large as we like, and the best choice of $b$ maximizes $b/(1 + b)^2$: its derivative $\big((1 + b)^2 - 2b(1 + b)\big)/(1 + b)^4 = (1 - b)/(1 + b)^3$ vanishes at $b = 1$, giving the value $\frac14$. So [[§11 The Existence and Uniqueness Theorem#^thm-11-7|Theorem §11.7]] guarantees the solution on $|t| \le \frac14$.
 >
 > **The truth.** The solution $y = 1/(1 - t)$ exists on $-\infty < t < 1$. The interval from the proof is correct but much too small, and it is symmetric about $t = 0$, whereas the true interval is not.
 >
-> **The iterates.** In the original variables ($\phi_0 = 1$, $\phi_{n+1}(t) = 1 + \int_0^t \phi_n(s)^2\,ds$, the translate of Definition §11.2),
+> **The iterates.** In the original variables ($\phi_0 = 1$, $\phi_{n+1}(t) = 1 + \int_0^t \phi_n(s)^2\,ds$, the translate of [[§11 The Existence and Uniqueness Theorem#^def-11-2|Definition §11.2]]),
 >
 > $$
 > \phi_1 = 1 + t, \qquad \phi_2 = 1 + t + t^2 + \frac{t^3}{3}, \qquad \phi_3 = 1 + t + t^2 + t^3 + \frac23 t^4 + \frac13 t^5 + \frac19 t^6 + \frac{1}{63}t^7 ,

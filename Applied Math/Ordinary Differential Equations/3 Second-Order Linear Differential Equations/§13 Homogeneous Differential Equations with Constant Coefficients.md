@@ -207,7 +207,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 > [!example] Example §13.2: Two Decaying Exponentials
 > **(a)** Find the general solution of $y'' + 5y' + 6y = 0$.
 >
-> With $y = e^{rt}$, $r$ must satisfy $r^2 + 5r + 6 = (r + 2)(r + 3) = 0$, so $r_1 = -2$, $r_2 = -3$, and by Theorem §13.2
+> With $y = e^{rt}$, $r$ must satisfy $r^2 + 5r + 6 = (r + 2)(r + 3) = 0$, so $r_1 = -2$, $r_2 = -3$, and by [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]]
 >
 > $$
 > y = c_1e^{-2t} + c_2e^{-3t} . \qquad (27)
@@ -282,4 +282,4 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 ^ex-13-4
 
 ![[m331-13-1.svg]]
-*Example §13.4: the solutions with $y(0) = 2$ and slopes $\beta = -6, -4, -1, 2, 4$. Every solution is $c_1e^{-2t} + c_2e^t$, dominated by $e^t$ as $t \to \infty$ and by $e^{-2t}$ as $t \to -\infty$. For $-4 \le \beta \le 2$ both coefficients are $\ge 0$ and the curve stays above the axis (the green boundary cases are pure exponentials, and only $\beta = -4$ decays). For $\beta = -6$ the $e^t$ term is negative and the curve crosses at $t = \frac13\ln 4 \approx 0.46$; for $\beta = 4$ the $e^{-2t}$ term is negative and it crosses at $t \approx -0.46$ (red dots).*
+*[[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-4|Example §13.4]]: the solutions with $y(0) = 2$ and slopes $\beta = -6, -4, -1, 2, 4$. Every solution is $c_1e^{-2t} + c_2e^t$, dominated by $e^t$ as $t \to \infty$ and by $e^{-2t}$ as $t \to -\infty$. For $-4 \le \beta \le 2$ both coefficients are $\ge 0$ and the curve stays above the axis (the green boundary cases are pure exponentials, and only $\beta = -4$ decays). For $\beta = -6$ the $e^t$ term is negative and the curve crosses at $t = \frac13\ln 4 \approx 0.46$; for $\beta = 4$ the $e^{-2t}$ term is negative and it crosses at $t \approx -0.46$ (red dots).*

@@ -56,7 +56,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 > [!proof]+ Proof
 > *BDP leaves the proofs to the reader (Problem 6.6.1).*
 >
-> **(4)** is the substitution $\xi = t - \tau$ of Definition §26.1: as $\tau$ runs from $0$ to $t$, $\xi$ runs from $t$ to $0$ and $d\tau = -d\xi$, so
+> **(4)** is the substitution $\xi = t - \tau$ of [[§26★ The Convolution Integral#^def-26-1|Definition §26.1]]: as $\tau$ runs from $0$ to $t$, $\xi$ runs from $t$ to $0$ and $d\tau = -d\xi$, so
 >
 > $$
 > (f * g)(t) = \int_0^t f(t - \tau)g(\tau)\,d\tau = \int_t^0 f(\xi)g(t - \xi)\,(-d\xi) = \int_0^t g(t - \xi)f(\xi)\,d\xi = (g * f)(t) .
@@ -101,7 +101,7 @@ Other properties of ordinary multiplication fail.
 > (f * 1)(t) = \int_0^t \cos(t - \tau)\,d\tau = -\sin(t - \tau)\Big|_{\tau = 0}^{\tau = t} = -\sin 0 + \sin t = \sin t \ne \cos t .
 > $$
 >
-> In fact $(f * 1)(t) = \int_0^t f(\xi)\,d\xi$ (substitute $\xi = t - \tau$): convolution with $1$ is integration from $0$, which matches $\mathcal{L}\{f * 1\} = F(s)\cdot\frac1s$ (Theorem §26.2). Similarly $f * f$ need not be nonnegative (BDP's Problem 6.6.3, with $f(t) = \sin t$).
+> In fact $(f * 1)(t) = \int_0^t f(\xi)\,d\xi$ (substitute $\xi = t - \tau$): convolution with $1$ is integration from $0$, which matches $\mathcal{L}\{f * 1\} = F(s)\cdot\frac1s$ ([[§26★ The Convolution Integral#^thm-26-2|Theorem §26.2]]). Similarly $f * f$ need not be nonnegative (BDP's Problem 6.6.3, with $f(t) = \sin t$).
 >
 > *BDP: 6.6 (text)*
 
@@ -114,7 +114,7 @@ Other properties of ordinary multiplication fail.
 > H(s) = F(s)\,G(s) = \mathcal{L}\{h(t)\}, \qquad s > a, \qquad (1)
 > $$
 >
-> where $h = f * g$ is the convolution of Definition §26.1:
+> where $h = f * g$ is the convolution of [[§26★ The Convolution Integral#^def-26-1|Definition §26.1]]:
 >
 > $$
 > h(t) = \int_0^t f(t - \tau)\,g(\tau)\,d\tau = \int_0^t f(\tau)\,g(t - \tau)\,d\tau . \qquad (2)
@@ -175,7 +175,7 @@ Other properties of ordinary multiplication fail.
 > [!example] Example §26.2: An Inverse Transform by Convolution
 > Find the inverse Laplace transform of $H(s) = \dfrac{a}{s^2(s^2 + a^2)}$.
 >
-> Think of $H$ as the product of $s^{-2} = \mathcal{L}\{t\}$ and $a/(s^2 + a^2) = \mathcal{L}\{\sin at\}$ ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], Table 6.2.1). By Theorem §26.2, integrating by parts with $u = t - \tau$, $dv = \sin(a\tau)\,d\tau$:
+> Think of $H$ as the product of $s^{-2} = \mathcal{L}\{t\}$ and $a/(s^2 + a^2) = \mathcal{L}\{\sin at\}$ ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], Table 6.2.1). By [[§26★ The Convolution Integral#^thm-26-2|Theorem §26.2]], integrating by parts with $u = t - \tau$, $dv = \sin(a\tau)\,d\tau$:
 >
 > $$
 > h(t) = \int_0^t (t - \tau)\sin(a\tau)\,d\tau = \Big[-\frac{(t - \tau)\cos(a\tau)}{a}\Big]_{\tau = 0}^{\tau = t} - \int_0^t \frac{\cos(a\tau)}{a}\,d\tau = \frac{t}{a} - \frac{\sin(at)}{a^2} = \frac{at - \sin(at)}{a^2} . \qquad (14)
@@ -246,7 +246,7 @@ $$
 > Y(s) = \frac{(as + b)y_0 + ay_0'}{as^2 + bs + c} + \frac{G(s)}{as^2 + bs + c} = \Phi(s) + \Psi(s), \qquad (22), (23)
 > $$
 >
-> and inverting term by term gives (24). Setting $g = 0$ (so $G = 0$) in the same computation shows that $\Phi$ is the transform of the solution with data $y_0$, $y_0'$ and no forcing; setting $y_0 = y_0' = 0$ shows that $\Psi$ is the transform of the solution with forcing $g$ and zero data. By uniqueness of the inverse transform these are $\phi$ and $\psi$. Next, $\Psi(s) = H(s)G(s)$, and the Convolution Theorem §26.2 gives (28). Finally, if $g(t) = \delta(t)$ then $G(s) = 1$ ([[§25 Impulse Functions#^thm-25-2|Theorem §25.2]]) and $\Psi(s) = H(s)$, so $\psi = h$ solves (29).
+> and inverting term by term gives (24). Setting $g = 0$ (so $G = 0$) in the same computation shows that $\Phi$ is the transform of the solution with data $y_0$, $y_0'$ and no forcing; setting $y_0 = y_0' = 0$ shows that $\Psi$ is the transform of the solution with forcing $g$ and zero data. By uniqueness of the inverse transform these are $\phi$ and $\psi$. Next, $\Psi(s) = H(s)G(s)$, and the Convolution [[§26★ The Convolution Integral#^thm-26-2|Theorem §26.2]] gives (28). Finally, if $g(t) = \delta(t)$ then $G(s) = 1$ ([[§25 Impulse Functions#^thm-25-2|Theorem §25.2]]) and $\Psi(s) = H(s)$, so $\psi = h$ solves (29).
 
 ^pf-26-3
 
@@ -268,13 +268,13 @@ Once $a$, $b$, $c$ are given, $\phi$ comes from the table, possibly after partia
 >
 > The first two terms carry the initial conditions, the last the forcing.
 >
-> **Invert.** With $\mathcal{L}\{\cos 2t\} = \frac{s}{s^2 + 4}$, $\mathcal{L}\{\sin 2t\} = \frac{2}{s^2 + 4}$ and Theorem §26.2,
+> **Invert.** With $\mathcal{L}\{\cos 2t\} = \frac{s}{s^2 + 4}$, $\mathcal{L}\{\sin 2t\} = \frac{2}{s^2 + 4}$ and [[§26★ The Convolution Integral#^thm-26-2|Theorem §26.2]],
 >
 > $$
 > y = 3\cos 2t - \frac12\sin 2t + \frac12\int_0^t \sin\big(2(t - \tau)\big)\,g(\tau)\,d\tau .
 > $$
 >
-> In the language of Theorem §26.3: the transfer function is $H(s) = 1/(s^2 + 4)$, the impulse response is $h(t) = \frac12\sin 2t$, $\phi(t) = 3\cos 2t - \frac12\sin 2t$ is the free response, and the integral is $\psi = h * g$. For a specific $g$ the integral can be evaluated, numerically if necessary. (This is the variation-of-parameters formula for this equation, [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]] with $y_1 = \cos 2t$, $y_2 = \sin 2t$: its kernel $\frac{y_1(\tau)y_2(t) - y_1(t)y_2(\tau)}{W} = \frac12\sin 2(t - \tau)$ is $h(t - \tau)$.)
+> In the language of [[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3]]: the transfer function is $H(s) = 1/(s^2 + 4)$, the impulse response is $h(t) = \frac12\sin 2t$, $\phi(t) = 3\cos 2t - \frac12\sin 2t$ is the free response, and the integral is $\psi = h * g$. For a specific $g$ the integral can be evaluated, numerically if necessary. (This is the variation-of-parameters formula for this equation, [[§18★ Variation of Parameters#^cor-18-2|Corollary §18.2]] with $y_1 = \cos 2t$, $y_2 = \sin 2t$: its kernel $\frac{y_1(\tau)y_2(t) - y_1(t)y_2(\tau)}{W} = \frac12\sin 2(t - \tau)$ is $h(t - \tau)$.)
 >
 > *BDP: Example 6.6.2*
 

@@ -129,7 +129,7 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 >
 > the same line, with no matrix inversion.
 >
-> *Lay: Example 6.6.1; the second part is Exercise 6.6.17*
+> *Lay: Example 6.6.1; the second part is 6.6, Exercise 17*
 
 ^ex-45-1
 

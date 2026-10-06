@@ -74,7 +74,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ^pf-102-1
 
-*Uses:* [[§102 Surface Area#^def-102-1|Def. §102.1]], [[§83 The Cross Product#^cor-83-6|§83.6]] (area of a parallelogram), [[§92 Partial Derivatives#^rem-92-1|Rem. §92]] (partial derivatives as slopes), [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-1|§98.1]]
+*Uses:* [[§102 Surface Area#^def-102-1|Def. §102.1]], [[§83 The Cross Product#^cor-83-6|§83.6]] (area of a parallelogram), [[§92 Partial Derivatives#^rem-92-1|§92, Remark]] (partial derivatives as slopes), [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-1|§98.1]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]] (general regions)
 
 ![[m233-102-1.svg]]
 *The tangent parallelogram of Definition §102.1. Above the small rectangle $R_{ij}$ (green) the surface $S$ (blue) is approximated by the piece of its tangent plane at $P_{ij}$ (red), spanned by $\mathbf a = \langle \Delta x, 0, f_x\Delta x \rangle$ and $\mathbf b = \langle 0, \Delta y, f_y\Delta y \rangle$. Its area $|\mathbf a \times \mathbf b| = \sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$ exceeds $\Delta A$ by the factor that measures how steeply the surface is tilted.*

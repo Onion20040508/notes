@@ -96,7 +96,7 @@ $$
 > - The same structure for linear difference equations, "one particular solution plus the general solution of the homogeneous equation": [[§30 Applications to Difference Equations#^thm-30-7|235 Thm. §30.7]].
 
 > [!definition] Definition §17.1: Complementary Solution; Particular Solution
-> The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$. Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By Theorem §17.2, solving (1) takes three steps:
+> The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$. Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]], solving (1) takes three steps:
 > 1. find the complementary solution $y_c(t) = c_1y_1(t) + c_2y_2(t)$;
 > 2. find any particular solution $Y(t)$;
 > 3. form the sum $y = y_c(t) + Y(t)$.
@@ -154,7 +154,7 @@ A forcing term that is a sum is split into its terms:
 > y'' - 3y' - 4y = 3e^{2t} + 2\sin t - 8e^t\cos 2t . \qquad (19)
 > $$
 >
-> By Proposition §17.3 we solve the equation with each of the three terms on the right side and add.
+> By [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-17-3|Proposition §17.3]] we solve the equation with each of the three terms on the right side and add.
 >
 > **(a)** $y'' - 3y' - 4y = 3e^{2t}$ (9). The exponential reproduces itself under differentiation, so assume $Y(t) = Ae^{2t}$. Then $Y' = 2Ae^{2t}$, $Y'' = 4Ae^{2t}$, and
 >
@@ -216,7 +216,7 @@ A forcing term that is a sum is split into its terms:
 
 ## The Table of Trial Forms
 
-The procedure of Example §17.1 can fail in one way: the assumed form may itself solve the homogeneous equation.
+The procedure of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^ex-17-1|Example §17.1]] can fail in one way: the assumed form may itself solve the homogeneous equation.
 
 > [!theorem] Theorem §17.4: Trial Forms for Undetermined Coefficients
 > Consider $ay'' + by' + cy = g_i(t)$ with constants $a \ne 0$, $b$, $c$. For each $g_i$ below there is a particular solution $Y_i$ of the form shown.
@@ -331,7 +331,7 @@ The procedure of Example §17.1 can fail in one way: the assumed form may itself
 > g(t) = P_n(t)\,\frac{e^{(\alpha + i\beta)t} - e^{(\alpha - i\beta)t}}{2i} ,
 > $$
 >
-> a sum of two terms of Case 2 with the complex exponents $\alpha \pm i\beta$. By Case 2 and Proposition §17.3 we should choose
+> a sum of two terms of Case 2 with the complex exponents $\alpha \pm i\beta$. By Case 2 and [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-17-3|Proposition §17.3]] we should choose
 >
 > $$
 > Y(t) = e^{(\alpha + i\beta)t}(A_0t^n + \cdots + A_n) + e^{(\alpha - i\beta)t}(B_0t^n + \cdots + B_n) ,
@@ -379,7 +379,7 @@ The procedure of Example §17.1 can fail in one way: the assumed form may itself
 > y = c_1e^{7t} + c_2e^{-2t} - \tfrac{1}{18}e^{4t} .
 > $$
 >
-> **(b)** Split $g$ into $g_1 = e^{-2t}$ and $g_2 = -t^2$ (Proposition §17.3).
+> **(b)** Split $g$ into $g_1 = e^{-2t}$ and $g_2 = -t^2$ ([[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-17-3|Proposition §17.3]]).
 >
 > *For $g_1 = e^{-2t}$:* $-2$ is a simple root, so $Ae^{-2t}$ would solve the homogeneous equation; $s = 1$ and $Y_1 = Ate^{-2t}$. Then $Y_1' = A(1 - 2t)e^{-2t}$, $Y_1'' = A(-4 + 4t)e^{-2t}$, and
 >
@@ -449,7 +449,7 @@ The procedure of Example §17.1 can fail in one way: the assumed form may itself
 > y = e^{-t}(c_1\cos 4t + c_2\sin 4t) + \frac{e^{\alpha t}}{\alpha^2 + 2\alpha + 17} .
 > $$
 >
-> The answer "depends on $\alpha$" only through the coefficient. With real roots the case distinction would be real: for the operator $y'' + 6y' + 9y$ of Example §17.3 and forcing $e^{\alpha t}$, $Y = e^{\alpha t}/(\alpha + 3)^2$ for $\alpha \ne -3$, while $\alpha = -3$ is a double root, so $s = 2$, $Y = At^2e^{-3t}$, and (32) with $Z(-3) = Z'(-3) = 0$ reduces to $u'' = 1$ for $u = At^2$, giving $A = \frac12$.
+> The answer "depends on $\alpha$" only through the coefficient. With real roots the case distinction would be real: for the operator $y'' + 6y' + 9y$ of [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^ex-17-3|Example §17.3]] and forcing $e^{\alpha t}$, $Y = e^{\alpha t}/(\alpha + 3)^2$ for $\alpha \ne -3$, while $\alpha = -3$ is a double root, so $s = 2$, $Y = At^2e^{-3t}$, and (32) with $Z(-3) = Z'(-3) = 0$ reduces to $u'' = 1$ for $u = At^2$, giving $A = \frac12$.
 >
 > *Source: 331 Final (Fall 2022, alternate), Q1*
 

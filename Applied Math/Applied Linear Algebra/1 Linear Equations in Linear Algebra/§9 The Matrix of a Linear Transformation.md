@@ -208,7 +208,7 @@ The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the r
 *Uses:* [[§8 Introduction to Linear Transformations#^prop-8-3|§8.3]], [[§9 The Matrix of a Linear Transformation#^def-9-3|Def. §9.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Examples §9.4 and §9.5 ($\mathbb{R}^4 \to \mathbb{R}^3$ is never one-to-one, $\mathbb{R}^2 \to \mathbb{R}^3$ never onto) are [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]] and [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
+> - Rigorous treatment: injective $\iff$ null space $= \{\mathbf{0}\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]], with the same subtraction argument. The dimension counts behind Examples §9.4 and §9.5 ($\mathbb{R}^4 \to \mathbb{R}^3$ is never one-to-one, $\mathbb{R}^2 \to \mathbb{R}^3$ never onto) are [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]] and [[§8 Null Spaces and Ranges#^ladr-3-24|LADR 3.24]], respectively.
 
 > [!theorem] Theorem §9.3: Onto and One-to-One via the Standard Matrix
 > Let $T: \mathbb{R}^n \to \mathbb{R}^m$ be a linear transformation, and let $A$ be the standard matrix for $T$. Then:

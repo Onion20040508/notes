@@ -211,7 +211,7 @@ Continue to let $f(z)$ and $g(z)$ denote the sums of the series (1), and suppose
 > (d_0 - 1) + d_1z + \Big(d_2 + \frac{1}{3!}d_0\Big)z^2 + \Big(d_3 + \frac{1}{3!}d_1\Big)z^3 + \Big(d_4 + \frac{1}{3!}d_2 + \frac{1}{5!}d_0\Big)z^4 + \cdots = 0 .
 > $$
 >
-> By Corollary §72.2 every coefficient is zero: $d_0 = 1$, $d_1 = 0$, $d_2 = -\frac16$, $d_3 = 0$, $d_4 = \frac{1}{36} - \frac{1}{120} = \frac{7}{360}$, which is (8).
+> By [[§72★ Uniqueness of Series Representations#^cor-72-2|Corollary §72.2]] every coefficient is zero: $d_0 = 1$, $d_1 = 0$, $d_2 = -\frac16$, $d_3 = 0$, $d_4 = \frac{1}{36} - \frac{1}{120} = \frac{7}{360}$, which is (8).
 >
 > **The Laurent series.** In view of (7),
 >

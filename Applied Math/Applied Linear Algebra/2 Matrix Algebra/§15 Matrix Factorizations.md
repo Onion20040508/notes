@@ -110,7 +110,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 > [!proof]+ Proof
 > (Lay states this and points to Exercise 19.) Let $L$, $M$ be unit lower triangular: $l_{ik} = 0$ for $k > i$ and $l_{ii} = 1$, likewise for $M$. By the row–column rule $(LM)_{ij} = \sum_k l_{ik}m_{kj}$, and a term can be nonzero only if $k \le i$ (else $l_{ik} = 0$) and $k \ge j$ (else $m_{kj} = 0$). If $j > i$ no $k$ satisfies both, so $(LM)_{ij} = 0$; if $j = i$ only $k = i$ does, so $(LM)_{ii} = l_{ii}m_{ii} = 1$. So $LM$ is unit lower triangular.
 >
-> For the inverse, row reduce $L$ to $I$ column by column: for $j = 1, \ldots, n - 1$, subtract $l_{ij}$ times row $j$ from each row $i > j$. When column $j$ is treated, row $j$ has already become $\mathbf{e}_j^T$ (its entries left of the diagonal were cleared earlier, and its diagonal entry is $1$), so each operation changes only column $j$ and leaves the earlier columns cleared. Each operation is a replacement adding a multiple of a row to a row *below* it, whose elementary matrix $E_{ij}(-l_{ij})$ ($i > j$) is unit lower triangular. Thus $E_p \cdots E_1L = I$, so $L$ is invertible with $L^{-1} = E_p \cdots E_1$ (Corollary §13.2), a product of unit lower triangular matrices, hence unit lower triangular by the first part.
+> For the inverse, row reduce $L$ to $I$ column by column: for $j = 1, \ldots, n - 1$, subtract $l_{ij}$ times row $j$ from each row $i > j$. When column $j$ is treated, row $j$ has already become $\mathbf{e}_j^T$ (its entries left of the diagonal were cleared earlier, and its diagonal entry is $1$), so each operation changes only column $j$ and leaves the earlier columns cleared. Each operation is a replacement adding a multiple of a row to a row *below* it, whose elementary matrix $E_{ij}(-l_{ij})$ ($i > j$) is unit lower triangular. Thus $E_p \cdots E_1L = I$, so $L$ is invertible with $L^{-1} = E_p \cdots E_1$ ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]]), a product of unit lower triangular matrices, hence unit lower triangular by the first part.
 
 ^pf-15-1
 
@@ -136,13 +136,13 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 ^thm-15-2
 
 > [!proof]+ Proof
-> Each allowed replacement, adding $a$ times row $j$ to row $i > j$, is left multiplication by $E_{ij}(a)$ (Proposition §12.6), which is unit lower triangular because its one off-diagonal entry is in position $(i, j)$ with $i > j$. This gives (3). By Proposition §15.1 the product $E_p \cdots E_1$ is unit lower triangular and invertible, and so is its inverse $L$; multiplying (3) on the left by $L$ gives $A = LU$. Also
+> Each allowed replacement, adding $a$ times row $j$ to row $i > j$, is left multiplication by $E_{ij}(a)$ ([[§12 The Inverse of a Matrix#^prop-12-6|Proposition §12.6]]), which is unit lower triangular because its one off-diagonal entry is in position $(i, j)$ with $i > j$. This gives (3). By Proposition §15.1 the product $E_p \cdots E_1$ is unit lower triangular and invertible, and so is its inverse $L$; multiplying (3) on the left by $L$ gives $A = LU$. Also
 >
 > $$
 > E_p \cdots E_1L = (E_p \cdots E_1)(E_p \cdots E_1)^{-1} = I,
 > $$
 >
-> so the operations in (3) reduce $L$ to $I$. Conversely, if a matrix $L$ satisfies $(E_p \cdots E_1)L = I$ for the same $E_1, \ldots, E_p$, then $L$ is invertible by the Invertible Matrix Theorem (Corollary §13.2), with $E_p \cdots E_1 = L^{-1}$. By (3), $L^{-1}A = U$, so $A = LU$.
+> so the operations in (3) reduce $L$ to $I$. Conversely, if a matrix $L$ satisfies $(E_p \cdots E_1)L = I$ for the same $E_1, \ldots, E_p$, then $L$ is invertible by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]]), with $E_p \cdots E_1 = L^{-1}$. By (3), $L^{-1}A = U$, so $A = LU$.
 
 ^pf-15-2
 
@@ -232,7 +232,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 >
 > Check, row 5 of $LU$: $-3(2, -4, -2, 3) - 3(0, 3, 1, -1) + 2(0, 0, 0, 5) = (-6, 12 - 9, 6 - 3, -9 + 3 + 10) = (-6, 3, 3, 4)$.
 >
-> *Lay: Practice Problem 2.5*
+> *Lay: 2.5, Practice Problem*
 
 ^ex-15-3
 

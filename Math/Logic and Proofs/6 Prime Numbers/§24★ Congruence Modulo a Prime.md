@@ -12,7 +12,7 @@ tags: [logic-and-proofs, mat250, extension]
 *Eccles, Chapter 24 (with Problems VI Q14, Q17, Q18).*
 ★ *Not in the MAT 250 course record (no homework or syllabus entry for this chapter); included from Eccles to complete the arithmetic of primes, and because it is where group theory begins.*
 
-Modulo a prime $p$, every nonzero congruence class is invertible ([[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9]]), and this makes arithmetic modulo $p$ unusually rigid. This section proves the two classical consequences, Fermat's little theorem $a^{p-1} \equiv 1$ and Wilson's theorem $(p-1)! \equiv -1 \pmod p$, both by counting arguments in $\mathbb{Z}_p$, and then asks how far Fermat's theorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of Lagrange's theorem that group theory later makes general.
+Modulo a prime $p$, every nonzero congruence class is invertible ([[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9]]), and this makes arithmetic modulo $p$ unusually rigid. This section proves the two classical consequences, Fermat's little theorem $a^{p-1} \equiv 1$ and Wilson's theorem $(p-1)! \equiv -1 \pmod p$, both by counting arguments in $\mathbb{Z}_p$, and then asks how far Fermat's theorem can be turned into a test for primality. Ivory's proof of Fermat's theorem below is the special case of [[Lagrange's Theorem|Lagrange's theorem]] that group theory later makes general.
 
 ## 24.1 Fermat's Little Theorem
 
@@ -55,7 +55,7 @@ Recall from [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|§21.6]], [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-3|Def. §21.3]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-4|§21.4]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets#^thm-11-7|§11.7]], [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]]
 
 > [!remark]- Connections
-> - Developed further in: [[§29 The Index and Lagrange's Theorem#^cor-29-4|493 Cor. §29.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via Lagrange's theorem).
+> - Developed further in: [[§29 The Index and Lagrange's Theorem#^cor-29-4|493 Cor. §29.4]] (Fermat's little theorem as $g^{\abs{G}} = e$ in the group $U_p$ of order $p - 1$, via [[Lagrange's Theorem|Lagrange's theorem]]).
 > - The bijection $[x] \mapsto [a][x]$ of the nonzero classes is [[§8 Invertibility and Unit Groups#^prop-8-2|493 Prop. §8.2]].
 
 > [!theorem] Corollary §24.2: $a^p \equiv a$ for Every Integer
@@ -228,7 +228,7 @@ The converse of [[§24★ Congruence Modulo a Prime#^cor-24-6|Corollary §24.6]]
 > - *Euler's (Q17).* For $0 < i < p$ the binomial coefficient $\binom{p}{i} = \frac{p!}{i!\,(p-i)!}$ is a multiple of $p$: $p$ divides the numerator $p!$ but, by [[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]], not $i!\,(p-i)!$, whose factors are all $< p$. Hence $(a + b)^p \equiv a^p + b^p \pmod p$ (binomial theorem, [[§12★ Counting Functions and Subsets#^thm-12-10|Theorem §12.10]]), and induction on $a \geq 0$ gives $a^p = ((a - 1) + 1)^p \equiv (a-1)^p + 1 \equiv a$; this extends to all $a$ since $a^p \bmod p$ depends only on $a \bmod p$, and cancelling $a$ when $p \nmid a$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]) gives $a^{p-1} \equiv 1$.
 > - *Gauss's (Q18).* On the nonzero residues define $x_1 \sim x_2 \iff x_1 \equiv x_2 a^k$ for some $k \in \mathbb{Z}^+$. This is an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-3|Def. §22.3]]) whose classes $\{x, xa, \ldots, xa^{n-1}\}$ all have $n$ elements, $n$ the order of $a$. (Here the order exists without Fermat: none of $a, a^2, \ldots, a^p$ is divisible by $p$ ([[§23 The Sequence of Prime Numbers#^prop-23-4|§23.4]]), so by the pigeonhole principle ([[§11 Properties of Finite Sets#^thm-11-2|Theorem §11.2]]) two of these $p$ powers fall into the same one of the $p - 1$ nonzero residues, $a^i \equiv a^j$ with $i < j$, and cancelling $a^i$ ([[§19 Congruence of Integers#^prop-19-7|§19.7]]) gives $a^{j-i} \equiv 1$.) The classes partition the $p - 1$ nonzero residues, so $n \mid p - 1$ — [[§24★ Congruence Modulo a Prime#^prop-24-3|Proposition §24.3]] without using Fermat — and then $a^{p-1} = (a^n)^{(p-1)/n} \equiv 1$.
 >
-> Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the cosets of the subgroup $\{1, a, \ldots, a^{n-1}\}$ of the nonzero residues.
+> Gauss's argument is exactly the proof of Lagrange's theorem: the classes are the [[§28 Left and Right Cosets#^def-28-2|cosets]] of the [[§4 Subgroups#^def-4-1|subgroup]] $\{1, a, \ldots, a^{n-1}\}$ of the nonzero residues.
 
 ^rem-24-1
 

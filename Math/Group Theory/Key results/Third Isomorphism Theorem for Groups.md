@@ -18,5 +18,5 @@ tags: [group-theory, hub]
 - (not cited later in the course)
 
 ## Connections
-- **Where it sits.** The case $A_1 = K$, $A_2 = G$ of quotients along the correspondence ([[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], part (3)) — “dividing out $N$ twice” — of the [[Correspondence Theorem for Groups]].
+- **Where it sits.** It is the case A₁ = K, A₂ = G of part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]] (§42.4), “dividing out N twice”, in the setting of the [[Correspondence Theorem for Groups]].
 - **Status.** Named in lecture 10/2 and not proved in class; the proof is a placeholder.

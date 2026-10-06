@@ -227,7 +227,7 @@ The next theorem is important for applications and is needed in Chapters 5 and 6
 >
 > **(d) No four-dimensional subspace of $\mathbb{R}^3$.** A basis of a four-dimensional subspace would be four linearly independent vectors in $\mathbb{R}^3$, but any set of more than 3 vectors in $\mathbb{R}^3$ is linearly dependent ([[§7 Linear Independence#^thm-7-6|Theorem §7.6]]). So $\mathbb{R}^3$ has no four-dimensional subspace.
 >
-> *Lay: Practice Problems 2.9.1–2.9.3*
+> *Lay: 2.9, Practice Problems 1–3*
 > *Source: 235 lecture L16*
 
 ^ex-19-4

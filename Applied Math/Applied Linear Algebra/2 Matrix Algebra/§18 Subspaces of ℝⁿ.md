@@ -78,7 +78,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 >
 > **(d)** The parabola $V = \{(x, y) : y^2 = x\}$ is not a subspace: $(1, 1)$ is in $V$ but $2(1, 1) = (2, 2)$ is not ($4 \ne 2$).
 >
-> The lecture's moral: subspaces of $\mathbb{R}^n$ are defined by *linear* conditions. Inequalities or nonlinear equations in the description of a set are a reason to suspect it is not a subspace. A subspace must contain $\mathbf{0}$, every line through the origin and one of its vectors, and every diagonal of a parallelogram with two sides in it.
+> The lecture's moral: subspaces of $\mathbb{R}^n$ are defined by *linear* conditions. Inequalities or nonlinear equations in the description of a set are a reason to suspect it is not a subspace. A subspace must contain $\mathbf{0}$, the whole line through the origin and any one of its vectors, and every diagonal of a parallelogram with two sides in it.
 >
 > *Lay: Example 2.8.2*
 > *Source: 235 lecture L10*

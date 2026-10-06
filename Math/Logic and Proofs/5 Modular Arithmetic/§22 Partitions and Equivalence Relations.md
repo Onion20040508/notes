@@ -132,7 +132,7 @@ Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting 
 ^def-22-3
 
 > [!remark]- Connections
-> - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the Vitali set: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
+> - [[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]] (equivalence relation); a non-arithmetic example, $x - y \in \mathbb{Q}$ on $[0,1]$, behind the [[The Vitali Set is Not Measurable|Vitali set]]: [[§11 Borel Sets and Measure Spaces#^def-11-10|551 Def. §11.10]].
 
 Each property is a universal statement, so to show that one *fails* a single counterexample suffices.
 

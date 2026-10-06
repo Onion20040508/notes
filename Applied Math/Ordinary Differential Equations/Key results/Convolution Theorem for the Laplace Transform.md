@@ -20,5 +20,5 @@ tags: [ordinary-differential-equations, hub]
 - [[§26★ The Convolution Integral#^thm-26-3|Theorem §26.3: Structure of the Solution of an Input–Output Problem]]
 
 ## Connections
-- The interchange of order is Fubini's theorem for Lebesgue integrals, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], made applicable by the absolute bound and Tonelli ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]). Measure Theory has no item on convolution itself, so that is the only link.
+- The interchange of the order of integration in the proof ([[§26★ The Convolution Integral#^pf-26-2|§26★]]) is Fubini's theorem for Lebesgue integrals, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-6|551 Thm. §17.6]], made applicable by the absolute bound and Tonelli ([[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]). Measure Theory has no item on convolution itself, so that is the only link.
 - **Also in [[Fourier Series and PDEs]]:** [[§52★ Partial Fractions and Convolutions#^thm-52-3|341 Thm. §52.3]] (the same theorem in Powers, with solution formulas for any forcing, [[§52★ Partial Fractions and Convolutions#^ex-52-5|341 Ex. §52.5]], and a use for a forced wave problem, [[§54★ More Difficult Examples#^ex-54-3|341 Ex. §54.3]]).

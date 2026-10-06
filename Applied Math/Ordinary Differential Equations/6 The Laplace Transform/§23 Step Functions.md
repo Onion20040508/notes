@@ -62,7 +62,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 ^ex-23-1
 
 ![[m331-23-1.svg]]
-*(a) The staircase (2) is built from left to right: each jump of $f$ at $t = c$ contributes the term (jump)$\cdot u_c(t)$, giving (3). (b) Translation (Definition §23.2): $u_c(t)f(t-c)$ is the graph of $f$ (dashed) moved $c$ units to the right, with $0$ filled in on $[0, c)$. Its transform is $e^{-cs}F(s)$ (Theorem §23.2).*
+*(a) The staircase (2) is built from left to right: each jump of $f$ at $t = c$ contributes the term (jump)$\cdot u_c(t)$, giving (3). (b) Translation ([[§23 Step Functions#^def-23-2|Definition §23.2]]): $u_c(t)f(t-c)$ is the graph of $f$ (dashed) moved $c$ units to the right, with $0$ filled in on $[0, c)$. Its transform is $e^{-cs}F(s)$ ([[§23 Step Functions#^thm-23-2|Theorem §23.2]]).*
 
 > [!remark] Remark: Method — Writing a Piecewise Function with Step Functions
 > Let $f(t) = f_k(t)$ on $c_k \le t < c_{k+1}$, $k = 0, 1, \ldots, m$, with $0 = c_0 < c_1 < \cdots < c_m$ and $c_{m+1} = \infty$.
@@ -165,7 +165,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > f(t) = \begin{cases} \sin t, & 0 \le t < \frac{\pi}{4}, \\[2pt] \sin t + \cos\big(t - \frac{\pi}{4}\big), & t \ge \frac{\pi}{4}. \end{cases}
 > $$
 >
-> Here $f(t) = \sin t + u_{\pi/4}(t)\cos\big(t - \frac{\pi}{4}\big)$, and the second term is the translation of $\cos t$ by $\pi/4$. By Theorem §23.2 and the table ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], Table 6.2.1),
+> Here $f(t) = \sin t + u_{\pi/4}(t)\cos\big(t - \frac{\pi}{4}\big)$, and the second term is the translation of $\cos t$ by $\pi/4$. By [[§23 Step Functions#^thm-23-2|Theorem §23.2]] and the table ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]], Table 6.2.1),
 >
 > $$
 > \mathcal{L}\{f(t)\} = \mathcal{L}\{\sin t\} + e^{-\pi s/4}\mathcal{L}\{\cos t\} = \frac{1}{s^2 + 1} + e^{-\pi s/4}\frac{s}{s^2 + 1} = \frac{1 + s e^{-\pi s/4}}{s^2 + 1} .
@@ -205,14 +205,14 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > [!remark] Remark: Method — Inverse Transforms Containing $e^{-cs}$
 > To find $\mathcal{L}^{-1}\{e^{-cs}G(s)\}$:
 > 1. Group the terms of $F(s)$ by their exponential factor, and handle each group separately (linearity).
-> 2. Ignore $e^{-cs}$ and find $g(t) = \mathcal{L}^{-1}\{G(s)\}$: partial fractions ([[§22 Solution of Initial Value Problems#^rem-22-4|Method of §22]]), or completing the square (Theorem §23.3).
-> 3. Replace $t$ by $t - c$ *everywhere* in $g$, including inside exponentials, and multiply by $u_c(t)$: $\mathcal{L}^{-1}\{e^{-cs}G(s)\} = u_c(t)\,g(t - c)$ (Theorem §23.2).
+> 2. Ignore $e^{-cs}$ and find $g(t) = \mathcal{L}^{-1}\{G(s)\}$: partial fractions ([[§22 Solution of Initial Value Problems#^rem-22-4|Method of §22]]), or completing the square ([[§23 Step Functions#^thm-23-3|Theorem §23.3]]).
+> 3. Replace $t$ by $t - c$ *everywhere* in $g$, including inside exponentials, and multiply by $u_c(t)$: $\mathcal{L}^{-1}\{e^{-cs}G(s)\} = u_c(t)\,g(t - c)$ ([[§23 Step Functions#^thm-23-2|Theorem §23.2]]).
 > 4. If a graph or a formula on each interval is wanted, write the answer piecewise.
 
 ^rem-23-2
 
 > [!example] Example §23.3: Inverse Transforms of Delayed Functions
-> **(a)** Find $\mathcal{L}^{-1}\Big\{\dfrac{1 - e^{-2s}}{s^2}\Big\}$ and graph it. By linearity and Theorem §23.2 with $g(t) = \mathcal{L}^{-1}\{1/s^2\} = t$,
+> **(a)** Find $\mathcal{L}^{-1}\Big\{\dfrac{1 - e^{-2s}}{s^2}\Big\}$ and graph it. By linearity and [[§23 Step Functions#^thm-23-2|Theorem §23.2]] with $g(t) = \mathcal{L}^{-1}\{1/s^2\} = t$,
 >
 > $$
 > f(t) = \mathcal{L}^{-1}\Big\{\frac{1}{s^2}\Big\} - \mathcal{L}^{-1}\Big\{\frac{e^{-2s}}{s^2}\Big\} = t - u_2(t)(t - 2) = \begin{cases} t, & 0 \le t < 2, \\ 2, & t \ge 2. \end{cases}
@@ -234,7 +234,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > \frac{1}{(s - 1)(s^2 + 4s + 5)} = \frac{A}{s - 1} + \frac{Bs + C}{s^2 + 4s + 5}, \qquad 1 = A(s^2 + 4s + 5) + (Bs + C)(s - 1) .
 > $$
 >
-> At $s = 1$: $10A = 1$, $A = \frac{1}{10}$. Coefficient of $s^2$: $A + B = 0$, $B = -\frac{1}{10}$. Constant term: $5A - C = 1$, $C = -\frac12$. So $Bs + C = -\frac{1}{10}(s + 5) = -\frac{1}{10}\big[(s + 2) + 3\big]$, and with $s^2 + 4s + 5 = (s + 2)^2 + 1$ and Theorem §23.3,
+> At $s = 1$: $10A = 1$, $A = \frac{1}{10}$. Coefficient of $s^2$: $A + B = 0$, $B = -\frac{1}{10}$. Constant term: $5A - C = 1$, $C = -\frac12$. So $Bs + C = -\frac{1}{10}(s + 5) = -\frac{1}{10}\big[(s + 2) + 3\big]$, and with $s^2 + 4s + 5 = (s + 2)^2 + 1$ and [[§23 Step Functions#^thm-23-3|Theorem §23.3]],
 >
 > $$
 > g(t) = \frac{1}{10}e^{t} - \frac{1}{10}\mathcal{L}^{-1}\Big\{\frac{(s + 2) + 3}{(s + 2)^2 + 1}\Big\} = \frac{1}{10}\Big[e^{t} - e^{-2t}(\cos t + 3\sin t)\Big] .
@@ -289,7 +289,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > For $\mathcal{L}^{-1}\Big\{\dfrac{ps + q}{s^2 + Bs + C}\Big\}$ with $B^2 - 4C < 0$:
 > 1. Complete the square: $s^2 + Bs + C = (s - a)^2 + b^2$, where $a = -B/2$ and $b^2 = C - B^2/4$.
 > 2. Rewrite the numerator in powers of $s - a$: $ps + q = p(s - a) + (pa + q)$.
-> 3. Read off, by Theorem §23.3 and the transforms of $\cos bt$ and $\sin bt$:
+> 3. Read off, by [[§23 Step Functions#^thm-23-3|Theorem §23.3]] and the transforms of $\cos bt$ and $\sin bt$:
 >
 > $$
 > \mathcal{L}^{-1}\Big\{\frac{p(s - a) + (pa + q)}{(s - a)^2 + b^2}\Big\} = e^{at}\Big(p\cos bt + \frac{pa + q}{b}\sin bt\Big) .
@@ -300,7 +300,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 ^rem-23-3
 
 > [!example] Example §23.4: Completing the Square
-> **(a)** $G(s) = \dfrac{1}{s^2 - 4s + 5} = \dfrac{1}{(s - 2)^2 + 1} = F(s - 2)$ with $F(s) = \dfrac{1}{s^2 + 1} = \mathcal{L}\{\sin t\}$. By Theorem §23.3, $\mathcal{L}^{-1}\{G(s)\} = e^{2t}\sin t$.
+> **(a)** $G(s) = \dfrac{1}{s^2 - 4s + 5} = \dfrac{1}{(s - 2)^2 + 1} = F(s - 2)$ with $F(s) = \dfrac{1}{s^2 + 1} = \mathcal{L}\{\sin t\}$. By [[§23 Step Functions#^thm-23-3|Theorem §23.3]], $\mathcal{L}^{-1}\{G(s)\} = e^{2t}\sin t$.
 >
 > **(b)** $\mathcal{L}^{-1}\Big\{\dfrac{s + 11}{s^2 + 6s + 13}\Big\}$. Here $s^2 + 6s + 13 = (s + 3)^2 + 2^2$ and $s + 11 = (s + 3) + 8$, so
 >
@@ -326,13 +326,13 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 >
 > Split by exponential factor (step 1 of the method): $\dfrac{s + 1}{s^2 - 4s + 13} + e^{-7s}\dfrac{1}{s^2 - 4s + 13}$, with $s^2 - 4s + 13 = (s - 2)^2 + 3^2$.
 >
-> *First term.* $s + 1 = (s - 2) + 3$, so by Theorem §23.3
+> *First term.* $s + 1 = (s - 2) + 3$, so by [[§23 Step Functions#^thm-23-3|Theorem §23.3]]
 >
 > $$
 > \mathcal{L}^{-1}\Big\{\frac{(s - 2) + 3}{(s - 2)^2 + 3^2}\Big\} = e^{2t}(\cos 3t + \sin 3t) .
 > $$
 >
-> *Second term.* $g(t) = \mathcal{L}^{-1}\Big\{\dfrac{1}{(s - 2)^2 + 3^2}\Big\} = \dfrac13 e^{2t}\sin 3t$, and by Theorem §23.2 the factor $e^{-7s}$ delays it by $7$. Altogether
+> *Second term.* $g(t) = \mathcal{L}^{-1}\Big\{\dfrac{1}{(s - 2)^2 + 3^2}\Big\} = \dfrac13 e^{2t}\sin 3t$, and by [[§23 Step Functions#^thm-23-2|Theorem §23.2]] the factor $e^{-7s}$ delays it by $7$. Altogether
 >
 > $$
 > \mathcal{L}^{-1}\Big\{\frac{s + 1 + e^{-7s}}{s^2 - 4s + 13}\Big\} = e^{2t}(\cos 3t + \sin 3t) + \frac13\,u_7(t)\,e^{2(t - 7)}\sin\big(3(t - 7)\big) .
@@ -353,8 +353,8 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 > [!remark]- Remark: The Two Shift Rules Side by Side
 > | | time domain | transform |
 > |---|---|---|
-> | shift in $t$ (Theorem §23.2) | $u_c(t)\,f(t - c)$ | $e^{-cs}F(s)$ |
-> | shift in $s$ (Theorem §23.3) | $e^{ct}f(t)$ | $F(s - c)$ |
+> | shift in $t$ ([[§23 Step Functions#^thm-23-2\|Theorem §23.2]]) | $u_c(t)\,f(t - c)$ | $e^{-cs}F(s)$ |
+> | shift in $s$ ([[§23 Step Functions#^thm-23-3\|Theorem §23.3]]) | $e^{ct}f(t)$ | $F(s - c)$ |
 >
 > An exponential in one variable is a shift in the other. The signs differ: a delay $c > 0$ gives $e^{-cs}$, while the factor $e^{ct}$ gives $s - c$. These are the two "shift" lines of the course's table of transforms.
 >

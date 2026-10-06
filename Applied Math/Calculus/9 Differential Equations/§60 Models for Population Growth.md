@@ -68,7 +68,7 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 
 ^pf-60-1
 
-*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§21 Exponential Growth and Decay#^thm-21-1|§21.1]] (every solution of $y' = ky$)
+*Uses:* [[§59 Separable Equations#^thm-59-1|§59.1]], [[§21 Exponential Growth and Decay#^thm-21-1|§21.1]] (every solution of $y' = ky$), [[§59 Separable Equations#^def-59-1|Def. §59.1]]
 
 > [!remark]- Connections
 > - The uniqueness half, proved in [[§21 Exponential Growth and Decay#^pf-21-1|the proof of Theorem §21.1]], rests on [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (a vanishing derivative means constant), proved there from the Mean Value Theorem.
@@ -232,7 +232,7 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 
 ^pf-60-3
 
-*Uses:* [[§60 Models for Population Growth#^thm-60-2|§60.2]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (Increasing/Decreasing Test, applied to $P'$), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]] (Concavity Test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Def. §27.2]] (inflection point)
+*Uses:* [[§60 Models for Population Growth#^thm-60-2|§60.2]], [[§17 The Chain Rule#^thm-17-2|§17.2]] (Chain Rule), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (Increasing/Decreasing Test, applied to $P'$), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|§27.3]] (Concavity Test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Def. §27.2]] (inflection point), [[§60 Models for Population Growth#^rem-60-2|§60, Remark]] (the sign of $dP/dt$)
 
 > [!remark]- Connections
 > - ODE version: [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-2|331 Prop. §8.2]] (for any autonomous equation $y' = f(y)$, $y'' = f'(y)f(y)$; here $f(P) = kP(1 - P/M)$, and $f'(P) = 0$ at $P = M/2$).

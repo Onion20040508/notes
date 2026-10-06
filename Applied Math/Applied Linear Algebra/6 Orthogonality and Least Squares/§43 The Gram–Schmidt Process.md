@@ -136,6 +136,9 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 *Uses:* [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§27 The Dimension of a Vector Space#^thm-27-3|§27.3]] (a subspace of a finite-dimensional space has a basis), [[§41 Orthogonal Sets#^def-41-4|Def. §41.4]]
 
+> [!remark]- Connections
+> - Rigorous treatment: [[§20 Orthonormal Bases#^ladr-6-35|LADR 6.35]] (every finite-dimensional inner product space has an orthonormal basis, by the same argument) and [[§20 Orthonormal Bases#^ladr-6-36|LADR 6.36]] (every orthonormal list extends to an orthonormal basis, the step used to complete $U$ in the proof of the SVD, [[§51★ The Singular Value Decomposition#^thm-51-4|Theorem §51.4]]).
+
 > [!remark] Remark: Method — Gram–Schmidt by Hand
 > Given a basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ of $W$:
 > 1. Put $\mathbf{v}_1 = \mathbf{x}_1$.

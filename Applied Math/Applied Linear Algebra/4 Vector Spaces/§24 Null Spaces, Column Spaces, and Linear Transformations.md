@@ -111,7 +111,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 ^ex-24-2
 
 > [!theorem] Proposition §24.2: The Spanning Set Produced by the Method
-> When $\operatorname{Nul} A$ contains nonzero vectors, the spanning set produced by the method of Remark §24.1
+> When $\operatorname{Nul} A$ contains nonzero vectors, the spanning set produced by the method of [[§24 Null Spaces, Column Spaces, and Linear Transformations#^rem-24-1|Remark: Method — A Spanning Set for Nul A]]
 > 1. is automatically linearly independent, and
 > 2. has as many vectors as there are free variables in $A\mathbf{x} = \mathbf{0}$.
 >
@@ -201,7 +201,7 @@ The course checklist lists the row space with $\operatorname{Nul} A$ and $\opera
 > \operatorname{Row} A = \operatorname{Col} A^T ,
 > $$
 >
-> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ (Theorem §24.3 for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases#^rem-25-2|Remark §25.2]]). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of $A$* to keep.
+> and $\operatorname{Row} A$ is a subspace of $\mathbb{R}^n$ (Theorem §24.3 for $A^T$). For example, the rows of $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ span the subspace $\operatorname{Row} A = \operatorname{Span}\{(1, -3, -2), (-5, 9, 1)\}$ of $\mathbb{R}^3$. Row operations do not change the row space, and the nonzero rows of an echelon form of $A$ form a basis of $\operatorname{Row} A$ ([[§28 Rank#^thm-28-1|Theorem §28.1]], Theorem 13 of 4.6; used in [[§25 Linearly Independent Sets; Bases#^rem-25-2|§25, Remark: Method — Bases for Nul A, Col A and Row A]]). Row operations change the linear dependence relations among the rows, though, so an echelon form does not tell which rows *of $A$* to keep.
 >
 > *Lay: 4.6, Definition (text)*
 > *Source: 235 lecture L16*

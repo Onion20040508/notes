@@ -50,7 +50,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 > e^{it} = \sum_{k=0}^{\infty}\frac{(-1)^kt^{2k}}{(2k)!} + i\sum_{k=0}^{\infty}\frac{(-1)^kt^{2k+1}}{(2k+1)!} . \qquad (9)
 > $$
 >
-> The first series is the Taylor series of $\cos t$ about $t = 0$ and the second that of $\sin t$, so $e^{it} = \cos t + i\sin t$. The argument rests on the unverified assumption that (7) holds for complex values, so it only makes the formula plausible. BDP therefore takes the formula as the *definition* of $e^{it}$ (Definition §15.1). (BDP Problem 3.3.20 outlines a second derivation, from the differential equation $y'' + y = 0$.)
+> The first series is the Taylor series of $\cos t$ about $t = 0$ and the second that of $\sin t$, so $e^{it} = \cos t + i\sin t$. The argument rests on the unverified assumption that (7) holds for complex values, so it only makes the formula plausible. BDP therefore takes the formula as the *definition* of $e^{it}$ ([[§15 Complex Roots of the Characteristic Equation#^def-15-1|Definition §15.1]]). (BDP Problem 3.3.20 outlines a second derivation, from the differential equation $y'' + y = 0$.)
 
 ^rem-15-1
 
@@ -140,7 +140,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 > r_1 = -\tfrac12 + 3i, \qquad r_2 = -\tfrac12 - 3i .
 > $$
 >
-> By Proposition §15.1 the computation of [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|Theorem §13.1]] works for complex $r$, so two solutions are
+> By [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|Proposition §15.1]] the computation of [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|Theorem §13.1]] works for complex $r$, so two solutions are
 >
 > $$
 > y_1(t) = \exp\Big(\Big(-\tfrac12 + 3i\Big)t\Big) = e^{-t/2}\big(\cos 3t + i\sin 3t\big), \qquad y_2(t) = e^{-t/2}\big(\cos 3t - i\sin 3t\big) . \qquad (18), (19)
@@ -198,7 +198,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 ^thm-15-2
 
 > [!proof]+ Proof
-> **Complex solutions.** Let $r = \lambda + i\mu$. By Proposition §15.1, $\frac{d}{dt}e^{rt} = re^{rt}$ and $\frac{d^2}{dt^2}e^{rt} = r^2e^{rt}$, so, exactly as in the proof of [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|Theorem §13.1]],
+> **Complex solutions.** Let $r = \lambda + i\mu$. By [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|Proposition §15.1]], $\frac{d}{dt}e^{rt} = re^{rt}$ and $\frac{d^2}{dt^2}e^{rt} = r^2e^{rt}$, so, exactly as in the proof of [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-1|Theorem §13.1]],
 >
 > $$
 > a\big(e^{rt}\big)'' + b\big(e^{rt}\big)' + ce^{rt} = (ar^2 + br + c)e^{rt} = 0 .
@@ -233,7 +233,7 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 > [!example] Example §15.2: Two Course Initial Value Problems
 > **(a)** Solve $y'' + 6y' + 13y = 0$, $y(0) = 2$, $y'(0) = -1$.
 >
-> Completing the square in $r^2 + 6r + 13 = 0$: $(r + 3)^2 = -4$, so $r + 3 = \pm 2i$ and $r = -3 \pm 2i$, with $\lambda = -3$, $\mu = 2$. By Theorem §15.2,
+> Completing the square in $r^2 + 6r + 13 = 0$: $(r + 3)^2 = -4$, so $r + 3 = \pm 2i$ and $r = -3 \pm 2i$, with $\lambda = -3$, $\mu = 2$. By [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2]],
 >
 > $$
 > y = c_1e^{-3t}\cos 2t + c_2e^{-3t}\sin 2t, \qquad y' = e^{-3t}\big[(-3c_1 + 2c_2)\cos 2t + (-2c_1 - 3c_2)\sin 2t\big] .
@@ -291,4 +291,4 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 ^ex-15-3
 
 ![[m331-15-1.svg]]
-*The three possibilities of [[§15 Complex Roots of the Characteristic Equation#^rem-15-2|Remark: The Sign of λ]], each with $\mu = 3$ and so period $2\pi/3$. (a) $y = e^{-t/2}(2\cos 3t + 3\sin 3t)$ from Example §15.1, inside the decaying envelope $\pm\sqrt{13}\,e^{-t/2}$ (dashed). (b) $y = e^{t/4}(-2\cos 3t + \frac12\sin 3t)$ from Example §15.3(a), inside the growing envelope $\pm\sqrt{17/4}\,e^{t/4}$. (c) $y = 2\cos 3t + \frac83\sin 3t$ from Example §15.3(b), with constant amplitude $\frac{10}{3}$. In each case the envelope is $\pm\sqrt{c_1^2 + c_2^2}\,e^{\lambda t}$.*
+*The three possibilities of [[§15 Complex Roots of the Characteristic Equation#^rem-15-2|Remark: The Sign of λ]], each with $\mu = 3$ and so period $2\pi/3$. (a) $y = e^{-t/2}(2\cos 3t + 3\sin 3t)$ from [[§15 Complex Roots of the Characteristic Equation#^ex-15-1|Example §15.1]], inside the decaying envelope $\pm\sqrt{13}\,e^{-t/2}$ (dashed). (b) $y = e^{t/4}(-2\cos 3t + \frac12\sin 3t)$ from [[§15 Complex Roots of the Characteristic Equation#^ex-15-3|Example §15.3]](a), inside the growing envelope $\pm\sqrt{17/4}\,e^{t/4}$. (c) $y = 2\cos 3t + \frac83\sin 3t$ from Example §15.3(b), with constant amplitude $\frac{10}{3}$. In each case the envelope is $\pm\sqrt{c_1^2 + c_2^2}\,e^{\lambda t}$.*

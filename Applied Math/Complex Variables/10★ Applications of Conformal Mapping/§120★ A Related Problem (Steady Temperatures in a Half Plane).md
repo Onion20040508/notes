@@ -117,13 +117,13 @@ A solved problem becomes the solution of every problem that can be mapped onto i
 >
 > **Map.** $w = \sin z$ maps the half strip $0 < x < \pi/2$, $y > 0$ onto the first quadrant $u > 0$, $v > 0$ ([[§104★ Mapping Vertical Line Segments by w = sin z#^ex-104-2|Example §104.2]]): the side $x = 0$ goes to $\sin(iy) = i\sinh y$, the positive $v$ axis; the base goes to $\sin x \in (0, 1)$ and the side $x = \pi/2$ to $\cosh y \in (1, \infty)$, together the positive $u$ axis. So the new problem is: harmonic in the quadrant, $1$ on the positive $v$ axis, $0$ on the positive $u$ axis.
 >
-> **Solve and compose.** By Example §118.1, $H = \frac2\pi\operatorname{Arg} w = \frac2\pi\arctan\frac vu$. With $u = \sin x\cosh y$, $v = \cos x\sinh y$, $\frac vu = \frac{\cos x\sinh y}{\sin x\cosh y} = \frac{\tanh y}{\tan x}$, so
+> **Solve and compose.** By [[§118★ Steady Temperatures#^ex-118-1|Example §118.1]], $H = \frac2\pi\operatorname{Arg} w = \frac2\pi\arctan\frac vu$. With $u = \sin x\cosh y$, $v = \cos x\sinh y$, $\frac vu = \frac{\cos x\sinh y}{\sin x\cosh y} = \frac{\tanh y}{\tan x}$, so
 >
 > $$
 > H = \frac2\pi\arctan\Big(\frac{\tanh y}{\tan x}\Big) \qquad \Big(0 \le \arctan t \le \frac\pi2\Big).
 > $$
 >
-> **Check.** As $x \to 0^+$ ($y > 0$), $\tanh y/\tan x \to +\infty$ and $H \to 1$; at $x = \pi/2$, $1/\tan x = 0$ and $H = 0$; at $y = 0$, $\tanh 0 = 0$ and $H = 0$. And $H$ is harmonic by Theorem §116.1.
+> **Check.** As $x \to 0^+$ ($y > 0$), $\tanh y/\tan x \to +\infty$ and $H \to 1$; at $x = \pi/2$, $1/\tan x = 0$ and $H = 0$; at $y = 0$, $\tanh 0 = 0$ and $H = 0$. And $H$ is harmonic by [[§116★ Transformations of Harmonic Functions#^thm-116-1|Theorem §116.1]].
 >
 > *B&C: Sec. 121, Exercise 2*
 

@@ -37,7 +37,7 @@ A space curve is traced by a vector function $\mathbf{r}(t)$ of one parameter; a
 > [!remark]- Connections
 > - Parametrized surfaces in 452: [[§18 Surface Integrals#^def-18-1|452 Def. §18.1]], with the tangent vectors [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and the regularity condition $\mathbf{X}_u \times \mathbf{X}_v \ne \mathbf{0}$, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (Stewart's "smooth", Definition §112.3 below).
 
-For example, $\mathbf{r}(u, v) = 2\cos u\,\mathbf{i} + v\,\mathbf{j} + 2\sin u\,\mathbf{k}$ satisfies $x^2 + z^2 = 4\cos^2 u + 4\sin^2 u = 4$, with $y = v$ unrestricted: it is the circular cylinder of radius $2$ about the $y$-axis. Restricting the parameters to $0 \le u \le \pi/2$, $0 \le v \le 3$ gives only the quarter of it of length $3$ with $x \ge 0$, $z \ge 0$ (Stewart Example 16.6.1).
+For example, $\mathbf{r}(u, v) = 2\cos u\,\mathbf{i} + v\,\mathbf{j} + 2\sin u\,\mathbf{k}$ satisfies $x^2 + z^2 = 4\cos^2 u + 4\sin^2 u = 4$, with $y = v$ unrestricted: it is the circular cylinder of radius $2$ about the $y$-axis. Restricting the parameters to $0 \le u \le \pi/2$, $0 \le v \le 3$ gives only the quarter of it of length $3$ with $x \ge 0$, $z \ge 0$ (Stewart, Example 16.6.1).
 
 > [!definition] Definition §112.2: Grid Curves
 > If $S$ is given by $\mathbf{r}(u, v)$, keeping $u$ constant, $u = u_0$, makes $\mathbf{r}(u_0, v)$ a vector function of the single parameter $v$, which defines a curve $C_1$ on $S$. Similarly, keeping $v = v_0$ gives a curve $C_2$ given by $\mathbf{r}(u, v_0)$. These two families of curves, the images of the vertical and horizontal lines of the $uv$-plane, are called **grid curves**.
@@ -46,7 +46,7 @@ For example, $\mathbf{r}(u, v) = 2\cos u\,\mathbf{i} + v\,\mathbf{j} + 2\sin u\,
 
 ^def-112-2
 
-For the cylinder above, the grid curves with $u$ constant are horizontal lines and those with $v$ constant are circles. For the spiral tube $\mathbf{r}(u, v) = \langle (2 + \sin v)\cos u,\ (2 + \sin v)\sin u,\ u + \cos v \rangle$, the curves with $v$ constant are helices, and those with $u$ constant are circles, along which $z = u_0 + \cos v$ varies from $u_0 - 1$ to $u_0 + 1$ (Stewart Example 16.6.2). Grid curves are like lines of latitude and longitude: giving $(u, v)$ locates a point on the surface the way latitude and longitude locate a point on the earth.
+For the cylinder above, the grid curves with $u$ constant are horizontal lines and those with $v$ constant are circles. For the spiral tube $\mathbf{r}(u, v) = \langle (2 + \sin v)\cos u,\ (2 + \sin v)\sin u,\ u + \cos v \rangle$, the curves with $v$ constant are helices, and those with $u$ constant are circles, along which $z = u_0 + \cos v$ varies from $u_0 - 1$ to $u_0 + 1$ (Stewart, Example 16.6.2). Grid curves are like lines of latitude and longitude: giving $(u, v)$ locates a point on the surface the way latitude and longitude locate a point on the earth.
 
 > [!example] Example §112.1: A Plane
 > Find a vector function that represents the plane that passes through the point $P_0$ with position vector $\mathbf{r}_0$ and contains two nonparallel vectors $\mathbf{a}$ and $\mathbf{b}$.
@@ -97,7 +97,7 @@ For the cylinder above, the grid curves with $u$ constant are horizontal lines a
 
 *Uses:* [[§112 Parametric Surfaces and Their Areas#^def-112-1|Def. §112.1]]
 
-For instance, rotating $y = \sin x$, $0 \le x \le 2\pi$, about the $x$-axis gives $x = x$, $y = \sin x\cos\theta$, $z = \sin x\sin\theta$ (Stewart Example 16.6.8), and the elliptic paraboloid $z = x^2 + 2y^2$ is $\mathbf{r}(x, y) = x\,\mathbf{i} + y\,\mathbf{j} + (x^2 + 2y^2)\,\mathbf{k}$ (Stewart Example 16.6.6). Surfaces that are simple in cylindrical or spherical coordinates are parametrized by the coordinates that describe them: the cylinder $x^2 + y^2 = 4$, $0 \le z \le 1$, which is $r = 2$ in cylindrical coordinates, is $\mathbf{r}(\theta, z) = 2\cos\theta\,\mathbf{i} + 2\sin\theta\,\mathbf{j} + z\,\mathbf{k}$, $0 \le \theta \le 2\pi$, $0 \le z \le 1$ (Stewart Example 16.6.5); the sphere is in [[§112 Parametric Surfaces and Their Areas#^ex-112-4|Example §112.4]].
+For instance, rotating $y = \sin x$, $0 \le x \le 2\pi$, about the $x$-axis gives $x = x$, $y = \sin x\cos\theta$, $z = \sin x\sin\theta$ (Stewart, Example 16.6.8), and the elliptic paraboloid $z = x^2 + 2y^2$ is $\mathbf{r}(x, y) = x\,\mathbf{i} + y\,\mathbf{j} + (x^2 + 2y^2)\,\mathbf{k}$ (Stewart, Example 16.6.6). Surfaces that are simple in cylindrical or spherical coordinates are parametrized by the coordinates that describe them: the cylinder $x^2 + y^2 = 4$, $0 \le z \le 1$, which is $r = 2$ in cylindrical coordinates, is $\mathbf{r}(\theta, z) = 2\cos\theta\,\mathbf{i} + 2\sin\theta\,\mathbf{j} + z\,\mathbf{k}$, $0 \le \theta \le 2\pi$, $0 \le z \le 1$ (Stewart, Example 16.6.5); the sphere is in [[§112 Parametric Surfaces and Their Areas#^ex-112-4|Example §112.4]].
 
 > [!example] Example §112.2: Two Parametrizations of a Cone
 > Find a parametric representation for the surface $z = 2\sqrt{x^2 + y^2}$, the top half of the cone $z^2 = 4x^2 + 4y^2$.

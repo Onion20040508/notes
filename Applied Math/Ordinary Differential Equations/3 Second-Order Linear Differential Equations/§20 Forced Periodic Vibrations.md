@@ -133,7 +133,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 > - See also: [[§16★ Applications of Fourier Series and Integrals#^thm-16-1|341 Thm. §16.1]] (the periodic response to any periodic forcing, found term by term from the Fourier series of the force), with a damped oscillator driven by a square wave in [[§16★ Applications of Fourier Series and Integrals#^ex-16-1|341 Ex. §16.1]].
 
 > [!theorem] Proposition §20.2: Amplitude of the Forced Response
-> In the notation of Theorem §20.1, with $\Gamma = \dfrac{\gamma^2}{mk}$,
+> In the notation of [[§20 Forced Periodic Vibrations#^thm-20-1|Theorem §20.1]], with $\Gamma = \dfrac{\gamma^2}{mk}$,
 >
 > $$
 > \frac{Rk}{F_0} = \left[\Big(1 - \frac{\omega^2}{\omega_0^2}\Big)^2 + \Gamma\,\frac{\omega^2}{\omega_0^2}\right]^{-1/2} . \qquad (13)
@@ -193,7 +193,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 *Uses:* [[§20 Forced Periodic Vibrations#^thm-20-1|§20.1]]
 
 ![[m331-20-2.svg]]
-*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ (Example §20.2) the peak is $\approx 8.02$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
+*The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ ([[§20 Forced Periodic Vibrations#^ex-20-2|Example §20.2]]) the peak is $\approx 8.02$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
 
 > [!definition] Definition §20.2: Resonance
 > For a lightly damped system, the amplitude $R$ of the forced response is large when $\omega$ is near $\omega_0$, even for small forces: by (15), $R_{\max} \approx F_0/(\gamma\omega_0)$, and the smaller $\gamma$, the more pronounced the peak. This phenomenon is called **resonance**.
@@ -342,7 +342,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 >
 > **(b)** For the forced system $\dfrac{d^2y}{dt^2} + 3y = 7\sin(\alpha t)$ (parameter $\alpha > 0$): for which $\alpha$ does it exhibit resonance? Find the general solution for that $\alpha$.
 >
-> The natural frequency is $\omega_0 = \sqrt3$ ($r^2 + 3 = 0$, $r = \pm\sqrt3\,i$), so resonance occurs for $\alpha = \sqrt3$, when the forcing $\sin(\sqrt3\,t)$ solves the homogeneous equation. Try $Y = t(A\cos\sqrt3\,t + B\sin\sqrt3\,t)$; as in the proof of Proposition §20.4,
+> The natural frequency is $\omega_0 = \sqrt3$ ($r^2 + 3 = 0$, $r = \pm\sqrt3\,i$), so resonance occurs for $\alpha = \sqrt3$, when the forcing $\sin(\sqrt3\,t)$ solves the homogeneous equation. Try $Y = t(A\cos\sqrt3\,t + B\sin\sqrt3\,t)$; as in the proof of [[§20 Forced Periodic Vibrations#^prop-20-4|Proposition §20.4]],
 >
 > $$
 > Y'' + 3Y = 2\sqrt3\,(-A\sin\sqrt3\,t + B\cos\sqrt3\,t) = 7\sin\sqrt3\,t ,
@@ -360,9 +360,9 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 ^ex-20-4
 
 ![[m331-20-1.svg]]
-*(a) The beat of Example §20.3: $u = 2.778\sin(0.1t)\sin(0.9t)$ (blue) inside the slowly varying amplitude $\pm 2.778\sin(0.1t)$ (red, dashed); one beat lasts $10\pi$. (b) Resonance, Example §20.4(a): $u = \frac{t}{4}\sin t$ between the lines $u = \pm t/4$. As $\omega \to \omega_0$ in (a), the length $2\pi/|\omega_0 - \omega|$ of a beat grows and the first half of each beat approaches the linear growth in (b).*
+*(a) The beat of [[§20 Forced Periodic Vibrations#^ex-20-3|Example §20.3]]: $u = 2.778\sin(0.1t)\sin(0.9t)$ (blue) inside the slowly varying amplitude $\pm 2.778\sin(0.1t)$ (red, dashed); one beat lasts $10\pi$. (b) Resonance, [[§20 Forced Periodic Vibrations#^ex-20-4|Example §20.4]](a): $u = \frac{t}{4}\sin t$ between the lines $u = \pm t/4$. As $\omega \to \omega_0$ in (a), the length $2\pi/|\omega_0 - \omega|$ of a beat grows and the first half of each beat approaches the linear growth in (b).*
 
 > [!remark] Remark: Unbounded Growth Is a Limit of the Model
-> Because of the term $t\sin(\omega_0 t)$, (24) predicts unbounded motion whatever the initial conditions. In reality the spring cannot stretch infinitely far, and as soon as $u$ becomes large the model itself fails, since Hooke's law assumes $u$ small. With damping, the response stays bounded (Theorem §20.1), but by (15) it can still be very large when $\gamma$ is small and $\omega$ is close to $\omega_0$.
+> Because of the term $t\sin(\omega_0 t)$, (24) predicts unbounded motion whatever the initial conditions. In reality the spring cannot stretch infinitely far, and as soon as $u$ becomes large the model itself fails, since Hooke's law assumes $u$ small. With damping, the response stays bounded ([[§20 Forced Periodic Vibrations#^thm-20-1|Theorem §20.1]]), but by (15) it can still be very large when $\gamma$ is small and $\omega$ is close to $\omega_0$.
 
 ^rem-20-2

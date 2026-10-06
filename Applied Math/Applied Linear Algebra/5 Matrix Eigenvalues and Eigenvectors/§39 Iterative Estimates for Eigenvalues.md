@@ -148,7 +148,7 @@ This method approximates *any* eigenvalue, provided a good initial estimate $\al
 >
 > and the corresponding eigenvectors are the same as those for $A$.
 >
-> *Lay: 5.8 (text); Exercises 5.8.15–16*
+> *Lay: 5.8 (text) and Exercises 15–16*
 
 ^prop-39-2
 
@@ -210,6 +210,6 @@ Suppose, for example, that $\alpha$ is closer to $\lambda_2$ than to the other e
 > [!remark] Remark: Beyond These Methods
 > The power and inverse power methods are practical for many simple situations and introduce the problem of eigenvalue estimation. A more robust and widely used iterative method is the **QR algorithm**, the heart of MATLAB's `eig(A)`; it is built on similarity transformations ([[§33 The Characteristic Equation#^thm-33-6|Theorem §33.6]]). To judge whether a given $\mathbf{x}$ is a good approximate eigenvector, compute $A\mathbf{x}$ and compare it with multiples of $\mathbf{x}$: if the entrywise ratios $(A\mathbf{x})_i/x_i$ are nearly equal, their common value estimates the eigenvalue (Lay's Practice Problem).
 >
-> *Lay: 5.8 (text); Practice Problem 5.8*
+> *Lay: 5.8 (text) and Practice Problem*
 
 ^rem-39-4

@@ -73,7 +73,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 ^def-25-3
 
 > [!remark]- Connections
-> - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|551 Ex. §11.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is Theorem §25.3, and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is Theorem §25.2.
+> - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|551 Ex. §11.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is [[§25 Impulse Functions#^thm-25-3|Theorem §25.3]], and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is Theorem §25.2.
 > - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-4|556 Prop. §32.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
 
 > [!definition] Definition §25.4: Transform and Integrals of δ
@@ -139,7 +139,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 ^thm-25-2
 
 > [!proof]+ Proof
-> By Definition §25.4 and Theorem §25.1, $\mathcal{L}\{\delta(t - t_0)\} = e^{-st_0}\lim_{\tau \to 0^+} \dfrac{\sinh(s\tau)}{s\tau}$. The quotient is of the form $\frac00$ as $\tau \to 0^+$; by l'Hôpital's rule (differentiating in $\tau$, with $s$ fixed),
+> By [[§25 Impulse Functions#^def-25-4|Definition §25.4]] and [[§25 Impulse Functions#^thm-25-1|Theorem §25.1]], $\mathcal{L}\{\delta(t - t_0)\} = e^{-st_0}\lim_{\tau \to 0^+} \dfrac{\sinh(s\tau)}{s\tau}$. The quotient is of the form $\frac00$ as $\tau \to 0^+$; by l'Hôpital's rule (differentiating in $\tau$, with $s$ fixed),
 >
 > $$
 > \lim_{\tau \to 0^+} \frac{\sinh(s\tau)}{s\tau} = \lim_{\tau \to 0^+} \frac{s\cosh(s\tau)}{s} = \cosh 0 = 1 .
@@ -189,7 +189,7 @@ The formulas agree with the shift rule of [[§23 Step Functions#^thm-23-2|Theore
 >
 > **(a)** $\displaystyle\int_1^7 \delta(t + 3)\,dt$. The impulse is at $t = -3$, outside $[1, 7]$, so the integral is $0$.
 >
-> **(b)** $\displaystyle\int_1^7 \delta(t - 6)\,dt$. The impulse is at $t = 6 \in (1, 7)$; by Theorem §25.3 with $f = 1$, the integral is $1$.
+> **(b)** $\displaystyle\int_1^7 \delta(t - 6)\,dt$. The impulse is at $t = 6 \in (1, 7)$; by [[§25 Impulse Functions#^thm-25-3|Theorem §25.3]] with $f = 1$, the integral is $1$.
 >
 > **(c)** $\displaystyle\int_1^7 (2t^4 - 5t^3 - 7t^2 - 1)\,\delta(t - 8)\,dt$. The impulse is at $t = 8$, outside $[1, 7]$, so the integral is $0$, whatever the polynomial.
 >
@@ -201,7 +201,7 @@ The formulas agree with the shift rule of [[§23 Step Functions#^thm-23-2|Theore
 
 ## Impulsive Forcing
 
-With Theorem §25.2, an impulse in the forcing term is handled exactly like a step ([[§24 Differential Equations with Discontinuous Forcing Functions#^rem-24-1|Method of §24]]): $k\delta(t - c)$ contributes $ke^{-cs}$ to the transformed equation.
+With [[§25 Impulse Functions#^thm-25-2|Theorem §25.2]], an impulse in the forcing term is handled exactly like a step ([[§24 Differential Equations with Discontinuous Forcing Functions#^rem-24-1|Method of §24]]): $k\delta(t - c)$ contributes $ke^{-cs}$ to the transformed equation.
 
 > [!example] Example §25.2: A Unit Impulse at t = 5
 > Solve $2y'' + y' + 2y = \delta(t - 5)$, $y(0) = 0$, $y'(0) = 0$. This is the circuit or oscillator of [[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-1|Example §24.1]], now struck by a unit impulse at $t = 5$.
@@ -232,16 +232,16 @@ With Theorem §25.2, an impulse in the forcing term is handled exactly like a st
 ^ex-25-2
 
 ![[m331-25-1.svg]]
-*(a) The pulses $d_\tau$ of Definition §25.2 for $\tau = 1, \frac12, \frac14$: narrower and taller, always with area $1$. (b) The responses of the system of Example §25.2 to the shifted pulses $d_\tau(t - 5)$ (computed with Theorem §23.2 from the step response of Example §24.1) approach its response to $\delta(t - 5)$ (blue) as $\tau \to 0^+$. This is the content of Definition §25.4: the impulse is the limit of short pulses of unit area.*
+*(a) The pulses $d_\tau$ of [[§25 Impulse Functions#^def-25-2|Definition §25.2]] for $\tau = 1, \frac12, \frac14$: narrower and taller, always with area $1$. (b) The responses of the system of [[§25 Impulse Functions#^ex-25-2|Example §25.2]] to the shifted pulses $d_\tau(t - 5)$ (computed with [[§23 Step Functions#^thm-23-2|Theorem §23.2]] from the step response of [[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-1|Example §24.1]]) approach its response to $\delta(t - 5)$ (blue) as $\tau \to 0^+$. This is the content of [[§25 Impulse Functions#^def-25-4|Definition §25.4]]: the impulse is the limit of short pulses of unit area.*
 
 > [!remark] Remark: What an Impulse Does to y′
-> In Example §25.2 the derivative jumps by $\frac12 = \frac{1}{a}$, where $a = 2$ is the leading coefficient. In general, for $ay'' + by' + cy = k\delta(t - t_0)$ the solution $y$ is continuous at $t_0$ and
+> In [[§25 Impulse Functions#^ex-25-2|Example §25.2]] the derivative jumps by $\frac12 = \frac{1}{a}$, where $a = 2$ is the leading coefficient. In general, for $ay'' + by' + cy = k\delta(t - t_0)$ the solution $y$ is continuous at $t_0$ and
 >
 > $$
 > y'(t_0^+) - y'(t_0^-) = \frac{k}{a} .
 > $$
 >
-> Integrate the equation over $[t_0 - \varepsilon, t_0 + \varepsilon]$: the right side gives $k$ (Theorem §25.3), the left side gives $a\big[y'(t_0 + \varepsilon) - y'(t_0 - \varepsilon)\big] + b\big[y(t_0 + \varepsilon) - y(t_0 - \varepsilon)\big] + c\int y$, and as $\varepsilon \to 0$ only the first bracket survives because $y$ is continuous. Mechanically: the impulse $k$ changes the momentum $a\,y'$ by $k$ instantaneously, while the position has no time to change. So an impulse at $t_0$ is equivalent to restarting the free motion at $t_0$ with the velocity changed by $k/a$.
+> Integrate the equation over $[t_0 - \varepsilon, t_0 + \varepsilon]$: the right side gives $k$ ([[§25 Impulse Functions#^thm-25-3|Theorem §25.3]]), the left side gives $a\big[y'(t_0 + \varepsilon) - y'(t_0 - \varepsilon)\big] + b\big[y(t_0 + \varepsilon) - y(t_0 - \varepsilon)\big] + c\int y$, and as $\varepsilon \to 0$ only the first bracket survives because $y$ is continuous. Mechanically: the impulse $k$ changes the momentum $a\,y'$ by $k$ instantaneously, while the position has no time to change. So an impulse at $t_0$ is equivalent to restarting the free motion at $t_0$ with the velocity changed by $k/a$.
 
 ^rem-25-1
 
@@ -292,7 +292,7 @@ With Theorem §25.2, an impulse in the forcing term is handled exactly like a st
 > [!example] Example §25.5: Choosing the Strength of an Impulse
 > Consider $y'' + 2y' + y = k\delta(t - 3)$, $y(0) = 0$, $y'(0) = 0$, with $k$ a constant. (a) Solve. (b) Find $k$ such that the peak value of the solution is $7$.
 >
-> **(a)** $(s^2 + 2s + 1)Y = ke^{-3s}$, so $Y(s) = ke^{-3s}\dfrac{1}{(s + 1)^2}$. Since $\mathcal{L}^{-1}\{1/(s + 1)^2\} = te^{-t}$ (Theorem §23.3 with $\mathcal{L}\{t\} = 1/s^2$),
+> **(a)** $(s^2 + 2s + 1)Y = ke^{-3s}$, so $Y(s) = ke^{-3s}\dfrac{1}{(s + 1)^2}$. Since $\mathcal{L}^{-1}\{1/(s + 1)^2\} = te^{-t}$ ([[§23 Step Functions#^thm-23-3|Theorem §23.3]] with $\mathcal{L}\{t\} = 1/s^2$),
 >
 > $$
 > y(t) = k\,u_3(t)\,(t - 3)\,e^{-(t - 3)} .

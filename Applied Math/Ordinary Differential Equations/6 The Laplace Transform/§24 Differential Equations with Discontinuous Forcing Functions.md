@@ -27,7 +27,7 @@ This section puts the step functions of [[§23 Step Functions|§23]] to work: li
 > 2. Transform the equation, using $\mathcal{L}\{y'\} = sY - y(0)$ and $\mathcal{L}\{y''\} = s^2Y - sy(0) - y'(0)$ ([[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]], [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]) and $\mathcal{L}\{u_c(t)k(t - c)\} = e^{-cs}K(s)$ ([[§23 Step Functions#^thm-23-2|Theorem §23.2]]). Solve for $Y(s)$.
 > 3. Collect the terms of $Y(s)$ by exponential factor. Typically $Y(s) = \Phi(s) + \sum_c e^{-cs}H_c(s)$, where $\Phi$ comes from the initial conditions.
 > 4. Invert: find $h_c(t) = \mathcal{L}^{-1}\{H_c(s)\}$ by partial fractions or completing the square, then delay it, $u_c(t)\,h_c(t - c)$ ([[§23 Step Functions#^rem-23-2|Method of §23]]).
-> 5. Write $y$ piecewise on the intervals between break points, and read off the behavior on each: rest, response to the switched-on force, free motion after it is removed. Check that $y$ and $y'$ are continuous at the break points (Proposition §24.1).
+> 5. Write $y$ piecewise on the intervals between break points, and read off the behavior on each: rest, response to the switched-on force, free motion after it is removed. Check that $y$ and $y'$ are continuous at the break points ([[§24 Differential Equations with Discontinuous Forcing Functions#^prop-24-1|Proposition §24.1]]).
 
 ^rem-24-1
 
@@ -80,7 +80,7 @@ This section puts the step functions of [[§23 Step Functions|§23]] to work: li
 
 ## Smoothness of the Solution at a Jump
 
-In Example §24.1 one can compute directly from $h$ that $y$ and $y'$ are continuous at $t = 5$ and $t = 20$, while
+In [[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-1|Example §24.1]] one can compute directly from $h$ that $y$ and $y'$ are continuous at $t = 5$ and $t = 20$, while
 
 $$
 \lim_{t \to 5^-} y''(t) = 0, \qquad \lim_{t \to 5^+} y''(t) = h''(0) = \frac12 .
@@ -122,7 +122,7 @@ So $y''$ jumps by $\frac12$ at $t = 5$, and in the same way by $-\frac12$ at $t 
 
 *Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]] (existence and uniqueness, Theorem 3.2.1), [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-3|§27.3]], [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|§27.1]] (order $n$)
 
-For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in $g$ divided by $a$. In Example §24.1 ($a = 2$) this is $\frac12$ at $t = 5$ and $-\frac12$ at $t = 20$. The more regular $g$ is, the more regular $y$ is: if $g$ is continuous but $g'$ jumps, then $y''$ is continuous and $y'''$ jumps (Example §24.2).
+For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in $g$ divided by $a$. In [[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-1|Example §24.1]] ($a = 2$) this is $\frac12$ at $t = 5$ and $-\frac12$ at $t = 20$. The more regular $g$ is, the more regular $y$ is: if $g$ is continuous but $g'$ jumps, then $y''$ is continuous and $y'''$ jumps ([[§24 Differential Equations with Discontinuous Forcing Functions#^ex-24-2|Example §24.2]]).
 
 ## More Examples
 
@@ -189,7 +189,7 @@ For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in
 > y(t) = \begin{cases} t - \sin t, & 0 \le t < 6, \\ -\sin t + \sin(t - 6) + 6\cos(t - 6), & t \ge 6. \end{cases}
 > $$
 >
-> After $t = 6$ the motion is a free oscillation $y'' + y = 0$. Check at $t = 6$: both formulas give $y(6) = 6 - \sin 6$ and $y'(6) = 1 - \cos 6$, as Proposition §24.1 requires.
+> After $t = 6$ the motion is a free oscillation $y'' + y = 0$. Check at $t = 6$: both formulas give $y(6) = 6 - \sin 6$ and $y'(6) = 1 - \cos 6$, as [[§24 Differential Equations with Discontinuous Forcing Functions#^prop-24-1|Proposition §24.1]] requires.
 >
 > *Source: 331 Written HW 5, Problem 4*
 

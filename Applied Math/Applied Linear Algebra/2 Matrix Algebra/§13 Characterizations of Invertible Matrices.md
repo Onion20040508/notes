@@ -96,7 +96,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 ^cor-13-2
 
 > [!proof]+ Proof
-> $AB = I$ is statement (k) for $A$ (with $D = B$), so $A$ is invertible by Theorem §13.1. Multiplying $AB = I$ on the left by $A^{-1}$ gives $B = A^{-1}(AB) = A^{-1}I = A^{-1}$ (Lay's Exercise 8 in Section 2.2). Then $B$ is invertible with $B^{-1} = (A^{-1})^{-1} = A$ by Theorem §12.4(a).
+> $AB = I$ is statement (k) for $A$ (with $D = B$), so $A$ is invertible by Theorem §13.1. Multiplying $AB = I$ on the left by $A^{-1}$ gives $B = A^{-1}(AB) = A^{-1}I = A^{-1}$ (Lay's Exercise 8 in Section 2.2). Then $B$ is invertible with $B^{-1} = (A^{-1})^{-1} = A$ by [[§12 The Inverse of a Matrix#^thm-12-4|Theorem §12.4]](a).
 
 ^pf-13-2
 
@@ -117,13 +117,13 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 >
 > **(d)** If for some $n \times n$ matrix $A$ statement (g) is false, then $A\mathbf{x} = \mathbf{b}$ is inconsistent for at least one $\mathbf{b}$ in $\mathbb{R}^n$, and also, by (d), $A\mathbf{x} = \mathbf{0}$ has nontrivial solutions.
 >
-> *Lay: Example 2.3.1; Practice Problems 2.3.1–2.3.3*
+> *Lay: Example 2.3.1; 2.3, Practice Problems 1–3*
 
 ^ex-13-1
 
 ## Invertible Linear Transformations
 
-Matrix multiplication corresponds to composition of linear transformations (Theorem §11.2), so the equation $A^{-1}A\mathbf{x} = \mathbf{x}$ says that multiplication by $A^{-1}$ transforms $A\mathbf{x}$ back into $\mathbf{x}$.
+Matrix multiplication corresponds to composition of linear transformations ([[§11 Matrix Operations#^thm-11-2|Theorem §11.2]]), so the equation $A^{-1}A\mathbf{x} = \mathbf{x}$ says that multiplication by $A^{-1}$ transforms $A\mathbf{x}$ back into $\mathbf{x}$.
 
 > [!definition] Definition §13.1: Invertible Linear Transformation
 > A linear transformation $T : \mathbb{R}^n \to \mathbb{R}^n$ is **invertible** if there exists a function $S : \mathbb{R}^n \to \mathbb{R}^n$ such that
@@ -193,7 +193,7 @@ Matrix multiplication corresponds to composition of linear transformations (Theo
 ^ex-13-2
 
 > [!example] Example §13.3: Inverting Geometric Transformations of the Plane
-> **Rotation.** The counterclockwise rotation $R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ has $\det R_\theta = \cos^2\theta + \sin^2\theta = 1 \ne 0$, and by Theorem §12.2
+> **Rotation.** The counterclockwise rotation $R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ has $\det R_\theta = \cos^2\theta + \sin^2\theta = 1 \ne 0$, and by [[§12 The Inverse of a Matrix#^thm-12-2|Theorem §12.2]]
 >
 > $$
 > R_\theta^{-1} = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix} = \begin{bmatrix} \cos(-\theta) & -\sin(-\theta) \\ \sin(-\theta) & \cos(-\theta) \end{bmatrix} = R_{-\theta} .

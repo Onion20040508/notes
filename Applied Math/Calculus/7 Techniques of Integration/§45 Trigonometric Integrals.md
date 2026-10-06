@@ -313,7 +313,7 @@ The home of these identities is [[§119 Trigonometry#^cor-119-9|Corollary §119.
 > \int_{-\pi}^{\pi} \sin mx \cos nx\,dx = 0, \qquad \int_{-\pi}^{\pi} \sin mx \sin nx\,dx = \int_{-\pi}^{\pi} \cos mx \cos nx\,dx = \begin{cases} 0 & m \ne n \\ \pi & m = n . \end{cases}
 > $$
 >
-> For instance, if $m \ne n$, (b) turns $\sin mx \sin nx$ into $\frac12[\cos(m - n)x - \cos(m + n)x]$, and each cosine integrates to a multiple of $\sin(kx)$ with $k \ne 0$ an integer, which vanishes at $\pm\pi$. If $m = n$, it is $\frac12[1 - \cos 2mx]$, with integral $\pi$. (Stewart's Exercises 75–77.) So the coefficients of a finite Fourier series $f(x) = \sum_{n=1}^N a_n \sin nx$ are recovered as $a_m = \frac1\pi \int_{-\pi}^{\pi} f(x) \sin mx\,dx$ (Exercise 78). In the language of linear algebra, the functions $\sin nx$, $\cos nx$ are orthogonal for the inner product $\langle f, g \rangle = \int_{-\pi}^{\pi} f g\,dx$.
+> For instance, if $m \ne n$, (b) turns $\sin mx \sin nx$ into $\frac12[\cos(m - n)x - \cos(m + n)x]$, and each cosine integrates to a multiple of $\sin(kx)$ with $k \ne 0$ an integer, which vanishes at $\pm\pi$. If $m = n$, it is $\frac12[1 - \cos 2mx]$, with integral $\pi$. (Stewart's Exercises 75–77.) So the coefficients of a finite Fourier series $f(x) = \sum_{n=1}^N a_n \sin nx$ are recovered as $a_m = \frac1\pi \int_{-\pi}^{\pi} f(x) \sin mx\,dx$ (Exercise 78). In the language of linear algebra, the functions $\sin nx$, $\cos nx$ are orthogonal for the inner product $\langle f, g \rangle = \int_{-\pi}^{\pi} f g\,dx$ ([[§46 Inner Product Spaces#^def-46-1|235 Def. §46.1]]; the integral inner product is [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]]).
 
 ^rem-45-3
 

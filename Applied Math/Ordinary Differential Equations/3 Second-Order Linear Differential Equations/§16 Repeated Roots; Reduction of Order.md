@@ -105,7 +105,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 > [!example] Example §16.1: A Repeated Root
 > Solve $y'' - 8y' + 16y = 0$, $y(0) = -3$, $y'(0) = 2$.
 >
-> $r^2 - 8r + 16 = (r - 4)^2 = 0$ has the repeated root $r = 4$, so by Theorem §16.1
+> $r^2 - 8r + 16 = (r - 4)^2 = 0$ has the repeated root $r = 4$, so by [[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]]
 >
 > $$
 > y = c_1e^{4t} + c_2te^{4t}, \qquad y' = 4c_1e^{4t} + c_2e^{4t} + 4c_2te^{4t} .
@@ -151,7 +151,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 ^ex-16-2
 
 ![[m331-16-1.svg]]
-*Example §16.2: solutions of $y'' - y' + \frac{y}{4} = 0$ with $y(0) = 2$ and $y'(0) = b$, namely $y = (2 + (b - 1)t)e^{t/2}$. The linear factor decides the sign and the exponential decides the size. For $b = \frac13$ the factor vanishes at $t = 3$; for $b = 0.8$ it would vanish at $t = 10$, beyond the picture, after which that solution too heads to $-\infty$. The critical slope $b = 1$ gives the pure exponential $2e^{t/2}$, the boundary between the two behaviors.*
+*[[§16 Repeated Roots; Reduction of Order#^ex-16-2|Example §16.2]]: solutions of $y'' - y' + \frac{y}{4} = 0$ with $y(0) = 2$ and $y'(0) = b$, namely $y = (2 + (b - 1)t)e^{t/2}$. The linear factor decides the sign and the exponential decides the size. For $b = \frac13$ the factor vanishes at $t = 3$; for $b = 0.8$ it would vanish at $t = 10$, beyond the picture, after which that solution too heads to $-\infty$. The critical slope $b = 1$ gives the pure exponential $2e^{t/2}$, the boundary between the two behaviors.*
 
 > [!remark] Remark: Behavior as t → ∞
 > The asymptotic behavior with a repeated root is like that for distinct real roots ([[§13 Homogeneous Differential Equations with Constant Coefficients#^rem-13-1|§13, Remark: Behavior as t → ∞]]). If the repeated root is negative, every solution decays to $0$; if it is positive, every nonzero solution grows in magnitude without bound. The linear factor $t$ has little influence: the exponential decides growth or decay. If the repeated root is zero, the equation is $y'' = 0$ and the general solution is a linear function of $t$.

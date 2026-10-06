@@ -205,7 +205,7 @@ The term *subspace* is used when at least two vector spaces are in mind, one ins
 >
 > the zero sequence satisfies the recursion, and if $(x_n)$ and $(y_n)$ do, then $x_{n+1} + y_{n+1} = (x_n + y_n) + (x_{n-1} + y_{n-1})$ and $cx_{n+1} = cx_n + cx_{n-1}$. The Fibonacci sequence $1, 1, 2, 3, 5, 8, \ldots$ is one element. The lecture asks which geometric sequences $(\lambda, \lambda^2, \lambda^3, \ldots)$ belong to this subspace: the recursion becomes $\lambda^{n-1}(\lambda^2 - \lambda - 1) = 0$, so for $\lambda \ne 0$ exactly the two roots $\lambda = (1 \pm \sqrt5)/2$ of $\lambda^2 = \lambda + 1$ work. ([[§26 Coordinate Systems#^ex-26-3|Example §26.3]](c) identifies this subspace with $\mathbb{R}^2$, and [[§30 Applications to Difference Equations#^ex-30-4|Example §30.4]] writes every Fibonacci-type sequence as a combination of these two geometric sequences, which gives the closed formula for the Fibonacci numbers.)
 >
-> *Lay: Examples 4.1.6–4.1.8; Practice Problem 3 (4.1)*
+> *Lay: Examples 4.1.6–4.1.8; 4.1, Practice Problem 3*
 > *Source: 235 lectures L13, L14*
 
 ^ex-23-2
@@ -221,7 +221,7 @@ The term *subspace* is used when at least two vector spaces are in mind, one ins
 >
 > The lecture's moral: subspaces are cut out by *linear* (homogeneous) conditions. Inequalities or nonlinear conditions in the description of a set are a reason to suspect it is not a subspace.
 >
-> *Lay: Example 4.1.9; Practice Problem 1 (4.1)*
+> *Lay: Example 4.1.9; 4.1, Practice Problem 1*
 > *Source: 235 lecture L10*
 
 ^ex-23-3

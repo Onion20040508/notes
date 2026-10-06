@@ -30,7 +30,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 ^lem-88-1
 
 > [!proof]+ Proof
-> **$\sin\theta \ge 2\theta/\pi$ on $[0, \pi/2]$.** B&C reads this off the graphs (figure below); here is why. Let $g(\theta) = \sin\theta - 2\theta/\pi$. Then $g(0) = g(\pi/2) = 0$ and $g''(\theta) = -\sin\theta \le 0$, so $g$ is concave on $[0, \pi/2]$ and lies above the chord joining its endpoint values, which is $0$. Hence $g \ge 0$.
+> **$\sin\theta \ge 2\theta/\pi$ on $[0, \pi/2]$.** B&C reads this off the graphs (figure below); here is why. Let $g(\theta) = \sin\theta - 2\theta/\pi$. Then $g(0) = g(\pi/2) = 0$ and $g''(\theta) = -\sin\theta \le 0$, so $g$ is concave on $[0, \pi/2]$ and lies above the chord joining its endpoint values, which is $0$. In detail: $g'(\theta) = \cos\theta - 2/\pi$ decreases strictly from $g'(0) = 1 - 2/\pi > 0$ to $g'(\pi/2) = -2/\pi < 0$, so it vanishes at exactly one point $\theta_0$, and $g$ increases on $[0, \theta_0]$ and decreases on $[\theta_0, \pi/2]$. A function that rises and then falls is at least the smaller of its endpoint values, here $0$. Hence $g \ge 0$.
 >
 > **The estimate.** Since $R > 0$, $e^{-R\sin\theta} \le e^{-2R\theta/\pi}$ for $0 \le \theta \le \pi/2$, and
 >
@@ -41,6 +41,8 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 > This is (2). The substitution $\theta \mapsto \pi - \theta$ leaves $\sin\theta$ unchanged (the graph of $\sin\theta$ on $[0, \pi]$ is symmetric about $\theta = \pi/2$), so $\int_{\pi/2}^{\pi} e^{-R\sin\theta}\,d\theta = \int_0^{\pi/2} e^{-R\sin\theta}\,d\theta$, and adding gives (1).
 
 ^pf-88-1
+
+*Uses:* [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Calc Thm. §27.1]] (increasing/decreasing test), [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-3|Calc Thm. §27.3]] (concavity test)
 
 ![[m342-88-1.svg]]
 *Jordan's inequality: on $0 \le \theta \le \pi/2$ the concave curve $y = \sin\theta$ lies above its chord $y = 2\theta/\pi$, and by symmetry above $y = 2(\pi - \theta)/\pi$ on the other half. So $e^{-R\sin\theta}$ is at most $e^{-2R\theta/\pi}$, whose integral is less than $\pi/(2R)$: the integrand is close to $1$ only on intervals of length about $1/R$ at the two ends.*
@@ -125,7 +127,7 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 >
 > with $\big|\operatorname{Im}\int_{C_R} fe^{i2z}\big| \le \big|\int_{C_R} fe^{i2z}\big|$ (6).
 >
-> **The arc needs Jordan.** On $C_R$, $|f(z)| \le M_R = R/(R^2 - 3)$ and $|e^{i2z}| \le 1$. The bound of Theorem §47.2 is $M_R\pi R = \pi R^2/(R^2 - 3) = \pi/(1 - 3/R^2)$, which tends to $\pi$, not $0$. But $M_R = \dfrac{1/R}{1 - 3/R^2} \to 0$, so Jordan's lemma (Theorem §88.2, $a = 2$) gives $\lim_{R\to\infty}\int_{C_R} f(z)e^{i2z}\,dz = 0$.
+> **The arc needs Jordan.** On $C_R$, $|f(z)| \le M_R = R/(R^2 - 3)$ and $|e^{i2z}| \le 1$. The bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]] is $M_R\pi R = \pi R^2/(R^2 - 3) = \pi/(1 - 3/R^2)$, which tends to $\pi$, not $0$. But $M_R = \dfrac{1/R}{1 - 3/R^2} \to 0$, so Jordan's lemma (Theorem §88.2, $a = 2$) gives $\lim_{R\to\infty}\int_{C_R} f(z)e^{i2z}\,dz = 0$.
 >
 > **Conclusion.** The integrand in (5) is even, so
 >

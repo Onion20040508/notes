@@ -81,7 +81,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 > p(t) = \frac{t}{t(t - 3)} = \frac{1}{t - 3}, \qquad q(t) = -\frac{t + 3}{t(t - 3)}, \qquad g(t) = 0 .
 > $$
 >
-> The coefficients are discontinuous only at $t = 0$ (where $q$ blows up) and $t = 3$. The longest open interval containing the initial point $t = 1$ on which all of them are continuous is $0 < t < 3$, and Theorem §14.1 guarantees a solution there.
+> The coefficients are discontinuous only at $t = 0$ (where $q$ blows up) and $t = 3$. The longest open interval containing the initial point $t = 1$ on which all of them are continuous is $0 < t < 3$, and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] guarantees a solution there.
 >
 > **(b)** Find the unique solution of $y'' + p(t)y' + q(t)y = 0$, $y(t_0) = 0$, $y'(t_0) = 0$, where $p$ and $q$ are continuous on an open interval $I$ containing $t_0$. The function $\phi(t) = 0$ for all $t$ in $I$ satisfies the equation and the initial conditions. By the uniqueness part of Theorem §14.1 it is the only solution.
 >
@@ -199,7 +199,7 @@ $$
 > W[e^{-2t}, e^{-3t}] = \begin{vmatrix} e^{-2t} & e^{-3t} \\ -2e^{-2t} & -3e^{-3t} \end{vmatrix} = -3e^{-5t} + 2e^{-5t} = -e^{-5t} .
 > $$
 >
-> It is nonzero for every $t$, so by Theorem §14.3 combinations of $y_1$, $y_2$ meet initial conditions prescribed at any point.
+> It is nonzero for every $t$, so by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|Theorem §14.3]] combinations of $y_1$, $y_2$ meet initial conditions prescribed at any point.
 >
 > **(b)** In general, suppose $y_1 = e^{r_1t}$ and $y_2 = e^{r_2t}$ solve an equation (2), with $r_1 \ne r_2$. Then
 >
@@ -235,7 +235,7 @@ $$
 > y'' + p(t)y' + q(t)y = 0, \qquad y(t_0) = y_0, \quad y'(t_0) = y_0' . \qquad (12)
 > $$
 >
-> Since $W[y_1, y_2](t_0) \ne 0$, Theorem §14.3 gives $c_1$, $c_2$ (by (10) or (11)) such that $y = c_1y_1(t) + c_2y_2(t)$ also solves the initial value problem (12). By the uniqueness part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] the two solutions of (12) are the same function:
+> Since $W[y_1, y_2](t_0) \ne 0$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-3|Theorem §14.3]] gives $c_1$, $c_2$ (by (10) or (11)) such that $y = c_1y_1(t) + c_2y_2(t)$ also solves the initial value problem (12). By the uniqueness part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] the two solutions of (12) are the same function:
 >
 > $$
 > \phi(t) = c_1y_1(t) + c_2y_2(t) . \qquad (13)
@@ -256,7 +256,7 @@ $$
 > y = c_1y_1(t) + c_2y_2(t)
 > $$
 >
-> with arbitrary constant coefficients is called the **general solution** of (2), and $y_1$ and $y_2$ are said to form a **fundamental set of solutions** of (2). By Theorem §14.4 the general solution contains all solutions. So to find all solutions of (2) one needs only two solutions with nonzero Wronskian.
+> with arbitrary constant coefficients is called the **general solution** of (2), and $y_1$ and $y_2$ are said to form a **fundamental set of solutions** of (2). By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the general solution contains all solutions. So to find all solutions of (2) one needs only two solutions with nonzero Wronskian.
 >
 > *BDP: 3.2 (text)*
 
@@ -272,7 +272,7 @@ $$
 > 1. **$S$ is a vector space.** It contains $0$, and by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]] it is closed under linear combinations: it is the null space of the linear map $L$.
 > 2. **$\dim S = 2$.** Fix $t_0 \in I$ and let $\Phi(y) = (y(t_0), y'(t_0))$, a linear map $S \to \mathbb{R}^2$. The existence part of [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]] says that $\Phi$ is onto. The uniqueness part says that $\Phi$ is one-to-one: if $\Phi(y) = (0, 0)$ then $y = 0$ by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-1|Example §14.1(b)]]. So $\Phi$ is an isomorphism and $S$ has dimension $2$.
 > 3. **Fundamental set = basis.** $\Phi(y_1)$ and $\Phi(y_2)$ are the columns of the matrix in (9), so $W[y_1, y_2](t_0) \ne 0$ exactly when they form a basis of $\mathbb{R}^2$, that is, exactly when $y_1$, $y_2$ form a basis of $S$. The general solution $c_1y_1 + c_2y_2$ is the statement that every vector is a combination of basis vectors, and $c_1$, $c_2$ in (11) are its coordinates.
-> 4. **Independence.** Two solutions of (2) are linearly independent if and only if their Wronskian is nonzero at one point, and then ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8]]) at every point of $I$. Theorem §14.5 below picks the basis $\Phi^{-1}(1, 0)$, $\Phi^{-1}(0, 1)$, and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-4|Example §14.4]] shows two different bases of the same $S$.
+> 4. **Independence.** Two solutions of (2) are linearly independent if and only if their Wronskian is nonzero at one point, and then ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-8|Theorem §14.8]]) at every point of $I$. [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-5|Theorem §14.5]] below picks the basis $\Phi^{-1}(1, 0)$, $\Phi^{-1}(0, 1)$, and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-4|Example §14.4]] shows two different bases of the same $S$.
 
 ^rem-14-2
 
@@ -287,9 +287,9 @@ $$
 > W[e^{5t}, e^{-2t}] = \begin{vmatrix} e^{5t} & e^{-2t} \\ 5e^{5t} & -2e^{-2t} \end{vmatrix} = -2e^{3t} - 5e^{3t} = -7e^{3t} \ne 0
 > $$
 >
-> for every $t$, so $y_1$, $y_2$ form a fundamental set (Definition §14.3).
+> for every $t$, so $y_1$, $y_2$ form a fundamental set ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]]).
 >
-> **(c)** By Theorem §14.4 the general solution is $y = c_1e^{5t} + c_2e^{-2t}$.
+> **(c)** By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the general solution is $y = c_1e^{5t} + c_2e^{-2t}$.
 >
 > The Summer 2023 midterm asked the same for $y'' - 6y' + 8y = 0$: the roots are $4$ and $2$, and $W[e^{4t}, e^{2t}] = e^{4t} \cdot 2e^{2t} - 4e^{4t} \cdot e^{2t} = -2e^{6t} \ne 0$, so the general solution is $y = c_1e^{4t} + c_2e^{2t}$. The order matters only for the sign: $W[y_2, y_1] = -W[y_1, y_2]$.
 >
@@ -323,7 +323,7 @@ $$
 > W[y_1, y_2](t_0) = \begin{vmatrix} y_1(t_0) & y_2(t_0) \\ y_1'(t_0) & y_2'(t_0) \end{vmatrix} = \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} = 1 \ne 0 ,
 > $$
 >
-> so they form a fundamental set by Definition §14.3 (and Theorem §14.4).
+> so they form a fundamental set by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]] (and [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]]).
 >
 > The difficult part, the existence of the two solutions, is carried by Theorem §14.1. The theorem does not say how to find $y_1$ and $y_2$; it only guarantees that a fundamental set always exists.
 
@@ -332,7 +332,7 @@ $$
 *Uses:* [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|§14.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Def. §14.3]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|§14.4]]
 
 > [!example] Example §14.4: The Fundamental Set of Theorem §14.5
-> Find the fundamental set $y_1$, $y_2$ specified by Theorem §14.5 for $y'' - y = 0$ with initial point $t_0 = 0$.
+> Find the fundamental set $y_1$, $y_2$ specified by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-5|Theorem §14.5]] for $y'' - y = 0$ with initial point $t_0 = 0$.
 >
 > The solutions $e^t$ and $e^{-t}$ from [[§13 Homogeneous Differential Equations with Constant Coefficients#^ex-13-1|Example §13.1]] form a fundamental set, since $W[e^t, e^{-t}](t) = e^t(-e^{-t}) - e^te^{-t} = -2 \ne 0$. But they are not the ones of the theorem, because they do not satisfy its initial conditions at $t = 0$.
 >
@@ -396,7 +396,7 @@ $$
 ^cor-14-7
 
 > [!proof]+ Proof
-> By Theorem §14.6, $u$ and $v$ are solutions. Then $\bar y = u + (-i)v$ is a linear combination of two solutions, hence a solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]] (whose proof allows complex constants). BDP notes that an argument like the proof of Theorem §14.6 works as well: conjugating $L[y] = 0$ gives $L[\bar y] = 0$, again because $p$ and $q$ are real.
+> By [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|Theorem §14.6]], $u$ and $v$ are solutions. Then $\bar y = u + (-i)v$ is a linear combination of two solutions, hence a solution by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-2|Theorem §14.2]] (whose proof allows complex constants). BDP notes that an argument like the proof of Theorem §14.6 works as well: conjugating $L[y] = 0$ gives $L[\bar y] = 0$, again because $p$ and $q$ are real.
 
 ^pf-14-7
 
@@ -465,7 +465,7 @@ $$
 
 > [!remark] Remark: Consequences of Abel's Theorem
 > - The Wronskians of any two fundamental sets of the same equation differ only by a multiplicative constant, and the Wronskian of any fundamental set can be found, up to that constant, without solving the equation.
-> - Since $W$ is either always zero or never zero on $I$, it can be tested at any single convenient value of $t$. This is why "nonzero at one point" in [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] and "not everywhere zero" in Definition §14.3 are the same condition.
+> - Since $W$ is either always zero or never zero on $I$, it can be tested at any single convenient value of $t$. This is why "nonzero at one point" in [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] and "not everywhere zero" in [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-3|Definition §14.3]] are the same condition.
 
 ^rem-14-3
 

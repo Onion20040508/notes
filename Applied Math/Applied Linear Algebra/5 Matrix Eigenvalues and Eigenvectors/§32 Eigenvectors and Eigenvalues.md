@@ -180,6 +180,9 @@ For the matrix of Example §32.1, the eigenspace for $\lambda = 7$ consists of a
 
 *Uses:* [[§32 Eigenvectors and Eigenvalues#^def-32-1|Def. §32.1]], [[§7 Linear Independence#^thm-7-6|§7.6]] (more vectors than entries are dependent), [[§13 Characterizations of Invertible Matrices#^thm-13-1|§13.1]] (the Invertible Matrix Theorem: (a), (d), (l))
 
+> [!remark]- Connections
+> - Rigorous treatment: [[§16 Upper-Triangular Matrices#^ladr-5-41|LADR 5.41]] (the eigenvalues of an operator with an upper-triangular matrix are exactly its diagonal entries), proved there without determinants.
+
 > [!example] Example §32.3: Eigenvalues by Inspection
 > Let $A = \begin{bmatrix} 3 & 6 & -8 \\ 0 & 0 & 6 \\ 0 & 0 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 0 & 0 \\ -2 & 1 & 0 \\ 5 & 3 & 4 \end{bmatrix}$. By Theorem §32.1, the eigenvalues of the upper triangular $A$ are $3$, $0$ and $2$, and the eigenvalues of the lower triangular $B$ are $4$ and $1$ (the diagonal entry $4$ occurs twice, but it is one eigenvalue).
 >
@@ -215,7 +218,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 ^thm-32-3
 
 > [!proof]+ Proof
-> Suppose $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is linearly dependent. Since $\mathbf{v}_1$ is nonzero, one of the vectors in the set is a linear combination of the preceding vectors ([[§7 Linear Independence#^thm-7-4|Theorem §7.4]]). Let $p$ be the least index such that $\mathbf{v}_{p+1}$ is a linear combination of the preceding vectors; by the minimality of $p$, the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly independent (otherwise Theorem §7.4 would apply to them and give a smaller index). Then there are scalars $c_1, \ldots, c_p$ with
+> Suppose $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is linearly dependent. Since $\mathbf{v}_1$ is nonzero, one of the vectors in the set is a linear combination of the preceding vectors ([[§7 Linear Independence#^thm-7-4|Theorem §7.4]]). Let $p$ be the least index such that $\mathbf{v}_{p+1}$ is a linear combination of the preceding vectors; by the minimality of $p$, the vectors $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are linearly independent (otherwise [[§7 Linear Independence#^thm-7-4|Theorem §7.4]] would apply to them and give a smaller index). Then there are scalars $c_1, \ldots, c_p$ with
 >
 > $$
 > c_1\mathbf{v}_1 + \cdots + c_p\mathbf{v}_p = \mathbf{v}_{p+1} . \qquad (5)
@@ -304,7 +307,7 @@ is a recursive description of a sequence $\{\mathbf{x}_k\}$ in $\mathbb{R}^n$. A
 >
 > is a solution, with $\mathbf{x}_0 = c_1\mathbf{u} + c_2\mathbf{v}$. The same holds for linear combinations of any number of eigenvectors.
 >
-> *Lay: 5.1, Equation (9); Exercise 5.1.33; Practice Problem 5.1.2*
+> *Lay: 5.1, Equation (9), Exercise 33 and Practice Problem 2*
 
 ^thm-32-5
 
@@ -346,7 +349,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 > \mathbf{v}_n = A^n\mathbf{v}_0 = \frac{1}{\sqrt5}\big(\varphi^n\mathbf{u} - \psi^n\mathbf{v}\big) = \frac{1}{\sqrt5}\begin{bmatrix} \varphi^n - \psi^n \\ \varphi^{n+1} - \psi^{n+1} \end{bmatrix}, \qquad F_n = \frac{\varphi^n - \psi^n}{\sqrt5} .
 > $$
 >
-> This is the formula of Example §30.4, where it is checked and used to show $F_{n+1}/F_n \to \varphi$. In the present language: $\varphi$ is the eigenvalue of largest absolute value ($|\psi| < 1 < \varphi$), so $\mathbf{v}_n$ turns toward the eigenvector line through $(1, \varphi)$, whose slope is the limit of $F_{n+1}/F_n$ ([[§37 Discrete Dynamical Systems#^prop-37-2|Proposition §37.2]]).
+> This is the formula of [[§30 Applications to Difference Equations#^ex-30-4|Example §30.4]], where it is checked and used to show $F_{n+1}/F_n \to \varphi$. In the present language: $\varphi$ is the eigenvalue of largest absolute value ($|\psi| < 1 < \varphi$), so $\mathbf{v}_n$ turns toward the eigenvector line through $(1, \varphi)$, whose slope is the limit of $F_{n+1}/F_n$ ([[§37 Discrete Dynamical Systems#^prop-37-2|Proposition §37.2]]).
 >
 > *Source: 235 lecture L18*
 

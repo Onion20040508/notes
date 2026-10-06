@@ -176,7 +176,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 ^ex-5-2
 
 ![[m331-5-1.svg]]
-*Integral curves $y^4 + 16y + x^4 - 8x^2 = c$ of Example §5.2 (blue, $c = -20, -8, 4, 30, 45$). The level curve $c = 17$ is a closed curve, but only its upper arc (green) is the solution through $(0, 1)$: it ends at the two points $(\pm 3.3488, -1.5874)$ on the line $y = -4^{1/3}$ (dashed), where every integral curve has a vertical tangent. The lower arc (pale green) is a different solution of the same equation.*
+*Integral curves $y^4 + 16y + x^4 - 8x^2 = c$ of [[§5 Separable Differential Equations#^ex-5-2|Example §5.2]] (blue, $c = -20, -8, 4, 30, 45$). The level curve $c = 17$ is a closed curve, but only its upper arc (green) is the solution through $(0, 1)$: it ends at the two points $(\pm 3.3488, -1.5874)$ on the line $y = -4^{1/3}$ (dashed), where every integral curve has a vertical tangent. The lower arc (pale green) is a different solution of the same equation.*
 
 > [!remark] Remark: Constant Solutions
 > If $f(x, y_0) = 0$ for some $y_0$ and all $x$, then the constant function $y = y_0$ is a solution of $dy/dx = f(x, y)$, since both sides are $0$. Such solutions are easy to find and easy to lose: separating the variables divides by an expression that vanishes at $y_0$. For example, $\dfrac{dy}{dx} = \dfrac{(y - 3)\cos x}{1 + 2y^2}$ has the constant solution $y = 3$; the other solutions are found by separating variables.
@@ -184,7 +184,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 ^rem-5-2
 
 > [!remark] Remark: Implicit Solutions and Parametrization
-> - In Example §5.1 it was easy to solve for $y$, but that is exceptional. BDP's convention: "solve the differential equation" means find the solution explicitly if convenient, and otherwise an equation defining it implicitly.
+> - In [[§5 Separable Differential Equations#^ex-5-1|Example §5.1]] it was easy to solve for $y$, but that is exceptional. BDP's convention: "solve the differential equation" means find the solution explicitly if convenient, and otherwise an equation defining it implicitly.
 > - Sometimes it helps to regard both $x$ and $y$ as functions of a third variable $t$. Then $\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt}$, and an equation $\dfrac{dy}{dx} = \dfrac{F(x, y)}{G(x, y)}$ is matched by the system $\dfrac{dx}{dt} = G(x, y)$, $\dfrac{dy}{dt} = F(x, y)$. Replacing one equation by two may seem a step backward, but systems of this form are often easier to investigate; Chapter 7 begins their study ([[§27 Introduction to Systems of First-Order Linear Equations|§27]]).
 
 ^rem-5-3
@@ -294,7 +294,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 ^prop-5-2
 
 > [!proof]+ Proof
-> On an interval where $x \ne 0$, $y = xv$ by the product rule gives $\dfrac{dy}{dx} = v + x\,\dfrac{dv}{dx}$. Substituting this and $y/x = v$ into the equation gives $v + x\,\dfrac{dv}{dx} = F(v)$, that is, $x\,\dfrac{dv}{dx} = F(v) - v$. In the form $\dfrac{dv}{F(v) - v} = \dfrac{dx}{x}$ (where $F(v) \ne v$) it is separable (Definition §5.1). For the example above, $F(v) - v = \dfrac{v - 4}{1 - v} - v = \dfrac{v^2 - 4}{1 - v}$.
+> On an interval where $x \ne 0$, $y = xv$ by the product rule gives $\dfrac{dy}{dx} = v + x\,\dfrac{dv}{dx}$. Substituting this and $y/x = v$ into the equation gives $v + x\,\dfrac{dv}{dx} = F(v)$, that is, $x\,\dfrac{dv}{dx} = F(v) - v$. In the form $\dfrac{dv}{F(v) - v} = \dfrac{dx}{x}$ (where $F(v) \ne v$) it is separable ([[§5 Separable Differential Equations#^def-5-1|Definition §5.1]]). For the example above, $F(v) - v = \dfrac{v - 4}{1 - v} - v = \dfrac{v^2 - 4}{1 - v}$.
 
 ^pf-5-2
 
@@ -305,7 +305,7 @@ Because $f$ depends only on $y/x$, integral curves have the same slope at all po
 > [!example] Example §5.5: A Homogeneous Equation
 > Find the general solution of $y' = \dfrac yx - 2e^{5y/x}$.
 >
-> **Substitute.** The right side is $F(y/x)$ with $F(v) = v - 2e^{5v}$, so the equation is homogeneous. With $y = xv$, Proposition §5.2 gives
+> **Substitute.** The right side is $F(y/x)$ with $F(v) = v - 2e^{5v}$, so the equation is homogeneous. With $y = xv$, [[§5 Separable Differential Equations#^prop-5-2|Proposition §5.2]] gives
 >
 > $$
 > v + x\,\frac{dv}{dx} = v - 2e^{5v} , \qquad x\,\frac{dv}{dx} = -2e^{5v} .

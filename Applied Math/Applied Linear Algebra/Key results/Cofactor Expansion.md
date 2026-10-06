@@ -28,3 +28,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§20 Introduction to Determinants]] for context and examples.
+- Rigorous treatment: LADR does not state the expansion itself; it follows from the permutation formula [[§34 Determinants#^ladr-9-46|LADR 9.46]] by grouping its $n!$ terms according to which entry of row $i$ (or column $j$) they contain (see the note after the theorem in [[§20 Introduction to Determinants]]).

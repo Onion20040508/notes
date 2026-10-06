@@ -284,6 +284,6 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 >
 > Adding all three, $2(c_1 + c_2 + c_3) = 8$, so $c_1 + c_2 + c_3 = 4$, and then $c_3 = 4 - 6 = -2$, $c_2 = 4 - 3 = 1$, $c_1 = 4 - (-1) = 5$. So $[\mathbf{p}]_{\mathcal B} = (5, 1, -2)$. Check: $5(1 + t) + (1 + t^2) - 2(t + t^2) = 6 + 3t - t^2$. (In coordinates relative to $\{1, t, t^2\}$ this is the system with matrix $\begin{bmatrix} 1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1 \end{bmatrix}$, of determinant $-2 \ne 0$, which also confirms that $\mathcal{B}$ is a basis, by Corollary §26.4.)
 >
-> *Lay: Example 4.4.7; Practice Problem 2 (4.4)*
+> *Lay: Example 4.4.7; 4.4, Practice Problem 2*
 
 ^ex-26-5

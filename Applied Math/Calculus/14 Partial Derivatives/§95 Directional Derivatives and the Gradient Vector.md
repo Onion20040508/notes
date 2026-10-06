@@ -319,7 +319,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 ^pf-95-5
 
-*Uses:* [[§94 The Chain Rule#^thm-94-3|§94.3]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-3|Def. §95.3]]
+*Uses:* [[§94 The Chain Rule#^thm-94-3|§94.3]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-3|Def. §95.3]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|§87.1]]
 
 > [!definition] Definition §95.4: Tangent Plane and Normal Line to a Level Surface
 > If $\nabla F(x_0, y_0, z_0) \ne \mathbf{0}$, the **tangent plane to the level surface** $F(x, y, z) = k$ at $P(x_0, y_0, z_0)$ is the plane that passes through $P$ and has normal vector $\nabla F(x_0, y_0, z_0)$:
@@ -427,8 +427,7 @@ By Theorem §95.5 every tangent line at $P$ to a curve on $S$ through $P$ lies i
 >
 > Adding, $-4y + 12 = 0$, so $y = 3$, and then $x = y - 4 = -1$. On the surface, $z = x^2 - 2xy - y^2 + 8x + 4y = 1 + 6 - 9 - 8 + 12 = 2$. The point is $(-1, 3, 2)$. (Since the surface is the graph $z = f(x, y)$, this is the critical point condition $f_x = f_y = 0$ of [[§96 Maximum and Minimum Values#^def-96-2|Definition §96.2]].)
 >
-> *Source: 233 Practice Final Set 1, Part II Q3*
-> *Source: 233 Midterm 1 Practice Questions, Q33*
+> *Source: 233 Practice Final Set 1, Part II Q3; 233 Midterm 1 Practice Questions, Q33*
 
 ^ex-95-5
 

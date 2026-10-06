@@ -179,6 +179,9 @@ When the function $f$ in the corollary is written $f(z) = u(x, y) + iv(x, y)$, t
 
 *Uses:* [[§59 Maximum Modulus Principle#^cor-59-4|§59.4]], [[§25 Analytic Functions#^thm-25-3|§25.3]]
 
+> [!remark]- Connections
+> - The maximum principle for harmonic functions in the PDE course, [[§39 Potential in a Disk#^thm-39-5|341 Thm. §39.5]], proved there from the mean value property, with uniqueness for Dirichlet's problem as [[§39 Potential in a Disk#^cor-39-6|341 Cor. §39.6]]. Corollary §59.5 is its case $u = \operatorname{Re} f$; on a simply connected domain every harmonic function is such a real part ([[§115★ Harmonic Conjugates#^thm-115-4|Theorem §115.4]]).
+
 Properties of *minimum* values of $|f(z)|$ and $u(x, y)$ are similar; they are treated in Examples §59.2 and §59.3.
 
 ## Examples

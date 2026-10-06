@@ -313,7 +313,7 @@ The test of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]] says that $\mat
 > \int_C \mathbf{F} \cdot d\mathbf{r} = f(8, 3, -1) - f(2, 1, 4) = 3(8 - 1) - 1(2 + 4) = 21 - 6 = 15 .
 > $$
 >
-> (The posted solution finds $f$ by integrating each component in its own variable and merging the results, $xy + f(y, z)$, $xy + yz + g(x, z)$, $yz + h(x, y)$; the procedure above, from Stewart Example 16.3.5, organizes the same comparison.)
+> (The posted solution finds $f$ by integrating each component in its own variable and merging the results, $xy + f(y, z)$, $xy + yz + g(x, z)$, $yz + h(x, y)$; the procedure above, from Stewart's Example 16.3.5, organizes the same comparison.)
 >
 > *Source: 233 Practice Final Set 1, Part II Q4*
 

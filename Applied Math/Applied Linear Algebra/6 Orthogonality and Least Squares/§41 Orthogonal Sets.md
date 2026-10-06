@@ -157,7 +157,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 ^prop-41-3
 
 > [!proof]+ Proof
-> For any scalar $\alpha$, setting $\mathbf{z} = \mathbf{y} - \alpha\mathbf{u}$ gives $\mathbf{y} = \alpha\mathbf{u} + \mathbf{z}$; so the only question is when $\mathbf{z}$ is orthogonal to $\mathbf{u}$. By Theorem §40.1,
+> For any scalar $\alpha$, setting $\mathbf{z} = \mathbf{y} - \alpha\mathbf{u}$ gives $\mathbf{y} = \alpha\mathbf{u} + \mathbf{z}$; so the only question is when $\mathbf{z}$ is orthogonal to $\mathbf{u}$. By [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]],
 >
 > $$
 > (\mathbf{y} - \alpha\mathbf{u}) \cdot \mathbf{u} = \mathbf{y} \cdot \mathbf{u} - \alpha(\mathbf{u} \cdot \mathbf{u}) ,
@@ -197,7 +197,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > \|\mathbf{y} - \hat{\mathbf{y}}\| = \sqrt{(-1)^2 + 2^2} = \sqrt5 .
 > $$
 >
-> *Lay: Examples 6.2.3 and 6.2.4; Practice Problem 2*
+> *Lay: Examples 6.2.3 and 6.2.4; 6.2, Practice Problem 2*
 
 ^ex-41-2
 
@@ -295,7 +295,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 >
 > **Inner products.** $U\mathbf{y} = (-3 + 4,\ -3 - 4,\ 0 + 2) = (1, -7, 2)$, so $U\mathbf{x} \cdot U\mathbf{y} = 3 + 7 + 2 = 12$, while $\mathbf{x} \cdot \mathbf{y} = -6 + 18 = 12$.
 >
-> *Lay: Example 6.2.6; Practice Problem 3*
+> *Lay: Example 6.2.6; 6.2, Practice Problem 3*
 
 ^ex-41-3
 

@@ -282,7 +282,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > \lim_{t \to \infty} I(t) = \lim_{t \to \infty} 5\big(1 - e^{-3t}\big) = 5 - 5\lim_{t \to \infty} e^{-3t} = 5 - 0 = 5 .
 > $$
 >
-> The limit is the current $E/R = 60/12$ that Ohm's Law gives when the inductor plays no role. This equation is also separable, $dI/dt = 15 - 3I$, so it can be solved as in [[§59 Separable Equations|§59]] (Example 9.3.4). With a generator instead of a battery it is linear but no longer separable (Example §61.5).
+> The limit is the current $E/R = 60/12$ that Ohm's Law gives when the inductor plays no role. This equation is also separable, $dI/dt = 15 - 3I$, so it can be solved as in [[§59 Separable Equations|§59]] (Stewart's Example 9.3.4). With a generator instead of a battery it is linear but no longer separable (Example §61.5).
 >
 > *Stewart: Example 9.5.4*
 

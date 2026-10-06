@@ -243,7 +243,7 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 >
 > (Check: $C\mathbf{x} + \mathbf{d} \approx (.2(72.2) + .4(94.4) + 20,\ .5(72.2) + .3(94.4) + 30) = (72.2, 94.4)$.)
 >
-> *Lay: Practice Problem 2.6*
+> *Lay: 2.6, Practice Problem*
 
 ^ex-16-3
 

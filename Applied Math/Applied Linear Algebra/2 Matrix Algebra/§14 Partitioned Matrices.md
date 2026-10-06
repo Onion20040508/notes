@@ -59,7 +59,7 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 ^prop-14-1
 
 > [!proof]+ Proof
-> Matrices are added and scaled entry by entry (Definition §11.2), and each block of $A + B$ consists of the entries of $A + B$ in certain positions, which are the sums of the entries of $A$ and $B$ in the same positions, that is, of the corresponding blocks. The same argument applies to $rA$.
+> Matrices are added and scaled entry by entry ([[§11 Matrix Operations#^def-11-2|Definition §11.2]]), and each block of $A + B$ consists of the entries of $A + B$ in certain positions, which are the sums of the entries of $A$ and $B$ in the same positions, that is, of the corresponding blocks. The same argument applies to $rA$.
 
 ^pf-14-1
 
@@ -228,7 +228,7 @@ The row–column rule for block matrices is the most general way to view a produ
 > \end{aligned}
 > $$
 >
-> By itself, (6) does not show that $A_{22}$ is invertible. But $A_{22}$ and $B_{22}$ are square, so by the Invertible Matrix Theorem (Corollary §13.2) equation (6) shows that $A_{22}$ is invertible and $B_{22} = A_{22}^{-1}$. Next, left-multiply (5) by $A_{22}^{-1}$: $B_{21} = A_{22}^{-1}0 = 0$, so (3) simplifies to $A_{11}B_{11} + 0 = I_p$. Since $A_{11}$ is square, this shows (Corollary §13.2 again) that $A_{11}$ is invertible and $B_{11} = A_{11}^{-1}$. Finally, (4) gives
+> By itself, (6) does not show that $A_{22}$ is invertible. But $A_{22}$ and $B_{22}$ are square, so by the Invertible Matrix Theorem ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]]) equation (6) shows that $A_{22}$ is invertible and $B_{22} = A_{22}^{-1}$. Next, left-multiply (5) by $A_{22}^{-1}$: $B_{21} = A_{22}^{-1}0 = 0$, so (3) simplifies to $A_{11}B_{11} + 0 = I_p$. Since $A_{11}$ is square, this shows ([[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]] again) that $A_{11}$ is invertible and $B_{11} = A_{11}^{-1}$. Finally, (4) gives
 >
 > $$
 > A_{11}B_{12} = -A_{12}B_{22} = -A_{12}A_{22}^{-1} \qquad\text{and}\qquad B_{12} = -A_{11}^{-1}A_{12}A_{22}^{-1} .
@@ -240,7 +240,7 @@ The row–column rule for block matrices is the most general way to view a produ
 > AB = \begin{bmatrix} A_{11}A_{11}^{-1} & -A_{11}A_{11}^{-1}A_{12}A_{22}^{-1} + A_{12}A_{22}^{-1} \\ 0 & A_{22}A_{22}^{-1} \end{bmatrix} = \begin{bmatrix} I_p & 0 \\ 0 & I_q \end{bmatrix},
 > $$
 >
-> so $A$ is invertible with $A^{-1} = B$ by Corollary §13.2.
+> so $A$ is invertible with $A^{-1} = B$ by [[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]].
 
 ^pf-14-4
 
@@ -269,7 +269,7 @@ The row–column rule for block matrices is the most general way to view a produ
 > \begin{bmatrix} I & 0 \\ A & I \end{bmatrix}\begin{bmatrix} I & 0 \\ -A & I \end{bmatrix} = \begin{bmatrix} I \cdot I + 0(-A) & I \cdot 0 + 0 \cdot I \\ A \cdot I + I(-A) & A \cdot 0 + I \cdot I \end{bmatrix} = \begin{bmatrix} I & 0 \\ 0 & I \end{bmatrix} .
 > $$
 >
-> The matrix is square, so by Corollary §13.2 it is invertible and its inverse is $\begin{bmatrix} I & 0 \\ -A & I \end{bmatrix}$: the block analogue of the inverse $E_{21}(-a)$ of a replacement matrix $E_{21}(a)$.
+> The matrix is square, so by [[§13 Characterizations of Invertible Matrices#^cor-13-2|Corollary §13.2]] it is invertible and its inverse is $\begin{bmatrix} I & 0 \\ -A & I \end{bmatrix}$: the block analogue of the inverse $E_{21}(-a)$ of a replacement matrix $E_{21}(a)$.
 >
 > **(b)** Compute $X^TX$ for $X = \begin{bmatrix} X_1 & X_2 \end{bmatrix}$ partitioned into two blocks of columns. The transpose of a partitioned matrix is the transposed array of transposed blocks, so $X^T = \begin{bmatrix} X_1^T \\ X_2^T \end{bmatrix}$, and
 >
@@ -279,7 +279,7 @@ The row–column rule for block matrices is the most general way to view a produ
 >
 > The partitions are conformable: the columns of $X^T$ and the rows of $X$ are each left as a single group, so this is a $2 \times 1$ block matrix times a $1 \times 2$ block matrix, and each block of the product is a single block product. (This matrix reappears in least squares, as the matrix $A^TA$ of the normal equations $A^TA\mathbf{x} = A^T\mathbf{b}$, [[§44 Least-Squares Problems#^def-44-2|Definition §44.2]].)
 >
-> *Lay: Practice Problems 2.4.1 and 2.4.2*
+> *Lay: 2.4, Practice Problems 1 and 2*
 
 ^ex-14-4
 

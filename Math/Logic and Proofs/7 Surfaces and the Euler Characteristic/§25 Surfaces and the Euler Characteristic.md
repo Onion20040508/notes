@@ -18,7 +18,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 >
 > After gluing, the images of the corners are the **vertices** of $S$, the images of the sides are its **edges** (two glued sides make one edge), and the polygons are its **faces**; write $V, E, F$ for their numbers. A side that is glued to nothing is a **boundary edge**. The boundary edges form the **boundary** of $S$, which is a disjoint union of circles, the **boundary circles** of $S$.
 >
-> Every point of $S$ has a neighbourhood that looks like an open disk (at points off the boundary) or a half-disk (on the boundary); this is what makes $S$ a *surface*. Different polygonal structures can give the same surface (up to homeomorphism); each is a **polygonal decomposition** of that surface.
+> Every point of $S$ has a neighbourhood that looks like an open disk (at points off the boundary) or a half-disk (on the boundary); this is what makes $S$ a *surface*. Different polygonal structures can give the same surface (up to [[§9 Continuous Functions#^def-9-2|homeomorphism]]); each is a **polygonal decomposition** of that surface.
 >
 > *Source: lecture (HW6); standard*
 
@@ -274,7 +274,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 | genus-$2$ surface | $2$ | $0$ | $-2$ |
 
 > [!theorem] Theorem §25.7: Classification of Surfaces
-> Every compact connected surface is homeomorphic to exactly one of the following:
+> Every [[§15 Compact Spaces#^def-15-2|compact]] [[§13 Connected Spaces#^def-13-1|connected]] surface is homeomorphic to exactly one of the following:
 > - $\Sigma_{h,b}$, a sphere with $h \ge 0$ handles and $b \ge 0$ holes, with $\chi = 2 - 2h - b$ (the two-sided, or *orientable*, surfaces);
 > - a sphere with $k \ge 1$ *crosscaps* (a disk removed and a Möbius band glued in, each lowering $\chi$ by $1$) and $b \ge 0$ holes, with $\chi = 2 - k - b$ (the one-sided surfaces).
 >

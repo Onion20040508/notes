@@ -25,3 +25,6 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - See [[§49★ Quadratic Forms]] for context and examples.
+- Rigorous treatment: [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-23|LADR 9.23]](b), diagonalization of a quadratic form by an orthonormal basis, deduced from the bilinear-form version [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] and the real spectral theorem. Axler also notes (9.23(a)) that *without* the orthonormality requirement any quadratic form over $\mathbf{F} = \mathbb{R}$ or $\mathbb{C}$ can be diagonalized, by a non-orthogonal $P$ (completing squares).
+- Used in Calculus to bring a quadric surface to standard form by a rotation of axes: [[§85 Cylinders and Quadric Surfaces#^def-85-3|Calc Def. §85.3]].
+- PDE version: for a second-order PDE with constant coefficients, rotating the $(\xi, \eta)$-axes to the principal axes of $A\xi^2 + B\xi\eta + C\eta^2$ removes the mixed derivative, and the sign of $B^2 - 4AC$ classifies the equation as elliptic, parabolic or hyperbolic, [[§40★ Classification and Limitations#^def-40-1|341 Def. §40.1]].

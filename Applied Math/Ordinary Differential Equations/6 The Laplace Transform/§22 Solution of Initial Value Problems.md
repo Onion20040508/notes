@@ -80,7 +80,7 @@ and in general:
 ^cor-22-2
 
 > [!proof]+ Proof
-> Induction on $n$; the case $n = 1$ is Theorem §22.1. Assume (4) for $n - 1$ (whose hypotheses are contained in those for $n$). Apply Theorem §22.1 to $g = f^{(n-1)}$: it is continuous, $g' = f^{(n)}$ is piecewise continuous, and $|g(t)| \le Ke^{at}$ for $t \ge M$. So for $s > a$,
+> Induction on $n$; the case $n = 1$ is Theorem §22.1. Assume (4) for $n - 1$ (whose hypotheses are contained in those for $n$). Apply [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] to $g = f^{(n-1)}$: it is continuous, $g' = f^{(n)}$ is piecewise continuous, and $|g(t)| \le Ke^{at}$ for $t \ge M$. So for $s > a$,
 >
 > $$
 > \mathcal{L}\{f^{(n)}\} = s\mathcal{L}\{f^{(n-1)}\} - f^{(n-1)}(0) = s\big(s^{n-1}\mathcal{L}\{f\} - s^{n-2}f(0) - \cdots - f^{(n-2)}(0)\big) - f^{(n-1)}(0) ,
@@ -123,14 +123,14 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 > Y(s) = \frac{1/3}{s - 2} + \frac{2/3}{s + 1} .
 > $$
 >
-> **Invert.** By [[§21 Definition of the Laplace Transform#^ex-21-2|Example §21.2]], $\frac13 e^{2t}$ has transform $\frac13(s - 2)^{-1}$ and $\frac23 e^{-t}$ has transform $\frac23(s + 1)^{-1}$, so by linearity $y(t) = \frac13 e^{2t} + \frac23 e^{-t}$, as before. It does satisfy the conditions of Corollary §22.2, as assumed.
+> **Invert.** By [[§21 Definition of the Laplace Transform#^ex-21-2|Example §21.2]], $\frac13 e^{2t}$ has transform $\frac13(s - 2)^{-1}$ and $\frac23 e^{-t}$ has transform $\frac23(s + 1)^{-1}$, so by linearity $y(t) = \frac13 e^{2t} + \frac23 e^{-t}$, as before. It does satisfy the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]], as assumed.
 >
 > *BDP: Example 6.2.1*
 
 ^ex-22-1
 
 > [!theorem] Proposition §22.3: The Transformed Second-Order Equation
-> If the solution $y$ of $ay'' + by' + cy = f(t)$ (14) satisfies the conditions of Corollary §22.2 for $n = 2$, and $F(s) = \mathcal{L}\{f(t)\}$, then $Y(s) = \mathcal{L}\{y\}$ satisfies
+> If the solution $y$ of $ay'' + by' + cy = f(t)$ (14) satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]] for $n = 2$, and $F(s) = \mathcal{L}\{f(t)\}$, then $Y(s) = \mathcal{L}\{y\}$ satisfies
 >
 > $$
 > a\big(s^2Y(s) - sy(0) - y'(0)\big) + b\big(sY(s) - y(0)\big) + cY(s) = F(s) , \qquad (15)
@@ -145,7 +145,7 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 ^prop-22-3
 
 > [!proof]+ Proof
-> Transform both sides of (14). By linearity ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]) the left side becomes $a\mathcal{L}\{y''\} + b\mathcal{L}\{y'\} + c\mathcal{L}\{y\}$, and Corollary §22.2 with $n = 2$ and $n = 1$ gives (15). Collecting the $Y(s)$ terms, $(as^2 + bs + c)Y(s) = (as + b)y(0) + ay'(0) + F(s)$; dividing by $as^2 + bs + c$ (nonzero for $s$ large) gives (16).
+> Transform both sides of (14). By linearity ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]) the left side becomes $a\mathcal{L}\{y''\} + b\mathcal{L}\{y'\} + c\mathcal{L}\{y\}$, and [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]] with $n = 2$ and $n = 1$ gives (15). Collecting the $Y(s)$ terms, $(as^2 + bs + c)Y(s) = (as + b)y(0) + ay'(0) + F(s)$; dividing by $as^2 + bs + c$ (nonzero for $s$ large) gives (16).
 
 ^pf-22-3
 
@@ -155,7 +155,7 @@ The method is most useful for nonhomogeneous equations (from [[§23 Step Functio
 > 1. The transform $Y(s)$ is found from an *algebraic* equation, (10) or (15), not a differential equation. This is the key to the usefulness of Laplace transforms for linear constant-coefficient equations.
 > 2. The initial conditions are built in, so there is no separate step of determining the arbitrary constants of a general solution.
 > 3. Nonhomogeneous equations are handled exactly like homogeneous ones; there is no need to solve the homogeneous equation first.
-> 4. The method works the same way for higher-order equations, provided the solution satisfies the conditions of Corollary §22.2 for the appropriate $n$.
+> 4. The method works the same way for higher-order equations, provided the solution satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]] for the appropriate $n$.
 >
 > The denominator $as^2 + bs + c$ in (16) is the characteristic polynomial of (14). Partial fractions require factoring it, so the transform does not avoid finding the roots of the characteristic equation (for higher-order equations this may require numerical approximation).
 
@@ -187,7 +187,7 @@ There is a general formula for the inverse transform, but it requires functions 
 > [!remark]- Connections
 > - Complex-variables version: [[§95★ Inverse Laplace Transforms#^cor-95-5|342 Cor. §95.5]] (Lerch's theorem, proved for sectionally smooth functions of exponential order from the Bromwich inversion formula).
 
-Consistently with this, the solution (8) found in Example §22.1 is continuous and, by the existence and uniqueness theorem for second-order equations ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1), the initial value problem has no other solution.
+Consistently with this, the solution (8) found in [[§22 Solution of Initial Value Problems#^ex-22-1|Example §22.1]] is continuous and, by the existence and uniqueness theorem for second-order equations ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]], Theorem 3.2.1), the initial value problem has no other solution.
 
 > [!theorem] Corollary §22.5: Linearity of the Inverse Transform
 > Suppose that $F(s) = F_1(s) + \cdots + F_n(s)$ (17) and that $f_1(t) = \mathcal{L}^{-1}\{F_1(s)\}, \ldots, f_n(t) = \mathcal{L}^{-1}\{F_n(s)\}$ are continuous. Then
@@ -203,7 +203,7 @@ Consistently with this, the solution (8) found in Example §22.1 is continuous a
 ^cor-22-5
 
 > [!proof]+ Proof
-> By linearity of $\mathcal{L}$ ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]), the continuous function $f = f_1 + \cdots + f_n$ has transform $F_1 + \cdots + F_n = F$. By Theorem §22.4, no other continuous function has the transform $F$, so $\mathcal{L}^{-1}\{F\} = f_1 + \cdots + f_n$. Likewise $cf_1$ is the continuous function with transform $cF_1$.
+> By linearity of $\mathcal{L}$ ([[§21 Definition of the Laplace Transform#^thm-21-3|Theorem §21.3]]), the continuous function $f = f_1 + \cdots + f_n$ has transform $F_1 + \cdots + F_n = F$. By [[§22 Solution of Initial Value Problems#^thm-22-4|Theorem §22.4]], no other continuous function has the transform $F$, so $\mathcal{L}^{-1}\{F\} = f_1 + \cdots + f_n$. Likewise $cf_1$ is the continuous function with transform $cF_1$.
 
 ^pf-22-5
 
@@ -241,9 +241,9 @@ So there is essentially a one-to-one correspondence between functions and their 
 ^thm-22-6
 
 > [!proof]- Proof
-> Entries 1, 2, 5 are worked out in §21; entry 18 is Corollary §22.2; entries 12–14, 16, 17 are proved in the sections listed. The remaining entries:
+> Entries 1, 2, 5 are worked out in §21; entry 18 is [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]; entries 12–14, 16, 17 are proved in the sections listed. The remaining entries:
 >
-> **3.** For $n \ge 1$, $f(t) = t^n$ is continuous with continuous derivative $nt^{n-1}$ and $f(0) = 0$. Since $e^{\varepsilon t} \ge (\varepsilon t)^n/n!$, we have $t^n \le (n!/\varepsilon^n)e^{\varepsilon t}$ for every $\varepsilon > 0$, so Theorem §22.1 applies for every $s > \varepsilon$, hence for all $s > 0$:
+> **3.** For $n \ge 1$, $f(t) = t^n$ is continuous with continuous derivative $nt^{n-1}$ and $f(0) = 0$. Since $e^{\varepsilon t} \ge (\varepsilon t)^n/n!$, we have $t^n \le (n!/\varepsilon^n)e^{\varepsilon t}$ for every $\varepsilon > 0$, so [[§22 Solution of Initial Value Problems#^thm-22-1|Theorem §22.1]] applies for every $s > \varepsilon$, hence for all $s > 0$:
 >
 > $$
 > n\mathcal{L}\{t^{n-1}\} = \mathcal{L}\{(t^n)'\} = s\mathcal{L}\{t^n\} - 0, \qquad \mathcal{L}\{t^n\} = \frac ns\,\mathcal{L}\{t^{n-1}\} .
@@ -282,7 +282,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 >
 > valid when $s/c$ is in the domain of $F$.
 >
-> **19.** (BDP: Problem 6.2.21.) Let $f$ satisfy the conditions of Theorem §21.2 and fix $s > a$. BDP asserts that one may differentiate under the integral sign with respect to $s$; here is why. Put $\delta = \frac12(s - a)$ and let $0 < |h| \le \delta$, so that $s + h > a$ and $F(s + h)$ exists. By Taylor's formula with Lagrange remainder, $e^x = 1 + x + \frac12 x^2e^{\xi}$ with $\xi$ between $0$ and $x$, so $|e^x - 1 - x| \le \frac12 x^2e^{|x|}$. With $x = -ht$,
+> **19.** (BDP: Problem 6.2.21.) Let $f$ satisfy the conditions of [[§21 Definition of the Laplace Transform#^thm-21-2|Theorem §21.2]] and fix $s > a$. BDP asserts that one may differentiate under the integral sign with respect to $s$; here is why. Put $\delta = \frac12(s - a)$ and let $0 < |h| \le \delta$, so that $s + h > a$ and $F(s + h)$ exists. By Taylor's formula with Lagrange remainder, $e^x = 1 + x + \frac12 x^2e^{\xi}$ with $\xi$ between $0$ and $x$, so $|e^x - 1 - x| \le \frac12 x^2e^{|x|}$. With $x = -ht$,
 >
 > $$
 > \Big|\frac{e^{-(s + h)t} - e^{-st}}{h} + te^{-st}\Big| = \frac{e^{-st}}{|h|}\,\big|e^{-ht} - 1 + ht\big| \le \frac{|h|}{2}\,t^2e^{-(s - \delta)t}, \qquad t \ge 0 .
@@ -294,7 +294,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > \Big|\frac{F(s + h) - F(s)}{h} - \int_0^\infty e^{-st}\big(-tf(t)\big)\,dt\Big| \le \frac{|h|}{2}\int_0^\infty t^2e^{-(s - \delta)t}|f(t)|\,dt .
 > $$
 >
-> All these integrals converge by Theorem §21.1: the integrands are piecewise continuous, and for $t \ge M$, $t^2e^{-(s - \delta)t}|f(t)| \le Kt^2e^{-\delta t} \le Ce^{-\delta t/2}$ (as $t^2e^{-\delta t/2}$ is bounded), and likewise $t\,e^{-st}|f(t)| \le Ce^{-\delta t/2}$. Letting $h \to 0$ gives $F'(s) = \mathcal{L}\{-tf(t)\}$ for every $s > a$. Finally, $-tf(t)$ is piecewise continuous and $|-tf(t)| \le Kte^{at} \le K'e^{a't}$ for every $a' > a$ and $t \ge M$, so it again satisfies the conditions of Theorem §21.2 (with any exponent $a' > a$), and induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$ for $s > a$.
+> All these integrals converge by [[§21 Definition of the Laplace Transform#^thm-21-1|Theorem §21.1]]: the integrands are piecewise continuous, and for $t \ge M$, $t^2e^{-(s - \delta)t}|f(t)| \le Kt^2e^{-\delta t} \le Ce^{-\delta t/2}$ (as $t^2e^{-\delta t/2}$ is bounded), and likewise $t\,e^{-st}|f(t)| \le Ce^{-\delta t/2}$. Letting $h \to 0$ gives $F'(s) = \mathcal{L}\{-tf(t)\}$ for every $s > a$. Finally, $-tf(t)$ is piecewise continuous and $|-tf(t)| \le Kte^{at} \le K'e^{a't}$ for every $a' > a$ and $t \ge M$, so it again satisfies the conditions of Theorem §21.2 (with any exponent $a' > a$), and induction gives $F^{(n)}(s) = \mathcal{L}\{(-t)^nf(t)\}$ for $s > a$.
 
 ^pf-22-6
 
@@ -313,10 +313,10 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 > [!remark] Remark: Method — Solving an Initial Value Problem by Laplace Transform
 > For $ay'' + by' + cy = f(t)$, $y(0) = y_0$, $y'(0) = y_0'$ (or a higher-order analogue):
-> 1. **Transform** both sides, using linearity and $\mathcal{L}\{y'\} = sY - y(0)$, $\mathcal{L}\{y''\} = s^2Y - sy(0) - y'(0)$ (Corollary §22.2), and the table (Theorem §22.6) for $\mathcal{L}\{f\}$.
+> 1. **Transform** both sides, using linearity and $\mathcal{L}\{y'\} = sY - y(0)$, $\mathcal{L}\{y''\} = s^2Y - sy(0) - y'(0)$ ([[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]]), and the table ([[§22 Solution of Initial Value Problems#^thm-22-6|Theorem §22.6]]) for $\mathcal{L}\{f\}$.
 > 2. **Insert the initial conditions** and **solve for $Y(s)$**, as in (16).
 > 3. **Decompose $Y(s)$** into terms found in the table (next remark).
-> 4. **Invert term by term** (Corollary §22.5) to get $y(t)$.
+> 4. **Invert term by term** ([[§22 Solution of Initial Value Problems#^cor-22-5|Corollary §22.5]]) to get $y(t)$.
 > 5. **Check** $y(0)$, $y'(0)$, or substitute into the equation.
 
 ^rem-22-3
@@ -332,12 +332,12 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 > [!remark]- Connections
 > - See also: [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]] (Heaviside's formula: when the denominator has only simple roots, real or complex, the inverse transform is $\sum_k \frac{q(r_k)}{p'(r_k)}e^{r_kt}$, with no constants to solve for).
-> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark §95.2]] (inverting a rational transform by residues).
+> - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and Liouville's theorem) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark: Method — Inverse Laplace Transforms by Residues]] (inverting a rational transform by residues).
 
 > [!example] Example §22.2: A Forced Undamped Oscillator
 > Solve $y'' + y = \sin(2t)$, $y(0) = 2$, $y'(0) = 1$. (19), (20)
 >
-> Assuming $y$ satisfies the conditions of Corollary §22.2, transform, using entry 5 for $\sin(2t)$:
+> Assuming $y$ satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]], transform, using entry 5 for $\sin(2t)$:
 >
 > $$
 > s^2Y(s) - sy(0) - y'(0) + Y(s) = \frac{2}{s^2 + 4} .
@@ -371,7 +371,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > [!example] Example §22.3: A Fourth-Order Equation
 > Solve $y^{(4)} - y = 0$, $y(0) = 0$, $y'(0) = 1$, $y''(0) = 0$, $y'''(0) = 0$. (26), (27)
 >
-> Assume $y$ satisfies the conditions of Corollary §22.2 for $n = 4$. Transforming,
+> Assume $y$ satisfies the conditions of [[§22 Solution of Initial Value Problems#^cor-22-2|Corollary §22.2]] for $n = 4$. Transforming,
 >
 > $$
 > s^4Y(s) - s^3y(0) - s^2y'(0) - sy''(0) - y'''(0) - Y(s) = 0 ,
@@ -433,4 +433,4 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 ## Vibrations and Circuits
 
-The most important elementary applications are the equations of [[§19 Mechanical and Electrical Vibrations|§19]]: the spring–mass system ([[§19 Mechanical and Electrical Vibrations#^prop-19-1|Proposition §19.1]]) $m\,\dfrac{d^2u}{dt^2} + \gamma\dfrac{du}{dt} + ku = F(t)$ (33), and the series circuit ([[§19 Mechanical and Electrical Vibrations#^prop-19-5|Proposition §19.5]]) $L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac1C Q = E(t)$ (34) or, for the current, $L\dfrac{d^2I}{dt^2} + R\dfrac{dI}{dt} + \dfrac1C I = \dfrac{dE}{dt}$ (35), each with initial conditions. They are the same mathematical problem, and Proposition §22.3 solves all of them at once, as soon as $\mathcal{L}\{F\}$ or $\mathcal{L}\{E\}$ is known; most constant-coefficient problems of this chapter can be read as models of one of these systems.
+The most important elementary applications are the equations of [[§19 Mechanical and Electrical Vibrations|§19]]: the spring–mass system ([[§19 Mechanical and Electrical Vibrations#^prop-19-1|Proposition §19.1]]) $m\,\dfrac{d^2u}{dt^2} + \gamma\dfrac{du}{dt} + ku = F(t)$ (33), and the series circuit ([[§19 Mechanical and Electrical Vibrations#^prop-19-5|Proposition §19.5]]) $L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac1C Q = E(t)$ (34) or, for the current, $L\dfrac{d^2I}{dt^2} + R\dfrac{dI}{dt} + \dfrac1C I = \dfrac{dE}{dt}$ (35), each with initial conditions. They are the same mathematical problem, and [[§22 Solution of Initial Value Problems#^prop-22-3|Proposition §22.3]] solves all of them at once, as soon as $\mathcal{L}\{F\}$ or $\mathcal{L}\{E\}$ is known; most constant-coefficient problems of this chapter can be read as models of one of these systems.

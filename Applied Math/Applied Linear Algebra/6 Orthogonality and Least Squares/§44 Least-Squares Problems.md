@@ -265,7 +265,7 @@ Formula (4) is mainly of theoretical use, and for hand calculations when $A^TA$ 
 ^thm-44-3
 
 > [!proof]+ Proof
-> $R$ is invertible by Theorem §43.3. Let $\hat{\mathbf{x}} = R^{-1}Q^T\mathbf{b}$. Then
+> $R$ is invertible by [[§43 The Gram–Schmidt Process#^thm-43-3|Theorem §43.3]]. Let $\hat{\mathbf{x}} = R^{-1}Q^T\mathbf{b}$. Then
 >
 > $$
 > A\hat{\mathbf{x}} = QR\hat{\mathbf{x}} = QRR^{-1}Q^T\mathbf{b} = QQ^T\mathbf{b} .

@@ -44,7 +44,7 @@ A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf
 >
 > Check: $\begin{bmatrix} .1 & .6 \\ -.1 & .4 \end{bmatrix}\begin{bmatrix} 6 \\ 4 \end{bmatrix} = \begin{bmatrix} .6 + 2.4 \\ -.6 + 1.6 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix} = [\mathbf{x}]_{\mathcal B}$.
 >
-> *Lay: Example 4.7.1 and Practice Problem 2*
+> *Lay: Example 4.7.1; 4.7, Practice Problem 2*
 
 ^ex-29-1
 

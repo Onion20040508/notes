@@ -105,7 +105,7 @@ An equation $M(x, y) + N(x, y)\,y' = 0$ is exact when its left side is the $x$-d
 
 Whether the relation $\psi(x, y) = c$ really defines $y$ as a differentiable function of $x$ is a separate question; in general terms it does, locally, at points where $\partial\psi/\partial y \ne 0$ (the implicit function theorem, [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]]).
 
-In Example §9.1 it was easy to see that the equation is exact and to find $\psi$. In general one needs a test for exactness and a way to construct $\psi$; the following theorem gives the first, and its proof the second.
+In [[§9 Exact Differential Equations and Integrating Factors#^ex-9-1|Example §9.1]] it was easy to see that the equation is exact and to find $\psi$. In general one needs a test for exactness and a way to construct $\psi$; the following theorem gives the first, and its proof the second.
 
 > [!theorem] Theorem §9.2: Test for Exactness
 > Let the functions $M$, $N$, $M_y$ and $N_x$, where subscripts denote partial derivatives, be continuous in the rectangular region $R\colon \alpha < x < \beta$, $\gamma < y < \delta$. Then equation (6),
@@ -201,11 +201,11 @@ It is possible to write $\psi$ explicitly as integrals, as at the end of the pro
 
 > [!remark] Remark: Method — Solving an Exact Equation
 > For $M(x, y) + N(x, y)\,y' = 0$:
-> 1. **Test.** Compute $M_y$ and $N_x$. If $M_y = N_x$ (on a rectangle where $M$, $N$, $M_y$, $N_x$ are continuous), the equation is exact (Theorem §9.2); if not, it is not exact (look for an integrating factor below).
+> 1. **Test.** Compute $M_y$ and $N_x$. If $M_y = N_x$ (on a rectangle where $M$, $N$, $M_y$, $N_x$ are continuous), the equation is exact ([[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|Theorem §9.2]]); if not, it is not exact (look for an integrating factor below).
 > 2. **Integrate $M$ in $x$.** $\psi(x, y) = \int M(x, y)\,dx + h(y)$, holding $y$ fixed, with an arbitrary function $h(y)$ in place of the constant of integration.
 > 3. **Match $N$.** Differentiate in $y$ and set $\psi_y = N$. This determines $h'(y)$; if the equation is exact, every $x$ cancels.
 > 4. **Find $h$.** Integrate $h'(y)$. The constant of integration can be omitted: any one $\psi$ will do.
-> 5. **Solution.** $\psi(x, y) = c$ gives the solutions implicitly (Proposition §9.1). Apply an initial condition to find $c$, and solve for $y$ if possible.
+> 5. **Solution.** $\psi(x, y) = c$ gives the solutions implicitly ([[§9 Exact Differential Equations and Integrating Factors#^prop-9-1|Proposition §9.1]]). Apply an initial condition to find $c$, and solve for $y$ if possible.
 >
 > Steps 2–4 may equally be done the other way round: integrate $N$ in $y$, with an arbitrary function $g(x)$, and match $\psi_x = M$.
 
@@ -284,7 +284,7 @@ It is possible to write $\psi$ explicitly as integrals, as at the end of the pro
 >
 > is exact.
 >
-> Here $N(x, y) = 8xy^3$, so $N_x = 8y^3$. By Theorem §9.2 (in the whole plane, for $M$ with continuous $M_y$), the equation is exact exactly when
+> Here $N(x, y) = 8xy^3$, so $N_x = 8y^3$. By [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|Theorem §9.2]] (in the whole plane, for $M$ with continuous $M_y$), the equation is exact exactly when
 >
 > $$
 > M_y(x, y) = 8y^3 .
@@ -343,20 +343,20 @@ An equation that is not exact can sometimes be made exact by multiplying it by a
 > M\mu_y - N\mu_x + (M_y - N_x)\,\mu = 0 . \qquad (26)
 > $$
 >
-> Where $\mu \ne 0$, the solutions of (24), found by Theorem §9.2, are solutions of (23).
+> Where $\mu \ne 0$, the solutions of (24), found by [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|Theorem §9.2]], are solutions of (23).
 >
 > *BDP: 2.6, equations (25) and (26)*
 
 ^prop-9-3
 
 > [!proof]+ Proof
-> By Theorem §9.2 applied to $\mu M$ and $\mu N$ (whose partial derivatives $(\mu M)_y$ and $(\mu N)_x$ are continuous), (24) is exact on $R$ if and only if (25) holds. By the product rule, (25) reads $\mu_y M + \mu M_y = \mu_x N + \mu N_x$, which rearranges to (26). Finally, if $y = \phi(x)$ solves (24) and $\mu(x, \phi(x)) \ne 0$, dividing (24) by $\mu$ shows that $\phi$ solves (23): the integrating factor can be cancelled.
+> By [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|Theorem §9.2]] applied to $\mu M$ and $\mu N$ (whose partial derivatives $(\mu M)_y$ and $(\mu N)_x$ are continuous), (24) is exact on $R$ if and only if (25) holds. By the product rule, (25) reads $\mu_y M + \mu M_y = \mu_x N + \mu N_x$, which rearranges to (26). Finally, if $y = \phi(x)$ solves (24) and $\mu(x, \phi(x)) \ne 0$, dividing (24) by $\mu$ shows that $\phi$ solves (23): the integrating factor can be cancelled.
 
 ^pf-9-3
 
 *Uses:* [[§9 Exact Differential Equations and Integrating Factors#^thm-9-2|§9.2]], [[§9 Exact Differential Equations and Integrating Factors#^def-9-2|Def. §9.2]]
 
-A partial differential equation such as (26) may have more than one solution, and any of them may be used as an integrating factor (Example §9.5). But (26) is ordinarily at least as hard to solve as the original equation (23), so integrating factors can be found in practice only in special cases. The most important are those where $\mu$ depends on only one of the variables.
+A partial differential equation such as (26) may have more than one solution, and any of them may be used as an integrating factor ([[§9 Exact Differential Equations and Integrating Factors#^ex-9-5|Example §9.5]]). But (26) is ordinarily at least as hard to solve as the original equation (23), so integrating factors can be found in practice only in special cases. The most important are those where $\mu$ depends on only one of the variables.
 
 > [!theorem] Proposition §9.4: Integrating Factors Depending on One Variable
 > (a) If $(M_y - N_x)/N$ is a function of $x$ only, then (23) has an integrating factor $\mu(x)$ that depends on $x$ only, found by solving
@@ -376,7 +376,7 @@ A partial differential equation such as (26) may have more than one solution, an
 ^prop-9-4
 
 > [!proof]+ Proof
-> **(a)** If $\mu$ depends on $x$ only, then $\mu_x = d\mu/dx$ and $\mu_y = 0$, and (26) becomes $-N\,\mu' + (M_y - N_x)\mu = 0$, which is (27). If $(M_y - N_x)/N = P(x)$ depends on $x$ only, (27) is the equation $\mu' = P(x)\mu$, linear and separable in $\mu$ alone, and $\mu(x) = \exp \int P(x)\,dx$ solves it: $\mu' = P(x)\mu$. By Proposition §9.3 this $\mu$ is an integrating factor.
+> **(a)** If $\mu$ depends on $x$ only, then $\mu_x = d\mu/dx$ and $\mu_y = 0$, and (26) becomes $-N\,\mu' + (M_y - N_x)\mu = 0$, which is (27). If $(M_y - N_x)/N = P(x)$ depends on $x$ only, (27) is the equation $\mu' = P(x)\mu$, linear and separable in $\mu$ alone, and $\mu(x) = \exp \int P(x)\,dx$ solves it: $\mu' = P(x)\mu$. By [[§9 Exact Differential Equations and Integrating Factors#^prop-9-3|Proposition §9.3]] this $\mu$ is an integrating factor.
 >
 > **(b)** If $\mu$ depends on $y$ only, then $\mu_x = 0$ and $\mu_y = d\mu/dy$, and (26) becomes $M\mu' + (M_y - N_x)\mu = 0$, that is, $\mu' = \dfrac{N_x - M_y}{M}\,\mu = Q(y)\,\mu$. The function $\mu(y) = \exp \int Q(y)\,dy$ satisfies $\mu' = Q(y)\mu$, so it is an integrating factor by Proposition §9.3.
 
@@ -424,7 +424,7 @@ A partial differential equation such as (26) may have more than one solution, an
 > \frac{M_y - N_x}{N} = \frac{3x + 2y - (2x + y)}{x^2 + xy} = \frac{x + y}{x(x + y)} = \frac1x \qquad (28)
 > $$
 >
-> depends on $x$ only, so by Proposition §9.4 there is an integrating factor $\mu(x)$ with $d\mu/dx = \mu/x$ (29); for instance
+> depends on $x$ only, so by [[§9 Exact Differential Equations and Integrating Factors#^prop-9-4|Proposition §9.4]] there is an integrating factor $\mu(x)$ with $d\mu/dx = \mu/x$ (29); for instance
 >
 > $$
 > \mu(x) = x . \qquad (30)

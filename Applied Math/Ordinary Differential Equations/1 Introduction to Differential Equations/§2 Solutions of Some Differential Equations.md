@@ -182,7 +182,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 ^ex-2-2
 
 > [!example] Example §2.3: Time and Speed of Impact
-> For the object of Example §2.2, how long does it take to fall $300$ m, and how fast is it moving at impact?
+> For the object of [[§2 Solutions of Some Differential Equations#^ex-2-2|Example §2.2]], how long does it take to fall $300$ m, and how fast is it moving at impact?
 >
 > **Distance fallen.** The distance $x$ fallen satisfies $dx/dt = v$, so by (26)
 >

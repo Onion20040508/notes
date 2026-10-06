@@ -99,7 +99,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 ^thm-4-1
 
 > [!proof]+ Proof
-> **Finding $\mu$.** By Definition §4.2 with $p(t) = a$, an integrating factor must satisfy $\mu' = a\mu$. (BDP's Example 2.1.2 does this for $a = \frac12$: what function is its own derivative up to the factor $\frac12$?) Writing it as $\frac{d}{dt}\ln|\mu| = a$ gives $\ln|\mu| = at + C$, and since the most general integrating factor is not needed, take $\mu(t) = e^{at}$. Directly: $(e^{at})' = ae^{at}$.
+> **Finding $\mu$.** By [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Definition §4.2]] with $p(t) = a$, an integrating factor must satisfy $\mu' = a\mu$. (BDP's Example 2.1.2 does this for $a = \frac12$: what function is its own derivative up to the factor $\frac12$?) Writing it as $\frac{d}{dt}\ln|\mu| = a$ gives $\ln|\mu| = at + C$, and since the most general integrating factor is not needed, take $\mu(t) = e^{at}$. Directly: $(e^{at})' = ae^{at}$.
 >
 > **Integrating.** Multiply (20) by $e^{at}$:
 >
@@ -170,7 +170,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 ^thm-4-2
 
 > [!proof]+ Proof
-> **Finding $\mu$.** An integrating factor must satisfy $\mu' = p(t)\mu$ (Definition §4.2, (29)). Assume temporarily that $\mu > 0$. Then $\dfrac{\mu'}{\mu} = p(t)$, that is, $\dfrac{d}{dt}\ln\mu(t) = p(t)$, so
+> **Finding $\mu$.** An integrating factor must satisfy $\mu' = p(t)\mu$ ([[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Definition §4.2]], (29)). Assume temporarily that $\mu > 0$. Then $\dfrac{\mu'}{\mu} = p(t)$, that is, $\dfrac{d}{dt}\ln\mu(t) = p(t)$, so
 >
 > $$
 > \ln\mu(t) = \int p(t)\,dt + k .

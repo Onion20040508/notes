@@ -271,6 +271,10 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 *Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|§40.3]], [[§40 Inner Product, Length, and Orthogonality#^def-40-5|Def. §40.5]]
 
+> [!remark]- Connections
+> - Rigorous treatment: [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]], for any inner product space; Axler states only the direction "orthogonal $\Rightarrow$ the identity". The converse holds over $\mathbb{R}$ by the same computation, but fails over $\mathbb{C}$, where the identity says only $\operatorname{Re}\langle u, v \rangle = 0$.
+> - Hilbert-space version, with its extension to finitely many orthonormal vectors: [[§24 Orthonormal Sets and Bases#^lem-24-1|556 Lem. §24.1]].
+
 ## Orthogonal Complements
 
 > [!definition] Definition §40.6: Orthogonal Complement

@@ -209,7 +209,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 
 ^pf-51-4
 
-*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]] (extending an orthonormal set)
+*Uses:* [[§51★ The Singular Value Decomposition#^thm-51-3|§51.3]], [[§41 Orthogonal Sets#^thm-41-4|§41.4]], [[§41 Orthogonal Sets#^def-41-5|Def. §41.5]] (orthogonal matrices), [[§43 The Gram–Schmidt Process#^cor-43-2|§43.2]], [[§40 Inner Product, Length, and Orthogonality#^prop-40-7|§40.7]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]] (the extended orthonormal set is independent)
 
 > [!definition] Definition §51.2: Singular Value Decomposition; Singular Vectors
 > Any factorization $A = U\Sigma V^T$, with $U$ and $V$ orthogonal, $\Sigma$ as in (3), and positive diagonal entries in $D$, is called a **singular value decomposition** (or **SVD**) of $A$. The columns of $U$ are called **left singular vectors** of $A$, and the columns of $V$ are called **right singular vectors** of $A$.
@@ -221,7 +221,7 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in Example §51.1 are orthogonal
 ^def-51-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§26 Singular Value Decomposition#^ladr-7-70|LADR 7.70]] (hub [[Singular value decomposition]]) proves the same construction for a linear map $T : V \to W$, written as $Tv = \sum_k s_k \langle v, e_k \rangle f_k$ (that is, $A = \sum_{i \le r} \sigma_i \mathbf{u}_i \mathbf{v}_i^T$, Lay's Exercise 23); the matrix form, in the reduced shape of Definition §51.4, is [[§26 Singular Value Decomposition#^ladr-7-80|LADR 7.80]]. Axler's proof is Lay's: diagonalize $T^*T$, set $f_k = Te_k/s_k$.
+> - Rigorous treatment: [[§26 Singular Value Decomposition#^ladr-7-70|LADR 7.70]] (hub [[Singular value decomposition]]) proves the same construction for a linear map $T : V \to W$, written as $Tv = \sum_k s_k \langle v, e_k \rangle f_k$ (that is, $A = \sum_{i \le r} \sigma_i \mathbf{u}_i \mathbf{v}_i^T$, Lay's Exercise 23); the matrix form, in the reduced shape of [[§51★ The Singular Value Decomposition#^def-51-4|Definition §51.4]], is [[§26 Singular Value Decomposition#^ladr-7-80|LADR 7.80]]. Axler's proof is Lay's: diagonalize $T^*T$, set $f_k = Te_k/s_k$.
 > - Polar decomposition (Lay's Supplementary Exercise 11): $A = (U\Sigma U^T)(UV^T)$ writes a square $A$ as a positive semidefinite matrix times an orthogonal matrix, a stretch along perpendicular axes followed by a rotation or reflection: [[§27 Consequences of Singular Value Decomposition#^ladr-7-93|LADR 7.93]].
 
 > [!remark] Remark: Method — Computing an SVD

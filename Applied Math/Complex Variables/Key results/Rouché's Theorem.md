@@ -20,4 +20,5 @@ tags: [complex-variables, hub]
 - (not cited later in the course)
 
 ## Connections
+- Topologically, Rouché's theorem is the homotopy invariance of the winding number. Since $|g| < |f|$ on $C$, the loops $(f + tg)(C)$, $0 \le t \le 1$, never pass through $0$, so they form a homotopy in $\mathbb{C} \setminus \{0\}$ from the image loop of $f$ to that of $f + g$, and homotopic loops wind equally often around $0$. Step 3 of the topological proof of the fundamental theorem of algebra, [[§25 The Fundamental Theorem of Algebra#^thm-25-1|590 Thm. §25.1]], is exactly this homotopy with $f = z^n$ on the unit circle; there the winding number is the class of the loop in $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1) \cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]).
 - See [[§94 Rouché's Theorem]] for context and examples.

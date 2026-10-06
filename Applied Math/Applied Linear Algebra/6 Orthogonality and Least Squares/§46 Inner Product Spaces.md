@@ -21,7 +21,7 @@ Length, distance and orthogonality in $\mathbb{R}^n$ were built from four proper
 > 3. $\langle c\mathbf{u}, \mathbf{v}\rangle = c\langle \mathbf{u}, \mathbf{v}\rangle$
 > 4. $\langle \mathbf{u}, \mathbf{u}\rangle \ge 0$, and $\langle \mathbf{u}, \mathbf{u}\rangle = 0$ if and only if $\mathbf{u} = \mathbf{0}$.
 >
-> A vector space with an inner product is called an **inner product space**. $\mathbb{R}^n$ with $\langle \mathbf{u}, \mathbf{v}\rangle = \mathbf{u} \cdot \mathbf{v}$ (the standard inner product) is one, by Theorem §40.1.
+> A vector space with an inner product is called an **inner product space**. $\mathbb{R}^n$ with $\langle \mathbf{u}, \mathbf{v}\rangle = \mathbf{u} \cdot \mathbf{v}$ (the standard inner product) is one, by [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]].
 >
 > *Lay: 6.7, Definition*
 
@@ -92,7 +92,7 @@ From now on, polynomials and other functions in an inner product space are writt
 > 2. $\langle \mathbf{u}, \mathbf{v} + \mathbf{w}\rangle = \langle \mathbf{u}, \mathbf{v}\rangle + \langle \mathbf{u}, \mathbf{w}\rangle$;
 > 3. $\langle \mathbf{u}, c\mathbf{v}\rangle = c\langle \mathbf{u}, \mathbf{v}\rangle$.
 >
-> So all the properties of Theorem §40.1 hold for $\langle\ ,\ \rangle$, including the rule for linear combinations in either slot.
+> So all the properties of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]] hold for $\langle\ ,\ \rangle$, including the rule for linear combinations in either slot.
 >
 > *Lay: 6.7, Practice Problems 1 and 2; Exercise 15*
 
@@ -145,14 +145,14 @@ From now on, polynomials and other functions in an inner product space are writt
 
 > [!proof]+ Proof
 > Lay states that these hold "just as in $\mathbb{R}^n$". Indeed, the proofs of [[§41 Orthogonal Sets#^thm-41-1|Theorem §41.1]] (orthogonal sets of nonzero vectors are independent), [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|Theorem §40.5]] (the vectors orthogonal to $W$ form a subspace meeting $W$ only in $\mathbf{0}$, and orthogonality to a spanning set suffices), [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|Proposition §40.3]] and the Pythagorean Theorem [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], the Orthogonal Decomposition Theorem [[§42 Orthogonal Projections#^thm-42-1|§42.1]], the Best Approximation Theorem [[§42 Orthogonal Projections#^thm-42-3|§42.3]] and Gram–Schmidt [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]] use only:
-> - the properties (a)–(d) of Theorem §40.1, which hold for $\langle\ ,\ \rangle$ by the axioms and Proposition §46.1;
+> - the properties (a)–(d) of [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|Theorem §40.1]], which hold for $\langle\ ,\ \rangle$ by the axioms and Proposition §46.1;
 > - dimension counting inside the finite-dimensional spaces $W$ and $W_k = \operatorname{Span}\{\mathbf{x}_1, \ldots, \mathbf{x}_k\}$ (the Basis Theorem, [[§27 The Dimension of a Vector Space#^thm-27-5|Theorem §27.5]], which Lay proves for any vector space).
 >
-> They never use coordinates of vectors in $\mathbb{R}^n$, or the dimension of the ambient space. So they hold verbatim with $\mathbf{u} \cdot \mathbf{v}$ replaced by $\langle \mathbf{u}, \mathbf{v}\rangle$, even when $V$ is infinite-dimensional, as $C[a, b]$ is. (Only $W$ must be finite-dimensional: Gram–Schmidt and the projection formula need a finite basis of $W$.) Uniqueness of the decomposition gives the independence of the basis, exactly as in Definition §42.1.
+> They never use coordinates of vectors in $\mathbb{R}^n$, or the dimension of the ambient space. So they hold verbatim with $\mathbf{u} \cdot \mathbf{v}$ replaced by $\langle \mathbf{u}, \mathbf{v}\rangle$, even when $V$ is infinite-dimensional, as $C[a, b]$ is. (Only $W$ must be finite-dimensional: Gram–Schmidt and the projection formula need a finite basis of $W$.) Uniqueness of the decomposition shows that the projection does not depend on the orthogonal basis chosen, exactly as in [[§42 Orthogonal Projections#^def-42-1|Definition §42.1]].
 
 ^pf-46-2
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§46 Inner Product Spaces#^prop-46-1|§46.1]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]]
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|§40.1]] (properties (a)–(d)), [[§40 Inner Product, Length, and Orthogonality#^thm-40-5|§40.5]], [[§40 Inner Product, Length, and Orthogonality#^thm-40-4|§40.4]], [[§41 Orthogonal Sets#^thm-41-1|§41.1]], [[§42 Orthogonal Projections#^thm-42-1|§42.1]], [[§42 Orthogonal Projections#^thm-42-3|§42.3]], [[§43 The Gram–Schmidt Process#^thm-43-1|§43.1]], [[§46 Inner Product Spaces#^prop-46-1|§46.1]], [[§27 The Dimension of a Vector Space#^thm-27-5|§27.5]], [[§42 Orthogonal Projections#^def-42-1|Def. §42.1]] (the projection does not depend on the basis)
 
 > [!remark]- Connections
 > - PDE version: [[§11★ Mean Error and Convergence in Mean#^thm-11-2|341 Thm. §11.2]] (part 3 for the integral inner product: the truncated Fourier series is the best mean-square approximation by trigonometric polynomials); Gram–Schmidt applied to $1, x, x^2, \ldots$ in $C[-1, 1]$ gives, up to scaling, the Legendre polynomials, [[§49★ Spherical Coordinates; Legendre Polynomials#^def-49-3|341 Def. §49.3]], orthogonal by [[§49★ Spherical Coordinates; Legendre Polynomials#^prop-49-5|341 Prop. §49.5]].

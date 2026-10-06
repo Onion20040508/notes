@@ -62,7 +62,7 @@ An autonomous equation $dy/dt = f(y)$ is one whose right side does not depend on
 ^prop-8-1
 
 > [!proof]+ Proof
-> Equation (2) is linear, $y' - ry = 0$, with integrating factor $e^{-rt}$: $(e^{-rt}y)' = 0$, so $e^{-rt}y = c$ and $y = ce^{rt}$. The initial condition gives $c = y_0$. By Theorem §7.1 this is the only solution, on all of $-\infty < t < \infty$.
+> Equation (2) is linear, $y' - ry = 0$, with integrating factor $e^{-rt}$: $(e^{-rt}y)' = 0$, so $e^{-rt}y = c$ and $y = ce^{rt}$. The initial condition gives $c = y_0$. By [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] this is the only solution, on all of $-\infty < t < \infty$.
 
 ^pf-8-1
 
@@ -193,7 +193,7 @@ For quantitative information, solve (7).
 >
 > **Case $y_0 > K$.** (BDP leaves this case to the reader.) Now the solution stays in $y > K$, so $|1 - y/K| = y/K - 1$ and (9) becomes $\ln\big(y/(y/K - 1)\big) = rt + c$, that is, $y/(y/K - 1) = Ce^{rt}$, or $y/(1 - y/K) = -Ce^{rt}$. This is (10) with the constant $-C$, and the initial condition again gives the constant $y_0/(1 - y_0/K)$; the same algebra leads to (11).
 >
-> **Cases $y_0 = 0$ and $y_0 = K$.** Formula (11) gives $y = 0$ and $y = K$, which are the solutions by Definition §8.4 and the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]).
+> **Cases $y_0 = 0$ and $y_0 = K$.** Formula (11) gives $y = 0$ and $y = K$, which are the solutions by [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-4|Definition §8.4]] and the uniqueness part of Theorem 2.4.2 ([[§11 The Existence and Uniqueness Theorem#^thm-11-8|Theorem §11.8]]).
 >
 > **Domain and limit.** For $t \ge 0$ the denominator $y_0 + (K - y_0)e^{-rt}$ is positive when $y_0 > 0$: it lies between $y_0$ and $K$. So (11) is defined for all $t \ge 0$, and as $t \to \infty$, $e^{-rt} \to 0$ and $y(t) \to y_0K/y_0 = K$.
 
@@ -208,7 +208,7 @@ So, for each $y_0 > 0$, the solution approaches the equilibrium solution $y = K$
 > - It is an **asymptotically stable solution** (and $y_1$ an **asymptotically stable** equilibrium or critical point) if solutions that start sufficiently near $y_1$, on either side, approach $y_1$ as $t \to \infty$.
 > - It is an **unstable equilibrium solution** (and $y_1$ an **unstable** critical point) if solutions that start near $y_1$, on either side, move away from it, however close to $y_1$ they start.
 >
-> For the logistic equation (7), $y = K$ is asymptotically stable and $y = 0$ is unstable (Proposition §8.3).
+> For the logistic equation (7), $y = K$ is asymptotically stable and $y = 0$ is unstable ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]]).
 >
 > *BDP: 2.5 (text)*
 
@@ -249,7 +249,7 @@ So, for each $y_0 > 0$, the solution approaches the equilibrium solution $y = K$
 
 ## Stability in General
 
-The ideas of Definition §8.6 apply to any autonomous equation, and two refinements from BDP's problems are used in the course: the semistable case, and a test for stability by the sign of $f'$.
+The ideas of [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-6|Definition §8.6]] apply to any autonomous equation, and two refinements from BDP's problems are used in the course: the semistable case, and a test for stability by the sign of $f'$.
 
 > [!definition] Definition §8.7: Semistable Equilibrium
 > An equilibrium solution $y = y_1$ of (1) is **semistable** if solutions lying on one side of it tend to approach it, whereas solutions lying on the other side depart from it.
@@ -282,7 +282,7 @@ The ideas of Definition §8.6 apply to any autonomous equation, and two refineme
 ^prop-8-5
 
 > [!proof]+ Proof
-> **$f'(y_1) < 0$.** Since $f(y_1) = 0$, the difference quotient $f(y)/(y - y_1)$ tends to $f'(y_1) < 0$ as $y \to y_1$. So there is $\delta > 0$ such that $f(y) > 0$ for $y_1 - \delta < y < y_1$ and $f(y) < 0$ for $y_1 < y < y_1 + \delta$. Let $\phi$ be a solution with $y_1 - \delta < \phi(t_0) < y_1$. While $\phi$ stays in this interval it increases, since $\phi' = f(\phi) > 0$; and it can never reach $y_1$, because its graph cannot meet the equilibrium solution ([[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]]). So $\phi$ is increasing and $\phi(t_0) \le \phi(t) < y_1$; as BDP does throughout, we take for granted that such a solution, confined to a bounded interval, exists for all $t \ge t_0$. By Lemma §8.4, $\phi(t) \to L$ with $f(L) = 0$ and $\phi(t_0) < L \le y_1$; the only zero of $f$ in that range is $y_1$. Likewise a solution starting in $(y_1, y_1 + \delta)$ decreases to $y_1$. So $y_1$ is asymptotically stable.
+> **$f'(y_1) < 0$.** Since $f(y_1) = 0$, the difference quotient $f(y)/(y - y_1)$ tends to $f'(y_1) < 0$ as $y \to y_1$. So there is $\delta > 0$ such that $f(y) > 0$ for $y_1 - \delta < y < y_1$ and $f(y) < 0$ for $y_1 < y < y_1 + \delta$. Let $\phi$ be a solution with $y_1 - \delta < \phi(t_0) < y_1$. While $\phi$ stays in this interval it increases, since $\phi' = f(\phi) > 0$; and it can never reach $y_1$, because its graph cannot meet the equilibrium solution ([[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]]). So $\phi$ is increasing and $\phi(t_0) \le \phi(t) < y_1$; as BDP does throughout, we take for granted that such a solution, confined to a bounded interval, exists for all $t \ge t_0$. By [[§8 Autonomous Differential Equations and Population Dynamics#^lem-8-4|Lemma §8.4]], $\phi(t) \to L$ with $f(L) = 0$ and $\phi(t_0) < L \le y_1$; the only zero of $f$ in that range is $y_1$. Likewise a solution starting in $(y_1, y_1 + \delta)$ decreases to $y_1$. So $y_1$ is asymptotically stable.
 >
 > **$f'(y_1) > 0$.** Now there is $\delta > 0$ with $f < 0$ on $(y_1 - \delta, y_1)$ and $f > 0$ on $(y_1, y_1 + \delta]$. A solution starting in $(y_1, y_1 + \delta)$ increases. If it stayed below $y_1 + \delta$ for all $t \ge t_0$, it would be monotone and bounded, and by Lemma §8.4 it would tend to a zero of $f$ in $(y_1, y_1 + \delta]$; there is none. So it leaves the interval: it moves away from $y_1$, however close to $y_1$ it starts. The same holds below $y_1$, so $y_1$ is unstable.
 
@@ -290,15 +290,15 @@ The ideas of Definition §8.6 apply to any autonomous equation, and two refineme
 
 *Uses:* [[§8 Autonomous Differential Equations and Population Dynamics#^lem-8-4|§8.4]], [[§8 Autonomous Differential Equations and Population Dynamics#^def-8-6|Def. §8.6]], [[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|§7.3]]
 
-If $f'(y_1) = 0$ the test says nothing: $y' = k(1 - y)^2$ (Definition §8.7) has $f'(1) = 0$ and a semistable point, while $y' = -(y - 1)^3$ has $f'(1) = 0$ and an asymptotically stable one.
+If $f'(y_1) = 0$ the test says nothing: $y' = k(1 - y)^2$ ([[§8 Autonomous Differential Equations and Population Dynamics#^def-8-7|Definition §8.7]]) has $f'(1) = 0$ and a semistable point, while $y' = -(y - 1)^3$ has $f'(1) = 0$ and an asymptotically stable one.
 
 > [!remark] Remark: Method — Qualitative Analysis of an Autonomous Equation
 > For $dy/dt = f(y)$:
-> 1. **Critical points.** Solve $f(y) = 0$. Each root $y_1$ gives an equilibrium solution $y = y_1$ (Definition §8.4).
-> 2. **Signs.** Determine the sign of $f$ on each interval between consecutive critical points, from the graph of $f$ against $y$ or from a sign table of its factors. Draw the phase line: an up arrow where $f > 0$, a down arrow where $f < 0$ (Definition §8.5).
-> 3. **Classify.** Arrows pointing toward $y_1$ on both sides: asymptotically stable. Away on both sides: unstable. Toward on one side and away on the other: semistable (Definitions §8.6, §8.7). Equivalently, when $f'(y_1) \ne 0$: stable if $f'(y_1) < 0$, unstable if $f'(y_1) > 0$ (Proposition §8.5).
-> 4. **Concavity.** By Proposition §8.2, solutions are concave up where $f'f > 0$ and concave down where $f'f < 0$; inflection points lie on the lines $y = c$ where $f'(c) = 0$.
-> 5. **Sketch.** Draw the equilibrium solutions as horizontal lines. Between them, draw solutions that are monotone in the direction of the arrows, never cross an equilibrium (Corollary §7.3), flatten as they approach an equilibrium, and change concavity on the lines found in step 4. As $t \to \infty$ each bounded solution approaches an equilibrium (Lemma §8.4).
+> 1. **Critical points.** Solve $f(y) = 0$. Each root $y_1$ gives an equilibrium solution $y = y_1$ ([[§8 Autonomous Differential Equations and Population Dynamics#^def-8-4|Definition §8.4]]).
+> 2. **Signs.** Determine the sign of $f$ on each interval between consecutive critical points, from the graph of $f$ against $y$ or from a sign table of its factors. Draw the phase line: an up arrow where $f > 0$, a down arrow where $f < 0$ ([[§8 Autonomous Differential Equations and Population Dynamics#^def-8-5|Definition §8.5]]).
+> 3. **Classify.** Arrows pointing toward $y_1$ on both sides: asymptotically stable. Away on both sides: unstable. Toward on one side and away on the other: semistable (Definitions §8.6, §8.7). Equivalently, when $f'(y_1) \ne 0$: stable if $f'(y_1) < 0$, unstable if $f'(y_1) > 0$ ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-5|Proposition §8.5]]).
+> 4. **Concavity.** By [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-2|Proposition §8.2]], solutions are concave up where $f'f > 0$ and concave down where $f'f < 0$; inflection points lie on the lines $y = c$ where $f'(c) = 0$.
+> 5. **Sketch.** Draw the equilibrium solutions as horizontal lines. Between them, draw solutions that are monotone in the direction of the arrows, never cross an equilibrium ([[§7 Differences Between Linear and Nonlinear Differential Equations#^cor-7-3|Corollary §7.3]]), flatten as they approach an equilibrium, and change concavity on the lines found in step 4. As $t \to \infty$ each bounded solution approaches an equilibrium ([[§8 Autonomous Differential Equations and Population Dynamics#^lem-8-4|Lemma §8.4]]).
 
 ^rem-8-1
 
@@ -311,7 +311,7 @@ If $f'(y_1) = 0$ the test says nothing: $y' = k(1 - y)^2$ (Definition §8.7) has
 > \frac{dS}{dt} = \frac12 - \frac25 S, \qquad S(0) = 0 .
 > $$
 >
-> **(b)** The equation is autonomous with $f(S) = \frac12 - \frac25 S$. Its only critical point is $S = \frac54$. For $S < \frac54$, $f(S) > 0$ (for instance $f(0) = \frac12$), and for $S > \frac54$, $f(S) < 0$ (for instance $f(2) = \frac12 - \frac45 < 0$). So the phase line has an up arrow below $\frac54$ and a down arrow above it, and $S = \frac54$ is asymptotically stable; also $f'(S) = -\frac25 < 0$ (Proposition §8.5). Since it is the only equilibrium, every solution approaches it (Lemma §8.4), whatever the initial amount:
+> **(b)** The equation is autonomous with $f(S) = \frac12 - \frac25 S$. Its only critical point is $S = \frac54$. For $S < \frac54$, $f(S) > 0$ (for instance $f(0) = \frac12$), and for $S > \frac54$, $f(S) < 0$ (for instance $f(2) = \frac12 - \frac45 < 0$). So the phase line has an up arrow below $\frac54$ and a down arrow above it, and $S = \frac54$ is asymptotically stable; also $f'(S) = -\frac25 < 0$ ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-5|Proposition §8.5]]). Since it is the only equilibrium, every solution approaches it ([[§8 Autonomous Differential Equations and Population Dynamics#^lem-8-4|Lemma §8.4]]), whatever the initial amount:
 >
 > $$
 > \lim_{t \to \infty} S(t) = \frac54 \text{ lb} .
@@ -331,7 +331,7 @@ $$
 \frac{dy}{dt} = -r\Big(1 - \frac yT\Big)y , \qquad (14)
 $$
 
-with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shifted parabola through the critical points $y = 0$ and $y = T$, with vertex $(T/2, -rT/4)$. If $0 < y < T$ then $dy/dt < 0$ and $y$ decreases, so $\phi_1(t) = 0$ is asymptotically stable; if $y > T$ then $dy/dt > 0$ and $y$ increases, so $\phi_2(t) = T$ is unstable. By Proposition §8.2, $f'(y) < 0$ for $0 < y < T/2$ and $f'(y) > 0$ for $T/2 < y < T$, so solutions in the strip $0 < y < T$ are concave up below $T/2$ and concave down above it; for $y > T$ both $f$ and $f'$ are positive, and solutions are concave up. The solutions in $0 < y < T$ decrease to $0$; those above $T$ increase more and more steeply.
+with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shifted parabola through the critical points $y = 0$ and $y = T$, with vertex $(T/2, -rT/4)$. If $0 < y < T$ then $dy/dt < 0$ and $y$ decreases, so $\phi_1(t) = 0$ is asymptotically stable; if $y > T$ then $dy/dt > 0$ and $y$ increases, so $\phi_2(t) = T$ is unstable. By [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-2|Proposition §8.2]], $f'(y) < 0$ for $0 < y < T/2$ and $f'(y) > 0$ for $T/2 < y < T$, so solutions in the strip $0 < y < T$ are concave up below $T/2$ and concave down above it; for $y > T$ both $f$ and $f'$ are positive, and solutions are concave up. The solutions in $0 < y < T$ decrease to $0$; those above $T$ increase more and more steeply.
 
 > [!definition] Definition §8.8: Threshold Level
 > In equation (14) the value $T$ is a **threshold level**: if the initial value $y_0$ is less than $T$, the solution approaches zero as $t$ increases, and if $y_0 > T$ it grows without bound. Below the threshold, growth does not occur.
@@ -363,7 +363,7 @@ with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shift
 ^prop-8-6
 
 > [!proof]+ Proof
-> Equation (14) is (7) with $K$ replaced by $T$ and $r$ by $-r$, and the derivation of Proposition §8.3 did not use the sign of $r$; making the same replacements in (11) gives (15). To check it directly, let $D(t) = y_0 + (T - y_0)e^{rt}$, so $y = y_0T/D$ and $D - y_0 = (T - y_0)e^{rt}$. Then
+> Equation (14) is (7) with $K$ replaced by $T$ and $r$ by $-r$, and the derivation of [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]] did not use the sign of $r$; making the same replacements in (11) gives (15). To check it directly, let $D(t) = y_0 + (T - y_0)e^{rt}$, so $y = y_0T/D$ and $D - y_0 = (T - y_0)e^{rt}$. Then
 >
 > $$
 > y' = -\frac{y_0T\,D'}{D^2} = -\frac{y_0T\,r(T - y_0)e^{rt}}{D^2}, \qquad
@@ -410,7 +410,7 @@ There are three critical points, $y = 0$, $y = T$ and $y = K$, giving the equili
 > f'(y) = -r\Big(1 - \frac{2(T + K)}{TK}\,y + \frac{3y^2}{TK}\Big) = -\frac{r}{TK}\big(3y^2 - 2(K + T)y + KT\big) .
 > $$
 >
-> By the quadratic formula $f'(y) = 0$ at $y = \big(2(K + T) \pm \sqrt{4(K + T)^2 - 12KT}\big)/6$, which simplifies to (18) because $(K + T)^2 - 3KT = K^2 - KT + T^2 > 0$. These are simple roots, so $f'$ changes sign at each of them; since $f(y) \ne 0$ there (by Rolle's theorem $f'$ has one root in $(0, T)$ and one in $(T, K)$, and these are the only two), $y'' = f'(y)f(y)$ changes sign exactly when a solution crosses $y = y_1$ or $y = y_2$ (Proposition §8.2). (BDP leaves the computation as Problem 13.)
+> By the quadratic formula $f'(y) = 0$ at $y = \big(2(K + T) \pm \sqrt{4(K + T)^2 - 12KT}\big)/6$, which simplifies to (18) because $(K + T)^2 - 3KT = K^2 - KT + T^2 > 0$. These are simple roots, so $f'$ changes sign at each of them; since $f(y) \ne 0$ there (by Rolle's theorem $f'$ has one root in $(0, T)$ and one in $(T, K)$, and these are the only two), $y'' = f'(y)f(y)$ changes sign exactly when a solution crosses $y = y_1$ or $y = y_2$ ([[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-2|Proposition §8.2]]). (BDP leaves the computation as Problem 13.)
 
 ^pf-8-7
 
@@ -460,7 +460,7 @@ There are three critical points, $y = 0$, $y = T$ and $y = K$, giving the equili
 ^ex-8-3
 
 ![[m331-8-1.svg]]
-*The squirrel equation $P' = 2P(1 - P/2)(P - 1)$ of Example §8.3(a). Left, the phase line: arrows point toward the stable equilibria $0$ and $2$ (green) and away from the unstable threshold $1$ (red). Right, solutions in the $tP$-plane: below the threshold (blue) they decay to $0$, above it (orange) they approach the carrying capacity $2$, never crossing the equilibrium lines. Solutions change concavity on the dashed lines $y_{1,2} = 1 \pm 1/\sqrt3$ of Proposition §8.7.*
+*The squirrel equation $P' = 2P(1 - P/2)(P - 1)$ of [[§8 Autonomous Differential Equations and Population Dynamics#^ex-8-3|Example §8.3]](a). Left, the phase line: arrows point toward the stable equilibria $0$ and $2$ (green) and away from the unstable threshold $1$ (red). Right, solutions in the $tP$-plane: below the threshold (blue) they decay to $0$, above it (orange) they approach the carrying capacity $2$, never crossing the equilibrium lines. Solutions change concavity on the dashed lines $y_{1,2} = 1 \pm 1/\sqrt3$ of Proposition §8.7.*
 
 ## Bifurcation Points
 
@@ -483,7 +483,7 @@ When the right side depends on a parameter $a$, the critical points move as $a$ 
 ^def-8-9
 
 > [!example] Example §8.4: Harvesting Squirrels
-> In Example §8.3(a), hunting is permitted: a fraction $\alpha$ of the squirrel population may be eliminated every year, so
+> In [[§8 Autonomous Differential Equations and Population Dynamics#^ex-8-3|Example §8.3]](a), hunting is permitted: a fraction $\alpha$ of the squirrel population may be eliminated every year, so
 >
 > $$
 > \frac{dP}{dt} = 2P\Big(1 - \frac P2\Big)(P - 1) - \alpha P , \qquad \alpha \ge 0 .
@@ -505,9 +505,9 @@ When the right side depends on a parameter $a$, the critical points move as $a$ 
 >
 > **Case $0 \le \alpha < \frac14$.** Three critical points $0 < P_- < P_+$ (note $P_- \ge 1 > 0$), and $f_\alpha(P) = -P(P - P_-)(P - P_+)$. For $0 < P < P_-$, $f_\alpha < 0$; for $P_- < P < P_+$, $f_\alpha > 0$; for $P > P_+$, $f_\alpha < 0$. So $P = 0$ is asymptotically stable, $P_-$ is an unstable threshold and $P_+$ an asymptotically stable carrying capacity. The population survives (approaches $P_+$) exactly when $P(0) > P_-$. At $\alpha = 0$ this is Example §8.3 ($P_- = 1$, $P_+ = 2$); as $\alpha$ grows the threshold rises and the carrying capacity falls.
 >
-> **Case $\alpha = \frac14$.** $f_{1/4}(P) = -P\big(P - \frac32\big)^2 \le 0$ for $P \ge 0$, with a double root at $\frac32$. Solutions above $\frac32$ decrease to $\frac32$, solutions below it decrease to $0$: $P = \frac32$ is semistable (Definition §8.7).
+> **Case $\alpha = \frac14$.** $f_{1/4}(P) = -P\big(P - \frac32\big)^2 \le 0$ for $P \ge 0$, with a double root at $\frac32$. Solutions above $\frac32$ decrease to $\frac32$, solutions below it decrease to $0$: $P = \frac32$ is semistable ([[§8 Autonomous Differential Equations and Population Dynamics#^def-8-7|Definition §8.7]]).
 >
-> **Case $\alpha > \frac14$.** The quadratic $P^2 - 3P + 2 + \alpha$ has discriminant $9 - 4(2 + \alpha) = 1 - 4\alpha < 0$, so it is positive for all $P$, and $f_\alpha(P) < 0$ for every $P > 0$. The only critical point is $0$: every positive solution decreases, and by Lemma §8.4 it tends to $0$. The population goes extinct, whatever its size.
+> **Case $\alpha > \frac14$.** The quadratic $P^2 - 3P + 2 + \alpha$ has discriminant $9 - 4(2 + \alpha) = 1 - 4\alpha < 0$, so it is positive for all $P$, and $f_\alpha(P) < 0$ for every $P > 0$. The only critical point is $0$: every positive solution decreases, and by [[§8 Autonomous Differential Equations and Population Dynamics#^lem-8-4|Lemma §8.4]] it tends to $0$. The population goes extinct, whatever its size.
 >
 > **Answer.** $\alpha = \frac14$ is a bifurcation point (a saddle–node: the threshold and the carrying capacity merge at $\frac32$ and disappear). With $\alpha = 0.2$ there are equilibria $P_\pm = 1.5 \pm \sqrt{0.05} \approx 1.276$ and $1.724$, so a population above about $1.276$ survives and settles near $1.724$. With $\alpha = 0.4 > \frac14$ the population goes extinct. So the hunters (40%) are wrong, and hunting 20% is safe as the conservationists say; but their claim that more than 20% leads to extinction is too strong. The largest rate is
 >
@@ -522,4 +522,4 @@ When the right side depends on a parameter $a$, the critical points move as $a$ 
 ^ex-8-4
 
 ![[m331-8-2.svg]]
-*Bifurcation diagram of Example §8.4: the critical points of $P' = 2P(1 - P/2)(P - 1) - \alpha P$ against the harvesting rate $\alpha$. Solid curves are asymptotically stable, the dashed one unstable. The threshold $P_-$ and the carrying capacity $P_+$ approach each other as $\alpha$ grows and merge at the semistable point $(\frac14, \frac32)$; beyond it (shaded) only $P = 0$ is left. The rate $\alpha = 0.2$ lies to the left of the bifurcation, $\alpha = 0.4$ to the right.*
+*Bifurcation diagram of [[§8 Autonomous Differential Equations and Population Dynamics#^ex-8-4|Example §8.4]]: the critical points of $P' = 2P(1 - P/2)(P - 1) - \alpha P$ against the harvesting rate $\alpha$. Solid curves are asymptotically stable, the dashed one unstable. The threshold $P_-$ and the carrying capacity $P_+$ approach each other as $\alpha$ grows and merge at the semistable point $(\frac14, \frac32)$; beyond it (shaded) only $P = 0$ is left. The rate $\alpha = 0.2$ lies to the left of the bifurcation, $\alpha = 0.4$ to the right.*

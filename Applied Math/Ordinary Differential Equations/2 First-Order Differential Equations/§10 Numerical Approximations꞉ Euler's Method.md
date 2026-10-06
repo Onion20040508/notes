@@ -122,7 +122,7 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 ^ex-10-1
 
 ![[m331-10-1.svg]]
-*Example §10.1: the Euler polygon with $h = 0.2$ (red) and the exact solution $\phi(t) = 14 - 4t - 13e^{-t/2}$ (blue). The first step runs $h = 0.2$ along the tangent at $(0, 1)$ and rises $hf_0 = 0.5$. Because $\phi$ is concave down, each tangent segment overshoots, and the errors accumulate to $0.209$ at $t = 1$.*
+*[[§10 Numerical Approximations꞉ Euler's Method#^ex-10-1|Example §10.1]]: the Euler polygon with $h = 0.2$ (red) and the exact solution $\phi(t) = 14 - 4t - 13e^{-t/2}$ (blue). The first step runs $h = 0.2$ along the tangent at $(0, 1)$ and rises $hf_0 = 0.5$. Because $\phi$ is concave down, each tangent segment overshoots, and the errors accumulate to $0.209$ at $t = 1$.*
 
 > [!example] Example §10.2: Smaller Steps
 > For the same problem (11), use Euler's method with step sizes $h = 0.1, 0.05, 0.025, 0.01$ (that is, $50, 100, 200, 500$ steps to go from $t = 0$ to $t = 5$), and compare with the exact solution (12) on $0 \le t \le 5$.
@@ -138,7 +138,7 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 >
 > (Entries are rounded to four places; more digits were kept in the computation.)
 >
-> **Accuracy improves as $h$ decreases.** Along each row the values approach the exact one. At $t = 2$ the value with $h = 0.1$ is too large by $0.1221$ (about $10\%$), the value with $h = 0.01$ by only $0.0119$ (about $1\%$): reducing the step size by a factor of $10$, with $10$ times as many computations, reduces the error by a factor of about $10$. The other rows confirm that reducing $h$ by a given factor reduces the error by about the same factor, which suggests that the error of Euler's method is approximately proportional to $h$ (proved for one equation in Proposition §10.1).
+> **Accuracy improves as $h$ decreases.** Along each row the values approach the exact one. At $t = 2$ the value with $h = 0.1$ is too large by $0.1221$ (about $10\%$), the value with $h = 0.01$ by only $0.0119$ (about $1\%$): reducing the step size by a factor of $10$, with $10$ times as many computations, reduces the error by a factor of about $10$. The other rows confirm that reducing $h$ by a given factor reduces the error by about the same factor, which suggests that the error of Euler's method is approximately proportional to $h$ (proved for one equation in [[§10 Numerical Approximations꞉ Euler's Method#^prop-10-1|Proposition §10.1]]).
 >
 > **Accuracy improves as $t$ increases, for fixed $h$** (at least for $t > 2$): with $h = 0.1$ the error at $t = 5$ is only $0.0668$, a little more than half the error at $t = 2$. The reason is explained below.
 >
@@ -159,7 +159,7 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 > y = -\frac74 + \frac12 t + \frac{11}{4}e^{2t} . \qquad (16)
 > $$
 >
-> With the same step sizes as in Example §10.2:
+> With the same step sizes as in [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-2|Example §10.2]]:
 >
 > | $t$ | $h = 0.1$ | $h = 0.05$ | $h = 0.025$ | $h = 0.01$ | exact |
 > |---|---|---|---|---|---|
@@ -183,13 +183,13 @@ To understand the difference, look again at Euler's method for the general probl
 > [!definition] Definition §10.2: Converging and Diverging Families of Solutions
 > A family of solutions of a first-order equation, indexed by an arbitrary constant $c$, is a **converging family** if any two of its members approach each other as $t \to \infty$, and a **diverging family** if solutions corresponding to two nearby values of $c$ become arbitrarily far apart as $t$ increases.
 >
-> In Example §10.2 the general solution
+> In [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-2|Example §10.2]] the general solution
 >
 > $$
 > y = 14 - 4t + ce^{-t/2} \qquad (17)
 > $$
 >
-> is a converging family: the term with $c$ tends to zero. In Example §10.3 the general solution
+> is a converging family: the term with $c$ tends to zero. In [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-3|Example §10.3]] the general solution
 >
 > $$
 > y = -\frac74 + \frac12 t + ce^{2t} \qquad (18)
@@ -202,7 +202,7 @@ To understand the difference, look again at Euler's method for the general probl
 ^def-10-2
 
 > [!remark] Remark: Why Euler's Errors Depend on the Family
-> In Example §10.2 ($c = -13$) it hardly matters which nearby solution Euler's method is following at each step, since all solutions get closer and closer to each other as $t$ increases: errors made early are damped out. This is why the errors there decrease for $t > 2$. In Example §10.3 we want the solution with $c = \frac{11}{4}$, but at each step the method follows another solution, which separates from the desired one faster and faster as $t$ increases: errors made early are amplified by the factor $e^{2t}$. So a member of a diverging family will always be harder to approximate than a member of a converging family, and the best one can hope for from a numerical procedure is that it reflects the behaviour of the actual solution.
+> In [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-2|Example §10.2]] ($c = -13$) it hardly matters which nearby solution Euler's method is following at each step, since all solutions get closer and closer to each other as $t$ increases: errors made early are damped out. This is why the errors there decrease for $t > 2$. In [[§10 Numerical Approximations꞉ Euler's Method#^ex-10-3|Example §10.3]] we want the solution with $c = \frac{11}{4}$, but at each step the method follows another solution, which separates from the desired one faster and faster as $t$ increases: errors made early are amplified by the factor $e^{2t}$. So a member of a diverging family will always be harder to approximate than a member of a converging family, and the best one can hope for from a numerical procedure is that it reflects the behaviour of the actual solution.
 >
 > In both examples the accuracy could be judged by comparison with the exact solution, but usually the exact solution is not available when a numerical method is used. What is needed are bounds, or at least estimates, of the error that do not require knowing the solution. These, and algorithms much more efficient than Euler's, are the subject of BDP's Chapter 8 (not part of this course).
 
