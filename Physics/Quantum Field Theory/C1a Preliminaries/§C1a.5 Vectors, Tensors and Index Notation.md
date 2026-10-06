@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 1 §§1.4–1.5, Ch. 2 §2.3 ("Derivatives") · PHY 513 Lecture 1 (Larsen), Part C; Problem Set 1, as recorded in the user's notes · Yu Zhao-Huan, 量子场论讲义, §§1.4–1.5.*
 
-What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]].
+What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]].
 
 ## Conventions and invariants
 
@@ -127,8 +127,15 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 
 ## Tensors as multilinear maps
 
-> [!definition] Definition §C1a.5.3: Dual Space; Tensor as a Multilinear Map
-> Let $V = \mathbb R^4$ with basis $e_\mu$, so $x = x^\mu e_\mu$. Its **dual space** $V^{\ast}$ is the space of linear functionals $\omega: V \to \mathbb R$ ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]]), with dual basis $e^\mu(e_\nu) = \delta^\mu{}_\nu$ ([[§12 Duality#^ladr-3-112|LADR Def. 3.112]]); $\omega = \omega_\mu e^\mu$ and $\omega(x) = \omega_\mu x^\mu$, with no metric. A **tensor of type $(r, s)$** is a multilinear map ([[§38 Tensor Products#^ladr-9-85|LADR Def. 9.85]])
+> [!definition] Definition §C1a.5.3: Dual Space
+> Let $V = \mathbb R^4$ with basis $e_\mu$, so $x = x^\mu e_\mu$. Its **dual space** $V^{\ast}$ is the space of linear functionals $\omega: V \to \mathbb R$ ([[§12 Duality#^ladr-3-110|LADR Def. 3.110]]), with dual basis $e^\mu(e_\nu) = \delta^\mu{}_\nu$ ([[§12 Duality#^ladr-3-112|LADR Def. 3.112]]); $\omega = \omega_\mu e^\mu$ and $\omega(x) = \omega_\mu x^\mu$, with no metric.
+>
+> *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Vectors, dual vectors, and the metric as an isomorphism")*
+
+^def-c1a-5-3
+
+> [!definition] Definition §C1a.5.4: Tensor as a Multilinear Map
+> With $V$, $V^{\ast}$ and the dual basis of [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-3|Def. §C1a.5.3]], a **tensor of type $(r, s)$** is a multilinear map ([[§38 Tensor Products#^ladr-9-85|LADR Def. 9.85]])
 >
 > $$
 > T: \underbrace{V^*\times\cdots\times V^*}_{r}\times\underbrace{V\times\cdots\times V}_{s} \to \mathbb R, \qquad T^{\mu_1\cdots\mu_r}{}_{\nu_1\cdots\nu_s} = T(e^{\mu_1}, \dots, e^{\mu_r}, e_{\nu_1}, \dots, e_{\nu_s}) .
@@ -136,9 +143,9 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > A vector is a $(1,0)$ tensor ($x(\omega) = \omega(x)$), a covector a $(0,1)$ tensor, a number a $(0,0)$ tensor.
 >
-> *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Vectors, dual vectors, and the metric as an isomorphism"; "Tensors as multilinear maps, and their transformation law")*
+> *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Tensors as multilinear maps, and their transformation law")*
 
-^def-c1a-5-3
+^def-c1a-5-4
 
 > [!theorem] Theorem §C1a.5.2: The Metric Identifies Vectors with Covectors
 > The metric $g(x, y) = g_{\mu\nu}x^\mu y^\nu$ is a symmetric, nondegenerate, indefinite bilinear form. The map $x \mapsto x^\flat = g(x, \cdot\,)$ is an isomorphism $V \to V^*$, with components and inverse
@@ -206,7 +213,7 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 
 ^der-c1a-5-3
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-3|Def. §C1a.5.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-4|Def. §C1a.5.4]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]]
 
 > [!caution] Caution: A tensor is not a product of vectors
 > The law is exhibited on products $p^\mu q^\nu$, but a general two-tensor is a *sum* of such products: a product has rank one as a $4\times4$ matrix, a general $T^{\mu\nu}$ rank up to four. The field-strength tensor of electromagnetism is not a product ([[§C1a.7 Relativistic Electrodynamics in Index Form|§C1a.7]]).
@@ -344,7 +351,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > T^{\mu\nu} = \underbrace{\Bigl(T^{(\mu\nu)} - \tfrac14g^{\mu\nu}T^\rho{}_\rho\Bigr)}_{\text{symmetric traceless: }9} + \underbrace{T^{[\mu\nu]}}_{\text{antisymmetric: }6} + \underbrace{\tfrac14g^{\mu\nu}T^\rho{}_\rho}_{\text{trace: }1},
 > $$
 >
-> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]], irreducible in the sense of [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-7|Def. §C3.1.7]].)
+> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (That each is irreducible under $SO^+(1,3)$ over $\mathbb R$ is representation theory, [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]], irreducible in the sense of [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-8|Def. §C3.1.8]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor"), eq. (decomposition) · PHY 513 Lecture 1, Part C ("Irreducible parts of two-tensor representation")*
 
@@ -516,7 +523,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - The bookkeeping of the multinomial coefficients is done by the dummy indices; there is no matrix-notation barrier at third order.
-> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - $a\cdot\partial$ is the infinitesimal translation; its Noether charge is the four-momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]), and on quantum fields $[\phi, \mathbf P] = -i\nabla\phi$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > - For a field with indices the expansion acts componentwise, $A^\mu(x + a) = A^\mu + a^\nu\partial_\nu A^\mu + \dots$: translations act alike on every field, while Lorentz transformations add a matrix on the index ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]).
 
 ^der-c1a-5-10
@@ -524,7 +531,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 *Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]], [[§11 Taylor's Theorem for Multivariable Functions#^thm-11-2|452 Thm. §11.2]]
 
 > [!remark] Remark: Three expansions, not one
-> Classical field theory uses Taylor's theorem in three different variables, and they must be kept apart: in the **coordinates**, $f(x + a) = f + a^\nu\partial_\nu f + \dots$, for spacetime symmetries (Theorem §C1a.5.10); in a **parameter** $\alpha$, $\phi'_\alpha = \phi + \alpha\,\Delta\phi + O(\alpha^2)$, which defines the generator $\Delta\phi$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]]); and in the **field**, $\mathcal L(\phi + \delta\phi, \partial\phi + \partial\delta\phi) = \mathcal L + \frac{\partial\mathcal L}{\partial\phi}\delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial_\mu\delta\phi + \dots$, the variation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]), whose first order gives the Euler–Lagrange equation and whose second order, the kernel $(\partial^2 + m^2)\delta^4(x - y)$ for the free field (a distribution in $x$ and $y$, [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]), is the operator inverted by the propagator ([[§C2b.5 Green's Functions and Contours|§C2b.5]]).
+> Classical field theory uses Taylor's theorem in three different variables, and they must be kept apart: in the **coordinates**, $f(x + a) = f + a^\nu\partial_\nu f + \dots$, for spacetime symmetries (Theorem §C1a.5.10); in a **parameter** $\alpha$, $\phi'_\alpha = \phi + \alpha\,\Delta\phi + O(\alpha^2)$, which defines the generator $\Delta\phi$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]]); and in the **field**, $\mathcal L(\phi + \delta\phi, \partial\phi + \partial\delta\phi) = \mathcal L + \frac{\partial\mathcal L}{\partial\phi}\delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial_\mu\delta\phi + \dots$, the variation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]), whose first order gives the Euler–Lagrange equation and whose second order, the kernel $(\partial^2 + m^2)\delta^4(x - y)$ for the free field (a distribution in $x$ and $y$, [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]]), is the operator inverted by the propagator ([[§C2b.5 Green's Functions and Contours|§C2b.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Taylor expansion in index notation", "Three expansions, not one")*
 
@@ -597,7 +604,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - Every kinetic term in the course is quadratic, $\frac12$ or $\frac14$ times a square, and its derivative picks up the factor $2$ of item 2.
-> - Item 4 gives, for $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta}$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$: the Euler–Lagrange equation of Maxwell's theory and its canonical energy–momentum tensor use exactly this ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-6-3|Example §C1b.6.3]]).
+> - Item 4 gives, for $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta}$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$: the Euler–Lagrange equation of Maxwell's theory and its canonical energy–momentum tensor use exactly this ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]).
 > - Differentiating with respect to the sixteen $\partial_\mu A_\nu$, which are genuinely independent, avoids the counting issue of item 3 altogether.
 
 ^der-c1a-5-12

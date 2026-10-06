@@ -8,11 +8,12 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (84), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (19), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (16), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (66), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (89), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (74), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (18), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (11)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (91), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (8)
 
 ## Sections
 - [[§C3.1 Groups, Algebras and Representations of Rotations]] — 
+- [[§C3.2 The Lorentz Algebra]] — 
 - [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra]] — 
 - [[§C3.4 How Fields Transform under the Lorentz Group]] — 
 - [[§C3.5 Quantum Poincaré Transformations]] — 
@@ -37,6 +38,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-7|§C3.1.7]] Integer and Half-Integer Spin: Integration to SU(2) and SO(3)
 - [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-8|§C3.1.8]] SU(2) Is Simply Connected, SO(3) Is Doubly Connected
 - [[§C3.1 Groups, Algebras and Representations of Rotations#^thm-c3-1-9|§C3.1.9]] Projective Representations of SO(3) Are Representations of SU(2)
+- [[§C3.2 The Lorentz Algebra#^thm-c3-2-1|§C3.2.1]] The Lorentz Algebra
 - [[§C3.2 The Lorentz Algebra#^thm-c3-2-2|§C3.2.2]] The Generators Transform as a Tensor
 - [[§C3.2 The Lorentz Algebra#^thm-c3-2-3|§C3.2.3]] A Representation of the Lorentz Algebra Is a Pair of Commuting Angular Momenta
 - [[§C3.2 The Lorentz Algebra#^thm-c3-2-4|§C3.2.4]] Every Lorentz Transformation Factorizes

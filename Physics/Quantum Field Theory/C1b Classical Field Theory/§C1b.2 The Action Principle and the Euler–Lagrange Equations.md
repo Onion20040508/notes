@@ -17,21 +17,28 @@ How does a field theory produce its equations of motion? The particle version is
 
 ## Action and Lagrangian density
 
-> [!definition] Definition §C1b.2.1: Action; Lagrangian; Lagrangian Density
-> For fields $\phi_a$, $a = 1, \dots, n$, a **Lagrangian density** is a function $\mathcal L(\phi_a, \partial_\mu\phi_a)$ of the fields and their first derivatives at one point. The **Lagrangian** and the **action** of a configuration on a bounded spacetime region $R$ are
->
-> $$
-> L(t) = \int d^3x\;\mathcal L, \qquad S_R[\phi] = \int_R d^4x\;\mathcal L\bigl(\phi_a(x), \partial_\mu\phi_a(x)\bigr) = \int dt\,L \quad (R \text{ a slab } t_1 \le t \le t_2) .
-> $$
->
-> $S$ is a functional: a number for each configuration.
+> [!definition] Definition §C1b.2.1: Lagrangian Density
+> For fields $\phi_a$, $a = 1, \dots, n$, a **Lagrangian density** is a function $\mathcal L(\phi_a, \partial_\mu\phi_a)$ of the fields and their first derivatives at one point.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3, eq. (actiondensity); Ch. 3 §3.2, eqs. (action3), (Lform) · PS §2.2, eq. (2.1) · Yu §1.6.2, eq. (1.163) · PHY 513 Lecture 3, Part A*
 
 ^def-c1b-2-1
 
+> [!definition] Definition §C1b.2.2: Action
+> The **action** of a configuration $\phi_a$ on a bounded spacetime region $R$ is the functional
+>
+> $$
+> S_R[\phi] = \int_R d^4x\;\mathcal L\bigl(\phi_a(x), \partial_\mu\phi_a(x)\bigr) ,
+> $$
+>
+> with $\mathcal L$ the Lagrangian density ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]]): a number for each configuration. For a slab $R$, $t_1 \le t \le t_2$, it is $S_R = \int dt\,L$ with the **Lagrangian** $L(t) = \int d^3x\;\mathcal L$.
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.3, eq. (actiondensity); Ch. 3 §3.2, eqs. (action3), (Lform) · PS §2.2, eq. (2.1) · Yu §1.6.2, eq. (1.163) · PHY 513 Lecture 3, Part A*
+
+^def-c1b-2-2
+
 > [!caution] Caution: Action, Lagrangian, Lagrangian density
-> Three objects related by integration: $S = \int dt\,L$, $L = \int d^3x\,\mathcal L$. Physicists, PS ("we will refer to $\mathcal L$ simply as the Lagrangian"), Yu and Problem Set 2 call $\mathcal L$ "the Lagrangian"; the same happens to the Hamiltonian $H$ and its density $\mathcal H$ ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]). In relativistic field theory $L$ itself almost never appears, because it treats time and space differently. Where a problem asks for "the Hamiltonian", it means $H$, integrated.
+> Three objects related by integration: $S = \int dt\,L$, $L = \int d^3x\,\mathcal L$. Physicists, PS ("we will refer to $\mathcal L$ simply as the Lagrangian"), Yu and Problem Set 2 call $\mathcal L$ "the Lagrangian"; the same happens to the Hamiltonian $H$ and its density $\mathcal H$ ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]). In relativistic field theory $L$ itself almost never appears, because it treats time and space differently. Where a problem asks for "the Hamiltonian", it means $H$, integrated.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.2 (Caution "Action, Lagrangian, Lagrangian density") · PHY 513 Lecture 3, Part A ("density often omitted, sorry") · PHY 513 Problem Set 2 (note on terminology)*
 
@@ -73,7 +80,7 @@ How does a field theory produce its equations of motion? The particle version is
 > **What the derivation shows**
 > - Two invariances do all the work: of the measure ($|\det\Lambda| = 1$) and of the density. ⚑ By-product: for improper $\Lambda$ (parity, time reversal) the measure is still invariant, so the question is only whether $\mathcal L$ is (QFT C9, planned).
 > - The field equations of a scalar $\mathcal L$ are therefore covariant without being checked; for Klein–Gordon the direct check is [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]].
-> - Used next: Noether's theorem is the infinitesimal, local version of this invariance ([[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
+> - Used next: Noether's theorem is the infinitesimal, local version of this invariance ([[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
 
 ^der-c1b-2-1
 
@@ -81,8 +88,15 @@ How does a field theory produce its equations of motion? The particle version is
 
 ## The action principle
 
-> [!definition] Definition §C1b.2.3: Variation; Functional Derivative
-> A **variation** of a configuration on $R$ is $\phi_a \to \phi_a + \varepsilon\eta_a$ with $\eta_a$ smooth and vanishing outside a compact subset of the interior of $R$ (test functions, [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]), compared **at the same point** $x$; $\delta\phi_a \equiv \varepsilon\eta_a$. The **first variation** is $\delta S[\phi; \eta] = \dfrac{d}{d\varepsilon}S_R[\phi + \varepsilon\eta]\Big|_{\varepsilon = 0}$. The **functional derivative** $\delta S/\delta\phi_a(x)$ is the distribution with
+> [!definition] Definition §C1b.2.3: Variation; First Variation
+> A **variation** of a configuration on $R$ is $\phi_a \to \phi_a + \varepsilon\eta_a$ with $\eta_a$ smooth and vanishing outside a compact subset of the interior of $R$ (test functions, [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]), compared **at the same point** $x$; $\delta\phi_a \equiv \varepsilon\eta_a$. The **first variation** is $\delta S[\phi; \eta] = \dfrac{d}{d\varepsilon}S_R[\phi + \varepsilon\eta]\Big|_{\varepsilon = 0}$.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.3 (Definition "What a variation is, and when it commutes with ∂μ", eq. (vardef); the functional derivative "defined" by δS = ∫(δS/δφ)δφ + boundary terms) · [[§B5.1 The Euler–Lagrange Equation#^def-b5-1-2|CM Def. §B5.1.2]] (first variation) · Yu §1.6.1 (δt = 0)*
+
+^def-c1b-2-3
+
+> [!definition] Definition §C1b.2.4: Functional Derivative
+> For a functional $S$ with first variation $\delta S[\phi; \eta]$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]), the **functional derivative** $\delta S/\delta\phi_a(x)$ is the distribution with
 >
 > $$
 > \delta S[\phi; \eta] = \sum_a\int d^4x\;\frac{\delta S}{\delta\phi_a(x)}\,\eta_a(x) \qquad\text{for every test function } \eta .
@@ -92,7 +106,7 @@ How does a field theory produce its equations of motion? The particle version is
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.3 (Definition "What a variation is, and when it commutes with ∂μ", eq. (vardef); the functional derivative "defined" by δS = ∫(δS/δφ)δφ + boundary terms) · [[§B5.1 The Euler–Lagrange Equation#^def-b5-1-2|CM Def. §B5.1.2]] (first variation) · Yu §1.6.1 (δt = 0)*
 
-^def-c1b-2-3
+^def-c1b-2-4
 
 > [!remark] Remark: The functional derivative is a distribution
 > The first variation is linear in $\eta$; "$\delta S/\delta\phi(x)$" names its kernel, and nothing guarantees a kernel that is a function. The simplest functional, evaluation at a point, $F_y[\phi] = \phi(y)$, has $\delta F_y[\phi; \eta] = \eta(y) = \int d^4x\,\delta^4(x - y)\,\eta(x)$, so
@@ -114,8 +128,6 @@ How does a field theory produce its equations of motion? The particle version is
 > \delta(\partial_\mu\phi_a) = \partial_\mu(\delta\phi_a), \qquad \delta\mathcal L = \sum_a\Bigl[\frac{\partial\mathcal L}{\partial\phi_a}\,\delta\phi_a + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\,\partial_\mu(\delta\phi_a)\Bigr] .
 > $$
 >
-> The first identity fails for transformations that also move the point, $x \to x'$, where the total change $\phi'(x') - \phi(x)$ does not commute with $\partial_\mu$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-1|Def. §C1b.5.1]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]]).
->
 > *Source: the user's PHY 513 notes, Ch. 3 §3.3, eq. (varcommute) · Yu §1.6.2, eq. (1.164) · PHY 513 Lecture 3, Part A ("Notes: δ(∂µϕ) = ∂µ(δϕ)")*
 
 ^thm-c1b-2-2
@@ -125,7 +137,7 @@ How does a field theory produce its equations of motion? The particle version is
 >
 > **2. The density.** $\mathcal L$ is $C^2$ in its $5n$ arguments $(\phi_a, \partial_\mu\phi_a)$. Taylor's theorem in those arguments, with increments $\varepsilon\eta_a$ and $\varepsilon\partial_\mu\eta_a$ (step 1), gives $\mathcal L(\phi + \varepsilon\eta, \partial\phi + \varepsilon\partial\eta) - \mathcal L(\phi, \partial\phi) = \varepsilon\sum_a\bigl[\frac{\partial\mathcal L}{\partial\phi_a}\eta_a + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\partial_\mu\eta_a\bigr] + O(\varepsilon^2)$, the derivatives evaluated at the unvaried configuration. There is no third term because $\mathcal L$ has no second derivatives.
 >
-> **3. When the point moves.** If $\phi'(x') = \phi(x) + \delta\phi$ with $x' = x + \delta x$, then $\phi'(x') - \phi(x) = [\phi'(x) - \phi(x)] + \partial_\mu\phi\,\delta x^\mu + \dots$, and $\partial_\mu$ of the second piece contains $\partial_\mu(\delta x^\nu)$: the derivative does not commute with the total change. ⚑ By-product: Noether's theorem needs the fixed-argument part $\bar\delta\phi = \delta\phi - \partial_\mu\phi\,\delta x^\mu$ → [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]].
+> **3. When the point moves.** If $\phi'(x') = \phi(x) + \delta\phi$ with $x' = x + \delta x$, then $\phi'(x') - \phi(x) = [\phi'(x) - \phi(x)] + \partial_\mu\phi\,\delta x^\mu + \dots$, and $\partial_\mu$ of the second piece contains $\partial_\mu(\delta x^\nu)$: the derivative does not commute with the total change. ⚑ By-product: Noether's theorem needs the fixed-argument part $\bar\delta\phi = \delta\phi - \partial_\mu\phi\,\delta x^\mu$ → [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]].
 >
 > **What the derivation shows**
 > - "$\delta$ obeys the rules of differentiation" is Taylor's theorem in the arguments of $\mathcal L$, valid because the variation is a difference of two functions of one point.
@@ -135,6 +147,13 @@ How does a field theory produce its equations of motion? The particle version is
 ^der-c1b-2-2
 
 *Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]
+
+> [!remark] Remark: When the point moves, the variation no longer commutes with ∂
+> The first identity of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]] fails for transformations that also move the point, $x \to x'$, where the total change $\phi'(x') - \phi(x)$ does not commute with $\partial_\mu$ (step 3 of the derivation). Noether's theorem therefore distinguishes the instances of $\delta$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-1|Def. §C1b.5.1]]) and works with the fixed-argument part of the change ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.3 (Definition "What a variation is, and when it commutes with ∂μ")*
+
+^rem-c1b-2-3
 
 > [!principle] Principle §C1b.2.3: Stationary Action for Fields
 > A configuration $\phi_a$ is a classical solution exactly when, on every bounded region $R$, its action is stationary under all variations that vanish near the boundary of $R$:
@@ -185,7 +204,7 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 >
 > **4. The boundary term.** The second integral is the integral of a divergence. By the divergence theorem in $\mathbb R^4$ ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]; four-dimensional form of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]) it equals $\oint_{\partial R}d\sigma_\mu\sum_a\Pi_a^\mu\eta_a$, which is zero because $\eta$ vanishes near $\partial R$. (Equivalently: the vector field $\Pi^\mu\eta$ has compact support inside $R$; integrate the $\partial_\mu$ term first over $x^\mu$ by Fubini, [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]], and the fundamental theorem of calculus gives the difference of two zeros.) ⚑ By-product: had the variation been allowed at the final time $t_2$ of a slab, the surviving term would be $\int d^3x\,\sum_a\Pi^0_a\,\delta\phi_a\big|_{t_2} = \int d^3x\,\sum_a\pi_a\,\delta\phi_a\big|_{t_2}$: the coefficient of the endpoint variation is the momentum density → [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-4|Remark: π multiplies the endpoint variation]]. No assumption about the fields at infinity was needed, only about the variations → [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-2|Caution: Boundary conditions are a choice]].
 >
-> **5. Read off the functional derivative.** $\delta S[\phi; \eta] = \int_Rd^4x\sum_aE_a\eta_a$ with $E_a = \partial\mathcal L/\partial\phi_a - \partial_\mu\Pi^\mu_a$ continuous. By [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], $E_a = \delta S/\delta\phi_a$, and it is unique as a continuous function ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
+> **5. Read off the functional derivative.** $\delta S[\phi; \eta] = \int_Rd^4x\sum_aE_a\eta_a$ with $E_a = \partial\mathcal L/\partial\phi_a - \partial_\mu\Pi^\mu_a$ continuous. By [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], $E_a = \delta S/\delta\phi_a$, and it is unique as a continuous function ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
 >
 > **6. Localize.** If every $E_a = 0$, then $\delta S = 0$ for all $\eta$. Conversely, suppose $\delta S = 0$ for all $\eta$. Take $\eta$ with only the component $a$ nonzero (the components vary independently): $\int_Rd^4x\,E_a\eta_a = 0$ for every test function $\eta_a$ inside $R$. If $E_a(x_0) > 0$ at some interior $x_0$, continuity makes $E_a > 0$ on a ball around $x_0$, and a nonnegative bump $\eta_a$ supported in that ball gives a positive integral, a contradiction; likewise for $E_a(x_0) < 0$. This is the fundamental lemma ([[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]]) in four variables; in the language of distributions, the regular distribution of $E_a$ vanishes on all test functions, so $E_a = 0$ ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2). ⚑ By-product: the field equation holds point by point because variations can be localized anywhere; a nonlocal action would give integro-differential equations ([[§C1b.3 Mass Dimension, Locality and Power Counting#^pr-c1b-3-4|Principle §C1b.3.4]]).
 >
@@ -199,7 +218,7 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 
 ^der-c1b-2-4
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
 
 ![[ph-qft-c1-9-1.svg]]
 *The setting of the action principle. The action is integrated over a bounded region $R$ of spacetime; a variation $\delta\phi = \varepsilon\eta$ is a test function whose support (shaded) lies inside $R$, so the surface term $\oint_{\partial R}d\sigma_\mu\,\Pi^\mu\delta\phi$ vanishes. On a slab $t_1 \le t \le t_2$ the parts of $\partial R$ at fixed time contribute $\int d^3x\,\pi\,\delta\phi$ when the variation is not zero there.*
@@ -239,7 +258,7 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 >
 > **What the derivation shows**
 > - "Same equations" holds in two strengths: same stationary configurations (always), and identical Euler–Lagrange expressions (when $\mathcal L'$ is still first order).
-> - ⚑ By-product: not every derived quantity is unchanged. For $K^\mu(\phi, x)$ the momentum density shifts, $\pi'_a = \pi_a + \partial K^0/\partial\phi_a$, as the particle momenta do under $L \to L + d\Lambda/dt$ ([[§B6.2 Hamilton's Principle of Stationary Action#^rem-b6-2-5|CM Remark: What the freedom changes]]); the Noether current and the canonical energy–momentum tensor shift likewise ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-2|Def. §C1b.6.2]]).
+> - ⚑ By-product: not every derived quantity is unchanged. For $K^\mu(\phi, x)$ the momentum density shifts, $\pi'_a = \pi_a + \partial K^0/\partial\phi_a$, as the particle momenta do under $L \to L + d\Lambda/dt$ ([[§B6.2 Hamilton's Principle of Stationary Action#^rem-b6-2-5|CM Remark: What the freedom changes]]); the Noether current and the canonical energy–momentum tensor shift likewise ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]]).
 > - Used next: a transformation is a symmetry if it changes $\mathcal L$ by a divergence $\alpha\,\partial_\mu\mathcal J^\mu$ (PS eq. (2.10)), and that $\mathcal J^\mu$ enters the Noether current ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.5 Noether's Theorem#^rem-c1b-5-2|Remark: Why a total derivative is allowed]]); dropping $\partial_\mu(\phi\,\partial^\mu\phi)$ in [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]] uses the general case ($K^\mu$ depends on $\partial\phi$).
 
 ^der-c1b-2-5
@@ -257,12 +276,19 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 >
 > Its Euler–Lagrange equation is the Klein–Gordon equation $(\partial^2 + m^2)\phi = 0$.
 >
-> *Assumptions:* classical, real, free (quadratic $\mathcal L$: linear field equation, superposition); $m \ge 0$ a parameter, the mass of the quanta after quantization ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]); kinetic term normalized to $\frac12$, which fixes $[\phi] = 1$; flat spacetime.
+> *Assumptions:* classical, real, free (quadratic $\mathcal L$: linear field equation, superposition); $m \ge 0$ a parameter; kinetic term normalized to $\frac12$, which fixes $[\phi] = 1$; flat spacetime.
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Definition "Lagrangian density for a real scalar field", eq. (scalarL)), Ch. 3 §3.3 · PHY 513 Lecture 2, Part B; Lecture 3, Part A · PS §2.2, eqs. (2.6)–(2.7)*
 
 ^mod-c1b-2-6
 
 This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Model §B4.1.3]]) with $\hbar = c = 1$, and the working model of the whole course; its quantization is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], and why it is essentially the only choice is [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]]. The Euler–Lagrange equation is computed exactly as in [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-4|REL Theorem §B4.1.4]]: $\partial\mathcal L/\partial\phi = -m^2\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]] gives $\partial_\mu\partial^\mu\phi + m^2\phi = 0$.
+
+> [!remark] Remark: The mass parameter after quantization
+> In the classical model $m$ is only a parameter of the field equation, the curvature of the potential at its minimum ([[§C1b.3 Mass Dimension, Locality and Power Counting#^der-c1b-3-6|Derivation §C1b.3.6]], step 9). After quantization it is the mass of the quanta: a one-particle state of momentum $\mathbf p$ has energy $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+>
+> *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Definition "Lagrangian density for a real scalar field")*
+
+^rem-c1b-2-4
 
 > [!caution] Caution: Rename the dummy index before differentiating
 > In $\partial\mathcal L/\partial(\partial_\mu\phi)$ the index $\mu$ is already taken by the formula, so write the kinetic term with another dummy, $\tfrac12\partial_\nu\phi\,\partial^\nu\phi = \tfrac12g^{\nu\rho}\partial_\nu\phi\,\partial_\rho\phi$, and differentiate with $\partial(\partial_\nu\phi)/\partial(\partial_\mu\phi) = \delta^\mu{}_\nu$:

@@ -438,7 +438,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 *Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]]
 
 > [!theorem] Theorem §C5a.3.9: The Hamiltonian Density of the Dirac Field
-> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]) of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] is
+> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]) of [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] is
 >
 > $$
 > \mathcal H \equiv \pi_\psi\,\dot\psi - \mathcal L = \bar\psi\bigl(-i\gamma^j\partial_j + m\bigr)\psi = \psi^\dagger\bigl(-i\boldsymbol\alpha\cdot\nabla + \beta m\bigr)\psi, \qquad \alpha^j = \gamma^0\gamma^j,\ \beta = \gamma^0 ,
@@ -451,7 +451,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 ^thm-c5a-3-9
 
 > [!derivation]- Derivation
-> **1. Legendre transform.** By [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.3.8).
+> **1. Legendre transform.** By [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.3.8).
 >
 > **2. Expand $\mathcal L$ into time and space parts.** $\mathcal L = i\bar\psi\gamma^0\partial_0\psi + i\bar\psi\gamma^j\partial_j\psi - m\bar\psi\psi$, and $i\bar\psi\gamma^0\partial_0\psi = i\psi^\dagger(\gamma^0)^2\partial_0\psi = i\psi^\dagger\partial_0\psi$.
 >
@@ -472,7 +472,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 ^der-c5a-3-9
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-2|Theorem §C5a.5.2]]
 
 This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
 

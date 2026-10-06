@@ -24,24 +24,31 @@ How does a field theory look in the form quantum mechanics needs, with coordinat
 
 ## Momentum density and Hamiltonian
 
-> [!definition] Definition §C1b.4.1: Canonical Momentum Density; Hamiltonian Density
+> [!definition] Definition §C1b.4.1: Canonical Momentum Density
 > For a density $\mathcal L(\phi_a, \partial_\mu\phi_a)$ the **momentum density conjugate to** $\phi_a$ is
 >
 > $$
 > \pi_a(x) = \frac{\partial\mathcal L}{\partial\dot\phi_a(x)} ,
 > $$
 >
-> taken with the other velocities, the fields and their spatial derivatives held fixed. If these relations can be solved for the velocities, the **Hamiltonian density** and the **Hamiltonian** are
+> taken with the other velocities, the fields and their spatial derivatives held fixed. The fields and their conjugate momenta on one time slice, $\phi_a(\mathbf x)$ and $\pi_a(\mathbf x)$, are the **canonical data**.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Definition "Canonical momentum density and Hamiltonian density", eq. (pifield)) · PHY 513 Lecture 3, Part B ("Momentum density ('one per spatial point')") · PS §2.2, eq. (2.4) · Yu §1.6.2, eqs. (1.168)–(1.169)*
+
+^def-c1b-4-1
+
+> [!definition] Definition §C1b.4.2: Hamiltonian Density and Hamiltonian (Legendre Transform)
+> If the relations $\pi_a = \partial\mathcal L/\partial\dot\phi_a$ of [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]] can be solved for the velocities, the **Hamiltonian density** is the Legendre transform of $\mathcal L$ in the velocities, and the **Hamiltonian** its integral over space,
 >
 > $$
 > \mathcal H(\phi_a, \nabla\phi_a, \pi_a) = \sum_a\pi_a\dot\phi_a - \mathcal L \quad\text{(every } \dot\phi_a \text{ eliminated)}, \qquad H[\phi, \pi] = \int d^3x\;\mathcal H ,
 > $$
 >
-> a functional of the **canonical data** $\phi_a(\mathbf x)$, $\pi_a(\mathbf x)$ on one time slice.
+> a functional of the canonical data on one time slice.
 >
-> *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Definition "Canonical momentum density and Hamiltonian density", eq. (pifield); Derivation "Several fields in the Lagrangian and Hamiltonian formalisms") · PHY 513 Lecture 3, Part B ("Momentum density ('one per spatial point')") · PS §2.2, eqs. (2.4)–(2.5) · Yu §1.6.2, eqs. (1.168)–(1.170)*
+> *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Definition "Canonical momentum density and Hamiltonian density"; Derivation "Several fields in the Lagrangian and Hamiltonian formalisms") · PS §2.2, eq. (2.5) · Yu §1.6.2, eq. (1.170)*
 
-^def-c1b-4-1
+^def-c1b-4-2
 
 This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and Hamilton's Equations#^def-b7-1-2|CM Def. §B7.1.2]]) done pointwise, with the label $i$ of $q_i$ made continuous, $q_i \to \phi(\mathbf x)$. Two features have no particle analogue: $\pi$ is a density, and $H$ integrates over space, not spacetime, whereas $S$ integrates $\mathcal L$ over $d^4x$. The units confirm it: $[\mathcal L] = [\mathcal H] = 4$, $[S] = 0$, $[H] = [L] = 1$ (an energy), $[\pi] = 2$ for a scalar ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]). The invertibility assumption fails for gauge fields ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|Remark: Constraints and first-order Lagrangians]]).
 
@@ -69,7 +76,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 >
 > No spatial integration by parts is needed, because $\mathcal L$ contains $\dot\phi$ but not its spatial derivatives.
 >
-> **3. Read off the kernel.** By [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]] (on a slice), $\delta L/\delta\dot\phi_a(\mathbf y) = \partial\mathcal L/\partial\dot\phi_a(\mathbf y) = \pi_a(\mathbf y)$, a continuous function and so unique ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
+> **3. Read off the kernel.** By [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]] (on a slice), $\delta L/\delta\dot\phi_a(\mathbf y) = \partial\mathcal L/\partial\dot\phi_a(\mathbf y) = \pi_a(\mathbf y)$, a continuous function and so unique ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2).
 >
 > **4. Cells.** Approximate $L \approx \sum_i\Delta V\,\mathcal L_i$, where $\mathcal L_i$ is the density in cell $i$ with $\phi_i$, $\dot\phi_i$ and finite differences of neighbouring $\phi$'s in place of $\nabla\phi$. The velocity $\dot\phi_j$ occurs only in the term $i = j$ (finite differences involve the $\phi$'s, not their velocities), so $p_j = \partial L/\partial\dot\phi_j = \Delta V\,(\partial\mathcal L/\partial\dot\phi)(\mathbf x_j) = \pi(\mathbf x_j)\,\Delta V$. Then $H = \sum_jp_j\dot\phi_j - L \approx \sum_j\Delta V\,(\pi_j\dot\phi_j - \mathcal L_j) \to \int d^3x\,\mathcal H$. ⚑ By-product: a cell momentum is $\pi\,\Delta V$, so the cell bracket $\{\phi_i, \pi_j\} = \delta_{ij}/\Delta V$ becomes $\delta^3(\mathbf x - \mathbf y)$ in the limit → [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]], [[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-2|§C2a.1, Remark: Why a delta function]].
 >
@@ -80,11 +87,11 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 
 ^der-c1b-4-1
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
 
 > [!caution] Caution: What the conjugate momentum is not
 > - $\pi = \partial\mathcal L/\partial\dot\phi$ is the derivative with respect to the time component of $\partial_\mu\phi$ only: the $\mu = 0$ component of $\partial\mathcal L/\partial(\partial_\mu\phi)$, which for the free field is $\partial^\mu\phi$, so $\pi = \partial^0\phi = \dot\phi$.
-> - It is not the momentum carried by the field. That is a different quantity built from $\pi$, $P^i = \int d^3x\,T^{0i}$, which for the scalar is $-\int d^3x\,\pi\,\partial_i\phi$ ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]; in modes [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
+> - It is not the momentum carried by the field. That is a different quantity built from $\pi$, $P^i = \int d^3x\,T^{0i}$, which for the scalar is $-\int d^3x\,\pi\,\partial_i\phi$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-7|Theorem §C1b.6.7]]; why it is the momentum: [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-2|§C1b.6, Remark: Why P is the momentum]]; in modes [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]).
 > - It is not "mass times velocity" in general: for a charged particle $\mathbf p = m\dot{\mathbf x} + e\mathbf A$; for a Dirac field $\pi = i\psi^\dagger$, no velocity at all; and for a gauge field $A_0$ has no conjugate momentum.
 > - $H$ must be a function of $\phi$ and $\pi$: before $\dot\phi$ is eliminated, the expression $\pi\dot\phi - \mathcal L$ is not wrong but wrongly formatted, and Hamilton's equations cannot be applied to it ([[§B7.1 The Legendre Transform and Hamilton's Equations#^cau-b7-1-1|CM Caution: Eliminate the velocities first]]).
 >
@@ -112,7 +119,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 >
 > **4. Eliminate the velocity.** Substitute $\dot\phi = \pi$ (step 2): $\mathcal H = \tfrac12\pi^2 + \tfrac12(\nabla\phi)^2 + \tfrac12m^2\phi^2$. Before this step the expression is not a Hamiltonian ([[§C1b.4 Hamiltonian Field Theory#^cau-c1b-4-1|Caution: What the conjugate momentum is not]]).
 >
-> **5. Positivity.** Each term is a square times $\frac12$, so $\mathcal H \ge 0$ pointwise and $H \ge 0$. ⚑ By-product: $H = 0$ only for $\pi = 0$ and $\phi = 0$ (for $m > 0$; for $m = 0$, any constant $\phi$): the classical ground state. The kinetic term of [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]] had to be positive for this. ⚑ By-product: $\mathcal H$ is not a scalar; it is the $00$ component of the energy–momentum tensor $T^{\mu\nu}$, and $H$ the time component of a four-vector → [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-6-1|§C1b.6, Remark: Why the 00 component is the Hamiltonian density]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-6-1|Example §C1b.6.1]].
+> **5. Positivity.** Each term is a square times $\frac12$, so $\mathcal H \ge 0$ pointwise and $H \ge 0$. ⚑ By-product: $H = 0$ only for $\pi = 0$ and $\phi = 0$ (for $m > 0$; for $m = 0$, any constant $\phi$): the classical ground state. The kinetic term of [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]] had to be positive for this. ⚑ By-product: $\mathcal H$ is not a scalar; it is the $00$ component of the energy–momentum tensor $T^{\mu\nu}$, and $H$ the time component of a four-vector → [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-1|§C1b.6, Remark: Why the 00 component is the Hamiltonian density]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^ex-c1b-6-1|Example §C1b.6.1]].
 >
 > **What the derivation shows**
 > - The Lagrangian had negative pieces, the price of Lorentz invariance; the Hamiltonian is a sum of squares and pays by not being invariant.
@@ -121,7 +128,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 
 ^der-c1b-4-2
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]
 
 > [!theorem] Theorem §C1b.4.3: Hamiltonian Density of the Free Complex Field
 > For the free complex scalar field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]), with $\phi$ and $\phi^*$ as independent coordinates,
@@ -154,7 +161,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 
 ^der-c1b-4-3
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]
 
 > [!remark] Remark: Several fields, and a non-canonical normalization
 > Every construction is "one of each per independent field component": one momentum per component, differentiating with respect to that component's velocity only; one Legendre term per component; one pair of Hamilton's equations per component; cross terms in $\mathcal L$ put pieces of several fields into one $\pi_a$. If a kinetic term is written $\partial_\mu\phi\,\partial^\mu\phi$ without the $\frac12$ (Problem Set 2, Problem 2), then $\pi = 2\dot\phi$, $\mathcal H = \frac14\pi^2 + (\nabla\phi)^2 + \dots$, and the Euler–Lagrange equation carries an overall factor $2$ that must be divided out before masses and couplings are read off. Nothing is wrong, but every later factor of $2$ traces to the choice; rescaling $\phi \to \phi/\sqrt2$ restores the canonical form, which is why the $\frac12$ is standard.
@@ -172,7 +179,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > \dot\phi_a = \frac{\partial\mathcal H}{\partial\pi_a} = \frac{\delta H}{\delta\pi_a(\mathbf x)}, \qquad \dot\pi_a = -\frac{\partial\mathcal H}{\partial\phi_a} + \nabla\cdot\frac{\partial\mathcal H}{\partial(\nabla\phi_a)} = -\frac{\delta H}{\delta\phi_a(\mathbf x)} ,
 > $$
 >
-> and, when $\mathcal H$ is the Legendre transform of $\mathcal L$ ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]), these $2n$ first-order equations are equivalent to the $n$ Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
+> and, when $\mathcal H$ is the Legendre transform of $\mathcal L$ ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]), these $2n$ first-order equations are equivalent to the $n$ Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Derivation "Hamilton's equations for fields", eq. (Hamiltonfield); Derivation "Euler–Lagrange and Hamilton's equations in mechanics") · Yu §1.6.2, eqs. (1.171)–(1.175) · the user's pre-course notes, §1.6 ("canonical field equations")*
 
@@ -210,7 +217,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 
 ^der-c1b-4-4
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§B7.1 The Legendre Transform and Hamilton's Equations#^thm-b7-1-1|CM Theorem §B7.1.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§B7.1 The Legendre Transform and Hamilton's Equations#^thm-b7-1-1|CM Theorem §B7.1.1]]
 
 > [!example] Example §C1b.4.1: Hamilton's Equations of the Free Real Field
 > For $\mathcal H = \frac12\pi^2 + \frac12(\nabla\phi)^2 + \frac12m^2\phi^2$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]): $\partial\mathcal H/\partial\pi = \pi$, $\partial\mathcal H/\partial\phi = m^2\phi$, $\partial\mathcal H/\partial(\partial_i\phi) = \partial_i\phi$, so by [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]]
@@ -228,7 +235,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 ## Poisson brackets
 
 > [!definition] Definition §C1b.4.3: Poisson Bracket of Field Functionals
-> For functionals $F$, $G$ of the canonical data on one slice whose functional derivatives exist ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]), the **Poisson bracket** is
+> For functionals $F$, $G$ of the canonical data on one slice whose functional derivatives exist ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]]), the **Poisson bracket** is
 >
 > $$
 > \{F, G\} = \sum_a\int d^3z\,\Bigl(\frac{\delta F}{\delta\phi_a(\mathbf z)}\,\frac{\delta G}{\delta\pi_a(\mathbf z)} - \frac{\delta F}{\delta\pi_a(\mathbf z)}\,\frac{\delta G}{\delta\phi_a(\mathbf z)}\Bigr) ,
@@ -271,7 +278,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 
 ^der-c1b-4-5
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-16|Theorem §CA.2.16]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 > [!theorem] Theorem §C1b.4.6: Time Evolution by the Bracket
 > Along a solution of Hamilton's equations, every functional $F[\phi, \pi]$ without explicit time dependence, whose functional derivatives exist and fall off at infinity, evolves by
@@ -305,16 +312,16 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 >
 > **3. The smeared field.** With $\delta\phi_a(f)/\delta\phi_c = \delta_{ac}f$, $\delta\phi_a(f)/\delta\pi_c = 0$ ([[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-5|Derivation §C1b.4.5]], step 1): $\{\phi_a(f), H\} = \int d^3z\,f\,\delta H/\delta\pi_a = \int d^3z\,f\,\dot\phi_a$. For the free real field this is $\int f\pi$, i.e. $\dot\phi = \pi$. With $\delta\pi_a(g)/\delta\pi_c = \delta_{ac}g$ and $\delta\pi_a(g)/\delta\phi_c = 0$ (same step 1), only the second term of the bracket survives: $\{\pi_a(g), H\} = -\int d^3z\,g\,\delta H/\delta\phi_a = \int d^3z\,g\,\dot\pi_a$, which for the free field is $\int g\,(\nabla^2\phi - m^2\phi)$ ([[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]]).
 >
-> **4. Conservation of H.** The bracket is antisymmetric, so $\{H, H\} = 0$. ⚑ By-product: the energy is conserved because $\mathcal H$ has no explicit time dependence; in the language of [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] it is the Noether charge of time translations, and $H$ generates them through the bracket, as in mechanics ([[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]).
+> **4. Conservation of H.** The bracket is antisymmetric, so $\{H, H\} = 0$. ⚑ By-product: the energy is conserved because $\mathcal H$ has no explicit time dependence; in the language of [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] it is the Noether charge of time translations, and $H$ generates them through the bracket, as in mechanics ([[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]).
 >
 > **What the derivation shows**
 > - The field bracket reproduces the particle structure exactly: dynamics is the bracket with $H$.
 > - Assumption: the functional derivatives of $F$ fall off at infinity; for $H$ itself the falloff of the fields is what makes $H$ finite.
-> - Used next: quantized, $\{F, H\} \to -i[F, H]$ becomes the Heisenberg equation $\dot F = i[H, F]$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]).
+> - Used next: quantized, $\{F, H\} \to -i[F, H]$ becomes the Heisenberg equation $\dot F = i[H, F]$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]); the field momentum generates spatial translations in the same way ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-9|Theorem §C1b.6.9]]).
 
 ^der-c1b-4-6
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]]
 
 > [!remark] Remark: Constraints and first-order Lagrangians
 > "One momentum per component" can fail in two instructive ways. For the vector field, $\pi^\mu = \partial\mathcal L/\partial(\partial_0A_\mu) = F^{\mu0}$ for $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta}$, so the momentum conjugate to $A_i$ is $\pi^i = F^{i0} = E^i$ by [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] (conjugate to $A^i = -A_i$ it is $-E^i$), and $\pi^0 = 0$: $A_0$ has no velocity in $\mathcal L$, the Legendre map is not invertible, and Gauss's law is a constraint. Gauge fields are where "one per component" miscounts the physical degrees of freedom: components related by a gauge transformation are not independent, which is why the photon has two polarizations, not four (QFT C4: [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-5|Theorem §C4.5.5]], [[§C4.5 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-5-10|Theorem §C4.5.10]]; for the massive field [[§C4.2★ The Proca Field#^thm-c4-2-6|Theorem §C4.2.6]], [[§C4.2★ The Proca Field#^thm-c4-2-12|Theorem §C4.2.12]]; C8 planned). For a Dirac field the Lagrangian is first order in time and $\pi = \partial\mathcal L/\partial\dot\psi = i\psi^\dagger$: the momentum conjugate to $\psi$ is essentially $\psi^\dagger$, the crossover of the complex scalar ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]) taken one step further ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-8|Theorem §C5a.3.8]]; [[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-3|§C5b.1, Remark: A first-order system: the momentum is ψ† itself]]).
@@ -324,7 +331,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 ^rem-c1b-4-3
 
 > [!remark] Remark: π multiplies the endpoint variation
-> In mechanics the boundary term of the varied action is $[p\,\delta q]_{t_1}^{t_2}$; the conjugate momentum is what multiplies the endpoint variation, and along true paths $\partial S/\partial q(t_2) = p(t_2)$, the starting point of Hamilton–Jacobi theory ([[§B8.3 The Hamilton–Jacobi Equation|CM §B8.3]]). For fields the time components of the surface term of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]], step 4, are $\int d^3x\,\pi\,\delta\phi\big|_{t_1}^{t_2}$: on a solution, the action as a functional of the final configuration has $\delta S/\delta\phi(t_2, \mathbf x) = \pi(t_2, \mathbf x)$. This is the mechanical root of why $\pi$ appears in the surface terms of field theory, among them the Noether charges ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]): the field form of $\partial S/\partial q = p$.
+> In mechanics the boundary term of the varied action is $[p\,\delta q]_{t_1}^{t_2}$; the conjugate momentum is what multiplies the endpoint variation, and along true paths $\partial S/\partial q(t_2) = p(t_2)$, the starting point of Hamilton–Jacobi theory ([[§B8.3 The Hamilton–Jacobi Equation|CM §B8.3]]). For fields the time components of the surface term of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^der-c1b-2-4|Derivation §C1b.2.4]], step 4, are $\int d^3x\,\pi\,\delta\phi\big|_{t_1}^{t_2}$: on a solution, the action as a functional of the final configuration has $\delta S/\delta\phi(t_2, \mathbf x) = \pi(t_2, \mathbf x)$. This is the mechanical root of why $\pi$ appears in the surface terms of field theory, among them the Noether charges ([[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]]): the field form of $\partial S/\partial q = p$.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Derivation "Euler–Lagrange and Hamilton's equations in mechanics": "the boundary term is p δq … the mechanical root of why π appears in the surface terms of field theory") · Yu §1.6.1, eq. (1.155)*
 
@@ -342,7 +349,7 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > - Hamilton's equations for fields come from the same phase-space action as for particles; the only new term, $\nabla\cdot\partial\mathcal H/\partial(\nabla\phi)$, is the coupling of neighbouring points, the continuum version of the springs of a bead chain — [[§B7.1 The Legendre Transform and Hamilton's Equations#^thm-b7-1-3|CM Theorem §B7.1.3]], [[§B3.2 The Continuum Limit and the Wave Equation#^def-b3-2-1|WO Def. §B3.2.1]].
 > - The field Poisson bracket $\{\phi(\mathbf x), \pi(\mathbf y)\} = \delta^3(\mathbf x - \mathbf y)$ is the continuum $\{q_i, p_j\} = \delta_{ij}$; the delta function is the cells' $\delta_{ij}/\Delta V$, and quantization turns it into the canonical commutator — [[§B8.1 Poisson Brackets#^thm-b8-1-1|CM Theorem §B8.1.1]], [[§C2a.1 Canonical Quantization of Fields#^rem-c2a-1-2|§C2a.1, Remark: Why a delta function]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]].
 > - Smearing makes the brackets honest identities, exactly as it does for the commutators; the bracket at coinciding points fails for the same reason $\delta^3(\mathbf 0)$ appears in the zero-point energy — [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-5|Theorem §C1b.4.5]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
-> - The Hamiltonian density is the $00$ component of the energy–momentum tensor and the field momentum is built from $\pi$ and $\nabla\phi$; both are Noether charges — [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-6-1|§C1b.6, Remark: Why the 00 component is the Hamiltonian density]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]].
+> - The Hamiltonian density is the $00$ component of the energy–momentum tensor and the field momentum is built from $\pi$ and $\nabla\phi$; both are Noether charges — [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-1|§C1b.6, Remark: Why the 00 component is the Hamiltonian density]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]].
 > - In Fourier space the Hamiltonian of the free field is a sum of independent oscillators, one per momentum, and Hamilton's equations become $\ddot{\tilde\phi} + E_{\mathbf p}^2\tilde\phi = 0$ — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]].
 > - The crossover $\pi = \dot\phi^*$ of the complex field is the classical reason the quantized $\phi$ has the canonical partner $\pi = \dot\phi^\dagger$ (nonzero commutator with $\pi$, zero with $\pi^\dagger$) and contains $a$ and $b^\dagger$ — [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]].
 > - The Heisenberg equations of the quantum field are Hamilton's equations with operators, and they reproduce the Klein–Gordon equation; this is where the time dependence and the covariance given up by the Hamiltonian return — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]].

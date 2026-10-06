@@ -288,7 +288,7 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 ## Momentum and the ladder relations
 
 > [!theorem] Theorem §C5b.3.6: Momentum of the Dirac Field
-> The field momentum of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], $\mathbf P = -\int d^3x\,\pi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ (the Noether momentum of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; general form [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
+> The field momentum of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], $\mathbf P = -\int d^3x\,\pi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ (the Noether momentum of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-12|Theorem §C5a.4.12]], recalled in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; general form [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]) is, under the anticommutators of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]],
 >
 > $$
 > \mathbf P = \sum_s\int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(a^{s\dagger}_{\mathbf p}a^s_{\mathbf p} + b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}\bigr) ,

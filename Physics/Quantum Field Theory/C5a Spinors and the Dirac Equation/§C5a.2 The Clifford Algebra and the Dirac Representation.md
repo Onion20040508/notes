@@ -144,7 +144,7 @@ Is there a four-dimensional representation of the Lorentz group built from a "sq
 > 1. $\Gamma_A\Gamma_B = \pm\Gamma_{A\triangle B}$ (symmetric difference), with a sign fixed by the algebra alone; in particular $\Gamma_A^2 = \pm\mathbb 1$;
 > 2. $\operatorname{tr}\Gamma_A = 0$ for $A \ne \varnothing$;
 > 3. the sixteen $\Gamma_A$ are linearly independent, so $n \ge 4$;
-> 4. for $n = 4$ they are a basis of $M_4(\mathbb C)$: only multiples of $\mathbb 1$ commute with all $\gamma^\mu$, and no subspace of $\mathbb C^4$ other than $0$ and $\mathbb C^4$ is invariant under all $\gamma^\mu$ (irreducibility, [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-7|Def. §C3.1.7]]).
+> 4. for $n = 4$ they are a basis of $M_4(\mathbb C)$: only multiples of $\mathbb 1$ commute with all $\gamma^\mu$, and no subspace of $\mathbb C^4$ other than $0$ and $\mathbb C^4$ is invariant under all $\gamma^\mu$ (irreducibility, [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-8|Def. §C3.1.8]]).
 >
 > *Source: PS §3.2, p. 41 ("these matrices must be at least 4 × 4") and §3.4, p. 50 (the sixteen matrices) · the user's PHY 513 notes, Ch. 8, paragraph after the bilinears ("the sixteen matrices … are a basis of all 4 × 4 matrices") · the user's pre-course notes, §5.1 ("Dimension of the spinor representation": independence "stated") · Yu §5.1, eq. (5.45) · the trace proof written out here*
 

@@ -23,7 +23,11 @@ Its momenta and Hamiltonian density, derived in [[§C1b.4 Hamiltonian Field Theo
 
 ![[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3]]
 
-The field momentum is [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] (recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]) summed over the two fields, $\mathbf P = -\int d^3x\,(\pi\nabla\phi + \pi^\ast\nabla\phi^\ast)$; the U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). Quantization reads these as operators:
+The energy and the field momentum, [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] (recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]) for the two fields, in field form:
+
+![[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8]]
+
+The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). Quantization reads these as operators:
 
 ## The quantum model
 
@@ -234,7 +238,7 @@ The field momentum is [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and An
 *Procedure:* [[P1 Canonical Quantization#^p1-5|P1, step 5]]
 
 > [!theorem] Theorem §C2a.5.5: Momentum of the Complex Field
-> The field momentum, [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]] summed over both fields (recalled above), is in modes
+> The field momentum of the complex field in field form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-8|Theorem §C1b.6.8]], recalled above) is in modes
 >
 > $$
 > \mathbf P = -\int d^3x\,\bigl(\pi\,\nabla\phi + \pi^\dagger\,\nabla\phi^\dagger\bigr) = \int\frac{d^3p}{(2\pi)^3}\,\mathbf p\,\bigl(a^\dagger_{\mathbf p}a_{\mathbf p} + b^\dagger_{\mathbf p}b_{\mathbf p}\bigr) ,

@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C2b Two-Point Functions, Causality and Propagators
 ← [[· C2a The Quantum Scalar Field]] · ↑ [[Quantum Field Theory]] · [[· C3 Poincaré Symmetry and Particle States]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (6), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (76), [[· CA Mathematical Methods|CA Mathematical Methods]] (379)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (35), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (20), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (77), [[· CA Mathematical Methods|CA Mathematical Methods]] (412)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (19), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (17), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (51), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (117), [[· CA Mathematical Methods|CA Mathematical Methods]] (43)
 
 ## Sections
 - [[§C2b.1 Heisenberg Fields]] — PS 2.4; Yu 6.3; 513 notes Ch. 5
@@ -40,11 +40,16 @@ tags: [chapter, quantum-field-theory]
 - [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|§C2b.3.4]] The Wightman Function at Timelike Separation
 - [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|§C2b.3.5]] The Wightman Function near the Light Cone
 - [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|§C2b.3.6]] The Wightman Function as a Distribution: Off the Cone and on It
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|§C2b.3.9]] The Spacelike Amplitude at Large Distance
+- [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|§C2b.3.10]] The Relativistic Amplitude at Timelike Separation
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|§C2b.4.2]] The Field Commutator Is a c-Number
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|§C2b.4.3]] The Commutator and Hadamard Functions Are the Parts of the Wightman Function
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|§C2b.4.4]] The Commutator and Hadamard Functions as Distributions
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|§C2b.4.5]] The Free Field Is Microcausal
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|§C2b.4.6]] Microcausality as a Support Statement
+- [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|§C2b.4.8]] Commutator and Hadamard Functions of the Massless Field
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-9|§C2b.4.9]] Commutator and Hadamard Functions of the Massive Field
 - [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|§C2b.4.10]] Commutators at Unequal Times

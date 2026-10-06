@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.9 (Fermion bilinears), §8.10 (The Weyl form of the Dirac equation), §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator"), Ch. 9 §9.6 (Definition "The matrix $\gamma^5$"), Ch. 3 §3.5 (Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 8 (Larsen), Parts B–C · Peskin & Schroeder, §3.2, pp. 43–44, eqs. (3.36)–(3.44), §3.4, pp. 49–51, eqs. (3.68)–(3.76) · Yu Zhao-Huan, 量子场论讲义, §5.3, eqs. (5.93)–(5.101), (5.112)–(5.115) · the user's pre-course notes, §5.3 (Weyl spinors) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it).*
 
-Which Lorentz tensors can be built from a Dirac field, how does the field split into a left- and a right-handed half, and what does Noether's theorem give for it? The Dirac conjugate and the Lagrangian are [[§C5a.3 The Dirac Equation and Its Lagrangian|§C5a.3]]; $\gamma^5$, its algebra and the Weyl halves of the Dirac representation are [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-13|Theorem §C5a.2.13]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-14|Theorem §C5a.2.14]] and [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]; Noether's theorem and the energy–momentum tensor are [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]] ([[P3 Noether's Procedure]]). This section adds the bilinears and their transformation, the chirality projectors, the Dirac equation in two-component form and the Weyl equations, and the Dirac field's currents: vector, axial, energy–momentum, spin and the symmetric energy–momentum tensor.
+Which Lorentz tensors can be built from a Dirac field, how does the field split into a left- and a right-handed half, and what does Noether's theorem give for it? The Dirac conjugate and the Lagrangian are [[§C5a.3 The Dirac Equation and Its Lagrangian|§C5a.3]]; $\gamma^5$, its algebra and the Weyl halves of the Dirac representation are [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-5|Def. §C5a.2.5]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-13|Theorem §C5a.2.13]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-14|Theorem §C5a.2.14]] and [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-9|Theorem §C5a.2.9]]; Noether's theorem and the energy–momentum tensor are [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]] ([[P3 Noether's Procedure]]). This section adds the bilinears and their transformation, the chirality projectors, the Dirac equation in two-component form and the Weyl equations, and the Dirac field's currents: vector, axial, energy–momentum, spin and the symmetric energy–momentum tensor.
 
 *Conventions* as in [[§C5a.3 The Dirac Equation and Its Lagrangian|§C5a.3]]; $\psi$ a classical field with commuting components; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $a\overleftrightarrow{\partial}b \equiv a\,\partial b - (\partial a)\,b$.
 
@@ -360,7 +360,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > [!derivation]- Derivation
 > The steps of [[P3 Noether's Procedure]]; two independent fields $\psi$, $\bar\psi$ ([[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], step 1).
 >
-> **1. Generators.** $\psi' = e^{i\alpha}\psi$, $\bar\psi' = (e^{i\alpha}\psi)^\dagger\gamma^0 = e^{-i\alpha}\bar\psi$ ($\alpha$ real). To first order $\Delta\psi = i\psi$, $\Delta\bar\psi = -i\bar\psi$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]]).
+> **1. Generators.** $\psi' = e^{i\alpha}\psi$, $\bar\psi' = (e^{i\alpha}\psi)^\dagger\gamma^0 = e^{-i\alpha}\bar\psi$ ($\alpha$ real). To first order $\Delta\psi = i\psi$, $\Delta\bar\psi = -i\bar\psi$ ([[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]]).
 >
 > **2. Substitute.** $\alpha$ is constant, so $\partial_\mu(e^{i\alpha}\psi) = e^{i\alpha}\partial_\mu\psi$ and $\mathcal L' = e^{-i\alpha}e^{i\alpha}\bar\psi(i\slashed{\partial} - m)\psi = \mathcal L$, exactly: every term has one $\bar\psi$ and one $\psi$.
 >
@@ -379,7 +379,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 
 ^der-c5a-4-9
 
-*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]]
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-1|Theorem §C5a.4.1]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-3|Theorem §C5a.4.3]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
 
@@ -420,7 +420,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 ## Energy, momentum and spin
 
 > [!theorem] Theorem §C5a.4.11: The Canonical Energy–Momentum Tensor of the Dirac Field
-> For [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] the canonical tensor ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-2|Def. §C1b.6.2]]) is
+> For [[§C5a.3 The Dirac Equation and Its Lagrangian#^mod-c5a-3-4|Model §C5a.3.4]] the canonical tensor ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]]) is
 >
 > $$
 > T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L ,
@@ -460,18 +460,18 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > the mass terms cancelling and the second pair being equal ($\mu$, $\rho$ are both dummies).
 >
 > **What the derivation shows**
-> - Both equations of motion are needed, one for each field; this is the general statement [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]] (off shell, $\partial_\mu T^{\mu\nu} = -\sum_a\mathrm{EL}_a\partial^\nu\phi_a$) for this $\mathcal L$, here checked directly.
-> - ⚑ By-product: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$; the antisymmetric part is the divergence of the spin current ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-11|Theorem §C1b.6.11]]; Theorem §C5a.4.13), and is removed in Theorem §C5a.4.14.
+> - Both equations of motion are needed, one for each field; this is the general statement [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]] (off shell, $\partial_\mu T^{\mu\nu} = -\sum_a\mathrm{EL}_a\partial^\nu\phi_a$) for this $\mathcal L$, here checked directly.
+> - ⚑ By-product: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$; the antisymmetric part is the divergence of the spin current ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]]; Theorem §C5a.4.13), and is removed in Theorem §C5a.4.14.
 > - Assumption: $\psi \in C^2$ (second derivatives commute in the cancellation of step 6).
 
 ^der-c5a-4-11
 
-*Uses:* [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-2|Def. §C1b.6.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]]
+*Uses:* [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-6-2|Def. §C1b.6.2]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 4–5]]
 
 > [!theorem] Theorem §C5a.4.12: Energy and Momentum of the Dirac Field
-> The charges $P^\nu = \int d^3x\,T^{0\nu}$ ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]) of the canonical tensor of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-11|Theorem §C5a.4.11]] are, with $\mathcal H$ of [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]],
+> The charges $P^\nu = \int d^3x\,T^{0\nu}$ ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]) of the canonical tensor of [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-11|Theorem §C5a.4.11]] are, with $\mathcal H$ of [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]],
 >
 > $$
 > H = P^0 = \int d^3x\,\mathcal H = \int d^3x\,\psi^\dagger\bigl(-i\boldsymbol\alpha\cdot\nabla + \beta m\bigr)\psi \;\overset{\text{on shell}}{=}\; \int d^3x\,\psi^\dagger\,i\partial_t\psi, \qquad \mathbf P = \int d^3x\,\psi^\dagger\bigl(-i\nabla\bigr)\psi .
@@ -488,7 +488,7 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 >
 > **2. $T^{0i}$.** $g^{0i} = 0$, so $T^{0i} = i\bar\psi\gamma^0\partial^i\psi = i\psi^\dagger\partial^i\psi = -i\psi^\dagger\partial_i\psi$, using $\partial^i = -\partial_i$. Integrating, $P^i = \int d^3x\,\psi^\dagger(-i\partial_i)\psi$, the components of $\mathbf P$.
 >
-> **3. Conservation.** By Theorem §C5a.4.11 and [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], $dP^\nu/dt = 0$ for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
+> **3. Conservation.** By Theorem §C5a.4.11 and [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]], $dP^\nu/dt = 0$ for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
 >
 > **What the derivation shows**
 > - $\mathbf P$ is the expectation of the one-particle momentum operator $-i\nabla$ in the "wave function" $\psi$, and $H$ that of $H_{\text{s.p.}}$: the field charges look like one-particle expectation values, the reason the Dirac sea picture works as far as it does.
@@ -497,16 +497,16 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 
 ^der-c5a-4-12
 
-*Uses:* [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]
+*Uses:* [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-11|Theorem §C5a.4.11]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-9|Theorem §C5a.3.9]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]
 
 > [!theorem] Theorem §C5a.4.13: The Spin Current and the Angular Momentum of the Dirac Field
-> The spin part of the Lorentz current of [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]] is, for the Dirac field,
+> The spin part of the Lorentz current of [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]] is, for the Dirac field,
 >
 > $$
 > \mathcal S^{\lambda\mu\nu} = \bar\psi\gamma^\lambda S^{\mu\nu}\psi = \tfrac i4\,\bar\psi\gamma^\lambda[\gamma^\mu, \gamma^\nu]\psi ,
 > $$
 >
-> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]] (which are $i$ times the real-convention ones of Theorem §C1b.6.10: [[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-3|Def. §C1b.6.3]]) is
+> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]] (which are $i$ times the real-convention ones of Theorem §C1b.7.1: [[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-7-1|Def. §C1b.7.1]]) is
 >
 > $$
 > \mathbf J = \int d^3x\,\psi^\dagger\Bigl(\mathbf x\times(-i\nabla) + \tfrac12\boldsymbol\Sigma\Bigr)\psi, \qquad \boldsymbol\Sigma = \begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix} :
@@ -514,12 +514,12 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 >
 > orbital plus spin $\frac12$.
 >
-> *Source: the user's PHY 513 notes, Ch. 3 §3.5 (eq. (Mgeneral); "the Dirac spin $\frac12$") · Yu §1.7.3, eqs. (1.241)–(1.248) (orbital and spin split) · computed here from [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]]*
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5 (eq. (Mgeneral); "the Dirac spin $\frac12$") · Yu §1.7.3, eqs. (1.241)–(1.248) (orbital and spin split) · computed here from [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]]*
 
 ^thm-c5a-4-13
 
 > [!derivation]- Derivation
-> **1. The generator in the convention of Theorem §C1b.6.10.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]]).
+> **1. The generator in the convention of Theorem §C1b.7.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]]).
 >
 > **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]]).
 >
@@ -529,21 +529,21 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 >
 > **5. The orbital part.** On shell $T^{0\rho} = i\psi^\dagger\partial^\rho\psi$ (Derivation §C5a.4.12). $L^{jk} = \int d^3x\,(x^jT^{0k} - x^kT^{0j}) = \int d^3x\,\psi^\dagger\,i(x^j\partial^k - x^k\partial^j)\psi = \int d^3x\,\psi^\dagger(-i)(x^j\partial_k - x^k\partial_j)\psi$ ($\partial^k = -\partial_k$). Then $\frac12\varepsilon_{ijk}L^{jk} = \int\psi^\dagger(-i)\varepsilon_{ijk}x^j\partial_k\psi = \int\psi^\dagger\bigl(\mathbf x\times(-i\nabla)\bigr)_i\psi$ (the two terms of the antisymmetric bracket give equal contributions after renaming $j \leftrightarrow k$).
 >
-> **6. Total.** $J^i = L^i + S^i$ by [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-3|Def. §C1b.6.3]].
+> **6. Total.** $J^i = L^i + S^i$ by [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-7-1|Def. §C1b.7.1]].
 >
 > **What the derivation shows**
 > - ⚑ By-product: the Dirac field carries spin $\frac12$: $\frac12\boldsymbol\Sigma$ has $(\frac12\Sigma^i)(\frac12\Sigma^i) = \frac34\mathbb 1$, two spin-½ doublets, one per Weyl block. Peskin–Schroeder prove the particle's spin from this charge after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-4|Theorem §C5b.4.4]]).
-> - Only $\mathbf J$ is conserved, not $\mathbf L$ and $\mathbf S$ separately: $\partial_\lambda\mathcal S^{\lambda\mu\nu} = T^{\nu\mu} - T^{\mu\nu} \ne 0$ ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-11|Theorem §C1b.6.11]]).
+> - Only $\mathbf J$ is conserved, not $\mathbf L$ and $\mathbf S$ separately: $\partial_\lambda\mathcal S^{\lambda\mu\nu} = T^{\nu\mu} - T^{\mu\nu} \ne 0$ ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]]).
 > - Used next: the symmetric tensor (Theorem §C5a.4.14).
 
 ^der-c5a-4-13
 
-*Uses:* [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^def-c1b-6-3|Def. §C1b.6.3]], [[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
+*Uses:* [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-7-1|Def. §C1b.7.1]], [[§C3.4 How Fields Transform under the Lorentz Group#^cau-c3-4-2|§C3.4, Caution: Two meanings of S^μν]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^thm-c5a-2-8|Theorem §C5a.2.8]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-3|Def. §C5a.2.3]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
 
 This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action (rule 2).
 
 > [!theorem] Theorem §C5a.4.14: The Symmetric Energy–Momentum Tensor of the Dirac Field
-> The Belinfante tensor ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]]) of the Dirac field is, on solutions,
+> The Belinfante tensor ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]]) of the Dirac field is, on solutions,
 >
 > $$
 > \hat T^{\mu\nu} = \frac i4\,\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi - g^{\mu\nu}\mathcal L = \frac i4\,\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi :
@@ -551,7 +551,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 >
 > with $a\overleftrightarrow{\partial}b = a\,\partial b - (\partial a)\,b$: symmetric, conserved, with the same $P^\nu$ as the canonical tensor ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-11|Theorem §C5a.4.11]]) and with orbital moments that give the total $J^{\nu\rho}$ ([[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Derivation "Belinfante: symmetrizing T with the spin current", last sentence: the Dirac result, stated) · derived here from [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]]*
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Derivation "Belinfante: symmetrizing T with the spin current", last sentence: the Dirac result, stated) · derived here from [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]]*
 
 ^thm-c5a-4-14
 
@@ -600,19 +600,19 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 >
 > **What the derivation shows**
 > - The improvement has two parts: a vector part that turns $\overrightarrow\partial$ into $\frac12\overleftrightarrow\partial$ (the same as passing to $\mathcal L_{\rm sym}$, [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-7|Theorem §C5a.3.7]]), and the totally antisymmetric spin part, which removes the antisymmetric part of $T$.
-> - ⚑ By-product: $\hat T^{00} = \frac i2\bar\psi\gamma^0\overleftrightarrow{\partial^0}\psi = \frac i2(\psi^\dagger\dot\psi - \dot\psi^\dagger\psi)$, real, and it differs from $T^{00}$ by a total derivative; $H$ is unchanged (property 3 of Theorem §C1b.6.13, for fields falling off at infinity).
+> - ⚑ By-product: $\hat T^{00} = \frac i2\bar\psi\gamma^0\overleftrightarrow{\partial^0}\psi = \frac i2(\psi^\dagger\dot\psi - \dot\psi^\dagger\psi)$, real, and it differs from $T^{00}$ by a total derivative; $H$ is unchanged (property 3 of Theorem §C1b.7.4, for fields falling off at infinity).
 > - Both equations of motion and the conservation of $j^\mu$ were used; off shell $\hat T$ is not symmetric.
-> - This is the tensor that couples to gravity ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]]).
+> - This is the tensor that couples to gravity ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]]).
 
 ^der-c5a-4-14
 
-*Uses:* [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.7 Gamma-Matrix Technology#^def-c5a-7-1|Def. §C5a.7.1]]
+*Uses:* [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-13|Theorem §C5a.4.13]], [[§C5a.4 Bilinears, Chirality and the Weyl Equations#^thm-c5a-4-9|Theorem §C5a.4.9]], [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-6|Theorem §C5a.3.6]], [[§C5a.2 The Clifford Algebra and the Dirac Representation#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.7 Gamma-Matrix Technology#^def-c5a-7-1|Def. §C5a.7.1]]
 
 > [!remark]- Connections
 > - The sixteen bilinears are the Dirac field's analogue of decomposing a two-index tensor into trace, antisymmetric and symmetric parts: $(\frac12, 0)\oplus(0, \frac12)$ tensored with its conjugate gives $(0,0)$ twice, $(\frac12,\frac12)$ twice and $(1,0)\oplus(0,1)$, i.e. S, P, V, A and T — [[§C3.3 Finite-Dimensional Representations of the Lorentz Algebra#^thm-c3-3-6|Theorem §C3.3.6]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-6|Theorem §C3.4.6]], [[§C3.4 How Fields Transform under the Lorentz Group#^thm-c3-4-7|Theorem §C3.4.7]].
 > - The tensor bilinear transforms like $F^{\mu\nu}$, and the Gordon identity shows it is the magnetic-moment part of the vector current, which gives $g = 2$ — [[§C5a.7 Gamma-Matrix Technology#^thm-c5a-7-9|Theorem §C5a.7.9]], [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]].
 > - The positive conserved density $\psi^\dagger\psi$ is Quantum Mechanics' probability density; in the field theory it is the time component of a Noether current, and after quantization a charge of either sign — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - Chirality is a property of the Lorentz representation, helicity of a state; the Weyl equation ties them for massless particles, which is why a single Weyl field realizes one helicity of Wigner's massless classification — [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|Theorem §C3.7.6]], [[§C5a.6 Normalization, Spin Sums and Helicity#^thm-c5a-6-14|Theorem §C5a.6.14]].
-> - The spin current $\bar\psi\gamma^\lambda S^{\mu\nu}\psi$ is the field-theoretic origin of the electron's spin $\frac12$ and of the non-conservation of $\mathbf L$ alone; Belinfante's improvement moves the spin into a symmetric $\hat T$ — [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-11|Theorem §C1b.6.11]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]], [[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]].
+> - The spin current $\bar\psi\gamma^\lambda S^{\mu\nu}\psi$ is the field-theoretic origin of the electron's spin $\frac12$ and of the non-conservation of $\mathbf L$ alone; Belinfante's improvement moves the spin into a symmetric $\hat T$ — [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]], [[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]].
 > - Mass breaks chiral symmetry because it pairs left with right; the same statement in group language is that $\gamma^0$, the invariant form, swaps the Weyl blocks — [[§C5a.3 The Dirac Equation and Its Lagrangian#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.1 Weyl Spinors and SL(2,C)#^rem-c5a-1-3|§C5a.1, Remark: Kinematics allows one handedness, a mass needs both]].
-> - The same Noether procedure gave the scalar's U(1) current and $T^{\mu\nu}$; for the Dirac field every step is identical except that only $\psi$, not $\bar\psi$, has a derivative in $\mathcal L$ — [[P3 Noether's Procedure]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-6-3|§C1b.6, Remark: The canonical tensor of the standard fields]].
+> - The same Noether procedure gave the scalar's U(1) current and $T^{\mu\nu}$; for the Dirac field every step is identical except that only $\psi$, not $\bar\psi$, has a derivative in $\mathcal L$ — [[P3 Noether's Procedure]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-6-3|§C1b.6, Remark: The canonical tensor of the standard fields]].

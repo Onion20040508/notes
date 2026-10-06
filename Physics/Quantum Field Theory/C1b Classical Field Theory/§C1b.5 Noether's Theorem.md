@@ -7,11 +7,11 @@ section: C1b.5
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C1b.4 Hamiltonian Field Theory]] · ↑ [[· C1b Classical Field Theory]] · [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum]] →
+← [[§C1b.4 Hamiltonian Field Theory]] · ↑ [[· C1b Classical Field Theory]] · [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum]] →
 
 *Sources: the user's PHY 513 notes, Ch. 3 §3.5 (Definitions; The procedure; The table of examples; The theorem and its proof; From current to charge; Examples I) · PHY 513 Lecture 3 (Larsen), Part C; Problem Set 2, Problem 3, with the course solution · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.2 · Yu Zhao-Huan, 量子场论讲义, §§1.7.1, 1.7.4 · the user's pre-course notes, §1.7.*
 
-Which quantities does a field theory conserve, and why? Noether's theorem answers: one conserved current for every continuous symmetry of the action. It starts from the action and the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) and from the particle version in mechanics ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]), and adds what fields need: a local conservation law $\partial_\mu j^\mu = 0$ at every point, and a charge that is conserved only up to what flows out through the boundary. Every object is defined before it is used (the instances of δ, the generator, symmetry and $\mathcal J$); the algorithm is [[P3 Noether's Procedure]]; then come the theorem with its proof, the charge, and the internal symmetries. Spacetime symmetries, where the point moves, are [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]].
+Which quantities does a field theory conserve, and why? Noether's theorem answers: one conserved current for every continuous symmetry of the action. It starts from the action and the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) and from the particle version in mechanics ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]), and adds what fields need: a local conservation law $\partial_\mu j^\mu = 0$ at every point, and a charge that is conserved only up to what flows out through the boundary. Every object is defined before it is used (the instances of δ, the generator, symmetry and $\mathcal J$); the algorithm is [[P3 Noether's Procedure]]; then come the theorem with its proof, the charge, and the internal symmetries. Spacetime symmetries, where the point moves, are [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]].
 
 ## The objects
 
@@ -27,7 +27,7 @@ Which quantities does a field theory conserve, and why? Noether's theorem answer
 > | $\delta\phi = \phi'(x') - \phi(x)$ | the field, compared at the moved point | the total change when the point moves |
 > | $\delta(\partial_\mu\phi)$, $\delta\mathcal L$, $\delta S$ | derived quantities | what the change of the inputs implies, by the chain rule |
 >
-> At fixed coordinates δ commutes with $\partial_\mu$; when the point moves only $\bar\delta$ does ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]]). In this section the point never moves, and $\alpha\Delta\phi$ is a fixed-argument change: $\alpha\Delta\phi = \bar\delta\phi$.
+> At fixed coordinates δ commutes with $\partial_\mu$; when the point moves only $\bar\delta$ does ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]]). In this section the point never moves, and $\alpha\Delta\phi$ is a fixed-argument change: $\alpha\Delta\phi = \bar\delta\phi$.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "The instances of δ used by Noether's theorem" · Yu §1.7.1, eqs. (1.180), (1.189)*
 
@@ -35,21 +35,28 @@ Which quantities does a field theory conserve, and why? Noether's theorem answer
 
 The first row is the variation of the action principle ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]); the others are introduced here and in §C1b.5.
 
-> [!definition] Definition §C1b.5.2: Continuous Transformation; Parameter; Generator
-> Let $\mathcal L(\phi_i, \partial_\mu\phi_i)$ depend on $N$ real field components $\phi_1, \dots, \phi_N$ (a complex field counts as the pair $\phi$, $\phi^{\ast}$). A **continuous transformation** is a family $\phi_i \mapsto \phi'_i$ labelled by real **parameters** $\alpha^1, \dots, \alpha^{\dim G}$, all zero giving the identity. Its **generators** are the first-order coefficients at a fixed point $x$,
->
-> $$
-> \phi'_i(x) = \phi_i(x) + \alpha^a\,\Delta_a\phi_i(x) + O(\alpha^2), \qquad \Delta_a\phi_i \equiv \frac{\partial\phi'_i(x)}{\partial\alpha^a}\Big|_{\alpha = 0} ,
-> $$
->
-> one per pair (parameter $a$, field $i$); $\Delta_a\phi_i$ may depend on the fields, their derivatives and $x$. The parameters are **infinitesimal** (only first order is used) and **global** (constant over spacetime). With one field and one parameter, $\phi \to \phi + \alpha\Delta\phi$.
+> [!definition] Definition §C1b.5.2: Continuous Transformation; Parameters
+> Let $\mathcal L(\phi_i, \partial_\mu\phi_i)$ depend on $N$ real field components $\phi_1, \dots, \phi_N$ (a complex field counts as the pair $\phi$, $\phi^{\ast}$). A **continuous transformation** is a family $\phi_i \mapsto \phi'_i$ labelled by real **parameters** $\alpha^1, \dots, \alpha^{\dim G}$, all zero giving the identity. The parameters are **infinitesimal** (only first order is used) and **global** (constant over spacetime).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Transformation, parameter, generator", eq. (symdef) · PS §2.2, eq. (2.9) · Lecture 3, Part C*
 
 ^def-c1b-5-2
 
+> [!definition] Definition §C1b.5.3: Generator of a Continuous Transformation
+> The **generators** of a continuous transformation ([[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]]) are its first-order coefficients at a fixed point $x$,
+>
+> $$
+> \phi'_i(x) = \phi_i(x) + \alpha^a\,\Delta_a\phi_i(x) + O(\alpha^2), \qquad \Delta_a\phi_i \equiv \frac{\partial\phi'_i(x)}{\partial\alpha^a}\Big|_{\alpha = 0} ,
+> $$
+>
+> one per pair (parameter $a$, field $i$); $\Delta_a\phi_i$ may depend on the fields, their derivatives and $x$. With one field and one parameter, $\phi \to \phi + \alpha\Delta\phi$.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Transformation, parameter, generator", eq. (symdef) · PS §2.2, eq. (2.9) · Lecture 3, Part C*
+
+^def-c1b-5-3
+
 > [!remark] Remark: The sign of a parameter is a convention
-> Transforming by $+\alpha$ or by $-\alpha$ is a choice. It flips the sign of $\Delta\phi$ and of the current, never the conservation law, and every overall-sign disagreement between sources on Noether currents traces to it: the U(1) current ([[§C1b.5 Noether's Theorem#^cau-c1b-5-3|Caution: Sign and normalization of the U(1) current]]) and the translations ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^cau-c1b-6-1|§C1b.6, Caution: One picture at a time; the sign of the displacement]]). Nothing is lost by working to first order: a finite transformation of a connected family is a composition of small ones. "Global" is what lets the parameter pass through $\partial_\mu$ in the proof of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]; a parameter $\alpha(x)$ is a gauge transformation ([[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]]). The parameters drop out of every final formula, which is why the current contains $\Delta\phi$ and not $\delta\phi = \alpha\Delta\phi$.
+> Transforming by $+\alpha$ or by $-\alpha$ is a choice. It flips the sign of $\Delta\phi$ and of the current, never the conservation law, and every overall-sign disagreement between sources on Noether currents traces to it: the U(1) current ([[§C1b.5 Noether's Theorem#^cau-c1b-5-3|Caution: Sign and normalization of the U(1) current]]) and the translations ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-6-1|§C1b.6, Caution: One picture at a time; the sign of the displacement]]). Nothing is lost by working to first order: a finite transformation of a connected family is a composition of small ones. "Global" is what lets the parameter pass through $\partial_\mu$ in the proof of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]]; a parameter $\alpha(x)$ is a gauge transformation ([[§C1b.5 Noether's Theorem#^rem-c1b-5-8|Remark: Global, internal, and what a local phase would need]]). The parameters drop out of every final formula, which is why the current contains $\Delta\phi$ and not $\delta\phi = \alpha\Delta\phi$.
 
 ^rem-c1b-5-1
 
@@ -122,26 +129,26 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 > \phi'(x) = \phi(x) + \tfrac12\omega_{\mu\nu}\bigl(x^\mu\partial^\nu\phi - x^\nu\partial^\mu\phi\bigr) + O(\omega^2) .
 > $$
 >
-> The independent parameters are the six $\omega_{\mu\nu}$ with $\mu < \nu$; since both $\omega_{\mu\nu}$ and $\Delta^{\mu\nu}\phi$ are antisymmetric, $\tfrac12\sum_{\mu,\nu}\omega_{\mu\nu}\Delta^{\mu\nu}\phi = \sum_{\mu<\nu}\omega_{\mu\nu}\Delta^{\mu\nu}\phi$, so $\Delta^{\mu\nu}\phi = x^\mu\partial^\nu\phi - x^\nu\partial^\mu\phi$ is the generator attached to $\omega_{\mu\nu}$. ⚑ By-product: the factor $\tfrac12$ compensates the double counting of each antisymmetric pair; the same convention runs through [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]] and the field law $D = 1 + \tfrac12\omega_{\mu\nu}S^{\mu\nu}$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]). ⚑ By-product: this generator depends on $x$ explicitly, and a field with components gets an extra matrix term, the spin part of the same theorem → [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]].
+> The independent parameters are the six $\omega_{\mu\nu}$ with $\mu < \nu$; since both $\omega_{\mu\nu}$ and $\Delta^{\mu\nu}\phi$ are antisymmetric, $\tfrac12\sum_{\mu,\nu}\omega_{\mu\nu}\Delta^{\mu\nu}\phi = \sum_{\mu<\nu}\omega_{\mu\nu}\Delta^{\mu\nu}\phi$, so $\Delta^{\mu\nu}\phi = x^\mu\partial^\nu\phi - x^\nu\partial^\mu\phi$ is the generator attached to $\omega_{\mu\nu}$. ⚑ By-product: the factor $\tfrac12$ compensates the double counting of each antisymmetric pair; the same convention runs through [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]] and the field law $D = 1 + \tfrac12\omega_{\mu\nu}S^{\mu\nu}$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]). ⚑ By-product: this generator depends on $x$ explicitly, and a field with components gets an extra matrix term, the spin part of the same theorem → [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]].
 >
-> **7. Scale.** With $\lambda = e^\alpha = 1 + \alpha + O(\alpha^2)$ and the prefactor $\lambda^{[\phi]} = \lambda$ for a field of mass dimension 1 ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]): $\phi'(x) = (1 + \alpha)\,\phi(x + \alpha x) = (1 + \alpha)\bigl(\phi + \alpha x^\mu\partial_\mu\phi\bigr) + O(\alpha^2) = \phi + \alpha(\phi + x^\mu\partial_\mu\phi) + O(\alpha^2)$, so $\Delta\phi = \phi + x^\mu\partial_\mu\phi$. Whether it is a symmetry is not decided here → [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^rem-c1b-6-7|§C1b.6, ★ Remark: Dilatations]].
+> **7. Scale.** With $\lambda = e^\alpha = 1 + \alpha + O(\alpha^2)$ and the prefactor $\lambda^{[\phi]} = \lambda$ for a field of mass dimension 1 ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]): $\phi'(x) = (1 + \alpha)\,\phi(x + \alpha x) = (1 + \alpha)\bigl(\phi + \alpha x^\mu\partial_\mu\phi\bigr) + O(\alpha^2) = \phi + \alpha(\phi + x^\mu\partial_\mu\phi) + O(\alpha^2)$, so $\Delta\phi = \phi + x^\mu\partial_\mu\phi$. Whether it is a symmetry is not decided here → [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^rem-c1b-7-4|§C1b.7, ★ Remark: Dilatations]].
 >
 > **8. Derivatives.** $\phi'$ is a fixed-argument change and the parameter is constant, so $\partial_\mu\phi' = \partial_\mu\phi + \alpha\,\partial_\mu(\Delta\phi) + O(\alpha^2)$: $\Delta(\partial_\mu\phi) = \partial_\mu(\Delta\phi)$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]]).
 >
 > **What the derivation shows**
 > - Internal transformations (rows 1–5) have generators without derivatives or $x$; spacetime ones contain $\partial\phi$ and possibly $x$, because the point moved.
-> - A point-moving transformation is first rewritten as a change at the old point, which the field laws do ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]] does it for any displacement.
+> - A point-moving transformation is first rewritten as a change at the old point, which the field laws do ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-1|Theorem §C1b.6.1]] does it for any displacement.
 > - Assumptions: the transformation laws of the fields; for Lorentz, the antisymmetry of $\omega_{\mu\nu}$; only the lecture's sign of the translation parameter is new here.
-> - Used next: step 2 of [[P3 Noether's Procedure]] in [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]].
+> - Used next: step 2 of [[P3 Noether's Procedure]] in [[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5|Theorem §C1b.6.5]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]].
 
 ^der-c1b-5-1
 
-*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]]
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, step 1]]
 
 > [!remark] Remark: What step 1 does not decide
-> $\Delta\phi$ is the expansion of the transformation one was handed; whether $\mathcal L$ tolerates it is step 3 ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]). The shift has a perfectly good generator in the massive theory, where it is not a symmetry ([[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]]). In group language the $\Delta_a\phi_i$ represent the generators of the symmetry's Lie algebra on the fields ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]); for fields with indices a matrix acting on the components joins the orbital part $x\partial$ (Yu's $(I^{\mu\nu})_{ab}$, [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10|Theorem §C1b.6.10]]).
+> $\Delta\phi$ is the expansion of the transformation one was handed; whether $\mathcal L$ tolerates it is step 3 ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]]). The shift has a perfectly good generator in the massive theory, where it is not a symmetry ([[§C1b.5 Noether's Theorem#^ex-c1b-5-1|Example §C1b.5.1]]). In group language the $\Delta_a\phi_i$ represent the generators of the symmetry's Lie algebra on the fields ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]); for fields with indices a matrix acting on the components joins the orbital part $x\partial$ (Yu's $(I^{\mu\nu})_{ab}$, [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1|Theorem §C1b.7.1]]).
 
 ^rem-c1b-5-3
 
@@ -159,10 +166,10 @@ The answers for every symmetry of the course, side by side before any is derived
 | shift, $m = 0$ | $\alpha$ | $1$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = \partial^\mu\phi$; $Q = \int d^3x\,\dot\phi$ | [[§C1b.5 Noether's Theorem#^ex-c1b-5-1\|Example §C1b.5.1]] |
 | shift, $m \ne 0$ | $\alpha$ | $1$ | $\delta\mathcal L = -\alpha m^2\phi$: not a divergence | no symmetry, no current | [[§C1b.5 Noether's Theorem#^ex-c1b-5-1\|Example §C1b.5.1]] |
 | phase (complex field) | $\alpha$ | $i\phi$, $-i\phi^*$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$; number charge | [[§C1b.5 Noether's Theorem#^thm-c1b-5-5\|Theorem §C1b.5.5]] |
-| translation | $a^\nu$ (four) | $\partial_\nu\phi$ | $\delta\mathcal L = a^\nu\partial_\nu\mathcal L$; $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ | $T^\mu{}_\nu = \partial^\mu\phi\,\partial_\nu\phi - \delta^\mu{}_\nu\mathcal L$; $P^\mu = (H, \mathbf P)$ | [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-5\|Theorem §C1b.6.5]] |
-| Lorentz | $\omega_{\nu\rho}$ (six) | $x^\nu\partial^\rho\phi - x^\rho\partial^\nu\phi$ | $\delta\mathcal L = \frac12\omega_{\nu\rho}\partial_\mu\mathcal J^{\mu\nu\rho}$; $\mathcal J^{\mu\nu\rho} = (x^\nu g^{\mu\rho} - x^\rho g^{\mu\nu})\mathcal L$ | $\mathcal M^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu}$; $\mathbf J$, $\mathbf K$ | [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-10\|Theorem §C1b.6.10]] |
+| translation | $a^\nu$ (four) | $\partial_\nu\phi$ | $\delta\mathcal L = a^\nu\partial_\nu\mathcal L$; $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ | $T^\mu{}_\nu = \partial^\mu\phi\,\partial_\nu\phi - \delta^\mu{}_\nu\mathcal L$; $P^\mu = (H, \mathbf P)$ | [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-5\|Theorem §C1b.6.5]] |
+| Lorentz | $\omega_{\nu\rho}$ (six) | $x^\nu\partial^\rho\phi - x^\rho\partial^\nu\phi$ | $\delta\mathcal L = \frac12\omega_{\nu\rho}\partial_\mu\mathcal J^{\mu\nu\rho}$; $\mathcal J^{\mu\nu\rho} = (x^\nu g^{\mu\rho} - x^\rho g^{\mu\nu})\mathcal L$ | $\mathcal M^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu}$; $\mathbf J$, $\mathbf K$ | [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-1\|Theorem §C1b.7.1]] |
 
-The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi)$ times the generator, minus $\mathcal J$, and in these examples $\mathcal J \ne 0$ exactly when the point moves; in Yu's formulation $\alpha\mathcal J^\mu = -\mathcal L\,\delta x^\mu$ throughout ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-4|Theorem §C1b.6.4]]).
+The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi)$ times the generator, minus $\mathcal J$, and in these examples $\mathcal J \ne 0$ exactly when the point moves; in Yu's formulation $\alpha\mathcal J^\mu = -\mathcal L\,\delta x^\mu$ throughout ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-4|Theorem §C1b.6.4]]).
 
 ## The theorem
 
@@ -226,11 +233,11 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 > - Steps 1–7 hold for every configuration; the equations of motion enter only at step 8. The off-shell identity is the practical check of any current ([[P3 Noether's Procedure#^p3-5|P3, step 5]]).
 > - No integral and no boundary term appear: the theorem is local.
 > - Assumptions used: the parameter is constant (step 3); $\mathcal L$ depends on $\phi$ and first derivatives only; fields are twice differentiable ([[§C1b.5 Noether's Theorem#^rem-c1b-5-6|Remark: In what sense these identities hold]]).
-> - Used next: the charge ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]), every example, and the general form ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
+> - Used next: the charge ([[§C1b.5 Noether's Theorem#^thm-c1b-5-3|Theorem §C1b.5.3]]), every example, and the general form ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-3|Theorem §C1b.6.3]]).
 
 ^der-c1b-5-2
 
-*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]
+*Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 4–5]]
 
@@ -240,7 +247,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 ^rem-c1b-5-4
 
 > [!remark] Remark: Several fields, several parameters
-> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]). For a complex field, $\phi$ and $\phi^*$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
+> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]). For a complex field, $\phi$ and $\phi^*$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
 
 ^rem-c1b-5-5
 
@@ -251,18 +258,25 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 
 ## From current to charge
 
-> [!definition] Definition §C1b.5.5: Charge Density; Noether Charge
-> For a Noether current $j^\mu = (j^0, \mathbf j)$, with $\mathbf j$ the vector of components $j^i$, the **charge density** is $\rho \equiv j^0$, and the **Noether charge** in a fixed spatial region $V$ and in all of space are
->
-> $$
-> Q_V(t) \equiv \int_Vd^3x\;j^0(t, \mathbf x), \qquad Q \equiv \int d^3x\;j^0(t, \mathbf x) .
-> $$
->
-> One charge per parameter, $Q_a = \int d^3x\,j^0_a$. $\rho$ need not be an electric charge density.
+> [!definition] Definition §C1b.5.5: Charge Density
+> For a Noether current $j^\mu = (j^0, \mathbf j)$, with $\mathbf j$ the vector of components $j^i$, the **charge density** is $\rho \equiv j^0$. It need not be an electric charge density.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (charge) · PS §2.2, eq. (2.13) · Lecture 3, "Noether's Charge" · Yu §1.7.1, eqs. (1.200), (1.202)*
 
 ^def-c1b-5-5
+
+> [!definition] Definition §C1b.5.6: Noether Charge
+> The **Noether charge** of a current $j^\mu$ in a fixed spatial region $V$ and in all of space is the integral of its charge density ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]),
+>
+> $$
+> Q_V(t) \equiv \int_Vd^3x\;j^0(t, \mathbf x), \qquad Q \equiv \int d^3x\;j^0(t, \mathbf x) ;
+> $$
+>
+> one charge per parameter, $Q_a = \int d^3x\,j^0_a$.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (charge) · PS §2.2, eq. (2.13) · Lecture 3, "Noether's Charge" · Yu §1.7.1, eqs. (1.200), (1.202)*
+
+^def-c1b-5-6
 
 > [!theorem] Theorem §C1b.5.3: Continuity Equation and Conservation of the Charge
 > $\partial_\mu j^\mu = 0$ is the continuity equation $\partial_t\rho + \nabla\cdot\mathbf j = 0$, and for a fixed region $V$ with outward surface element $d\mathbf S$,
@@ -291,11 +305,11 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 > **What the derivation shows**
 > - Conservation is local first: no charge is created or destroyed anywhere; global conservation needs the fall-off.
 > - Nothing beyond $\partial_\mu j^\mu = 0$ was used: this is the same argument as for electric charge ([[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-6|REL Theorem §B4.2.6]]), here for any symmetry.
-> - Used next: energy and momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]), improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
+> - Used next: energy and momentum ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-6-6|Theorem §C1b.6.6]]), improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]).
 
 ^der-c1b-5-3
 
-*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]
+*Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§C1b.5 Noether's Theorem#^def-c1b-5-6|Def. §C1b.5.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]]
 
@@ -326,7 +340,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 >
 > **What the derivation shows**
 > - Part 1 is identically true; part 2 needs the fall-off.
-> - ⚑ By-product: this freedom is what symmetrizes the energy–momentum tensor → [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-6-3|Example §C1b.6.3]]. With an extra label, $B^{\lambda\mu}{}_\nu$ antisymmetric in $\lambda\mu$, the same argument holds for each $\nu$.
+> - ⚑ By-product: this freedom is what symmetrizes the energy–momentum tensor → [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]], [[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]. With an extra label, $B^{\lambda\mu}{}_\nu$ antisymmetric in $\lambda\mu$, the same argument holds for each $\nu$.
 
 ^der-c1b-5-4
 
@@ -460,7 +474,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > - In Hamiltonian form the charge generates its own symmetry through Poisson brackets ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^rem-b6-4-6|CM Remark: Noether in Hamiltonian form]], [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]); after quantization commutators take over: the U(1) charge counts quanta with $[Q, a^\dagger] = \frac12a^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]]), the way a conserved generator commutes with $H$ in quantum mechanics ([[§C8.1★ Symmetries, Conservation Laws and Degeneracies#^thm-c8-1-2|QM Theorem §C8.1.2]]).
 > - The indefinite Klein–Gordon density that wrecked the probability interpretation ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]]) is this U(1) charge density; its negative values become antiparticles after quantization ([[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]]).
 > - Electric charge conservation, the template of every continuity equation ([[§B9.1 Charge, Energy and Poynting's Theorem#^rem-b9-1-1|EM Remark: Charge conservation as the template]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-6|REL Theorem §B4.2.6]]), is Theorem §C1b.5.3 for the phase symmetry of a charged field; making the phase local requires the gauge field (QFT C8, planned).
-> - Improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]) are what makes the electromagnetic energy–momentum tensor symmetric and gauge invariant ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^ex-c1b-6-3|Example §C1b.6.3]]), and Belinfante's construction ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum#^thm-c1b-6-13|Theorem §C1b.6.13]]) does it for every field.
+> - Improvement terms ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]) are what makes the electromagnetic energy–momentum tensor symmetric and gauge invariant ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-7-2|Example §C1b.7.2]]), and Belinfante's construction ([[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-7-4|Theorem §C1b.7.4]]) does it for every field.
 > - The quantum charges are these classical charges with operator fields inserted and normal ordered ([[P1 Canonical Quantization#^p1-5|P1, step 5]]; [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]).
 > - Electromagnetism level C: making the phase local, classically — minimal coupling turns the global U(1) of a charged field into a gauge symmetry, the coupling is gauge invariant if and only if charge is conserved, and gauge invariance makes the field equations dependent (the Noether-identity form) — [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-4|EM Theorem §C1.3.4]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-1|EM Theorem §C1.3.1]], [[§C1.3 Gauge Symmetry and Charge Conservation#^thm-c1-3-2|EM Theorem §C1.3.2]].
 > - Math: the chain rule [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]; the divergence theorem [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]] and in $\mathbb R^n$ [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], whose continuity-equation form is [[§29 Conservation of Mass and Laplace's Equation#^thm-29-1|452 Thm. §29.1]]; differentiation under the integral [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]].

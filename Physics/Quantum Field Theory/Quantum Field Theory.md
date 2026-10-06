@@ -16,7 +16,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C1b Classical Field Theory]]
 - [[· C2a The Quantum Scalar Field]]
 - [[· C2b Two-Point Functions, Causality and Propagators]]
-- [[· C3 Poincaré Symmetry and Particle States]] (★ §C3.5, §C3.6)
+- [[· C3 Poincaré Symmetry and Particle States]] (★ §C3.6, §C3.7)
 - [[· C4 The Quantum Vector Field]] (★ §C4.2, §C4.3, §C4.4)
 - [[· C5a Spinors and the Dirac Equation]]
 - [[· C5b The Quantum Spinor Field]]
@@ -36,25 +36,25 @@ graph TD
   C5a["C5a Spinors and the Dirac Equation"]
   C5b["C5b The Quantum Spinor Field"]
   CA["CA Mathematical Methods"]
-  C1a -->|20| C1b
+  C1a -->|27| C1b
   C1a -->|3| C2a
   C1b -->|8| C2a
-  C1a -->|6| C2b
+  C1a -->|20| C2b
   C1b -->|3| C2b
-  C2a -->|76| C2b
-  C1a -->|84| C3
-  C1b -->|19| C3
+  C2a -->|77| C2b
+  C1a -->|74| C3
+  C1b -->|20| C3
   C2a -->|34| C3
   C2b -->|14| C3
   C1a -->|37| C4
-  C1b -->|67| C4
+  C1b -->|68| C4
   C2a -->|88| C4
   C2b -->|51| C4
-  C3 -->|66| C4
-  C1a -->|53| C5a
-  C1b -->|61| C5a
+  C3 -->|67| C4
+  C1a -->|50| C5a
+  C1b -->|63| C5a
   C2a -->|1| C5a
-  C3 -->|89| C5a
+  C3 -->|91| C5a
   C1b -->|26| C5b
   C2a -->|89| C5b
   C2b -->|117| C5b
@@ -65,25 +65,26 @@ graph TD
   C1b -->|3| CA
   C2a -->|7| CA
   C2b -->|43| CA
-  C1b -.->|23| C1a
-  C2a -.->|6| C1a
-  C2b -.->|35| C1a
-  C3 -.->|20| C1a
-  C4 -.->|3| C1a
-  C5a -.->|5| C1a
-  CA -.->|77| C1a
-  C2a -.->|17| C1b
+  C1b -.->|22| C1a
+  C2a -.->|4| C1a
+  C2b -.->|19| C1a
+  C3 -.->|8| C1a
+  C5a -.->|2| C1a
+  CA -.->|44| C1a
+  C2a -.->|22| C1b
   C2b -.->|4| C1b
-  C3 -.->|4| C1b
-  C5a -.->|2| C1b
-  CA -.->|28| C1b
+  C3 -.->|6| C1b
+  C4 -.->|3| C1b
+  C5a -.->|3| C1b
+  C5b -.->|2| C1b
+  CA -.->|30| C1b
   C2b -.->|17| C2a
   C3 -.->|3| C2a
   C5b -.->|1| C2a
   CA -.->|193| C2a
-  CA -.->|379| C2b
+  CA -.->|412| C2b
   C4 -.->|5| C3
-  C5a -.->|16| C3
+  C5a -.->|18| C3
   C5b -.->|1| C3
   CA -.->|11| C3
   C5a -.->|1| C4

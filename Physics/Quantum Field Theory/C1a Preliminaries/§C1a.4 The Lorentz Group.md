@@ -44,18 +44,31 @@ Which transformations relate the descriptions of one physical situation, and wha
 
 ^cau-c1a-4-2
 
-> [!definition] Definition §C1a.4.2: Active Rotation and Boost; Rapidity
+> [!definition] Definition §C1a.4.2: Active Rotation and Boost
 > The active rotation by $\theta$ about $z$ and the active boost to velocity $v$ along $z$ act on $(x, y)$ and on $(t, z)$ respectively, as the identity on the other two coordinates:
 >
 > $$
-> R_z(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}, \qquad B_z(\eta) = \begin{pmatrix} \cosh\eta & \sinh\eta \\ \sinh\eta & \cosh\eta \end{pmatrix} = \gamma\begin{pmatrix} 1 & v \\ v & 1 \end{pmatrix},
+> R_z(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}, \qquad B_z = \gamma\begin{pmatrix} 1 & v \\ v & 1 \end{pmatrix}, \qquad \gamma = (1 - v^2)^{-1/2} .
 > $$
 >
-> with the **rapidity** $\eta$: $\cosh\eta = \gamma = (1 - v^2)^{-1/2}$, $\sinh\eta = \gamma v$, $\tanh\eta = v$. A particle at rest, $(1, \mathbf 0)$, is sent to $(\cosh\eta, 0, 0, \sinh\eta)$, moving with velocity $+v\hat{\mathbf z}$.
+> A particle at rest, $(1, \mathbf 0)$, is sent to $\gamma(1, 0, 0, v)$, moving with velocity $+v\hat{\mathbf z}$.
 >
-> *Source: the user's PHY 513 notes, Ch. 1 §1.2, eqs. (boostz), (rotboost), (rapidity) · PHY 513 Lecture 1, Part B*
+> *Source: the user's PHY 513 notes, Ch. 1 §1.2, eqs. (boostz), (rotboost) · PHY 513 Lecture 1, Part B*
 
 ^def-c1a-4-2
+
+> [!definition] Definition §C1a.4.3: Rapidity
+> The **rapidity** $\eta$ of the boost $B_z$ of [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]] is defined by $\tanh\eta = v$; then $\cosh\eta = \gamma$, $\sinh\eta = \gamma v$, and
+>
+> $$
+> B_z(\eta) = \begin{pmatrix} \cosh\eta & \sinh\eta \\ \sinh\eta & \cosh\eta \end{pmatrix} ,
+> $$
+>
+> which sends $(1, \mathbf 0)$ to $(\cosh\eta, 0, 0, \sinh\eta)$.
+>
+> *Source: the user's PHY 513 notes, Ch. 1 §1.2, eq. (rapidity) · PHY 513 Lecture 1, Part B*
+
+^def-c1a-4-3
 
 Both matrices satisfy Definition §C1a.4.1 by the computation of [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]] with $c = 1$ ($\cosh^2\eta - \sinh^2\eta = 1$ in place of $\gamma^2(1 - \beta^2) = 1$), and rapidities along one axis add, $B_z(\eta_1)B_z(\eta_2) = B_z(\eta_1 + \eta_2)$, which is the velocity-addition law ([[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-7|REL Theorem §B1.2.7]]). Both matrices are exponentials of generators ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]).
 
@@ -213,10 +226,10 @@ That $O(1,3)$ is a group, that $\Lambda^{-1} = g^{-1}\Lambda^{\mathsf T}g$ needs
 
 ^der-c1a-4-3
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]], [[§37 Determinants#^ladr-9-52|LADR Thm. 9.52]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]], [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-6|REL Theorem §B1.2.6]], [[§37 Determinants#^ladr-9-52|LADR Thm. 9.52]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]], [[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]]
 
 > [!remark] Remark: What "Lorentz invariant" means in field theory
-> Throughout quantum field theory, "Lorentz invariant" means invariant under $SO^+(1,3)$, together with translations the proper orthochronous Poincaré group ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), unless parity or time reversal is named explicitly. It is the only piece reachable from the identity, so it is the only piece whose elements are exponentials of generators ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]]) and the only one that Noether's theorem turns into conserved charges ([[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]]). $P$ and $T$ are discrete: whether a theory respects them is decided by its Lagrangian, and the weak interaction does not (QFT C9, planned). The same distinction recurs three times in the course: in the invariance of past and future ([[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]), in the invariance of positive energy on the mass shell ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]), and in the classification of fields by their response to parity ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
+> Throughout quantum field theory, "Lorentz invariant" means invariant under $SO^+(1,3)$, together with translations the proper orthochronous Poincaré group ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), unless parity or time reversal is named explicitly. It is the only piece reachable from the identity, so it is the only piece whose elements are exponentials of generators ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]]) and the only one that Noether's theorem turns into conserved charges ([[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]]). $P$ and $T$ are discrete: whether a theory respects them is decided by its Lagrangian, and the weak interaction does not (QFT C9, planned). The same distinction recurs three times in the course: in the invariance of past and future ([[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]), in the invariance of positive energy on the mass shell ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]), and in the classification of fields by their response to parity ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Definition "Names and what is a subgroup"; paragraph "Components of the group") · Yu §1.3 ("Lorentz 不变量通常指的是在固有保时向 Lorentz 变换下不变的量")*
 
@@ -267,7 +280,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 
 ^der-c1a-4-4
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
 
 > [!theorem] Theorem §C1a.4.5: Parity and Time Reversal Permute the Orbits
 > 1. $P$ maps every orbit of Theorem §C1a.4.4 to itself (reversing its orientation along the sheet).
@@ -296,7 +309,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 
 ^der-c1a-4-5
 
-*Uses:* [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]
+*Uses:* [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]]
 
 ![[ph-qft-c1-4-2.svg]]
 *Orbits of the identity component in the $(x, t)$ plane, one spatial direction shown. The future (blue) and past (grey) sheets of $t^2 - x^2 = m^2$ are separate orbits; $P$ maps each to itself, $T$ and $PT$ exchange them. The spacelike hyperbola (orange, dashed) has two branches only in $1+1$ dimensions; in $3+1$ the spacelike hyperboloid is one connected orbit (Caution below). Adapted from the user's PHY 513 notes, Ch. 1 §1.3.*
@@ -320,10 +333,10 @@ The four components are a property of the group, a six-dimensional manifold. The
 
 > [!remark]- Connections
 > - The template $M^{\mathsf T}GM = G$ gives $O(N)$ for $G = \mathbb 1$, $O(1,3)$ for $G = g$, and the symplectic group for an antisymmetric $G$; the transpose is the change-of-basis rule for bilinear forms — [[§B1.2 Lorentz Transformations and the Lorentz Group|REL §B1.2]] (Connections), [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|LADR Thm. 9.7]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]].
-> - The matrix groups of [[§C1a.4 The Lorentz Group#^def-c1a-4-4|Def. §C1a.4.4]] are matrix Lie groups, each with a Lie algebra of generators and its structure constants — [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-2|Def. §C3.1.2]].
+> - The matrix groups of [[§C1a.4 The Lorentz Group#^def-c1a-4-4|Def. §C1a.4.4]] are matrix Lie groups, each with a Lie algebra of generators and its structure constants — [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-2|Def. §C3.1.2]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-3|Def. §C3.1.3]], [[§C3.1 Groups, Algebras and Representations of Rotations#^def-c3-1-4|Def. §C3.1.4]].
 > - The homomorphism $\Lambda \mapsto (\det\Lambda, \operatorname{sgn}\Lambda^0{}_0)$ plays for $O(1,3)$ the role that $\det$ plays for $O(3)$ and $GL(n, \mathbb R)$, whose two components are its fibres — [[§16 The Classical Groups#^thm-16-2|591 Thm. §16.2]]; the sign of a permutation is the same kind of map onto $\mathbb Z_2$ — [[§21 The Sign Homomorphism and the Alternating Group|493 §21]].
 > - Each future sheet is a homogeneous space, $H^+_m \cong SO^+(1,3)/SO(3)$, by orbit–stabilizer; the same construction with the stabilizer of a null vector gives the massless little group of Wigner's classification ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|Theorem §C3.7.1]]) — [[Homogeneous Spaces Are Coset Spaces]], [[§30 Orbit–Stabilizer|493 §30]].
 > - $\theta(p^0)$ is invariant on $H^+_m$ for the same reason that "future" is invariant for timelike displacements: both are the statement that the two timelike sheets are separate orbits — [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-1|§C1a.3, Remark: Why the future cannot be boosted into the past]].
 > - The invariant distributions $\theta(\pm p^0)\delta(p^2 - m^2)$ and $\theta(\pm x^0)\delta(x^2)$ are exactly the orbit measures on $H^\pm_m$ and $C^\pm$ — [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]].
-> - The six parameters of $SO^+(1,3)$ and the four translations are the ten conserved charges of a relativistic field theory — [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-5|REL Remark: Ten parameters, ten conservation laws]], [[§C1b.6 Spacetime Symmetries꞉ Energy–Momentum and Angular Momentum|§C1b.6]].
+> - The six parameters of $SO^+(1,3)$ and the four translations are the ten conserved charges of a relativistic field theory — [[§B1.2 Lorentz Transformations and the Lorentz Group#^rem-b1-2-5|REL Remark: Ten parameters, ten conservation laws]], [[§C1b.6 Spacetime Symmetries꞉ Energy and Momentum|§C1b.6]]–[[§C1b.7 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.7]].
 > - The rotation subgroup acting on kets, and its double cover $SU(2)$, are Quantum Mechanics' rotation theory; the Lorentz group's own double cover $SL(2, \mathbb C)$ is the spinor story ([[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|Theorem §C5a.1.8]]; [[§C3.1 Groups, Algebras and Representations of Rotations#^rem-c3-1-8|§C3.1, Remark: The same pattern for the Lorentz group]]) — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
