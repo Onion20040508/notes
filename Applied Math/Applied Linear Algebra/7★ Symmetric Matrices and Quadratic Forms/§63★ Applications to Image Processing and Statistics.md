@@ -338,7 +338,7 @@ Principal component analysis is valuable when most of the variation, or dynamic 
 
 *Uses:* [[§61★ The Singular Value Decomposition#^def-61-1|Def. §61.1]], [[§61★ The Singular Value Decomposition#^def-61-2|Def. §61.2]], [[§63★ Applications to Image Processing and Statistics#^def-63-4|Def. §63.4]]
 
-The SVD is the main tool for principal component analysis in practice: iterative calculation of the SVD of $A$ is faster and more accurate than an eigenvalue decomposition of $S$ (forming $BB^T$ squares the errors, as noted in [[§62★ The Singular Value Decomposition in Applications#^rem-62-3|§51, Remark: Numerical Note]]). This matters especially in hyperspectral image processing, with $p = 224$ spectral bands; principal component analysis is then completed in seconds on specialized workstations.
+The SVD is the main tool for principal component analysis in practice: iterative calculation of the SVD of $A$ is faster and more accurate than an eigenvalue decomposition of $S$ (forming $BB^T$ squares the errors, as noted in [[§62★ The Singular Value Decomposition in Applications#^rem-62-1|§51, Remark: Numerical Note]]). This matters especially in hyperspectral image processing, with $p = 224$ spectral bands; principal component analysis is then completed in seconds on specialized workstations.
 
 > [!example] Example §63.3: A Size Index for Weights and Heights
 > The weights and heights of five boys are:

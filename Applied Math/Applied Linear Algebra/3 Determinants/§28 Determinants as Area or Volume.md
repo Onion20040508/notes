@@ -17,7 +17,7 @@ Geometrically, $|\det A|$ is the area (in $\mathbb{R}^2$) or volume (in $\mathbb
 
 Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in their usual Euclidean sense (length and distance in $\mathbb{R}^n$ are defined in [[§49 Inner Product, Length, and Orthogonality#^def-49-2|Definition §49.2]]).
 
-> [!theorem] Lemma §34.1: Shears Preserve Area and Volume
+> [!theorem] Lemma §28.1: Shears Preserve Area and Volume
 > Let $\mathbf{a}_1$ and $\mathbf{a}_2$ be nonzero vectors in $\mathbb{R}^2$. Then for any scalar $c$, the area of the parallelogram determined by $\mathbf{a}_1$ and $\mathbf{a}_2$ equals the area of the parallelogram determined by $\mathbf{a}_1$ and $\mathbf{a}_2 + c\mathbf{a}_1$.
 >
 > Likewise in $\mathbb{R}^3$: the parallelepiped determined by $\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3$ has the same volume as the one determined by $\mathbf{a}_1, \mathbf{a}_2 + c\mathbf{a}_1, \mathbf{a}_3$.
@@ -38,7 +38,7 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 ![[m235-22-1.svg]]
 *[[§28 Determinants as Area or Volume#^lem-28-1|Lemma §28.1]] in $\mathbb{R}^2$. Adding $c\,\mathbf{a}_1$ to $\mathbf{a}_2$ slides the top side of the parallelogram along the line $\mathbf{a}_2 + L$, parallel to the base $L$. The blue and the green parallelogram share the base $\mathbf{0}\mathbf{a}_1$ and the height (red), so they have equal area. Algebraically this is a column replacement, which does not change the determinant either.*
 
-> [!theorem] Theorem §34.2: Determinants as Area or Volume
+> [!theorem] Theorem §28.2: Determinants as Area or Volume
 > If $A$ is a $2 \times 2$ matrix, the area of the parallelogram determined by the columns of $A$ is $|\det A|$. If $A$ is a $3 \times 3$ matrix, the volume of the parallelepiped determined by the columns of $A$ is $|\det A|$.
 >
 > *Lay: Theorem 9 (3.3)*
@@ -64,7 +64,7 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 > - In Calculus the same facts come from the cross product: area $= |\mathbf{a} \times \mathbf{b}|$ ([[§96 The Cross Product#^cor-96-6|Calc Cor. §96.6]]) and volume $= |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| = |\det|$ ([[§97 Triple Products and Torque#^thm-97-2|Calc Thm. §97.2]]); the lecture writes $\det[\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3] = (\mathbf{v}_1 \times \mathbf{v}_2) \cdot \mathbf{v}_3$.
 > - Rigorous treatment in $\mathbb{R}^n$ for every measurable set ([[§11 Lebesgue Measurable Sets#^def-11-1|551 Def. §11.1]]): [[§37 Determinants#^ladr-9-61|LADR 9.61]] (proved via the singular value decomposition, [[§37 Determinants#^ladr-9-60|LADR 9.60]]); the sign of $\det$ records orientation, which $|\det|$ forgets.
 
-> [!example] Example §34.1: Areas of Parallelograms, Triangles and Quadrilaterals
+> [!example] Example §28.1: Areas of Parallelograms, Triangles and Quadrilaterals
 > **(a) A parallelogram given by its vertices.** Find the area of the parallelogram with vertices $(-2, -2)$, $(0, 3)$, $(4, -1)$, $(6, 4)$. First translate it so that one vertex is the origin: subtracting $(-2, -2)$ from each vertex gives $(0, 0)$, $(2, 5)$, $(6, 1)$, $(8, 6)$, a parallelogram with the same area. It is determined by the columns of
 >
 > $$
@@ -96,7 +96,7 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 
 For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the set of images of points of $S$. When $S$ is a region bounded by a parallelogram, $S$ is also called a parallelogram.
 
-> [!theorem] Theorem §34.3: How a Linear Transformation Changes Area and Volume
+> [!theorem] Theorem §28.3: How a Linear Transformation Changes Area and Volume
 > Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be the linear transformation determined by a $2 \times 2$ matrix $A$. If $S$ is a parallelogram in $\mathbb{R}^2$, then
 >
 > $$
@@ -144,7 +144,7 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 
 *Uses:* [[§28 Determinants as Area or Volume#^thm-28-2|§28.2]], [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|§26.4]], [[§9 Introduction to Linear Transformations#^def-9-4|Def. §9.4]] (linearity)
 
-> [!theorem] Theorem §34.4: Regions of Finite Area or Volume
+> [!theorem] Theorem §28.4: Regions of Finite Area or Volume
 > The conclusions of [[§28 Determinants as Area or Volume#^thm-28-3|Theorem §28.3]] hold whenever $S$ is a region in $\mathbb{R}^2$ with finite area or a region in $\mathbb{R}^3$ with finite volume.
 >
 > *Lay: 3.3 (boxed generalization of Theorem 10)*
@@ -154,14 +154,13 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 *Lay outlines the argument (below); a proof needs the theory of area and volume. See [[§25 Change of Variables on General Domains#^prop-25-5|452 Prop. §25.5]] and [[§37 Determinants#^ladr-9-61|LADR 9.61]].*
 
 > [!remark] Remark: Why It Works
-> A planar region $R$ with finite area can be approximated by a grid of small squares lying inside $R$; making the squares small enough, the total area of the squares is as close as desired to the area of $R$. Under $T$, each small square goes to a small parallelogram whose area is $|\det A|$ times the area of the square ([[§28 Determinants as Area or Volume#^thm-28-3|Theorem §28.3]]). So if $R'$ is the union of the squares inside $R$, the area of $T(R')$ is $|\det A|$ times the area of $R'$, and the area of $T(R')$ is close to the area of $T(R)$. A limiting process gives $\{\text{area of } T(R)\} = |\det A| \cdot \{\text{area of } R\}$. The lecture draws the same picture for an arbitrary blob $D$, and composes: applying $S$ and then $T$ multiplies volume by $|\det S|$ and then by $|\det T|$ ([[§26 Transposes, Products, and Linearity of Determinants#^rem-26-4|§26, Remark: Why It Works]]).
+> A planar region $R$ with finite area can be approximated by a grid of small squares lying inside $R$; making the squares small enough, the total area of the squares is as close as desired to the area of $R$. Under $T$, each small square goes to a small parallelogram whose area is $|\det A|$ times the area of the square ([[§28 Determinants as Area or Volume#^thm-28-3|Theorem §28.3]]). So if $R'$ is the union of the squares inside $R$, the area of $T(R')$ is $|\det A|$ times the area of $R'$, and the area of $T(R')$ is close to the area of $T(R)$. A limiting process gives $\{\text{area of } T(R)\} = |\det A| \cdot \{\text{area of } R\}$. The lecture draws the same picture for an arbitrary blob $D$, and composes: applying $S$ and then $T$ multiplies volume by $|\det S|$ and then by $|\det T|$ ([[§26 Transposes, Products, and Linearity of Determinants#^rem-26-1|§26, Remark: Why It Works]]).
 
-^rem-28-3
-
+^rem-28-1
 > [!remark]- Connections
 > - For a nonlinear map the factor $|\det A|$ becomes the absolute value of the Jacobian determinant in the change of variables formula: [[§124 Change of Variables in Multiple Integrals#^thm-124-1|Calc Thm. §124.1]] (double integrals), [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]] (in $\mathbb{R}^n$). This is the "expansion rate near the poles" of Lay's chapter introduction.
 
-> [!example] Example §34.2: Areas and Volumes of Images
+> [!example] Example §28.2: Areas and Volumes of Images
 > **(a) The image of a parallelogram.** Let $S$ be the parallelogram determined by $\mathbf{b}_1 = (1, 3)$ and $\mathbf{b}_2 = (5, 1)$, and let $A = \begin{bmatrix} 1 & -0.1 \\ 0 & 2 \end{bmatrix}$. The area of $S$ is $\left|\det\begin{bmatrix} 1 & 5 \\ 3 & 1 \end{bmatrix}\right| = |1 - 15| = 14$, and $\det A = 2$. By [[§28 Determinants as Area or Volume#^thm-28-3|Theorem §28.3]] the area of the image of $S$ under $\mathbf{x} \mapsto A\mathbf{x}$ is $2 \cdot 14 = 28$. Directly: $A\mathbf{b}_1 = (0.7, 6)$, $A\mathbf{b}_2 = (4.9, 2)$ and $|0.7 \cdot 2 - 4.9 \cdot 6| = |1.4 - 29.4| = 28$.
 >
 > **(b) The area of an ellipse.** Let $a, b > 0$ and let $E$ be the region bounded by the ellipse $\dfrac{x_1^2}{a^2} + \dfrac{x_2^2}{b^2} = 1$. Then $E$ is the image of the unit disk $D$ under $T(\mathbf{u}) = A\mathbf{u}$ with $A = \begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix}$: if $\mathbf{x} = A\mathbf{u}$, then $u_1 = x_1/a$ and $u_2 = x_2/b$, so $\mathbf{u}$ is in the unit disk ($u_1^2 + u_2^2 \le 1$) if and only if $\mathbf{x}$ is in $E$ ($(x_1/a)^2 + (x_2/b)^2 \le 1$). By [[§28 Determinants as Area or Volume#^thm-28-4|Theorem §28.4]],

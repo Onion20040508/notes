@@ -24,12 +24,12 @@ Let $I = [0, 1]$.
 
 ## Homotopy of Continuous Maps
 
-> [!definition] Definition §38.1: Homotopy
+> [!definition] Definition §28.1: Homotopy
 > Let $f, f': X \to Y$ be continuous. We say $f$ is **homotopic** to $f'$ ($f \simeq f'$) if there exists continuous $F: X \times I \to Y$ with $F(x, 0) = f(x)$ and $F(x, 1) = f'(x)$ for all $x$. The map $F$ is a **homotopy**.
 
 ^def-28-1
 
-> [!definition] Definition §38.2: Nullhomotopic
+> [!definition] Definition §28.2: Nullhomotopic
 > $f: X \to Y$ is **nullhomotopic** if $f \simeq c$ for some constant map $c$.
 
 ^def-28-2
@@ -39,7 +39,7 @@ Let $I = [0, 1]$.
 
 ## The Straight-Line Homotopy
 
-> [!theorem] Theorem §38.1: Straight-Line Homotopy
+> [!theorem] Theorem §28.1: Straight-Line Homotopy
 > If $f, g: X \to \mathbb{R}^n$ are continuous maps, then $f \simeq g$ via
 >
 > $$H(x, t) = (1 - t)\,f(x) + t\,g(x).$$
@@ -78,7 +78,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^rem-28-3
 
-> [!theorem] Proposition §38.2: Path-Connectedness Implies Homotopy of Constant Maps
+> [!theorem] Proposition §28.2: Path-Connectedness Implies Homotopy of Constant Maps
 > If $Y$ is [[§16 Connected Subspaces of ℝ#^def-16-4|path-connected]] and $y_0, y_1 \in Y$, then the constant maps $e_{y_0}, e_{y_1}: X \to Y$ are homotopic.
 
 ^prop-28-2
@@ -101,7 +101,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ## Path Homotopy
 
-> [!definition] Definition §38.3: Path
+> [!definition] Definition §28.3: Path
 > A **path** in $X$ is a continuous map $f: I \to X$. The point $f(0) = x_0$ is the **initial point**, $f(1) = x_1$ the **terminal point**.
 
 ^def-28-3
@@ -109,7 +109,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 > [!remark]- Connections
 > - Same notion as in the definition of [[§16 Connected Subspaces of ℝ#^def-16-4|path-connectedness]]: [[§16 Connected Subspaces of ℝ#^def-16-3|Path]].
 
-> [!definition] Definition §38.4: Path Homotopy
+> [!definition] Definition §28.4: Path Homotopy
 > Paths $f, f': I \to X$ with the same endpoints ($f(0) = f'(0) = x_0$, $f(1) = f'(1) = x_1$) are **path homotopic** ($f \simeq_p f'$) if there exists continuous $F: I \times I \to X$ with:
 > 1. $F(s, 0) = f(s)$, $F(s, 1) = f'(s)$ for all $s$ (interpolates from $f$ to $f'$).
 > 2. $F(0, t) = x_0$, $F(1, t) = x_1$ for all $t$ (endpoints fixed).
@@ -126,7 +126,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ## Homotopy is an Equivalence Relation
 
-> [!theorem] Lemma §38.3
+> [!theorem] Lemma §28.3
 > Both $\simeq$ and $\simeq_p$ are [[§22 Partitions and Equivalence Relations#^def-22-4|equivalence relations]].
 
 ^lem-28-3
@@ -148,7 +148,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 *Uses:* [[Pasting Lemma|§10.5]]
 
-> [!definition] Definition §38.5: Path Homotopy Class
+> [!definition] Definition §28.5: Path Homotopy Class
 > The [[§22 Partitions and Equivalence Relations#^def-22-5|equivalence class]] of a path $f$ under $\simeq_p$ is denoted $[f]$.
 
 ^def-28-5
@@ -177,7 +177,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ^def-28-7
 
-> [!theorem] Proposition §38.4: Well-Definedness of $[f] * [g]$
+> [!theorem] Proposition §28.4: Well-Definedness of $[f] * [g]$
 > If $f, f' \in [f]$ and $g, g' \in [g]$ (i.e., $f \simeq_p f'$ and $g \simeq_p g'$), then $f * g \simeq_p f' * g'$.
 
 ^prop-28-4
@@ -207,7 +207,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 ## Reparameterization Lemma
 
-> [!theorem] Lemma §38.5: Reparameterization
+> [!theorem] Lemma §28.5: Reparameterization
 > Let $f: I \to X$ be a path and $p: I \to I$ a continuous map with $p(0) = 0$ and $p(1) = 1$. Then $f \circ p \simeq_p f$.
 
 ^lem-28-5
@@ -245,7 +245,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 
 The following theorem shows that the product of path homotopy classes satisfies the group axioms. This is the foundation for the [[§29 The Fundamental Group#^def-29-2|fundamental group]].
 
-> [!theorem] Theorem §38.6: Properties of Path Concatenation
+> [!theorem] Theorem §28.6: Properties of Path Concatenation
 > Let $f$, $g$, $h$ be paths in $X$ with compatible endpoints (so $f \ast  g$ and $g \ast  h$ are defined). Let $e_{x}$ denote the constant path at $x$ (i.e., $e_x(s) = x$ for all $s$), and let $\bar{f}(s) = f(1-s)$ (the **reverse path**). Then:
 > 1. **Associativity:** $[f] \ast  ([g] \ast  [h]) = ([f] \ast  [g]) \ast  [h]$.
 > 2. **Identity:** $[f] \ast  [e_{x_1}] = [f] = [e_{x_0}] \ast  [f]$.

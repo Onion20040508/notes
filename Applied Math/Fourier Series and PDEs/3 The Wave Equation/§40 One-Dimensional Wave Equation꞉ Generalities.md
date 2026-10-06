@@ -15,7 +15,7 @@ This section does for the wave equation what [[§31 Generalities on the Heat Con
 
 ## The Generalized Problem
 
-> [!definition] Definition §50.1: The Generalized One-Dimensional Wave Problem
+> [!definition] Definition §40.1: The Generalized One-Dimensional Wave Problem
 > The initial value–boundary value problem for a generalized one-dimensional wave equation, homogeneous and free of $u$, is
 >
 > $$
@@ -36,7 +36,7 @@ This section does for the wave equation what [[§31 Generalities on the Heat Con
 
 To obtain homogeneous boundary conditions, write $u(x, t) = v(x) + w(x, t)$ as for heat. Neither of the names "steady-state solution" nor "transient solution" is appropriate here: as will be seen, there is no steady state or limiting case, and no part of the solution tends to zero as $t \to \infty$. Nevertheless $v$ represents an equilibrium, and the split is a useful device.
 
-> [!definition] Definition §50.2: Equilibrium Solution
+> [!definition] Definition §40.2: Equilibrium Solution
 > The **equilibrium solution** of (1)–(3) is the function $v(x)$ satisfying
 >
 > $$
@@ -153,7 +153,7 @@ The solution of (11) is $T_n(t) = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$. 
 
 ^rem-40-2
 
-> [!example] Example §50.1: A Moving End Held at a New Position
+> [!example] Example §40.1: A Moving End Held at a New Position
 > Solve
 >
 > $$
@@ -184,7 +184,7 @@ The solution of (11) is $T_n(t) = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$. 
 
 ^ex-40-1
 
-> [!example] Example §50.2: A String under a Constant Force
+> [!example] Example §40.2: A String under a Constant Force
 > Solve
 >
 > $$
@@ -218,7 +218,7 @@ The solution of (11) is $T_n(t) = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$. 
 
 ^ex-40-2
 
-> [!example] Example §50.3: The Damped String
+> [!example] Example §40.3: The Damped String
 > Solve the string in a resisting medium ([[§37 The Vibrating String#^prop-37-3|Proposition §37.3]])
 >
 > $$

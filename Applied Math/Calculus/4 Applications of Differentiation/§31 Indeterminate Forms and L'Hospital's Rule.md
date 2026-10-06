@@ -15,7 +15,7 @@ A limit such as $\lim_{x \to 1} \frac{\ln x}{x - 1}$ cannot be found with the Li
 
 ## Indeterminate Forms (Types 0/0 and ∞/∞)
 
-> [!definition] Definition §34.3: Indeterminate Forms of Type 0/0 and ∞/∞
+> [!definition] Definition §31.1: Indeterminate Forms of Type 0/0 and ∞/∞
 > Consider a limit of the form
 >
 > $$
@@ -34,7 +34,7 @@ Some limits of these types were found earlier by algebra. For rational functions
 
 The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a generalization of the Mean Value Theorem to two functions, due to Cauchy. We state and prove it first.
 
-> [!theorem] Theorem §34.1: Cauchy's Mean Value Theorem
+> [!theorem] Theorem §31.1: Cauchy's Mean Value Theorem
 > Suppose that the functions $f$ and $g$ are continuous on $[a, b]$ and differentiable on $(a, b)$, and $g'(x) \ne 0$ for all $x$ in $(a, b)$. Then there is a number $c$ in $(a, b)$ such that
 >
 > $$
@@ -176,7 +176,7 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 
 ^rem-31-2
 
-> [!example] Example §34.1: Types 0/0 and ∞/∞
+> [!example] Example §31.1: Types 0/0 and ∞/∞
 > **(a)** Find $\displaystyle\lim_{x \to 1} \frac{\ln x}{x - 1}$.
 >
 > Since $\lim_{x \to 1} \ln x = \ln 1 = 0$ and $\lim_{x \to 1}(x - 1) = 0$, this is of type $\frac00$, and l'Hospital's Rule gives
@@ -219,7 +219,7 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 
 ^ex-31-1
 
-> [!example] Example §34.2: Repeated Application, with Simplification
+> [!example] Example §31.2: Repeated Application, with Simplification
 > Find $\displaystyle\lim_{x \to 0} \frac{\tan x - x}{x^3}$.
 >
 > Both $\tan x - x \to 0$ and $x^3 \to 0$ as $x \to 0$, so
@@ -268,7 +268,7 @@ $$
 
 which turns it into a limit of type $\frac00$ or $\frac{\infty}{\infty}$.
 
-> [!example] Example §34.3: An Indeterminate Product
+> [!example] Example §31.3: An Indeterminate Product
 > Evaluate $\displaystyle\lim_{x \to 0^+} x \ln x$.
 >
 > As $x \to 0^+$, the first factor $x$ tends to $0$ while $\ln x \to -\infty$: type $0 \cdot \infty$. Writing $x = 1/(1/x)$, with $1/x \to \infty$, gives a limit of type $\frac{\infty}{\infty}$ (here $-\infty$ over $\infty$), and l'Hospital's Rule gives
@@ -294,7 +294,7 @@ which turns it into a limit of type $\frac00$ or $\frac{\infty}{\infty}$.
 
 Again there is a contest: the answer may be $\infty$ ($f$ wins), $-\infty$ ($g$ wins), or a finite compromise. To find out, convert the difference into a quotient (by a common denominator, by rationalizing, or by factoring out a common factor) so as to get a form of type $\frac00$ or $\frac{\infty}{\infty}$. For instance, $e^x - x = x\big(\frac{e^x}{x} - 1\big)$, and $\frac{e^x}{x} \to \infty$ by l'Hospital's Rule, so $\lim_{x \to \infty}(e^x - x) = \infty$ (Stewart's Example 4.4.8).
 
-> [!example] Example §34.4: An Indeterminate Difference
+> [!example] Example §31.4: An Indeterminate Difference
 > Compute $\displaystyle\lim_{x \to 1^+} \Big(\frac{1}{\ln x} - \frac{1}{x - 1}\Big)$.
 >
 > As $x \to 1^+$, $\frac{1}{\ln x} \to \infty$ and $\frac{1}{x - 1} \to \infty$: type $\infty - \infty$. With a common denominator,
@@ -341,7 +341,7 @@ $$
 
 Either way one is led to the indeterminate product $g(x)\ln f(x)$, of type $0 \cdot \infty$. (Both methods were used for differentiating such functions, in [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^rem-22-2|Remark: Method — Logarithmic Differentiation]].) The last step uses the continuity of $e^x$: if $\ln y \to L$, then $y = e^{\ln y} \to e^L$ ([[§12 Continuity#^thm-12-7|Theorem §12.7]]).
 
-> [!example] Example §34.5: Indeterminate Powers
+> [!example] Example §31.5: Indeterminate Powers
 > **(a)** Calculate $\displaystyle\lim_{x \to 0^+} (1 + \sin 4x)^{\cot x}$.
 >
 > As $x \to 0^+$, $1 + \sin 4x \to 1$ and $\cot x \to \infty$: type $1^\infty$. Let $y = (1 + \sin 4x)^{\cot x}$. Then

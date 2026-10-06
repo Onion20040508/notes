@@ -8,7 +8,7 @@ tags: [applied-linear-algebra, hub]
 ![[§28 Determinants as Area or Volume#^thm-28-2]]
 
 ## Treated in
-- [[§28 Determinants as Area or Volume#^thm-28-2|Theorem §28.2: Determinants as Area or Volume]], in [[§27 Cramer’s Rule, Volume, and Linear Transformations]]
+- [[§28 Determinants as Area or Volume#^thm-28-2|Theorem §28.2: Determinants as Area or Volume]], in [[§28 Determinants as Area or Volume]]
 
 ## Its proof uses
 - [[§24 Introduction to Determinants#^thm-24-2|Theorem §24.2: Determinant of a Triangular Matrix]]

@@ -83,7 +83,7 @@ Recall from [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9
 
 Fermat's theorem need not give the *smallest* power of $a$ that is $\equiv 1$: trivially for $a = 1$, and for instance $2^3 = 8 \equiv 1 \pmod 7$, while $p - 1 = 6$.
 
-> [!definition] Definition §24.2: Order Modulo $p$
+> [!definition] Definition §24.1: Order Modulo $p$
 > Let $p$ be prime and $a \not\equiv 0 \pmod p$. The **order of $a$ modulo $p$** is the least positive integer $n$ with $a^n \equiv 1 \pmod p$; it exists because the set of such $n$ contains $p - 1$ ([[§24★ Congruence Modulo a Prime#^thm-24-1|Theorem §24.1]]) and so has a least element (well-ordering, [[§5 The Induction Principle#^cor-5-7|Corollary §5.7]]).
 >
 > *Eccles: §24.1 (text); Problems VI Q13 (order computations)*

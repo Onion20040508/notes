@@ -17,7 +17,7 @@ A basis of a subspace $H$ gives every vector of $H$ unique coordinates, so a bas
 
 The main reason for choosing a basis of a subspace $H$, rather than merely a spanning set, is that each vector of $H$ can then be written in only one way as a linear combination of the basis vectors.
 
-> [!theorem] Proposition §27.1: Unique Representation in a Basis
+> [!theorem] Proposition §22.1: Unique Representation in a Basis
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ be a basis for a subspace $H$. Then each $\mathbf{x}$ in $H$ can be written in exactly one way as $\mathbf{x} = c_1\mathbf{b}_1 + \cdots + c_p\mathbf{b}_p$.
 >
 > *Lay: 2.9 (text)*
@@ -43,7 +43,7 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 
 *Uses:* [[§21 Subspaces of ℝⁿ#^def-21-4|Def. §21.4]], [[§8 Linear Independence#^def-8-1|Def. §8.1]]
 
-> [!definition] Definition §27.1: Coordinates Relative to a Basis
+> [!definition] Definition §22.1: Coordinates Relative to a Basis
 > Suppose $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ is a basis for a subspace $H$. For each $\mathbf{x}$ in $H$, the **coordinates of $\mathbf{x}$ relative to the basis $\mathcal{B}$** are the weights $c_1, \ldots, c_p$ such that $\mathbf{x} = c_1\mathbf{b}_1 + \cdots + c_p\mathbf{b}_p$, and the vector in $\mathbb{R}^p$
 >
 > $$
@@ -57,7 +57,7 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 
 ^def-22-1
 
-> [!example] Example §27.1: Coordinates on a Plane in ℝ³
+> [!example] Example §22.1: Coordinates on a Plane in ℝ³
 > Let $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 6 \\ 2 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}$, $\mathbf{x} = \begin{bmatrix} 3 \\ 12 \\ 7 \end{bmatrix}$ and $\mathcal{B} = \{\mathbf{v}_1, \mathbf{v}_2\}$. Then $\mathcal{B}$ is a basis for $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$, because $\mathbf{v}_1$ and $\mathbf{v}_2$ are not multiples of each other, hence linearly independent. Determine whether $\mathbf{x}$ is in $H$, and if it is, find $[\mathbf{x}]_{\mathcal{B}}$.
 >
 > $\mathbf{x}$ is in $H$ exactly when the vector equation
@@ -92,7 +92,7 @@ The main reason for choosing a basis of a subspace $H$, rather than merely a spa
 
 If a subspace $H$ has a basis of $p$ vectors, then every basis of $H$ consists of exactly $p$ vectors. Lay leaves this to Exercises 27–28 here and proves it for general vector spaces in 4.5 ([[§33 The Dimension of a Vector Space#^thm-33-2|Theorem §33.2]]; rigorously [[§6 Dimension#^ladr-2-34|LADR 2.34]]). So the following definition makes sense.
 
-> [!definition] Definition §27.2: Dimension
+> [!definition] Definition §22.2: Dimension
 > The **dimension** of a nonzero subspace $H$, denoted $\dim H$, is the number of vectors in any basis for $H$. The dimension of the zero subspace $\{\mathbf{0}\}$ is defined to be zero. (The zero subspace has *no* basis, because the zero vector by itself forms a linearly dependent set.)
 >
 > $\mathbb{R}^n$ has dimension $n$: every basis of $\mathbb{R}^n$ consists of $n$ vectors. A plane through $\mathbf{0}$ in $\mathbb{R}^3$ is two-dimensional, and a line through $\mathbf{0}$ is one-dimensional.
@@ -118,7 +118,7 @@ By [[§21 Subspaces of ℝⁿ#^ex-21-4|Example §21.4]], the parametric vector f
 > [!remark]- Connections
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-58|LADR 3.58]] (rank of a matrix over $\mathbf{F}$ as its column rank, with no pivots); Axler proves that it also equals the row rank, [[§9 Matrices#^ladr-3-57|LADR 3.57]], which Lay proves in [[§34 Rank#^thm-34-3|Theorem §34.3]].
 
-> [!example] Example §27.2: Rank and the Dimension of the Null Space
+> [!example] Example §22.2: Rank and the Dimension of the Null Space
 > **(a)** The null space of the matrix $A$ of [[§21 Subspaces of ℝⁿ#^ex-21-4|Example §21.4]] has the basis $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$, one vector for each of the free variables $x_2$, $x_4$, $x_5$. So $\dim \operatorname{Nul} A = 3$. Its pivot columns are columns 1 and 3, so $\operatorname{rank} A = 2$.
 >
 > **(b)** Determine the rank of
@@ -146,7 +146,7 @@ By [[§21 Subspaces of ℝⁿ#^ex-21-4|Example §21.4]], the parametric vector f
 
 Since the number of pivot columns plus the number of nonpivot columns is exactly the number of columns, the dimensions of $\operatorname{Col} A$ and $\operatorname{Nul} A$ are linked.
 
-> [!theorem] Theorem §27.2: The Rank Theorem
+> [!theorem] Theorem §22.2: The Rank Theorem
 > If a matrix $A$ has $n$ columns, then
 >
 > $$
@@ -188,7 +188,7 @@ Since the number of pivot columns plus the number of nonpivot columns is exactly
 
 ^rem-22-2
 
-> [!example] Example §27.3: Null Space, Column Space and the Rank Theorem
+> [!example] Example §22.3: Null Space, Column Space and the Rank Theorem
 > Let $A = \begin{bmatrix} 3 & 0 & -1 \\ 3 & 0 & -1 \\ 4 & 0 & 5 \end{bmatrix}$, a map $\mathbb{R}^3 \to \mathbb{R}^3$. Then
 >
 > $$
@@ -209,7 +209,7 @@ The next theorem is important for applications and is needed in Chapters 5 and 6
 
 **The Basis Theorem** (Lay's Theorem 15). *Let $H$ be a $p$-dimensional subspace of $\mathbb{R}^n$. Any linearly independent set of exactly $p$ elements in $H$ is automatically a basis for $H$. Also, any set of $p$ elements of $H$ that spans $H$ is automatically a basis for $H$.* Proved in [[§33 The Dimension of a Vector Space#^thm-33-5|Theorem §33.5]]; rigorously [[§6 Dimension#^ladr-2-38|LADR 2.38]] and [[§6 Dimension#^ladr-2-42|LADR 2.42]].
 
-> [!example] Example §28.1: Bases, Dimensions and Coordinates
+> [!example] Example §22.4: Bases, Dimensions and Coordinates
 > **(a) Three independent vectors in $\mathbb{R}^3$.** The vectors $(1, 2, 0)$, $(3, 4, 0)$, $(5, 6, 7)$ are linearly independent: the matrix with these columns reduces by $R_2 - 2R_1$ to $\begin{bmatrix} 1 & 3 & 5 \\ 0 & -2 & -4 \\ 0 & 0 & 7 \end{bmatrix}$, with three pivots. (The lecture checks this with a determinant, expanding along row 3 by [[§24 Introduction to Determinants#^thm-24-1|Theorem §24.1]]: $\det = 7 \cdot (1 \cdot 4 - 3 \cdot 2) = -14 \ne 0$.) Since $\dim \mathbb{R}^3 = 3$, the Basis Theorem says they form a basis of $\mathbb{R}^3$, with no need to check spanning. Likewise every basis of $\mathbb{R}^4$ has exactly 4 vectors.
 >
 > **(b) The dimension of a span.** Let $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ with $\mathbf{v}_1 = (2, -8, 6)$, $\mathbf{v}_2 = (3, -7, -1)$, $\mathbf{v}_3 = (-1, 6, -7)$. $H$ is the column space of $A = [\,\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3\,]$, and
@@ -241,7 +241,7 @@ The next theorem is important for applications and is needed in Chapters 5 and 6
 
 The vector space concepts attached to a matrix give six more statements for the Invertible Matrix Theorem, numbered to follow the statements of [[§16 Characterizations of Invertible Matrices#^thm-16-1|Theorem §16.1]].
 
-> [!theorem] Theorem §28.1: The Invertible Matrix Theorem (Continued)
+> [!theorem] Theorem §22.3: The Invertible Matrix Theorem (Continued)
 > Let $A$ be an $n \times n$ matrix. Then the following statements are each equivalent to the statement that $A$ is an invertible matrix.
 >
 > m. The columns of $A$ form a basis of $\mathbb{R}^n$.

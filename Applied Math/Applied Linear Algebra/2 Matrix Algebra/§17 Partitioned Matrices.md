@@ -15,7 +15,7 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 
 ## Partitioned Matrices
 
-> [!definition] Definition §20.1: Partitioned (Block) Matrix
+> [!definition] Definition §17.1: Partitioned (Block) Matrix
 > A **partition** of a matrix $A$ divides it by horizontal and vertical rules into rectangular **blocks** (submatrices). Written in terms of its blocks, $A$ is a **partitioned** or **block matrix**; for instance a $2 \times 3$ block matrix is
 >
 > $$
@@ -28,7 +28,7 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 
 ^def-17-1
 
-> [!example] Example §20.1: A Partition into Six Blocks
+> [!example] Example §17.1: A Partition into Six Blocks
 > The $3 \times 6$ matrix
 >
 > $$
@@ -51,7 +51,7 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 
 ^ex-17-1
 
-> [!theorem] Proposition §20.1: Sums and Scalar Multiples Block by Block
+> [!theorem] Proposition §17.1: Sums and Scalar Multiples Block by Block
 > If $A$ and $B$ are the same size and are partitioned in exactly the same way, then $A + B$, partitioned the same way, has as blocks the (matrix) sums of the corresponding blocks of $A$ and $B$. A scalar multiple $rA$ is also computed block by block: its blocks are $r$ times the blocks of $A$.
 >
 > *Lay: 2.4 (text)*
@@ -67,14 +67,14 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 
 ## Multiplication of Partitioned Matrices
 
-> [!definition] Definition §20.2: Conformable Partitions
+> [!definition] Definition §17.2: Conformable Partitions
 > Partitions of $A$ and $B$ are **conformable for block multiplication** if the column partition of $A$ matches the row partition of $B$: the columns of $A$ are divided into groups of sizes $n_1, \ldots, n_r$ (left to right), and the rows of $B$ into groups of the same sizes $n_1, \ldots, n_r$ (top to bottom).
 >
 > *Lay: 2.4 (text)*
 
 ^def-17-2
 
-> [!theorem] Proposition §20.2: Block Multiplication
+> [!theorem] Proposition §17.2: Block Multiplication
 > If the partitions of $A$ and $B$ are conformable for block multiplication, then $AB$ can be computed by the usual row–column rule as if the blocks were scalars: with $A = [\,A_{st}\,]$ and $B = [\,B_{tu}\,]$ ($t = 1, \ldots, r$), the $(s, u)$-block of $AB$ is
 >
 > $$
@@ -94,7 +94,7 @@ Viewing a matrix as a list of columns has been so useful that it pays to cut mat
 
 ^rem-17-1
 
-> [!example] Example §20.2: A Block Product
+> [!example] Example §17.2: A Block Product
 > Let
 >
 > $$
@@ -139,7 +139,7 @@ The row–column rule for block matrices is the most general way to view a produ
 > AB = \begin{bmatrix} \operatorname{col}_1(A) & \operatorname{col}_2(A) & \cdots & \operatorname{col}_n(A) \end{bmatrix} \begin{bmatrix} \operatorname{row}_1(B) \\ \operatorname{row}_2(B) \\ \vdots \\ \operatorname{row}_n(B) \end{bmatrix} = \operatorname{col}_1(A)\operatorname{row}_1(B) + \cdots + \operatorname{col}_n(A)\operatorname{row}_n(B) . \tag{1}
 > $$
 >
-> Each term is an $m \times p$ outer product ([[§13 Properties of Matrix Multiplication, Powers, and Transposes#^rem-13-4|§13, Remark: Inner and Outer Products]]).
+> Each term is an $m \times p$ outer product ([[§13 Properties of Matrix Multiplication, Powers, and Transposes#^rem-13-3|§13, Remark: Inner and Outer Products]]).
 >
 > *Lay: Theorem 10 (2.4)*
 
@@ -158,7 +158,7 @@ The row–column rule for block matrices is the most general way to view a produ
 
 *Uses:* [[§12 Matrix Operations#^prop-12-4|§12.4]]
 
-> [!example] Example §20.3: A Product as a Sum of Outer Products
+> [!example] Example §17.3: A Product as a Sum of Outer Products
 > Let $A = \begin{bmatrix} -3 & 1 & 2 \\ 1 & -4 & 5 \end{bmatrix}$ and $B = \begin{bmatrix} a & b \\ c & d \\ e & f \end{bmatrix}$. Then
 >
 > $$
@@ -184,7 +184,7 @@ The row–column rule for block matrices is the most general way to view a produ
 
 ## Inverses of Partitioned Matrices
 
-> [!definition] Definition §20.3: Block Upper Triangular and Block Diagonal Matrices
+> [!definition] Definition §17.3: Block Upper Triangular and Block Diagonal Matrices
 > A partitioned matrix of the form
 >
 > $$
@@ -260,7 +260,7 @@ The row–column rule for block matrices is the most general way to view a produ
 
 *Uses:* [[§17 Partitioned Matrices#^prop-17-4|§17.4]]
 
-> [!example] Example §20.4: Two Block Computations
+> [!example] Example §17.4: Two Block Computations
 > **(a)** Show that $\begin{bmatrix} I & 0 \\ A & I \end{bmatrix}$ is invertible and find its inverse (here $A$ is $q \times p$, and the two identity blocks are $I_p$ and $I_q$, so the whole matrix is square).
 >
 > Try $\begin{bmatrix} I & 0 \\ -A & I \end{bmatrix}$: by block multiplication

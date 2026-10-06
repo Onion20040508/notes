@@ -20,6 +20,7 @@ tags: [chapter, calculus]
 - [[§118 Applications of Double Integrals]] — Stewart 15.4
 - [[§119 Surface Area]] — Stewart 15.5
 - [[§120 Triple Integrals]] — Stewart 15.6
+- [[§121 Applications of Triple Integrals]] — Stewart 15.6
 - [[§122 Triple Integrals in Cylindrical Coordinates]] — Stewart 15.7
 - [[§123 Triple Integrals in Spherical Coordinates]] — Stewart 15.8
 - [[§124 Change of Variables in Multiple Integrals]] — Stewart 15.9
@@ -27,6 +28,6 @@ tags: [chapter, calculus]
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
 - [[§115 Double Integrals Over Rectangles#^thm-115-3|Theorem §115.3: Fubini's Theorem]]: 32 later results
-- [[§116 Double Integrals Over General Regions#^thm-116-1|Theorem §116.1: Integrals over Type I Regions]]: 29 later results
+- [[§116 Double Integrals Over General Regions#^thm-116-1|Theorem §116.1: Integrals over Type I Regions]]: 30 later results
 - [[§116 Double Integrals Over General Regions#^thm-116-2|Theorem §116.2: Integrals over Type II Regions]]: 29 later results
 - [[§116 Double Integrals Over General Regions#^thm-116-4|Theorem §116.4: Additivity over Regions]]: 20 later results

@@ -144,7 +144,7 @@ $$
 ^ex-92-2
 
 > [!remark]- Connections
-> - The denominator $1 - 2a\cos\theta + a^2$ is that of the [[§134★ Poisson Integral Formula#^def-134-2|Poisson kernel]], [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]] with $a = r/c$. In 341 the kernel is $\frac{1 - a^2}{1 - 2a\cos\psi + a^2} = 1 + 2\sum_{n\ge1}a^n\cos n\psi$, and (8) reads off its Fourier coefficient: $\frac1\pi\int_{-\pi}^{\pi}\frac{1 - a^2}{1 - 2a\cos\theta + a^2}\cos2\theta\,d\theta = 2a^2$. With $\cos2\theta$ replaced by $1$, the same computation gives $\int_0^{2\pi}\frac{d\theta}{1 - 2a\cos\theta + a^2} = \frac{2\pi}{1 - a^2}$, the statement that the Poisson kernel has average $1$, [[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-2|341 Remark: The Poisson Kernel Is a Weight]].
+> - The denominator $1 - 2a\cos\theta + a^2$ is that of the [[§134★ Poisson Integral Formula#^def-134-2|Poisson kernel]], [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]] with $a = r/c$. In 341 the kernel is $\frac{1 - a^2}{1 - 2a\cos\psi + a^2} = 1 + 2\sum_{n\ge1}a^n\cos n\psi$, and (8) reads off its Fourier coefficient: $\frac1\pi\int_{-\pi}^{\pi}\frac{1 - a^2}{1 - 2a\cos\theta + a^2}\cos2\theta\,d\theta = 2a^2$. With $\cos2\theta$ replaced by $1$, the same computation gives $\int_0^{2\pi}\frac{d\theta}{1 - 2a\cos\theta + a^2} = \frac{2\pi}{1 - a^2}$, the statement that the Poisson kernel has average $1$, [[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-1|341 Remark: The Poisson Kernel Is a Weight]].
 
 > [!example] Example §92.3: The Integral of 1/(5 + 4 sin θ)
 > Evaluate $\displaystyle\int_0^{2\pi}\frac{d\theta}{5 + 4\sin\theta}$.

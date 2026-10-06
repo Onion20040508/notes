@@ -17,7 +17,7 @@ Problems with several interacting parts (two masses joined by springs, the volta
 
 We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, and $x_1' = dx_1/dt$.
 
-> [!example] Example §39.1: Two Models That Are Systems
+> [!example] Example §33.1: Two Models That Are Systems
 > **(a) Two masses, three springs.** Two masses $m_1$, $m_2$ move on a frictionless surface, attached to each other and to two walls by springs with constants $k_1$, $k_2$, $k_3$ (left wall–$m_1$–$m_2$–right wall), and driven by external forces $F_1(t)$, $F_2(t)$. With displacements $x_1$, $x_2$ from equilibrium (positive to the right), the spring between the masses is stretched by $x_2 - x_1$, and Newton's law as in [[§23 Mechanical and Electrical Vibrations#^prop-23-1|Proposition §23.1]] gives
 >
 > $$
@@ -47,7 +47,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ## Higher-Order Equations as Systems
 
-> [!example] Example §39.2: A Spring–Mass Equation as a System
+> [!example] Example §33.2: A Spring–Mass Equation as a System
 > The motion of a certain spring–mass system is described by
 >
 > $$
@@ -76,7 +76,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 *Chain: earlier in [[§25 y″ − y = 0, y″ + 5y′ + 6y = 0, 2t²y″ + 3ty′ − y = 0 and u″ + ⅛u′ + u = 0|Chapter 3]] (the spring of [[§23 Mechanical and Electrical Vibrations#^ex-23-4|Example §23.4]] and [[§24 Forced Periodic Vibrations#^ex-24-2|Example §24.2]]).*
 
-> [!theorem] Proposition §39.1: An nth-Order Equation as a First-Order System
+> [!theorem] Proposition §33.1: An nth-Order Equation as a First-Order System
 > Consider the $n$th order equation
 >
 > $$
@@ -126,7 +126,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ## Solutions and Initial Value Problems
 
-> [!definition] Definition §39.1: System of First-Order Equations
+> [!definition] Definition §33.1: System of First-Order Equations
 > A **system of $n$ first-order differential equations** has the form
 >
 > $$
@@ -137,7 +137,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^def-33-1
 
-> [!definition] Definition §39.2: Solution of a System
+> [!definition] Definition §33.2: Solution of a System
 > A **solution** of (11) on the interval $I: \alpha < t < \beta$ consists of $n$ functions
 >
 > $$
@@ -150,7 +150,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^def-33-2
 
-> [!definition] Definition §39.3: Initial Value Problem for a System
+> [!definition] Definition §33.3: Initial Value Problem for a System
 > Given $n$ **initial conditions**
 >
 > $$
@@ -163,7 +163,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^def-33-3
 
-> [!definition] Definition §39.5: Trajectory
+> [!definition] Definition §33.4: Trajectory
 > A solution (12) is a set of parametric equations in $n$-dimensional space: as $t$ runs through $I$, the point $(\phi_1(t), \ldots, \phi_n(t))$ traces a curve, the **trajectory** or path of a particle moving according to (11). The initial conditions fix its starting point. For $n = 2$ the trajectory lies in the $x_1x_2$-plane, where it is easiest to visualize.
 >
 > *BDP: 7.1 (text), Equations (11)–(13)*
@@ -173,7 +173,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > [!remark]- Connections
 > - A nonlinear system of the form (11) with $n = 2$, and its trajectories in the phase plane: the predator–prey equations [[§71 Predator-Prey Systems#^def-71-1|Calc Def. §71.1]], [[§71 Predator-Prey Systems#^def-71-4|Calc Def. §71.4]], [[§71 Predator-Prey Systems#^def-71-5|Calc Def. §71.5]] (Stewart's treatment).
 
-> [!theorem] Theorem §39.2: Existence and Uniqueness for First-Order Systems
+> [!theorem] Theorem §33.2: Existence and Uniqueness for First-Order Systems
 > Let each of the $n$ functions $F_1, \ldots, F_n$ and the $n^2$ first partial derivatives $\partial F_1/\partial x_1, \ldots, \partial F_1/\partial x_n, \ldots, \partial F_n/\partial x_1, \ldots, \partial F_n/\partial x_n$ be continuous in a region $R$ of $tx_1x_2\cdots x_n$-space defined by $\alpha < t < \beta$, $\alpha_1 < x_1 < \beta_1$, …, $\alpha_n < x_n < \beta_n$, and let the point $(t_0, x_1^0, x_2^0, \ldots, x_n^0)$ be in $R$. Then there is an interval $|t - t_0| < h$ in which there exists a unique solution $x_1 = \phi_1(t), \ldots, x_n = \phi_n(t)$ of the system (11) that also satisfies the initial conditions (13).
 >
 > *BDP: Theorem 7.1.1*
@@ -213,7 +213,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 > [!remark]- Connections
 > - The constant-coefficient homogeneous case $\mathbf{x}' = A\mathbf{x}$ is Lay's starting point, [[§46 Applications to Differential Equations#^def-46-1|235 Def. §46.1]], solved there for diagonalizable $A$ ([[§46 Applications to Differential Equations#^thm-46-3|235 Thm. §46.3]]).
 
-> [!theorem] Theorem §39.3: Existence and Uniqueness for Linear Systems
+> [!theorem] Theorem §33.3: Existence and Uniqueness for Linear Systems
 > If the functions $p_{11}, p_{12}, \ldots, p_{nn}, g_1, \ldots, g_n$ are continuous on an open interval $I: \alpha < t < \beta$, then there exists a unique solution $x_1 = \phi_1(t), \ldots, x_n = \phi_n(t)$ of the system (14) that also satisfies the initial conditions (13), where $t_0$ is any point in $I$ and $x_1^0, \ldots, x_n^0$ are any prescribed numbers. Moreover, the solution exists throughout the interval $I$.
 >
 > *BDP: Theorem 7.1.2*
@@ -224,7 +224,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 In contrast with the nonlinear case, for a linear system existence and uniqueness hold on the *whole* interval where the hypotheses hold, and the initial values $x_1^0, \ldots, x_n^0$ at $t = t_0$ are completely arbitrary; in [[§33 Introduction to Systems of First-Order Linear Equations#^thm-33-2|Theorem §33.2]] the initial point must lie in the region $R$. The rest of Chapter 7 is about linear systems; nonlinear systems are the subject of BDP's Chapters 8 and 9.
 
-> [!example] Example §39.3: Differences of Solutions of a Nonhomogeneous System
+> [!example] Example §33.3: Differences of Solutions of a Nonhomogeneous System
 > Let $x = x_1(t)$, $y = y_1(t)$ and $x = x_2(t)$, $y = y_2(t)$ be any two solutions of the linear nonhomogeneous system
 >
 > $$

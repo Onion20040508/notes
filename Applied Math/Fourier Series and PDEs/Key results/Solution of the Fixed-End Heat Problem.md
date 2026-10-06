@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, hub]
 - [[§25 Example꞉ Fixed End Temperatures#^thm-25-5|Theorem §25.5: Solution of the Fixed-End Problem]], in [[§25 Example꞉ Fixed End Temperatures]]
 
 ## Its proof uses
-- [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-3|Definition §11.3: Half-Range Expansions; Fourier Sine and Cosine Series]]
+- [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-4|Definition §11.4: Fourier Sine Series]]
 - [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1: Convergence of Fourier Series]]
 - [[§14 Operations on Fourier Series#^thm-14-7|Theorem §14.7: Smoothness from the Coefficients]]
 - [[§14 Operations on Fourier Series#^prop-14-8|Proposition §14.8: Bounded Coefficients]]

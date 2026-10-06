@@ -70,7 +70,7 @@ graph TD
   C2 -.->|6| X2
   C3 -.->|4| X6
   C4 -.->|4| X8
-  C4 -.->|28| X10
+  C4 -.->|30| X10
   C4 -.->|11| X4
   C5 -.->|12| X8
   C5 -.->|5| X1
@@ -95,39 +95,39 @@ graph TD
 - [[· 7★ Numerical Methods]]
 
 ## Central results
-- [[Green's Function for Boundary Value Problems]] (§5.1)
-- [[Convergence Theorem for Fourier Series]] (§8.1)
-- [[Uniform Convergence of Fourier Series]] (§9.3)
-- [[Parseval's Equality for Fourier Series]] (§11.4)
-- [[Fourier Integral Theorem]] (§14.1)
-- [[Solution of the Fixed-End Heat Problem]] (§19.5)
-- [[Sturm–Liouville Orthogonality Theorem]] (§23.2)
-- [[Convergence of Eigenfunction Expansions]] (§24.2)
-- [[Heat Kernel Solution of the Infinite Rod]] (§27.3)
-- [[Series Solution of the Vibrating String]] (§30.2)
-- [[d'Alembert's Solution of the Wave Equation]] (§31.2)
-- [[Laplacian in Polar Coordinates]] (§35.3)
-- [[Dirichlet Problem in a Disk]] (§39.2)
-- [[Poisson Integral Formula]] (§39.3)
-- [[Mean Value Property of Harmonic Functions]] (§39.4)
-- [[Maximum Principle for Laplace's Equation]] (§39.5)
-- [[General Solution of Bessel's Equation]] (§45.5)
-- [[Orthogonality of Legendre Polynomials]] (§49.5)
-- [[Rodrigues' Formula]] (§49.6)
-- [[Heaviside's Expansion Formula]] (§52.2)
+- [[Green's Function for Boundary Value Problems]] (§7.1)
+- [[Convergence Theorem for Fourier Series]] (§12.1)
+- [[Uniform Convergence of Fourier Series]] (§13.3)
+- [[Parseval's Equality for Fourier Series]] (§15.4)
+- [[Fourier Integral Theorem]] (§18.1)
+- [[Solution of the Fixed-End Heat Problem]] (§25.5)
+- [[Sturm–Liouville Orthogonality Theorem]] (§29.2)
+- [[Convergence of Eigenfunction Expansions]] (§30.2)
+- [[Heat Kernel Solution of the Infinite Rod]] (§33.3)
+- [[Series Solution of the Vibrating String]] (§38.2)
+- [[d'Alembert's Solution of the Wave Equation]] (§39.2)
+- [[Laplacian in Polar Coordinates]] (§44.3)
+- [[Dirichlet Problem in a Disk]] (§48.2)
+- [[Poisson Integral Formula]] (§49.1)
+- [[Mean Value Property of Harmonic Functions]] (§49.2)
+- [[Maximum Principle for Laplace's Equation]] (§49.3)
+- [[General Solution of Bessel's Equation]] (§55.5)
+- [[Orthogonality of Legendre Polynomials]] (§60.5)
+- [[Rodrigues' Formula]] (§60.6)
+- [[Heaviside's Expansion Formula]] (§65.2)
 
 ## Course record (MAT 341, Fall 2024)
 Two lectures a week (handwritten lecture notes, weeks 1–13; week 11 missing), weekly homework (30%), two midterms (20% each: 1.1–1.5, 2.1–2.3; and 2.4–2.10, 1.9, 3.1–3.4), final (30%, cumulative).
 
 | Weeks | Sections | Notes |
 |---|---|---|
-| 1–3 | 1.1–1.5 Fourier series, 2.1 | §9–§14, §22 |
-| 3–6 | 2.1–2.6 heat equation, 1.9 Fourier integral | §22–§28, §18 |
-| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod | §29–§32 |
-| 9–10 | 3.1–3.4 wave equation, d'Alembert | §37–§40 |
-| 10–13 | 4.1–4.5 potential equation, 5.2–5.3 two-dimensional heat | §44–§48, §52–§53 |
+| 1–3 | 1.1–1.5 Fourier series, 2.1 | §6–§10, §17 |
+| 3–6 | 2.1–2.6 heat equation, 1.9 Fourier integral | §17–§22, §14 |
+| 7–8 | 2.7–2.10 Sturm–Liouville, eigenfunction series, semi-infinite rod | §23–§26 |
+| 9–10 | 3.1–3.4 wave equation, d'Alembert | §29–§32 |
+| 10–13 | 4.1–4.5 potential equation, 5.2–5.3 two-dimensional heat | §35–§39, §42–§43 |
 
 Examples marked *Source: 341 …* come from the lectures, homework, midterms and practice problems.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Complex Variables]] (57), [[Multivariable Analysis]] (37), [[Functional Analysis]] (33), [[Applied Linear Algebra]] (32), [[Calculus]] (30), [[Single Variable Analysis]] (29), [[Ordinary Differential Equations]] (21), [[Linear Algebra]] (20), [[Measure Theory]] (13).
+Number of *Connections* links from these notes to each other subject: [[Complex Variables]] (59), [[Multivariable Analysis]] (37), [[Functional Analysis]] (33), [[Applied Linear Algebra]] (32), [[Calculus]] (30), [[Single Variable Analysis]] (29), [[Ordinary Differential Equations]] (21), [[Linear Algebra]] (20), [[Measure Theory]] (13).

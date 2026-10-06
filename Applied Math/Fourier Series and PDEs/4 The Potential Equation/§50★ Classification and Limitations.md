@@ -28,7 +28,7 @@ The heat features are those of [[§25 Example꞉ Fixed End Temperatures#^thm-25-
 
 ## Classification
 
-> [!definition] Definition §62.1: Elliptic, Parabolic and Hyperbolic Equations
+> [!definition] Definition §50.1: Elliptic, Parabolic and Hyperbolic Equations
 > The most general second-order linear partial differential equation in two variables is
 >
 > $$
@@ -52,7 +52,7 @@ The heat features are those of [[§25 Example꞉ Fixed End Temperatures#^thm-25-
 
 The classification determines important features of the solution, and also dictates the method of attack when numerical techniques are used ([[§71★ Potential Equation|§71★]], [[§69★ Heat Problems|§69★]], [[§70★ Wave Equation|§70★]]).
 
-> [!example] Example §62.1: Heat, Wave and Potential Equations
+> [!example] Example §50.1: Heat, Wave and Potential Equations
 > **Heat.** $u_{xx} = \frac1ku_t$: with $\xi = x$, $\eta = t$, $A = 1$, $B = 0$, $C = 0$, so $B^2 - 4AC = 0$: **parabolic**.
 >
 > **Wave.** $u_{xx} = \frac{1}{c^2}u_{tt}$, that is, $u_{xx} - \frac{1}{c^2}u_{tt} = 0$: $A = 1$, $B = 0$, $C = -1/c^2$, so $B^2 - 4AC = 4/c^2 > 0$: **hyperbolic**.
@@ -80,7 +80,7 @@ The question naturally arises whether separation of variables works on all equat
 
 ^rem-50-1
 
-> [!example] Example §62.2: An Equation of Mixed Type That Does Not Separate
+> [!example] Example §50.2: An Equation of Mixed Type That Does Not Separate
 > Consider
 >
 > $$
@@ -106,14 +106,14 @@ The question naturally arises whether separation of variables works on all equat
 
 The region in which the solution is to be found also limits the applicability of the method.
 
-> [!definition] Definition §62.2: Generalized Rectangle
+> [!definition] Definition §50.2: Generalized Rectangle
 > A **generalized rectangle** is a region bounded by coordinate curves of the coordinate system of the partial differential equation. Put another way, the region is described by inequalities on the coordinates, whose endpoints are fixed quantities.
 >
 > *Powers: 4.6 (text)*
 
 ^def-50-2
 
-> [!example] Example §62.3: Regions Used So Far
+> [!example] Example §50.3: Regions Used So Far
 > The regions in which equations were solved in Chapters 2–4 are described by the following sets of inequalities:
 >
 > | Region | Where |

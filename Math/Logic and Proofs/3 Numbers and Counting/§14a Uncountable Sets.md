@@ -86,8 +86,7 @@ Composites of injections are injections, so $|X| \le |Y|$ and $|Y| \le |Z|$ give
 > [!remark]- Remark: The Continuum Hypothesis
 > Is there a set of size strictly between $\Z^+$ and $\R$ (the "continuum")? In 1878 Cantor conjectured not: *every uncountable subset $X \subseteq \R$ has $|X| = |\R|$*. This **continuum hypothesis** can be neither proved (Cohen, 1963) nor disproved (Gödel, 1938) from the usual axioms of set theory, so there are consistent versions of set theory in which it is true and others in which it is false.
 
-^rem-14a-3
-
+^rem-14a-1
 The other natural question is whether there is a set larger than $\R$. There is, and every set has a larger one: its power set.
 
 > [!theorem] Theorem §14a.3: Cantor's Theorem

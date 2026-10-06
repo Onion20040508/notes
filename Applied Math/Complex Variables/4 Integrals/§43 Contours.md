@@ -32,14 +32,14 @@ Integrals of functions of a complex variable are taken along curves in the plane
 
 ^def-43-1
 
-> [!definition] Definition §43.4: Simple Arc
+> [!definition] Definition §43.2: Simple Arc
 > The arc $C$ is a **simple arc**, or **Jordan arc**, if it does not cross itself, that is, if $z(t_1) \ne z(t_2)$ when $t_1 \ne t_2$.
 >
 > *B&C: Sec. 43 (text)*
 
 ^def-43-2
 
-> [!definition] Definition §43.5: Simple Closed Curve
+> [!definition] Definition §43.3: Simple Closed Curve
 > When an arc $C$ is simple except that $z(b) = z(a)$, it is a **simple closed curve**, or **Jordan curve**. Such a curve is **positively oriented** when it is described in the counterclockwise direction.
 >
 > *B&C: Sec. 43 (text)*
@@ -105,7 +105,7 @@ The same set of points can make up different arcs.
 
 The parametric representation of a given arc is not unique; the parameter interval can be changed to any other interval.
 
-> [!definition] Definition §43.7: Change of Parameter
+> [!definition] Definition §43.4: Change of Parameter
 > Let $C$ be given by (2), and let
 >
 > $$
@@ -174,7 +174,7 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 
 *Uses:* [[§41 Derivatives of Functions w(t)#^def-41-1|Def. §41.1]], [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]] (chain rule)
 
-> [!definition] Definition §43.9: Differentiable Arc
+> [!definition] Definition §43.5: Differentiable Arc
 > Suppose that the components $x'(t)$ and $y'(t)$ of the derivative
 >
 > $$

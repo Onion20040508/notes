@@ -19,6 +19,7 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§70★ Wave Equation]] — Powers 7.3 ★
 - [[§71★ Potential Equation]] — Powers 7.4 ★
 - [[§72★ Two-Dimensional Problems]] — Powers 7.5 ★
+- [[§73★ The Tent Function]] — Powers 7.5 ★
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

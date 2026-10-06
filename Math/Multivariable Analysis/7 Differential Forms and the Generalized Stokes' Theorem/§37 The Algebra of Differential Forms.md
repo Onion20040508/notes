@@ -140,7 +140,7 @@ We can now formalize the computation from [[§36 Introduction to Differential Fo
 > [!remark]- Connections
 > - The coefficients of $\Phi^*\omega$ are $k \times k$ minors of the Jacobian, i.e. determinants ([[§37 Determinants#^ladr-9-46|LADR 9.46]]); in the top-degree case $k = n$ this is the signed volume factor $\det J$, whose absolute value is the volume distortion ([[§37 Determinants#^ladr-9-61|LADR 9.61]], [[§25 Change of Variables on General Domains#^prop-25-5|Proposition §25.5]]).
 > - Pulling back and then applying $d$ is how the classical theorems become one statement: [[Generalized Stokes' Theorem|Theorem §40.1]].
-> - On a manifold the same substitution, $dx^i = \sum_j \frac{\partial x^i}{\partial y^j}\,dy^j$, is how covectors change between charts: [[§42 The Cotangent Bundle#^prop-42-2|591 Prop. §42.2]].
+> - On a manifold the same substitution, $dx^i = \sum_j \frac{\partial x^i}{\partial y^j}\,dy^j$, is how covectors change between charts: [[§45 The Cotangent Bundle#^prop-45-2|591 Prop. §45.2]].
 
 > [!remark] Remark: Clarification of Terms
 > The ambient coordinates $(x_1, \ldots, x_n)$ are the standard coordinates on $\mathbb{R}^n$ — the space the form lives in. The parameter coordinates $(u_1, \ldots, u_k)$ are the coordinates on $D$ — the space we integrate over. The parametrization $\Phi$ is the bridge: it tells us, for each point in $D$, where it sits in $\mathbb{R}^n$. You have been using parametrizations all semester:

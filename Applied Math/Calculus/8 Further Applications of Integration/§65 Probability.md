@@ -15,7 +15,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ## Probability Density Functions
 
-> [!definition] Definition §75.1: Continuous Random Variable
+> [!definition] Definition §65.1: Continuous Random Variable
 > A **continuous random variable** is a quantity whose values range over an interval of real numbers, such as the cholesterol level, the height or the battery lifetime of an individual chosen at random (even if it is only measured or recorded to the nearest integer). For a random variable $X$, the probability that $X$ lies between $a$ and $b$ is written
 >
 > $$
@@ -28,7 +28,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^def-65-1
 
-> [!definition] Definition §75.2: Probability Density Function
+> [!definition] Definition §65.2: Probability Density Function
 > Every continuous random variable $X$ has a **probability density function** $f$. This means that the probability that $X$ lies between $a$ and $b$ is the integral of $f$ from $a$ to $b$:
 >
 > $$
@@ -41,7 +41,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^def-65-2
 
-> [!theorem] Proposition §75.1: The Two Properties of a Density
+> [!theorem] Proposition §65.1: The Two Properties of a Density
 > The probability density function $f$ of a random variable $X$ satisfies
 >
 > $$
@@ -67,7 +67,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^rem-65-2
 
-> [!example] Example §75.1: Checking a Density
+> [!example] Example §65.1: Checking a Density
 > Let $f(x) = 0.006x(10 - x)$ for $0 \le x \le 10$ and $f(x) = 0$ for all other values of $x$.
 > (a) Verify that $f$ is a probability density function. (b) Find $P(4 \le X \le 8)$.
 >
@@ -92,7 +92,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ![[m233-56-1.svg]]
 *The density of [[§65 Probability#^ex-65-1|Example §65.1]]. The whole area under the graph is $1$ (all outcomes together), and the probability $P(4 \le X \le 8) = 0.544$ is the shaded part of it. The graph is $0$ outside $[0, 10]$: the variable never takes values there.*
 
-> [!example] Example §75.2: The Form of an Exponential Density
+> [!example] Example §65.2: The Form of an Exponential Density
 > Waiting times and equipment failure times are commonly modeled by exponentially decreasing probability density functions. Find the exact form of such a function.
 >
 > Let $t$ (in minutes) be the time you wait on hold before an agent answers your call, placed at time $t = 0$, and $f$ its density. By [[§65 Probability#^def-65-2|Definition §65.2]], $\int_0^2 f(t)\,dt$ is the probability that an agent answers within the first two minutes, and $\int_4^5 f(t)\,dt$ the probability that the call is answered during the fifth minute.
@@ -159,7 +159,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^def-65-4
 
-> [!theorem] Proposition §75.2: The Mean Is the Balance Point
+> [!theorem] Proposition §65.2: The Mean Is the Balance Point
 > Let $\mathscr{R}$ be the region under the graph of a density $f$. The $x$-coordinate of the centroid of $\mathscr{R}$ is the mean $\mu$. So a thin plate in the shape of $\mathscr{R}$ balances at a point on the vertical line $x = \mu$.
 >
 > *Stewart: 8.5 (text)*
@@ -179,7 +179,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 *Uses:* [[§65 Probability#^prop-65-1|§65.1]], [[§65 Probability#^def-65-4|Def. §65.4]], [[§63 Moments and Centers of Mass#^thm-63-3|§63.3]]
 
-> [!example] Example §75.3: The Mean of an Exponential Density
+> [!example] Example §65.3: The Mean of an Exponential Density
 > Find the mean of the exponential distribution of [[§65 Probability#^ex-65-2|Example §65.2]], $f(t) = 0$ for $t < 0$ and $f(t) = ce^{-ct}$ for $t \ge 0$.
 >
 > By [[§65 Probability#^def-65-4|Definition §65.4]],
@@ -221,7 +221,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^def-65-5
 
-> [!example] Example §75.4: Waiting on Hold
+> [!example] Example §65.4: Waiting on Hold
 > Suppose the average waiting time for a customer's call to be answered by a customer service agent is five minutes, and that an exponential distribution is appropriate.
 > (a) Find the probability that a call is answered during the first minute.
 > (b) Find the probability that a customer waits on hold for more than five minutes.
@@ -274,7 +274,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^def-65-6
 
-> [!theorem] Proposition §75.3: The Normal Density Is a Density with Mean μ
+> [!theorem] Proposition §65.3: The Normal Density Is a Density with Mean μ
 > For every $\mu$ and every $\sigma > 0$, the function $f$ of [[§65 Probability#^def-65-6|Definition §65.6]] is a probability density function,
 >
 > $$
@@ -318,7 +318,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 
 ^rem-65-5
 
-> [!example] Example §75.5: IQ Scores
+> [!example] Example §65.5: IQ Scores
 > Intelligence Quotient (IQ) scores are distributed normally with mean $100$ and standard deviation $15$.
 > (a) What percentage of the population has an IQ score between $85$ and $115$?
 > (b) What percentage of the population has an IQ above $140$?

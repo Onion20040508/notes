@@ -17,7 +17,7 @@ The tangent and velocity problems of [[§7 The Tangent and Velocity Problems|§7
 
 For $f(x) = (x - 1)/(x^2 - 1)$, the values at $x = 0.9, 0.99, 0.999$ are $0.526316$, $0.502513$, $0.500250$, and at $x = 1.1, 1.01, 1.001$ they are $0.476190$, $0.497512$, $0.499750$. The closer $x$ is to $1$, from either side, the closer $f(x)$ is to $0.5$, although $f(1)$ is not defined. (Indeed $f(x) = 1/(x + 1)$ for $x \ne \pm 1$.) We write $\lim_{x \to 1} f(x) = 0.5$.
 
-> [!definition] Definition §10.1: The Limit of a Function (Intuitive)
+> [!definition] Definition §8.1: The Limit of a Function (Intuitive)
 > Suppose $f(x)$ is defined when $x$ is near the number $a$, that is, on some open interval that contains $a$, except possibly at $a$ itself. We write
 >
 > $$
@@ -40,7 +40,7 @@ For $f(x) = (x - 1)/(x^2 - 1)$, the values at $x = 0.9, 0.99, 0.999$ are $0.5263
 > [!remark]- Connections
 > - Rigorous treatment: 451 defines the limit through sequences, [[§20 Limits of Functions#^def-20-1|451 Def. §20.1]] ($f(x_n) \to L$ for every sequence $x_n \to a$ with $x_n \ne a$), and gives the equivalent $\varepsilon$–$\delta$ form in [[§20 Limits of Functions#^rem-20-1|451 Remark: The epsilon-delta version]].
 
-> [!example] Example §9.1: Guessing a Limit from a Table
+> [!example] Example §8.1: Guessing a Limit from a Table
 > **(a)** Estimate $\displaystyle\lim_{t \to 0} \frac{\sqrt{t^2 + 9} - 3}{t^2}$.
 >
 > | $t$ | $\pm 1.0$ | $\pm 0.5$ | $\pm 0.1$ | $\pm 0.05$ | $\pm 0.01$ |
@@ -65,7 +65,7 @@ For $f(x) = (x - 1)/(x^2 - 1)$, the values at $x = 0.9, 0.99, 0.999$ are $0.5263
 
 ^ex-8-1
 
-> [!example] Example §10.1: When Guessing Fails
+> [!example] Example §8.2: When Guessing Fails
 > **(a)** Find $\displaystyle\lim_{x \to 0} \Big(x^3 + \frac{\cos 5x}{10{,}000}\Big)$.
 >
 > | $x$ | $1$ | $0.5$ | $0.1$ | $0.05$ | $0.01$ | $0.005$ | $0.001$ |
@@ -126,7 +126,7 @@ The Heaviside function $H(t) = 0$ for $t < 0$ and $H(t) = 1$ for $t \ge 0$ (a cu
 
 [[§8 The Limit of a Function#^def-8-2|Definition §8.2]] differs from [[§8 The Limit of a Function#^def-8-1|Definition §8.1]] only in requiring $x < a$ (or $x > a$). Comparing the two shows that $\lim_{x \to a} f(x) = L$ holds exactly when both one-sided limits exist and equal $L$. This is [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-3|Theorem §10.3]], proved there from the precise definitions.
 
-> [!example] Example §10.2: Reading One-Sided Limits from a Graph
+> [!example] Example §8.3: Reading One-Sided Limits from a Graph
 > Let
 >
 > $$
@@ -154,7 +154,7 @@ The Heaviside function $H(t) = 0$ for $t < 0$ and $H(t) = 1$ for $t \ge 0$ (a cu
 
 A limit at $a$ fails to exist if the one-sided limits differ ([[§8 The Limit of a Function#^ex-8-3|Example §8.3]](c)), or if the values oscillate without settling down ([[§8 The Limit of a Function#^ex-8-2|Example §8.2]](b)). A third way is that the values grow without bound.
 
-> [!example] Example §10.3: Values That Grow Without Bound
+> [!example] Example §8.4: Values That Grow Without Bound
 > Find $\displaystyle\lim_{x \to 0} \frac{1}{x^2}$ if it exists.
 >
 > | $x$ | $\pm 1$ | $\pm 0.5$ | $\pm 0.2$ | $\pm 0.1$ | $\pm 0.05$ | $\pm 0.01$ | $\pm 0.001$ |
@@ -229,7 +229,7 @@ To describe the behavior in [[§8 The Limit of a Function#^ex-8-4|Example §8.4]
 
 ^def-8-6
 
-> [!example] Example §10.4: Finding Vertical Asymptotes
+> [!example] Example §8.5: Finding Vertical Asymptotes
 > **(a)** Does the curve $y = \dfrac{2x}{x - 3}$ have a vertical asymptote?
 >
 > The candidate is $x = 3$, where the denominator is $0$; examine the one-sided limits there. If $x$ is close to $3$ but larger, then $x - 3$ is a small positive number and $2x$ is close to $6$, so $2x/(x - 3)$ is a large *positive* number (at $x = 3.01$ it is $6.02/0.01 = 602$). If $x$ is close to $3$ but smaller, $x - 3$ is a small negative number while $2x$ is still close to $6$, so the quotient is a large *negative* number. Thus
@@ -256,7 +256,7 @@ To describe the behavior in [[§8 The Limit of a Function#^ex-8-4|Example §8.4]
 
 ^ex-8-5
 
-> [!theorem] Theorem §9.1: The Logarithm Near 0
+> [!theorem] Theorem §8.1: The Logarithm Near 0
 > $$
 > \lim_{x \to 0^+} \ln x = -\infty ,
 > $$

@@ -24,10 +24,10 @@ tags: [real-analysis, hub]
 - [[§7 Structure of Open Sets#^lem-7-1|Lemma §7.1]]
 
 ## Used in (Functional Analysis)
-- [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|Lemma §5.1: One-Step Extension]]
+- [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|Lemma §6.1: One-Step Extension]]
 
 ## Connections
 - This is the axiom that separates $\mathbb{R}$ from $\mathbb{Q}$ ([[§4 The Completeness Axiom#^ex-4-4|Example §4.4]] shows that $\mathbb{Q}$ fails it). [[§6 Dedekind Cuts#^prop-6-5|§6]] constructs a model of it with Dedekind cuts; ★ [[§6★ ℝ from Cauchy Sequences of Rationals|§6★]] constructs another from rational Cauchy sequences ([[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-11|Theorem §6★.11]]) and shows the model is unique up to isomorphism ([[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|Corollary §6★.14]]).
 - Equivalent forms met later in the course: [[Monotone Convergence Theorem]], [[Bolzano–Weierstrass Theorem]], and Cauchy sequences converging ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]).
-- Metric-space version: completeness of a metric space ([[§13 Some Topological Concepts in Metric Spaces#^def-13-4|Def. §13.4]]), which is what Hilbert spaces ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) add to inner product spaces ([[§20 Definition and Examples#^def-20-1|556 Def. §20.1]]).
+- Metric-space version: completeness of a metric space ([[§13 Some Topological Concepts in Metric Spaces#^def-13-4|Def. §13.4]]), which is what Hilbert spaces ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) add to inner product spaces ([[§22 Definition and Examples#^def-22-1|556 Def. §22.1]]).
 - **Also in [[Calculus]]:** [[§81 Monotonic and Bounded Sequences#^def-81-4|Calc Def. §81.4]] (Stewart's statement, where it yields the Monotonic Sequence Theorem).

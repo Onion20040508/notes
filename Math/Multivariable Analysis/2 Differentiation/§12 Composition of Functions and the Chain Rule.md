@@ -27,7 +27,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 
 ## Continuity of Composition
 
-> [!theorem] Theorem §15.1: Continuity of Composition
+> [!theorem] Theorem §12.1: Continuity of Composition
 > Suppose $\varphi, \psi$ are continuous at $(a, b)$, and $f$ is continuous at $(\varphi(a,b), \psi(a,b))$. Then
 >
 > $$
@@ -86,7 +86,7 @@ Recall the single-variable [[§28 Basic Properties of the Derivative#^thm-28-3|c
 
 ## The Chain Rule
 
-> [!theorem] Theorem §15.2: Multivariable Chain Rule
+> [!theorem] Theorem §12.2: Multivariable Chain Rule
 > Let $g(x,y) = f(\varphi(x,y), \psi(x,y))$. Suppose:
 > - $f_\xi, f_\eta$ are continuous in a neighborhood of $(\varphi(x_0, y_0), \psi(x_0, y_0))$
 > - $\varphi_x, \varphi_y, \psi_x, \psi_y$ are continuous in a neighborhood of $(x_0, y_0)$

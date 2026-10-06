@@ -17,7 +17,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 ## The Unit Step Function
 
-> [!definition] Definition §34.2: Unit Step Function
+> [!definition] Definition §28.1: Unit Step Function
 > For $c \ge 0$, the **unit step function** or **Heaviside function** is
 >
 > $$
@@ -33,7 +33,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 > [!remark]- Connections
 > - $u_c$ has a jump discontinuity at $c$ in the sense of [[§12 Continuity#^def-12-3|Calc Def. §12.3]]: the one-sided limits $0$ and $1$ exist and differ; it is continuous from the right there ([[§12 Continuity#^def-12-4|Calc Def. §12.4]]).
 
-> [!example] Example §34.1: Piecewise Functions as Sums of Steps
+> [!example] Example §28.1: Piecewise Functions as Sums of Steps
 > **(a) A rectangular pulse.** Let $h(t) = u_\pi(t) - u_{2\pi}(t)$, $t \ge 0$. From (1),
 >
 > $$
@@ -77,7 +77,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 ^rem-28-1
 
-> [!theorem] Theorem §34.1: Transform of the Unit Step
+> [!theorem] Theorem §28.1: Transform of the Unit Step
 > For $c \ge 0$,
 >
 > $$
@@ -105,7 +105,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 ## Translations: the Shift in t
 
-> [!definition] Definition §34.3: Translation of a Function
+> [!definition] Definition §28.2: Translation of a Function
 > For $f$ defined on $t \ge 0$ and $c \ge 0$, the function
 >
 > $$
@@ -118,7 +118,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 ^def-28-2
 
-> [!theorem] Theorem §34.2: Laplace Transform of a Translation
+> [!theorem] Theorem §28.2: Laplace Transform of a Translation
 > If $F(s) = \mathcal{L}\{f(t)\}$ exists for $s > a \ge 0$, and if $c$ is a positive constant, then
 >
 > $$
@@ -158,7 +158,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^{-cs}/s$ again, in agreement with [[§28 Step Functions#^thm-28-1|Theorem §28.1]].
 
-> [!example] Example §34.2: Transforms of Piecewise Functions
+> [!example] Example §28.2: Transforms of Piecewise Functions
 > **(a)** Find $\mathcal{L}\{f(t)\}$ for
 >
 > $$
@@ -211,7 +211,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 
 ^rem-28-2
 
-> [!example] Example §34.3: Inverse Transforms of Delayed Functions
+> [!example] Example §28.3: Inverse Transforms of Delayed Functions
 > **(a)** Find $\mathcal{L}^{-1}\Big\{\dfrac{1 - e^{-2s}}{s^2}\Big\}$ and graph it. By linearity and [[§28 Step Functions#^thm-28-2|Theorem §28.2]] with $g(t) = \mathcal{L}^{-1}\{1/s^2\} = t$,
 >
 > $$
@@ -253,7 +253,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 
 ## Exponential Multipliers: the Shift in s
 
-> [!theorem] Theorem §34.3: Multiplication by an Exponential
+> [!theorem] Theorem §28.3: Multiplication by an Exponential
 > If $F(s) = \mathcal{L}\{f(t)\}$ exists for $s > a \ge 0$, and if $c$ is a constant, then
 >
 > $$
@@ -299,7 +299,7 @@ With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^
 
 ^rem-28-3
 
-> [!example] Example §34.4: Completing the Square
+> [!example] Example §28.4: Completing the Square
 > **(a)** $G(s) = \dfrac{1}{s^2 - 4s + 5} = \dfrac{1}{(s - 2)^2 + 1} = F(s - 2)$ with $F(s) = \dfrac{1}{s^2 + 1} = \mathcal{L}\{\sin t\}$. By [[§28 Step Functions#^thm-28-3|Theorem §28.3]], $\mathcal{L}^{-1}\{G(s)\} = e^{2t}\sin t$.
 >
 > **(b)** $\mathcal{L}^{-1}\Big\{\dfrac{s + 11}{s^2 + 6s + 13}\Big\}$. Here $s^2 + 6s + 13 = (s + 3)^2 + 2^2$ and $s + 11 = (s + 3) + 8$, so

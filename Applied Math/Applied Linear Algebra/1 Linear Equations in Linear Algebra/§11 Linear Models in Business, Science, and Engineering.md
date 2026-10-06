@@ -15,7 +15,7 @@ Three linear models, each a vector or matrix equation: a diet assembled from foo
 
 ## Constructing a Nutritious Weight-Loss Diet
 
-> [!example] Example §12.1: The Cambridge Diet
+> [!example] Example §11.1: The Cambridge Diet
 > Three ingredients of the Cambridge Diet supply the following nutrients per 100 g (one unit):
 >
 > | Nutrient | Nonfat milk | Soy flour | Whey | Supplied by the diet in one day |
@@ -53,7 +53,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ## Linear Equations and Electrical Networks
 
-> [!definition] Definition §12.3: Ohm's Law
+> [!definition] Definition §11.1: Ohm's Law
 > In an electrical network, a voltage source such as a battery forces a current through the network. **Ohm's law:** the voltage drop across a resistor is
 >
 > $$
@@ -66,21 +66,21 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ^def-11-1
 
-> [!definition] Definition §12.4: Loop Current
+> [!definition] Definition §11.2: Loop Current
 > A **loop current** is assigned to each closed loop, in an arbitrarily chosen direction; a negative value means the actual flow is opposite to the chosen direction. A battery counts positive if the chosen direction runs from its positive (longer) side around to its negative (shorter) side, negative otherwise.
 >
 > *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
 
 ^def-11-2
 
-> [!definition] Definition §12.5: Kirchhoff's Voltage Law
+> [!definition] Definition §11.3: Kirchhoff's Voltage Law
 > **Kirchhoff's voltage law.** The algebraic sum of the $RI$ voltage drops in one direction around a loop equals the algebraic sum of the voltage sources in the same direction around the loop.
 >
 > *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
 
 ^def-11-3
 
-> [!definition] Definition §13.1: Kirchhoff's Current Law
+> [!definition] Definition §11.4: Kirchhoff's Current Law
 > **Kirchhoff's current law** (used for branch currents): the current in a branch is the algebraic sum of the loop currents passing through it.
 >
 > *Lay: 1.10, Kirchhoff's Voltage Law; 1.10 (text)*
@@ -90,7 +90,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 > [!remark]- Connections
 > - The physics of these laws (conservation of energy around a loop, of charge at a junction): [[§A6.3 Kirchhoff's Rules]] in Electromagnetism; Ohm's law in [[§A5.3 Resistivity, Resistance and Ohm's Law]].
 
-> [!example] Example §12.2: Loop Currents in a Three-Loop Network
+> [!example] Example §11.2: Loop Currents in a Three-Loop Network
 > Lay's Figure 1 is a ladder of three loops, one above another, all loop currents $I_1, I_2, I_3$ chosen counterclockwise:
 > - loop 1 (top): a 30-volt battery and resistors of $4\,\Omega$, $4\,\Omega$, and $3\,\Omega$ in the branch $AB$ shared with loop 2;
 > - loop 2 (middle): branch $AB$ ($3\,\Omega$), two $1\,\Omega$ resistors on the sides, and the branch $CD$ shared with loop 3, containing a $1\,\Omega$ resistor and a 5-volt battery;
@@ -147,7 +147,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ## Difference Equations
 
-> [!definition] Definition §13.2: Linear Difference Equation
+> [!definition] Definition §11.5: Linear Difference Equation
 > A dynamic system measured at discrete times gives a sequence of vectors $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$, the entries of $\mathbf{x}_k$ describing the state of the system at the $k$th measurement. If there is a matrix $A$ such that $\mathbf{x}_1 = A\mathbf{x}_0$, $\mathbf{x}_2 = A\mathbf{x}_1$ and, in general,
 >
 > $$
@@ -160,7 +160,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ^def-11-5
 
-> [!definition] Definition §13.3: Migration Matrix
+> [!definition] Definition §11.6: Migration Matrix
 > Model the populations of a city and its suburbs: fix an initial year (2014) and let $\mathbf{x}_0 = (r_0, s_0)$ be the city and suburban populations that year, and $\mathbf{x}_k = (r_k, s_k)$ those $k$ years later. Suppose that each year about 5% of the city's population moves to the suburbs (95% stays) and 3% of the suburban population moves to the city (97% stays); ignore births, deaths and migration into or out of the region. After one year, the $r_0$ city residents are distributed as $r_0(.95, .05)$ and the $s_0$ suburban residents as $s_0(.03, .97)$, so
 >
 > $$
@@ -173,7 +173,7 @@ The model is linear because the nutrients supplied by a foodstuff are *proportio
 
 ^def-11-6
 
-> [!example] Example §13.1: City and Suburbs
+> [!example] Example §11.3: City and Suburbs
 > The population in 2014 was 600,000 in the city and 400,000 in the suburbs. Compute the populations for 2015 and 2016.
 >
 > $$

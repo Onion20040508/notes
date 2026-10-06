@@ -16,17 +16,19 @@ tags: [chapter, applied-linear-algebra]
 ## Sections
 - [[§24 Introduction to Determinants]] — Lay 3.1
 - [[§25 Properties of Determinants]] — Lay 3.2
+- [[§26 Transposes, Products, and Linearity of Determinants]] — Lay 3.2
 - [[§27 Cramer’s Rule, Volume, and Linear Transformations]] — Lay 3.3
+- [[§28 Determinants as Area or Volume]] — Lay 3.3
 
 ## Central results
-- [[Cofactor Expansion]] (§20.1)
-- [[Multiplicative Property of the Determinant]] (§21.9)
-- [[Cramer's Rule]] (§22.1)
-- [[Determinants as Area or Volume]] (§22.4)
+- [[Cofactor Expansion]] (§24.1)
+- [[Multiplicative Property of the Determinant]] (§26.4)
+- [[Cramer's Rule]] (§27.1)
+- [[Determinants as Area or Volume]] (§28.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Cofactor Expansion|Theorem §24.1: Cofactor Expansion Along Any Row or Column]]: 99 later results
-- [[§24 Introduction to Determinants#^thm-24-2|Theorem §24.2: Determinant of a Triangular Matrix]]: 98 later results
-- [[§25 Properties of Determinants#^thm-25-1|Theorem §25.1: Row Operations]]: 98 later results
-- [[§25 Properties of Determinants#^prop-25-2|Proposition §25.2: The Determinant from an Echelon Form]]: 98 later results
+- [[Cofactor Expansion|Theorem §24.1: Cofactor Expansion Along Any Row or Column]]: 105 later results
+- [[§24 Introduction to Determinants#^thm-24-2|Theorem §24.2: Determinant of a Triangular Matrix]]: 104 later results
+- [[§25 Properties of Determinants#^thm-25-1|Theorem §25.1: Row Operations]]: 104 later results
+- [[§25 Properties of Determinants#^prop-25-2|Proposition §25.2: The Determinant from an Echelon Form]]: 104 later results

@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§17 Simple Functions and Modes of Convergence#^thm-17-2]]
 
 ## Treated in
-- [[§17 Simple Functions and Modes of Convergence#^thm-17-2|Theorem §17.2: Approximation by Simple Functions: Non-negative Case]], in [[§15 Measurable Functions]]
+- [[§17 Simple Functions and Modes of Convergence#^thm-17-2|Theorem §17.2: Approximation by Simple Functions: Non-negative Case]], in [[§17 Simple Functions and Modes of Convergence]]
 
 ## Its proof uses
 - [[§15 Measurable Functions#^prop-15-1|Proposition §15.1: Characteristic Functions of Measurable Sets]]

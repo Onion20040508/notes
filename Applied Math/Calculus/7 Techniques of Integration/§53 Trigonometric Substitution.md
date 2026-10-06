@@ -15,7 +15,7 @@ Integrals containing $\sqrt{a^2 - x^2}$, $\sqrt{a^2 + x^2}$ or $\sqrt{x^2 - a^2}
 
 ## Inverse Substitution
 
-> [!theorem] Theorem §61.1: Inverse Substitution Rule
+> [!theorem] Theorem §53.1: Inverse Substitution Rule
 > Let $x = g(t)$, where $g$ is differentiable and one-to-one on an interval, with inverse $t = g^{-1}(x)$. Then
 >
 > $$
@@ -68,7 +68,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 
 ## Examples
 
-> [!example] Example §61.1: The Sine Substitution, Indefinite
+> [!example] Example §53.1: The Sine Substitution, Indefinite
 > Evaluate $\displaystyle\int \frac{\sqrt{9 - x^2}}{x^2}\,dx$.
 >
 > Let $x = 3\sin\theta$, $-\pi/2 \le \theta \le \pi/2$. Then $dx = 3\cos\theta\,d\theta$ and
@@ -95,7 +95,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 
 ^ex-53-1
 
-> [!example] Example §61.2: The Area of an Ellipse
+> [!example] Example §53.2: The Area of an Ellipse
 > Find the area enclosed by the ellipse $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$ ($a, b > 0$).
 >
 > Solving for $y$: $\dfrac{y^2}{b^2} = 1 - \dfrac{x^2}{a^2} = \dfrac{a^2 - x^2}{a^2}$, so $y = \pm \dfrac{b}{a}\sqrt{a^2 - x^2}$. The ellipse is symmetric in both axes, so the area $A$ is four times the area in the first quadrant, which lies under $y = \frac{b}{a}\sqrt{a^2 - x^2}$, $0 \le x \le a$:
@@ -119,7 +119,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 
 ^ex-53-2
 
-> [!example] Example §61.3: The Tangent Substitution
+> [!example] Example §53.3: The Tangent Substitution
 > Find $\displaystyle\int \frac{dx}{x^2\sqrt{x^2 + 4}}$.
 >
 > Let $x = 2\tan\theta$, $-\pi/2 < \theta < \pi/2$. Then $dx = 2\sec^2\theta\,d\theta$ and
@@ -150,7 +150,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 
 ^ex-53-3
 
-> [!theorem] Proposition §61.2: The Integral of $1/\sqrt{x^2 - a^2}$
+> [!theorem] Proposition §53.2: The Integral of $1/\sqrt{x^2 - a^2}$
 > For $a > 0$,
 >
 > $$
@@ -202,7 +202,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 
 Hyperbolic substitutions can replace trigonometric ones and sometimes give simpler answers, but trigonometric identities are more familiar, so trigonometric substitutions are the usual choice.
 
-> [!example] Example §61.4: A Preliminary Substitution and a Power 3/2
+> [!example] Example §53.4: A Preliminary Substitution and a Power 3/2
 > Find $\displaystyle\int_0^{3\sqrt3/2} \frac{x^3}{(4x^2 + 9)^{3/2}}\,dx$.
 >
 > $(4x^2 + 9)^{3/2} = \big(\sqrt{4x^2 + 9}\big)^3$, so a trigonometric substitution is appropriate. The radical becomes $\sqrt{u^2 + 9}$ after the preliminary substitution $u = 2x$; then $u = 3\tan\theta$. In one step: $x = \frac32 \tan\theta$, $dx = \frac32 \sec^2\theta\,d\theta$, and

@@ -51,7 +51,7 @@ $$
 
 ## The Eigenvalue Problem
 
-> [!definition] Definition §32.1: Eigenvalue Problem
+> [!definition] Definition §26.1: Eigenvalue Problem
 > A homogeneous differential equation for $\phi$ containing a parameter, together with homogeneous boundary conditions, such as
 >
 > $$
@@ -80,7 +80,7 @@ The problem $\phi'' + \lambda^2\phi = 0$, $\phi(0) = \phi(a) = 0$ of [[§25 Exam
 > [!remark]- Connections
 > - The analogy is exact: $\phi \mapsto \phi''$ is a linear operator on functions satisfying (7), and (6) says $\phi'' = -\lambda^2\phi$, an eigenvector equation $A\phi = \mu\phi$ with eigenvalue $\mu = -\lambda^2$: [[§40 Eigenvectors and Eigenvalues#^def-40-1|235 Def. §40.1]], [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]]. Unlike a matrix it has infinitely many eigenvalues; that the eigenfunctions are orthogonal and complete is the infinite-dimensional analogue of the spectral theorem, [[§29 Sturm–Liouville Problems#^thm-29-2|Theorem §29.2]] and [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|Theorem §30.2]].
 
-> [!theorem] Theorem §32.1: Eigenvalues for Insulated Ends
+> [!theorem] Theorem §26.1: Eigenvalues for Insulated Ends
 > The eigenvalue problem (6)–(7) has the solution
 >
 > $$
@@ -115,7 +115,7 @@ $$
 u_0(x, t) = 1, \qquad u_n(x, t) = \cos(\lambda_nx)\exp(-\lambda_n^2kt) . \qquad (8)
 $$
 
-> [!theorem] Theorem §32.2: Solution of the Insulated-Bar Problem
+> [!theorem] Theorem §26.2: Solution of the Insulated-Bar Problem
 > Let $f$ be sectionally smooth on $0 < x < a$ and let
 >
 > $$
@@ -176,7 +176,7 @@ $$
 
 ## Examples
 
-> [!example] Example §32.1: Initial Temperature a Straight Line
+> [!example] Example §26.1: Initial Temperature a Straight Line
 > Find the complete solution of (1)–(3) for the initial temperature distribution $f(x) = T_0 + (T_1 - T_0)x/a$.
 >
 > No integration is needed for $a_0$: the average of a linear function is the average of its end values, $a_0 = (T_0 + T_1)/2$. The remaining coefficients are
@@ -206,7 +206,7 @@ $$
 ![[m341-20-1.svg]]
 *Example §20.1 with $T_0 = 20$, $T_1 = 100$: $u(x, t)$ as a function of $x$ at $kt/a^2 = 0.001$, $0.01$, $0.1$, $1$. The insulated ends force zero slope ($u_x = 0$) at both ends at every $t > 0$, so the profile bends flat there at once; the area under the curve (the total heat) stays fixed while the profile flattens to the average $a_0 = 60$.*
 
-> [!example] Example §32.2: Prescribed Heat Flow at Both Ends
+> [!example] Example §26.2: Prescribed Heat Flow at Both Ends
 > Consider $u_{xx} = \frac1ku_t$, $0 < x < a$, with $u_x(0, t) = S_0$, $u_x(a, t) = S_1$ and $u(x, 0) = f(x)$.
 >
 > **The steady-state problem has a solution if and only if $S_0 = S_1$.** It is $v'' = 0$, $v'(0) = S_0$, $v'(a) = S_1$. With $v = Ax + B$, the conditions say $A = S_0$ and $A = S_1$. So if $S_0 \ne S_1$ there is no solution, and if $S_0 = S_1$ then $v(x) = S_0x + B$ with $B$ arbitrary (take $B = 0$). Physical reason: the heat flux $q = -\kappa u_x$ is $-\kappa S_0$ at the left end and $-\kappa S_1$ at the right, so heat enters the rod at the net rate $A\kappa(S_1 - S_0)$ ([[§26 Example꞉ Insulated Bar#^rem-26-1|Remark: Why the Limit Is the Average]]). In a steady state nothing changes, so heat in must equal heat out.
@@ -219,7 +219,7 @@ $$
 
 ^ex-26-2
 
-> [!example] Example §32.3: Flux Boundary Conditions on the Midterm
+> [!example] Example §26.3: Flux Boundary Conditions on the Midterm
 > Solve the heat equation
 >
 > $$

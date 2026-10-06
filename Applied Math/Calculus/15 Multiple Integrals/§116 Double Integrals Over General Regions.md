@@ -15,7 +15,7 @@ A double integral over a bounded region $D$ is defined by enclosing $D$ in a rec
 
 ## General Regions
 
-> [!definition] Definition §139.1: The Double Integral over a Bounded Region
+> [!definition] Definition §116.1: The Double Integral over a Bounded Region
 > Let $D$ be a **bounded** region, that is, one that can be enclosed in a rectangular region $R$. For a function $f$ defined on $D$, define a new function $F$ with domain $R$ by
 >
 > $$
@@ -36,7 +36,7 @@ This makes sense because $\iint_R F\,dA$ was defined in [[§115 Double Integrals
 
 $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if $f$ is continuous on $D$ and the boundary curve of $D$ is "well behaved" (in a sense outside the scope of Stewart's book), then $\iint_R F\,dA$ exists, and therefore $\iint_D f\,dA$ exists ([[§115 Double Integrals Over Rectangles#^thm-115-1|Theorem §115.1]]). In particular this is the case for the following two types of region.
 
-> [!definition] Definition §139.2: Type I Region
+> [!definition] Definition §116.2: Type I Region
 > A plane region $D$ is of **type I** if it lies between the graphs of two continuous functions of $x$:
 >
 > $$
@@ -49,7 +49,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 ^def-116-2
 
-> [!theorem] Theorem §139.1: Integrals over Type I Regions
+> [!theorem] Theorem §116.1: Integrals over Type I Regions
 > If $f$ is continuous on a type I region $D$ described by
 >
 > $$
@@ -87,7 +87,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 *Uses:* [[§116 Double Integrals Over General Regions#^def-116-1|Def. §116.1]], [[§116 Double Integrals Over General Regions#^def-116-2|Def. §116.2]], [[§115 Double Integrals Over Rectangles#^thm-115-3|§115.3]]
 
-> [!definition] Definition §139.3: Type II Region
+> [!definition] Definition §116.3: Type II Region
 > A plane region $D$ is of **type II** if it can be expressed as
 >
 > $$
@@ -100,7 +100,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 ^def-116-3
 
-> [!theorem] Theorem §139.2: Integrals over Type II Regions
+> [!theorem] Theorem §116.2: Integrals over Type II Regions
 > If $f$ is continuous on a type II region $D$ described by
 >
 > $$
@@ -136,7 +136,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 ^rem-116-1
 
-> [!example] Example §139.1: A Type I Region
+> [!example] Example §116.1: A Type I Region
 > Evaluate $\displaystyle\iint_D (x + 2y)\,dA$, where $D$ is the region bounded by the parabolas $y = 2x^2$ and $y = 1 + x^2$.
 >
 > The parabolas intersect when $2x^2 = 1 + x^2$, that is, $x^2 = 1$, so $x = \pm 1$. Between these, the lower boundary is $y = 2x^2$ and the upper boundary is $y = 1 + x^2$, so $D$ is a type I region (it is not type II: a horizontal line at height $1 < y < 2$ meets it in two segments):
@@ -159,7 +159,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 ^ex-116-1
 
-> [!example] Example §139.2: Choosing the Simpler Description
+> [!example] Example §116.2: Choosing the Simpler Description
 > Evaluate $\displaystyle\iint_D xy\,dA$, where $D$ is the region bounded by the line $y = x - 1$ and the parabola $y^2 = 2x + 6$.
 >
 > The curves meet where $(x - 1)^2 = 2x + 6$, that is, $x^2 - 4x - 5 = (x - 5)(x + 1) = 0$: at $(-1, -2)$ and $(5, 4)$. $D$ is both type I and type II, but as a type I region its lower boundary consists of two parts. As a type II region, with the left boundary $x = \tfrac12 y^2 - 3$ and the right boundary $x = y + 1$,
@@ -190,7 +190,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 ![[m233-99-1.svg]]
 *[[§116 Double Integrals Over General Regions#^ex-116-2|Example §116.2]] both ways. Left: as a type I region, the vertical arrows enter $D$ through the lower half of the parabola for $x < -1$ and through the line for $x > -1$, so the integral splits at $x = -1$. Right: as a type II region every horizontal arrow runs from the parabola $x = \frac12 y^2 - 3$ to the line $x = y + 1$, and one integral suffices.*
 
-> [!example] Example §139.3: A Region Bounded by Three Curves
+> [!example] Example §116.3: A Region Bounded by Three Curves
 > Let $D$ be the region in the $xy$-plane enclosed by $y = 0$, $y = x^2$ and $y = 2 - x$. Compute $\displaystyle\iint_D (xy^2 - x)\,dA$.
 >
 > **The region.** The parabola and the line meet where $x^2 = 2 - x$, that is, $(x + 2)(x - 1) = 0$; in the region enclosed together with $y = 0$, this is the point $(1, 1)$. So $D$ has corners $(0, 0)$, $(2, 0)$ and $(1, 1)$, with the parabola on the left and the line on the right. A horizontal arrow at height $y$, $0 \le y \le 1$, runs from $x = \sqrt{y}$ to $x = 2 - y$:
@@ -221,7 +221,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 By [[§116 Double Integrals Over General Regions#^thm-116-1|Theorems §116.1]] and [[§116 Double Integrals Over General Regions#^thm-116-2|§116.2]], a region that is both type I and type II gives two iterated integrals equal to the same double integral. Sometimes one order is much harder than the other, or even impossible. To change the order of an iterated integral: read off the region $D$ from its limits, sketch it, and describe $D$ the other way.
 
-> [!example] Example §139.4: An Integral That Needs Reversing
+> [!example] Example §116.4: An Integral That Needs Reversing
 > Evaluate $\displaystyle\int_0^1 \int_x^1 \sin(y^2)\,dy\,dx$.
 >
 > As it stands, we would first have to evaluate $\int \sin(y^2)\,dy$, and this is impossible in finite terms: $\int \sin(y^2)\,dy$ is not an elementary function ([[§55 Strategy for Integration#^thm-55-2|Theorem §55.2]]). So we change the order. Using [[§116 Double Integrals Over General Regions#^thm-116-1|Theorem §116.1]] backward, the iterated integral is $\iint_D \sin(y^2)\,dA$ over
@@ -286,7 +286,7 @@ By [[§116 Double Integrals Over General Regions#^thm-116-1|Theorems §116.1]] a
 
 Assume that all of the following integrals exist.
 
-> [!theorem] Theorem §139.3: Linearity and Comparison
+> [!theorem] Theorem §116.3: Linearity and Comparison
 > For functions $f$, $g$ integrable over $D$ and a constant $c$,
 >
 > $$
@@ -327,7 +327,7 @@ Assume that all of the following integrals exist.
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Properties of the Integral#^thm-22-2|452 Thm. §22.2]] (additivity in the integrand), [[§22 Properties of the Integral#^thm-22-1|452 Thm. §22.1]] (scalar multiples), [[§22 Properties of the Integral#^thm-22-4|452 Thm. §22.4]] (comparison), where the existence of $\iint (f + g)$ and $\iint cf$ is also proved.
 
-> [!theorem] Theorem §139.4: Additivity over Regions
+> [!theorem] Theorem §116.4: Additivity over Regions
 > If $D = D_1 \cup D_2$, where $D_1$ and $D_2$ don't overlap except perhaps on their boundaries, then
 >
 > $$
@@ -342,7 +342,7 @@ Assume that all of the following integrals exist.
 
 Property 8 evaluates double integrals over regions $D$ that are neither type I nor type II but can be cut into regions of type I or type II: integrate over each piece and add. This is what [[§116 Double Integrals Over General Regions#^ex-116-2|Examples §116.2]] and [[§116 Double Integrals Over General Regions#^ex-116-3|§116.3]] do when they describe a region as type I in two pieces.
 
-> [!theorem] Theorem §139.5: Area as a Double Integral
+> [!theorem] Theorem §116.5: Area as a Double Integral
 > If we integrate the constant function $f(x, y) = 1$ over a region $D$, we get the area of $D$:
 >
 > $$
@@ -371,7 +371,7 @@ Property 8 evaluates double integrals over regions $D$ that are neither type I n
 
 *Uses:* [[§116 Double Integrals Over General Regions#^thm-116-1|§116.1]], [[§116 Double Integrals Over General Regions#^thm-116-2|§116.2]], [[§116 Double Integrals Over General Regions#^thm-116-4|§116.4]], [[§45 Areas Between Curves#^thm-45-1|§45.1]], [[§45 Areas Between Curves#^thm-45-3|§45.3]]
 
-> [!theorem] Theorem §139.6: Bounds for a Double Integral
+> [!theorem] Theorem §116.6: Bounds for a Double Integral
 > If $m \le f(x, y) \le M$ for all $(x, y)$ in $D$, then
 >
 > $$

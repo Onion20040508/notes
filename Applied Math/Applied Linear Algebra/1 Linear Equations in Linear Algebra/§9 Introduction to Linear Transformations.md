@@ -23,14 +23,14 @@ $$
 $$
 say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mathbf{b} = (5, 8)$ and transforms $\mathbf{u} = (1, 4, -1, 3)$ into the zero vector. Solving $A\mathbf{x} = \mathbf{b}$ amounts to finding all vectors $\mathbf{x}$ in $\mathbb{R}^4$ that are transformed into $\mathbf{b}$ in $\mathbb{R}^2$.
 
-> [!definition] Definition §10.1: Transformation, Domain, Codomain
+> [!definition] Definition §9.1: Transformation, Domain, Codomain
 > A **transformation** (or **function** or **mapping**) $T$ from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a rule that assigns to each vector $\mathbf{x}$ in $\mathbb{R}^n$ a vector $T(\mathbf{x})$ in $\mathbb{R}^m$. The set $\mathbb{R}^n$ is the **domain** of $T$, and $\mathbb{R}^m$ is the **codomain** of $T$; the notation $T: \mathbb{R}^n \to \mathbb{R}^m$ records both.
 >
 > *Lay: 1.8 (text)*
 
 ^def-9-1
 
-> [!definition] Definition §10.2: Image and Range
+> [!definition] Definition §9.2: Image and Range
 > Let $T: \mathbb{R}^n \to \mathbb{R}^m$ be a transformation. For $\mathbf{x}$ in $\mathbb{R}^n$, the vector $T(\mathbf{x})$ is the **image** of $\mathbf{x}$ (under the action of $T$). The set of all images $T(\mathbf{x})$ is the **range** of $T$. (The lecture calls the range the *image of $T$*, and describes $T$ as a vector-valued function on $\mathbb{R}^n$.)
 >
 > *Lay: 1.8 (text)*
@@ -40,14 +40,14 @@ say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mat
 > [!remark]- Connections
 > - The general notions: function [[§8 Functions#^def-8-1|250 Def. §8.1]] and its image [[§8 Functions#^def-8-10|250 Def. §8.10]]; the range here is that image, and the codomain is the target set.
 
-> [!definition] Definition §10.3: Matrix Transformation
+> [!definition] Definition §9.3: Matrix Transformation
 > For an $m \times n$ matrix $A$, the **matrix transformation** $\mathbf{x} \mapsto A\mathbf{x}$ is the transformation $T: \mathbb{R}^n \to \mathbb{R}^m$ with $T(\mathbf{x}) = A\mathbf{x}$. The lecture writes it $T_A$. The domain is $\mathbb{R}^n$ because $A$ has $n$ columns, and the codomain is $\mathbb{R}^m$ because each column has $m$ entries.
 >
 > *Lay: 1.8 (text)*
 
 ^def-9-3
 
-> [!theorem] Proposition §10.1: The Range of a Matrix Transformation
+> [!theorem] Proposition §9.1: The Range of a Matrix Transformation
 > The range of $\mathbf{x} \mapsto A\mathbf{x}$ is the set of all linear combinations of the columns of $A$, that is, the span of the columns of $A$.
 >
 > *Lay: 1.8 (text)*
@@ -62,7 +62,7 @@ say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mat
 
 *Uses:* [[§5 The Matrix Equation Ax = b#^def-5-1|Def. §5.1]], [[§4 Vector Equations#^def-4-4|Def. §4.4]]
 
-> [!example] Example §10.1: Images, Preimages and the Range
+> [!example] Example §9.1: Images, Preimages and the Range
 > Let
 >
 > $$
@@ -112,7 +112,7 @@ say that multiplication by $A$ transforms $\mathbf{x} = (1, 1, 1, 1)$ into $\mat
 
 ^ex-9-1
 
-> [!example] Example §10.2: A Projection and a Shear
+> [!example] Example §9.2: A Projection and a Shear
 > **(a) Projection.** If $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$, then $\mathbf{x} \mapsto A\mathbf{x}$ **projects** points of $\mathbb{R}^3$ onto the $x_1x_2$-plane:
 >
 > $$
@@ -155,7 +155,7 @@ By [[§5 The Matrix Equation Ax = b#^thm-5-5|Theorem §5.5]], $\mathbf{x} \mapst
 > - Rigorous treatment: [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]], for maps between any vector spaces $V \to W$ over $\mathbb{F}$; [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]] is $T(\mathbf{0}) = \mathbf{0}$. Lay meets linear maps on other spaces (polynomials, functions) in Chapters 4 and 5.
 > - The total derivative of a differentiable map is a linear transformation, represented by the Jacobian matrix: [[§7 Differentiability#^def-7-3|452 Def. §7.3]].
 
-> [!theorem] Proposition §10.2: Matrix Transformations Are Linear
+> [!theorem] Proposition §9.2: Matrix Transformations Are Linear
 > Every matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ is a linear transformation.
 >
 > *Lay: 1.8 (text)*
@@ -171,7 +171,7 @@ By [[§5 The Matrix Equation Ax = b#^thm-5-5|Theorem §5.5]], $\mathbf{x} \mapst
 
 Linear transformations that are not matrix transformations (on spaces of polynomials or functions) appear in Chapters 4 and 5. Between $\mathbb{R}^n$ and $\mathbb{R}^m$, every linear transformation is a matrix transformation ([[§10 The Matrix of a Linear Transformation#^thm-10-1|Theorem §10.1]]).
 
-> [!theorem] Proposition §10.3: Zero, Combinations, Superposition
+> [!theorem] Proposition §9.3: Zero, Combinations, Superposition
 > If $T$ is a linear transformation, then
 >
 > $$
@@ -213,7 +213,7 @@ Linear transformations that are not matrix transformations (on spaces of polynom
 
 In engineering and physics, (5) is the **superposition principle**. Think of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ as signals that go into a system and $T(\mathbf{v}_1), \ldots, T(\mathbf{v}_p)$ as the responses. The system satisfies the superposition principle if, whenever an input is a linear combination of such signals, the response is *the same* linear combination of the individual responses.
 
-> [!example] Example §10.3: Linear or Not?
+> [!example] Example §9.3: Linear or Not?
 > **(a)** $T: \mathbb{R}^2 \to \mathbb{R}^3$, $T(x_1, x_2) = (x_1 + x_2,\ x_1 + 2x_2,\ 3x_2)$ is linear. (0): $T(0, 0) = (0 + 0, 0 + 2 \cdot 0, 3 \cdot 0) = \mathbf{0}$. (1): with $\mathbf{x} = (x_1, x_2)$, $\mathbf{y} = (y_1, y_2)$,
 >
 > $$
@@ -245,7 +245,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 
 ^rem-9-1
 
-> [!example] Example §10.4: A Dilation and a Rotation
+> [!example] Example §9.4: A Dilation and a Rotation
 > **(a)** For a scalar $r$, define $T: \mathbb{R}^2 \to \mathbb{R}^2$ by $T(\mathbf{x}) = r\mathbf{x}$. $T$ is a **contraction** when $0 \le r \le 1$ and a **dilation** when $r > 1$. For $r = 3$, $T$ is linear: for $\mathbf{u}, \mathbf{v}$ in $\mathbb{R}^2$ and scalars $c, d$,
 >
 > $$
@@ -266,7 +266,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 
 ^ex-9-4
 
-> [!example] Example §10.5: From Production to Costs
+> [!example] Example §9.5: From Production to Costs
 > With the cost vectors of [[§4 Vector Equations#^ex-4-4|Example §4.4]], form the "unit cost" matrix $U = [\,\mathbf{b}\ \ \mathbf{c}\,]$ (columns: products B and C; rows: materials, labor, overhead), and for a production vector $\mathbf{x} = (x_1, x_2)$ ($x_1$ dollars of B, $x_2$ dollars of C) let
 >
 > $$

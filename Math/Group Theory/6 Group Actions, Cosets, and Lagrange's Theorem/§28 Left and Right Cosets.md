@@ -22,7 +22,7 @@ tags: [group-theory, math493]
 ^rem-28-1
 
 > [!remark]- Connections
-> - In a linear space with Y a subspace, written additively: equivalence mod Y, [[§1 Linear Spaces#^def-1-6|556 Def. §1.6]].
+> - In a linear space with Y a subspace, written additively: equivalence mod Y, [[§2 Quotient Spaces and Complements#^def-2-1|556 Def. §2.1]].
 
 > [!definition] Definition §28.2: Left and Right Cosets
 > For $g \in G$ and $H \leq G$, the **left coset** of $H$ containing $g$ and the **right coset** are
@@ -36,12 +36,12 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§27 Free Groups and Presentations#^def-27-8|590 Def. §27.8 (Cosets)]].
 > - Linear-algebra analogue of a coset $v + U$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
-> - With a topology: the coset space G/H with the quotient topology from the projection, [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|591 Def. §14.1]] (cosets restated in [[§13 Homogeneous Spaces#^def-13-4|591 Def. §13.4]]).
+> - With a topology: the coset space G/H with the quotient topology from the projection, [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|591 Def. §15.1]] (cosets restated in [[§14 Homogeneous Spaces#^def-14-5|591 Def. §14.5]]).
 > - A coset in linear algebra: the solution set of Ax = b is the coset p + Nul A of the subgroup Nul A of ℝⁿ, [[§6 Solution Sets of Linear Systems#^thm-6-3|235 Thm. §6.3]].
 
 > [!theorem] Proposition §28.1: Cosets Are Orbits
 > Let $H$ be a subgroup of $G$.
-> 1. $H$ acts on $G$ on the right by multiplication, $g \star h := gh$; its orbits are the left cosets $gH$, so $G/H$ is the orbit space of this right action — consistent with the notation $X/G$ above ([[§27 Orbits#^def-27-2|Def. §27.2]]).
+> 1. $H$ acts on $G$ on the right by multiplication, $g \star h := gh$; its orbits are the left cosets $gH$, so $G/H$ is the orbit space of this right action — consistent with the notation $X/G$ above ([[§27 Orbits#^def-27-4|Def. §27.4]]).
 > 2. $H$ acts on $G$ on the left by $h \star g := hg$; its orbits are the right cosets $Hg$, and the orbit space is $H \backslash G$.
 > 3. Consequently $[G : H] = |G/H|$, and [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] reads $|G| = |H| \cdot |G/H| = |H| \cdot [G : H]$.
 >
@@ -56,11 +56,11 @@ tags: [group-theory, math493]
 
 ^pf-28-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-2|Def. §27.2]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-4|Def. §27.4]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 > [!remark]- Connections
 > - The other side of this picture, $G$ acting on the orbit space $G/H$: [[§31 G Acting on Coset Spaces#^prop-31-1|The Action of G on G∕H, §31.1]].
-> - Used in 591 to present G/H as an orbit space, of H acting on G by right translation, [[§13 Homogeneous Spaces#^prop-13-4|591 Prop. §13.4]].
+> - Used in 591 to present G/H as an orbit space, of H acting on G by right translation, [[§14 Homogeneous Spaces#^prop-14-4|591 Prop. §14.4]].
 
 > [!theorem] Proposition §28.2: Cosets Are the Equivalence Classes
 > Let $H$ be a subgroup of $G$.

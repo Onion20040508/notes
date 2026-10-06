@@ -125,7 +125,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > - The step "zero derivative on an interval implies constant": [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], from the Mean Value Theorem; equal derivatives differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
 > - See also: [[§24 Exponential Growth and Decay#^thm-24-1|Calc Thm. §24.1]] (the case $b = 0$, proved the same way) and [[§69 Models for Population Growth#^thm-69-1|Calc Thm. §69.1]] (Stewart's separation-of-variables derivation). Stewart's [[§69 Models for Population Growth#^rem-69-1|Calc Remark: Emigration]], $dP/dt = kP - m$, is (3) with $a = k$, $b = m$: the mice and owls of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-3|Example §1.3]].
 
-> [!definition] Definition §2.3: General Solution
+> [!definition] Definition §2.2: General Solution
 > For $a \ne 0$, the expression (17), which contains all possible solutions of (3), is called the **general solution** of (3).
 >
 > *BDP: 1.2 (text)*

@@ -70,7 +70,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 ## Formal Definition
 
-> [!definition] Definition §9.1: Differentiability
+> [!definition] Definition §7.1: Differentiability
 > $f : \mathbb{R}^2 \to \mathbb{R}$ is **differentiable** at $(x_0, y_0)$ if there exist constants $A, B$ such that
 >
 > $$
@@ -125,7 +125,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - Jacobians of compositions multiply: [[§12 Composition of Functions and the Chain Rule#^rem-12-4|Chain Rule for Jacobians]], i.e. [[§9 Matrices#^ladr-3-43|Matrix of product of linear maps]] (LADR 3.43).
-> - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|591 Def. §21.4]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§28 The Differential in Coordinates#^thm-28-2|591 Thm. §28.2]].
+> - In 591 the total derivative becomes the coordinate-free differential of a map between vector spaces, [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|591 Def. §22.5]], and the Jacobian is the matrix of the differential of a smooth map between manifolds in coordinate bases, [[§30 The Differential in Coordinates#^thm-30-2|591 Thm. §30.2]].
 > - The Jacobian is the standard matrix of the linear map Df: [[§10 The Matrix of a Linear Transformation#^thm-10-1|235 Thm. §10.1]] (its columns are the images of e₁, …, eₙ, with worked examples).
 
 > [!definition] Definition §7.4: Tangent Plane
@@ -145,9 +145,9 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ^rem-7-3
 
 > [!remark]- Connections
-> - The general statement in 591: the tangent space to the graph of a smooth $G : \mathbb{R}^n \to \mathbb{R}^k$ is the graph of $G'(x_0)$, [[§23 The Geometric Tangent Space#^lem-23-2|591 Lemma §23.2]].
+> - The general statement in 591: the tangent space to the graph of a smooth $G : \mathbb{R}^n \to \mathbb{R}^k$ is the graph of $G'(x_0)$, [[§25 The Geometric Tangent Space#^lem-25-2|591 Lemma §25.2]].
 
-> [!theorem] Theorem §9.1: Differentiability Implies All Directional Derivatives
+> [!theorem] Theorem §7.1: Differentiability Implies All Directional Derivatives
 > If $f$ is differentiable at $(x_0, y_0)$ with derivative $L = Df_{(x_0,y_0)}$, then for every unit direction $\mathbf{u} = (a, b)$ the [[§9 Directional Derivatives#^def-9-1|directional derivative]] (defined in §9, ahead) exists and
 >
 > $$
@@ -183,7 +183,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - Restated with the gradient in §9: [[Directional Derivative Formula|Directional Derivative Formula]].
-> - The coordinate-free form for smooth maps between vector spaces, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(p + tv)$: [[§21 The Differential of a Map Between Vector Spaces#^thm-21-3|591 Thm. §21.3]].
+> - The coordinate-free form for smooth maps between vector spaces, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(p + tv)$: [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|591 Thm. §22.3]].
 > - Computational version: [[§111 Directional Derivatives and the Gradient Vector#^thm-111-1|Calc Thm. §111.1]] and [[§111 Directional Derivatives and the Gradient Vector#^cor-111-2|Calc Cor. §111.2]] (with worked examples).
 
 > [!remark] Remark: Warning: The Converse Is False

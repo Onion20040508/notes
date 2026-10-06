@@ -20,10 +20,11 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§40 One-Dimensional Wave Equation꞉ Generalities]] — Powers 3.4
 - [[§41★ Estimation of Eigenvalues]] — Powers 3.5 ★
 - [[§42★ Wave Equation in Unbounded Regions]] — Powers 3.6 ★
+- [[§43 Plucked, Struck, Midterm, Hanging and Nonuniform Strings]] — Powers 3.6
 
 ## Central results
-- [[Series Solution of the Vibrating String]] (§30.2)
-- [[d'Alembert's Solution of the Wave Equation]] (§31.2)
+- [[Series Solution of the Vibrating String]] (§38.2)
+- [[d'Alembert's Solution of the Wave Equation]] (§39.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

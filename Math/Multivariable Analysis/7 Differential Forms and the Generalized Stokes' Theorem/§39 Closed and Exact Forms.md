@@ -30,7 +30,7 @@ Recall from [[§7 Differentiability#^def-7-1|§7]]: $f$ is differentiable at $\m
 
 > [!remark]- Connections
 > - $Df_{\mathbf{p}}$ is a linear functional on $\mathbb{R}^n$ ([[§12 Duality#^ladr-3-108|LADR 3.108]]); the gradient is the vector that represents it via the dot product, by the [[Riesz representation theorem|Riesz representation theorem (LADR 6.42)]].
-> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§30 The Cotangent Space#^rem-30-2|591 §30, Differential — Not Gradient]].
+> - On a manifold with no inner product only the differential survives, not the gradient vector: [[§32 The Cotangent Space#^rem-32-2|591 §30, Differential — Not Gradient]].
 
 > [!definition] Definition §39.1: Second Total Derivative
 > For $f: \mathbb{R}^n \to \mathbb{R}$ of class $C^2$ at $\mathbf{p}$, the **second total derivative** $D^2f_{\mathbf{p}}: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}$ is the bilinear form ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]]):
@@ -212,7 +212,7 @@ What went wrong? The domain $\mathbb{R}^2 \setminus \{0\}$ has a *hole* — the 
 
 > [!remark]- Connections
 > - The topological side of the same hole: $\pi_1(\mathbb{R}^2 \setminus \{0\}) \cong \pi_1(S^1)$ ([[§34 Retractions and Fixed Points#^thm-34-2|590 §34.2]]) $\cong \mathbb{Z}$ ([[Fundamental Group of the Circle]]); $\frac{1}{2\pi}\int_{\boldsymbol{\gamma}}\omega$ counts the winding.
-> - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§43 One-Forms#^prop-43-3|591 Prop. §43.3]], yet is not $df$, [[§43 One-Forms#^rem-43-1|591 Remark: The Condition Is Not Sufficient]].
+> - On a manifold: the same form on $\mathbb{R}^2 \setminus \{0\}$ satisfies the necessary condition for being a differential, [[§46 One-Forms#^prop-46-3|591 Prop. §46.3]], yet is not $df$, [[§46 One-Forms#^rem-46-1|591 Remark: The Condition Is Not Sufficient]].
 > - Used in Electromagnetism: $\omega$ is the field $\hat\varphi/s$ of a line current, curl-free off the axis with circulation $2\pi$ around it, so its curl is a delta function on the axis — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^ex-b1-2-2|EM Example §B1.2.2]]; the warning that curl-free is not enough on a region with a hole — [[§B1.2 The Dirac Delta Function and the Helmholtz Theorem#^cau-b1-2-1|EM Caution: Curl-free is not enough on a region with a hole]].
 
 > [!theorem] Proposition §39.7: Poincaré Lemma

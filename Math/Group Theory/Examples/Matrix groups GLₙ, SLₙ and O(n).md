@@ -13,7 +13,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - $GL_n(\mathbb{R})$ contains copies of essentially every group we meet ([[§5 A Zoo of Subgroups#^rem-5-3|§5]])
 - $\det$ is a homomorphism with kernel $SL_n$ ([[§15 Homomorphisms#^ex-15-1|§15]])
 - Permutation matrices give an injective homomorphism $S_n \to GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20]])
-- A representation is a homomorphism into $GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§20]])
+- A representation is a homomorphism into $GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|§20]])
 - The sign factors as $\operatorname{sgn} = \det \circ M$ ([[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|§21]])
 - $GL_n(k)$ acts on $k^n$ ([[§25 Actions#^ex-25-2|§25]])
 - Every finite group is a matrix group ([[§25 Actions#^cor-25-6|§25]])
@@ -61,7 +61,7 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 ![[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5]]
 
 ## A representation is a homomorphism into $GL_n(k)$
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7]]
 
 ## The sign factors as $\operatorname{sgn} = \det \circ M$
 ![[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2]]

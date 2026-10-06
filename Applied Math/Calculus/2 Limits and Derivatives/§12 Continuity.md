@@ -15,7 +15,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 
 ## Continuity of a Function
 
-> [!definition] Definition §14.1: Continuous at a Number
+> [!definition] Definition §12.1: Continuous at a Number
 > A function $f$ is **continuous at a number $a$** if
 >
 > $$
@@ -46,14 +46,14 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 > - Rigorous treatment: [[§20 Limits of Functions#^thm-20-1|451 Thm. §20.1]] shows that this agrees with the sequential definition [[§17 Continuous Functions#^def-17-1|451 Def. §17.1]], and [[§17 Continuous Functions#^thm-17-1|451 Thm. §17.1]] proves the ε–δ form above. There continuity is defined at every point of an arbitrary domain, using only nearby points of the domain, so Stewart's one-sided convention at the endpoints of an interval ([[§12 Continuity#^def-12-5|Definition §12.5]]) is automatic.
 > - One-sided limits, and the two-sided limit exists exactly when both one-sided limits exist and agree: [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]], [[§20 Limits of Functions#^thm-20-2|451 Thm. §20.2]]; so $f$ is continuous at $a$ if and only if it is continuous from the right and from the left ([[§12 Continuity#^def-12-4|Definition §12.4]]). Kinds of discontinuity: a removable one filled in by its limit, [[§20 Limits of Functions#^ex-20-4|451 Ex. §20.4]]; a jump that no value can remove, [[§20 Limits of Functions#^ex-20-5|451 Ex. §20.5]]; and $\sin(1/x)$ at $0$, which is none of Stewart's three kinds ([[§20 Limits of Functions#^rem-20-3|451 Remark: Worse than a jump]]).
 
-> [!definition] Definition §14.2: Discontinuity
+> [!definition] Definition §12.2: Discontinuity
 > Suppose $f$ is defined near $a$, that is, on an open interval containing $a$, except perhaps at $a$ itself. Then $f$ is **discontinuous at $a$** (or $f$ has a **discontinuity at $a$**) if $f$ is not continuous at $a$.
 >
 > *Stewart: 2.5 (text)*
 
 ^def-12-2
 
-> [!example] Example §14.1: Four Discontinuities
+> [!example] Example §12.1: Four Discontinuities
 > Where are the following functions discontinuous?
 >
 > $$
@@ -90,7 +90,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 
 ^ex-12-1
 
-> [!definition] Definition §14.3: Removable, Infinite and Jump Discontinuities
+> [!definition] Definition §12.3: Removable, Infinite and Jump Discontinuities
 > Let $f$ be discontinuous at $a$ ([[§12 Continuity#^def-12-2|Definition §12.2]]).
 > - The discontinuity is **removable** if $\lim_{x \to a} f(x)$ exists. Then redefining $f$ at the single number $a$ as $f(a) = \lim_{x \to a} f(x)$ makes $f$ continuous at $a$.
 > - It is an **infinite discontinuity** if $f(x) \to \infty$ or $f(x) \to -\infty$ as $x \to a$ from at least one side.
@@ -105,7 +105,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 ![[m233-10-1.svg]]
 *The discontinuities of [[§12 Continuity#^ex-12-1|Example §12.1]]. (a) [[§12 Continuity#^ex-12-1|Example §12.1]](b): the limit $3$ exists but $f(2) = 1$ (red) is the wrong value; moving the one point up to the hole removes the discontinuity. (b) [[§12 Continuity#^ex-12-1|Example §12.1]](c): no value $f(0)$ can help, since $f(x) \to \infty$. (c) $\lfloor x \rfloor$: at each integer the two one-sided limits differ by $1$. The filled dots are on the graph, so the function is continuous from the right there ([[§12 Continuity#^def-12-4|Definition §12.4]]).*
 
-> [!definition] Definition §14.4: Continuous from the Right and from the Left
+> [!definition] Definition §12.4: Continuous from the Right and from the Left
 > A function $f$ is **continuous from the right at a number $a$** if
 >
 > $$
@@ -139,7 +139,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 
 Instead of checking Definitions [[§12 Continuity#^def-12-1|§12.1]]–[[§12 Continuity#^def-12-5|§12.5]] directly, one builds complicated continuous functions from simple ones.
 
-> [!theorem] Theorem §14.1: Combining Continuous Functions
+> [!theorem] Theorem §12.1: Combining Continuous Functions
 > If $f$ and $g$ are continuous at $a$ and $c$ is a constant, then the following functions are also continuous at $a$:
 >
 > $$
@@ -177,7 +177,7 @@ Instead of checking Definitions [[§12 Continuity#^def-12-1|§12.1]]–[[§12 Co
 
 *Uses:* [[§12 Continuity#^def-12-1|Def. §12.1]], [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|§9.1]] (Limit Laws 1–5)
 
-> [!theorem] Theorem §14.2: Polynomials and Rational Functions Are Continuous
+> [!theorem] Theorem §12.2: Polynomials and Rational Functions Are Continuous
 > (a) Every polynomial is continuous everywhere, that is, on $\mathbb{R} = (-\infty, \infty)$.
 >
 > (b) Every rational function is continuous wherever it is defined, that is, on its domain.
@@ -342,7 +342,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 *Uses:* [[§12 Continuity#^thm-12-2|§12.2]], [[§12 Continuity#^thm-12-4|§12.4]], [[§12 Continuity#^thm-12-5|§12.5]], [[§4 Exponential Functions#^def-4-3|Def. §4.3]] (definition of the exponential), [[§5 Inverse Functions and Logarithms#^def-5-2|Def. §5.2]] (inverse functions)
 
-> [!example] Example §14.2: Continuity at the Endpoints of the Domain
+> [!example] Example §12.2: Continuity at the Endpoints of the Domain
 > **(a)** Show that $f(x) = 1 - \sqrt{1 - x^2}$ is continuous on $[-1, 1]$.
 >
 > **Interior points.** Let $-1 < a < 1$, so $1 - a^2 > 0$. By the Limit Laws ([[§9 Calculating Limits Using the Limit Laws#^thm-9-1|Theorems §9.1]] and [[§9 Calculating Limits Using the Limit Laws#^thm-9-2|§9.2]]),
@@ -424,7 +424,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 *Uses:* [[§12 Continuity#^def-12-1|Def. §12.1]], [[§11 The Precise Definition of a Limit#^def-11-1|Def. §11.1]] (precise definition of a limit)
 
-> [!example] Example §14.3: Limits by Continuity
+> [!example] Example §12.3: Limits by Continuity
 > **(a)** Find $\displaystyle\lim_{x \to -2} \frac{x^3 + 2x^2 - 1}{5 - 3x}$.
 >
 > The function $f(x) = \dfrac{x^3 + 2x^2 - 1}{5 - 3x}$ is rational, so by [[§12 Continuity#^thm-12-2|Theorem §12.2]] it is continuous on its domain $\{x \mid x \ne \frac53\}$, which contains $-2$. Therefore
@@ -507,7 +507,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > - Rigorous treatment of the combination rules: sums, products and quotients [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]] (from the limit theorems for sequences), polynomials [[§17 Continuous Functions#^ex-17-6|451 Ex. §17.6]], composites [[§17 Continuous Functions#^thm-17-4|451 Thm. §17.4]] (one line with the sequential definition; several variables: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]]).
 > - Inverses and the familiar functions: [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]] (a strictly increasing continuous function on a closed interval has a continuous inverse, proved with [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] instead of an explicit δ; topological form [[§18 Compact Spaces#^thm-18-7|590 Thm. §18.7]]). Once $\sin$, $\cos$ and $e^x$ are defined by power series, their continuity is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and the logarithm is continuous as the inverse of $e^x$ ([[§18 Properties of Continuous Functions#^rem-18-8|451 Remark: Beyond closed intervals]]).
 
-> [!example] Example §14.4: Where Is the Function Continuous?
+> [!example] Example §12.4: Where Is the Function Continuous?
 > **(a)** $f(x) = \dfrac{\ln x + \tan^{-1} x}{x^2 - 1}$. By [[§12 Continuity#^thm-12-6|Theorem §12.6]], $\ln x$ is continuous on $(0, \infty)$ and $\tan^{-1} x$ is continuous on $\mathbb{R}$, so by part 1 of [[§12 Continuity#^thm-12-1|Theorem §12.1]] the numerator is continuous on $(0, \infty)$. The denominator $x^2 - 1$ is a polynomial, continuous everywhere. By part 5 of [[§12 Continuity#^thm-12-1|Theorem §12.1]], $f$ is continuous at every $x > 0$ with $x^2 - 1 \ne 0$, that is, $x \ne \pm 1$. So $f$ is continuous on the intervals $(0, 1)$ and $(1, \infty)$.
 >
 > **(b)** $h(x) = \sin(x^2)$. Here $h = f \circ g$ with $g(x) = x^2$ and $f(x) = \sin x$. $g$ is a polynomial, continuous on $\mathbb{R}$, and $f$ is continuous everywhere ([[§12 Continuity#^thm-12-6|Theorem §12.6]]). By [[§12 Continuity#^thm-12-9|Theorem §12.9]], $h$ is continuous on $\mathbb{R}$.
@@ -550,7 +550,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ^rem-12-5
 
-> [!example] Example §14.5: Locating a Root
+> [!example] Example §12.5: Locating a Root
 > Show that the equation $4x^3 - 6x^2 + 3x - 2 = 0$ has a solution between $1$ and $2$.
 >
 > Let $f(x) = 4x^3 - 6x^2 + 3x - 2$. We want $c \in (1, 2)$ with $f(c) = 0$, so take $a = 1$, $b = 2$, $N = 0$ in [[§12 Continuity#^thm-12-10|Theorem §12.10]]:

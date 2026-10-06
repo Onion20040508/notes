@@ -163,7 +163,7 @@ Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, 
 > [!remark]- Connections
 > - The same function (also called the indicator function $\mathbf{1}_E$) in measure theory, where it is the building block of simple functions and integrals: [[§15 Measurable Functions#^def-15-3|551 Def. §15.3]].
 
-> [!theorem] Lemma §12.5: Subsets Are Functions to {0, 1}
+> [!theorem] Lemma §12.4: Subsets Are Functions to {0, 1}
 > The function $\mathcal{P}(X) \to \operatorname{Fun}(X, \{0, 1\})$, $A \mapsto \chi_A$, is a bijection.
 >
 > *Eccles: Lemma 12.2.3*
@@ -177,7 +177,7 @@ Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, 
 
 *Uses:* [[§12★ Counting Functions and Subsets#^def-12-4|Def. §12.4]]
 
-> [!theorem] Proposition §12.4: The Size of the Power Set
+> [!theorem] Proposition §12.5: The Size of the Power Set
 > If $X$ is a finite set with $|X| = n$, then $\mathcal{P}(X)$ is finite and
 >
 > $$
@@ -201,7 +201,7 @@ Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, 
 
 For infinite sets the comparison of $X$ with $\mathcal{P}(X)$ survives as Cantor's theorem, $|X| < |\mathcal{P}(X)|$ ([[§14a Uncountable Sets#^thm-14a-3|Theorem §14a.3]]).
 
-> [!definition] Definition §12.6: r-Subsets
+> [!definition] Definition §12.5: r-Subsets
 > For a set $X$ and a non-negative integer $r$, an **$r$-subset** of $X$ is a subset $A \subseteq X$ with $|A| = r$. The set of $r$-subsets is
 >
 > $$

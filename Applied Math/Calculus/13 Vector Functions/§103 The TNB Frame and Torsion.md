@@ -15,7 +15,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 ## The Normal and Binormal Vectors
 
-> [!definition] Definition §120.1: Principal Unit Normal Vector
+> [!definition] Definition §103.1: Principal Unit Normal Vector
 > Let $\mathbf{r}(t)$ be a smooth space curve. Since $|\mathbf{T}(t)| = 1$, $\mathbf{T}'(t)$ is orthogonal to $\mathbf{T}(t)$ ([[§101 Derivatives and Integrals of Vector Functions#^thm-101-3|Theorem §101.3]]). At any point where $\kappa \ne 0$ (equivalently $\mathbf{T}' \ne \mathbf{0}$), the **principal unit normal vector** (or **unit normal**) is
 >
 > $$
@@ -28,7 +28,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 ^def-103-1
 
-> [!definition] Definition §120.2: Binormal Vector
+> [!definition] Definition §103.2: Binormal Vector
 > At a point of a smooth space curve $\mathbf{r}(t)$ where $\kappa \ne 0$, the **binormal vector** is
 >
 > $$
@@ -44,7 +44,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 ![[m233-88-2.svg]]
 *The TNB frame at a point $P$ of the helix $\mathbf{r}(t) = \langle \cos t, \sin t, t \rangle$ ([[§103 The TNB Frame and Torsion#^ex-103-1|Example §103.1]]). $\mathbf{T}$ (red) is tangent to the helix, $\mathbf{N} = \langle -\cos t, -\sin t, 0 \rangle$ (blue) is horizontal and points straight at the $z$-axis, around which the helix turns, and $\mathbf{B} = \mathbf{T} \times \mathbf{N}$ (green) completes the right-handed frame.*
 
-> [!definition] Definition §120.3: Normal Plane
+> [!definition] Definition §103.3: Normal Plane
 > At a point $P$ of a curve $C$:
 > - the **normal plane** is the plane determined by $\mathbf{N}$ and $\mathbf{B}$; it consists of all lines through $P$ orthogonal to the tangent vector $\mathbf{T}$, so $\mathbf{T}$ (or $\mathbf{r}'$) is a normal vector for it;
 >
@@ -52,7 +52,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 ^def-103-3
 
-> [!definition] Definition §120.4: Osculating Plane
+> [!definition] Definition §103.4: Osculating Plane
 > At a point $P$ of a curve $C$:
 > - the **osculating plane** is the plane determined by $\mathbf{T}$ and $\mathbf{N}$; $\mathbf{B}$ is a normal vector for it. (From the Latin *osculum*, "kiss": it is the plane that comes closest to containing the part of the curve near $P$. For a plane curve it is the plane of the curve.)
 >
@@ -60,7 +60,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 ^def-103-4
 
-> [!definition] Definition §121.1: Osculating Circle
+> [!definition] Definition §103.5: Osculating Circle
 > At a point $P$ of a curve $C$:
 > - the **circle of curvature**, or **osculating circle**, is the circle in the osculating plane through $P$ with radius $1/\kappa$ and center a distance $1/\kappa$ from $P$ along $\mathbf{N}$; its center is the **center of curvature**. It is the circle that best describes how $C$ behaves near $P$: it shares the tangent, normal and curvature of $C$ at $P$.
 >
@@ -76,11 +76,10 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 >
 > Stewart's Example 13.3.7 carries out the whole computation for $\mathbf{r}(t) = \langle t, \sqrt2\ln t, 1/t \rangle$ at $(1, 0, 1)$, finding $\mathbf{T}(1) = \frac12\langle 1, \sqrt2, -1 \rangle$, $\mathbf{N}(1) = \frac{1}{\sqrt2}\langle 1, 0, 1 \rangle$, $\mathbf{B}(1) = \frac12\langle 1, -\sqrt2, -1 \rangle$ and $\kappa(1) = \frac{\sqrt2}{4}$.
 
-^rem-103-5
-
+^rem-103-1
 ## Torsion
 
-> [!theorem] Proposition §120.1: How T and B Turn
+> [!theorem] Proposition §103.1: How T and B Turn
 > At a point of a smooth curve where $\kappa \ne 0$,
 >
 > $$
@@ -116,7 +115,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 *Uses:* [[§103 The TNB Frame and Torsion#^def-103-1|Def. §103.1]], [[§103 The TNB Frame and Torsion#^def-103-2|Def. §103.2]], [[§102 Arc Length and Curvature#^prop-102-2|§102.2]], [[§102 Arc Length and Curvature#^prop-102-3|§102.3]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-2|§101.2]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-3|§101.3]], [[§96 The Cross Product#^thm-96-2|§96.2]]
 
-> [!definition] Definition §121.2: Torsion
+> [!definition] Definition §103.6: Torsion
 > The **torsion** of a curve is
 >
 > $$
@@ -132,9 +131,8 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 > [!remark] Remark: What Torsion Measures
 > Curvature $\kappa = |d\mathbf{T}/ds|$ says how tightly the curve bends; $d\mathbf{T}/ds$ describes how the normal plane (whose normal is $\mathbf{T}$) changes. A space curve can also twist out of its osculating plane, and since $\mathbf{B}$ is normal to the osculating plane, $d\mathbf{B}/ds$ describes how that plane turns. Torsion is the rate of this twisting: if $\tau > 0$ at $P$, the curve twists out of the osculating plane in the direction of $\mathbf{B}$; if $\tau < 0$, in the opposite direction. A plane curve has $\tau = 0$ (its $\mathbf{B}$ is constant). Under suitable conditions the curvature and torsion at every point determine the shape of a space curve completely.
 
-^rem-103-6
-
-> [!theorem] Proposition §120.2: Torsion in Terms of t
+^rem-103-2
+> [!theorem] Proposition §103.2: Torsion in Terms of t
 > $$
 > \tau(t) = -\frac{\mathbf{B}'(t) \cdot \mathbf{N}(t)}{|\mathbf{r}'(t)|} .
 > $$
@@ -150,7 +148,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 *Uses:* [[§103 The TNB Frame and Torsion#^def-103-6|Def. §103.6]], [[§102 Arc Length and Curvature#^prop-102-2|§102.2]]
 
-> [!theorem] Theorem §120.3: Torsion from r′, r″, r‴
+> [!theorem] Theorem §103.3: Torsion from r′, r″, r‴
 > At a point where $\mathbf{r}' \times \mathbf{r}'' \ne \mathbf{0}$, the torsion of the curve given by $\mathbf{r}$ is
 >
 > $$
@@ -198,7 +196,7 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 
 *Uses:* [[§103 The TNB Frame and Torsion#^prop-103-1|§103.1]], [[§102 Arc Length and Curvature#^thm-102-4|§102.4]], [[§103 The TNB Frame and Torsion#^def-103-1|Def. §103.1]], [[§103 The TNB Frame and Torsion#^def-103-2|Def. §103.2]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-2|§101.2]], [[§96 The Cross Product#^prop-96-7|§96.7]]
 
-> [!example] Example §120.1: The Helix: Frame, Planes, Curvature and Torsion
+> [!example] Example §103.1: The Helix: Frame, Planes, Curvature and Torsion
 > For the circular helix $\mathbf{r}(t) = \cos t\,\mathbf{i} + \sin t\,\mathbf{j} + t\,\mathbf{k}$:
 >
 > **(a) T, N, B.** We have $\mathbf{r}'(t) = -\sin t\,\mathbf{i} + \cos t\,\mathbf{j} + \mathbf{k}$ and $|\mathbf{r}'(t)| = \sqrt2$, so

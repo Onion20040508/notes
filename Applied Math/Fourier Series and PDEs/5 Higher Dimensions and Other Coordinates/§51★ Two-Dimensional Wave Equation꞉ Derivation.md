@@ -16,7 +16,7 @@ This section derives the equation of a vibrating membrane, such as a drumhead or
 
 ## The Membrane
 
-> [!definition] Definition §64.1: Stretched Membrane
+> [!definition] Definition §51.1: Stretched Membrane
 > A **membrane** is stretched taut over a flat frame in the $xy$-plane; its displacement above the point $(x, y)$ at time $t$ is $u(x, y, t)$. The model assumes:
 > 1. The **surface tension** $\sigma$ (dimensions $F/L$, force per unit length) is constant and independent of position. Across any short segment of length $\ell$ in the membrane, the rest of the membrane pulls with a force of magnitude $\sigma\ell$, tangent to the membrane and perpendicular to the segment.
 > 2. The membrane is **perfectly flexible**: it does not resist bending, so the tension is the only internal force.
@@ -32,7 +32,7 @@ This section derives the equation of a vibrating membrane, such as a drumhead or
 
 Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, aligned with the coordinate axes, with corner above $(x, y)$. On each edge the rest of the membrane exerts a distributed force of magnitude $\sigma$ per unit length, which adds up to a concentrated force $\sigma\,\Delta y$ on each of the two edges parallel to the $y$-axis and $\sigma\,\Delta x$ on each of the two edges parallel to the $x$-axis. Projected on the $xu$-plane (figure below), the forces $\sigma\,\Delta y$ at $x$ and $x + \Delta x$ make angles $\alpha$ and $\beta$ with the horizontal; projected on the $yu$-plane, the forces $\sigma\,\Delta x$ at $y$ and $y + \Delta y$ make angles $\gamma$ and $\delta$.
 
-> [!theorem] Theorem §64.1: The Two-Dimensional Wave Equation
+> [!theorem] Theorem §51.1: The Two-Dimensional Wave Equation
 > Under the assumptions of Definition §51.1, and if the slopes $\partial u/\partial x$ and $\partial u/\partial y$ of the membrane are small, the displacement satisfies
 >
 > $$
@@ -108,7 +108,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 
 ## Boundary and Initial Conditions
 
-> [!definition] Definition §64.2: The Membrane Problem
+> [!definition] Definition §51.2: The Membrane Problem
 > If the membrane is fixed to the flat frame, its displacement $u(x, y, t)$ on the region $R$ inside the frame satisfies the wave equation of Theorem §51.1 in $R$, the **boundary condition**
 >
 > $$
@@ -127,7 +127,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 
 ^def-51-2
 
-> [!example] Example §64.1: A Rectangular Frame
+> [!example] Example §51.1: A Rectangular Frame
 > Suppose the frame is rectangular, bounded by segments of the lines $x = 0$, $x = a$, $y = 0$, $y = b$. Write the initial value–boundary value problem, complete with inequalities, for a membrane stretched over this frame.
 >
 > The region is $R\colon 0 < x < a$, $0 < y < b$, and its boundary consists of the four sides. By Definition §51.2,
@@ -147,7 +147,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 
 ^ex-51-1
 
-> [!example] Example §64.2: A Circular Frame
+> [!example] Example §51.2: A Circular Frame
 > Suppose the frame is the circle $x^2 + y^2 = a^2$. Write the initial value–boundary value problem in polar coordinates.
 >
 > Put $v(r, \theta, t) = u(r\cos\theta, r\sin\theta, t)$. By [[§44 Potential Equation#^thm-44-3|Theorem §44.3]], the Laplacian in polar coordinates is $\nabla^2 v = \frac{1}{r}\frac{\partial}{\partial r}\big(r\frac{\partial v}{\partial r}\big) + \frac{1}{r^2}\frac{\partial^2 v}{\partial\theta^2}$, so
@@ -168,7 +168,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 
 ^ex-51-2
 
-> [!example] Example §64.3: The Wave Speed of a Membrane
+> [!example] Example §51.3: The Wave Speed of a Membrane
 > Check that $c$ has the dimensions of a velocity, and compute it for a membrane with $\sigma = 500\ \mathrm{N/m}$ and $\rho = 0.2\ \mathrm{kg/m^2}$.
 >
 > Force has dimensions $mL/t^2$, so $\sigma$ has dimensions $(mL/t^2)/L = m/t^2$, and $\rho$ has dimensions $m/L^2$. Hence

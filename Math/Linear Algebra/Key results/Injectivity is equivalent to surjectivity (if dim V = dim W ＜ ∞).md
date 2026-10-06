@@ -20,11 +20,11 @@ tags: [linear-algebra, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
-- [[§20 Linear Algebra Toolkit#^prop-20-3|Proposition §20.3: The Double Dual]]
-- [[§20 Linear Algebra Toolkit#^thm-20-5|Theorem §20.5: Non-Degenerate Pairings]]
-- [[§23 The Geometric Tangent Space#^cor-23-4|Corollary §23.4: Three Descriptions of the Geometric Tangent Space]]
-- [[§27 Coordinate Derivations and the Basis Theorem#^cor-27-7|Corollary §27.7: Consequences]]
-- [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
+- [[§21 Linear Algebra Toolkit#^prop-21-3|Proposition §21.3: The Double Dual]]
+- [[§21 Linear Algebra Toolkit#^thm-21-5|Theorem §21.5: Non-Degenerate Pairings]]
+- [[§25 The Geometric Tangent Space#^cor-25-4|Corollary §25.4: Three Descriptions of the Geometric Tangent Space]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|Corollary §29.7: Consequences]]
+- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
 
 ## Connections
 - Matrix and operator consequences: [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I (on vector spaces of the same dimension)]]. Eigenvalue criterion: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]].

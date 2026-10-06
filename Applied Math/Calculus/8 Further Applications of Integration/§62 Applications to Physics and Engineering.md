@@ -15,7 +15,7 @@ Two physical quantities are computed here by the same strategy as areas, volumes
 
 ## Hydrostatic Pressure and Force
 
-> [!definition] Definition §71.1: Pressure
+> [!definition] Definition §62.1: Pressure
 > The **pressure** $P$ on a surface is the force per unit area:
 >
 > $$
@@ -28,7 +28,7 @@ Two physical quantities are computed here by the same strategy as areas, volumes
 
 ^def-62-1
 
-> [!theorem] Theorem §71.1: Hydrostatic Pressure
+> [!theorem] Theorem §62.1: Hydrostatic Pressure
 > At a depth $d$ in a fluid of mass density $\rho$, the pressure in any direction is
 >
 > $$
@@ -123,7 +123,7 @@ The pressure on a *vertical* plate is not constant: it increases with depth. Tha
 
 ^rem-62-1
 
-> [!example] Example §71.1: Force on a Trapezoidal Dam
+> [!example] Example §62.1: Force on a Trapezoidal Dam
 > A dam has the shape of a trapezoid with height $20$ m, width $50$ m at the top and $30$ m at the bottom. Find the force on the dam due to hydrostatic pressure if the water level is $4$ m below the top of the dam.
 >
 > **Coordinates.** Take a vertical $x$-axis with origin at the water surface, pointing down. The water is $20 - 4 = 16$ m deep, so $0 \le x \le 16$.

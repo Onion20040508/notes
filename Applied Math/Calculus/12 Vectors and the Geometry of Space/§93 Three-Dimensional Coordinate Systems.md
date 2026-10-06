@@ -15,7 +15,7 @@ Multivariable calculus takes place in space, so the first step is to give every 
 
 ## 3D Space
 
-> [!definition] Definition §109.1: Coordinate Axes, Coordinate Planes and Octants
+> [!definition] Definition §93.1: Coordinate Axes, Coordinate Planes and Octants
 > Choose a fixed point $O$, the **origin**, and three directed lines through $O$ that are perpendicular to each other, the **coordinate axes**, labeled the $x$-, $y$- and $z$-axes. The direction of the $z$-axis is fixed by the **right-hand rule**: if the fingers of the right hand curl around the $z$-axis in the direction of a $90^\circ$ counterclockwise rotation from the positive $x$-axis to the positive $y$-axis, the thumb points in the positive direction of the $z$-axis.
 >
 > The axes determine three **coordinate planes**: the $xy$-plane (containing the $x$- and $y$-axes), the $yz$-plane and the $xz$-plane. They divide space into eight **octants**; the **first octant** is the one determined by the positive axes.
@@ -24,7 +24,7 @@ Multivariable calculus takes place in space, so the first step is to give every 
 
 ^def-93-1
 
-> [!definition] Definition §109.2: Coordinates and the Space ℝ³
+> [!definition] Definition §93.2: Coordinates and the Space ℝ³
 > For a point $P$ in space let $a$ be the (directed) distance from the $yz$-plane to $P$, $b$ the distance from the $xz$-plane to $P$, and $c$ the distance from the $xy$-plane to $P$. The ordered triple $(a, b, c)$ gives the **coordinates** of $P$: $a$ is its $x$-coordinate, $b$ its $y$-coordinate, $c$ its $z$-coordinate. To locate $(a, b, c)$, start at $O$, move $a$ units along the $x$-axis, then $b$ units parallel to the $y$-axis, then $c$ units parallel to the $z$-axis.
 >
 > The set of all ordered triples is the [[§7a Several Quantifiers and the Cartesian Product#^def-7a-1|Cartesian product]]
@@ -60,7 +60,7 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 
 ^rem-93-2
 
-> [!example] Example §109.1: Planes in ℝ³
+> [!example] Example §93.1: Planes in ℝ³
 > What surfaces in $\mathbb{R}^3$ are represented by (a) $z = 3$, (b) $y = 5$, (c) $y = x$?
 >
 > **(a)** $z = 3$ is the set $\{(x, y, z) \mid z = 3\}$: all points whose $z$-coordinate is $3$, with $x$ and $y$ arbitrary. This is the horizontal plane parallel to the $xy$-plane, three units above it.
@@ -73,7 +73,7 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 
 ^ex-93-1
 
-> [!example] Example §109.2: A Circle, a Cylinder and a Solid Cylinder
+> [!example] Example §93.2: A Circle, a Cylinder and a Solid Cylinder
 > (a) Which points $(x, y, z)$ satisfy both $x^2 + y^2 = 1$ and $z = 3$?
 > (b) What does the equation $x^2 + y^2 = 1$ alone represent as a surface in $\mathbb{R}^3$?
 > (c) What solid region is described by $x^2 + y^2 \le 1$, $2 \le z \le 4$?
@@ -90,7 +90,7 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 
 ## Distance and Spheres
 
-> [!theorem] Theorem §109.1: Distance Formula in Three Dimensions
+> [!theorem] Theorem §93.1: Distance Formula in Three Dimensions
 > The distance $|P_1P_2|$ between the points $P_1(x_1, y_1, z_1)$ and $P_2(x_2, y_2, z_2)$ is
 >
 > $$
@@ -134,14 +134,14 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 
 For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{(1 - 2)^2 + (-3 + 1)^2 + (5 - 7)^2} = \sqrt{1 + 4 + 4} = 3$ (Stewart, Example 12.1.4).
 
-> [!definition] Definition §109.3: Sphere
+> [!definition] Definition §93.3: Sphere
 > The **sphere** with radius $r$ and center $C(h, k, l)$ is the set of all points $P(x, y, z)$ whose distance from $C$ is $r$.
 >
 > *Stewart: 12.1 (text)*
 
 ^def-93-3
 
-> [!theorem] Theorem §109.2: Equation of a Sphere
+> [!theorem] Theorem §93.2: Equation of a Sphere
 > An equation of the sphere with center $C(h, k, l)$ and radius $r$ is
 >
 > $$
@@ -175,7 +175,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 
 ^rem-93-3
 
-> [!example] Example §109.3: Spheres Through a Given Point
+> [!example] Example §93.3: Spheres Through a Given Point
 > **(a)** Find an equation of the sphere with center $(3, -1, 6)$ that passes through $(5, 2, 3)$.
 >
 > The radius is the distance from the center to the given point:
@@ -195,7 +195,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 
 ^ex-93-3
 
-> [!example] Example §109.4: Completing the Square
+> [!example] Example §93.4: Completing the Square
 > Show that each equation represents a sphere, and find its center and radius.
 >
 > $$
@@ -221,7 +221,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 
 ^ex-93-4
 
-> [!example] Example §109.5: A Region Between Two Spheres
+> [!example] Example §93.5: A Region Between Two Spheres
 > What region in $\mathbb{R}^3$ is represented by $1 \le x^2 + y^2 + z^2 \le 4$, $z \le 0$?
 >
 > Taking square roots (all quantities are nonnegative), the first condition says

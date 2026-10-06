@@ -191,4 +191,4 @@ The four fundamental subspaces and the singular values provide the final stateme
 > [!remark]- Remark: Numerical Note
 > Examples [[§61★ The Singular Value Decomposition#^ex-61-1|§61.1]]–[[§62★ The Singular Value Decomposition in Applications#^ex-62-1|§62.1]] show how singular values can be computed by hand. In practice, the computation of $A^TA$ should be avoided, since any errors in the entries of $A$ are squared in the entries of $A^TA$. Fast iterative methods produce the singular values and singular vectors of $A$ directly, accurately to many decimal places. Lay's Practice Problems note two consequences of the SVD: $A^T = V\Sigma^TU^T$ is an SVD of $A^T$, so $A$ and $A^T$ have the same nonzero singular values; and for square $A$, $AA^T = U\Sigma^2U^T$ and $A^TA = V\Sigma^2V^T$ are orthogonally similar, $AA^T = Q^T(A^TA)Q$ with $Q = VU^T$. (Lay's Practice Problem 2 prints $A^TA = Q^T(A^TA)Q$; the remark after it shows that $AA^T$ is meant on the left.)
 
-^rem-62-3
+^rem-62-1

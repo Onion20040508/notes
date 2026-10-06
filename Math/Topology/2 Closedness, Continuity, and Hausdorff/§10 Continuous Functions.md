@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definition and Basic Properties
 
-> [!definition] Definition §11.1: Continuous Function
+> [!definition] Definition §10.1: Continuous Function
 > Let $X, Y$ be topological spaces. A function $f: X \to Y$ is **continuous** if for each open set $V \subseteq Y$, the preimage $f^{-1}(V)$ is a subset of $X$ that is open.
 >
 > (This generalizes the $\varepsilon$-$\delta$ definition of continuity for metric spaces.)
@@ -31,7 +31,7 @@ tags: [topology, math590]
 > - MATH 451 version: [[§21 More on Metric Spaces꞉ Continuity#^def-21-1|Continuous Maps Between Metric Spaces]].
 > - Recovered for metric spaces: [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]].
 
-> [!example] Example §11.1: $f: \mathbb{R} \to \mathbb{R}$ in Analysis
+> [!example] Example §10.1: $f: \mathbb{R} \to \mathbb{R}$ in Analysis
 > The “$\varepsilon$-$\delta$” definition of continuous function: $\forall \varepsilon > 0$, w.t.s. $\exists \delta > 0$ s.t. $|f(x) - f(y)| < \varepsilon$ if $|x - y| < \delta$.
 >
 > Topological definition $\Leftrightarrow$ “$\varepsilon$-$\delta$”: $\forall x \in \mathbb{R}$, $f^{-1}((f(x) - \varepsilon, f(x) + \varepsilon))$ is an open set in $\mathbb{R}$, i.e., is a neighborhood of $x$.
@@ -43,7 +43,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]].
 
-> [!example] Example §11.2: $\mathbb{R}_\ell$: Lower Limit Topology
+> [!example] Example §10.2: $\mathbb{R}_\ell$: Lower Limit Topology
 > $\mathcal{B}_\ell = \{[a,b) \mid a, b \in \mathbb{R}\}$. $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x$.
 >
 > **(1)** $f: \mathbb{R}_{\text{std}} \to \mathbb{R}_\ell$ not continuous. $[a,b)$ open in $\mathbb{R}_\ell$, but $f^{-1}([a,b)) = [a,b)$ not open in $\mathbb{R}_{\text{std}}$.
@@ -59,7 +59,7 @@ tags: [topology, math590]
 
 *Chain: earlier in [[§6 Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · later in [[§25 The Lower Limit Topology, ℝ^ω and Discrete Subspaces|Chapter 6]] · [[Lower limit topology|all appearances]]*
 
-> [!theorem] Theorem §11.1: Equivalent Conditions for Continuity
+> [!theorem] Theorem §10.1: Equivalent Conditions for Continuity
 > Let $f: X \to Y$ be a function between topological spaces. The following are equivalent:
 > 1. $f$ is continuous.
 > 2. For every subset $A$ of $X$, $f(\overline{A}) \subseteq \overline{f(A)}$.
@@ -90,7 +90,7 @@ tags: [topology, math590]
 
 ## Homeomorphisms
 
-> [!definition] Definition §11.2: Homeomorphism
+> [!definition] Definition §10.2: Homeomorphism
 > Let $f: X \to Y$ be a bijection with inverse $f^{-1}: Y \to X$. If both $f$ and $f^{-1}$ are continuous, then $f$ is called a **homeomorphism**.
 
 ^def-10-2
@@ -98,7 +98,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - A shortcut: [[Bijection from Compact to Hausdorff is a Homeomorphism|Bijection from Compact to Hausdorff]].
 > - Algebraic analogues: [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|group isomorphism]], [[§10 Invertibility and Isomorphisms#^ladr-3-69|vector space isomorphism]]; see [[§26 Algebra Prerequisites꞉ Groups#^rem-26-7|Analogy: Topology ↔ Algebra]].
-> - The smooth analogue: diffeomorphism, [[§18 Smooth Functions and Smooth Maps#^def-18-3|591 Def. §18.3]].
+> - The smooth analogue: diffeomorphism, [[§19 Smooth Functions and Smooth Maps#^def-19-3|591 Def. §19.3]].
 
 > [!theorem] Proposition §10.2: Equivalent Definition of Homeomorphism
 > A bijection $f: X \to Y$ is a homeomorphism if and only if $f(U)$ is open $\Leftrightarrow$ $U$ is open.

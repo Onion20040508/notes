@@ -28,7 +28,7 @@ $$
 g(x) = A_0 + \sum_{n=1}^{N} A_n\cos\Big(\frac{n\pi x}{a}\Big) + B_n\sin\Big(\frac{n\pi x}{a}\Big) .
 $$
 
-> [!theorem] Proposition §19.1: Integral of a Product
+> [!theorem] Proposition §15.1: Integral of a Product
 > With $f$ and $g$ as above,
 >
 > $$
@@ -56,7 +56,7 @@ $$
 
 Now suppose we wish to approximate $f(x)$ by a *finite* Fourier series. The difficulty is deciding what "approximate" means. Of the many ways to measure approximation, the easiest to use is the following.
 
-> [!definition] Definition §19.1: Mean Square Error
+> [!definition] Definition §15.1: Mean Square Error
 > For $f$ as above and a finite Fourier series $g$ containing terms up to and including $\cos(N\pi x/a)$ and $\sin(N\pi x/a)$, the **mean (square) error** of the approximation of $f$ by $g$ is
 >
 > $$
@@ -87,7 +87,7 @@ $$
 E_N = \int_{-a}^{a}f^2(x)\,dx - 2a\Big[2A_0a_0 + \sum_{n=1}^{N}\big(A_na_n + B_nb_n\big)\Big] + a\Big[2A_0^2 + \sum_{n=1}^{N}\big(A_n^2 + B_n^2\big)\Big] . \qquad (5)
 $$
 
-> [!theorem] Theorem §19.2: The Truncated Fourier Series Is the Best Approximation
+> [!theorem] Theorem §15.2: The Truncated Fourier Series Is the Best Approximation
 > Among all finite series $g(x) = A_0 + \sum_{n=1}^{N}A_n\cos(n\pi x/a) + B_n\sin(n\pi x/a)$, the mean error $E_N$ is smallest for the **truncated Fourier series** of $f$,
 >
 > $$
@@ -151,7 +151,7 @@ $$
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-2|§15.2]]
 
 > [!remark]- Connections
-> - [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]] (finite Bessel inequality, with the same Pythagoras picture) and [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]] (Bessel's inequality for any orthonormal set in an inner product space); in finite dimensions, [[§21 Orthonormal Bases#^ladr-6-26|LADR 6.26]]. Here the orthonormal set is $\frac{1}{\sqrt{2a}}, \frac{1}{\sqrt a}\cos\frac{n\pi x}{a}, \frac{1}{\sqrt a}\sin\frac{n\pi x}{a}$, and the coefficients of $f$ along it are $\sqrt{2a}\,a_0$, $\sqrt a\,a_n$, $\sqrt a\,b_n$, which turns (7) into $\sum|(f, e_k)|^2 \le \|f\|^2$.
+> - [[§27 Orthonormal Sets and Bases#^lem-27-2|556 Lem. §27.2]] (finite Bessel inequality, with the same Pythagoras picture) and [[§27 Orthonormal Sets and Bases#^thm-27-5|556 Thm. §27.5]] (Bessel's inequality for any orthonormal set in an inner product space); in finite dimensions, [[§21 Orthonormal Bases#^ladr-6-26|LADR 6.26]]. Here the orthonormal set is $\frac{1}{\sqrt{2a}}, \frac{1}{\sqrt a}\cos\frac{n\pi x}{a}, \frac{1}{\sqrt a}\sin\frac{n\pi x}{a}$, and the coefficients of $f$ along it are $\sqrt{2a}\,a_0$, $\sqrt a\,a_n$, $\sqrt a\,b_n$, which turns (7) into $\sum|(f, e_k)|^2 \le \|f\|^2$.
 
 The actual fact is that, in the limit, the inequality becomes an equality.
 
@@ -166,10 +166,10 @@ The actual fact is that, in the limit, the inequality becomes an equality.
 
 ^thm-15-4
 
-*Powers omits the proof; see [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]] ((1) ⇔ (3): Parseval's equality holds for every vector exactly when the orthonormal set is complete), applied to the trigonometric system, which is complete by [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]] (whose completeness step is itself quoted there, via Fejér's theorem).*
+*Powers omits the proof; see [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]] ((1) ⇔ (3): Parseval's equality holds for every vector exactly when the orthonormal set is complete), applied to the trigonometric system, which is complete by [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]] (whose completeness step is itself quoted there, via Fejér's theorem).*
 
 > [!remark]- Connections
-> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]].
+> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]].
 
 > [!theorem] Corollary §15.5: The Coefficients Tend to Zero
 > If $\int_{-a}^{a}f^2(x)\,dx$ is finite, the two series $\sum a_n^2$ and $\sum b_n^2$ converge, and therefore
@@ -191,7 +191,7 @@ The actual fact is that, in the limit, the inequality becomes an equality.
 
 This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[§16★ Proof of Convergence#^lem-16-3|Lemma §16.3]]; every sectionally continuous function has $\int f^2$ finite. Properties (8) and Corollary §15.5 are very useful for checking computed values of Fourier coefficients: coefficients that do not tend to zero, or whose squares do not add up to $\frac1a\int f^2$, are wrong.
 
-> [!definition] Definition §19.3: Convergence in the Mean
+> [!definition] Definition §15.2: Convergence in the Mean
 > A series of functions **converges to $f$ in the mean** on $-a < x < a$ if the mean square error $\int_{-a}^{a}(f - S_N)^2\,dx$ between $f$ and its partial sums $S_N$ tends to zero as $N \to \infty$.
 >
 > *Powers: 1.6 (text)*
@@ -219,7 +219,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-2|§15.2]], [[§15★ Mean Error and Convergence in Mean#^thm-15-4|§15.4]], [[§15★ Mean Error and Convergence in Mean#^def-15-2|Def. §15.2]]
 
 > [!remark]- Connections
-> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§31 The Completeness Relation#^ex-31-2|556 Ex. §31.2]].
+> - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§35 The Completeness Relation#^thm-35-2|556 Thm. §35.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§35 The Completeness Relation#^ex-35-2|556 Ex. §35.2]].
 > - The converse, that every coefficient sequence with $\sum(a_n^2 + b_n^2) < \infty$ belongs to some $f$ with $\int f^2$ finite, needs a complete space of functions; this holds for the Lebesgue integral, where $L^2$ is complete (Riesz–Fischer, [[§35 Lᵖ as a Banach Space#^thm-35-11|551 Thm. §35.11]]), but not for the Riemann integral.
 
 > [!remark] Remark: Summary
@@ -237,7 +237,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 
 ## Examples
 
-> [!example] Example §19.1: Mean Error and Parseval for f(x) = x
+> [!example] Example §15.1: Mean Error and Parseval for f(x) = x
 > **(a)** For $f(x) = x$, $-1 < x < 1$, the coefficients are $a_0 = a_n = 0$, $b_n = \frac{2(-1)^{n + 1}}{n\pi}$ ([[§11 Even and Odd Functions; Half-Range Expansions#^ex-11-1|Example §11.1]]), and $\int_{-1}^{1}x^2\,dx = \frac23$. With $a = 1$ the minimum mean error (6) is
 >
 > $$
@@ -261,7 +261,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 ![[m341-11-1.svg]]
 *Example §11.1: the minimum mean error $\min(E_N)$ for $f(x) = x$ on $(-1, 1)$, for $N = 1, \ldots, 20$ (dots), compared with $\frac{4}{\pi^2N}$ (curve). The total squared error tends to zero although the partial sums never converge uniformly near the jumps at $\pm1$.*
 
-> [!example] Example §19.2: Parseval for x² and the Sum of 1/n⁴
+> [!example] Example §15.2: Parseval for x² and the Sum of 1/n⁴
 > The function $f(x) = x^2$, $-\pi < x < \pi$, has $a_0 = \frac{\pi^2}{3}$, $a_n = \frac{4(-1)^n}{n^2}$, $b_n = 0$ ([[§14 Operations on Fourier Series#^ex-14-3|Example §14.3]](II)). Parseval's equality (8) with $a = \pi$:
 >
 > $$
@@ -274,7 +274,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 
 ^ex-15-2
 
-> [!example] Example §19.3: An Integral from Parseval's Equality
+> [!example] Example §15.3: An Integral from Parseval's Equality
 > Evaluate $\frac1\pi\int_{-\pi}^{\pi}\big(\ln|2\cos(x/2)|\big)^2\,dx$.
 >
 > The equality
@@ -295,7 +295,7 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 
 ^ex-15-3
 
-> [!example] Example §19.4: When ∫f² Is Infinite
+> [!example] Example §15.4: When ∫f² Is Infinite
 > **(a)** If a function on $-a < x < a$ has Fourier coefficients $a_n = 0$, $b_n = 1/\sqrt n$, what can be said about $\int_{-a}^{a}f^2\,dx$? If it were finite, Bessel's inequality would make $\sum b_n^2 = \sum\frac1n$ converge, but the harmonic series diverges. So $\int_{-a}^{a}f^2\,dx$ is infinite: $f$ is not square integrable, although its coefficients tend to zero.
 >
 > **(b)** The Fourier sine coefficients of $f(x) = 1/x$, $-\pi < x < \pi$, do not tend to zero. (Since $f$ is odd, the cosine coefficients may be taken to be zero, although strictly speaking they do not exist.) Substituting $t = nx$ and using $\int_0^\infty\frac{\sin t}{t}dt = \frac\pi2$,

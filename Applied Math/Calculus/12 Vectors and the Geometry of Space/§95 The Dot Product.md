@@ -15,7 +15,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ## The Dot Product of Two Vectors
 
-> [!definition] Definition §111.1: Dot Product
+> [!definition] Definition §95.1: Dot Product
 > If $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$ and $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$, then the **dot product** of $\mathbf{a}$ and $\mathbf{b}$ is the number
 >
 > $$
@@ -32,7 +32,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > - The same definition on $\mathbb{R}^n$, and the model for an abstract inner product: [[§20 Inner Products and Norms#^ladr-6-1|LADR 6.1]], [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
 > - Matrix version: [[§49 Inner Product, Length, and Orthogonality#^def-49-1|235 Def. §49.1]] (the inner product $\mathbf{u}^T\mathbf{v}$ in $\mathbb{R}^n$, a $1 \times n$ times an $n \times 1$ matrix), with the properties of [[§95 The Dot Product#^thm-95-1|Theorem §95.1]] as [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|235 Thm. §49.1]].
 
-> [!theorem] Theorem §111.1: Properties of the Dot Product
+> [!theorem] Theorem §95.1: Properties of the Dot Product
 > If $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$ are vectors in $V_3$ and $c$ is a scalar, then
 >
 > $$
@@ -68,14 +68,14 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 *Uses:* [[§95 The Dot Product#^def-95-1|Def. §95.1]], [[§94 Vectors#^thm-94-3|§94.3]], [[§94 Vectors#^thm-94-4|§94.4]]
 
-> [!definition] Definition §111.2: Angle Between Two Vectors
+> [!definition] Definition §95.2: Angle Between Two Vectors
 > The **angle $\theta$ between $\mathbf{a}$ and $\mathbf{b}$** is the angle, with $0 \le \theta \le \pi$, between representations of $\mathbf{a}$ and $\mathbf{b}$ that start at the origin: the angle between the segments $\overrightarrow{OA}$ and $\overrightarrow{OB}$. If $\mathbf{a}$ and $\mathbf{b}$ are parallel, then $\theta = 0$ or $\theta = \pi$.
 >
 > *Stewart: 12.3 (text)*
 
 ^def-95-2
 
-> [!theorem] Theorem §111.2: The Dot Product and the Angle
+> [!theorem] Theorem §95.2: The Dot Product and the Angle
 > If $\theta$ is the angle between the vectors $\mathbf{a}$ and $\mathbf{b}$, then
 >
 > $$
@@ -115,7 +115,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > - Since $|\cos\theta| \le 1$, the theorem gives $|\mathbf{a} \cdot \mathbf{b}| \le |\mathbf{a}|\,|\mathbf{b}|$, the Cauchy–Schwarz inequality, [[§20 Inner Products and Norms#^ladr-6-14|LADR 6.14]]. In $\mathbb{R}^n$ there is no picture to measure angles, and the logic runs the other way: Cauchy–Schwarz is proved first, and then $\cos\theta = \mathbf{a} \cdot \mathbf{b}/(|\mathbf{a}||\mathbf{b}|)$ is the *definition* of the angle.
 > - Matrix version: [[§50 Orthogonal Complements and Angles#^thm-50-5|235 Thm. §50.5]] (the same law-of-cosines proof, and the formula as the definition of the angle for $n > 3$).
 
-> [!theorem] Corollary §111.3: The Angle from the Dot Product
+> [!theorem] Corollary §95.3: The Angle from the Dot Product
 > If $\theta$ is the angle between the nonzero vectors $\mathbf{a}$ and $\mathbf{b}$, then
 >
 > $$
@@ -133,7 +133,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 *Uses:* [[§95 The Dot Product#^thm-95-2|§95.2]]
 
-> [!example] Example §111.1: Dot Products and Angles
+> [!example] Example §95.1: Dot Products and Angles
 > **(a)** Directly from [[§95 The Dot Product#^def-95-1|Definition §95.1]]:
 >
 > $$
@@ -158,14 +158,14 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ^ex-95-1
 
-> [!definition] Definition §111.3: Orthogonal Vectors
+> [!definition] Definition §95.3: Orthogonal Vectors
 > Two nonzero vectors $\mathbf{a}$ and $\mathbf{b}$ are **perpendicular** or **orthogonal** if the angle between them is $\theta = \pi/2$. The zero vector $\mathbf{0}$ is considered to be perpendicular to all vectors.
 >
 > *Stewart: 12.3 (text)*
 
 ^def-95-3
 
-> [!theorem] Theorem §111.4: Test for Orthogonality
+> [!theorem] Theorem §95.4: Test for Orthogonality
 > Two vectors $\mathbf{a}$ and $\mathbf{b}$ are orthogonal if and only if $\mathbf{a} \cdot \mathbf{b} = 0$.
 >
 > *Stewart: 12.3, Equation 7*
@@ -187,7 +187,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ^rem-95-1
 
-> [!example] Example §111.2: Testing and Forcing Orthogonality
+> [!example] Example §95.2: Testing and Forcing Orthogonality
 > **(a)** $2\mathbf{i} + 2\mathbf{j} - \mathbf{k}$ is perpendicular to $5\mathbf{i} - 4\mathbf{j} + 2\mathbf{k}$, since
 >
 > $$
@@ -209,14 +209,14 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ## Direction Angles and Direction Cosines
 
-> [!definition] Definition §112.1: Direction Angles and Direction Cosines
+> [!definition] Definition §95.4: Direction Angles and Direction Cosines
 > The **direction angles** of a nonzero vector $\mathbf{a}$ are the angles $\alpha$, $\beta$, $\gamma$ (in $[0, \pi]$) that $\mathbf{a}$ makes with the positive $x$-, $y$- and $z$-axes. Their cosines $\cos\alpha$, $\cos\beta$, $\cos\gamma$ are the **direction cosines** of $\mathbf{a}$.
 >
 > *Stewart: 12.3 (text)*
 
 ^def-95-4
 
-> [!theorem] Proposition §112.1: Formulas for the Direction Cosines
+> [!theorem] Proposition §95.5: Formulas for the Direction Cosines
 > For a nonzero vector $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$,
 >
 > $$
@@ -254,7 +254,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 *Uses:* [[§95 The Dot Product#^def-95-4|Def. §95.4]], [[§95 The Dot Product#^cor-95-3|§95.3]], [[§94 Vectors#^thm-94-3|§94.3]]
 
-> [!example] Example §111.3: Direction Angles
+> [!example] Example §95.3: Direction Angles
 > Find the direction angles of $\mathbf{a} = \langle 1, 2, 3 \rangle$.
 >
 > Since $|\mathbf{a}| = \sqrt{1 + 4 + 9} = \sqrt{14}$, [[§95 The Dot Product#^prop-95-5|Proposition §95.5]] gives $\cos\alpha = 1/\sqrt{14}$, $\cos\beta = 2/\sqrt{14}$, $\cos\gamma = 3/\sqrt{14}$, so
@@ -271,7 +271,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ## Projections
 
-> [!definition] Definition §112.2: Vector Projection
+> [!definition] Definition §95.5: Vector Projection
 > Let $\mathbf{a} = \overrightarrow{PQ}$ and $\mathbf{b} = \overrightarrow{PR}$ have the same initial point $P$, and let $S$ be the foot of the perpendicular from $R$ to the line containing $\overrightarrow{PQ}$. The vector with representation $\overrightarrow{PS}$ is the **vector projection of $\mathbf{b}$ onto $\mathbf{a}$**, written $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ (think of it as the shadow of $\mathbf{b}$).
 >
 > *Stewart: 12.3 (text)*
@@ -288,7 +288,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ![[m233-82-1.svg]]
 *The vector projection $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ (red) is the shadow of $\mathbf{b}$ on the line of $\mathbf{a}$: drop the perpendicular from the tip $R$ of $\mathbf{b}$ to that line. Its signed length is $|\mathbf{b}|\cos\theta = \operatorname{comp}_{\mathbf{a}}\mathbf{b}$. (a) For an acute angle the shadow points along $\mathbf{a}$. (b) For an obtuse angle it points against $\mathbf{a}$, and the scalar projection is negative.*
 
-> [!theorem] Theorem §112.2: Formulas for Projections
+> [!theorem] Theorem §95.6: Formulas for Projections
 > For $\mathbf{a} \ne \mathbf{0}$,
 >
 > $$
@@ -319,7 +319,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > - $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ is the orthogonal projection onto the line $\operatorname{span}(\mathbf{a})$, [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-56|LADR 6.56]], and $\mathbf{b} = \operatorname{proj}_{\mathbf{a}}\mathbf{b} + (\mathbf{b} - \operatorname{proj}_{\mathbf{a}}\mathbf{b})$ is the orthogonal decomposition of [[§20 Inner Products and Norms#^ladr-6-13|LADR 6.13]]. The foot $S$ is the point of the line closest to $R$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 > - Matrix version: [[§51 Orthogonal Sets#^def-51-3|235 Def. §51.3]] (projection onto a line in $\mathbb{R}^n$, $\hat{\mathbf{y}} = \frac{\mathbf{y} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}}\mathbf{u}$) and [[§51 Orthogonal Sets#^prop-51-3|235 Prop. §51.3]] (the decomposition $\mathbf{y} = \hat{\mathbf{y}} + \mathbf{z}$), worked in [[§51 Orthogonal Sets#^ex-51-2|235 Ex. §51.2]].
 
-> [!example] Example §112.1: Projections
+> [!example] Example §95.4: Projections
 > **(a)** Find the scalar and vector projections of $\mathbf{b} = \langle 1, 1, 2 \rangle$ onto $\mathbf{a} = \langle -2, 3, 1 \rangle$.
 >
 > Here $|\mathbf{a}| = \sqrt{4 + 9 + 1} = \sqrt{14}$ and $\mathbf{a} \cdot \mathbf{b} = (-2)(1) + 3(1) + 1(2) = 3$, so by [[§95 The Dot Product#^thm-95-6|Theorem §95.6]]
@@ -356,7 +356,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ^def-95-7
 
-> [!theorem] Proposition §112.3: Work as a Dot Product
+> [!theorem] Proposition §95.7: Work as a Dot Product
 > The work done by a constant force $\mathbf{F}$ with displacement vector $\mathbf{D}$ is
 >
 > $$
@@ -374,7 +374,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 *Uses:* [[§95 The Dot Product#^def-95-7|Def. §95.7]], [[§95 The Dot Product#^thm-95-2|§95.2]]
 
-> [!example] Example §112.2: Computing Work
+> [!example] Example §95.5: Computing Work
 > **(a)** A wagon is pulled $100$ m along a horizontal path by a constant force of $70$ N, the handle held at $35^\circ$ above the horizontal. By [[§95 The Dot Product#^prop-95-7|Proposition §95.7]],
 >
 > $$

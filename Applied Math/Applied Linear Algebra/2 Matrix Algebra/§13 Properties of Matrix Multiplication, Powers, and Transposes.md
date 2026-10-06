@@ -15,7 +15,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ## Properties of Matrix Multiplication
 
-> [!theorem] Theorem §16.1: Properties of Matrix Multiplication
+> [!theorem] Theorem §13.1: Properties of Matrix Multiplication
 > Let $A$ be an $m \times n$ matrix, and let $B$ and $C$ have sizes for which the indicated sums and products are defined.
 >
 > a. $A(BC) = (AB)C$ (associative law of multiplication)
@@ -60,7 +60,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 The associative and distributive laws say that parentheses can be inserted and removed as in number algebra: $ABC$ means either $A(BC)$ or $(AB)C$, and $ABCD$ can be computed as $A(BCD)$, $(ABC)D$, $A(BC)D$ and so on, *as long as the left-to-right order of the factors is kept*. (When $B$ is square and $C$ has fewer columns than $A$ has rows, $A(BC)$ is cheaper to compute than $(AB)C$.)
 
-> [!definition] Definition §16.1: Commuting Matrices
+> [!definition] Definition §13.1: Commuting Matrices
 > In the product $AB$, $A$ is **right-multiplied** by $B$ and $B$ is **left-multiplied** by $A$. If $AB = BA$, then $A$ and $B$ **commute** with one another.
 >
 > *Lay: 2.1 (text)*
@@ -75,9 +75,8 @@ The associative and distributive laws say that parentheses can be inserted and r
 >
 > The first is no surprise: the columns of $AB$ are combinations of the columns of $A$, while the columns of $BA$ are built from the columns of $B$. [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^ex-13-1|Example §13.1]] shows all three.
 
-^rem-13-2
-
-> [!example] Example §16.1: Matrices That Do Not Commute, and Zero Divisors
+^rem-13-1
+> [!example] Example §13.1: Matrices That Do Not Commute, and Zero Divisors
 > **(a) Numbers.** For $A = \begin{bmatrix} 5 & 1 \\ 3 & -2 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 0 \\ 4 & 3 \end{bmatrix}$,
 >
 > $$
@@ -141,7 +140,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 
 ^def-13-2
 
-> [!example] Example §16.2: Computing Powers
+> [!example] Example §13.2: Computing Powers
 > **(a) A diagonal matrix.** For $A = \begin{bmatrix} 2 & 0 \\ 0 & -3 \end{bmatrix}$,
 >
 > $$
@@ -178,8 +177,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 > [!remark]- Remark: Computing a Power Times a Vector
 > To compute $A^2\mathbf{x}$ for a $4 \times 4$ matrix $A$, compute $A(A\mathbf{x})$: $A\mathbf{x}$ takes 16 multiplications (4 for each entry) and $A(A\mathbf{x})$ 16 more, 32 in all. Forming $A^2$ first takes 64 multiplications (4 for each of 16 entries), and then $A^2\mathbf{x}$ takes 16 more, 80 in all. (Lay's Practice Problem 2.)
 
-^rem-13-3
-
+^rem-13-2
 ## The Transpose of a Matrix
 
 > [!definition] Definition §13.3: Transpose
@@ -196,7 +194,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 
 ^def-13-3
 
-> [!theorem] Theorem §16.2: Properties of the Transpose
+> [!theorem] Theorem §13.2: Properties of the Transpose
 > Let $A$ and $B$ denote matrices whose sizes are appropriate for the following sums and products.
 >
 > $$
@@ -233,7 +231,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 > [!remark]- Connections
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-54|LADR 3.54]] (transpose and its properties, including $(AC)^t = C^tA^t$). In LADR the transpose is the matrix of the dual map ([[§12 Duality#^ladr-3-118|LADR 3.118]], [[§12 Duality#^ladr-3-132|LADR 3.132]]), which explains why it reverses the order of products: $(ST)' = T'S'$, [[§12 Duality#^ladr-3-120|LADR 3.120]](c).
 
-> [!theorem] Corollary §16.3: Transpose of a Product of Several Matrices
+> [!theorem] Corollary §13.3: Transpose of a Product of Several Matrices
 > The transpose of a product of matrices equals the product of their transposes in the *reverse* order:
 >
 > $$
@@ -255,7 +253,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 
 *Uses:* [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|§13.2]], [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]] (associativity)
 
-> [!example] Example §16.3: Transposes and Matrix Equations
+> [!example] Example §13.3: Transposes and Matrix Equations
 > **(a)** Simplify $(A - 3B^2)^T$ for $n \times n$ matrices $A$ and $B$. By [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|Theorem §13.2]](b), (c) and [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^cor-13-3|Corollary §13.3]],
 >
 > $$
@@ -286,10 +284,9 @@ The associative and distributive laws say that parentheses can be inserted and r
 > [!remark] Remark: Inner and Outer Products
 > For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ (as $n \times 1$ matrices), the $1 \times 1$ matrix $\mathbf{u}^T\mathbf{v} = u_1v_1 + \cdots + u_nv_n$ is the **scalar product** or **inner product** of $\mathbf{u}$ and $\mathbf{v}$, written as a number ([[§49 Inner Product, Length, and Orthogonality#^def-49-1|Definition §49.1]]). The $n \times n$ matrix $\mathbf{u}\mathbf{v}^T$ is their **outer product**. By [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|Theorem §13.2]](d), $\mathbf{v}^T\mathbf{u} = (\mathbf{u}^T\mathbf{v})^T = \mathbf{u}^T\mathbf{v}$ and $\mathbf{v}\mathbf{u}^T = (\mathbf{u}\mathbf{v}^T)^T$. Outer products reappear in the column–row expansion of $AB$ ([[§17 Partitioned Matrices#^thm-17-3|Theorem §17.3]]) and in [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^ex-13-2|Example §13.2]](b). (Lay's Exercises 27–28.)
 
-^rem-13-4
-
+^rem-13-3
 > [!remark]- Remark: Numerical Notes
 > 1. The fastest way to compute $AB$ on a computer depends on how matrices are stored. The standard high-performance algorithms, such as those in LAPACK, compute $AB$ by columns, as in [[§12 Matrix Operations#^def-12-5|Definition §12.5]] (a C++ version computes it by rows).
 > 2. The column definition suits parallel processing: the columns of $B$ are assigned to different processors, which compute the corresponding columns of $AB$ independently and simultaneously.
 
-^rem-13-5
+^rem-13-4

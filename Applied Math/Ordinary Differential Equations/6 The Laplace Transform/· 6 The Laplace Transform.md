@@ -20,13 +20,14 @@ tags: [chapter, ordinary-differential-equations]
 - [[§29 Differential Equations with Discontinuous Forcing Functions]] — BDP 6.4
 - [[§30 Impulse Functions]] — BDP 6.5
 - [[§31★ The Convolution Integral]] — BDP 6.6 ★
+- [[§32 The Equation 2y″ + y′ + 2y = g(t)]] — BDP 6.6
 
 ## Central results
-- [[Laplace Transform of a Derivative]] (§22.1)
-- [[Table of Elementary Laplace Transforms]] (§22.6)
-- [[Second Shifting Theorem]] (§23.2)
-- [[First Shifting Theorem]] (§23.3)
-- [[Convolution Theorem for the Laplace Transform]] (§26.2)
+- [[Laplace Transform of a Derivative]] (§27.1)
+- [[Table of Elementary Laplace Transforms]] (§27.6)
+- [[Second Shifting Theorem]] (§28.2)
+- [[First Shifting Theorem]] (§28.3)
+- [[Convolution Theorem for the Laplace Transform]] (§31.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

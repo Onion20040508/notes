@@ -11,7 +11,6 @@ tags: [complex-variables, hub]
 - [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2: The ML-Inequality]], in [[§47 Upper Bounds for Moduli of Contour Integrals]]
 
 ## Its proof uses
-- [[§43 Contours#^def-43-5|Definition §43.5: Differentiable Arc]]
 - [[§43 Contours#^def-43-6|Definition §43.6: Length]]
 - [[§43 Contours#^def-43-7|Definition §43.7: Smooth Arc]]
 - [[§44 Contour Integrals#^def-44-1|Definition §44.1: Contour Integral]]

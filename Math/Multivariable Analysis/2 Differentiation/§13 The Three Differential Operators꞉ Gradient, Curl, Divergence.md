@@ -58,7 +58,7 @@ Geometrically, $\nabla \times \mathbf{F}$ measures the *local rotation* of the f
 
 ## Terminology for Vector Fields
 
-> [!definition] Definition §16.1: Conservative
+> [!definition] Definition §13.1: Conservative
 > A $C^1$ vector field $\mathbf{F}$ on a domain $D \subseteq \mathbb{R}^3$ is called:
 > - **Conservative** (or a **gradient field**) if $\mathbf{F} = \nabla f$ for some scalar field $f$ (called the *potential*).
 

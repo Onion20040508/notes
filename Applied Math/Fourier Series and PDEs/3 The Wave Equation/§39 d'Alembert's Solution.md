@@ -15,7 +15,7 @@ In the plucked-string example of §38 ([[§38 Solution of the Vibrating String P
 
 ## The General Solution of the Wave Equation
 
-> [!theorem] Theorem §48.1: The Wave Equation in Characteristic Coordinates
+> [!theorem] Theorem §39.1: The Wave Equation in Characteristic Coordinates
 > Let $w = x + ct$, $z = x - ct$, and $u(x, t) = v(w, z)$, where $v$ has continuous second partial derivatives. Then
 >
 > $$
@@ -57,7 +57,7 @@ In the plucked-string example of §38 ([[§38 Solution of the Vibrating String P
 > - The chain rule for a change of variables in the plane, rigorously: [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]; equality of mixed partials: [[§6 Equality of Mixed Partials#^thm-6-1|452 Thm. §6.1]].
 > - The lecture's version of the same computation: the operator factors as $\partial_t^2 - c^2\partial_x^2 = (\partial_t - c\partial_x)(\partial_t + c\partial_x)$, and the new coordinates are chosen so that the two factors become (multiples of) $\partial/\partial w$ and $\partial/\partial z$. The lines $x \pm ct = \text{const}$ are the **characteristics** of the wave equation; the classification of second-order equations as hyperbolic, parabolic and elliptic is [[§50★ Classification and Limitations#^def-50-1|Definition §50.1]] (Powers 4.6).
 
-> [!theorem] Theorem §48.2: d'Alembert's General Solution
+> [!theorem] Theorem §39.2: d'Alembert's General Solution
 > If $\psi$ and $\phi$ are any twice differentiable functions of one variable, then
 >
 > $$
@@ -137,7 +137,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^def-39-2
 
-> [!theorem] Theorem §49.1: d'Alembert's Solution of the Vibrating String Problem
+> [!theorem] Theorem §39.3: d'Alembert's Solution of the Vibrating String Problem
 > The solution of the vibrating string problem (2)–(5) is
 >
 > $$
@@ -237,7 +237,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^rem-39-3
 
-> [!theorem] Proposition §49.2: d'Alembert's Solution Agrees with the Series Solution
+> [!theorem] Proposition §39.4: d'Alembert's Solution Agrees with the Series Solution
 > Let $a_n$ and $b_n$ be the coefficients (10), (11) of the series solution [[§38 Solution of the Vibrating String Problem#^thm-38-2|Theorem §38.2]]. Then
 >
 > $$
@@ -278,7 +278,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 *Uses:* [[§38 Solution of the Vibrating String Problem#^thm-38-2|§38.2]], [[§39 d'Alembert's Solution#^thm-39-3|§39.3]], [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-4|Def. §11.4]]
 
-> [!example] Example §48.1: The Midterm Problem by d'Alembert's Method
+> [!example] Example §39.1: The Midterm Problem by d'Alembert's Method
 > For the problem of [[§38 Solution of the Vibrating String Problem#^ex-38-2|Example §38.2]], $u_{tt} = 4u_{xx}$ on $0 < x < \pi$ with fixed ends, $u(x, 0) = x$ and $u_t(x, 0) = \sin(2x)$: **(d)** express $\psi$ and $\phi$ in terms of the initial conditions, **(e)** expand them in Fourier series and write $u$ as d'Alembert's solution, **(f)** check that the result agrees with the series solution. (The exam names the two functions the other way round.)
 >
 > **(d)** Here $c = 2$, $a = \pi$, and
@@ -309,7 +309,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ^ex-39-1
 
-> [!example] Example §48.2: The Struck String by d'Alembert's Method
+> [!example] Example §39.2: The Struck String by d'Alembert's Method
 > For the piano string of [[§38 Solution of the Vibrating String Problem#^ex-38-3|Example §38.3]] ($f \equiv 0$, $g = 2x/a$ on $(0, a/2)$ and $2 - 2x/a$ on $(a/2, a)$): **(b)** find $\psi$ and $\phi$ and the solution by computing the Fourier expansions; **(c)** check that it agrees with the series solution.
 >
 > **(b)** With $f \equiv 0$, $\psi = \frac12(\bar G_e + A)$ and $\phi = -\frac12(\bar G_e + A)$, so $u = \frac12[\bar G_e(x + ct) - \bar G_e(x - ct)]$. Integrating $g/c$,
@@ -339,7 +339,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 ![[m341-31-2.svg]]
 *The struck string of Example §39.2, $u = \frac12[\bar G_e(x + ct) - \bar G_e(x - ct)]$ at $ct = 0.15a, 0.3a, 0.5a, a, 1.5a$. The string rises smoothly (no corners: the velocity, not the displacement, had the corner), reaches its largest displacement $a/(4c)$ at $ct = a/2$, is flat again at $ct = a$, and is the mirror image at $ct = 1.5a$; the period is $2a/c$.*
 
-> [!example] Example §48.3: Piecewise Initial Data
+> [!example] Example §39.3: Piecewise Initial Data
 > Solve by d'Alembert's method
 >
 > $$

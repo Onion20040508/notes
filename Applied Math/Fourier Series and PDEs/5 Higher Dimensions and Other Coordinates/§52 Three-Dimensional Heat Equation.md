@@ -17,7 +17,7 @@ This section derives the heat equation in a three-dimensional body by vector met
 
 Suppose we are investigating the temperature $u(P, t)$ in a body that occupies a region $\mathcal{R}$ in space, and let $\mathcal{V}$ be a subregion of $\mathcal{R}$ bounded by the surface $\mathcal{S}$, with outward unit normal $\hat{\mathbf{n}}$.
 
-> [!definition] Definition §65.1: Heat Flow Rate
+> [!definition] Definition §52.1: Heat Flow Rate
 > The **heat flow rate** at a point of $\mathcal{R}$ is a vector function $\mathbf{q}(P, t)$, measured in $\mathrm{J/(m^2\,s)}$ or similar units. The rate of heat flow through a small piece of surface of area $\Delta A$ is approximately $\hat{\mathbf{n}}\cdot\mathbf{q}\,\Delta A$, positive for outward flow; the inflow is its negative.
 >
 > *Powers: 5.2 (text), Equation (1)*
@@ -51,7 +51,7 @@ Suppose we are investigating the temperature $u(P, t)$ in a body that occupies a
 
 In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat capacity per unit volume.
 
-> [!theorem] Lemma §65.1: A Continuous Function with Zero Integral over Every Subregion Is Zero
+> [!theorem] Lemma §52.1: A Continuous Function with Zero Integral over Every Subregion Is Zero
 > Let $F$ be continuous on $\mathcal{R}$. If $\iiint_{\mathcal{V}} F\,dV = 0$ for every subregion $\mathcal{V}$ of $\mathcal{R}$, then $F = 0$ at every point of $\mathcal{R}$.
 >
 > *Powers: 5.2 (text)*
@@ -71,7 +71,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 *Uses:* [[§22 Properties of the Integral#^thm-22-4|452 Thm. §22.4]] (comparison theorem; stated there for double integrals, the same for triple integrals)
 
-> [!theorem] Theorem §65.2: The Local Heat Balance
+> [!theorem] Theorem §52.2: The Local Heat Balance
 > If $\mathbf{q}$ is continuously differentiable and $u_t$ and $g$ are continuous, the heat balance (1) for every subregion $\mathcal{V}$ implies
 >
 > $$
@@ -118,7 +118,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^def-52-5
 
-> [!theorem] Theorem §65.3: The Three-Dimensional Heat Equation
+> [!theorem] Theorem §52.3: The Three-Dimensional Heat Equation
 > If Fourier's law (5) holds with constant conductivity $\kappa$, the temperature satisfies
 >
 > $$
@@ -184,7 +184,7 @@ These are the three-dimensional forms of the conditions of the first, second and
 
 ## Examples: A Rectangular Block and Its Reductions
 
-> [!example] Example §65.1: Heat Conduction in a Rectangular Block
+> [!example] Example §52.1: Heat Conduction in a Rectangular Block
 > Set up the three-dimensional problem for a solid in the form of a rectangular parallelepiped $0 < x < a$, $0 < y < b$, $0 < z < c$, with no generation inside, if the faces $x = 0$ and $x = a$ are held at temperatures $T_0$ and $T_1$, the top and bottom are insulated, and the faces $y = 0$ and $y = b$ are exposed to a fluid at temperature $T_2$.
 >
 > Cartesian coordinates are appropriate. With $g = 0$, (6) is
@@ -228,7 +228,7 @@ These are the three-dimensional forms of the conditions of the first, second and
 
 A full three-dimensional problem is complicated to solve, so one looks for ways to reduce it to two or even one dimension. Here $c$ is the height of the block.
 
-> [!example] Example §65.2: Averaging over the Height
+> [!example] Example §52.2: Averaging over the Height
 > For the solution $u$ of (10)–(14), let $v$ be the temperature averaged over $0 < z < c$:
 >
 > $$
@@ -271,7 +271,7 @@ A full three-dimensional problem is complicated to solve, so one looks for ways 
 
 ^ex-52-2
 
-> [!example] Example §65.3: A Thin Plate Cooled on Its Faces
+> [!example] Example §52.3: A Thin Plate Cooled on Its Faces
 > If the $z$-variation cannot be ignored but the block is thin in the $y$-direction (a plate parallel to the $xz$-plane, with its broad faces $y = 0$, $y = b$ convecting), average in that direction instead:
 >
 > $$

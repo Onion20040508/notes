@@ -245,14 +245,14 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ^def-2-6
 
-> [!definition] Definition §2.8: Reciprocal Function
+> [!definition] Definition §2.7: Reciprocal Function
 > - The **reciprocal function** is $f(x) = x^{-1} = 1/x$. Its graph, $y = 1/x$ or $xy = 1$, is a hyperbola with the coordinate axes as asymptotes. It models quantities that are inversely proportional, such as **Boyle's Law**: at constant temperature, the volume $V$ of a gas is inversely proportional to the pressure $P$, $V = C/P$ with $C$ a constant.
 >
 > *Stewart: 1.2 (text)*
 
 ^def-2-7
 
-> [!definition] Definition §2.9: Inverse Square Law
+> [!definition] Definition §2.8: Inverse Square Law
 > - A model of the form $f(x) = C/x^2$ ($a = -2$) is an **inverse square law**: the first quantity is inversely proportional to the square of the second. For instance, the illumination $I$ of an object by a light source is $I = C/x^2$, where $x$ is the distance from the source. Gravitational force, loudness of sound and the electrostatic force between two charged particles obey inverse square laws.
 >
 > *Stewart: 1.2 (text)*
@@ -261,7 +261,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ## Rational Functions
 
-> [!definition] Definition §2.10: Rational Function
+> [!definition] Definition §2.9: Rational Function
 > A **rational function** is a ratio of two polynomials,
 >
 > $$
@@ -282,7 +282,7 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ## Algebraic Functions
 
-> [!definition] Definition §2.11: Algebraic and Transcendental Functions
+> [!definition] Definition §2.10: Algebraic and Transcendental Functions
 > A function is **algebraic** if it can be constructed from polynomials using algebraic operations: addition, subtraction, multiplication, division and taking roots. Every rational function is algebraic. Further examples:
 >
 > $$
@@ -381,7 +381,7 @@ The periodicity makes sine and cosine suitable for modeling repetitive phenomena
 
 ## Exponential Functions
 
-> [!definition] Definition §2.12: Exponential Function
+> [!definition] Definition §2.11: Exponential Function
 > The **exponential functions** are the functions $f(x) = b^x$, where the base $b$ is a positive constant. For $b \ne 1$ the domain is $(-\infty, \infty)$ and the range is $(0, \infty)$. The graph rises from left to right if $b > 1$ (for example $y = 2^x$) and falls if $b < 1$ (for example $y = (0.5)^x$); both pass through $(0, 1)$. Exponential functions model growth (if $b > 1$) and decline (if $b < 1$), for instance of populations. They are studied in detail in [[§4 Exponential Functions|§4]].
 >
 > *Stewart: 1.2 (text)*

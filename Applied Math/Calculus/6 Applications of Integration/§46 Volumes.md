@@ -54,7 +54,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 > [!remark]- Connections
 > - Rigorous treatment: with volume defined as [[§11 Lebesgue Measurable Sets#^def-11-5|Lebesgue measure]], the slicing formula $m(E) = \int m(E_x)\,dx$ is the Cross-Section Theorem, [[§25 Invariance Properties and Fubini's Theorem#^thm-25-4|551 Thm. §25.4]]. In this course it reappears as a double integral of the "height" ([[§115 Double Integrals Over Rectangles#^thm-115-2|Theorem §115.2]]) and as a triple integral computed by Fubini ([[§121 Applications of Triple Integrals#^thm-121-1|Theorem §121.1]]).
 
-> [!theorem] Theorem §53.1: Volume Does Not Depend on the Slicing
+> [!theorem] Theorem §46.1: Volume Does Not Depend on the Slicing
 > The volume given by [[§46 Volumes#^def-46-2|Definition §46.2]] is independent of how $S$ is situated with respect to the $x$-axis: no matter how we slice $S$ with parallel planes, we get the same value $V$.
 >
 > *Stewart: 6.2 (margin note)*
@@ -63,7 +63,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 
 *Stewart omits the proof ("it can be proved"). Once volume is defined as Lebesgue measure, the slicing formula holds in every direction by [[§25 Invariance Properties and Fubini's Theorem#^thm-25-4|551 Thm. §25.4]], and the measure itself is unchanged by translations ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-1|551 Thm. §25.1]]) and by rotations (a linear change of variables with $|\det| = 1$, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]).*
 
-> [!example] Example §53.1: The Volume of a Sphere
+> [!example] Example §46.1: The Volume of a Sphere
 > Show that the volume of a sphere of radius $r$ is $V = \frac43 \pi r^3$.
 >
 > Place the center at the origin. The plane $P_x$ ($-r \le x \le r$) cuts the sphere in a disk whose radius, by the Pythagorean Theorem, is $y = \sqrt{r^2 - x^2}$. So
@@ -108,7 +108,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 
 ^rem-46-1
 
-> [!example] Example §53.2: Disks
+> [!example] Example §46.2: Disks
 > **(a)** Find the volume of the solid obtained by rotating about the $x$-axis the region under $y = \sqrt{x}$ from $0$ to $1$.
 >
 > Slicing through $x$ gives a disk of radius $\sqrt{x}$, with area $A(x) = \pi(\sqrt{x})^2 = \pi x$; the approximating cylinder (a disk of thickness $\Delta x$) has volume $\pi x\,\Delta x$. The solid lies between $x = 0$ and $x = 1$, so
@@ -137,7 +137,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 
 ^ex-46-2
 
-> [!example] Example §53.3: Washers About Three Axes
+> [!example] Example §46.3: Washers About Three Axes
 > The region $\mathcal{R}$ enclosed by $y = x$ and $y = x^2$ lies between their intersection points $(0, 0)$ and $(1, 1)$; on $[0, 1]$, $x \ge x^2$. Find the volume of the solid obtained by rotating $\mathcal{R}$ about (a) the $x$-axis, (b) the line $y = 2$, (c) the line $x = -1$.
 >
 > **(a)** The cross-section in the plane $P_x$ is a washer with inner radius $x^2$ and outer radius $x$:
@@ -178,7 +178,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 
 [[§46 Volumes#^def-46-2|Definition §46.2]] applies to any solid whose cross-sections have areas that are easy to compute, not only to solids of revolution.
 
-> [!example] Example §53.4: Triangular Cross-Sections
+> [!example] Example §46.4: Triangular Cross-Sections
 > **(a)** A solid has a circular base of radius $1$, and its parallel cross-sections perpendicular to the base are equilateral triangles. Find its volume.
 >
 > Take the base to be the disk $x^2 + y^2 \le 1$ and slice perpendicular to the $x$-axis. At $x$ the cross-section is an equilateral triangle $ABC$ whose base $AB$ is the chord of the circle, with endpoint $B = (x, y)$, $y = \sqrt{1 - x^2}$. So $|AB| = 2y = 2\sqrt{1 - x^2}$, and an equilateral triangle with base $2y$ has height $\sqrt3\,y = \sqrt3 \sqrt{1 - x^2}$. Hence
@@ -207,7 +207,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 
 ^ex-46-4
 
-> [!example] Example §53.5: The Volume of a Pyramid
+> [!example] Example §46.5: The Volume of a Pyramid
 > Find the volume of a pyramid whose base is a square with side $L$ and whose height is $h$.
 >
 > Put the vertex $O$ at the origin and the $x$-axis along the central axis, so the base lies in the plane $x = h$. The plane $P_x$ ($0 \le x \le h$) cuts the pyramid in a square of side $s$. By similar triangles,

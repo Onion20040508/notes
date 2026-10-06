@@ -37,7 +37,7 @@ $$
 f(x) = \sum_{n=1}^\infty c_n\phi_n(x), \qquad l < x < r . \qquad (5)
 $$
 
-> [!theorem] Proposition §38.1: The Coefficients of an Eigenfunction Expansion
+> [!theorem] Proposition §30.1: The Coefficients of an Eigenfunction Expansion
 > If $f(x) = \sum_{n=1}^\infty c_n\phi_n(x)$ on $l < x < r$, and the series may be integrated term by term after multiplication by $\phi_m(x)p(x)$ (for instance, if it converges uniformly), then for every $m$
 >
 > $$
@@ -68,9 +68,9 @@ $$
 *Uses:* [[§29 Sturm–Liouville Problems#^thm-29-2|§29.2]], [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]
 
 > [!remark]- Connections
-> - The same formula in a finite-dimensional inner product space: the coefficient of $\mathbf{y}$ along an orthogonal basis vector $\mathbf{u}_j$ is $\langle\mathbf{y}, \mathbf{u}_j\rangle/\langle\mathbf{u}_j, \mathbf{u}_j\rangle$, [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]]; here the inner product is $\langle f, g\rangle_p = \int_l^r fgp\,dx$. In a Hilbert space, for an orthonormal set: [[§24 Orthonormal Sets and Bases#^lem-24-7|556 Lem. §24.7]].
+> - The same formula in a finite-dimensional inner product space: the coefficient of $\mathbf{y}$ along an orthogonal basis vector $\mathbf{u}_j$ is $\langle\mathbf{y}, \mathbf{u}_j\rangle/\langle\mathbf{u}_j, \mathbf{u}_j\rangle$, [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]]; here the inner product is $\langle f, g\rangle_p = \int_l^r fgp\,dx$. In a Hilbert space, for an orthonormal set: [[§27 Orthonormal Sets and Bases#^lem-27-7|556 Lem. §27.7]].
 
-> [!definition] Definition §38.1: Generalized Fourier Coefficients
+> [!definition] Definition §30.1: Generalized Fourier Coefficients
 > Let $\phi_1, \phi_2, \ldots$ be the eigenfunctions of a regular Sturm–Liouville problem (1)–(3) and $f$ a sectionally continuous function on $l < x < r$. The numbers
 >
 > $$
@@ -83,7 +83,7 @@ $$
 
 ^def-30-1
 
-> [!definition] Definition §38.2: Eigenfunction Expansion
+> [!definition] Definition §30.2: Eigenfunction Expansion
 > With the generalized Fourier coefficients $c_n$ of [[§30 Expansion in Series of Eigenfunctions#^def-30-1|Definition §30.1]], the series $\sum_{n=1}^\infty c_n\phi_n(x)$ is the **eigenfunction expansion** (generalized Fourier series) of $f$.
 >
 > *Powers: 2.8 (text); Source: 341 lectures 10.10, 10.17*
@@ -99,7 +99,7 @@ $$
 
 ## Convergence
 
-> [!theorem] Theorem §38.2: Convergence of Eigenfunction Expansions
+> [!theorem] Theorem §30.2: Convergence of Eigenfunction Expansions
 > Let $\phi_1, \phi_2, \ldots$ be the eigenfunctions of a regular Sturm–Liouville problem (1)–(3) in which the $\alpha$'s and $\beta$'s are not negative. If $f(x)$ is sectionally smooth on the interval $l < x < r$, then
 >
 > $$
@@ -127,7 +127,7 @@ $$
 *Powers omits the proof. For $s = p = 1$, $q = 0$ the theorem contains the convergence of Fourier sine and cosine series, [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1]], proved in [[§16★ Proof of Convergence#^thm-16-4|Theorem §16.4]] and [[§16★ Proof of Convergence#^cor-16-5|Corollary §16.5]]; the general case is not proved in the vault.*
 
 > [!remark]- Connections
-> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]], characterized by Parseval's equality in [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].
+> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]], characterized by Parseval's equality in [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]].
 > - The uniform-convergence clause has the form of the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], for the series of normalized eigenfunctions, which are uniformly bounded for a regular problem.
 > - Used in Electromagnetism: expanding boundary potentials in separated eigenfunctions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 
@@ -146,7 +146,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 > \int_l^r f^2(x)p(x)\,dx = \sum_{n=1}^\infty a_nc_n^2 = \sum_{n=1}^\infty b_n^2 ,
 > $$
 >
-> from which $c_n\sqrt{a_n} = b_n \to 0$. The inequality $\sum b_n^2 \le \int f^2p$ (Bessel's inequality) holds for any orthonormal set and is [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]]; equality for every $f$ is the statement that the set is complete. For example, for $\phi'' + \lambda^2\phi = 0$, $\phi'(0) = \phi'(1) = 0$ the normalized eigenfunctions are $\psi_0 = 1$ and $\psi_n = \sqrt2\cos(n\pi x)$, $n \ge 1$.
+> from which $c_n\sqrt{a_n} = b_n \to 0$. The inequality $\sum b_n^2 \le \int f^2p$ (Bessel's inequality) holds for any orthonormal set and is [[§27 Orthonormal Sets and Bases#^thm-27-5|556 Thm. §27.5]]; equality for every $f$ is the statement that the set is complete. For example, for $\phi'' + \lambda^2\phi = 0$, $\phi'(0) = \phi'(1) = 0$ the normalized eigenfunctions are $\psi_0 = 1$ and $\psi_n = \sqrt2\cos(n\pi x)$, $n \ge 1$.
 
 ^rem-30-1
 
@@ -157,7 +157,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 
 ## Examples
 
-> [!example] Example §38.1: Coefficients for the Convection Eigenfunctions
+> [!example] Example §30.1: Coefficients for the Convection Eigenfunctions
 > The transient $w = u - v$ of the convection problem of [[§28 Example꞉ Convection#^thm-28-3|Theorem §28.3]] satisfies $w_{xx} = \frac1kw_t$ on $0 < x < a$ with $w(0, t) = 0$, $hw(a, t) + \kappa w_x(a, t) = 0$ and $w(x, 0) = g(x)$. Its basic solutions are $\sin(\lambda_nx)e^{-\lambda_n^2kt}$, where $\tan(\lambda_na) = -\kappa\lambda_n/h$, and
 >
 > $$
@@ -180,7 +180,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 
 ^ex-30-1
 
-> [!example] Example §38.2: A Generalized Fourier Basis on 1 < x < b
+> [!example] Example §30.2: A Generalized Fourier Basis on 1 < x < b
 > The eigenfunctions of [[§29 Sturm–Liouville Problems#^ex-29-4|Example §29.4]] are $\phi_n(x) = \sin(n\pi\ln x/\ln b)$, $n = 1, 2, \ldots$, for the problem $x(x\phi')' = \mu\phi$, $\phi(1) = \phi(b) = 0$. Does $\{\phi_n\}$ form a generalized Fourier basis on $(1, b)$? If so, write the expansion of a function $f$ and its coefficients, and the solution of
 >
 > $$
@@ -224,7 +224,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 ![[m341-24-1.svg]]
 *Partial sums $\sum_{n=1}^N c_n\sin(n\pi\ln x)$ of the expansion of $f(x) = x$ in Example §30.2, for $b = e$, where $c_n = 2n\pi(1 - (-1)^ne)/(1 + n^2\pi^2)$. Inside $(1, e)$ they approach $x$ (dashed); at both ends every eigenfunction vanishes, so the sums are pinned to $0$ and overshoot near the ends, as a Fourier sine series does for a function that is not zero at the endpoints.*
 
-> [!example] Example §38.3: Expanding x² in the Eigenfunctions cos(λₙx)
+> [!example] Example §30.3: Expanding x² in the Eigenfunctions cos(λₙx)
 > Find the eigenvalues and eigenfunctions of
 >
 > $$

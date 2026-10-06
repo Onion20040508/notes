@@ -20,10 +20,11 @@ tags: [chapter, calculus]
 - [[§142 Trigonometry]] — Stewart Appendix D
 - [[§143 Sigma Notation]] — Stewart Appendix E
 - [[§144 The Logarithm Defined as an Integral]] — Stewart Appendix G
+- [[§145 General Exponential and Logarithmic Functions]] — Stewart Appendix G
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§139 Numbers, Inequalities, and Absolute Values#^prop-139-3|Proposition §139.3: The Square Root of a Square]]: 255 later results
-- [[§140 Coordinate Geometry and Lines#^thm-140-1|Theorem §140.1: Distance Formula]]: 253 later results
-- [[§142 Trigonometry#^thm-142-3|Theorem §142.3: Reciprocal and Quotient Identities]]: 244 later results
-- [[§142 Trigonometry#^thm-142-4|Theorem §142.4: Pythagorean Identities]]: 243 later results
+- [[§139 Numbers, Inequalities, and Absolute Values#^prop-139-3|Proposition §139.3: The Square Root of a Square]]: 268 later results
+- [[§140 Coordinate Geometry and Lines#^thm-140-1|Theorem §140.1: Distance Formula]]: 266 later results
+- [[§142 Trigonometry#^thm-142-3|Theorem §142.3: Reciprocal and Quotient Identities]]: 257 later results
+- [[§142 Trigonometry#^thm-142-4|Theorem §142.4: Pythagorean Identities]]: 256 later results

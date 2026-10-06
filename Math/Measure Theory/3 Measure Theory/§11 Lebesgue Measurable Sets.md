@@ -15,7 +15,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ## The Carathéodory Criterion
 
-> [!definition] Definition §12.1: Lebesgue Measurable Set
+> [!definition] Definition §11.1: Lebesgue Measurable Set
 > A set $E \subseteq \mathbb{R}^n$ is called **Lebesgue measurable** (or **L-measurable**) if for every $T \subseteq \mathbb{R}^n$, we have
 >
 > $$
@@ -62,7 +62,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 > [!remark]- Connections
 > - Jordan-content counterpart, which asks inner and outer content to agree: [[§20 Multivariable Integration#^def-20-7|452 Def. §20.7]].
 
-> [!example] Example §12.1: Sets of Measure Zero are Measurable
+> [!example] Example §11.1: Sets of Measure Zero are Measurable
 > If $m^*(E) = 0$, then $E$ is L-measurable.
 
 ^ex-11-1
@@ -84,7 +84,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 > - Examples: finite and countable sets ([[§10 Lebesgue Outer Measure#^ex-10-2|Ex. §10.2]]) and the [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Cantor set]].
 > - Underlies “almost everywhere”: [[§16 Limits and Positive Parts of Measurable Functions#^def-16-2|Def. §16.2]].
 
-> [!definition] Definition §12.2: The Collection of Measurable Sets
+> [!definition] Definition §11.2: The Collection of Measurable Sets
 > We denote the collection of all L-measurable sets by $\mathcal{M}$:
 >
 > $$
@@ -95,7 +95,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ## Basic Properties of Measurable Sets
 
-> [!theorem] Theorem §12.1: Closure Properties of $\mathcal{M}$
+> [!theorem] Theorem §11.1: Closure Properties of $\mathcal{M}$
 > The collection $\mathcal{M}$ satisfies:
 > 1. If $E \in \mathcal{M}$, then $E^c \in \mathcal{M}$.
 > 2. If $E_1, E_2 \in \mathcal{M}$, then $E_1 \cup E_2 \in \mathcal{M}$.
@@ -155,7 +155,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ## Algebras and $\sigma$-Algebras
 
-> [!definition] Definition §12.3: Algebra
+> [!definition] Definition §11.3: Algebra
 > Let $X$ be a set. A collection $\mathcal{A}$ of subsets of $X$ is called an **algebra** if:
 > 1. $E \in \mathcal{A} \Rightarrow E^c \in \mathcal{A}$
 > 2. $E_1, E_2 \in \mathcal{A} \Rightarrow E_1 \cup E_2 \in \mathcal{A}$
@@ -169,7 +169,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ^rem-11-3
 
-> [!definition] Definition §12.4: $\sigma$-Algebra
+> [!definition] Definition §11.4: $\sigma$-Algebra
 > An algebra $\mathcal{A}$ is called a **$\sigma$-algebra** if additionally:
 > 3. $E_j \in \mathcal{A}$ for $j = 1, 2, \ldots \Rightarrow \bigcup_{j=1}^{\infty} E_j \in \mathcal{A}$
 
@@ -178,7 +178,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 > [!remark]- Connections
 > - Compare the axioms of a topology (arbitrary unions, finite intersections, no complements): [[§1 Topological Spaces#^def-1-1|590 Def. §1.1]]; the two meet in the [[§12 Borel Sets and Measure Spaces#^def-12-2|Borel σ-algebra]].
 
-> [!example] Example §12.2: Examples of $\sigma$-Algebras
+> [!example] Example §11.2: Examples of $\sigma$-Algebras
 > For any set $X$:
 > - $\mathcal{P}(X) = \{A \mid A \subseteq X\}$ (the [[§4 Uncountability#^def-4-1|power set]]) is a $\sigma$-algebra.
 > - $\mathcal{A} = \{\emptyset, X\}$ is a $\sigma$-algebra (the trivial $\sigma$-algebra).
@@ -187,7 +187,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ## $\mathcal{M}$ is a $\sigma$-Algebra
 
-> [!theorem] Lemma §12.2: Finite Additivity for Disjoint Measurable Sets
+> [!theorem] Lemma §11.2: Finite Additivity for Disjoint Measurable Sets
 > Let $E_1, E_2, \ldots, E_k \in \mathcal{M}$ be pairwise disjoint. Then for any $T \subseteq \mathbb{R}^n$:
 >
 > $$
@@ -227,7 +227,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 *Uses:* [[§11 Lebesgue Measurable Sets#^def-11-1|Def. §11.1]], [[§11 Lebesgue Measurable Sets#^thm-11-1|§11.1]]
 
-> [!theorem] Theorem §12.3: $\mathcal{M}$ is a $\sigma$-Algebra with Countable Additivity
+> [!theorem] Theorem §11.3: $\mathcal{M}$ is a $\sigma$-Algebra with Countable Additivity
 > The collection $\mathcal{M}$ of L-measurable sets is a $\sigma$-algebra. Moreover, if $E_j \in \mathcal{M}$ for $j = 1, 2, \ldots$ are pairwise disjoint, then
 >
 > $$
@@ -296,7 +296,7 @@ The answer is **no** in general. [[§10 Lebesgue Outer Measure#^def-10-4|Outer m
 
 ## Lebesgue Measure
 
-> [!definition] Definition §12.5: Lebesgue Measure
+> [!definition] Definition §11.5: Lebesgue Measure
 > For $E \in \mathcal{M}$, we define the **Lebesgue measure** of $E$ by
 >
 > $$

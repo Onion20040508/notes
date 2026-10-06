@@ -54,7 +54,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ## The Fourier Integral Theorem
 
-> [!definition] Definition §24.1: Fourier Integral Coefficient Functions
+> [!definition] Definition §18.1: Fourier Integral Coefficient Functions
 > Let $f(x)$ be defined for $-\infty < x < \infty$ with $\int_{-\infty}^{\infty}|f(x)|\,dx$ finite. The functions
 >
 > $$
@@ -67,7 +67,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ^def-18-1
 
-> [!definition] Definition §24.2: Fourier Integral
+> [!definition] Definition §18.2: Fourier Integral
 > With the coefficient functions of [[§18 Fourier Integral#^def-18-1|Definition §18.1]],
 >
 > $$
@@ -80,7 +80,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ^def-18-2
 
-> [!theorem] Theorem §24.1: Fourier Integral Representation Theorem
+> [!theorem] Theorem §18.1: Fourier Integral Representation Theorem
 > Let $f(x)$ be sectionally smooth on every finite interval, and let $\int_{-\infty}^{\infty}|f(x)|\,dx$ be finite. Then at every point $x$,
 >
 > $$
@@ -96,7 +96,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 *Powers omits the proof, and no other subject in the vault proves it. It is the continuous analogue of [[§16★ Proof of Convergence#^thm-16-4|Theorem §16.4]]: Powers' Exercise 1.9.8 rewrites $\int_0^{L}(A\cos\lambda x + B\sin\lambda x)\,d\lambda$ as Fourier's single integral $\frac1\pi\int_{-\infty}^{\infty} f(t)\frac{\sin(L(t - x))}{t - x}\,dt$, whose kernel plays the role of the Dirichlet kernel.*
 
 > [!remark]- Connections
-> - The coefficient integrals (9) converge absolutely, since $|f(x)\cos\lambda x| \le |f(x)|$ ([[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]]), and $|A(\lambda)|, |B(\lambda)| \le \frac1\pi\int|f|$. In complex form this is the boundedness of the Fourier transform from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]], where dominated convergence ([[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]) also shows that $A$ and $B$ are continuous.
+> - The coefficient integrals (9) converge absolutely, since $|f(x)\cos\lambda x| \le |f(x)|$ ([[§36 Improper Integrals#^thm-36-2|451 Thm. §36.2]]), and $|A(\lambda)|, |B(\lambda)| \le \frac1\pi\int|f|$. In complex form this is the boundedness of the Fourier transform from $L^1$ to $L^\infty$, [[§30 Boundedness and Continuity#^ex-30-2|556 Ex. §30.2]], where dominated convergence ([[§23 The Dominated Convergence Theorem#^thm-23-3|551 Thm. §23.3]]) also shows that $A$ and $B$ are continuous.
 > - The two analytic facts a proof needs: $A(\lambda), B(\lambda) \to 0$ as $\lambda \to \infty$ (the Riemann–Lebesgue lemma for absolutely integrable $f$, via the density of step functions, [[§24 The L¹ Space and Density Theorems#^thm-24-6|551 Thm. §24.6]]; the series version is [[§16★ Proof of Convergence#^lem-16-3|Lemma §16.3]]), and the exchange of the $x$- and $\lambda$-integrations in Exercise 1.9.8, which is Fubini's theorem on $\mathbb{R} \times [0, L]$, [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]].
 > - Used in Complex Variables: inverting the Laplace transform by the Bromwich integral is this theorem in disguise (its complex form, [[§19★ Complex Methods#^thm-19-2|Theorem §19.2]], applied to $e^{-\gamma t}f(t)$ extended by zero to $t < 0$), [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]], whose proof is complete relative to it.
 
@@ -113,11 +113,11 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 > 1. Check the hypotheses: $f$ sectionally smooth on every finite interval and $\int_{-\infty}^{\infty}|f|\,dx < \infty$.
 > 2. Compute $A(\lambda)$ and $B(\lambda)$ by (9). Use symmetry first: $B = 0$ for even $f$, $A = 0$ for odd $f$; integrate only over the set where $f \ne 0$. Integrals like $\int_0^\infty e^{-x}\cos\lambda x\,dx$ go by integrating by parts twice.
 > 3. Write $f(x) = \int_0^{\infty}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)d\lambda$, and note that at a jump the integral gives the average $\frac12(f(x+) + f(x-))$.
-> 4. For $f$ given only on $0 < x < \infty$, choose the cosine or sine integral (Definition §18.4); in heat problems the boundary condition at $x = 0$ decides ($u(0, t) = 0$: sine; $u_x(0, t) = 0$: cosine).
+> 4. For $f$ given only on $0 < x < \infty$, choose the cosine or sine integral (Definitions §18.3–§18.4); in heat problems the boundary condition at $x = 0$ decides ($u(0, t) = 0$: sine; $u_x(0, t) = 0$: cosine).
 
 ^rem-18-3
 
-> [!example] Example §24.1: A One-Sided Exponential
+> [!example] Example §18.1: A One-Sided Exponential
 > Let $f(x) = e^{-x}$ for $0 < x$ and $f(x) = 0$ for $x < 0$.
 >
 > **(a) The series on $-a < x < a$.** For any $a > 0$, integrating $e^{-x}\cos\big(\frac{n\pi x}{a}\big)$ and $e^{-x}\sin\big(\frac{n\pi x}{a}\big)$ over $0 < x < a$ gives
@@ -156,7 +156,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 *Chain: the one-sided exponential returns as an initial temperature in [[§36 Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The One-Sided Exponential|Chapter 2]].*
 
-> [!example] Example §24.2: A Rectangular Pulse
+> [!example] Example §18.2: A Rectangular Pulse
 > The function $f(x) = 1$ for $|x| < 1$, $f(x) = 0$ for $|x| > 1$ is even, so $B(\lambda) = 0$, and
 >
 > $$
@@ -187,7 +187,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 > [!remark]- Connections
 > - See also: [[§89★ An Indented Path#^ex-89-1|342 Ex. §89.1]] (Dirichlet's integral $\int_0^\infty \frac{\sin x}{x}\,dx = \frac\pi2$, the value at $x = 0$, by an indented contour).
 
-> [!example] Example §24.3: A Triangular Pulse
+> [!example] Example §18.3: A Triangular Pulse
 > Find the Fourier integral representation of $f(x) = 1 - |x|$ for $|x| < 1$, $f(x) = 0$ for $|x| > 1$.
 >
 > $f$ is even, so $B(\lambda) = \frac1\pi\int f(x)\sin(\lambda x)\,dx = 0$. Integrating by parts,
@@ -238,7 +238,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 ^def-18-4
 
 > [!theorem] Corollary §18.2: Cosine and Sine Integrals Converge
-> Under the hypotheses of Definition §18.4, at every $x > 0$ both the cosine and the sine integral of $f$ equal $\frac12\big(f(x+) + f(x-)\big)$. At $x = 0$ the cosine integral equals $f(0+)$ and the sine integral equals $0$.
+> Under the hypotheses of Definitions §18.3–§18.4, at every $x > 0$ both the cosine and the sine integral of $f$ equal $\frac12\big(f(x+) + f(x-)\big)$. At $x = 0$ the cosine integral equals $f(0+)$ and the sine integral equals $0$.
 >
 > *Powers: 1.9 (text)*
 
@@ -261,7 +261,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 
 *Uses:* [[§18 Fourier Integral#^thm-18-1|§18.1]], [[§18 Fourier Integral#^def-18-1|Def. §18.1]], [[§18 Fourier Integral#^def-18-2|Def. §18.2]], [[§18 Fourier Integral#^def-18-3|Def. §18.3]], [[§18 Fourier Integral#^def-18-4|Def. §18.4]]
 
-> [!example] Example §24.4: The Two-Sided Exponential and Its Derivative
+> [!example] Example §18.4: The Two-Sided Exponential and Its Derivative
 > **(a)** Find the Fourier integral representation of $f(x) = e^{-|x|}$. The function is even, so $B(\lambda) = 0$, and by Example §18.1(b)
 >
 > $$
@@ -274,7 +274,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 > e^{-|x|} = \frac2\pi\int_0^{\infty}\frac{\cos(\lambda x)}{1 + \lambda^2}\,d\lambda, \qquad -\infty < x < \infty .
 > $$
 >
-> This is also the Fourier cosine integral of $e^{-x}$, $x > 0$ (Definition §18.4).
+> This is also the Fourier cosine integral of $e^{-x}$, $x > 0$ (Definition §18.3).
 >
 > **(b)** The odd companion $f_-(x) = e^{-x}$ ($x > 0$), $-e^{x}$ ($x < 0$), which is the sine-integral extension of $e^{-x}$, has $A(\lambda) = 0$ and
 >
@@ -301,7 +301,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 > [!remark]- Connections
 > - See also: [[§87 Improper Integrals from Fourier Analysis#^ex-87-2|342 Ex. §87.2]] (the integral in (a) evaluated by residues for every $x$, without the Fourier integral theorem); sine integrals like (b), whose integrands decay only like $1/\lambda$, need Jordan's lemma, [[§88★ Jordan's Lemma#^thm-88-2|342 Thm. §88.2]].
 
-> [!example] Example §24.5: A Half Sine Wave, Three Ways
+> [!example] Example §18.5: A Half Sine Wave, Three Ways
 > Let $f(x) = \sin(x)$ for $0 < x < \pi$ and $f(x) = 0$ for $\pi < x$.
 >
 > **Sine integral.** Since $f = 0$ for $x > \pi$, with $\sin x\sin\lambda x = \frac12\big(\cos(\lambda - 1)x - \cos(\lambda + 1)x\big)$,

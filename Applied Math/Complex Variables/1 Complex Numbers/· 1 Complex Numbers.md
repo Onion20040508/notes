@@ -10,8 +10,8 @@ tags: [chapter, complex-variables]
 *Brown–Churchill, Chapter 1.*
 
 **Builds on:** [[· 4 Integrals|4 Integrals]] (2)
-**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (22), [[· 3 Elementary Functions|3 Elementary Functions]] (17), [[· 4 Integrals|4 Integrals]] (7), [[· 5 Series|5 Series]] (11), [[· 6 Residues and Poles|6 Residues and Poles]] (5), [[· 7 Applications of Residues|7 Applications of Residues]] (4), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (8), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (4)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (3), [[Topology]] (5), [[Linear Algebra]] (16), [[Applied Linear Algebra]] (14), [[Ordinary Differential Equations]] (1), [[Calculus]] (3), [[Functional Analysis]] (1), [[Logic and Proofs]] (1), [[Differentiable Manifolds]] (1)
+**Used by:** [[· 2 Analytic Functions|2 Analytic Functions]] (23), [[· 3 Elementary Functions|3 Elementary Functions]] (18), [[· 4 Integrals|4 Integrals]] (9), [[· 5 Series|5 Series]] (11), [[· 6 Residues and Poles|6 Residues and Poles]] (5), [[· 7 Applications of Residues|7 Applications of Residues]] (4), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (8), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (4)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6), [[Topology]] (5), [[Linear Algebra]] (16), [[Applied Linear Algebra]] (15), [[Ordinary Differential Equations]] (1), [[Calculus]] (3), [[Functional Analysis]] (1), [[Logic and Proofs]] (1), [[Differentiable Manifolds]] (1)
 
 ## Sections
 - [[§1 Sums and Products]] — B&C Sec. 1

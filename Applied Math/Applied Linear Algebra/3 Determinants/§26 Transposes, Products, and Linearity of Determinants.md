@@ -15,7 +15,7 @@ The section also shows that $\det A^T = \det A$ (so columns behave like rows), t
 
 ## Column Operations
 
-> [!theorem] Theorem §32.1: The Determinant of the Transpose
+> [!theorem] Theorem §26.1: The Determinant of the Transpose
 > If $A$ is an $n \times n$ matrix, then $\det A^T = \det A$.
 >
 > *Lay: Theorem 5 (3.2)*
@@ -29,7 +29,7 @@ The section also shows that $\det A^T = \det A$ (so columns behave like rows), t
 
 *Uses:* [[§24 Introduction to Determinants#^def-24-2|Def. §24.2]], [[§24 Introduction to Determinants#^thm-24-1|§24.1]]
 
-> [!theorem] Corollary §32.2: Column Operations
+> [!theorem] Corollary §26.2: Column Operations
 > Each statement of [[§25 Properties of Determinants#^thm-25-1|Theorem §25.1]] remains true when the word *row* is replaced everywhere by *column*: a column replacement does not change $\det A$, interchanging two columns changes its sign, and multiplying a column by $k$ multiplies $\det A$ by $k$. Likewise [[§25 Properties of Determinants#^cor-25-5|Corollary §25.5]] gives $\det A = 0$ when two columns are equal.
 >
 > *Lay: 3.2 (text after Theorem 5)*
@@ -45,7 +45,7 @@ The section also shows that $\det A^T = \det A$ (so columns behave like rows), t
 
 Column operations are useful for theoretical purposes and for hand computation; for simplicity Lay performs only row operations in numerical work. The lecture uses both in the next computation.
 
-> [!theorem] Proposition §32.3: The Vandermonde Determinant
+> [!theorem] Proposition §26.3: The Vandermonde Determinant
 > For numbers $z_1, \ldots, z_n$ let $\Delta(z_1, \ldots, z_n)$ be the $n \times n$ matrix whose $j$th column is $(1, z_j, z_j^2, \ldots, z_j^{n-1})$:
 >
 > $$
@@ -93,7 +93,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 
 ## Determinants and Matrix Products
 
-> [!theorem] Theorem §32.4: Multiplicative Property
+> [!theorem] Theorem §26.4: Multiplicative Property
 > If $A$ and $B$ are $n \times n$ matrices, then $\det AB = (\det A)(\det B)$.
 >
 > *Lay: Theorem 6 (3.2)*
@@ -130,9 +130,8 @@ Column operations are useful for theoretical purposes and for hand computation; 
 >
 > *Source: 235 lecture L12*
 
-^rem-26-4
-
-> [!example] Example §32.1: Checking the Multiplicative Property
+^rem-26-1
+> [!example] Example §26.1: Checking the Multiplicative Property
 > Let $A = \begin{bmatrix} 6 & 1 \\ 3 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 3 \\ 1 & 2 \end{bmatrix}$. Then
 >
 > $$
@@ -171,7 +170,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 
 *Uses:* [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|§26.4]], [[§25 Properties of Determinants#^thm-25-1|§25.1]], [[§24 Introduction to Determinants#^thm-24-2|§24.2]]
 
-> [!example] Example §32.2: Determinants of Matrix Expressions
+> [!example] Example §26.2: Determinants of Matrix Expressions
 > Let $A$ and $B$ be $3 \times 3$ matrices with $\det A = -3$ and $\det B = 4$. Then
 >
 > $$

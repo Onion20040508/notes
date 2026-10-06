@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§14 The Vitali Set and the Cantor Set#^thm-14-6]]
 
 ## Treated in
-- [[§14 The Vitali Set and the Cantor Set#^thm-14-6|Theorem §14.6: The Vitali Set is Not Measurable]], in [[§12 Borel Sets and Measure Spaces]]
+- [[§14 The Vitali Set and the Cantor Set#^thm-14-6|Theorem §14.6: The Vitali Set is Not Measurable]], in [[§14 The Vitali Set and the Cantor Set]]
 
 ## Its proof uses
 - [[§10 Lebesgue Outer Measure#^prop-10-1|Proposition §10.1: Basic Properties of Outer Measure]]

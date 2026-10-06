@@ -15,7 +15,7 @@ The tests so far apply only to series with positive terms. This section handles 
 
 ## Alternating Series
 
-> [!definition] Definition §99.1: Alternating Series
+> [!definition] Definition §85.1: Alternating Series
 > An **alternating series** is a series whose terms are alternately positive and negative, for example
 >
 > $$
@@ -29,7 +29,7 @@ The tests so far apply only to series with positive terms. This section handles 
 
 ^def-85-1
 
-> [!theorem] Theorem §99.1: The Alternating Series Test
+> [!theorem] Theorem §85.1: The Alternating Series Test
 > If the alternating series
 >
 > $$
@@ -92,7 +92,7 @@ The tests so far apply only to series with positive terms. This section handles 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the [[§14 Series#^def-14-4|Cauchy criterion]] via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of [[§85 Alternating Series and Absolute Convergence#^thm-85-2|Theorem §85.2]].
 
-> [!example] Example §99.1: Checking the Two Conditions
+> [!example] Example §85.1: Checking the Two Conditions
 > **(a)** The **alternating harmonic series** $\displaystyle 1 - \frac12 + \frac13 - \frac14 + \cdots = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$ satisfies
 >
 > $$
@@ -113,7 +113,7 @@ The tests so far apply only to series with positive terms. This section handles 
 
 ^ex-85-1
 
-> [!example] Example §99.2: Decreasing Only Eventually
+> [!example] Example §85.2: Decreasing Only Eventually
 > Test $\displaystyle\sum_{n=1}^{\infty} (-1)^{n+1} \frac{n^2}{n^3 + 1}$ for convergence or divergence.
 >
 > The series is alternating, with $b_n = n^2/(n^3 + 1)$.
@@ -142,7 +142,7 @@ The tests so far apply only to series with positive terms. This section handles 
 
 For a series satisfying the conditions of the Alternating Series Test, the error made in using $s_n$ for $s$, the remainder $R_n = s - s_n$, is smaller than the first neglected term.
 
-> [!theorem] Theorem §99.2: Alternating Series Estimation Theorem
+> [!theorem] Theorem §85.2: Alternating Series Estimation Theorem
 > If $s = \sum (-1)^{n-1} b_n$, where $b_n > 0$, is the sum of an alternating series that satisfies
 >
 > $$
@@ -170,7 +170,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 
 *Uses:* [[§85 Alternating Series and Absolute Convergence#^thm-85-1|§85.1]] (and its proof), [[§83 The Integral Test and Estimates of Sums#^def-83-1|Def. §83.1]]
 
-> [!example] Example §99.3: Three Decimal Places
+> [!example] Example §85.3: Three Decimal Places
 > Find the sum of $\displaystyle\sum_{n=0}^{\infty} \frac{(-1)^n}{n!}$ correct to three decimal places. (By definition $0! = 1$.)
 >
 > **Convergence.** The series is alternating with $b_n = 1/n!$, and
@@ -210,7 +210,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 
 ## Absolute Convergence and Conditional Convergence
 
-> [!definition] Definition §99.2: Absolutely Convergent
+> [!definition] Definition §85.2: Absolutely Convergent
 > A series $\sum a_n$ is **absolutely convergent** if the series of absolute values
 >
 > $$
@@ -223,7 +223,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 
 ^def-85-2
 
-> [!definition] Definition §99.3: Conditionally Convergent
+> [!definition] Definition §85.3: Conditionally Convergent
 > A series $\sum a_n$ is **conditionally convergent** if it is convergent but not absolutely convergent, that is, if $\sum a_n$ converges but $\sum |a_n|$ diverges. For example, the alternating harmonic series $\sum (-1)^{n-1}/n$ converges ([[§85 Alternating Series and Absolute Convergence#^ex-85-1|Example §85.1]]), but its series of absolute values is the harmonic series $\sum 1/n$, which diverges: it is conditionally convergent.
 >
 > *Stewart: 11.5, Definition 2; Example 11.5.6*
@@ -262,7 +262,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 
 Absolute convergence is a stronger type of convergence. An absolutely convergent series converges whatever the signs of its terms; the alternating harmonic series would diverge if all its negative terms were made positive. This makes [[§85 Alternating Series and Absolute Convergence#^thm-85-3|Theorem §85.3]] useful when the signs change irregularly.
 
-> [!example] Example §99.4: Irregular Signs
+> [!example] Example §85.4: Irregular Signs
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{\cos n}{n^2} = \frac{\cos 1}{1^2} + \frac{\cos 2}{2^2} + \frac{\cos 3}{3^2} + \cdots$ is convergent or divergent.
 >
 > The series has positive and negative terms, but it is not alternating: the first term is positive, the next three are negative, the following three positive. The signs change irregularly. Apply the Direct Comparison Test to the series of absolute values $\sum |\cos n|/n^2$. Since $|\cos n| \le 1$ for all $n$,
@@ -277,7 +277,7 @@ Absolute convergence is a stronger type of convergence. An absolutely convergent
 
 ^ex-85-4
 
-> [!example] Example §99.5: Absolutely, Conditionally, or Not at All
+> [!example] Example §85.5: Absolutely, Conditionally, or Not at All
 > Determine whether each series is absolutely convergent, conditionally convergent, or divergent.
 >
 > $$

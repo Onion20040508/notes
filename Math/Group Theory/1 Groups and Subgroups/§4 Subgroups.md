@@ -21,7 +21,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^def-26-2|590 Definition §26.2: Subgroup]]; linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
-> - Topological version: a subgroup of a topological group, with the subspace topology, is a topological group, [[§10 Topological Groups and Classical Matrix Groups#^prop-10-1|591 Prop. §10.1]].
+> - Topological version: a subgroup of a topological group, with the subspace topology, is a topological group, [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|591 Prop. §11.1]].
 
 > [!theorem] Proposition §4.1: A Subset That Is a Group Is a Subgroup
 > A subgroup of $G$ is a group under the restricted operation, with the same identity and inverse map. Conversely, let $H \subseteq G$ be closed under the operation of $G$ and suppose $H$ is a group under the restricted operation. Then the identity of $H$ is $e_G$ and inverses in $H$ are inverses in $G$; hence $H$ is a subgroup of $G$.
@@ -262,7 +262,7 @@ tags: [group-theory, math493]
 
 ## Order of an Element and Cyclic Groups
 
-> [!definition] Definition §4.5: Order of a Group; Order of an Element; Cyclic Groups
+> [!definition] Definition §4.6: Order of a Group; Order of an Element; Cyclic Groups
 > The **order** of a group $G$ is its number of elements, written $|G|$ (possibly infinite); this is the same notation as for the size of any set.
 >
 > An element $g \in G$ has **finite order** if there is some positive integer $N$ with $g^N = e$ (Worksheet 3's formulation); in that case the least such $N$ is the **order** of $g$, written $\operatorname{ord}(g)$. If no such $N$ exists, $g$ has **infinite order**. The identity is the only element of order $1$.
@@ -271,7 +271,7 @@ tags: [group-theory, math493]
 >
 > *Source: WS 3; cf. MATH 412*
 
-^def-4-5
+^def-4-6
 
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (cyclic group, generator).
@@ -291,7 +291,7 @@ tags: [group-theory, math493]
 
 ^pf-4-8
 
-*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
+*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
 
 > [!remark]- Connections
 > - The pigeonhole step is [[§11 Properties of Finite Sets#^thm-11-2|250 Thm. §11.2]]; well-ordering is proved from induction in [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]].

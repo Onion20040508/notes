@@ -21,7 +21,7 @@ f(x, y) = \frac{\sin(x^2 + y^2)}{x^2 + y^2} \qquad\text{and}\qquad g(x, y) = \fr
 $$
 near the origin, where neither is defined. A table of values suggests that $f(x, y)$ approaches $1$ while $g(x, y)$ approaches no particular number. Both guesses are correct: for $f$, put $t = x^2 + y^2$, which tends to $0^+$, and use $\frac{\sin t}{t} \to 1$; for $g$, see [[§107 Limits and Continuity#^ex-107-1|Example §107.1]](a).
 
-> [!definition] Definition §125.1: Limit of a Function of Two Variables
+> [!definition] Definition §107.1: Limit of a Function of Two Variables
 > Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a, b)$. Then we say that the **limit of $f(x, y)$ as $(x, y)$ approaches $(a, b)$** is $L$, and we write
 >
 > $$
@@ -72,7 +72,7 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 > - The standard example of path dependence in 452 is $\frac{2xy}{x^2 + y^2}$, twice the function of [[§107 Limits and Continuity#^ex-107-1|Example §107.1]](b): [[§3 Continuity and Limits of Functions#^ex-3-1|452 Ex. §3.1]], [[§3 Continuity and Limits of Functions#^ex-3-2|452 Ex. §3.2]], and the workhorse page [[2xy∕(x²+y²) family]].
 > - Complex-variables version: [[§15 Limits#^cor-15-2|342 Cor. §15.2]] (the two-path test for $\lim_{z\to z_0} f(z)$), with [[§15 Limits#^ex-15-2|342 Ex. §15.2]] ($z/\bar z$ has no limit at $0$).
 
-> [!example] Example §125.1: Different Limits Along Two Lines
+> [!example] Example §107.1: Different Limits Along Two Lines
 > **(a)** Show that $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{x^2 - y^2}{x^2 + y^2}$ does not exist.
 >
 > Let $f(x, y) = (x^2 - y^2)/(x^2 + y^2)$. Along the $x$-axis, $y = 0$, so $f(x, 0) = x^2/x^2 = 1$ for all $x \ne 0$, and $f(x, y) \to 1$. Along the $y$-axis, $x = 0$, so $f(0, y) = -y^2/y^2 = -1$ for all $y \ne 0$, and $f(x, y) \to -1$. Two different limits along two lines: by [[§107 Limits and Continuity#^thm-107-1|Theorem §107.1]] the limit does not exist. (This confirms the numerical guess at the start of the section.)
@@ -91,7 +91,7 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 
 ^ex-107-1
 
-> [!example] Example §125.2: The Same Limit Along Every Line, but No Limit
+> [!example] Example §107.2: The Same Limit Along Every Line, but No Limit
 > If $f(x, y) = \dfrac{xy^2}{x^2 + y^4}$, does $\displaystyle\lim_{(x, y) \to (0, 0)} f(x, y)$ exist?
 >
 > **Lines.** Let $(x, y) \to (0, 0)$ along any non-vertical line through the origin, $y = mx$. Then
@@ -144,7 +144,7 @@ The Limit Laws of [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|Theorem
 
 *Stewart states the laws verbally and leaves the special limits (2) as Exercise 54. The one-variable proofs ([[§9 Calculating Limits Using the Limit Laws#^pf-9-1|proof of Theorem §8.1]], from Appendix F) carry over word for word with $|x - a|$ replaced by the distance $\sqrt{(x - a)^2 + (y - b)^2}$; for (2), take $\delta = \varepsilon$, since $|x - a| \le \sqrt{(x - a)^2 + (y - b)^2}$. The 452 versions are stated for continuous functions: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]]–[[§3 Continuity and Limits of Functions#^thm-3-3|§3.3]].*
 
-> [!definition] Definition §125.2: Polynomial and Rational Functions of Two Variables
+> [!definition] Definition §107.2: Polynomial and Rational Functions of Two Variables
 > A **polynomial function** of two variables (or **polynomial**) is a sum of terms of the form $cx^m y^n$, where $c$ is a constant and $m$ and $n$ are nonnegative integers. A **rational function** is a ratio of two polynomials. For instance,
 >
 > $$
@@ -200,7 +200,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 
 *Stewart says only that the Squeeze Theorem "also holds" for functions of two or more variables. The one-variable proof ([[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^pf-10-5|proof of Theorem §8.7]], from Appendix F) carries over with the distance in place of $|x - a|$: given $\varepsilon$, take the smaller of the two $\delta$'s for $g$ and $h$; then $L - \varepsilon < g \le f \le h < L + \varepsilon$.*
 
-> [!example] Example §125.3: A Limit That Exists
+> [!example] Example §107.3: A Limit That Exists
 > Find $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{3x^2 y}{x^2 + y^2}$ if it exists.
 >
 > **Is $0$ a plausible value?** Along any line through the origin, and also along the parabolas $y = x^2$ and $x = y^2$, the limit is $0$. That does not prove anything, but it suggests that the limit exists and equals $0$.
@@ -240,7 +240,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 
 ## Continuity
 
-> [!definition] Definition §125.3: Continuity
+> [!definition] Definition §107.3: Continuity
 > A function $f$ of two variables is **continuous at $(a, b)$** if
 >
 > $$
@@ -276,7 +276,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > [!remark]- Connections
 > - Rigorous treatment: [[§3 Continuity and Limits of Functions#^thm-3-1|452 Thm. §3.1]], [[§3 Continuity and Limits of Functions#^thm-3-2|452 Thm. §3.2]], [[§3 Continuity and Limits of Functions#^thm-3-3|452 Thm. §3.3]] (sum, product, quotient), and [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]], which allows the outer function to have several variables too. The definition of continuity there is the $\varepsilon$–$\delta$ form [[§3 Continuity and Limits of Functions#^def-3-1|452 Def. §3.1]].
 
-> [!example] Example §125.4: Where Is It Continuous?
+> [!example] Example §107.4: Where Is It Continuous?
 > **(a)** $f(x, y) = \dfrac{x^2 - y^2}{x^2 + y^2}$ is a rational function, so it is continuous on its domain $D = \{(x, y) \mid (x, y) \ne (0, 0)\}$. It is discontinuous at $(0, 0)$, where it is not defined.
 >
 > **(b)** Let
@@ -311,7 +311,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 
 ## Functions of Three or More Variables
 
-> [!definition] Definition §125.4: Limits in Three or More Variables
+> [!definition] Definition §107.4: Limits in Three or More Variables
 > For a function of three variables, $\lim_{(x, y, z) \to (a, b, c)} f(x, y, z) = L$ means: for every $\varepsilon > 0$ there is a $\delta > 0$ such that if $(x, y, z)$ is in the domain of $f$ and $0 < \sqrt{(x - a)^2 + (y - b)^2 + (z - c)^2} < \delta$, then $|f(x, y, z) - L| < \varepsilon$.
 >
 > In vector notation, for $f$ defined on a subset $D$ of $\mathbb{R}^n$: $\lim_{\mathbf{x} \to \mathbf{a}} f(\mathbf{x}) = L$ means that for every $\varepsilon > 0$ there is a $\delta > 0$ such that

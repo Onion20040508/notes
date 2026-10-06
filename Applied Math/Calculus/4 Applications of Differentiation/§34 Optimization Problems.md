@@ -25,7 +25,7 @@ The methods of [[§28 Maximum and Minimum Values|§28]] and [[§30 What Derivati
 
 ^rem-34-1
 
-> [!example] Example §38.1: Fencing a Field Along a River
+> [!example] Example §34.1: Fencing a Field Along a River
 > A farmer has $2400$ ft of fencing and wants to fence off a rectangular field that borders a straight river. He needs no fence along the river. What are the dimensions of the field that has the largest area?
 >
 > **Experiment.** A shallow, wide field ($100 \times 2200$) has area $220{,}000$ ft²; a deep, narrow one ($1000 \times 400$) has $400{,}000$ ft²; $700 \times 1000$ gives $700{,}000$ ft². Some intermediate shape seems best.
@@ -52,7 +52,7 @@ The methods of [[§28 Maximum and Minimum Values|§28]] and [[§30 What Derivati
 
 When the domain is not a closed interval there are no endpoints to compare, and the Closed Interval Method does not apply. The following variant of the First Derivative Test ([[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-2|Theorem §30.2]]), which concerns only *local* extrema, takes its place.
 
-> [!theorem] Theorem §38.1: First Derivative Test for Absolute Extreme Values
+> [!theorem] Theorem §34.1: First Derivative Test for Absolute Extreme Values
 > Suppose that $c$ is a critical number of a continuous function $f$ defined on an interval.
 >
 > (a) If $f'(x) > 0$ for all $x < c$ and $f'(x) < 0$ for all $x > c$, then $f(c)$ is the absolute maximum value of $f$.
@@ -76,7 +76,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 
 *Uses:* [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|§29.2]], [[§28 Maximum and Minimum Values#^def-28-1|Def. §28.1]]
 
-> [!example] Example §38.2: The Cheapest Can
+> [!example] Example §34.2: The Cheapest Can
 > A cylindrical can is to be made to hold $1$ L of oil. Find the dimensions that will minimize the cost of the metal to manufacture the can.
 >
 > **Set up.** Let $r$ be the radius and $h$ the height, in centimeters. To minimize the cost of the metal we minimize the total surface area: top and bottom are disks of area $\pi r^2$ each, and the side, unrolled, is a rectangle of dimensions $2\pi r$ by $h$. So
@@ -121,7 +121,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 
 ^ex-34-2
 
-> [!example] Example §38.3: The Closest Point on a Parabola
+> [!example] Example §34.3: The Closest Point on a Parabola
 > Find the point on the parabola $y^2 = 2x$ that is closest to the point $(1, 4)$.
 >
 > The distance between $(1, 4)$ and a point $(x, y)$ is $d = \sqrt{(x - 1)^2 + (y - 4)^2}$. On the parabola $x = \frac12 y^2$, so
@@ -148,7 +148,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 
 ^ex-34-3
 
-> [!example] Example §38.4: Row, Then Run
+> [!example] Example §34.4: Row, Then Run
 > A woman launches her boat from point $A$ on a bank of a straight river, $3$ km wide, and wants to reach point $B$, $8$ km downstream on the opposite bank, as quickly as possible. She can row her boat directly across the river to point $C$ and then run to $B$, or row directly to $B$, or row to some point $D$ between $C$ and $B$ and then run to $B$. She can row $6$ km/h and run $8$ km/h. Where should she land? (The speed of the water is negligible.)
 >
 > **Set up.** Let $x$ be the distance from $C$ to $D$. The running distance is $|DB| = 8 - x$, and by the Pythagorean Theorem the rowing distance is $|AD| = \sqrt{x^2 + 9}$. Since time $=$ distance$/$rate, the total time is
@@ -194,7 +194,7 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 
 ## Applications to Business and Economics
 
-> [!definition] Definition §38.1: Demand Function
+> [!definition] Definition §34.1: Demand Function
 > Let $C(x)$ be the **cost function**, the cost of producing $x$ units of a product; its derivative $C'(x)$ is the **marginal cost** ([[§23 Rates of Change in the Natural and Social Sciences#^def-23-10|Def. §23.10]]).
 > - If $p(x)$ is the price per unit that the company can charge if it sells $x$ units, then $p$ is the **demand function** (or **price function**). One expects it to be decreasing.
 >
@@ -202,7 +202,7 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 
 ^def-34-1
 
-> [!definition] Definition §38.3: Revenue Function
+> [!definition] Definition §34.2: Revenue Function
 > - The **revenue function** is $R(x) = x\,p(x)$ (quantity $\times$ price), and its derivative $R'$ is the **marginal revenue function**.
 >
 > *Stewart: 4.7 (text)*

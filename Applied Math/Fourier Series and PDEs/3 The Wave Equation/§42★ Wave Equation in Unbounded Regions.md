@@ -16,7 +16,7 @@ On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as th
 
 ## The Semi-Infinite String
 
-> [!definition] Definition §52.4: The Semi-Infinite String Problem
+> [!definition] Definition §42.1: The Semi-Infinite String Problem
 > The problem for a string occupying $0 < x < \infty$ with its end at $x = 0$ fixed is
 >
 > $$
@@ -34,7 +34,7 @@ On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as th
 
 ^def-42-1
 
-> [!theorem] Theorem §52.1: Fourier Integral Solution of the Semi-Infinite String
+> [!theorem] Theorem §42.1: Fourier Integral Solution of the Semi-Infinite String
 > If $\int_0^\infty|f(x)|\,dx$ and $\int_0^\infty|g(x)|\,dx$ are finite, the solution of (1)–(4) is
 >
 > $$
@@ -78,7 +78,7 @@ On a semi-infinite string $0 < x < \infty$ the wave equation can be solved as th
 
 The deficiency of the Fourier integral form (5) is that it gives no idea of what $u(x, t)$ looks like. The d'Alembert solution comes to the aid again.
 
-> [!theorem] Theorem §52.2: d'Alembert's Solution of the Semi-Infinite String
+> [!theorem] Theorem §42.2: d'Alembert's Solution of the Semi-Infinite String
 > The solution of (1)–(4) is
 >
 > $$
@@ -118,7 +118,7 @@ The deficiency of the Fourier integral form (5) is that it gives no idea of what
 
 Given $f$ and $g$, it is now a simple matter to construct $f_o$ and $G_e$, and so to graph $u(x, t)$ as a function of either variable or to evaluate it at given $x$ and $t$. For $x > ct$ the end has no influence yet, and $u = \frac12[f(x + ct) + f(x - ct)] + \frac12[G(x + ct) - G(x - ct)]$ involves only the given data.
 
-> [!example] Example §52.1: Reflection of a Pulse at the Fixed End
+> [!example] Example §42.1: Reflection of a Pulse at the Fixed End
 > Take $c = 1$, $g \equiv 0$, and an initial triangular pulse $f(x) = 1 - |x - 3|$ for $2 < x < 4$, $f(x) = 0$ elsewhere on $x > 0$. Then $G \equiv 0$ and, by (6),
 >
 > $$
@@ -157,7 +157,7 @@ $$
 \end{aligned}
 $$
 
-> [!theorem] Theorem §52.3: The String Driven at Its End
+> [!theorem] Theorem §42.3: The String Driven at Its End
 > The solution of (7)–(10) is $u(x, t) = \phi(x - ct)$ (12), where
 >
 > $$
@@ -195,7 +195,7 @@ $$
 
 The graph of $\phi$ for negative arguments is that of $h$, reflected and rescaled: graph the even extension of $h$, replace its right half by $0$, and adjust the scale so that $q = -c$ where $t = 1$, and so on. A wave equation with nonzero initial conditions **and** a time-varying boundary condition is solved by breaking it into two problems, one like (1)–(4) with zero boundary condition and one like (7)–(10) with zero initial conditions, and adding the solutions.
 
-> [!example] Example §52.2: A Pulse Sent in from the End
+> [!example] Example §42.2: A Pulse Sent in from the End
 > Let the end be moved by $h(t) = \frac H2t$ for $0 < t < 2$, $h(t) = H(3 - t)$ for $2 < t < 3$, and $h(t) = 0$ for $t > 3$ (up slowly, down quickly, then held). By Theorem §42.3, $u(x, t) = h(t - x/c)$ for $x < ct$ and $0$ beyond.
 >
 > - $t = 1$: $u = \frac H2\big(1 - \frac xc\big)$ for $0 < x < c$, a ramp from $\frac H2$ down to $0$.
@@ -262,7 +262,7 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 
 ^rem-42-1
 
-> [!example] Example §52.3: A Gaussian Pulse with a Push
+> [!example] Example §42.3: A Gaussian Pulse with a Push
 > Let $f_1(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$ (the Gaussian distribution with $\sigma = 1$) and $-1 < \alpha < 1$. Solve
 >
 > $$

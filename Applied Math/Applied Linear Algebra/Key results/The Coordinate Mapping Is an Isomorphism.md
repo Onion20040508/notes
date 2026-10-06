@@ -13,8 +13,8 @@ tags: [applied-linear-algebra, hub]
 ## Its proof uses
 - [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-4|Definition §30.4: Linear Transformation]]
 - [[§32 Coordinate Systems#^def-32-1|Definition §32.1: Coordinates; Coordinate Vector]]
-- [[§32 Coordinate Systems#^def-32-2|Definition §32.2: Coordinate Mapping]]
 - [[§32 Coordinate Systems#^thm-32-1|Theorem §32.1: The Unique Representation Theorem]]
+- [[§32 Coordinate Systems#^def-32-2|Definition §32.2: Coordinate Mapping]]
 
 ## Used in (Applied Linear Algebra)
 - [[§32 Coordinate Systems#^cor-32-4|Corollary §32.4: Coordinates Preserve Independence and Spanning]]

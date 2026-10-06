@@ -28,7 +28,7 @@ $$
 u(x, t) = \frac{1}{\sqrt{4k\pi t}}\int_{-\infty}^\infty f(x')e^{-(x - x')^2/4kt}\,dx' . \qquad (3)
 $$
 
-> [!definition] Definition §42.1: Error Function
+> [!definition] Definition §34.1: Error Function
 > The **error function** is
 >
 > $$
@@ -50,7 +50,7 @@ $$
 
 ^def-34-2
 
-> [!theorem] Proposition §42.1: Properties of the Error Function
+> [!theorem] Proposition §34.1: Properties of the Error Function
 > - (a) $\operatorname{erf}(0) = 0$, and $\operatorname{erf}$ is an odd function: $\operatorname{erf}(-z) = -\operatorname{erf}(z)$.
 > - (b) $\dfrac{d}{dz}\operatorname{erf}(z) = \dfrac{2}{\sqrt\pi}e^{-z^2}$. $\qquad (5)$
 > - (c) $\displaystyle\int_a^b e^{-y^2}\,dy = \frac{\sqrt\pi}{2}\big(\operatorname{erf}(b) - \operatorname{erf}(a)\big)$. $\qquad (6)$
@@ -114,7 +114,7 @@ $$
 
 ## The Error Function Solves the Heat Equation
 
-> [!theorem] Theorem §42.2: The Solution with Initial Temperature sgn x
+> [!theorem] Theorem §34.2: The Solution with Initial Temperature sgn x
 > The solution of the problem
 >
 > $$
@@ -161,7 +161,7 @@ $$
 ![[m341-28-1.svg]]
 *The solution $u(x, t) = \operatorname{erf}(x/\sqrt{4kt})$ of Theorem §34.2 on $-2 < x < 2$ for $kt = 0.01$, $0.1$, $1$ and $10$; the initial temperature $\operatorname{sgn}(x)$ is dashed. Every curve passes through the origin with slope $1/\sqrt{\pi kt}$, and as $kt$ increases the graph collapses toward the $x$-axis. The curve for $kt = \frac14$ (not drawn) is the graph of $\operatorname{erf}$ itself.*
 
-> [!theorem] Corollary §42.3: The Semi-Infinite Rod with Constant Data
+> [!theorem] Corollary §34.3: The Semi-Infinite Rod with Constant Data
 > - (a) $u(x, t) = \operatorname{erf}\big(x/\sqrt{4kt}\big)$ is the solution of $u_{xx} = \frac1ku_t$, $0 < x$, $0 < t$, with $u(0, t) = 0$ and $u(x, 0) = 1$ for $0 < x$.
 > - (b) $u(x, t) = \operatorname{erfc}\big(x/\sqrt{4kt}\big)$ is the solution with zero initial condition and constant boundary condition: $u(0, t) = 1$, $u(x, 0) = 0$ for $0 < x$.
 >
@@ -185,7 +185,7 @@ $$
 
 ## Examples
 
-> [!example] Example §42.1: The Heated Sections in Closed Form
+> [!example] Example §34.1: The Heated Sections in Closed Form
 > **(a) A block on the infinite rod.** If $f = T_0$ on $c < x < d$ and $0$ elsewhere, (3) and the substitution $y = (x' - x)/\sqrt{4kt}$ give
 >
 > $$
@@ -212,7 +212,7 @@ $$
 
 ^ex-34-1
 
-> [!example] Example §42.2: A Fourier Integral Evaluated
+> [!example] Example §34.2: A Fourier Integral Evaluated
 > In [[§33 Infinite Rod#^ex-33-3|Example §33.3]](a), $u_t = u_{xx}$ on the infinite rod with $u(x, 0) = 1$ on $0 < x < \pi$ and $0$ elsewhere, the Fourier integral solution was
 >
 > $$
@@ -231,7 +231,7 @@ $$
 
 ^ex-34-2
 
-> [!example] Example §42.3: The Midterm Problem in Closed Form
+> [!example] Example §34.3: The Midterm Problem in Closed Form
 > For [[§33 Infinite Rod#^ex-33-2|Example §33.2]], $u_t = u_{xx}$ with $u(x, 0) = e^{-x}$ for $x > 0$ and $0$ for $x < 0$, (3) gives
 >
 > $$
@@ -250,7 +250,7 @@ $$
 
 ^ex-34-3
 
-> [!example] Example §42.4: Energy and Entropy of a Spreading Gaussian
+> [!example] Example §34.4: Energy and Entropy of a Spreading Gaussian
 > Let $u$ satisfy $u_t = u_{xx}$ on the infinite rod, $u$ bounded, with $u(x, 0) = f_1(x) = \frac{1}{\sqrt{2\pi}}e^{-x^2/2}$, the Gaussian distribution with $\sigma = 1$. Find $u$, and compute the energy $E(t) = \int_{-\infty}^\infty u\,dx$ and the entropy $H(t) = -\int_{-\infty}^\infty u\log u\,dx$.
 >
 > **(a) Solution.** Exactly as in [[§33 Infinite Rod#^ex-33-4|Example §33.4]], the variance grows by $2t$:

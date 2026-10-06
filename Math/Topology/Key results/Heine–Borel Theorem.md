@@ -26,12 +26,12 @@ tags: [topology, hub]
 - [[§2 Topological Manifolds#^prop-2-12|Proposition §2.12: Manifolds Are Locally Compact]]
 - [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
 - [[§9 Complex Projective Space#^prop-9-2|Proposition §9.2: ℂPⁿ Is Compact]]
-- [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|Corollary §14.8: Grassmannians as Homogeneous Spaces]]
-- [[§16 Differentiable Structures#^prop-16-3|Proposition §16.3: The Circle Needs More Than One Chart]]
-- [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|Proposition §17.4: ℂP¹ Is the Riemann Sphere]]
-- [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-2|Corollary §22.2: Consequences]]
-- [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5|Corollary §22.5: U(n) Is Compact]]
-- [[§32 Submersions#^cor-32-8|Corollary §32.8: No Submersions from Compact Manifolds to Euclidean Space]]
+- [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Corollary §15.8: Grassmannians as Homogeneous Spaces]]
+- [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: The Circle Needs More Than One Chart]]
+- [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|Proposition §18.4: ℂP¹ Is the Riemann Sphere]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|Corollary §23.2: Consequences]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5|Corollary §23.5: U(n) Is Compact]]
+- [[§34 Submersions#^cor-34-8|Corollary §34.8: No Submersions from Compact Manifolds to Euclidean Space]]
 
 ## Used in (Multivariable Analysis)
 - [[§25 Change of Variables on General Domains#^prop-25-2|Proposition §25.2: C¹ Diffeomorphisms Preserve Jordan Measurability]]
@@ -46,5 +46,5 @@ tags: [topology, hub]
 - **MATH 451.** With [[Continuous Image of a Compact Space is Compact]] it recovers the [[Extreme Value Theorem]]. In metric spaces, compactness is equivalent to sequential compactness ([[§19 Limit Point Compactness#^thm-19-4|Equivalence for Metrizable Spaces]]), the form met in MATH 451 through [[Bolzano–Weierstrass Theorem]].
 - **Failure outside ℝⁿ.** ℤ with the discrete metric is closed and bounded but not compact. Both hypotheses are needed even in ℝ: (0, 1) is bounded but not closed, ℝ is closed but not bounded, and neither is compact ([[§18 Compact Spaces#^rem-18-8|Why Heine-Borel is Fundamental]]). What makes ℝⁿ special is the [[§16 Connected Subspaces of ℝ#^def-16-1|least upper bound property]].
 - **Measure Theory.** 551 proves closed and bounded ⇒ compact again without products, through countable subcovers and Cantor's nested set theorem: [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|551 Thm. §6.4]] (with [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-3|551 Thm. §6.3]] and [[§5 Topology of ℝⁿ#^thm-5-2|551 Thm. §5.2]]).
-- **Functional Analysis.** The theorem fails in every infinite-dimensional normed space, where the closed unit ball is closed and bounded but not compact ([[§18 Compactness and the Unit Ball#^thm-18-5|556 Thm. §18.5]]); in finite dimensions it holds for every norm ([[§18 Compactness and the Unit Ball#^ex-18-1|556 Ex. §18.1]]).
+- **Functional Analysis.** The theorem fails in every infinite-dimensional normed space, where the closed unit ball is closed and bounded but not compact ([[§20 Compactness and the Unit Ball#^thm-20-5|556 Thm. §20.5]]); in finite dimensions it holds for every norm ([[§20 Compactness and the Unit Ball#^ex-20-1|556 Ex. §20.1]]).
 - **Also in [[Complex Variables]]:** [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (closed bounded regions of ℂ: continuous functions on them are bounded; complex-variables version).

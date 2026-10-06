@@ -24,7 +24,7 @@ Usually there is no formula for the partial sums of a series, so we need tests t
 
 The same reasoning proves the general test.
 
-> [!theorem] Theorem §96.1: The Integral Test
+> [!theorem] Theorem §83.1: The Integral Test
 > Suppose $f$ is a continuous, positive, decreasing function on $[1, \infty)$ and let $a_n = f(n)$. Then the series $\sum_{n=1}^{\infty} a_n$ is convergent if and only if the improper integral $\int_1^{\infty} f(x)\,dx$ is convergent. In other words:
 >
 > (i) If $\displaystyle\int_1^{\infty} f(x)\,dx$ is convergent, then $\displaystyle\sum_{n=1}^{\infty} a_n$ is convergent.
@@ -87,7 +87,7 @@ The same reasoning proves the general test.
 
 ^rem-83-2
 
-> [!example] Example §96.1: An Arctangent Integral
+> [!example] Example §83.1: An Arctangent Integral
 > Test $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2 + 1}$ for convergence or divergence.
 >
 > $f(x) = 1/(x^2 + 1)$ is continuous, positive and decreasing on $[1, \infty)$, so we use the Integral Test:
@@ -102,7 +102,7 @@ The same reasoning proves the general test.
 
 ^ex-83-1
 
-> [!theorem] Theorem §96.2: The p-Series
+> [!theorem] Theorem §83.2: The p-Series
 > The **$p$-series** $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^p}$ is convergent if $p > 1$ and divergent if $p \le 1$.
 >
 > *Stewart: 11.3, Equation 1 (from Example 11.3.2)*
@@ -127,7 +127,7 @@ The same reasoning proves the general test.
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (by the integral test, as here) and [[§14 Series#^ex-14-3|451 Ex. §14.3]]; the integrals themselves, [[§36 Improper Integrals#^ex-36-2|451 Ex. §36.2]].
 
-> [!example] Example §96.2: Reading Off p
+> [!example] Example §83.2: Reading Off p
 > **(a)** $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3} = \frac{1}{1^3} + \frac{1}{2^3} + \frac{1}{3^3} + \cdots$ is convergent: it is a $p$-series with $p = 3 > 1$.
 >
 > **(b)** $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^{1/3}} = \sum_{n=1}^{\infty} \frac{1}{\sqrt[3]{n}} = 1 + \frac{1}{\sqrt[3]{2}} + \frac{1}{\sqrt[3]{3}} + \cdots$ is divergent: it is a $p$-series with $p = \frac13 < 1$.
@@ -149,7 +149,7 @@ The same reasoning proves the general test.
 
 ^rem-83-3
 
-> [!example] Example §97.1: An Ultimately Decreasing Function
+> [!example] Example §83.3: An Ultimately Decreasing Function
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{\ln n}{n}$ converges or diverges.
 >
 > $f(x) = (\ln x)/x$ is positive and continuous for $x > 1$, since the logarithm is continuous. Whether $f$ is decreasing is not obvious, so compute its derivative:
@@ -172,7 +172,7 @@ The same reasoning proves the general test.
 
 ## Estimating the Sum of a Series
 
-> [!definition] Definition §96.1: Remainder
+> [!definition] Definition §83.1: Remainder
 > If $\sum a_n$ converges with sum $s$, the **remainder** after $n$ terms is
 >
 > $$
@@ -185,7 +185,7 @@ The same reasoning proves the general test.
 
 ^def-83-1
 
-> [!theorem] Theorem §96.3: Remainder Estimate for the Integral Test
+> [!theorem] Theorem §83.3: Remainder Estimate for the Integral Test
 > Suppose $f(k) = a_k$, where $f$ is a continuous, positive, decreasing function for $x \ge n$, and $\sum a_n$ is convergent. If $R_n = s - s_n$, then
 >
 > $$
@@ -215,7 +215,7 @@ The same reasoning proves the general test.
 
 *Uses:* [[§83 The Integral Test and Estimates of Sums#^thm-83-1|§83.1]], [[§83 The Integral Test and Estimates of Sums#^def-83-1|Def. §83.1]], [[§58 Improper Integrals#^def-58-1|Def. §58.1]], limits preserve weak inequalities ([[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]])
 
-> [!example] Example §97.2: How Many Terms?
+> [!example] Example §83.4: How Many Terms?
 > **(a)** Approximate the sum of $\sum 1/n^3$ by the sum of the first $10$ terms, and estimate the error.
 > **(b)** How many terms are required to ensure that the sum is accurate to within $0.0005$?
 >
@@ -239,7 +239,7 @@ The same reasoning proves the general test.
 
 ^ex-83-4
 
-> [!theorem] Corollary §96.4: Bounds for the Sum
+> [!theorem] Corollary §83.4: Bounds for the Sum
 > Under the hypotheses of [[§83 The Integral Test and Estimates of Sums#^thm-83-3|Theorem §83.3]],
 >
 > $$
@@ -259,7 +259,7 @@ The same reasoning proves the general test.
 
 These bounds give a more accurate approximation to $s$ than the partial sum $s_n$ alone.
 
-> [!example] Example §97.3: Estimating the Sum of the p-Series with p = 3
+> [!example] Example §83.5: Estimating the Sum of the p-Series with p = 3
 > Use [[§83 The Integral Test and Estimates of Sums#^cor-83-4|Corollary §83.4]] with $n = 10$ to estimate $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}$.
 >
 > By [[§83 The Integral Test and Estimates of Sums#^ex-83-4|Example §83.4]], $\int_n^{\infty} x^{-3}\,dx = \frac{1}{2n^2}$, so the inequalities become

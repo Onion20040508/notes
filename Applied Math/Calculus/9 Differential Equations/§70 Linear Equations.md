@@ -15,7 +15,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ## Linear Differential Equations
 
-> [!definition] Definition §82.1: First-Order Linear Equation
+> [!definition] Definition §70.1: First-Order Linear Equation
 > A first-order **linear** differential equation is one that can be put into the form
 >
 > $$
@@ -45,7 +45,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^rem-70-1
 
-> [!definition] Definition §82.2: Integrating Factor
+> [!definition] Definition §70.2: Integrating Factor
 > An **integrating factor** for the linear equation (1) is a function $I(x)$ such that multiplying the left side of (1) by $I(x)$ turns it into the derivative of the product $I(x)y$:
 >
 > $$
@@ -58,7 +58,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^def-70-2
 
-> [!theorem] Theorem §82.1: Solving a Linear Equation
+> [!theorem] Theorem §70.1: Solving a Linear Equation
 > Let $P$ and $Q$ be continuous on an interval. Then
 >
 > $$
@@ -133,7 +133,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^rem-70-2
 
-> [!example] Example §82.1: A First Linear Equation
+> [!example] Example §70.1: A First Linear Equation
 > Solve the differential equation $\dfrac{dy}{dx} + 3x^2 y = 6x^2$.
 >
 > The equation has the form (1) with $P(x) = 3x^2$ and $Q(x) = 6x^2$. An integrating factor is
@@ -165,7 +165,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 ![[m233-61-1.svg]]
 *Solutions $y = 2 + Ce^{-x^3}$ of [[§70 Linear Equations#^ex-70-1|Example §70.1]] for $C = \pm 2, \pm 1, \pm 0.4$ and $0$. Each is the constant solution $y = 2$ (blue) plus $C$ times the decaying factor $e^{-x^3}$. For $x > 0$ they all merge into $y = 2$; for $x < 0$, $e^{-x^3}$ blows up and the curves separate fast.*
 
-> [!example] Example §82.2: An Initial-Value Problem
+> [!example] Example §70.2: An Initial-Value Problem
 > Find the solution of the initial-value problem
 >
 > $$
@@ -204,7 +204,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^ex-70-2
 
-> [!example] Example §82.3: When the Integral Is Not Elementary
+> [!example] Example §70.3: When the Integral Is Not Elementary
 > Solve $y' + 2xy = 1$.
 >
 > The equation is in standard form with $P(x) = 2x$, $Q(x) = 1$. Multiplying by the integrating factor $e^{\int 2x\,dx} = e^{x^2}$ gives
@@ -240,7 +240,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ## Application to Electric Circuits
 
-> [!definition] Definition §82.3: The RL Circuit Equation
+> [!definition] Definition §70.3: The RL Circuit Equation
 > A simple circuit contains an electromotive force (a battery or generator) producing a voltage of $E(t)$ volts (V), a resistor with resistance $R$ ohms ($\Omega$), an inductor with inductance $L$ henries (H), and a switch. Let $I(t)$ be the current in amperes (A) at time $t$. By Ohm's Law the voltage drop across the resistor is $RI$, and the drop across the inductor is $L\,(dI/dt)$. One of Kirchhoff's laws says that the sum of the voltage drops equals the supplied voltage $E(t)$, so
 >
 > $$
@@ -253,7 +253,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^def-70-3
 
-> [!example] Example §82.4: A Circuit with a Battery
+> [!example] Example §70.4: A Circuit with a Battery
 > In the circuit of [[§70 Linear Equations#^def-70-3|Definition §70.3]] the resistance is $12\ \Omega$ and the inductance is $4$ H. A battery gives a constant voltage of $60$ V, and the switch is closed at $t = 0$, so $I(0) = 0$. Find (a) $I(t)$, (b) the current after $1$ second, and (c) the limiting value of the current.
 >
 > **(a)** With $L = 4$, $R = 12$ and $E(t) = 60$, Equation (7) gives the initial-value problem
@@ -288,7 +288,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 
 ^ex-70-4
 
-> [!example] Example §82.5: A Circuit with a Generator
+> [!example] Example §70.5: A Circuit with a Generator
 > Keep the resistance and inductance of [[§70 Linear Equations#^ex-70-4|Example §70.4]], but replace the battery by a generator producing the variable voltage $E(t) = 60\sin 30t$ volts, with $I(0) = 0$. Find $I(t)$.
 >
 > Now (7) becomes

@@ -7,17 +7,19 @@ tags: [chapter, measure-theory]
 # 6 Lᵖ Spaces
 ↑ [[Measure Theory]]
 
-**Builds on:** [[· 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (4), [[· 3 Measure Theory|3 Measure Theory]] (10), [[· 4 Integration Theory|4 Integration Theory]] (26), [[· 5 Differentiation and the FTC|5 Differentiation and the FTC]] (3)
+**Builds on:** [[· 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (4), [[· 3 Measure Theory|3 Measure Theory]] (10), [[· 4 Integration Theory|4 Integration Theory]] (26), [[· 5 Differentiation and the FTC|5 Differentiation and the FTC]] (4)
 **Used by:** [[· 5 Differentiation and the FTC|5 Differentiation and the FTC]] (1)
 **Builds on (other subjects):** [[Single Variable Analysis]] (4), [[Linear Algebra]] (1), [[Topology]] (1)
 
 ## Sections
 - [[§34 Normed Linear Spaces and Lᵖ Spaces]]
+- [[§35 Lᵖ as a Banach Space]]
+- [[§36 Power Singularities 1∕xᵃ and ℚ]]
 
 ## Central results
-- [[Hölder's Inequality]] (§19.5)
-- [[Minkowski's Inequality]] (§19.9)
-- [[Riesz–Fischer Theorem]] (§19.18)
+- [[Hölder's Inequality]] (§34.5)
+- [[Minkowski's Inequality]] (§35.2)
+- [[Riesz–Fischer Theorem]] (§35.11)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

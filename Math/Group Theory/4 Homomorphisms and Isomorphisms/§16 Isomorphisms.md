@@ -116,7 +116,7 @@ tags: [group-theory, math493]
 
 ^pf-16-4
 
-*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§4 Subgroups#^def-4-2|Def. §4.2]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§4 Subgroups#^def-4-2|Def. §4.2]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 > [!theorem] Proposition §16.5: Isomorphism Invariants
 > Let $\varphi: G \to H$ be an isomorphism. Then:
@@ -133,7 +133,7 @@ tags: [group-theory, math493]
 
 ^pf-16-5
 
-*Uses:* [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-4|§16.4]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-5|Def. §4.5]]
+*Uses:* [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-4|§16.4]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-6|Def. §4.6]]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §21.6).

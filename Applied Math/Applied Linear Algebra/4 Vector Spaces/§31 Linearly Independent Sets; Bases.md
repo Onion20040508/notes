@@ -15,7 +15,7 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 
 ## Linear Independence
 
-> [!definition] Definition §38.2: Linearly Independent and Dependent Sets
+> [!definition] Definition §31.1: Linearly Independent and Dependent Sets
 > An indexed set of vectors $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ in a vector space $V$ is **linearly independent** if the vector equation
 >
 > $$
@@ -30,7 +30,7 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 
 ^def-31-1
 
-> [!theorem] Theorem §38.1: Characterization of Linearly Dependent Sets
+> [!theorem] Theorem §31.1: Characterization of Linearly Dependent Sets
 > An indexed set $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ of two or more vectors, with $\mathbf{v}_1 \ne \mathbf{0}$, is linearly dependent if and only if some $\mathbf{v}_j$ (with $j > 1$) is a linear combination of the preceding vectors $\mathbf{v}_1, \ldots, \mathbf{v}_{j-1}$.
 >
 > *Lay: Theorem 4 (4.3)*
@@ -61,7 +61,7 @@ This section identifies the subsets that span a vector space $V$ (or a subspace 
 
 The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, equation (1) usually cannot be written as a system of $n$ linear equations, so the vectors cannot be made the columns of a matrix $A$ and studied through $A\mathbf{x} = \mathbf{0}$. One must rely on the definition and on [[§31 Linearly Independent Sets; Bases#^thm-31-1|Theorem §31.1]], until coordinates ([[§32 Coordinate Systems#^cor-32-4|Corollary §32.4]]) translate the problem back to $\mathbb{R}^n$.
 
-> [!example] Example §38.1: Dependence and Independence Among Functions
+> [!example] Example §31.1: Dependence and Independence Among Functions
 > **(a)** Let $\mathbf{p}_1(t) = 1$, $\mathbf{p}_2(t) = t$, $\mathbf{p}_3(t) = 4 - t$. Then $\{\mathbf{p}_1, \mathbf{p}_2, \mathbf{p}_3\}$ is linearly dependent in $\mathbb{P}$, because $\mathbf{p}_3 = 4\mathbf{p}_1 - \mathbf{p}_2$.
 >
 > **(b)** $\{\sin t, \cos t\}$ is linearly independent in $C[0, 1]$, the space of continuous functions on $0 \le t \le 1$: as *vectors in $C[0,1]$* neither is a multiple of the other, since there is no scalar $c$ with $\cos t = c \cdot \sin t$ for all $t \in [0, 1]$ (at $t = 0$ the left side is $1$ and the right side $0$), nor one with $\sin t = c\cos t$ for all $t$ ($\sin t / \cos t = \tan t$ is not constant). However, $\{\sin t\cos t, \sin 2t\}$ is linearly dependent, because of the identity $\sin 2t = 2\sin t\cos t$ for all $t$.
@@ -72,7 +72,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 
 ## Bases
 
-> [!definition] Definition §38.3: Basis
+> [!definition] Definition §31.2: Basis
 > Let $H$ be a subspace of a vector space $V$. An indexed set of vectors $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_p\}$ in $V$ is a **basis** for $H$ if
 >
 > (i) $\mathcal{B}$ is a linearly independent set, and
@@ -88,7 +88,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]], and the criterion [[§5 Bases#^ladr-2-28|LADR 2.28]] (a list is a basis iff every vector is a unique linear combination of it), which is Lay's Unique Representation Theorem ([[§32 Coordinate Systems#^thm-32-1|Theorem §32.1]], Theorem 7 of 4.4).
 
-> [!example] Example §38.2: Standard Bases and Bases of ℝⁿ
+> [!example] Example §31.2: Standard Bases and Bases of ℝⁿ
 > **(a) Columns of an invertible matrix.** If $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ is an invertible $n \times n$ matrix, its columns form a basis for $\mathbb{R}^n$: by the Invertible Matrix Theorem ([[§16 Characterizations of Invertible Matrices#^thm-16-1|Theorem §16.1]]) they are linearly independent and span $\mathbb{R}^n$. For instance, $\mathbf{v}_1 = (3, 0, -6)$, $\mathbf{v}_2 = (-4, 1, 7)$, $\mathbf{v}_3 = (-2, 1, 5)$ form a basis of $\mathbb{R}^3$: two row replacements ($R_3 + 2R_1$, then $R_3 + R_2$) give
 >
 > $$
@@ -122,7 +122,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 
 ## The Spanning Set Theorem
 
-> [!theorem] Theorem §38.2: The Spanning Set Theorem
+> [!theorem] Theorem §31.2: The Spanning Set Theorem
 > Let $S = \{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ be a set in a vector space $V$, and let $H = \operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$.
 >
 > a. If one of the vectors in $S$, say $\mathbf{v}_k$, is a linear combination of the remaining vectors in $S$, then the set formed from $S$ by removing $\mathbf{v}_k$ still spans $H$.
@@ -163,7 +163,7 @@ The main difference from $\mathbb{R}^n$: when the vectors are not $n$-tuples, eq
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-30|LADR 2.30]] ([[Every spanning list contains a basis]]), proved by the same deletion process; the companion result [[§5 Bases#^ladr-2-32|LADR 2.32]] ([[Every linearly independent list extends to a basis]]) is Lay's Theorem 11 of 4.5 ([[§33 The Dimension of a Vector Space#^thm-33-3|Theorem §33.3]]).
 
-> [!example] Example §38.3: Discarding a Dependent Vector
+> [!example] Example §31.3: Discarding a Dependent Vector
 > Let
 >
 > $$
@@ -194,7 +194,7 @@ $$
 
 have the same solutions: **the columns of $A$ have exactly the same linear dependence relationships as the columns of $B$.**
 
-> [!theorem] Theorem §38.3: The Pivot Columns Form a Basis for Col A
+> [!theorem] Theorem §31.3: The Pivot Columns Form a Basis for Col A
 > The pivot columns of a matrix $A$ form a basis for $\operatorname{Col} A$.
 >
 > *Lay: Theorem 6 (4.3)*
@@ -223,7 +223,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 
 ^rem-31-2
 
-> [!example] Example §38.4: Bases for the Fundamental Subspaces
+> [!example] Example §31.4: Bases for the Fundamental Subspaces
 > **(a) A matrix in reduced echelon form.** Let
 >
 > $$
@@ -273,7 +273,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 
 ^rem-31-3
 
-> [!example] Example §38.5: Enlarging and Shrinking
+> [!example] Example §31.5: Enlarging and Shrinking
 > **(a)** In $\mathbb{R}^3$:
 >
 > $$
@@ -304,7 +304,7 @@ have the same solutions: **the columns of $A$ have exactly the same linear depen
 ^ex-31-5
 
 > [!remark]- Remark: Bases with Infinitely Many Elements
-> The lecture points out that a basis need not be finite. In Lay's sense (finite linear combinations), the polynomials $\{1, t, t^2, t^3, \ldots\}$ form a basis of $\mathbb{P}$: every polynomial is a *finite* combination of them, and they are independent by the argument of [[§31 Linearly Independent Sets; Bases#^ex-31-2|Example §31.2]](c). The lecture also calls the harmonics $\sin 2\pi nx$, $\cos 2\pi nx$ ($n = 0, 1, 2, \ldots$) a basis of $C^\infty([0, 1])$, citing Fourier's theorem $f = \sum_n (a_n \sin 2\pi nx + b_n \cos 2\pi nx)$. That is a statement about *infinite series*, which converge only in a suitable sense (for instance in the mean, [[§57 Applications of Inner Product Spaces#^thm-57-4|Theorem §57.4]]; Fourier series: [[§57 Applications of Inner Product Spaces#^def-57-6|Definition §57.6]]); the harmonics are not a basis in the sense of [[§31 Linearly Independent Sets; Bases#^def-31-2|Definition §31.2]], since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space ([[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]); as the lecture says, such bases are a subject of real analysis.
+> The lecture points out that a basis need not be finite. In Lay's sense (finite linear combinations), the polynomials $\{1, t, t^2, t^3, \ldots\}$ form a basis of $\mathbb{P}$: every polynomial is a *finite* combination of them, and they are independent by the argument of [[§31 Linearly Independent Sets; Bases#^ex-31-2|Example §31.2]](c). The lecture also calls the harmonics $\sin 2\pi nx$, $\cos 2\pi nx$ ($n = 0, 1, 2, \ldots$) a basis of $C^\infty([0, 1])$, citing Fourier's theorem $f = \sum_n (a_n \sin 2\pi nx + b_n \cos 2\pi nx)$. That is a statement about *infinite series*, which converge only in a suitable sense (for instance in the mean, [[§57 Applications of Inner Product Spaces#^thm-57-4|Theorem §57.4]]; Fourier series: [[§57 Applications of Inner Product Spaces#^def-57-6|Definition §57.6]]); the harmonics are not a basis in the sense of [[§31 Linearly Independent Sets; Bases#^def-31-2|Definition §31.2]], since most smooth functions are not finite combinations of them. The right framework is an orthonormal basis of a Hilbert space ([[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]); as the lecture says, such bases are a subject of real analysis.
 >
 > *Source: 235 lectures L14, L15*
 

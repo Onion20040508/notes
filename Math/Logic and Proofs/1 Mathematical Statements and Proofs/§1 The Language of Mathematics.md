@@ -36,21 +36,21 @@ Mathematics proceeds by formulating statements and deciding whether they are tru
 
 ## 1.1 Mathematical Statements
 
-> [!definition] Definition §1.4: Proposition
+> [!definition] Definition §1.2: Proposition
 > A **proposition** is a sentence which is either true or false, but not both.
 >
 > *Eccles: Section 1.1*
 
 ^def-1-2
 
-> [!definition] Definition §1.5: Predicate
+> [!definition] Definition §1.3: Predicate
 > A **predicate** is a sentence containing one or more symbols, its **free variables**, which becomes a proposition whenever values are assigned to them; we write $P(n)$ or $P(m, n)$, listing the free variables.
 >
 > *Eccles: Section 1.1*
 
 ^def-1-3
 
-> [!definition] Definition §1.6: Statement
+> [!definition] Definition §1.4: Statement
 > A **statement** is a proposition or a predicate; capital letters $P, Q, R$ denote statements. "True" and "false" (T and F) are the two **truth values**.
 >
 > *Eccles: Section 1.1*
@@ -78,7 +78,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 ## 1.2 Logical Connectives
 
-> [!definition] Definition §1.8: Disjunction, Conjunction, Negation
+> [!definition] Definition §1.5: Disjunction, Conjunction, Negation
 > For statements $P$ and $Q$, the **disjunction** "$P$ or $Q$" ($P \vee Q$), the **conjunction** "$P$ and $Q$" ($P \wedge Q$) and the **negation** "not $P$" ($\neg P$) have the truth values
 >
 > | $P$ | $Q$ | $P \vee Q$ | $P \wedge Q$ |
@@ -116,7 +116,7 @@ Primes, used informally in (iii), (iv) and (vi), are defined formally and studie
 
 ^ex-1-2
 
-> [!definition] Definition §1.9: Absolute Value
+> [!definition] Definition §1.6: Absolute Value
 > The **absolute value** (or modulus) of a real number $a$ is
 >
 > $$
@@ -168,14 +168,14 @@ The negation of a statement is obtained by inserting "not", but this needs care,
 
 The MAT 200 lectures supplemented Chapter 1 with an algebra of the connectives, in which statements are manipulated like algebraic expressions.
 
-> [!definition] Definition §1.10: Propositional Form
+> [!definition] Definition §1.7: Propositional Form
 > A **propositional form** is an expression such as $A \wedge (B \vee \neg C)$ built by connectives from **propositional variables** $A, B, C, \ldots$, which stand for arbitrary statements. Each assignment of truth values to its variables gives the form a truth value, computed from the tables of [[§1 The Language of Mathematics#^def-1-5|Def. §1.5]]; the **truth table** of a form in $k$ variables lists all $2^k$ assignments.
 >
 > *Source: MAT 200 supplement §1; Sundstrom §2.2*
 
 ^def-1-7
 
-> [!definition] Definition §1.11: Logical Equivalence
+> [!definition] Definition §1.8: Logical Equivalence
 > Two forms $F$ and $G$ are **logically equivalent**, written $F \equiv G$, if they have the same truth value for every assignment; such an equivalence is called a **logical identity**.
 >
 > Two individual propositions are called logically equivalent when they have the same truth value. This is a weak notion ("the square of every even number is even" and "$1 + 1 = 2$" are equivalent merely because both are true); it becomes interesting for predicates, which may be equivalent for every value of the free variable ("$x^2$ is even" and "$(x+1)^2$ is odd", for integers $x$), and for propositional forms.

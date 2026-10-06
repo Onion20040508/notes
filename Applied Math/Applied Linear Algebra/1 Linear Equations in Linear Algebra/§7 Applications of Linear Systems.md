@@ -17,7 +17,7 @@ Real problems often lead to linear systems with infinitely many solutions, and t
 
 Suppose a nation's economy is divided into sectors (manufacturing, communication, services, …), and for each sector its total output for one year is known, together with exactly how this output is divided ("exchanged") among the sectors.
 
-> [!definition] Definition §8.1: Exchange Table
+> [!definition] Definition §7.1: Exchange Table
 > In Leontief's **exchange model**, the **exchange table** of an economy lists, in the column of each sector, the fractions of that sector's total output purchased by each sector (one row per purchasing sector); each column sums to $1$, since all output is accounted for.
 >
 > A sector looks *down its column* to see where its output goes, and *across its row* to see what it needs as inputs.
@@ -33,7 +33,7 @@ Suppose a nation's economy is divided into sectors (manufacturing, communication
 
 ^def-7-2
 
-> [!theorem] Theorem §8.1: Existence of Equilibrium Prices (Leontief)
+> [!theorem] Theorem §7.1: Existence of Equilibrium Prices (Leontief)
 > There exist equilibrium prices that can be assigned to the total outputs of the various sectors in such a way that the income of each sector exactly balances its expenses.
 >
 > *Lay: 1.6 (text)*
@@ -47,7 +47,7 @@ Suppose a nation's economy is divided into sectors (manufacturing, communication
 
 ^rem-7-1
 
-> [!example] Example §8.1: Coal, Electric, Steel
+> [!example] Example §7.1: Coal, Electric, Steel
 > An economy has three sectors, Coal, Electric (power) and Steel, with exchange table
 >
 > | Coal | Electric | Steel | Purchased by |
@@ -99,7 +99,7 @@ The general input–output ("production") model, of which this is a simpler rela
 
 ## Balancing Chemical Equations
 
-> [!example] Example §8.2: Burning Propane
+> [!example] Example §7.2: Burning Propane
 > When propane gas burns, propane ($\mathrm{C_3H_8}$) combines with oxygen ($\mathrm{O_2}$) to form carbon dioxide ($\mathrm{CO_2}$) and water ($\mathrm{H_2O}$):
 >
 > $$
@@ -161,7 +161,7 @@ The general input–output ("production") model, of which this is a simpler rela
 
 ^def-7-4
 
-> [!example] Example §8.3: Traffic in Downtown Baltimore
+> [!example] Example §7.3: Traffic in Downtown Baltimore
 > The network below shows the traffic flow (vehicles per hour) over several one-way streets in downtown Baltimore during a typical early afternoon. Determine the general flow pattern.
 >
 > **Equations.** At each intersection, flow in equals flow out:

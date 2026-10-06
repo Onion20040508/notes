@@ -12,8 +12,8 @@ tags: [applied-linear-algebra, hub]
 
 ## Its proof uses
 - [[§2 Row Reduction and Echelon Forms#^def-2-3|Definition §2.3: Pivot Position, Pivot Column, Pivot]]
-- [[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1: Existence and Uniqueness Theorem]]
 - [[§3 Solutions of Linear Systems#^def-3-1|Definition §3.1: Basic Variables and Free Variables]]
+- [[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1: Existence and Uniqueness Theorem]]
 - [[§5 The Matrix Equation Ax = b#^thm-5-3|Theorem §5.3: When Ax = b Is Solvable for Every b]]
 - [[§8 Linear Independence#^prop-8-1|Proposition §8.1: Independence of Matrix Columns]]
 - [[§10 The Matrix of a Linear Transformation#^thm-10-3|Theorem §10.3: Onto and One-to-One via the Standard Matrix]]

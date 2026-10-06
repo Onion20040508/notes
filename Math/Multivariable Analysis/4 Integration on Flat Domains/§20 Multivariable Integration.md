@@ -161,7 +161,7 @@ Consider a grid with mesh points at $\mathbb{Z} \times \mathbb{Z}$ (integer latt
 
 ### Additivity of Jordan Measure
 
-> [!theorem] Theorem §34.1: Additivity
+> [!theorem] Theorem §20.1: Additivity
 > If $D$ and $E$ are both Jordan measurable and almost disjoint, then $D \cup E$ is Jordan measurable and:
 >
 > $$

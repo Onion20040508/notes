@@ -15,7 +15,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ## Integration by Parts: Indefinite Integrals
 
-> [!theorem] Theorem §58.1: Integration by Parts
+> [!theorem] Theorem §51.1: Integration by Parts
 > If $f$ and $g$ are differentiable, then
 >
 > $$
@@ -75,7 +75,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^rem-51-1
 
-> [!example] Example §58.1: A Polynomial Times a Sine
+> [!example] Example §51.1: A Polynomial Times a Sine
 > Find $\displaystyle\int x \sin x\,dx$.
 >
 > **With Formula 1.** Take $f(x) = x$ and $g'(x) = \sin x$. Then $f'(x) = 1$ and $g(x) = -\cos x$ (any antiderivative of $g'$ will do). So
@@ -102,7 +102,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^ex-51-1
 
-> [!example] Example §58.2: Integrating by Parts Twice
+> [!example] Example §51.2: Integrating by Parts Twice
 > Find $\displaystyle\int t^2 e^t\,dt$.
 >
 > $e^t$ is unchanged by differentiation and integration, while $t^2$ becomes simpler when differentiated. So take
@@ -135,7 +135,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^ex-51-2
 
-> [!example] Example §58.3: Solving for the Integral
+> [!example] Example §51.3: Solving for the Integral
 > Evaluate $\displaystyle\int e^x \sin x\,dx$.
 >
 > Neither factor becomes simpler when differentiated. Try $u = e^x$, $dv = \sin x\,dx$, so $du = e^x\,dx$, $v = -\cos x$:
@@ -172,7 +172,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ## Integration by Parts: Definite Integrals
 
-> [!theorem] Theorem §58.2: Integration by Parts for Definite Integrals
+> [!theorem] Theorem §51.2: Integration by Parts for Definite Integrals
 > If $f'$ and $g'$ are continuous on $[a, b]$, then
 >
 > $$
@@ -202,7 +202,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.
 > - In several variables it becomes Green's first identity, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|452 Thm. §28.2]] (hub [[Green's First Identity]]).
 
-> [!example] Example §58.4: Inverse Functions: dv = dx
+> [!example] Example §51.4: Inverse Functions: dv = dx
 > **(a)** Evaluate $\displaystyle\int \ln x\,dx$. **(b)** Calculate $\displaystyle\int_0^1 \tan^{-1} x\,dx$.
 >
 > **(a)** There is not much choice: $u = \ln x$, $dv = dx$, so $du = \dfrac1x\,dx$, $v = x$, and
@@ -237,7 +237,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 ^ex-51-4
 
-> [!example] Example §58.5: The Work Integral of a Non-Conservative Field
+> [!example] Example §51.5: The Work Integral of a Non-Conservative Field
 > The work done by $\mathbf{F}(x, y) = e^y \sin x\,\mathbf{i} + e^y \cos x\,\mathbf{j}$ along the segment $\mathbf{r}(t) = \langle \pi t, t \rangle$, $0 \le t \le 1$, from $(0, 0)$ to $(\pi, 1)$ is
 >
 > $$

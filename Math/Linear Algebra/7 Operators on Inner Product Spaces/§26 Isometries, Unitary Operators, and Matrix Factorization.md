@@ -15,7 +15,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Characterizations [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]]; singular values all $1$ ([[§27 Singular Value Decomposition#^ladr-7-69|7.69]]).
-> - Infinite-dimensional counterpart: isomorphic Hilbert spaces ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) are related by an inner-product-preserving bijection ([[§24 Orthonormal Sets and Bases#^def-24-6|556 Def. §24.6]]), and there an isometry of a space into itself need not be onto ([[§24 Orthonormal Sets and Bases#^ex-24-2|556 Ex. §24.2]]).
+> - Infinite-dimensional counterpart: isomorphic Hilbert spaces ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) are related by an inner-product-preserving bijection ([[§28 Existence of Orthonormal Bases and Separability#^def-28-2|556 Def. §28.2]]), and there an isometry of a space into itself need not be onto ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|556 Ex. §28.1]]).
 > - Computational version: [[§51 Orthogonal Sets#^thm-51-5|235 Thm. §51.5]] (a matrix with orthonormal columns preserves lengths and inner products).
 
 > [!example] Example 7.45: Orthonormal basis maps to orthonormal list ⟹ isometry (p. 258)
@@ -140,7 +140,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
-> - The matrices described here form the groups O(n) and U(n) of 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|591 Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-5|591 Prop. §10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-8|591 Def. §10.8]]; orthonormal columns make U(n) compact, [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-22-5|591 Cor. §22.5]].
+> - The matrices described here form the groups O(n) and U(n) of 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|591 Prop. §11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|591 Def. §11.9]]; orthonormal columns make U(n) compact, [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5|591 Cor. §23.5]].
 > - Computational version: [[§51 Orthogonal Sets#^prop-51-6|235 Prop. §51.6]] and [[§51 Orthogonal Sets#^thm-51-5|235 Thm. §51.5]] (length preservation, as in (c)).
 > - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with [[§37 Determinants#^ladr-9-58|Theorem 9.58]]) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 

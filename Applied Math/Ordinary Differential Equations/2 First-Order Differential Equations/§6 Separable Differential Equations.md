@@ -21,7 +21,7 @@ M(x, y) + N(x, y)\,\frac{dy}{dx} = 0 \qquad (3)
 $$
 (for instance with $M = -f$, $N = 1$), and often in other ways too.
 
-> [!definition] Definition §7.1: Separable Equation
+> [!definition] Definition §6.1: Separable Equation
 > The equation (3) is **separable** if $M$ is a function of $x$ only and $N$ is a function of $y$ only:
 >
 > $$
@@ -42,7 +42,7 @@ $$
 
 For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can be written $-x^2 + (1 - y^2)\,\dfrac{dy}{dx} = 0$. By the chain rule the second term is $\dfrac{d}{dx}\big(y - \tfrac{y^3}{3}\big)$ and the first is $\dfrac{d}{dx}\big(-\tfrac{x^3}{3}\big)$, so the equation says $\dfrac{d}{dx}\big(-\tfrac{x^3}{3} + y - \tfrac{y^3}{3}\big) = 0$, and its integral curves are $-x^3 + 3y - y^3 = c$ (BDP, Example 2.2.1). The theorem below is the same argument in general.
 
-> [!theorem] Theorem §7.1: Solution of a Separable Equation
+> [!theorem] Theorem §6.1: Solution of a Separable Equation
 > Let $M$ be continuous on an interval $I$ and $N$ continuous on an interval $J$, and let $H_1$ and $H_2$ be antiderivatives of $M$ and $N$:
 >
 > $$
@@ -109,7 +109,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^rem-6-1
 
-> [!example] Example §7.1: An Explicit Solution and Its Interval
+> [!example] Example §6.1: An Explicit Solution and Its Interval
 > Solve the initial value problem
 >
 > $$
@@ -146,7 +146,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^ex-6-1
 
-> [!example] Example §7.2: A Solution Given Only Implicitly
+> [!example] Example §6.2: A Solution Given Only Implicitly
 > Solve $\dfrac{dy}{dx} = \dfrac{4x - x^3}{4 + y^3}$, find the solution through $(0, 1)$, and determine its interval of validity.
 >
 > **Separate and integrate.** $(4 + y^3)\,dy = (4x - x^3)\,dx$ gives $4y + \frac{y^4}{4} = 2x^2 - \frac{x^4}{4} + C$; multiplying by $4$ and rearranging,
@@ -189,7 +189,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^rem-6-3
 
-> [!example] Example §7.3: Partial Fractions and Blow-Up
+> [!example] Example §6.3: Partial Fractions and Blow-Up
 > Solve the initial value problem $\dfrac{dy}{dt} = 4y(y + 2)$, $y(0) = 6$, and find the interval on which the solution exists.
 >
 > **Constant solutions.** The right side vanishes for $y = 0$ and $y = -2$, so these are constant solutions. Ours starts at $6$, so $y \ne 0, -2$ near $t = 0$ and we may divide.
@@ -216,7 +216,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^ex-6-3
 
-> [!example] Example §7.4: Three Exam Problems of the Form y′ = g(x)y²
+> [!example] Example §6.4: Three Exam Problems of the Form y′ = g(x)y²
 > **(a)** Find the explicit solution of $\dfrac{dy}{dx} = -6e^{3x}y^2$, $y(0) = 3$.
 >
 > The constant function $y = 0$ is a solution; ours has $y(0) = 3 \ne 0$. Separate: $y^{-2}\,dy = -6e^{3x}\,dx$, so
@@ -282,7 +282,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^def-6-2
 
-> [!theorem] Proposition §7.2: Homogeneous Equations Become Separable
+> [!theorem] Proposition §6.2: Homogeneous Equations Become Separable
 > If $\dfrac{dy}{dx} = F\Big(\dfrac yx\Big)$, then the new dependent variable $v = y/x$, that is, $y = x\,v(x)$, satisfies the separable equation
 >
 > $$
@@ -302,7 +302,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 Because $f$ depends only on $y/x$, integral curves have the same slope at all points of each line through the origin, so the direction field and the integral curves of a homogeneous equation are symmetric with respect to the origin.
 
-> [!example] Example §7.5: A Homogeneous Equation
+> [!example] Example §6.5: A Homogeneous Equation
 > Find the general solution of $y' = \dfrac yx - 2e^{5y/x}$.
 >
 > **Substitute.** The right side is $F(y/x)$ with $F(v) = v - 2e^{5v}$, so the equation is homogeneous. With $y = xv$, [[§6 Separable Differential Equations#^prop-6-2|Proposition §6.2]] gives

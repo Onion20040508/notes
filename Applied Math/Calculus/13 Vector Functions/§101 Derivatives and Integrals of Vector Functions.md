@@ -15,7 +15,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ## Derivatives
 
-> [!definition] Definition §118.1: Derivative of a Vector Function
+> [!definition] Definition §101.1: Derivative of a Vector Function
 > The **derivative** $\mathbf{r}'$ of a vector function $\mathbf{r}$ is
 >
 > $$
@@ -28,21 +28,21 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^def-101-1
 
-> [!definition] Definition §118.3: Tangent Vector
+> [!definition] Definition §101.2: Tangent Vector
 > Let $C$ be the curve defined by $\mathbf{r}$ and $P$ the point with position vector $\mathbf{r}(t)$. If $\mathbf{r}'(t)$ exists and $\mathbf{r}'(t) \ne \mathbf{0}$, it is the **tangent vector** to $C$ at $P$.
 >
 > *Stewart: 13.2 (text)*
 
 ^def-101-2
 
-> [!definition] Definition §118.4: Tangent Line
+> [!definition] Definition §101.3: Tangent Line
 > For $C$, $P$ and $\mathbf{r}'(t) \ne \mathbf{0}$ as in [[§101 Derivatives and Integrals of Vector Functions#^def-101-2|Definition §101.2]], the **tangent line** to $C$ at $P$ is the line through $P$ parallel to $\mathbf{r}'(t)$.
 >
 > *Stewart: 13.2 (text)*
 
 ^def-101-3
 
-> [!definition] Definition §118.6: Unit Tangent Vector
+> [!definition] Definition §101.4: Unit Tangent Vector
 > The **unit tangent vector** is
 >
 > $$
@@ -61,7 +61,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ![[m233-87-1.svg]]
 *(a) The secant vector $\overrightarrow{PQ} = \mathbf{r}(t + h) - \mathbf{r}(t)$ joins two points of $C$. (b) Divided by $h$ it becomes the difference quotient (blue), which turns toward the tangent direction as $Q \to P$; its limit is the tangent vector $\mathbf{r}'(t)$ (red).*
 
-> [!theorem] Theorem §118.1: Differentiate Each Component
+> [!theorem] Theorem §101.1: Differentiate Each Component
 > If $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle = f(t)\,\mathbf{i} + g(t)\,\mathbf{j} + h(t)\,\mathbf{k}$, where $f$, $g$ and $h$ are differentiable functions, then
 >
 > $$
@@ -94,14 +94,14 @@ The calculus of vector functions is one-variable calculus done in each component
 > - ODE version: [[§34 Matrices#^def-34-10|331 Def. §34.10]] (matrix functions, differentiated and integrated entry by entry; a vector function is the case of a single column).
 > - Complex-variables version: [[§41 Derivatives of Functions w(t)#^def-41-1|342 Def. §41.1]] (the derivative of $w(t) = u(t) + iv(t)$, taken component by component).
 
-> [!definition] Definition §118.7: Second Derivative
+> [!definition] Definition §101.5: Second Derivative
 > The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§104 Motion in Space꞉ Velocity and Acceleration#^def-104-1|Definition §104.1]] and [[§104 Motion in Space꞉ Velocity and Acceleration#^def-104-3|Definition §104.3]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
 >
 > *Stewart: 13.2 (text)*
 
 ^def-101-5
 
-> [!example] Example §118.1: Derivatives and Unit Tangent Vectors
+> [!example] Example §101.1: Derivatives and Unit Tangent Vectors
 > **(a)** For $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \sin 2t\,\mathbf{k}$, [[§101 Derivatives and Integrals of Vector Functions#^thm-101-1|Theorem §101.1]] gives
 >
 > $$
@@ -129,7 +129,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^ex-101-1
 
-> [!example] Example §118.2: Tangent Lines
+> [!example] Example §101.2: Tangent Lines
 > **(a)** Find parametric equations for the tangent line to the helix $x = 2\cos t$, $y = \sin t$, $z = t$ at the point $(0, 1, \pi/2)$.
 >
 > The vector equation is $\mathbf{r}(t) = \langle 2\cos t, \sin t, t \rangle$, so $\mathbf{r}'(t) = \langle -2\sin t, \cos t, 1 \rangle$. The point corresponds to $t = \pi/2$, where $\mathbf{r}'(\pi/2) = \langle -2, 0, 1 \rangle$. The tangent line passes through $(0, 1, \pi/2)$ parallel to $\langle -2, 0, 1 \rangle$, so by [[§98 Equations of Lines and Planes#^prop-98-2|Proposition §98.2]]
@@ -224,7 +224,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^rem-101-2
 
-> [!example] Example §118.3: The Angle Between Two Curves
+> [!example] Example §101.3: The Angle Between Two Curves
 > The helix $\mathbf{r}_1(t) = \cos t\,\mathbf{i} + \sin t\,\mathbf{j} + t\,\mathbf{k}$ meets the curve $\mathbf{r}_2(t) = (1 + t)\,\mathbf{i} + t^2\,\mathbf{j} + t^3\,\mathbf{k}$ at $(1, 0, 0)$. Find the angle of intersection.
 >
 > The angle between two curves at a common point is the angle between their tangent vectors there. Both curves pass through $(1, 0, 0)$ at $t = 0$. Now $\mathbf{r}_1'(t) = \langle -\sin t, \cos t, 1 \rangle$, so $\mathbf{r}_1'(0) = \langle 0, 1, 1 \rangle$, and $\mathbf{r}_2'(t) = \langle 1, 2t, 3t^2 \rangle$, so $\mathbf{r}_2'(0) = \langle 1, 0, 0 \rangle$. Since
@@ -241,7 +241,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ## Integrals
 
-> [!definition] Definition §118.8: Integral of a Vector Function
+> [!definition] Definition §101.6: Integral of a Vector Function
 > The **definite integral** of a continuous vector function $\mathbf{r}(t)$ is defined as for real-valued functions ([[§39 The Definite Integral#^def-39-1|Definition §39.1]]), except that the integral is a vector:
 >
 > $$
@@ -252,7 +252,7 @@ The calculus of vector functions is one-variable calculus done in each component
 
 ^def-101-6
 
-> [!definition] Definition §118.9: Antiderivative of a Vector Function
+> [!definition] Definition §101.7: Antiderivative of a Vector Function
 > An **antiderivative** of $\mathbf{r}$ is a vector function $\mathbf{R}$ with $\mathbf{R}'(t) = \mathbf{r}(t)$, and $\int \mathbf{r}(t)\,dt$ denotes the indefinite integral (the general antiderivative).
 >
 > *Stewart: 13.2 (text)*
@@ -309,7 +309,7 @@ The calculus of vector functions is one-variable calculus done in each component
 > - Componentwise this is [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (Stewart's Part 2 of the FTC).
 > - Complex-variables version: [[§42 Definite Integrals of Functions w(t)#^thm-42-2|342 Thm. §42.2]] (the fundamental theorem of calculus for complex-valued $w(t)$).
 
-> [!example] Example §118.4: Integrals and Initial Values
+> [!example] Example §101.4: Integrals and Initial Values
 > **(a)** If $\mathbf{r}(t) = 2\cos t\,\mathbf{i} + \sin t\,\mathbf{j} + 2t\,\mathbf{k}$, then integrating each component,
 >
 > $$

@@ -22,5 +22,5 @@ tags: [applied-linear-algebra, hub]
 ## Connections
 - See [[§52 Orthogonal Projections]] for context and examples.
 - Rigorous treatment: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] ($\|v - P_Uv\| \le \|v - u\|$, with equality only for $u = P_Uv$; same Pythagorean proof).
-- For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§22 Projection and Orthogonal Decomposition#^thm-22-2|556 Thm. §22.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
+- For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§25 Projection and Orthogonal Decomposition#^thm-25-2|556 Thm. §25.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
 - **Also in [[Fourier Series and PDEs]]:** [[§15★ Mean Error and Convergence in Mean#^thm-15-2|341 Thm. §15.2]] (the same theorem for the integral inner product: the truncated Fourier series is the best mean-square approximation by trigonometric polynomials, with worked examples).

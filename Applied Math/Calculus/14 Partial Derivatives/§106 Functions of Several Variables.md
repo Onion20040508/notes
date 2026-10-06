@@ -15,7 +15,7 @@ A function of several variables assigns a number to each point of a region in th
 
 ## Functions of Two Variables
 
-> [!definition] Definition §124.1: Function of Two Variables
+> [!definition] Definition §106.1: Function of Two Variables
 > A **function $f$ of two variables** is a rule that assigns to each ordered pair of real numbers $(x, y)$ in a set $D$ a unique real number denoted by $f(x, y)$. The set $D$ is the **domain** of $f$, and its **range** is the set of values that $f$ takes on, that is, $\{f(x, y) \mid (x, y) \in D\}$.
 >
 > Writing $z = f(x, y)$, the variables $x$ and $y$ are the **independent variables** and $z$ is the **dependent variable**. If $f$ is given by a formula and no domain is specified, the domain is understood to be the set of all pairs $(x, y)$ for which the formula defines a real number.
@@ -26,7 +26,7 @@ A function of several variables assigns a number to each point of a region in th
 
 A function of two variables is a function whose domain is a subset of $\mathbb{R}^2$ and whose range is a subset of $\mathbb{R}$. An arrow diagram pictures it: the domain $D$ drawn in the $xy$-plane, and arrows from each point $(x, y)$ to the number $f(x, y)$ on a vertical number line, the $z$-axis.
 
-> [!example] Example §124.1: Domains
+> [!example] Example §106.1: Domains
 > Evaluate and find the domain:
 >
 > $$
@@ -70,7 +70,7 @@ A function of two variables is a function whose domain is a subset of $\mathbb{R
 
 ## Graphs
 
-> [!definition] Definition §124.2: Graph
+> [!definition] Definition §106.2: Graph
 > If $f$ is a function of two variables with domain $D$, the **graph** of $f$ is the set of all points $(x, y, z)$ in $\mathbb{R}^3$ such that $z = f(x, y)$ and $(x, y)$ is in $D$.
 >
 > *Stewart: 14.1, Definition (unnumbered)*
@@ -79,7 +79,7 @@ A function of two variables is a function whose domain is a subset of $\mathbb{R
 
 The graph of $f$ is a surface $S$ with equation $z = f(x, y)$, lying directly above or below the domain $D$ in the $xy$-plane: the point of $S$ over $(x, y)$ is at height $f(x, y)$.
 
-> [!definition] Definition §124.3: Linear Function
+> [!definition] Definition §106.3: Linear Function
 > A function of the form
 >
 > $$
@@ -94,7 +94,7 @@ The graph of $f$ is a surface $S$ with equation $z = f(x, y)$, lying directly ab
 
 Linear functions of two variables play the role in multivariable calculus that linear functions of one variable play in single-variable calculus: they are the functions we approximate by ([[§109 Tangent Planes and Linear Approximations#^def-109-2|Definition §109.2]]).
 
-> [!example] Example §124.2: A Hemisphere
+> [!example] Example §106.2: A Hemisphere
 > Let $g(x, y) = \sqrt{9 - x^2 - y^2}$. Find the domain and range of $g$, sketch its graph, and describe its level curves for $k = 0, 1, 2, 3$.
 >
 > **Domain.** The square root needs $9 - x^2 - y^2 \ge 0$:
@@ -141,7 +141,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 
 ^rem-106-2
 
-> [!example] Example §124.3: A Plane and an Elliptic Paraboloid
+> [!example] Example §106.3: A Plane and an Elliptic Paraboloid
 > **(a)** Sketch the graph of $f(x, y) = 6 - 3x - 2y$ and its level curves for $k = -6, 0, 6, 12$.
 >
 > The graph $z = 6 - 3x - 2y$, or $3x + 2y + z = 6$, is a plane ([[§106 Functions of Several Variables#^def-106-3|Definition §106.3]]). Putting $y = z = 0$ gives the $x$-intercept $2$; likewise the $y$-intercept is $3$ and the $z$-intercept is $6$, which fixes the triangle of the plane in the first octant. The level curves are
@@ -166,7 +166,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 
 ^ex-106-3
 
-> [!example] Example §124.4: Two Contour Maps from the Exams
+> [!example] Example §106.4: Two Contour Maps from the Exams
 > **(a)** Sketch the level curves of $f(x, y) = y e^x$ for the integers $-3 \le k \le 3$.
 >
 > $$
@@ -210,7 +210,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 
 For instance, the temperature $T$ at a point on the surface of the earth depends on the longitude $x$, the latitude $y$ and the time $t$, so $T = f(x, y, t)$. The graph of a function of three variables would lie in four-dimensional space, so we picture $f$ by its level surfaces instead.
 
-> [!example] Example §124.5: Level Surfaces
+> [!example] Example §106.5: Level Surfaces
 > **(a)** The level surfaces of $f(x, y, z) = x^2 + y^2 + z^2$ are
 >
 > $$

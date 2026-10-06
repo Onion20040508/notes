@@ -45,14 +45,14 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 ![[m250-8-1.svg]]
 *The arrow picture of the function in [[§8 Functions#^ex-8-1|Example §8.1]]. The defining property of a function is on the left: one arrow leaves each element of the domain. On the right anything is allowed: $y_1$ receives two arrows, $y_2$ and $y_4$ none.*
 
-> [!definition] Definition §8.3: Constant Function
+> [!definition] Definition §8.2: Constant Function
 > Given sets $X$, $Y$ and $y_0 \in Y$, the **constant function** $c_{y_0} : X \to Y$ is given by $c_{y_0}(x) = y_0$ for all $x \in X$.
 >
 > *Eccles: Examples 8.1.3, 8.1.4*
 
 ^def-8-2
 
-> [!definition] Definition §8.4: Identity Function
+> [!definition] Definition §8.3: Identity Function
 > Given a set $X$, the **identity function** $I_X : X \to X$ is given by $I_X(x) = x$ for all $x \in X$.
 >
 > *Eccles: Examples 8.1.3, 8.1.4*
@@ -139,14 +139,14 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 > [!remark]- Connections
 > - The modulus is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-5|451 Def. §3.5]].
 
-> [!definition] Definition §8.5: Equality of Functions
+> [!definition] Definition §8.4: Equality of Functions
 > Two functions $f : X \to Y$ and $g : X \to Y$ are **equal**, written $f = g$, when they have the same value at each point of the domain: $f(x) = g(x)$ for all $x \in X$. Implicit in this is that equal functions have the same domain and the same codomain.
 >
 > *Eccles: Definition 8.1.9*
 
 ^def-8-4
 
-> [!definition] Definition §8.6: Restriction
+> [!definition] Definition §8.5: Restriction
 > Let $f : X \to Y$ and $A \subseteq X$. The **restriction** of $f$ to $A$ is the function $f|A : A \to Y$ given by $(f|A)(a) = f(a)$ for all $a \in A$.
 >
 > For example, in [[§8 Functions#^ex-8-2|Example §8.2]] $f_1|\{a, b\} = f_2|\{a, b\}$ is the constant function with value $d$; in [[§8 Functions#^ex-8-3|Example §8.3]] $f_2 = f_1|\R^{\geq}$ and $f_4 = f_3|\R^{\geq}$; in [[§8 Functions#^ex-8-4|Example §8.4]] $f_2|(\R - \{1\}) = f_4|(\R - \{1\}) = f_1$.
@@ -164,7 +164,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ## 8.2 Composition of Functions
 
-> [!definition] Definition §8.7: Composite
+> [!definition] Definition §8.6: Composite
 > Given functions $f : X \to Y$ and $g : Y \to Z$, the **composite** $g \circ f : X \to Z$ (also written $gf$) is defined by
 >
 > $$
@@ -185,7 +185,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ^rem-8-2
 
-> [!definition] Definition §8.8: Inclusion Function
+> [!definition] Definition §8.7: Inclusion Function
 > If $A \subseteq X$, the **inclusion function** $i : A \to X$ is given by $i(a) = a$ for all $a \in A$. For any $f : X \to Y$, the composite $f \circ i : A \to Y$ equals the restriction $f|A$, since $(f \circ i)(a) = f(a) = (f|A)(a)$.
 >
 > *Eccles: Examples 8.2.2(b)*
@@ -252,7 +252,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 ## 8.3 Sequences
 
-> [!definition] Definition §8.9: Sequence
+> [!definition] Definition §8.8: Sequence
 > A function $f : \Z^+ \to A$ is a **sequence** in the set $A$. Its value $f(n)$ is often written $x_n$, and the sequence $(x_n)$ or $n \mapsto x_n$.
 >
 > *Eccles: Definition 8.3.1*
@@ -261,7 +261,7 @@ A function is an assignment of a unique element of $Y$ to each element of $X$; t
 
 Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto 2^n$, $n \mapsto (1 + 1/n)^n$), but the more interesting ones are defined inductively, like the Fibonacci sequence ([[§5 The Induction Principle#^def-5-5|Def. §5.5]]); even $2^n$ and $n!$ are, strictly, inductive definitions ([[§5 The Induction Principle#^def-5-3|Def. §5.3]], [[§5 The Induction Principle#^def-5-4|Def. §5.4]]). A central use of quantifiers is the definition of the limit of a sequence; the simplest case is limit $0$.
 
-> [!definition] Definition §8.10: Null Sequence
+> [!definition] Definition §8.9: Null Sequence
 > A sequence $f : \Z^+ \to \R$ is **null**, written $\lim f = 0$ or $\displaystyle\lim_{n \to \infty} f(n) = 0$, when
 >
 > $$
@@ -284,7 +284,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > \frac{1}{\sqrt{n}} < \varepsilon \iff \frac{1}{n} < \varepsilon^2 \iff n > \frac{1}{\varepsilon^2}.
 > $$
 >
-> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7a Several Quantifiers and the Cartesian Product#^rem-7a-4|§7a, remark on statements with two quantifiers]]).
+> Any positive integer $N > 1/\varepsilon^2$ will do: $\varepsilon = 1$ needs $N > 1$, $\varepsilon = \frac12$ needs $N > 4$, $\varepsilon = \frac{1}{100}$ needs $N > 10000$. The smaller $\varepsilon$, the larger $N$ must be; $N$ depends on $\varepsilon$, as the order $\forall \varepsilon\, \exists N$ allows ([[§7a Several Quantifiers and the Cartesian Product#^rem-7a-1|§7a, remark on statements with two quantifiers]]).
 >
 > **Proof of (a).** Let $\varepsilon \in \R^+$. Choose a positive integer $N > 1/\varepsilon$ (one exists because the positive integers are unbounded in $\R$). If $n \in \Z^+$ and $n \ge N$, then $n > 1/\varepsilon$, so $|1/n| = 1/n < \varepsilon$.
 >
@@ -300,7 +300,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 
 ## 8.4 The Image of a Function
 
-> [!definition] Definition §8.11: Image of a Function
+> [!definition] Definition §8.10: Image of a Function
 > Given $f : X \to Y$, the **image** of $f$ is the subset of the codomain consisting of the values of $f$:
 >
 > $$

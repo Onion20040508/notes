@@ -15,13 +15,16 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Sections
 - [[§1★ Homogeneous Linear Equations]] — Powers 0.1 ★
+- [[§2★ Variable Coefficients and Higher-Order Equations]] — Powers 0.1 ★
 - [[§3★ Nonhomogeneous Linear Equations]] — Powers 0.2 ★
+- [[§4★ Variation of Parameters]] — Powers 0.2 ★
 - [[§5★ Boundary Value Problems]] — Powers 0.3 ★
 - [[§6★ Singular Boundary Value Problems]] — Powers 0.4 ★
 - [[§7★ Green's Functions]] — Powers 0.5 ★
+- [[§8★ Mass–Spring–Damper System and Radial Heat Flow]] — Powers 0.5 ★
 
 ## Central results
-- [[Green's Function for Boundary Value Problems]] (§5.1)
+- [[Green's Function for Boundary Value Problems]] (§7.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

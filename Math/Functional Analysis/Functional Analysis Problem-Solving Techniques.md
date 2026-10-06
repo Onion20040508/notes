@@ -32,28 +32,28 @@ Any operation on $X/Y$ defined through representatives must be shown independent
 ^rem-t2
 
 > [!example] Example T2: Applications (HW1)
-> - **Unique decomposition** for a complement $W$ of $Y$ (Lemma [[§1 Linear Spaces#^lem-1-10|§1.10]]).
-> - **Injectivity of $M : X \to X/Y \oplus Y$** and of $W \to X/Y$, $w \mapsto [w]$ (Theorem [[§1 Linear Spaces#^thm-1-11|§1.11]], Corollary [[§1 Linear Spaces#^cor-1-12|§1.12]]).
+> - **Unique decomposition** for a complement $W$ of $Y$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]]).
+> - **Injectivity of $M : X \to X/Y \oplus Y$** and of $W \to X/Y$, $w \mapsto [w]$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]]).
 
 ^ex-t2
 
 ## Technique 3: One-Step Enlargement plus Zorn
 
-The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof, reusable whenever a maximal object with a closure property is needed.
+The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof, reusable whenever a maximal object with a closure property is needed.
 
 > [!remark] Remark: Strategy
 > - (i) **One-step lemma**: show that if the desired property holds for an object $W$ and $W$ is not yet “full,” there is a strictly larger $W'$ with the same property. This is where the actual mathematics lives.
 > - (ii) **Poset**: let $P$ be the set of all objects with the property, ordered by inclusion/extension. Check $P \neq \varnothing$ and that chains have upper bounds — usually the union of the chain, with the property inherited because it holds member-by-member and any finitely many elements of the union lie in a single member.
-> - (iii) **Maximal element**: [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|Zorn]] gives one; the one-step lemma shows it must be full.
+> - (iii) **Maximal element**: [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|Zorn]] gives one; the one-step lemma shows it must be full.
 >
 > In finite dimensions replace (ii)–(iii) by iterating (i) finitely many times.
 
 ^rem-t3
 
 > [!example] Example T3: Applications
-> - **Hahn–Banach** (lecture): objects are pairs $(Z, \ell_Z)$ with $\ell_Z \le p$; one-step lemma is Lemma [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1|§5.1]].
-> - **Existence of a complement** (HW1): objects are subspaces $W$ with $W \cap Y = \{0\}$; one-step lemma is Lemma [[§1 Linear Spaces#^lem-1-7|§1.7]].
-> - **Existence of an orthonormal basis** (Lecture 9, Theorem [[§24 Orthonormal Sets and Bases#^thm-24-12|§24.12]]): objects are orthonormal sets; the one-step move adds $x/\|x\|$ for a nonzero $x$ orthogonal to all of them.
+> - **Hahn–Banach** (lecture): objects are pairs $(Z, \ell_Z)$ with $\ell_Z \le p$; one-step lemma is Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]].
+> - **Existence of a complement** (HW1): objects are subspaces $W$ with $W \cap Y = \{0\}$; one-step lemma is Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]].
+> - **Existence of an orthonormal basis** (Lecture 9, Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]): objects are orthonormal sets; the one-step move adds $x/\|x\|$ for a nonzero $x$ orthogonal to all of them.
 
 ^ex-t3
 
@@ -65,7 +65,7 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t4
 
 > [!example] Example T4: Application (HW1)
-> Linearity of $M(x) = ([w], y)$ in Theorem [[§1 Linear Spaces#^thm-1-11|§1.11]]. The same device proves linearity of any projection onto a summand of a direct sum.
+> Linearity of $M(x) = ([w], y)$ in Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]. The same device proves linearity of any projection onto a summand of a direct sum.
 
 ^ex-t4
 
@@ -81,9 +81,9 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t5
 
 > [!example] Example T5: Applications
-> - **$\ell^p$ complete** (lecture, Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]): candidate by coordinates; closing by the tail estimate ([[§16 Minkowski's Inequality and the Spaces ℓᵖ#^pf-16-5|4.4]]).
-> - **Completion of a normed space** (HW2 P3, Theorem [[§11 Completeness#^thm-11-4|§11.4]]): candidate is the diagonal sequence $y_j = x^{(M_j)}_{N_j}$; closing by two three-term triangle inequalities with an auxiliary index sent to infinity last.
-> - **$C[a,b]$ with the sup norm** (HW2 P1, Theorem [[§11 Completeness#^thm-11-1|§11.1]]): candidate by pointwise limits; closing by uniform convergence, then the $3\varepsilon$ argument for continuity of the limit.
+> - **$\ell^p$ complete** (lecture, Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): candidate by coordinates; closing by the tail estimate ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^pf-18-5|4.4]]).
+> - **Completion of a normed space** (HW2 P3, Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]): candidate is the diagonal sequence $y_j = x^{(M_j)}_{N_j}$; closing by two three-term triangle inequalities with an auxiliary index sent to infinity last.
+> - **$C[a,b]$ with the sup norm** (HW2 P1, Theorem [[§12 Completeness#^thm-12-1|§12.1]]): candidate by pointwise limits; closing by uniform convergence, then the $3\varepsilon$ argument for continuity of the limit.
 
 ^ex-t5
 
@@ -99,22 +99,22 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t6
 
 > [!example] Example T6: Applications
-> - **Minkowski for sequences** (lecture, Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|§16.1]]): the cancellation of $\|a+b\|_p^{\,p-1}$ is only valid for finitely supported sequences; the general case follows by truncation.
-> - **Completeness of $\ell^p$**, Step 2 (Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|§16.5]]): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
-> - **Hölder for finite sums** is the special case of Theorem [[§15 Hölder's Inequality for Sequences#^thm-15-1|§15.1]] with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
+> - **Minkowski for sequences** (lecture, Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]): the cancellation of $\|a+b\|_p^{\,p-1}$ is only valid for finitely supported sequences; the general case follows by truncation.
+> - **Completeness of $\ell^p$**, Step 2 (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
+> - **Hölder for finite sums** is the special case of Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]] with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
 
 ^ex-t6
 
 ## Technique 7: Compactness of the Unit Sphere in Finite Dimensions
 
 > [!remark] Remark: Strategy
-> To get a lower bound $\|x\|' \ge c\|x\|$ between two norms on a finite-dimensional space, or more generally to show a continuous positive function is bounded away from $0$: restrict to the unit sphere $S$ of one norm, show $S$ is sequentially compact (bounded coordinates $\Rightarrow$ [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] coordinate by coordinate), show the function is continuous on $S$ (usually via a one-sided estimate and the [[§10 Normed Linear Spaces#^lem-10-3|reverse triangle inequality]]), conclude it attains its infimum, and use positivity at the minimizer to get $c > 0$. Homogeneity then extends the bound from $S$ to all of $X$. The step that fails in infinite dimensions is the compactness of $S$.
+> To get a lower bound $\|x\|' \ge c\|x\|$ between two norms on a finite-dimensional space, or more generally to show a continuous positive function is bounded away from $0$: restrict to the unit sphere $S$ of one norm, show $S$ is sequentially compact (bounded coordinates $\Rightarrow$ [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] coordinate by coordinate), show the function is continuous on $S$ (usually via a one-sided estimate and the [[§11 Normed Linear Spaces#^lem-11-3|reverse triangle inequality]]), conclude it attains its infimum, and use positivity at the minimizer to get $c > 0$. Homogeneity then extends the bound from $S$ to all of $X$. The step that fails in infinite dimensions is the compactness of $S$.
 
 ^rem-t7
 
 > [!example] Example T7: Applications (HW2)
-> - **All norms on $\mathbb{F}^n$ are equivalent** (P2(a), Theorem [[§12 New Normed Spaces from Old#^thm-12-3|§12.3]]), Steps 4–7.
-> - **Finite-dimensional subspaces are closed** (P2(b), Corollary [[§12 New Normed Spaces from Old#^cor-12-5|§12.5]]), via the equivalence with the coordinate norm.
+> - **All norms on $\mathbb{F}^n$ are equivalent** (P2(a), Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]), Steps 4–7.
+> - **Finite-dimensional subspaces are closed** (P2(b), Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]), via the equivalence with the coordinate norm.
 
 ^ex-t7
 
@@ -126,8 +126,8 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t8
 
 > [!example] Example T8: Applications
-> - **Complex Hahn–Banach**, Step 5 (Theorem [[§8 The Complex Hahn–Banach Theorem#^thm-8-1|§8.1]]): rotate $x$ so that $L(ax)$ is real, then apply $U \le p$.
-> - **Cauchy–Schwarz**, Step 4 (Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]]): rotate $y$ so that $(e^{i\theta}y, x)$ is real, then apply the bound on $|\operatorname{Re}(y,x)|$ obtained from the real quadratic.
+> - **Complex Hahn–Banach**, Step 5 (Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]): rotate $x$ so that $L(ax)$ is real, then apply $U \le p$.
+> - **Cauchy–Schwarz**, Step 4 (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]): rotate $y$ so that $(e^{i\theta}y, x)$ is real, then apply the bound on $|\operatorname{Re}(y,x)|$ obtained from the real quadratic.
 
 ^ex-t8
 
@@ -139,14 +139,14 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 > - (ii) show $J(X)$ is dense in $Z$;
 > - (iii) show $J(X) \ne Z$ by exhibiting $z \in Z \setminus J(X)$.
 >
-> Then $\overline{X} = Z$ (Proposition [[§11 Completeness#^prop-11-5|§11.5]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
+> Then $\overline{X} = Z$ (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
 
 ^rem-t9
 
 > [!example] Example T9: Applications (HW3)
-> - **$C[a,b]$ in the $L^p$ norm** (P1, Proposition [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|§17.8]]): $Z = L^p[a,b]$; witness the step function, approached by ramps.
-> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§11 Completeness#^prop-11-7|§11.7]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
-> - **Contrast**: $C[a,b]$ in the sup norm is already complete (Theorem [[§11 Completeness#^thm-11-1|§11.1]]), and so is $C^2[a,b]$ in the full $C^2$ norm.
+> - **$C[a,b]$ in the $L^p$ norm** (P1, Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]): $Z = L^p[a,b]$; witness the step function, approached by ramps.
+> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
+> - **Contrast**: $C[a,b]$ in the sup norm is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), and so is $C^2[a,b]$ in the full $C^2$ norm.
 
 ^ex-t9
 
@@ -158,7 +158,7 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t10
 
 > [!example] Example T10: Application (HW3)
-> Real homogeneity of the polarization form in the Jordan–von Neumann theorem (P3, Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|§21.4]]), with continuity supplied by [[§10 Normed Linear Spaces#^prop-10-4|continuity of the norm]].
+> Real homogeneity of the polarization form in the Jordan–von Neumann theorem (P3, Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]]), with continuity supplied by [[§11 Normed Linear Spaces#^prop-11-4|continuity of the norm]].
 
 ^ex-t10
 
@@ -166,7 +166,7 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 
 > [!remark] Remark: Strategy
 > To produce a point with a geometric property (closest point, orthogonal vector) in a Hilbert space:
-> - (i) **Minimize.** Take a minimizing sequence for the relevant infimum, and show it is Cauchy by applying the [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3|parallelogram law]] to two of its terms; convexity of the constraint set puts the midpoint back in the set and makes the cross term large. Completeness gives a limit; closedness keeps it in the set.
+> - (i) **Minimize.** Take a minimizing sequence for the relevant infimum, and show it is Cauchy by applying the [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|parallelogram law]] to two of its terms; convexity of the constraint set puts the midpoint back in the set and makes the cross term large. Completeness gives a limit; closedness keeps it in the set.
 > - (ii) **Perturb.** To extract the property of the minimizer, compare it with nearby competitors $y_0 + ty$, expand $\|v - ty\|^2$, and let $t \to 0$ along a ray $t = s e^{i\theta}$ chosen ([[#^rem-t8|Technique 8]]) to make the linear term real: a minimum forces the coefficient of the linear term to vanish. Write down explicitly how small $s$ must be.
 >
 > The same two moves prove uniqueness (apply (i) to two minimizers) and the double-complement identity (apply (ii) to the decomposition).
@@ -174,34 +174,34 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t11
 
 > [!example] Example T11: Applications
-> - **Projection theorem** (Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-2|§22.2]]): step (i).
-> - **Orthogonal decomposition** (Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]]): step (i) applied to $K = Y$, then step (ii) to show $x_0 - y_0 \perp Y$.
-> - **Cauchy–Schwarz** (Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|§21.1]]) is step (ii) in disguise: $\|x + ty\|^2 \ge 0$ for all $t$, with the quadratic in $t$ minimized at $t = -B/A$.
+> - **Projection theorem** (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]): step (i).
+> - **Orthogonal decomposition** (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]): step (i) applied to $K = Y$, then step (ii) to show $x_0 - y_0 \perp Y$.
+> - **Cauchy–Schwarz** (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]) is step (ii) in disguise: $\|x + ty\|^2 \ge 0$ for all $t$, with the quadratic in $t$ minimized at $t = -B/A$.
 
 ^ex-t11
 
 ## Technique 12: Countability by Level Sets
 
 > [!remark] Remark: Strategy
-> To show that $S = \{ \alpha : t_\alpha \neq 0 \}$ is countable for a family of numbers $(t_\alpha)$ over a possibly uncountable index set, split it into level sets $\Lambda_k = \{ \alpha : |t_\alpha| \ge 1/k \}$, so that $S = \bigcup_k \Lambda_k$, and bound the number of elements of each $\Lambda_k$ by an inequality that holds for every *finite* subset, such as a [[§24 Orthonormal Sets and Bases#^lem-24-2|finite Bessel inequality]] or a finite measure bound. Wu: “you want to show something is finite, and then you take a lower bound.” Only finite subsets can be fed into the inequality; the uniform bound on them is what proves $\Lambda_k$ finite.
+> To show that $S = \{ \alpha : t_\alpha \neq 0 \}$ is countable for a family of numbers $(t_\alpha)$ over a possibly uncountable index set, split it into level sets $\Lambda_k = \{ \alpha : |t_\alpha| \ge 1/k \}$, so that $S = \bigcup_k \Lambda_k$, and bound the number of elements of each $\Lambda_k$ by an inequality that holds for every *finite* subset, such as a [[§27 Orthonormal Sets and Bases#^lem-27-2|finite Bessel inequality]] or a finite measure bound. Wu: “you want to show something is finite, and then you take a lower bound.” Only finite subsets can be fed into the inequality; the uniform bound on them is what proves $\Lambda_k$ finite.
 
 ^rem-t12
 
 > [!example] Example T12: Application
-> Countable support of the orthonormal coefficients $(x, e_\alpha)$ (Proposition [[§24 Orthonormal Sets and Bases#^prop-24-4|§24.4]]), with $\#\Lambda_k \le k^2\|x\|^2$ from Lemma [[§24 Orthonormal Sets and Bases#^lem-24-2|§24.2]].
+> Countable support of the orthonormal coefficients $(x, e_\alpha)$ (Proposition [[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]]), with $\#\Lambda_k \le k^2\|x\|^2$ from Lemma [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]].
 
 ^ex-t12
 
 ## Technique 13: Test Against a Well-Chosen Vector
 
 > [!remark] Remark: Strategy
-> To bound $\|h\|$ from below, find a vector $g$ whose inner product with $h$ is determined by the data, and apply [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|Cauchy–Schwarz]]: $|(h, g)| \le \|h\|\,\|g\|$. The best $g$ lies in the span of the vectors whose inner products with $h$ are prescribed (projection onto that span). Dually, to show a vector is small, bound each of its coefficients by Cauchy–Schwarz and add them up with [[§24 Orthonormal Sets and Bases#^thm-24-8|Parseval]].
+> To bound $\|h\|$ from below, find a vector $g$ whose inner product with $h$ is determined by the data, and apply [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]: $|(h, g)| \le \|h\|\,\|g\|$. The best $g$ lies in the span of the vectors whose inner products with $h$ are prescribed (projection onto that span). Dually, to show a vector is small, bound each of its coefficients by Cauchy–Schwarz and add them up with [[§27 Orthonormal Sets and Bases#^thm-27-8|Parseval]].
 
 ^rem-t13
 
 > [!example] Example T13: Applications (HW4)
-> - **Sharp integral inequality** (P4, Proposition [[§22 Projection and Orthogonal Decomposition#^prop-22-8|§22.8]]): $h = f''$, $g$ linear, $(h,g) = -1$ from the boundary data.
-> - **Perturbed orthonormal sets** (P3, Proposition [[§24 Orthonormal Sets and Bases#^prop-24-10|§24.10]]): $(x, e_n) = (x, e_n - f_n)$, then Parseval.
+> - **Sharp integral inequality** (P4, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-8|§25.8]]): $h = f''$, $g$ linear, $(h,g) = -1$ from the boundary data.
+> - **Perturbed orthonormal sets** (P3, Proposition [[§27 Orthonormal Sets and Bases#^prop-27-10|§27.10]]): $(x, e_n) = (x, e_n - f_n)$, then Parseval.
 
 ^ex-t13
 
@@ -213,8 +213,8 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t14
 
 > [!example] Example T14: Applications (HW4)
-> - **Even and odd functions** (P1, Proposition [[§22 Projection and Orthogonal Decomposition#^prop-22-7|§22.7]]): symmetry gives $O \subset E^\perp$; testing against $g_e$ gives the rest.
-> - **Double complement** (P2, Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-6|§22.6]]): Lemma [[§22 Projection and Orthogonal Decomposition#^lem-22-5|§22.5]], then Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4|§22.4]](2).
+> - **Even and odd functions** (P1, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-7|§25.7]]): symmetry gives $O \subset E^\perp$; testing against $g_e$ gives the rest.
+> - **Double complement** (P2, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]): Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], then Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](2).
 
 ^ex-t14
 
@@ -226,47 +226,47 @@ The pattern of the [[§4 Statement and Motivation#^thm-4-2|Hahn–Banach]] proof
 ^rem-t15
 
 > [!example] Example T15: Applications (Lecture 9)
-> - $\ell^p$, $1 \le p < \infty$ (Proposition [[§25 Sequence and Function Spaces#^prop-25-1|§25.1]]).
-> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§25 Sequence and Function Spaces#^prop-25-4|§25.4]]), after reducing to continuous functions.
-> - A Hilbert space with a countable orthonormal basis (Theorem [[§24 Orthonormal Sets and Bases#^thm-24-13|§24.13]], $\Rightarrow$).
+> - $\ell^p$, $1 \le p < \infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]).
+> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), after reducing to continuous functions.
+> - A Hilbert space with a countable orthonormal basis (Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], $\Rightarrow$).
 
 ^ex-t15
 
 ## Technique 16: Non-Separability from an Uncountable Separated Family
 
 > [!remark] Remark: Strategy
-> To show a space is not [[§24 Orthonormal Sets and Bases#^def-24-5|separable]], find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a [[§10 Normed Linear Spaces#^def-10-7|dense]] set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
+> To show a space is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], find uncountably many elements at mutual distance at least $\delta > 0$. The balls of radius $\delta/2$ about them are disjoint, a [[§11 Normed Linear Spaces#^def-11-7|dense]] set must meet each of them, and choosing one point of the dense set in each ball gives a one-to-one map from an uncountable set into the dense set. Indicator functions (or indicator sequences) are the usual source: in a supremum norm two different indicators are at distance $1$.
 
 ^rem-t16
 
 > [!example] Example T16: Applications (HW5)
-> - $L^\infty([0,1])$ (P1(b), Proposition [[§25 Sequence and Function Spaces#^prop-25-5|§25.5]]): $\chi_{[0,t]}$, $t \in (0,1]$.
-> - $\ell^\infty$ (Proposition [[§25 Sequence and Function Spaces#^prop-25-3|§25.3]]): $\chi_S$, $S \subset \mathbb{N}$.
+> - $L^\infty([0,1])$ (P1(b), Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]): $\chi_{[0,t]}$, $t \in (0,1]$.
+> - $\ell^\infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]): $\chi_S$, $S \subset \mathbb{N}$.
 
 ^ex-t16
 
 ## Technique 17: Complete the Square to Reach a Distance
 
 > [!remark] Remark: Strategy
-> A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|Riesz]] and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the [[§22 Projection and Orthogonal Decomposition#^thm-22-2|projection theorem]] gives existence and uniqueness of the minimizer.
+> A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz]] and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]] gives existence and uniqueness of the minimizer.
 
 ^rem-t17
 
 > [!example] Example T17: Applications (HW5)
-> - Quadratic minimization over a closed convex set (P3, Proposition [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-23-5|§23.5]]).
+> - Quadratic minimization over a closed convex set (P3, Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-5|§26.5]]).
 
 ^ex-t17
 
 ## Technique 18: Subtract a Multiple of $x_0$ to Land in the Null Space
 
 > [!remark] Remark: Strategy
-> For a [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5|linear functional]] $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the [[§27 Dual Spaces#^prop-27-5|null space]] of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
+> For a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the [[§31 Dual Spaces#^prop-31-5|null space]] of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
 
 ^rem-t18
 
 > [!example] Example T18: Applications (HW5)
-> - Codimension one (P4, Proposition [[§27 Dual Spaces#^prop-27-5|§27.5]]).
-> - Closed null space implies bounded (P5, Proposition [[§27 Dual Spaces#^prop-27-6|§27.6]]): $y_n = x_0 - x_n/\ell(x_n)$.
-> - The [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|Riesz representation theorem]], part (2) (Lemma [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-23-4|§23.4]](c)).
+> - Codimension one (P4, Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]]).
+> - Closed null space implies bounded (P5, Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]): $y_n = x_0 - x_n/\ell(x_n)$.
+> - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]](c)).
 
 ^ex-t18

@@ -29,7 +29,7 @@ $$
 
 In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 - \varepsilon < f(x) < 5 + \varepsilon$. Note that the value $f(3) = 6$ plays no role.
 
-> [!definition] Definition §13.1: Precise Definition of a Limit
+> [!definition] Definition §11.1: Precise Definition of a Limit
 > Let $f$ be a function defined on some open interval that contains the number $a$, except possibly at $a$ itself. We say that the **limit of $f(x)$ as $x$ approaches $a$ is $L$**, and write
 >
 > $$
@@ -58,7 +58,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 > [!remark]- Connections
 > - Rigorous treatment: this is the $\varepsilon$–$\delta$ form [[§20 Limits of Functions#^rem-20-1|451 Remark: The epsilon-delta version]] of [[§20 Limits of Functions#^def-20-1|451 Def. §20.1]], which 451 states with sequences. The same pattern ("for every $\varepsilon$ there is $N$") defines convergence of sequences, [[§7 Limits of Sequences#^def-7-2|451 Def. §7.2]].
 
-> [!example] Example §13.1: Finding a Delta from a Graph
+> [!example] Example §11.1: Finding a Delta from a Graph
 > Since $f(x) = x^3 - 5x + 6$ is a polynomial, $\lim_{x \to 1} f(x) = f(1) = 1 - 5 + 6 = 2$ by direct substitution ([[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-1|Theorem §10.1]]). Use a graph to find a number $\delta$ such that
 >
 > $$
@@ -98,7 +98,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 
 ^rem-11-2
 
-> [!example] Example §13.2: A Linear Function
+> [!example] Example §11.2: A Linear Function
 > Prove that $\displaystyle\lim_{x \to 3} (4x - 5) = 7$.
 >
 > **1. Guessing $\delta$.** Let $\varepsilon > 0$. We want $\delta$ such that $0 < |x - 3| < \delta$ implies $|(4x - 5) - 7| < \varepsilon$. Now $|(4x - 5) - 7| = |4x - 12| = 4|x - 3|$, so we want
@@ -121,7 +121,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 
 ^ex-11-2
 
-> [!example] Example §13.3: A Quadratic Function
+> [!example] Example §11.3: A Quadratic Function
 > Prove that $\displaystyle\lim_{x \to 3} x^2 = 9$.
 >
 > **1. Guessing $\delta$.** Let $\varepsilon > 0$. We want $\delta$ such that $0 < |x - 3| < \delta$ implies $|x^2 - 9| < \varepsilon$. Factor: $|x^2 - 9| = |x + 3|\,|x - 3|$. If there were a constant $C$ with $|x + 3| < C$, then $|x + 3|\,|x - 3| < C|x - 3|$, and $C|x - 3| < \varepsilon$ when $|x - 3| < \varepsilon / C$. Such a $C$ exists if $x$ stays in an interval around $3$. We only care about $x$ close to $3$, so we may assume $|x - 3| < 1$. Then $2 < x < 4$, so $5 < x + 3 < 7$ and $|x + 3| < 7$: take $C = 7$. Now there are two requirements, $|x - 3| < 1$ and $|x - 3| < \varepsilon / 7$, and both hold if $\delta = \min\{1, \varepsilon/7\}$, the smaller of the two numbers.
@@ -143,7 +143,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 
 ## One-Sided Limits
 
-> [!definition] Definition §13.2: Precise Definition of One-Sided Limits
+> [!definition] Definition §11.2: Precise Definition of One-Sided Limits
 > **Left-hand limit.** $\displaystyle\lim_{x \to a^-} f(x) = L$ if for every number $\varepsilon > 0$ there is a number $\delta > 0$ such that
 >
 > $$
@@ -164,7 +164,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 
 With Definitions [[§11 The Precise Definition of a Limit#^def-11-1|§11.1]] and [[§11 The Precise Definition of a Limit#^def-11-2|§11.2]], the statement that a limit exists exactly when both one-sided limits exist and are equal becomes a theorem with a proof: [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-3|Theorem §10.3]].
 
-> [!example] Example §13.4: The Square Root at 0
+> [!example] Example §11.4: The Square Root at 0
 > Use [[§11 The Precise Definition of a Limit#^def-11-2|Definition §11.2]] to prove that $\displaystyle\lim_{x \to 0^+} \sqrt{x} = 0$.
 >
 > **1. Guessing $\delta$.** Let $\varepsilon > 0$. Here $a = 0$ and $L = 0$, so we want $\delta$ such that $0 < x < \delta$ implies $|\sqrt{x} - 0| < \varepsilon$, that is, $\sqrt{x} < \varepsilon$. Squaring (both sides are non-negative), this says $x < \varepsilon^2$. This suggests $\delta = \varepsilon^2$.
@@ -187,7 +187,7 @@ As the examples show, proving limits directly from the definition takes some ing
 
 ## Infinite Limits
 
-> [!definition] Definition §13.3: Precise Definition of an Infinite Limit
+> [!definition] Definition §11.3: Precise Definition of an Infinite Limit
 > Let $f$ be a function defined on some open interval that contains the number $a$, except possibly at $a$ itself. Then
 >
 > $$
@@ -224,7 +224,7 @@ As the examples show, proving limits directly from the definition takes some ing
 
 ^ex-11-5
 
-> [!definition] Definition §13.4: Precise Definition of a Negative Infinite Limit
+> [!definition] Definition §11.4: Precise Definition of a Negative Infinite Limit
 > Let $f$ be a function defined on some open interval that contains the number $a$, except possibly at $a$ itself. Then
 >
 > $$

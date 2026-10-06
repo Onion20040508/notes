@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§13 Approximation and Continuity of Measure#^thm-13-1]]
 
 ## Treated in
-- [[§13 Approximation and Continuity of Measure#^thm-13-1|Theorem §13.1: Approximation by Open and G_δ Sets]], in [[§12 Borel Sets and Measure Spaces]]
+- [[§13 Approximation and Continuity of Measure#^thm-13-1|Theorem §13.1: Approximation by Open and G_δ Sets]], in [[§13 Approximation and Continuity of Measure]]
 
 ## Its proof uses
 - [[§5 Topology of ℝⁿ#^def-5-1|Definition §5.1: Open Ball]]
@@ -17,7 +17,7 @@ tags: [measure-theory, hub]
 - [[§10 Lebesgue Outer Measure#^prop-10-2|Proposition §10.2: Outer Measure of Closed Rectangles]]
 - [[§11 Lebesgue Measurable Sets#^thm-11-3|Theorem §11.3: ℳ is a σ-Algebra with Countable Additivity]]
 - [[§12 Borel Sets and Measure Spaces#^thm-12-6|Theorem §12.6: Open Sets are Measurable]]
-- [[§13 Approximation and Continuity of Measure#^def-13-1|Definition §13.1: G_δ and F_σ Sets]]
+- [[§13 Approximation and Continuity of Measure#^def-13-1|Definition §13.1: G_δ Sets]]
 
 ## Used in (Measure Theory)
 - [[§13 Approximation and Continuity of Measure#^prop-13-2|Proposition §13.2: Outer Approximation of Arbitrary Sets]]

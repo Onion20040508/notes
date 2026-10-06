@@ -40,7 +40,7 @@ Brown–Churchill define a complex number as an ordered pair of real numbers, th
 
 ^def-1-2
 
-> [!definition] Definition §1.4: Equality of Complex Numbers
+> [!definition] Definition §1.3: Equality of Complex Numbers
 > Two complex numbers are **equal**, $z_1 = z_2$, when they have the same real parts and the same imaginary parts, that is, when they are the same point of the plane.
 >
 > *B&C: Sec. 1 (text)*

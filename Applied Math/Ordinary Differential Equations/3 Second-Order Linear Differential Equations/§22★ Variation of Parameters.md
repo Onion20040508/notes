@@ -16,7 +16,7 @@ Variation of parameters is the second way, after undetermined coefficients, to f
 
 ## A First Example
 
-> [!example] Example §27.1: A Forcing Term Undetermined Coefficients Cannot Handle
+> [!example] Example §22.1: A Forcing Term Undetermined Coefficients Cannot Handle
 > Find the general solution of
 >
 > $$
@@ -115,7 +115,7 @@ u_1'(t) = -\frac{y_2(t)g(t)}{W[y_1, y_2](t)}, \qquad u_2'(t) = \frac{y_1(t)g(t)}
 $$
 Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) when the integrals can be evaluated. In general the answer is a formula with integrals:
 
-> [!theorem] Theorem §27.1: Variation of Parameters
+> [!theorem] Theorem §22.1: Variation of Parameters
 > Consider the nonhomogeneous equation
 >
 > $$
@@ -187,7 +187,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 
 ^rem-22-1
 
-> [!example] Example §27.2: Checking Undetermined Coefficients
+> [!example] Example §22.2: Checking Undetermined Coefficients
 > Compute the general solution of
 >
 > $$
@@ -222,7 +222,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 
 ## Zero Initial Data and the Response to a Forcing
 
-> [!theorem] Corollary §27.2: The Particular Solution with Zero Initial Data
+> [!theorem] Corollary §22.2: The Particular Solution with Zero Initial Data
 > Let $L[y] = y'' + p(t)y' + q(t)y$ with $p, q, g$ continuous on $I \ni t_0$, and $y_1, y_2$ a fundamental set of $L[y] = 0$. Then the particular solution (30), written as a single integral,
 >
 > $$
@@ -261,7 +261,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > [!remark]- Connections
 > - See also: [[§4★ Variation of Parameters#^thm-4-3|341 Thm. §4.3]] (the same integral, with its kernel called the Green's function) and its boundary value version, [[§7★ Green's Functions#^thm-7-1|341 Thm. §7.1]], where the Green's function is built to satisfy conditions at both ends of an interval.
 
-> [!example] Example §27.3: The Forced Equation y″ + y = g(t)
+> [!example] Example §22.3: The Forced Equation y″ + y = g(t)
 > Show that the solution of $y'' + y = g(t)$, $y(t_0) = 0$, $y'(t_0) = 0$ is
 >
 > $$

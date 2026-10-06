@@ -17,6 +17,7 @@ tags: [chapter, ordinary-differential-equations]
 - [[§1 Some Basic Mathematical Models; Direction Fields]] — BDP 1.1
 - [[§2 Solutions of Some Differential Equations]] — BDP 1.2
 - [[§3 Classification of Differential Equations]] — BDP 1.3
+- [[§4 The Falling Object and the Field Mice and Owls]] — BDP 1.3
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

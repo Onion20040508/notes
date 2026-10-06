@@ -11,7 +11,7 @@ tags: [subject, measure-theory]
 ---
 # Measure Theory
 
-MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), following Axler, *Measure, Integration & Real Analysis* (chapters 1–5); references Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§34 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
+MATH 551, *Introduction to Real Analysis* (Winter 2026, Sijue Wu), following Axler, *Measure, Integration & Real Analysis* (chapters 1–5); references Royden–Fitzpatrick, Tao *An Introduction to Measure Theory*, Stein–Shakarchi *Real Analysis*. Section numbers §1–§19 are the notes' own. LaTeX source: `tex/math551_notes.tex`.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved. Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -65,9 +65,9 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7: Density of ℚ in ℝ]] (4)
 - [[Archimedean Property]] (3)
 - [[Characterization of the Supremum]] (3)
+- [[§14 Series#^ex-14-4|Example §14.4: The Geometric Series]] (3)
 - [[§10 Monotone Sequences and Cauchy Sequences#^def-10-3|Definition §10.3: Lim Sup and Lim Inf]] (3)
 - [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|Theorem §10.6: Convergence via Lim Sup and Lim Inf]] (3)
-- [[§14 Series#^ex-14-4|Example §14.4: The Geometric Series]] (3)
 - [[Monotone Convergence Theorem]] (2)
 
 **[[Topology]]**

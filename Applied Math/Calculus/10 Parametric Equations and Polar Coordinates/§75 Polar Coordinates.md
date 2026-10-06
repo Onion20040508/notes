@@ -93,7 +93,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^rem-75-1
 
-> [!example] Example §87.1: Plotting and Converting Points
+> [!example] Example §75.1: Plotting and Converting Points
 > **(a) Negative $r$.** The point $(-3, 3\pi/4)$ lies three units from the pole in the **fourth** quadrant: the angle $3\pi/4$ points into the second quadrant and $r = -3$ is negative. By Equations 1 it is
 >
 > $$
@@ -119,7 +119,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^def-75-2
 
-> [!example] Example §87.2: Circles About the Pole and Lines Through It
+> [!example] Example §75.2: Circles About the Pole and Lines Through It
 > **$r = 2$.** Since $r$ is the distance from the pole, this is the circle with center $O$ and radius $2$. In general $r = a$ is the circle with center $O$ and radius $|a|$ (for $a < 0$ the points $(a, \theta)$ are at distance $|a|$ on the opposite ray).
 >
 > **$\theta = 1$.** All points $(r, 1)$: the straight line through $O$ making an angle of $1$ radian with the polar axis. The points with $r > 0$ are in the first quadrant, those with $r < 0$ in the third.
@@ -128,7 +128,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^ex-75-2
 
-> [!example] Example §87.3: A Circle Through the Pole
+> [!example] Example §75.3: A Circle Through the Pole
 > Sketch $r = 2\cos\theta$ and find a Cartesian equation for it.
 >
 > **Plotting.**
@@ -153,7 +153,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^ex-75-3
 
-> [!example] Example §87.4: The Cardioid
+> [!example] Example §75.4: The Cardioid
 > Sketch $r = 1 + \sin\theta$.
 >
 > Instead of plotting points, first graph $r = 1 + \sin\theta$, $0 \le \theta \le 2\pi$, in *Cartesian* coordinates (the sine curve shifted up one unit). It shows at a glance how the distance $r$ from $O$ changes as $\theta$ increases:
@@ -168,7 +168,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 
 ^ex-75-4
 
-> [!example] Example §87.5: The Four-Leaved Rose
+> [!example] Example §75.5: The Four-Leaved Rose
 > Sketch $r = \cos 2\theta$.
 >
 > Graph $r = \cos 2\theta$, $0 \le \theta \le 2\pi$, in Cartesian coordinates and follow the sign of $r$. As $\theta$ increases from $0$ to $\pi/4$, $r$ decreases from $1$ to $0$: half of a loop in the first quadrant (part ①). As $\theta$ increases from $\pi/4$ to $\pi/2$, $r$ decreases from $0$ to $-1$: the distance from $O$ grows from $0$ to $1$, but since $r < 0$ these points lie on the opposite side of the pole, in the **third** quadrant (part ②). Continuing in steps of $\pi/4$:

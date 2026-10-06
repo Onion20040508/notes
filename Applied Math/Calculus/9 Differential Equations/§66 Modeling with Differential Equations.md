@@ -35,7 +35,7 @@ Under ideal conditions (unlimited environment, adequate nutrition, no predators,
 
 ^rem-66-1
 
-> [!theorem] Proposition §76.1: Exponential Functions Solve the Growth Equation
+> [!theorem] Proposition §66.1: Exponential Functions Solve the Growth Equation
 > For every constant $C$, the function $P(t) = Ce^{kt}$ is a solution of $dP/dt = kP$. The constant is the initial population: $C = P(0)$.
 >
 > *Stewart: 9.1 (text)*
@@ -94,7 +94,7 @@ $$
 
 ^def-66-3
 
-> [!theorem] Proposition §76.2: Qualitative Behaviour of Logistic Solutions
+> [!theorem] Proposition §66.2: Qualitative Behaviour of Logistic Solutions
 > Let $k > 0$ and $M > 0$, and let $P$ be a solution of the logistic equation ([[§66 Modeling with Differential Equations#^def-66-2|Definition §66.2]]).
 > 1. The constant functions $P(t) = 0$ and $P(t) = M$ are equilibrium solutions.
 > 2. If $0 < P(t) < M$, then $dP/dt > 0$: the population increases.
@@ -141,7 +141,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 ^def-66-4
 
-> [!theorem] Proposition §76.3: Sines and Cosines Solve the Spring Equation
+> [!theorem] Proposition §66.3: Sines and Cosines Solve the Spring Equation
 > Let $\omega = \sqrt{k/m}$. For all constants $A$ and $B$, the function
 >
 > $$
@@ -222,7 +222,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 ^rem-66-3
 
-> [!example] Example §76.1: Is It a Solution?
+> [!example] Example §66.1: Is It a Solution?
 > Determine whether the function $y = x + 1/x$ is a solution of the given differential equation.
 > (a) $xy' + y = 2x$ (b) $xy'' + 2y' = 0$
 >
@@ -252,7 +252,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 ^ex-66-1
 
-> [!example] Example §76.2: A Family of Solutions
+> [!example] Example §66.2: A Family of Solutions
 > Show that every member of the family of functions
 >
 > $$
@@ -294,7 +294,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 
 ^def-66-7
 
-> [!example] Example §76.3: An Initial-Value Problem
+> [!example] Example §66.3: An Initial-Value Problem
 > Find a solution of the differential equation $y' = \frac12(y^2 - 1)$ that satisfies the initial condition $y(0) = 2$.
 >
 > By [[§66 Modeling with Differential Equations#^ex-66-2|Example §66.2]], $y = \dfrac{1 + ce^t}{1 - ce^t}$ is a solution for every value of $c$. Substituting $t = 0$ and $y = 2$:

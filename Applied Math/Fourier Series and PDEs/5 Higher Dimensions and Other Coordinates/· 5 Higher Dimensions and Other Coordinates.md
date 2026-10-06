@@ -19,16 +19,19 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§53 Two-Dimensional Heat Equation꞉ Solution]] — Powers 5.3
 - [[§54★ Problems in Polar Coordinates]] — Powers 5.4 ★
 - [[§55★ Bessel's Equation]] — Powers 5.5 ★
+- [[§56★ Properties of Bessel Functions]] — Powers 5.5 ★
 - [[§57★ Temperature in a Cylinder]] — Powers 5.6 ★
 - [[§58★ Vibrations of a Circular Membrane]] — Powers 5.7 ★
 - [[§59★ Some Applications of Bessel Functions]] — Powers 5.8 ★
 - [[§60★ Spherical Coordinates; Legendre Polynomials]] — Powers 5.9 ★
+- [[§61★ Legendre Series and Zonal Harmonics]] — Powers 5.9 ★
 - [[§62★ Some Applications of Legendre Polynomials]] — Powers 5.10 ★
+- [[§63★ Insulated Disk, Cooled Plate and Step Function]] — Powers 5.10 ★
 
 ## Central results
-- [[General Solution of Bessel's Equation]] (§45.5)
-- [[Orthogonality of Legendre Polynomials]] (§49.5)
-- [[Rodrigues' Formula]] (§49.6)
+- [[General Solution of Bessel's Equation]] (§55.5)
+- [[Orthogonality of Legendre Polynomials]] (§60.5)
+- [[Rodrigues' Formula]] (§60.6)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

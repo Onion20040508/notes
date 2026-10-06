@@ -9,7 +9,7 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 2.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (22), [[· 3 Elementary Functions|3 Elementary Functions]] (9), [[· 4 Integrals|4 Integrals]] (5), [[· 5 Series|5 Series]] (1), [[· 6 Residues and Poles|6 Residues and Poles]] (2)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (23), [[· 3 Elementary Functions|3 Elementary Functions]] (9), [[· 4 Integrals|4 Integrals]] (5), [[· 5 Series|5 Series]] (1), [[· 6 Residues and Poles|6 Residues and Poles]] (2)
 **Used by:** [[· 3 Elementary Functions|3 Elementary Functions]] (32), [[· 4 Integrals|4 Integrals]] (29), [[· 5 Series|5 Series]] (9), [[· 6 Residues and Poles|6 Residues and Poles]] (9), [[· 7 Applications of Residues|7 Applications of Residues]] (4), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (8), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (25), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (6), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (1), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (6)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (13), [[Multivariable Analysis]] (17), [[Topology]] (8), [[Applied Linear Algebra]] (4), [[Fourier Series and PDEs]] (3), [[Calculus]] (3)
 
@@ -31,6 +31,9 @@ tags: [chapter, complex-variables]
 - [[§27★ Harmonic Functions]] — B&C Sec. 27 ★
 - [[§28★ Uniquely Determined Analytic Functions]] — B&C Sec. 28 ★
 - [[§29★ Reflection Principle]] — B&C Sec. 29 ★
+- [[§29a The Function 1∕z]] — B&C Sec. 29
+- [[§29b The Squared Modulus]] — B&C Sec. 29
+- [[§29c The Function z̄]] — B&C Sec. 29
 
 ## Central results
 - [[Cauchy–Riemann Equations]] (§21.1)

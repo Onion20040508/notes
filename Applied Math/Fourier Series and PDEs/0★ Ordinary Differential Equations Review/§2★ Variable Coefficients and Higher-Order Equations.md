@@ -18,7 +18,7 @@ This section continues [[§1★ Homogeneous Linear Equations|§1★]] with the C
 
 One of the few equations with variable coefficients that can be solved in complete generality is the Cauchy–Euler equation. Its distinguishing feature is that the coefficient of the $n$th derivative is the $n$th power of $t$ times a constant. It is not treated in [[Ordinary Differential Equations]], so its solution is proved here.
 
-> [!definition] Definition §3.3: Cauchy–Euler Equation
+> [!definition] Definition §2.1: Cauchy–Euler Equation
 > The **Cauchy–Euler equation** is
 >
 > $$
@@ -40,7 +40,7 @@ One of the few equations with variable coefficients that can be solved in comple
 
 ^def-2-2
 
-> [!theorem] Theorem §3.1: Solutions of the Cauchy–Euler Equation
+> [!theorem] Theorem §2.1: Solutions of the Cauchy–Euler Equation
 > For $t > 0$, the general solution of (17) is determined by the roots $m_1$, $m_2$ of (18):
 >
 > | Roots of the characteristic equation | General solution |
@@ -94,7 +94,7 @@ One of the few equations with variable coefficients that can be solved in comple
 
 For $t < 0$ the same formulas hold with $t$ replaced by $|t|$: the substitution $t = -s$ leaves (17) unchanged in form. In this subject the variable is a radius $r > 0$, so this never matters.
 
-> [!example] Example §3.1: Cauchy–Euler Equations in Polar Coordinates
+> [!example] Example §2.1: Cauchy–Euler Equations in Polar Coordinates
 > Separating variables in polar coordinates ([[§48 Potential in a Disk#^thm-48-2|Theorem §48.2]], Powers 4.5) produces Cauchy–Euler equations in the radius $r$. Solve, for $r > 0$ and a constant $\lambda > 0$:
 >
 > **(a) $r^2u'' + ru' - \lambda^2u = 0$ (19).** Here $k = 1$, $p = -\lambda^2$, and the characteristic equation is $m(m - 1) + m - \lambda^2 = m^2 - \lambda^2 = 0$, with roots $m = \pm\lambda$. The first row of Theorem §2.1 gives
@@ -177,7 +177,7 @@ The Cauchy–Euler equation is the model: in standard form, $u'' + \frac ktu' + 
 
 It is not generally possible to solve a second-order linear homogeneous equation with variable coefficients, but a second independent solution can always be found if one solution is known.
 
-> [!theorem] Theorem §3.2: Reduction of Order
+> [!theorem] Theorem §2.2: Reduction of Order
 > Suppose $u_1(t)$ is a solution of
 >
 > $$
@@ -198,7 +198,7 @@ It is not generally possible to solve a second-order linear homogeneous equation
 
 *Powers substitutes $u_2 = vu_1$: $v''u_1 + 2v'u_1' + vu_1'' + k(v'u_1 + vu_1') + pvu_1 = 0$, and the coefficient $u_1'' + ku_1' + pu_1$ of $v$ is zero. Proved in ODE: [[§20 Repeated Roots; Reduction of Order#^prop-20-3|331 Prop. §20.3]].*
 
-> [!example] Example §3.2: Reduction of Order for a Legendre Equation
+> [!example] Example §2.2: Reduction of Order for a Legendre Equation
 > The equation
 >
 > $$
@@ -271,7 +271,7 @@ Linear homogeneous equations of order higher than two, especially order four, oc
 
 ^def-2-6
 
-> [!theorem] Theorem §3.3: General Solution of the nth-Order Equation
+> [!theorem] Theorem §2.3: General Solution of the nth-Order Equation
 > The Principle of Superposition holds for (26), and its general solution is a linear combination of $n$ independent solutions $u_1(t), \ldots, u_n(t)$ with arbitrary constant coefficients:
 >
 > $$
@@ -284,7 +284,7 @@ Linear homogeneous equations of order higher than two, especially order four, oc
 
 *Powers omits the proof. Writing $x_1 = u, x_2 = u', \ldots, x_n = u^{(n-1)}$ turns (26) into a first-order linear system ([[§33 Introduction to Systems of First-Order Linear Equations#^prop-33-1|331 Prop. §33.1]]), for which superposition and the statement are [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-1|331 Thm. §36.1]] and [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-2|331 Thm. §36.2]].*
 
-> [!theorem] Theorem §3.4: Solutions of the Constant-Coefficient nth-Order Equation
+> [!theorem] Theorem §2.4: Solutions of the Constant-Coefficient nth-Order Equation
 > Each distinct root of the characteristic equation (28) contributes as many independent solutions of (27) as its multiplicity; complex roots occur in conjugate pairs (the coefficients being real) and are written with real functions:
 >
 > | Root | Multiplicity | Contribution |
@@ -319,7 +319,7 @@ Linear homogeneous equations of order higher than two, especially order four, oc
 
 ^rem-2-2
 
-> [!example] Example §3.3: Two Fourth-Order Equations
+> [!example] Example §2.3: Two Fourth-Order Equations
 > **(a)** Find the general solution of $u^{(4)} + 3u^{(2)} - 4u = 0$.
 >
 > The characteristic equation $m^4 + 3m^2 - 4 = 0$ is a quadratic in $m^2$: $(m^2 + 4)(m^2 - 1) = 0$, so $m^2 = -4$ or $1$, and the roots are $m = \pm2i, \pm1$, all simple. By Theorem §2.4 the pair $\pm2i$ ($\alpha = 0$, $\beta = 2$) contributes $a\cos(2t) + b\sin(2t)$, and $m = 1$, $m = -1$ contribute $e^t$, $e^{-t}$:

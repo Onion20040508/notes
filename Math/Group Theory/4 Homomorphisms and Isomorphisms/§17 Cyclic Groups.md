@@ -31,7 +31,7 @@ tags: [group-theory, math493]
 
 ^pf-17-1
 
-*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§16 Isomorphisms#^prop-16-5|§16.5]]
+*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§16 Isomorphisms#^prop-16-5|§16.5]]
 
 > [!remark]- Connections
 > - Worksheet form: [[§17 Cyclic Groups#^prop-17-3|The Homomorphism k ↦ gᵏ (WS 3.1)]] (§17.3).
@@ -47,7 +47,7 @@ tags: [group-theory, math493]
 
 ^pf-17-2
 
-*Uses:* [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§4 Subgroups#^def-4-5|Def. §4.5]]
+*Uses:* [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§4 Subgroups#^def-4-6|Def. §4.6]]
 
 > [!remark] Remark: WS 2.5 and WS 2.7(2) as Instances
 > $U_5 = \langle 2 \rangle$ with $2$ of order $4$, and $U_7 = \langle 3 \rangle$ with $3$ of order $6$; [[§17 Cyclic Groups#^thm-17-1|the theorem]] gives $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ and $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ with the same maps $k \mapsto 2^k$, $k \mapsto 3^k$ constructed there ([[§16 Isomorphisms#^prop-16-7|WS 2.5]], [[§16 Isomorphisms#^prop-16-8|WS 2.7(2)]]). In each case the well-definedness step (“$2^4 \equiv 1$”) is exactly the computation of the kernel $n\mathbb{Z}$. The theorem also explains why $U_8$ is not cyclic: a cyclic group of order $4$ would be $\cong \mathbb{Z}/4\mathbb{Z}$, which has an element of order $4$, and $U_8$ has none.
@@ -82,7 +82,7 @@ tags: [group-theory, math493]
 
 ^pf-17-3
 
-*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]], [[§15 Homomorphisms#^prop-15-3|§15.3]]
+*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]], [[§15 Homomorphisms#^prop-15-3|§15.3]]
 
 ![[m493-17-2.svg]]
 *The homomorphism $\varphi_g: \mathbb{Z} \to \langle g \rangle$, $k \mapsto g^k$, for $g$ of order $N = 6$ (nonnegative $k$ shown). The integers (blue spiral) wind around $\langle g \rangle$ once every $6$ steps, and all integers on one ray have the same image. The ray to $e$ (red) carries the kernel $6\mathbb{Z}$; identifying the points on each ray is passing to $\mathbb{Z}/6\mathbb{Z} \cong \langle g \rangle$.*

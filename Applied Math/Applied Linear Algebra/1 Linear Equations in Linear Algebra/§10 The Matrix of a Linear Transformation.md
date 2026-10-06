@@ -50,7 +50,7 @@ The columns of the $n \times n$ identity matrix $I_n$ are the **standard basis v
 > [!remark]- Connections
 > - Rigorous treatment: a linear map is determined by its values on a basis, which may be prescribed freely, [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]; the standard matrix is Axler's $\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-31|LADR 3.31]]) for the standard bases. Axler allows any bases of any finite-dimensional $V$ and $W$, which Lay reaches in [[§43 Eigenvectors and Linear Transformations#^def-43-1|Definition §43.1]].
 
-> [!definition] Definition §11.4: Standard Matrix
+> [!definition] Definition §10.1: Standard Matrix
 > The matrix $A = [\,T(\mathbf{e}_1)\ \cdots\ T(\mathbf{e}_n)\,]$ of [[§10 The Matrix of a Linear Transformation#^thm-10-1|Theorem §10.1]] is the **standard matrix for the linear transformation $T$**.
 >
 > *Lay: 1.9 (text)*
@@ -59,7 +59,7 @@ The columns of the $n \times n$ identity matrix $I_n$ are the **standard basis v
 
 So every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix transformation, and vice versa ([[§9 Introduction to Linear Transformations#^prop-9-2|Proposition §9.2]]). The term *linear transformation* focuses on a property of a mapping, *matrix transformation* on how it is implemented.
 
-> [!example] Example §11.1: A Formula from the Images of e1 and e2
+> [!example] Example §10.1: A Formula from the Images of e1 and e2
 > **(a)** Suppose $T: \mathbb{R}^2 \to \mathbb{R}^3$ is linear with
 >
 > $$
@@ -79,7 +79,7 @@ So every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix
 
 ^ex-10-1
 
-> [!example] Example §11.2: Dilation and Rotation
+> [!example] Example §10.2: Dilation and Rotation
 > **(a)** The dilation $T(\mathbf{x}) = 3\mathbf{x}$ on $\mathbb{R}^2$ has $T(\mathbf{e}_1) = 3\mathbf{e}_1 = (3, 0)$ and $T(\mathbf{e}_2) = 3\mathbf{e}_2 = (0, 3)$, so
 >
 > $$
@@ -130,7 +130,7 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 ![[m235-9-2.svg]]
 *Four entries of the catalog acting on the unit square (dashed): the image of $\mathbf{e}_1$ is red, the image of $\mathbf{e}_2$ green, and the image of the square is the blue parallelogram they span.*
 
-> [!example] Example §11.3: A Shear Followed by a Reflection
+> [!example] Example §10.3: A Shear Followed by a Reflection
 > Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ first perform a horizontal shear that maps $\mathbf{e}_2$ into $\mathbf{e}_2 - .5\mathbf{e}_1$ (leaving $\mathbf{e}_1$ unchanged), and then reflect the result through the $x_2$-axis. Assuming $T$ is linear, find its standard matrix.
 >
 > Follow $\mathbf{e}_1$ and $\mathbf{e}_2$. The shear fixes $\mathbf{e}_1 = (1, 0)$, and the reflection $(x_1, x_2) \mapsto (-x_1, x_2)$ sends it to $(-1, 0)$. The shear sends $\mathbf{e}_2$ to $\mathbf{e}_2 - .5\mathbf{e}_1 = (-.5, 1)$, and the reflection sends this to $(.5, 1)$. So
@@ -145,7 +145,7 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 
 ## Existence and Uniqueness Questions
 
-> [!definition] Definition §11.5: Onto
+> [!definition] Definition §10.2: Onto
 > A mapping $T: \mathbb{R}^n \to \mathbb{R}^m$ is **onto** $\mathbb{R}^m$ if each $\mathbf{b}$ in $\mathbb{R}^m$ is the image of *at least one* $\mathbf{x}$ in $\mathbb{R}^n$.
 >
 > Equivalently, the range of $T$ is all of the codomain $\mathbb{R}^m$: for each $\mathbf{b}$ in $\mathbb{R}^m$, $T(\mathbf{x}) = \mathbf{b}$ has at least one solution. "Does $T$ map $\mathbb{R}^n$ onto $\mathbb{R}^m$?" is an existence question.
@@ -154,7 +154,7 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 
 ^def-10-2
 
-> [!definition] Definition §11.6: One-to-One
+> [!definition] Definition §10.3: One-to-One
 > A mapping $T: \mathbb{R}^n \to \mathbb{R}^m$ is **one-to-one** if each $\mathbf{b}$ in $\mathbb{R}^m$ is the image of *at most one* $\mathbf{x}$ in $\mathbb{R}^n$.
 >
 > Equivalently, for each $\mathbf{b}$ in $\mathbb{R}^m$, $T(\mathbf{x}) = \mathbf{b}$ has either a unique solution or none at all; $T$ is *not* one-to-one when some $\mathbf{b}$ is the image of more than one vector. "Is $T$ one-to-one?" is a uniqueness question.

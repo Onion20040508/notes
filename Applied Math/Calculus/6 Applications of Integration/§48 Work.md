@@ -15,7 +15,7 @@ In physics, *work* is force times distance when the force is constant. When the 
 
 ## Force and Work
 
-> [!definition] Definition §55.1: Force
+> [!definition] Definition §48.1: Force
 > If an object of mass $m$ moves along a straight line with position function $s(t)$, then the **force** $F$ on the object (in the same direction) is given by Newton's Second Law of Motion as the product of its mass and its acceleration $a$:
 >
 > $$
@@ -65,7 +65,7 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 > [!remark]- Connections
 > - Along a curve instead of a line, with the force a vector field, the work is the line integral $\int_C \mathbf{F} \cdot d\mathbf{r}$ ([[§127 Line Integrals of Vector Fields#^def-127-1|Def. §127.1]], [[§127 Line Integrals of Vector Fields#^def-127-2|Def. §127.2]]; [[§27 Line Integrals and Green's Theorem#^def-27-2|452 Def. §27.2]]). For motion along the $x$-axis with $\mathbf{F} = f(x)\,\mathbf{i}$ it reduces to [[§48 Work#^def-48-3|Definition §48.3]].
 
-> [!example] Example §55.1: Constant and Variable Forces
+> [!example] Example §48.1: Constant and Variable Forces
 > **(a)** How much work is done in lifting a $1.2$-kg book off the floor onto a desk $0.7$ m high? (Use $g = 9.8\ \mathrm{m/s^2}$.)
 >
 > The force exerted is equal and opposite to that of gravity, so by [[§48 Work#^def-48-1|Definition §48.1]], $F = mg = (1.2)(9.8) = 11.76$ N, and by [[§48 Work#^def-48-2|Definition §48.2]]
@@ -110,7 +110,7 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 > [!remark]- Connections
 > - ODE version: [[§23 Mechanical and Electrical Vibrations#^def-23-1|331 Def. §23.1]] (Hooke's law for the spring–mass system, written as the restoring force $F_s = -kL$, with $k$ measured from the elongation under a known weight).
 
-> [!example] Example §55.2: Stretching a Spring
+> [!example] Example §48.2: Stretching a Spring
 > A force of $40$ N is required to hold a spring that has been stretched from its natural length of $10$ cm to a length of $15$ cm. How much work is done in stretching the spring from $15$ cm to $18$ cm?
 >
 > By Hooke's Law the force needed to hold the spring stretched $x$ meters beyond its natural length is $f(x) = kx$. Stretching from $10$ cm to $15$ cm is $x = 5$ cm $= 0.05$ m, so $f(0.05) = 40$:
@@ -143,7 +143,7 @@ When different parts of an object move different distances, slice the object ins
 
 ^rem-48-1
 
-> [!example] Example §55.3: Lifting a Cable
+> [!example] Example §48.3: Lifting a Cable
 > A $200$-lb cable is $100$ ft long and hangs vertically from the top of a tall building.
 >
 > **(a)** How much work is required to lift the cable to the top of the building?
@@ -182,7 +182,7 @@ When different parts of an object move different distances, slice the object ins
 
 ^ex-48-3
 
-> [!example] Example §55.4: Pumping Water out of a Conical Tank
+> [!example] Example §48.4: Pumping Water out of a Conical Tank
 > A tank has the shape of an inverted circular cone with height $10$ m and base radius $4$ m. It is filled with water to a height of $8$ m. Find the work required to empty the tank by pumping all of the water to the top of the tank. (The density of water is $1000\ \mathrm{kg/m^3}$.)
 >
 > **Coordinates.** Measure depth $x$ from the top of the tank. The water extends from depth $2$ m to depth $10$ m. Divide $[2, 10]$ into $n$ subintervals with endpoints $x_0, \ldots, x_n$ and choose $x_i^{\ast}$ in the $i$th one. This divides the water into $n$ layers.

@@ -18,7 +18,7 @@ This section continues [[§3★ Nonhomogeneous Linear Equations|§3★]] with va
 
 If a linear homogeneous equation can be solved, the corresponding nonhomogeneous equation can also be solved, at least in terms of integrals.
 
-> [!theorem] Theorem §6.1: Variation of Parameters for First-Order Equations
+> [!theorem] Theorem §4.1: Variation of Parameters for First-Order Equations
 > Let $u_c(t)$ be a nonzero solution of the homogeneous equation
 >
 > $$
@@ -58,7 +58,7 @@ If a linear homogeneous equation can be solved, the corresponding nonhomogeneous
 
 The resulting formula $u_p = u_c\int f/u_c\,dt$ is the integrating-factor solution [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|331 Thm. §5.2]], with $1/u_c$ as the integrating factor.
 
-> [!example] Example §6.1: A First-Order Equation
+> [!example] Example §4.1: A First-Order Equation
 > Find a solution of $\dfrac{du}{dt} = 5u + t$.
 >
 > Since $e^{5t}$ solves $u' = 5u$, try $u_p(t) = v(t)e^{5t}$. Substituting, $v'e^{5t} + 5ve^{5t} = 5ve^{5t} + t$, so $v' = te^{-5t}$. Integrating by parts,
@@ -73,7 +73,7 @@ The resulting formula $u_p = u_c\int f/u_c\,dt$ is the integrating-factor soluti
 
 ^ex-4-1
 
-> [!theorem] Theorem §6.2: Variation of Parameters for Second-Order Equations
+> [!theorem] Theorem §4.2: Variation of Parameters for Second-Order Equations
 > Let $u_1(t)$, $u_2(t)$ be independent solutions of the homogeneous equation
 >
 > $$
@@ -151,7 +151,7 @@ The resulting formula $u_p = u_c\int f/u_c\,dt$ is the integrating-factor soluti
 
 ^rem-4-1
 
-> [!example] Example §6.2: Forcing a Harmonic Oscillator
+> [!example] Example §4.2: Forcing a Harmonic Oscillator
 > **(a)** Use Theorem §4.3 to show that a particular solution of $u'' + \gamma^2u = f(t)$ ($\gamma > 0$) is
 >
 > $$

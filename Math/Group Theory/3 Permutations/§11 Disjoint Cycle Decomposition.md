@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 
 ^pf-11-1
 
-*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
+*Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-1|Def. §10.1]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]]
 
 > [!theorem] Lemma §11.2: Disjoint Cycles Commute
 > If $c$ and $d$ are disjoint cycles, then $cd = dc$.
@@ -83,4 +83,4 @@ tags: [group-theory, math493]
 
 ^pf-11-4
 
-*Uses:* [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]]
+*Uses:* [[§11 Disjoint Cycle Decomposition#^lem-11-2|§11.2]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§2 First Consequences of the Axioms#^cor-2-5|§2.5]]

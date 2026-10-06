@@ -15,7 +15,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 
 ## The Invertible Matrix Theorem
 
-> [!theorem] Theorem §19.2: The Invertible Matrix Theorem
+> [!theorem] Theorem §16.1: The Invertible Matrix Theorem
 > Let $A$ be a square $n \times n$ matrix. Then the following statements are equivalent. That is, for a given $A$, the statements are either all true or all false.
 >
 > a. $A$ is an invertible matrix.
@@ -88,7 +88,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 
 ^rem-16-1
 
-> [!theorem] Corollary §19.1: A One-Sided Inverse Is an Inverse
+> [!theorem] Corollary §16.2: A One-Sided Inverse Is an Inverse
 > Let $A$ and $B$ be square matrices. If $AB = I$, then $A$ and $B$ are both invertible, with $B = A^{-1}$ and $A = B^{-1}$.
 >
 > *Lay: 2.3 (text)*
@@ -102,7 +102,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 
 *Uses:* [[§16 Characterizations of Invertible Matrices#^thm-16-1|§16.1]], [[§14 The Inverse of a Matrix#^thm-14-4|§14.4]]
 
-> [!example] Example §19.1: Deciding Invertibility
+> [!example] Example §16.1: Deciding Invertibility
 > **(a)** Is $A = \begin{bmatrix} 1 & 0 & -2 \\ 3 & 1 & -2 \\ -5 & -1 & 9 \end{bmatrix}$ invertible?
 >
 > $$
@@ -125,7 +125,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 
 Matrix multiplication corresponds to composition of linear transformations ([[§12 Matrix Operations#^thm-12-2|Theorem §12.2]]), so the equation $A^{-1}A\mathbf{x} = \mathbf{x}$ says that multiplication by $A^{-1}$ transforms $A\mathbf{x}$ back into $\mathbf{x}$.
 
-> [!definition] Definition §19.1: Invertible Linear Transformation
+> [!definition] Definition §16.1: Invertible Linear Transformation
 > A linear transformation $T : \mathbb{R}^n \to \mathbb{R}^n$ is **invertible** if there exists a function $S : \mathbb{R}^n \to \mathbb{R}^n$ such that
 >
 > $$
@@ -183,7 +183,7 @@ Matrix multiplication corresponds to composition of linear transformations ([[§
 > [!remark]- Connections
 > - Rigorous treatment: a linear map is invertible iff it is injective and surjective, and its inverse is then linear, [[§10 Invertibility and Isomorphisms#^ladr-3-63|LADR 3.63]]; for maps between arbitrary sets, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]] and the uniqueness of the inverse function, [[§9 Injections, Surjections and Bijections#^def-9-5|250 Def. §9.5]].
 
-> [!example] Example §19.2: A One-to-One Transformation of ℝⁿ Is Invertible
+> [!example] Example §16.2: A One-to-One Transformation of ℝⁿ Is Invertible
 > What can be said about a one-to-one linear transformation $T$ from $\mathbb{R}^n$ into $\mathbb{R}^n$?
 >
 > The columns of the standard matrix $A$ of $T$ are linearly independent ([[§10 The Matrix of a Linear Transformation#^thm-10-3|Theorem §10.3]](b)). So $A$ is invertible by the Invertible Matrix Theorem, statement (e), and then by statement (i) $T$ maps $\mathbb{R}^n$ onto $\mathbb{R}^n$. Also $T$ is invertible, by [[§16 Characterizations of Invertible Matrices#^thm-16-3|Theorem §16.3]].
@@ -192,7 +192,7 @@ Matrix multiplication corresponds to composition of linear transformations ([[§
 
 ^ex-16-2
 
-> [!example] Example §19.3: Inverting Geometric Transformations of the Plane
+> [!example] Example §16.3: Inverting Geometric Transformations of the Plane
 > **Rotation.** The counterclockwise rotation $R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ has $\det R_\theta = \cos^2\theta + \sin^2\theta = 1 \ne 0$, and by [[§14 The Inverse of a Matrix#^thm-14-2|Theorem §14.2]]
 >
 > $$

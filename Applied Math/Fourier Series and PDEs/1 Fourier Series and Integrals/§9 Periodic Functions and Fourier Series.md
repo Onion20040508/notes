@@ -15,7 +15,7 @@ A Taylor series builds a function out of the powers $1, x, x^2, \ldots$; a Fouri
 
 ## Periodic Functions
 
-> [!definition] Definition §13.2: Periodic Function
+> [!definition] Definition §9.1: Periodic Function
 > A function $f$ is **periodic with period $p > 0$** if
 > 1. $f(x)$ has been defined for all $x$, and
 > 2. $f(x + p) = f(x)$ for all $x$.
@@ -28,7 +28,7 @@ A Taylor series builds a function out of the powers $1, x, x^2, \ldots$; a Fouri
 
 ^def-9-1
 
-> [!theorem] Proposition §13.1: Operations on Periodic Functions
+> [!theorem] Proposition §9.1: Operations on Periodic Functions
 > Let $f$ and $g$ be periodic with a common period $p$, and let $a$, $b$ be constants.
 > 1. $af(x) + bg(x)$ and $f(x)g(x)$ are periodic with period $p$.
 > 2. For a constant $c > 0$, $h(x) = f(cx)$ is periodic with period $p/c$.
@@ -47,7 +47,7 @@ A Taylor series builds a function out of the powers $1, x, x^2, \ldots$; a Fouri
 
 *Uses:* [[§9 Periodic Functions and Fourier Series#^def-9-1|Def. §9.1]]
 
-> [!theorem] Proposition §13.2: The Integral Over Any Period
+> [!theorem] Proposition §9.2: The Integral Over Any Period
 > Suppose $f$ has period $p$ and is integrable over intervals of length $p$. Then for every $c$,
 >
 > $$
@@ -91,7 +91,7 @@ $$
 
 By Proposition §9.1 the right side, if it converges, has period $2\pi$. Two questions must be answered: **(a)** what values must $a_0$, $a_n$, $b_n$ have? **(b)** If the appropriate values are assigned, does the series actually represent $f$? Question (a) looks hopeless, since (1) is one equation in infinitely many unknowns, but the following relations make it easy.
 
-> [!theorem] Proposition §13.3: Orthogonality Relations
+> [!theorem] Proposition §9.3: Orthogonality Relations
 > For integers $n, m \ge 0$,
 >
 > $$
@@ -131,12 +131,12 @@ By Proposition §9.1 the right side, if it converges, has period $2\pi$. Two que
 
 > [!remark]- Connections
 > - The same computation in Stewart: [[§52 Trigonometric Integrals#^rem-52-3|Calc Remark §45.3]]. On $[0, 2\pi]$, as orthogonality in the inner product space $C[0, 2\pi]$ with $\langle f, g\rangle = \int fg$: [[§57 Applications of Inner Product Spaces#^prop-57-2|235 Prop. §57.2]].
-> - Normalized, $\frac{1}{\sqrt{2\pi}}, \frac{\cos x}{\sqrt\pi}, \frac{\sin x}{\sqrt\pi}, \ldots$ is an orthonormal list in $C[-\pi, \pi]$, [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form it is the Fourier basis of $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]. So "orthogonal" is meant in exactly the sense of these inner products.
+> - Normalized, $\frac{1}{\sqrt{2\pi}}, \frac{\cos x}{\sqrt\pi}, \frac{\sin x}{\sqrt\pi}, \ldots$ is an orthonormal list in $C[-\pi, \pi]$, [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form it is the Fourier basis of $L^2[0, 2\pi]$, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]]. So "orthogonal" is meant in exactly the sense of these inner products.
 > - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of $e^{im\theta}$ and $e^{in\theta}$; these relations are its real and imaginary parts).
 
 The idea now is that if (1) is a true equality, both sides must give the same result after the same operation. Multiply both sides by one of the functions in the series and integrate from $-\pi$ to $\pi$; the orthogonality relations kill all but one term. This assumes that the series may be integrated term by term, which is sometimes difficult to justify; it is justified in [[§14 Operations on Fourier Series#^thm-14-4|Theorem §14.4]] (Powers 1.5, Theorem 4).
 
-> [!theorem] Proposition §13.4: Formulas for the Coefficients
+> [!theorem] Proposition §9.4: Formulas for the Coefficients
 > If a function $f$ of period $2\pi$ equals the series (1),
 >
 > $$
@@ -187,7 +187,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > [!remark]- Connections
 > - The formulas are the coordinate formula for an orthogonal basis, $c_j = \langle f, u_j\rangle/\langle u_j, u_j\rangle$: in $\mathbb{R}^n$, [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]]; in an inner product space, [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]](2), here with $\langle f, g\rangle = \int_{-\pi}^{\pi}fg\,dx$ and, by Proposition §9.3, $\langle 1, 1\rangle = 2\pi$, $\langle\cos nx, \cos nx\rangle = \langle\sin nx, \sin nx\rangle = \pi$ for $n \ge 1$.
 
-> [!definition] Definition §13.3: Fourier Coefficients
+> [!definition] Definition §9.2: Fourier Coefficients
 > Let $f$ be periodic with period $2\pi$ (and integrable over a period). The numbers $a_0$, $a_n$, $b_n$ given by (3)–(5) are the **Fourier coefficients** of $f$. In words, $a_0$ is the **mean value** of $f$ over one period.
 >
 > *Powers: 1.1 (text)*
@@ -211,9 +211,9 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 ^def-9-3
 
 > [!remark]- Connections
-> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]].
+> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]].
 
-> [!theorem] Proposition §13.5: Special Values of Sine and Cosine
+> [!theorem] Proposition §9.5: Special Values of Sine and Cosine
 > For $n = 0, \pm1, \pm2, \ldots$,
 >
 > $$
@@ -242,7 +242,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 
 ## Examples
 
-> [!example] Example §13.1: The Sawtooth f(x) = x
+> [!example] Example §9.1: The Sawtooth f(x) = x
 > Suppose $f$ is periodic with period $2\pi$ and $f(x) = x$ for $-\pi < x < \pi$. Its graph is a sawtooth: lines of slope $1$ through $0, \pm2\pi, \pm4\pi, \ldots$, jumping down by $2\pi$ at $x = \pm\pi, \pm3\pi, \ldots$ (figure below).
 >
 > By (3)–(5),
@@ -271,7 +271,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 ![[m341-6-1.svg]]
 *The sawtooth of Example §9.1 (black) and the partial sums $S_1 = 2\sin x$, $S_3$ and $S_{10}$ of its Fourier series. Inside $(-\pi, \pi)$ the partial sums approach the line $y = x$; at the jumps $x = \pm\pi$ every partial sum is $0$, the midpoint of the jump, and just inside the jumps they overshoot ([[§13 Uniform Convergence#^rem-13-1|Gibbs' phenomenon]]).*
 
-> [!example] Example §13.2: Two Periodic Functions from HW 1
+> [!example] Example §9.2: Two Periodic Functions from HW 1
 > The following functions are periodic with period $2\pi$. Sketch them on $(-3\pi, 3\pi)$ and find their Fourier series. **(a)** $f(x) = 3x$, $-\pi < x < \pi$. **(b)** $f(x) = x$, $0 < x < 2\pi$.
 >
 > **(a)** The graph is the sawtooth of Example §9.1 stretched vertically by $3$: segments of slope $3$ rising from $-3\pi$ to $3\pi$ over each period $(-\pi + 2k\pi, \pi + 2k\pi)$. The coefficients are $3$ times those of Example §9.1 (the factor $3$ comes out of each integral):
@@ -299,7 +299,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 
 ^ex-9-2
 
-> [!example] Example §13.3: Coefficients in an Orthonormal System
+> [!example] Example §9.3: Coefficients in an Orthonormal System
 > Let $f_1, f_2, \ldots$ be smooth functions on $[0, 1]$ with
 >
 > $$
@@ -314,7 +314,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 > \int_0^1 g(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\int_0^1 f_i(x)f_j(x)\,dx = \sum_{i=1}^{\infty} a_i\delta_{ij} = a_j ,
 > $$
 >
-> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §9.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§30 Expansion in Series of Eigenfunctions#^prop-30-1|Proposition §30.1]]).
+> where $\delta_{ij} = 1$ if $i = j$ and $0$ otherwise. So $a_j = \int_0^1 g(x)f_j(x)\,dx$. Proposition §9.4 is the case of the system $1, \cos nx, \sin nx$ on $(-\pi, \pi)$, which is orthogonal but not normalized; the factors $\frac{1}{2\pi}$ and $\frac1\pi$ in (3)–(5) are $1/\int\phi^2$ for $\phi = 1$ and $\phi = \cos nx, \sin nx$. In the language of inner products, $\{f_i\}$ is an orthonormal set ([[§27 Orthonormal Sets and Bases#^def-27-1|556 Def. §27.1]]) and $a_j = \langle g, f_j\rangle$. The same computation recurs for every eigenfunction expansion in this subject ([[§30 Expansion in Series of Eigenfunctions#^prop-30-1|Proposition §30.1]]).
 >
 > *Source: 341 HW 1, Problem 3*
 

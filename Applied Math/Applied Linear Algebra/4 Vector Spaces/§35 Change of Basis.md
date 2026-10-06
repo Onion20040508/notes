@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf{x}$ a "name" $[\mathbf{x}]_{\mathcal B} \in \mathbb{R}^n$, the list of weights that build $\mathbf{x}$ from the basis ([[§32 Coordinate Systems#^def-32-1|Definition §32.1]]). Often a problem is posed in one basis $\mathcal{B}$ but is easier to solve in another basis $\mathcal{C}$; Chapters 5 and 7 are full of such changes (eigenvector bases). This section shows that the two coordinate vectors are related by a single invertible matrix, $[\mathbf{x}]_{\mathcal C} = P_{\mathcal C \leftarrow \mathcal B}[\mathbf{x}]_{\mathcal B}$, whose columns are the $\mathcal{C}$-coordinates of the old basis vectors, and how to compute it in $\mathbb{R}^n$ by one row reduction. (This is Section 4.6 in the 6th edition and in the instructor's checklist.)
 
-> [!example] Example §43.1: Two Coordinate Systems for One Space
+> [!example] Example §35.1: Two Coordinate Systems for One Space
 > Let $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ and $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2\}$ be bases of a vector space $V$ such that
 >
 > $$
@@ -53,7 +53,7 @@ A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf
 
 The argument of [[§35 Change of Basis#^ex-35-1|Example §35.1]] works for any two bases.
 
-> [!theorem] Theorem §43.1: The Change-of-Coordinates Matrix
+> [!theorem] Theorem §35.1: The Change-of-Coordinates Matrix
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ and $\mathcal{C} = \{\mathbf{c}_1, \ldots, \mathbf{c}_n\}$ be bases of a vector space $V$. Then there is a unique $n \times n$ matrix $P_{\mathcal C \leftarrow \mathcal B}$ such that
 >
 > $$
@@ -87,7 +87,7 @@ The argument of [[§35 Change of Basis#^ex-35-1|Example §35.1]] works for any t
 
 *Uses:* [[§32 Coordinate Systems#^thm-32-3|§32.3]], [[§32 Coordinate Systems#^def-32-1|Def. §32.1]] (coordinates of a basis vector), [[§5 The Matrix Equation Ax = b#^def-5-1|Def. §5.1]]
 
-> [!definition] Definition §43.1: Change-of-Coordinates Matrix
+> [!definition] Definition §35.1: Change-of-Coordinates Matrix
 > The matrix $P_{\mathcal C \leftarrow \mathcal B}$ of [[§35 Change of Basis#^thm-35-1|Theorem §35.1]] is the **change-of-coordinates matrix from $\mathcal{B}$ to $\mathcal{C}$**. Multiplication by $P_{\mathcal C \leftarrow \mathcal B}$ converts $\mathcal{B}$-coordinates into $\mathcal{C}$-coordinates:
 >
 > $$
@@ -103,7 +103,7 @@ The argument of [[§35 Change of Basis#^ex-35-1|Example §35.1]] works for any t
 > [!remark]- Connections
 > - Rigorous treatment: $P_{\mathcal C \leftarrow \mathcal B}$ is the matrix of the identity operator with input basis $\mathcal{B}$ and output basis $\mathcal{C}$, Axler's $\mathcal{M}(I, (\mathbf{b}), (\mathbf{c}))$. That the two change-of-coordinates matrices are inverse to each other is [[§10 Invertibility and Isomorphisms#^ladr-3-82|LADR 3.82]], and conjugating by it changes the matrix of an operator, $A = C^{-1}BC$, [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] (in Lay: similarity of matrix representations, Section 5.4, [[§43 Eigenvectors and Linear Transformations#^thm-43-2|Theorem §43.2]]).
 
-> [!theorem] Theorem §43.2: The Change-of-Coordinates Matrix Is Invertible
+> [!theorem] Theorem §35.2: The Change-of-Coordinates Matrix Is Invertible
 > $P_{\mathcal C \leftarrow \mathcal B}$ is invertible, and its inverse converts $\mathcal{C}$-coordinates into $\mathcal{B}$-coordinates:
 >
 > $$
@@ -129,7 +129,7 @@ The argument of [[§35 Change of Basis#^ex-35-1|Example §35.1]] works for any t
 
 ## Change of Basis in ℝⁿ
 
-> [!theorem] Proposition §43.3: Change of Basis Through the Standard Basis
+> [!theorem] Proposition §35.3: Change of Basis Through the Standard Basis
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$, $\mathcal{C} = \{\mathbf{c}_1, \ldots, \mathbf{c}_n\}$ and $\mathcal{D}$ be bases of $\mathbb{R}^n$ (or, in (c), of any vector space $V$), let $\mathcal{E} = \{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ be the standard basis, and let $P_{\mathcal B} = [\mathbf{b}_1\ \cdots\ \mathbf{b}_n]$ and $P_{\mathcal C} = [\mathbf{c}_1\ \cdots\ \mathbf{c}_n]$ be the change-of-coordinates matrices of [[§32 Coordinate Systems#^def-32-3|Definition §32.3]].
 >
 > (a) $P_{\mathcal E \leftarrow \mathcal B} = P_{\mathcal B}$.
@@ -177,7 +177,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 
 ^rem-35-1
 
-> [!example] Example §43.2: The Change-of-Coordinates Matrix by Row Reduction
+> [!example] Example §35.2: The Change-of-Coordinates Matrix by Row Reduction
 > Let $\mathbf{b}_1 = \begin{bmatrix} -9 \\ 1 \end{bmatrix}$, $\mathbf{b}_2 = \begin{bmatrix} -5 \\ -1 \end{bmatrix}$, $\mathbf{c}_1 = \begin{bmatrix} 1 \\ -4 \end{bmatrix}$, $\mathbf{c}_2 = \begin{bmatrix} 3 \\ -5 \end{bmatrix}$, and $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$, $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2\}$. Find $P_{\mathcal C \leftarrow \mathcal B}$.
 >
 > Write $[\mathbf{b}_1]_{\mathcal C} = (x_1, x_2)$ and $[\mathbf{b}_2]_{\mathcal C} = (y_1, y_2)$. By definition, $[\mathbf{c}_1\ \mathbf{c}_2]\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \mathbf{b}_1$ and $[\mathbf{c}_1\ \mathbf{c}_2]\begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \mathbf{b}_2$. Solve both at once. Add $4 \cdot$(row 1) to row 2, divide row 2 by $7$, then subtract $3 \cdot$(row 2) from row 1:
@@ -201,7 +201,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 
 ^ex-35-2
 
-> [!example] Example §43.3: Both Directions, with the Inverse
+> [!example] Example §35.3: Both Directions, with the Inverse
 > Let $\mathbf{b}_1 = \begin{bmatrix} 1 \\ -3 \end{bmatrix}$, $\mathbf{b}_2 = \begin{bmatrix} -2 \\ 4 \end{bmatrix}$, $\mathbf{c}_1 = \begin{bmatrix} -7 \\ 9 \end{bmatrix}$, $\mathbf{c}_2 = \begin{bmatrix} -5 \\ 7 \end{bmatrix}$. Find (a) the change-of-coordinates matrix from $\mathcal{C}$ to $\mathcal{B}$, (b) the one from $\mathcal{B}$ to $\mathcal{C}$.
 >
 > **(a)** Now $P_{\mathcal B \leftarrow \mathcal C}$ is wanted, so $\mathcal{B}$ goes on the left. Add $3 \cdot$(row 1) to row 2, divide row 2 by $-2$, then add $2 \cdot$(row 2) to row 1:
@@ -225,7 +225,7 @@ To change between two nonstandard bases of $\mathbb{R}^n$ we need the coordinate
 
 ^ex-35-3
 
-> [!example] Example §43.4: The Lecture's Example, Reducing the Other Block
+> [!example] Example §35.4: The Lecture's Example, Reducing the Other Block
 > Let $\mathbf{b}_1 = \begin{bmatrix} 7 \\ 5 \end{bmatrix}$, $\mathbf{b}_2 = \begin{bmatrix} -3 \\ -1 \end{bmatrix}$, $\mathbf{c}_1 = \begin{bmatrix} 1 \\ -5 \end{bmatrix}$, $\mathbf{c}_2 = \begin{bmatrix} -2 \\ 2 \end{bmatrix}$. Find $P_{\mathcal C \leftarrow \mathcal B}$ and $P_{\mathcal B \leftarrow \mathcal C}$.
 >
 > The lecture reduces $[\mathbf{b}_1\ \mathbf{b}_2 \mid \mathbf{c}_1\ \mathbf{c}_2]$ until the right block is $I$ (the variant at the end of [[§35 Change of Basis#^rem-35-1|the method remark]]). Add $5 \cdot$(row 1) to row 2, divide row 2 by $-8$, then add $2 \cdot$(row 2) to row 1:

@@ -15,7 +15,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ## Arc Length of a Curve
 
-> [!definition] Definition §69.1: Length of a Curve
+> [!definition] Definition §60.1: Length of a Curve
 > Let $C$ be the curve $y = f(x)$, $a \le x \le b$, where $f$ is continuous. Divide $[a, b]$ into $n$ subintervals with endpoints $x_0, x_1, \ldots, x_n$ and equal width $\Delta x$, and let $P_i = (x_i, y_i)$ with $y_i = f(x_i)$, the point of $C$ above $x_i$. The polygonal path with vertices $P_0, P_1, \ldots, P_n$ approximates $C$. The **length** $L$ of $C$ is the limit of the lengths of these paths, if the limit exists:
 >
 > $$
@@ -36,14 +36,14 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^rem-60-1
 
-> [!definition] Definition §69.2: Smooth Function
+> [!definition] Definition §60.2: Smooth Function
 > A function $f$ is **smooth** on $[a, b]$ if its derivative $f'$ is continuous there: a small change in $x$ produces a small change in $f'(x)$.
 >
 > *Stewart: 8.1 (text)*
 
 ^def-60-2
 
-> [!theorem] Theorem §69.1: The Arc Length Formula
+> [!theorem] Theorem §60.1: The Arc Length Formula
 > If $f'$ is continuous on $[a, b]$, then the length of the curve $y = f(x)$, $a \le x \le b$, is
 >
 > $$
@@ -104,7 +104,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > - The analysis behind the proof: the Mean Value Theorem [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]; Riemann sums with arbitrary sample points and their limit for integrable functions, [[§32 The Definition of the Riemann Integral#^def-32-8|451 Def. §32.8]], with continuous functions integrable by [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]].
 > - The same derivation for a parametrized curve $(x(t), y(t))$ follows [[§27 Line Integrals and Green's Theorem#^def-27-1|452 Def. §27.1]]. There the two coordinates need two different Mean Value Theorem points, and [[§19 Uniform Continuity#^def-19-1|uniform continuity]] of $x'$ and $y'$ closes the gap. Here $x$ itself is the parameter, so one point $x_i^*$ suffices.
 
-> [!example] Example §69.1: A Semicubical Parabola
+> [!example] Example §60.1: A Semicubical Parabola
 > Find the length of the arc of the semicubical parabola $y^2 = x^3$ between the points $(1, 1)$ and $(4, 8)$.
 >
 > Both points lie on the top half of the curve, $y = x^{3/2}$, for which
@@ -133,7 +133,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^ex-60-1
 
-> [!theorem] Theorem §69.2: Arc Length of a Curve x = g(y)
+> [!theorem] Theorem §60.2: Arc Length of a Curve x = g(y)
 > If a curve has the equation $x = g(y)$, $c \le y \le d$, and $g'(y)$ is continuous, then its length is
 >
 > $$
@@ -151,7 +151,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 *Uses:* [[§60 Arc Length#^def-60-1|Def. §60.1]], [[§60 Arc Length#^thm-60-1|§60.1]]
 
-> [!example] Example §69.2: A Parabola, Integrated in y
+> [!example] Example §60.2: A Parabola, Integrated in y
 > Find the length of the arc of the parabola $y^2 = x$ from $(0, 0)$ to $(1, 1)$.
 >
 > **Choice of variable.** As a function of $x$ the arc is $y = \sqrt{x}$, whose derivative $\frac{1}{2\sqrt{x}}$ is unbounded at $x = 0$, so [[§60 Arc Length#^thm-60-1|Theorem §60.1]] does not apply on $[0, 1]$. As a function of $y$ it is $x = y^2$, $0 \le y \le 1$, with $dx/dy = 2y$ continuous. [[§60 Arc Length#^thm-60-2|Theorem §60.2]] gives
@@ -190,7 +190,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^rem-60-2
 
-> [!example] Example §69.3: A Hyperbola, by Simpson's Rule
+> [!example] Example §60.3: A Hyperbola, by Simpson's Rule
 > (a) Set up an integral for the length of the arc of the hyperbola $xy = 1$ from $(1, 1)$ to $(2, \frac12)$. (b) Use Simpson's Rule with $n = 10$ to estimate the arc length.
 >
 > **(a)** $y = \dfrac1x$ and $\dfrac{dy}{dx} = -\dfrac{1}{x^2}$, so by [[§60 Arc Length#^thm-60-1|Theorem §60.1]]
@@ -226,7 +226,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ## The Arc Length Function
 
-> [!definition] Definition §69.3: Arc Length Function
+> [!definition] Definition §60.3: Arc Length Function
 > Let $C$ be a smooth curve $y = f(x)$, $a \le x \le b$. The **arc length function** $s(x)$ is the distance along $C$ from the initial point $P_0(a, f(a))$ to the point $Q(x, f(x))$. By [[§60 Arc Length#^thm-60-1|Theorem §60.1]],
 >
 > $$
@@ -239,7 +239,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 
 ^def-60-3
 
-> [!theorem] Theorem §69.3: Derivative of the Arc Length Function
+> [!theorem] Theorem §60.3: Derivative of the Arc Length Function
 > For the arc length function of a smooth curve $y = f(x)$,
 >
 > $$
@@ -262,7 +262,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > [!remark]- Connections
 > - Rigorous form of the step used: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] ($x \mapsto \int_a^x f$ is differentiable wherever $f$ is continuous, with derivative $f(x)$).
 
-> [!definition] Definition §69.4: Differential of Arc Length
+> [!definition] Definition §60.4: Differential of Arc Length
 > The **differential of arc length** is
 >
 > $$

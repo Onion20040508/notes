@@ -15,7 +15,7 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 
 ## Laplace's Equation
 
-> [!definition] Definition §54.1: Potential Equation
+> [!definition] Definition §44.1: Potential Equation
 > The **potential equation**, or **Laplace's equation**, in two dimensions is
 >
 > $$
@@ -54,7 +54,7 @@ Where the equation comes from:
 - **Potentials.** The gravitational potential in empty space and the electrostatic potential in a charge-free region satisfy $\nabla^2u = 0$; hence the name.
 - **Ideal flow.** The velocity potential of an incompressible, irrotational flow is harmonic (Example §44.1).
 
-> [!example] Example §54.1: Velocity Potential of an Ideal Fluid
+> [!example] Example §44.1: Velocity Potential of an Ideal Fluid
 > Let $u$ and $v$ be the $x$- and $y$-components of the velocity of a two-dimensional fluid flow. Under suitable assumptions (incompressible and irrotational flow) they satisfy
 >
 > $$
@@ -73,7 +73,7 @@ Where the equation comes from:
 > \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = -\phi_{xx} - \phi_{yy} = 0 \qquad\Longleftrightarrow\qquad \nabla^2\phi = 0 .
 > $$
 >
-> So the flow is found by solving the potential equation for $\phi$. On a wall the flow cannot cross, the normal velocity $-\partial\phi/\partial n$ is zero: such walls give the Neumann conditions of Definition §44.5 below. The same derivation, starting from conservation of mass, is [[§29 Conservation of Mass and Laplace's Equation#^rem-29-4|452 §29]] (irrotational flow).
+> So the flow is found by solving the potential equation for $\phi$. On a wall the flow cannot cross, the normal velocity $-\partial\phi/\partial n$ is zero: such walls give the Neumann conditions of Definition §44.3 below. The same derivation, starting from conservation of mass, is [[§29 Conservation of Mass and Laplace's Equation#^rem-29-4|452 §29]] (irrotational flow).
 >
 > *Powers (p. 257) prints (B) as $\partial u/\partial x - \partial v/\partial x = 0$; the irrotationality condition is $\partial u/\partial y - \partial v/\partial x = 0$, as above.*
 >
@@ -125,7 +125,7 @@ Harmonic functions have many special properties. The most important one, the **m
 
 On the sides of a rectangle $0 < x < a$, $0 < y < b$ the normal derivative is simply $\pm u_x$ (at $x = 0$, $x = a$) or $\pm u_y$ (at $y = 0$, $y = b$); a zero normal derivative means "insulated" for temperatures and "no flow across" for fluids.
 
-> [!theorem] Proposition §54.1: Solutions of Neumann's Problem Are Not Unique
+> [!theorem] Proposition §44.1: Solutions of Neumann's Problem Are Not Unique
 > If $u$ is a solution of Neumann's problem in a region, then so is $u + C$ for every constant $C$.
 >
 > *Powers: 4.1 (text)*
@@ -150,7 +150,7 @@ For Dirichlet's problem, by contrast, the solution is unique: [[§49 The Poisson
 
 The simplest harmonic functions are polynomials. They are useful for satisfying simple boundary conditions, which reduces the work in rectangle problems ([[§45 Potential in a Rectangle#^rem-45-2|§45]], [[§46 Further Examples for a Rectangle#^ex-46-4|§46]]).
 
-> [!theorem] Proposition §54.2: Harmonic Polynomials of Degree Two
+> [!theorem] Proposition §44.2: Harmonic Polynomials of Degree Two
 > The polynomial
 >
 > $$
@@ -178,7 +178,7 @@ The simplest harmonic functions are polynomials. They are useful for satisfying 
 
 *Uses:* [[§44 Potential Equation#^def-44-1|Def. §44.1]], [[§44 Potential Equation#^def-44-2|Def. §44.2]], [[§113 Maximum and Minimum Values#^thm-113-2|Calc Thm. §113.2]] (second derivatives test)
 
-> [!example] Example §54.2: The Harmonic Polynomials x² − y² and xy
+> [!example] Example §44.2: The Harmonic Polynomials x² − y² and xy
 > Both $u = x^2 - y^2$ and $u = xy$ satisfy Laplace's equation: for the first, $u_{xx} + u_{yy} = 2 - 2 = 0$; for the second, $u_{xx} = u_{yy} = 0$. They are the cases $d = 1$, $f = -1$ and $e = 1$ of Proposition §44.2, and their graphs are saddles centered at the origin.
 >
 > On the sides of the rectangle $0 < x < a$, $0 < y < b$ they take the values
@@ -207,7 +207,7 @@ $$
 u(x, y) = u\big(r\cos\theta, r\sin\theta\big) = v(r, \theta) .
 $$
 
-> [!theorem] Theorem §54.3: The Laplacian in Polar and Cylindrical Coordinates
+> [!theorem] Theorem §44.3: The Laplacian in Polar and Cylindrical Coordinates
 > Let $u$ have continuous second partial derivatives, and $v(r, \theta) = u(r\cos\theta, r\sin\theta)$ for $r > 0$. Then
 >
 > $$
@@ -301,7 +301,7 @@ $$
 > - The general formula for orthogonal coordinates with scale factors, [[§33 The Laplacian in Spherical Coordinates#^rem-33-3|452 §33]] (Remark: General Orthogonal Coordinates), gives the cylindrical formula at once from $h_r = 1$, $h_\theta = r$, $h_z = 1$.
 > - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^prop-116-2|342 Prop. §116.2]] (the Laplacian under an analytic change of variables; with $w = \operatorname{Log} z$ it gives the polar form).
 
-> [!example] Example §54.3: Simple Harmonic Functions in Cartesian and Polar Form
+> [!example] Example §44.3: Simple Harmonic Functions in Cartesian and Polar Form
 > **(a) Functions of $x$ only.** If $u = u(x)$, the potential equation reduces to $u'' = 0$, so $u(x) = A + Bx$.
 >
 > **(b) Functions of $r$ only.** If $v = v(r)$, the polar form of Theorem §44.3 reduces to

@@ -73,7 +73,7 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 
 > [!remark]- Connections
 > - For $p = 2$ the norm comes from the $L^2$ inner product, and Minkowski is the inner-product [[Triangle inequality|triangle inequality (LADR 6.17)]]; the case $p = 1$ is [[§22 The General Lebesgue Integral#^prop-22-3|Proposition §22.3]].
-> - Sequence version, proved by the same split-and-Hölder computation: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1|556 Thm. §16.1]].
+> - Sequence version, proved by the same split-and-Hölder computation: [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|556 Thm. §18.1]].
 
 > [!theorem] Theorem §35.3: $L^p$ is a Normed Linear Space
 > Let $1 \leq p \leq \infty$. Then $(L^p(E), \|\cdot\|_p)$ is a [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-2|normed linear space]].
@@ -93,7 +93,7 @@ Minkowski's inequality makes $\|\cdot\|_p$ a norm, the [[Riesz–Fischer Theorem
 > [!remark]- Connections
 > - The case $p = 1$: [[§24 The L¹ Space and Density Theorems#^thm-24-4|Theorem §24.4]].
 > - Passing to equivalence classes mod a.e. equality is a quotient by the subspace of null functions, as in [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]].
-> - Sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3|556 Prop. §16.3]] ($\ell^p$ is a normed linear space).
+> - Sequence analogue: [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3|556 Prop. §18.3]] ($\ell^p$ is a normed linear space).
 
 > [!theorem] Corollary §35.4: Minkowski for Finite Sums
 > Let $\{f_k\}_{k=1}^m \subseteq L^p(E)$. Then $\left\|\sum_{k=1}^{m} f_k\right\|_p \leq \sum_{k=1}^{m} \|f_k\|_p$.
@@ -296,7 +296,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!remark]- Connections
 > - $L^p(E)$ is thus a [[§13 Some Topological Concepts in Metric Spaces#^def-13-4|complete metric space (451 Def. §13.4)]], like $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-2|451 §13.2]]); for $p = 2$, a complete inner product space (Hilbert space) extending [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]].
 > - The engine is the absolute series test ([[§35 Lᵖ as a Banach Space#^cor-35-7|§35.7]]), itself built on [[Monotone Convergence Theorem (Lebesgue)|MCT]]; the upgrade from subsequence to full sequence is [[Fatou's Lemma|Fatou]].
-> - Sequence analogue: [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|556 Thm. §16.5]] ($\ell^p$ is a Banach space); for $p = 2$ it makes $L^2$ a Hilbert space in the sense of [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]].
+> - Sequence analogue: [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|556 Thm. §18.5]] ($\ell^p$ is a Banach space); for $p = 2$ it makes $L^2$ a Hilbert space in the sense of [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]].
 
 ## Density and Separability
 
@@ -307,7 +307,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - Topological versions: [[§22 Countability Axioms#^def-22-4|dense (590 Def. §22.4)]]; the sequential form agrees with $\overline{\mathcal{D}} = X$ in a metric space by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]].
-> - 556 versions: [[§10 Normed Linear Spaces#^def-10-7|556 Def. §10.7]] (dense, via the closure).
+> - 556 versions: [[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]] (dense, via the closure).
 
 > [!definition] Definition §35.5: Separability
 > Let $(X, d)$ be a metric space. We say $(X, d)$ is **separable** if there exists a countable dense subset.
@@ -317,7 +317,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > [!remark]- Connections
 > - Topological version: [[§22 Countability Axioms#^def-22-5|separable (590 Def. §22.5)]].
 > - In metric spaces, separable $\iff$ second countable: [[§22 Countability Axioms#^prop-22-4|590 §22.4]].
-> - 556 version: [[§24 Orthonormal Sets and Bases#^def-24-5|556 Def. §24.5]] (separable).
+> - 556 version: [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|556 Def. §28.1]] (separable).
 
 > [!example] Example §35.1
 > $\mathbb{R}^n$ is separable: $\mathbb{Q}^n$ is a countable dense subset.
@@ -372,7 +372,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - The $L^1$ versions: [[§24 The L¹ Space and Density Theorems#^thm-24-5|§24.5]], [[§24 The L¹ Space and Density Theorems#^thm-24-6|§24.6]], [[Continuous Functions of Compact Support are Dense in L¹|§24.7]].
-> - 556 strengthens (iii) to smooth compactly supported approximants, [[§17 The Function Spaces Lᵖ(Ω)#^thm-17-4|556 Thm. §17.4]]; the failure for $p = \infty$ is [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-5|556 Prop. §17.5]].
+> - 556 strengthens (iii) to smooth compactly supported approximants, [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|556 Thm. §19.4]]; the failure for $p = \infty$ is [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|556 Prop. §19.5]].
 > - Used in PDEs: with Weierstrass's approximation theorem, (iii) shows that polynomials are dense in $L^2[-1,1]$, so Legendre series converge in the mean; see the Connections of [[§61★ Legendre Series and Zonal Harmonics#^thm-61-1|341 Thm. §61.1]].
 
 > [!remark] Remark: The Approximation Chain for $L^p$
@@ -402,7 +402,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[§35 Lᵖ as a Banach Space#^def-35-4|Def. §35.4]], [[§35 Lᵖ as a Banach Space#^def-35-5|Def. §35.5]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§35 Lᵖ as a Banach Space#^thm-35-12|§35.12]]
 
 > [!remark]- Connections
-> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§25 Sequence and Function Spaces#^prop-25-4|556 Prop. §25.4]]; the case $L^2(\mathbb{R}^n)$ is [[§32 Position Eigenstates and Continuous Resolutions#^thm-32-2|556 Thm. §32.2]].
+> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§29 Sequence and Function Spaces#^prop-29-4|556 Prop. §29.4]]; the case $L^2(\mathbb{R}^n)$ is [[§36 Position Eigenstates and Continuous Resolutions#^thm-36-2|556 Thm. §36.2]].
 
 > [!theorem] Theorem §35.14: $L^\infty$ is Not Separable
 > $L^\infty(E)$ is not separable (when $E$ has positive measure).

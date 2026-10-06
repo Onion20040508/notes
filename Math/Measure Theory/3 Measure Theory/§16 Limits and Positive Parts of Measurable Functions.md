@@ -11,7 +11,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ## Suprema, Infima, and Limits of Measurable Functions
 
-> [!theorem] Theorem §24.2: Measurability of Suprema and Infima
+> [!theorem] Theorem §16.1: Measurability of Suprema and Infima
 > Let $E \in \mathcal{M}$ and let $\{f_k\}_{k \geq 1}$ be a sequence (finite or infinite) of measurable functions on $E$. Then:
 > 1. $\displaystyle\sup_{k \geq 1} f_k(x): E \to \overline{\mathbb{R}}$ is measurable.
 > 2. $\displaystyle\inf_{k \geq 1} f_k(x): E \to \overline{\mathbb{R}}$ is measurable.
@@ -39,7 +39,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 *Uses:* [[§15 Measurable Functions#^def-15-2|Def. §15.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§11.3]], [[§15 Measurable Functions#^thm-15-3|§15.3]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
-> [!theorem] Theorem §24.1: Measurability of Limsup and Liminf
+> [!theorem] Theorem §16.2: Measurability of Limsup and Liminf
 > Let $E \in \mathcal{M}$ and let $\{f_k\}_{k \geq 1}$ be a sequence of measurable functions on $E$. Then:
 > 1. $\displaystyle\limsup_{k \to \infty} f_k(x): E \to \overline{\mathbb{R}}$ is measurable.
 > 2. $\displaystyle\liminf_{k \to \infty} f_k(x): E \to \overline{\mathbb{R}}$ is measurable.
@@ -72,7 +72,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^rem-16-4
 
-> [!theorem] Corollary §24.3: Pointwise Limits of Measurable Functions
+> [!theorem] Corollary §16.3: Pointwise Limits of Measurable Functions
 > If $\{f_k\}$ is a sequence of measurable functions on $E$ and $f_k(x) \to f(x)$ pointwise for all $x \in E$, then $f$ is measurable.
 
 ^cor-16-3
@@ -90,7 +90,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ## Reciprocals and Quotients of Measurable Functions
 
-> [!theorem] Proposition §24.4: Measurability of $1/f$
+> [!theorem] Proposition §16.4: Measurability of $1/f$
 > Let $f$ be a measurable function on $E$ with $f(x) \neq 0$ a.e. on $E$. Then $1/f$ is measurable on $E$.
 
 ^prop-16-4
@@ -136,7 +136,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ## Positive and Negative Parts
 
-> [!definition] Definition §24.1: Positive and Negative Parts
+> [!definition] Definition §16.1: Positive and Negative Parts
 > Let $f: E \to \overline{\mathbb{R}}$ be a function. Define:
 >
 > $$
@@ -153,7 +153,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 ![[m551-12-2.svg]]
 *Positive and negative parts: $f^+$ (blue) keeps the part of the graph of $f$ above the axis, $f^-$ (red) flips the part below (dashed) upward, and each is $0$ where the other is active. Hence $f = f^+ - f^-$ and $|f| = f^+ + f^-$ ([[§16 Limits and Positive Parts of Measurable Functions#^prop-16-5|Proposition §16.5]]).*
 
-> [!theorem] Proposition §24.5: Properties of $f^+$ and $f^-$
+> [!theorem] Proposition §16.5: Properties of $f^+$ and $f^-$
 > For any $f: E \to \overline{\mathbb{R}}$:
 > 1. $f(x) = f^+(x) - f^-(x)$ for all $x \in E$.
 > 2. $|f(x)| = f^+(x) + f^-(x)$ for all $x \in E$.
@@ -169,7 +169,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 *Uses:* [[§16 Limits and Positive Parts of Measurable Functions#^def-16-1|Def. §16.1]]
 
-> [!theorem] Proposition §24.6: Measurability of $f^+$ and $f^-$
+> [!theorem] Proposition §16.6: Measurability of $f^+$ and $f^-$
 > $f: E \to \overline{\mathbb{R}}$ is measurable if and only if both $f^+$ and $f^-$ are measurable.
 
 ^prop-16-6
@@ -206,7 +206,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ## Almost Everywhere (a.e.)
 
-> [!definition] Definition §24.3: Almost Everywhere
+> [!definition] Definition §16.2: Almost Everywhere
 > Let $E \in \mathcal{M}$ and let $P(x)$ be a property that may or may not hold at each point $x \in E$. We say $P(x)$ holds **almost everywhere** on $E$ (abbreviated **a.e.**) if
 >
 > $$
@@ -224,7 +224,7 @@ Measurability survives the limiting operations of analysis: suprema and infima, 
 
 ^ex-16-1
 
-> [!theorem] Proposition §24.7: Functions Equal a.e. to Measurable Functions
+> [!theorem] Proposition §16.7: Functions Equal a.e. to Measurable Functions
 > Assume $f: E \to \overline{\mathbb{R}}$ is measurable. If $g(x) = f(x)$ for a.e. $x \in E$, then $g$ is measurable.
 
 ^prop-16-7

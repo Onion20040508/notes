@@ -181,7 +181,7 @@ Repeated use of the Product Law, and two basic limits, give six more laws. Stewa
 
 *Uses:* [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|§9.1]], [[§11 The Precise Definition of a Limit#^def-11-1|Def. §11.1]], [[§12 Continuity#^cor-12-8|§12.8]], [[§12 Continuity#^thm-12-6|§12.6]]
 
-> [!example] Example §11.1: Justifying Each Step
+> [!example] Example §9.1: Justifying Each Step
 > Evaluate the following limits and justify each step.
 >
 > **(a)** $\displaystyle\lim_{x \to 5} (2x^2 - 3x + 4)$.

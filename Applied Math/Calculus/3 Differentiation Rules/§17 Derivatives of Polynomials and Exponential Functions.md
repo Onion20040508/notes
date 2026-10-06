@@ -15,7 +15,7 @@ Computing every derivative from the limit definition ([[§15 The Derivative as a
 
 ## Constant Functions
 
-> [!theorem] Theorem §20.1: Derivative of a Constant Function
+> [!theorem] Theorem §17.1: Derivative of a Constant Function
 > If $f(x) = c$ for a constant $c$, then $f'(x) = 0$. In Leibniz notation,
 >
 > $$
@@ -50,7 +50,7 @@ $$
 
 (Equation 3). The pattern is $nx^{n-1}$.
 
-> [!theorem] Theorem §20.2: The Power Rule
+> [!theorem] Theorem §17.2: The Power Rule
 > If $n$ is a positive integer, then
 >
 > $$
@@ -114,7 +114,7 @@ The rule holds for other exponents too. From the definition, $\frac{d}{dx}\big(\
 
 This is proved with logarithmic differentiation in [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-6|Theorem §22.6]] (Stewart 3.6). It is used freely from here on.
 
-> [!example] Example §20.1: Negative and Fractional Exponents
+> [!example] Example §17.1: Negative and Fractional Exponents
 > Differentiate (a) $f(x) = \dfrac{1}{x^2}$ and (b) $y = \sqrt[3]{x^2}$.
 >
 > In each case, first rewrite the function as a power of $x$.
@@ -146,7 +146,7 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 
 ^def-17-1
 
-> [!example] Example §20.2: Tangent and Normal Lines
+> [!example] Example §17.2: Tangent and Normal Lines
 > Find equations of the tangent line and the normal line to the curve $y = x\sqrt{x}$ at the point $(1, 1)$.
 >
 > Write $f(x) = x\sqrt{x} = x \cdot x^{1/2} = x^{3/2}$. By the Power Rule,
@@ -178,7 +178,7 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 
 ^rem-17-1
 
-> [!theorem] Theorem §20.3: The Constant Multiple Rule
+> [!theorem] Theorem §17.3: The Constant Multiple Rule
 > If $c$ is a constant and $f$ is a differentiable function, then
 >
 > $$
@@ -207,7 +207,7 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 
 For instance, $\frac{d}{dx}(3x^4) = 3 \cdot 4x^3 = 12x^3$, and $\frac{d}{dx}(-x) = \frac{d}{dx}[(-1)x] = (-1) \cdot 1 = -1$.
 
-> [!theorem] Theorem §20.4: The Sum and Difference Rules
+> [!theorem] Theorem §17.4: The Sum and Difference Rules
 > If $f$ and $g$ are both differentiable, then
 >
 > $$
@@ -246,7 +246,7 @@ For instance, $\frac{d}{dx}(3x^4) = 3 \cdot 4x^3 = 12x^3$, and $\frac{d}{dx}(-x)
 
 Combining Theorems [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-1|§17.1]]–[[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-4|§17.4]] differentiates any polynomial term by term.
 
-> [!example] Example §20.3: A Polynomial and Its Horizontal Tangents
+> [!example] Example §17.3: A Polynomial and Its Horizontal Tangents
 > **(a)** By the Sum, Difference, Constant Multiple and Power Rules,
 >
 > $$
@@ -286,7 +286,7 @@ $$
 \lim_{h \to 0} \frac{b^h - 1}{h} = \lim_{h \to 0} \frac{b^{0+h} - b^0}{h} = f'(0) .
 $$
 
-> [!theorem] Theorem §20.5: Derivative of an Exponential Function
+> [!theorem] Theorem §17.5: Derivative of an Exponential Function
 > If the exponential function $f(x) = b^x$ is differentiable at $0$, then it is differentiable everywhere and
 >
 > $$
@@ -369,7 +369,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 
 *From the integral definition of $\ln$: [[§144 The Logarithm Defined as an Integral#^thm-144-7|Theorem §144.7]].*
 
-> [!example] Example §20.4: First and Second Derivatives
+> [!example] Example §17.4: First and Second Derivatives
 > If $f(x) = e^x - x$, find $f'$ and $f''$, and compare the graphs of $f$ and $f'$.
 >
 > By the Difference Rule and [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-6|Theorem §17.6]],
@@ -390,7 +390,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 
 ^ex-17-4
 
-> [!example] Example §20.5: A Tangent Line Parallel to a Given Line
+> [!example] Example §17.5: A Tangent Line Parallel to a Given Line
 > At what point on the curve $y = e^x$ is the tangent line parallel to the line $y = 2x$?
 >
 > Since $y = e^x$, $y' = e^x$. If the point has $x$-coordinate $a$, the tangent line there has slope $e^a$. It is parallel to $y = 2x$ exactly when the slopes agree:

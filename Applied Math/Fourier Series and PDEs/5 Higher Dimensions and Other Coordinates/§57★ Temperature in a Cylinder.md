@@ -60,7 +60,7 @@ which will be used again and again: at the singular point $r = 0$ of (6) it take
 
 ## The Eigenvalue Problem
 
-> [!theorem] Proposition §70.1: Eigenvalues and Eigenfunctions of the Radial Problem
+> [!theorem] Proposition §57.1: Eigenvalues and Eigenfunctions of the Radial Problem
 > Let $0 < \alpha_1 < \alpha_2 < \cdots$ be the positive zeros of $J_0$ ($\alpha_1 = 2.405$, $\alpha_2 = 5.520$, $\alpha_3 = 8.654$, $\alpha_4 = 11.792, \ldots$). The singular eigenvalue problem
 >
 > $$
@@ -117,7 +117,7 @@ $$
 
 The eigenvalue problem of Proposition §57.1 is not a regular Sturm–Liouville problem ([[§29 Sturm–Liouville Problems#^def-29-1|Definition §29.1]]): in the form $(s\phi')' - q\phi + \lambda^2p\phi = 0$ it has $s(r) = p(r) = r$, which vanish at the endpoint $r = 0$. Its eigenfunctions are nevertheless orthogonal, with the weight $p(r) = r$.
 
-> [!theorem] Proposition §70.2: Orthogonality of the Functions J₀(λₙr)
+> [!theorem] Proposition §57.2: Orthogonality of the Functions J₀(λₙr)
 > If $\lambda_n = \alpha_n/a$ as in Proposition §57.1, then
 >
 > $$
@@ -155,11 +155,11 @@ The eigenvalue problem of Proposition §57.1 is not a regular Sturm–Liouville 
 
 > [!remark]- Connections
 > - Finite-dimensional analogue: eigenvectors of a self-adjoint (indeed of any normal) operator for distinct eigenvalues are orthogonal, [[§23 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. Here the operator is $\phi \mapsto -\frac{1}{r}(r\phi')'$ on functions with $\phi(a) = 0$, bounded at $0$, and the computation above shows that it is symmetric for the weighted inner product $\langle f, g\rangle = \int_0^a f(r)g(r)\,r\,dr$.
-> - In that inner product the functions $J_0(\lambda_n r)$ form an orthogonal set in the sense of [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]]. The weight $r$ is the polar area element: $\int_0^a\!\int_{-\pi}^{\pi} F\,r\,d\theta\,dr$ is the integral over the disk, [[§117 Double Integrals in Polar Coordinates#^thm-117-1|Calc Thm. §117.1]].
+> - In that inner product the functions $J_0(\lambda_n r)$ form an orthogonal set in the sense of [[§27 Orthonormal Sets and Bases#^def-27-1|556 Def. §27.1]]. The weight $r$ is the polar area element: $\int_0^a\!\int_{-\pi}^{\pi} F\,r\,d\theta\,dr$ is the integral over the disk, [[§117 Double Integrals in Polar Coordinates#^thm-117-1|Calc Thm. §117.1]].
 
 The orthogonality relation tells how to choose the coefficients in (11): multiply both sides by $J_0(\lambda_m r)\,r$ and integrate from $0$ to $a$. All terms but the one with $n = m$ vanish, which leaves $\int_0^a f(r)J_0(\lambda_m r)\,r\,dr = a_m\int_0^a J_0^2(\lambda_m r)\,r\,dr$.
 
-> [!definition] Definition §70.1: Fourier–Bessel Series
+> [!definition] Definition §57.1: Fourier–Bessel Series
 > Let $f$ be sectionally smooth on $0 < r < a$, and let $\lambda_n = \alpha_n/a$, where $\alpha_n$ are the positive zeros of $J_0$. The **Fourier–Bessel series** (of order $0$) of $f$ is
 >
 > $$
@@ -172,7 +172,7 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 
 ^def-57-1
 
-> [!theorem] Theorem §70.3: Convergence of Fourier–Bessel Series
+> [!theorem] Theorem §57.3: Convergence of Fourier–Bessel Series
 > If $f(r)$ is sectionally smooth on the interval $0 < r < a$, then at every point $r$ of that interval
 >
 > $$
@@ -188,12 +188,12 @@ The orthogonality relation tells how to choose the coefficients in (11): multipl
 *Powers omits the proof.* It is the analogue of the Fourier convergence theorem, [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1]], and of the eigenfunction expansion theorem, [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|Theorem §30.2]], which Powers states for regular Sturm–Liouville problems only.
 
 > [!remark]- Connections
-> - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]]. This completeness is not proved in the vault.
+> - The Hilbert-space counterpart of the theorem is that the normalized functions $J_0(\lambda_n r)/\|J_0(\lambda_n r)\|$ form an orthonormal basis of $L^2\big((0, a), r\,dr\big)$: every function orthogonal to all of them is $0$, equivalently Parseval's equality holds, [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]. This completeness is not proved in the vault.
 > - Used in Electromagnetism: Fourier–Bessel series for a cylinder with the potential given on an end face, and the two-tube electron lens — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-3|EM Theorem §C6.3.3]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^ex-c6-3-1|EM Example §C6.3.1]].
 
 ## Solution of the Heat Problem
 
-> [!theorem] Proposition §70.4: Temperature in a Cylinder
+> [!theorem] Proposition §57.4: Temperature in a Cylinder
 > If $f$ is sectionally smooth on $0 < r < a$, the function
 >
 > $$
@@ -284,7 +284,7 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 
 *Uses:* [[§57★ Temperature in a Cylinder#^lem-57-5|§57.5]]
 
-> [!example] Example §70.1: A Cylinder Initially at Uniform Temperature
+> [!example] Example §57.1: A Cylinder Initially at Uniform Temperature
 > Solve (1)–(3) with (8) when $f(r) = T_0$, $0 < r < a$.
 >
 > **Numerator of (12).** Substitute $x = \lambda_n r$ and use [[§57★ Temperature in a Cylinder#^lem-57-5|Lemma §57.5]]:
@@ -325,7 +325,7 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 ![[m341-46-1.svg]]
 *The temperature (18) of Example §57.1 as a function of $r$ at the dimensionless times $kt/a^2 = 0.01$, $0.05$, $0.2$, $0.5$ (400 terms), with the initial temperature $T_0$ dashed. The wall is held at $0$, so the cylinder cools from the outside in: at first only a boundary layer near $r = a$ has cooled, while later the profile is a multiple of the first eigenfunction $J_0(2.405\,r/a)$ that decays exponentially.*
 
-> [!example] Example §70.2: How Fast the Cylinder Cools
+> [!example] Example §57.2: How Fast the Cylinder Cools
 > In Example §57.1, find the temperature on the axis at $kt/a^2 = 0.1$ and $0.5$, and describe the behaviour for large and small times.
 >
 > At $r = 0$, $J_0(0) = 1$, so by (18)
@@ -350,7 +350,7 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 
 ^ex-57-2
 
-> [!example] Example §70.3: Only the Inner Half Initially Hot
+> [!example] Example §57.3: Only the Inner Half Initially Hot
 > Solve the heat problem (1)–(3), with (8), if
 >
 > $$

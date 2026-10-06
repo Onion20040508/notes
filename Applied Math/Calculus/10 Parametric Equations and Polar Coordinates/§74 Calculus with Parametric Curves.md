@@ -15,7 +15,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 ## Tangents
 
-> [!theorem] Theorem §86.1: Slope of a Parametric Curve
+> [!theorem] Theorem §74.1: Slope of a Parametric Curve
 > Let $f$ and $g$ be differentiable and consider the curve $x = f(t)$, $y = g(t)$, where near the point $y$ is also a differentiable function of $x$ (this is automatic when $f'$ is continuous and $dx/dt \ne 0$; see the proof). At a point where $dx/dt \ne 0$,
 >
 > $$
@@ -47,9 +47,9 @@ The methods of calculus apply to parametric curves directly, without eliminating
 *Uses:* [[§20 The Chain Rule#^thm-20-2|§20.2]] (Chain Rule), [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-1|§22.1]] (derivative of an inverse function)
 
 > [!remark]- Connections
-> - The inverse function step, rigorously: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]]. The tangent line is the image of the derivative of the map $t \mapsto (f(t), g(t))$; on manifolds this is the velocity of a curve, [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|591 Def. §29.1]].
+> - The inverse function step, rigorously: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]]. The tangent line is the image of the derivative of the map $t \mapsto (f(t), g(t))$; on manifolds this is the velocity of a curve, [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|591 Def. §31.2]].
 
-> [!theorem] Theorem §86.2: Second Derivative of a Parametric Curve
+> [!theorem] Theorem §74.2: Second Derivative of a Parametric Curve
 > Where $dx/dt \ne 0$ and $dy/dx$ is a differentiable function of $t$,
 >
 > $$
@@ -69,7 +69,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 *Uses:* [[§74 Calculus with Parametric Curves#^thm-74-1|§74.1]]
 
-> [!example] Example §86.1: A Curve That Crosses Itself
+> [!example] Example §74.1: A Curve That Crosses Itself
 > The curve $C$ is given by $x = t^2$, $y = t^3 - 3t$.
 >
 > **(a) Two tangents at $(3, 0)$.** $x = 3$ for $t = \pm\sqrt3$, and in both cases $y = t(t^2 - 3) = 0$. So $C$ passes through $(3, 0)$ twice: it crosses itself there. By [[§74 Calculus with Parametric Curves#^thm-74-1|Theorem §74.1]],
@@ -103,7 +103,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ![[m233-64-1.svg]]
 *The curve $x = t^2$, $y = t^3 - 3t$ of [[§74 Calculus with Parametric Curves#^ex-74-1|Example §74.1]]. The loop is traced counterclockwise for $-\sqrt3 \le t \le \sqrt3$, and the curve passes through $(3, 0)$ twice, at $t = -\sqrt3$ and $t = \sqrt3$, with the two tangents $y = \pm\sqrt3(x - 3)$ (red). Horizontal tangents at $t = \pm1$ and the vertical tangent at $t = 0$ are where $dy/dt = 0$ and $dx/dt = 0$.*
 
-> [!example] Example §86.2: Tangents to the Cycloid
+> [!example] Example §74.2: Tangents to the Cycloid
 > Consider the cycloid $x = r(\theta - \sin\theta)$, $y = r(1 - \cos\theta)$ ([[§73 Curves Defined by Parametric Equations#^prop-73-2|Proposition §73.2]]).
 >
 > **(a) The tangent at $\theta = \pi/3$.** By [[§74 Calculus with Parametric Curves#^thm-74-1|Theorem §74.1]],
@@ -252,7 +252,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 ^rem-74-2
 
-> [!example] Example §86.3: Area and Length of One Arch of the Cycloid
+> [!example] Example §74.3: Area and Length of One Arch of the Cycloid
 > One arch of the cycloid $x = r(\theta - \sin\theta)$, $y = r(1 - \cos\theta)$ is traced once for $0 \le \theta \le 2\pi$, from $x = 0$ to $x = 2\pi r$, with $dx/d\theta = r(1 - \cos\theta) \ge 0$ and $dy/d\theta = r\sin\theta$.
 >
 > **Area under the arch.** By [[§74 Calculus with Parametric Curves#^thm-74-3|Theorem §74.3]], with $y = r(1 - \cos\theta)$ and $dx = r(1 - \cos\theta)\,d\theta$,
@@ -344,7 +344,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 *Uses:* [[§74 Calculus with Parametric Curves#^def-74-1|Def. §74.1]], [[§74 Calculus with Parametric Curves#^def-74-3|Def. §74.3]], [[§41 The Fundamental Theorem of Calculus#^thm-41-1|§41.1]] (FTC Part 1)
 
-> [!example] Example §86.4: The Speed of a Particle
+> [!example] Example §74.4: The Speed of a Particle
 > A particle has position $x = 2t + 3$, $y = 4t^2$, $t \ge 0$. Find its speed when it is at $(5, 4)$.
 >
 > By [[§74 Calculus with Parametric Curves#^thm-74-5|Theorem §74.5]], $v(t) = \sqrt{2^2 + (8t)^2} = \sqrt{4(1 + 16t^2)} = 2\sqrt{1 + 16t^2}$. The particle is at $(5, 4)$ when $2t + 3 = 5$, that is $t = 1$ (and indeed $4 \cdot 1^2 = 4$). So its speed there is $v(1) = 2\sqrt{17} \approx 8.25$ (in m/s, if distance is in meters and time in seconds).
@@ -381,7 +381,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 
 *Uses:* [[§61 Area of a Surface of Revolution#^def-61-2|Def. §61.2]] (Formula 8.2.5), [[§74 Calculus with Parametric Curves#^thm-74-1|§74.1]], [[§74 Calculus with Parametric Curves#^thm-74-4|§74.4]], [[§43 The Substitution Rule#^thm-43-3|§43.3]]
 
-> [!example] Example §86.5: The Surface Area of a Sphere
+> [!example] Example §74.5: The Surface Area of a Sphere
 > Show that the surface area of a sphere of radius $r$ is $4\pi r^2$.
 >
 > The sphere is obtained by rotating the upper semicircle $x = r\cos t$, $y = r\sin t$, $0 \le t \le \pi$, about the $x$-axis. It is traversed once, and $y = r\sin t \ge 0$. By [[§74 Calculus with Parametric Curves#^thm-74-6|Theorem §74.6]],

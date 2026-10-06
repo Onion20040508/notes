@@ -15,7 +15,7 @@ A sequence is an infinite list $a_1, a_2, a_3, \ldots$, that is, a function on t
 
 ## Infinite Sequences
 
-> [!definition] Definition §93.1: Sequence
+> [!definition] Definition §80.1: Sequence
 > An **infinite sequence**, or just a **sequence**, is a list of numbers written in a definite order:
 >
 > $$
@@ -41,7 +41,7 @@ A sequence is an infinite list $a_1, a_2, a_3, \ldots$, that is, a function on t
 
 ## The Limit of a Sequence
 
-> [!definition] Definition §93.2: Limit of a Sequence
+> [!definition] Definition §80.2: Limit of a Sequence
 > A sequence $\{a_n\}$ has the **limit** $L$, and we write
 >
 > $$
@@ -56,7 +56,7 @@ A sequence is an infinite list $a_1, a_2, a_3, \ldots$, that is, a function on t
 
 For example, $1 - \dfrac{n}{n+1} = \dfrac{1}{n+1}$ can be made as small as we like by taking $n$ large, so $\dfrac{n}{n+1} \to 1$. The precise version mirrors the definition of $\lim_{x \to \infty} f(x) = L$ in [[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-4|Definition §13.4]] (Stewart's Definition 2.6.7).
 
-> [!definition] Definition §93.3: Precise Definition of a Limit of a Sequence
+> [!definition] Definition §80.3: Precise Definition of a Limit of a Sequence
 > $\lim_{n \to \infty} a_n = L$ means: for every $\varepsilon > 0$ there is a corresponding integer $N$ such that
 >
 > $$
@@ -94,7 +94,7 @@ A sequence diverges if its terms do not approach a single number. It can oscilla
 
 The only difference between $\lim_{n \to \infty} a_n = L$ and $\lim_{x \to \infty} f(x) = L$ is that $n$ is required to be an integer.
 
-> [!theorem] Theorem §93.1: Limits Through a Function
+> [!theorem] Theorem §80.1: Limits Through a Function
 > If $\displaystyle\lim_{x \to \infty} f(x) = L$ and $f(n) = a_n$ when $n$ is an integer, then $\displaystyle\lim_{n \to \infty} a_n = L$.
 >
 > The same holds with $L = \infty$ or $L = -\infty$.
@@ -118,7 +118,7 @@ The only difference between $\lim_{n \to \infty} a_n = L$ and $\lim_{x \to \inft
 
 The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$, so $a_n = f(n) \to 0$, but $\lim_{x \to \infty} \sin(\pi x)$ does not exist.
 
-> [!theorem] Corollary §93.2: Reciprocal Powers
+> [!theorem] Corollary §80.2: Reciprocal Powers
 > $$
 > \lim_{n \to \infty} \frac{1}{n^r} = 0 \qquad \text{if } r > 0 .
 > $$
@@ -245,7 +245,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 *Uses:* [[§80 Sequences#^thm-80-6|§80.6]], [[§80 Sequences#^def-80-3|Def. §80.3]], [[§12 Continuity#^thm-12-6|§12.6]], [[§12 Continuity#^thm-12-9|§12.9]]
 
-> [!example] Example §93.1: Dividing by the Highest Power
+> [!example] Example §80.1: Dividing by the Highest Power
 > **(a)** Find $\displaystyle\lim_{n \to \infty} \frac{n}{n+1}$.
 >
 > As for limits at infinity, divide numerator and denominator by the highest power of $n$ in the denominator, then use the Limit Laws and [[§80 Sequences#^cor-80-2|Corollary §80.2]] with $r = 1$:
@@ -268,7 +268,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 ^ex-80-1
 
-> [!example] Example §93.2: Passing to a Function of a Real Variable
+> [!example] Example §80.2: Passing to a Function of a Real Variable
 > **(a)** Calculate $\displaystyle\lim_{n \to \infty} \frac{\ln n}{n}$.
 >
 > Numerator and denominator both tend to $\infty$. L'Hospital's Rule ([[§31 Indeterminate Forms and L'Hospital's Rule#^thm-31-2|Theorem §31.2]]) applies to functions of a real variable, not to sequences, so apply it to $f(x) = (\ln x)/x$:
@@ -291,7 +291,7 @@ The converse is false: $f(x) = \sin(\pi x)$ has $f(n) = 0$ for every integer $n$
 
 ^ex-80-2
 
-> [!example] Example §93.3: Squeezing
+> [!example] Example §80.3: Squeezing
 > **(a)** Evaluate $\displaystyle\lim_{n \to \infty} \frac{(-1)^n}{n}$ if it exists.
 >
 > The terms alternate in sign, so look at absolute values first: $\displaystyle\lim_{n \to \infty} \left| \frac{(-1)^n}{n} \right| = \lim_{n \to \infty} \frac1n = 0$. By [[§80 Sequences#^thm-80-5|Theorem §80.5]], $\displaystyle\lim_{n \to \infty} \frac{(-1)^n}{n} = 0$.

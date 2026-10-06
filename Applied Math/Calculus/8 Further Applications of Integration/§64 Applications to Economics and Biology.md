@@ -15,14 +15,14 @@ Three more quantities come out of the slice-and-add strategy of [[§62 Applicati
 
 ## Consumer Surplus
 
-> [!definition] Definition §74.1: Demand Function
+> [!definition] Definition §64.1: Demand Function
 > The **demand function** $p(x)$ is the price that a company can charge in order to sell $x$ units of a commodity ([[§34 Optimization Problems#^def-34-1|Definition §34.1]]). Selling larger quantities usually requires lowering prices, so the demand function is usually decreasing. Its graph is the **demand curve**. If $X$ is the amount of the commodity that can currently be sold, then $P = p(X)$ is the current selling price.
 >
 > *Stewart: 8.4 (text)*
 
 ^def-64-1
 
-> [!definition] Definition §74.3: Consumer Surplus
+> [!definition] Definition §64.2: Consumer Surplus
 > The **consumer surplus** for a good is the difference between what consumers are willing to pay and what they actually pay. For a demand function $p$, at sales level $X$ and current price $P = p(X)$, the total consumer surplus is
 >
 > $$
@@ -49,7 +49,7 @@ Three more quantities come out of the slice-and-add strategy of [[§62 Applicati
 ![[m233-55-1.svg]]
 *Consumer surplus. The group of consumers buying between $x_{i-1}$ and $x_i$ units would pay $p(x_i)$ but pays only $P$, saving $[p(x_i) - P]\,\Delta x$: one rectangle above the red price line. The rectangles fill out the area between the demand curve and $p = P$ (light blue) as $\Delta x \to 0$.*
 
-> [!example] Example §74.1: Consumer Surplus for a Quadratic Demand Curve
+> [!example] Example §64.1: Consumer Surplus for a Quadratic Demand Curve
 > The demand for a product, in dollars, is
 >
 > $$
@@ -112,7 +112,7 @@ Three more quantities come out of the slice-and-add strategy of [[§62 Applicati
 
 ^def-64-6
 
-> [!example] Example §74.2: Market Equilibrium
+> [!example] Example §64.2: Market Equilibrium
 > Given the demand curve $p = 50 - \frac{1}{20}x$ and the supply curve $p = 20 + \frac{1}{10}x$, find the quantity and price at which the market is in equilibrium, and the consumer and producer surplus there.
 >
 > **Equilibrium.** Set the prices equal:
@@ -153,7 +153,7 @@ Three more quantities come out of the slice-and-add strategy of [[§62 Applicati
 
 ^def-64-7
 
-> [!theorem] Theorem §74.1: Poiseuille's Law
+> [!theorem] Theorem §64.1: Poiseuille's Law
 > Blood flows along a blood vessel of radius $R$ and length $l$; $P$ is the pressure difference between the ends of the vessel and $\eta$ the viscosity of the blood. Suppose the velocity of the blood at distance $r$ from the central axis is given by the law of laminar flow ([[§23 Rates of Change in the Natural and Social Sciences#^ex-23-4|Example §23.4]], Stewart's Example 3.7.7),
 >
 > $$
@@ -210,7 +210,7 @@ Blood returns from the body through the veins, enters the right atrium of the he
 
 ^def-64-8
 
-> [!theorem] Theorem §74.2: Dye Dilution Formula
+> [!theorem] Theorem §64.2: Dye Dilution Formula
 > In the **dye dilution method**, an amount $A$ of dye is injected into the right atrium and flows through the heart into the aorta, where a probe measures the concentration $c(t)$ of dye leaving the heart over a time interval $[0, T]$ until the dye has cleared. If the rate of flow $F$ is constant and $c$ is continuous, the cardiac output is
 >
 > $$
@@ -244,7 +244,7 @@ Blood returns from the body through the veins, enters the right atrium of the he
 
 *Uses:* [[§64 Applications to Economics and Biology#^def-64-8|Def. §64.8]], [[§39 The Definite Integral#^def-39-1|Def. §39.1]] (Riemann sums), [[§39 The Definite Integral#^thm-39-1|§39.1]] (continuous functions are integrable)
 
-> [!example] Example §74.3: Estimating Cardiac Output
+> [!example] Example §64.3: Estimating Cardiac Output
 > A $5$-mg dose (a bolus) of dye is injected into a patient's right atrium. The concentration of the dye (in milligrams per liter) is measured in the aorta at one-second intervals:
 >
 > | $t$ (s) | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ | $6$ | $7$ | $8$ | $9$ | $10$ |

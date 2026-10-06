@@ -16,7 +16,7 @@ This section sets up the vibrations of a circular membrane and heat conduction i
 
 ## Heat and Wave Problems in a Disk
 
-> [!definition] Definition §67.1: Heat and Wave Problems in a Disk
+> [!definition] Definition §54.1: Heat and Wave Problems in a Disk
 > In the disk $0 < r < a$, the **wave problem** (circular membrane) and the **heat problem** (circular plate) for $v(r, \theta, t)$ are
 >
 > | | Wave | Heat |
@@ -57,7 +57,7 @@ plus the appropriate initial conditions.
 
 ## Separation of Variables
 
-> [!theorem] Theorem §67.1: The Eigenvalue Problem for the Disk
+> [!theorem] Theorem §54.1: The Eigenvalue Problem for the Disk
 > A product $v(r, \theta, t) = \phi(r, \theta)T(t)$, not identically zero, satisfies the wave or heat equation of Definition §54.1, the boundary condition $v(a, \theta, t) = 0$, periodicity and boundedness, if and only if, for some constant $\lambda^2$,
 >
 > $$
@@ -96,7 +96,7 @@ plus the appropriate initial conditions.
 
 The constant $-\lambda^2$ is indeed negative: see [[§54★ Problems in Polar Coordinates#^rem-54-2|Remark: The Eigenvalues Are Positive]] below. The two-dimensional eigenvalue problem (1)–(4) can be separated again.
 
-> [!theorem] Theorem §67.2: Separation of the Disk Eigenvalue Problem
+> [!theorem] Theorem §54.2: Separation of the Disk Eigenvalue Problem
 > A product $\phi(r, \theta) = R(r)Q(\theta)$, not identically zero, solves (1)–(4) if and only if $Q$ is a solution of the periodic eigenvalue problem
 >
 > $$
@@ -153,7 +153,7 @@ Equation (12) is **Bessel's equation** ([[§55★ Bessel's Equation#^def-55-1|De
 
 ## Examples
 
-> [!example] Example §67.1: Subtracting the Steady State
+> [!example] Example §54.1: Subtracting the Steady State
 > State the problems that result from the problems of Definition §54.1 when the steady-state solution is subtracted from $v$, and find them explicitly for the boundary temperature $f(\theta) = \cos\theta$.
 >
 > Let $v_\infty(r, \theta)$ solve $\nabla^2v_\infty = 0$ in $0 < r < a$, $v_\infty(a, \theta) = f(\theta)$, periodic in $\theta$ and bounded as $r \to 0$, and put $w = v - v_\infty$. Since $v_\infty$ does not depend on $t$ and $\nabla^2v_\infty = 0$, we have $\nabla^2w = \nabla^2v$, $w_t = v_t$ and $w_{tt} = v_{tt}$, and $w(a, \theta, t) = f(\theta) - f(\theta) = 0$. So
@@ -172,7 +172,7 @@ Equation (12) is **Bessel's equation** ([[§55★ Bessel's Equation#^def-55-1|De
 
 ^ex-54-1
 
-> [!example] Example §67.2: A Half-Disk
+> [!example] Example §54.2: A Half-Disk
 > Suppose the problems are to be solved in the half-disk $0 < r < a$, $0 < \theta < \pi$, with the additional conditions
 >
 > $$
@@ -193,7 +193,7 @@ Equation (12) is **Bessel's equation** ([[§55★ Bessel's Equation#^def-55-1|De
 
 ^ex-54-2
 
-> [!example] Example §67.3: An Insulated Edge
+> [!example] Example §54.3: An Insulated Edge
 > Suppose the boundary condition $v(a, \theta, t) = f(\theta)$ is replaced by
 >
 > $$

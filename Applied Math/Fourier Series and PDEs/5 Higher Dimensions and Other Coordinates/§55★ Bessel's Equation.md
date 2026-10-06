@@ -16,7 +16,7 @@ Separating variables in polar coordinates left the radial equation $(rR')' - \mu
 
 ## Bessel's Equation and the Method of Frobenius
 
-> [!definition] Definition §68.2: Bessel's Equation
+> [!definition] Definition §55.1: Bessel's Equation
 > **Bessel's equation** of order $\mu \ge 0$, with parameter $\lambda > 0$, is
 >
 > $$
@@ -47,7 +47,7 @@ Separating variables in polar coordinates left the radial equation $(rR')' - \mu
 
 ^rem-55-1
 
-> [!theorem] Theorem §68.1: The Frobenius Coefficients for Bessel's Equation
+> [!theorem] Theorem §55.1: The Frobenius Coefficients for Bessel's Equation
 > A series (2) satisfies Bessel's equation (1) if and only if
 >
 > $$
@@ -128,7 +128,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > - See also: [[§66 Laurent Series#^ex-66-2|342 Ex. §66.2]] (the $J_n$ as Laurent coefficients of $\exp\big[\frac z2\big(w - \frac1w\big)\big]$, with the integral formula $J_n(z) = \frac1\pi\int_0^\pi\cos(n\phi - z\sin\phi)\,d\phi$).
 > - Used in Electromagnetism: the four kinds of Bessel function in cylindrical boundary-value problems — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^def-c6-3-1|EM Def. §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-1|EM Theorem §C6.3.1]].
 
-> [!theorem] Theorem §68.2: J_μ Solves Bessel's Equation
+> [!theorem] Theorem §55.2: J_μ Solves Bessel's Equation
 > For integer $\mu \ge 0$ the series (5) converges for every $r$, and $R = J_\mu(\lambda r)$ is a solution of Bessel's equation (1) on $0 < r < \infty$. It is bounded near $r = 0$, with $J_0(0) = 1$ and $J_\mu(0) = 0$ for $\mu \ge 1$.
 >
 > *Powers: 5.5 (text)*
@@ -148,7 +148,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 
 *Uses:* [[§55★ Bessel's Equation#^thm-55-1|§55.1]], [[§55★ Bessel's Equation#^def-55-2|Def. §55.2]], [[§14 Series#^thm-14-9|451 Thm. §14.9]] (ratio test), [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]] (term-by-term differentiation)
 
-> [!example] Example §68.1: The Series for J₀ and J₁
+> [!example] Example §55.1: The Series for J₀ and J₁
 > Write out the first terms of $J_0(x)$ and $J_1(x)$, evaluate $J_0(1)$, and use the series to check the first zero $2.405$ of $J_0$.
 >
 > **The series.** With $\mu = 0$ the denominators in (5) are $(m!)^2 2^{2m} = 1, 4, 64, 2304, 147456$; with $\mu = 1$ they are $m!\,(m + 1)!\,2^{2m+1} = 2, 16, 384, 18432$:
@@ -167,7 +167,7 @@ The series serves for evaluating $J_\mu$ and for obtaining its properties. From 
 > 1, \quad -0.44601, \quad 0.07673, \quad -0.00726, \quad 0.00033, \quad -0.00011, \quad -0.0000900, \quad -0.0000906, \quad \ldots
 > $$
 >
-> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of [[§56★ Properties of Bessel Functions#^rem-56-4|Remark: Why J₀ Oscillates]], are used there.
+> converging to $J_0(2.405) \approx -0.00009$. So $J_0$ changes sign just below $2.405$ (the zero is $2.40483$). For larger $x$ more terms are needed before the terms start to decrease, which is why tables, or the asymptotic form of [[§56★ Properties of Bessel Functions#^rem-56-1|Remark: Why J₀ Oscillates]], are used there.
 >
 > *Powers: 5.5, Equation (5); Table 1*
 

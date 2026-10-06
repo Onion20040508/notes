@@ -14,7 +14,7 @@ tags: [fourier-series-and-pdes, math341, extension]
 
 A boundary value problem is singular when an endpoint of the interval is a singular point of the differential equation, or when the interval is infinitely long. In both cases there is nowhere to impose an ordinary boundary condition at that end, and its place is taken by the requirement that the solution stay bounded. The first case arises whenever a boundary point is a mathematical boundary but not a physical one, like the center $r = 0$ of a disk described in polar coordinates; the second whenever a body is so long (a cooling fin, a semi-infinite rod) that its far end is idealized away. The section shows that a boundedness condition works exactly like a boundary condition: it removes one of the two constants. These conditions will be imposed on every problem in a disk, cylinder or sphere (Chapter 5) and on every unbounded region.
 
-> [!definition] Definition §9.1: Singular Boundary Value Problem
+> [!definition] Definition §6.1: Singular Boundary Value Problem
 > A boundary value problem is **singular** if
 > 1. an endpoint of the interval of interest is a singular point of the differential equation ([[§2★ Variable Coefficients and Higher-Order Equations#^def-2-3|Definition §2.3]]), or
 > 2. the interval is infinitely long.
@@ -27,7 +27,7 @@ A boundary value problem is singular when an endpoint of the interval is a singu
 
 Recall ([[§2★ Variable Coefficients and Higher-Order Equations#^def-2-4|Definition §2.4]]) that $x_0$ is a regular singular point of $u'' + k(x)u' + p(x)u = f(x)$ if $k(x)$ or $p(x)$ or both become infinite as $x \to x_0$, but $(x - x_0)k(x)$ and $(x - x_0)^2p(x)$ both have Taylor series expansions centered at $x_0$.
 
-> [!example] Example §9.1: Locating Singular Points
+> [!example] Example §6.1: Locating Singular Points
 > To find singular points, first divide by the coefficient of $u''$ to reach the form $u'' + ku' + pu = f$.
 >
 > **(a)** $(1 - x)u'' + u' + xu = 0$. In standard form,
@@ -52,7 +52,7 @@ Recall ([[§2★ Variable Coefficients and Higher-Order Equations#^def-2-4|Defin
 
 This situation typically arises when a boundary point is a mathematical boundary without being a physical boundary. A disk of radius $c$ is described in polar coordinates by $0 \le r \le c$; the origin $r = 0$ is a boundary of this interval, yet physically it is a point in the interior of the disk.
 
-> [!definition] Definition §9.3: Boundedness Condition at a Singular Point
+> [!definition] Definition §6.2: Boundedness Condition at a Singular Point
 > At a singular point $x_0$ one cannot specify a value for the solution $u(x_0)$ or its derivative. Instead one requires that
 >
 > $$
@@ -65,7 +65,7 @@ This situation typically arises when a boundary point is a mathematical boundary
 
 ^def-6-2
 
-> [!example] Example §9.2: Radial Heat Flow in a Rod
+> [!example] Example §6.2: Radial Heat Flow in a Rod
 > A long cylindrical bar of radius $c$, surrounded by a medium at temperature $T$, carries an electric current. If heat flows radially much faster than axially, the temperature $u(r)$ satisfies
 >
 > $$
@@ -133,7 +133,7 @@ The other type of singular boundary value problem has an infinite interval of in
 
 ^def-6-4
 
-> [!theorem] Proposition §9.1: Bounded Solutions of u″ − μ²u = 0
+> [!theorem] Proposition §6.1: Bounded Solutions of u″ − μ²u = 0
 > Let $\mu > 0$. A solution $u(x) = c_1'e^{\mu x} + c_2'e^{-\mu x}$ of $u'' - \mu^2u = 0$ is bounded on $0 < x < \infty$ (together with $u'$) if and only if $c_1' = 0$, that is, $u$ is a constant multiple of $e^{-\mu x} = \cosh(\mu x) - \sinh(\mu x)$. On $-\infty < x < \infty$, only $u \equiv 0$ is bounded.
 >
 > *Powers: 0.4 (text)*
@@ -153,7 +153,7 @@ The other type of singular boundary value problem has an infinite interval of in
 
 *Uses:* [[§1★ Homogeneous Linear Equations#^def-1-5|Def. §1.5]]
 
-> [!example] Example §9.3: A Long Cooling Fin
+> [!example] Example §6.3: A Long Cooling Fin
 > A long cooling fin has one end held at a constant temperature $T_0$ and exchanges heat by convection with a medium at temperature $T$. Its temperature satisfies
 >
 > $$
@@ -208,7 +208,7 @@ The other type of singular boundary value problem has an infinite interval of in
 
 Problems in a sphere lead to the operator $\frac1{\rho^2}\frac{d}{d\rho}\big(\rho^2\frac{du}{d\rho}\big)$ of Example §6.1(d). A substitution reduces it to a second derivative (Powers' Exercises 0.1.19 and 0.4.4). The radial solutions $\sin(\lambda\rho)/\rho$ it produces reappear for spherical waves, [[§59★ Some Applications of Bessel Functions#^prop-59-4|Proposition §59.4]] (Powers 5.8), where Powers obtains them from Bessel functions of order $\frac12$.
 
-> [!theorem] Lemma §9.2: The Substitution u = v/ρ
+> [!theorem] Lemma §6.2: The Substitution u = v/ρ
 > For a twice differentiable function $v$ on $\rho > 0$ and $u = v/\rho$,
 >
 > $$

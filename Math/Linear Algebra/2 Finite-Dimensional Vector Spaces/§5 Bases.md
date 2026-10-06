@@ -109,7 +109,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension count: $\dim W=\dim V-\dim U$, cf. [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] for $V/U$.
-> - Infinite-dimensional version: [[§1 Linear Spaces#^prop-1-8|556 Prop. §1.8]] (every subspace has a complement), with Zorn's lemma ([[Zorn's Lemma|556 Thm. §5.2]]) in place of extending a basis.
+> - Infinite-dimensional version: [[§2 Quotient Spaces and Complements#^prop-2-3|556 Prop. §2.3]] (every subspace has a complement), with Zorn's lemma ([[Zorn's Lemma|556 Thm. §5.2]]) in place of extending a basis.
 
 %% ex:2.33-fig %%
 > [!example] Example: Many complements, pictured

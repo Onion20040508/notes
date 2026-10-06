@@ -15,14 +15,14 @@ tags: [calculus]
 
 ## A Unified Description of Conics
 
-> [!definition] Definition §90.1: Focus, Directrix and Eccentricity
+> [!definition] Definition §78.1: Focus, Directrix and Eccentricity
 > Let $F$ be a fixed point (the **focus**), $l$ a fixed line not through $F$ (the **directrix**), and $e$ a fixed positive number (the **eccentricity**). For a point $P$, $|PF|$ is its distance to $F$ and $|Pl|$ its distance to $l$.
 >
 > *Stewart: 10.6, Theorem 1*
 
 ^def-78-1
 
-> [!theorem] Theorem §90.1: Unified Description of Conics
+> [!theorem] Theorem §78.1: Unified Description of Conics
 > The set of all points $P$ in the plane such that
 >
 > $$
@@ -95,7 +95,7 @@ tags: [calculus]
 
 To rotate a polar curve, rotate its angle variable.
 
-> [!theorem] Lemma §90.2: Rotating a Polar Curve
+> [!theorem] Lemma §78.2: Rotating a Polar Curve
 > The graph of $r = f(\theta - \alpha)$ is the graph of $r = f(\theta)$ rotated counterclockwise about the origin through the angle $\alpha$.
 >
 > *Stewart: 10.6 (text; Exercise 10.3.65)*
@@ -109,7 +109,7 @@ To rotate a polar curve, rotate its angle variable.
 
 *Uses:* [[§75 Polar Coordinates#^def-75-1|Def. §75.1]], [[§75 Polar Coordinates#^def-75-2|Def. §75.2]]
 
-> [!theorem] Theorem §90.3: Polar Equations of Conics
+> [!theorem] Theorem §78.3: Polar Equations of Conics
 > A polar equation of the form
 >
 > $$
@@ -143,7 +143,7 @@ To rotate a polar curve, rotate its angle variable.
 
 ^rem-78-1
 
-> [!example] Example §90.1: A Parabola with Focus at the Origin
+> [!example] Example §78.1: A Parabola with Focus at the Origin
 > Find a polar equation for the parabola with focus at the origin and directrix $y = -6$.
 >
 > By [[§78 Conic Sections in Polar Coordinates#^thm-78-3|Theorem §78.3]] with $e = 1$, $d = 6$ and the directrix below the focus, $r = \dfrac{6}{1 - \sin\theta}$.
@@ -152,7 +152,7 @@ To rotate a polar curve, rotate its angle variable.
 
 ^ex-78-1
 
-> [!example] Example §90.2: An Ellipse, and the Same Ellipse Rotated
+> [!example] Example §78.2: An Ellipse, and the Same Ellipse Rotated
 > Identify $r = \dfrac{10}{3 - 2\cos\theta}$, find its eccentricity and directrix, and sketch it. Then rotate it through $\pi/4$ about the origin.
 >
 > Dividing numerator and denominator by $3$, $r = \dfrac{10/3}{1 - \frac23\cos\theta}$. By [[§78 Conic Sections in Polar Coordinates#^thm-78-3|Theorem §78.3]] this is an ellipse with $e = \frac23$. Since $ed = \frac{10}{3}$, $d = \dfrac{10/3}{2/3} = 5$, and the directrix is $x = -5$. Values of $r$:
@@ -173,7 +173,7 @@ To rotate a polar curve, rotate its angle variable.
 
 ^ex-78-2
 
-> [!example] Example §91.1: A Hyperbola
+> [!example] Example §78.3: A Hyperbola
 > Sketch $r = \dfrac{12}{2 + 4\sin\theta}$.
 >
 > Dividing by $2$, $r = \dfrac{6}{1 + 2\sin\theta}$: a hyperbola with $e = 2$. Since $ed = 6$, $d = 3$, and the directrix is $y = 3$. Values of $r$:
@@ -197,7 +197,7 @@ To rotate a polar curve, rotate its angle variable.
 
 In 1609 Kepler, from large amounts of astronomical data, published three laws of planetary motion: (1) a planet revolves around the sun in an elliptical orbit with the sun at one focus; (2) the line joining the sun to a planet sweeps out equal areas in equal times; (3) the square of the period of revolution of a planet is proportional to the cube of the length of the major axis of its orbit. They apply equally to moons, comets and satellites orbiting under a single gravitational force. Stewart deduces them from Newton's laws in Section 13.4 ([[§104 Motion in Space꞉ Velocity and Acceleration#^thm-104-6|Theorem §104.6]], where the First Law is proved). Here the First Law and the polar equation of an ellipse give astronomical distances.
 
-> [!theorem] Theorem §90.4: Polar Equation of an Ellipse by Semimajor Axis
+> [!theorem] Theorem §78.4: Polar Equation of an Ellipse by Semimajor Axis
 > The polar equation of an ellipse with focus at the origin, semimajor axis $a$, eccentricity $e$, and directrix $x = d$ can be written as
 >
 > $$
@@ -215,14 +215,14 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 
 *Uses:* [[§78 Conic Sections in Polar Coordinates#^thm-78-1|§78.1]] (Equations 4), [[§78 Conic Sections in Polar Coordinates#^thm-78-3|§78.3]]
 
-> [!definition] Definition §90.2: Perihelion and Aphelion
+> [!definition] Definition §78.2: Perihelion and Aphelion
 > The positions of a planet closest to and farthest from the sun are its **perihelion** and **aphelion**; they are the vertices of the elliptical orbit. The distances from the sun to them are the **perihelion distance** and the **aphelion distance**.
 >
 > *Stewart: 10.6 (text)*
 
 ^def-78-2
 
-> [!theorem] Corollary §90.5: Perihelion and Aphelion Distances
+> [!theorem] Corollary §78.5: Perihelion and Aphelion Distances
 > The perihelion distance from a planet to the sun is $a(1 - e)$ and the aphelion distance is $a(1 + e)$.
 >
 > *Stewart: 10.6, Equation 8*
@@ -242,7 +242,7 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 
 *Uses:* [[§78 Conic Sections in Polar Coordinates#^thm-78-4|§78.4]]
 
-> [!example] Example §91.2: The Earth's Orbit
+> [!example] Example §78.4: The Earth's Orbit
 > The eccentricity of the earth's orbit is about $0.017$ and the length of the major axis about $2.99 \times 10^8$ km. (a) Find an approximate polar equation for the orbit, with the sun at the origin. (b) Find the perihelion and aphelion distances.
 >
 > **(a)** $2a = 2.99 \times 10^8$, so $a = 1.495 \times 10^8$. By [[§78 Conic Sections in Polar Coordinates#^thm-78-4|Theorem §78.4]],

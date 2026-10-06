@@ -17,7 +17,7 @@ This section answers the second question of [[§9 Periodic Functions and Fourier
 
 The ordinary limit $\lim_{x \to x_0} f(x)$ can be rewritten as $\lim_{h \to 0} f(x_0 + h)$, where $h$ may approach zero in any manner.
 
-> [!definition] Definition §16.1: One-Sided Limits
+> [!definition] Definition §12.1: One-Sided Limits
 > If $h$ is required to be positive, we get the **right-hand limit** of $f$ at $x_0$,
 >
 > $$
@@ -60,7 +60,7 @@ It is quite possible that the one-sided limits exist but are different. This hap
 > [!remark]- Connections
 > - Stewart's removable, infinite and jump discontinuities: [[§12 Continuity#^def-12-3|Calc Def. §12.3]]. Powers' "bad" discontinuities include Stewart's infinite ones and also oscillation such as $\sin(1/x)$ at $0$, which fits none of Stewart's names ([[§20 Limits of Functions#^rem-20-3|451 Remark: Worse than a jump]]); removable and jump discontinuities in 451: [[§20 Limits of Functions#^ex-20-4|451 Ex. §20.4]], [[§20 Limits of Functions#^ex-20-5|451 Ex. §20.5]].
 
-> [!example] Example §16.1: Classifying Discontinuities
+> [!example] Example §12.1: Classifying Discontinuities
 > **(a)** $f(x) = (x - x^2)/(1 - x)$ equals $x$ for $x \ne 1$ and is undefined at $1$: $f(1-) = f(1+) = 1$, a removable discontinuity. Likewise $\sin(x)/x$ has a removable discontinuity at $x = 0$, removed by setting $f(0) = 1$.
 >
 > **(b)** $f(x) = x$ for $0 < x < 1$ and $f(x) = x - 1$ for $1 < x$ (or $1 < x < 2$): $f(1-) = 1$, $f(1+) = 0$, a jump discontinuity; $\lim_{x \to 1} f(x)$ does not exist.
@@ -94,7 +94,7 @@ It is quite possible that the one-sided limits exist but are different. This hap
 
 ^def-12-4
 
-> [!example] Example §16.2: Sectionally Continuous or Smooth, or Not
+> [!example] Example §12.2: Sectionally Continuous or Smooth, or Not
 > **(a)** The **square wave** $f(x) = 1$ for $0 < x < a$, $f(x) = -1$ for $-a < x < 0$, $f(x + 2a) = f(x)$, is sectionally continuous, with jumps at $x = 0, \pm a, \pm2a, \ldots$. No value was given at these points, and the function remains sectionally continuous whatever values are assigned. It is also sectionally smooth ($f' = 0$ except at the jumps), but not continuous.
 >
 > **(b)** $f(x) = 1/x$ cannot be sectionally continuous on any interval that contains $0$, or even has $0$ as an endpoint, because it is not bounded near $x = 0$.
@@ -111,7 +111,7 @@ It is quite possible that the one-sided limits exist but are different. This hap
 
 Most functions useful in mathematical modeling are sectionally smooth. Fortunately, there is a positive statement about the Fourier series of such functions.
 
-> [!theorem] Theorem §16.1: Convergence of Fourier Series
+> [!theorem] Theorem §12.1: Convergence of Fourier Series
 > If $f$ is sectionally smooth and periodic with period $2a$, then at each point $x$ the Fourier series corresponding to $f$ converges, and its sum is
 >
 > $$
@@ -127,7 +127,7 @@ Most functions useful in mathematical modeling are sectionally smooth. Fortunate
 *Powers states the theorem here without proof and proves it in Section 1.7: [[§16★ Proof of Convergence#^thm-16-4|Theorem §16.4]] (period $2\pi$), extended to period $2a$ in [[§16★ Proof of Convergence#^cor-16-5|Corollary §16.5]]. The rigorous subjects of the vault treat Fourier series only in the mean (see Connections), so §16★ is the home of this proof.*
 
 > [!remark]- Connections
-> - In Functional Analysis the trigonometric functions form an orthonormal basis of $L^2$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]], so every square-integrable $f$ is the sum of its Fourier series in the $L^2$ norm, "not necessarily pointwise" ([[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]]); Lay's version for continuous $f$ is [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]]. Theorem §12.1 is the pointwise statement, at the price of the smoothness hypothesis; convergence in the mean is [[§15★ Mean Error and Convergence in Mean#^thm-15-6|Theorem §15.6]].
+> - In Functional Analysis the trigonometric functions form an orthonormal basis of $L^2$, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]], so every square-integrable $f$ is the sum of its Fourier series in the $L^2$ norm, "not necessarily pointwise" ([[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]]); Lay's version for continuous $f$ is [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]]. Theorem §12.1 is the pointwise statement, at the price of the smoothness hypothesis; convergence in the mean is [[§15★ Mean Error and Convergence in Mean#^thm-15-6|Theorem §15.6]].
 
 This theorem answers the question at the beginning of the section. A sectionally smooth function has only finitely many jumps and no bad discontinuities in every finite interval. Hence
 
@@ -164,7 +164,7 @@ except perhaps at a finite number of points in any finite interval (once removab
 
 ## Examples
 
-> [!example] Example §16.3: The Sawtooth and the Square Wave
+> [!example] Example §12.3: The Sawtooth and the Square Wave
 > **(a) Sawtooth.** Let $f(x) = x$ on $-\pi < x < \pi$, periodic with period $2\pi$, with Fourier series $\sum_{n=1}^{\infty}\frac{2(-1)^{n + 1}}{n}\sin nx$ ([[§9 Periodic Functions and Fourier Series#^ex-9-1|Example §9.1]]). Evaluate the series at $x = 1$ and $x = \pi$. $f$ is sectionally smooth on $\mathbb{R}$. At $x = 1$ it is continuous, so the series converges to $\frac12(f(1-) + f(1+)) = 1$. At $x = \pi$ it jumps: $f(\pi-) = \pi$ and $f(\pi+) = f(-\pi+) = -\pi$, so the series converges to $\frac12(\pi - \pi) = 0$, as it must, since every term $\sin n\pi$ is $0$.
 >
 > **(b) Square wave of period 2.** The function $f(x) = 1$ for $0 < x < 1$, $-1$ for $-1 < x < 0$ is sectionally smooth; therefore its Fourier series converges to $1$ for $0 < x < 1$, to $-1$ for $-1 < x < 0$, and to $0$ for $x = 0, 1, -1$, and the sum is periodic with period $2$.

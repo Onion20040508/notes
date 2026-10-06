@@ -19,10 +19,11 @@ tags: [chapter, calculus]
 - [[§3 New Functions from Old Functions]] — Stewart 1.3
 - [[§4 Exponential Functions]] — Stewart 1.4
 - [[§5 Inverse Functions and Logarithms]] — Stewart 1.5
+- [[§6 Logarithmic and Inverse Trigonometric Functions]] — Stewart 1.5
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§4 Exponential Functions#^thm-4-1|Theorem §4.1: Laws of Exponents]]: 50 later results
-- [[§4 Exponential Functions#^prop-4-2|Proposition §4.2: The Three Kinds of Exponential Functions]]: 40 later results
-- [[§5 Inverse Functions and Logarithms#^thm-5-2|Theorem §5.2: Cancellation Equations]]: 23 later results
-- [[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3: The Graph of the Inverse Function]]: 23 later results
+- [[§4 Exponential Functions#^thm-4-1|Theorem §4.1: Laws of Exponents]]: 51 later results
+- [[§4 Exponential Functions#^prop-4-2|Proposition §4.2: The Three Kinds of Exponential Functions]]: 45 later results
+- [[§5 Inverse Functions and Logarithms#^thm-5-2|Theorem §5.2: Cancellation Equations]]: 26 later results
+- [[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3: The Graph of the Inverse Function]]: 26 later results

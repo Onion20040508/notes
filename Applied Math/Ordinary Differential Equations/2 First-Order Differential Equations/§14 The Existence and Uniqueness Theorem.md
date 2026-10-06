@@ -23,7 +23,7 @@ $$
 
 because a translation of the coordinate axes takes any initial point to the origin.
 
-> [!theorem] Lemma §18.1: Translation to the Origin
+> [!theorem] Lemma §14.1: Translation to the Origin
 > Let $g(s, w) = f(t_0 + s,\, y_0 + w)$. A function $y = \phi(t)$ solves $y' = f(t, y)$, $y(t_0) = y_0$ on an interval $|t - t_0| \le h$ if and only if $w = \psi(s) = \phi(t_0 + s) - y_0$ solves
 >
 > $$
@@ -53,7 +53,7 @@ In this form, Theorem 2.4.2 becomes BDP's **Theorem 2.8.1**: *if $f$ and $\parti
 
 Suppose for the moment that $y = \phi(t)$ is a differentiable function satisfying (2). Then $f(t, \phi(t))$ is a continuous function of $t$ only, and integrating $y' = f(t, y)$ from the initial point $t = 0$ to an arbitrary $t$ (with $\phi(0) = 0$) gives the equation (3) below.
 
-> [!definition] Definition §18.1: Integral Equation
+> [!definition] Definition §14.1: Integral Equation
 > The equation
 >
 > $$
@@ -66,7 +66,7 @@ Suppose for the moment that $y = \phi(t)$ is a differentiable function satisfyin
 
 ^def-14-1
 
-> [!theorem] Lemma §18.2: The Initial Value Problem and the Integral Equation Are Equivalent
+> [!theorem] Lemma §14.2: The Initial Value Problem and the Integral Equation Are Equivalent
 > Let $f$ be continuous on $R$, and let $\phi$ be a continuous function on an interval $|t| \le h$ whose graph lies in $R$. Then $\phi$ is a (differentiable) solution of the initial value problem (2) on $|t| \le h$ if and only if it satisfies the integral equation (3) there.
 >
 > *BDP: 2.8 (text)*
@@ -86,7 +86,7 @@ So it is enough to show that the integral equation (3) has a unique solution on 
 
 ## The Method of Successive Approximations
 
-> [!definition] Definition §18.2: Picard Iterates
+> [!definition] Definition §14.2: Picard Iterates
 > The **method of successive approximations**, or **Picard's iteration method**, starts from an initial function $\phi_0$, chosen arbitrarily or to approximate the solution in some way; the simplest choice is
 >
 > $$
@@ -113,7 +113,7 @@ Each iterate satisfies the initial condition, but in general none satisfies the 
 
 The uniqueness argument rests on an inequality that BDP proves inside Example 1; here it is first, as a lemma, since it is used twice.
 
-> [!theorem] Lemma §18.3: A Gronwall-Type Inequality
+> [!theorem] Lemma §14.3: A Gronwall-Type Inequality
 > Let $w$ be continuous and $w(t) \ge 0$ on $[0, c]$, and suppose that for some constant $A > 0$
 >
 > $$
@@ -151,7 +151,7 @@ The uniqueness argument rests on an inequality that BDP proves inside Example 1;
 
 *Uses:* [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC), [[§29 The Mean Value Theorem#^cor-29-7|451 Cor. §29.7]] (a function with nonpositive derivative is nonincreasing)
 
-> [!example] Example §18.1: Picard Iteration for y′ = 2t(1 + y)
+> [!example] Example §14.1: Picard Iteration for y′ = 2t(1 + y)
 > Solve the initial value problem
 >
 > $$
@@ -243,7 +243,7 @@ $$
 
 and $\phi_n$ are the Picard iterates (4)–(7). In [[§14 The Existence and Uniqueness Theorem#^ex-14-1|Example §14.1]], $f$ and $\partial f/\partial y$ were continuous in the whole $ty$-plane and every iterate could be computed explicitly. In general $f$ is known to be continuous only in $R$, and the iterates cannot be computed. The danger is that at some stage the graph of $\phi_k$ contains points outside $R$; then computing $\phi_{k+1}$ would require evaluating $f$ where it is not known to be continuous, or even to exist. To avoid this, $t$ may have to be restricted to a smaller interval than $|t| \le a$.
 
-> [!theorem] Lemma §18.4: The Iterates Exist and Stay in a Bow Tie
+> [!theorem] Lemma §14.4: The Iterates Exist and Stay in a Bow Tie
 > Since $f$ is continuous on the closed bounded set $R$, it is bounded there: there is $M \ge 0$ with
 >
 > $$
@@ -288,7 +288,7 @@ $$
 
 and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\partial f/\partial y$ enters, through the following condition.
 
-> [!definition] Definition §18.4: Lipschitz Condition
+> [!definition] Definition §14.3: Lipschitz Condition
 > A function $f(t, y)$ satisfies a **Lipschitz condition** (with respect to $y$) in a region $D$ if there is a constant $K$ such that
 >
 > $$
@@ -301,7 +301,7 @@ and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\par
 
 ^def-14-3
 
-> [!theorem] Lemma §18.5: A Continuous ∂f/∂y Gives a Lipschitz Condition
+> [!theorem] Lemma §14.5: A Continuous ∂f/∂y Gives a Lipschitz Condition
 > If $\partial f/\partial y$ is continuous on the rectangle $R$, then $f$ satisfies the Lipschitz condition (31) in $R$, with $K$ the maximum value of $|\partial f/\partial y|$ on $R$.
 >
 > *BDP: Problem 2.8.14*
@@ -319,7 +319,7 @@ and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\par
 
 *Uses:* [[§14 The Existence and Uniqueness Theorem#^def-14-3|Def. §14.3]], [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]] (extreme value theorem), [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem)
 
-> [!theorem] Lemma §18.6: Estimate of Successive Differences
+> [!theorem] Lemma §14.6: Estimate of Successive Differences
 > With $M$, $h$ as in [[§14 The Existence and Uniqueness Theorem#^lem-14-4|Lemma §14.4]] and $K$ as in [[§14 The Existence and Uniqueness Theorem#^lem-14-5|Lemma §14.5]], for every $n \ge 1$ and $|t| \le h$,
 >
 > $$
@@ -353,7 +353,7 @@ and estimate the general term $|\phi_{k+1}(t) - \phi_k(t)|$. This is where $\par
 
 Now all four questions can be answered.
 
-> [!theorem] Theorem §18.7: Existence and Uniqueness of Solutions of y′ = f(t, y), y(0) = 0
+> [!theorem] Theorem §14.7: Existence and Uniqueness of Solutions of y′ = f(t, y), y(0) = 0
 > If $f$ and $\partial f/\partial y$ are continuous in a rectangle $R\colon |t| \le a$, $|y| \le b$, then there is some interval $|t| \le h \le a$ in which there exists a unique solution $y = \phi(t)$ of the initial value problem (2),
 >
 > $$
@@ -427,7 +427,7 @@ Now all four questions can be answered.
 
 > [!remark]- Connections
 > - Rigorous tools, all from Single Variable Analysis: uniform convergence, [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]]; the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], applied to the series (24) with $M_k = MK^kh^{k+1}/(k+1)!$; continuity of the limit, [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]; and the exchange of limit and integral, [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]] and [[§33 Properties of the Riemann Integral#^thm-33-12|451 Thm. §33.12]]. No other subject in the vault proves the existence and uniqueness theorem; this proof is its home.
-> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves ([[§14 The Existence and Uniqueness Theorem#^lem-14-4|Lemma §14.4]]), a solution is a fixed point $T\phi = \phi$, and [[§14 The Existence and Uniqueness Theorem#^lem-14-6|Lemma §14.6]] says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence ([[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]]) in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§11 Completeness#^thm-11-1|556 Thm. §11.1]]: this is the abstract reason the iterates converge.
+> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves ([[§14 The Existence and Uniqueness Theorem#^lem-14-4|Lemma §14.4]]), a solution is a fixed point $T\phi = \phi$, and [[§14 The Existence and Uniqueness Theorem#^lem-14-6|Lemma §14.6]] says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence ([[§11 Normed Linear Spaces#^def-11-5|556 Def. §11.5]]) in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§12 Completeness#^thm-12-1|556 Thm. §12.1]]: this is the abstract reason the iterates converge.
 
 > [!remark]- Remark: What Uniform Convergence Is For
 > Two of BDP's problems show why step 3 of the proof needs uniform convergence.
@@ -445,7 +445,7 @@ Now all four questions can be answered.
 
 Translating back to an arbitrary initial point gives the theorem as stated in Section 2.4.
 
-> [!theorem] Theorem §18.8: Existence and Uniqueness for First-Order Nonlinear Equations
+> [!theorem] Theorem §14.8: Existence and Uniqueness for First-Order Nonlinear Equations
 > Let the functions $f$ and $\partial f/\partial y$ be continuous in some rectangle $\alpha < t < \beta$, $\gamma < y < \delta$ containing the point $(t_0, y_0)$. Then, in some interval $t_0 - h < t < t_0 + h$ contained in $\alpha < t < \beta$, there is a unique solution $y = \phi(t)$ of the initial value problem
 >
 > $$
@@ -467,7 +467,7 @@ Translating back to an arbitrary initial point gives the theorem as stated in Se
 
 [[§14 The Existence and Uniqueness Theorem#^thm-14-8|Theorem §14.8]] contains the linear theorem's hypotheses as a special case ([[§8 Differences Between Linear and Nonlinear Differential Equations#^rem-8-1|Remark: Reading Theorem 2.4.2]]) and gives the geometric consequence that solution curves do not cross ([[§8 Differences Between Linear and Nonlinear Differential Equations#^cor-8-3|Corollary §8.3]]). The value $h = \min(a, b/M)$ is usually far from the true interval of existence, as the next example shows.
 
-> [!example] Example §18.2: The Interval Given by the Proof
+> [!example] Example §14.2: The Interval Given by the Proof
 > For $y' = y^2$, $y(0) = 1$ ([[§8 Differences Between Linear and Nonlinear Differential Equations#^ex-8-4|Example §8.4]]), compare the interval of existence guaranteed by the proof with the true one.
 >
 > **Translate.** With $w = y - 1$ ([[§14 The Existence and Uniqueness Theorem#^lem-14-1|Lemma §14.1]]), the problem is $w' = (1 + w)^2$, $w(0) = 0$. On the rectangle $|t| \le a$, $|w| \le b$,

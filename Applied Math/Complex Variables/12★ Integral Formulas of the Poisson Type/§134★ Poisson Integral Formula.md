@@ -172,7 +172,7 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 *Uses:* [[§134★ Poisson Integral Formula#^thm-134-1|§134.1]], [[§134★ Poisson Integral Formula#^def-134-2|Def. §134.2]], [[§27★ Harmonic Functions#^thm-27-1|§27.1]]
 
 > [!remark]- Connections
-> - Properties (a), (e), (f) are [[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-2|341 Remark: The Poisson Kernel Is a Weight]]: the solution is a weighted average of the boundary values, which gives the maximum principle for the disk and, at $r = 0$, the mean value property [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]].
+> - Properties (a), (e), (f) are [[§49 The Poisson Integral Formula and the Mean Value Property#^rem-49-1|341 Remark: The Poisson Kernel Is a Weight]]: the solution is a weighted average of the boundary values, which gives the maximum principle for the disk and, at $r = 0$, the mean value property [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]].
 
 Formula (6) can now be written
 

@@ -15,6 +15,7 @@ tags: [chapter, calculus]
 
 ## Sections
 - [[§80 Sequences]] — Stewart 11.1
+- [[§81 Monotonic and Bounded Sequences]] — Stewart 11.1
 - [[§82 Series]] — Stewart 11.2
 - [[§83 The Integral Test and Estimates of Sums]] — Stewart 11.3
 - [[§84 The Comparison Tests]] — Stewart 11.4
@@ -24,15 +25,16 @@ tags: [chapter, calculus]
 - [[§88 Power Series]] — Stewart 11.8
 - [[§89 Representations of Functions as Power Series]] — Stewart 11.9
 - [[§90 Taylor and Maclaurin Series]] — Stewart 11.10
+- [[§91 Taylor Series of Important Functions]] — Stewart 11.10
 - [[§92 Applications of Taylor Polynomials]] — Stewart 11.11
 
 ## Central results
-- [[Test for Divergence]] (§70.5)
-- [[Integral Test]] (§71.1)
-- [[Direct Comparison Test]] (§72.1)
-- [[Alternating Series Test]] (§73.1)
-- [[Ratio Test]] (§74.1)
-- [[Taylor's Inequality]] (§78.4)
+- [[Test for Divergence]] (§82.5)
+- [[Integral Test]] (§83.1)
+- [[Direct Comparison Test]] (§84.1)
+- [[Alternating Series Test]] (§85.1)
+- [[Ratio Test]] (§86.1)
+- [[Taylor's Inequality]] (§90.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

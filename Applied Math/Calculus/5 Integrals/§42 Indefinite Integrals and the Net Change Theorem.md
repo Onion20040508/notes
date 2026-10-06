@@ -15,7 +15,7 @@ FTC2 ([[§41 The Fundamental Theorem of Calculus#^thm-41-2|Theorem §41.2]]) eva
 
 ## Indefinite Integrals
 
-> [!definition] Definition §48.1: Indefinite Integral
+> [!definition] Definition §42.1: Indefinite Integral
 > The notation $\int f(x)\,dx$ is used for an antiderivative of $f$ and is called an **indefinite integral**:
 >
 > $$
@@ -88,7 +88,7 @@ FTC2 ([[§41 The Fundamental Theorem of Calculus#^thm-41-2|Theorem §41.2]]) eva
 
 ^rem-42-2
 
-> [!example] Example §48.1: General Indefinite Integrals
+> [!example] Example §42.1: General Indefinite Integrals
 > **(a)** Find $\displaystyle\int (10x^4 - 2\sec^2 x)\,dx$.
 >
 > By the convention and Table 1,
@@ -111,7 +111,7 @@ FTC2 ([[§41 The Fundamental Theorem of Calculus#^thm-41-2|Theorem §41.2]]) eva
 
 ^ex-42-1
 
-> [!example] Example §48.2: Definite Integrals from the Table
+> [!example] Example §42.2: Definite Integrals from the Table
 > **(a)** Find $\displaystyle\int_0^2 \Big(2x^3 - 6x + \frac{3}{x^2 + 1}\Big)\,dx$ and interpret the result in terms of areas.
 >
 > By FTC2 and Table 1,
@@ -213,7 +213,7 @@ The most important instance concerns motion along a line, and it settles the gue
 
 *Uses:* [[§42 Indefinite Integrals and the Net Change Theorem#^thm-42-2|§42.2]], [[§40 Properties of the Definite Integral#^thm-40-2|§40.2]]
 
-> [!example] Example §48.3: Displacement Versus Distance
+> [!example] Example §42.3: Displacement Versus Distance
 > A particle moves along a line with velocity $v(t) = t^2 - t - 6$ (in meters per second).
 >
 > **(a)** Find the displacement during $1 \le t \le 4$.
@@ -249,7 +249,7 @@ The most important instance concerns motion along a line, and it settles the gue
 ![[m233-37-1.svg]]
 *[[§42 Indefinite Integrals and the Net Change Theorem#^ex-42-3|Example §42.3]]. On $[1, 3]$ the velocity is negative and the particle moves left a distance $\frac{22}{3}$ (orange area); on $[3, 4]$ it moves right $\frac{17}{6}$ (blue area). Displacement counts the orange area negatively, $\frac{17}{6} - \frac{22}{3} = -\frac92$; distance counts both, $\frac{17}{6} + \frac{22}{3} = \frac{61}{6}$.*
 
-> [!example] Example §48.4: Energy from a Power Curve
+> [!example] Example §42.4: Energy from a Power Curve
 > A graph shows the power consumption $P$ (in megawatts) in San Francisco on a day in September, with $t$ in hours starting at midnight. Estimate the energy used that day.
 >
 > Power is the rate of change of energy, $P(t) = E'(t)$. By the Net Change Theorem,

@@ -101,7 +101,7 @@ The triangle inequality $|z_1 + z_2| \le |z_1| + |z_2|$ is the basic tool for es
 *Uses:* [[§5 Triangle Inequality#^thm-5-1|§5.1]], [[§4 Vectors and Moduli#^def-4-1|Def. §4.1]]
 
 > [!remark]- Connections
-> - The same inequality for the norm of any normed linear space: [[§10 Normed Linear Spaces#^lem-10-3|556 Lem. §10.3]].
+> - The same inequality for the norm of any normed linear space: [[§11 Normed Linear Spaces#^lem-11-3|556 Lem. §11.3]].
 
 Geometrically, (2) says that the length of one side of a triangle is at least the difference of the lengths of the other two sides. In practice one needs only (1) and (2): to bound $|z_1 - z_2|$, write it as $|z_1 + (-z_2)|$.
 

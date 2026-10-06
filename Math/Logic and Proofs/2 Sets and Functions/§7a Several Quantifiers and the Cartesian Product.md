@@ -30,8 +30,7 @@ This section studies statements with several quantifiers, where the order of the
 >
 > *Eccles: Section 7.6*
 
-^rem-7a-4
-
+^rem-7a-1
 > [!theorem] Theorem §7a.1: Interchanging Quantifiers
 > Let $P(a, b)$ be a predicate with $a \in A$, $b \in B$.
 > 1. $\forall a \in A,\ \forall b \in B,\ P(a, b) \iff \forall b \in B,\ \forall a \in A,\ P(a, b)$.

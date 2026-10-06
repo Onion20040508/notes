@@ -101,17 +101,17 @@ tags: [differentiable-manifolds, math591]
 
 ^rem-1-3
 
-> [!definition] Definition §1.3: Neighborhood
+> [!definition] Definition §1.4: Neighborhood
 > A **neighborhood** (abbreviated **nbhd**) of a point $p \in X$ is any *open* set $U$ with $p \in U$.
 
-^def-1-3
+^def-1-4
 
 > [!remark] Remark: Terminology Warning: All Neighborhoods Are Open
 > In this course (and in Lee), a neighborhood of $p$ is by definition an *open* set containing $p$. Some texts (e.g. in analysis, or Bourbaki) call any set containing an open set around $p$ a neighborhood. Munkres and 590 used the open convention as well, so nothing changes for us—but check the convention whenever reading a new book.
 
 ^rem-1-4
 
-> [!definition] Definition §1.4: Basis of Neighborhoods at a Point
+> [!definition] Definition §1.5: Basis of Neighborhoods at a Point
 > A **basis of neighborhoods** (or **local basis**) of $p \in X$ is a collection $(V_\alpha)_{\alpha \in A_p}$ of neighborhoods of $p$ such that
 >
 > $$
@@ -120,7 +120,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: App. A, “Topological Spaces” (“neighborhood basis”)*
 
-^def-1-4
+^def-1-5
 
 > [!remark]- Connections
 > - The 590 counterpart: [[§22 Countability Axioms#^def-22-1|Countable Basis at a Point, 590 §22.1]].
@@ -139,7 +139,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-3|Def. §1.3]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]]
 
 > [!remark] Remark
 > Part (2), read through [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], is why it suffices to *define* a topology by specifying a basis of neighborhoods at every point — provided the family satisfies the intersection axiom there. This is how the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]] is defined below.
@@ -148,10 +148,10 @@ tags: [differentiable-manifolds, math591]
 
 ## Second Countability
 
-> [!definition] Definition §1.5: Second Countable
+> [!definition] Definition §1.6: Second Countable
 > $X$ is **second countable** if there exists a basis $\{U_\alpha\}_{\alpha \in A}$ of $X$ such that the index set $A$ is countable.
 
-^def-1-5
+^def-1-6
 
 > [!remark]- Connections
 > - Home in 590: [[§22 Countability Axioms#^def-22-3|590 Def. §22.3]].
@@ -183,7 +183,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-ex-1-1
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§12 Metric Topology#^ex-12-3|590 Ex. §12.3]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§12 Metric Topology#^ex-12-3|590 Ex. §12.3]]
 
 > [!remark]- Connections
 > - The 590 version uses rational boxes instead of balls: [[§22 Countability Axioms#^ex-22-4|590 Ex. §22.4]].
@@ -197,17 +197,17 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-1-2
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
 > [!remark]- Connections
 > - In 590: [[Discrete and indiscrete topologies]]; the general fact that a second-countable space has no uncountable discrete subspace is [[§22 Countability Axioms#^lem-22-2|590 §22.2]].
 
-> [!definition] Definition §1.6: First Countable at a Point
-> $X$ is **first countable at $x_0 \in X$** if there is a countable basis of neighborhoods of $x_0$ ([[§1 Point-Set Topology Review#^def-1-4|Definition §1.4]]); $X$ is **first countable** if it is first countable at each of its points.
+> [!definition] Definition §1.7: First Countable at a Point
+> $X$ is **first countable at $x_0 \in X$** if there is a countable basis of neighborhoods of $x_0$ ([[§1 Point-Set Topology Review#^def-1-5|Definition §1.5]]); $X$ is **first countable** if it is first countable at each of its points.
 >
 > *Lee: App. A, “Topological Spaces”*
 
-^def-1-6
+^def-1-7
 
 > [!remark]- Connections
 > - Home in 590: [[§22 Countability Axioms#^def-22-2|590 Def. §22.2]].
@@ -224,7 +224,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-4
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
 
 > [!remark]- Connections
 > - The same argument in 590: [[§22 Countability Axioms#^rem-22-2|590 §22, remark after Def. §18.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
@@ -236,7 +236,7 @@ tags: [differentiable-manifolds, math591]
 
 ## Hausdorff Spaces
 
-> [!definition] Definition §1.7: Hausdorff ($T_2$)
+> [!definition] Definition §1.8: Hausdorff ($T_2$)
 > $X$ is **Hausdorff** (or $T_2$) if
 >
 > $$
@@ -245,7 +245,7 @@ tags: [differentiable-manifolds, math591]
 >
 > That is, distinct points can be separated by neighborhoods.
 
-^def-1-7
+^def-1-8
 
 > [!remark]- Connections
 > - Home in 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]].
@@ -276,7 +276,7 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-1-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§12 Metric Topology#^def-12-1|590 Def. §12.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§12 Metric Topology#^def-12-1|590 Def. §12.1]]
 
 ![[m591-1-1.svg]]
 *Separating $p \neq q$ in a metric space: the balls $U = B(p, r)$ and $V = B(q, r)$ of radius $r = \tfrac13 d(p,q)$ are disjoint, with a gap of $\tfrac13 d(p,q)$ between them.*
@@ -323,7 +323,7 @@ tags: [differentiable-manifolds, math591]
 
 ^ex-1-4
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§1 Point-Set Topology Review#^prop-1-2|§1.2]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Basis for a Topology#^lem-2-1|590 §2.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§1 Point-Set Topology Review#^prop-1-2|§1.2]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Basis for a Topology#^lem-2-1|590 §2.1]]
 
 *Provenance.* Lecture 1 gave the set, the neighbourhood bases of $0_1$ and $0_2$, and the verdict “you cannot separate the two origins.” It sketched the other two conditions in words: second countability (“I won't prove [it] … each one has a countable basis”) and local Euclideanness (“there's an obvious bijection with $(-\varepsilon, \varepsilon)$, and this turns out to be a homeomorphism”). The verification above that the proposed sets form a basis, and the precise non-separation argument, are filled in.
 
@@ -331,20 +331,20 @@ tags: [differentiable-manifolds, math591]
 *The basic neighbourhoods $N_1(\varepsilon)$ and $N_2(\varepsilon)$ of the two origins share the punctured interval $(-\varepsilon,0)\cup(0,\varepsilon)$, so no neighbourhoods of $0_1$ and $0_2$ are disjoint.*
 
 > [!remark]- Connections
-> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
+> - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]].
 
 > [!remark] Remark: The Line with Two Origins as a Quotient
 > Equivalently ([[§4 Quotient Spaces and Open Maps#^prop-4-2|Proposition §4.2]]), $X$ is the quotient of $\mathbb{R} \times \{1, 2\}$ (two disjoint copies of $\mathbb{R}$) by the equivalence relation $(x, 1) \sim (x, 2)$ for all $x \neq 0$: glue the two lines everywhere except at the origins. This is the standard example showing that *a quotient of a Hausdorff space need not be Hausdorff* (cf. [[§13 Quotient Topology|590 §13]]). We will meet this space again in [[§2 Topological Manifolds|§2]] as the reason the Hausdorff condition must be imposed *separately* on manifolds—it does not follow from being locally Euclidean.
 
-^rem-1-9
+^rem-10-1
 
 ## Standing Facts Imported from MATH 590
 
 > [!remark] Remark
 > The following results from point-set topology are used in these notes without further comment. They are stated here so the notes are self-contained; proofs are in the MATH 590 notes at the sections indicated, except for the two items marked $(\ast)$, which were not recorded there and are proved below.
 
-^rem-1-10
+^rem-1-9
 
 > [!theorem] Proposition §1.5: Continuity and Homeomorphisms
 > Let $X, Y$ be topological spaces.
@@ -387,15 +387,15 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-6
 
-> [!definition] Definition §1.8: Connected Component
+> [!definition] Definition §1.9: Connected Component
 > Let $X$ be a topological space and $p \in X$. The **connected component** of $p$ is the union of all connected subsets of $X$ containing $p$.
 >
 > *Lee: App. A, “Connectedness and Compactness”*
 
-^def-1-8
+^def-1-9
 
 > [!theorem] Proposition §1.7: Connectedness and Components
-> Let $X$ be a topological space, and components be as in [[§1 Point-Set Topology Review#^def-1-8|Definition §1.8]].
+> Let $X$ be a topological space, and components be as in [[§1 Point-Set Topology Review#^def-1-9|Definition §1.9]].
 > 1. The continuous image of a connected space is connected. ([[Continuous Image of a Connected Space is Connected|590 §13]])
 > 2. A union of connected subspaces having a point in common is connected. ([[§15 Connected Spaces#^thm-15-5|590 §15]])
 > 3. $(\ast)$ The component of $p$ is connected, and the components of $X$ partition $X$: two components are either equal or disjoint.
@@ -410,7 +410,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-1-7
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]] (2), [[§15 Connected Spaces#^thm-15-5|590 §15.5]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-9|Def. §1.9]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]] (2), [[§15 Connected Spaces#^thm-15-5|590 §15.5]]
 
 > [!proof]+ Proof (to be filled)
 > Parts (1), (2) and (4) are proved in MATH 590 ([[§15 Connected Spaces|590 §15]], [[§16 Connected Subspaces of ℝ|590 §16]]); to be filled.

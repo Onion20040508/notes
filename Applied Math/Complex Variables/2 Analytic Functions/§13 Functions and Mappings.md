@@ -96,7 +96,7 @@ Suppose that $u + iv$ is the value of $f$ at $z = x + iy$, that is, $u + iv = f(
 
 ^def-13-3
 
-> [!definition] Definition §13.5: Rational Function
+> [!definition] Definition §13.4: Rational Function
 > Quotients $P(z)/Q(z)$ of polynomials are **rational functions**; they are defined at each point $z$ where $Q(z) \ne 0$.
 >
 > *B&C: Sec. 13 (text)*
@@ -107,7 +107,7 @@ B&C states the definition for positive $n$; constants $a_0 \ne 0$ are the polyno
 
 ## Multiple-Valued Functions
 
-> [!definition] Definition §13.6: Multiple-Valued Function
+> [!definition] Definition §13.5: Multiple-Valued Function
 > A **multiple-valued function** is a rule that assigns more than one value to a point $z$ in the domain of definition. When multiple-valued functions are studied, usually just one of the possible values assigned at each point is taken, in a systematic manner, and a (single-valued) function is constructed from the multiple-valued one.
 >
 > *B&C: Sec. 13 (text)*

@@ -15,7 +15,7 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 
 ## Dimension
 
-> [!theorem] Theorem §41.1: More Vectors Than the Basis Means Dependence
+> [!theorem] Theorem §33.1: More Vectors Than the Basis Means Dependence
 > If a vector space $V$ has a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$, then any set in $V$ containing more than $n$ vectors must be linearly dependent.
 >
 > Equivalently: every linearly independent set in $V$ has at most $n$ vectors. The theorem also holds for infinite sets $S$ (an infinite set is called linearly dependent if some finite subset is): any $p > n$ vectors of $S$ form a dependent subset.
@@ -43,7 +43,7 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 
 *Uses:* [[§8 Linear Independence#^thm-8-6|§8.6]], [[§32 Coordinate Systems#^thm-32-3|§32.3]]
 
-> [!theorem] Theorem §41.2: All Bases Have the Same Size
+> [!theorem] Theorem §33.2: All Bases Have the Same Size
 > If a vector space $V$ has a basis of $n$ vectors, then every basis of $V$ must consist of exactly $n$ vectors.
 >
 > *Lay: Theorem 10 (4.5)*
@@ -59,7 +59,7 @@ A vector space with a basis of $n$ vectors is isomorphic to $\mathbb{R}^n$ throu
 
 If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset of $S$ is a basis of $V$, by the Spanning Set Theorem ([[§31 Linearly Independent Sets; Bases#^thm-31-2|Theorem §31.2]]). By [[§33 The Dimension of a Vector Space#^thm-33-2|Theorem §33.2]] all such bases have the same size, so the following definition makes sense.
 
-> [!definition] Definition §41.1: Finite-Dimensional; Dimension
+> [!definition] Definition §33.1: Finite-Dimensional; Dimension
 > If $V$ is spanned by a finite set, then $V$ is **finite-dimensional**, and the **dimension** of $V$, written $\dim V$, is the number of vectors in a basis for $V$. The dimension of the zero vector space $\{\mathbf{0}\}$ is defined to be $0$. If $V$ is not spanned by a finite set, then $V$ is **infinite-dimensional**.
 >
 > *Lay: 4.5, Definition*
@@ -69,7 +69,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Dimension#^ladr-2-34|LADR 2.34]] (basis length does not depend on basis) and [[§6 Dimension#^ladr-2-35|LADR 2.35]]. Axler proves [[§33 The Dimension of a Vector Space#^thm-33-1|Theorem §33.1]] without coordinates, from [[§4 Span and Linear Independence#^ladr-2-22|LADR 2.22]] (a linearly independent list is never longer than a spanning list), by trading spanning vectors for independent ones; infinite-dimensional spaces: [[§4 Span and Linear Independence#^ladr-2-13|LADR 2.13]].
 
-> [!example] Example §41.1: Dimensions of the Standard Spaces
+> [!example] Example §33.1: Dimensions of the Standard Spaces
 > **$\mathbb{R}^n$.** The standard basis $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ has $n$ vectors, so $\dim \mathbb{R}^n = n$. (L16: "any basis of $\mathbb{R}^4$ has exactly $4$ vectors.")
 >
 > **$\mathbb{P}_n$.** The standard basis $\{1, t, \ldots, t^n\}$ has $n + 1$ vectors, so $\dim \mathbb{P}_n = n + 1$; for instance $\dim \mathbb{P}_2 = 3$.
@@ -83,7 +83,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 
 ^ex-33-1
 
-> [!example] Example §41.2: Finding the Dimension of a Subspace
+> [!example] Example §33.2: Finding the Dimension of a Subspace
 > Find the dimension of
 >
 > $$
@@ -107,7 +107,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 
 ^ex-33-2
 
-> [!example] Example §41.3: The Subspaces of ℝ³ by Dimension
+> [!example] Example §33.3: The Subspaces of ℝ³ by Dimension
 > By [[§33 The Dimension of a Vector Space#^thm-33-3|Theorem §33.3]] below, a subspace $H$ of $\mathbb{R}^3$ has $\dim H \in \{0, 1, 2, 3\}$.
 > - **0-dimensional:** only the zero subspace $\{\mathbf{0}\}$.
 > - **1-dimensional:** a basis is one nonzero vector $\mathbf{v}$, so $H = \operatorname{Span}\{\mathbf{v}\}$, a line through the origin.
@@ -125,7 +125,7 @@ If a nonzero vector space $V$ is spanned by a finite set $S$, then some subset o
 
 The next theorem is the counterpart of the Spanning Set Theorem: a spanning set can be shrunk to a basis, and a linearly independent set can be enlarged to one.
 
-> [!theorem] Theorem §41.3: Extending to a Basis; Dimension of a Subspace
+> [!theorem] Theorem §33.3: Extending to a Basis; Dimension of a Subspace
 > Let $H$ be a subspace of a finite-dimensional vector space $V$. Any linearly independent set in $H$ can be expanded, if necessary, to a basis for $H$. Also, $H$ is finite-dimensional and
 >
 > $$
@@ -150,7 +150,7 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-32|LADR 2.32]] (every linearly independent list extends to a basis; Axler adjoins vectors of a spanning list of $V$, so the process visibly stops) and [[§6 Dimension#^ladr-2-37|LADR 2.37]] (dimension of a subspace).
 
-> [!theorem] Corollary §41.4: Independent Sets and Spanning Sets in an n-Dimensional Space
+> [!theorem] Corollary §33.4: Independent Sets and Spanning Sets in an n-Dimensional Space
 > Let $\dim V = n$.
 > 1. A linearly independent set in $V$ has at most $n$ vectors.
 > 2. A set that spans $V$ has at least $n$ vectors.
@@ -170,7 +170,7 @@ The next theorem is the counterpart of the Spanning Set Theorem: a spanning set 
 
 When the dimension is known, the search for a basis is simplified: with the right number of vectors, it is enough to check *either* independence *or* spanning. This matters in applications (difference equations, [[§37 Solution Sets of Linear Difference Equations#^ex-37-1|Example §37.1]]; differential equations) where independence is much easier to verify than spanning.
 
-> [!theorem] Theorem §41.5: The Basis Theorem
+> [!theorem] Theorem §33.5: The Basis Theorem
 > Let $V$ be a $p$-dimensional vector space, $p \ge 1$. Any linearly independent set of exactly $p$ elements in $V$ is automatically a basis for $V$. Any set of exactly $p$ elements that spans $V$ is automatically a basis for $V$.
 >
 > *Lay: Theorem 12 (4.5)*
@@ -191,7 +191,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Dimension#^ladr-2-38|LADR 2.38]] (linearly independent list of the right length is a basis) and [[§6 Dimension#^ladr-2-42|LADR 2.42]] (spanning list of the right length is a basis), the same two arguments.
 
-> [!example] Example §41.4: Three Vectors That Form a Basis of ℝ³
+> [!example] Example §33.4: Three Vectors That Form a Basis of ℝ³
 > Show that $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 3 \\ 4 \\ 0 \end{bmatrix}$, $\mathbf{v}_3 = \begin{bmatrix} 5 \\ 6 \\ 7 \end{bmatrix}$ form a basis of $\mathbb{R}^3$.
 >
 > Since $\dim \mathbb{R}^3 = 3$, by the Basis Theorem it is enough to show that the three vectors are linearly independent; spanning then comes for free. Let $A = [\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3]$. Expanding along the third row (two zeros),
@@ -206,7 +206,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 
 ^ex-33-4
 
-> [!theorem] Corollary §41.6: A Subspace of Full Dimension Is the Whole Space
+> [!theorem] Corollary §33.6: A Subspace of Full Dimension Is the Whole Space
 > Let $H$ be a subspace of a finite-dimensional vector space $V$. If $\dim H = \dim V$, then $H = V$. In particular, the possible dimensions of subspaces of $\mathbb{R}^n$ are $0, 1, \ldots, n$, and the only $n$-dimensional subspace of $\mathbb{R}^n$ is $\mathbb{R}^n$ itself.
 >
 > *Lay: 4.5, Exercise 26*
@@ -220,7 +220,7 @@ Lay states the Basis Theorem for subspaces of $\mathbb{R}^n$ already in Section 
 
 *Uses:* [[§33 The Dimension of a Vector Space#^thm-33-5|§33.5]], [[§33 The Dimension of a Vector Space#^thm-33-3|§33.3]]
 
-> [!theorem] Proposition §41.7: Linear Maps and Dimension
+> [!theorem] Proposition §33.7: Linear Maps and Dimension
 > Let $V$ and $W$ be vector spaces, $V$ finite-dimensional, and $T : V \to W$ a linear transformation.
 > 1. For a subspace $H$ of $V$, the image $T(H)$ is a subspace of $W$ and $\dim T(H) \le \dim H$.
 > 2. If $T$ is one-to-one, then $\dim T(H) = \dim H$. In particular, if $T$ is one-to-one and onto (an isomorphism), then $\dim W = \dim V$: isomorphic finite-dimensional vector spaces have the same dimension.

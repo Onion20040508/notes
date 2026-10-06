@@ -40,7 +40,7 @@ Permutation matrices embed $S_n$ in $GL_n(k)$, the first representation, and com
 
 ![[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5]]
 
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7]]
 
 ![[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2]]
 

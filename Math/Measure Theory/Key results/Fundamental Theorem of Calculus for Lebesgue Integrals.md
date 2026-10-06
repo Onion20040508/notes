@@ -8,14 +8,14 @@ tags: [measure-theory, hub]
 ![[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1]]
 
 ## Treated in
-- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1|Theorem §32.1: The Fundamental Theorem of Calculus for Lebesgue Integrals]], in [[§28 Differentiation Theory]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-1|Theorem §32.1: The Fundamental Theorem of Calculus for Lebesgue Integrals]], in [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals]]
 
 ## Its proof uses
 - [[§29 Lebesgue's Differentiation Theorem#^cor-29-2|Corollary §29.2: BV Functions are Differentiable A.E.]]
+- [[§30 Differentiating the Integral#^thm-30-7|Theorem §30.7: Differentiation of the Integral]]
 - [[§31 Absolute Continuity#^prop-31-1|Proposition §31.1: Basic Properties of AC Functions]]
 - [[§31 Absolute Continuity#^thm-31-2|Theorem §31.2: The Integral Function is Absolutely Continuous]]
 - [[§31 Absolute Continuity#^thm-31-3|Theorem §31.3: AC ⇒ BV]]
-- [[§30 Differentiating the Integral#^thm-30-7|Theorem §30.7: Differentiation of the Integral]]
 - [[§31 Absolute Continuity#^thm-31-4|Theorem §31.4]]
 
 ## Used in (Measure Theory)

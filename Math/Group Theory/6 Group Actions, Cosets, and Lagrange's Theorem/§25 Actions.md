@@ -30,18 +30,18 @@ tags: [group-theory, math493]
 ^def-25-1
 
 > [!remark]- Connections
-> - Same definition in 591, [[§12 Group Actions and Orbit Spaces#^def-12-1|591 Def. §12.1]]; for a [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|topological group]] acting on a space one also asks that the action map be continuous, [[§12 Group Actions and Orbit Spaces#^def-12-2|591 Def. §12.2]].
+> - Same definition in 591, [[§13 Group Actions and Orbit Spaces#^def-13-1|591 Def. §13.1]]; for a [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|topological group]] acting on a space one also asks that the action map be continuous, [[§13 Group Actions and Orbit Spaces#^def-13-2|591 Def. §13.2]].
 
-> [!definition] Definition §25.2: Arrow Notation
+> [!definition] Definition §25.3: Arrow Notation
 > - $f: X \to Y$ denotes a **function** from the set $X$ to the set $Y$; the arrow $\to$ goes between *sets*.
 > - $x \mapsto y$ records that the *element* $x$ is sent to the element $y$; e.g. $f: \mathbb{Z} \to \mathbb{Z}$, $n \mapsto n^2$.
-> - $G \curvearrowright X$ denotes a **left action** of the group $G$ on the set $X$, and $X \curvearrowleft G$ a **right action**; the group is written on the side from which it acts, as in the [[§27 Orbits#^def-27-2|orbit spaces]] $G \backslash X$ and $X/G$.
+> - $G \curvearrowright X$ denotes a **left action** of the group $G$ on the set $X$, and $X \curvearrowleft G$ a **right action**; the group is written on the side from which it acts, as in the [[§27 Orbits#^def-27-4|orbit spaces]] $G \backslash X$ and $X/G$.
 >
 > The three are not interchangeable. In particular an action is not a function $G \to X$, which would send group elements to points; it is a function $G \times X \to X$, or equivalently a homomorphism $G \to S_X$ (Actions Are Homomorphisms to $S_X$, [[§25 Actions#^thm-25-3|below]]).
 >
 > *Source: lecture*
 
-^def-25-2
+^def-25-3
 
 > [!remark] Remark: Reading the Axiom
 > The first axiom says that “multiply in $G$, then act” equals “act by $g_2$, then act by $g_1$”: the group product becomes composition of the maps $x \mapsto g \star x$. It has the shape of associativity, and for $G$ acting on itself by multiplication it *is* associativity. In a right action the factors act in the written order, $g_2$ first.
@@ -167,7 +167,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Actions used to manufacture homomorphisms later: [[§31 G Acting on Coset Spaces#^prop-31-1|The Action of G on G/H]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§43 Simple Groups#^prop-43-10|The Pair-Partition Homomorphism]].
-> - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§12 Group Actions and Orbit Spaces#^lem-12-2|591 Lemma §12.2]], so the homomorphism lands in the homeomorphisms of X.
+> - Topological version: for a continuous action each translation is a homeomorphism with inverse the translation by the inverse, [[§13 Group Actions and Orbit Spaces#^lem-13-2|591 Lemma §13.2]], so the homomorphism lands in the homeomorphisms of X.
 
 > [!example] Example §25.3: Seeing the Permutations
 > **Rotating a triangle.** Let $G = \mathbb{Z}/3\mathbb{Z}$ act on the vertices $X = \{1, 2, 3\}$ of a triangle by rotation, $[k] \star i =$ the vertex $k$ steps further around (so $[1] \star 1 = 2$, $[1] \star 2 = 3$, $[1] \star 3 = 1$). Freezing $g$ and reading off where each vertex goes gives an element of $S_3$ in cycle notation:
@@ -199,10 +199,10 @@ tags: [group-theory, math493]
 
 ## Faithful Actions and Cayley's Theorem
 
-> [!definition] Definition §25.3: Kernel of an Action; Faithful Action
+> [!definition] Definition §25.4: Kernel of an Action; Faithful Action
 > The **kernel** of an action of $G$ on $X$ is the [[§15 Homomorphisms#^def-15-2|kernel]] of the associated homomorphism $\varphi: G \to S_X$, namely $\{g \in G : g \star x = x \text{ for all } x \in X\}$, the elements acting trivially on every point. The action is **faithful** if its kernel is $\{e\}$, i.e. if only the identity fixes every point.
 
-^def-25-3
+^def-25-4
 
 > [!remark]- Connections
 > - Faithful and non-faithful actions of the cube group: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-4|§32.4]], [[§32 Linear Groups, the Cube, S₃ and A₄#^ex-32-1|Ex. §32.1]].
@@ -217,7 +217,7 @@ tags: [group-theory, math493]
 
 ^pf-25-4
 
-*Uses:* [[§25 Actions#^def-25-3|Def. §25.3]], [[§25 Actions#^thm-25-3|§25.3]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
+*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^thm-25-3|§25.3]], [[§15 Homomorphisms#^prop-15-3|§15.3]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]], [[§3 Basic Examples of Groups#^def-3-5|Def. §3.5]]
 
 > [!theorem] Theorem §25.5: Cayley's Theorem
 > Every group $G$ is isomorphic to a subgroup of $S_G$. In particular, a group with $n$ elements is isomorphic to a subgroup of $S_n$.
@@ -231,7 +231,7 @@ tags: [group-theory, math493]
 
 ^pf-25-5
 
-*Uses:* [[§25 Actions#^ex-25-2|Ex. §25.2]], [[§25 Actions#^def-25-3|Def. §25.3]], [[§25 Actions#^prop-25-4|§25.4]]
+*Uses:* [[§25 Actions#^ex-25-2|Ex. §25.2]], [[§25 Actions#^def-25-4|Def. §25.4]], [[§25 Actions#^prop-25-4|§25.4]]
 
 > [!remark]- Connections
 > - Revisited through the First Isomorphism Theorem: [[§41 The First and Second Isomorphism Theorems#^rem-41-3|PS 3.1 and PS 3.2 as Instances]].
@@ -257,6 +257,6 @@ tags: [group-theory, math493]
 > - The small representations the next remark asks for begin with characters: [[§46 Characters#^rem-46-4|One-Dimensional Representations]].
 
 > [!remark] Remark: Why Cayley's Theorem Matters, and Why It Is Not the End
-> Cayley's theorem says that “abstract group” and “group of permutations” are the same notion: nothing is lost by studying only subgroups of symmetric groups. Its corollary is the first appearance of the idea behind the second half of the course — every finite group has a faithful [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|representation]] by matrices. The embedding is, however, very inefficient: a group of order $n$ is placed inside $S_n$, of order $n!$, or into $n \times n$ matrices. Much of representation theory is about finding the small, informative representations instead.
+> Cayley's theorem says that “abstract group” and “group of permutations” are the same notion: nothing is lost by studying only subgroups of symmetric groups. Its corollary is the first appearance of the idea behind the second half of the course — every finite group has a faithful [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|representation]] by matrices. The embedding is, however, very inefficient: a group of order $n$ is placed inside $S_n$, of order $n!$, or into $n \times n$ matrices. Much of representation theory is about finding the small, informative representations instead.
 
 ^rem-25-7

@@ -62,10 +62,10 @@ tags: [group-theory, math493]
 
 ^rem-35-1
 
-> [!definition] Definition §35.2: $p$-Group
+> [!definition] Definition §35.3: $p$-Group
 > For a prime $p$, a **$p$-group** is a group of order $p^k$ for some $k \geq 0$. [[§35 The Center#^thm-35-3|The theorem below]] is the starting point for their structure theory.
 
-^def-35-2
+^def-35-3
 
 > [!theorem] Theorem §35.3: Groups of Prime-Power Order Have Nontrivial Center
 > Let $p$ be prime and $|G| = p^k$ with $k \geq 1$. Then there is $g \neq e$ with $\operatorname{Conj}(g) = \{g\}$; such a $g$ commutes with every element of $G$. Thus $Z(G) \neq \{e\}$.

@@ -15,7 +15,7 @@ This section derives the equation of motion of a taut string, like a guitar or v
 
 ## Derivation of the Equation of Motion
 
-> [!definition] Definition §46.1: The Model of a Vibrating String
+> [!definition] Definition §37.1: The Model of a Vibrating String
 > A string is stretched along the $x$-axis between $x = 0$ and $x = a$. Its **transverse displacement** $u(x, t)$ is measured up from the $x$-axis. The modelling assumptions are:
 > 1. The string is **perfectly flexible**: it offers no resistance to bending, so the only force one part of the string exerts on the next is a pull, the **tension**, acting tangentially to the centerline of the string. Its magnitude is $T(x, t)$, and $\phi(x, t)$ denotes the angle between the tangent and the horizontal.
 > 2. Each point of the string moves only in the vertical direction, so the horizontal acceleration is zero.
@@ -35,7 +35,7 @@ This section derives the equation of motion of a taut string, like a guitar or v
 ![[m341-29-1.svg]]
 *Forces on the piece of string between $x$ and $x + \Delta x$: tensions $T(x, t)$ and $T(x + \Delta x, t)$ along the tangents, at angles $\alpha = \phi(x, t)$ and $\beta = \phi(x + \Delta x, t)$ to the horizontal, and the weight $mg$. When the string bends upward ($\beta > \alpha$), the vertical components of the tensions do not cancel, and the net force accelerates the piece.*
 
-> [!theorem] Theorem §46.1: Equation of Motion of the String
+> [!theorem] Theorem §37.1: Equation of Motion of the String
 > Under the assumptions of Definition §37.1, the horizontal component of the tension is a constant $T$,
 >
 > $$
@@ -141,7 +141,7 @@ To describe the motion of an object, one must specify both its equation of motio
 
 ^rem-37-1
 
-> [!example] Example §46.1: Dimensions and the Wave Speed
+> [!example] Example §37.1: Dimensions and the Wave Speed
 > Find the dimensions of $u$, $\partial^2u/\partial x^2$, $\partial^2u/\partial t^2$, $c$ and $g/c^2$, using that force has dimension $mL/t^2$ (mass $m$, length $L$, time $t$) and tension is a force, and check that each term of (5) has the same dimension.
 >
 > - $u$ is a displacement: $L$. So $\partial^2u/\partial x^2$ has dimension $L/L^2 = 1/L$, and $\partial^2u/\partial t^2$ has dimension $L/t^2$, an acceleration.
@@ -155,7 +155,7 @@ To describe the motion of an object, one must specify both its equation of motio
 
 ^ex-37-1
 
-> [!example] Example §46.2: The Equilibrium Shape under Gravity
+> [!example] Example §37.2: The Equilibrium Shape under Gravity
 > Find the solution $v(x)$ of (5) with the boundary conditions (8) that is independent of time.
 >
 > If $v$ does not depend on $t$, then $v_{tt} = 0$ and (5) becomes
@@ -178,7 +178,7 @@ To describe the motion of an object, one must specify both its equation of motio
 
 ^ex-37-2
 
-> [!example] Example §46.3: Setting Up the Initial Conditions
+> [!example] Example §37.3: Setting Up the Initial Conditions
 > Write the initial conditions for **(a)** a string of length $a$ lifted at its midpoint to height $h$ and released from rest, and **(b)** a piano string at rest in its equilibrium position, struck by a hammer so that its initial velocity grows linearly from $0$ at the ends to $1$ at the midpoint.
 >
 > **(a)** The lifted string is two straight segments, from $(0, 0)$ to $(a/2, h)$ and from $(a/2, h)$ to $(a, 0)$. The first has slope $2h/a$, the second $-2h/a$, so

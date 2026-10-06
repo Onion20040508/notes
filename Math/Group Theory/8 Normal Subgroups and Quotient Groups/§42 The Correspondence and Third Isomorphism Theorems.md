@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Source: Lecture (Fri Oct 2); Lecture and Worksheet 8 (Mon Oct 5).*
 
 > [!remark] Remark: Notation $A/N$
-> For any subgroup $A$, the [[§41 The First and Second Isomorphism Theorems#^thm-41-4|Second Isomorphism Theorem]] gives $\pi(A) \cong AN/N$. When $N \subseteq A$, $AN = A$, and $\pi(A) = \{aN : a \in A\}$ is written $A/N$: it is the quotient group $A/N$ (as $N \trianglelefteq A$), sitting inside $G/N$. In this notation, the question of WS 8.4(2) is: if $A/N \trianglelefteq G/N$, i.e. $(gag^{-1})N \in A/N$ for all $g$, must $A \trianglelefteq G$? Since $N \subseteq A$, $gAg^{-1}N = A$ forces $gAg^{-1} = A$ (lecture 10/5).
+> For any subgroup $A$, the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] gives $\pi(A) \cong AN/N$. When $N \subseteq A$, $AN = A$, and $\pi(A) = \{aN : a \in A\}$ is written $A/N$: it is the quotient group $A/N$ (as $N \trianglelefteq A$), sitting inside $G/N$. In this notation, the question of WS 8.4(2) is: if $A/N \trianglelefteq G/N$, i.e. $(gag^{-1})N \in A/N$ for all $g$, must $A \trianglelefteq G$? Since $N \subseteq A$, $gAg^{-1}N = A$ forces $gAg^{-1} = A$ (lecture 10/5).
 
 ^rem-42-1
 
@@ -100,7 +100,7 @@ tags: [group-theory, math493]
 ^pf-42-5
 
 > [!remark] Remark: The Isomorphism Theorems
-> The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first]] identifies $G/N$ with an image; the [[§41 The First and Second Isomorphism Theorems#^thm-41-4|second]] and [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|third]] compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
+> The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first]] identifies $G/N$ with an image; the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|second]] and [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|third]] compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
 
 ^rem-42-2
 

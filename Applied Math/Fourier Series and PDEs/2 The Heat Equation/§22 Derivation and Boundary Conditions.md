@@ -40,7 +40,7 @@ Consider a rod or bar of heat-conducting material with uniform cross section of 
 
 The **law of conservation of energy** says that the heat entering a region plus the heat generated inside equals the heat leaving plus the heat stored; it holds equally for rates per unit time. Heat enters the slice through the face at $x$ at the rate $Aq(x, t)$ and leaves through the face at $x + \Delta x$ at the rate $Aq(x + \Delta x, t)$.
 
-> [!theorem] Proposition §28.1: Heat Balance Equation
+> [!theorem] Proposition §22.1: Heat Balance Equation
 > If $q$ has a continuous $x$-derivative and $u$ a continuous $t$-derivative, and $g$ is continuous, then at every point of the rod
 >
 > $$
@@ -127,7 +127,7 @@ There are two unknowns, $q$ and $u$, in (2). A second relation between them is n
 
 ^def-22-5
 
-> [!theorem] Theorem §28.2: The Heat Equation
+> [!theorem] Theorem §22.2: The Heat Equation
 > Under Fourier's law the heat balance (2) becomes
 >
 > $$
@@ -162,7 +162,7 @@ There are two unknowns, $q$ and $u$, in (2). A second relation between them is n
 
 ^rem-22-2
 
-> [!example] Example §28.1: The Equation Alone Does Not Determine the Temperature
+> [!example] Example §22.1: The Equation Alone Does Not Determine the Temperature
 > Each of the functions
 >
 > $$

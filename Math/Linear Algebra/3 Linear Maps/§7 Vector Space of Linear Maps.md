@@ -24,7 +24,7 @@ tags: [linear-algebra]
 > - Determined by values on a basis: [[Linear map lemma]]. Vector space of linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]]. Composition: [[§7 Vector Space of Linear Maps#^ladr-3-7|Product of linear maps]].
 > - Two subspaces attached to every linear map: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], tied together by [[Fundamental theorem of linear maps]].
 > - Physics: observables and time evolution in quantum mechanics are linear maps on the state space.
-> - Same definition in 556: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|556 Def. §2.1]].
+> - Same definition in 556: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|556 Def. §3.1]].
 > - Forgetting scalars, a linear map is a homomorphism of additive groups: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
 > - Computational version: [[§9 Introduction to Linear Transformations#^def-9-4|235 Def. §9.4]] (for ℝⁿ → ℝᵐ) and [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-4|235 Def. §30.4]] (between vector spaces).
 > - ODE example: the differential operator $L[y] = y'' + py' + qy$, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-1|331 Def. §18.1]], and the left side of any linear differential equation, [[§3 Classification of Differential Equations#^def-3-4|331 Def. §3.4]].
@@ -91,7 +91,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Its dimension: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]. Matrices respect the operations: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]].
-> - Group analogue: the pointwise product on homomorphisms, [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|493 Def. §18.3]], which gives a homomorphism again only when the target is abelian, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|493 Prop. §18.2]].
+> - Group analogue: the pointwise product on homomorphisms, [[§18 Conjugation, Products, and Pointwise Products#^def-18-5|493 Def. §18.5]], which gives a homomorphism again only when the target is abelian, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|493 Prop. §18.2]].
 
 > [!definition] Definition 3.7: Product of linear maps
 > If $T\in\Lin(U,V)$ and $S\in\Lin(V,W)$, the *product* $ST\in\Lin(U,W)$ is $(ST)(u)=S(Tu)$.
@@ -121,7 +121,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Commutation relations such as $DT-TD=I$ are the prototype of $[\hat{p},\hat{x}]$ in quantum mechanics; in finite dimensions $ST-TS=I$ is impossible ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-57|Identity operator is not the difference of ST and TS]]).
 > - Commuting operators: [[§18 Commuting Operators#^ladr-5-71|Commute]].
-> - Matrix version: [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|235 Thm. §13.1]] (associative and distributive laws, identity); noncommutativity in [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^rem-13-2|235 Remark §11.2]].
+> - Matrix version: [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|235 Thm. §13.1]] (associative and distributive laws, identity); noncommutativity in [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^rem-13-1|235 Remark §11.2]].
 
 > [!example] Example 3.9: Two noncommuting linear maps from P(R) to P(R) (p. 56)
 > With $D$ = differentiation and $T$ = multiplication by $x^2$ on $\Poly(\R)$:

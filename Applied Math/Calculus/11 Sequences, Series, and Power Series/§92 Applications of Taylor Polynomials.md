@@ -23,7 +23,7 @@ $$
 
 is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can be used as an approximation: $f(x) \approx T_n(x)$. The first-degree polynomial $T_1(x) = f(a) + f'(a)(x - a)$ is the linearization of $f$ at $a$ ([[§26 Linear Approximations and Differentials#^def-26-1|Definition §26.1]]); $T_1$ and its derivative have the same values at $a$ as $f$ and $f'$. In general:
 
-> [!theorem] Proposition §108.1: Taylor Polynomials Match Derivatives
+> [!theorem] Proposition §92.1: Taylor Polynomials Match Derivatives
 > The derivatives of $T_n$ at $a$ agree with those of $f$ up to and including the derivatives of order $n$:
 >
 > $$
@@ -75,7 +75,7 @@ is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can 
 
 ^rem-92-2
 
-> [!example] Example §108.1: A Cube Root by Taylor's Inequality
+> [!example] Example §92.1: A Cube Root by Taylor's Inequality
 > **(a)** Approximate $f(x) = \sqrt[3]{x}$ by a Taylor polynomial of degree $2$ at $a = 8$. **(b)** How accurate is this approximation when $7 \le x \le 9$?
 >
 > **(a)**
@@ -121,7 +121,7 @@ is its $n$th partial sum, so $T_n(x) \to f(x)$ as $n \to \infty$, and $T_n$ can 
 
 ^ex-92-1
 
-> [!example] Example §108.2: Sine by an Alternating Series
+> [!example] Example §92.2: Sine by an Alternating Series
 > **(a)** What is the maximum error possible in using the approximation
 >
 > $$
@@ -166,7 +166,7 @@ The point of expanding about $a$ is to have $x$ close to $a$. To approximate $\s
 
 A physicist often simplifies a function by keeping only the first two or three terms of its Taylor series, that is, by replacing it with a Taylor polynomial, and uses Taylor's Inequality to gauge the accuracy.
 
-> [!example] Example §108.3: Relativistic and Newtonian Kinetic Energy
+> [!example] Example §92.3: Relativistic and Newtonian Kinetic Energy
 > In Einstein's special relativity the mass of an object moving with velocity $v$ is
 >
 > $$

@@ -13,7 +13,7 @@ tags: [topology, math590]
 
 ^rem-24-1
 
-> [!theorem] Theorem §31.1: Every Metrizable Space is Normal
+> [!theorem] Theorem §24.1: Every Metrizable Space is Normal
 > Every [[§12 Metric Topology#^def-12-4|metrizable]] space is [[§23 Separation Axioms#^def-23-3|normal]].
 
 ^thm-24-1
@@ -67,7 +67,7 @@ tags: [topology, math590]
 
 ^rem-24-2
 
-> [!theorem] Theorem §31.2: Every Compact Hausdorff Space is Normal
+> [!theorem] Theorem §24.2: Every Compact Hausdorff Space is Normal
 > Every [[§18 Compact Spaces#^def-18-2|compact]] [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]] space is [[§23 Separation Axioms#^def-23-3|normal]].
 
 ^thm-24-2

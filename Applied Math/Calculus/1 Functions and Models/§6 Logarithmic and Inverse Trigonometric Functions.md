@@ -15,7 +15,7 @@ If $b > 0$ and $b \ne 1$, the exponential function $f(x) = b^x$ is either increa
 
 ## Logarithmic Functions
 
-> [!definition] Definition §7.1: Logarithmic Function with Base b
+> [!definition] Definition §6.1: Logarithmic Function with Base b
 > Let $b > 0$, $b \ne 1$. The inverse of the exponential function $f(x) = b^x$ is the **logarithmic function with base $b$**, denoted $\log_b$. By the form (3) of [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]],
 >
 > $$
@@ -91,7 +91,7 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 > [!remark]- Connections
 > - Complex-variables version: [[§34 Some Identities Involving Logarithms#^thm-34-1|342 Thm. §34.1]] (Law 1 for the multiple-valued $\log z$, which holds as an equality of sets of values).
 
-> [!example] Example §7.1: Expanding and Combining Logarithms
+> [!example] Example §6.1: Expanding and Combining Logarithms
 > **(a)** Evaluate $\log_2 80 - \log_2 5$. By Law 2,
 >
 > $$
@@ -120,7 +120,7 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 
 The most convenient base for calculus is the number $e$ of [[§4 Exponential Functions#^def-4-4|Definition §4.4]], as Chapter 3 will show.
 
-> [!definition] Definition §7.2: Natural Logarithm
+> [!definition] Definition §6.2: Natural Logarithm
 > The logarithm with base $e$ is called the **natural logarithm** and has a special notation:
 >
 > $$
@@ -136,8 +136,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 > [!remark]- Remark: Notation for Logarithms
 > Most calculus and science textbooks, and calculators, write $\ln x$ for the natural logarithm and $\log x$ for the "common logarithm" $\log_{10} x$. In more advanced mathematical and scientific literature and in computer languages, $\log x$ usually denotes the natural logarithm (the analysis notes, 451, write $\log$ this way).
 
-^rem-6-3
-
+^rem-6-1
 > [!theorem] Corollary §6.3: Defining Properties of the Natural Logarithm
 > $$
 > \ln x = y \quad\Longleftrightarrow\quad e^y = x , \qquad (8)
@@ -221,7 +220,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 
 *The same formula from the integral definition of $\ln$ in Appendix G: [[§145 General Exponential and Logarithmic Functions#^thm-145-4|Theorem §145.4]].*
 
-> [!example] Example §7.2: Solving Equations with ln
+> [!example] Example §6.2: Solving Equations with ln
 > **(a)** Find $x$ if $\ln x = 5$.
 >
 > *From (8):* $\ln x = 5$ means $e^5 = x$. (If the notation is confusing, write $\log_e x = 5$; by the definition of logarithm, $e^5 = x$.)
@@ -265,7 +264,7 @@ The graphs of other logarithmic functions follow by the transformations of [[§3
 
 The trigonometric functions are not one-to-one (they are periodic), so they have no inverse functions. The difficulty is overcome by restricting their domains to intervals on which they are one-to-one and still take all their values.
 
-> [!definition] Definition §7.3: Inverse Sine
+> [!definition] Definition §6.3: Inverse Sine
 > The sine function restricted to $[-\pi/2, \pi/2]$ is one-to-one and takes every value in $[-1, 1]$. Its inverse is the **inverse sine function** or **arcsine function**, denoted $\sin^{-1}$ or $\arcsin$:
 >
 > $$
@@ -351,7 +350,7 @@ The remaining inverse trigonometric functions are used less often.
 
 ^def-6-6
 
-> [!example] Example §7.3: Evaluating and Simplifying Inverse Trigonometric Expressions
+> [!example] Example §6.3: Evaluating and Simplifying Inverse Trigonometric Expressions
 > **(a)** $\sin^{-1}\big(\frac12\big) = \dfrac{\pi}{6}$, because $\sin(\pi/6) = \frac12$ and $\pi/6$ lies between $-\pi/2$ and $\pi/2$. (Also $\sin(5\pi/6) = \frac12$, but $5\pi/6$ is outside the range of $\sin^{-1}$.)
 >
 > **(b)** Evaluate $\tan\big(\arcsin\frac13\big)$. Let $\theta = \arcsin\frac13$, so $\sin\theta = \frac13$ and $-\pi/2 \le \theta \le \pi/2$; since $\sin\theta > 0$, in fact $0 < \theta < \pi/2$. In a right triangle with angle $\theta$, opposite side $1$ and hypotenuse $3$, the Pythagorean Theorem gives the adjacent side $\sqrt{9 - 1} = 2\sqrt2$. So

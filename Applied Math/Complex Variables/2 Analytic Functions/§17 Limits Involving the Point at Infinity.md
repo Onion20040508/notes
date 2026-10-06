@@ -22,14 +22,14 @@ Adding a single point $\infty$ to the complex plane makes statements such as "$1
 
 ^def-17-1
 
-> [!definition] Definition §17.3: Riemann Sphere
+> [!definition] Definition §17.2: Riemann Sphere
 > To visualize the extended complex plane, think of the complex plane as passing through the equator of a unit sphere centered at the origin. To each point $z$ of the plane there corresponds exactly one point $P$ on the sphere: the point where the line through $z$ and the north pole $N$ meets the sphere. In like manner, to each point $P$ of the sphere other than $N$ there corresponds exactly one point $z$ of the plane. Letting $N$ correspond to the point at infinity gives a one to one correspondence between the points of the sphere and the points of the extended complex plane. The sphere is the **Riemann sphere**, and the correspondence is **stereographic projection**.
 >
 > *B&C: Sec. 17 (text)*
 
 ^def-17-2
 
-> [!definition] Definition §17.4: Neighborhood of Infinity
+> [!definition] Definition §17.3: Neighborhood of Infinity
 > For each small positive number $\varepsilon$, the set $|z| > 1/\varepsilon$ is a **neighborhood of $\infty$**.
 >
 > Hereafter "a point $z$" means a point of the finite plane; when the point at infinity is to be considered, it is mentioned specifically.

@@ -24,8 +24,8 @@ tags: [linear-algebra, hub]
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|Proposition §32.1: GL_3(ℝ) Acting on ℝ³]]
 
 ## Used in (Differentiable Manifolds)
-- [[§20 Linear Algebra Toolkit#^prop-20-3|Proposition §20.3: The Double Dual]]
-- [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|Proposition §38.5: S³ Is SU(2)]]
+- [[§21 Linear Algebra Toolkit#^prop-21-3|Proposition §21.3: The Double Dual]]
+- [[§40 The Unit Quaternions and SU(2)#^prop-40-5|Proposition §40.5: S³ Is SU(2)]]
 
 ## Connections
 - The key step of [[Fundamental theorem of linear maps]], [[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]], [[§6 Dimension#^ladr-2-43|Dimension of a sum]], [[§6 Dimension#^ladr-2-38|Linearly independent list of the right length is a basis]].

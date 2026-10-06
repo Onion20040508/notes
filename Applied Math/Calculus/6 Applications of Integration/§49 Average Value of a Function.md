@@ -40,7 +40,7 @@ $$
 
 ^def-49-1
 
-> [!example] Example §56.1: An Average Value
+> [!example] Example §49.1: An Average Value
 > Find the average value of $f(x) = 1 + x^2$ on the interval $[-1, 2]$.
 >
 > With $a = -1$ and $b = 2$,
@@ -62,7 +62,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 
 ^rem-49-1
 
-> [!theorem] Theorem §56.1: The Mean Value Theorem for Integrals
+> [!theorem] Theorem §49.1: The Mean Value Theorem for Integrals
 > If $f$ is continuous on $[a, b]$, then there exists a number $c$ in $[a, b]$ such that
 >
 > $$
@@ -97,7 +97,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 > [!remark]- Connections
 > - Rigorous treatment: [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]] proves it with the [[§12 Continuity#^thm-12-10|Intermediate Value Theorem]] instead (the average lies between the minimum and maximum of $f$), [[§33 Properties of the Riemann Integral#^prop-33-11|451 Prop. §33.11]] shows that $c$ can be taken in $(a, b)$, and [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] is the weighted version.
 
-> [!example] Example §56.2: Where f Equals Its Average
+> [!example] Example §49.2: Where f Equals Its Average
 > $f(x) = 1 + x^2$ is continuous on $[-1, 2]$, so by [[§49 Average Value of a Function#^thm-49-1|Theorem §49.1]] there is a number $c$ in $[-1, 2]$ such that
 >
 > $$
@@ -113,7 +113,7 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 ![[m233-43-1.svg]]
 *Examples [[§49 Average Value of a Function#^ex-49-1|§49.1]] and [[§49 Average Value of a Function#^ex-49-2|§49.2]]. The rectangle over $[-1, 2]$ of height $f_{\rm avg} = 2$ has the same area, $6$, as the region under $y = 1 + x^2$: the part of the graph above the red line (blue, area $\frac43$) exactly fills the valley below it (orange, area $\frac43$). The graph meets the line at $c = -1$ and $c = 1$, both numbers given by the Mean Value Theorem for Integrals.*
 
-> [!example] Example §56.3: Average Velocity
+> [!example] Example §49.3: Average Velocity
 > Show that the average velocity of a car over a time interval $[t_1, t_2]$ is the same as the average of its velocities during the trip.
 >
 > If $s(t)$ is the displacement of the car at time $t$, its average velocity over the interval is by definition

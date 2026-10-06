@@ -15,7 +15,7 @@ Many quantities change at a rate proportional to their size: a population under 
 
 ## The Law of Natural Growth
 
-> [!definition] Definition §27.1: Law of Natural Growth and Decay
+> [!definition] Definition §24.1: Law of Natural Growth and Decay
 > If $y(t)$ is the value of a quantity at time $t$ and its rate of change with respect to $t$ is proportional to its size at every time, then
 >
 > $$
@@ -28,7 +28,7 @@ Many quantities change at a rate proportional to their size: a population under 
 
 ^def-24-1
 
-> [!theorem] Theorem §27.1: Solutions of dy/dt = ky
+> [!theorem] Theorem §24.1: Solutions of dy/dt = ky
 > The only solutions of the differential equation $dy/dt = ky$ are the exponential functions
 >
 > $$
@@ -68,7 +68,7 @@ Many quantities change at a rate proportional to their size: a population under 
 
 ## Population Growth
 
-> [!definition] Definition §27.2: Relative Growth Rate
+> [!definition] Definition §24.2: Relative Growth Rate
 > If $P(t)$ is the size of a population at time $t$, the **relative growth rate** is the growth rate divided by the population size:
 >
 > $$
@@ -91,7 +91,7 @@ By [[§24 Exponential Growth and Decay#^thm-24-1|Theorem §24.1]], a population 
 
 ^rem-24-1
 
-> [!example] Example §27.1: World Population
+> [!example] Example §24.1: World Population
 > The world population was $2560$ million in 1950 and $3040$ million in 1960. Model the population in the second half of the 20th century, assuming that the growth rate is proportional to the population size. What is the relative growth rate? Estimate the population in 1993 and predict it for 2025.
 >
 > Let $t$ be the time in years with $t = 0$ in 1950, and $P(t)$ the population in millions. Then $P(0) = 2560$ and $P(10) = 3040$. Since $dP/dt = kP$, [[§24 Exponential Growth and Decay#^thm-24-1|Theorem §24.1]] gives
@@ -129,7 +129,7 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 
 ^def-24-3
 
-> [!example] Example §27.2: Radium-226
+> [!example] Example §24.2: Radium-226
 > The half-life of radium-226 is $1590$ years. (a) A sample has mass $100$ mg. Find a formula for the mass remaining after $t$ years. (b) Find the mass remaining after $1000$ years, to the nearest milligram. (c) When will the mass be reduced to $30$ mg?
 >
 > **(a)** Let $m(t)$ be the mass in mg after $t$ years. Then $dm/dt = km$ and $m(0) = 100$, so $m(t) = 100e^{kt}$ by [[§24 Exponential Growth and Decay#^thm-24-1|Theorem §24.1]]. Use $m(1590) = \frac12 (100)$:
@@ -169,7 +169,7 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 
 ^def-24-4
 
-> [!theorem] Corollary §27.2: Solution of Newton's Law of Cooling
+> [!theorem] Corollary §24.2: Solution of Newton's Law of Cooling
 > The solutions of $\dfrac{dT}{dt} = k(T - T_s)$ are
 >
 > $$
@@ -190,7 +190,7 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 > [!remark]- Connections
 > - ODE version: [[§7 Modeling with First-Order Differential Equations#^ex-7-5|331 Ex. §7.5]] (Newton's law of cooling as the case $a = -k$, $b = -kT_m$ of $y' = ay - b$, with two worked problems).
 
-> [!example] Example §27.3: Cooling Iced Tea
+> [!example] Example §24.3: Cooling Iced Tea
 > A bottle of iced tea at room temperature ($72^\circ$F) is placed in a refrigerator where the temperature is $44^\circ$F. After half an hour the tea has cooled to $61^\circ$F. (a) What is its temperature after another half hour? (b) How long does it take to cool to $50^\circ$F?
 >
 > **(a)** Let $T(t)$ be the temperature after $t$ minutes. With $T_s = 44$, Newton's Law of Cooling says $dT/dt = k(T - 44)$. Let $y = T - 44$. Then $y(0) = 72 - 44 = 28$ and $dy/dt = ky$, so $y(t) = 28e^{kt}$. From $T(30) = 61$, $y(30) = 17$:
@@ -229,7 +229,7 @@ $$
 
 Letting $n \to \infty$ means compounding the interest **continuously**.
 
-> [!theorem] Corollary §27.3: Continuous Compounding
+> [!theorem] Corollary §24.3: Continuous Compounding
 > With continuous compounding of interest at rate $r$, an amount $A_0$ is worth
 >
 > $$

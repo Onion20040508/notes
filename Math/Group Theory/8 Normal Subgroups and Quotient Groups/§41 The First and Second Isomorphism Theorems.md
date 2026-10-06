@@ -139,7 +139,7 @@ tags: [group-theory, math493]
 
 ^ex-41-2
 
-> [!theorem] Theorem §41.4: Second Isomorphism Theorem
+> [!theorem] Theorem §41.5: Second Isomorphism Theorem
 > Let $G$ be a group, $N \trianglelefteq G$, $H \leq G$, and $\pi: G \to G/N$ the [[§40 Quotient Groups#^def-40-1|projection]]. Then $H \cap N \trianglelefteq H$, $N \trianglelefteq HN$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), $\pi(H) = \pi(HN)$, and
 >
 > $$ H/(H \cap N) \;\cong\; \pi(H) \;=\; \pi(HN) \;\cong\; HN/N. $$
@@ -148,36 +148,36 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/2, 10/5; WS 8.2*
 
-^thm-41-4
+^thm-41-5
 
 > [!proof]+ Proof
 > *$\pi(H) = \pi(HN)$.* For $h \in H$, $\pi(h) = \pi(he) \in \pi(HN)$. For $hn \in HN$, $\pi(hn) = \pi(h)\pi(n) = \pi(h) \in \pi(H)$, since $n \in N = \operatorname{Ker}\pi$ ([[§40 Quotient Groups#^prop-40-2|§40.2]]).
 >
 > *Two applications of the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]]* (§41). Restrict $\pi$ to $H$: the kernel is $\{h \in H : hN = N\} = H \cap N$, so $H \cap N$ is normal in $H$ ([[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]]) and $H/(H \cap N) \cong \pi(H)$. Restrict $\pi$ to $HN$: the kernel is $HN \cap N = N$, since $N \subseteq HN$ ([[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), so $N \trianglelefteq HN$ and $HN/N \cong \pi(HN)$. Combining with $\pi(H) = \pi(HN)$ gives the chain.
 
-^pf-41-4
+^pf-41-5
 
 *Uses:* [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 ![[m493-38-3.svg]]
 *The “diamond” picture of the Second Isomorphism Theorem: lines denote inclusion, and the two marked quotients on opposite sides agree, $HN/N \cong H/(H \cap N)$.*
 
-> [!theorem] Lemma §41.5: Restricting a Homomorphism
+> [!theorem] Lemma §41.4: Restricting a Homomorphism
 > Let $f: X \to Y$ be a [[§15 Homomorphisms#^def-15-1|homomorphism]] and $X' \leq X$ a subgroup. Then the restriction $f|_{X'}: X' \to Y$ is a homomorphism with $\operatorname{Ker}(f|_{X'}) = \operatorname{Ker}(f) \cap X'$.
 >
 > *Source: lecture 10/5*
 
-^lem-41-5
+^lem-41-4
 
 > [!proof]+ Proof
 > The restriction preserves products because $f$ does. For $x \in X'$, $f|_{X'}(x) = e_Y$ iff $f(x) = e_Y$ iff $x \in \operatorname{Ker} f$; so the kernel is $\operatorname{Ker} f \cap X'$.
 
-^pf-41-5
+^pf-41-4
 
 *Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]]
 
 > [!remark] Remark: The Second Isomorphism Theorem Revisited
-> The lemma is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-4|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
+> The lemma is exactly what the proof of the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] uses: with $\pi: G \to G/N$, the restriction to $SN$ has kernel $N \cap SN = N$, the restriction to $S$ has kernel $N \cap S$, and both have the same image $\pi(SN) = \pi(S)$. So
 >
 > $$ SN/N \;\cong\; \pi(SN) \;=\; \pi(S) \;\cong\; S/(S \cap N), $$
 >
@@ -219,11 +219,11 @@ tags: [group-theory, math493]
 ^cor-41-7
 
 > [!proof]+ Proof
-> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §40.4). The [[§41 The First and Second Isomorphism Theorems#^thm-41-4|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §40.4). The [[§41 The First and Second Isomorphism Theorems#^thm-41-5|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 
 ^pf-41-7
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-4|§41.4]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§40 Quotient Groups#^prop-40-4|§40.4]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§40 Quotient Groups#^prop-40-4|§40.4]]
 
 > [!remark]- Connections
 > - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]] (§40.4).
@@ -238,8 +238,8 @@ tags: [group-theory, math493]
 ^cor-41-8
 
 > [!proof]+ Proof
-> By the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-4|Theorem §41.4]]), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare [[§29 The Index and Lagrange's Theorem#^prop-29-9|Proposition §29.9]] and [[§29 The Index and Lagrange's Theorem#^ex-29-2|Example §29.2]] (PS 5.1), where $H$ is not normal and divisibility fails.)
+> By the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5]]), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare [[§29 The Index and Lagrange's Theorem#^prop-29-9|Proposition §29.9]] and [[§29 The Index and Lagrange's Theorem#^ex-29-2|Example §29.2]] (PS 5.1), where $H$ is not normal and divisibility fails.)
 
 ^pf-41-8
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-4|§41.4]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]

@@ -15,7 +15,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 
 ## Linear Independence
 
-> [!definition] Definition §9.2: Linearly Independent, Linearly Dependent, Linear Dependence Relation
+> [!definition] Definition §8.1: Linearly Independent, Linearly Dependent, Linear Dependence Relation
 > An indexed set of vectors $\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ in $\mathbb{R}^n$ is **linearly independent** if the vector equation
 >
 > $$
@@ -38,7 +38,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 > - Rigorous treatment: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]] and [[§4 Span and Linear Independence#^ladr-2-17|LADR 2.17]], for lists in any vector space (the empty list counts as independent). Axler notes the equivalent form: the list is independent iff each vector in its span has exactly one representation as a linear combination of it.
 > - See also: [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-2|331 Def. §35.2]] (the same definition, with real or complex weights) and, for vector functions on an interval, [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-3|331 Def. §35.3]], the notion used for solutions of $\mathbf{x}' = A\mathbf{x}$.
 
-> [!theorem] Proposition §9.1: Independence of Matrix Columns
+> [!theorem] Proposition §8.1: Independence of Matrix Columns
 > The columns of a matrix $A$ are linearly independent if and only if the equation $A\mathbf{x} = \mathbf{0}$ has *only* the trivial solution.
 >
 > *Lay: 1.7, boxed statement (3)*
@@ -54,7 +54,7 @@ The homogeneous equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{0
 
 By [[§6 Solution Sets of Linear Systems#^cor-6-1|Corollary §6.1]], the test is: row reduce $A$ (or $[\,A\ \ \mathbf{0}\,]$). The columns are independent if there is no free variable, that is, a pivot in every column, and dependent if there is a free variable. The order of the vectors does not matter.
 
-> [!example] Example §9.1: Dependent or Independent?
+> [!example] Example §8.1: Dependent or Independent?
 > **(a)** Let $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}$, $\mathbf{v}_3 = \begin{bmatrix} 2 \\ 1 \\ 0 \end{bmatrix}$. Is $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\}$ linearly independent? If not, find a linear dependence relation.
 >
 > Row reduce the augmented matrix of $x_1\mathbf{v}_1 + x_2\mathbf{v}_2 + x_3\mathbf{v}_3 = \mathbf{0}$ ($R_2 - 2R_1$, $R_3 - 3R_1$, then $R_3 - 2R_2$):
@@ -100,7 +100,7 @@ By [[§6 Solution Sets of Linear Systems#^cor-6-1|Corollary §6.1]], the test is
 
 ## Sets of One or Two Vectors
 
-> [!theorem] Proposition §9.2: Sets of One Vector
+> [!theorem] Proposition §8.2: Sets of One Vector
 > A set $\{\mathbf{v}\}$ containing only one vector is linearly independent if and only if $\mathbf{v} \ne \mathbf{0}$.
 >
 > *Lay: 1.7 (text)*
@@ -114,7 +114,7 @@ By [[§6 Solution Sets of Linear Systems#^cor-6-1|Corollary §6.1]], the test is
 
 *Uses:* [[§8 Linear Independence#^def-8-1|Def. §8.1]], [[§4 Vector Equations#^thm-4-2|§4.2]]
 
-> [!theorem] Proposition §9.3: Sets of Two Vectors
+> [!theorem] Proposition §8.3: Sets of Two Vectors
 > A set of two vectors $\{\mathbf{v}_1, \mathbf{v}_2\}$ is linearly dependent if at least one of the vectors is a multiple of the other. The set is linearly independent if and only if neither of the vectors is a multiple of the other. Geometrically: two vectors are linearly dependent if and only if they lie on the same line through the origin.
 >
 > *Lay: 1.7, boxed statement*
@@ -199,7 +199,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 
 *Uses:* [[§4 Vector Equations#^def-4-4|Def. §4.4]], [[§4 Vector Equations#^thm-4-2|§4.2]]
 
-> [!example] Example §9.2: Removing Redundant Vectors
+> [!example] Example §8.2: Removing Redundant Vectors
 > Let $\mathbf{v}_1 = \begin{bmatrix} 1 \\ -4 \\ -3 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 3 \\ 2 \\ -2 \end{bmatrix}$, $\mathbf{v}_3 = \begin{bmatrix} 4 \\ -6 \\ -7 \end{bmatrix}$, whose span is the plane $x - \tfrac{y}{2} + z = 0$ ([[§5 The Matrix Equation Ax = b#^ex-5-2|Example §5.2]]). Show that they are linearly dependent and simplify the description of the span.
 >
 > Row reduce $A = [\,\mathbf{v}_1\ \mathbf{v}_2\ \mathbf{v}_3\,]$ ($R_2 + 4R_1$, $R_3 + 3R_1$, $R_3 - \tfrac12 R_2$; then $\tfrac1{14}R_2$ and $R_1 - 3R_2$):
@@ -234,7 +234,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 
 ^ex-8-2
 
-> [!example] Example §9.3: Two Vectors, and a Third in Their Plane
+> [!example] Example §8.3: Two Vectors, and a Third in Their Plane
 > **(a)** $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: $\mathbf{v}_2 = 2\mathbf{v}_1$, so $-2\mathbf{v}_1 + \mathbf{v}_2 = \mathbf{0}$ and the set is dependent. $\mathbf{v}_1 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 6 \\ 2 \end{bmatrix}$: neither is a multiple of the other ($6/3 \ne 2/2$), so the set is independent ([[§8 Linear Independence#^prop-8-3|Proposition §8.3]]).
 >
 > **(b)** Let $\mathbf{u} = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 1 \\ 6 \\ 0 \end{bmatrix}$. Describe $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$, and explain why $\mathbf{w}$ is in $\operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$ if and only if $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is linearly dependent.
@@ -283,7 +283,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 
 *Uses:* [[§8 Linear Independence#^def-8-1|Def. §8.1]]
 
-> [!example] Example §9.4: Deciding by Inspection
+> [!example] Example §8.4: Deciding by Inspection
 > **(a)** $\begin{bmatrix} 2 \\ 1 \end{bmatrix}, \begin{bmatrix} 4 \\ -1 \end{bmatrix}, \begin{bmatrix} -2 \\ 2 \end{bmatrix}$ are dependent by [[§8 Linear Independence#^thm-8-6|Theorem §8.6]] (three vectors with two entries each), although none of them is a multiple of another.
 >
 > **(b)** $\begin{bmatrix} 1 \\ 7 \\ 6 \end{bmatrix}, \begin{bmatrix} 2 \\ 0 \\ 9 \end{bmatrix}, \begin{bmatrix} 3 \\ 1 \\ 5 \end{bmatrix}, \begin{bmatrix} 4 \\ 1 \\ 8 \end{bmatrix}$: four vectors in $\mathbb{R}^3$, dependent by [[§8 Linear Independence#^thm-8-6|Theorem §8.6]].
@@ -296,7 +296,7 @@ So for two vectors no row operations are needed: check by inspection whether one
 
 ^ex-8-4
 
-> [!example] Example §9.5: Dependence Depending on a Parameter
+> [!example] Example §8.5: Dependence Depending on a Parameter
 > For which $h$ are $\mathbf{v}_1 = \begin{bmatrix} 1 \\ -1 \\ 4 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 3 \\ -5 \\ 7 \end{bmatrix}$, $\mathbf{v}_3 = \begin{bmatrix} -1 \\ 5 \\ h \end{bmatrix}$ linearly dependent?
 >
 > Row reduce ($R_2 + R_1$, $R_3 - 4R_1$; then $-\tfrac12 R_2$; then $R_3 + 5R_2$):

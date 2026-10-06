@@ -15,7 +15,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ## Parametric Equations
 
-> [!definition] Definition §85.1: Parametric Equations and Parametric Curve
+> [!definition] Definition §73.1: Parametric Equations and Parametric Curve
 > Suppose that $x$ and $y$ are both given as functions of a third variable $t$, called a **parameter**, by the equations
 >
 > $$
@@ -30,7 +30,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^def-73-1
 
-> [!definition] Definition §85.2: Initial and Terminal Point
+> [!definition] Definition §73.2: Initial and Terminal Point
 > If $t$ is restricted to an interval, the curve
 >
 > $$
@@ -53,7 +53,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^rem-73-1
 
-> [!example] Example §85.1: A Parabola Traced from Bottom to Top
+> [!example] Example §73.1: A Parabola Traced from Bottom to Top
 > Sketch and identify the curve $x = t^2 - 2t$, $y = t + 1$.
 >
 > **Plotting points.**
@@ -79,7 +79,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-73-1
 
-> [!example] Example §85.2: The Unit Circle, Traced Two Ways
+> [!example] Example §73.2: The Unit Circle, Traced Two Ways
 > **(a)** $x = \cos t$, $y = \sin t$, $0 \le t \le 2\pi$. For every $t$,
 >
 > $$
@@ -94,7 +94,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-73-2
 
-> [!definition] Definition §85.3: Curve versus Parametric Curve
+> [!definition] Definition §73.3: Curve versus Parametric Curve
 > A **curve** is a set of points. A **parametric curve** is a curve together with a particular way of tracing out its points: different parametric equations can represent the same curve, as in [[§73 Curves Defined by Parametric Equations#^ex-73-2|Example §73.2]].
 >
 > *Stewart: 10.1, Note*
@@ -102,9 +102,9 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 ^def-73-3
 
 > [!remark]- Connections
-> - With $f$ and $g$ continuous on $[a, b]$, a parametric curve is a path in the sense of topology, a continuous map $[a, b] \to \mathbb{R}^2$ ([[§16 Connected Subspaces of ℝ#^def-16-3|590 Def. §16.3]]); the curve is its image. Smooth curves on manifolds: [[§29 Tangent Vectors as Velocities of Curves#^def-29-1|591 Def. §29.1]].
+> - With $f$ and $g$ continuous on $[a, b]$, a parametric curve is a path in the sense of topology, a continuous map $[a, b] \to \mathbb{R}^2$ ([[§16 Connected Subspaces of ℝ#^def-16-3|590 Def. §16.3]]); the curve is its image. Smooth curves on manifolds: [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|591 Def. §31.2]].
 
-> [!theorem] Proposition §85.1: Parametric Equations of a Circle
+> [!theorem] Proposition §73.1: Parametric Equations of a Circle
 > The circle with center $(h, k)$ and radius $r$ is traced once counterclockwise, starting from $(h + r, k)$, by
 >
 > $$
@@ -128,7 +128,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 *Uses:* [[§73 Curves Defined by Parametric Equations#^ex-73-2|Ex. §73.2]], [[§141 Graphs of Second-Degree Equations#^thm-141-1|§141.1]] (equation of a circle), [[§142 Trigonometry#^def-142-4|Def. §142.4]] (the point at angle $t$ on the unit circle)
 
-> [!example] Example §85.3: One Curve, Four Motions
+> [!example] Example §73.3: One Curve, Four Motions
 > Each pair gives the position of a particle at time $t$:
 >
 > $$
@@ -145,7 +145,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-73-3
 
-> [!example] Example §85.4: Back and Forth on a Parabola
+> [!example] Example §73.4: Back and Forth on a Parabola
 > Sketch the curve $x = \sin t$, $y = \sin^2 t$.
 >
 > Since $y = (\sin t)^2 = x^2$, the point moves on the parabola $y = x^2$. But $-1 \le \sin t \le 1$, so only the part with $-1 \le x \le 1$ is traced. As $t$ increases, $x = \sin t$ oscillates between $-1$ and $1$, so the point moves back and forth infinitely often along the arc of the parabola from $(-1, 1)$ to $(1, 1)$: from $(0, 0)$ to $(1, 1)$ for $0 \le t \le \pi/2$, back through $(0, 0)$ to $(-1, 1)$ for $\pi/2 \le t \le 3\pi/2$, and back to $(0, 0)$ for $3\pi/2 \le t \le 2\pi$.
@@ -154,7 +154,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-73-4
 
-> [!example] Example §85.5: A Lissajous Figure
+> [!example] Example §73.5: A Lissajous Figure
 > Sketch the curve $x = \cos t$, $y = \sin 2t$.
 >
 > Eliminating the parameter is possible but not very helpful: $y^2 = \sin^2 2t = 4\sin^2 t \cos^2 t = 4(1 - x^2)x^2$, that is, $y^2 = 4x^2 - 4x^4$. Instead, read the curve off the graphs of $x = \cos t$ and $y = \sin 2t$ as functions of $t$, one quarter-period at a time.
@@ -181,14 +181,14 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ## The Cycloid
 
-> [!definition] Definition §85.4: Cycloid
+> [!definition] Definition §73.4: Cycloid
 > The **cycloid** is the curve traced out by a point $P$ on the circumference of a circle as the circle rolls along a straight line (like a pebble stuck in a car tire).
 >
 > *Stewart: Example 10.1.9*
 
 ^def-73-4
 
-> [!theorem] Proposition §85.2: Parametric Equations of the Cycloid
+> [!theorem] Proposition §73.2: Parametric Equations of the Cycloid
 > If the circle has radius $r$, rolls along the $x$-axis, and $P$ is at the origin in one of its positions, then the cycloid has parametric equations
 >
 > $$

@@ -73,7 +73,7 @@ If a function has a power series representation at $a$, its coefficients are for
 
 Substituting this formula for $c_n$ back into the series: *if* $f$ has a power series expansion at $a$, then it must be of the following form.
 
-> [!definition] Definition §106.1: Taylor Series; Maclaurin Series
+> [!definition] Definition §90.1: Taylor Series; Maclaurin Series
 > The **Taylor series of the function $f$ at $a$** (or **about $a$**, or **centered at $a$**) is
 >
 > $$
@@ -118,7 +118,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 
 ^rem-90-1
 
-> [!example] Example §106.1: Maclaurin Series from the Definition
+> [!example] Example §90.1: Maclaurin Series from the Definition
 > **(a)** $f(x) = 1/(1 - x)$ has the power series representation $\sum_{n=0}^{\infty} x^n$ for $|x| < 1$ ([[§89 Representations of Functions as Power Series#^def-89-1|Definition §89.1]]). By [[§90 Taylor and Maclaurin Series#^thm-90-1|Theorem §90.1]] this must be its Maclaurin series. To confirm:
 >
 > $$
@@ -151,7 +151,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 
 By [[§90 Taylor and Maclaurin Series#^thm-90-1|Theorem §90.1]] and [[§90 Taylor and Maclaurin Series#^ex-90-1|Example §90.1]](b), *if* $e^x$ has a power series representation at $0$, it is $\sum x^n/n!$. Whether it *does* is the general question: when is a function with derivatives of all orders equal to the sum of its Taylor series?
 
-> [!definition] Definition §106.2: Taylor Polynomial
+> [!definition] Definition §90.2: Taylor Polynomial
 > The **$n$th-degree Taylor polynomial of $f$ at $a$** is the $n$th partial sum of the Taylor series,
 >
 > $$
@@ -164,7 +164,7 @@ By [[§90 Taylor and Maclaurin Series#^thm-90-1|Theorem §90.1]] and [[§90 Tayl
 
 ^def-90-2
 
-> [!definition] Definition §106.3: Remainder of the Taylor Series
+> [!definition] Definition §90.3: Remainder of the Taylor Series
 > The **remainder** of the Taylor series is $R_n(x) = f(x) - T_n(x)$, so that $f(x) = T_n(x) + R_n(x)$.
 >
 > *Stewart: 11.10 (text)*
@@ -318,7 +318,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 *Uses:* [[§90 Taylor and Maclaurin Series#^thm-90-4|§90.4]], [[§90 Taylor and Maclaurin Series#^prop-90-5|§90.5]], [[§90 Taylor and Maclaurin Series#^thm-90-3|§90.3]], [[§80 Sequences#^thm-80-4|§80.4]], [[§80 Sequences#^thm-80-5|§80.5]], [[§90 Taylor and Maclaurin Series#^ex-90-1|Ex. §90.1]]
 
-> [!example] Example §106.2: Taylor Series Away from 0
+> [!example] Example §90.2: Taylor Series Away from 0
 > **(a)** Find the Taylor series for $f(x) = e^x$ at $a = 2$.
 >
 > $f^{(n)}(2) = e^2$, so by (6) the Taylor series is

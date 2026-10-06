@@ -15,7 +15,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 ## The Method
 
-> [!theorem] Proposition §39.1: The x-Intercept of the Tangent Line
+> [!theorem] Proposition §35.1: The x-Intercept of the Tangent Line
 > Let $f$ be differentiable at $x_1$ with $f'(x_1) \ne 0$. Then the tangent line to $y = f(x)$ at $(x_1, f(x_1))$ crosses the $x$-axis at
 >
 > $$
@@ -39,7 +39,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 *Uses:* [[§14 Derivatives and Rates of Change#^thm-14-2|§14.2]] (equation of the tangent line)
 
-> [!definition] Definition §39.1: Newton's Method
+> [!definition] Definition §35.1: Newton's Method
 > To approximate a solution $r$ of $f(x) = 0$, start with a first approximation $x_1$ (from a guess, a rough sketch, or a computer graph) and define
 >
 > $$
@@ -81,7 +81,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 ## Examples
 
-> [!example] Example §39.1: Newton's Own Example
+> [!example] Example §35.1: Newton's Own Example
 > Starting with $x_1 = 2$, find the third approximation $x_3$ to the root of $x^3 - 2x - 5 = 0$.
 >
 > With $f(x) = x^3 - 2x - 5$ and $f'(x) = 3x^2 - 2$, formula (2) becomes
@@ -108,7 +108,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 ^ex-35-1
 
-> [!example] Example §39.2: A Sixth Root
+> [!example] Example §35.2: A Sixth Root
 > Use Newton's method to find $\sqrt[6]{2}$ correct to eight decimal places.
 >
 > $\sqrt[6]{2}$ is the positive solution of $x^6 - 2 = 0$. With $f(x) = x^6 - 2$ and $f'(x) = 6x^5$, formula (2) becomes
@@ -129,7 +129,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 
 ^ex-35-2
 
-> [!example] Example §39.3: A Transcendental Equation
+> [!example] Example §35.3: A Transcendental Equation
 > Find, correct to six decimal places, the solution of the equation $\cos x = x$.
 >
 > In standard form, $\cos x - x = 0$. With $f(x) = \cos x - x$, $f'(x) = -\sin x - 1$, formula (2) becomes

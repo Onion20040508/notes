@@ -78,7 +78,7 @@ represents the velocity of the fluid at $(x, y)$; its components are $p(x, y)$ a
 
 ^def-124-2
 
-> [!definition] Definition §124.5: Incompressible Fluid
+> [!definition] Definition §124.3: Incompressible Fluid
 > A fluid is **incompressible** if its density does not change.
 >
 > *B&C: Sec. 124 (text)*

@@ -27,7 +27,7 @@ tags: [group-theory, hub]
 - [[§47 Commutators#^cor-47-7|Corollary §47.7: Every Square Root of e_A Gives a Character]]
 
 ## Used in (Differentiable Manifolds)
-- [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|Proposition §10.2: Properties of the Sign]]
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|Proposition §11.2: Properties of the Sign]]
 
 ## Connections
 - **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|§21.5]], [[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]), and the parity of a permutation is well defined ([[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]]). Transpositions are not commutators ([[§47 Commutators#^prop-47-3|§47.3]]), and [Sₙ, Sₙ] = Aₙ ([[§47 Commutators#^thm-47-5|§47.5]]), so every character of Sₙ factors through sgn. Aₙ itself has no nontrivial character for n ≥ 5 ([[§47 Commutators#^thm-47-10|§47.10]]).

@@ -59,7 +59,7 @@ $$
 $$
 the integral being independent of path.
 
-> [!theorem] Proposition §125.2: The Stream Function Measures the Flow Across a Curve
+> [!theorem] Proposition §125.1: The Stream Function Measures the Flow Across a Curve
 > With $p = \phi_x$, $q = \phi_y$ as in (2),
 >
 > $$
@@ -92,7 +92,7 @@ the integral being independent of path.
 > [!remark]- Connections
 > - The flux of a plane field across a curve as the line integral of its normal component, $\int_C \mathbf F\cdot\mathbf n\,ds = \int_C -q\,dx + p\,dy$ for $\mathbf F = (p, q)$, and its form for closed curves: [[§132 Curl and Divergence#^thm-132-5|Calc Thm. §132.5]] (Green's theorem, normal form). In the language of forms, $\psi$ is a primitive of the flux form $-q\,dx + p\,dy$, which is closed exactly when the flow is incompressible.
 
-> [!theorem] Proposition §125.1: Velocity from the Complex Potential
+> [!theorem] Proposition §125.2: Velocity from the Complex Potential
 > The velocity is tangent to the streamline through each point where it is not zero, and
 >
 > $$

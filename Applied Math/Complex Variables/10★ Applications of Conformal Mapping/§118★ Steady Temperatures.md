@@ -23,7 +23,7 @@ Chapter 10 uses conformal mapping to solve physical problems governed by Laplace
 
 ^def-118-1
 
-> [!definition] Definition §118.3: Fourier's Law
+> [!definition] Definition §118.2: Fourier's Law
 > The flux $\Phi$ ([[§118★ Steady Temperatures#^def-118-1|Definition §118.1]]) varies with the normal derivative of the temperature $T$ at the point:
 >
 > $$
@@ -83,7 +83,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 
 ## Isotherms and Lines of Flow
 
-> [!definition] Definition §118.4: Isotherms
+> [!definition] Definition §118.3: Isotherms
 > The surfaces $T(x, y) = c_1$, $c_1$ a real constant, are the **isotherms** within the solid. They can also be regarded as curves in the $xy$ plane: then $T(x, y)$ is the temperature at a point $(x, y)$ of a thin sheet of material in that plane whose faces are thermally insulated, and the isotherms are the level curves of $T$.
 >
 > *B&C: Sec. 118 (text)*

@@ -55,7 +55,7 @@ $$
 
 and the computed value is just the average of the function values. The other coefficients are approximated in the same way: $f(x)\cos(n\pi x/a)$ and $f(x)\sin(n\pi x/a)$ are again periodic, the end terms again combine, and $\frac1a\Delta x = \frac2r$. A caret over the coefficient name marks the approximations.
 
-> [!definition] Definition §22.3: Approximate Fourier Coefficients
+> [!definition] Definition §17.1: Approximate Fourier Coefficients
 > Let $f(x)$ be continuous, sectionally smooth and periodic with period $2a$, and let $x_k = -a + 2ak/r$. The **approximate Fourier coefficients** of $f$ are
 >
 > $$
@@ -89,7 +89,7 @@ and the computed value is just the average of the function values. The other coe
 > [!remark]- Connections
 > - The trapezoidal rule and its error bound $|E_T| \le K(b - a)^3/(12n^2)$: [[§57 Approximate Integration#^def-57-3|Calc Def. §57.3]], [[§57 Approximate Integration#^thm-57-1|Calc Thm. §57.1]]. For a smooth periodic integrand over a full period the actual error is far smaller than this general bound, which is why "one of the crudest numerical integration techniques is the best" here.
 
-> [!example] Example §22.1: Four Samples of x²
+> [!example] Example §17.1: Four Samples of x²
 > Let $f(x) = x^2$ on $-\pi < x < \pi$, extended with period $2\pi$ (continuous, with corners at $\pm\pi$). Compute the approximate coefficients with $r = 4$ and compare with the exact ones, $a_0 = \frac{\pi^2}{3}$, $a_n = \frac{4(-1)^n}{n^2}$, $b_n = 0$.
 >
 > **Data.** $a = \pi$, $x_k = -\pi + k\pi/2$: the points $x_1, x_2, x_3, x_4 = -\frac\pi2, 0, \frac\pi2, \pi$ with values $\frac{\pi^2}{4}, 0, \frac{\pi^2}{4}, \pi^2$.
@@ -123,7 +123,7 @@ and the computed value is just the average of the function values. The other coe
 
 When $f(x)$ is given on $0 \le x \le a$ and its cosine or sine coefficients are wanted, the trapezoidal rule is applied on $0 \le x \le a$ itself. Now the end values $f(0)$ and $f(a)$ are not equal in general, and the factors $\frac12$ stay.
 
-> [!definition] Definition §22.4: Approximate Half-Range Coefficients
+> [!definition] Definition §17.2: Approximate Half-Range Coefficients
 > Divide $0 \le x \le a$ into $s$ equal subintervals with endpoints $0 = x_0, x_1, \dots, x_s = a$, $x_i = ia/s$. The **approximate Fourier cosine coefficients** of $f$ (or of its even extension) are
 >
 > $$
@@ -148,7 +148,7 @@ When $f(x)$ is given on $0 \le x \le a$ and its cosine or sine coefficients are 
 
 ## Interpolation
 
-> [!theorem] Theorem §22.1: The Approximate Series Interpolates
+> [!theorem] Theorem §17.1: The Approximate Series Interpolates
 > Let $\hat a_0, \hat a_1, \hat b_1, \dots$ be the $r$ approximate coefficients calculated from (2)–(4) (with (3′) if $r$ is even), and let
 >
 > $$
@@ -171,7 +171,7 @@ When $f(x)$ is given on $0 \le x \le a$ and its cosine or sine coefficients are 
 
 Example §17.1 shows the theorem at work with $r = 4$. In the next example the half-range cosine version passes through all seven sample points as well (the cosine formulas (6) are (2)–(4) applied to the even extension, sampled at $r = 2s$ points).
 
-> [!example] Example §23.1: Approximate Coefficients of sin(x)/x
+> [!example] Example §17.2: Approximate Coefficients of sin(x)/x
 > Calculate the approximate Fourier coefficients of $f(x) = \sin(x)/x$ in $-\pi < x < \pi$ (with $f(0) = 1$).
 >
 > Since $f$ is even, it has a cosine series. The computation is simpler with the half-range formulas (6), taking $s$ even: $s = 6$, $x_0 = 0$, $x_1 = \frac\pi6$, …, $x_5 = \frac{5\pi}6$, $x_6 = \pi$. The numerical information:
@@ -215,7 +215,7 @@ Example §17.1 shows the theorem at work with $r = 4$. In the next example the h
 ![[m341-13-1.svg]]
 *Example §13.2: the error $f(x) - F(x)$ for $f(x) = \sin(x)/x$ and the cosine polynomial $F$ built from the seven approximate coefficients $\hat a_0, \dots, \hat a_6$. The error vanishes at the sample points $x_i = i\pi/6$ (red), as Theorem §17.1 predicts; between them it stays below $0.032$, growing toward $x = \pi$.*
 
-> [!example] Example §23.2: Removing a Jump First
+> [!example] Example §17.3: Removing a Jump First
 > Approximate the Fourier coefficients of $f(x) = x + x^2$, $-\pi < x < \pi$ (period $2\pi$), with $r = 8$, and compare with the naive use of (2)–(4).
 >
 > **Prepare** (Remark: Method — Removing Jumps Before Numerical Integration). There are no interior jumps ($f_1 = 0$). At the ends, $f(-\pi+) - f(\pi-) = (\pi^2 - \pi) - (\pi^2 + \pi) = -2\pi$, so $c = 2\pi/(2\pi) = 1$ and $f_2(x) = x$, with exact coefficients $b_n = \frac{2(-1)^{n+1}}{n}$, $a_n = 0$. The remainder $f_3 = x^2$ is continuous and periodic, with exact $a_0 = \frac{\pi^2}3$, $a_n = \frac{4(-1)^n}{n^2}$.

@@ -15,14 +15,14 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ## Arc Length
 
-> [!definition] Definition §119.1: Length of a Space Curve
+> [!definition] Definition §102.1: Length of a Space Curve
 > The **length** of a space curve is the limit of the lengths of inscribed polygonal paths, as the number of vertices increases and the distances between consecutive vertices go to $0$, exactly as for plane curves ([[§60 Arc Length#^def-60-1|Definition §60.1]], [[§74 Calculus with Parametric Curves#^thm-74-4|Theorem §74.4]]).
 >
 > *Stewart: 13.3 (text)*
 
 ^def-102-1
 
-> [!theorem] Theorem §119.1: Arc Length Formula
+> [!theorem] Theorem §102.1: Arc Length Formula
 > Suppose a curve has vector equation $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$, $a \le t \le b$, where $f'$, $g'$, $h'$ are continuous, and the curve is traversed exactly once as $t$ increases from $a$ to $b$. Then its length is
 >
 > $$
@@ -62,7 +62,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^rem-102-1
 
-> [!example] Example §119.1: Lengths of Helices and Other Curves
+> [!example] Example §102.1: Lengths of Helices and Other Curves
 > **(a)** Find the length of the arc of the circular helix $\mathbf{r}(t) = \cos t\,\mathbf{i} + \sin t\,\mathbf{j} + t\,\mathbf{k}$ from $(1, 0, 0)$ to $(1, 0, 2\pi)$.
 >
 > Since $\mathbf{r}'(t) = -\sin t\,\mathbf{i} + \cos t\,\mathbf{j} + \mathbf{k}$, we have $|\mathbf{r}'(t)| = \sqrt{\sin^2 t + \cos^2 t + 1} = \sqrt2$. The arc is described by $0 \le t \le 2\pi$, so by [[§102 Arc Length and Curvature#^thm-102-1|Theorem §102.1]]
@@ -84,7 +84,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^ex-102-1
 
-> [!example] Example §119.2: A Perfect Square Under the Root
+> [!example] Example §102.2: A Perfect Square Under the Root
 > A particle moves with position $\mathbf{r}(t) = \langle t^2, t\sqrt2, \tfrac12\ln t \rangle$, $t > 0$. Find the distance it travels from $t = 1$ to $t = e$.
 >
 > Here $\mathbf{r}'(t) = \big\langle 2t, \sqrt2, \frac{1}{2t} \big\rangle$, and the expression under the root is a perfect square:
@@ -148,7 +148,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 ^rem-102-3
 
-> [!example] Example §119.3: Reparametrizing by Arc Length
+> [!example] Example §102.3: Reparametrizing by Arc Length
 > **(a)** Reparametrize the helix $\mathbf{r}(t) = \cos t\,\mathbf{i} + \sin t\,\mathbf{j} + t\,\mathbf{k}$ with respect to arc length measured from $(1, 0, 0)$ in the direction of increasing $t$.
 >
 > The starting point corresponds to $t = 0$. From [[§102 Arc Length and Curvature#^ex-102-1|Example §102.1]], $ds/dt = |\mathbf{r}'(t)| = \sqrt2$, so $s = s(t) = \int_0^t \sqrt2\,du = \sqrt2\,t$. Therefore $t = s/\sqrt2$ and
@@ -297,7 +297,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 *Uses:* [[§102 Arc Length and Curvature#^thm-102-4|§102.4]], [[§96 The Cross Product#^prop-96-7|§96.7]]
 
-> [!example] Example §119.4: Curvature by the Three Formulas
+> [!example] Example §102.4: Curvature by the Three Formulas
 > **(a)** *Circle, by [[§102 Arc Length and Curvature#^prop-102-3|Proposition §102.3]].* The circle of radius $a$ about the origin is $\mathbf{r}(t) = a\cos t\,\mathbf{i} + a\sin t\,\mathbf{j}$. Then $\mathbf{r}'(t) = -a\sin t\,\mathbf{i} + a\cos t\,\mathbf{j}$, $|\mathbf{r}'(t)| = a$, $\mathbf{T}(t) = -\sin t\,\mathbf{i} + \cos t\,\mathbf{j}$ and $\mathbf{T}'(t) = -\cos t\,\mathbf{i} - \sin t\,\mathbf{j}$, so $|\mathbf{T}'(t)| = 1$ and $\kappa(t) = 1/a$. Small circles have large curvature and large circles small curvature, as they should.
 >
 > **(b)** *Twisted cubic, by [[§102 Arc Length and Curvature#^thm-102-4|Theorem §102.4]].* For $\mathbf{r}(t) = \langle t, t^2, t^3 \rangle$: $\mathbf{r}'(t) = \langle 1, 2t, 3t^2 \rangle$, $\mathbf{r}''(t) = \langle 0, 2, 6t \rangle$, $|\mathbf{r}'(t)| = \sqrt{1 + 4t^2 + 9t^4}$, and

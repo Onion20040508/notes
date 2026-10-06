@@ -15,7 +15,7 @@ Chapter 2 studies first-order equations $dy/dt = f(t, y)$. No single method solv
 
 ## First-Order Linear Equations
 
-> [!definition] Definition §6.1: First-Order Linear Equation
+> [!definition] Definition §5.1: First-Order Linear Equation
 > The equation $dy/dt = f(t, y)$ is a **first-order linear differential equation** if $f$ depends linearly on $y$. It is usually written in the **standard form**
 >
 > $$
@@ -39,7 +39,7 @@ Chapter 2 studies first-order equations $dy/dt = f(t, y)$. No single method solv
 
 Sometimes the left side of a linear equation is already the derivative of a product, and the equation can be integrated at once.
 
-> [!example] Example §6.1: An Exact Derivative
+> [!example] Example §5.1: An Exact Derivative
 > Solve $(4 + t^2)\,\dfrac{dy}{dt} + 2ty = 4t$.
 >
 > The left side is the combination of $dy/dt$ and $y$ that appears in the product rule:
@@ -60,7 +60,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 
 ^ex-5-1
 
-> [!definition] Definition §6.2: Integrating Factor
+> [!definition] Definition §5.2: Integrating Factor
 > An **integrating factor** for the linear equation (3) is a function $\mu(t)$ such that, after (3) is multiplied by $\mu(t)$, the left side
 >
 > $$
@@ -79,7 +79,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 
 ## Equations with a Constant Coefficient
 
-> [!theorem] Theorem §6.1: Integrating Factor for y′ + ay = g(t)
+> [!theorem] Theorem §5.1: Integrating Factor for y′ + ay = g(t)
 > Let $a$ be a constant and $g$ continuous on an interval $I$ containing $t_0$. Then $\mu(t) = e^{at}$ is an integrating factor for
 >
 > $$
@@ -115,7 +115,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 
 For many simple $g$ the integral in (24) can be evaluated, as in the next example. For complicated $g$ the solution is left in the integral form (24); the variable of integration is called $s$ to distinguish it from $t$.
 
-> [!example] Example §6.2: A Constant-Coefficient Initial Value Problem
+> [!example] Example §5.2: A Constant-Coefficient Initial Value Problem
 > Solve $\dfrac{dy}{dt} = -3y + 4t - 3$, $y(0) = 5$, and describe the behavior of the solutions as $t \to \infty$.
 >
 > **Standard form.** $y' + 3y = 4t - 3$, so $a = 3$ and $\mu(t) = e^{3t}$.
@@ -150,7 +150,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 ## The General Linear Equation
 
-> [!theorem] Theorem §6.2: Solution of a First-Order Linear Equation
+> [!theorem] Theorem §5.2: Solution of a First-Order Linear Equation
 > Let $p$ and $g$ be continuous on an open interval $I$ containing $t_0$. Then
 >
 > $$
@@ -204,7 +204,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 ^rem-5-1
 
-> [!example] Example §6.3: Coefficients with a Singularity
+> [!example] Example §5.3: Coefficients with a Singularity
 > **(a)** Solve the initial value problem $ty' + 2y = 4t^2$, $y(1) = 2$.
 >
 > **Standard form.** Divide by $t$: $y' + \dfrac2t\,y = 4t$, so $p(t) = 2/t$ and $g(t) = 4t$. Here $p$ has an infinite discontinuity at $t = 0$.
@@ -257,7 +257,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 ![[m331-4-1.svg]]
 *Integral curves $y = t^2 + c/t^2$ of $ty' + 2y = 4t^2$ (blue, $c = 2, 0.5, 0.2, -0.2, -0.5, -1$). The solution of the initial value problem $y(1) = 2$ (green, $c = 1$) lives on $t > 0$ only; the curve $t^2 + 1/t^2$ for $t < 0$ (pale green) belongs to the same formula but not to the solution. The critical solution $y = t^2$ (red, $c = 0$) separates the curves that blow up to $+\infty$ at $t = 0$ from those that go to $-\infty$, and is the only one that crosses $t = 0$.*
 
-> [!example] Example §6.4: Leaving the Integral Unevaluated
+> [!example] Example §5.4: Leaving the Integral Unevaluated
 > Solve the initial value problem $2y' + ty = 2$, $y(0) = 1$.
 >
 > **Standard form.** $y' + \dfrac t2\,y = 1$, so $p(t) = t/2$ and $\mu(t) = e^{t^2/4}$.
@@ -281,7 +281,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 ^ex-5-4
 
-> [!example] Example §6.5: A Second-Order Equation Reduced to a Linear One
+> [!example] Example §5.5: A Second-Order Equation Reduced to a Linear One
 > Find the solutions $y(t)$ of $y'' + \dfrac{y'}{t} = 3 + t$ by the substitution $v(t) = y'(t)$. (The solutions involve two unknown constants.)
 >
 > **Substitute.** With $v = y'$, $v' = y''$, and the equation becomes the first-order linear equation

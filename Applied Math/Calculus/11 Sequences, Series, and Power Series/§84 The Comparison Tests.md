@@ -20,7 +20,7 @@ A series with positive terms converges exactly when its partial sums are bounded
 
 ^rem-84-1
 
-> [!theorem] Theorem §98.1: The Direct Comparison Test
+> [!theorem] Theorem §84.1: The Direct Comparison Test
 > Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms.
 >
 > (i) If $\sum b_n$ is convergent and $a_n \le b_n$ for all $n$, then $\sum a_n$ is also convergent.
@@ -53,7 +53,7 @@ A series with positive terms converges exactly when its partial sums are bounded
 
 The test needs a known series $\sum b_n$ to compare with. Most of the time it is a $p$-series ($\sum 1/n^p$ converges if $p > 1$ and diverges if $p \le 1$, [[§83 The Integral Test and Estimates of Sums#^thm-83-2|Theorem §83.2]]) or a geometric series ($\sum a r^{n-1}$ converges if $|r| < 1$ and diverges if $|r| \ge 1$, [[§82 Series#^thm-82-1|Theorem §82.1]]).
 
-> [!example] Example §98.1: Comparing with a p-Series
+> [!example] Example §84.1: Comparing with a p-Series
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{5}{2n^2 + 4n + 3}$ converges or diverges.
 >
 > For large $n$ the dominant term in the denominator is $2n^2$, so compare with $\sum 5/(2n^2)$:
@@ -79,7 +79,7 @@ The test needs a known series $\sum b_n$ to compare with. Most of the time it is
 
 ^rem-84-2
 
-> [!example] Example §98.2: Comparing with the Harmonic Series
+> [!example] Example §84.2: Comparing with the Harmonic Series
 > Test $\displaystyle\sum_{k=1}^{\infty} \frac{\ln k}{k}$ for convergence or divergence.
 >
 > [[§83 The Integral Test and Estimates of Sums#^ex-83-3|Example §83.3]] settled this with the Integral Test; a comparison is quicker. Since $\ln k > 1$ for $k \ge 3$ (as $3 > e$),
@@ -98,7 +98,7 @@ The test needs a known series $\sum b_n$ to compare with. Most of the time it is
 
 The Direct Comparison Test is conclusive only if the terms are smaller than those of a convergent series or larger than those of a divergent series. For $\displaystyle\sum_{n=1}^{\infty} \frac{1}{2^n - 1}$ the obvious inequality $\dfrac{1}{2^n - 1} > \dfrac{1}{2^n}$ goes the wrong way, since $\sum (\frac12)^n$ is convergent. Still, the series ought to converge, because it is so similar to $\sum (\frac12)^n$.
 
-> [!theorem] Theorem §98.2: The Limit Comparison Test
+> [!theorem] Theorem §84.2: The Limit Comparison Test
 > Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms. If
 >
 > $$
@@ -135,7 +135,7 @@ The Direct Comparison Test is conclusive only if the terms are smaller than thos
 
 ^rem-84-3
 
-> [!example] Example §98.3: The Wrong-Way Inequality Repaired
+> [!example] Example §84.3: The Wrong-Way Inequality Repaired
 > Test $\displaystyle\sum_{n=1}^{\infty} \frac{1}{2^n - 1}$ for convergence or divergence.
 >
 > Use the Limit Comparison Test with $a_n = \dfrac{1}{2^n - 1}$ and $b_n = \dfrac{1}{2^n}$:
@@ -150,7 +150,7 @@ The Direct Comparison Test is conclusive only if the terms are smaller than thos
 
 ^ex-84-3
 
-> [!example] Example §98.4: Keeping the Dominant Powers
+> [!example] Example §84.4: Keeping the Dominant Powers
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{2n^2 + 3n}{\sqrt{5 + n^5}}$ converges or diverges.
 >
 > The dominant part of the numerator is $2n^2$ and of the denominator $\sqrt{n^5} = n^{5/2}$. So take
@@ -182,7 +182,7 @@ The Direct Comparison Test is conclusive only if the terms are smaller than thos
 
 ## Estimating Sums
 
-> [!theorem] Proposition §98.3: Comparing Remainders
+> [!theorem] Proposition §84.3: Comparing Remainders
 > Suppose $0 < a_n \le b_n$ for all $n$ and $\sum b_n$ converges. Let $R_n = s - s_n = a_{n+1} + a_{n+2} + \cdots$ be the remainder of $\sum a_n$ ([[§83 The Integral Test and Estimates of Sums#^def-83-1|Definition §83.1]]) and $T_n = t - t_n = b_{n+1} + b_{n+2} + \cdots$ that of $\sum b_n$. Then
 >
 > $$
@@ -202,7 +202,7 @@ The Direct Comparison Test is conclusive only if the terms are smaller than thos
 
 *Uses:* [[§84 The Comparison Tests#^thm-84-1|§84.1]], [[§83 The Integral Test and Estimates of Sums#^def-83-1|Def. §83.1]]
 
-> [!example] Example §98.5: An Error Estimate by Comparison
+> [!example] Example §84.5: An Error Estimate by Comparison
 > Use the sum of the first $100$ terms to approximate the sum of $\sum 1/(n^3 + 1)$. Estimate the error involved.
 >
 > Since $\dfrac{1}{n^3 + 1} < \dfrac{1}{n^3}$, the series converges by the Direct Comparison Test. For the comparison series $\sum 1/n^3$, [[§83 The Integral Test and Estimates of Sums#^ex-83-4|Example §83.4]] found with the Remainder Estimate for the Integral Test that

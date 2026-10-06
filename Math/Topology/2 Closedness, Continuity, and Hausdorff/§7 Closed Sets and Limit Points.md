@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Closed Sets
 
-> [!definition] Definition §8.2: Closed Set
+> [!definition] Definition §7.1: Closed Set
 > A subset $A \subseteq X$ is **closed** if $X \setminus A$ is open.
 
 ^def-7-1
@@ -18,14 +18,14 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-7|Closed Subsets]] of a metric space.
 > - The sequential definition in ℝⁿ, with this one as its equivalent form: [[§5 Topology of ℝⁿ#^def-5-3|551 Def. §5.3]].
-> - The sequential definition in a normed space: [[§10 Normed Linear Spaces#^def-10-6|556 Def. §10.6]]; it agrees with this one in metric spaces by [[§8 Interior and Closure#^cor-8-5|Cor. §8.5]] and the [[§12 Metric Topology#^lem-12-8|Sequence Lemma]].
+> - The sequential definition in a normed space: [[§11 Normed Linear Spaces#^def-11-6|556 Def. §11.6]]; it agrees with this one in metric spaces by [[§8 Interior and Closure#^cor-8-5|Cor. §8.5]] and the [[§12 Metric Topology#^lem-12-8|Sequence Lemma]].
 
-> [!example] Example §8.1
+> [!example] Example §7.1
 > $[a, b] \subseteq \mathbb{R}$ is closed.
 
 ^ex-7-1
 
-> [!example] Example §8.2
+> [!example] Example §7.2
 > $\{x \times y \in \mathbb{R}^2 \mid x \leq 0 \text{ and } y \leq 0\} \subseteq \mathbb{R}^2$ is closed.
 >
 > Its complement is the union of two open sets: $\mathbb{R} \times (0, \infty) \cup (0, \infty) \times \mathbb{R}$.
@@ -35,14 +35,14 @@ tags: [topology, math590]
 ![[m590-6-1.svg]]
 *The closed quadrant $\{x\le 0,\ y\le 0\}$ (blue, including its two boundary rays) and its complement: the union of the open half-planes $\mathbb{R}\times(0,\infty)$ and $(0,\infty)\times\mathbb{R}$ (red hatching, crossed where the two overlap).*
 
-> [!example] Example §8.3
+> [!example] Example §7.3
 > In the [[§1 Topological Spaces#^ex-1-3|discrete topology]] on a set $X$, every set $X \setminus A$ is open $\Rightarrow$ every subset $A \subseteq X$ is closed.
 
 ^ex-7-3
 
 *Chain: earlier in [[§6 Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · later in [[§14 ℝ^ω, Discrete Spaces and the Torus|Chapter 3]] · [[Discrete and indiscrete topologies|all appearances]]*
 
-> [!example] Example §8.4
+> [!example] Example §7.4
 > $Y = [0,1] \cup (2,3) \subseteq \mathbb{R}$ with [[§5 Subspace Topology#^def-5-1|subspace topology]].
 >
 > $[0,1]$ is closed in $Y$ since its complement $(2,3)$ is open in $Y$.
@@ -51,7 +51,7 @@ tags: [topology, math590]
 
 ^ex-7-4
 
-> [!theorem] Theorem §8.1: Properties of Closed Sets
+> [!theorem] Theorem §7.1: Properties of Closed Sets
 > Let $X$ be a topological space.
 > 1. $\emptyset$ and $X$ are closed.
 > 2. Arbitrary intersections of closed sets are closed. (If $Z_\alpha$ is closed for each $\alpha \in A$, then $\bigcap_{\alpha \in A} Z_\alpha$ is closed.)
@@ -71,7 +71,7 @@ tags: [topology, math590]
 
 ## Closed Sets in Subspaces
 
-> [!theorem] Theorem §8.2: Closed Sets in Subspaces
+> [!theorem] Theorem §7.2: Closed Sets in Subspaces
 > Let $Y \subseteq X$ (subspace). Then $A \subseteq Y$ is closed in $Y$ if and only if $A$ equals the intersection of a closed set of $X$ with $Y$.
 
 ^thm-7-2
@@ -96,7 +96,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - The open version is the definition: [[§5 Subspace Topology#^def-5-1|Subspace Topology]]. Closures: [[§8 Interior and Closure#^thm-8-2|Closure in Subspace]].
 
-> [!theorem] Theorem §8.3
+> [!theorem] Theorem §7.3
 > Let $Y \subseteq X$ be a subspace. If $A$ is closed in $Y$, and $Y$ is closed in $X$, then $A$ is closed in $X$.
 
 ^thm-7-3

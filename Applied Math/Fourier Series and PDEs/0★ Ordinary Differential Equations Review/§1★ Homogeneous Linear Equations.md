@@ -86,14 +86,14 @@ but its solutions have a simple structure.
 > [!remark]- Connections
 > - Superposition says that $L[u] = u'' + ku' + pu$ is a linear map, so the solutions of (6) form its null space, a subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-5|235 Thm. §30.5]].
 
-> [!definition] Definition §1.3: Linear Independence
+> [!definition] Definition §1.2: Linear Independence
 > Two solutions $u_1$, $u_2$ are **linearly independent** on an interval if the only linear combination of them with constant coefficients that is identically $0$ on the interval is the one with both coefficients $0$.
 >
 > *Powers: 0.1 (text), Equation (7)*
 
 ^def-1-2
 
-> [!definition] Definition §1.4: Wronskian
+> [!definition] Definition §1.3: Wronskian
 > The **Wronskian** of two solutions $u_1$ and $u_2$ is
 >
 > $$
@@ -133,7 +133,7 @@ $$
 
 It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substituting gives $m^2e^{mt} + kme^{mt} + pe^{mt} = 0$, and $e^{mt}$ is never $0$.
 
-> [!definition] Definition §1.5: Characteristic Equation
+> [!definition] Definition §1.4: Characteristic Equation
 > The **characteristic equation** of the differential equation (8) is
 >
 > $$
@@ -173,7 +173,7 @@ It always has a solution $u(t) = e^{mt}$ for an appropriate constant $m$: substi
 
 *Proved in ODE: [[§20 Repeated Roots; Reduction of Order#^thm-20-2|331 Thm. §20.2]], which collects [[§17 Homogeneous Differential Equations with Constant Coefficients#^thm-17-2|331 Thm. §17.2]] (distinct roots), [[§20 Repeated Roots; Reduction of Order#^thm-20-1|331 Thm. §20.1]] (double root) and [[§19 Complex Roots of the Characteristic Equation#^thm-19-2|331 Thm. §19.2]] (complex roots; the trade (10) → (11) is [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-6|331 Thm. §18.6]]).*
 
-> [!definition] Definition §2.2: Hyperbolic Sine and Cosine
+> [!definition] Definition §1.5: Hyperbolic Sine and Cosine
 > The **hyperbolic sine** and **hyperbolic cosine** are
 >
 > $$

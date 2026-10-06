@@ -17,7 +17,7 @@ tags: [applied-linear-algebra, math235]
 
 [[§15 Elementary Matrices and the Inversion Algorithm#^prop-15-1|Proposition §15.1]] (2.2) showed that each elementary row operation on an $n \times n$ matrix $A$ is left multiplication by an elementary matrix $E$, obtained by performing the same operation on $I_n$.
 
-> [!definition] Definition §31.1: Replacement, Interchange and Scaling Matrices
+> [!definition] Definition §25.1: Replacement, Interchange and Scaling Matrices
 > An elementary matrix $E$ is
 > - a **row replacement (matrix)** if $E$ is obtained from $I$ by adding a multiple of one row to another row;
 > - an **interchange** if $E$ is obtained by interchanging two rows of $I$;
@@ -27,7 +27,7 @@ tags: [applied-linear-algebra, math235]
 
 ^def-25-1
 
-> [!theorem] Theorem §31.1: Row Operations
+> [!theorem] Theorem §25.1: Row Operations
 > Let $A$ be a square matrix.
 >
 > a. If a multiple of one row of $A$ is added to another row to produce a matrix $B$, then $\det B = \det A$.
@@ -91,7 +91,7 @@ tags: [applied-linear-algebra, math235]
 
 Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only row replacements and row interchanges; this is always possible by the row reduction algorithm of [[§2 Row Reduction and Echelon Forms#^rem-2-1|§2, Remark: Method — The Row Reduction Algorithm]].
 
-> [!theorem] Proposition §31.2: The Determinant from an Echelon Form
+> [!theorem] Proposition §25.2: The Determinant from an Echelon Form
 > If $A$ is reduced to an echelon form $U$ by row replacements and $r$ row interchanges, then $\det A = (-1)^r \det U$, and
 >
 > $$
@@ -126,7 +126,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 ^rem-25-2
 
-> [!example] Example §31.1: Reducing to Triangular Form
+> [!example] Example §25.1: Reducing to Triangular Form
 > **(a)** The lecture's version, $A = \begin{bmatrix} 3 & 2 \\ -1 & 5 \end{bmatrix}$:
 >
 > $$
@@ -164,7 +164,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 ^ex-25-1
 
-> [!example] Example §31.2: Row Operations Plus Cofactor Expansion
+> [!example] Example §25.2: Row Operations Plus Cofactor Expansion
 > Compute $\det A$ for $A = \begin{bmatrix} 0 & 1 & 2 & -1 \\ 2 & 5 & -7 & 3 \\ 0 & 3 & 6 & 2 \\ -2 & -5 & 4 & -2 \end{bmatrix}$.
 >
 > Use the $2$ in column 1 as a pivot: $R_4 + R_2$ gives row 4 $= (0, 0, -3, 1)$. Now column 1 has the single entry $2$, in position $(2,1)$ with sign $-$, so
@@ -183,7 +183,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 ^ex-25-2
 
-> [!example] Example §31.3: Row Operations Without Numbers
+> [!example] Example §25.3: Row Operations Without Numbers
 > **(a)** Let $\mathbf{v}_1, \ldots, \mathbf{v}_4$ be the rows of a $4 \times 4$ matrix with determinant $5$. Then
 >
 > $$
@@ -204,7 +204,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 ## Invertibility
 
-> [!theorem] Theorem §31.3: Invertibility and the Determinant
+> [!theorem] Theorem §25.3: Invertibility and the Determinant
 > A square matrix $A$ is invertible if and only if $\det A \ne 0$.
 >
 > *Lay: Theorem 4 (3.2)*

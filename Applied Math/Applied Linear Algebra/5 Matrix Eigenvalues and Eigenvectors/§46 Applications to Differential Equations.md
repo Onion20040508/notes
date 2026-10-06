@@ -15,7 +15,7 @@ This section is the continuous analogue of [[§45 Discrete Dynamical Systems|§4
 
 ## Systems of Linear Differential Equations
 
-> [!definition] Definition §56.1: Linear System of Differential Equations
+> [!definition] Definition §46.1: Linear System of Differential Equations
 > Let $x_1, \ldots, x_n$ be differentiable functions of $t$ and $a_{ij}$ constants. The system
 >
 > $$
@@ -34,7 +34,7 @@ This section is the continuous analogue of [[§45 Discrete Dynamical Systems|§4
 
 ^def-46-1
 
-> [!theorem] Proposition §56.1: Superposition of Solutions
+> [!theorem] Proposition §46.1: Superposition of Solutions
 > If $\mathbf{u}$ and $\mathbf{v}$ are solutions of $\mathbf{x}' = A\mathbf{x}$, then so is $c\mathbf{u} + d\mathbf{v}$ for any scalars $c$, $d$. The identically zero function is a (trivial) solution. So the set of all solutions of (1) is a subspace of the vector space of continuous functions with values in $\mathbb{R}^n$.
 >
 > *Lay: 5.7 (text)*
@@ -74,7 +74,7 @@ $$
 
 This suggests looking for solutions of the general equation $\mathbf{x}' = A\mathbf{x}$ of the form $\mathbf{v}e^{\lambda t}$.
 
-> [!theorem] Theorem §56.2: Eigenfunctions
+> [!theorem] Theorem §46.2: Eigenfunctions
 > Let $\lambda$ be a scalar and $\mathbf{v} \ne \mathbf{0}$ a fixed vector. The function
 >
 > $$
@@ -94,7 +94,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 *Uses:* [[§40 Eigenvectors and Eigenvalues#^def-40-1|Def. §40.1]], [[§24 Exponential Growth and Decay#^thm-24-1|Calc Thm. §24.1]] (derivative of $e^{kt}$)
 
-> [!example] Example §56.1: An RC Circuit (Attractor)
+> [!example] Example §46.1: An RC Circuit (Attractor)
 > The circuit of two capacitors $C_1$, $C_2$ and two resistors $R_1$, $R_2$ in Lay's Figure 1 is described by
 >
 > $$
@@ -135,7 +135,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 ^ex-46-1
 
-> [!definition] Definition §56.4: Attractor (Sink), Repeller (Source), Saddle Point
+> [!definition] Definition §46.2: Attractor (Sink), Repeller (Source), Saddle Point
 > For the dynamical system $\mathbf{x}' = A\mathbf{x}$, the origin is called
 > - an **attractor**, or **sink**, if all trajectories are drawn into the origin (as in [[§46 Applications to Differential Equations#^ex-46-1|Example §46.1]], where both eigenvalues are negative). The **direction of greatest attraction** is along the trajectory of the eigenfunction for the more negative eigenvalue; trajectories not on this line become asymptotic to the line of the other eigenvector, because their components in the faster direction decay so rapidly;
 > - a **repeller**, or **source**, if the trajectories are traversed away from the origin (as when both eigenvalues are positive); the **direction of greatest repulsion** is the line of the eigenfunction for the more positive eigenvalue;
@@ -148,7 +148,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 > [!remark]- Connections
 > - ODE version: BDP's names for the real-eigenvalue cases, saddle point, [[§37 Homogeneous Linear Systems with Constant Coefficients#^def-37-7|331 Def. §37.7]], and node (an attractor or repeller with distinct real eigenvalues), [[§37 Homogeneous Linear Systems with Constant Coefficients#^def-37-8|331 Def. §37.8]]; the full $2 \times 2$ classification, with spiral points and centers, [[§38 Complex-Valued Eigenvalues#^thm-38-3|331 Thm. §38.3]].
 
-> [!example] Example §56.2: A Particle in a Force Field (Saddle Point)
+> [!example] Example §46.2: A Particle in a Force Field (Saddle Point)
 > A particle moves in a planar force field, and its position vector $\mathbf{x}$ satisfies $\mathbf{x}' = A\mathbf{x}$, $\mathbf{x}(0) = \mathbf{x}_0$, where
 >
 > $$
@@ -179,7 +179,7 @@ This suggests looking for solutions of the general equation $\mathbf{x}' = A\mat
 
 ## Decoupling a Dynamical System
 
-> [!theorem] Theorem §56.3: General Solution for Diagonalizable A
+> [!theorem] Theorem §46.3: General Solution for Diagonalizable A
 > Let $A$ be $n \times n$ with $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ and corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$, so that $A = PDP^{-1}$ with $P = [\,\mathbf{v}_1 \; \cdots \; \mathbf{v}_n\,]$ and $D = \operatorname{diag}(\lambda_1, \ldots, \lambda_n)$. Then the change of variable
 >
 > $$
@@ -248,7 +248,7 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 > [!remark]- Connections
 > - Complex-variables version: [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for all complex $z$), with the law of exponents $e^{z_1}e^{z_2} = e^{z_1 + z_2}$ proved in [[§30 The Exponential Function#^thm-30-2|342 Thm. §30.2]] and the series in [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]].
 
-> [!theorem] Theorem §56.4: Real Solutions from a Complex Eigenvalue
+> [!theorem] Theorem §46.4: Real Solutions from a Complex Eigenvalue
 > Let $A$ be a real $n \times n$ matrix with a complex eigenvalue $\lambda = a + bi$ ($b \ne 0$) and eigenvector $\mathbf{v}$ in $\mathbb{C}^n$. Then $\mathbf{x}_1(t) = \mathbf{v}e^{\lambda t}$ is a (complex) solution of $\mathbf{x}' = A\mathbf{x}$, and its real and imaginary parts
 >
 > $$
@@ -298,7 +298,7 @@ Let the real matrix $A$ have a pair of complex eigenvalues $\lambda$ and $\bar\l
 
 Since $\mathbf{x}_2 = \overline{\mathbf{x}_1}$ has real and imaginary parts $\mathbf{y}_1$ and $-\mathbf{y}_2$, one can use either $\mathbf{x}_1$ or $\mathbf{x}_2$, but not both, to produce two real linearly independent solutions.
 
-> [!example] Example §56.3: An RLC Circuit (Spiral Point)
+> [!example] Example §46.3: An RLC Circuit (Spiral Point)
 > The circuit of Lay's Figure 4 (resistors $R_1$, $R_2$, capacitor $C$, inductor $L$) is described by
 >
 > $$

@@ -20,7 +20,7 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§67★ More Difficult Examples]] — Powers 6.4 ★
 
 ## Central results
-- [[Heaviside's Expansion Formula]] (§52.2)
+- [[Heaviside's Expansion Formula]] (§65.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

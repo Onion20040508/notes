@@ -23,14 +23,14 @@ $$
 
 When $A$ is invertible one could compute $A^{-1}$ and then $A^{-1}\mathbf{b}_1$, $A^{-1}\mathbf{b}_2$, and so on (as the lecture suggests in [[§14 The Inverse of a Matrix#^ex-14-2|Example §14.2]]). It is more efficient to solve the first equation by row reduction, obtaining an LU factorization of $A$ at the same time, and to solve the others with the factorization.
 
-> [!definition] Definition §21.1: Unit Lower Triangular Matrix
+> [!definition] Definition §18.1: Unit Lower Triangular Matrix
 > A square matrix $L$ is **lower triangular** if all its entries above the main diagonal are zero, and **unit lower triangular** if moreover all its diagonal entries are $1$.
 >
 > *Lay: 2.5 (text)*
 
 ^def-18-1
 
-> [!definition] Definition §21.2: LU Factorization
+> [!definition] Definition §18.2: LU Factorization
 > Let $A$ be an $m \times n$ matrix. An **LU factorization** of $A$ is an equation
 >
 > $$
@@ -64,7 +64,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^rem-18-1
 
-> [!example] Example §21.1: Solving a System with a Given LU Factorization
+> [!example] Example §18.1: Solving a System with a Given LU Factorization
 > It can be verified that
 >
 > $$
@@ -105,7 +105,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ## An LU Factorization Algorithm
 
-> [!theorem] Proposition §21.1: Products and Inverses of Unit Lower Triangular Matrices
+> [!theorem] Proposition §18.1: Products and Inverses of Unit Lower Triangular Matrices
 > The product of two $n \times n$ unit lower triangular matrices is unit lower triangular. A unit lower triangular matrix is invertible, and its inverse is unit lower triangular.
 >
 > *Lay: 2.5 (text)*
@@ -121,7 +121,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 *Uses:* [[§12 Matrix Operations#^prop-12-4|§12.4]], [[§15 Elementary Matrices and the Inversion Algorithm#^def-15-1|Def. §15.1]], [[§15 Elementary Matrices and the Inversion Algorithm#^prop-15-1|§15.1]], [[§16 Characterizations of Invertible Matrices#^cor-16-2|§16.2]]
 
-> [!theorem] Theorem §21.2: Existence of an LU Factorization
+> [!theorem] Theorem §18.2: Existence of an LU Factorization
 > Suppose an $m \times n$ matrix $A$ can be reduced to an echelon form $U$ using only row replacements that add a multiple of one row to another row *below* it. Then there are unit lower triangular elementary matrices $E_1, \ldots, E_p$ with
 >
 > $$
@@ -163,7 +163,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^rem-18-2
 
-> [!example] Example §21.2: Finding an LU Factorization
+> [!example] Example §18.2: Finding an LU Factorization
 > Find an LU factorization of
 >
 > $$
@@ -202,7 +202,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^ex-18-2
 
-> [!example] Example §21.3: An LU Factorization with Fewer Pivots Than Rows
+> [!example] Example §18.3: An LU Factorization with Fewer Pivots Than Rows
 > Find an LU factorization of
 >
 > $$
@@ -242,7 +242,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 ^ex-18-3
 
 > [!remark] Remark: Permuted LU Factorizations
-> In practical work row interchanges are nearly always needed, because *partial pivoting* (choosing, among the possible pivots in a column, an entry of largest absolute value) is used for accuracy. The algorithm is then modified to produce an $L$ that is **permuted lower triangular**: a rearrangement (permutation) of its rows makes it unit lower triangular. The resulting **permuted LU factorization** solves $A\mathbf{x} = \mathbf{b}$ as before, except that the reduction of $[\,L \ \ \mathbf{b}\,]$ to $[\,I \ \ \mathbf{y}\,]$ follows the order of the pivots in $L$, from left to right, starting with the pivot in the first column. "LU factorization" usually includes this possibility. In matrix terms, a permutation matrix $P$ ([[§15 Elementary Matrices and the Inversion Algorithm#^def-15-2|Definition §15.2]]) puts the rows in order, $PA = L'U$ with $L'$ unit lower triangular; compare the lecture's description of row reduction as a product of replacement and permutation matrices ([[§15 Elementary Matrices and the Inversion Algorithm#^rem-15-2|§15, Remark: An Invertible Matrix Is a Product of Elementary Matrices]]).
+> In practical work row interchanges are nearly always needed, because *partial pivoting* (choosing, among the possible pivots in a column, an entry of largest absolute value) is used for accuracy. The algorithm is then modified to produce an $L$ that is **permuted lower triangular**: a rearrangement (permutation) of its rows makes it unit lower triangular. The resulting **permuted LU factorization** solves $A\mathbf{x} = \mathbf{b}$ as before, except that the reduction of $[\,L \ \ \mathbf{b}\,]$ to $[\,I \ \ \mathbf{y}\,]$ follows the order of the pivots in $L$, from left to right, starting with the pivot in the first column. "LU factorization" usually includes this possibility. In matrix terms, a permutation matrix $P$ ([[§15 Elementary Matrices and the Inversion Algorithm#^def-15-2|Definition §15.2]]) puts the rows in order, $PA = L'U$ with $L'$ unit lower triangular; compare the lecture's description of row reduction as a product of replacement and permutation matrices ([[§15 Elementary Matrices and the Inversion Algorithm#^rem-15-1|§15, Remark: An Invertible Matrix Is a Product of Elementary Matrices]]).
 
 ^rem-18-3
 
@@ -260,7 +260,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ## A Matrix Factorization in Electrical Engineering
 
-> [!definition] Definition §21.3: Transfer Matrix
+> [!definition] Definition §18.3: Transfer Matrix
 > Consider an electric circuit with input and output terminals. Record the input voltage and current by $\begin{bmatrix} v_1 \\ i_1 \end{bmatrix}$ (volts, amps) and the output voltage and current by $\begin{bmatrix} v_2 \\ i_2 \end{bmatrix}$. If the transformation $\begin{bmatrix} v_1 \\ i_1 \end{bmatrix} \mapsto \begin{bmatrix} v_2 \\ i_2 \end{bmatrix}$ is linear, its matrix $A$, with
 >
 > $$
@@ -273,7 +273,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^def-18-3
 
-> [!definition] Definition §21.4: Ladder Network
+> [!definition] Definition §18.4: Ladder Network
 > A **ladder network** connects circuits in series, so that the output of one is the input of the next.
 >
 > *Lay: 2.5 (text)*
@@ -291,7 +291,7 @@ The map $\mathbf{x} \mapsto A\mathbf{x}$ is factored as $\mathbf{x} \mapsto \mat
 
 ^def-18-5
 
-> [!example] Example §21.4: Designing a Ladder Network
+> [!example] Example §18.4: Designing a Ladder Network
 > **(a)** Compute the transfer matrix of the ladder network formed by a series circuit (resistance $R_1$) followed by a shunt circuit (resistance $R_2$).
 >
 > Let $A_1$ and $A_2$ be the transfer matrices of the series and shunt circuits. An input vector $\mathbf{x}$ is transformed first into $A_1\mathbf{x}$ and then into $A_2(A_1\mathbf{x})$. Connecting circuits in series is composing linear transformations, so the transfer matrix of the network is (note the order)

@@ -22,7 +22,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Rectangles and Their Volume
 
-> [!definition] Definition §11.1: Rectangles in $\mathbb{R}^n$
+> [!definition] Definition §10.1: Rectangles in $\mathbb{R}^n$
 > A **rectangle** in $\mathbb{R}^n$ is a set of the form
 >
 > $$
@@ -35,7 +35,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ^def-10-1
 
-> [!definition] Definition §11.2: Volume of a Rectangle
+> [!definition] Definition §10.2: Volume of a Rectangle
 > The **volume** of a rectangle $I = (a_1, b_1) \times \cdots \times (a_n, b_n)$ is
 >
 > $$
@@ -50,12 +50,12 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Outer Measure
 
-> [!definition] Definition §11.3: L-covering
+> [!definition] Definition §10.3: L-covering
 > Let $A \subseteq \mathbb{R}^n$. A **Lebesgue covering** (or **L-covering**) of $A$ is a countable collection $\{I_k\}$ of open rectangles such that $A \subseteq \bigcup_k I_k$.
 
 ^def-10-3
 
-> [!definition] Definition §11.4: Outer Measure
+> [!definition] Definition §10.4: Outer Measure
 > Let $A \subseteq \mathbb{R}^n$. The **outer measure** of $A$ is
 >
 > $$
@@ -79,7 +79,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Examples of Outer Measure
 
-> [!example] Example §11.1: Finite Sets Have Measure Zero
+> [!example] Example §10.1: Finite Sets Have Measure Zero
 > Let $A = \{x_1, x_2, \ldots, x_k\}$ be a finite set of points in $\mathbb{R}^n$. Then $m^*(A) = 0$.
 
 ^ex-10-1
@@ -91,7 +91,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 *Uses:* [[§10 Lebesgue Outer Measure#^def-10-4|Def. §10.4]]
 
-> [!example] Example §11.2: Countable Sets Have Measure Zero
+> [!example] Example §10.2: Countable Sets Have Measure Zero
 > Let $A = \{x_1, x_2, x_3, \ldots\}$ be a [[§1 Countability and Set Theory#^def-1-1|countable]] set of points in $\mathbb{R}^n$. Then $m^*(A) = 0$.
 
 ^ex-10-2
@@ -130,7 +130,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Properties of Outer Measure
 
-> [!theorem] Proposition §11.1: Basic Properties of Outer Measure
+> [!theorem] Proposition §10.1: Basic Properties of Outer Measure
 > The outer measure $m^*$ satisfies:
 > 1. $m^*(\emptyset) = 0$ and $m^*(A) \geq 0$ for all $A \subseteq \mathbb{R}^n$.
 > 2. **Monotonicity:** If $A_1 \subseteq A_2$, then $m^{\ast}(A_1) \leq m^{\ast}(A_2)$.
@@ -176,7 +176,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Outer Measure of Rectangles
 
-> [!theorem] Proposition §11.2: Outer Measure of Closed Rectangles
+> [!theorem] Proposition §10.2: Outer Measure of Closed Rectangles
 > Let $\bar{I} = [a_1, b_1] \times \cdots \times [a_n, b_n]$ be a closed bounded rectangle in $\mathbb{R}^n$. Then
 >
 > $$
@@ -234,7 +234,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 ## Translation Invariance
 
-> [!theorem] Proposition §11.3: Translation Invariance of Outer Measure
+> [!theorem] Proposition §10.3: Translation Invariance of Outer Measure
 > Let $A \subseteq \mathbb{R}^n$ and $x_0 \in \mathbb{R}^n$. Define $x_0 + A = \{x_0 + y \mid y \in A\}$.
 >
 > Then $m^*(x_0 + A) = m^*(A)$.

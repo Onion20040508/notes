@@ -15,7 +15,7 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ## 23.1 Definition and Basic Properties
 
-> [!definition] Definition §23.2: Prime
+> [!definition] Definition §23.1: Prime
 > A positive integer $n$ is **prime** if $n > 1$ and the only positive divisors of $n$ are $1$ and $n$.
 >
 > If a prime $p = ab$ with $a, b$ positive, then $\{a, b\} = \{1, p\}$.
@@ -24,7 +24,7 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ^def-23-1
 
-> [!definition] Definition §23.3: Composite
+> [!definition] Definition §23.2: Composite
 > An integer $n > 1$ that is not prime is **composite**.
 >
 > Thus $n > 1$ is composite if and only if $n = ab$ for integers $a, b$ with $1 < a < n$ and $1 < b < n$ (a positive divisor $a \ne 1, n$ gives $b = n/a$, which also lies strictly between $1$ and $n$). The positive integers split into three disjoint sets: the primes $2, 3, 5, 7, 11, 13, \ldots$, the composites $4, 6, 8, 9, 10, \ldots$, and the single **unit** $1$.
@@ -185,7 +185,7 @@ Factorization into primes is not unique as written, since the factors can be reo
 > [!remark]- Connections
 > - Same theorem in group theory: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]] (uniqueness there by induction on $n$ rather than by contradiction).
 
-> [!definition] Definition §23.4: Standard Prime Factorization
+> [!definition] Definition §23.3: Standard Prime Factorization
 > The unique expression $n = p_1^{k_1} \cdots p_r^{k_r}$ of [[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]] (primes $p_1 < \cdots < p_r$, exponents $k_i \ge 1$) is the **standard prime factorization** of $n$; for $n = 1$ take $r = 0$ (the empty product). When comparing two numbers it is convenient to list all primes occurring in either and allow exponents $0$: by uniqueness, $p_1^{k_1} \cdots p_r^{k_r} = p_1^{l_1} \cdots p_r^{l_r}$ (distinct primes, exponents $\ge 0$) implies $k_i = l_i$ for every $i$.
 >
 > *Eccles: §23.3 (text after Theorem 23.3.1)*

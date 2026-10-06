@@ -25,6 +25,7 @@ tags: [chapter, complex-variables]
 - [[§93 Argument Principle]] — B&C Sec. 93
 - [[§94 Rouché's Theorem]] — B&C Sec. 94
 - [[§95★ Inverse Laplace Transforms]] — B&C Sec. 95 ★
+- [[§95a The Integral of 1∕(√x (x² + 1))]] — B&C Sec. 95
 
 ## Central results
 - [[Jordan's Lemma]] (§88.2)

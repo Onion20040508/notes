@@ -24,8 +24,7 @@ The line integral of a vector field, $\int_C \mathbf{F} \cdot d\mathbf{r}$, adds
 >
 > and the total work is approximately the Riemann sum $\sum_{i=1}^{n} \big[\mathbf{F}(x_i^*, y_i^*, z_i^*) \cdot \mathbf{T}(x_i^*, y_i^*, z_i^*)\big]\,\Delta s_i$. $\qquad (11)$
 
-^rem-127-3
-
+^rem-127-1
 > [!definition] Definition §127.1: Work
 > The **work** $W$ done by the force field $\mathbf{F}$ in moving a particle along $C$ is the limit of the Riemann sums (11):
 >
@@ -122,8 +121,7 @@ For example, the integral of [[§126 Line Integrals#^ex-126-4|Example §126.4]] 
 > 4. **Integrate in $t$** and add the pieces. If the parametrization runs against the given orientation, change the sign of $dx$, $dy$, $dz$ and $d\mathbf{r}$ integrals (not of $ds$ integrals).
 > 5. **Look for shortcuts first**: a conservative field ([[§128 The Fundamental Theorem for Line Integrals#^thm-128-1|Theorem §128.1]]), or a closed curve in the plane or in space bounding a simple region or surface (Green's Theorem, [[§130 Green's Theorem#^thm-130-1|Theorem §130.1]]; Stokes' Theorem, [[§136 Stokes' Theorem#^thm-136-1|Theorem §136.1]]).
 
-^rem-127-4
-
+^rem-127-2
 > [!example] Example §127.1: Work along a Segment
 > Evaluate $\int_C \mathbf{F} \cdot d\mathbf{r}$, where $\mathbf{F}(x, y) = xy^2\,\mathbf{i} - x\,\mathbf{j}$ and $C$ is given by $\mathbf{r}(t) = (1 + t)\,\mathbf{i} + (2 - t)\,\mathbf{j}$, $0 \le t \le 2$.
 >

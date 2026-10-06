@@ -14,7 +14,7 @@ tags: [measure-theory, math551]
 
 The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 
-> [!theorem] Lemma §2.2: Key Lemma for Cantor–Bernstein
+> [!theorem] Lemma §2.1: Key Lemma for Cantor–Bernstein
 > Let $f: X \to Y$ and $g: Y \to X$ be functions. Then there exist subsets $A \subseteq X$ and $B \subseteq Y$ such that $f(A) = B$ and $g(Y \setminus B) = X \setminus A$.
 
 ^lem-2-1
@@ -99,7 +99,7 @@ The proof of the Cantor–Bernstein theorem below relies on the following lemma.
 
 ^pf-2-1
 
-> [!theorem] Theorem §2.1: Cantor–Bernstein
+> [!theorem] Theorem §2.2: Cantor–Bernstein
 > Assume there exists an injection $f: X \to Y$ and an injection $g: Y \to X$. Then $X \sim Y$.
 
 ^thm-2-2

@@ -7,18 +7,23 @@ tags: [chapter, measure-theory]
 # 5 Differentiation and the FTC
 ↑ [[Measure Theory]]
 
-**Builds on:** [[· 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (2), [[· 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (2), [[· 3 Measure Theory|3 Measure Theory]] (26), [[· 4 Integration Theory|4 Integration Theory]] (27), [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (1)
-**Used by:** [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (3)
+**Builds on:** [[· 1 Set Theory Prerequisites|1 Set Theory Prerequisites]] (2), [[· 2 Topology of ℝⁿ|2 Topology of ℝⁿ]] (2), [[· 3 Measure Theory|3 Measure Theory]] (26), [[· 4 Integration Theory|4 Integration Theory]] (28), [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (1)
+**Used by:** [[· 6 Lᵖ Spaces|6 Lᵖ Spaces]] (4)
 **Builds on (other subjects):** [[Single Variable Analysis]] (6), [[Linear Algebra]] (3), [[Topology]] (2)
 
 ## Sections
 - [[§28 Differentiation Theory]]
+- [[§29 Lebesgue's Differentiation Theorem]]
+- [[§30 Differentiating the Integral]]
+- [[§31 Absolute Continuity]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals]]
+- [[§33 The Cantor Function]]
 
 ## Central results
-- [[Vitali Covering Theorem]] (§18.2)
-- [[Jordan Decomposition Theorem]] (§18.7)
-- [[Lebesgue's Differentiation Theorem for Monotone Functions]] (§18.9)
-- [[Fundamental Theorem of Calculus for Lebesgue Integrals]] (§18.13)
+- [[Vitali Covering Theorem]] (§28.2)
+- [[Jordan Decomposition Theorem]] (§28.7)
+- [[Lebesgue's Differentiation Theorem for Monotone Functions]] (§29.1)
+- [[Fundamental Theorem of Calculus for Lebesgue Integrals]] (§32.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

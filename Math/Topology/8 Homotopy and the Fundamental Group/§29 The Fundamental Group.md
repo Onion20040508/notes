@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definition
 
-> [!definition] Definition §39.1: Loop
+> [!definition] Definition §29.1: Loop
 > Fix a topological space $X$ and a point $x_0 \in X$. A **loop based at $x_0$** is a [[§28 Homotopy of Paths#^def-28-3|path]] $f: I \to X$ with $f(0) = f(1) = x_0$.
 
 ^def-29-1
@@ -50,7 +50,7 @@ tags: [topology, math590]
 > - Computational version: [[§52 Simply Connected Domains#^def-52-1|342 Def. §52.1]] (B&C's simply connected domains, every [[§43 Contours#^def-43-10|simple closed contour]] enclosing only points of the domain).
 > - Used in Quantum Field Theory: $SL(2, \mathbb C)$ is simply connected, and the Lorentz group $SO^+(1,3)$ is not — [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|QFT Theorem §C5a.1.8]].
 
-> [!theorem] Lemma §39.1: Paths in Simply Connected Spaces
+> [!theorem] Lemma §29.1: Paths in Simply Connected Spaces
 > In a simply connected space $X$, any two paths having the same initial and terminal points are [[§28 Homotopy of Paths#^def-28-4|path homotopic]].
 
 ^lem-29-1
@@ -72,7 +72,7 @@ tags: [topology, math590]
 
 ## First Computations
 
-> [!example] Example §39.1: $\mathbb{R}^n$ is Simply Connected
+> [!example] Example §29.1: $\mathbb{R}^n$ is Simply Connected
 > $\mathbb{R}^n$ is simply connected. Let $f$ be any loop at $x_0$. The [[§28 Homotopy of Paths#^thm-28-1|straight-line homotopy]]
 >
 > $$H(s, t) = (1 - t)\,f(s) + t\,x_0$$
@@ -81,7 +81,7 @@ tags: [topology, math590]
 
 ^ex-29-1
 
-> [!example] Example §39.2: Convex Subsets of $\mathbb{R}^n$ are Simply Connected
+> [!example] Example §29.2: Convex Subsets of $\mathbb{R}^n$ are Simply Connected
 > If $X \subseteq \mathbb{R}^n$ is convex and $x_0 \in X$, then $\pi_1(X, x_0) \cong \{e\}$ by the same argument: for any loop $f$ at $x_0$, the straight-line homotopy $H(s,t) = (1-t)f(s) + tx_0$ stays inside $X$ (by convexity: $f(s) \in X$ and $x_0 \in X$ implies $(1-t)f(s) + tx_0 \in X$).
 >
 > This includes: open balls, closed balls, $\mathbb{R}^n$ itself, any open convex set, $[0,1]^n$, etc.
@@ -93,7 +93,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Closed balls specifically: $B^n$ is Convex and Simply Connected ([[§34 Retractions and Fixed Points#^prop-34-5|§34.5]]).
-> - Convex sets in a general real linear space: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|556 Def. §2.3]].
+> - Convex sets in a general real linear space: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|556 Def. §3.3]].
 
 > [!remark] Remark: What $\pi_1$ Cannot See
 > $\pi_1(\mathbb{R}^n) = \{e\}$ for all $n$, so the fundamental group alone cannot distinguish $\mathbb{R}^2$ from $\mathbb{R}^3$. But we don't apply $\pi_1$ to $\mathbb{R}^n$ directly—we apply it to $\mathbb{R}^n$ *minus a point*. The punctured spaces have different loop structures:
@@ -110,7 +110,7 @@ tags: [topology, math590]
 
 ## Dependence on Basepoint
 
-> [!theorem] Theorem §39.2: Basepoint Independence
+> [!theorem] Theorem §29.2: Basepoint Independence
 > If there exists a path $\alpha$ in $X$ from $x_0$ to $x_1$, then there is an isomorphism of groups
 >
 > $$\hat{\alpha}: \pi_1(X, x_0) \to \pi_1(X, x_1).$$
@@ -152,7 +152,7 @@ tags: [topology, math590]
 
 *Uses:* [[Properties of Path Concatenation|§28.6]], [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|§26.4]], [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|Def. §26.4]]
 
-> [!theorem] Corollary §39.3: $\pi_1$ is Independent of Basepoint for Path-Connected Spaces
+> [!theorem] Corollary §29.3: $\pi_1$ is Independent of Basepoint for Path-Connected Spaces
 > If $X$ is [[§16 Connected Subspaces of ℝ#^def-16-4|path-connected]], then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$ for any $x_0, x_1 \in X$. In particular, the isomorphism *type* of $\pi_1(X, x_0)$ is a well-defined invariant of $X$.
 
 ^cor-29-3

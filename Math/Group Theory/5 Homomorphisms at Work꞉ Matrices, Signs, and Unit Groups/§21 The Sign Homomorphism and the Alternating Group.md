@@ -51,7 +51,7 @@ tags: [group-theory, math493]
 > - Linear-algebra counterpart: [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR 9.34]] (swapping two entries of a permutation changes the parity of the number of inversions).
 
 > [!theorem] Theorem §21.2: Three Formulas for the Sign
-> Let $\sigma \in S_n$, let $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j) \in \mathbb{Q}[x_1, \ldots, x_n]$, and let $M(\sigma)$ be the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrix]]. Then
+> Let $\sigma \in S_n$, let $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j) \in \mathbb{Q}[x_1, \ldots, x_n]$, and let $M(\sigma)$ be the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|permutation matrix]]. Then
 >
 > $$
 > \frac{\sigma \cdot \Delta}{\Delta} \;=\; (-1)^{\operatorname{inv}(\sigma)} \;=\; \det M(\sigma).
@@ -74,7 +74,7 @@ tags: [group-theory, math493]
 
 ^pf-21-2
 
-*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def. §20.3]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-1|Def. §21.1]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|§21.1]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|Def. §20.5]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§37 Determinants#^ladr-9-44|LADR 9.44]]
+*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def. §20.3]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-1|Def. §21.1]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-1|§21.1]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§37 Determinants#^ladr-9-44|LADR 9.44]]
 
 > [!remark]- Connections
 > - Linear-algebra home of the determinant facts: column swaps change the sign, [[§37 Determinants#^ladr-9-57|LADR 9.57]] (b); $\det I = 1$, [[§37 Determinants#^ladr-9-44|LADR 9.44]].
@@ -88,7 +88,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Linear algebra defines the sign by inversions: [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]].
-> - Restated in 591 for the Leibniz formula and continuity of the determinant: [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|591 Def. §10.3]], properties in [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|591 Prop. §10.2]].
+> - Restated in 591 for the Leibniz formula and continuity of the determinant: [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|591 Def. §11.4]], properties in [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|591 Prop. §11.2]].
 
 > [!theorem] Theorem §21.3: The Sign Is a Homomorphism
 > $\operatorname{sgn}: S_n \to \{\pm 1\}$ is a group [[§15 Homomorphisms#^def-15-1|homomorphism]], where $\{\pm 1\}$ is a group under multiplication.
@@ -121,7 +121,7 @@ tags: [group-theory, math493]
 
 ^pf-21-4
 
-*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|Def. §20.5]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§37 Determinants#^ladr-9-44|LADR 9.44]]
+*Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]], [[§37 Determinants#^ladr-9-57|LADR 9.57]], [[§37 Determinants#^ladr-9-44|LADR 9.44]]
 
 > [!remark] Remark: Parity, Settled
 > [[§12 Multiplying and Conjugating Cycles#^rem-12-1|§12]] noted that factorizations into transpositions are far from unique and that “only the parity is an invariant” — deferred to this problem. [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Corollary (2)]] is that statement, and the reason it holds is that parity is computed by a function $\operatorname{sgn}$ defined without reference to factorizations (via $\Delta$, inversions, or determinants) which happens to take the value $-1$ on every transposition.
@@ -250,6 +250,6 @@ tags: [group-theory, math493]
 > - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§46 Characters#^ex-46-2|Ex. §46.2]].
 
 > [!remark] Remark: The Origin of the Names
-> This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.
+> This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the permutation representation $\sigma \mapsto M(\sigma)$ into $GL_n$.
 
 ^rem-21-3

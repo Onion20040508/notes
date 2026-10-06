@@ -12,14 +12,14 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ## Definition and Examples
 
-> [!definition] Definition §22.1: Covering
+> [!definition] Definition §18.1: Covering
 > A collection $\mathcal{A}$ of subsets of $X$ is a **covering of $X$** if the union of elements of $\mathcal{A}$ equals $X$, i.e., $\bigcup_{A \in \mathcal{A}} A = X$.
 >
 > It is an **open covering** if elements of $\mathcal{A}$ are open subsets of $X$.
 
 ^def-18-1
 
-> [!definition] Definition §22.2: Compact
+> [!definition] Definition §18.2: Compact
 > A space $X$ is **compact** if every open covering of $X$ contains a finite subcollection that also covers $X$. (Finite subcover of $X$.)
 
 ^def-18-2
@@ -42,19 +42,19 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 > [!remark]- Connections
 > - MATH 451 versions on $[a,b]$: [[Extreme Value Theorem]], [[§19 Uniform Continuity#^thm-19-1|Uniform Continuity on Closed Bounded Intervals]].
-> - The same definition for subsets of a normed or metric space: [[§18 Compactness and the Unit Ball#^def-18-2|556 Def. §18.2]], shown there to be equivalent to sequential compactness ([[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]]).
+> - The same definition for subsets of a normed or metric space: [[§20 Compactness and the Unit Ball#^def-20-4|556 Def. §20.4]], shown there to be equivalent to sequential compactness ([[§20 Compactness and the Unit Ball#^thm-20-1|556 Thm. §20.1]]).
 
-> [!example] Example §22.1
+> [!example] Example §18.1
 > $\mathbb{R}$ is not compact. $\mathcal{A} = \{(n, n+3) \mid n \in \mathbb{Z}\}$ is an open covering of $\mathbb{R}$, but no finite subcover covers $\mathbb{R}$.
 
 ^ex-18-1
 
-> [!example] Example §22.2
+> [!example] Example §18.2
 > Any finite topological space is compact. Any open cover is already finite.
 
 ^ex-18-2
 
-> [!example] Example §22.3
+> [!example] Example §18.3
 > The interval $(0, 1] \subseteq \mathbb{R}$ is not compact. $\mathcal{A} = \{(\frac{1}{n}, 1] \mid n \in \mathbb{Z}_+\}$ is an open covering, no finite subcover.
 
 ^ex-18-3
@@ -62,7 +62,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 ![[m590-15-1.svg]]
 *The cover $\{(\frac1n,1]\}$ of $(0,1]$ (gray) creeps toward $0$ but never reaches it: any finitely many members have union $(\frac1N,1]$ for the largest $N$ used, so a whole interval $(0,\frac1N]$ (red) stays uncovered. The missing endpoint $0$ is exactly what destroys compactness.*
 
-> [!example] Example §22.4
+> [!example] Example §18.4
 > $X = \{0\} \cup \{\frac{1}{n} \mid n \in \mathbb{Z}_+\} \subseteq \mathbb{R}$. $X$ is compact.
 
 ^ex-18-4
@@ -88,7 +88,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ## Compactness in Subspaces
 
-> [!definition] Definition §22.3: Covers a Subspace
+> [!definition] Definition §18.3: Covers a Subspace
 > If $Y \subseteq X$ is a subspace, a collection $\mathcal{A}$ of subsets of $X$ is said to **cover** $Y$ if the union of its elements contains $Y$: $\bigcup_{A \in \mathcal{A}} A \supseteq Y$.
 
 ^def-18-3
@@ -109,7 +109,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > [!remark]- Connections
 > - In ℝⁿ, an open cover of a set E by open subsets of the ambient space: [[§6 Open Covers and the Heine–Borel Theorem#^def-6-1|551 Def. §6.1]].
 
-> [!theorem] Lemma §22.1: Compactness in Subspaces
+> [!theorem] Lemma §18.1: Compactness in Subspaces
 > Let $Y$ be a subspace of $X$. Then $Y$ is compact if and only if every covering of $Y$ by open sets of $X$ contains a finite subcollection covering $Y$.
 
 ^lem-18-1
@@ -177,7 +177,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ## Compact Subspaces and Closed Sets
 
-> [!theorem] Theorem §22.2: Closed Subspace of Compact is Compact
+> [!theorem] Theorem §18.2: Closed Subspace of Compact is Compact
 > Every closed subspace of a compact space is compact.
 
 ^thm-18-2
@@ -195,7 +195,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 *Uses:* [[§18 Compact Spaces#^lem-18-1|§18.1]], [[§7 Closed Sets and Limit Points#^def-7-1|Def. §7.1]]
 
-> [!theorem] Theorem §22.3: Continuous Image of Compact is Compact
+> [!theorem] Theorem §18.3: Continuous Image of Compact is Compact
 > The image of a compact space under a continuous map is compact.
 
 ^thm-18-3
@@ -220,7 +220,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - With Y = ℝ it gives the Extreme Value Theorem: [[§28 Maximum and Minimum Values#^thm-28-1|Calc Thm. §28.1]] and, on closed bounded sets in ℝ², [[§113 Maximum and Minimum Values#^thm-113-3|Calc Thm. §113.3]] (with worked examples).
 > - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous complex function on a closed bounded region is bounded and its modulus attains a maximum).
 
-> [!theorem] Theorem §22.4: Compact Subspace of Hausdorff is Closed
+> [!theorem] Theorem §18.4: Compact Subspace of Hausdorff is Closed
 > Every compact subspace of a [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]] space is closed.
 
 ^thm-18-4
@@ -265,12 +265,12 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 ^rem-18-5
 
-> [!definition] Definition §22.4: Finite Intersection Property
+> [!definition] Definition §18.4: Finite Intersection Property
 > A collection $\mathcal{C}$ of subsets of $X$ is said to have the **finite intersection property** (FIP) if for every finite subcollection $\{C_1, \ldots, C_n\}$ of $\mathcal{C}$, the intersection $C_1 \cap \cdots \cap C_n$ is nonempty.
 
 ^def-18-4
 
-> [!theorem] Theorem §22.5: Compactness via Finite Intersection Property
+> [!theorem] Theorem §18.5: Compactness via Finite Intersection Property
 > Let $X$ be a topological space. Then $X$ is compact if and only if for every collection $\mathcal{C}$ of closed sets in $X$ having the finite intersection property, the intersection $\bigcap_{C \in \mathcal{C}} C$ is nonempty.
 
 ^thm-18-5
@@ -295,7 +295,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 
 *Uses:* [[§18 Compact Spaces#^def-18-4|Def. §18.4]]
 
-> [!theorem] Corollary §22.6: Nested Sequence of Closed Sets
+> [!theorem] Corollary §18.6: Nested Sequence of Closed Sets
 > Let $X$ be a compact space. If $C_1 \supseteq C_2 \supseteq C_3 \supseteq \cdots$ is a nested sequence of nonempty closed sets in $X$, then $\bigcap_{n=1}^{\infty} C_n \neq \emptyset$.
 
 ^cor-18-6

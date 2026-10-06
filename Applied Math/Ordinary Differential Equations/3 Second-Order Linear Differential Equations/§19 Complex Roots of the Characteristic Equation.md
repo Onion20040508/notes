@@ -54,7 +54,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 
 ^rem-19-1
 
-> [!definition] Definition §23.1: The Complex Exponential
+> [!definition] Definition §19.1: The Complex Exponential
 > **Euler's formula** defines, for real $t$,
 >
 > $$
@@ -84,7 +84,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 > - Lay defines $e^{(a+bi)t}$ by the power series and arrives at the same formula (14), used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$: [[§46 Applications to Differential Equations#^def-46-3|235 Def. §46.3]].
 > - Complex-variables version: [[§7 Exponential Form#^def-7-4|342 Def. §7.4]] (Euler's formula), [[§7 Exponential Form#^def-7-5|342 Def. §7.5]] (the exponential form $z = re^{i\theta}$) and [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for every complex $z$, whose Maclaurin series is proved in [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]]).
 
-> [!theorem] Proposition §23.1: Rules for the Complex Exponential
+> [!theorem] Proposition §19.1: Rules for the Complex Exponential
 > For complex numbers $r$, $r_1$, $r_2$ and real $t$:
 >
 > $$
@@ -125,7 +125,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 
 ## The General Solution
 
-> [!example] Example §23.1: Complex Solutions and Their Real Parts
+> [!example] Example §19.1: Complex Solutions and Their Real Parts
 > Find the general solution of
 >
 > $$
@@ -172,7 +172,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 
 ^ex-19-1
 
-> [!theorem] Theorem §23.2: General Solution for Complex Roots
+> [!theorem] Theorem §19.2: General Solution for Complex Roots
 > If the roots of the characteristic equation $ar^2 + br + c = 0$ are the complex numbers $\lambda \pm i\mu$ with $\mu \ne 0$, then
 >
 > $$
@@ -230,7 +230,7 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 
 ^rem-19-2
 
-> [!example] Example §23.2: Two Course Initial Value Problems
+> [!example] Example §19.2: Two Course Initial Value Problems
 > **(a)** Solve $y'' + 6y' + 13y = 0$, $y(0) = 2$, $y'(0) = -1$.
 >
 > Completing the square in $r^2 + 6r + 13 = 0$: $(r + 3)^2 = -4$, so $r + 3 = \pm 2i$ and $r = -3 \pm 2i$, with $\lambda = -3$, $\mu = 2$. By [[§19 Complex Roots of the Characteristic Equation#^thm-19-2|Theorem §19.2]],
@@ -259,7 +259,7 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 
 ^ex-19-2
 
-> [!example] Example §23.3: Growing and Pure Oscillations
+> [!example] Example §19.3: Growing and Pure Oscillations
 > **(a)** Solve $16y'' - 8y' + 145y = 0$, $y(0) = -2$, $y'(0) = 1$. (26)
 >
 > The characteristic equation $16r^2 - 8r + 145 = 0$ has roots $r = \frac{8 \pm \sqrt{64 - 9280}}{32} = \frac{8 \pm 96i}{32} = \frac14 \pm 3i$. So

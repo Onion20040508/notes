@@ -12,7 +12,7 @@ tags: [measure-theory, hub]
 
 ## Its proof uses
 - [[§7 Structure of Open Sets#^prop-7-3|Proposition §7.3: Open Sets in ℝⁿ as Unions of Rectangles]]
-- [[§13 Approximation and Continuity of Measure#^def-13-1|Definition §13.1: G_δ and F_σ Sets]]
+- [[§13 Approximation and Continuity of Measure#^def-13-1|Definition §13.1: G_δ Sets]]
 - [[§13 Approximation and Continuity of Measure#^thm-13-1|Theorem §13.1: Approximation by Open and G_δ Sets]]
 - [[§17 Simple Functions and Modes of Convergence#^thm-17-2|Theorem §17.2: Approximation by Simple Functions: Non-negative Case]]
 - [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-1|Theorem §21.1: Linearity of the Integral]]

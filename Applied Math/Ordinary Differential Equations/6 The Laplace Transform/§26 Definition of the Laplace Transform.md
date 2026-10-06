@@ -15,7 +15,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 
 ## Improper Integrals
 
-> [!definition] Definition §31.1: Improper Integral over an Unbounded Interval
+> [!definition] Definition §26.1: Improper Integral over an Unbounded Interval
 > If $\int_a^A f(t)\,dt$ exists for each $A > a$, the **improper integral** of $f$ over $[a, \infty)$ is
 >
 > $$
@@ -31,7 +31,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 > [!remark]- Connections
 > - See also: [[§58 Improper Integrals#^def-58-1|Calc Def. §58.1]] (Stewart's treatment, with the integrals over $(-\infty, b]$ and $(-\infty, \infty)$). Rigorous treatment: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]].
 
-> [!example] Example §31.1: Three Improper Integrals
+> [!example] Example §26.1: Three Improper Integrals
 > **(a)** $\displaystyle\int_1^\infty \frac{dt}{t} = \lim_{A \to \infty} \int_1^A \frac{dt}{t} = \lim_{A \to \infty} \ln A = \infty$: the integral **diverges**.
 >
 > **(b)** For which $c$ does $\displaystyle\int_0^\infty e^{ct}\,dt$ converge? If $c \ne 0$,
@@ -54,7 +54,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 
 ^ex-26-1
 
-> [!definition] Definition §31.4: Piecewise Continuous Function
+> [!definition] Definition §26.2: Piecewise Continuous Function
 > A function $f$ is **piecewise continuous** on an interval $\alpha \le t \le \beta$ if the interval can be partitioned by finitely many points $\alpha = t_0 < t_1 < \cdots < t_n = \beta$ so that
 > 1. $f$ is continuous on each open subinterval $t_{i-1} < t < t_i$, and
 > 2. $f$ approaches a finite limit as the endpoints of each subinterval are approached from within the subinterval.
@@ -75,7 +75,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 
 When $f$ cannot be integrated in elementary terms, convergence is tested by comparison. The usual comparison functions are $e^{ct}$ and $t^{-p}$ of [[§26 Definition of the Laplace Transform#^ex-26-1|Example §26.1]].
 
-> [!theorem] Theorem §31.1: Comparison Test for Improper Integrals
+> [!theorem] Theorem §26.1: Comparison Test for Improper Integrals
 > Let $f$ be piecewise continuous for $t \ge a$.
 > - If $|f(t)| \le g(t)$ for $t \ge M$, for some positive constant $M$, and $\int_M^\infty g(t)\,dt$ converges, then $\int_a^\infty f(t)\,dt$ also converges.
 > - If $f(t) \ge g(t) \ge 0$ for $t \ge M$ and $\int_M^\infty g(t)\,dt$ diverges, then $\int_a^\infty f(t)\,dt$ also diverges.
@@ -140,7 +140,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 
 ^def-26-5
 
-> [!theorem] Theorem §31.2: Existence of the Laplace Transform
+> [!theorem] Theorem §26.2: Existence of the Laplace Transform
 > Suppose that
 > 1. $f$ is piecewise continuous on the interval $0 \le t \le A$ for every positive $A$, and
 > 2. there exist real constants $K$, $a$ and $M$, with $K$ and $M$ positive, such that $|f(t)| \le Ke^{at}$ when $t \ge M$.
@@ -179,7 +179,7 @@ When $f$ cannot be integrated in elementary terms, convergence is tested by comp
 
 Functions satisfying the hypotheses of [[§26 Definition of the Laplace Transform#^thm-26-2|Theorem §26.2]] are called **piecewise continuous and of exponential order**. Except in [[§30 Impulse Functions|§30]] (BDP 6.5), the chapter deals almost exclusively with such functions.
 
-> [!example] Example §31.2: The Transforms of 1 and of an Exponential
+> [!example] Example §26.2: The Transforms of 1 and of an Exponential
 > **(a)** For $f(t) = 1$, $t \ge 0$, as in [[§26 Definition of the Laplace Transform#^ex-26-1|Example §26.1]](b):
 >
 > $$
@@ -199,7 +199,7 @@ Functions satisfying the hypotheses of [[§26 Definition of the Laplace Transfor
 > [!remark]- Connections
 > - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-5|342 Ex. §42.5]] (the transform of $1$ for complex $s$ with $\operatorname{Re} s > 0$).
 
-> [!example] Example §31.3: A Unit Pulse
+> [!example] Example §26.3: A Unit Pulse
 > Find the Laplace transform of
 >
 > $$
@@ -220,7 +220,7 @@ Functions satisfying the hypotheses of [[§26 Definition of the Laplace Transfor
 
 ^ex-26-3
 
-> [!theorem] Theorem §31.3: Linearity of the Laplace Transform
+> [!theorem] Theorem §26.3: Linearity of the Laplace Transform
 > Suppose that $\mathcal{L}\{f_1(t)\}$ exists for $s > a_1$ and $\mathcal{L}\{f_2(t)\}$ exists for $s > a_2$. Then for $s > \max(a_1, a_2)$ and any constants $c_1$, $c_2$,
 >
 > $$

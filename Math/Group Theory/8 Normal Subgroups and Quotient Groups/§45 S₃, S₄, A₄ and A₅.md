@@ -108,7 +108,7 @@ $\det$ is item (2) of [[§39 Sources of Normal Subgroups#^ex-39-2|Kernels]] and 
 >
 > $$ SL_2(\mathbb{R})\,Z = GL_2^+(\mathbb{R}) := \{g : \det g > 0\}: $$
 >
-> $\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\det g = d > 0$ then $g = (\sqrt{d}\,I_2)(g/\sqrt{d})$ with $\det(g/\sqrt{d}) = d/d = 1$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-4|Second Isomorphism Theorem]] then gives two isomorphisms, according to which subgroup plays the normal role:
+> $\det(zA) = z^2 \det A > 0$ for $A \in SL_2(\mathbb{R})$, and conversely if $\det g = d > 0$ then $g = (\sqrt{d}\,I_2)(g/\sqrt{d})$ with $\det(g/\sqrt{d}) = d/d = 1$. The [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Second Isomorphism Theorem]] then gives two isomorphisms, according to which subgroup plays the normal role:
 > 1. normal subgroup $Z$, other subgroup $SL_2(\mathbb{R})$ (the statement on the board):
 >
 >    $$ GL_2^+(\mathbb{R})/Z \;\cong\; SL_2(\mathbb{R})/\{\pm I_2\} = PSL_2(\mathbb{R}) $$

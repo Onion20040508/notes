@@ -17,7 +17,7 @@ A square matrix $A$ is invertible when some matrix $A^{-1}$ undoes it from both 
 
 The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1} = 1$. The matrix version requires *both* equations, since matrix multiplication is not commutative, and avoids the slanted-line notation for division.
 
-> [!definition] Definition §17.1: Invertible Matrix; Inverse; Singular
+> [!definition] Definition §14.1: Invertible Matrix; Inverse; Singular
 > An $n \times n$ matrix $A$ is **invertible** if there is an $n \times n$ matrix $C$ such that
 >
 > $$
@@ -40,7 +40,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 > - Rigorous treatment: [[§10 Invertibility and Isomorphisms#^ladr-3-80|LADR 3.80]] (invertible square matrix) and, for linear maps, [[§10 Invertibility and Isomorphisms#^ladr-3-59|LADR 3.59]]–[[§10 Invertibility and Isomorphisms#^ladr-3-60|3.60]] (inverse, unique by the same one-line argument as [[§14 The Inverse of a Matrix#^prop-14-1|Proposition §14.1]]); the matrix of the inverse map is the inverse matrix, [[§10 Invertibility and Isomorphisms#^ladr-3-86|LADR 3.86]].
 > - The invertible $n \times n$ matrices form a group under multiplication, the general linear group: [[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]]. [[§14 The Inverse of a Matrix#^thm-14-4|Theorem §14.4]] below lists the group properties (inverses of inverses and of products).
 
-> [!theorem] Proposition §17.1: The Inverse Is Unique
+> [!theorem] Proposition §14.1: The Inverse Is Unique
 > If $B$ and $C$ are both inverses of $A$, then $B = C$.
 >
 > *Lay: 2.2 (text)*
@@ -58,7 +58,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 
 *Uses:* [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]] (associativity, identity)
 
-> [!example] Example §17.1: Checking an Inverse, and a Matrix with No Inverse
+> [!example] Example §14.1: Checking an Inverse, and a Matrix with No Inverse
 > **(a)** For $A = \begin{bmatrix} 2 & 5 \\ -3 & -7 \end{bmatrix}$ and $C = \begin{bmatrix} -7 & -5 \\ 3 & 2 \end{bmatrix}$,
 >
 > $$
@@ -83,7 +83,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 
 ## The 2 × 2 Case
 
-> [!definition] Definition §17.2: Determinant of a 2 × 2 Matrix
+> [!definition] Definition §14.2: Determinant of a 2 × 2 Matrix
 > The **determinant** of $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ is the number
 >
 > $$
@@ -94,7 +94,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 
 ^def-14-2
 
-> [!theorem] Theorem §17.2: The Inverse of a 2 × 2 Matrix
+> [!theorem] Theorem §14.2: The Inverse of a 2 × 2 Matrix
 > Let $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$. If $ad - bc \ne 0$, then $A$ is invertible and
 >
 > $$
@@ -133,7 +133,7 @@ The reciprocal $5^{-1}$ of $5$ satisfies $5^{-1} \cdot 5 = 1$ and $5 \cdot 5^{-1
 
 The determinant is defined for all $n \times n$ matrices in [[§24 Introduction to Determinants#^def-24-2|Definition §24.2]], and $A$ is invertible exactly when $\det A \ne 0$ ([[§25 Properties of Determinants#^thm-25-3|Theorem §25.3]]). The lecture notes the cost: row reduction inverts an $N \times N$ matrix in about $N^3$ operations, while a determinant formula built like $ad - bc$ has $N!$ terms.
 
-> [!theorem] Theorem §17.3: Solving Ax = b with the Inverse
+> [!theorem] Theorem §14.3: Solving Ax = b with the Inverse
 > If $A$ is an invertible $n \times n$ matrix, then for each $\mathbf{b}$ in $\mathbb{R}^n$ the equation $A\mathbf{x} = \mathbf{b}$ has the unique solution $\mathbf{x} = A^{-1}\mathbf{b}$.
 >
 > *Lay: Theorem 5 (2.2)*
@@ -149,7 +149,7 @@ The determinant is defined for all $n \times n$ matrices in [[§24 Introduction 
 
 *Uses:* [[§14 The Inverse of a Matrix#^def-14-1|Def. §14.1]], [[§12 Matrix Operations#^thm-12-2|§12.2]]
 
-> [!example] Example §17.2: A 2 × 2 Inverse and a System
+> [!example] Example §14.2: A 2 × 2 Inverse and a System
 > Find the inverse of $A = \begin{bmatrix} 3 & 4 \\ 5 & 6 \end{bmatrix}$ and use it to solve
 >
 > $$
@@ -182,7 +182,7 @@ The determinant is defined for all $n \times n$ matrices in [[§24 Introduction 
 
 ## Properties of Inverses
 
-> [!theorem] Theorem §17.4: Properties of Invertible Matrices
+> [!theorem] Theorem §14.4: Properties of Invertible Matrices
 > **(a)** If $A$ is invertible, then $A^{-1}$ is invertible and $(A^{-1})^{-1} = A$.
 >
 > **(b)** If $A$ and $B$ are $n \times n$ invertible matrices, then so is $AB$, and the inverse of $AB$ is the product of the inverses of $A$ and $B$ in the reverse order:
@@ -219,7 +219,7 @@ The determinant is defined for all $n \times n$ matrices in [[§24 Introduction 
 
 *Uses:* [[§14 The Inverse of a Matrix#^def-14-1|Def. §14.1]], [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]], [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|§13.2]]
 
-> [!theorem] Corollary §17.5: Products of Invertible Matrices
+> [!theorem] Corollary §14.5: Products of Invertible Matrices
 > The product of $n \times n$ invertible matrices is invertible, and its inverse is the product of their inverses in the reverse order:
 >
 > $$
@@ -237,7 +237,7 @@ The determinant is defined for all $n \times n$ matrices in [[§24 Introduction 
 
 *Uses:* [[§14 The Inverse of a Matrix#^thm-14-4|§14.4]]
 
-> [!example] Example §17.3: Using the Rules for Inverses
+> [!example] Example §14.3: Using the Rules for Inverses
 > **(a)** Let $A$ and $B$ be invertible $n \times n$ matrices. Find $(-2AB^T)^{-1}$.
 >
 > First, for a scalar $r \ne 0$ and invertible $M$, $rM$ is invertible with $(rM)^{-1} = r^{-1}M^{-1}$, because $(rM)(r^{-1}M^{-1}) = (r r^{-1})MM^{-1} = I$ and likewise in the other order ([[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|Theorem §13.1]](d); Lay's Practice Problem 3). Then by [[§14 The Inverse of a Matrix#^thm-14-4|Theorem §14.4]](b), extended to three factors by [[§14 The Inverse of a Matrix#^cor-14-5|Corollary §14.5]], and (c),

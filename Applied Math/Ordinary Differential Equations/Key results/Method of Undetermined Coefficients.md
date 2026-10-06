@@ -17,6 +17,7 @@ tags: [ordinary-differential-equations, hub]
 - [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-21-3|Proposition §21.3: Superposition of Forcing Terms]]
 
 ## Used in (Ordinary Differential Equations)
+- [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-21-3|Proposition §21.3: Superposition of Forcing Terms]]
 - [[§24 Forced Periodic Vibrations#^thm-24-1|Theorem §24.1: The Steady-State Response]]
 - [[§24 Forced Periodic Vibrations#^prop-24-3|Proposition §24.3: Undamped Forcing off Resonance; Beats]]
 - [[§24 Forced Periodic Vibrations#^prop-24-4|Proposition §24.4: Undamped Resonance]]

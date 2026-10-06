@@ -106,7 +106,7 @@ of the logarithm is used, $\log z$ is single-valued and analytic in the indicate
 
 ^def-35-2
 
-> [!definition] Definition §35.4: Principal Branch of z^c
+> [!definition] Definition §35.3: Principal Branch of z^c
 > Equation (3) also defines the **principal branch** of $z^c$ on the domain $|z| > 0$, $-\pi < \operatorname{Arg} z < \pi$.
 >
 > *B&C: Sec. 35, Equation (3)*

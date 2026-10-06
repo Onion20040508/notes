@@ -18,7 +18,7 @@ This section proves the Fourier convergence theorem that [[§12 Convergence of F
 
 Throughout, the period is $2\pi$; any other period follows by a change of variables ([[§16★ Proof of Convergence#^cor-16-5|Corollary §16.5]]). The finite cosine sum that appears in every step gets a name.
 
-> [!definition] Definition §20.1: The Dirichlet Kernel
+> [!definition] Definition §16.1: The Dirichlet Kernel
 > For $N = 1, 2, \dots$ the **Dirichlet kernel** is the trigonometric polynomial
 >
 > $$
@@ -31,7 +31,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 
 ^def-16-1
 
-> [!theorem] Lemma §20.1: The Kernel Has Integral One
+> [!theorem] Lemma §16.1: The Kernel Has Integral One
 > For all $N = 1, 2, \dots$,
 >
 > $$
@@ -55,7 +55,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 
 *Uses:* [[§16★ Proof of Convergence#^def-16-1|Def. §16.1]], [[§33 Properties of the Riemann Integral#^thm-33-2|451 Thm. §33.2]] (linearity), [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]] (additivity)
 
-> [!theorem] Lemma §20.2: Closed Form of the Kernel
+> [!theorem] Lemma §16.2: Closed Form of the Kernel
 > For all $N = 1, 2, \dots$ and all $y$ that are not multiples of $2\pi$,
 >
 > $$
@@ -90,7 +90,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 ![[m341-12-1.svg]]
 *The Dirichlet kernel $D_N(y) = \sin((N + \frac12)y)/(2\sin\frac12 y)$ for $N = 2, 5, 10$. The central peak has height $N + \frac12$ and width about $2\pi/(N + \frac12)$, and the area under the whole curve is always $\pi$ (Lemma §16.1). Away from $y = 0$ the kernel does not become small: it oscillates ever faster between the envelopes $\pm 1/(2|\sin\frac12 y|)$. The convergence proof works because these fast oscillations cancel against any fixed decent function (Lemma §16.3), not because the kernel decays.*
 
-> [!theorem] Lemma §20.3: Fourier Coefficients Tend to Zero
+> [!theorem] Lemma §16.3: Fourier Coefficients Tend to Zero
 > If $\phi(y)$ is sectionally continuous, $-\pi < y < \pi$, then its Fourier coefficients tend to $0$ with $n$:
 >
 > $$
@@ -115,7 +115,7 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-3|§15.3]] (Bessel's inequality), [[§15★ Mean Error and Convergence in Mean#^cor-15-5|§15.5]]
 
 > [!remark]- Connections
-> - Bessel's inequality in any inner product space: [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]]. The proof above is that inequality for the orthonormal functions $\frac{1}{\sqrt{2\pi}}, \frac{\cos ny}{\sqrt\pi}, \frac{\sin ny}{\sqrt\pi}$ in $L^2(-\pi, \pi)$, together with the fact that the terms of a convergent series tend to $0$.
+> - Bessel's inequality in any inner product space: [[§27 Orthonormal Sets and Bases#^thm-27-5|556 Thm. §27.5]]. The proof above is that inequality for the orthonormal functions $\frac{1}{\sqrt{2\pi}}, \frac{\cos ny}{\sqrt\pi}, \frac{\sin ny}{\sqrt\pi}$ in $L^2(-\pi, \pi)$, together with the fact that the terms of a convergent series tend to $0$.
 > - Lemma §16.3 is the simplest case of the **Riemann–Lebesgue lemma**: the same conclusion holds for every absolutely integrable $\phi$, on an interval or on the whole line. The standard proof checks it for step functions by direct integration and passes to the limit using the density of step functions in $L^1$, [[§24 The L¹ Space and Density Theorems#^thm-24-6|551 Thm. §24.6]]. The vault has no separate proof of this general form; [[§16★ Proof of Convergence#^ex-16-3|Example §16.3]] carries out the limiting argument by hand in one case.
 
 ## The Convergence Theorem
@@ -277,7 +277,7 @@ The theorem is [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1]] (
 *Uses:* [[§16★ Proof of Convergence#^def-16-1|Def. §16.1]], [[§16★ Proof of Convergence#^lem-16-1|§16.1]], [[§16★ Proof of Convergence#^lem-16-2|§16.2]], [[§16★ Proof of Convergence#^lem-16-3|§16.3]], [[§9 Periodic Functions and Fourier Series#^def-9-2|Def. §9.2]], [[§9 Periodic Functions and Fourier Series#^def-9-3|Def. §9.3]], [[§9 Periodic Functions and Fourier Series#^prop-9-2|§9.2]], [[§12 Convergence of Fourier Series#^def-12-4|Def. §12.4]], [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]] (one-sided l'Hôpital's rule), [[§33 Properties of the Riemann Integral#^thm-33-2|451 Thm. §33.2]], [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]]
 
 > [!remark]- Connections
-> - Convergence of Fourier series in the mean-square sense holds for every $f \in L^2$, with no smoothness at all: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Rem. §24.9]] (the Fourier basis, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]); Powers' version is [[§15★ Mean Error and Convergence in Mean#^thm-15-6|Theorem §15.6]], and the computational one [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]]. Pointwise convergence, proved here, needs a local condition at the point $x$, which sectional smoothness provides.
+> - Convergence of Fourier series in the mean-square sense holds for every $f \in L^2$, with no smoothness at all: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Rem. §27.9]] (the Fourier basis, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]]); Powers' version is [[§15★ Mean Error and Convergence in Mean#^thm-15-6|Theorem §15.6]], and the computational one [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]]. Pointwise convergence, proved here, needs a local condition at the point $x$, which sectional smoothness provides.
 > - The tools are those of Single Variable Analysis: the Riemann integral of sectionally continuous functions and one-sided l'Hôpital's rule, [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. For uniform convergence (continuous $f$ with sectionally continuous $f'$) see [[§13 Uniform Convergence#^thm-13-3|Theorem §13.3]].
 > - See also: [[§66 Laurent Series#^ex-66-3|342 Ex. §66.3]] (for boundary values of a function analytic in an annulus, the Fourier series converges as a Laurent series) and [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (for piecewise continuous $f$, the series with its terms damped by $(r/r_0)^n$ converges to $f$ at every point of continuity).
 
@@ -318,7 +318,7 @@ Section 1.3 states the theorem for period $2a$; it follows by stretching the var
 
 The three examples look at the auxiliary function $\phi$ of (16) at $x = 0$ in a corner case, a jump case, and a case where the theorem's hypothesis fails.
 
-> [!example] Example §20.1: A Corner
+> [!example] Example §16.1: A Corner
 > Let $f(x) = |x|$ for $-\pi < x < \pi$ and $f(x + 2\pi) = f(x)$. Then $f$ is continuous and has a corner at $x = 0$. Sketch $\phi(y)$ of (16) for $x = 0$ and find $\phi(0+)$ and $\phi(0-)$.
 >
 > With $x = 0$ and $f(0) = 0$,
@@ -345,7 +345,7 @@ The three examples look at the auxiliary function $\phi$ of (16) at $x = 0$ in a
 
 ^ex-16-1
 
-> [!example] Example §20.2: A Jump
+> [!example] Example §16.2: A Jump
 > Let $f$ be the odd periodic extension (period $2\pi$) of $\pi - x$, $0 < x < \pi$. Then $f$ has a jump at $x = 0$: $f(0+) = \pi$, $f(0-) = -\pi$. Sketch the functions $\phi_R$, $\phi_L$ of Part 4 at $x = 0$.
 >
 > For $0 < y < \pi$, $f(y) - f(0+) = (\pi - y) - \pi = -y$; for $-\pi < y < 0$, $f(y) = -(\pi - (-y)) = -\pi - y$, so $f(y) - f(0-) = -y$ as well. Hence
@@ -360,7 +360,7 @@ The three examples look at the auxiliary function $\phi$ of (16) at $x = 0$ in a
 
 ^ex-16-2
 
-> [!example] Example §20.3: Convergence Without Sectional Smoothness
+> [!example] Example §16.3: Convergence Without Sectional Smoothness
 > Let $f$ be periodic with period $2\pi$ and $f(x) = |x|^{3/4}$ for $-\pi < x < \pi$.
 >
 > **(a) $f$ is continuous at $0$ but not sectionally smooth.** $f(x) \to 0 = f(0)$ as $x \to 0$. For $x \ne 0$, $f'(x) = \frac34|x|^{-1/4}\operatorname{sgn}x$, which is unbounded near $0$: $f'$ has a bad discontinuity there, so $f'$ is not sectionally continuous.

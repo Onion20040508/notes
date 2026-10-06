@@ -10,7 +10,7 @@ tags: [subject, applied-linear-algebra]
 ---
 # Applied Linear Algebra
 
-Matrix linear algebra — linear systems, matrix algebra, determinants, vector spaces, eigenvalues, orthogonality and least squares — following David C. Lay, Steven R. Lay and Judi J. McDonald, *Linear Algebra and Its Applications*, 5th edition (Pearson, 2016), section by section: §1–§52 are Lay's Sections 1.1–7.5 in order (each note's alias gives the Lay number, e.g. "Lay 2.8"), and §64 is his Appendix B (complex numbers; Appendix A's proof is in §2). The course, MATH 235 at UMass Amherst (Alexei Oblomkov), used the 6th edition; its handwritten lecture notes L1–L22 supply examples (*Source: 235 lecture …*). Chapter 7 (★) was not part of the course and is included as its continuation.
+Matrix linear algebra — linear systems, matrix algebra, determinants, vector spaces, eigenvalues, orthogonality and least squares — following David C. Lay, Steven R. Lay and Judi J. McDonald, *Linear Algebra and Its Applications*, 5th edition (Pearson, 2016), section by section: §1–§52 are Lay's Sections 1.1–7.5 in order (each note's alias gives the Lay number, e.g. "Lay 2.8"), and §53 is his Appendix B (complex numbers; Appendix A's proof is in §2). The course, MATH 235 at UMass Amherst (Alexei Oblomkov), used the 6th edition; its handwritten lecture notes L1–L22 supply examples (*Source: 235 lecture …*). Chapter 7 (★) was not part of the course and is included as its continuation.
 
 These are the computational notes: every definition and result Lay states, every proof he gives, his algorithms, and a lean selection of worked examples. The proof-based, operator-theoretic treatment of the same material is [[Linear Algebra]] (Axler, *Linear Algebra Done Right*); the main items here carry a folded *Connections* callout pointing to it.
 
@@ -54,7 +54,7 @@ graph TD
   C8 -.->|on credit| C5
   C8 -.->|on credit| C7
   C1 -.->|28| X1
-  C1 -.->|3| X3
+  C1 -.->|4| X3
   C2 -.->|3| X2
   C2 -.->|29| X1
   C2 -.->|4| X3
@@ -64,7 +64,7 @@ graph TD
   C4 -.->|4| X6
   C4 -.->|5| X4
   C4 -.->|41| X1
-  C4 -.->|6| X3
+  C4 -.->|7| X3
   C5 -.->|31| X1
   C6 -.->|10| X6
   C6 -.->|18| X4
@@ -72,7 +72,7 @@ graph TD
   C7 -.->|3| X6
   C7 -.->|35| X1
   C7 -.->|5| X5
-  C8 -.->|6| X1
+  C8 -.->|7| X1
 ```
 
 ## Chapters
@@ -87,37 +87,37 @@ graph TD
 
 ## Central results
 - [[Uniqueness of the Reduced Echelon Form]] (§2.1)
-- [[Existence and Uniqueness Theorem for Linear Systems]] (§2.3)
-- [[The Invertible Matrix Theorem]] (§13.1)
-- [[Cofactor Expansion]] (§20.1)
-- [[Multiplicative Property of the Determinant]] (§21.9)
-- [[Cramer's Rule]] (§22.1)
-- [[Determinants as Area or Volume]] (§22.4)
-- [[The Coordinate Mapping Is an Isomorphism]] (§26.3)
-- [[The Basis Theorem]] (§27.5)
-- [[The Change-of-Coordinates Matrix]] (§29.1)
-- [[Convergence of Regular Markov Chains]] (§31.3)
-- [[Eigenvalues Are the Roots of the Characteristic Equation]] (§33.4)
-- [[The Diagonalization Theorem]] (§34.1)
-- [[The Fundamental Subspaces Are Orthogonal Complements]] (§40.6)
-- [[The Best Approximation Theorem]] (§42.3)
-- [[The QR Factorization]] (§43.3)
-- [[Least Squares via the Normal Equations]] (§44.1)
-- [[The Principal Axes Theorem]] (§49.2)
+- [[Existence and Uniqueness Theorem for Linear Systems]] (§3.1)
+- [[The Invertible Matrix Theorem]] (§16.1)
+- [[Cofactor Expansion]] (§24.1)
+- [[Multiplicative Property of the Determinant]] (§26.4)
+- [[Cramer's Rule]] (§27.1)
+- [[Determinants as Area or Volume]] (§28.2)
+- [[The Coordinate Mapping Is an Isomorphism]] (§32.3)
+- [[The Basis Theorem]] (§33.5)
+- [[The Change-of-Coordinates Matrix]] (§35.1)
+- [[Convergence of Regular Markov Chains]] (§38.3)
+- [[Eigenvalues Are the Roots of the Characteristic Equation]] (§41.4)
+- [[The Diagonalization Theorem]] (§42.1)
+- [[The Fundamental Subspaces Are Orthogonal Complements]] (§50.2)
+- [[The Best Approximation Theorem]] (§52.3)
+- [[The QR Factorization]] (§53.3)
+- [[Least Squares via the Normal Equations]] (§54.1)
+- [[The Principal Axes Theorem]] (§59.2)
 
 ## Course record (MATH 235)
 The instructor's lectures in the course folder, and where they are in these notes:
 
 | Lectures | Topics | Notes |
 |---|---|---|
-| L1, L02, L2, L3, Feb-18, L5 | row reduction, geometry of linear systems, linear combinations, linear dependence, linear transformations | §1–§10 |
-| L6–L9 | matrix multiplication, powers, inverses | §12–§16 |
-| L10, L14–L17 | subspaces, Nul A, coordinates, rank, change of coordinates | §21–§22, §29–§35 |
-| L11–L13 | determinants, row reduction, Cramer's rule | §24–§27 |
-| L18–L21 | eigenvalues (Fibonacci), diagonalization, multiplicities, complex eigenvalues | §36, §40–§44 |
-| L22 | inner products | §49 |
+| L1, L02, L2, L3, Feb-18, L5 | row reduction, geometry of linear systems, linear combinations, linear dependence, linear transformations | §1–§9 |
+| L6–L9 | matrix multiplication, powers, inverses | §11–§13 |
+| L10, L14–L17 | subspaces, Nul A, coordinates, rank, change of coordinates | §18–§19, §23–§29 |
+| L11–L13 | determinants, row reduction, Cramer's rule | §20–§22 |
+| L18–L21 | eigenvalues (Fibonacci), diagonalization, multiplicities, complex eigenvalues | §30, §32–§36 |
+| L22 | inner products | §40 |
 
 Exams: three (20%, 20%, 25%); online homework and quizzes on MyMathLab (35%). The instructor's section checklist covers Chapters 2–4.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Linear Algebra]] (215), [[Calculus]] (25), [[Functional Analysis]] (24), [[Logic and Proofs]] (13), [[Group Theory]] (11), [[Multivariable Analysis]] (8), [[Topology]] (2), [[Measure Theory]] (1).
+Number of *Connections* links from these notes to each Math subject: [[Linear Algebra]] (216), [[Calculus]] (25), [[Functional Analysis]] (24), [[Logic and Proofs]] (15), [[Group Theory]] (11), [[Multivariable Analysis]] (8), [[Topology]] (2), [[Measure Theory]] (1).

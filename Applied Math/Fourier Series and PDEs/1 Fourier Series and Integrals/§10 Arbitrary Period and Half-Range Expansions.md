@@ -21,7 +21,7 @@ $$
 f(x) \sim a_0 + \sum_{n=1}^{\infty} a_n\cos\Big(\frac{n\pi x}{a}\Big) + b_n\sin\Big(\frac{n\pi x}{a}\Big) .
 $$
 
-> [!theorem] Proposition §14.1: Fourier Coefficients for Period 2a
+> [!theorem] Proposition §10.1: Fourier Coefficients for Period 2a
 > The Fourier coefficients of a function $f$ of period $2a$ are
 >
 > $$
@@ -56,7 +56,7 @@ $$
 
 *Uses:* [[§9 Periodic Functions and Fourier Series#^prop-9-1|§9.1]], [[§9 Periodic Functions and Fourier Series#^prop-9-3|§9.3]], [[§9 Periodic Functions and Fourier Series#^prop-9-4|§9.4]], [[§9 Periodic Functions and Fourier Series#^def-9-2|Def. §9.2]]
 
-> [!example] Example §14.1: The Rectified Sine |sin(πx)|
+> [!example] Example §10.1: The Rectified Sine |sin(πx)|
 > Find the Fourier series of $f(x) = |\sin(\pi x)|$.
 >
 > $\sin(\pi x)$ has period $2$, but $|\sin(\pi x)|$ has period $1$, so $a = \frac12$. To do the integrals, get rid of the absolute value: on one period,
@@ -126,7 +126,7 @@ $$
 
 the inequality for $x$ recording that $f$ was defined only on $-a$ to $a$.
 
-> [!example] Example §14.2: A Piecewise Function of Period 4
+> [!example] Example §10.2: A Piecewise Function of Period 4
 > Let $f$ be periodic with period $4$ and
 >
 > $$

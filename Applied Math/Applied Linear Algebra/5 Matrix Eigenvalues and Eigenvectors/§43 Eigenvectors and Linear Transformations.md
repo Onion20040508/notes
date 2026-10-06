@@ -17,7 +17,7 @@ This section reads the factorization $A = PDP^{-1}$ as a statement about linear 
 
 Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space, and $T : V \to W$ a linear transformation. Choose (ordered) bases $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for $V$ and $\mathcal{C}$ for $W$. For $\mathbf{x}$ in $V$, the coordinate vector $[\mathbf{x}]_{\mathcal{B}}$ is in $\mathbb{R}^n$ and the coordinate vector $[T(\mathbf{x})]_{\mathcal{C}}$ of its image is in $\mathbb{R}^m$ ([[§32 Coordinate Systems#^def-32-1|Definition §32.1]]).
 
-> [!theorem] Theorem §53.1: The Matrix for T Relative to B and C
+> [!theorem] Theorem §43.1: The Matrix for T Relative to B and C
 > With $V$, $W$, $T$, $\mathcal{B}$, $\mathcal{C}$ as above, let
 >
 > $$
@@ -73,7 +73,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 > [!remark]- Connections
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-31|LADR 3.31]] (matrix of a linear map, $\mathcal{M}(T, (v), (w))$, column $k$ = coordinates of $Tv_k$) and, for operators, [[§16 Upper-Triangular Matrices#^ladr-5-35|LADR 5.35]]. Equation (3) is Axler's $\mathcal{M}(Tv) = \mathcal{M}(T)\mathcal{M}(v)$; Lay's $[\,\cdot\,]_{\mathcal{B}}$ is Axler's $\mathcal{M}(\,\cdot\,)$.
 
-> [!example] Example §53.1: Reading Off the Matrix
+> [!example] Example §43.1: Reading Off the Matrix
 > Suppose $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ is a basis for $V$ and $\mathcal{C} = \{\mathbf{c}_1, \mathbf{c}_2, \mathbf{c}_3\}$ is a basis for $W$, and $T : V \to W$ is linear with
 >
 > $$
@@ -90,7 +90,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 
 ^ex-43-1
 
-> [!example] Example §53.2: The Matrix of Differentiation
+> [!example] Example §43.2: The Matrix of Differentiation
 > $T : \mathbb{P}_2 \to \mathbb{P}_2$, $T(a_0 + a_1t + a_2t^2) = a_1 + 2a_2t$, is linear (it is differentiation). Find the $\mathcal{B}$-matrix for $T$ when $\mathcal{B} = \{1, t, t^2\}$, and verify (5).
 >
 > The images of the basis vectors are $T(1) = 0$ (the zero polynomial), $T(t) = 1$ (the constant polynomial $1$) and $T(t^2) = 2t$. Their $\mathcal{B}$-coordinate vectors, found by inspection, are the columns of $[T]_{\mathcal{B}}$:
@@ -115,7 +115,7 @@ Let $V$ be an $n$-dimensional vector space, $W$ an $m$-dimensional vector space,
 
 In applied problems a linear transformation of $\mathbb{R}^n$ usually appears first as a matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$. If $A$ is diagonalizable, there is a basis of $\mathbb{R}^n$ consisting of eigenvectors of $A$, and the matrix of $\mathbf{x} \mapsto A\mathbf{x}$ in that basis is diagonal.
 
-> [!theorem] Theorem §53.2: Diagonal Matrix Representation
+> [!theorem] Theorem §43.2: Diagonal Matrix Representation
 > Suppose $A = PDP^{-1}$, where $D$ is a diagonal $n \times n$ matrix. If $\mathcal{B}$ is the basis for $\mathbb{R}^n$ formed from the columns of $P$, then $D$ is the $\mathcal{B}$-matrix for the transformation $\mathbf{x} \mapsto A\mathbf{x}$.
 >
 > More generally, for *any* basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ of $\mathbb{R}^n$ and $P = [\,\mathbf{b}_1 \; \cdots \; \mathbf{b}_n\,]$, the $\mathcal{B}$-matrix of $T(\mathbf{x}) = A\mathbf{x}$ is
@@ -172,7 +172,7 @@ Conversely, for any basis $\mathcal{B}$ of $\mathbb{R}^n$, the $\mathcal{B}$-mat
 > [!remark]- Connections
 > - Rigorous treatment: formula (6) is the change-of-basis formula [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]] ($A = C^{-1}BC$, with $C = \mathcal{M}(I, (u), (v))$ the matrix that converts $u$-coordinates into $v$-coordinates); Axler's Example 3.83 is the same computation with $\mathcal{B} = \{(4, 2), (5, 3)\}$.
 
-> [!example] Example §53.3: A Triangular Representation (Jordan Form)
+> [!example] Example §43.3: A Triangular Representation (Jordan Form)
 > Let $A = \begin{bmatrix} 4 & -9 \\ 4 & -8 \end{bmatrix}$, $\mathbf{b}_1 = \begin{bmatrix} 3 \\ 2 \end{bmatrix}$, $\mathbf{b}_2 = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$. The characteristic polynomial of $A$ is $(4 - \lambda)(-8 - \lambda) + 36 = \lambda^2 + 4\lambda + 4 = (\lambda + 2)^2$, but
 >
 > $$
@@ -195,7 +195,7 @@ Conversely, for any basis $\mathcal{B}$ of $\mathbb{R}^n$, the $\mathcal{B}$-mat
 
 Every square matrix is similar to a matrix in Jordan form, using a basis of eigenvectors and generalized eigenvectors (Lay cites Noble–Daniel, *Applied Linear Algebra*, Ch. 9; rigorous treatment [[§32 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46]], over $\mathbb{C}$). For $2 \times 2$ matrices the lecture states the complete answer, which can be proved with what we have.
 
-> [!theorem] Theorem §53.3: Normal Forms of 2 × 2 Matrices with Real Eigenvalues
+> [!theorem] Theorem §43.3: Normal Forms of 2 × 2 Matrices with Real Eigenvalues
 > Let $A$ be a $2 \times 2$ matrix whose characteristic polynomial has real roots.
 >
 > 1. If $A$ has two eigenvalues $\lambda_1 \ne \lambda_2$, then $A$ is diagonalizable: $P^{-1}AP = \begin{bmatrix} \lambda_1 & 0 \\ 0 & \lambda_2 \end{bmatrix}$ for some invertible $P$.

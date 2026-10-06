@@ -17,7 +17,7 @@ tags: [calculus]
 
 Why should a population grow at a rate proportional to its size? Suppose $1000$ bacteria grow at a rate of $P' = 300$ bacteria per hour. Add another $1000$ bacteria of the same type. Each half of the combined population grows at $300$ per hour, so the population of $2000$ grows at $600$ per hour, at least initially (provided there is enough room and nutrition). Doubling the size doubles the growth rate.
 
-> [!definition] Definition §80.1: Law of Natural Growth
+> [!definition] Definition §69.1: Law of Natural Growth
 > If $P(t)$ is the value of a quantity at time $t$ and the rate of change of $P$ with respect to $t$ is proportional to its size $P(t)$ at any time, then
 >
 > $$
@@ -36,7 +36,7 @@ Why should a population grow at a rate proportional to its size? Suppose $1000$ 
 
 ^def-69-1
 
-> [!theorem] Theorem §80.1: Solution of the Natural Growth Equation
+> [!theorem] Theorem §69.1: Solution of the Natural Growth Equation
 > The solution of the initial-value problem
 >
 > $$
@@ -96,7 +96,7 @@ $$
 \frac{dP/dt}{P} = k\Big(1 - \frac{P}{M}\Big) .
 $$
 
-> [!definition] Definition §80.2: Carrying Capacity and the Logistic Equation
+> [!definition] Definition §69.2: Carrying Capacity and the Logistic Equation
 > The **carrying capacity** $M$ of an environment is the maximum population that the environment is capable of sustaining in the long run. Multiplying the relative growth rate $k(1 - P/M)$ by $P$ gives the **logistic differential equation**
 >
 > $$
@@ -119,7 +119,7 @@ $$
 
 ^rem-69-2
 
-> [!example] Example §80.1: The Direction Field of a Logistic Equation
+> [!example] Example §69.1: The Direction Field of a Logistic Equation
 > Draw a direction field for the logistic equation with $k = 0.08$ and carrying capacity $M = 1000$. What can you deduce about the solutions?
 >
 > The equation is
@@ -141,7 +141,7 @@ $$
 
 The logistic equation is separable, so it can be solved explicitly with the method of [[§68 Separable Equations|§68]].
 
-> [!theorem] Theorem §80.2: Solution of the Logistic Equation
+> [!theorem] Theorem §69.2: Solution of the Logistic Equation
 > The solution of the logistic equation (4) with initial population $P(0) = P_0 > 0$ is
 >
 > $$
@@ -208,7 +208,7 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 > [!remark]- Connections
 > - ODE version: [[§9 Autonomous Differential Equations and Population Dynamics#^def-9-3|331 Def. §9.3]] and [[§9 Autonomous Differential Equations and Population Dynamics#^prop-9-3|331 Prop. §9.3]] (the logistic equation $y' = r(1 - y/K)y$ and its solution), with the stability of the equilibria $0$ and $K$ read off the phase line.
 
-> [!theorem] Proposition §80.3: Inflection at Half the Carrying Capacity
+> [!theorem] Proposition §69.3: Inflection at Half the Carrying Capacity
 > If $P$ satisfies the logistic equation (4), then
 >
 > $$
@@ -239,7 +239,7 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 
 The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave downward for all $t > 0$, and one starting above $M$ is concave upward (then $1 - P/M$ and $1 - 2P/M$ are both negative).
 
-> [!example] Example §80.2: Using the Logistic Formula
+> [!example] Example §69.2: Using the Logistic Formula
 > Write the solution of the initial-value problem
 >
 > $$
@@ -285,7 +285,7 @@ The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave 
 
 In the 1930s the biologist G. F. Gause conducted an experiment with the protozoan *Paramecium* and used a logistic equation to model his data. He counted the population daily, estimated the initial relative growth rate to be $0.7944$ and the carrying capacity to be $64$.
 
-> [!example] Example §80.3: Gause's Paramecium Data
+> [!example] Example §69.3: Gause's Paramecium Data
 > Find the exponential and logistic models for Gause's data (the row "observed" in the table below). Compare the predicted values with the observed values and comment on the fit for each model.
 >
 > **Exponential model.** With relative growth rate $k = 0.7944$ and initial population $P_0 = 2$, [[§69 Models for Population Growth#^thm-69-1|Theorem §69.1]] gives
@@ -327,7 +327,7 @@ Many countries that formerly experienced exponential growth now find their rates
 
 ## Other Models for Population Growth
 
-> [!definition] Definition §80.3: Logistic Model with Harvesting
+> [!definition] Definition §69.3: Logistic Model with Harvesting
 > Two modifications of the logistic equation (4) are treated here. The first, with constants $k, M > 0$:
 > - **Harvesting.** For a population harvested at a constant rate $c > 0$ (think of a population of fish caught at a constant rate),
 >
@@ -339,7 +339,7 @@ Many countries that formerly experienced exponential growth now find their rates
 
 ^def-69-3
 
-> [!definition] Definition §80.4: Logistic Model with a Minimum Population
+> [!definition] Definition §69.4: Logistic Model with a Minimum Population
 > The second modification of the logistic equation (4), with constants $k, M > 0$:
 > - **Minimum population.** For a species that tends to become extinct below a minimum population level $m$ (adults may not be able to find suitable mates),
 >

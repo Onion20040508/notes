@@ -17,7 +17,7 @@ The Chain Rule shows that the gradient is perpendicular to level curves and leve
 
 Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a function $F$ of three variables, and let $P(x_0, y_0, z_0)$ be a point on $S$. Let $C$ be any curve that lies on $S$ and passes through $P$, described by a continuous vector function $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ ([[§100 Vector Functions and Space Curves#^def-100-4|Definition §100.4]]), with $\mathbf{r}(t_0) = \langle x_0, y_0, z_0 \rangle$.
 
-> [!theorem] Theorem §133.1: The Gradient Is Normal to Level Surfaces
+> [!theorem] Theorem §112.1: The Gradient Is Normal to Level Surfaces
 > Let $F$ be differentiable, let $S$ be the level surface $F(x, y, z) = k$, and let $\mathbf{r}(t) = \langle x(t), y(t), z(t) \rangle$ be a curve on $S$, with $x$, $y$, $z$ differentiable, passing through $P(x_0, y_0, z_0)$ at $t = t_0$. Then
 >
 > $$
@@ -49,7 +49,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 *Uses:* [[§110 The Chain Rule#^thm-110-3|§110.3]], [[§111 Directional Derivatives and the Gradient Vector#^def-111-4|Def. §111.4]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-1|§101.1]]
 
-> [!definition] Definition §133.1: Tangent Plane to a Level Surface
+> [!definition] Definition §112.1: Tangent Plane to a Level Surface
 > If $\nabla F(x_0, y_0, z_0) \ne \mathbf{0}$, the **tangent plane to the level surface** $F(x, y, z) = k$ at $P(x_0, y_0, z_0)$ is the plane that passes through $P$ and has normal vector $\nabla F(x_0, y_0, z_0)$:
 >
 > $$
@@ -60,7 +60,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 ^def-112-1
 
-> [!definition] Definition §133.2: Normal Line to a Level Surface
+> [!definition] Definition §112.2: Normal Line to a Level Surface
 > The **normal line** to $S$ at $P$ is the line through $P$ perpendicular to the tangent plane. Its direction is given by $\nabla F(x_0, y_0, z_0)$, so its symmetric equations are
 >
 > $$
@@ -73,7 +73,7 @@ Suppose $S$ is a surface with equation $F(x, y, z) = k$, a level surface of a fu
 
 By [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]] every tangent line at $P$ to a curve on $S$ through $P$ lies in this plane, which is the fact used in [[§109 Tangent Planes and Linear Approximations#^ex-109-5|Example §109.5]]. The normal line can also be written in vector form, $\mathbf{r}(t) = \langle x_0, y_0, z_0 \rangle + t\,\nabla F(x_0, y_0, z_0)$ ([[§98 Equations of Lines and Planes#^thm-98-1|Theorem §98.1]]); this form also works when a component of $\nabla F$ is $0$.
 
-> [!theorem] Proposition §133.2: Consistency with the Tangent Plane to a Graph
+> [!theorem] Proposition §112.2: Consistency with the Tangent Plane to a Graph
 > If $S$ is the graph $z = f(x, y)$ of a differentiable function, then the tangent plane (19) to $S$, regarded as the level surface $F(x, y, z) = f(x, y) - z = 0$, is the tangent plane $z - z_0 = f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$ of [[§109 Tangent Planes and Linear Approximations#^thm-109-1|Theorem §109.1]].
 >
 > *Stewart: 14.6 (text)*
@@ -93,7 +93,7 @@ By [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]] every t
 
 *Uses:* [[§112 Tangent Planes to Level Surfaces#^def-112-1|Def. §112.1]], [[§109 Tangent Planes and Linear Approximations#^thm-109-1|§109.1]]
 
-> [!example] Example §133.1: Tangent Planes and Normal Lines
+> [!example] Example §112.1: Tangent Planes and Normal Lines
 > **(a)** Find the equations of the tangent plane and normal line at the point $(-2, 1, -3)$ to the ellipsoid
 >
 > $$
@@ -129,7 +129,7 @@ By [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]] every t
 
 ^ex-112-1
 
-> [!example] Example §133.2: Prescribing the Tangent Plane
+> [!example] Example §112.2: Prescribing the Tangent Plane
 > **(a)** Find every point on the ellipsoid $x^2 + 2y^2 + 3z^2 = 1$ at which the tangent plane is parallel to the plane $3x - y + 3z = 1$.
 >
 > Two planes are parallel when their normal vectors are parallel. The normal vector of the given plane is $\mathbf{n} = \langle 3, -1, 3 \rangle$, and the tangent plane at $(x, y, z)$ has normal vector $\nabla F = \langle 2x, 4y, 6z \rangle$, where $F = x^2 + 2y^2 + 3z^2$. So we need $\nabla F = \lambda \mathbf{n}$ for some scalar $\lambda$, together with the equation of the surface:
@@ -168,7 +168,7 @@ By [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]] every t
 
 For a function $f$ of three variables and a point $P$ of its domain, $\nabla f(P)$ gives the direction of fastest increase of $f$ ([[§111 Directional Derivatives and the Gradient Vector#^thm-111-4|Theorem §111.4]]) and is orthogonal to the level surface of $f$ through $P$ ([[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]]). These are compatible: moving along the level surface, $f$ does not change at all, so it is reasonable that $f$ increases most when we move perpendicular to it. The same holds for a function of two variables and its level curves.
 
-> [!theorem] Theorem §133.3: Properties of the Gradient Vector
+> [!theorem] Theorem §112.3: Properties of the Gradient Vector
 > Let $f$ be a differentiable function of two or three variables and suppose that $\nabla f(\mathbf{x}) \ne \mathbf{0}$.
 > - The directional derivative of $f$ at $\mathbf{x}$ in the direction of a unit vector $\mathbf{u}$ is given by $D_{\mathbf{u}} f(\mathbf{x}) = \nabla f(\mathbf{x}) \cdot \mathbf{u}$.
 > - $\nabla f(\mathbf{x})$ points in the direction of maximum rate of increase of $f$ at $\mathbf{x}$, and that maximum rate of change is $|\nabla f(\mathbf{x})|$.
@@ -188,4 +188,4 @@ For a function $f$ of three variables and a point $P$ of its domain, $\nabla f(P
 > [!remark] Remark: Curves of Steepest Ascent and Gradient Fields
 > On a topographic map of a hill, with $f(x, y)$ the height above sea level, a **curve of steepest ascent** is drawn by making it perpendicular to all of the contour lines; a creek running downhill follows a curve of steepest descent. Mathematical software can plot sample gradient vectors $\nabla f(a, b)$, each starting at the point $(a, b)$: a **gradient vector field** ([[§125 Vector Fields#^def-125-3|Definition §125.3]]). For $f(x, y) = x^2 - y^2$, superimposed on the contour map of $f$ (hyperbolas), the gradient vectors $\langle 2x, -2y \rangle$ point "uphill" and cross the level curves at right angles.
 
-^rem-112-2
+^rem-112-1

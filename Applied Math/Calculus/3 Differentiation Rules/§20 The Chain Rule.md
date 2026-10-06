@@ -151,7 +151,7 @@ The proof rests on a reformulation of differentiability.
 
 ^rem-20-3
 
-> [!example] Example §23.1: Two Ways to Write the Chain Rule
+> [!example] Example §20.1: Two Ways to Write the Chain Rule
 > Find $F'(x)$ if $F(x) = \sqrt{x^2 + 1}$.
 >
 > **Solution 1 (Formula 1).** $F(x) = f(g(x))$ with $f(u) = \sqrt{u}$ and $g(x) = x^2 + 1$. Since
@@ -174,7 +174,7 @@ The proof rests on a reformulation of differentiability.
 
 ^ex-20-1
 
-> [!example] Example §23.2: Which Function Is Outside?
+> [!example] Example §20.2: Which Function Is Outside?
 > Differentiate (a) $y = \sin(x^2)$ and (b) $y = \sin^2 x$.
 >
 > **(a)** The outer function is sine and the inner function is squaring:
@@ -249,7 +249,7 @@ In [[§20 The Chain Rule#^ex-20-2|Example §20.2]](a) the Chain Rule was combine
 
 For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 
-> [!example] Example §23.3: Combining with the Product and Quotient Rules
+> [!example] Example §20.3: Combining with the Product and Quotient Rules
 > **(a)** Find the derivative of $g(t) = \left( \dfrac{t - 2}{2t + 1} \right)^9$.
 >
 > By [[§20 The Chain Rule#^cor-20-3|Corollary §20.3]] and then the Quotient Rule,
@@ -281,7 +281,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 
 ^ex-20-3
 
-> [!example] Example §23.4: Chains of Three Links
+> [!example] Example §20.4: Chains of Three Links
 > **(a)** If $f(x) = \sin(\cos(\tan x))$, the Chain Rule is used twice:
 >
 > $$
@@ -328,7 +328,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 
 Comparing with [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-5|Theorem §17.5]]: the constant $f'(0) = \lim_{h \to 0} (b^h - 1)/h$ is $\ln b$.
 
-> [!example] Example §23.5: Exponentials with Other Bases
+> [!example] Example §20.5: Exponentials with Other Bases
 > Find the derivative of (a) $g(x) = 2^x$ and (b) $h(x) = 5^{x^2}$.
 >
 > **(a)** By Formula 5 with $b = 2$, $g'(x) = 2^x \ln 2$. This agrees with the estimate $\frac{d}{dx}(2^x) \approx (0.693)2^x$ of [[§17 Derivatives of Polynomials and Exponential Functions#^rem-17-2|Remark: The Constants for Base 2 and Base 3]], because $\ln 2 \approx 0.693147$.

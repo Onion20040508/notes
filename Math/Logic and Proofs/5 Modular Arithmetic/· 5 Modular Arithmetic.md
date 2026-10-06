@@ -9,7 +9,7 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, Chapters 19–22.*
 
-**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (7), [[· 2 Sets and Functions|2 Sets and Functions]] (7), [[· 3 Numbers and Counting|3 Numbers and Counting]] (7), [[· 4 Arithmetic|4 Arithmetic]] (9)
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (7), [[· 2 Sets and Functions|2 Sets and Functions]] (9), [[· 3 Numbers and Counting|3 Numbers and Counting]] (7), [[· 4 Arithmetic|4 Arithmetic]] (9)
 **Used by:** [[· 6 Prime Numbers|6 Prime Numbers]] (7)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (7), [[Group Theory]] (31), [[Measure Theory]] (3), [[Topology]] (1)
 
@@ -18,11 +18,13 @@ tags: [chapter, logic-and-proofs]
 - [[§20 Linear Congruences]]
 - [[§21 Congruence Classes and the Arithmetic of Remainders]]
 - [[§22 Partitions and Equivalence Relations]]
+- [[§22a Constructing ℚ and ℤ]]
+- [[§22b The Congruence 290x ≡ 5 (mod 357)]]
 
 ## Central results
-- [[Solvability of Linear Congruences]] (§20.4)
+- [[Solvability of Linear Congruences]] (§20.5)
 - [[Equivalence Relations Are Partitions]] (§22.4)
-- [[Construction of the Rational Numbers]] (§22.9)
+- [[Construction of the Rational Numbers]] (§22a.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

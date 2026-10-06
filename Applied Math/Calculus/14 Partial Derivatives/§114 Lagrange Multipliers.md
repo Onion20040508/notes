@@ -20,7 +20,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ^rem-114-1
 
-> [!theorem] Theorem §136.1: The Lagrange Condition
+> [!theorem] Theorem §114.1: The Lagrange Condition
 > Let $f$ and $g$ have continuous first partial derivatives, and suppose that $f$, restricted to the surface $S$: $g(x, y, z) = k$, has an extreme value at the point $P(x_0, y_0, z_0)$ (a maximum or minimum compared with the values of $f$ at the points of $S$ near $P$). If $\nabla g(x_0, y_0, z_0) \ne \mathbf{0}$, then there is a number $\lambda$ such that
 >
 > $$
@@ -52,7 +52,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 > - Rigorous treatment: [[§17 Optimization and Lagrange Multipliers#^thm-17-2|452 Thm. §17.2]], with the hypothesis $\nabla g \ne \mathbf{0}$ as the "constraint qualification" and the proof through the Implicit Function Theorem; hub [[Method of Lagrange Multipliers]].
 > - See also: [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] (the extremes of $\mathbf{x}^TA\mathbf{x}$ on the unit sphere are the largest and smallest eigenvalues of $A$; the Lagrange condition $\nabla f = \lambda\nabla g$ reads $A\mathbf{x} = \lambda\mathbf{x}$, though 235 proves it without calculus), worked in [[§60★ Constrained Optimization#^ex-60-2|235 Ex. §60.2]].
 
-> [!definition] Definition §136.1: Lagrange Multiplier
+> [!definition] Definition §114.1: Lagrange Multiplier
 > The number $\lambda$ in Equation (1) is called a **Lagrange multiplier**.
 >
 > *Stewart: 14.8 (text)*
@@ -81,7 +81,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ^rem-114-2
 
-> [!example] Example §136.1: On a Circle and on a Disk
+> [!example] Example §114.1: On a Circle and on a Disk
 > **(a)** Find the extreme values of $f(x, y) = x^2 + 2y^2$ on the circle $x^2 + y^2 = 1$.
 >
 > With $g(x, y) = x^2 + y^2$ (and $\nabla g = \langle 2x, 2y \rangle \ne \mathbf{0}$ on the circle), the equations $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g = 1$ are
@@ -109,7 +109,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 ![[m233-97-1.svg]]
 *[[§114 Lagrange Multipliers#^ex-114-1|Example §114.1]](a): the level curves $x^2 + 2y^2 = c$ of $f$ (ellipses, green) and the constraint circle $x^2 + y^2 = 1$ (red). The ellipse $c = 1$ touches the circle from inside at $(\pm 1, 0)$, the ellipse $c = 2$ from outside at $(0, \pm 1)$; at these four points the gradients of $f$ and $g$ are parallel (arrows). Ellipses with $1 < c < 2$ cross the circle, so $f$ takes all values between $1$ and $2$ on it.*
 
-> [!example] Example §136.2: The Box Without a Lid
+> [!example] Example §114.2: The Box Without a Lid
 > A rectangular box without a lid is to be made from $12$ m² of cardboard. Find the maximum volume of such a box.
 >
 > Let $x$, $y$, $z$ be the length, width and height of the box in meters. We maximize $V = xyz$ subject to $g(x, y, z) = 2xz + 2yz + xy = 12$ (the area of the four sides and the bottom). The equations $\nabla V = \lambda \nabla g$, $g = 12$ are
@@ -136,7 +136,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ^ex-114-2
 
-> [!example] Example §136.3: Nearest and Farthest Points on a Sphere
+> [!example] Example §114.3: Nearest and Farthest Points on a Sphere
 > Find the points on the sphere $x^2 + y^2 + z^2 = 4$ that are closest to and farthest from the point $(3, 1, -1)$.
 >
 > The algebra is simpler for the square of the distance, $f(x, y, z) = (x - 3)^2 + (y - 1)^2 + (z + 1)^2$, with constraint $g(x, y, z) = x^2 + y^2 + z^2 = 4$. The equations $\nabla f = \lambda \nabla g$, $g = 4$ are
@@ -163,7 +163,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ^ex-114-3
 
-> [!example] Example §136.4: Extreme Values from the Exams
+> [!example] Example §114.4: Extreme Values from the Exams
 > **(a)** Find the minimum and maximum values of $f(x, y) = e^{xy}$ over the region $D$ given by $x^2 + 4y^2 \le 2$.
 >
 > $D$ is closed and bounded and $f$ is continuous, so both extremes exist ([[§113 Maximum and Minimum Values#^thm-113-3|Theorem §113.3]]).
@@ -192,7 +192,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ## Lagrange Multipliers: Two Constraints
 
-> [!theorem] Theorem §136.2: Lagrange Multipliers with Two Constraints
+> [!theorem] Theorem §114.2: Lagrange Multipliers with Two Constraints
 > Suppose $f$ has an extreme value at $P(x_0, y_0, z_0)$ subject to two constraints $g(x, y, z) = k$ and $h(x, y, z) = c$, that is, on the curve of intersection $C$ of these two level surfaces. If the gradient vectors $\nabla g(x_0, y_0, z_0)$ and $\nabla h(x_0, y_0, z_0)$ are not zero and not parallel, then there are numbers $\lambda$ and $\mu$ (both called Lagrange multipliers) such that
 >
 > $$
@@ -221,7 +221,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 > [!remark]- Connections
 > - Rigorous treatment: [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 Thm. §17.3]] ($k$ constraints with linearly independent gradients); "not zero and not parallel" is linear independence of two vectors.
 
-> [!example] Example §136.5: Two Constraints
+> [!example] Example §114.5: Two Constraints
 > Find the maximum value of the function $f(x, y, z) = x + 2y + 3z$ on the curve of intersection of the plane $x - y + z = 1$ and the cylinder $x^2 + y^2 = 1$.
 >
 > We maximize $f$ subject to $g(x, y, z) = x - y + z = 1$ and $h(x, y, z) = x^2 + y^2 = 1$. The gradients $\nabla g = \langle 1, -1, 1 \rangle$ and $\nabla h = \langle 2x, 2y, 0 \rangle$ are never parallel and never zero on the curve. The Lagrange condition $\nabla f = \lambda \nabla g + \mu \nabla h$ gives

@@ -15,7 +15,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 
 ## Vector Spaces
 
-> [!definition] Definition §35.1: Vector Space
+> [!definition] Definition §29.1: Vector Space
 > A **vector space** is a nonempty set $V$ of objects, called *vectors*, on which are defined two operations, called *addition* and *multiplication by scalars* (real numbers), subject to the ten axioms below. The axioms must hold for all vectors $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$ in $V$ and all scalars $c$ and $d$.
 > 1. The sum of $\mathbf{u}$ and $\mathbf{v}$, denoted by $\mathbf{u} + \mathbf{v}$, is in $V$.
 > 2. $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.
@@ -37,7 +37,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 > [!remark]- Connections
 > - Rigorous treatment: [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]], over $\mathbf{F} = \mathbb{R}$ or $\mathbb{C}$ from the start; Axler packs Lay's axioms 1 and 6 into "addition and scalar multiplication are functions $V \times V \to V$, $\mathbf{F} \times V \to V$". The same definition over $\mathbb{R}$ or $\mathbb{C}$: [[§1 Linear Spaces#^def-1-1|556 Def. §1.1]].
 
-> [!theorem] Proposition §35.1: The Zero Vector and Negatives Are Unique
+> [!theorem] Proposition §29.1: The Zero Vector and Negatives Are Unique
 > In a vector space $V$, the zero vector of Axiom 4 is unique, and for each $\mathbf{u}$ in $V$ the vector $-\mathbf{u}$ of Axiom 5, called the **negative** of $\mathbf{u}$, is unique.
 >
 > *Lay: 4.1 (text); Exercises 25 and 26*
@@ -64,7 +64,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 
 *Uses:* [[§29 Vector Spaces and Subspaces#^def-29-1|Def. §29.1]]
 
-> [!theorem] Proposition §35.2: Arithmetic with Zero and Negatives
+> [!theorem] Proposition §29.2: Arithmetic with Zero and Negatives
 > For each $\mathbf{u}$ in $V$ and scalar $c$,
 >
 > $$
@@ -105,7 +105,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 
 *Uses:* [[§29 Vector Spaces and Subspaces#^def-29-1|Def. §29.1]], [[§29 Vector Spaces and Subspaces#^prop-29-1|§29.1]]
 
-> [!example] Example §35.1: A Catalogue of Vector Spaces
+> [!example] Example §29.1: A Catalogue of Vector Spaces
 > **(a) $\mathbb{R}^n$**, $n \ge 1$: the premier example; geometric intuition from $\mathbb{R}^3$ guides the whole chapter. It is **finite dimensional** (lecture L14).
 >
 > **(b) Arrows.** The set of all arrows (directed line segments) in three-dimensional space, two arrows being equal if they have the same length and point in the same direction. Add by the parallelogram rule; $c\mathbf{v}$ is the arrow $|c|$ times as long as $\mathbf{v}$, in the same direction if $c \ge 0$ and the opposite one otherwise. An arrow of length zero (a point) is the zero vector, and the negative of $\mathbf{v}$ is $(-1)\mathbf{v}$. Axioms 1, 4, 5, 6 and 10 are evident; the others are verified by geometry (for instance, Axiom 2 is the parallelogram, and Axiom 3 is the two ways of adding three arrows head to tail). No coordinate system is involved. This is the common model for forces in physics.
@@ -160,7 +160,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 > [!remark]- Connections
 > - Rigorous treatment: [[§3 Subspaces#^ladr-1-34|LADR 1.34]] (the same three conditions, with Axiom-by-Axiom proof that they suffice); [[§1 Linear Spaces#^def-1-2|556 Def. §1.2]]. For subspaces of $\mathbb{R}^n$ this is [[§21 Subspaces of ℝⁿ#^def-21-1|Definition §21.1]] (2.8).
 
-> [!theorem] Proposition §35.3: A Subspace Is a Vector Space
+> [!theorem] Proposition §29.3: A Subspace Is a Vector Space
 > Every subspace $H$ of a vector space $V$ is itself a vector space, under the vector space operations already defined in $V$. Conversely, every vector space is a subspace of itself (and possibly of other, larger spaces).
 >
 > *Lay: 4.1 (text)*
@@ -176,7 +176,7 @@ Much of Chapters 1 and 2 used only a few algebraic properties of $\mathbb{R}^n$:
 
 The term *subspace* is used when at least two vector spaces are in mind, one inside the other; "subspace of $V$" identifies $V$ as the larger space.
 
-> [!example] Example §35.2: Subspaces
+> [!example] Example §29.2: Subspaces
 > **(a) The zero subspace.** The set $\{\mathbf{0}\}$ consisting only of the zero vector of $V$ is a subspace: $\mathbf{0} + \mathbf{0} = \mathbf{0}$ and $c\mathbf{0} = \mathbf{0}$ ([[§29 Vector Spaces and Subspaces#^prop-29-2|Proposition §29.2]]). It is written $\{\mathbf{0}\}$. At the other extreme, $V$ is a subspace of itself.
 >
 > **(b) Polynomials and smooth functions.** $\mathbb{P}$ is a subspace of the space of all real-valued functions on $\mathbb{R}$, and for each $n \ge 0$, $\mathbb{P}_n$ is a subspace of $\mathbb{P}$: it contains the zero polynomial, and sums and scalar multiples of polynomials of degree at most $n$ again have degree at most $n$. The lecture's chain is
@@ -210,7 +210,7 @@ The term *subspace* is used when at least two vector spaces are in mind, one ins
 
 ^ex-29-2
 
-> [!example] Example §35.3: Sets That Are Not Subspaces
+> [!example] Example §29.3: Sets That Are Not Subspaces
 > **(a) Missing the origin.** A plane in $\mathbb{R}^3$ not through the origin is not a subspace of $\mathbb{R}^3$, because it does not contain the zero vector; likewise a line in $\mathbb{R}^2$ not through the origin is not a subspace of $\mathbb{R}^2$. For instance, $H = \{(3s, 2 + 5s) : s \in \mathbb{R}\}$ is such a line. It also fails (c): $\mathbf{u} = (3, 7)$ is in $H$ ($s = 1$), but $2\mathbf{u} = (6, 14)$ would need $3s = 6$ and $2 + 5s = 14$, that is, $s = 2$ and $s = 12/5$, which is impossible.
 >
 > **(b) The first quadrant** $V = \{(x, y) : x \ge 0,\ y \ge 0\}$ contains $\mathbf{0}$ and is closed under addition, but not under scalar multiplication: if $\mathbf{v} = (x, y) \ne \mathbf{0}$ is in $V$, then $-\mathbf{v} = (-1)\mathbf{v}$ is not.
@@ -278,7 +278,7 @@ As in Chapter 1, a **linear combination** of $\mathbf{v}_1, \ldots, \mathbf{v}_p
 
 In $\mathbb{R}^3$, every nonzero subspace other than $\mathbb{R}^3$ itself is either $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ for linearly independent $\mathbf{v}_1, \mathbf{v}_2$ (a plane through the origin) or $\operatorname{Span}\{\mathbf{v}\}$ for $\mathbf{v} \ne \mathbf{0}$ (a line through the origin); this is proved in [[§33 The Dimension of a Vector Space#^ex-33-3|Example §33.3]] (4.5). The lecture's list: the subspaces of $\mathbb{R}^2$ are $\{\mathbf{0}\}$, the lines through the origin, and $\mathbb{R}^2$; those of $\mathbb{R}^3$ are $\{\mathbf{0}\}$, lines and planes through the origin, and $\mathbb{R}^3$.
 
-> [!example] Example §35.4: Finding a Spanning Set
+> [!example] Example §29.4: Finding a Spanning Set
 > **(a)** Let $H = \{(a - 3b,\ b - a,\ a,\ b) : a, b \in \mathbb{R}\}$. Show that $H$ is a subspace of $\mathbb{R}^4$.
 >
 > Write the vectors of $H$ as columns and split by the parameters:

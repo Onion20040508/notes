@@ -124,7 +124,7 @@ Comparing [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#
 
 *Uses:* [[§20 The Chain Rule#^thm-20-2|§20.2]], [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-3|§22.3]]
 
-> [!example] Example §25.1: Logarithm Outside, Logarithm Inside
+> [!example] Example §22.1: Logarithm Outside, Logarithm Inside
 > **(a)** Find $\dfrac{d}{dx}\ln(\sin x)$. The logarithm is the outer function, so by [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-4|Corollary §22.4]]
 >
 > $$
@@ -143,7 +143,7 @@ Comparing [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#
 
 ^ex-22-1
 
-> [!example] Example §25.2: Expand with the Laws of Logarithms First
+> [!example] Example §22.2: Expand with the Laws of Logarithms First
 > Find $\dfrac{d}{dx}\ln\dfrac{x + 1}{\sqrt{x - 2}}$.
 >
 > **Solution 1.** By [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-4|Corollary §22.4]] and the Quotient Rule,
@@ -213,7 +213,7 @@ Comparing [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#
 
 ^rem-22-2
 
-> [!example] Example §25.3: Logarithmic Differentiation
+> [!example] Example §22.3: Logarithmic Differentiation
 > Differentiate $y = \dfrac{x^{3/4}\sqrt{x^2 + 1}}{(3x + 2)^5}$.
 >
 > Take logarithms of both sides and use the Laws of Logarithms:
@@ -281,7 +281,7 @@ Comparing [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#
 
 ^rem-22-3
 
-> [!example] Example §25.4: Variable Base and Variable Exponent
+> [!example] Example §22.4: Variable Base and Variable Exponent
 > Differentiate $y = x^{\sqrt{x}}$ (for $x > 0$).
 >
 > **Solution 1 (logarithmic differentiation).**
@@ -399,7 +399,7 @@ The inverse trigonometric functions were defined in [[§6 Logarithmic and Invers
 > - 451 uses $\arctan' = 1/(1 + x^2)$, obtained there from the Inverse Function Theorem, to find the power series of $\arctan$: [[§26 Differentiation and Integration of Power Series#^ex-26-3|451 Ex. §26.3]].
 > - Complex-variables version: [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-3|342 Prop. §40.3]] (the same derivatives for branches of $\sin^{-1}z$, $\cos^{-1}z$ and $\tan^{-1}z$).
 
-> [!example] Example §25.5: Inverse Trigonometric Functions in Combinations
+> [!example] Example §22.5: Inverse Trigonometric Functions in Combinations
 > **(a)** Differentiate $y = \dfrac{1}{\sin^{-1} x}$. By the Chain Rule (power $-1$),
 >
 > $$

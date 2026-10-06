@@ -30,6 +30,7 @@ tags: [chapter, complex-variables]
 - [[§109★ Square Roots of Polynomials]] — B&C Sec. 109 ★
 - [[§110★ Riemann Surfaces]] — B&C Sec. 110 ★
 - [[§111★ Surfaces for Related Functions]] — B&C Sec. 111 ★
+- [[§111a Three Linear Fractional Maps, the Sine Half Strip and ((z − 1)∕(z + 1))^(1∕2)]] — B&C Sec. 111
 
 ## Central results
 - [[Linear Fractional Transformation Through Three Points]] (§100.1)

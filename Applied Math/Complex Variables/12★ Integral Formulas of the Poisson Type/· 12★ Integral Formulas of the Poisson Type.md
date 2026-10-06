@@ -21,6 +21,7 @@ tags: [chapter, complex-variables]
 - [[§138★ Schwarz Integral Formula]] — B&C Sec. 138 ★
 - [[§139★ Dirichlet Problem for a Half Plane]] — B&C Sec. 139 ★
 - [[§140★ Neumann Problems]] — B&C Sec. 140 ★
+- [[§140a The Split Cylinder and the Boundary Values cos θ]] — B&C Sec. 140
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

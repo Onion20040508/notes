@@ -14,7 +14,7 @@ tags: [ordinary-differential-equations, math331, extension]
 
 Some processes are more naturally discrete than continuous: interest is compounded monthly, not continuously, and species whose generations do not overlap breed once a year. Then the state $y_{n+1}$ at step $n + 1$ is a function of $n$ and the previous state $y_n$, a first-order difference equation. Linear difference equations are solved by iteration, and their solutions converge, oscillate or blow up according to the size of the multiplier $\rho$. The nonlinear logistic difference equation $u_{n+1} = \rho u_n(1 - u_n)$ looks like a discrete version of the logistic differential equation of [[§9 Autonomous Differential Equations and Population Dynamics#^def-9-3|§9]], but it behaves very differently: as $\rho$ grows, its stable equilibrium gives way to oscillations of period 2, 4, 8, … and then to chaos. It was one of the first examples of mathematical chaos to be studied in detail.
 
-> [!definition] Definition §19.1: First-Order Difference Equation
+> [!definition] Definition §15.1: First-Order Difference Equation
 > An equation
 >
 > $$
@@ -90,7 +90,7 @@ $$
 y_{n+1} = \rho_n y_n, \qquad n = 0, 1, 2, \ldots . \qquad (5)
 $$
 
-> [!theorem] Proposition §19.1: Solution of yₙ₊₁ = ρₙyₙ
+> [!theorem] Proposition §15.1: Solution of yₙ₊₁ = ρₙyₙ
 > The solution of (5) with initial value $y_0$ is
 >
 > $$
@@ -130,7 +130,7 @@ $$
 y_{n+1} = \rho y_n + b_n, \qquad n = 0, 1, 2, \ldots . \qquad (10)
 $$
 
-> [!theorem] Proposition §19.2: Solution of yₙ₊₁ = ρyₙ + bₙ
+> [!theorem] Proposition §15.2: Solution of yₙ₊₁ = ρyₙ + bₙ
 > The solution of (10) with initial value $y_0$ is
 >
 > $$
@@ -182,7 +182,7 @@ In (11) the first term represents the descendants of the original population, th
 
 The same model gives a framework for many problems of a financial character: $y_n$ is the account balance in the $n$th period, $\rho_n = 1 + r_n$ with $r_n$ the interest rate for that period, and $b_n$ the amount deposited or withdrawn. The continuous model of compound interest, [[§7 Modeling with First-Order Differential Equations#^prop-7-1|Proposition §7.1]], is only an approximation to this discrete process (compare [[§7 Modeling with First-Order Differential Equations#^prop-7-2|Proposition §7.2]], compounding $m$ times a year).
 
-> [!example] Example §19.1: Paying Off a Car Loan
+> [!example] Example §15.1: Paying Off a Car Loan
 > A recent college graduate takes out a \$10,000 loan to purchase a car. If the interest rate is 12%, what monthly payment is required to pay off the loan in 4 years?
 >
 > **The model.** Let $y_n$ be the loan balance outstanding in the $n$th month. The difference equation is (12) with $\rho = 1 + r$, where $r = 0.12/12 = 0.01$ is the monthly interest rate, so $\rho = 1.01$; and $b$ is the effect of the monthly payment. Payments reduce the balance, so $b$ is negative and the actual payment is $|b|$.
@@ -360,7 +360,7 @@ At $\rho = 1$ the two equilibria coincide at $u = 0$ and $g'(0) = 1$, so [[§15�
 
 ^rem-15-2
 
-> [!example] Example §19.2: Three Regimes of the Logistic Difference Equation
+> [!example] Example §15.2: Three Regimes of the Logistic Difference Equation
 > Compute solutions of (21) for $\rho = 0.8$, $1.5$ and $2.8$.
 >
 > **$\rho = 0.8$, $u_0 = 0.3$.** The iterates are $0.3,\ 0.168,\ 0.1118,\ 0.0795,\ 0.0585,\ 0.0441,\ \ldots$, decreasing to $0$: here $0$ is the asymptotically stable equilibrium, and $g'(0) = 0.8$, so the convergence is monotone, roughly by a factor $0.8$ per step.
@@ -405,7 +405,7 @@ For $\rho > 3$ neither equilibrium is stable, and the solutions of (21) show inc
 
 ^def-15-10
 
-> [!example] Example §19.3: Period Doubling and Chaos
+> [!example] Example §15.3: Period Doubling and Chaos
 > **Period 2.** A solution of period 2 alternates between two values $u_1 \ne u_2$ with $g(u_1) = u_2$ and $g(u_2) = u_1$; these are fixed points of $g \circ g$ that are not fixed points of $g$. For $g(u) = \rho u(1 - u)$,
 >
 > $$

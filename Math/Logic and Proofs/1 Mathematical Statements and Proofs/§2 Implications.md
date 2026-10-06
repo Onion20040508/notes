@@ -87,14 +87,14 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ### Universal implications
 
-> [!definition] Definition §2.3: Universal Statement
+> [!definition] Definition §2.2: Universal Statement
 > An implication between predicates, such as $n > 3 \Rightarrow n > 0$ "for integers $n$", is normally asserted as a **universal statement**: it claims that the implication is true for *every* value of the free variable in the stated range (which should be made explicit).
 >
 > *Eccles: Section 2.1*
 
 ^def-2-2
 
-> [!definition] Definition §2.4: Counterexample
+> [!definition] Definition §2.3: Counterexample
 > A universal statement is false precisely when there is at least one value for which the hypothesis is true and the conclusion false; such a value is a **counterexample**. The statement that a counterexample exists, written $P(x) \not\Rightarrow Q(x)$, is an **existence statement**. Quantifiers make this precise in [[§7 Quantifiers|§7]].
 >
 > *Eccles: Section 2.1*
@@ -124,7 +124,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ## Reading Implications
 
-> [!definition] Definition §2.5: Ways of Reading an Implication
+> [!definition] Definition §2.4: Ways of Reading an Implication
 > Each of the following means $P \Rightarrow Q$:
 > 1. If $P$ then $Q$.
 > 2. $P$ implies $Q$.
@@ -140,7 +140,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 ^def-2-4
 
-> [!definition] Definition §2.6: Converse, Contrapositive, Inverse
+> [!definition] Definition §2.5: Converse, Contrapositive, Inverse
 > For the implication $P \Rightarrow Q$:
 > - its **converse** is $Q \Rightarrow P$;
 > - its **contrapositive** is $\neg Q \Rightarrow \neg P$;
@@ -189,7 +189,7 @@ Part (3) is familiar from speech: "Read the lecture notes or you won't understan
 
 *Uses:* [[§2 Implications#^def-2-5|Def. §2.5]], [[§2 Implications#^prop-2-2|§2.2]]
 
-> [!definition] Definition §2.7: Biconditional
+> [!definition] Definition §2.6: Biconditional
 > $P \Leftrightarrow Q$ means $(P \Rightarrow Q) \wedge (Q \Rightarrow P)$. It is read: $P$ is **equivalent** to $Q$; $P$ is necessary and sufficient for $Q$; $P$ **if and only if** $Q$ ($P$ iff $Q$); $P$ precisely when $Q$.
 >
 > *Eccles: Section 2.1*
@@ -443,7 +443,7 @@ That the negation of "for all $x$, $P(x)$" is "for some $x$, not $P(x)$" is [[§
 
 When we meet a new word, or a familiar word in a new setting, we must find out what the writer means by it, not decide how we might have defined it. Here is a familiar example.
 
-> [!definition] Definition §2.8: Divisibility
+> [!definition] Definition §2.7: Divisibility
 > For integers $a$ and $b$, we say that **$b$ divides $a$**, or **$a$ is a multiple of $b$**, written $b \mid a$, if there is an integer $q$ such that $a = bq$. For example $3 \mid 6$ since $6 = 3 \times 2$, $-14 \mid 28$ since $28 = (-14)(-2)$, and $b \mid 0$ for every integer $b$ since $0 = b \times 0$.
 >
 > *Eccles: Definition 2.2.1*
@@ -453,7 +453,7 @@ When we meet a new word, or a familiar word in a new setting, we must find out w
 > [!remark]- Connections
 > - The same definition in group theory, where it leads to congruences and $\mathbb{Z}/n\mathbb{Z}$: [[§6 Divisibility and Congruence#^def-6-1|493 Def. §6.1]].
 
-> [!definition] Definition §2.9: Even and Odd
+> [!definition] Definition §2.8: Even and Odd
 > An integer $a$ is **even** if $2$ divides $a$, and **odd** if it is not even.
 >
 > *Eccles: Definitions 2.2.2 and 2.2.3*

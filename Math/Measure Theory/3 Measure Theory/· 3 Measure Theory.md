@@ -15,20 +15,25 @@ tags: [chapter, measure-theory]
 - [[§10 Lebesgue Outer Measure]]
 - [[§11 Lebesgue Measurable Sets]]
 - [[§12 Borel Sets and Measure Spaces]]
+- [[§13 Approximation and Continuity of Measure]]
+- [[§14 The Vitali Set and the Cantor Set]]
 - [[§15 Measurable Functions]]
+- [[§16 Limits and Positive Parts of Measurable Functions]]
+- [[§17 Simple Functions and Modes of Convergence]]
 - [[§18 Egorov's and Lusin's Theorems]]
+- [[§19 ℚ, Vitali and Cantor Sets, xᵏ and Escaping Mass]]
 
 ## Central results
-- [[Properties of Lebesgue Outer Measure]] (§9.1)
-- [[Lebesgue Measurable Sets Form a σ-Algebra]] (§10.3)
-- [[Carathéodory's Theorem]] (§11.2)
-- [[Outer Regularity of Lebesgue Measure]] (§11.8)
-- [[Inner Regularity of Lebesgue Measure]] (§11.10)
-- [[Continuity of Measure]] (§11.12)
-- [[The Vitali Set is Not Measurable]] (§11.20)
-- [[Simple Function Approximation Theorem]] (§12.14)
-- [[Egorov's Theorem]] (§13.1)
-- [[Lusin's Theorem]] (§13.3)
+- [[Properties of Lebesgue Outer Measure]] (§10.1)
+- [[Lebesgue Measurable Sets Form a σ-Algebra]] (§11.3)
+- [[Carathéodory's Theorem]] (§12.2)
+- [[Outer Regularity of Lebesgue Measure]] (§13.1)
+- [[Inner Regularity of Lebesgue Measure]] (§13.3)
+- [[Continuity of Measure]] (§13.4)
+- [[The Vitali Set is Not Measurable]] (§14.6)
+- [[Simple Function Approximation Theorem]] (§17.2)
+- [[Egorov's Theorem]] (§18.1)
+- [[Lusin's Theorem]] (§18.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

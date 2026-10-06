@@ -29,7 +29,7 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ^def-12-1
 
-> [!definition] Definition §12.3: Deleted Neighborhood
+> [!definition] Definition §12.2: Deleted Neighborhood
 > A **deleted neighborhood**, or punctured disk, is the set
 >
 > $$
@@ -42,28 +42,28 @@ This section sets up the vocabulary of point sets in the plane that the rest of 
 
 ^def-12-2
 
-> [!definition] Definition §12.6: Interior Point
+> [!definition] Definition §12.3: Interior Point
 > Let $S$ be a set of points of the plane. A point $z_0$ is an **interior point** of $S$ if there is some neighborhood of $z_0$ that contains only points of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
 ^def-12-3
 
-> [!definition] Definition §12.9: Exterior Point
+> [!definition] Definition §12.4: Exterior Point
 > Let $S$ be a set of points of the plane. A point $z_0$ is an **exterior point** of $S$ if there is a neighborhood of it containing no points of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
 ^def-12-4
 
-> [!definition] Definition §12.12: Boundary Point
+> [!definition] Definition §12.5: Boundary Point
 > Let $S$ be a set of points of the plane. If a point $z_0$ is neither an interior point nor an exterior point of $S$, it is a **boundary point** of $S$. A boundary point is therefore a point all of whose neighborhoods contain at least one point in $S$ and at least one point not in $S$. The totality of all boundary points is the **boundary** of $S$.
 >
 > *B&C: Sec. 12 (text)*
 
 ^def-12-5
 
-> [!definition] Definition §12.13: Open Set
+> [!definition] Definition §12.6: Open Set
 > A set is **open** if it does not contain any of its boundary points.
 >
 > *B&C: Sec. 12 (text)*

@@ -15,7 +15,7 @@ Rotating the region under $y = 2x^2 - x^3$ about the $y$-axis produces a solid w
 
 ## The Method of Cylindrical Shells
 
-> [!theorem] Theorem §54.1: Volume of a Cylindrical Shell
+> [!theorem] Theorem §47.1: Volume of a Cylindrical Shell
 > A cylindrical shell with inner radius $r_1$, outer radius $r_2$ and height $h$ has volume
 >
 > $$
@@ -58,7 +58,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^rem-47-1
 
-> [!theorem] Theorem §54.2: The Shell Method
+> [!theorem] Theorem §47.2: The Shell Method
 > The volume of the solid obtained by rotating about the $y$-axis the region under the curve $y = f(x)$ from $a$ to $b$ is
 >
 > $$
@@ -123,7 +123,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^rem-47-2
 
-> [!example] Example §54.1: A Cubic Rotated About the y-Axis
+> [!example] Example §47.1: A Cubic Rotated About the y-Axis
 > Find the volume of the solid obtained by rotating about the $y$-axis the region bounded by $y = 2x^2 - x^3$ and $y = 0$.
 >
 > $2x^2 - x^3 = x^2(2 - x)$ is $\ge 0$ for $0 \le x \le 2$, so the region lies over $[0, 2]$. A typical shell has radius $x$, circumference $2\pi x$ and height $f(x) = 2x^2 - x^3$. By [[§47 Volumes by Cylindrical Shells#^thm-47-2|Theorem §47.2]],
@@ -138,7 +138,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^ex-47-1
 
-> [!example] Example §54.2: Shells Between Two Curves
+> [!example] Example §47.2: Shells Between Two Curves
 > Find the volume of the solid obtained by rotating about the $y$-axis the region between $y = x$ and $y = x^2$.
 >
 > The curves meet at $x = 0$ and $x = 1$, and $x \ge x^2$ in between. A shell at $x$ has radius $x$, circumference $2\pi x$ and height $x - x^2$ (top minus bottom). So
@@ -151,7 +151,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^ex-47-2
 
-> [!example] Example §54.3: Shells About the x-Axis
+> [!example] Example §47.3: Shells About the x-Axis
 > Use cylindrical shells to find the volume of the solid obtained by rotating about the $x$-axis the region under $y = \sqrt{x}$ from $0$ to $1$.
 >
 > This was done with disks in [[§46 Volumes#^ex-46-2|Example §46.2]](a). For shells about the $x$-axis, use horizontal strips: write the curve as $x = y^2$, $0 \le y \le 1$. The strip at height $y$ runs from $x = y^2$ to $x = 1$, so the shell has radius $y$, circumference $2\pi y$ and height $1 - y^2$:
@@ -166,7 +166,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^ex-47-3
 
-> [!example] Example §54.4: Shells About the Line x = 2
+> [!example] Example §47.4: Shells About the Line x = 2
 > Find the volume of the solid obtained by rotating the region bounded by $y = x - x^2$ and $y = 0$ about the line $x = 2$.
 >
 > The region lies over $[0, 1]$, to the left of the axis. A shell at $x$ has radius $2 - x$ (the distance to the line $x = 2$), circumference $2\pi(2 - x)$ and height $x - x^2$. So
@@ -188,7 +188,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 
 ^rem-47-3
 
-> [!example] Example §54.5: The Same Solid Both Ways
+> [!example] Example §47.5: The Same Solid Both Ways
 > The region in the first quadrant bounded by $y = x^2$ and $y = 2x$ (which meet at $(0, 0)$ and $(2, 4)$) is rotated about the line $x = -1$. Find the volume using (a) $x$ and (b) $y$ as the variable of integration.
 >
 > **(a) Shells.** A vertical rectangle at $x$, $0 \le x \le 2$, runs from $y = x^2$ up to $y = 2x$. Rotated about $x = -1$ it gives a shell with radius $x + 1$ and height $2x - x^2$:

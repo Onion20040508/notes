@@ -22,7 +22,7 @@ $$
 \begin{aligned} x_1 - 5x_3 &= 1 \\ x_2 + x_3 &= 4 \\ 0 &= 0 . \end{aligned}
 $$
 
-> [!definition] Definition §4.1: Basic Variables and Free Variables
+> [!definition] Definition §3.1: Basic Variables and Free Variables
 > In a linear system, the variables corresponding to pivot columns of the coefficient matrix are **basic variables** (some texts say *leading variables*). The other variables are **free variables**.
 >
 > In the system above, $x_1$ and $x_2$ are basic and $x_3$ is free. Solving the reduced equations for the basic variables gives
@@ -37,7 +37,7 @@ $$
 
 ^def-3-1
 
-> [!definition] Definition §4.2: Parametric Description of a Solution Set
+> [!definition] Definition §3.2: Parametric Description of a Solution Set
 > A description of the solution set in which the free variables act as parameters, such as the formulas above, is a **parametric description** of the solution set, also called the **general solution** of the system. *Solving a system* means finding a parametric description of the solution set or determining that the solution set is empty.
 >
 > A consistent system with free variables has many parametric descriptions. (Adding $5$ times the second equation above to the first gives $x_1 + 5x_2 = 21$, $x_2 + x_3 = 4$, and $x_2$ could serve as the parameter.) The convention is always to use the free variables as the parameters. An inconsistent system has an empty solution set, even if it has free variables, and so has no parametric description.
@@ -46,7 +46,7 @@ $$
 
 ^def-3-2
 
-> [!example] Example §4.1: A General Solution
+> [!example] Example §3.1: A General Solution
 > Find the general solution of the linear system whose augmented matrix has been reduced to
 >
 > $$
@@ -91,13 +91,12 @@ $$
 >
 > by **back-substitution**: solve the last equation for $x_4$ in terms of $x_5$, substitute into the second and solve for $x_2$, then substitute both into the first and solve for $x_1$ (a small case by hand: [[§1 Systems of Linear Equations#^ex-1-5|Example §1.5]]). The matrix form of the backward phase uses the same number of arithmetic operations, and its discipline makes errors less likely in hand computation. Best strategy by hand: solve from the *reduced* echelon form only.
 
-^rem-3-3
-
+^rem-3-1
 ## Existence and Uniqueness Questions
 
 A nonreduced echelon form is a poor tool for solving a system, but it is just right for the two fundamental questions of [[§1 Systems of Linear Equations#^rem-1-2|§1]].
 
-> [!theorem] Theorem §4.1: Existence and Uniqueness Theorem
+> [!theorem] Theorem §3.1: Existence and Uniqueness Theorem
 > A linear system is consistent if and only if the rightmost column of the augmented matrix is *not* a pivot column, that is, if and only if an echelon form of the augmented matrix has *no* row of the form
 >
 > $$
@@ -126,7 +125,7 @@ A nonreduced echelon form is a poor tool for solving a system, but it is just ri
 > [!remark]- Connections
 > - Axler gets the two counting consequences by dimension, without row reduction: a homogeneous system with more variables than equations has a nonzero solution ([[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]]), and a system with more equations than variables is inconsistent for some right-hand side ([[§8 Null Spaces and Ranges#^ladr-3-28|LADR 3.28]]). In Lay's language both are pivot counts: more columns than rows forces a free variable ([[§8 Linear Independence#^thm-8-6|Theorem §8.6]]), more rows than columns leaves a row without a pivot ([[§5 The Matrix Equation Ax = b#^thm-5-3|Theorem §5.3]]).
 
-> [!theorem] Corollary §4.2: No Solution, One Solution, or Infinitely Many
+> [!theorem] Corollary §3.2: No Solution, One Solution, or Infinitely Many
 > A system of linear equations has
 > 1. no solution, or
 > 2. exactly one solution, or
@@ -152,9 +151,8 @@ The lecture's shorthand for the count: a consistent system has "$\infty^{k}$" so
 > 4. Write the system of equations corresponding to the matrix obtained in step 3.
 > 5. Rewrite each nonzero equation from step 4 so that its one basic variable is expressed in terms of any free variables appearing in the equation.
 
-^rem-3-4
-
-> [!example] Example §4.2: Five Unknowns, Two Free Variables
+^rem-3-2
+> [!example] Example §3.2: Five Unknowns, Two Free Variables
 > Solve
 >
 > $$

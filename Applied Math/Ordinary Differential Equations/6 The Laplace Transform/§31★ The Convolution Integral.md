@@ -16,7 +16,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 
 ## The Convolution Theorem
 
-> [!definition] Definition §37.2: Convolution
+> [!definition] Definition §31.1: Convolution
 > For functions $f$ and $g$ defined on $t \ge 0$, the **convolution of $f$ and $g$** is the function
 >
 > $$
@@ -35,7 +35,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 
 ^def-31-1
 
-> [!theorem] Proposition §37.1: Algebraic Properties of Convolution
+> [!theorem] Proposition §31.1: Algebraic Properties of Convolution
 > For piecewise continuous $f$, $g$, $g_1$, $g_2$, $h$ on $t \ge 0$:
 >
 > $$
@@ -88,7 +88,7 @@ The Laplace transform turns derivatives into multiplication by $s$, but it does 
 
 Other properties of ordinary multiplication fail.
 
-> [!example] Example §37.1: Convolution with 1
+> [!example] Example §31.1: Convolution with 1
 > In general $f * 1 \ne f$. Indeed
 >
 > $$
@@ -107,7 +107,7 @@ Other properties of ordinary multiplication fail.
 
 ^ex-31-1
 
-> [!theorem] Theorem §37.2: The Convolution Theorem
+> [!theorem] Theorem §31.2: The Convolution Theorem
 > If $F(s) = \mathcal{L}\{f(t)\}$ and $G(s) = \mathcal{L}\{g(t)\}$ both exist for $s > a \ge 0$, then
 >
 > $$
@@ -172,7 +172,7 @@ Other properties of ordinary multiplication fail.
 > - The interchange of order is Fubini's theorem for Lebesgue integrals, [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], made applicable by the absolute bound and Tonelli ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]]). Measure Theory has no item on convolution itself, so that is the only link.
 > - See also: [[§65★ Partial Fractions and Convolutions#^thm-65-3|341 Thm. §65.3]] (the same theorem in Powers), with solution formulas for any forcing in [[§65★ Partial Fractions and Convolutions#^ex-65-5|341 Ex. §65.5]] and a forced vibrating wire inverted by convolution in [[§67★ More Difficult Examples#^ex-67-3|341 Ex. §67.3]].
 
-> [!example] Example §37.2: An Inverse Transform by Convolution
+> [!example] Example §31.2: An Inverse Transform by Convolution
 > Find the inverse Laplace transform of $H(s) = \dfrac{a}{s^2(s^2 + a^2)}$.
 >
 > Think of $H$ as the product of $s^{-2} = \mathcal{L}\{t\}$ and $a/(s^2 + a^2) = \mathcal{L}\{\sin at\}$ ([[§27 Solution of Initial Value Problems#^thm-27-6|Theorem §27.6]], Table 6.2.1). By [[§31★ The Convolution Integral#^thm-31-2|Theorem §31.2]], integrating by parts with $u = t - \tau$, $dv = \sin(a\tau)\,d\tau$:
@@ -201,14 +201,14 @@ $$
 (as^2 + bs + c)Y(s) - (as + b)y_0 - ay_0' = G(s) .
 $$
 
-> [!definition] Definition §37.6: Input–Output Problem
+> [!definition] Definition §31.2: Input–Output Problem
 > The problem (20), (21) is an **input–output problem**: the coefficients $a$, $b$, $c$ describe a physical system, $g(t)$ is the **input** to the system, $y_0$ and $y_0'$ describe its initial state, and the solution $y(t)$ is the **output** at time $t$.
 >
 > *BDP: 6.6 (text), Equation (27)*
 
 ^def-31-2
 
-> [!definition] Definition §37.7: Transfer Function
+> [!definition] Definition §31.3: Transfer Function
 > The **transfer function** of the system of the input–output problem (20), (21) is
 >
 > $$
@@ -221,7 +221,7 @@ $$
 
 ^def-31-3
 
-> [!definition] Definition §37.8: Impulse Response
+> [!definition] Definition §31.4: Impulse Response
 > Let $H(s)$ be the transfer function (27). Its inverse transform $h(t) = \mathcal{L}^{-1}\{H(s)\}$ is the **impulse response** of the system.
 >
 > *BDP: 6.6 (text), Equation (27)*
@@ -269,7 +269,7 @@ $$
 
 Once $a$, $b$, $c$ are given, $\phi$ comes from the table, possibly after partial fractions or a translation. The input enters only through the convolution (28), which can be evaluated, numerically if necessary, for any $g$.
 
-> [!example] Example §37.3: A Solution Formula for Any Input
+> [!example] Example §31.3: A Solution Formula for Any Input
 > Find the solution of $y'' + 4y = g(t)$, $y(0) = 3$, $y'(0) = -1$.
 >
 > **Transform.** $s^2Y(s) - 3s + 1 + 4Y(s) = G(s)$, so

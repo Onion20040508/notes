@@ -34,7 +34,7 @@ tags: [multivariable-analysis, math452]
 
 ^ex-5-1
 
-> [!theorem] Theorem §6.1: Bounded Partials Imply Continuity
+> [!theorem] Theorem §5.1: Bounded Partials Imply Continuity
 > Let $R$ be an open rectangle. If $f_x$ and $f_y$ both exist on $R$ and are bounded (i.e., $|f_x|, |f_y| \leq M$ for some $M > 0$), then $f$ is continuous on $R$.
 
 ^thm-5-1

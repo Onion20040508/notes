@@ -121,7 +121,7 @@ In each example, associativity is inherited from a known associative operation (
 > [!remark]- Connections
 > - Invertible matrices in LADR: [[§10 Invertibility and Isomorphisms#^ladr-3-80|Invertible, inverse, A⁻¹]]; associativity of composing linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-8|Algebraic properties of products of linear maps]].
 > - $S_n$ sits inside $GL_n(k)$ via permutation matrices: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]].
-> - As a topological group: [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|591 Def. §10.4]], [[§10 Topological Groups and Classical Matrix Groups#^prop-10-4|591 Prop. §10.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§15 The Classical Groups#^thm-15-2|591 Thm. §15.2]].
+> - As a topological group: [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|591 Def. §11.5]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|591 Prop. §11.4]]; over ℝ it has exactly two components, separated by the sign of det, [[§16 The Classical Groups#^thm-16-2|591 Thm. §16.2]].
 > - Computational version: invertible matrices and their inverses by row reduction, [[§14 The Inverse of a Matrix#^def-14-1|235 Def. §14.1]]; the determinant facts used, [[§25 Properties of Determinants#^thm-25-3|235 Thm. §25.3]] (invertible iff det ≠ 0) and [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|235 Thm. §26.4]] (det is multiplicative).
 > - Concrete action of GL₂(ℂ): [[§99★ Linear Fractional Transformations#^prop-99-5|342 Prop. §99.5]] (composing linear fractional transformations multiplies their coefficient matrices, so they form a group, the image of GL₂(ℂ)).
 
@@ -137,7 +137,7 @@ In each example, associativity is inherited from a known associative operation (
 
 > [!remark]- Connections
 > - Real orthogonal matrices are the real unitary matrices: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|Characterizations of unitary matrices]] (condition $Q^*Q = QQ^* = I$); rotations: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-52|Rotation of R²]].
-> - The same groups as topological groups and manifolds in 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-5|591 Def. §10.5]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-6|591 Def. §10.6]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-7|591 Def. §10.7]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
+> - The same groups as topological groups and manifolds in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|591 Def. §11.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|591 Def. §11.8]], and [[Classical Groups Are Manifolds]] (591 Thm. §11.6; workhorse example [[Classical groups O(n), U(n), SL(n,ℝ)]]).
 > - Used in Relativity: the Lorentz group is defined as $O(n)$ is, with the metric $\eta$ in place of the identity — [[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-1|REL Def. §B1.2.1]]; the rotations sit inside it, with $R^{\mathsf T}R = 1$ — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-5|REL Theorem §B1.2.5]].
 > - Computational version: [[§51 Orthogonal Sets#^def-51-5|235 Def. §51.5]] and [[§51 Orthogonal Sets#^prop-51-6|235 Prop. §51.6]] (orthogonal matrices have orthonormal columns and rows and det ±1, with worked examples).
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ acting on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]; it is covered twice by $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
@@ -158,6 +158,6 @@ In each example, associativity is inherited from a known associative operation (
 ^ex-3-1
 
 > [!remark] Remark: $S_n$ and $GL_n(k)$
-> $S_n$ and $GL_n(k)$ are the two fundamental families of non-abelian groups. $S_n$ acts by permuting a finite set; $GL_n(k)$ acts linearly on a vector space. [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Representation theory]] (second half of the course) is precisely the study of homomorphisms $G \to GL_n(k)$, i.e. of realizing abstract groups inside the second family.
+> $S_n$ and $GL_n(k)$ are the two fundamental families of non-abelian groups. $S_n$ acts by permuting a finite set; $GL_n(k)$ acts linearly on a vector space. [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|Representation theory]] (second half of the course) is precisely the study of homomorphisms $G \to GL_n(k)$, i.e. of realizing abstract groups inside the second family.
 
 ^rem-3-2

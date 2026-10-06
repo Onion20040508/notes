@@ -19,6 +19,7 @@ tags: [chapter, calculus]
 - [[§47 Volumes by Cylindrical Shells]] — Stewart 6.3
 - [[§48 Work]] — Stewart 6.4
 - [[§49 Average Value of a Function]] — Stewart 6.5
+- [[§50 The Region Between y = x and y = x² and the Region Under y = √x]] — Stewart 6.5
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

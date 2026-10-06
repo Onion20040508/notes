@@ -32,14 +32,14 @@ tags: [linear-algebra, hub]
 - [[§41 The First and Second Isomorphism Theorems#^rem-41-2|Remark: Rank–Nullity]]
 
 ## Used in (Differentiable Manifolds)
-- [[§20 Linear Algebra Toolkit#^prop-20-4|Proposition §20.4: Properties of the Dual Map]]
-- [[§20 Linear Algebra Toolkit#^prop-20-6|Proposition §20.6: Quotient Spaces and Their Universal Property]]
-- [[§23 The Geometric Tangent Space#^lem-23-2|Lemma §23.2: The Geometric Tangent Space of a Graph]]
-- [[§23 The Geometric Tangent Space#^thm-23-3|Theorem §23.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
-- [[§23 The Geometric Tangent Space#^thm-23-7|Theorem §23.7: Dimension of the Geometric Tangent Space]]
-- [[§24 Transversality#^prop-24-4|Proposition §24.4: Transverse Intersections]]
-- [[§32 Submersions#^prop-32-1|Proposition §32.1: Dimension Constraints]]
-- [[§33 Submanifolds#^thm-33-6|Theorem §33.6: The Regular Value Theorem for Manifolds]]
+- [[§21 Linear Algebra Toolkit#^prop-21-4|Proposition §21.4: Properties of the Dual Map]]
+- [[§21 Linear Algebra Toolkit#^prop-21-6|Proposition §21.6: Quotient Spaces and Their Universal Property]]
+- [[§25 The Geometric Tangent Space#^lem-25-2|Lemma §25.2: The Geometric Tangent Space of a Graph]]
+- [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
+- [[§25 The Geometric Tangent Space#^thm-25-7|Theorem §25.7: Dimension of the Geometric Tangent Space]]
+- [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
+- [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
+- [[§35 Submanifolds#^thm-35-6|Theorem §35.6: The Regular Value Theorem for Manifolds]]
 
 ## Connections
 - **Immediate consequences.** Comparing dimensions: [[§8 Null Spaces and Ranges#^ladr-3-22|Linear map to a lower-dimensional space is not injective]] (3.22), [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]] (3.24), [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (3.65).

@@ -15,7 +15,7 @@ We cannot add infinitely many numbers one by one, but we can add the first $n$ o
 
 ## Infinite Series
 
-> [!definition] Definition §95.1: Infinite Series
+> [!definition] Definition §82.1: Infinite Series
 > Adding the terms of an infinite sequence $\{a_n\}_{n=1}^{\infty}$ gives an expression
 >
 > $$
@@ -34,7 +34,7 @@ We cannot add infinitely many numbers one by one, but we can add the first $n$ o
 
 Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \cdots + n + \cdots$ grow without bound. Others do: in Zeno's series $\frac12 + \frac14 + \frac18 + \cdots$ the sum of the first $n$ terms is $\frac{2^n - 1}{2^n} = 1 - \frac{1}{2^n}$, which can be made as close to $1$ as we like. The same idea defines the sum of any series.
 
-> [!definition] Definition §95.2: Partial Sums
+> [!definition] Definition §82.2: Partial Sums
 > Given a series $\sum_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \cdots$, its **$n$th partial sum** is
 >
 > $$
@@ -45,7 +45,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 ^def-82-2
 
-> [!definition] Definition §95.3: Convergent Series and Its Sum
+> [!definition] Definition §82.3: Convergent Series and Its Sum
 > Let $s_n$ be the $n$th partial sum of a series $\sum_{n=1}^{\infty} a_n$. If the sequence $\{s_n\}$ is convergent and $\lim_{n \to \infty} s_n = s$ exists as a real number, then the series $\sum a_n$ is **convergent**, and we write
 >
 > $$
@@ -67,7 +67,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 ^rem-82-1
 
-> [!example] Example §95.1: Sums from Partial Sums; a Telescoping Sum
+> [!example] Example §82.1: Sums from Partial Sums; a Telescoping Sum
 > **(a)** If the partial sums of $\sum a_n$ are $s_n = \dfrac{2n}{3n + 5}$, then
 >
 > $$
@@ -99,7 +99,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 ## Sum of a Geometric Series
 
-> [!theorem] Theorem §95.1: The Geometric Series
+> [!theorem] Theorem §82.1: The Geometric Series
 > The **geometric series** with first term $a \ne 0$ and **common ratio** $r$,
 >
 > $$
@@ -163,7 +163,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 > - Rigorous treatment: [[§14 Series#^ex-14-4|451 Ex. §14.4]] (the same computation); every use in 451 is collected in [[Geometric series]].
 > - Matrix version: [[§19 The Leontief Input–Output Model#^prop-19-1|235 Prop. §19.1]] ($(I - C)^{-1} = I + C + C^2 + \cdots$ for a nonnegative matrix with column sums less than 1, the same telescoping identity), applied to the Leontief model.
 
-> [!example] Example §95.2: Identifying a and r
+> [!example] Example §82.2: Identifying a and r
 > **(a)** Find the sum of $5 - \frac{10}{3} + \frac{20}{9} - \frac{40}{27} + \cdots$.
 >
 > The first term is $a = 5$ and each term is the preceding one times $r = -\frac23$. Since $|r| = \frac23 < 1$, the series converges by [[§82 Series#^thm-82-1|Theorem §82.1]], and
@@ -188,7 +188,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 ^ex-82-2
 
-> [!example] Example §95.3: A Repeating Decimal
+> [!example] Example §82.3: A Repeating Decimal
 > Write $2.3\overline{17} = 2.3171717\ldots$ as a ratio of integers.
 >
 > $$
@@ -207,7 +207,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 Stewart's Example 5 is an application of the finite formula (3): if a daily dose raises a drug concentration by $0.2$ mg/mL and $30\%$ survives each day, the concentration after the $n$th dose is $C_n = 0.2 + 0.2(0.3) + \cdots + 0.2(0.3)^{n-1} = \frac27 [1 - (0.3)^n]$, which tends to $\frac27$ mg/mL.
 
-> [!theorem] Corollary §95.2: The Geometric Series in x
+> [!theorem] Corollary §82.2: The Geometric Series in x
 > $$
 > \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots = \frac{1}{1 - x} \qquad |x| < 1 . \qquad (5)
 > $$
@@ -227,7 +227,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ## Test for Divergence
 
-> [!theorem] Theorem §95.3: The Harmonic Series Diverges
+> [!theorem] Theorem §82.3: The Harmonic Series Diverges
 > The **harmonic series**
 >
 > $$
@@ -268,7 +268,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-5|451 Thm. §14.5]]; the integral test gives a second proof, [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (and [[§83 The Integral Test and Estimates of Sums#^thm-83-2|Theorem §83.2]] with $p = 1$). The grouping argument is due to Nicole Oresme (1323–1382).
 
-> [!theorem] Theorem §95.4: Terms of a Convergent Series Tend to Zero
+> [!theorem] Theorem §82.4: Terms of a Convergent Series Tend to Zero
 > If the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is convergent, then $\displaystyle\lim_{n \to \infty} a_n = 0$.
 >
 > *Stewart: 11.2, Theorem 6*
@@ -291,7 +291,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^rem-82-3
 
-> [!theorem] Corollary §95.5: Test for Divergence
+> [!theorem] Corollary §82.5: Test for Divergence
 > If $\displaystyle\lim_{n \to \infty} a_n$ does not exist or if $\displaystyle\lim_{n \to \infty} a_n \ne 0$, then the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is divergent.
 >
 > *Stewart: 11.2, Test for Divergence 7*
@@ -308,7 +308,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^cor-14-2|451 Cor. §14.2]], where it follows from the Cauchy criterion for series, [[§14 Series#^thm-14-1|451 Thm. §14.1]].
 
-> [!example] Example §95.4: Using the Test for Divergence
+> [!example] Example §82.4: Using the Test for Divergence
 > Show that $\displaystyle\sum_{n=1}^{\infty} \frac{n^2}{5n^2 + 4}$ diverges.
 >
 > $$
@@ -325,7 +325,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ## Properties of Convergent Series
 
-> [!theorem] Theorem §95.6: Sums, Differences and Constant Multiples of Series
+> [!theorem] Theorem §82.6: Sums, Differences and Constant Multiples of Series
 > If $\sum a_n$ and $\sum b_n$ are convergent series, then so are the series $\sum c a_n$ (where $c$ is a constant), $\sum (a_n + b_n)$ and $\sum (a_n - b_n)$, and
 >
 > $$
@@ -359,7 +359,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 *Uses:* [[§82 Series#^def-82-2|Def. §82.2]], [[§82 Series#^def-82-3|Def. §82.3]], [[§80 Sequences#^thm-80-3|§80.3]], [[§39 The Definite Integral#^thm-39-3|§39.3]]
 
-> [!example] Example §95.5: Combining Known Sums
+> [!example] Example §82.5: Combining Known Sums
 > Find the sum of $\displaystyle\sum_{n=1}^{\infty} \left( \frac{3}{n(n+1)} + \frac{1}{2^n} \right)$.
 >
 > $\sum 1/2^n$ is geometric with $a = \frac12$ and $r = \frac12$, so $\displaystyle\sum_{n=1}^{\infty} \frac{1}{2^n} = \frac{\frac12}{1 - \frac12} = 1$. By [[§82 Series#^ex-82-1|Example §82.1]](b), $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1$. Both series converge, so by [[§82 Series#^thm-82-6|Theorem §82.6]] the given series converges and
@@ -372,7 +372,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^ex-82-5
 
-> [!theorem] Proposition §95.7: Finitely Many Terms Do Not Matter
+> [!theorem] Proposition §82.7: Finitely Many Terms Do Not Matter
 > For any $N$, the series $\sum_{n=1}^{\infty} a_n$ converges if and only if $\sum_{n=N+1}^{\infty} a_n$ converges, and then
 >
 > $$

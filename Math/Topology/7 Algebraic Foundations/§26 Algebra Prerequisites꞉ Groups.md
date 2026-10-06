@@ -46,7 +46,7 @@ tags: [topology, math590]
 
 ## Groups
 
-> [!definition] Definition §34.1: Group
+> [!definition] Definition §26.1: Group
 > A **group** is a set $G$ together with a binary operation $\cdot\,: G \times G \to G$, $(a, b) \mapsto a \cdot b$, satisfying:
 > 1. **Associativity:** $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a, b, c \in G$.
 > 2. **Identity:** There exists $e \in G$ such that $e \cdot g = g \cdot e = g$ for all $g \in G$.
@@ -64,7 +64,7 @@ tags: [topology, math590]
 
 ^rem-26-2
 
-> [!example] Example §34.1: Key Examples
+> [!example] Example §26.1: Key Examples
 > - $(\mathbb{Z}, +)$: integers under addition. Identity: $0$. Inverse of $n$: $-n$. Abelian.
 > - $(\mathbb{Z}/n\mathbb{Z}, +)$: integers mod $n$. Elements $\{0, 1, \ldots, n-1\}$ with addition mod $n$. Abelian, $|G| = n$.
 > - $(S_n, \circ)$: permutations of $\{1, \ldots, n\}$ under composition ([[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]]). **Not abelian** for $n \geq 3$.
@@ -74,7 +74,7 @@ tags: [topology, math590]
 
 ## Subgroups
 
-> [!definition] Definition §34.3: Subgroup
+> [!definition] Definition §26.2: Subgroup
 > $H \subseteq G$ is a **subgroup** ($H \leq G$) if $H$ is a group under the inherited operation. Equivalently: (1) $e \in H$, (2) $a, b \in H \Rightarrow ab \in H$, (3) $a \in H \Rightarrow a^{-1} \in H$.
 
 ^def-26-2
@@ -83,7 +83,7 @@ tags: [topology, math590]
 > - Linear-algebra analogue: [[§3 Subspaces#^ladr-1-34|Conditions for a subspace]].
 > - Developed in full in Group Theory: [[§4 Subgroups#^def-4-1|493 Def. §4.1]], with the one-step test in [[Subgroup Criteria]].
 
-> [!theorem] Proposition §34.1: Properties Inherited by Subgroups
+> [!theorem] Proposition §26.1: Properties Inherited by Subgroups
 > Let $H \leq G$ be a subgroup. Then:
 > 1. If $G$ is abelian, then $H$ is abelian.
 > 2. If $G$ is [[§27 Free Groups and Presentations#^def-27-2|cyclic]] (defined below), then $H$ is cyclic.
@@ -105,7 +105,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]] ([[Lagrange's Theorem]]).
 
-> [!theorem] Proposition §34.2: Contrapositive: Detecting Non-Abelian Groups
+> [!theorem] Proposition §26.2: Contrapositive: Detecting Non-Abelian Groups
 > If $G$ contains a non-abelian subgroup $H$, then $G$ is non-abelian.
 
 ^prop-26-2
@@ -121,7 +121,7 @@ tags: [topology, math590]
 
 ## Homomorphisms and Isomorphisms
 
-> [!definition] Definition §35.1: Homomorphism
+> [!definition] Definition §26.3: Homomorphism
 > A map $f: G \to G'$ (both groups) is a **homomorphism** if $f(x \cdot y) = f(x) \cdot f(y)$ for all $x, y \in G$.
 
 ^def-26-3
@@ -129,7 +129,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Developed in full in Group Theory: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
 
-> [!theorem] Theorem §34.3: Homomorphisms Preserve Identity and Inverses
+> [!theorem] Theorem §26.3: Homomorphisms Preserve Identity and Inverses
 > Let $f: G \to G'$ be a homomorphism. Then:
 > 1. $f(e_G) = e_{G'}$.
 > 2. $f(a^{-1}) = f(a)^{-1}$ for all $a \in G$.
@@ -158,7 +158,7 @@ tags: [topology, math590]
 
 ^rem-26-3
 
-> [!theorem] Proposition §34.4: Bijectivity via Two-Sided Inverse
+> [!theorem] Proposition §26.4: Bijectivity via Two-Sided Inverse
 > A map $f: A \to B$ is bijective if and only if there exists a map $g: B \to A$ such that $f \circ g = \operatorname{id}_B$ and $g \circ f = \operatorname{id}_A$.
 >
 > Moreover, each condition alone gives half the result:
@@ -186,7 +186,7 @@ tags: [topology, math590]
 
 ^rem-26-4
 
-> [!definition] Definition §35.2: Isomorphism
+> [!definition] Definition §26.4: Isomorphism
 > A [[§26 Algebra Prerequisites꞉ Groups#^def-26-3|homomorphism]] $f: G \to G'$ is an **isomorphism** if $f$ is bijective. We write $G \cong G'$.
 
 ^def-26-4
@@ -195,7 +195,7 @@ tags: [topology, math590]
 > - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]].
 > - 493 counterpart: [[§16 Isomorphisms#^def-16-1|493 Def. §16.1]], with isomorphism invariants in [[§16 Isomorphisms#^prop-16-5|493 §16.5]].
 
-> [!theorem] Theorem §34.5: Inverse of an Isomorphism is a Homomorphism
+> [!theorem] Theorem §26.5: Inverse of an Isomorphism is a Homomorphism
 > If $f: G \to G'$ is an isomorphism, then $f^{-1}: G' \to G$ is also a homomorphism (and hence an isomorphism).
 
 ^thm-26-5
@@ -221,7 +221,7 @@ tags: [topology, math590]
 
 ^rem-26-5
 
-> [!theorem] Theorem §34.6: Isomorphisms Preserve All Algebraic Properties
+> [!theorem] Theorem §26.6: Isomorphisms Preserve All Algebraic Properties
 > If $f: G \to G'$ is an isomorphism, then $G$ and $G'$ have identical group-theoretic structure. In particular:
 > 1. $|G| = |G'|$ (same cardinality).
 > 2. $G$ is abelian if and only if $G'$ is abelian.
@@ -270,7 +270,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - The assignment on maps: [[§29 The Fundamental Group#^def-29-4|Induced Homomorphism]], with [[Functoriality of π₁|Functoriality of π₁]].
 
-> [!definition] Definition §35.3: Direct Product of Groups
+> [!definition] Definition §26.5: Direct Product of Groups
 > Let $G$ and $H$ be groups. The **direct product** $G \times H$ is the set of ordered pairs $\{(g, h) : g \in G, h \in H\}$ with the componentwise operation:
 >
 > $$
@@ -286,12 +286,12 @@ tags: [topology, math590]
 > - Appears as $\pi_1$ of a product: [[§29 The Fundamental Group#^thm-29-7|π₁ of a Product Space]].
 > - 493 counterpart: [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 §18.3]].
 
-> [!example] Example §35.1
+> [!example] Example §26.2
 > $\mathbb{Z} \times \mathbb{Z}$ is the group of integer pairs $(m, n)$ with addition $(m_1, n_1) + (m_2, n_2) = (m_1 + m_2, n_1 + n_2)$. Identity is $(0, 0)$, inverse of $(m, n)$ is $(-m, -n)$. This is abelian: $(m_1, n_1) + (m_2, n_2) = (m_2, n_2) + (m_1, n_1)$.
 
 ^ex-26-2
 
-> [!theorem] Theorem §34.7: Products of Isomorphic Groups
+> [!theorem] Theorem §26.7: Products of Isomorphic Groups
 > If $G \cong G'$ and $H \cong H'$, then $G \times H \cong G' \times H'$.
 
 ^thm-26-7
@@ -330,7 +330,7 @@ tags: [topology, math590]
 
 ## Kernel and Image
 
-> [!definition] Definition §35.4: Kernel
+> [!definition] Definition §26.6: Kernel
 > Let $f: G \to G'$ be a homomorphism.
 >
 > $$
@@ -352,7 +352,7 @@ tags: [topology, math590]
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
 > - 493 counterpart: [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]; injectivity via the kernel in [[Injective iff Trivial Kernel]].
 
-> [!theorem] Proposition §34.8
+> [!theorem] Proposition §26.8
 > $\ker(f) \leq G$ and $\operatorname{im}(f) \leq G'$. Moreover, $f$ is injective if and only if $\ker(f) = \{e\}$.
 
 ^prop-26-8
@@ -372,7 +372,7 @@ tags: [topology, math590]
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]], [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
 > - 493 counterparts: [[§15 Homomorphisms#^prop-15-2|493 Prop. §15.2]] (kernel and image are subgroups) and [[§15 Homomorphisms#^prop-15-3|493 Prop. §15.3]] (hub [[Injective iff Trivial Kernel]]).
 
-> [!theorem] Proposition §34.9: Injective Homomorphisms Preserve Subgroup Structure
+> [!theorem] Proposition §26.9: Injective Homomorphisms Preserve Subgroup Structure
 > Let $f: G \to G'$ be an injective homomorphism. Then:
 > 1. $f(G)$ is a subgroup of $G'$ isomorphic to $G$.
 > 2. If $G$ is non-abelian, then $f(G)$ is a non-abelian subgroup of $G'$, and hence $G'$ is non-abelian.
@@ -391,7 +391,7 @@ tags: [topology, math590]
 
 *Uses:* [[§26 Algebra Prerequisites꞉ Groups#^thm-26-3|§26.3]], [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|Def. §26.4]], [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|§26.6]], [[§26 Algebra Prerequisites꞉ Groups#^prop-26-2|§26.2]]
 
-> [!theorem] Proposition §34.10: Surjective Homomorphisms Preserve Abelianness
+> [!theorem] Proposition §26.10: Surjective Homomorphisms Preserve Abelianness
 > Let $f: G \to G'$ be a surjective homomorphism. If $G$ is abelian, then $G'$ is abelian.
 >
 > Equivalently (contrapositive): if $G'$ is non-abelian, then $G$ is non-abelian.

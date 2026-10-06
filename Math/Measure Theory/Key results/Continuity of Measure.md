@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§13 Approximation and Continuity of Measure#^prop-13-4]]
 
 ## Treated in
-- [[§13 Approximation and Continuity of Measure#^prop-13-4|Proposition §13.4: Continuity of Measure from Below]], in [[§12 Borel Sets and Measure Spaces]]
+- [[§13 Approximation and Continuity of Measure#^prop-13-4|Proposition §13.4: Continuity of Measure from Below]], in [[§13 Approximation and Continuity of Measure]]
 
 ## Its proof uses
 - [[§11 Lebesgue Measurable Sets#^thm-11-1|Theorem §11.1: Closure Properties of ℳ]]

@@ -33,7 +33,7 @@ $$
 
 and suppose first that $f(x, y) \ge 0$. Let $S = \{(x, y, z) \in \mathbb{R}^3 \mid 0 \le z \le f(x, y),\ (x, y) \in R\}$ be the solid that lies above $R$ and under the graph of $f$.
 
-> [!definition] Definition §137.1: Subrectangles, Sample Points and the Volume Under a Graph
+> [!definition] Definition §115.1: Subrectangles, Sample Points and the Volume Under a Graph
 > Divide $[a, b]$ into $m$ subintervals $[x_{i-1}, x_i]$ of equal width $\Delta x = (b - a)/m$ and $[c, d]$ into $n$ subintervals $[y_{j-1}, y_j]$ of equal width $\Delta y = (d - c)/n$. The lines parallel to the axes through the endpoints cut $R$ into the $mn$ **subrectangles**
 >
 > $$
@@ -60,7 +60,7 @@ and suppose first that $f(x, y) \ge 0$. Let $S = \{(x, y, z) \in \mathbb{R}^3 \m
 
 The same limits occur for functions that are not positive (mass, charge, probability; [[§118 Applications of Double Integrals|§118]]), so they get a name of their own.
 
-> [!definition] Definition §137.2: The Double Integral
+> [!definition] Definition §115.2: The Double Integral
 > The **double integral** of $f$ over the rectangle $R$ is
 >
 > $$
@@ -94,7 +94,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 ^rem-115-1
 
-> [!theorem] Theorem §137.1: Integrable Functions
+> [!theorem] Theorem §115.1: Integrable Functions
 > Every continuous function on $R$ is integrable over $R$. More generally, if $f$ is bounded on $R$ (there is a constant $M$ with $|f(x, y)| \le M$ for all $(x, y) \in R$) and $f$ is continuous on $R$ except possibly on a finite number of smooth curves, then $f$ is integrable over $R$.
 >
 > *Stewart: 15.1 (text)*
@@ -103,7 +103,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 *Stewart omits the proof ("shown in courses on advanced calculus"). For continuous $f$, the one-variable proof from [[§19 Uniform Continuity#^def-19-1|uniform continuity]] ([[§8 Motivation꞉ The Riemann Integral#^prop-8-1|551 Prop. §8.1]]) carries over word for word to a rectangle; the two-variable theory, including integration over sets bounded by curves, is [[§20 Multivariable Integration|452 §20]].*
 
-> [!theorem] Theorem §137.2: Volume as a Double Integral
+> [!theorem] Theorem §115.2: Volume as a Double Integral
 > If $f(x, y) \ge 0$, then the volume $V$ of the solid that lies above the rectangle $R$ and below the surface $z = f(x, y)$ is
 >
 > $$
@@ -121,7 +121,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 *Uses:* [[§115 Double Integrals Over Rectangles#^def-115-1|Def. §115.1]], [[§115 Double Integrals Over Rectangles#^def-115-2|Def. §115.2]]
 
-> [!example] Example §137.1: Estimating a Volume with a Riemann Sum
+> [!example] Example §115.1: Estimating a Volume with a Riemann Sum
 > Estimate the volume of the solid that lies above the square $R = [0, 2] \times [0, 2]$ and below the elliptic paraboloid $z = 16 - x^2 - 2y^2$. Divide $R$ into four equal squares and use the upper right corner of each square $R_{ij}$ as sample point.
 >
 > The squares are $R_{11} = [0,1]\times[0,1]$, $R_{12} = [0,1]\times[1,2]$, $R_{21} = [1,2]\times[0,1]$ and $R_{22} = [1,2]\times[1,2]$, each of area $\Delta A = 1$, with upper right corners $(1,1)$, $(1,2)$, $(2,1)$, $(2,2)$. With $f(x, y) = 16 - x^2 - 2y^2$ and $m = n = 2$,
@@ -142,7 +142,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 ![[m233-98-1.svg]]
 *The Riemann sum of [[§115 Double Integrals Over Rectangles#^ex-115-1|Example §115.1]]. Each box stands on one square $R_{ij}$ and reaches up to the surface $z = 16 - x^2 - 2y^2$ (blue edges) at the upper right corner of its base (red dots): heights $13, 7, 10, 4$. Since $f$ decreases in $x$ and in $y$, the corner $(x_i, y_j)$ is the lowest point of the surface over $R_{ij}$, so every box lies under the surface and $34$ underestimates the volume $48$.*
 
-> [!example] Example §137.2: A Double Integral Read as a Volume
+> [!example] Example §115.2: A Double Integral Read as a Volume
 > If $R = \{(x, y) \mid -1 \le x \le 1,\ -2 \le y \le 2\}$, evaluate $\displaystyle\iint_R \sqrt{1 - x^2}\,dA$.
 >
 > Evaluating from [[§115 Double Integrals Over Rectangles#^def-115-2|Definition §115.2]] would be very hard. But $\sqrt{1 - x^2} \ge 0$, so by [[§115 Double Integrals Over Rectangles#^thm-115-2|Theorem §115.2]] the integral is a volume. If $z = \sqrt{1 - x^2}$, then $x^2 + z^2 = 1$ and $z \ge 0$: the integral is the volume of the solid $S$ under the circular cylinder $x^2 + z^2 = 1$ and above $R$. Its cross-sections perpendicular to the $y$-axis are half-disks of radius $1$, and $S$ has length $4$, so
@@ -155,7 +155,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 ^ex-115-2
 
-> [!example] Example §137.3: A Riemann Sum with Values of Both Signs
+> [!example] Example §115.3: A Riemann Sum with Values of Both Signs
 > Use upper right-hand Riemann sums with $9$ equally sized squares ($\Delta x = \Delta y = \pi/3$) to approximate $\displaystyle\iint_R \cos x \sin y\,dA$, where $R = \{(x, y) \mid -\tfrac{\pi}{2} \le x \le \tfrac{\pi}{2},\ 0 \le y \le \pi\}$.
 >
 > Here $m = n = 3$ and $\Delta A = \pi^2/9$. The right endpoints of the $x$-subintervals are $x_i = -\tfrac{\pi}{6}, \tfrac{\pi}{6}, \tfrac{\pi}{2}$ and the upper endpoints of the $y$-subintervals are $y_j = \tfrac{\pi}{3}, \tfrac{2\pi}{3}, \pi$. The integrand is a product, so the double sum factors:
@@ -185,7 +185,7 @@ The approximation methods for single integrals (Midpoint, Trapezoidal and Simpso
 
 ^def-115-3
 
-> [!example] Example §137.4: The Midpoint Rule
+> [!example] Example §115.4: The Midpoint Rule
 > Use the Midpoint Rule with $m = n = 2$ to estimate $\displaystyle\iint_R (x - 3y^2)\,dA$, where $R = \{(x, y) \mid 0 \le x \le 2,\ 1 \le y \le 2\}$.
 >
 > The centers of the four subrectangles have $\bar{x}_1 = \tfrac12$, $\bar{x}_2 = \tfrac32$, $\bar{y}_1 = \tfrac54$, $\bar{y}_2 = \tfrac74$, and each subrectangle has area $\Delta A = 1 \cdot \tfrac12 = \tfrac12$. With $f(x, y) = x - 3y^2$,
@@ -244,7 +244,7 @@ Evaluating a double integral from its definition is even harder than for single 
 
 ^def-115-4
 
-> [!theorem] Theorem §137.3: Fubini's Theorem
+> [!theorem] Theorem §115.3: Fubini's Theorem
 > If $f$ is continuous on the rectangle $R = \{(x, y) \mid a \le x \le b,\ c \le y \le d\}$, then
 >
 > $$
@@ -277,7 +277,7 @@ Evaluating a double integral from its definition is even harder than for single 
 > - Rigorous treatment: [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]] (continuous $f$ on a rectangle). Hub: [[Fubini's Theorem]]. The Lebesgue versions, for $f \ge 0$ measurable and for integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$: [[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]] (Tonelli), [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]] (Fubini).
 > - Some hypothesis is needed: for $f = (x^2 - y^2)/(x^2 + y^2)^2$, unbounded near a corner of $[0,1]^2$, the two iterated integrals are $\pi/4$ and $-\pi/4$ ([[§23 Fubini's Theorem#^ex-23-2|452 Ex. §23.2]]); Stewart's Exercise 15.1.57 is a similar example.
 
-> [!example] Example §137.5: Fubini's Theorem in Practice
+> [!example] Example §115.5: Fubini's Theorem in Practice
 > **(a)** Evaluate $\displaystyle\iint_R (x - 3y^2)\,dA$, where $R = \{(x, y) \mid 0 \le x \le 2,\ 1 \le y \le 2\}$ (compare [[§115 Double Integrals Over Rectangles#^ex-115-4|Example §115.4]]).
 >
 > Integrating first with respect to $y$:

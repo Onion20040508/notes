@@ -43,19 +43,19 @@ tags: [multivariable-analysis, math452]
 > [!remark]- Connections
 > - Square neighborhoods are the balls of the [[§12 Metric Topology#^ex-12-2|square metric]]; the precise form of this remark is [[§12 Metric Topology#^thm-12-2|Euclidean and Square Metrics Induce Same Topology]] (MATH 590), resting on the inequality of [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Equivalence of the Two Distances]] (MATH 451).
 
-> [!definition] Definition §2.5: Interior Point
+> [!definition] Definition §2.3: Interior Point
 > Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
 > - $x$ is an **interior point** of $E$ if $\exists\, \varepsilon > 0$ such that $B(x, \varepsilon) \subseteq E$.
 
 ^def-2-3
 
-> [!definition] Definition §2.7: Exterior Point
+> [!definition] Definition §2.4: Exterior Point
 > Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
 > - $x$ is an **exterior point** of $E$ if $\exists\, \varepsilon > 0$ such that $B(x, \varepsilon) \subseteq E^c$.
 
 ^def-2-4
 
-> [!definition] Definition §2.8: Boundary Point
+> [!definition] Definition §2.5: Boundary Point
 > Let $E \subseteq \mathbb{R}^n$ and $x \in \mathbb{R}^n$.
 > - $x$ is a **boundary point** of $E$ if for all $\varepsilon > 0$: $B(x, \varepsilon) \cap E \neq \emptyset$ and $B(x, \varepsilon) \cap E^c \neq \emptyset$.
 

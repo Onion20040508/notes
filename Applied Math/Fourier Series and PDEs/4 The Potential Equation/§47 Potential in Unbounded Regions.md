@@ -34,7 +34,7 @@ $$
 \end{aligned}
 $$
 
-> [!theorem] Theorem §58.1: Slot with Data on the Bottom
+> [!theorem] Theorem §47.1: Slot with Data on the Bottom
 > The bounded solution $u_1$ of the potential equation in the slot $0 < x < a$, $0 < y$, with $u_1(0, y) = u_1(a, y) = 0$ and $u_1(x, 0) = f(x)$, is
 >
 > $$
@@ -71,7 +71,7 @@ $$
 > [!remark]- Connections
 > - See also: [[§27★ Harmonic Functions#^ex-27-1|342 Ex. §27.1]] (the case $a = \pi$, $f(x) = \sin x$, whose solution $e^{-y}\sin x$ is the real part of an entire function).
 
-> [!theorem] Theorem §58.2: Slot with Data on the Walls
+> [!theorem] Theorem §47.2: Slot with Data on the Walls
 > Let $g_1$ and $g_2$ be sectionally smooth on $0 < y < \infty$ with $\int_0^\infty|g_i(y)|\,dy < \infty$. The bounded solution $u_2$ of the potential equation in the slot $0 < x < a$, $0 < y$, with $u_2(x, 0) = 0$, $u_2(0, y) = g_1(y)$, $u_2(a, y) = g_2(y)$, is
 >
 > $$
@@ -137,7 +137,7 @@ $$
 
 ^rem-47-1
 
-> [!example] Example §58.1: A Slot with a Constant Bottom Value
+> [!example] Example §47.1: A Slot with a Constant Bottom Value
 > Solve the potential equation in the slot $0 < x < a$, $0 < y$ with $u(0, y) = u(a, y) = 0$, $u(x, 0) = 1$, $u$ bounded.
 >
 > **Series.** By Theorem §47.1 with $f = 1$, $a_n = \frac2a\int_0^a\sin(n\pi x/a)\,dx = \frac{2}{n\pi}\big(1 - (-1)^n\big)$, which is $\frac{4}{n\pi}$ for odd $n$ and $0$ for even $n$:
@@ -170,7 +170,7 @@ $$
 > [!remark]- Connections
 > - Complex-variables version: [[§120★ A Related Problem (Steady Temperatures in a Half Plane)#^ex-120-1|342 Ex. §120.1]] (the same slot, shifted to $-\pi/2 < x < \pi/2$, mapped onto a half plane by $\sin z$; it gives the same arctangent).
 
-> [!example] Example §58.2: A Slot with Data on Both Walls
+> [!example] Example §47.2: A Slot with Data on Both Walls
 > Solve
 >
 > $$
@@ -211,7 +211,7 @@ $$
 
 ^ex-47-2
 
-> [!example] Example §58.3: A Solution the Method Cannot Find
+> [!example] Example §47.3: A Solution the Method Cannot Find
 > The function $u(x, y) = x$ is harmonic, bounded in the slot ($0 \le u \le a$), and satisfies the slot problem (1)–(4) with $f(x) = x$, $g_1(y) = 0$, $g_2(y) = a$.
 >
 > The method of this section splits it as $u_1 + u_2$. The part $u_1$ is fine: $a_n = \frac2a\int_0^a x\sin(n\pi x/a)\,dx = \frac{2a(-1)^{n+1}}{n\pi}$. But $u_2$ needs $A(\mu) = \frac2\pi\int_0^\infty a\sin(\mu y)\,dy$, and this integral does not converge: $g_2 = a$ is not absolutely integrable on $0 < y < \infty$, so it has no Fourier sine integral representation. The method breaks down although the solution is as simple as can be. The reason is visible in the split: $u_1 \to 0$ up the slot while $u = x$ does not, so $u_2 = x - u_1$ must tend to $x$ as $y \to \infty$; but wall data that do not die out at infinity are exactly what the Fourier integral of Theorem §47.2 cannot represent.

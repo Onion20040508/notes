@@ -15,7 +15,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 ## Area
 
-> [!theorem] Theorem §88.1: Area of a Sector
+> [!theorem] Theorem §76.1: Area of a Sector
 > The area of a sector of a circle with radius $r$ and central angle $\theta$ (in radians) is
 >
 > $$
@@ -33,7 +33,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 *Uses:* area $\pi r^2$ of a disk ([[§53 Trigonometric Substitution#^ex-53-2|Ex. §53.2]] with $a = b = r$)
 
-> [!theorem] Theorem §88.2: Area of a Polar Region
+> [!theorem] Theorem §76.2: Area of a Polar Region
 > Let $\mathscr{R}$ be the region bounded by the polar curve $r = f(\theta)$ and the rays $\theta = a$ and $\theta = b$, where $f$ is a positive continuous function and $0 < b - a \le 2\pi$. The area of $\mathscr{R}$ is
 >
 > $$
@@ -84,7 +84,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > [!remark]- Connections
 > - In double-integral form the same area is $\iint_{\mathscr{R}} dA = \int_a^b \int_0^{f(\theta)} r\,dr\,d\theta = \int_a^b \frac12 [f(\theta)]^2\,d\theta$, by the change of variables to polar coordinates: [[§22 Properties of the Integral#^thm-22-6|452 Thm. §22.6]] (and [[§117 Double Integrals in Polar Coordinates#^cor-117-3|Corollary §117.3]]).
 
-> [!example] Example §88.1: One Loop of the Four-Leaved Rose
+> [!example] Example §76.1: One Loop of the Four-Leaved Rose
 > Find the area enclosed by one loop of $r = \cos 2\theta$.
 >
 > The right loop ([[§75 Polar Coordinates#^ex-75-5|Example §75.5]]) is swept out by a ray rotating from $\theta = -\pi/4$ to $\theta = \pi/4$, on which $\cos 2\theta \ge 0$. By [[§76 Calculus in Polar Coordinates#^thm-76-2|Theorem §76.2]],
@@ -103,7 +103,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 ^ex-76-1
 
-> [!theorem] Corollary §88.3: Area Between Two Polar Curves
+> [!theorem] Corollary §76.3: Area Between Two Polar Curves
 > Let $\mathscr{R}$ be bounded by $r = f(\theta)$, $r = g(\theta)$, $\theta = a$ and $\theta = b$, where $f(\theta) \ge g(\theta) \ge 0$ are continuous and $0 < b - a \le 2\pi$. Then
 >
 > $$
@@ -121,7 +121,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 *Uses:* [[§76 Calculus in Polar Coordinates#^thm-76-2|§76.2]]
 
-> [!example] Example §88.2: Inside a Circle, Outside a Cardioid
+> [!example] Example §76.2: Inside a Circle, Outside a Cardioid
 > Find the area of the region inside the circle $r = 3\sin\theta$ and outside the cardioid $r = 1 + \sin\theta$.
 >
 > **Limits.** The curves meet where $3\sin\theta = 1 + \sin\theta$, that is $\sin\theta = \frac12$: $\theta = \pi/6$ and $5\pi/6$. For $\pi/6 \le \theta \le 5\pi/6$, $3\sin\theta \ge 1 + \sin\theta$, so the circle is the outer curve.
@@ -152,7 +152,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 ^rem-76-2
 
-> [!example] Example §88.3: Intersections of a Rose and a Circle
+> [!example] Example §76.3: Intersections of a Rose and a Circle
 > Find all points of intersection of $r = \cos 2\theta$ and $r = \frac12$.
 >
 > Solving simultaneously, $\cos 2\theta = \frac12$, so $2\theta = \pi/3, 5\pi/3, 7\pi/3, 11\pi/3$ (for $0 \le \theta < 2\pi$), giving the four points
@@ -211,7 +211,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 
 *Uses:* [[§75 Polar Coordinates#^thm-75-2|§75.2]], [[§18 The Product and Quotient Rules#^thm-18-1|§18.1]] (Product Rule), [[§74 Calculus with Parametric Curves#^thm-74-4|§74.4]]
 
-> [!example] Example §88.4: The Length of the Cardioid
+> [!example] Example §76.4: The Length of the Cardioid
 > Find the length of the cardioid $r = 1 + \sin\theta$ ([[§75 Polar Coordinates#^ex-75-4|Example §75.4]]).
 >
 > The whole cardioid is traced once for $0 \le \theta \le 2\pi$, and $dr/d\theta = \cos\theta$. By Formula 6,

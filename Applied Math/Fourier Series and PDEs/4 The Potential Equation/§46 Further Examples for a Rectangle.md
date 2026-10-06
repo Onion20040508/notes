@@ -15,7 +15,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 
 ## Insulated Sides
 
-> [!example] Example §57.1: A Conductor with Insulated Sides
+> [!example] Example §46.1: A Conductor with Insulated Sides
 > The unknown $u$ might be a voltage in a rectangular conductor whose left and right sides are electrically insulated:
 >
 > $$
@@ -70,7 +70,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 
 ^ex-46-1
 
-> [!example] Example §57.2: General Data on Top and Bottom, Insulated Sides
+> [!example] Example §46.2: General Data on Top and Bottom, Insulated Sides
 > Solve
 >
 > $$
@@ -101,7 +101,7 @@ Separation of variables in a rectangle is not limited to Dirichlet problems. Ins
 
 ^ex-46-2
 
-> [!example] Example §57.3: Fixed Temperature Below, Prescribed Flux Above
+> [!example] Example §46.3: Fixed Temperature Below, Prescribed Flux Above
 > Solve
 >
 > $$
@@ -232,7 +232,7 @@ The success of separation of variables depends on having homogeneous boundary co
 
 ## The Poisson Equation
 
-> [!definition] Definition §57.1: Poisson Equation
+> [!definition] Definition §46.1: Poisson Equation
 > The **Poisson equation** is
 >
 > $$
@@ -252,7 +252,7 @@ The success of separation of variables depends on having homogeneous boundary co
 > - Uniqueness: two solutions of the same Poisson equation with the same boundary values differ by a harmonic function vanishing on the boundary, hence coincide, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-1|452 Ex. §28.1]] (stated there for $\Delta u_1 = \Delta u_2$); in the vault's terms also [[§49 The Poisson Integral Formula and the Mean Value Property#^cor-49-4|Corollary §49.4]] applied to the difference.
 > - See also: [[§116★ Transformations of Harmonic Functions#^cor-116-3|342 Cor. §116.3]] (how the Poisson equation transforms under an analytic change of variables).
 
-> [!theorem] Proposition §57.1: Polynomial Solutions of the Poisson Equation
+> [!theorem] Proposition §46.1: Polynomial Solutions of the Poisson Equation
 > If $H$ is a constant, the polynomial
 >
 > $$

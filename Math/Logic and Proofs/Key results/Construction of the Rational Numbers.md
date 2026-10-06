@@ -8,11 +8,11 @@ tags: [logic-and-proofs, hub]
 ![[§22a Constructing ℚ and ℤ#^thm-22a-4]]
 
 ## Treated in
-- [[§22a Constructing ℚ and ℤ#^thm-22a-4|Theorem §22a.4: ℚ Is a Field]], in [[§22 Partitions and Equivalence Relations]]
+- [[§22a Constructing ℚ and ℤ#^thm-22a-4|Theorem §22a.4: ℚ Is a Field]], in [[§22a Constructing ℚ and ℤ]]
 
 ## Its proof uses
-- [[§22a Constructing ℚ and ℤ#^def-22a-3|Definition §22a.3: Addition and Multiplication of Rationals]]
 - [[§22a Constructing ℚ and ℤ#^lem-22a-2|Lemma §22a.2: Basic Facts About Fractions]]
+- [[§22a Constructing ℚ and ℤ#^def-22a-3|Definition §22a.3: Addition and Multiplication of Rationals]]
 - [[§22a Constructing ℚ and ℤ#^prop-22a-3|Proposition §22a.3: The Operations Are Well-Defined]]
 
 ## Used in (Logic and Proofs)

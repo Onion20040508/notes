@@ -15,7 +15,7 @@ The one genuinely new tool for sequences is the Monotonic Sequence Theorem: a bo
 
 ## Monotonic and Bounded Sequences
 
-> [!definition] Definition §94.1: Increasing, Decreasing, Monotonic
+> [!definition] Definition §81.1: Increasing, Decreasing, Monotonic
 > A sequence $\{a_n\}$ is **increasing** if $a_n < a_{n+1}$ for all $n \ge 1$, that is, $a_1 < a_2 < a_3 < \cdots$. It is **decreasing** if $a_n > a_{n+1}$ for all $n \ge 1$. It is **monotonic** if it is either increasing or decreasing.
 >
 > For instance, $\left\{ \frac{3}{n+5} \right\}$ is decreasing: $\dfrac{3}{n+5} > \dfrac{3}{n+6} = \dfrac{3}{(n+1)+5}$, since the second denominator is larger.
@@ -24,7 +24,7 @@ The one genuinely new tool for sequences is the Monotonic Sequence Theorem: a bo
 
 ^def-81-1
 
-> [!example] Example §94.1: Showing a Sequence Is Decreasing
+> [!example] Example §81.1: Showing a Sequence Is Decreasing
 > Show that $a_n = \dfrac{n}{n^2 + 1}$ is decreasing.
 >
 > **Solution 1 (compare $a_n$ and $a_{n+1}$).** We must show $a_n > a_{n+1}$, that is, $\dfrac{n}{n^2+1} > \dfrac{n+1}{(n+1)^2 + 1}$. The denominators are positive, so cross-multiplying gives an equivalent inequality:
@@ -51,7 +51,7 @@ The one genuinely new tool for sequences is the Monotonic Sequence Theorem: a bo
 
 ^ex-81-1
 
-> [!definition] Definition §94.2: Bounded Sequence
+> [!definition] Definition §81.2: Bounded Sequence
 > A sequence $\{a_n\}$ is **bounded above** if there is a number $M$ such that $a_n \le M$ for all $n \ge 1$, and **bounded below** if there is a number $m$ such that $m \le a_n$ for all $n \ge 1$. If it is bounded above and below, it is a **bounded sequence**.
 >
 > For instance, $a_n = n$ is bounded below ($a_n > 0$) but not above, and $a_n = n/(n+1)$ is bounded since $0 < a_n < 1$.
@@ -62,14 +62,14 @@ The one genuinely new tool for sequences is the Monotonic Sequence Theorem: a bo
 
 Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, and $a_n = n$ is monotonic but $n \to \infty$. Together they do. If $\{a_n\}$ increases and $a_n \le M$ for all $n$, the terms are forced to crowd together below $M$ and approach some number $L \le M$. Making this precise needs a property of the real numbers.
 
-> [!definition] Definition §94.3: Least Upper Bound
+> [!definition] Definition §81.3: Least Upper Bound
 > A number $b$ is a **least upper bound** of a set $S$ of real numbers if $b$ is an upper bound for $S$ ($x \le b$ for all $x$ in $S$) and $b \le M$ for every other upper bound $M$ of $S$.
 >
 > *Stewart: 11.1 (text)*
 
 ^def-81-3
 
-> [!definition] Definition §94.4: The Completeness Axiom
+> [!definition] Definition §81.4: The Completeness Axiom
 > **Completeness Axiom.** If $S$ is a nonempty set of real numbers that has an upper bound $M$ ($x \le M$ for all $x$ in $S$), then $S$ has a least upper bound $b$.
 >
 > The axiom expresses the fact that there is no gap or hole in the real number line ([[§139 Numbers, Inequalities, and Absolute Values#^def-139-2|Definition §139.2]]). In the same way, a nonempty set with a lower bound has a **greatest lower bound**.
@@ -78,7 +78,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 
 ^def-81-4
 
-> [!theorem] Theorem §94.1: Monotonic Sequence Theorem
+> [!theorem] Theorem §81.1: Monotonic Sequence Theorem
 > Every bounded, monotonic sequence is convergent.
 >
 > In particular, a sequence that is increasing and bounded above converges, and a sequence that is decreasing and bounded below converges.
@@ -112,7 +112,7 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 > - Rigorous treatment: [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]] (Monotone Convergence Theorem, same proof; hub [[Monotone Convergence Theorem]]); an unbounded monotone sequence tends to $\pm\infty$, [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-3|451 Thm. §10.3]].
 > - The Completeness Axiom it rests on: [[§4 The Completeness Axiom#^def-4-4|451 Def. §4.4]] (with the supremum, [[§4 The Completeness Axiom#^def-4-3|451 Def. §4.3]]); hub [[Completeness Axiom]]. The geometric sequence of [[§80 Sequences#^thm-80-8|Theorem §80.8]]: [[§9a Divergence to ±∞ and the Ratio Test#^ex-9a-3|451 Ex. §9a.3]], collected in [[Geometric series]].
 
-> [!example] Example §94.2: A Recursive Sequence
+> [!example] Example §81.2: A Recursive Sequence
 > Investigate the sequence defined by the *recurrence relation*
 >
 > $$
@@ -145,4 +145,4 @@ Neither condition alone forces convergence: $(-1)^n$ is bounded but divergent, a
 > 5. **Recursive sequences:** show by induction that the sequence is monotonic and bounded, conclude that $L$ exists, then let $n \to \infty$ in the recurrence and solve for $L$ ([[§81 Monotonic and Bounded Sequences#^ex-81-2|Example §81.2]]). Solving for $L$ before knowing that the limit exists can give a wrong answer.
 > 6. **Divergence:** exhibit two different values approached infinitely often, as for $(-1)^n$, or show $a_n \to \pm\infty$.
 
-^rem-81-2
+^rem-81-1

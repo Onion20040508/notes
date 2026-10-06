@@ -15,7 +15,7 @@ Triple integrals of functions $f(x, y, z)$ over solid regions are defined exactl
 
 ## Triple Integrals over Rectangular Boxes
 
-> [!definition] Definition §143.1: The Triple Integral over a Box
+> [!definition] Definition §120.1: The Triple Integral over a Box
 > Let $f$ be defined on a rectangular box
 >
 > $$
@@ -44,7 +44,7 @@ Triple integrals of functions $f(x, y, z)$ over solid regions are defined exactl
 
 ^def-120-1
 
-> [!theorem] Theorem §143.1: Fubini's Theorem for Triple Integrals
+> [!theorem] Theorem §120.1: Fubini's Theorem for Triple Integrals
 > If $f$ is continuous on the rectangular box $B = [a, b] \times [c, d] \times [r, s]$, then
 >
 > $$
@@ -70,7 +70,7 @@ $$
 
 ## Triple Integrals over General Regions
 
-> [!definition] Definition §143.2: The Triple Integral over a Bounded Solid
+> [!definition] Definition §120.2: The Triple Integral over a Bounded Solid
 > Let $E$ be a bounded region in three-dimensional space (a solid), enclosed in a box $B$ as in Equation 1. Define $F$ on $B$ to agree with $f$ on $E$ and to be $0$ at the points of $B$ outside $E$. Then
 >
 > $$
@@ -96,7 +96,7 @@ $$
 
 ^def-120-3
 
-> [!theorem] Theorem §143.2: Integrals over Type 1 Regions
+> [!theorem] Theorem §120.2: Integrals over Type 1 Regions
 > If $f$ is continuous on a type 1 region $E$ given by Equation 5, then
 >
 > $$
@@ -187,7 +187,7 @@ $$
 
 ^rem-120-1
 
-> [!example] Example §143.1: A Solid under a Saddle-Shaped Surface
+> [!example] Example §120.1: A Solid under a Saddle-Shaped Surface
 > Evaluate $\displaystyle\iiint_E z\,dV$, where $E$ is the solid in the first octant bounded by the surface $z = 12xy$ and the planes $y = x$, $x = 1$.
 >
 > The lower boundary of $E$ is the plane $z = 0$ and the upper boundary is $z = 12xy$, so $E$ is type 1 with $u_1 = 0$, $u_2 = 12xy$. Its projection onto the $xy$-plane is the triangle bounded by $y = 0$, $y = x$ and $x = 1$, so
@@ -214,7 +214,7 @@ $$
 ![[m233-103-1.svg]]
 *The solid of [[§120 Triple Integrals#^ex-120-1|Example §120.1]] (blue) over its projection $D$ (green). The innermost integral runs along a vertical segment (red) from the floor $z = 0$ to the roof $z = 12xy$; its limits depend on $(x, y)$. The point $(x, y)$ then ranges over the triangle $D$, read off as a type I region: $0 \le y \le x$, $0 \le x \le 1$.*
 
-> [!example] Example §143.2: Projecting onto the Better Plane
+> [!example] Example §120.2: Projecting onto the Better Plane
 > Evaluate $\displaystyle\iiint_E \sqrt{x^2 + z^2}\,dV$, where $E$ is the region bounded by the paraboloid $y = x^2 + z^2$ and the plane $y = 4$.
 >
 > **As a type 1 region** the projection onto the $xy$-plane is the parabolic region $x^2 \le y \le 4$ (the trace of the paraboloid in $z = 0$ is $y = x^2$), and $z = \pm\sqrt{y - x^2}$, so
@@ -245,7 +245,7 @@ $$
 
 Fubini's Theorem for Triple Integrals gives six orders in which a triple integral can be written as an iterated integral, and one may be much easier than another. To change the order, describe the solid from its limits and project it onto the plane required by the new innermost variable.
 
-> [!example] Example §143.3: Rewriting an Iterated Integral in Two Other Orders
+> [!example] Example §120.3: Rewriting an Iterated Integral in Two Other Orders
 > Express $\displaystyle\int_0^1 \int_0^{x^2} \int_0^y f(x, y, z)\,dz\,dy\,dx$ as a triple integral and rewrite it as an iterated integral (a) integrating first with respect to $x$, then $z$, then $y$; (b) first with respect to $y$, then $x$, then $z$.
 >
 > **The solid.** The integral is $\iiint_E f\,dV$ with $E = \{0 \le x \le 1,\ 0 \le y \le x^2,\ 0 \le z \le y\}$: the type 1 region between $z = 0$ and $z = y$ over $D_1 = \{0 \le x \le 1,\ 0 \le y \le x^2\}$. So $E$ is the solid enclosed by the planes $z = 0$, $x = 1$, $y = z$ and the parabolic cylinder $y = x^2$ (or $x = \sqrt y$). Its projections onto the three coordinate planes are

@@ -129,7 +129,7 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 
 People often expect to order everything — in competitions, in admission to schools. This expectation is exactly property O1: any two elements can be compared. But O1 is not always available.
 
-> [!definition] Definition §3.4: Ordered Sets
+> [!definition] Definition §3.3: Ordered Sets
 > A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**).
 
 ^def-3-3
@@ -137,7 +137,7 @@ People often expect to order everything — in competitions, in admission to sch
 > [!remark]- Connections
 > - 590 uses the strict form: an order relation, [[§3 Order Topology#^def-3-1|590 Def. §3.1]], which defines the order topology.
 
-> [!definition] Definition §3.5: Partially Ordered Sets
+> [!definition] Definition §3.4: Partially Ordered Sets
 > Let $\leq$ be a relation on a set. If $\leq$ satisfies only O2, O3 and *reflexivity* ($a \leq a$ for every $a$, which O1 implies but which must be required separately once O1 is dropped), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
 
 ^def-3-4
@@ -185,7 +185,7 @@ Since $\mathbb{C}$ can be identified with $\mathbb{R}^2$, the lexicographic orde
 
 For an ordered field like $\mathbb{Q}$ or $\mathbb{R}$, we have the notion of absolute value.
 
-> [!definition] Definition §3.6: Absolute Value
+> [!definition] Definition §3.5: Absolute Value
 > For $a \in \mathbb{R}$, define
 >
 > $$

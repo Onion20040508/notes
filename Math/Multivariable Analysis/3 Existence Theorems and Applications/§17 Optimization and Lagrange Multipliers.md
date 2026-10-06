@@ -9,17 +9,17 @@ tags: [multivariable-analysis, math452]
 
 ## Unconstrained Optimization
 
-> [!definition] Definition §28.1: Local Maximum
+> [!definition] Definition §17.1: Local Maximum
 > A function $f(x, y)$ has a **local maximum** at $(x_0, y_0)$ if there exists $\delta > 0$ such that $f(x, y) \leq f(x_0, y_0)$ for all $(x, y)$ with $\|(x, y) - (x_0, y_0)\| < \delta$.
 
 ^def-17-1
 
-> [!definition] Definition §28.4: Local Minimum
+> [!definition] Definition §17.2: Local Minimum
 > Similarly for **local minimum** with $f(x, y) \geq f(x_0, y_0)$.
 
 ^def-17-2
 
-> [!theorem] Theorem §28.1: Necessary Condition for Extremum — Fermat's Theorem in $\mathbb{R}^n$
+> [!theorem] Theorem §17.1: Necessary Condition for Extremum — Fermat's Theorem in $\mathbb{R}^n$
 > If $f$ has a local max/min at $(x_0, y_0)$ and the partials $f_x, f_y$ exist there (e.g., $f$ is differentiable there), then
 >
 > $$
@@ -45,7 +45,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1), applied here along each coordinate slice.
-> - On a manifold the critical points of $f : M \to \mathbb{R}$ are the points where $df_p = 0$, [[§32 Submersions#^prop-32-2|591 Prop. §32.2]].
+> - On a manifold the critical points of $f : M \to \mathbb{R}$ are the points where $df_p = 0$, [[§34 Submersions#^prop-34-2|591 Prop. §34.2]].
 > - Computational version: [[§113 Maximum and Minimum Values#^thm-113-1|Calc Thm. §113.1]] (with worked examples); one-variable case [[§28 Maximum and Minimum Values#^thm-28-2|Calc Thm. §28.2]].
 
 > [!remark] Remark
@@ -57,7 +57,7 @@ tags: [multivariable-analysis, math452]
 
 Now suppose we want to optimize $f(x, y)$ subject to a constraint $g(x, y) = 0$.
 
-> [!example] Example §28.1
+> [!example] Example §17.1
 > Maximize $f(x, y) = xy$ subject to $g(x, y) = x^2 + y^2 - 1 = 0$ (on the unit circle).
 
 ^ex-17-1
@@ -107,7 +107,7 @@ $$
 ![[m452-14-2.svg]]
 *At a constrained extremum $(x_0, y_0)$ (red), the constraint curve $g = 0$ (green) touches a level curve of $f$ (blue) without crossing it. At a crossing point such as $Q$, $\nabla f$ is not normal to $g = 0$: moving along the constraint changes $f$, so $Q$ cannot be an extremum. Tangency makes the normals $\nabla f$ and $\nabla g$ lie on the same line, which is the Lagrange condition $\nabla f = \lambda \nabla g$.*
 
-> [!theorem] Theorem §28.2: Method of Lagrange Multipliers
+> [!theorem] Theorem §17.2: Method of Lagrange Multipliers
 > Let $f, g: \mathbb{R}^2 \to \mathbb{R}$ be $C^1$ functions. Suppose $f$ has a local max/min at $(x_0, y_0)$ subject to the constraint $g(x_0, y_0) = 0$.
 >
 > If $\nabla g(x_0, y_0) \neq \mathbf{0}$ (the **constraint qualification**), then there exists $\lambda \in \mathbb{R}$ such that:
@@ -195,7 +195,7 @@ $$
 
 ## Higher Dimensions: Multiple Constraints
 
-> [!theorem] Theorem §28.3: Lagrange Multipliers with Multiple Constraints
+> [!theorem] Theorem §17.3: Lagrange Multipliers with Multiple Constraints
 > To optimize $f(x_1, \ldots, x_n)$ subject to constraints $g_1 = 0, g_2 = 0, \ldots, g_k = 0$ (where $k < n$):
 >
 > If the gradients $\nabla g_1, \ldots, \nabla g_k$ are [[§4 Span and Linear Independence#^ladr-2-15|linearly independent]] at a constrained extremum, then there exist $\lambda_1, \ldots, \lambda_k \in \mathbb{R}$ such that:
@@ -345,7 +345,7 @@ $$
 > [!remark]- Connections
 > - The linear algebra behind it: $\nabla f$ is orthogonal to the tangent space of the constraint set, and that orthogonal complement ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]) has dimension $k$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]]), so it is spanned by the $k$ independent constraint gradients.
 > - The case $k = 1$, $n = 2$ is [[Method of Lagrange Multipliers|Theorem §17.2]]; the case $k = 2$, $n = 4$ is derived in the proof above.
-> - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§7 The Regular Value Theorem#^thm-7-1|591 Thm. §7.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§23 The Geometric Tangent Space#^thm-23-3|591 Thm. §23.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§33 Submanifolds#^def-33-2|591 Def. §33.2]].
+> - The implicit function theorem for systems that the proof needs, not proved in 452, is [[§7 The Regular Value Theorem#^thm-7-1|591 Thm. §7.1]]; the tangent space of the constraint set is the kernel of the constraint Jacobian, [[§25 The Geometric Tangent Space#^thm-25-3|591 Thm. §25.3]], and the coordinate-free counterpart of the normal space spanned by the $\nabla g_i$ is the conormal space, [[§35 Submanifolds#^def-35-3|591 Def. §35.3]].
 > - Computational version: [[§114 Lagrange Multipliers#^thm-114-2|Calc Thm. §114.2]] (two constraints, with worked examples).
 > - A worked special case: [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] (the extremes of xᵀAx on the unit sphere are the extreme eigenvalues of A; the Lagrange condition there reads Ax = λx) and, with the two constraints xᵀx = 1, xᵀu₁ = 0, [[§60★ Constrained Optimization#^thm-60-4|235 Thm. §60.4]].
 > - Used in Electromagnetism: charges on conductors at fixed total charges minimize the electrostatic energy, and the multiplier of each charge constraint is that conductor's potential (Thomson's theorem) — [[§C4.1 Induced Charge, Screening and Thomson's Theorem#^thm-c4-1-3|EM Theorem §C4.1.3]].
@@ -406,7 +406,7 @@ $$
 
 ## Worked Example: $f = xy$ on the Unit Circle
 
-> [!example] Example §28.2
+> [!example] Example §17.2
 > Maximize and minimize $f(x, y) = xy$ subject to $\phi(x, y) = x^2 + y^2 - 1 = 0$.
 
 ^ex-17-2

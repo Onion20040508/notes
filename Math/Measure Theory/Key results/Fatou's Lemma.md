@@ -8,11 +8,11 @@ tags: [measure-theory, hub]
 ![[§21 Consequences of the Monotone Convergence Theorem#^thm-21-8]]
 
 ## Treated in
-- [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-8|Theorem §21.8: Fatou's Lemma]], in [[§20 The Lebesgue Integral for Simple Functions]]
+- [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-8|Theorem §21.8: Fatou's Lemma]], in [[§21 Consequences of the Monotone Convergence Theorem]]
 
 ## Its proof uses
-- [[§16 Limits and Positive Parts of Measurable Functions#^rem-16-4|Remark: Recalling Limsup and Liminf for Sequences]]
 - [[§16 Limits and Positive Parts of Measurable Functions#^thm-16-1|Theorem §16.1: Measurability of Suprema and Infima]]
+- [[§16 Limits and Positive Parts of Measurable Functions#^rem-16-4|Remark: Recalling Limsup and Liminf for Sequences]]
 - [[§20 The Lebesgue Integral for Simple Functions#^prop-20-3|Proposition §20.3: Basic Properties]]
 - [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|Theorem §20.7: Monotone Convergence Theorem (MCT)]]
 

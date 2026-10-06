@@ -119,7 +119,7 @@ A partition starts from the whole set. The same idea seen from the elements: if 
 
 Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting from the partition $\mathbb{Z}_m$, this produces congruence modulo $m$.
 
-> [!definition] Definition §22.4: Reflexive, Symmetric, Transitive
+> [!definition] Definition §22.3: Reflexive, Symmetric, Transitive
 > Let $\sim$ be a relation on a set $X$. It is
 > 1. **reflexive** when $x \sim x$ for all $x \in X$;
 > 2. **symmetric** when, for all $x, y \in X$, $\ x \sim y \Rightarrow y \sim x$;
@@ -129,7 +129,7 @@ Compare Proposition [[§19 Congruence of Integers#^prop-19-1|§19.1]]: starting 
 
 ^def-22-3
 
-> [!definition] Definition §22.6: Equivalence Relation
+> [!definition] Definition §22.4: Equivalence Relation
 > An **equivalence relation** on $X$ is a relation that is reflexive, symmetric and transitive.
 >
 > *Eccles: Definition 22.2.3*
@@ -182,7 +182,7 @@ Each property is a universal statement, so to show that one *fails* a single cou
 
 In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §21.2]] the partition $\mathbb{Z}_m$ was built from the relation of congruence. The construction works for every equivalence relation.
 
-> [!definition] Definition §22a.1: Equivalence Class
+> [!definition] Definition §22.5: Equivalence Class
 > Let $\sim$ be an equivalence relation on a non-empty set $X$. For $a \in X$, the **equivalence class of $a$** is the set of elements equivalent to $a$:
 >
 > $$
@@ -196,7 +196,7 @@ In [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-2|Def. §2
 > [!remark]- Connections
 > - [[§24 Equivalence Relations and Partitions#^def-24-2|493 Def. §24.2]] (equivalence class); [[§14 The Vitali Set and the Cantor Set#^def-14-2|551 Def. §14.2]].
 
-> [!definition] Definition §22a.2: Quotient Set
+> [!definition] Definition §22.6: Quotient Set
 > The set of all equivalence classes is denoted $X/{\sim}$ (the **quotient set**, "$X$ modulo $\sim$"):
 >
 > $$

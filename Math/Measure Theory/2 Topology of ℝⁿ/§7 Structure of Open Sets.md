@@ -7,7 +7,7 @@ tags: [measure-theory, math551]
 ---
 ← [[§6 Open Covers and the Heine–Borel Theorem]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§8 Motivation꞉ The Riemann Integral]] →
 
-> [!theorem] Lemma §7.2
+> [!theorem] Lemma §7.1
 > Any collection of mutually disjoint open intervals on $\mathbb{R}$ is countable.
 
 ^lem-7-1
@@ -19,7 +19,7 @@ tags: [measure-theory, math551]
 
 *Uses:* [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§1 Countability and Set Theory#^def-1-3|Def. §1.3]]
 
-> [!theorem] Proposition §7.1: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
+> [!theorem] Proposition §7.2: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
 > Any open set $O \subseteq \mathbb{R}$ is a countable union of mutually disjoint open intervals.
 
 ^prop-7-2

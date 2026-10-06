@@ -22,10 +22,10 @@ tags: [topology, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]
-- [[§16 Differentiable Structures#^prop-16-4|Proposition §16.4: Chart Domains on the Circle]]
-- [[§34 Fibrations#^ex-34-1|Example §34.1: A Submersion That Is Not a Fibration]]
-- [[§35 Immersions#^ex-35-1|Example §35.1: An Immersion That Crosses Itself]]
-- [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-7|Proposition §38.7: Conjugation by Unit Quaternions Is Rotation]]
+- [[§17 Differentiable Structures#^prop-17-4|Proposition §17.4: Chart Domains on the Circle]]
+- [[§36 Fibrations#^ex-36-1|Example §36.1: A Submersion That Is Not a Fibration]]
+- [[§37 Immersions#^ex-37-1|Example §37.1: An Immersion That Crosses Itself]]
+- [[§41 SU(2) → SO(3)꞉ The Double Cover#^prop-41-1|Proposition §41.1: Conjugation by Unit Quaternions Is Rotation]]
 
 ## Connections
 - **Generalizes.** It is the engine of the [[§16 Connected Subspaces of ℝ#^thm-16-3|Intermediate Value Theorem]] (§14.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§16 Connected Subspaces of ℝ#^rem-16-2|IVT: The Power of Connectedness]]).

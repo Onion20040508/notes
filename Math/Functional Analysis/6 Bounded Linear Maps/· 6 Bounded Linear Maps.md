@@ -14,10 +14,10 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Measure Theory]] (3), [[Single Variable Analysis]] (2)
 
 ## Sections
-- [[§26 Boundedness and Continuity]]
-- [[§27 Dual Spaces]]
-- [[§28 Sesquilinear Forms and the Lax–Milgram Theorem]]
-- [[§29 ℝⁿ, Cᵐ and Lᵖ]]
+- [[§30 Boundedness and Continuity]]
+- [[§31 Dual Spaces]]
+- [[§32 Sesquilinear Forms and the Lax–Milgram Theorem]]
+- [[§33 ℝⁿ, Cᵐ and Lᵖ]]
 
 ## Central results
 - [[Bounded Linear Maps Are Continuous]] (§26.2)
@@ -27,7 +27,7 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§26 Boundedness and Continuity#^prop-26-1|Proposition §26.1: The Operator Norm]]: 3 later results
-- [[§27 Dual Spaces#^thm-27-2|Theorem §27.2: Riesz Representation Theorem, with Norms]]: 3 later results
+- [[§30 Boundedness and Continuity#^prop-30-1|Proposition §30.1: The Operator Norm]]: 3 later results
+- [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]: 3 later results
 - [[Lax–Milgram Theorem|Theorem §28.2: Lax–Milgram]]: 2 later results
 - [[Bounded Linear Maps into a Banach Space Form a Banach Space|Theorem §26.5: ℒ(X, Y) is a Normed Linear Space]]: 1 later result

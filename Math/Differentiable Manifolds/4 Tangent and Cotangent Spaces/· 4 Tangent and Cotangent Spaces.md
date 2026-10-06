@@ -12,14 +12,14 @@ tags: [chapter, differentiable-manifolds]
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (6), [[Single Variable Analysis]] (3), [[Multivariable Analysis]] (11)
 
 ## Sections
-- [[§23 The Geometric Tangent Space]]
-- [[§24 Transversality]]
-- [[§25 Germs]]
-- [[§26 Derivations and the Abstract Tangent Space]]
-- [[§27 Coordinate Derivations and the Basis Theorem]]
-- [[§28 The Differential in Coordinates]]
-- [[§29 Tangent Vectors as Velocities of Curves]]
-- [[§30 The Cotangent Space]]
+- [[§25 The Geometric Tangent Space]]
+- [[§26 Transversality]]
+- [[§27 Germs]]
+- [[§28 Derivations and the Abstract Tangent Space]]
+- [[§29 Coordinate Derivations and the Basis Theorem]]
+- [[§30 The Differential in Coordinates]]
+- [[§31 Tangent Vectors as Velocities of Curves]]
+- [[§32 The Cotangent Space]]
 
 ## Central results
 - [[Geometric Tangent Space Is the Kernel of the Jacobian]] (§23.3)
@@ -34,7 +34,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§25 Germs#^prop-25-1|Proposition §25.1: Agreement Near a Point Is an Equivalence Relation]]: 88 later results
-- [[§25 Germs#^prop-25-2|Proposition §25.2: C_p^∞(M) Is an ℝ-Algebra]]: 88 later results
-- [[§26 Derivations and the Abstract Tangent Space#^prop-26-3|Proposition §26.3: Germ Derivations and Global Derivations]]: 88 later results
-- [[§26 Derivations and the Abstract Tangent Space#^prop-26-4|Proposition §26.4: Properties of the Pullback]]: 80 later results
+- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 88 later results
+- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 88 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 88 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 80 later results

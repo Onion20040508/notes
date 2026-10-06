@@ -16,7 +16,7 @@ For a linear second-order boundary value problem with homogeneous boundary condi
 
 ## The Construction
 
-> [!definition] Definition §10.1: Two-Point Boundary Value Problem with Separated Conditions
+> [!definition] Definition §7.1: Two-Point Boundary Value Problem with Separated Conditions
 > The **boundary value problem** of this section is
 >
 > $$
@@ -55,7 +55,7 @@ $$
 
 which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous Linear Equations#^thm-1-3|Theorem §1.3]]).
 
-> [!definition] Definition §11.1: Green's Function
+> [!definition] Definition §7.2: Green's Function
 > The **Green's function** for the problem (1), (2), (3) is
 >
 > $$
@@ -68,7 +68,7 @@ which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous L
 
 ^def-7-2
 
-> [!theorem] Theorem §10.1: The Solution as a Green's Function Integral
+> [!theorem] Theorem §7.1: The Solution as a Green's Function Integral
 > Let $k$, $p$, $f$ be continuous on $l \le x \le r$, and let $u_1$, $u_2$ be independent solutions of (4) satisfying (5), (6), such that
 >
 > $$
@@ -150,7 +150,7 @@ which is nonzero because $u_1$ and $u_2$ are independent ([[§1★ Homogeneous L
 
 The two hypotheses on $u_1$, $u_2$ are automatic once they are independent: see [[§7★ Green's Functions#^lem-7-2|Lemma §7.2]].
 
-> [!example] Example §10.1: Building a Green's Function
+> [!example] Example §7.1: Building a Green's Function
 > Solve by constructing the Green's function:
 >
 > $$
@@ -210,7 +210,7 @@ $$
 
 in (7), (10) and (12). Powers states that all three are $0$ if any one of them is, and that then $u_1$ and $u_2$ are proportional; here is the proof.
 
-> [!theorem] Lemma §11.1: The Three Quantities Vanish Together
+> [!theorem] Lemma §7.2: The Three Quantities Vanish Together
 > Let $k$, $p$ be continuous on $l \le x \le r$, and let $u_1$, $u_2$ be solutions of (4), neither identically zero, with $u_1$ satisfying (5) and $u_2$ satisfying (6). Then the three quantities (19) are either all nonzero or all zero, and they are zero exactly when $u_1$ and $u_2$ are proportional.
 >
 > *Powers: 0.5 (text)*
@@ -232,7 +232,7 @@ in (7), (10) and (12). Powers states that all three are $0$ if any one of them i
 
 *Uses:* [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-1|331 Thm. §18.1]] (uniqueness), [[§7★ Green's Functions#^def-7-1|Def. §7.1]]
 
-> [!theorem] Theorem §11.2: Existence and Uniqueness for the Boundary Value Problem
+> [!theorem] Theorem §7.3: Existence and Uniqueness for the Boundary Value Problem
 > Let $k(x)$, $p(x)$ and $f(x)$ be continuous, $l \le x \le r$. The boundary value problem
 >
 > $$
@@ -265,7 +265,7 @@ in (7), (10) and (12). Powers states that all three are $0$ if any one of them i
 > [!remark]- Connections
 > - This is the infinite-dimensional analogue of a fact about square matrices and operators on a finite-dimensional space: $T$ is surjective (every $f$ has a solution) if and only if it is injective (the null space is $\{0\}$), [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]] with [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]]. For the boundary value problem, $T$ is $u \mapsto u'' + ku' + pu$ on functions satisfying (i), (ii), and $f \mapsto \int G(\cdot, z)f(z)\,dz$ is its inverse. The general statement for such operators is the Fredholm alternative.
 
-> [!example] Example §10.2: No Solution, or Infinitely Many
+> [!example] Example §7.2: No Solution, or Infinitely Many
 > **(a)** The boundary value problem
 >
 > $$
@@ -300,7 +300,7 @@ in (7), (10) and (12). Powers states that all three are $0$ if any one of them i
 
 ^ex-7-2
 
-> [!theorem] Corollary §11.3: Forcing at an Eigenvalue
+> [!theorem] Corollary §7.4: Forcing at an Eigenvalue
 > The boundary value problem
 >
 > $$
@@ -390,7 +390,7 @@ This is the boundary-value version of resonance ([[§3★ Nonhomogeneous Linear 
 
 ^rem-7-2
 
-> [!example] Example §11.1: The Green's Function of u″ = f
+> [!example] Example §7.3: The Green's Function of u″ = f
 > Find the Green's function for $u'' = f(x)$, $0 < x < a$, $u(0) = 0$, $u(a) = 0$, and use it for $f = 1$.
 >
 > **Solutions.** The homogeneous solutions are $c_1 + c_2x$. Take $u_1 = x$ ($u_1(0) = 0$) and $u_2 = x - a$ ($u_2(a) = 0$).
@@ -419,7 +419,7 @@ This is the boundary-value version of resonance ([[§3★ Nonhomogeneous Linear 
 
 If the differential equation (1) has a singular point at $x = l$ or $x = r$ (or both), a Green's function may still be constructed: the boundary condition (2) or (3) is replaced by a boundedness condition ([[§6★ Singular Boundary Value Problems#^def-6-2|Definition §6.2]]), which then also applies to $u_1$ or $u_2$. A similar procedure is followed if the interval is infinite in length ([[§6★ Singular Boundary Value Problems#^def-6-4|Definition §6.4]]).
 
-> [!example] Example §11.2: A Singular Endpoint
+> [!example] Example §7.4: A Singular Endpoint
 > Construct the Green's function for
 >
 > $$
@@ -448,7 +448,7 @@ If the differential equation (1) has a singular point at $x = l$ or $x = r$ (or 
 
 ^ex-7-4
 
-> [!example] Example §11.3: The Whole Line
+> [!example] Example §7.5: The Whole Line
 > Find the Green's function for
 >
 > $$

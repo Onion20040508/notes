@@ -15,7 +15,7 @@ Summing the series solution of Dirichlet's problem in a disk ([[§48 Potential i
 
 ## The Poisson Integral Formula
 
-> [!theorem] Theorem §60.1: Poisson Integral Formula
+> [!theorem] Theorem §49.1: Poisson Integral Formula
 > The solution (10)–(11) of Dirichlet's problem (1)–(4) can be written as a single integral:
 >
 > $$
@@ -81,11 +81,10 @@ Summing the series solution of Dirichlet's problem in a disk ([[§48 Potential i
 > [!remark] Remark: The Poisson Kernel Is a Weight
 > The kernel is positive for $r < c$, since $c^2 + r^2 - 2rc\cos\psi \ge (c - r)^2 > 0$. Taking $f \equiv 1$, whose solution is $v \equiv 1$, shows $\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos\psi}\,d\psi = 1$. So $v(r, \theta)$ is a weighted average of the boundary values, and $\min f \le v \le \max f$: the maximum principle for the disk, read off directly. At $r = 0$ the kernel is identically $1$ and the weighted average is the plain average: the mean value property. As $r \to c$ the weight concentrates near $\phi = \theta$, which is why $v(r, \theta) \to f(\theta)$ at points of continuity of $f$.
 
-^rem-49-2
-
+^rem-49-1
 ## Properties of the Solution
 
-> [!theorem] Theorem §60.2: Mean Value Property
+> [!theorem] Theorem §49.2: Mean Value Property
 > **(a)** The solution of the potential equation at the center of a disk equals the average of its values around the edge: for the solution $v$ of (1)–(4),
 >
 > $$
@@ -135,7 +134,7 @@ Summing the series solution of Dirichlet's problem in a disk ([[§48 Potential i
 
 This characteristic of solutions of the potential equation is called the **mean value property**. From it, it is just a step to the maximum principle stated in [[§44 Potential Equation|§44]]: the mean value of a function lies between its minimum and maximum, and cannot equal either unless the function is constant.
 
-> [!theorem] Theorem §60.3: Maximum Principle
+> [!theorem] Theorem §49.3: Maximum Principle
 > Let $R$ be a bounded, connected open region, and let $u$ be harmonic in $R$ and continuous on $R$ together with its boundary. If $u$ attains its maximum (or its minimum) over $R$ and its boundary at a point inside $R$, then $u$ is constant. Consequently the maximum and the minimum of $u$ are attained on the boundary of $R$.
 >
 > *Powers: 4.1 (text) and 4.5 (text)*
@@ -158,7 +157,7 @@ This characteristic of solutions of the potential equation is called the **mean 
 > [!remark]- Connections
 > - Complex-variables version: [[§59 Maximum Modulus Principle#^thm-59-3|342 Thm. §59.3]] (the maximum modulus principle) and [[§59 Maximum Modulus Principle#^cor-59-5|342 Cor. §59.5]] (the real part of a nonconstant analytic function takes its maximum only on the boundary, the case $u = \operatorname{Re} f$ of this theorem).
 
-> [!theorem] Corollary §60.4: Uniqueness for Dirichlet's Problem
+> [!theorem] Corollary §49.4: Uniqueness for Dirichlet's Problem
 > Suppose that $u$ and $v$ are two solutions of the potential equation in a bounded region $R$ (continuous up to the boundary) that have the same values on the boundary of $R$. Then $u$ and $v$ are identical.
 >
 > *Powers: 4.5 (text)*

@@ -11,7 +11,7 @@ tags: [measure-theory, math551]
 
 We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The construction uses the Axiom of Choice.
 
-> [!theorem] Lemma §20.1: Translation Invariance of Measure
+> [!theorem] Lemma §14.1: Translation Invariance of Measure
 > Let $E \in \mathcal{M}$ and $x_0 \in \mathbb{R}^n$. Define $x_0 + E = \{x_0 + y \mid y \in E\}$. Then $x_0 + E \in \mathcal{M}$ and $m(E) = m(x_0 + E)$.
 
 ^lem-14-1
@@ -42,7 +42,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 > [!remark]- Connections
 > - Integral version: [[§25 Invariance Properties and Fubini's Theorem#^thm-25-1|Thm. §25.1]]; for invertible linear maps instead of translations: [[§30 Differentiating the Integral#^cor-30-4|Cor. §30.4]].
 
-> [!definition] Definition §20.1: Equivalence Relation
+> [!definition] Definition §14.1: Equivalence Relation
 > For $x, y \in [0, 1]$, we say $x$ and $y$ are **equivalent**, written $x \sim y$, if $x - y \in \mathbb{Q}$.
 
 ^def-14-1
@@ -50,7 +50,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 > [!remark]- Connections
 > - The general notion: equivalence relation, [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]].
 
-> [!theorem] Proposition §20.2: Properties of $\sim$
+> [!theorem] Proposition §14.2: Properties of $\sim$
 > The relation $\sim$ is an equivalence relation:
 > - Reflexive: $x \sim x$ (since $x - x = 0 \in \mathbb{Q}$).
 > - Symmetric: $x \sim y \Rightarrow y \sim x$ (since $x - y \in \mathbb{Q} \Rightarrow y - x \in \mathbb{Q}$).
@@ -58,7 +58,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 ^prop-14-2
 
-> [!definition] Definition §20.2: Equivalence Classes
+> [!definition] Definition §14.2: Equivalence Classes
 > For each $x \in [0,1]$, define the equivalence class:
 >
 > $$
@@ -70,7 +70,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 > [!remark]- Connections
 > - The general notion: equivalence class and quotient set, [[§22 Partitions and Equivalence Relations#^def-22-5|250 Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]].
 
-> [!theorem] Proposition §20.3
+> [!theorem] Proposition §14.3
 > For any $x, y \in [0, 1]$, either $E_x \cap E_y = \emptyset$ or $E_x = E_y$.
 
 ^prop-14-3
@@ -89,7 +89,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 
 Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence classes, where $I$ is some index set. Note that $\bigcup_{\alpha \in I} E_\alpha = [0, 1]$.
 
-> [!definition] Definition §21.1: The Vitali Set
+> [!definition] Definition §14.3: The Vitali Set
 > Using the Axiom of Choice, select exactly one element $x_\alpha \in E_\alpha$ from each equivalence class $\alpha \in I$. Define:
 >
 > $$
@@ -102,14 +102,14 @@ Let $\{E_\alpha \mid \alpha \in I\}$ be the collection of distinct equivalence c
 
 Note that $V \subseteq [0, 1]$.
 
-> [!theorem] Proposition §20.7: Key Property of $V$
+> [!theorem] Proposition §14.4: Key Property of $V$
 > For any $y \in [0, 1]$, there exists a unique $\alpha \in I$ such that $y \in E_\alpha$, and hence $y - x_\alpha \in \mathbb{Q} \cap [-1, 1]$.
 
 ^prop-14-4
 
 Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of the rationals in $[-1, 1]$ (possible since [[§3 Countability of Rationals and Unions#^cor-3-2|ℚ is countable]]).
 
-> [!theorem] Proposition §20.6: Disjoint Translates Cover the Unit Interval
+> [!theorem] Proposition §14.5: Disjoint Translates Cover the Unit Interval
 > The translates $\{r_j + V\}_{j=1}^{\infty}$ are pairwise disjoint, and:
 >
 > $$
@@ -132,7 +132,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 ![[m551-11-4.svg]]
 *The Vitali argument: $V$ (red) contains one point from each class of $\sim$, and its rational translates $r_j + V$ (blue; a few of the countably many, with $V = 0 + V$ itself among them) are pairwise disjoint. Together they cover $[0,1]$ (shaded) but stay inside $[-1,2]$. If they all had measure $m(V)$ we would need $1 \leq \sum_j m(V) \leq 3$, which is impossible whether $m(V) = 0$ or $m(V) > 0$. (The tick marks only stand in for $V$, which cannot actually be drawn.)*
 
-> [!theorem] Theorem §20.4: The Vitali Set is Not Measurable
+> [!theorem] Theorem §14.6: The Vitali Set is Not Measurable
 > The Vitali set $V$ is not Lebesgue measurable.
 
 ^thm-14-6
@@ -193,7 +193,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§10 Lebesgue Outer Measure#^ex-1
 > [!remark]- Connections
 > - First met in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|451 Rem. §13.5]].
 
-> [!theorem] Proposition §20.5: Properties of the Cantor Set
+> [!theorem] Proposition §14.7: Properties of the Cantor Set
 > 1. $C$ is closed and bounded (hence [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|compact]]).
 > 2. $C$ has no [[§2 Open and Closed Sets#^def-2-3|interior points]].
 > 3. $m(C) = 0$.

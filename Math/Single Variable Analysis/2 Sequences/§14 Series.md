@@ -25,7 +25,7 @@ $$
 
 Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; in example (3) we are adding terms that become smaller and smaller — does that suffice?
 
-> [!definition] Definition §14.2: Series
+> [!definition] Definition §14.1: Series
 > An **infinite series** (or a **series**) is an infinite sum
 >
 > $$
@@ -36,7 +36,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 ^def-14-1
 
-> [!definition] Definition §14.3: Partial Sums
+> [!definition] Definition §14.2: Partial Sums
 > Let $\sum_{n=1}^{\infty} a_n$ be a series. Its **partial sums** are
 >
 > $$
@@ -47,7 +47,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 ^def-14-2
 
-> [!definition] Definition §14.4: Convergence of a Series
+> [!definition] Definition §14.3: Convergence of a Series
 > If the sequence $(s_n)$ of partial sums converges to a limit $s$, we say the series $\sum_{n=1}^\infty a_n$ **converges** to $s$ and write $\sum_{n=1}^\infty a_n = s$. If $(s_n)$ diverges, we say the series **diverges**; in the special case $s_n \to +\infty$ we say the series diverges to $+\infty$ and write $\sum_{n=1}^\infty a_n = +\infty$.
 
 ^def-14-3
@@ -94,7 +94,7 @@ Does each sum to a finite number? Example (2) is what resolves Zeno's paradox; i
 
 For the harmonic series we cannot find a closed formula for $s_n$, so we need to study general properties of series. Since a series *is* the sequence of its partial sums, every convergence criterion for sequences transfers.
 
-> [!definition] Definition §14.5: Cauchy Criterion
+> [!definition] Definition §14.4: Cauchy Criterion
 > A series $\sum a_n$ is said to satisfy the **Cauchy criterion** if its sequence $(s_n)$ of partial sums is a Cauchy sequence. Explicitly, since for $m \geq n$
 >
 > $$

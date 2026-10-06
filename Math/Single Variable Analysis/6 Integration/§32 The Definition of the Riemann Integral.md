@@ -11,7 +11,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ## Darboux Sums and the Darboux Integral
 
-> [!definition] Definition §32.3: Sup and Inf over a Set
+> [!definition] Definition §32.1: Sup and Inf over a Set
 > Suppose $f$ is *bounded* on $[a,b]$. For any subset $S \subseteq [a,b]$, define
 >
 > $$
@@ -22,7 +22,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^def-32-1
 
-> [!definition] Definition §32.5: Partitions
+> [!definition] Definition §32.2: Partitions
 > A **partition** of $[a,b]$ is a division into $n$ subintervals,
 >
 > $$
@@ -31,7 +31,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^def-32-2
 
-> [!definition] Definition §32.8: Upper and Lower Sums
+> [!definition] Definition §32.3: Upper and Lower Sums
 > Suppose $f$ is *bounded* on $[a,b]$. For each partition define the **upper sum** and **lower sum**
 >
 > $$
@@ -129,7 +129,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definition of the Riemann Integral#^thm-32-3|Theorem §32.3]] below). Is this obvious? Maybe not: $L(f)$ and $U(f)$ are a sup and an inf over *different* competitions. The proof goes through two lemmas.
 
-> [!theorem] Lemma §32.3: Refinement Lemma
+> [!theorem] Lemma §32.1: Refinement Lemma
 > Let $P, Q$ be partitions of $[a,b]$ with $Q$ a **refinement** of $P$ (every cut point of $P$ is a cut point of $Q$). Then
 >
 > $$
@@ -155,7 +155,7 @@ We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definiti
 
 ^pf-32-1
 
-> [!theorem] Lemma §32.1: Cross Lemma
+> [!theorem] Lemma §32.2: Cross Lemma
 > For *any* two partitions $P, Q$ (with no relation between them):
 >
 > $$
@@ -177,7 +177,7 @@ We want to show that $L(f) \leq U(f)$ for every bounded $f$ ([[§32 The Definiti
 
 *Uses:* [[§32 The Definition of the Riemann Integral#^lem-32-1|§32.1]]
 
-> [!theorem] Theorem §32.2: Lower Integral at Most Upper Integral
+> [!theorem] Theorem §32.3: Lower Integral at Most Upper Integral
 > For every bounded $f: [a,b] \to \mathbb{R}$:    $L(f) \leq U(f)$.
 
 ^thm-32-3

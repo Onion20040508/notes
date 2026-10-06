@@ -48,7 +48,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 
 ## Existence and Uniqueness
 
-> [!theorem] Theorem §22.1: Existence and Uniqueness Theorem
+> [!theorem] Theorem §18.1: Existence and Uniqueness Theorem
 > Consider the initial value problem
 >
 > $$
@@ -68,7 +68,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 
 ^rem-18-1
 
-> [!example] Example §22.1: Applying the Theorem
+> [!example] Example §18.1: Applying the Theorem
 > **(a)** Find the longest interval in which the solution of
 >
 > $$
@@ -91,7 +91,7 @@ This section explains why two solutions are enough. The existence and uniqueness
 
 ## Superposition
 
-> [!theorem] Theorem §22.2: Principle of Superposition
+> [!theorem] Theorem §18.2: Principle of Superposition
 > If $y_1$ and $y_2$ are two solutions of the differential equation (2),
 >
 > $$
@@ -192,7 +192,7 @@ $$
 > [!remark]- Connections
 > - $W$ is the $2 \times 2$ determinant ([[§24 Introduction to Determinants#^def-24-2|235 Def. §24.2]]) of the coefficient matrix of (8), and the system is solvable for every right side exactly when that matrix is invertible, [[§25 Properties of Determinants#^thm-25-3|235 Thm. §25.3]] (for $2 \times 2$: [[§14 The Inverse of a Matrix#^thm-14-2|235 Thm. §14.2]]). Formula (11) is Cramer's rule, [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-1|235 Thm. §27.1]].
 
-> [!example] Example §22.2: Distinct Exponentials Form a Fundamental Set
+> [!example] Example §18.2: Distinct Exponentials Form a Fundamental Set
 > **(a)** By [[§17 Homogeneous Differential Equations with Constant Coefficients#^ex-17-2|Example §17.2]], $y_1(t) = e^{-2t}$ and $y_2(t) = e^{-3t}$ solve $y'' + 5y' + 6y = 0$. Their Wronskian is
 >
 > $$
@@ -283,7 +283,7 @@ $$
 
 ^rem-18-2
 
-> [!example] Example §22.3: A Fundamental Set on the Midterm
+> [!example] Example §18.3: A Fundamental Set on the Midterm
 > Consider $y'' - 3y' - 10y = 0$. **(a)** Find two solutions that can be used to build the general solution (a fundamental set). **(b)** Use the Wronskian to prove that they form a fundamental set. **(c)** Find the general solution.
 >
 > **(a)** The characteristic equation $r^2 - 3r - 10 = (r - 5)(r + 2) = 0$ has roots $5$ and $-2$, so by [[§17 Homogeneous Differential Equations with Constant Coefficients#^thm-17-1|Theorem §17.1]] $y_1 = e^{5t}$ and $y_2 = e^{-2t}$ are solutions.

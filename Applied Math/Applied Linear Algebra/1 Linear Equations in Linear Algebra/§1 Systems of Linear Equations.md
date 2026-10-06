@@ -30,14 +30,14 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 ^def-1-1
 
-> [!definition] Definition §1.4: Linear System
+> [!definition] Definition §1.2: Linear System
 > A **system of linear equations** (or **linear system**) is a collection of one or more linear equations involving the same variables $x_1, \ldots, x_n$.
 >
 > *Lay: 1.1 (text)*
 
 ^def-1-2
 
-> [!definition] Definition §1.5: Solution; Solution Set
+> [!definition] Definition §1.3: Solution; Solution Set
 > A **solution** of the system is a list $(s_1, \ldots, s_n)$ of numbers that makes each equation a true statement when $s_1, \ldots, s_n$ are substituted for $x_1, \ldots, x_n$. The set of all solutions is the **solution set** of the system.
 >
 > For example, $(5, 6.5, 3)$ is a solution of
@@ -55,7 +55,7 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 ^def-1-3
 
-> [!definition] Definition §1.8: Equivalent Systems
+> [!definition] Definition §1.4: Equivalent Systems
 > Two linear systems are **equivalent** if they have the same solution set.
 >
 > *Lay: 1.1 (text)*
@@ -64,7 +64,7 @@ A linear system is solved by replacing it with a simpler system that has the sam
 
 A system of two equations in two unknowns asks for the intersection of two lines: they meet in one point, are parallel, or coincide ([[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]). The same three possibilities are the only ones in general: *a system of linear equations has no solution, exactly one solution, or infinitely many solutions.* Lay verifies this in Section 1.2: [[§3 Solutions of Linear Systems#^cor-3-2|Corollary §3.2]], from Lay's Theorem 2, the Existence and Uniqueness Theorem ([[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1]]).
 
-> [!definition] Definition §1.9: Consistent and Inconsistent Systems
+> [!definition] Definition §1.5: Consistent and Inconsistent Systems
 > A system of linear equations is **consistent** if it has either one solution or infinitely many solutions (that is, at least one solution); it is **inconsistent** if it has no solution.
 >
 > *Lay: 1.1 (text)*
@@ -92,7 +92,7 @@ A system of two equations in two unknowns asks for the intersection of two lines
 
 ## Matrix Notation
 
-> [!definition] Definition §1.10: Matrix
+> [!definition] Definition §1.6: Matrix
 > A **matrix** is a rectangular array of numbers.
 >
 > *Lay: 1.1 (text)*

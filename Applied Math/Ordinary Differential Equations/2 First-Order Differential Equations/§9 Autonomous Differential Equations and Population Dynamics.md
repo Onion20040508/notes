@@ -13,7 +13,7 @@ tags: [ordinary-differential-equations, math331]
 
 An autonomous equation $dy/dt = f(y)$ is one whose right side does not depend on $t$. It is separable, but the point of this section is that the graph of $f$ alone, without solving anything, shows how every solution behaves: where the equilibrium solutions are, which of them attract nearby solutions and which repel them, where solution curves bend, and what happens as $t \to \infty$. This qualitative picture is developed on models of population growth: exponential growth, the logistic equation with its carrying capacity, growth with a critical threshold, and a combination of the two. It is the one-dimensional case of the stability theory of Chapter 9 of BDP.
 
-> [!definition] Definition §11.1: Autonomous Equation
+> [!definition] Definition §9.1: Autonomous Equation
 > A first-order differential equation in which the independent variable does not appear explicitly,
 >
 > $$
@@ -31,7 +31,7 @@ An autonomous equation $dy/dt = f(y)$ is one whose right side does not depend on
 
 ## Exponential Growth
 
-> [!definition] Definition §12.1: Exponential Growth; Rate of Growth or Decline
+> [!definition] Definition §9.2: Exponential Growth; Rate of Growth or Decline
 > Let $y = \phi(t)$ be the population of a species at time $t$. The simplest hypothesis is that the rate of change of $y$ is proportional to the current value of $y$:
 >
 > $$
@@ -44,7 +44,7 @@ An autonomous equation $dy/dt = f(y)$ is one whose right side does not depend on
 
 ^def-9-2
 
-> [!theorem] Proposition §11.1: Solution of the Exponential Growth Model
+> [!theorem] Proposition §9.1: Solution of the Exponential Growth Model
 > The solution of (2) with the initial condition
 >
 > $$
@@ -127,7 +127,7 @@ The sketch may seem to show other solutions running into $y = K$, but they canno
 
 Concavity and inflection points come from the second derivative.
 
-> [!theorem] Proposition §11.2: Concavity of Solutions of an Autonomous Equation
+> [!theorem] Proposition §9.2: Concavity of Solutions of an Autonomous Equation
 > If $f$ is differentiable and $y = \phi(t)$ solves (1), then
 >
 > $$
@@ -157,7 +157,7 @@ For the logistic equation (7): on $0 < y < K/2$, $f$ is positive and increasing,
 
 For quantitative information, solve (7).
 
-> [!theorem] Proposition §12.1: Solution of the Logistic Equation
+> [!theorem] Proposition §9.3: Solution of the Logistic Equation
 > The solution of the logistic equation (7) with $y(0) = y_0 \ge 0$ is
 >
 > $$
@@ -216,7 +216,7 @@ So, for each $y_0 > 0$, the solution approaches the equilibrium solution $y = K$
 
 ^def-9-6
 
-> [!example] Example §11.1: The Pacific Halibut
+> [!example] Example §9.1: The Pacific Halibut
 > The logistic model has been applied to the natural growth of the halibut population in certain areas of the Pacific Ocean. Let $y$, measured in kilograms, be the biomass (the total mass) of the population at time $t$. The parameters are estimated to be $r = 0.71$/year and $K = 80.5 \times 10^6$ kg. If the initial biomass is $y_0 = 0.25K$, find the biomass 2 years later, and the time $\tau$ for which $y(\tau) = 0.75K$.
 >
 > **Scaling.** Divide (11) by $K$ (numerator and denominator by $K$):
@@ -262,7 +262,7 @@ The ideas of [[§9 Autonomous Differential Equations and Population Dynamics#^de
 
 ^def-9-7
 
-> [!theorem] Lemma §12.2: Monotone Bounded Solutions Tend to Equilibria
+> [!theorem] Lemma §9.4: Monotone Bounded Solutions Tend to Equilibria
 > Let $f$ be continuous, and let $y = \phi(t)$ be a solution of (1) on $[t_0, \infty)$ that is monotone and bounded. Then $L = \lim_{t \to \infty} \phi(t)$ exists and $f(L) = 0$: a solution that levels off does so at a critical point.
 >
 > *BDP: 2.5 (implicit in the text: solutions that level off do so at a critical point)*
@@ -304,7 +304,7 @@ If $f'(y_1) = 0$ the test says nothing: $y' = k(1 - y)^2$ ([[§9 Autonomous Diff
 
 ^rem-9-1
 
-> [!example] Example §11.2: A Mixing Tank as an Autonomous Equation
+> [!example] Example §9.2: A Mixing Tank as an Autonomous Equation
 > A 5 gallon vat is full of pure water. At time $t = 0$ salt water is added through a pipe carrying water at a rate of 2 gallons per minute and a concentration of $\frac14$ pound per gallon. Water drains out at 2 gallons per minute, so the level stays at 5 gallons; the salt is always evenly mixed. Let $S(t)$ be the amount of salt (in pounds) at time $t$ (in minutes). **(a)** Set up the differential equation and initial condition. **(b)** Find $\lim_{t \to \infty} S(t)$, justifying the answer by classifying the equilibrium point.
 >
 > **(a)** As in [[§7 Modeling with First-Order Differential Equations#^rem-7-2|Remark: Method — Mixing Problems]], rate of change = rate in − rate out. Salt enters at $2 \cdot \frac14 = \frac12$ lb/min and leaves at $2 \cdot \frac{S}{5}$ lb/min (the outflow has concentration $S/5$), so

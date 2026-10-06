@@ -15,7 +15,7 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 
 ## Tangents
 
-> [!definition] Definition §17.1: Tangent Line
+> [!definition] Definition §14.1: Tangent Line
 > The **tangent line** to the curve $y = f(x)$ at the point $P(a, f(a))$ is the line through $P$ with slope
 >
 > $$
@@ -28,7 +28,7 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 
 ^def-14-1
 
-> [!theorem] Theorem §17.1: Slope of the Tangent with an Increment
+> [!theorem] Theorem §14.1: Slope of the Tangent with an Increment
 > Writing $h = x - a$, so that $x = a + h$, the slope of the tangent line in [[§14 Derivatives and Rates of Change#^def-14-1|Definition §14.1]] is
 >
 > $$
@@ -57,7 +57,7 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 ![[m233-12-1.svg]]
 *[[§14 Derivatives and Rates of Change#^thm-14-1|Theorem §14.1]] in a picture. With $Q = (a + h, f(a + h))$ the secant $PQ$ (blue) has run $h$ and rise $f(a + h) - f(a)$ (green), so its slope is the difference quotient $\big(f(a + h) - f(a)\big)/h$; as $h \to 0$, $Q$ slides along the curve to $P$ and the secant turns into the tangent line at $P$ (red). (The concrete case $y = x^2$ at $(1, 1)$, with numerical secant slopes $3, 2.5, 2.2, \ldots \to 2$, is pictured after [[§7 The Tangent and Velocity Problems#^ex-7-1|Example §7.1]].)*
 
-> [!example] Example §17.1: Tangent Lines from the Definition
+> [!example] Example §14.1: Tangent Lines from the Definition
 > **(a)** Find an equation of the tangent line to the parabola $y = x^2$ at $P(1, 1)$.
 >
 > Here $a = 1$ and $f(x) = x^2$. By [[§14 Derivatives and Rates of Change#^def-14-1|Definition §14.1]],
@@ -84,7 +84,7 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 
 ## Velocities
 
-> [!definition] Definition §17.2: Average and Instantaneous Velocity
+> [!definition] Definition §14.2: Average and Instantaneous Velocity
 > Let an object move along a straight line according to an equation of motion $s = f(t)$, where $s$ is the displacement (directed distance) of the object from the origin at time $t$; $f$ is the **position function** of the object. Over the time interval from $t = a$ to $t = a + h$ the change in position is $f(a + h) - f(a)$, and the **average velocity** is
 >
 > $$
@@ -103,7 +103,7 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 
 ^def-14-2
 
-> [!example] Example §17.2: The Falling Ball
+> [!example] Example §14.2: The Falling Ball
 > A ball is dropped from the upper observation deck of the CN Tower, $450$ m above the ground. (a) What is its velocity after $5$ seconds? (b) How fast is it traveling when it hits the ground?
 >
 > The distance fallen after $t$ seconds is $s = f(t) = 4.9t^2$ meters ([[§7 The Tangent and Velocity Problems#^ex-7-3|Example §7.3]]). Two velocities are asked for, so first find the velocity at a general time $t = a$:
@@ -153,7 +153,7 @@ The same limit computes the slope of a tangent line ([[§14 Derivatives and Rate
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]] (the second form, for $f$ defined on an open interval containing $a$). Several variables, where the derivative becomes a linear map (the [[§7 Differentiability#^def-7-3|Jacobian matrix]]): [[§7 Differentiability#^def-7-2|452 Def. §7.2]].
 
-> [!example] Example §17.3: A Derivative and a Tangent Line
+> [!example] Example §14.3: A Derivative and a Tangent Line
 > Let $f(x) = x^2 - 8x + 9$. Find (a) $f'(2)$; (b) $f'(a)$; (c) an equation of the tangent line to the parabola $y = x^2 - 8x + 9$ at $(3, -6)$.
 >
 > **(a)** By [[§14 Derivatives and Rates of Change#^def-14-3|Definition §14.3]], with $f(2) = 4 - 16 + 9 = -3$,
@@ -186,7 +186,7 @@ The same limit computes the slope of a tangent line ([[§14 Derivatives and Rate
 
 ^ex-14-3
 
-> [!example] Example §17.4: Using the Second Form
+> [!example] Example §14.4: Using the Second Form
 > Find the derivative of $f(x) = 1/\sqrt{x}$ at a number $a > 0$, using the form $f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$ of [[§14 Derivatives and Rates of Change#^def-14-3|Definition §14.3]].
 >
 > Clear the small fractions by multiplying by $\sqrt{x}\sqrt{a}$, then rationalize with $\sqrt{a} + \sqrt{x}$:
@@ -209,7 +209,7 @@ The same limit computes the slope of a tangent line ([[§14 Derivatives and Rate
 
 ^ex-14-4
 
-> [!theorem] Theorem §17.2: The Tangent Line Has Slope f′(a)
+> [!theorem] Theorem §14.2: The Tangent Line Has Slope f′(a)
 > The tangent line to $y = f(x)$ at $(a, f(a))$ is the line through $(a, f(a))$ whose slope is equal to $f'(a)$, the derivative of $f$ at $a$. In point-slope form, its equation is
 >
 > $$
@@ -263,7 +263,7 @@ The same limit computes the slope of a tangent line ([[§14 Derivatives and Rate
 
 ^rem-14-1
 
-> [!example] Example §17.5: Estimating a Derivative from a Table
+> [!example] Example §14.5: Estimating a Derivative from a Table
 > Let $D(t)$ be the US national debt at time $t$, in billions of dollars (end-of-year estimates). Interpret and estimate $D'(2008)$.
 >
 > | $t$ | 2000 | 2004 | 2008 | 2012 | 2016 |

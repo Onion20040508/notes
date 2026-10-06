@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: $\langle e_j|e_k\rangle=\delta_{jk}$.
-> - Same definition for possibly infinite sets: [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]].
+> - Same definition for possibly infinite sets: [[§27 Orthonormal Sets and Bases#^def-27-1|556 Def. §27.1]].
 > - Computational version: [[§51 Orthogonal Sets#^def-51-4|235 Def. §51.4]] (orthonormal sets in $\mathbb R^n$).
 
 > [!example] Example 6.23: Orthonormal lists (p. 197)
@@ -32,7 +32,7 @@ tags: [linear-algebra]
 ^ladr-6-23
 
 > [!remark]- Connections
-> - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]] (stated there with complex exponentials on [0, 2π]).
+> - In L² the Fourier list of (d), continued indefinitely, is an orthonormal basis: [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]] (stated there with complex exponentials on [0, 2π]).
 > - Computational version: [[§57 Applications of Inner Product Spaces#^prop-57-2|235 Prop. §57.2]] (orthogonality of the trigonometric system, as in (d), with $\langle1,1\rangle=2\pi$ and $\langle\cos kt,\cos kt\rangle=\pi$).
 > - Computational version: the orthogonality relations of the trigonometric system on $[-\pi,\pi]$, [[§9 Periodic Functions and Fourier Series#^prop-9-3|341 Prop. §9.3]], which give the Fourier coefficient formulas, [[§9 Periodic Functions and Fourier Series#^prop-9-4|341 Prop. §9.4]].
 
@@ -84,7 +84,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the probabilities $|\langle e_k|\psi\rangle|^2$ over any orthonormal set of outcomes sum to at most $\|\psi\|^2=1$.
-> - Same inequality in 556 ([[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lemma §24.2]]), extended to arbitrary orthonormal families in [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]].
+> - Same inequality in 556 ([[§27 Orthonormal Sets and Bases#^lem-27-2|556 Lemma §27.2]]), extended to arbitrary orthonormal families in [[§27 Orthonormal Sets and Bases#^thm-27-5|556 Thm. §27.5]].
 > - Computational version: [[§15★ Mean Error and Convergence in Mean#^thm-15-3|341 Thm. §15.3]] (for the trigonometric system on $[-a,a]$, in the limit $N\to\infty$ too).
 
 > [!definition] Definition 6.27: Orthonormal basis
@@ -93,7 +93,7 @@ tags: [linear-algebra]
 ^ladr-6-27
 
 > [!remark]- Connections
-> - In a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) an orthonormal basis is defined by the series expansion of every vector ([[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
+> - In a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) an orthonormal basis is defined by the series expansion of every vector ([[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
 > - Computational version: [[§51 Orthogonal Sets#^def-51-4|235 Def. §51.4]] (orthonormal basis of a subspace of $\mathbb R^n$).
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
@@ -129,7 +129,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: (a) is the completeness relation $\sum_k|e_k\rangle\langle e_k|=I$; (c) in Dirac order reads $\langle u|v\rangle=\sum_k\langle u|e_k\rangle\langle e_k|v\rangle$ (conjugate on the other factor, per the convention remark in [[§20 Inner Products and Norms#^ladr-6-2|6.2]]).
-> - Hilbert-space version: [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§31 The Completeness Relation#^thm-31-2|556 Thm. §31.2]].
+> - Hilbert-space version: [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]], where the expansion and Parseval characterize orthonormal bases; (a) as an operator identity is the completeness relation, [[§35 The Completeness Relation#^thm-35-2|556 Thm. §35.2]].
 > - Computational version: [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]] (the weights $c_j=\mathbf y\cdot\mathbf u_j/\mathbf u_j\cdot\mathbf u_j$ in an orthogonal basis, as in (a)).
 
 > [!example] Example 6.31: Finding coefficients for a linear combination (p. 200)
@@ -204,7 +204,7 @@ tags: [linear-algebra]
 *Uses:* [[Gram–Schmidt procedure|6.32]], [[§21 Orthonormal Bases#^ladr-6-28|6.28]]
 
 > [!remark]- Connections
-> - Every Hilbert space has an orthonormal basis ([[§24 Orthonormal Sets and Bases#^thm-24-12|556 Thm. §24.12]], by Zorn's lemma, [[Zorn's Lemma|556 Thm. §5.2]]), and a countable one exactly when it is separable ([[§24 Orthonormal Sets and Bases#^thm-24-13|556 Thm. §24.13]]).
+> - Every Hilbert space has an orthonormal basis ([[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|556 Thm. §28.1]], by Zorn's lemma, [[Zorn's Lemma|556 Thm. §5.2]]), and a countable one exactly when it is separable ([[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|556 Thm. §28.3]]).
 > - Computational version: [[§53 The Gram–Schmidt Process#^cor-53-2|235 Cor. §53.2]] (every nonzero subspace of $\mathbb R^n$ has an orthonormal basis).
 
 > [!theorem] Theorem 6.36: Every orthonormal list extends to an orthonormal basis
@@ -290,7 +290,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In several variables the gradient is the Riesz representer of the derivative, $Df_{\mathbf p}(\mathbf u)=\nabla f(\mathbf p)\cdot\mathbf u$: [[Directional Derivative Formula|452 Thm. §9.1]].
-> - Same theorem for Hilbert spaces: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|556 Thm. §23.2]] (there $V$ may be infinite-dimensional and the functional must be bounded).
+> - Same theorem for Hilbert spaces: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|556 Thm. §26.4]] (there $V$ may be infinite-dimensional and the functional must be bounded).
 
 > [!example] Example 6.44: Computation illustrating Riesz representation theorem (p. 206)
 > Find $q\in\Poly_2(\R)$ with $\int_{-1}^1p(t)\cos(\pi t)\,dt=\int_{-1}^1pq$ for all $p\in\Poly_2(\R)$. Use the orthonormal basis $e_1,e_2,e_3$ of [[§21 Orthonormal Bases#^ladr-6-34|6.34]] and the formula $q=\sum_k\varphi(e_k)e_k$ from the proof of [[Riesz representation theorem|6.42]]:

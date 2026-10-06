@@ -19,7 +19,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | Functional and its extension | $\ell$ on $Y$, extended to $L$ on $X$ | $f$ (or $\ell$) for both |
 | Positive homogeneity | $p(ax) = a\,p(x)$ for $a \ge 0$ | for $a > 0$ (equivalent; see C.2) |
 | Closed unit ball | $\overline{B_1(0)}$ | $B_1$ |
-| Compact | sequentially compact; agrees with the open-cover notion (Theorem [[§18 Compactness and the Unit Ball#^thm-18-1\|§18.1]]) | “compact” in the sequential sense (§5.2) |
+| Compact | sequentially compact; agrees with the open-cover notion (Theorem [[§20 Compactness and the Unit Ball#^thm-20-1\|§20.1]]) | “compact” in the sequential sense (§5.2) |
 | Scalar product | $(x,y)$, linear in $x$, conjugate-linear in $y$ | the same |
 | Riesz representer | $\ell(x) = (x, a)$ | $\ell(x) = (x, y)$ |
 | Linear maps | $T : X \to Y$, $\Vert T\Vert$, $\mathcal{L}(X, Y)$ | $M : X \to U$, $\vert M\vert$, $\mathcal{L}(X, U)$ |
@@ -27,46 +27,46 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | Orthonormal basis | defined by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ | “orthonormal base”, defined by $\overline{\operatorname{span}} = H$ |
 | Complement | complement $W$ of $Y$ ([[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§1]]); $X = Y \oplus W$ | complementary subspaces |
 | Sobolev space | $H^k_0(\Omega)$, completion of $C_c^\infty(\Omega)$ | $W^{k,p}$, completion of $C^\infty$ functions with finite norm |
-| Separable | countable $D$ with every point a limit of a sequence in $D$ | countable set whose closure is the whole space (the same, by Definition [[§10 Normed Linear Spaces#^def-10-7\|§10.7]]) |
+| Separable | countable $D$ with every point a limit of a sequence in $D$ | countable set whose closure is the whole space (the same, by Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]]) |
 
 ## C.2 Where the Routes Diverge
 
 | Topic | These notes (Wu) | Lax | See |
 |---|---|---|---|
-| Positive homogeneity | $a \ge 0$ | $a > 0$; equivalent, since $p(0) = 2p(0)$ | Lemma [[§4 Statement and Motivation#^lem-4-1\|§4.1]] |
-| Interior points of $\{p < 1\}$ | every point is interior | only $0$ (Thm 3.4(i)); the rest an exercise | Prop. [[§6 Convex Sets and the Gauge#^prop-6-2\|§6.2]] |
-| Separation | a point from a nonempty convex set all of whose points are interior | also one interior point suffices (Cor. 3.5$'$), and two disjoint convex sets (Thm 3.6); not covered | Thm [[§7 The Hyperplane Separation Theorem#^thm-7-1\|§7.1]] |
-| Hölder | proved from Young's inequality | cited from Courant | Thm [[§15 Hölder's Inequality for Sequences#^thm-15-1\|§15.1]] |
-| Minkowski | split $\vert a+b\vert^p$, Hölder twice, truncation | duality formula $\vert x\vert_p = \max_{\vert u\vert_q = 1}\vert(x,u)\vert$ (Thm 5.5) | Thm [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1\|§16.1]] |
-| Completeness of $\ell^p$ | proved | asserted (examples (a)–(b)) | Thm [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5\|§16.5]] |
-| $L^p$ | working definition by Lebesgue integrable functions; equals the completion of $C[a,b]$ | *defined* as the completion of $C_c$ in the $p$-norm (example (f)) | Prop. [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8\|§17.8]] |
-| Sobolev spaces | completion of $C_c^\infty(\Omega)$: $H^k_0$ | completion of $C^\infty$ with finite norm: $W^{k,p}$ (example (g)) | Ex. [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-3\|§21.3]] |
-| Closest point | Hilbert spaces, via the parallelogram law | also uniformly convex Banach spaces (Thm 5.8); not covered | Thm [[§22 Projection and Orthogonal Decomposition#^thm-22-2\|§22.2]] |
-| Riesz representation | explicit decomposition $x = kx_0 + y$ | functionals with the same null space are proportional (Lemma 6.5) | Thm [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2\|§23.2]] |
-| Orthonormal basis | expansion; equivalent to completeness | closed linear span $= H$ | Prop. [[§24 Orthonormal Sets and Bases#^prop-24-9\|§24.9]] |
-| Existence of an orthonormal basis | maximal orthonormal set is complete: add $x/\Vert x\Vert$ | maximal set has closed span $H$, via Bessel | Thm [[§24 Orthonormal Sets and Bases#^thm-24-12\|§24.12]] |
-| Continuous $\Rightarrow$ bounded | $y_n = x_n/(n\Vert x_n\Vert)$: $\Vert y_n\Vert = 1/n$, $\Vert Ty_n\Vert > 1$ | $\vert x_n\vert = 1/\sqrt{n}$, $\vert Mx_n\vert > \sqrt{n}$; stated for Banach spaces | Prop. [[§26 Boundedness and Continuity#^prop-26-2\|§26.2]] |
+| Positive homogeneity | $a \ge 0$ | $a > 0$; equivalent, since $p(0) = 2p(0)$ | Lemma [[§5 Statement and Motivation#^lem-5-1\|§5.1]] |
+| Interior points of $\{p < 1\}$ | every point is interior | only $0$ (Thm 3.4(i)); the rest an exercise | Prop. [[§7 Convex Sets and the Gauge#^prop-7-2\|§7.2]] |
+| Separation | a point from a nonempty convex set all of whose points are interior | also one interior point suffices (Cor. 3.5$'$), and two disjoint convex sets (Thm 3.6); not covered | Thm [[§8 The Hyperplane Separation Theorem#^thm-8-1\|§8.1]] |
+| Hölder | proved from Young's inequality | cited from Courant | Thm [[§17 Hölder's Inequality for Sequences#^thm-17-1\|§17.1]] |
+| Minkowski | split $\vert a+b\vert^p$, Hölder twice, truncation | duality formula $\vert x\vert_p = \max_{\vert u\vert_q = 1}\vert(x,u)\vert$ (Thm 5.5) | Thm [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1\|§18.1]] |
+| Completeness of $\ell^p$ | proved | asserted (examples (a)–(b)) | Thm [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5\|§18.5]] |
+| $L^p$ | working definition by Lebesgue integrable functions; equals the completion of $C[a,b]$ | *defined* as the completion of $C_c$ in the $p$-norm (example (f)) | Prop. [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8\|§19.8]] |
+| Sobolev spaces | completion of $C_c^\infty(\Omega)$: $H^k_0$ | completion of $C^\infty$ with finite norm: $W^{k,p}$ (example (g)) | Ex. [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3\|§23.3]] |
+| Closest point | Hilbert spaces, via the parallelogram law | also uniformly convex Banach spaces (Thm 5.8); not covered | Thm [[§25 Projection and Orthogonal Decomposition#^thm-25-2\|§25.2]] |
+| Riesz representation | explicit decomposition $x = kx_0 + y$ | functionals with the same null space are proportional (Lemma 6.5) | Thm [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4\|§26.4]] |
+| Orthonormal basis | expansion; equivalent to completeness | closed linear span $= H$ | Prop. [[§27 Orthonormal Sets and Bases#^prop-27-9\|§27.9]] |
+| Existence of an orthonormal basis | maximal orthonormal set is complete: add $x/\Vert x\Vert$ | maximal set has closed span $H$, via Bessel | Thm [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1\|§28.1]] |
+| Continuous $\Rightarrow$ bounded | $y_n = x_n/(n\Vert x_n\Vert)$: $\Vert y_n\Vert = 1/n$, $\Vert Ty_n\Vert > 1$ | $\vert x_n\vert = 1/\sqrt{n}$, $\vert Mx_n\vert > \sqrt{n}$; stated for Banach spaces | Prop. [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] |
 
 ## C.3 Chapter Map
 
 | These notes | Lax | Comments |
 |---|---|---|
-| [[§1 Linear Spaces\|§1]]–[[§2 Linear Maps, Convexity, and Linear Functionals\|§2]] Linear spaces, maps, convexity | Ch. 1; §3.1 | Complements and $X \cong X/Y \oplus Y$ ([[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§1]], HW1) are not in Lax; extreme subsets (Lax Ch. 1) not covered. |
-| [[§4 Statement and Motivation\|§4]]–[[§5 Proof of the Hahn–Banach Theorem\|§5]] Hahn–Banach | §3.1, Thm 1 | Same proof: one-step extension and Zorn. |
-| [[§6 Convex Sets and the Gauge\|§6]] Convex sets and the gauge | §3.1, Thms 2–4 | Notes prove more of the exercises. |
-| [[§7 The Hyperplane Separation Theorem\|§7]] Separation | §3.2, Thm 5 | Strengthenings Cor. 5$'$, Thm 6 not covered. |
-| [[§8 The Complex Hahn–Banach Theorem\|§8]] Complex Hahn–Banach | §3.3, Thm 8 | Agnew–Morse (Thm 7) not covered. |
-| [[§10 Normed Linear Spaces\|§10]] Normed spaces | §5.1 | Metric notions (convergence, closure, open sets) spelled out in the notes. |
-| [[§11 Completeness\|§11]] Completeness | §5.1, Thm 3; examples (c)–(e) | $C[a,b]$ and the completion proved in full (HW2). |
-| [[§12 New Normed Spaces from Old\|§12]] New spaces from old | §5.1, (5), Thm 1 | Equivalence of norms in finite dimensions (HW2) is not in Lax. |
-| [[§14 Means and Young's Inequality\|§14]]–[[§16 Minkowski's Inequality and the Spaces ℓᵖ\|§16]] Inequalities, $\ell^p$ | §5.1, examples (a)–(b), Thms 4–5 | See C.2. |
-| [[§17 The Function Spaces Lᵖ(Ω)\|§17]] $L^p$ | §5.1, examples (f)–(g) | See C.2. |
-| [[§18 Compactness and the Unit Ball\|§18]] Compactness | §5.2, Thm 6, Lemma 7 | Uniform convexity and Mazur–Ulam (§5.2 and §5.3) not covered. |
-| [[§20 Definition and Examples\|§20]]–[[§21 Cauchy–Schwarz and the Induced Norm\|§21]] Inner products | §6.1 | Jordan–von Neumann is Lax's Exercise 1 (HW3). |
-| [[§22 Projection and Orthogonal Decomposition\|§22]] Projection | §6.2, Thms 2–3 | |
-| [[§23 Bounded Linear Functionals and the Riesz Representation Theorem\|§23]] Riesz representation | §6.3, Thm 4 | Lax–Milgram (Thm 6) not covered. |
-| [[§24 Orthonormal Sets and Bases\|§24]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
-| [[§26 Boundedness and Continuity\|§26]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
+| [[§1 Linear Spaces\|§1]]–[[§3 Linear Maps, Convexity, and Linear Functionals\|§3]] Linear spaces, maps, convexity | Ch. 1; §3.1 | Complements and $X \cong X/Y \oplus Y$ ([[§1 Linear Spaces#Complements and the Isomorphism X ≅ X/Y ⊕ Y\|§1]], HW1) are not in Lax; extreme subsets (Lax Ch. 1) not covered. |
+| [[§5 Statement and Motivation\|§5]]–[[§6 Proof of the Hahn–Banach Theorem\|§6]] Hahn–Banach | §3.1, Thm 1 | Same proof: one-step extension and Zorn. |
+| [[§7 Convex Sets and the Gauge\|§7]] Convex sets and the gauge | §3.1, Thms 2–4 | Notes prove more of the exercises. |
+| [[§8 The Hyperplane Separation Theorem\|§8]] Separation | §3.2, Thm 5 | Strengthenings Cor. 5$'$, Thm 6 not covered. |
+| [[§9 The Complex Hahn–Banach Theorem\|§9]] Complex Hahn–Banach | §3.3, Thm 8 | Agnew–Morse (Thm 7) not covered. |
+| [[§11 Normed Linear Spaces\|§11]] Normed spaces | §5.1 | Metric notions (convergence, closure, open sets) spelled out in the notes. |
+| [[§12 Completeness\|§12]] Completeness | §5.1, Thm 3; examples (c)–(e) | $C[a,b]$ and the completion proved in full (HW2). |
+| [[§14 New Normed Spaces from Old\|§14]] New spaces from old | §5.1, (5), Thm 1 | Equivalence of norms in finite dimensions (HW2) is not in Lax. |
+| [[§16 Means and Young's Inequality\|§16]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ\|§18]] Inequalities, $\ell^p$ | §5.1, examples (a)–(b), Thms 4–5 | See C.2. |
+| [[§19 The Function Spaces Lᵖ(Ω)\|§19]] $L^p$ | §5.1, examples (f)–(g) | See C.2. |
+| [[§20 Compactness and the Unit Ball\|§20]] Compactness | §5.2, Thm 6, Lemma 7 | Uniform convexity and Mazur–Ulam (§5.2 and §5.3) not covered. |
+| [[§22 Definition and Examples\|§22]]–[[§23 Cauchy–Schwarz and the Induced Norm\|§23]] Inner products | §6.1 | Jordan–von Neumann is Lax's Exercise 1 (HW3). |
+| [[§25 Projection and Orthogonal Decomposition\|§25]] Projection | §6.2, Thms 2–3 | |
+| [[§26 Bounded Linear Functionals and the Riesz Representation Theorem\|§26]] Riesz representation | §6.3, Thm 4 | Lax–Milgram (Thm 6) not covered. |
+| [[§27 Orthonormal Sets and Bases\|§27]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
+| [[§30 Boundedness and Continuity\|§30]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
 | [[· 7 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
@@ -80,99 +80,99 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | Ch. 1, sum of subsets | Definition [[§1 Linear Spaces#^def-1-3\|§1.3]] | Sum of Subsets |
 | Ch. 1, direct sum | Definition [[§1 Linear Spaces#^def-1-4\|§1.4]] | Direct Sum |
 | Ch. 1, definition of linear span | Definition [[§1 Linear Spaces#^def-1-5\|§1.5]] | Linear Span |
-| Ch. 1, equivalence mod $Y$ | Definition [[§1 Linear Spaces#^def-1-6\|§1.6]] | Equivalence mod $Y$ |
-| Ch. 1, quotient space | Definition [[§1 Linear Spaces#^def-1-7\|§1.7]] | Equivalence Class and Quotient Space |
-| Ch. 1, quotient space | Proposition [[§1 Linear Spaces#^prop-1-6\|§1.6]] | $X/Y$ is a Linear Space |
-| Ch. 1, definition of linear map | Definition [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1\|§2.1]] | Linear Map |
-| Ch. 1, definition of isomorphism; Remark 2 | Definition [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2\|§2.2]] | Isomorphism |
-| Ch. 1, definition of convex set | Definition [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3\|§2.3]] | Convex Set |
-| Ch. 1, definition of convex hull | Definition [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-4\|§2.4]] | Convex Hull |
+| Ch. 1, equivalence mod $Y$ | Definition [[§2 Quotient Spaces and Complements#^def-2-1\|§2.1]] | Equivalence mod $Y$ |
+| Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-2\|§2.2]] | Equivalence Class and Quotient Space |
+| Ch. 1, quotient space | Proposition [[§2 Quotient Spaces and Complements#^prop-2-1\|§2.1]] | $X/Y$ is a Linear Space |
+| Ch. 1, definition of linear map | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1\|§3.1]] | Linear Map |
+| Ch. 1, definition of isomorphism; Remark 2 | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2\|§3.2]] | Isomorphism |
+| Ch. 1, definition of convex set | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3\|§3.3]] | Convex Set |
+| Ch. 1, definition of convex hull | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4\|§3.4]] | Convex Hull |
 | Ch. 1, Thm 1(ii) | Proposition [[§1 Linear Spaces#^prop-1-2\|§1.2]] | Sum of Subspaces |
 | Ch. 1, Thm 2(i) | Proposition [[§1 Linear Spaces#^prop-1-4\|§1.4]] | The Smallest Subspace Exists |
 | Ch. 1, Thm 2(ii) | Proposition [[§1 Linear Spaces#^prop-1-5\|§1.5]] | Span as Finite Linear Combinations |
-| Ch. 1, Thm 5(vi) and Thm 6(i) | Proposition [[§2 Linear Maps, Convexity, and Linear Functionals#^prop-2-2\|§2.2]] | The Smallest Convex Set Exists |
-| §3.1, definition of linear functional | Definition [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-5\|§2.5]] | Linear Functional |
-| §3.1, definition of interior point | Definition [[§6 Convex Sets and the Gauge#^def-6-1\|§6.1]] | Interior Point |
-| §3.1, equation (8) | Definition [[§6 Convex Sets and the Gauge#^def-6-2\|§6.2]] | Gauge |
-| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§4 Statement and Motivation#^def-4-1\|§4.1]] | Positive Homogeneous; Subadditive |
-| §3.1, Thm 1 | Theorem [[§4 Statement and Motivation#^thm-4-2\|§4.2]] | Hahn–Banach |
-| §3.1, proof of Thm 1 | Lemma [[§5 Proof of the Hahn–Banach Theorem#^lem-5-1\|§5.1]] | One-Step Extension |
-| §3.1, proof of Thm 1 | Theorem [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2\|§5.2]] | Zorn's Lemma |
-| §3.1, Thm 2 | Proposition [[§6 Convex Sets and the Gauge#^prop-6-6\|§6.6]] | The Gauge is Positive Homogeneous and Subadditive |
-| §3.1, Thm 3, (10) | Proposition [[§6 Convex Sets and the Gauge#^prop-6-5\|§6.5]] | Values of the Gauge |
-| §3.1, Thm 3, (10′) | Proposition [[§6 Convex Sets and the Gauge#^prop-6-7\|§6.7]] | Interior Points of $K$ are Exactly $\{p_K < 1\}$ |
-| §3.1, Thms 3–4 | Corollary [[§6 Convex Sets and the Gauge#^cor-6-8\|§6.8]] | Convex Sets of Interior Points are Sublevel Sets |
-| §3.1, Thm 4 | Proposition [[§6 Convex Sets and the Gauge#^prop-6-1\|§6.1]] | Positive Homogeneous Subadditive $p$ Gives a Convex Set |
-| §3.1, Thm 4(i) | Proposition [[§6 Convex Sets and the Gauge#^prop-6-2\|§6.2]] | Every Point of $\{p < 1\}$ is Interior |
-| §3.2, hyperplanes | Definition [[§4 Statement and Motivation#^def-4-2\|§4.2]] | Hyperplane; Half-Space |
-| §3.2, Thm 5 | Theorem [[§7 The Hyperplane Separation Theorem#^thm-7-1\|§7.1]] | Hyperplane Separation; Geometric Hahn–Banach |
-| §3.3, Thm 8 | Theorem [[§8 The Complex Hahn–Banach Theorem#^thm-8-1\|§8.1]] | Complex Hahn–Banach |
-| §5.1, (1)–(3) | Definition [[§10 Normed Linear Spaces#^def-10-1\|§10.1]] | Norm; Normed Linear Space |
-| §5.1, examples (a)–(b), for sequences | Example [[§10 Normed Linear Spaces#^ex-10-1\|§10.1]] | Norms on $\mathbb{R}^n$ |
-| §5.1, (4) | Proposition [[§10 Normed Linear Spaces#^prop-10-2\|§10.2]] | A Normed Space is a Metric Space |
-| §5.1, definition of Banach space | Definition [[§11 Completeness#^def-11-2\|§11.2]] | Banach Space |
-| §5.1, examples (c)–(e) | Theorem [[§11 Completeness#^thm-11-1\|§11.1]] | $C[a,b]$ with the Supremum Norm is a Banach Space |
-| §5.1, completion of a metric space | Definition [[§11 Completeness#^def-11-4\|§11.4]] | Completion |
-| §5.1, (5) | Definition [[§12 New Normed Spaces from Old#^def-12-1\|§12.1]] | Equivalent Norms |
-| §5.1, construction (i) | Proposition [[§12 New Normed Spaces from Old#^prop-12-6\|§12.6]] | Subspace Norm |
-| §5.1, (19) | Theorem [[§15 Hölder's Inequality for Sequences#^thm-15-1\|§15.1]] | Hölder's Inequality for Sequences |
-| §5.1, example (b) | Definition [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^def-16-1\|§16.1]] | $\ell^p$ |
-| §5.1, examples (a)–(b) | Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5\|§16.5]] | $\ell^p$ is a Banach Space |
-| §5.1, example (f) | Definition [[§17 The Function Spaces Lᵖ(Ω)#^def-17-1\|§17.1]] | $L^p(\Omega)$, $L^\infty(\Omega)$ — working definition |
-| §5.1, example (f) | Proposition [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8\|§17.8]] | $L^p[a,b]$ as a Completion |
-| §5.1, example (g) | Example [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-3\|§21.3]] | Sobolev Spaces |
-| §5.1, definition of separable space | Definition [[§24 Orthonormal Sets and Bases#^def-24-5\|§24.5]] | Separable Space |
-| §5.1, construction (ii) and Exercise 1 | Proposition [[§12 New Normed Spaces from Old#^prop-12-7\|§12.7]] | Norms on a Direct Sum |
-| §5.1, Thm 1 | Theorem [[§12 New Normed Spaces from Old#^thm-12-8\|§12.8]] | Quotient Norm |
-| §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§10 Normed Linear Spaces#^def-10-7\|§10.7]] | Closure; Dense Subset |
-| §5.1, Thm 2 (part (d)) | Proposition [[§10 Normed Linear Spaces#^prop-10-6\|§10.6]] | Properties of the Closure |
-| §5.1, Thm 3 | Theorem [[§11 Completeness#^thm-11-4\|§11.4]] | The Completion of a Normed Space is a Banach Space |
-| §5.1, Thms 4–5 | Theorem [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-1\|§16.1]] | Minkowski's Inequality for Sequences |
-| §5.1, Thm 4 | Proposition [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^prop-16-3\|§16.3]] | $\ell^p$ is a Normed Linear Space |
-| §5.2, Thm 6 | Theorem [[§18 Compactness and the Unit Ball#^thm-18-5\|§18.5]] | The Unit Ball of an Infinite-Dimensional Space is Not Compact |
-| §5.2, Lemma 7 | Lemma [[§18 Compactness and the Unit Ball#^lem-18-2\|§18.2]] | Riesz's Lemma |
-| §6.1, (i)–(iii) | Definition [[§20 Definition and Examples#^def-20-1\|§20.1]] | Inner Product; Scalar Product |
-| §6.1, Example 2 | Example [[§20 Definition and Examples#^ex-20-2\|§20.2]] | $\ell^2$ |
-| §6.1, (3) | Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2\|§21.2]] | The Inner Product Induces a Norm |
-| §6.1, definition of Hilbert space | Definition [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1\|§21.1]] | Hilbert Space |
-| §6.1, Example 1 | Example [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-2\|§21.2]] | An Inner Product Space that is Not a Hilbert Space |
-| §6.1, (6) | Proposition [[§21 Cauchy–Schwarz and the Induced Norm#^prop-21-3\|§21.3]] | Parallelogram Law and Polarization |
-| §6.1 and §6.2, definitions | Definition [[§22 Projection and Orthogonal Decomposition#^def-22-1\|§22.1]] | Orthogonality; Orthogonal Complement |
-| §6.1, Thm 1 | Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1\|§21.1]] | Cauchy–Schwarz |
-| §6.1, Exercise 1 | Theorem [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4\|§21.4]] | Jordan–von Neumann |
-| §6.1, Exercise 2 | Lemma [[§22 Projection and Orthogonal Decomposition#^lem-22-1\|§22.1]] | The Inner Product is Continuous |
-| §6.2, Thm 2 | Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-2\|§22.2]] | Closest Point in a Closed Convex Set |
-| §6.2, Thm 3(i) | Proposition [[§22 Projection and Orthogonal Decomposition#^prop-22-3\|§22.3]] | $M^\perp$ is a Closed Subspace |
-| §6.2, Thm 3 | Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-4\|§22.4]] | Orthogonal Decomposition |
-| §6.3, (14) | Definition [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^def-23-1\|§23.1]] | Bounded Linear Functional |
-| §6.3, Thm 4 | Theorem [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2\|§23.2]] | Riesz Representation Theorem |
-| §6.3, Thm 4 (Lax does not state $\|\ell\| = \|a\|$) | Theorem [[§27 Dual Spaces#^thm-27-2\|§27.2]] | Riesz Representation Theorem, with Norms |
-| §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§27 Dual Spaces#^cor-27-3\|§27.3]] | The Riesz Map: $H' \cong H$ |
-| §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§27 Dual Spaces#^ex-27-1\|§27.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
-| §6.3, Lemma 5(i) | Lemma [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-23-4\|§23.4]] | The Kernel Has Codimension One |
-| §6.3, Lemma 5(i) | Proposition [[§27 Dual Spaces#^prop-27-5\|§27.5]] | The Null Space Has Codimension One |
-| §6.3, Lemma 5(iii) | Proposition [[§27 Dual Spaces#^prop-27-6\|§27.6]] | Bounded if and only if the Null Space is Closed |
-| §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^def-28-1\|§28.1]] | Sesquilinear Form; Bounded Form |
-| §6.3, Thm 6 | Theorem [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-28-2\|§28.2]] | Lax–Milgram |
-| §6.4, closed linear span | Definition [[§10 Normed Linear Spaces#^def-10-8\|§10.8]] | Closed Linear Span |
-| §6.4, definition of orthonormal set | Definition [[§24 Orthonormal Sets and Bases#^def-24-1\|§24.1]] | Orthogonal and Orthonormal Sets |
-| §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§24 Orthonormal Sets and Bases#^prop-24-9\|§24.9]]) | Definition [[§24 Orthonormal Sets and Bases#^def-24-4\|§24.4]] | Orthonormal Basis |
-| §6.4, Thm $9'$ | Theorem [[§24 Orthonormal Sets and Bases#^thm-24-13\|§24.13]] | Separable Hilbert Spaces and Countable Bases |
-| §6.4, Thm $9'$ | Lemma [[§24 Orthonormal Sets and Bases#^lem-24-14\|§24.14]] | Gram–Schmidt |
-| §6.4, Thm 7 | Theorem [[§22 Projection and Orthogonal Decomposition#^thm-22-6\|§22.6]] | The Double Complement |
-| §6.4, definition of orthonormal base and Thm 7 | Proposition [[§24 Orthonormal Sets and Bases#^prop-24-9\|§24.9]] | Lax's Definition of Orthonormal Base Agrees |
-| §6.4, Lemma 8 | Theorem [[§24 Orthonormal Sets and Bases#^thm-24-8\|§24.8]] | Characterizations of an Orthonormal Basis |
-| §6.4, Thm 9 | Theorem [[§24 Orthonormal Sets and Bases#^thm-24-12\|§24.12]] | Existence of Orthonormal Bases |
-| §6.4, Exercise 10 | Theorem [[§24 Orthonormal Sets and Bases#^thm-24-15\|§24.15]] | Classification of Separable Hilbert Spaces |
-| §8.1, dual space | Definition [[§27 Dual Spaces#^def-27-1\|§27.1]] | Dual Space |
-| §8.1, Thm 3 | Corollary [[§27 Dual Spaces#^cor-27-1\|§27.1]] | The Dual is Always a Banach Space |
-| §8.3, Thm 11 | Theorem [[§27 Dual Spaces#^thm-27-4\|§27.4]] | The Dual of $L^p$ |
-| §15.1, definition of continuous map | Definition [[§26 Boundedness and Continuity#^def-26-1\|§26.1]] | Continuous Linear Map |
-| §15.1, (2) and ($2'$) | Definition [[§26 Boundedness and Continuity#^def-26-2\|§26.2]] | Bounded Linear Map; Operator Norm |
-| §15.1, (3) and ($3'$) | Proposition [[§26 Boundedness and Continuity#^prop-26-1\|§26.1]] | The Operator Norm |
-| §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§26 Boundedness and Continuity#^def-26-3\|§26.3]] | The Space $\mathcal{L}(X, Y)$ |
-| §15.1, Thm 1 | Proposition [[§26 Boundedness and Continuity#^prop-26-2\|§26.2]] | Continuous if and only if Bounded |
-| §15.1, Thms 2–3 | Theorem [[§26 Boundedness and Continuity#^thm-26-5\|§26.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
-| §16.1, Thm 1(i); §16.3.1 | Example [[§26 Boundedness and Continuity#^ex-26-2\|§26.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
-| cf. §7.2, before (22) | Proposition [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-28-4\|§28.4]] | Symmetric Lax–Milgram is Riesz |
-| cf. Ch. 31, Thm 1 (symmetric forms); §6.3, (20) | Theorem [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-28-1\|§28.1]] | Bounded Sesquilinear Forms are Bounded Operators |
+| Ch. 1, Thm 5(vi) and Thm 6(i) | Proposition [[§3 Linear Maps, Convexity, and Linear Functionals#^prop-3-2\|§3.2]] | The Smallest Convex Set Exists |
+| §3.1, definition of linear functional | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5\|§3.5]] | Linear Functional |
+| §3.1, definition of interior point | Definition [[§7 Convex Sets and the Gauge#^def-7-1\|§7.1]] | Interior Point |
+| §3.1, equation (8) | Definition [[§7 Convex Sets and the Gauge#^def-7-2\|§7.2]] | Gauge |
+| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-1\|§5.1]] | Positive Homogeneous; Subadditive |
+| §3.1, Thm 1 | Theorem [[§5 Statement and Motivation#^thm-5-2\|§5.2]] | Hahn–Banach |
+| §3.1, proof of Thm 1 | Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1\|§6.1]] | One-Step Extension |
+| §3.1, proof of Thm 1 | Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2\|§6.2]] | Zorn's Lemma |
+| §3.1, Thm 2 | Proposition [[§7 Convex Sets and the Gauge#^prop-7-6\|§7.6]] | The Gauge is Positive Homogeneous and Subadditive |
+| §3.1, Thm 3, (10) | Proposition [[§7 Convex Sets and the Gauge#^prop-7-5\|§7.5]] | Values of the Gauge |
+| §3.1, Thm 3, (10′) | Proposition [[§7 Convex Sets and the Gauge#^prop-7-7\|§7.7]] | Interior Points of $K$ are Exactly $\{p_K < 1\}$ |
+| §3.1, Thms 3–4 | Corollary [[§7 Convex Sets and the Gauge#^cor-7-8\|§7.8]] | Convex Sets of Interior Points are Sublevel Sets |
+| §3.1, Thm 4 | Proposition [[§7 Convex Sets and the Gauge#^prop-7-1\|§7.1]] | Positive Homogeneous Subadditive $p$ Gives a Convex Set |
+| §3.1, Thm 4(i) | Proposition [[§7 Convex Sets and the Gauge#^prop-7-2\|§7.2]] | Every Point of $\{p < 1\}$ is Interior |
+| §3.2, hyperplanes | Definition [[§5 Statement and Motivation#^def-5-3\|§5.3]] | Hyperplane; Half-Space |
+| §3.2, Thm 5 | Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1\|§8.1]] | Hyperplane Separation; Geometric Hahn–Banach |
+| §3.3, Thm 8 | Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2\|§9.2]] | Complex Hahn–Banach |
+| §5.1, (1)–(3) | Definition [[§11 Normed Linear Spaces#^def-11-1\|§11.1]] | Norm; Normed Linear Space |
+| §5.1, examples (a)–(b), for sequences | Example [[§11 Normed Linear Spaces#^ex-11-1\|§11.1]] | Norms on $\mathbb{R}^n$ |
+| §5.1, (4) | Proposition [[§11 Normed Linear Spaces#^prop-11-2\|§11.2]] | A Normed Space is a Metric Space |
+| §5.1, definition of Banach space | Definition [[§12 Completeness#^def-12-2\|§12.2]] | Banach Space |
+| §5.1, examples (c)–(e) | Theorem [[§12 Completeness#^thm-12-1\|§12.1]] | $C[a,b]$ with the Supremum Norm is a Banach Space |
+| §5.1, completion of a metric space | Definition [[§12 Completeness#^def-12-4\|§12.4]] | Completion |
+| §5.1, (5) | Definition [[§14 New Normed Spaces from Old#^def-14-1\|§14.1]] | Equivalent Norms |
+| §5.1, construction (i) | Proposition [[§14 New Normed Spaces from Old#^prop-14-6\|§14.6]] | Subspace Norm |
+| §5.1, (19) | Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1\|§17.1]] | Hölder's Inequality for Sequences |
+| §5.1, example (b) | Definition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1\|§18.1]] | $\ell^p$ |
+| §5.1, examples (a)–(b) | Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5\|§18.5]] | $\ell^p$ is a Banach Space |
+| §5.1, example (f) | Definition [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1\|§19.1]] | $L^p(\Omega)$, $L^\infty(\Omega)$ — working definition |
+| §5.1, example (f) | Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8\|§19.8]] | $L^p[a,b]$ as a Completion |
+| §5.1, example (g) | Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3\|§23.3]] | Sobolev Spaces |
+| §5.1, definition of separable space | Definition [[§28 Existence of Orthonormal Bases and Separability#^def-28-1\|§28.1]] | Separable Space |
+| §5.1, construction (ii) and Exercise 1 | Proposition [[§14 New Normed Spaces from Old#^prop-14-7\|§14.7]] | Norms on a Direct Sum |
+| §5.1, Thm 1 | Theorem [[§14 New Normed Spaces from Old#^thm-14-8\|§14.8]] | Quotient Norm |
+| §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]] | Closure; Dense Subset |
+| §5.1, Thm 2 (part (d)) | Proposition [[§11 Normed Linear Spaces#^prop-11-6\|§11.6]] | Properties of the Closure |
+| §5.1, Thm 3 | Theorem [[§13 The Completion of a Normed Space#^thm-13-1\|§13.1]] | The Completion of a Normed Space is a Banach Space |
+| §5.1, Thms 4–5 | Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1\|§18.1]] | Minkowski's Inequality for Sequences |
+| §5.1, Thm 4 | Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3\|§18.3]] | $\ell^p$ is a Normed Linear Space |
+| §5.2, Thm 6 | Theorem [[§20 Compactness and the Unit Ball#^thm-20-5\|§20.5]] | The Unit Ball of an Infinite-Dimensional Space is Not Compact |
+| §5.2, Lemma 7 | Lemma [[§20 Compactness and the Unit Ball#^lem-20-2\|§20.2]] | Riesz's Lemma |
+| §6.1, (i)–(iii) | Definition [[§22 Definition and Examples#^def-22-1\|§22.1]] | Inner Product; Scalar Product |
+| §6.1, Example 2 | Example [[§22 Definition and Examples#^ex-22-2\|§22.2]] | $\ell^2$ |
+| §6.1, (3) | Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2\|§23.2]] | The Inner Product Induces a Norm |
+| §6.1, definition of Hilbert space | Definition [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1\|§23.1]] | Hilbert Space |
+| §6.1, Example 1 | Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2\|§23.2]] | An Inner Product Space that is Not a Hilbert Space |
+| §6.1, (6) | Proposition [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1\|§24.1]] | Parallelogram Law and Polarization |
+| §6.1 and §6.2, definitions | Definition [[§25 Projection and Orthogonal Decomposition#^def-25-1\|§25.1]] | Orthogonality; Orthogonal Complement |
+| §6.1, Thm 1 | Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1\|§23.1]] | Cauchy–Schwarz |
+| §6.1, Exercise 1 | Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2\|§24.2]] | Jordan–von Neumann |
+| §6.1, Exercise 2 | Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1\|§25.1]] | The Inner Product is Continuous |
+| §6.2, Thm 2 | Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2\|§25.2]] | Closest Point in a Closed Convex Set |
+| §6.2, Thm 3(i) | Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-3\|§25.3]] | $M^\perp$ is a Closed Subspace |
+| §6.2, Thm 3 | Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4\|§25.4]] | Orthogonal Decomposition |
+| §6.3, (14) | Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1\|§26.1]] | Bounded Linear Functional |
+| §6.3, Thm 4 | Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4\|§26.4]] | Riesz Representation Theorem |
+| §6.3, Thm 4 (Lax does not state $\|\ell\| = \|a\|$) | Theorem [[§31 Dual Spaces#^thm-31-2\|§31.2]] | Riesz Representation Theorem, with Norms |
+| §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§31 Dual Spaces#^cor-31-3\|§31.3]] | The Riesz Map: $H' \cong H$ |
+| §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§31 Dual Spaces#^ex-31-1\|§31.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
+| §6.3, Lemma 5(i) | Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3\|§26.3]] | The Kernel Has Codimension One |
+| §6.3, Lemma 5(i) | Proposition [[§31 Dual Spaces#^prop-31-5\|§31.5]] | The Null Space Has Codimension One |
+| §6.3, Lemma 5(iii) | Proposition [[§31 Dual Spaces#^prop-31-6\|§31.6]] | Bounded if and only if the Null Space is Closed |
+| §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1\|§32.1]] | Sesquilinear Form; Bounded Form |
+| §6.3, Thm 6 | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2\|§32.2]] | Lax–Milgram |
+| §6.4, closed linear span | Definition [[§11 Normed Linear Spaces#^def-11-9\|§11.9]] | Closed Linear Span |
+| §6.4, definition of orthonormal set | Definition [[§27 Orthonormal Sets and Bases#^def-27-1\|§27.1]] | Orthogonal and Orthonormal Sets |
+| §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§27 Orthonormal Sets and Bases#^prop-27-9\|§27.9]]) | Definition [[§27 Orthonormal Sets and Bases#^def-27-4\|§27.4]] | Orthonormal Basis |
+| §6.4, Thm $9'$ | Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3\|§28.3]] | Separable Hilbert Spaces and Countable Bases |
+| §6.4, Thm $9'$ | Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2\|§28.2]] | Gram–Schmidt |
+| §6.4, Thm 7 | Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6\|§25.6]] | The Double Complement |
+| §6.4, definition of orthonormal base and Thm 7 | Proposition [[§27 Orthonormal Sets and Bases#^prop-27-9\|§27.9]] | Lax's Definition of Orthonormal Base Agrees |
+| §6.4, Lemma 8 | Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8\|§27.8]] | Characterizations of an Orthonormal Basis |
+| §6.4, Thm 9 | Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1\|§28.1]] | Existence of Orthonormal Bases |
+| §6.4, Exercise 10 | Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-4\|§28.4]] | Classification of Separable Hilbert Spaces |
+| §8.1, dual space | Definition [[§31 Dual Spaces#^def-31-1\|§31.1]] | Dual Space |
+| §8.1, Thm 3 | Corollary [[§31 Dual Spaces#^cor-31-1\|§31.1]] | The Dual is Always a Banach Space |
+| §8.3, Thm 11 | Theorem [[§31 Dual Spaces#^thm-31-4\|§31.4]] | The Dual of $L^p$ |
+| §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
+| §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map; Operator Norm |
+| §15.1, (3) and ($3'$) | Proposition [[§30 Boundedness and Continuity#^prop-30-1\|§30.1]] | The Operator Norm |
+| §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
+| §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
+| §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-5\|§30.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §16.1, Thm 1(i); §16.3.1 | Example [[§30 Boundedness and Continuity#^ex-30-2\|§30.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
+| cf. §7.2, before (22) | Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4\|§32.4]] | Symmetric Lax–Milgram is Riesz |
+| cf. Ch. 31, Thm 1 (symmetric forms); §6.3, (20) | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|§32.1]] | Bounded Sesquilinear Forms are Bounded Operators |

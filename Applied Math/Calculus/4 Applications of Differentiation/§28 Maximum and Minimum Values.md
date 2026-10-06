@@ -15,7 +15,7 @@ Many applications of calculus are optimization problems: find the largest or sma
 
 ## Absolute and Local Extreme Values
 
-> [!definition] Definition §31.1: Absolute Maximum and Minimum
+> [!definition] Definition §28.1: Absolute Maximum and Minimum
 > Let $c$ be a number in the domain $D$ of a function $f$. Then $f(c)$ is the
 > - **absolute maximum** value of $f$ on $D$ if $f(c) \ge f(x)$ for all $x$ in $D$;
 > - **absolute minimum** value of $f$ on $D$ if $f(c) \le f(x)$ for all $x$ in $D$.
@@ -26,7 +26,7 @@ Many applications of calculus are optimization problems: find the largest or sma
 
 ^def-28-1
 
-> [!definition] Definition §31.2: Local Maximum and Minimum
+> [!definition] Definition §28.2: Local Maximum and Minimum
 > The number $f(c)$ is a
 > - **local maximum** value of $f$ if $f(c) \ge f(x)$ when $x$ is near $c$;
 > - **local minimum** value of $f$ if $f(c) \le f(x)$ when $x$ is near $c$.
@@ -39,7 +39,7 @@ Many applications of calculus are optimization problems: find the largest or sma
 
 A function may have many extreme values or none. $\cos x$ takes its (local and absolute) maximum value $1$ infinitely often, at $x = 2n\pi$, and its minimum value $-1$ at $x = (2n + 1)\pi$, $n \in \mathbb{Z}$. $f(x) = x^2$ has the absolute minimum value $f(0) = 0$, since $x^2 \ge 0$, but no maximum. $f(x) = x^3$ has no extreme values at all, local or absolute.
 
-> [!example] Example §31.1: Local Versus Absolute Extrema
+> [!example] Example §28.1: Local Versus Absolute Extrema
 > Find the local and absolute extreme values of $f(x) = 3x^4 - 16x^3 + 18x^2$, $-1 \le x \le 4$.
 >
 > The derivative is $f'(x) = 12x^3 - 48x^2 + 36x = 12x(x - 1)(x - 3)$. Its sign shows where $f$ falls and rises (the Increasing/Decreasing Test, [[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-1|Theorem §30.1]]):
@@ -66,7 +66,7 @@ A function may have many extreme values or none. $\cos x$ takes its (local and a
 
 ## The Extreme Value Theorem
 
-> [!theorem] Theorem §31.1: The Extreme Value Theorem
+> [!theorem] Theorem §28.1: The Extreme Value Theorem
 > If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains an absolute maximum value $f(c)$ and an absolute minimum value $f(d)$ at some numbers $c$ and $d$ in $[a, b]$.
 >
 > *Stewart: 4.1, Theorem 3*
@@ -90,7 +90,7 @@ A function may have many extreme values or none. $\cos x$ takes its (local and a
 
 At a local maximum or minimum of a smooth graph the tangent line looks horizontal. Fermat's Theorem says that this is always so where the derivative exists.
 
-> [!theorem] Theorem §31.2: Fermat's Theorem
+> [!theorem] Theorem §28.2: Fermat's Theorem
 > If $f$ has a local maximum or minimum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
 >
 > *Stewart: 4.1, Theorem 4*
@@ -136,7 +136,7 @@ At a local maximum or minimum of a smooth graph the tangent line looks horizonta
 
 The converse of Fermat's Theorem is false, and an extreme value can occur where $f'$ does not exist:
 
-> [!example] Example §31.2: What Fermat's Theorem Does Not Say
+> [!example] Example §28.2: What Fermat's Theorem Does Not Say
 > **(a)** $f(x) = x^3$ has $f'(x) = 3x^2$, so $f'(0) = 0$. But $f$ has no maximum or minimum at $0$: $x^3 > 0$ for $x > 0$ and $x^3 < 0$ for $x < 0$. The curve $y = x^3$ has a horizontal tangent at $(0, 0)$ and crosses it there. So $f'(c) = 0$ does not imply an extremum at $c$.
 >
 > **(b)** $f(x) = |x|$ has its (local and absolute) minimum value $f(0) = 0$ at $0$, since $|x| \ge 0$. But $f'(0)$ does not exist: the difference quotient $\frac{|h| - 0}{h}$ is $1$ for $h > 0$ and $-1$ for $h < 0$ ([[§15 The Derivative as a Function#^ex-15-4|Ex. §15.4]]). So this minimum cannot be found by solving $f'(x) = 0$.
@@ -147,14 +147,14 @@ The converse of Fermat's Theorem is false, and an extreme value can occur where 
 
 So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does not exist.
 
-> [!definition] Definition §31.3: Critical Number
+> [!definition] Definition §28.3: Critical Number
 > A **critical number** of a function $f$ is a number $c$ in the domain of $f$ such that either $f'(c) = 0$ or $f'(c)$ does not exist.
 >
 > *Stewart: 4.1, Definition 6*
 
 ^def-28-3
 
-> [!example] Example §31.3: Finding Critical Numbers
+> [!example] Example §28.3: Finding Critical Numbers
 > Find the critical numbers of (a) $f(x) = x^3 - 3x^2 + 1$ and (b) $f(x) = x^{3/5}(4 - x)$.
 >
 > **(a)** $f'(x) = 3x^2 - 6x = 3x(x - 2)$ exists for all $x$, so the only critical numbers are the solutions of $f'(x) = 0$: $x = 0$ and $x = 2$.
@@ -195,7 +195,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 
 ^rem-28-2
 
-> [!example] Example §31.4: The Closed Interval Method
+> [!example] Example §28.4: The Closed Interval Method
 > Find the absolute maximum and minimum values of $f(x) = x^3 - 3x^2 + 1$, $-\frac12 \le x \le 4$.
 >
 > $f$ is a polynomial, hence continuous on $[-\frac12, 4]$ ([[§12 Continuity#^thm-12-2|Theorem §12.2]]), so the Closed Interval Method applies. By [[§28 Maximum and Minimum Values#^ex-28-3|Example §28.3]](a) the critical numbers are $0$ and $2$, both in $(-\frac12, 4)$.
@@ -212,7 +212,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 ![[m233-25-1.svg]]
 *[[§28 Maximum and Minimum Values#^ex-28-4|Example §28.4]]: $y = x^3 - 3x^2 + 1$ on $[-\frac12, 4]$. The candidates are the critical numbers $0$ and $2$, where the tangent is horizontal (gray), and the two endpoints. The largest value $17$ is at the endpoint $4$ (red), the smallest $-3$ at the critical number $2$ (blue). The local maximum $f(0) = 1$ is beaten by the endpoint.*
 
-> [!example] Example §31.5: Exact Extreme Values of a Trigonometric Function
+> [!example] Example §28.5: Exact Extreme Values of a Trigonometric Function
 > Find the exact absolute minimum and maximum values of $f(x) = x - 2\sin x$, $0 \le x \le 2\pi$.
 >
 > $f$ is continuous on $[0, 2\pi]$. Since $f'(x) = 1 - 2\cos x$ exists everywhere, the critical numbers are the solutions of $\cos x = \frac12$ in $(0, 2\pi)$: $x = \pi/3$ and $x = 5\pi/3$. The values there are

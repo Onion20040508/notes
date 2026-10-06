@@ -34,7 +34,7 @@ $$
 
 The boundary condition requires $\phi(0) = 0$, and boundedness requires $\phi(x)$ to remain finite as $x \to \infty$.
 
-> [!definition] Definition §40.1: Singular Eigenvalue Problem
+> [!definition] Definition §32.1: Singular Eigenvalue Problem
 > The problem
 >
 > $$
@@ -47,7 +47,7 @@ The boundary condition requires $\phi(0) = 0$, and boundedness requires $\phi(x)
 
 ^def-32-1
 
-> [!theorem] Proposition §40.1: Solutions of the Singular Eigenvalue Problem
+> [!theorem] Proposition §32.1: Solutions of the Singular Eigenvalue Problem
 > The equation $\phi'' = \mu\phi$ on $0 < x < \infty$ has a solution $\phi \not\equiv 0$ with $\phi(0) = 0$ and $\phi$ bounded as $x \to \infty$ only if $\mu < 0$. Writing $\mu = -\lambda^2$, *every* $\lambda > 0$ gives such a solution, and up to a constant multiple it is
 >
 > $$
@@ -74,7 +74,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ## Solution by a Fourier Sine Integral
 
-> [!theorem] Theorem §40.2: Solution of the Semi-Infinite Rod Problem
+> [!theorem] Theorem §32.2: Solution of the Semi-Infinite Rod Problem
 > Let $f$ be sectionally smooth on $0 < x < \infty$ with $\int_0^\infty |f(x)|\,dx < \infty$. Then
 >
 > $$
@@ -141,7 +141,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ## Examples
 
-> [!example] Example §40.1: A Heated Section at the End of the Rod
+> [!example] Example §32.1: A Heated Section at the End of the Rod
 > Solve (1)–(4) with
 >
 > $$
@@ -169,7 +169,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 ![[m341-26-1.svg]]
 *The solution of Example §32.1 as a function of $x/b$ on $0 < x < 3b$, at the dimensionless times $kt/b^2 = 0.001$, $0.01$, $0.1$ and $1$. When $kt/b^2 = 0.01$, the temperature near $x = b/2$ has not changed noticeably from its initial value; the corners are rounded first. Later the heated block both leaks out through $x = 0$, which is held at $0$, and spreads to the right.*
 
-> [!example] Example §40.2: A Half Sine Wave of Initial Temperature
+> [!example] Example §32.2: A Half Sine Wave of Initial Temperature
 > Solve
 >
 > $$
@@ -198,7 +198,7 @@ In this singular problem there are no "special" values of $\lambda$: the eigenva
 
 ^ex-32-2
 
-> [!example] Example §40.3: An Insulated End
+> [!example] Example §32.3: An Insulated End
 > Solve
 >
 > $$

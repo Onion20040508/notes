@@ -34,7 +34,7 @@ With the tests of [[§82 Series|§82]]–[[§86 The Ratio and Root Tests|§86]] 
 
 Stewart only names the test for each of the following series; here each is carried out.
 
-> [!example] Example §101.1: Divergence Test and Limit Comparison
+> [!example] Example §87.1: Divergence Test and Limit Comparison
 > **(a)** $\displaystyle\sum_{n=1}^{\infty} \frac{n - 1}{2n + 1}$. Since $a_n = \dfrac{1 - 1/n}{2 + 1/n} \to \dfrac12 \ne 0$, the series diverges by the Test for Divergence.
 >
 > **(b)** $\displaystyle\sum_{n=1}^{\infty} \frac{\sqrt{n^3 + 1}}{3n^3 + 4n^2 + 2}$. Here $a_n$ is an algebraic function of $n$, so compare with a $p$-series. Keeping the highest powers,
@@ -55,7 +55,7 @@ Stewart only names the test for each of the following series; here each is carri
 
 ^ex-87-1
 
-> [!example] Example §101.2: An Easy Integral
+> [!example] Example §87.2: An Easy Integral
 > $\displaystyle\sum_{n=1}^{\infty} n e^{-n^2}$.
 >
 > **Integral Test.** $f(x) = x e^{-x^2}$ is positive and continuous on $[1, \infty)$, and $f'(x) = e^{-x^2} - 2x^2 e^{-x^2} = e^{-x^2} (1 - 2x^2) < 0$ for $x \ge 1$, so $f$ is decreasing. With $u = x^2$,
@@ -76,7 +76,7 @@ Stewart only names the test for each of the following series; here each is carri
 
 ^ex-87-2
 
-> [!example] Example §101.3: Alternating, and Absolutely Convergent
+> [!example] Example §87.3: Alternating, and Absolutely Convergent
 > $\displaystyle\sum_{n=1}^{\infty} (-1)^n \frac{n^2}{n^4 + 1}$.
 >
 > **Alternating Series Test.** $b_n = \dfrac{n^2}{n^4 + 1} = \dfrac{1/n^2}{1 + 1/n^4} \to 0$. For $f(x) = x^2/(x^4 + 1)$,
@@ -93,7 +93,7 @@ Stewart only names the test for each of the following series; here each is carri
 
 ^ex-87-3
 
-> [!example] Example §101.4: A Factorial
+> [!example] Example §87.4: A Factorial
 > $\displaystyle\sum_{k=1}^{\infty} \frac{2^k}{k!}$.
 >
 > The series involves $k!$, so use the Ratio Test:

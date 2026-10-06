@@ -27,7 +27,7 @@ $$
 
 The eigenvalues can be found and the orthogonality of the eigenfunctions checked by direct calculation (as in [[§29 Sturm–Liouville Problems#^ex-29-3|Example §29.3]]), but an indirect calculation is easier and works for every choice of boundary conditions at once.
 
-> [!theorem] Proposition §37.1: Orthogonality for φ″ + λ²φ = 0
+> [!theorem] Proposition §29.1: Orthogonality for φ″ + λ²φ = 0
 > Let $\phi_n$ and $\phi_m$ be eigenfunctions of (1)–(3), where $(\alpha_1, \alpha_2) \ne (0, 0)$ and $(\beta_1, \beta_2) \ne (0, 0)$, corresponding to different eigenvalues $\lambda_n^2 \ne \lambda_m^2$. Then
 >
 > $$
@@ -93,7 +93,7 @@ $$
 
 To guarantee that eigenfunctions exist and that the integrations by parts are legitimate, Powers imposes conditions on the coefficients.
 
-> [!definition] Definition §37.1: Regular Sturm–Liouville Problem
+> [!definition] Definition §29.1: Regular Sturm–Liouville Problem
 > The problem (5)–(7) is called a **regular Sturm–Liouville problem** if the following conditions are fulfilled:
 > - (a) $s(x)$, $s'(x)$, $q(x)$ and $p(x)$ are continuous for $l \le x \le r$;
 > - (b) $s(x) > 0$ and $p(x) > 0$ for $l \le x \le r$;
@@ -106,7 +106,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 ^def-29-1
 
-> [!definition] Definition §37.2: Eigenvalue and Eigenfunction
+> [!definition] Definition §29.2: Eigenvalue and Eigenfunction
 > A number $\lambda^2$ for which (5)–(7) has a solution $\phi$ that is not identically zero is an **eigenvalue** of the regular Sturm–Liouville problem ([[§29 Sturm–Liouville Problems#^def-29-1|Definition §29.1]]), and such a $\phi$ is an **eigenfunction** corresponding to $\lambda^2$.
 >
 > *Powers: 2.7, Definition; Source: 341 lecture 10.10*
@@ -130,7 +130,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 > $$
 >
 > so $q = -cs/a$ and the weight is $p = ws/a$ (and $\mu = \lambda^2$).
-> 3. Check conditions (a)–(d) of Definition §29.2 on the closed interval.
+> 3. Check conditions (a)–(d) of Definition §29.1 on the closed interval.
 >
 > For instance, $x(x\phi')' = \mu\phi$ ([[§29 Sturm–Liouville Problems#^ex-29-4|Example §29.4]]) is $x^2\phi'' + x\phi' - \mu\phi = 0$; here $b/a = 1/x$, $s = x$, and dividing by $x$ gives $(x\phi')' - \mu\,\frac1x\,\phi = 0$. Since the term in $\mu$ has $w = -1$, this is (5) with $\lambda^2 = -\mu$ and positive weight $p = 1/x$.
 >
@@ -138,7 +138,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 ^rem-29-2
 
-> [!theorem] Theorem §37.2: Orthogonality of Eigenfunctions (Sturm–Liouville Theorem)
+> [!theorem] Theorem §29.2: Orthogonality of Eigenfunctions (Sturm–Liouville Theorem)
 > The regular Sturm–Liouville problem has an infinite number of eigenfunctions $\phi_1, \phi_2, \ldots$, each corresponding to a different eigenvalue $\lambda_1^2, \lambda_2^2, \ldots$. If $n \ne m$, the eigenfunctions $\phi_n$ and $\phi_m$ are orthogonal with weight function $p(x)$:
 >
 > $$
@@ -190,7 +190,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 > [!remark]- Connections
 > - Finite-dimensional version: eigenvectors of a symmetric matrix for distinct eigenvalues are orthogonal, [[§58★ Diagonalization of Symmetric Matrices#^thm-58-1|235 Thm. §58.1]], by the same one-line computation; for self-adjoint operators on an inner product space ([[§23 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and more generally normal ones, it is [[§23 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]. See the remark below for the dictionary.
-> - $\langle f, g\rangle_p = \int_l^r f(x)g(x)p(x)\,dx$ is an inner product (a weighted version of [[§20 Definition and Examples#^ex-20-3|556 Ex. §20.3]] and [[§56 Inner Product Spaces#^ex-56-4|235 Ex. §56.4]]), and the theorem says that the eigenfunctions form an orthogonal set for it in the sense of [[§24 Orthonormal Sets and Bases#^def-24-1|556 Def. §24.1]].
+> - $\langle f, g\rangle_p = \int_l^r f(x)g(x)p(x)\,dx$ is an inner product (a weighted version of [[§22 Definition and Examples#^ex-22-3|556 Ex. §22.3]] and [[§56 Inner Product Spaces#^ex-56-4|235 Ex. §56.4]]), and the theorem says that the eigenfunctions form an orthogonal set for it in the sense of [[§27 Orthonormal Sets and Bases#^def-27-1|556 Def. §27.1]].
 > - Used in Electromagnetism: separation of variables in electrostatics — the separated equations as Sturm–Liouville problems, orthonormality, completeness and closure of their eigenfunctions, and the orthogonality of Bessel functions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^def-c6-2-1|EM Def. §C6.2.1]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]].
 > - In several variables the integration by parts of the proof becomes Green's second identity, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-3|452 Thm. §28.3]], which makes the Laplacian symmetric in the same way under Dirichlet or Neumann boundary conditions.
 
@@ -211,7 +211,7 @@ To guarantee that eigenfunctions exist and that the integrations by parts are le
 
 Powers writes the eigenvalue as $\lambda^2$ and orders the eigenvalues, which presupposes that they are real. That follows from the same identity.
 
-> [!theorem] Proposition §37.3: The Eigenvalues Are Real
+> [!theorem] Proposition §29.3: The Eigenvalues Are Real
 > Even if complex numbers $\mu$ in place of $\lambda^2$ and complex-valued solutions $\phi$ are admitted, every eigenvalue of a regular Sturm–Liouville problem is real, and to each eigenvalue there corresponds a real-valued eigenfunction.
 >
 > *Powers: 2.7, implicit in Theorems 1 and 2 (the eigenvalues are written $\lambda^2$ and ordered)*
@@ -272,7 +272,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 
 ^thm-29-5
 
-*Powers omits the proof. For Dirichlet conditions, part (c) follows from the Rayleigh quotient of [[§41★ Estimation of Eigenvalues#^prop-41-1|Proposition §41.1]] (Eq. (3)); the remark below extends that argument to all the boundary conditions of Definition §29.2. Parts (a) and (b) (Sturm's oscillation theory) are not proved anywhere in the vault.*
+*Powers omits the proof. For Dirichlet conditions, part (c) follows from the Rayleigh quotient of [[§41★ Estimation of Eigenvalues#^prop-41-1|Proposition §41.1]] (Eq. (3)); the remark below extends that argument to all the boundary conditions of Definition §29.1. Parts (a) and (b) (Sturm's oscillation theory) are not proved anywhere in the vault.*
 
 > [!remark] Remark: Why the Eigenvalues Are Nonnegative
 > Let $\phi$ be a real eigenfunction for $\lambda^2$ ([[§29 Sturm–Liouville Problems#^prop-29-3|Proposition §29.3]]). Multiply (5) by $\phi$, integrate from $l$ to $r$, and integrate $\int (s\phi')'\phi\,dx$ by parts:
@@ -294,18 +294,18 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 ^rem-29-4
 
 > [!remark]- Connections
-> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|235 Thm. §58.3]]; for self-adjoint operators this is the real spectral theorem, [[§24 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §29.2 and §23.5 with the expansion theorem of [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|§30]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]] and there are infinitely many eigenvalues, increasing to $\infty$.
+> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|235 Thm. §58.3]]; for self-adjoint operators this is the real spectral theorem, [[§24 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §29.2 and §23.5 with the expansion theorem of [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|§30]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]] and there are infinitely many eigenvalues, increasing to $\infty$.
 
 ## Examples
 
-> [!example] Example §37.1: Recognizing Regular Sturm–Liouville Problems
+> [!example] Example §29.1: Recognizing Regular Sturm–Liouville Problems
 > **(a)** The eigenvalue problems of [[§25 Example꞉ Fixed End Temperatures|§25]]–[[§28 Example꞉ Convection|§28]] are all regular Sturm–Liouville problems, as is (1)–(3). In particular, the convection problem
 >
 > $$
 > \phi'' + \lambda^2\phi = 0, \quad 0 < x < a, \qquad \phi(0) = 0, \qquad h\phi(a) + \kappa\phi'(a) = 0
 > $$
 >
-> is one, with $s(x) = p(x) = 1$, $q(x) = 0$, $\alpha_1 = 1$, $\alpha_2 = 0$, $\beta_1 = h$, $\beta_2 = \kappa$. All conditions of Definition §29.2 are met ($h$, $\kappa > 0$), so its eigenfunctions $\sin(\lambda_n x)$ are orthogonal on $0 < x < a$ with weight $1$, and its eigenvalues are positive.
+> is one, with $s(x) = p(x) = 1$, $q(x) = 0$, $\alpha_1 = 1$, $\alpha_2 = 0$, $\beta_1 = h$, $\beta_2 = \kappa$. All conditions of Definition §29.1 are met ($h$, $\kappa > 0$), so its eigenfunctions $\sin(\lambda_n x)$ are orthogonal on $0 < x < a$ with weight $1$, and its eigenvalues are positive.
 >
 > **(b)** A less trivial example is
 >
@@ -325,7 +325,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 
 ^ex-29-1
 
-> [!example] Example §37.2: Bessel's and Legendre's Equations
+> [!example] Example §29.2: Bessel's and Legendre's Equations
 > The lecture lists three choices of coefficients in (5):
 > - $s = 1$, $q = 0$, $p = 1$: $\phi'' + \lambda^2\phi = 0$, the equation of the standard heat problems.
 > - $s = x$, $q = \nu^2/x$, $p = x$: $(x\phi')' - \frac{\nu^2}{x}\phi + \lambda^2x\phi = 0$. Multiplying by $x$ gives $x^2\phi'' + x\phi' + (\lambda^2x^2 - \nu^2)\phi = 0$, **Bessel's equation** of order $\nu$ ([[§55★ Bessel's Equation#^def-55-1|Definition §55.1]]).
@@ -337,7 +337,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 
 ^ex-29-2
 
-> [!example] Example §37.3: The Convection Eigenfunctions by Direct Integration
+> [!example] Example §29.3: The Convection Eigenfunctions by Direct Integration
 > Let $\lambda_n$ be the $n$th positive solution of the equation $\tan(a\lambda) = -\kappa\lambda/h$, so that $\phi_n = \sin(\lambda_n x)$ are the eigenfunctions of Example §29.1(a) ([[§28 Example꞉ Convection#^thm-28-1|Theorem §28.1]]). **(a)** Verify that
 >
 > $$

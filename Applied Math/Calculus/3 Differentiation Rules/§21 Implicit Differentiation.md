@@ -23,7 +23,7 @@ $$
 
 Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions determined by (1) are $f(x) = \sqrt{25 - x^2}$ and $g(x) = -\sqrt{25 - x^2}$, whose graphs are the upper and lower semicircles of the circle $x^2 + y^2 = 25$. Equation (2) is the **folium of Descartes**. It defines $y$ as several functions of $x$, but solving it for $y$ by hand is not practical.
 
-> [!definition] Definition §24.1: Function Defined Implicitly
+> [!definition] Definition §21.1: Function Defined Implicitly
 > A function $f$ is **defined implicitly** by an equation in $x$ and $y$ if the equation becomes true for every $x$ in the domain of $f$ when $y$ is replaced by $f(x)$. For example, $f$ is defined implicitly by Equation 2 if
 >
 > $$
@@ -49,7 +49,7 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 
 ^rem-21-1
 
-> [!example] Example §24.1: The Tangent Line to a Circle
+> [!example] Example §21.1: The Tangent Line to a Circle
 > If $x^2 + y^2 = 25$, find $dy/dx$. Then find an equation of the tangent to the circle at the point $(3, 4)$.
 >
 > **Solution 1 (implicitly).** Differentiate both sides with respect to $x$:
@@ -90,7 +90,7 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 
 ^ex-21-1
 
-> [!example] Example §24.2: The Folium of Descartes
+> [!example] Example §21.2: The Folium of Descartes
 > (a) Find $y'$ if $x^3 + y^3 = 6xy$. (b) Find the tangent to the folium at the point $(3, 3)$. (c) At what point in the first quadrant is the tangent line horizontal?
 >
 > **(a)** Differentiate both sides with respect to $x$, using the Chain Rule on $y^3$ and the Product Rule on $6xy$:
@@ -147,7 +147,7 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 
 ^rem-21-2
 
-> [!example] Example §24.3: A Transcendental Equation
+> [!example] Example §21.3: A Transcendental Equation
 > Find $y'$ if $\sin(x + y) = y^2 \cos x$.
 >
 > Differentiate implicitly with respect to $x$: the Chain Rule on the left, the Product and Chain Rules on the right.
@@ -172,7 +172,7 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 
 ## Second Derivatives of Implicit Functions
 
-> [!example] Example §24.4: The Second Derivative on a Fat Circle
+> [!example] Example §21.4: The Second Derivative on a Fat Circle
 > Find $y''$ if $x^4 + y^4 = 16$.
 >
 > Differentiating implicitly, $4x^3 + 4y^3 y' = 0$, so

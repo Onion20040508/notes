@@ -15,7 +15,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ## Moments and Centers of Mass
 
-> [!theorem] Theorem §73.1: Law of the Lever
+> [!theorem] Theorem §63.1: Law of the Lever
 > Two masses $m_1$ and $m_2$ attached to a rod of negligible mass, on opposite sides of a fulcrum and at distances $d_1$ and $d_2$ from it, balance if
 >
 > $$
@@ -30,7 +30,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 *This is a law of physics, not a theorem of calculus: Stewart takes it as the experimental fact discovered by Archimedes.*
 
-> [!theorem] Proposition §73.2: Center of Mass of Two Particles
+> [!theorem] Proposition §63.2: Center of Mass of Two Particles
 > Let the rod lie along the $x$-axis with $m_1$ at $x_1$ and $m_2$ at $x_2$, $x_1 < x_2$. The balance point (center of mass) is
 >
 > $$
@@ -54,7 +54,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 *Uses:* [[§63 Moments and Centers of Mass#^thm-63-1|§63.1]]
 
-> [!definition] Definition §73.1: Moments on a Line
+> [!definition] Definition §63.1: Moments on a Line
 > Let particles of masses $m_1, \ldots, m_n$ sit at the points $x_1, \ldots, x_n$ of the $x$-axis, and let $m = \sum m_i$ be the total mass. The number $m_i x_i$ is the **moment** of $m_i$ (with respect to the origin), and
 >
 > $$
@@ -67,7 +67,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^def-63-1
 
-> [!definition] Definition §73.2: Center of Mass on a Line
+> [!definition] Definition §63.2: Center of Mass on a Line
 > The **center of mass** of the system is
 >
 > $$
@@ -89,9 +89,8 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 >
 > The masses to the right of $\bar x$ contribute $\sum m_i d_i$ with $d_i = x_i - \bar x > 0$, those to the left contribute $-\sum m_j d_j$ with $d_j = \bar x - x_j > 0$, and the two totals are equal: the Law of the Lever for $n$ masses. (Stewart says only that Equation 4 "can be shown similarly" to the case $n = 2$.)
 
-^rem-63-2
-
-> [!definition] Definition §73.3: Moments in the Plane
+^rem-63-1
+> [!definition] Definition §63.3: Moments in the Plane
 > Let particles of masses $m_1, \ldots, m_n$ be located at the points $(x_1, y_1), \ldots, (x_n, y_n)$ of the $xy$-plane, with total mass $m = \sum m_i$. The **moment of the system about the $y$-axis** and the **moment of the system about the $x$-axis** are
 >
 > $$
@@ -104,7 +103,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^def-63-3
 
-> [!definition] Definition §73.4: Center of Mass in the Plane
+> [!definition] Definition §63.4: Center of Mass in the Plane
 > The **center of mass** is $(\bar x, \bar y)$, where
 >
 > $$
@@ -117,7 +116,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^def-63-4
 
-> [!example] Example §73.1: Three Point Masses
+> [!example] Example §63.1: Three Point Masses
 > Find the moments and center of mass of the system of masses $3$, $4$ and $8$ at the points $(-1, 1)$, $(2, -1)$ and $(3, 2)$.
 >
 > By [[§63 Moments and Centers of Mass#^def-63-3|Definition §63.3]],
@@ -160,8 +159,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > 2. **Concentration.** If the entire mass of a region is concentrated at its center of mass, its moments are unchanged: a moment is (mass) $\times$ (distance of the center of mass from the axis).
 > 3. **Additivity.** The moment of the union of two nonoverlapping regions is the sum of their moments.
 
-^rem-63-3
-
+^rem-63-2
 > [!theorem] Theorem §63.3: Moments and Centroid of a Plate
 > Let $f$ be continuous with $f \ge 0$ on $[a, b]$, and let $\mathcal{R}$ be the region under the graph of $f$ above $[a, b]$, occupied by a lamina of uniform density $\rho$. Then the moments of $\mathcal{R}$ about the $y$-axis and the $x$-axis, and its mass, are
 >
@@ -198,16 +196,16 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > M_x = \lim_{n \to \infty} \sum_{i=1}^n \rho \cdot \tfrac12 [f(\bar x_i)]^2\,\Delta x = \rho \int_a^b \tfrac12 [f(x)]^2\,dx .
 > $$
 >
-> (The moments of $\mathcal{R}$ are *defined* as these limits of the moments of the approximating polygons; the [[§63 Moments and Centers of Mass#^rem-63-3|principles]] fix the moments of the polygons.) The mass is density times area, $m = \rho A$ with $A = \int_a^b f(x)\,dx$ ([[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]]); the midpoint sums above converge because $x f(x)$ and $\frac12 [f(x)]^2$ are continuous ([[§39 The Definite Integral#^thm-39-1|Theorem §39.1]]) and the limit of Riemann sums does not depend on the sample points ([[§39 The Definite Integral#^def-39-1|Definition §39.1]]). Dividing, $\bar x = M_y / m$ and $\bar y = M_x / m$, and $\rho$ cancels from numerator and denominator.
+> (The moments of $\mathcal{R}$ are *defined* as these limits of the moments of the approximating polygons; the [[§63 Moments and Centers of Mass#^rem-63-2|principles]] fix the moments of the polygons.) The mass is density times area, $m = \rho A$ with $A = \int_a^b f(x)\,dx$ ([[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]]); the midpoint sums above converge because $x f(x)$ and $\frac12 [f(x)]^2$ are continuous ([[§39 The Definite Integral#^thm-39-1|Theorem §39.1]]) and the limit of Riemann sums does not depend on the sample points ([[§39 The Definite Integral#^def-39-1|Definition §39.1]]). Dividing, $\bar x = M_y / m$ and $\bar y = M_x / m$, and $\rho$ cancels from numerator and denominator.
 
 ^pf-63-3
 
-*Uses:* [[§63 Moments and Centers of Mass#^def-63-3|Def. §63.3]], [[§63 Moments and Centers of Mass#^def-63-4|Def. §63.4]], [[§63 Moments and Centers of Mass#^rem-63-3|Remark: The Principles Behind the Formulas]], [[§39 The Definite Integral#^def-39-1|Def. §39.1]], [[§39 The Definite Integral#^thm-39-1|§39.1]] (Riemann sums of continuous functions converge to the integral), [[§38 The Area and Distance Problems#^def-38-1|Def. §38.1]] (area under a curve)
+*Uses:* [[§63 Moments and Centers of Mass#^def-63-3|Def. §63.3]], [[§63 Moments and Centers of Mass#^def-63-4|Def. §63.4]], [[§63 Moments and Centers of Mass#^rem-63-2|Remark: The Principles Behind the Formulas]], [[§39 The Definite Integral#^def-39-1|Def. §39.1]], [[§39 The Definite Integral#^thm-39-1|§39.1]] (Riemann sums of continuous functions converge to the integral), [[§38 The Area and Distance Problems#^def-38-1|Def. §38.1]] (area under a curve)
 
 > [!remark]- Connections
 > - $\bar x = \int_a^b x f(x)\,dx \big/ \int_a^b f(x)\,dx$ is the average of $x$ with weight $f \ge 0$. The Weighted Mean Value Theorem [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] (with the continuous function $x$ and the weight $f$) gives $\bar x \in [a, b]$: the centroid lies over the base of the region.
 
-> [!example] Example §73.2: Semicircular Plate
+> [!example] Example §63.2: Semicircular Plate
 > Find the center of mass of a semicircular plate of radius $r$ with uniform density.
 >
 > Place the semicircle as the region under $f(x) = \sqrt{r^2 - x^2}$, $-r \le x \le r$. It is symmetric about the $y$-axis, so by the symmetry principle $\bar x = 0$; no integral is needed. The area is $A = \frac12 \pi r^2$, and by [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3]]
@@ -264,12 +262,12 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 ^pf-63-4
 
-*Uses:* [[§63 Moments and Centers of Mass#^thm-63-3|§63.3]], [[§63 Moments and Centers of Mass#^rem-63-3|Remark: The Principles Behind the Formulas]], [[§45 Areas Between Curves#^thm-45-1|§45.1]] (area between curves)
+*Uses:* [[§63 Moments and Centers of Mass#^thm-63-3|§63.3]], [[§63 Moments and Centers of Mass#^rem-63-2|Remark: The Principles Behind the Formulas]], [[§45 Areas Between Curves#^thm-45-1|§45.1]] (area between curves)
 
 > [!remark]- Connections
 > - These are [[§115 Double Integrals Over Rectangles#^def-115-4|iterated integrals]] in disguise: with $\mathcal{R}$ a [[§116 Double Integrals Over General Regions#^def-116-2|type I region]], $\int_{g(x)}^{f(x)} x\,dy = x[f(x) - g(x)]$ and $\int_{g(x)}^{f(x)} y\,dy = \frac12\{[f(x)]^2 - [g(x)]^2\}$, so by Fubini's theorem [[§23 Fubini's Theorem#^thm-23-2|452 Thm. §23.2]], $A\bar x = \iint_{\mathcal{R}} x\,dA$ and $A\bar y = \iint_{\mathcal{R}} y\,dA$. That is the definition used for plates of variable density in [[§118 Applications of Double Integrals#^def-118-5|Definition §118.5]].
 
-> [!example] Example §73.3: Region Between a Line and a Parabola
+> [!example] Example §63.3: Region Between a Line and a Parabola
 > Find the centroid of the region bounded by the line $y = x$ and the parabola $y = x^2$.
 >
 > The curves meet where $x = x^2$, at $x = 0$ and $x = 1$, and $x \ge x^2$ on $[0, 1]$. So take $f(x) = x$, $g(x) = x^2$, $a = 0$, $b = 1$ in [[§63 Moments and Centers of Mass#^thm-63-4|Theorem §63.4]]. The area is
@@ -330,7 +328,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 
 *Stewart proves only this special case. Any line $l$ can be made the $y$-axis by a choice of coordinates, so the proof covers every region that is bounded by two graphs over an interval in the direction perpendicular to $l$; a region that can be cut into finitely many such pieces follows by additivity of volumes and of moments.*
 
-> [!example] Example §73.4: Volume of a Torus
+> [!example] Example §63.4: Volume of a Torus
 > A torus is formed by rotating a circle of radius $r$ about a line in the plane of the circle at distance $R > r$ from the center of the circle. Find the volume of the torus.
 >
 > Rotate the disk bounded by the circle. Its area is $A = \pi r^2$. By the symmetry principle its centroid is its center, which travels around a circle of radius $R$, a distance $d = 2\pi R$. Since $R > r$, the disk lies on one side of the axis, and the Theorem of Pappus gives

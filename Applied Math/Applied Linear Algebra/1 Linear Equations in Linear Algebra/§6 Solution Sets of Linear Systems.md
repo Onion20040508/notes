@@ -15,14 +15,14 @@ Vector notation turns the general solution of a linear system into a geometric o
 
 ## Homogeneous Linear Systems
 
-> [!definition] Definition §7.2: Homogeneous System, Trivial and Nontrivial Solutions
+> [!definition] Definition §6.1: Homogeneous System, Trivial and Nontrivial Solutions
 > A system of linear equations is **homogeneous** if it can be written in the form $A\mathbf{x} = \mathbf{0}$, where $A$ is an $m \times n$ matrix and $\mathbf{0}$ is the zero vector in $\mathbb{R}^m$. Such a system always has the solution $\mathbf{x} = \mathbf{0}$ (the zero vector in $\mathbb{R}^n$), the **trivial solution**. A **nontrivial solution** is a nonzero vector $\mathbf{x}$ that satisfies $A\mathbf{x} = \mathbf{0}$. (It may have some zero entries, as long as not all of its entries are zero.)
 >
 > *Lay: 1.5 (text)*
 
 ^def-6-1
 
-> [!theorem] Corollary §7.1: Nontrivial Solutions and Free Variables
+> [!theorem] Corollary §6.1: Nontrivial Solutions and Free Variables
 > The homogeneous equation $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution if and only if the equation has at least one free variable.
 >
 > *Lay: 1.5, boxed statement*
@@ -36,7 +36,7 @@ Vector notation turns the general solution of a linear system into a geometric o
 
 *Uses:* [[§3 Solutions of Linear Systems#^thm-3-1|§3.1]], [[§6 Solution Sets of Linear Systems#^def-6-1|Def. §6.1]]
 
-> [!example] Example §7.1: A Line of Solutions
+> [!example] Example §6.1: A Line of Solutions
 > Determine if the homogeneous system
 >
 > $$
@@ -77,7 +77,7 @@ Vector notation turns the general solution of a linear system into a geometric o
 
 ^ex-6-1
 
-> [!example] Example §7.2: A Plane of Solutions
+> [!example] Example §6.2: A Plane of Solutions
 > Describe all solutions of the single homogeneous equation
 >
 > $$
@@ -120,7 +120,7 @@ One free variable gives a line through the origin ([[§6 Solution Sets of Linear
 
 ## Parametric Vector Form
 
-> [!definition] Definition §7.4: Parametric Vector Form
+> [!definition] Definition §6.2: Parametric Vector Form
 > Equation (1) is an **implicit description** of its plane; solving it gives an **explicit description** of the plane as the span of $\mathbf{u}$ and $\mathbf{v}$. Equation (2) is a **parametric vector equation** of the plane, also written
 >
 > $$
@@ -135,7 +135,7 @@ One free variable gives a line through the origin ([[§6 Solution Sets of Linear
 
 ## Solutions of Nonhomogeneous Systems
 
-> [!example] Example §7.3: A Translated Line
+> [!example] Example §6.3: A Translated Line
 > Describe all solutions of $A\mathbf{x} = \mathbf{b}$, where
 >
 > $$

@@ -15,7 +15,7 @@ As we zoom in toward a point on the graph of a differentiable function of one va
 
 ## Tangent Planes
 
-> [!definition] Definition §128.1: Tangent Plane
+> [!definition] Definition §109.1: Tangent Plane
 > Suppose a surface $S$ has equation $z = f(x, y)$, where $f$ has continuous first partial derivatives, and let $P(x_0, y_0, z_0)$ be a point on $S$. Let $C_1$ and $C_2$ be the curves in which the vertical planes $y = y_0$ and $x = x_0$ intersect $S$, and let $T_1$ and $T_2$ be the tangent lines to $C_1$ and $C_2$ at $P$ ([[§108 Partial Derivatives#^rem-108-1|§108, Remark]]). The **tangent plane** to the surface $S$ at the point $P$ is the plane that contains both tangent lines $T_1$ and $T_2$.
 >
 > *Stewart: 14.4 (text)*
@@ -24,7 +24,7 @@ As we zoom in toward a point on the graph of a differentiable function of one va
 
 We will see in [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112.1]] that the tangent line at $P$ to *any* curve $C$ that lies on $S$ and passes through $P$ also lies in the tangent plane. So the tangent plane consists of all possible tangent lines at $P$ to curves on $S$ through $P$: it is the plane that most closely approximates $S$ near $P$.
 
-> [!theorem] Theorem §128.1: Equation of a Tangent Plane
+> [!theorem] Theorem §109.1: Equation of a Tangent Plane
 > Suppose $f$ has continuous partial derivatives. An equation of the tangent plane to the surface $z = f(x, y)$ at the point $P(x_0, y_0, z_0)$ is
 >
 > $$
@@ -56,7 +56,7 @@ We will see in [[§112 Tangent Planes to Level Surfaces#^thm-112-1|Theorem §112
 
 Compare the tangent line $y - y_0 = f'(x_0)(x - x_0)$ in one variable.
 
-> [!example] Example §128.1: Tangent Plane and Linear Approximation
+> [!example] Example §109.1: Tangent Plane and Linear Approximation
 > Find the tangent plane to the elliptic paraboloid $z = 2x^2 + y^2$ at the point $(1, 1, 3)$, and use it to approximate $f(x, y) = 2x^2 + y^2$ near $(1, 1)$.
 >
 > $$
@@ -83,7 +83,7 @@ Compare the tangent line $y - y_0 = f'(x_0)(x - x_0)$ in one variable.
 
 ## Linear Approximations
 
-> [!definition] Definition §128.2: Linearization and Linear Approximation
+> [!definition] Definition §109.2: Linearization and Linear Approximation
 > The linear function
 >
 > $$
@@ -119,7 +119,7 @@ $$
 $$
 (Stewart, Equation 3.4.7; [[§20 The Chain Rule#^lem-20-1|Lemma §20.1]]). The definition for two variables copies this.
 
-> [!definition] Definition §128.3: Increment
+> [!definition] Definition §109.3: Increment
 > Let $z = f(x, y)$. If $x$ changes from $a$ to $a + \Delta x$ and $y$ changes from $b$ to $b + \Delta y$, the corresponding **increment** of $z$ is
 >
 > $$
@@ -130,7 +130,7 @@ $$
 
 ^def-109-3
 
-> [!definition] Definition §129.1: Differentiable Function of Two Variables
+> [!definition] Definition §109.4: Differentiable Function of Two Variables
 > Let $z = f(x, y)$, with increment $\Delta z$ as in [[§109 Tangent Planes and Linear Approximations#^def-109-3|Definition §109.3]]. The function $f$ is **differentiable** at $(a, b)$ if $\Delta z$ can be expressed in the form
 >
 > $$
@@ -148,7 +148,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > [!remark]- Connections
 > - Rigorous treatment: [[§7 Differentiability#^def-7-1|452 Def. §7.1]] asks for $\Delta z = A\,\Delta x + B\,\Delta y + o\big(\sqrt{\Delta x^2 + \Delta y^2}\big)$. This is equivalent to Stewart's form, with $\rho = \sqrt{\Delta x^2 + \Delta y^2}$: $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ is $o(\rho)$ since $|\Delta x|, |\Delta y| \le \rho$; conversely an $o(\rho)$ remainder $R$ equals $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ with $\varepsilon_1 = R\,\Delta x / \rho^2$ and $\varepsilon_2 = R\,\Delta y / \rho^2$, both at most $|R|/\rho$ in absolute value. The function of the remark "Partial Derivatives Are Not Enough", doubled, is [[§7 Differentiability#^ex-7-1|452 Ex. §7.1]], and the derivative as a linear map is [[§7 Differentiability#^def-7-2|452 Def. §7.2]].
 
-> [!theorem] Theorem §128.2: Continuous Partial Derivatives Imply Differentiability
+> [!theorem] Theorem §109.2: Continuous Partial Derivatives Imply Differentiability
 > If the partial derivatives $f_x$ and $f_y$ exist near $(a, b)$ and are continuous at $(a, b)$, then $f$ is differentiable at $(a, b)$.
 >
 > *Stewart: 14.4, Theorem 8; proof in Appendix F*
@@ -205,7 +205,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > [!remark]- Connections
 > - Rigorous treatment: [[§7 Differentiability#^thm-7-2|452 Thm. §7.2]], with the same two-step Mean Value Theorem argument; hub [[Continuous Partials Imply Differentiability]].
 
-> [!example] Example §129.1: Differentiability and Linearization
+> [!example] Example §109.2: Differentiability and Linearization
 > **(a)** Show that $f(x, y) = xe^{xy}$ is differentiable at $(1, 0)$ and find its linearization there. Then use it to approximate $f(1.1, -0.1)$.
 >
 > $$
@@ -263,7 +263,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 
 ## Differentials
 
-> [!definition] Definition §129.2: Differentials
+> [!definition] Definition §109.5: Differentials
 > For a differentiable function of two variables, $z = f(x, y)$, the **differentials** $dx$ and $dy$ are independent variables: they can be given any values. The **differential** $dz$, also called the **total differential**, is then
 >
 > $$
@@ -288,7 +288,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 > [!remark]- Connections
 > - Rigorous treatment: [[§10 The Differential#^def-10-1|452 Def. §10.1]] (the differential as the linear map $(dx, dy) \mapsto f_x\,dx + f_y\,dy$), with higher differentials in [[§10 The Differential#^def-10-2|452 Def. §10.2]].
 
-> [!example] Example §129.2: Differential Versus Increment
+> [!example] Example §109.3: Differential Versus Increment
 > **(a)** If $z = f(x, y) = x^2 + 3xy - y^2$, find the differential $dz$.
 >
 > $$
@@ -320,7 +320,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 
 ## Functions of Three or More Variables
 
-> [!definition] Definition §129.3: Linear Approximation in Three Variables
+> [!definition] Definition §109.6: Linear Approximation in Three Variables
 > Linear approximations, differentiability and differentials are defined in the same way for functions of more than two variables; a differentiable function is defined by an expression like the one in [[§109 Tangent Planes and Linear Approximations#^def-109-4|Definition §109.4]]. For $f(x, y, z)$ the **linear approximation** at $(a, b, c)$ is
 >
 > $$
@@ -333,7 +333,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 
 ^def-109-6
 
-> [!definition] Definition §129.4: Increment in Three Variables
+> [!definition] Definition §109.7: Increment in Three Variables
 > If $w = f(x, y, z)$, the **increment** of $w$ is $\Delta w = f(x + \Delta x, y + \Delta y, z + \Delta z) - f(x, y, z)$.
 >
 > *Stewart: 14.4 (text)*
@@ -351,7 +351,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 
 ^def-109-8
 
-> [!example] Example §129.3: Estimating Errors with Differentials
+> [!example] Example §109.4: Estimating Errors with Differentials
 > **(a)** The base radius and height of a right circular cone are measured as $10$ cm and $25$ cm, with a possible error of as much as $\varepsilon$ cm in each. Estimate the maximum error in the calculated volume, and evaluate it for $\varepsilon = 0.1$.
 >
 > $V = \pi r^2 h / 3$, so
@@ -382,7 +382,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 
 ^ex-109-4
 
-> [!example] Example §129.4: A Tangent Plane from Two Curves
+> [!example] Example §109.5: A Tangent Plane from Two Curves
 > Let $S$ be a surface containing the curves
 >
 > $$

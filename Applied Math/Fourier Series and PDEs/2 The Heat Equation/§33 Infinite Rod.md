@@ -27,7 +27,7 @@ $$
 
 With $u = \phi(x)T(t)$ the heat equation separates as before, $\phi''/\phi = T'/(kT) = \text{const}$.
 
-> [!theorem] Proposition §41.1: Bounded Solutions on the Whole Line
+> [!theorem] Proposition §33.1: Bounded Solutions on the Whole Line
 > The equation $\phi'' = \mu\phi$, $-\infty < x < \infty$, has a nonzero solution bounded as $x \to \pm\infty$ only if $\mu \le 0$. For $\mu = -\lambda^2$, every solution
 >
 > $$
@@ -45,7 +45,7 @@ With $u = \phi(x)T(t)$ the heat equation separates as before, $\phi''/\phi = T'/
 
 ^pf-33-1
 
-> [!theorem] Theorem §41.2: Fourier Integral Solution of the Infinite Rod Problem
+> [!theorem] Theorem §33.2: Fourier Integral Solution of the Infinite Rod Problem
 > Let $f$ be sectionally smooth with $\int_{-\infty}^\infty |f(x)|\,dx$ finite, and let $A(\lambda)$, $B(\lambda)$ be its Fourier integral coefficient functions,
 >
 > $$
@@ -79,7 +79,7 @@ With $u = \phi(x)T(t)$ the heat equation separates as before, $\phi''/\phi = T'/
 
 *Uses:* [[§33 Infinite Rod#^prop-33-1|§33.1]], [[§18 Fourier Integral#^thm-18-1|§18.1]], [[§32 Semi-Infinite Rod#^thm-32-2|§32.2]], [[§33 Infinite Rod#^thm-33-3|§33.3]]
 
-> [!example] Example §41.1: A Hot Center Section
+> [!example] Example §33.1: A Hot Center Section
 > Solve (1)–(3) with
 >
 > $$
@@ -219,7 +219,7 @@ The semi-infinite rod of [[§32 Semi-Infinite Rod|§32]] can be treated the same
 
 ## Examples
 
-> [!example] Example §41.2: A Decaying Exponential on Half the Rod
+> [!example] Example §33.2: A Decaying Exponential on Half the Rod
 > Solve
 >
 > $$
@@ -248,7 +248,7 @@ The semi-infinite rod of [[§32 Semi-Infinite Rod|§32]] can be treated the same
 
 ^ex-33-2
 
-> [!example] Example §41.3: A Block and a Half Sine Wave
+> [!example] Example §33.3: A Block and a Half Sine Wave
 > **(a)** Solve $u_t = u_{xx}$ on $-\infty < x < \infty$ with $u$ bounded and $u(x, 0) = f(x)$, where $f = 1$ for $0 < x < \pi$ and $f = 0$ otherwise.
 >
 > The basic solutions are those of Example §33.2(b). The coefficients are

@@ -28,8 +28,8 @@ tags: [measure-theory, hub]
 - [[§17 Continuous Functions#^thm-17-2|451 §17.2: Absolute Value of a Continuous Function]]
 - [[§17 Continuous Functions#^thm-17-3|451 §17.3: Arithmetic of Continuous Functions]]
 - [[§24 Uniform Convergence#^thm-24-2|451 §24.2: Uniform Limits Preserve Continuity]]
-- [[§7 Closed Sets and Limit Points#^thm-7-1|590 §7.1: Properties of Closed Sets]]
 - [[§10 Continuous Functions#^thm-10-4|590 §10.4: Rules for Continuous Functions]]
+- [[§7 Closed Sets and Limit Points#^thm-7-1|590 §7.1: Properties of Closed Sets]]
 
 ## Used in (Measure Theory)
 - (not cited later in the course)

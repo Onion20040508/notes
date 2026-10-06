@@ -23,7 +23,7 @@ The second physical interpretation of harmonic functions: electrostatics. In a r
 
 ^def-122-1
 
-> [!definition] Definition §122.3: Electrostatic Potential
+> [!definition] Definition §122.2: Electrostatic Potential
 > The **electrostatic potential** is a scalar function of the space coordinates such that, at each point, its [[§111 Directional Derivatives and the Gradient Vector#^def-111-1|directional derivative]] in any direction is the negative of the component of the [[§122★ Electrostatic Potential#^def-122-1|field intensity]] in that direction.
 >
 > *B&C: Sec. 122 (text)*

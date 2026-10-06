@@ -35,7 +35,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ## Examples
 
-> [!example] Example §28.1: Inflating a Balloon
+> [!example] Example §25.1: Inflating a Balloon
 > Air is pumped into a spherical balloon so that its volume increases at a rate of $100$ cm³/s. How fast is the radius increasing when the diameter is $50$ cm?
 >
 > **Given and unknown.** Let $V$ be the volume and $r$ the radius of the balloon, both functions of time $t$. Given: $\dfrac{dV}{dt} = 100$ cm³/s. Unknown: $\dfrac{dr}{dt}$ when $r = 25$ cm.
@@ -58,7 +58,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ^ex-25-1
 
-> [!example] Example §28.2: A Sliding Ladder
+> [!example] Example §25.2: A Sliding Ladder
 > A ladder $10$ ft long rests against a vertical wall. If the bottom of the ladder slides away from the wall at a rate of $4$ ft/s, how fast is the top sliding down the wall when the bottom is $6$ ft from the wall?
 >
 > Let $x$ ft be the distance from the bottom of the ladder to the wall and $y$ ft the height of the top of the ladder, both functions of $t$ (seconds). Given: $dx/dt = 4$ ft/s. Unknown: $dy/dt$ when $x = 6$ ft. By the Pythagorean Theorem,
@@ -85,7 +85,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ^ex-25-2
 
-> [!example] Example §28.3: Filling a Conical Tank
+> [!example] Example §25.3: Filling a Conical Tank
 > A water tank has the shape of an inverted circular cone with base radius $2$ m and height $4$ m. Water is pumped in at $2$ m³/min. How fast is the water level rising when the water is $3$ m deep?
 >
 > Let $V$, $r$ and $h$ be the volume of the water, the radius of its surface and its depth at time $t$ (minutes). Given: $dV/dt = 2$ m³/min. Unknown: $dh/dt$ when $h = 3$ m. The quantities are related by $V = \frac13 \pi r^2 h$.
@@ -115,7 +115,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 ![[m233-22-1.svg]]
 *The conical tank of [[§25 Related Rates#^ex-25-3|Example §25.3]]. The water (blue) is a smaller cone similar to the tank, so its surface radius and depth are in the ratio $r : h = 2 : 4$ of the tank (the red triangles). This is the relation that eliminates $r$ before differentiating.*
 
-> [!example] Example §28.4: Two Cars Approaching an Intersection
+> [!example] Example §25.4: Two Cars Approaching an Intersection
 > Car A travels west at $50$ mi/h and car B travels north at $60$ mi/h, both toward the intersection $C$ of their roads. At what rate are the cars approaching each other when car A is $0.3$ mi and car B is $0.4$ mi from the intersection?
 >
 > At time $t$ let $x$ be the distance from car A to $C$, $y$ the distance from car B to $C$, and $z$ the distance between the cars (in miles). Given: $dx/dt = -50$ mi/h and $dy/dt = -60$ mi/h (negative because $x$ and $y$ decrease). Unknown: $dz/dt$. By the Pythagorean Theorem $z^2 = x^2 + y^2$, so
@@ -136,7 +136,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ^ex-25-4
 
-> [!example] Example §28.5: A Rotating Spotlight
+> [!example] Example §25.5: A Rotating Spotlight
 > A man walks along a straight path at $4$ ft/s. A spotlight on the ground $20$ ft from the path is kept focused on him. At what rate is the spotlight rotating when he is $15$ ft from the point on the path closest to the light?
 >
 > Let $x$ be the distance from the man to the point on the path closest to the spotlight, and $\theta$ the angle between the beam and the perpendicular from the light to the path. Given: $dx/dt = 4$ ft/s. Unknown: $d\theta/dt$ when $x = 15$. From the right triangle,

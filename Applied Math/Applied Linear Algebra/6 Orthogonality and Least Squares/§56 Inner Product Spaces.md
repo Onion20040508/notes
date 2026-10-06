@@ -28,8 +28,8 @@ Length, distance and orthogonality in $\mathbb{R}^n$ were built from four proper
 ^def-56-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§20 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of [[§56 Inner Product Spaces#^ex-56-1|Example §56.1]] and the integral inner product of [[§56 Inner Product Spaces#^ex-56-4|Example §56.4]]. Same definition in [[§20 Definition and Examples#^def-20-1|556 Def. §20.1]].
-> - The function-space examples become complete only after enlarging $C[a, b]$ to $L^2[a, b]$: [[§20 Definition and Examples#^ex-20-3|556 Ex. §20.3]]; an inner product space of continuous functions that is not complete is [[§21 Cauchy–Schwarz and the Induced Norm#^ex-21-2|556 Ex. §21.2]].
+> - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]], over $\mathbb{R}$ or $\mathbb{C}$ (over $\mathbb{C}$, axiom 1 becomes $\langle u, v\rangle = \overline{\langle v, u\rangle}$); Axler's examples [[§20 Inner Products and Norms#^ladr-6-3|LADR 6.3]] include the weighted inner product of [[§56 Inner Product Spaces#^ex-56-1|Example §56.1]] and the integral inner product of [[§56 Inner Product Spaces#^ex-56-4|Example §56.4]]. Same definition in [[§22 Definition and Examples#^def-22-1|556 Def. §22.1]].
+> - The function-space examples become complete only after enlarging $C[a, b]$ to $L^2[a, b]$: [[§22 Definition and Examples#^ex-22-3|556 Ex. §22.3]]; an inner product space of continuous functions that is not complete is [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2|556 Ex. §23.2]].
 
 > [!example] Example §56.1: A Weighted Inner Product on ℝ²
 > Fix two positive numbers, say $4$ and $5$, and for $\mathbf{u} = (u_1, u_2)$, $\mathbf{v} = (v_1, v_2)$ in $\mathbb{R}^2$ set
@@ -259,7 +259,7 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 
 *Uses:* [[§56 Inner Product Spaces#^prop-56-3|§56.3]], [[§56 Inner Product Spaces#^prop-56-1|§56.1]], [[§56 Inner Product Spaces#^def-56-2|Def. §56.2]]
 
-In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \le (u_1^2 + \cdots + u_n^2)(v_1^2 + \cdots + v_n^2)$, which the lecture read off from $\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos\vartheta$ in $\mathbb{R}^2$ and $\mathbb{R}^3$ ([[§50 Orthogonal Complements and Angles#^rem-50-2|§50, Remark: The Cauchy Inequality]]). The proof above needs no angles, and it is what justifies defining the angle in $\mathbb{R}^n$ by $\cos\vartheta = \mathbf{u} \cdot \mathbf{v} / (\|\mathbf{u}\|\,\|\mathbf{v}\|)$.
+In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \le (u_1^2 + \cdots + u_n^2)(v_1^2 + \cdots + v_n^2)$, which the lecture read off from $\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos\vartheta$ in $\mathbb{R}^2$ and $\mathbb{R}^3$ ([[§50 Orthogonal Complements and Angles#^rem-50-1|§50, Remark: The Cauchy Inequality]]). The proof above needs no angles, and it is what justifies defining the angle in $\mathbb{R}^n$ by $\cos\vartheta = \mathbf{u} \cdot \mathbf{v} / (\|\mathbf{u}\|\,\|\mathbf{v}\|)$.
 
 > [!theorem] Theorem §56.5: The Triangle Inequality
 > For all $\mathbf{u}$, $\mathbf{v}$ in an inner product space $V$,
@@ -290,7 +290,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-14|LADR 6.14]] (Cauchy–Schwarz, with equality iff one vector is a multiple of the other; Axler's proof uses the orthogonal decomposition [[§20 Inner Products and Norms#^ladr-6-13|LADR 6.13]], the same projection idea) and [[§20 Inner Products and Norms#^ladr-6-17|LADR 6.17]] (triangle inequality).
-> - In 556: [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] and [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-2|556 Thm. §21.2]] (the inner product induces a norm); the parallelogram law characterizes the norms that come from inner products, [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-4|556 Thm. §21.4]].
+> - In 556: [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|556 Thm. §23.1]] and [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|556 Thm. §23.2]] (the inner product induces a norm); the parallelogram law characterizes the norms that come from inner products, [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|556 Thm. §24.2]].
 
 ## An Inner Product for C[a, b] (Calculus Required)
 

@@ -25,7 +25,7 @@ $$
 \end{aligned}
 $$
 
-> [!theorem] Theorem §55.1: Dirichlet Problem in a Rectangle with Two Nonzero Sides
+> [!theorem] Theorem §45.1: Dirichlet Problem in a Rectangle with Two Nonzero Sides
 > Let $\lambda_n = n\pi/a$, and let $a_n$ and $c_n$ be the Fourier sine coefficients of $f_1$ and $f_2$ on $0 < x < a$:
 >
 > $$
@@ -130,7 +130,7 @@ $$
 
 ^rem-45-1
 
-> [!example] Example §55.1: Equal Triangular Data on Top and Bottom
+> [!example] Example §45.1: Equal Triangular Data on Top and Bottom
 > Solve (1)–(5) with
 >
 > $$
@@ -190,7 +190,7 @@ $$
 \end{aligned}
 $$
 
-> [!theorem] Theorem §55.2: Dirichlet Problem in a Rectangle by Superposition
+> [!theorem] Theorem §45.2: Dirichlet Problem in a Rectangle by Superposition
 > The solution of (13)–(17) is $u = u_1 + u_2$, where $u_1$ solves
 >
 > $$
@@ -245,7 +245,7 @@ In the individual problems for $u_1$ and $u_2$, separation of variables works be
 
 ^rem-45-2
 
-> [!example] Example §56.1: Data on Two Adjacent Sides of a Square
+> [!example] Example §45.2: Data on Two Adjacent Sides of a Square
 > Solve
 >
 > $$
@@ -298,7 +298,7 @@ In the individual problems for $u_1$ and $u_2$, separation of variables works be
 
 ^ex-45-2
 
-> [!example] Example §56.2: A Rapidly Oscillating Boundary Value
+> [!example] Example §45.3: A Rapidly Oscillating Boundary Value
 > Solve
 >
 > $$

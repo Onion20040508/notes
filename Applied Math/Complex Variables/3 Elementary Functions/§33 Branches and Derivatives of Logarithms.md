@@ -112,7 +112,7 @@ $$
 
 ^def-33-2
 
-> [!definition] Definition §33.4: Principal Branch of log z
+> [!definition] Definition §33.3: Principal Branch of log z
 > The function
 >
 > $$

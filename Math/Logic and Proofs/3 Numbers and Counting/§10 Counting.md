@@ -63,7 +63,7 @@ For the definition to make sense, two different counts of the same set must give
 
 ^rem-10-2
 
-> [!theorem] Lemma §10.2: Injections Between Standard Sets
+> [!theorem] Lemma §10.1: Injections Between Standard Sets
 > If there is an injection $\N_m \to \N_n$, then $m \le n$.
 >
 > *Eccles: Lemma 10.1.4 (proved in Chapter 11)*
@@ -96,7 +96,7 @@ For the definition to make sense, two different counts of the same set must give
 ![[m250-11-1.svg]]
 *Case (ii) of the inductive step with $m_1 = 4$, $k + 1 = 5$: $f$ (black) sends $i_0 = 2$ to the top value $5$ (red). The map $g$ (blue) skips $i_0$, so $f \circ g : \N_3 \to \N_5$ never takes the value $5$ and is an injection into $\N_4$, to which the inductive hypothesis applies.*
 
-> [!theorem] Proposition §10.1: Cardinality Is Well Defined
+> [!theorem] Proposition §10.2: Cardinality Is Well Defined
 > If $f : \N_m \to X$ and $g : \N_n \to X$ are bijections with the same codomain, then $m = n$.
 >
 > *Eccles: Proposition 10.1.3*

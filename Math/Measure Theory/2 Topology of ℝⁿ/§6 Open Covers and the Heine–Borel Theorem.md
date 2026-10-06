@@ -50,7 +50,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - The enumeration exists by [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]; the same $\epsilon/2^k$ cover shows [[§10 Lebesgue Outer Measure#^ex-10-2|Countable Sets Have Measure Zero]].
 
-> [!theorem] Lemma §6.3
+> [!theorem] Lemma §6.1
 > The set $\{B(r, \frac{1}{k}) \mid r \in \mathbb{Q}^n, k \in \mathbb{N}\}$ is countable.
 
 ^lem-6-1
@@ -125,7 +125,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Listed as an application of [[Measure Theory Problem-Solving Techniques#^ex-19-8|Technique 1 (Ex. T1, HW1)]].
 
-> [!theorem] Lemma §6.1
+> [!theorem] Lemma §6.2
 > For any open ball $B(x, \rho)$ with $\rho > 0$, there exist $r \in \mathbb{Q}^n$ and $k \in \mathbb{N}$ such that $x \in B(r, \frac{1}{k}) \subseteq B(x, \rho)$.
 
 ^lem-6-2
@@ -155,7 +155,7 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - Topology: this is the argument that a separable metric space is second-countable ([[§22 Countability Axioms#^prop-22-4|590 §22.4]] (3)), with $D = \mathbb{Q}^n$ ([[§22 Countability Axioms#^ex-22-8|590 Ex. §22.8]]); so the rational balls form a countable [[§2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
 
-> [!theorem] Theorem §6.2: Every Open Cover Has a Countable Subcover
+> [!theorem] Theorem §6.3: Every Open Cover Has a Countable Subcover
 > Every open cover $\mathcal{C}$ has a countable subcover. That is, if $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in I}$, then there exists a countable subcollection $\mathcal{C}_1 = \{\mathcal{O}_{\alpha_j}\}_{j \in J}$ with $J \subseteq I$ countable, such that
 >
 > $$

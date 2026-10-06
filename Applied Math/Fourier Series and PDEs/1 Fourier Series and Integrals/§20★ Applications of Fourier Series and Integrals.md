@@ -28,7 +28,7 @@ $$
 f(t) = a_0 + \sum_{n=1}^{\infty} a_n\cos(nt) + b_n\sin(nt) .
 $$
 
-> [!theorem] Theorem §26.1: The Periodic Response
+> [!theorem] Theorem §20.1: The Periodic Response
 > Let $f(t)$ be sectionally continuous and periodic with period $2\pi$, with Fourier coefficients $a_0, a_n, b_n$. If $y(t)$ is a particular solution of $\ddot y + \alpha\dot y + \beta y = f(t)$ that is periodic with period $2\pi$, with Fourier series
 >
 > $$
@@ -87,7 +87,7 @@ $$
 
 Given $f$, the $a$'s and $b$'s can be determined, and with them the $A$'s and $B$'s. The function $y(t)$ represented by the series is the periodic part of the response. Depending on the initial conditions there may also be a transient response, a solution of the homogeneous equation, which dies out as $t$ increases when $\alpha > 0$.
 
-> [!example] Example §26.1: A Damped Oscillator Driven by a Square Wave
+> [!example] Example §20.1: A Damped Oscillator Driven by a Square Wave
 > Consider the differential equation
 >
 > $$
@@ -136,7 +136,7 @@ $$
 \frac{d^2u}{dx^2} + pu = f(x), \quad 0 < x < a, \qquad u(0) = 0, \quad u(a) = 0 .
 $$
 
-> [!theorem] Theorem §26.2: Sine-Series Solution of a Boundary Value Problem
+> [!theorem] Theorem §20.2: Sine-Series Solution of a Boundary Value Problem
 > Let $f$ be sectionally continuous on $0 < x < a$, with Fourier sine coefficients $b_n$, so that $f(x) = \sum_{n=1}^{\infty} b_n\sin(n\pi x/a)$, and let $u$ be a twice continuously differentiable solution of the boundary value problem above, with Fourier sine series $u(x) = \sum_{n=1}^{\infty} B_n\sin(n\pi x/a)$. Then
 >
 > $$
@@ -182,7 +182,7 @@ $$
 
 The exceptional values $p = n^2\pi^2/a^2$ are the eigenvalues of $u'' + \lambda u = 0$, $u(0) = u(a) = 0$, with eigenfunctions $\sin(n\pi x/a)$ ([[§5★ Boundary Value Problems#^prop-5-3|Proposition §5.3]]). That the sine functions turn $d^2/dx^2$ into multiplication by $-n^2\pi^2/a^2$ is the reason they appear in heat and wave problems with these boundary conditions, and the solvability condition $b_m = 0$ is the prototype of the Sturm–Liouville alternative ([[§30 Expansion in Series of Eigenfunctions|§30]]).
 
-> [!example] Example §26.2: A Sine-Series Solution
+> [!example] Example §20.2: A Sine-Series Solution
 > Consider the boundary value problem
 >
 > $$
@@ -230,7 +230,7 @@ $$
 f(t) = \int_{-\infty}^{\infty} C(\omega)\exp(i\omega t)\,d\omega, \qquad C(\omega) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(t)\exp(-i\omega t)\,dt .
 $$
 
-> [!definition] Definition §26.2: Band-Limited Signal; Cutoff Frequency
+> [!definition] Definition §20.1: Band-Limited Signal; Cutoff Frequency
 > A signal $f(t)$ is **band limited** if its Fourier transform is zero except on a finite interval, that is, if
 >
 > $$
@@ -297,10 +297,10 @@ $$
 
 ^pf-20-3
 
-*Uses:* [[§20★ Applications of Fourier Series and Integrals#^def-20-1|Def. §20.1]], [[§19★ Complex Methods#^thm-19-1|§19.1]], [[§19★ Complex Methods#^def-19-2|Def. §19.2]], [[§19★ Complex Methods#^def-19-3|Def. §19.3]], [[§15★ Mean Error and Convergence in Mean#^thm-15-6|§15.6]], [[§21 Cauchy–Schwarz and the Induced Norm#^thm-21-1|556 Thm. §21.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
+*Uses:* [[§20★ Applications of Fourier Series and Integrals#^def-20-1|Def. §20.1]], [[§19★ Complex Methods#^thm-19-1|§19.1]], [[§19★ Complex Methods#^def-19-2|Def. §19.2]], [[§19★ Complex Methods#^def-19-3|Def. §19.3]], [[§15★ Mean Error and Convergence in Mean#^thm-15-6|§15.6]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|556 Thm. §23.1]] (Cauchy–Schwarz in the complex $L^2(-\Omega, \Omega)$)
 
 > [!remark]- Connections
-> - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.
+> - The proof is Hilbert-space geometry: $e^{-in\pi\omega/\Omega}/\sqrt{2\Omega}$ is an orthonormal basis of $L^2(-\Omega, \Omega)$ (the Fourier basis of [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]], rescaled), the inverse transform carries it to the functions $\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$, and (3) is the expansion of $f$ in this basis of band-limited signals, with the samples as coordinates.
 
 This is the main result of the sampling theorem: a band-limited function $f(t)$ may be reconstructed from its samples at $t = 0, \pm\pi/\Omega, \dots$, two samples per period $2\pi/\Omega$ of the highest frequency present. It is difficult to determine which functions are actually band limited; however, the process usually works quite well. In practice a finite series must be used,
 
@@ -310,7 +310,7 @@ $$
 
 Since the sampled values all come from the interval $-N\pi/\Omega$ to $N\pi/\Omega$, the series cannot attempt to approximate the function outside that interval.
 
-> [!example] Example §26.3: Sampling a Signal That Is Not Band Limited
+> [!example] Example §20.3: Sampling a Signal That Is Not Band Limited
 > The function
 >
 > $$

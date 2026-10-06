@@ -45,7 +45,7 @@ As in [[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]], divid
 
 ^rem-45-1
 
-> [!theorem] Theorem §52.1: Area Between Curves
+> [!theorem] Theorem §45.1: Area Between Curves
 > The area $A$ of the region bounded by the curves $y = f(x)$, $y = g(x)$ and the lines $x = a$, $x = b$, where $f$ and $g$ are continuous and $f(x) \ge g(x)$ for all $x$ in $[a, b]$, is
 >
 > $$
@@ -75,7 +75,7 @@ As in [[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]], divid
 
 ^rem-45-2
 
-> [!example] Example §52.1: Top Minus Bottom
+> [!example] Example §45.1: Top Minus Bottom
 > **(a)** Find the area of the region bounded above by $y = e^x$, below by $y = x$, and on the sides by $x = 0$ and $x = 1$.
 >
 > The upper boundary is $y = e^x$ and the lower one $y = x$ (indeed $e^x > x$ for all $x$). By [[§45 Areas Between Curves#^thm-45-1|Theorem §45.1]] with $f(x) = e^x$, $g(x) = x$, $a = 0$, $b = 1$,
@@ -98,7 +98,7 @@ As in [[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]], divid
 
 If $f(x) \ge g(x)$ for some values of $x$ but $g(x) \ge f(x)$ for others, split the region $S$ into regions $S_1, S_2, \ldots$ on which one curve stays on top, with areas $A_1, A_2, \ldots$, and *define* the area of $S$ to be $A = A_1 + A_2 + \cdots$.
 
-> [!theorem] Theorem §52.2: Area Between Crossing Curves
+> [!theorem] Theorem §45.2: Area Between Crossing Curves
 > The area between the curves $y = f(x)$ and $y = g(x)$ (continuous) and between $x = a$ and $x = b$ is
 >
 > $$
@@ -124,7 +124,7 @@ If $f(x) \ge g(x)$ for some values of $x$ but $g(x) \ge f(x)$ for others, split 
 
 *Uses:* [[§45 Areas Between Curves#^thm-45-1|§45.1]], [[§40 Properties of the Definite Integral#^thm-40-2|§40.2]]
 
-> [!example] Example §52.2: Sine and Cosine
+> [!example] Example §45.2: Sine and Cosine
 > Find the area of the region bounded by the curves $y = \sin x$, $y = \cos x$, $x = 0$ and $x = \pi/2$.
 >
 > The curves meet where $\sin x = \cos x$, that is, at $x = \pi/4$ (the only solution in $[0, \pi/2]$). On $[0, \pi/4]$, $\cos x \ge \sin x$; on $[\pi/4, \pi/2]$, $\sin x \ge \cos x$. By [[§45 Areas Between Curves#^thm-45-2|Theorem §45.2]],
@@ -147,7 +147,7 @@ If $f(x) \ge g(x)$ for some values of $x$ but $g(x) \ge f(x)$ for others, split 
 
 Some regions are best treated by regarding $x$ as a function of $y$.
 
-> [!theorem] Theorem §52.3: Area Between Curves, Integrating with Respect to y
+> [!theorem] Theorem §45.3: Area Between Curves, Integrating with Respect to y
 > If a region is bounded by curves $x = f(y)$, $x = g(y)$, $y = c$ and $y = d$, where $f$ and $g$ are continuous and $f(y) \ge g(y)$ for $c \le y \le d$, then its area is
 >
 > $$
@@ -167,7 +167,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 
 *Uses:* [[§45 Areas Between Curves#^thm-45-1|§45.1]], [[§39 The Definite Integral#^def-39-1|Def. §39.1]]
 
-> [!example] Example §52.3: A Parabola and a Line
+> [!example] Example §45.3: A Parabola and a Line
 > Find the area enclosed by the line $y = x - 1$ and the parabola $y^2 = 2x + 6$.
 >
 > **Intersections.** From the line, $x = y + 1$; substituting, $y^2 = 2(y + 1) + 6$, that is $y^2 - 2y - 8 = (y - 4)(y + 2) = 0$. So $y = 4$ or $y = -2$, and the points of intersection are $(5, 4)$ and $(-1, -2)$.
@@ -197,7 +197,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 ![[m233-39-1.svg]]
 *[[§45 Areas Between Curves#^ex-45-3|Example §45.3]]. (a) Vertical rectangles run from the lower branch of the parabola up to the upper branch for $x < -1$, but from the line up to the parabola for $x > -1$: two integrals. (b) Every horizontal rectangle runs from the parabola $x_L$ to the line $x_R$, so one integral in $y$ suffices.*
 
-> [!example] Example §52.4: Both Ways
+> [!example] Example §45.4: Both Ways
 > Find the area of the region enclosed by the curves $y = 1/x$, $y = x$ and $y = \frac14 x$, using (a) $x$ and (b) $y$ as the variable of integration.
 >
 > The region has corners at $(0, 0)$, at $(1, 1)$ (where $1/x = x$, $x > 0$) and at $(2, \frac12)$ (where $1/x = \frac14 x$, $x > 0$).
@@ -224,7 +224,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 
 ## Applications
 
-> [!example] Example §52.5: The Distance Between Two Cars
+> [!example] Example §45.5: The Distance Between Two Cars
 > Two cars, A and B, start side by side and move along the same road. Their velocity curves are given as graphs. What does the area between the curves represent? Estimate it with the Midpoint Rule.
 >
 > The area under the velocity curve of A is the distance traveled by car A in the first 16 seconds, and likewise for B ([[§42 Indefinite Integrals and the Net Change Theorem#^cor-42-3|Corollary §42.3]]). So the area between the curves, the difference of these two areas, is the distance between the cars after 16 seconds. Velocities read from the graphs and converted to ft/s ($1$ mi/h $= \frac{5280}{3600}$ ft/s):

@@ -34,7 +34,7 @@ $$
 f(x) = a_0 + \frac12\sum_{n=1}^{\infty} a_n\big(e^{inx} + e^{-inx}\big) - ib_n\big(e^{inx} - e^{-inx}\big) = a_0 + \frac12\sum_{n=1}^{\infty}(a_n - ib_n)e^{inx} + (a_n + ib_n)e^{-inx} .
 $$
 
-> [!definition] Definition §25.2: Complex Fourier Coefficients
+> [!definition] Definition §19.1: Complex Fourier Coefficients
 > The **complex Fourier coefficients** of $f$ are
 >
 > $$
@@ -47,7 +47,7 @@ $$
 
 ^def-19-1
 
-> [!theorem] Theorem §25.1: Complex Form of the Fourier Series
+> [!theorem] Theorem §19.1: Complex Form of the Fourier Series
 > Let $f$ be periodic with period $2\pi$ and sectionally continuous. In terms of the complex coefficients,
 >
 > $$
@@ -94,12 +94,12 @@ $$
 *Uses:* [[§19★ Complex Methods#^def-19-1|Def. §19.1]], [[§16★ Proof of Convergence#^thm-16-4|§16.4]], [[§16★ Proof of Convergence#^cor-16-5|§16.5]], [[§9 Periodic Functions and Fourier Series#^def-9-2|Def. §9.2]], [[§9 Periodic Functions and Fourier Series#^def-9-3|Def. §9.3]], [[§19 Complex Roots of the Characteristic Equation#^def-19-1|331 Def. §19.1]] (the complex exponential and Euler's formula)
 
 > [!remark]- Connections
-> - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§24 Orthonormal Sets and Bases#^rem-24-9|556 Rem. §24.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
+> - The normalized exponentials $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of the complex space $L^2[0, 2\pi]$, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]]: (2) says $c_n\sqrt{2\pi}$ is the inner product of $f$ with the $n$th basis vector, and Parseval's equality reads $\frac{1}{2\pi}\int|f|^2 = \sum|c_n|^2$ ([[§27 Orthonormal Sets and Bases#^rem-27-9|556 Rem. §27.9]]). In quantum mechanics they are the momentum eigenstates of a particle on a ring.
 > - Complex-variables version: [[§42 Definite Integrals of Functions w(t)#^ex-42-4|342 Ex. §42.4]] (orthogonality of the $e^{in\theta}$) and [[§66 Laurent Series#^ex-66-3|342 Ex. §66.3]] (for boundary values of a function analytic in an annulus, this series is the Laurent series [[§66 Laurent Series#^def-66-1|342 Def. §66.1]] on the unit circle).
 
 The complex form is used especially in physics and electrical engineering. Sometimes the function corresponding to a Fourier series can be recognized by use of the complex form.
 
-> [!example] Example §25.1: Summing a Cosine Series with the Logarithm
+> [!example] Example §19.1: Summing a Cosine Series with the Logarithm
 > The series $\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\cos(nx)$ may be considered the real part of
 >
 > $$
@@ -148,7 +148,7 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 ^def-19-2
 
 > [!remark]- Connections
-> - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§26 Boundedness and Continuity#^ex-26-2|556 Ex. §26.2]].
+> - Normalizations differ between books. Powers puts $\frac{1}{2\pi}$ in the transform; Lax's (and 556's) $\mathcal{F}(f)(x) = \int e^{-ix\cdot\xi}f(\xi)\,d\xi$ is $2\pi C$, and many physics texts split the factor as $\frac{1}{\sqrt{2\pi}}$ in both directions. In any normalization, $|C(\lambda)| \le \frac{1}{2\pi}\int|f|$: the transform is a bounded linear map from $L^1$ to $L^\infty$, [[§30 Boundedness and Continuity#^ex-30-2|556 Ex. §30.2]].
 > - For a real rational function $f = p/q$ with $q$ free of real zeros and $\deg q \ge \deg p + 2$, the transform can be computed in closed form by residues: for $\lambda \ne 0$, [[§87 Improper Integrals from Fourier Analysis#^prop-87-1|342 Prop. §87.1]] with $a = |\lambda|$ gives $\int f(x)\cos\lambda x\,dx$ and $\int f(x)\sin\lambda x\,dx$, hence $C(\lambda)$.
 
 > [!definition] Definition §19.3: Complex Fourier Integral
@@ -166,7 +166,7 @@ The Fourier integral of a function $f(x)$ defined on the entire line $-\infty < 
 
 The lecture reached (5) and (6) as Powers reached (7) of §18 ([[§18 Fourier Integral#^rem-18-1|Remark: Why It Works]]): on $-a < x < a$ the complex series of Theorem §19.1 reads $f(x) = \sum_n \frac\pi a C_a\big(\frac{n\pi}a\big)e^{in\pi x/a}$ with $C_a(\lambda) = \frac{1}{2\pi}\int_{-a}^{a} f(x)e^{-i\lambda x}\,dx$, a Riemann sum with spacing $\Delta\lambda = \pi/a$, which suggests (5) as $a \to \infty$. The real theorem makes this precise.
 
-> [!theorem] Theorem §25.2: Complex Form of the Fourier Integral
+> [!theorem] Theorem §19.2: Complex Form of the Fourier Integral
 > Let $f$ satisfy the hypotheses of [[§18 Fourier Integral#^thm-18-1|Theorem §18.1]], with Fourier integral coefficient functions $A(\lambda)$, $B(\lambda)$.
 > 1. The complex coefficient function is
 >
@@ -216,7 +216,7 @@ The lecture reached (5) and (6) as Powers reached (7) of §18 ([[§18 Fourier In
 > [!remark]- Connections
 > - See also: [[§95★ Inverse Laplace Transforms#^thm-95-4|342 Thm. §95.4]] (the Bromwich inversion formula for the Laplace transform, derived from this theorem).
 
-> [!example] Example §25.2: The Rectangular Pulse in Complex Form
+> [!example] Example §19.2: The Rectangular Pulse in Complex Form
 > Find the complex Fourier integral representation of
 >
 > $$
@@ -243,7 +243,7 @@ The lecture reached (5) and (6) as Powers reached (7) of §18 ([[§18 Fourier In
 
 ^ex-19-2
 
-> [!example] Example §25.3: The Gaussian and the Uncertainty Relation
+> [!example] Example §19.3: The Gaussian and the Uncertainty Relation
 > The Gaussian distribution is $f_\sigma(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}}e^{-x^2/(2\sigma^2)}$, with $\int_{-\infty}^{\infty} f_\sigma = 1$.
 >
 > **(a) Its transform is again a Gaussian.** Complete the square in the exponent:
@@ -294,7 +294,7 @@ The lecture reached (5) and (6) as Powers reached (7) of §18 ([[§18 Fourier In
 
 The Fourier integral or transform may be used to solve differential equations on the interval $-\infty < x < \infty$, in much the same way that the Laplace transform is used: it turns derivatives in $x$ into multiplication by $i\lambda$.
 
-> [!example] Example §25.4: Solving the Heat Equation by Fourier Transform
+> [!example] Example §19.4: Solving the Heat Equation by Fourier Transform
 > With Powers' normalization, write $\hat f(\xi) = \frac{1}{2\pi}\int_{-\infty}^{\infty} f(x)e^{-i\xi x}\,dx$ (that is, $\hat f = C$) and $\check g(x) = \int_{-\infty}^{\infty} g(\xi)e^{ix\xi}\,d\xi$. Use the transform to solve
 >
 > $$

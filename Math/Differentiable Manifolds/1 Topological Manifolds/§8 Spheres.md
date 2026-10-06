@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: examples — The sphere, the first manifold of the course, in one place: $S^2$ by hemisphere charts, every $S^n$ by the same argument, and two overlapping charts whose transition map is already smooth.*
 
-The sphere through the course: a topological manifold with hemisphere charts in *this section*; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§13 Homogeneous Spaces#^ex-13-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|the Riemann sphere]]; its geometric tangent spaces in [[§23 The Geometric Tangent Space#^ex-23-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§24 Transversality#^ex-24-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§37 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§38 SU(2) → SO(3)꞉ The Double Cover#^prop-38-5|the unit quaternions as SU(2)]].
+The sphere through the course: a topological manifold with hemisphere charts in *this section*; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|the Riemann sphere]]; its geometric tangent spaces in [[§25 The Geometric Tangent Space#^ex-25-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§26 Transversality#^ex-26-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§39 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§40 The Unit Quaternions and SU(2)#^prop-40-5|the unit quaternions as SU(2)]].
 
 > [!example] Example §8.1: $S^2$ is a Topological $2$-Manifold
 > Let $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ with the subspace topology.
@@ -63,7 +63,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 *Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 > [!remark]- Connections
-> - The hemisphere charts as an atlas: [[§16 Differentiable Structures#^def-16-6|Def. §16.6]]; the circle case with its smooth atlases is [[§16 Differentiable Structures#^ex-16-2|Ex. §16.2]].
+> - The hemisphere charts as an atlas: [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]; the circle case with its smooth atlases is [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]].
 
 > [!remark] Remark
 > This is the argument of [[§8 Spheres#^ex-8-1|Example §8.1]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.
@@ -77,7 +77,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > \psi \circ \varphi^{-1}(x, y) = \psi\big(x, y, \sqrt{1 - x^2 - y^2}\big) = \big(y, \sqrt{1 - x^2 - y^2}\big).
 > $$
 >
-> Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of Definition [[§16 Differentiable Structures#^def-16-4|§16.4]].
+> Note that this map is not merely continuous but $C^\infty$ on its (open) domain, since $1 - x^2 - y^2 > 0$ there. This is no accident, and it is the point of Definition [[§17 Differentiable Structures#^def-17-4|§17.4]].
 
 ^ex-8-2
 

@@ -14,6 +14,7 @@ tags: [logic-and-proofs, hub]
 - [[§22 Partitions and Equivalence Relations#^def-22-1|Definition §22.1: Partition]]
 - [[§22 Partitions and Equivalence Relations#^prop-22-2|Proposition §22.2: A Partition Gives a Relation]]
 - [[§22 Partitions and Equivalence Relations#^thm-22-3|Theorem §22.3: Classes Are Equal or Disjoint]]
+- [[§22 Partitions and Equivalence Relations#^def-22-4|Definition §22.4: Equivalence Relation]]
 - [[§22 Partitions and Equivalence Relations#^def-22-5|Definition §22.5: Equivalence Class]]
 - [[§22 Partitions and Equivalence Relations#^def-22-6|Definition §22.6: Quotient Set]]
 

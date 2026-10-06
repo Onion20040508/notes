@@ -10,7 +10,7 @@ tags: [chapter, calculus]
 *Stewart, Chapter 4.*
 
 **Builds on:** [[· 1 Functions and Models|1 Functions and Models]] (1), [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (15), [[· 3 Differentiation Rules|3 Differentiation Rules]] (19), [[· 9 Differential Equations|9 Differential Equations]] (1), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (1)
-**Used by:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (2), [[· 3 Differentiation Rules|3 Differentiation Rules]] (3), [[· 5 Integrals|5 Integrals]] (4), [[· 6 Applications of Integration|6 Applications of Integration]] (1), [[· 7 Techniques of Integration|7 Techniques of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (3), [[· 9 Differential Equations|9 Differential Equations]] (10), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (5), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (4), [[· 13 Vector Functions|13 Vector Functions]] (2), [[· 14 Partial Derivatives|14 Partial Derivatives]] (5), [[· 15 Multiple Integrals|15 Multiple Integrals]] (1), [[· 17 Background from the Appendices|17 Background from the Appendices]] (4)
+**Used by:** [[· 2 Limits and Derivatives|2 Limits and Derivatives]] (2), [[· 3 Differentiation Rules|3 Differentiation Rules]] (5), [[· 5 Integrals|5 Integrals]] (4), [[· 6 Applications of Integration|6 Applications of Integration]] (1), [[· 7 Techniques of Integration|7 Techniques of Integration]] (1), [[· 8 Further Applications of Integration|8 Further Applications of Integration]] (3), [[· 9 Differential Equations|9 Differential Equations]] (10), [[· 10 Parametric Equations and Polar Coordinates|10 Parametric Equations and Polar Coordinates]] (5), [[· 11 Sequences, Series, and Power Series|11 Sequences, Series, and Power Series]] (4), [[· 13 Vector Functions|13 Vector Functions]] (2), [[· 14 Partial Derivatives|14 Partial Derivatives]] (5), [[· 15 Multiple Integrals|15 Multiple Integrals]] (1), [[· 17 Background from the Appendices|17 Background from the Appendices]] (4)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (18), [[Measure Theory]] (3), [[Topology]] (1), [[Multivariable Analysis]] (2)
 
 ## Sections
@@ -23,15 +23,16 @@ tags: [chapter, calculus]
 - [[§34 Optimization Problems]] — Stewart 4.7
 - [[§35 Newton's Method]] — Stewart 4.8
 - [[§36 Antiderivatives]] — Stewart 4.9
+- [[§37 The Cubic x³ − 3x² + 1]] — Stewart 4.9
 
 ## Central results
-- [[Fermat's Theorem on Local Extrema]] (§25.2)
-- [[Rolle's Theorem]] (§26.1)
-- [[L'Hospital's Rule]] (§28.2)
+- [[Fermat's Theorem on Local Extrema]] (§28.2)
+- [[Rolle's Theorem]] (§29.1)
+- [[L'Hospital's Rule]] (§31.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§28 Maximum and Minimum Values#^thm-28-1|Theorem §28.1: The Extreme Value Theorem]]: 211 later results
-- [[Fermat's Theorem on Local Extrema|Theorem §28.2: Fermat's Theorem]]: 211 later results
-- [[Rolle's Theorem|Theorem §29.1: Rolle's Theorem]]: 211 later results
-- [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Theorem §29.2: The Mean Value Theorem]]: 211 later results
+- [[§28 Maximum and Minimum Values#^thm-28-1|Theorem §28.1: The Extreme Value Theorem]]: 224 later results
+- [[Fermat's Theorem on Local Extrema|Theorem §28.2: Fermat's Theorem]]: 223 later results
+- [[Rolle's Theorem|Theorem §29.1: Rolle's Theorem]]: 223 later results
+- [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|Theorem §29.2: The Mean Value Theorem]]: 223 later results

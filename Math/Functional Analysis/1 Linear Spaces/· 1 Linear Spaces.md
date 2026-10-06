@@ -15,8 +15,8 @@ Functional analysis is, in short, infinite-dimensional linear algebra. In finite
 
 ## Sections
 - [[§1 Linear Spaces]]
-- [[§2 Linear Maps, Convexity, and Linear Functionals]]
-- [[§3 ℝⁿ and ℓ²]]
+- [[§3 Linear Maps, Convexity, and Linear Functionals]]
+- [[§4 ℝⁿ and ℓ²]]
 
 ## Central results
 - [[Every Subspace Has a Complement]] (§1.8)
@@ -24,7 +24,7 @@ Functional analysis is, in short, infinite-dimensional linear algebra. In finite
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Linear Spaces#^prop-1-6|Proposition §1.6: X/Y is a Linear Space]]: 7 later results
+- [[§2 Quotient Spaces and Complements#^prop-2-1|Proposition §2.1: X/Y is a Linear Space]]: 7 later results
 - [[§1 Linear Spaces#^prop-1-4|Proposition §1.4: The Smallest Subspace Exists]]: 6 later results
 - [[§1 Linear Spaces#^prop-1-5|Proposition §1.5: Span as Finite Linear Combinations]]: 5 later results
-- [[§2 Linear Maps, Convexity, and Linear Functionals#^lem-2-1|Lemma §2.1: Inverse of an Isomorphism]]: 5 later results
+- [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|Lemma §3.1: Inverse of an Isomorphism]]: 5 later results

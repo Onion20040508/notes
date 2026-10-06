@@ -8,14 +8,14 @@ tags: [measure-theory, hub]
 ![[§13 Approximation and Continuity of Measure#^thm-13-3]]
 
 ## Treated in
-- [[§13 Approximation and Continuity of Measure#^thm-13-3|Theorem §13.3: Approximation by Closed and F_σ Sets]], in [[§12 Borel Sets and Measure Spaces]]
+- [[§13 Approximation and Continuity of Measure#^thm-13-3|Theorem §13.3: Approximation by Closed and F_σ Sets]], in [[§13 Approximation and Continuity of Measure]]
 
 ## Its proof uses
 - [[§5 Topology of ℝⁿ#^def-5-3|Definition §5.3: Closed Set]]
 - [[§10 Lebesgue Outer Measure#^prop-10-1|Proposition §10.1: Basic Properties of Outer Measure]]
 - [[§11 Lebesgue Measurable Sets#^thm-11-1|Theorem §11.1: Closure Properties of ℳ]]
-- [[§13 Approximation and Continuity of Measure#^def-13-1|Definition §13.1: G_δ and F_σ Sets]]
 - [[§13 Approximation and Continuity of Measure#^thm-13-1|Theorem §13.1: Approximation by Open and G_δ Sets]]
+- [[§13 Approximation and Continuity of Measure#^def-13-2|Definition §13.2: F_σ Sets]]
 
 ## Used in (Measure Theory)
 - [[§13 Approximation and Continuity of Measure#^thm-13-6|Theorem §13.6: Approximation by Bounded Closed Sets and Finite Unions of Rectangles]]

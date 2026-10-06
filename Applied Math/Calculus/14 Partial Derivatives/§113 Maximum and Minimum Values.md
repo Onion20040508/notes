@@ -15,7 +15,7 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 
 ## Local Maximum and Minimum Values
 
-> [!definition] Definition §134.1: Local Maximum and Minimum
+> [!definition] Definition §113.1: Local Maximum and Minimum
 > A function of two variables has a **local maximum** at $(a, b)$ if $f(x, y) \le f(a, b)$ when $(x, y)$ is near $(a, b)$, that is, for all points $(x, y)$ in some disk with center $(a, b)$. The number $f(a, b)$ is then a **local maximum value**. If $f(x, y) \ge f(a, b)$ when $(x, y)$ is near $(a, b)$, then $f$ has a **local minimum** at $(a, b)$ and $f(a, b)$ is a **local minimum value**.
 >
 > If the inequalities hold for *all* points $(x, y)$ in the domain of $f$, then $f$ has an **absolute maximum** (or **absolute minimum**) at $(a, b)$.
@@ -24,7 +24,7 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 
 ^def-113-1
 
-> [!theorem] Theorem §134.1: Fermat's Theorem for Two Variables
+> [!theorem] Theorem §113.1: Fermat's Theorem for Two Variables
 > If $f$ has a local maximum or minimum at $(a, b)$ and the first-order partial derivatives of $f$ exist there, then $f_x(a, b) = 0$ and $f_y(a, b) = 0$. In gradient notation: $\nabla f(a, b) = \mathbf{0}$.
 >
 > *Stewart: 14.7, Theorem 2*
@@ -43,14 +43,14 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 
 Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane ([[§109 Tangent Planes and Linear Approximations#^thm-109-1|Theorem §109.1]]) gives $z = z_0$: if the graph of $f$ has a tangent plane at a local maximum or minimum, the tangent plane is horizontal.
 
-> [!definition] Definition §134.2: Critical Point
+> [!definition] Definition §113.2: Critical Point
 > A point $(a, b)$ is a **critical point** (or **stationary point**) of $f$ if $f_x(a, b) = 0$ and $f_y(a, b) = 0$, or if one of these partial derivatives does not exist.
 >
 > *Stewart: 14.7 (text)*
 
 ^def-113-2
 
-> [!definition] Definition §134.4: Saddle Point
+> [!definition] Definition §113.3: Saddle Point
 > A critical point $(a, b)$ with $f_x(a, b) = f_y(a, b) = 0$ at which $f$ has neither a local maximum nor a local minimum is a **saddle point** of $f$.
 >
 > *Stewart: 14.7 (text)*
@@ -59,7 +59,7 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 [[§113 Maximum and Minimum Values#^thm-113-1|Theorem §113.1]] says that if $f$ has a local maximum or minimum at $(a, b)$, then $(a, b)$ is a critical point of $f$. As in one variable, the converse fails: not every critical point gives a maximum or minimum. The name *saddle point* comes from the shape of the graph near the origin in [[§113 Maximum and Minimum Values#^ex-113-1|Example §113.1]](b). In general the graph near a saddle point need not resemble a saddle, but it crosses its tangent plane there. (A mountain pass is a saddle: for a hiker crossing it the pass is the lowest point of the route, for one walking along the ridge the highest.)
 
-> [!example] Example §134.1: A Minimum and a Saddle
+> [!example] Example §113.1: A Minimum and a Saddle
 > **(a)** Let $f(x, y) = x^2 + y^2 - 2x - 6y + 14$. Then
 >
 > $$
@@ -87,7 +87,7 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 ## The Second Derivatives Test
 
-> [!theorem] Theorem §134.2: Second Derivatives Test
+> [!theorem] Theorem §113.2: Second Derivatives Test
 > Suppose the second partial derivatives of $f$ are continuous on a disk with center $(a, b)$, and suppose that $f_x(a, b) = 0$ and $f_y(a, b) = 0$ (so $(a, b)$ is a critical point of $f$). Let
 >
 > $$
@@ -150,7 +150,7 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 ^rem-113-1
 
-> [!example] Example §135.1: Classifying Three Critical Points
+> [!example] Example §113.2: Classifying Three Critical Points
 > Find the local maximum and minimum values and saddle points of $f(x, y) = x^4 + y^4 - 4xy + 1$.
 >
 > **Critical points.** $f_x = 4x^3 - 4y$ and $f_y = 4y^3 - 4x$ exist everywhere, so the critical points are the solutions of
@@ -185,7 +185,7 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 When the critical-point equations cannot be solved exactly, they are solved numerically. In Stewart's Example 14.7.4, $f(x, y) = 10x^2 y - 5x^2 - 4y^2 - x^4 - 2y^4$ has $f_x = 2x(10y - 5 - 2x^2)$ and $f_y = 10x^2 - 8y - 8y^3$. The case $x = 0$ gives $-4y(1 + y^2) = 0$, so the critical point $(0, 0)$. The case $x^2 = 5y - 2.5$ gives $4y^3 - 21y + 12.5 = 0$, with roots $y \approx -2.5452$ (no real $x$), $0.6468$ and $1.8984$. So there are five critical points: local maxima at $(0, 0)$ (with $f = 0$) and at $(\pm 2.64, 1.90)$ (with $f \approx 8.50$), and saddle points at $(\pm 0.86, 0.65)$. Since $f \to -\infty$ far from the origin (the dominant terms are $-x^4 - 2y^4$), the highest points of the graph are $(\pm 2.64, 1.90, 8.50)$.
 
-> [!example] Example §135.2: Critical Points from the Exams
+> [!example] Example §113.3: Critical Points from the Exams
 > **(a)** Let $f(x, y) = x^2 y - y^2 - 2y - x^2$. Find all the critical points of $f$ and classify them as local maxima, local minima or saddle points.
 >
 > $$
@@ -223,7 +223,7 @@ When the critical-point equations cannot be solved exactly, they are solved nume
 
 ^rem-113-2
 
-> [!example] Example §135.3: Shortest Distances
+> [!example] Example §113.4: Shortest Distances
 > **(a)** Find the shortest distance from the point $(1, 0, -2)$ to the plane $x + 2y + z = 4$.
 >
 > The distance from $(x, y, z)$ to $(1, 0, -2)$ is $d = \sqrt{(x - 1)^2 + y^2 + (z + 2)^2}$. On the plane, $z = 4 - x - 2y$, so $d = \sqrt{(x - 1)^2 + y^2 + (6 - x - 2y)^2}$. We minimize the simpler expression
@@ -269,7 +269,7 @@ Since $x = 0$ or $y = 0$ gives $V = 0$, a maximum needs $12 - 2xy - x^2 = 0 = 12
 
 ## Absolute Maximum and Minimum Values
 
-> [!definition] Definition §135.1: Absolute Extreme Values
+> [!definition] Definition §113.4: Absolute Extreme Values
 > Let $(a, b)$ be a point in the domain $D$ of a function $f$ of two variables. Then $f(a, b)$ is the
 > - **absolute maximum** value of $f$ on $D$ if $f(a, b) \ge f(x, y)$ for all $(x, y)$ in $D$;
 > - **absolute minimum** value of $f$ on $D$ if $f(a, b) \le f(x, y)$ for all $(x, y)$ in $D$.
@@ -278,21 +278,21 @@ Since $x = 0$ or $y = 0$ gives $V = 0$, a maximum needs $12 - 2xy - x^2 = 0 = 12
 
 ^def-113-4
 
-> [!definition] Definition §135.2: Boundary Point
+> [!definition] Definition §113.5: Boundary Point
 > A **boundary point** of a set $D$ in $\mathbb{R}^2$ is a point $(a, b)$ such that every disk with center $(a, b)$ contains points in $D$ and also points not in $D$.
 >
 > *Stewart: 14.7, Definition 7 and text*
 
 ^def-113-5
 
-> [!definition] Definition §135.3: Closed Set
+> [!definition] Definition §113.6: Closed Set
 > A **closed set** in $\mathbb{R}^2$ is one that contains all its boundary points.
 >
 > *Stewart: 14.7, Definition 7 and text*
 
 ^def-113-6
 
-> [!definition] Definition §135.5: Bounded Set
+> [!definition] Definition §113.7: Bounded Set
 > A **bounded set** in $\mathbb{R}^2$ is one that is contained within some disk.
 >
 > *Stewart: 14.7, Definition 7 and text*
@@ -301,7 +301,7 @@ Since $x = 0$ or $y = 0$ gives $V = 0$, a maximum needs $12 - 2xy - x^2 = 0 = 12
 
 For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all points on or inside the circle $x^2 + y^2 = 1$, is a closed set: it contains all of its boundary points, the points of the circle. If even one point of the boundary circle were omitted, the set would not be closed. A closed set is the two-dimensional analog of a closed interval $[a, b]$, and a bounded set is "finite in extent".
 
-> [!theorem] Theorem §135.1: Extreme Value Theorem for Functions of Two Variables
+> [!theorem] Theorem §113.3: Extreme Value Theorem for Functions of Two Variables
 > If $f$ is continuous on a closed, bounded set $D$ in $\mathbb{R}^2$, then $f$ attains an absolute maximum value $f(x_1, y_1)$ and an absolute minimum value $f(x_2, y_2)$ at some points $(x_1, y_1)$ and $(x_2, y_2)$ in $D$.
 >
 > *Stewart: 14.7, Theorem 8*
@@ -328,7 +328,7 @@ By [[§113 Maximum and Minimum Values#^thm-113-1|Theorem §113.1]], if $f$ has a
 
 ^rem-113-3
 
-> [!example] Example §135.4: Absolute Extrema on a Rectangle
+> [!example] Example §113.5: Absolute Extrema on a Rectangle
 > Find the absolute maximum and minimum values of $f(x, y) = x^2 - 2xy + 2y$ on the rectangle $D = \{(x, y) \mid 0 \le x \le 3,\ 0 \le y \le 2\}$.
 >
 > $f$ is a polynomial, hence continuous on the closed, bounded rectangle $D$, so [[§113 Maximum and Minimum Values#^thm-113-3|Theorem §113.3]] guarantees both an absolute maximum and an absolute minimum.

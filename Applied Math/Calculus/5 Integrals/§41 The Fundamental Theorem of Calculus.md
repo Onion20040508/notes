@@ -34,7 +34,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 ^rem-41-1
 
-> [!theorem] Theorem §47.1: The Fundamental Theorem of Calculus, Part 1
+> [!theorem] Theorem §41.1: The Fundamental Theorem of Calculus, Part 1
 > If $f$ is continuous on $[a, b]$, then the function $g$ defined by
 >
 > $$
@@ -111,7 +111,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]. The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
 > - Lebesgue version, with no continuity at all: $g' = f$ [[§16 Limits and Positive Parts of Measurable Functions#^def-16-2|almost everywhere]], [[§30 Differentiating the Integral#^thm-30-7|551 Thm. §30.7]].
 
-> [!example] Example §47.1: Differentiating Integrals with Variable Upper Limits
+> [!example] Example §41.1: Differentiating Integrals with Variable Upper Limits
 > **(a)** Find the derivative of $g(x) = \displaystyle\int_0^x \sqrt{1 + t^2}\,dt$.
 >
 > $f(t) = \sqrt{1 + t^2}$ is continuous, so FTC1 gives at once
@@ -139,7 +139,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 ^ex-41-1
 
-> [!example] Example §47.2: The Fresnel Function
+> [!example] Example §41.2: The Fresnel Function
 > Functions defined by an integral, $g(x) = \int_a^x f(t)\,dt$, are common in physics, chemistry and statistics. The **Fresnel function**
 >
 > $$
@@ -160,7 +160,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 ## The Fundamental Theorem of Calculus, Part 2
 
-> [!theorem] Theorem §47.2: The Fundamental Theorem of Calculus, Part 2
+> [!theorem] Theorem §41.2: The Fundamental Theorem of Calculus, Part 2
 > If $f$ is continuous on $[a, b]$, then
 >
 > $$
@@ -220,7 +220,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the constant $C$ of the most general antiderivative ([[§36 Antiderivatives#^thm-36-1|Theorem §36.1]]) cancels in $F(b) - F(a)$.
 
-> [!example] Example §47.3: Integrals in One Line
+> [!example] Example §41.3: Integrals in One Line
 > **(a)** Evaluate $\displaystyle\int_1^3 e^x\,dx$. The function $e^x$ is continuous everywhere and $F(x) = e^x$ is an antiderivative (rather than $e^x + 7$ or $e^x + C$), so
 >
 > $$
@@ -241,7 +241,7 @@ FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the const
 
 ^ex-41-3
 
-> [!example] Example §47.4: A Logarithm and the Area Under a Cosine
+> [!example] Example §41.4: A Logarithm and the Area Under a Cosine
 > **(a)** Evaluate $\displaystyle\int_3^6 \frac{dx}{x}$.
 >
 > This is another way of writing $\int_3^6 \frac1x\,dx$. An antiderivative of $1/x$ is $\ln|x|$ ([[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-5|Theorem §22.5]]), and on $3 \le x \le 6$ we may write $\ln x$:
@@ -264,7 +264,7 @@ FTC2 allows *any* antiderivative $F$ of $f$, so one uses the simplest: the const
 
 ^ex-41-4
 
-> [!example] Example §47.5: When FTC2 Does Not Apply
+> [!example] Example §41.5: When FTC2 Does Not Apply
 > What is wrong with the following calculation?
 >
 > $$

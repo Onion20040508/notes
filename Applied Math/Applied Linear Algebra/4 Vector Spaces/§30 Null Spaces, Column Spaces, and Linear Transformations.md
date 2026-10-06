@@ -15,7 +15,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 
 ## The Null Space of a Matrix
 
-> [!definition] Definition §36.1: Null Space
+> [!definition] Definition §30.1: Null Space
 > The **null space** of an $m \times n$ matrix $A$, written $\operatorname{Nul} A$, is the set of all solutions of the homogeneous equation $A\mathbf{x} = \mathbf{0}$:
 >
 > $$
@@ -28,7 +28,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 
 ^def-30-1
 
-> [!theorem] Theorem §36.1: The Null Space Is a Subspace
+> [!theorem] Theorem §30.1: The Null Space Is a Subspace
 > The null space of an $m \times n$ matrix $A$ is a subspace of $\mathbb{R}^n$. Equivalently, the set of all solutions of a system $A\mathbf{x} = \mathbf{0}$ of $m$ homogeneous linear equations in $n$ unknowns is a subspace of $\mathbb{R}^n$.
 >
 > *Lay: Theorem 2 (4.2)*
@@ -51,7 +51,7 @@ Subspaces of $\mathbb{R}^n$ usually arise in one of two ways: as the set of all 
 > [!remark]- Connections
 > - Rigorous treatment: [[§8 Null Spaces and Ranges#^ladr-3-11|LADR 3.11]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]] (the null space of any linear map is a subspace), and homogeneous systems with more unknowns than equations have nonzero solutions, [[§8 Null Spaces and Ranges#^ladr-3-26|LADR 3.26]].
 
-> [!example] Example §36.1: Testing Membership; Subspaces Given by Equations
+> [!example] Example §30.1: Testing Membership; Subspaces Given by Equations
 > **(a)** Let $A = \begin{bmatrix} 1 & -3 & -2 \\ -5 & 9 & 1 \end{bmatrix}$ and $\mathbf{u} = (5, 3, -2)$. Is $\mathbf{u}$ in $\operatorname{Nul} A$? Simply compute:
 >
 > $$
@@ -85,7 +85,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 ^rem-30-1
 
-> [!example] Example §36.2: A Spanning Set for a Null Space
+> [!example] Example §30.2: A Spanning Set for a Null Space
 > Find a spanning set for the null space of
 >
 > $$
@@ -110,7 +110,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 ^ex-30-2
 
-> [!theorem] Proposition §36.2: The Spanning Set Produced by the Method
+> [!theorem] Proposition §30.2: The Spanning Set Produced by the Method
 > When $\operatorname{Nul} A$ contains nonzero vectors, the spanning set produced by the method of [[§30 Null Spaces, Column Spaces, and Linear Transformations#^rem-30-1|Remark: Method — A Spanning Set for Nul A]]
 > 1. is automatically linearly independent, and
 > 2. has as many vectors as there are free variables in $A\mathbf{x} = \mathbf{0}$.
@@ -128,7 +128,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 ## The Column Space of a Matrix
 
-> [!definition] Definition §36.2: Column Space
+> [!definition] Definition §30.2: Column Space
 > The **column space** of an $m \times n$ matrix $A$, written $\operatorname{Col} A$, is the set of all linear combinations of the columns of $A$. If $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$, then
 >
 > $$
@@ -147,7 +147,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 ^def-30-2
 
-> [!theorem] Theorem §37.1: The Column Space Is a Subspace
+> [!theorem] Theorem §30.3: The Column Space Is a Subspace
 > The column space of an $m \times n$ matrix $A$ is a subspace of $\mathbb{R}^m$.
 >
 > *Lay: Theorem 3 (4.2)*
@@ -161,7 +161,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 *Uses:* [[§29 Vector Spaces and Subspaces#^thm-29-4|§29.4]]
 
-> [!theorem] Proposition §37.2: When Col A Is All of ℝᵐ
+> [!theorem] Proposition §30.4: When Col A Is All of ℝᵐ
 > The column space of an $m \times n$ matrix $A$ is all of $\mathbb{R}^m$ if and only if the equation $A\mathbf{x} = \mathbf{b}$ has a solution for each $\mathbf{b}$ in $\mathbb{R}^m$.
 >
 > *Lay: 4.2 (boxed restatement of Theorem 4 of 1.4)*
@@ -175,7 +175,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 *Uses:* [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-2|Def. §30.2]], [[§5 The Matrix Equation Ax = b#^thm-5-3|§5.3]]
 
-> [!example] Example §37.1: A Subspace as a Column Space
+> [!example] Example §30.3: A Subspace as a Column Space
 > Find a matrix $A$ such that $W = \operatorname{Col} A$, where $W = \{(6a - b,\ a + b,\ -7a) : a, b \in \mathbb{R}\}$.
 >
 > First write $W$ as a set of linear combinations:
@@ -194,7 +194,7 @@ There is no obvious relation between the vectors in $\operatorname{Nul} A$ and t
 
 The course checklist lists the row space with $\operatorname{Nul} A$ and $\operatorname{Col} A$; the 6th edition introduces it here, the 5th in 4.6 ([[§34 Rank|§34]]).
 
-> [!definition] Definition §36.3: Row Space
+> [!definition] Definition §30.3: Row Space
 > If $A$ is an $m \times n$ matrix, each row of $A$ has $n$ entries and can be identified with a vector in $\mathbb{R}^n$. The set of all linear combinations of the row vectors is the **row space** of $A$, written $\operatorname{Row} A$. Since the rows of $A$ are the columns of $A^T$,
 >
 > $$
@@ -210,7 +210,7 @@ The course checklist lists the row space with $\operatorname{Nul} A$ and $\opera
 
 ## The Contrast Between Nul A and Col A
 
-> [!example] Example §37.2: Nul A and Col A Live in Different Spaces
+> [!example] Example §30.4: Nul A and Col A Live in Different Spaces
 > Let
 >
 > $$
@@ -265,7 +265,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 ## Kernel and Range of a Linear Transformation
 
-> [!definition] Definition §36.4: Linear Transformation
+> [!definition] Definition §30.4: Linear Transformation
 > A **linear transformation** $T$ from a vector space $V$ into a vector space $W$ is a rule that assigns to each vector $\mathbf{x}$ in $V$ a unique vector $T(\mathbf{x})$ in $W$, such that
 >
 > (i) $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$ for all $\mathbf{u}$, $\mathbf{v}$ in $V$, and
@@ -278,7 +278,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 ^def-30-4
 
-> [!definition] Definition §37.1: Kernel
+> [!definition] Definition §30.5: Kernel
 > Let $T: V \to W$ be a linear transformation. The **kernel** (or **null space**) of $T$ is the set of all $\mathbf{u}$ in $V$ such that $T(\mathbf{u}) = \mathbf{0}$, the zero vector of $W$.
 >
 > *Lay: 4.2 (text)*
@@ -292,7 +292,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 ^def-30-6
 
-> [!theorem] Theorem §37.3: Kernel and Range Are Subspaces
+> [!theorem] Theorem §30.5: Kernel and Range Are Subspaces
 > If $T: V \to W$ is a linear transformation, then the kernel of $T$ is a subspace of $V$ and the range of $T$ is a subspace of $W$.
 >
 > *Lay: 4.2 (text); Exercise 30*
@@ -316,7 +316,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 In applications a subspace usually arises as the kernel or the range of a suitable linear transformation. For instance, the solutions of a homogeneous linear differential equation form the kernel of a linear transformation built from derivatives.
 
-> [!example] Example §37.3: Differentiation (Calculus Required)
+> [!example] Example §30.5: Differentiation (Calculus Required)
 > **(a)** Let $V$ be the space of real-valued functions $f$ on $[a, b]$ that are differentiable with continuous derivative on $[a, b]$, let $W = C[a, b]$ be the space of continuous functions on $[a, b]$, and let $D: V \to W$ send $f$ to $f'$. The rules $D(f + g) = D(f) + D(g)$ and $D(cf) = cD(f)$ of calculus say that $D$ is a linear transformation. Its kernel is the set of constant functions on $[a, b]$ (a function with $f' = 0$ on an interval is constant, by the Mean Value Theorem, [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-3|Calc Thm. §29.3]]), and its range is all of $W$ (every continuous $g$ is the derivative of $f(t) = \int_a^t g(s)\,ds$, by the Fundamental Theorem of Calculus, [[§41 The Fundamental Theorem of Calculus#^thm-41-1|Calc Thm. §41.1]]). Lay states these two facts ("it can be shown"); the parenthetical reasons are the standard calculus theorems.
 >
 > **(b)** The differential equation

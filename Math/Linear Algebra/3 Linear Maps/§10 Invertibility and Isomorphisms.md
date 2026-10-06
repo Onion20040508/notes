@@ -120,8 +120,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - For square matrices: a one-sided inverse is automatically two-sided. Fails in infinite dimensions (shift operators).
 > - In a group a one-sided inverse is automatically two-sided, [[§2 First Consequences of the Axioms#^prop-2-6|493 Prop. §2.6]]; here the reason is dimension instead, since L(V) is not a group.
-> - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§24 Orthonormal Sets and Bases#^ex-24-2|556 Ex. §24.2]].
-> - Used in 591 to define the unitary group by one equation: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|591 Lemma §22.3]], proved there with determinants.
+> - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|556 Ex. §28.1]].
+> - Used in 591 to define the unitary group by one equation: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|591 Lemma §23.3]], proved there with determinants.
 > - Matrix version: [[§16 Characterizations of Invertible Matrices#^cor-16-2|235 Cor. §16.2]] (a one-sided inverse of a square matrix is an inverse).
 
 > [!definition] Definition 3.69: Isomorphism, isomorphic
@@ -180,7 +180,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - How $T$ acts in coordinates: [[§10 Invertibility and Isomorphisms#^ladr-3-76|Linear maps act like matrix multiplication]].
-> - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§21 The Differential of a Map Between Vector Spaces#^def-21-1|591 Def. §21.1]].
+> - A basis read as the isomorphism v ↦ M(v) is what 591 calls a linear coordinate system: [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|591 Def. §22.1]].
 > - Computational version: [[§32 Coordinate Systems#^def-32-1|235 Def. §32.1]] (the coordinate vector [x]_B) and [[§32 Coordinate Systems#^def-32-2|235 Def. §32.2]] (the coordinate mapping), an isomorphism onto ℝⁿ by [[§32 Coordinate Systems#^thm-32-3|235 Thm. §32.3]].
 
 > [!example] Example 3.74: Matrix of a vector (p. 88)
@@ -325,7 +325,7 @@ tags: [linear-algebra]
 > - Physics: with orthonormal bases $C$ is unitary and this is the familiar $A=U^\dagger BU$ change of representation.
 > - Bilinear-form version (different rule, $C^tBC$): [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-7|Change-of-basis formula (LADR 9.7)]].
 > - Similarity is conjugation by an invertible matrix; for invertible matrices, similar means conjugate in the general linear group: [[§33 Conjugacy Classes#^def-33-3|493 Def. §33.3]].
-> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§28 The Differential in Coordinates#^cor-28-4|591 Cor. §28.4]]); it gives the transition maps of the tangent bundle, [[§41 The Tangent Bundle#^prop-41-2|591 Prop. §41.2]].
+> - On a manifold the change-of-basis matrix between coordinate bases is the Jacobian of the transition map ([[§30 The Differential in Coordinates#^cor-30-4|591 Cor. §30.4]]); it gives the transition maps of the tangent bundle, [[§44 The Tangent Bundle#^prop-44-2|591 Prop. §44.2]].
 > - Computational version: [[§43 Eigenvectors and Linear Transformations#^thm-43-2|235 Thm. §43.2]], [T]_B = P⁻¹AP, so the matrices of one operator are similar ([[§41 The Characteristic Equation#^def-41-3|235 Def. §41.3]]).
 
 %% ex:3.84-diagram %%

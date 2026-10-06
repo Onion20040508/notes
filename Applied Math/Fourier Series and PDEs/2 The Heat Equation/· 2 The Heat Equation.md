@@ -15,6 +15,7 @@ tags: [chapter, fourier-series-and-pdes]
 
 ## Sections
 - [[§22 Derivation and Boundary Conditions]] — Powers 2.1
+- [[§23 Initial and Boundary Conditions; Diffusion]] — Powers 2.1
 - [[§24 Steady-State Temperatures]] — Powers 2.2
 - [[§25 Example꞉ Fixed End Temperatures]] — Powers 2.3
 - [[§26 Example꞉ Insulated Bar]] — Powers 2.4
@@ -26,12 +27,14 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§32 Semi-Infinite Rod]] — Powers 2.10
 - [[§33 Infinite Rod]] — Powers 2.11
 - [[§34★ The Error Function]] — Powers 2.12 ★
+- [[§35 Rods with Convection, Sources and Variable Coefficients]] — Powers 2.12
+- [[§36 Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian]] — Powers 2.12
 
 ## Central results
-- [[Solution of the Fixed-End Heat Problem]] (§19.5)
-- [[Sturm–Liouville Orthogonality Theorem]] (§23.2)
-- [[Convergence of Eigenfunction Expansions]] (§24.2)
-- [[Heat Kernel Solution of the Infinite Rod]] (§27.3)
+- [[Solution of the Fixed-End Heat Problem]] (§25.5)
+- [[Sturm–Liouville Orthogonality Theorem]] (§29.2)
+- [[Convergence of Eigenfunction Expansions]] (§30.2)
+- [[Heat Kernel Solution of the Infinite Rod]] (§33.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

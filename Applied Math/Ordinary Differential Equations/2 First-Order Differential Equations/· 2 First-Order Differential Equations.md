@@ -11,7 +11,7 @@ tags: [chapter, ordinary-differential-equations]
 
 **Builds on:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (8), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (1)
 **Used by:** [[· 1 Introduction to Differential Equations|1 Introduction to Differential Equations]] (1), [[· 3 Second-Order Linear Differential Equations|3 Second-Order Linear Differential Equations]] (2), [[· 7 Systems of First-Order Linear Equations|7 Systems of First-Order Linear Equations]] (3)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (4), [[Calculus]] (25), [[Functional Analysis]] (2), [[Topology]] (1), [[Fourier Series and PDEs]] (4)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (11), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (4), [[Calculus]] (26), [[Functional Analysis]] (2), [[Topology]] (1), [[Fourier Series and PDEs]] (4)
 
 ## Sections
 - [[§5 Linear Differential Equations; Method of Integrating Factors]] — BDP 2.1
@@ -19,16 +19,19 @@ tags: [chapter, ordinary-differential-equations]
 - [[§7 Modeling with First-Order Differential Equations]] — BDP 2.3
 - [[§8 Differences Between Linear and Nonlinear Differential Equations]] — BDP 2.4
 - [[§9 Autonomous Differential Equations and Population Dynamics]] — BDP 2.5
+- [[§10 Critical Thresholds and Bifurcations]] — BDP 2.5
 - [[§11 Exact Differential Equations and Integrating Factors]] — BDP 2.6
+- [[§12 Integrating Factors for Nonexact Equations]] — BDP 2.6
 - [[§13 Numerical Approximations꞉ Euler's Method]] — BDP 2.7
 - [[§14 The Existence and Uniqueness Theorem]] — BDP 2.8
 - [[§15★ First-Order Difference Equations]] — BDP 2.9 ★
+- [[§16 The Problems ty′ + 2y = 4t², 2(y − 1)y′ = 3x² + 4x + 2, y′ = −6e³ˣy² and y′ = y²]] — BDP 2.9
 
 ## Central results
-- [[Integrating Factor Solution Formula]] (§4.2)
-- [[Solution of Separable Equations]] (§5.1)
-- [[Test for Exact Equations]] (§9.2)
-- [[Picard–Lindelöf Theorem]] (§11.8)
+- [[Integrating Factor Solution Formula]] (§5.2)
+- [[Solution of Separable Equations]] (§6.1)
+- [[Test for Exact Equations]] (§11.2)
+- [[Picard–Lindelöf Theorem]] (§14.8)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

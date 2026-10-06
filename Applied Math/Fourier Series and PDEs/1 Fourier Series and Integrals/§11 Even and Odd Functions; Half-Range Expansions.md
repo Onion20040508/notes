@@ -17,7 +17,7 @@ Symmetry halves the work: even functions have only cosine terms and odd function
 
 The cosine is symmetric about the vertical axis and the sine is antisymmetric. These properties are useful in evaluating the coefficients.
 
-> [!definition] Definition §15.1: Even and Odd Functions
+> [!definition] Definition §11.1: Even and Odd Functions
 > A function $g$ is **even** if $g(-x) = g(x)$; a function $h$ is **odd** if $h(-x) = -h(x)$. A function must be defined on a symmetric interval, say $-c < x < c$ (where $c$ might be $\infty$), to qualify as even or odd.
 >
 > An even function is symmetric about the vertical axis, an odd function symmetric in the origin. For example, $\sin kx$, $x$, $x^3$ and every other odd power of $x$ are odd on $-\infty < x < \infty$; $\cos kx$, $|x|$, $1 = x^0$, $x^2$ and every other even power of $x$ are even.
@@ -27,9 +27,9 @@ The cosine is symmetric about the vertical axis and the sine is antisymmetric. T
 ^def-11-1
 
 > [!remark]- Connections
-> - See also: [[§1 Four Ways to Represent a Function#^def-1-7|Calc Def. §1.7]] (the same definition) and [[§22 Projection and Orthogonal Decomposition#^prop-22-7|556 Prop. §22.7]] (in $L^2[-1, 1]$ the even and the odd functions are orthogonal complements and every $f$ is uniquely $f_e + f_o$; the cosine and sine parts of a Fourier series are the series of $f_e$ and $f_o$).
+> - See also: [[§1 Four Ways to Represent a Function#^def-1-7|Calc Def. §1.7]] (the same definition) and [[§25 Projection and Orthogonal Decomposition#^prop-25-7|556 Prop. §25.7]] (in $L^2[-1, 1]$ the even and the odd functions are orthogonal complements and every $f$ is uniquely $f_e + f_o$; the cosine and sine parts of a Fourier series are the series of $f_e$ and $f_o$).
 
-> [!theorem] Proposition §15.1: Even and Odd Parts; Products
+> [!theorem] Proposition §11.1: Even and Odd Parts; Products
 > Most functions are neither even nor odd, but any function defined on a symmetric interval is the sum of an even and an odd function:
 >
 > $$
@@ -55,7 +55,7 @@ The cosine is symmetric about the vertical axis and the sine is antisymmetric. T
 
 *Uses:* [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-1|Def. §11.1]]
 
-> [!theorem] Theorem §15.2: Integrals of Even and Odd Functions
+> [!theorem] Theorem §11.2: Integrals of Even and Odd Functions
 > Let $g$ be an even function defined on a symmetric interval $-a < x < a$. Then
 >
 > $$
@@ -96,7 +96,7 @@ $$
 
 all the sine coefficients are zero. Since the cosine is even, so is $g(x)\cos(n\pi x/a)$, and $a_n = \frac1a\int_{-a}^{a} g(x)\cos\frac{n\pi x}{a}dx = \frac2a\int_0^a g(x)\cos\frac{n\pi x}{a}dx$: the cosine coefficients can be computed from an integral over $0$ to $a$. Parallel results hold for odd functions.
 
-> [!theorem] Theorem §15.3: Fourier Series of Even and Odd Functions
+> [!theorem] Theorem §11.3: Fourier Series of Even and Odd Functions
 > If $g$ is even on $-a < x < a$ ($g(-x) = g(x)$), then
 >
 > $$
@@ -126,7 +126,7 @@ all the sine coefficients are zero. Since the cosine is even, so is $g(x)\cos(n\
 
 Very frequently, a function given on an interval $0 < x < a$ must be represented by a Fourier series. There are infinitely many ways to do this, but two are especially simple and useful: extend the given function to $-a < x < a$ so that the extension is odd, or so that it is even.
 
-> [!definition] Definition §15.2: Odd and Even Extensions
+> [!definition] Definition §11.2: Odd and Even Extensions
 > Let $f$ be given for $0 < x < a$. The **odd extension** of $f$ is
 >
 > $$
@@ -181,14 +181,14 @@ If the series converge, they represent periodic functions of period $2a$: the co
 > To expand a function $f$ given on $0 < x < a$:
 > 1. Decide which extension is wanted. For a boundary value problem the boundary conditions decide: a sine series vanishes at $x = 0$ and $x = a$ (ends held at temperature zero, a string with fixed ends), a cosine series has zero derivative there (insulated ends); see [[§25 Example꞉ Fixed End Temperatures|§25]] and [[§26 Example꞉ Insulated Bar|§26]]. Otherwise either will do.
 > 2. Sketch the odd or even periodic extension, of period $2a$, over a few periods; note where it jumps (the odd extension jumps at $x = 0$ unless $f(0+) = 0$).
-> 3. Compute the coefficients from the formulas of Definition §11.4, which use $f$ only on $(0, a)$; there is no need to write down the extension.
+> 3. Compute the coefficients from the formulas of Definitions §11.3–§11.4, which use $f$ only on $(0, a)$; there is no need to write down the extension.
 > 4. Read off where the series converges to $f$ from the sketch ([[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1]]).
 
 ^rem-11-1
 
 ## Examples
 
-> [!example] Example §15.1: The Function x on (−1, 1) and on (0, 1)
+> [!example] Example §11.1: The Function x on (−1, 1) and on (0, 1)
 > **(a) Period 2.** Let $f(x) = x$ for $-1 < x < 1$. Its periodic extension of period $2$ is a sawtooth (as in [[§9 Periodic Functions and Fourier Series#^ex-9-1|Example §9.1]], with period $2$). Since $f$ is odd, $a_0 = a_n = 0$, and with $a = 1$
 >
 > $$
@@ -222,7 +222,7 @@ If the series converge, they represent periodic functions of period $2a$: the co
 ![[m341-7-1.svg]]
 *Example §7.3: the odd periodic extension $\bar f_o$ (top) and the even periodic extension $\bar f_e$ (bottom) of $f(x) = x$, $0 < x < 1$ (heavy). The odd one is a sawtooth with jumps at the odd integers, where the sine series converges to the midpoint $0$ (dots); the even one is a continuous triangle wave with corners. The sine series represents the top function, the cosine series the bottom one, and both equal $x$ on $0 < x < 1$.*
 
-> [!example] Example §15.2: Odd and Even Extensions of x²
+> [!example] Example §11.2: Odd and Even Extensions of x²
 > Let $f(x) = x^2$, $0 < x < 1$. Find the Fourier series of its odd and even extensions.
 >
 > **Odd extension** $f_o(x) = x^2$ for $0 < x < 1$, $-x^2$ for $-1 < x < 0$; its periodic extension has jumps at the odd integers (from $1$ to $-1$). Here $a_0 = a_n = 0$ and, integrating by parts twice,
@@ -245,7 +245,7 @@ If the series converge, they represent periodic functions of period $2a$: the co
 
 ^ex-11-2
 
-> [!example] Example §15.3: Odd Periodic Extension of a Triangle
+> [!example] Example §11.3: Odd Periodic Extension of a Triangle
 > A function is given on $0 < x < 2$ by
 >
 > $$

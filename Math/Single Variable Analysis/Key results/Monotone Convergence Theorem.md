@@ -20,7 +20,7 @@ tags: [real-analysis, hub]
 - [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|Theorem §20.7: Monotone Convergence Theorem (MCT)]]
 
 ## Used in (Functional Analysis)
-- [[§16 Minkowski's Inequality and the Spaces ℓᵖ#^thm-16-5|Theorem §16.5: ℓ^p is a Banach Space]]
+- [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|Theorem §18.5: ℓ^p is a Banach Space]]
 
 ## Connections
 - Equivalent to the [[Completeness Axiom]] over an ordered field. The tool for recursively defined sequences ([[§10 Monotone Sequences and Cauchy Sequences#^ex-10-2|Example §10.2]]) and for series with nonnegative terms ([[§14 Series#^thm-14-7|Theorem §14.7]]).

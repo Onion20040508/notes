@@ -20,7 +20,7 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 
 ## Statement of the Theorem
 
-> [!theorem] Theorem §20.1: Implicit Function Theorem
+> [!theorem] Theorem §15.1: Implicit Function Theorem
 > Let $F : \mathbb{R}^2 \to \mathbb{R}$ satisfy the following conditions:
 > - (i) $F(x_0, y_0) = 0$
 > - (ii) $F_y(x_0, y_0) \neq 0$
@@ -224,7 +224,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 ^rem-15-2
 
-> [!example] Example §23.1: Circle
+> [!example] Example §15.1: Circle
 > Let $F(x, y) = x^2 + y^2 - 1$. Then $F_x = 2x$ and $F_y = 2y$.
 >
 > At $(x_0, y_0) = (0, 1)$: $F(0, 1) = 0$, $F_y(0, 1) = 2 \neq 0$.
@@ -239,7 +239,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 ^ex-15-1
 
-> [!example] Example §23.2: Where IFT Fails
+> [!example] Example §15.2: Where IFT Fails
 > Consider $F(x, y) = x^2 + y^2 - 1$ at the point $(1, 0)$.
 >
 > Here $F_y(1, 0) = 0$, so the [[Implicit Function Theorem|Implicit Function Theorem]] does not apply.
@@ -265,7 +265,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 The Implicit Function Theorem generalizes to functions of more variables.
 
-> [!theorem] Theorem §22.1: Implicit Function Theorem — General Case
+> [!theorem] Theorem §15.2: Implicit Function Theorem — General Case
 > Let $F(x_1, x_2, \ldots, x_n, y)$ satisfy:
 > - (i) $F(x_1^{(0)}, x_2^{(0)}, \ldots, x_n^{(0)}, y^{(0)}) = 0$
 > - (ii) $F_y(x_1^{(0)}, x_2^{(0)}, \ldots, x_n^{(0)}, y^{(0)}) \neq 0$

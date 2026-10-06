@@ -35,11 +35,11 @@ tags: [real-analysis, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-7|Theorem §26.7: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Used in (Differentiable Manifolds)
-- [[§27 Coordinate Derivations and the Basis Theorem#^lem-27-2|Lemma §27.2: Hadamard's Lemma]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|Lemma §29.2: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
 - [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
-- [[§22 Projection and Orthogonal Decomposition#^prop-22-8|Proposition §22.8: A Sharp Integral Inequality]]
+- [[§25 Projection and Orthogonal Decomposition#^prop-25-8|Proposition §25.8: A Sharp Integral Inequality]]
 
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).

@@ -48,7 +48,7 @@ $$
 \phi(0) = 0, \qquad \phi'(a) = 0 . \qquad (11)
 $$
 
-> [!theorem] Theorem §33.1: Eigenvalues for a Fixed and an Insulated End
+> [!theorem] Theorem §27.1: Eigenvalues for a Fixed and an Insulated End
 > The eigenvalue problem
 >
 > $$
@@ -102,7 +102,7 @@ $$
 
 A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n\pi x/a)$, not the functions here.
 
-> [!theorem] Proposition §33.2: Orthogonality of the Eigenfunctions
+> [!theorem] Proposition §27.2: Orthogonality of the Eigenfunctions
 > With $\lambda_n = (2n - 1)\pi/2a$,
 >
 > $$
@@ -124,7 +124,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 
 ^pf-27-2
 
-> [!theorem] Theorem §33.3: Expansion in the Quarter-Wave Sines
+> [!theorem] Theorem §27.3: Expansion in the Quarter-Wave Sines
 > If $g$ is sectionally smooth on $0 < x < a$ and
 >
 > $$
@@ -175,7 +175,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 > [!remark]- Connections
 > - Proposition §27.2 and formula (18) say that $\{\sin\lambda_nx\}$ is an orthogonal set in the inner product $\langle f, g\rangle = \int_0^af g\,dx$ and that $b_n = \langle g, \phi_n\rangle/\langle\phi_n, \phi_n\rangle$ is the coordinate of $g$ along $\phi_n$: [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]]. Theorem §27.3 adds that these coordinates reconstruct $g$, a completeness statement; the general version for Sturm–Liouville eigenfunctions is [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|Theorem §30.2]].
 
-> [!theorem] Theorem §33.4: Solution of the Fixed–Insulated Problem
+> [!theorem] Theorem §27.4: Solution of the Fixed–Insulated Problem
 > If $f$ is sectionally smooth, the solution of (1)–(4) is
 >
 > $$
@@ -195,7 +195,7 @@ A routine Fourier sine series on $0 < x < a$ would involve the functions $\sin(n
 
 *Uses:* [[§27 Example꞉ Different Boundary Conditions#^thm-27-1|§27.1]], [[§27 Example꞉ Different Boundary Conditions#^thm-27-3|§27.3]], [[§25 Example꞉ Fixed End Temperatures#^thm-25-4|§25.4]], [[§25 Example꞉ Fixed End Temperatures#^thm-25-5|§25.5]]
 
-> [!example] Example §33.1: Initial Temperature Constant
+> [!example] Example §27.1: Initial Temperature Constant
 > Find the solution of (1)–(4) with the initial condition $u(x, 0) = T_1$, $0 < x < a$.
 >
 > Then $g(x) = T_1 - T_0$ on $0 < x < a$, and by (18), using $\cos(\lambda_na) = \cos\big((2n - 1)\frac\pi2\big) = 0$,
@@ -236,7 +236,7 @@ After three major examples the method used to solve linear boundary value–init
 
 ## Course Examples
 
-> [!example] Example §33.2: A Prescribed Flux at the Insulated End
+> [!example] Example §27.2: A Prescribed Flux at the Insulated End
 > Solve $u_{xx} = \frac1ku_t$, $0 < x < a$, $t > 0$, with $u(0, t) = T$, $u_x(a, t) = A$, $u(x, 0) = f(x)$.
 >
 > **Step 1, steady state.** $v'' = 0$, $v(0) = T$, $v'(a) = A$: $v(x) = Ax + T$.
@@ -257,7 +257,7 @@ After three major examples the method used to solve linear boundary value–init
 
 ^ex-27-2
 
-> [!example] Example §33.3: A Heat Source with Fixed and Insulated Ends
+> [!example] Example §27.3: A Heat Source with Fixed and Insulated Ends
 > Solve
 >
 > $$

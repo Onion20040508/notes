@@ -17,7 +17,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ## Endpoint, Midpoint and Trapezoidal Approximations
 
-> [!definition] Definition §66.1: Left and Right Endpoint Approximations
+> [!definition] Definition §57.1: Left and Right Endpoint Approximations
 > Taking $x_i^{\ast}$ in $\int_a^b f(x)\,dx \approx \sum_{i=1}^n f(x_i^{\ast})\,\Delta x$ to be the left or right endpoint of $[x_{i-1}, x_i]$ gives the **left endpoint approximation** $L_n$ and the **right endpoint approximation** $R_n$:
 >
 > $$
@@ -31,7 +31,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 > [!remark]- Connections
 > - These are Riemann sums ([[§39 The Definite Integral#^def-39-3|Def. §39.3]]); in 451 the integral is the limit of such sums as the mesh tends to $0$, [[§32 The Definition of the Riemann Integral#^def-32-8|451 Def. §32.8]], so for an integrable $f$ every rule of this section converges to $\int_a^b f$ as $n \to \infty$. The error bounds below add a *rate*.
 
-> [!definition] Definition §66.2: The Midpoint Rule
+> [!definition] Definition §57.2: The Midpoint Rule
 > $$
 > \int_a^b f(x)\,dx \approx M_n = \Delta x\,\big[f(\bar x_1) + f(\bar x_2) + \cdots + f(\bar x_n)\big] ,
 > $$
@@ -42,7 +42,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ^def-57-2
 
-> [!definition] Definition §66.3: The Trapezoidal Rule
+> [!definition] Definition §57.3: The Trapezoidal Rule
 > $$
 > \int_a^b f(x)\,dx \approx T_n = \frac{\Delta x}{2}\big[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)\big] .
 > $$
@@ -65,7 +65,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ^rem-57-1
 
-> [!example] Example §66.1: Trapezoidal and Midpoint Rules for ln 2
+> [!example] Example §57.1: Trapezoidal and Midpoint Rules for ln 2
 > Use (a) the Trapezoidal Rule and (b) the Midpoint Rule with $n = 5$ to approximate $\displaystyle\int_1^2 \frac1x\,dx$.
 >
 > Here $\Delta x = (2 - 1)/5 = 0.2$.
@@ -90,7 +90,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ## Error Bounds for the Midpoint and Trapezoidal Rules
 
-> [!definition] Definition §66.4: Error of an Approximation
+> [!definition] Definition §57.4: Error of an Approximation
 > The **error** of an approximation is the amount that must be added to it to make it exact:
 >
 > $$
@@ -126,7 +126,7 @@ In [[§57 Approximate Integration#^ex-57-1|Example §57.1]], $E_T \approx -0.002
 ![[m233-50-1.svg]]
 *One subinterval of a concave-down graph. The Midpoint Rule's rectangle has the same area as the tangent trapezoid $ABCD$, which overestimates by the red area. The Trapezoidal Rule's trapezoid $AQRD$ underestimates by the blue area, which is larger. Both errors are governed by how much the graph bends, that is, by $f''$.*
 
-> [!theorem] Theorem §66.1: Error Bounds for the Trapezoidal and Midpoint Rules
+> [!theorem] Theorem §57.1: Error Bounds for the Trapezoidal and Midpoint Rules
 > Suppose $|f''(x)| \le K$ for $a \le x \le b$. If $E_T$ and $E_M$ are the errors in the Trapezoidal and Midpoint Rules, then
 >
 > $$
@@ -141,7 +141,7 @@ In [[§57 Approximate Integration#^ex-57-1|Example §57.1]], $E_T \approx -0.002
 
 $K$ can be any number at least as large as all the values of $|f''(x)|$, but smaller $K$ gives better bounds. The bound is a worst case: the actual error can be much smaller.
 
-> [!example] Example §66.2: Choosing n for a Given Accuracy
+> [!example] Example §57.2: Choosing n for a Given Accuracy
 > **(a)** Bound the error of $T_5$ in [[§57 Approximate Integration#^ex-57-1|Example §57.1]]. **(b)** How large should $n$ be to guarantee that $T_n$ and $M_n$ approximate $\int_1^2 \frac1x\,dx$ to within $0.0001$?
 >
 > **(a)** For $f(x) = 1/x$, $f'(x) = -1/x^2$ and $f''(x) = 2/x^3$. On $1 \le x \le 2$, $1/x \le 1$, so $|f''(x)| = 2/x^3 \le 2/1^3 = 2$. With $K = 2$, $a = 1$, $b = 2$, $n = 5$,
@@ -168,7 +168,7 @@ $K$ can be any number at least as large as all the values of $|f''(x)|$, but sma
 
 Simpson's Rule approximates the graph by parabolas instead of line segments. Now $n$ must be **even**, and on each pair of consecutive subintervals $[x_{i}, x_{i+2}]$ the curve is replaced by the parabola through the three points $P_i$, $P_{i+1}$, $P_{i+2}$ on the graph, where $P_i = (x_i, y_i)$ with $y_i = f(x_i)$. Write $h = \Delta x$.
 
-> [!theorem] Lemma §66.2: Area Under a Parabola Through Three Points
+> [!theorem] Lemma §57.2: Area Under a Parabola Through Three Points
 > If the parabola $y = Ax^2 + Bx + C$ passes through $(-h, y_0)$, $(0, y_1)$ and $(h, y_2)$, then
 >
 > $$
@@ -200,7 +200,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 
 *Uses:* [[§43 The Substitution Rule#^thm-43-4|§43.4]] (integrals of even and odd functions)
 
-> [!definition] Definition §66.5: Simpson's Rule
+> [!definition] Definition §57.5: Simpson's Rule
 > For $n$ even,
 >
 > $$
@@ -227,7 +227,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 ![[m233-50-2.svg]]
 *Simpson's Rule with $n = 4$: on $[x_0, x_2]$ and on $[x_2, x_4]$ the graph (blue) is replaced by the parabola (red) through the three points above $x_0, x_1, x_2$ and $x_2, x_3, x_4$. The shaded area under the parabolas is $S_4$. Even for this wavy graph the parabolas follow it closely; for a smooth, slowly varying $f$ they are practically indistinguishable from it.*
 
-> [!theorem] Proposition §66.3: Simpson's Rule as a Weighted Average
+> [!theorem] Proposition §57.3: Simpson's Rule as a Weighted Average
 > $$
 > S_{2n} = \tfrac13 T_n + \tfrac23 M_n .
 > $$
@@ -266,7 +266,7 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 
 *Stewart omits the proof; no note in the vault proves it. The $n^4$ means that doubling $n$ divides the error by about $16$. Since $f^{(4)} = 0$ for a cubic, Simpson's Rule is exact for polynomials of degree at most $3$ (Exercise 48).*
 
-> [!example] Example §66.3: Simpson's Rule for ln 2
+> [!example] Example §57.3: Simpson's Rule for ln 2
 > **(a)** Use Simpson's Rule with $n = 10$ to approximate $\displaystyle\int_1^2 \frac1x\,dx$. **(b)** How large should $n$ be to guarantee accuracy within $0.0001$?
 >
 > **(a)** $f(x) = 1/x$, $n = 10$, $\Delta x = 0.1$:

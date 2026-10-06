@@ -15,7 +15,7 @@ In differentiation it is always clear which rule to apply; in integration it is 
 
 ## Guidelines for Integration
 
-> [!theorem] Theorem §64.1: Table of Integration Formulas
+> [!theorem] Theorem §55.1: Table of Integration Formulas
 > Constants of integration are omitted.
 >
 > | | | | |
@@ -87,7 +87,7 @@ In differentiation it is always clear which rule to apply; in integration it is 
 
 Stewart only indicates the method of attack in these examples. Here each is carried out to the end.
 
-> [!example] Example §64.1: Simplify First
+> [!example] Example §55.1: Simplify First
 > Find $\displaystyle\int \frac{\tan^3 x}{\cos^3 x}\,dx$.
 >
 > **Step 1:** $\dfrac{\tan^3 x}{\cos^3 x} = \tan^3 x \sec^3 x$. This is $\int \tan^m x \sec^n x\,dx$ with $m$ odd ([[§52 Trigonometric Integrals#^rem-52-2|§52, step 2]]): save $\sec x \tan x$, write $\tan^2 x = \sec^2 x - 1$ and put $u = \sec x$:
@@ -108,7 +108,7 @@ Stewart only indicates the method of attack in these examples. Here each is carr
 
 ^ex-55-1
 
-> [!example] Example §64.2: A Substitution Leading to Parts
+> [!example] Example §55.2: A Substitution Leading to Parts
 > Find $\displaystyle\int \sin\sqrt{x}\,dx$.
 >
 > By step 3(d), substitute $u = \sqrt{x}$. Then $x = u^2$, $dx = 2u\,du$, and $\int \sin\sqrt{x}\,dx = 2\int u \sin u\,du$. This is a power of $u$ times $\sin u$, so integrate by parts as in [[§51 Integration by Parts#^ex-51-1|Example §51.1]]: $\int u\sin u\,du = -u\cos u + \sin u + C$. Hence
@@ -121,7 +121,7 @@ Stewart only indicates the method of attack in these examples. Here each is carr
 
 ^ex-55-2
 
-> [!example] Example §64.3: A Rational Function
+> [!example] Example §55.3: A Rational Function
 > Find $\displaystyle\int \frac{x^5 + 1}{x^3 - 3x^2 - 10x}\,dx$.
 >
 > No simplification or substitution is apparent (steps 1 and 2 fail). The integrand is rational, so use partial fractions (step 3(b)), starting with division:
@@ -176,7 +176,7 @@ Stewart only indicates the method of attack in these examples. Here each is carr
 
 ## Can We Integrate All Continuous Functions?
 
-> [!definition] Definition §64.1: Elementary Function
+> [!definition] Definition §55.1: Elementary Function
 > The **elementary functions** are the polynomials, rational functions, power functions ($x^a$), exponential functions ($b^x$), logarithmic functions, trigonometric and inverse trigonometric functions, hyperbolic and inverse hyperbolic functions, and all functions obtained from these by the five operations of addition, subtraction, multiplication, division and composition.
 >
 > For instance, $f(x) = \sqrt{\dfrac{x^2 - 1}{x^3 + 2x - 1}} + \ln(\cosh x) - x e^{\sin 2x}$ is elementary.
@@ -187,7 +187,7 @@ Stewart only indicates the method of attack in these examples. Here each is carr
 
 The derivative of an elementary function is elementary, by the differentiation rules. Integration is different.
 
-> [!theorem] Theorem §64.2: Antiderivatives That Are Not Elementary
+> [!theorem] Theorem §55.2: Antiderivatives That Are Not Elementary
 > The continuous function $f(x) = e^{x^2}$ has an antiderivative, $F(x) = \int_0^x e^{t^2}\,dt$, but $F$ is not an elementary function. The same holds for
 >
 > $$

@@ -134,7 +134,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 
 ^pf-39-6
 
-*Uses:* [[§25 Actions#^def-25-3|Def. §25.3]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
+*Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 > [!remark]- Connections
 > - Part (3) recorded again as item 4 of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]].

@@ -12,9 +12,9 @@ tags: [complex-variables, hub]
 
 ## Its proof uses
 - [[§9 Arguments of Products and Quotients#^thm-9-1|Theorem §9.1: The Argument of a Product]]
+- [[§43 Contours#^prop-43-5|Proposition §43.5: Chain Rule Along an Arc]]
 - [[§43 Contours#^def-43-7|Definition §43.7: Smooth Arc]]
 - [[§43 Contours#^def-43-8|Definition §43.8: Unit Tangent]]
-- [[§43 Contours#^prop-43-5|Proposition §43.5: Chain Rule Along an Arc]]
 - [[§112★ Preservation of Angles and Scale Factors#^def-112-1|Definition §112.1: Angle of Rotation]]
 
 ## Used in (Complex Variables)

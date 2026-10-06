@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§5 Quotient Maps]] · ↑ [[· 1 Topological Manifolds]] · [[§7 The Regular Value Theorem]] →
 
-*Thread: quotients — When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]). Complex projective space, the first manifold built this way, is worked out at the end of the chapter ([[§9 Complex Projective Space|§9]]); the question returns for orbit spaces ([[§12 Group Actions and Orbit Spaces|§12]]) and coset spaces ([[§13 Homogeneous Spaces|§13]]).*
+*Thread: quotients — When is a quotient Hausdorff? For open relations, exactly when the graph is closed (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]). Complex projective space, the first manifold built this way, is worked out at the end of the chapter ([[§9 Complex Projective Space|§9]]); the question returns for orbit spaces ([[§13 Group Actions and Orbit Spaces|§13]]) and coset spaces ([[§14 Homogeneous Spaces|§14]]).*
 
 > [!definition] Definition §6.1: Graph of a Relation
 > The **graph** of a relation $\sim$ on a set $X$ is
@@ -50,13 +50,13 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-6-1
 
-*Uses:* [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
+*Uses:* [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 ![[m591-3-6.svg]]
 *The direction ($\Leftarrow$): a point $(x,y)$ off the closed graph $\Gamma$ has a box $U \times V$ missing $\Gamma$, and then $\pi(U)$ and $\pi(V)$ separate $[x]$ from $[y]$.*
 
 > [!remark]- Connections
-> - Applied to orbit spaces: [[§12 Group Actions and Orbit Spaces#^cor-12-4|§12.4]], [[§12 Group Actions and Orbit Spaces#^thm-12-5|§12.5]]; the failure mode is [[§12 Group Actions and Orbit Spaces#^ex-12-6|Ex. §12.6]].
+> - Applied to orbit spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]]; the failure mode is [[§13 Group Actions and Orbit Spaces#^ex-13-6|Ex. §13.6]].
 > - Hausdorff spaces in MATH 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]]; for the special case of a quotient onto a Hausdorff space, compare [[§13 Quotient Topology#^cor-13-4|590 §13.4]](2).
 
 > [!remark] Remark: No Hausdorff Hypothesis on $X$
@@ -74,7 +74,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-6-2
 
-*Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]]
+*Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark] Remark: This Is the Tool
 > Uribe (emphasized): “this is going to be our tool for figuring out whether a quotient space is $T_2$.” The workflow it suggests, and which the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
@@ -93,14 +93,14 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-6-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§5 Quotient Maps#^lem-5-6|§5.6]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§5 Quotient Maps#^lem-5-6|§5.6]]
 
 > [!remark]- Connections
-> - Reused for coset spaces: [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-5|§14.5]] (second countability of $G/H$), and hence for the Grassmannians, [[§14 The Topology of G∕H and Real Grassmannians#^cor-14-8|§14.8]].
+> - Reused for coset spaces: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] (second countability of $G/H$), and hence for the Grassmannians, [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]].
 
-**Comparison with Lee.** Lee's Appendix A has no counterpart to Theorems [[§6 Open Quotients#^thm-6-1|§6.1]] and [[§6 Open Quotients#^thm-6-3|§6.3]]: in his book the Hausdorff property and second countability of $\mathbb{RP}^n$ and $\mathbb{CP}^n$ are checked example by example (Example 1.5, Problem 1-9). The course proves one criterion for all open quotients at once and then reuses it for orbit spaces ([[§12 Group Actions and Orbit Spaces|§12]]) and coset spaces ([[§13 Homogeneous Spaces|§13]]) — which is what makes the quotient thread a thread.
+**Comparison with Lee.** Lee's Appendix A has no counterpart to Theorems [[§6 Open Quotients#^thm-6-1|§6.1]] and [[§6 Open Quotients#^thm-6-3|§6.3]]: in his book the Hausdorff property and second countability of $\mathbb{RP}^n$ and $\mathbb{CP}^n$ are checked example by example (Example 1.5, Problem 1-9). The course proves one criterion for all open quotients at once and then reuses it for orbit spaces ([[§13 Group Actions and Orbit Spaces|§13]]) and coset spaces ([[§14 Homogeneous Spaces|§14]]) — which is what makes the quotient thread a thread.
 
-> [!example] Example §6.1: The Line with Two Origins — via the Criterion
+> [!example] Example §10.1: The Line with Two Origins — via the Criterion
 > Let $X = (\mathbb{R} \times \{1\}) \cup (\mathbb{R} \times \{2\}) \subseteq \mathbb{R}^2$ with the subspace topology (two disjoint copies of $\mathbb{R}$), and $(x,1) \sim (x,2)$ for $x \neq 0$, as in [[§4 Quotient Spaces and Open Maps#^ex-4-1|Example §4.1]]. The graph
 >
 > $$
@@ -111,7 +111,7 @@ tags: [differentiable-manifolds, math591]
 >
 > The relation is open: the saturation of an open $U \subseteq X$ is $U \cup \sigma(U \setminus (\{0\} \times \{1,2\}))$, where $\sigma(x,i) = (x, 3-i)$ swaps the two copies—a homeomorphism of $X$—so the saturation is a union of two open sets. [[§6 Open Quotients#^thm-6-1|Theorem §6.1]] therefore applies and gives: $X/{\sim}$ is *not* Hausdorff. This recovers [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]] from the criterion rather than by separating the origins by hand.
 
-^ex-6-1
+^ex-10-1
 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§12 Metric Topology#^lem-12-8|590 §12.8]]
 

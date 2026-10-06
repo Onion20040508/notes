@@ -18,7 +18,7 @@ tags: [chapter, measure-theory]
 - [[§4 Uncountability]]
 
 ## Central results
-- [[Cantor–Bernstein Theorem]] (§2.1)
+- [[Cantor–Bernstein Theorem]] (§2.2)
 - [[Countable Union of Countable Sets is Countable]] (§3.1)
 - [[Cantor's Theorem]] (§4.1)
 

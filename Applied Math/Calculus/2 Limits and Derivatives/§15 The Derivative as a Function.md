@@ -39,7 +39,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^rem-15-1
 
-> [!example] Example §18.1: A Polynomial
+> [!example] Example §15.1: A Polynomial
 > If $f(x) = x^3 - x$, find a formula for $f'(x)$.
 >
 > $$
@@ -56,7 +56,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^ex-15-1
 
-> [!example] Example §18.2: The Square Root
+> [!example] Example §15.2: The Square Root
 > If $f(x) = \sqrt{x}$, find the derivative of $f$ and state the domain of $f'$.
 >
 > Rationalize the numerator:
@@ -74,7 +74,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^ex-15-2
 
-> [!example] Example §18.3: A Rational Function
+> [!example] Example §15.3: A Rational Function
 > Find $f'$ if $f(x) = \dfrac{1 - x}{2 + x}$.
 >
 > Combine the fractions with $\dfrac{a/b - c/d}{e} = \dfrac{ad - bc}{bd} \cdot \dfrac1e$:
@@ -129,7 +129,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^def-15-3
 
-> [!example] Example §18.4: The Absolute Value
+> [!example] Example §15.4: The Absolute Value
 > Where is $f(x) = |x|$ differentiable?
 >
 > **For $x > 0$.** Then $|x| = x$, and for $h$ small enough $x + h > 0$, so $|x + h| = x + h$. Therefore
@@ -168,7 +168,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^ex-15-4
 
-> [!theorem] Theorem §18.1: Differentiable Implies Continuous
+> [!theorem] Theorem §15.1: Differentiable Implies Continuous
 > If $f$ is differentiable at $a$, then $f$ is continuous at $a$.
 >
 > *Stewart: 2.8, Theorem 4*
@@ -272,7 +272,7 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 $f''(x)$ is the slope of the curve $y = f'(x)$ at $(x, f'(x))$: the rate of change of the slope of the original curve, a rate of change of a rate of change. The second derivative's information about the shape of a graph is the subject of [[§30 What Derivatives Tell Us About the Shape of a Graph|§30]] ([[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-3|Theorem §30.3]], the Concavity Test).
 
-> [!example] Example §18.5: Higher Derivatives of a Cubic
+> [!example] Example §15.5: Higher Derivatives of a Cubic
 > If $f(x) = x^3 - x$, find and interpret $f''(x)$, and find $f'''(x)$ and $f^{(4)}(x)$.
 >
 > By [[§15 The Derivative as a Function#^ex-15-1|Example §15.1]], $f'(x) = 3x^2 - 1$. So

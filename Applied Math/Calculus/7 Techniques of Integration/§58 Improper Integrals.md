@@ -23,7 +23,7 @@ $$
 
 $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say that the infinite region $S$ has area $1$, and write $\int_1^\infty \frac{1}{x^2}\,dx = \lim_{t \to \infty} \int_1^t \frac{1}{x^2}\,dx = 1$.
 
-> [!definition] Definition §67.1: Improper Integral of Type 1
+> [!definition] Definition §58.1: Improper Integral of Type 1
 > **(a)** If $\int_a^t f(x)\,dx$ exists for every number $t \ge a$, then
 >
 > $$
@@ -62,7 +62,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 > - ODE version: [[§26 Definition of the Laplace Transform#^def-26-1|331 Def. §26.1]] (the same definition, as the first step toward the Laplace transform), with three examples in [[§26 Definition of the Laplace Transform#^ex-26-1|331 Ex. §26.1]].
 > - See also: [[§85 Evaluation of Improper Integrals#^def-85-1|342 Def. §85.1]] (the same definitions on $(0, \infty)$ and $(-\infty, \infty)$, with the Cauchy principal value [[§85 Evaluation of Improper Integrals#^def-85-2|342 Def. §85.2]]) and [[§85 Evaluation of Improper Integrals#^prop-85-4|342 Prop. §85.4]] (integrals of rational functions with $\deg q \ge \deg p + 2$ evaluated by residues).
 
-> [!example] Example §67.1: The Reciprocal Diverges
+> [!example] Example §58.1: The Reciprocal Diverges
 > Determine whether $\displaystyle\int_1^\infty \frac1x\,dx$ is convergent or divergent.
 >
 > By [[§58 Improper Integrals#^def-58-1|Definition §58.1]](a),
@@ -82,7 +82,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 ![[m233-51-1.svg]]
 *Up to $x = t$, the area under $y = 1/x^2$ (blue) is $1 - \frac1t < 1$, while the area under $y = 1/x$ is $\ln t$, which exceeds it by the red area and grows without bound. Both curves tend to $0$; only the faster one encloses a finite area.*
 
-> [!example] Example §67.2: Evaluating Type 1 Integrals
+> [!example] Example §58.2: Evaluating Type 1 Integrals
 > Evaluate **(a)** $\displaystyle\int_{-\infty}^0 x e^x\,dx$ and **(b)** $\displaystyle\int_{-\infty}^\infty \frac{1}{1 + x^2}\,dx$.
 >
 > **(a)** By [[§58 Improper Integrals#^def-58-1|Definition §58.1]](b), $\int_{-\infty}^0 xe^x\,dx = \lim_{t \to -\infty} \int_t^0 xe^x\,dx$. Integrate by parts ([[§51 Integration by Parts#^thm-51-2|Theorem §51.2]]) with $u = x$, $dv = e^x\,dx$, $du = dx$, $v = e^x$:
@@ -114,7 +114,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 
 ^ex-58-2
 
-> [!theorem] Theorem §67.1: The p-Integrals
+> [!theorem] Theorem §58.1: The p-Integrals
 > $$
 > \int_1^\infty \frac{1}{x^p}\,dx \quad\text{is convergent if } p > 1 \text{ and divergent if } p \le 1 .
 > $$
@@ -145,7 +145,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 
 Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a vertical asymptote at $b$. The area of the unbounded region $S$ under the graph between $a$ and $t < b$ is $A(t) = \int_a^t f(x)\,dx$. If $A(t)$ approaches a definite number $A$ as $t \to b^-$, then we say that $S$ has area $A$ and write $\int_a^b f(x)\,dx = \lim_{t \to b^-} \int_a^t f(x)\,dx$. (For Type 1 integrals the region extends indefinitely in a horizontal direction; here it is infinite in a vertical direction.) The same equation is used to *define* the integral whether or not $f$ is positive, and whatever kind of discontinuity $f$ has at $b$.
 
-> [!definition] Definition §67.2: Improper Integral of Type 2
+> [!definition] Definition §58.2: Improper Integral of Type 2
 > **(a)** If $f$ is continuous on $[a, b)$ and discontinuous at $b$, then
 >
 > $$
@@ -174,7 +174,7 @@ Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a v
 
 ^def-58-2
 
-> [!example] Example §67.3: An Infinite Discontinuity at an Endpoint
+> [!example] Example §58.3: An Infinite Discontinuity at an Endpoint
 > **(a)** Find $\displaystyle\int_2^5 \frac{1}{\sqrt{x - 2}}\,dx$. **(b)** Determine whether $\displaystyle\int_0^{\pi/2} \sec x\,dx$ converges. **(c)** Evaluate $\displaystyle\int_0^1 \ln x\,dx$.
 >
 > **(a)** $f(x) = 1/\sqrt{x - 2}$ has the vertical asymptote $x = 2$, at the left endpoint of $[2, 5]$. By [[§58 Improper Integrals#^def-58-2|Definition §58.2]](b),
@@ -211,7 +211,7 @@ Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a v
 
 ^ex-58-3
 
-> [!example] Example §67.4: A Discontinuity Inside the Interval
+> [!example] Example §58.4: A Discontinuity Inside the Interval
 > Evaluate $\displaystyle\int_0^3 \frac{dx}{x - 1}$ if possible.
 >
 > The line $x = 1$ is a vertical asymptote of the integrand, in the middle of $[0, 3]$. So [[§58 Improper Integrals#^def-58-2|Definition §58.2]](c) with $c = 1$ applies:

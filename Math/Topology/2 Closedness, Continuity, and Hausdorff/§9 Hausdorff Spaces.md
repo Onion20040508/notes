@@ -8,7 +8,7 @@ tags: [topology, math590]
 ---
 ← [[§8 Interior and Closure]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§10 Continuous Functions]] →
 
-> [!definition] Definition §10.1: Hausdorff Space
+> [!definition] Definition §9.1: Hausdorff Space
 > A topological space $X$ is called **Hausdorff** (or $T_2$) if for each pair $x_1$ and $x_2$ of distinct points in $X$, there exist neighborhoods $U_1$ of $x_1$ and $U_2$ of $x_2$ that are disjoint.
 
 ^def-9-1
@@ -32,14 +32,14 @@ tags: [topology, math590]
 
 ^rem-9-1
 
-> [!example] Example §10.1
+> [!example] Example §9.1
 > In $\mathbb{R}$: Given $x \neq y$, take $U_x = (x - \varepsilon, x + \varepsilon)$ and $U_y = (y - \varepsilon, y + \varepsilon)$ where $\varepsilon = \frac{|x-y|}{3}$. These are disjoint.
 >
 > Counter-example: The cofinite topology on $\mathbb{R}$ is not Hausdorff.
 
 ^ex-9-1
 
-> [!theorem] Theorem §10.1: Finite Point Sets are Closed in Hausdorff Spaces
+> [!theorem] Theorem §9.1: Finite Point Sets are Closed in Hausdorff Spaces
 > Every finite point set in a Hausdorff space is closed.
 
 ^thm-9-1
@@ -53,7 +53,7 @@ tags: [topology, math590]
 
 *Uses:* [[§7 Closed Sets and Limit Points#^thm-7-1|§7.1]]
 
-> [!theorem] Proposition §10.2: $T_1$ Axiom
+> [!theorem] Proposition §9.2: $T_1$ Axiom
 > Let $X$ be a topological space in which finite point sets are closed. We say $X$ satisfies the $T_1$ axiom.
 >
 > By [[§9 Hausdorff Spaces#^thm-9-1|the theorem]], Hausdorff $\Rightarrow$ $T_1$ axiom, but not vice versa (e.g., cofinite topology on $\mathbb{R}$).
@@ -63,7 +63,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Restated in the separation axioms: [[§23 Separation Axioms#^def-23-1|T₁ Axiom]], [[§23 Separation Axioms#^rem-23-1|Why T₁ is Part of the Definition]].
 
-> [!theorem] Theorem §10.3: Unique Limits in Hausdorff Spaces
+> [!theorem] Theorem §9.3: Unique Limits in Hausdorff Spaces
 > If $X$ is a Hausdorff space, then a sequence of points of $X$ must converge to at most one point of $X$.
 
 ^thm-9-3

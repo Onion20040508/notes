@@ -15,7 +15,7 @@ In [[§8 The Limit of a Function|§8]] and [[§11 The Precise Definition of a Li
 
 ## Limits at Infinity and Horizontal Asymptotes
 
-> [!definition] Definition §15.1: Limit at Infinity
+> [!definition] Definition §13.1: Limit at Infinity
 > Let $f$ be defined on some interval $(a, \infty)$. Then
 >
 > $$
@@ -35,7 +35,7 @@ In [[§8 The Limit of a Function|§8]] and [[§11 The Precise Definition of a Li
 > [!remark]- Connections
 > - Rigorous treatment: in 451 a limit as $x \to \pm\infty$ is a limit along the set $S = (c, \infty)$ or $(-\infty, c)$, [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]], with the ε–$M$ form in [[§20 Limits of Functions#^rem-20-1|451 Remark: The epsilon-delta version]]. The reciprocal at its four ends, $1/x \to 0$ as $x \to \pm\infty$ and $1/x \to \pm\infty$ as $x \to 0^\pm$: [[§20 Limits of Functions#^ex-20-3|451 Ex. §20.3]].
 
-> [!definition] Definition §15.2: Horizontal Asymptote
+> [!definition] Definition §13.2: Horizontal Asymptote
 > The line $y = L$ is a **horizontal asymptote** of the curve $y = f(x)$ if either
 >
 > $$
@@ -53,7 +53,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^rem-13-1
 
-> [!theorem] Theorem §15.1: Limits of the Inverse Tangent at Infinity
+> [!theorem] Theorem §13.1: Limits of the Inverse Tangent at Infinity
 > $$
 > \lim_{x \to -\infty} \tan^{-1} x = -\frac{\pi}{2}, \qquad \lim_{x \to \infty} \tan^{-1} x = \frac{\pi}{2} .
 > $$
@@ -134,7 +134,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^rem-13-2
 
-> [!example] Example §15.1: A Rational Function
+> [!example] Example §13.1: A Rational Function
 > Evaluate $\displaystyle\lim_{x \to \infty} \frac{3x^2 - x - 2}{5x^2 + 4x + 1}$ and say which properties of limits are used.
 >
 > Both numerator and denominator become large, so the ratio is not obvious. The highest power of $x$ in the denominator is $x^2$; divide by it:
@@ -155,7 +155,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^ex-13-1
 
-> [!example] Example §15.2: Two Different Horizontal Asymptotes
+> [!example] Example §13.2: Two Different Horizontal Asymptotes
 > Find the horizontal asymptotes of $f(x) = \dfrac{\sqrt{2x^2 + 1}}{3x - 5}$.
 >
 > Divide numerator and denominator by $x$, the highest power of $x$ in the denominator. **For $x > 0$**, $x = \sqrt{x^2}$, so
@@ -216,7 +216,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 *Uses:* [[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-4|Def. §13.4]], [[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-5|Def. §13.5]], [[§4 Exponential Functions#^def-4-4|Def. §4.4]], [[§4 Exponential Functions#^prop-4-2|§4.2]] (the number e; monotonicity of exponentials)
 
-> [!example] Example §15.3: The Conjugate Radical and New Variables
+> [!example] Example §13.3: The Conjugate Radical and New Variables
 > **(a)** Compute $\lim_{x \to \infty} \big(\sqrt{x^2 + 1} - x\big)$.
 >
 > Both terms are large, so this is of the form $\infty - \infty$. Think of the expression as a fraction with denominator $1$ and multiply numerator and denominator by the conjugate radical:
@@ -256,7 +256,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ## Infinite Limits at Infinity
 
-> [!definition] Definition §15.3: Infinite Limit at Infinity
+> [!definition] Definition §13.3: Infinite Limit at Infinity
 > The notation
 >
 > $$
@@ -275,7 +275,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 
 ^def-13-3
 
-> [!example] Example §15.4: Infinite Limits at Infinity
+> [!example] Example §13.4: Infinite Limits at Infinity
 > **(a)** Find $\lim_{x \to \infty} (x^2 - x)$.
 >
 > Law 2 would give "$\lim x^2 - \lim x = \infty - \infty$". It does not apply: the Limit Laws cannot be applied to infinite limits, because $\infty$ is not a number and $\infty - \infty$ cannot be defined. Factor instead:
@@ -304,7 +304,7 @@ Infinite limits at infinity, together with the intercepts, give a quick rough sk
 
 ## Precise Definitions
 
-> [!definition] Definition §15.4: Precise Definition of a Limit at Infinity
+> [!definition] Definition §13.4: Precise Definition of a Limit at Infinity
 > Let $f$ be defined on some interval $(a, \infty)$. Then
 >
 > $$
@@ -335,7 +335,7 @@ Infinite limits at infinity, together with the intercepts, give a quick rough sk
 ![[m233-11-1.svg]]
 *[[§13 Limits at Infinity; Horizontal Asymptotes#^def-13-4|Definition §13.4]] for $f(x) = \dfrac{3x^2 - x - 2}{5x^2 + 4x + 1} \to 0.6$ ([[§13 Limits at Infinity; Horizontal Asymptotes#^ex-13-1|Example §13.1]]) with $\varepsilon = 0.1$. Here $f(x) - 0.6 = -\dfrac{3.4x + 2.6}{5x^2 + 4x + 1} < 0$ for $x > 0$, and $|f(x) - 0.6| < 0.1$ reduces to $x^2 - 6x - 5 > 0$, that is, $x > 3 + \sqrt{14} \approx 6.74$. So any $N \ge 6.74$ works (Stewart takes $N = 7$): to the right of $N$ the graph stays inside the band $0.5 < y < 0.7$ (green).*
 
-> [!definition] Definition §15.5: Precise Definition of an Infinite Limit at Infinity
+> [!definition] Definition §13.5: Precise Definition of an Infinite Limit at Infinity
 > Let $f$ be defined on some interval $(a, \infty)$. Then
 >
 > $$

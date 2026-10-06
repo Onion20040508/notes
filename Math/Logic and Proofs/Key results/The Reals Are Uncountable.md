@@ -8,7 +8,7 @@ tags: [logic-and-proofs, hub]
 ![[§14a Uncountable Sets#^thm-14a-2]]
 
 ## Treated in
-- [[§14a Uncountable Sets#^thm-14a-2|Theorem §14a.2: The Reals Are Uncountable (Cantor, 1874)]], in [[§14 Counting Infinite Sets]]
+- [[§14a Uncountable Sets#^thm-14a-2|Theorem §14a.2: The Reals Are Uncountable (Cantor, 1874)]], in [[§14a Uncountable Sets]]
 
 ## Its proof uses
 - [[§13 Number Systems#^def-13-6|Definition §13.6: The Real Number an Infinite Decimal Represents]]

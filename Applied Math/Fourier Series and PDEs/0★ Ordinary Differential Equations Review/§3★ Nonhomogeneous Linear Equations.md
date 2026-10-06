@@ -16,7 +16,7 @@ A nonhomogeneous linear equation $u'' + k(t)u' + p(t)u = f(t)$ is solved in two 
 
 ## Particular and Complementary Solutions
 
-> [!definition] Definition §5.1: Inhomogeneity
+> [!definition] Definition §3.1: Inhomogeneity
 > In the nonhomogeneous linear equations
 >
 > $$
@@ -29,14 +29,14 @@ A nonhomogeneous linear equation $u'' + k(t)u' + p(t)u = f(t)$ is solved in two 
 
 ^def-3-1
 
-> [!definition] Definition §5.3: Particular Solution
+> [!definition] Definition §3.2: Particular Solution
 > A **particular solution** $u_p(t)$ is any one solution of the nonhomogeneous equation ([[§3★ Nonhomogeneous Linear Equations#^def-3-1|Definition §3.1]]).
 >
 > *Powers: 0.2 (text)*
 
 ^def-3-2
 
-> [!definition] Definition §5.4: Complementary Solution
+> [!definition] Definition §3.3: Complementary Solution
 > For the same nonhomogeneous equation, the **complementary solution** $u_c(t)$ is the general solution of the corresponding homogeneous equation (the same equation with $f = 0$).
 >
 > *Powers: 0.2 (text)*
@@ -45,7 +45,7 @@ A nonhomogeneous linear equation $u'' + k(t)u' + p(t)u = f(t)$ is solved in two 
 
 This is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^def-21-1|331 Def. §21.1]].
 
-> [!theorem] Theorem §5.1: The Simplest Nonhomogeneous Equations
+> [!theorem] Theorem §3.1: The Simplest Nonhomogeneous Equations
 > The equation
 >
 > $$
@@ -77,7 +77,7 @@ This is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^de
 
 *Uses:* [[§41 The Fundamental Theorem of Calculus#^thm-41-1|Calc Thm. §41.1]] (FTC), [[§29 Rolle's Theorem and the Mean Value Theorem#^cor-29-4|Calc Cor. §29.4]] (zero derivative means constant)
 
-> [!theorem] Theorem §5.2: Structure of the General Solution
+> [!theorem] Theorem §3.2: Structure of the General Solution
 > The general solution of a nonhomogeneous linear equation has the form
 >
 > $$
@@ -92,7 +92,7 @@ This is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^de
 
 *Proved in ODE: [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-2|331 Thm. §21.2]] (via [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-1|331 Thm. §21.1]]: the difference of two solutions solves the homogeneous equation).*
 
-> [!theorem] Theorem §5.3: Superposition of Inhomogeneities
+> [!theorem] Theorem §3.3: Superposition of Inhomogeneities
 > If $u_{p1}(t)$ and $u_{p2}(t)$ are particular solutions of a linear differential equation with inhomogeneities $f_1(t)$ and $f_2(t)$, respectively, then $k_1u_{p1}(t) + k_2u_{p2}(t)$ is a particular solution of the same differential equation with inhomogeneity $k_1f_1(t) + k_2f_2(t)$ ($k_1$, $k_2$ constants).
 >
 > *Powers: 0.2, Theorem 2*
@@ -108,7 +108,7 @@ This is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^de
 
 The sum case for constant coefficients is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-21-3|331 Prop. §21.3]].
 
-> [!example] Example §5.1: Assembling a General Solution
+> [!example] Example §3.1: Assembling a General Solution
 > Find the general solution of
 >
 > $$
@@ -153,7 +153,7 @@ This method guesses the form of a trial solution and then finds its coefficients
 
 *Powers omits the proof. The same table, with the power $t^s$ of the Revision Rule built in, is [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-4|331 Thm. §21.4]], where it is explained.*
 
-> [!example] Example §5.2: Trial Solutions and the Revision Rule
+> [!example] Example §3.2: Trial Solutions and the Revision Rule
 > **(a)** Find a particular solution of $u'' + 5u = te^{-t}$.
 >
 > Line 1 of Table 4 with $n = 1$, $\alpha = -1$ suggests $u_p(t) = (A_0t + A_1)e^{-t}$; no term solves $u'' + 5u = 0$ (whose solutions are $\cos\sqrt5t$, $\sin\sqrt5t$). Then $u_p' = (A_0 - A_0t - A_1)e^{-t}$, $u_p'' = (A_0t + A_1 - 2A_0)e^{-t}$, and substituting,
@@ -188,7 +188,7 @@ This method guesses the form of a trial solution and then finds its coefficients
 
 ^ex-3-2
 
-> [!example] Example §5.3: Forced Vibrations and Resonance
+> [!example] Example §3.3: Forced Vibrations and Resonance
 > A mass–spring–damper system ([[§1★ Homogeneous Linear Equations#^ex-1-2|Example §1.2]]) starting from rest with an external sinusoidal force is described by
 >
 > $$

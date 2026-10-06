@@ -162,7 +162,7 @@ tags: [group-theory, math493]
 
 ^pf-29-7
 
-*Uses:* [[§4 Subgroups#^prop-4-8|§4.8]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§4 Subgroups#^lem-4-4|§4.4]]
+*Uses:* [[§4 Subgroups#^prop-4-8|§4.8]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§17 Cyclic Groups#^prop-17-3|§17.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§17 Cyclic Groups#^thm-17-1|§17.1]], [[§4 Subgroups#^lem-4-4|§4.4]]
 
 > [!remark]- Connections
 > - Among abelian groups these are exactly the simple ones: [[§43 Simple Groups#^thm-43-1|Abelian Simple Groups, §43.1]].

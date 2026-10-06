@@ -15,7 +15,7 @@ Often the derivative of a function is known and the function itself is wanted: p
 
 ## The Antiderivative of a Function
 
-> [!definition] Definition §41.1: Antiderivative
+> [!definition] Definition §36.1: Antiderivative
 > A function $F$ is called an **antiderivative** of $f$ on an interval $I$ if $F'(x) = f(x)$ for all $x$ in $I$.
 >
 > *Stewart: 4.9, Definition*
@@ -24,7 +24,7 @@ Often the derivative of a function is known and the function itself is wanted: p
 
 For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the Power Rule. So is $G(x) = \frac13 x^3 + 100$, and so is every $\frac13 x^3 + C$ with $C$ a constant. There are no others:
 
-> [!theorem] Theorem §41.1: The Most General Antiderivative
+> [!theorem] Theorem §36.1: The Most General Antiderivative
 > If $F$ is an antiderivative of $f$ on an interval $I$, then the most general antiderivative of $f$ on $I$ is
 >
 > $$
@@ -56,7 +56,7 @@ For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the 
 ![[m233-33-1.svg]]
 *Members of the family of antiderivatives $\frac13 x^3 + C$ of $f(x) = x^2$, for $C = -2, -1, 0, 1, 2, 3$. They are vertical translates of one another, since all have the same slope $x^2$ at each $x$. By [[§36 Antiderivatives#^thm-36-1|Theorem §36.1]] there are no other antiderivatives on $\mathbb{R}$.*
 
-> [!example] Example §41.1: Three General Antiderivatives
+> [!example] Example §36.1: Three General Antiderivatives
 > Find the most general antiderivative of (a) $f(x) = \sin x$, (b) $f(x) = 1/x$, (c) $f(x) = x^n$, $n \ne -1$.
 >
 > **(a)** If $F(x) = -\cos x$, then $F'(x) = \sin x$. By [[§36 Antiderivatives#^thm-36-1|Theorem §36.1]], the most general antiderivative is $G(x) = -\cos x + C$.
@@ -83,7 +83,7 @@ For instance, $F(x) = \frac13 x^3$ is an antiderivative of $f(x) = x^2$, by the 
 
 Every differentiation formula, read from right to left, gives an antidifferentiation formula.
 
-> [!theorem] Theorem §41.2: Table of Antidifferentiation Formulas
+> [!theorem] Theorem §36.2: Table of Antidifferentiation Formulas
 > Let $F' = f$ and $G' = g$. Then, on any interval where the functions are defined, the right column is a particular antiderivative of the left column:
 >
 > | Function | Particular antiderivative | Function | Particular antiderivative |
@@ -114,7 +114,7 @@ Every differentiation formula, read from right to left, gives an antidifferentia
 
 *Uses:* [[§36 Antiderivatives#^def-36-1|Def. §36.1]], [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-3|§17.3]], [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-4|§17.4]], [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-6|§17.6]], [[§36 Antiderivatives#^ex-36-1|Ex. §36.1]], [[§19 Derivatives of Trigonometric Functions#^thm-19-4|§19.4]], [[§20 The Chain Rule#^thm-20-5|§20.5]], [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-5|§22.5]], [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|§22.8]], [[§27 Hyperbolic Functions#^thm-27-2|§27.2]]
 
-> [!example] Example §41.2: Using the Table
+> [!example] Example §36.2: Using the Table
 > Find all functions $g$ such that
 >
 > $$
@@ -148,7 +148,7 @@ Every differentiation formula, read from right to left, gives an antidifferentia
 
 ^def-36-2
 
-> [!example] Example §41.3: Using Initial Conditions
+> [!example] Example §36.3: Using Initial Conditions
 > **(a)** Find $f$ if $f'(x) = e^x + 20(1 + x^2)^{-1}$ and $f(0) = -2$.
 >
 > By the table, the general antiderivative of $f'(x) = e^x + \dfrac{20}{1 + x^2}$ is
@@ -203,7 +203,7 @@ A given value such as $F(0) = 2$ fixes the starting point, and hence the one mem
 
 If an object moves in a straight line with position function $s = f(t)$, its velocity is $v(t) = s'(t)$ and its acceleration is $a(t) = v'(t)$ ([[§14 Derivatives and Rates of Change#^def-14-2|Def. §14.2]], [[§23 Rates of Change in the Natural and Social Sciences#^def-23-3|Def. §23.3]]). So the velocity is an antiderivative of the acceleration, and the position is an antiderivative of the velocity. If $a(t)$ and the initial values $s(0)$ and $v(0)$ are known, the position is found by antidifferentiating twice.
 
-> [!example] Example §41.4: Motion with Given Acceleration
+> [!example] Example §36.4: Motion with Given Acceleration
 > **(a)** A particle moves in a straight line with acceleration $a(t) = 6t + 4$. Its initial velocity is $v(0) = -6$ cm/s and its initial displacement is $s(0) = 9$ cm. Find its position function.
 >
 > Since $v'(t) = a(t) = 6t + 4$, antidifferentiation gives $v(t) = 3t^2 + 4t + C$. Then $v(0) = C = -6$, so $v(t) = 3t^2 + 4t - 6$. Since $s'(t) = v(t)$, $s(t) = t^3 + 2t^2 - 6t + D$, and $s(0) = D = 9$. So

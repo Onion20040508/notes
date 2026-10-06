@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 The equation $A\mathbf{x} = \lambda\mathbf{x}$ has two unknowns, $\lambda$ and $\mathbf{x}$. The determinant removes $\mathbf{x}$: $\lambda$ is an eigenvalue exactly when $A - \lambda I$ is not invertible, that is, when $\det(A - \lambda I) = 0$. This scalar equation, the characteristic equation, is a polynomial equation of degree $n$, and its roots are the eigenvalues, each with a multiplicity. The section also introduces similarity, $B = P^{-1}AP$: similar matrices have the same characteristic polynomial, hence the same eigenvalues. An application shows how the eigenvalues govern the long-term behavior of a Markov chain.
 
-> [!example] Example §51.1: Eigenvalues of a 2 × 2 Matrix
+> [!example] Example §41.1: Eigenvalues of a 2 × 2 Matrix
 > Find the eigenvalues of $A = \begin{bmatrix} 2 & 3 \\ 3 & -6 \end{bmatrix}$.
 >
 > We need all scalars $\lambda$ such that $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution. By the Invertible Matrix Theorem, this means that the matrix
@@ -38,7 +38,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 
 ## Determinants
 
-> [!theorem] Theorem §51.1: Determinant from an Echelon Form
+> [!theorem] Theorem §41.1: Determinant from an Echelon Form
 > Let $A$ be an $n \times n$ matrix, let $U$ be any echelon form obtained from $A$ by row replacements and row interchanges (without scaling), and let $r$ be the number of row interchanges. Then $\det A$ is $(-1)^r$ times the product of the diagonal entries $u_{11}, \ldots, u_{nn}$ of $U$. If $A$ is invertible, the $u_{ii}$ are all pivots; otherwise at least $u_{nn}$ is zero. Thus
 >
 > $$
@@ -53,7 +53,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 
 *Proved in [[§25 Properties of Determinants#^prop-25-2|Proposition §25.2]] (Lay 3.2, formula (1) after Theorem 3). Readers who skip Chapter 3 may take (1) as the definition of $\det A$.*
 
-> [!theorem] Theorem §51.2: The Invertible Matrix Theorem (Continued)
+> [!theorem] Theorem §41.2: The Invertible Matrix Theorem (Continued)
 > Let $A$ be an $n \times n$ matrix. Then $A$ is invertible if and only if:
 >
 > s. The number $0$ is *not* an eigenvalue of $A$.
@@ -75,7 +75,7 @@ The determinant has turned the matrix equation $(A - \lambda I)\mathbf{x} = \mat
 
 When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determined by the columns $\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3$ ([[§28 Determinants as Area or Volume#^thm-28-2|Theorem §28.2]]). This volume is nonzero exactly when the columns are linearly independent, in which case $A$ is invertible.
 
-> [!theorem] Theorem §51.3: Properties of Determinants
+> [!theorem] Theorem §41.3: Properties of Determinants
 > Let $A$ and $B$ be $n \times n$ matrices.
 >
 > a. $A$ is invertible if and only if $\det A \ne 0$.
@@ -96,7 +96,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ## The Characteristic Equation
 
-> [!definition] Definition §51.1: Characteristic Equation and Characteristic Polynomial
+> [!definition] Definition §41.1: Characteristic Equation and Characteristic Polynomial
 > Let $A$ be an $n \times n$ matrix. The scalar equation
 >
 > $$
@@ -109,7 +109,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^def-41-1
 
-> [!theorem] Theorem §51.4: Eigenvalues Are the Roots of the Characteristic Equation
+> [!theorem] Theorem §41.4: Eigenvalues Are the Roots of the Characteristic Equation
 > A scalar $\lambda$ is an eigenvalue of an $n \times n$ matrix $A$ if and only if $\lambda$ satisfies the characteristic equation
 >
 > $$
@@ -130,7 +130,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-7|LADR 5.7]] ($\lambda$ is an eigenvalue $\Leftrightarrow$ $T - \lambda I$ is not invertible) together with [[§37 Determinants#^ladr-9-50|LADR 9.50]] (invertible $\Leftrightarrow$ $\det \ne 0$), the same two steps. Axler identifies his characteristic polynomial with $\det(zI - T)$ only later, [[§37 Determinants#^ladr-9-62|LADR 9.62]].
 
-> [!theorem] Theorem §51.5: The Characteristic Polynomial Has Degree n
+> [!theorem] Theorem §41.5: The Characteristic Polynomial Has Degree n
 > If $A$ is an $n \times n$ matrix, then $\det(A - \lambda I)$ is a polynomial in $\lambda$ of degree $n$. More precisely,
 >
 > $$
@@ -170,7 +170,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 *Uses:* [[§24 Introduction to Determinants#^thm-24-1|§24.1]] (cofactor expansion across any row)
 
-> [!definition] Definition §51.2: Multiplicity of an Eigenvalue
+> [!definition] Definition §41.2: Multiplicity of an Eigenvalue
 > The **(algebraic) multiplicity** of an eigenvalue $\lambda$ is its multiplicity as a root of the characteristic equation, that is, the number of times the factor $(\lambda - \text{eigenvalue})$ occurs in the characteristic polynomial. The eigenvalues are sometimes listed repeated according to their multiplicities.
 >
 > *Lay: 5.2 (text)*
@@ -180,7 +180,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 > [!remark]- Connections
 > - Rigorous treatment: Axler defines the characteristic polynomial without determinants, as $\prod (z - \lambda_k)^{d_k}$ with $d_k = \dim G(\lambda_k, T)$ the dimension of the generalized eigenspace ([[§31 Generalized Eigenspace Decomposition#^ladr-8-23|LADR 8.23]], [[§31 Generalized Eigenspace Decomposition#^ladr-8-26|LADR 8.26]]), and only later shows it equals $\det(zI - T)$ ([[§37 Determinants#^ladr-9-62|LADR 9.62]]). Note $\det(zI - A) = (-1)^n\det(A - zI)$: Axler's version is monic, Lay's has leading coefficient $(-1)^n$; the roots and multiplicities are the same.
 
-> [!example] Example §51.2: Multiplicities
+> [!example] Example §41.2: Multiplicities
 > **(a)** Find the characteristic equation of $A = \begin{bmatrix} 5 & -2 & 6 & -1 \\ 0 & 3 & -8 & 0 \\ 0 & 0 & 5 & 4 \\ 0 & 0 & 0 & 1 \end{bmatrix}$.
 >
 > $A - \lambda I$ is upper triangular, so by [[§41 The Characteristic Equation#^thm-41-3|Theorem §41.3]](d)
@@ -208,7 +208,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ^rem-41-1
 
-> [!example] Example §51.3: A 3 × 3 Characteristic Polynomial
+> [!example] Example §41.3: A 3 × 3 Characteristic Polynomial
 > Find the eigenvalues of $A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$.
 >
 > **The polynomial.** By the $3 \times 3$ diagonal rule (or cofactor expansion),
@@ -245,14 +245,14 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ## Similarity
 
-> [!definition] Definition §51.3: Similar Matrices
+> [!definition] Definition §41.3: Similar Matrices
 > If $A$ and $B$ are $n \times n$ matrices, then $A$ is **similar to** $B$ if there is an invertible matrix $P$ such that $P^{-1}AP = B$, or, equivalently, $A = PBP^{-1}$. Writing $Q = P^{-1}$, we have $Q^{-1}BQ = A$, so $B$ is also similar to $A$, and we say simply that $A$ and $B$ are **similar**. Changing $A$ into $P^{-1}AP$ is called a **similarity transformation**.
 >
 > *Lay: 5.2 (text)*
 
 ^def-41-3
 
-> [!theorem] Theorem §51.6: Similar Matrices Have the Same Characteristic Polynomial
+> [!theorem] Theorem §41.6: Similar Matrices Have the Same Characteristic Polynomial
 > If $n \times n$ matrices $A$ and $B$ are similar, then they have the same characteristic polynomial and hence the same eigenvalues (with the same multiplicities).
 >
 > *Lay: Theorem 4 (5.2)*
@@ -306,7 +306,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 
 ## Application to Dynamical Systems
 
-> [!example] Example §51.4: Long-Term Behavior of a Markov Chain
+> [!example] Example §41.4: Long-Term Behavior of a Markov Chain
 > Let $A = \begin{bmatrix} .95 & .03 \\ .05 & .97 \end{bmatrix}$. Analyze the long-term behavior of the dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$ ($k = 0, 1, 2, \ldots$) with $\mathbf{x}_0 = \begin{bmatrix} .6 \\ .4 \end{bmatrix}$.
 >
 > **Eigenvalues.** The characteristic equation is

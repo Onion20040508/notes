@@ -28,7 +28,7 @@ $$
 
 the temperature in a cylindrical rod with insulated lateral surface whose ends are held at the constant temperatures $T_0$ and $T_1$. Experience indicates that after a long time under the same conditions the variation of temperature with time dies away.
 
-> [!definition] Definition §30.3: Steady-State Temperature Distribution
+> [!definition] Definition §24.1: Steady-State Temperature Distribution
 > For a heat conduction problem whose boundary conditions and generation terms do not depend on $t$, the **steady-state temperature distribution** (or **equilibrium** distribution) is the function
 >
 > $$
@@ -47,7 +47,7 @@ the temperature in a cylindrical rod with insulated lateral surface whose ends a
 
 ^def-24-1
 
-> [!example] Example §30.1: Fixed End Temperatures
+> [!example] Example §24.1: Fixed End Temperatures
 > For the problem (1)–(4), $v(x)$ should be the solution of
 >
 > $$
@@ -86,7 +86,7 @@ the temperature in a cylindrical rod with insulated lateral surface whose ends a
 
 ^rem-24-1
 
-> [!example] Example §30.2: Convection at One End
+> [!example] Example §24.2: Convection at One End
 > Find the steady-state problem and its solution for (13)–(16) of [[§23 Initial and Boundary Conditions; Diffusion#^def-23-6|Definition §23.6]]:
 >
 > $$
@@ -129,7 +129,7 @@ the temperature in a cylindrical rod with insulated lateral surface whose ends a
 
 In both examples the steady-state distribution has been uniquely determined by the differential equation and boundary conditions. This is usually the case, but not always.
 
-> [!example] Example §30.3: Insulated Ends — No Unique Steady State
+> [!example] Example §24.3: Insulated Ends — No Unique Steady State
 > For the problem
 >
 > $$
@@ -172,7 +172,7 @@ The steady state gives valuable information about the solution, and it is also t
 
 ^def-24-2
 
-> [!theorem] Proposition §30.1: The Transient Problem Is Homogeneous
+> [!theorem] Proposition §24.1: The Transient Problem Is Homogeneous
 > Let $u$ solve (1)–(4) and let $v$ be the steady state (7). Then $w = u - v$ satisfies
 >
 > $$

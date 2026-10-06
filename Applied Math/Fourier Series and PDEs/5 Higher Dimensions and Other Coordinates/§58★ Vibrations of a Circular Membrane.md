@@ -144,7 +144,7 @@ $$
 
 *Uses:* [[§48 Potential in a Disk#^prop-48-1|§48.1]], [[§55★ Bessel's Equation#^thm-55-5|§55.5]], [[§56★ Properties of Bessel Functions#^thm-56-1|§56.1]], [[§56★ Properties of Bessel Functions#^thm-56-5|§56.5]], [[§54★ Problems in Polar Coordinates#^thm-54-2|§54.2]], [[§57★ Temperature in a Cylinder#^prop-57-1|§57.1]]
 
-> [!definition] Definition §71.1: Standing Waves of the Membrane
+> [!definition] Definition §58.1: Standing Waves of the Membrane
 > The product solutions of (11)–(14),
 >
 > $$
@@ -163,7 +163,7 @@ $$
 
 ^def-58-1
 
-> [!definition] Definition §71.2: Frequencies of the Membrane
+> [!definition] Definition §58.2: Frequencies of the Membrane
 > In the standing waves of [[§58★ Vibrations of a Circular Membrane#^def-58-1|Definition §58.1]], the mode with eigenvalue $\lambda_{mn}^2$ vibrates with **frequency** $\lambda_{mn}c = \alpha_{mn}c/a$ in radians per unit time, as for the string ([[§38 Solution of the Vibrating String Problem#^def-38-2|Definition §38.2]]).
 >
 > *Powers: 5.7, Equations (23)–(24)*
@@ -281,7 +281,7 @@ The coefficients come from an orthogonality principle.
 
 ^rem-58-1
 
-> [!example] Example §71.1: The Overtones of a Drum Are Not Harmonic
+> [!example] Example §58.1: The Overtones of a Drum Are Not Harmonic
 > List the lowest frequencies of a circular membrane as multiples of the lowest one, and compare with a string.
 >
 > The frequencies are $\alpha_{mn}c/a$. From the zeros of $J_0, \ldots, J_5$ (the table in [[§56★ Properties of Bessel Functions#^thm-56-1|Theorem §56.1]], with $\alpha_{41} = 7.588$ and $\alpha_{51} = 8.771$ added), in increasing order:
@@ -300,7 +300,7 @@ The coefficients come from an orthogonality principle.
 ![[m341-47-2.svg]]
 *Frequencies of the lowest modes of a circular membrane (top; label $mn$, blue for the radially symmetric modes $m = 0$, red for the doubly counted modes $m \ge 1$), divided by the fundamental $\alpha_{01}c/a$, against the harmonic frequencies $1, 2, 3, 4$ of a string (bottom).*
 
-> [!example] Example §71.2: Nodal Curves of the Lowest Modes
+> [!example] Example §58.2: Nodal Curves of the Lowest Modes
 > Find the nodal curves of the eigenfunctions $\phi_{mn} = J_m(\lambda_{mn}r)\cos(m\theta)$ for $m = 0, 1, 2$ and $n = 1, 2, 3$.
 >
 > **Circles.** $J_m(\lambda_{mn}r) = 0$ for $0 < r < a$ exactly when $\lambda_{mn}r = \alpha_{mk}$ with $k < n$, that is, on the circles
@@ -322,7 +322,7 @@ The coefficients come from an orthogonality principle.
 ![[m341-47-1.svg]]
 *Six eigenfunctions $\phi_{mn} = J_m(\alpha_{mn}r/a)\cos(m\theta)$ of the disk, with their nodal circles and diameters in black; between them $\phi_{mn} > 0$ (blue, $+$) or $\phi_{mn} < 0$ (red, $-$), the shade darker where the largest value of $|\phi_{mn}|$ in the region is larger. Above each, the frequency of the mode relative to the fundamental. Each picture is a snapshot of the corresponding standing wave; half a period later the signs are exchanged.*
 
-> [!example] Example §71.3: Identifying a Mode from Its Nodal Curves
+> [!example] Example §58.3: Identifying a Mode from Its Nodal Curves
 > The nodal curves of an eigenfunction $\phi_{mn}(r, \theta)$ of the disk of radius $a$ are the boundary circle, one interior circle of radius about $0.65a$, and three diameters, at $\theta = 0$, $\pi/3$ and $2\pi/3$ (Powers' Figure 10). (a) Find $m$ and $n$. (b) Find the eigenvalue $\lambda_{mn}$. (c) Find $\phi_{mn}$. (d) Find the frequency of the drumhead vibrating in this mode.
 >
 > **(a)** By [[§58★ Vibrations of a Circular Membrane#^ex-58-2|Example §58.2]], the nodal curves of $\phi_{mn}$ are $m$ diameters and $n - 1$ interior circles. Three diameters give $m = 3$, and one interior circle gives $n = 2$.

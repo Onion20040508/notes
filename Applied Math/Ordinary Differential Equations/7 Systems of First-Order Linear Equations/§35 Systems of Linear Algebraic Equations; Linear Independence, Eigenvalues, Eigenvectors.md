@@ -15,7 +15,7 @@ This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A
 
 ## Systems of Linear Algebraic Equations
 
-> [!definition] Definition §41.1: Homogeneous and Nonhomogeneous Systems
+> [!definition] Definition §35.1: Homogeneous and Nonhomogeneous Systems
 > A system of $n$ linear algebraic equations in $n$ variables,
 >
 > $$
@@ -34,7 +34,7 @@ This section collects the linear algebra that Chapter 7 runs on: when $\mathbf{A
 
 ^def-35-1
 
-> [!theorem] Theorem §41.1: Solvability of Ax = b
+> [!theorem] Theorem §35.1: Solvability of Ax = b
 > **(a) $\mathbf{A}$ nonsingular** ($\det\mathbf{A} \ne 0$). For every $\mathbf{b}$, the system (2) has the unique solution
 >
 > $$
@@ -81,7 +81,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 ^rem-35-1
 
-> [!example] Example §41.1: A Nonsingular and a Singular System
+> [!example] Example §35.1: A Nonsingular and a Singular System
 > **(a)** Solve $x_1 - 2x_2 + 3x_3 = 7$, $\ -x_1 + x_2 - 2x_3 = -5$, $\ 2x_1 - x_2 - x_3 = 4$.
 >
 > Add row 1 to row 2 and $-2$ times row 1 to row 3; multiply row 2 by $-1$; add $-3$ times row 2 to row 3; divide row 3 by $-4$:
@@ -139,7 +139,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > [!remark]- Connections
 > - Lay's definition for real scalars, and the matrix test (the columns of $A$ are independent iff $A\mathbf{x} = \mathbf{0}$ has only the trivial solution): [[§8 Linear Independence#^def-8-1|235 Def. §8.1]], [[§8 Linear Independence#^prop-8-1|235 Prop. §8.1]]. In an abstract vector space over $\mathbb{R}$ or $\mathbb{C}$: [[§4 Span and Linear Independence#^ladr-2-15|LADR 2.15]].
 
-> [!theorem] Theorem §41.2: Independence and the Determinant
+> [!theorem] Theorem §35.2: Independence and the Determinant
 > **(a)** Let $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}$ be $n$ vectors with $n$ components each, and let $\mathbf{X}$ be the $n \times n$ matrix whose $j$th column is $\mathbf{x}^{(j)}$, so $\mathbf{X} = (x_{ij})$ with $x_{ij} = x_i^{(j)}$. Then $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(n)}$ are linearly independent if and only if $\det\mathbf{X} \ne 0$. The same holds for the rows of a square matrix.
 >
 > **(b)** If $\mathbf{C} = \mathbf{A}\mathbf{B}$, then $\det\mathbf{C} = (\det\mathbf{A})(\det\mathbf{B})$. Hence if the columns (or rows) of both $\mathbf{A}$ and $\mathbf{B}$ are linearly independent, so are those of $\mathbf{C}$.
@@ -163,7 +163,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 *Uses:* [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-1|§35.1]], [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-2|Def. §35.2]], [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|235 Thm. §26.4]] (multiplicative property), [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-1|235 Thm. §26.1]] (transpose)
 
-> [!example] Example §41.2: Testing Three Vectors
+> [!example] Example §35.2: Testing Three Vectors
 > Are $\mathbf{x}^{(1)} = (1, 2, -1)^T$, $\mathbf{x}^{(2)} = (2, 1, 3)^T$, $\mathbf{x}^{(3)} = (-4, 1, -11)^T$ linearly independent? If not, find a linear relation.
 >
 > **By row reduction.** Solve $c_1\mathbf{x}^{(1)} + c_2\mathbf{x}^{(2)} + c_3\mathbf{x}^{(3)} = \mathbf{0}$. Add $-2$ times row 1 to row 2 and row 1 to row 3; then divide row 2 by $-3$ and add $-5$ times it to row 3:
@@ -246,7 +246,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 > - Lay's treatment of real eigenvalues, with the characteristic equation and a proof that it has degree $n$: [[§40 Eigenvectors and Eigenvalues#^def-40-1|235 Def. §40.1]], [[§41 The Characteristic Equation#^thm-41-4|235 Thm. §41.4]], [[§41 The Characteristic Equation#^thm-41-5|235 Thm. §41.5]]; complex eigenvalues and eigenvectors: [[§44 Complex Eigenvalues#^def-44-1|235 Def. §44.1]].
 > - Rigorous treatment for operators: [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]]; that the eigenvalues are the zeros of $\det(z\mathbf{I} - \mathbf{A})$: [[§37 Determinants#^ladr-9-62|LADR 9.62]].
 
-> [!example] Example §41.3: Eigenvalues and Eigenvectors of a 2 × 2 Matrix
+> [!example] Example §35.3: Eigenvalues and Eigenvectors of a 2 × 2 Matrix
 > Find the eigenvalues and eigenvectors of $\mathbf{A} = \begin{pmatrix} 3 & -1 \\ 4 & -2 \end{pmatrix}$.
 >
 > **Eigenvalues.**
@@ -279,7 +279,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 ^def-35-7
 
-> [!theorem] Theorem §41.3: Geometric Multiplicity Is at Most Algebraic Multiplicity
+> [!theorem] Theorem §35.3: Geometric Multiplicity Is at Most Algebraic Multiplicity
 > For every eigenvalue,
 >
 > $$
@@ -294,7 +294,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 *BDP omits the proof ("it is possible to show"); it is [[§42 Diagonalization#^thm-42-3|235 Thm. §42.3]](a), proved there by extending a basis of the eigenspace to a basis of $\mathbb{R}^n$. The case $q < m$ is the source of the complications in [[§40★ Repeated Eigenvalues|§40★]] (Section 7.8).*
 
-> [!theorem] Theorem §41.4: Eigenvectors of Distinct Eigenvalues Are Independent
+> [!theorem] Theorem §35.4: Eigenvectors of Distinct Eigenvalues Are Independent
 > If $\lambda_1, \ldots, \lambda_k$ are distinct eigenvalues of $\mathbf{A}$ with eigenvectors $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(k)}$, then $\mathbf{x}^{(1)}, \ldots, \mathbf{x}^{(k)}$ are linearly independent. Consequently, if every eigenvalue of an $n \times n$ matrix is simple, the $n$ eigenvectors, one for each eigenvalue, are linearly independent.
 >
 > *BDP: 7.3 (text) and Problem 7.3.29*
@@ -322,7 +322,7 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors, because $q < m$ is possible. The next example has a double eigenvalue with $q = m = 2$.
 
-> [!example] Example §41.4: A Double Eigenvalue with Two Eigenvectors
+> [!example] Example §35.4: A Double Eigenvalue with Two Eigenvectors
 > Find the eigenvalues and eigenvectors of $\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{pmatrix}$.
 >
 > **Eigenvalues.** Expanding along the first row,
@@ -356,7 +356,7 @@ With a repeated eigenvalue there may be fewer than $n$ independent eigenvectors,
 
 ^def-35-8
 
-> [!theorem] Theorem §41.5: Eigenvalues and Eigenvectors of a Hermitian Matrix
+> [!theorem] Theorem §35.5: Eigenvalues and Eigenvectors of a Hermitian Matrix
 > Let $\mathbf{A}$ be Hermitian. Then:
 > 1. All eigenvalues of $\mathbf{A}$ are real.
 > 2. There is always a full set of $n$ linearly independent eigenvectors, whatever the algebraic multiplicities.

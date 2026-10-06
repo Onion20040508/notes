@@ -17,7 +17,7 @@ The triple integral of $1$ is volume, and with a density it gives mass, moments,
 
 For $f \ge 0$, $\int_a^b f\,dx$ is an area and $\iint_D f\,dA$ a volume; $\iiint_E f\,dV$ would be the "hypervolume" of a four-dimensional object, which is not a useful picture ($E$ is only the domain of $f$; the graph of $f$ lies in four-dimensional space). The triple integral is instead interpreted according to what $x$, $y$, $z$ and $f$ mean physically. The simplest case is $f = 1$.
 
-> [!theorem] Theorem §144.1: Volume as a Triple Integral
+> [!theorem] Theorem §121.1: Volume as a Triple Integral
 > The volume of a solid region $E$ is
 >
 > $$
@@ -43,7 +43,7 @@ For $f \ge 0$, $\int_a^b f\,dx$ is an area and $\iint_D f\,dA$ a volume; $\iiint
 
 Triple integrals are not necessary for computing volumes, but they give an alternative way of setting up the calculation (for the tetrahedron below, Stewart's Example 15.6.5 does the same with $x + 2y + z = 2$, $x = 2y$, $x = 0$, $z = 0$ and gets $\frac13$).
 
-> [!example] Example §144.1: A Tetrahedron
+> [!example] Example §121.1: A Tetrahedron
 > Evaluate $\displaystyle\iiint_T y^2\,dV$, where $T$ is the solid tetrahedron with vertices $(0, 0, 0)$, $(2, 0, 0)$, $(0, 2, 0)$ and $(0, 0, 2)$. What is the volume of this solid?
 >
 > **The solid.** The face opposite the origin passes through $(2, 0, 0)$, $(0, 2, 0)$, $(0, 0, 2)$, so it is the plane $x + y + z = 2$, and $T = \{x, y, z \ge 0,\ x + y + z \le 2\}$. Since the integrand depends only on $y$, make $y$ the outer variable: for fixed $y$ in $[0, 2]$ the cross-section is the triangle $x, z \ge 0$, $x + z \le 2 - y$, so
@@ -74,7 +74,7 @@ Triple integrals are not necessary for computing volumes, but they give an alter
 
 All the applications of double integrals in [[§118 Applications of Double Integrals|§118]] extend to triple integrals. If a solid occupying $E$ has density $\rho(x, y, z)$ (mass per unit volume), divide a box containing $E$ into sub-boxes $B_{ijk}$, let $\rho = 0$ outside $E$, and approximate the mass of the part in $B_{ijk}$ by $\rho(x_{ijk}^*, y_{ijk}^*, z_{ijk}^*)\,\Delta V$; adding and passing to the limit gives the following.
 
-> [!definition] Definition §144.1: Mass of a Solid
+> [!definition] Definition §121.1: Mass of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$:
 >
 > - the **mass** is $m = \displaystyle\lim_{l, m, n \to \infty} \sum_{i,j,k} \rho(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})\,\Delta V = \iiint_E \rho(x, y, z)\,dV$; (13)
@@ -83,7 +83,7 @@ All the applications of double integrals in [[§118 Applications of Double Integ
 
 ^def-121-1
 
-> [!definition] Definition §144.2: Moments of a Solid
+> [!definition] Definition §121.2: Moments of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$:
 >
 > - the **moments** about the three coordinate planes are
@@ -96,7 +96,7 @@ All the applications of double integrals in [[§118 Applications of Double Integ
 
 ^def-121-2
 
-> [!definition] Definition §144.3: Center of Mass of a Solid
+> [!definition] Definition §121.3: Center of Mass of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$, mass $m$ and moments $M_{yz}$, $M_{xz}$, $M_{xy}$:
 >
 > - the **center of mass** is $(\bar x, \bar y, \bar z)$ with $\bar x = M_{yz}/m$, $\bar y = M_{xz}/m$, $\bar z = M_{xy}/m$ (15); for constant density it is called the **centroid** of $E$;
@@ -105,7 +105,7 @@ All the applications of double integrals in [[§118 Applications of Double Integ
 
 ^def-121-3
 
-> [!definition] Definition §144.4: Moments of Inertia of a Solid
+> [!definition] Definition §121.4: Moments of Inertia of a Solid
 > For a solid occupying $E$ with density $\rho(x, y, z)$:
 >
 > - the **moments of inertia** about the three coordinate axes are
@@ -118,14 +118,14 @@ All the applications of double integrals in [[§118 Applications of Double Integ
 
 ^def-121-4
 
-> [!definition] Definition §145.1: Electric Charge of a Solid
+> [!definition] Definition §121.5: Electric Charge of a Solid
 > Likewise, a charge density $\sigma(x, y, z)$ gives the total **electric charge** $Q = \iiint_E \sigma\,dV$.
 >
 > *Stewart: 15.6, Equations 13, 14, 15 and 16*
 
 ^def-121-5
 
-> [!definition] Definition §145.2: Joint Density Function of Three Random Variables
+> [!definition] Definition §121.6: Joint Density Function of Three Random Variables
 > The **joint density function** of three [[§65 Probability#^def-65-1|continuous random variables]] $X$, $Y$, $Z$ is a function $f \ge 0$ with $P\big((X, Y, Z) \in E\big) = \iiint_E f\,dV$ and $\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dz\,dy\,dx = 1$; in particular $P(a \le X \le b,\ c \le Y \le d,\ r \le Z \le s) = \int_a^b \int_c^d \int_r^s f\,dz\,dy\,dx$.
 >
 > *Stewart: 15.6, Equations 13, 14, 15 and 16*

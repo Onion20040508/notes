@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definitions
 
-> [!definition] Definition §23.1: Limit Point Compact
+> [!definition] Definition §19.1: Limit Point Compact
 > A space $X$ is **limit point compact** if every infinite subset of $X$ has a [[§8 Interior and Closure#^def-8-5|limit point]].
 
 ^def-19-1
@@ -34,7 +34,7 @@ tags: [topology, math590]
 
 ^rem-19-1
 
-> [!theorem] Theorem §23.1: Compactness Implies Limit Point Compactness
+> [!theorem] Theorem §19.1: Compactness Implies Limit Point Compactness
 > Compactness implies limit point compactness, but not conversely.
 
 ^thm-19-1
@@ -66,7 +66,7 @@ tags: [topology, math590]
 
 *Uses:* [[§8 Interior and Closure#^def-8-5|Def. §8.5]], [[§8 Interior and Closure#^cor-8-5|§8.5]]
 
-> [!example] Example §23.1: Limit Point Compact but Not Compact
+> [!example] Example §19.1: Limit Point Compact but Not Compact
 > $Y = \{a, b\}$ with $\mathcal{T}_Y = \{\emptyset, Y\}$ ([[§1 Topological Spaces#^ex-1-2|indiscrete topology]]). $X = \mathbb{Z}_+ \times Y$.
 >
 > *$X$ is limit point compact:* Let $S \subseteq X$ be infinite. We show $S$ has a limit point.
@@ -84,7 +84,7 @@ tags: [topology, math590]
 
 ## Subsequences and Sequential Compactness
 
-> [!definition] Definition §23.2: Subsequence
+> [!definition] Definition §19.2: Subsequence
 > If $(x_n)$ is a sequence of points in $X$, and if $n_1 < n_2 < \cdots < n_i < \cdots$ is an increasing sequence of positive integers, then $y_i = x_{n_i}$ is called a **subsequence** of $(x_n)$.
 
 ^def-19-2
@@ -92,23 +92,23 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Same definition for real sequences: [[§11 Subsequences#^def-11-1|451 Def. §11.1]].
 
-> [!definition] Definition §23.3: Sequentially Compact
+> [!definition] Definition §19.3: Sequentially Compact
 > $X$ is **sequentially compact** if every sequence of points of $X$ has a [[§8 Interior and Closure#^def-8-6|convergent]] subsequence.
 
 ^def-19-3
 
 > [!remark]- Connections
 > - MATH 451: [[Bolzano–Weierstrass Theorem]] (every bounded sequence in $\mathbb{R}$ has a convergent subsequence) and Bolzano–Weierstrass in $\mathbb{R}^n$ ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|§13.3]]).
-> - The same definition in a normed space: [[§18 Compactness and the Unit Ball#^def-18-1|556 Def. §18.1]]; the closed unit ball of an infinite-dimensional space fails it ([[§18 Compactness and the Unit Ball#^thm-18-5|556 Thm. §18.5]]).
+> - The same definition in a normed space: [[§20 Compactness and the Unit Ball#^def-20-1|556 Def. §20.1]]; the closed unit ball of an infinite-dimensional space fails it ([[§20 Compactness and the Unit Ball#^thm-20-5|556 Thm. §20.5]]).
 
-> [!example] Example §23.2
+> [!example] Example §19.2
 > In $\mathbb{R}$: $x_n = (1, 0, 1, 0, 1, 0, \ldots)$ has a convergent subsequence $y_n = (0, 0, 0, \ldots)$.
 
 ^ex-19-2
 
 To complete the equivalence of [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4]] below, we need $(3) \Rightarrow (1)$. This uses two lemmas, proved first.
 
-> [!theorem] Lemma §23.2: Lebesgue Number Lemma
+> [!theorem] Lemma §19.2: Lebesgue Number Lemma
 > Let $(X, d)$ be a sequentially compact metric space and let $\{U_\alpha\}$ be an open cover of $X$. Then there exists $\delta > 0$ (called a **Lebesgue number** for the cover) such that for every subset $A \subseteq X$ with $\text{diam}(A) < \delta$, there exists some $U_\alpha$ containing $A$.
 
 ^lem-19-2
@@ -192,7 +192,7 @@ To complete the equivalence of [[§19 Limit Point Compactness#^thm-19-4|Theorem 
 *Uses:* [[§19 Limit Point Compactness#^lem-19-2|§19.2]], [[§19 Limit Point Compactness#^lem-19-3|§19.3]]
 
 > [!remark]- Connections
-> - Restated for normed and metric spaces as [[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]] (compact iff sequentially compact), which cites this theorem for its proof.
+> - Restated for normed and metric spaces as [[§20 Compactness and the Unit Ball#^thm-20-1|556 Thm. §20.1]] (compact iff sequentially compact), which cites this theorem for its proof.
 
 > [!remark] Remark: Summary of the Equivalence
 > For a metrizable space $X$, the proof cycle is:

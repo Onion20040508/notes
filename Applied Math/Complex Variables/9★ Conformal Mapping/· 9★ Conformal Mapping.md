@@ -9,9 +9,9 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 9 · ★ beyond MAT 342.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (4), [[· 2 Analytic Functions|2 Analytic Functions]] (25), [[· 3 Elementary Functions|3 Elementary Functions]] (5), [[· 4 Integrals|4 Integrals]] (8), [[· 5 Series|5 Series]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (5)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (4), [[· 2 Analytic Functions|2 Analytic Functions]] (25), [[· 3 Elementary Functions|3 Elementary Functions]] (5), [[· 4 Integrals|4 Integrals]] (9), [[· 5 Series|5 Series]] (2), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (5)
 **Used by:** [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (26), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (6), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (1), [[Fourier Series and PDEs]] (6), [[Calculus]] (2)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (7), [[Applied Linear Algebra]] (1), [[Fourier Series and PDEs]] (9), [[Calculus]] (2)
 
 ## Sections
 - [[§112★ Preservation of Angles and Scale Factors]] — B&C Sec. 112 ★

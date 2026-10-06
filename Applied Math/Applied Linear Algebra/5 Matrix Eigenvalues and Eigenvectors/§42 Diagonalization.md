@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 Powers of a diagonal matrix are trivial to compute, and so are powers of any matrix of the form $A = PDP^{-1}$ with $D$ diagonal: $A^k = PD^kP^{-1}$. Such an $A$ is called diagonalizable. The Diagonalization Theorem says exactly when this happens: when $A$ has $n$ linearly independent eigenvectors, which then form the columns of $P$, with the eigenvalues on the diagonal of $D$. Distinct eigenvalues guarantee this. With repeated eigenvalues it depends on the dimensions of the eigenspaces (the geometric multiplicities), which can be smaller than the algebraic multiplicities. Diagonalization is the main computational tool of the chapter: it gives $A^k$ for large $k$, limits $\lim A^k$, and, in [[§45 Discrete Dynamical Systems|§45]] and [[§46 Applications to Differential Equations|§46]], decouples dynamical systems.
 
-> [!example] Example §52.1: Powers of PDP⁻¹
+> [!example] Example §42.1: Powers of PDP⁻¹
 > **(a) Diagonal matrices.** If $D = \begin{bmatrix} 5 & 0 \\ 0 & 3 \end{bmatrix}$, then
 >
 > $$
@@ -42,21 +42,21 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 ^ex-42-1
 
-> [!definition] Definition §52.1: Diagonalizable Matrix
+> [!definition] Definition §42.1: Diagonalizable Matrix
 > A square matrix $A$ is said to be **diagonalizable** if $A$ is similar to a diagonal matrix ([[§41 The Characteristic Equation#^def-41-3|Definition §41.3]]), that is, if $A = PDP^{-1}$ for some invertible matrix $P$ and some diagonal matrix $D$. (Equivalently, $P^{-1}AP = D$; the lecture writes $M^{-1}AM = D$ or $B^{-1}AB = D$.)
 >
 > *Lay: 5.3 (text)*
 
 ^def-42-1
 
-> [!definition] Definition §52.3: Eigenvector Basis
+> [!definition] Definition §42.2: Eigenvector Basis
 > A basis of $\mathbb{R}^n$ consisting of eigenvectors of an $n \times n$ matrix $A$ is called an **eigenvector basis** of $\mathbb{R}^n$ (the lecture says *eigenbasis of $A$*).
 >
 > *Lay: 5.3 (text)*
 
 ^def-42-2
 
-> [!theorem] Theorem §52.1: The Diagonalization Theorem
+> [!theorem] Theorem §42.1: The Diagonalization Theorem
 > An $n \times n$ matrix $A$ is diagonalizable if and only if $A$ has $n$ linearly independent eigenvectors.
 >
 > In fact, $A = PDP^{-1}$, with $D$ a diagonal matrix, if and only if the columns of $P$ are $n$ linearly independent eigenvectors of $A$. In this case, the diagonal entries of $D$ are eigenvalues of $A$ that correspond, respectively, to the eigenvectors in $P$.
@@ -121,7 +121,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 ^rem-42-1
 
-> [!example] Example §52.2: Diagonalizing a 3 × 3 Matrix
+> [!example] Example §42.2: Diagonalizing a 3 × 3 Matrix
 > Diagonalize $A = \begin{bmatrix} 1 & 3 & 3 \\ -3 & -5 & -3 \\ 3 & 3 & 1 \end{bmatrix}$, if possible.
 >
 > **Step 1.** The characteristic equation turns out to be a cubic that can be factored:
@@ -160,7 +160,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 ^ex-42-2
 
-> [!theorem] Theorem §52.2: Distinct Eigenvalues Imply Diagonalizable
+> [!theorem] Theorem §42.2: Distinct Eigenvalues Imply Diagonalizable
 > An $n \times n$ matrix with $n$ distinct eigenvalues is diagonalizable.
 >
 > *Lay: Theorem 6 (5.3)*
@@ -181,7 +181,7 @@ For example, $A = \begin{bmatrix} 5 & -8 & 1 \\ 0 & 0 & 7 \\ 0 & 0 & -2 \end{bma
 
 The condition is sufficient but not *necessary*: the matrix of [[§42 Diagonalization#^ex-42-2|Example §42.2]] is diagonalizable with only two distinct eigenvalues. Nor is every matrix diagonalizable.
 
-> [!example] Example §52.3: Matrices That Are Not Diagonalizable
+> [!example] Example §42.3: Matrices That Are Not Diagonalizable
 > **(a)** (Lecture.) $A = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}$ is not diagonalizable. Two reasons:
 > - *By powers.* $A^2 = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}$. If $M^{-1}AM = D$ were diagonal, then $D^2 = M^{-1}AMM^{-1}AM = M^{-1}A^2M = 0$. A diagonal matrix with $D^2 = 0$ has all diagonal entries $d_{ii}$ with $d_{ii}^2 = 0$, so $D = 0$ and $A = MDM^{-1} = 0$, a contradiction.
 > - *By eigenvectors.* $\det(A - \lambda I) = \det\begin{bmatrix} -\lambda & 1 \\ 0 & -\lambda \end{bmatrix} = \lambda^2$, so the only eigenvalue is $0$, with algebraic multiplicity $2$. Its eigenspace is $\operatorname{Nul} A = \operatorname{Span}\{(1, 0)\}$, one-dimensional. Every eigenvector is a multiple of $(1, 0)$, so there are not two linearly independent eigenvectors, and [[§42 Diagonalization#^thm-42-1|Theorem §42.1]] says $A$ is not diagonalizable.
@@ -212,7 +212,7 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 
 ^def-42-3
 
-> [!theorem] Theorem §52.3: Diagonalizability and Multiplicities
+> [!theorem] Theorem §42.3: Diagonalizability and Multiplicities
 > Let $A$ be an $n \times n$ matrix whose distinct eigenvalues are $\lambda_1, \ldots, \lambda_p$.
 >
 > a. For $1 \le k \le p$, the dimension of the eigenspace for $\lambda_k$ is less than or equal to the multiplicity of the eigenvalue $\lambda_k$. (Geometric multiplicity $\le$ algebraic multiplicity; and the geometric multiplicity is $\ge 1$.)
@@ -264,7 +264,7 @@ If $A$ has $n$ distinct eigenvalues, any choice of eigenvectors gives an inverti
 
 ^rem-42-2
 
-> [!example] Example §52.4: Multiplicities in Diagonalizable Matrices
+> [!example] Example §42.4: Multiplicities in Diagonalizable Matrices
 > **(a)** Diagonalize $A = \begin{bmatrix} 2 & 2 & 1 \\ 1 & 3 & 1 \\ 1 & 2 & 2 \end{bmatrix}$, whose characteristic polynomial is $-(\lambda - 1)^2(\lambda - 5)$ ([[§41 The Characteristic Equation#^ex-41-3|Example §41.3]]).
 >
 > **$\lambda = 1$.** $A - I = \begin{bmatrix} 1 & 2 & 1 \\ 1 & 2 & 1 \\ 1 & 2 & 1 \end{bmatrix} \sim \begin{bmatrix} 1 & 2 & 1 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix}$, so $x_1 = -2x_2 - x_3$ with $x_2, x_3$ free:

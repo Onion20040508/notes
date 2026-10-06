@@ -62,14 +62,14 @@ $$
 
 ## Separation of Variables
 
-> [!definition] Definition §31.1: Trivial Solution
+> [!definition] Definition §25.1: Trivial Solution
 > Since the partial differential equation (8) and the boundary conditions (9), (10) are homogeneous, the function $w \equiv 0$ satisfies them. Because it is obvious and of no help in satisfying the initial condition, it is called the **trivial solution**.
 >
 > *Powers: 2.3 (text)*
 
 ^def-25-1
 
-> [!definition] Definition §31.3: Separation of Variables; Product Solution
+> [!definition] Definition §25.2: Separation of Variables; Product Solution
 > The **product method**, **separation of variables**, or **Fourier's method** seeks nontrivial solutions of the homogeneous equation and boundary conditions in the form of a **product**
 >
 > $$
@@ -82,7 +82,7 @@ $$
 
 ^def-25-2
 
-> [!theorem] Proposition §31.1: The Separated Equations
+> [!theorem] Proposition §25.1: The Separated Equations
 > A product $w(x, t) = \phi(x)T(t)$, with neither factor identically zero, satisfies the heat equation (8) and the boundary conditions (9), (10) if and only if there is a constant $p$ (the **separation constant**) such that
 >
 > $$
@@ -132,7 +132,7 @@ $$
 
 The task now is to solve (13) and satisfy the boundary conditions (14) while avoiding the trivial solution. Problems of this kind are called eigenvalue problems ([[§26 Example꞉ Insulated Bar#^def-26-1|Definition §26.1]]).
 
-> [!theorem] Theorem §31.2: The Eigenvalue Problem with Fixed Ends
+> [!theorem] Theorem §25.2: The Eigenvalue Problem with Fixed Ends
 > The problem
 >
 > $$
@@ -190,7 +190,7 @@ The task now is to solve (13) and satisfy the boundary conditions (14) while avo
 
 *Uses:* [[§25 Example꞉ Fixed End Temperatures#^prop-25-1|§25.1]], [[§17 Homogeneous Differential Equations with Constant Coefficients#^thm-17-2|331 Thm. §17.2]], [[§19 Complex Roots of the Characteristic Equation#^thm-19-2|331 Thm. §19.2]]
 
-> [!theorem] Proposition §31.3: The Product Solutions
+> [!theorem] Proposition §25.3: The Product Solutions
 > For each $n = 1, 2, 3, \ldots$ the product
 >
 > $$
@@ -211,7 +211,7 @@ The task now is to solve (13) and satisfy the boundary conditions (14) while avo
 
 ^pf-25-3
 
-> [!theorem] Theorem §31.4: Principle of Superposition
+> [!theorem] Theorem §25.4: Principle of Superposition
 > If $u_1, u_2, \ldots$ are solutions of the same linear, homogeneous equations, then so is
 >
 > $$
@@ -291,7 +291,7 @@ There are infinitely many product solutions, so an infinite series is needed to 
 
 ## Examples
 
-> [!example] Example §31.1: Initial Temperature Zero
+> [!example] Example §25.1: Initial Temperature Zero
 > Solve
 >
 > $$
@@ -336,7 +336,7 @@ There are infinitely many product solutions, so an infinite series is needed to 
 
 The dimensionless combinations $x/a$ and $kt/a^2$ are the only way $x$ and $t$ enter (19): a rod twice as long takes four times as long to reach the same stage.
 
-> [!example] Example §31.2: A Homework Problem from Start to Finish
+> [!example] Example §25.2: A Homework Problem from Start to Finish
 > Solve
 >
 > $$
@@ -375,7 +375,7 @@ The dimensionless combinations $x/a$ and $kt/a^2$ are the only way $x$ and $t$ e
 
 ^ex-25-2
 
-> [!example] Example §31.3: A Different Diffusivity
+> [!example] Example §25.3: A Different Diffusivity
 > Solve $u_t = 2u_{xx}$, $0 < x < 1$, $t > 0$; $u(x, 0) = 4x$; $u(0, t) = 0$, $u(1, t) = 3$.
 >
 > **Steady state.** $0 = 2v''$, $v(0) = 0$, $v(1) = 3$: $v(x) = 3x$ ([[§24 Steady-State Temperatures#^ex-24-1|Example §24.1]]).

@@ -15,7 +15,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 
 ## 9.1 Properties of Functions
 
-> [!definition] Definition §9.3: Injection
+> [!definition] Definition §9.1: Injection
 > Let $f : X \to Y$ be a function. $f$ is an **injection** (is **injective**, **one-to-one**) if no element of $Y$ is assigned to more than one element of $X$, i.e. $f$ takes different values at different points:
 >
 > $$
@@ -32,7 +32,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > - Computational version: one-to-one functions and the horizontal line test, [[§5 Inverse Functions and Logarithms#^def-5-1|Calc Def. §5.1]] and [[§5 Inverse Functions and Logarithms#^thm-5-1|Calc Thm. §5.1]] (with worked examples).
 > - For linear maps of ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-3|235 Def. §10.3]] (one-to-one), tested by pivot positions in [[§10 The Matrix of a Linear Transformation#^thm-10-3|235 Thm. §10.3]], with worked examples.
 
-> [!definition] Definition §9.4: Surjection
+> [!definition] Definition §9.2: Surjection
 > Let $f : X \to Y$ be a function. $f$ is a **surjection** (is **surjective**, **onto**) if each element of $Y$ is assigned to some element of $X$, i.e. each point of the codomain is a value:
 >
 > $$
@@ -48,7 +48,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > - For linear maps: [[§8 Null Spaces and Ranges#^ladr-3-19|LADR Def. 3.19]] (surjective).
 > - For linear maps of ℝⁿ: [[§10 The Matrix of a Linear Transformation#^def-10-2|235 Def. §10.2]] (onto), tested by pivot positions in [[§10 The Matrix of a Linear Transformation#^thm-10-3|235 Thm. §10.3]], with worked examples.
 
-> [!definition] Definition §9.5: Bijection
+> [!definition] Definition §9.3: Bijection
 > Let $f : X \to Y$ be a function. $f$ is a **bijection** (is **bijective**, **one-to-one and onto**) if it is both an injection and a surjection.
 >
 > *Eccles: Definition 9.1.1*
@@ -58,7 +58,7 @@ A function assigns exactly one value to each point of its domain, but says nothi
 > [!remark]- Connections
 > - Same notion: [[§1 Countability and Set Theory#^def-1-6|551 Def. §1.6]].
 
-> [!definition] Definition §9.7: Pre-image of an Element
+> [!definition] Definition §9.4: Pre-image of an Element
 > Let $f : X \to Y$ and $y \in Y$. A **pre-image** of $y$ (under $f$) is an element $x \in X$ such that $y = f(x)$.
 >
 > *Eccles: Definition 9.1.2*
@@ -165,7 +165,7 @@ Since injectivity and surjectivity are universal and existential statements, the
 
 ## 9.2 Bijections and Inverses
 
-> [!definition] Definition §9.8: Invertible Function; Inverse
+> [!definition] Definition §9.5: Invertible Function; Inverse
 > A function $f : X \to Y$ is **invertible** if there exists a function $g : Y \to X$ such that
 >
 > $$
@@ -314,14 +314,14 @@ Because of [[§9 Injections, Surjections and Bijections#^thm-9-2|Theorem §9.2]]
 
 The notation $f^{-1}$ is also used when $f$ is not a bijection, for a function between power sets. A function $f : X \to Y$ gives two functions between $\mathcal{P}(X)$ and $\mathcal{P}(Y)$ ([[§6a Operations on Sets#^def-6a-5|Def. §6a.5]]), one in each direction.
 
-> [!definition] Definition §9.9: Image of a Subset
+> [!definition] Definition §9.6: Image of a Subset
 > Let $f : X \to Y$ be a function. $\overrightarrow{f} : \mathcal{P}(X) \to \mathcal{P}(Y)$ is defined by $\overrightarrow{f}(A) = \{f(x) \mid x \in A\}$ for $A \subseteq X$, the **image** of $A$.
 >
 > *Eccles: Definition 9.3.1*
 
 ^def-9-6
 
-> [!definition] Definition §9.10: Pre-image of a Subset
+> [!definition] Definition §9.7: Pre-image of a Subset
 > Let $f : X \to Y$ be a function. $\overleftarrow{f} : \mathcal{P}(Y) \to \mathcal{P}(X)$ is defined by $\overleftarrow{f}(B) = \{x \in X \mid f(x) \in B\}$ for $B \subseteq Y$, the **pre-image** (or inverse image) of $B$.
 >
 > *Eccles: Definition 9.3.1*

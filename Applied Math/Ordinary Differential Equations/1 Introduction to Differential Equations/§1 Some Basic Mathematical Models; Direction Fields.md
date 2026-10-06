@@ -15,7 +15,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Differential Equations as Mathematical Models
 
-> [!definition] Definition §1.2: Differential Equation
+> [!definition] Definition §1.1: Differential Equation
 > A **differential equation** is an equation containing derivatives of an unknown function.
 >
 > *BDP: 1.1 (text)*
@@ -25,7 +25,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 > [!remark]- Connections
 > - See also: [[§66 Modeling with Differential Equations#^def-66-5|Calc Def. §66.5]] (Stewart's definition, with the order of an equation; order is [[§3 Classification of Differential Equations#^def-3-3|Definition §3.3]] here) and Stewart's first models: natural growth, [[§66 Modeling with Differential Equations#^def-66-1|Calc Def. §66.1]], and the spring, [[§66 Modeling with Differential Equations#^def-66-4|Calc Def. §66.4]].
 
-> [!definition] Definition §1.3: Mathematical Model
+> [!definition] Definition §1.2: Mathematical Model
 > A differential equation that describes some physical process is called a **mathematical model** of the process.
 >
 > Constants in a model that depend on the particular object or situation, and may take a range of values (such as the mass $m$ and the drag coefficient $\gamma$ below), are called **parameters**. Constants with a fixed value for all objects (such as $g$) are physical constants.
@@ -63,7 +63,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 
 ## Direction Fields
 
-> [!definition] Definition §1.4: Direction Field
+> [!definition] Definition §1.3: Direction Field
 > Consider a first-order equation
 >
 > $$
@@ -82,7 +82,7 @@ Laws of nature are often statements about rates, and a law about rates written i
 > - See also: [[§67 Direction Fields and Euler's Method#^def-67-1|Calc Def. §67.1]] (Stewart's treatment, with the direction field of $y' = x^2 + y^2 - 1$) and its [[§67 Direction Fields and Euler's Method#^rem-67-1|Calc Remark: Method — Sketching Solution Curves from a Direction Field]]. The same tangent segments, followed step by step, give Euler's method ([[§13 Numerical Approximations꞉ Euler's Method#^def-13-1|Definition §13.1]]).
 > - Equilibrium solutions ([[§1 Some Basic Mathematical Models; Direction Fields#^def-1-4|Definition §1.4]] below) in Stewart: [[§66 Modeling with Differential Equations#^def-66-3|Calc Def. §66.3]].
 
-> [!definition] Definition §1.5: Equilibrium Solution
+> [!definition] Definition §1.4: Equilibrium Solution
 > A constant function $y(t) = y_0$ that satisfies the differential equation is an **equilibrium solution**. For an equation $dy/dt = f(y)$ whose rate function does not depend on $t$, the equilibrium solutions are found by solving the algebraic equation $f(y) = 0$.
 >
 > For the falling object, the equilibrium solution is called the **terminal velocity**: it is the velocity at which gravity and drag balance exactly.

@@ -15,7 +15,7 @@ The heat equation alone ([[§22 Derivation and Boundary Conditions|§22]]) has i
 
 ## Initial and Boundary Conditions
 
-> [!definition] Definition §29.2: Initial Condition
+> [!definition] Definition §23.1: Initial Condition
 > The **initial condition** specifies the temperature at every point of the rod at the start:
 >
 > $$
@@ -81,7 +81,7 @@ The **boundary conditions** describe what happens at the ends. Let $x_0$ denote 
 
 ^def-23-4
 
-> [!theorem] Proposition §29.1: Convection Gives a Robin Condition
+> [!theorem] Proposition §23.1: Convection Gives a Robin Condition
 > Suppose the surface at $x = a$ is exposed to air or another fluid at temperature $T(t)$, and that, by **Newton's law of cooling**, the rate at which heat passes from the body to the fluid is proportional to the difference between their temperatures:
 >
 > $$
@@ -147,7 +147,7 @@ Many other kinds of boundary conditions exist and are even realizable, but these
 
 ^def-23-6
 
-> [!theorem] Theorem §29.2: Existence and Uniqueness
+> [!theorem] Theorem §23.2: Existence and Uniqueness
 > A complete initial value–boundary value problem for the heat equation, such as (13)–(16), has one, and only one, solution.
 >
 > *Powers: 2.1 (text)*
@@ -159,9 +159,8 @@ Many other kinds of boundary conditions exist and are even realizable, but these
 > [!remark] Remark: Rods and Slabs
 > The heat equation was derived for a "rod", an object much longer than it is wide. It applies equally to a "slab", an object much wider than it is thick. What matters is that the temperature varies in only one space direction (along the rod, or through the thickness of the slab). The multidimensional heat equation is derived in [[§52 Three-Dimensional Heat Equation#^thm-52-3|Theorem §52.3]].
 
-^rem-23-3
-
-> [!example] Example §29.1: Reading Off the Boundary Conditions
+^rem-23-1
+> [!example] Example §23.1: Reading Off the Boundary Conditions
 > Consider
 >
 > $$
@@ -181,7 +180,7 @@ Many other kinds of boundary conditions exist and are even realizable, but these
 
 ^ex-23-1
 
-> [!example] Example §29.2: Convection at the Left End
+> [!example] Example §23.2: Convection at the Left End
 > Put (10) in the form (8), and find the condition when the surface at $x = 0$ (the left end) is exposed to convection with a fluid at temperature $T(t)$.
 >
 > **At $x = a$.** (10) is $hu(a, t) + \kappa u_x(a, t) = hT(t)$. The signs say that heat flows toward lower temperature: if $u(a, t) > T(t)$, the rod is hotter than the fluid, so $q(a, t) = h(u(a, t) - T(t)) > 0$ (heat leaves to the right) and $u_x(a, t) = -q(a, t)/\kappa < 0$ (the rod cools toward its right end).
@@ -200,7 +199,7 @@ Many other kinds of boundary conditions exist and are even realizable, but these
 
 ^ex-23-2
 
-> [!example] Example §29.3: Convection Through the Lateral Surface
+> [!example] Example §23.3: Convection Through the Lateral Surface
 > Suppose the rod exchanges heat through its cylindrical surface by convection with a surrounding fluid at constant temperature $U$, the rate of transfer being proportional to the exposed area and to the temperature difference (Newton's law of cooling). Find $g$ in (1) and the form of (4).
 >
 > Let $P$ be the perimeter of a cross section. The slice between $x$ and $x + \Delta x$ exposes the area $P\,\Delta x$, so it loses heat to the fluid at the rate $hP\,\Delta x\,(u - U)$. As a generation rate per unit volume (volume $A\,\Delta x$),
@@ -238,7 +237,7 @@ The same equations have a second, completely different but equally important phy
 
 ^def-23-7
 
-> [!theorem] Theorem §29.3: The Diffusion Equation
+> [!theorem] Theorem §23.3: The Diffusion Equation
 > Conservation of mass for the layer between $x$ and $x + \Delta x$,
 >
 > $$

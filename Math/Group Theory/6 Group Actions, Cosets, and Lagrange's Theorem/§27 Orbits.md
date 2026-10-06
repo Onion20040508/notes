@@ -24,8 +24,8 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Orbit size is the index of the stabilizer: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; cosets are orbits: [[§28 Left and Right Cosets#^prop-28-1|Cosets Are Orbits]].
-> - The orbit-space notation is restated from lecture in [[§27 Orbits#^def-27-2|Orbit Space Notation, Def. §27.2]].
-> - With topologies: the orbit space X/G with the quotient topology, [[§12 Group Actions and Orbit Spaces#^def-12-5|591 Def. §12.5]] (orbits as in [[§12 Group Actions and Orbit Spaces#^def-12-3|591 Def. §12.3]]; e.g. complex projective space as an orbit space, [[§12 Group Actions and Orbit Spaces#^ex-12-3|591 Ex. §12.3]]); a continuous transitive action makes X a homogeneous space, [[§13 Homogeneous Spaces#^def-13-1|591 Def. §13.1]].
+> - The orbit-space notation is restated from lecture in [[§27 Orbits#^def-27-4|Orbit Space Notation, Def. §27.4]].
+> - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (orbits as in [[§13 Group Actions and Orbit Spaces#^def-13-3|591 Def. §13.3]]; e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-3|591 Ex. §13.3]]); a continuous transitive action makes X a homogeneous space, [[§14 Homogeneous Spaces#^def-14-2|591 Def. §14.2]].
 
 > [!theorem] Proposition §27.1: Orbits Partition $X$
 > Let $G$ act on $X$ and $x, y \in X$. Then either $Gx = Gy$ or $Gx \cap Gy = \varnothing$. Hence $X$ is the disjoint union of the distinct orbits.
@@ -58,11 +58,11 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The orbit space is the [[§22 Partitions and Equivalence Relations#^def-22-6|quotient set]] (250 Def. §22.6) of this relation; with a topology it is a quotient space in MATH 590: [[§13 Quotient Topology#^def-13-3|Quotient Space]] (590 Def. §13.3).
-> - Same relation in 591, [[§12 Group Actions and Orbit Spaces#^def-12-4|591 Def. §12.4]] and [[§12 Group Actions and Orbit Spaces#^prop-12-1|591 Prop. §12.1]]; for a continuous action it is an open equivalence relation, [[§12 Group Actions and Orbit Spaces#^lem-12-3|591 Lemma §12.3]].
+> - Same relation in 591, [[§13 Group Actions and Orbit Spaces#^def-13-4|591 Def. §13.4]] and [[§13 Group Actions and Orbit Spaces#^prop-13-1|591 Prop. §13.1]]; for a continuous action it is an open equivalence relation, [[§13 Group Actions and Orbit Spaces#^lem-13-3|591 Lemma §13.3]].
 
 The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right multiplication, discussed [[§28 Left and Right Cosets#^prop-28-1|below]].
 
-> [!definition] Definition §27.2: Orbit Space Notation
+> [!definition] Definition §27.4: Orbit Space Notation
 > For a left action of $G$ on $X$, the set of orbits is written
 >
 > $$
@@ -73,7 +73,7 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 >
 > *Source: lecture*
 
-^def-27-2
+^def-27-4
 
 ![[m493-25-2.svg]]
 *The orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin, the origin itself being a one-point orbit; the orbit of $x$ (red) is the sphere of radius $|x|$. The ray $\mathbb{R}_{\geq 0}$ (blue) meets each orbit exactly once, which is the bijection $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$.*

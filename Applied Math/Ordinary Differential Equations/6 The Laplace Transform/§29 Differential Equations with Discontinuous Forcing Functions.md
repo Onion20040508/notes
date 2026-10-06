@@ -15,7 +15,7 @@ This section puts the step functions of [[§28 Step Functions|§28]] to work: li
 
 ## Solving with the Laplace Transform
 
-> [!definition] Definition §35.1: Forcing Function
+> [!definition] Definition §29.1: Forcing Function
 > In a nonhomogeneous linear equation $ay'' + by' + cy = g(t)$, the nonhomogeneous term $g(t)$ is called the **forcing function**. In a mechanical system it is the applied force, in a circuit the applied voltage (or its derivative). In this section $g$ is piecewise continuous and may be discontinuous.
 >
 > *BDP: 6.4 (text)*
@@ -31,7 +31,7 @@ This section puts the step functions of [[§28 Step Functions|§28]] to work: li
 
 ^rem-29-1
 
-> [!example] Example §35.1: A Rectangular Pulse
+> [!example] Example §29.1: A Rectangular Pulse
 > Solve
 >
 > $$
@@ -88,7 +88,7 @@ $$
 
 So $y''$ jumps by $\frac12$ at $t = 5$, and in the same way by $-\frac12$ at $t = 20$. The jump of size $1$ in the forcing is balanced by a jump in the highest-order term $2y''$. This is general.
 
-> [!theorem] Proposition §35.1: Continuity of y and y′ Across a Jump in g
+> [!theorem] Proposition §29.1: Continuity of y and y′ Across a Jump in g
 > Let $p$ and $q$ be continuous on $\alpha < t < \beta$, let $g$ be piecewise continuous there, and let $y$ be the solution of
 >
 > $$
@@ -128,7 +128,7 @@ For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in
 
 ## More Examples
 
-> [!example] Example §35.2: Ramp Loading
+> [!example] Example §29.2: Ramp Loading
 > Describe and find the solution of
 >
 > $$
@@ -168,7 +168,7 @@ For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in
 ![[m331-24-2.svg]]
 *Ramp loading of $y'' + 4y = g(t)$. While the load ramps up ($5 < t < 10$) the solution (blue) oscillates about the line $g(t)/4$ (orange, dashed), the quasi-static response; once the load is constant it oscillates about $\frac14$ with the constant amplitude $A = |\sin 5|/20 \approx 0.048$ (dotted band). The amplitude depends on how fast the load was applied.*
 
-> [!example] Example §35.3: A Force Removed at t = 6
+> [!example] Example §29.3: A Force Removed at t = 6
 > Solve $y'' + y = g(t)$, $y(0) = 0$, $y'(0) = 0$, where $g(t) = t$ for $0 \le t < 6$ and $g(t) = 0$ for $t \ge 6$.
 >
 > **Steps.** $g(t) = t - u_6(t)\,t = t - u_6(t)\big[(t - 6) + 6\big]$, so $\mathcal{L}\{g\} = \dfrac{1}{s^2} - e^{-6s}\Big(\dfrac{1}{s^2} + \dfrac{6}{s}\Big)$.
@@ -197,7 +197,7 @@ For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in
 
 ^ex-29-3
 
-> [!example] Example §35.4: A Step Switched On at t = 6
+> [!example] Example §29.4: A Step Switched On at t = 6
 > Use Laplace transforms to solve $y'' + 4y' + 13y = u_6(t)$, $y(0) = 0$, $y'(0) = 1$, and find $\lim_{t \to \infty} y(t)$.
 >
 > **Transform.** $s^2Y - 1 + 4sY + 13Y = \dfrac{e^{-6s}}{s}$, so

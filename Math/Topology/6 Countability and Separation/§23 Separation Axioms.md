@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## The Separation Hierarchy
 
-> [!definition] Definition §29.1: $T_1$ Axiom
+> [!definition] Definition §23.1: $T_1$ Axiom
 > $X$ is **$T_1$** if single-point sets $\{x\}$ are closed for all $x \in X$.
 
 ^def-23-1
@@ -18,12 +18,12 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - First met in [[§9 Hausdorff Spaces#^prop-9-2|§9.2 (T₁ Axiom)]], where [[§9 Hausdorff Spaces#^thm-9-1|Finite Point Sets are Closed in Hausdorff Spaces]] shows Hausdorff $\Rightarrow$ $T_1$.
 
-> [!definition] Definition §29.2: Regular
+> [!definition] Definition §23.2: Regular
 > $X$ is **regular** if $X$ is [[§23 Separation Axioms#^def-23-1|T₁]] and for each pair of a point $x \in X$ and a closed set $B$ with $x \notin B$, there exist disjoint open sets $U \ni x$ and $V \supseteq B$.
 
 ^def-23-2
 
-> [!definition] Definition §29.3: Normal
+> [!definition] Definition §23.3: Normal
 > $X$ is **normal** if $X$ is [[§23 Separation Axioms#^def-23-1|T₁]] and for each pair of disjoint closed sets $A$ and $B$, there exist disjoint open sets $U \supseteq A$ and $V \supseteq B$.
 
 ^def-23-3
@@ -47,7 +47,7 @@ tags: [topology, math590]
 
 ^rem-23-2
 
-> [!theorem] Theorem §29.1: Separation Hierarchy
+> [!theorem] Theorem §23.1: Separation Hierarchy
 > $$
 > \text{Normal} \Rightarrow \text{Regular} \Rightarrow \text{Hausdorff} \Rightarrow T_1
 > $$
@@ -77,7 +77,7 @@ tags: [topology, math590]
 
 ## Examples
 
-> [!example] Example §29.1: $\mathbb{R}_K$ is Hausdorff but Not Regular
+> [!example] Example §23.1: $\mathbb{R}_K$ is Hausdorff but Not Regular
 > Let $\mathbb{R}_K$ be $\mathbb{R}$ with basis consisting of:
 > - Intervals $(a, b)$, and
 > - Sets of the form $(a, b) \setminus K$, where $K = \{1/n \mid n \in \mathbb{Z}_+\}$.
@@ -110,7 +110,7 @@ tags: [topology, math590]
 
 *Chain: earlier in [[§6 Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · [[K-topology|all appearances]]*
 
-> [!example] Example §29.2: $\mathbb{R}_\ell$ is Normal
+> [!example] Example §23.2: $\mathbb{R}_\ell$ is Normal
 > $\mathbb{R}_\ell$ ([[§2 Basis for a Topology#^ex-2-3|lower limit topology]], basis $\{[a, b)\}$) is normal.
 >
 > *Proof:* One-point sets are closed ($\mathbb{R}_\ell$ is [[§2 Basis for a Topology#^ex-2-5|finer]] than $\mathbb{R}_{std}$, so $T_1$).
@@ -142,7 +142,7 @@ tags: [topology, math590]
 
 ## Characterization of Regular and Normal Spaces
 
-> [!theorem] Lemma §29.2: Closure Characterization
+> [!theorem] Lemma §23.2: Closure Characterization
 > Let $X$ be a $T_1$-space (one-point sets are closed).
 > - **(a)** $X$ is regular if and only if given $x \in X$ and a neighborhood $U$ of $x$, there exists a neighborhood $V$ of $x$ such that $\overline{V} \subseteq U$.
 > - **(b)** $X$ is normal if and only if given a closed set $A$ and an open set $U$ containing $A$, there exists an open set $V$ containing $A$ such that $\overline{V} \subseteq U$.

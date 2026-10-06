@@ -17,15 +17,16 @@ tags: [chapter, calculus]
 - [[§60 Arc Length]] — Stewart 8.1
 - [[§61 Area of a Surface of Revolution]] — Stewart 8.2
 - [[§62 Applications to Physics and Engineering]] — Stewart 8.3
+- [[§63 Moments and Centers of Mass]] — Stewart 8.3
 - [[§64 Applications to Economics and Biology]] — Stewart 8.4
 - [[§65 Probability]] — Stewart 8.5
 
 ## Central results
-- [[Arc Length Formula]] (§52.1)
+- [[Arc Length Formula]] (§60.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Arc Length Formula|Theorem §60.1: The Arc Length Formula]]: 7 later results
+- [[Arc Length Formula|Theorem §60.1: The Arc Length Formula]]: 9 later results
 - [[§60 Arc Length#^thm-60-2|Theorem §60.2: Arc Length of a Curve x = g(y)]]: 3 later results
 - [[§61 Area of a Surface of Revolution#^thm-61-1|Theorem §61.1: Area of a Band]]: 3 later results
-- [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3: Moments and Centroid of a Plate]]: 3 later results
+- [[§61 Area of a Surface of Revolution#^thm-61-2|Theorem §61.2: Rotating a Curve x = g(y) About the x-Axis]]: 3 later results

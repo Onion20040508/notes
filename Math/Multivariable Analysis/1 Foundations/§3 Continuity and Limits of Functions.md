@@ -280,7 +280,7 @@ The following theorems show that continuous functions are closed under the stand
 > [!remark]- Connections
 > - Worked examples: the two-path test, [[§107 Limits and Continuity#^thm-107-1|Calc Thm. §107.1]], applied to xy/(x² + y²) in [[§107 Limits and Continuity#^ex-107-1|Calc Ex. §107.1]].
 
-> [!definition] Definition §3.4: Big-O Notation
+> [!definition] Definition §3.3: Big-O Notation
 > Let $\rho = \sqrt{x^2 + y^2}$.
 > - $f(x, y) = O(\rho)$ means $|f(x, y)| \leq C\rho$ for some constant $C$ near the origin.
 

@@ -15,7 +15,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ## The Inner Product
 
-> [!definition] Definition §59.1: Inner Product
+> [!definition] Definition §49.1: Inner Product
 > Regard vectors $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n$ as $n \times 1$ matrices. Then $\mathbf{u}^T$ is $1 \times n$, and the matrix product $\mathbf{u}^T\mathbf{v}$ is $1 \times 1$; we write it as a scalar without brackets. This number is the **inner product** (or **dot product**) of $\mathbf{u}$ and $\mathbf{v}$, written $\mathbf{u} \cdot \mathbf{v}$. If $\mathbf{u} = (u_1, \ldots, u_n)$ and $\mathbf{v} = (v_1, \ldots, v_n)$, then
 >
 > $$
@@ -33,7 +33,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 > - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-1|LADR 6.1]] (dot product on $\mathbb{R}^n$) and [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]], where the properties of [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|Theorem §49.1]] become the axioms of an inner product on any vector space, over $\mathbb{R}$ or $\mathbb{C}$ (here: [[§56 Inner Product Spaces#^def-56-1|Definition §56.1]]).
 > - See also: for vectors with complex entries BDP distinguishes $\mathbf{x}^T\mathbf{y}$ from the inner product $(\mathbf{x}, \mathbf{y}) = \mathbf{x}^T\overline{\mathbf{y}}$, which gives the length and orthogonality, [[§34 Matrices#^def-34-5|331 Def. §34.5]], [[§34 Matrices#^prop-34-2|331 Prop. §34.2]]; the two products compared on an example, [[§34 Matrices#^ex-34-2|331 Ex. §34.2]].
 
-> [!example] Example §59.1: Computing Inner Products
+> [!example] Example §49.1: Computing Inner Products
 > **(a)** For $\mathbf{v} = \begin{bmatrix} 5 \\ 3 \end{bmatrix}$ and $\mathbf{w} = \begin{bmatrix} -1 \\ 7 \end{bmatrix}$,
 >
 > $$
@@ -56,7 +56,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^ex-49-1
 
-> [!theorem] Theorem §59.1: Properties of the Inner Product
+> [!theorem] Theorem §49.1: Properties of the Inner Product
 > Let $\mathbf{u}$, $\mathbf{v}$, $\mathbf{w}$ be vectors in $\mathbb{R}^n$ and $c$ a scalar. Then
 >
 > a. $\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}$
@@ -96,7 +96,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ## The Length of a Vector
 
-> [!definition] Definition §59.2: Length (Norm)
+> [!definition] Definition §49.2: Length (Norm)
 > The **length** (or **norm**) of $\mathbf{v} \in \mathbb{R}^n$ is the nonnegative scalar
 >
 > $$
@@ -109,7 +109,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^def-49-2
 
-> [!theorem] Proposition §59.2: Length of a Scalar Multiple
+> [!theorem] Proposition §49.2: Length of a Scalar Multiple
 > For every $\mathbf{v} \in \mathbb{R}^n$ and every scalar $c$,
 >
 > $$
@@ -127,7 +127,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 *Uses:* [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|§49.1]], [[§49 Inner Product, Length, and Orthogonality#^def-49-2|Def. §49.2]]
 
-> [!definition] Definition §59.3: Unit Vector; Normalizing
+> [!definition] Definition §49.3: Unit Vector; Normalizing
 > A **unit vector** is a vector of length $1$. If $\mathbf{v} \ne \mathbf{0}$, then
 >
 > $$
@@ -140,7 +140,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^def-49-3
 
-> [!example] Example §59.2: Normalizing a Vector
+> [!example] Example §49.2: Normalizing a Vector
 > **(a)** Find a unit vector $\mathbf{u}$ in the same direction as $\mathbf{v} = (1, -2, 2, 0)$.
 >
 > $$
@@ -166,7 +166,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ## Distance in ℝⁿ
 
-> [!definition] Definition §59.4: Distance
+> [!definition] Definition §49.4: Distance
 > For $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n$, the **distance between $\mathbf{u}$ and $\mathbf{v}$** is the length of $\mathbf{u} - \mathbf{v}$:
 >
 > $$
@@ -185,7 +185,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^def-49-4
 
-> [!example] Example §59.3: The Distance Between Two Vectors
+> [!example] Example §49.3: The Distance Between Two Vectors
 > Compute the distance between $\mathbf{u} = (7, 1)$ and $\mathbf{v} = (3, 2)$.
 >
 > $$
@@ -200,7 +200,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ## Orthogonal Vectors
 
-> [!theorem] Proposition §59.3: Length of a Sum and of a Difference
+> [!theorem] Proposition §49.3: Length of a Sum and of a Difference
 > For all $\mathbf{u}, \mathbf{v} \in \mathbb{R}^n$,
 >
 > $$
@@ -242,7 +242,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^rem-49-1
 
-> [!definition] Definition §59.5: Orthogonal Vectors
+> [!definition] Definition §49.5: Orthogonal Vectors
 > Two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\mathbb{R}^n$ are **orthogonal** (to each other) if $\mathbf{u} \cdot \mathbf{v} = 0$.
 >
 > The zero vector is orthogonal to every vector, since $\mathbf{0}^T\mathbf{v} = 0$.
@@ -251,7 +251,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^def-49-5
 
-> [!theorem] Theorem §59.4: The Pythagorean Theorem
+> [!theorem] Theorem §49.4: The Pythagorean Theorem
 > Two vectors $\mathbf{u}$ and $\mathbf{v}$ are orthogonal if and only if
 >
 > $$
@@ -273,6 +273,6 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-12|LADR 6.12]], for any inner product space; Axler states only the direction "orthogonal $\Rightarrow$ the identity". The converse holds over $\mathbb{R}$ by the same computation, but fails over $\mathbb{C}$, where the identity says only $\operatorname{Re}\langle u, v \rangle = 0$.
-> - Hilbert-space version, with its extension to finitely many orthonormal vectors: [[§24 Orthonormal Sets and Bases#^lem-24-1|556 Lem. §24.1]].
+> - Hilbert-space version, with its extension to finitely many orthonormal vectors: [[§27 Orthonormal Sets and Bases#^lem-27-1|556 Lem. §27.1]].
 
 *Continued in [[§50 Orthogonal Complements and Angles]]: orthogonal complements, the fundamental subspaces as orthogonal complements, and angles in ℝ² and ℝ³.*

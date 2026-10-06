@@ -9,8 +9,8 @@ tags: [chapter, complex-variables]
 
 *Brown–Churchill, Chapter 4.*
 
-**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (7), [[· 2 Analytic Functions|2 Analytic Functions]] (29), [[· 3 Elementary Functions|3 Elementary Functions]] (12), [[· 5 Series|5 Series]] (2), [[· 6 Residues and Poles|6 Residues and Poles]] (1), [[· 7 Applications of Residues|7 Applications of Residues]] (3)
-**Used by:** [[· 1 Complex Numbers|1 Complex Numbers]] (2), [[· 2 Analytic Functions|2 Analytic Functions]] (5), [[· 3 Elementary Functions|3 Elementary Functions]] (1), [[· 5 Series|5 Series]] (26), [[· 6 Residues and Poles|6 Residues and Poles]] (13), [[· 7 Applications of Residues|7 Applications of Residues]] (27), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (1), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (8), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (5), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (6), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (6)
+**Builds on:** [[· 1 Complex Numbers|1 Complex Numbers]] (9), [[· 2 Analytic Functions|2 Analytic Functions]] (29), [[· 3 Elementary Functions|3 Elementary Functions]] (12), [[· 5 Series|5 Series]] (2), [[· 6 Residues and Poles|6 Residues and Poles]] (1), [[· 7 Applications of Residues|7 Applications of Residues]] (3)
+**Used by:** [[· 1 Complex Numbers|1 Complex Numbers]] (2), [[· 2 Analytic Functions|2 Analytic Functions]] (5), [[· 3 Elementary Functions|3 Elementary Functions]] (1), [[· 5 Series|5 Series]] (26), [[· 6 Residues and Poles|6 Residues and Poles]] (13), [[· 7 Applications of Residues|7 Applications of Residues]] (27), [[· 8★ Mapping by Elementary Functions|8★ Mapping by Elementary Functions]] (1), [[· 9★ Conformal Mapping|9★ Conformal Mapping]] (9), [[· 10★ Applications of Conformal Mapping|10★ Applications of Conformal Mapping]] (6), [[· 11★ The Schwarz–Christoffel Transformation|11★ The Schwarz–Christoffel Transformation]] (6), [[· 12★ Integral Formulas of the Poisson Type|12★ Integral Formulas of the Poisson Type]] (6)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (7), [[Multivariable Analysis]] (5), [[Topology]] (9), [[Linear Algebra]] (4), [[Ordinary Differential Equations]] (2), [[Fourier Series and PDEs]] (10), [[Calculus]] (16)
 
 ## Sections
@@ -33,6 +33,8 @@ tags: [chapter, complex-variables]
 - [[§57 Some Consequences of the Extension]] — B&C Sec. 57
 - [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] — B&C Sec. 58
 - [[§59 Maximum Modulus Principle]] — B&C Sec. 59
+- [[§59a The Function 1∕z]] — B&C Sec. 59
+- [[§59b The Function z̄]] — B&C Sec. 59
 
 ## Central results
 - [[ML-Inequality]] (§47.2)

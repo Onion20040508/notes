@@ -27,7 +27,7 @@ tags: [real-analysis, hub]
 - [[§5 A Zoo of Subgroups#^prop-5-3|Proposition §5.3: Dichotomy for Subgroups of ℝ]]
 
 ## Used in (Functional Analysis)
-- [[§12 New Normed Spaces from Old#^thm-12-8|Theorem §12.8: Quotient Norm]]
+- [[§14 New Normed Spaces from Old#^thm-14-8|Theorem §14.8: Quotient Norm]]
 
 ## Connections
 - The working form of the [[Completeness Axiom]]: to use $\sup S$ in a proof, you almost always use this proposition.

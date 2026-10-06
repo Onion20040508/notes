@@ -25,6 +25,7 @@ tags: [chapter, complex-variables]
 - [[§82 Zeros of Analytic Functions]] — B&C Sec. 82
 - [[§83 Zeros and Poles]] — B&C Sec. 83
 - [[§84 Behavior of Functions Near Isolated Singular Points]] — B&C Sec. 84
+- [[§84a The Function e^(1∕z)]] — B&C Sec. 84
 
 ## Central results
 - [[Cauchy's Residue Theorem]] (§76.1)

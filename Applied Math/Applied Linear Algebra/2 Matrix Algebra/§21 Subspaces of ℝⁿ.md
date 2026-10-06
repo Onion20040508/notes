@@ -15,7 +15,7 @@ A subspace of $\mathbb{R}^n$ is a set of vectors closed under addition and scala
 
 ## Subspaces
 
-> [!definition] Definition §25.1: Subspace of ℝⁿ
+> [!definition] Definition §21.1: Subspace of ℝⁿ
 > A **subspace** of $\mathbb{R}^n$ is any set $H$ in $\mathbb{R}^n$ that has three properties:
 >
 > a. The zero vector is in $H$.
@@ -31,7 +31,7 @@ A subspace of $\mathbb{R}^n$ is a set of vectors closed under addition and scala
 > [!remark]- Connections
 > - Rigorous treatment: subspaces of an arbitrary vector space, with the same three conditions, [[§3 Subspaces#^ladr-1-34|LADR 1.34]]; here in [[§29 Vector Spaces and Subspaces#^def-29-2|Definition §29.2]]. Over a general field the sum and scalar multiple are those of the ambient space; nothing changes in the proofs below.
 
-> [!theorem] Proposition §25.1: A Span Is a Subspace
+> [!theorem] Proposition §21.1: A Span Is a Subspace
 > For $\mathbf{v}_1, \ldots, \mathbf{v}_p$ in $\mathbb{R}^n$, the set $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ is a subspace of $\mathbb{R}^n$, called the **subspace spanned** (or **generated**) by $\mathbf{v}_1, \ldots, \mathbf{v}_p$.
 >
 > *Lay: Examples 2.8.1 and 2.8.3*
@@ -53,7 +53,7 @@ A subspace of $\mathbb{R}^n$ is a set of vectors closed under addition and scala
 
 For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the standard picture of a subspace: a plane through the origin. If $\mathbf{v}_1 \ne \mathbf{0}$ and $\mathbf{v}_2$ is a multiple of $\mathbf{v}_1$, they span only a line through the origin, which is also a subspace.
 
-> [!example] Example §25.1: All Subspaces of ℝ, ℝ² and ℝ³
+> [!example] Example §21.1: All Subspaces of ℝ, ℝ² and ℝ³
 > **$\mathbb{R}$.** $\{0\}$ and $\mathbb{R}$ are subspaces, and there are no others: if a subspace $V$ of $\mathbb{R}$ contains some $a \ne 0$, then it contains $ca$ for every $c$, which is every real number.
 >
 > **$\mathbb{R}^2$.** Let $V$ be a subspace of $\mathbb{R}^2$.
@@ -69,7 +69,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 
 ^ex-21-1
 
-> [!example] Example §25.2: Sets That Are Not Subspaces
+> [!example] Example §21.2: Sets That Are Not Subspaces
 > **(a)** A line $L$ *not* through the origin is not a subspace: it does not contain $\mathbf{0}$. It also fails closure: for $\mathbf{u}$, $\mathbf{v}$ on $L$, $\mathbf{u} + \mathbf{v}$ is not on $L$, and for $\mathbf{w}$ on $L$, $2\mathbf{w}$ is not on $L$.
 >
 > **(b)** The first quadrant $V = \{(x, y) : x \ge 0,\ y \ge 0\}$ contains $\mathbf{0}$ and is closed under addition (sums of nonnegative numbers are nonnegative), but not under scalar multiplication: for $\mathbf{v} = (1, 1)$ in $V$, $-\mathbf{v} = (-1, -1)$ is not in $V$. ($c\mathbf{v}$ stays in $V$ only for $c \ge 0$.)
@@ -104,7 +104,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 
 ^def-21-2
 
-> [!example] Example §25.3: Is b in the Column Space?
+> [!example] Example §21.3: Is b in the Column Space?
 > Let $A = \begin{bmatrix} 1 & -3 & -4 \\ -4 & 6 & -2 \\ -3 & 7 & 6 \end{bmatrix}$ and $\mathbf{b} = \begin{bmatrix} 3 \\ 3 \\ -4 \end{bmatrix}$. Determine whether $\mathbf{b}$ is in $\operatorname{Col} A$.
 >
 > $\mathbf{b}$ is a linear combination of the columns of $A$ if and only if $\mathbf{b} = A\mathbf{x}$ for some $\mathbf{x}$, that is, if and only if $A\mathbf{x} = \mathbf{b}$ has a solution. Row reduce $[\,A \ \ \mathbf{b}\,]$:
@@ -132,7 +132,7 @@ For two vectors, $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ is the stan
 
 ^def-21-3
 
-> [!theorem] Theorem §25.2: The Null Space Is a Subspace
+> [!theorem] Theorem §21.2: The Null Space Is a Subspace
 > The null space of an $m \times n$ matrix $A$ is a subspace of $\mathbb{R}^n$. Equivalently, the set of all solutions of a system $A\mathbf{x} = \mathbf{0}$ of $m$ homogeneous linear equations in $n$ unknowns is a subspace of $\mathbb{R}^n$.
 >
 > *Lay: Theorem 12 (2.8)*
@@ -179,7 +179,7 @@ A subspace typically contains infinitely many vectors, so problems about it are 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-26|LADR 2.26]] (basis of any vector space) and [[§5 Bases#^ladr-2-28|LADR 2.28]] (every vector is a unique combination of the basis, the property used for coordinates in [[§22 Dimension and Rank#^prop-22-1|Proposition §22.1]]); here in general vector spaces, [[§31 Linearly Independent Sets; Bases#^def-31-2|Definition §31.2]].
 
-> [!example] Example §26.1: A Basis for a Null Space
+> [!example] Example §21.4: A Basis for a Null Space
 > Find a basis for the null space of
 >
 > $$
@@ -207,7 +207,7 @@ A subspace typically contains infinitely many vectors, so problems about it are 
 
 ^ex-21-4
 
-> [!example] Example §26.2: A Basis for a Column Space
+> [!example] Example §21.5: A Basis for a Column Space
 > **(a) An echelon matrix.** Find a basis for $\operatorname{Col} B$, where
 >
 > $$
@@ -244,7 +244,7 @@ A subspace typically contains infinitely many vectors, so problems about it are 
 
 ^ex-21-5
 
-> [!theorem] Theorem §25.3: Pivot Columns Form a Basis for Col A
+> [!theorem] Theorem §21.3: Pivot Columns Form a Basis for Col A
 > The pivot columns of a matrix $A$ form a basis for the column space of $A$.
 >
 > *Lay: Theorem 13 (2.8)*

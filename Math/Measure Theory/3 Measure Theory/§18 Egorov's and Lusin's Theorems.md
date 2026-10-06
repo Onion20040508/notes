@@ -11,7 +11,7 @@ tags: [measure-theory, math551]
 
 Egorov's theorem states that on sets of finite measure, [[§17 Simple Functions and Modes of Convergence#^def-17-4|almost everywhere convergence]] is “almost” [[§17 Simple Functions and Modes of Convergence#^def-17-5|uniform convergence]].
 
-> [!theorem] Theorem §28.1: Egorov's Theorem
+> [!theorem] Theorem §18.1: Egorov's Theorem
 > Let $E \in \mathcal{M}$ with $m(E) < \infty$. Let $f, f_1, f_2, \ldots$ be a sequence of [[§16 Limits and Positive Parts of Measurable Functions#^ex-16-1|a.e. finite]] [[§15 Measurable Functions#^def-15-2|measurable functions]] on $E$ such that $f_k \to f$ a.e. on $E$.
 >
 > Then for all $\delta > 0$, there exists a measurable set $E_\delta \subseteq E$ with $m(E_\delta) < \delta$ such that $f_k \to f$ **uniformly** on $E \setminus E_\delta$.
@@ -92,7 +92,7 @@ Egorov's theorem states that on sets of finite measure, [[§17 Simple Functions 
 > - MATH 451 uniform convergence: [[§24 Uniform Convergence#^def-24-2|451 Definition §24.2]].
 > - Applied with $\delta = 1/n$ in [[Measure Theory Problem-Solving Techniques#^ex-19-18|Technique 12: Iterated ε-Extraction (HW5 P2)]].
 
-> [!example] Example §28.1: Illustration of Egorov's Theorem
+> [!example] Example §18.1: Illustration of Egorov's Theorem
 > Let $f_k(x) = x^k$ for $x \in [0, 1]$. Then $f_k \to f$ pointwise where $f(x) = 0$ for $0 \leq x < 1$ and $f(1) = 1$.
 >
 > The convergence is **not uniform** on $[0, 1]$ ([[§17 Simple Functions and Modes of Convergence#^ex-17-1|Example §17.1]]): for $0 \leq x < 1$, we need $x^k < \epsilon$, which requires $k > \frac{\ln \epsilon}{\ln x} \to \infty$ as $x \to 1^-$.
@@ -128,7 +128,7 @@ Egorov's theorem states that on sets of finite measure, [[§17 Simple Functions 
 
 Lusin's theorem states that measurable functions are “almost continuous”: outside a set of arbitrarily small measure, a measurable function agrees with a continuous function.
 
-> [!theorem] Lemma §28.2: Distance Between Disjoint Compact Sets
+> [!theorem] Lemma §18.2: Distance Between Disjoint Compact Sets
 > Let $F_1, F_2 \subseteq \mathbb{R}^n$ be nonempty, bounded, closed (hence compact, by [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]]), and disjoint sets. Then $d(F_1, F_2) > 0$, where
 >
 > $$
@@ -164,7 +164,7 @@ Lusin's theorem states that measurable functions are “almost continuous”: ou
 > - Merely closed disjoint sets can be at distance $0$; they are still separated by open sets since metric spaces are normal: [[§24 Normal Spaces#^thm-24-1|590 Theorem §24.1]].
 > - MATH 451 Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 Theorem §13.3]].
 
-> [!theorem] Theorem §28.3: Lusin's Theorem
+> [!theorem] Theorem §18.3: Lusin's Theorem
 > Let $f$ be a real-valued [[§15 Measurable Functions#^def-15-2|measurable function]] on $E \in \mathcal{M}$.
 >
 > Then for all $\delta > 0$, there exists a closed set $F \subseteq E$ with $m(E \setminus F) < \delta$ such that $f$ is continuous on $F$.

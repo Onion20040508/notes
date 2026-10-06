@@ -15,9 +15,10 @@ tags: [measure-theory, hub]
 - [[§13 Approximation and Continuity of Measure#^prop-13-5|Proposition §13.5: Continuity of Measure from Above]]
 - [[§15 Measurable Functions#^def-15-2|Definition §15.2: Measurable Function]]
 - [[§16 Limits and Positive Parts of Measurable Functions#^ex-16-1|Example §16.1: Common Uses of “Almost Everywhere”]]
-- [[§17 Simple Functions and Modes of Convergence#^def-17-3|Definition §17.3: Pointwise and Almost Everywhere Convergence]]
+- [[§17 Simple Functions and Modes of Convergence#^def-17-3|Definition §17.3: Pointwise Convergence]]
+- [[§17 Simple Functions and Modes of Convergence#^def-17-4|Definition §17.4: Almost Everywhere Convergence]]
 - [[§17 Simple Functions and Modes of Convergence#^def-17-5|Definition §17.5: Uniform Convergence]]
-- [[§17 Simple Functions and Modes of Convergence#^def-17-6|Definition §17.6: Set of Convergence and Divergence]]
+- [[§17 Simple Functions and Modes of Convergence#^def-17-7|Definition §17.7: Set of Divergence]]
 
 ## Its proof uses (other subjects)
 - [[Archimedean Property]] (Single Variable Analysis)

@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Metrics and Metric Spaces
 
-> [!definition] Definition §13.1: Metric
+> [!definition] Definition §12.1: Metric
 > A **metric** on a set $X$ is a function $d: X \times X \to \mathbb{R}$ satisfying:
 >
 > 1. $d(x, y) \geq 0$ for all $x, y \in X$, and $d(x, y) = 0 \Leftrightarrow x = y$.
@@ -21,10 +21,10 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|Definition §13.1: Metric Space]].
-> - Normed spaces as metric spaces: [[§10 Normed Linear Spaces#^def-10-3|556 Def. §10.3]] restates this definition, and [[§10 Normed Linear Spaces#^prop-10-2|556 Prop. §10.2]] shows that a norm gives the metric d(x, y) = ‖x − y‖.
+> - Normed spaces as metric spaces: [[§11 Normed Linear Spaces#^def-11-3|556 Def. §11.3]] restates this definition, and [[§11 Normed Linear Spaces#^prop-11-2|556 Prop. §11.2]] shows that a norm gives the metric d(x, y) = ‖x − y‖.
 > - Every normed space, in particular each Lᵖ, is a metric space: [[§34 Normed Linear Spaces and Lᵖ Spaces#^prop-34-1|551 Prop. §34.1]]; the L¹ metric: [[§24 The L¹ Space and Density Theorems#^def-24-3|551 Def. §24.3]].
 
-> [!example] Example §13.1: Euclidean Metric on $\mathbb{R}^n$
+> [!example] Example §12.1: Euclidean Metric on $\mathbb{R}^n$
 > $x = (x_1, \ldots, x_n), y = (y_1, \ldots, y_n) \in \mathbb{R}^n$.
 >
 > $$
@@ -33,7 +33,7 @@ tags: [topology, math590]
 
 ^ex-12-1
 
-> [!example] Example §13.2: Square Metric on $\mathbb{R}^n$
+> [!example] Example §12.2: Square Metric on $\mathbb{R}^n$
 > $$
 > \rho(x, y) = \max\{|x_1 - y_1|, |x_2 - y_2|, \ldots, |x_n - y_n|\}
 > $$
@@ -42,7 +42,7 @@ tags: [topology, math590]
 
 ## $\varepsilon$-Balls and the Metric Topology
 
-> [!definition] Definition §13.2: $\varepsilon$-Ball
+> [!definition] Definition §12.2: $\varepsilon$-Ball
 > Given a metric $d$ on $X$, $x \in X$, $\varepsilon > 0$, the **$\varepsilon$-ball centered at $x$** is
 >
 > $$
@@ -52,9 +52,9 @@ tags: [topology, math590]
 ^def-12-2
 
 > [!remark]- Connections
-> - Balls of a norm, and interior points defined through them: [[§10 Normed Linear Spaces#^def-10-9|556 Def. §10.9]].
+> - Balls of a norm, and interior points defined through them: [[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]].
 
-> [!definition] Definition §13.3: Metric Topology
+> [!definition] Definition §12.3: Metric Topology
 > If $d$ is a metric on $X$, then the collection of all $\varepsilon$-balls $B_d(x, \varepsilon)$, $x \in X$, $\varepsilon > 0$, is a basis for a topology on $X$, called the **metric topology** induced by $d$.
 
 ^def-12-3
@@ -91,26 +91,26 @@ tags: [topology, math590]
 
 ## Examples of Metric Spaces
 
-> [!example] Example §13.3: Euclidean Metric Induces Standard Topology
+> [!example] Example §12.3: Euclidean Metric Induces Standard Topology
 > $\mathbb{R}^n$, $d(x,y) = \|x - y\| = \left(\sum_{i=1}^{n}(x_i - y_i)^2\right)^{1/2}$ induces the standard topology.
 
 ^ex-12-3
 
-> [!example] Example §13.4: Discrete Metric
+> [!example] Example §12.4: Discrete Metric
 > $X$ any set. Define $d(x,y) = \begin{cases} 0 & x = y \\ 1 & x \neq y \end{cases}$. This induces the [[§1 Topological Spaces#^ex-1-3|discrete topology]].
 >
 > (Since every singleton $\{x\} = B(x, \frac{1}{2})$ is open.)
 
 ^ex-12-4
 
-> [!example] Example §13.5: Sup-Metric on $\mathbb{R}^n$
+> [!example] Example §12.5: Sup-Metric on $\mathbb{R}^n$
 > $\rho(x,y) = \max_i\{|x_i - y_i|\}$, the “sup-metric.”
 
 ^ex-12-5
 
 ## Comparing Metric Topologies
 
-> [!theorem] Lemma §13.1: Comparing Metric Topologies
+> [!theorem] Lemma §12.1: Comparing Metric Topologies
 > Let $d$ and $d'$ be two metrics on $X$. Let $\mathcal{T}_d$ and $\mathcal{T}_{d'}$ be the two topologies induced on $X$. Then $\mathcal{T}_{d'}$ is [[§1 Topological Spaces#^def-1-2|finer]] than $\mathcal{T}_d$ if and only if for all $x \in X$ and each $\varepsilon > 0$, there exists $\delta > 0$ such that $B_{d'}(x, \delta) \subseteq B_d(x, \varepsilon)$.
 
 ^lem-12-1
@@ -129,7 +129,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - The metric form of [[§2 Basis for a Topology#^lem-2-2|Lemma §2.2: Comparing Topologies via Bases]], with $\varepsilon$-balls as the bases.
 
-> [!theorem] Theorem §13.2: Euclidean and Square Metrics Induce Same Topology
+> [!theorem] Theorem §12.2: Euclidean and Square Metrics Induce Same Topology
 > The topologies on $\mathbb{R}^n$ induced by metrics $d$ (Euclidean) and $\rho$ (square) are the same as the [[§4 Product Topology#^def-4-1|product topology]] on $\mathbb{R}^n$.
 
 ^thm-12-2
@@ -164,11 +164,11 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The same inequality in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Proposition §13.1: Equivalence of the Two Distances]].
-> - All norms on a finite-dimensional space are equivalent and so give the same topology: [[All Norms on a Finite-Dimensional Space Are Equivalent|556 Thm. §12.3]] (equivalent norms: [[§12 New Normed Spaces from Old#^def-12-1|556 Def. §12.1]]).
+> - All norms on a finite-dimensional space are equivalent and so give the same topology: [[All Norms on a Finite-Dimensional Space Are Equivalent|556 Thm. §12.3]] (equivalent norms: [[§14 New Normed Spaces from Old#^def-14-1|556 Def. §14.1]]).
 
 ## Metrizable Spaces
 
-> [!definition] Definition §13.4: Metrizable
+> [!definition] Definition §12.4: Metrizable
 > If $X$ is a topological space, $X$ is called **metrizable** if there exists a metric on $X$ that induces the topology of $X$.
 
 ^def-12-4
@@ -193,7 +193,7 @@ tags: [topology, math590]
 
 ^rem-12-2
 
-> [!theorem] Theorem §13.3: $\mathbb{R}^\omega$ is Metrizable
+> [!theorem] Theorem §12.3: $\mathbb{R}^\omega$ is Metrizable
 > Let $\bar{d}(a, b) = \min\{|a - b|, 1\}$ be the standard bounded metric on $\mathbb{R}$.
 >
 > If $x, y \in \mathbb{R}^\omega$, define $D(x, y) = \sup_i\left\{\frac{\bar{d}(x_i, y_i)}{i}\right\}$.
@@ -211,7 +211,7 @@ tags: [topology, math590]
 
 ## Metric Spaces and Hausdorff
 
-> [!theorem] Theorem §13.4: Every Metric Space is Hausdorff
+> [!theorem] Theorem §12.4: Every Metric Space is Hausdorff
 > Every metric space is [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]].
 
 ^thm-12-4
@@ -232,7 +232,7 @@ tags: [topology, math590]
 ![[m590-11-3.svg]]
 *With $\varepsilon = \tfrac{d(x,y)}{2}$ the two open balls just touch. The midpoint (hollow) is at distance exactly $\varepsilon$ from both centers, so it lies in neither ball, and $B(x,\varepsilon) \cap B(y,\varepsilon) = \varnothing$. This is the triangle-inequality argument drawn out.*
 
-> [!theorem] Corollary §13.5
+> [!theorem] Corollary §12.5
 > Any non-[[§9 Hausdorff Spaces#^def-9-1|Hausdorff]] space is not [[§12 Metric Topology#^def-12-4|metrizable]].
 
 ^cor-12-5
@@ -368,4 +368,4 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 takes the sequential condition as the definition: [[§17 Continuous Functions#^def-17-1|Definition §17.1: Continuity at a Point — Sequential Definition]].
-> - Functional analysis takes the sequential condition as the definition of a continuous linear map ([[§26 Boundedness and Continuity#^def-26-1|556 Def. §26.1]]); for linear maps it is equivalent to boundedness ([[§26 Boundedness and Continuity#^prop-26-2|556 Prop. §26.2]]).
+> - Functional analysis takes the sequential condition as the definition of a continuous linear map ([[§30 Boundedness and Continuity#^def-30-1|556 Def. §30.1]]); for linear maps it is equivalent to boundedness ([[§30 Boundedness and Continuity#^prop-30-2|556 Prop. §30.2]]).

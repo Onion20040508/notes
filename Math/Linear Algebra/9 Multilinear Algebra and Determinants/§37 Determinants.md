@@ -86,7 +86,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol ([[§37 The Algebra of Differential Forms#^def-37-2|452 Def. §37.2]]).
-> - Since this formula is a polynomial in the entries, det is continuous ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|591 Prop. §10.3]]) and smooth, with derivative given by Jacobi's formula ([[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|591 Prop. §11.1]]).
+> - Since this formula is a polynomial in the entries, det is continuous ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]]) and smooth, with derivative given by Jacobi's formula ([[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|591 Prop. §12.1]]).
 > - Used in Relativity: by the Leibniz formula the Levi-Civita symbol is an invariant pseudotensor — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]; it gives the second field invariant $\vec E\cdot\vec B$ — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]].
 > - Determinants of order 2 and 3, computed by cofactor expansion: [[§96 The Cross Product#^def-96-2|Calc Def. §96.2]] (with worked examples).
 > - Computational version: [[§24 Introduction to Determinants#^thm-24-1|235 Thm. §24.1]] (cofactor expansion along any row or column, the formula used by hand in place of the permutation sum).
@@ -133,7 +133,7 @@ tags: [linear-algebra]
 > With the Leibniz formula this is a messy computation; with the abstract definition it is one line: scaling factors compose.
 
 > [!remark]- Connections
-> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|493 Def. §20.5]]) it is the sign, [[The Sign Homomorphism]].
+> - In group language: det is a homomorphism from the general linear group onto the nonzero scalars with kernel the special linear group, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]]; composed with permutation matrices ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|493 Def. §20.6]]) it is the sign, [[The Sign Homomorphism]].
 > - Computational version: [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|235 Thm. §26.4]] ($\det AB=(\det A)(\det B)$).
 
 > [!theorem] Theorem 9.50: Invertible ⟺ nonzero determinant

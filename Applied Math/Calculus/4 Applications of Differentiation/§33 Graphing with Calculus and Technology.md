@@ -21,7 +21,7 @@ In [[§32 Summary of Curve Sketching|§32]] the graph was the end product of a c
 
 ^rem-33-1
 
-> [!example] Example §36.1: Features Hidden at Two Scales
+> [!example] Example §33.1: Features Hidden at Two Scales
 > Graph $f(x) = 2x^6 + 3x^5 + 3x^3 - 2x^2$ and use $f'$ and $f''$ to find all maximum and minimum points and intervals of concavity.
 >
 > In the window $[-5, 5]$ by $[-1000, 41{,}000]$ the graph shows only the end behavior, which is like that of $y = 2x^6$. In $[-3, 2]$ by $[-50, 100]$ there is an absolute minimum of about $-15.33$ near $x \approx -1.62$, and the graph looks flat near the origin. Calculus shows what is going on there:
@@ -45,7 +45,7 @@ In [[§32 Summary of Curve Sketching|§32]] the graph was the end product of a c
 
 ^ex-33-1
 
-> [!example] Example §36.2: Exact Values for a Rational Function
+> [!example] Example §33.2: Exact Values for a Rational Function
 > Draw the graph of $f(x) = \dfrac{x^2 + 7x + 3}{x^2}$ showing all its important features, and find the local extreme values and intervals of concavity exactly.
 >
 > Automatic scaling produces a useless graph (the values near $0$ are huge). The formula tells where to look.
@@ -87,7 +87,7 @@ In [[§32 Summary of Curve Sketching|§32]] the graph was the end product of a c
 ![[m233-30-1.svg]]
 *[[§33 Graphing with Calculus and Technology#^ex-33-2|Example §33.2]]: $y = (x^2 + 7x + 3)/x^2$, with its asymptotes, the $y$-axis and the line $y = 1$ (dashed). The exact features from calculus: the absolute minimum $(-\frac67, -\frac{37}{12})$ (blue) and the inflection point $(-\frac97, -\frac{71}{27})$ (red), very close together. On the left the curve approaches $y = 1$ from below, on the right from above.*
 
-> [!example] Example §36.3: Letting the Formula Guide the Zooming
+> [!example] Example §33.3: Letting the Formula Guide the Zooming
 > Graph $f(x) = \dfrac{x^2(x + 1)^3}{(x - 2)^2(x - 4)^4}$.
 >
 > **Before any derivative.** Because of the factors $(x - 2)^2$ and $(x - 4)^4$ we expect vertical asymptotes at $2$ and $4$; the numerator is positive near both and the denominator is positive on both sides, so
@@ -110,7 +110,7 @@ In [[§32 Summary of Curve Sketching|§32]] the graph was the end product of a c
 
 ^ex-33-3
 
-> [!example] Example §36.4: A Family of Functions
+> [!example] Example §33.4: A Family of Functions
 > How does the graph of $f(x) = \dfrac{1}{x^2 + 2x + c}$ vary as $c$ varies?
 >
 > **Common features.** $\lim_{x \to \pm\infty} \frac{1}{x^2 + 2x + c} = 0$ for every $c$, so all members have the $x$-axis as a horizontal asymptote.

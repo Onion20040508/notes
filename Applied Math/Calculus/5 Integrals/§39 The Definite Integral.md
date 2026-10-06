@@ -17,7 +17,7 @@ The limit of sums $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^{\ast})\,\Delta x$ t
 
 The same limit occurs for areas, for distances, and (Chapters 6 and 8) for lengths of curves, volumes, centers of mass, force due to water pressure and work. It gets a name.
 
-> [!definition] Definition §45.1: Definite Integral
+> [!definition] Definition §39.1: Definite Integral
 > Let $f$ be a function defined for $a \le x \le b$. Divide $[a, b]$ into $n$ subintervals of equal width $\Delta x = (b - a)/n$. Let $x_0 (= a), x_1, x_2, \ldots, x_n (= b)$ be the endpoints of these subintervals, and let $x_1^{\ast}, x_2^{\ast}, \ldots, x_n^{\ast}$ be any **sample points** in them, so $x_i^{\ast}$ lies in the $i$th subinterval $[x_{i-1}, x_i]$. The **definite integral of $f$ from $a$ to $b$** is
 >
 > $$
@@ -86,7 +86,7 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 
 ^rem-39-2
 
-> [!theorem] Theorem §45.1: Continuous Functions Are Integrable
+> [!theorem] Theorem §39.1: Continuous Functions Are Integrable
 > If $f$ is continuous on $[a, b]$, or if $f$ has only a finite number of [[§12 Continuity#^def-12-3|jump discontinuities]], then $f$ is integrable on $[a, b]$; that is, the definite integral $\int_a^b f(x)\,dx$ exists.
 >
 > *Stewart: 5.2, Theorem 3*
@@ -97,7 +97,7 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 
 Not every function is integrable: the function that is $1$ at rational and $0$ at irrational numbers is not (Stewart, Exercises 81–82; [[§32 The Definition of the Riemann Integral#^ex-32-3|451 Ex. §32.3]]).
 
-> [!theorem] Theorem §45.2: The Integral as a Limit of Right-Endpoint Sums
+> [!theorem] Theorem §39.2: The Integral as a Limit of Right-Endpoint Sums
 > If $f$ is integrable on $[a, b]$, then
 >
 > $$
@@ -136,7 +136,7 @@ $$
 \sum_{i=1}^{n} i^3 = \left[ \frac{n(n + 1)}{2} \right]^2 .
 $$
 
-> [!theorem] Theorem §45.3: Properties of Sums
+> [!theorem] Theorem §39.3: Properties of Sums
 > For numbers $a_1, \ldots, a_n$, $b_1, \ldots, b_n$ and a constant $c$:
 >
 > $$
@@ -162,7 +162,7 @@ $$
 
 The same rules, for sums running from any $i = m$ to $n$, are [[§143 Sigma Notation#^thm-143-1|Theorem §143.1]] (Stewart's Appendix E), together with the other rules of sigma notation.
 
-> [!example] Example §45.1: A Riemann Sum and the Exact Integral of x³ − 6x
+> [!example] Example §39.1: A Riemann Sum and the Exact Integral of x³ − 6x
 > Let $f(x) = x^3 - 6x$ on $[0, 3]$.
 >
 > **(a)** Evaluate the Riemann sum with $n = 6$ subintervals and right endpoints as sample points.
@@ -202,7 +202,7 @@ The same rules, for sums running from any $i = m$ to $n$, are [[§143 Sigma Nota
 
 For $f(x) = e^x$ on $[1, 3]$ the same method gives $\int_1^3 e^x\,dx = \lim_{n \to \infty} \frac2n \sum_{i=1}^{n} e^{1 + 2i/n}$, a geometric sum that a computer algebra system evaluates to $e^3 - e$ (Stewart, Example 5.2.4). Integrals of positive functions whose graphs are familiar shapes can be read off as areas:
 
-> [!example] Example §45.2: Integrals as Areas
+> [!example] Example §39.2: Integrals as Areas
 > Evaluate by interpreting each integral in terms of areas: (a) $\displaystyle\int_0^1 \sqrt{1 - x^2}\,dx$; (b) $\displaystyle\int_0^3 (x - 1)\,dx$.
 >
 > **(a)** $f(x) = \sqrt{1 - x^2} \ge 0$, so the integral is the area under $y = \sqrt{1 - x^2}$ from $0$ to $1$. Squaring, $y^2 = 1 - x^2$, that is $x^2 + y^2 = 1$ with $y \ge 0$: the graph is the quarter of the unit circle in the first quadrant. So
@@ -242,7 +242,7 @@ Right endpoints make the limit easy to compute. To *approximate* an integral, mi
 
 ^def-39-4
 
-> [!example] Example §45.3: The Midpoint Rule for 1/x
+> [!example] Example §39.3: The Midpoint Rule for 1/x
 > Use the Midpoint Rule with $n = 5$ to approximate $\displaystyle\int_1^2 \frac1x\,dx$.
 >
 > $\Delta x = (2 - 1)/5 = \frac15$. The endpoints of the five subintervals are $1, 1.2, 1.4, 1.6, 1.8, 2.0$, so the midpoints are $1.1, 1.3, 1.5, 1.7, 1.9$, and

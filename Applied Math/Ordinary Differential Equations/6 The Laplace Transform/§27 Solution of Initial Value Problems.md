@@ -15,7 +15,7 @@ The Laplace transform turns differentiation into multiplication by $s$: $\mathca
 
 ## The Transform of a Derivative
 
-> [!theorem] Theorem §33.1: Transform of a Derivative
+> [!theorem] Theorem §27.1: Transform of a Derivative
 > Suppose that $f$ is continuous and $f'$ is piecewise continuous on any interval $0 \le t \le A$. Suppose further that there exist constants $K$, $a$ and $M$ such that $|f(t)| \le Ke^{at}$ for $t \ge M$. Then $\mathcal{L}\{f'(t)\}$ exists for $s > a$, and moreover
 >
 > $$
@@ -68,7 +68,7 @@ $$
 $$
 and in general:
 
-> [!theorem] Corollary §33.2: Transform of the nth Derivative
+> [!theorem] Corollary §27.2: Transform of the nth Derivative
 > Suppose that the functions $f, f', \ldots, f^{(n-1)}$ are continuous and that $f^{(n)}$ is piecewise continuous on any interval $0 \le t \le A$. Suppose further that there exist constants $K$, $a$ and $M$ such that $|f(t)| \le Ke^{at}$, $|f'(t)| \le Ke^{at}$, …, $|f^{(n-1)}(t)| \le Ke^{at}$ for $t \ge M$. Then $\mathcal{L}\{f^{(n)}(t)\}$ exists for $s > a$ and is given by
 >
 > $$
@@ -96,7 +96,7 @@ and in general:
 
 The method is most useful for nonhomogeneous equations (from [[§28 Step Functions|§28]] on), but it is clearest first on homogeneous ones.
 
-> [!example] Example §33.1: The Same Problem Two Ways
+> [!example] Example §27.1: The Same Problem Two Ways
 > Solve $y'' - y' - 2y = 0$, $y(0) = 1$, $y'(0) = 0$. (5), (6)
 >
 > **By Chapter 3.** $r^2 - r - 2 = (r - 2)(r + 1) = 0$, so $y = c_1e^{-t} + c_2e^{2t}$. The conditions $c_1 + c_2 = 1$ and $-c_1 + 2c_2 = 0$ give $c_1 = \frac23$, $c_2 = \frac13$:
@@ -129,7 +129,7 @@ The method is most useful for nonhomogeneous equations (from [[§28 Step Functio
 
 ^ex-27-1
 
-> [!theorem] Proposition §33.3: The Transformed Second-Order Equation
+> [!theorem] Proposition §27.3: The Transformed Second-Order Equation
 > If the solution $y$ of $ay'' + by' + cy = f(t)$ (14) satisfies the conditions of [[§27 Solution of Initial Value Problems#^cor-27-2|Corollary §27.2]] for $n = 2$, and $F(s) = \mathcal{L}\{f(t)\}$, then $Y(s) = \mathcal{L}\{y\}$ satisfies
 >
 > $$
@@ -163,7 +163,7 @@ The method is most useful for nonhomogeneous equations (from [[§28 Step Functio
 
 ## The Inverse Transform
 
-> [!definition] Definition §33.4: Inverse Laplace Transform
+> [!definition] Definition §27.1: Inverse Laplace Transform
 > Finding $y(t)$ from its transform $Y(s)$ is the **inversion problem**. A function $y(t)$ with $\mathcal{L}\{y(t)\} = Y(s)$ is called the **inverse Laplace transform** of $Y(s)$, written $y(t) = \mathcal{L}^{-1}\{Y(s)\}$; the process is **inverting the transform**.
 >
 > *BDP: 6.2 (text)*
@@ -334,7 +334,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 > - See also: [[§65★ Partial Fractions and Convolutions#^thm-65-2|341 Thm. §65.2]] (Heaviside's formula: when the denominator has only simple roots, real or complex, the inverse transform is $\sum_k \frac{q(r_k)}{p'(r_k)}e^{r_kt}$, with no constants to solve for).
 > - Complex-variables version: [[§95★ Inverse Laplace Transforms#^thm-95-6|342 Thm. §95.6]] (part (a) proves the partial fraction decomposition by principal parts and [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Liouville's theorem]]) and [[§95★ Inverse Laplace Transforms#^rem-95-2|342 Remark: Method — Inverse Laplace Transforms by Residues]] (inverting a rational transform by residues).
 
-> [!example] Example §33.2: A Forced Undamped Oscillator
+> [!example] Example §27.2: A Forced Undamped Oscillator
 > Solve $y'' + y = \sin(2t)$, $y(0) = 2$, $y'(0) = 1$. (19), (20)
 >
 > Assuming $y$ satisfies the conditions of [[§27 Solution of Initial Value Problems#^cor-27-2|Corollary §27.2]], transform, using entry 5 for $\sin(2t)$:
@@ -368,7 +368,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 ^ex-27-2
 
-> [!example] Example §33.3: A Fourth-Order Equation
+> [!example] Example §27.3: A Fourth-Order Equation
 > Solve $y^{(4)} - y = 0$, $y(0) = 0$, $y'(0) = 1$, $y''(0) = 0$, $y'''(0) = 0$. (26), (27)
 >
 > Assume $y$ satisfies the conditions of [[§27 Solution of Initial Value Problems#^cor-27-2|Corollary §27.2]] for $n = 4$. Transforming,

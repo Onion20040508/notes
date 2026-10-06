@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, math591]
 ^def-2-2
 
 > [!remark]- Connections
-> - The three conditions: [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§16 Differentiable Structures#^def-16-9|Smooth Manifold Structure, Def. §16.9]].
+> - The three conditions: [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§17 Differentiable Structures#^def-17-9|Smooth Manifold Structure, Def. §17.9]].
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, a 2-manifold built from infinitely many cut planes glued along their slits, on which log z becomes single-valued).
 
 > [!remark] Remark: Why These Three Conditions?
@@ -88,7 +88,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-2
 
-*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]
+*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-9|Def. §1.9]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]
 
 > [!theorem] Proposition §2.3: Charts onto Open Subsets Suffice
 > In the definition of locally Euclidean, replacing “$\varphi : U \to \mathbb{R}^n$ is a homeomorphism” by
@@ -192,10 +192,10 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-1
 
-*Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
+*Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
 
 > [!remark]- Connections
-> - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
+> - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 
 > [!example] Example §2.2: Fails Locally Euclidean: $\mathbb{Q}$
 > $X = \mathbb{Q}$ with the subspace topology from $\mathbb{R}$ is second countable (subspace of a second countable space) and $T_2$ (metric space), but is not locally Euclidean of any dimension.
@@ -224,7 +224,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-3
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 Def. §4.1]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§4 Product Topology#^def-4-1|590 Def. §4.1]]
 
 > [!theorem] Proposition §2.4: The Three Conditions Are Independent
 > Second countability, the Hausdorff property, and local Euclideanness are independent: for each of the three there is a space satisfying the other two but not it.
@@ -257,7 +257,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-5
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^ex-1-2|Ex. §1.2]], [[§2 Basis for a Topology#^rem-2-2|590 §2 (Characterization of Discrete Topology)]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^ex-1-2|Ex. §1.2]], [[§2 Basis for a Topology#^rem-2-2|590 §2 (Characterization of Discrete Topology)]]
 
 > [!remark] Remark: A Warning: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ vs. $\mathbb{R}^2$
 > A student asked whether the horizontal lines are homeomorphic to $\mathbb{R}^2$. No: each line is a $1$-dimensional open subset. Since no two Euclidean spaces of different dimensions are homeomorphic ([[§2 Topological Manifolds#^thm-2-1|Theorem §2.1]]), $X$ is not homeomorphic to $\mathbb{R}^2$ even though it has the same underlying set. The topology, not the set, is what determines the dimension.
@@ -280,7 +280,7 @@ The failure of second countability in the last example is detected by counting c
 
 ^pf-2-6
 
-*Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]]
+*Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-9|Def. §1.9]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
 **Rigor flag.** “Second countable $\Rightarrow$ countably many components” is *false* without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). The proposition uses locally Euclidean only through “components are open,” i.e. local connectedness.
 
@@ -350,7 +350,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-9
 
-*Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-8|§2.8]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
+*Uses:* [[§1 Point-Set Topology Review#^def-1-9|Def. §1.9]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§2 Topological Manifolds#^thm-2-8|§2.8]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]]
 
 > [!remark] Remark
 > This is the mechanism behind [[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]: openness of the components is what turns second countability into a bound on their number. It is also the reason [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] can speak of the dimension being constant on components.
@@ -371,7 +371,7 @@ Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By de
 ^def-2-3
 
 > [!remark]- Connections
-> - Restated at the start of Chapter 3: [[§16 Differentiable Structures#^def-16-1|Def. §16.1]]; the smooth version is [[§18 Smooth Functions and Smooth Maps#^def-18-1|Smooth Chart, Def. §18.1]].
+> - Restated at the start of Chapter 3: [[§17 Differentiable Structures#^def-17-1|Def. §17.1]]; the smooth version is [[§19 Smooth Functions and Smooth Maps#^def-19-1|Smooth Chart, Def. §19.1]].
 
 > [!theorem] Lemma §2.10: Restricting and Recomposing Charts
 > Let $(U, \varphi)$ be a chart on a topological $n$-manifold: $\varphi$ is a homeomorphism of the open set $U$ onto an open subset of $\mathbb{R}^n$.
@@ -411,7 +411,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^def-2-4
 
 > [!remark]- Connections
-> - Chapter 3 asks these maps to be smooth: [[§16 Differentiable Structures#^def-16-4|Smoothly Compatible Charts, Def. §16.4]].
+> - Chapter 3 asks these maps to be smooth: [[§17 Differentiable Structures#^def-17-4|Smoothly Compatible Charts, Def. §17.4]].
 
 > [!theorem] Proposition §2.11: Transition Functions Are Homeomorphisms
 > For a topological manifold, $\varphi(U \cap V)$ and $\psi(U \cap V)$ are open subsets of $\mathbb{R}^n$, and $\psi \circ \varphi^{-1}$ is a homeomorphism between them, with inverse $\varphi \circ \psi^{-1}$.
@@ -438,7 +438,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^rem-2-11
 
 > [!remark]- Connections
-> - Carried out in [[§16 Differentiable Structures#^def-16-2|Def. §16.2]] (smooth in the sense of a chart), [[§16 Differentiable Structures#^rem-16-3|the problem this creates]] and [[§16 Differentiable Structures#^thm-16-1|§16.1]].
+> - Carried out in [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] (smooth in the sense of a chart), [[§17 Differentiable Structures#^rem-17-3|the problem this creates]] and [[§17 Differentiable Structures#^thm-17-1|§17.1]].
 
 > [!theorem] Proposition §2.12: Manifolds Are Locally Compact
 > Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§20 Local Compactness#^def-20-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.
@@ -448,11 +448,11 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^prop-2-12
 
 > [!proof]+ Proof
-> *(Lecture 14, asking for it to be added to the notes: “that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball … and pull it up”; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-7|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
+> *(Lecture 14, asking for it to be added to the notes: “that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball … and pull it up”; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-8|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
 
 ^pf-2-12
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (1, 2, 4, 5), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[Closed Subspace of a Compact Space is Compact]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (1, 2, 4, 5), [[§5 Subspace Topology#^lem-5-2|590 §5.2]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[Closed Subspace of a Compact Space is Compact]]
 
 > [!remark]- Connections
 > - The home of local compactness: [[§20 Local Compactness#^def-20-1|590 Def. §20.1]] (a compact set containing a neighbourhood); for Hausdorff spaces it is equivalent to the form used here by [[§20 Local Compactness#^thm-20-6|590 §20.6]].

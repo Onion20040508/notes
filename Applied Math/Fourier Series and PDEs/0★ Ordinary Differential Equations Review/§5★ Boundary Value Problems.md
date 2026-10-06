@@ -16,7 +16,7 @@ A boundary value problem prescribes conditions at the two ends of an interval in
 
 ## Boundary Value Problems
 
-> [!definition] Definition §7.1: Boundary Value Problem
+> [!definition] Definition §5.1: Boundary Value Problem
 > A **boundary value problem** in one dimension is an ordinary differential equation together with conditions (**boundary conditions**) involving values of the solution and/or its derivatives at two or more points. The number of conditions imposed equals the order of the differential equation. Boundary value problems of physical relevance usually have these characteristics:
 > 1. the conditions are imposed at two different points;
 > 2. the solution is of interest only between those two points;
@@ -30,7 +30,7 @@ A boundary value problem prescribes conditions at the two ends of an interval in
 
 When the differential equation has a known general solution, the two boundary conditions give two equations for the two constants in it. If the differential equation is linear these are two linear equations, easily solved if there is a solution. Unlike the initial value problem ([[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-1|331 Thm. §18.1]]), there need not be one.
 
-> [!example] Example §7.1: One Solution, None, or Infinitely Many
+> [!example] Example §5.1: One Solution, None, or Infinitely Many
 > Of these three boundary value problems, one has exactly one solution, one has none, and one has infinitely many:
 >
 > $$
@@ -65,7 +65,7 @@ When the differential equation has a known general solution, the two boundary co
 
 Consider a cable fastened at each end and carrying a distributed load, such as the cable of a suspension bridge. Let $u(x)$ be the height of its centerline above a horizontal $x$-axis, $0 < x < a$. The key assumption is that the cable is **perfectly flexible**: the force inside it is always a tension, directed along the tangent to the centerline.
 
-> [!theorem] Proposition §7.1: Equation of the Hanging Cable
+> [!theorem] Proposition §5.1: Equation of the Hanging Cable
 > A perfectly flexible cable at rest, fastened at heights $h_0$ and $h_1$ above the ends of $0 \le x \le a$ and carrying a load of intensity $f(x)$ (force per unit of horizontal length, continuous), has a tension whose horizontal component $T$ is the same at every point, and its centerline satisfies
 >
 > $$
@@ -119,7 +119,7 @@ $$
 
 a **nonlinear** equation, which nevertheless can be solved in closed form.
 
-> [!example] Example §7.2: Parabola and Catenary
+> [!example] Example §5.2: Parabola and Catenary
 > **(a) Uniform horizontal load.** Solve $u'' = w/T$, $u(0) = h_0$, $u(a) = h_1$ (7). Two integrations give the general solution $u(x) = \frac w{2T}x^2 + c_1x + c_2$. The boundary conditions require
 >
 > $$
@@ -154,7 +154,7 @@ a **nonlinear** equation, which nevertheless can be solved in closed form.
 
 A long rod of uniform material and cross section conducts heat along its axis, and its temperature $u(x)$ does not change in time. Let $A$ be the cross-sectional area, $C$ the circumference and $q$ the heat flow rate (heat per unit time per unit area, in the direction of increasing $x$).
 
-> [!definition] Definition §7.2: Fourier's Law
+> [!definition] Definition §5.2: Fourier's Law
 > **Fourier's law** (experimental): the heat flow rate through a unit area of material is proportional to the temperature difference and inversely proportional to the thickness. In the limit,
 >
 > $$
@@ -180,7 +180,7 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 
 ^def-5-3
 
-> [!theorem] Proposition §7.2: Steady-State Heat Equation in a Rod
+> [!theorem] Proposition §5.2: Steady-State Heat Equation in a Rod
 > If heat enters the rod at the rate $g(x)$ per unit volume by means other than conduction through the cross sections, and the conductivity $\kappa$ is constant, the steady temperature satisfies
 >
 > $$
@@ -225,7 +225,7 @@ A long rod of uniform material and cross section conducts heat along its axis, a
 > [!remark]- Connections
 > - The three-dimensional version of the heat balance replaces the two faces by the boundary of a region and uses the divergence theorem, [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]; the same balance law in fluid form is the continuity equation, [[§29 Conservation of Mass and Laplace's Equation#^thm-29-1|452 Thm. §29.1]]. The time-dependent derivation is [[§22 Derivation and Boundary Conditions#^thm-22-2|Theorem §22.2]] (Powers 2.1), and (14) is its steady state, [[§24 Steady-State Temperatures#^def-24-1|Definition §24.1]] (Powers 2.2).
 
-> [!example] Example §7.3: A Rod Losing Heat to Its Surroundings
+> [!example] Example §5.3: A Rod Losing Heat to Its Surroundings
 > Solve
 >
 > $$
@@ -273,7 +273,7 @@ The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers 
 > [!remark]- Connections
 > - The finite-dimensional model: $\lambda$ is an eigenvalue of an operator $T$ if $Tv = \lambda v$ for some $v \ne 0$, [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]], [[§40 Eigenvectors and Eigenvalues#^def-40-1|235 Def. §40.1]]. Here the operator is $u \mapsto -u''$ on functions satisfying the homogeneous boundary conditions, and "nonzero solution of the homogeneous problem" is "nonzero vector in the null space of $T - \lambda I$".
 
-> [!theorem] Proposition §7.3: The Eigenvalues of u″ + λ²u = 0, u(0) = u(a) = 0
+> [!theorem] Proposition §5.3: The Eigenvalues of u″ + λ²u = 0, u(0) = u(a) = 0
 > Let $\lambda > 0$. The problem
 >
 > $$
@@ -305,7 +305,7 @@ The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers 
 
 *Uses:* [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]]
 
-> [!example] Example §7.4: Buckling of a Column; the Euler Load
+> [!example] Example §5.4: Buckling of a Column; the Euler Load
 > A long, slender column of length $a$ with hinged bottom end carries an axial load $P$; its upper end can move up or down but not sideways. Let $u(x)$ be the displacement of the centerline from a vertical reference line. If the column were cut at height $x$, an upward force $P$ and a clockwise moment $Pu(x)$ would have to be applied to the upper part to keep it in equilibrium, and they must be supplied by the lower part. The internal bending moment (positive counterclockwise) is $EI\,u''$, with $E$ Young's modulus and $I$ the moment of inertia of the cross section ($I = b^4/12$ for a square of side $b$). Equating external and internal moments,
 >
 > $$
@@ -331,7 +331,7 @@ The nonzero solutions belonging to an eigenvalue are its eigenfunctions; Powers 
 ![[m341-3-2.svg]]
 *The first three buckling shapes $\sin(n\pi x/a)$ of Example §5.4, the nonzero solutions of $u'' + \lambda^2u = 0$, $u(0) = u(a) = 0$ at the eigenvalues $\lambda = n\pi/a$ (Proposition §5.3). Only the first, at the Euler load $P = EI\pi^2/a^2$, is observed; the same functions are the modes of the vibrating string and the terms of the Fourier sine series.*
 
-> [!example] Example §7.5: Eigenvalues with Other Boundary Conditions
+> [!example] Example §5.5: Eigenvalues with Other Boundary Conditions
 > Find all $\lambda \ge 0$ for which these problems have a solution other than $u \equiv 0$:
 >
 > $$

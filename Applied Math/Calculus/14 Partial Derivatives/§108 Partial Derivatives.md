@@ -17,7 +17,7 @@ A partial derivative is an ordinary derivative taken while all but one variable 
 
 The heat index $I = f(T, H)$ is the temperature that it feels like when the actual temperature is $T$ (°F) and the relative humidity is $H$ (%). Holding $H = 70$ fixed, $g(T) = f(T, 70)$ is a function of one variable, and its derivative $g'(96)$ is the rate at which $I$ increases with $T$ when $T = 96$ and $H = 70$. From the National Weather Service table, $\frac{f(98, 70) - f(96, 70)}{2} = \frac{133 - 125}{2} = 4$ and $\frac{f(94, 70) - f(96, 70)}{-2} = \frac{118 - 125}{-2} = 3.5$; the average, $3.75$, estimates $g'(96)$. Holding $T = 96$ fixed instead and varying $H$ gives $G(H) = f(96, H)$ and the estimate $G'(70) \approx \frac12 (1 + 0.8) = 0.9$. These are the partial derivatives $f_T(96, 70) \approx 3.75$ and $f_H(96, 70) \approx 0.9$.
 
-> [!definition] Definition §126.1: Partial Derivatives at a Point
+> [!definition] Definition §108.1: Partial Derivatives at a Point
 > Let $f$ be a function of two variables. If $g(x) = f(x, b)$ has a derivative at $a$, then this derivative is the **partial derivative of $f$ with respect to $x$ at $(a, b)$**, denoted $f_x(a, b)$:
 >
 > $$
@@ -40,7 +40,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 
 ^def-108-1
 
-> [!definition] Definition §126.2: Partial Derivatives as Functions; Notation
+> [!definition] Definition §108.2: Partial Derivatives as Functions; Notation
 > If $f$ is a function of two variables, its **partial derivatives** are the functions $f_x$ and $f_y$ defined by
 >
 > $$
@@ -66,7 +66,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Partial Derivatives#^def-5-1|452 Def. §5.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§5 Partial Derivatives#^ex-5-1|452 Ex. §5.1]]; compare [[§107 Limits and Continuity#^ex-107-1|Example §107.1]](b)); they only see the two lines through the point parallel to the axes. This is why [[§109 Tangent Planes and Linear Approximations|§109]] needs the stronger notion of differentiability, [[§109 Tangent Planes and Linear Approximations#^def-109-4|Definition §109.4]].
 
-> [!theorem] Theorem §126.1: Rule for Finding Partial Derivatives
+> [!theorem] Theorem §108.1: Rule for Finding Partial Derivatives
 > If $z = f(x, y)$:
 > 1. To find $f_x$, regard $y$ as a constant and differentiate $f(x, y)$ with respect to $x$.
 > 2. To find $f_y$, regard $x$ as a constant and differentiate $f(x, y)$ with respect to $y$.
@@ -82,7 +82,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 
 *Uses:* [[§108 Partial Derivatives#^def-108-1|Def. §108.1]]
 
-> [!example] Example §126.1: First and Second Partial Derivatives
+> [!example] Example §108.1: First and Second Partial Derivatives
 > Let $f(x, y) = x^3 + x^2 y^3 - 2y^2$. Find $f_x(2, 1)$ and $f_y(2, 1)$, and all the second partial derivatives of $f$ ([[§108 Partial Derivatives#^def-108-4|Definition §108.4]]).
 >
 > **First partials.** Holding $y$ constant and differentiating with respect to $x$,
@@ -112,7 +112,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 
 ^ex-108-1
 
-> [!example] Example §126.2: Using the One-Variable Rules
+> [!example] Example §108.2: Using the One-Variable Rules
 > **(a)** If $f(x, y) = \sin\left( \dfrac{x}{1 + y} \right)$, calculate $\dfrac{\partial f}{\partial x}$ and $\dfrac{\partial f}{\partial y}$.
 >
 > By the Chain Rule for functions of one variable ([[§20 The Chain Rule#^thm-20-2|Theorem §20.2]]),
@@ -142,7 +142,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 
 ^rem-108-1
 
-> [!example] Example §126.3: Partial Derivatives as Slopes
+> [!example] Example §108.3: Partial Derivatives as Slopes
 > If $f(x, y) = 4 - x^2 - 2y^2$, find $f_x(1, 1)$ and $f_y(1, 1)$ and interpret these numbers as slopes.
 >
 > $$
@@ -158,7 +158,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ![[m233-92-1.svg]]
 *[[§108 Partial Derivatives#^ex-108-3|Example §108.3]]: the part of the paraboloid $z = 4 - x^2 - 2y^2$ over the first quadrant. The plane $y = 1$ cuts it in the parabola $C_1$ (blue), whose tangent $T_1$ at $P(1, 1, 1)$ (red) has slope $f_x(1, 1) = -2$ in the $x$-direction. The plane $x = 1$ cuts it in $C_2$ (green), whose tangent $T_2$ (orange) has slope $f_y(1, 1) = -4$ in the $y$-direction.*
 
-> [!example] Example §126.4: Implicit Partial Differentiation
+> [!example] Example §108.4: Implicit Partial Differentiation
 > Find $\partial z / \partial x$ and $\partial z / \partial y$ if $z$ is defined implicitly as a function of $x$ and $y$ by the equation
 >
 > $$
@@ -199,7 +199,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 
 ## Functions of More Than Two Variables
 
-> [!definition] Definition §126.3: Partial Derivatives of Functions of Three or More Variables
+> [!definition] Definition §108.3: Partial Derivatives of Functions of Three or More Variables
 > If $f$ is a function of three variables $x$, $y$, $z$, its partial derivative with respect to $x$ is
 >
 > $$
@@ -222,7 +222,7 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 
 ## Higher Derivatives
 
-> [!definition] Definition §126.5: Second Partial Derivatives
+> [!definition] Definition §108.4: Second Partial Derivatives
 > If $f$ is a function of two variables, its partial derivatives $f_x$ and $f_y$ are again functions of two variables, and their partial derivatives $(f_x)_x$, $(f_x)_y$, $(f_y)_x$, $(f_y)_y$ are the **second partial derivatives** of $f$. If $z = f(x, y)$:
 >
 > $$
@@ -240,7 +240,7 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 
 ^def-108-4
 
-> [!theorem] Theorem §126.2: Clairaut's Theorem
+> [!theorem] Theorem §108.2: Clairaut's Theorem
 > Suppose $f$ is defined on a disk $D$ that contains the point $(a, b)$. If the functions $f_{xy}$ and $f_{yx}$ are both continuous on $D$, then
 >
 > $$
@@ -306,7 +306,7 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 
 Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}$ if these functions are continuous: third and higher partial derivatives also do not depend on the order of differentiation.
 
-> [!example] Example §127.1: Higher-Order Partial Derivatives
+> [!example] Example §108.5: Higher-Order Partial Derivatives
 > **(a)** Calculate $f_{xxyz}$ if $f(x, y, z) = \sin(3x + yz)$.
 >
 > Differentiate in the order of the subscripts, $x$, $x$, $y$, $z$, using the Chain Rule (and, in the last step, the Product Rule):
@@ -347,7 +347,7 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 
 ## Partial Differential Equations
 
-> [!definition] Definition §126.6: Laplace's Equation
+> [!definition] Definition §108.5: Laplace's Equation
 > The partial differential equation
 >
 > $$
@@ -369,7 +369,7 @@ Using Clairaut's Theorem repeatedly, one shows that $f_{xyy} = f_{yxy} = f_{yyx}
 > [!remark]- Connections
 > - PDE version: [[§44 Potential Equation#^def-44-1|341 Def. §44.1]] (Laplace's equation and [[§44 Potential Equation#^def-44-2|harmonic functions]], solved in rectangles and disks).
 
-> [!definition] Definition §126.7: The Wave Equation
+> [!definition] Definition §108.6: The Wave Equation
 > The **wave equation** is
 >
 > $$

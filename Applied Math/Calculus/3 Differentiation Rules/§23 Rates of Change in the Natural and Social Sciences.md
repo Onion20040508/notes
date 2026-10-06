@@ -15,7 +15,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 
 ## Rates of Change
 
-> [!definition] Definition §26.1: Average and Instantaneous Rate of Change
+> [!definition] Definition §23.1: Average and Instantaneous Rate of Change
 > Let $y = f(x)$. If $x$ changes from $x_1$ to $x_2$, the changes in $x$ and $y$ are
 >
 > $$
@@ -42,7 +42,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 
 ## Physics
 
-> [!definition] Definition §26.2: Velocity
+> [!definition] Definition §23.2: Velocity
 > Let $s = f(t)$ be the position function of a particle moving in a straight line. Then $\Delta s / \Delta t$ is its average velocity over a time period $\Delta t$, and
 >
 > $$
@@ -57,7 +57,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 
 ^def-23-2
 
-> [!definition] Definition §26.3: Acceleration
+> [!definition] Definition §23.3: Acceleration
 > The **acceleration** is the rate of change of velocity with respect to time:
 >
 > $$
@@ -70,7 +70,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 
 ^def-23-3
 
-> [!example] Example §26.1: Analyzing the Motion of a Particle
+> [!example] Example §23.1: Analyzing the Motion of a Particle
 > The position of a particle is $s = f(t) = t^3 - 6t^2 + 9t$ ($t$ in seconds, $s$ in meters).
 >
 > **(a) Velocity.** $v(t) = \dfrac{ds}{dt} = 3t^2 - 12t + 9$.
@@ -128,7 +128,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 
 ^def-23-5
 
-> [!example] Example §26.2: Density of a Nonhomogeneous Rod
+> [!example] Example §23.2: Density of a Nonhomogeneous Rod
 > A rod has mass $m = f(x) = \sqrt{x}$ kg from its left end to $x$ m. Over $1 \le x \le 1.2$ the average density is
 >
 > $$
@@ -214,7 +214,7 @@ Other rates of change in physics include power (the rate at which work is done),
 
 ^rem-23-1
 
-> [!example] Example §26.3: Bacteria That Double Every Hour
+> [!example] Example §23.3: Bacteria That Double Every Hour
 > A population of bacteria in a homogeneous nutrient medium doubles every hour. If the initial population is $n_0$ and $t$ is measured in hours, then $f(1) = 2f(0) = 2n_0$, $f(2) = 2f(1) = 2^2 n_0$, $f(3) = 2f(2) = 2^3 n_0$, and in general $f(t) = 2^t n_0$. By [[§20 The Chain Rule#^thm-20-5|Theorem §20.5]], $\frac{d}{dt}(b^t) = b^t \ln b$, so the rate of growth at time $t$ is
 >
 > $$
@@ -235,7 +235,7 @@ Other rates of change in physics include power (the rate at which work is done),
 
 *Chain:* ← [[§4 Exponential Functions#^ex-4-3|Chapter 1]]
 
-> [!example] Example §26.4: Blood Flow in an Artery
+> [!example] Example §23.4: Blood Flow in an Artery
 > Model a blood vessel as a cylindrical tube of radius $R$ and length $l$. Friction at the wall makes the velocity $v$ of the blood greatest along the axis and $0$ at the wall. Poiseuille's **law of laminar flow** (1838) states
 >
 > $$

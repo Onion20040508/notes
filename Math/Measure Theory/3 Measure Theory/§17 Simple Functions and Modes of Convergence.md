@@ -11,12 +11,12 @@ Every non-negative measurable function can be approximated from below by simple 
 
 ## Simple Functions
 
-> [!definition] Definition §25.1: Simple Function
+> [!definition] Definition §17.1: Simple Function
 > A function $f: E \to \mathbb{R}$ is called **simple** if its range $R(f) = \{y \mid y = f(x) \text{ for some } x \in E\}$ has only finitely many elements.
 
 ^def-17-1
 
-> [!theorem] Proposition §25.1: Canonical Representation of Simple Functions
+> [!theorem] Proposition §17.1: Canonical Representation of Simple Functions
 > Let $f: E \to \mathbb{R}$ be a simple function with $R(f) = \{a_1, a_2, \ldots, a_n\} \subseteq \mathbb{R}$, where $a_i \neq a_j$ for $i \neq j$. Define
 >
 > $$
@@ -37,7 +37,7 @@ Every non-negative measurable function can be approximated from below by simple 
 > - The canonical representation is the one used to define the integral of a simple function: [[§20 The Lebesgue Integral for Simple Functions#^def-20-1|Def. §20.1]].
 > - Measurability of each $E_j$ is condition (5) of [[§15 Measurable Functions#^prop-15-2|Proposition §15.2]].
 
-> [!definition] Definition §25.2: Support of a Function
+> [!definition] Definition §17.2: Support of a Function
 > Let $f: E \to \overline{\mathbb{R}}$ be an extended real-valued function. The **support** of $f$ is
 >
 > $$
@@ -56,7 +56,7 @@ Every non-negative measurable function can be approximated from below by simple 
 
 The following theorem shows that every non-negative measurable function can be approximated from below by simple functions.
 
-> [!theorem] Theorem §25.2: Approximation by Simple Functions: Non-negative Case
+> [!theorem] Theorem §17.2: Approximation by Simple Functions: Non-negative Case
 > Let $f: E \to \mathbb{R} \cup \{+\infty\}$ be a non-negative measurable function. Then there exists an **increasing** sequence of measurable simple functions $\{\varphi_k\}_{k \geq 1}$ such that:
 > 1. $0 \leq \varphi_1(x) \leq \varphi_2(x) \leq \cdots \leq \varphi_k(x) \leq \cdots$ for all $x \in E$.
 > 2. $\displaystyle\lim_{k \to \infty} \varphi_k(x) = f(x)$ for all $x \in E$.
@@ -130,7 +130,7 @@ The following theorem shows that every non-negative measurable function can be a
 > - Partitions the *range* of $f$, where Darboux sums partition the *domain*: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|Def. §8.2]], [[§32 The Definition of the Riemann Integral|451 §32]].
 > - With the [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] this gives $\int \varphi_k \to \int f$, used for [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-1|linearity of the integral]].
 
-> [!theorem] Theorem §25.3: Approximation by Simple Functions: General Case
+> [!theorem] Theorem §17.3: Approximation by Simple Functions: General Case
 > Let $f: E \to \overline{\mathbb{R}}$ be a measurable function. Then there exists a sequence of measurable simple functions $\{\psi_k\}_{k \geq 1}$ such that:
 > 1. $|\psi_k(x)| \leq |f(x)|$ for all $x \in E$ and all $k$.
 > 2. $\displaystyle\lim_{k \to \infty} \psi_k(x) = f(x)$ for all $x \in E$.
@@ -165,7 +165,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 ## Modes of Convergence
 
-> [!definition] Definition §26.1: Pointwise Convergence
+> [!definition] Definition §17.3: Pointwise Convergence
 > Let $\{f_k\}_{k \in \mathbb{N}}$ be a sequence of functions on $E$.
 > - We say $f_k \to f$ **pointwise** on $E$ if $\displaystyle\lim_{k \to \infty} f_k(x) = f(x)$ for all $x \in E$.
 
@@ -174,7 +174,7 @@ The following theorem shows that every non-negative measurable function can be a
 > [!remark]- Connections
 > - MATH 451 version of pointwise convergence: [[§24 Uniform Convergence#^def-24-1|451 Definition §24.1]].
 
-> [!definition] Definition §26.2: Almost Everywhere Convergence
+> [!definition] Definition §17.4: Almost Everywhere Convergence
 > Let $\{f_k\}_{k \in \mathbb{N}}$ be a sequence of functions on $E$.
 > - We say $f_k \to f$ **almost everywhere** (a.e.) on $E$ if there exists a measure zero set $Z \subseteq E$ such that $\displaystyle\lim_{k \to \infty} f_k(x) = f(x)$ for all $x \in E \setminus Z$.
 >
@@ -211,7 +211,7 @@ The following theorem shows that every non-negative measurable function can be a
 > - The same example in MATH 451: [[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]].
 > - Uniform after removing a small set near $1$: [[§18 Egorov's and Lusin's Theorems#^ex-18-1|Example §18.1]] ([[Egorov's Theorem|Egorov]]).
 
-> [!theorem] Theorem §25.4: Uniform Limit of Continuous Functions
+> [!theorem] Theorem §17.4: Uniform Limit of Continuous Functions
 > Let $\{f_k\}_{k \in \mathbb{N}}$ be a sequence of continuous functions on $E$. If $f_k \to f$ uniformly on $E$, then $f$ is continuous on $E$.
 
 ^thm-17-4
@@ -237,7 +237,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 ## Uniform Approximation of Bounded Measurable Functions
 
-> [!theorem] Theorem §25.5: Uniform Approximation for Bounded Functions
+> [!theorem] Theorem §17.5: Uniform Approximation for Bounded Functions
 > Let $f: E \to \mathbb{R}$ be a **bounded** measurable function. Then there exists a sequence of simple measurable functions $\{\psi_k\}$ such that:
 > 1. $|\psi_k(x)| \leq |f(x)|$ for all $x \in E$ and all $k$.
 > 2. $\psi_k \to f$ **uniformly** on $E$.
@@ -278,7 +278,7 @@ The following theorem shows that every non-negative measurable function can be a
 
 The following characterization translates the $\epsilon$-$N$ definition of convergence into set-theoretic language, which is essential for proving measurability of limits and for [[Egorov's Theorem|Egorov's theorem]].
 
-> [!theorem] Proposition §25.6: Convergence as Set Membership
+> [!theorem] Proposition §17.6: Convergence as Set Membership
 > Let $f, f_1, f_2, \ldots$ be functions on $E$ with $f$ finite-valued. Then $f_k(x_0) \to f(x_0)$ as $k \to \infty$ if and only if
 >
 > $$

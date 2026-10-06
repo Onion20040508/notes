@@ -16,9 +16,10 @@ tags: [chapter, measure-theory]
 - [[§6 Open Covers and the Heine–Borel Theorem]]
 - [[§7 Structure of Open Sets]]
 - [[§8 Motivation꞉ The Riemann Integral]]
+- [[§9 The Rationals ℚ]]
 
 ## Central results
-- [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals]] (§7.1)
+- [[Open Sets in ℝ are Countable Unions of Disjoint Open Intervals]] (§7.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

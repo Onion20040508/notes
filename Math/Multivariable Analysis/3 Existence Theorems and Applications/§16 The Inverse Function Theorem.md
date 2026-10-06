@@ -27,7 +27,7 @@ $$
 
 **The problem:** We generally **cannot write down explicit formulas** for $f$ and $g$!
 
-> [!example] Example §27.1: Why Explicit Inversion is Hard
+> [!example] Example §16.1: Why Explicit Inversion is Hard
 > Given $u = x^2 - y^2$ and $v = 2xy$, try solving for $x$ and $y$ in terms of $u$ and $v$.
 >
 > You would need to solve a system of nonlinear equations — very difficult in general!
@@ -51,7 +51,7 @@ $$
 
 ## The Jacobian Matrix
 
-> [!definition] Definition §27.1: Jacobian Matrix
+> [!definition] Definition §16.1: Jacobian Matrix
 > For a mapping $(x, y) \mapsto (\varphi(x,y), \psi(x,y))$, the **Jacobian matrix** is:
 >
 > $$
@@ -86,7 +86,7 @@ This requires $J$ to be an **invertible matrix**, i.e., $\det(J) \neq 0$ ([[Inve
 
 ## How to Invert a $2 \times 2$ Matrix
 
-> [!theorem] Proposition §27.1: Inverse of a $2 \times 2$ Matrix
+> [!theorem] Proposition §16.1: Inverse of a $2 \times 2$ Matrix
 > If $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ and $\det(A) = ad - bc \neq 0$, then:
 >
 > $$
@@ -131,7 +131,7 @@ $$
 
 ## Statement of the Theorem
 
-> [!theorem] Theorem §27.2: Inverse Function Theorem
+> [!theorem] Theorem §16.2: Inverse Function Theorem
 > Let $\varphi, \psi : \mathbb{R}^2 \to \mathbb{R}$ have continuous partial derivatives in a neighborhood of $(x_0, y_0)$. Define the Jacobian:
 >
 > $$
@@ -255,7 +255,7 @@ $$
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
 > - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
 > - The Jacobian determinant returns as the area factor in the [[§24 The Change of Variables Formula#^thm-24-2|change of variables formula]] (§15.14, §15.20).
-> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§31 Local Diffeomorphisms#^thm-31-1|591 Thm. §31.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§31 Local Diffeomorphisms#^thm-31-2|591 Thm. §31.2]].
+> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§33 Local Diffeomorphisms#^thm-33-1|591 Thm. §33.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§33 Local Diffeomorphisms#^thm-33-2|591 Thm. §33.2]].
 > - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse; the Jacobian is |f′|²).
 
 > [!remark] Remark: Tracking Variable Dependencies

@@ -32,7 +32,7 @@ Polar coordinates describe a nonzero complex number by its distance $r = |z|$ fr
 > - Polar coordinates in Calculus: [[§75 Polar Coordinates#^def-75-1|Calc Def. §75.1]] and the conversion formulas [[§75 Polar Coordinates#^thm-75-2|Calc Thm. §75.2]]. Calculus allows $r < 0$; here $r = |z| \ge 0$ always, and all the freedom is in $\theta$.
 > - Earlier treatment of the argument and polar form: [[§64 Complex Numbers#^def-64-6|235 Def. §64.6]], [[§64 Complex Numbers#^def-64-7|235 Def. §64.7]].
 
-> [!definition] Definition §7.4: Argument
+> [!definition] Definition §7.2: Argument
 > The real number $\theta$ in the polar form (1) is the angle, in radians, that $z$ makes with the positive real axis when $z$ is interpreted as a radius vector. It has infinitely many possible values, including negative ones, that differ by integral multiples of $2\pi$; they can be determined from $\tan\theta = y/x$ once the quadrant containing $z$ is specified. Each value of $\theta$ is an **argument** of $z$, and the set of all such values is denoted by $\arg z$.
 >
 > *B&C: Sec. 7, Equations (1)–(2)*

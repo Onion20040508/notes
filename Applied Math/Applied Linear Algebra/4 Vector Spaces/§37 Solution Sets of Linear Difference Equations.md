@@ -15,7 +15,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 
 ## Solution Sets of Linear Difference Equations
 
-> [!theorem] Proposition §45.1: The Solutions Form a Subspace
+> [!theorem] Proposition §37.1: The Solutions Form a Subspace
 > Given $a_1, \ldots, a_n$, the map $T : \mathbb{S} \to \mathbb{S}$ that sends $\{y_k\}$ to $\{w_k\}$,
 >
 > $$
@@ -41,7 +41,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 
 *Uses:* [[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-5|§30.5]] (the kernel is a subspace)
 
-> [!theorem] Theorem §45.2: Existence and Uniqueness
+> [!theorem] Theorem §37.2: Existence and Uniqueness
 > If $a_n \ne 0$ and $\{z_k\}$ is given, the equation
 >
 > $$
@@ -79,7 +79,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 
 *Uses:* [[§36 Applications to Difference Equations#^def-36-3|Def. §36.3]]
 
-> [!theorem] Theorem §45.3: The Solution Space Has Dimension n
+> [!theorem] Theorem §37.3: The Solution Space Has Dimension n
 > The set $H$ of all solutions of the $n$th-order homogeneous linear difference equation
 >
 > $$
@@ -109,7 +109,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 > - Rigorous treatment: finite-dimensional spaces are isomorphic exactly when they have the same dimension, [[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]; here the isomorphism is "evaluate at $0, \ldots, n-1$". The same argument (an existence and uniqueness theorem for initial values) shows that the solutions of an $n$th-order linear homogeneous differential equation form an $n$-dimensional space.
 > - ODE version: for $y'' + p(t)y' + q(t)y = 0$ the isomorphism is $y \mapsto (y(t_0), y'(t_0))$ and the dimension is $2$, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-18-2|331 §18, Remark: The Solution Space Is a Two-Dimensional Vector Space]]; for a system $\mathbf{x}' = P(t)\mathbf{x}$ of $n$ equations it is $\mathbf{x} \mapsto \mathbf{x}(t_0)$, and a fundamental set is a basis of the $n$-dimensional solution space, [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-2|331 Thm. §36.2]], [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-4|331 Thm. §36.4]].
 
-> [!theorem] Proposition §45.4: The Casorati Test for Solutions
+> [!theorem] Proposition §37.4: The Casorati Test for Solutions
 > Let $n$ signals be solutions of the same $n$th-order homogeneous equation (10), and let $C(k)$ be their Casorati matrix. Then either $C(k)$ is invertible for all $k$ and the signals are linearly independent, or $C(k)$ is invertible for no $k$ and the signals are linearly dependent.
 >
 > *Lay: 4.8 (text; proof in the Study Guide)*
@@ -123,7 +123,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 
 *Uses:* [[§36 Applications to Difference Equations#^prop-36-1|§36.1]], [[§37 Solution Sets of Linear Difference Equations#^prop-37-1|§37.1]], [[§37 Solution Sets of Linear Difference Equations#^thm-37-2|§37.2]]
 
-> [!definition] Definition §45.2: Fundamental Set of Solutions
+> [!definition] Definition §37.1: Fundamental Set of Solutions
 > A basis for the subspace of all solutions of the homogeneous equation (10) is a **fundamental set of solutions** of (10). Exhibiting one is the standard way to describe the "general solution". By [[§37 Solution Sets of Linear Difference Equations#^thm-37-3|Theorem §37.3]] and the [[§33 The Dimension of a Vector Space#^thm-33-5|Basis Theorem]], any $n$ linearly independent solutions of (10) automatically span the $n$-dimensional solution space, so they form a fundamental set.
 >
 > *Lay: 4.8 (text)*
@@ -137,9 +137,8 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 > 4. Given initial values $y_0, \ldots, y_{n-1}$, solve the linear system for $c_1, \ldots, c_n$; its coefficient matrix is the Casorati matrix $C(0)$, so the solution is unique ([[§37 Solution Sets of Linear Difference Equations#^thm-37-2|Theorem §37.2]]).
 > 5. Nonhomogeneous equation: add one particular solution ([[§37 Solution Sets of Linear Difference Equations#^thm-37-5|Theorem §37.5]]).
 
-^rem-37-2
-
-> [!example] Example §45.1: A Fundamental Set from the Auxiliary Equation
+^rem-37-1
+> [!example] Example §37.1: A Fundamental Set from the Auxiliary Equation
 > Find a basis for the set of all solutions of
 >
 > $$
@@ -164,7 +163,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 
 ^ex-37-1
 
-> [!example] Example §45.2: The Fibonacci Numbers
+> [!example] Example §37.2: The Fibonacci Numbers
 > The Fibonacci numbers satisfy $F_{k+2} = F_{k+1} + F_k$ with $F_0 = 0$, $F_1 = 1$: $0, 1, 1, 2, 3, 5, 8, 13, 21, \ldots$. Find a formula for $F_k$, and the limit of $F_{k+1}/F_k$.
 >
 > **The equation.** $F_{k+2} - F_{k+1} - F_k = 0$ is homogeneous of order $2$ ($a_1 = a_2 = -1$). Its auxiliary equation is
@@ -229,7 +228,7 @@ The solutions of a homogeneous linear difference equation of order $n$ form an $
 > [!remark]- Connections
 > - See also: the first-order case $y_{k+1} = \rho y_k + b_k$, solved explicitly for any $y_0$: [[§15★ First-Order Difference Equations#^prop-15-2|331 Prop. §15.2]]; for constant $b$ and $\rho \ne 1$ the solution is the equilibrium $b/(1 - \rho)$ plus a multiple of $\rho^k$, particular plus homogeneous. The same structure for linear differential equations: [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-2|331 Thm. §21.2]].
 
-> [!example] Example §45.3: A Nonhomogeneous Equation
+> [!example] Example §37.3: A Nonhomogeneous Equation
 > Verify that $y_k = k^2$ satisfies
 >
 > $$

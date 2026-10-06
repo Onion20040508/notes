@@ -31,7 +31,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 > [!remark]- Connections
 > - In 590 a metric generates a topology: [[§12 Metric Topology#^def-12-1|590 Def. §12.1]] and [[§12 Metric Topology#^def-12-3|590 Def. §12.3]].
-> - Same definition in 556: [[§10 Normed Linear Spaces#^def-10-3|556 Def. §10.3]], where every normed space is a metric space.
+> - Same definition in 556: [[§11 Normed Linear Spaces#^def-11-3|556 Def. §11.3]], where every normed space is a metric space.
 
 > [!example] Example §13.1: The Real Line
 > $X = \mathbb{R}$ with $d(a,b) = |a - b|$: all three conditions were verified in §3.
@@ -104,7 +104,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 Once we have a metric space $(X, d)$, we can define convergence of sequences of points of $X$ — the definitions are word-for-word those for $\mathbb{R}$, with $d$ in place of the absolute value.
 
-> [!definition] Definition §13.3: Convergence in a Metric Space
+> [!definition] Definition §13.2: Convergence in a Metric Space
 > Let $(s_n)$ be a sequence in a metric space $(X,d)$. We say $s_n \to s$ if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s) < \varepsilon$ for all $n \geq N$.
 
 ^def-13-2
@@ -118,7 +118,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > - The case X = ℝⁿ with the Euclidean distance is 452's convergence of sequences: [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]].
 > - Convergence in any topological space, with neighborhoods in place of ε-balls: [[§8 Interior and Closure#^def-8-6|590 Def. §8.6]].
 
-> [!definition] Definition §13.4: Cauchy Sequence in a Metric Space
+> [!definition] Definition §13.3: Cauchy Sequence in a Metric Space
 > Let $(s_n)$ be a sequence in a metric space $(X,d)$. The sequence is **Cauchy** if for every $\varepsilon > 0$ there exists $N$ such that $d(s_n, s_m) < \varepsilon$ for all $m, n \geq N$.
 
 ^def-13-3
@@ -146,13 +146,13 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 > - In 590 the same comparison shows that the Euclidean and square metrics give the same topology: [[§12 Metric Topology#^thm-12-2|590 Thm. §12.2]].
 > - The case n = 2, read in ℂ: [[§60 Convergence of Sequences#^thm-60-2|342 Thm. §60.2]] (a complex sequence converges iff its real and imaginary parts converge, from the same two-sided bound on distances).
 
-> [!definition] Definition §13.5: Complete Metric Space
+> [!definition] Definition §13.4: Complete Metric Space
 > A metric space $(X,d)$ is called **complete** if every Cauchy sequence in $X$ is convergent (to a point of $X$).
 
 ^def-13-4
 
 > [!remark]- Connections
-> - Same definition in 556, where complete normed spaces are Banach spaces: [[§11 Completeness#^def-11-1|556 Def. §11.1]], [[§11 Completeness#^def-11-2|556 Def. §11.2]].
+> - Same definition in 556, where complete normed spaces are Banach spaces: [[§12 Completeness#^def-12-1|556 Def. §12.1]], [[§12 Completeness#^def-12-2|556 Def. §12.2]].
 
 > [!example] Example §13.5: Completeness of the Real Line
 > $(\mathbb{R}, |\cdot|)$ is a complete metric space — this is exactly what we proved in §10a (Cauchy $\Rightarrow$ convergent), and it is equivalent to the [[Completeness Axiom|completeness axiom]] of $\mathbb{R}$.
@@ -185,7 +185,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 *Uses:* [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|§13.1]], [[§10a Cauchy Sequences#^thm-10a-3|§10a.3]]
 
-> [!definition] Definition §13.7: Bounded Sequence in a Metric Space
+> [!definition] Definition §13.5: Bounded Sequence in a Metric Space
 > A sequence $(s_n)$ in $(X,d)$ is **bounded** if there exist a number $M > 0$ and a point $x_0 \in X$ such that $d(s_n, x_0) \leq M$ for all $n \geq 1$ — a direct generalization of bounded sequences of real numbers.
 
 ^def-13-5
@@ -210,7 +210,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 Now we can introduce the most important topological notions.
 
-> [!definition] Definition §13.8: Open Subsets
+> [!definition] Definition §13.6: Open Subsets
 > Let $(X,d)$ be a metric space. A subset $U \subseteq X$ is called **open** if for every point $x \in U$, there exists a ball of some radius $\varepsilon > 0$ centered at $x$,
 >
 > $$

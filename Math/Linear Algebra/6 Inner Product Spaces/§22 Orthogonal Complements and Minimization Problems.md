@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic properties [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
-> - Same definition for arbitrary subsets of a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]): [[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]; the complement is always closed, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]].
+> - Same definition for arbitrary subsets of a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]): [[§25 Projection and Orthogonal Decomposition#^def-25-1|556 Def. §25.1]]; the complement is always closed, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]].
 > - In ℝ³: the plane through $\mathbf r_0$ with normal $\mathbf n$ is $\mathbf r_0 + \operatorname{span}(\mathbf n)^\perp$, [[§98 Equations of Lines and Planes#^thm-98-5|Calc Thm. §98.5]] (with worked examples).
 > - Computational version: [[§50 Orthogonal Complements and Angles#^def-50-1|235 Def. §50.1]] (the orthogonal complement of a subspace of $\mathbb R^n$).
 
@@ -70,7 +70,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Defines $P_U$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|6.55]]); dimensions [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|6.51]]; double complement [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|6.52]].
-> - Hilbert-space version, with the subspace closed instead of finite-dimensional: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|556 Thm. §22.4]].
+> - Hilbert-space version, with the subspace closed instead of finite-dimensional: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|556 Thm. §25.4]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the Orthogonal Decomposition Theorem, with the projection formula).
 
 %% ex:6.49-fig %%
@@ -106,7 +106,7 @@ tags: [linear-algebra]
 *Uses:* [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]
 
 > [!remark]- Connections
-> - For any subset of a Hilbert space the double complement is the closed linear span ([[§10 Normed Linear Spaces#^def-10-8|556 Def. §10.8]]): [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
+> - For any subset of a Hilbert space the double complement is the closed linear span ([[§11 Normed Linear Spaces#^def-11-9|556 Def. §11.9]]): [[§25 Projection and Orthogonal Decomposition#^thm-25-6|556 Thm. §25.6]].
 > - Computational version: [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]] (including $(\operatorname{Nul}A)^\perp=\operatorname{Row}A$).
 
 > [!theorem] Theorem 6.54: U⟂ = {0} ⟺ U = V (for U a finite-dimensional subspace of V)
@@ -129,7 +129,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Properties [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]]; closest point [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|6.61]]. Physics: $P_U=\sum_k|e_k\rangle\langle e_k|$ over an orthonormal basis of $U$, the projector of a measurement outcome.
-> - Same definition onto a closed subspace of a Hilbert space: [[§31 The Completeness Relation#^def-31-2|556 Def. §31.2]].
+> - Same definition onto a closed subspace of a Hilbert space: [[§35 The Completeness Relation#^def-35-4|556 Def. §35.4]].
 > - Computational version: [[§52 Orthogonal Projections#^def-52-1|235 Def. §52.1]] ($\operatorname{proj}_W\mathbf y$ in $\mathbb R^n$, with worked examples).
 
 > [!example] Example 6.56: Orthogonal projection onto one-dimensional subspace (p. 214)
@@ -191,7 +191,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - This proof uses only $V=U\oplus U^\perp$ for $U=\nullsp\varphi$, which is why it generalizes to Hilbert spaces (closed subspaces).
-> - Hilbert-space version: [[§30 Bras, Kets, and the Riesz Map#^thm-30-2|556 Thm. §30.2]], where the Riesz map is a conjugate-linear isometric bijection onto the dual.
+> - Hilbert-space version: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|556 Thm. §34.2]], where the Riesz map is a conjugate-linear isometric bijection onto the dual.
 
 > [!theorem] Theorem 6.61: Minimizing distance to a subspace
 > Let $U$ be a finite-dimensional subspace of $V$, $v\in V$, $u\in U$. Then
@@ -216,7 +216,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Pseudoinverse version for equations $Tx=b$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-70|6.70]].
-> - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, [[§22 Projection and Orthogonal Decomposition#^thm-22-2|556 Thm. §22.2]].
+> - Generalization: in a Hilbert space every nonempty closed convex set has a unique closest point, [[§25 Projection and Orthogonal Decomposition#^thm-25-2|556 Thm. §25.2]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-3|235 Thm. §52.3]] (the Best Approximation Theorem in $\mathbb R^n$); with $U=\operatorname{Col}A$ it gives least squares, [[§54 Least-Squares Problems#^thm-54-1|235 Thm. §54.1]].
 > - Computational version: [[§15★ Mean Error and Convergence in Mean#^thm-15-2|341 Thm. §15.2]] (the truncated Fourier series, the projection onto the trigonometric polynomials of degree at most $N$, has the smallest mean square error, with the minimum computed).
 

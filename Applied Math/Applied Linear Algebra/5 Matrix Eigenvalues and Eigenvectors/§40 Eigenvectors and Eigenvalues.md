@@ -35,7 +35,7 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 
 ^rem-40-2
 
-> [!definition] Definition §49.1: Eigenvector and Eigenvalue
+> [!definition] Definition §40.1: Eigenvector and Eigenvalue
 > An **eigenvector** of an $n \times n$ matrix $A$ is a nonzero vector $\mathbf{x}$ such that $A\mathbf{x} = \lambda\mathbf{x}$ for some scalar $\lambda$. A scalar $\lambda$ is called an **eigenvalue** of $A$ if there is a nontrivial solution $\mathbf{x}$ of $A\mathbf{x} = \lambda\mathbf{x}$; such an $\mathbf{x}$ is called an *eigenvector corresponding to $\lambda$*.
 >
 > An eigenvector must be nonzero, by definition, but an eigenvalue may be zero ([[§40 Eigenvectors and Eigenvalues#^thm-40-2|Theorem §40.2]]).
@@ -52,7 +52,7 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 > - See also: [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-4|331 Def. §35.4]] (the same definition for real or complex $\lambda$, together with the [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-35-5|characteristic equation]]), whose eigenpairs give the solutions $\boldsymbol{\xi}e^{rt}$ of $\mathbf{x}' = A\mathbf{x}$, [[§37 Homogeneous Linear Systems with Constant Coefficients#^thm-37-1|331 Thm. §37.1]].
 > - PDE version: [[§26 Example꞉ Insulated Bar#^def-26-1|341 Def. §26.1]] (eigenvalue problems for a differential equation with boundary conditions: [[§26 Example꞉ Insulated Bar#^def-26-2|eigenvalues and eigenfunctions]]), introduced in [[§5★ Boundary Value Problems#^def-5-4|341 Def. §5.4]].
 
-> [!example] Example §49.1: Checking Eigenvectors and Eigenvalues
+> [!example] Example §40.1: Checking Eigenvectors and Eigenvalues
 > Let $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 6 \\ -5 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} 3 \\ -2 \end{bmatrix}$.
 >
 > **(a) Are $\mathbf{u}$ and $\mathbf{v}$ eigenvectors of $A$?** Multiply:
@@ -97,7 +97,7 @@ $$
 
 has a nontrivial solution.
 
-> [!definition] Definition §49.2: Eigenspace
+> [!definition] Definition §40.2: Eigenspace
 > Let $\lambda$ be an eigenvalue of the $n \times n$ matrix $A$. The set of all solutions of $(A - \lambda I)\mathbf{x} = \mathbf{0}$ is the null space $\operatorname{Nul}(A - \lambda I)$, so it is a subspace of $\mathbb{R}^n$ ([[§30 Null Spaces, Column Spaces, and Linear Transformations#^thm-30-1|Theorem §30.1]]). It is called the **eigenspace** of $A$ corresponding to $\lambda$. The eigenspace consists of the zero vector and all the eigenvectors corresponding to $\lambda$.
 >
 > *Lay: 5.1 (text)*
@@ -109,7 +109,7 @@ For the matrix of [[§40 Eigenvectors and Eigenvalues#^ex-40-1|Example §40.1]],
 ![[m235-32-1.svg]]
 *The two eigenspaces of $A = \begin{bmatrix} 1 & 6 \\ 5 & 2 \end{bmatrix}$. On the line through $(1, 1)$ (blue) the transformation $\mathbf{x} \mapsto A\mathbf{x}$ is multiplication by $7$: $\mathbf{u} = (1, 1)$ goes to $(7, 7)$. On the line through $(6, -5)$ (red) it is multiplication by $-4$, which reverses direction: $\mathbf{w} = (3/2, -5/4)$ goes to $(-6, 5)$. Every other vector, such as $\mathbf{v} = (3, -2)$ (gray), is moved off its own line: $A\mathbf{v} = (-9, 11)$.*
 
-> [!example] Example §49.2: A Two-Dimensional Eigenspace
+> [!example] Example §40.2: A Two-Dimensional Eigenspace
 > Let $A = \begin{bmatrix} 4 & -1 & 6 \\ 2 & 1 & 6 \\ 2 & -1 & 8 \end{bmatrix}$. An eigenvalue of $A$ is $2$. Find a basis for the corresponding eigenspace.
 >
 > Form
@@ -154,7 +154,7 @@ For the matrix of [[§40 Eigenvectors and Eigenvalues#^ex-40-1|Example §40.1]],
 
 ^rem-40-4
 
-> [!theorem] Theorem §49.1: Eigenvalues of a Triangular Matrix
+> [!theorem] Theorem §40.1: Eigenvalues of a Triangular Matrix
 > The eigenvalues of a triangular matrix are the entries on its main diagonal.
 >
 > *Lay: Theorem 1 (5.1)*
@@ -183,7 +183,7 @@ For the matrix of [[§40 Eigenvectors and Eigenvalues#^ex-40-1|Example §40.1]],
 > [!remark]- Connections
 > - Rigorous treatment: [[§16 Upper-Triangular Matrices#^ladr-5-41|LADR 5.41]] (the eigenvalues of an operator with an upper-triangular matrix are exactly its diagonal entries), proved there without determinants.
 
-> [!example] Example §49.3: Eigenvalues by Inspection
+> [!example] Example §40.3: Eigenvalues by Inspection
 > Let $A = \begin{bmatrix} 3 & 6 & -8 \\ 0 & 0 & 6 \\ 0 & 0 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 0 & 0 \\ -2 & 1 & 0 \\ 5 & 3 & 4 \end{bmatrix}$. By [[§40 Eigenvectors and Eigenvalues#^thm-40-1|Theorem §40.1]], the eigenvalues of the upper triangular $A$ are $3$, $0$ and $2$, and the eigenvalues of the lower triangular $B$ are $4$ and $1$ (the diagonal entry $4$ occurs twice, but it is one eigenvalue).
 >
 > Since $0$ is an eigenvalue of $A$, $A\mathbf{x} = \mathbf{0}$ has a nontrivial solution, and $A$ is not invertible ([[§40 Eigenvectors and Eigenvalues#^thm-40-2|Theorem §40.2]] below). Indeed, its second column is $2$ times its first.
@@ -192,7 +192,7 @@ For the matrix of [[§40 Eigenvectors and Eigenvalues#^ex-40-1|Example §40.1]],
 
 ^ex-40-3
 
-> [!theorem] Theorem §49.2: Zero as an Eigenvalue
+> [!theorem] Theorem §40.2: Zero as an Eigenvalue
 > An $n \times n$ matrix $A$ has $0$ as an eigenvalue if and only if $A$ is not invertible.
 >
 > *Lay: 5.1 (text)*
@@ -210,7 +210,7 @@ This fact is added to the Invertible Matrix Theorem in [[§41 The Characteristic
 
 The next theorem is needed throughout the chapter. Its proof is a typical calculation with eigenvectors, and it proves "If $P$ then $Q$" by showing that $P$ together with the negation of $Q$ leads to a contradiction.
 
-> [!theorem] Theorem §49.3: Eigenvectors for Distinct Eigenvalues Are Independent
+> [!theorem] Theorem §40.3: Eigenvectors for Distinct Eigenvalues Are Independent
 > If $\mathbf{v}_1, \ldots, \mathbf{v}_r$ are eigenvectors that correspond to distinct eigenvalues $\lambda_1, \ldots, \lambda_r$ of an $n \times n$ matrix $A$, then the set $\{\mathbf{v}_1, \ldots, \mathbf{v}_r\}$ is linearly independent.
 >
 > *Lay: Theorem 2 (5.1)*
@@ -264,7 +264,7 @@ The next theorem is needed throughout the chapter. Its proof is a typical calcul
 
 ^rem-40-5
 
-> [!theorem] Corollary §49.4: At Most n Eigenvalues
+> [!theorem] Corollary §40.4: At Most n Eigenvalues
 > An $n \times n$ matrix has at most $n$ distinct eigenvalues.
 >
 > *Source: 235 lecture L19 (Lay: Exercise 5.1.23)*
@@ -292,7 +292,7 @@ $$
 
 is a recursive description of a sequence $\{\mathbf{x}_k\}$ in $\mathbb{R}^n$. A **solution** of (8) is an explicit description of $\{\mathbf{x}_k\}$ whose formula for each $\mathbf{x}_k$ does not depend directly on $A$ or on the preceding terms other than the initial term $\mathbf{x}_0$. (Iterating (8) gives $\mathbf{x}_k = A^k\mathbf{x}_0$, but this is not yet a solution: it still requires computing $A^k$.)
 
-> [!theorem] Theorem §50.1: Eigenvector Solutions of a Difference Equation
+> [!theorem] Theorem §40.5: Eigenvector Solutions of a Difference Equation
 > If $\mathbf{x}_0$ is an eigenvector of $A$ with eigenvalue $\lambda$, then
 >
 > $$
@@ -328,7 +328,7 @@ is a recursive description of a sequence $\{\mathbf{x}_k\}$ in $\mathbb{R}^n$. A
 
 So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the difference equation is solved. This is the idea of the rest of the chapter ([[§42 Diagonalization|§42]], [[§45 Discrete Dynamical Systems|§45]]). The lecture uses it to find a formula for the Fibonacci numbers. Finding the eigenvalues uses the characteristic equation $\det(A - \lambda I) = 0$ of the next section: $A - \lambda I$ has a nonzero null space exactly when it is not invertible, that is, when its determinant is $0$ ([[§41 The Characteristic Equation#^thm-41-4|Theorem §41.4]]).
 
-> [!example] Example §50.1: The Fibonacci Numbers by Eigenvectors
+> [!example] Example §40.4: The Fibonacci Numbers by Eigenvectors
 > The Fibonacci numbers $F_0 = 0$, $F_1 = 1$, $F_n = F_{n-1} + F_{n-2}$ ($0, 1, 1, 2, 3, 5, 8, 13, \ldots$) were found in [[§37 Solution Sets of Linear Difference Equations#^ex-37-2|Example §37.2]] from the auxiliary equation of the recurrence. The lecture finds them with eigenvectors instead.
 >
 > **A first-order system.** Let $\mathbf{v}_n = \begin{bmatrix} F_n \\ F_{n+1} \end{bmatrix}$, so $\mathbf{v}_0 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$. Then
@@ -357,7 +357,7 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 
 *Chain: earlier in [[§39 The Fibonacci Numbers and the City–Suburb Migration#The Fibonacci Numbers|Chapter 4]]*
 
-> [!example] Example §50.2: A Power Applied to a Vector
+> [!example] Example §40.5: A Power Applied to a Vector
 > Let $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$. Find $A^{10}\begin{bmatrix} 1 \\ 0 \end{bmatrix}$.
 >
 > **Eigenvalues.** $\det(A - \lambda I) = (1 - \lambda)(3 - \lambda) - 8 = \lambda^2 - 4\lambda - 5 = (\lambda - 5)(\lambda + 1)$, so the eigenvalues are $5$ and $-1$.

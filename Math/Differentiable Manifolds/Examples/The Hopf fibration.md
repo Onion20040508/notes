@@ -7,26 +7,26 @@ tags: ["math591", "workhorse"]
 The quotient map $\pi : S^{2n+1} \to \mathbb{CP}^n$, $z \mapsto [z]$, whose fibres are the circles $\{\xi z \mid \xi \in S^1\}$ that complex lines cut out of the unit sphere; for $n = 1$ it is the classical Hopf map $S^3 \to S^2$, via $\mathbb{CP}^1 \cong S^2$. It is the thread through the course's treatment of quotients: it first defines $\mathbb{CP}^n$, is then the orbit map of the action of $\mathrm{U}(1)$ by scalar multiplication, becomes a submersion once smooth structures exist, and is finally the first non-trivial fibration, locally a product $U \times S^1$ but with no global section. The base is treated in [[Real and complex projective spaces]] and the total space in [[Spheres Sⁿ]]. Its uses in MATH 591:
 
 - $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles ([[§9 Complex Projective Space#^def-9-1|§9]])
-- The quotient map is the orbit map of $\mathrm{U}(1)$ acting on $S^{2n+1}$ ([[§12 Group Actions and Orbit Spaces#^ex-12-3|§12]])
-- Every orbit is a circle of the same kind: no special points ([[§12 Group Actions and Orbit Spaces#^rem-12-5|§12]])
-- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§37 Projective Spaces and the Hopf Fibration#^ex-37-2|§37]])
-- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§37 Projective Spaces and the Hopf Fibration#^ex-37-3|§37]])
-- $\pi$ has no continuous section for $n \geq 1$ ([[§37 Projective Spaces and the Hopf Fibration#^rem-37-1|§37]])
+- The quotient map is the orbit map of $\mathrm{U}(1)$ acting on $S^{2n+1}$ ([[§13 Group Actions and Orbit Spaces#^ex-13-3|§12]])
+- Every orbit is a circle of the same kind: no special points ([[§13 Group Actions and Orbit Spaces#^rem-13-5|§12]])
+- $S^{2n+1} \to \mathbb{CP}^n$ is a submersion ([[§39 Projective Spaces and the Hopf Fibration#^ex-39-2|§37]])
+- $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$ ([[§39 Projective Spaces and the Hopf Fibration#^ex-39-3|§37]])
+- $\pi$ has no continuous section for $n \geq 1$ ([[§39 Projective Spaces and the Hopf Fibration#^rem-39-1|§37]])
 
 ## $\mathbb{CP}^n$ is defined as the quotient of $S^{2n+1}$ whose classes are circles
 ![[§9 Complex Projective Space#^def-9-1]]
 
 ## The quotient map is the orbit map of $\mathrm{U}(1)$ acting on $S^{2n+1}$
-![[§12 Group Actions and Orbit Spaces#^ex-12-3]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-3]]
 
 ## Every orbit is a circle of the same kind: no special points
-![[§12 Group Actions and Orbit Spaces#^rem-12-5]]
+![[§13 Group Actions and Orbit Spaces#^rem-13-5]]
 
 ## $S^{2n+1} \to \mathbb{CP}^n$ is a submersion
-![[§37 Projective Spaces and the Hopf Fibration#^ex-37-2]]
+![[§39 Projective Spaces and the Hopf Fibration#^ex-39-2]]
 
 ## $\pi$ is a fibration with fibre $S^1$, trivialized over each chart domain $U_j$
-![[§37 Projective Spaces and the Hopf Fibration#^ex-37-3]]
+![[§39 Projective Spaces and the Hopf Fibration#^ex-39-3]]
 
 ## $\pi$ has no continuous section for $n \geq 1$
-![[§37 Projective Spaces and the Hopf Fibration#^rem-37-1]]
+![[§39 Projective Spaces and the Hopf Fibration#^rem-39-1]]

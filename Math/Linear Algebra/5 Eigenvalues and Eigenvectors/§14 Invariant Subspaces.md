@@ -83,7 +83,7 @@ tags: [linear-algebra]
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-15|3.15]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|3.65]]
 
 > [!remark] Remark: Infinite dimensions
-> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) can contain points that are not eigenvalues (continuous spectrum).
+> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) can contain points that are not eigenvalues (continuous spectrum).
 
 > [!remark]- Connections
 > - Used in [[§15 The Minimal Polynomial#^ladr-5-32|T not invertible ⟺ constant term of minimal polynomial of T is 0]]. Determinant version: $\det(T-\lambda I)=0$ ([[Invertible ⟺ nonzero determinant]]).

@@ -15,14 +15,14 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ## Parabolas
 
-> [!definition] Definition §89.1: Parabola
+> [!definition] Definition §77.1: Parabola
 > A **parabola** is the set of points in a plane that are equidistant from a fixed point $F$, the **focus**, and a fixed line, the **directrix**. The point halfway between the focus and the directrix lies on the parabola; it is the **vertex**. The line through the focus perpendicular to the directrix is the **axis** of the parabola.
 >
 > *Stewart: 10.5 (text)*
 
 ^def-77-1
 
-> [!theorem] Theorem §89.1: Standard Equation of a Parabola
+> [!theorem] Theorem §77.1: Standard Equation of a Parabola
 > An equation of the parabola with focus $(0, p)$ and directrix $y = -p$ is
 >
 > $$
@@ -74,7 +74,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 *Uses:* [[§77 Conic Sections#^thm-77-1|§77.1]]
 
-> [!example] Example §89.1: Focus and Directrix of a Parabola
+> [!example] Example §77.1: Focus and Directrix of a Parabola
 > Find the focus and directrix of $y^2 + 10x = 0$ and sketch it.
 >
 > Write it as $y^2 = -10x$ and compare with [[§77 Conic Sections#^cor-77-2|Corollary §77.2]]: $4p = -10$, so $p = -\frac52$. The focus is $(p, 0) = (-\frac52, 0)$ and the directrix is $x = \frac52$. The parabola has its vertex at the origin, opens to the left and is symmetric about the $x$-axis.
@@ -163,7 +163,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 *Uses:* [[§77 Conic Sections#^thm-77-3|§77.3]]
 
-> [!example] Example §89.2: From Equation to Foci and Back
+> [!example] Example §77.2: From Equation to Foci and Back
 > **(a)** Sketch $9x^2 + 16y^2 = 144$ and locate the foci. Dividing by $144$,
 >
 > $$
@@ -268,7 +268,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 *Uses:* [[§77 Conic Sections#^thm-77-5|§77.5]]
 
-> [!example] Example §89.3: Foci, Asymptotes and Equations of Hyperbolas
+> [!example] Example §77.3: Foci, Asymptotes and Equations of Hyperbolas
 > **(a)** Find the foci and asymptotes of $9x^2 - 16y^2 = 144$. Dividing by $144$,
 >
 > $$
@@ -296,7 +296,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^rem-77-2
 
-> [!example] Example §89.4: A Shifted Ellipse
+> [!example] Example §77.4: A Shifted Ellipse
 > Find an equation of the ellipse with foci $(2, -2)$, $(4, -2)$ and vertices $(1, -2)$, $(5, -2)$.
 >
 > The major axis joins the vertices and has length $4$, so $a = 2$. The distance between the foci is $2$, so $c = 1$, and $b^2 = a^2 - c^2 = 3$. The center is the midpoint $(3, -2)$, and the major axis is horizontal. Replacing $x$ and $y$ in [[§77 Conic Sections#^thm-77-3|Theorem §77.3]] by $x - 3$ and $y + 2$:
@@ -309,7 +309,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^ex-77-4
 
-> [!example] Example §89.5: Completing the Square
+> [!example] Example §77.5: Completing the Square
 > Sketch the conic $9x^2 - 4y^2 - 72x + 8y + 176 = 0$ and find its foci.
 >
 > Complete the squares:

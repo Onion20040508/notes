@@ -15,7 +15,7 @@ This section assembles the methods of the chapter into one procedure for a fairl
 
 ## The Problem and Its Steady State
 
-> [!definition] Definition §39.1: The General Heat Conduction Problem
+> [!definition] Definition §31.1: The General Heat Conduction Problem
 > The temperature $u(x, t)$ in a rod $l < x < r$ whose lateral surface is insulated, in which no heat is generated and whose material properties vary with position, satisfies
 >
 > $$
@@ -35,7 +35,7 @@ This section assembles the methods of the chapter into one procedure for a fairl
 
 Equation (1) is the heat equation of [[§22 Derivation and Boundary Conditions#^thm-22-2|Theorem §22.2]] (Eq. (3) there, without generation) before the coefficients are assumed constant.
 
-> [!theorem] Proposition §39.1: The Steady-State Temperature
+> [!theorem] Proposition §31.1: The Steady-State Temperature
 > Assume $c_1$ and $c_2$ are constants. The steady-state solution $v(x) = \lim_{t \to \infty}u(x, t)$ satisfies the boundary value problem
 >
 > $$
@@ -78,7 +78,7 @@ Equation (1) is the heat equation of [[§22 Derivation and Boundary Conditions#^
 
 ## The Transient Problem
 
-> [!definition] Definition §39.2: Dimensionless Coefficients
+> [!definition] Definition §31.2: Dimensionless Coefficients
 > Let $\bar\kappa$, $\bar\rho$ and $\bar c$ be average values of $\kappa(x)$, $\rho(x)$ and $c(x)$. The dimensionless functions $s(x)$ and $p(x)$ are defined by
 >
 > $$
@@ -98,7 +98,7 @@ Equation (1) is the heat equation of [[§22 Derivation and Boundary Conditions#^
 
 ^def-31-3
 
-> [!theorem] Proposition §39.2: The Transient Problem
+> [!theorem] Proposition §31.2: The Transient Problem
 > $w(x, t)$ satisfies the initial value–boundary value problem
 >
 > $$
@@ -131,7 +131,7 @@ Equation (1) is the heat equation of [[§22 Derivation and Boundary Conditions#^
 
 ## Separation of Variables and the Solution
 
-> [!theorem] Theorem §39.3: Solution of the General Heat Conduction Problem
+> [!theorem] Theorem §31.3: Solution of the General Heat Conduction Problem
 > Assume $s$, $s'$ and $p$ are continuous on $[l, r]$, $s$ and $p$ are positive there (with $\alpha_1$ or $\beta_1$ positive, as in Definition §31.1), and $f$ is sectionally smooth. Then:
 > 1. The eigenvalue problem
 >
@@ -180,7 +180,7 @@ Equation (1) is the heat equation of [[§22 Derivation and Boundary Conditions#^
 
 Working from the representation (16), Powers draws three conclusions about the solution.
 
-> [!theorem] Theorem §39.4: Behavior of the Solution
+> [!theorem] Theorem §31.4: Behavior of the Solution
 > Let $u$ be given by (16), with $f$ sectionally smooth.
 > 1. Since all the $\lambda_n^2$ are positive, $u(x, t)$ tends to $v(x)$ as $t \to \infty$.
 > 2. For any $t_1 > 0$, the series for $u(x, t_1)$ converges uniformly in $l \le x \le r$ because of the exponential factors; therefore $u(x, t_1)$ is a continuous function of $x$. Any discontinuity in the initial condition is immediately eliminated.
@@ -236,7 +236,7 @@ Working from the representation (16), Powers draws three conclusions about the s
 *Uses:* [[§31 Generalities on the Heat Conduction Problem#^thm-31-3|§31.3]], [[§29 Sturm–Liouville Problems#^thm-29-5|§29.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]
 
 > [!remark]- Connections
-> - The Bessel step is the finite Bessel inequality for the orthonormal set $\phi_n/N_n^{1/2}$ in the weighted inner product, [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]].
+> - The Bessel step is the finite Bessel inequality for the orthonormal set $\phi_n/N_n^{1/2}$ in the weighted inner product, [[§27 Orthonormal Sets and Bases#^lem-27-2|556 Lem. §27.2]].
 
 > [!remark] Remark: Method — Solving a Heat Problem with Variable Coefficients
 > 1. **Steady state.** Solve $(\kappa v')' = 0$ with the boundary conditions (Proposition §31.1); this reduces the problem to one with homogeneous boundary conditions. If the boundary conditions are already homogeneous, $v = 0$.
@@ -253,7 +253,7 @@ Working from the representation (16), Powers draws three conclusions about the s
 
 ## Examples
 
-> [!example] Example §39.1: Neumann and Robin Conditions
+> [!example] Example §31.1: Neumann and Robin Conditions
 > Solve
 >
 > $$
@@ -299,14 +299,14 @@ Working from the representation (16), Powers draws three conclusions about the s
 ![[m341-25-1.svg]]
 *The solution of Example §31.1 at several times, computed from 80 terms of the series. The initial profile $x^2 + x - 1$ (black dashed) relaxes toward the steady state $v(x) = x - 1$ (gray dashed). The slope at $x = 0$ is $1$ at all times (the prescribed flux), and the profile soon takes the shape $v + c_1\cos(\lambda_1x)e^{-2\lambda_1^2t}$, which stays above $v$.*
 
-> [!example] Example §39.2: A Rod with Exponentially Varying Properties
+> [!example] Example §31.2: A Rod with Exponentially Varying Properties
 > Solve
 >
 > $$
 > e^{-x}\frac{\partial u}{\partial t} = \frac{\partial}{\partial x}\Big(e^x\frac{\partial u}{\partial x}\Big), \quad 0 < x < 1, \qquad u(0, t) = 0, \quad u(1, t) = 0, \qquad u(x, 0) = f(x) .
 > $$
 >
-> This is (1) with conductivity $\kappa = e^x$ and heat capacity $\rho c = e^{-x}$; take $s = e^x$, $p = e^{-x}$, $k = 1$ (rescaling by averages, as in Definition §31.3, only changes $k$ and the constants in $s$, $p$). The boundary conditions are homogeneous, so there is no need to subtract a steady state ($v = 0$).
+> This is (1) with conductivity $\kappa = e^x$ and heat capacity $\rho c = e^{-x}$; take $s = e^x$, $p = e^{-x}$, $k = 1$ (rescaling by averages, as in Definition §31.2, only changes $k$ and the constants in $s$, $p$). The boundary conditions are homogeneous, so there is no need to subtract a steady state ($v = 0$).
 >
 > **Basic solutions.** With $w = \phi(x)T(t)$: $e^{-x}\phi T' = (e^x\phi')'T$, so $T'/T = e^x(e^x\phi')'/\phi = \mu$, and
 >
@@ -338,7 +338,7 @@ Working from the representation (16), Powers draws three conclusions about the s
 
 ^ex-31-2
 
-> [!example] Example §39.3: Variable Coefficients and Fixed End Temperatures
+> [!example] Example §31.3: Variable Coefficients and Fixed End Temperatures
 > Consider
 >
 > $$

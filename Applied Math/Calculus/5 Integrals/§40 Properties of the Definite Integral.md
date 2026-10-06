@@ -15,7 +15,7 @@ tags: [calculus]
 
 ## Properties of the Definite Integral
 
-> [!definition] Definition §46.1: Reversed and Equal Limits
+> [!definition] Definition §40.1: Reversed and Equal Limits
 > $$
 > \int_b^a f(x)\,dx = -\int_a^b f(x)\,dx , \qquad\qquad \int_a^a f(x)\,dx = 0 .
 > $$
@@ -26,7 +26,7 @@ tags: [calculus]
 
 In the following properties $f$ and $g$ are continuous functions, so all the integrals exist ([[§39 The Definite Integral#^thm-39-1|Theorem §39.1]]).
 
-> [!theorem] Theorem §46.1: Properties of the Integral
+> [!theorem] Theorem §40.1: Properties of the Integral
 > For any constant $c$:
 > 1. $\displaystyle\int_a^b c\,dx = c(b - a)$;
 > 2. $\displaystyle\int_a^b [f(x) + g(x)]\,dx = \int_a^b f(x)\,dx + \int_a^b g(x)\,dx$;
@@ -77,8 +77,7 @@ In the following properties $f$ and $g$ are continuous functions, so all the int
 > [!remark] Remark: Why It Works
 > Property 1: if $c > 0$ and $a < b$, then $c(b - a)$ is the area of the rectangle of height $c$ over $[a, b]$. Property 2: for positive functions, the area under $f + g$ is the area under $f$ plus the area under $g$, because by graphical addition each vertical segment under $f + g$ has the length of the segment under $f$ plus that under $g$. Property 3: multiplying $f$ by $c > 0$ stretches or shrinks its graph vertically by the factor $c$, hence each approximating rectangle, hence the area. Only a constant can be taken out of an integral sign.
 
-^rem-40-3
-
+^rem-40-1
 > [!theorem] Theorem §40.2: Additivity over Adjacent Intervals
 > $$
 > \int_a^c f(x)\,dx + \int_c^b f(x)\,dx = \int_a^b f(x)\,dx .
@@ -95,8 +94,7 @@ In the following properties $f$ and $g$ are continuous functions, so all the int
 > [!remark] Remark: Why It Works
 > For $f \ge 0$ and $a < c < b$: the area under $y = f(x)$ from $a$ to $c$ plus the area from $c$ to $b$ is the total area from $a$ to $b$.
 
-^rem-40-4
-
+^rem-40-2
 Properties 1–5 hold for any order of the limits. The next three compare sizes and need $a \le b$.
 
 > [!theorem] Theorem §40.3: Comparison Properties of the Integral
@@ -141,9 +139,8 @@ Properties 1–5 hold for any order of the limits. The next three compare sizes 
 > [!remark] Remark: Why It Works
 > For $f \ge 0$ the integral is an area, and areas are positive (Property 6); a bigger function has a bigger integral (Property 7). For $f \ge 0$ continuous, take $m$ and $M$ to be the absolute minimum and maximum of $f$ on $[a, b]$ ([[§28 Maximum and Minimum Values#^thm-28-1|Theorem §28.1]]). Then Property 8 says that the area under the graph lies between the areas of the rectangles over $[a, b]$ of heights $m$ and $M$.
 
-^rem-40-5
-
-> [!example] Example §46.1: Computing with the Properties
+^rem-40-3
+> [!example] Example §40.1: Computing with the Properties
 > **(a)** Evaluate $\displaystyle\int_0^1 (4 + 3x^2)\,dx$.
 >
 > By Properties 2 and 3, then Property 1 and [[§38 The Area and Distance Problems#^ex-38-2|Example §38.2]] ($\int_0^1 x^2\,dx = \frac13$),

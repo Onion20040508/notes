@@ -23,7 +23,7 @@ $$
 
 For regions with straight sides, area is easy: a rectangle has area length times width, a triangle half base times height, and a polygon is cut into triangles. A curved side needs a new idea, the same one used for tangent lines in [[§14 Derivatives and Rates of Change#^def-14-1|Def. §14.1]]: approximate (there by secant lines, here by rectangles) and take the limit of the approximations.
 
-> [!example] Example §43.1: Estimating the Area Under a Parabola
+> [!example] Example §38.1: Estimating the Area Under a Parabola
 > Use rectangles to estimate the area $A$ under the parabola $y = x^2$ from $0$ to $1$.
 >
 > Since $S$ lies inside the unit square, $0 < A < 1$. To do better, divide $S$ into four strips by the lines $x = \frac14, \frac12, \frac34$, and replace each strip by a rectangle of width $\frac14$.
@@ -69,7 +69,7 @@ $$
 
 Stewart's Formula 1, proved in Appendix E (Example 5 there; here [[§143 Sigma Notation#^thm-143-2|Theorem §143.2]]).
 
-> [!example] Example §43.2: The Exact Area Under the Parabola
+> [!example] Example §38.2: The Exact Area Under the Parabola
 > For the region $S$ of [[§38 The Area and Distance Problems#^ex-38-1|Example §38.1]], show that $\lim_{n \to \infty} R_n = \frac13$.
 >
 > Divide $[0, 1]$ into $n$ subintervals of width $\frac1n$. The right endpoints are $\frac1n, \frac2n, \ldots, \frac{n}{n}$, so
@@ -151,7 +151,7 @@ $$
 
 where $i$ is the index of summation, running from the value below $\Sigma$ to the value above it. Formula (1) reads $\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$.
 
-> [!theorem] Theorem §43.1: The Area as a Limit of Any Riemann Sums
+> [!theorem] Theorem §38.1: The Area as a Limit of Any Riemann Sums
 > Let $f \ge 0$ be continuous on $[a, b]$, and use the notation of Definitions [[§38 The Area and Distance Problems#^def-38-1|§38.1]], [[§38 The Area and Distance Problems#^def-38-2|§38.2]] and [[§38 The Area and Distance Problems#^def-38-3|§38.3]].
 > 1. The limit $A = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i)\,\Delta x$ in [[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]] exists.
 > 2. Left endpoints give the same value:
@@ -179,7 +179,7 @@ where $i$ is the index of summation, running from the value below $\Sigma$ to th
 
 In Examples [[§38 The Area and Distance Problems#^ex-38-1|§38.1]] and [[§38 The Area and Distance Problems#^ex-38-2|§38.2]] the function $x^2$ is increasing on $[0, 1]$, so the left-endpoint sums are the lower sums and the right-endpoint sums the upper sums, and $A = \frac13$ is trapped between all $L_n$ and all $R_n$.
 
-> [!example] Example §43.3: The Area Under an Exponential Curve
+> [!example] Example §38.3: The Area Under an Exponential Curve
 > Let $A$ be the area of the region under the graph of $f(x) = e^{-x}$ between $x = 0$ and $x = 2$.
 >
 > **(a)** Using right endpoints, find an expression for $A$ as a limit. Do not evaluate the limit.
@@ -216,7 +216,7 @@ In Examples [[§38 The Area and Distance Problems#^ex-38-1|§38.1]] and [[§38 T
 
 The **distance problem** is the inverse of the velocity problem of [[§7 The Tangent and Velocity Problems#^def-7-3|Def. §7.3]]: find the distance traveled by an object during a time interval when its velocity is known at all times. If the velocity is constant, distance $=$ velocity $\times$ time. If not, we approximate as for areas.
 
-> [!example] Example §43.4: Distance from Speedometer Readings
+> [!example] Example §38.4: Distance from Speedometer Readings
 > A car's odometer is broken. Speedometer readings every five seconds over a 30-second interval are:
 >
 > | Time (s) | 0 | 5 | 10 | 15 | 20 | 25 | 30 |

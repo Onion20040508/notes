@@ -15,7 +15,7 @@ Read backwards, the geometric series $\sum x^n = \frac{1}{1-x}$ says that the fu
 
 ## Representations of Functions using Geometric Series
 
-> [!definition] Definition §104.1: Power Series Representation
+> [!definition] Definition §89.1: Power Series Representation
 > If $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^n$ for all $x$ in an interval $I$, the series is a **power series representation** of $f$ on $I$. The basic example is the geometric series ([[§82 Series#^cor-82-2|Corollary §82.2]]), now read as a statement about the function $f(x) = 1/(1 - x)$:
 >
 > $$
@@ -28,7 +28,7 @@ Read backwards, the geometric series $\sum x^n = \frac{1}{1-x}$ says that the fu
 
 ^def-89-1
 
-> [!example] Example §104.1: Substituting into the Geometric Series
+> [!example] Example §89.1: Substituting into the Geometric Series
 > **(a)** Express $1/(1 + x^2)$ as the sum of a power series and find the interval of convergence.
 >
 > Replace $x$ by $-x^2$ in Equation 1:
@@ -67,7 +67,7 @@ Read backwards, the geometric series $\sum x^n = \frac{1}{1-x}$ says that the fu
 
 The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^n$ whose domain is the interval of convergence. It can be differentiated and integrated term by term, like a polynomial (**term-by-term differentiation and integration**).
 
-> [!theorem] Theorem §104.1: Term-by-Term Differentiation and Integration
+> [!theorem] Theorem §89.1: Term-by-Term Differentiation and Integration
 > If the power series $\sum c_n (x - a)^n$ has radius of convergence $R > 0$, then the function $f$ defined by
 >
 > $$
@@ -111,7 +111,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 ^rem-89-1
 
-> [!example] Example §104.2: Differentiating the Geometric Series
+> [!example] Example §89.2: Differentiating the Geometric Series
 > Express $1/(1 - x)^2$ as a power series by differentiating Equation 1. What is the radius of convergence?
 >
 > Start from $\dfrac{1}{1 - x} = 1 + x + x^2 + x^3 + \cdots = \displaystyle\sum_{n=0}^{\infty} x^n$. Differentiating each side, with [[§89 Representations of Functions as Power Series#^thm-89-1|Theorem §89.1]](i),
@@ -126,7 +126,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 ^ex-89-2
 
-> [!example] Example §104.3: Integrating — the Logarithm and the Arctangent
+> [!example] Example §89.3: Integrating — the Logarithm and the Arctangent
 > **(a)** Find a power series representation for $\ln(1 + x)$ and its radius of convergence.
 >
 > The derivative of $\ln(1 + x)$ is $1/(1 + x)$, and by Equation 1 with $x$ replaced by $-x$,
@@ -183,7 +183,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 ^rem-89-2
 
-> [!example] Example §104.4: Integrating a Function with No Simple Antiderivative
+> [!example] Example §89.4: Integrating a Function with No Simple Antiderivative
 > **(a)** Evaluate $\int [1/(1 + x^7)]\,dx$ as a power series.
 > **(b)** Use (a) to approximate $\int_0^{0.5} [1/(1 + x^7)]\,dx$ correct to within $10^{-7}$.
 >
@@ -229,7 +229,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 Some of the most important functions in the sciences are *defined* by power series and cannot be expressed in terms of elementary functions. Many arise as solutions of differential equations. An example is the class of **Bessel functions**, named after Friedrich Bessel (1784–1846), who met them in solving Kepler's equation for planetary motion; they describe, for instance, the temperature in a circular plate and the vibrations of a drumhead.
 
-> [!example] Example §104.5: The Bessel Function of Order 0
+> [!example] Example §89.5: The Bessel Function of Order 0
 > The Bessel function of order $0$ is defined by
 >
 > $$

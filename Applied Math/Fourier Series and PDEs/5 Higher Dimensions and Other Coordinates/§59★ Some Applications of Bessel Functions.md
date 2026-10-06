@@ -16,7 +16,7 @@ After the elementary functions, the Bessel functions are among the most useful i
 
 ## A Family of Bessel Equations
 
-> [!theorem] Theorem §72.1: Equations Solved by Bessel Functions
+> [!theorem] Theorem §59.1: Equations Solved by Bessel Functions
 > The general solution of
 >
 > $$
@@ -56,7 +56,7 @@ After the elementary functions, the Bessel functions are among the most useful i
 
 ^rem-59-1
 
-> [!example] Example §72.1: Recognizing Bessel's Equation in Disguise
+> [!example] Example §59.1: Recognizing Bessel's Equation in Disguise
 > Identify $\alpha$, $\gamma$, $p$ in (1) for the radial equations met below and in [[§62★ Some Applications of Legendre Polynomials|§50]].
 >
 > **(a)** $R'' + \frac{2}{\rho}R' + \lambda^2R = 0$ (radial waves in a sphere, Part B). Matching $\frac{1 - 2\alpha}{x} = \frac{2}{x}$ gives $\alpha = -\frac12$. The coefficient of $R$ is the constant $\lambda^2$, so $\gamma - 1 = 0$, $\gamma = 1$, and $p^2\gamma^2 - \alpha^2 = 0$ gives $p = \frac12$. So $R = \rho^{-1/2}\big[AJ_{1/2}(\lambda\rho) + BY_{1/2}(\lambda\rho)\big]$.
@@ -90,7 +90,7 @@ $$
 
 Condition (8) is added because $r = 0$ is a singular point.
 
-> [!theorem] Proposition §72.2: The Radial Problem with Insulated Side
+> [!theorem] Proposition §59.2: The Radial Problem with Insulated Side
 > Let $0 < \beta_1 < \beta_2 < \cdots$ be the positive zeros of $J_1$ ($\beta_1 = 3.832$, $\beta_2 = 7.016$, $\beta_3 = 10.173, \ldots$). The eigenvalue problem (6)–(8) has the eigenvalue $\lambda_0^2 = 0$ with eigenfunction $R_0 = 1$, and the eigenvalues
 >
 > $$
@@ -124,7 +124,7 @@ Condition (8) is added because $r = 0$ is a singular point.
 
 *Uses:* [[§57★ Temperature in a Cylinder#^prop-57-1|§57.1]], [[§57★ Temperature in a Cylinder#^lem-57-5|§57.5]], [[§57★ Temperature in a Cylinder#^prop-57-2|§57.2]], [[§57★ Temperature in a Cylinder#^prop-57-6|§57.6]], [[§56★ Properties of Bessel Functions#^thm-56-5|§56.5]]
 
-> [!theorem] Proposition §72.3: Potential in a Cylinder with Insulated Side
+> [!theorem] Proposition §59.3: Potential in a Cylinder with Insulated Side
 > The solution of (2)–(5) is
 >
 > $$
@@ -253,7 +253,7 @@ $$
 
 where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is elliptic and nonhomogeneous.
 
-> [!example] Example §72.2: Pressure in a Plane-Pad Bearing
+> [!example] Example §59.2: Pressure in a Plane-Pad Bearing
 > Solve (23)–(25), and find the first eigenvalues when $b/a = 2.5$.
 >
 > **Remove the source.** Let $p(x, y) = v(x) + u(x, y)$, where $v$ satisfies
@@ -326,7 +326,7 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 
 ^ex-59-2
 
-> [!example] Example §72.3: Spherical Waves by d'Alembert's Method
+> [!example] Example §59.3: Spherical Waves by d'Alembert's Method
 > Find functions $\psi_1$, $\psi_2$ such that $u(\rho, t) = \frac{1}{\rho}\big(\psi_1(\rho + ct) + \psi_2(\rho - ct)\big)$ satisfies (13)–(16) and is bounded at $\rho = 0$. (Powers calls the two functions $\phi$ and $\psi$; here $\phi$ is the polar angle.)
 >
 > **Reduce to a string.** By [[§59★ Some Applications of Bessel Functions#^rem-59-2|Remark: Spherical Waves Are Strings in Disguise]], $w = \rho u = \psi_1(\rho + ct) + \psi_2(\rho - ct)$ solves $w_{\rho\rho} = w_{tt}/c^2$, and every such $u$ solves (13). The conditions on $u$ become conditions on $w$: $w(a, t) = 0$ by (14); $w(0, t) = 0$, because $u$ is bounded at $\rho = 0$; and, for $0 < \rho < a$,

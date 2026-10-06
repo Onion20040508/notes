@@ -11,7 +11,7 @@ tags: [measure-theory, math551]
 
 To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$), we extend the real numbers.
 
-> [!definition] Definition §22.1: Extended Real Numbers
+> [!definition] Definition §15.1: Extended Real Numbers
 > The **extended real numbers** are
 >
 > $$
@@ -38,7 +38,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ## Definition of Measurable Functions
 
-> [!definition] Definition §23.1: Measurable Function
+> [!definition] Definition §15.2: Measurable Function
 > Let $E \subseteq \mathbb{R}^n$ be a [[§11 Lebesgue Measurable Sets#^def-11-1|measurable]] set and let $f: E \to \overline{\mathbb{R}}$ be an extended real-valued function defined on $E$. We say $f$ is **(Lebesgue) measurable** if for all $c \in \mathbb{R}$,
 >
 > $$
@@ -57,7 +57,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^rem-15-2
 
-> [!example] Example §22.1: Monotone Functions are Measurable
+> [!example] Example §15.1: Monotone Functions are Measurable
 > Assume $f: [a, b] \to \mathbb{R}$ is monotone. Then $f$ is measurable.
 >
 > For any $c \in \mathbb{R}$, the set $\{x \in [a, b] \mid f(x) > c\}$ is one of the following:
@@ -72,7 +72,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 > [!remark]- Connections
 > - Monotone functions reappear in differentiation theory: [[§28 Differentiation Theory#^thm-28-1|Monotone Functions Have Countably Many Discontinuities]], [[Lebesgue's Differentiation Theorem for Monotone Functions|Lebesgue's Differentiation Theorem]].
 
-> [!example] Example §22.2: Continuous Functions are Measurable
+> [!example] Example §15.2: Continuous Functions are Measurable
 > If $f: E \to \mathbb{R}$ is continuous (where $E \subseteq \mathbb{R}^n$ is measurable), then $f$ is measurable.
 >
 > For any $c \in \mathbb{R}$, the set $\{x \in E \mid f(x) > c\} = f^{-1}((c, \infty)) \cap E$ is the intersection of an open set (by [[§10 Continuous Functions#^def-10-1|continuity]]) with the measurable set $E$, hence measurable ([[§12 Borel Sets and Measure Spaces#^thm-12-6|Thm. §12.6]], [[Lebesgue Measurable Sets Form a σ-Algebra|Thm. §11.3]]).
@@ -95,7 +95,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 > [!remark]- Connections
 > - Same notion for a subset of any set: [[§12★ Counting Functions and Subsets#^def-12-4|250 Def. §12.4]].
 
-> [!theorem] Proposition §22.1: Characteristic Functions of Measurable Sets
+> [!theorem] Proposition §15.1: Characteristic Functions of Measurable Sets
 > If $E \in \mathcal{M}$, then $\chi_E$ is a measurable function.
 
 ^prop-15-1
@@ -122,7 +122,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ## Equivalent Characterizations of Measurability
 
-> [!theorem] Proposition §22.2: Equivalent Conditions for Measurability
+> [!theorem] Proposition §15.2: Equivalent Conditions for Measurability
 > Let $E \in \mathcal{M}$ and $f: E \to \overline{\mathbb{R}}$ be a measurable function. Then the following sets are all measurable:
 > 1. $\forall c \in \mathbb{R}$: $\{x \in E \mid f(x) > c\} \in \mathcal{M}$ (definition)
 > 2. $\forall c \in \mathbb{R}$: $\{x \in E \mid f(x) < c\} \in \mathcal{M}$
@@ -201,7 +201,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ## Algebra of Measurable Functions
 
-> [!theorem] Theorem §22.3: Arithmetic Operations Preserve Measurability
+> [!theorem] Theorem §15.3: Arithmetic Operations Preserve Measurability
 > Let $E \in \mathcal{M}$ and assume $f: E \to \mathbb{R}$, $g: E \to \mathbb{R}$ are measurable functions. Then:
 > 1. $f + g: E \to \mathbb{R}$ is measurable.
 > 2. For all $a \in \mathbb{R}$, $af: E \to \mathbb{R}$ is measurable.
@@ -281,7 +281,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ## Measurability on Subsets and Unions
 
-> [!theorem] Proposition §22.4: Union of Domains
+> [!theorem] Proposition §15.4: Union of Domains
 > Let $E_1, E_2 \in \mathcal{M}$. Assume $f: E_1 \to \overline{\mathbb{R}}$ and $f: E_2 \to \overline{\mathbb{R}}$ are measurable. Then $f: E_1 \cup E_2 \to \overline{\mathbb{R}}$ is measurable.
 
 ^prop-15-4
@@ -297,7 +297,7 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 *Uses:* [[§15 Measurable Functions#^def-15-2|Def. §15.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§11.3]]
 
-> [!theorem] Proposition §22.5: Restriction to Measurable Subsets
+> [!theorem] Proposition §15.5: Restriction to Measurable Subsets
 > Assume $f: E \to \overline{\mathbb{R}}$ is measurable, and $A \subseteq E$ with $A \in \mathcal{M}$. Then the restriction $f|_A: A \to \overline{\mathbb{R}}$ is measurable.
 
 ^prop-15-5

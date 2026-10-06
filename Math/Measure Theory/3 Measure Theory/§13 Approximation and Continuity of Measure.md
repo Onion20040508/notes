@@ -25,7 +25,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 ## Approximation of Measurable Sets
 
-> [!theorem] Theorem §18.1: Approximation by Open and $G_\delta$ Sets
+> [!theorem] Theorem §13.1: Approximation by Open and $G_\delta$ Sets
 > Let $E \in \mathcal{M}$. Then:
 > 1. For all $\epsilon > 0$, there exists an open set $G \supseteq E$ such that $m(G \setminus E) < \epsilon$.
 > 2. There exists a $G_\delta$ set $H$ with $H \supseteq E$ and $m(H \setminus E) = 0$.
@@ -81,7 +81,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 *Uses:* [[§10 Lebesgue Outer Measure#^rem-10-1|Rem. §9.1]], [[§12 Borel Sets and Measure Spaces#^thm-12-6|§12.6]], [[Properties of Lebesgue Outer Measure|§10.1]], [[§10 Lebesgue Outer Measure#^prop-10-2|§10.2]], [[Lebesgue Measurable Sets Form a σ-Algebra|§11.3]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§13 Approximation and Continuity of Measure#^def-13-1|Def. §13.1]]
 
-> [!theorem] Proposition §18.2: Outer Approximation of Arbitrary Sets
+> [!theorem] Proposition §13.2: Outer Approximation of Arbitrary Sets
 > Let $A \subseteq \mathbb{R}^n$. Then there exists a $G_\delta$ set $H$ with $H \supseteq A$ and $m^*(A) = m(H)$.
 
 ^prop-13-2
@@ -95,7 +95,7 @@ Every Lebesgue measurable set is very close to a Borel set: it differs from a $G
 
 *Uses:* [[Outer Regularity of Lebesgue Measure|§13.1]], [[§10 Lebesgue Outer Measure#^rem-10-1|Rem. §9.1]], [[Properties of Lebesgue Outer Measure|§10.1]], [[§10 Lebesgue Outer Measure#^prop-10-2|§10.2]], [[§12 Borel Sets and Measure Spaces#^cor-12-7|§12.7]]
 
-> [!theorem] Theorem §18.3: Approximation by Closed and $F_\sigma$ Sets
+> [!theorem] Theorem §13.3: Approximation by Closed and $F_\sigma$ Sets
 > Let $E \in \mathcal{M}$. Then:
 > 1. For all $\epsilon > 0$, there exists a closed set $F \subseteq E$ such that $m(E \setminus F) < \epsilon$.
 > 2. There exists an $F_\sigma$ set $K$ with $K \subseteq E$ and $m(E \setminus K) = 0$.

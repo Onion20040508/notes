@@ -19,7 +19,7 @@ $$
 
 ## Linearity
 
-> [!theorem] Theorem §18.1: Constant Multiples
+> [!theorem] Theorem §14.1: Constant Multiples
 > The Fourier series of the function $cf(x)$ has coefficients $ca_0$, $ca_n$ and $cb_n$ ($c$ is constant).
 >
 > *Powers: 1.5, Theorem 1*
@@ -33,7 +33,7 @@ $$
 
 *Uses:* [[§9 Periodic Functions and Fourier Series#^def-9-2|Def. §9.2]]
 
-> [!theorem] Theorem §18.2: Sums
+> [!theorem] Theorem §14.2: Sums
 > The Fourier coefficients of the sum $f(x) + g(x)$ are the sums of the corresponding coefficients of $f(x)$ and $g(x)$.
 >
 > *Powers: 1.5, Theorem 2*
@@ -51,7 +51,7 @@ These two theorems are so natural that one uses them without thinking about it (
 
 ## Term-by-Term Integration
 
-> [!theorem] Theorem §18.3: Term-by-Term Integration
+> [!theorem] Theorem §14.3: Term-by-Term Integration
 > If $f(x)$ is periodic and sectionally continuous, then the Fourier series of $f$ may be integrated term by term:
 >
 > $$
@@ -96,7 +96,7 @@ In Theorems §14.3 and §10.4, $f$ is only required to be sectionally continuous
 
 ^rem-14-1
 
-> [!example] Example §18.1: Integrating the Sawtooth; Sums of 1/n² and 1/n⁴
+> [!example] Example §14.1: Integrating the Sawtooth; Sums of 1/n² and 1/n⁴
 > **The series.** The periodic function $g(x)$ with $g(x) = x$ on $0 < x < 2\pi$ has the Fourier series $g(x) \sim \pi - 2\sum_{n=1}^{\infty}\frac{\sin nx}{n}$ ([[§9 Periodic Functions and Fourier Series#^ex-9-2|Example §9.2]](b)). By Theorems §14.1 and §10.2, $f(x) = [\pi - g(x)]/2$ has the series
 >
 > $$
@@ -228,7 +228,7 @@ The hypotheses on $f$ itself imply ([[§13 Uniform Convergence#^thm-13-3|Theorem
 
 ^rem-14-2
 
-> [!example] Example §18.2: Differentiating the Triangle Wave
+> [!example] Example §14.2: Differentiating the Triangle Wave
 > Let $f$ be periodic with period $2\pi$ and $f(x) = |x|$ for $-\pi < x < \pi$. This function is continuous and sectionally smooth, and equal to its Fourier series ([[§13 Uniform Convergence#^ex-13-2|Example §13.2]]):
 >
 > $$
@@ -253,7 +253,7 @@ The hypotheses on $f$ itself imply ([[§13 Uniform Convergence#^thm-13-3|Theorem
 
 ^ex-14-2
 
-> [!example] Example §18.3: Odd and Even Extensions of x²
+> [!example] Example §14.3: Odd and Even Extensions of x²
 > Let $f(x) = x^2$ for $0 < x < \pi$. **(I)** Let $f$ be odd and periodic with period $2\pi$; **(II)** let $f$ be even and periodic with period $2\pi$. In each case (a) find the Fourier series, (b) differentiate it term by term, (c) find the Fourier series of $f'$, (d) decide whether (b) and (c) coincide, by the differentiation theorem.
 >
 > **(I) Odd extension.** (a) $a_0 = a_n = 0$ and, integrating by parts twice,
@@ -286,7 +286,7 @@ The hypotheses on $f$ itself imply ([[§13 Uniform Convergence#^thm-13-3|Theorem
 
 ^ex-14-3
 
-> [!example] Example §18.4: A Discontinuous Periodic Extension (Midterm)
+> [!example] Example §14.4: A Discontinuous Periodic Extension (Midterm)
 > A function is given on $-1 < x < 1$ by $f(x) = x$ on $0 < x \le 1$ and $f(x) = 1$ on $-1 < x \le 0$. Let $\bar f$ be its periodic extension. **(a)** Sketch $\bar f$ for $-3 < x < 3$. **(b)** Find the discontinuities of $\bar f$ on one period $-1 - \varepsilon < x < 1$ and their types. **(c)** Find the Fourier series of $\bar f$. **(d)** Compute $\bar f'$ on $-1 \le x < 1$. **(e)** Find the Fourier series of $\bar f'$. **(f)** Differentiate the series of (c) term by term; is it the series of (e)?
 >
 > **(a)** On each period: level $1$ over $(-1, 0]$, then the segment from $(0, 0)$ to $(1, 1)$. So the graph drops from $1$ to $0$ at the even integers and continues at level $1$ after each odd integer.
@@ -368,7 +368,7 @@ The lecture adds a simple bound that makes Theorem §14.7 easy to apply.
 
 *Uses:* [[§10 Arbitrary Period and Half-Range Expansions#^prop-10-1|§10.1]], [[§12 Convergence of Fourier Series#^def-12-3|Def. §12.3]]
 
-> [!example] Example §18.5: Rapidly Decaying Coefficients; a Heat Series
+> [!example] Example §14.5: Rapidly Decaying Coefficients; a Heat Series
 > **(a)** Consider the function defined by the series
 >
 > $$

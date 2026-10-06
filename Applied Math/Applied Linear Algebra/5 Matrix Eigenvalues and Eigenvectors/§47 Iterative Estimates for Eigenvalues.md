@@ -15,7 +15,7 @@ In scientific applications eigenvalues are seldom known exactly, and a close num
 
 ## The Power Method
 
-> [!definition] Definition §57.1: Strictly Dominant Eigenvalue
+> [!definition] Definition §47.1: Strictly Dominant Eigenvalue
 > An eigenvalue $\lambda_1$ of an $n \times n$ matrix $A$ is **strictly dominant** if it is larger in absolute value than all the other eigenvalues: $|\lambda_1| > |\lambda_j|$ for every eigenvalue $\lambda_j \ne \lambda_1$.
 >
 > *Lay: 5.8 (text)*
@@ -28,7 +28,7 @@ $$
 |\lambda_1| > |\lambda_2| \ge |\lambda_3| \ge \cdots \ge |\lambda_n| . \qquad (1)
 $$
 
-> [!theorem] Theorem §57.1: Powers Line Up with the Dominant Eigenvector
+> [!theorem] Theorem §47.1: Powers Line Up with the Dominant Eigenvector
 > Under assumption (1), let $\mathbf{x} = c_1\mathbf{v}_1 + \cdots + c_n\mathbf{v}_n$ with $c_1 \ne 0$. Then
 >
 > $$
@@ -54,7 +54,7 @@ $$
 
 *Uses:* [[§45 Discrete Dynamical Systems#^thm-45-1|§45.1]], [[§47 Iterative Estimates for Eigenvalues#^def-47-1|Def. §47.1]]
 
-> [!example] Example §57.1: Directions of the Powers
+> [!example] Example §47.1: Directions of the Powers
 > Let $A = \begin{bmatrix} 1.8 & .8 \\ .2 & 1.2 \end{bmatrix}$, $\mathbf{v}_1 = \begin{bmatrix} 4 \\ 1 \end{bmatrix}$ and $\mathbf{x} = \begin{bmatrix} -.5 \\ 1 \end{bmatrix}$. The eigenvalues of $A$ are $2$ and $1$ ($\operatorname{tr} A = 3$, $\det A = 2.16 - .16 = 2$), and the eigenspace for $\lambda_1 = 2$ is the line through $\mathbf{0}$ and $\mathbf{v}_1$: $A\mathbf{v}_1 = (7.2 + .8,\ .8 + 1.2) = (8, 2) = 2\mathbf{v}_1$. Compute $A^k\mathbf{x}$ for $k = 0, \ldots, 8$:
 >
 > $$
@@ -92,7 +92,7 @@ The vectors $(\lambda_1)^{-k}A^k\mathbf{x}$ in (3) converge, but we cannot form 
 
 ^rem-47-1
 
-> [!example] Example §57.2: The Power Method
+> [!example] Example §47.2: The Power Method
 > Apply the power method to $A = \begin{bmatrix} 6 & 5 \\ 1 & 2 \end{bmatrix}$ with $\mathbf{x}_0 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}$. Stop when $k = 5$, and estimate the dominant eigenvalue and a corresponding eigenvector.
 >
 > Compute $A\mathbf{x}_0$ and its largest entry $\mu_0$, scale by $1/\mu_0$, and repeat:
@@ -139,7 +139,7 @@ The vectors $(\lambda_1)^{-k}A^k\mathbf{x}$ in (3) converge, but we cannot form 
 
 This method approximates *any* eigenvalue, provided a good initial estimate $\alpha$ of it is known. The idea is to apply the power method to $B = (A - \alpha I)^{-1}$.
 
-> [!theorem] Proposition §57.2: Eigenvalues of (A − αI)⁻¹
+> [!theorem] Proposition §47.2: Eigenvalues of (A − αI)⁻¹
 > Let $A$ be $n \times n$ and $\alpha$ a scalar that is not an eigenvalue of $A$. If the eigenvalues of $A$ are $\lambda_1, \ldots, \lambda_n$, then the eigenvalues of $B = (A - \alpha I)^{-1}$ are
 >
 > $$
@@ -183,7 +183,7 @@ Suppose, for example, that $\alpha$ is closer to $\lambda_2$ than to the other e
 
 ^rem-47-3
 
-> [!example] Example §57.3: The Smallest Eigenvalue by the Inverse Power Method
+> [!example] Example §47.3: The Smallest Eigenvalue by the Inverse Power Method
 > Suppose $21$, $3.3$ and $1.9$ are estimates for the eigenvalues of
 >
 > $$

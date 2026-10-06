@@ -17,7 +17,7 @@ Two old problems lead to the idea of a limit. To find the tangent line to a curv
 
 The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a curve should touch the curve and follow its direction at the point of contact. For a circle one can follow Euclid and call a line tangent if it meets the circle exactly once. For more complicated curves this does not work: a line can be tangent to a curve $C$ at a point $P$ and still cross $C$ somewhere else, and a line that meets a curve only once need not be tangent to it.
 
-> [!definition] Definition §8.1: Secant Line
+> [!definition] Definition §7.1: Secant Line
 > A **secant line** of a curve is a line that cuts (intersects) the curve more than once; in particular, the line through two points $P$ and $Q$ of the curve. For the graph of $f$ and the points $P(a, f(a))$ and $Q(x, f(x))$ with $x \ne a$, the slope of the secant line $PQ$ is
 >
 > $$
@@ -30,7 +30,7 @@ The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a cu
 
 ^def-7-1
 
-> [!definition] Definition §8.2: Tangent Line (Preliminary)
+> [!definition] Definition §7.2: Tangent Line (Preliminary)
 > The slope $m$ of the **tangent line** to a curve at a point $P$ is the limit of the slopes of the secant lines $PQ$ as $Q$ approaches $P$ along the curve:
 >
 > $$
@@ -48,7 +48,7 @@ The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a cu
 > [!remark]- Connections
 > - Rigorous version: the limit of the difference quotient is the derivative, [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]; only $x \ne a$ is ever used, since at $x = a$ there is no secant.
 
-> [!example] Example §8.1: The Tangent Line to a Parabola
+> [!example] Example §7.1: The Tangent Line to a Parabola
 > Find an equation of the tangent line to the parabola $y = x^2$ at the point $P(1, 1)$.
 >
 > We know one point of the tangent line, $P$, and need its slope $m$. Choose a nearby point $Q(x, x^2)$ on the parabola with $x \ne 1$, so that $Q \ne P$. The secant line $PQ$ has slope
@@ -84,7 +84,7 @@ The word *tangent* comes from the Latin *tangens*, "touching": a tangent to a cu
 
 Many functions in the sciences are known only through experimental data. The same idea then gives an estimate of the slope of the tangent line.
 
-> [!example] Example §8.2: Estimating a Slope from Data
+> [!example] Example §7.2: Estimating a Slope from Data
 > A pulse laser stores charge on a capacitor and releases it when the laser is fired. The table gives the charge $Q$ (coulombs) remaining on the capacitor $t$ seconds after firing. Estimate the slope of the tangent line at $t = 0.04$. (This slope is the electric current, in amperes, flowing from the capacitor to the laser.)
 >
 > | $t$ | $0$ | $0.02$ | $0.04$ | $0.06$ | $0.08$ | $0.1$ |
@@ -125,7 +125,7 @@ Many functions in the sciences are known only through experimental data. The sam
 
 The speedometer of a car in city traffic shows a speed that keeps changing, yet we believe that the car has a definite velocity at each moment. How is this "instantaneous" velocity defined, if the position of the object is known at every time?
 
-> [!definition] Definition §8.3: Average and Instantaneous Velocity
+> [!definition] Definition §7.3: Average and Instantaneous Velocity
 > Let $s(t)$ be the position at time $t$ of an object moving along a straight line. Its **average velocity** over the time interval from $t = a$ to $t = a + h$ ($h \ne 0$) is
 >
 > $$
@@ -138,7 +138,7 @@ The speedometer of a car in city traffic shows a speed that keeps changing, yet 
 
 ^def-7-3
 
-> [!example] Example §8.3: A Falling Ball
+> [!example] Example §7.3: A Falling Ball
 > A ball is dropped from the upper observation deck of the CN Tower in Toronto, $450$ m above the ground. Find its velocity after $5$ seconds.
 >
 > **The model.** Galileo found that the distance fallen by a freely falling body is proportional to the square of the time it has been falling (neglecting air resistance). Near the earth's surface, with $s(t)$ in meters,

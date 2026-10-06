@@ -8,7 +8,7 @@ tags: [applied-linear-algebra, hub]
 ![[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4]]
 
 ## Treated in
-- [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|Theorem §26.4: Multiplicative Property]], in [[§25 Properties of Determinants]]
+- [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-4|Theorem §26.4: Multiplicative Property]], in [[§26 Transposes, Products, and Linearity of Determinants]]
 
 ## Its proof uses
 - [[§15 Elementary Matrices and the Inversion Algorithm#^thm-15-3|Theorem §15.3: Invertibility and Row Reduction]]

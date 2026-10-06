@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definitions
 
-> [!definition] Definition §9.1: Interior
+> [!definition] Definition §8.1: Interior
 > Let $A \subseteq X$, where $X$ is a topological space.
 >
 > The **interior** of $A$, denoted $\text{Int}(A)$ or $\mathring{A}$, is the union of all open sets in $X$ contained in $A$.
@@ -18,7 +18,7 @@ tags: [topology, math590]
 ^def-8-1
 
 > [!remark]- Connections
-> - In a normed space: the closure as the set of limits of sequences ([[§10 Normed Linear Spaces#^def-10-7|556 Def. §10.7]]), and interior points through balls ([[§10 Normed Linear Spaces#^def-10-9|556 Def. §10.9]]), which are stronger than the algebraic interior points of [[§6 Convex Sets and the Gauge#^def-6-1|556 Def. §6.1]] ([[§10 Normed Linear Spaces#^ex-10-2|556 Ex. §10.2]]).
+> - In a normed space: the closure as the set of limits of sequences ([[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]]), and interior points through balls ([[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]]), which are stronger than the algebraic interior points of [[§7 Convex Sets and the Gauge#^def-7-1|556 Def. §7.1]] ([[§11 Normed Linear Spaces#^ex-11-2|556 Ex. §11.2]]).
 
 > [!definition] Definition §8.2: Closure
 > Let $A \subseteq X$, where $X$ is a topological space.
@@ -30,7 +30,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-8|Closure]] in a metric space, with its [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|Sequential Characterization of the Closure]].
 
-> [!theorem] Lemma §9.1: Interior and Closure Containment
+> [!theorem] Lemma §8.1: Interior and Closure Containment
 > Let $A \subseteq X$ be a subset of a topological space. Then:
 > 1. $\text{Int}(A) \subseteq A \subseteq \overline{A}$
 > 2. If $A$ is open, then $\text{Int}(A) = A$.
@@ -64,7 +64,7 @@ tags: [topology, math590]
 ![[m590-7-1.svg]]
 *Three kinds of points for a set $A$ (blue; the solid part of the boundary belongs to $A$, the dashed part does not). The point $p$ has a neighborhood inside $A$, so it has room to wiggle and $p \in \text{Int}(A)$. The point $x$ is not in $A$, yet every neighborhood of it (red) meets $A$ (shaded), so $x \in \overline{A} \setminus \text{Int}(A)$ is on the boundary. The point $y$ has a neighborhood $U$ (gray) that misses $A$, so $y \notin \overline{A}$. This is exactly the test in Theorem §8.3.*
 
-> [!example] Example §9.1
+> [!example] Example §8.1
 > $A = [0, 1] \subseteq \mathbb{R}$. Then $\text{Int}(A) = (0, 1)$ and $\overline{A} = [0, 1]$.
 
 ^ex-8-1
@@ -76,7 +76,7 @@ tags: [topology, math590]
 
 ## Closure in Subspaces
 
-> [!theorem] Theorem §9.2: Closure in Subspace
+> [!theorem] Theorem §8.2: Closure in Subspace
 > Let $Y \subseteq X$ be a subspace of $X$, $A \subseteq Y$, $\overline{A}$ = closure of $A$ in $X$. Then the closure of $A$ in $Y$ is equal to $\overline{A} \cap Y$.
 
 ^thm-8-2
@@ -120,7 +120,7 @@ tags: [topology, math590]
 
 ## Closure via Neighborhoods
 
-> [!theorem] Theorem §9.3: Closure Characterization
+> [!theorem] Theorem §8.3: Closure Characterization
 > Let $A \subseteq X$ be a subset of a topological space. Then $x \in \overline{A}$ if and only if every neighborhood of $x$ intersects $A$.
 
 ^thm-8-3

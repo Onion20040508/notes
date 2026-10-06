@@ -15,7 +15,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ## Matrices, Conjugates and Adjoints
 
-> [!definition] Definition §40.1: Matrix
+> [!definition] Definition §34.1: Matrix
 > Matrices are denoted by boldface capitals $\mathbf{A}, \mathbf{B}, \ldots$ (occasionally Greek: $\mathbf{\Phi}, \mathbf{\Psi}$). An $m \times n$ **matrix** is a rectangular array of $m$ rows and $n$ columns,
 >
 > $$
@@ -30,7 +30,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ^def-34-1
 
-> [!definition] Definition §40.2: Transpose, Conjugate and Adjoint
+> [!definition] Definition §34.2: Transpose, Conjugate and Adjoint
 > For a matrix $\mathbf{A} = (a_{ij})$ as in (1):
 > - The **transpose** of $\mathbf{A} = (a_{ij})$ is $\mathbf{A}^T = (a_{ji})$: rows and columns interchanged.
 > - The **conjugate** of $\mathbf{A}$ is $\overline{\mathbf{A}} = (\overline{a_{ij}})$: every element replaced by its complex conjugate.
@@ -55,7 +55,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ## Properties of Matrices
 
-> [!definition] Definition §40.3: The Operations of Matrix Algebra
+> [!definition] Definition §34.3: The Operations of Matrix Algebra
 > 1. **Equality.** $m \times n$ matrices $\mathbf{A}$ and $\mathbf{B}$ are equal if $a_{ij} = b_{ij}$ for all $i$ and $j$.
 > 2. **Zero.** $\mathbf{0}$ is the matrix (or vector) all of whose elements are zero.
 > 3. **Addition.** $\mathbf{A} + \mathbf{B} = (a_{ij} + b_{ij})$ for $m \times n$ matrices. $\qquad (2)$
@@ -74,7 +74,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ^def-34-3
 
-> [!theorem] Proposition §40.1: Laws of Matrix Algebra
+> [!theorem] Proposition §34.1: Laws of Matrix Algebra
 > For matrices of sizes for which the operations are defined, and numbers $\alpha$, $\beta$:
 >
 > $$
@@ -100,7 +100,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 > [!remark]- Connections
 > - Products: [[§12 Matrix Operations#^def-12-5|235 Def. §12.5]] (column by column) and the row–column rule (9), [[§12 Matrix Operations#^prop-12-4|235 Prop. §12.4]]; non-commuting matrices and zero divisors, [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^ex-13-1|235 Ex. §13.1]]. In Axler, (9) is the definition [[§9 Matrices#^ladr-3-41|LADR 3.41]], motivated by composition of linear maps ([[§9 Matrices#^ladr-3-43|LADR 3.43]]), which is why it is associative and not commutative.
 
-> [!example] Example §40.1: Matrix Multiplication Is Not Commutative
+> [!example] Example §34.1: Matrix Multiplication Is Not Commutative
 > Let
 >
 > $$
@@ -159,7 +159,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ^def-34-7
 
-> [!theorem] Proposition §40.2: Properties of the Two Products
+> [!theorem] Proposition §34.2: Properties of the Two Products
 > For vectors $\mathbf{x}, \mathbf{y}, \mathbf{z}$ with $n$ components and a number $\alpha$:
 >
 > $$
@@ -195,7 +195,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 > - $(\mathbf{x}, \mathbf{y})$ is the Euclidean inner product on $\mathbb{C}^n$, [[§20 Inner Products and Norms#^ladr-6-3|LADR 6.3]](a), with the same convention as BDP: linear in the first slot, conjugate-linear in the second; (17)–(18) are the axioms [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] and their consequences [[§20 Inner Products and Norms#^ladr-6-6|LADR 6.6]]. Physics puts the conjugate on the other slot (the warning after LADR 6.2).
 > - For real vectors it is Lay's inner product $\mathbf{u}\cdot\mathbf{v} = \mathbf{u}^T\mathbf{v}$, [[§49 Inner Product, Length, and Orthogonality#^def-49-1|235 Def. §49.1]], with length and orthogonality [[§49 Inner Product, Length, and Orthogonality#^def-49-2|235 Def. §49.2]], [[§49 Inner Product, Length, and Orthogonality#^def-49-5|235 Def. §49.5]].
 
-> [!example] Example §40.2: The Two Products for Complex Vectors
+> [!example] Example §34.2: The Two Products for Complex Vectors
 > Let $\mathbf{x} = \begin{pmatrix} i \\ -2 \\ 1 + i \end{pmatrix}$, $\mathbf{y} = \begin{pmatrix} 2 - i \\ i \\ 3 \end{pmatrix}$, $\mathbf{z} = \begin{pmatrix} 1 \\ 0 \\ i \end{pmatrix}$. Then
 >
 > $$
@@ -243,7 +243,7 @@ To write the linear system (14) of [[§33 Introduction to Systems of First-Order
 
 ^def-34-9
 
-> [!theorem] Theorem §40.3: Determinant Test and Cofactor Formula for the Inverse
+> [!theorem] Theorem §34.3: Determinant Test and Cofactor Formula for the Inverse
 > $\mathbf{A}$ is nonsingular if and only if $\det\mathbf{A} \ne 0$; equivalently, $\mathbf{A}$ is singular if and only if $\det\mathbf{A} = 0$. When $\det\mathbf{A} \ne 0$, the elements of $\mathbf{B} = \mathbf{A}^{-1}$ are
 >
 > $$
@@ -272,7 +272,7 @@ Formula (24) is not an efficient way to compute $\mathbf{A}^{-1}$: for large $n$
 
 ^rem-34-1
 
-> [!example] Example §40.3: Inverting a 3 × 3 Matrix
+> [!example] Example §34.3: Inverting a 3 × 3 Matrix
 > Find the inverse of $\mathbf{A} = \begin{pmatrix} 1 & -1 & -1 \\ 3 & -1 & 2 \\ 2 & 2 & 3 \end{pmatrix}$.
 >
 > $$

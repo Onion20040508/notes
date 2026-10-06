@@ -7,7 +7,7 @@ tags: [multivariable-analysis, math452]
 ---
 ← [[§5 Partial Derivatives]] · ↑ [[· 2 Differentiation]] · [[§7 Differentiability]] →
 
-> [!theorem] Theorem §7.1: Schwarz–Clairaut
+> [!theorem] Theorem §6.1: Schwarz–Clairaut
 > Let $R$ be an open rectangle. If $f_{xy}$ and $f_{yx}$ exist and are continuous on $R$, then $f_{xy} = f_{yx}$ on $R$.
 
 ^thm-6-1

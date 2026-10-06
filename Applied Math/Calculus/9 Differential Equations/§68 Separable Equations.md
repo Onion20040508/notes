@@ -15,7 +15,7 @@ Direction fields and Euler's method ([[§67 Direction Fields and Euler's Method|
 
 ## Separable Differential Equations
 
-> [!definition] Definition §78.1: Separable Equation
+> [!definition] Definition §68.1: Separable Equation
 > A **separable equation** is a first-order differential equation ([[§66 Modeling with Differential Equations#^def-66-5|Definition §66.5]]) in which the expression for $dy/dx$ factors as a function of $x$ times a function of $y$:
 >
 > $$
@@ -40,7 +40,7 @@ $$
 
 Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solved for $y$ in terms of $x$. One constant of integration suffices: constants $C_1$ on the left and $C_2$ on the right combine into $C = C_2 - C_1$. The differential form is notation; the following theorem says what the procedure actually proves. (The technique goes back to James Bernoulli (1690) and Leibniz (1691); John Bernoulli published the general method in 1694.)
 
-> [!theorem] Theorem §78.1: Separation of Variables
+> [!theorem] Theorem §68.1: Separation of Variables
 > Let $g$ be continuous on an interval $I$ and $h$ continuous on an interval $J$, and let $G$ and $H$ be antiderivatives of $g$ and $h$ ([[§36 Antiderivatives#^def-36-1|Definition §36.1]]). Let $y$ be a differentiable function on an interval $I_0 \subseteq I$ with values in $J$. Then
 >
 > $$
@@ -95,7 +95,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^rem-68-1
 
-> [!example] Example §78.1: An Explicit Solution and an Initial-Value Problem
+> [!example] Example §68.1: An Explicit Solution and an Initial-Value Problem
 > (a) Solve $\dfrac{dy}{dx} = \dfrac{x^2}{y^2}$. (b) Find the solution with $y(0) = 2$.
 >
 > **(a)** In differential form, $y^2\,dy = x^2\,dx$. Integrating both sides,
@@ -124,7 +124,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^ex-68-1
 
-> [!example] Example §78.2: A Solution Given Only Implicitly
+> [!example] Example §68.2: A Solution Given Only Implicitly
 > Solve $\dfrac{dy}{dx} = \dfrac{6x^2}{2y + \cos y}$.
 >
 > In differential form, $(2y + \cos y)\,dy = 6x^2\,dx$. Integrating both sides,
@@ -139,7 +139,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 
 ^ex-68-2
 
-> [!example] Example §78.3: A Constant Solution and the Constant A
+> [!example] Example §68.3: A Constant Solution and the Constant A
 > Solve $y' = x^2 y$.
 >
 > In Leibniz notation, $\dfrac{dy}{dx} = x^2 y$. The constant function $y = 0$ is a solution: both sides are $0$. If $y \ne 0$, divide by $y$ and integrate:
@@ -192,7 +192,7 @@ Stewart's Example 4 solves the circuit equation of [[§67 Direction Fields and E
 
 ## Orthogonal Trajectories
 
-> [!definition] Definition §78.2: Orthogonal Trajectory
+> [!definition] Definition §68.2: Orthogonal Trajectory
 > An **orthogonal trajectory** of a family of curves is a curve that intersects each curve of the family orthogonally, that is, at right angles: at each intersection point the two tangent lines are perpendicular. Two families are **orthogonal trajectories of each other** if every curve of each family is an orthogonal trajectory of the other family.
 >
 > For instance, each line $y = mx$ through the origin is an orthogonal trajectory of the family of concentric circles $x^2 + y^2 = r^2$: the radius of a circle is perpendicular to its tangent line. So the lines and the circles are orthogonal trajectories of each other.
@@ -209,7 +209,7 @@ Stewart's Example 4 solves the circuit equation of [[§67 Direction Fields and E
 
 ^rem-68-3
 
-> [!example] Example §78.4: Orthogonal Trajectories of Parabolas
+> [!example] Example §68.4: Orthogonal Trajectories of Parabolas
 > Find the orthogonal trajectories of the family of curves $x = ky^2$, where $k$ is an arbitrary constant.
 >
 > The curves $x = ky^2$ are parabolas whose axis of symmetry is the $x$-axis. Differentiating $x = ky^2$ with respect to $x$,

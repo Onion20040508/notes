@@ -16,8 +16,8 @@ tags: [measure-theory, hub]
 - [[§20 The Lebesgue Integral for Simple Functions#^prop-20-1|Proposition §20.1: Linearity]]
 - [[§20 The Lebesgue Integral for Simple Functions#^def-20-2|Definition §20.2: Lebesgue Integral of a Non-Negative Measurable Function]]
 - [[§20 The Lebesgue Integral for Simple Functions#^prop-20-3|Proposition §20.3: Basic Properties]]
-- [[§20 The Lebesgue Integral for Simple Functions#^lem-20-6|Lemma §20.6: Integral over Increasing Sets]]
 - [[§20 The Lebesgue Integral for Simple Functions#^cor-20-5|Corollary §20.5: Domain Monotonicity]]
+- [[§20 The Lebesgue Integral for Simple Functions#^lem-20-6|Lemma §20.6: Integral over Increasing Sets]]
 
 ## Its proof uses (other subjects)
 - [[Monotone Convergence Theorem]] (Single Variable Analysis)

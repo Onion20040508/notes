@@ -15,7 +15,7 @@ A power series $\sum c_n (x - a)^n$ is a "polynomial with infinitely many terms"
 
 ## Power Series
 
-> [!definition] Definition §102.1: Power Series
+> [!definition] Definition §88.1: Power Series
 > A **power series** is a series of the form
 >
 > $$
@@ -36,7 +36,7 @@ A power series $\sum c_n (x - a)^n$ is a "polynomial with infinitely many terms"
 
 For instance, with $c_n = 1$ for all $n$ we get the geometric series $\sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots$, which converges when $-1 < x < 1$ and diverges when $|x| \ge 1$ ([[§82 Series#^cor-82-2|Corollary §82.2]]): $x = \frac12$ gives the convergent series $1 + \frac12 + \frac14 + \cdots$, and $x = 2$ gives the divergent series $1 + 2 + 4 + \cdots$.
 
-> [!definition] Definition §102.2: Power Series Centered at a
+> [!definition] Definition §88.2: Power Series Centered at a
 > A series of the form
 >
 > $$
@@ -56,7 +56,7 @@ For instance, with $c_n = 1$ for all $n$ we get the geometric series $\sum_{n=0}
 
 To determine the values of $x$ for which a power series converges, we normally use the Ratio (or Root) Test.
 
-> [!example] Example §102.1: A Finite Interval with One Endpoint
+> [!example] Example §88.1: A Finite Interval with One Endpoint
 > For what values of $x$ does $\displaystyle\sum_{n=1}^{\infty} \frac{(x - 3)^n}{n}$ converge?
 >
 > **Ratio Test.** With $a_n = (x - 3)^n / n$,
@@ -75,7 +75,7 @@ To determine the values of $x$ for which a power series converges, we normally u
 
 ^ex-88-1
 
-> [!example] Example §102.2: Converging Only at the Center, or Everywhere
+> [!example] Example §88.2: Converging Only at the Center, or Everywhere
 > **(a)** For what values of $x$ is $\displaystyle\sum_{n=0}^{\infty} n!\,x^n$ convergent?
 >
 > Let $a_n = n!\,x^n$. If $x \ne 0$, then, since $(n+1)! = (n+1)\,n!$,
@@ -104,7 +104,7 @@ To determine the values of $x$ for which a power series converges, we normally u
 
 In these examples the set where the series converges is an interval: finite for the geometric series and [[§88 Power Series#^ex-88-1|Example §88.1]], the infinite interval $(-\infty, \infty)$ in [[§88 Power Series#^ex-88-2|Example §88.2]](b), and the collapsed interval $[0, 0] = \{0\}$ in [[§88 Power Series#^ex-88-2|Example §88.2]](a). This is true in general. Stewart's proof in Appendix F rests on two preliminary results about series centered at $0$.
 
-> [!theorem] Lemma §102.1: Convergence Spreads Inward, Divergence Outward
+> [!theorem] Lemma §88.1: Convergence Spreads Inward, Divergence Outward
 > 1. If a power series $\sum c_n x^n$ converges when $x = b$ (where $b \ne 0$), then it converges whenever $|x| < |b|$.
 > 2. If a power series $\sum c_n x^n$ diverges when $x = d$ (where $d \ne 0$), then it diverges whenever $|x| > |d|$.
 >
@@ -130,7 +130,7 @@ In these examples the set where the series converges is an interval: finite for 
 > [!remark]- Connections
 > - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^thm-69-1|342 Thm. §69.1]] (convergence at $z_1$ gives absolute convergence in the disk $|z - z_0| < |z_1 - z_0|$).
 
-> [!theorem] Lemma §102.2: Three Possibilities at Center 0
+> [!theorem] Lemma §88.2: Three Possibilities at Center 0
 > For a power series $\sum c_n x^n$ there are only three possibilities:
 >
 > (i) The series converges only when $x = 0$.
@@ -160,7 +160,7 @@ In these examples the set where the series converges is an interval: finite for 
 
 *Uses:* [[§88 Power Series#^lem-88-1|§88.1]], [[§81 Monotonic and Bounded Sequences#^def-81-4|Def. §81.4]]
 
-> [!theorem] Theorem §102.3: Three Possibilities for a Power Series
+> [!theorem] Theorem §88.3: Three Possibilities for a Power Series
 > For a power series $\sum_{n=0}^{\infty} c_n (x - a)^n$, there are only three possibilities:
 >
 > (i) The series converges only when $x = a$.
@@ -184,14 +184,14 @@ In these examples the set where the series converges is an interval: finite for 
 > - Rigorous treatment: [[§23 Power Series#^thm-23-1|451 Thm. §23.1]] (the same trichotomy) and [[§23 Power Series#^thm-23-2|451 Thm. §23.2]], which also gives a formula for $R$: $R = 1/\limsup |c_n|^{1/n}$ (Cauchy–Hadamard), proved with the Root Test.
 > - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (the interval of convergence becomes a disk, inside the circle of convergence).
 
-> [!definition] Definition §102.3: Radius of Convergence
+> [!definition] Definition §88.3: Radius of Convergence
 > The number $R$ in case (iii) of [[§88 Power Series#^thm-88-3|Theorem §88.3]] is the **radius of convergence** of the power series. By convention, $R = 0$ in case (i) and $R = \infty$ in case (ii).
 >
 > *Stewart: 11.8 (text)*
 
 ^def-88-3
 
-> [!definition] Definition §102.4: Interval of Convergence
+> [!definition] Definition §88.4: Interval of Convergence
 > The **interval of convergence** is the interval of all $x$ for which the series converges. In case (i) it is the single point $a$; in case (ii) it is $(-\infty, \infty)$. In case (iii), $|x - a| < R$ reads $a - R < x < a + R$; at an *endpoint* $x = a \pm R$ anything can happen (convergence at one, both or neither endpoint), so there are four possibilities:
 >
 > $$
@@ -222,7 +222,7 @@ In these examples the set where the series converges is an interval: finite for 
 
 ^rem-88-1
 
-> [!example] Example §102.3: Convergent at One Endpoint Only
+> [!example] Example §88.3: Convergent at One Endpoint Only
 > Find the radius of convergence and interval of convergence of $\displaystyle\sum_{n=0}^{\infty} \frac{(-3)^n x^n}{\sqrt{n+1}}$.
 >
 > Let $a_n = (-3)^n x^n / \sqrt{n+1}$. Then
@@ -247,7 +247,7 @@ In these examples the set where the series converges is an interval: finite for 
 
 ^ex-88-3
 
-> [!example] Example §102.4: A Series Centered at −2
+> [!example] Example §88.4: A Series Centered at −2
 > Find the radius of convergence and interval of convergence of $\displaystyle\sum_{n=0}^{\infty} \frac{n (x + 2)^n}{3^{n+1}}$.
 >
 > With $a_n = n(x + 2)^n / 3^{n+1}$,

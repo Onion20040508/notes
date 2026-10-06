@@ -22,14 +22,14 @@ Numbers arose for counting, which needs only the positive integers; subtraction 
 
 The integers can be added, subtracted and multiplied, but not always divided: for integers $b \ne 0$ and $a$, the equation $bx = a$ has an integer solution only if $b \mid a$. The rational numbers satisfy all the basic algebraic properties of the integers ([[§2 Implications#^def-2-9|Definition §2.9]], Eccles Properties 2.3.1) and in addition: for integers $b \ne 0$ and $a$ there is a unique rational $q$ with $bq = a$; and they are just enough for this, since for every rational $q$ there are integers $b \ne 0$ and $a$ with $bq = a$. For now we take such a system as given and describe it through fractions; its construction from $\Z$ is in §22a ([[§22a Constructing ℚ and ℤ#^def-22a-2|Definition §22a.2]] and [[§22a Constructing ℚ and ℤ#^thm-22a-4|Theorem §22a.4]]; Eccles Example 22.3.5 and the Rational Number Project). A rational number and a fraction are different things: every rational number is represented by a fraction, but different fractions may represent the same rational number.
 
-> [!definition] Definition §13.2: Fraction
+> [!definition] Definition §13.1: Fraction
 > A **fraction** is an expression $a/b$ with $a, b \in \Z$ and $b \ne 0$; $a$ is its **numerator** and $b$ its **denominator**.
 >
 > *Eccles: Definition 13.1.1*
 
 ^def-13-1
 
-> [!definition] Definition §13.3: The Rational Number a Fraction Represents
+> [!definition] Definition §13.2: The Rational Number a Fraction Represents
 > The fraction $a/b$ **represents** the **rational number** $q$ with $bq = a$. As a temporary notation, write $q = \langle a/b \rangle$.
 >
 > *Eccles: Definition 13.1.1*
@@ -60,7 +60,7 @@ Since $1x = a$ has the integer solution $a$, the integers sit inside the rationa
 
 For example $\langle 2/3 \rangle = \langle 8/12 \rangle = \langle (-14)/(-21) \rangle$.
 
-> [!definition] Definition §13.4: Lowest Terms
+> [!definition] Definition §13.3: Lowest Terms
 > The fraction $a/b$ is **in lowest terms** when $b$ is positive and $a$ and $b$ are coprime.
 >
 > *Eccles: Definition 13.1.3*
@@ -85,7 +85,7 @@ The lowest-terms fraction is in fact unique; this needs [[§17 Consequences of t
 
 To see how sums look in terms of fractions, let $q_1 = \langle a/b \rangle$ and $q_2 = \langle c/d \rangle$, so $bq_1 = a$ and $dq_2 = c$. Then $bdq_1 = ad$ and $bdq_2 = bc$, so by distributivity $bd(q_1 + q_2) = ad + bc$: $q_1 + q_2$ is represented by $(ad + bc)/bd$. Similarly $bd\,q_1 q_2 = ac$, so $q_1 q_2$ is represented by $ac/bd$.
 
-> [!definition] Definition §13.5: Sum and Product of Fractions
+> [!definition] Definition §13.4: Sum and Product of Fractions
 > $$
 > \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}, \qquad \frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}.
 > $$
@@ -187,7 +187,7 @@ A good number system should measure every length. By Pythagoras's theorem the di
 
 Theorem [[§13 Number Systems#^thm-13-4|§13.4]] shows that rational numbers do not measure all lengths. The **real numbers** extend the number system so that they do.
 
-> [!definition] Definition §13.6: Irrational Number
+> [!definition] Definition §13.5: Irrational Number
 > A real number which is not a rational number is **irrational**. Theorem [[§13 Number Systems#^thm-13-4|§13.4]] says: $\sqrt2$ is irrational.
 >
 > *Eccles: Section 13.3*
@@ -226,7 +226,7 @@ The idea of an infinite decimal is that its truncations are better and better ap
 
 ^ex-13-3
 
-> [!definition] Definition §13.7: The Real Number an Infinite Decimal Represents
+> [!definition] Definition §13.6: The Real Number an Infinite Decimal Represents
 > An infinite decimal $a_0.a_1 a_2 \ldots a_i \ldots$ **represents** the real number $a$, written $a = a_0.a_1a_2 \ldots a_i \ldots$, when
 >
 > $$

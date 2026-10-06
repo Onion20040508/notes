@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§35 Lᵖ as a Banach Space#^thm-35-2]]
 
 ## Treated in
-- [[§35 Lᵖ as a Banach Space#^thm-35-2|Theorem §35.2: Minkowski's Inequality]], in [[§34 Normed Linear Spaces and Lᵖ Spaces]]
+- [[§35 Lᵖ as a Banach Space#^thm-35-2|Theorem §35.2: Minkowski's Inequality]], in [[§35 Lᵖ as a Banach Space]]
 
 ## Its proof uses
 - [[§20 The Lebesgue Integral for Simple Functions#^prop-20-3|Proposition §20.3: Basic Properties]]

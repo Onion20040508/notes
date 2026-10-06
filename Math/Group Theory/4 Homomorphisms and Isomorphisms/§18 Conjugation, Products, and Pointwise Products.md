@@ -59,10 +59,10 @@ tags: [group-theory, math493]
 
 ^rem-18-1
 
-> [!definition] Definition §18.3: $\operatorname{Hom}(G, H)$; Pointwise Product
+> [!definition] Definition §18.5: $\operatorname{Hom}(G, H)$; Pointwise Product
 > For groups $G$ and $H$, let $\operatorname{Hom}(G, H)$ denote the set of all group homomorphisms $G \to H$. For $\alpha, \beta \in \operatorname{Hom}(G, H)$, the **pointwise product** $\alpha\beta: G \to H$ is defined by $(\alpha\beta)(g) = \alpha(g)\,\beta(g)$, the product taken in $H$.
 
-^def-18-3
+^def-18-5
 
 > [!remark]- Connections
 > - Linear-algebra analogue: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]] (LADR 3.5), the pointwise sum of linear maps.
@@ -89,12 +89,12 @@ tags: [group-theory, math493]
 
 ^pf-18-2
 
-*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|Def. §18.3]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
+*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-5|Def. §18.5]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
 
-> [!definition] Definition §18.4: Structure Maps of a Product
+> [!definition] Definition §18.7: Structure Maps of a Product
 > For groups $G$ and $H$, the **projections** $\pi_1: G \times H \to G$, $\pi_1(g, h) = g$, and $\pi_2: G \times H \to H$, $\pi_2(g, h) = h$; the **inclusions** $\iota_1: G \to G \times H$, $\iota_1(g) = (g, e_H)$, and $\iota_2: H \to G \times H$, $\iota_2(h) = (e_G, h)$; and, for a single group $G$, the **diagonal** $\Delta: G \to G \times G$, $\Delta(g) = (g, g)$, and the **multiplication map** $\nabla: G \times G \to G$, $\nabla(g, h) = gh$.
 
-^def-18-4
+^def-18-7
 
 > [!theorem] Proposition §18.3: The Product and Its Universal Property
 > Let $G$, $H$, $K$ be groups.
@@ -118,7 +118,7 @@ tags: [group-theory, math493]
 
 ^pf-18-3
 
-*Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Def. §18.4]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+*Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-7|Def. §18.7]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 ![[m493-18-1.svg]]
 *Part (3) of the proposition: a map $\varphi: K \to G \times H$ (red) is a homomorphism exactly when its components $\pi_1 \circ \varphi$ and $\pi_2 \circ \varphi$ are. A homomorphism into a product is therefore the same thing as a pair of homomorphisms, one into each factor; the diagonal $\Delta = (\operatorname{id}_G, \operatorname{id}_G)$ of part (4) is the case $K = G = H$.*
@@ -158,7 +158,7 @@ tags: [group-theory, math493]
 
 ^pf-18-4
 
-*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-4|Def. §18.4]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|§18.3]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|§18.2]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
+*Uses:* [[§18 Conjugation, Products, and Pointwise Products#^def-18-7|Def. §18.7]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|§18.3]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|§18.2]], [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§14 Multiplication Tables#^ex-14-5|Ex. §14.5]]
 
 > [!remark]- Connections
 > - Worksheet form: [[§18 Conjugation, Products, and Pointwise Products#^prop-18-5|Characterizations of Abelian Groups, Worksheet Form (WS 3.4)]] (§18.5).

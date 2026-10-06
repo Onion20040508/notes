@@ -42,7 +42,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^rem-24-1
 
-> [!definition] Definition §30.1: The Submatrix A_ij
+> [!definition] Definition §24.1: The Submatrix A_ij
 > For a square matrix $A$, $A_{ij}$ denotes the submatrix formed by deleting the $i$th row and the $j$th column of $A$. For instance,
 >
 > $$
@@ -57,7 +57,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^def-24-1
 
-> [!definition] Definition §30.2: Determinant
+> [!definition] Definition §24.2: Determinant
 > For a $1 \times 1$ matrix, $\det\,[a_{11}] = a_{11}$. For $n \ge 2$, the **determinant** of an $n \times n$ matrix $A = [a_{ij}]$ is the sum of $n$ terms of the form $\pm a_{1j} \det A_{1j}$, with plus and minus signs alternating, where $a_{11}, a_{12}, \ldots, a_{1n}$ are the entries of the first row of $A$:
 >
 > $$
@@ -74,7 +74,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 > - Rigorous treatment: Axler defines $\det$ through the one-dimensional space of alternating $n$-linear forms ([[§37 Determinants#^ladr-9-43|LADR 9.43]]) and derives the closed formula $\det A = \sum_{\sigma} \operatorname{sign}(\sigma)\, a_{\sigma(1),1} \cdots a_{\sigma(n),n}$ over all $n!$ permutations ([[§37 Determinants#^ladr-9-46|LADR 9.46]]); unwinding Lay's recursion gives exactly this sum.
 > - The sign of a permutation and the parity of the number of inversions: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]], [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]; the sign is $\det$ of the permutation matrix ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|493 Thm. §21.2]]).
 
-> [!definition] Definition §30.3: Cofactor
+> [!definition] Definition §24.3: Cofactor
 > Given $A = [a_{ij}]$, the **$(i,j)$-cofactor** of $A$ is the number
 >
 > $$
@@ -93,7 +93,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^def-24-3
 
-> [!theorem] Theorem §30.1: Cofactor Expansion Along Any Row or Column
+> [!theorem] Theorem §24.1: Cofactor Expansion Along Any Row or Column
 > The determinant of an $n \times n$ matrix $A$ can be computed by a cofactor expansion across any row or down any column. The expansion across the $i$th row is
 >
 > $$
@@ -123,7 +123,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^rem-24-2
 
-> [!example] Example §30.1: Expanding Across the First Row and Across the Third Row
+> [!example] Example §24.1: Expanding Across the First Row and Across the Third Row
 > Compute $\det A$ for
 >
 > $$
@@ -148,7 +148,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^ex-24-1
 
-> [!example] Example §30.2: Following the Zeros
+> [!example] Example §24.2: Following the Zeros
 > Compute $\det A$ for
 >
 > $$
@@ -181,7 +181,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ## Triangular Matrices
 
-> [!example] Example §30.3: A Nearly Triangular Matrix
+> [!example] Example §24.3: A Nearly Triangular Matrix
 > Compute $\det A$ for
 >
 > $$
@@ -200,7 +200,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ^ex-24-3
 
-> [!theorem] Theorem §30.2: Determinant of a Triangular Matrix
+> [!theorem] Theorem §24.2: Determinant of a Triangular Matrix
 > If $A$ is a triangular matrix, then $\det A$ is the product of the entries on the main diagonal of $A$. In particular $\det I_n = 1$.
 >
 > *Lay: Theorem 2 (3.1)*
@@ -223,7 +223,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 ## The 3 × 3 Diagonal Rule
 
-> [!theorem] Proposition §30.3: The Diagonal Rule for 3 × 3 Determinants
+> [!theorem] Proposition §24.3: The Diagonal Rule for 3 × 3 Determinants
 > Write a second copy of the first two columns to the right of a $3 \times 3$ matrix. Then $\det A$ is the sum of the three products along the downward diagonals minus the sum of the three products along the upward diagonals:
 >
 > $$
@@ -255,7 +255,7 @@ A $2 \times 2$ matrix is invertible exactly when $ad - bc \ne 0$ ([[§14 The Inv
 
 *Uses:* [[§24 Introduction to Determinants#^def-24-2|Def. §24.2]]
 
-> [!example] Example §30.4: The Diagonal Rule on a Singular Matrix
+> [!example] Example §24.4: The Diagonal Rule on a Singular Matrix
 > For
 >
 > $$

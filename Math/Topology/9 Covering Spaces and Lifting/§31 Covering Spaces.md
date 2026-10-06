@@ -25,7 +25,7 @@ tags: [topology, math590]
 ^def-31-2
 
 > [!remark]- Connections
-> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§34 Fibrations#^def-34-1|591 Def. §34.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§31 Local Diffeomorphisms#^rem-31-2|591 §31, Remark: Covering Maps]].
+> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§36 Fibrations#^def-36-1|591 Def. §36.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§33 Local Diffeomorphisms#^rem-33-2|591 §31, Remark: Covering Maps]].
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, an infinitely-sheeted covering of the punctured plane).
 
 > [!definition] Definition §31.3: Covering Space
@@ -154,7 +154,7 @@ tags: [topology, math590]
 ^rem-31-3
 
 > [!remark]- Connections
-> - As a smooth map, $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism, and its restriction to $(0, 4\pi)$ is a local diffeomorphism that is not a covering map: [[§31 Local Diffeomorphisms#^ex-31-1|591 Ex. §31.1]].
+> - As a smooth map, $t \mapsto (\cos t, \sin t)$ is a local diffeomorphism, and its restriction to $(0, 4\pi)$ is a local diffeomorphism that is not a covering map: [[§33 Local Diffeomorphisms#^ex-33-1|591 Ex. §33.1]].
 
 ## Non-Example: Local Homeomorphism $\neq$ Covering Map
 

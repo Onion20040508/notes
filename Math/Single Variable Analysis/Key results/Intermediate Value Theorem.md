@@ -33,8 +33,8 @@ tags: [real-analysis, hub]
 - [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^lem-32-5|Lemma §32.5: Image Measure Bounded by Total Variation]]
 
 ## Used in (Functional Analysis)
-- [[§25 Sequence and Function Spaces#^prop-25-5|Proposition §25.5: L^∞(E) is Not Separable]]
-- [[§28 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-28-3|Lemma §28.3: A Symmetric Coercive Form Has a Sign]]
+- [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: L^∞(E) is Not Separable]]
+- [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-32-3|Lemma §32.3: A Symmetric Coercive Form Has a Sign]]
 
 ## Connections
 - Abstract form: the continuous image of a connected set is connected; see [[§22 More on Metric Spaces꞉ Connectedness]].

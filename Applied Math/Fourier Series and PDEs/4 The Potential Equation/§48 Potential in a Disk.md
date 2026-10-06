@@ -50,7 +50,7 @@ $$
 r\big(rR'\big)' - \lambda^2R = 0, \quad (7) \qquad R(r) \ \text{bounded as } r \to 0^+ . \quad (8)
 $$
 
-> [!theorem] Proposition §59.1: The Periodic Eigenvalue Problem
+> [!theorem] Proposition §48.1: The Periodic Eigenvalue Problem
 > The solutions of the singular eigenvalue problem (5)–(6) are
 >
 > $$
@@ -78,7 +78,7 @@ $$
 
 *Uses:* [[§1★ Homogeneous Linear Equations#^ex-1-1|Ex. §1.1]] (solutions of $Q'' + \lambda^2Q = 0$), [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-1|331 Thm. §18.1]] (uniqueness for initial value problems)
 
-> [!theorem] Theorem §59.2: Solution of Dirichlet's Problem in a Disk
+> [!theorem] Theorem §48.2: Solution of Dirichlet's Problem in a Disk
 > The solution of (1)–(4) is
 >
 > $$
@@ -150,7 +150,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 ^rem-48-1
 
-> [!example] Example §59.1: Half the Boundary at Potential 1
+> [!example] Example §48.1: Half the Boundary at Potential 1
 > Solve (1)–(4) with
 >
 > $$
@@ -193,7 +193,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 > [!remark]- Connections
 > - Complex-variables version: [[§136★ Examples (Dirichlet Problem for a Disk)#^ex-136-1|342 Ex. §136.1]] (the same split cylinder, rotated a quarter turn, solved by integrating the Poisson kernel in closed form).
 
-> [!example] Example §59.2: Boundary Values θ and 2θ + cos 3θ on a Disk of Radius 2
+> [!example] Example §48.2: Boundary Values θ and 2θ + cos 3θ on a Disk of Radius 2
 > **(a) HW 13.** Solve $u_{xx} + u_{yy} = 0$ in $x^2 + y^2 \le 4$ with $u = f(\theta) = \theta$ ($-\pi < \theta < \pi$) on $x^2 + y^2 = 4$.
 >
 > *Polar form.* $u_{rr} + \frac1ru_r + \frac{1}{r^2}u_{\theta\theta} = 0$ for $0 < r < 2$; $u(r, \theta) = u(r, \theta + 2\pi)$; $u(2, \theta) = \theta$; $u$ bounded as $r \to 0^+$.
@@ -236,7 +236,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 
 The bonus lecture of 12.3 solved the Poisson equation ([[§46 Further Examples for a Rectangle#^def-46-1|Definition §46.1]]) in a disk. In place of a polynomial particular solution, both $u$ and the source are expanded in Fourier series in $\theta$, which turns the PDE into one ODE for each harmonic. (The lecture writes $\nabla^2u = f$; in Powers' notation $f = -H$.)
 
-> [!example] Example §59.3: The Poisson Equation in the Unit Disk
+> [!example] Example §48.3: The Poisson Equation in the Unit Disk
 > Solve
 >
 > $$

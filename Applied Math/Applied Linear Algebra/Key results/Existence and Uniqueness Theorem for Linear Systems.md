@@ -8,7 +8,7 @@ tags: [applied-linear-algebra, hub]
 ![[§3 Solutions of Linear Systems#^thm-3-1]]
 
 ## Treated in
-- [[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1: Existence and Uniqueness Theorem]], in [[§2 Row Reduction and Echelon Forms]]
+- [[§3 Solutions of Linear Systems#^thm-3-1|Theorem §3.1: Existence and Uniqueness Theorem]], in [[§3 Solutions of Linear Systems]]
 
 ## Its proof uses
 - [[§1 Systems of Linear Equations#^thm-1-2|Theorem §1.2: Row-Equivalent Systems Have the Same Solution Set]]

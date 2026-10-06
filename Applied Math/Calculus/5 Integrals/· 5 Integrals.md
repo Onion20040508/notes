@@ -16,16 +16,18 @@ tags: [chapter, calculus]
 ## Sections
 - [[§38 The Area and Distance Problems]] — Stewart 5.1
 - [[§39 The Definite Integral]] — Stewart 5.2
+- [[§40 Properties of the Definite Integral]] — Stewart 5.2
 - [[§41 The Fundamental Theorem of Calculus]] — Stewart 5.3
 - [[§42 Indefinite Integrals and the Net Change Theorem]] — Stewart 5.4
 - [[§43 The Substitution Rule]] — Stewart 5.5
+- [[§44 The Area Under y = x² from 0 to 1]] — Stewart 5.5
 
 ## Central results
-- [[Substitution Rule]] (§38.1)
+- [[Substitution Rule]] (§43.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§39 The Definite Integral#^thm-39-1|Theorem §39.1: Continuous Functions Are Integrable]]: 220 later results
-- [[§39 The Definite Integral#^thm-39-3|Theorem §39.3: Properties of Sums]]: 218 later results
-- [[§40 Properties of the Definite Integral#^thm-40-2|Theorem §40.2: Additivity over Adjacent Intervals]]: 212 later results
-- [[§39 The Definite Integral#^thm-39-2|Theorem §39.2: The Integral as a Limit of Right-Endpoint Sums]]: 211 later results
+- [[§39 The Definite Integral#^thm-39-3|Theorem §39.3: Properties of Sums]]: 229 later results
+- [[§39 The Definite Integral#^thm-39-1|Theorem §39.1: Continuous Functions Are Integrable]]: 223 later results
+- [[§39 The Definite Integral#^thm-39-2|Theorem §39.2: The Integral as a Limit of Right-Endpoint Sums]]: 223 later results
+- [[§40 Properties of the Definite Integral#^thm-40-1|Theorem §40.1: Properties of the Integral]]: 223 later results

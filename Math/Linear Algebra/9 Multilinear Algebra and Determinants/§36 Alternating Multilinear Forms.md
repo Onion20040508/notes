@@ -86,7 +86,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Developed in 493: the sign via inversions, [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|493 Def. §21.2]], and its multiplicativity, [[The Sign Homomorphism]] (493 Thm. §21.3).
-> - Same definition, by inversions, in 591: [[§10 Topological Groups and Classical Matrix Groups#^def-10-3|591 Def. §10.3]], with its properties in [[§10 Topological Groups and Classical Matrix Groups#^prop-10-2|591 Prop. §10.2]].
+> - Same definition, by inversions, in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|591 Def. §11.4]], with its properties in [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|591 Prop. §11.2]].
 
 > [!example] Example 9.33: Signs (p. 349)
 > - $\operatorname{sign}(1,\dots,m)=1$.

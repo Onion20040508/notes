@@ -16,7 +16,7 @@ The Bessel functions $J_\mu$ and $Y_\mu$ of [[§55★ Bessel's Equation|§55★]
 
 ## Zeros and Behavior at Infinity
 
-> [!theorem] Theorem §69.1: Zeros of the Bessel Functions
+> [!theorem] Theorem §56.1: Zeros of the Bessel Functions
 > Both kinds of Bessel functions have an infinite number of zeros: there are infinitely many values of $\alpha$ (and $\beta$) for which
 >
 > $$
@@ -52,13 +52,12 @@ The Bessel functions $J_\mu$ and $Y_\mu$ of [[§55★ Bessel's Equation|§55★]
 >
 > *Source: Liouville's normal form and the standard asymptotic formulas (DLMF §10.7); not in Powers.*
 
-^rem-56-4
-
+^rem-56-1
 ## Derivative and Integral Formulas
 
 The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temperature in a Cylinder|§46]] and after to compute coefficients of Bessel series.
 
-> [!theorem] Theorem §69.2: Derivatives of Bessel Functions
+> [!theorem] Theorem §56.2: Derivatives of Bessel Functions
 > With the prime denoting differentiation with respect to the argument:
 > - (a) $\dfrac{d}{dr}J_\mu(\lambda r) = \lambda J_\mu'(\lambda r)$;
 > - (b) $J_0'(x) = -J_1(x)$, so $\dfrac{d}{dr}J_0(\lambda r) = -\lambda J_1(\lambda r)$;
@@ -128,7 +127,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temper
 
 ## Radial Eigenvalue Problems
 
-> [!example] Example §69.1: The Radial Eigenvalue Problem with a Fixed Edge
+> [!example] Example §56.1: The Radial Eigenvalue Problem with a Fixed Edge
 > Find the values of $\lambda$ for which
 >
 > $$
@@ -153,7 +152,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temper
 
 ^ex-56-1
 
-> [!example] Example §69.2: The Radial Eigenvalue Problem with an Insulated Edge
+> [!example] Example §56.2: The Radial Eigenvalue Problem with an Insulated Edge
 > Solve the eigenvalue problem
 >
 > $$
@@ -174,7 +173,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temper
 
 ## Modified Bessel Functions
 
-> [!definition] Definition §69.1: Modified Bessel Equation
+> [!definition] Definition §56.1: Modified Bessel Equation
 > The **modified Bessel equation** differs from Bessel's equation only in the sign of one term:
 >
 > $$
@@ -185,7 +184,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temper
 
 ^def-56-1
 
-> [!definition] Definition §69.2: Modified Bessel Function of the First Kind
+> [!definition] Definition §56.2: Modified Bessel Function of the First Kind
 > The solution of the modified Bessel equation (7) ([[§56★ Properties of Bessel Functions#^def-56-1|Definition §56.1]]) that is bounded at $r = 0$, in standard form, is the **modified Bessel function of the first kind of order $\mu$**,
 >
 > $$
@@ -216,7 +215,7 @@ The next formulas, Powers' Exercises 5.5.3–5.5.7, are used in [[§57★ Temper
 
 *Uses:* [[§55★ Bessel's Equation#^thm-55-1|§55.1]], [[§55★ Bessel's Equation#^thm-55-2|§55.2]], [[§56★ Properties of Bessel Functions#^def-56-1|Def. §56.1]], [[§56★ Properties of Bessel Functions#^def-56-2|Def. §56.2]]
 
-> [!example] Example §69.3: A Circular Plate Cooled by Convection
+> [!example] Example §56.3: A Circular Plate Cooled by Convection
 > Find the temperature in a circular plate whose faces are exposed to convection, if
 >
 > $$

@@ -20,7 +20,6 @@ tags: [complex-variables, hub]
 - [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1: Extended Cauchy Integral Formula]]
 - [[§61 Convergence of Series#^ex-61-1|Example §61.1: The Geometric Series]]
 - [[§61 Convergence of Series#^def-61-3|Definition §61.3: Remainder]]
-- [[§61 Convergence of Series#^def-61-4|Definition §61.4: Power Series]]
 - [[§62 Taylor Series#^def-62-1|Definition §62.1: Taylor Series; Maclaurin Series]]
 
 ## Used in (Complex Variables)

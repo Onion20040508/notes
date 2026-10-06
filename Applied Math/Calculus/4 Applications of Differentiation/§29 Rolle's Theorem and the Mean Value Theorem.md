@@ -44,7 +44,7 @@ The Mean Value Theorem says that somewhere between $a$ and $b$ the instantaneous
 
 For example, if $s = f(t)$ is the position of a moving object and the object is in the same place at two instants $t = a$ and $t = b$, then at some instant in between its velocity $f'(c)$ is $0$. (A ball thrown straight up is momentarily at rest at the top.)
 
-> [!example] Example §32.1: Exactly One Real Root
+> [!example] Example §29.1: Exactly One Real Root
 > Prove that the equation $x^3 + x - 1 = 0$ has exactly one real solution.
 >
 > **Existence.** Let $f(x) = x^3 + x - 1$. Then $f(0) = -1 < 0$ and $f(1) = 1 > 0$. $f$ is a polynomial, hence continuous, so by the Intermediate Value Theorem ([[§12 Continuity#^thm-12-10|Theorem §12.10]]) there is a number $c$ between $0$ and $1$ with $f(c) = 0$.
@@ -141,7 +141,7 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (same proof: subtract the chord), with Rolle's Theorem as [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]]. Hub: [[Mean Value Theorem]].
 > - The two-function version used to prove l'Hospital's Rule: Cauchy's Mean Value Theorem, [[§31 Indeterminate Forms and L'Hospital's Rule#^thm-31-1|Theorem §31.1]].
 
-> [!example] Example §32.2: Finding the Number c
+> [!example] Example §29.2: Finding the Number c
 > Illustrate the Mean Value Theorem with $f(x) = x^3 - x$, $a = 0$, $b = 2$.
 >
 > $f$ is a polynomial, so it is continuous on $[0, 2]$ and differentiable on $(0, 2)$, and there is a $c \in (0, 2)$ with $f(2) - f(0) = f'(c)(2 - 0)$. Here $f(2) = 6$, $f(0) = 0$ and $f'(x) = 3x^2 - 1$, so the equation becomes
@@ -158,7 +158,7 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 
 *Chain:* ← [[§16 The Parabola y = x², the CN Tower Ball, (√(t² + 9) − 3)∕t² and x³ − x#The Cubic x³ − x|Chapter 2]]
 
-> [!example] Example §32.3: Bounding a Function by Its Derivative
+> [!example] Example §29.3: Bounding a Function by Its Derivative
 > Suppose that $f(0) = -3$ and $f'(x) \le 5$ for all values of $x$. How large can $f(2)$ possibly be?
 >
 > $f$ is differentiable everywhere, hence continuous everywhere ([[§15 The Derivative as a Function#^thm-15-1|Theorem §15.1]]), so the Mean Value Theorem applies on $[0, 2]$: there is a number $c$ with
@@ -226,7 +226,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 
 ^rem-29-2
 
-> [!example] Example §32.4: Proving an Identity by Differentiating
+> [!example] Example §29.4: Proving an Identity by Differentiating
 > Prove the identity $\tan^{-1} x + \cot^{-1} x = \pi/2$.
 >
 > Let $f(x) = \tan^{-1} x + \cot^{-1} x$. By the derivatives of the inverse trigonometric functions ([[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|Theorem §22.8]]),

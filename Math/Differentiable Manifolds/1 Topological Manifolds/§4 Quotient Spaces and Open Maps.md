@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, math591]
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]], with the topology of [[§13 Quotient Topology#^prop-13-1|590 §13.1]].
-> - Reused for orbit spaces [[§12 Group Actions and Orbit Spaces#^def-12-5|Def. §12.5]] and coset spaces [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]].
+> - Reused for orbit spaces [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]] and coset spaces [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]].
 > - The quotient set $X/{\sim}$ of equivalence classes in 250: [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]; the classes partition $X$: [[Equivalence Relations Are Partitions|250 Cor. §22.4]].
 
 > [!theorem] Proposition §4.1: The Quotient Topology Is the Finest Making $\pi$ Continuous
@@ -80,10 +80,10 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
 
 ![[m591-3-8.svg]]
-*Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§6 Open Quotients#^ex-6-1|Example §6.1]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
+*Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§10 The Line with Two Origins#^ex-10-1|Example §10.1]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
 
 > [!remark]- Connections
-> - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^rem-1-9|§1, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§6 Open Quotients#^ex-6-1|Ex. §6.1]].
+> - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§10 The Line with Two Origins#^rem-10-1|§1, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - A quotient of the Hausdorff $\mathbb{R}$ that is not Hausdorff, in MATH 590: [[§13 Quotient Topology#^ex-13-5|590 Ex. §13.5]].
 
 > [!theorem] Proposition §4.2: The Two Constructions Agree
@@ -92,7 +92,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-4-2
 
 > [!proof]+ Exercise
-> Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|Proposition §14.1]]-style reasoning it is enough to compare the two on the basic sets of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], pulling each back along $\pi$. Assigned in lecture and left here.
+> Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|Proposition §15.1]]-style reasoning it is enough to compare the two on the basic sets of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], pulling each back along $\pi$. Assigned in lecture and left here.
 
 ^pf-4-2
 
@@ -100,10 +100,10 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ## Open Maps and Open Relations
 
-> [!definition] Definition §4.2: Open Map
+> [!definition] Definition §4.3: Open Map
 > A continuous map $F : X \to Y$ between topological spaces is **open** if for every open $U \subseteq X$, the image $F(U)$ is open in $Y$.
 
-^def-4-2
+^def-4-3
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^def-13-4|590 Def. §13.4]].
@@ -124,12 +124,12 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-ex-4-2
 
-*Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
+*Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
 
-> [!definition] Definition §4.3: Open Equivalence Relation
+> [!definition] Definition §4.4: Open Equivalence Relation
 > An equivalence relation $\sim$ on $X$ is **open** if the projection $\pi : X \to X/{\sim}$ is an open map.
 
-^def-4-3
+^def-4-4
 
 > [!example] Example §4.3: Non-Example
 > Let $X = \mathbb{R}$ and let $\sim$ be the equivalence relation generated by the single non-trivial identification $0 \sim 1$ (glue the two points; the quotient looks like a line with a small loop). Take the open set $\left(-\tfrac12, \tfrac12\right)$ and compute the preimage of its image:
@@ -142,9 +142,9 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^ex-4-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]]
 
-> [!definition] Definition §4.4: Saturation and Saturated Sets
+> [!definition] Definition §4.5: Saturation and Saturated Sets
 > Let $\sim$ be an equivalence relation on a set $X$ with quotient map $\pi : X \to X/{\sim}$. For any subset $U \subseteq X$, the **saturation** of $U$ is
 >
 > $$
@@ -153,20 +153,20 @@ The single most useful fact about the quotient topology — that a map *out* of 
 >
 > the union of all equivalence classes that meet $U$. A subset $S \subseteq X$ is **saturated** if $S = \tilde S$; equivalently, $S$ is a union of equivalence classes; equivalently, $S = \pi^{-1}(W)$ for some $W \subseteq X/{\sim}$ (namely $W = \pi(S)$).
 
-^def-4-4
+^def-4-5
 
 ![[m591-3-3.svg]]
-*Saturation for the relation $x \sim y \iff x - y \in \mathbb{Z}$ on $\mathbb{R}$, whose quotient is the circle ([[§14 The Topology of G∕H and Real Grassmannians#^ex-14-1|Example §14.1]]). The saturation of the interval $U$ is the union of all its integer translates, $\pi^{-1}(\pi(U))$: everything the quotient map cannot tell apart from $U$. It is open because each translate is — the mechanism behind “orbit relations are open” ([[§12 Group Actions and Orbit Spaces#^lem-12-3|Lemma §12.3]]) — and its image $\pi(U)$ is an open arc of the circle.*
+*Saturation for the relation $x \sim y \iff x - y \in \mathbb{Z}$ on $\mathbb{R}$, whose quotient is the circle ([[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|Example §15.1]]). The saturation of the interval $U$ is the union of all its integer translates, $\pi^{-1}(\pi(U))$: everything the quotient map cannot tell apart from $U$. It is open because each translate is — the mechanism behind “orbit relations are open” ([[§13 Group Actions and Orbit Spaces#^lem-13-3|Lemma §13.3]]) — and its image $\pi(U)$ is an open arc of the circle.*
 
 > [!remark]- Connections
-> - Saturated sets for cosets: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]]; for orbits: [[§12 Group Actions and Orbit Spaces#^lem-12-3|§12.3]].
+> - Saturated sets for cosets: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]]; for orbits: [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]].
 
 > [!theorem] Lemma §4.3: Basic Properties of Saturation
 > For all $U, V \subseteq X$ and any family $(U_\alpha)$ of subsets:
 > 1. $U \subseteq \tilde U$, and $\tilde{\tilde U} = \tilde U$ (the saturation is saturated).
 > 2. $U \subseteq V \Rightarrow \tilde U \subseteq \tilde V$, and $\widetilde{\bigcup_\alpha U_\alpha} = \bigcup_\alpha \tilde U_\alpha$.
 > 3. $\pi(\tilde U) = \pi(U)$.
-> 4. The three descriptions of “saturated” in [[§4 Quotient Spaces and Open Maps#^def-4-4|Definition §4.4]] are equivalent, and for saturated $S$ one has $\pi^{-1}(\pi(S)) = S$.
+> 4. The three descriptions of “saturated” in [[§4 Quotient Spaces and Open Maps#^def-4-5|Definition §4.5]] are equivalent, and for saturated $S$ one has $\pi^{-1}(\pi(S)) = S$.
 
 ^lem-4-3
 
@@ -175,7 +175,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
 
 > [!theorem] Proposition §4.4: The Saturation Correspondence
 > Let $\pi : X \to X/{\sim}$ be the projection. Then $W \mapsto \pi^{-1}(W)$ is a bijection from the subsets of $X/{\sim}$ onto the saturated subsets of $X$, with inverse $S \mapsto \pi(S)$, and it preserves unions, intersections and complements. Under it, the open subsets of $X/{\sim}$ correspond exactly to the saturated open subsets of $X$, and the closed subsets to the saturated closed subsets.
@@ -189,7 +189,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-4
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]
 
 > [!theorem] Proposition §4.5: Openness via Saturations
 > $\sim$ is open $\iff$ for every open $U \subseteq X$, the saturation $\tilde U = \pi^{-1}(\pi(U))$ is open in $X$.
@@ -201,12 +201,12 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-5
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]]
 
 > [!remark]- Connections
-> - Applied to orbit relations: [[§12 Group Actions and Orbit Spaces#^lem-12-3|Orbit Relations Are Open, §12.3]]; to cosets: [[§14 The Topology of G∕H and Real Grassmannians#^prop-14-1|§14.1]].
+> - Applied to orbit relations: [[§13 Group Actions and Orbit Spaces#^lem-13-3|Orbit Relations Are Open, §13.3]]; to cosets: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]].
 
-In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi(U))$ appearing in it; the notion is worth having on its own (it recurs for orbit spaces in [[§12 Group Actions and Orbit Spaces|§12]]), which is why it is defined first here, with its elementary properties.
+In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi(U))$ appearing in it; the notion is worth having on its own (it recurs for orbit spaces in [[§13 Group Actions and Orbit Spaces|§13]]), which is why it is defined first here, with its elementary properties.
 
 > [!remark] Remark: In Words
 > The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — “you push forward and then take the preimage.” [[§4 Quotient Spaces and Open Maps#^prop-4-5|Proposition §4.5]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-3|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
@@ -222,7 +222,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 *The diagonal construction in the proof below: each $A_j$ has some radius at every integer, and $W$ is chosen thinner than $A_j$ at the integer $j$, so the marked point $w_j \in A_j$ lies outside $W$.*
 
 > [!proof]+ Proof (PSet 1, Problem 4)
-> Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated—each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$—so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ ([[§4 Quotient Spaces and Open Maps#^def-4-4|Definition §4.4]] and [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]](4)).
+> Write $\pi : \mathbb{R} \to X$, so $\pi^{-1}(x_0) = \mathbb{Z}$ and $\pi^{-1}(\pi(x)) = \{x\}$ for $x \notin \mathbb{Z}$. Two preliminary facts. (i) If $V \subseteq X$ is a neighborhood of $x_0$, then $\pi^{-1}(V)$ is open in $\mathbb{R}$ and contains $\mathbb{Z}$. (ii) If $U \subseteq \mathbb{R}$ is open with $\mathbb{Z} \subseteq U$, then $U$ is saturated—each class is either $\mathbb{Z} \subseteq U$ or a singleton $\{x\} \subseteq U$—so $\pi^{-1}(\pi(U)) = U$ and $\pi(U)$ is a neighborhood of $x_0$ ([[§4 Quotient Spaces and Open Maps#^def-4-5|Definition §4.5]] and [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]](4)).
 >
 > Suppose $X$ were first countable at $x_0$, with $\{\widetilde U_j\}_{j \in \mathbb{N}}$ a countable basis of neighborhoods of $x_0$, and set $U_j = \pi^{-1}(\widetilde U_j)$, open with $\mathbb{Z} \subseteq U_j$ by (i). For each $j \in \mathbb{N}$ and $n \in \mathbb{Z}$, openness gives a radius $a_{j,n} \in (0, \tfrac14]$ with $(n - a_{j,n}, n + a_{j,n}) \subseteq U_j$; write $A_j = \bigcup_{n \in \mathbb{Z}} (n - a_{j,n}, n + a_{j,n}) \subseteq U_j$. (Radii are capped at $\tfrac14$ so that arms around distinct integers are disjoint: two of them reach out at most $\tfrac12 < 1$.)
 >
@@ -241,7 +241,7 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 
 ^pf-ex-4-4
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^prop-1-4|§1.4]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-7|Def. §1.7]], [[§1 Point-Set Topology Review#^prop-1-4|§1.4]]
 
 > [!remark]- Connections
 > - First and second countability in MATH 590: [[§22 Countability Axioms#^def-22-2|590 Def. §22.2]], [[§22 Countability Axioms#^def-22-3|590 Def. §22.3]].

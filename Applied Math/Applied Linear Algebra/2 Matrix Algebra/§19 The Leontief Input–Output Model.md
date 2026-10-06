@@ -17,7 +17,7 @@ Wassily Leontief's Nobel prize–winning input–output model asks whether an ec
 
 Suppose a nation's economy is divided into $n$ sectors that produce goods or services, and another part, the **open sector**, that only consumes. All quantities are measured in millions of dollars (prices held constant).
 
-> [!definition] Definition §22.1: Production, Final Demand and Consumption
+> [!definition] Definition §19.1: Production, Final Demand and Consumption
 > - The **production vector** $\mathbf{x}$ in $\mathbb{R}^n$ lists the output of each sector for one year.
 > - The **final demand vector** (or bill of final demands) $\mathbf{d}$ lists the values of the goods and services demanded from the sectors by the open sector: consumer demand, government consumption, surplus production, exports, and other external demands.
 > - The **unit consumption vector** $\mathbf{c}_j$ of sector $j$ lists the inputs that sector $j$ needs per unit of its output. The **consumption matrix** is $C = [\,\mathbf{c}_1 \ \cdots \ \mathbf{c}_n\,]$.
@@ -34,7 +34,7 @@ Suppose a nation's economy is divided into $n$ sectors that produce goods or ser
 
 Leontief asked whether there is a production level $\mathbf{x}$ at which the amounts produced exactly balance the total demand for that production: $\{\text{amount produced}\} = \{\text{intermediate demand}\} + \{\text{final demand}\}$.
 
-> [!definition] Definition §22.2: The Leontief Input–Output Model (Production Equation)
+> [!definition] Definition §19.2: The Leontief Input–Output Model (Production Equation)
 > The **Leontief input–output model**, or **production equation**, is
 >
 > $$
@@ -51,7 +51,7 @@ Leontief asked whether there is a production level $\mathbf{x}$ at which the amo
 
 ^def-19-2
 
-> [!example] Example §22.1: A Three-Sector Economy
+> [!example] Example §19.1: A Three-Sector Economy
 > An economy has three sectors, manufacturing, agriculture and services, with unit consumption vectors given by the inputs consumed per unit of output:
 >
 > | Purchased from: | Manufacturing | Agriculture | Services |
@@ -127,7 +127,7 @@ $$
 
 (In real life the rounds would not take place in such a rigid sequence.) To make sense of (6):
 
-> [!theorem] Proposition §22.1: The Matrix Geometric Sum
+> [!theorem] Proposition §19.1: The Matrix Geometric Sum
 > For any square matrix $C$ and any $m \ge 0$,
 >
 > $$
@@ -165,13 +165,13 @@ $$
 *Uses:* [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]], [[§16 Characterizations of Invertible Matrices#^cor-16-2|§16.2]], [[§80 Sequences#^thm-80-8|Calc Thm. §80.8]] ($s^m \to 0$), [[§81 Monotonic and Bounded Sequences#^thm-81-1|Calc Thm. §81.1]] (bounded monotonic sequences converge)
 
 > [!remark]- Connections
-> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§82 Series#^thm-82-1|Calc Thm. §82.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§26 Boundedness and Continuity#^def-26-2|556 Def. §26.2]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
+> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§82 Series#^thm-82-1|Calc Thm. §82.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§30 Boundedness and Continuity#^def-30-2|556 Def. §30.2]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
 
 In actual input–output models, powers of the consumption matrix approach the zero matrix rather quickly, so (8) is a practical way to compute $(I - C)^{-1}$. Likewise $C^m\mathbf{d} \to \mathbf{0}$ quickly for any $\mathbf{d}$, and (6) is a practical way to solve $(I - C)\mathbf{x} = \mathbf{d}$.
 
 If $I - C$ is invertible, [[§14 The Inverse of a Matrix#^thm-14-3|Theorem §14.3]] applied to (5) gives $\mathbf{x} = (I - C)^{-1}\mathbf{d}$. The next theorem shows that in most practical cases $I - C$ *is* invertible and the production vector is **economically feasible**: its entries are nonnegative.
 
-> [!theorem] Theorem §22.2: Feasible Production
+> [!theorem] Theorem §19.2: Feasible Production
 > Let $C$ be the consumption matrix for an economy, and let $\mathbf{d}$ be the final demand. If $C$ and $\mathbf{d}$ have nonnegative entries and if each column sum of $C$ is less than 1, then $(I - C)^{-1}$ exists and the production vector
 >
 > $$
@@ -201,7 +201,7 @@ If $I - C$ is invertible, [[§14 The Inverse of a Matrix#^thm-14-3|Theorem §14.
 
 The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must change when the final demand $\mathbf{d}$ changes. Since $\mathbf{x} = (I - C)^{-1}\mathbf{d}$ depends linearly on $\mathbf{d}$, increasing $\mathbf{d}$ by $\mathbf{e}_j$ increases $\mathbf{x}$ by $(I - C)^{-1}\mathbf{e}_j$: **the entries in column $j$ of $(I - C)^{-1}$ are the increased amounts the sectors must produce to satisfy an increase of 1 unit in the final demand for the output of sector $j$.** (Lay's Exercise 8.)
 
-> [!example] Example §22.2: The Inverse for the Three-Sector Economy
+> [!example] Example §19.2: The Inverse for the Three-Sector Economy
 > For the consumption matrix (3) of [[§19 The Leontief Input–Output Model#^ex-19-1|Example §19.1]], row reducing $[\,I - C \ \ I\,]$ (or using the inverse formula [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|Theorem §27.2]]) gives
 >
 > $$
@@ -228,7 +228,7 @@ The entries of $(I - C)^{-1}$ predict how the production $\mathbf{x}$ must chang
 
 ^ex-19-2
 
-> [!example] Example §22.3: Setting Up a Two-Sector Model
+> [!example] Example §19.3: Setting Up a Two-Sector Model
 > An economy has two sectors, goods and services. One unit of output from goods requires inputs of .2 unit from goods and .5 unit from services. One unit of output from services requires .4 unit from goods and .3 unit from services. There is a final demand of 20 units of goods and 30 units of services. Set up the Leontief model.
 >
 > The unit consumption vectors are the *columns*: $\mathbf{c}_{\text{goods}} = (.2, .5)$ and $\mathbf{c}_{\text{services}} = (.4, .3)$. The model is $\mathbf{x} = C\mathbf{x} + \mathbf{d}$ with

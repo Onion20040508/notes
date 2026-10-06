@@ -217,7 +217,7 @@ This proposition explains why the Jacobian determinant appears in the change of 
 > [!remark]- Connections
 > - Linear-algebra core: [[§37 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§37 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.
 > - In $\mathbb{R}^3$: the spherical volume element used in [[§33 The Laplacian in Spherical Coordinates|§33]]; for general dimension it underlies the [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ]] and, as pullback of $n$-forms, the [[Generalized Stokes' Theorem|Generalized Stokes' Theorem]].
-> - The smooth version of the diffeomorphisms allowed here is [[§16 Differentiable Structures#^def-16-3|591 Def. §16.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
+> - The smooth version of the diffeomorphisms allowed here is [[§17 Differentiable Structures#^def-17-3|591 Def. §17.3]], where diffeomorphisms of open subsets of ℝⁿ are the transition maps between charts.
 > - Computational version: [[§124 Change of Variables in Multiple Integrals#^thm-124-2|Calc Thm. §124.2]] (n = 3, with worked examples), with cylindrical and spherical coordinates in [[§122 Triple Integrals in Cylindrical Coordinates#^thm-122-1|Calc Thm. §122.1]] and [[§123 Triple Integrals in Spherical Coordinates#^thm-123-2|Calc Thm. §123.2]].
 > - The linear case, where the Jacobian is constant: [[§28 Determinants as Area or Volume#^thm-28-4|235 Thm. §28.4]] (with worked areas, n = 2, 3).
 

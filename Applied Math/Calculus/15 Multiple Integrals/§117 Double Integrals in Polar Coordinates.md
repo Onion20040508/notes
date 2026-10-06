@@ -25,7 +25,7 @@ $$
 
 ## Double Integrals in Polar Coordinates
 
-> [!definition] Definition §140.1: Polar Rectangle
+> [!definition] Definition §117.1: Polar Rectangle
 > A **polar rectangle** is a region of the form
 >
 > $$
@@ -44,7 +44,7 @@ $$
 
 ^def-117-1
 
-> [!theorem] Theorem §140.1: Change to Polar Coordinates in a Double Integral
+> [!theorem] Theorem §117.1: Change to Polar Coordinates in a Double Integral
 > If $f$ is continuous on a polar rectangle $R$ given by $0 \le a \le r \le b$, $\alpha \le \theta \le \beta$, where $0 \le \beta - \alpha \le 2\pi$, then
 >
 > $$
@@ -91,7 +91,7 @@ $$
 
 ^rem-117-1
 
-> [!example] Example §140.1: A Half-Ring
+> [!example] Example §117.1: A Half-Ring
 > Evaluate $\displaystyle\iint_R (3x + 4y^2)\,dA$, where $R$ is the region in the upper half-plane bounded by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
 > $R = \{(x, y) \mid y \ge 0,\ 1 \le x^2 + y^2 \le 4\}$ is the half-ring $1 \le r \le 2$, $0 \le \theta \le \pi$. By [[§117 Double Integrals in Polar Coordinates#^thm-117-1|Theorem §117.1]],
@@ -110,7 +110,7 @@ $$
 
 ^ex-117-1
 
-> [!example] Example §140.2: The Volume Between Two Paraboloids
+> [!example] Example §117.2: The Volume Between Two Paraboloids
 > Find the volume of the solid enclosed by the paraboloids $z = x^2 + y^2$ and $z = 4 - x^2 - y^2$.
 >
 > The paraboloids meet where $x^2 + y^2 = 4 - x^2 - y^2$, that is, $x^2 + y^2 = 2$. Over the disk $D$: $x^2 + y^2 \le 2$ the downward paraboloid is on top, so the volume is $\iint_D \big[ (4 - x^2 - y^2) - (x^2 + y^2) \big]\,dA$ (the volume under the top surface minus the volume under the bottom one). In polar coordinates $D$ is $0 \le r \le \sqrt2$, $0 \le \theta \le 2\pi$, and the height is $4 - 2r^2$:
@@ -125,7 +125,7 @@ $$
 
 ^ex-117-2
 
-> [!example] Example §140.3: Rewriting an Iterated Integral in Polar Coordinates
+> [!example] Example §117.3: Rewriting an Iterated Integral in Polar Coordinates
 > Rewrite $\displaystyle\int_0^{\sqrt2} \int_x^{\sqrt{4 - x^2}} x \sin\big((x^2 + y^2)^{3/2}\big)\,dy\,dx$ using polar coordinates, and evaluate it.
 >
 > **The region.** $0 \le x \le \sqrt2$ and $x \le y \le \sqrt{4 - x^2}$: above the line $y = x$, below the circle $x^2 + y^2 = 4$, and to the right of the $y$-axis. The line meets the circle at $(\sqrt2, \sqrt2)$, so the region is the sector $0 \le r \le 2$, $\pi/4 \le \theta \le \pi/2$.
@@ -150,7 +150,7 @@ $$
 
 What has been done for polar rectangles extends to regions that play the role of type II regions ([[§116 Double Integrals Over General Regions#^def-116-3|Definition §116.3]]) in polar coordinates.
 
-> [!theorem] Theorem §140.2: Integrals over Polar Regions
+> [!theorem] Theorem §117.2: Integrals over Polar Regions
 > If $f$ is continuous on a polar region of the form
 >
 > $$
@@ -180,7 +180,7 @@ What has been done for polar rectangles extends to regions that play the role of
 
 *Uses:* [[§117 Double Integrals in Polar Coordinates#^thm-117-1|§117.1]], [[§116 Double Integrals Over General Regions#^def-116-1|Def. §116.1]], [[§116 Double Integrals Over General Regions#^thm-116-2|§116.2]]
 
-> [!theorem] Corollary §140.3: Area of a Polar Region
+> [!theorem] Corollary §117.3: Area of a Polar Region
 > The area of the region $D$ bounded by $\theta = \alpha$, $\theta = \beta$ and $r = h(\theta)$ (with $h \ge 0$) is
 >
 > $$
@@ -204,7 +204,7 @@ What has been done for polar rectangles extends to regions that play the role of
 
 *Uses:* [[§117 Double Integrals in Polar Coordinates#^thm-117-2|§117.2]], [[§116 Double Integrals Over General Regions#^thm-116-5|§116.5]]
 
-> [!example] Example §140.4: One Loop of a Rose
+> [!example] Example §117.4: One Loop of a Rose
 > Use a double integral to find the area enclosed by one loop of the four-leaved rose $r = \cos 2\theta$.
 >
 > The loop along the positive $x$-axis is traced as $\theta$ runs from $-\pi/4$ to $\pi/4$ (where $\cos 2\theta = 0$), so it is the region

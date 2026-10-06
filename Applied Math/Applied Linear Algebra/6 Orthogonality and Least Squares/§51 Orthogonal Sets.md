@@ -15,14 +15,14 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ## Orthogonal Sets
 
-> [!definition] Definition §61.1: Orthogonal Set
+> [!definition] Definition §51.1: Orthogonal Set
 > A set of vectors $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ in $\mathbb{R}^n$ is an **orthogonal set** if each pair of distinct vectors from the set is orthogonal, that is, if $\mathbf{u}_i \cdot \mathbf{u}_j = 0$ whenever $i \ne j$.
 >
 > *Lay: 6.2 (text)*
 
 ^def-51-1
 
-> [!theorem] Theorem §61.1: Orthogonal Sets Are Linearly Independent
+> [!theorem] Theorem §51.1: Orthogonal Sets Are Linearly Independent
 > If $S = \{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an orthogonal set of nonzero vectors in $\mathbb{R}^n$, then $S$ is linearly independent and hence is a basis for the subspace spanned by $S$.
 >
 > *Lay: Theorem 4 (6.2)*
@@ -45,14 +45,14 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 *Uses:* [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|§49.1]], [[§8 Linear Independence#^def-8-1|Def. §8.1]] (linear independence), [[§21 Subspaces of ℝⁿ#^def-21-4|Def. §21.4]] (basis)
 
-> [!definition] Definition §61.2: Orthogonal Basis
+> [!definition] Definition §51.2: Orthogonal Basis
 > An **orthogonal basis** for a subspace $W$ of $\mathbb{R}^n$ is a basis for $W$ that is also an orthogonal set.
 >
 > *Lay: 6.2, Definition*
 
 ^def-51-2
 
-> [!theorem] Theorem §61.2: Coordinates in an Orthogonal Basis
+> [!theorem] Theorem §51.2: Coordinates in an Orthogonal Basis
 > Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ be an orthogonal basis for a subspace $W$ of $\mathbb{R}^n$. For each $\mathbf{y}$ in $W$, the weights in the linear combination
 >
 > $$
@@ -84,10 +84,10 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§21 Orthonormal Bases#^ladr-6-25|LADR 6.25]] (orthonormal lists are linearly independent) and [[§21 Orthonormal Bases#^ladr-6-30|LADR 6.30]] ($v = \langle v, e_1\rangle e_1 + \cdots + \langle v, e_n\rangle e_n$); Axler works with orthonormal lists, so the denominators $\mathbf{u}_j \cdot \mathbf{u}_j$ are $1$.
-> - In a Hilbert space the same coefficients give infinite expansions: [[§24 Orthonormal Sets and Bases#^prop-24-6|556 Prop. §24.6]], [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]].
+> - In a Hilbert space the same coefficients give infinite expansions: [[§27 Orthonormal Sets and Bases#^prop-27-6|556 Prop. §27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]].
 > - PDE version: [[§30 Expansion in Series of Eigenfunctions#^prop-30-1|341 Prop. §30.1]] (the same formula for the coefficients of an expansion in orthogonal eigenfunctions, with $\int f\phi_mp\,dx$ in place of the dot product); the Fourier case is [[§9 Periodic Functions and Fourier Series#^prop-9-4|341 Prop. §9.4]].
 
-> [!example] Example §61.1: An Orthogonal Basis of ℝ³
+> [!example] Example §51.1: An Orthogonal Basis of ℝ³
 > Let
 >
 > $$
@@ -130,7 +130,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ## An Orthogonal Projection
 
-> [!definition] Definition §62.1: Orthogonal Projection onto a Line
+> [!definition] Definition §51.3: Orthogonal Projection onto a Line
 > Let $\mathbf{u} \ne \mathbf{0}$ in $\mathbb{R}^n$ and $L = \operatorname{Span}\{\mathbf{u}\}$. For $\mathbf{y} \in \mathbb{R}^n$, the **orthogonal projection of $\mathbf{y}$ onto $\mathbf{u}$** (or **onto $L$**) is
 >
 > $$
@@ -143,7 +143,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^def-51-3
 
-> [!theorem] Proposition §61.3: Decomposing a Vector Along a Line
+> [!theorem] Proposition §51.3: Decomposing a Vector Along a Line
 > Let $\mathbf{u} \ne \mathbf{0}$ and $\mathbf{y}$ be vectors in $\mathbb{R}^n$. There is exactly one way to write
 >
 > $$
@@ -173,7 +173,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > - Stewart's vector projection $\operatorname{proj}_{\mathbf{a}} \mathbf{b} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|^2}\mathbf{a}$ in $\mathbb{R}^2$, $\mathbb{R}^3$: [[§95 The Dot Product#^def-95-5|Calc Def. §95.5]], [[§95 The Dot Product#^thm-95-6|Calc Thm. §95.6]].
 > - Rigorous treatment: [[§20 Inner Products and Norms#^ladr-6-13|LADR 6.13]] (an orthogonal decomposition $u = cv + w$ with $w \perp v$, the step in Axler's proof of Cauchy–Schwarz) and [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-56|LADR 6.56]] (projection onto a one-dimensional subspace).
 
-> [!example] Example §61.2: Projecting onto a Line
+> [!example] Example §51.2: Projecting onto a Line
 > Let $\mathbf{y} = \begin{bmatrix} 7 \\ 6 \end{bmatrix}$ and $\mathbf{u} = \begin{bmatrix} 4 \\ 2 \end{bmatrix}$. Find the orthogonal projection of $\mathbf{y}$ onto $\mathbf{u}$, write $\mathbf{y}$ as a sum of a vector in $L = \operatorname{Span}\{\mathbf{u}\}$ and a vector orthogonal to $\mathbf{u}$, and find the distance from $\mathbf{y}$ to $L$.
 >
 > **Projection.** $\mathbf{y} \cdot \mathbf{u} = 28 + 12 = 40$ and $\mathbf{u} \cdot \mathbf{u} = 16 + 4 = 20$, so
@@ -217,7 +217,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ## Orthonormal Sets
 
-> [!definition] Definition §62.3: Orthonormal Set; Orthonormal Basis
+> [!definition] Definition §51.4: Orthonormal Set; Orthonormal Basis
 > A set $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal set** if it is an orthogonal set of unit vectors. If $W$ is the subspace spanned by such a set, then $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an **orthonormal basis** for $W$; it is a basis because it is linearly independent by [[§51 Orthogonal Sets#^thm-51-1|Theorem §51.1]].
 >
 > The standard basis $\{\mathbf{e}_1, \ldots, \mathbf{e}_n\}$ of $\mathbb{R}^n$, and any nonempty subset of it, is orthonormal. Normalizing each vector of an orthogonal set of nonzero vectors produces an orthonormal set, since $\big(\frac{\mathbf{u}_i}{\|\mathbf{u}_i\|}\big) \cdot \big(\frac{\mathbf{u}_j}{\|\mathbf{u}_j\|}\big) = \frac{\mathbf{u}_i \cdot \mathbf{u}_j}{\|\mathbf{u}_i\|\,\|\mathbf{u}_j\|}$ is still $0$ for $i \ne j$.
@@ -226,7 +226,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^def-51-4
 
-> [!theorem] Theorem §61.4: Orthonormal Columns
+> [!theorem] Theorem §51.4: Orthonormal Columns
 > An $m \times n$ matrix $U$ has orthonormal columns if and only if $U^TU = I$.
 >
 > *Lay: Theorem 6 (6.2)*
@@ -246,7 +246,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 *Uses:* [[§12 Matrix Operations#^prop-12-4|§12.4]] (row–column rule for products), [[§51 Orthogonal Sets#^def-51-4|Def. §51.4]]
 
-> [!theorem] Theorem §62.1: Matrices with Orthonormal Columns Preserve Lengths and Angles
+> [!theorem] Theorem §51.5: Matrices with Orthonormal Columns Preserve Lengths and Angles
 > Let $U$ be an $m \times n$ matrix with orthonormal columns, and let $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$. Then
 >
 > a. $\|U\mathbf{x}\| = \|\mathbf{x}\|$
@@ -274,7 +274,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 *Uses:* [[§51 Orthogonal Sets#^thm-51-4|§51.4]], [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|§13.2]] ($(AB)^T = B^TA^T$)
 
-> [!example] Example §61.3: A Matrix with Orthonormal Columns Preserves Length
+> [!example] Example §51.3: A Matrix with Orthonormal Columns Preserves Length
 > Let
 >
 > $$
@@ -308,7 +308,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 ^def-51-5
 
-> [!theorem] Proposition §62.2: Characterizing Orthogonal Matrices
+> [!theorem] Proposition §51.6: Characterizing Orthogonal Matrices
 > For an $n \times n$ matrix $U$ the following are equivalent:
 >
 > 1. $U$ is an orthogonal matrix;
@@ -338,7 +338,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 > - Rigorous treatment: real orthogonal matrices are the real unitary matrices, [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (unitary $\Leftrightarrow$ $Q^*Q = I$ $\Leftrightarrow$ orthonormal columns $\Leftrightarrow$ orthonormal rows $\Leftrightarrow$ norm-preserving); operator version [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]]. Orthogonal matrices return in [[§58★ Diagonalization of Symmetric Matrices#^def-58-2|Definition §58.2]] (orthogonal diagonalization).
 > - The orthogonal matrices form the group $O(n) = \{A \in GL_n(\mathbb{R}) : A^TA = I\}$, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]], and $\det : O(n) \to \{\pm 1\}$ is a homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]) onto $\{\pm1\}$ with kernel $SO(n)$.
 
-> [!example] Example §62.1: An Orthogonal Matrix
+> [!example] Example §51.4: An Orthogonal Matrix
 > Let
 >
 > $$

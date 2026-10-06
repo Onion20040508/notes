@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definition §51.3]]) has an analogue for every subspace $W$ of $\mathbb{R}^n$. Each $\mathbf{y}$ splits uniquely as $\hat{\mathbf{y}} + \mathbf{z}$ with $\hat{\mathbf{y}} \in W$ and $\mathbf{z} \in W^\perp$, and $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ is computed from any orthogonal basis of $W$ as a sum of projections onto lines. The second main theorem says that $\hat{\mathbf{y}}$ is the point of $W$ closest to $\mathbf{y}$. With $W = \operatorname{Col} A$, these two properties solve the least-squares problem of [[§54 Least-Squares Problems|§54]].
 
-> [!example] Example §63.1: Splitting a Vector Along an Orthogonal Basis
+> [!example] Example §52.1: Splitting a Vector Along an Orthogonal Basis
 > Let $\{\mathbf{u}_1, \ldots, \mathbf{u}_5\}$ be an orthogonal basis of $\mathbb{R}^5$, $\mathbf{y} = c_1\mathbf{u}_1 + \cdots + c_5\mathbf{u}_5$, and $W = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$. Write $\mathbf{y}$ as a sum of a vector $\mathbf{z}_1 \in W$ and a vector $\mathbf{z}_2 \in W^\perp$.
 >
 > Group the terms:
@@ -36,7 +36,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 ## The Orthogonal Decomposition Theorem
 
-> [!theorem] Theorem §63.1: The Orthogonal Decomposition Theorem
+> [!theorem] Theorem §52.1: The Orthogonal Decomposition Theorem
 > Let $W$ be a subspace of $\mathbb{R}^n$. Then each $\mathbf{y}$ in $\mathbb{R}^n$ can be written uniquely in the form
 >
 > $$
@@ -78,7 +78,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 *Uses:* [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|§49.1]], [[§50 Orthogonal Complements and Angles#^thm-50-1|§50.1]], [[§53 The Gram–Schmidt Process#^cor-53-2|§53.2]]
 
-> [!definition] Definition §63.1: Orthogonal Projection onto a Subspace
+> [!definition] Definition §52.1: Orthogonal Projection onto a Subspace
 > The vector $\hat{\mathbf{y}}$ in (1) is the **orthogonal projection of $\mathbf{y}$ onto $W$**, written $\operatorname{proj}_W \mathbf{y}$. By the uniqueness in [[§52 Orthogonal Projections#^thm-52-1|Theorem §52.1]] it depends only on $W$, not on the orthogonal basis used in (2). When $W$ is one-dimensional, (2) has one term and agrees with [[§51 Orthogonal Sets#^def-51-3|Definition §51.3]].
 >
 > *Lay: 6.3 (text)*
@@ -87,9 +87,9 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$ for finite-dimensional $U$; $V$ itself may be infinite-dimensional) and the projection $P_U$ of [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]]; Axler proves existence from an orthonormal basis of $U$, exactly as here.
-> - In a Hilbert space the decomposition holds for every *closed* subspace, proved by the closest-point theorem instead of a basis: [[§22 Projection and Orthogonal Decomposition#^thm-22-4|556 Thm. §22.4]].
+> - In a Hilbert space the decomposition holds for every *closed* subspace, proved by the closest-point theorem instead of a basis: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|556 Thm. §25.4]].
 
-> [!example] Example §63.2: Decomposing a Vector in ℝ³
+> [!example] Example §52.2: Decomposing a Vector in ℝ³
 > Let
 >
 > $$
@@ -127,7 +127,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 ## Properties of Orthogonal Projections
 
-> [!theorem] Proposition §63.2: Projecting a Vector Already in W
+> [!theorem] Proposition §52.2: Projecting a Vector Already in W
 > If $\mathbf{y}$ is in $W = \operatorname{Span}\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$, then $\operatorname{proj}_W \mathbf{y} = \mathbf{y}$.
 >
 > *Lay: 6.3 (boxed fact)*
@@ -141,7 +141,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 *Uses:* [[§52 Orthogonal Projections#^thm-52-1|§52.1]], [[§51 Orthogonal Sets#^thm-51-2|§51.2]]
 
-> [!example] Example §63.3: A Projection That Returns the Vector
+> [!example] Example §52.3: A Projection That Returns the Vector
 > Let $\mathbf{u}_1 = (-7, 1, 4)$, $\mathbf{u}_2 = (-1, 1, -2)$, $\mathbf{y} = (-9, 1, 6)$ and $W = \operatorname{Span}\{\mathbf{u}_1, \mathbf{u}_2\}$. Since $\mathbf{u}_1 \cdot \mathbf{u}_2 = 7 + 1 - 8 = 0$, formula (2) applies:
 >
 > $$
@@ -158,7 +158,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 ^ex-52-3
 
-> [!theorem] Theorem §63.3: The Best Approximation Theorem
+> [!theorem] Theorem §52.3: The Best Approximation Theorem
 > Let $W$ be a subspace of $\mathbb{R}^n$, $\mathbf{y}$ any vector in $\mathbb{R}^n$, and $\hat{\mathbf{y}}$ the orthogonal projection of $\mathbf{y}$ onto $W$. Then $\hat{\mathbf{y}}$ is the closest point in $W$ to $\mathbf{y}$, in the sense that
 >
 > $$
@@ -193,7 +193,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 ![[m235-42-1.svg]]
 *The orthogonal projection $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ onto a plane $W$ through $\mathbf{0}$. The component $\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}}$ (red) is orthogonal to $W$ ([[§52 Orthogonal Projections#^thm-52-1|Theorem §52.1]]). For any other $\mathbf{v} \in W$, the triangle $\mathbf{y}, \hat{\mathbf{y}}, \mathbf{v}$ has a right angle at $\hat{\mathbf{y}}$, so its hypotenuse $\|\mathbf{y} - \mathbf{v}\|$ is longer than the leg $\|\mathbf{y} - \hat{\mathbf{y}}\|$ ([[§52 Orthogonal Projections#^thm-52-3|Theorem §52.3]]).*
 
-> [!definition] Definition §63.3: Best Approximation
+> [!definition] Definition §52.2: Best Approximation
 > The vector $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ is called the **best approximation to $\mathbf{y}$ by elements of $W$**.
 >
 > Thinking of $\|\mathbf{y} - \mathbf{v}\|$ as the "error" of using $\mathbf{v}$ in place of $\mathbf{y}$, [[§52 Orthogonal Projections#^thm-52-3|Theorem §52.3]] says that the error is smallest exactly for $\mathbf{v} = \hat{\mathbf{y}}$. This also gives a second proof that $\hat{\mathbf{y}}$ does not depend on the orthogonal basis used to compute it: whichever basis is used, the result is the unique closest point of $W$ to $\mathbf{y}$.
@@ -204,10 +204,10 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]] ($\|v - P_Uv\| \le \|v - u\|$, with equality only for $u = P_Uv$; same Pythagorean proof).
-> - For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§22 Projection and Orthogonal Decomposition#^thm-22-2|556 Thm. §22.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
+> - For a closed convex set in a Hilbert space, a closest point exists and is unique without any basis, [[§25 Projection and Orthogonal Decomposition#^thm-25-2|556 Thm. §25.2]]; for a closed subspace it is characterized by $\mathbf{y} - \hat{\mathbf{y}} \perp W$, as here.
 > - Fourier version: for the integral inner product of [[§56 Inner Product Spaces|§56]], the truncated Fourier series is the best mean-square approximation by [[§57 Applications of Inner Product Spaces#^def-57-3|trigonometric polynomials]], [[§15★ Mean Error and Convergence in Mean#^thm-15-2|341 Thm. §15.2]].
 
-> [!definition] Definition §63.4: Distance to a Subspace
+> [!definition] Definition §52.3: Distance to a Subspace
 > The **distance from a point $\mathbf{y}$ in $\mathbb{R}^n$ to a subspace $W$** is the distance from $\mathbf{y}$ to the nearest point in $W$; by [[§52 Orthogonal Projections#^thm-52-3|Theorem §52.3]] it equals $\|\mathbf{y} - \operatorname{proj}_W \mathbf{y}\|$.
 >
 > *Lay: 6.3 (text); Example 6.3.4*
@@ -234,7 +234,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 
 ^ex-52-4
 
-> [!theorem] Theorem §63.4: Projection with an Orthonormal Basis
+> [!theorem] Theorem §52.4: Projection with an Orthonormal Basis
 > If $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is an orthonormal basis for a subspace $W$ of $\mathbb{R}^n$, then
 >
 > $$

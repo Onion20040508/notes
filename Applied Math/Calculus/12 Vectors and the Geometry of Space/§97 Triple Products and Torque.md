@@ -15,7 +15,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 
 ## Triple Products
 
-> [!definition] Definition §114.1: Scalar Triple Product
+> [!definition] Definition §97.1: Scalar Triple Product
 > The product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ of Property 5 is the **scalar triple product** of $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$.
 >
 > *Stewart: 12.4 (text)*
@@ -36,7 +36,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 
 ^def-97-3
 
-> [!theorem] Theorem §114.1: The Scalar Triple Product as a Determinant
+> [!theorem] Theorem §97.1: The Scalar Triple Product as a Determinant
 > $$
 > \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix} .
 > $$
@@ -52,7 +52,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 
 *Uses:* [[§96 The Cross Product#^thm-96-8|§96.8]], [[§96 The Cross Product#^def-96-2|Def. §96.2]]
 
-> [!theorem] Theorem §114.2: Volume of a Parallelepiped
+> [!theorem] Theorem §97.2: Volume of a Parallelepiped
 > The volume of the parallelepiped determined by the vectors $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$ is the magnitude of their scalar triple product:
 >
 > $$
@@ -82,7 +82,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 > - Together with [[§97 Triple Products and Torque#^thm-97-1|Theorem §97.1]]: $|\det|$ of the matrix with rows $\mathbf{a}, \mathbf{b}, \mathbf{c}$ is the volume of the image of the unit cube, the case $n = 3$ of [[§37 Determinants#^ladr-9-61|LADR 9.61]] ($T$ changes volume by the factor $|\det T|$); the general determinant formula is [[§37 Determinants#^ladr-9-46|LADR 9.46]].
 > - Matrix version, also of [[§96 The Cross Product#^cor-96-6|Corollary §96.6]]: [[§28 Determinants as Area or Volume#^thm-28-2|235 Thm. §28.2]] (area and volume as $|\det A|$ for the matrix with columns the edge vectors, proved by column operations), worked in [[§28 Determinants as Area or Volume#^ex-28-1|235 Ex. §28.1]].
 
-> [!example] Example §114.1: Triple Products by the Rules
+> [!example] Example §97.1: Triple Products by the Rules
 > Let $\mathbf{a} = \mathbf{i} + \mathbf{j} + \mathbf{k}$, $\mathbf{b} = 3\mathbf{i} - 2\mathbf{j} + \mathbf{k}$, $\mathbf{c} = \mathbf{j} - 5\mathbf{k}$. Find $|\mathbf{b} \times \mathbf{c}|$, $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$, $\mathbf{c} \times \mathbf{c}$ and $\mathbf{a} \times (\mathbf{b} \times \mathbf{c})$.
 >
 > $$
@@ -101,7 +101,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 
 ^ex-97-1
 
-> [!example] Example §114.2: Coplanar Vectors and a Volume
+> [!example] Example §97.2: Coplanar Vectors and a Volume
 > **(a)** Show that $\mathbf{a} = \langle 1, 4, -7 \rangle$, $\mathbf{b} = \langle 2, -1, 4 \rangle$, $\mathbf{c} = \langle 0, -9, 18 \rangle$ are coplanar. By [[§97 Triple Products and Torque#^thm-97-1|Theorem §97.1]],
 >
 > $$
@@ -128,8 +128,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 > [!remark] Remark: The Vector Triple Product and Kepler
 > Property 6 is used in [[§104 Motion in Space꞉ Velocity and Acceleration#^thm-104-6|Theorem §104.6]] to derive Kepler's First Law of planetary motion.
 
-^rem-97-4
-
+^rem-97-1
 ## Application: Torque
 
 > [!definition] Definition §97.4: Torque
@@ -145,7 +144,7 @@ The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ is a
 
 ^def-97-4
 
-> [!example] Example §114.3: Tightening a Bolt
+> [!example] Example §97.3: Tightening a Bolt
 > A bolt is tightened by applying a $40$-N force to a $0.25$-m wrench, at an angle of $75^\circ$ to the wrench. The magnitude of the torque about the center of the bolt is
 >
 > $$

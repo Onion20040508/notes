@@ -15,7 +15,7 @@ A discrete dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$ describes a state
 
 Until [[§45 Discrete Dynamical Systems#^ex-45-4|Example §45.4]] we assume that $A$ is diagonalizable, with $n$ linearly independent eigenvectors $\mathbf{v}_1, \ldots, \mathbf{v}_n$ and corresponding eigenvalues $\lambda_1, \ldots, \lambda_n$, arranged so that $|\lambda_1| \ge |\lambda_2| \ge \cdots \ge |\lambda_n|$.
 
-> [!theorem] Theorem §55.1: The Eigenvector Decomposition of a Solution
+> [!theorem] Theorem §45.1: The Eigenvector Decomposition of a Solution
 > Let $A$ be as above. Since $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ is a basis for $\mathbb{R}^n$, any initial vector can be written uniquely as
 >
 > $$
@@ -47,7 +47,7 @@ Until [[§45 Discrete Dynamical Systems#^ex-45-4|Example §45.4]] we assume that
 
 ## A Predator–Prey System
 
-> [!example] Example §55.1: Owls and Wood Rats
+> [!example] Example §45.1: Owls and Wood Rats
 > Deep in the redwood forests of California, dusky-footed wood rats provide up to $80\%$ of the diet of the spotted owl, their main predator. Let $\mathbf{x}_k = \begin{bmatrix} O_k \\ R_k \end{bmatrix}$, where $k$ is the time in months, $O_k$ is the number of owls in the region and $R_k$ the number of rats (in thousands). Suppose
 >
 > $$
@@ -79,7 +79,7 @@ Until [[§45 Discrete Dynamical Systems#^ex-45-4|Example §45.4]] we assume that
 
 ^ex-45-1
 
-> [!theorem] Proposition §55.2: The Dominant Eigenvalue Determines the Long-Term Behavior
+> [!theorem] Proposition §45.2: The Dominant Eigenvalue Determines the Long-Term Behavior
 > Let $A$ be diagonalizable as above, with $|\lambda_1| > |\lambda_j|$ for $j = 2, \ldots, n$, and let $\mathbf{x}_0$ be given by (1) with $c_1 \ne 0$. Then, as $k \to \infty$,
 >
 > $$
@@ -131,14 +131,14 @@ The case $\lambda_1 = 1$ is [[§41 The Characteristic Equation#^ex-41-4|Example 
 
 When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what happens to an initial point $\mathbf{x}_0$ in $\mathbb{R}^2$ as it is transformed repeatedly by $\mathbf{x} \mapsto A\mathbf{x}$.
 
-> [!definition] Definition §55.1: Trajectory
+> [!definition] Definition §45.1: Trajectory
 > The graph of $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ is called a **trajectory** of the dynamical system $\mathbf{x}_{k+1} = A\mathbf{x}_k$.
 >
 > *Lay: 5.6 (text)*
 
 ^def-45-1
 
-> [!definition] Definition §55.3: Attractor, Repeller, Saddle Point
+> [!definition] Definition §45.2: Attractor, Repeller, Saddle Point
 > The origin is
 > - an **attractor** of the system if all trajectories tend toward $\mathbf{0}$;
 > - a **repeller** if all solutions except the (constant) zero solution are unbounded and tend away from the origin;
@@ -176,7 +176,7 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 > [!remark]- Connections
 > - ODE version: [[§38 Complex-Valued Eigenvalues#^thm-38-3|331 Thm. §38.3]], the classification of the origin for $\mathbf{x}' = A\mathbf{x}$ (saddle point, node, spiral point, center), where the sign of the real part of each eigenvalue plays the role of $|\lambda|$ compared with $1$. The $1 \times 1$ case $y_{k+1} = \rho y_k$: the solution $\rho^ky_0$ tends to $0$ for every $y_0$ exactly when $|\rho| < 1$, [[§15★ First-Order Difference Equations#^prop-15-1|331 Prop. §15.1]].
 
-> [!example] Example §55.2: Attractor, Repeller and Saddle Point for Diagonal Matrices
+> [!example] Example §45.2: Attractor, Repeller and Saddle Point for Diagonal Matrices
 > **(a) Attractor.** $A = \begin{bmatrix} .80 & 0 \\ 0 & .64 \end{bmatrix}$ has eigenvalues $.8$ and $.64$ with eigenvectors $\mathbf{v}_1 = (1, 0)$, $\mathbf{v}_2 = (0, 1)$. If $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, then
 >
 > $$
@@ -237,7 +237,7 @@ The diagonal case is the general one in disguise. Let $A = PDP^{-1}$ with $P = [
 
 The evolution of $y_1(k)$, for example, is unaffected by what happens to $y_2(k), \ldots, y_n(k)$. We can decouple $\mathbf{x}_{k+1} = A\mathbf{x}_k$ by computing in the eigenvector coordinate system; when $n = 2$, this amounts to using graph paper with axes in the directions of the two eigenvectors.
 
-> [!example] Example §55.3: A Saddle Point in Eigenvector Coordinates
+> [!example] Example §45.3: A Saddle Point in Eigenvector Coordinates
 > Show that the origin is a saddle point for solutions of $\mathbf{x}_{k+1} = A\mathbf{x}_k$, where $A = \begin{bmatrix} 1.25 & -.75 \\ -.75 & 1.25 \end{bmatrix}$, and find the directions of greatest attraction and greatest repulsion.
 >
 > $\det(A - \lambda I) = (1.25 - \lambda)^2 - .5625$, which is $0$ when $1.25 - \lambda = \pm .75$: the eigenvalues are $2$ and $.5$. Eigenvectors: $A\begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 2 \\ -2 \end{bmatrix}$ and $A\begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} .5 \\ .5 \end{bmatrix}$, so $\mathbf{v}_1 = (1, -1)$ for $\lambda = 2$ and $\mathbf{v}_2 = (1, 1)$ for $\lambda = .5$. Since $|2| > 1$ and $|.5| < 1$, the origin is a saddle point ([[§45 Discrete Dynamical Systems#^prop-45-3|Proposition §45.3]]). If $\mathbf{x}_0 = c_1\mathbf{v}_1 + c_2\mathbf{v}_2$, then

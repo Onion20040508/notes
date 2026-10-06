@@ -21,6 +21,7 @@ tags: [chapter, complex-variables]
 - [[§131★ Fluid Flow in a Channel through a Slit]] — B&C Sec. 131 ★
 - [[§132★ Flow in a Channel with an Offset]] — B&C Sec. 132 ★
 - [[§133★ Electrostatic Potential about an Edge of a Conducting Plate]] — B&C Sec. 133 ★
+- [[§133a The Square, the Equilateral Triangle and the Step]] — B&C Sec. 133
 
 ## Central results
 - [[Schwarz–Christoffel Transformation]] (§128.4)

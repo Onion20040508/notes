@@ -15,21 +15,21 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ## Markov Chains
 
-> [!definition] Definition §46.1: Probability Vector
+> [!definition] Definition §38.1: Probability Vector
 > A **probability vector** is a vector with nonnegative entries that add up to $1$.
 >
 > *Lay: 4.9 (text)*
 
 ^def-38-1
 
-> [!definition] Definition §46.2: Stochastic Matrix
+> [!definition] Definition §38.2: Stochastic Matrix
 > A **stochastic matrix** is a square matrix whose columns are probability vectors.
 >
 > *Lay: 4.9 (text)*
 
 ^def-38-2
 
-> [!definition] Definition §46.3: Markov Chain; State Vector
+> [!definition] Definition §38.3: Markov Chain; State Vector
 > A **Markov chain** is a sequence of probability vectors $\mathbf{x}_0, \mathbf{x}_1, \mathbf{x}_2, \ldots$ together with a stochastic matrix $P$ such that
 >
 > $$
@@ -48,7 +48,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^def-38-3
 
-> [!theorem] Proposition §46.1: Stochastic Matrices Preserve Probability Vectors
+> [!theorem] Proposition §38.1: Stochastic Matrices Preserve Probability Vectors
 > Let $P$ be an $n \times n$ stochastic matrix and $S = [1\ 1\ \cdots\ 1]$ the $1 \times n$ row of ones.
 > 1. A vector $\mathbf{x} \in \mathbb{R}^n$ is a probability vector if and only if its entries are nonnegative and $S\mathbf{x} = 1$; and $SP = S$.
 > 2. If $\mathbf{x}$ is a probability vector, so is $P\mathbf{x}$. Every power $P^k$ is stochastic.
@@ -74,7 +74,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^rem-38-1
 
-> [!example] Example §46.1: Migration Between a City and Its Suburbs
+> [!example] Example §38.1: Migration Between a City and Its Suburbs
 > Section 1.10 ([[§11 Linear Models in Business, Science, and Engineering#^ex-11-3|Example §11.3]]) modeled the population movement between a city and its suburbs with the *migration matrix*
 >
 > $$
@@ -105,7 +105,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 ^ex-38-1
 
-> [!example] Example §46.2: Voting Patterns
+> [!example] Example §38.2: Voting Patterns
 > The outcome of a congressional election at a voting precinct is recorded every two years by a vector $\mathbf{x} \in \mathbb{R}^3$ listing the fractions voting Democratic (D), Republican (R) and Libertarian (L). If the outcome of one election depends only on the preceding one, the sequence of these vectors may be a Markov chain. Take the stochastic matrix
 >
 > $$
@@ -138,7 +138,7 @@ A Markov chain models an experiment or measurement repeated many times in the sa
 
 The most interesting aspect of a Markov chain is its long-term behavior: what happens to the voting after many elections, or to the population distribution "in the long run"?
 
-> [!example] Example §46.3: A Chain That Settles Down
+> [!example] Example §38.3: A Chain That Settles Down
 > Let $P = \begin{bmatrix} .5 & .2 & .3 \\ .3 & .8 & .3 \\ .2 & 0 & .4 \end{bmatrix}$ and $\mathbf{x}_0 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}$. What happens to the system $\mathbf{x}_{k+1} = P\mathbf{x}_k$ as time passes?
 >
 > $$
@@ -191,7 +191,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 
 ^def-38-4
 
-> [!theorem] Proposition §46.2: Every Stochastic Matrix Has a Steady-State Vector
+> [!theorem] Proposition §38.2: Every Stochastic Matrix Has a Steady-State Vector
 > Let $P$ be an $n \times n$ stochastic matrix. Then $P\mathbf{x} = \mathbf{x}$ has a nontrivial solution, and in fact $P$ has a steady-state vector.
 >
 > *Lay: 4.9 (text, "it can be shown"); Exercise 17*
@@ -280,7 +280,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > [!remark]- Connections
 > - Convergence of a vector sequence is convergence of each entry as a sequence of numbers, [[§80 Sequences#^def-80-2|Calc Def. §80.2]] (precise form [[§80 Sequences#^def-80-3|Calc Def. §80.3]]).
 
-> [!theorem] Theorem §46.3: Convergence to the Steady State
+> [!theorem] Theorem §38.3: Convergence to the Steady State
 > If $P$ is an $n \times n$ regular stochastic matrix, then $P$ has a unique steady-state vector $\mathbf{q}$. Further, if $\mathbf{x}_0$ is any initial state and $\mathbf{x}_{k+1} = P\mathbf{x}_k$ for $k = 0, 1, 2, \ldots$, then the Markov chain $\{\mathbf{x}_k\}$ converges to $\mathbf{q}$ as $k \to \infty$.
 >
 > *Lay: Theorem 18 (4.9)*

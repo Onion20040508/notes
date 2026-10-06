@@ -22,13 +22,14 @@ tags: [chapter, calculus]
 - [[§56 Integration Using Tables and Technology]] — Stewart 7.6
 - [[§57 Approximate Integration]] — Stewart 7.7
 - [[§58 Improper Integrals]] — Stewart 7.8
+- [[§59 The Integral of 1∕x from 1 to 2]] — Stewart 7.8
 
 ## Central results
-- [[Integration by Parts]] (§44.1)
+- [[Integration by Parts]] (§51.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
+- [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-2|Theorem §54.2: Factorization over the Reals]]: 11 later results
 - [[§52 Trigonometric Integrals#^thm-52-1|Theorem §52.1: Half-Angle Identities]]: 10 later results
-- [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-3|Theorem §54.3: Partial Fraction Decomposition]]: 6 later results
+- [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-3|Theorem §54.3: Partial Fraction Decomposition]]: 10 later results
 - [[§52 Trigonometric Integrals#^thm-52-3|Theorem §52.3: Integral of Secant]]: 3 later results
-- [[§53 Trigonometric Substitution#^thm-53-1|Theorem §53.1: Inverse Substitution Rule]]: 3 later results

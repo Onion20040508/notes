@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Least Upper Bound Property and Linear Continuum
 
-> [!definition] Definition §19.1: Least Upper Bound Property
+> [!definition] Definition §16.1: Least Upper Bound Property
 > An [[§3 Order Topology#^def-3-1|ordered set]] $A$ has the **least upper bound property** (l.u.b. property) if every nonempty $A_0 \subseteq A$ that is bounded above has a least upper bound (called $\sup$) in $A$.
 
 ^def-16-1
@@ -18,12 +18,12 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - For $\mathbb{R}$ this is the [[Completeness Axiom]] of MATH 451.
 
-> [!example] Example §19.1
+> [!example] Example §16.1
 > $\mathbb{R}$ has the l.u.b. property, so does $(0, 1)$.
 
 ^ex-16-1
 
-> [!example] Example §19.2
+> [!example] Example §16.2
 > $A = (0, 1) \cup (1, 2)$ does not have the l.u.b. property. (Take $A_0 = (0, 1)$.)
 
 ^ex-16-2
@@ -33,7 +33,7 @@ tags: [topology, math590]
 
 ^ex-16-3
 
-> [!definition] Definition §19.2: Linear Continuum
+> [!definition] Definition §16.2: Linear Continuum
 > A [[§3 Order Topology#^def-3-1|simply ordered set]] $L$ having more than one element is called a **linear continuum** if:
 >
 > 1. $L$ has the l.u.b. property.
@@ -61,7 +61,7 @@ tags: [topology, math590]
 
 ## Connectedness of Linear Continua
 
-> [!theorem] Theorem §19.1: Linear Continuum is Connected
+> [!theorem] Theorem §16.1: Linear Continuum is Connected
 > If $L$ is a linear continuum, with [[§3 Order Topology#^def-3-4|order topology]] on it, $L$ is [[§15 Connected Spaces#^def-15-2|connected]], so are the intervals and rays in $L$.
 
 ^thm-16-1
@@ -89,7 +89,7 @@ tags: [topology, math590]
 
 *Uses:* [[§16 Connected Subspaces of ℝ#^def-16-2|Def. §16.2]]
 
-> [!theorem] Corollary §19.4
+> [!theorem] Corollary §16.2
 > $\mathbb{R}$ is connected, so are intervals in $\mathbb{R}$. (Convex: $\forall a, b \in Y$, $[a, b] \subseteq Y$.)
 
 ^cor-16-2
@@ -103,7 +103,7 @@ tags: [topology, math590]
 
 ## Intermediate Value Theorem
 
-> [!theorem] Theorem §19.2: Intermediate Value Theorem
+> [!theorem] Theorem §16.3: Intermediate Value Theorem
 > Let $f: X \to Y$ be a continuous map, $X$ is [[§15 Connected Spaces#^def-15-2|connected]], $Y$ has [[§3 Order Topology#^def-3-4|order topology]]. If $a, b \in X$, and $f(a) < r < f(b)$ for some $r \in Y$, then there exists $c \in X$ such that $f(c) = r$.
 
 ^thm-16-3
@@ -150,7 +150,7 @@ tags: [topology, math590]
 
 ## Path-Connectedness
 
-> [!definition] Definition §19.3: Path
+> [!definition] Definition §16.3: Path
 > Given $x, y \in X$, a **path** from $x$ to $y$ is a continuous map $f: [a, b] \to X$ such that $f(a) = x$, $f(b) = y$.
 
 ^def-16-3
@@ -188,7 +188,7 @@ tags: [topology, math590]
 
 *Chain (punctured plane): later in [[§30 The Punctured Plane and the Torus|Chapter 8]] · [[Punctured plane|all appearances]]*
 
-> [!theorem] Theorem §19.3: Path-Connected Implies Connected
+> [!theorem] Theorem §16.4: Path-Connected Implies Connected
 > [[§16 Connected Subspaces of ℝ#^def-16-4|Path-connected]] $\Rightarrow$ [[§15 Connected Spaces#^def-15-2|connected]].
 
 ^thm-16-4

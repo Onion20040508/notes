@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§23 The Dominated Convergence Theorem#^thm-23-3]]
 
 ## Treated in
-- [[§23 The Dominated Convergence Theorem#^thm-23-3|Theorem §23.3: Dominated Convergence Theorem (DCT)]], in [[§22 The General Lebesgue Integral]]
+- [[§23 The Dominated Convergence Theorem#^thm-23-3|Theorem §23.3: Dominated Convergence Theorem (DCT)]], in [[§23 The Dominated Convergence Theorem]]
 
 ## Its proof uses
 - [[§17 Simple Functions and Modes of Convergence#^rem-17-7|Remark: A.e. Convergence Preserves Measurability]]

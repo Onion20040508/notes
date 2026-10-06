@@ -11,7 +11,7 @@ tags: [multivariable-analysis, math452]
 
 Throughout, assume $D$ is bounded and Jordan measurable, and all functions are integrable on $D$. In the proofs, $S_{\mathcal{T}}^+(f)$ and $S_{\mathcal{T}}^-(f)$ denote the upper and lower sums $U(f, \mathcal{T})$ and $L(f, \mathcal{T})$ of [[§21 The Definition of the Integral#^def-21-2|Def. §21.2]] and [[§21 The Definition of the Integral#^def-21-3|Def. §21.3]].
 
-> [!theorem] Theorem §37.1: Scalar Multiplication
+> [!theorem] Theorem §22.1: Scalar Multiplication
 > If $f$ is integrable on $D$ and $c \in \mathbb{R}$, then $cf$ is integrable on $D$ and:
 >
 > $$
@@ -52,7 +52,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 > [!remark]- Connections
 > - Computational version: [[§116 Double Integrals Over General Regions#^thm-116-3|Calc Thm. §116.3]] (linearity and comparison).
 
-> [!theorem] Theorem §38.1: Additivity in the Integrand
+> [!theorem] Theorem §22.2: Additivity in the Integrand
 > If $f$ and $g$ are integrable on $D$, then $f + g$ is integrable on $D$ and:
 >
 > $$
@@ -118,7 +118,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 > - Together with [[§22 Properties of the Integral#^thm-22-1|Theorem §22.1]], the 2D version of [[§33 Properties of the Riemann Integral#^thm-33-2|Linearity]] (451 §33.2).
 > - Computational version: [[§116 Double Integrals Over General Regions#^thm-116-3|Calc Thm. §116.3]] (linearity and comparison).
 
-> [!theorem] Theorem §38.2: Additivity over Domains
+> [!theorem] Theorem §22.3: Additivity over Domains
 > Let $A$ and $B$ be Jordan measurable, almost disjoint sets. If $f$ is integrable on $A$, $B$, and $A \cup B$, then:
 >
 > $$
@@ -176,7 +176,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 
 ### Comparison / Mean-Value Property
 
-> [!theorem] Theorem §38.3: Comparison Theorem
+> [!theorem] Theorem §22.4: Comparison Theorem
 > If $f$ and $g$ are integrable on $D$ and $f \leq g$ on $D$, then:
 >
 > $$
@@ -208,7 +208,7 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 > - 1D version: [[§33 Properties of the Riemann Integral#^thm-33-3|Monotonicity of the Integral]] (451 §33.3).
 > - Computational version: [[§116 Double Integrals Over General Regions#^thm-116-3|Calc Thm. §116.3]] (linearity and comparison).
 
-> [!theorem] Corollary §38.4: Absolute Value Inequality
+> [!theorem] Corollary §22.5: Absolute Value Inequality
 > If $f$ is integrable on $D$, then $|f|$ is integrable and:
 >
 > $$
@@ -259,7 +259,7 @@ $$
 
 ### Change of Variables: Polar Coordinates
 
-> [!theorem] Theorem §39.1: Change of Variables to Polar Coordinates
+> [!theorem] Theorem §22.6: Change of Variables to Polar Coordinates
 > Let $D^* = \{(r, \theta) : a \leq r \leq b, \alpha \leq \theta \leq \beta\}$, with $0 \leq a < b$ and $\alpha < \beta \leq \alpha + 2\pi$, be a region in polar coordinates, and let $D \subseteq \mathbb{R}^2$ be its image under the transformation $x = r\cos\theta$, $y = r\sin\theta$.
 >
 > If $f$ is continuous on $D$, then:

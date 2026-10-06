@@ -71,7 +71,7 @@ where $a_n$ and $b_n$ are arbitrary: there are two independent solutions. This i
 
 ^def-38-1
 
-> [!theorem] Proposition §47.1: Standing Waves Solve the Homogeneous Problem
+> [!theorem] Proposition §38.1: Standing Waves Solve the Homogeneous Problem
 > For any constants $a_n$ and $b_n$, the standing wave $u_n(x, t)$ of (8) satisfies the wave equation (1) and the boundary conditions (2).
 >
 > *Powers: 3.2 (text); Exercise 3.2.1*
@@ -99,7 +99,7 @@ where $a_n$ and $b_n$ are arbitrary: there are two independent solutions. This i
 
 By the principle of superposition ([[§25 Example꞉ Fixed End Temperatures#^thm-25-4|Theorem §25.4]]), every finite linear combination of the $u_n$ also satisfies (1) and (2); the combination needs no new constants because the $a_n$ and $b_n$ are arbitrary. Taking an infinite series and requiring the initial conditions leads to the solution.
 
-> [!theorem] Theorem §47.2: Series Solution of the Vibrating String Problem
+> [!theorem] Theorem §38.2: Series Solution of the Vibrating String Problem
 > Let $f$ and $g$ be sectionally smooth on $0 < x < a$. The solution of the vibrating string problem (1)–(4) is
 >
 > $$
@@ -168,7 +168,7 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 
 ^rem-38-1
 
-> [!example] Example §47.1: The Plucked String
+> [!example] Example §38.1: The Plucked String
 > The string is lifted at the middle to height $h$ and released ([[§37 The Vibrating String#^ex-37-3|Example §37.3(a)]]):
 >
 > $$
@@ -248,7 +248,7 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 
 Formula (13) gives $u$ without summing a series, for any $f$, as long as $g \equiv 0$. [[§39 d'Alembert's Solution#^thm-39-3|Theorem §39.3]] generalizes it to any $g$.
 
-> [!example] Example §47.2: The Midterm Problem by Separation of Variables
+> [!example] Example §38.2: The Midterm Problem by Separation of Variables
 > Solve
 >
 > $$
@@ -294,7 +294,7 @@ Formula (13) gives $u$ without summing a series, for any $f$, as long as $g \equ
 
 ^ex-38-2
 
-> [!example] Example §47.3: The Struck Piano String
+> [!example] Example §38.3: The Struck Piano String
 > A hammer strikes the middle of a piano string at rest ([[§37 The Vibrating String#^ex-37-3|Example §37.3(b)]]):
 >
 > $$

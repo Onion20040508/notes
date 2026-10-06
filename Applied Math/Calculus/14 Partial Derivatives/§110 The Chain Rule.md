@@ -15,7 +15,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 
 ## The Chain Rule: Case 1
 
-> [!theorem] Theorem §130.1: The Chain Rule (Case 1)
+> [!theorem] Theorem §110.1: The Chain Rule (Case 1)
 > Suppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$ ([[§109 Tangent Planes and Linear Approximations#^def-109-4|Definition §109.4]]), where $x = g(t)$ and $y = h(t)$ are both differentiable functions of $t$. Then $z$ is a differentiable function of $t$ and
 >
 > $$
@@ -61,7 +61,7 @@ Notice the similarity with the differential $dz = \frac{\partial z}{\partial x}\
 > [!remark]- Connections
 > - Rigorous treatment: [[§8 Algebra of Differentiable Functions#^thm-8-7|452 Thm. §8.7]] (differentiable inner and outer functions, by the same expansion) and [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]] (under continuity of the partials); hub [[Multivariable Chain Rule]]. In matrix form it says that the derivative of a composite is the product of the Jacobian matrices ([[§7 Differentiability#^def-7-3|452 Def. §7.3]]).
 
-> [!example] Example §130.1: Case 1
+> [!example] Example §110.1: Case 1
 > **(a)** If $z = x^2 y + 3xy^4$, where $x = \sin 2t$ and $y = \cos t$, find $dz/dt$ when $t = 0$.
 >
 > $$
@@ -95,7 +95,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 
 ## The Chain Rule: Case 2
 
-> [!theorem] Theorem §130.2: The Chain Rule (Case 2)
+> [!theorem] Theorem §110.2: The Chain Rule (Case 2)
 > Suppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$, where $x = g(s, t)$ and $y = h(s, t)$ are differentiable functions of $s$ and $t$. Then
 >
 > $$
@@ -132,7 +132,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 ![[m233-94-1.svg]]
 *The tree diagram for Case 2. Each path from $z$ down to $s$ (red) contributes the product of the derivatives on its branches; adding the two products gives $\partial z / \partial s$. The paths to $t$ (blue) give $\partial z / \partial t$.*
 
-> [!example] Example §130.2: Case 2 at a Point
+> [!example] Example §110.2: Case 2 at a Point
 > Let $f(x, y) = x^2 - 2xy + 3y + y^2$, where $x = st^2$ and $y = e^{s - t}$. Find $\partial f / \partial s$ and $\partial f / \partial t$ at $s = 2$, $t = 1$.
 >
 > **At the point.** When $s = 2$ and $t = 1$: $x = 2 \cdot 1^2 = 2$ and $y = e^{2 - 1} = e$.
@@ -166,7 +166,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 
 ## The Chain Rule: General Version
 
-> [!theorem] Theorem §131.1: The Chain Rule (General Version)
+> [!theorem] Theorem §110.3: The Chain Rule (General Version)
 > Suppose that $u$ is a differentiable function of the $n$ variables $x_1, x_2, \ldots, x_n$ and each $x_j$ is a differentiable function of the $m$ variables $t_1, t_2, \ldots, t_m$. Then $u$ is a function of $t_1, t_2, \ldots, t_m$ and
 >
 > $$
@@ -202,7 +202,7 @@ $$
 $$
 and similarly for $\partial w / \partial v$; the tree diagram has four branches from $w$, each splitting into $u$ and $v$ (Stewart, Example 14.5.4).
 
-> [!example] Example §130.3: Three Intermediate Variables
+> [!example] Example §110.3: Three Intermediate Variables
 > If $u = x^4 y + y^2 z^3$, where $x = rse^t$, $y = rs^2 e^{-t}$ and $z = r^2 s \sin t$, find the value of $\partial u / \partial s$ when $r = 2$, $s = 1$, $t = 0$.
 >
 > The tree diagram has branches from $u$ to $x$, $y$, $z$, and from each of these to $r$, $s$, $t$. Following the three paths from $u$ to $s$:
@@ -224,7 +224,7 @@ and similarly for $\partial w / \partial v$; the tree diagram has four branches 
 
 ^ex-110-3
 
-> [!example] Example §131.1: The Chain Rule with an Unspecified Function
+> [!example] Example §110.4: The Chain Rule with an Unspecified Function
 > **(a)** If $g(s, t) = f(s^2 - t^2, t^2 - s^2)$ and $f$ is differentiable, show that $g$ satisfies $t\,\dfrac{\partial g}{\partial s} + s\,\dfrac{\partial g}{\partial t} = 0$.
 >
 > Let $x = s^2 - t^2$ and $y = t^2 - s^2$, so $g(s, t) = f(x, y)$. By Case 2,
@@ -273,7 +273,7 @@ and similarly for $\partial w / \partial v$; the tree diagram has four branches 
 
 ## Implicit Differentiation
 
-> [!theorem] Theorem §131.2: Implicit Differentiation, One Equation in Two Variables
+> [!theorem] Theorem §110.4: Implicit Differentiation, One Equation in Two Variables
 > Suppose that an equation $F(x, y) = 0$ defines $y$ implicitly as a differentiable function of $x$, that is, $y = f(x)$ with $F(x, f(x)) = 0$ for all $x$ in the domain of $f$. If $F$ is differentiable and $F_y \ne 0$, then
 >
 > $$
@@ -299,7 +299,7 @@ and similarly for $\partial w / \partial v$; the tree diagram has four branches 
 
 The proof *assumes* that $F(x, y) = 0$ defines $y$ as a differentiable function of $x$. The Implicit Function Theorem ([[§110 The Chain Rule#^thm-110-6|Theorem §110.6]] below) gives conditions under which this assumption is valid.
 
-> [!theorem] Theorem §131.3: Implicit Differentiation, One Equation in Three Variables
+> [!theorem] Theorem §110.5: Implicit Differentiation, One Equation in Three Variables
 > Suppose that $z$ is given implicitly as a function $z = f(x, y)$ by an equation $F(x, y, z) = 0$, that is, $F(x, y, f(x, y)) = 0$ for all $(x, y)$ in the domain of $f$. If $F$ and $f$ are differentiable and $F_z \ne 0$, then
 >
 > $$
@@ -347,7 +347,7 @@ The same assumption is made here: that $F(x, y, z) = 0$ defines $z$ as a differe
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 The Implicit Function Theorem#^thm-15-1|452 Thm. §15.1]] (two variables, with formula (5) for the derivative) and [[§15 The Implicit Function Theorem#^thm-15-2|452 Thm. §15.2]] (one equation in $n + 1$ variables); hub [[Implicit Function Theorem]]. The circle $x^2 + y^2 = 1$ near $(1, 0)$, where $F_y = 0$ and $y$ is not a function of $x$, shows why the hypothesis $F_y \ne 0$ matters: [[§15 The Implicit Function Theorem#^ex-15-2|452 Ex. §15.2]].
 
-> [!example] Example §131.2: Implicit Differentiation by Formula
+> [!example] Example §110.5: Implicit Differentiation by Formula
 > **(a)** Find $y'$ if $x^3 + y^3 = 6xy$.
 >
 > Write the equation as $F(x, y) = x^3 + y^3 - 6xy = 0$. By (5),

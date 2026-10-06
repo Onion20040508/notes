@@ -38,7 +38,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra analogue of “map the generator anywhere”: [[Linear map lemma]].
-> - Developed in full in Group Theory: integer powers [[§4 Subgroups#^def-4-2|493 Def. §4.2]] with the [[Exponent Laws]], cyclic groups [[§4 Subgroups#^def-4-5|493 Def. §4.5]]; the classification in the remark is proved as [[Classification of Cyclic Groups]] ([[§17 Cyclic Groups#^thm-17-1|493 Thm. §17.1]]), and mapping a generator anywhere is [[§17 Cyclic Groups#^prop-17-3|493 Prop. §17.3]].
+> - Developed in full in Group Theory: integer powers [[§4 Subgroups#^def-4-2|493 Def. §4.2]] with the [[Exponent Laws]], cyclic groups [[§4 Subgroups#^def-4-6|493 Def. §4.6]]; the classification in the remark is proved as [[Classification of Cyclic Groups]] ([[§17 Cyclic Groups#^thm-17-1|493 Thm. §17.1]]), and mapping a generator anywhere is [[§17 Cyclic Groups#^prop-17-3|493 Prop. §17.3]].
 
 > [!definition] Definition §27.3: Free Group
 > The **free group** $F_n$ on generators $\{a_1, \ldots, a_n\}$ consists of all **reduced words** in the symbols $a_i$ and $a_i^{-1}$. A **word** is a finite sequence like $a_1^2 a_3^{-1} a_2 a_1^{-1}$. A word is **reduced** if no adjacent pair cancels (no $a_i a_i^{-1}$ or $a_i^{-1} a_i$ appears). The group operation is concatenation followed by reduction, the identity is the empty word $\varepsilon$, and the inverse of $s_1 \cdots s_k$ is $s_k^{-1} \cdots s_1^{-1}$.
@@ -51,7 +51,7 @@ tags: [topology, math590]
 > - Formal version: [[§27 Free Groups and Presentations#^def-27-5|Free Group on Elements]]. $F_n$ is $\pi_1$ of a wedge of $n$ circles: [[§39 The Seifert–van Kampen Theorem#^ex-39-3|Example §39.3]].
 > - Words in an arbitrary group, and the subgroup they generate: [[§4 Subgroups#^def-4-4|493 Def. §4.4]]; in a free group distinct reduced words are distinct elements, in a general group they need not be.
 
-> [!example] Example §37.1: Multiplication in $F_2$
+> [!example] Example §27.1: Multiplication in $F_2$
 > The operation is “concatenate, then cancel adjacent inverse pairs until reduced”:
 > 1. $(ab^{-1}) \cdot (ba) = ab^{-1}ba$. The $b^{-1}$ and $b$ cancel: $\to a \cdot a = a^2$.
 > 2. $(ab) \cdot (b^{-1}a^{-1}) = abb^{-1}a^{-1} \to aa^{-1} \to \varepsilon$. Cascading cancellation; confirms $(ab)^{-1} = b^{-1}a^{-1}$.

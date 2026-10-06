@@ -13,7 +13,7 @@ tags: [applied-linear-algebra, math235]
 
 The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ of a subspace into an orthogonal basis. Each new vector is $\mathbf{x}_k$ minus its projection onto the span of the vectors already built. So every nonzero subspace of $\mathbb{R}^n$ has an orthogonal (and an orthonormal) basis, the fact that makes the projection formula of [[§52 Orthogonal Projections#^thm-52-1|Theorem §52.1]] always usable. Run on the columns of a matrix $A$ with linearly independent columns, the process factors $A = QR$, with $Q$ having orthonormal columns and $R$ upper triangular. The QR factorization is used in [[§54 Least-Squares Problems|§54]] to solve least-squares problems stably.
 
-> [!example] Example §64.1: Two Vectors in ℝ³
+> [!example] Example §53.1: Two Vectors in ℝ³
 > Let $W = \operatorname{Span}\{\mathbf{x}_1, \mathbf{x}_2\}$ with $\mathbf{x}_1 = \begin{bmatrix} 3 \\ 6 \\ 0 \end{bmatrix}$ and $\mathbf{x}_2 = \begin{bmatrix} 1 \\ 2 \\ 2 \end{bmatrix}$. Construct an orthogonal basis $\{\mathbf{v}_1, \mathbf{v}_2\}$ of $W$, then an orthonormal one.
 >
 > **Orthogonal basis.** Keep $\mathbf{v}_1 = \mathbf{x}_1$. Let $\mathbf{p}$ be the projection of $\mathbf{x}_2$ onto $\mathbf{x}_1$; the component of $\mathbf{x}_2$ orthogonal to $\mathbf{x}_1$ is $\mathbf{x}_2 - \mathbf{p}$. With $\mathbf{x}_2 \cdot \mathbf{x}_1 = 3 + 12 + 0 = 15$ and $\mathbf{x}_1 \cdot \mathbf{x}_1 = 9 + 36 = 45$,
@@ -38,7 +38,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 ![[m235-43-1.svg]]
 *[[§53 The Gram–Schmidt Process#^ex-53-1|Example §53.1]], drawn in the plane $W$. The first Gram–Schmidt step keeps $\mathbf{v}_1 = \mathbf{x}_1$ and replaces $\mathbf{x}_2$ by its component $\mathbf{v}_2 = \mathbf{x}_2 - \mathbf{p}$ orthogonal to $\mathbf{x}_1$ (red), where $\mathbf{p} = \frac13\mathbf{x}_1$ is the projection of $\mathbf{x}_2$ onto $\mathbf{x}_1$. Both $\{\mathbf{x}_1, \mathbf{x}_2\}$ and $\{\mathbf{v}_1, \mathbf{v}_2\}$ span $W$.*
 
-> [!example] Example §64.2: The Full Process in ℝ⁴
+> [!example] Example §53.2: The Full Process in ℝ⁴
 > Let
 >
 > $$
@@ -74,7 +74,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ## The Gram–Schmidt Process
 
-> [!theorem] Theorem §64.1: The Gram–Schmidt Process
+> [!theorem] Theorem §53.1: The Gram–Schmidt Process
 > Given a basis $\{\mathbf{x}_1, \ldots, \mathbf{x}_p\}$ for a nonzero subspace $W$ of $\mathbb{R}^n$, define
 >
 > $$
@@ -120,9 +120,9 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]] (Gram–Schmidt for a linearly independent list in any inner product space; Axler normalizes at every step, $e_k = f_k / \|f_k\|$, and proves the same span property (1)).
-> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: [[§24 Orthonormal Sets and Bases#^lem-24-14|556 Lem. §24.14]].
+> - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|556 Lem. §28.2]].
 
-> [!theorem] Corollary §64.2: Existence of Orthogonal and Orthonormal Bases
+> [!theorem] Corollary §53.2: Existence of Orthogonal and Orthonormal Bases
 > Every nonzero subspace $W$ of $\mathbb{R}^n$ has an orthogonal basis, and an orthonormal basis.
 >
 > *Lay: 6.4 (text)*
@@ -153,7 +153,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ## QR Factorization of Matrices
 
-> [!theorem] Theorem §64.3: The QR Factorization
+> [!theorem] Theorem §53.3: The QR Factorization
 > If $A$ is an $m \times n$ matrix with linearly independent columns, then $A$ can be factored as $A = QR$, where $Q$ is an $m \times n$ matrix whose columns form an orthonormal basis for $\operatorname{Col} A$ and $R$ is an $n \times n$ upper triangular invertible matrix with positive entries on its diagonal.
 >
 > *Lay: Theorem 12 (6.4)*
@@ -201,7 +201,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 ^rem-53-2
 
-> [!example] Example §64.3: A QR Factorization
+> [!example] Example §53.3: A QR Factorization
 > Find a QR factorization of
 >
 > $$

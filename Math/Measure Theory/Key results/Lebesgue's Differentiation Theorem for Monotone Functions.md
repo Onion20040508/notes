@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§29 Lebesgue's Differentiation Theorem#^thm-29-1]]
 
 ## Treated in
-- [[§29 Lebesgue's Differentiation Theorem#^thm-29-1|Theorem §29.1: Lebesgue's Differentiation Theorem for Monotone Functions]], in [[§28 Differentiation Theory]]
+- [[§29 Lebesgue's Differentiation Theorem#^thm-29-1|Theorem §29.1: Lebesgue's Differentiation Theorem for Monotone Functions]], in [[§29 Lebesgue's Differentiation Theorem]]
 
 ## Its proof uses
 - [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]]
@@ -29,8 +29,8 @@ tags: [measure-theory, hub]
 
 ## Used in (Measure Theory)
 - [[§29 Lebesgue's Differentiation Theorem#^cor-29-2|Corollary §29.2: BV Functions are Differentiable A.E.]]
-- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-3|Theorem §32.3: Lebesgue Decomposition of Increasing Functions]]
 - [[§30 Differentiating the Integral#^thm-30-7|Theorem §30.7: Differentiation of the Integral]]
+- [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-3|Theorem §32.3: Lebesgue Decomposition of Increasing Functions]]
 
 ## Connections
 - **Proof idea.** f fails to be differentiable where D⁺f > D₋f or D⁻f > D₊f ([[§29 Lebesgue's Differentiation Theorem#^rem-29-3|Rem. §18.3]]). Each bad set is a countable union, over rationals r > s, of sets A_{r,s} = {D⁺f > r > s > D₋f}. Two applications of the [[Vitali Covering Theorem]] give r·m*(A) ≤ s·m*(A), so these sets are null. For (ii)–(iii), f′ is the a.e. limit of n(f(x + 1/n) − f(x)), and [[Fatou's Lemma]] with [[§25 Invariance Properties and Fubini's Theorem#^thm-25-1|translation invariance]] bounds ∫f′ by f(b) − f(a).

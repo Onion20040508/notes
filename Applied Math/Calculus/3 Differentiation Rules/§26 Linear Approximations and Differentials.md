@@ -38,7 +38,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 > - How good is it? Taylor's Theorem with $n = 2$ bounds the error: $f(x) - L(x) = \frac12 f''(c)(x - a)^2$ for some $c$ between $a$ and $x$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]; in Calculus, [[§90 Taylor and Maclaurin Series#^rem-90-2|Remark: Formulas for the Remainder]]). This explains [[§26 Linear Approximations and Differentials#^ex-26-1|Example §26.1]]: the error grows like $(x - a)^2$, and its sign is that of $f''$.
 > - In several variables the tangent line becomes the tangent plane: [[§109 Tangent Planes and Linear Approximations#^def-109-2|Definition §109.2]] (Stewart 14.4), and [[§7 Differentiability#^def-7-1|452 Def. §7.1]], where good linear approximation is the definition of differentiability.
 
-> [!example] Example §29.1: Linearizing a Square Root
+> [!example] Example §26.1: Linearizing a Square Root
 > Find the linearization of $f(x) = \sqrt{x + 3}$ at $a = 1$ and use it to approximate $\sqrt{3.98}$ and $\sqrt{4.05}$. Are these overestimates or underestimates?
 >
 > The derivative of $f(x) = (x + 3)^{1/2}$ is
@@ -77,7 +77,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 
 ^ex-26-1
 
-> [!example] Example §29.2: How Accurate Is the Approximation?
+> [!example] Example §26.2: How Accurate Is the Approximation?
 > For what values of $x$ is the linear approximation $\sqrt{x + 3} \approx \frac74 + \frac x4$ accurate to within $0.5$? To within $0.1$?
 >
 > Accuracy to within $0.5$ means $\left| \sqrt{x + 3} - \left( \frac74 + \frac x4 \right) \right| < 0.5$, that is,
@@ -149,7 +149,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 ![[m233-23-1.svg]]
 *Differentials. Over the run $dx = \Delta x$ from $P$, the curve rises by $\Delta y$ (to $Q$, green) and the tangent line rises by $dy = f'(x)\,dx$ (to $R$, red). Here $f$ is concave down, so $dy > \Delta y$; in general $dy - \Delta y$ is small compared with $dx$ when $dx$ is small ([[§20 The Chain Rule#^lem-20-1|Lemma §20.1]]).*
 
-> [!example] Example §29.3: Comparing Δy and dy
+> [!example] Example §26.3: Comparing Δy and dy
 > Compare $\Delta y$ and $dy$ for $y = f(x) = x^3 + x^2 - 2x + 1$ when $x$ changes (a) from $2$ to $2.05$ and (b) from $2$ to $2.01$.
 >
 > In general $dy = f'(x)\,dx = (3x^2 + 2x - 2)\,dx$, and at $x = 2$ the factor is $3(2)^2 + 2(2) - 2 = 14$. Also $f(2) = 8 + 4 - 4 + 1 = 9$.
@@ -171,7 +171,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 
 ^def-26-3
 
-> [!example] Example §29.4: Error in the Volume of a Sphere
+> [!example] Example §26.4: Error in the Volume of a Sphere
 > The radius of a sphere was measured to be $21$ cm with a possible error of at most $0.05$ cm. What is the maximum error in using this value to compute the volume?
 >
 > With radius $r$, the volume is $V = \frac43 \pi r^3$. If the error in the measured $r$ is $dr = \Delta r$, the corresponding error $\Delta V$ in the computed volume is approximately the differential

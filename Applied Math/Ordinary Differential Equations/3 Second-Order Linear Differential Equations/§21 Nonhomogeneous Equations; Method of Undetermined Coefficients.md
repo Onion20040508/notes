@@ -27,7 +27,7 @@ $$
 L[y] = y'' + p(t)y' + q(t)y = 0 . \qquad (2)
 $$
 
-> [!theorem] Theorem §26.1: Difference of Two Solutions
+> [!theorem] Theorem §21.1: Difference of Two Solutions
 > If $Y_1$ and $Y_2$ are two solutions of the nonhomogeneous linear differential equation (1), then their difference $Y_1 - Y_2$ is a solution of the corresponding homogeneous differential equation (2). If, in addition, $y_1$ and $y_2$ form a fundamental set of solutions of (2), then
 >
 > $$
@@ -65,7 +65,7 @@ $$
 
 *Uses:* [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-2|§18.2]], [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-4|§18.4]]
 
-> [!theorem] Theorem §26.2: General Solution of the Nonhomogeneous Equation
+> [!theorem] Theorem §21.2: General Solution of the Nonhomogeneous Equation
 > The general solution of the nonhomogeneous equation (1) can be written in the form
 >
 > $$
@@ -96,14 +96,14 @@ $$
 > - The same structure for linear difference equations, "one particular solution plus the general solution of the homogeneous equation": [[§37 Solution Sets of Linear Difference Equations#^thm-37-5|235 Thm. §37.5]].
 > - See also: [[§3★ Nonhomogeneous Linear Equations#^thm-3-2|341 Thm. §3.2]] (the same statement in Powers' review of ODEs).
 
-> [!definition] Definition §26.1: Complementary Solution
+> [!definition] Definition §21.1: Complementary Solution
 > The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$.
 >
 > *BDP: 3.5 (text)*
 
 ^def-21-1
 
-> [!definition] Definition §26.2: Particular Solution
+> [!definition] Definition §21.2: Particular Solution
 > Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By [[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-21-2|Theorem §21.2]], solving (1) takes three steps:
 > 1. find the complementary solution $y_c(t) = c_1y_1(t) + c_2y_2(t)$;
 > 2. find any particular solution $Y(t)$;
@@ -125,7 +125,7 @@ The method of undetermined coefficients makes an initial assumption about the fo
 
 A forcing term that is a sum is split into its terms:
 
-> [!theorem] Proposition §26.3: Superposition of Forcing Terms
+> [!theorem] Proposition §21.3: Superposition of Forcing Terms
 > Suppose that $g(t) = g_1(t) + g_2(t)$, and that $Y_1$ and $Y_2$ are solutions of
 >
 > $$
@@ -155,7 +155,9 @@ A forcing term that is a sum is split into its terms:
 
 ^pf-21-3
 
-> [!example] Example §26.1: Exponential, Trigonometric and Product Forcing
+*Uses:* [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-4|Calc Thm. §17.4]] (sum rule)
+
+> [!example] Example §21.1: Exponential, Trigonometric and Product Forcing
 > Find a particular solution of
 >
 > $$
@@ -379,7 +381,7 @@ The procedure of [[§21 Nonhomogeneous Equations; Method of Undetermined Coeffic
 
 ## Course Examples
 
-> [!example] Example §26.2: One Operator, Three Forcing Terms
+> [!example] Example §21.2: One Operator, Three Forcing Terms
 > Find the general solution of **(a)** $y'' - 5y' - 14y = e^{4t}$ and **(b)** $y'' - 5y' - 14y = e^{-2t} - t^2$.
 >
 > **Complementary solution.** $r^2 - 5r - 14 = (r - 7)(r + 2) = 0$ has roots $7$ and $-2$, so $y_c = c_1e^{7t} + c_2e^{-2t}$.
@@ -418,7 +420,7 @@ The procedure of [[§21 Nonhomogeneous Equations; Method of Undetermined Coeffic
 
 ^ex-21-2
 
-> [!example] Example §26.3: Trigonometric Forcing with a Repeated Root
+> [!example] Example §21.3: Trigonometric Forcing with a Repeated Root
 > Find the general solution of $y'' + 6y' + 9y = 50\cos t$.
 >
 > **Complementary solution.** $r^2 + 6r + 9 = (r + 3)^2$ has the repeated root $-3$, so $y_c = c_1e^{-3t} + c_2te^{-3t}$.
@@ -443,7 +445,7 @@ The procedure of [[§21 Nonhomogeneous Equations; Method of Undetermined Coeffic
 
 ^ex-21-3
 
-> [!example] Example §26.4: An Exponential with a Parameter
+> [!example] Example §21.4: An Exponential with a Parameter
 > Find the general solution of $y'' + 2y' + 17y = e^{\alpha t}$, where $\alpha$ is a real constant.
 >
 > **Complementary solution.** $r^2 + 2r + 17 = (r + 1)^2 + 16 = 0$ gives $r = -1 \pm 4i$, so $y_c = e^{-t}(c_1\cos 4t + c_2\sin 4t)$.

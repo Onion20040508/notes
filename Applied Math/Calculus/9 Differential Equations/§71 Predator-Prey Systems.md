@@ -17,7 +17,7 @@ The population models so far describe one species living alone. This section cou
 
 Let $R(t)$ be the number of prey (rabbits) and $W(t)$ the number of predators (wolves) at time $t$. Without predators, the ample food supply would support exponential growth of the prey, $dR/dt = kR$ with $k > 0$ ([[§69 Models for Population Growth#^def-69-1|Definition §69.1]], [[§24 Exponential Growth and Decay#^thm-24-1|Theorem §24.1]]). Without prey, the predators would die out at a rate proportional to their number, $dW/dt = -rW$ with $r > 0$. With both present, assume that the main cause of death among the prey is being eaten, and that the birth and survival rates of the predators depend on their food supply, the prey. Assume also that the two species meet at a rate proportional to both populations, that is, to the product $RW$: the more there are of either, the more encounters.
 
-> [!definition] Definition §83.1: The Predator-Prey Equations
+> [!definition] Definition §71.1: The Predator-Prey Equations
 > The **predator-prey equations**, or **Lotka–Volterra equations**, are the system
 >
 > $$
@@ -59,7 +59,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 
 ^def-71-3
 
-> [!theorem] Proposition §83.1: The Equation of the Phase Trajectories
+> [!theorem] Proposition §71.1: The Equation of the Phase Trajectories
 > Along a solution of (1), at times when $dR/dt \ne 0$, the predator population $W$ can be regarded as a function of the prey population $R$, and it satisfies the first-order differential equation
 >
 > $$
@@ -90,7 +90,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > [!remark]- Connections
 > - The local inversion of $t \mapsto R(t)$ where $dR/dt \ne 0$ is the one-variable inverse function theorem, [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]].
 
-> [!example] Example §83.1: Rabbits and Wolves — Equilibria and the Direction Field
+> [!example] Example §71.1: Rabbits and Wolves — Equilibria and the Direction Field
 > Suppose that populations of rabbits and wolves are described by the Lotka–Volterra equations (1) with $k = 0.08$, $a = 0.001$, $r = 0.02$ and $b = 0.00002$, with $t$ in months. (a) Find the equilibrium solutions and interpret the answer. (b) Use the system to find an expression for $dW/dR$. (c) Draw the direction field of the resulting differential equation in the $RW$-plane and use it to sketch some solution curves.
 >
 > **(a)** The equations are
@@ -149,7 +149,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > [!remark]- Connections
 > - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§37 Homogeneous Linear Systems with Constant Coefficients#^def-37-6|331 Def. §37.6]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§38 Complex-Valued Eigenvalues#^thm-38-3|331 Thm. §38.3]].
 
-> [!example] Example §83.2: Rabbits and Wolves — One Cycle
+> [!example] Example §71.2: Rabbits and Wolves — One Cycle
 > In the system of [[§71 Predator-Prey Systems#^ex-71-1|Example §71.1]], suppose that at some time there are $1000$ rabbits and $40$ wolves. (d) Draw the corresponding solution curve and use it to describe the changes in both populations. (e) Sketch $R$ and $W$ as functions of $t$.
 >
 > **(d)** We need the phase trajectory through $P_0(1000, 40)$. Which way is it traversed as $t$ increases from $0$? At $P_0$,

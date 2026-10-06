@@ -15,7 +15,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ## Cramer's Rule
 
-> [!definition] Definition §33.1: The Matrix A_i(b)
+> [!definition] Definition §27.1: The Matrix A_i(b)
 > For an $n \times n$ matrix $A = [\mathbf{a}_1 \ \cdots \ \mathbf{a}_n]$ and $\mathbf{b} \in \mathbb{R}^n$, $A_i(\mathbf{b})$ is the matrix obtained from $A$ by replacing column $i$ by $\mathbf{b}$:
 >
 > $$
@@ -26,7 +26,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ^def-27-1
 
-> [!theorem] Theorem §33.1: Cramer's Rule
+> [!theorem] Theorem §27.1: Cramer's Rule
 > Let $A$ be an invertible $n \times n$ matrix. For any $\mathbf{b}$ in $\mathbb{R}^n$, the unique solution $\mathbf{x}$ of $A\mathbf{x} = \mathbf{b}$ has entries given by
 >
 > $$
@@ -59,7 +59,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 > [!remark]- Connections
 > - See also: Cramer's rule for $n = 2$ fits a combination $c_1y_1 + c_2y_2$ of two solutions of $y'' + py' + qy = 0$ to initial conditions, with the Wronskian as the common denominator, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-3|331 Thm. §18.3]] (formula (11) of its proof).
 
-> [!example] Example §33.1: Cramer's Rule, With and Without a Parameter
+> [!example] Example §27.1: Cramer's Rule, With and Without a Parameter
 > **(a)** Solve $\begin{cases} x_1 + 2x_2 = 5 \\ 3x_1 + 4x_2 = 7 \end{cases}$. Here
 >
 > $$
@@ -99,7 +99,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ^ex-27-1
 
-> [!example] Example §33.2: Lagrange Interpolation
+> [!example] Example §27.2: Lagrange Interpolation
 > **Problem.** A quadratic $f(x) = Ax^2 + Bx + C$ has $f(1) = 3$, $f(2) = -1$, $f(3) = 2$. Find $f(4)$.
 >
 > **Lagrange polynomials.** For distinct numbers $a, b, c$, look for the quadratic $L_{a,b,c}(x) = Ax^2 + Bx + C$ with $L_{a,b,c}(a) = 1$, $L_{a,b,c}(b) = 0$, $L_{a,b,c}(c) = 0$. With the unknowns ordered $C, B, A$ the conditions are
@@ -165,7 +165,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ^def-27-2
 
-> [!theorem] Theorem §33.2: An Inverse Formula
+> [!theorem] Theorem §27.2: An Inverse Formula
 > Let $A$ be an invertible $n \times n$ matrix. Then
 >
 > $$
@@ -208,7 +208,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ^rem-27-1
 
-> [!example] Example §33.3: An Inverse by Cofactors
+> [!example] Example §27.3: An Inverse by Cofactors
 > Find the inverse of $A = \begin{bmatrix} 2 & 1 & 3 \\ 1 & -1 & 1 \\ 1 & 4 & -2 \end{bmatrix}$.
 >
 > The nine cofactors are
@@ -246,7 +246,7 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 > [!remark] Remark: When to Use Cramer's Rule and the Adjugate
 > - **Conditions.** Cramer's rule applies only to a *square* system with an *invertible* coefficient matrix ($\det A \ne 0$). When $\det A = 0$ it says nothing: the system may be inconsistent or have infinitely many solutions, and row reduction must decide ([[§27 Cramer’s Rule, Volume, and Linear Transformations#^ex-27-1|Example §27.1]](b)).
 > - **Advantages.** Both formulas are explicit. They show how the solution or the inverse depends on the entries of $A$ and $\mathbf{b}$, which makes them the tool for theoretical questions: sensitivity of $\mathbf{x}$ to errors in $\mathbf{b}$ or $A$; solutions depending on a parameter ([[§27 Cramer’s Rule, Volume, and Linear Transformations#^ex-27-1|Example §27.1]](b)); integrality (if $A$ has integer entries and $\det A = \pm 1$, then $A^{-1} = \pm\operatorname{adj} A$ has integer entries, Lay's Exercise 18). For a $3 \times 3$ matrix with *complex* entries, Cramer's rule is sometimes preferred because row reduction of $[A \ \mathbf{b}]$ with complex arithmetic is messy.
-> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§15 Elementary Matrices and the Inversion Algorithm#^rem-15-3|§15, Remark: Method — Finding the Inverse of a Matrix]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
+> - **Cost.** For a larger $n \times n$ matrix, real or complex, Cramer's rule is hopelessly inefficient: it needs $n + 1$ determinants, and computing just *one* determinant takes about as much work as solving $A\mathbf{x} = \mathbf{b}$ by row reduction. Likewise, except in special cases, row reducing $[A \ I]$ ([[§15 Elementary Matrices and the Inversion Algorithm#^rem-15-2|§15, Remark: Method — Finding the Inverse of a Matrix]]) is a much better way to compute $A^{-1}$ than the $n^2$ cofactors of $\operatorname{adj} A$.
 
 ^rem-27-2
 

@@ -17,7 +17,9 @@ tags: [chapter, calculus]
 - [[§100 Vector Functions and Space Curves]] — Stewart 13.1
 - [[§101 Derivatives and Integrals of Vector Functions]] — Stewart 13.2
 - [[§102 Arc Length and Curvature]] — Stewart 13.3
+- [[§103 The TNB Frame and Torsion]] — Stewart 13.3
 - [[§104 Motion in Space꞉ Velocity and Acceleration]] — Stewart 13.4
+- [[§105 The Helix]] — Stewart 13.4
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

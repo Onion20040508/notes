@@ -28,7 +28,7 @@ $$
 
 The partial differential equation and the boundary conditions are homogeneous, so separation of variables applies. (Nonzero edge temperatures are first removed by subtracting a steady state; see Remark: Method below.)
 
-> [!definition] Definition §66.1: The Eigenvalue Problem for the Rectangle
+> [!definition] Definition §53.1: The Eigenvalue Problem for the Rectangle
 > The **two-dimensional eigenvalue problem** for the rectangle $0 < x < a$, $0 < y < b$ is
 >
 > $$
@@ -45,7 +45,7 @@ The partial differential equation and the boundary conditions are homogeneous, s
 
 ^def-53-1
 
-> [!theorem] Theorem §66.1: Product Solutions of the Heat Problem
+> [!theorem] Theorem §53.1: Product Solutions of the Heat Problem
 > A product $u(x, y, t) = \phi(x, y)T(t)$, not identically zero, satisfies (1)–(3) if and only if, for some constant $\lambda^2$, $\phi$ is a solution of the eigenvalue problem (6)–(8) and
 >
 > $$
@@ -85,7 +85,7 @@ The partial differential equation and the boundary conditions are homogeneous, s
 
 Equations (6)–(8) form a new problem, a two-dimensional eigenvalue problem. But the equation and the boundary conditions are linear and homogeneous, so separation of variables may work again.
 
-> [!theorem] Theorem §66.2: Eigenvalues and Eigenfunctions of the Rectangle
+> [!theorem] Theorem §53.2: Eigenvalues and Eigenfunctions of the Rectangle
 > The product solutions $\phi = X(x)Y(y)$ of the eigenvalue problem (6)–(8) are the multiples of
 >
 > $$
@@ -233,10 +233,10 @@ $$
 
 *Uses:* [[§53 Two-Dimensional Heat Equation꞉ Solution#^thm-53-1|§53.1]], [[§53 Two-Dimensional Heat Equation꞉ Solution#^thm-53-2|§53.2]], [[§53 Two-Dimensional Heat Equation꞉ Solution#^thm-53-3|§53.3]], [[§25 Example꞉ Fixed End Temperatures#^thm-25-4|§25.4]], [[§25 Example꞉ Fixed End Temperatures#^thm-25-5|§25.5]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]] (M-test), [[§25 More on Uniform Convergence#^thm-25-2|451 Thm. §25.2]], [[§26 Differentiation and Integration of Power Series#^thm-26-3|451 Thm. §26.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]], [[§86 The Ratio and Root Tests#^thm-86-1|Calc Thm. §86.1]] (ratio test)
 
-*Powers omits the proof that the double series (15) converges to $f$. In the mean-square sense it follows from the completeness of the one-dimensional sine systems on $(0, a)$ and $(0, b)$ (for the exponential form on an interval, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]]): products of orthonormal bases of the two intervals form an orthonormal basis of the rectangle, a fact the vault does not prove.*
+*Powers omits the proof that the double series (15) converges to $f$. In the mean-square sense it follows from the completeness of the one-dimensional sine systems on $(0, a)$ and $(0, b)$ (for the exponential form on an interval, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]]): products of orthonormal bases of the two intervals form an orthonormal basis of the rectangle, a fact the vault does not prove.*
 
 > [!remark]- Connections
-> - The normalized functions $\frac{2}{\sqrt{ab}}\phi_{mn}$ form an orthonormal set by (16), and (17) gives the coefficients of $f$ with respect to it. Completeness of this set is the statement that (15) holds in mean square, and is equivalent to Parseval's equality $\frac{4}{ab}\iint f^2 = \sum\sum a_{mn}^2$: [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]].
+> - The normalized functions $\frac{2}{\sqrt{ab}}\phi_{mn}$ form an orthonormal set by (16), and (17) gives the coefficients of $f$ with respect to it. Completeness of this set is the statement that (15) holds in mean square, and is equivalent to Parseval's equality $\frac{4}{ab}\iint f^2 = \sum\sum a_{mn}^2$: [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]].
 > - The two-dimensional analogue of the half-range sine series ([[§11 Even and Odd Functions; Half-Range Expansions#^def-11-4|Definition §11.4]]). The $\phi_{mn}$ are eigenvectors of the symmetric operator $-\nabla^2$ with zero boundary values, and orthogonality for distinct eigenvalues is the infinite-dimensional analogue of [[§23 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]]; for a general region it is proved with Green's identity in [[§54★ Problems in Polar Coordinates#^thm-54-3|Theorem §54.3]].
 
 > [!remark] Remark: Method — Heat Problems in a Rectangle
@@ -265,7 +265,7 @@ $$
 
 ## Examples
 
-> [!example] Example §66.1: Initial Temperature f(x, y) = xy
+> [!example] Example §53.1: Initial Temperature f(x, y) = xy
 > Solve (1)–(4) with $f(x, y) = xy$, $0 < x < a$, $0 < y < b$.
 >
 > **The $x$-integral.** Integrating by parts,
@@ -297,7 +297,7 @@ $$
 ![[m341-43-1.svg]]
 *The solution (18) for $a = b = 1$, $k = 1$, along the line $y = \frac12$, where $f(x, \frac12) = x/2$ (dashed). The thin gray curve is a partial sum of (15) at $t = 0$, with the Gibbs overshoot at $x = 1$, where $f$ jumps to the boundary value $0$. By $t = 0.005$ the jump is already smoothed out, and by $t = 0.1$ the profile is close to the lowest mode $\sin\pi x$, decaying like $e^{-2\pi^2t}$.*
 
-> [!example] Example §66.2: Ordering the Double Series
+> [!example] Example §53.2: Ordering the Double Series
 > A double series is best handled by converting it into a single series, arranging the terms in order of increasing $\lambda_{mn}^2$: the first terms are the most significant, since they decay least rapidly. Order the terms for (a) $a = 2b$, (b) $a = b$, and write the first few terms of (18) in case (b).
 >
 > **(a)** If $a = 2b$, then $\lambda_{mn}^2 = \dfrac{m^2\pi^2}{a^2} + \dfrac{4n^2\pi^2}{a^2} = \dfrac{(m^2 + 4n^2)\pi^2}{a^2}$. The values of $m^2 + 4n^2$ are
@@ -321,7 +321,7 @@ $$
 
 ^ex-53-2
 
-> [!example] Example §66.3: A Single Mode on the Rectangle 1 × 2
+> [!example] Example §53.3: A Single Mode on the Rectangle 1 × 2
 > Solve
 >
 > $$
@@ -355,7 +355,7 @@ $$
 
 ^ex-53-3
 
-> [!example] Example §66.4: A Mode with Index Doubling, and an Initial Condition That Is Not a Mode
+> [!example] Example §53.4: A Mode with Index Doubling, and an Initial Condition That Is Not a Mode
 > Solve $u_t = u_{xx} + u_{yy}$ in $0 < x < 1$, $0 < y < 2$, $t > 0$, with zero edge temperatures, for the initial conditions (a) $u(x, y, 0) = \sin(p\pi x)\sin(q\pi y)$ and (b) $u(x, y, 0) = \sin(p\pi x)\cos(q\pi y)$, where $p$ and $q$ are fixed positive integers.
 >
 > **Eigenfunctions.** As in Example §53.3, $\Phi_{mn} = \sin(m\pi x)\sin(n\pi y/2)$ with $\lambda_{mn}^2 = \pi^2(m^2 + n^2/4)$, and $u = \sum\sum A_{mn}\Phi_{mn}e^{-\lambda_{mn}^2t}$.

@@ -17,7 +17,7 @@ The partial derivatives $f_x$ and $f_y$ are the rates of change of $f$ in the di
 
 On a weather map of a temperature function $T(x, y)$, $T_x$ at a location is the rate of change of temperature with respect to distance traveling east, and $T_y$ traveling north. For other directions (southeast, toward another city) we need a new kind of derivative.
 
-> [!definition] Definition §132.1: Directional Derivative
+> [!definition] Definition §111.1: Directional Derivative
 > The **directional derivative** of $f$ at $(x_0, y_0)$ in the direction of a unit vector $\mathbf{u} = \langle a, b \rangle$ is
 >
 > $$
@@ -46,7 +46,7 @@ On a weather map of a temperature function $T(x, y)$, $T_x$ at a location is the
 > [!remark]- Connections
 > - Rigorous treatment: [[§9 Directional Derivatives#^def-9-1|452 Def. §9.1]] (direction given by an angle $\alpha$, as in Equation (6) below).
 
-> [!theorem] Theorem §132.1: Directional Derivatives from Partial Derivatives
+> [!theorem] Theorem §111.1: Directional Derivatives from Partial Derivatives
 > If $f$ is a differentiable function of $x$ and $y$, then $f$ has a directional derivative in the direction of any unit vector $\mathbf{u} = \langle a, b \rangle$ and
 >
 > $$
@@ -105,7 +105,7 @@ D_{\mathbf{u}} f(x, y) = f_x(x, y)\,a + f_y(x, y)\,b = \langle f_x(x, y), f_y(x,
 $$
 The first vector occurs in many other contexts too, so it gets a name.
 
-> [!definition] Definition §132.2: Gradient
+> [!definition] Definition §111.2: Gradient
 > If $f$ is a function of two variables $x$ and $y$, then the **gradient** of $f$ is the vector function $\nabla f$ (read "del $f$"; also written $\mathbf{grad}\,f$) defined by
 >
 > $$
@@ -118,7 +118,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ^def-111-2
 
-> [!theorem] Corollary §132.2: The Directional Derivative as a Dot Product
+> [!theorem] Corollary §111.2: The Directional Derivative as a Dot Product
 > If $f$ is a differentiable function of $x$ and $y$ and $\mathbf{u}$ is a unit vector, then
 >
 > $$
@@ -140,7 +140,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ## Functions of Three Variables
 
-> [!definition] Definition §132.3: Directional Derivative in Three Variables
+> [!definition] Definition §111.3: Directional Derivative in Three Variables
 > The **directional derivative** of $f$ at $(x_0, y_0, z_0)$ in the direction of a unit vector $\mathbf{u} = \langle a, b, c \rangle$ is
 >
 > $$
@@ -159,7 +159,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ^def-111-3
 
-> [!definition] Definition §132.4: Gradient in Three Variables
+> [!definition] Definition §111.4: Gradient in Three Variables
 > The **gradient** of a function of three variables is
 >
 > $$
@@ -170,7 +170,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ^def-111-4
 
-> [!theorem] Theorem §132.3: Directional Derivatives in Three Variables
+> [!theorem] Theorem §111.3: Directional Derivatives in Three Variables
 > If $f(x, y, z)$ is differentiable and $\mathbf{u} = \langle a, b, c \rangle$ is a unit vector, then
 >
 > $$
@@ -188,7 +188,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 *Uses:* [[§111 Directional Derivatives and the Gradient Vector#^def-111-3|Def. §111.3]], [[§111 Directional Derivatives and the Gradient Vector#^def-111-4|Def. §111.4]], [[§110 The Chain Rule#^thm-110-3|§110.3]]
 
-> [!example] Example §132.1: Computing Directional Derivatives
+> [!example] Example §111.1: Computing Directional Derivatives
 > **(a)** Find $D_{\mathbf{u}} f(1, 2)$ for $f(x, y) = x^3 - 3xy + 4y^2$ and $\mathbf{u}$ the unit vector given by the angle $\theta = \pi/6$ from the positive $x$-axis.
 >
 > By Equation (6),
@@ -226,7 +226,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ## Maximizing the Directional Derivative
 
-> [!theorem] Theorem §132.4: Maximizing the Directional Derivative
+> [!theorem] Theorem §111.4: Maximizing the Directional Derivative
 > Suppose $f$ is a differentiable function of two or three variables. The maximum value of the directional derivative $D_{\mathbf{u}} f(\mathbf{x})$ is $|\nabla f(\mathbf{x})|$, and it occurs when $\mathbf{u}$ has the same direction as the gradient vector $\nabla f(\mathbf{x})$.
 >
 > *Stewart: 14.6, Theorem 15*
@@ -249,7 +249,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 > [!remark]- Connections
 > - This is the equality case of the Cauchy–Schwarz inequality $|\nabla f \cdot \mathbf{u}| \le |\nabla f|\,|\mathbf{u}|$ ([[§20 Inner Products and Norms#^ladr-6-14|LADR 6.14]]), and it holds in $\mathbb{R}^n$ for every $n$. The 452 version: [[§9 Directional Derivatives#^rem-9-3|452 Remark: Gradient and Maximum Rate of Change]].
 
-> [!example] Example §132.2: The Direction of Fastest Increase
+> [!example] Example §111.2: The Direction of Fastest Increase
 > **(a)** If $f(x, y) = xe^y$, find the rate of change of $f$ at the point $P(2, 0)$ in the direction from $P$ to $Q(\frac12, 2)$. In what direction does $f$ have the maximum rate of change, and what is this maximum rate?
 >
 > $\nabla f(x, y) = \langle f_x, f_y \rangle = \langle e^y, xe^y \rangle$, so $\nabla f(2, 0) = \langle 1, 2 \rangle$. The vector $\overrightarrow{PQ} = \langle -\frac32, 2 \rangle$ has length $\sqrt{\frac94 + 4} = \frac52$, so the unit vector in its direction is $\mathbf{u} = \langle -\frac35, \frac45 \rangle$, and
@@ -277,7 +277,7 @@ The first vector occurs in many other contexts too, so it gets a name.
 ![[m233-95-1.svg]]
 *[[§111 Directional Derivatives and the Gradient Vector#^ex-111-2|Example §111.2]](a): level curves $xe^y = c$ of $f(x, y) = xe^y$ near $P(2, 0)$. The gradient $\nabla f(2, 0) = \langle 1, 2 \rangle$ (red) is perpendicular to the level curve $xe^y = 2$ through $P$ (bold) and points toward higher values; $f$ increases at the rate $\sqrt5$ in its direction. In the direction of $Q$ (blue) the rate is only $\nabla f \cdot \mathbf{u} = 1$.*
 
-> [!example] Example §132.3: Climbing a Mountain
+> [!example] Example §111.3: Climbing a Mountain
 > A hiker is walking on a mountain modeled by $z = f(x, y) = 100 - 4x^2 - 5y^2$, where the positive $x$-axis points East and the positive $y$-axis points North.
 >
 > **(a)** At the point $P(2, -1, 79)$, heading North, is the hiker ascending or descending?

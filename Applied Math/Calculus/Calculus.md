@@ -11,7 +11,7 @@ tags: [subject, calculus]
 ---
 # Calculus
 
-Single-variable and multivariable calculus, following James Stewart, Daniel Clegg and Saleem Watson, *Calculus: Early Transcendentals*, 9th edition (Cengage, 2021), section by section: §1–§137 are Stewart's Sections 1.1–16.9 in order (each note's alias gives the Stewart number, e.g. "Stewart 2.5"), and §139–§144 are his Appendices A–E and G (the proofs of Appendix F are written out in the sections of the theorems they prove). Chapters 12–16 are MATH 233 (UMass Amherst, Spring 2023, Maria Nikolaou); its practice exams and reviews supply worked examples (*Source: 233 …*).
+Single-variable and multivariable calculus, following James Stewart, Daniel Clegg and Saleem Watson, *Calculus: Early Transcendentals*, 9th edition (Cengage, 2021), section by section: §1–§115 are Stewart's Sections 1.1–16.9 in order (each note's alias gives the Stewart number, e.g. "Stewart 2.5"), and §116–§121 are his Appendices A–E and G (the proofs of Appendix F are written out in the sections of the theorems they prove). Chapters 12–16 are MATH 233 (UMass Amherst, Spring 2023, Maria Nikolaou); its practice exams and reviews supply worked examples (*Source: 233 …*).
 
 These are the computational notes: every definition and result Stewart states, every proof he gives, his methods, and a lean selection of worked examples. The rigorous theory lives in the Math subjects — limits, continuity, derivatives, the integral and series in [[Single Variable Analysis]], several variables and vector calculus in [[Multivariable Analysis]], vectors and determinants in [[Linear Algebra]] — and the main items here carry a folded *Connections* callout pointing to their rigorous treatment.
 
@@ -93,6 +93,7 @@ graph TD
   C1 -.->|3| X3
   C1 -.->|12| X0
   C1 -.->|12| X1
+  C2 -.->|3| X2
   C2 -.->|47| X1
   C2 -.->|3| X5
   C3 -.->|7| X10
@@ -112,8 +113,9 @@ graph TD
   C7 -.->|6| X1
   C8 -.->|6| X2
   C8 -.->|11| X1
-  C9 -.->|39| X8
+  C9 -.->|43| X8
   C9 -.->|12| X1
+  C10 -.->|4| X10
   C10 -.->|6| X2
   C11 -.->|5| X6
   C11 -.->|10| X10
@@ -128,7 +130,7 @@ graph TD
   C13 -.->|3| X1
   C14 -.->|4| X6
   C14 -.->|4| X10
-  C14 -.->|5| X9
+  C14 -.->|6| X9
   C14 -.->|3| X3
   C14 -.->|42| X2
   C14 -.->|3| X1
@@ -137,7 +139,7 @@ graph TD
   C15 -.->|10| X4
   C15 -.->|26| X2
   C16 -.->|12| X10
-  C16 -.->|56| X2
+  C16 -.->|58| X2
   C16 -.->|4| X8
   C17 -.->|4| X6
   C17 -.->|7| X10
@@ -166,34 +168,34 @@ graph TD
 - [[· 17 Background from the Appendices]]
 
 ## Central results
-- [[Limit Laws]] (§8.1)
-- [[Product Rule]] (§15.1)
-- [[Quotient Rule]] (§15.2)
-- [[Chain Rule]] (§17.2)
-- [[Derivative of an Inverse Function]] (§19.1)
-- [[Fermat's Theorem on Local Extrema]] (§25.2)
-- [[Rolle's Theorem]] (§26.1)
-- [[L'Hospital's Rule]] (§28.2)
-- [[Substitution Rule]] (§38.1)
-- [[Integration by Parts]] (§44.1)
-- [[Arc Length Formula]] (§52.1)
-- [[Test for Divergence]] (§70.5)
-- [[Integral Test]] (§71.1)
-- [[Direct Comparison Test]] (§72.1)
-- [[Alternating Series Test]] (§73.1)
-- [[Ratio Test]] (§74.1)
-- [[Taylor's Inequality]] (§78.4)
-- [[Fundamental Theorem for Line Integrals]] (§109.1)
-- [[Test for Conservative Fields]] (§110.5)
+- [[Limit Laws]] (§9.1)
+- [[Product Rule]] (§18.1)
+- [[Quotient Rule]] (§18.2)
+- [[Chain Rule]] (§20.2)
+- [[Derivative of an Inverse Function]] (§22.1)
+- [[Fermat's Theorem on Local Extrema]] (§28.2)
+- [[Rolle's Theorem]] (§29.1)
+- [[L'Hospital's Rule]] (§31.2)
+- [[Substitution Rule]] (§43.1)
+- [[Integration by Parts]] (§51.1)
+- [[Arc Length Formula]] (§60.1)
+- [[Test for Divergence]] (§82.5)
+- [[Integral Test]] (§83.1)
+- [[Direct Comparison Test]] (§84.1)
+- [[Alternating Series Test]] (§85.1)
+- [[Ratio Test]] (§86.1)
+- [[Taylor's Inequality]] (§90.4)
+- [[Fundamental Theorem for Line Integrals]] (§128.1)
+- [[Test for Conservative Fields]] (§131.3)
 
 ## Course record (MATH 233)
 | Exam | Coverage | Notes |
 |---|---|---|
-| Exam 1 (March 29, 2023) | Stewart 12.1–12.6, 13.1–13.4, 14.1–14.6 | §93–§111 |
-| Exam 2 (April 25, 2023) | 14.7, 14.8, 15.1–15.8 | §113–§123 |
-| Final (May 23, 2023) | cumulative, emphasis on Chapter 16 | §93–§137 |
+| Exam 1 (March 29, 2023) | Stewart 12.1–12.6, 13.1–13.4, 14.1–14.6 | §80–§95 |
+| Exam 2 (April 25, 2023) | 14.7, 14.8, 15.1–15.8 | §96–§105 |
+| Final (May 23, 2023) | cumulative, emphasis on Chapter 16 | §80–§115 |
 
 Prerequisite: MATH 132 (Calculus II); Chapters 1–11 are included as the single-variable foundation.
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (203), [[Multivariable Analysis]] (163), [[Ordinary Differential Equations]] (63), [[Complex Variables]] (52), [[Applied Linear Algebra]] (43), [[Linear Algebra]] (28), [[Fourier Series and PDEs]] (28), [[Measure Theory]] (20), [[Logic and Proofs]] (19), [[Topology]] (7), [[Differentiable Manifolds]] (2).
+Number of *Connections* links from these notes to each Math subject: [[Single Variable Analysis]] (203), [[Multivariable Analysis]] (166), [[Ordinary Differential Equations]] (67), [[Complex Variables]] (54), [[Applied Linear Algebra]] (43), [[Fourier Series and PDEs]] (29), [[Linear Algebra]] (28), [[Measure Theory]] (20), [[Logic and Proofs]] (19), [[Topology]] (7), [[Differentiable Manifolds]] (2).

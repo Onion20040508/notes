@@ -15,7 +15,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 ## Orthogonal Complements
 
-> [!definition] Definition §60.1: Orthogonal Complement
+> [!definition] Definition §50.1: Orthogonal Complement
 > Let $W$ be a subspace of $\mathbb{R}^n$. A vector $\mathbf{z}$ is **orthogonal to $W$** if $\mathbf{z}$ is orthogonal to every vector in $W$. The set of all vectors orthogonal to $W$ is the **orthogonal complement** of $W$, written $W^\perp$ (read "$W$ perp"):
 >
 > $$
@@ -26,7 +26,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 ^def-50-1
 
-> [!theorem] Theorem §60.1: Basic Facts About the Orthogonal Complement
+> [!theorem] Theorem §50.1: Basic Facts About the Orthogonal Complement
 > Let $W$ be a subspace of $\mathbb{R}^n$.
 >
 > 1. A vector $\mathbf{x}$ is in $W^\perp$ if and only if $\mathbf{x}$ is orthogonal to every vector in a set that spans $W$.
@@ -54,7 +54,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 *Uses:* [[§49 Inner Product, Length, and Orthogonality#^thm-49-1|§49.1]], [[§21 Subspaces of ℝⁿ#^def-21-1|Def. §21.1]] (subspace)
 
-> [!theorem] Theorem §60.2: The Fundamental Subspaces Are Orthogonal Complements
+> [!theorem] Theorem §50.2: The Fundamental Subspaces Are Orthogonal Complements
 > Let $A$ be an $m \times n$ matrix. The orthogonal complement of the row space of $A$ is the null space of $A$, and the orthogonal complement of the column space of $A$ is the null space of $A^T$:
 >
 > $$
@@ -78,9 +78,9 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§23 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ([[§50 Orthogonal Complements and Angles#^prop-50-3|Proposition §50.3]] and [[§50 Orthogonal Complements and Angles#^cor-50-4|Corollary §50.4]] below).
-> - In a Hilbert space the orthogonal complement ([[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]) of any set is a closed subspace, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]], and the double complement is the closed span, [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
+> - In a Hilbert space the orthogonal complement ([[§25 Projection and Orthogonal Decomposition#^def-25-1|556 Def. §25.1]]) of any set is a closed subspace, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]], and the double complement is the closed span, [[§25 Projection and Orthogonal Decomposition#^thm-25-6|556 Thm. §25.6]].
 
-> [!theorem] Proposition §60.4: Dimension of the Orthogonal Complement
+> [!theorem] Proposition §50.3: Dimension of the Orthogonal Complement
 > If $W$ is a subspace of $\mathbb{R}^n$, then
 >
 > $$
@@ -102,7 +102,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 *Uses:* [[§50 Orthogonal Complements and Angles#^thm-50-2|§50.2]], [[§34 Rank#^thm-34-3|§34.3]] (the Rank Theorem)
 
-> [!theorem] Corollary §60.3: The Double Complement
+> [!theorem] Corollary §50.4: The Double Complement
 > If $W$ is a subspace of $\mathbb{R}^n$, then $(W^\perp)^\perp = W$. In particular, for an $m \times n$ matrix $A$,
 >
 > $$
@@ -131,7 +131,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 ![[m235-40-1.svg]]
 *The four fundamental subspaces of an $m \times n$ matrix $A$. In $\mathbb{R}^n$, $\operatorname{Row} A$ and $\operatorname{Nul} A$ are orthogonal complements ([[§50 Orthogonal Complements and Angles#^thm-50-2|Theorem §50.2]]); in $\mathbb{R}^m$, so are $\operatorname{Col} A$ and $\operatorname{Nul} A^T$. Their dimensions add up to $n$ and to $m$ ([[§50 Orthogonal Complements and Angles#^prop-50-3|Proposition §50.3]]): $\operatorname{rank} A + \dim \operatorname{Nul} A = n$ and $\operatorname{rank} A + \dim \operatorname{Nul} A^T = m$.*
 
-> [!example] Example §60.1: A Plane and Its Normal Line
+> [!example] Example §50.1: A Plane and Its Normal Line
 > **(a)** Let $W$ be a plane through the origin in $\mathbb{R}^3$ and $L$ the line through the origin perpendicular to $W$. For nonzero $\mathbf{z} \in L$ and $\mathbf{w} \in W$, the segments from $\mathbf{0}$ to $\mathbf{z}$ and to $\mathbf{w}$ are perpendicular, so $\mathbf{z} \cdot \mathbf{w} = 0$. In fact $L$ consists of *all* vectors orthogonal to $W$, and $W$ of all vectors orthogonal to $L$:
 >
 > $$
@@ -151,7 +151,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 ^ex-50-1
 
-> [!example] Example §60.2: Testing Membership in an Orthogonal Complement
+> [!example] Example §50.2: Testing Membership in an Orthogonal Complement
 > Let $W \subseteq \mathbb{R}^4$ be the set of solutions of
 >
 > $$
@@ -233,4 +233,4 @@ The main theorem says that the row space and the null space of a matrix are orth
 >
 > *Source: 235 lecture L22*
 
-^rem-50-2
+^rem-50-1

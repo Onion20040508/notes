@@ -24,7 +24,7 @@ $$
 
 where $s$, $s'$, $q$ and $p$ are continuous and $s$ and $p$ are positive for $l \le x \le r$. (The differential equation is rather general, but the boundary conditions are very special.)
 
-> [!definition] Definition §51.1: Rayleigh Quotient
+> [!definition] Definition §41.1: Rayleigh Quotient
 > For a function $y$ on $l \le x \le r$, let
 >
 > $$
@@ -37,7 +37,7 @@ where $s$, $s'$, $q$ and $p$ are continuous and $s$ and $p$ are positive for $l 
 
 ^def-41-1
 
-> [!theorem] Proposition §51.1: The First Eigenvalue Is the Rayleigh Quotient of Its Eigenfunction
+> [!theorem] Proposition §41.1: The First Eigenvalue Is the Rayleigh Quotient of Its Eigenfunction
 > If $\phi_1$ is the eigenfunction of (1)–(2) corresponding to the smallest eigenvalue $\lambda_1^2$, then
 >
 > $$
@@ -113,7 +113,7 @@ For instance (Powers' Exercise 3.5.1), if $q \ge 0$ then $N(\phi_1) \ge 0$, so $
 
 ^rem-41-2
 
-> [!example] Example §51.1: A Polynomial Trial Function for the Uniform String
+> [!example] Example §41.1: A Polynomial Trial Function for the Uniform String
 > Estimate the first eigenvalue of $\phi'' + \lambda^2\phi = 0$, $0 < x < 1$, $\phi(0) = \phi(1) = 0$.
 >
 > Here $s = p = 1$, $q = 0$. Try $y(x) = x(1 - x)$, which satisfies the boundary conditions and does not cross the axis. Then $y'(x) = 1 - 2x$ and
@@ -134,7 +134,7 @@ For instance (Powers' Exercise 3.5.1), if $q \ge 0$ then $N(\phi_1) \ge 0$, so $
 
 ^ex-41-1
 
-> [!example] Example §51.2: A Nonuniform Problem
+> [!example] Example §41.2: A Nonuniform Problem
 > Estimate the first eigenvalue of
 >
 > $$
@@ -169,7 +169,7 @@ For instance (Powers' Exercise 3.5.1), if $q \ge 0$ then $N(\phi_1) \ge 0$, so $
 
 ^ex-41-2
 
-> [!example] Example §51.3: Improving the Estimate with a Parameter
+> [!example] Example §41.3: Improving the Estimate with a Parameter
 > In Example §41.1, use the one-parameter family of trial functions $y_b(x) = x(1 - x)\big(1 + b\,x(1 - x)\big)$ and choose $b$ to make the Rayleigh quotient as small as possible.
 >
 > Each $y_b$ vanishes at $0$ and $1$. Expanding and integrating,

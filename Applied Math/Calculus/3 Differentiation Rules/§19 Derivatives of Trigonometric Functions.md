@@ -19,7 +19,7 @@ Throughout, $\sin x$ means the sine of the angle whose **radian** measure is $x$
 
 Sketching the slopes of the tangent lines to $y = \sin x$ (zero at the peaks and troughs, largest at $0, \pm 2\pi, \ldots$, most negative at $\pm\pi, \ldots$) suggests that the graph of the derivative is the cosine curve.
 
-> [!theorem] Theorem §22.1: Derivative of Sine
+> [!theorem] Theorem §19.1: Derivative of Sine
 > $$
 > \frac{d}{dx}(\sin x) = \cos x .
 > $$
@@ -54,7 +54,7 @@ Sketching the slopes of the tangent lines to $y = \sin x$ (zero at the peaks and
 
 For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \sin x$.
 
-> [!theorem] Theorem §22.2: Derivative of Cosine
+> [!theorem] Theorem §19.2: Derivative of Cosine
 > $$
 > \frac{d}{dx}(\cos x) = -\sin x .
 > $$
@@ -79,7 +79,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 *Uses:* [[§15 The Derivative as a Function#^def-15-1|Def. §15.1]] (definition of $f'(x)$), [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|§9.1]] (Limit Laws), [[§19 Derivatives of Trigonometric Functions#^thm-19-6|§19.6]], [[§19 Derivatives of Trigonometric Functions#^thm-19-7|§19.7]]
 
-> [!theorem] Theorem §22.3: Derivative of Tangent
+> [!theorem] Theorem §19.3: Derivative of Tangent
 > $$
 > \frac{d}{dx}(\tan x) = \sec^2 x .
 > $$
@@ -104,7 +104,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 *Uses:* [[§18 The Product and Quotient Rules#^thm-18-2|§18.2]], [[§19 Derivatives of Trigonometric Functions#^thm-19-1|§19.1]], [[§19 Derivatives of Trigonometric Functions#^thm-19-2|§19.2]]
 
-> [!theorem] Theorem §22.4: Derivatives of the Trigonometric Functions
+> [!theorem] Theorem §19.4: Derivatives of the Trigonometric Functions
 > On their domains,
 >
 > $$
@@ -136,7 +136,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 *Uses:* [[§18 The Product and Quotient Rules#^thm-18-2|§18.2]], [[§19 Derivatives of Trigonometric Functions#^thm-19-1|§19.1]], [[§19 Derivatives of Trigonometric Functions#^thm-19-2|§19.2]], [[§19 Derivatives of Trigonometric Functions#^thm-19-3|§19.3]]
 
-> [!example] Example §22.1: Horizontal Tangents of a Trigonometric Quotient
+> [!example] Example §19.1: Horizontal Tangents of a Trigonometric Quotient
 > Differentiate $f(x) = \dfrac{\sec x}{1 + \tan x}$. For what values of $x$ does the graph of $f$ have a horizontal tangent?
 >
 > By the Quotient Rule and [[§19 Derivatives of Trigonometric Functions#^thm-19-4|Theorem §19.4]],
@@ -155,7 +155,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 ^ex-19-1
 
-> [!example] Example §22.2: Simple Harmonic Motion
+> [!example] Example §19.2: Simple Harmonic Motion
 > An object fastened to the end of a vertical spring is stretched $4$ cm beyond its rest position and released at time $t = 0$. With the downward direction positive, its position at time $t$ is $s = f(t) = 4\cos t$. Find the velocity and acceleration at time $t$ and use them to analyze the motion.
 >
 > $$
@@ -171,7 +171,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 ^ex-19-2
 
-> [!example] Example §22.3: The 27th Derivative of Cosine
+> [!example] Example §19.3: The 27th Derivative of Cosine
 > Find the 27th derivative of $\cos x$.
 >
 > For $f(x) = \cos x$,
@@ -190,7 +190,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §19.1]] used two limits, proved now. The first needs a comparison of $\theta$ with $\tan\theta$.
 
-> [!theorem] Lemma §22.5: The Angle Is at Most Its Tangent
+> [!theorem] Lemma §19.5: The Angle Is at Most Its Tangent
 > If $0 < \theta < \pi/2$, then $\theta \le \tan\theta$.
 >
 > *Stewart: Appendix F (Section 3.3)*
@@ -217,7 +217,7 @@ The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §1
 
 *Uses:* [[§60 Arc Length#^def-60-1|Def. §60.1]] (definition of arc length), [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-4|§10.4]] (Theorem 2.3.2)
 
-> [!theorem] Theorem §22.6: The Limit of sin θ over θ
+> [!theorem] Theorem §19.6: The Limit of sin θ over θ
 > $$
 > \lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1 .
 > $$
@@ -256,7 +256,7 @@ The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §1
 ![[m233-16-1.svg]]
 *The three lengths in the proof, on the unit circle: $\sin\theta = |BC|$ (blue), $\theta = \text{arc } AB$ (red) and $\tan\theta = |AD|$ (green). As $\theta \to 0$ they become indistinguishable, and dividing $\sin\theta \le \theta \le \tan\theta$ by $\sin\theta$ squeezes $\theta/\sin\theta$ between $1$ and $1/\cos\theta$.*
 
-> [!theorem] Theorem §22.7: The Limit of (cos θ − 1) over θ
+> [!theorem] Theorem §19.7: The Limit of (cos θ − 1) over θ
 > $$
 > \lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0 .
 > $$
@@ -286,7 +286,7 @@ The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §1
 
 *Uses:* [[§19 Derivatives of Trigonometric Functions#^thm-19-6|§19.6]], [[§12 Continuity#^thm-12-3|§12.3]], [[§9 Calculating Limits Using the Limit Laws#^thm-9-1|§9.1]] (Limit Laws 4 and 5)
 
-> [!example] Example §22.4: Rescaling the Angle
+> [!example] Example §19.4: Rescaling the Angle
 > Find $\displaystyle\lim_{x \to 0} \frac{\sin 7x}{4x}$.
 >
 > To apply [[§19 Derivatives of Trigonometric Functions#^thm-19-6|Theorem §19.6]], the argument of sine must match the denominator. Multiply and divide by $7$ (note that $\sin 7x \ne 7\sin x$):
@@ -305,7 +305,7 @@ The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §1
 
 ^ex-19-4
 
-> [!example] Example §22.5: Dividing by the Variable
+> [!example] Example §19.5: Dividing by the Variable
 > **(a)** Calculate $\displaystyle\lim_{x \to 0} x\cot x$. Divide numerator and denominator by $x$:
 >
 > $$

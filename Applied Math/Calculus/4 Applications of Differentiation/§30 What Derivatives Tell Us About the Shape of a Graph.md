@@ -44,7 +44,7 @@ Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^cor-29-7|451 Cor. §29.7]], which also gives the non-strict version ($f' \ge 0$ implies $f$ non-decreasing).
 
-> [!example] Example §33.1: Intervals of Increase and Local Extrema
+> [!example] Example §30.1: Intervals of Increase and Local Extrema
 > Find where $f(x) = 3x^4 - 4x^3 - 12x^2 + 5$ is increasing and where it is decreasing, and find its local maximum and minimum values.
 >
 > $$
@@ -98,7 +98,7 @@ By Fermat's Theorem ([[§28 Maximum and Minimum Values#^cor-28-3|Corollary §28.
 
 *Uses:* [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|§29.2]], [[§30 What Derivatives Tell Us About the Shape of a Graph#^thm-30-1|§30.1]], [[§28 Maximum and Minimum Values#^def-28-2|Def. §28.2]]
 
-> [!example] Example §33.2: A Trigonometric Function
+> [!example] Example §30.2: A Trigonometric Function
 > Find the local maximum and minimum values of $g(x) = x + 2\sin x$, $0 \le x \le 2\pi$.
 >
 > $g'(x) = 1 + 2\cos x$, so $g'(x) = 0$ when $\cos x = -\frac12$, that is, at $x = 2\pi/3$ and $x = 4\pi/3$. Since $g$ is differentiable everywhere, these are the only critical numbers. On each interval between them $g'$ has constant sign, which a test value shows (or the graph of $\cos$: $g'(x) > 0$ exactly when $\cos x > -\frac12$):
@@ -236,7 +236,7 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 
 ^rem-30-1
 
-> [!example] Example §33.3: Concavity, Inflection Points and the Second Derivative Test
+> [!example] Example §30.3: Concavity, Inflection Points and the Second Derivative Test
 > Discuss the curve $y = x^4 - 4x^3$ with respect to concavity, points of inflection, and local maxima and minima.
 >
 > With $f(x) = x^4 - 4x^3$,
@@ -270,7 +270,7 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 
 The first and second derivatives together determine the shape of a graph.
 
-> [!example] Example §33.4: A Graph with a Cusp and Vertical Tangents
+> [!example] Example §30.4: A Graph with a Cusp and Vertical Tangents
 > Sketch the graph of $f(x) = x^{2/3}(6 - x)^{1/3}$.
 >
 > The domain is $\mathbb{R}$. By the Product and Chain Rules,

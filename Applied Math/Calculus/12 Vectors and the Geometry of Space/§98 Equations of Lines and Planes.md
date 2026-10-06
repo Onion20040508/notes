@@ -15,7 +15,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ## Lines
 
-> [!theorem] Theorem §115.1: Vector Equation of a Line
+> [!theorem] Theorem §98.1: Vector Equation of a Line
 > Let $L$ be the line through the point $P_0(x_0, y_0, z_0)$ parallel to the vector $\mathbf{v} \ne \mathbf{0}$, and let $\mathbf{r}_0 = \langle x_0, y_0, z_0 \rangle$ be the position vector of $P_0$. A point $P$ with position vector $\mathbf{r}$ lies on $L$ if and only if
 >
 > $$
@@ -38,21 +38,21 @@ A line in space is determined by a point and a direction vector, a plane by a po
 > [!remark]- Connections
 > - Matrix version: [[§6 Solution Sets of Linear Systems#^thm-6-3|235 Thm. §6.3]] (the solution set of a consistent $A\mathbf{x} = \mathbf{b}$ is $\mathbf{p} + \operatorname{Nul} A$; with one free variable it is the line $\mathbf{x} = \mathbf{p} + t\mathbf{v}$), worked in [[§6 Solution Sets of Linear Systems#^ex-6-3|235 Ex. §6.3]].
 
-> [!definition] Definition §115.1: Vector Equation and Parameter
+> [!definition] Definition §98.1: Vector Equation and Parameter
 > Equation (1) is a **vector equation** of $L$, and $t$ is the **parameter**: each value of $t$ gives the position vector of one point of $L$, and as $t$ varies the line is traced out by the tip of $\mathbf{r}$. Positive values of $t$ give points on one side of $P_0$, negative values points on the other side.
 >
 > *Stewart: 12.5 (text)*
 
 ^def-98-1
 
-> [!definition] Definition §115.2: Direction Numbers
+> [!definition] Definition §98.2: Direction Numbers
 > If $\mathbf{v} = \langle a, b, c \rangle$ is used to describe the direction of $L$, then $a$, $b$, $c$ are **direction numbers** of $L$. Any three numbers proportional to $a$, $b$, $c$ are also direction numbers of $L$.
 >
 > *Stewart: 12.5 (text)*
 
 ^def-98-2
 
-> [!theorem] Proposition §115.2: Parametric Equations of a Line
+> [!theorem] Proposition §98.2: Parametric Equations of a Line
 > Parametric equations for the line through the point $(x_0, y_0, z_0)$ and parallel to the direction vector $\langle a, b, c \rangle$ are
 >
 > $$
@@ -75,7 +75,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^rem-98-1
 
-> [!theorem] Proposition §115.3: Symmetric Equations of a Line
+> [!theorem] Proposition §98.3: Symmetric Equations of a Line
 > If none of the direction numbers $a$, $b$, $c$ is $0$, the line of [[§98 Equations of Lines and Planes#^prop-98-2|Proposition §98.2]] is described by the **symmetric equations**
 >
 > $$
@@ -99,7 +99,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 *Uses:* [[§98 Equations of Lines and Planes#^prop-98-2|§98.2]], [[§94 Vectors#^thm-94-2|§94.2]]
 
-> [!theorem] Proposition §115.4: Line Segment
+> [!theorem] Proposition §98.4: Line Segment
 > The line segment from $\mathbf{r}_0$ to $\mathbf{r}_1$ is given by the vector equation
 >
 > $$
@@ -117,7 +117,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 *Uses:* [[§98 Equations of Lines and Planes#^thm-98-1|§98.1]]
 
-> [!example] Example §115.1: Lines Through Given Points
+> [!example] Example §98.1: Lines Through Given Points
 > **(a)** Find a vector equation and parametric equations for the line through $(5, 1, 3)$ parallel to $\mathbf{i} + 4\mathbf{j} - 2\mathbf{k}$, and two other points on it.
 >
 > Here $\mathbf{r}_0 = 5\mathbf{i} + \mathbf{j} + 3\mathbf{k}$ and $\mathbf{v} = \mathbf{i} + 4\mathbf{j} - 2\mathbf{k}$, so $\mathbf{r} = (5 + t)\mathbf{i} + (1 + 4t)\mathbf{j} + (3 - 2t)\mathbf{k}$, that is, $x = 5 + t$, $y = 1 + 4t$, $z = 3 - 2t$. The value $t = 1$ gives the point $(6, 5, 1)$ and $t = -1$ gives $(4, -3, 5)$.
@@ -139,7 +139,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^ex-98-1
 
-> [!definition] Definition §115.3: Skew Lines
+> [!definition] Definition §98.3: Skew Lines
 > Two lines are **skew lines** if they do not intersect and are not parallel (and therefore do not lie in the same plane).
 >
 > *Stewart: 12.5 (text)*
@@ -154,7 +154,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^rem-98-2
 
-> [!example] Example §115.2: Skew Lines
+> [!example] Example §98.2: Skew Lines
 > **(a)** Show that $L_1$: $x = 1 + t$, $y = -2 + 3t$, $z = 4 - t$ and $L_2$: $x = 2s$, $y = 3 + s$, $z = -3 + 4s$ are skew.
 >
 > The direction vectors $\langle 1, 3, -1 \rangle$ and $\langle 2, 1, 4 \rangle$ are not parallel (their components are not proportional). An intersection point would need $t$, $s$ with
@@ -176,7 +176,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ## Planes
 
-> [!definition] Definition §115.4: Normal Vector
+> [!definition] Definition §98.4: Normal Vector
 > A plane in space is determined by a point $P_0(x_0, y_0, z_0)$ in the plane and a vector $\mathbf{n}$ orthogonal to the plane, called a **normal vector**. (A single vector parallel to the plane does not determine its "direction", but a perpendicular one does.)
 >
 > *Stewart: 12.5 (text)*
@@ -245,7 +245,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 > - A plane through the origin is the orthogonal complement $\{\mathbf{n}\}^\perp$ of a normal vector ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]]), and any plane or line is a translate $\mathbf{r}_0 + U$ of a 2- or 1-dimensional subspace $U$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]); so is the solution set of any consistent linear system.
 > - Matrix version: [[§6 Solution Sets of Linear Systems#^ex-6-4|235 Ex. §6.4]] (two planes intersected by row reduction, and a plane not through the origin in parametric vector form) and [[§50 Orthogonal Complements and Angles#^ex-50-1|235 Ex. §50.1]] (a plane through $\mathbf{0}$ and its normal line as orthogonal complements).
 
-> [!example] Example §115.3: Equations of Planes and Where a Line Meets a Plane
+> [!example] Example §98.3: Equations of Planes and Where a Line Meets a Plane
 > **(a)** The plane through $(2, 4, -1)$ with normal vector $\mathbf{n} = \langle 2, 3, 4 \rangle$ is $2(x - 2) + 3(y - 4) + 4(z + 1) = 0$, or $2x + 3y + 4z = 12$. Setting $y = z = 0$ gives the $x$-intercept $6$; similarly the $y$-intercept is $4$ and the $z$-intercept is $3$, which is enough to sketch the triangular piece of the plane in the first octant.
 >
 > **(b)** Find an equation of the plane through $P(1, 3, 2)$, $Q(3, -1, 6)$ and $R(5, 2, 0)$. The vectors $\mathbf{a} = \overrightarrow{PQ} = \langle 2, -4, 4 \rangle$ and $\mathbf{b} = \overrightarrow{PR} = \langle 4, -1, -2 \rangle$ lie in the plane, so their cross product is a normal vector ([[§96 The Cross Product#^thm-96-2|Theorem §96.2]]):
@@ -299,7 +299,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^ex-98-3
 
-> [!definition] Definition §115.5: Parallel Planes
+> [!definition] Definition §98.5: Parallel Planes
 > Two planes are **parallel** if their normal vectors are parallel.
 >
 > *Stewart: 12.5 (text)*
@@ -318,7 +318,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^rem-98-3
 
-> [!example] Example §115.4: The Angle and the Line Between Two Planes
+> [!example] Example §98.4: The Angle and the Line Between Two Planes
 > **(a)** Find the angle between the planes $x + y + z = 1$ and $x - 2y + 3z = 1$, and symmetric equations for their line of intersection $L$.
 >
 > The normal vectors are $\mathbf{n}_1 = \langle 1, 1, 1 \rangle$ and $\mathbf{n}_2 = \langle 1, -2, 3 \rangle$. By [[§95 The Dot Product#^cor-95-3|Corollary §95.3]],
@@ -378,7 +378,7 @@ A line in space is determined by a point and a direction vector, a plane by a po
 
 ^rem-98-4
 
-> [!example] Example §115.5: Distances
+> [!example] Example §98.5: Distances
 > **(a)** Find the distance between the parallel planes $10x + 2y - 2z = 5$ and $5x + y - z = 1$.
 >
 > The normals $\langle 10, 2, -2 \rangle$ and $\langle 5, 1, -1 \rangle$ are parallel. Putting $y = z = 0$ in the first equation gives $10x = 5$, so $\big(\frac12, 0, 0\big)$ is on the first plane. Its distance to $5x + y - z - 1 = 0$ is

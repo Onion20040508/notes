@@ -11,7 +11,7 @@ tags: [calculus]
 
 *Stewart, Appendix G.*
 
-With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§144 The Logarithm Defined as an Integral#^def-144-1|Definition §144.1]]) and $e^x$ as its inverse ([[§144 The Logarithm Defined as an Integral#^def-144-3|Definition §144.3]], [[§144 The Logarithm Defined as an Integral#^def-144-4|Definition §144.4]]), $b^x$ and $\log_b x$ are defined from these. Every law of logarithms and exponents and every differentiation formula is then proved, and the new definitions agree with the old ones ([[§145 General Exponential and Logarithmic Functions#^thm-145-5|Theorem §145.5]] and [[§145 General Exponential and Logarithmic Functions#^rem-145-2|the closing remark]]).
+With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§144 The Logarithm Defined as an Integral#^def-144-1|Definition §144.1]]) and $e^x$ as its inverse ([[§144 The Logarithm Defined as an Integral#^def-144-3|Definition §144.3]], [[§144 The Logarithm Defined as an Integral#^def-144-4|Definition §144.4]]), $b^x$ and $\log_b x$ are defined from these. Every law of logarithms and exponents and every differentiation formula is then proved, and the new definitions agree with the old ones ([[§145 General Exponential and Logarithmic Functions#^thm-145-5|Theorem §145.5]] and [[§145 General Exponential and Logarithmic Functions#^rem-145-1|the closing remark]]).
 
 ## General Exponential Functions
 
@@ -206,4 +206,4 @@ With $\ln x$ *defined* as $\int_1^x dt/t$ ([[§144 The Logarithm Defined as an I
 >
 > **Irrational exponents agree.** Let $b > 1$ and $x$ irrational. For rationals $r < x < s$, the function $t \mapsto e^{t\ln b}$ is increasing ([[§145 General Exponential and Logarithmic Functions#^thm-145-3|Theorem §145.3]]) and equals $b^t$ at rational $t$ (by (9) and Law 3 of [[§144 The Logarithm Defined as an Integral#^thm-144-6|Theorem §144.6]], as in [[§145 General Exponential and Logarithmic Functions#^def-145-1|Definition §145.1]]), so $b^r < e^{x\ln b} < b^s$. Thus $e^{x\ln b}$ is the unique number between all $b^r$ and all $b^s$ that [[§4 Exponential Functions#^def-4-3|Definition §4.3]] calls $b^x$; for $0 < b < 1$ reverse the inequalities, and $1^x = e^0 = 1$. So every result proved here is a proof of the corresponding statement taken on credit earlier.
 
-^rem-145-2
+^rem-145-1

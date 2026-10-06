@@ -15,14 +15,14 @@ Every rational function can be integrated. Taking $\frac{2}{x - 1} - \frac{1}{x 
 
 ## The Method of Partial Fractions
 
-> [!definition] Definition §62.1: Proper and Improper Rational Functions
+> [!definition] Definition §54.1: Proper and Improper Rational Functions
 > If $P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0$ with $a_n \ne 0$, then $P$ has **degree** $n$, written $\deg(P) = n$. A rational function $f(x) = P(x)/Q(x)$, with $P$ and $Q$ polynomials, is **proper** if $\deg(P) < \deg(Q)$ and **improper** if $\deg(P) \ge \deg(Q)$.
 >
 > *Stewart: 7.4 (text)*
 
 ^def-54-1
 
-> [!theorem] Theorem §62.1: Division of Polynomials
+> [!theorem] Theorem §54.1: Division of Polynomials
 > If $f = P/Q$ is improper, then long division of $P$ by $Q$ gives polynomials $S$ (the quotient) and $R$ (the remainder) with $\deg(R) < \deg(Q)$ and
 >
 > $$
@@ -35,7 +35,7 @@ Every rational function can be integrated. Taking $\frac{2}{x - 1} - \frac{1}{x 
 
 *Stewart takes long division for granted. It is the division algorithm for polynomials, proved in [[§13 Polynomials#^ladr-4-9|LADR 4.9]].*
 
-> [!theorem] Theorem §62.2: Factorization over the Reals
+> [!theorem] Theorem §54.2: Factorization over the Reals
 > Every polynomial $Q$ with real coefficients can be factored as a constant times a product of linear factors $ax + b$ and irreducible quadratic factors $ax^2 + bx + c$ with $b^2 - 4ac < 0$.
 >
 > *Stewart: 7.4 (text)*
@@ -49,7 +49,7 @@ For instance, $x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)$.
 > [!remark]- Connections
 > - Both theorems are proved in Linear Algebra: [[§13 Polynomials#^ladr-4-9|LADR 4.9]] (division with a basis of $\mathcal{P}_n$ instead of long division) and [[§13 Polynomials#^ladr-4-16|LADR 4.16]] (existence and uniqueness of the real factorization, from the complex one, since nonreal roots come in conjugate pairs).
 
-> [!theorem] Theorem §63.1: Partial Fraction Decomposition
+> [!theorem] Theorem §54.3: Partial Fraction Decomposition
 > Let $R/Q$ be a proper rational function, with $Q$ factored as in [[§54 Integration of Rational Functions by Partial Fractions#^thm-54-2|Theorem §54.2]]. Then $R(x)/Q(x)$ is a sum of **partial fractions**
 >
 > $$
@@ -125,7 +125,7 @@ $$
 
 ^rem-54-2
 
-> [!theorem] Theorem §63.2: The Inverse Tangent Integral
+> [!theorem] Theorem §54.4: The Inverse Tangent Integral
 > For $a \ne 0$,
 >
 > $$
@@ -147,7 +147,7 @@ $$
 
 *Uses:* [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-8|§22.8]], [[§20 The Chain Rule#^thm-20-2|§20.2]]
 
-> [!theorem] Proposition §63.3: The Integral of $1/(x^2 - a^2)$
+> [!theorem] Proposition §54.5: The Integral of $1/(x^2 - a^2)$
 > For $a \ne 0$,
 >
 > $$
@@ -173,7 +173,7 @@ $$
 
 ## Examples
 
-> [!example] Example §62.1: Distinct Linear Factors
+> [!example] Example §54.1: Distinct Linear Factors
 > Evaluate $\displaystyle\int \frac{x^2 + 2x - 1}{2x^3 + 3x^2 - 2x}\,dx$.
 >
 > The integrand is proper, so no division is needed. Factor: $2x^3 + 3x^2 - 2x = x(2x^2 + 3x - 2) = x(2x - 1)(x + 2)$, three distinct linear factors. So
@@ -202,7 +202,7 @@ $$
 
 ^ex-54-1
 
-> [!example] Example §63.1: Division and a Repeated Linear Factor
+> [!example] Example §54.2: Division and a Repeated Linear Factor
 > Find $\displaystyle\int \frac{x^4 - 2x^2 + 4x + 1}{x^3 - x^2 - x + 1}\,dx$.
 >
 > **Divide.** $x^4 - 2x^2 + 4x + 1 = (x + 1)(x^3 - x^2 - x + 1) + 4x$, so the integrand is $x + 1 + \dfrac{4x}{x^3 - x^2 - x + 1}$.
@@ -234,7 +234,7 @@ $$
 
 ^ex-54-2
 
-> [!example] Example §63.2: Irreducible Quadratic Factors
+> [!example] Example §54.3: Irreducible Quadratic Factors
 > Evaluate **(a)** $\displaystyle\int \frac{2x^2 - x + 4}{x^3 + 4x}\,dx$ and **(b)** $\displaystyle\int \frac{4x^2 - 3x + 2}{4x^2 - 4x + 3}\,dx$.
 >
 > **(a)** $x^3 + 4x = x(x^2 + 4)$, and $x^2 + 4$ is irreducible (Case III):
@@ -264,7 +264,7 @@ $$
 
 ^ex-54-3
 
-> [!example] Example §63.3: A Repeated Irreducible Quadratic Factor
+> [!example] Example §54.4: A Repeated Irreducible Quadratic Factor
 > **(a)** Write out the form of the partial fraction decomposition of $\dfrac{x^3 + x^2 + 1}{x(x - 1)(x^2 + x + 1)(x^2 + 1)^3}$. **(b)** Evaluate $\displaystyle\int \frac{1 - x + 2x^2 - x^3}{x(x^2 + 1)^2}\,dx$.
 >
 > **(a)** One term for each linear factor, one for $x^2 + x + 1$ (irreducible: discriminant $-3$), and three for $(x^2 + 1)^3$ (Case IV):
@@ -303,7 +303,7 @@ $$
 
 Some integrands that are not rational become rational after a suitable substitution. In particular, if the integrand contains $\sqrt[n]{g(x)}$, the substitution $u = \sqrt[n]{g(x)}$ may work.
 
-> [!example] Example §63.4: A Rationalizing Substitution
+> [!example] Example §54.5: A Rationalizing Substitution
 > Evaluate $\displaystyle\int \frac{\sqrt{x + 4}}{x}\,dx$.
 >
 > Let $u = \sqrt{x + 4}$. Then $u^2 = x + 4$, so $x = u^2 - 4$ and $dx = 2u\,du$:

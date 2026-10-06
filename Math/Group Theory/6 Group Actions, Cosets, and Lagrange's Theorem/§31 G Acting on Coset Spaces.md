@@ -59,4 +59,4 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The homomorphism $G \to S_{G/H}$ of this action produces a normal subgroup inside $H$: [[§39 Sources of Normal Subgroups#^thm-39-5|A Normal Subgroup Inside a Subgroup of Finite Index, §39.5]], whose kernel is [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core, §39.6]].
-> - With topologies this is the model [[§13 Homogeneous Spaces#^def-13-1|homogeneous space]] (591 Def. §13.1): G/H with the quotient topology, [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|591 Def. §14.1]], and every homogeneous space is of this form, [[§14 The Topology of G∕H and Real Grassmannians#^thm-14-3|591 Thm. §14.3]].
+> - With topologies this is the model [[§14 Homogeneous Spaces#^def-14-2|homogeneous space]] (591 Def. §13.1): G/H with the quotient topology, [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|591 Def. §15.1]], and every homogeneous space is of this form, [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|591 Thm. §15.3]].

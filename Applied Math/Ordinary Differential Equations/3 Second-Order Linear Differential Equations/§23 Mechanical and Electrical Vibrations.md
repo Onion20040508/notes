@@ -17,7 +17,7 @@ A mass on a spring, with a damper and an external force, obeys $mu'' + \gamma u'
 
 A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretches it by $L$. Measure the displacement $u(t)$ of the mass from this equilibrium position, **positive downward**.
 
-> [!definition] Definition §28.1: Hooke's Law and the Spring Constant
+> [!definition] Definition §23.1: Hooke's Law and the Spring Constant
 > For a small elongation the spring force is proportional to the elongation and opposes it: an elongation $L$ produces the force $F_s = -kL$ (**Hooke's law**). The constant $k > 0$ is the **spring constant**; it has units of force per length. At equilibrium the weight $w = mg$ balances the spring force,
 >
 > $$
@@ -33,7 +33,7 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 > [!remark]- Connections
 > - See also: [[§48 Work#^def-48-4|Calc Def. §48.4]] (Stewart's Hooke's law $f(x) = kx$ for the force that holds the spring stretched; the restoring force $F_s = -kL$ here is its negative).
 
-> [!definition] Definition §28.2: Viscous Damping
+> [!definition] Definition §23.2: Viscous Damping
 > The **damping** (resistive) force $F_d$ acts opposite to the direction of motion. It is modeled as proportional to the speed, $|F_d| = \gamma|u'|$ (**viscous damping**). With the downward-positive convention this is, in both directions of motion,
 >
 > $$
@@ -46,7 +46,7 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 
 ^def-23-2
 
-> [!theorem] Proposition §28.1: The Equation of Motion
+> [!theorem] Proposition §23.1: The Equation of Motion
 > Under Hooke's law, viscous damping and an applied external force $F(t)$ (positive downward), the displacement $u(t)$ from equilibrium satisfies
 >
 > $$
@@ -104,7 +104,7 @@ mu'' + ku = 0 . \qquad (11)
 $$
 Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 
-> [!theorem] Proposition §28.2: Simple Harmonic Motion
+> [!theorem] Proposition §23.2: Simple Harmonic Motion
 > The general solution of $mu'' + ku = 0$ is
 >
 > $$
@@ -157,7 +157,7 @@ Its characteristic equation $mr^2 + k = 0$ has roots $r = \pm i\sqrt{k/m}$.
 
 ^def-23-3
 
-> [!example] Example §28.1: Setting Up and Solving Spring Problems
+> [!example] Example §23.1: Setting Up and Solving Spring Problems
 > **(a) Formulating.** A mass weighing 4 lb stretches a spring 2 in. It is given an additional 6-in displacement in the positive direction and released. The medium exerts a viscous resistance of 6 lb when the speed is 3 ft/s. Formulate the initial value problem.
 >
 > Measure $u$ in feet and $t$ in seconds. No external force is mentioned, so $F = 0$. Then
@@ -209,7 +209,7 @@ $$
 r_1, r_2 = \frac{-\gamma \pm \sqrt{\gamma^2 - 4km}}{2m} = \frac{\gamma}{2m}\left(-1 \pm \sqrt{1 - \frac{4km}{\gamma^2}}\right) . \qquad (22)
 $$
 
-> [!theorem] Theorem §28.3: The Three Damping Cases
+> [!theorem] Theorem §23.3: The Three Damping Cases
 > Let $m, \gamma, k > 0$. The general solution of $mu'' + \gamma u' + ku = 0$ is
 >
 > $$
@@ -291,7 +291,7 @@ $$
 
 So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that decides whether damping is small. Small damping barely changes the quasi-frequency, but over long times it can never be neglected: it is what makes the motion die out.
 
-> [!example] Example §28.2: An Underdamped Spring from Data
+> [!example] Example §23.2: An Underdamped Spring from Data
 > **(a)** A 96 lb weight stretches a spring 3.2 ft in equilibrium. It is subject to friction with damping coefficient $\gamma = 18$ lb·s/ft. The weight is initially displaced 6 inches below equilibrium and given a downward velocity of 10 ft/s. Find its displacement for $t \ge 0$.
 >
 > **Set up** ([[§23 Mechanical and Electrical Vibrations#^rem-23-1|Remark: Method — Setting Up a Spring–Mass Problem]]). $m = 96/32 = 3$, $k = 96/3.2 = 30$, $\gamma = 18$; $u(0) = \frac12$ ft (6 in, below is positive), $u'(0) = 10$ ft/s. So
@@ -327,7 +327,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 
 ^ex-23-2
 
-> [!example] Example §28.3: Classifying by the Damping Coefficient
+> [!example] Example §23.3: Classifying by the Damping Coefficient
 > Consider the spring–mass system $2\dfrac{d^2y}{dt^2} + \gamma\dfrac{dy}{dt} + 5y = 0$ with $0 \le \gamma < \infty$. Classify it (undamped, underdamped, critically damped, overdamped) according to $\gamma$, and find the values of $\gamma$ at which the type changes (the **bifurcation values**).
 >
 > Here $m = 2$, $k = 5$, and the roots of $2r^2 + \gamma r + 5 = 0$ are
@@ -351,7 +351,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 ![[m331-19-1.svg]]
 *[[§23 Mechanical and Electrical Vibrations#^ex-23-3|Example §23.3]] with $y(0) = 1$, $y'(0) = 0$. Undamped ($\gamma = 0$, dashed): $y = \cos(\sqrt{5/2}\,t)$. Underdamped ($\gamma = 2$): $y = e^{-t/2}(\cos\frac32 t + \frac13\sin\frac32 t)$ oscillates with decaying amplitude. Critically damped ($\gamma = 2\sqrt{10}$): $y = (1 + \frac{\sqrt{10}}{2}t)e^{-\sqrt{10}\,t/2}$, the fastest return without crossing. Overdamped ($\gamma = 12$): $y \approx 1.088e^{-0.450t} - 0.088e^{-5.550t}$, slowed by its root closer to $0$.*
 
-> [!example] Example §28.4: Small Damping
+> [!example] Example §23.4: Small Damping
 > The motion of a spring–mass system is governed by
 >
 > $$

@@ -34,7 +34,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 ^rem-20-1
 
-> [!theorem] Theorem §24.1: Repeated Roots
+> [!theorem] Theorem §20.1: Repeated Roots
 > If $b^2 - 4ac = 0$, so that the characteristic equation has the repeated root $r_1 = -b/(2a)$, then
 >
 > $$
@@ -102,7 +102,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 *Uses:* [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-2|Def. §18.2]], [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-4|§18.4]], [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-3|Def. §18.3]], [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^def-18-4|Def. §18.4]]
 
-> [!example] Example §24.1: A Repeated Root
+> [!example] Example §20.1: A Repeated Root
 > Solve $y'' - 8y' + 16y = 0$, $y(0) = -3$, $y'(0) = 2$.
 >
 > $r^2 - 8r + 16 = (r - 4)^2 = 0$ has the repeated root $r = 4$, so by [[§20 Repeated Roots; Reduction of Order#^thm-20-1|Theorem §20.1]]
@@ -121,7 +121,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 ^ex-20-1
 
-> [!example] Example §24.2: A Critical Initial Slope
+> [!example] Example §20.2: A Critical Initial Slope
 > Solve $y'' - y' + \frac{y}{4} = 0$, $y(0) = 2$, $y'(0) = \frac13$. (21)
 >
 > The characteristic equation $r^2 - r + \frac14 = (r - \frac12)^2 = 0$ has the repeated root $r_1 = r_2 = \frac12$, so the general solution is
@@ -160,7 +160,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 ## Summary
 
-> [!theorem] Theorem §24.2: General Solution of ay″ + by′ + cy = 0
+> [!theorem] Theorem §20.2: General Solution of ay″ + by′ + cy = 0
 > Let $r_1$ and $r_2$ be the roots of the characteristic equation
 >
 > $$
@@ -214,7 +214,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 
 ^rem-20-3
 
-> [!example] Example §24.3: Which Case Occurs?
+> [!example] Example §20.3: Which Case Occurs?
 > For which values of $\alpha$ does the characteristic equation of $y'' - 6y' + \alpha y = 0$ have two distinct real roots, two complex roots, one repeated real root?
 >
 > The characteristic equation $r^2 - 6r + \alpha = 0$ has discriminant $36 - 4\alpha$ and roots
@@ -243,7 +243,7 @@ $$
 
 is known.
 
-> [!theorem] Proposition §24.3: Reduction of Order
+> [!theorem] Proposition §20.3: Reduction of Order
 > Let $y_1$ be a solution of (29), not everywhere zero. Then $y = v(t)y_1(t)$ (30) is a solution of (29) if and only if $v$ satisfies
 >
 > $$
@@ -291,7 +291,7 @@ is known.
 
 ^rem-20-4
 
-> [!example] Example §24.4: Reduction of Order with Variable Coefficients
+> [!example] Example §20.4: Reduction of Order with Variable Coefficients
 > Given that $y_1(t) = t^{-1}$ is a solution of
 >
 > $$

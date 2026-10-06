@@ -11,7 +11,7 @@ tags: [multivariable-analysis, math452]
 
 Fubini's theorem allows us to compute double integrals as iterated single integrals and to change the order of integration. We develop this carefully.
 
-> [!theorem] Theorem §40.1: Fubini's Theorem — Rectangle Case
+> [!theorem] Theorem §23.1: Fubini's Theorem — Rectangle Case
 > Let $f: [a, b] \times [c, d] \to \mathbb{R}$ be continuous. Then:
 >
 > $$

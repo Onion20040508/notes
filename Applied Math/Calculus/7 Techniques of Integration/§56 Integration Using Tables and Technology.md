@@ -17,7 +17,7 @@ Tables of integrals list antiderivatives by the form of the integrand; Stewart's
 
 The entries used below are typical. Each one is proved by differentiating the right side, or derived by the methods of this chapter.
 
-> [!theorem] Proposition §65.1: Reduction Formulas for a Power Times Sine or Cosine
+> [!theorem] Proposition §56.1: Reduction Formulas for a Power Times Sine or Cosine
 > For $n \ge 1$,
 >
 > $$
@@ -37,7 +37,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 *Uses:* [[§51 Integration by Parts#^thm-51-1|§51.1]]
 
-> [!theorem] Proposition §65.2: Three Table Entries
+> [!theorem] Proposition §56.2: Three Table Entries
 > For $a > 0$,
 >
 > $$
@@ -93,7 +93,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 ## Examples
 
-> [!example] Example §65.1: A Volume by Shells
+> [!example] Example §56.1: A Volume by Shells
 > The region bounded by $y = \tan^{-1} x$, $y = 0$ and $x = 1$ is rotated about the $y$-axis. Find the volume of the solid.
 >
 > By cylindrical shells ([[§47 Volumes by Cylindrical Shells#^thm-47-2|Theorem §47.2]]), $V = \int_0^1 2\pi x \tan^{-1} x\,dx$. Entry 92 ([[§56 Integration Using Tables and Technology#^prop-56-2|Proposition §56.2]]) gives
@@ -106,7 +106,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 ^ex-56-1
 
-> [!example] Example §65.2: A Substitution to Match an Entry
+> [!example] Example §56.2: A Substitution to Match an Entry
 > Use the table to find $\displaystyle\int \frac{x^2}{\sqrt{5 - 4x^2}}\,dx$.
 >
 > The closest entry is 34, with $\sqrt{a^2 - u^2}$. Substitute $u = 2x$, so $x = u/2$ and $dx = du/2$:
@@ -125,7 +125,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 ^ex-56-2
 
-> [!example] Example §65.3: Reduction Formulas from the Table
+> [!example] Example §56.3: Reduction Formulas from the Table
 > Use the table to evaluate $\displaystyle\int x^3 \sin x\,dx$.
 >
 > No entry contains $u^3\sin u$ explicitly, but the reduction formula 84 ([[§56 Integration Using Tables and Technology#^prop-56-1|Proposition §56.1]]) with $n = 3$ gives
@@ -150,7 +150,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 
 ^ex-56-3
 
-> [!example] Example §65.4: Completing the Square to Match an Entry
+> [!example] Example §56.4: Completing the Square to Match an Entry
 > Use the table to find $\displaystyle\int x\sqrt{x^2 + 2x + 4}\,dx$.
 >
 > The table has forms with $\sqrt{a^2 + x^2}$, $\sqrt{a^2 - x^2}$ and $\sqrt{x^2 - a^2}$, but not $\sqrt{ax^2 + bx + c}$. Complete the square: $x^2 + 2x + 4 = (x + 1)^2 + 3$. With $u = x + 1$ ($x = u - 1$),

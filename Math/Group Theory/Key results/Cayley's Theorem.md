@@ -12,7 +12,7 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§25 Actions#^ex-25-2|Example §25.2: Actions]]
-- [[§25 Actions#^def-25-3|Definition §25.3: Kernel of an Action; Faithful Action]]
+- [[§25 Actions#^def-25-4|Definition §25.4: Kernel of an Action; Faithful Action]]
 - [[§25 Actions#^prop-25-4|Proposition §25.4: Faithful Actions Embed G in S_X]]
 
 ## Used in (Group Theory)

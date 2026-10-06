@@ -15,7 +15,7 @@ This section drives the spring–mass system of [[§23 Mechanical and Electrical
 
 ## Forced Vibrations with Damping
 
-> [!example] Example §29.1: Transient and Steady State
+> [!example] Example §24.1: Transient and Steady State
 > **(a)** Solve
 >
 > $$
@@ -68,7 +68,7 @@ $$
 mu'' + \gamma u' + ku = F_0\cos(\omega t) . \qquad (8)
 $$
 
-> [!definition] Definition §29.1: Transient and Steady-State Solutions
+> [!definition] Definition §24.1: Transient and Steady-State Solutions
 > For $m, \gamma, k > 0$ the general solution of (8) has the form
 >
 > $$
@@ -83,7 +83,7 @@ $$
 
 The transient lets the solution satisfy any initial conditions. As time goes on, the energy put in by the initial displacement and velocity is dissipated by damping, and the motion becomes the response to the external force. Without damping, the initial conditions would matter forever.
 
-> [!theorem] Theorem §29.1: The Steady-State Response
+> [!theorem] Theorem §24.1: The Steady-State Response
 > Let $m, \gamma, k > 0$ and $\omega_0^2 = k/m$. Every solution of (8) is $u = u_c + U$ with $u_c(t) \to 0$ as $t \to \infty$, and the steady-state solution is
 >
 > $$
@@ -209,7 +209,7 @@ Resonance can be harmful (structures such as buildings and bridges can fail cata
 
 ^rem-24-1
 
-> [!example] Example §29.2: Low, Resonant and High Forcing Frequencies
+> [!example] Example §24.2: Low, Resonant and High Forcing Frequencies
 > Consider
 >
 > $$
@@ -283,7 +283,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 
 ^def-24-3
 
-> [!example] Example §29.3: A Beat
+> [!example] Example §24.3: A Beat
 > Solve $u'' + u = \frac12\cos(0.8t)$, $u(0) = 0$, $u'(0) = 0$, and describe the solution.
 >
 > Here $m = 1$, $\omega_0 = 1$, $\omega = 0.8$, $F_0 = \frac12$, so $\frac{F_0}{m(\omega_0^2 - \omega^2)} = \frac{0.5}{0.36} = \frac{25}{18}$ and by (21)
@@ -329,7 +329,7 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 > [!remark]- Connections
 > - PDE version: [[§67★ More Difficult Examples#^ex-67-3|341 Ex. §67.3]] (a wire driven at one of its natural frequencies, solved by Laplace transform: the resonant mode grows like $t\cos(\pi t)$).
 
-> [!example] Example §29.4: Resonance
+> [!example] Example §24.4: Resonance
 > **(a)** Solve $u'' + u = \frac12\cos t$, $u(0) = 0$, $u'(0) = 0$.
 >
 > Here $\omega = \omega_0 = 1$, $m = 1$, $F_0 = \frac12$, so by (24) $u = c_1\cos t + c_2\sin t + \frac{t}{4}\sin t$. Then $u(0) = c_1 = 0$, and $u'(0) = c_2 + \big[\frac14\sin t + \frac{t}{4}\cos t\big]_{t=0} = c_2 = 0$:

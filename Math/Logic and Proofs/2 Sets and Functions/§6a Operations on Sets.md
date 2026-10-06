@@ -60,8 +60,7 @@ This section covers the operations of intersection, union, difference and comple
 > [!remark] Remark: First Identities
 > Directly from the definitions: $A \cap A = A = A \cup A$ (since "$P$ and $P$" and "$P$ or $P$" are equivalent to $P$); $A \cap \emptyset = \emptyset$ and $A \cup \emptyset = A$ (since $x \in \emptyset$ is always false); $A - A = \emptyset$ (no $x$ has $x \in A$ and $x \notin A$); and $A - \emptyset = A$ (since $x \notin \emptyset$ is always true).
 
-^rem-6a-2
-
+^rem-6a-1
 > [!theorem] Proposition §6a.1: Splitting a Union
 > For any sets $A$ and $B$, the three sets $A \cap B$, $A - B$ and $B - A$ are pairwise disjoint, and
 >
@@ -95,8 +94,7 @@ This section covers the operations of intersection, union, difference and comple
 > [!remark] Remark: Venn Diagrams
 > A **Venn diagram** represents sets by regions of the page, and the regions cut out by $k$ overlapping regions correspond to the $2^k$ rows of a truth table. This makes identities like [[§6a Operations on Sets#^prop-6a-1|Proposition §6a.1]] visible, but a diagram is an illustration, not a proof: a region may be empty (the diagram above does not claim $A \cap B \ne \emptyset$), a careless drawing may omit a possible region, and a diagram may contain features with no set-theoretic meaning. The proofs are the truth tables and element arguments.
 
-^rem-6a-3
-
+^rem-6a-2
 ## 6.3 The Power Set
 
 > [!definition] Definition §6a.5: Power Set

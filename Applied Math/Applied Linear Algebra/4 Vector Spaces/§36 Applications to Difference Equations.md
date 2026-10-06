@@ -15,7 +15,7 @@ Discrete data (sampled music, yearly populations, monthly loan balances) are seq
 
 ## Discrete-Time Signals
 
-> [!definition] Definition §44.1: Signals; the Space 𝕊
+> [!definition] Definition §36.1: Signals; the Space 𝕊
 > A **signal** is a function defined only on the integers, visualized as a doubly infinite sequence of numbers $\{y_k\} = (\ldots, y_{-2}, y_{-1}, y_0, y_1, y_2, \ldots)$; examples are $\{(.7)^k\}$, $\{1^k\}$ and $\{(-1)^k\}$. The signals form the vector space $\mathbb{S}$ of Section 4.1 ([[§29 Vector Spaces and Subspaces#^ex-29-1|Example §29.1]](c)), with termwise addition and scalar multiplication. When a process begins at a specific time, a signal may be written $(y_0, y_1, y_2, \ldots)$, the terms with $k < 0$ being zero or omitted.
 >
 > *Lay: 4.8 (text); 4.1, Example 3*
@@ -34,7 +34,7 @@ $$
 
 implies $c_1 = c_2 = c_3 = 0$. "For all $k$" means all integers $k$ (or all $k \ge 0$ for signals that start at $k = 0$).
 
-> [!definition] Definition §44.2: Casorati Matrix; Casoratian
+> [!definition] Definition §36.2: Casorati Matrix; Casoratian
 > The **Casorati matrix** of the signals $\{u_k\}$, $\{v_k\}$, $\{w_k\}$ is
 >
 > $$
@@ -47,7 +47,7 @@ implies $c_1 = c_2 = c_3 = 0$. "For all $k$" means all integers $k$ (or all $k \
 
 ^def-36-2
 
-> [!theorem] Proposition §44.1: The Casorati Test
+> [!theorem] Proposition §36.1: The Casorati Test
 > If the Casorati matrix $C(k)$ of $n$ signals is invertible for at least one value of $k$, then the signals are linearly independent.
 >
 > *Lay: 4.8 (text)*
@@ -69,7 +69,7 @@ implies $c_1 = c_2 = c_3 = 0$. "For all $k$" means all integers $k$ (or all $k \
 
 If no Casorati matrix is invertible, the signals may or may not be linearly independent (Lay, Exercise 33: $k^2$ and $2k|k|$). For solutions of one homogeneous difference equation, however, the test is decisive: [[§37 Solution Sets of Linear Difference Equations#^prop-37-4|Proposition §37.4]].
 
-> [!example] Example §44.1: A Casorati Matrix
+> [!example] Example §36.1: A Casorati Matrix
 > Verify that $1^k$, $(-2)^k$ and $3^k$ are linearly independent signals.
 >
 > The Casorati matrix is
@@ -109,7 +109,7 @@ If no Casorati matrix is invertible, the signals may or may not be linearly inde
 
 ^def-36-3
 
-> [!example] Example §44.2: A Low-Pass Filter
+> [!example] Example §36.2: A Low-Pass Filter
 > Feed two signals into the filter
 >
 > $$
@@ -167,7 +167,7 @@ Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
 ^def-36-4
 
-> [!theorem] Proposition §44.2: Exponential Solutions
+> [!theorem] Proposition §36.2: Exponential Solutions
 > A nonzero signal $\{r^k\}$ ($r \ne 0$) satisfies the homogeneous difference equation of [[§36 Applications to Difference Equations#^def-36-4|Definition §36.4]] if and only if $r$ is a root of its auxiliary equation.
 >
 > *Lay: 4.8 (text and Example 4.8.4)*

@@ -15,7 +15,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ## The Surface Area of a Graph
 
-> [!definition] Definition §142.1: Surface Area
+> [!definition] Definition §119.1: Surface Area
 > Let $S$ be the surface with equation $z = f(x, y)$, where $f$ has continuous partial derivatives; for the derivation assume $f(x, y) \ge 0$ and that the domain $D$ of $f$ is a rectangle. Divide $D$ into small rectangles $R_{ij}$ of area $\Delta A = \Delta x\,\Delta y$. If $(x_i, y_j)$ is the corner of $R_{ij}$ closest to the origin, let $P_{ij}(x_i, y_j, f(x_i, y_j))$ be the point of $S$ directly above it. The tangent plane to $S$ at $P_{ij}$ approximates $S$ near $P_{ij}$, so the area $\Delta T_{ij}$ of the part of this tangent plane (a parallelogram) that lies directly above $R_{ij}$ approximates the area $\Delta S_{ij}$ of the part of $S$ directly above $R_{ij}$. The **surface area** of $S$ is defined to be
 >
 > $$
@@ -26,7 +26,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ^def-119-1
 
-> [!theorem] Theorem §142.1: The Surface Area Formula
+> [!theorem] Theorem §119.1: The Surface Area Formula
 > The area of the surface with equation $z = f(x, y)$, $(x, y) \in D$, where $f_x$ and $f_y$ are continuous, is
 >
 > $$
@@ -89,7 +89,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ## Examples
 
-> [!example] Example §142.1: A Surface over a Triangle
+> [!example] Example §119.1: A Surface over a Triangle
 > Find the surface area of the part of the surface $z = x^2 + 2y + 2$ that lies above the triangular region $T$ in the $xy$-plane with vertices $(0, 0)$, $(1, 0)$ and $(1, 1)$.
 >
 > $T = \{(x, y) \mid 0 \le x \le 1,\ 0 \le y \le x\}$, and $f(x, y) = x^2 + 2y + 2$ has $f_x = 2x$, $f_y = 2$. By Formula 2,
@@ -104,7 +104,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 ^ex-119-1
 
-> [!example] Example §142.2: A Paraboloid Cut Off by a Plane
+> [!example] Example §119.2: A Paraboloid Cut Off by a Plane
 > Find the area of the part of the paraboloid $z = x^2 + y^2$ that lies under the plane $z = 9$.
 >
 > The plane meets the paraboloid in the circle $x^2 + y^2 = 9$, $z = 9$, so the surface lies above the disk $D$ with center the origin and radius $3$. By Formula 3,
@@ -125,7 +125,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 
 *Chain: the same paraboloid later in [[§133 Parametric Surfaces and Their Areas#^ex-133-5|Chapter 16]].*
 
-> [!example] Example §142.3: A Surface over a Region Bounded by a Quintic
+> [!example] Example §119.3: A Surface over a Region Bounded by a Quintic
 > Find the surface area of the part of the graph of $z = 3 + 2y + x^4/4$ that lies over the region $R$ in the $xy$-plane bounded by $y = x^5$, $x = 1$ and the $x$-axis.
 >
 > $R = \{0 \le x \le 1,\ 0 \le y \le x^5\}$, and $z_x = x^3$, $z_y = 2$, so $\sqrt{1 + z_x^2 + z_y^2} = \sqrt{5 + x^6}$. Then

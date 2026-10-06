@@ -8,7 +8,7 @@ tags: [fourier-series-and-pdes, hub]
 ![[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3]]
 
 ## Treated in
-- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|Theorem §49.3: Maximum Principle]], in [[§48 Potential in a Disk]]
+- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-3|Theorem §49.3: Maximum Principle]], in [[§49 The Poisson Integral Formula and the Mean Value Property]]
 
 ## Its proof uses
 - [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|Theorem §49.2: Mean Value Property]]

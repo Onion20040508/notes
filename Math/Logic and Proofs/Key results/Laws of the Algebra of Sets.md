@@ -8,16 +8,17 @@ tags: [logic-and-proofs, hub]
 ![[§6a Operations on Sets#^thm-6a-2]]
 
 ## Treated in
-- [[§6a Operations on Sets#^thm-6a-2|Theorem §6a.2: The Laws of the Algebra of Sets]], in [[§6 The Language of Set Theory]]
+- [[§6a Operations on Sets#^thm-6a-2|Theorem §6a.2: The Laws of the Algebra of Sets]], in [[§6a Operations on Sets]]
 
 ## Its proof uses
 - [[§1 The Language of Mathematics#^thm-1-1|Theorem §1.1: Logical Identities]]
 - [[§1 The Language of Mathematics#^thm-1-2|Theorem §1.2: Excluded Middle, Non-Contradiction, Identity and Annihilation]]
 - [[§6 The Language of Set Theory#^def-6-3|Definition §6.3: Equality of Sets]]
-- [[§6a Operations on Sets#^def-6a-1|Definition §6a.1: Intersection; Disjoint Sets]]
-- [[§6a Operations on Sets#^def-6a-3|Definition §6a.3: Union]]
+- [[§6a Operations on Sets#^def-6a-1|Definition §6a.1: Intersection]]
 - [[§6a Operations on Sets#^ex-6a-2|Example §6a.2: Distributivity by Truth Table]]
-- [[§6a Operations on Sets#^def-6a-7|Definition §6a.7: Universal Set; Complement]]
+- [[§6a Operations on Sets#^def-6a-3|Definition §6a.3: Union]]
+- [[§6a Operations on Sets#^def-6a-7|Definition §6a.7: Universal Set]]
+- [[§6a Operations on Sets#^def-6a-8|Definition §6a.8: Complement]]
 
 ## Used in (Logic and Proofs)
 - [[§6a Operations on Sets#^prop-6a-3|Proposition §6a.3: Expanding a Product of Unions]]

@@ -8,7 +8,7 @@ tags: [measure-theory, hub]
 ![[§23 The Dominated Convergence Theorem#^thm-23-5]]
 
 ## Treated in
-- [[§23 The Dominated Convergence Theorem#^thm-23-5|Theorem §23.5: Riemann Integrability Implies Lebesgue Integrability]], in [[§22 The General Lebesgue Integral]]
+- [[§23 The Dominated Convergence Theorem#^thm-23-5|Theorem §23.5: Riemann Integrability Implies Lebesgue Integrability]], in [[§23 The Dominated Convergence Theorem]]
 
 ## Its proof uses
 - [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Definition §8.3: Riemann Integrable]]
@@ -18,8 +18,8 @@ tags: [measure-theory, hub]
 - [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|Theorem §21.7: Monotone Convergence Theorem — Decreasing Version]]
 - [[§22 The General Lebesgue Integral#^ex-22-1|Example §22.1: Bounded Measurable Functions on Finite Measure Sets]]
 - [[§23 The Dominated Convergence Theorem#^def-23-1|Definition §23.1: Step Functions]]
-- [[§23 The Dominated Convergence Theorem#^rem-23-6|Remark: Riemann Integrability via Step Functions]]
 - [[§23 The Dominated Convergence Theorem#^thm-23-3|Theorem §23.3: Dominated Convergence Theorem (DCT)]]
+- [[§23 The Dominated Convergence Theorem#^rem-23-6|Remark: Riemann Integrability via Step Functions]]
 
 ## Its proof uses (other subjects)
 - [[§32 The Definition of the Riemann Integral#^lem-32-1|451 §32.1: Refinement Lemma]]

@@ -15,14 +15,14 @@ The convergence theorem of [[§12 Convergence of Fourier Series|§12]] works one
 
 ## Uniform Convergence
 
-> [!definition] Definition §17.1: Pointwise Convergence
+> [!definition] Definition §13.1: Pointwise Convergence
 > Let $g_n$ and $g$ be functions on a common domain. $(g_n)$ **converges pointwise** to $g$ if $|g_n(x) - g(x)| \to 0$ as $n \to \infty$ for each $x$ in the domain.
 >
 > *Source: 341 lecture 9.3*
 
 ^def-13-1
 
-> [!definition] Definition §17.2: Uniform Convergence
+> [!definition] Definition §13.2: Uniform Convergence
 > Let $g_n$ and $g$ be functions on a common domain. $(g_n)$ **converges uniformly** to $g$ if $\sup_x|g_n(x) - g(x)| \to 0$ as $n \to \infty$, the supremum taken over all $x$ in the domain.
 >
 > Uniform convergence implies pointwise convergence ([[§13 Uniform Convergence#^def-13-1|Definition §13.1]]), but not conversely.
@@ -55,7 +55,7 @@ The convergence theorem of [[§12 Convergence of Fourier Series|§12]] works one
 
 ^def-13-3
 
-> [!example] Example §17.1: Pointwise but Not Uniform
+> [!example] Example §13.1: Pointwise but Not Uniform
 > On $0 < x < 1$:
 > - $g_n(x) = 0$ for $0 < x < 1 - \frac1n$ and $g_n(x) = 1$ for $1 - \frac1n < x < 1$. For each fixed $x$, $g_n(x) = 0$ as soon as $\frac1n < 1 - x$, so $g_n \to g = 0$ pointwise. But $\sup_x|g_n(x) - 0| = 1$ for every $n$: the step slides toward $x = 1$ without shrinking, and the convergence is not uniform.
 > - $g_n(x) = \frac1n$ converges to $0$ uniformly: $\sup_x|g_n(x)| = \frac1n \to 0$.
@@ -68,7 +68,7 @@ The convergence theorem of [[§12 Convergence of Fourier Series|§12]] works one
 
 There are two important facts about uniform convergence.
 
-> [!theorem] Theorem §17.1: Uniform Convergence Forces Continuity
+> [!theorem] Theorem §13.1: Uniform Convergence Forces Continuity
 > If a Fourier series converges uniformly in a period interval, then
 > 1. it must converge to a continuous function, and
 > 2. it must converge to the (continuous) function that generates the series.
@@ -112,7 +112,7 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 > [!remark]- Connections
 > - The M-test with its proof, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]]; the first of Ross's applications, [[§25 More on Uniform Convergence#^ex-25-3|451 Ex. §25.3]](1), is the Fourier series $\sum\cos(nx)/n^2$. The test is sufficient, not necessary; it says nothing about series such as $\sum\sin(nx)/n$, whose coefficients are not absolutely summable.
 
-> [!example] Example §17.2: The Triangle Wave |x|
+> [!example] Example §13.2: The Triangle Wave |x|
 > For $f(x) = |x|$, $-\pi < x < \pi$, periodic with period $2\pi$, the Fourier coefficients are
 >
 > $$
@@ -164,7 +164,7 @@ Another way of proving uniform convergence of a Fourier series is by examining t
 
 While Theorem §13.3 is stated for a periodic function, it may be adapted to a function $f$ given on $-a < x < a$: if the *periodic extension* of $f$ satisfies the conditions of the theorem, the Fourier series of $f$ converges uniformly on $-a \le x \le a$.
 
-> [!example] Example §17.3: Checking the Hypotheses
+> [!example] Example §13.3: Checking the Hypotheses
 > Decide whether the Fourier series converges uniformly.
 >
 > **(a)** $f(x) = x$, $-1 < x < 1$. Although $f$ is continuous and has a continuous derivative on $-1 < x < 1$, its periodic extension is not continuous: it jumps at $\pm1$. The Fourier series cannot converge uniformly in any interval containing $1$ or $-1$, because uniform convergence must produce a continuous function (Theorem §13.1).

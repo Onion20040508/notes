@@ -74,7 +74,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]], which proves the product rule by inserting the mixed term $f(a)g(x)$ and states the quotient rule.
 
-> [!example] Example §21.1: The nth Derivative of x e^x
+> [!example] Example §18.1: The nth Derivative of x e^x
 > (a) If $f(x) = xe^x$, find $f'(x)$. (b) Find the $n$th derivative $f^{(n)}(x)$.
 >
 > **(a)** By the Product Rule and $\frac{d}{dx}(e^x) = e^x$,
@@ -101,7 +101,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 
 ^ex-18-1
 
-> [!example] Example §21.2: Simplify or Use the Product Rule
+> [!example] Example §18.2: Simplify or Use the Product Rule
 > Differentiate $f(t) = \sqrt{t}\,(a + bt)$, where $a$ and $b$ are constants.
 >
 > **Solution 1 (Product Rule).**
@@ -125,7 +125,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 
 ^ex-18-2
 
-> [!example] Example §21.3: Using Only Values of g and g′
+> [!example] Example §18.3: Using Only Values of g and g′
 > If $f(x) = \sqrt{x}\,g(x)$, where $g(4) = 2$ and $g'(4) = 3$, find $f'(4)$.
 >
 > Nothing is known about $g$ except these two numbers, and that is enough. By the Product Rule,
@@ -208,7 +208,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 
 With the Quotient Rule, every rational function can be differentiated.
 
-> [!example] Example §21.4: A Rational Function
+> [!example] Example §18.4: A Rational Function
 > Let $y = \dfrac{x^2 + x - 2}{x^3 + 6}$. Then
 >
 > $$

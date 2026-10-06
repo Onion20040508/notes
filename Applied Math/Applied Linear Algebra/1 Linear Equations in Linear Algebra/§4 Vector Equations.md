@@ -15,7 +15,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 
 ## Vectors in ℝⁿ
 
-> [!definition] Definition §5.1: Vector, ℝⁿ, Zero Vector
+> [!definition] Definition §4.1: Vector, ℝⁿ, Zero Vector
 > A matrix with only one column is a **column vector**, or simply a **vector**. For a positive integer $n$, $\mathbb{R}^n$ ("r-n") is the set of all lists (**ordered $n$-tuples**) of $n$ real numbers, written as $n \times 1$ column matrices:
 >
 > $$
@@ -30,7 +30,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 
 ^def-4-1
 
-> [!definition] Definition §5.2: Vector Addition and Scalar Multiplication
+> [!definition] Definition §4.2: Vector Addition and Scalar Multiplication
 > For $\mathbf{u}$, $\mathbf{v}$ in $\mathbb{R}^n$ and a real number $c$, the **sum** $\mathbf{u} + \mathbf{v}$ is the vector obtained by adding corresponding entries, and the **scalar multiple** $c\mathbf{u}$ is the vector obtained by multiplying each entry of $\mathbf{u}$ by $c$:
 >
 > $$
@@ -50,7 +50,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 
 ^rem-4-1
 
-> [!theorem] Theorem §5.1: Parallelogram Rule for Addition
+> [!theorem] Theorem §4.1: Parallelogram Rule for Addition
 > If $\mathbf{u}$ and $\mathbf{v}$ in $\mathbb{R}^2$ are represented as points in the plane, then $\mathbf{u} + \mathbf{v}$ corresponds to the fourth vertex of the parallelogram whose other vertices are $\mathbf{u}$, $\mathbf{0}$ and $\mathbf{v}$.
 >
 > *Lay: 1.3, Parallelogram Rule for Addition*
@@ -67,7 +67,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 ![[m235-3-1.svg]]
 *(a) The parallelogram rule for $\mathbf{u} = (2, 2)$, $\mathbf{v} = (-6, 1)$: the sum $(-4, 3)$ is the vertex opposite $\mathbf{0}$ (Lay's Example 2). (b) For $\mathbf{v}_1 = (1, 2)$, $\mathbf{v}_2 = (3, 1)$ the lines through integer multiples of $\mathbf{v}_1$ (red, parallel to $\mathbf{v}_2$) and of $\mathbf{v}_2$ (blue, parallel to $\mathbf{v}_1$) form a grid of parallelograms; every point of the plane is some $a\mathbf{v}_1 + b\mathbf{v}_2$, read off on this skewed grid. The span of $\mathbf{v}_1, \mathbf{v}_2$ is all of $\mathbb{R}^2$.*
 
-> [!theorem] Theorem §5.2: Algebraic Properties of ℝⁿ
+> [!theorem] Theorem §4.2: Algebraic Properties of ℝⁿ
 > For all $\mathbf{u}, \mathbf{v}, \mathbf{w}$ in $\mathbb{R}^n$ and all scalars $c$ and $d$:
 >
 > $$
@@ -99,7 +99,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 > [!remark]- Connections
 > - The same eight properties for Stewart's $V_n$: [[§94 Vectors#^thm-94-5|Calc Thm. §94.5]]. Axler turns them into the definition of an abstract vector space ([[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]); Lay does the same in [[§29 Vector Spaces and Subspaces#^def-29-1|Definition §29.1]] (Section 4.1).
 
-> [!example] Example §5.1: Computing with Vectors
+> [!example] Example §4.1: Computing with Vectors
 > Let $\mathbf{u} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix} 2 \\ -5 \end{bmatrix}$. Then
 >
 > $$
@@ -115,7 +115,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 
 ## Linear Combinations
 
-> [!definition] Definition §5.3: Linear Combination, Weights
+> [!definition] Definition §4.3: Linear Combination, Weights
 > Given vectors $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_p$ in $\mathbb{R}^n$ and scalars $c_1, c_2, \ldots, c_p$, the vector
 >
 > $$
@@ -133,7 +133,7 @@ Until Chapter 4, a vector is an ordered list of numbers, written as a column. Ve
 
 Geometrically, $c_1\mathbf{v}_1 + c_2\mathbf{v}_2$ gives instructions for traveling from the origin: $c_1$ units in the $\mathbf{v}_1$ direction, then $c_2$ units parallel to $\mathbf{v}_2$. On the skewed grid of Figure (b) above, the weights can be read off. With $\mathbf{v}_1 = (-1, 1)$ and $\mathbf{v}_2 = (2, 1)$, Lay reads off $\mathbf{u} = 3\mathbf{v}_1 - 2\mathbf{v}_2$ from such a grid and estimates a point $\mathbf{w}$ between grid lines as $\mathbf{w} \approx \tfrac52\mathbf{v}_1 - \tfrac12\mathbf{v}_2$ (Lay's Example 4).
 
-> [!theorem] Theorem §5.3: Vector Equations Are Linear Systems
+> [!theorem] Theorem §4.3: Vector Equations Are Linear Systems
 > A vector equation
 >
 > $$
@@ -167,7 +167,7 @@ Geometrically, $c_1\mathbf{v}_1 + c_2\mathbf{v}_2$ gives instructions for travel
 
 The augmented matrix can be written down at once: put the vectors into the columns in the order in which they appear in the vector equation.
 
-> [!definition] Definition §5.4: Span
+> [!definition] Definition §4.4: Span
 > If $\mathbf{v}_1, \ldots, \mathbf{v}_p$ are in $\mathbb{R}^n$, the set of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_p$ is denoted $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ and is called the **subset of $\mathbb{R}^n$ spanned** (or **generated**) **by** $\mathbf{v}_1, \ldots, \mathbf{v}_p$. That is, $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ is the collection of all vectors that can be written in the form
 >
 > $$
@@ -182,7 +182,7 @@ The augmented matrix can be written down at once: put the vectors into the colum
 
 By [[§4 Vector Equations#^thm-4-3|Theorem §4.3]], asking whether $\mathbf{b}$ is in $\operatorname{Span}\{\mathbf{v}_1, \ldots, \mathbf{v}_p\}$ amounts to asking whether the vector equation $x_1\mathbf{v}_1 + \cdots + x_p\mathbf{v}_p = \mathbf{b}$ has a solution, or equivalently whether the linear system with augmented matrix $[\,\mathbf{v}_1\ \cdots\ \mathbf{v}_p\ \ \mathbf{b}\,]$ is consistent. The span contains every scalar multiple of each $\mathbf{v}_j$ (for example $c\mathbf{v}_1 = c\mathbf{v}_1 + 0\mathbf{v}_2 + \cdots + 0\mathbf{v}_p$), and in particular it contains $\mathbf{0}$.
 
-> [!theorem] Proposition §5.4: Sums and Multiples Stay in the Span
+> [!theorem] Proposition §4.4: Sums and Multiples Stay in the Span
 > If $\mathbf{u}$ and $\mathbf{v}$ are in $\operatorname{Span}\{\mathbf{w}_1, \ldots, \mathbf{w}_p\}$, then so are $\mathbf{u} + \mathbf{v}$ and $c\mathbf{u}$ for every scalar $c$.
 >
 > *Lay: 1.3, Practice Problem 3*
@@ -214,7 +214,7 @@ These two closure properties are what will make every span a *subspace* ([[§21 
 
 ^rem-4-2
 
-> [!example] Example §5.2: In the Span or Not?
+> [!example] Example §4.2: In the Span or Not?
 > **(a)** Is $\mathbf{b} = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$ a linear combination of $\mathbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$ and $\mathbf{w} = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}$?
 >
 > We need $x, y$ with $x\mathbf{v} + y\mathbf{w} = \mathbf{b}$, that is, $x + 4y = 1$, $2x + 5y = 1$, $3x + 6y = 1$. Row reduce $[\,\mathbf{v}\ \ \mathbf{w}\ \ \mathbf{b}\,]$:
@@ -255,7 +255,7 @@ These two closure properties are what will make every span a *subspace* ([[§21 
 
 ^ex-4-2
 
-> [!example] Example §5.3: Weights Need Not Be Unique
+> [!example] Example §4.3: Weights Need Not Be Unique
 > Let $\mathbf{b} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$, $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$, $\mathbf{v}_2 = \begin{bmatrix} 1/2 \\ 0 \end{bmatrix}$, $\mathbf{v}_3 = \begin{bmatrix} 1 \\ 1/2 \end{bmatrix}$. Then
 >
 > $$

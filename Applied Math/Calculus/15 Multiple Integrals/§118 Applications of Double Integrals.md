@@ -17,7 +17,7 @@ Volume is one application of double integrals. This section gives the physical a
 
 In [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3]] single integrals gave the moments and center of mass of a thin plate (lamina) of constant density. With double integrals the density may vary.
 
-> [!definition] Definition §141.1: Density of a Lamina
+> [!definition] Definition §118.1: Density of a Lamina
 > Suppose a lamina occupies a region $D$ of the $xy$-plane and its **density** (in units of mass per unit area) at a point $(x, y)$ of $D$ is $\rho(x, y)$, where $\rho$ is continuous on $D$. That is,
 >
 > $$
@@ -30,7 +30,7 @@ In [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3]] single integral
 
 ^def-118-1
 
-> [!definition] Definition §141.2: Mass of a Lamina
+> [!definition] Definition §118.2: Mass of a Lamina
 > Let a lamina occupy a region $D$ with density $\rho(x, y)$ ([[§118 Applications of Double Integrals#^def-118-1|Definition §118.1]]). Enclose $D$ in a rectangle, divide it into subrectangles $R_{ij}$, and let $\rho = 0$ outside $D$. The mass of the part of the lamina in $R_{ij}$ is approximately $\rho(x_{ij}^{\ast}, y_{ij}^{\ast})\,\Delta A$, and the **total mass** of the lamina is
 >
 > $$
@@ -41,7 +41,7 @@ In [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3]] single integral
 
 ^def-118-2
 
-> [!definition] Definition §141.3: Charge
+> [!definition] Definition §118.3: Charge
 > If an electric charge is distributed over a region $D$ with **charge density** $\sigma(x, y)$ (in units of charge per unit area), the **total charge** is
 >
 > $$
@@ -58,7 +58,7 @@ In [[§63 Moments and Centers of Mass#^thm-63-3|Theorem §63.3]] single integral
 
 The moment of a particle about an axis is its mass times its directed distance from the axis ([[§63 Moments and Centers of Mass#^def-63-3|Definition §63.3]]). The mass of $R_{ij}$ is about $\rho(x_{ij}^*, y_{ij}^*)\,\Delta A$, so its moment about the $x$-axis is about $[\rho(x_{ij}^*, y_{ij}^*)\,\Delta A]\,y_{ij}^*$.
 
-> [!definition] Definition §141.4: Moments of a Lamina
+> [!definition] Definition §118.4: Moments of a Lamina
 > The **moment** of the lamina **about the $x$-axis** and **about the $y$-axis** are
 >
 > $$
@@ -86,7 +86,7 @@ The moment of a particle about an axis is its mass times its directed distance f
 
 Physically, the lamina behaves as if its entire mass were concentrated at its center of mass: supported at $(\bar x, \bar y)$, it balances horizontally.
 
-> [!example] Example §141.1: A Triangular Lamina with Variable Density
+> [!example] Example §118.1: A Triangular Lamina with Variable Density
 > Find the mass and center of mass of a triangular lamina with vertices $(0, 0)$, $(1, 0)$ and $(0, 2)$ if the density function is $\rho(x, y) = 1 + 3x + y$.
 >
 > The upper boundary is the line through $(1, 0)$ and $(0, 2)$, $y = 2 - 2x$, so $D = \{0 \le x \le 1,\ 0 \le y \le 2 - 2x\}$.
@@ -118,7 +118,7 @@ Physically, the lamina behaves as if its entire mass were concentrated at its ce
 
 ^ex-118-1
 
-> [!example] Example §141.2: A Semicircular Lamina
+> [!example] Example §118.2: A Semicircular Lamina
 > The density at any point of a semicircular lamina is proportional to the distance from the center of the circle. Find the center of mass of the lamina.
 >
 > Place the lamina as the upper half of the disk $x^2 + y^2 \le a^2$. The distance from $(x, y)$ to the center is $\sqrt{x^2 + y^2}$, so $\rho(x, y) = K\sqrt{x^2 + y^2} = Kr$ for a constant $K$. Both the density and the shape suggest polar coordinates ([[§117 Double Integrals in Polar Coordinates#^thm-117-1|Theorem §117.1]]): $D$ is $0 \le r \le a$, $0 \le \theta \le \pi$.
@@ -167,7 +167,7 @@ The **moment of inertia** (or **second moment**) of a particle of mass $m$ about
 
 ^def-118-6
 
-> [!theorem] Proposition §141.1: Polar Moment of Inertia
+> [!theorem] Proposition §118.1: Polar Moment of Inertia
 > $I_0 = I_x + I_y$.
 >
 > *Stewart: 15.4 (text)*
@@ -202,7 +202,7 @@ The moment of inertia plays the same role in rotational motion that mass plays i
 
 ^def-118-7
 
-> [!example] Example §141.3: A Homogeneous Disk
+> [!example] Example §118.3: A Homogeneous Disk
 > Find the moments of inertia $I_x$, $I_y$, $I_0$ of a homogeneous disk $D$ with density $\rho(x, y) = \rho$, center the origin and radius $a$, and its radius of gyration about the $x$-axis.
 >
 > In polar coordinates $D$ is $0 \le \theta \le 2\pi$, $0 \le r \le a$. By Formula 6,
@@ -257,7 +257,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 > [!remark]- Connections
 > - For $f \ge 0$ the improper integral over $\mathbb{R}^2$ may always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, [[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]]. It is what justifies writing $\iint_{\mathbb{R}^2} f\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dx\,dy$ above and in [[§118 Applications of Double Integrals#^ex-118-4|Examples §118.4]] and [[§118 Applications of Double Integrals#^ex-118-5|§118.5]].
 
-> [!example] Example §141.4: Normalizing a Joint Density
+> [!example] Example §118.4: Normalizing a Joint Density
 > If the joint density function for $X$ and $Y$ is
 >
 > $$

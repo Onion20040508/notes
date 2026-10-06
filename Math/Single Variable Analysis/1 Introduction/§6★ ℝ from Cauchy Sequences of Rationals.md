@@ -12,13 +12,13 @@ tags: [real-analysis, math451, extension]
 
 **Question.** §6 explained why ℝ cannot be defined as "limits of rational sequences" in this course: limits presuppose ℝ. Is there a way to use sequences anyway?
 
-Yes. The *Cauchy* condition ([[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]]) compares the terms of a sequence with each other and never mentions a limit. If moreover the tolerances $\varepsilon$ are taken to be *rational*, the condition makes sense inside $\mathbb{Q}$ alone. A real number is then *defined* as the common destination of a family of rational Cauchy sequences, that is, as an equivalence class of them. Where Dedekind cuts complete $\mathbb{Q}$ through its **order**, this route completes it through its **distance** $|p - q|$. The distance route is the one that generalizes to metric and normed spaces ([[§11 Completeness#^def-11-4|556 Def. §11.4]]).
+Yes. The *Cauchy* condition ([[§10a Cauchy Sequences#^def-10a-1|Def. §10a.1]]) compares the terms of a sequence with each other and never mentions a limit. If moreover the tolerances $\varepsilon$ are taken to be *rational*, the condition makes sense inside $\mathbb{Q}$ alone. A real number is then *defined* as the common destination of a family of rational Cauchy sequences, that is, as an equivalence class of them. Where Dedekind cuts complete $\mathbb{Q}$ through its **order**, this route completes it through its **distance** $|p - q|$. The distance route is the one that generalizes to metric and normed spaces ([[§12 Completeness#^def-12-4|556 Def. §12.4]]).
 
 Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ of Real Numbers#^def-3-5|Def. §3.5]]. Its properties ([[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]], including the [[Triangle inequality|triangle inequality]]) are proved from the order axioms O1–O5 and [[§3 The Set ℝ of Real Numbers#^prop-3-1|Proposition §3.1]] alone, so they hold in every ordered field, in particular in $\mathbb{Q}$. All $\varepsilon, \delta$ below are positive **rationals** unless stated otherwise.
 
 ## Cauchy Sequences of Rationals
 
-> [!definition] Definition §6★.2: Rational Cauchy Sequence
+> [!definition] Definition §6★.1: Rational Cauchy Sequence
 > A sequence $(q_n)$ of rational numbers is a **rational Cauchy sequence** if for every rational $\varepsilon > 0$ there is $N$ such that
 >
 > $$
@@ -31,7 +31,7 @@ Throughout, $|\cdot|$ on $\mathbb{Q}$ is the absolute value of [[§3 The Set ℝ
 
 ^def-6s-1
 
-> [!definition] Definition §6★.3: Null Sequence
+> [!definition] Definition §6★.2: Null Sequence
 > Let $(q_n)$ be a sequence of rational numbers. It is a **null sequence** if for every rational $\varepsilon > 0$ there is $N$ with $|q_n| < \varepsilon$ for all $n \geq N$. Write $\mathcal{C}$ for the set of rational Cauchy sequences and $\mathcal{N} \subseteq \mathcal{C}$ for the null sequences.
 
 ^def-6s-2
@@ -56,7 +56,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]]
 
-> [!definition] Definition §6★.4: Equivalent Rational Cauchy Sequences
+> [!definition] Definition §6★.3: Equivalent Rational Cauchy Sequences
 > Two sequences $(p_n), (q_n) \in \mathcal{C}$ are **equivalent**, written $(p_n) \sim (q_n)$, if $(p_n - q_n)$ is a null sequence: for every rational $\varepsilon > 0$ there is $N$ with
 >
 > $$
@@ -81,7 +81,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-3|Def. §6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
-> [!definition] Definition §6★.6: The Cauchy Reals $\widehat{\mathbb{Q}}$
+> [!definition] Definition §6★.4: The Cauchy Reals $\widehat{\mathbb{Q}}$
 > Let $\widehat{\mathbb{Q}} = \mathcal{C}/\!\sim$ be the set of equivalence classes (the quotient set of [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]), and write $[(q_n)]$ for the class of $(q_n)$. A rational $q$ is sent to the class of the constant sequence:
 >
 > $$
@@ -92,7 +92,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 > [!remark]- Connections
 > - The same pattern one level down: 250 builds $\mathbb{Q}$ as classes of pairs of integers, [[§22a Constructing ℚ and ℤ#^def-22a-2|250 Def. §22a.2]], and checks the field axioms on representatives, [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]].
-> - The general version: the completion of a metric space, [[§11 Completeness#^def-11-3|556 Def. §11.3]] and [[§11 Completeness#^def-11-4|556 Def. §11.4]], with $M = \mathbb{Q}$. See the remark on the order of logic below.
+> - The general version: the completion of a metric space, [[§12 Completeness#^def-12-3|556 Def. §12.3]] and [[§12 Completeness#^def-12-4|556 Def. §12.4]], with $M = \mathbb{Q}$. See the remark on the order of logic below.
 
 > [!example] Example §6★.1: One Number, Many Representatives
 > - $0.9,\ 0.99,\ 0.999, \ldots$, that is $s_n = 1 - 10^{-n}$, is equivalent to the constant sequence $(1, 1, \ldots)$: the difference $10^{-n}$ is a null sequence (given rational $\varepsilon > 0$, $10^{-n} \leq 1/n < \varepsilon$ once $n > 1/\varepsilon$). So $[(s_n)] = \iota(1)$. This is "$0.999\ldots = 1$" ([[§13 Number Systems#^ex-13-4|250 Ex. §13.4]]) as a statement about representatives.
@@ -209,7 +209,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|§6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]], [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]]
 
-From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subseteq \widehat{\mathbb{Q}}$ where convenient, as in [[§11 Completeness#^rem-11-3|556 Remark §11 (why classes)]].
+From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subseteq \widehat{\mathbb{Q}}$ where convenient, as in [[§12 Completeness#^rem-12-3|556 Remark §11 (why classes)]].
 
 > [!remark] Remark: The Algebra behind the Construction
 > With termwise operations, $\mathcal{C}$ is a commutative ring ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-2|493 Def. §20.2]]), and the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|Proposition §6★.3]](b) shows that $\mathcal{N}$ is closed under sums and under multiplication by elements of $\mathcal{C}$ (bounded times null is null). In ring language, $\mathcal{N}$ is an *ideal* and $\widehat{\mathbb{Q}} = \mathcal{C}/\mathcal{N}$. On the additive side this is a quotient group in the sense of [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]]: $\mathcal{N}$ is a subgroup ([[§4 Subgroups#^def-4-1|493 Def. §4.1]]) of the abelian group ([[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]]) $(\mathcal{C}, +)$, and $(p_n) \sim (q_n)$ says exactly that the two sequences lie in the same coset of $\mathcal{N}$. [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|Lemma §6★.4]] is what makes the quotient a *field* rather than just a ring: a Cauchy sequence outside $\mathcal{N}$ can be inverted (eventually).
@@ -218,7 +218,7 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ## Order
 
-> [!definition] Definition §6★.8: Positive Classes
+> [!definition] Definition §6★.5: Positive Classes
 > A class $x \in \widehat{\mathbb{Q}}$ is **positive**, written $x > 0$, if it has a representative $(q_n)$ with
 >
 > $$
@@ -358,7 +358,7 @@ Limits and Cauchy sequences make sense in any ordered field: read [[§7 Limits o
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|§6★.8]]
 
 > [!remark]- Connections
-> - This is [[§11 Completeness#^prop-11-3|556 Proposition §11.3]](c), "$M$ is dense in $\overline{M}$", for $M = \mathbb{Q}$.
+> - This is [[§12 Completeness#^prop-12-3|556 Proposition §12.3]](c), "$M$ is dense in $\overline{M}$", for $M = \mathbb{Q}$.
 
 This resolves the circularity that §6 warned about. "The limit of a rational Cauchy sequence" is now a theorem about the class, not a definition of it.
 
@@ -418,7 +418,7 @@ This resolves the circularity that §6 warned about. "The limit of a rational Ca
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-8|§6★.8]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-7|§6★.7]], [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|§6★.9]]
 
 > [!remark]- Connections
-> - The same diagonal argument, with $z_m$ chosen within $1/m$ of $\xi_m$: [[§11 Completeness#^prop-11-3|556 Proposition §11.3]](d), and for normed spaces [[§11 Completeness#^thm-11-4|556 Theorem §11.4]].
+> - The same diagonal argument, with $z_m$ chosen within $1/m$ of $\xi_m$: [[§12 Completeness#^prop-12-3|556 Proposition §12.3]](d), and for normed spaces [[§13 The Completion of a Normed Space#^thm-13-1|556 Theorem §13.1]].
 > - In ℝ this is [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]] (Cauchy implies convergent), which the course derives *from* the completeness axiom. Here the logic runs the other way: Cauchy completeness is built in, and the completeness axiom is derived next.
 
 > [!theorem] Theorem §6★.11: $\widehat{\mathbb{Q}}$ Satisfies the Completeness Axiom
@@ -536,22 +536,22 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 *Uses:* [[§3 The Set ℝ of Real Numbers#^prop-3-1|§3.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|§6★.12]]
 
 > [!remark] Remark: The Order of Logic, and Functional Analysis
-> The completion of a metric space in functional analysis ([[§11 Completeness#^def-11-3|556 Def. §11.3]], [[§11 Completeness#^def-11-4|556 Def. §11.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§11 Completeness#^prop-11-3|556 Proposition §11.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-6|Def. §6★.6]]) instead of measuring distances.
+> The completion of a metric space in functional analysis ([[§12 Completeness#^def-12-3|556 Def. §12.3]], [[§12 Completeness#^def-12-4|556 Def. §12.4]]) is this construction with $\mathbb{Q}$ replaced by any metric space $M$. It cannot construct ℝ, because its metric $\bar d([\{x_n\}], [\{y_n\}]) = \lim d(x_n, y_n)$ ([[§12 Completeness#^prop-12-3|556 Proposition §12.3]]) is a *real* number, obtained from Cauchy implies convergent in ℝ. That is why this note restricts $\varepsilon$ to $\mathbb{Q}$ and puts the order on $\widehat{\mathbb{Q}}$ by hand ([[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-6|Def. §6★.6]]) instead of measuring distances.
 >
 > Once ℝ exists, the two constructions agree. Applied to $M = \mathbb{Q}$ with $d(p, q) = |p - q|$, 556's equivalence relation is $\sim$ of [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-3|Def. §6★.3]] (rational tolerances suffice, as in the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|Theorem §6★.12]]), so 556's completion $\overline{M}$ for $M = \mathbb{Q}$ is $\widehat{\mathbb{Q}}$ as a set (this $\overline{\mathbb{Q}}$ is not the field of algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]]). The dictionary:
 >
 > | Here | Functional Analysis |
 > |---|---|
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9\|Cor. §6★.9]] (a class is the limit of its representative) | [[§11 Completeness#^prop-11-3\|556 Prop. §11.3]](c) ($M$ dense in $\overline{M}$) |
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10\|Thm. §6★.10]] (Cauchy complete) | [[§11 Completeness#^prop-11-3\|556 Prop. §11.3]](d) ($\overline{M}$ complete) |
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12\|Thm. §6★.12]] ($\Phi = \lim$ onto ℝ) | [[§11 Completeness#^prop-11-5\|556 Prop. §11.5]] (identifying a completion: $\Phi = \lim J x_n$) |
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14\|Cor. §6★.14]] (uniqueness) | [[§11 Completeness#^cor-11-6\|556 Cor. §11.6]] (uniqueness of the completion) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9\|Cor. §6★.9]] (a class is the limit of its representative) | [[§12 Completeness#^prop-12-3\|556 Prop. §12.3]](c) ($M$ dense in $\overline{M}$) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10\|Thm. §6★.10]] (Cauchy complete) | [[§12 Completeness#^prop-12-3\|556 Prop. §12.3]](d) ($\overline{M}$ complete) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12\|Thm. §6★.12]] ($\Phi = \lim$ onto ℝ) | [[§13 The Completion of a Normed Space#^prop-13-2\|556 Prop. §13.2]] (identifying a completion: $\Phi = \lim J x_n$) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14\|Cor. §6★.14]] (uniqueness) | [[§13 The Completion of a Normed Space#^cor-13-3\|556 Cor. §13.3]] (uniqueness of the completion) |
 >
-> So ℝ *is* the completion of $\mathbb{Q}$, in the sense of [[Completion of a Normed Space|556 §11]]: $\mathbb{Q}$ sits densely in ℝ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]), and ℝ is complete ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]). Functional analysis then runs the same machine on function spaces: $L^p[a, b]$ is the completion of $C[a, b]$ under $\|\cdot\|_p$ ([[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|556 Proposition §17.8]]).
+> So ℝ *is* the completion of $\mathbb{Q}$, in the sense of [[Completion of a Normed Space|556 §11]]: $\mathbb{Q}$ sits densely in ℝ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]), and ℝ is complete ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]). Functional analysis then runs the same machine on function spaces: $L^p[a, b]$ is the completion of $C[a, b]$ under $\|\cdot\|_p$ ([[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|556 Proposition §19.8]]).
 
 ^rem-6s-2
 
 > [!remark] Remark: The Distance Decides
-> The construction used only the absolute value $|p - q|$ on $\mathbb{Q}$. With a different absolute value the same steps give a different complete field: the $p$-adic absolute value on $\mathbb{Q}$ produces the $p$-adic numbers $\mathbb{Q}_p$, which cannot be ordered compatibly with the field operations. The cut route has no analogue there, since it uses the order. Functional analysis makes the same point: one space with two norms can have two different completions, e.g. $C[a, b]$ is complete under $\|\cdot\|_\infty$ but completes to $L^1$ under $\|\cdot\|_1$ ([[§11 Completeness#^rem-11-9|556 Remark §11 (the norm decides)]]).
+> The construction used only the absolute value $|p - q|$ on $\mathbb{Q}$. With a different absolute value the same steps give a different complete field: the $p$-adic absolute value on $\mathbb{Q}$ produces the $p$-adic numbers $\mathbb{Q}_p$, which cannot be ordered compatibly with the field operations. The cut route has no analogue there, since it uses the order. Functional analysis makes the same point: one space with two norms can have two different completions, e.g. $C[a, b]$ is complete under $\|\cdot\|_\infty$ but completes to $L^1$ under $\|\cdot\|_1$ ([[§13 The Completion of a Normed Space#^rem-13-6|556 Remark §11 (the norm decides)]]).
 
 ^rem-6s-3

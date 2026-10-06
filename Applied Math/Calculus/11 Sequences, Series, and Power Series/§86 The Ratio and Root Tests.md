@@ -15,7 +15,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 ## The Ratio Test
 
-> [!theorem] Theorem §100.1: The Ratio Test
+> [!theorem] Theorem §86.1: The Ratio Test
 > (i) If $\displaystyle\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L < 1$, then the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is absolutely convergent (and therefore convergent).
 >
 > (ii) If $\displaystyle\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = L > 1$ or $\displaystyle\lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \infty$, then the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is divergent.
@@ -66,7 +66,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-9|451 Thm. §14.9]], in the stronger form with $\limsup |a_{n+1}/a_n| < 1$ and $\liminf |a_{n+1}/a_n| > 1$, so that the limit need not exist. For sequences, [[§9a Divergence to ±∞ and the Ratio Test#^thm-9a-3|451 Thm. §9a.3]].
 
-> [!example] Example §100.1: An Alternating Series by the Ratio Test
+> [!example] Example §86.1: An Alternating Series by the Ratio Test
 > Test $\displaystyle\sum_{n=1}^{\infty} (-1)^n \frac{n^3}{3^n}$ for absolute convergence.
 >
 > With $a_n = (-1)^n n^3 / 3^n$,
@@ -81,7 +81,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 ^ex-86-1
 
-> [!example] Example §100.2: A Limit Equal to e
+> [!example] Example §86.2: A Limit Equal to e
 > Test the convergence of $\displaystyle\sum_{n=1}^{\infty} \frac{n^n}{n!}$.
 >
 > The terms $a_n = n^n/n!$ are positive, so no absolute values are needed. Using $(n+1)! = (n+1)\,n!$,
@@ -104,7 +104,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 ^ex-86-2
 
-> [!example] Example §100.3: The Ratio Test Is Inconclusive for p-Series
+> [!example] Example §86.3: The Ratio Test Is Inconclusive for p-Series
 > Apply the Ratio Test to $\displaystyle\sum_{n=1}^{\infty} \frac1n$ and $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^2}$.
 >
 > For $a_n = 1/n$: $\displaystyle\left| \frac{a_{n+1}}{a_n} \right| = \frac{1/(n+1)}{1/n} = \frac{n}{n+1} \to 1$.
@@ -124,7 +124,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 ## The Root Test
 
-> [!theorem] Theorem §100.2: The Root Test
+> [!theorem] Theorem §86.2: The Root Test
 > (i) If $\displaystyle\lim_{n \to \infty} \sqrt[n]{|a_n|} = L < 1$, then the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is absolutely convergent (and therefore convergent).
 >
 > (ii) If $\displaystyle\lim_{n \to \infty} \sqrt[n]{|a_n|} = L > 1$ or $\displaystyle\lim_{n \to \infty} \sqrt[n]{|a_n|} = \infty$, then the series $\displaystyle\sum_{n=1}^{\infty} a_n$ is divergent.
@@ -159,7 +159,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 
 If $L = 1$ in the Ratio Test, don't try the Root Test: $L$ will again be $1$. And if $L = 1$ in the Root Test, the Ratio Test will fail too.
 
-> [!example] Example §100.4: nth Powers
+> [!example] Example §86.4: nth Powers
 > Test the convergence of $\displaystyle\sum_{n=1}^{\infty} \left( \frac{2n + 3}{3n + 2} \right)^n$.
 >
 > With $a_n = \left( \dfrac{2n+3}{3n+2} \right)^n$,

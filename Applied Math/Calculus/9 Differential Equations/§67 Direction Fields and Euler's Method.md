@@ -23,7 +23,7 @@ $$
 
 without a formula for it. The equation says that the slope at any point $(x, y)$ on the graph (the *solution curve*) is the sum $x + y$ of the coordinates of the point. Because the curve passes through $(0, 1)$, its slope there is $0 + 1 = 1$, so near $(0, 1)$ it looks like a short line segment through $(0, 1)$ with slope $1$. To guide the rest of the sketch, draw short segments with slope $x + y$ at many points $(x, y)$; at $(1, 2)$, for instance, the segment has slope $1 + 2 = 3$. Then draw the solution curve through $(0, 1)$ so that it is parallel to nearby segments.
 
-> [!definition] Definition §77.1: Direction Field
+> [!definition] Definition §67.1: Direction Field
 > Consider a first-order differential equation of the form
 >
 > $$
@@ -47,7 +47,7 @@ without a formula for it. The equation says that the slope at any point $(x, y)$
 
 ^rem-67-1
 
-> [!example] Example §77.1: Sketching a Direction Field
+> [!example] Example §67.1: Sketching a Direction Field
 > (a) Sketch the direction field for the differential equation $y' = x^2 + y^2 - 1$.
 > (b) Use part (a) to sketch the solution curve that passes through the origin.
 >
@@ -73,7 +73,7 @@ without a formula for it. The equation says that the slope at any point $(x, y)$
 
 Direction fields also give insight into physical situations. A simple electric circuit contains an electromotive force (usually a battery or generator) that produces a voltage of $E(t)$ volts (V) and a current of $I(t)$ amperes (A) at time $t$, a resistor with a resistance of $R$ ohms ($\Omega$), an inductor with an inductance of $L$ henries (H), and a switch. By Ohm's Law the drop in voltage due to the resistor is $RI$; the voltage drop due to the inductor is $L(dI/dt)$.
 
-> [!definition] Definition §77.2: The RL Circuit Equation
+> [!definition] Definition §67.2: The RL Circuit Equation
 > One of Kirchhoff's laws says that the sum of the voltage drops equals the supplied voltage $E(t)$. Thus
 >
 > $$
@@ -86,7 +86,7 @@ Direction fields also give insight into physical situations. A simple electric c
 
 ^def-67-2
 
-> [!example] Example §77.2: Current in a Circuit
+> [!example] Example §67.2: Current in a Circuit
 > In the circuit of [[§67 Direction Fields and Euler's Method#^def-67-2|Definition §67.2]], suppose the resistance is $12\ \Omega$, the inductance is $4$ H, and a battery gives a constant voltage of $60$ V.
 > (a) Draw a direction field for the equation with these values.
 > (b) What can you say about the limiting value of the current?
@@ -117,7 +117,7 @@ Direction fields also give insight into physical situations. A simple electric c
 
 In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] the segments along any horizontal line are parallel, because the independent variable $t$ does not occur on the right side of $I' = 15 - 3I$.
 
-> [!definition] Definition §77.3: Autonomous Differential Equation
+> [!definition] Definition §67.3: Autonomous Differential Equation
 > A differential equation of the form
 >
 > $$
@@ -133,7 +133,7 @@ In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] the segm
 > [!remark]- Connections
 > - ODE version: [[§9 Autonomous Differential Equations and Population Dynamics#^def-9-1|331 Def. §9.1]] (autonomous equations, analysed there by equilibria, the phase line and stability).
 
-> [!theorem] Proposition §77.1: Shifting Solutions of an Autonomous Equation
+> [!theorem] Proposition §67.1: Shifting Solutions of an Autonomous Equation
 > If $y = g(t)$ is a solution of an autonomous equation $y' = f(y)$ and $c$ is a constant, then $y = g(t - c)$ is also a solution. So from one solution we obtain infinitely many others by shifting its graph to the right or left.
 >
 > *Stewart: 9.2 (text)*
@@ -195,7 +195,7 @@ In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] the segm
 > - Why one step is accurate: by Taylor's theorem with $n = 2$, $y(x_0 + h) = y_0 + hy'(x_0) + \frac{h^2}{2}y''(\xi) = y_0 + hF(x_0, y_0) + \frac{h^2}{2}y''(\xi)$ for some $\xi$ between $x_0$ and $x_0 + h$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]). So one step errs by at most a constant times $h^2$; over the $(b - x_0)/h$ steps needed to reach $x = b$ these errors add up to roughly a constant times $h$, which is the behaviour seen in the table of Remark: How Accurate Is Euler's Method? below.
 > - ODE version: [[§13 Numerical Approximations꞉ Euler's Method#^def-13-1|331 Def. §13.1]] (Euler's formula, also with unequal steps), and [[§13 Numerical Approximations꞉ Euler's Method#^prop-13-1|331 Prop. §13.1]], where for $y' = 1 - t + y$ the error is proved to be at most a constant times $h$.
 
-> [!example] Example §77.3: A Table of Euler Approximations
+> [!example] Example §67.3: A Table of Euler Approximations
 > Use Euler's method with step size $0.1$ to construct a table of approximate values for the solution of the initial-value problem
 >
 > $$
@@ -251,7 +251,7 @@ In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] the segm
 ![[m233-58-2.svg]]
 *Euler's method for $y' = x + y$, $y(0) = 1$. With $h = 0.5$ (blue) the first step runs $h = 0.5$ along the tangent at $(0, 1)$ and rises $hF(0, 1) = 0.5$; at $(0.5, 1.5)$ the direction is corrected to slope $2$. With $h = 0.25$ (green) there are four corrections and the polygon stays closer to the exact solution (red). Both lie below it, since the curve is concave upward.*
 
-> [!example] Example §77.4: Euler's Method for the Circuit
+> [!example] Example §67.4: Euler's Method for the Circuit
 > In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] (resistance $12\ \Omega$, inductance $4$ H, battery voltage $60$ V, switch closed at $t = 0$), the current $I$ at time $t$ is modeled by the initial-value problem
 >
 > $$

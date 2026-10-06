@@ -30,7 +30,7 @@ tags: [topology, math590]
 ^rem-20-1
 
 > [!remark]- Connections
-> - No infinite-dimensional normed space is locally compact: a compact neighborhood of 0 would contain a closed ball, and closed balls are not compact there by [[§18 Compactness and the Unit Ball#^thm-18-5|556 Thm. §18.5]] (compare [[§20 Local Compactness#^ex-20-5|Ex. §20.5]] for the product topology on ℝ^ω).
+> - No infinite-dimensional normed space is locally compact: a compact neighborhood of 0 would contain a closed ball, and closed balls are not compact there by [[§20 Compactness and the Unit Ball#^thm-20-5|556 Thm. §20.5]] (compare [[§20 Local Compactness#^ex-20-5|Ex. §20.5]] for the product topology on ℝ^ω).
 
 > [!example] Example §20.1
 > $\mathbb{R}$ is locally compact. For any $x \in \mathbb{R}$, we have $x \in (a, b) \subseteq [a, b]$, where $[a, b]$ is [[§18 Compact Spaces#^cor-18-11|compact]].
@@ -104,7 +104,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Computational version for ℂ: [[§17 Limits Involving the Point at Infinity#^def-17-3|342 Def. §17.3]] (the neighborhoods of ∞ are the exteriors of disks, complements of compact sets).
 
-> [!theorem] Proposition §24.1: The Collection $\mathcal{T}_Y$ is a Topology
+> [!theorem] Proposition §20.1: The Collection $\mathcal{T}_Y$ is a Topology
 > Let $X$ be a [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]] space. Then $\mathcal{T}_Y$ as defined above is a [[§1 Topological Spaces#^def-1-1|topology]] on $Y$.
 
 ^prop-20-1
@@ -131,7 +131,7 @@ tags: [topology, math590]
 
 ### Step 2: Verifying the Properties
 
-> [!theorem] Proposition §24.2: $X$ is a Subspace of $Y$
+> [!theorem] Proposition §20.2: $X$ is a Subspace of $Y$
 > Let $X$ be a Hausdorff space. The [[§5 Subspace Topology#^def-5-1|subspace topology]] on $X \subseteq Y$ equals the original topology on $X$.
 
 ^prop-20-2
@@ -270,7 +270,7 @@ tags: [topology, math590]
 *The same picture one dimension up, $\mathbb{R}^2\cup\{\infty\}\cong S^2$: the ray from $N$ through $p$ hits the tangent plane at $w$. The compact disk $C$ of radius $2$ (blue) corresponds to the lower hemisphere, and its complement (red) corresponds to the upper cap around $N$. Neighborhoods of $\infty$ are complements of compact sets.*
 
 > [!remark]- Connections
-> - In 591, stereographic projection is a smooth chart on the circle, [[§16 Differentiable Structures#^ex-16-3|591 Ex. §16.3]], and identifies S² with ℂP¹, [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|591 Prop. §17.4]].
+> - In 591, stereographic projection is a smooth chart on the circle, [[§17 Differentiable Structures#^ex-17-3|591 Ex. §17.3]], and identifies S² with ℂP¹, [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|591 Prop. §18.4]].
 > - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-2|342 Def. §17.2]] (the Riemann sphere, by stereographic projection of the extended plane) and [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]] (1/z is continuous on the extended plane, including at 0 and ∞).
 
 ## Local Compactness in Hausdorff Spaces

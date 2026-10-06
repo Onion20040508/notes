@@ -23,7 +23,7 @@ $$
 
 with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shifted parabola through the critical points $y = 0$ and $y = T$, with vertex $(T/2, -rT/4)$. If $0 < y < T$ then $dy/dt < 0$ and $y$ decreases, so $\phi_1(t) = 0$ is asymptotically stable; if $y > T$ then $dy/dt > 0$ and $y$ increases, so $\phi_2(t) = T$ is unstable. By [[§9 Autonomous Differential Equations and Population Dynamics#^prop-9-2|Proposition §9.2]], $f'(y) < 0$ for $0 < y < T/2$ and $f'(y) > 0$ for $T/2 < y < T$, so solutions in the strip $0 < y < T$ are concave up below $T/2$ and concave down above it; for $y > T$ both $f$ and $f'$ are positive, and solutions are concave up. The solutions in $0 < y < T$ decrease to $0$; those above $T$ increase more and more steeply.
 
-> [!definition] Definition §13.1: Threshold Level
+> [!definition] Definition §10.1: Threshold Level
 > In equation (14) the value $T$ is a **threshold level**: if the initial value $y_0$ is less than $T$, the solution approaches zero as $t$ increases, and if $y_0 > T$ it grows without bound. Below the threshold, growth does not occur.
 >
 > *BDP: 2.5 (text)*
@@ -33,7 +33,7 @@ with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shift
 > [!remark]- Connections
 > - Stewart's versions of a threshold (a minimum viable population) and of harvesting, as modifications of the logistic equation: [[§69 Models for Population Growth#^def-69-4|Calc Def. §69.4]] (minimum population) and [[§69 Models for Population Growth#^def-69-3|Calc Def. §69.3]] (harvesting).
 
-> [!theorem] Proposition §13.1: Solution of the Threshold Equation
+> [!theorem] Proposition §10.1: Solution of the Threshold Equation
 > The solution of (14) with $y(0) = y_0 > 0$ is
 >
 > $$
@@ -108,7 +108,7 @@ There are three critical points, $y = 0$, $y = T$ and $y = K$, giving the equili
 
 *Uses:* [[§9 Autonomous Differential Equations and Population Dynamics#^prop-9-2|§9.2]], [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]] (Rolle's theorem)
 
-> [!example] Example §13.1: Phase Lines with a Threshold
+> [!example] Example §10.1: Phase Lines with a Threshold
 > **(a)** A population of squirrels $P(t)$ ($t$ in years) satisfies
 >
 > $$
@@ -158,7 +158,7 @@ There are three critical points, $y = 0$, $y = T$ and $y = K$, giving the equili
 
 When the right side depends on a parameter $a$, the critical points move as $a$ varies, and at special values of $a$ they can merge or split.
 
-> [!definition] Definition §13.2: Bifurcation Point
+> [!definition] Definition §10.2: Bifurcation Point
 > For an equation
 >
 > $$
@@ -181,7 +181,7 @@ When the right side depends on a parameter $a$, the critical points move as $a$ 
 
 ^def-10-3
 
-> [!example] Example §13.2: Harvesting Squirrels
+> [!example] Example §10.2: Harvesting Squirrels
 > In [[§10 Critical Thresholds and Bifurcations#^ex-10-1|Example §10.1]](a), hunting is permitted: a fraction $\alpha$ of the squirrel population may be eliminated every year, so
 >
 > $$

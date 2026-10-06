@@ -15,7 +15,7 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 
 ## The Unique Representation Theorem
 
-> [!theorem] Theorem §40.1: The Unique Representation Theorem
+> [!theorem] Theorem §32.1: The Unique Representation Theorem
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ be a basis for a vector space $V$. Then for each $\mathbf{x}$ in $V$, there exists a unique set of scalars $c_1, \ldots, c_n$ such that
 >
 > $$
@@ -42,7 +42,7 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 > [!remark]- Connections
 > - Rigorous treatment: [[§5 Bases#^ladr-2-28|LADR 2.28]], where uniqueness of the representation is shown to be *equivalent* to being a basis; the coordinate vector is Axler's $\mathcal{M}(v)$, [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]]. In an orthogonal basis the weights have a closed formula: [[§51 Orthogonal Sets#^thm-51-2|Theorem §51.2]].
 
-> [!definition] Definition §40.1: Coordinates; Coordinate Vector
+> [!definition] Definition §32.1: Coordinates; Coordinate Vector
 > Suppose $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ is a basis for $V$ and $\mathbf{x}$ is in $V$. The **coordinates of $\mathbf{x}$ relative to the basis $\mathcal{B}$** (the **$\mathcal{B}$-coordinates of $\mathbf{x}$**) are the weights $c_1, \ldots, c_n$ such that $\mathbf{x} = c_1\mathbf{b}_1 + \cdots + c_n\mathbf{b}_n$. The vector in $\mathbb{R}^n$
 >
 > $$
@@ -55,14 +55,14 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 
 ^def-32-1
 
-> [!definition] Definition §40.2: Coordinate Mapping
+> [!definition] Definition §32.2: Coordinate Mapping
 > For a basis $\mathcal{B}$ of $V$ ([[§32 Coordinate Systems#^def-32-1|Definition §32.1]]), the mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is the **coordinate mapping (determined by $\mathcal{B}$)**.
 >
 > *Lay: 4.4, Definition*
 
 ^def-32-2
 
-> [!example] Example §40.1: From Coordinates to the Vector
+> [!example] Example §32.1: From Coordinates to the Vector
 > **(a)** Let $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$ with $\mathbf{b}_1 = (1, 0)$, $\mathbf{b}_2 = (1, 2)$. If $[\mathbf{x}]_{\mathcal B} = (-2, 3)$, the coordinates say how to build $\mathbf{x}$ from $\mathcal{B}$:
 >
 > $$
@@ -85,7 +85,7 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 
 ## Coordinates in ℝⁿ
 
-> [!example] Example §40.2: Finding a Coordinate Vector
+> [!example] Example §32.2: Finding a Coordinate Vector
 > Let $\mathbf{b}_1 = (2, 1)$, $\mathbf{b}_2 = (-1, 1)$, $\mathbf{x} = (4, 5)$ and $\mathcal{B} = \{\mathbf{b}_1, \mathbf{b}_2\}$. Find $[\mathbf{x}]_{\mathcal B}$.
 >
 > The coordinates $c_1, c_2$ satisfy
@@ -125,7 +125,7 @@ The matrix in (3) changes the $\mathcal{B}$-coordinates of a vector into its sta
 
 ^def-32-3
 
-> [!theorem] Proposition §40.2: The Change-of-Coordinates Equation
+> [!theorem] Proposition §32.2: The Change-of-Coordinates Equation
 > For a basis $\mathcal{B}$ of $\mathbb{R}^n$ and every $\mathbf{x}$ in $\mathbb{R}^n$,
 >
 > $$
@@ -151,7 +151,7 @@ The change-of-coordinates equation (4) is needed at several points in Chapters 5
 
 Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a vector space $V$ introduces a coordinate system in $V$. The coordinate mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ connects the possibly unfamiliar space $V$ to the familiar space $\mathbb{R}^n$: points of $V$ can be identified by their new "names".
 
-> [!theorem] Theorem §40.3: The Coordinate Mapping Is an Isomorphism onto ℝⁿ
+> [!theorem] Theorem §32.3: The Coordinate Mapping Is an Isomorphism onto ℝⁿ
 > Let $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ be a basis for a vector space $V$. Then the coordinate mapping $\mathbf{x} \mapsto [\mathbf{x}]_{\mathcal B}$ is a one-to-one linear transformation from $V$ onto $\mathbb{R}^n$. Consequently, for $\mathbf{u}_1, \ldots, \mathbf{u}_p$ in $V$ and scalars $c_1, \ldots, c_p$,
 >
 > $$
@@ -191,9 +191,9 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > [!remark]- Connections
 > - Rigorous treatment: isomorphisms [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], and [[Dimension shows whether vector spaces are isomorphic]] ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]): finite-dimensional spaces are isomorphic exactly when they have the same dimension, the fact behind Lay's question at the end of 4.4 (answered in [[§33 The Dimension of a Vector Space#^thm-33-2|Theorem §33.2]]).
 > - One-to-one and onto, and an invertible function is a bijection: [[§9 Injections, Surjections and Bijections#^def-9-3|250 Def. §9.3]], [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].
-> - See also: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2|556 Def. §2.2]] (the same definition for linear spaces that need not be finite-dimensional).
+> - See also: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|556 Def. §3.2]] (the same definition for linear spaces that need not be finite-dimensional).
 
-> [!theorem] Corollary §40.4: Coordinates Preserve Independence and Spanning
+> [!theorem] Corollary §32.4: Coordinates Preserve Independence and Spanning
 > Let $\mathcal{B}$ be a basis of $V$ with $n$ vectors, and let $\mathbf{u}_1, \ldots, \mathbf{u}_p$, $\mathbf{w}$ be in $V$.
 > 1. $\{\mathbf{u}_1, \ldots, \mathbf{u}_p\}$ is linearly independent in $V$ if and only if $\{[\mathbf{u}_1]_{\mathcal B}, \ldots, [\mathbf{u}_p]_{\mathcal B}\}$ is linearly independent in $\mathbb{R}^n$.
 > 2. $\mathbf{w}$ is a linear combination of $\mathbf{u}_1, \ldots, \mathbf{u}_p$ if and only if $[\mathbf{w}]_{\mathcal B}$ is a linear combination of $[\mathbf{u}_1]_{\mathcal B}, \ldots, [\mathbf{u}_p]_{\mathcal B}$ (with the same weights).
@@ -217,7 +217,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 
 *Uses:* [[§32 Coordinate Systems#^thm-32-3|§32.3]], [[§31 Linearly Independent Sets; Bases#^def-31-1|Def. §31.1]]
 
-> [!example] Example §40.3: Polynomials as Vectors in ℝ⁴; Two Coordinate Systems
+> [!example] Example §32.3: Polynomials as Vectors in ℝ⁴; Two Coordinate Systems
 > **(a) The monomial basis.** Let $\mathcal{B} = \{1, t, t^2, t^3\}$ be the standard basis of $\mathbb{P}_3$. A typical element $\mathbf{p}(t) = a_0 + a_1t + a_2t^2 + a_3t^3$ is already displayed as a linear combination of the basis vectors, so
 >
 > $$
@@ -247,7 +247,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 
 ^ex-32-3
 
-> [!example] Example §40.4: Testing Polynomials for Independence
+> [!example] Example §32.4: Testing Polynomials for Independence
 > **(a)** Use coordinate vectors to verify that $1 + 2t^2$, $4 + t + 5t^2$ and $3 + 2t$ are linearly dependent in $\mathbb{P}_2$.
 >
 > Relative to the standard basis $\{1, t, t^2\}$ the coordinate vectors are $(1, 0, 2)$, $(4, 1, 5)$, $(3, 2, 0)$. Write them as the columns of $A$ and row reduce $[A \ \mathbf{0}]$ ($R_3 - 2R_1$, then $R_3 + 3R_2$):
@@ -275,7 +275,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 
 ^ex-32-4
 
-> [!example] Example §40.5: Coordinates in a Plane and in ℙ₂
+> [!example] Example §32.5: Coordinates in a Plane and in ℙ₂
 > **(a) A plane in $\mathbb{R}^3$.** Let $\mathbf{v}_1 = (3, 6, 2)$, $\mathbf{v}_2 = (-1, 0, 1)$, $\mathbf{x} = (3, 12, 7)$, and $\mathcal{B} = \{\mathbf{v}_1, \mathbf{v}_2\}$, a basis for $H = \operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ (two vectors, not multiples of each other). Is $\mathbf{x}$ in $H$, and if so, what is $[\mathbf{x}]_{\mathcal B}$? If $\mathbf{x}$ is in $H$, then $c_1\mathbf{v}_1 + c_2\mathbf{v}_2 = \mathbf{x}$ is consistent, and $c_1$, $c_2$ are the $\mathcal{B}$-coordinates of $\mathbf{x}$. Row reduce:
 >
 > $$

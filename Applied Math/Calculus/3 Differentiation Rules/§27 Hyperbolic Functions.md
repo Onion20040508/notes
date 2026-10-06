@@ -15,7 +15,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 
 ## Hyperbolic Functions and Their Derivatives
 
-> [!definition] Definition §30.1: The Hyperbolic Functions
+> [!definition] Definition §27.1: The Hyperbolic Functions
 > $$
 > \begin{aligned}
 > \sinh x &= \frac{e^x - e^{-x}}{2} & \operatorname{csch} x &= \frac{1}{\sinh x} \\
@@ -56,7 +56,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 > [!remark]- Connections
 > - See also: [[§5★ Boundary Value Problems#^ex-5-2|341 Ex. §5.2]] (the catenary derived: for a cable hanging under its own weight the equation of [[§5★ Boundary Value Problems#^prop-5-1|341 Prop. §5.1]] becomes $u'' = \mu\sqrt{1 + (u')^2}$, solved with $\sinh^{-1}$).
 
-> [!theorem] Theorem §30.1: Hyperbolic Identities
+> [!theorem] Theorem §27.1: Hyperbolic Identities
 > $$
 > \begin{aligned}
 > \sinh(-x) &= -\sinh x & \cosh(-x) &= \cosh x \\
@@ -115,7 +115,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 ![[m233-24-1.svg]]
 *Circular and hyperbolic functions. Left: $(\cos t, \sin t)$ on the circle $x^2 + y^2 = 1$; the shaded sector has area $t/2$. Right: $(\cosh t, \sinh t)$ on the hyperbola $x^2 - y^2 = 1$; the shaded hyperbolic sector also has area $t/2$, but as $t \to \infty$ the point runs off along the asymptote $y = x$ (dashed) instead of returning.*
 
-> [!theorem] Theorem §30.2: Derivatives of Hyperbolic Functions
+> [!theorem] Theorem §27.2: Derivatives of Hyperbolic Functions
 > $$
 > \begin{aligned}
 > \frac{d}{dx}(\sinh x) &= \cosh x & \frac{d}{dx}(\operatorname{csch} x) &= -\operatorname{csch} x \coth x \\
@@ -153,7 +153,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 
 *Uses:* [[§27 Hyperbolic Functions#^def-27-1|Def. §27.1]], [[§27 Hyperbolic Functions#^thm-27-1|§27.1]], [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-6|§17.6]], [[§20 The Chain Rule#^cor-20-4|§20.4]], [[§18 The Product and Quotient Rules#^thm-18-2|§18.2]]
 
-> [!example] Example §30.1: Combining with the Chain Rule
+> [!example] Example §27.1: Combining with the Chain Rule
 > If $y = \cosh\sqrt{x}$, find $dy/dx$.
 >
 > By [[§27 Hyperbolic Functions#^thm-27-2|Theorem §27.2]] and the Chain Rule,
@@ -170,7 +170,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 
 $\sinh$ and $\tanh$ are one-to-one (they are increasing, since their derivatives $\cosh x$ and $\operatorname{sech}^2 x$ are positive), so they have inverse functions. $\cosh$ is not one-to-one, but restricted to $[0, \infty)$ it is one-to-one and takes every value in its range $[1, \infty)$.
 
-> [!definition] Definition §30.2: Inverse Hyperbolic Functions
+> [!definition] Definition §27.2: Inverse Hyperbolic Functions
 > $$
 > \begin{aligned}
 > y = \sinh^{-1} x &\iff \sinh y = x \\
@@ -187,7 +187,7 @@ $\sinh$ and $\tanh$ are one-to-one (they are increasing, since their derivatives
 
 Since the hyperbolic functions are built from exponentials, their inverses can be written with logarithms.
 
-> [!theorem] Theorem §30.3: Inverse Hyperbolic Functions as Logarithms
+> [!theorem] Theorem §27.3: Inverse Hyperbolic Functions as Logarithms
 > $$
 > \begin{aligned}
 > \sinh^{-1} x &= \ln\big( x + \sqrt{x^2 + 1} \big), & x &\in \mathbb{R} \qquad (3) \\
@@ -232,7 +232,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 > [!remark]- Connections
 > - Complex-variables version: [[§40★ Inverse Trigonometric and Hyperbolic Functions#^prop-40-4|342 Prop. §40.4]] (the same logarithmic formulas, with multiple-valued square roots and logarithms).
 
-> [!theorem] Theorem §30.4: Derivatives of Inverse Hyperbolic Functions
+> [!theorem] Theorem §27.4: Derivatives of Inverse Hyperbolic Functions
 > $$
 > \begin{aligned}
 > \frac{d}{dx}(\sinh^{-1} x) &= \frac{1}{\sqrt{1 + x^2}} & \frac{d}{dx}(\operatorname{csch}^{-1} x) &= -\frac{1}{|x|\sqrt{x^2 + 1}} \\
@@ -272,7 +272,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 
 *Uses:* [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-1|§22.1]], [[§27 Hyperbolic Functions#^thm-27-1|§27.1]], [[§27 Hyperbolic Functions#^thm-27-2|§27.2]], [[§27 Hyperbolic Functions#^def-27-2|Def. §27.2]], [[§21 Implicit Differentiation#^rem-21-1|§21]] (implicit differentiation)
 
-> [!example] Example §30.2: Differentiating the Logarithmic Form
+> [!example] Example §27.2: Differentiating the Logarithmic Form
 > Verify $\dfrac{d}{dx}(\sinh^{-1} x) = \dfrac{1}{\sqrt{1 + x^2}}$ from Formula 3 instead.
 >
 > By [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-4|Corollary §22.4]] and the Chain Rule,
@@ -288,7 +288,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 
 ^ex-27-2
 
-> [!example] Example §30.3: An Inverse Hyperbolic Function of a Trigonometric Function
+> [!example] Example §27.3: An Inverse Hyperbolic Function of a Trigonometric Function
 > Find $\dfrac{d}{dx}\big[\tanh^{-1}(\sin x)\big]$.
 >
 > By [[§27 Hyperbolic Functions#^thm-27-4|Theorem §27.4]] and the Chain Rule (note $|\sin x| < 1$ is needed, i.e. $\cos x \ne 0$),

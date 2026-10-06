@@ -15,7 +15,7 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 
 ## The Product Ax
 
-> [!definition] Definition §6.1: The Product of a Matrix and a Vector
+> [!definition] Definition §5.1: The Product of a Matrix and a Vector
 > If $A$ is an $m \times n$ matrix with columns $\mathbf{a}_1, \ldots, \mathbf{a}_n$, and $\mathbf{x}$ is in $\mathbb{R}^n$, then the **product of $A$ and $\mathbf{x}$**, denoted $A\mathbf{x}$, is **the linear combination of the columns of $A$ using the corresponding entries in $\mathbf{x}$ as weights**:
 >
 > $$
@@ -31,14 +31,14 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 > [!remark]- Connections
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-50|LADR 3.50]] proves this as a property of matrix multiplication (there $A\mathbf{b}$ is defined entrywise, and "combination of the columns" is the theorem). Lay makes the column picture the definition and derives the entrywise rule ([[§5 The Matrix Equation Ax = b#^prop-5-4|Proposition §5.4]]).
 
-> [!definition] Definition §6.2: Matrix Equation
+> [!definition] Definition §5.2: Matrix Equation
 > An equation of the form $A\mathbf{x} = \mathbf{b}$, with $A$ a given $m \times n$ matrix, $\mathbf{b}$ a given vector in $\mathbb{R}^m$ and $\mathbf{x}$ unknown, is a **matrix equation**, as distinguished from a vector equation $x_1\mathbf{a}_1 + \cdots + x_n\mathbf{a}_n = \mathbf{b}$.
 >
 > *Lay: 1.4 (text)*
 
 ^def-5-2
 
-> [!example] Example §6.1: Products, Two Ways
+> [!example] Example §5.1: Products, Two Ways
 > **(a)** By the definition,
 >
 > $$
@@ -81,7 +81,7 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 
 ^ex-5-1
 
-> [!theorem] Theorem §6.1: Three Views of a Linear System
+> [!theorem] Theorem §5.1: Three Views of a Linear System
 > If $A$ is an $m \times n$ matrix with columns $\mathbf{a}_1, \ldots, \mathbf{a}_n$, and $\mathbf{b}$ is in $\mathbb{R}^m$, the matrix equation
 >
 > $$
@@ -115,7 +115,7 @@ So a linear system can be viewed in three equivalent ways, as a matrix equation,
 
 ## Existence of Solutions
 
-> [!theorem] Corollary §6.2: Solvable Means b Is a Combination of the Columns
+> [!theorem] Corollary §5.2: Solvable Means b Is a Combination of the Columns
 > The equation $A\mathbf{x} = \mathbf{b}$ has a solution if and only if $\mathbf{b}$ is a linear combination of the columns of $A$, that is, $\mathbf{b} \in \operatorname{Span}\{\mathbf{a}_1, \ldots, \mathbf{a}_n\}$.
 >
 > *Lay: 1.4 (text)*
@@ -131,7 +131,7 @@ So a linear system can be viewed in three equivalent ways, as a matrix equation,
 
 A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* possible $\mathbf{b}$?
 
-> [!example] Example §6.2: For Which b Is Ax = b Consistent?
+> [!example] Example §5.2: For Which b Is Ax = b Consistent?
 > Let
 >
 > $$
@@ -177,7 +177,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 
 ^def-5-3
 
-> [!theorem] Theorem §6.3: When Ax = b Is Solvable for Every b
+> [!theorem] Theorem §5.3: When Ax = b Is Solvable for Every b
 > Let $A$ be an $m \times n$ matrix. Then the following statements are logically equivalent; that is, for a particular $A$, either they are all true or they are all false.
 >
 > a. For each $\mathbf{b}$ in $\mathbb{R}^m$, the equation $A\mathbf{x} = \mathbf{b}$ has a solution.
@@ -296,7 +296,7 @@ A harder existence question: is $A\mathbf{x} = \mathbf{b}$ consistent for *all* 
 
 These two properties are what makes $\mathbf{x} \mapsto A\mathbf{x}$ a *linear transformation* ([[§9 Introduction to Linear Transformations#^def-9-4|Definition §9.4]]).
 
-> [!example] Example §6.3: Checking Linearity
+> [!example] Example §5.3: Checking Linearity
 > Let $A = \begin{bmatrix} 2 & 5 \\ 3 & 1 \end{bmatrix}$, $\mathbf{u} = \begin{bmatrix} 4 \\ -1 \end{bmatrix}$, $\mathbf{v} = \begin{bmatrix} -3 \\ 5 \end{bmatrix}$. Verify [[§5 The Matrix Equation Ax = b#^thm-5-5|Theorem §5.5]](a).
 >
 > $$

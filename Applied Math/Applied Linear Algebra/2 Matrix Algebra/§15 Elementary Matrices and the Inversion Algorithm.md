@@ -17,7 +17,7 @@ Each elementary row operation is multiplication on the left by an elementary mat
 
 An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can be found by watching the row reduction of $A$ to $I$. The link is that row operations are matrix multiplications.
 
-> [!definition] Definition §18.2: Elementary Matrix
+> [!definition] Definition §15.1: Elementary Matrix
 > An **elementary matrix** is one that is obtained by performing a single elementary row operation on an identity matrix. There are three kinds, one for each kind of row operation: replacement, interchange and scaling.
 >
 > The lecture writes $E_{ij}(a)$ for the replacement matrix that adds $a$ times row $j$ to row $i$ ($i \ne j$): it is $I$ with the $(i, j)$-entry changed from $0$ to $a$,
@@ -31,7 +31,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 
 ^def-15-1
 
-> [!definition] Definition §18.5: Permutation Matrix
+> [!definition] Definition §15.2: Permutation Matrix
 > An $n \times n$ matrix is a **permutation matrix** if each row and each column has exactly one nonzero entry, and that entry is $1$. Equivalently, its columns are $\mathbf{e}_1, \ldots, \mathbf{e}_n$ in some order. There are exactly $n!$ of them; for $n = 3$ the $3! = 6$ permutation matrices are
 >
 > $$
@@ -50,9 +50,9 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 ^def-15-2
 
 > [!remark]- Connections
-> - Permutation matrices are the matrices $M(\sigma)$ of the linear maps that permute the standard basis, and $\sigma \mapsto M(\sigma)$ is an injective homomorphism $S_n \to GL_n$: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|493 Def. §20.5]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|493 Prop. §20.5]]. The count $n!$ is the order of $S_n$.
+> - Permutation matrices are the matrices $M(\sigma)$ of the linear maps that permute the standard basis, and $\sigma \mapsto M(\sigma)$ is an injective homomorphism $S_n \to GL_n$: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|493 Def. §20.6]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|493 Prop. §20.5]]. The count $n!$ is the order of $S_n$.
 
-> [!theorem] Proposition §18.1: Row Operations Are Left Multiplications
+> [!theorem] Proposition §15.1: Row Operations Are Left Multiplications
 > If an elementary row operation is performed on an $m \times n$ matrix $A$, the resulting matrix can be written as $EA$, where the $m \times m$ matrix $E$ is created by performing the same row operation on $I_m$.
 >
 > *Lay: 2.2 (text)*
@@ -78,7 +78,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 
 *Uses:* [[§12 Matrix Operations#^prop-12-5|§12.5]], [[§12 Matrix Operations#^prop-12-4|§12.4]]
 
-> [!theorem] Proposition §18.2: Elementary Matrices Are Invertible
+> [!theorem] Proposition §15.2: Elementary Matrices Are Invertible
 > Each elementary matrix $E$ is invertible. The inverse of $E$ is the elementary matrix of the same type that transforms $E$ back into $I$.
 >
 > *Lay: 2.2 (text)*
@@ -92,7 +92,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 
 *Uses:* [[§15 Elementary Matrices and the Inversion Algorithm#^prop-15-1|§15.1]], [[§14 The Inverse of a Matrix#^def-14-1|Def. §14.1]], [[§1 Systems of Linear Equations#^prop-1-1|§1.1]]
 
-> [!example] Example §18.1: Elementary and Permutation Matrices
+> [!example] Example §15.1: Elementary and Permutation Matrices
 > **(a)** Let
 >
 > $$
@@ -180,8 +180,7 @@ An invertible matrix is row equivalent to an identity matrix, and $A^{-1}$ can b
 >
 > *Source: 235 lecture L9*
 
-^rem-15-2
-
+^rem-15-1
 ## An Algorithm for Finding the Inverse
 
 Placing $A$ and $I$ side by side, row operations on $[\,A \ \ I\,]$ act identically on both halves. By [[§15 Elementary Matrices and the Inversion Algorithm#^thm-15-3|Theorem §15.3]], either some row operations turn $A$ into $I_n$, and then they turn $I_n$ into $A^{-1}$, or $A$ is not invertible.
@@ -196,8 +195,7 @@ Placing $A$ and $I$ side by side, row operations on $[\,A \ \ I\,]$ act identica
 >
 > *Lay: 2.2, Algorithm for Finding A⁻¹*
 
-^rem-15-3
-
+^rem-15-2
 > [!remark] Remark: Another View of Matrix Inversion
 > Write $I_n = [\,\mathbf{e}_1 \ \cdots \ \mathbf{e}_n\,]$. Row reducing $[\,A \ \ I\,]$ solves the $n$ systems
 >
@@ -209,9 +207,8 @@ Placing $A$ and $I$ side by side, row operations on $[\,A \ \ I\,]$ act identica
 >
 > *Source: 235 lecture L8*
 
-^rem-15-4
-
-> [!example] Example §18.2: Inverting by Row Reduction
+^rem-15-3
+> [!example] Example §15.2: Inverting by Row Reduction
 > **(a)** For $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$, solve $A\mathbf{u} = \mathbf{e}_1$ and $A\mathbf{v} = \mathbf{e}_2$ at once:
 >
 > $$
@@ -268,4 +265,4 @@ Placing $A$ and $I$ side by side, row operations on $[\,A \ \ I\,]$ act identica
 > [!remark]- Remark: Numerical Note
 > In practical work $A^{-1}$ is seldom computed, unless its entries are needed. Computing both $A^{-1}$ and $A^{-1}\mathbf{b}$ takes about three times as many arithmetic operations as solving $A\mathbf{x} = \mathbf{b}$ by row reduction, and row reduction may be more accurate.
 
-^rem-15-5
+^rem-15-4

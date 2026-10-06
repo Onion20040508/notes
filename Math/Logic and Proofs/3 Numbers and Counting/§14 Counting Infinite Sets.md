@@ -24,7 +24,7 @@ For finite sets, "same number of elements" means "there is a bijection" ([[§10 
 
 So $X$ is finite of cardinality $n \in \Z^+$ if and only if $X$ is equipotent to $\N_n$.
 
-> [!definition] Definition §14.3: Denumerable Set
+> [!definition] Definition §14.2: Denumerable Set
 > A set $X$ is **denumerable** (or enumerable) if there is a bijection $\Z^+ \to X$, i.e. $X$ is equipotent to $\Z^+$. Such an $X$ has **cardinality $\aleph_0$** ("aleph null"), written $|X| = \aleph_0$.
 >
 > *Eccles: Definition 14.1.2*
@@ -33,7 +33,7 @@ So $X$ is finite of cardinality $n \in \Z^+$ if and only if $X$ is equipotent to
 
 A bijection $f : \Z^+ \to X$ lists the elements of a denumerable set in an infinite list, $X = \{x_1, x_2, \ldots, x_n, \ldots\}$ with $x_n = f(n)$, each element occurring exactly once.
 
-> [!definition] Definition §14a.1: Countable and Uncountable Sets
+> [!definition] Definition §14.3: Countable and Uncountable Sets
 > A set is **countable** if it is finite or denumerable, and **uncountable** if it is not countable.
 >
 > *Eccles: Definition 14.1.2*

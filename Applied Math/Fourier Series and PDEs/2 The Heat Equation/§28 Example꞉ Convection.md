@@ -52,7 +52,7 @@ Either $T(t) \equiv 0$ (which would make $w \equiv 0$) or $\phi(0) = 0$ and $\ka
 
 ## The Eigenvalue Problem
 
-> [!theorem] Theorem §34.1: Eigenvalues for Convection at One End
+> [!theorem] Theorem §28.1: Eigenvalues for Convection at One End
 > The eigenvalue problem
 >
 > $$
@@ -106,7 +106,7 @@ Either $T(t) \equiv 0$ (which would make $w \equiv 0$) or $\phi(0) = 0$ and $\ka
 
 ^rem-28-1
 
-> [!example] Example §34.1: The First Five Eigenvalues Numerically
+> [!example] Example §28.1: The First Five Eigenvalues Numerically
 > The roots of (11) depend on the single dimensionless parameter $\kappa/ha$: in terms of $z = \lambda a$ the equation is $\tan z = -Az$ with $A = \kappa/ha$. Solving it on each interval $\big(\frac{(2n - 1)\pi}2, n\pi\big)$ by bisection gives the first five positive solutions $z_n = \lambda_na$:
 >
 > | $n$ | $A = 0.25$ | $0.5$ | $1$ | $2$ | $4$ |
@@ -139,7 +139,7 @@ $$
 
 Although (12) looks like a Fourier series problem, it is not, because $\lambda_2, \lambda_3, \ldots$ are not integer multiples of $\lambda_1$. But the idea of orthogonality still works.
 
-> [!theorem] Proposition §34.2: Orthogonality and Norms of the Eigenfunctions
+> [!theorem] Proposition §28.2: Orthogonality and Norms of the Eigenfunctions
 > Let $\lambda_n$ be the positive roots of (11). Then
 >
 > $$
@@ -179,7 +179,7 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 
 *Uses:* [[§28 Example꞉ Convection#^thm-28-1|§28.1]]
 
-> [!theorem] Theorem §34.3: Coefficients and Solution
+> [!theorem] Theorem §28.3: Coefficients and Solution
 > If the expansion (12) holds and may be integrated term by term after multiplication by $\sin(\lambda_mx)$, then
 >
 > $$
@@ -212,7 +212,7 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 *That every sectionally smooth $g$ does have an expansion (12), so that the hypothesis of Theorem §28.3 is met, is not shown here; it is the expansion theorem for Sturm–Liouville eigenfunctions, [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|Theorem §30.2]].*
 
 > [!remark]- Connections
-> - (14) is the coordinate formula $b_m = \langle g, \phi_m\rangle/\langle\phi_m, \phi_m\rangle$ for an orthogonal set in the inner product $\int_0^af g\,dx$: [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]]. In finite dimensions orthogonality and a basis suffice; here "basis" means completeness, the property that the expansion reconstructs $g$: [[§24 Orthonormal Sets and Bases#^def-24-2|556 Def. §24.2]], [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]].
+> - (14) is the coordinate formula $b_m = \langle g, \phi_m\rangle/\langle\phi_m, \phi_m\rangle$ for an orthogonal set in the inner product $\int_0^af g\,dx$: [[§56 Inner Product Spaces#^thm-56-2|235 Thm. §56.2]]. In finite dimensions orthogonality and a basis suffice; here "basis" means completeness, the property that the expansion reconstructs $g$: [[§27 Orthonormal Sets and Bases#^def-27-2|556 Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]].
 
 > [!remark] Remark: A Generalized Fourier Basis
 > The lectures name the property used here. A sequence of functions $\phi_1, \phi_2, \ldots$ on an interval $I$ is a **generalized Fourier basis** if (i) it is orthogonal, $\int_I\phi_i\phi_j\,dx = 0$ for $i \ne j$, and (ii) it is complete: every sectionally continuous $f$ has an expansion $f(x) \sim \sum c_n\phi_n(x)$, with $c_n = \int_If\phi_n\,dx\big/\int_I\phi_n^2\,dx$. The eigenfunctions $\sin(\lambda_nx)$ of (9)–(10) are such a basis, as are those of [[§25 Example꞉ Fixed End Temperatures|§25]]–[[§27 Example꞉ Different Boundary Conditions|§27]]. The eigenvalue problems of this chapter, $\phi'' = p\phi$ with conditions $\alpha_1\phi(0) - \alpha_2\phi'(0) = 0$ and $\beta_1\phi(a) + \beta_2\phi'(a) = 0$, are special cases of the Sturm–Liouville problem, whose theorems guarantee both properties: [[§29 Sturm–Liouville Problems#^thm-29-2|Theorem §29.2]], [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|Theorem §30.2]].
@@ -223,7 +223,7 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 
 ## Examples
 
-> [!example] Example §34.2: Starting from Zero Temperature
+> [!example] Example §28.2: Starting from Zero Temperature
 > Solve (1)–(4) with $f(x) = 0$, and find the coefficients for $g(x) = 1$.
 >
 > **Coefficients.** Here $g = -v = -T_0 - Bx$ with $B = h(T_1 - T_0)/(\kappa + ha)$. Two integrals are needed:
@@ -257,7 +257,7 @@ Although (12) looks like a Fourier series problem, it is not, because $\lambda_2
 ![[m341-22-2.svg]]
 *Example §22.2 with $T_0 = 20$, $T_1 = 100$, $f(x) = 0$, at $kt/a^2 = 0.001$, $0.01$, $0.1$, $1$; dashed: the steady state (5). (a) $\kappa/ha = 0.1$ (strong convection): the right end quickly approaches the fluid temperature and $v(a) = 20 + 80/1.1 \approx 92.7$. (b) $\kappa/ha = 1$: the end stays well below $T_1$, $v(a) = 60$. Both the temperature and the slope at $x = a$ change with time, in the ratio required by the boundary condition (3).*
 
-> [!example] Example §34.3: A General Robin Condition
+> [!example] Example §28.3: A General Robin Condition
 > Solve $u_{xx} = \frac1ku_t$, $0 < x < a$, with $u(0, t) = T_1$, $hu(a, t) + \kappa u_x(a, t) = r$ (a constant), $u(x, 0) = f(x)$.
 >
 > **Steady state.** $v'' = 0$, $v(0) = T_1$, $hv(a) + \kappa v'(a) = r$. With $v = Bx + T_1$: $h(Ba + T_1) + \kappa B = r$, so

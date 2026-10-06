@@ -10,12 +10,12 @@ tags: [topology, math590]
 
 ## Definition and Basic Properties
 
-> [!definition] Definition §18.1: Separation
+> [!definition] Definition §15.1: Separation
 > A **separation** of a topological space $X$ is a pair $U, V$ of disjoint nonempty open subsets of $X$ whose union is $X$.
 
 ^def-15-1
 
-> [!definition] Definition §18.2: Connected Space
+> [!definition] Definition §15.2: Connected Space
 > A space is called **connected** if there doesn't exist a [[§15 Connected Spaces#^def-15-1|separation]] of $X$.
 
 ^def-15-2
@@ -39,7 +39,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - MATH 451 version: [[Intermediate Value Theorem]].
 > - Invariance follows from [[Continuous Image of a Connected Space is Connected|Continuous Image of Connected Space]]; the strictness in point 4 is [[§16 Connected Subspaces of ℝ#^thm-16-4|Path-Connected Implies Connected]] and [[§16 Connected Subspaces of ℝ#^ex-16-7|Topologist's Sine Curve]].
-> - Connected components, which 590 does not treat, are defined in [[§1 Point-Set Topology Review#^def-1-8|591 Def. §1.8]], with their basic properties in [[§1 Point-Set Topology Review#^prop-1-7|591 Prop. §1.7]].
+> - Connected components, which 590 does not treat, are defined in [[§1 Point-Set Topology Review#^def-1-9|591 Def. §1.9]], with their basic properties in [[§1 Point-Set Topology Review#^prop-1-7|591 Prop. §1.7]].
 
 > [!remark] Remark: Hausdorff and Connected are Independent
 > The [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]] property and connectedness are logically independent — neither implies nor contradicts the other:
@@ -53,17 +53,17 @@ tags: [topology, math590]
 
 ^rem-15-2
 
-> [!example] Example §18.1
+> [!example] Example §15.1
 > $X = \{0, 1, 2\}$ with indiscrete topology. $\Rightarrow$ $X$ is connected (no separation possible).
 
 ^ex-15-1
 
-> [!example] Example §18.2
+> [!example] Example §15.2
 > $X = \{0, 1, 2\}$ with discrete topology. $\{0, 1\} \cup \{2\} = X$. Not connected.
 
 ^ex-15-2
 
-> [!example] Example §18.3
+> [!example] Example §15.3
 > $Y = [-1, 0) \cup (0, 1]$ as subspace of $\mathbb{R}$. Not connected. Take $[-1, 0)$ and $(0, 1]$.
 
 ^ex-15-3
@@ -71,7 +71,7 @@ tags: [topology, math590]
 ![[m590-13-1.svg]]
 *A separation of $Y = [-1,0) \cup (0,1]$: both pieces are open in $Y$ (for example $[-1, 0) = (-2, 0) \cap Y$), disjoint, nonempty, and cover $Y$. The missing point $0$ (hollow) is the only point that could have connected them. It is a limit point of both pieces, but it is not in $Y$.*
 
-> [!theorem] Lemma §18.1: Characterization via Clopen Sets
+> [!theorem] Lemma §15.1: Characterization via Clopen Sets
 > A space $X$ is connected if and only if the only subsets of $X$ which are both open and closed are $\emptyset$ and $X$.
 
 ^lem-15-1
@@ -90,7 +90,7 @@ tags: [topology, math590]
 
 ## Separation via Limit Points
 
-> [!theorem] Lemma §18.2: Separation Characterization
+> [!theorem] Lemma §15.2: Separation Characterization
 > If $Y$ is a subspace of $X$, a separation of $Y$ is a pair of disjoint nonempty sets $A$ and $B$ whose union is $Y$, neither of which contains a [[§8 Interior and Closure#^def-8-5|limit point]] of the other.
 
 ^lem-15-2
@@ -134,7 +134,7 @@ tags: [topology, math590]
 
 ## Continuous Images of Connected Spaces
 
-> [!theorem] Theorem §18.3: Continuous Image of Connected Space
+> [!theorem] Theorem §15.3: Continuous Image of Connected Space
 > The image of a connected space under a continuous map is connected.
 
 ^thm-15-3
@@ -167,7 +167,7 @@ tags: [topology, math590]
 
 ## Connected Subspaces
 
-> [!theorem] Lemma §18.4: Connected Subspace and Separation
+> [!theorem] Lemma §15.4: Connected Subspace and Separation
 > If $C$ and $D$ separate $X$, and $Y$ is a connected subspace of $X$, then $Y \subseteq C$ or $Y \subseteq D$.
 
 ^lem-15-4
@@ -181,7 +181,7 @@ tags: [topology, math590]
 
 ^pf-15-4
 
-> [!theorem] Theorem §18.5: Union of Connected Subspaces
+> [!theorem] Theorem §15.5: Union of Connected Subspaces
 > The union of a collection of connected subspaces of $X$ that have a point in common is connected.
 
 ^thm-15-5
@@ -202,7 +202,7 @@ tags: [topology, math590]
 
 ## Products of Connected Spaces
 
-> [!theorem] Theorem §18.6: Finite Product of Connected Spaces
+> [!theorem] Theorem §15.6: Finite Product of Connected Spaces
 > A finite Cartesian product of connected spaces is also connected.
 
 ^thm-15-6

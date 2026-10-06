@@ -15,7 +15,7 @@ This section puts together everything known so far about a function to sketch it
 
 ## Guidelines for Sketching a Curve
 
-> [!definition] Definition §35.1: Periodic Function
+> [!definition] Definition §32.1: Periodic Function
 > If $f(x + p) = f(x)$ for all $x$ in the domain $D$ of $f$, where $p$ is a positive constant, then $f$ is called a **periodic function**, and the smallest such number $p$ is called the **period**.
 >
 > For instance, $\sin x$ has period $2\pi$ and $\tan x$ has period $\pi$. If we know what the graph looks like on an interval of length $p$, the rest is obtained by translation.
@@ -57,7 +57,7 @@ This section puts together everything known so far about a function to sketch it
 
 ^rem-32-1
 
-> [!example] Example §35.1: A Rational Function with Three Asymptotes
+> [!example] Example §32.1: A Rational Function with Three Asymptotes
 > Use the guidelines to sketch the curve $y = \dfrac{2x^2}{x^2 - 1}$.
 >
 > **A.** The domain is $\{x \mid x^2 - 1 \ne 0\} = \{x \mid x \ne \pm 1\} = (-\infty, -1) \cup (-1, 1) \cup (1, \infty)$.
@@ -107,7 +107,7 @@ This section puts together everything known so far about a function to sketch it
 ![[m233-29-1.svg]]
 *[[§32 Summary of Curve Sketching#^ex-32-1|Example §32.1]]: $y = 2x^2/(x^2 - 1)$ with its asymptotes $y = 2$ and $x = \pm 1$ (dashed). The middle branch has its local maximum at the origin and is concave downward; the outer branches are concave upward and approach $y = 2$ from above. The curve is symmetric about the $y$-axis.*
 
-> [!example] Example §35.2: An Asymptote Found by L'Hospital's Rule
+> [!example] Example §32.2: An Asymptote Found by L'Hospital's Rule
 > Sketch the graph of $f(x) = xe^x$.
 >
 > **A.** The domain is $\mathbb{R}$. **B.** The $x$- and $y$-intercepts are both $0$. **C.** No symmetry.
@@ -132,7 +132,7 @@ This section puts together everything known so far about a function to sketch it
 
 ^ex-32-2
 
-> [!example] Example §35.3: A Periodic Function
+> [!example] Example §32.3: A Periodic Function
 > Sketch the graph of $f(x) = \dfrac{\cos x}{2 + \sin x}$.
 >
 > **A.** The domain is $\mathbb{R}$, since $2 + \sin x \ge 1$.

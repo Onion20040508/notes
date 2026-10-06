@@ -15,7 +15,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ## Velocity, Speed, and Acceleration
 
-> [!definition] Definition §122.1: Velocity
+> [!definition] Definition §104.1: Velocity
 > Suppose a particle moves through space so that its position vector at time $t$ is $\mathbf{r}(t)$. For small $h$, the vector $\dfrac{\mathbf{r}(t + h) - \mathbf{r}(t)}{h}$ is its **average velocity** over a time interval of length $h$: it approximates the direction of motion, and its magnitude is the displacement per unit time. The **velocity vector** at time $t$ is the limit
 >
 > $$
@@ -46,7 +46,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ^def-104-3
 
-> [!theorem] Proposition §122.1: Speed Is the Rate of Change of Distance
+> [!theorem] Proposition §104.1: Speed Is the Rate of Change of Distance
 > $$
 > |\mathbf{v}(t)| = |\mathbf{r}'(t)| = \frac{ds}{dt} ,
 > $$
@@ -69,7 +69,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ^rem-104-1
 
-> [!example] Example §122.1: Velocity, Speed and Acceleration
+> [!example] Example §104.1: Velocity, Speed and Acceleration
 > **(a)** An object in the plane has position $\mathbf{r}(t) = t^3\,\mathbf{i} + t^2\,\mathbf{j}$. Then
 >
 > $$
@@ -107,7 +107,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 *Uses:* [[§104 Motion in Space꞉ Velocity and Acceleration#^def-104-1|Def. §104.1]], [[§104 Motion in Space꞉ Velocity and Acceleration#^def-104-3|Def. §104.3]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-5|§101.5]]
 
-> [!example] Example §122.2: From Acceleration to Position
+> [!example] Example §104.2: From Acceleration to Position
 > A particle starts at $\mathbf{r}(0) = \langle 1, 0, 0 \rangle$ with initial velocity $\mathbf{v}(0) = \mathbf{i} - \mathbf{j} + \mathbf{k}$, and its acceleration is $\mathbf{a}(t) = 4t\,\mathbf{i} + 6t\,\mathbf{j} + \mathbf{k}$. Find its velocity and position at time $t$.
 >
 > Since $\mathbf{v}' = \mathbf{a}$,
@@ -147,7 +147,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ^rem-104-2
 
-> [!example] Example §122.3: Centripetal Force
+> [!example] Example §104.3: Centripetal Force
 > An object of mass $m$ moves on a circular path with constant angular speed $\omega$, with position $\mathbf{r}(t) = a\cos\omega t\,\mathbf{i} + a\sin\omega t\,\mathbf{j}$. Find the force acting on it and show that it is directed toward the origin.
 >
 > $$
@@ -207,7 +207,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 ^rem-104-3
 
-> [!example] Example §122.4: Projectiles Launched Above the Ground
+> [!example] Example §104.4: Projectiles Launched Above the Ground
 > **(a)** A projectile is fired with initial speed $150$ m/s and angle of elevation $30^\circ$ from a position $10$ m above ground level. Where does it hit the ground, and with what speed?
 >
 > With the origin at ground level the initial position is $(0, 10)$, so we add $10$ to $y$ in (4). With $v_0 = 150$, $\alpha = 30^\circ$, $g = 9.8$:
@@ -317,7 +317,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 *Uses:* [[§104 Motion in Space꞉ Velocity and Acceleration#^thm-104-4|§104.4]], [[§102 Arc Length and Curvature#^thm-102-4|§102.4]], [[§103 The TNB Frame and Torsion#^def-103-1|Def. §103.1]]
 
-> [!example] Example §122.5: Components of Acceleration
+> [!example] Example §104.5: Components of Acceleration
 > A particle moves with position $\mathbf{r}(t) = \langle t^2, t^2, t^3 \rangle$. Find the tangential and normal components of acceleration.
 >
 > $$

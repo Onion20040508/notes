@@ -15,7 +15,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ## Matrix Notation
 
-> [!definition] Definition §14.1: Matrix Notation
+> [!definition] Definition §12.1: Matrix Notation
 > An **$m \times n$ matrix** $A$ has $m$ rows and $n$ columns. The scalar in row $i$ and column $j$ is the **$(i, j)$-entry** $a_{ij}$ of $A$, and we write $A = [\,a_{ij}\,]$. Each column is a vector in $\mathbb{R}^m$; with columns $\mathbf{a}_1, \ldots, \mathbf{a}_n$,
 >
 > $$
@@ -28,14 +28,14 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ^def-12-1
 
-> [!definition] Definition §14.2: Diagonal Matrix; Identity Matrix
+> [!definition] Definition §12.2: Diagonal Matrix; Identity Matrix
 > A **diagonal matrix** is a square $n \times n$ matrix whose nondiagonal entries are all zero. The $n \times n$ **identity matrix** $I_n$ (diagonal entries $1$) is an example.
 >
 > *Lay: 2.1 (text)*
 
 ^def-12-2
 
-> [!definition] Definition §15.1: Zero Matrix
+> [!definition] Definition §12.3: Zero Matrix
 > A **zero matrix**, written $0$, is a matrix all of whose entries are zero. Its size is usually clear from the context.
 >
 > *Lay: 2.1 (text)*
@@ -44,7 +44,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ## Sums and Scalar Multiples
 
-> [!definition] Definition §15.2: Equality, Sum and Scalar Multiple of Matrices
+> [!definition] Definition §12.4: Equality, Sum and Scalar Multiple of Matrices
 > - Two matrices are **equal** if they have the same size and their corresponding columns are equal, that is, their corresponding entries are equal.
 > - If $A$ and $B$ are $m \times n$ matrices, their **sum** $A + B$ is the $m \times n$ matrix whose columns are the sums of the corresponding columns of $A$ and $B$. Since vectors are added entrywise, each entry of $A + B$ is the sum of the corresponding entries of $A$ and $B$. The sum is defined only when $A$ and $B$ have the same size.
 > - If $r$ is a scalar, the **scalar multiple** $rA$ is the matrix whose columns are $r$ times the corresponding columns of $A$. As with vectors, $-A$ means $(-1)A$ and $A - B$ means $A + (-1)B$.
@@ -62,7 +62,7 @@ Matrices can be added, scaled and multiplied, and these operations obey most of 
 
 ^def-12-4
 
-> [!theorem] Theorem §14.1: Algebraic Properties of Sums and Scalar Multiples
+> [!theorem] Theorem §12.1: Algebraic Properties of Sums and Scalar Multiples
 > Let $A$, $B$ and $C$ be matrices of the same size, and let $r$ and $s$ be scalars.
 >
 > $$
@@ -123,7 +123,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 > - Rigorous treatment: [[§9 Matrices#^ladr-3-41|LADR 3.41]] defines the product by the row–column formula and [[§9 Matrices#^ladr-3-43|LADR 3.43]] proves that it is the matrix of the composite of linear maps, $\mathcal{M}(ST) = \mathcal{M}(S)\mathcal{M}(T)$, for any bases of any finite-dimensional spaces (here: standard bases of $\mathbb{R}^n$). Lay's column definition is [[§9 Matrices#^ladr-3-48|LADR 3.48]].
 > - The chain rule says the derivative of a composite is the composite of the derivatives, so its Jacobian matrix is the product of the Jacobian matrices: [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]].
 
-> [!theorem] Theorem §14.2: Multiplication of Matrices Is Composition
+> [!theorem] Theorem §12.2: Multiplication of Matrices Is Composition
 > If $A$ is $m \times n$ and $B$ is $n \times p$, then
 >
 > $$
@@ -154,7 +154,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 ^rem-12-1
 
-> [!theorem] Proposition §14.3: Columns of AB
+> [!theorem] Proposition §12.3: Columns of AB
 > Each column of $AB$ is a linear combination of the columns of $A$, using as weights the entries of the corresponding column of $B$: column $j$ of $AB$ is
 >
 > $$
@@ -172,7 +172,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 *Uses:* [[§12 Matrix Operations#^def-12-5|Def. §12.5]], [[§5 The Matrix Equation Ax = b#^def-5-1|Def. §5.1]]
 
-> [!theorem] Proposition §14.4: Row–Column Rule for Computing AB
+> [!theorem] Proposition §12.4: Row–Column Rule for Computing AB
 > If $AB$ is defined, the entry in row $i$ and column $j$ of $AB$ is the sum of the products of corresponding entries of row $i$ of $A$ and column $j$ of $B$. If $A$ is $m \times n$,
 >
 > $$
@@ -190,7 +190,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 *Uses:* [[§12 Matrix Operations#^def-12-5|Def. §12.5]], [[§5 The Matrix Equation Ax = b#^prop-5-4|§5.4]] (row–vector rule)
 
-> [!theorem] Proposition §14.5: Rows of AB
+> [!theorem] Proposition §12.5: Rows of AB
 > Writing $\operatorname{row}_i(A)$ for the $i$th row of $A$,
 >
 > $$
@@ -208,7 +208,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 *Uses:* [[§12 Matrix Operations#^prop-12-4|§12.4]]
 
-> [!example] Example §14.1: Computing a Product, by Columns and by Entries
+> [!example] Example §12.1: Computing a Product, by Columns and by Entries
 > **(a)** Compute $AB$ for $A = \begin{bmatrix} 2 & 3 \\ 1 & -5 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 3 & 6 \\ 1 & -2 & 3 \end{bmatrix}$.
 >
 > **By columns.** With $B = [\,\mathbf{b}_1 \ \mathbf{b}_2 \ \mathbf{b}_3\,]$,
@@ -246,7 +246,7 @@ So the matrix with columns $A\mathbf{b}_1, \ldots, A\mathbf{b}_p$ does the job.
 
 ^ex-12-1
 
-> [!example] Example §14.2: The Matrix of a Composition
+> [!example] Example §12.2: The Matrix of a Composition
 > Let $\mathbf{y} = A\mathbf{x}$ and $\mathbf{z} = B\mathbf{y}$, where
 >
 > $$

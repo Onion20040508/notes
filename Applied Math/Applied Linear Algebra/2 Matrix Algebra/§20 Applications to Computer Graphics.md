@@ -15,7 +15,7 @@ A picture on a screen is stored as a list of points, the columns of a data matri
 
 ## Transforming a Figure
 
-> [!example] Example §24.1: Shearing and Scaling the Letter N
+> [!example] Example §20.1: Shearing and Scaling the Letter N
 > **(a) The data matrix.** The capital letter N is determined by eight vertices, whose coordinates are stored as the columns of a data matrix:
 >
 > $$
@@ -57,14 +57,14 @@ A picture on a screen is stored as a list of points, the columns of a data matri
 
 Translating an object does not correspond directly to matrix multiplication, because a translation $\mathbf{x} \mapsto \mathbf{x} + \mathbf{p}$ ($\mathbf{p} \ne \mathbf{0}$) is not linear: it does not send $\mathbf{0}$ to $\mathbf{0}$. The standard way around this is to add a coordinate.
 
-> [!definition] Definition §24.1: Homogeneous Coordinates in the Plane
+> [!definition] Definition §20.1: Homogeneous Coordinates in the Plane
 > Each point $(x, y)$ in $\mathbb{R}^2$ is identified with the point $(x, y, 1)$ on the plane in $\mathbb{R}^3$ that lies one unit above the $xy$-plane. We say that $(x, y)$ has **homogeneous coordinates** $(x, y, 1)$. For instance, $(0, 0)$ has homogeneous coordinates $(0, 0, 1)$. Homogeneous coordinates of points are not added or multiplied by scalars, but they can be transformed by multiplication by $3 \times 3$ matrices.
 >
 > *Lay: 2.7 (text)*
 
 ^def-20-1
 
-> [!theorem] Proposition §24.1: Translations and Linear Maps in Homogeneous Coordinates
+> [!theorem] Proposition §20.1: Translations and Linear Maps in Homogeneous Coordinates
 > **(a)** The translation $(x, y) \mapsto (x + h, y + k)$ is written in homogeneous coordinates as $(x, y, 1) \mapsto (x + h, y + k, 1)$, and is computed by matrix multiplication:
 >
 > $$
@@ -98,7 +98,7 @@ Translating an object does not correspond directly to matrix multiplication, bec
 
 *Uses:* [[§17 Partitioned Matrices#^prop-17-2|§17.2]], [[§12 Matrix Operations#^thm-12-2|§12.2]]
 
-> [!example] Example §24.2: Composite Transformations in Homogeneous Coordinates
+> [!example] Example §20.2: Composite Transformations in Homogeneous Coordinates
 > **(a)** Find the $3 \times 3$ matrix of the composite transformation: a scaling by $.3$, then a rotation of $90^\circ$ about the origin, and finally a translation that adds $(-.5, 2)$ to each point of a figure.
 >
 > For $\varphi = \pi/2$, $\sin\varphi = 1$ and $\cos\varphi = 0$. By [[§20 Applications to Computer Graphics#^prop-20-1|Proposition §20.1]], the three steps take $(x, y, 1)$ successively to
@@ -142,7 +142,7 @@ Translating an object does not correspond directly to matrix multiplication, bec
 
 Three-dimensional graphics is used, for instance, in molecular modeling: a biologist rotates and translates a simulated drug molecule to fit it into an active site of a protein, increasingly in virtual reality, with tactile feedback or a helmet with one small screen for each eye.
 
-> [!definition] Definition §24.2: Homogeneous Coordinates in Space
+> [!definition] Definition §20.2: Homogeneous Coordinates in Space
 > By analogy with the 2D case, $(x, y, z, 1)$ are homogeneous coordinates for the point $(x, y, z)$ in $\mathbb{R}^3$. More generally, $(X, Y, Z, H)$ are **homogeneous coordinates** for $(x, y, z)$ if $H \ne 0$ and
 >
 > $$
@@ -155,7 +155,7 @@ Three-dimensional graphics is used, for instance, in molecular modeling: a biolo
 
 ^def-20-2
 
-> [!example] Example §24.3: Rotating and Translating in Space
+> [!example] Example §20.3: Rotating and Translating in Space
 > Give $4 \times 4$ matrices for (a) the rotation about the $y$-axis through $30^\circ$, and (b) the translation by $\mathbf{p} = (-6, 4, 5)$. (By convention, a positive angle is counterclockwise when looking toward the origin from the positive half of the axis of rotation, here the $y$-axis.)
 >
 > **(a)** First the $3 \times 3$ rotation matrix, column by column. $\mathbf{e}_1$ rotates down toward the negative $z$-axis, stopping at $(\cos 30^\circ, 0, -\sin 30^\circ) = (\sqrt3/2, 0, -.5)$. $\mathbf{e}_2$, on the axis, does not move. $\mathbf{e}_3$ rotates down toward the positive $x$-axis, stopping at $(\sin 30^\circ, 0, \cos 30^\circ) = (.5, 0, \sqrt3/2)$. By [[§10 The Matrix of a Linear Transformation#^thm-10-1|Theorem §10.1]] the standard matrix is
@@ -179,14 +179,14 @@ Three-dimensional graphics is used, for instance, in molecular modeling: a biolo
 
 A three-dimensional object is shown on the two-dimensional screen by projecting it onto a viewing plane. For simplicity let the $xy$-plane be the screen, and put the viewer's eye on the positive $z$-axis at $(0, 0, d)$.
 
-> [!definition] Definition §24.3: Perspective Projection
+> [!definition] Definition §20.3: Perspective Projection
 > The **perspective projection** with **center of projection** $(0, 0, d)$ maps each point $(x, y, z)$ (with $z \ne d$) onto the image point $(x^{\ast}, y^{\ast}, 0)$ such that the two points and the center of projection lie on one line.
 >
 > *Lay: 2.7 (text)*
 
 ^def-20-3
 
-> [!theorem] Proposition §24.2: The Matrix of a Perspective Projection
+> [!theorem] Proposition §20.2: The Matrix of a Perspective Projection
 > The perspective projection with center $(0, 0, d)$ is
 >
 > $$
@@ -217,7 +217,7 @@ A three-dimensional object is shown on the two-dimensional screen by projecting 
 
 *Uses:* [[§20 Applications to Computer Graphics#^def-20-2|Def. §20.2]], [[§20 Applications to Computer Graphics#^def-20-3|Def. §20.3]]
 
-> [!example] Example §24.4: The Perspective Image of a Box
+> [!example] Example §20.4: The Perspective Image of a Box
 > Let $S$ be the box with vertices $(3, 1, 5)$, $(5, 1, 5)$, $(5, 0, 5)$, $(3, 0, 5)$, $(3, 1, 4)$, $(5, 1, 4)$, $(5, 0, 4)$, $(3, 0, 4)$. Find the image of $S$ under the perspective projection with center $(0, 0, 10)$.
 >
 > Let $D$ be the data matrix of $S$ in homogeneous coordinates. With $d = 10$, the data matrix of the image is

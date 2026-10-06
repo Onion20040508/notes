@@ -13,7 +13,7 @@ tags: [calculus, math233]
 
 After planes and spheres, the next surfaces are cylinders and quadric surfaces, the graphs of second-degree equations in $x$, $y$, $z$. The tool for understanding them is the **trace**: slice the surface by planes parallel to the coordinate planes and recognize the plane curves (lines, parabolas, ellipses, hyperbolas) that appear. An equation missing a variable is a cylinder. Every quadric surface can be moved into one of six standard types (ellipsoid, cone, elliptic and hyperbolic paraboloid, hyperboloids of one and two sheets), recognized from the signs and powers in its equation. These surfaces are the standard examples of graphs and level surfaces in Chapter 14 (the hyperbolic paraboloid is the model saddle point) and the standard domains of integration in Chapter 15.
 
-> [!definition] Definition §116.1: Traces
+> [!definition] Definition §99.1: Traces
 > The **traces** (or cross-sections) of a surface are the curves in which it intersects planes parallel to the coordinate planes, that is, planes $x = k$, $y = k$ or $z = k$.
 >
 > *Stewart: 12.6 (text)*
@@ -22,14 +22,14 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ## Cylinders
 
-> [!definition] Definition §116.2: Cylinder
+> [!definition] Definition §99.2: Cylinder
 > A **cylinder** is a surface that consists of all lines, called **rulings**, that are parallel to a given line and pass through a given plane curve.
 >
 > *Stewart: 12.6 (text)*
 
 ^def-99-2
 
-> [!theorem] Proposition §116.1: A Missing Variable Gives a Cylinder
+> [!theorem] Proposition §99.1: A Missing Variable Gives a Cylinder
 > If one of the variables $x$, $y$ or $z$ is missing from the equation of a surface, then the surface is a cylinder whose rulings are parallel to the axis of the missing variable.
 >
 > *Stewart: 12.6 (text)*
@@ -48,7 +48,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ^rem-99-1
 
-> [!example] Example §116.1: Cylinders
+> [!example] Example §99.1: Cylinders
 > **(a)** Sketch $z = x^2$. The variable $y$ is missing, so every vertical plane $y = k$ meets the surface in the parabola $z = x^2$. The surface is obtained by moving the parabola $z = x^2$ of the $xz$-plane in the direction of the $y$-axis: a **parabolic cylinder**, with rulings parallel to the $y$-axis.
 >
 > **(b)** Identify $x^2 + y^2 = 1$ and $y^2 + z^2 = 1$. In the first, $z$ is missing and each plane $z = k$ meets the surface in the circle of radius $1$ about the $z$-axis: a circular cylinder with axis the $z$-axis and vertical rulings. In the second, $x$ is missing: the circle $y^2 + z^2 = 1$, $x = 0$, moved parallel to the $x$-axis, a circular cylinder with axis the $x$-axis.
@@ -66,7 +66,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ## Quadric Surfaces
 
-> [!definition] Definition §116.3: Quadric Surface
+> [!definition] Definition §99.3: Quadric Surface
 > A **quadric surface** is the graph of a second-degree equation in three variables $x$, $y$ and $z$. The most general such equation is
 >
 > $$
@@ -90,7 +90,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 > [!remark]- Connections
 > - Matrix version: [[§59★ Quadratic Forms#^thm-59-2|235 Thm. §59.2]] (the Principal Axes Theorem: an orthogonal change of variable $\mathbf{x} = P\mathbf{y}$ turns the quadratic part $\mathbf{x}^TA\mathbf{x}$ into $\lambda_1y_1^2 + \cdots + \lambda_ny_n^2$, with $P$ from the eigenvectors of the symmetric matrix $A$), worked in [[§59★ Quadratic Forms#^ex-59-2|235 Ex. §59.2]].
 
-> [!example] Example §116.2: An Ellipsoid by Traces
+> [!example] Example §99.2: An Ellipsoid by Traces
 > Use traces to sketch $x^2 + \dfrac{y^2}{9} + \dfrac{z^2}{4} = 1$.
 >
 > Putting $z = 0$, the trace in the $xy$-plane is the ellipse $x^2 + y^2/9 = 1$. In general the horizontal trace in the plane $z = k$ is
@@ -111,7 +111,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ^ex-99-2
 
-> [!example] Example §116.3: Elliptic and Hyperbolic Paraboloids
+> [!example] Example §99.3: Elliptic and Hyperbolic Paraboloids
 > **(a)** $z = 4x^2 + y^2$. The trace in $x = 0$ is the parabola $z = y^2$; in $x = k$ it is $z = y^2 + 4k^2$, a parabola opening upward. In $y = k$ the trace is $z = 4x^2 + k^2$, again an upward parabola. The horizontal traces $4x^2 + y^2 = k$ are ellipses for $k > 0$ (the point $(0, 0, 0)$ for $k = 0$, empty for $k < 0$). Because of the elliptic and parabolic traces, the surface is an **elliptic paraboloid**.
 >
 > **(b)** $z = y^2 - x^2$. The traces in the vertical planes $x = k$ are the parabolas $z = y^2 - k^2$, which open upward; the traces in $y = k$ are the parabolas $z = -x^2 + k^2$, which open downward; the horizontal traces $y^2 - x^2 = k$ are hyperbolas (opening along the $y$-axis for $k > 0$, along the $x$-axis for $k < 0$, and the pair of lines $y = \pm x$ for $k = 0$). Fitting the traces together gives a saddle-shaped surface, the **hyperbolic paraboloid**. Along the $y$-axis the origin is a minimum of the upward parabola, along the $x$-axis a maximum of the downward one; this is the saddle point of [[§113 Maximum and Minimum Values#^def-113-3|Definition §113.3]].
@@ -123,7 +123,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 ![[m233-85-1.svg]]
 *(a) The hyperbolic paraboloid $z = y^2 - x^2$ of [[§99 Cylinders and Quadric Surfaces#^ex-99-3|Example §99.3]](b): its trace in $x = 0$ is the upward parabola $z = y^2$ (red), its trace in $y = 0$ the downward parabola $z = -x^2$ (green), and the two meet at the saddle point at the origin. (b) The parabolic cylinder $z = 4 - x^2$ of [[§99 Cylinders and Quadric Surfaces#^ex-99-1|Example §99.1]](c): every trace $y = k$ is the same parabola, here $y = 0$ (dashed) and $y = 3$ (red), and the rulings run parallel to the $y$-axis.*
 
-> [!example] Example §116.4: Hyperboloids of One and Two Sheets
+> [!example] Example §99.4: Hyperboloids of One and Two Sheets
 > **(a)** Sketch $\dfrac{x^2}{4} + y^2 - \dfrac{z^2}{4} = 1$. The trace in a horizontal plane $z = k$ is the ellipse $\dfrac{x^2}{4} + y^2 = 1 + \dfrac{k^2}{4}$, which exists for every $k$ and grows with $|k|$. The traces in the $xz$- and $yz$-planes are the hyperbolas
 >
 > $$
@@ -151,7 +151,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ^ex-99-4
 
-> [!theorem] Theorem §116.2: Graphs of Quadric Surfaces
+> [!theorem] Theorem §99.2: Graphs of Quadric Surfaces
 > The six basic quadric surfaces in standard form (each symmetric about the $z$-axis) are:
 >
 > | Surface | Equation | Traces |
@@ -192,7 +192,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ^rem-99-2
 
-> [!example] Example §116.5: Completing the Square
+> [!example] Example §99.5: Completing the Square
 > **(a)** Classify $x^2 + 2z^2 - 6x - y + 10 = 0$. Completing the square in $x$,
 >
 > $$

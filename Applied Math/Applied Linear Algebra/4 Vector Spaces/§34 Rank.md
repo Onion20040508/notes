@@ -43,7 +43,7 @@ Row operations change the linear dependence relations among the rows, so they do
 
 ^rem-34-1
 
-> [!theorem] Theorem §42.1: Row Operations Preserve the Row Space
+> [!theorem] Theorem §34.1: Row Operations Preserve the Row Space
 > If two matrices $A$ and $B$ are row equivalent, then their row spaces are the same. If $B$ is in echelon form, the nonzero rows of $B$ form a basis for the row space of $A$ as well as for that of $B$.
 >
 > *Lay: Theorem 13 (4.6)*
@@ -61,7 +61,7 @@ Row operations change the linear dependence relations among the rows, so they do
 
 The lecture also proved the converse, which Lay does not state.
 
-> [!theorem] Proposition §42.2: Equal Row Spaces Means Row Equivalent
+> [!theorem] Proposition §34.2: Equal Row Spaces Means Row Equivalent
 > Two $m \times n$ matrices $A$ and $B$ are row equivalent if and only if $\operatorname{Row} A = \operatorname{Row} B$.
 >
 > *Source: 235 lecture L16*
@@ -83,7 +83,7 @@ The lecture also proved the converse, which Lay does not state.
 
 *Uses:* [[§34 Rank#^thm-34-1|§34.1]], [[§2 Row Reduction and Echelon Forms#^thm-2-1|§2.1]] (uniqueness of the reduced echelon form), [[§1 Systems of Linear Equations#^prop-1-1|§1.1]] (row operations are reversible)
 
-> [!example] Example §42.1: Bases for Row A, Col A and Nul A
+> [!example] Example §34.1: Bases for Row A, Col A and Nul A
 > Find bases for the row space, the column space and the null space of the matrix $A$ displayed above (Lay's Example 4.6.1).
 >
 > **Echelon form.** Interchange rows 1 and 2. Then add $2 \cdot$(row 1) to row 2, $-3 \cdot$(row 1) to row 3 and $-1 \cdot$(row 1) to row 4:
@@ -144,7 +144,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ## The Rank Theorem
 
-> [!definition] Definition §42.1: Rank
+> [!definition] Definition §34.1: Rank
 > The **rank** of $A$ is the dimension of the column space of $A$:
 >
 > $$
@@ -157,7 +157,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ^def-34-1
 
-> [!theorem] Theorem §42.3: The Rank Theorem
+> [!theorem] Theorem §34.3: The Rank Theorem
 > The dimensions of the column space and the row space of an $m \times n$ matrix $A$ are equal. This common dimension, the rank of $A$, also equals the number of pivot positions in $A$ and satisfies the equation
 >
 > $$
@@ -216,7 +216,7 @@ The lecture also proved the converse, which Lay does not state.
 
 *Uses:* [[§34 Rank#^thm-34-3|§34.3]]
 
-> [!example] Example §42.2: Counting with the Rank Theorem
+> [!example] Example §34.2: Counting with the Rank Theorem
 > **(a)** If $A$ is a $7 \times 9$ matrix with a two-dimensional null space, what is the rank of $A$? Since $A$ has $9$ columns, $\operatorname{rank} A + 2 = 9$, so $\operatorname{rank} A = 7$.
 >
 > **(b)** Could a $6 \times 9$ matrix $A$, that is, a linear map $A : \mathbb{R}^9 \to \mathbb{R}^6$, have a two-dimensional null space? No. By the Rank Theorem $\dim \operatorname{Nul} A = 9 - \operatorname{rank} A$, and the columns of $A$ are vectors in $\mathbb{R}^6$, so $\operatorname{rank} A = \dim \operatorname{Col} A \le 6$ ([[§34 Rank#^cor-34-4|Corollary §34.4]]). Hence
@@ -234,7 +234,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ^ex-34-2
 
-> [!example] Example §42.3: The Four Subspaces of a 3 × 3 Matrix
+> [!example] Example §34.3: The Four Subspaces of a 3 × 3 Matrix
 > Let
 >
 > $$
@@ -268,7 +268,7 @@ The lecture also proved the converse, which Lay does not state.
 
 ## Applications to Systems of Equations
 
-> [!example] Example §42.4: A Homogeneous System with Two Basic Solutions
+> [!example] Example §34.4: A Homogeneous System with Two Basic Solutions
 > A scientist has found two solutions to a homogeneous system of $40$ equations in $42$ variables. The two solutions are not multiples of each other, and all other solutions can be constructed by adding together appropriate multiples of these two. Can the scientist be *certain* that an associated nonhomogeneous system (with the same coefficients) has a solution?
 >
 > Yes. Let $A$ be the $40 \times 42$ coefficient matrix. The two solutions are linearly independent and span $\operatorname{Nul} A$, so $\dim \operatorname{Nul} A = 2$. By the Rank Theorem, $\dim \operatorname{Col} A = 42 - 2 = 40$. $\operatorname{Col} A$ is a $40$-dimensional subspace of $\mathbb{R}^{40}$, so $\operatorname{Col} A = \mathbb{R}^{40}$ ([[§33 The Dimension of a Vector Space#^cor-33-6|Corollary §33.6]]). Hence every equation $A\mathbf{x} = \mathbf{b}$ has a solution.

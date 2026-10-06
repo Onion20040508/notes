@@ -29,7 +29,7 @@ $$
 
 The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1 + x^2)^{3/2} + C\big] = \tfrac23 \cdot \tfrac32 (1 + x^2)^{1/2} \cdot 2x = 2x\sqrt{1 + x^2}$.
 
-> [!theorem] Theorem §49.1: The Substitution Rule
+> [!theorem] Theorem §43.1: The Substitution Rule
 > If $u = g(x)$ is a differentiable function whose range is an interval $I$ and $f$ is continuous on $I$, then
 >
 > $$
@@ -80,7 +80,7 @@ The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1
 
 ^rem-43-1
 
-> [!example] Example §49.1: Two Direct Substitutions
+> [!example] Example §43.1: Two Direct Substitutions
 > **(a)** Find $\displaystyle\int x^3\cos(x^4 + 2)\,dx$.
 >
 > Let $u = x^4 + 2$: its differential $du = 4x^3\,dx$ occurs in the integral apart from the factor $4$. So $x^3\,dx = \frac14 du$, and
@@ -110,7 +110,7 @@ The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1
 
 ^ex-43-1
 
-> [!example] Example §49.2: Expressing the Leftover x in Terms of u
+> [!example] Example §43.2: Expressing the Leftover x in Terms of u
 > Find $\displaystyle\int \sqrt{1 + x^2}\,x^5\,dx$.
 >
 > A substitution becomes apparent after factoring $x^5 = x^4 \cdot x$. Let $u = 1 + x^2$. Then $du = 2x\,dx$, so $x\,dx = \frac12 du$. The leftover $x^4$ must also be written in terms of $u$: $x^2 = u - 1$, so $x^4 = (u - 1)^2$. Then
@@ -187,7 +187,7 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 
 *Uses:* [[§43 The Substitution Rule#^thm-43-1|§43.1]] (Equation 3), [[§41 The Fundamental Theorem of Calculus#^thm-41-2|§41.2]], [[§40 Properties of the Definite Integral#^def-40-1|Def. §40.1]]
 
-> [!example] Example §49.3: Two Substitutions, Two Methods
+> [!example] Example §43.3: Two Substitutions, Two Methods
 > **(a)** Evaluate $\displaystyle\int \sqrt{2x + 1}\,dx$.
 >
 > *Solution 1.* Let $u = 2x + 1$. Then $du = 2\,dx$, so $dx = \frac12 du$ and

@@ -29,10 +29,10 @@ tags: [group-theory, math493]
 
 ^pf-34-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§25 Actions#^def-25-3|Def. §25.3]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§35 The Center#^def-35-1|Def. §35.1]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§25 Actions#^def-25-4|Def. §25.4]], [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def. §18.2]], [[§35 The Center#^def-35-1|Def. §35.1]]
 
 > [!remark]- Connections
-> - For a matrix group, conjugation X ↦ gXg⁻¹ applied to tangent vectors at the identity is the adjoint action, [[§23 The Geometric Tangent Space#^def-23-2|591 Def. §23.2]].
+> - For a matrix group, conjugation X ↦ gXg⁻¹ applied to tangent vectors at the identity is the adjoint action, [[§25 The Geometric Tangent Space#^def-25-2|591 Def. §25.2]].
 
 > [!theorem] Corollary §34.2: Class Sizes Divide the Group Order
 > For every $g$ in a finite group $G$, $|\operatorname{Conj}(g)| = [G : C_G(g)]$ divides $|G|$, and $|\operatorname{Conj}(g)| \cdot |C_G(g)| = |G|$.
@@ -131,7 +131,7 @@ tags: [group-theory, math493]
 
 ^pf-34-6
 
-*Uses:* [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]], [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
+*Uses:* [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]], [[§17 Cyclic Groups#^cor-17-2|§17.2]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!theorem] Corollary §34.7: Exactly Three Conjugacy Classes: Order $3$ or $6$
 > A finite group with exactly three conjugacy classes has order $3$ or $6$, and both occur: $\mathbb{Z}/3\mathbb{Z}$ and $S_3$.

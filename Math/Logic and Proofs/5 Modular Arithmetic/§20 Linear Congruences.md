@@ -94,7 +94,7 @@ The condition is also sufficient. The key case is $a$ coprime to $m$, where it h
 
 Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
 
-> [!theorem] Proposition §20.4: Congruences and Diophantine Equations
+> [!theorem] Proposition §20.3: Congruences and Diophantine Equations
 > For integers $a, b$ and a positive integer $m$, the map
 >
 > $$
@@ -118,7 +118,7 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-4|T
 
 *Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (a map with a two-sided inverse is a bijection)
 
-> [!theorem] Theorem §20.5: Coprime Coefficient
+> [!theorem] Theorem §20.4: Coprime Coefficient
 > Suppose that $a$ and $b$ are integers with $a$ and $m$ coprime. Then the linear congruence $ax \equiv b \pmod m$ has a solution, and the solution is unique modulo $m$: if $x_0$ is one solution, an integer $x$ is a solution if and only if $x \equiv x_0 \pmod m$.
 >
 > *Eccles: Theorem 20.1.5*
@@ -161,7 +161,7 @@ Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-4|T
 
 Putting together [[§20 Linear Congruences#^thm-20-4|Theorem §20.4]], Proposition [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§20 Linear Congruences#^cor-20-2|Corollary §20.2]] gives the complete answer. To see where the count comes from, look again at $6x \equiv 15 \pmod{21}$: it reduced to the unique solution $x \equiv 6 \pmod 7$, and the remainders modulo $21$ congruent to $6$ modulo $7$ are $6 + 7q$ for $q = 0, 1, 2$, three of them, and $3 = \gcd(6, 21)$.
 
-> [!theorem] Theorem §20.3: Solvability and Number of Solutions
+> [!theorem] Theorem §20.5: Solvability and Number of Solutions
 > The linear congruence $ax \equiv b \pmod m$ has a solution if and only if $\gcd(a, m)$ divides $b$. In this case the number of solutions modulo $m$ is $\gcd(a, m)$.
 >
 > *Eccles: Theorem 20.1.7*

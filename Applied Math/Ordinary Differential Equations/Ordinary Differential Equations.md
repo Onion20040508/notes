@@ -44,13 +44,13 @@ graph TD
   C7 -.->|on credit| C6
   C1 -.->|16| X5
   C2 -.->|4| X4
-  C2 -.->|25| X5
+  C2 -.->|26| X5
   C2 -.->|4| X9
   C2 -.->|7| X2
   C2 -.->|11| X1
   C3 -.->|18| X4
   C3 -.->|8| X5
-  C3 -.->|5| X10
+  C3 -.->|6| X10
   C3 -.->|22| X9
   C3 -.->|5| X3
   C6 -.->|4| X5
@@ -59,7 +59,7 @@ graph TD
   C6 -.->|3| X6
   C6 -.->|3| X1
   C7 -.->|48| X4
-  C7 -.->|10| X5
+  C7 -.->|13| X5
   C7 -.->|6| X9
   C7 -.->|4| X7
   C7 -.->|30| X3
@@ -73,39 +73,39 @@ graph TD
 - [[· 7 Systems of First-Order Linear Equations]]
 
 ## Central results
-- [[Integrating Factor Solution Formula]] (§4.2)
-- [[Solution of Separable Equations]] (§5.1)
-- [[Test for Exact Equations]] (§9.2)
-- [[Picard–Lindelöf Theorem]] (§11.8)
-- [[Principle of Superposition (linear ODEs)]] (§14.2)
-- [[Wronskian Criterion for Fundamental Sets]] (§14.4)
-- [[Abel's Theorem (Wronskian)]] (§14.8)
-- [[Constant-Coefficient Second-Order Equations]] (§16.2)
-- [[Method of Undetermined Coefficients]] (§17.4)
-- [[Variation of Parameters Formula]] (§18.1)
-- [[Laplace Transform of a Derivative]] (§22.1)
-- [[Table of Elementary Laplace Transforms]] (§22.6)
-- [[Second Shifting Theorem]] (§23.2)
-- [[First Shifting Theorem]] (§23.3)
-- [[Convolution Theorem for the Laplace Transform]] (§26.2)
-- [[Existence and Uniqueness for Linear ODE Systems]] (§27.3)
-- [[Eigenvector Solutions of Linear Systems]] (§31.2)
-- [[Classification of 2×2 Linear Systems]] (§32.3)
-- [[Matrix Exponential Solution]] (§33.4)
+- [[Integrating Factor Solution Formula]] (§5.2)
+- [[Solution of Separable Equations]] (§6.1)
+- [[Test for Exact Equations]] (§11.2)
+- [[Picard–Lindelöf Theorem]] (§14.8)
+- [[Principle of Superposition (linear ODEs)]] (§18.2)
+- [[Wronskian Criterion for Fundamental Sets]] (§18.4)
+- [[Abel's Theorem (Wronskian)]] (§18.8)
+- [[Constant-Coefficient Second-Order Equations]] (§20.2)
+- [[Method of Undetermined Coefficients]] (§21.4)
+- [[Variation of Parameters Formula]] (§22.1)
+- [[Laplace Transform of a Derivative]] (§27.1)
+- [[Table of Elementary Laplace Transforms]] (§27.6)
+- [[Second Shifting Theorem]] (§28.2)
+- [[First Shifting Theorem]] (§28.3)
+- [[Convolution Theorem for the Laplace Transform]] (§31.2)
+- [[Existence and Uniqueness for Linear ODE Systems]] (§33.3)
+- [[Eigenvector Solutions of Linear Systems]] (§37.2)
+- [[Classification of 2×2 Linear Systems]] (§38.3)
+- [[Matrix Exponential Solution]] (§39.4)
 
 ## Course record (MATH 331, Summer 2023)
 Asynchronous video lectures (no lecture notes in the course folder). Grading: final 30%, midterm 30% (6/15, Sections 1.1–3.4), online homework (WileyPLUS) 25%, written homework 10%, participation 5%.
 
 | Written homework | Sections | Notes |
 |---|---|---|
-| 1 | 1.1–2.2 | §1–§6 |
-| 2 | 2.3–2.8 | §7–§14 |
-| 3 | 3.1–3.4 | §17–§20 |
-| 4 | 3.5–3.8 | §21, §23–§24 |
-| 5 | Ch. 6 | §26–§30 |
-| 6 | Ch. 7 | §33–§38 |
+| 1 | 1.1–2.2 | §1–§5 |
+| 2 | 2.3–2.8 | §6–§11 |
+| 3 | 3.1–3.4 | §13–§16 |
+| 4 | 3.5–3.8 | §17, §19–§20 |
+| 5 | Ch. 6 | §21–§25 |
+| 6 | Ch. 7 | §27–§32 |
 
 Examples marked *Source: 331 …* come from the written homework, the Summer 2023 midterm and earlier UMass exams (Spring 2020 midterm, Fall 2021 and Fall 2022 finals).
 
 ## Rigorous treatment
-Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (71), [[Calculus]] (63), [[Fourier Series and PDEs]] (43), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Complex Variables]] (14), [[Multivariable Analysis]] (7), [[Functional Analysis]] (7), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2), [[Topology]] (1).
+Number of *Connections* links from these notes to each other subject: [[Applied Linear Algebra]] (71), [[Calculus]] (67), [[Fourier Series and PDEs]] (43), [[Linear Algebra]] (36), [[Single Variable Analysis]] (19), [[Complex Variables]] (15), [[Multivariable Analysis]] (7), [[Functional Analysis]] (7), [[Measure Theory]] (3), [[Differentiable Manifolds]] (2), [[Topology]] (1).

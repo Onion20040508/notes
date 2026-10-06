@@ -8,14 +8,16 @@ tags: [measure-theory, hub]
 ![[§35 Lᵖ as a Banach Space#^thm-35-11]]
 
 ## Treated in
-- [[§35 Lᵖ as a Banach Space#^thm-35-11|Theorem §35.11: Riesz–Fischer Theorem]], in [[§34 Normed Linear Spaces and Lᵖ Spaces]]
+- [[§35 Lᵖ as a Banach Space#^thm-35-11|Theorem §35.11: Riesz–Fischer Theorem]], in [[§35 Lᵖ as a Banach Space]]
 
 ## Its proof uses
 - [[§10 Lebesgue Outer Measure#^prop-10-1|Proposition §10.1: Basic Properties of Outer Measure]]
 - [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-2|Proposition §21.2: Integral over Null Sets and A.E. Equal Functions]]
 - [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-8|Theorem §21.8: Fatou's Lemma]]
 - [[§34 Normed Linear Spaces and Lᵖ Spaces#^prop-34-2|Proposition §34.2: The Essential Supremum is Achieved A.E.]]
-- [[§35 Lᵖ as a Banach Space#^def-35-1|Definition §35.1: Lᵖ Convergence and Completeness]]
+- [[§35 Lᵖ as a Banach Space#^def-35-1|Definition §35.1: Lᵖ Convergence]]
+- [[§35 Lᵖ as a Banach Space#^def-35-2|Definition §35.2: Cauchy Sequences in Lᵖ]]
+- [[§35 Lᵖ as a Banach Space#^def-35-3|Definition §35.3: Completeness of Lᵖ]]
 - [[§35 Lᵖ as a Banach Space#^lem-35-9|Lemma §35.9: Cauchy Subsequence Lemma]]
 
 ## Its proof uses (other subjects)

@@ -18,12 +18,13 @@ tags: [chapter, calculus]
 - [[§94 Vectors]] — Stewart 12.2
 - [[§95 The Dot Product]] — Stewart 12.3
 - [[§96 The Cross Product]] — Stewart 12.4
+- [[§97 Triple Products and Torque]] — Stewart 12.4
 - [[§98 Equations of Lines and Planes]] — Stewart 12.5
 - [[§99 Cylinders and Quadric Surfaces]] — Stewart 12.6
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§94 Vectors#^thm-94-4|Theorem §94.4: Operations in Components]]: 45 later results
-- [[§93 Three-Dimensional Coordinate Systems#^thm-93-1|Theorem §93.1: Distance Formula in Three Dimensions]]: 33 later results
-- [[§94 Vectors#^thm-94-3|Theorem §94.3: Length of a Vector]]: 30 later results
-- [[§95 The Dot Product#^thm-95-1|Theorem §95.1: Properties of the Dot Product]]: 29 later results
+- [[§94 Vectors#^thm-94-4|Theorem §94.4: Operations in Components]]: 49 later results
+- [[§93 Three-Dimensional Coordinate Systems#^thm-93-1|Theorem §93.1: Distance Formula in Three Dimensions]]: 36 later results
+- [[§94 Vectors#^thm-94-3|Theorem §94.3: Length of a Vector]]: 33 later results
+- [[§95 The Dot Product#^thm-95-1|Theorem §95.1: Properties of the Dot Product]]: 32 later results

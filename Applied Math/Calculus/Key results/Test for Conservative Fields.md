@@ -8,7 +8,7 @@ tags: [calculus, hub]
 ![[§131 Extended Versions of Green's Theorem#^thm-131-3]]
 
 ## Treated in
-- [[§131 Extended Versions of Green's Theorem#^thm-131-3|Theorem §131.3: Test for Conservative Fields]], in [[§130 Green's Theorem]]
+- [[§131 Extended Versions of Green's Theorem#^thm-131-3|Theorem §131.3: Test for Conservative Fields]], in [[§131 Extended Versions of Green's Theorem]]
 
 ## Its proof uses
 - [[§127 Line Integrals of Vector Fields#^thm-127-1|Theorem §127.1: Reversing the Orientation of a Vector Line Integral]]

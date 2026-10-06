@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 Motivated from geometry: can form topological spaces by “pasting” or identifying points together on a given space.
 
-> [!example] Example §15.1: Geometric Examples
+> [!example] Example §13.1: Geometric Examples
 > - Rectangle $\to$ cylinder $\to$ torus (by identifying edges)
 > - “Glue” end points of an interval $[0,1]$ together $\to$ circle
 > - Disk $\to$ identify all boundary to one point (collapse the boundary to a point) $\to$ sphere
@@ -26,7 +26,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ## Quotient Maps
 
-> [!definition] Definition §15.2: Quotient Map
+> [!definition] Definition §13.1: Quotient Map
 > Let $X, Y$ be topological spaces. Let $p: X \to Y$ be a surjective map. The map $p$ is called a **quotient map** if for all $U \subseteq Y$, $U$ is open in $Y$ if and only if $p^{-1}(U)$ is open in $X$.
 
 ^def-13-1
@@ -40,7 +40,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ## Quotient Topology from a Surjection
 
-> [!theorem] Proposition §15.1: Existence and Uniqueness of the Quotient Topology
+> [!theorem] Proposition §13.1: Existence and Uniqueness of the Quotient Topology
 > Let $X$ be a topological space, $A$ a set, and $p: X \to A$ a surjective map. Then there exists a unique topology $\mathcal{T}$ on $A$ such that $p$ is a quotient map. Explicitly,
 >
 > $$
@@ -135,10 +135,10 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 > [!remark]- Connections
 > - Equivalence relations, equivalence classes and the quotient set in 250: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-5|250 Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]; the classes form a partition by [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
-> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§27 Orbits#^def-27-1|493 Def. §27.1]] (topologized as a quotient space in 591, [[§12 Group Actions and Orbit Spaces#^def-12-5|591 Def. §12.5]]), and the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]].
+> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§27 Orbits#^def-27-1|493 Def. §27.1]] (topologized as a quotient space in 591, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]]), and the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]].
 > - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: [[§6 Open Quotients#^thm-6-1|591 Thm. §6.1]] (the graph of the relation is closed) and [[§6 Open Quotients#^thm-6-3|591 Thm. §6.3]].
 
-> [!example] Example §15.2: Circle as Quotient Space
+> [!example] Example §13.2: Circle as Quotient Space
 > $X = [0, 1]$. Let $\sim$ be defined by $0 \sim 1$ (i.e., glue the endpoints). Then $X/{\sim}$ is homeomorphic to a circle.
 >
 > $f: X/{\sim} \to S^1$, $f([t]) = e^{2\pi i t}$.
@@ -148,7 +148,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ![[m590-12-2.svg]]
 *Gluing the endpoints of $[0,1]$: the two red endpoints become the single class $[0] = [1]$, and $f([t]) = e^{2\pi i t}$ wraps the interval once around $S^1$ (so $[\tfrac14] \mapsto i$). Only the endpoints are identified; every other class is a single point.*
 
-> [!example] Example §15.3: Torus as Quotient Space
+> [!example] Example §13.3: Torus as Quotient Space
 > $X = [0, 1] \times [0, 1]$. Define $\sim$ by:
 >
 > - $x \times 0 \sim x \times 1$ for all $x \in [0, 1]$
@@ -197,9 +197,9 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 ^def-13-4
 
 > [!remark]- Connections
-> - In 591, submersions are open maps, [[§32 Submersions#^cor-32-6|591 Cor. §32.6]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§4 Quotient Spaces and Open Maps#^def-4-3|591 Def. §4.3]].
+> - In 591, submersions are open maps, [[§34 Submersions#^cor-34-6|591 Cor. §34.6]], and open equivalence relations (open quotient maps) are where its quotient criteria apply, [[§4 Quotient Spaces and Open Maps#^def-4-4|591 Def. §4.4]].
 
-> [!theorem] Proposition §15.2
+> [!theorem] Proposition §13.2
 > If $p: X \to Y$ is a surjective continuous map that is either open or closed, then $p$ is a quotient map.
 
 ^prop-13-2
@@ -220,7 +220,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ## Universal Property of Quotient Maps
 
-> [!theorem] Theorem §15.3: Universal Property
+> [!theorem] Theorem §13.3: Universal Property
 > Let $p: X \to Y$ be a quotient map. Let $Z$ be a space and $g: X \to Z$ be a map that is constant on each set $p^{-1}(\{y\})$ for all $y \in Y$. Then there exists a unique $f: Y \to Z$ such that $f \circ p = g$. Moreover:
 >
 > 1. $f$ continuous $\Leftrightarrow$ $g$ continuous
@@ -264,7 +264,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 ^rem-13-7
 
-> [!theorem] Corollary §15.4: Induced Bijection from Quotient
+> [!theorem] Corollary §13.4: Induced Bijection from Quotient
 > Let $p: X \to X^*$ be a quotient map, where $X^* = \{g^{-1}(\{z\}) \mid z \in Z\}$, where $g: X \to Z$ is surjective continuous. Then the map $g$ induces a continuous bijection $f: X^* \to Z$.
 >
 > Moreover:
@@ -292,7 +292,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > [!remark]- Connections
 > - Algebraic counterpart: the first isomorphism theorem, [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
 
-> [!theorem] Theorem §15.5: Product of Quotient Maps (Compact-Hausdorff Case)
+> [!theorem] Theorem §13.5: Product of Quotient Maps (Compact-Hausdorff Case)
 > Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is [[§18 Compact Spaces#^def-18-2|compact]] and $Y_1 \times Y_2$ is [[§9 Hausdorff Spaces#^def-9-1|Hausdorff]], then
 >
 > $$

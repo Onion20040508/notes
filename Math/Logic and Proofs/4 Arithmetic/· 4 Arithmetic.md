@@ -18,6 +18,10 @@ tags: [chapter, logic-and-proofs]
 - [[§16 The Euclidean Algorithm]]
 - [[§17 Consequences of the Euclidean Algorithm]]
 - [[§18★ Linear Diophantine Equations]] — ★ not in the course record
+- [[§18a The Pair (7684, 4148)]]
+- [[§18b The Pair (72, 30)]]
+- [[§18c The Pair (232, 136)]]
+- [[§18d The Equation 140m + 63n = 35]]
 
 ## Central results
 - [[Euclidean Algorithm]] (§16.3)

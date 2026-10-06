@@ -41,7 +41,7 @@ This section applies the methods of [[§5 Linear Differential Equations; Method 
 
 ^rem-7-2
 
-> [!example] Example §8.1: A Tank at Constant Volume
+> [!example] Example §7.1: A Tank at Constant Volume
 > At $t = 0$ a tank contains $Q_0$ lb of salt dissolved in $100$ gal of water. Water containing $\frac14$ lb of salt per gallon enters at $r$ gal/min, and the well-stirred mixture drains at the same rate. Find $Q(t)$ and the limiting amount $Q_L$. If $r = 3$ and $Q_0 = 2Q_L$, find the time $T$ after which the salt level is within $2\%$ of $Q_L$. What flow rate makes $T \le 45$ min?
 >
 > **Model.** The rate in is $\frac14 \cdot r = \frac r4$ lb/min. The volume stays $100$ gal, so the concentration is $Q/100$ and the rate out is $\frac{rQ}{100}$ lb/min. Hence
@@ -78,7 +78,7 @@ This section applies the methods of [[§5 Linear Differential Equations; Method 
 
 ^ex-7-1
 
-> [!example] Example §8.2: Tanks That Fill Up
+> [!example] Example §7.2: Tanks That Fill Up
 > **(a)** A $10$ gallon tank contains $5$ gallons of pure water. At $t = 0$ salt water with $\frac12$ lb of salt per gallon flows in at $4$ gal/min, and the well-stirred mixture drains at $3$ gal/min. Set up and solve the initial value problem for the salt $S(t)$, and find the amount of salt when the tank is full.
 >
 > **Model.** The volume grows by $1$ gal/min: $V(t) = 5 + t$, and the tank is full at $t = 5$. Rate in $= \frac12 \cdot 4 = 2$ lb/min; rate out $= \dfrac{S}{5 + t}\cdot 3$. So
@@ -120,7 +120,7 @@ This section applies the methods of [[§5 Linear Differential Equations; Method 
 
 Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded continuously, and that deposits (or withdrawals) are made continuously at a constant rate $k$ per year ($k > 0$ for deposits, $k < 0$ for withdrawals). The rate of change of the value $S(t)$ is the return $rS$ plus the deposit rate.
 
-> [!theorem] Proposition §8.1: Continuous Compounding with Deposits
+> [!theorem] Proposition §7.1: Continuous Compounding with Deposits
 > Let $r \ne 0$. The solution of
 >
 > $$
@@ -152,7 +152,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 *Uses:* [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-1|§5.1]], [[§2 Solutions of Some Differential Equations#^thm-2-1|§2.1]]
 
-> [!theorem] Proposition §8.2: Compounding m Times a Year
+> [!theorem] Proposition §7.2: Compounding m Times a Year
 > If interest at the annual rate $r$ is compounded $m$ times per year, then after $t$ years (with $mt$ a whole number)
 >
 > $$
@@ -200,7 +200,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 ^rem-7-3
 
-> [!example] Example §8.3: Saving for Retirement
+> [!example] Example §7.3: Saving for Retirement
 > **(a) BDP's IRA.** Someone opens a retirement account at age $25$ and invests $\$2000$ a year, continuously, at a rate of return of $8\%$. What is the balance at age $65$?
 >
 > Here $S_0 = 0$, $r = 0.08$, $k = 2000$, $t = 40$, and (15) gives
@@ -233,7 +233,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 ## Chemicals in a Pond
 
-> [!example] Example §8.4: A Pond with Periodic Inflow
+> [!example] Example §7.4: A Pond with Periodic Inflow
 > A pond initially contains $10$ million gallons of fresh water. Water containing an undesirable chemical flows in at $5$ million gal/yr, and the mixture flows out at the same rate. The concentration of the chemical in the incoming water varies periodically: $\gamma(t) = 2 + \sin 2t$ g/gal. Model the process, find the amount of chemical at any time, and describe the effect of the variation.
 >
 > **Model.** The volume stays $10^7$ gal. With $Q(t)$ in grams and $t$ in years,
@@ -279,7 +279,7 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 ## Newton's Law of Cooling
 
-> [!example] Example §8.5: Newton's Law of Cooling
+> [!example] Example §7.5: Newton's Law of Cooling
 > Newton's law of cooling says that the temperature $T(t)$ of an object in a medium at constant temperature $T_m$ changes at a rate proportional to $T - T_m$:
 >
 > $$
@@ -333,14 +333,14 @@ $$
 w(x) = -\frac{mgR^2}{(R + x)^2} . \qquad (25)
 $$
 
-> [!definition] Definition §8.1: Escape Velocity
+> [!definition] Definition §7.1: Escape Velocity
 > The **escape velocity** $v_e$ is the least initial velocity for which the body does not return to the earth.
 >
 > *BDP: Example 2.3.4*
 
 ^def-7-1
 
-> [!theorem] Proposition §8.3: Velocity, Maximum Altitude and Escape Velocity
+> [!theorem] Proposition §7.3: Velocity, Maximum Altitude and Escape Velocity
 > As a function of the altitude $x$, the velocity of the body is
 >
 > $$

@@ -15,7 +15,7 @@ The Limit Laws of [[§9 Calculating Limits Using the Limit Laws|§9]], together 
 
 ## Evaluating Limits by Direct Substitution
 
-> [!theorem] Theorem §12.1: Direct Substitution Property
+> [!theorem] Theorem §10.1: Direct Substitution Property
 > If $f$ is a polynomial or a rational function and $a$ is in the domain of $f$, then
 >
 > $$
@@ -43,7 +43,7 @@ The Limit Laws of [[§9 Calculating Limits Using the Limit Laws|§9]], together 
 
 Functions with the Direct Substitution Property at $a$ are called **continuous at $a$** ([[§12 Continuity#^def-12-1|Definition §12.1]]); in that language this theorem is [[§12 Continuity#^thm-12-2|Theorem §12.2]]. Not every limit can be found by substitution: the interesting ones in calculus are of the form $0/0$ at $a$. The next fact lets us change the function at $a$ itself without changing the limit.
 
-> [!theorem] Theorem §12.2: Functions That Agree Except at a
+> [!theorem] Theorem §10.2: Functions That Agree Except at a
 > If $f(x) = g(x)$ when $x \ne a$, then $\lim_{x \to a} f(x) = \lim_{x \to a} g(x)$, provided the limits exist.
 >
 > *Stewart: 2.3 (boxed statement after Example 3)*
@@ -59,7 +59,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 *Uses:* [[§11 The Precise Definition of a Limit#^def-11-1|Def. §11.1]]
 
-> [!example] Example §12.1: Cancelling a Common Factor
+> [!example] Example §10.1: Cancelling a Common Factor
 > **(a)** Find $\displaystyle\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$.
 >
 > Substituting $x = 1$ is impossible ($f(1)$ is $0/0$, undefined), and the Quotient Law does not apply because the limit of the denominator is $0$. Factor the numerator as a difference of squares:
@@ -94,7 +94,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 ^ex-10-1
 
-> [!example] Example §12.2: Rationalizing the Numerator
+> [!example] Example §10.2: Rationalizing the Numerator
 > Find $\displaystyle\lim_{t \to 0} \frac{\sqrt{t^2 + 9} - 3}{t^2}$.
 >
 > The denominator tends to $0$, so the Quotient Law cannot be applied directly. Multiply numerator and denominator by the conjugate $\sqrt{t^2 + 9} + 3$:
@@ -118,7 +118,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 ## Using One-Sided Limits
 
-> [!theorem] Theorem §12.3: Two-Sided and One-Sided Limits
+> [!theorem] Theorem §10.3: Two-Sided and One-Sided Limits
 > $$
 > \lim_{x \to a} f(x) = L \qquad\text{if and only if}\qquad \lim_{x \to a^-} f(x) = L = \lim_{x \to a^+} f(x) .
 > $$
@@ -146,9 +146,8 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 > [!remark] Remark: The Limit Laws for One-Sided Limits
 > Stewart uses the fact that the Limit Laws ([[§9 Calculating Limits Using the Limit Laws#^thm-9-1|Theorems §9.1]] and [[§9 Calculating Limits Using the Limit Laws#^thm-9-2|§9.2]]) also hold for one-sided limits. The proofs are the same word for word, with the condition $0 < |x - a| < \delta$ replaced by $a < x < a + \delta$ (right-hand limits) or $a - \delta < x < a$ (left-hand limits). For example, $\lim_{x \to a^+} [f(x) g(x)] = \lim_{x \to a^+} f(x) \cdot \lim_{x \to a^+} g(x)$ whenever both right-hand limits exist, even if the two-sided limit of $g$ does not.
 
-^rem-10-2
-
-> [!definition] Definition §12.1: Greatest Integer Function
+^rem-10-1
+> [!definition] Definition §10.1: Greatest Integer Function
 > The **greatest integer function** (or **floor function**) is defined by
 >
 > $$
@@ -161,7 +160,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 ^def-10-1
 
-> [!example] Example §12.3: Comparing One-Sided Limits
+> [!example] Example §10.3: Comparing One-Sided Limits
 > **(a)** Prove that $\displaystyle\lim_{x \to 0} \frac{|x|}{x}$ does not exist.
 >
 > Since $|x| = x$ for $x > 0$ and $|x| = -x$ for $x < 0$,
@@ -207,7 +206,7 @@ Functions with the Direct Substitution Property at $a$ are called **continuous a
 
 The next two theorems compare the limits of two functions when one is below the other near $a$. Stewart states them with "when $x$ is near $a$ (except possibly at $a$)"; in Appendix F this means: for all $x \ne a$ in some open interval that contains $a$.
 
-> [!theorem] Theorem §12.4: Limits Preserve Inequalities
+> [!theorem] Theorem §10.4: Limits Preserve Inequalities
 > If $f(x) \le g(x)$ when $x$ is near $a$ (except possibly at $a$) and the limits of $f$ and $g$ both exist as $x$ approaches $a$, then
 >
 > $$
@@ -239,7 +238,7 @@ The next two theorems compare the limits of two functions when one is below the 
 
 Strict inequalities are not preserved: $0 < x^2$ for $x \ne 0$, yet both sides have limit $0$ as $x \to 0$. The theorem only gives $\le$.
 
-> [!theorem] Theorem §12.5: The Squeeze Theorem
+> [!theorem] Theorem §10.5: The Squeeze Theorem
 > If $f(x) \le g(x) \le h(x)$ when $x$ is near $a$ (except possibly at $a$) and
 >
 > $$
@@ -286,7 +285,7 @@ Strict inequalities are not preserved: $0 < x^2$ for $x \ne 0$, yet both sides h
 > [!remark]- Connections
 > - Hub: [[Squeeze Theorem]]. The same proof for sequences: [[§8 A Discussion About Proofs#^thm-8-1|451 Thm. §8.1]]. [[§10 Direct Substitution, One-Sided Limits and the Squeeze Theorem#^thm-10-4|Theorem §10.4]] for sequences: [[§9 Limit Theorems for Sequences#^prop-9-5|451 Prop. §9.5]], proved by the same contradiction.
 
-> [!example] Example §12.4: Squeezing an Oscillation
+> [!example] Example §10.4: Squeezing an Oscillation
 > Show that $\displaystyle\lim_{x \to 0} x^2 \sin\frac{1}{x} = 0$.
 >
 > The Product Law does **not** apply: $\lim_{x \to 0} \sin(1/x)$ does not exist: it oscillates between $-1$ and $1$ infinitely often near $0$, exactly like $\sin(\pi/x)$ in [[§8 The Limit of a Function#^ex-8-2|Example §8.2]](b). Instead, find a smaller and a larger function with limit $0$. The sine of any number lies between $-1$ and $1$, so
@@ -324,4 +323,4 @@ Strict inequalities are not preserved: $0 < x^2$ for $x \ne 0$, yet both sides h
 >
 > The Product and Quotient Laws may only be used when the individual limits exist (and, for the Quotient Law, the limit of the denominator is not $0$). When they do not, the laws say nothing, and steps 2–5 are needed.
 
-^rem-10-3
+^rem-10-2

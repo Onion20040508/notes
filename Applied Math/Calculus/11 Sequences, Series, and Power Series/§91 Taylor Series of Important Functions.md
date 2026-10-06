@@ -15,7 +15,7 @@ Taylor's Inequality ([[§90 Taylor and Maclaurin Series#^thm-90-4|Theorem §90.4
 
 ## Taylor Series of Important Functions
 
-> [!theorem] Theorem §107.1: Sine
+> [!theorem] Theorem §91.1: Sine
 > $$
 > \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} \qquad \text{for all } x . \qquad (15)
 > $$
@@ -58,7 +58,7 @@ Taylor's Inequality ([[§90 Taylor and Maclaurin Series#^thm-90-4|Theorem §90.4
 ![[m233-78-1.svg]]
 *$\sin x$ (black) and its Maclaurin polynomials $T_1(x) = x$, $T_3(x) = x - \frac{x^3}{3!}$, $T_5$ and $T_9$. Each polynomial follows the sine curve on a larger interval around $0$ before it breaks away: for fixed $x$ the error $|R_n(x)| \le |x|^{n+1}/(n+1)!$ tends to $0$, but more slowly for larger $|x|$.*
 
-> [!theorem] Theorem §107.2: Cosine
+> [!theorem] Theorem §91.2: Cosine
 > $$
 > \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} \qquad \text{for all } x . \qquad (16)
 > $$
@@ -88,7 +88,7 @@ Taylor's Inequality ([[§90 Taylor and Maclaurin Series#^thm-90-4|Theorem §90.4
 
 These series, found by Newton by other methods, say that everything about $e^x$, $\sin x$ and $\cos x$ is determined by their derivatives at the single number $0$.
 
-> [!definition] Definition §107.1: Binomial Coefficients
+> [!definition] Definition §91.1: Binomial Coefficients
 > For any real number $k$ and integer $n \ge 0$, the **binomial coefficients** are
 >
 > $$
@@ -99,14 +99,14 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 
 ^def-91-1
 
-> [!definition] Definition §107.2: Binomial Series
+> [!definition] Definition §91.2: Binomial Series
 > The **binomial series** is the Maclaurin series of $(1 + x)^k$, which is $\sum_{n=0}^{\infty} \binom{k}{n} x^n$ ([[§91 Taylor Series of Important Functions#^thm-91-3|Theorem §91.3]]).
 >
 > *Stewart: 11.10 (text)*
 
 ^def-91-2
 
-> [!theorem] Theorem §107.3: The Binomial Series
+> [!theorem] Theorem §91.3: The Binomial Series
 > If $k$ is any real number and $|x| < 1$, then
 >
 > $$
@@ -177,13 +177,12 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 > \end{aligned}
 > $$
 
-^rem-91-3
-
+^rem-91-1
 ## New Taylor Series from Old
 
 By [[§90 Taylor and Maclaurin Series#^cor-90-2|Corollary §90.2]], however a power series representation of $f$ is obtained, it is the Taylor series of $f$. So new Taylor series can be found by manipulating the series in the table instead of using the coefficient formula. As in [[§89 Representations of Functions as Power Series|§89]], we can replace $x$ by an expression $c x^m$, multiply or divide by such an expression, and differentiate or integrate term by term. Series can also be added and subtracted ([[§82 Series#^thm-82-6|Theorem §82.6]]), multiplied and divided.
 
-> [!theorem] Theorem §107.4: Multiplying and Dividing Power Series
+> [!theorem] Theorem §91.4: Multiplying and Dividing Power Series
 > If $f(x) = \sum c_n x^n$ and $g(x) = \sum b_n x^n$ both converge for $|x| < R$, and the series are multiplied as if they were polynomials, the resulting series also converges for $|x| < R$ and represents $f(x) g(x)$. For division, if $b_0 \ne 0$, the series obtained by long division converges to $f(x)/g(x)$ for sufficiently small $|x|$.
 >
 > *Stewart: 11.10 (text)*
@@ -195,7 +194,7 @@ By [[§90 Taylor and Maclaurin Series#^cor-90-2|Corollary §90.2]], however a po
 > [!remark]- Connections
 > - Complex-variables version: [[§73★ Multiplication and Division of Power Series#^thm-73-2|342 Thm. §73.2]] (the Cauchy product converges to $fg$) and [[§73★ Multiplication and Division of Power Series#^prop-73-3|342 Prop. §73.3]] (division), both proved there.
 
-> [!example] Example §107.1: Substituting, Multiplying, Recognizing
+> [!example] Example §91.1: Substituting, Multiplying, Recognizing
 > **(a)** Find the Maclaurin series and radius of convergence of $f(x) = 1/\sqrt{4 - x}$.
 >
 > Rewrite $f$ so that the binomial series applies:
@@ -246,7 +245,7 @@ By [[§90 Taylor and Maclaurin Series#^cor-90-2|Corollary §90.2]], however a po
 
 ^ex-91-1
 
-> [!example] Example §107.2: Integrals and Limits by Series
+> [!example] Example §91.2: Integrals and Limits by Series
 > **(a)** Evaluate $\int e^{-x^2}\,dx$ as an infinite series, and **(b)** evaluate $\int_0^1 e^{-x^2}\,dx$ correct to within an error of $0.001$.
 >
 > $e^{-x^2}$ has no elementary antiderivative ([[§55 Strategy for Integration#^thm-55-2|Theorem §55.2]]); following Newton, expand and integrate term by term. Replacing $x$ by $-x^2$ in the series for $e^x$, for all $x$,
@@ -291,7 +290,7 @@ By [[§90 Taylor and Maclaurin Series#^cor-90-2|Corollary §90.2]], however a po
 
 ^ex-91-2
 
-> [!example] Example §107.3: Multiplying and Dividing Series
+> [!example] Example §91.3: Multiplying and Dividing Series
 > Find the first three nonzero terms in the Maclaurin series for **(a)** $e^x \sin x$ and **(b)** $\tan x$.
 >
 > **(a)** Multiply the series, collecting like terms as for polynomials ([[§91 Taylor Series of Important Functions#^thm-91-4|Theorem §91.4]]):

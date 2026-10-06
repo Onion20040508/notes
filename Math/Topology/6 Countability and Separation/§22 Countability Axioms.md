@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 **Motivation:** When does a space $X$ embed in a metric space?
 
-> [!theorem] Theorem §28.1: Urysohn Metrization Theorem (Preview)
+> [!theorem] Theorem §22.1: Urysohn Metrization Theorem (Preview)
 > If $X$ is [[§22 Countability Axioms#^def-22-3|second-countable]] and [[§23 Separation Axioms#^def-23-2|regular]] (T3), then $X$ can be embedded in a metric space (hence is [[§12 Metric Topology#^def-12-4|metrizable]]).
 
 ^thm-22-1
@@ -22,12 +22,12 @@ tags: [topology, math590]
 
 ## First and Second Countability
 
-> [!definition] Definition §28.1: Countable Basis at a Point
+> [!definition] Definition §22.1: Countable Basis at a Point
 > A space $X$ has a **countable basis at $x \in X$** if there is a countable collection $\mathcal{B}$ of neighborhoods of $x$ such that every neighborhood of $x$ contains some $B \in \mathcal{B}$.
 
 ^def-22-1
 
-> [!definition] Definition §28.2: First-Countable
+> [!definition] Definition §22.2: First-Countable
 > $X$ is **first-countable** if $X$ has a [[§22 Countability Axioms#^def-22-1|countable basis]] at each of its points.
 
 ^def-22-2
@@ -64,7 +64,7 @@ tags: [topology, math590]
 
 ^ex-22-2
 
-> [!definition] Definition §28.3: Second-Countable
+> [!definition] Definition §22.3: Second-Countable
 > $X$ is **second-countable** if $X$ has a countable [[§2 Basis for a Topology#^def-2-1|basis]] for its topology.
 
 ^def-22-3
@@ -118,7 +118,7 @@ tags: [topology, math590]
 
 ^ex-22-6
 
-> [!theorem] Lemma §28.2
+> [!theorem] Lemma §22.2
 > If $X$ has a countable basis and $A$ is a discrete subspace of $X$, then $A$ must be countable.
 
 ^lem-22-2
@@ -137,12 +137,12 @@ tags: [topology, math590]
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]], [[§14 Counting Infinite Sets#^cor-14-6|250 §14.6]]
 
 > [!remark]- Connections
-> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|556 Prop. §32.1]]).
+> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§36 Position Eigenstates and Continuous Resolutions#^prop-36-1|556 Prop. §36.1]]).
 > - The same argument shows L^∞ is not separable: the indicators of (0, t) form an uncountable family at mutual distance 1, [[§35 Lᵖ as a Banach Space#^thm-35-14|551 Thm. §35.14]].
 
 ## Inheritance Properties
 
-> [!theorem] Theorem §28.3: Subspaces and Products
+> [!theorem] Theorem §22.3: Subspaces and Products
 > 1. If $A \subseteq X$ and $X$ is first-countable (resp. second-countable), then $A$ is first-countable (resp. second-countable).
 > 2. A countable product of first-countable (resp. second-countable) spaces is first-countable (resp. second-countable).
 
@@ -167,7 +167,7 @@ tags: [topology, math590]
 
 ## Dense Subsets and Lindelöf Spaces
 
-> [!definition] Definition §28.4: Dense
+> [!definition] Definition §22.4: Dense
 > A subset $A \subseteq X$ is **dense** if $\overline{A} = X$. Equivalently: every nonempty open set in $X$ meets $A$.
 
 ^def-22-4
@@ -180,13 +180,13 @@ tags: [topology, math590]
 
 ^ex-22-7
 
-> [!definition] Definition §28.5: Separable
+> [!definition] Definition §22.5: Separable
 > $X$ is **separable** if it has a countable [[§22 Countability Axioms#^def-22-4|dense]] subset: there exists a countable $D \subseteq X$ with $\overline{D} = X$.
 
 ^def-22-5
 
 > [!remark]- Connections
-> - Separability of sequence and function spaces: [[§24 Orthonormal Sets and Bases#^def-24-5|556 Def. §24.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§25 Sequence and Function Spaces#^prop-25-1|556 Prop. §25.1]]–[[§25 Sequence and Function Spaces#^prop-25-5|556 Prop. §25.5]]).
+> - Separability of sequence and function spaces: [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|556 Def. §28.1]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§29 Sequence and Function Spaces#^prop-29-1|556 Prop. §29.1]]–[[§29 Sequence and Function Spaces#^prop-29-5|556 Prop. §29.5]]).
 > - The metric-space form, with density by sequences: [[§35 Lᵖ as a Banach Space#^def-35-5|551 Def. §35.5]]; Lᵖ is separable for p < ∞ ([[§35 Lᵖ as a Banach Space#^cor-35-13|551 Cor. §35.13]]) and L^∞ is not ([[§35 Lᵖ as a Banach Space#^thm-35-14|551 Thm. §35.14]]).
 
 > [!example] Example §22.8: Standard Examples
@@ -196,7 +196,7 @@ tags: [topology, math590]
 
 ^ex-22-8
 
-> [!theorem] Proposition §28.4: Relationships Between Countability and Separability
+> [!theorem] Proposition §22.4: Relationships Between Countability and Separability
 > 1. Second countable $\Rightarrow$ separable (pick one point from each basis element).
 > 2. Separable does NOT imply second countable in general ($\mathbb{R}_\ell$ is separable but not second countable).
 > 3. In [[§12 Metric Topology#^def-12-4|metrizable]] spaces: separable $\iff$ second countable.
@@ -219,7 +219,7 @@ tags: [topology, math590]
 ![[m590-18-1.svg]]
 *Proof of (3), separable $\Rightarrow$ second countable: given $x\in U$, pick $B(x,\varepsilon)\subseteq U$ (dashed), $\frac1n<\varepsilon/2$, and a point $d_i$ of the dense set $D$ (blue) with $d(x,d_i)<\frac1n$. The basis ball $B(d_i,\frac1n)$ (red) contains $x$ and fits inside $B(x,\varepsilon)$ by the triangle inequality. Only countably many such balls exist.*
 
-> [!theorem] Proposition §28.5: Subspaces of Separable Metrizable Spaces
+> [!theorem] Proposition §22.5: Subspaces of Separable Metrizable Spaces
 > If $X$ is separable and [[§12 Metric Topology#^def-12-4|metrizable]], then every subspace $A \subseteq X$ is separable.
 
 ^prop-22-5
@@ -231,7 +231,7 @@ tags: [topology, math590]
 
 *Uses:* [[§22 Countability Axioms#^prop-22-4|§22.4]], [[§22 Countability Axioms#^thm-22-3|§22.3]]
 
-> [!definition] Definition §28.6: Lindelöf Space
+> [!definition] Definition §22.6: Lindelöf Space
 > $X$ is a **Lindelöf space** if every open cover of $X$ contains a countable subcover.
 
 ^def-22-6
@@ -241,7 +241,7 @@ tags: [topology, math590]
 
 ^rem-22-4
 
-> [!theorem] Theorem §28.6: Second-Countable Implies Dense Subset and Lindelöf
+> [!theorem] Theorem §22.6: Second-Countable Implies Dense Subset and Lindelöf
 > Suppose $X$ has a countable basis. Then:
 > - **(a)** There exists a countable subset of $X$ that is dense in $X$.
 > - **(b)** Every open cover of $X$ has a countable subcover (i.e., $X$ is [[§22 Countability Axioms#^def-22-6|Lindelöf]]).

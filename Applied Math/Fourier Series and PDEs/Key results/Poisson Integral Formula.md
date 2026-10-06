@@ -8,7 +8,7 @@ tags: [fourier-series-and-pdes, hub]
 ![[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1]]
 
 ## Treated in
-- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|Theorem §49.1: Poisson Integral Formula]], in [[§48 Potential in a Disk]]
+- [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|Theorem §49.1: Poisson Integral Formula]], in [[§49 The Poisson Integral Formula and the Mean Value Property]]
 
 ## Its proof uses
 - [[§48 Potential in a Disk#^thm-48-2|Theorem §48.2: Solution of Dirichlet's Problem in a Disk]]

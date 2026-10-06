@@ -10,17 +10,19 @@ tags: [chapter, logic-and-proofs]
 *Eccles, Chapters 6–9.*
 
 **Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (20)
-**Used by:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (2), [[· 3 Numbers and Counting|3 Numbers and Counting]] (18), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (7), [[· 6 Prime Numbers|6 Prime Numbers]] (1)
+**Used by:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (2), [[· 3 Numbers and Counting|3 Numbers and Counting]] (19), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (9), [[· 6 Prime Numbers|6 Prime Numbers]] (1)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (10), [[Linear Algebra]] (4), [[Group Theory]] (1), [[Measure Theory]] (7), [[Topology]] (1)
 
 ## Sections
 - [[§6 The Language of Set Theory]]
+- [[§6a Operations on Sets]]
 - [[§7 Quantifiers]]
+- [[§7a Several Quantifiers and the Cartesian Product]]
 - [[§8 Functions]]
 - [[§9 Injections, Surjections and Bijections]]
 
 ## Central results
-- [[Laws of the Algebra of Sets]] (§6.3)
+- [[Laws of the Algebra of Sets]] (§6a.2)
 - [[Negating Quantifiers]] (§7.2)
 - [[Invertible Means Bijective]] (§9.2)
 

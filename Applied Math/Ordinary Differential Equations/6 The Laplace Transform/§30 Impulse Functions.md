@@ -23,7 +23,7 @@ $$
 
 where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\tau > 0$, and zero otherwise.
 
-> [!definition] Definition §36.1: Impulse
+> [!definition] Definition §30.1: Impulse
 > If $g(t) = 0$ outside the interval $(t_0 - \tau, t_0 + \tau)$, the **impulse** of $g$ is
 >
 > $$
@@ -36,7 +36,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 ^def-30-1
 
-> [!definition] Definition §36.2: The Unit Pulses $d_\tau$
+> [!definition] Definition §30.2: The Unit Pulses $d_\tau$
 > For $\tau > 0$ let
 >
 > $$
@@ -53,7 +53,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 ^def-30-2
 
-> [!definition] Definition §36.4: The Dirac Delta Function
+> [!definition] Definition §30.3: The Dirac Delta Function
 > The **unit impulse function** $\delta$ is the idealized forcing that imparts an impulse of magnitude one at $t = 0$ and is zero for all other $t$. It is defined by the properties (5) and (6) of the limit of $d_\tau$:
 >
 > $$
@@ -74,7 +74,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 > [!remark]- Connections
 > - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§12 Borel Sets and Measure Spaces#^ex-12-2|551 Ex. §12.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is [[§30 Impulse Functions#^thm-30-3|Theorem §30.3]], and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is [[§30 Impulse Functions#^thm-30-2|Theorem §30.2]].
-> - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-4|556 Prop. §32.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
+> - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§36 Position Eigenstates and Continuous Resolutions#^prop-36-4|556 Prop. §36.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
 
 > [!definition] Definition §30.4: Transform and Integrals of δ
 > For $t_0 > 0$, the Laplace transform of $\delta(t - t_0)$ is defined as the limit of the transforms of the pulses:
@@ -97,7 +97,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 ## The Laplace Transform of δ
 
-> [!theorem] Theorem §36.1: Transform of a Shifted Pulse
+> [!theorem] Theorem §30.1: Transform of a Shifted Pulse
 > If $0 < \tau < t_0$, then, for $s \ne 0$,
 >
 > $$
@@ -121,7 +121,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 *Uses:* [[§30 Impulse Functions#^def-30-2|Def. §30.2]], [[§26 Definition of the Laplace Transform#^def-26-4|Def. §26.4]]
 
-> [!theorem] Theorem §36.2: Transform of the Delta Function
+> [!theorem] Theorem §30.2: Transform of the Delta Function
 > For $t_0 > 0$,
 >
 > $$
@@ -153,7 +153,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 The formulas agree with the shift rule of [[§28 Step Functions#^thm-28-2|Theorem §28.2]]: $\delta(t - t_0)$ is the translation of $\delta(t)$ by $t_0$, and $\mathcal{L}\{\delta(t - t_0)\} = e^{-st_0}\mathcal{L}\{\delta(t)\} = e^{-st_0}$.
 
-> [!theorem] Theorem §36.3: The Sifting Property
+> [!theorem] Theorem §30.3: The Sifting Property
 > If $f$ is continuous, then
 >
 > $$
@@ -184,7 +184,7 @@ The formulas agree with the shift rule of [[§28 Step Functions#^thm-28-2|Theore
 > [!remark]- Connections
 > - The mean value theorem for integrals used in the proof: [[§49 Average Value of a Function#^thm-49-1|Calc Thm. §49.1]]; rigorous version [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]].
 
-> [!example] Example §36.1: Integrals Against δ
+> [!example] Example §30.1: Integrals Against δ
 > Evaluate:
 >
 > **(a)** $\displaystyle\int_1^7 \delta(t + 3)\,dt$. The impulse is at $t = -3$, outside $[1, 7]$, so the integral is $0$.
@@ -203,7 +203,7 @@ The formulas agree with the shift rule of [[§28 Step Functions#^thm-28-2|Theore
 
 With [[§30 Impulse Functions#^thm-30-2|Theorem §30.2]], an impulse in the forcing term is handled exactly like a step ([[§29 Differential Equations with Discontinuous Forcing Functions#^rem-29-1|Method of §29]]): $k\delta(t - c)$ contributes $ke^{-cs}$ to the transformed equation.
 
-> [!example] Example §36.2: A Unit Impulse at t = 5
+> [!example] Example §30.2: A Unit Impulse at t = 5
 > Solve $2y'' + y' + 2y = \delta(t - 5)$, $y(0) = 0$, $y'(0) = 0$. This is the circuit or oscillator of [[§29 Differential Equations with Discontinuous Forcing Functions#^ex-29-1|Example §29.1]], now struck by a unit impulse at $t = 5$.
 >
 > **Transform.** $(2s^2 + s + 2)Y(s) = e^{-5s}$, so

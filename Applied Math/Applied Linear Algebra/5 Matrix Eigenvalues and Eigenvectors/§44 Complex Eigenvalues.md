@@ -15,7 +15,7 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 
 ## Complex Eigenvalues and Eigenvectors
 
-> [!definition] Definition §54.1: Complex Eigenvalue and Eigenvector
+> [!definition] Definition §44.1: Complex Eigenvalue and Eigenvector
 > Let $A$ be an $n \times n$ matrix, with real or complex entries, acting on the space $\mathbb{C}^n$ of $n$-tuples of complex numbers. The eigenvalue–eigenvector theory developed for $\mathbb{R}^n$ applies equally well to $\mathbb{C}^n$: a complex scalar $\lambda$ satisfies $\det(A - \lambda I) = 0$ if and only if there is a nonzero vector $\mathbf{x}$ in $\mathbb{C}^n$ such that $A\mathbf{x} = \lambda\mathbf{x}$. We call $\lambda$ a **(complex) eigenvalue** and $\mathbf{x}$ a **(complex) eigenvector** corresponding to $\lambda$.
 >
 > Matrix algebra carries over to complex entries and scalars; for instance, $A(c\mathbf{x} + d\mathbf{y}) = cA\mathbf{x} + dA\mathbf{y}$ for $\mathbf{x}, \mathbf{y}$ in $\mathbb{C}^n$ and $c, d$ in $\mathbb{C}$. The term **complex eigenvalue** refers to an eigenvalue $\lambda = a + bi$ with $b \ne 0$.
@@ -24,7 +24,7 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 
 ^def-44-1
 
-> [!example] Example §54.1: Rotations Have No Real Eigenvectors
+> [!example] Example §44.1: Rotations Have No Real Eigenvectors
 > **(a)** $A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ rotates the plane $\mathbb{R}^2$ counterclockwise through a quarter-turn. Its action is periodic: after four quarter-turns every vector is back where it started. No nonzero vector is mapped to a multiple of itself, so $A$ has no eigenvectors in $\mathbb{R}^2$ and no real eigenvalues. Indeed, the characteristic equation is $\det\begin{bmatrix} -\lambda & -1 \\ 1 & -\lambda \end{bmatrix} = \lambda^2 + 1 = 0$, with only the complex roots $\lambda = i$ and $\lambda = -i$. On $\mathbb{C}^2$,
 >
 > $$
@@ -40,7 +40,7 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 
 ^ex-44-1
 
-> [!example] Example §54.2: Complex Eigenvectors
+> [!example] Example §44.2: Complex Eigenvectors
 > Let $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$. Find the eigenvalues of $A$ and a basis for each eigenspace.
 >
 > **Eigenvalues.** The characteristic equation is
@@ -93,7 +93,7 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 
 Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]] acts essentially as a rotation, which becomes visible when the iterates of a point are plotted.
 
-> [!example] Example §54.3: Iterates Lie on an Ellipse
+> [!example] Example §44.3: Iterates Lie on an Ellipse
 > With $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$ and $\mathbf{x}_0 = (2, 0)$, compute $\mathbf{x}_{k+1} = A\mathbf{x}_k$:
 >
 > $$
@@ -112,7 +112,7 @@ Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]
 
 ## Real and Imaginary Parts of Vectors
 
-> [!definition] Definition §54.2: Conjugate, Real and Imaginary Parts of a Vector
+> [!definition] Definition §44.2: Conjugate, Real and Imaginary Parts of a Vector
 > The **complex conjugate** of a complex vector $\mathbf{x}$ in $\mathbb{C}^n$ is the vector $\overline{\mathbf{x}}$ in $\mathbb{C}^n$ whose entries are the complex conjugates of the entries of $\mathbf{x}$. The **real and imaginary parts** of $\mathbf{x}$ are the vectors $\operatorname{Re}\mathbf{x}$ and $\operatorname{Im}\mathbf{x}$ in $\mathbb{R}^n$ formed from the real and imaginary parts of the entries of $\mathbf{x}$, so that $\mathbf{x} = \operatorname{Re}\mathbf{x} + i\operatorname{Im}\mathbf{x}$ and $\overline{\mathbf{x}} = \operatorname{Re}\mathbf{x} - i\operatorname{Im}\mathbf{x}$. For example,
 >
 > $$
@@ -125,7 +125,7 @@ Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]
 
 ^def-44-2
 
-> [!theorem] Proposition §54.1: Conjugates and Real Parts in Matrix Algebra
+> [!theorem] Proposition §44.1: Conjugates and Real Parts in Matrix Algebra
 > For a scalar $r$, matrices $B$, $C$ and a vector $\mathbf{x}$ (complex entries allowed, sizes compatible),
 >
 > $$
@@ -153,7 +153,7 @@ Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]
 
 ## Eigenvalues and Eigenvectors of a Real Matrix That Acts on ℂⁿ
 
-> [!theorem] Theorem §54.2: Complex Eigenvalues of a Real Matrix Come in Conjugate Pairs
+> [!theorem] Theorem §44.2: Complex Eigenvalues of a Real Matrix Come in Conjugate Pairs
 > Let $A$ be an $n \times n$ matrix with real entries. If $\lambda$ is an eigenvalue of $A$ and $\mathbf{x}$ a corresponding eigenvector in $\mathbb{C}^n$, then $\bar\lambda$ is also an eigenvalue of $A$, with $\overline{\mathbf{x}}$ a corresponding eigenvector. So the complex eigenvalues of a real matrix occur in conjugate pairs.
 >
 > *Lay: 5.5 (text)*
@@ -173,7 +173,7 @@ Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]
 
 The next result is the basic "building block" for all real $2 \times 2$ matrices with complex eigenvalues.
 
-> [!theorem] Proposition §54.3: Rotation–Scaling Matrices
+> [!theorem] Proposition §44.3: Rotation–Scaling Matrices
 > Let $a$ and $b$ be real, not both zero, and
 >
 > $$
@@ -218,7 +218,7 @@ which is De Moivre's Theorem ([[§64 Complex Numbers#^thm-64-6|Theorem §64.6]])
 
 Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C$. The proof uses two facts: for a real matrix, $A(\operatorname{Re}\mathbf{x}) = \operatorname{Re}(A\mathbf{x})$ and $A(\operatorname{Im}\mathbf{x}) = \operatorname{Im}(A\mathbf{x})$ ([[§44 Complex Eigenvalues#^prop-44-1|Proposition §44.1]]), and the real and imaginary parts of an eigenvector for a complex eigenvalue are linearly independent.
 
-> [!example] Example §54.4: The Rotation Inside A
+> [!example] Example §44.4: The Rotation Inside A
 > Let $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$, $\lambda = .8 - .6i$ and $\mathbf{v}_1 = \begin{bmatrix} -2 - 4i \\ 5 \end{bmatrix}$, as in [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]. Let $P$ be the real $2 \times 2$ matrix
 >
 > $$
@@ -298,7 +298,7 @@ Every real $2 \times 2$ matrix with a complex eigenvalue is similar to such a $C
 
 ^rem-44-2
 
-> [!example] Example §54.5: Powers of a Matrix with Complex Eigenvalues
+> [!example] Example §44.5: Powers of a Matrix with Complex Eigenvalues
 > Let $A = \begin{bmatrix} 1 & -2 \\ 1 & 3 \end{bmatrix}$. Find its eigenvalues, write $A = PCP^{-1}$ as in [[§44 Complex Eigenvalues#^thm-44-4|Theorem §44.4]], and describe $A^N$ for large $N$.
 >
 > **Eigenvalues.** $\det(A - \lambda I) = (1 - \lambda)(3 - \lambda) + 2 = \lambda^2 - 4\lambda + 5$, so

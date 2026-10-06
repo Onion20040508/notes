@@ -9,7 +9,7 @@ tags: [chapter, logic-and-proofs]
 
 *Eccles, Chapters 10–14.*
 
-**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (28), [[· 2 Sets and Functions|2 Sets and Functions]] (18), [[· 4 Arithmetic|4 Arithmetic]] (1)
+**Builds on:** [[· 1 Mathematical Statements and Proofs|1 Mathematical Statements and Proofs]] (28), [[· 2 Sets and Functions|2 Sets and Functions]] (19), [[· 4 Arithmetic|4 Arithmetic]] (1)
 **Used by:** [[· 4 Arithmetic|4 Arithmetic]] (9), [[· 5 Modular Arithmetic|5 Modular Arithmetic]] (7), [[· 6 Prime Numbers|6 Prime Numbers]] (7)
 **Developed further in (other subjects):** [[Single Variable Analysis]] (20), [[Linear Algebra]] (2), [[Group Theory]] (5), [[Measure Theory]] (12)
 
@@ -19,6 +19,8 @@ tags: [chapter, logic-and-proofs]
 - [[§12★ Counting Functions and Subsets]] — ★ not in the course record
 - [[§13 Number Systems]]
 - [[§14 Counting Infinite Sets]]
+- [[§14a Uncountable Sets]]
+- [[§14b √2]]
 
 ## Central results
 - [[Addition Principle]] (§10.4)
@@ -27,7 +29,7 @@ tags: [chapter, logic-and-proofs]
 - [[Finite Sets Have a Maximum and a Minimum]] (§11.9)
 - [[Binomial Theorem]] (§12.10)
 - [[The Rationals Are Denumerable]] (§14.10)
-- [[The Reals Are Uncountable]] (§14.12)
+- [[The Reals Are Uncountable]] (§14a.2)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

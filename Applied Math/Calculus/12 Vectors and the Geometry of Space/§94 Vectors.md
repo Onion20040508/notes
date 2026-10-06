@@ -33,7 +33,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-2
 
-> [!theorem] Theorem §110.1: Parallelogram Law
+> [!theorem] Theorem §94.1: Parallelogram Law
 > Place $\mathbf{u}$ and $\mathbf{v}$ so that they start at the same point. Then $\mathbf{u} + \mathbf{v}$ lies along the diagonal of the parallelogram with sides $\mathbf{u}$ and $\mathbf{v}$, starting at the common point. In particular $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.
 >
 > *Stewart: 12.2 (text)*
@@ -93,7 +93,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-5
 
-> [!theorem] Theorem §110.2: The Vector from A to B
+> [!theorem] Theorem §94.2: The Vector from A to B
 > Given the points $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$, the vector $\mathbf{a}$ with representation $\overrightarrow{AB}$ is
 >
 > $$
@@ -118,7 +118,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-6
 
-> [!theorem] Theorem §110.3: Length of a Vector
+> [!theorem] Theorem §94.3: Length of a Vector
 > The length of the two-dimensional vector $\mathbf{a} = \langle a_1, a_2 \rangle$ is $|\mathbf{a}| = \sqrt{a_1^2 + a_2^2}$. The length of the three-dimensional vector $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$ is
 >
 > $$
@@ -136,7 +136,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 *Uses:* [[§94 Vectors#^def-94-6|Def. §94.6]], [[§93 Three-Dimensional Coordinate Systems#^thm-93-1|§93.1]]
 
-> [!theorem] Theorem §110.4: Operations in Components
+> [!theorem] Theorem §94.4: Operations in Components
 > If $\mathbf{a} = \langle a_1, a_2 \rangle$ and $\mathbf{b} = \langle b_1, b_2 \rangle$, then
 >
 > $$
@@ -181,7 +181,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-7
 
-> [!theorem] Theorem §110.5: Properties of Vectors
+> [!theorem] Theorem §94.5: Properties of Vectors
 > If $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$ are vectors in $V_n$ and $c$ and $d$ are scalars, then
 >
 > $$
@@ -235,7 +235,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-8
 
-> [!theorem] Proposition §110.6: Components in Terms of i, j, k
+> [!theorem] Proposition §94.6: Components in Terms of i, j, k
 > Every vector in $V_3$ and in $V_2$ can be written in terms of the standard basis vectors:
 >
 > $$
@@ -290,7 +290,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 *Uses:* [[§94 Vectors#^def-94-3|Def. §94.3]], [[§94 Vectors#^def-94-9|Def. §94.9]]
 
-> [!example] Example §110.1: Computing with Components
+> [!example] Example §94.1: Computing with Components
 > **(a)** The vector represented by the directed segment from $A(2, -3, 4)$ to $B(-2, 1, 1)$ is, by [[§94 Vectors#^thm-94-2|Theorem §94.2]],
 >
 > $$
@@ -318,7 +318,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^ex-94-1
 
-> [!example] Example §110.2: A Unit Vector
+> [!example] Example §94.2: A Unit Vector
 > Find the unit vector in the direction of $2\mathbf{i} - \mathbf{j} - 2\mathbf{k}$.
 >
 > The vector has length $|2\mathbf{i} - \mathbf{j} - 2\mathbf{k}| = \sqrt{2^2 + (-1)^2 + (-2)^2} = \sqrt{9} = 3$, so by [[§94 Vectors#^prop-94-7|Proposition §94.7]] the unit vector with the same direction is
@@ -331,7 +331,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^ex-94-2
 
-> [!example] Example §110.3: The Fourth Vertex of a Parallelogram
+> [!example] Example §94.3: The Fourth Vertex of a Parallelogram
 > **(a)** $A(-2, 1, 3)$, $B(3, 5, 2)$ and $C(1, 2, 6)$ are three vertices of a parallelogram $ABCD$, with $AB$ and $BC$ two of its edges. Find the fourth vertex $D$.
 >
 > In the parallelogram $ABCD$ the side $AD$ is opposite to $BC$, so $\overrightarrow{AD} = \overrightarrow{BC}$. By [[§94 Vectors#^thm-94-2|Theorem §94.2]], $\overrightarrow{BC} = \langle 1 - 3,\ 2 - 5,\ 6 - 2 \rangle = \langle -2, -3, 4 \rangle$. So
@@ -365,7 +365,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^def-94-10
 
-> [!example] Example §110.4: Tensions in Two Wires
+> [!example] Example §94.4: Tensions in Two Wires
 > A 100-lb weight hangs from two wires that make angles of $50^\circ$ and $32^\circ$ with the horizontal ceiling, the first going up to the left and the second up to the right. Find the tensions $\mathbf{T}_1$ and $\mathbf{T}_2$ and their magnitudes.
 >
 > Resolving into horizontal and vertical components,
@@ -402,7 +402,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^ex-94-4
 
-> [!example] Example §110.5: Crossing a River
+> [!example] Example §94.5: Crossing a River
 > A woman launches a boat from the south shore of a straight river that flows directly west at $4$ mi/h. She wants to land at the point directly across on the opposite shore. If the speed of the boat relative to the water is $8$ mi/h, in what direction should she steer?
 >
 > The **true course** of a boat is the direction of the resultant of its own velocity and the velocity of the current. Put the origin at the starting point, with $\mathbf{i}$ east and $\mathbf{j}$ north. The current is $\mathbf{v}_c = -4\,\mathbf{i}$. If she steers at angle $\theta$ from the positive $x$-axis, the boat's velocity in still water is $\mathbf{v}_b = 8(\cos\theta\,\mathbf{i} + \sin\theta\,\mathbf{j})$. The resultant velocity is

@@ -28,6 +28,8 @@ tags: [chapter, complex-variables]
 - [[§71★ Integration and Differentiation of Power Series]] — B&C Sec. 71 ★
 - [[§72★ Uniqueness of Series Representations]] — B&C Sec. 72 ★
 - [[§73★ Multiplication and Division of Power Series]] — B&C Sec. 73 ★
+- [[§73a The Geometric Series]] — B&C Sec. 73
+- [[§73b The Function e^(1∕z)]] — B&C Sec. 73
 
 ## Central results
 - [[Taylor's Theorem for Analytic Functions]] (§63.1)

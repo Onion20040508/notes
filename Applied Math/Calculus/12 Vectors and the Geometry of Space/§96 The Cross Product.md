@@ -32,7 +32,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 ^rem-96-1
 
-> [!definition] Definition §113.1: Cross Product
+> [!definition] Definition §96.1: Cross Product
 > If $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$ and $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$, then the **cross product** of $\mathbf{a}$ and $\mathbf{b}$ is the vector
 >
 > $$
@@ -48,7 +48,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 > [!remark]- Connections
 > - The three components are the $2 \times 2$ minors of the matrix with columns $\mathbf{a}$, $\mathbf{b}$; in the language of forms, $\mathbf{X}_u \times \mathbf{X}_v$ packages the pullbacks of $dy \wedge dz$, $dz \wedge dx$, $dx \wedge dy$: [[§37 The Algebra of Differential Forms#^rem-37-3|452 Remark: The Cross Product Is the Pullback in Disguise]]. That is why it exists only in $\mathbb{R}^3$.
 
-> [!definition] Definition §113.2: Determinants of Order 2 and 3
+> [!definition] Definition §96.2: Determinants of Order 2 and 3
 > A **determinant of order 2** is
 >
 > $$
@@ -75,7 +75,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 ^def-96-2
 
-> [!theorem] Proposition §113.1: The Cross Product as a Determinant
+> [!theorem] Proposition §96.1: The Cross Product as a Determinant
 > For $\mathbf{a} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k}$ and $\mathbf{b} = b_1\mathbf{i} + b_2\mathbf{j} + b_3\mathbf{k}$,
 >
 > $$
@@ -102,7 +102,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 > [!remark]- Connections
 > - Matrix version of [[§96 The Cross Product#^def-96-2|Definition §96.2]] and [[§96 The Cross Product#^prop-96-1|Proposition §96.1]]: [[§24 Introduction to Determinants#^def-24-2|235 Def. §24.2]] (the same expansion along the first row, for $n \times n$ matrices) and [[§24 Introduction to Determinants#^prop-24-3|235 Prop. §24.3]] (the diagonal rule for $3 \times 3$), with worked examples.
 
-> [!example] Example §113.1: Computing Cross Products
+> [!example] Example §96.1: Computing Cross Products
 > **(a)** If $\mathbf{a} = \langle 1, 3, 4 \rangle$ and $\mathbf{b} = \langle 2, 7, -5 \rangle$, then
 >
 > $$
@@ -125,7 +125,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 ## Properties of the Cross Product
 
-> [!theorem] Theorem §113.2: The Cross Product Is Orthogonal to Both Factors
+> [!theorem] Theorem §96.2: The Cross Product Is Orthogonal to Both Factors
 > The vector $\mathbf{a} \times \mathbf{b}$ is orthogonal to both $\mathbf{a}$ and $\mathbf{b}$.
 >
 > *Stewart: 12.4, Theorem 8*
@@ -156,7 +156,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 
 *Uses:* [[§96 The Cross Product#^prop-96-1|§96.1]], [[§95 The Dot Product#^thm-95-4|§95.4]]
 
-> [!theorem] Proposition §113.3: Right-Hand Rule
+> [!theorem] Proposition §96.3: Right-Hand Rule
 > If $\mathbf{a}$ and $\mathbf{b}$ are represented by directed segments with the same initial point, then $\mathbf{a} \times \mathbf{b}$ points in a direction perpendicular to the plane through $\mathbf{a}$ and $\mathbf{b}$, given by the **right-hand rule**: if the fingers of the right hand curl in the direction of a rotation (through an angle less than $180^\circ$) from $\mathbf{a}$ to $\mathbf{b}$, the thumb points in the direction of $\mathbf{a} \times \mathbf{b}$.
 >
 > *Stewart: 12.4 (text)*
@@ -239,7 +239,7 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 ![[m233-83-1.svg]]
 *(a) The parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$ has base $|\mathbf{a}|$ and height $|\mathbf{b}|\sin\theta$, so its area is $|\mathbf{a} \times \mathbf{b}|$; the vector $\mathbf{a} \times \mathbf{b}$ itself points out of the page, perpendicular to the parallelogram. (b) The parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$: its base has area $|\mathbf{b} \times \mathbf{c}|$, and its height is the length of the projection of $\mathbf{a}$ onto the normal $\mathbf{b} \times \mathbf{c}$ (blue), which is $|\mathbf{a}||\cos\theta|$ ([[§97 Triple Products and Torque#^thm-97-2|Theorem §97.2]]).*
 
-> [!example] Example §113.2: Normal Vectors and Areas of Triangles
+> [!example] Example §96.2: Normal Vectors and Areas of Triangles
 > **(a)** Find a vector perpendicular to the plane through $P(1, 4, 6)$, $Q(-2, 5, -1)$ and $R(1, -1, 1)$, and the area of the triangle $PQR$.
 >
 > $\overrightarrow{PQ} \times \overrightarrow{PR}$ is perpendicular to both $\overrightarrow{PQ}$ and $\overrightarrow{PR}$ ([[§96 The Cross Product#^thm-96-2|Theorem §96.2]]), hence to the plane through $P$, $Q$, $R$. By [[§94 Vectors#^thm-94-2|Theorem §94.2]], $\overrightarrow{PQ} = \langle -3, 1, -7 \rangle$ and $\overrightarrow{PR} = \langle 0, -5, -5 \rangle$, and

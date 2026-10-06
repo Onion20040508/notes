@@ -19,7 +19,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - MATH 590 counterpart (same axioms, different order): [[§26 Algebra Prerequisites꞉ Groups#^def-26-1|590 Definition §26.1: Group]].
-> - A group with a compatible topology: [[§10 Topological Groups and Classical Matrix Groups#^def-10-1|591 Def. §10.1]] (topological group), the setting of the 591 matrix groups and actions.
+> - A group with a compatible topology: [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|591 Def. §11.1]] (topological group), the setting of the 591 matrix groups and actions.
 > - See also: the informal version in 451, written additively and stated only through inverses, as the step from the semigroup ℕ to ℤ: [[§2 The Set ℚ of Rational Numbers#^def-2-2|451 Def. §2.2]].
 
 > [!definition] Definition §1.2: Abelian Group

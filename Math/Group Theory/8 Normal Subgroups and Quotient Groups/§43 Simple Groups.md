@@ -42,7 +42,7 @@ tags: [group-theory, math493]
 
 ^pf-43-1
 
-*Uses:* [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]], [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§17 Cyclic Groups#^thm-17-1|§17.1]]
+*Uses:* [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]], [[§38 Normal Subgroups#^prop-38-1|§38.1]], [[§4 Subgroups#^prop-4-5|§4.5]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§17 Cyclic Groups#^thm-17-1|§17.1]]
 
 > [!theorem] Corollary §43.2: $S_n$ Is Not Simple for $n \geq 3$
 > For $n \geq 3$, $A_n$ is a proper nontrivial normal subgroup of $S_n$; hence $S_n$ is not simple.

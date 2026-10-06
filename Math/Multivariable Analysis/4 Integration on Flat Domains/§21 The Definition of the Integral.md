@@ -11,7 +11,7 @@ tags: [multivariable-analysis, math452]
 
 Now we define the integral of a function over a Jordan measurable set, analogous to Riemann integration in one dimension ([[§32 The Definition of the Riemann Integral|451 §32]]).
 
-> [!definition] Definition §36.2: Partition
+> [!definition] Definition §21.1: Partition
 > Let $D \subseteq \mathbb{R}^2$ be a bounded, Jordan measurable set. A **partition** of $D$ is a finite collection:
 >
 > $$

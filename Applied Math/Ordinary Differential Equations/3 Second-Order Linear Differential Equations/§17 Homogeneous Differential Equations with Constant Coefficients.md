@@ -15,7 +15,7 @@ A second-order equation is linear when it has the form $y'' + p(t)y' + q(t)y = g
 
 ## Linear Second-Order Equations
 
-> [!definition] Definition §21.2: Linear Second-Order Equation
+> [!definition] Definition §17.1: Linear Second-Order Equation
 > A second-order ordinary differential equation has the form
 >
 > $$
@@ -86,7 +86,7 @@ A second-order equation is linear when it has the form $y'' + p(t)y' + q(t)y = g
 
 The homogeneous equation is the fundamental one: once it is solved, the nonhomogeneous equation can always be solved, or at least its solution expressed by an integral ([[§21 Nonhomogeneous Equations; Method of Undetermined Coefficients|§21]] and [[§22★ Variation of Parameters|§22★]]). Equation (8) can always be solved with elementary functions. With variable coefficients (7) is much harder; BDP treats it in Chapter 5 (series solutions), which MATH 331 did not cover.
 
-> [!example] Example §21.1: A First Example
+> [!example] Example §17.1: A First Example
 > Solve $y'' - y = 0$, and find the solution with $y(0) = 2$, $y'(0) = -1$.
 >
 > This is (8) with $a = 1$, $b = 0$, $c = -1$: we want functions equal to their own second derivative. Two come to mind, $y_1(t) = e^t$ and $y_2(t) = e^{-t}$. Constant multiples of them are solutions too, and so is any sum
@@ -122,7 +122,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 ^def-17-4
 
-> [!theorem] Theorem §21.1: Exponential Solutions
+> [!theorem] Theorem §17.1: Exponential Solutions
 > The function $y = e^{rt}$ is a solution of $ay'' + by' + cy = 0$ if and only if $r$ is a root of the characteristic equation $ar^2 + br + c = 0$.
 >
 > *BDP: 3.1 (text)*
@@ -149,7 +149,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 ## Distinct Real Roots
 
-> [!theorem] Theorem §21.2: Distinct Real Roots
+> [!theorem] Theorem §17.2: Distinct Real Roots
 > Let the characteristic equation $ar^2 + br + c = 0$ have real roots $r_1 \ne r_2$. Then
 >
 > $$
@@ -206,7 +206,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 ^rem-17-1
 
-> [!example] Example §21.2: Two Decaying Exponentials
+> [!example] Example §17.2: Two Decaying Exponentials
 > **(a)** Find the general solution of $y'' + 5y' + 6y = 0$.
 >
 > With $y = e^{rt}$, $r$ must satisfy $r^2 + 5r + 6 = (r + 2)(r + 3) = 0$, so $r_1 = -2$, $r_2 = -3$, and by [[§17 Homogeneous Differential Equations with Constant Coefficients#^thm-17-2|Theorem §17.2]]
@@ -235,7 +235,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 ^ex-17-2
 
-> [!example] Example §21.3: An Exam Initial Value Problem
+> [!example] Example §17.3: An Exam Initial Value Problem
 > Find the solution of $y'' + 3y' - 10y = 0$ with $y(0) = 3$ and $y'(0) = 5$.
 >
 > The characteristic equation $r^2 + 3r - 10 = (r + 5)(r - 2) = 0$ has roots $2$ and $-5$, so $y = c_1e^{2t} + c_2e^{-5t}$ and $y' = 2c_1e^{2t} - 5c_2e^{-5t}$. The initial conditions give
@@ -256,7 +256,7 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 ^ex-17-3
 
-> [!example] Example §21.4: Choosing the Initial Slope
+> [!example] Example §17.4: Choosing the Initial Slope
 > Consider $y'' + y' - 2y = 0$, $y(0) = 2$, $y'(0) = \beta$.
 >
 > **(a)** For which $\beta$ does $\lim_{t\to\infty} y(t) = 0$?

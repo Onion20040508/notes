@@ -17,7 +17,7 @@ The second half of BDP 2.6, continuing [[§11 Exact Differential Equations and I
 
 An equation that is not exact can sometimes be made exact by multiplying it by a suitable **integrating factor**, which is how linear equations were solved in [[§5 Linear Differential Equations; Method of Integrating Factors#^def-5-2|Definition §5.2]] and [[§5 Linear Differential Equations; Method of Integrating Factors#^thm-5-2|Theorem §5.2]].
 
-> [!definition] Definition §15.3: Integrating Factor
+> [!definition] Definition §12.1: Integrating Factor
 > A function $\mu(x, y)$ is an **integrating factor** for the equation
 >
 > $$
@@ -36,7 +36,7 @@ An equation that is not exact can sometimes be made exact by multiplying it by a
 
 ^def-12-1
 
-> [!theorem] Proposition §15.1: The Equation for an Integrating Factor
+> [!theorem] Proposition §12.1: The Equation for an Integrating Factor
 > Let $M$, $N$, $\mu$ and their first partial derivatives be continuous on a rectangle $R$. Then $\mu$ is an integrating factor for (23) on $R$ if and only if
 >
 > $$
@@ -64,7 +64,7 @@ An equation that is not exact can sometimes be made exact by multiplying it by a
 
 A partial differential equation such as (26) may have more than one solution, and any of them may be used as an integrating factor ([[§12 Integrating Factors for Nonexact Equations#^ex-12-1|Example §12.1]]). But (26) is ordinarily at least as hard to solve as the original equation (23), so integrating factors can be found in practice only in special cases. The most important are those where $\mu$ depends on only one of the variables.
 
-> [!theorem] Proposition §15.2: Integrating Factors Depending on One Variable
+> [!theorem] Proposition §12.2: Integrating Factors Depending on One Variable
 > (a) If $(M_y - N_x)/N$ is a function of $x$ only, then (23) has an integrating factor $\mu(x)$ that depends on $x$ only, found by solving
 >
 > $$
@@ -99,9 +99,8 @@ A partial differential equation such as (26) may have more than one solution, an
 >
 > If neither quotient depends on a single variable, an integrating factor may still exist (any solution of (26)), but there is no general way to find one.
 
-^rem-12-3
-
-> [!example] Example §15.1: An Integrating Factor Depending on x
+^rem-12-1
+> [!example] Example §12.1: An Integrating Factor Depending on x
 > Show that the equation
 >
 > $$

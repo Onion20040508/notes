@@ -15,7 +15,7 @@ Trigonometric identities turn products of powers of trigonometric functions into
 
 ## Integrals of Powers of Sine and Cosine
 
-> [!theorem] Theorem §60.1: Half-Angle Identities
+> [!theorem] Theorem §52.1: Half-Angle Identities
 > For all $x$,
 >
 > $$
@@ -63,7 +63,7 @@ The home of these identities is [[§142 Trigonometry#^cor-142-9|Corollary §142.
 
 Why save exactly one factor: $u = \sin x$ needs $du = \cos x\,dx$, and one $\cos x$ is all it needs. An even power of cosine left over converts to sine. If the power of cosine were even, saving one factor would leave an odd power, which does not convert.
 
-> [!example] Example §60.1: Odd Powers
+> [!example] Example §52.1: Odd Powers
 > **(a)** Evaluate $\displaystyle\int \cos^3 x\,dx$. **(b)** Find $\displaystyle\int \sin^5 x \cos^2 x\,dx$.
 >
 > **(a)** $u = \cos x$ is no help, since $du = -\sin x\,dx$ and there is no factor $\sin x$. Instead separate one cosine factor (step 1, $m = 0$, $k = 1$): $\cos^3 x = \cos^2 x \cdot \cos x = (1 - \sin^2 x)\cos x$. With $u = \sin x$, $du = \cos x\,dx$,
@@ -91,7 +91,7 @@ Why save exactly one factor: $u = \sin x$ needs $du = \cos x\,dx$, and one $\cos
 
 ^ex-52-1
 
-> [!example] Example §60.2: Even Powers
+> [!example] Example §52.2: Even Powers
 > **(a)** Evaluate $\displaystyle\int_0^\pi \sin^2 x\,dx$. **(b)** Find $\displaystyle\int \sin^4 x\,dx$. **(c)** Find the area enclosed by the polar curve $r = 2\sin\theta$.
 >
 > **(a)** Writing $\sin^2 x = 1 - \cos^2 x$ gives an integral that is no easier. The half-angle identity does it (with the mental substitution $u = 2x$ for $\int \cos 2x\,dx$):
@@ -157,7 +157,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 
 ^rem-52-2
 
-> [!example] Example §60.3: Even Secant, Odd Tangent
+> [!example] Example §52.3: Even Secant, Odd Tangent
 > **(a)** Evaluate $\displaystyle\int \tan^6 x \sec^4 x\,dx$. **(b)** Find $\displaystyle\int \tan^5\theta \sec^7\theta\,d\theta$.
 >
 > **(a)** The power of secant is even (step 1). Separate one $\sec^2 x$ and write the other as $1 + \tan^2 x$; with $u = \tan x$, $du = \sec^2 x\,dx$,
@@ -183,7 +183,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 
 ^ex-52-3
 
-> [!theorem] Theorem §60.2: Integral of Tangent
+> [!theorem] Theorem §52.2: Integral of Tangent
 > $$
 > \int \tan x\,dx = \ln|\sec x| + C .
 > $$
@@ -205,7 +205,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 
 This is [[§43 The Substitution Rule#^thm-43-2|Theorem §43.2]], where the formula is first proved (Stewart's Example 5.5.6); Stewart restates it here next to the integral of secant.
 
-> [!theorem] Theorem §60.3: Integral of Secant
+> [!theorem] Theorem §52.3: Integral of Secant
 > $$
 > \int \sec x\,dx = \ln|\sec x + \tan x| + C . \qquad (1)
 > $$
@@ -229,7 +229,7 @@ This is [[§43 The Substitution Rule#^thm-43-2|Theorem §43.2]], where the formu
 
 James Gregory found Formula 1 in 1668, while solving a problem in constructing nautical tables.
 
-> [!example] Example §60.4: The Integral of Secant Cubed
+> [!example] Example §52.4: The Integral of Secant Cubed
 > Find $\displaystyle\int \sec^3 x\,dx$.
 >
 > Integrate by parts ([[§51 Integration by Parts#^thm-51-1|Theorem §51.1]]) with

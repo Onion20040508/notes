@@ -21,7 +21,7 @@ tags: [topology, hub]
 - [[§23 Separation Axioms#^lem-23-2|Lemma §23.2: Closure Characterization]]
 
 ## Used in (Differentiable Manifolds)
-- [[§36 Embeddings#^prop-36-4|Proposition §36.4: Proper Maps into Manifolds Are Closed]]
+- [[§38 Embeddings#^prop-38-4|Proposition §38.4: Proper Maps into Manifolds Are Closed]]
 
 ## Connections
 - **Intuition.** It makes precise the idea that the closure consists of the points reachable by limits from A ([[§8 Interior and Closure#^rem-8-2|Room to Wiggle and Reachable by Limits]]).

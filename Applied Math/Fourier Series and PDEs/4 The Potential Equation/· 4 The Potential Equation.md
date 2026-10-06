@@ -9,9 +9,9 @@ tags: [chapter, fourier-series-and-pdes]
 
 *Powers, Chapter 4.*
 
-**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (5), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (8), [[· 2 The Heat Equation|2 The Heat Equation]] (6), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
+**Builds on:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (5), [[· 1 Fourier Series and Integrals|1 Fourier Series and Integrals]] (9), [[· 2 The Heat Equation|2 The Heat Equation]] (6), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (1)
 **Used by:** [[· 0★ Ordinary Differential Equations Review|0★ Ordinary Differential Equations Review]] (1), [[· 5 Higher Dimensions and Other Coordinates|5 Higher Dimensions and Other Coordinates]] (4), [[· 7★ Numerical Methods|7★ Numerical Methods]] (1)
-**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11), [[Applied Linear Algebra]] (2), [[Calculus]] (4), [[Complex Variables]] (28)
+**Developed further in (other subjects):** [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (11), [[Applied Linear Algebra]] (2), [[Calculus]] (4), [[Complex Variables]] (30)
 
 ## Sections
 - [[§44 Potential Equation]] — Powers 4.1
@@ -19,14 +19,15 @@ tags: [chapter, fourier-series-and-pdes]
 - [[§46 Further Examples for a Rectangle]] — Powers 4.3
 - [[§47 Potential in Unbounded Regions]] — Powers 4.4
 - [[§48 Potential in a Disk]] — Powers 4.5
+- [[§49 The Poisson Integral Formula and the Mean Value Property]] — Powers 4.5
 - [[§50★ Classification and Limitations]] — Powers 4.6 ★
 
 ## Central results
-- [[Laplacian in Polar Coordinates]] (§35.3)
-- [[Dirichlet Problem in a Disk]] (§39.2)
-- [[Poisson Integral Formula]] (§39.3)
-- [[Mean Value Property of Harmonic Functions]] (§39.4)
-- [[Maximum Principle for Laplace's Equation]] (§39.5)
+- [[Laplacian in Polar Coordinates]] (§44.3)
+- [[Dirichlet Problem in a Disk]] (§48.2)
+- [[Poisson Integral Formula]] (§49.1)
+- [[Mean Value Property of Harmonic Functions]] (§49.2)
+- [[Maximum Principle for Laplace's Equation]] (§49.3)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

@@ -11,7 +11,7 @@ tags: [multivariable-analysis, math452]
 
 The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \lambda \nabla g$ (constrained) are **necessary** for an extremum, but not sufficient. A critical point could be a max, min, or saddle point. The Hessian test provides **sufficient** conditions.
 
-> [!definition] Definition §31.1: Hessian Matrix
+> [!definition] Definition §18.1: Hessian Matrix
 > For $f \in C^2$ near $(x_0, y_0)$, the **Hessian matrix** is:
 >
 > $$
@@ -36,7 +36,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 
 ^rem-18-8
 
-> [!definition] Definition §31.2: Positive Definite
+> [!definition] Definition §18.2: Positive Definite
 > A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
 > - **Positive definite** if $\mathbf{x}^T A \mathbf{x} > 0$ for all $\mathbf{x} \neq \mathbf{0}$.
 >
@@ -48,13 +48,13 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 
 ^def-18-2
 
-> [!definition] Definition §31.3: Negative Definite
+> [!definition] Definition §18.3: Negative Definite
 > A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
 > - **Negative definite** if $\mathbf{x}^T A \mathbf{x} < 0$ for all $\mathbf{x} \neq \mathbf{0}$.
 
 ^def-18-3
 
-> [!definition] Definition §31.4: Indefinite
+> [!definition] Definition §18.4: Indefinite
 > A symmetric matrix $A = \begin{pmatrix} a & b \\ b & c \end{pmatrix}$ is:
 > - **Indefinite** if $\mathbf{x}^T A \mathbf{x}$ takes both positive and negative values.
 
@@ -65,7 +65,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 > - By the [[Real spectral theorem|real spectral theorem]] (LADR 7.29), definiteness is read off from the signs of the eigenvalues of $A$.
 > - Computational version for n × n matrices: [[§59★ Quadratic Forms#^def-59-4|235 Def. §59.4]], with definiteness read off from eigenvalues in [[§59★ Quadratic Forms#^thm-59-4|235 Thm. §59.4]] (worked classifications).
 
-> [!theorem] Theorem §31.1: Second-Order Sufficient Conditions — Unconstrained
+> [!theorem] Theorem §18.1: Second-Order Sufficient Conditions — Unconstrained
 > Let $f \in C^2(B_\varepsilon(x_0, y_0))$ with $f_x(x_0, y_0) = f_y(x_0, y_0) = 0$ (critical point).
 >
 > Let $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pmatrix}$ be the Hessian at $(x_0, y_0)$.

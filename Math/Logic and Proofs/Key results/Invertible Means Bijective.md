@@ -13,9 +13,9 @@ tags: [logic-and-proofs, hub]
 ## Its proof uses
 - [[§8 Functions#^def-8-4|Definition §8.4: Equality of Functions]]
 - [[§9 Injections, Surjections and Bijections#^def-9-1|Definition §9.1: Injection]]
+- [[§9 Injections, Surjections and Bijections#^prop-9-1|Proposition §9.1: Injectivity and Surjectivity by Counting Pre-images]]
 - [[§9 Injections, Surjections and Bijections#^def-9-2|Definition §9.2: Surjection]]
 - [[§9 Injections, Surjections and Bijections#^def-9-3|Definition §9.3: Bijection]]
-- [[§9 Injections, Surjections and Bijections#^prop-9-1|Proposition §9.1: Injectivity and Surjectivity by Counting Pre-images]]
 - [[§9 Injections, Surjections and Bijections#^def-9-5|Definition §9.5: Invertible Function; Inverse]]
 
 ## Used in (Logic and Proofs)

@@ -11,7 +11,7 @@ tags: [fourier-series-and-pdes, hub]
 - [[§38 Solution of the Vibrating String Problem#^thm-38-2|Theorem §38.2: Series Solution of the Vibrating String Problem]], in [[§38 Solution of the Vibrating String Problem]]
 
 ## Its proof uses
-- [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-3|Definition §11.3: Half-Range Expansions; Fourier Sine and Cosine Series]]
+- [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-4|Definition §11.4: Fourier Sine Series]]
 - [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1: Convergence of Fourier Series]]
 - [[§38 Solution of the Vibrating String Problem#^prop-38-1|Proposition §38.1: Standing Waves Solve the Homogeneous Problem]]
 

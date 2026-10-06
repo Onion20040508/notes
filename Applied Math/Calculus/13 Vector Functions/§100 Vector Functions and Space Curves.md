@@ -15,7 +15,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ## Vector-Valued Functions
 
-> [!definition] Definition §117.1: Vector Function
+> [!definition] Definition §100.1: Vector Function
 > A **vector-valued function**, or **vector function**, is a function whose domain is a set of real numbers and whose range is a set of vectors. For a vector function $\mathbf{r}$ with values in $V_3$, each number $t$ in the domain is assigned a unique vector $\mathbf{r}(t)$. If $f(t)$, $g(t)$, $h(t)$ are the components of $\mathbf{r}(t)$, the real-valued functions $f$, $g$, $h$ are the **component functions** of $\mathbf{r}$, and
 >
 > $$
@@ -46,7 +46,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 > [!remark]- Connections
 > - Stewart notes (Exercise 62) that this is equivalent to the $\varepsilon$–$\delta$ condition: for every $\varepsilon > 0$ there is $\delta > 0$ with $|\mathbf{r}(t) - \mathbf{L}| < \varepsilon$ whenever $0 < |t - a| < \delta$. That is the definition of a limit with the Euclidean distance on the target, as in [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] and [[§1 Sequences and Limits in ℝⁿ#^def-1-1|452 Def. §1.1]]. Since each $|r_i - L_i| \le |\mathbf{r} - \mathbf{L}| \le |r_1 - L_1| + |r_2 - L_2| + |r_3 - L_3|$, convergence of the vector is the same as convergence of each component. Geometrically, the length and direction of $\mathbf{r}(t)$ approach those of $\mathbf{L}$.
 
-> [!theorem] Theorem §117.1: Limit Laws for Vector Functions
+> [!theorem] Theorem §100.1: Limit Laws for Vector Functions
 > Suppose $\mathbf{u}$ and $\mathbf{v}$ have limits as $t \to a$, and $c$ is a constant. Then
 >
 > $$
@@ -84,7 +84,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ^def-100-3
 
-> [!theorem] Proposition §117.2: Continuity Is Componentwise
+> [!theorem] Proposition §100.2: Continuity Is Componentwise
 > $\mathbf{r} = \langle f, g, h \rangle$ is continuous at $a$ if and only if its component functions $f$, $g$ and $h$ are continuous at $a$.
 >
 > *Stewart: 13.1 (text)*
@@ -98,7 +98,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 *Uses:* [[§100 Vector Functions and Space Curves#^def-100-2|Def. §100.2]], [[§100 Vector Functions and Space Curves#^def-100-3|Def. §100.3]], [[§12 Continuity#^def-12-1|Def. §12.1]]
 
-> [!example] Example §117.1: Domains and Limits
+> [!example] Example §100.1: Domains and Limits
 > **(a)** The component functions of $\mathbf{r}(t) = \langle t^3, \ln(3 - t), \sqrt t \rangle$ are $f(t) = t^3$, $g(t) = \ln(3 - t)$, $h(t) = \sqrt t$. They are all defined when $3 - t > 0$ and $t \ge 0$, so the domain of $\mathbf{r}$ is $[0, 3)$.
 >
 > **(b)** Find $\lim_{t \to 0}\mathbf{r}(t)$ for $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \dfrac{\sin t}{t}\,\mathbf{k}$. By [[§100 Vector Functions and Space Curves#^def-100-2|Definition §100.2]],
@@ -141,7 +141,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ^def-100-4
 
-> [!example] Example §117.2: Recognizing Curves
+> [!example] Example §100.2: Recognizing Curves
 > **(a)** $\mathbf{r}(t) = \langle 1 + t, 2 + 5t, -1 + 6t \rangle$ has parametric equations $x = 1 + t$, $y = 2 + 5t$, $z = -1 + 6t$: the line through $(1, 2, -1)$ parallel to $\langle 1, 5, 6 \rangle$ ([[§98 Equations of Lines and Planes#^prop-98-2|Proposition §98.2]]). Equivalently, $\mathbf{r} = \mathbf{r}_0 + t\mathbf{v}$ with $\mathbf{r}_0 = \langle 1, 2, -1 \rangle$ and $\mathbf{v} = \langle 1, 5, 6 \rangle$.
 >
 > **(b)** Sketch $\mathbf{r}(t) = \cos t\,\mathbf{i} + \sin t\,\mathbf{j} + t\,\mathbf{k}$. The parametric equations are $x = \cos t$, $y = \sin t$, $z = t$. Since $x^2 + y^2 = \cos^2 t + \sin^2 t = 1$ for all $t$, the curve lies on the circular cylinder $x^2 + y^2 = 1$. The point $(x, y, z)$ lies directly above $(x, y, 0)$, which moves counterclockwise around the unit circle in the $xy$-plane, while $z = t$ increases. So the curve spirals upward around the cylinder: it is a **helix**, rising $2\pi$ per turn.
@@ -161,7 +161,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ^rem-100-1
 
-> [!example] Example §117.3: Finding Parametrizations
+> [!example] Example §100.3: Finding Parametrizations
 > **(a)** The line segment from $P(1, 3, -2)$ to $Q(2, -1, 3)$: by [[§98 Equations of Lines and Planes#^prop-98-4|Proposition §98.4]] with $\mathbf{r}_0 = \langle 1, 3, -2 \rangle$, $\mathbf{r}_1 = \langle 2, -1, 3 \rangle$,
 >
 > $$
@@ -194,7 +194,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 ![[m233-86-1.svg]]
 *(a) The helix of [[§100 Vector Functions and Space Curves#^ex-100-2|Example §100.2]](b) winds up the cylinder $x^2 + y^2 = 1$, passing $(1, 0, 0)$ at $t = 0$ and $(0, 1, \pi/2)$ at $t = \pi/2$. (b) [[§100 Vector Functions and Space Curves#^ex-100-3|Example §100.3]](b): the slanted plane $y + z = 2$ (green) cuts the cylinder in an ellipse (red). The points $(1, 0, 2)$, $(0, 1, 1)$, $(-1, 0, 2)$, $(0, -1, 3)$ correspond to $t = 0, \pi/2, \pi, 3\pi/2$.*
 
-> [!example] Example §117.4: Do Two Curves Meet?
+> [!example] Example §100.4: Do Two Curves Meet?
 > **(a)** Do $\mathbf{r}_1(t) = \langle t^2 - 2, 7t, t^3 - 1 \rangle$ and $\mathbf{r}_2(s) = \langle 1 + 2s, 6 + 5s, 4 + 3s \rangle$ intersect?
 >
 > The curves may pass through a common point at *different* parameter values, so use two parameters and solve $\mathbf{r}_1(t) = \mathbf{r}_2(s)$:

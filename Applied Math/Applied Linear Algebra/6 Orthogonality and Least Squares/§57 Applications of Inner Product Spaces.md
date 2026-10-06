@@ -213,7 +213,7 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 *Uses:* [[§56 Inner Product Spaces#^ex-56-4|Ex. §56.4]] (the inner product (6))
 
 > [!remark]- Connections
-> - The same system normalized on $[-\pi, \pi]$ is Axler's orthonormal list [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form $e^{int}/\sqrt{2\pi}$ it is the Fourier basis of $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]].
+> - The same system normalized on $[-\pi, \pi]$ is Axler's orthonormal list [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d); in complex form $e^{int}/\sqrt{2\pi}$ it is the Fourier basis of $L^2[0, 2\pi]$, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]].
 > - See also: [[§9 Periodic Functions and Fourier Series#^prop-9-3|341 Prop. §9.3]] (the same relations on $(-\pi, \pi)$, the starting point of Fourier series).
 
 > [!definition] Definition §57.4: Fourier Approximation; Fourier Coefficients
@@ -312,10 +312,10 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 
 ^thm-57-4
 
-*Lay omits the proof ("it can be shown"). It is the completeness of the trigonometric system in $L^2[0, 2\pi]$, [[§24 Orthonormal Sets and Bases#^thm-24-11|556 Thm. §24.11]], combined with [[§24 Orthonormal Sets and Bases#^thm-24-8|556 Thm. §24.8]] (the $n$th-order Fourier approximation of a real $f$ is the partial sum $\sum_{|k| \le n} (f, e_k)e_k$ of its expansion in the basis $e_k = e^{ikt}/\sqrt{2\pi}$, and these partial sums converge to $f$ in norm); the completeness itself is quoted there without proof as well (via Fejér's theorem).*
+*Lay omits the proof ("it can be shown"). It is the completeness of the trigonometric system in $L^2[0, 2\pi]$, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]], combined with [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]] (the $n$th-order Fourier approximation of a real $f$ is the partial sum $\sum_{|k| \le n} (f, e_k)e_k$ of its expansion in the basis $e_k = e^{ikt}/\sqrt{2\pi}$, and these partial sums converge to $f$ in norm); the completeness itself is quoted there without proof as well (via Fejér's theorem).*
 
 > [!remark]- Connections
-> - Fourier series in $L^2$, with Parseval's equality $\int_0^{2\pi}|f|^2 = \sum |c_n|^2$: [[§24 Orthonormal Sets and Bases#^rem-24-9|556 Remark: Fourier Series]]; the finite Bessel inequality $\|\operatorname{proj}_W f\| \le \|f\|$ ([[§56 Inner Product Spaces#^prop-56-3|Proposition §56.3]] here) is [[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lem. §24.2]].
+> - Fourier series in $L^2$, with Parseval's equality $\int_0^{2\pi}|f|^2 = \sum |c_n|^2$: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]]; the finite Bessel inequality $\|\operatorname{proj}_W f\| \le \|f\|$ ([[§56 Inner Product Spaces#^prop-56-3|Proposition §56.3]] here) is [[§27 Orthonormal Sets and Bases#^lem-27-2|556 Lem. §27.2]].
 > - Convergence in the mean does not give convergence at every point: in the figure after [[§57 Applications of Inner Product Spaces#^ex-57-3|Example §57.3]] the approximations of $t$ miss the endpoint values $0$ and $2\pi$.
 > - See also: [[§15★ Mean Error and Convergence in Mean#^thm-15-6|341 Thm. §15.6]] (convergence in the mean for every $f$ with $\int f^2$ finite, from the minimum error in [[§15★ Mean Error and Convergence in Mean#^thm-15-2|341 Thm. §15.2]]), with Parseval's equality, [[§15★ Mean Error and Convergence in Mean#^thm-15-4|341 Thm. §15.4]].
 

@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definition and Basis
 
-> [!definition] Definition §12.1: Product Topology on Arbitrary Products
+> [!definition] Definition §11.1: Product Topology on Arbitrary Products
 > The **product topology** on $\prod_{\alpha \in J} X_\alpha$, where each $X_\alpha$ is a topological space, is the topology with basis consisting of all subsets of the form $\prod_{\alpha \in J} U_\alpha$, where:
 >
 > - $U_\alpha \subseteq X_\alpha$ is open for each $\alpha$
@@ -41,7 +41,7 @@ tags: [topology, math590]
 
 ## Continuity and Product Topology
 
-> [!theorem] Theorem §12.1: Continuity into Product Spaces
+> [!theorem] Theorem §11.1: Continuity into Product Spaces
 > Let $A$ be a topological space. Let $f: A \to \prod_{\alpha \in J} X_\alpha$ be given by $f(a) = (f_\alpha(a))_{\alpha \in J}$, where $f_\alpha: A \to X_\alpha$ is a map. Then $f$ is continuous if and only if $f_\alpha$ is continuous for all $\alpha \in J$.
 
 ^thm-11-1
@@ -75,7 +75,7 @@ tags: [topology, math590]
 > - Used for products of paths: [[§16 Connected Subspaces of ℝ#^thm-16-5|Product of Path-Connected Spaces]], and for products of quotient maps: [[§13 Quotient Topology#^thm-13-5|Theorem §13.5]].
 > - For two factors, 591 proves this as the universal property of the product and shows that it characterizes the product topology: [[§3 Subspaces and Products#^thm-3-10|591 Thm. §3.10]], [[§3 Subspaces and Products#^cor-3-11|591 Cor. §3.11]].
 
-> [!example] Example §12.1: $\mathbb{R}^\omega$
+> [!example] Example §11.1: $\mathbb{R}^\omega$
 > Define $\mathbb{R}^\omega = \mathbb{R} \times \mathbb{R} \times \cdots = \prod_{n \in \mathbb{Z}_{>0}} X_n$, where $X_n = \mathbb{R}$.
 >
 > Let $f: \mathbb{R} \to \mathbb{R}^\omega$ given by $f(t) = (t, t, \ldots, \ldots)$. This is continuous when we endow $\mathbb{R}^\omega$ with product topology because $f_n(t) = t$ is continuous for each $n$ ([[§11 Product Topology on Arbitrary Products#^thm-11-1|Theorem §11.1]]).
@@ -84,7 +84,7 @@ tags: [topology, math590]
 
 ## Box Topology
 
-> [!definition] Definition §12.2: Box Topology
+> [!definition] Definition §11.2: Box Topology
 > The **box topology** on $\prod_{\alpha \in J} X_\alpha$ is the topology with basis given by $\prod_{\alpha \in J} U_\alpha$, where $U_\alpha \subseteq X_\alpha$ is open (with no finiteness restriction).
 
 ^def-11-2
@@ -101,7 +101,7 @@ tags: [topology, math590]
 
 ^rem-11-3
 
-> [!example] Example §12.2: $f: \mathbb{R} \to \mathbb{R}^\omega$ Not Continuous in Box Topology
+> [!example] Example §11.2: $f: \mathbb{R} \to \mathbb{R}^\omega$ Not Continuous in Box Topology
 > The map $f: \mathbb{R} \to \mathbb{R}^\omega$, $f(t) = (t, t, \ldots)$ is **not** continuous when $\mathbb{R}^\omega$ is endowed with the box topology.
 >
 > Consider $U = \prod_{n \in \mathbb{Z}_{>0}} \left(-\frac{1}{n}, \frac{1}{n}\right) = (-1, 1) \times \left(-\frac{1}{2}, \frac{1}{2}\right) \times \cdots \subseteq \mathbb{R}^\omega$, which is open in the box topology.

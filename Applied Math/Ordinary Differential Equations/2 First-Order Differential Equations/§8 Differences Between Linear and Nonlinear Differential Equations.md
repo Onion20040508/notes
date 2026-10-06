@@ -15,7 +15,7 @@ So far every initial value problem had exactly one solution, given by a formula.
 
 ## Existence and Uniqueness of Solutions
 
-> [!theorem] Theorem §9.1: Existence and Uniqueness for First-Order Linear Equations
+> [!theorem] Theorem §8.1: Existence and Uniqueness for First-Order Linear Equations
 > If the functions $p$ and $g$ are continuous on an open interval $I\colon \alpha < t < \beta$ containing the point $t = t_0$, then there exists a unique function $y = \phi(t)$ that satisfies the differential equation
 >
 > $$
@@ -71,7 +71,7 @@ The theorem asserts both the *existence* and the *uniqueness* of the solution, a
 
 Choosing the lower limit of integration to be $t_0$ in both integrals makes the formula ready for the initial condition.
 
-> [!theorem] Proposition §9.2: The Solution Formula for a Linear Initial Value Problem
+> [!theorem] Proposition §8.2: The Solution Formula for a Linear Initial Value Problem
 > Let $p$ and $g$ be continuous on $I$, and let
 >
 > $$
@@ -116,7 +116,7 @@ $$
 
 ^rem-8-1
 
-> [!theorem] Corollary §9.3: Solution Curves Do Not Cross
+> [!theorem] Corollary §8.3: Solution Curves Do Not Cross
 > If $f$ and $\partial f/\partial y$ are continuous on a rectangle $R$, then the graphs of two different solutions of $y' = f(t, y)$ in $R$ cannot intersect. The same holds for two different solutions of the linear equation (1) on an interval where $p$ and $g$ are continuous.
 >
 > *BDP: 2.4 (text)*
@@ -135,7 +135,7 @@ $$
 > [!remark]- Connections
 > - Stewart quotes this uniqueness theorem without proof and uses it the same way, to show that solution curves do not cross: [[§68 Separable Equations#^rem-68-2|Calc Remark: Solution Curves Do Not Cross]].
 
-> [!example] Example §9.1: Where a Linear Problem Has a Solution
+> [!example] Example §8.1: Where a Linear Problem Has a Solution
 > Use [[§8 Differences Between Linear and Nonlinear Differential Equations#^thm-8-1|Theorem §8.1]] to find an interval in which the initial value problem
 >
 > $$
@@ -170,7 +170,7 @@ $$
 
 ^ex-8-1
 
-> [!example] Example §9.2: A Nonlinear Problem With and Without a Unique Solution
+> [!example] Example §8.2: A Nonlinear Problem With and Without a Unique Solution
 > Apply Theorem 2.4.2 to the initial value problem
 >
 > $$
@@ -213,7 +213,7 @@ $$
 
 ^ex-8-2
 
-> [!example] Example §10.1: Infinitely Many Solutions of One Initial Value Problem
+> [!example] Example §8.3: Infinitely Many Solutions of One Initial Value Problem
 > Consider
 >
 > $$
@@ -259,7 +259,7 @@ By [[§8 Differences Between Linear and Nonlinear Differential Equations#^thm-8-
 
 For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval is much harder to find. The solution $y = \phi(t)$ exists as long as the point $(t, \phi(t))$ remains in a region where the hypotheses hold; this is what determines $h$ (in [[§14 The Existence and Uniqueness Theorem|§14]], $h = \min(a, b/M)$, [[§14 The Existence and Uniqueness Theorem#^lem-14-4|Lemma §14.4]]). But $\phi$ is usually not known, so it may be impossible to locate $(t, \phi(t))$ with respect to that region, and the interval may have no simple relation to $f$.
 
-> [!example] Example §10.2: The Interval Depends on the Initial Value
+> [!example] Example §8.4: The Interval Depends on the Initial Value
 > **(a)** Solve the initial value problem
 >
 > $$
@@ -314,7 +314,7 @@ For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval
 
 For a first-order linear equation a solution containing one arbitrary constant contains all solutions ((7), by [[§8 Differences Between Linear and Nonlinear Differential Equations#^thm-8-1|Theorem §8.1]]). For nonlinear equations this may fail: a formula with an arbitrary constant may miss some solutions.
 
-> [!definition] Definition §9.1: General Solution
+> [!definition] Definition §8.1: General Solution
 > A **general solution** of a first-order differential equation is an expression containing one arbitrary constant from which *all* solutions follow by specifying the constant (as for $y' = ay - b$ in [[§2 Solutions of Some Differential Equations#^def-2-2|Definition §2.2]]). BDP uses the term only for linear equations, where (7) is a general solution.
 >
 > For nonlinear equations a one-parameter family of solutions need not be a general solution. For $y' = y^2$ ([[§8 Differences Between Linear and Nonlinear Differential Equations#^ex-8-4|Example §8.4]]), the expression (22), $y = -1/(t + c)$, contains an arbitrary constant, but $y = 0$ for all $t$ is also a solution and is not obtained from (22) for any value of $c$. This could be anticipated: rewriting the equation in the form (21) required $y \ne 0$. Such "additional" solutions are common for nonlinear equations.
@@ -327,7 +327,7 @@ For a first-order linear equation a solution containing one arbitrary constant c
 
 For a linear problem, (8) gives the solution $y = \phi(t)$ explicitly: the value at any $t$ is found by substituting $t$, as long as the antiderivatives can be found. For nonlinear equations the best one can usually hope for is an equation relating $t$ and $y$.
 
-> [!definition] Definition §9.2: Integral; Implicit Solution
+> [!definition] Definition §8.2: Integral; Implicit Solution
 > An equation
 >
 > $$
@@ -362,7 +362,7 @@ Because exact solutions of nonlinear equations are so rarely available, methods 
 
 Sometimes a change of the dependent variable converts a nonlinear equation into a linear one. The most important case is the following.
 
-> [!definition] Definition §9.3: Bernoulli Equation
+> [!definition] Definition §8.3: Bernoulli Equation
 > An equation of the form
 >
 > $$
@@ -375,7 +375,7 @@ Sometimes a change of the dependent variable converts a nonlinear equation into 
 
 ^def-8-3
 
-> [!theorem] Proposition §9.4: The Bernoulli Substitution
+> [!theorem] Proposition §8.4: The Bernoulli Substitution
 > If $n \ne 0, 1$, the substitution $v = y^{1 - n}$ reduces the Bernoulli equation $y' + p(t)y = q(t)y^n$, on any interval where $y \ne 0$, to the linear equation
 >
 > $$

@@ -14,7 +14,7 @@ tags: [linear-algebra]
 ^ladr-9-68
 
 > [!remark]- Connections
-> - Same notion in 591, called a bilinear pairing: [[§20 Linear Algebra Toolkit#^def-20-4|591 Def. §20.4]]; a non-degenerate one identifies each space with the dual of the other, [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].
+> - Same notion in 591, called a bilinear pairing: [[§21 Linear Algebra Toolkit#^def-21-4|591 Def. §21.4]]; a non-degenerate one identifies each space with the dual of the other, [[§21 Linear Algebra Toolkit#^thm-21-5|591 Thm. §21.5]].
 
 > [!definition] Definition 9.68b: The vector space B(V, W)
 > $\mathcal{B}(V,W)$ is the vector space of bilinear functionals on $V\times W$; $\mathcal{B}(V,V)=V^{(2)}$.

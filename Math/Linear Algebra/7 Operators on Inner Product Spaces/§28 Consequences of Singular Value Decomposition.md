@@ -35,7 +35,7 @@ tags: [linear-algebra]
 > This operator norm generally does not come from an inner product on $\Lin(V,W)$ (it fails the parallelogram law, [[§20 Inner Products and Norms#^ladr-6-21|6.21]]). The Frobenius norm $\sqrt{\operatorname{tr}T^*T}$ does.
 
 > [!remark]- Connections
-> - Same as the operator norm in functional analysis ([[§26 Boundedness and Continuity#^def-26-2|556 Def. §26.2]]): there the max becomes a sup.
+> - Same as the operator norm in functional analysis ([[§30 Boundedness and Continuity#^def-30-2|556 Def. §30.2]]): there the max becomes a sup.
 
 > [!theorem] Theorem 7.87: Basic properties of norms of linear maps
 > For $S,T\in\Lin(V,W)$: (a) $\|T\|\ge0$; (b) $\|T\|=0\iff T=0$; (c) $\|\lambda T\|=|\lambda|\|T\|$; (d) $\|S+T\|\le\|S\|+\|T\|$.
@@ -49,7 +49,7 @@ tags: [linear-algebra]
 > $\|S-T\|$ is a distance on $\Lin(V,W)$; e.g. invertible operators come arbitrarily close to any $T$.
 
 > [!remark]- Connections
-> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§26 Boundedness and Continuity#^thm-26-5|556 Thm. §26.5]].
+> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§30 Boundedness and Continuity#^thm-30-5|556 Thm. §30.5]].
 
 > [!theorem] Theorem 7.88: Alternative formulas for ‖T‖
 > For $T\in\Lin(V,W)$:
@@ -68,7 +68,7 @@ tags: [linear-algebra]
 > (a) is the practical route: form $T^*T$, compute its largest eigenvalue numerically, take the square root.
 
 > [!remark]- Connections
-> - Parts (b) and (c) are [[§26 Boundedness and Continuity#^prop-26-1|556 Prop. §26.1]] (a) and (c), with max replaced by sup.
+> - Parts (b) and (c) are [[§30 Boundedness and Continuity#^prop-30-1|556 Prop. §30.1]] (a) and (c), with max replaced by sup.
 > - Computational version: [[§61★ The Singular Value Decomposition#^prop-61-2|235 Prop. §61.2]] (formula (b) for matrices, via [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] applied to $A^TA$).
 
 > [!example] Example 7.90: Norms (p. 283)

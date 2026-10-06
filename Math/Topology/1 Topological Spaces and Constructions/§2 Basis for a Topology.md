@@ -10,7 +10,7 @@ tags: [topology, math590]
 
 ## Definition of a Basis
 
-> [!definition] Definition §2.2: Basis for a Topology
+> [!definition] Definition §2.1: Basis for a Topology
 > If $X$ is a set, a **basis** for a topology on $X$ is a collection $\mathcal{B}$ of subsets of $X$ (called **basis elements**) such that:
 > 1. For each $x \in X$, there exists at least one basis element $B_x \in \mathcal{B}$ containing $x$.
 > 2. If $x \in B_1 \cap B_2$, where $B_1, B_2 \in \mathcal{B}$, then there exists $B_3 \in \mathcal{B}$ containing $x$ such that $B_3 \subseteq B_1 \cap B_2$.

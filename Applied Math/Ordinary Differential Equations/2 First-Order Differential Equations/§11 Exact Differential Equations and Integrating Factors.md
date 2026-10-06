@@ -15,7 +15,7 @@ An equation $M(x, y) + N(x, y)\,y' = 0$ is exact when its left side is the $x$-d
 
 ## Exact Equations
 
-> [!example] Example §14.1: Recognizing a Derivative
+> [!example] Example §11.1: Recognizing a Derivative
 > Solve the differential equation
 >
 > $$
@@ -52,7 +52,7 @@ An equation $M(x, y) + N(x, y)\,y' = 0$ is exact when its left side is the $x$-d
 
 ^ex-11-1
 
-> [!definition] Definition §14.1: Exact Differential Equation
+> [!definition] Definition §11.1: Exact Differential Equation
 > The differential equation
 >
 > $$
@@ -71,7 +71,7 @@ An equation $M(x, y) + N(x, y)\,y' = 0$ is exact when its left side is the $x$-d
 
 ^def-11-1
 
-> [!theorem] Proposition §14.1: Solutions of an Exact Equation
+> [!theorem] Proposition §11.1: Solutions of an Exact Equation
 > If (6) is exact, with $\psi$ as in (7) and $\psi$ continuously differentiable, then (6) is equivalent to
 >
 > $$
@@ -107,7 +107,7 @@ Whether the relation $\psi(x, y) = c$ really defines $y$ as a differentiable fun
 
 In [[§11 Exact Differential Equations and Integrating Factors#^ex-11-1|Example §11.1]] it was easy to see that the equation is exact and to find $\psi$. In general one needs a test for exactness and a way to construct $\psi$; the following theorem gives the first, and its proof the second.
 
-> [!theorem] Theorem §14.2: Test for Exactness
+> [!theorem] Theorem §11.2: Test for Exactness
 > Let the functions $M$, $N$, $M_y$ and $N_x$, where subscripts denote partial derivatives, be continuous in the rectangular region $R\colon \alpha < x < \beta$, $\gamma < y < \delta$. Then equation (6),
 >
 > $$
@@ -211,7 +211,7 @@ It is possible to write $\psi$ explicitly as integrals, as at the end of the pro
 
 ^rem-11-1
 
-> [!example] Example §14.2: An Exact Equation
+> [!example] Example §11.2: An Exact Equation
 > Solve the differential equation
 >
 > $$
