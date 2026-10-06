@@ -13,7 +13,7 @@ tags: [group-theory, hub]
 ## Its proof uses
 - [[§3 Basic Examples of Groups#^def-3-5|Definition §3.5: Symmetric Groups S_X and Sₙ]]
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
-- [[§10 Cycle Notation and the Group S₃#^def-10-1|Definition §10.1: Two-Line and Cycle Notation]]
+- [[§10 Cycle Notation and the Group S₃#^def-10-2|Definition §10.2: Cycle Notation]]
 - [[§11 Disjoint Cycle Decomposition#^def-11-1|Definition §11.1: Disjoint Cycles]]
 - [[§11 Disjoint Cycle Decomposition#^lem-11-2|Lemma §11.2: Disjoint Cycles Commute]]
 

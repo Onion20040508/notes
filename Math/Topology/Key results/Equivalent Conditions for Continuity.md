@@ -25,6 +25,6 @@ tags: [topology, hub]
 - [[§38 Embeddings#^prop-38-7|Proposition §38.7: Images of Embeddings Are Locally Closed]]
 
 ## Connections
-- **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§10 Continuous Functions#^ex-10-1|Example §10.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]] (§11.7).
+- **Generalizes ε-δ.** Condition (4) is the topological form of the ε-δ definition ([[§10 Continuous Functions#^ex-10-1|Example §10.1]]; MATH 451: [[§17 Continuous Functions#^thm-17-1|The Epsilon-Delta Characterization]]). It is recovered for metric spaces in [[§12 Metric Topology#^thm-12-7|ε-δ Characterization of Continuity]] (§12.7).
 - **Closed-set criterion.** Condition (3) is what proves the [[Pasting Lemma]].
 - **Sequences.** In metric spaces continuity is equivalent to preserving convergent sequences ([[§12 Metric Topology#^thm-12-9|Continuity and Sequences]], §11.9). The closure condition (2) rests on [[Closure Characterization]].

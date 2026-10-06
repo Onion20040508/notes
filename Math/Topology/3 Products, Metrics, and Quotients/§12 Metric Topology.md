@@ -52,7 +52,7 @@ tags: [topology, math590]
 ^def-12-2
 
 > [!remark]- Connections
-> - Balls of a norm, and interior points defined through them: [[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]].
+> - Balls of a norm, and interior points defined through them: [[§11 Normed Linear Spaces#^def-11-10|556 Def. §11.10]], [[§11 Normed Linear Spaces#^def-11-10|556 Def. §11.10]], [[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]].
 
 > [!definition] Definition §12.3: Metric Topology
 > If $d$ is a metric on $X$, then the collection of all $\varepsilon$-balls $B_d(x, \varepsilon)$, $x \in X$, $\varepsilon > 0$, is a basis for a topology on $X$, called the **metric topology** induced by $d$.

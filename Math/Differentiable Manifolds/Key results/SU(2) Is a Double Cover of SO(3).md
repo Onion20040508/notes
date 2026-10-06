@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 38.10", "SU(2) → SO(3) double cover", "spin double cover"]
+aliases: ["MATH 591 41.4", "SU(2) → SO(3) double cover", "spin double cover"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§41 SU(2) → SO(3)꞉ The Double Cover#^thm-41-4]]
@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
-- [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1: Quotient Space and Quotient Topology]]
+- [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1: Quotient Space]]
 - [[§5 Quotient Maps#^cor-5-2|Corollary §5.2: The Form Used in Practice]]
 - [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5: Real Projective Space]]
 - [[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3: The Hat Map]]

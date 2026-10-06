@@ -22,8 +22,11 @@ tags: [measure-theory, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-5|Theorem §26.5: The Subgraph Theorem]]
 - [[§35 Lᵖ as a Banach Space#^thm-35-14|Theorem §35.14: L^∞ is Not Separable]]
 
+## Used in (Functional Analysis)
+- [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: L^∞(E) is Not Separable]]
+
 ## Connections
 - **Proof idea.** Write ⋃Eₙ as the disjoint union of the increments E₁, E₂ ∖ E₁, E₃ ∖ E₂, … . Countable additivity ([[Lebesgue Measurable Sets Form a σ-Algebra]]) turns m(⋃Eₙ) into a limit of partial sums, and [[§11 Lebesgue Measurable Sets#^lem-11-2|finite additivity]] identifies the N-th partial sum with m(E_N).
-- **From above.** [[§13 Approximation and Continuity of Measure#^prop-13-5|Continuity from above]] (§11.13) follows by taking complements inside E₁, so it needs m(E₁) < ∞. Eₙ = [n, ∞) decreases to ∅ with every m(Eₙ) = ∞ ([[§13 Approximation and Continuity of Measure#^rem-13-5|Rem. §11.5]]). This form drives [[Egorov's Theorem]].
-- **Integral analogues.** It gives [[§20 The Lebesgue Integral for Simple Functions#^lem-20-6|Lemma §20.6]], which is the key step of the [[Monotone Convergence Theorem (Lebesgue)]]. The decreasing [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|MCT]] (§14.14) needs ∫f_{k₀} < ∞, just as continuity from above needs m(E₁) < ∞ ([[§21 Consequences of the Monotone Convergence Theorem#^rem-21-5|Rem. §14.5]]).
+- **From above.** [[§13 Approximation and Continuity of Measure#^prop-13-5|Continuity from above]] (§13.5) follows by taking complements inside E₁, so it needs m(E₁) < ∞. Eₙ = [n, ∞) decreases to ∅ with every m(Eₙ) = ∞ ([[§13 Approximation and Continuity of Measure#^rem-13-5|Rem. §11.5]]). This form drives [[Egorov's Theorem]].
+- **Integral analogues.** It gives [[§20 The Lebesgue Integral for Simple Functions#^lem-20-6|Lemma §20.6]], which is the key step of the [[Monotone Convergence Theorem (Lebesgue)]]. The decreasing [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-7|MCT]] (§21.7) needs ∫f_{k₀} < ∞, just as continuity from above needs m(E₁) < ∞ ([[§21 Consequences of the Monotone Convergence Theorem#^rem-21-5|Rem. §14.5]]).
 - **Techniques.** [[Measure Theory Problem-Solving Techniques#^rem-19-10|Technique 6: Continuity of Measure and Exhaustion]]. It is also used in [[Measure Theory Problem-Solving Techniques#^rem-19-15|Technique 11]], where the level sets {|f| < n} increase to {f finite}.

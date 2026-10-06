@@ -33,8 +33,12 @@ tags: [measure-theory, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-5|Theorem §26.5: The Subgraph Theorem]]
 - [[§35 Lᵖ as a Banach Space#^cor-35-5|Corollary §35.5: Minkowski for Nonnegative Series]]
 
+## Used in (Functional Analysis)
+- [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
+- [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|Theorem §19.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
+
 ## Connections
 - **Not the 451 theorem.** The MATH 451 [[Monotone Convergence Theorem]] says bounded monotone sequences of reals converge. This theorem exchanges limit and integral for 0 ≤ f_k ↑ f. It uses the 451 result in Step 1, to know that lim ∫f_k exists.
 - **Proof idea.** ∫f_k ≤ ∫f by monotonicity. For the reverse, fix a simple h ≤ f and c ∈ (0, 1). The sets {f_k ≥ c·h} increase to E, so [[§20 The Lebesgue Integral for Simple Functions#^lem-20-6|Lemma §20.6]] (from [[Continuity of Measure]]) gives lim ∫f_k ≥ c∫h.
 - **Riemann vs Lebesgue.** Riemann integrable functions are not closed under monotone limits: indicators of finite sets of rationals increase to the Dirichlet function ([[§8 Motivation꞉ The Riemann Integral#^rem-8-2|Rem. §8.2]], [[Dirichlet and Thomae functions]]). MATH 451 exchanges limit and integral only under uniform convergence ([[§33 Properties of the Riemann Integral#^thm-33-12|451 §33.12]]).
-- **Chain.** MCT → [[Fatou's Lemma]] → [[Dominated Convergence Theorem]]. With the [[Simple Function Approximation Theorem]] it gives [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-1|linearity]] (§14.8) and the [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-5|series version]] (§14.12), and it gives [[Tonelli's Theorem]] its closure under increasing limits. It is used in [[Measure Theory Problem-Solving Techniques#^rem-19-17|Technique 13]] and [[Measure Theory Problem-Solving Techniques#^rem-19-25|Technique 21]].
+- **Chain.** MCT → [[Fatou's Lemma]] → [[Dominated Convergence Theorem]]. With the [[Simple Function Approximation Theorem]] it gives [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-1|linearity]] (§21.1) and the [[§21 Consequences of the Monotone Convergence Theorem#^thm-21-5|series version]] (§21.5), and it gives [[Tonelli's Theorem]] its closure under increasing limits. It is used in [[Measure Theory Problem-Solving Techniques#^rem-19-17|Technique 13]] and [[Measure Theory Problem-Solving Techniques#^rem-19-25|Technique 21]].

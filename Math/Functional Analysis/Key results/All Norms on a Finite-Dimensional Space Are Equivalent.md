@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 12.3", "equivalence of norms"]
+aliases: ["MATH 556 14.3", "equivalence of norms"]
 tags: [functional-analysis, hub]
 ---
 ![[§14 New Normed Spaces from Old#^thm-14-3]]

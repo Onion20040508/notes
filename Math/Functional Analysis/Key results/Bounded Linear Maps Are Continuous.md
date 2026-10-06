@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 26.2", "continuous iff bounded", "Lax §15.1, Thm 1"]
+aliases: ["MATH 556 30.2", "continuous iff bounded", "Lax §15.1, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§30 Boundedness and Continuity#^prop-30-2]]
@@ -13,7 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
 - [[§30 Boundedness and Continuity#^def-30-1|Definition §30.1: Continuous Linear Map]]
-- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map; Operator Norm]]
+- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map]]
 
 ## Used in (Functional Analysis)
 - (not cited later in the course)

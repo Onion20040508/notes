@@ -35,4 +35,4 @@ tags: [topology, hub]
 - **Partner result.** It pairs with [[Compact Subspace of a Hausdorff Space is Closed]] ([[§18 Compact Spaces#^rem-18-4|Summary: Compact and Closed]]). In a compact Hausdorff space the two together say that a subset is closed exactly when it is compact.
 - **Closedness is needed.** (0, 1] is a non-closed subspace of the compact interval [0, 1] and is not compact ([[§18 Compact Spaces#^ex-18-3|Example §18.3]]).
 - **Immediate uses.** It is step 1 of [[Bijection from Compact to Hausdorff is a Homeomorphism]] and the last step of [[Heine–Borel Theorem]]: a closed bounded set is a closed subset of a compact box ([[§18 Compact Spaces#^rem-18-10|Filling the Gap: Balls vs. Boxes]]).
-- **Later.** It is used in [[§24 Normal Spaces#^thm-24-2|Every Compact Hausdorff Space is Normal]] (§20.2) and throughout local compactness, e.g. [[§20 Local Compactness#^thm-20-5|One-Point Compactification]] (§17.5).
+- **Later.** It is used in [[§24 Normal Spaces#^thm-24-2|Every Compact Hausdorff Space is Normal]] (§24.2) and throughout local compactness, e.g. [[§20 Local Compactness#^thm-20-5|One-Point Compactification]] (§20.5).

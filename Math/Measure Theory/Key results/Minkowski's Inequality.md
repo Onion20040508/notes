@@ -25,7 +25,12 @@ tags: [measure-theory, hub]
 - [[§35 Lᵖ as a Banach Space#^prop-35-8|Proposition §35.8: Basic Properties of Lᵖ Convergence]]
 - [[§35 Lᵖ as a Banach Space#^cor-35-10|Corollary §35.10: Lᵖ Convergence Implies A.E. Convergent Subsequence]]
 
+## Used in (Functional Analysis)
+- [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
+- [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-2|Theorem §19.2: Minkowski's Inequality for Functions]]
+- [[§29 Sequence and Function Spaces#^prop-29-4|Proposition §29.4: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+
 ## Connections
 - **Proof idea.** For 1 < p < ∞, write |f + g|ᵖ ≤ |f|·|f + g|^(p−1) + |g|·|f + g|^(p−1). Apply [[Hölder's Inequality]] with exponents p and p′ = p/(p − 1) to each term, then divide by the Lᵖ norm of f + g raised to the power p − 1. p = 1 is [[§22 The General Lebesgue Integral#^prop-22-3|Proposition §22.3]], and p = ∞ is pointwise.
 - **Linear algebra.** It is the triangle inequality that makes the Lᵖ norm a norm ([[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-2|Def. §34.2]], [[§35 Lᵖ as a Banach Space#^thm-35-3|§35.3]]). For p = 2 the norm comes from ⟨f, g⟩ = ∫fg, and Minkowski is the inner-product [[Triangle inequality]] (LADR 6.17), just as Hölder is [[Cauchy–Schwarz inequality|Cauchy–Schwarz]]. Among the Lᵖ norms only p = 2 satisfies the [[§20 Inner Products and Norms#^ladr-6-21|parallelogram equality]].
-- **Chain.** Hölder → Minkowski → series bounds ([[§35 Lᵖ as a Banach Space#^cor-35-5|§35.5]], via the [[Monotone Convergence Theorem (Lebesgue)]], and [[§35 Lᵖ as a Banach Space#^cor-35-7|§35.7]]) → [[Riesz–Fischer Theorem]]. It also gives [[§35 Lᵖ as a Banach Space#^prop-35-8|uniqueness of Lᵖ limits and continuity of the norm]] (§19.15).
+- **Chain.** Hölder → Minkowski → series bounds ([[§35 Lᵖ as a Banach Space#^cor-35-5|§35.5]], via the [[Monotone Convergence Theorem (Lebesgue)]], and [[§35 Lᵖ as a Banach Space#^cor-35-7|§35.7]]) → [[Riesz–Fischer Theorem]]. It also gives [[§35 Lᵖ as a Banach Space#^prop-35-8|uniqueness of Lᵖ limits and continuity of the norm]] (§35.8).

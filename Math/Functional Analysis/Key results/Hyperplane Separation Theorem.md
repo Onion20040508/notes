@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 7.1", "geometric Hahn–Banach", "Lax §3.2, Thm 5"]
+aliases: ["MATH 556 8.1", "geometric Hahn–Banach", "Lax §3.2, Thm 5"]
 tags: [functional-analysis, hub]
 ---
 ![[§8 The Hyperplane Separation Theorem#^thm-8-1]]

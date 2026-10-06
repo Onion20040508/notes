@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 33.6", "Lee Corollary 5.14", "Lee Proposition 5.38"]
+aliases: ["MATH 591 35.6", "Lee Corollary 5.14", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§35 Submanifolds#^thm-35-6]]
@@ -15,9 +15,11 @@ tags: [differentiable-manifolds, hub]
 - [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|Theorem §28.6: The Chain Rule]]
 - [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|Theorem §31.4: The Tangent Space of a Product]]
 - [[§34 Submersions#^def-34-3|Definition §34.3: Regular Points and Critical Points]]
+- [[§34 Submersions#^def-34-4|Definition §34.4: Regular Values and Critical Values]]
 - [[§34 Submersions#^thm-34-4|Theorem §34.4: Local Normal Form for Submersions]]
-- [[§35 Submanifolds#^def-35-1|Definition §35.1: Submanifold and Adapted Charts]]
+- [[§35 Submanifolds#^def-35-1|Definition §35.1: Submanifold]]
 - [[§35 Submanifolds#^prop-35-1|Proposition §35.1: Two Observations on Adapted Charts]]
+- [[§35 Submanifolds#^def-35-2|Definition §35.2: Adapted Chart]]
 - [[§35 Submanifolds#^prop-35-4|Proposition §35.4: Tangent Spaces of a Submanifold]]
 
 ## Its proof uses (other subjects)

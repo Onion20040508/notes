@@ -16,7 +16,8 @@ tags: [differentiable-manifolds, hub]
 - [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5: Subspaces Inherit Both Conditions]]
 - [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]
 - [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
-- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Point and Regular Value]]
+- [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
+- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
 
 ## Its proof uses (other subjects)
 - [[§9 Matrices#^ladr-3-57|LADR 3.57 Column rank equals row rank]]

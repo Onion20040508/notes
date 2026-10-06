@@ -27,7 +27,7 @@ tags: [linear-algebra, hub]
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|Definition §11.5: General Linear Group]]
-- [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9: Complex Matrix Groups]]
+- [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9: Complex Matrices and GL(n,ℂ)]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|Lemma §23.3: A One-Sided Inverse Suffices]]
 - [[§34 Submersions#^thm-34-4|Theorem §34.4: Local Normal Form for Submersions]]
 - [[§41 SU(2) → SO(3)꞉ The Double Cover#^lem-41-2|Lemma §41.2: Every Rotation Has an Axis]]

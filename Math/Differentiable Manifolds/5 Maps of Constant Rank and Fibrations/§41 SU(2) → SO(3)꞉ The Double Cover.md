@@ -21,7 +21,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > [!theorem] Proposition §41.1: Conjugation by Unit Quaternions Is Rotation
 > For $q \in S^3$, the map $C_q(v) = q v \bar q$ sends $\mathbb{H}_0 \cong \mathbb{R}^3$ to itself, and:
 > 1. $C_q \in \mathrm{SO}(3)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]]), and $C : S^3 \to \mathrm{SO}(3)$, $q \mapsto C_q$, is a smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]) group homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]);
-> 2. $\ker C = \{\pm 1\}$ ([[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]), so $C_p = C_q$ if and only if $p = \pm q$;
+> 2. $\ker C = \{\pm 1\}$ ([[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]), so $C_p = C_q$ if and only if $p = \pm q$;
 > 3. if $u \in \mathbb{H}_0$ is a unit vector and $\theta \in \mathbb{R}$, then $C_q$ for $q = \cos\frac\theta2 + \sin\frac\theta2\, u$ is the rotation by the angle $\theta$ about the axis $u$.
 
 ^prop-41-1
@@ -43,11 +43,11 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-41-1
 
-*Uses:* [[§40 The Unit Quaternions and SU(2)#^def-40-1|Def. §40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-1|§40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-4|§40.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]
+*Uses:* [[§40 The Unit Quaternions and SU(2)#^def-40-1|Def. §40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-1|§40.1]], [[§40 The Unit Quaternions and SU(2)#^prop-40-4|§40.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§35 Submanifolds#^lem-35-3|§35.3]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]
 
 > [!remark]- Connections
 > - The half-angle in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]].
-> - Isometries in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; the kernel $\{\pm 1\}$ as a center in 493: [[§35 The Center#^def-35-1|493 Def. §35.1]].
+> - Isometries in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; the kernel $\{\pm 1\}$ as a center in 493: [[§35 The Center#^def-35-2|493 Def. §35.2]].
 
 The half-angle in (3) is the source of the factor $2$ below: the curve $\gamma_j(t)$ through $1$ moves at unit speed in $S^3$, but its image rotates by $2t$.
 

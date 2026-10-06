@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 23.2", "Lax §6.3, Thm 4"]
+aliases: ["MATH 556 26.4", "Lax §6.3, Thm 4"]
 tags: [functional-analysis, hub]
 ---
 ![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4]]
@@ -13,7 +13,8 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§22 Definition and Examples#^def-22-1|Definition §22.1: Inner Product; Scalar Product]]
 - [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]
-- [[§25 Projection and Orthogonal Decomposition#^def-25-1|Definition §25.1: Orthogonality; Orthogonal Complement]]
+- [[§25 Projection and Orthogonal Decomposition#^def-25-1|Definition §25.1: Orthogonality]]
+- [[§25 Projection and Orthogonal Decomposition#^def-25-2|Definition §25.2: Orthogonal Complement]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Definition §26.1: Bounded Linear Functional]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|Lemma §26.3: The Kernel Has Codimension One]]
 

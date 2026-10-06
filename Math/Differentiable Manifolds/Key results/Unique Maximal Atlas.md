@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 16.5", "every atlas lies in a unique maximal atlas", "Lee Proposition 1.17"]
+aliases: ["MATH 591 17.5", "every atlas lies in a unique maximal atlas", "Lee Proposition 1.17"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§17 Differentiable Structures#^thm-17-5]]
@@ -27,8 +27,8 @@ tags: [differentiable-manifolds, hub]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Transport of Smooth Structure]]
 - [[§19 Smooth Functions and Smooth Maps#^cor-19-7|Corollary §19.7: Single-Chart Structures on ℝⁿ]]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]]
-- [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
 - [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
+- [[§24 The Circle#^prop-24-1|Proposition §24.1: The Three Circle Atlases Define One Smooth Structure]]
 - [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
 - [[§35 Submanifolds#^prop-35-8|Proposition §35.8: The Old and New Versions Agree]]
 

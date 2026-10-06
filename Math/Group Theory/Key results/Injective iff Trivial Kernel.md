@@ -12,7 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]
-- [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image and Kernel]]
+- [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image]]
+- [[§15 Homomorphisms#^def-15-3|Definition §15.3: Kernel]]
 - [[§16 Isomorphisms#^def-16-1|Definition §16.1: Isomorphism; Isomorphic Groups]]
 
 ## Used in (Group Theory)

@@ -140,7 +140,7 @@ tags: [measure-theory, math551]
 ^thm-25-3
 
 > [!remark]- Connections
-> - Riemann counterpart for non-negative integrands in MATH 452: [[§23 Fubini's Theorem#^thm-23-5|Fubini–Tonelli: Non-negative Functions]] (452 §15.12).
+> - Riemann counterpart for non-negative integrands in MATH 452: [[§23 Fubini's Theorem#^thm-23-5|Fubini–Tonelli: Non-negative Functions]] (452 §23.5).
 > - Proved below ([[§25 Invariance Properties and Fubini's Theorem#^pf-25-3|Proof of Tonelli's Theorem]]) through the closure properties of the [[§25 Invariance Properties and Fubini's Theorem#^def-25-2|Tonelli class]].
 > - Computational version for continuous functions on boxes: [[§115 Double Integrals Over Rectangles#^thm-115-3|Calc Thm. §115.3]] and [[§120 Triple Integrals#^thm-120-1|Calc Thm. §120.1]] (with worked examples).
 > - Used in ODEs: an absolute bound on the wedge $0 \le \tau \le t$ makes the order of integration reversible in the convolution theorem for Laplace transforms, [[§31★ The Convolution Integral#^thm-31-2|331 Thm. §31.2]].
@@ -307,7 +307,7 @@ We now prove Tonelli's theorem using these closure properties. Each step require
 *Uses:* [[Tonelli's Theorem|§25.3]], [[§16 Limits and Positive Parts of Measurable Functions#^prop-16-5|§16.5]], [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-3|§21.3]], [[§20 The Lebesgue Integral for Simple Functions#^prop-20-3|§20.3]], [[§22 The General Lebesgue Integral#^def-22-1|Def. §22.1]], [[§22 The General Lebesgue Integral#^thm-22-2|§22.2]]
 
 > [!remark]- Connections
-> - MATH 452 Riemann version: [[Fubini's Theorem]] (452 §15.8), for continuous $f$ on a rectangle, extended to [[§23 Fubini's Theorem#^thm-23-2|Type I regions]] (452 §15.9).
+> - MATH 452 Riemann version: [[Fubini's Theorem]] (452 §15.8), for continuous $f$ on a rectangle, extended to [[§23 Fubini's Theorem#^thm-23-2|Type I regions]] (452 §23.2).
 > - Used for the volume of sheared rectangles in [[§30 Differentiating the Integral#^thm-30-3|Linear Maps Preserve Null Sets]] ([[§30 Differentiating the Integral#^thm-30-3|§30.3]]).
 > - Computational version for continuous functions on boxes: [[§115 Double Integrals Over Rectangles#^thm-115-3|Calc Thm. §115.3]] and [[§120 Triple Integrals#^thm-120-1|Calc Thm. §120.1]] (with worked examples).
 > - Used in ODEs: reversing the order of integration proves the algebraic properties of convolution, [[§31★ The Convolution Integral#^prop-31-1|331 Prop. §31.1]], and the convolution theorem $\mathcal{L}\{f * g\} = F(s)G(s)$, [[§31★ The Convolution Integral#^thm-31-2|331 Thm. §31.2]].

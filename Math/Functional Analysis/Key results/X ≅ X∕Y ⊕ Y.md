@@ -2,18 +2,19 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 1.11", "quotient and complement"]
+aliases: ["MATH 556 2.6", "quotient and complement"]
 tags: [functional-analysis, hub]
 ---
 ![[§2 Quotient Spaces and Complements#^thm-2-6]]
 
 ## Treated in
-- [[§2 Quotient Spaces and Complements#^thm-2-6|Theorem §2.6: X ≅ X/Y oplus Y]], in [[§1 Linear Spaces]]
+- [[§2 Quotient Spaces and Complements#^thm-2-6|Theorem §2.6: X ≅ X/Y oplus Y]], in [[§2 Quotient Spaces and Complements]]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-4|Definition §1.4: Direct Sum]]
 - [[§2 Quotient Spaces and Complements#^prop-2-1|Proposition §2.1: X/Y is a Linear Space]]
-- [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class and Quotient Space]]
+- [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
+- [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
 - [[§2 Quotient Spaces and Complements#^lem-2-5|Lemma §2.5: Unique Decomposition]]
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|Lemma §3.1: Inverse of an Isomorphism]]
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Definition §3.2: Isomorphism]]

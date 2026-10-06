@@ -169,7 +169,7 @@ $$
 
 > [!remark]- Connections
 > - Generalized to several constraints in $\mathbb{R}^n$: [[§17 Optimization and Lagrange Multipliers#^thm-17-3|Theorem §17.3]].
-> - Without a constraint it reduces to [[§17 Optimization and Lagrange Multipliers#^thm-17-1|Fermat's theorem]] (§14.1); the proof is the 1D [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1) along the constraint curve.
+> - Without a constraint it reduces to [[§17 Optimization and Lagrange Multipliers#^thm-17-1|Fermat's theorem]] (§17.1); the proof is the 1D [[§29 The Mean Value Theorem#^thm-29-1|Interior Extremum Theorem]] (451 §29.1) along the constraint curve.
 > - Computational version: [[§114 Lagrange Multipliers#^thm-114-1|Calc Thm. §114.1]] (with worked examples).
 
 > [!remark] Remark: The Constraint Qualification

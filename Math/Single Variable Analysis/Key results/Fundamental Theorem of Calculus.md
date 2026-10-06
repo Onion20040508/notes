@@ -38,7 +38,7 @@ tags: [real-analysis, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|Lemma §29.2: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
-- [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§13 The Completion of a Normed Space#^prop-13-4|Proposition §13.4: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§25 Projection and Orthogonal Decomposition#^prop-25-8|Proposition §25.8: A Sharp Integral Inequality]]
 
 ## Connections

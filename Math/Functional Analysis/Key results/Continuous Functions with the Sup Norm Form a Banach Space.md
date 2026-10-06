@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 11.1", "sup norm complete", "C[a,b] is a Banach space", "Lax §5.1, examples"]
+aliases: ["MATH 556 12.1", "sup norm complete", "C[a,b] is a Banach space", "Lax §5.1, examples"]
 tags: [functional-analysis, hub]
 ---
 ![[§12 Completeness#^thm-12-1]]

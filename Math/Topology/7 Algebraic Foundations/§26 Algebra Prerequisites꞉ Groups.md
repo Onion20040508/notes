@@ -350,7 +350,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra versions: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]] (the kernel) and [[§8 Null Spaces and Ranges#^ladr-3-16|Range]] (the image).
-> - 493 counterpart: [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]; injectivity via the kernel in [[Injective iff Trivial Kernel]].
+> - 493 counterpart: [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]]; injectivity via the kernel in [[Injective iff Trivial Kernel]].
 
 > [!theorem] Proposition §26.8
 > $\ker(f) \leq G$ and $\operatorname{im}(f) \leq G'$. Moreover, $f$ is injective if and only if $\ker(f) = \{e\}$.

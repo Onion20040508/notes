@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 1.8"]
+aliases: ["MATH 556 2.3"]
 tags: [functional-analysis, hub]
 ---
 ![[§2 Quotient Spaces and Complements#^prop-2-3]]
 
 ## Treated in
-- [[§2 Quotient Spaces and Complements#^prop-2-3|Proposition §2.3: Every Subspace Has a Complement]], in [[§1 Linear Spaces]]
+- [[§2 Quotient Spaces and Complements#^prop-2-3|Proposition §2.3: Every Subspace Has a Complement]], in [[§2 Quotient Spaces and Complements]]
 
 ## Its proof uses
 - [[§2 Quotient Spaces and Complements#^lem-2-2|Lemma §2.2: One-Step Enlargement]]

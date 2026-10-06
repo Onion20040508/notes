@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 5.1", "Lax §3.1, proof of Thm 1"]
+aliases: ["MATH 556 6.1", "Lax §3.1, proof of Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§6 Proof of the Hahn–Banach Theorem#^lem-6-1]]
@@ -13,7 +13,8 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
 - [[§1 Linear Spaces#^def-1-5|Definition §1.5: Linear Span]]
-- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous; Subadditive]]
+- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous]]
+- [[§5 Statement and Motivation#^def-5-2|Definition §5.2: Subadditive]]
 
 ## Its proof uses (other subjects)
 - [[Completeness Axiom]] (Single Variable Analysis)

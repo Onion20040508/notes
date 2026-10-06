@@ -114,7 +114,7 @@ This section uses quotient sets ([[§22 Partitions and Equivalence Relations#^de
 ^def-22a-3
 
 > [!remark] Remark: Why These Formulas
-> (1) *They are forced by what $a/b$ should mean.* If $q_1$ is to satisfy $b q_1 = a$ and $q_2$ to satisfy $d q_2 = c$, then $bd\,(q_1 + q_2) = ad + bc$ and $bd\, q_1 q_2 = ac$, so $q_1 + q_2$ "is" $(ad + bc)/bd$ and $q_1 q_2$ "is" $ac/bd$ — the computation before [[§13 Number Systems#^def-13-4|Def. §13.4]] (Eccles §13.1).
+> (1) *They are forced by what $a/b$ should mean.* If $q_1$ is to satisfy $b q_1 = a$ and $q_2$ to satisfy $d q_2 = c$, then $bd\,(q_1 + q_2) = ad + bc$ and $bd\, q_1 q_2 = ac$, so $q_1 + q_2$ "is" $(ad + bc)/bd$ and $q_1 q_2$ "is" $ac/bd$ — the computation before [[§13 Number Systems#^def-13-4|Def. §13.4]] (Eccles §13.4).
 >
 > (2) *They extend integer arithmetic.* Treating the integer $a$ as $a/1$: $\ a/1 + b/1 = (a \cdot 1 + 1 \cdot b)/(1 \cdot 1) = (a + b)/1$ and $(a/1)(b/1) = ab/1$.
 >

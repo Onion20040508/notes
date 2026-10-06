@@ -12,8 +12,8 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§25 Actions#^ex-25-2|Example §25.2: Actions]]
-- [[§25 Actions#^def-25-4|Definition §25.4: Kernel of an Action; Faithful Action]]
 - [[§25 Actions#^prop-25-4|Proposition §25.4: Faithful Actions Embed G in S_X]]
+- [[§25 Actions#^def-25-5|Definition §25.5: Faithful Action]]
 
 ## Used in (Group Theory)
 - [[§25 Actions#^cor-25-6|Corollary §25.6: Every Finite Group Is a Matrix Group]]

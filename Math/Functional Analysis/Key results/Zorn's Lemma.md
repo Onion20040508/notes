@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 5.2", "Zorn", "Lax §3.1, proof of Thm 1"]
+aliases: ["MATH 556 6.2", "Zorn", "Lax §3.1, proof of Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§6 Proof of the Hahn–Banach Theorem#^thm-6-2]]

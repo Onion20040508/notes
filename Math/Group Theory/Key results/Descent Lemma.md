@@ -15,8 +15,8 @@ tags: [group-theory, hub]
 - [[§6 Divisibility and Congruence#^def-6-4|Definition §6.4: Residue Classes]]
 - [[§7 The Group ℤ∕nℤ#^def-7-2|Definition §7.2: Well-Defined]]
 - [[§15 Homomorphisms#^def-15-1|Definition §15.1: Group Homomorphism]]
-- [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image and Kernel]]
 - [[§15 Homomorphisms#^prop-15-2|Proposition §15.2: Image and Kernel Are Subgroups]]
+- [[§15 Homomorphisms#^def-15-3|Definition §15.3: Kernel]]
 
 ## Its proof uses (other subjects)
 - [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1: Principle of Mathematical Induction]]

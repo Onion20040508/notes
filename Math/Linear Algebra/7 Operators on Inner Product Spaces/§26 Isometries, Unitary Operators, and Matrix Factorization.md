@@ -139,8 +139,8 @@ tags: [linear-algebra]
 *Uses:* [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|7.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-51|7.51]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|7.53]], [[§23 Self-Adjoint and Normal Operators#^ladr-7-9|7.9]]
 
 > [!remark]- Connections
-> - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
-> - The matrices described here form the groups O(n) and U(n) of 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|591 Prop. §11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|591 Def. §11.9]]; orthonormal columns make U(n) compact, [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5|591 Cor. §23.5]].
+> - The real orthogonal matrices form the orthogonal group O(n), [[§3 Basic Examples of Groups#^def-3-8|493 Def. §3.8]].
+> - The matrices described here form the groups O(n) and U(n) of 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|591 Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|591 Prop. §11.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|591 Def. §11.10]]; orthonormal columns make U(n) compact, [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5|591 Cor. §23.5]].
 > - Computational version: [[§51 Orthogonal Sets#^prop-51-6|235 Prop. §51.6]] and [[§51 Orthogonal Sets#^thm-51-5|235 Thm. §51.5]] (length preservation, as in (c)).
 > - Used in Quantum Mechanics: the $2\times2$ unitary matrices of determinant 1 (with [[§37 Determinants#^ladr-9-58|Theorem 9.58]]) form $SU(2)$, the unit sphere of $\mathbb C^2$, and are exactly the spin-½ rotation matrices — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]].
 

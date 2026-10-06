@@ -35,7 +35,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - Worksheet form: [[§17 Cyclic Groups#^prop-17-3|The Homomorphism k ↦ gᵏ (WS 3.1)]] (§17.3).
-> - MATH 590 statement (without proof): [[§27 Free Groups and Presentations#^rem-27-9|Remark after Definition §21.7]] (590 §26), with [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (590 §21.7).
+> - MATH 590 statement (without proof): [[§27 Free Groups and Presentations#^rem-27-9|Remark after Definition §21.7]] (590 §26), with [[§27 Free Groups and Presentations#^def-27-2|Cyclic Groups and Generators]] (590 §27.2).
 
 > [!theorem] Corollary §17.2: Cyclic iff There Is an Element of Order $|G|$
 > A group $G$ of finite order $n$ is cyclic if and only if it contains an element of order $n$; the elements of order $n$ are then exactly the generators.
@@ -110,7 +110,7 @@ tags: [group-theory, math493]
 *Uses:* [[§4 Subgroups#^prop-4-6|§4.6]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§6 Divisibility and Congruence#^lem-6-1|§6.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-1|Properties Inherited by Subgroups]] (590 §21.1, part 2).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^prop-26-1|Properties Inherited by Subgroups]] (590 §26.1, part 2).
 > - The well-ordering step: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (proved there from induction).
 
 > [!theorem] Proposition §17.5: The Order of a Power

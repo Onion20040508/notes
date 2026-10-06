@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 26.5", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2–3"]
+aliases: ["MATH 556 30.5", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2–3"]
 tags: [functional-analysis, hub]
 ---
 ![[§30 Boundedness and Continuity#^thm-30-5]]
@@ -21,7 +21,8 @@ tags: [functional-analysis, hub]
 - [[§12 Completeness#^def-12-2|Definition §12.2: Banach Space]]
 - [[§30 Boundedness and Continuity#^def-30-1|Definition §30.1: Continuous Linear Map]]
 - [[§30 Boundedness and Continuity#^prop-30-1|Proposition §30.1: The Operator Norm]]
-- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map; Operator Norm]]
+- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map]]
+- [[§30 Boundedness and Continuity#^def-30-3|Definition §30.3: Operator Norm]]
 - [[§30 Boundedness and Continuity#^def-30-4|Definition §30.4: The Space ℒ(X, Y)]]
 
 ## Used in (Functional Analysis)

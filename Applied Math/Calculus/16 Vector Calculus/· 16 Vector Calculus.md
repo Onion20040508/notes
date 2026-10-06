@@ -46,7 +46,7 @@ Related forms: the vector forms of Green's Theorem, $\oint_C \mathbf{F} \cdot \m
 
 Companion facts that the theorems rest on or imply:
 - $\operatorname{curl}(\nabla f) = \mathbf{0}$ ([[§132 Curl and Divergence#^thm-132-1|Theorem §132.1]]) and $\operatorname{div}(\operatorname{curl}\mathbf{F}) = 0$ ([[§132 Curl and Divergence#^thm-132-3|Theorem §132.3]]).
-- Conservative $\Leftrightarrow$ path independent $\Leftrightarrow$ zero around closed paths ([[§128 The Fundamental Theorem for Line Integrals#^thm-128-2|Theorem §128.2]], [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Theorem §128.3]]); tests: $P_y = Q_x$ on a simply-connected plane region ([[§131 Extended Versions of Green's Theorem#^thm-131-3|Theorem §110.5]]), $\operatorname{curl}\mathbf{F} = \mathbf{0}$ on $\mathbb{R}^3$ ([[§136 Stokes' Theorem#^thm-136-4|Theorem §136.4]]).
+- Conservative $\Leftrightarrow$ path independent $\Leftrightarrow$ zero around closed paths ([[§128 The Fundamental Theorem for Line Integrals#^thm-128-2|Theorem §128.2]], [[§128 The Fundamental Theorem for Line Integrals#^thm-128-3|Theorem §128.3]]); tests: $P_y = Q_x$ on a simply-connected plane region ([[§131 Extended Versions of Green's Theorem#^thm-131-3|Theorem §131.3]]), $\operatorname{curl}\mathbf{F} = \mathbf{0}$ on $\mathbb{R}^3$ ([[§136 Stokes' Theorem#^thm-136-4|Theorem §136.4]]).
 - Curl as circulation per unit area ([[§136 Stokes' Theorem#^thm-136-3|Theorem §136.3]]) and divergence as flux per unit volume ([[§137 The Divergence Theorem#^thm-137-3|Theorem §137.3]]).
 
 ## Central results

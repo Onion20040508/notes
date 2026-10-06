@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 24.5"]
+aliases: ["MATH 556 27.5"]
 tags: [functional-analysis, hub]
 ---
 ![[§27 Orthonormal Sets and Bases#^thm-27-5]]

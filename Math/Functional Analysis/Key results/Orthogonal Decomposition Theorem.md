@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 22.4", "H = Y ⊕ Y⊥", "Lax §6.2, Thm 3"]
+aliases: ["MATH 556 25.4", "H = Y ⊕ Y⊥", "Lax §6.2, Thm 3"]
 tags: [functional-analysis, hub]
 ---
 ![[§25 Projection and Orthogonal Decomposition#^thm-25-4]]
@@ -13,9 +13,10 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Definition §3.3: Convex Set]]
 - [[§22 Definition and Examples#^def-22-1|Definition §22.1: Inner Product; Scalar Product]]
-- [[§25 Projection and Orthogonal Decomposition#^def-25-1|Definition §25.1: Orthogonality; Orthogonal Complement]]
-- [[§25 Projection and Orthogonal Decomposition#^def-25-3|Definition §25.3: Internal Direct Sum]]
+- [[§25 Projection and Orthogonal Decomposition#^def-25-1|Definition §25.1: Orthogonality]]
+- [[§25 Projection and Orthogonal Decomposition#^def-25-2|Definition §25.2: Orthogonal Complement]]
 - [[§25 Projection and Orthogonal Decomposition#^thm-25-2|Theorem §25.2: Closest Point in a Closed Convex Set]]
+- [[§25 Projection and Orthogonal Decomposition#^def-25-3|Definition §25.3: Internal Direct Sum]]
 - [[§25 Projection and Orthogonal Decomposition#^prop-25-3|Proposition §25.3: M^perp is a Closed Subspace]]
 
 ## Used in (Functional Analysis)

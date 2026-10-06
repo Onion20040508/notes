@@ -91,7 +91,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Its dimension: [[§10 Invertibility and Isomorphisms#^ladr-3-72|Dim L(V, W) = (dim V)(dim W)]]. Matrices respect the operations: [[§9 Matrices#^ladr-3-35|Matrix of the sum of linear maps]], [[§9 Matrices#^ladr-3-38|The matrix of a scalar times a linear map]].
-> - Group analogue: the pointwise product on homomorphisms, [[§18 Conjugation, Products, and Pointwise Products#^def-18-5|493 Def. §18.5]], which gives a homomorphism again only when the target is abelian, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|493 Prop. §18.2]].
+> - Group analogue: the pointwise product on homomorphisms, [[§18 Conjugation, Products, and Pointwise Products#^def-18-6|493 Def. §18.6]], which gives a homomorphism again only when the target is abelian, [[§18 Conjugation, Products, and Pointwise Products#^prop-18-2|493 Prop. §18.2]].
 
 > [!definition] Definition 3.7: Product of linear maps
 > If $T\in\Lin(U,V)$ and $S\in\Lin(V,W)$, the *product* $ST\in\Lin(U,W)$ is $(ST)(u)=S(Tu)$.

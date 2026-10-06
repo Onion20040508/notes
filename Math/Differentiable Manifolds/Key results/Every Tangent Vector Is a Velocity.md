@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 29.2", "Lee Proposition 3.23"]
+aliases: ["MATH 591 31.2", "Lee Proposition 3.23"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§31 Tangent Vectors as Velocities of Curves#^thm-31-2]]
@@ -11,11 +11,12 @@ tags: [differentiable-manifolds, hub]
 - [[§31 Tangent Vectors as Velocities of Curves#^thm-31-2|Theorem §31.2: Every Tangent Vector Is a Velocity]], in [[§31 Tangent Vectors as Velocities of Curves]]
 
 ## Its proof uses
-- [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map and Diffeomorphism]]
+- [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Definition §29.1: Coordinate Functions of a Chart]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5: Basis Theorem]]
-- [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2: Smooth Curve and Its Velocity]]
+- [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Definition §31.1: Smooth Curve]]
 - [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|Proposition §31.1: Velocity in Coordinates]]
+- [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Definition §31.2: Velocity of a Curve]]
 
 ## Used in (Differentiable Manifolds)
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-3|Corollary §31.3: Velocity of a Composite — Computing Differentials by Curves]]

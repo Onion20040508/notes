@@ -35,7 +35,7 @@ tags: [linear-algebra]
 > This operator norm generally does not come from an inner product on $\Lin(V,W)$ (it fails the parallelogram law, [[§20 Inner Products and Norms#^ladr-6-21|6.21]]). The Frobenius norm $\sqrt{\operatorname{tr}T^*T}$ does.
 
 > [!remark]- Connections
-> - Same as the operator norm in functional analysis ([[§30 Boundedness and Continuity#^def-30-2|556 Def. §30.2]]): there the max becomes a sup.
+> - Same as the operator norm in functional analysis ([[§30 Boundedness and Continuity#^def-30-3|556 Def. §30.3]]): there the max becomes a sup.
 
 > [!theorem] Theorem 7.87: Basic properties of norms of linear maps
 > For $S,T\in\Lin(V,W)$: (a) $\|T\|\ge0$; (b) $\|T\|=0\iff T=0$; (c) $\|\lambda T\|=|\lambda|\|T\|$; (d) $\|S+T\|\le\|S\|+\|T\|$.

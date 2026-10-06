@@ -121,7 +121,7 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 ^ex-52-2
 
 > [!remark] Remark: A Geometric Interpretation of the Orthogonal Projection
-> Each term $\frac{\mathbf{y} \cdot \mathbf{u}_j}{\mathbf{u}_j \cdot \mathbf{u}_j}\mathbf{u}_j$ of (2) is the projection $\hat{\mathbf{y}}_j$ of $\mathbf{y}$ onto the line spanned by $\mathbf{u}_j$. So $\operatorname{proj}_W \mathbf{y} = \hat{\mathbf{y}}_1 + \cdots + \hat{\mathbf{y}}_p$ is the sum of the projections of $\mathbf{y}$ onto mutually orthogonal lines in $W$. This is [[§51 Orthogonal Sets#^rem-51-1|the picture behind Theorem §41.2]], except that now $\mathbf{y}$ need not lie in $W$: it is $\hat{\mathbf{y}}$ that is rebuilt from its projections. The formula needs an *orthogonal* basis. For a basis that is not orthogonal, the sum of the projections onto the basis lines is in general not $\operatorname{proj}_W \mathbf{y}$.
+> Each term $\frac{\mathbf{y} \cdot \mathbf{u}_j}{\mathbf{u}_j \cdot \mathbf{u}_j}\mathbf{u}_j$ of (2) is the projection $\hat{\mathbf{y}}_j$ of $\mathbf{y}$ onto the line spanned by $\mathbf{u}_j$. So $\operatorname{proj}_W \mathbf{y} = \hat{\mathbf{y}}_1 + \cdots + \hat{\mathbf{y}}_p$ is the sum of the projections of $\mathbf{y}$ onto mutually orthogonal lines in $W$. This is [[§51 Orthogonal Sets#^rem-51-1|the picture behind Theorem §51.2]], except that now $\mathbf{y}$ need not lie in $W$: it is $\hat{\mathbf{y}}$ that is rebuilt from its projections. The formula needs an *orthogonal* basis. For a basis that is not orthogonal, the sum of the projections onto the basis lines is in general not $\operatorname{proj}_W \mathbf{y}$.
 
 ^rem-52-1
 

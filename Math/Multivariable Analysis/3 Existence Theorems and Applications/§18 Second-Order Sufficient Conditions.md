@@ -23,7 +23,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 ^def-18-1
 
 > [!remark]- Connections
-> - $H$ is the matrix of a symmetric bilinear form ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]); made precise in [[§39 Closed and Exact Forms#^prop-39-2|The Second Total Derivative Is the Hessian]] (§22.7).
+> - $H$ is the matrix of a symmetric bilinear form ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR 9.9]]); made precise in [[§39 Closed and Exact Forms#^prop-39-2|The Second Total Derivative Is the Hessian]] (§39.2).
 
 > [!remark] Remark: The Hessian as the Second Total Derivative
 > Just as the gradient $\nabla f$ is the first total derivative — a linear map $Df_{\mathbf{p}}: \mathbf{v} \mapsto \nabla f \cdot \mathbf{v}$ that captures the first-order behavior of $f$ ([[§7 Differentiability|§7]]–[[§10 The Differential|§10]]) — the Hessian is the *second* total derivative: a [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|bilinear form]] $D^2f_{\mathbf{p}}: (\mathbf{u}, \mathbf{v}) \mapsto \mathbf{u}^T H_f \mathbf{v}$ that captures the second-order behavior. The Taylor expansion from [[Multivariable Taylor's Theorem|§9]] says exactly this (where $\mathbf{p} \in \mathbb{R}^n$ is the base point and $\mathbf{h} \in \mathbb{R}^n$ is the increment):

@@ -209,7 +209,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|§6★.4]], [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|§6★.3]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]], [[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]], [[§22a Constructing ℚ and ℤ#^thm-22a-4|250 Thm. §22a.4]]
 
-From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subseteq \widehat{\mathbb{Q}}$ where convenient, as in [[§12 Completeness#^rem-12-3|556 Remark §11 (why classes)]].
+From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subseteq \widehat{\mathbb{Q}}$ where convenient, as in [[§12 Completeness#^rem-12-3|556 Remark §12 (why classes)]].
 
 > [!remark] Remark: The Algebra behind the Construction
 > With termwise operations, $\mathcal{C}$ is a commutative ring ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-2|493 Def. §20.2]]), and the proof of [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|Proposition §6★.3]](b) shows that $\mathcal{N}$ is closed under sums and under multiplication by elements of $\mathcal{C}$ (bounded times null is null). In ring language, $\mathcal{N}$ is an *ideal* and $\widehat{\mathbb{Q}} = \mathcal{C}/\mathcal{N}$. On the additive side this is a quotient group in the sense of [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]]: $\mathcal{N}$ is a subgroup ([[§4 Subgroups#^def-4-1|493 Def. §4.1]]) of the abelian group ([[§1 The Definition of a Group#^def-1-2|493 Def. §1.2]]) $(\mathcal{C}, +)$, and $(p_n) \sim (q_n)$ says exactly that the two sequences lie in the same coset of $\mathcal{N}$. [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-4|Lemma §6★.4]] is what makes the quotient a *field* rather than just a ring: a Cauchy sequence outside $\mathcal{N}$ can be inverted (eventually).
@@ -552,6 +552,6 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 ^rem-6s-2
 
 > [!remark] Remark: The Distance Decides
-> The construction used only the absolute value $|p - q|$ on $\mathbb{Q}$. With a different absolute value the same steps give a different complete field: the $p$-adic absolute value on $\mathbb{Q}$ produces the $p$-adic numbers $\mathbb{Q}_p$, which cannot be ordered compatibly with the field operations. The cut route has no analogue there, since it uses the order. Functional analysis makes the same point: one space with two norms can have two different completions, e.g. $C[a, b]$ is complete under $\|\cdot\|_\infty$ but completes to $L^1$ under $\|\cdot\|_1$ ([[§13 The Completion of a Normed Space#^rem-13-6|556 Remark §11 (the norm decides)]]).
+> The construction used only the absolute value $|p - q|$ on $\mathbb{Q}$. With a different absolute value the same steps give a different complete field: the $p$-adic absolute value on $\mathbb{Q}$ produces the $p$-adic numbers $\mathbb{Q}_p$, which cannot be ordered compatibly with the field operations. The cut route has no analogue there, since it uses the order. Functional analysis makes the same point: one space with two norms can have two different completions, e.g. $C[a, b]$ is complete under $\|\cdot\|_\infty$ but completes to $L^1$ under $\|\cdot\|_1$ ([[§13 The Completion of a Normed Space#^rem-13-6|556 Remark §13 (the norm decides)]]).
 
 ^rem-6s-3

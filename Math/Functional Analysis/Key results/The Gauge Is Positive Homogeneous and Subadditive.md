@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 6.6", "Minkowski functional", "Lax §3.1, Thm 2"]
+aliases: ["MATH 556 7.6", "Minkowski functional", "Lax §3.1, Thm 2"]
 tags: [functional-analysis, hub]
 ---
 ![[§7 Convex Sets and the Gauge#^prop-7-6]]
@@ -12,7 +12,8 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Definition §3.3: Convex Set]]
-- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous; Subadditive]]
+- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous]]
+- [[§5 Statement and Motivation#^def-5-2|Definition §5.2: Subadditive]]
 - [[§7 Convex Sets and the Gauge#^def-7-2|Definition §7.2: Gauge]]
 - [[§7 Convex Sets and the Gauge#^prop-7-3|Proposition §7.3: The Gauge is Finite]]
 - [[§7 Convex Sets and the Gauge#^prop-7-5|Proposition §7.5: Values of the Gauge]]

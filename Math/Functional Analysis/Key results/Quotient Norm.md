@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 12.8", "Lax §5.1, Thm 1"]
+aliases: ["MATH 556 14.8", "Lax §5.1, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§14 New Normed Spaces from Old#^thm-14-8]]
@@ -13,7 +13,8 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
 - [[§2 Quotient Spaces and Complements#^prop-2-1|Proposition §2.1: X/Y is a Linear Space]]
-- [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class and Quotient Space]]
+- [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
+- [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
 - [[§11 Normed Linear Spaces#^def-11-6|Definition §11.6: Closed Subset]]
 

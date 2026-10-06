@@ -14,7 +14,7 @@ tags: [group-theory, hub]
 - [[§27 Orbits#^prop-27-1|Proposition §27.1: Orbits Partition X]]
 - [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]
 - [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]
-- [[§35 The Center#^def-35-1|Definition §35.1: Central Elements; The Center Z(G)]]
+- [[§35 The Center#^def-35-2|Definition §35.2: The Center Z(G)]]
 
 ## Used in (Group Theory)
 - [[§35 The Center#^cor-35-4|Corollary §35.4: p Divides ∣Z(G)∣]]

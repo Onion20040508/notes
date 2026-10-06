@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 4.2", "Hahn-Banach", "Lax §3.1, Thm 1"]
+aliases: ["MATH 556 5.2", "Hahn-Banach", "Lax §3.1, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§5 Statement and Motivation#^thm-5-2]]

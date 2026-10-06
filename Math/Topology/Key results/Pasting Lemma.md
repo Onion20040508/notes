@@ -17,7 +17,7 @@ tags: [topology, hub]
 
 ## Used in (Topology)
 - [[§28 Homotopy of Paths#^lem-28-3|Lemma §28.3]]
-- [[Topology §28 Homotopy of Paths#^prop-22-4|Proposition §22.4: Well-Definedness of [f] * [g]]]
+- [[§28 Homotopy of Paths#^prop-28-4|Proposition §28.4: Well-Definedness of the Product of Path Classes]]
 - [[§28 Homotopy of Paths#^thm-28-6|Theorem §28.6: Properties of Path Concatenation]]
 - [[§32 Lifting and the Fundamental Group of the Circle#^ex-32-1|Example §32.1: Lifting Loops on S¹ to Paths in ℝ]]
 - [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-1|Lemma §32.1: Path Lifting Lemma]]

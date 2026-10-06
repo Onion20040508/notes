@@ -11,9 +11,11 @@ tags: [group-theory, hub]
 - [[§30 Orbit–Stabilizer#^thm-30-6|Theorem §30.6: Burnside's Lemma]], in [[§30 Orbit–Stabilizer]]
 
 ## Its proof uses
-- [[§26 Stabilizers and Fixed Points#^def-26-1|Definition §26.1: Stabilizer; Fixed Points]]
-- [[§27 Orbits#^def-27-1|Definition §27.1: Orbit; Orbit Space]]
+- [[§26 Stabilizers and Fixed Points#^def-26-1|Definition §26.1: Stabilizer]]
+- [[§26 Stabilizers and Fixed Points#^def-26-2|Definition §26.2: Fixed Points]]
+- [[§27 Orbits#^def-27-1|Definition §27.1: Orbit]]
 - [[§27 Orbits#^prop-27-1|Proposition §27.1: Orbits Partition X]]
+- [[§27 Orbits#^def-27-2|Definition §27.2: Orbit Space]]
 - [[§30 Orbit–Stabilizer#^thm-30-3|Theorem §30.3: Orbit–Stabilizer]]
 
 ## Used in (Group Theory)

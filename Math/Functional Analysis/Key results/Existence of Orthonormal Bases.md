@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 24.12", "Lax §6.4, Thm 9"]
+aliases: ["MATH 556 28.1", "Lax §6.4, Thm 9"]
 tags: [functional-analysis, hub]
 ---
 ![[§28 Existence of Orthonormal Bases and Separability#^thm-28-1]]
 
 ## Treated in
-- [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|Theorem §28.1: Existence of Orthonormal Bases]], in [[§27 Orthonormal Sets and Bases]]
+- [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|Theorem §28.1: Existence of Orthonormal Bases]], in [[§28 Existence of Orthonormal Bases and Separability]]
 
 ## Its proof uses
 - [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|Theorem §6.2: Zorn's Lemma]]

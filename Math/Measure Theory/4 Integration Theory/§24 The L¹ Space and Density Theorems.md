@@ -259,7 +259,7 @@ Recall ([[§17 Simple Functions and Modes of Convergence#^def-17-2|Definition §
 > [!remark]- Connections
 > - Continuous functions are closed under uniform limits ([[§24 Uniform Convergence#^thm-24-2|451 §24.2]], [[§17 Simple Functions and Modes of Convergence#^thm-17-4|§17.4]]), so the density holds only for the weaker $L^1$ distance (cf. [[§35 Lᵖ as a Banach Space#^rem-35-4|Rem. §19.4]]).
 > - The $n = 2$ step integrates a product $\varphi(x)\,\chi_{R_2}(y)$ one variable at a time, an instance of [[Tonelli's Theorem]] ([[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|§25.3]]), proved only later; the Riemann analogue is the MATH 452 [[Fubini's Theorem]].
-> - Used for [[§25 Invariance Properties and Fubini's Theorem#^thm-25-2|Theorem §25.2]] (average continuity); $L^p$ version [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §15.12).
+> - Used for [[§25 Invariance Properties and Fubini's Theorem#^thm-25-2|Theorem §25.2]] (average continuity); $L^p$ version [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12]]. Topology version of compact = closed and bounded: [[Heine–Borel Theorem]] (590 §18.12).
 > - For all $1 \le p < \infty$, with smooth compactly supported approximants: [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|556 Thm. §19.4]].
 
 > [!remark] Remark: The Approximation Chain for $L^1$

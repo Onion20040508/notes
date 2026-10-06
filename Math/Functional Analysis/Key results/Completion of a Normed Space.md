@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 11.4", "completion is a Banach space", "Lax §5.1, Thm 3"]
+aliases: ["MATH 556 13.1", "completion is a Banach space", "Lax §5.1, Thm 3"]
 tags: [functional-analysis, hub]
 ---
 ![[§13 The Completion of a Normed Space#^thm-13-1]]
 
 ## Treated in
-- [[§13 The Completion of a Normed Space#^thm-13-1|Theorem §13.1: The Completion of a Normed Space is a Banach Space]], in [[§12 Completeness]]
+- [[§13 The Completion of a Normed Space#^thm-13-1|Theorem §13.1: The Completion of a Normed Space is a Banach Space]], in [[§13 The Completion of a Normed Space]]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-1|Definition §1.1: Linear Space]]

@@ -45,7 +45,7 @@ For two stationary charged particles, the force of attraction or repulsion is pr
 
 ^prop-122-1
 
-*B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that $1/r$ is harmonic in space away from the origin, is [[§33 The Laplacian in Spherical Coordinates#^rem-33-2|452 Rem. §19.2]]; in the plane the corresponding potential of a line charge is $\ln r$, [[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]] (Example §122.1).*
+*B&C omits the proof (it is physics: the inverse-square law and superposition). The mathematical core, that $1/r$ is harmonic in space away from the origin, is [[§33 The Laplacian in Spherical Coordinates#^rem-33-2|452 Rem. §19.2]]; in the plane the corresponding potential of a line charge is $\ln r$, [[§29 Conservation of Mass and Laplace's Equation#^thm-29-2|452 Thm. §29.2]] (Example §29.2).*
 
 > [!definition] Definition §122.3: Equipotentials
 > A surface along which $V(x, y)$ is constant is an **equipotential surface** (in the $xy$ plane, an equipotential curve $V(x, y) = c_1$).

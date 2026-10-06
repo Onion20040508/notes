@@ -12,7 +12,9 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
-- [[§4 Subgroups#^def-4-6|Definition §4.6: Order of a Group; Order of an Element; Cyclic Groups]]
+- [[§4 Subgroups#^def-4-6|Definition §4.6: Order of a Group]]
+- [[§4 Subgroups#^def-4-7|Definition §4.7: Order of an Element]]
+- [[§4 Subgroups#^def-4-8|Definition §4.8: Cyclic Groups]]
 - [[§6 Divisibility and Congruence#^lem-6-1|Lemma §6.1: Division Algorithm]]
 - [[§7 The Group ℤ∕nℤ#^lem-7-2|Lemma §7.2: Descending a Map to ℤ/nℤ]]
 - [[§15 Homomorphisms#^prop-15-3|Proposition §15.3: Surjectivity and Injectivity via Image and Kernel]]

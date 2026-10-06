@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 28.2", "Jacobian of the coordinate representation"]
+aliases: ["MATH 591 30.2", "Jacobian of the coordinate representation"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§30 The Differential in Coordinates#^thm-30-2]]
@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§30 The Differential in Coordinates#^thm-30-2|Theorem §30.2: The Matrix of the Differential]], in [[§30 The Differential in Coordinates]]
 
 ## Its proof uses
-- [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6: Pushforward — the Differential]]
 - [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|Proposition §28.5: The Differential Is a Linear Map of Abstract Tangent Spaces]]
+- [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Definition §28.6: Pushforward — the Differential]]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5|Theorem §29.5: Basis Theorem]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
 

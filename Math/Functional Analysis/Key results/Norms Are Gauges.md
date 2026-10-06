@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 10.1"]
+aliases: ["MATH 556 11.1"]
 tags: [functional-analysis, hub]
 ---
 ![[§11 Normed Linear Spaces#^prop-11-1]]
@@ -11,7 +11,8 @@ tags: [functional-analysis, hub]
 - [[§11 Normed Linear Spaces#^prop-11-1|Proposition §11.1: Norms and Gauges]], in [[§11 Normed Linear Spaces]]
 
 ## Its proof uses
-- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous; Subadditive]]
+- [[§5 Statement and Motivation#^def-5-1|Definition §5.1: Positive Homogeneous]]
+- [[§5 Statement and Motivation#^def-5-2|Definition §5.2: Subadditive]]
 - [[§7 Convex Sets and the Gauge#^def-7-1|Definition §7.1: Interior Point]]
 - [[§7 Convex Sets and the Gauge#^prop-7-1|Proposition §7.1: Positive Homogeneous Subadditive p Gives a Convex Set]]
 - [[§7 Convex Sets and the Gauge#^def-7-2|Definition §7.2: Gauge]]

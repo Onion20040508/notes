@@ -206,7 +206,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^def-11-7
 
 > [!remark]- Connections
-> - In linear algebra, the isometries of $\mathbb{R}^n$: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]].
+> - In linear algebra, the isometries of $\mathbb{R}^n$: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]]; in 493, [[§3 Basic Examples of Groups#^def-3-8|493 Def. §3.8]].
 > - $\mathrm{O}(n)$ is a manifold of dimension $\tfrac{n(n-1)}{2}$: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]].
 > - Used in Relativity: the Lorentz group $O(1, 3)$, the matrices preserving the form $\eta$, and its four pieces — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
@@ -233,7 +233,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^def-11-8
 
 > [!remark]- Connections
-> - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|493 Thm. §32.5]].
+> - The group in 493: [[§3 Basic Examples of Groups#^def-3-9|493 Def. §3.9]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|493 Thm. §32.5]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ and its action on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]].
 
 > [!definition] Definition §11.9: Complex Matrices and $\mathrm{GL}(n,\mathbb{C})$

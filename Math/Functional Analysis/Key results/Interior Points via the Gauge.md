@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 6.7", "Lax §3.1, Thm 3"]
+aliases: ["MATH 556 7.7", "Lax §3.1, Thm 3"]
 tags: [functional-analysis, hub]
 ---
 ![[§7 Convex Sets and the Gauge#^prop-7-7]]

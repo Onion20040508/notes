@@ -78,7 +78,7 @@ The main theorem says that the row space and the null space of a matrix are orth
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§23 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ([[§50 Orthogonal Complements and Angles#^prop-50-3|Proposition §50.3]] and [[§50 Orthogonal Complements and Angles#^cor-50-4|Corollary §50.4]] below).
-> - In a Hilbert space the orthogonal complement ([[§25 Projection and Orthogonal Decomposition#^def-25-1|556 Def. §25.1]]) of any set is a closed subspace, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]], and the double complement is the closed span, [[§25 Projection and Orthogonal Decomposition#^thm-25-6|556 Thm. §25.6]].
+> - In a Hilbert space the orthogonal complement ([[§25 Projection and Orthogonal Decomposition#^def-25-2|556 Def. §25.2]]) of any set is a closed subspace, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]], and the double complement is the closed span, [[§25 Projection and Orthogonal Decomposition#^thm-25-6|556 Thm. §25.6]].
 
 > [!theorem] Proposition §50.3: Dimension of the Orthogonal Complement
 > If $W$ is a subspace of $\mathbb{R}^n$, then

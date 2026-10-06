@@ -102,7 +102,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 ^def-73-3
 
 > [!remark]- Connections
-> - With $f$ and $g$ continuous on $[a, b]$, a parametric curve is a path in the sense of topology, a continuous map $[a, b] \to \mathbb{R}^2$ ([[§16 Connected Subspaces of ℝ#^def-16-3|590 Def. §16.3]]); the curve is its image. Smooth curves on manifolds: [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|591 Def. §31.2]].
+> - With $f$ and $g$ continuous on $[a, b]$, a parametric curve is a path in the sense of topology, a continuous map $[a, b] \to \mathbb{R}^2$ ([[§16 Connected Subspaces of ℝ#^def-16-3|590 Def. §16.3]]); the curve is its image. Smooth curves on manifolds: [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|591 Def. §31.1]].
 
 > [!theorem] Proposition §73.1: Parametric Equations of a Circle
 > The circle with center $(h, k)$ and radius $r$ is traced once counterclockwise, starting from $(h + r, k)$, by

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 14.3", "G/H ≅ X", "Lee Theorem 21.18"]
+aliases: ["MATH 591 15.3", "G/H ≅ X", "Lee Theorem 21.18"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3]]

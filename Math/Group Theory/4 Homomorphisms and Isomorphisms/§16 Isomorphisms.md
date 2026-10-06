@@ -15,7 +15,7 @@ tags: [group-theory, math493]
 ^def-16-1
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|Isomorphism]] (590 §21.4).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|Isomorphism]] (590 §26.4).
 > - Linear-algebra version: [[§10 Invertibility and Isomorphisms#^ladr-3-69|Isomorphism, isomorphic]] (LADR 3.69).
 > - First met informally in 250: [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-5|250 Prop. §21.5]] (remainders and congruence classes have the same tables).
 
@@ -32,7 +32,7 @@ tags: [group-theory, math493]
 *Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-5|Inverse of an Isomorphism is a Homomorphism]] (590 §21.5).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-5|Inverse of an Isomorphism is a Homomorphism]] (590 §26.5).
 
 > [!remark] Remark: Contrast with Topology
 > This is a genuinely algebraic phenomenon. “Preserves the operation” is an *equation* between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not have a continuous inverse: $[0, 2\pi) \to S^1$, $t \mapsto e^{it}$, is a continuous bijection whose inverse is discontinuous at $1$ ([[§10 Continuous Functions#^def-10-2|590 notes]]). That is why a homeomorphism must be *defined* as a continuous bijection with continuous inverse, whereas a group isomorphism is simply a bijective homomorphism.
@@ -40,7 +40,7 @@ tags: [group-theory, math493]
 ^rem-16-1
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^rem-26-5|Contrast with Topology]] (590 §26); the definition it contrasts with: [[§10 Continuous Functions#^def-10-2|Homeomorphism]] (590 §9.2).
+> - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^rem-26-5|Contrast with Topology]] (590 §26); the definition it contrasts with: [[§10 Continuous Functions#^def-10-2|Homeomorphism]] (590 §10.2).
 > - When a continuous bijection *is* a homeomorphism: [[Bijection from Compact to Hausdorff is a Homeomorphism]] (here $[0, 2\pi)$ is not compact).
 
 > [!theorem] Proposition §16.2: Composition; $\cong$ Is an Equivalence Relation
@@ -97,7 +97,7 @@ tags: [group-theory, math493]
 *Uses:* [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§16 Isomorphisms#^def-16-2|Def. §16.2]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §21.6).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §26.6).
 
 > [!theorem] Proposition §16.4: Homomorphisms and Orders of Elements
 > Let $\varphi: G \to H$ be a homomorphism and $g \in G$.
@@ -136,7 +136,7 @@ tags: [group-theory, math493]
 *Uses:* [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-4|§16.4]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§4 Subgroups#^def-4-3|Def. §4.3]], [[§4 Subgroups#^def-4-6|Def. §4.6]], [[§4 Subgroups#^def-4-7|Def. §4.7]], [[§4 Subgroups#^def-4-8|Def. §4.8]]
 
 > [!remark]- Connections
-> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §21.6).
+> - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §26.6).
 
 > [!remark] Remark: Using Invariants
 > To prove $G \not\cong H$, exhibit one of these quantities on which they differ. [[§16 Isomorphisms#^prop-16-3|WS 2.6]] used (2) and (3) with $n = 2$; [[§16 Isomorphisms#^prop-16-8|WS 2.7(1)]] used (3) with $n = 2$, or equivalently (5). Any property expressible purely in terms of the group operation is preserved in this way, by the same mechanism: transport the property through $\varphi$ or $\varphi^{-1}$ using the homomorphism identity. Conversely, matching invariants never *prove* isomorphism; for that one must construct the map, as in [[§16 Isomorphisms#^prop-16-7|WS 2.5]], [[§16 Isomorphisms#^prop-16-8|2.7(2)]], [[§16 Isomorphisms#^prop-16-9|2.8]].

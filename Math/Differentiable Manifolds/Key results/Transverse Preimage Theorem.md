@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 24.1", "transversality", "Lee Theorem 6.30"]
+aliases: ["MATH 591 26.1", "transversality", "Lee Theorem 6.30"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§26 Transversality#^thm-26-1]]
@@ -11,8 +11,9 @@ tags: [differentiable-manifolds, hub]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]], in [[§26 Transversality]]
 
 ## Its proof uses
-- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Point and Regular Value]]
+- [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§26 Transversality#^def-26-1|Definition §26.1: Codimension]]

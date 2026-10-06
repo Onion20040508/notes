@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 28.2", "Lax-Milgram", "Lax §6.3, Thm 6"]
+aliases: ["MATH 556 32.2", "Lax-Milgram", "Lax §6.3, Thm 6"]
 tags: [functional-analysis, hub]
 ---
 ![[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2]]

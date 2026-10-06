@@ -271,7 +271,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§28 Differentiation Theory#^def-28-2|Def. §28.2]]
 
 > [!remark]- Connections
-> - The refinement step mirrors the MATH 451 [[§32 The Definition of the Riemann Integral#^lem-32-1|Refinement Lemma]] (451 §32.2) for upper and lower sums.
+> - The refinement step mirrors the MATH 451 [[§32 The Definition of the Riemann Integral#^lem-32-1|Refinement Lemma]] (451 §32.1) for upper and lower sums.
 
 > [!theorem] Corollary §28.6: The Variation Function is Increasing
 > If $f \in BV([a,b])$, then the function $T(x) = \bigvee_a^x(f)$ is increasing on $[a, b]$.

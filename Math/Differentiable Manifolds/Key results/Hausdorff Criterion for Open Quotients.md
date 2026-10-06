@@ -14,15 +14,16 @@ tags: [differentiable-manifolds, hub]
 - [[§1 Point-Set Topology Review#^def-1-8|Definition §1.8: Hausdorff (T_2)]]
 - [[§3 Subspaces and Products#^def-3-3|Definition §3.3: Product Topology]]
 - [[§3 Subspaces and Products#^prop-3-8|Proposition §3.8: Box Characterization of Open Sets]]
-- [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1: Quotient Space and Quotient Topology]]
+- [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1: Quotient Space]]
 - [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]
+- [[§4 Quotient Spaces and Open Maps#^def-4-2|Definition §4.2: Quotient Topology]]
 - [[§4 Quotient Spaces and Open Maps#^def-4-4|Definition §4.4: Open Equivalence Relation]]
 - [[§6 Open Quotients#^def-6-1|Definition §6.1: Graph of a Relation]]
 
 ## Used in (Differentiable Manifolds)
-- [[§10 The Line with Two Origins#^ex-10-1|Example §10.1: The Line with Two Origins — via the Criterion]]
 - [[§6 Open Quotients#^cor-6-2|Corollary §6.2: The Diagonal Criterion]]
 - [[§9 Complex Projective Space#^prop-9-1|Proposition §9.1: ℂPⁿ is Hausdorff and Second Countable]]
+- [[§10 The Line with Two Origins#^ex-10-1|Example §10.1: The Line with Two Origins — via the Criterion]]
 - [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4: Compact Group and Compact Hausdorff Space]]
 - [[§13 Group Actions and Orbit Spaces#^thm-13-5|Theorem §13.5: Compactness of X Is Not Needed]]
 

@@ -77,7 +77,7 @@ tags: [linear-algebra]
 ^ladr-9-31
 
 > [!remark]- Connections
-> - As a group under composition this is the symmetric group, [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]], with two-line and cycle notation in [[§10 Cycle Notation and the Group S₃#^def-10-1|493 Def. §10.1]].
+> - As a group under composition this is the symmetric group, [[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]], with two-line and cycle notation in [[§10 Cycle Notation and the Group S₃#^def-10-1|493 Def. §10.1]], [[§10 Cycle Notation and the Group S₃#^def-10-2|493 Def. §10.2]].
 
 > [!definition] Definition 9.32: Sign of a permutation
 > $\operatorname{sign}(j_1,\dots,j_m)=(-1)^N$, where $N$ is the number of pairs $k<l$ such that $k$ appears after $l$ in the list (the number of *inversions*).

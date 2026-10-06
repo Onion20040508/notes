@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 8.1", "Lax §3.3, Thm 8"]
+aliases: ["MATH 556 9.2", "Lax §3.3, Thm 8"]
 tags: [functional-analysis, hub]
 ---
 ![[§9 The Complex Hahn–Banach Theorem#^thm-9-2]]

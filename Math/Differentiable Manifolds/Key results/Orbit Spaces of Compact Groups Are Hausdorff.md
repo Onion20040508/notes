@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 12.5", "Lee Proposition 21.4", "Lee Corollary 21.6"]
+aliases: ["MATH 591 13.5", "Lee Proposition 21.4", "Lee Corollary 21.6"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§13 Group Actions and Orbit Spaces#^thm-13-5]]

@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 21.4", "parallelogram law characterizes inner product norms", "Lax §6.1, Exercise 1"]
+aliases: ["MATH 556 24.2", "parallelogram law characterizes inner product norms", "Lax §6.1, Exercise 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2]]
 
 ## Treated in
-- [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|Theorem §24.2: Jordan–von Neumann]], in [[§23 Cauchy–Schwarz and the Induced Norm]]
+- [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|Theorem §24.2: Jordan–von Neumann]], in [[§24 The Parallelogram Law and Jordan–von Neumann]]
 
 ## Its proof uses
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]

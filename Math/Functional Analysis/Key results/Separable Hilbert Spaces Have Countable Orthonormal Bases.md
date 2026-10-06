@@ -2,21 +2,21 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 24.13", "Lax §6.4, Thm 9'"]
+aliases: ["MATH 556 28.3", "Lax §6.4, Thm 9'"]
 tags: [functional-analysis, hub]
 ---
 ![[§28 Existence of Orthonormal Bases and Separability#^thm-28-3]]
 
 ## Treated in
-- [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|Theorem §28.3: Separable Hilbert Spaces and Countable Bases]], in [[§27 Orthonormal Sets and Bases]]
+- [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|Theorem §28.3: Separable Hilbert Spaces and Countable Bases]], in [[§28 Existence of Orthonormal Bases and Separability]]
 
 ## Its proof uses
 - [[§25 Projection and Orthogonal Decomposition#^lem-25-1|Lemma §25.1: The Inner Product is Continuous]]
 - [[§27 Orthonormal Sets and Bases#^lem-27-1|Lemma §27.1: Pythagoras]]
 - [[§27 Orthonormal Sets and Bases#^def-27-2|Definition §27.2: Complete Orthogonal Set]]
-- [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1: Separable Space]]
 - [[§27 Orthonormal Sets and Bases#^prop-27-6|Proposition §27.6: The Orthonormal Expansion Converges]]
 - [[§27 Orthonormal Sets and Bases#^thm-27-8|Theorem §27.8: Characterizations of an Orthonormal Basis]]
+- [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1: Separable Space]]
 - [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Lemma §28.2: Gram–Schmidt]]
 
 ## Its proof uses (other subjects)

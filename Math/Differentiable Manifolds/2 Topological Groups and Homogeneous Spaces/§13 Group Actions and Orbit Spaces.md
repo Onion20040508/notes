@@ -34,7 +34,7 @@ tags: [differentiable-manifolds, math591]
 ^def-13-1
 
 > [!remark]- Connections
-> - Home of the algebra of actions: [[§25 Actions#^def-25-1|493 Def. §25.1 (Action; Right Action)]]; the permutation picture [[Actions Are Homomorphisms to S_X]].
+> - Home of the algebra of actions: [[§25 Actions#^def-25-1|493 Def. §25.1 (Action)]], [[§25 Actions#^def-25-2|493 Def. §25.2 (Right Action)]]; the permutation picture [[Actions Are Homomorphisms to S_X]].
 
 > [!example] Example §13.1: Matrix Groups Acting on Column Vectors
 > Each of the groups over $\mathbb{R}$ above ($\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}$, $\mathrm{O}$, $\mathrm{SO}$) acts on $X = \mathbb{R}^n$, regarded as column vectors, by matrix multiplication $g \cdot x = gx$: $Ix = x$, and $g(hx) = (gh)x$ by associativity of matrix multiplication. Likewise the complex groups act on $\mathbb{C}^n$.
@@ -76,7 +76,7 @@ tags: [differentiable-manifolds, math591]
 ^def-13-3
 
 > [!remark]- Connections
-> - Home: [[§27 Orbits#^def-27-1|493 Def. §27.1 (Orbit; Orbit Space)]], where the orbit is written $Gx$.
+> - Home: [[§27 Orbits#^def-27-1|493 Def. §27.1 (Orbit)]], where the orbit is written $Gx$.
 
 > [!remark] Remark: What an Orbit Is
 > The orbit of $x$ is the set of all places $x$ can be sent by the group: everything *reachable* from $x$ by acting with some $g \in G$. Two questions determine what an orbit looks like: what does the group *preserve*, and what does it *mix*? Whatever quantity is preserved by every $g$ is constant on orbits (so the orbit lies inside a level set of it); whatever the group can mix, it mixes within that level set. For rotations of $\mathbb{R}^n$ the preserved quantity is the norm $|x|$, and rotations mix everything of a given norm; so the orbits are spheres (Example [[§13 Group Actions and Orbit Spaces#^ex-13-4|§13.4]], Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]]).
@@ -349,7 +349,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§3 Subspaces and Products#^prop-3-8|§3.8]]
 
 > [!remark]- Connections
-> - The finite-subcover step is the argument of the [[Tube Lemma]] (590 §15.9), with the compact factor $G$.
+> - The finite-subcover step is the argument of the [[Tube Lemma]] (590 §18.8), with the compact factor $G$.
 
 > [!definition] Definition §13.6: Proper Map
 > A continuous map is **proper** if the preimage of every compact set is compact.

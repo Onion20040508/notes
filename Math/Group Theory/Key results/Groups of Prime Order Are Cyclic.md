@@ -12,8 +12,10 @@ tags: [group-theory, hub]
 
 ## Its proof uses
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]]
-- [[§4 Subgroups#^def-4-6|Definition §4.6: Order of a Group; Order of an Element; Cyclic Groups]]
 - [[§4 Subgroups#^prop-4-5|Proposition §4.5: ⟨g⟩ Is a Subgroup]]
+- [[§4 Subgroups#^def-4-6|Definition §4.6: Order of a Group]]
+- [[§4 Subgroups#^def-4-7|Definition §4.7: Order of an Element]]
+- [[§4 Subgroups#^def-4-8|Definition §4.8: Cyclic Groups]]
 - [[§4 Subgroups#^prop-4-8|Proposition §4.8: Every Element of a Finite Group Has Finite Order]]
 - [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]

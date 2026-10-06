@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 36.1", "embedded submanifold", "Lee Proposition 5.2"]
+aliases: ["MATH 591 38.1", "embedded submanifold", "Lee Proposition 5.2"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§38 Embeddings#^thm-38-1]]
@@ -13,7 +13,8 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
-- [[§35 Submanifolds#^def-35-1|Definition §35.1: Submanifold and Adapted Charts]]
+- [[§35 Submanifolds#^def-35-1|Definition §35.1: Submanifold]]
+- [[§35 Submanifolds#^def-35-2|Definition §35.2: Adapted Chart]]
 - [[§37 Immersions#^thm-37-1|Theorem §37.1: Local Normal Form for Immersions]]
 - [[§37 Immersions#^cor-37-2|Corollary §37.2: The Local Image of an Immersion]]
 - [[§38 Embeddings#^def-38-1|Definition §38.1: Embedding]]

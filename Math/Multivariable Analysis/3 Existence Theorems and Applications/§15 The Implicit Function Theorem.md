@@ -187,7 +187,7 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 > [!remark]- Connections
 > - MATH 451 relative: the one-variable [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”
 > - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
-> - Reappears in the second proof of the [[§24 The Change of Variables Formula#^thm-24-2|change of variables formula]] (§15.14).
+> - Reappears in the second proof of the [[§24 The Change of Variables Formula#^thm-24-2|change of variables formula]] (§24.2).
 > - Computational version: [[§110 The Chain Rule#^thm-110-6|Calc Thm. §110.6]] (a), with the implicit-differentiation formula $dy/dx = -F_x/F_y$ in [[§110 The Chain Rule#^thm-110-4|Calc Thm. §110.4]]; one-variable implicit functions: [[§21 Implicit Differentiation#^def-21-1|Calc Def. §21.1]].
 > - Used in ODEs: the implicit solutions $H_1(x) + H_2(y) = c$ of a separable equation, [[§6 Separable Differential Equations#^thm-6-1|331 Thm. §6.1]], and $\psi(x, y) = c$ of an exact equation, [[§11 Exact Differential Equations and Integrating Factors#^prop-11-1|331 Prop. §11.1]], define $y$ as a function of $x$ where the $y$-derivative is nonzero.
 

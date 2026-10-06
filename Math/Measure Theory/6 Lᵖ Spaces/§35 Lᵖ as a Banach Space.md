@@ -307,7 +307,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 
 > [!remark]- Connections
 > - Topological versions: [[§22 Countability Axioms#^def-22-4|dense (590 Def. §22.4)]]; the sequential form agrees with $\overline{\mathcal{D}} = X$ in a metric space by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]].
-> - 556 versions: [[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]] (dense, via the closure).
+> - 556 versions: [[§11 Normed Linear Spaces#^def-11-8|556 Def. §11.8]] (dense, via the closure, [[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]]).
 
 > [!definition] Definition §35.5: Separability
 > Let $(X, d)$ be a metric space. We say $(X, d)$ is **separable** if there exists a countable dense subset.

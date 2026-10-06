@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 20.5", "pairing theorem"]
+aliases: ["MATH 591 21.5", "pairing theorem"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§21 Linear Algebra Toolkit#^thm-21-5]]
@@ -14,6 +14,7 @@ tags: [differentiable-manifolds, hub]
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§21 Linear Algebra Toolkit#^prop-21-2|Proposition §21.2: The Dual Basis]]
 - [[§21 Linear Algebra Toolkit#^def-21-4|Definition §21.4: Bilinear Pairing]]
+- [[§21 Linear Algebra Toolkit#^def-21-5|Definition §21.5: Non-Degenerate Pairing]]
 
 ## Its proof uses (other subjects)
 - [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (Linear Algebra)

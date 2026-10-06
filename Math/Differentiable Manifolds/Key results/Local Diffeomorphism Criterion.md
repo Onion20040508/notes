@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 31.2", "Lee Theorem 4.5", "Lee Proposition 4.8"]
+aliases: ["MATH 591 33.2", "Lee Theorem 4.5", "Lee Proposition 4.8"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§33 Local Diffeomorphisms#^thm-33-2]]

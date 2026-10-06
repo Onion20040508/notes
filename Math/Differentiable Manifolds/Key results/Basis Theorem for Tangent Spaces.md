@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 27.5", "coordinate derivations form a basis", "Lee Proposition 3.15", "Lee Corollary 3.3"]
+aliases: ["MATH 591 29.5", "coordinate derivations form a basis", "Lee Proposition 3.15", "Lee Corollary 3.3"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-5]]

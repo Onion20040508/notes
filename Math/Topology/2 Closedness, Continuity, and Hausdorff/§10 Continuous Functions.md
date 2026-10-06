@@ -98,7 +98,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - A shortcut: [[Bijection from Compact to Hausdorff is a Homeomorphism|Bijection from Compact to Hausdorff]].
 > - Algebraic analogues: [[§26 Algebra Prerequisites꞉ Groups#^def-26-4|group isomorphism]], [[§10 Invertibility and Isomorphisms#^ladr-3-69|vector space isomorphism]]; see [[§26 Algebra Prerequisites꞉ Groups#^rem-26-7|Analogy: Topology ↔ Algebra]].
-> - The smooth analogue: diffeomorphism, [[§19 Smooth Functions and Smooth Maps#^def-19-3|591 Def. §19.3]].
+> - The smooth analogue: diffeomorphism, [[§19 Smooth Functions and Smooth Maps#^def-19-4|591 Def. §19.4]].
 
 > [!theorem] Proposition §10.2: Equivalent Definition of Homeomorphism
 > A bijection $f: X \to Y$ is a homeomorphism if and only if $f(U)$ is open $\Leftrightarrow$ $U$ is open.

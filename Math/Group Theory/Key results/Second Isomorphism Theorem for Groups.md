@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 41.4", "diamond isomorphism theorem", "H/(H ∩ N) ≅ HN/N"]
+aliases: ["MATH 493 41.5", "diamond isomorphism theorem", "H/(H ∩ N) ≅ HN/N"]
 tags: [group-theory, hub]
 ---
 ![[§41 The First and Second Isomorphism Theorems#^thm-41-5]]
@@ -11,7 +11,8 @@ tags: [group-theory, hub]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5: Second Isomorphism Theorem]], in [[§41 The First and Second Isomorphism Theorems]]
 
 ## Its proof uses
-- [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image and Kernel]]
+- [[§15 Homomorphisms#^def-15-2|Definition §15.2: Image]]
+- [[§15 Homomorphisms#^def-15-3|Definition §15.3: Kernel]]
 - [[§39 Sources of Normal Subgroups#^prop-39-2|Proposition §39.2: Kernels Are Normal]]
 - [[§40 Quotient Groups#^prop-40-2|Proposition §40.2: Every Normal Subgroup Is a Kernel]]
 - [[§41 The First and Second Isomorphism Theorems#^def-41-1|Definition §41.1: The Product Set HN]]

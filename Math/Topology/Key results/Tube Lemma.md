@@ -17,5 +17,5 @@ tags: [topology, hub]
 - [[§18 Compact Spaces#^thm-18-9|Theorem §18.9: Finite Product of Compact Spaces]]
 
 ## Connections
-- **Used for.** It proves [[§18 Compact Spaces#^thm-18-9|Finite Product of Compact Spaces]] (§15.8), hence compactness of boxes ∏[aᵢ, bᵢ] ([[§18 Compact Spaces#^cor-18-11|Corollary §18.11]]) and the [[Heine–Borel Theorem]].
+- **Used for.** It proves [[§18 Compact Spaces#^thm-18-9|Finite Product of Compact Spaces]] (§18.9), hence compactness of boxes ∏[aᵢ, bᵢ] ([[§18 Compact Spaces#^cor-18-11|Corollary §18.11]]) and the [[Heine–Borel Theorem]].
 - **Compactness is needed.** N = {(x, y) : |x| < 1/(|y| + 1)} contains the slice {0} × ℝ but no tube (−ε, ε) × ℝ ([[§18 Compact Spaces#^rem-18-7|Tube Lemma Intuition]]).

@@ -254,7 +254,7 @@ $$
 > [!remark]- Connections
 > - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
 > - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
-> - The Jacobian determinant returns as the area factor in the [[§24 The Change of Variables Formula#^thm-24-2|change of variables formula]] (§15.14, §15.20).
+> - The Jacobian determinant returns as the area factor in the [[§24 The Change of Variables Formula#^thm-24-2|change of variables formula]] (§24.2, §15.20).
 > - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§33 Local Diffeomorphisms#^thm-33-1|591 Thm. §33.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§33 Local Diffeomorphisms#^thm-33-2|591 Thm. §33.2]].
 > - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse; the Jacobian is |f′|²).
 
@@ -426,7 +426,7 @@ $$
 ^ex-16-4
 
 > [!remark]- Connections
-> - This $|J| = r$ is the factor in $dx\,dy = r\,dr\,d\theta$: [[§22 Properties of the Integral#^thm-22-6|Change of Variables to Polar Coordinates]] (§15.7), [[§25 Change of Variables on General Domains#^ex-25-1|Example §25.1]].
+> - This $|J| = r$ is the factor in $dx\,dy = r\,dr\,d\theta$: [[§22 Properties of the Integral#^thm-22-6|Change of Variables to Polar Coordinates]] (§22.6), [[§25 Change of Variables on General Domains#^ex-25-1|Example §25.1]].
 > - The conversion formulas with worked examples: [[§75 Polar Coordinates#^thm-75-2|Calc Thm. §75.2]].
 
 > [!remark] Remark: Reciprocal Jacobians

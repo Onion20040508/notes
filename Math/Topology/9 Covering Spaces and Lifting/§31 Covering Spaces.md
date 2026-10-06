@@ -25,7 +25,7 @@ tags: [topology, math590]
 ^def-31-2
 
 > [!remark]- Connections
-> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§36 Fibrations#^def-36-1|591 Def. §36.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§33 Local Diffeomorphisms#^rem-33-2|591 §31, Remark: Covering Maps]].
+> - In 591 the smooth analogue with a discrete fibre is a fibration, [[§36 Fibrations#^def-36-1|591 Def. §36.1]], and smooth covering maps such as ℝ → S¹ are local diffeomorphisms, [[§33 Local Diffeomorphisms#^rem-33-2|591 §33, Remark: Covering Maps]].
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, an infinitely-sheeted covering of the punctured plane).
 
 > [!definition] Definition §31.3: Covering Space

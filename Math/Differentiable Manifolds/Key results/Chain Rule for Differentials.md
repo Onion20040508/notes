@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 26.6", "chain rule on manifolds", "pushforward functoriality", "Lee Proposition 3.6"]
+aliases: ["MATH 591 28.6", "chain rule on manifolds", "pushforward functoriality", "Lee Proposition 3.6"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§28 Derivations and the Abstract Tangent Space#^thm-28-6]]

@@ -22,5 +22,5 @@ tags: [topology, hub]
 - [[§39 The Seifert–van Kampen Theorem#^thm-39-1|Theorem §39.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
 
 ## Connections
-- **Compactness.** Together with [[§19 Limit Point Compactness#^lem-19-3|total boundedness]], it gives sequentially compact ⇒ compact in [[§19 Limit Point Compactness#^thm-19-4|Equivalence for Metrizable Spaces]] (§16.2). The metric is used essentially ([[§19 Limit Point Compactness#^rem-19-2|Summary of the Equivalence]]).
-- **Typical use.** It subdivides I or I × I so that each small piece maps into a single member of an open cover. This is used in [[Path Lifting Lemma]], [[Homotopy Lifting Lemma]], [[§37 The Fundamental Group of Sⁿ#^thm-37-1|Generation by Open Cover]] (§27.1) and the hard direction of [[Seifert–van Kampen Theorem]].
+- **Compactness.** Together with [[§19 Limit Point Compactness#^lem-19-3|total boundedness]], it gives sequentially compact ⇒ compact in [[§19 Limit Point Compactness#^thm-19-4|Equivalence for Metrizable Spaces]] (§19.4). The metric is used essentially ([[§19 Limit Point Compactness#^rem-19-2|Summary of the Equivalence]]).
+- **Typical use.** It subdivides I or I × I so that each small piece maps into a single member of an open cover. This is used in [[Path Lifting Lemma]], [[Homotopy Lifting Lemma]], [[§37 The Fundamental Group of Sⁿ#^thm-37-1|Generation by Open Cover]] (§37.1) and the hard direction of [[Seifert–van Kampen Theorem]].

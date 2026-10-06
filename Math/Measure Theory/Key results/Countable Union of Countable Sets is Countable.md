@@ -24,9 +24,16 @@ tags: [measure-theory, hub]
 - [[§28 Differentiation Theory#^thm-28-1|Theorem §28.1: Monotone Functions Have Countably Many Discontinuities]]
 - [[§35 Lᵖ as a Banach Space#^cor-35-13|Corollary §35.13: Lᵖ is Separable for 1 ≤ p < ∞]]
 
+## Used in (Functional Analysis)
+- [[§27 Orthonormal Sets and Bases#^prop-27-4|Proposition §27.4: Only Countably Many Coefficients are Nonzero]]
+- [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|Theorem §28.3: Separable Hilbert Spaces and Countable Bases]]
+- [[§29 Sequence and Function Spaces#^prop-29-1|Proposition §29.1: ℓ^p is Separable for 1 ≤ p < ∞]]
+- [[§29 Sequence and Function Spaces#^prop-29-2|Proposition §29.2: c_0 is a Separable Banach Space]]
+- [[§29 Sequence and Function Spaces#^prop-29-4|Proposition §29.4: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+
 ## Connections
 - **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].
-- **Used for.** [[§3 Countability of Rationals and Unions#^cor-3-2|ℚ is countable]] (§3.2), the countably many dyadic cubes in [[§7 Structure of Open Sets#^prop-7-3|§7.3]], and the combined L-covering in countable subadditivity ([[Properties of Lebesgue Outer Measure]]). Later uses are [[§28 Differentiation Theory#^thm-28-1|Monotone Functions Have Countably Many Discontinuities]] (§18.1) and the [[§35 Lᵖ as a Banach Space#^cor-35-13|separability of Lᵖ]] (§19.20).
+- **Used for.** [[§3 Countability of Rationals and Unions#^cor-3-2|ℚ is countable]] (§3.2), the countably many dyadic cubes in [[§7 Structure of Open Sets#^prop-7-3|§7.3]], and the combined L-covering in countable subadditivity ([[Properties of Lebesgue Outer Measure]]). Later uses are [[§28 Differentiation Theory#^thm-28-1|Monotone Functions Have Countably Many Discontinuities]] (§28.1) and the [[§35 Lᵖ as a Banach Space#^cor-35-13|separability of Lᵖ]] (§35.13).
 - **Measure analogue.** Countable subadditivity makes a countable union of null sets null, so every countable set is null ([[§10 Lebesgue Outer Measure#^ex-10-2|Ex. §10.2]]). The converse fails: the [[§14 The Vitali Set and the Cantor Set#^prop-14-7|Cantor set]] is uncountable and null.
 - **Technique.** The “product + union closure” step of [[Measure Theory Problem-Solving Techniques#^rem-19-5|Technique 1: Reduction to Known Countability Results]]. MATH 451 proves ℚ countable by a diagonal listing instead ([[§2 The Set ℚ of Rational Numbers#^thm-2-5|451 §2.5]]).
 - **Also proved in [[Logic and Proofs]]:** [[§14 Counting Infinite Sets#^ex-14-4|250 Ex. §14.4]] (elementary proof for a denumerable union of denumerable sets, first pairwise disjoint, then in general).

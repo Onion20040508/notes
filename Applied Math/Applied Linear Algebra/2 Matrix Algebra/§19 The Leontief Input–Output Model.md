@@ -165,7 +165,7 @@ $$
 *Uses:* [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]], [[§16 Characterizations of Invertible Matrices#^cor-16-2|§16.2]], [[§80 Sequences#^thm-80-8|Calc Thm. §80.8]] ($s^m \to 0$), [[§81 Monotonic and Bounded Sequences#^thm-81-1|Calc Thm. §81.1]] (bounded monotonic sequences converge)
 
 > [!remark]- Connections
-> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§82 Series#^thm-82-1|Calc Thm. §82.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§30 Boundedness and Continuity#^def-30-2|556 Def. §30.2]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
+> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§82 Series#^thm-82-1|Calc Thm. §82.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§30 Boundedness and Continuity#^def-30-3|556 Def. §30.3]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
 
 In actual input–output models, powers of the consumption matrix approach the zero matrix rather quickly, so (8) is a practical way to compute $(I - C)^{-1}$. Likewise $C^m\mathbf{d} \to \mathbf{0}$ quickly for any $\mathbf{d}$, and (6) is a practical way to solve $(I - C)\mathbf{x} = \mathbf{d}$.
 

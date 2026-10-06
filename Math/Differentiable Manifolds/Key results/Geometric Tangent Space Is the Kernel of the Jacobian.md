@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 23.3", "T geo = ker F′", "Lee Proposition 5.38"]
+aliases: ["MATH 591 25.3", "T geo = ker F′", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§25 The Geometric Tangent Space#^thm-25-3]]
@@ -11,8 +11,9 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]], in [[§25 The Geometric Tangent Space]]
 
 ## Its proof uses
-- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Point and Regular Value]]
+- [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
 - [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
 - [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1: Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^lem-25-1|Lemma §25.1: Locality of the Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^lem-25-2|Lemma §25.2: The Geometric Tangent Space of a Graph]]

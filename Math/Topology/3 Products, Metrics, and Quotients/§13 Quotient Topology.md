@@ -135,7 +135,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 
 > [!remark]- Connections
 > - Equivalence relations, equivalence classes and the quotient set in 250: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-5|250 Def. §22.5]], [[§22 Partitions and Equivalence Relations#^def-22-6|250 Def. §22.6]]; the classes form a partition by [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
-> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§27 Orbits#^def-27-1|493 Def. §27.1]] (topologized as a quotient space in 591, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]]), and the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]].
+> - Algebraic quotients built by the same recipe in 493: the orbit space of an action, [[§27 Orbits#^def-27-2|493 Def. §27.2]] (topologized as a quotient space in 591, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]]), and the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]].
 > - When a quotient by an open equivalence relation is Hausdorff or second countable is decided in 591: [[§6 Open Quotients#^thm-6-1|591 Thm. §6.1]] (the graph of the relation is closed) and [[§6 Open Quotients#^thm-6-3|591 Thm. §6.3]].
 
 > [!example] Example §13.2: Circle as Quotient Space

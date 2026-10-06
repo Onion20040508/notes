@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 32.4", "local normal form for submersions", "Lee Theorem 4.12"]
+aliases: ["MATH 591 34.4", "local normal form for submersions", "Lee Theorem 4.12"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§34 Submersions#^thm-34-4]]
@@ -17,7 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§30 The Differential in Coordinates#^thm-30-2|Theorem §30.2: The Matrix of the Differential]]
 - [[§33 Local Diffeomorphisms#^thm-33-1|Theorem §33.1: Inverse Function Theorem]]
-- [[§34 Submersions#^def-34-1|Definition §34.1: Submersion and Immersion]]
+- [[§34 Submersions#^def-34-1|Definition §34.1: Submersion]]
 - [[§34 Submersions#^prop-34-1|Proposition §34.1: Dimension Constraints]]
 - [[§34 Submersions#^lem-34-3|Lemma §34.3: Diffeomorphisms onto Open Sets Are Charts]]
 

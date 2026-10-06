@@ -363,7 +363,7 @@ $$
 *Uses:* [[§21 The Definition of the Integral#^def-21-7|Def. §21.7]], [[§21 The Definition of the Integral#^rem-21-6|§21 Rem. (Evaluating the Integral)]], [[Fubini's Theorem|§23.1]]
 
 > [!remark]- Connections
-> - Special case of the general [[§24 The Change of Variables Formula#^thm-24-2|Change of Variables Formula]] (§15.14, §15.17), revisited in [[§25 Change of Variables on General Domains#^ex-25-1|Ex. §25.1]].
+> - Special case of the general [[§24 The Change of Variables Formula#^thm-24-2|Change of Variables Formula]] (§24.2, §15.17), revisited in [[§25 Change of Variables on General Domains#^ex-25-1|Ex. §25.1]].
 > - In forms language the factor $r$ is the pullback $dx \wedge dy = r\,dr \wedge d\theta$: [[§37 The Algebra of Differential Forms#^ex-37-4|Ex. §37.4]].
 > - Computational version: [[§117 Double Integrals in Polar Coordinates#^thm-117-1|Calc Thm. §117.1]] (with worked examples); with f ≡ 1 it gives the area of a polar region, [[§76 Calculus in Polar Coordinates#^thm-76-2|Calc Thm. §76.2]].
 

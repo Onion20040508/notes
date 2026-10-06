@@ -24,7 +24,7 @@ tags: [topology, hub]
 - [[§35 Deformation Retracts and Homotopy Type#^thm-35-5|Theorem §35.5: Homotopy Equivalence Induces Isomorphism on π₁]]
 
 ## Connections
-- **Immediate consequence.** [[§29 The Fundamental Group#^cor-29-6|π₁ is a Topological Invariant]] (§23.6): homeomorphic spaces have isomorphic π₁, so non-isomorphic groups prove spaces non-homeomorphic ([[§29 The Fundamental Group#^rem-29-4|remark after §23.6]], [[§38 Fundamental Group of Some Surfaces#^cor-38-6|Four Topologically Distinct Surfaces]]).
+- **Immediate consequence.** [[§29 The Fundamental Group#^cor-29-6|π₁ is a Topological Invariant]] (§29.6): homeomorphic spaces have isomorphic π₁, so non-isomorphic groups prove spaces non-homeomorphic ([[§29 The Fundamental Group#^rem-29-4|remark after §23.6]], [[§38 Fundamental Group of Some Surfaces#^cor-38-6|Four Topologically Distinct Surfaces]]).
 - **Retractions.** Applied to r ∘ j = id it gives j∗ injective and r∗ surjective ([[§34 Retractions and Fixed Points#^prop-34-3|Algebraic Properties of Retractions]]). This is the engine of the [[No-Retraction Theorem]] and of step 2 of [[Fundamental Theorem of Algebra (topological proof)]].
 - **Up to homotopy.** Combined with [[§34 Retractions and Fixed Points#^lem-34-1|Homotopic Maps and Induced Homomorphisms]], it yields [[Deformation Retract Induces Isomorphism on π₁]] and [[§35 Deformation Retracts and Homotopy Type#^thm-35-5|Homotopy Equivalence Induces Isomorphism on π₁]].
 - **Transport.** A π₁ computation made once transfers along any homeomorphism ([[§29 The Fundamental Group#^rem-29-5|Naturality: Structure Transports Across Homeomorphisms]]), e.g. between S¹ ⊂ ℂ and S¹ ⊂ ℝ² ([[§10 Continuous Functions#^ex-10-5|Example §10.5]]).

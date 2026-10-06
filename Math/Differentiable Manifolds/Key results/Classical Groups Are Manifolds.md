@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 11.6", "SL O SO U are manifolds", "Lee Example 1.27", "Lee Example 7.27"]
+aliases: ["MATH 591 12.6", "SL O SO U are manifolds", "Lee Example 1.27", "Lee Example 7.27"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§12 The Classical Groups Are Topological Manifolds#^thm-12-6]]

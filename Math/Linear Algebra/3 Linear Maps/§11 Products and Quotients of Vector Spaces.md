@@ -151,7 +151,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N ([[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]]); quotient rings by an ideal are the same construction.
-> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-2|556 Def. §2.2]] and [[§2 Quotient Spaces and Complements#^prop-2-1|556 Prop. §2.1]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-8|556 Thm. §14.8]].
+> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-3|556 Def. §2.3]] and [[§2 Quotient Spaces and Complements#^prop-2-1|556 Prop. §2.1]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-8|556 Thm. §14.8]].
 > - Same construction in 591, with its universal property: [[§21 Linear Algebra Toolkit#^def-21-6|591 Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|591 Prop. §21.6]]; it builds the cotangent space from germs in [[§32 The Cotangent Space#^def-32-3|591 Def. §32.3]].
 
 > [!example] Example 3.100: Quotient spaces (p. 100)

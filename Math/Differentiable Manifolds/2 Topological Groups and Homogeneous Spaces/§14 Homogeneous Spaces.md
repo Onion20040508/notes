@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 ^def-14-1
 
 > [!remark]- Connections
-> - Transitivity is defined in [[§27 Orbits#^def-27-1|493 Def. §27.1]]; the model transitive action is $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
+> - Transitivity is defined in [[§27 Orbits#^def-27-3|493 Def. §27.3]]; the model transitive action is $G$ on $G/H$, [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
 
 > [!definition] Definition §14.2: Homogeneous Space
 > A topological space $X$ is **homogeneous** for the topological group $G$ if $G$ acts continuously and transitively on $X$ ([[§14 Homogeneous Spaces#^def-14-1|Definition §14.1]]).

@@ -10,8 +10,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (1)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (53), [[· 3 Smooth Structures|3 Smooth Structures]] (41), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (17), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (30), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (7)
-**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (65), [[Multivariable Analysis]] (5)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (58), [[· 3 Smooth Structures|3 Smooth Structures]] (45), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (23), [[· 5 Maps of Constant Rank and Fibrations|5 Maps of Constant Rank and Fibrations]] (31), [[· 6 Bundles and Vector Fields|6 Bundles and Vector Fields]] (7)
+**Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (66), [[Multivariable Analysis]] (5)
 
 ## Sections
 - [[§1 Point-Set Topology Review]]
@@ -23,6 +23,7 @@ tags: [chapter, differentiable-manifolds]
 - [[§7 The Regular Value Theorem]]
 - [[§8 Spheres]]
 - [[§9 Complex Projective Space]]
+- [[§10 The Line with Two Origins]]
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)

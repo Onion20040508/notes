@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 18.2", "Lax §5.2, Lemma 7"]
+aliases: ["MATH 556 20.2", "Lax §5.2, Lemma 7"]
 tags: [functional-analysis, hub]
 ---
 ![[§20 Compactness and the Unit Ball#^lem-20-2]]

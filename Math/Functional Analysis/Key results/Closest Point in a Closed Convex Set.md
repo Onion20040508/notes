@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 22.2", "projection theorem", "Lax §6.2, Thm 2"]
+aliases: ["MATH 556 25.2", "projection theorem", "Lax §6.2, Thm 2"]
 tags: [functional-analysis, hub]
 ---
 ![[§25 Projection and Orthogonal Decomposition#^thm-25-2]]

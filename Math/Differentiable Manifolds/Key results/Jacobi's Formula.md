@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 11.1", "derivative of the determinant", "Lee Problem 7-4"]
+aliases: ["MATH 591 12.1", "derivative of the determinant", "Lee Problem 7-4"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§12 The Classical Groups Are Topological Manifolds#^prop-12-1]]
@@ -12,7 +12,8 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|Proposition §11.2: Properties of the Sign]]
-- [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Definition §11.4: Permutations and the Sign]]
+- [[§11 Topological Groups and Classical Matrix Groups#^def-11-3|Definition §11.3: The Symmetric Group]]
+- [[§11 Topological Groups and Classical Matrix Groups#^def-11-4|Definition §11.4: The Sign of a Permutation]]
 
 ## Its proof uses (other subjects)
 - [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47 Trace of a matrix]]

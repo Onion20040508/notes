@@ -19,7 +19,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - A subspace: [[§8 Null Spaces and Ranges#^ladr-3-13|The null space is a subspace]]. Detects injectivity: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]. Its dimension enters [[Fundamental theorem of linear maps]].
 > - Called the kernel elsewhere; quotient by it: [[First isomorphism theorem]].
-> - Group version: the kernel and image of a homomorphism, [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]].
+> - Group version: the kernel and image of a homomorphism, [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§15 Homomorphisms#^def-15-2|493 Def. §15.2]].
 > - Computational version: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]] (kernel); for x ↦ Ax it is Nul A, [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-1|235 Def. §30.1]].
 
 > [!example] Example 3.12: Null space (p. 59)

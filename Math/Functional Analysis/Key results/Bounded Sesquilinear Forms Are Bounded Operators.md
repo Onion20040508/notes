@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 28.1", "B(x,y) = (x, Ay)", "Lax cf.\ Ch. 31, Thm 1"]
+aliases: ["MATH 556 32.1", "B(x,y) = (x, Ay)", "Lax cf.\ Ch. 31, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1]]
@@ -14,7 +14,8 @@ tags: [functional-analysis, hub]
 - [[§22 Definition and Examples#^def-22-1|Definition §22.1: Inner Product; Scalar Product]]
 - [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]
 - [[§30 Boundedness and Continuity#^prop-30-1|Proposition §30.1: The Operator Norm]]
-- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map; Operator Norm]]
+- [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map]]
+- [[§30 Boundedness and Continuity#^def-30-3|Definition §30.3: Operator Norm]]
 - [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Definition §32.1: Sesquilinear Form; Bounded Form]]
 

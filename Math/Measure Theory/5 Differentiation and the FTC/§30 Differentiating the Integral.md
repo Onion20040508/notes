@@ -36,7 +36,7 @@ This section answers [[§28 Differentiation Theory#^rem-28-1|the central questio
 *Uses:* [[Inner Regularity of Lebesgue Measure|§13.3]], [[§30 Differentiating the Integral#^thm-30-1|§30.1]], [[§12 Borel Sets and Measure Spaces#^cor-12-7|§12.7]], [[§11 Lebesgue Measurable Sets#^ex-11-1|Ex. §11.1]], [[Lebesgue Measurable Sets Form a σ-Algebra|§11.3]]
 
 > [!remark]- Connections
-> - MATH 452 analogue for Jordan content: [[§25 Change of Variables on General Domains#^prop-25-2|C¹ Diffeomorphisms Preserve Jordan Measurability]] (452 §15.16).
+> - MATH 452 analogue for Jordan content: [[§25 Change of Variables on General Domains#^prop-25-2|C¹ Diffeomorphisms Preserve Jordan Measurability]] (452 §25.2).
 > - Applied to AC functions via [[§32 The Fundamental Theorem of Calculus for Lebesgue Integrals#^thm-32-6|§32.6]] (for $n = 1$) and to linear maps via [[§30 Differentiating the Integral#^thm-30-3|§30.3]].
 
 > [!theorem] Theorem §30.3: Linear Maps Preserve Null Sets
@@ -65,7 +65,7 @@ This section answers [[§28 Differentiation Theory#^rem-28-1|the central questio
 
 > [!remark]- Connections
 > - The formula $m(T(R)) = \vert\det T\vert\, m(R)$ is [[§37 Determinants#^ladr-9-61|LADR 9.61]] (a linear map scales volume by the absolute value of its determinant), which LADR proves via singular values ([[§28 Consequences of Singular Value Decomposition#^ladr-7-111|LADR 7.111]]) rather than elementary operations.
-> - In MATH 452 it is [[§25 Change of Variables on General Domains#^prop-25-5|Determinants Measure Volume Distortion]] (452 §15.19), the linear case of the [[Change of Variables Formula (multiple integrals)]].
+> - In MATH 452 it is [[§25 Change of Variables on General Domains#^prop-25-5|Determinants Measure Volume Distortion]] (452 §25.5), the linear case of the [[Change of Variables Formula (multiple integrals)]].
 
 > [!theorem] Corollary §30.4: Composition with Invertible Linear Maps Preserves Measurability
 > Let $f$ be a measurable function on $\mathbb{R}^n$ and $T: \mathbb{R}^n \to \mathbb{R}^n$ an invertible linear map. Then $f \circ T$ is measurable on $\mathbb{R}^n$.

@@ -116,7 +116,7 @@ tags: [linear-algebra]
 > - Test with one vector: [[Condition for a direct sum]]. Two subspaces: [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]].
 > - Direct sums organize the rest of the book: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]], [[Generalized eigenspace decomposition]].
 > - Physics: decomposing a state space into sectors (eigenspaces of a conserved quantity) is a direct-sum decomposition.
-> - Same notion in 556: [[§25 Projection and Orthogonal Decomposition#^def-25-3|556 Def. §25.3]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism. In 591 both are defined together: [[§21 Linear Algebra Toolkit#^def-21-7|591 Def. §21.7]].
+> - Same notion in 556: [[§25 Projection and Orthogonal Decomposition#^def-25-3|556 Def. §25.3]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism. In 591 they are defined one after the other: [[§21 Linear Algebra Toolkit#^def-21-7|591 Def. §21.7]] (direct sum) and [[§21 Linear Algebra Toolkit#^def-21-8|591 Def. §21.8]] (internal direct sum).
 
 > [!example] Example 1.42: A direct sum of two subspaces (p. 21)
 > In $\F^3$ let $U=\{(x,y,0)\}$ and $W=\{(0,0,z)\}$. Then $\F^3=U\oplus W$: every $(x,y,z)=(x,y,0)+(0,0,z)$, and the decomposition is unique since $U\cap W=\{0\}$ ([[§3 Subspaces#^ladr-1-46|1.46]]).

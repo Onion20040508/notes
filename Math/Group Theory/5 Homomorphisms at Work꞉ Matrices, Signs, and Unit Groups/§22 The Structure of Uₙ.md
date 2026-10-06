@@ -55,7 +55,7 @@ tags: [group-theory, math493]
 *Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|§9.3]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|§18.3]], [[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]], [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]], [[§22 The Structure of Uₙ#^lem-22-1|§22.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - Products of groups in MATH 590: [[§26 Algebra Prerequisites꞉ Groups#^def-26-5|Direct Product of Groups]] (590 §21.5).
+> - Products of groups in MATH 590: [[§26 Algebra Prerequisites꞉ Groups#^def-26-5|Direct Product of Groups]] (590 §26.5).
 
 > [!theorem] Corollary §22.3: Euler's Totient Formula
 > If $n = p_1^{a_1} \cdots p_r^{a_r}$ is the prime factorization of $n$, then
@@ -85,4 +85,4 @@ tags: [group-theory, math493]
 *[[§22 The Structure of Uₙ#^thm-22-2|Theorem §22.2]] for $n = 15 = 3 \cdot 5$: the class of $m$ sits in row $m \bmod 3$ and column $m \bmod 5$, and by the Chinese Remainder Theorem each cell holds exactly one class. The units (blue) are exactly the cells avoiding row $0$ and column $0$, a $2 \times 4$ block $U_3 \times U_5$; hence $U_{15} \cong U_3 \times U_5$ and $\varphi(15) = 2 \cdot 4 = 8$.*
 
 > [!remark]- Connections
-> - Replacing factors by isomorphic ones: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-7|Products of Isomorphic Groups]] (590 §21.7).
+> - Replacing factors by isomorphic ones: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-7|Products of Isomorphic Groups]] (590 §26.7).

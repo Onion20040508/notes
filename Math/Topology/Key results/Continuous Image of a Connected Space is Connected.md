@@ -28,7 +28,7 @@ tags: [topology, hub]
 - [[§41 SU(2) → SO(3)꞉ The Double Cover#^prop-41-1|Proposition §41.1: Conjugation by Unit Quaternions Is Rotation]]
 
 ## Connections
-- **Generalizes.** It is the engine of the [[§16 Connected Subspaces of ℝ#^thm-16-3|Intermediate Value Theorem]] (§14.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§16 Connected Subspaces of ℝ#^rem-16-2|IVT: The Power of Connectedness]]).
-- **Paths.** Applied to a path on [a, b], it gives [[§16 Connected Subspaces of ℝ#^thm-16-4|Path-Connected Implies Connected]] (§14.4). The converse fails for the [[§16 Connected Subspaces of ℝ#^ex-16-7|Topologist's Sine Curve]]: S is connected as a continuous image of (0, 1], hence so is its closure S̄, which is not path-connected.
+- **Generalizes.** It is the engine of the [[§16 Connected Subspaces of ℝ#^thm-16-3|Intermediate Value Theorem]] (§16.3), whose MATH 451 case on [a, b] is [[Intermediate Value Theorem]]. Without connectedness IVT fails, e.g. for a map on [0, 1] ∪ [2, 3] taking the values 0 and 2 ([[§16 Connected Subspaces of ℝ#^rem-16-2|IVT: The Power of Connectedness]]).
+- **Paths.** Applied to a path on [a, b], it gives [[§16 Connected Subspaces of ℝ#^thm-16-4|Path-Connected Implies Connected]] (§16.4). The converse fails for the [[§16 Connected Subspaces of ℝ#^ex-16-7|Topologist's Sine Curve]]: S is connected as a continuous image of (0, 1], hence so is its closure S̄, which is not path-connected.
 - **Covering spaces.** In [[Path Lifting Lemma]] and [[Homotopy Lifting Lemma]], the connected image of an interval or rectangle must lie in a single slice, and this forces uniqueness of lifts.
 - **Compact analogue.** [[Continuous Image of a Compact Space is Compact]]. Both results make the property a topological invariant ([[§15 Connected Spaces#^rem-15-1|Why Connectedness Matters]]).

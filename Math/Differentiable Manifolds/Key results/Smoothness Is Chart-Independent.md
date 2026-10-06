@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 18.2", "Lee Proposition 2.5"]
+aliases: ["MATH 591 19.2", "Lee Proposition 2.5"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§19 Smooth Functions and Smooth Maps#^prop-19-2]]
@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, hub]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-1|Definition §19.1: Smooth Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-2|Definition §19.2: Smooth Function on a Manifold]]
-- [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map and Diffeomorphism]]
+- [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map]]
 
 ## Its proof uses (other subjects)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)

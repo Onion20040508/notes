@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic properties [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
-> - Same definition for arbitrary subsets of a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]): [[§25 Projection and Orthogonal Decomposition#^def-25-1|556 Def. §25.1]]; the complement is always closed, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]].
+> - Same definition for arbitrary subsets of a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]): [[§25 Projection and Orthogonal Decomposition#^def-25-2|556 Def. §25.2]]; the complement is always closed, [[§25 Projection and Orthogonal Decomposition#^prop-25-3|556 Prop. §25.3]].
 > - In ℝ³: the plane through $\mathbf r_0$ with normal $\mathbf n$ is $\mathbf r_0 + \operatorname{span}(\mathbf n)^\perp$, [[§98 Equations of Lines and Planes#^thm-98-5|Calc Thm. §98.5]] (with worked examples).
 > - Computational version: [[§50 Orthogonal Complements and Angles#^def-50-1|235 Def. §50.1]] (the orthogonal complement of a subspace of $\mathbb R^n$).
 
