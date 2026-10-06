@@ -155,6 +155,8 @@ All four classical theorems have the same form: $\int_{\partial \Omega} \omega =
 
 ^thm-23-1
 
+*The course states this theorem without proof, after checking the four classical cases above; a proof for compact oriented manifolds with boundary is in Lee, Introduction to Smooth Manifolds, Ch. 16, the textbook of [[Differentiable Manifolds]].*
+
 ![[m452-23-2.svg]]
 *The induced orientation of $\partial\Omega$ (red) in each case of the theorem. $k=1$: the boundary of $[a,b]$ is $b$ with sign $+$ and $a$ with sign $-$ (outward directions), giving $f(b)-f(a)$. $k=2$, flat: $\partial D$ runs counterclockwise, $D$ on the left. $k=2$, curved: $\partial S$ follows the right-hand rule around $\hat{n}$. $k=3$: $\partial V$ carries the outward normal. One rule covers all four — outward direction first, then the orientation of the boundary — and it is the rule that makes $\int_{\partial\Omega}\omega = \int_\Omega d\omega$ come out with no stray signs.*
 

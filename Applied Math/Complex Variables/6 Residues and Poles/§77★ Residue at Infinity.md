@@ -264,7 +264,7 @@ With equations (2) and (6), the following theorem is established. It is sometime
 > \int_C \frac{4z - 5}{z(z - 1)}\,dz = 2\pi i\cdot 4 = 8\pi i ,
 > $$
 >
-> in agreement with §76, where the two residues $5$ and $-1$ were found. Consistently with [[§77★ Residue at Infinity#^cor-77-3|Corollary §77.3]], $\operatorname{Res}_{z=\infty} f = -4 = -(5 + (-1))$.
+> in agreement with [[§76 Cauchy's Residue Theorem#^ex-76-1|Example §76.1]], where the two residues $5$ and $-1$ were found. Consistently with [[§77★ Residue at Infinity#^cor-77-3|Corollary §77.3]], $\operatorname{Res}_{z=\infty} f = -4 = -(5 + (-1))$.
 >
 > *B&C: Sec. 77, Exercise 3*
 

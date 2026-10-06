@@ -221,7 +221,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - Computational version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (a continuous complex function on a closed bounded region is bounded and its modulus attains a maximum).
 
 > [!theorem] Theorem §15.4: Compact Subspace of Hausdorff is Closed
-> Every compact subspace of a Hausdorff space is closed.
+> Every compact subspace of a [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] space is closed.
 
 ^thm-15-4
 
@@ -314,7 +314,7 @@ $[a, b] \subseteq \mathbb{R}$ compact $\Rightarrow$ [[Extreme Value Theorem]].
 > - Concrete case: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^lem-51-1|342 Lemma §51.1]] (nested closed squares in the plane have a common point; the key step of Goursat's proof).
 
 > [!theorem] Theorem §15.7: Bijection from Compact to Hausdorff
-> Let $f: X \to Y$ be a bijective continuous function. If $X$ is compact and $Y$ is Hausdorff, then $f$ is a homeomorphism.
+> Let $f: X \to Y$ be a bijective continuous function. If $X$ is compact and $Y$ is [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]], then $f$ is a [[§9 Continuous Functions#^def-9-2|homeomorphism]].
 
 ^thm-15-7
 

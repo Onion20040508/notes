@@ -205,16 +205,16 @@ This is convenient: we may pick a *special* partition, usually the equal divisio
 > ($\Rightarrow$) Suppose $f$ is integrable. Given $\varepsilon$, by the characterizations of sup and inf there are partitions $P, Q$ with
 >
 > $$
-> L(f, P) \geq L(f) - \frac\varepsilon2, \qquad U(f, Q) \leq U(f) + \frac\varepsilon2.
+> L(f, P) > L(f) - \frac\varepsilon2, \qquad U(f, Q) < U(f) + \frac\varepsilon2.
 > $$
 >
 > Pass to the common refinement $P \cup Q$: by the Refinement Lemma the two estimates persist,
 >
 > $$
-> L(f, P\cup Q) \geq L(f) - \frac\varepsilon2, \qquad U(f, P\cup Q) \leq U(f) + \frac\varepsilon2,
+> L(f, P\cup Q) > L(f) - \frac\varepsilon2, \qquad U(f, P\cup Q) < U(f) + \frac\varepsilon2,
 > $$
 >
-> and since $L(f) = U(f)$, subtracting gives $U(f, P\cup Q) - L(f, P\cup Q) \leq \varepsilon$.
+> and since $L(f) = U(f)$, subtracting gives $U(f, P\cup Q) - L(f, P\cup Q) < \varepsilon$.
 >
 > ($\Leftarrow$) For any such $P$,
 >

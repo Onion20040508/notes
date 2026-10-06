@@ -204,6 +204,6 @@ The two expressions for residues need not have been written separately: with the
 >
 > using $h'(z_0) = g'''(z_0)/6$. This vanishes only when $3f'(z_0)g''(z_0) = f(z_0)g'''(z_0)$; for $e^z/z^2$ it is $\frac{2\cdot1}{2} - 0 = 1$.
 >
-> *Source: 342 practice final (Fall 2002), Q8a*
+> *Source: 342 practice final (Fall 2002), Q8(a)*
 
 ^ex-80-4

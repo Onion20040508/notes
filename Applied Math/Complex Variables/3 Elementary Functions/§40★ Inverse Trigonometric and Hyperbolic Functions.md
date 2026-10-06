@@ -92,7 +92,7 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 > \sin^{-1}(-i) = n\pi + i(-1)^{n + 1}\ln(1 + \sqrt2) \qquad (n = 0, \pm1, \pm2, \ldots) .
 > $$
 >
-> Check, by (13) of §37: $\sin\big(n\pi + i(-1)^{n+1}a\big) = \sin(n\pi)\cosh a + i\cos(n\pi)\sinh\big((-1)^{n+1}a\big) = i(-1)^n(-1)^{n+1}\sinh a = -i\sinh a$, and $\sinh a = 1$ for $a = \ln(1 + \sqrt2)$, since $\frac12\big((1 + \sqrt2) - (\sqrt2 - 1)\big) = 1$.
+> Check, by (13) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]]: $\sin\big(n\pi + i(-1)^{n+1}a\big) = \sin(n\pi)\cosh a + i\cos(n\pi)\sinh\big((-1)^{n+1}a\big) = i(-1)^n(-1)^{n+1}\sinh a = -i\sinh a$, and $\sinh a = 1$ for $a = \ln(1 + \sqrt2)$, since $\frac12\big((1 + \sqrt2) - (\sqrt2 - 1)\big) = 1$.
 >
 > *B&C: Sec. 40, Example*
 
@@ -124,7 +124,7 @@ Since $\sin w$, $\cos w$, $\tan w$ and their hyperbolic counterparts are rationa
 >
 > **(3).** $z = \cos w = \frac12(e^{iw} + e^{-iw})$ becomes, after multiplying by $2e^{iw}$, $(e^{iw})^2 - 2z\,e^{iw} + 1 = 0$. Its roots are $e^{iw} = z + (z^2 - 1)^{1/2}$, with product $1$, so they are nonzero, and as in the proof of Proposition §40.1 every root gives solutions $w$. Since $z^2 - 1 = i^2(1 - z^2)$, the two square roots of $z^2 - 1$ are $i$ times those of $1 - z^2$, so $e^{iw} = z + i(1 - z^2)^{1/2}$, and $iw = \log\big[z + i(1 - z^2)^{1/2}\big]$, which is (3).
 >
-> **(4).** Write $\zeta = e^{2iw}$. By (1) of §37,
+> **(4).** Write $\zeta = e^{2iw}$. By (1) of [[§37 The Trigonometric Functions sin z and cos z#^def-37-1|Definition §37.1]],
 >
 > $$
 > \tan w = \frac{\sin w}{\cos w} = \frac{e^{iw} - e^{-iw}}{i(e^{iw} + e^{-iw})} = \frac{\zeta - 1}{i(\zeta + 1)} ,
@@ -241,7 +241,7 @@ The functions $\cos^{-1}z$ and $\tan^{-1}z$ are also multiple-valued. When speci
 ## Examples
 
 > [!example] Example §40.2: sin z = 2, Two Ways
-> **(a) Real and imaginary parts.** By (13) of §37, $\sin z = 2$ means $\sin x\cosh y = 2$ and $\cos x\sinh y = 0$. If $\sinh y = 0$, then $y = 0$ and $\sin x = 2$: impossible. So $\cos x = 0$, $x = \frac\pi2 + n\pi$, $\sin x = (-1)^n$, and $(-1)^n\cosh y = 2$ forces $n$ even and $\cosh y = 2$, $y = \pm\cosh^{-1}2 = \pm\ln(2 + \sqrt3)$.
+> **(a) Real and imaginary parts.** By (13) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]], $\sin z = 2$ means $\sin x\cosh y = 2$ and $\cos x\sinh y = 0$. If $\sinh y = 0$, then $y = 0$ and $\sin x = 2$: impossible. So $\cos x = 0$, $x = \frac\pi2 + n\pi$, $\sin x = (-1)^n$, and $(-1)^n\cosh y = 2$ forces $n$ even and $\cosh y = 2$, $y = \pm\cosh^{-1}2 = \pm\ln(2 + \sqrt3)$.
 >
 > **(b) By (2).** With $z = 2$: $iz = 2i$ and $(1 - z^2)^{1/2} = (-3)^{1/2} = \pm\sqrt3\,i$, so
 >

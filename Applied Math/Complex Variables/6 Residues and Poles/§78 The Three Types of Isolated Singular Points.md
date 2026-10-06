@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§77★ Residue at Infinity]] · ↑ [[· 6 Residues and Poles]] · [[§79 Examples (The Three Types of Isolated Singular Points)]] →
 
-*Brown–Churchill, Section 78 · MAT 342 Practice Final (Spring 2005), Sample Final (Fall 1999).*
+*Brown–Churchill, Section 78 · MAT 342 Practice Finals (Spring 2005, Fall 1999).*
 
 The negative powers in the Laurent series of $f$ at an isolated singular point form its **principal part**, and the principal part sorts isolated singular points into three types. If it is zero, the singular point is **removable**: redefining $f$ at one point makes it analytic there. If it has infinitely many nonzero terms, the point is an **essential singular point**. In between, a principal part with finitely many terms, the last of them $b_m/(z - z_0)^m$, makes $z_0$ a **pole of order $m$**. The classification organizes the rest of the chapter: residues at poles have convenient formulas ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]), and the three types behave very differently near the point ([[§84 Behavior of Functions Near Isolated Singular Points|§84]]).
 
@@ -127,7 +127,7 @@ The essential singular point of $\sin(1/z)$ at the origin, with residue $1$, is 
 >
 > (The converse is true: at a removable singular point the residue is $0$, [[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]](a).)
 >
-> *Source: 342 sample final (Fall 1999), Q7c*
+> *Source: 342 practice final (Fall 1999), Q7(c)*
 
 ^ex-78-1
 
@@ -142,7 +142,7 @@ The essential singular point of $\sin(1/z)$ at the origin, with residue $1$, is 
 >
 > For $k = -n - 1$ with $n \ge 0$, that is, for every $k \le -1$, this is $c_{-n-1} = \frac{1}{2\pi i}\int_C z^nf(z)\,dz = 0$. So every coefficient of a negative power vanishes: the principal part is zero and $0$ is a removable singular point. Conversely, at a removable singular point all these integrals are $0$ by the Cauchy–Goursat theorem, once $f$ is made analytic at $0$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]).
 >
-> *Source: 342 practice final (Spring 2005), Q8a*
+> *Source: 342 practice final (Spring 2005), Q8(a)*
 
 ^ex-78-2
 

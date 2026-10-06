@@ -14,7 +14,7 @@ tags: [topology, math590]
 ^rem-20-1
 
 > [!theorem] Theorem §20.1: Every Metrizable Space is Normal
-> Every [[§11 Metric Topology#^def-11-4|metrizable]] space is normal.
+> Every [[§11 Metric Topology#^def-11-4|metrizable]] space is [[§19 Separation Axioms#^def-19-3|normal]].
 
 ^thm-20-1
 
@@ -68,7 +68,7 @@ tags: [topology, math590]
 ^rem-20-2
 
 > [!theorem] Theorem §20.2: Every Compact Hausdorff Space is Normal
-> Every compact Hausdorff space is normal.
+> Every [[§15 Compact Spaces#^def-15-2|compact]] [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] space is [[§19 Separation Axioms#^def-19-3|normal]].
 
 ^thm-20-2
 

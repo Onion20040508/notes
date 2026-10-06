@@ -196,7 +196,7 @@ of $ay'' + by' + cy = 0$ (1). It is not obvious how to find a second solution.
 ^thm-16-2
 
 > [!proof]+ Proof
-> The three cases are [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]] (with [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-2|Example §14.2]] for the Wronskian), [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2]] and Theorem §16.1. In each case the two functions form a fundamental set, so by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the combination contains every solution.
+> The three cases are [[§13 Homogeneous Differential Equations with Constant Coefficients#^thm-13-2|Theorem §13.2]] (with [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^ex-14-2|Example §14.2]] for the Wronskian), [[§15 Complex Roots of the Characteristic Equation#^thm-15-2|Theorem §15.2]] and [[§16 Repeated Roots; Reduction of Order#^thm-16-1|Theorem §16.1]]. In each case the two functions form a fundamental set, so by [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-4|Theorem §14.4]] the combination contains every solution.
 
 ^pf-16-2
 

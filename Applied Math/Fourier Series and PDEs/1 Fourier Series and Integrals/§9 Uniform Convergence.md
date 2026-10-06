@@ -120,7 +120,7 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 > |x| = \frac\pi2 - \frac4\pi\Big(\cos x + \frac{\cos 3x}{9} + \frac{\cos 5x}{25} + \cdots\Big) .
 > $$
 >
-> **By the coefficients.** $|a_n| \le \frac{4}{\pi n^2}$ and $\sum 1/n^2$ converges, so the series of absolute values of the coefficients converges, and by Theorem §9.2 the Fourier series converges uniformly on $-\pi \le x \le \pi$, to $|x|$ (Theorem §8.1), and in fact to the periodic extension of $|x|$ on the whole real line.
+> **By the coefficients.** $|a_n| \le \frac{4}{\pi n^2}$ and $\sum 1/n^2$ converges, so the series of absolute values of the coefficients converges, and by Theorem §9.2 the Fourier series converges uniformly on $-\pi \le x \le \pi$, to $|x|$ ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]), and in fact to the periodic extension of $|x|$ on the whole real line.
 >
 > **By the function.** The periodic extension is continuous, because $f(-\pi+) = \pi = f(\pi-)$, and $f$ is sectionally smooth (Theorem §9.3 below).
 >
@@ -248,7 +248,7 @@ For example, $f(x) = x$, $0 < x < 1$ ([[§7 Arbitrary Period and Half-Range Expa
 >
 > since $\int_0^{\pi/2}\sin kx\,dx = \frac1k$ for odd $k$. So $f(x) \sim \frac2\pi - \frac4\pi\sum_{n=1}^{\infty}\frac{1}{4n^2 - 1}\cos 2nx$, the series of [[§7 Arbitrary Period and Half-Range Expansions#^ex-7-1|Example §7.1]] with $x$ replaced by $x/\pi$.
 >
-> **(b)** Yes. $f$ is sectionally smooth ($f' = \cos x$ on $(0, \frac\pi2)$, $-\cos x$ on $(-\frac\pi2, 0)$, a corner at $0$), so the series converges to $\frac12(f(x+) + f(x-))$ (Theorem §8.1). Moreover $f(-\frac\pi2+) = 1 = f(\frac\pi2-)$, so the periodic extension is continuous on $\mathbb{R}$, and the limit is $f(x)$ at every point.
+> **(b)** Yes. $f$ is sectionally smooth ($f' = \cos x$ on $(0, \frac\pi2)$, $-\cos x$ on $(-\frac\pi2, 0)$, a corner at $0$), so the series converges to $\frac12(f(x+) + f(x-))$ ([[§8 Convergence of Fourier Series#^thm-8-1|Theorem §8.1]]). Moreover $f(-\frac\pi2+) = 1 = f(\frac\pi2-)$, so the periodic extension is continuous on $\mathbb{R}$, and the limit is $f(x)$ at every point.
 >
 > **(c)** Yes, for the same reasons: $f$ is continuous on $\mathbb{R}$ with a sectionally continuous derivative (Theorem §9.3). Alternatively, $\sum|a_n| = \frac4\pi\sum\frac{1}{4n^2 - 1}$ converges (Theorem §9.2).
 >

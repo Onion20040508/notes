@@ -4,7 +4,7 @@ type: example
 source: "[[Measure Theory]]"
 tags: ["math551", "workhorse"]
 ---
-The rationals $\mathbb{Q}$ (and $\mathbb{Q}^n$): countable, so a null set, yet dense, so they meet every interval. The tension between these two facts drives the course: their indicator on $[0,1]$ is the Dirichlet function (see [[Dirichlet and Thomae functions]] for MATH 451), which Riemann cannot integrate but Lebesgue integrates to $0$, and rational centres and translates give countable families wherever one is needed. Its uses in MATH 551:
+The rationals $\mathbb{Q}$ (and $\mathbb{Q}^n$): countable, so a null set, yet dense ([[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]), so they meet every interval. The tension between these two facts drives the course: their indicator on $[0,1]$ is the Dirichlet function (see [[Dirichlet and Thomae functions]] for MATH 451), which Riemann cannot integrate but Lebesgue integrates to $0$, and rational centres and translates give countable families wherever one is needed. Its uses in MATH 551:
 
 - $\mathbb{Q}$ is countable ([[§3 Countability of Rationals and Unions#^cor-3-2|§3]])
 - Balls with rational centres and radii form a countable family ([[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|§6]])

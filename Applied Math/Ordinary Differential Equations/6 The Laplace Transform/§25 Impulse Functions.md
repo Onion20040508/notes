@@ -66,14 +66,14 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 > \delta(t - t_0) = 0, \quad t \ne t_0; \qquad \int_{-\infty}^{\infty} \delta(t - t_0)\,dt = 1 . \qquad (9), (10)
 > $$
 >
-> No ordinary function satisfies both (7) and (8): a function that vanishes except at one point has integral $0$. $\delta$ is an example of a **generalized function**, usually called the **Dirac delta function**. All statements about it are understood through the pulses $d_\tau$, as in Definition §25.4.
+> No ordinary function satisfies both (7) and (8): a function that vanishes except at one point has integral $0$. $\delta$ is an example of a **generalized function**, usually called the **Dirac delta function**. All statements about it are understood through the pulses $d_\tau$, as in [[§25 Impulse Functions#^def-25-4|Definition §25.4]].
 >
 > *BDP: 6.5 (text), Equations (7)–(10)*
 
 ^def-25-3
 
 > [!remark]- Connections
-> - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|551 Ex. §11.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is [[§25 Impulse Functions#^thm-25-3|Theorem §25.3]], and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is Theorem §25.2.
+> - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§11 Borel Sets and Measure Spaces#^ex-11-2|551 Ex. §11.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is [[§25 Impulse Functions#^thm-25-3|Theorem §25.3]], and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is [[§25 Impulse Functions#^thm-25-2|Theorem §25.2]].
 > - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§32 Position Eigenstates and Continuous Resolutions#^prop-32-4|556 Prop. §32.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
 
 > [!definition] Definition §25.4: Transform and Integrals of δ
@@ -260,7 +260,7 @@ With [[§25 Impulse Functions#^thm-25-2|Theorem §25.2]], an impulse in the forc
 > y(t) = 3e^{-2t}\sin 4t + \frac14\,u_3(t)\,e^{-2(t - 3)}\sin\big(4(t - 3)\big) .
 > $$
 >
-> The first term is the free response to the initial velocity $12$; the second is the response to the unit impulse, which adds $1$ to $y'$ at $t = 3$ (Remark above, $a = 1$).
+> The first term is the free response to the initial velocity $12$; the second is the response to the unit impulse, which adds $1$ to $y'$ at $t = 3$ ([[§25 Impulse Functions#^rem-25-1|Remark: What an Impulse Does to y′]], $a = 1$).
 >
 > *Source: 331 Final (Fall 2021), Q5*
 
@@ -283,7 +283,7 @@ With [[§25 Impulse Functions#^thm-25-2|Theorem §25.2]], an impulse in the forc
 >
 > using $\sin(t - \pi) = -\sin t$.
 >
-> **Sketch.** The mass oscillates as $\sin t$ until $t = \pi$, when it passes through equilibrium with velocity $\cos\pi = -1$. The impulse $-1$ changes the velocity to $-2$ (Remark above), so from then on the motion is $2\sin t$: the same phase, twice the amplitude. The graph is the arch of $\sin t$ on $[0, \pi]$ followed by $2\sin t$, with a corner at $t = \pi$.
+> **Sketch.** The mass oscillates as $\sin t$ until $t = \pi$, when it passes through equilibrium with velocity $\cos\pi = -1$. The impulse $-1$ changes the velocity to $-2$ ([[§25 Impulse Functions#^rem-25-1|Remark: What an Impulse Does to y′]]), so from then on the motion is $2\sin t$: the same phase, twice the amplitude. The graph is the arch of $\sin t$ on $[0, \pi]$ followed by $2\sin t$, with a corner at $t = \pi$.
 >
 > *Source: 331 Written HW 5, Problem 6*
 

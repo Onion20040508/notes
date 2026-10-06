@@ -212,7 +212,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 ^ex-34-1
 
 > [!remark] Remark
-> So why did FTC I get its own telescoping proof? Because its hypothesis is weaker: $g'$ need only be *integrable*. Discontinuous derivatives genuinely occur (§28's middle rung $x^2\sin\tfrac1x$ has a derivative with no limit at $0$), and at a discontinuity point FTC II is silent about $G'$ — the shortcut above collapses. The telescope, using only the MVT on each subinterval, never needs to differentiate $G$ at all. A theorem proved twice, under different hypotheses, is really two theorems.
+> So why did FTC I get its own telescoping proof? Because its hypothesis is weaker: $g'$ need only be *integrable*. Discontinuous derivatives genuinely occur (§28's middle rung $x^2\sin\tfrac1x$ has a derivative with no limit at $0$), and at a discontinuity point FTC II is silent about $G'$ — the shortcut above collapses. The telescope, using only the [[Mean Value Theorem|MVT]] on each subinterval, never needs to differentiate $G$ at all. A theorem proved twice, under different hypotheses, is really two theorems.
 
 ^rem-34-2
 

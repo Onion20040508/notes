@@ -56,7 +56,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replacing $\alpha$ by $\alpha' \in (a,b)$ changes the two summands by $\mp \int_\alpha^{\alpha'} f\,dx$ — a *finite* proper integral, since additivity over subintervals passes through the defining limits — and the two changes cancel in the sum, also in the extended arithmetic above.
 
 > [!example] Example §36.1: The Reciprocal at Both Ends
-> $f(x) = \tfrac1x$ on $(0, \infty)$. At the far end, for $d > 1$, $\int_1^d \tfrac{dx}{x} = \log d$ [FTC I, logarithm on the usual credit], so
+> $f(x) = \tfrac1x$ on $(0, \infty)$. At the far end, for $d > 1$, $\int_1^d \tfrac{dx}{x} = \log d$ [by [[Fundamental Theorem of Calculus|FTC]] I, logarithm on the usual credit], so
 >
 > $$
 > \int_1^\infty \frac{dx}{x} = \lim_{d\to\infty} \log d = +\infty;
@@ -67,7 +67,7 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 ^ex-36-1
 
 > [!example] Example §36.2: The p-Integrals and the Loan of §15
-> For fixed $p \neq 1$ and $d > 1$, FTC I gives $\int_1^d x^{-p}\,dx = \tfrac{1}{1-p}\bigl( d^{1-p} - 1 \bigr)$, so
+> For fixed $p \neq 1$ and $d > 1$, [[Fundamental Theorem of Calculus|FTC]] I gives $\int_1^d x^{-p}\,dx = \tfrac{1}{1-p}\bigl( d^{1-p} - 1 \bigr)$, so
 >
 > $$
 > \int_1^\infty x^{-p}\,dx =
@@ -88,7 +88,7 @@ The definition does not depend on the choice of $\alpha$ [Ross Ex. 36.2]: replac
 > - Computational version: [[§51 Improper Integrals#^thm-51-1|Calc Thm. §51.1]]; the p-series, [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Calc Thm. §71.2]].
 
 > [!example] Example §36.3: A Symbol with No Meaning
-> $\int_0^d \sin x\,dx = 1 - \cos d$ [FTC I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
+> $\int_0^d \sin x\,dx = 1 - \cos d$ [by [[Fundamental Theorem of Calculus|FTC]] I] oscillates between $0$ and $2$ forever: as $d \to \infty$ the limit does not exist, *not even in* $[-\infty, +\infty]$. So $\int_0^\infty \sin x\,dx$ is not a convergent integral, not a divergent one — the symbol simply has **no meaning**. (Divergence to $\pm\infty$ is a defined outcome; this is worse.) The same holds for $\int_{-\infty}^0 \sin x\,dx$ and $\int_{-\infty}^\infty \sin x\,dx$.
 >
 > Yet the *symmetric* limit certainly exists:
 >
@@ -187,7 +187,7 @@ $$
 > F(t) = \int_{-\infty}^t g(x)\,dx, \qquad \text{forcing} \qquad \int_{-\infty}^\infty g(x)\,dx = F(\infty) = 1;
 > $$
 >
-> and if $g$ is continuous, then $F'(t) = g(t)$ for all $t$ — this is exactly the global form of FTC II established in §34.
+> and if $g$ is continuous, then $F'(t) = g(t)$ for all $t$ — this is exactly the global form of [[Fundamental Theorem of Calculus|FTC]] II established in §34.
 
 ^rem-36-3
 

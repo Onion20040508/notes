@@ -29,7 +29,7 @@ The product formula of [[§8 Products and Powers in Exponential Form|§8]] says 
 ^thm-9-1
 
 > [!proof]+ Proof
-> Let $\theta_1$ and $\theta_2$ denote any values of $\arg z_1$ and $\arg z_2$, so $z_1 = r_1e^{i\theta_1}$, $z_2 = r_2e^{i\theta_2}$. By (1) of §8,
+> Let $\theta_1$ and $\theta_2$ denote any values of $\arg z_1$ and $\arg z_2$, so $z_1 = r_1e^{i\theta_1}$, $z_2 = r_2e^{i\theta_2}$. By (1) of [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]],
 >
 > $$
 > z_1z_2 = (r_1r_2)e^{i(\theta_1 + \theta_2)} , \qquad (1)
@@ -37,7 +37,7 @@ The product formula of [[§8 Products and Powers in Exponential Form|§8]] says 
 >
 > with $r_1r_2 = |z_1||z_2| = |z_1z_2| > 0$. So $\theta_1 + \theta_2$ is a value of $\arg(z_1z_2)$ (Fig. 9 of B&C), which settles the case where $\arg z_1$ and $\arg z_2$ are specified.
 >
-> If, on the other hand, values of $\arg(z_1z_2)$ and $\arg z_1$ are specified, then by (2) of §7 they correspond to particular choices of $n$ and $n_1$ in the expressions
+> If, on the other hand, values of $\arg(z_1z_2)$ and $\arg z_1$ are specified, then by (2) of [[§7 Exponential Form#^def-7-1|Definition §7.1]] they correspond to particular choices of $n$ and $n_1$ in the expressions
 >
 > $$
 > \arg(z_1z_2) = (\theta_1 + \theta_2) + 2n\pi \quad (n = 0, \pm1, \ldots) \qquad\text{and}\qquad \arg z_1 = \theta_1 + 2n_1\pi \quad (n_1 = 0, \pm1, \ldots) .
@@ -82,7 +82,7 @@ Statement (2) is sometimes valid when $\arg$ is replaced everywhere by $\operato
 ^cor-9-2
 
 > [!proof]+ Proof
-> **(3)** If $z_2 = r_2e^{i\theta_2}$, then by (3) of §8, $z_2^{-1} = \frac{1}{r_2}e^{-i\theta_2}$. So $-\theta_2$ is a value of $\arg(z_2^{-1})$, and by (2) of §7 the set of all values is $\{-\theta_2 + 2n\pi\} = \{-(\theta_2 + 2(-n)\pi)\}$, which, as $n$ runs over the integers, is the set of negatives of all values of $\arg z_2$.
+> **(3)** If $z_2 = r_2e^{i\theta_2}$, then by (3) of [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]], $z_2^{-1} = \frac{1}{r_2}e^{-i\theta_2}$. So $-\theta_2$ is a value of $\arg(z_2^{-1})$, and by (2) of [[§7 Exponential Form#^def-7-1|Definition §7.1]] the set of all values is $\{-\theta_2 + 2n\pi\} = \{-(\theta_2 + 2(-n)\pi)\}$, which, as $n$ runs over the integers, is the set of negatives of all values of $\arg z_2$.
 >
 > **(4)** By Theorem §9.1 applied to $z_1/z_2 = z_1z_2^{-1}$,
 >
@@ -131,7 +131,7 @@ Statement (2) is sometimes valid when $\arg$ is replaced everywhere by $\operato
 >
 > **(a)** By (4), $\arg z = \arg(-2) - \arg(1 + \sqrt3\,i)$. With the values $\pi$ and $\frac\pi3$, one value of $\arg z$ is $\pi - \frac\pi3 = \frac{2\pi}{3}$. It lies in $(-\pi, \pi]$, so $\operatorname{Arg} z = \frac{2\pi}{3}$.
 >
-> **(b)** $\sqrt3 - i = 2e^{-i\pi/6}$ (fourth quadrant, reference angle $\frac\pi6$), so by (4) of §8, $z = 2^6e^{-i\pi} = -64$. A negative real number has $\operatorname{Arg} z = \pi$ (not $-\pi$, although $-\pi = 6\cdot(-\frac\pi6)$ is the value of $\arg z$ produced by the computation).
+> **(b)** $\sqrt3 - i = 2e^{-i\pi/6}$ (fourth quadrant, reference angle $\frac\pi6$), so by (4) of [[§8 Products and Powers in Exponential Form#^thm-8-2|Theorem §8.2]], $z = 2^6e^{-i\pi} = -64$. A negative real number has $\operatorname{Arg} z = \pi$ (not $-\pi$, although $-\pi = 6\cdot(-\frac\pi6)$ is the value of $\arg z$ produced by the computation).
 >
 > *B&C: Sec. 9, Exercise 1*
 

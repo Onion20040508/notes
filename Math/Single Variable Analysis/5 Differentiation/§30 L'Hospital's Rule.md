@@ -212,6 +212,6 @@ Sometimes we deal with abstract functions rather than explicit formulas.
 ^ex-30-5
 
 > [!example] Example §30.6: Another One-to-the-Infinity
-> $\displaystyle\lim_{x\to\infty}\left(1 - \frac1x\right)^x = e^{-1}$, by the same method as $\left(1-\tfrac2x\right)^x$ in the previous subsection (the exponent $x\log(1-\tfrac1x) \to -1$).
+> $\displaystyle\lim_{x\to\infty}\left(1 - \frac1x\right)^x = e^{-1}$, by the same method as $\left(1-\tfrac2x\right)^x$ in [[§30 L'Hospital's Rule#^ex-30-3|Example §30.3]] (the exponent $x\log(1-\tfrac1x) \to -1$).
 
 ^ex-30-6

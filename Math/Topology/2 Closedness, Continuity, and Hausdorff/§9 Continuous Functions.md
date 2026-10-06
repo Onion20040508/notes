@@ -152,7 +152,7 @@ tags: [topology, math590]
 ^prop-9-3
 
 > [!proof]+ Proof
-> $f|_A$ is a bijection $A \to f(A)$ (restriction of a bijection to a subset). For continuity: $f|_A$ is the restriction of $f$ to $A$, hence continuous ([[§9 Continuous Functions#^thm-9-4|Rule 4]] of Theorem §9.4 below). For the inverse: $(f|_A)^{-1} = (f^{-1})|_{f(A)}$, which is the restriction of $f^{-1}$ to $f(A)$, hence continuous.
+> $f|_A$ is a bijection $A \to f(A)$ (restriction of a bijection to a subset). For continuity: $f|_A$ is the restriction of $f$ to $A$, hence continuous as a map $A \to Y$ ([[§9 Continuous Functions#^thm-9-4|Rule 4]] of Theorem §9.4 below), and therefore also as a map into the subspace $f(A)$, which contains its image (Rule 5). For the inverse: $(f|_A)^{-1} = (f^{-1})|_{f(A)}$, which is the restriction of $f^{-1}$ to $f(A)$, followed by restricting the range to $A$, hence continuous by the same two rules.
 
 ^pf-9-3
 

@@ -21,4 +21,5 @@ tags: [complex-variables, hub]
 - (not cited later in the course)
 
 ## Connections
+- The much stronger Picard theorem, [[§79 Examples (The Three Types of Isolated Singular Points)#^thm-79-1|Theorem §79.1]] (B&C omits the proof), says that every complex value with at most one exception is actually taken, infinitely often. For $e^{1/z}$ at $0$ every value $w_0 \ne 0$ is taken and $0$ is the omitted one: [[§84 Behavior of Functions Near Isolated Singular Points#^ex-84-2|Example §84.2]].
 - See [[§84 Behavior of Functions Near Isolated Singular Points]] for context and examples.

@@ -22,4 +22,5 @@ tags: [complex-variables, hub]
 - [[§95★ Inverse Laplace Transforms#^thm-95-6|Theorem §95.6: Inverse Transform of a Rational Function]]
 
 ## Connections
+- The proof is the case $n = 1$ of Cauchy's inequality, [[§57 Some Consequences of the Extension#^thm-57-4|Theorem §57.4]]; the case $n = k + 1$ shows that an entire function with $|f(z)| \le A|z|^k + B$ is a polynomial of degree at most $k$, [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^ex-58-2|Example §58.2]].
 - See [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] for context and examples.

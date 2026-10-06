@@ -297,7 +297,7 @@ More generally, if $H$ is a polynomial in $x$ and $y$, a solution can be found i
 > \nabla^2w = 0, \qquad w(0, y) = 0, \quad w(a, y) = 0, \quad w(x, 0) = -v(x), \quad w(x, b) = -v(x) .
 > $$
 >
-> This is Theorem §36.1 with $f_1 = f_2 = -v$. The sine coefficients of $v$ are
+> This is [[§36 Potential in a Rectangle#^thm-36-1|Theorem §36.1]] with $f_1 = f_2 = -v$. The sine coefficients of $v$ are
 >
 > $$
 > \frac2a\int_0^a\frac{Hx(a - x)}{2}\sin\Big(\frac{n\pi x}{a}\Big)dx = \frac{2Ha^2\big(1 - (-1)^n\big)}{n^3\pi^3} ,

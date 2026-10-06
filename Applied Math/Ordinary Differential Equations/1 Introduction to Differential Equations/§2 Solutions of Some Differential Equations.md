@@ -119,7 +119,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 
 ^pf-2-1
 
-*Uses:* [[§2 Solutions of Some Differential Equations#^def-2-1|Def. §2.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (zero derivative on an interval), [[§29 The Mean Value Theorem#^cor-29-5|451 §29.5]] (equal derivatives)
+*Uses:* [[§2 Solutions of Some Differential Equations#^def-2-1|Def. §2.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (zero derivative on an interval), [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]] (equal derivatives)
 
 > [!remark]- Connections
 > - The step "zero derivative on an interval implies constant": [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], from the Mean Value Theorem; equal derivatives differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]].
@@ -161,7 +161,7 @@ Both models of [[§1 Some Basic Mathematical Models; Direction Fields|§1]] have
 > [!example] Example §2.2: Velocity of a Dropped Object
 > An object of mass $m = 10$ kg with drag coefficient $\gamma = 2$ kg/s is dropped from a height of $300$ m. Find its velocity at any time $t$.
 >
-> **Initial value problem.** The equation of motion is $\dfrac{dv}{dt} = 9.8 - \dfrac{v}{5}$ (equation (5) of §1). "Dropped" means it starts from rest: $v(0) = 0$.
+> **Initial value problem.** The equation of motion is $\dfrac{dv}{dt} = 9.8 - \dfrac{v}{5}$ (equation (5) of [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-1|§1]]). "Dropped" means it starts from rest: $v(0) = 0$.
 >
 > **Solve.** Directly (rather than by substituting into (20)): $\dfrac{dv}{dt} = -\dfrac{v - 49}{5}$, so for $v \ne 49$
 >

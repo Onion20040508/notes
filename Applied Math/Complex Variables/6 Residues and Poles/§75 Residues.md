@@ -195,6 +195,6 @@ The same reading-off of one coefficient settles a final-exam integral, $\frac{1}
 > [!remark] Remark: Derivatives Have Zero Residue
 > If $F$ is analytic in a punctured disk $0 < |z - z_0| < R$, then $f = F'$ has residue $0$ at $z_0$. Indeed, let $C$ be the circle $|z - z_0| = r$ with $0 < r < R$. Since $F$ is an antiderivative of $f$ in a domain containing $C$, the integral of $f$ around the closed contour $C$ is zero ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]), so $\operatorname{Res}_{z=z_0} f(z) = \frac{1}{2\pi i}\int_C f(z)\,dz = 0$ by (3). (In terms of series: differentiating the Laurent series of $F$ term by term, $\frac{d}{dz}(z - z_0)^n = n(z - z_0)^{n-1}$, and the power $-1$ would come only from $n = 0$, whose coefficient $n$ is $0$.) For instance, there is **no** function $F$ analytic in $0 < |z| < 1$ with $\operatorname{Res}_{z=0} F'(z) = 1$: $1/z$ has no antiderivative in the punctured disk, which is why $\log z$ needs a branch cut.
 >
-> *Source: 342 practice final (Spring 2005), Q8b*
+> *Source: 342 practice final (Spring 2005), Q8(b)*
 
 ^rem-75-2

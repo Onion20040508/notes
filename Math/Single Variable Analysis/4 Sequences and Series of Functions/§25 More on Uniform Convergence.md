@@ -20,7 +20,7 @@ Return to the integral question. Our earlier counterexample $(n+1)x^n$ had a fla
 > f_n(x) = 0 \ \text{ otherwise}.
 > $$
 >
-> Each $f_n$ is continuous, and by the area formula for triangles,
+> Each $f_n$ is continuous, and for $n \geq 2$ (so that the base $[0, \tfrac2n]$ lies inside $[0,1]$), by the area formula for triangles,
 >
 > $$
 > \int_0^1 f_n(x)\,dx = \frac12 \cdot \frac2n \cdot n = 1.

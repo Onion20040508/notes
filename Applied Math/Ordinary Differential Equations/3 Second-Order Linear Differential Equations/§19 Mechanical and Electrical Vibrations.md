@@ -291,7 +291,7 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 > [!example] Example §19.2: An Underdamped Spring from Data
 > **(a)** A 96 lb weight stretches a spring 3.2 ft in equilibrium. It is subject to friction with damping coefficient $\gamma = 18$ lb·s/ft. The weight is initially displaced 6 inches below equilibrium and given a downward velocity of 10 ft/s. Find its displacement for $t \ge 0$.
 >
-> **Set up** (Remark: Method above). $m = 96/32 = 3$, $k = 96/3.2 = 30$, $\gamma = 18$; $u(0) = \frac12$ ft (6 in, below is positive), $u'(0) = 10$ ft/s. So
+> **Set up** ([[§19 Mechanical and Electrical Vibrations#^rem-19-1|Remark: Method — Setting Up a Spring–Mass Problem]]). $m = 96/32 = 3$, $k = 96/3.2 = 30$, $\gamma = 18$; $u(0) = \frac12$ ft (6 in, below is positive), $u'(0) = 10$ ft/s. So
 >
 > $$
 > 3u'' + 18u' + 30u = 0, \quad\text{i.e.}\quad u'' + 6u' + 10u = 0 .

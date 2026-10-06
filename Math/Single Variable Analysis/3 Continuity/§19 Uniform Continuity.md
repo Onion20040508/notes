@@ -103,7 +103,7 @@ This is another important property of continuous functions on closed bounded int
 *Uses:* [[Bolzano–Weierstrass Theorem|§11.5]], [[§9 Limit Theorems for Sequences#^prop-9-5|§9.5]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
 > [!remark] Remark: Why Should This Be True?
-> Giving a proof is not enough — like driving, you need to *feel* it. Here is the suggestive (non-rigorous) picture. Continuity provides, at each point $x_0$, a quantity $\delta = \delta(\varepsilon, x_0) > 0$. The choice is not unique, and it seems reasonable that a “suitable” choice is *continuous* in $x_0$. But a continuous positive function on $[a,b]$ attains a *minimum* ([[Extreme Value Theorem|Extreme Value Theorem]]), which is then positive — and this worst-case value serves as the uniform $\delta$. **This is not a proof** — but it explains the theorem, and the actual proof mirrors it: assuming failure, we hunt down the “bad places” with Bolzano–Weierstrass, just as in the proof of the Extreme Value Theorem itself. Bolzano–Weierstrass is the basis of many results — that is why it is so important.
+> Giving a proof is not enough — like driving, you need to *feel* it. Here is the suggestive (non-rigorous) picture. Continuity provides, at each point $x_0$, a quantity $\delta = \delta(\varepsilon, x_0) > 0$. The choice is not unique, and it seems reasonable that a “suitable” choice is *continuous* in $x_0$. But a continuous positive function on $[a,b]$ attains a *minimum* ([[Extreme Value Theorem|Extreme Value Theorem]]), which is then positive — and this worst-case value serves as the uniform $\delta$. **This is not a proof** — but it explains the theorem, and the actual proof mirrors it: assuming failure, we hunt down the “bad places” with [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]], just as in the proof of the Extreme Value Theorem itself. Bolzano–Weierstrass is the basis of many results — that is why it is so important.
 
 ^rem-19-2
 
@@ -184,7 +184,7 @@ This is another important property of continuous functions on closed bounded int
 ^prop-19-4
 
 > [!proof]+ Proof
-> If not, then for every $n \in \mathbb{N}$ there is $x_n \in \Omega$ with $|f(x_n)| \geq n$. Since $\Omega$ is bounded, $(x_n)$ is a bounded sequence; by Bolzano–Weierstrass there is a convergent subsequence $x_{n_k} \to x_0$. Now $x_0$ *may not belong to $\Omega$* — this is exactly why we cannot argue with continuity at $x_0$, and why the Cauchy theorem above is the right tool: $(x_{n_k})$, being convergent, is a Cauchy sequence in $\Omega$, so $(f(x_{n_k}))$ is Cauchy, hence convergent, hence *bounded* (§10, §9). But $|f(x_{n_k})| \geq n_k \to \infty$ — a contradiction.
+> If not, then for every $n \in \mathbb{N}$ there is $x_n \in \Omega$ with $|f(x_n)| \geq n$. Since $\Omega$ is bounded, $(x_n)$ is a bounded sequence; by [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] there is a convergent subsequence $x_{n_k} \to x_0$. Now $x_0$ *may not belong to $\Omega$* — this is exactly why we cannot argue with continuity at $x_0$, and why the Cauchy theorem above is the right tool: $(x_{n_k})$, being convergent, is a Cauchy sequence in $\Omega$, so $(f(x_{n_k}))$ is Cauchy, hence convergent, hence *bounded* (§10, §9). But $|f(x_{n_k})| \geq n_k \to \infty$ — a contradiction.
 
 ^pf-19-4
 
@@ -193,7 +193,7 @@ This is another important property of continuous functions on closed bounded int
 ## A Criterion via the Derivative
 
 > [!theorem] Theorem §19.5: Bounded Derivative Implies Uniform Continuity
-> Let $f: (a, +\infty) \to \mathbb{R}$ be continuous. If $f$ is differentiable with bounded derivative — $|f'(x)| \leq M$ for all $x$ — then $f$ is uniformly continuous. The same holds on any interval $(a,b)$, $(a,b]$, $[a,b)$ with $f$ differentiable and $f'$ bounded on the interior.
+> Let $f: (a, +\infty) \to \mathbb{R}$ be continuous. If $f$ is differentiable with bounded derivative — $|f'(x)| \leq M$ for all $x$ — then $f$ is uniformly continuous. The same holds on any interval ($(a,b)$, $(a,b]$, $[a,b)$, $[a, +\infty)$, …) with $f$ continuous on it, differentiable and $f'$ bounded on the interior.
 
 ^thm-19-5
 

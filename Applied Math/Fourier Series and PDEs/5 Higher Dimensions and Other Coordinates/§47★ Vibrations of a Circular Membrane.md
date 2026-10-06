@@ -142,7 +142,7 @@ $$
 
 ^pf-47-2
 
-*Uses:* [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
+*Uses:* [[§39 Potential in a Disk#^prop-39-1|§39.1]], [[§45★ Bessel's Equation#^thm-45-5|§45.5]], [[§45★ Bessel's Equation#^thm-45-6|§45.6]], [[§45★ Bessel's Equation#^thm-45-10|§45.10]], [[§44★ Problems in Polar Coordinates#^thm-44-2|§44.2]], [[§46★ Temperature in a Cylinder#^prop-46-1|§46.1]]
 
 > [!definition] Definition §47.1: Standing Waves of the Membrane; Frequencies
 > The product solutions of (11)–(14),

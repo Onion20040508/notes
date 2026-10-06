@@ -130,7 +130,7 @@ tags: [topology, math590]
 > - The metric form of [[§2 Basis for a Topology#^lem-2-2|Lemma §2.2: Comparing Topologies via Bases]], with $\varepsilon$-balls as the bases.
 
 > [!theorem] Theorem §11.2: Euclidean and Square Metrics Induce Same Topology
-> The topologies on $\mathbb{R}^n$ induced by metrics $d$ (Euclidean) and $\rho$ (square) are the same as the product topology on $\mathbb{R}^n$.
+> The topologies on $\mathbb{R}^n$ induced by metrics $d$ (Euclidean) and $\rho$ (square) are the same as the [[§4 Product Topology#^def-4-1|product topology]] on $\mathbb{R}^n$.
 
 ^thm-11-2
 
@@ -198,14 +198,14 @@ tags: [topology, math590]
 >
 > If $x, y \in \mathbb{R}^\omega$, define $D(x, y) = \sup_i\left\{\frac{\bar{d}(x_i, y_i)}{i}\right\}$.
 >
-> Then $D$ is a metric that induces the product topology on $\mathbb{R}^\omega$.
+> Then $D$ is a metric that induces the [[§10 Product Topology on Arbitrary Products#^def-10-1|product topology]] on $\mathbb{R}^\omega$.
 >
 > (If not divided by $i$, then we have uniform metric, which $\neq$ product topology.)
 
 ^thm-11-3
 
-> [!proof]+ Proof
-> To be completed.
+> [!proof]+ Proof (to be filled)
+> *The lecture leaves the proof to be completed; see Munkres Theorem 20.5.*
 
 ^pf-11-3
 
@@ -233,7 +233,7 @@ tags: [topology, math590]
 *With $\varepsilon = \tfrac{d(x,y)}{2}$ the two open balls just touch. The midpoint (hollow) is at distance exactly $\varepsilon$ from both centers, so it lies in neither ball, and $B(x,\varepsilon) \cap B(y,\varepsilon) = \varnothing$. This is the triangle-inequality argument drawn out.*
 
 > [!theorem] Corollary §11.5
-> Any non-Hausdorff space is not metrizable.
+> Any non-[[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] space is not [[§11 Metric Topology#^def-11-4|metrizable]].
 
 ^cor-11-5
 

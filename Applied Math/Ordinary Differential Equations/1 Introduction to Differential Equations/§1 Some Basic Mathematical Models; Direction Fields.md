@@ -151,7 +151,7 @@ In the absence of predators, assume that a population of field mice grows at a r
 >
 > and $p(t) = 900$ is the equilibrium solution, at which growth and predation balance exactly.
 >
-> **Comparison with Example §1.2.** In both cases the equilibrium separates increasing from decreasing solutions. But here the other solutions *diverge* from it: a population slightly above $900$ grows ever faster, and one slightly below shrinks ever faster. So the equilibrium population, although it organizes the whole picture, would not be observed in practice.
+> **Comparison with [[§1 Some Basic Mathematical Models; Direction Fields#^ex-1-2|Example §1.2]].** In both cases the equilibrium separates increasing from decreasing solutions. But here the other solutions *diverge* from it: a population slightly above $900$ grows ever faster, and one slightly below shrinks ever faster. So the equilibrium population, although it organizes the whole picture, would not be observed in practice.
 >
 > More generally, with growth rate $r > 0$ and predation rate $k > 0$,
 >

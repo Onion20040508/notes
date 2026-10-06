@@ -212,7 +212,7 @@ with $\mathbf{A}$ a constant matrix, has the solution $\mathbf{x} = \mathbf{\Phi
 > e^{\mathbf{A}t} = \mathbf{I} + \sum_{k=1}^\infty \frac{\mathbf{A}^kt^k}{k!} = \mathbf{I} + \mathbf{A}t + \frac{\mathbf{A}^2t^2}{2!} + \cdots + \frac{\mathbf{A}^kt^k}{k!} + \cdots , \qquad (23)
 > $$
 >
-> taken entry by entry: the $(i, j)$ entry of $e^{\mathbf{A}t}$ is the sum of the $(i, j)$ entries of the terms. (Each of these $n^2$ series converges for every real $t$, by Theorem §33.3.)
+> taken entry by entry: the $(i, j)$ entry of $e^{\mathbf{A}t}$ is the sum of the $(i, j)$ entries of the terms. (Each of these $n^2$ series converges for every real $t$, by [[§33★ Fundamental Matrices#^thm-33-3|Theorem §33.3]].)
 >
 > *BDP: 7.7 (text), Equation (23)*
 
@@ -425,7 +425,7 @@ A system of linear equations, algebraic or differential, is hard mainly because 
 Now return to $\mathbf{x}' = \mathbf{A}\mathbf{x}$. Sections 7.5 and 7.6 started from the trial solution $\mathbf{x} = \boldsymbol{\xi}e^{rt}$; diagonalization gives another viewpoint, based on the coefficient matrix.
 
 > [!theorem] Theorem §33.8: Fundamental Matrix by Diagonalization
-> Let $\mathbf{A}$ have $n$ linearly independent eigenvectors $\boldsymbol{\xi}^{(1)}, \ldots, \boldsymbol{\xi}^{(n)}$ with eigenvalues $r_1, \ldots, r_n$, and let $\mathbf{T}$ and $\mathbf{D}$ be as in Theorem §33.7. Then:
+> Let $\mathbf{A}$ have $n$ linearly independent eigenvectors $\boldsymbol{\xi}^{(1)}, \ldots, \boldsymbol{\xi}^{(n)}$ with eigenvalues $r_1, \ldots, r_n$, and let $\mathbf{T}$ and $\mathbf{D}$ be as in [[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]]. Then:
 >
 > (a) the substitution $\mathbf{x} = \mathbf{T}\mathbf{y}$ (38) transforms $\mathbf{x}' = \mathbf{A}\mathbf{x}$ (37) into the uncoupled system
 >
@@ -448,13 +448,13 @@ Now return to $\mathbf{x}' = \mathbf{A}\mathbf{x}$. Sections 7.5 and 7.6 started
 ^thm-33-8
 
 > [!proof]+ Proof
-> **(a)** $\mathbf{T}$ is constant, so $\mathbf{x}' = \mathbf{T}\mathbf{y}'$, and (37) becomes $\mathbf{T}\mathbf{y}' = \mathbf{A}\mathbf{T}\mathbf{y}$ (39). Multiplying by $\mathbf{T}^{-1}$ gives $\mathbf{y}' = (\mathbf{T}^{-1}\mathbf{A}\mathbf{T})\mathbf{y}$ (40), which is (41) by Theorem §33.7.
+> **(a)** $\mathbf{T}$ is constant, so $\mathbf{x}' = \mathbf{T}\mathbf{y}'$, and (37) becomes $\mathbf{T}\mathbf{y}' = \mathbf{A}\mathbf{T}\mathbf{y}$ (39). Multiplying by $\mathbf{T}^{-1}$ gives $\mathbf{y}' = (\mathbf{T}^{-1}\mathbf{A}\mathbf{T})\mathbf{y}$ (40), which is (41) by [[§33★ Fundamental Matrices#^thm-33-7|Theorem §33.7]].
 >
 > **(b)** By [[§33★ Fundamental Matrices#^prop-33-5|Proposition §33.5]], $e^{\mathbf{D}t}$ is the diagonal matrix with entries $e^{r_kt}$. By [[§33★ Fundamental Matrices#^thm-33-3|Theorem §33.3]], $\mathbf{Q}' = \mathbf{D}\mathbf{Q}$, so each column of $\mathbf{Q}$ solves (41), and $\det\mathbf{Q}(t) = e^{(r_1 + \cdots + r_n)t} \ne 0$, so the columns are linearly independent at every $t$.
 >
 > **(c)** $\mathbf{\Psi}' = \mathbf{T}\mathbf{Q}' = \mathbf{T}\mathbf{D}\mathbf{Q} = \mathbf{A}\mathbf{T}\mathbf{Q} = \mathbf{A}\mathbf{\Psi}$, using $\mathbf{T}\mathbf{D} = \mathbf{A}\mathbf{T}$ (30). So the columns of $\mathbf{\Psi}$ solve (37), and $\det\mathbf{\Psi}(t) = \det\mathbf{T}\,\det\mathbf{Q}(t) \ne 0$. Column $k$ of $\mathbf{T}\mathbf{Q}$ is $\mathbf{T}(e^{r_kt}\mathbf{e}^{(k)}) = e^{r_kt}\boldsymbol{\xi}^{(k)}$, which gives (44).
 >
-> **(d)** $\mathbf{\Psi}(0) = \mathbf{T}\mathbf{Q}(0) = \mathbf{T}$. By Theorems §33.4 and §33.2(b), $e^{\mathbf{A}t} = \mathbf{\Phi}(t) = \mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(0) = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$.
+> **(d)** $\mathbf{\Psi}(0) = \mathbf{T}\mathbf{Q}(0) = \mathbf{T}$. By Theorems [[§33★ Fundamental Matrices#^thm-33-4|§33.4]] and [[§33★ Fundamental Matrices#^thm-33-2|§33.2]](b), $e^{\mathbf{A}t} = \mathbf{\Phi}(t) = \mathbf{\Psi}(t)\mathbf{\Psi}^{-1}(0) = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$.
 
 ^pf-33-8
 

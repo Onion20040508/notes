@@ -103,7 +103,7 @@ $$
 \end{aligned}
 $$
 
-Subtracting: the $Rh_{xy}$ and $Rh_{yx}$ terms cancel (equality of mixed partials: $h_{xy} = h_{yx}$, hence $C^2$; [[Schwarz–Clairaut Theorem|Theorem §5.1]]). The $R_z h_x h_y$ terms also cancel. What remains:
+Subtracting: the $Rh_{xy}$ and $Rh_{yx}$ terms cancel (equality of mixed partials $h_{xy} = h_{yx}$, [[Schwarz–Clairaut Theorem|Theorem §5.1]], which is why $h$ is assumed $C^2$). The $R_z h_x h_y$ terms also cancel. What remains:
 
 $$
 \begin{aligned}

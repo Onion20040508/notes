@@ -196,7 +196,7 @@ One difference from a single second-order equation shows here. For a repeated ro
 > [!proof]+ Proof
 > Write $\mathbf{N} = \mathbf{A} - \rho\mathbf{I}$, so (22) and (24) read $\mathbf{N}\boldsymbol{\xi} = \mathbf{0}$ and $\mathbf{N}\boldsymbol{\eta} = \boldsymbol{\xi}$.
 >
-> **Solutions.** $\mathbf{x}^{(1)}$ is a solution as in Proposition §34.1. For $\mathbf{x}^{(2)}$,
+> **Solutions.** $\mathbf{x}^{(1)}$ is a solution as in [[§34★ Repeated Eigenvalues#^prop-34-1|Proposition §34.1]]. For $\mathbf{x}^{(2)}$,
 >
 > $$
 > \mathbf{x}^{(2)\prime} = \rho\boldsymbol{\xi}te^{\rho t} + (\boldsymbol{\xi} + \rho\boldsymbol{\eta})e^{\rho t}, \qquad \mathbf{A}\mathbf{x}^{(2)} = (\mathbf{A}\boldsymbol{\xi})te^{\rho t} + (\mathbf{A}\boldsymbol{\eta})e^{\rho t} = \rho\boldsymbol{\xi}te^{\rho t} + (\rho\boldsymbol{\eta} + \boldsymbol{\xi})e^{\rho t},
@@ -332,7 +332,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > \mathbf{\Psi}(t) = \mathbf{T}e^{\mathbf{J}t} = \begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix}\begin{pmatrix} e^{2t} & te^{2t} \\ 0 & e^{2t} \end{pmatrix} = \begin{pmatrix} e^{2t} & te^{2t} \\ -e^{2t} & -e^{2t} - te^{2t} \end{pmatrix}, \qquad (35)
 > $$
 >
-> the fundamental matrix (25) of Example §34.2.
+> the fundamental matrix (25) of [[§34★ Repeated Eigenvalues#^ex-34-2|Example §34.2]].
 >
 > *BDP: 7.8 (text)*
 
@@ -389,7 +389,7 @@ A matrix can be diagonalized as in [[§33★ Fundamental Matrices#^thm-33-7|Theo
 > e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{J}t}\mathbf{T}^{-1} .
 > $$
 >
-> For [[§34★ Repeated Eigenvalues#^ex-34-3|Example §34.3]] this gives $\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} e^{2t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} = e^{2t}\begin{pmatrix} 1 - t & -t \\ t & 1 + t \end{pmatrix}$, the $\mathbf{\Phi}(t)$ of Example §34.2. The entries $te^{\lambda t}$ and $\frac12t^2e^{\lambda t}$ of $e^{\mathbf{J}t}$ are where the factors $t$, $t^2$ in the solutions come from.
+> For [[§34★ Repeated Eigenvalues#^ex-34-3|Example §34.3]] this gives $\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} e^{2t}\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix} = e^{2t}\begin{pmatrix} 1 - t & -t \\ t & 1 + t \end{pmatrix}$, the $\mathbf{\Phi}(t)$ of [[§34★ Repeated Eigenvalues#^ex-34-2|Example §34.2]]. The entries $te^{\lambda t}$ and $\frac12t^2e^{\lambda t}$ of $e^{\mathbf{J}t}$ are where the factors $t$, $t^2$ in the solutions come from.
 
 ^rem-34-2
 

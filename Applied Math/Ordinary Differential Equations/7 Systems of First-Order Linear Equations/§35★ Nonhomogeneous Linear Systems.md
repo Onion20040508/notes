@@ -237,7 +237,7 @@ where $\mathbf{A}$ is an $n \times n$ diagonalizable constant matrix. Diagonaliz
 > \mathbf{v}(t) = \begin{pmatrix} 1 \\ 1 \end{pmatrix}te^{-t} - \begin{pmatrix} 0 \\ 1 \end{pmatrix}e^{-t} + \begin{pmatrix} 1 \\ 2 \end{pmatrix}t - \frac13\begin{pmatrix} 4 \\ 5 \end{pmatrix} . \qquad (21)
 > $$
 >
-> **Comparison with Example §35.1.** The $e^{-t}$ term differs from the particular solution in (15). The two differ by $\frac12(1, 1)^Te^{-t}$, a solution of the homogeneous system. Choosing $k = \frac12$ in (20) gives $\mathbf{b} = (\frac12, -\frac12)^T = \frac12(1, -1)^T$, and then the two particular solutions agree.
+> **Comparison with [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Example §35.1]].** The $e^{-t}$ term differs from the particular solution in (15). The two differ by $\frac12(1, 1)^Te^{-t}$, a solution of the homogeneous system. Choosing $k = \frac12$ in (20) gives $\mathbf{b} = (\frac12, -\frac12)^T = \frac12(1, -1)^T$, and then the two particular solutions agree.
 >
 > *BDP prints this value as $\mathbf{b} = -\frac12(1, 1)^T$, which is not of the form (20); the value from (20) is $\frac12(1, -1)^T$, which matches (15).*
 >
@@ -357,7 +357,7 @@ with $\mathbf{P}$ and $\mathbf{g}$ continuous on $\alpha < t < \beta$, and suppo
 > \mathbf{x} = c_1\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-3t} + c_2\begin{pmatrix} 1 \\ 1 \end{pmatrix}e^{-t} + \frac12\begin{pmatrix} 1 \\ -1 \end{pmatrix}e^{-t} + \begin{pmatrix} 1 \\ 1 \end{pmatrix}te^{-t} + \begin{pmatrix} 1 \\ 2 \end{pmatrix}t - \frac13\begin{pmatrix} 4 \\ 5 \end{pmatrix}, \qquad (38)
 > $$
 >
-> the same as (15) of [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Example §35.1]], and equivalent to (21) of Example §35.2.
+> the same as (15) of [[§35★ Nonhomogeneous Linear Systems#^ex-35-1|Example §35.1]], and equivalent to (21) of [[§35★ Nonhomogeneous Linear Systems#^ex-35-2|Example §35.2]].
 >
 > *BDP: Example 7.9.3*
 

@@ -54,7 +54,7 @@ The conjugate $\bar z = x - iy$ is the mirror image of $z$ in the real axis. Con
 > \overline{z_1z_2} = (x_1x_2 - y_1y_2) - i(y_1x_2 + x_1y_2) ,
 > $$
 >
-> while, by the product rule (8) of §1,
+> while, by the product rule (8) of [[§1 Sums and Products#^prop-1-2|Proposition §1.2]],
 >
 > $$
 > \bar z_1\,\bar z_2 = (x_1 - iy_1)(x_2 - iy_2) = \big(x_1x_2 - (-y_1)(-y_2)\big) + i\big((-y_1)x_2 + x_1(-y_2)\big) = (x_1x_2 - y_1y_2) - i(y_1x_2 + x_1y_2) .
@@ -103,7 +103,7 @@ The conjugate $\bar z = x - iy$ is the mirror image of $z$ in the real axis. Con
 ^prop-6-3
 
 > [!proof]+ Proof
-> By (8) of §1, $(x + iy)(x - iy) = \big(x^2 - y(-y)\big) + i\big(yx + x(-y)\big) = x^2 + y^2$, which is $|z|^2$ by (1) of §4.
+> By (8) of [[§1 Sums and Products#^prop-1-2|Proposition §1.2]], $(x + iy)(x - iy) = \big(x^2 - y(-y)\big) + i\big(yx + x(-y)\big) = x^2 + y^2$, which is $|z|^2$ by (1) of §4.
 
 ^pf-6-3
 
@@ -129,7 +129,7 @@ Identity (7) explains the [[§3 Further Algebraic Properties#^rem-3-1|Method —
 > |z_1z_2|^2 = (z_1z_2)\big(\overline{z_1z_2}\big) = (z_1z_2)(\bar z_1\,\bar z_2) = (z_1\bar z_1)(z_2\bar z_2) = |z_1|^2|z_2|^2 = \big(|z_1||z_2|\big)^2 ,
 > $$
 >
-> and since a modulus is never negative, (8) follows. For (9) (B&C: "verified in a similar way"), by (7), (5) and the quotient rule (12) of §3,
+> and since a modulus is never negative, (8) follows. For (9) (B&C: "verified in a similar way"), by (7), (5) and the quotient rule (12) of [[§3 Further Algebraic Properties#^prop-3-3|Proposition §3.3]],
 >
 > $$
 > \Big|\frac{z_1}{z_2}\Big|^2 = \frac{z_1}{z_2}\cdot\frac{\bar z_1}{\bar z_2} = \frac{z_1\bar z_1}{z_2\bar z_2} = \frac{|z_1|^2}{|z_2|^2} ,
@@ -148,7 +148,7 @@ Identity (7) explains the [[§3 Further Algebraic Properties#^rem-3-1|Method —
 > |z_1 + z_2|^2 = (z_1 + z_2)(\bar z_1 + \bar z_2) = z_1\bar z_1 + \big(z_1\bar z_2 + \overline{z_1\bar z_2}\big) + z_2\bar z_2 ,
 > $$
 >
-> using $\overline{z_1\bar z_2} = \bar z_1z_2$ by (4). By (6) and (3) of §4, and (8),
+> using $\overline{z_1\bar z_2} = \bar z_1z_2$ by (4). By (6), (3) of [[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1]] and (8),
 >
 > $$
 > z_1\bar z_2 + \overline{z_1\bar z_2} = 2\operatorname{Re}(z_1\bar z_2) \le 2|z_1\bar z_2| = 2|z_1||z_2| .
@@ -212,13 +212,13 @@ Identity (7) explains the [[§3 Further Algebraic Properties#^rem-3-1|Method —
 > [!example] Example §6.4: Bounds on a Disk
 > **(a)** If $|z| < 2$, then $|z^3 + 3z^2 - 2z + 1| < 25$. **(b)** If $|z| \le 1$, then $|\operatorname{Re}(2 + \bar z + z^3)| \le 4$.
 >
-> **(a)** By (8), $|z^2| = |z|^2$ and $|z^3| = |z|^3$. By the generalized triangle inequality (4) of §5,
+> **(a)** By (8), $|z^2| = |z|^2$ and $|z^3| = |z|^3$. By the generalized triangle inequality (4) of [[§5 Triangle Inequality#^cor-5-3|Corollary §5.3]],
 >
 > $$
 > |z^3 + 3z^2 - 2z + 1| \le |z|^3 + 3|z|^2 + 2|z| + 1 < 8 + 12 + 4 + 1 = 25 .
 > $$
 >
-> **(b)** By (3) of §4, then (4) of §5, then $|\bar z| = |z|$ and $|z^3| = |z|^3$,
+> **(b)** By (3) of [[§4 Vectors and Moduli#^prop-4-1|Proposition §4.1]], then (4) of [[§5 Triangle Inequality#^cor-5-3|Corollary §5.3]], then $|\bar z| = |z|$ and $|z^3| = |z|^3$,
 >
 > $$
 > |\operatorname{Re}(2 + \bar z + z^3)| \le |2 + \bar z + z^3| \le 2 + |\bar z| + |z^3| = 2 + |z| + |z|^3 \le 2 + 1 + 1 = 4 .

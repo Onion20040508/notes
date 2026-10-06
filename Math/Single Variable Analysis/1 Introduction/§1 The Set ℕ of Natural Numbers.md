@@ -186,7 +186,7 @@ Axiom N5 is the important one for us: it yields the method of proof by **mathema
 
 ^pf-1-2
 
-*Uses:* [[§1 The Set ℕ of Natural Numbers#^thm-1-1|§1.1]]
+*Uses:* [[§1 The Set ℕ of Natural Numbers#^thm-1-1|§1.1]], [[§1 The Set ℕ of Natural Numbers#^rem-1-3|§1 Rem. (strong induction)]]
 
 > [!remark]- Connections
 > - Elementary version: [[§5 The Induction Principle#^cor-5-7|250 Cor. §5.7]] (both statements, from strong induction).

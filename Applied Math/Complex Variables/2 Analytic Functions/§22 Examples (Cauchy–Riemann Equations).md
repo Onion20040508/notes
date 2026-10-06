@@ -28,7 +28,7 @@ This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] 
 > u_x = 2x = v_y, \qquad u_y = -2y = -v_x
 > $$
 >
-> at every point. The formula $f'(z_0) = u_x + iv_x$ of §21 gives back the known derivative:
+> at every point. The formula $f'(z_0) = u_x + iv_x$ of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] gives back the known derivative:
 >
 > $$
 > f'(z) = 2x + i2y = 2(x + iy) = 2z .
@@ -47,7 +47,7 @@ This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] 
 >
 > If the Cauchy–Riemann equations hold at $(x, y)$, then $u_x = v_y$ gives $2x = 0$ and $u_y = -v_x$ gives $2y = 0$, so $x = y = 0$. Consequently $f'(z)$ **does not exist at any nonzero point**, as found directly in [[§19 Derivatives#^ex-19-3|Example §19.3]].
 >
-> At the origin the equations do hold, but the theorem of §21 says nothing there: it gives conditions that a derivative must satisfy, not conditions that produce one. That $f'(0)$ exists (and equals $0$) follows from the theorem of §23, [[§23 Sufficient Conditions for Differentiability#^ex-23-2|Example §23.2]].
+> At the origin the equations do hold, but the necessary condition, [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]], says nothing there: it gives conditions that a derivative must satisfy, not conditions that produce one. That $f'(0)$ exists (and equals $0$) follows from [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]], [[§23 Sufficient Conditions for Differentiability#^ex-23-2|Example §23.2]].
 >
 > *B&C: Sec. 22, Example 2*
 
@@ -99,7 +99,7 @@ This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] 
 *The difference quotient of Example §22.3 at $z = 0$ is $(\overline{\Delta z}/\Delta z)^2 = e^{-4i\varphi}$ along the ray at angle $\varphi$. It equals $1$ along both axes (blue), which is all that the partial derivatives and the Cauchy–Riemann equations test, and $-1$ along the diagonals (red), so it has no limit at $0$.*
 
 > [!remark]- Connections
-> - The same phenomenon for a real function of two variables: partial derivatives at a point say nothing about approaches along other directions, [[§6 Differentiability#^ex-6-1|452 Ex. §6.1]] ($2xy/(x^2 + y^2)$ has both partials $0$ at the origin and is not differentiable there). Here $u$ and $v$ have partials at $0$ but are not differentiable there; adding continuity of the partials is exactly what [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] and the theorem of §23 do.
+> - The same phenomenon for a real function of two variables: partial derivatives at a point say nothing about approaches along other directions, [[§6 Differentiability#^ex-6-1|452 Ex. §6.1]] ($2xy/(x^2 + y^2)$ has both partials $0$ at the origin and is not differentiable there). Here $u$ and $v$ have partials at $0$ but are not differentiable there; adding continuity of the partials is exactly what [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]] and [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] do.
 
 ## Locating Points Without a Derivative
 
@@ -124,13 +124,13 @@ This section tests [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] 
 > \frac{e^{-iy} - 1}{iy} \;\longrightarrow\; \frac{1}{i}\,\frac{d}{dy}e^{-iy}\Big|_{y=0} = \frac{-i}{i} = -1 .
 > $$
 >
-> Two approaches give different limits, so there is no limit ([[§15 Limits#^cor-15-2|Corollary §15.2]]). (These two numbers are $u_x + iv_x = 1$ and $-i(u_y + iv_y) = -1$ at the origin, the two expressions for $f'(0)$ in §21; they disagree because $u_x \ne v_y$ there.)
+> Two approaches give different limits, so there is no limit ([[§15 Limits#^cor-15-2|Corollary §15.2]]). (These two numbers are $u_x + iv_x = 1$ and $-i(u_y + iv_y) = -1$ at the origin, the two expressions for $f'(0)$ in [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]; they disagree because $u_x \ne v_y$ there.)
 >
-> *B&C: Sec. 24, Exercise 1(d); Source: 342 HW 3, Q2(c); 342 practice final (Fall 1999), Q7a*
+> *B&C: Sec. 24, Exercise 1(d); Source: 342 HW 3, Q2(c); 342 practice final (Fall 1999), Q7(a)*
 
 ^ex-22-4
 
 > [!remark] Remark: What the Necessary Condition Can and Cannot Do
-> Solving the two equations $u_x = v_y$, $u_y = -v_x$ gives the **only candidates** for points where $f'$ exists. Outside that set $f'$ certainly does not exist (Examples §22.2 and §22.4). At the candidates the question stays open (Example §22.3). It is settled by the sufficient condition of §23 when the partial derivatives are continuous there, which is the case for every function built from polynomials, exponentials and trigonometric functions of $x$ and $y$. The full procedure is [[§23 Sufficient Conditions for Differentiability#^rem-23-1|Remark: Method — Checking Differentiability with Cauchy–Riemann]].
+> Solving the two equations $u_x = v_y$, $u_y = -v_x$ gives the **only candidates** for points where $f'$ exists. Outside that set $f'$ certainly does not exist (Examples §22.2 and §22.4). At the candidates the question stays open (Example §22.3). It is settled by the sufficient condition of [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]] when the partial derivatives are continuous there, which is the case for every function built from polynomials, exponentials and trigonometric functions of $x$ and $y$. The full procedure is [[§23 Sufficient Conditions for Differentiability#^rem-23-1|Remark: Method — Checking Differentiability with Cauchy–Riemann]].
 
 ^rem-22-1

@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)]] · ↑ [[· 4 Integrals]] · [[§53 Multiply Connected Domains]] →
 
-*Brown–Churchill, Section 52 (with Exercise 5 of Section 53) · MAT 342 HW 6 · Practice Final (Fall 2002).*
+*Brown–Churchill, Section 52 (with Exercise 5 of Section 53) · MAT 342 HW 6, Practice Final (Fall 2002).*
 
 The Cauchy–Goursat theorem concerns a simple closed contour and the region it encloses. In a domain without holes the contour may be any closed contour, even one that crosses itself, because the region enclosed by each of its loops lies in the domain. Combined with the theorem on antiderivatives, [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]], this shows that every function analytic in such a domain has an antiderivative there, and that every entire function does. These antiderivatives are what make branches of logarithms possible on domains that do not surround a singular point.
 

@@ -92,6 +92,9 @@ To handle functions that may take infinite values (such as $f(x) = 1/x$ near $0$
 
 ^def-12-3
 
+> [!remark]- Connections
+> - Same notion for a subset of any set: [[§12★ Counting Functions and Subsets#^def-12-4|250 Def. §12.4]].
+
 > [!theorem] Proposition §12.1: Characteristic Functions of Measurable Sets
 > If $E \in \mathcal{M}$, then $\chi_E$ is a measurable function.
 

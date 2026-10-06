@@ -47,7 +47,7 @@ The important point: $S_r$ is completely determined by subsets and properties of
 >
 > (2) If $b \in S_r$ and $a \leq b$, then $a \leq b < r$, so $a \in S_r$ by transitivity.
 >
-> (3) Why does $S_r$ have no maximum? By the *density of $\mathbb{Q}$ in $\mathbb{R}$* (§4): given any $a \in S_r$, since $a < r$ there exists a rational $a'$ with $a < a' < r$. Then $a' \in S_r$ and $a' > a$, so $a$ is not a maximum of $S_r$.
+> (3) Why does $S_r$ have no maximum? By the *density of $\mathbb{Q}$ in $\mathbb{R}$* ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]): given any $a \in S_r$, since $a < r$ there exists a rational $a'$ with $a < a' < r$. Then $a' \in S_r$ and $a' > a$, so $a$ is not a maximum of $S_r$.
 >
 > (For the converse — that every set satisfying (1)–(3) determines a unique real number — one takes $r = \sup S$, using completeness; we do not carry this out here. It is carried out in [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-13|Corollary §6★.13]].)
 

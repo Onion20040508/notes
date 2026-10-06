@@ -367,7 +367,7 @@ Now all four questions can be answered.
 ^thm-11-7
 
 > [!proof]- Proof
-> Let $M$, $h$ and $D$ be as in [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] and $K$ as in Lemma §11.5.
+> Let $M$, $h$ and $D$ be as in [[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]] and $K$ as in [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]].
 >
 > **1. All iterates exist.** By Lemma §11.4 every $\phi_n$ is defined and continuous on $I = [-h, h]$, with graph in $D$.
 >
@@ -389,7 +389,7 @@ Now all four questions can be answered.
 > \phi(t) = \lim_{n\to\infty} \phi_n(t) . \qquad (25)
 > $$
 >
-> **3. The limit is continuous and satisfies the integral equation.** A uniform limit of continuous functions is continuous, so $\phi$ is continuous on $I$. (Continuity is not automatic for a pointwise limit of continuous functions; see Remark: What Uniform Convergence Is For.) Letting $n \to \infty$ in $|\phi_n(t)| \le M|t|$ gives $|\phi(t)| \le M|t| \le b$, so the graph of $\phi$ lies in $D$ too. Now let $n \to \infty$ in (7):
+> **3. The limit is continuous and satisfies the integral equation.** A uniform limit of continuous functions is continuous, so $\phi$ is continuous on $I$. (Continuity is not automatic for a pointwise limit of continuous functions; see [[§11 The Existence and Uniqueness Theorem#^rem-11-1|Remark: What Uniform Convergence Is For]].) Letting $n \to \infty$ in $|\phi_n(t)| \le M|t|$ gives $|\phi(t)| \le M|t| \le b$, so the graph of $\phi$ lies in $D$ too. Now let $n \to \infty$ in (7):
 >
 > $$
 > \phi(t) = \lim_{n\to\infty} \phi_{n+1}(t) = \lim_{n\to\infty} \int_0^t f(s, \phi_n(s))\,ds . \qquad (26)

@@ -186,7 +186,7 @@ Harmonic functions play an important role in applied mathematics. For example, t
 >
 > The same conclusions follow from the Cauchy–Riemann equations alone, without the smoothness behind Theorem §27.1: [[§21 Cauchy–Riemann Equations#^rem-21-2|Remark: The Cauchy–Riemann Equations Alone Rule Out a Real Part]].
 >
-> *Source: 342 practice final (Spring 2005), Q8d; 342 practice final (Fall 2002), Q8d*
+> *Source: 342 practice final (Spring 2005), Q8(d); 342 practice final (Fall 2002), Q8(d)*
 
 ^ex-27-4
 
@@ -209,6 +209,6 @@ Harmonic functions play an important role in applied mathematics. For example, t
 >
 > (Alternatively: $|f(0)| = 2$ while $|f(z)| < 2$ for $z \ne 0$, so $|f|$ has a maximum at an interior point; by the maximum modulus principle, [[§59 Maximum Modulus Principle#^thm-59-3|Theorem §59.3]], $f$ would be constant, and then $|f|^2$ could not equal the nonconstant $4 - |z|^2$.)
 >
-> *Source: 342 practice final (Fall 1999), Q7b*
+> *Source: 342 practice final (Fall 1999), Q7(b)*
 
 ^ex-27-5

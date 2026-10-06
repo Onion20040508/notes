@@ -259,7 +259,7 @@ To apply the theorems, we need a stock of basic limits.
 > s_n^2 \leq \frac{2}{n-1}, \qquad \text{i.e.} \qquad 0 \leq s_n \leq \sqrt{\frac{2}{n-1}}.
 > $$
 >
-> Is it clear now that $s_n \to 0$? Yes, by the *Squeeze Theorem*: $\tfrac{2}{n-1} \to 0$ (e.g. $\tfrac{2}{n-1} \leq \tfrac4n$ for $n \geq 2$), hence $\sqrt{2/(n-1)} \to 0$ by the square-root example of §8, and $s_n$ is squeezed between $0$ and a null sequence.
+> Is it clear now that $s_n \to 0$? Yes, by the [[Squeeze Theorem|Squeeze Theorem]]: $\tfrac{2}{n-1} \to 0$ (e.g. $\tfrac{2}{n-1} \leq \tfrac4n$ for $n \geq 2$), hence $\sqrt{2/(n-1)} \to 0$ by the square-root example of §8, and $s_n$ is squeezed between $0$ and a null sequence.
 
 ^ex-9-4
 
@@ -283,7 +283,7 @@ To apply the theorems, we need a stock of basic limits.
 > 1 \leq a^{1/n} < n^{1/n}.
 > $$
 >
-> Both outer sequences ($s_n = 1$ and $t_n = n^{1/n}$) converge to $1$, so $a^{1/n} \to 1$ by the Squeeze Theorem.
+> Both outer sequences ($s_n = 1$ and $t_n = n^{1/n}$) converge to $1$, so $a^{1/n} \to 1$ by the [[Squeeze Theorem|Squeeze Theorem]].
 >
 > **Case (ii): $a < 1$.** Then $\tfrac1a > 1$, and by case (i) together with the quotient limit theorem,
 >
@@ -403,7 +403,7 @@ Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We n
 >
 > 4. if $a \leq -1$, then $\lim_{n\to\infty} a^n$ does not exist (not even as $\pm\infty$).
 >
-> *Proofs.* (2) is clear. (1) By the Squeeze Theorem: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ ([[§9 Limit Theorems for Sequences#^ex-9-3|Example §9.3]]), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is [[§8 A Discussion About Proofs#^ex-8-6|Example §8.6]]. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
+> *Proofs.* (2) is clear. (1) By the [[Squeeze Theorem|Squeeze Theorem]]: $-|a|^n \leq a^n \leq |a|^n$, and $|a|^n \to 0$ ([[§9 Limit Theorems for Sequences#^ex-9-3|Example §9.3]]), hence $-|a|^n \to 0$ too. (3) Check by definition: write $a = 1 + b$, $b > 0$; then $a^n \geq 1 + nb > nb \to +\infty$, and apply the squeezing lemma. (4) For $a = -1$ this is [[§8 A Discussion About Proofs#^ex-8-6|Example §8.6]]. For $a < -1$: the terms satisfy $|a^n| = |a|^n \geq 1$ and alternate in sign, so by the same even/odd-subsequence argument as for $(-1)^n$, no finite limit exists; and neither $a^n \to +\infty$ nor $a^n \to -\infty$, since arbitrarily late terms are negative (resp. positive).
 
 ^ex-9-10
 

@@ -299,7 +299,7 @@ Later sections ([[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|§49]], 
 ^prop-43-5
 
 > [!proof]+ Proof
-> B&C suggests writing $w(t) = u[x(t), y(t)] + iv[x(t), y(t)]$ and using the two-variable chain rule with the Cauchy–Riemann equations; that route needs $u$ and $v$ to be differentiable as functions of $(x, y)$ at $(x_0, y_0)$, which is true but has not been shown. Here is a direct argument that uses only the existence of $f'(z_0)$ and of $z'(t_0)$.
+> B&C suggests writing $w(t) = u[x(t), y(t)] + iv[x(t), y(t)]$ and using the two-variable chain rule with the Cauchy–Riemann equations; that route needs $u$ and $v$ to be differentiable as functions of $(x, y)$ at $(x_0, y_0)$, which follows from the existence of $f'(z_0)$ (the remark after [[§23 Sufficient Conditions for Differentiability#^cor-23-2|Corollary §23.2]]). Here is a direct argument that uses only the existence of $f'(z_0)$ and of $z'(t_0)$.
 >
 > Define $\eta(z) = \dfrac{f(z) - f(z_0)}{z - z_0} - f'(z_0)$ for $z \ne z_0$ in a neighborhood of $z_0$ where $f$ is defined, and $\eta(z_0) = 0$. By the definition of $f'(z_0)$ ([[§19 Derivatives#^def-19-1|Definition §19.1]]), $\eta(z) \to 0 = \eta(z_0)$ as $z \to z_0$, so $\eta$ is continuous at $z_0$, and
 >

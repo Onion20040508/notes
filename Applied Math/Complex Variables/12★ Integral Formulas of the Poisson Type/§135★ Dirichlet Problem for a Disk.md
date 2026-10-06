@@ -43,7 +43,7 @@ In [[§134★ Poisson Integral Formula|§134★]] the Poisson formula reproduced
 ^thm-135-1
 
 > [!proof]+ Proof
-> **$U$ is harmonic.** Since $F$ is piecewise continuous, (1) is a sum of finitely many definite integrals, each with an integrand continuous in $r$, $\theta$ and $\phi$, whose partial derivatives with respect to $r$ and $\theta$ are also continuous. So the order of integration and differentiation with respect to $r$ and $\theta$ can be interchanged; and since $P$ satisfies Laplace's equation in polar coordinates ([[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]](c); [[§27★ Harmonic Functions|§27★]], Exercise 1)
+> **$U$ is harmonic.** Since $F$ is piecewise continuous, (1) is a sum of finitely many definite integrals, each with an integrand continuous in $r$, $\theta$ and $\phi$, whose partial derivatives with respect to $r$ and $\theta$ are also continuous. So the order of integration and differentiation with respect to $r$ and $\theta$ can be interchanged; and since $P$ satisfies Laplace's equation in polar coordinates ([[§134★ Poisson Integral Formula#^prop-134-2|Proposition §134.2]](c); [[§27★ Harmonic Functions|§27★]], Exercise 1; [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]])
 >
 > $$
 > r^2P_{rr} + rP_r + P_{\theta\theta} = 0 ,

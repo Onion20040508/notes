@@ -298,7 +298,7 @@ So there is essentially a one-to-one correspondence between functions and their 
 
 ^pf-22-6
 
-*Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]], [[§21 Definition of the Laplace Transform#^thm-21-3|§21.3]], [[§21 Definition of the Laplace Transform#^ex-21-2|Ex. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-4|Ex. §21.4]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]] (comparison), [[§21 Definition of the Laplace Transform#^thm-21-2|§21.2]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's formula, entry 19)
+*Uses:* [[§22 Solution of Initial Value Problems#^thm-22-1|§22.1]], [[§22 Solution of Initial Value Problems#^cor-22-2|§22.2]] (entry 18), [[§21 Definition of the Laplace Transform#^thm-21-3|§21.3]], [[§21 Definition of the Laplace Transform#^ex-21-2|Ex. §21.2]], [[§21 Definition of the Laplace Transform#^ex-21-4|Ex. §21.4]], [[§21 Definition of the Laplace Transform#^thm-21-1|§21.1]] (comparison), [[§21 Definition of the Laplace Transform#^thm-21-2|§21.2]], [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's formula, entry 19)
 
 > [!remark]- Connections
 > - See also: [[§51★ Definition and Elementary Properties#^thm-51-8|341 Thm. §51.8]] (Powers' table, keyed to the entry numbers here); entry 19 is [[§51★ Definition and Elementary Properties#^thm-51-6|341 Thm. §51.6]], together with its counterpart for division by $t$.

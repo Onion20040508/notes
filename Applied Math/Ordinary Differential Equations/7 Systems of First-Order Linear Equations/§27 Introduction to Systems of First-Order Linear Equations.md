@@ -201,7 +201,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 ^thm-27-3
 
-*BDP omits the proof. It is the system version of Theorem 2.4.1 ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]) and Theorem 3.2.1 ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]]), which is its special case $n = 2$ through Proposition §27.1; no subject in the vault proves it.*
+*BDP omits the proof. It is the system version of Theorem 2.4.1 ([[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]]) and Theorem 3.2.1 ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-1|Theorem §14.1]]), which is its special case $n = 2$ through [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|Proposition §27.1]]; no subject in the vault proves it.*
 
 In contrast with the nonlinear case, for a linear system existence and uniqueness hold on the *whole* interval where the hypotheses hold, and the initial values $x_1^0, \ldots, x_n^0$ at $t = t_0$ are completely arbitrary; in [[§27 Introduction to Systems of First-Order Linear Equations#^thm-27-2|Theorem §27.2]] the initial point must lie in the region $R$. The rest of Chapter 7 is about linear systems; nonlinear systems are the subject of BDP's Chapters 8 and 9.
 

@@ -135,7 +135,7 @@ $$
 > [!remark]- Connections
 > - Complex-variables version: [[§135★ Dirichlet Problem for a Disk#^thm-135-1|342 Thm. §135.1]] (the same Dirichlet problem solved by the Poisson integral, for piecewise continuous boundary values) and [[§135★ Dirichlet Problem for a Disk#^prop-135-4|342 Prop. §135.4]] (which expands that integral back into this series).
 
-If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of the absolute values of its Fourier coefficients is finite ([[§9 Uniform Convergence#^rem-9-2|§9]], the remark after Theorem §9.3); since $|a_nr^n| \le |a_nc^n|$ and $|b_nr^n| \le |b_nc^n|$, the M-test then shows that (10) converges uniformly on the closed disk $r \le c$, so $v$ is continuous up to the boundary and takes the values $f$ there. Inside the disk no smoothness of $f$ is needed: since $|c^na_n|, |c^nb_n| \le \frac1\pi\int_{-\pi}^{\pi}|f|$, the terms of (10) are bounded by a constant times $(r/c)^n$, and the series converges uniformly on every smaller disk $r \le r_0 < c$, together with all its term-by-term derivatives.
+If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of the absolute values of its Fourier coefficients is finite ([[§9 Uniform Convergence#^rem-9-2|§9]], the remark after [[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]]); since $|a_nr^n| \le |a_nc^n|$ and $|b_nr^n| \le |b_nc^n|$, the M-test then shows that (10) converges uniformly on the closed disk $r \le c$, so $v$ is continuous up to the boundary and takes the values $f$ there. Inside the disk no smoothness of $f$ is needed: since $|c^na_n|, |c^nb_n| \le \frac1\pi\int_{-\pi}^{\pi}|f|$, the terms of (10) are bounded by a constant times $(r/c)^n$, and the series converges uniformly on every smaller disk $r \le r_0 < c$, together with all its term-by-term derivatives.
 
 > [!remark] Remark: Method — The Potential Equation in a Disk
 > Lecture 11.26 organizes the work as follows.
@@ -332,7 +332,7 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 > A(r) = \frac{1}{2\pi}\int_{-\pi}^{\pi}u(r, \theta)\,d\theta, \qquad 0 < r \le \rho ,
 > $$
 >
-> the constant term of the Fourier series of $u(r, \cdot)$. Since $u$ has continuous second derivatives on the closed disk, we may differentiate under the integral sign. By the polar form of $\nabla^2u = 0$ (Theorem §35.3), $\frac{\partial}{\partial r}(ru_r) = -\frac1ru_{\theta\theta}$, so
+> the constant term of the Fourier series of $u(r, \cdot)$. Since $u$ has continuous second derivatives on the closed disk, we may differentiate under the integral sign. By the polar form of $\nabla^2u = 0$ ([[§35 Potential Equation#^thm-35-3|Theorem §35.3]]), $\frac{\partial}{\partial r}(ru_r) = -\frac1ru_{\theta\theta}$, so
 >
 > $$
 > \frac{d}{dr}\big(rA'(r)\big) = \frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{\partial}{\partial r}\big(ru_r\big)\,d\theta = -\frac{1}{2\pi r}\int_{-\pi}^{\pi}u_{\theta\theta}\,d\theta = -\frac{1}{2\pi r}\Big[u_\theta\Big]_{\theta = -\pi}^{\theta = \pi} = 0 ,

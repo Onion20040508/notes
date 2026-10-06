@@ -170,7 +170,7 @@ The important point is that this completeness property does *not* hold in $\math
 > S = \{a \in \mathbb{Q} \mid -\sqrt{2} < a < \sqrt{2}\} \subset \mathbb{Q}.
 > $$
 >
-> As a subset of $\mathbb{R}$, its supremum is $\sqrt{2}$ and its infimum is $-\sqrt{2}$ (using the density of $\mathbb{Q}$, proved below, to verify condition (2) of the characterization). But we proved in §2 that $\sqrt{2} \notin \mathbb{Q}$, so $S$ has no least upper bound *within* $\mathbb{Q}$. This example exhibits the incompleteness of $\mathbb{Q}$.
+> As a subset of $\mathbb{R}$, its supremum is $\sqrt{2}$ and its infimum is $-\sqrt{2}$ (using the density of $\mathbb{Q}$, proved below in [[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]], to verify condition (2) of the characterization). But we proved in §2 that $\sqrt{2} \notin \mathbb{Q}$, so $S$ has no least upper bound *within* $\mathbb{Q}$. This example exhibits the incompleteness of $\mathbb{Q}$.
 
 ^ex-4-4
 

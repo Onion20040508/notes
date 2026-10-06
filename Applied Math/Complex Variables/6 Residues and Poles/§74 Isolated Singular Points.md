@@ -113,13 +113,13 @@ In this chapter the singular points will usually be finitely many points inside 
 ^prop-74-1
 
 > [!proof]+ Proof
-> Fix $k$. Let $d_1$ be the smallest of the distances $|z_k - z_j|$, $j \ne k$ (a minimum of finitely many positive numbers, so $d_1 > 0$; put $d_1 = \infty$ if $n = 1$). Let $d_2$ be the distance from $z_k$ to the closest point of $C$. (B&C takes its existence for granted; here is why it is positive.) If $z = z(t)$, $a \le t \le b$, parametrizes $C$, then $t \mapsto |z(t) - z_k|$ is continuous on $[a, b]$ and never zero, because $z_k$ lies inside $C$ and not on it; so it attains a positive minimum $d_2$ ([[Extreme Value Theorem]]).
+> Fix $k$. Let $d_1$ be the smallest of the distances $|z_k - z_j|$, $j \ne k$ (a minimum of finitely many positive numbers, so $d_1 > 0$; put $d_1 = \infty$ if $n = 1$). Let $d_2$ be the distance from $z_k$ to the closest point of $C$. (B&C takes its existence for granted; here is why it is positive.) If $z = z(t)$, $a \le t \le b$, parametrizes $C$, then $t \mapsto |z(t) - z_k|$ is continuous on $[a, b]$ and never zero, because $z_k$ lies inside $C$ and not on it; so it attains a positive minimum $d_2$ (the extreme value theorem, [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]]).
 >
 > Choose any $\varepsilon$ with $0 < \varepsilon < \min(d_1, d_2)$. The disk $|z - z_k| < \varepsilon$ does not meet $C$; it is connected and contains the interior point $z_k$, so it lies entirely inside $C$ (the interior of $C$ is one of the two connected pieces into which $C$ divides the plane, by the Jordan curve theorem, [[§43 Contours#^thm-43-4|Theorem §43.4]]). Each point $z$ with $0 < |z - z_k| < \varepsilon$ is therefore inside $C$ and different from every $z_j$, so $f$ is analytic at $z$. Hence $f$ is analytic throughout the deleted neighborhood $0 < |z - z_k| < \varepsilon$, which lies inside $C$: $z_k$ is isolated.
 
 ^pf-74-1
 
-*Uses:* [[§74 Isolated Singular Points#^def-74-1|Def. §74.1]], [[§43 Contours#^thm-43-4|§43.4]] (Jordan curve theorem), [[Extreme Value Theorem]]
+*Uses:* [[§74 Isolated Singular Points#^def-74-1|Def. §74.1]], [[§43 Contours#^thm-43-4|§43.4]] (Jordan curve theorem), [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]] (extreme value theorem)
 
 ## The Point at Infinity
 

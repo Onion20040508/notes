@@ -137,3 +137,4 @@ As for functionals (Lemma [[§30 Bras, Kets, and the Riesz Map#^lem-30-1|§30.1]
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: the ring's momentum operator and its spectrum — [[§B2.2 Observables and Hermitian Operators#^ex-b2-2-1|QM Example §B2.2.1]]; a molecule rotating in a plane — [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^ex-b5-2-2|QM Example §B5.2.2]].
+> - Computational version: Parseval's identity for real trigonometric Fourier series, used to sum series such as $\sum 1/n^4$: [[Parseval's Equality for Fourier Series|341 Thm. §11.4]].

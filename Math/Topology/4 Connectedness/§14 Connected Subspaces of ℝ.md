@@ -62,7 +62,7 @@ tags: [topology, math590]
 ## Connectedness of Linear Continua
 
 > [!theorem] Theorem §14.1: Linear Continuum is Connected
-> If $L$ is a linear continuum, with [[§3 Order Topology#^def-3-4|order topology]] on it, $L$ is connected, so are the intervals and rays in $L$.
+> If $L$ is a linear continuum, with [[§3 Order Topology#^def-3-4|order topology]] on it, $L$ is [[§13 Connected Spaces#^def-13-1|connected]], so are the intervals and rays in $L$.
 
 ^thm-14-1
 
@@ -104,7 +104,7 @@ tags: [topology, math590]
 ## Intermediate Value Theorem
 
 > [!theorem] Theorem §14.3: Intermediate Value Theorem
-> Let $f: X \to Y$ be a continuous map, $X$ is connected, $Y$ has order topology. If $a, b \in X$, and $f(a) < r < f(b)$ for some $r \in Y$, then there exists $c \in X$ such that $f(c) = r$.
+> Let $f: X \to Y$ be a continuous map, $X$ is [[§13 Connected Spaces#^def-13-1|connected]], $Y$ has [[§3 Order Topology#^def-3-4|order topology]]. If $a, b \in X$, and $f(a) < r < f(b)$ for some $r \in Y$, then there exists $c \in X$ such that $f(c) = r$.
 
 ^thm-14-3
 
@@ -181,7 +181,7 @@ tags: [topology, math590]
 ^ex-14-6
 
 > [!theorem] Theorem §14.4: Path-Connected Implies Connected
-> Path-connected $\Rightarrow$ connected.
+> [[§14 Connected Subspaces of ℝ#^def-14-3|Path-connected]] $\Rightarrow$ [[§13 Connected Spaces#^def-13-1|connected]].
 
 ^thm-14-4
 

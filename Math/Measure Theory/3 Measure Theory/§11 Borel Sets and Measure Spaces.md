@@ -119,7 +119,7 @@ The construction of Lebesgue measure generalizes to abstract settings.
 > - New measures from integrals: [[§14 The Lebesgue Integral for Simple Functions#^def-14-3|Def. §14.3]]; $L^p$ over a general measure space: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]].
 
 > [!example] Example §11.2: Examples of Measures
-> - **Counting measure:** $(X, \mathcal{P}(X), \mu)$ where $\mu(E) = |E|$ (cardinality) if $E$ is finite, and $\mu(E) = \infty$ if $E$ is infinite.
+> - **Counting measure:** $(X, \mathcal{P}(X), \mu)$ where $\mu(E) = |E|$ (the [[§10 Counting#^def-10-1|cardinality]], 250 Def. §10.1) if $E$ is finite, and $\mu(E) = \infty$ if $E$ is infinite.
 > - **Dirac measure:** Fix $x_0 \in X$. Define $\mu_{x_0}(E) = 1$ if $x_0 \in E$ and $\mu_{x_0}(E) = 0$ if $x_0 \notin E$.
 
 ^ex-11-2
@@ -831,7 +831,7 @@ Let $\mathbb{Q} \cap [-1, 1] = \{r_1, r_2, r_3, \ldots\}$ be an enumeration of t
 ^rem-11-6
 
 > [!remark]- Connections
-> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 (Hahn–Banach, complements, orthonormal bases): [[§5 Proof of the Hahn–Banach Theorem#^thm-5-2|556 Thm. §5.2]].
+> - The axiom of choice, in the form of Zorn's lemma, also drives the existence theorems of 556 ([[Hahn–Banach Theorem|Hahn–Banach]], [[Every Subspace Has a Complement|complements]], orthonormal bases): [[Zorn's Lemma|556 Thm. §5.2]].
 
 ## The Cantor Set
 
@@ -861,7 +861,7 @@ If $E$ is countable, then $m^{\ast}(E) = 0$ ([[§9 Lebesgue Outer Measure#^ex-9-
 
 > [!theorem] Proposition §11.21: Properties of the Cantor Set
 > 1. $C$ is closed and bounded (hence [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|compact]]).
-> 2. $C$ has no interior points.
+> 2. $C$ has no [[§2 Open and Closed Sets#^def-2-3|interior points]].
 > 3. $m(C) = 0$.
 > 4. $C$ is uncountable.
 

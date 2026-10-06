@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§57 Some Consequences of the Extension]] · ↑ [[· 4 Integrals]] · [[§59 Maximum Modulus Principle]] →
 
-*Brown–Churchill, Section 58 (with Exercise 10 of Section 57 and Exercises 1 and 8 of Section 59) · MAT 342 HW 8 · Practice Final (Fall 2002).*
+*Brown–Churchill, Section 58 (with Exercise 10 of Section 57 and Exercises 1 and 8 of Section 59) · MAT 342 HW 8, Practice Final (Fall 2002).*
 
 Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of $|f|$ on a circle of radius $R$ about $z_0$. If $f$ is entire and bounded, $R$ can be taken as large as we please with $M_R$ staying bounded, so $f' = 0$: a bounded entire function is constant (Liouville's theorem). Applied to $1/P(z)$, this proves the fundamental theorem of algebra: a nonconstant polynomial has a zero, and therefore factors completely into linear factors. The vault has two other proofs of the fundamental theorem of algebra, one by a minimum argument (Linear Algebra) and one by the fundamental group of the circle (Topology); this one is the shortest, because the hard work was done in the Cauchy–Goursat theorem.
 
@@ -178,7 +178,7 @@ The fundamental theorem tells us that any polynomial $P(z)$ of degree $n$ ($n \g
 
 ^ex-58-2
 
-> [!example] Example §58.3: An Entire Function Bounded by |z|e^{−|z|}
+> [!example] Example §58.3: An Entire Function Bounded by |z|e^(−|z|)
 > **True or false:** there exists an entire non-constant function $f(z)$ satisfying the inequality $|f(z)| \le |z|e^{-|z|}$.
 >
 > **False.** The function $r \mapsto re^{-r}$ ($r \ge 0$) has derivative $(1 - r)e^{-r}$, so its maximum is $e^{-1}$, at $r = 1$. Hence $|f(z)| \le 1/e$ for all $z$: $f$ is a bounded entire function, and by Liouville's theorem it is constant. (In fact $f \equiv 0$, since $|f(z)| \le |z|e^{-|z|} \to 0$ as $|z| \to \infty$, or simply since $|f(0)| \le 0$.)

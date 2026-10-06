@@ -16,7 +16,7 @@ tags: [topology, math590]
 ## Statement
 
 > [!theorem] Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)
-> Let $X = A \cup B$, where $A$ and $B$ are open in $X$ and path-connected. Suppose $A \cap B$ is path-connected. Fix $p \in A \cap B$. Let
+> Let $X = A \cup B$, where $A$ and $B$ are open in $X$ and [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]]. Suppose $A \cap B$ is path-connected. Fix $p \in A \cap B$. Let
 >
 > $$
 > G = \pi_1(A, p), \qquad H = \pi_1(B, p), \qquad K = \pi_1(A \cap B, p),
@@ -160,7 +160,7 @@ tags: [topology, math590]
 > **Claim:** $\pi_1(S^n) = 0$ for $n \geq 2$.
 > Let $U = S^n \setminus \{P\}$ and $V = S^n \setminus \{S\}$ (remove the north pole $P$ and the south pole $S$). Then $S^n = U \cup V$, both open. By [[§27 The Fundamental Group of Sⁿ#^pf-27-3|stereographic projection]], $U \cong \mathbb{R}^n \cong V$, so $\pi_1(U) = \pi_1(V) = 0$. The intersection $U \cap V = S^n \setminus \{P, S\}$ deformation retracts onto the equator $S^{n-1}$, which is path-connected for $n \geq 2$.
 >
-> By [[Seifert–van Kampen Theorem|van Kampen]]: $\pi_1(S^n) \cong 0 * 0 / N \cong 0$.
+> By [[Seifert–van Kampen Theorem|van Kampen]]: $\pi_1(S^n) \cong (0 * 0) / N \cong 0$.
 >
 > (Since both factors are trivial, the free product is trivial regardless of $N$.)
 
@@ -348,7 +348,7 @@ tags: [topology, math590]
 > - The same gluing diagrams in 250, with their Euler characteristics: torus [[§25 Surfaces and the Euler Characteristic#^ex-25-3|250 Ex. §25.3]], Klein bottle [[§25 Surfaces and the Euler Characteristic#^ex-25-5|250 Ex. §25.5]]; the projective plane and the Klein bottle are the spheres with one and two crosscaps in [[§25 Surfaces and the Euler Characteristic#^thm-25-7|250 Thm. §25.7]].
 
 > [!theorem] Theorem §29.3: Fundamental Group of a Polygonal Surface (Munkres 74.1)
-> Let $P$ be a polygonal region with labels and orientations on edges. Let $X = P/{\sim}$ be the quotient space and $\pi: P \to X$ the quotient map. If $\pi$ maps all the vertices of $P$ to a single point $x_0 \in X$, then
+> Let $P$ be a polygonal region with labels and orientations on edges. Let $X = P/{\sim}$ be the [[§12 Quotient Topology#^def-12-3|quotient space]] and $\pi: P \to X$ the quotient map. If $\pi$ maps all the vertices of $P$ to a single point $x_0 \in X$, then
 >
 > $$
 > \pi_1(X, x_0) \cong \langle\, a_1, \ldots, a_k \mid w \,\rangle

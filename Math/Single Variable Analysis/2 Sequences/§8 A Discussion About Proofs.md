@@ -166,7 +166,7 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 > -|s_n| M \leq s_n t_n \leq |s_n| M,
 > $$
 >
-> and the fact that $|s_n| \to 0$ too (previous subsection). Hence both outer sequences $-|s_n|M$ and $|s_n|M$ converge to $0$, and the middle sequence $s_n t_n$ converges to $0$ by squeezing.
+> and the fact that $|s_n| \to 0$ too ([[§8 A Discussion About Proofs#^ex-8-5|Example §8.5]]). Hence both outer sequences $-|s_n|M$ and $|s_n|M$ converge to $0$, and the middle sequence $s_n t_n$ converges to $0$ by squeezing.
 
 ^ex-8-7
 

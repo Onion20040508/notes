@@ -91,7 +91,7 @@ The theorem can, of course, be used when branches of multiple-valued functions a
 
 ## When the Factorization Fails
 
-While the theorem of §80 can be extremely useful, the identification of an isolated singular point as a pole of a certain order is sometimes done most efficiently by appealing directly to a Laurent series.
+While the theorem of §80 ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]) can be extremely useful, the identification of an isolated singular point as a pole of a certain order is sometimes done most efficiently by appealing directly to a Laurent series.
 
 > [!example] Example §81.3: Two Cautions
 > **(a) $\phi(z_0) = 0$.** If the residue of

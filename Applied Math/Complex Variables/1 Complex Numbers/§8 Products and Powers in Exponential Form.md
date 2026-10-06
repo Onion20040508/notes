@@ -39,7 +39,7 @@ The addition formulas of trigonometry say exactly that $e^{i\theta_1}e^{i\theta_
 ^thm-8-1
 
 > [!proof]+ Proof
-> **Law of exponents.** By Euler's formula, the product rule (8) of §1, and the addition formulas for cosine and sine,
+> **Law of exponents.** By Euler's formula, the product rule (8) of [[§1 Sums and Products#^prop-1-2|Proposition §1.2]], and the addition formulas for cosine and sine,
 >
 > $$
 > \begin{aligned}
@@ -51,7 +51,7 @@ The addition formulas of trigonometry say exactly that $e^{i\theta_1}e^{i\theta_
 >
 > **(1)** By the commutative and associative laws, $z_1z_2 = r_1e^{i\theta_1}r_2e^{i\theta_2} = r_1r_2\,e^{i\theta_1}e^{i\theta_2} = (r_1r_2)e^{i(\theta_1 + \theta_2)}$.
 >
-> **(2)** By the law of exponents, $e^{i\theta_2}e^{-i\theta_2} = e^{i0} = 1$. Multiplying numerator and denominator by $e^{-i\theta_2}$ (the cancellation law of [[§3 Further Algebraic Properties#^prop-3-3|Proposition §3.3]]) and using (12) of §3,
+> **(2)** By the law of exponents, $e^{i\theta_2}e^{-i\theta_2} = e^{i0} = 1$. Multiplying numerator and denominator by $e^{-i\theta_2}$ (the cancellation law of [[§3 Further Algebraic Properties#^prop-3-3|Proposition §3.3]]) and using (12) of [[§3 Further Algebraic Properties#^prop-3-3|Proposition §3.3]],
 >
 > $$
 > \frac{z_1}{z_2} = \frac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}} = \frac{r_1}{r_2}\cdot\frac{e^{i\theta_1}e^{-i\theta_2}}{e^{i\theta_2}e^{-i\theta_2}} = \frac{r_1}{r_2}\cdot\frac{e^{i(\theta_1 - \theta_2)}}{e^{i0}} = \frac{r_1}{r_2}e^{i(\theta_1 - \theta_2)} .
@@ -71,7 +71,7 @@ Expressions (1), (2) and (3) are easily remembered by applying the usual algebra
 ## Integer Powers
 
 > [!definition] Definition §8.1: Integer Powers
-> For a complex number $z$ and $n = 1, 2, \ldots$, the powers are $z^1 = z$, $z^2 = zz$, $z^{n+1} = z^nz$ (as in §1). For $z \ne 0$, also $z^0 = 1$, and for negative integers $n = -1, -2, \ldots$,
+> For a complex number $z$ and $n = 1, 2, \ldots$, the powers are $z^1 = z$, $z^2 = zz$, $z^{n+1} = z^nz$ (as in [[§1 Sums and Products#^prop-1-2|Proposition §1.2]]). For $z \ne 0$, also $z^0 = 1$, and for negative integers $n = -1, -2, \ldots$,
 >
 > $$
 > z^n = (z^{-1})^m \qquad\text{where } m = -n = 1, 2, \ldots .
@@ -174,7 +174,7 @@ Expressions (1), (2) and (3) are easily remembered by applying the usual algebra
 >
 > since $-\frac{5\pi}{3} + 2\pi = \frac\pi3$ and $e^{i2\pi} = 1$.
 >
-> **(b)** The number $1 + \sqrt3\,i$ is the conjugate of $1 - \sqrt3\,i$, and the conjugate of a product is the product of the conjugates ((4) of §6, applied four times), so $\bar z^5 = \overline{z^5}$. Hence, from (a),
+> **(b)** The number $1 + \sqrt3\,i$ is the conjugate of $1 - \sqrt3\,i$, and the conjugate of a product is the product of the conjugates ((4) of [[§6 Complex Conjugates#^thm-6-1|Theorem §6.1]], applied four times), so $\bar z^5 = \overline{z^5}$. Hence, from (a),
 >
 > $$
 > (1 + \sqrt3\,i)^5 = \overline{16 + 16\sqrt3\,i} = 16 - 16\sqrt3\,i = 32e^{-i\pi/3} .

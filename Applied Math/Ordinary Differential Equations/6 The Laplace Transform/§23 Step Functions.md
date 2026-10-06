@@ -73,7 +73,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 > f(t) = f_0(t) + \sum_{k=1}^{m} u_{c_k}(t)\big(f_k(t) - f_{k-1}(t)\big) .
 > $$
 >
-> 3. To take the transform, rewrite each $f_k(t) - f_{k-1}(t)$ as a function of $t - c_k$, so that every term has the form $u_{c}(t)\,g(t - c)$ of Theorem §23.2. For constant pieces the differences are the jumps, as in (3).
+> 3. To take the transform, rewrite each $f_k(t) - f_{k-1}(t)$ as a function of $t - c_k$, so that every term has the form $u_{c}(t)\,g(t - c)$ of [[§23 Step Functions#^thm-23-2|Theorem §23.2]]. For constant pieces the differences are the jumps, as in (3).
 
 ^rem-23-1
 
@@ -156,7 +156,7 @@ Throughout, functions are piecewise continuous and of exponential order, so thei
 
 *Uses:* [[§23 Step Functions#^def-23-1|Def. §23.1]], [[§23 Step Functions#^def-23-2|Def. §23.2]], [[§21 Definition of the Laplace Transform#^def-21-4|Def. §21.4]], [[§22 Solution of Initial Value Problems#^def-22-1|Def. §22.1]] (the inverse transform)
 
-With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^{-cs}/s$ again, in agreement with Theorem §23.1.
+With $f(t) = 1$, $\mathcal{L}\{1\} = 1/s$, (5) gives $\mathcal{L}\{u_c(t)\} = e^{-cs}/s$ again, in agreement with [[§23 Step Functions#^thm-23-1|Theorem §23.1]].
 
 > [!example] Example §23.2: Transforms of Piecewise Functions
 > **(a)** Find $\mathcal{L}\{f(t)\}$ for

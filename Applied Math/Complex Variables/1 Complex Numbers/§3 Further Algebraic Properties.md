@@ -64,13 +64,13 @@ With the laws of [[§2 Basic Algebraic Properties|§2]] in place, the remaining 
 ^prop-3-2
 
 > [!proof]+ Proof
-> By (1) and the additive inverse $-z_2 = (-x_2, -y_2)$, $z_1 - z_2 = (x_1, y_1) + (-x_2, -y_2) = (x_1 - x_2,\ y_1 - y_2)$. By (2) and the inverse formula (6) of §2,
+> By (1) and the additive inverse $-z_2 = (-x_2, -y_2)$, $z_1 - z_2 = (x_1, y_1) + (-x_2, -y_2) = (x_1 - x_2,\ y_1 - y_2)$. By (2) and the inverse formula (6) of [[§2 Basic Algebraic Properties#^thm-2-4|Theorem §2.4]],
 >
 > $$
 > \frac{z_1}{z_2} = (x_1, y_1)\Big(\frac{x_2}{x_2^2 + y_2^2},\ \frac{-y_2}{x_2^2 + y_2^2}\Big) ,
 > $$
 >
-> and the product rule (4) of §1 gives the real part $\big(x_1x_2 - y_1(-y_2)\big)/(x_2^2 + y_2^2)$ and the imaginary part $\big(y_1x_2 + x_1(-y_2)\big)/(x_2^2 + y_2^2)$, which is (4). Equations (5) and (6) are (3) and (4) in the notation $x + iy$.
+> and the product rule (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]] gives the real part $\big(x_1x_2 - y_1(-y_2)\big)/(x_2^2 + y_2^2)$ and the imaginary part $\big(y_1x_2 + x_1(-y_2)\big)/(x_2^2 + y_2^2)$, which is (4). Equations (5) and (6) are (3) and (4) in the notation $x + iy$.
 
 ^pf-3-2
 

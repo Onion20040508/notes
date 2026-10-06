@@ -288,7 +288,7 @@ Recall the [[Intermediate Value Theorem|Intermediate Value Theorem]] for continu
 > g(x) = f(x) - cx, \qquad g'(x_1) = f'(x_1) - c < 0, \quad g'(x_2) = f'(x_2) - c > 0.
 > $$
 >
-> $g$ is continuous on $[x_1, x_2]$, so it attains a minimum at some $x_0 \in [x_1, x_2]$ (EVT).
+> $g$ is continuous on $[x_1, x_2]$, so it attains a minimum at some $x_0 \in [x_1, x_2]$ ([[Extreme Value Theorem|EVT]]).
 >
 > *Claim: $x_0 \neq x_1, x_2$.* Since $g'(x_1) < 0$, the difference quotient $\tfrac{g(x) - g(x_1)}{x - x_1}$ is negative for $x$ slightly to the right of $x_1$ (its limit is negative); for such $x$, $x - x_1 > 0$ forces $g(x) < g(x_1)$ — nearby points in $(x_1, x_2)$ have *smaller* values, so $x_1$ is not the minimum. Symmetrically, $g'(x_2) > 0$ means points slightly to the *left* of $x_2$ have smaller values, so $x_2$ is not the minimum either.
 >
@@ -302,7 +302,7 @@ Recall the [[Intermediate Value Theorem|Intermediate Value Theorem]] for continu
 *The proof of Darboux's theorem: tilting by $cx$ makes $g = f - cx$ start downhill at $x_1$ ($g'(x_1) < 0$) and end uphill at $x_2$ ($g'(x_2) > 0$), so points just inside the interval lie below the endpoint values (dotted). The minimum given by the EVT is therefore interior, at $x_0$, where $g'(x_0) = 0$, i.e. $f'(x_0) = c$ — no continuity of $f'$ needed.*
 
 > [!remark] Remark
-> The point of the theorem: $f'$ may fail to be continuous (standard example: $f(x) = x^2 \sin\tfrac1x$, $f(0)=0$, whose derivative exists everywhere but is discontinuous at $0$), so we *cannot* simply apply the IVT of §18 to $f'$. Yet derivatives still take intermediate values.
+> The point of the theorem: $f'$ may fail to be continuous (standard example: $f(x) = x^2 \sin\tfrac1x$, $f(0)=0$, whose derivative exists everywhere but is discontinuous at $0$), so we *cannot* simply apply the [[Intermediate Value Theorem|IVT]] of §18 to $f'$. Yet derivatives still take intermediate values.
 
 ^rem-29-3
 
@@ -345,7 +345,7 @@ This computation finds the *formula* but presupposes the differentiability of $f
 > \lim_{x \to x_0} \frac{x - x_0}{f(x) - f(x_0)} = \frac{1}{f'(x_0)}.
 > $$
 >
-> Now translate into the $y$-variable. Write $g = f^{-1}$; a continuous injective function on an interval is strictly monotone (if not, three points would violate the IVT), so by the Continuous Inverse Theorem of §18 (extended to open intervals), $g$ is continuous. Let $y_n \to y_0$ in $J$ with $y_n \neq y_0$, and set $x_n = g(y_n)$. By continuity of $g$, $x_n \to x_0$, and by injectivity $x_n \neq x_0$. Then, by the sequential characterization of the limit above,
+> Now translate into the $y$-variable. Write $g = f^{-1}$; a continuous injective function on an interval is strictly monotone (if not, three points would violate the [[Intermediate Value Theorem|IVT]]), so by the Continuous Inverse Theorem of §18 (extended to open intervals), $g$ is continuous. Let $y_n \to y_0$ in $J$ with $y_n \neq y_0$, and set $x_n = g(y_n)$. By continuity of $g$, $x_n \to x_0$, and by injectivity $x_n \neq x_0$. Then, by the sequential characterization of the limit above,
 >
 > $$
 > \frac{g(y_n) - g(y_0)}{y_n - y_0} = \frac{x_n - x_0}{f(x_n) - f(x_0)} \longrightarrow \frac{1}{f'(x_0)}.

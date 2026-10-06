@@ -205,7 +205,7 @@ The semi-infinite rod of [[§26 Semi-Infinite Rod|§26]] can be treated the same
 ^prop-27-4
 
 > [!proof]+ Proof
-> Following Powers' hint, solve the infinite-rod problem with initial condition $f_o$, the odd extension of $f$ ($f_o(x) = f(x)$ for $x > 0$, $f_o(x) = -f(-x)$ for $x < 0$). Its solution is odd in $x$: in (4), $f_o$ odd gives $A \equiv 0$, so $u$ is a sine integral, which vanishes at $x = 0$; restricted to $x > 0$ it therefore solves the semi-infinite problem, and its coefficient $B(\lambda) = \frac1\pi\int f_o\sin(\lambda x)\,dx = \frac2\pi\int_0^\infty f\sin(\lambda x)\,dx$ is that of Theorem §26.2. Now use (7) and split the interval of integration at $0$:
+> Following Powers' hint, solve the infinite-rod problem with initial condition $f_o$, the odd extension of $f$ ($f_o(x) = f(x)$ for $x > 0$, $f_o(x) = -f(-x)$ for $x < 0$). Its solution is odd in $x$: in (4), $f_o$ odd gives $A \equiv 0$, so $u$ is a sine integral, which vanishes at $x = 0$; restricted to $x > 0$ it therefore solves the semi-infinite problem, and its coefficient $B(\lambda) = \frac1\pi\int f_o\sin(\lambda x)\,dx = \frac2\pi\int_0^\infty f\sin(\lambda x)\,dx$ is that of [[§26 Semi-Infinite Rod#^thm-26-2|Theorem §26.2]]. Now use (7) and split the interval of integration at $0$:
 >
 > $$
 > u = \frac{1}{\sqrt{4k\pi t}}\Big[\int_0^\infty f(x')e^{-(x' - x)^2/4kt}dx' + \int_{-\infty}^0 \big(-f(-x')\big)e^{-(x' - x)^2/4kt}dx'\Big] .
@@ -302,7 +302,7 @@ The semi-infinite rod of [[§26 Semi-Infinite Rod|§26]] can be treated the same
 > u(x, t) = \frac1\pi\int_0^\infty e^{-(t + 2)\lambda^2}\cos(\lambda x)\,d\lambda = \frac1\pi\sqrt{\frac{\pi}{4(t + 2)}}\,e^{-x^2/4(t + 2)} = \frac{1}{\sqrt{2\pi(2t + 4)}}\,e^{-x^2/2(2t + 4)} = f_{\sqrt{2t + 4}}(x) .
 > $$
 >
-> The solution is again a Gaussian, with variance $\sigma^2(t) = 4 + 2t$: the variance grows by $2kt$. (By (7), this is the statement that convolving Gaussians adds their variances.)
+> The solution is again a Gaussian, with variance $\sigma^2(t) = 4 + 2t$: the variance grows by $2kt$. (By (7), this is the statement that convolving Gaussians adds their variances.) The same computation in complex form, with the transform $C(\lambda)$, is [[§15★ Complex Methods#^ex-15-3|Example §15.3]].
 >
 > **(c)** At a fixed time $t_0$, $u(x, t_0) = \int_0^\infty A_{t_0}(\lambda)\cos(\lambda x)\,d\lambda$ with $A_{t_0}(\lambda) = \frac1\pi\int u(x, t_0)\cos(\lambda x)\,dx = \frac1\pi e^{-\lambda^2(t_0 + 2)}$.
 >

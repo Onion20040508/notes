@@ -140,13 +140,13 @@ The hyperbolic sine and cosine of a complex variable are defined by the formulas
 >
 > This holds for every $z$; replacing $z$ by $-iz$ (so that $iz$ becomes $z$) gives (6). (Another route, by the uniqueness of analytic continuation, is [[§28★ Uniquely Determined Analytic Functions#^ex-28-3|Example §28.3]].)
 >
-> **(7)** By (4), the addition formula (5) of §37, and (4) again,
+> **(7)** By (4), the addition formula (5) of [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|Theorem §37.3]], and (4) again,
 >
 > $$
 > \sinh(z_1 + z_2) = -i\sin(iz_1 + iz_2) = -i\big[\sin(iz_1)\cos(iz_2) + \cos(iz_1)\sin(iz_2)\big] = \sinh z_1\cosh z_2 + \cosh z_1\sinh z_2 .
 > $$
 >
-> **(8)** Likewise, with (6) of §37 and $\sin(iz_k) = i\sinh z_k$,
+> **(8)** Likewise, with (6) of [[§37 The Trigonometric Functions sin z and cos z#^thm-37-3|Theorem §37.3]] and $\sin(iz_k) = i\sinh z_k$,
 >
 > $$
 > \cosh(z_1 + z_2) = \cos(iz_1 + iz_2) = \cos(iz_1)\cos(iz_2) - \sin(iz_1)\sin(iz_2) = \cosh z_1\cosh z_2 - (i\sinh z_1)(i\sinh z_2) ,
@@ -296,7 +296,7 @@ The zeros are presented as a theorem, for comparison with [[§38 Zeros and Singu
 > z = \pm\ln(2 + \sqrt3) + (2n + 1)\pi i \qquad (n = 0, \pm1, \pm2, \ldots) .
 > $$
 >
-> Compare $\cos z = 2$, whose roots are $z = 2n\pi \pm i\ln(2 + \sqrt3)$ (B&C Sec. 38, Exercise 16): since $\cosh z = \cos(iz)$, the equation $\cosh z = -2$ is $\cos(iz) = -2$, and the roots of $\cos w = -2$ are those of $\cos w = 2$ shifted by $\pi$ (by (11) of §37), $w = (2n + 1)\pi \pm i\ln(2 + \sqrt3)$; dividing by $i$ gives the list above.
+> Compare $\cos z = 2$, whose roots are $z = 2n\pi \pm i\ln(2 + \sqrt3)$ (B&C Sec. 38, Exercise 16): since $\cosh z = \cos(iz)$, the equation $\cosh z = -2$ is $\cos(iz) = -2$, and the roots of $\cos w = -2$ are those of $\cos w = 2$ shifted by $\pi$ (by (11) of [[§37 The Trigonometric Functions sin z and cos z#^cor-37-4|Corollary §37.4]]), $w = (2n + 1)\pi \pm i\ln(2 + \sqrt3)$; dividing by $i$ gives the list above.
 >
 > *B&C: Sec. 39, Exercise 17*
 

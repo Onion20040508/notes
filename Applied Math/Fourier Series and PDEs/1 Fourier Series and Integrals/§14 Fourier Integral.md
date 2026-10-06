@@ -141,7 +141,7 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 >
 > At $x = 0$ this can be checked directly: $\int_0^{\infty}\frac{d\lambda}{\pi(1 + \lambda^2)} = \frac1\pi\cdot\frac\pi2 = \frac12$.
 >
-> On Midterm 2 these coefficients gave the temperature in an infinite rod ($u_t = u_{xx}$, $u(x, 0) = f(x)$): each mode $\cos\lambda x$, $\sin\lambda x$ decays like $e^{-\lambda^2 t}$, so $u(x, t) = \int_0^{\infty} e^{-\lambda^2 t}\Big(\frac{\cos\lambda x}{\pi(1 + \lambda^2)} + \frac{\lambda\sin\lambda x}{\pi(1 + \lambda^2)}\Big)d\lambda$ ([[§27 Infinite Rod#^thm-27-2|Theorem §27.2]]).
+> On Midterm 2 these coefficients gave the temperature in an infinite rod ($u_t = u_{xx}$, $u(x, 0) = f(x)$): each mode $\cos\lambda x$, $\sin\lambda x$ decays like $e^{-\lambda^2 t}$, so $u(x, t) = \int_0^{\infty} e^{-\lambda^2 t}\Big(\frac{\cos\lambda x}{\pi(1 + \lambda^2)} + \frac{\lambda\sin\lambda x}{\pi(1 + \lambda^2)}\Big)d\lambda$ ([[§27 Infinite Rod#^thm-27-2|Theorem §27.2]]); the whole midterm problem is [[§27 Infinite Rod#^ex-27-2|Example §27.2]], and its closed form [[§28★ The Error Function#^ex-28-3|Example §28.3]].
 >
 > *Powers: 1.9, Example 1 · Source: 341 Midterm 2, Q2(c)*
 
@@ -320,7 +320,7 @@ If $f(x)$ is defined only for $0 < x < \infty$, one can construct an even or odd
 >
 > exactly half of the cosine and sine coefficients above. This is no accident: on the whole line $f = \frac12(f_e + f_o)$, the average of its even and odd extensions, so its Fourier integral is the average of the cosine and sine integrals. At $x = 0$ both halves give $0$, and for $x < 0$ they cancel, since there $f_o = -f_e$.
 >
-> On the Midterm 2 practice sheet these coefficients solved the heat equation $u_t = 2u_{xx}$ with initial temperature $f$: on $x > 0$ with $u(0, t) = 0$ by the sine integral (Problem 7), and on the whole line by $A_f$, $B_f$ (Problem 8); the keys' coefficients agree with the ones above.
+> On the Midterm 2 practice sheet these coefficients solved the heat equation $u_t = 2u_{xx}$ with initial temperature $f$: on $x > 0$ with $u(0, t) = 0$ by the sine integral (Problem 7, [[§26 Semi-Infinite Rod#^ex-26-2|Example §26.2]]), and on the whole line by $A_f$, $B_f$ (Problem 8, [[§27 Infinite Rod#^ex-27-3|Example §27.3]](b)); the keys' coefficients agree with the ones above.
 >
 > *Powers: 1.9, Example 4 · Source: 341 Practice Midterm 2, Problems 7(c) and 8(c)*
 

@@ -139,7 +139,7 @@ In Theorems §10.3 and §10.4, $f$ is only required to be sectionally continuous
 > \frac{\pi t^2}{4} - \frac{t^3}{12} = \frac{\pi^2}{6}t - \sum_{n=1}^{\infty}\frac{\sin nt}{n^3}, \qquad\text{so}\qquad \sum_{n=1}^{\infty}\frac{\sin nt}{n^3} = \frac{t^3}{12} - \frac{\pi t^2}{4} + \frac{\pi^2 t}{6} =: p(t), \qquad 0 \le t \le 2\pi .
 > $$
 >
-> The convergence is uniform: $\sum 1/n^3$ converges (Theorem §9.2); or, $p(0) = 0 = p(2\pi)$ (indeed $\frac{8\pi^3}{12} - \pi^3 + \frac{\pi^3}{3} = 0$), so the periodic extension of $p$ is continuous with a sectionally continuous derivative (Theorem §9.3).
+> The convergence is uniform: $\sum 1/n^3$ converges ([[§9 Uniform Convergence#^thm-9-2|Theorem §9.2]]); or, $p(0) = 0 = p(2\pi)$ (indeed $\frac{8\pi^3}{12} - \pi^3 + \frac{\pi^3}{3} = 0$), so the periodic extension of $p$ is continuous with a sectionally continuous derivative ([[§9 Uniform Convergence#^thm-9-3|Theorem §9.3]]).
 >
 > **Integrate a third time: $\sum 1/n^4$.** Integrating from $0$ to $x$, with $\int_0^x\frac{\sin nt}{n^3}dt = \frac{1 - \cos nx}{n^4}$,
 >

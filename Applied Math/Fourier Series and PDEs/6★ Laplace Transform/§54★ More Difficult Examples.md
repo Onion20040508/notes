@@ -292,7 +292,7 @@ Sometimes only part of the solution is of interest. For heat conduction in a sem
 > u(x, t) = \int_0^t \sin\big(\omega(t - t')\big)v(x, t')\,dt', \qquad v(x, t) = \mathcal{L}^{-1}\Big(\frac{\cosh(\frac12 s) - \cosh\big(s(\frac12 - x)\big)}{s^2\cosh(\frac12 s)}\Big)
 > $$
 >
-> (Powers leaves the details as an exercise). The Heaviside formula is routine when all singular points are simple. They are $s = \pm i\omega$ and the zeros $s = \pm(2n - 1)i\pi$ of $\cosh(\frac12 s)$ (Lemma §53.2(b)). The point $s = 0$ is removable, because $\cosh(\frac12 s) - \cosh(s(\frac12 - x)) \approx \frac{s^2}{2}x(1 - x)$ cancels the $s^2$. The interesting case is $\cosh(i\omega/2) = 0$, that is, $\omega = (2n - 1)\pi$, one of the natural frequencies of the wire.
+> (Powers leaves the details as an exercise). The Heaviside formula is routine when all singular points are simple. They are $s = \pm i\omega$ and the zeros $s = \pm(2n - 1)i\pi$ of $\cosh(\frac12 s)$ ([[§53★ Partial Differential Equations#^lem-53-2|Lemma §53.2]](b)). The point $s = 0$ is removable, because $\cosh(\frac12 s) - \cosh(s(\frac12 - x)) \approx \frac{s^2}{2}x(1 - x)$ cancels the $s^2$. The interesting case is $\cosh(i\omega/2) = 0$, that is, $\omega = (2n - 1)\pi$, one of the natural frequencies of the wire.
 >
 > **The resonant case $\omega = \pi$.** Now
 >

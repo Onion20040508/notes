@@ -88,7 +88,7 @@ $$
 >
 > With $\alpha = -\pi$ this is (5).
 >
-> **No continuous extension to the ray.** Let $z_0 = r_0e^{i\alpha}$ be a point of the ray $\theta = \alpha$, $r_0 > 0$. The points $r_0e^{i(\alpha + \epsilon)}$ and $r_0e^{i(\alpha + 2\pi - \epsilon)}$, $0 < \epsilon < \pi$, both tend to $z_0$ as $\epsilon \to 0$, while the values of $v$ there, $\alpha + \epsilon$ and $\alpha + 2\pi - \epsilon$, tend to $\alpha$ and to $\alpha + 2\pi$. So no value of $v$ at $z_0$ makes $v$ continuous at $z_0$.
+> **No continuous extension to the ray.** Let $z_0 = r_0e^{i\alpha}$ be a point of the ray $\theta = \alpha$, $r_0 > 0$. The points $r_0e^{i(\alpha + \varepsilon)}$ and $r_0e^{i(\alpha + 2\pi - \varepsilon)}$, $0 < \varepsilon < \pi$, both tend to $z_0$ as $\varepsilon \to 0$, while the values of $v$ there, $\alpha + \varepsilon$ and $\alpha + 2\pi - \varepsilon$, tend to $\alpha$ and to $\alpha + 2\pi$. So no value of $v$ at $z_0$ makes $v$ continuous at $z_0$.
 
 ^pf-33-1
 

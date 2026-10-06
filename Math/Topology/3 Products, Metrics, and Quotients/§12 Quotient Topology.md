@@ -269,8 +269,8 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 >
 > Moreover:
 >
-> 1. $f$ is a homeomorphism $\Leftrightarrow$ $g$ is a quotient map.
-> 2. If $Z$ is Hausdorff, then so is $X^*$.
+> 1. $f$ is a [[§9 Continuous Functions#^def-9-2|homeomorphism]] $\Leftrightarrow$ $g$ is a quotient map.
+> 2. If $Z$ is [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]], then so is $X^*$.
 
 ^cor-12-4
 
@@ -293,7 +293,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 > - Algebraic counterpart: the first isomorphism theorem, [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], where the fibres of α are the cosets of its kernel and G/Ker α ≅ Im α.
 
 > [!theorem] Theorem §12.5: Product of Quotient Maps (Compact-Hausdorff Case)
-> Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is compact and $Y_1 \times Y_2$ is Hausdorff, then
+> Let $\pi_1: X_1 \to Y_1$ and $\pi_2: X_2 \to Y_2$ be quotient maps. If $X_1 \times X_2$ is [[§15 Compact Spaces#^def-15-2|compact]] and $Y_1 \times Y_2$ is [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]], then
 >
 > $$
 > \pi_1 \times \pi_2: X_1 \times X_2 \to Y_1 \times Y_2, \qquad (\pi_1 \times \pi_2)(x_1, x_2) = (\pi_1(x_1), \pi_2(x_2))

@@ -137,7 +137,7 @@ Two potential problems solved by mapping. In the first, a cylinder split lengthw
 > [!example] Example §123.4: A Cylinder with One Quarter Grounded
 > Find the potential inside a long cylinder $r = 1$ when $V = 0$ on the first quadrant ($0 < \theta < \pi/2$) of the cylindrical surface and $V = 1$ on the rest ($\pi/2 < \theta < 2\pi$). Show that $V = \frac34$ on the axis.
 >
-> **Map.** The transformation $w = i\,\dfrac{z + e^{-i\pi/4}}{z + e^{i\pi/4}}$ maps the upper half plane onto the unit disk, $z = 0$ to $1$, $z = 1$ to $e^{i\pi/4}$ and $z = \infty$ to $i$ ([[§102★ Examples (Mappings of the Upper Half Plane)|§102]], Exercises 4 and 5): the positive real axis goes onto the quarter circle from $1$ to $i$, and the negative real axis onto the rest of the circle. Write the problem in the disk with variable $z$ and use the inverse, solved from $w(Z + e^{i\pi/4}) = i(Z + e^{-i\pi/4})$ and $ie^{-i\pi/4} = e^{i\pi/4}$:
+> **Map.** The transformation $w = i\,\dfrac{z + e^{-i\pi/4}}{z + e^{i\pi/4}}$ maps the upper half plane onto the unit disk, $z = 0$ to $1$, $z = 1$ to $e^{i\pi/4}$ and $z = \infty$ to $i$ ([[§101★ Mappings of the Upper Half Plane#^ex-101-2|Example §101.2]] with $\alpha = \pi/2$, which is [[§101★ Mappings of the Upper Half Plane#^ex-101-3|Example §101.3]]; B&C's Sec. 102, Exercises 4 and 5): the positive real axis goes onto the quarter circle from $1$ to $i$, and the negative real axis onto the rest of the circle. Write the problem in the disk with variable $z$ and use the inverse, solved from $w(Z + e^{i\pi/4}) = i(Z + e^{-i\pi/4})$ and $ie^{-i\pi/4} = e^{i\pi/4}$:
 >
 > $$
 > Z = e^{i\pi/4}\,\frac{1 - z}{z - i} .

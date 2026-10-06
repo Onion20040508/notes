@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§63 Proof of Taylor's Theorem]] · ↑ [[· 5 Series]] · [[§65 Negative Powers of (z − z₀)]] →
 
-*Brown–Churchill, Section 64 · MAT 342 HW 9 · Practice Final (Spring 2005).*
+*Brown–Churchill, Section 64 · MAT 342 HW 9, Practice Final (Spring 2005).*
 
 This section collects the six Maclaurin series that the rest of the course uses constantly: the geometric series, $e^z$, $\sin z$, $\cos z$, $\sinh z$ and $\cosh z$. It also shows how to obtain new Taylor series from them by substitution, multiplication by powers, shifting the center, and identities, without computing a single derivative. That these shortcuts produce *the* Taylor series is guaranteed by uniqueness ([[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]]): if $f(z) = \sum a_n(z - z_0)^n$ for all $z$ in some disk about $z_0$, then $a_n = f^{(n)}(z_0)/n!$, however the $a_n$ were found. Conversely, the coefficients of a known series give the derivatives of $f$ at $z_0$ without differentiating.
 

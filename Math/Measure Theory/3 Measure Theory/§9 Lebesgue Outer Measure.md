@@ -30,8 +30,8 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 > $$
 >
 > where $a_j < b_j$ for all $j$. We write:
-> - $\mathring{I} = (a_1, b_1) \times \cdots \times (a_n, b_n)$ for the **interior** (open rectangle); for $I$ as above $\mathring{I} = I$, and the notation is useful for the closed or half-open rectangle with the same edges, whose interior is again this open rectangle
-> - $\bar{I} = [a_1, b_1] \times \cdots \times [a_n, b_n]$ for the **closure** (closed rectangle)
+> - $\mathring{I} = (a_1, b_1) \times \cdots \times (a_n, b_n)$ for the **interior** (open rectangle; the set of [[§2 Open and Closed Sets#^def-2-3|interior points]], 452 Def. §2.3); for $I$ as above $\mathring{I} = I$, and the notation is useful for the closed or half-open rectangle with the same edges, whose interior is again this open rectangle
+> - $\bar{I} = [a_1, b_1] \times \cdots \times [a_n, b_n]$ for the **closure** (closed rectangle; [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]])
 
 ^def-9-1
 

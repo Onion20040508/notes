@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§66 Laurent Series]] · ↑ [[· 5 Series]] · [[§68 Examples (Proof of Laurent's Theorem)]] →
 
-*Brown–Churchill, Section 67 · MAT 342 HW 10 · Practice Finals (Fall 1999, Spring 2005, Fall 2009, Spring 2012).*
+*Brown–Churchill, Section 67 · MAT 342 HW 10, Practice Finals (Fall 1999, Spring 2005, Fall 2009, Spring 2012).*
 
 This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. The proof follows the proof of Taylor's theorem ([[§63 Proof of Taylor's Theorem|§63]]) with one new ingredient. By the Cauchy–Goursat theorem for multiply connected domains, $f(z)$ is the difference of two Cauchy integrals, one over an outer circle $C_2$ and one over an inner circle $C_1$. On $C_2$ the kernel $1/(s - z)$ expands in positive powers of $z$, exactly as for Taylor's theorem. On $C_1$, where $|s| < |z|$, it expands in negative powers of $z$. The first integral therefore gives the series in nonnegative powers, and the second gives the series in negative powers. The examples show the same split in practice: singular points outside the annulus contribute positive powers, singular points inside it contribute negative powers.
 
@@ -142,7 +142,7 @@ This section proves Laurent's theorem, stated in [[§66 Laurent Series|§66]]. T
 > a_n = \frac{1}{2\pi i}\int_\Gamma\frac{g(z)\,dz}{z^{n+1}} \quad (n = 0, 1, 2, \ldots), \qquad (10) \qquad\qquad b_n = \frac{1}{2\pi i}\int_\Gamma\frac{g(z)\,dz}{z^{-n+1}} \quad (n = 1, 2, \ldots) . \qquad (11)
 > $$
 >
-> Writing $f(z + z_0)$ for $g(z)$ in (9), then replacing $z$ by $z - z_0$ in the resulting equation and in the condition of validity, gives representation (1) of §66 in $R_1 < |z - z_0| < R_2$. The coefficients agree with (2) and (3) of §66, since by the definition of contour integrals ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]), with $\Gamma'(t) = z'(t)$ and $g(\Gamma(t)) = f[z(t)]$,
+> Writing $f(z + z_0)$ for $g(z)$ in (9), then replacing $z$ by $z - z_0$ in the resulting equation and in the condition of validity, gives representation (1) of [[§66 Laurent Series|§66]] in $R_1 < |z - z_0| < R_2$. The coefficients agree with (2) and (3) of [[§66 Laurent Series|§66]], since by the definition of contour integrals ([[§44 Contour Integrals#^def-44-1|Definition §44.1]]), with $\Gamma'(t) = z'(t)$ and $g(\Gamma(t)) = f[z(t)]$,
 >
 > $$
 > \int_\Gamma\frac{g(z)\,dz}{z^{n+1}} = \int_a^b\frac{f[z(t)]\,z'(t)}{[z(t) - z_0]^{n+1}}\,dt = \int_C\frac{f(z)\,dz}{(z - z_0)^{n+1}} ,
@@ -221,7 +221,7 @@ The proof shows where the two halves of a Laurent series come from, and this sug
 > f(z) = \sum_{n=1}^{\infty}\frac{1 - 2^{n-1}}{z^n} \qquad (2 < |z| < \infty) .
 > $$
 >
-> (The $n = 1$ term vanishes: $f(z) \approx -1/z^2$ for large $z$.) All three answers agree with numerical evaluation of the coefficient integrals (5) of §66 on circles of radius $0.5$, $1.5$ and $3$.
+> (The $n = 1$ term vanishes: $f(z) \approx -1/z^2$ for large $z$.) All three answers agree with numerical evaluation of the coefficient integrals (5) of [[§66 Laurent Series#^def-66-1|Definition §66.1]] on circles of radius $0.5$, $1.5$ and $3$.
 >
 > **The Taylor case.** $\dfrac{1}{z^2 - 3z + 2} = -f(z)$, so its Taylor series about $0$ is $\sum_{n=0}^{\infty}\big(1 - 2^{-n-1}\big)z^n$, valid for $|z| < 1$, the distance to the nearer pole.
 >

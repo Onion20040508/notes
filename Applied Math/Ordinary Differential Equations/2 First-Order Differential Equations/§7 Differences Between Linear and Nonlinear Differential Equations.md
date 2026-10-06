@@ -34,8 +34,6 @@ So far every initial value problem had exactly one solution, given by a formula.
 
 ^thm-7-1
 
-The theorem asserts both the *existence* and the *uniqueness* of the solution, and it says where the solution lives: throughout any interval containing $t_0$ on which $p$ and $g$ are continuous. So a solution can be discontinuous, or fail to exist, only at points where $p$ or $g$ is discontinuous, and such points can usually be seen at a glance.
-
 > [!proof]+ Proof
 > The proof is contained in the derivation of the integrating factor, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|Theorem §4.2]] (BDP 2.1, equations (30) and (32)), looked at a little more closely. Let
 >
@@ -68,6 +66,8 @@ The theorem asserts both the *existence* and the *uniqueness* of the solution, a
 > [!remark]- Connections
 > - See also: [[§61 Linear Equations#^thm-61-1|Calc Thm. §61.1]] (Stewart's treatment of the integrating factor, without the interval of existence).
 > - The two facts the proof needs from analysis: $\int_{t_0}^t f(s)\,ds$ is differentiable with derivative $f$ when $f$ is continuous, [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]; and functions with equal derivatives on an interval differ by a constant, [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]], which is where uniqueness comes from.
+
+The theorem asserts both the *existence* and the *uniqueness* of the solution, and it says where the solution lives: throughout any interval containing $t_0$ on which $p$ and $g$ are continuous. So a solution can be discontinuous, or fail to exist, only at points where $p$ or $g$ is discontinuous, and such points can usually be seen at a glance.
 
 Choosing the lower limit of integration to be $t_0$ in both integrals makes the formula ready for the initial condition.
 
@@ -111,7 +111,7 @@ $$
 
 > [!remark] Remark: Reading Theorem 2.4.2
 > - **It contains Theorem §7.1.** If the equation is linear, $f(t, y) = -p(t)y + g(t)$ and $\partial f/\partial y = -p(t)$, so continuity of $f$ and $\partial f/\partial y$ is equivalent to continuity of $p$ and $g$. What Theorem 2.4.2 loses is the interval: for a linear equation the solution exists on all of $(\alpha, \beta)$, for a nonlinear one only on some interval $(t_0 - h, t_0 + h)$.
-> - **Its hypotheses are sufficient, not necessary.** The conclusion survives under slightly weaker hypotheses on $f$. In fact the *existence* of a solution (but not its uniqueness) follows from the continuity of $f$ alone. (BDP omits the proof of this existence theorem, known as Peano's theorem. What the proof in §11 actually uses of $\partial f/\partial y$ is the Lipschitz bound of [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]].)
+> - **Its hypotheses are sufficient, not necessary.** The conclusion survives under slightly weaker hypotheses on $f$. In fact the *existence* of a solution (but not its uniqueness) follows from the continuity of $f$ alone. (BDP omits the proof of this existence theorem, known as Peano's theorem. What the proof in [[§11 The Existence and Uniqueness Theorem|§11]] actually uses of $\partial f/\partial y$ is the Lipschitz bound of [[§11 The Existence and Uniqueness Theorem#^lem-11-5|Lemma §11.5]].)
 > - **Why the proof is harder.** The proof of [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|Theorem §7.1]] is easy because the solution of every linear equation is given by the expression (3). There is no such expression for $y' = f(t, y)$, so the solution has to be constructed as a limit ([[§11 The Existence and Uniqueness Theorem|§11]]).
 
 ^rem-7-1
@@ -220,7 +220,7 @@ $$
 >
 > for $t \ge 0$. Apply Theorem 2.4.2, and then solve the problem.
 >
-> **The theorem.** $f(t, y) = y^{1/3}$ is continuous everywhere, but $\partial f/\partial y = \frac13 y^{-2/3}$ does not exist when $y = 0$, so it is not continuous there. The initial point lies on the $t$-axis, so Theorem 2.4.2 does not apply and no conclusion can be drawn from it. By the second point of Remark: Reading Theorem 2.4.2, the continuity of $f$ does guarantee that solutions exist, though not that there is only one.
+> **The theorem.** $f(t, y) = y^{1/3}$ is continuous everywhere, but $\partial f/\partial y = \frac13 y^{-2/3}$ does not exist when $y = 0$, so it is not continuous there. The initial point lies on the $t$-axis, so Theorem 2.4.2 does not apply and no conclusion can be drawn from it. By the second point of [[§7 Differences Between Linear and Nonlinear Differential Equations#^rem-7-1|Remark: Reading Theorem 2.4.2]], the continuity of $f$ does guarantee that solutions exist, though not that there is only one.
 >
 > **Solving.** The equation is separable: $y^{-1/3}\,dy = dt$ gives $\frac32 y^{2/3} = t + c$, so $y = \big(\frac23 (t + c)\big)^{3/2}$. The initial condition is satisfied if $c = 0$:
 >
@@ -427,7 +427,7 @@ Sometimes a change of the dependent variable converts a nonlinear equation into 
 > y = \frac{1}{\dfrac1K + \Big(\dfrac{1}{y_0} - \dfrac1K\Big)e^{-rt}} = \frac{y_0 K}{y_0 + (K - y_0)e^{-rt}} .
 > $$
 >
-> This is the solution of the logistic equation found by partial fractions in [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]]. The substitution assumed $y \ne 0$ and so lost the solution $y = 0$, as in Definition §7.1.
+> This is the solution of the logistic equation found by partial fractions in [[§8 Autonomous Differential Equations and Population Dynamics#^prop-8-3|Proposition §8.3]]. The substitution assumed $y \ne 0$ and so lost the solution $y = 0$, as in [[§7 Differences Between Linear and Nonlinear Differential Equations#^def-7-1|Definition §7.1]].
 >
 > *BDP: Problem 2.4.24*
 

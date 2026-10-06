@@ -50,7 +50,7 @@ Replacing $n$ by $-n$ in the second series of (1) writes it as $\sum_{n=-\infty}
 
 ^def-66-1
 
-The integrand in (3) can be written $f(z)(z - z_0)^{n-1}$, so the integrals do not depend on the choice of $C$: by the deformation of contours ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), two positively oriented simple closed contours around $z_0$ in the annulus give the same value. The proof in §67 uses this.
+The integrand in (3) can be written $f(z)(z - z_0)^{n-1}$, so the integrals do not depend on the choice of $C$: by the deformation of contours ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), two positively oriented simple closed contours around $z_0$ in the annulus give the same value. The proof in [[§67 Proof of Laurent's Theorem|§67]] uses this.
 
 > [!remark] Remark: Special Cases of the Annulus
 > 1. **$f$ analytic in the whole disk $|z - z_0| < R_2$.** Then $f(z)(z - z_0)^{n-1}$ is analytic inside and on $C$ for $n \ge 1$, so every $b_n = 0$ by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]). And since ([[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)#^thm-56-1|Theorem §56.1]])

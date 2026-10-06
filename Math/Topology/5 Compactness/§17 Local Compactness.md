@@ -11,7 +11,7 @@ tags: [topology, math590]
 ## Definition and Examples
 
 > [!definition] Definition §17.1: Locally Compact
-> A space $X$ is **locally compact at $x$** if there is some compact subspace $C$ of $X$ that contains a neighborhood of $x$.
+> A space $X$ is **locally compact at $x$** if there is some [[§15 Compact Spaces#^def-15-2|compact]] subspace $C$ of $X$ that contains a neighborhood of $x$.
 >
 > $X$ is **locally compact** if it is locally compact at every point $x \in X$.
 
@@ -103,7 +103,7 @@ tags: [topology, math590]
 > - Computational version for ℂ: [[§17 Limits Involving the Point at Infinity#^def-17-2|342 Def. §17.2]] (the neighborhoods of ∞ are the exteriors of disks, complements of compact sets).
 
 > [!theorem] Proposition §17.1: The Collection $\mathcal{T}_Y$ is a Topology
-> Let $X$ be a Hausdorff space. Then $\mathcal{T}_Y$ as defined above is a [[§1 Topological Spaces#^def-1-1|topology]] on $Y$.
+> Let $X$ be a [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] space. Then $\mathcal{T}_Y$ as defined above is a [[§1 Topological Spaces#^def-1-1|topology]] on $Y$.
 
 ^prop-17-1
 
@@ -179,12 +179,12 @@ tags: [topology, math590]
 ### Step 3: The Main Theorem
 
 > [!theorem] Theorem §17.5: One-Point Compactification (Munkres 29.1)
-> $X$ is locally compact Hausdorff if and only if there exists a space $Y$ satisfying:
-> 1. $X$ is a subspace of $Y$.
+> $X$ is [[§17 Local Compactness#^def-17-1|locally compact]] [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] if and only if there exists a space $Y$ satisfying:
+> 1. $X$ is a [[§5 Subspace Topology#^def-5-1|subspace]] of $Y$.
 > 2. $Y \setminus X$ is a single point.
-> 3. $Y$ is compact Hausdorff.
+> 3. $Y$ is [[§15 Compact Spaces#^def-15-2|compact]] Hausdorff.
 >
-> Moreover, if $Y$ and $Y'$ are two spaces satisfying (1)–(3), then there is a homeomorphism $h: Y \to Y'$ that equals the identity on $X$.
+> Moreover, if $Y$ and $Y'$ are two spaces satisfying (1)–(3), then there is a [[§9 Continuous Functions#^def-9-2|homeomorphism]] $h: Y \to Y'$ that equals the identity on $X$.
 
 ^thm-17-5
 
@@ -274,7 +274,7 @@ tags: [topology, math590]
 ## Local Compactness in Hausdorff Spaces
 
 > [!theorem] Theorem §17.6: Characterization of Local Compactness (Munkres 29.2)
-> Let $X$ be a Hausdorff space. Then $X$ is locally compact if and only if given $x \in X$ and a neighborhood $U$ of $x$, there is a neighborhood $V$ of $x$ such that $\overline{V}$ is compact and $\overline{V} \subseteq U$.
+> Let $X$ be a [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] space. Then $X$ is locally compact if and only if given $x \in X$ and a neighborhood $U$ of $x$, there is a neighborhood $V$ of $x$ such that $\overline{V}$ is compact and $\overline{V} \subseteq U$.
 
 ^thm-17-6
 
@@ -309,7 +309,7 @@ tags: [topology, math590]
 *Uses:* [[§15 Compact Spaces#^thm-15-2|§15.2]], [[§17 Local Compactness#^thm-17-6|§17.6]]
 
 > [!theorem] Corollary §17.8: Locally Compact Hausdorff Spaces (Munkres 29.4)
-> A space $X$ is locally compact Hausdorff if and only if $X$ is homeomorphic to an open subspace of a compact Hausdorff space.
+> A space $X$ is locally compact [[§8 Hausdorff Spaces#^def-8-1|Hausdorff]] if and only if $X$ is [[§9 Continuous Functions#^def-9-2|homeomorphic]] to an open subspace of a [[§15 Compact Spaces#^def-15-2|compact]] Hausdorff space.
 
 ^cor-17-8
 

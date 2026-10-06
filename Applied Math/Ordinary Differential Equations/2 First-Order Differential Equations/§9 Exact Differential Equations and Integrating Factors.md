@@ -388,7 +388,7 @@ A partial differential equation such as (26) may have more than one solution, an
 > If $M + Ny' = 0$ is not exact ($M_y \ne N_x$):
 > 1. Compute $(M_y - N_x)/N$. If it depends on $x$ only, take $\mu(x) = \exp \int \frac{M_y - N_x}{N}\,dx$.
 > 2. Otherwise compute $(N_x - M_y)/M$. If it depends on $y$ only, take $\mu(y) = \exp \int \frac{N_x - M_y}{M}\,dy$.
-> 3. Multiply the equation by $\mu$, check that $(\mu M)_y = (\mu N)_x$, and solve it by the method for exact equations (Remark: Method — Solving an Exact Equation).
+> 3. Multiply the equation by $\mu$, check that $(\mu M)_y = (\mu N)_x$, and solve it by the method for exact equations ([[§9 Exact Differential Equations and Integrating Factors#^rem-9-1|Remark: Method — Solving an Exact Equation]]).
 > 4. Check whether the curves where $\mu = 0$ or $\mu$ is undefined carry solutions of the original equation that were lost or introduced.
 >
 > If neither quotient depends on a single variable, an integrating factor may still exist (any solution of (26)), but there is no general way to find one.

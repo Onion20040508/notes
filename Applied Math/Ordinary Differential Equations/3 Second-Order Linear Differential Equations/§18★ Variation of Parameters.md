@@ -214,7 +214,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > y = c_1e^{7t} + c_2e^{-2t} - \frac{1}{18}e^{4t} .
 > $$
 >
-> This agrees with undetermined coefficients: $Y = Ae^{4t}$ gives $(16 - 20 - 14)A = -18A = 1$, $A = -\frac{1}{18}$. Here undetermined coefficients is quicker; variation of parameters earns its keep when $g$ is not of the tabulated forms, as in Example §18.1.
+> This agrees with undetermined coefficients: $Y = Ae^{4t}$ gives $(16 - 20 - 14)A = -18A = 1$, $A = -\frac{1}{18}$. Here undetermined coefficients is quicker; variation of parameters earns its keep when $g$ is not of the tabulated forms, as in [[§18★ Variation of Parameters#^ex-18-1|Example §18.1]].
 >
 > *Source: 331 Written HW 4, Problem 3 (set for undetermined coefficients)*
 

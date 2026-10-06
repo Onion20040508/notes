@@ -170,7 +170,7 @@ $$
 ^cor-28-3
 
 > [!proof]+ Proof
-> **(a)** Restrict the solution of Theorem §28.2 to $x > 0$. It satisfies the heat equation there, $u(0, t) = \operatorname{erf}(0) = 0$ (Proposition §28.1(a)), and its initial value is $\operatorname{sgn}(x) = 1$ for $x > 0$. (Equivalently: Proposition §27.4 with $f \equiv 1$, whose odd extension is $\operatorname{sgn}$.)
+> **(a)** Restrict the solution of Theorem §28.2 to $x > 0$. It satisfies the heat equation there, $u(0, t) = \operatorname{erf}(0) = 0$ (Proposition §28.1(a)), and its initial value is $\operatorname{sgn}(x) = 1$ for $x > 0$. (Equivalently: [[§27 Infinite Rod#^prop-27-4|Proposition §27.4]] with $f \equiv 1$, whose odd extension is $\operatorname{sgn}$.)
 >
 > **(b)** Constants solve the heat equation and the equation is linear, so $1 - \operatorname{erf}(x/\sqrt{4kt}) = \operatorname{erfc}(x/\sqrt{4kt})$ (Proposition §28.1(e)) solves it too; its boundary value is $1 - 0 = 1$ and its initial value is $1 - 1 = 0$.
 
@@ -206,7 +206,7 @@ $$
 > u = \frac{T_0}{2}\Big[\operatorname{erf}\frac{b - x}{s} + \operatorname{erf}\frac{x}{s}\Big] - \frac{T_0}{2}\Big[\operatorname{erf}\frac{x + b}{s} - \operatorname{erf}\frac{x}{s}\Big] = T_0\Big[\operatorname{erf}\frac{x}{s} - \frac12\operatorname{erf}\frac{x - b}{s} - \frac12\operatorname{erf}\frac{x + b}{s}\Big] .
 > $$
 >
-> This closed form agrees numerically with the Fourier sine integral of Example §26.1 (for instance both give $0.1310T_0$ at $x = 1.5b$, $kt = 0.1b^2$), and it was used to draw the figures there and in §27.
+> This closed form agrees numerically with the Fourier sine integral of [[§26 Semi-Infinite Rod#^ex-26-1|Example §26.1]] (for instance both give $0.1310T_0$ at $x = 1.5b$, $kt = 0.1b^2$), and it was used to draw the figures there and in §27.
 >
 > *Powers: 2.11, Example and Eq. (8); 2.10, Example*
 
@@ -244,7 +244,7 @@ $$
 > u(x, t) = e^{t - x}\frac{1}{\sqrt\pi}\int_{(2t - x)/\sqrt{4t}}^\infty e^{-y^2}\,dy = \frac12e^{t - x}\operatorname{erfc}\Big(\frac{2t - x}{\sqrt{4t}}\Big) .
 > $$
 >
-> Checks: as $t \to 0+$, the argument of erfc tends to $-\infty$ for $x > 0$ (erfc $\to 2$, $u \to e^{-x}$) and to $+\infty$ for $x < 0$ ($u \to 0$). Numerically the closed form agrees with the Fourier integral of Example §27.2 (both give $0.3673$ at $x = 0.5$, $t = 0.3$). For large $t$ the solution approaches $\frac{1}{\sqrt{4\pi t}}e^{-x^2/4t}$, the heat kernel times the total initial heat $\int f = 1$.
+> Checks: as $t \to 0+$, the argument of erfc tends to $-\infty$ for $x > 0$ (erfc $\to 2$, $u \to e^{-x}$) and to $+\infty$ for $x < 0$ ($u \to 0$). Numerically the closed form agrees with the Fourier integral of [[§27 Infinite Rod#^ex-27-2|Example §27.2]] (both give $0.3673$ at $x = 0.5$, $t = 0.3$). For large $t$ the solution approaches $\frac{1}{\sqrt{4\pi t}}e^{-x^2/4t}$, the heat kernel times the total initial heat $\int f = 1$.
 >
 > *Source: 341 Midterm 2, Q2*
 

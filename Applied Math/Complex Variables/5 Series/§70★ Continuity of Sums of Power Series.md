@@ -71,7 +71,7 @@ The first consequence of uniform convergence is that the sum of a power series i
 
 ## Series in Negative Powers
 
-By writing $w = 1/(z - z_0)$, one can modify the two theorems of §69 and the theorem here so that they apply to series of the type
+By writing $w = 1/(z - z_0)$, one can modify the two theorems of [[§69★ Absolute and Uniform Convergence of Power Series|§69★]] and the theorem here so that they apply to series of the type
 
 $$
 \sum_{n=1}^{\infty}\frac{b_n}{(z - z_0)^n} . \qquad (6)

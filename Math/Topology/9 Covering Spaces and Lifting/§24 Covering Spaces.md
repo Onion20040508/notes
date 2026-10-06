@@ -79,7 +79,7 @@ tags: [topology, math590]
 > [!theorem] Proposition §24.1: Properties of Covering Maps
 > Let $p: E \to B$ be a covering map. Then:
 > 1. $p$ is an [[§12 Quotient Topology#^def-12-4|open map]].
-> 2. $p$ is a local homeomorphism: each $e \in E$ has a neighborhood mapped homeomorphically by $p$ onto an open subset of $B$.
+> 2. $p$ is a local [[§9 Continuous Functions#^def-9-2|homeomorphism]]: each $e \in E$ has a neighborhood mapped homeomorphically by $p$ onto an open subset of $B$.
 > 3. For each $b \in B$, the fiber $p^{-1}(b)$ has the [[§1 Topological Spaces#^ex-1-3|discrete topology]].
 >
 > The converse of (2) is not true: a surjective local homeomorphism need not be a covering map (see the [[§24 Covering Spaces#^ex-24-2|non-example below]]).
@@ -521,8 +521,8 @@ If you know a covering map of a space $B$, you automatically get a covering map 
 
 > [!theorem] Theorem §24.9: Properties of the Lifting Correspondence
 > Let $p: E \to B$ be a covering map with $p(e_0) = b_0$.
-> 1. If $E$ is path-connected, then $\phi: \pi_1(B, b_0) \to p^{-1}(b_0)$ is surjective.
-> 2. If $E$ is simply connected, then $\phi$ is bijective.
+> 1. If $E$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]], then $\phi: \pi_1(B, b_0) \to p^{-1}(b_0)$ is surjective.
+> 2. If $E$ is [[§23 The Fundamental Group#^def-23-3|simply connected]], then $\phi$ is bijective.
 
 ^thm-24-9
 

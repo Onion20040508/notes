@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§36 Examples (The Power Function)]] · ↑ [[· 3 Elementary Functions]] · [[§38 Zeros and Singularities of Trigonometric Functions]] →
 
-*Brown–Churchill, Section 37 · MAT 342 HW 4 · Practice Finals (Fall 1999, Fall 2002, Spring 2005, Fall 2009).*
+*Brown–Churchill, Section 37 · MAT 342 HW 4, Practice Finals (Fall 1999, Fall 2002, Spring 2005, Fall 2009).*
 
 Euler's formula expresses $\sin x$ and $\cos x$ through $e^{\pm ix}$, and the same formulas, with $z$ in place of $x$, define $\sin z$ and $\cos z$. They are entire, with the familiar derivatives, parity, periods and addition formulas; all of these are consequences of the law of exponents for $e^z$. What is new appears off the real axis: $\sin(iy) = i\sinh y$, so $|\sin z|^2 = \sin^2x + \sinh^2y$, and $\sin z$ and $\cos z$ are *unbounded* in the plane. The zeros are found in [[§38 Zeros and Singularities of Trigonometric Functions|§38]].
 
@@ -333,7 +333,7 @@ $$
 >
 > The keys of the 2002 and 2005 finals compute (a) and (b) directly from (1), as in Example §37.1, and get the same values.
 >
-> *Source: 342 practice final (Fall 2002), Q2(a); 342 practice final (Spring 2005), Q2(a); 342 sample final (Fall 1999), Q8*
+> *Source: 342 practice final (Fall 2002), Q2(a); 342 practice final (Spring 2005), Q2(a); 342 practice final (Fall 1999), Q8*
 
 ^ex-37-2
 

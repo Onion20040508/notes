@@ -35,7 +35,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 ^thm-49-1
 
 > [!remark] Remark: The Plan of the Proof
-> It is sufficient to show that (a) implies (b), that (b) implies (c), and that (c) implies (a); then, as noted in §48, either the statements are all true or none of them is. In (b), "namely $F(z_2) - F(z_1)$" refers to an antiderivative that exists by (a); in the step (c) $\Rightarrow$ (a) the antiderivative is constructed, and then (b) holds with it. The course covered (a) $\Rightarrow$ (b) $\Rightarrow$ (c) first; (c) $\Rightarrow$ (a) needs the ML-inequality of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47]].
+> It is sufficient to show that (a) implies (b), that (b) implies (c), and that (c) implies (a); then, as noted in [[§48 Antiderivatives|§48]], either the statements are all true or none of them is. In (b), "namely $F(z_2) - F(z_1)$" refers to an antiderivative that exists by (a); in the step (c) $\Rightarrow$ (a) the antiderivative is constructed, and then (b) holds with it. The course covered (a) $\Rightarrow$ (b) $\Rightarrow$ (c) first; (c) $\Rightarrow$ (a) needs the ML-inequality of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|§47]].
 
 ^rem-49-1
 

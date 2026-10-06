@@ -145,7 +145,7 @@ By the commutative law for multiplication, $iy = yi$, so one may write $z = x + 
 ^thm-2-4
 
 > [!proof]+ Proof
-> We seek real numbers $u, v$ with $(x, y)(u, v) = (1, 0)$. By (4) of §1, this is the pair of linear simultaneous equations
+> We seek real numbers $u, v$ with $(x, y)(u, v) = (1, 0)$. By (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]], this is the pair of linear simultaneous equations
 >
 > $$
 > xu - yv = 1, \qquad yu + xv = 0 .
@@ -198,7 +198,7 @@ In conjugate form the inverse is $z^{-1} = \bar z/|z|^2$ ([[§6 Complex Conjugat
 > [!example] Example §2.3: Minus Signs
 > **(a)** Use $-1 = (-1, 0)$ and $z = (x, y)$ to show $(-1)z = -z$. **(b)** Use $i = (0, 1)$ and $y = (y, 0)$ to show $-(iy) = (-i)y$, so that the additive inverse of $z = x + iy$ can be written $-z = -x - iy$ without ambiguity.
 >
-> **(a)** By (4) of §1, $(-1, 0)(x, y) = \big((-1)x - 0 \cdot y,\ 0 \cdot x + (-1)y\big) = (-x, -y)$, which is $-z$ by (5).
+> **(a)** By (4) of [[§1 Sums and Products#^def-1-3|Definition §1.3]], $(-1, 0)(x, y) = \big((-1)x - 0 \cdot y,\ 0 \cdot x + (-1)y\big) = (-x, -y)$, which is $-z$ by (5).
 >
 > **(b)** On one side, $iy = (0, 1)(y, 0) = (0, y)$, so $-(iy) = (0, -y)$ by (5). On the other, $-i = (0, -1)$ by (5), and
 >

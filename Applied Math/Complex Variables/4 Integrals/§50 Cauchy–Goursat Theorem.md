@@ -133,7 +133,7 @@ $$
 \int_C f(z)\,dz = 0 .
 $$
 
-The proof in §51 takes $C$ positively oriented; the other orientation follows as in the proof of Theorem §50.2. B&C remarks that a reader who wishes to accept the theorem without proof may pass directly to §52. Extensions to closed contours that cross themselves and to domains without holes are in [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]], and to regions with holes in [[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]].
+The proof in [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)|§51]] takes $C$ positively oriented; the other orientation follows as in the proof of Theorem §50.2. B&C remarks that a reader who wishes to accept the theorem without proof may pass directly to §52. Extensions to closed contours that cross themselves and to domains without holes are in [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]], and to regions with holes in [[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]].
 
 > [!remark] Remark: Method — Showing That an Integral Around a Closed Contour Is Zero
 > 1. **Locate the trouble.** Find where $f$ fails to be analytic: zeros of denominators, branch cuts of logarithms and powers, points where $f$ involves $\bar z$, $|z|$, $\operatorname{Re} z$.

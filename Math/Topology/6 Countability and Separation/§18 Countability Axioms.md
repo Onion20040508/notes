@@ -199,7 +199,7 @@ tags: [topology, math590]
 > [!theorem] Proposition §18.4: Relationships Between Countability and Separability
 > 1. Second countable $\Rightarrow$ separable (pick one point from each basis element).
 > 2. Separable does NOT imply second countable in general ($\mathbb{R}_\ell$ is separable but not second countable).
-> 3. In metrizable spaces: separable $\iff$ second countable.
+> 3. In [[§11 Metric Topology#^def-11-4|metrizable]] spaces: separable $\iff$ second countable.
 
 ^prop-18-4
 
@@ -220,7 +220,7 @@ tags: [topology, math590]
 *Proof of (3), separable $\Rightarrow$ second countable: given $x\in U$, pick $B(x,\varepsilon)\subseteq U$ (dashed), $\frac1n<\varepsilon/2$, and a point $d_i$ of the dense set $D$ (blue) with $d(x,d_i)<\frac1n$. The basis ball $B(d_i,\frac1n)$ (red) contains $x$ and fits inside $B(x,\varepsilon)$ by the triangle inequality. Only countably many such balls exist.*
 
 > [!theorem] Proposition §18.5: Subspaces of Separable Metrizable Spaces
-> If $X$ is separable and metrizable, then every subspace $A \subseteq X$ is separable.
+> If $X$ is separable and [[§11 Metric Topology#^def-11-4|metrizable]], then every subspace $A \subseteq X$ is separable.
 
 ^prop-18-5
 

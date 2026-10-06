@@ -110,7 +110,7 @@ The deficiency of the Fourier integral form (5) is that it gives no idea of what
 > u(0, t) = 0 = \psi(ct) + \phi(-ct) = \frac12\big[f(ct) + G(ct) + A + \tilde f(-ct) - \tilde G(-ct) - A\big] .
 > $$
 >
-> Powers takes the two parts to vanish individually, $f(ct) + \tilde f(-ct) = 0$ and $G(ct) - \tilde G(-ct) = 0$ for $t > 0$: that is, $\tilde f = f_o$ is the odd extension of $f$ and $\tilde G = G_e$ is the even extension of $G$. With this choice the boundary condition holds for every $t$, and substituting into $u = \psi(x + ct) + \phi(x - ct)$ (the constant $A$ cancels) gives (6). The initial conditions hold as in the proof of Theorem §31.3: $u(x, 0) = f_o(x) = f(x)$ and $u_t(x, 0) = cG_e'(x) = g(x)$ for $x > 0$.
+> Powers takes the two parts to vanish individually, $f(ct) + \tilde f(-ct) = 0$ and $G(ct) - \tilde G(-ct) = 0$ for $t > 0$: that is, $\tilde f = f_o$ is the odd extension of $f$ and $\tilde G = G_e$ is the even extension of $G$. With this choice the boundary condition holds for every $t$, and substituting into $u = \psi(x + ct) + \phi(x - ct)$ (the constant $A$ cancels) gives (6). The initial conditions hold as in the proof of [[§31 d'Alembert's Solution#^thm-31-3|Theorem §31.3]]: $u(x, 0) = f_o(x) = f(x)$ and $u_t(x, 0) = cG_e'(x) = g(x)$ for $x > 0$.
 
 ^pf-34-2
 
@@ -232,7 +232,7 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 ^thm-34-4
 
 > [!proof]+ Proof
-> **Derivation** (Exercise 7). By Theorem §31.2, $u = \psi(x + ct) + \phi(x - ct)$. The initial conditions give, now for all real $x$, $\psi + \phi = f$ and $c\psi' - c\phi' = g$; integrating the second, $\psi - \phi = G + A$ with $G(x) = \frac1c\int_0^xg(z)\,dz$. Hence $\psi = \frac12(f + G + A)$ and $\phi = \frac12(f - G - A)$ on the whole line, and no extension is needed:
+> **Derivation** (Exercise 7). By [[§31 d'Alembert's Solution#^thm-31-2|Theorem §31.2]], $u = \psi(x + ct) + \phi(x - ct)$. The initial conditions give, now for all real $x$, $\psi + \phi = f$ and $c\psi' - c\phi' = g$; integrating the second, $\psi - \phi = G + A$ with $G(x) = \frac1c\int_0^xg(z)\,dz$. Hence $\psi = \frac12(f + G + A)$ and $\phi = \frac12(f - G - A)$ on the whole line, and no extension is needed:
 >
 > $$
 > u(x, t) = \frac12\big[f(x + ct) + f(x - ct)\big] + \frac12\big[G(x + ct) - G(x - ct)\big] ,

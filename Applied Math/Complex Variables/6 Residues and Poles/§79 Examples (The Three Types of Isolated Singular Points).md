@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§78 The Three Types of Isolated Singular Points]] · ↑ [[· 6 Residues and Poles]] · [[§80 Residues at Poles]] →
 
-*Brown–Churchill, Section 79 · MAT 342 HW 11, Practice Final (Spring 2005), Sample Final (Fall 1999).*
+*Brown–Churchill, Section 79 · MAT 342 HW 11, Practice Finals (Spring 2005, Fall 1999).*
 
 This section illustrates the three types of isolated singular points of [[§78 The Three Types of Isolated Singular Points|§78]] by writing out Laurent series: a removable singular point, where the principal part vanishes; the essential singular point of $e^{1/z}$, where it never stops; and poles of orders $1$ and $2$. Two observations point ahead to [[§84 Behavior of Functions Near Isolated Singular Points|§84]]: near a pole the function tends to $\infty$, while near an essential singular point it takes nearly every value infinitely often (Picard's theorem). The remaining sections of the chapter develop faster methods for recognizing poles and computing their residues.
 
@@ -210,7 +210,7 @@ B&C refers to Markushevich, *Theory of Functions of a Complex Variable*, Vol. II
 > \operatorname{Res}_{z=\pi} f = \frac{(1 + \pi)\cos\pi/\pi^4}{\cos\pi} = \frac{1 + \pi}{\pi^4}, \qquad \operatorname{Res}_{z=-\pi} f = \frac{(1 - \pi)\cos(-\pi)/\pi^4}{\cos(-\pi)} = \frac{1 - \pi}{\pi^4} .
 > $$
 >
-> *Source: 342 practice final (Spring 2005), Q1(b)–(d); 342 sample final (Fall 1999), Q1*
+> *Source: 342 practice final (Spring 2005), Q1(b)–(d); 342 practice final (Fall 1999), Q1*
 
 ^ex-79-5
 

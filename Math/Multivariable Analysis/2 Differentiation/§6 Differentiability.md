@@ -143,7 +143,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 > - The general statement in 591: the tangent space to the graph of a smooth $G : \mathbb{R}^n \to \mathbb{R}^k$ is the graph of $G'(x_0)$, [[§23 The Geometric Tangent Space#^lem-23-2|591 Lemma §23.2]].
 
 > [!theorem] Theorem §6.1: Differentiability Implies All Directional Derivatives
-> If $f$ is differentiable at $(x_0, y_0)$ with derivative $L = Df_{(x_0,y_0)}$, then for every unit direction $\mathbf{u} = (a, b)$ the [[§7 Directional Derivatives#^def-7-1|directional derivative]] exists and
+> If $f$ is differentiable at $(x_0, y_0)$ with derivative $L = Df_{(x_0,y_0)}$, then for every unit direction $\mathbf{u} = (a, b)$ the [[§7 Directional Derivatives#^def-7-1|directional derivative]] (defined in §7, ahead) exists and
 >
 > $$
 > D_{\mathbf{u}} f(x_0, y_0) = L(a, b) = f_x(x_0,y_0) \cdot a + f_y(x_0,y_0) \cdot b.

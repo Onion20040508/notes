@@ -548,8 +548,8 @@ Throughout, assume $D$ is bounded and Jordan measurable, and all functions are i
 > A subtle point in the proof: when we combine $\mathcal{T}_A \cup \mathcal{T}_B$, pieces from $\mathcal{T}_A$ and $\mathcal{T}_B$ may overlap on $A \cap B$ (which lies in the boundaries since $A$ and $B$ are almost disjoint).
 >
 > Why doesn't this cause problems?
-> - Since $A$ and $B$ are almost disjoint, $A \cap B \subseteq \partial A \cap \partial B$.
-> - For Jordan measurable sets, the boundary has Jordan content zero ([[§15 Multivariable Integration#^rem-15-2|§15 Remark]]): $|A \cap B| = 0$.
+> - Since $A$ and $B$ are almost disjoint, $A \cap B \subseteq \partial A \cup \partial B$: a common point cannot be interior to both sets, so it is a boundary point of at least one of them.
+> - For Jordan measurable sets, the boundary has Jordan content zero ([[§15 Multivariable Integration#^rem-15-2|§15 Remark]]), so $\partial A \cup \partial B$ does too: $|A \cap B| = 0$.
 > - Any contribution from the intersection region has measure zero and doesn't affect the integral.
 >
 > More precisely, if a piece $D_i \in \mathcal{T}_A$ overlaps with a piece $D_j \in \mathcal{T}_B$, their overlap $D_i \cap D_j$ has Jordan content zero (it's contained in $A \cap B$). So even if we “double-count” this region, it contributes zero to both sums.
@@ -649,7 +649,7 @@ $$
 ### Change of Variables: Polar Coordinates
 
 > [!theorem] Theorem §15.7: Change of Variables to Polar Coordinates
-> Let $D^* = \{(r, \theta) : a \leq r \leq b, \alpha \leq \theta \leq \beta\}$ be a region in polar coordinates, and let $D \subseteq \mathbb{R}^2$ be its image under the transformation $x = r\cos\theta$, $y = r\sin\theta$.
+> Let $D^* = \{(r, \theta) : a \leq r \leq b, \alpha \leq \theta \leq \beta\}$, with $0 \leq a < b$ and $\alpha < \beta \leq \alpha + 2\pi$, be a region in polar coordinates, and let $D \subseteq \mathbb{R}^2$ be its image under the transformation $x = r\cos\theta$, $y = r\sin\theta$.
 >
 > If $f$ is continuous on $D$, then:
 >
@@ -947,7 +947,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 >
 > *Boundedness.* Since $D$ is closed and bounded (contained in $[a, b] \times [\min \psi, \max \varphi]$), $D$ is compact ([[Heine–Borel Theorem|Heine–Borel]]). Since $f$ is continuous on the compact set $D$, $f$ is bounded ([[Continuous Image of a Compact Space is Compact|continuous image of compact is compact]]): there exists $B > 0$ such that $|f(x, y)| \leq B$ for all $(x, y) \in D$.
 >
-> Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some $M > 0$. Since the proof integrates $f$ over regions $D_k \supseteq D$, we extend $f$ outside $D$: set $f(x, y) := f(\bar{x}, \bar{y})$ with $\bar{x} = \min(\max(x, a), b)$ and $\bar{y} = \min(\max(y, \psi(\bar{x})), \varphi(\bar{x}))$. This extension is continuous on $[0, M]^2$ (a composition of continuous functions), agrees with $f$ on $D$, and still satisfies $|f| \leq B$. (Extending by $0$ would also keep $|f| \leq B$, but would break the continuity needed in Step 7.)
+> Without loss of generality, embed $D$ in a square $[0, M] \times [0, M]$ for some integer $M > 0$ (translate $D$ if necessary). Since the proof integrates $f$ over regions $D_k \supseteq D$, we extend $f$ outside $D$: set $f(x, y) := f(\bar{x}, \bar{y})$ with $\bar{x} = \min(\max(x, a), b)$ and $\bar{y} = \min(\max(y, \psi(\bar{x})), \varphi(\bar{x}))$. This extension is continuous on $[0, M]^2$ (a composition of continuous functions), agrees with $f$ on $D$, and still satisfies $|f| \leq B$. (Extending by $0$ would also keep $|f| \leq B$, but would break the continuity needed in Step 7.)
 >
 > **Step 1: Partition the square into a grid.**
 >
@@ -1389,7 +1389,7 @@ We present three different proofs, each offering a distinct perspective:
 | 2 | Implicit Function Theorem | Reduce 2D to two 1D substitutions via IFT |
 | 3 | Two-Step Decomposition | Factor into primitive transformations |
 
-**Proof 1** is the most geometric: it shows why the Jacobian determinant measures area distortion. **Proof 2** is the most analytic: it tracks coordinate changes explicitly. **Proof 3** (from Courant-John) generalizes most easily to $n$ dimensions.
+**Proof 1** is the most geometric: it shows why the Jacobian determinant measures area distortion. **Proof 2** is the most analytic: it tracks coordinate changes explicitly. **Proof 3** (from Courant–John) generalizes most easily to $n$ dimensions.
 
 ---
 
@@ -1794,7 +1794,7 @@ We present three different proofs, each offering a distinct perspective:
 
 #### Third proof: two-step decomposition (Courant–John)
 
-> [!proof]+ Third Proof: Two-Step Decomposition (Courant-John)
+> [!proof]+ Third Proof: Two-Step Decomposition (Courant–John)
 > This approach, from Courant & John's *Introduction to Calculus and Analysis*, decomposes the general transformation into two simpler “primitive” transformations, each changing only one variable at a time. This method extends naturally to higher dimensions.
 >
 > **Setup.** We want to prove:
@@ -1980,7 +1980,7 @@ We present three different proofs, each offering a distinct perspective:
 > **Common Jordan Measurable Domains** ([[§15 Multivariable Integration#^ex-15-3|Ex. §15.3]]):
 > - Rectangles, triangles, polygons
 > - Disks, ellipses
-> - Regions bounded by $C^1$ curves (Type I and Type II regions)
+> - Regions between the graphs of two continuous functions (Type I and Type II regions)
 > - Finite unions and intersections of the above
 >
 > **Non-Example:** The set of points in $[0,1]^2$ with both coordinates rational is bounded but *not* Jordan measurable (its boundary is the entire square, which has positive area).
@@ -2202,7 +2202,7 @@ This proposition explains why the Jacobian determinant appears in the change of 
 
 ^thm-15-20
 
-The proof follows the same structure as the 2D case ([[§15 Multivariable Integration#^pf-15-14-3|Proof 3]] generalizes most directly: decompose into $n$ primitive transformations).
+*The notes omit the proof: it follows the same structure as the 2D case ([[§15 Multivariable Integration#^pf-15-14-3|Proof 3]] generalizes most directly: decompose into $n$ primitive transformations).*
 
 > [!remark]- Connections
 > - Linear-algebra core: [[§34 Determinants#^ladr-9-61|LADR 9.61]] for the local volume factor and [[§34 Determinants#^ladr-9-49|LADR 9.49]] (det is multiplicative) for composing primitive transformations.

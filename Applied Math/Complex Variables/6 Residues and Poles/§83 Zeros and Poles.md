@@ -68,7 +68,7 @@ Most poles met in practice come from zeros of a denominator. If $p$ and $q$ are 
 
 ## Residues at Simple Poles of Quotients
 
-Theorem §83.1 leads to another method for identifying *simple* poles and finding the corresponding residues. It is sometimes easier to use than the theorem in §80.
+Theorem §83.1 leads to another method for identifying *simple* poles and finding the corresponding residues. It is sometimes easier to use than the theorem in §80 ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]).
 
 > [!theorem] Theorem §83.2: Residue of p/q at a Simple Zero of q
 > Let two functions $p$ and $q$ be analytic at a point $z_0$. If
@@ -100,7 +100,7 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 > \frac{p(z)}{q(z)} = \frac{\phi(z)}{z - z_0} \qquad\text{where}\qquad \phi(z) = \frac{p(z)}{g(z)} .
 > $$
 >
-> Since this $\phi$ is analytic and nonzero at $z_0$, the theorem in §80 gives
+> Since this $\phi$ is analytic and nonzero at $z_0$, the theorem in §80 ([[§80 Residues at Poles#^thm-80-1|Theorem §80.1]]) gives
 >
 > $$
 > \operatorname{Res}_{z=z_0}\frac{p(z)}{q(z)} = \frac{p(z_0)}{g(z_0)} . \qquad (4)

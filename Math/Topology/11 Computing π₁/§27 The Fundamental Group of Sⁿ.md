@@ -13,7 +13,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 ## The Generation Theorem
 
 > [!theorem] Theorem §27.1: Generation by Open Cover (Munkres 59.1)
-> Let $X = U \cup V$, where $U$ and $V$ are open in $X$. Suppose $U \cap V$ is path-connected and $x_0 \in U \cap V$. Let $i_U: U \hookrightarrow X$ and $i_V: V \hookrightarrow X$ be the inclusion maps. Then the images of the [[§23 The Fundamental Group#^def-23-4|induced homomorphisms]]
+> Let $X = U \cup V$, where $U$ and $V$ are open in $X$. Suppose $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]] and $x_0 \in U \cap V$. Let $i_U: U \hookrightarrow X$ and $i_V: V \hookrightarrow X$ be the inclusion maps. Then the images of the [[§23 The Fundamental Group#^def-23-4|induced homomorphisms]]
 >
 > $$
 > i_{U*}: \pi_1(U, x_0) \to \pi_1(X, x_0) \qquad \text{and} \qquad i_{V*}: \pi_1(V, x_0) \to \pi_1(X, x_0)
@@ -103,7 +103,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 ## Consequence: Simply Connected Spaces
 
 > [!theorem] Corollary §27.2: Simply Connected from Open Cover
-> Let $X = U \cup V$, where $U$ and $V$ are open and [[§23 The Fundamental Group#^def-23-3|simply connected]], and $U \cap V$ is path-connected. Then $X$ is simply connected.
+> Let $X = U \cup V$, where $U$ and $V$ are open and [[§23 The Fundamental Group#^def-23-3|simply connected]], and $U \cap V$ is [[§14 Connected Subspaces of ℝ#^def-14-3|path-connected]]. Then $X$ is simply connected.
 
 ^cor-27-2
 

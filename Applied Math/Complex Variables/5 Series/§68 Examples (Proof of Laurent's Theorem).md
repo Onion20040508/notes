@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§67 Proof of Laurent's Theorem]] · ↑ [[· 5 Series]] · [[§69★ Absolute and Uniform Convergence of Power Series]] →
 
-*Brown–Churchill, Section 68 · MAT 342 HW 10 · Practice Finals (Fall 2002, Spring 2005, Spring 2012).*
+*Brown–Churchill, Section 68 · MAT 342 HW 10, Practice Finals (Fall 2002, Spring 2005, Spring 2012).*
 
 Laurent coefficients are almost never computed from the integrals of Laurent's theorem. Instead one manipulates the Maclaurin series of [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|Proposition §64.1]] by substitution (often $z \mapsto 1/z$) and multiplication, as in [[§65 Negative Powers of (z − z₀)|§65]] and [[§67 Proof of Laurent's Theorem#^rem-67-1|Remark: Method — Laurent Series in an Annulus]]. Two facts make this legitimate. First, Laurent's theorem ([[§67 Proof of Laurent's Theorem#^thm-67-1|Theorem §67.1]]) predicts the domain: the series of [[§65 Negative Powers of (z − z₀)|§65]] are valid in punctured disks or punctured planes because the functions there have a single singular point at the center, or a nearest one at the outer radius. Second, any convergent series in powers of $z - z_0$ that represents $f$ in an annulus *is* the Laurent series there ([[§72★ Uniqueness of Series Representations#^thm-72-4|Theorem §72.4]], deferred to §72). The integral formula is still useful, but in the opposite direction: once the series is known, its coefficient $b_1$ evaluates $\int_C f(z)\,dz$. This is the idea that Chapter 6 develops into the residue theorem.
 

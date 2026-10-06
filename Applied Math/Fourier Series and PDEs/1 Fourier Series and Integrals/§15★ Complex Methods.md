@@ -198,7 +198,7 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 > \int_{-L}^{L} C(\lambda)e^{i\lambda x}\,d\lambda = \int_0^{L}\big(A(\lambda)\cos\lambda x + B(\lambda)\sin\lambda x\big)\,d\lambda + 0 ,
 > $$
 >
-> and as $L \to \infty$ this tends to $\frac12\big(f(x+) + f(x-)\big)$ by Theorem §14.1.
+> and as $L \to \infty$ this tends to $\frac12\big(f(x+) + f(x-)\big)$ by [[§14 Fourier Integral#^thm-14-1|Theorem §14.1]].
 >
 > **3.** If $f$ is even then $B = 0$, and if $f$ is odd then $A = 0$ (Remark: Reading the Theorem in [[§14 Fourier Integral#^rem-14-2|§14]]); part 1 gives the rest.
 
@@ -270,6 +270,8 @@ The lecture reached (5) and (6) as Powers reached (7) of §14 ([[§14 Fourier In
 > $$
 >
 > So $\Delta x(t)\cdot\Delta\lambda(t) = \sqrt{4(\ln 2)^2} = 2\ln 2$, a constant. More generally, for any $f_\sigma$, $\Delta x = \sigma\sqrt{2\ln 2}$ and $\Delta\lambda = \sqrt{2\ln 2}/\sigma$: a function narrow in $x$ has a transform wide in $\lambda$, and conversely. This is the mathematical core of the uncertainty principle of quantum mechanics, where $\lambda$ is a wave number and $\hbar\lambda$ a momentum.
+>
+> The same midterm problem, worked with the real Fourier integral, is [[§27 Infinite Rod#^ex-27-4|Example §27.4]].
 >
 > *Powers: Exercise 1.10.8 · Source: 341 Midterm 2, Q3 (bonus)*
 

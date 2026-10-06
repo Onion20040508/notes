@@ -9,7 +9,7 @@ tags: [complex-variables, math342, extension]
 ---
 ← [[§72★ Uniqueness of Series Representations]] · ↑ [[· 5 Series]] · [[§74 Isolated Singular Points]] →
 
-*Brown–Churchill, Section 73 · Practice Final (Fall 2002).*
+*Brown–Churchill, Section 73 · MAT 342 Practice Final (Fall 2002).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
 Power series can be multiplied and divided like polynomials. If $\sum a_n(z - z_0)^n$ and $\sum b_n(z - z_0)^n$ converge in a disk, their product is the series obtained by multiplying term by term and collecting like powers, the **Cauchy product**, valid in the same disk. If the second sum has no zeros in the disk, their quotient is the series obtained by long division. The proofs are short because of what precedes: the sums are analytic ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), so the product and quotient have Taylor series ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]), and those coefficients are computed from the given ones with Leibniz's rule and uniqueness ([[§72★ Uniqueness of Series Representations#^thm-72-1|Theorem §72.1]]). In practice only the first few terms are needed. They give the leading terms of Laurent series such as $1/\sin z$ and $1/\sinh z$, which the old finals use to find principal parts and residues ([[§74 Isolated Singular Points|Chapter 6]]).

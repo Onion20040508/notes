@@ -399,7 +399,7 @@ To show that $\R$ is not denumerable is to show that *no* bijection $\Z^+ \to \R
 > b_n = \begin{cases} 1 & \text{if } 0 \le f(n) < 1 \text{ and } a_{nn} = 0, \\ 0 & \text{otherwise}. \end{cases}
 > $$
 >
-> This decimal has only the digits $0$ and $1$, so it does not end in recurring $9$s, and $0 \le b \le 0.b_1 + 10^{-1} \le 0.1 + 0.1 < 1$ (the defining inequalities of [[§13 Number Systems#^def-13-5|Definition §13.5]] at $n = 1$). Now fix $n$. If $f(n) \notin [0, 1)$ then $f(n) \ne b$. If $0 \le f(n) < 1$, the $n$th digit $b_n$ of $b$ differs from the $n$th digit $a_{nn}$ of $f(n)$ (if $a_{nn} = 0$ then $b_n = 1$, and if $a_{nn} \ne 0$ then $b_n = 0$), so the two expansions differ, and by Lemma [[§14 Counting Infinite Sets#^lem-14-11|§14.11]](2) $f(n) \ne b$. So $b$ is not a value of $f$.
+> This decimal has only the digits $0$ and $1$, so it does not end in recurring $9$s, and $0 \le 0.b_1 \le b \le 0.b_1 + 10^{-1} \le 0.1 + 0.1 < 1$ (the defining inequalities of [[§13 Number Systems#^def-13-5|Definition §13.5]] at $n = 1$). Now fix $n$. If $f(n) \notin [0, 1)$ then $f(n) \ne b$. If $0 \le f(n) < 1$, the $n$th digit $b_n$ of $b$ differs from the $n$th digit $a_{nn}$ of $f(n)$ (if $a_{nn} = 0$ then $b_n = 1$, and if $a_{nn} \ne 0$ then $b_n = 0$), so the two expansions differ, and by Lemma [[§14 Counting Infinite Sets#^lem-14-11|§14.11]](2) $f(n) \ne b$. So $b$ is not a value of $f$.
 
 ^pf-14-12
 

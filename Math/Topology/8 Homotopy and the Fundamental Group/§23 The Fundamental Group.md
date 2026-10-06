@@ -51,7 +51,7 @@ tags: [topology, math590]
 > - Used in Quantum Field Theory: $SL(2, \mathbb C)$ is simply connected, and the Lorentz group $SO^+(1,3)$ is not — [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|QFT Theorem §C5a.1.8]].
 
 > [!theorem] Lemma §23.1: Paths in Simply Connected Spaces
-> In a simply connected space $X$, any two paths having the same initial and terminal points are path homotopic.
+> In a simply connected space $X$, any two paths having the same initial and terminal points are [[§22 Homotopy of Paths#^def-22-4|path homotopic]].
 
 ^lem-23-1
 
@@ -361,7 +361,7 @@ tags: [topology, math590]
 ^cor-23-8
 
 > [!proof]+ Proof
-> Apply the [[§23 The Fundamental Group#^thm-23-7|theorem]] with $X = Y = S^1$ and the [[§21 Algebra Prerequisites꞉ Groups#^thm-21-7|product of isomorphisms theorem]] (§21):
+> Apply the [[§23 The Fundamental Group#^thm-23-7|theorem]] with $X = Y = S^1$ and the [[§21 Algebra Prerequisites꞉ Groups#^thm-21-7|product of isomorphisms theorem]] (§21), together with $\pi_1(S^1) \cong \mathbb{Z}$, which is proved later ([[Fundamental Group of the Circle|Theorem §24.10]]):
 >
 > $$\pi_1(S^1 \times S^1) \cong \pi_1(S^1) \times \pi_1(S^1) \cong \mathbb{Z} \times \mathbb{Z}.$$
 

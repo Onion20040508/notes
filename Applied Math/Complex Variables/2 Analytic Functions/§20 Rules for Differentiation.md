@@ -141,7 +141,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 *Uses:* [[§20 Rules for Differentiation#^thm-20-1|§20.1]], [[§20 Rules for Differentiation#^thm-20-2|§20.2]]
 
 > [!example] Example §20.1: The Derivative of z² from the Definition
-> Use definition (3) of §19 to show that $dw/dz = 2z$ when $w = z^2$.
+> Use definition (3) of [[§19 Derivatives#^def-19-1|Definition §19.1]] to show that $dw/dz = 2z$ when $w = z^2$.
 >
 > $$
 > \frac{\Delta w}{\Delta z} = \frac{(z + \Delta z)^2 - z^2}{\Delta z} = \frac{2z\,\Delta z + (\Delta z)^2}{\Delta z} = 2z + \Delta z \longrightarrow 2z \qquad (\Delta z \to 0) .
@@ -300,7 +300,7 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 > \frac{f(z)}{g(z)} = \frac{\dfrac{f(z) - f(z_0)}{z - z_0}}{\dfrac{g(z) - g(z_0)}{z - z_0}} ,
 > $$
 >
-> whenever $g(z) \ne 0$. The function $q(z) = \big(g(z) - g(z_0)\big)/(z - z_0)$, extended by $q(z_0) = g'(z_0)$, is continuous at $z_0$ by definition (1) of §19, and $q(z_0) \ne 0$; so by [[§18 Continuity#^thm-18-3|Theorem §18.3]], $q(z) \ne 0$ for $|z - z_0| < \delta$, that is, $g(z) = (z - z_0)q(z) \ne 0$ for $0 < |z - z_0| < \delta$. So $f/g$ is defined in a deleted neighborhood of $z_0$ and equals the quotient above, whose numerator tends to $f'(z_0)$ and denominator to $g'(z_0) \ne 0$. The quotient rule for limits gives the result.
+> whenever $g(z) \ne 0$. The function $q(z) = \big(g(z) - g(z_0)\big)/(z - z_0)$, extended by $q(z_0) = g'(z_0)$, is continuous at $z_0$ by definition (1) of [[§19 Derivatives#^def-19-1|Definition §19.1]], and $q(z_0) \ne 0$; so by [[§18 Continuity#^thm-18-3|Theorem §18.3]], $q(z) \ne 0$ for $|z - z_0| < \delta$, that is, $g(z) = (z - z_0)q(z) \ne 0$ for $0 < |z - z_0| < \delta$. So $f/g$ is defined in a deleted neighborhood of $z_0$ and equals the quotient above, whose numerator tends to $f'(z_0)$ and denominator to $g'(z_0) \ne 0$. The quotient rule for limits gives the result.
 >
 > For example, with $f(z) = z^4 - 1$ and $g(z) = z - i$, which both vanish at $i$,
 >

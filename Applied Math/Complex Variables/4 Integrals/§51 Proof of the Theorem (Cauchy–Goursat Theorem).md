@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§50 Cauchy–Goursat Theorem]] · ↑ [[· 4 Integrals]] · [[§52 Simply Connected Domains]] →
 
-*Brown–Churchill, Section 51 (with Exercises 4, 7–9 of Section 53) · MAT 342 HW 6 · Practice Final (Fall 1999).*
+*Brown–Churchill, Section 51 (with Exercises 4, 7–9 of Section 53) · MAT 342 HW 6, Practice Final (Fall 1999).*
 
 This section proves the Cauchy–Goursat theorem, which [[§50 Cauchy–Goursat Theorem|§50]] states: if $f$ is analytic at all points interior to and on a simple closed contour $C$, then $\int_C f(z)\,dz = 0$. Cauchy's own proof used Green's theorem and needed $f'$ to be continuous; Goursat's argument needs only that $f'$ exists. Cover the region inside $C$ by small squares, on each of which $f$ is within $\varepsilon$ of its linear approximation at a point; a linear function integrates to zero around any closed contour, the integrals along shared sides cancel, and what is left is at most a constant times $\varepsilon$. The one delicate step is a lemma that such a covering exists, proved by repeated subdivision; everything later in the course (the deformation of paths, the Cauchy integral formula, Taylor and Laurent series, residues) rests on this theorem.
 

@@ -108,9 +108,9 @@ tags: [topology, math590]
 
 > [!theorem] Theorem §16.2: Equivalence for Metrizable Spaces
 > Let $X$ be a [[§11 Metric Topology#^def-11-4|metrizable]] space. Then the following are equivalent:
-> 1. $X$ is compact
-> 2. $X$ is limit point compact
-> 3. $X$ is sequentially compact
+> 1. $X$ is [[§15 Compact Spaces#^def-15-2|compact]]
+> 2. $X$ is [[§16 Limit Point Compactness#^def-16-1|limit point compact]]
+> 3. $X$ is [[§16 Limit Point Compactness#^def-16-3|sequentially compact]]
 
 ^thm-16-2
 

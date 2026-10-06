@@ -80,7 +80,7 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 ^def-15-1
 
 > [!remark]- Connections
-> - The series argument of Remark: Where Euler's Formula Comes From, with its series: [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]] ($e^x$), [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]] ($\sin x$), [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]] ($\cos x$); the same derivation from the complex-numbers side: [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]], where $e^{i\varphi}$ gives the polar form of a complex number.
+> - The series argument of [[§15 Complex Roots of the Characteristic Equation#^rem-15-1|Remark: Where Euler's Formula Comes From]], with its series: [[§78 Taylor and Maclaurin Series#^thm-78-6|Calc Thm. §78.6]] ($e^x$), [[§78 Taylor and Maclaurin Series#^thm-78-7|Calc Thm. §78.7]] ($\sin x$), [[§78 Taylor and Maclaurin Series#^thm-78-8|Calc Thm. §78.8]] ($\cos x$); the same derivation from the complex-numbers side: [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]], where $e^{i\varphi}$ gives the polar form of a complex number.
 > - Lay defines $e^{(a+bi)t}$ by the power series and arrives at the same formula (14), used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$: [[§38 Applications to Differential Equations#^def-38-3|235 Def. §38.3]].
 > - Complex-variables version: [[§7 Exponential Form#^def-7-2|342 Def. §7.2]] (Euler's formula and the exponential form $z = re^{i\theta}$) and [[§30 The Exponential Function#^def-30-1|342 Def. §30.1]] ($e^z = e^xe^{iy}$ for every complex $z$, whose Maclaurin series is proved in [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]]).
 

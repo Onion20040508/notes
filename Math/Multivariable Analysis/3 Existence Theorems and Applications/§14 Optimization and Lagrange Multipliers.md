@@ -512,7 +512,7 @@ The Lagrange conditions $\nabla f = \mathbf{0}$ (unconstrained) or $\nabla f = \
 ![[m452-14-1.svg]]
 *The three nondegenerate critical point types, classified by the Hessian: both eigenvalues positive (bowl, local min), both negative (dome, local max), mixed signs (saddle). The second derivative test of §14 reads these signs from $f_{xx}$ and $\det H = f_{xx}f_{yy} - f_{xy}^2$.*
 
-> [!proof]+ Proof sketch
+> [!proof]+ Proof Sketch
 > By Taylor's theorem (single-variable version applied to $F(t) = f(x_0 + th, y_0 + tk)$; [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]], as in [[Multivariable Taylor's Theorem|Theorem §9.2]]):
 >
 > $$

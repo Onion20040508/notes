@@ -156,7 +156,7 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 > c_m = \frac{\int_0^a g(x)\sin(\lambda_mx)\,dx}{\int_0^a \sin^2(\lambda_mx)\,dx} = \frac{\int_0^a g(x)\sin(\lambda_mx)\,dx}{\dfrac a2 + \dfrac{\kappa}{h}\,\dfrac{\cos^2(\lambda_ma)}{2}} ,
 > $$
 >
-> by Example §23.3(a). The denominator is not $a/2$, as it would be for $\sin(m\pi x/a)$. For instance, for constant $g(x) = T$, $\int_0^a \sin(\lambda_mx)\,dx = (1 - \cos(\lambda_ma))/\lambda_m$ and
+> by [[§23 Sturm–Liouville Problems#^ex-23-3|Example §23.3]](a). The denominator is not $a/2$, as it would be for $\sin(m\pi x/a)$. For instance, for constant $g(x) = T$, $\int_0^a \sin(\lambda_mx)\,dx = (1 - \cos(\lambda_ma))/\lambda_m$ and
 >
 > $$
 > c_m = \frac{2hT\big(1 - \cos(\lambda_ma)\big)}{\lambda_m\big(ha + \kappa\cos^2(\lambda_ma)\big)} .

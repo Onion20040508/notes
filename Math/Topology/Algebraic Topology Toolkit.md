@@ -108,7 +108,7 @@ A common exam question: *find a space $X$ with $\pi_1(X) \cong G$*. The strategy
 | **Group operation** | **Space operation** | **Effect on $\pi_1$** |
 |---|---|---|
 | [[§21 Algebra Prerequisites꞉ Groups#^def-21-5\|Direct product]] $G \times H$ | Product $X \times Y$ | $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§23 The Fundamental Group#^thm-23-7\|§23.7]]) |
-| [[§21 Algebra Prerequisites꞉ Groups#^def-21-9\|Free product]] $G * H$ | [[§28 Fundamental Group of Some Surfaces#^def-28-3\|Wedge]] $X \vee Y$ | $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ ([[§29 The Seifert–van Kampen Theorem#^cor-29-2\|§29.2]]) |
+| [[§21 Algebra Prerequisites꞉ Groups#^def-21-9\|Free product]] $G * H$ | [[§28 Fundamental Group of Some Surfaces#^def-28-3\|Wedge]] $X \vee Y$ | $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ for “nice” $X, Y$ ([[§29 The Seifert–van Kampen Theorem#^cor-29-2\|§29.2]]; see [[§28 Fundamental Group of Some Surfaces#^rem-28-3\|Wedge Sum vs. Product]]) |
 
 Multiplying by a simply connected factor does not change $\pi_1$: $\pi_1(X \times S^2) \cong \pi_1(X) \times 0 \cong \pi_1(X)$.
 

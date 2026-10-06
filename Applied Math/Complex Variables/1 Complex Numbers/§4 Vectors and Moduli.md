@@ -72,7 +72,7 @@ Any nonzero $z = x + iy$ is associated with the directed line segment, or **radi
 ^prop-4-2
 
 > [!proof]+ Proof
-> By (5) of §3, $z_1 - z_2 = (x_1 - x_2) + i(y_1 - y_2)$, and (1) gives the formula, which is the Euclidean distance between the two points. Geometrically, $|z_1 - z_2|$ is the length of the vector $z_1 - z_2 = z_1 + (-z_2)$; translated so that it starts at $(x_2, y_2)$, this vector is the directed segment from $(x_2, y_2)$ to $(x_1, y_1)$.
+> By (5) of [[§3 Further Algebraic Properties#^prop-3-2|Proposition §3.2]], $z_1 - z_2 = (x_1 - x_2) + i(y_1 - y_2)$, and (1) gives the formula, which is the Euclidean distance between the two points. Geometrically, $|z_1 - z_2|$ is the length of the vector $z_1 - z_2 = z_1 + (-z_2)$; translated so that it starts at $(x_2, y_2)$, this vector is the directed segment from $(x_2, y_2)$ to $(x_1, y_1)$.
 
 ^pf-4-2
 

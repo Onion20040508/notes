@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§58 Liouville's Theorem and the Fundamental Theorem of Algebra]] · ↑ [[· 4 Integrals]] · [[§60 Convergence of Sequences]] →
 
-*Brown–Churchill, Section 59 · MAT 342 HW 8 · Practice Finals (Fall 2009, Spring 2005).*
+*Brown–Churchill, Section 59 · MAT 342 HW 8, Practice Finals (Fall 2009, Spring 2005).*
 
 The Cauchy integral formula on a circle says that the value of an analytic function at the center is the average of its values on the circle (Gauss's mean value theorem). An average cannot exceed its terms unless all are equal, so $|f|$ cannot have a local maximum at a point unless $f$ is constant near it; a chain of overlapping disks spreads this over the whole domain. The result is the maximum modulus principle: a nonconstant analytic function on a closed bounded region takes its largest modulus only on the boundary, and the same holds for its real and imaginary parts, which are harmonic. This is the complex-variable proof of the maximum principle for potentials and steady temperatures.
 

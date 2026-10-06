@@ -43,7 +43,7 @@ The derivative of a complex function is defined by the same difference quotient 
 Forms (1) and (2) are equivalent by [[§15 Limits#^prop-15-3|Proposition §15.3]]. Because $f$ is defined throughout a neighborhood of $z_0$, the number $f(z_0 + \Delta z)$ is always defined for $|\Delta z|$ sufficiently small.
 
 > [!remark]- Connections
-> - Formally the same as the real derivative, [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]], with $x$ replaced by $z$. It is not the same as differentiability of $(u, v)$ as a map of $\mathbb{R}^2$, [[§6 Differentiability#^def-6-1|452 Def. §6.1]]: Example §19.2 below is real-differentiable everywhere and complex-differentiable nowhere. The exact relation is the Cauchy–Riemann equations of §21 and §23.
+> - Formally the same as the real derivative, [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]], with $x$ replaced by $z$. It is not the same as differentiability of $(u, v)$ as a map of $\mathbb{R}^2$, [[§6 Differentiability#^def-6-1|452 Def. §6.1]]: Example §19.2 below is real-differentiable everywhere and complex-differentiable nowhere. The exact relation is the Cauchy–Riemann equations of [[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]] and [[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]].
 
 > [!example] Example §19.1: The Derivative of 1/z
 > Let $f(z) = 1/z$. At each nonzero point $z$,

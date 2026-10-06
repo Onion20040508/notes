@@ -94,14 +94,14 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 
 ^pf-5-1
 
-*Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 §29.4]] (zero derivative on an interval), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]] (FTC I)
+*Uses:* [[§5 Separable Differential Equations#^def-5-1|Def. §5.1]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (zero derivative on an interval), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (FTC I)
 
 > [!remark]- Connections
 > - See also: [[§59 Separable Equations#^def-59-1|Calc Def. §59.1]] and [[§59 Separable Equations#^thm-59-1|Calc Thm. §59.1]] (Stewart's treatment, in the form $h(y)\,dy/dx = g(x)$) and its [[§59 Separable Equations#^rem-59-1|Remark: Method]].
-> - When does (16) actually define $y$ as a differentiable function of $x$? Put $F(x, y) = \int_{x_0}^{x} M + \int_{y_0}^{y} N$. Then $F_y = N(y)$, and if $N(y_0) \ne 0$ the [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]] (Implicit Function Theorem) gives a unique differentiable $\phi$ near $x_0$ with $F(x, \phi(x)) = 0$ and $\phi' = -F_x/F_y = -M/N$, which is (4). Where $N(y) = 0$ the integral curve can have a vertical tangent, and the solution ends there (Examples §5.1 and §5.2). The generalization to $M(x, y)\,dx + N(x, y)\,dy = 0$ is the exact equations of [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Definition §9.1]].
+> - When does (16) actually define $y$ as a differentiable function of $x$? Put $F(x, y) = \int_{x_0}^{x} M + \int_{y_0}^{y} N$. Then $F_y = N(y)$, and if $N(y_0) \ne 0$ the [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]] (Implicit Function Theorem) gives a unique differentiable $\phi$ near $x_0$ with $F(x, \phi(x)) = 0$ and $\phi' = -F_x/F_y = -M/N$, which is (4). Where $N(y) = 0$ the integral curve can have a vertical tangent, and the solution ends there ([[§5 Separable Differential Equations#^ex-5-1|Examples §5.1]] and [[§5 Separable Differential Equations#^ex-5-2|§5.2]]). The generalization to $M(x, y)\,dx + N(x, y)\,dy = 0$ is the exact equations of [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Definition §9.1]].
 
 > [!remark] Remark: Method — Separation of Variables
-> 1. **Separate.** Write the equation as $N(y)\,dy = M(x)\,dx$ (move all $y$'s to one side and all $x$'s to the other). If you divide by an expression in $y$, record its zeros $y_0$: if $f(x, y_0) = 0$ for all $x$, the constant function $y = y_0$ is a solution that the division loses (Remark: Constant Solutions below).
+> 1. **Separate.** Write the equation as $N(y)\,dy = M(x)\,dx$ (move all $y$'s to one side and all $x$'s to the other). If you divide by an expression in $y$, record its zeros $y_0$: if $f(x, y_0) = 0$ for all $x$, the constant function $y = y_0$ is a solution that the division loses ([[§5 Separable Differential Equations#^rem-5-2|Remark: Constant Solutions]] below).
 > 2. **Integrate** both sides, with a single constant: $H_2(y) = H_1(x) + c$.
 > 3. **Initial condition.** Substitute $x_0$, $y_0$ to find $c$ (it is easiest to do this before solving for $y$).
 > 4. **Solve for $y$** if convenient; if the equation for $y$ has several roots (a $\pm$ sign), keep the one that passes through $(x_0, y_0)$. Otherwise leave the solution implicit.

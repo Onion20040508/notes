@@ -73,7 +73,7 @@ Mechanical and electrical systems are often driven by discontinuous or impulsive
 
 ^def-21-2
 
-When $f$ cannot be integrated in elementary terms, convergence is tested by comparison. The usual comparison functions are $e^{ct}$ and $t^{-p}$ of Example §21.1.
+When $f$ cannot be integrated in elementary terms, convergence is tested by comparison. The usual comparison functions are $e^{ct}$ and $t^{-p}$ of [[§21 Definition of the Laplace Transform#^ex-21-1|Example §21.1]].
 
 > [!theorem] Theorem §21.1: Comparison Test for Improper Integrals
 > Let $f$ be piecewise continuous for $t \ge a$.

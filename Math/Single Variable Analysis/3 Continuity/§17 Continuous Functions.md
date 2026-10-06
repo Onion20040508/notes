@@ -146,7 +146,7 @@ For some functions the sequential definition is not so easy to check directly �
 ^def-17-2
 
 > [!remark] Remark: Continuity Depends on the Domain
-> Granting that $\sin x$ is continuous everywhere (proved later), the function $g$ above is continuous at every $x \neq 0$ but not at $0$ — so $g$ is not a continuous function. But if we define $G: \mathbb{R} \setminus \{0\} \to \mathbb{R}$, $G(x) = \sin\tfrac1x$, then $G$ *is* continuous. The difference between $g$ and $G$? Only the domain: $\operatorname{dom}(G)$ omits the bad point. Likewise $f(x) = \tfrac1x$ with $\operatorname{dom}(f) = (0,+\infty)$ is continuous, while extending it to $[0,+\infty)$ by $g(0) = 0$ produces a non-continuous function. So the continuity of a function depends on its domain — the domain is part of the definition of a function.
+> Granting that $\sin x$ is continuous everywhere (proved later), the function $g$ above is continuous at every $x \neq 0$ but not at $0$ — so $g$ is not a continuous function. But if we define $G: \mathbb{R} \setminus \{0\} \to \mathbb{R}$, $G(x) = \sin\tfrac1x$, then $G$ *is* continuous. The difference between $g$ and $G$? Only the domain: $\operatorname{dom}(G)$ omits the bad point. Likewise $f(x) = \tfrac1x$ with $\operatorname{dom}(f) = (0,+\infty)$ is continuous, while extending it to $[0,+\infty)$ by $f(0) = 0$ produces a non-continuous function. So the continuity of a function depends on its domain — the domain is part of the definition of a function.
 
 ^rem-17-2
 

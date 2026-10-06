@@ -130,7 +130,7 @@ So $\mathbb{Q}$ is an ordered field, and similarly $\mathbb{R}$ is an ordered fi
 People often expect to order everything — in competitions, in admission to schools. This expectation is exactly property O1: any two elements can be compared. But O1 is not always available.
 
 > [!definition] Definition §3.3: Ordered and Partially Ordered Sets
-> A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**). If $\leq$ satisfies only O2, O3 (dropping totality O1), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
+> A set with a relation $\leq$ satisfying O1, O2, O3 is called an **ordered set** (or **linearly ordered set**). If $\leq$ satisfies only O2, O3 and *reflexivity* ($a \leq a$ for every $a$, which O1 implies but which must be required separately once O1 is dropped), the set is called a **partially ordered set**. (O4, O5 are not part of these definitions: they refer to the algebraic operations of a field.)
 
 ^def-3-3
 

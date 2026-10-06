@@ -34,7 +34,7 @@ This section works the [[§10 Roots of Complex Numbers#^rem-10-1|method of §10]
 > c_1 = \sqrt2(-1 + i), \qquad c_2 = \sqrt2(-1 - i), \qquad c_3 = \sqrt2(1 - i) .
 > $$
 >
-> By (2) and (4) of §10 these are $c_0$, $c_0\omega_4$, $c_0\omega_4^2$, $c_0\omega_4^3$, where $\omega_4 = \exp(i\frac\pi2) = i$: multiplying by $i$ is the quarter turn. Check: $c_0^2 = 2(1 + i)^2 = 4i$ and $c_0^4 = (4i)^2 = -16$.
+> By (2) and (4) of [[§10 Roots of Complex Numbers#^prop-10-3|Proposition §10.3]] these are $c_0$, $c_0\omega_4$, $c_0\omega_4^2$, $c_0\omega_4^3$, where $\omega_4 = \exp(i\frac\pi2) = i$: multiplying by $i$ is the quarter turn. Check: $c_0^2 = 2(1 + i)^2 = 4i$ and $c_0^4 = (4i)^2 = -16$.
 >
 > *B&C: Sec. 11, Example 1*
 
@@ -49,7 +49,7 @@ This section works the [[§10 Roots of Complex Numbers#^rem-10-1|method of §10]
 > c_k = \sqrt[n]{1}\exp\Big[i\Big(\frac0n + \frac{2k\pi}{n}\Big)\Big] = \exp\Big(i\frac{2k\pi}{n}\Big) \qquad (k = 0, 1, 2, \ldots, n - 1) . \qquad (2)
 > $$
 >
-> When $n = 2$ these are $\pm1$. When $n \ge 3$ they lie at the vertices of a regular polygon inscribed in the unit circle $|z| = 1$, with one vertex at the principal root $z = 1$ ($k = 0$). By (3) of §10 they are simply
+> When $n = 2$ these are $\pm1$. When $n \ge 3$ they lie at the vertices of a regular polygon inscribed in the unit circle $|z| = 1$, with one vertex at the principal root $z = 1$ ($k = 0$). By (3) of [[§10 Roots of Complex Numbers#^prop-10-3|Proposition §10.3]] they are simply
 >
 > $$
 > 1, \ \omega_n, \ \omega_n^2, \ \ldots, \ \omega_n^{n-1} \qquad\text{where } \omega_n = \exp\Big(i\frac{2\pi}{n}\Big) ,
@@ -129,7 +129,7 @@ This section works the [[§10 Roots of Complex Numbers#^rem-10-1|method of §10]
 >
 > where both square roots are to be considered when $b^2 - 4ac \ne 0$. **(b)** Find the roots of $z^2 + 2z + (1 - i) = 0$.
 >
-> **(a)** Dividing by $a$ and completing the square (all steps use only the field laws of §2–§3),
+> **(a)** Dividing by $a$ and completing the square (all steps use only the field laws of [[§2 Basic Algebraic Properties|§2]]–[[§3 Further Algebraic Properties|§3]]),
 >
 > $$
 > az^2 + bz + c = 0 \iff z^2 + \frac{b}{a}z + \frac{c}{a} = 0 \iff \Big(z + \frac{b}{2a}\Big)^2 = \frac{b^2 - 4ac}{4a^2} \iff \big(2az + b\big)^2 = b^2 - 4ac ,

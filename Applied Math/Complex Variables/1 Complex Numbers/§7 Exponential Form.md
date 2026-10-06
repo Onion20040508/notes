@@ -155,7 +155,7 @@ This parametrization is the standard contour of the subject: the circle in Cauch
 
 ^ex-7-2
 
-> [!example] Example §7.3: Values of e^{iθ} From the Unit Circle
+> [!example] Example §7.3: Values of e^(iθ) From the Unit Circle
 > **(a)** It is geometrically obvious that $e^{i\pi} = -1$, $e^{-i\pi/2} = -i$ and $e^{-i4\pi} = 1$: turning from $1$ through a half turn counterclockwise, a quarter turn clockwise, and two full turns clockwise lands at $-1$, $-i$ and $1$.
 >
 > **(b)** Using the fact that $|e^{i\theta} - 1|$ is the distance between the points $e^{i\theta}$ and $1$, find a value of $\theta$ in $0 \le \theta < 2\pi$ with $|e^{i\theta} - 1| = 2$.

@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§54 Cauchy Integral Formula]] · ↑ [[· 4 Integrals]] · [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)]] →
 
-*Brown–Churchill, Section 55 (with Exercises 2, 4, 8 of Section 57) · MAT 342 HW 7 · Practice Finals (Spring 2012, Fall 2009).*
+*Brown–Churchill, Section 55 (with Exercises 2, 4, 8 of Section 57) · MAT 342 HW 7, Practice Finals (Spring 2012, Fall 2009).*
 
 The Cauchy integral formula can be extended to give an integral representation of every derivative $f^{(n)}(z_0)$ of an analytic function: differentiating $1/(z - z_0)$ under the integral sign $n$ times produces $n!/(z - z_0)^{n+1}$. In particular an analytic function has derivatives of all orders, a fact proved in [[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]. In computations the formula is used backwards: it evaluates $\int_C f(z)\,dz/(z - z_0)^{n+1}$ by differentiating $f$ instead of integrating. The verification of the formula is in [[§56★ Verification of the Extension (An Extension of the Cauchy Integral Formula)|§56★]], which the course left optional; this section states it and uses it.
 

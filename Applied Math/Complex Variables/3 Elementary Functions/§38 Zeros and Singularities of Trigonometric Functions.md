@@ -9,7 +9,7 @@ tags: [complex-variables, math342]
 ---
 ← [[§37 The Trigonometric Functions sin z and cos z]] · ↑ [[· 3 Elementary Functions]] · [[§39★ Hyperbolic Functions]] →
 
-*Brown–Churchill, Section 38 · Practice Finals (Fall 2002, Spring 2005, Fall 2009).*
+*Brown–Churchill, Section 38 · MAT 342 Practice Finals (Fall 2002, Spring 2005, Fall 2009).*
 
 Extending the domain can create new zeros ($z^2 + 1$ has none on the real line and two in the plane), but $\sin z$ and $\cos z$ gain none: their zeros are exactly the real ones, $n\pi$ and $\frac\pi2 + n\pi$. This fixes where $\tan z$, $\cot z$, $\sec z$ and $\csc z$ fail to be analytic, and those isolated singular points are the poles whose residues are computed in Chapters 6 and 7 (for instance [[§81 Examples (Residues at Poles)|§81]]). The section ends with the equations $\sin z = w_0$ and $\cos z = w_0$, which, unlike their real versions, have solutions for every $w_0$.
 
@@ -170,7 +170,7 @@ Mapping properties of $w = \sin z$ are important in applications; they are discu
 ^ex-38-2
 
 > [!example] Example §38.3: sin z = cosh 4, by Real and Imaginary Parts
-> By (13) of §37, $\sin z = \cosh 4$ means
+> By (13) of [[§37 The Trigonometric Functions sin z and cos z#^prop-37-5|Proposition §37.5]], $\sin z = \cosh 4$ means
 >
 > $$
 > \sin x\cosh y = \cosh 4 \qquad\text{and}\qquad \cos x\sinh y = 0 .

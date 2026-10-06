@@ -175,10 +175,10 @@ To get a field containing all such numbers, we need a new notion. What is $\sqrt
 > A number is called an **algebraic number** if it is a solution of an algebraic equation with coefficients in $\mathbb{Z}$:
 >
 > $$
-> a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0.
+> a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0, \qquad n \geq 1,\ a_n \neq 0
 > $$
 >
-> (We may equivalently allow all coefficients in $\mathbb{Q}$: by clearing denominators, we can assume $a_n, \ldots, a_0$ are integers.) The set of all algebraic numbers is denoted $\overline{\mathbb{Q}}$, and it forms a field.
+> (The condition $a_n \neq 0$ makes this a genuine polynomial equation; without it the zero polynomial would make every number algebraic. We may equivalently allow all coefficients in $\mathbb{Q}$: by clearing denominators, we can assume $a_n, \ldots, a_0$ are integers.) The set of all algebraic numbers is denoted $\overline{\mathbb{Q}}$, and it forms a field.
 
 ^def-2-5
 

@@ -369,6 +369,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 > [!remark]- Connections
 > - The parity operator in the quantum mechanics chapter: [[§31 The Completeness Relation#^ex-31-1|Ex. §31.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
+> - Computational version: even and odd functions on a symmetric interval, [[§7 Arbitrary Period and Half-Range Expansions#^def-7-2|341 Def. §7.2]]; the split $f = f_e + f_o$ of Step 1, [[§7 Arbitrary Period and Half-Range Expansions#^prop-7-2|341 Prop. §7.2]]; the vanishing integral of an odd function used in Step 2, [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|341 Thm. §7.3]]. There the two parts give the cosine and sine series.
 
 ![[m556-18-3.svg]]
 *$e^x$ on $[-1,1]$ (black) with its even part $\cosh x$ (red) and odd part $\sinh x$ (blue); at every $x$ the red and blue values add up to the black one.*

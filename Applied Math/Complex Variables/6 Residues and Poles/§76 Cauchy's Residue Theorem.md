@@ -54,7 +54,7 @@ If $f$ is analytic inside a simple closed contour $C$ except for a *finite* numb
 
 > [!remark]- Connections
 > - The Cauchy–Goursat theorem for multiply connected domains, which carries the proof, is the complex form of Green's theorem for a region with holes, [[§110 Green's Theorem#^thm-110-4|Calc Thm. §110.4]] (the rigorous [[§16 Line Integrals and Green's Theorem#^thm-16-1|452 Thm. §16.1]] is stated for a region bounded by one simple closed curve and extends to holes by the same cutting into pieces), applied to $u$ and $v$ when their partial derivatives are continuous: the Cauchy–Riemann equations make the double integrals vanish. The residue theorem says that all the circulation of $f$ around $C$ is concentrated at the singular points.
-> - Fourier Series and PDEs inverts Laplace transforms by "closing the Bromwich line to the left" and summing residues of $e^{st}U(s)$ ([[§53★ Partial Differential Equations#^rem-53-2|341 Rem. §53.2]], the extended Heaviside formula): that step is Theorem §76.1 applied to large closed contours.
+> - Fourier Series and PDEs inverts Laplace transforms by "closing the Bromwich line to the left" and summing residues of $e^{st}U(s)$ ([[§53★ Partial Differential Equations#^rem-53-2|341 Remark: The Extended Heaviside Formula]]): that step is Theorem §76.1 applied to large closed contours.
 
 > [!remark] Remark: Method — Evaluating a Contour Integral by Residues
 > 1. **Draw the contour** and find all singular points of $f$; decide which lie inside $C$. Singular points outside $C$ play no role.
@@ -180,6 +180,6 @@ A simple and a double pole together occur in a final-exam integral, $\int_C \fra
 > - (b) $p(0) = \cos 0 + 1 = 2$, $q'(z) = 2e^{2z} - e^z$, $q'(0) = 1$: residue $2$, integral $4\pi i$.
 > - (c) $p(0) = \cos 0 = 1$, $q'(z) = ie^{iz}$, $q'(0) = i$: residue $\frac1i = -i$, integral $2\pi i(-i) = 2\pi$.
 >
-> *Source: 342 practice final (Fall 2002), Q3; 342 practice final (Fall 2009), Q4b; 342 sample final (Fall 1999), Q2*
+> *Source: 342 practice final (Fall 2002), Q3; 342 practice final (Fall 2009), Q4(b); 342 practice final (Fall 1999), Q2*
 
 ^ex-76-3

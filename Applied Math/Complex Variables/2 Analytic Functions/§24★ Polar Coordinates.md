@@ -121,7 +121,7 @@ Depending on whether we write $z = x + iy$ or $z = re^{i\theta}$ ($z \ne 0$), th
 
 ## The Sufficient Condition in Polar Form
 
-In view of (6) and Proposition §24.2, the theorem of §23 can be restated using $r$ and $\theta$.
+In view of (6) and Proposition §24.2, the theorem of §23 ([[§23 Sufficient Conditions for Differentiability#^thm-23-1|Theorem §23.1]]) can be restated using $r$ and $\theta$.
 
 > [!theorem] Theorem §24.3: Sufficient Conditions in Polar Coordinates
 > Let the function
@@ -155,7 +155,7 @@ In view of (6) and Proposition §24.2, the theorem of §23 can be restated using
 ^thm-24-3
 
 > [!proof]+ Proof
-> B&C states the theorem as a restatement of §23; the point to check is that the polar hypotheses give what the proof of §23 needs. Shrinking $\varepsilon$ if necessary, assume $\varepsilon < r_0$.
+> B&C states the theorem as a restatement of [[§23 Sufficient Conditions for Differentiability|§23]]; the point to check is that the polar hypotheses give what the proof of §23 needs. Shrinking $\varepsilon$ if necessary, assume $\varepsilon < r_0$.
 >
 > **Polar coordinates near $z_0$.** For $|z - z_0| < \varepsilon$ we have $|z/z_0 - 1| < \varepsilon/r_0 < 1$, so $z/z_0$ lies in the right half plane and $\theta(z) = \theta_0 + \operatorname{Arg}(z/z_0)$, with $|\theta(z) - \theta_0| < \pi/2$, is a continuous choice of the argument with $\theta(z_0) = \theta_0$. Together with $r = |z|$ this gives differentiable functions $r(x, y)$, $\theta(x, y)$ on the neighborhood, with
 >

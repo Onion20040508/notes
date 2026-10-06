@@ -86,7 +86,7 @@ tags: [topology, math590]
 > [!theorem] Proposition §21.1: Properties Inherited by Subgroups
 > Let $H \leq G$ be a subgroup. Then:
 > 1. If $G$ is abelian, then $H$ is abelian.
-> 2. If $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]], then $H$ is cyclic.
+> 2. If $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]] (defined below), then $H$ is cyclic.
 > 3. If $G$ is finite of order $n$, then $|H|$ divides $n$ (Lagrange's theorem).
 
 ^prop-21-1
@@ -225,7 +225,7 @@ tags: [topology, math590]
 > If $f: G \to G'$ is an isomorphism, then $G$ and $G'$ have identical group-theoretic structure. In particular:
 > 1. $|G| = |G'|$ (same cardinality).
 > 2. $G$ is abelian if and only if $G'$ is abelian.
-> 3. $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]] if and only if $G'$ is cyclic.
+> 3. $G$ is [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|cyclic]] (defined below) if and only if $G'$ is cyclic.
 > 4. For each $n$, $G$ has an element of order $n$ if and only if $G'$ does.
 
 ^thm-21-6
@@ -443,7 +443,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Linear-algebra analogue of “map the generator anywhere”: [[Linear map lemma]].
-> - Developed in full in Group Theory: integer powers [[§4 Subgroups#^def-4-2|493 Def. §4.2]] with the [[Exponent Laws]], cyclic groups [[§4 Subgroups#^def-4-5|493 Def. §4.5]]; the classification in the remark is proved as [[Classification of Cyclic Groups]] (493 Thm. §17.1), and mapping a generator anywhere is [[§17 Cyclic Groups#^prop-17-3|493 Prop. §17.3]].
+> - Developed in full in Group Theory: integer powers [[§4 Subgroups#^def-4-2|493 Def. §4.2]] with the [[Exponent Laws]], cyclic groups [[§4 Subgroups#^def-4-5|493 Def. §4.5]]; the classification in the remark is proved as [[Classification of Cyclic Groups]] ([[§17 Cyclic Groups#^thm-17-1|493 Thm. §17.1]]), and mapping a generator anywhere is [[§17 Cyclic Groups#^prop-17-3|493 Prop. §17.3]].
 
 > [!definition] Definition §21.8: Free Group
 > The **free group** $F_n$ on generators $\{a_1, \ldots, a_n\}$ consists of all **reduced words** in the symbols $a_i$ and $a_i^{-1}$. A **word** is a finite sequence like $a_1^2 a_3^{-1} a_2 a_1^{-1}$. A word is **reduced** if no adjacent pair cancels (no $a_i a_i^{-1}$ or $a_i^{-1} a_i$ appears). The group operation is concatenation followed by reduction, the identity is the empty word $\varepsilon$, and the inverse of $s_1 \cdots s_k$ is $s_k^{-1} \cdots s_1^{-1}$.
@@ -579,7 +579,7 @@ tags: [topology, math590]
 > [!definition] Definition §21.11: Group Presentation
 > Let $G$ be a group with a family of generators $\{a_\alpha\}_{\alpha \in J}$. Let $F$ be the [[§21 Algebra Prerequisites꞉ Groups#^def-21-10|free group]] on $\{a_\alpha\}$. Then there exists a surjective homomorphism $h: F \to G$ with $h(a_\alpha) = a_\alpha$.
 >
-> Let $N = \ker(h)$, which is a [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|normal subgroup]] of $F$. Then $F/N \cong G$ (by the [[First Isomorphism Theorem for Groups|first isomorphism theorem]]). Each element of $N$ is called a **relation** on $F$.
+> Let $N = \ker(h)$, which is a [[§21 Algebra Prerequisites꞉ Groups#^def-21-12|normal subgroup]] of $F$ (defined below, with the [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|quotient group]] $F/N$). Then $F/N \cong G$ (by the [[First Isomorphism Theorem for Groups|first isomorphism theorem]]). Each element of $N$ is called a **relation** on $F$.
 >
 > If $\{r_\beta\}_{\beta \in I}$ is a set of elements of $F$ such that $\{r_\beta\}$ and their conjugates generate $N$, then $\{r_\beta\}$ is called a **complete set of relations** for $G$.
 >

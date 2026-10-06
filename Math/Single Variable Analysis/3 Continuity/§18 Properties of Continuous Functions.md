@@ -105,7 +105,7 @@ Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in pl
 
 *Uses:* [[§17 Continuous Functions#^thm-17-3|§17.3]]
 
-So the sets on which the boundedness conclusion of the EVT can possibly hold for *all* continuous functions are exactly the sets containing all their sequential limits — the *closed* sets of §13.
+So a set on which the boundedness conclusion of the EVT holds for *all* continuous functions must contain all its sequential limits: it must be *closed* in the sense of §13. Closedness alone is not enough — $f(x) = x$ is continuous and unbounded on the closed set $\mathbb{R}$ — and the sets that work are exactly the closed *bounded* ones: for these, Step 1 of the proof above goes through verbatim, the limit $x_0$ landing in the set by [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|Proposition §13.5]].
 
 ## The Intermediate Value Theorem
 
@@ -127,7 +127,7 @@ So the sets on which the boundedness conclusion of the EVT can possibly hold for
 > S = \{ x \in [a,b] \mid f(x) < y \}.
 > $$
 >
-> (1) $S \neq \emptyset$: because $a \in S$ ($f(a) < y$). (2) $S$ is bounded: because $[a,b]$ is. By the completeness axiom, $x_0 = \sup S$ exists (and $x_0 \in [a,b]$: it is $\geq a$ since $a \in S$, and $\leq b$ since $b$ is an upper bound).
+> (1) $S \neq \emptyset$: because $a \in S$ ($f(a) < y$). (2) $S$ is bounded: because $[a,b]$ is. By the [[Completeness Axiom|completeness axiom]], $x_0 = \sup S$ exists (and $x_0 \in [a,b]$: it is $\geq a$ since $a \in S$, and $\leq b$ since $b$ is an upper bound).
 >
 > *Claim: $f(x_0) = y$* — reasonable, since $x_0$ is “the last moment” at height below $y$. We prove the equality by the two inequalities $\leq$ and $\geq$.
 >
@@ -378,7 +378,7 @@ In one special case, equality does hold.
 >
 > **Existence of $f^{-1}$.** For every $y \in [f(a), f(b)]$ there exists $x \in [a,b]$ with $f(x) = y$ (Intermediate Value Theorem), and this $x$ is *unique*: any other $x_1 \neq x$ has $f(x_1) \neq f(x)$ by strict monotonicity. So $f^{-1}(y) = x$ is well defined.
 >
-> **Continuity of $f^{-1}$.** Fix $y_0 \in [f(a), f(b)]$ and any sequence $y_n \to y_0$ in $[f(a), f(b)]$; we must show $f^{-1}(y_n) \to f^{-1}(y_0)$. The sequence $x_n = f^{-1}(y_n) \in [a,b]$ is bounded. Suppose it does *not* converge to $f^{-1}(y_0)$. Then there exist $\varepsilon > 0$ and a subsequence with $|x_{n_k} - f^{-1}(y_0)| \geq \varepsilon$ for all $k$; by Bolzano–Weierstrass, extract a further subsequence (still denoted $x_{n_k}$) converging to some $x_0 \in [a,b]$, and passing to the limit in the inequality, $|x_0 - f^{-1}(y_0)| \geq \varepsilon$, so
+> **Continuity of $f^{-1}$.** Fix $y_0 \in [f(a), f(b)]$ and any sequence $y_n \to y_0$ in $[f(a), f(b)]$; we must show $f^{-1}(y_n) \to f^{-1}(y_0)$. The sequence $x_n = f^{-1}(y_n) \in [a,b]$ is bounded. Suppose it does *not* converge to $f^{-1}(y_0)$. Then there exist $\varepsilon > 0$ and a subsequence with $|x_{n_k} - f^{-1}(y_0)| \geq \varepsilon$ for all $k$; by [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]], extract a further subsequence (still denoted $x_{n_k}$) converging to some $x_0 \in [a,b]$, and passing to the limit in the inequality, $|x_0 - f^{-1}(y_0)| \geq \varepsilon$, so
 >
 > $$
 > x_0 \neq f^{-1}(y_0).

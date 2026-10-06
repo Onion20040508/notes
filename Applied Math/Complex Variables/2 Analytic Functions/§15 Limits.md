@@ -37,7 +37,7 @@ The limit of a function of a complex variable is defined exactly as for a real f
 A deleted neighborhood $0 < |z - z_0| < \delta$ is a disk with its center removed ([[§12★ Regions in the Complex Plane#^def-12-1|Definition §12.1]]). Two remarks on the definition. The images of the points of the deleted neighborhood need not fill the $\varepsilon$ neighborhood; if $f$ has the constant value $w_0$, every image is its center. And once a $\delta$ has been found, it can be replaced by any smaller positive number, such as $\delta/2$. The value $f(z_0)$, if there is one, plays no role in (2).
 
 > [!remark]- Connections
-> - With $z = (x, y)$ and $|z - z_0|$ the Euclidean distance, (2) is word for word the limit of a function of two real variables, [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] (computational version [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]]), with values in $\mathbb{R}^2$ instead of $\mathbb{R}$. The one-variable ε–δ version is [[§20 Limits of Functions#^rem-20-1|451 Rem. §20.1]].
+> - With $z = (x, y)$ and $|z - z_0|$ the Euclidean distance, (2) is word for word the limit of a function of two real variables, [[§3 Continuity and Limits of Functions#^def-3-2|452 Def. §3.2]] (computational version [[§91 Limits and Continuity#^def-91-1|Calc Def. §91.1]]), with values in $\mathbb{R}^2$ instead of $\mathbb{R}$. The one-variable ε–δ version is [[§20 Limits of Functions#^rem-20-1|451 Remark: The Epsilon-Delta Version]].
 
 > [!theorem] Theorem §15.1: Uniqueness of Limits
 > When a limit of a function $f(z)$ exists at a point $z_0$, it is unique.

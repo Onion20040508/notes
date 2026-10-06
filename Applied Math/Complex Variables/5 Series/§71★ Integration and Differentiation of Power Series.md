@@ -9,7 +9,7 @@ tags: [complex-variables, math342, extension]
 ---
 ← [[§70★ Continuity of Sums of Power Series]] · ↑ [[· 5 Series]] · [[§72★ Uniqueness of Series Representations]] →
 
-*Brown–Churchill, Section 71 · MAT 342 HW 10 · Practice Final (Fall 1999).*
+*Brown–Churchill, Section 71 · MAT 342 HW 10, Practice Final (Fall 1999).*
 ★ *Beyond MAT 342: the course skipped this section or left it optional; it is included from Brown–Churchill.*
 
 Inside its circle of convergence a power series may be integrated term by term along any contour, even after multiplication by a continuous function $g$. Two consequences follow. The sum of a power series is analytic: integrating against $g \equiv 1$ shows that every closed contour integral of the sum vanishes, and Morera's theorem applies. A power series may also be differentiated term by term: integrating against the Cauchy kernel $g(s) = \frac{1}{2\pi i}(s - z)^{-2}$ turns both sides into derivatives. Together with Taylor's theorem this gives an exact description of the Taylor series of an analytic function: it converges to $f$ in the largest disk about $z_0$ in which $f$ is analytic, and in no larger disk. HW 10 uses these facts to differentiate known series and to show that functions such as $(1 - \cos z)/z^2$, suitably defined at $0$, are entire.

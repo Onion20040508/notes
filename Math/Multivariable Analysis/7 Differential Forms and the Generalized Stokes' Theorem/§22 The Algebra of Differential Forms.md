@@ -693,7 +693,7 @@ The second derivative test in [[Second Derivative Test in Several Variables|§14
 
 ^pf-22-9
 
-*Uses:* [[§22 The Algebra of Differential Forms#^prop-22-7|§22.7]], [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^prop-22-8|§22.8]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]
+*Uses:* [[§22 The Algebra of Differential Forms#^prop-22-7|§22.7]], [[§22 The Algebra of Differential Forms#^def-22-4|Def. §22.4]], [[§22 The Algebra of Differential Forms#^prop-22-8|§22.8]], [[Schwarz–Clairaut Theorem|§5.1]], [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-17|LADR 9.17]]
 
 The circle of ideas is:
 

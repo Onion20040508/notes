@@ -409,7 +409,7 @@ This is the boundary-value version of resonance ([[§2★ Nonhomogeneous Linear 
 > u(x) = \int_0^x \frac{z(x - a)}{a}\,dz + \int_x^a \frac{x(z - a)}{a}\,dz = \frac{(x - a)x^2}{2a} - \frac{x(a - x)^2}{2a} = \frac{x(x - a)}{2a}\big(x - (x - a)\big) = \frac{x(x - a)}2 ,
 > $$
 >
-> and indeed $u'' = 1$, $u(0) = u(a) = 0$. As a function of $x$, $G(x, z)$ is the triangle with vertices $(0, 0)$, $\big(z, z(z - a)/a\big)$, $(a, 0)$: the shape of a taut string ($Tu'' = f$ with $T = 1$, Proposition §3.1) under a unit point load at $z$.
+> and indeed $u'' = 1$, $u(0) = u(a) = 0$. As a function of $x$, $G(x, z)$ is the triangle with vertices $(0, 0)$, $\big(z, z(z - a)/a\big)$, $(a, 0)$: the shape of a taut string ($Tu'' = f$ with $T = 1$, [[§3★ Boundary Value Problems#^prop-3-1|Proposition §3.1]]) under a unit point load at $z$.
 >
 > *Powers: Exercise 0.5.1*
 

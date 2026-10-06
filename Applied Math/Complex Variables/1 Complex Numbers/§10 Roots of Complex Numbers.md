@@ -31,7 +31,7 @@ As $\theta$ increases, the point $z = re^{i\theta}$ moves counterclockwise aroun
 ^prop-10-1
 
 > [!proof]+ Proof
-> B&C call this evident from the figure; here is why. If $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$, then $\cos\theta_1 = \cos\theta_2$ and $\sin\theta_1 = \sin\theta_2$ by periodicity, so $z_1 = z_2$. Conversely, suppose $z_1 = z_2$. Taking moduli, $r_1 = |z_1| = |z_2| = r_2$. Dividing, by (2) of §8,
+> B&C call this evident from the figure; here is why. If $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$, then $\cos\theta_1 = \cos\theta_2$ and $\sin\theta_1 = \sin\theta_2$ by periodicity, so $z_1 = z_2$. Conversely, suppose $z_1 = z_2$. Taking moduli, $r_1 = |z_1| = |z_2| = r_2$. Dividing, by (2) of [[§8 Products and Powers in Exponential Form#^thm-8-1|Theorem §8.1]],
 >
 > $$
 > 1 = \frac{z_1}{z_2} = \frac{r_1}{r_2}e^{i(\theta_1 - \theta_2)} = \cos(\theta_1 - \theta_2) + i\sin(\theta_1 - \theta_2) ,
@@ -61,7 +61,7 @@ An **$n$th root** of a nonzero complex number $z_0$ ($n = 2, 3, \ldots$) is a nu
 ^thm-10-2
 
 > [!proof]+ Proof
-> **All roots.** A nonzero $z = re^{i\theta}$ is an $n$th root of $z_0$ if and only if $z^n = z_0$, that is, by (4) of §8,
+> **All roots.** A nonzero $z = re^{i\theta}$ is an $n$th root of $z_0$ if and only if $z^n = z_0$, that is, by (4) of [[§8 Products and Powers in Exponential Form#^thm-8-2|Theorem §8.2]],
 >
 > $$
 > r^ne^{in\theta} = r_0e^{i\theta_0} .

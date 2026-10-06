@@ -289,7 +289,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 >
 > Then $\psi(x) = \frac12(\bar f_o(x) + \bar G_e(x) + A)$ and $\phi(x) = \frac12(\bar f_o(x) - \bar G_e(x) - A)$, where $\bar f_o$ is the odd $2\pi$-periodic extension of $f(x) = x$ (a sawtooth) and $\bar G_e$ the even $2\pi$-periodic extension of $G$. Since $\frac14(1 - \cos 2x)$ is already even and $2\pi$-periodic, $\bar G_e(x) = \frac14(1 - \cos 2x)$ for all $x$.
 >
-> **(e)** By Example §30.2, $\bar f_o(x) = \sum_{n\ge1}\frac{2(-1)^{n+1}}{n}\sin(nx)$. Choose $A = -\frac14$, so that $\bar G_e(x) + A = -\frac14\cos(2x)$ (its only cosine coefficient is $-\frac14$, at $n = 2$, which is $-b_2$ as Proposition §31.4 predicts). Then
+> **(e)** By [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]], $\bar f_o(x) = \sum_{n\ge1}\frac{2(-1)^{n+1}}{n}\sin(nx)$. Choose $A = -\frac14$, so that $\bar G_e(x) + A = -\frac14\cos(2x)$ (its only cosine coefficient is $-\frac14$, at $n = 2$, which is $-b_2$ as Proposition §31.4 predicts). Then
 >
 > $$
 > \psi(x) = \sum_{n=1}^\infty\frac{(-1)^{n+1}}{n}\sin(nx) - \frac18\cos(2x), \qquad \phi(x) = \sum_{n=1}^\infty\frac{(-1)^{n+1}}{n}\sin(nx) + \frac18\cos(2x),
@@ -299,7 +299,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 > u(x, t) = \psi(x + 2t) + \phi(x - 2t) = \sum_{n=1}^\infty\frac{(-1)^{n+1}}{n}\big[\sin n(x + 2t) + \sin n(x - 2t)\big] + \frac18\big[\cos 2(x - 2t) - \cos 2(x + 2t)\big] .
 > $$
 >
-> **(f)** By the identities in the proof of Proposition §31.4, $\frac{(-1)^{n+1}}{n}[\sin n(x + 2t) + \sin n(x - 2t)] = \frac{2(-1)^{n+1}}{n}\sin(nx)\cos(2nt)$ and $\frac18[\cos 2(x - 2t) - \cos 2(x + 2t)] = \frac14\sin(2x)\sin(4t)$. This is the solution of Example §30.2.
+> **(f)** By the identities in the proof of Proposition §31.4, $\frac{(-1)^{n+1}}{n}[\sin n(x + 2t) + \sin n(x - 2t)] = \frac{2(-1)^{n+1}}{n}\sin(nx)\cos(2nt)$ and $\frac18[\cos 2(x - 2t) - \cos 2(x + 2t)] = \frac14\sin(2x)\sin(4t)$. This is the solution of [[§30 Solution of the Vibrating String Problem#^ex-30-2|Example §30.2]].
 >
 > The form of (e) shows what the series hides: $\bar f_o$ jumps from $\pi$ to $-\pi$ at $x = \pi$ (because $f(\pi) = \pi \ne 0$), so $u$ has a jump of size $\pi$ that enters at the end $x = \pi$ and travels along the string with speed $2$.
 >
@@ -318,7 +318,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 > G(x) = \begin{cases} \dfrac{x^2}{ca}, & 0 < x < \dfrac a2, \\[2mm] \dfrac1c\Big(-\dfrac{x^2}{a} + 2x - \dfrac a2\Big), & \dfrac a2 < x < a, \end{cases}
 > $$
 >
-> (the second piece is $\frac1c\big[\frac a4 + \int_{a/2}^x(2 - 2y/a)\,dy\big]$, and both pieces equal $a/(4c)$ at $x = a/2$). $\bar G_e$ is its even $2a$-periodic extension. Its constant term is $\gamma_0 = \frac1a\int_0^aG = \frac1{ca}\big(\frac{a^2}{24} + \frac{5a^2}{24}\big) = \frac{a}{4c}$, and by Proposition §31.4 its cosine coefficients are $\gamma_n = -b_n = -\dfrac{8a}{n^3\pi^3c}\sin\dfrac{n\pi}{2}$, from Example §30.3. (Directly: $\gamma_n = \frac2a\int_0^aG\cos\frac{n\pi x}{a}\,dx = -\frac{2}{n\pi c}\int_0^ag\sin\frac{n\pi x}{a}\,dx$.) Hence
+> (the second piece is $\frac1c\big[\frac a4 + \int_{a/2}^x(2 - 2y/a)\,dy\big]$, and both pieces equal $a/(4c)$ at $x = a/2$). $\bar G_e$ is its even $2a$-periodic extension. Its constant term is $\gamma_0 = \frac1a\int_0^aG = \frac1{ca}\big(\frac{a^2}{24} + \frac{5a^2}{24}\big) = \frac{a}{4c}$, and by Proposition §31.4 its cosine coefficients are $\gamma_n = -b_n = -\dfrac{8a}{n^3\pi^3c}\sin\dfrac{n\pi}{2}$, from [[§30 Solution of the Vibrating String Problem#^ex-30-3|Example §30.3]]. (Directly: $\gamma_n = \frac2a\int_0^aG\cos\frac{n\pi x}{a}\,dx = -\frac{2}{n\pi c}\int_0^ag\sin\frac{n\pi x}{a}\,dx$.) Hence
 >
 > $$
 > \bar G_e(x) = \frac{a}{4c} - \sum_{n=1}^\infty\frac{8a\sin(n\pi/2)}{n^3\pi^3c}\cos\frac{n\pi x}{a},
@@ -326,7 +326,7 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 > u(x, t) = \sum_{n=1}^\infty\frac{4a\sin(n\pi/2)}{n^3\pi^3c}\Big[\cos\frac{n\pi(x - ct)}{a} - \cos\frac{n\pi(x + ct)}{a}\Big] .
 > $$
 >
-> **(c)** Since $\frac12[\cos(A - B) - \cos(A + B)] = \sin A\sin B$, this is $\sum\frac{8a\sin(n\pi/2)}{n^3\pi^3c}\sin\frac{n\pi x}{a}\sin\frac{n\pi ct}{a}$, the series of Example §30.3.
+> **(c)** Since $\frac12[\cos(A - B) - \cos(A + B)] = \sin A\sin B$, this is $\sum\frac{8a\sin(n\pi/2)}{n^3\pi^3c}\sin\frac{n\pi x}{a}\sin\frac{n\pi ct}{a}$, the series of [[§30 Solution of the Vibrating String Problem#^ex-30-3|Example §30.3]].
 >
 > The largest displacement is $u(a/2, a/(2c)) = \frac12[\bar G_e(a) - \bar G_e(0)] = \frac12G(a) = \frac{a}{4c}$. At $t = a/c$ the string passes through its rest position, $u(x, a/c) = \frac12[\bar G_e(x + a) - \bar G_e(x - a)] = 0$ by periodicity, and then bulges the other way. On the Practice Final the multiple-choice part asks which extensions are needed: $\bar f_o$ odd and $\bar G_e$ even, both periodic; for its data ($a = c = 2$) the key's coefficients $-\frac{8}{n^3\pi^3}\sin\frac{n\pi}{2}$ of $\bar G_e$ are the case $a = c = 2$ above.
 >

@@ -111,7 +111,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 
 ^pf-4-1
 
-*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Def. §4.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]] (FTC II), [[§29 The Mean Value Theorem#^cor-29-5|451 §29.5]] (equal derivatives differ by a constant)
+*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Def. §4.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II), [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]] (equal derivatives differ by a constant)
 
 For many simple $g$ the integral in (24) can be evaluated, as in the next example. For complicated $g$ the solution is left in the integral form (24); the variable of integration is called $s$ to distinguish it from $t$.
 
@@ -188,7 +188,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 
 ^pf-4-2
 
-*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-1|Def. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Def. §4.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]] (FTC II), [[§29 The Mean Value Theorem#^cor-29-5|451 §29.5]] (equal derivatives differ by a constant)
+*Uses:* [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-1|Def. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|Def. §4.2]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II), [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]] (equal derivatives differ by a constant)
 
 > [!remark]- Connections
 > - Rigorous ingredients: the antiderivative $\int_{t_0}^t \mu g\,ds$ of a continuous function is [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC II), and "same derivative on an interval implies they differ by a constant" is [[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]. The integrating factor itself appears in 451 as a trick for Rolle's Theorem: [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]].

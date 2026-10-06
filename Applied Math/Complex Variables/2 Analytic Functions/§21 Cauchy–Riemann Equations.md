@@ -127,7 +127,7 @@ They are named after A. L. Cauchy (1789–1857), who discovered and used them, a
 > \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix} = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} .
 > $$
 >
->   The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of §23, where continuity of the partials supplies real differentiability through [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]].
+>   The Cauchy–Riemann equations say exactly that the Jacobian is a rotation–scaling matrix, [[§36 Complex Eigenvalues#^prop-36-3|235 Prop. §36.3]]: the derivative acts on small displacements as multiplication by the complex number $f'(z_0)$. The converse (real differentiability plus the Cauchy–Riemann equations imply complex differentiability) is the content of [[§23 Sufficient Conditions for Differentiability|§23]], where continuity of the partials supplies real differentiability through [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]].
 > - Used in Electromagnetism: the complex potential of two-dimensional electrostatics, whose real and imaginary parts are the potential and the flux function — [[§C6.4★ The Complex Potential and the Variational Principle#^def-c6-4-1|EM Def. §C6.4.1]], [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-1|EM Theorem §C6.4.1]].
 
 > [!remark] Remark: What the Theorem Does and Does Not Say

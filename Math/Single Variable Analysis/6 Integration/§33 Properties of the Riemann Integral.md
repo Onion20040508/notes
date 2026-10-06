@@ -366,7 +366,7 @@ What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the
 > m \leq \frac{\int_a^b fg\,dx}{\int_a^b g\,dx} \leq M,
 > $$
 >
-> and the Intermediate Value Theorem for $f$ (between its min and max points) supplies $x_0$. Done.
+> and the [[Intermediate Value Theorem]] for $f$ (between its min and max points) supplies $x_0$. Done.
 
 ^pf-33-10
 
@@ -375,7 +375,7 @@ What does it mean? The right side is the **mean value** of $f$ over $[a,b]$: the
 The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker than it needs to be:
 
 > [!theorem] Proposition §33.11: The Witness Can Be Taken Interior (HW)
-> In the Weighted [[Mean Value Theorem|Mean Value Theorem]], the point can always be chosen with $x_0 \in (a,b)$, the *open* interval.
+> In the [[§33 Properties of the Riemann Integral#^thm-33-10|Weighted Mean Value Theorem]] (Theorem §33.10), the point can always be chosen with $x_0 \in (a,b)$, the *open* interval.
 
 ^prop-33-11
 
@@ -388,7 +388,7 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 >
 > If $f$ is constant, $A = f(x_0)$ for every interior $x_0$. So assume $m < M$, and split by where $A$ sits.
 >
-> *Interior value* ($m < A < M$): let $x_1, x_2 \in [a,b]$ attain $f(x_1) = M$, $f(x_2) = m$ (Extreme Value Theorem); these are distinct. The IVT on the interval between them gives $x_0$ with $f(x_0) = A$, and since $A$ differs from both endpoint values, $x_0$ lies *strictly* between $x_1$ and $x_2$ — hence strictly inside $[a,b]$.
+> *Interior value* ($m < A < M$): let $x_1, x_2 \in [a,b]$ attain $f(x_1) = M$, $f(x_2) = m$ ([[Extreme Value Theorem]]); these are distinct. The [[Intermediate Value Theorem|IVT]] on the interval between them gives $x_0$ with $f(x_0) = A$, and since $A$ differs from both endpoint values, $x_0$ lies *strictly* between $x_1$ and $x_2$ — hence strictly inside $[a,b]$.
 >
 > *Boundary value* ($A = m$; the case $A = M$ is symmetric): then
 >
@@ -403,7 +403,7 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 *Uses:* [[§33 Properties of the Riemann Integral#^thm-33-10|§33.10]], [[Extreme Value Theorem|§18.1]], [[Intermediate Value Theorem|§18.3]], [[§33 Properties of the Riemann Integral#^thm-33-7|§33.7]], [[§33 Properties of the Riemann Integral#^thm-33-2|§33.2]]
 
 > [!remark] Remark
-> All the work sits in the boundary cases $A \in \{m, M\}$, where the plain IVT route might hand back only an endpoint (if $f$ attains its extremum nowhere else). The rescue mechanism — vanishing integral of a nonnegative continuous function forces identical vanishing, then local positivity of $g$ converts one good point into a whole subinterval — is the same tool as “orthogonal to everything means zero” above. Taking $g \equiv 1$ shows the ordinary Intermediate Value Theorem for Integrals also admits an interior witness.
+> All the work sits in the boundary cases $A \in \{m, M\}$, where the plain [[Intermediate Value Theorem|IVT]] route might hand back only an endpoint (if $f$ attains its extremum nowhere else). The rescue mechanism — vanishing integral of a nonnegative continuous function forces identical vanishing, then local positivity of $g$ converts one good point into a whole subinterval — is the same tool as “orthogonal to everything means zero” above. Taking $g \equiv 1$ shows the ordinary Intermediate Value Theorem for Integrals also admits an interior witness.
 
 ^rem-33-5
 
@@ -416,7 +416,7 @@ The theorem places $x_0$ only in the *closed* interval. That is genuinely weaker
 > h(x_0) = \frac{1}{b-a}\int_a^b h\,dx = 0, \qquad \text{i.e.} \qquad f(x_0) = g(x_0).
 > $$
 >
-> *In fact $x_0$ can be found in the open interval $(a,b)$* (HW). Suppose not: $h$ has no zero in $(a,b)$. Being continuous and never zero there, $h$ keeps a constant sign on $(a,b)$ (otherwise the IVT would manufacture a zero); say $h > 0$ on $(a,b)$ (else replace $h$ by $-h$). By continuity, $h(a), h(b) \geq 0$ as limits of positive values, so $h \geq 0$ on all of $[a,b]$ — continuous, nonnegative, with $\int_a^b h = 0$. The vanishing-integral theorem forces $h \equiv 0$, contradicting $h > 0$ on the nonempty $(a,b)$.
+> *In fact $x_0$ can be found in the open interval $(a,b)$* (HW). Suppose not: $h$ has no zero in $(a,b)$. Being continuous and never zero there, $h$ keeps a constant sign on $(a,b)$ (otherwise the [[Intermediate Value Theorem|IVT]] would manufacture a zero); say $h > 0$ on $(a,b)$ (else replace $h$ by $-h$). By continuity, $h(a), h(b) \geq 0$ as limits of positive values, so $h \geq 0$ on all of $[a,b]$ — continuous, nonnegative, with $\int_a^b h = 0$. The vanishing-integral theorem forces $h \equiv 0$, contradicting $h > 0$ on the nonempty $(a,b)$.
 
 ^ex-33-2
 
