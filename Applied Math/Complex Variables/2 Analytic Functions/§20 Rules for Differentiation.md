@@ -315,4 +315,4 @@ B&C states the power rule before the sum, product and quotient rules; its proof 
 *Uses:* [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§18 Continuity#^thm-18-3|§18.3]], [[§16 Theorems on Limits#^thm-16-2|§16.2]]
 
 > [!remark]- Connections
-> - The real l'Hôpital rule, which needs the mean value theorem and allows $f'$, $g'$ to be evaluated near $z_0$ rather than at it: [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. The complex version here is the simple case where $f'(z_0)$ and $g'(z_0)$ exist; there is no complex mean value theorem.
+> - The real l'Hôpital rule, which needs the mean value theorem ([[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]) and allows $f'$, $g'$ to be evaluated near $z_0$ rather than at it: [[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]. The complex version here is the simple case where $f'(z_0)$ and $g'(z_0)$ exist; there is no complex mean value theorem.

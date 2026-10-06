@@ -52,7 +52,7 @@ The approximation improves as the slices get thinner, so the volume is *defined*
 For a cylinder the cross-sectional area is constant, $A(x) = A$, and Definition §40.2 gives $V = \int_a^b A\,dx = A(b - a)$, in agreement with $V = Ah$.
 
 > [!remark]- Connections
-> - Rigorous treatment: with volume defined as Lebesgue measure, the slicing formula $m(E) = \int m(E_x)\,dx$ is the Cross-Section Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-4|551 Thm. §17.4]]. In this course it reappears as a double integral of the "height" ([[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]]) and as a triple integral computed by Fubini ([[§103 Triple Integrals#^thm-103-4|Theorem §103.4]]).
+> - Rigorous treatment: with volume defined as [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]], the slicing formula $m(E) = \int m(E_x)\,dx$ is the Cross-Section Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-4|551 Thm. §17.4]]. In this course it reappears as a double integral of the "height" ([[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]]) and as a triple integral computed by Fubini ([[§103 Triple Integrals#^thm-103-4|Theorem §103.4]]).
 
 > [!theorem] Theorem §40.1: Volume Does Not Depend on the Slicing
 > The volume given by Definition §40.2 is independent of how $S$ is situated with respect to the $x$-axis: no matter how we slice $S$ with parallel planes, we get the same value $V$.

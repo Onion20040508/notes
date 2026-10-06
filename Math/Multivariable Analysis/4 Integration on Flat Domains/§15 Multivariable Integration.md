@@ -291,6 +291,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 
 > [!remark]- Connections
 > - 1D version: [[§32 The Definition of the Riemann Integral#^def-32-1|upper and lower (Darboux) sums]] (451 §32.1), with subintervals of length $t_k - t_{k-1}$ in place of pieces of area $|D_i|$.
+> - The same 1D sums in 551, as the motivation for the Lebesgue integral: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|551 Def. §8.2]].
 
 > [!definition] Definition §15.9: Diameter and Mesh
 > The **diameter** of a set $A \subseteq \mathbb{R}^2$ is:
@@ -1991,7 +1992,7 @@ We present three different proofs, each offering a distinct perspective:
 > In Lebesgue integration theory (MATH 551), the situation is cleaner:
 > - The change of variables formula holds for any **Lebesgue measurable** set $D^{\ast}$.
 > - No need for Jordan measurability — Lebesgue measure handles much more general sets.
-> - The assumption “$J \neq 0$ everywhere” can be relaxed to “$J \neq 0$ almost everywhere.”
+> - The assumption “$J \neq 0$ everywhere” can be relaxed to “$J \neq 0$ [[§12 Measurable Functions#^def-12-5|almost everywhere]].”
 >
 > However, for this course (Riemann integration), Jordan measurability is the appropriate condition.
 

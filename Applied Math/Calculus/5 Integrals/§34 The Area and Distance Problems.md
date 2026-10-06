@@ -167,7 +167,7 @@ where $i$ is the index of summation, running from the value below $\Sigma$ to th
 
 ^thm-34-1
 
-*Stewart omits the proof ("it can be proved"; "it can be shown"). It rests on the uniform continuity of $f$ on $[a, b]$: see [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for the existence of the limit, and [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]] for the equivalence of the limit of sums with the upper/lower-sum description in part 4.*
+*Stewart omits the proof ("it can be proved"; "it can be shown"). It rests on the [[§19 Uniform Continuity#^def-19-1|uniform continuity]] of $f$ on $[a, b]$ ([[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]]): see [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for the existence of the limit, and [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]] for the equivalence of the limit of sums with the upper/lower-sum description in part 4.*
 
 > [!remark]- Connections
 > - Rigorous treatment: the upper and lower sums for arbitrary (not necessarily equal) subdivisions are [[§32 The Definition of the Riemann Integral#^def-32-1|451 Def. §32.1]], part 4 is the Darboux integral [[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]], and the sums with sample points are the Riemann sums of [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]. The computation of Example §34.2 is done there with upper and lower sums for $f(x) = x$ ([[§32 The Definition of the Riemann Integral#^ex-32-1|451 Ex. §32.1]]).

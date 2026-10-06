@@ -164,7 +164,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - The same inequality in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|Proposition §13.1: Equivalence of the Two Distances]].
-> - All norms on a finite-dimensional space are equivalent and so give the same topology: [[§12 New Normed Spaces from Old#^thm-12-3|556 Thm. §12.3]] (equivalent norms: [[§12 New Normed Spaces from Old#^def-12-1|556 Def. §12.1]]).
+> - All norms on a finite-dimensional space are equivalent and so give the same topology: [[All Norms on a Finite-Dimensional Space Are Equivalent|556 Thm. §12.3]] (equivalent norms: [[§12 New Normed Spaces from Old#^def-12-1|556 Def. §12.1]]).
 
 ## Metrizable Spaces
 

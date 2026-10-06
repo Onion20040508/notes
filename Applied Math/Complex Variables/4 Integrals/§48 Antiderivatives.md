@@ -88,7 +88,7 @@ The theorem does *not* claim that any of these statements is true for a given fu
 >
 > when $C$ is the positively oriented unit circle $z = e^{i\theta}$ $(-\pi \le \theta \le \pi)$ about the origin, and indeed around every closed contour not passing through $0$.
 >
-> The integral of $f(z) = 1/z$ around the same circle *cannot* be evaluated in this way. The derivative of any branch $F(z)$ of $\log z$ is $1/z$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), but $F(z)$ is not differentiable, or even defined, along its branch cut. If a ray $\theta = \alpha$ from the origin is used to form the branch cut, $F'(z)$ fails to exist at the point where that ray meets the circle $C$. So $C$ does not lie in any domain throughout which $F'(z) = 1/z$, and one cannot make direct use of an antiderivative. (In fact no domain containing $C$ carries an antiderivative of $1/z$, since $\int_C dz/z = 2\pi i \ne 0$; see [[§49 Proof of the Theorem (Antiderivatives)#^rem-49-2|§49]].)
+> The integral of $f(z) = 1/z$ around the same circle *cannot* be evaluated in this way. The derivative of any branch $F(z)$ of $\log z$ is $1/z$ ([[§33 Branches and Derivatives of Logarithms#^thm-33-1|Theorem §33.1]]), but $F(z)$ is not differentiable, or even defined, along its branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]). If a ray $\theta = \alpha$ from the origin is used to form the branch cut, $F'(z)$ fails to exist at the point where that ray meets the circle $C$. So $C$ does not lie in any domain throughout which $F'(z) = 1/z$, and one cannot make direct use of an antiderivative. (In fact no domain containing $C$ carries an antiderivative of $1/z$, since $\int_C dz/z = 2\pi i \ne 0$; see [[§49 Proof of the Theorem (Antiderivatives)#^rem-49-2|§49]].)
 >
 > *B&C: Sec. 48, Example 2*
 
@@ -188,7 +188,7 @@ But a combination of *two* different antiderivatives can be used to evaluate the
 > 2. **Find a domain $D$ containing $C$** on which $F$ is analytic and $F' = f$. For a polynomial, $e^z$, $\sin z$, $\cos z$, $D$ is the whole plane. For a branch ($\log$, $z^c$, $\log(g(z))$), place the branch cut so that it misses $C$; if $C$ ends on the cut of the given branch, replace the integrand by a branch that agrees with it on $C$ (Example §48.4).
 > 3. **Evaluate** $\int_C f(z)\,dz = F(z_2) - F(z_1)$, with $F$ evaluated in the chosen branch. Around a closed contour in $D$ the integral is $0$.
 > 4. **If no single branch works**, split $C$ into pieces, each with its own branch (Example §48.3).
-> 5. **If $f$ has no antiderivative** on any domain containing $C$ (for instance $1/z$ around the origin, or a non-analytic $f$ such as $\bar z$), parametrize ([[§45 Some Examples (Contour Integrals)#^rem-45-2|§45]]) or, later, use the Cauchy–Goursat theorem and residues.
+> 5. **If $f$ has no antiderivative** on any domain containing $C$ (for instance $1/z$ around the origin, or a non-analytic $f$ such as $\bar z$), parametrize ([[§45 Some Examples (Contour Integrals)#^rem-45-2|§45]]) or, later, use the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]) and residues ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]).
 
 ^rem-48-1
 

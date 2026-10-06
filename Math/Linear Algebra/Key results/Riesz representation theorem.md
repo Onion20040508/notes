@@ -18,6 +18,6 @@ tags: [linear-algebra, hub]
 
 ## Connections
 - Revisited as a bijection $V\to V'$ (conjugate-linear over $\C$): [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]. Defines the adjoint in Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]).
-- Physics: bras are exactly functionals, and every bra is $\langle v|$ for a unique ket $|v\rangle$. In infinite dimensions this needs completeness (Hilbert spaces), and the 'kets' of $\delta$-functionals are not in the space at all.
+- Physics: bras are exactly functionals, and every bra is $\langle v|$ for a unique ket $|v\rangle$. In infinite dimensions this needs completeness (Hilbert spaces, [[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]), and the 'kets' of $\delta$-functionals are not in the space at all.
 - Same theorem for Hilbert spaces: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|556 Thm. §23.2]] (there V may be infinite-dimensional and the functional must be bounded).
 - In 591 the identification comes from any non-degenerate pairing, a real inner product being one: [[§20 Linear Algebra Toolkit#^thm-20-5|591 Thm. §20.5]].

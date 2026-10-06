@@ -113,7 +113,7 @@ Theorem §83.1 leads to another method for identifying *simple* poles and findin
 *Uses:* [[§82 Zeros of Analytic Functions#^def-82-1|Def. §82.1]], [[§82 Zeros of Analytic Functions#^thm-82-1|§82.1]], [[§83 Zeros and Poles#^thm-83-1|§83.1]], [[§80 Residues at Poles#^thm-80-1|§80.1]]
 
 > [!remark]- Connections
-> - For polynomials this is Heaviside's formula of Fourier Series and PDEs, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]]: the coefficient of $1/(s - r_k)$ in the partial-fraction expansion of $q/p$ is $q(r_k)/p'(r_k)$, the residue at the simple pole $r_k$. The partial-fraction decomposition itself, [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]], follows from principal parts and Liouville's theorem (Connections of [[§78 The Three Types of Isolated Singular Points#^def-78-1|Definition §78.1]]).
+> - For polynomials this is Heaviside's formula of Fourier Series and PDEs, [[§52★ Partial Fractions and Convolutions#^thm-52-2|341 Thm. §52.2]]: the coefficient of $1/(s - r_k)$ in the partial-fraction expansion of $q/p$ is $q(r_k)/p'(r_k)$, the residue at the simple pole $r_k$. The partial-fraction decomposition itself, [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Calc Thm. §47.3]], follows from principal parts and Liouville's theorem ([[§58 Liouville's Theorem and the Fundamental Theorem of Algebra#^thm-58-1|Theorem §58.1]]; Connections of [[§78 The Three Types of Isolated Singular Points#^def-78-1|Definition §78.1]]).
 
 There are expressions similar to (2) for residues at poles of higher order, but they are lengthier and, in general, not practical. (For a double pole of $1/q^2$, where $q$ has a simple zero, B&C's Exercise 8 gives $\operatorname{Res} = -q''(z_0)/[q'(z_0)]^3$.)
 
@@ -265,7 +265,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 > \operatorname{Res}_{z=z_0}\frac1q + \operatorname{Res}_{z=-\bar z_0}\frac1q = \frac{1}{4\sqrt3\,i}\Big(\frac{1}{z_0} + \frac{1}{\bar z_0}\Big) = \frac{1}{4\sqrt3\,i}\cdot\frac{2\operatorname{Re}z_0}{|z_0|^2} = \frac{1}{4\sqrt3\,i}\cdot\frac{2\sqrt3/\sqrt2}{2} = \frac{1}{4\sqrt2\,i} .
 > $$
 >
-> **The integral.** By the residue theorem,
+> **The integral.** By the residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]),
 >
 > $$
 > \int_C \frac{dz}{(z^2 - 1)^2 + 3} = 2\pi i\cdot\frac{1}{4\sqrt2\,i} = \frac{\pi}{2\sqrt2} \approx 1.1107 ,
@@ -313,7 +313,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 >
 > so $\operatorname{Res}_{z=0} f = \frac16$ (a pole of order $3$).
 >
-> **The integral.** By the residue theorem,
+> **The integral.** By the residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]),
 >
 > $$
 > \int_{C_N}\frac{dz}{z^2\sin z} = 2\pi i\Big[\frac16 + \sum_{\substack{n=-N\\ n\ne0}}^{N}\frac{(-1)^n}{n^2\pi^2}\Big] = 2\pi i\Big[\frac16 + 2\sum_{n=1}^{N}\frac{(-1)^n}{n^2\pi^2}\Big] .

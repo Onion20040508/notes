@@ -27,7 +27,7 @@ Multivariable calculus takes place in space, so the first step is to give every 
 > [!definition] Definition §80.2: Coordinates and the Space ℝ³
 > For a point $P$ in space let $a$ be the (directed) distance from the $yz$-plane to $P$, $b$ the distance from the $xz$-plane to $P$, and $c$ the distance from the $xy$-plane to $P$. The ordered triple $(a, b, c)$ gives the **coordinates** of $P$: $a$ is its $x$-coordinate, $b$ its $y$-coordinate, $c$ its $z$-coordinate. To locate $(a, b, c)$, start at $O$, move $a$ units along the $x$-axis, then $b$ units parallel to the $y$-axis, then $c$ units parallel to the $z$-axis.
 >
-> The set of all ordered triples is the Cartesian product
+> The set of all ordered triples is the [[§7 Quantifiers#^def-7-5|Cartesian product]]
 >
 > $$
 > \mathbb{R}^3 = \mathbb{R} \times \mathbb{R} \times \mathbb{R} = \{(x, y, z) \mid x, y, z \in \mathbb{R}\} .

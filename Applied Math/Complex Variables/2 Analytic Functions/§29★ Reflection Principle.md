@@ -62,7 +62,7 @@ Some analytic functions satisfy $\overline{f(z)} = f(\bar z)$ for all $z$ in a d
 > u_x = v_t, \qquad u_t = -v_x . \qquad (5)
 > $$
 >
-> Furthermore, in view of (4) and the chain rule ($dt/dy = -1$),
+> Furthermore, in view of (4) and the chain rule ($dt/dy = -1$; [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]),
 >
 > $$
 > U_x = u_x, \qquad V_y = -v_t\frac{dt}{dy} = v_t ,

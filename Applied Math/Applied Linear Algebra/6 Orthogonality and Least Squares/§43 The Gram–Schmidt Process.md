@@ -108,7 +108,7 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 > \mathbf{v}_{k+1} = \mathbf{x}_{k+1} - \operatorname{proj}_{W_k} \mathbf{x}_{k+1} . \tag{2}
 > $$
 >
-> - By the Orthogonal Decomposition Theorem, $\mathbf{v}_{k+1}$ is orthogonal to $W_k$, in particular to $\mathbf{v}_1, \ldots, \mathbf{v}_k$.
+> - By the Orthogonal Decomposition Theorem ([[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]]), $\mathbf{v}_{k+1}$ is orthogonal to $W_k$, in particular to $\mathbf{v}_1, \ldots, \mathbf{v}_k$.
 > - $\operatorname{proj}_{W_k} \mathbf{x}_{k+1}$ lies in $W_k \subseteq W_{k+1}$, and $\mathbf{x}_{k+1} \in W_{k+1}$; a subspace is closed under subtraction, so $\mathbf{v}_{k+1} \in W_{k+1}$.
 > - $\mathbf{v}_{k+1} \ne \mathbf{0}$: otherwise $\mathbf{x}_{k+1} = \operatorname{proj}_{W_k} \mathbf{x}_{k+1} \in W_k = \operatorname{Span}\{\mathbf{x}_1, \ldots, \mathbf{x}_k\}$, contradicting the linear independence of the $\mathbf{x}$'s.
 >

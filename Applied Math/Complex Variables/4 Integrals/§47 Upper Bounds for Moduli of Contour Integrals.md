@@ -216,7 +216,7 @@ Most contour integrals are never evaluated exactly; what is needed is an estimat
 > |\operatorname{Log} z| = |\ln R + i\Theta| \le \ln R + |\Theta| \le \ln R + \pi ,
 > $$
 >
-> with strict inequality everywhere on $C_R$: if $|\Theta| < \pi$ the second step is strict, and at $z = -R$, $|\ln R + i\pi| = \sqrt{\ln^2R + \pi^2} < \ln R + \pi$. Hence $|f(z)| < (\pi + \ln R)/R^2 = M$ on $C_R$, and with $L = 2\pi R$ the strict form of Theorem §47.2 gives the bound $2\pi(\pi + \ln R)/R$. ($\operatorname{Log} z$ is discontinuous at $z = -R$, but the integrand is piecewise continuous on $C_R$.) By l'Hôpital's rule,
+> with strict inequality everywhere on $C_R$: if $|\Theta| < \pi$ the second step is strict, and at $z = -R$, $|\ln R + i\pi| = \sqrt{\ln^2R + \pi^2} < \ln R + \pi$. Hence $|f(z)| < (\pi + \ln R)/R^2 = M$ on $C_R$, and with $L = 2\pi R$ the strict form of Theorem §47.2 gives the bound $2\pi(\pi + \ln R)/R$. ($\operatorname{Log} z$ is discontinuous at $z = -R$, but the integrand is piecewise continuous on $C_R$.) By l'Hôpital's rule ([[§30 L'Hospital's Rule#^thm-30-1|451 Thm. §30.1]]),
 >
 > $$
 > \lim_{R\to\infty}\frac{\pi + \ln R}{R} = \lim_{R\to\infty}\frac{1/R}{1} = 0 ,

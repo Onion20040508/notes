@@ -482,7 +482,7 @@ The associative and distributive laws say that parentheses can be inserted and r
 *Uses:* [[§11 Matrix Operations#^def-11-6|Def. §11.6]], [[§11 Matrix Operations#^prop-11-4|§11.4]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§9 Matrices#^ladr-3-54|LADR 3.54]] (transpose and its properties, including $(AC)^t = C^tA^t$). In LADR the transpose is the matrix of the dual map ([[§12 Duality|LADR §12]]), which explains why it reverses the order of products.
+> - Rigorous treatment: [[§9 Matrices#^ladr-3-54|LADR 3.54]] (transpose and its properties, including $(AC)^t = C^tA^t$). In LADR the transpose is the matrix of the dual map ([[§12 Duality#^ladr-3-118|LADR 3.118]], [[§12 Duality#^ladr-3-132|LADR 3.132]]), which explains why it reverses the order of products: $(ST)' = T'S'$, [[§12 Duality#^ladr-3-120|LADR 3.120]](c).
 
 > [!theorem] Corollary §11.8: Transpose of a Product of Several Matrices
 > The transpose of a product of matrices equals the product of their transposes in the *reverse* order:

@@ -88,7 +88,7 @@ When writing $\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f
 
 ^thm-35-1
 
-*Stewart omits the proof ("proved in more advanced courses"). See [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for continuous functions (via uniform continuity). For jumps, [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]] shows how a jump is isolated in a short subinterval, and [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]] glues the continuous pieces together.*
+*Stewart omits the proof ("proved in more advanced courses"). See [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for continuous functions (via [[§19 Uniform Continuity#^def-19-1|uniform continuity]]). For jumps, [[§32 The Definition of the Riemann Integral#^ex-32-2|451 Ex. §32.2]] shows how a jump is isolated in a short subinterval, and [[§33 Properties of the Riemann Integral#^thm-33-5|451 Thm. §33.5]] glues the continuous pieces together.*
 
 Not every function is integrable: the function that is $1$ at rational and $0$ at irrational numbers is not (Stewart, Exercises 81–82; [[§32 The Definition of the Riemann Integral#^ex-32-3|451 Ex. §32.3]]).
 

@@ -131,7 +131,7 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 > |z| < 1 \qquad\text{and}\qquad |z| \le 1 . \qquad (3)
 > $$
 >
-> The first set is open and the second is its closure. *(B&C state this; here is why.)* If $|z_0| < 1$, the neighborhood of radius $1 - |z_0|$ lies in $|z| < 1$, since $|z| \le |z - z_0| + |z_0| < 1$ by the triangle inequality: $z_0$ is interior. If $|z_0| > 1$, the neighborhood of radius $|z_0| - 1$ misses $|z| \le 1$, since there $|z| \ge |z_0| - |z - z_0| > 1$: $z_0$ is exterior. If $|z_0| = 1$, every neighborhood $|z - z_0| < \varepsilon$ contains $(1 - t)z_0$ (inside) and $(1 + t)z_0$ (outside) for $0 < t < \min(\varepsilon, 1)$: $z_0$ is a boundary point. So the boundary of both sets is $|z| = 1$; the first contains none of it and the second all of it.
+> The first set is open and the second is its closure. *(B&C state this; here is why.)* If $|z_0| < 1$, the neighborhood of radius $1 - |z_0|$ lies in $|z| < 1$, since $|z| \le |z - z_0| + |z_0| < 1$ by the triangle inequality ([[§5 Triangle Inequality#^thm-5-1|Theorem §5.1]]): $z_0$ is interior. If $|z_0| > 1$, the neighborhood of radius $|z_0| - 1$ misses $|z| \le 1$, since there $|z| \ge |z_0| - |z - z_0| > 1$: $z_0$ is exterior. If $|z_0| = 1$, every neighborhood $|z - z_0| < \varepsilon$ contains $(1 - t)z_0$ (inside) and $(1 + t)z_0$ (outside) for $0 < t < \min(\varepsilon, 1)$: $z_0$ is a boundary point. So the boundary of both sets is $|z| = 1$; the first contains none of it and the second all of it.
 >
 > **(b)** The punctured disk $0 < |z| \le 1$ is neither open nor closed: its boundary consists of the circle $|z| = 1$ and the point $0$, and it contains the former but not the latter.
 >

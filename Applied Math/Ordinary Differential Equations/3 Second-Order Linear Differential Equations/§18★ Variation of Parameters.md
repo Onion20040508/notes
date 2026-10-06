@@ -109,7 +109,7 @@ and both parentheses vanish because $y_1, y_2$ solve the homogeneous equation. W
 $$
 u_1'y_1 + u_2'y_2 = 0, \qquad u_1'y_1' + u_2'y_2' = g . \qquad (21),\ (25)
 $$
-Their determinant is the Wronskian $W[y_1, y_2] = y_1y_2' - y_1'y_2$, which is nonzero because $y_1, y_2$ is a fundamental set, and Cramer's rule gives
+Their determinant is the Wronskian $W[y_1, y_2] = y_1y_2' - y_1'y_2$, which is nonzero because $y_1, y_2$ is a fundamental set, and Cramer's rule ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]]) gives
 $$
 u_1'(t) = -\frac{y_2(t)g(t)}{W[y_1, y_2](t)}, \qquad u_2'(t) = \frac{y_1(t)g(t)}{W[y_1, y_2](t)} . \qquad (26)
 $$
@@ -151,7 +151,7 @@ Integrating these gives $u_1, u_2$, and (19) is the general solution of (16) whe
 > u_1(t) = -\int_{t_0}^{t} \frac{y_2(s)g(s)}{W(s)}\,ds, \qquad u_2(t) = \int_{t_0}^{t} \frac{y_1(s)g(s)}{W(s)}\,ds ,
 > $$
 >
-> so that $Y = u_1y_1 + u_2y_2$. By the Fundamental Theorem of Calculus, $u_1$ and $u_2$ are differentiable with $u_1' = -y_2g/W$ and $u_2' = y_1g/W$. Then
+> so that $Y = u_1y_1 + u_2y_2$. By the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]]), $u_1$ and $u_2$ are differentiable with $u_1' = -y_2g/W$ and $u_2' = y_1g/W$. Then
 >
 > $$
 > u_1'y_1 + u_2'y_2 = \frac{-y_2y_1 + y_1y_2}{W}\,g = 0, \qquad

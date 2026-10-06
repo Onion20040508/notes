@@ -191,7 +191,7 @@ $$
 *Uses:* [[§11 Matrix Operations#^thm-11-6|§11.6]], [[§13 Characterizations of Invertible Matrices#^cor-13-2|§13.2]], [[§69 Sequences#^thm-69-8|Calc Thm. §69.8]] ($s^m \to 0$), [[§69 Sequences#^thm-69-9|Calc Thm. §69.9]] (bounded monotonic sequences converge)
 
 > [!remark]- Connections
-> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§70 Series#^thm-70-1|Calc Thm. §70.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum).
+> - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§70 Series#^thm-70-1|Calc Thm. §70.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§26 Boundedness and Continuity#^def-26-2|556 Def. §26.2]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
 
 In actual input–output models, powers of the consumption matrix approach the zero matrix rather quickly, so (8) is a practical way to compute $(I - C)^{-1}$. Likewise $C^m\mathbf{d} \to \mathbf{0}$ quickly for any $\mathbf{d}$, and (6) is a practical way to solve $(I - C)\mathbf{x} = \mathbf{d}$.
 

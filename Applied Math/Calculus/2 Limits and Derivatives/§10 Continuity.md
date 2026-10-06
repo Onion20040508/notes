@@ -505,7 +505,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 > [!remark]- Connections
 > - Rigorous treatment of the combination rules: sums, products and quotients [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]] (from the limit theorems for sequences), polynomials [[§17 Continuous Functions#^ex-17-6|451 Ex. §17.6]], composites [[§17 Continuous Functions#^thm-17-4|451 Thm. §17.4]] (one line with the sequential definition; several variables: [[§3 Continuity and Limits of Functions#^thm-3-4|452 Thm. §3.4]]).
-> - Inverses and the familiar functions: [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]] (a strictly increasing continuous function on a closed interval has a continuous inverse, proved with Bolzano–Weierstrass instead of an explicit δ; topological form [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]]). Once $\sin$, $\cos$ and $e^x$ are defined by power series, their continuity is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and the logarithm is continuous as the inverse of $e^x$ ([[§18 Properties of Continuous Functions#^rem-18-8|451 Remark: Beyond closed intervals]]).
+> - Inverses and the familiar functions: [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]] (a strictly increasing continuous function on a closed interval has a continuous inverse, proved with [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] instead of an explicit δ; topological form [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]]). Once $\sin$, $\cos$ and $e^x$ are defined by power series, their continuity is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and the logarithm is continuous as the inverse of $e^x$ ([[§18 Properties of Continuous Functions#^rem-18-8|451 Remark: Beyond closed intervals]]).
 
 > [!example] Example §10.4: Where Is the Function Continuous?
 > **(a)** $f(x) = \dfrac{\ln x + \tan^{-1} x}{x^2 - 1}$. By Theorem §10.6, $\ln x$ is continuous on $(0, \infty)$ and $\tan^{-1} x$ is continuous on $\mathbb{R}$, so by part 1 of Theorem §10.1 the numerator is continuous on $(0, \infty)$. The denominator $x^2 - 1$ is a polynomial, continuous everywhere. By part 5 of Theorem §10.1, $f$ is continuous at every $x > 0$ with $x^2 - 1 \ne 0$, that is, $x \ne \pm 1$. So $f$ is continuous on the intervals $(0, 1)$ and $(1, \infty)$.
@@ -542,7 +542,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 *A continuous $f$ on $[a, b]$ takes every value $N$ between $f(a)$ and $f(b)$ (the green range). The red line $y = N$ separates the endpoints $(a, f(a))$ and $(b, f(b))$ of the graph, so the graph must cross it. Here it does so three times, at $c_1, c_2, c_3$: the theorem guarantees at least one $c$, not a unique one.*
 
 > [!remark]- Connections
-> - Hub: [[Intermediate Value Theorem]]. Topological form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]].
+> - Hub: [[Intermediate Value Theorem]]. Topological form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]], which gives the theorem for maps into an ordered space, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
 > - The sign-change form used in Example §10.5: [[§18 Properties of Continuous Functions#^cor-18-4|451 Cor. §18.4]]. Every polynomial of odd degree has a real root: [[§18 Properties of Continuous Functions#^prop-18-8|451 Prop. §18.8]].
 
 > [!remark] Remark: Why It Works
@@ -575,7 +575,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > so a root lies in $(1.22, 1.23)$.
 >
-> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2$ is positive except at $x = \frac12$, so $f$ is increasing on each side of $\frac12$ by [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], and in fact on all of $\mathbb{R}$: completing the cube, $f(x) = \frac12 (2x - 1)^3 - \frac32$. This also gives the root exactly, $c = \frac12\big(1 + \sqrt[3]{3}\big) \approx 1.2211$.)
+> (It is the only real root: $f'(x) = 12x^2 - 12x + 3 = 3(2x - 1)^2$ is positive except at $x = \frac12$, so $f$ is increasing on each side of $\frac12$ by [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|Theorem §27.1]], and in fact on all of $\mathbb{R}$: completing the cube, $f(x) = \frac12 (2x - 1)^3 - \frac32$, and $t \mapsto t^3$ is increasing. Solving $(2c - 1)^3 = 3$ also gives the root exactly, $c = \frac12\big(1 + \sqrt[3]{3}\big) \approx 1.2211$.)
 >
 > *Stewart: Example 2.5.10*
 

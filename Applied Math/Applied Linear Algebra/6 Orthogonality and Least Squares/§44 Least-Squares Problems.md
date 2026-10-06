@@ -57,7 +57,7 @@ When $A\mathbf{x} = \mathbf{b}$ has no solution, the best one can do is to make 
 >
 > is consistent. For every $\mathbf{x}$, $A\mathbf{x} \in \operatorname{Col} A$, and by the Best Approximation Theorem $\|\mathbf{b} - A\mathbf{x}\| \ge \|\mathbf{b} - \hat{\mathbf{b}}\|$, with equality only if $A\mathbf{x} = \hat{\mathbf{b}}$. So $\hat{\mathbf{x}}$ is a least-squares solution if and only if it satisfies (1). In particular, least-squares solutions exist.
 >
-> **Every least-squares solution satisfies the normal equations.** Let $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$. By the Orthogonal Decomposition Theorem, $\mathbf{b} - \hat{\mathbf{b}}$ is orthogonal to $\operatorname{Col} A$, so $\mathbf{b} - A\hat{\mathbf{x}}$ is orthogonal to each column $\mathbf{a}_j$ of $A$: $\mathbf{a}_j^T(\mathbf{b} - A\hat{\mathbf{x}}) = 0$. The $\mathbf{a}_j^T$ are the rows of $A^T$, so
+> **Every least-squares solution satisfies the normal equations.** Let $A\hat{\mathbf{x}} = \hat{\mathbf{b}}$. By the Orthogonal Decomposition Theorem ([[§42 Orthogonal Projections#^thm-42-1|Theorem §42.1]]), $\mathbf{b} - \hat{\mathbf{b}}$ is orthogonal to $\operatorname{Col} A$, so $\mathbf{b} - A\hat{\mathbf{x}}$ is orthogonal to each column $\mathbf{a}_j$ of $A$: $\mathbf{a}_j^T(\mathbf{b} - A\hat{\mathbf{x}}) = 0$. The $\mathbf{a}_j^T$ are the rows of $A^T$, so
 >
 > $$
 > A^T(\mathbf{b} - A\hat{\mathbf{x}}) = \mathbf{0}, \tag{2}

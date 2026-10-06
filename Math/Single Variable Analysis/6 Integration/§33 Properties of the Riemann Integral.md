@@ -275,7 +275,7 @@ The converse direction — that integrability passes *down* to subintervals — 
 ^ex-33-1
 
 > [!remark] Remark: Inner Products on Function Spaces
-> In $\mathbb{R}^2$, $\mathbb{R}^3$ we have orthogonality of vectors, governed by the inner product $\langle x, y \rangle = \sum_i x_i y_i$. On the space of continuous functions on $[a,b]$ — an *infinite-dimensional* vector space — the integral supplies an inner product:
+> In $\mathbb{R}^2$, $\mathbb{R}^3$ we have orthogonality of vectors, governed by the inner product $\langle x, y \rangle = \sum_i x_i y_i$. On the space of continuous functions on $[a,b]$ — an *infinite-dimensional* vector space — the integral supplies an inner product ([[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]]):
 >
 > $$
 > \langle f, g \rangle = \int_a^b f(x)g(x)\,dx.

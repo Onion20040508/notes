@@ -74,7 +74,7 @@ $$
 > u_r = \frac1r, \qquad u_\theta = 0, \qquad v_r = 0, \qquad v_\theta = 1 ,
 > $$
 >
-> which exist and are continuous throughout the domain and satisfy the polar form of the Cauchy–Riemann equations
+> which exist and are continuous throughout the domain and satisfy the polar form of the Cauchy–Riemann equations ([[§24★ Polar Coordinates#^prop-24-1|Proposition §24.1]])
 >
 > $$
 > ru_r = v_\theta, \qquad u_\theta = -rv_r

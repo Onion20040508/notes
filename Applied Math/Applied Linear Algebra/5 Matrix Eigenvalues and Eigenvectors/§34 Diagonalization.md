@@ -104,7 +104,7 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§17 Diagonalizable Operators#^ladr-5-50|LADR 5.50]] (an operator is diagonalizable if it has a diagonal matrix in *some* basis) and [[§17 Diagonalizable Operators#^ladr-5-55|LADR 5.55]] (equivalent: a basis of eigenvectors; $V$ is the direct sum of the eigenspaces; the eigenspace dimensions add up to $\dim V$). Axler's (a) $\Leftrightarrow$ (b) is the operator form of $AP = PD$; that $D = P^{-1}AP$ is the matrix of $\mathbf{x} \mapsto A\mathbf{x}$ in the basis of columns of $P$ is [[§35 Eigenvectors and Linear Transformations#^thm-35-2|Theorem §35.2]].
-> - A further criterion with no counterpart in Lay: diagonalizable $\Leftrightarrow$ the minimal polynomial has distinct linear factors, [[§17 Diagonalizable Operators#^ladr-5-62|LADR 5.62]].
+> - A further criterion with no counterpart in Lay: diagonalizable $\Leftrightarrow$ the minimal polynomial ([[§15 The Minimal Polynomial#^ladr-5-24|LADR 5.24]]) has distinct linear factors, [[§17 Diagonalizable Operators#^ladr-5-62|LADR 5.62]].
 > - ODE version: [[§33★ Fundamental Matrices#^thm-33-7|331 Thm. §33.7]] (the same theorem, $\mathbf{T}^{-1}A\mathbf{T} = D$ with the eigenvectors as columns of $\mathbf{T}$). For $\mathbf{x}' = A\mathbf{x}$ it gives a fundamental set of eigenvector solutions, [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-2|331 Thm. §31.2]], and the matrix exponential $e^{At} = \mathbf{T}e^{Dt}\mathbf{T}^{-1}$, the continuous analogue of $A^k = PD^kP^{-1}$, [[§33★ Fundamental Matrices#^thm-33-8|331 Thm. §33.8]].
 
 ## Diagonalizing Matrices

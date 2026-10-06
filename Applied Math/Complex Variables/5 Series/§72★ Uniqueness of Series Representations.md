@@ -245,7 +245,7 @@ The proof for Laurent series needs [[§71★ Integration and Differentiation of 
 > f_1(z) = \sum_{n=0}^{\infty}(-1)^nz^{2n} \qquad (|z| < 1)
 > $$
 >
-> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), and substituting $-z^2$ into the geometric series shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^prop-28-4|Proposition §28.4]]) it is the only one.
+> into the domain consisting of all points except $\pm i$. Indeed, $f_1$ is analytic in $|z| < 1$ ([[§71★ Integration and Differentiation of Power Series#^cor-71-2|Corollary §71.2]]), and substituting $-z^2$ into the geometric series ([[§61 Convergence of Series#^ex-61-1|Example §61.1]]) shows $f_1(z) = \frac{1}{1 + z^2} = f_2(z)$ there. The function $f_2$ is analytic in the connected domain $\mathbb{C} \setminus \{\pm i\}$, which contains the disk, and agrees with $f_1$ on it, so it is an analytic continuation of $f_1$; by the uniqueness of analytic continuation ([[§28★ Uniquely Determined Analytic Functions#^prop-28-4|Proposition §28.4]]) it is the only one.
 >
 > **(b)** Likewise $f_2(z) = 1/z^2$ $(z \ne 0)$ is the analytic continuation of
 >

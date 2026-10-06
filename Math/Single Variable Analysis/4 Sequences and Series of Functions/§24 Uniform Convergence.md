@@ -191,7 +191,7 @@ Now we reap the applications.
 > - Used in ODEs: the Picard iterates for $y' = f(t, y)$ converge uniformly, so their limit is continuous, a step in the existence proof of [[§11 The Existence and Uniqueness Theorem#^thm-11-7|331 Thm. §11.7]].
 
 > [!remark] Remark
-> This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The contrapositive of the theorem is a quick non-uniformity test.
+> This retroactively explains several examples: $x^n$ on $[0,1]$ and $\tfrac{x^n}{n+x^n}$ on $[0,\infty)$ could not converge uniformly, because their limit functions are discontinuous while every $f_n$ is continuous. The [[Contrapositive, Converse and Inverse|contrapositive]] of the theorem is a quick non-uniformity test.
 
 ^rem-24-1
 

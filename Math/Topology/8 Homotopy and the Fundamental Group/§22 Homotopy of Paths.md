@@ -127,7 +127,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ## Homotopy is an Equivalence Relation
 
 > [!theorem] Lemma §22.3
-> Both $\simeq$ and $\simeq_p$ are equivalence relations.
+> Both $\simeq$ and $\simeq_p$ are [[§22 Partitions and Equivalence Relations#^def-22-3|equivalence relations]].
 
 ^lem-22-3
 
@@ -149,7 +149,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 *Uses:* [[Pasting Lemma|§9.5]]
 
 > [!definition] Definition §22.5: Path Homotopy Class
-> The equivalence class of a path $f$ under $\simeq_p$ is denoted $[f]$.
+> The [[§22 Partitions and Equivalence Relations#^def-22-4|equivalence class]] of a path $f$ under $\simeq_p$ is denoted $[f]$.
 
 ^def-22-5
 

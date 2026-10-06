@@ -336,7 +336,7 @@ A set of mutually orthogonal nonzero vectors is automatically linearly independe
 
 > [!remark]- Connections
 > - Rigorous treatment: real orthogonal matrices are the real unitary matrices, [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]] (unitary $\Leftrightarrow$ $Q^*Q = I$ $\Leftrightarrow$ orthonormal columns $\Leftrightarrow$ orthonormal rows $\Leftrightarrow$ norm-preserving); operator version [[§25 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]]. Orthogonal matrices return in [[§48★ Diagonalization of Symmetric Matrices#^def-48-2|Definition §48.2]] (orthogonal diagonalization).
-> - The orthogonal matrices form the group $O(n) = \{A \in GL_n(\mathbb{R}) : A^TA = I\}$, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]], and $\det : O(n) \to \{\pm 1\}$ is a homomorphism onto $\{\pm1\}$ with kernel $SO(n)$.
+> - The orthogonal matrices form the group $O(n) = \{A \in GL_n(\mathbb{R}) : A^TA = I\}$, [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]], and $\det : O(n) \to \{\pm 1\}$ is a homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]) onto $\{\pm1\}$ with kernel $SO(n)$.
 
 > [!example] Example §41.4: An Orthogonal Matrix
 > Let

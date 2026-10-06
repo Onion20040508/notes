@@ -109,7 +109,7 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]. The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
-> - Lebesgue version, with no continuity at all: $g' = f$ almost everywhere, [[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]].
+> - Lebesgue version, with no continuity at all: $g' = f$ [[§12 Measurable Functions#^def-12-5|almost everywhere]], [[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]].
 
 > [!example] Example §36.1: Differentiating Integrals with Variable Upper Limits
 > **(a)** Find the derivative of $g(x) = \displaystyle\int_0^x \sqrt{1 + t^2}\,dt$.

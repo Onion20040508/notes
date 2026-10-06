@@ -592,7 +592,7 @@ For the Hessian $H = \begin{pmatrix} f_{xx} & f_{xy} \\ f_{xy} & f_{yy} \end{pma
 > \text{If } (x_0, y_0) \text{ is an extremum} \quad \Longrightarrow \quad (x_0, y_0) \text{ satisfies the necessary condition.}
 > $$
 >
-> The contrapositive: if a point does *not* satisfy the necessary condition, it *cannot* be an extremum. So solving these equations gives us all possible candidates.
+> The [[Contrapositive, Converse and Inverse|contrapositive]]: if a point does *not* satisfy the necessary condition, it *cannot* be an extremum. So solving these equations gives us all possible candidates.
 >
 > **Stage 2: Classify candidates (Sufficient Conditions).**
 >

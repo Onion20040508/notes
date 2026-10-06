@@ -14,7 +14,7 @@ tags: [linear-algebra]
 ^ladr-9-40
 
 > [!remark] Remark: Why alternating is preserved
-> If $v_j=v_k$ then $Tv_j=Tv_k$, so $\alpha_T$ vanishes. In [[Differentiable Manifolds]] language, $\alpha_T=T^*\alpha$ is the pullback.
+> If $v_j=v_k$ then $Tv_j=Tv_k$, so $\alpha_T$ vanishes. In [[Differentiable Manifolds]] language, $\alpha_T=T^*\alpha$ is the pullback (for differential forms, [[§22 The Algebra of Differential Forms#^def-22-3|452 Def. §22.3]]).
 
 > [!definition] Definition 9.41: Determinant of an operator, det T
 > The *determinant* $\det T$ of $T\in\Lin(V)$ is the unique number with
@@ -85,7 +85,7 @@ tags: [linear-algebra]
 *Uses:* [[§33 Alternating Multilinear Forms#^ladr-9-36|9.36]], [[§34 Determinants#^ladr-9-45|9.45]]
 
 > [!remark]- Connections
-> - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol.
+> - Index form: $\det A=\varepsilon_{i_1\cdots i_n}A_{i_11}\cdots A_{i_nn}$ with the Levi-Civita symbol ([[§22 The Algebra of Differential Forms#^def-22-2|452 Def. §22.2]]).
 > - Since this formula is a polynomial in the entries, det is continuous ([[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|591 Prop. §10.3]]) and smooth, with derivative given by Jacobi's formula ([[§11 The Classical Groups Are Topological Manifolds#^prop-11-1|591 Prop. §11.1]]).
 > - Used in Relativity: by the Leibniz formula the Levi-Civita symbol is an invariant pseudotensor — [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]; it gives the second field invariant $\vec E\cdot\vec B$ — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]].
 > - Determinants of order 2 and 3, computed by cofactor expansion: [[§83 The Cross Product#^def-83-2|Calc Def. §83.2]] (with worked examples).

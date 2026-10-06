@@ -74,13 +74,13 @@ Two operations on vector fields in $\mathbb{R}^3$ resemble differentiation. The 
 ^cor-111-2
 
 > [!proof]+ Proof
-> If $\mathbf{F} = \nabla f$, then $\operatorname{curl}\mathbf{F} = \operatorname{curl}(\nabla f) = \mathbf{0}$ by [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The second sentence is the contrapositive.
+> If $\mathbf{F} = \nabla f$, then $\operatorname{curl}\mathbf{F} = \operatorname{curl}(\nabla f) = \mathbf{0}$ by [[§111 Curl and Divergence#^thm-111-1|Theorem §111.1]]. The second sentence is the [[Contrapositive, Converse and Inverse|contrapositive]].
 
 ^pf-111-2
 
 *Uses:* [[§111 Curl and Divergence#^thm-111-1|§111.1]], [[§107 Vector Fields#^def-107-4|Def. §107.4]]
 
-This is the three-dimensional form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]: for a plane field $P\,\mathbf{i} + Q\,\mathbf{j}$ the curl is $(\partial Q/\partial x - \partial P/\partial y)\,\mathbf{k}$. The converse is not true in general, but Stewart states (16.5, Theorem 4) that it holds when $\mathbf{F}$ is defined everywhere: *if $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is conservative.* (More generally it holds if the domain is simply-connected, that is, "has no hole".) This is the three-dimensional version of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]]. Its proof requires Stokes' Theorem, so it is stated and proved there: [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
+This is the three-dimensional form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Theorem §109.4]]: for a plane field $P\,\mathbf{i} + Q\,\mathbf{j}$ the curl is $(\partial Q/\partial x - \partial P/\partial y)\,\mathbf{k}$. The converse is not true in general, but Stewart states (16.5, Theorem 4) that it holds when $\mathbf{F}$ is defined everywhere: *if $\mathbf{F}$ is a vector field defined on all of $\mathbb{R}^3$ whose component functions have continuous partial derivatives and $\operatorname{curl}\mathbf{F} = \mathbf{0}$, then $\mathbf{F}$ is conservative.* (More generally it holds if the domain is simply-connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]), that is, "has no hole".) This is the three-dimensional version of [[§110 Green's Theorem#^thm-110-5|Theorem §110.5]]. Its proof requires Stokes' Theorem, so it is stated and proved there: [[§114 Stokes' Theorem#^thm-114-4|Theorem §114.4]].
 
 > [!definition] Definition §111.2: Irrotational
 > If $\operatorname{curl}\mathbf{F} = \mathbf{0}$ at a point $P$, then $\mathbf{F}$ is called **irrotational** at $P$.

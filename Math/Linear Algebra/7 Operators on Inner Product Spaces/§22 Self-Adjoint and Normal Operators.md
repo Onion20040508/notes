@@ -21,7 +21,7 @@ tags: [linear-algebra]
 ^ladr-7-1
 
 > [!remark] Remark: How to compute
-> Start from $\langle Tv,w\rangle$ and rewrite it until $v$ stands alone in the first slot; what sits in the second slot is $T^*w$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-2|7.2]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-3|7.3]]). Not related to the 'classical adjoint' (adjugate) of a matrix.
+> Start from $\langle Tv,w\rangle$ and rewrite it until $v$ stands alone in the first slot; what sits in the second slot is $T^*w$ ([[§22 Self-Adjoint and Normal Operators#^ladr-7-2|7.2]], [[§22 Self-Adjoint and Normal Operators#^ladr-7-3|7.3]]). Not related to the 'classical adjoint' (adjugate, [[§22 Cramer’s Rule, Volume, and Linear Transformations#^def-22-2|235 Def. §22.2]]) of a matrix.
 
 > [!remark]- Connections
 > - Physics: the Hermitian conjugate $A^\dagger$, $\langle\phi|A\psi\rangle=\langle A^\dagger\phi|\psi\rangle$. Dual-space analogue: [[§12 Duality#^ladr-3-118|3.118]] ($T'$ acts on $W'$; Riesz turns $T'$ into $T^*$).

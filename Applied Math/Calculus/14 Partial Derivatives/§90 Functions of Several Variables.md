@@ -245,4 +245,4 @@ For instance, the temperature $T$ at a point on the surface of the earth depends
 ^def-90-6
 
 > [!remark]- Connections
-> - A function $f(\mathbf{x}) = \mathbf{c} \cdot \mathbf{x}$ is a linear functional on $\mathbb{R}^n$, given by the dot product [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]]; every linear functional on $\mathbb{R}^n$ has this form (the Riesz representation theorem in its simplest case).
+> - A function $f(\mathbf{x}) = \mathbf{c} \cdot \mathbf{x}$ is a linear functional on $\mathbb{R}^n$, given by the dot product [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]]; every linear functional on $\mathbb{R}^n$ has this form (the Riesz representation theorem in its simplest case, [[Riesz representation theorem|LADR 6.42]]).

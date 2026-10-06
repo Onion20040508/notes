@@ -12,7 +12,7 @@ The torus $T^2 = S^1 \times S^1$, equivalently the unit square with opposite edg
 - The two generators are the longitude and the meridian ([[§23 The Fundamental Group#^rem-23-7|§23]])
 - $\mathbb{R}^2 \to T^2$ is a covering map ([[§24 Covering Spaces#^ex-24-3|§24]])
 - The punctured torus deformation retracts onto the figure eight ([[§26 Deformation Retracts and Homotopy Type#^ex-26-9|§26]])
-- The loop around the puncture is the commutator $aba^{-1}b^{-1}$ ([[§26 Deformation Retracts and Homotopy Type#^rem-26-8|§26]])
+- The loop around the puncture is the [[§47 Commutators#^def-47-1|commutator]] $aba^{-1}b^{-1}$ ([[§26 Deformation Retracts and Homotopy Type#^rem-26-8|§26]])
 - $T^2$ is not homeomorphic to $S^2$, $P^2$ or $\Sigma_2$ ([[§28 Fundamental Group of Some Surfaces#^cor-28-6|§28]])
 - $\pi_1(T^2) \cong \mathbb{Z} \times \mathbb{Z}$ via van Kampen ([[§29 The Seifert–van Kampen Theorem#^ex-29-4|§29]])
 - Filling the puncture with a 2-cell adds the relation $aba^{-1}b^{-1} = e$ ([[§29 The Seifert–van Kampen Theorem#^rem-29-6|§29]])

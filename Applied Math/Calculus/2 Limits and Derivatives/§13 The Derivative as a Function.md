@@ -208,9 +208,10 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-1|451 Thm. §28.1]] (same proof), with the derivative defined in [[§28 Basic Properties of the Derivative#^def-28-1|451 Def. §28.1]]; the converse fails, [[§28 Basic Properties of the Derivative#^rem-28-1|451 Remark: The converse fails]].
+> - Complex-variables version: [[§19 Derivatives#^thm-19-1|342 Thm. §19.1]] (a function with a complex derivative at $z_0$ is continuous there).
 
 > [!remark] Remark: The Converse Is False
-> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7: both one-sided limits are $0$, so [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]] applies), but it is not differentiable at $0$ by Example §13.4. Read in the contrapositive, Theorem §13.1 gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
+> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7: both one-sided limits are $0$, so [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]] applies), but it is not differentiable at $0$ by Example §13.4. Read in the [[Contrapositive, Converse and Inverse|contrapositive]], Theorem §13.1 gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
 
 ^rem-13-2
 

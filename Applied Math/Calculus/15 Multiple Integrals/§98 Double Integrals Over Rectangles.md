@@ -87,7 +87,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 > [!remark]- Connections
 > - Rigorous treatment with arbitrary partitions and Darboux sums: [[§15 Multivariable Integration#^def-15-10|452 Def. §15.10]], [[§15 Multivariable Integration#^def-15-11|452 Def. §15.11]]; that every choice of sample points gives the same limit is [[§15 Multivariable Integration#^rem-15-6|452 Remark (Evaluating the Integral)]].
-> - The volume interpretation in measure theory: for $f \ge 0$ the Lebesgue measure of the region under the graph equals $\int f$, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|551 Thm. §17.11]] (the Subgraph Theorem).
+> - The volume interpretation in measure theory: for $f \ge 0$ the [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]] of the region under the graph equals $\int f$, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-11|551 Thm. §17.11]] (the Subgraph Theorem).
 
 > [!remark] Remark: Equal Subrectangles
 > Stewart divides $R$ into subrectangles of equal size. Unequal subrectangles $R_{ij}$ would also do, provided all their dimensions tend to $0$ in the limit.
@@ -101,7 +101,7 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 
 ^thm-98-1
 
-*Stewart omits the proof ("shown in courses on advanced calculus"). For continuous $f$, the one-variable proof from uniform continuity ([[§8 Motivation꞉ The Riemann Integral#^prop-8-1|551 Prop. §8.1]]) carries over word for word to a rectangle; the two-variable theory, including integration over sets bounded by curves, is [[§15 Multivariable Integration|452 §15]].*
+*Stewart omits the proof ("shown in courses on advanced calculus"). For continuous $f$, the one-variable proof from [[§19 Uniform Continuity#^def-19-1|uniform continuity]] ([[§8 Motivation꞉ The Riemann Integral#^prop-8-1|551 Prop. §8.1]]) carries over word for word to a rectangle; the two-variable theory, including integration over sets bounded by curves, is [[§15 Multivariable Integration|452 §15]].*
 
 > [!theorem] Theorem §98.2: Volume as a Double Integral
 > If $f(x, y) \ge 0$, then the volume $V$ of the solid that lies above the rectangle $R$ and below the surface $z = f(x, y)$ is

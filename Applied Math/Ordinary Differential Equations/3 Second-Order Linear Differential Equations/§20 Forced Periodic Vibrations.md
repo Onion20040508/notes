@@ -117,7 +117,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 > mU'' + \gamma U' + kU = (aA + bB)\cos\omega t + (aB - bA)\sin\omega t .
 > $$
 >
-> This equals $F_0\cos\omega t$ exactly when $aA + bB = F_0$ and $-bA + aB = 0$. The determinant of this system is $a^2 + b^2 = \Delta^2 > 0$ (as $b > 0$), and Cramer's rule gives
+> This equals $F_0\cos\omega t$ exactly when $aA + bB = F_0$ and $-bA + aB = 0$. The determinant of this system is $a^2 + b^2 = \Delta^2 > 0$ (as $b > 0$), and Cramer's rule ([[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]]) gives
 >
 > $$
 > A = \frac{aF_0}{\Delta^2}, \qquad B = \frac{bF_0}{\Delta^2} .
@@ -127,7 +127,7 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 
 ^pf-20-1
 
-*Uses:* [[§19 Mechanical and Electrical Vibrations#^thm-19-3|§19.3]], [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients)
+*Uses:* [[§19 Mechanical and Electrical Vibrations#^thm-19-3|§19.3]], [[§19 Mechanical and Electrical Vibrations#^prop-19-2|§19.2]], [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-4|§17.4]] (undetermined coefficients), [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-1|235 Thm. §22.1]] (Cramer's rule)
 
 > [!remark]- Connections
 > - See also: [[§16★ Applications of Fourier Series and Integrals#^thm-16-1|341 Thm. §16.1]] (the periodic response to any periodic forcing, found term by term from the Fourier series of the force), with a damped oscillator driven by a square wave in [[§16★ Applications of Fourier Series and Integrals#^ex-16-1|341 Ex. §16.1]].

@@ -118,7 +118,7 @@ This result was obtained by Cauchy in the early part of the nineteenth century.
 > \int_C \sin(z^2)\,dz = 0 .
 > $$
 >
-> The composite function $f(z) = \sin(z^2)$ is analytic everywhere, and its derivative $f'(z) = 2z\cos(z^2)$ is continuous everywhere ([[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]], chain rule). Theorem §50.2 applies to every simple closed contour.
+> The composite function $f(z) = \sin(z^2)$ is analytic everywhere, and its derivative $f'(z) = 2z\cos(z^2)$ is continuous everywhere ([[§37 The Trigonometric Functions sin z and cos z#^thm-37-1|Theorem §37.1]], chain rule [[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]). Theorem §50.2 applies to every simple closed contour.
 >
 > *B&C: Sec. 50, Example*
 
@@ -136,7 +136,7 @@ $$
 The proof in [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)|§51]] takes $C$ positively oriented; the other orientation follows as in the proof of Theorem §50.2. B&C remarks that a reader who wishes to accept the theorem without proof may pass directly to §52. Extensions to closed contours that cross themselves and to domains without holes are in [[§52 Simply Connected Domains#^thm-52-1|Theorem §52.1]], and to regions with holes in [[§53 Multiply Connected Domains#^thm-53-1|Theorem §53.1]].
 
 > [!remark] Remark: Method — Showing That an Integral Around a Closed Contour Is Zero
-> 1. **Locate the trouble.** Find where $f$ fails to be analytic: zeros of denominators, branch cuts of logarithms and powers, points where $f$ involves $\bar z$, $|z|$, $\operatorname{Re} z$.
+> 1. **Locate the trouble.** Find where $f$ fails to be analytic: zeros of denominators, branch cuts ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]) of logarithms and powers, points where $f$ involves $\bar z$, $|z|$, $\operatorname{Re} z$.
 > 2. **Check the region.** If none of these points lies inside or on the simple closed contour $C$, then $\int_C f(z)\,dz = 0$ by the Cauchy–Goursat theorem (and, if $f'$ is visibly continuous there, already by Theorem §50.2). The orientation of $C$ does not matter.
 > 3. **Alternatively**, if $f$ has an antiderivative on a domain containing $C$, the integral is zero by [[§49 Proof of the Theorem (Antiderivatives)#^thm-49-1|Theorem §49.1]]; this works for closed contours that are not simple.
 > 4. **If a trouble point lies inside $C$**, the integral need not vanish ($\int_{|z|=1} dz/z = 2\pi i$); it is computed by deforming $C$ ([[§53 Multiply Connected Domains#^cor-53-2|Corollary §53.2]]), by the Cauchy integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|Theorem §54.1]]) or by residues ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]). The hypothesis is sufficient, not necessary: $\int_{|z|=1} dz/z^2 = 0$ although $1/z^2$ is not analytic at $0$ ([[§48 Antiderivatives#^ex-48-2|Example §48.2]]).

@@ -172,6 +172,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - For linear maps between spaces of the same finite dimension one-sided also suffices, for a different reason (dimension): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]]; the infinite-dimensional shifts on $\mathbb{F}^\infty$ fail it exactly like the shift on $\mathbb{N}$ ([[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]]).
 > - Functions: a left inverse gives injectivity, a right inverse surjectivity: [[§21 Algebra Prerequisites꞉ Groups#^prop-21-4|Bijectivity via Two-Sided Inverse]].
+> - See also: the matrix case in 591, where $gg^\ast = I$ already gives $g^\ast g = I$ (by determinants), so U(n) is cut out by one equation: [[§22 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-22-3|591 Lemma §22.3]].
 
 > [!theorem] Proposition §2.7: Unique Solvability of Linear Equations
 > Let $a, b \in G$. The equation $ax = b$ has exactly one solution $x \in G$, namely $x = a^{-1} b$; and $xa = b$ has exactly one solution, namely $x = b a^{-1}$.

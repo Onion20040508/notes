@@ -76,7 +76,7 @@ For a *square* matrix, almost every concept of Chapter 1 turns out to be equival
 *How the proof of the Invertible Matrix Theorem is organized. The five statements on the circle imply one another in turn; (k) and (g) attach to it through (a); the statements (g), (h), (i) about spanning and onto, and (d), (e), (f) about independence and one-to-one, are equivalent for every matrix, square or not; and (l) is equivalent to (a) by the inverse of a transpose. Squareness is used only in (c) ⇒ (b) and (g) ⇒ (a), where $n$ pivots must fill both the $n$ rows and the $n$ columns.*
 
 > [!remark]- Connections
-> - Rigorous treatment: for a linear operator on a finite-dimensional space, injective $\Leftrightarrow$ surjective $\Leftrightarrow$ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]] (hub [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]]), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]].
+> - Rigorous treatment: for a linear operator on a finite-dimensional space, injective $\Leftrightarrow$ surjective $\Leftrightarrow$ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]] (hub [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]]), proved there from the [[Fundamental theorem of linear maps|fundamental theorem of linear maps]] instead of pivot counting; one-sided inverses are two-sided, [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]].
 > - The same phenomenon for functions between finite sets of equal size: injective iff surjective, [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
 
 > [!remark] Remark: Using the Theorem

@@ -47,7 +47,7 @@ If the size of a bacteria population is a function of time, $N = f(t)$, one can 
 >
 > Conversely, if some line $y = c$ meets the graph at two different points, these points have the same second coordinate $c$, so they differ in the first: they are $(x_1, c)$ and $(x_2, c)$ with $x_1 \ne x_2$ and $f(x_1) = c = f(x_2)$. So $f$ is not one-to-one.
 >
-> Both directions together (in contrapositive form) give the test.
+> Both directions together (in [[Contrapositive, Converse and Inverse|contrapositive]] form) give the test.
 
 ^pf-5-1
 

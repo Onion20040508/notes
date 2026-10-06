@@ -56,8 +56,8 @@ tags: [linear-algebra]
 *Uses:* [[§1 Rⁿ and Cⁿ#^ladr-1-1|1.1]]
 
 > [!remark]- Connections
-> - These are the field axioms; $\R$ and $\C$ are fields. The vector-space axioms [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] copy this list with scalars acting on vectors.
-> - Uniqueness of inverses is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction, 1∕α, division]] well defined.
+> - These are the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|451 Def. §3.1]]); $\R$ and $\C$ are fields. The vector-space axioms [[§2 Definition of Vector Space#^ladr-1-20|Vector space]] copy this list with scalars acting on vectors.
+> - Uniqueness of inverses (the group-theory argument of [[§2 First Consequences of the Axioms#^prop-2-3|493 Prop. §2.3]], used in the proof above) is what makes [[§1 Rⁿ and Cⁿ#^ladr-1-5|−α, subtraction, 1∕α, division]] well defined.
 > - Computational version: [[§53 Complex Numbers#^thm-53-1|235 Thm. §53.1]] (the same laws, stated without proof), with the inverse 1/z = z̄/|z|² in [[§53 Complex Numbers#^prop-53-4|235 Prop. §53.4]].
 > - Computational version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]] (commutative, associative and distributive laws) and [[§2 Basic Algebraic Properties#^thm-2-4|342 Thm. §2.4]] (multiplicative inverse), proved from the pair definition, with worked examples.
 

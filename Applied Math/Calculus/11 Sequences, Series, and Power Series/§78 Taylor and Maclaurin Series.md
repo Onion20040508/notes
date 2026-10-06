@@ -94,6 +94,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§31 Taylor's Theorem#^def-31-1|451 Def. §31.1]]. That a Taylor series may converge to something other than $f$: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]] ($e^{-1/x^2}$, Stewart's Exercise 96).
+> - Complex-variables version: [[§62 Taylor Series#^def-62-1|342 Def. §62.1]] (the same series for a function analytic at $z_0$).
 
 > [!theorem] Corollary §78.2: Uniqueness of Power Series Representations
 > The power series representation at $a$ of a function is unique, regardless of how it is found: if $f(x) = \sum c_n (x - a)^n$ for $|x - a| < R$, the series is the Taylor series of $f$ at $a$. In particular, all the power series representations of [[§77 Representations of Functions as Power Series|§77]] are Taylor series of the functions they represent.
@@ -448,7 +449,7 @@ These series, found by Newton by other methods, say that everything about $e^x$,
 > (1 + x)^k = \sum_{n=0}^{\infty} \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!} x^2 + \frac{k(k-1)(k-2)}{3!} x^3 + \cdots \qquad (17)
 > $$
 >
-> If $k$ is a nonnegative integer, $\binom{k}{n} = 0$ for $n > k$ (the numerator contains the factor $k - k$), the series terminates, and (17) is the ordinary Binomial Theorem. At the endpoints the series converges at $x = 1$ if $-1 < k \le 0$, and at both endpoints if $k \ge 0$.
+> If $k$ is a nonnegative integer, $\binom{k}{n} = 0$ for $n > k$ (the numerator contains the factor $k - k$), the series terminates, and (17) is the ordinary Binomial Theorem ([[Binomial Theorem|250 Thm. §12.10]]). At the endpoints the series converges at $x = 1$ if $-1 < k \le 0$, and at both endpoints if $k \ge 0$.
 >
 > *Stewart: 11.10, The Binomial Series 17 (Example 11.10.8)*
 

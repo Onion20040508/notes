@@ -18,7 +18,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 > 2. Multiply by $c$ and separate real and imaginary parts: $c\log z = X_n + iY_n$.
 > 3. Then $z^c = e^{X_n}(\cos Y_n + i\sin Y_n)$. If $c$ is real, all values have the same modulus $|z|^c$; if $c$ is not real, the moduli $e^{X_n}$ change with $n$.
 > 4. Count: for $c = m/n$ in lowest terms the values repeat with period $n$ in the index, so there are $n$ of them; for irrational or nonreal $c$ there are infinitely many.
-> 5. The principal value takes $n = 0$ (that is, $\operatorname{Log} z$).
+> 5. The principal value ([[§35 The Power Function#^def-35-2|Definition §35.2]]) takes $n = 0$ (that is, $\operatorname{Log} z$).
 
 ^rem-36-1
 
@@ -116,7 +116,7 @@ This section evaluates powers $z^c = e^{c\log z}$ ([[§35 The Power Function#^de
 > ru_r = \frac23 r^{2/3}\cos\frac{2\Theta}{3} = v_\Theta, \qquad u_\Theta = -\frac23 r^{2/3}\sin\frac{2\Theta}{3} = -rv_r
 > $$
 >
-> are continuous and satisfy the polar Cauchy–Riemann equations throughout the domain. [[§35 The Power Function#^thm-35-2|Theorem §35.2]] also gives the derivative, $\frac{d}{dz}z^{2/3} = \frac23 z^{-1/3}$ (principal branches on both sides).
+> are continuous and satisfy the polar Cauchy–Riemann equations ([[§24★ Polar Coordinates#^prop-24-1|Proposition §24.1]]) throughout the domain. [[§35 The Power Function#^thm-35-2|Theorem §35.2]] also gives the derivative, $\frac{d}{dz}z^{2/3} = \frac23 z^{-1/3}$ (principal branches on both sides).
 >
 > *B&C: Sec. 36, Example 3*
 

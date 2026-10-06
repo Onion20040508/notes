@@ -78,11 +78,11 @@ Now we apply single-variable Taylor to $F(t)$ around $t = 0$!
 > \frac{d}{dt} \frac{\partial^m f}{\partial x^\ell \, \partial y^{m-\ell}} = \frac{\partial^{m+1} f}{\partial x^{\ell+1} \, \partial y^{m-\ell}} \cdot h + \frac{\partial^{m+1} f}{\partial x^\ell \, \partial y^{m+1-\ell}} \cdot k.
 > $$
 >
-> After collecting terms and using the Pascal's triangle identity $\binom{m}{\ell-1} + \binom{m}{\ell} = \binom{m+1}{\ell}$, we obtain the formula for $m + 1$.
+> After collecting terms and using the Pascal's triangle identity $\binom{m}{\ell-1} + \binom{m}{\ell} = \binom{m+1}{\ell}$ ([[§12★ Counting Functions and Subsets#^prop-12-8|250 Prop. §12.8]]), we obtain the formula for $m + 1$.
 
 ^pf-9-1
 
-*Uses:* [[§6 Differentiability#^thm-6-9|§6.9]], [[Continuous Partials Imply Differentiability|§6.2]], [[Schwarz–Clairaut Theorem|§5.1]]
+*Uses:* [[§6 Differentiability#^thm-6-9|§6.9]], [[Continuous Partials Imply Differentiability|§6.2]], [[Schwarz–Clairaut Theorem|§5.1]], [[§12★ Counting Functions and Subsets#^prop-12-8|250 Prop. §12.8]]
 
 > [!remark] Remark: First Few Derivatives
 > Explicitly:

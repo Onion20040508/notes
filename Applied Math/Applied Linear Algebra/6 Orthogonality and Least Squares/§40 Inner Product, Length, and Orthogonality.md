@@ -340,7 +340,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§22 Self-Adjoint and Normal Operators#^ladr-7-6|LADR 7.6]] ($\operatorname{null} T^* = (\operatorname{range} T)^\perp$ and $\operatorname{range} T^* = (\operatorname{null} T)^\perp$ for a linear map between inner product spaces; the transpose becomes the adjoint, and the row space is $\operatorname{range} T^*$). Orthogonal complements in general: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], with $\dim U^\perp = \dim V - \dim U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]] and $(U^\perp)^\perp = U$ in [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] (Proposition §40.7 and Corollary §40.8 below).
-> - In a Hilbert space the complement of any set is a closed subspace, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]], and the double complement is the closed span, [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
+> - In a Hilbert space the orthogonal complement ([[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]) of any set is a closed subspace, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]], and the double complement is the closed span, [[§22 Projection and Orthogonal Decomposition#^thm-22-6|556 Thm. §22.6]].
 
 > [!theorem] Proposition §40.7: Dimension of the Orthogonal Complement
 > If $W$ is a subspace of $\mathbb{R}^n$, then
@@ -458,7 +458,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 ^thm-40-9
 
 > [!proof]+ Proof
-> The triangle with vertices $\mathbf{0}$, $\mathbf{u}$, $\mathbf{v}$ has sides of lengths $\|\mathbf{u}\|$, $\|\mathbf{v}\|$, $\|\mathbf{u} - \mathbf{v}\|$, and its angle at $\mathbf{0}$ is $\vartheta$. The law of cosines gives
+> The triangle with vertices $\mathbf{0}$, $\mathbf{u}$, $\mathbf{v}$ has sides of lengths $\|\mathbf{u}\|$, $\|\mathbf{v}\|$, $\|\mathbf{u} - \mathbf{v}\|$, and its angle at $\mathbf{0}$ is $\vartheta$. The law of cosines ([[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]]) gives
 >
 > $$
 > \|\mathbf{u} - \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2 - 2\|\mathbf{u}\|\,\|\mathbf{v}\| \cos\vartheta .
@@ -478,7 +478,7 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^pf-40-9
 
-*Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|§40.3]], [[§40 Inner Product, Length, and Orthogonality#^def-40-4|Def. §40.4]]
+*Uses:* [[§40 Inner Product, Length, and Orthogonality#^prop-40-3|§40.3]], [[§40 Inner Product, Length, and Orthogonality#^def-40-4|Def. §40.4]], [[§119 Trigonometry#^thm-119-11|Calc Thm. §119.11]] (law of cosines)
 
 > [!remark]- Connections
 > - Stewart proves the same formula for vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$, also from the law of cosines: [[§82 The Dot Product#^thm-82-2|Calc Thm. §82.2]]; orthogonality test [[§82 The Dot Product#^thm-82-4|Calc Thm. §82.4]].

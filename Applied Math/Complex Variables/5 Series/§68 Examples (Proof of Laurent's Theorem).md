@@ -67,7 +67,7 @@ Laurent coefficients are almost never computed from the integrals of Laurent's t
 > f(z) = -\sum_{n=1}^{\infty}z^n - \sum_{n=0}^{\infty}z^n = -1 - 2\sum_{n=1}^{\infty}z^n \qquad (|z| < 1) .
 > $$
 >
-> The radius of convergence is $1$: the series converges for $|z| < 1$ by Taylor's theorem ($1$ is the distance to the singular point), and diverges for $|z| \ge 1$, where its terms $-2z^n$ do not tend to zero. (Equivalently, $f = 1 + \frac{2}{z - 1} = 1 - \frac{2}{1 - z}$.)
+> The radius of convergence is $1$: the series converges for $|z| < 1$ by Taylor's theorem ([[§63 Proof of Taylor's Theorem#^thm-63-1|Theorem §63.1]]; $1$ is the distance to the singular point), and diverges for $|z| \ge 1$, where its terms $-2z^n$ do not tend to zero. (Equivalently, $f = 1 + \frac{2}{z - 1} = 1 - \frac{2}{1 - z}$.)
 >
 > **$D_2$.** Here $|1/z| < 1$, which suggests
 >

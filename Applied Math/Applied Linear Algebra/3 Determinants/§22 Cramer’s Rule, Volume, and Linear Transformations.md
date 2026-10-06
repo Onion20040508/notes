@@ -159,7 +159,7 @@ This section turns the theory of [[§20 Introduction to Determinants|§20]]–[[
 > \operatorname{adj} A = \begin{bmatrix} C_{11} & C_{21} & \cdots & C_{n1} \\ C_{12} & C_{22} & \cdots & C_{n2} \\ \vdots & \vdots & & \vdots \\ C_{1n} & C_{2n} & \cdots & C_{nn} \end{bmatrix}, \qquad (\operatorname{adj} A)_{ij} = C_{ji} .
 > $$
 >
-> Note the reversed subscripts. (The term *adjoint* has another meaning in advanced texts on linear transformations: the adjoint operator of an inner product space.)
+> Note the reversed subscripts. (The term *adjoint* has another meaning in advanced texts on linear transformations: the adjoint operator of an inner product space, [[§22 Self-Adjoint and Normal Operators#^ladr-7-1|LADR 7.1]].)
 >
 > *Lay: 3.3 (text)*
 
@@ -299,7 +299,7 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 
 > [!remark]- Connections
 > - In Calculus the same facts come from the cross product: area $= |\mathbf{a} \times \mathbf{b}|$ ([[§83 The Cross Product#^cor-83-6|Calc Cor. §83.6]]) and volume $= |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| = |\det|$ ([[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]]); the lecture writes $\det[\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3] = (\mathbf{v}_1 \times \mathbf{v}_2) \cdot \mathbf{v}_3$.
-> - Rigorous treatment in $\mathbb{R}^n$ for every measurable set: [[§34 Determinants#^ladr-9-61|LADR 9.61]] (proved via the singular value decomposition, [[§34 Determinants#^ladr-9-60|LADR 9.60]]); the sign of $\det$ records orientation, which $|\det|$ forgets.
+> - Rigorous treatment in $\mathbb{R}^n$ for every measurable set ([[§10 Lebesgue Measurable Sets#^def-10-1|551 Def. §10.1]]): [[§34 Determinants#^ladr-9-61|LADR 9.61]] (proved via the singular value decomposition, [[§34 Determinants#^ladr-9-60|LADR 9.60]]); the sign of $\det$ records orientation, which $|\det|$ forgets.
 
 > [!example] Example §22.4: Areas of Parallelograms, Triangles and Quadrilaterals
 > **(a) A parallelogram given by its vertices.** Find the area of the parallelogram with vertices $(-2, -2)$, $(0, 3)$, $(4, -1)$, $(6, 4)$. First translate it so that one vertex is the origin: subtracting $(-2, -2)$ from each vertex gives $(0, 0)$, $(2, 5)$, $(6, 1)$, $(8, 6)$, a parallelogram with the same area. It is determined by the columns of

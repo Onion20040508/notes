@@ -139,7 +139,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 ^thm-25-2
 
 > [!proof]+ Proof
-> By [[§25 Impulse Functions#^def-25-4|Definition §25.4]] and [[§25 Impulse Functions#^thm-25-1|Theorem §25.1]], $\mathcal{L}\{\delta(t - t_0)\} = e^{-st_0}\lim_{\tau \to 0^+} \dfrac{\sinh(s\tau)}{s\tau}$. The quotient is of the form $\frac00$ as $\tau \to 0^+$; by l'Hôpital's rule (differentiating in $\tau$, with $s$ fixed),
+> By [[§25 Impulse Functions#^def-25-4|Definition §25.4]] and [[§25 Impulse Functions#^thm-25-1|Theorem §25.1]], $\mathcal{L}\{\delta(t - t_0)\} = e^{-st_0}\lim_{\tau \to 0^+} \dfrac{\sinh(s\tau)}{s\tau}$. The quotient is of the form $\frac00$ as $\tau \to 0^+$; by l'Hôpital's rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Calc Thm. §28.2]]; differentiating in $\tau$, with $s$ fixed),
 >
 > $$
 > \lim_{\tau \to 0^+} \frac{\sinh(s\tau)}{s\tau} = \lim_{\tau \to 0^+} \frac{s\cosh(s\tau)}{s} = \cosh 0 = 1 .
@@ -173,7 +173,7 @@ The formulas agree with the shift rule of [[§23 Step Functions#^thm-23-2|Theore
 > \int_{-\infty}^{\infty} d_\tau(t - t_0)\,f(t)\,dt = \frac{1}{2\tau}\int_{t_0 - \tau}^{t_0 + \tau} f(t)\,dt = \frac{1}{2\tau}\cdot 2\tau\cdot f(t^*) = f(t^*)
 > $$
 >
-> for some $t^*$ with $t_0 - \tau \le t^* \le t_0 + \tau$, by the mean value theorem for integrals applied to the continuous $f$ on $[t_0 - \tau, t_0 + \tau]$. As $\tau \to 0^+$, $t^* \to t_0$, so $f(t^*) \to f(t_0)$ by continuity of $f$ at $t_0$. By (15) the left side of (16) is this limit, $f(t_0)$.
+> for some $t^*$ with $t_0 - \tau \le t^* \le t_0 + \tau$, by the mean value theorem for integrals ([[§43 Average Value of a Function#^thm-43-1|Calc Thm. §43.1]]) applied to the continuous $f$ on $[t_0 - \tau, t_0 + \tau]$. As $\tau \to 0^+$, $t^* \to t_0$, so $f(t^*) \to f(t_0)$ by continuity of $f$ at $t_0$. By (15) the left side of (16) is this limit, $f(t_0)$.
 >
 > For an interval $[\alpha, \beta]$ with $\alpha < t_0 < \beta$, once $\tau$ is small enough that $(t_0 - \tau, t_0 + \tau) \subseteq (\alpha, \beta)$, the integral of $d_\tau(t - t_0)f(t)$ over $[\alpha, \beta]$ is again $\frac{1}{2\tau}\int_{t_0 - \tau}^{t_0 + \tau} f(t)\,dt$. The argument above uses $f$ only on $[t_0 - \tau, t_0 + \tau]$, so the limit is again $f(t_0)$. If $t_0 \notin [\alpha, \beta]$, then for small $\tau$ the pulse vanishes on $[\alpha, \beta]$ and the integral is $0$.
 

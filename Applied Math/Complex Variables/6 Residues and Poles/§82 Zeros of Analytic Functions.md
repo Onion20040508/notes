@@ -218,7 +218,7 @@ The final theorem concerns functions with zeros that are not all isolated. It wa
 >
 > **(b)** Suppose the poles were infinite in number, with an accumulation point $z_0 \in R$. If $f$ were analytic at $z_0$, it would be analytic in a whole neighborhood of $z_0$, which then could contain no pole. If $z_0$ were a pole, it would be an isolated singular point, with a deleted neighborhood containing no other singular point. Either way some neighborhood of $z_0$ contains no pole other than $z_0$, a contradiction. Hence the poles are finite in number.
 >
-> (These finiteness statements are what make the residue theorem and the argument principle ([[§93 Argument Principle#^thm-93-4|Theorem §93.4]]) applicable to such functions.)
+> (These finiteness statements are what make the residue theorem ([[§76 Cauchy's Residue Theorem#^thm-76-1|Theorem §76.1]]) and the argument principle ([[§93 Argument Principle#^thm-93-4|Theorem §93.4]]) applicable to such functions.)
 >
 > *B&C: Sec. 83, Exercises 11 and 12*
 

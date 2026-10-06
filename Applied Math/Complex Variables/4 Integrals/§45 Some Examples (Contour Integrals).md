@@ -136,7 +136,7 @@ If $f(z)$ is given as $u(x, y) + iv(x, y)$, it is sometimes convenient to use on
 > I_1 - I_2 = \frac{-1 + i}{2} .
 > $$
 >
-> [[§50 Cauchy–Goursat Theorem#^ex-50-3|Example §50.3]] recovers this number from Green's theorem.
+> [[§50 Cauchy–Goursat Theorem#^ex-50-3|Example §50.3]] recovers this number from Green's theorem ([[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]]).
 >
 > *B&C: Sec. 45, Example 3*
 

@@ -19,7 +19,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic properties [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-48|6.48]]; direct sum [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|6.49]]. Compare the annihilator $U^0\subseteq V'$ ([[§12 Duality#^ladr-3-121|3.121]]): Riesz ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-58|6.58]]) identifies $U^\perp$ with $U^0$.
-> - Same definition for arbitrary subsets of a Hilbert space: [[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]; the complement is always closed, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]].
+> - Same definition for arbitrary subsets of a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]): [[§22 Projection and Orthogonal Decomposition#^def-22-1|556 Def. §22.1]]; the complement is always closed, [[§22 Projection and Orthogonal Decomposition#^prop-22-3|556 Prop. §22.3]].
 > - In ℝ³: the plane through $\mathbf r_0$ with normal $\mathbf n$ is $\mathbf r_0 + \operatorname{span}(\mathbf n)^\perp$, [[§84 Equations of Lines and Planes#^thm-84-5|Calc Thm. §84.5]] (with worked examples).
 > - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-6|235 Def. §40.6]] (the orthogonal complement of a subspace of $\mathbb R^n$).
 
@@ -203,7 +203,7 @@ tags: [linear-algebra]
 ^ladr-6-61
 
 > [!remark] Remark: Recipe
-> Best approximation from $U$ = orthogonal projection, computed by [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i) after Gram–Schmidt. This is least squares, Fourier truncation, and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-63|6.63]].
+> Best approximation from $U$ = orthogonal projection, computed by [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](i) after Gram–Schmidt ([[Gram–Schmidt procedure|6.32]]). This is least squares, Fourier truncation, and [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-63|6.63]].
 
 > [!proof]+ Proof
 > $v-P_Uv\in U^\perp$ ([[§21 Orthogonal Complements and Minimization Problems#^ladr-6-57|6.57]](f)) and $P_Uv-u\in U$, so by [[§19 Inner Products and Norms#^ladr-6-12|6.12]]
@@ -233,7 +233,7 @@ tags: [linear-algebra]
 > $$
 > u(x)=0.987862\,x-0.155271\,x^3+0.00564312\,x^5 .
 > $$
-> Compare the Taylor polynomial $x-\frac{x^3}{6}+\frac{x^5}{120}=x-0.166667\,x^3+0.008333\,x^5$: Taylor is perfect near $0$ and poor near $\pm\pi$, while $u$ spreads the error over the whole interval. On this scale $u$ is indistinguishable from $\sin$; Taylor visibly misses at the ends:
+> Compare the Taylor polynomial ([[§78 Taylor and Maclaurin Series#^def-78-2|Calc Def. §78.2]]) $x-\frac{x^3}{6}+\frac{x^5}{120}=x-0.166667\,x^3+0.008333\,x^5$: Taylor is perfect near $0$ and poor near $\pm\pi$, while $u$ spreads the error over the whole interval. On this scale $u$ is indistinguishable from $\sin$; Taylor visibly misses at the ends:
 >
 > ![[ladr-6.63-sine.svg|460]]
 

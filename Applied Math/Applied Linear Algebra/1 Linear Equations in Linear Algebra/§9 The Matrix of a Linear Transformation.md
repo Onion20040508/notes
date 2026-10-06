@@ -191,7 +191,7 @@ The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the r
 ^thm-9-2
 
 > [!proof]+ Proof
-> To prove "$P$ if and only if $Q$", Lay proves (1) if $P$ then $Q$, and (2a) if not $P$ then not $Q$ (the contrapositive of "if $Q$ then $P$").
+> To prove "$P$ if and only if $Q$", Lay proves (1) if $P$ then $Q$, and (2a) if not $P$ then not $Q$ (the [[Contrapositive, Converse and Inverse|contrapositive]] of "if $Q$ then $P$").
 >
 > **(1)** Since $T$ is linear, $T(\mathbf{0}) = \mathbf{0}$ ([[§8 Introduction to Linear Transformations#^prop-8-3|Proposition §8.3]]). If $T$ is one-to-one, then $T(\mathbf{x}) = \mathbf{0}$ has at most one solution, hence only the trivial solution.
 >

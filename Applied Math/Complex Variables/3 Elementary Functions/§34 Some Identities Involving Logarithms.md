@@ -87,7 +87,7 @@ The laws $\log(z_1z_2) = \log z_1 + \log z_2$ and $\log(z_1/z_2) = \log z_1 - \l
 >
 > **Equation (1) holds.** Specify $\log(z_1z_2) = 0$ and $\log z_1 = \pi i$. Then (1) is satisfied when the value $\log z_2 = -\pi i$ is chosen: $0 = \pi i + (-\pi i)$.
 >
-> **Principal values fail.** If principal values are used in all three terms,
+> **Principal values fail.** If principal values ([[§31 The Logarithmic Function#^def-31-2|Definition §31.2]]) are used in all three terms,
 >
 > $$
 > \operatorname{Log}(z_1z_2) = \operatorname{Log} 1 = 0 \qquad\text{and}\qquad \operatorname{Log} z_1 + \operatorname{Log} z_2 = \pi i + \pi i = 2\pi i .

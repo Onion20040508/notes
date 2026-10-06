@@ -115,7 +115,7 @@ This section proves the extended Cauchy integral formula of [[§55 An Extension 
 > \frac{f'(z + \Delta z) - f'(z)}{\Delta z} - \frac{1}{\pi i}\int_C \frac{f(s)\,ds}{(s - z)^3} = \frac{1}{2\pi i}\int_C \frac{3(s - z)\Delta z - 2(\Delta z)^2}{(s - z - \Delta z)^2(s - z)^3}f(s)\,ds .
 > $$
 >
-> *(b)* Let $D$ be the largest distance from $z$ to points of $C$. For $s$ on $C$ and $0 < |\Delta z| < d$, the triangle inequality gives $|3(s - z)\Delta z - 2(\Delta z)^2| \le 3D|\Delta z| + 2|\Delta z|^2$, while as in Step 1 $|s - z - \Delta z|^2|s - z|^3 \ge (d - |\Delta z|)^2d^3$. So the integral on the right is bounded in modulus by
+> *(b)* Let $D$ be the largest distance from $z$ to points of $C$. For $s$ on $C$ and $0 < |\Delta z| < d$, the triangle inequality ([[§5 Triangle Inequality#^thm-5-1|Theorem §5.1]]) gives $|3(s - z)\Delta z - 2(\Delta z)^2| \le 3D|\Delta z| + 2|\Delta z|^2$, while as in Step 1 $|s - z - \Delta z|^2|s - z|^3 \ge (d - |\Delta z|)^2d^3$. So the integral on the right is bounded in modulus by
 >
 > $$
 > \frac{\big(3D|\Delta z| + 2|\Delta z|^2\big)M}{(d - |\Delta z|)^2d^3}\,L .
@@ -200,7 +200,7 @@ The proof of Step 1 used about $f$ on $C$ only that it is continuous there. So a
 >
 > then $g(2) = 8\pi i$. What is the value of $g(z)$ when $|z| > 3$?
 >
-> For $|z| < 3$, equation (6) of [[§55 An Extension of the Cauchy Integral Formula|§55]] with the entire function $f(s) = 2s^2 - s - 2$ gives $g(z) = 2\pi i\,(2z^2 - z - 2)$; in particular $g(2) = 2\pi i\,(8 - 2 - 2) = 8\pi i$. For $|z| > 3$, the integrand is analytic in $s$ inside and on $C$ (its only singular point $s = z$ is outside), so $g(z) = 0$ by the Cauchy–Goursat theorem. So the same integral defines the polynomial $2\pi i(2z^2 - z - 2)$ inside $C$ and the zero function outside; both are analytic, as Example §56.1 says they must be. (Quadrature: $g(2) = 25.1327\ldots i = 8\pi i$, $g(4 + i) = g(-3.5) = 0$.)
+> For $|z| < 3$, equation (6) of [[§55 An Extension of the Cauchy Integral Formula|§55]] with the entire function $f(s) = 2s^2 - s - 2$ gives $g(z) = 2\pi i\,(2z^2 - z - 2)$; in particular $g(2) = 2\pi i\,(8 - 2 - 2) = 8\pi i$. For $|z| > 3$, the integrand is analytic in $s$ inside and on $C$ (its only singular point $s = z$ is outside), so $g(z) = 0$ by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]). So the same integral defines the polynomial $2\pi i(2z^2 - z - 2)$ inside $C$ and the zero function outside; both are analytic, as Example §56.1 says they must be. (Quadrature: $g(2) = 25.1327\ldots i = 8\pi i$, $g(4 + i) = g(-3.5) = 0$.)
 >
 > **(b)** Let $C$ be the positively oriented unit circle and $f(s) = \bar s$ on $C$, a continuous function. Then the integral of Cauchy type of Example §56.1 is identically zero inside $C$. Indeed $\bar s = 1/s$ on $|s| = 1$, so for $|z| < 1$, $z \ne 0$, by partial fractions,
 >

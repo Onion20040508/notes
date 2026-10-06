@@ -40,7 +40,7 @@ Let $\mathbf{A}$ be real. Solutions $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ of $\m
 > \mathbf{x}^{(1)}(t) = \begin{pmatrix} 1 \\ i \end{pmatrix}e^{(-1/2 + i)t}, \qquad \mathbf{x}^{(2)}(t) = \begin{pmatrix} 1 \\ -i \end{pmatrix}e^{(-1/2 - i)t} . \qquad (9)
 > $$
 >
-> **Real solutions.** By [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-5|Theorem §30.5]], the real and imaginary parts of $\mathbf{x}^{(1)}$ are solutions. Using Euler's formula $e^{it} = \cos t + i\sin t$,
+> **Real solutions.** By [[§30 Basic Theory of Systems of First-Order Linear Equations#^thm-30-5|Theorem §30.5]], the real and imaginary parts of $\mathbf{x}^{(1)}$ are solutions. Using Euler's formula ([[§15 Complex Roots of the Characteristic Equation#^def-15-1|Definition §15.1]]) $e^{it} = \cos t + i\sin t$,
 >
 > $$
 > \mathbf{x}^{(1)}(t) = \begin{pmatrix} 1 \\ i \end{pmatrix}e^{-t/2}(\cos t + i\sin t) = \begin{pmatrix} e^{-t/2}\cos t \\ -e^{-t/2}\sin t \end{pmatrix} + i\begin{pmatrix} e^{-t/2}\sin t \\ e^{-t/2}\cos t \end{pmatrix}, \qquad (10)

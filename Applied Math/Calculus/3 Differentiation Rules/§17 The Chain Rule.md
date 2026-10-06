@@ -118,8 +118,9 @@ The proof rests on a reformulation of differentiability.
 *Uses:* [[§17 The Chain Rule#^lem-17-1|§17.1]], [[§10 Continuity#^thm-10-7|§10.7]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 4)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$ (in 451 the inner function is $f$, so this is the point $b = g(a)$ here), which is $f'(b) + \varepsilon_2$ here.
+> - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$ (in 451 the inner function is $f$, so this is the point $b = g(a)$ here), which is $f'(b) + \varepsilon_2$ in the proof of Theorem §17.2.
 > - Several variables: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]], and in Calculus [[§94 The Chain Rule#^thm-94-3|Theorem §94.3]] (Stewart 14.5).
+> - Complex-variables version: [[§20 Rules for Differentiation#^thm-20-4|342 Thm. §20.4]] (the same formula for complex derivatives).
 
 > [!remark] Remark: Reading the Leibniz Form
 > Formula 2 is easy to remember: think of $dy/du$ and $du/dx$ as quotients and "cancel" $du$. But $du$ has not been defined, and $du/dx$ is not an actual quotient. Also, $dy/dx$ and $dy/du$ are different derivatives of the same quantity $y$: in $dy/dx$, $y$ is a function of $x$ ($y = \sqrt{x^2 + 1}$ in Example §17.1); in $dy/du$, $y$ is a function of $u$ ($y = \sqrt{u}$). So

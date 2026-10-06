@@ -403,7 +403,7 @@ $$
 \frac{d}{dt} \iint_D \rho \, dx \, dy = \iint_D \rho_t \, dx \, dy.
 $$
 
-This differentiates under the integral sign, which is justified when $\rho_t$ is continuous: on the compact set $\overline{D} \times [t_0 - 1, t_0 + 1]$ it is uniformly continuous, so the difference quotients $(\rho(\cdot, t) - \rho(\cdot, t_0))/(t - t_0)$ converge to $\rho_t(\cdot, t_0)$ uniformly on $\overline{D}$ (by the Mean Value Theorem).
+This differentiates under the integral sign, which is justified when $\rho_t$ is continuous: on the compact set $\overline{D} \times [t_0 - 1, t_0 + 1]$ it is [[§15 Compact Spaces#^rem-15-1|uniformly continuous]], so the difference quotients $(\rho(\cdot, t) - \rho(\cdot, t_0))/(t - t_0)$ converge to $\rho_t(\cdot, t_0)$ uniformly on $\overline{D}$ (by the [[Mean Value Theorem]]).
 
 If there are no sources or sinks (mass is neither created nor destroyed), then conservation of mass says:
 

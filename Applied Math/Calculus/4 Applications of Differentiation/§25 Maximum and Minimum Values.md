@@ -76,8 +76,8 @@ A function may have many extreme values or none. $\cos x$ takes its (local and a
 *Stewart omits the proof ("it is difficult to prove"). It rests on the completeness of the real numbers and is proved in [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]].*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]], via Bolzano–Weierstrass. Hub: [[Extreme Value Theorem]].
-> - Topological form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and a compact subset of $\mathbb{R}$ is closed and bounded, so it contains its supremum and infimum.
+> - Rigorous treatment: [[§18 Properties of Continuous Functions#^thm-18-1|451 Thm. §18.1]], via [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]]. Hub: [[Extreme Value Theorem]].
+> - Topological form: a continuous image of a compact space is compact, [[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]], and a compact subset of $\mathbb{R}$ is closed and bounded, so it contains its [[§4 The Completeness Axiom#^def-4-3|supremum and infimum]].
 
 > [!remark] Remark: Both Hypotheses Are Needed
 > An extreme value can be attained more than once (as for $\cos x$ on $[0, 4\pi]$). If either hypothesis is dropped, the extreme values may fail to exist (Stewart's Figures 9 and 10 show the two cases).

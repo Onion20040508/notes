@@ -138,7 +138,7 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Multivariable Integration#^thm-15-17|452 Thm. §15.17]] (general Jordan measurable domains, $T$ a $C^1$ bijection with $C^1$ inverse and $J \ne 0$). Hub: [[Change of Variables Formula (multiple integrals)]].
-> - The linear case is where the factor $|\det|$ comes from: a linear map multiplies areas and volumes by $|\det T|$, [[§34 Determinants#^ladr-9-61|LADR 9.61]] and [[§15 Multivariable Integration#^prop-15-19|452 Prop. §15.19]]; for Lebesgue measure $m(T(R)) = |\det T|\,m(R)$ is proved by row operations inside [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]]. Approximation (8) says that $T$ is close to its linearization on a small rectangle.
+> - The linear case is where the factor $|\det|$ comes from: a linear map multiplies areas and volumes by $|\det T|$, [[§34 Determinants#^ladr-9-61|LADR 9.61]] and [[§15 Multivariable Integration#^prop-15-19|452 Prop. §15.19]]; for [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]] $m(T(R)) = |\det T|\,m(R)$ is proved by row operations inside [[§18 Differentiation Theory#^thm-18-22|551 Thm. §18.22]]. Approximation (8) says that $T$ is close to its linearization on a small rectangle.
 > - Matrix version of the linear case: [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-5|235 Thm. §22.5]] and [[§22 Cramer’s Rule, Volume, and Linear Transformations#^thm-22-6|235 Thm. §22.6]] (a linear map with matrix $A$ multiplies every area or volume by $|\det A|$, the constant Jacobian), worked in [[§22 Cramer’s Rule, Volume, and Linear Transformations#^ex-22-5|235 Ex. §22.5]].
 
 > [!example] Example §106.2: Polar Coordinates as a Special Case

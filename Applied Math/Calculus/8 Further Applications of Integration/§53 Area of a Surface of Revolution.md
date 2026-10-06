@@ -114,7 +114,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 >
 > a Riemann sum for $g(x) = 2\pi f(x) \sqrt{1 + [f'(x)]^2}$. As $n \to \infty$ it tends to $\int_a^b g(x)\,dx$, which is the definition.
 >
-> Stewart only says that the approximation "appears to become better". Here is why the total band area has the same limit as (3). Let $M$ be the maximum of $|f'|$ and $K$ the maximum of $\sqrt{1 + [f'(x)]^2}$ on $[a, b]$; both exist because $f'$ is continuous. By the Mean Value Theorem $|f(u) - f(v)| \le M|u - v|$, so $\big|\frac12(y_{i-1} + y_i) - f(x_i^*)\big| \le M \Delta x$. The total band area therefore differs from (3) by at most
+> Stewart only says that the approximation "appears to become better". Here is why the total band area has the same limit as (3). Let $M$ be the maximum of $|f'|$ and $K$ the maximum of $\sqrt{1 + [f'(x)]^2}$ on $[a, b]$; both exist because $f'$ is continuous. By the Mean Value Theorem ([[§26 The Mean Value Theorem#^thm-26-2|Theorem §26.2]]) $|f(u) - f(v)| \le M|u - v|$, so $\big|\frac12(y_{i-1} + y_i) - f(x_i^*)\big| \le M \Delta x$. The total band area therefore differs from (3) by at most
 >
 > $$
 > \sum_{i=1}^n 2\pi \cdot M\Delta x \cdot K\,\Delta x = 2\pi M K (b - a)\,\Delta x \longrightarrow 0 .

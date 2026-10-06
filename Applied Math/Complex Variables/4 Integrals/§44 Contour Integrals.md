@@ -35,7 +35,7 @@ The integral of $f(z)$ along a contour $C$ is defined by pulling it back along a
 ^def-44-1
 
 > [!remark]- Connections
-> - With $f = u + iv$ and $z = x + iy$, (2) splits into two real line integrals with respect to $x$ and $y$, [[§108 Line Integrals#^def-108-4|Calc Def. §108.4]]: $\int_C f\,dz = \int_C u\,dx - v\,dy + i\int_C v\,dx + u\,dy$. This is made precise in [[§50 Cauchy–Goursat Theorem#^prop-50-1|Proposition §50.1]], where it is the bridge to Green's theorem.
+> - With $f = u + iv$ and $z = x + iy$, (2) splits into two real line integrals with respect to $x$ and $y$, [[§108 Line Integrals#^def-108-4|Calc Def. §108.4]]: $\int_C f\,dz = \int_C u\,dx - v\,dy + i\int_C v\,dx + u\,dy$. This is made precise in [[§50 Cauchy–Goursat Theorem#^prop-50-1|Proposition §50.1]], where it is the bridge to Green's theorem, [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]].
 
 The value does not depend on the parametrization used, for the changes of parameter of [[§43 Contours#^def-43-2|§43]].
 

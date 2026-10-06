@@ -159,7 +159,7 @@ Two interpretations: (1) *slopes* — some tangent line is parallel to the chord
 *Uses:* [[§29 The Mean Value Theorem#^cor-29-4|§29.4]], [[§29 The Mean Value Theorem#^cor-29-5|§29.5]]
 
 > [!remark] Remark
-> This identifies the *kernel* of the $k$-th derivative operator: exactly the polynomials of degree $< k$ — a $k$-dimensional space, matching the $k$ constants of integration. It is also the uniqueness half of Taylor's theory (§31): once the remainder is shown to vanish, this proposition is what forces $f$ to *be* its Taylor polynomial.
+> This identifies the *kernel* (null space, [[§8 Null Spaces and Ranges#^ladr-3-11|LADR 3.11]]) of the $k$-th derivative operator: exactly the polynomials of degree $< k$ — a $k$-dimensional space, matching the $k$ constants of integration. It is also the uniqueness half of Taylor's theory (§31): once the remainder is shown to vanish, this proposition is what forces $f$ to *be* its Taylor polynomial.
 
 ^rem-29-1
 

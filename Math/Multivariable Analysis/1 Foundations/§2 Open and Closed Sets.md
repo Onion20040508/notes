@@ -20,6 +20,7 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - The ε-ball of a general metric: [[§11 Metric Topology#^def-11-2|590 Def. §11.2]].
+> - Same definition in 551's review of the topology of ℝⁿ: [[§5 Topology of ℝⁿ#^def-5-1|551 Def. §5.1]].
 > - Computational version: [[§12★ Regions in the Complex Plane#^def-12-1|342 Def. §12.1]] (ε neighborhoods and deleted neighborhoods in the complex plane, the case n = 2).
 
 > [!definition] Definition §2.2: Square Neighborhood

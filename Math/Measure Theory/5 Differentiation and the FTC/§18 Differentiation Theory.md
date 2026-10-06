@@ -1127,7 +1127,7 @@ The other direction of the FTC asks: if we *start* with an integrable function a
 > m\!\left(A \setminus \bigcup_{j=1}^{p} [x_j, x_j + h_j]\right) < \delta.
 > $$
 >
-> Since $m([a,c] \setminus A) = 0$, this gives $m\!\left([a, c] \setminus \bigcup_{j=1}^{p} [x_j, x_j + h_j]\right) < \delta$.
+> Since $m([a,c] \setminus A) = 0$, this gives $m\!\left([a, c] \setminus \bigcup_{j=1}^{p} [x_j, x_j + h_j]\right) < \delta$. It suffices to treat $\delta < c - a$ (gaps that work for a smaller $\delta$ also work for a larger one); then $m(A) = c - a > \delta$ forces $p \geq 1$.
 >
 > The intervals $[x_j, x_j + h_j] \subseteq (a,c)$ are disjoint, so $\sum h_j \leq c - a$. Ordering them as $a < x_1 < x_1 + h_1 < x_2 < \cdots < x_p + h_p < c$, the “gaps” between them (including the initial and final gaps) are the intervals $(u_i, v_i)$, $i = 0, \ldots, p$, with
 >

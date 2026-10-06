@@ -252,7 +252,8 @@ tags: [linear-algebra]
 ^ladr-7-109
 
 > [!remark]- Connections
-> - Riemann sums in [[Single Variable Analysis]] are the one-dimensional version; Lebesgue measure makes this precise.
+> - Riemann sums in [[Single Variable Analysis]] ([[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]) are the one-dimensional version; Lebesgue measure makes this precise.
+> - Rigorous treatment: approximating a plane region from inside and outside by grids of squares gives its Jordan content, [[§15 Multivariable Integration#^def-15-4|452 Def. §15.4]]; Lebesgue outer measure on ℝⁿ takes the infimum over countable coverings by boxes, [[§9 Lebesgue Outer Measure#^def-9-4|551 Def. §9.4]], and Lebesgue measure is its restriction to measurable sets, [[§10 Lebesgue Measurable Sets#^def-10-5|551 Def. §10.5]].
 
 > [!example] Example 7.110: Volume change by a linear map (p. 292)
 > $Tv=2\langle v,e_1\rangle e_1+\langle v,e_2\rangle e_2$ on $\R^2$ stretches by $2$ along $e_1$. Boxes aligned with $e_1,e_2$ go to boxes of twice the width, so every approximating box doubles in area, and so does the ball: $T(B)$ has area $2\pi$. The general statement is [[§27 Consequences of Singular Value Decomposition#^ladr-7-111|7.111]].
@@ -273,5 +274,5 @@ tags: [linear-algebra]
 *Uses:* [[§27 Consequences of Singular Value Decomposition#^ladr-7-107|7.107]]
 
 > [!remark]- Connections
-> - $s_1\cdots s_n=|\det T|$ ([[§34 Determinants#^ladr-9-60|∣det T∣ = product of singular values of T]]): the Jacobian factor in the change-of-variables formula.
+> - $s_1\cdots s_n=|\det T|$ ([[§34 Determinants#^ladr-9-60|∣det T∣ = product of singular values of T]]): the Jacobian factor in the change-of-variables formula, [[Change of Variables Formula (multiple integrals)|452 Thm. §15.17]]. The linear case, volume scales by $|\det T|$, is proved for Jordan measurable sets in [[§15 Multivariable Integration#^prop-15-19|452 Prop. §15.19]].
 

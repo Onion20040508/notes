@@ -140,7 +140,7 @@ The essential singular point of $\sin(1/z)$ at the origin, with residue $1$, is 
 > c_k = \frac{1}{2\pi i}\int_C\frac{f(z)}{z^{k+1}}\,dz \qquad (k \in \mathbb{Z}) .
 > $$
 >
-> For $k = -n - 1$ with $n \ge 0$, that is, for every $k \le -1$, this is $c_{-n-1} = \frac{1}{2\pi i}\int_C z^nf(z)\,dz = 0$. So every coefficient of a negative power vanishes: the principal part is zero and $0$ is a removable singular point. Conversely, at a removable singular point all these integrals are $0$ by the Cauchy–Goursat theorem, once $f$ is made analytic at $0$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]).
+> For $k = -n - 1$ with $n \ge 0$, that is, for every $k \le -1$, this is $c_{-n-1} = \frac{1}{2\pi i}\int_C z^nf(z)\,dz = 0$. So every coefficient of a negative power vanishes: the principal part is zero and $0$ is a removable singular point. Conversely, at a removable singular point all these integrals are $0$ by the Cauchy–Goursat theorem ([[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Theorem §51.3]]), once $f$ is made analytic at $0$ ([[§78 The Three Types of Isolated Singular Points#^prop-78-1|Proposition §78.1]]).
 >
 > *Source: 342 practice final (Spring 2005), Q8(a)*
 

@@ -49,7 +49,7 @@ or vector equation $\mathbf{r}(t) = x(t)\,\mathbf{i} + y(t)\,\mathbf{j}$, and as
 
 ^thm-108-1
 
-*Stewart only indicates the proof ("a similar type of argument" to the arc length formula, [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]); the derivation with the Mean Value Theorem and uniform continuity is in [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
+*Stewart only indicates the proof ("a similar type of argument" to the arc length formula, [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]); the derivation with the Mean Value Theorem and [[§19 Uniform Continuity#^def-19-1|uniform continuity]] is in [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]].*
 
 > [!remark]- Connections
 > - 452 takes Formula 3 as the definition of the scalar line integral and derives it from the Riemann sums: [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]]. One dimension up it becomes the scalar surface integral [[§18 Surface Integrals#^def-18-5|452 Def. §18.5]] ([[§113 Surface Integrals#^thm-113-1|Theorem §113.1]] here).

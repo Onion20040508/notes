@@ -90,7 +90,7 @@ The tests so far apply only to series with positive terms. This section handles 
 *Partial sums of the alternating harmonic series $1 - \frac12 + \frac13 - \cdots$. The odd partial sums (red) decrease and the even ones (green) increase, both towards $s = \ln 2 \approx 0.693$. The sum always lies between two consecutive partial sums, so the error $|s - s_n|$ is less than the next step $b_{n+1}$ (orange, for $n = 8$): this is Theorem §73.2.*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the Cauchy criterion via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of Theorem §73.2.
+> - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the [[§14 Series#^def-14-3|Cauchy criterion]] via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of Theorem §73.2.
 
 > [!example] Example §73.1: Checking the Two Conditions
 > **(a)** The **alternating harmonic series** $\displaystyle 1 - \frac12 + \frac13 - \frac14 + \cdots = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$ satisfies
@@ -257,7 +257,8 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 *Uses:* [[§72 The Comparison Tests#^thm-72-1|§72.1]], [[§70 Series#^thm-70-6|§70.6]], [[§73 Alternating Series and Absolute Convergence#^def-73-2|Def. §73.2]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§14 Series#^prop-14-6|451 Prop. §14.6]] (via the Cauchy criterion), with [[§14 Series#^def-14-4|451 Def. §14.4]].
+> - Rigorous treatment: [[§14 Series#^prop-14-6|451 Prop. §14.6]] (via the [[§14 Series#^def-14-3|Cauchy criterion]]), with [[§14 Series#^def-14-4|451 Def. §14.4]].
+> - Complex-variables version: [[§61 Convergence of Series#^cor-61-3|342 Cor. §61.3]] (the same statement for series of complex numbers).
 
 Absolute convergence is a stronger type of convergence. An absolutely convergent series converges whatever the signs of its terms; the alternating harmonic series would diverge if all its negative terms were made positive. This makes Theorem §73.3 useful when the signs change irregularly.
 

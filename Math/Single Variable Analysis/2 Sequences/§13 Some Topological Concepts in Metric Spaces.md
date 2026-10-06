@@ -31,6 +31,7 @@ When we defined convergence of sequences of real numbers, the crucial thing was 
 
 > [!remark]- Connections
 > - In 590 a metric generates a topology: [[§11 Metric Topology#^def-11-1|590 Def. §11.1]] and [[§11 Metric Topology#^def-11-3|590 Def. §11.3]].
+> - Same definition in 556: [[§10 Normed Linear Spaces#^def-10-3|556 Def. §10.3]], where every normed space is a metric space.
 
 > [!example] Example §13.1: The Real Line
 > $X = \mathbb{R}$ with $d(a,b) = |a - b|$: all three conditions were verified in §3.
@@ -145,6 +146,9 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^def-13-3
 
+> [!remark]- Connections
+> - Same definition in 556, where complete normed spaces are Banach spaces: [[§11 Completeness#^def-11-1|556 Def. §11.1]], [[§11 Completeness#^def-11-2|556 Def. §11.2]].
+
 > [!example] Example §13.5: Completeness of the Real Line
 > $(\mathbb{R}, |\cdot|)$ is a complete metric space — this is exactly what we proved in §10 (Cauchy $\Rightarrow$ convergent), and it is equivalent to the [[Completeness Axiom|completeness axiom]] of $\mathbb{R}$.
 
@@ -195,6 +199,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 > [!remark]- Connections
 > - Topological counterparts: closed bounded subsets of ℝⁿ are compact, [[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]] (Heine–Borel), and compact equals sequentially compact for metric spaces, [[§16 Limit Point Compactness#^thm-16-2|590 Thm. §16.2]].
+> - Same theorem in 551: [[§5 Topology of ℝⁿ#^thm-5-1|551 Thm. §5.1]].
 
 ## Open and Closed Sets
 

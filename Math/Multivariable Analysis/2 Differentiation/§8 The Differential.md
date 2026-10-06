@@ -142,7 +142,7 @@ The notation $df = f'(x) \, dx$ is familiar from single-variable calculus, but w
 > d^n f = \left( h \frac{\partial}{\partial x} + k \frac{\partial}{\partial y} \right)^n f,
 > $$
 >
-> where we expand the power using the binomial theorem and then apply the resulting differential operators to $f$.
+> where we expand the power using the [[Binomial Theorem|binomial theorem]] and then apply the resulting differential operators to $f$.
 
 ^rem-8-5
 

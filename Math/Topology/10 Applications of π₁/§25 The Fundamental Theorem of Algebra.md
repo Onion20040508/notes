@@ -45,7 +45,7 @@ tags: [topology, math590]
 > F(z, t) = z^n + t(a_{n-1}z^{n-1} + \cdots + a_1 z + a_0).
 > $$
 >
-> We verify $F(z, t) \neq 0$ for all $z \in S^1$, $t \in I$: for $|z| = 1$,
+> We verify $F(z, t) \neq 0$ for all $z \in S^1$, $t \in I$: for $|z| = 1$, the reverse triangle inequality and the triangle inequality for finite sums ([[§5 Triangle Inequality#^cor-5-2|342 Cor. §5.2]], [[§5 Triangle Inequality#^cor-5-3|342 Cor. §5.3]]) give
 >
 > $$
 > |F(z, t)| \geq |z^n| - t(|a_{n-1}||z|^{n-1} + \cdots + |a_0|) \geq 1 - (|a_{n-1}| + \cdots + |a_0|) > 0.
@@ -69,7 +69,7 @@ tags: [topology, math590]
 
 ^pf-25-1
 
-*Uses:* [[Fundamental Group of the Circle|§24.10]], [[§24 Covering Spaces#^thm-24-11|§24.11]], [[Functoriality of π₁|§23.5]], [[§26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[§24 Covering Spaces#^lem-24-12|§24.12]], [[§22 Homotopy of Paths#^def-22-2|Def. §22.2]]
+*Uses:* [[Fundamental Group of the Circle|§24.10]], [[§24 Covering Spaces#^thm-24-11|§24.11]], [[Functoriality of π₁|§23.5]], [[§26 Deformation Retracts and Homotopy Type#^def-26-1|Def. §26.1]], [[§24 Covering Spaces#^lem-24-12|§24.12]], [[§22 Homotopy of Paths#^def-22-2|Def. §22.2]], [[§5 Triangle Inequality#^cor-5-2|342 §5.2]], [[§5 Triangle Inequality#^cor-5-3|342 §5.3]]
 
 ![[m590-25-1.svg]]
 *Step 3 for $p(z) = z^3 + 0.6z$ ($n = 3$, $\sum|a_i| = 0.6$). If $p$ had no root in the blue disk $B^2$, the red loop $h = p|_{S^1}$ would extend over $B^2$ inside $\mathbb{R}^2 \setminus \{0\}$ and so be nullhomotopic. But $F(z,t) = z^3 + t \cdot 0.6z$ (gray: $t = \tfrac12$) slides the blue loop $g(z) = z^3$, which winds three times around $0$, onto $h$ without entering the gray disk $|w| < 1 - \sum|a_i| = 0.4$. So $h \simeq g$ also winds three times around $0$ and is not nullhomotopic, so $p$ must vanish somewhere in $B^2$ (here at $z = 0$).*

@@ -212,7 +212,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 > [!proof]+ Proof
 > *Stewart gives this as a sketch.* As at the beginning of the section, $\nabla f$ is orthogonal to $C$ at $P$: if $\mathbf{r}(t)$ parametrizes $C$ with $\mathbf{r}(t_0) = P$, then $t \mapsto f(\mathbf{r}(t))$ has an extreme value at $t_0$, so $\nabla f(P) \cdot \mathbf{r}'(t_0) = 0$. Also $\nabla g$ is orthogonal to the level surface $g = k$ and $\nabla h$ to $h = c$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]]); since $C$ lies on both, $\nabla g(P)$ and $\nabla h(P)$ are both orthogonal to $\mathbf{r}'(t_0)$. This means that $\nabla f(P)$ lies in the plane determined by $\nabla g(P)$ and $\nabla h(P)$, so $\nabla f(P) = \lambda \nabla g(P) + \mu \nabla h(P)$.
 >
-> (What makes this a sketch: the last step needs $\mathbf{r}'(t_0) \ne \mathbf{0}$, so that the vectors orthogonal to it form a plane, which then must be the plane spanned by the two independent vectors $\nabla g(P)$ and $\nabla h(P)$; and it needs a curve $\mathbf{r}$ through $P$ along $C$ at all. Both come from the Implicit Function Theorem for two equations, which uses that $\nabla g(P)$ and $\nabla h(P)$ are not parallel.)
+> (What makes this a sketch: the last step needs $\mathbf{r}'(t_0) \ne \mathbf{0}$, so that the vectors orthogonal to it form a plane, which then must be the plane spanned by the two independent vectors $\nabla g(P)$ and $\nabla h(P)$; and it needs a curve $\mathbf{r}$ through $P$ along $C$ at all. Both come from the Implicit Function Theorem for two equations ([[§12 The Implicit Function Theorem#^thm-12-2|452 Thm. §12.2]]), which uses that $\nabla g(P)$ and $\nabla h(P)$ are not parallel.)
 
 ^pf-97-2
 

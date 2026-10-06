@@ -334,7 +334,7 @@ Stokes' Theorem supplies the proof, announced in §111 after [[§111 Curl and Di
 >
 > A curve that is not simple can be broken into a number of simple closed curves, and the integrals around these are all $0$. Adding them, $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for any closed curve $C$.
 >
-> (The two steps taken on trust, the existence of the surface and the decomposition into simple curves, are what make this a sketch. More generally the conclusion holds on any simply-connected domain.)
+> (The two steps taken on trust, the existence of the surface and the decomposition into simple curves, are what make this a sketch. More generally the conclusion holds on any simply-connected domain, [[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]].)
 
 ^pf-114-4
 

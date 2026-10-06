@@ -144,6 +144,8 @@ The homogeneous equation is the fundamental one: once it is solved, the nonhomog
 
 > [!remark]- Connections
 > - The same substitution for systems: trying $\mathbf{x} = \mathbf{v}e^{\lambda t}$ in $\mathbf{x}' = A\mathbf{x}$ turns the differential equation into the eigenvalue problem $A\mathbf{v} = \lambda\mathbf{v}$, [[§38 Applications to Differential Equations#^thm-38-2|235 Thm. §38.2]]. In this subject that is [[§31 Homogeneous Linear Systems with Constant Coefficients#^thm-31-1|Theorem §31.1]] (BDP 7.5), and the second-order equation becomes such a system by [[§27 Introduction to Systems of First-Order Linear Equations#^prop-27-1|Proposition §27.1]] (BDP 7.1).
+> - See also: [[§1★ Homogeneous Linear Equations#^def-1-3|341 Def. §1.3]] (Powers' characteristic equation $m^2 + km + p = 0$, stated with this theorem: $u = e^{mt}$ solves the equation exactly when $m$ is a root).
+> - The discrete analogue: [[§30 Applications to Difference Equations#^prop-30-2|235 Prop. §30.2]] (a signal $\{r^k\}$ solves a linear difference equation with constant coefficients exactly when $r$ is a root of its auxiliary equation).
 
 ## Distinct Real Roots
 

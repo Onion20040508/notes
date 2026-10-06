@@ -282,7 +282,7 @@ For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all poin
 
 ^thm-96-3
 
-*Stewart does not prove the Extreme Value Theorem. A closed bounded subset of $\mathbb{R}^2$ is compact ([[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]], Heine–Borel), the continuous image of a compact set is compact ([[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]]), and a compact subset of $\mathbb{R}$ is closed and bounded, so it contains its supremum and infimum.*
+*Stewart does not prove the Extreme Value Theorem. A closed bounded subset of $\mathbb{R}^2$ is compact ([[§15 Compact Spaces#^thm-15-12|590 Thm. §15.12]], Heine–Borel), the continuous image of a compact set is compact ([[§15 Compact Spaces#^thm-15-3|590 Thm. §15.3]]), and a compact subset of $\mathbb{R}$ is closed and bounded, so it contains its [[§4 The Completeness Axiom#^def-4-3|supremum and infimum]].*
 
 > [!remark]- Connections
 > - The one-variable case on $[a, b]$, proved from completeness: [[Extreme Value Theorem]] (451). Hub for the higher-dimensional ingredient: [[Heine–Borel Theorem]].

@@ -43,7 +43,7 @@ tags: [group-theory, math493]
 *Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]], [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1]], [[§1 The Set ℕ of Natural Numbers#^rem-1-3|451 §1 (strong induction)]]
 
 > [!remark]- Connections
-> - Elementary version: [[§23 The Sequence of Prime Numbers#^thm-23-5|250 Thm. §23.5]] (Fundamental Theorem of Arithmetic), with existence in [[§23 The Sequence of Prime Numbers#^prop-23-1|250 Prop. §23.1]].
+> - Elementary version: [[§23 The Sequence of Prime Numbers#^thm-23-5|250 Thm. §23.5]] (Fundamental Theorem of Arithmetic), with existence in [[§23 The Sequence of Prime Numbers#^prop-23-1|250 Prop. §23.1]]; the strong induction used for existence: [[Strong Induction Principle]] (250 Thm. §5.6).
 
 > [!theorem] Theorem §9.3: Chinese Remainder Theorem
 > Let $m, n \geq 1$ with $\gcd(m, n) = 1$. Then the map

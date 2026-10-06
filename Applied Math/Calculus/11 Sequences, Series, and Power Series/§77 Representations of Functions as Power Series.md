@@ -92,7 +92,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 ^thm-77-1
 
-*Stewart does not prove this theorem ("which we won't prove"). For series centered at $0$ (the general case follows with $u = x - a$) it is [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]], proved from uniform convergence on closed subintervals, [[§26 Differentiation and Integration of Power Series#^thm-26-1|451 Thm. §26.1]].*
+*Stewart does not prove this theorem ("which we won't prove"). For series centered at $0$ (the general case follows with $u = x - a$) it is [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]], proved from [[§24 Uniform Convergence#^def-24-2|uniform convergence]] on closed subintervals, [[§26 Differentiation and Integration of Power Series#^thm-26-1|451 Thm. §26.1]].*
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]]; continuity of the sum, [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]]. Why this needs care for general series of functions: [[§23 Power Series#^ex-23-10|451 Ex. §23.10]] (derivatives escape the limit).

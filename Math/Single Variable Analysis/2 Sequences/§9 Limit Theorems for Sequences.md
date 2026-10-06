@@ -38,8 +38,11 @@ We want to simplify life — not using $(\varepsilon, N)$ every time. The theore
 ![[m451-9-1.svg]]
 *Convergent implies bounded: from $N$ on (with $\varepsilon = 1$) the terms stay in the band $s \pm 1$ (blue), so $|s_n| < |s| + 1$; the finitely many early terms (gray) are handled by the maximum. Here the early term $|s_2|$ (red) is the largest, so it sets $M$, and every term lies between $-M$ and $M$.*
 
+> [!remark]- Connections
+> - Computational version: [[§60 Convergence of Sequences#^prop-60-4|342 Prop. §60.4]] (the same statement for complex sequences).
+
 > [!example] Example §9.1: $\sqrt{n}$ Diverges
-> The sequence $s_n = \sqrt{n}$ is not convergent. Why? It is unbounded: given any $M$, the [[Archimedean Property|Archimedean property]] provides $n > M^2$, and then $\sqrt{n} > M$. By the contrapositive of the theorem, an unbounded sequence cannot converge.
+> The sequence $s_n = \sqrt{n}$ is not convergent. Why? It is unbounded: given any $M$, the [[Archimedean Property|Archimedean property]] provides $n > M^2$, and then $\sqrt{n} > M$. By the [[Contrapositive, Converse and Inverse|contrapositive]] of the theorem, an unbounded sequence cannot converge.
 
 ^ex-9-1
 
@@ -218,7 +221,7 @@ To apply the theorems, we need a stock of basic limits.
 ^ex-9-3
 
 > [!remark] Remark
-> Strictly speaking, the logarithm has not yet been rigorously defined in this course — like the decimal expansion in §4, it is borrowed from the future. A proof from what we have: write $\tfrac1a = 1 + b$ with $b > 0$. By the binomial formula (below), $(1+b)^n \geq 1 + nb > nb$, so
+> Strictly speaking, the logarithm has not yet been rigorously defined in this course — like the decimal expansion in §4, it is borrowed from the future. A proof from what we have: write $\tfrac1a = 1 + b$ with $b > 0$. By the binomial formula ([[Binomial Theorem|250 Thm. §12.10]], recalled in [[§9 Limit Theorems for Sequences#^ex-9-4|Example §9.4]]), $(1+b)^n \geq 1 + nb > nb$, so
 >
 > $$
 > 0 < a^n = \frac{1}{(1+b)^n} < \frac{1}{nb} \longrightarrow 0,
@@ -235,7 +238,7 @@ To apply the theorems, we need a stock of basic limits.
 > 1 + s_n = n^{1/n}, \qquad \text{so raising to the power } n: \qquad (1 + s_n)^n = n.
 > $$
 >
-> Now recall the **binomial formula**:
+> Now recall the **binomial formula** ([[Binomial Theorem|250 Thm. §12.10]]):
 >
 > $$
 > (a+b)^n = a^n + n a^{n-1} b + \frac12 n(n-1) a^{n-2} b^2 + \cdots + n a b^{n-1} + b^n.
@@ -324,7 +327,7 @@ To apply the theorems, we need a stock of basic limits.
 
 ## Divergence to $\pm\infty$
 
-Earlier we introduced the extended real numbers $[-\infty, +\infty]$ (§5). We now define the related notions $x_n \to +\infty$ and $x_n \to -\infty$. Compare two examples: $s_n = n$ and $t_n = (-1)^n n$. Both are divergent (both are unbounded — [[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]). But there is a difference: $s_n$ still has *some* convergence behavior — it goes steadily up — while $t_n$ jumps between $\pm\infty$ directions.
+Earlier we introduced the extended real numbers $[-\infty, +\infty]$ ([[§5 The Symbols +∞, −∞|§5]]). We now define the related notions $x_n \to +\infty$ and $x_n \to -\infty$. Compare two examples: $s_n = n$ and $t_n = (-1)^n n$. Both are divergent (both are unbounded — [[§9 Limit Theorems for Sequences#^thm-9-1|Theorem §9.1]]). But there is a difference: $s_n$ still has *some* convergence behavior — it goes steadily up — while $t_n$ jumps between $\pm\infty$ directions.
 
 > [!definition] Definition §9.1: Divergence to Infinity
 > We say $s_n$ **diverges to $+\infty$**, written $s_n \to +\infty$ or $\lim_{n\to\infty} s_n = +\infty$, if for any positive number $M$ (usually large), there exists $N$ such that for all $n > N$,

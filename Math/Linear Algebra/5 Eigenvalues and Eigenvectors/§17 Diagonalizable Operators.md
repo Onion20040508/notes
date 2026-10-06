@@ -139,7 +139,7 @@ tags: [linear-algebra]
 > $$
 > T^{100}(0,0,1)=\tfrac16\big(2^{100}-2\cdot5^{100}+8^{100},\ 6\cdot8^{100}-6\cdot5^{100},\ 6\cdot8^{100}\big).
 > $$
-> (Checked with exponent $3$ in place of $100$.) The same idea gives a closed formula for the Fibonacci numbers.
+> (Checked with exponent $3$ in place of $100$.) The same idea gives a closed formula for the Fibonacci numbers ([[§5 The Induction Principle#^def-5-5|250 Def. §5.5]]), the Binet formula, proved by induction in [[§5 The Induction Principle#^prop-5-8|250 Prop. §5.8]].
 
 ^ladr-5-59
 

@@ -294,7 +294,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 ^cor-70-5
 
 > [!proof]+ Proof
-> This is the contrapositive of Theorem §70.4: if the series is not divergent, then it is convergent, and so $\lim_{n \to \infty} a_n = 0$.
+> This is the [[Contrapositive, Converse and Inverse|contrapositive]] of Theorem §70.4: if the series is not divergent, then it is convergent, and so $\lim_{n \to \infty} a_n = 0$.
 
 ^pf-70-5
 

@@ -161,7 +161,7 @@ In general a sequence is neither increasing nor decreasing, so the theorem above
 > \overline{s}_N = \sup \{ s_n \mid n \geq N \}, \qquad \underline{s}_N = \inf \{ s_n \mid n \geq N \}.
 > $$
 >
-> If $(s_n)$ is bounded, these are finite numbers; otherwise we use the values $\pm\infty$ — another place where the extended real numbers are convenient.
+> If $(s_n)$ is bounded, these are finite numbers; otherwise we use the values $\pm\infty$ — another place where the extended real numbers ([[§5 The Symbols +∞, −∞|§5]]) are convenient.
 
 ^def-10-2
 
@@ -274,6 +274,9 @@ The concepts above give another way to prove convergence, but they still involve
 > Compare with the $(\varepsilon, N)$ definition of the limit: instead of comparing $s_n$ with a limit $s$, we compare the terms *with each other*. The important point: the condition is purely in terms of $(s_n)$.
 
 ^def-10-4
+
+> [!remark]- Connections
+> - The same condition with a norm in place of the absolute value: [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|551 Def. §19.3]]; in a metric space, [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]].
 
 > [!theorem] Theorem §10.7: Convergent Implies Cauchy
 > Every convergent sequence is a Cauchy sequence.

@@ -128,13 +128,14 @@ tags: [linear-algebra]
 > - Algebra: [[§12 Duality#^ladr-3-120|Algebraic properties of dual maps]]. Null space and range: [[§12 Duality#^ladr-3-128|The null space of T′]], [[§12 Duality#^ladr-3-130|The range of T′]]. Matrix is the transpose: [[§12 Duality#^ladr-3-132|Matrix of T′ (LADR 3.132)]].
 > - Not the adjoint $T^*$ of Chapter 7 ([[§22 Self-Adjoint and Normal Operators#^ladr-7-1|Adjoint, T∗]]), although both are represented by (conjugate) transposes.
 > - Same definition in 591, written with a star and called the transpose: [[§20 Linear Algebra Toolkit#^def-20-3|591 Def. §20.3]], with its properties in [[§20 Linear Algebra Toolkit#^prop-20-4|591 Prop. §20.4]].
+> - On a manifold, the dual map of the pushforward is the pullback of covectors: [[§30 The Cotangent Space#^def-30-5|591 Def. §30.5]].
 
 > [!example] Example 3.119: Dual map of the differentiation linear map (p. 108)
 > $D:\Poly(\R)\to\Poly(\R)$, $Dp=p'$. The dual map $D'$ pulls a functional back by precomposing with $D$:
 > - if $\varphi(p)=p(3)$, then $\big(D'(\varphi)\big)(p)=\varphi(p')=p'(3)$;
 > - if $\varphi(p)=\int_0^1p$, then $\big(D'(\varphi)\big)(p)=\int_0^1p'=p(1)-p(0)$.
 >
-> The second item is the fundamental theorem of calculus in the language of duality. Directions: $T$ goes $V\to W$ but $T'$ goes $W'\to V'$:
+> The second item is the [[Fundamental Theorem of Calculus|fundamental theorem of calculus]] in the language of duality. Directions: $T$ goes $V\to W$ but $T'$ goes $W'\to V'$:
 >
 > ![[ladr-3.119-dual-map.svg|420]]
 

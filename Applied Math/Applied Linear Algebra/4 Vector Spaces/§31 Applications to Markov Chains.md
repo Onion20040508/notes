@@ -206,7 +206,7 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 > P\mathbf{a}_N - \mathbf{a}_N = \frac{1}{N}\big(P^N\mathbf{x}_0 - \mathbf{x}_0\big) ,
 > $$
 >
-> and the entries of probability vectors lie in $[0, 1]$, so every entry of $P\mathbf{a}_N - \mathbf{a}_N$ has absolute value at most $1/N$. The probability vectors form a bounded set in $\mathbb{R}^n$, so by the Bolzano–Weierstrass theorem some subsequence $\mathbf{a}_{N_j}$ converges to a vector $\mathbf{q}$. Limits preserve "entries $\ge 0$" and "entries add up to $1$", so $\mathbf{q}$ is a probability vector, and since $\mathbf{x} \mapsto P\mathbf{x} - \mathbf{x}$ is linear, hence continuous,
+> and the entries of probability vectors lie in $[0, 1]$, so every entry of $P\mathbf{a}_N - \mathbf{a}_N$ has absolute value at most $1/N$. The probability vectors form a bounded set in $\mathbb{R}^n$, so by the Bolzano–Weierstrass theorem ([[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 Thm. §13.3]]) some subsequence $\mathbf{a}_{N_j}$ converges to a vector $\mathbf{q}$. Limits preserve "entries $\ge 0$" and "entries add up to $1$", so $\mathbf{q}$ is a probability vector, and since $\mathbf{x} \mapsto P\mathbf{x} - \mathbf{x}$ is linear, hence continuous,
 >
 > $$
 > P\mathbf{q} - \mathbf{q} = \lim_{j \to \infty} \big(P\mathbf{a}_{N_j} - \mathbf{a}_{N_j}\big) = \mathbf{0} .

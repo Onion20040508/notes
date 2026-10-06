@@ -282,7 +282,7 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 ^thm-21-6
 
 > [!proof]+ Proof
-> By induction on $n$ (the Principle of Mathematical Induction: if $P(1)$ holds and $P(k)$ implies $P(k+1)$ for each $k$, then $P(n)$ holds for all $n \ge 1$). The theorem is obvious for $n = 1$. Suppose it is true for $k \times k$ determinants and let $n = k + 1$. The entry $a_{1j}$ of $A$ sits in position $(j, 1)$ of $A^T$, and deleting row $j$ and column $1$ of $A^T$ gives $(A_{1j})^T$. So the cofactor of $a_{1j}$ in $A^T$ is $(-1)^{j+1}\det (A_{1j})^T = (-1)^{1+j}\det A_{1j}$, the cofactor of $a_{1j}$ in $A$, by the induction hypothesis applied to the $k \times k$ matrix $A_{1j}$. Hence the cofactor expansion of $\det A$ across the first *row* equals the cofactor expansion of $\det A^T$ down the first *column*, and by [[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]] these are $\det A$ and $\det A^T$. The theorem is true for $n = 1$, and its truth for one value of $n$ implies its truth for the next, so it is true for all $n \ge 1$.
+> By induction on $n$ (the Principle of Mathematical Induction, [[§5 The Induction Principle#^def-5-1|250 Def. §5.1]]: if $P(1)$ holds and $P(k)$ implies $P(k+1)$ for each $k$, then $P(n)$ holds for all $n \ge 1$). The theorem is obvious for $n = 1$. Suppose it is true for $k \times k$ determinants and let $n = k + 1$. The entry $a_{1j}$ of $A$ sits in position $(j, 1)$ of $A^T$, and deleting row $j$ and column $1$ of $A^T$ gives $(A_{1j})^T$. So the cofactor of $a_{1j}$ in $A^T$ is $(-1)^{j+1}\det (A_{1j})^T = (-1)^{1+j}\det A_{1j}$, the cofactor of $a_{1j}$ in $A$, by the induction hypothesis applied to the $k \times k$ matrix $A_{1j}$. Hence the cofactor expansion of $\det A$ across the first *row* equals the cofactor expansion of $\det A^T$ down the first *column*, and by [[§20 Introduction to Determinants#^thm-20-1|Theorem §20.1]] these are $\det A$ and $\det A^T$. The theorem is true for $n = 1$, and its truth for one value of $n$ implies its truth for the next, so it is true for all $n \ge 1$.
 
 ^pf-21-6
 
@@ -389,7 +389,7 @@ Column operations are useful for theoretical purposes and for hand computation; 
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Determinants#^ladr-9-49|LADR 9.49]], where multiplicativity is immediate from the definition of $\det T$ as the factor by which $T$ scales alternating $n$-forms; transpose: [[§34 Determinants#^ladr-9-56|LADR 9.56]].
-> - In group language, $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism from the general linear group ([[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]]) to the nonzero reals under multiplication.
+> - In group language, $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]) from the general linear group ([[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]]) to the nonzero reals under multiplication.
 
 > [!example] Example §21.4: Checking the Multiplicative Property
 > Let $A = \begin{bmatrix} 6 & 1 \\ 3 & 2 \end{bmatrix}$ and $B = \begin{bmatrix} 4 & 3 \\ 1 & 2 \end{bmatrix}$. Then

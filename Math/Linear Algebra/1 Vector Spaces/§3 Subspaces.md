@@ -52,6 +52,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - More worked examples: [[§23 Vector Spaces and Subspaces#^ex-23-2|235 Ex. §23.2]] (subspaces, including ℙₙ ⊂ C^∞(ℝ) ⊂ C(ℝ) and convergent sequences) and [[§23 Vector Spaces and Subspaces#^ex-23-3|235 Ex. §23.3]] (sets that fail the test).
+> - Rigorous treatment of the closure facts behind (b)–(e), in [[Single Variable Analysis]]: sums of continuous functions, [[§17 Continuous Functions#^thm-17-3|451 Thm. §17.3]]; sums and constant multiples of derivatives, [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]]; limits of linear combinations of sequences, [[§9 Limit Theorems for Sequences#^cor-9-6|451 Cor. §9.6]] (stated for real sequences; the proof is the same over ℂ).
 
 > [!definition] Definition 1.36: Sum of subspaces
 > For subspaces $V_1,\dots,V_m$ of $V$,
@@ -115,7 +116,7 @@ tags: [linear-algebra]
 > - Test with one vector: [[Condition for a direct sum]]. Two subspaces: [[§3 Subspaces#^ladr-1-46|Direct sum of two subspaces]].
 > - Direct sums organize the rest of the book: [[§17 Diagonalizable Operators#^ladr-5-54|Sum of eigenspaces is a direct sum]], [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-49|Direct sum of a subspace and its orthogonal complement]], [[Generalized eigenspace decomposition]].
 > - Physics: decomposing a state space into sectors (eigenspaces of a conserved quantity) is a direct-sum decomposition.
-> - Same notion in 556: [[§22 Projection and Orthogonal Decomposition#^def-22-2|556 Def. §22.2]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism.
+> - Same notion in 556: [[§22 Projection and Orthogonal Decomposition#^def-22-2|556 Def. §22.2]] (internal direct sum); [[§1 Linear Spaces#^prop-1-3|556 Prop. §1.3]] shows it is the case where the sum map from the external direct sum is an isomorphism. In 591 both are defined together: [[§20 Linear Algebra Toolkit#^def-20-6|591 Def. §20.6]].
 
 > [!example] Example 1.42: A direct sum of two subspaces (p. 21)
 > In $\F^3$ let $U=\{(x,y,0)\}$ and $W=\{(0,0,z)\}$. Then $\F^3=U\oplus W$: every $(x,y,z)=(x,y,0)+(0,0,z)$, and the decomposition is unique since $U\cap W=\{0\}$ ([[§3 Subspaces#^ladr-1-46|1.46]]).

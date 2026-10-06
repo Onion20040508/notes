@@ -246,7 +246,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 > \sum_{n=1}^{\infty} r^n\cos n\theta = \frac{r\cos\theta - r^2}{1 - 2r\cos\theta + r^2}, \qquad \sum_{n=1}^{\infty} r^n\sin n\theta = \frac{r\sin\theta}{1 - 2r\cos\theta + r^2} .
 > $$
 >
-> **Proof.** Put $z = re^{i\theta}$ in (10); then $|z| = r < 1$ and, by de Moivre, $z^n = r^ne^{in\theta}$. Subtracting the $n = 0$ term,
+> **Proof.** Put $z = re^{i\theta}$ in (10); then $|z| = r < 1$ and, by de Moivre ([[§8 Products and Powers in Exponential Form#^cor-8-3|Corollary §8.3]]), $z^n = r^ne^{in\theta}$. Subtracting the $n = 0$ term,
 >
 > $$
 > \sum_{n=1}^{\infty} r^ne^{in\theta} = \frac{1}{1 - z} - 1 = \frac{z}{1 - z} = \frac{z(1 - \bar z)}{|1 - z|^2} = \frac{re^{i\theta} - r^2}{1 - 2r\cos\theta + r^2} ,
@@ -277,7 +277,7 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 > \sum_{n=1}^{\infty} x_n = \sum_{k=1}^{\infty}\frac{(-1)^k}{2k} = -\frac12\ln 2, \qquad \sum_{n=1}^{\infty} y_n = \sum_{k=0}^{\infty}\frac{(-1)^k}{2k + 1} = \frac\pi4 ,
 > $$
 >
-> each convergent by the alternating series test (the values are $-\frac12$ times the alternating harmonic series and Leibniz's series). By Theorem §61.1 the series converges, to $-\frac12\ln 2 + i\frac\pi4 \approx -0.346574 + 0.785398\,i$ (confirmed by direct summation). This value is $-\operatorname{Log}(1 - i) = -\big(\ln\sqrt2 - i\frac\pi4\big)$: the point $z = 1 - i$ lies on the circle of convergence of the logarithm series of [[§71★ Integration and Differentiation of Power Series#^ex-71-4|Example §71.4]], so that example does not prove it, but the numbers agree.
+> each convergent by the alternating series test ([[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]]; the values are $-\frac12$ times the alternating harmonic series and Leibniz's series). By Theorem §61.1 the series converges, to $-\frac12\ln 2 + i\frac\pi4 \approx -0.346574 + 0.785398\,i$ (confirmed by direct summation). This value is $-\operatorname{Log}(1 - i) = -\big(\ln\sqrt2 - i\frac\pi4\big)$: the point $z = 1 - i$ lies on the circle of convergence of the logarithm series of [[§71★ Integration and Differentiation of Power Series#^ex-71-4|Example §71.4]], so that example does not prove it, but the numbers agree.
 >
 > *Source: illustration of B&C Sec. 61 added in these notes (not in B&C)*
 

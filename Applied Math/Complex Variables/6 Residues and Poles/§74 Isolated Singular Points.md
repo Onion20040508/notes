@@ -63,7 +63,7 @@ Recall ([[§25 Analytic Functions#^def-25-1|Definition §25.1]], [[§25 Analytic
 > f(z) = \log z = \ln r + i\theta \qquad (r > 0,\ \alpha < \theta < \alpha + 2\pi) ,
 > $$
 >
-> whose branch cut, the ray $\theta = \alpha$, meets every deleted neighborhood of the origin.
+> whose branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]), the ray $\theta = \alpha$, meets every deleted neighborhood of the origin.
 >
 > *B&C: Sec. 74, Example 2*
 

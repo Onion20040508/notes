@@ -74,9 +74,9 @@ Suppose for the moment that $y = \phi(t)$ is a differentiable function satisfyin
 ^lem-11-2
 
 > [!proof]+ Proof
-> **(2) $\Rightarrow$ (3).** If $\phi' = f(t, \phi(t))$, the right side is continuous, and by the fundamental theorem of calculus $\phi(t) - \phi(0) = \int_0^t \phi'(s)\,ds = \int_0^t f(s, \phi(s))\,ds$; with $\phi(0) = 0$ this is (3).
+> **(2) $\Rightarrow$ (3).** If $\phi' = f(t, \phi(t))$, the right side is continuous, and by the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]) $\phi(t) - \phi(0) = \int_0^t \phi'(s)\,ds = \int_0^t f(s, \phi(s))\,ds$; with $\phi(0) = 0$ this is (3).
 >
-> **(3) $\Rightarrow$ (2).** Substituting $t = 0$ in (3) gives $\phi(0) = 0$: the initial condition holds. The integrand $s \mapsto f(s, \phi(s))$ is continuous, as the composition of continuous functions. So, by the fundamental theorem of calculus, the right side of (3) is differentiable with derivative $f(t, \phi(t))$: $\phi$ is differentiable and $\phi'(t) = f(t, \phi(t))$.
+> **(3) $\Rightarrow$ (2).** Substituting $t = 0$ in (3) gives $\phi(0) = 0$: the initial condition holds. The integrand $s \mapsto f(s, \phi(s))$ is continuous, as the composition of continuous functions. So, by the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]), the right side of (3) is differentiable with derivative $f(t, \phi(t))$: $\phi$ is differentiable and $\phi'(t) = f(t, \phi(t))$.
 
 ^pf-11-2
 
@@ -263,7 +263,7 @@ and $\phi_n$ are the Picard iterates (4)–(7). In [[§11 The Existence and Uniq
 ^lem-11-4
 
 > [!proof]+ Proof
-> A continuous function on a closed, bounded set in the plane is bounded (the extreme value theorem), which gives $M$. Now induct on $n$. The claim holds for $\phi_0 = 0$. Suppose $\phi_n$ is continuous on $|t| \le h$ with $|\phi_n(t)| \le M|t| \le Mh \le b$. Then $(s, \phi_n(s))$ lies in $D \subseteq R$ for $|s| \le h$, so $s \mapsto f(s, \phi_n(s))$ is defined and continuous there, being a composition of continuous functions. Hence $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ is defined, and continuous (even differentiable) by the fundamental theorem of calculus, and
+> A continuous function on a closed, bounded set in the plane is bounded (the extreme value theorem, [[§96 Maximum and Minimum Values#^thm-96-3|Calc Thm. §96.3]]), which gives $M$. Now induct on $n$. The claim holds for $\phi_0 = 0$. Suppose $\phi_n$ is continuous on $|t| \le h$ with $|\phi_n(t)| \le M|t| \le Mh \le b$. Then $(s, \phi_n(s))$ lies in $D \subseteq R$ for $|s| \le h$, so $s \mapsto f(s, \phi_n(s))$ is defined and continuous there, being a composition of continuous functions. Hence $\phi_{n+1}(t) = \int_0^t f(s, \phi_n(s))\,ds$ is defined, and continuous (even differentiable) by the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]), and
 >
 > $$
 > |\phi_{n+1}(t)| = \left| \int_0^t f(s, \phi_n(s))\,ds \right| \le \left| \int_0^t |f(s, \phi_n(s))|\,ds \right| \le M|t| \le Mh \le b ,
@@ -389,7 +389,7 @@ Now all four questions can be answered.
 > \phi(t) = \lim_{n\to\infty} \phi_n(t) . \qquad (25)
 > $$
 >
-> **3. The limit is continuous and satisfies the integral equation.** A uniform limit of continuous functions is continuous, so $\phi$ is continuous on $I$. (Continuity is not automatic for a pointwise limit of continuous functions; see [[§11 The Existence and Uniqueness Theorem#^rem-11-1|Remark: What Uniform Convergence Is For]].) Letting $n \to \infty$ in $|\phi_n(t)| \le M|t|$ gives $|\phi(t)| \le M|t| \le b$, so the graph of $\phi$ lies in $D$ too. Now let $n \to \infty$ in (7):
+> **3. The limit is continuous and satisfies the integral equation.** A uniform limit of continuous functions is continuous ([[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]), so $\phi$ is continuous on $I$. (Continuity is not automatic for a pointwise limit of continuous functions; see [[§11 The Existence and Uniqueness Theorem#^rem-11-1|Remark: What Uniform Convergence Is For]].) Letting $n \to \infty$ in $|\phi_n(t)| \le M|t|$ gives $|\phi(t)| \le M|t| \le b$, so the graph of $\phi$ lies in $D$ too. Now let $n \to \infty$ in (7):
 >
 > $$
 > \phi(t) = \lim_{n\to\infty} \phi_{n+1}(t) = \lim_{n\to\infty} \int_0^t f(s, \phi_n(s))\,ds . \qquad (26)
@@ -427,7 +427,7 @@ Now all four questions can be answered.
 
 > [!remark]- Connections
 > - Rigorous tools, all from Single Variable Analysis: uniform convergence, [[§24 Uniform Convergence#^def-24-2|451 Def. §24.2]]; the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], applied to the series (24) with $M_k = MK^kh^{k+1}/(k+1)!$; continuity of the limit, [[§24 Uniform Convergence#^thm-24-2|451 Thm. §24.2]]; and the exchange of limit and integral, [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]] and [[§33 Properties of the Riemann Integral#^thm-33-12|451 Thm. §33.12]]. No other subject in the vault proves the existence and uniqueness theorem; this proof is its home.
-> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves ([[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]), a solution is a fixed point $T\phi = \phi$, and [[§11 The Existence and Uniqueness Theorem#^lem-11-6|Lemma §11.6]] says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§11 Completeness#^thm-11-1|556 Thm. §11.1]]: this is the abstract reason the iterates converge.
+> - In the language of Functional Analysis: the map $T\phi(t) = \int_0^t f(s, \phi(s))\,ds$ sends continuous functions on $[-h, h]$ with graph in $D$ to themselves ([[§11 The Existence and Uniqueness Theorem#^lem-11-4|Lemma §11.4]]), a solution is a fixed point $T\phi = \phi$, and [[§11 The Existence and Uniqueness Theorem#^lem-11-6|Lemma §11.6]] says $\|T^n\phi_0 - T^{n-1}\phi_0\|_\infty \le MK^{n-1}h^n/n!$. So the iterates form a Cauchy sequence ([[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]]) in $\big(C[-h, h], \|\cdot\|_\infty\big)$, which is complete, [[§11 Completeness#^thm-11-1|556 Thm. §11.1]]: this is the abstract reason the iterates converge.
 
 > [!remark]- Remark: What Uniform Convergence Is For
 > Two of BDP's problems show why step 3 of the proof needs uniform convergence.

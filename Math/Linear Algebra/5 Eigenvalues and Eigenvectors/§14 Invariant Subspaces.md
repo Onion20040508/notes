@@ -78,7 +78,7 @@ tags: [linear-algebra]
 ^ladr-5-7
 
 > [!remark] Remark: Infinite dimensions
-> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space can contain points that are not eigenvalues (continuous spectrum).
+> (c) and (d) are then not equivalent to (a): this is why the spectrum of an operator on a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) can contain points that are not eigenvalues (continuous spectrum).
 
 > [!proof]+ Proof
 > (a)$\iff$(b): $Tv=\lambda v\iff(T-\lambda I)v=0$, so a nonzero eigenvector is a nonzero element of $\nullsp(T-\lambda I)$ ([[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]]). (b)$\iff$(c)$\iff$(d) by [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].

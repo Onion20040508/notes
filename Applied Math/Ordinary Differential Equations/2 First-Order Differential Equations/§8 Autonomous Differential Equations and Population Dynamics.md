@@ -268,7 +268,7 @@ The ideas of [[§8 Autonomous Differential Equations and Population Dynamics#^de
 ^lem-8-4
 
 > [!proof]+ Proof
-> A bounded monotone function has a limit $L$ as $t \to \infty$, namely its supremum (if increasing) or infimum (if decreasing), by the argument of the monotone convergence theorem for sequences. Suppose $f(L) > 0$. Since $f$ is continuous, $\phi'(t) = f(\phi(t)) \to f(L)$, so there is $T$ with $\phi'(t) \ge f(L)/2$ for $t \ge T$. By the mean value theorem, $\phi(t) \ge \phi(T) + \frac12 f(L)(t - T) \to \infty$, contradicting boundedness. The case $f(L) < 0$ is the same with the inequalities reversed. Hence $f(L) = 0$.
+> A bounded monotone function has a limit $L$ as $t \to \infty$, namely its supremum (if increasing) or infimum (if decreasing), by the argument of the monotone convergence theorem for sequences ([[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 Thm. §10.1]]). Suppose $f(L) > 0$. Since $f$ is continuous, $\phi'(t) = f(\phi(t)) \to f(L)$, so there is $T$ with $\phi'(t) \ge f(L)/2$ for $t \ge T$. By the mean value theorem ([[§29 The Mean Value Theorem#^prop-29-8|451 Prop. §29.8]]), $\phi(t) \ge \phi(T) + \frac12 f(L)(t - T) \to \infty$, contradicting boundedness. The case $f(L) < 0$ is the same with the inequalities reversed. Hence $f(L) = 0$.
 
 ^pf-8-4
 

@@ -67,7 +67,7 @@ tags: [topology, math590]
 > [!example] Example §21.1: Key Examples
 > - $(\mathbb{Z}, +)$: integers under addition. Identity: $0$. Inverse of $n$: $-n$. Abelian.
 > - $(\mathbb{Z}/n\mathbb{Z}, +)$: integers mod $n$. Elements $\{0, 1, \ldots, n-1\}$ with addition mod $n$. Abelian, $|G| = n$.
-> - $(S_n, \circ)$: permutations of $\{1, \ldots, n\}$ under composition. **Not abelian** for $n \geq 3$.
+> - $(S_n, \circ)$: permutations of $\{1, \ldots, n\}$ under composition ([[§3 Basic Examples of Groups#^def-3-5|493 Def. §3.5]]). **Not abelian** for $n \geq 3$.
 > - The **trivial group**: $G = \{e\}$.
 
 ^ex-21-1
@@ -94,13 +94,13 @@ tags: [topology, math590]
 > [!proof]+ Proof
 > **(1)** If $a, b \in H$, then $a, b \in G$, so $ab = ba$ (since $G$ is abelian). The same equation holds in $H$.
 >
-> **(2)** If $G = \langle g \rangle$, every element of $H$ has the form $g^k$ for some $k$. If $H = \{e\}$, then $H = \langle e \rangle$. Otherwise $H$ contains some $g^k$ with $k \neq 0$, hence also $g^{-k}$, so it contains a positive power of $g$; let $m$ be the smallest positive integer with $g^m \in H$. Then $H = \langle g^m \rangle$ (one can show every element of $H$ is a power of $g^m$ by the division algorithm).
+> **(2)** If $G = \langle g \rangle$, every element of $H$ has the form $g^k$ for some $k$. If $H = \{e\}$, then $H = \langle e \rangle$. Otherwise $H$ contains some $g^k$ with $k \neq 0$, hence also $g^{-k}$, so it contains a positive power of $g$; let $m$ be the smallest positive integer with $g^m \in H$. Then $H = \langle g^m \rangle$ (one can show every element of $H$ is a power of $g^m$ by the [[Division Algorithm|division algorithm]]).
 >
 > **(3)** Lagrange's theorem — the proof uses cosets and is standard in algebra. We state it without proof.
 
 ^pf-21-1
 
-*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]]
+*Uses:* [[§21 Algebra Prerequisites꞉ Groups#^def-21-2|Def. §21.2]], [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Def. §21.7]], [[Division Algorithm|493 §6.1]]
 
 > [!remark]- Connections
 > - Proved in 493: (2) is [[§17 Cyclic Groups#^thm-17-4|493 Thm. §17.4]] ([[Subgroups of Cyclic Groups Are Cyclic]]) and (3), stated here without proof, is [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]] ([[Lagrange's Theorem]]).

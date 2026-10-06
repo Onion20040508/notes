@@ -83,7 +83,7 @@ $$
 >
 > The limit is found by direct substitution, since the bracket is a polynomial in $x$ ([[§10 Continuity#^thm-10-2|Theorem §10.2]]), and each of its $n$ terms becomes $a^{n-1}$.
 >
-> **Second proof.** By the Binomial Theorem,
+> **Second proof.** By the Binomial Theorem ([[Binomial Theorem|250 Thm. §12.10]]),
 >
 > $$
 > (x + h)^n = x^n + n x^{n-1} h + \frac{n(n-1)}{2} x^{n-2} h^2 + \cdots + n x h^{n-1} + h^n .
@@ -106,6 +106,7 @@ $$
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§28 Basic Properties of the Derivative#^ex-28-2|451 Ex. §28.2]], with the same factorization as the first proof.
+> - Complex-variables version: [[§20 Rules for Differentiation#^thm-20-3|342 Thm. §20.3]] ($\frac{d}{dz} z^n = n z^{n-1}$ for positive integers $n$).
 
 The rule holds for other exponents too. From the definition, $\frac{d}{dx}\big(\frac1x\big) = -\frac{1}{x^2}$ (Stewart, Exercise 69), that is, $\frac{d}{dx}(x^{-1}) = (-1)x^{-2}$. Every negative integer follows from the Quotient Rule ([[§15 The Product and Quotient Rules#^cor-15-3|Corollary §15.3]]). And $\frac{d}{dx}\sqrt{x} = \frac{1}{2\sqrt{x}}$ ([[§13 The Derivative as a Function#^ex-13-2|Example §13.2]]) says $\frac{d}{dx}(x^{1/2}) = \frac12 x^{-1/2}$. In fact:
 

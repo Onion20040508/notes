@@ -90,7 +90,7 @@ For example, $\dfrac{dy}{dx} = \dfrac{x^2}{1 - y^2}$ is separable, since it can 
 > c = H_1(x_0) + H_2(y_0) . \qquad (15)
 > $$
 >
-> Substituting this into (13), and using $H_1(x) - H_1(x_0) = \int_{x_0}^{x} M(s)\,ds$ and $H_2(y) - H_2(y_0) = \int_{y_0}^{y} N(s)\,ds$ (Fundamental Theorem of Calculus), gives (16).
+> Substituting this into (13), and using $H_1(x) - H_1(x_0) = \int_{x_0}^{x} M(s)\,ds$ and $H_2(y) - H_2(y_0) = \int_{y_0}^{y} N(s)\,ds$ (Fundamental Theorem of Calculus, [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]), gives (16).
 
 ^pf-5-1
 

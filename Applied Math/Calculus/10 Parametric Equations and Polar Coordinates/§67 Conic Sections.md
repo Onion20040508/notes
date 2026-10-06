@@ -138,7 +138,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^pf-67-3
 
-*Uses:* [[§67 Conic Sections#^def-67-2|Def. §67.2]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality
+*Uses:* [[§67 Conic Sections#^def-67-2|Def. §67.2]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality in the plane ([[Triangle inequality|LADR 6.17]])
 
 ![[m233-67-1.svg]]
 *The ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$. For every point $P$ on it, $|PF_1| + |PF_2| = 2a$ (blue). At the end $(0, b)$ of the minor axis the two distances are equal, so each is $a$, and the right triangle with legs $b$ and $c$ and hypotenuse $a$ (red) shows $c^2 = a^2 - b^2$.*
@@ -246,7 +246,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 
 ^pf-67-5
 
-*Uses:* [[§67 Conic Sections#^def-67-3|Def. §67.3]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality, [[§29 Summary of Curve Sketching#^def-29-2|Def. §29.2]] (slant asymptotes)
+*Uses:* [[§67 Conic Sections#^def-67-3|Def. §67.3]], distance formula ([[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]), triangle inequality in the plane ([[Triangle inequality|LADR 6.17]]), [[§29 Summary of Curve Sketching#^def-29-2|Def. §29.2]] (slant asymptotes)
 
 > [!theorem] Corollary §67.6: Hyperbola with Foci on the y-Axis
 > The hyperbola

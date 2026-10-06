@@ -24,6 +24,7 @@ tags: [linear-algebra]
 > - Determined by values on a basis: [[Linear map lemma]]. Vector space of linear maps: [[§7 Vector Space of Linear Maps#^ladr-3-5|Addition and scalar multiplication on L(V, W)]]. Composition: [[§7 Vector Space of Linear Maps#^ladr-3-7|Product of linear maps]].
 > - Two subspaces attached to every linear map: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space, null T]], [[§8 Null Spaces and Ranges#^ladr-3-16|Range]], tied together by [[Fundamental theorem of linear maps]].
 > - Physics: observables and time evolution in quantum mechanics are linear maps on the state space.
+> - Same definition in 556: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-1|556 Def. §2.1]].
 > - Forgetting scalars, a linear map is a homomorphism of additive groups: [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]].
 > - Computational version: [[§8 Introduction to Linear Transformations#^def-8-3|235 Def. §8.3]] (for ℝⁿ → ℝᵐ) and [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-4|235 Def. §24.4]] (between vector spaces).
 > - ODE example: the differential operator $L[y] = y'' + py' + qy$, [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^def-14-1|331 Def. §14.1]], and the left side of any linear differential equation, [[§3 Classification of Differential Equations#^def-3-4|331 Def. §3.4]].

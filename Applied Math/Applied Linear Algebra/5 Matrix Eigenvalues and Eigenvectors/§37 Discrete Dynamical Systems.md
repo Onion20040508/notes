@@ -137,7 +137,7 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 > - a **repeller** if all solutions except the (constant) zero solution are unbounded and tend away from the origin;
 > - a **saddle point** if the origin attracts solutions from some directions and repels them in other directions.
 >
-> The origin is the only possible attractor or repeller of a *linear* dynamical system; a nonlinear system can have several, and they are classified by the eigenvalues of its Jacobian matrix.
+> The origin is the only possible attractor or repeller of a *linear* dynamical system; a nonlinear system can have several, and they are classified by the eigenvalues of its Jacobian matrix ([[§13 The Inverse Function Theorem#^def-13-1|452 Def. §13.1]]).
 >
 > *Lay: 5.6 (text)*
 

@@ -77,7 +77,7 @@ The theorem can, of course, be used when branches of multiple-valued functions a
 > f(z) = \frac{\phi(z)}{z - i} \qquad\text{where}\qquad \phi(z) = \frac{(\log z)^3}{z + i} .
 > $$
 >
-> The function $\phi$ is clearly analytic at $z = i$, which lies off the branch cut ($\theta = \pi/2$). Since $\log i = \ln 1 + i\frac\pi2 = \frac{i\pi}{2}$,
+> The function $\phi$ is clearly analytic at $z = i$, which lies off the branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]; here $\theta = \pi/2$). Since $\log i = \ln 1 + i\frac\pi2 = \frac{i\pi}{2}$,
 >
 > $$
 > \phi(i) = \frac{(\log i)^3}{2i} = \frac{(i\pi/2)^3}{2i} = \frac{-i\pi^3/8}{2i} = -\frac{\pi^3}{16} \ne 0 ,

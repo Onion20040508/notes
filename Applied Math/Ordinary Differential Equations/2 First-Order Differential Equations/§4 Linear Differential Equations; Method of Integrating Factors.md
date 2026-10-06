@@ -107,7 +107,7 @@ Sometimes the left side of a linear equation is already the derivative of a prod
 > e^{at}\,\frac{dy}{dt} + ae^{at}\,y = e^{at}g(t) , \qquad\text{that is,}\qquad \frac{d}{dt}\big(e^{at}y\big) = e^{at}g(t) . \qquad (22)
 > $$
 >
-> The function $G(t) = \int_{t_0}^{t} e^{as}g(s)\,ds$ is an antiderivative of the continuous function $e^{at}g(t)$ on $I$ (Fundamental Theorem of Calculus). If $y$ solves (20), then by (22) $e^{at}y$ and $G$ have the same derivative on the interval $I$, so they differ by a constant: $e^{at}y = G(t) + c$, which is (24) after multiplying by $e^{-at}$. Conversely, if $y$ is given by (24), then $e^{at}y = G + c$ has derivative $e^{at}g$, and expanding the product rule, $e^{at}(y' + ay) = e^{at}g$; dividing by $e^{at} \ne 0$ gives (20).
+> The function $G(t) = \int_{t_0}^{t} e^{as}g(s)\,ds$ is an antiderivative of the continuous function $e^{at}g(t)$ on $I$ (Fundamental Theorem of Calculus, [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]). If $y$ solves (20), then by (22) $e^{at}y$ and $G$ have the same derivative on the interval $I$, so they differ by a constant ([[§29 The Mean Value Theorem#^cor-29-5|451 Cor. §29.5]]): $e^{at}y = G(t) + c$, which is (24) after multiplying by $e^{-at}$. Conversely, if $y$ is given by (24), then $e^{at}y = G + c$ has derivative $e^{at}g$, and expanding the product rule, $e^{at}(y' + ay) = e^{at}g$; dividing by $e^{at} \ne 0$ gives (20).
 
 ^pf-4-1
 
@@ -275,7 +275,7 @@ For many simple $g$ the integral in (24) can be evaluated, as in the next exampl
 > y = e^{-t^2/4}\int_0^t e^{s^2/4}\,ds + e^{-t^2/4} .
 > $$
 >
-> This is a perfectly good answer: for each $t$ the integral is a definite integral that numerical integration evaluates to any accuracy, so the solution can be tabulated and plotted. Plots suggest that all solutions approach a common limit as $t \to \infty$. (BDP leaves it to Problem 22; the limit is $0$: $ce^{-t^2/4} \to 0$, and by L'Hôpital's rule $\dfrac{\int_0^t e^{s^2/4}ds}{e^{t^2/4}}$ has the same limit as $\dfrac{e^{t^2/4}}{(t/2)e^{t^2/4}} = \dfrac2t \to 0$.)
+> This is a perfectly good answer: for each $t$ the integral is a definite integral that numerical integration evaluates to any accuracy, so the solution can be tabulated and plotted. Plots suggest that all solutions approach a common limit as $t \to \infty$. (BDP leaves it to Problem 22; the limit is $0$: $ce^{-t^2/4} \to 0$, and by L'Hôpital's rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Calc Thm. §28.2]]) $\dfrac{\int_0^t e^{s^2/4}ds}{e^{t^2/4}}$ has the same limit as $\dfrac{e^{t^2/4}}{(t/2)e^{t^2/4}} = \dfrac2t \to 0$.)
 >
 > *BDP: Example 2.1.5*
 

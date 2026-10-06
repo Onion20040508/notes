@@ -95,7 +95,7 @@ Where *exactly* does the proof need closedness? Reread Step 1 with $(a,b)$ in pl
 > f(x) = \frac{1}{x - x_0}.
 > $$
 >
-> Since $x_0 \notin S$, the denominator never vanishes on $S$, so $f$ is defined and continuous on $S$ (quotient of continuous functions). It is unbounded: given $M > 0$, convergence $x_n \to x_0$ provides $n$ with $0 < |x_n - x_0| < \tfrac1M$, and then
+> Since $x_0 \notin S$, the denominator never vanishes on $S$, so $f$ is defined and continuous on $S$ (quotient of continuous functions, [[§17 Continuous Functions#^thm-17-3|Theorem §17.3]](3)). It is unbounded: given $M > 0$, convergence $x_n \to x_0$ provides $n$ with $0 < |x_n - x_0| < \tfrac1M$, and then
 >
 > $$
 > |f(x_n)| = \frac{1}{|x_n - x_0|} > M.

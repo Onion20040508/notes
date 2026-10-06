@@ -174,7 +174,7 @@ tags: [linear-algebra]
 ^ladr-3-101
 
 > [!remark] Remark: Consequence
-> Two translates of a subspace are equal or disjoint, so the translates partition $V$; "$v\sim w\iff v-w\in U$" is the corresponding equivalence relation.
+> Two translates of a subspace are equal or disjoint, so the translates partition $V$; "$v\sim w\iff v-w\in U$" is the corresponding equivalence relation ([[§24 Equivalence Relations and Partitions#^def-24-1|493 Def. §24.1]]).
 
 > [!proof]+ Proof
 > If $v-w\in U$ and $u\in U$, then $v+u=w+\big((v-w)+u\big)\in w+U$; so $v+U\subseteq w+U$, and symmetrically, hence equality. Equality trivially gives a nonempty intersection. If $v+u_1=w+u_2$ with $u_1,u_2\in U$, then $v-w=u_2-u_1\in U$.
@@ -283,7 +283,7 @@ tags: [linear-algebra]
 
 %% ex:3.107-diff %%
 > [!example] Example: Differentiation, and "up to a constant"
-> Let $D\in\Lin(\Poly_3(\R))$, $Dp=p'$. Then $\nullsp D$ is the constants and $\range D=\Poly_2(\R)$. The quotient $\Poly_3(\R)/\nullsp D$ is "polynomials up to an additive constant", and $\tilde D(p+\nullsp D)=p'$ is an isomorphism onto $\Poly_2(\R)$. Its inverse sends $q$ to the coset $\int q+\nullsp D$, i.e. "$\int q+C$": an indefinite integral is precisely an element of this quotient. Dimensions: $4-1=3$, as [[Fundamental theorem of linear maps|3.21]] predicts.
+> Let $D\in\Lin(\Poly_3(\R))$, $Dp=p'$. Then $\nullsp D$ is the constants and $\range D=\Poly_2(\R)$. The quotient $\Poly_3(\R)/\nullsp D$ is "polynomials up to an additive constant", and $\tilde D(p+\nullsp D)=p'$ is an isomorphism onto $\Poly_2(\R)$. Its inverse sends $q$ to the coset $\int q+\nullsp D$, i.e. "$\int q+C$": an indefinite integral ([[§37 Indefinite Integrals and the Net Change Theorem#^def-37-1|Calc Def. §37.1]]) is precisely an element of this quotient. Dimensions: $4-1=3$, as [[Fundamental theorem of linear maps|3.21]] predicts.
 >
 > The general picture: $T$ factors as surjection, isomorphism, inclusion.
 >

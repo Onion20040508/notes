@@ -21,4 +21,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - In Calculus the same facts come from the cross product: area $= |\mathbf{a} \times \mathbf{b}|$ ([[§83 The Cross Product#^cor-83-6|Calc Cor. §83.6]]) and volume $= |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| = |\det|$ ([[§83 The Cross Product#^thm-83-10|Calc Thm. §83.10]]); the lecture writes $\det[\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3] = (\mathbf{v}_1 \times \mathbf{v}_2) \cdot \mathbf{v}_3$.
-- Rigorous treatment in $\mathbb{R}^n$ for every measurable set: [[§34 Determinants#^ladr-9-61|LADR 9.61]] (proved via the singular value decomposition, [[§34 Determinants#^ladr-9-60|LADR 9.60]]); the sign of $\det$ records orientation, which $|\det|$ forgets.
+- Rigorous treatment in $\mathbb{R}^n$ for every measurable set ([[§10 Lebesgue Measurable Sets#^def-10-1|551 Def. §10.1]]): [[§34 Determinants#^ladr-9-61|LADR 9.61]] (proved via the singular value decomposition, [[§34 Determinants#^ladr-9-60|LADR 9.60]]); the sign of $\det$ records orientation, which $|\det|$ forgets.

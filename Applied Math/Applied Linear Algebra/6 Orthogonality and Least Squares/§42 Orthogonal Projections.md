@@ -178,7 +178,7 @@ The projection of a vector onto a line ([[§41 Orthogonal Sets#^def-41-3|Definit
 > \mathbf{y} - \mathbf{v} = (\mathbf{y} - \hat{\mathbf{y}}) + (\hat{\mathbf{y}} - \mathbf{v}),
 > $$
 >
-> the Pythagorean Theorem gives
+> the Pythagorean Theorem ([[§40 Inner Product, Length, and Orthogonality#^thm-40-4|Theorem §40.4]]) gives
 >
 > $$
 > \|\mathbf{y} - \mathbf{v}\|^2 = \|\mathbf{y} - \hat{\mathbf{y}}\|^2 + \|\hat{\mathbf{y}} - \mathbf{v}\|^2 .

@@ -84,7 +84,7 @@ The two expressions for residues need not have been written separately: with the
 
 > [!remark] Remark: Method — Computing the Residue at a Pole
 > 1. **Factor out the singular factor.** Write $f(z) = \phi(z)/(z - z_0)^m$, with $m$ the power of $z - z_0$ that the formula of $f$ visibly divides by.
-> 2. **Check $\phi$.** It must be analytic at $z_0$ (no other singular factor at $z_0$, no branch cut through $z_0$) and $\phi(z_0) \ne 0$. If $\phi(z_0) = 0$ the order is lower than $m$; if $\phi$ is not even defined at $z_0$ the factorization is wrong. In either case return to a Laurent series or to [[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]] ([[§81 Examples (Residues at Poles)#^ex-81-3|Example §81.3]]).
+> 2. **Check $\phi$.** It must be analytic at $z_0$ (no other singular factor at $z_0$, no branch cut ([[§33 Branches and Derivatives of Logarithms#^def-33-3|Definition §33.3]]) through $z_0$) and $\phi(z_0) \ne 0$. If $\phi(z_0) = 0$ the order is lower than $m$; if $\phi$ is not even defined at $z_0$ the factorization is wrong. In either case return to a Laurent series or to [[§83 Zeros and Poles#^thm-83-1|Theorem §83.1]] ([[§81 Examples (Residues at Poles)#^ex-81-3|Example §81.3]]).
 > 3. **Read off the residue:** $\phi(z_0)$ for a simple pole, equivalently $\lim_{z\to z_0}(z - z_0)f(z)$; $\phi'(z_0)$ for $m = 2$; in general $\phi^{(m-1)}(z_0)/(m - 1)!$.
 > 4. **If the principal part is wanted**, the Taylor coefficients $\phi^{(k)}(z_0)/k!$, $k = 0, \ldots, m - 1$, are its coefficients, read from $(z - z_0)^{-m}$ up to $(z - z_0)^{-1}$ ([[§80 Residues at Poles#^ex-80-2|Example §80.2]]).
 

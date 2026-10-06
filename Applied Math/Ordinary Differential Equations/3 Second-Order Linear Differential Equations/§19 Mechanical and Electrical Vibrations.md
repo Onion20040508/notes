@@ -30,6 +30,9 @@ A mass $m$ hangs at rest on a vertical spring of natural length $l$ and stretche
 
 ^def-19-1
 
+> [!remark]- Connections
+> - See also: [[§42 Work#^def-42-4|Calc Def. §42.4]] (Stewart's Hooke's law $f(x) = kx$ for the force that holds the spring stretched; the restoring force $F_s = -kL$ here is its negative).
+
 > [!definition] Definition §19.2: Viscous Damping
 > The **damping** (resistive) force $F_d$ acts opposite to the direction of motion. It is modeled as proportional to the speed, $|F_d| = \gamma|u'|$ (**viscous damping**). With the downward-positive convention this is, in both directions of motion,
 >

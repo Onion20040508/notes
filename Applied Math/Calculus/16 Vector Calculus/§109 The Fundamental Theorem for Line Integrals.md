@@ -112,7 +112,7 @@ In general, line integrals are not independent of path ([[§108 Line Integrals#^
 Since the line integral of any conservative field is independent of path, $\int_C \mathbf{F} \cdot d\mathbf{r} = 0$ for every closed path. Physically: the work done by a conservative force field (such as the gravitational or electric field of [[§107 Vector Fields#^ex-107-2|Example §107.2]]) as it moves an object around a closed path is $0$. The next theorem says that the *only* fields with path-independent line integrals are the conservative ones. It is stated and proved for plane curves; the version for space curves is similar.
 
 > [!definition] Definition §109.3: Open and Connected Regions
-> A region $D$ is **open** if for every point $P$ in $D$ there is a disk with center $P$ that lies entirely in $D$ (so $D$ contains none of its boundary points). $D$ is **connected** if any two points in $D$ can be joined by a path that lies in $D$.
+> A region $D$ is **open** if for every point $P$ in $D$ there is a disk with center $P$ that lies entirely in $D$ (so $D$ contains none of its [[§96 Maximum and Minimum Values#^def-96-3|boundary points]]). $D$ is **connected** if any two points in $D$ can be joined by a path that lies in $D$.
 >
 > *Stewart: 16.3 (text)*
 

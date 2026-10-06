@@ -25,4 +25,4 @@ tags: [applied-linear-algebra, hub]
 
 ## Connections
 - Rigorous treatment: [[§34 Determinants#^ladr-9-49|LADR 9.49]], where multiplicativity is immediate from the definition of $\det T$ as the factor by which $T$ scales alternating $n$-forms; transpose: [[§34 Determinants#^ladr-9-56|LADR 9.56]].
-- In group language, $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism from the general linear group ([[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]]) to the nonzero reals under multiplication.
+- In group language, $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]) from the general linear group ([[§3 Basic Examples of Groups#^def-3-6|493 Def. §3.6]]) to the nonzero reals under multiplication.

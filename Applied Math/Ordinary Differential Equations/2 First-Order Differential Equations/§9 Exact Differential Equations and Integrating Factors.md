@@ -133,7 +133,7 @@ In [[§9 Exact Differential Equations and Integrating Factors#^ex-9-1|Example §
 > M_y(x, y) = \psi_{xy}(x, y), \qquad N_x(x, y) = \psi_{yx}(x, y) . \qquad (11)
 > $$
 >
-> Since $M_y$ and $N_x$ are continuous, so are $\psi_{xy}$ and $\psi_{yx}$. This guarantees their equality (the Schwarz–Clairaut theorem on the open rectangle $R$), and (10) follows.
+> Since $M_y$ and $N_x$ are continuous, so are $\psi_{xy}$ and $\psi_{yx}$. This guarantees their equality (the Schwarz–Clairaut theorem, [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]], on the open rectangle $R$), and (10) follows.
 >
 > **(10) $\Rightarrow$ exact.** We construct $\psi$. Integrate the first equation of (7) with respect to $x$, holding $y$ constant:
 >
@@ -147,7 +147,7 @@ In [[§9 Exact Differential Equations and Integrating Factors#^ex-9-1|Example §
 > Q(x, y) = \int_{x_0}^{x} M(s, y)\,ds , \qquad (13)
 > $$
 >
-> with $x_0$ a fixed number in $(\alpha, \beta)$. (The segment from $(x_0, y)$ to $(x, y)$ lies in $R$ because $R$ is a rectangle, and $Q_x = M$ by the fundamental theorem of calculus, $M$ being continuous.) The function $h$ of $y$ plays the role of the constant of integration. It remains to choose $h$ so that $\psi_y = N$. Differentiating (12) with respect to $y$ and setting the result equal to $N$,
+> with $x_0$ a fixed number in $(\alpha, \beta)$. (The segment from $(x_0, y)$ to $(x, y)$ lies in $R$ because $R$ is a rectangle, and $Q_x = M$ by the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]), $M$ being continuous.) The function $h$ of $y$ plays the role of the constant of integration. It remains to choose $h$ so that $\psi_y = N$. Differentiating (12) with respect to $y$ and setting the result equal to $N$,
 >
 > $$
 > \psi_y(x, y) = \frac{\partial Q}{\partial y}(x, y) + h'(y) = N(x, y), \qquad\text{so}\qquad h'(y) = N(x, y) - \frac{\partial Q}{\partial y}(x, y) . \qquad (14)
@@ -167,7 +167,7 @@ In [[§9 Exact Differential Equations and Integrating Factors#^ex-9-1|Example §
 > \frac{M(s, y + k) - M(s, y)}{k} = M_y(s, y + \theta k) \quad\text{for some } \theta = \theta(s) \in (0, 1) .
 > $$
 >
-> $M_y$ is continuous on the closed bounded set $R'$, hence uniformly continuous there: given $\varepsilon > 0$ there is $\eta > 0$ with $|M_y(s, y') - M_y(s, y)| < \varepsilon$ whenever $|y' - y| < \eta$ and the points lie in $R'$. So for $|k| < \eta$ the continuous integrand $(M(s, y + k) - M(s, y))/k$ is within $\varepsilon$ of $M_y(s, y)$ for every $s$, and
+> $M_y$ is continuous on the closed bounded set $R'$, hence uniformly continuous there ([[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]]): given $\varepsilon > 0$ there is $\eta > 0$ with $|M_y(s, y') - M_y(s, y)| < \varepsilon$ whenever $|y' - y| < \eta$ and the points lie in $R'$. So for $|k| < \eta$ the continuous integrand $(M(s, y + k) - M(s, y))/k$ is within $\varepsilon$ of $M_y(s, y)$ for every $s$, and
 >
 > $$
 > \left| \frac{Q(x, y + k) - Q(x, y)}{k} - \int_{x_0}^{x} M_y(s, y)\,ds \right| \le \varepsilon\,|x - x_0| .
@@ -194,7 +194,7 @@ In [[§9 Exact Differential Equations and Integrating Factors#^ex-9-1|Example §
 *Uses:* [[§9 Exact Differential Equations and Integrating Factors#^def-9-1|Def. §9.1]], [[§5 Equality of Mixed Partials#^thm-5-1|452 Thm. §5.1]] (Schwarz–Clairaut), [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]] (FTC), [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (mean value theorem), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]], [[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]] (uniform continuity on a closed bounded set; the proof carries over to a closed rectangle with [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 Thm. §13.3]])
 
 > [!remark]- Connections
-> - Rigorous treatment in the language of forms: (6) is exact exactly when the 1-form $\omega = M\,dx + N\,dy$ is exact, $\omega = d\psi$, and (10) says $\omega$ is closed, $d\omega = (N_x - M_y)\,dx \wedge dy = 0$ ([[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]). The first half of the proof is exact $\Rightarrow$ closed, [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]] (Clairaut in forms language, [[§22 The Algebra of Differential Forms#^prop-22-9|452 Prop. §22.9]]); the second half is the Poincaré lemma, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]], for a rectangle, proved here in full. BDP notes that the region need not be rectangular, only simply connected; the angle form on the punctured plane ([[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]], [[Angle form on the punctured plane]]) is closed but not exact, so some condition on the region is needed.
+> - Rigorous treatment in the language of forms: (6) is exact exactly when the 1-form $\omega = M\,dx + N\,dy$ is exact, $\omega = d\psi$, and (10) says $\omega$ is closed, $d\omega = (N_x - M_y)\,dx \wedge dy = 0$ ([[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]). The first half of the proof is exact $\Rightarrow$ closed, [[§22 The Algebra of Differential Forms#^prop-22-10|452 Prop. §22.10]] (Clairaut in forms language, [[§22 The Algebra of Differential Forms#^prop-22-9|452 Prop. §22.9]]); the second half is the Poincaré lemma, [[§22 The Algebra of Differential Forms#^prop-22-12|452 Prop. §22.12]], for a rectangle, proved here in full. BDP notes that the region need not be rectangular, only simply connected ([[§23 The Fundamental Group#^def-23-3|590 Def. §23.3]]); the angle form on the punctured plane ([[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]], [[Angle form on the punctured plane]]) is closed but not exact, so some condition on the region is needed.
 > - See also: the same test and construction for vector fields in Calculus, where $\psi$ is a potential function of $\mathbf{F} = M\,\mathbf{i} + N\,\mathbf{j}$: [[§109 The Fundamental Theorem for Line Integrals#^thm-109-4|Calc Thm. §109.4]] (necessity), [[§110 Green's Theorem#^thm-110-5|Calc Thm. §110.5]] (sufficiency on simply-connected regions) and [[§109 The Fundamental Theorem for Line Integrals#^rem-109-1|Calc Remark: Method — Finding a Potential Function]].
 
 It is possible to write $\psi$ explicitly as integrals, as at the end of the proof, but in solving specific exact equations it is usually simpler and easier to repeat the steps of the proof.

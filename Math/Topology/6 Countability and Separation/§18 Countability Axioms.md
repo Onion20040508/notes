@@ -80,12 +80,12 @@ tags: [topology, math590]
 > - One of the three axioms of a topological manifold, [[§2 Topological Manifolds#^def-2-2|591 Def. §2.2]]; for manifolds it forces countably many components, [[§2 Topological Manifolds#^prop-2-6|591 Prop. §2.6]].
 
 > [!example] Example §18.3
-> $\mathbb{R}$ is second-countable. $\mathcal{B} = \{(a, b) \mid a, b \in \mathbb{Q}\}$ is a countable basis.
+> $\mathbb{R}$ is second-countable. $\mathcal{B} = \{(a, b) \mid a, b \in \mathbb{Q}\}$ is a countable basis (it is indexed by pairs in $\mathbb{Q} \times \mathbb{Q}$, which is countable: [[The Rationals Are Denumerable|250 Thm. §14.10]], [[§14 Counting Infinite Sets#^prop-14-8|250 Prop. §14.8]]).
 
 ^ex-18-3
 
 > [!example] Example §18.4
-> $\mathbb{R}^n$ is second-countable. $\mathcal{B} = \{\prod_{i=1}^{n}(a_i, b_i) \mid a_i, b_i \in \mathbb{Q}\}$ is a countable basis.
+> $\mathbb{R}^n$ is second-countable. $\mathcal{B} = \{\prod_{i=1}^{n}(a_i, b_i) \mid a_i, b_i \in \mathbb{Q}\}$ is a countable basis (indexed by $\mathbb{Q}^{2n}$, countable by [[§14 Counting Infinite Sets#^cor-14-9|250 Cor. §14.9]]).
 
 ^ex-18-4
 
@@ -114,7 +114,7 @@ tags: [topology, math590]
 >
 > Consider $\{0, 1\}^\omega \subseteq \mathbb{R}^\omega$ (sequences of 0s and 1s). This has the [[§1 Topological Spaces#^ex-1-3|discrete topology]] under $\bar{\rho}$: if $\bar{a} \neq \bar{b}$, then $\bar{\rho}(\bar{a}, \bar{b}) = 1$, so $B_{\bar{\rho}}(\bar{a}, 1/2) = \{\bar{a}\}$.
 >
-> $\{0, 1\}^\omega$ is uncountable. By [[§18 Countability Axioms#^lem-18-2|the lemma below]], any space with a countable basis cannot have an uncountable discrete subspace.
+> $\{0, 1\}^\omega$ is uncountable: sending a sequence to the set of indices where it equals $1$ is a bijection onto the power set of $\mathbb{Z}_+$, which is uncountable by [[§14 Counting Infinite Sets#^thm-14-13|Cantor's theorem]] (250 Thm. §14.13). By [[§18 Countability Axioms#^lem-18-2|the lemma below]], any space with a countable basis cannot have an uncountable discrete subspace.
 
 ^ex-18-6
 
@@ -130,11 +130,11 @@ tags: [topology, math590]
 >
 > If $a \neq b$ in $A$, then $B_a \neq B_b$ (since $B_a \cap A = \{a\} \neq \{b\} = B_b \cap A$).
 >
-> The map $a \mapsto B_a$ is an injection $A \to \mathcal{B}$. Since $\mathcal{B}$ is countable, $A$ is countable.
+> The map $a \mapsto B_a$ is an injection $A \to \mathcal{B}$. Since $\mathcal{B}$ is countable, $A$ is countable (compose with an injection $\mathcal{B} \to \mathbb{Z}_+$ and apply [[§14 Counting Infinite Sets#^cor-14-6|250 Cor. §14.6]]).
 
 ^pf-18-2
 
-*Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]]
+*Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]], [[§14 Counting Infinite Sets#^cor-14-6|250 §14.6]]
 
 > [!remark]- Connections
 > - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§32 Position Eigenstates and Continuous Resolutions#^prop-32-1|556 Prop. §32.1]]).

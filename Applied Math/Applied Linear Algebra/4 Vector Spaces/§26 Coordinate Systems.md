@@ -184,6 +184,7 @@ Choosing a basis $\mathcal{B} = \{\mathbf{b}_1, \ldots, \mathbf{b}_n\}$ for a ve
 > [!remark]- Connections
 > - Rigorous treatment: isomorphisms [[§10 Invertibility and Isomorphisms#^ladr-3-69|LADR 3.69]], and [[Dimension shows whether vector spaces are isomorphic]] ([[§10 Invertibility and Isomorphisms#^ladr-3-70|LADR 3.70]]): finite-dimensional spaces are isomorphic exactly when they have the same dimension, the fact behind Lay's question at the end of 4.4 (answered in [[§27 The Dimension of a Vector Space#^thm-27-2|Theorem §27.2]]).
 > - One-to-one and onto, and an invertible function is a bijection: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].
+> - See also: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-2|556 Def. §2.2]] (the same definition for linear spaces that need not be finite-dimensional).
 
 > [!theorem] Corollary §26.4: Coordinates Preserve Independence and Spanning
 > Let $\mathcal{B}$ be a basis of $V$ with $n$ vectors, and let $\mathbf{u}_1, \ldots, \mathbf{u}_p$, $\mathbf{w}$ be in $V$.

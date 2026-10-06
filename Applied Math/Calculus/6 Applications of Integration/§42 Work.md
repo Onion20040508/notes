@@ -107,6 +107,9 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 
 ^def-42-4
 
+> [!remark]- Connections
+> - ODE version: [[§19 Mechanical and Electrical Vibrations#^def-19-1|331 Def. §19.1]] (Hooke's law for the spring–mass system, written as the restoring force $F_s = -kL$, with $k$ measured from the elongation under a known weight).
+
 > [!example] Example §42.2: Stretching a Spring
 > A force of $40$ N is required to hold a spring that has been stretched from its natural length of $10$ cm to a length of $15$ cm. How much work is done in stretching the spring from $15$ cm to $18$ cm?
 >

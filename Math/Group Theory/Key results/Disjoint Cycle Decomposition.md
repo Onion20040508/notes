@@ -26,5 +26,5 @@ tags: [group-theory, hub]
 ## Connections
 - **Used for.** Computing with permutations: inverses, powers, and order = lcm of the cycle lengths ([[§11 Disjoint Cycle Decomposition#^prop-11-4|§11.4]]). Also every permutation is a product of transpositions ([[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]]), the input to [[The Sign Homomorphism]].
 - **Uniqueness matters.** Because the decomposition is unique up to order, the cycle type is well defined. It classifies conjugacy ([[Conjugacy Classes of Sₙ Are Cycle Types]]).
-- **Finite sets only.** For infinite X the shift n ↦ n + 1 on ℤ is a single "infinite cycle" ([[§12 Multiplying and Conjugating Cycles#^rem-12-2|Finite Sets Only]]). Finiteness enters through the pigeonhole principle of [[§4 Subgroups#^rem-4-4|Where Finiteness Enters]].
+- **Finite sets only.** For infinite X the shift n ↦ n + 1 on ℤ is a single "infinite cycle" ([[§12 Multiplying and Conjugating Cycles#^rem-12-2|Finite Sets Only]]). Finiteness enters through the [[Pigeonhole Principle|pigeonhole principle]] (250 Thm. §11.2), as in [[§4 Subgroups#^rem-4-4|Where Finiteness Enters]].
 - **Cycles are orbits.** The cycles of σ are the orbits of ⟨σ⟩ on {1, …, n} ([[§27 Orbits#^def-27-1|Def. §27.1]]), so the theorem is a case of [[§27 Orbits#^prop-27-1|Orbits Partition X]].

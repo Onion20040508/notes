@@ -170,6 +170,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The operator version: [[§34 Determinants#^ladr-9-52|LADR 9.52 (Determinant is a similarity invariant)]].
+> - Computational version: [[§33 The Characteristic Equation#^def-33-3|235 Def. §33.3]] (similar matrices, similarity transformations) and [[§33 The Characteristic Equation#^thm-33-6|235 Thm. §33.6]] (similar matrices have the same characteristic polynomial, hence the same eigenvalues with multiplicities).
 
 > [!theorem] Proposition §33.4: Conjugacy Class of a Diagonal Matrix
 > Let $D = \begin{pmatrix} 3 & 0 \\ 0 & 4 \end{pmatrix} \in GL_2(\mathbb{C})$. The conjugacy class of $D$ in $GL_2(\mathbb{C})$ is the set of all $2 \times 2$ complex matrices with eigenvalues $3$ and $4$:

@@ -43,7 +43,7 @@ tags: [real-analysis, hub]
 
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).
-- Physics: the gradient theorem (work done by a conservative force depends only on endpoints) is FTC along a curve.
+- Physics: the gradient theorem ([[Fundamental Theorem for Line Integrals|Calc Thm. §109.1]]; work done by a conservative force depends only on endpoints) is FTC along a curve.
 - Special case of the Generalized Stokes' Theorem in 452, [[§23 The Generalized Stokes' Theorem#^thm-23-1|452 Thm. §23.1]]: FTC I for C¹ functions is its case Ω = [a, b] with ω a 0-form.
 - Lebesgue version: [[§18 Differentiation Theory#^thm-18-13|551 Thm. §18.13]] (FTC I holds exactly for absolutely continuous functions) and [[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]] (FTC II holds almost everywhere for every integrable function).
 - **Also in [[Calculus]]:** [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]], [[§36 The Fundamental Theorem of Calculus#^thm-36-2|Calc Thm. §36.2]] (computational treatment with worked examples; Stewart's Part 1 is FTC II here, his Part 2 is FTC I).

@@ -94,6 +94,7 @@ $$
 > [!remark]- Connections
 > - The solution set of $L[y] = g$ is the translate $Y + S$ of the two-dimensional solution space $S$ of $L[y] = 0$ ([[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^rem-14-2|§14, Remark: The Solution Space Is a Two-Dimensional Vector Space]]): [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]]. The same structure for linear systems, "the solutions of $A\mathbf{x} = \mathbf{b}$ are $\mathbf{p}$ plus the solutions of $A\mathbf{x} = \mathbf{0}$": [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]].
 > - The same structure for linear difference equations, "one particular solution plus the general solution of the homogeneous equation": [[§30 Applications to Difference Equations#^thm-30-7|235 Thm. §30.7]].
+> - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-2|341 Thm. §2.2]] (the same statement in Powers' review of ODEs).
 
 > [!definition] Definition §17.1: Complementary Solution; Particular Solution
 > The general solution $c_1y_1(t) + c_2y_2(t)$ of the homogeneous equation (2) corresponding to (1) is called the **complementary solution** and is denoted $y_c(t)$. Any solution $Y(t)$ of the nonhomogeneous equation (1) is called a **particular solution**. By [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^thm-17-2|Theorem §17.2]], solving (1) takes three steps:
@@ -348,6 +349,9 @@ The procedure of [[§17 Nonhomogeneous Equations; Method of Undetermined Coeffic
 ^pf-17-4
 
 *Uses:* [[§17 Nonhomogeneous Equations; Method of Undetermined Coefficients#^prop-17-3|§17.3]], [[§15 Complex Roots of the Characteristic Equation#^prop-15-1|§15.1]], [[§15 Complex Roots of the Characteristic Equation#^def-15-1|Def. §15.1]], [[§14 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-14-6|§14.6]]
+
+> [!remark]- Connections
+> - See also: [[§2★ Nonhomogeneous Linear Equations#^thm-2-4|341 Thm. §2.4]] (the same table of trial solutions in Powers' review of ODEs, with the Revision Rule for the factor $t^s$).
 
 > [!remark] Remark: Method — Undetermined Coefficients
 > To solve an initial value problem for $ay'' + by' + cy = g(t)$ (27) with constant $a$, $b$, $c$:

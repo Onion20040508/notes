@@ -218,7 +218,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > \Big|\sqrt{a^2 + b^2} - \sqrt{a^2 + c^2}\Big| \le |b - c| ,
 > $$
 >
-> because the left side is the difference of the distances from the origin to $(a, b)$ and to $(a, c)$, and by the triangle inequality this is at most the distance $|b - c|$ between the two points. Hence the sum in (4) differs from the Riemann sum $R_n = \sum_{i=1}^n h(t_i^*)\,\Delta t$ by at most
+> because the left side is the difference of the distances from the origin to $(a, b)$ and to $(a, c)$, and by the triangle inequality in the plane ([[Triangle inequality|LADR 6.17]]) this is at most the distance $|b - c|$ between the two points. Hence the sum in (4) differs from the Riemann sum $R_n = \sum_{i=1}^n h(t_i^*)\,\Delta t$ by at most
 >
 > $$
 > \sum_{i=1}^n |g'(t_i^{**}) - g'(t_i^*)|\,\Delta t .

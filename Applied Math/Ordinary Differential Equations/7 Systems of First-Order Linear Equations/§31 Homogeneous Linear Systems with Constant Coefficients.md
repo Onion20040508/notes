@@ -31,6 +31,9 @@ For $n = 1$ the system is $x' = ax$, with solutions $x = ce^{at}$. If $a \ne 0$,
 
 ^def-31-2
 
+> [!remark]- Connections
+> - See also: [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]] (Stewart's phase plane, phase trajectories and phase portrait, for the nonlinear predator–prey system).
+
 ## Exponential Solutions
 
 When $\mathbf{A}$ is diagonal the equations decouple. For instance $\mathbf{x}' = \begin{pmatrix} 2 & 0 \\ 0 & -3 \end{pmatrix}\mathbf{x}$ is $x_1' = 2x_1$, $x_2' = -3x_2$, so $x_1 = c_1e^{2t}$, $x_2 = c_2e^{-3t}$, and

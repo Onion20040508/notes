@@ -177,13 +177,13 @@ We now apply the machinery of §24–§25 to power series — with striking cons
 > \arctan x = \int_0^x \frac{dt}{1+t^2} = \sum_{n=0}^\infty \frac{(-1)^n}{2n+1}\, x^{2n+1}, \qquad |x| < 1
 > $$
 >
-> [the evaluation of the integral uses $\arctan' = \tfrac{1}{1+x^2}$, proved in §29 via the Inverse Function Theorem]. At $x = 1$ the right side becomes Leibniz's celebrated
+> [the evaluation of the integral uses $\arctan' = \tfrac{1}{1+x^2}$, proved later in [[§29 The Mean Value Theorem#^ex-29-7|Example §29.7]] via the [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]]]. At $x = 1$ the right side becomes Leibniz's celebrated
 >
 > $$
 > 1 - \frac13 + \frac15 - \frac17 + \cdots = \frac\pi4,
 > $$
 >
-> convergent by the Alternating Series Test (§15) — but justifying the *value* at the endpoint, where $|x| < 1$ no longer protects the termwise integration, requires Abel's theorem (Ross §26), which these notes do not cover: one more entry on the ledger.
+> convergent by the Alternating Series Test ([[§15 Alternating Series and Integral Tests#^thm-15-1|Theorem §15.1]]) — but justifying the *value* at the endpoint, where $|x| < 1$ no longer protects the termwise integration, requires Abel's theorem (Ross §26), which these notes do not cover: one more entry on the ledger.
 
 ^ex-26-3
 

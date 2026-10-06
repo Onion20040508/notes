@@ -282,7 +282,7 @@ Conversely, if $f'(z_0)$ exists, then $\Delta w = f'(z_0)\Delta z + \eta\,\Delta
 > f''(z) = U_x + iV_x = e^{-x}\cos y - ie^{-x}\sin y = f(z) .
 > $$
 >
-> (With [[§30 The Exponential Function#^def-30-1|Definition §30.1]], $f(z) = e^{-x - iy} = e^{-z}$, and the chain rule gives $f' = -e^{-z}$, $f'' = e^{-z}$.)
+> (With [[§30 The Exponential Function#^def-30-1|Definition §30.1]], $f(z) = e^{-x - iy} = e^{-z}$, and the chain rule ([[§20 Rules for Differentiation#^thm-20-4|Theorem §20.4]]) gives $f' = -e^{-z}$, $f'' = e^{-z}$.)
 >
 > *B&C: Sec. 24, Exercise 2(b); Source: 342 HW 3, Q2(b)*
 

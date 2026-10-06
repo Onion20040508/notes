@@ -761,11 +761,11 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 > \|f_s - f_t\|_\infty = \|\chi_{(\min(s,t),\, \max(s,t))}\|_\infty = 1.
 > $$
 >
-> So $\{f_t\}_{t \in (0,1)}$ is an [[§4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by [[Continuity of Measure|continuity of measure]], $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
+> So $\{f_t\}_{t \in (0,1)}$ is an [[§4 Uncountability#^ex-4-2|uncountable]] family with pairwise distance $1$. Any dense subset must contain a point within distance $1/2$ of each $f_t$, and since the $1/2$-balls around distinct $f_t$'s are disjoint, the dense subset must be uncountable. For a general $E$ with $m(E) > 0$, the same argument works with $f_t = \chi_{E_0 \cap \{x_1 < t\}}$, where $E_0 \subseteq E$ has $0 < m(E_0) < \infty$: by [[Continuity of Measure|continuity of measure]] from below and [[§11 Borel Sets and Measure Spaces#^prop-11-13|from above]] (using $m(E_0) < \infty$ and that each hyperplane $\{x_1 = t\}$ is null), $t \mapsto m(E_0 \cap \{x_1 < t\})$ is continuous and increasing, so it takes uncountably many values, and two $f_t$ with different values are at distance $1$.
 
 ^pf-19-21
 
-*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Continuity of Measure|§11.12]]
+*Uses:* [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-6|Def. §19.6]], [[§4 Uncountability#^ex-4-2|Ex. §4.2]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|Def. §19.9]], [[Continuity of Measure|§11.12]], [[§11 Borel Sets and Measure Spaces#^prop-11-13|§11.13]]
 
 > [!remark]- Connections
 > - Same uncountable-versus-countable counting as in [[§18 Countability Axioms#^prop-18-4|590 §18.4]](2) ($\mathbb{R}_l$ not second countable); by [[§18 Countability Axioms#^prop-18-4|590 §18.4]](3), $L^\infty$ is also not second countable.

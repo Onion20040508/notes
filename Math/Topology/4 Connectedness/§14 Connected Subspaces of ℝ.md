@@ -124,6 +124,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - MATH 451 version on $[a,b]$: [[Intermediate Value Theorem]] ([[§18 Properties of Continuous Functions#^thm-18-3|Theorem §18.3]]).
+> - Computational version: [[§10 Continuity#^thm-10-10|Calc Thm. §10.10]] (with worked examples locating roots).
 
 > [!remark] Remark: IVT: The Power of Connectedness
 > The Intermediate Value Theorem is connectedness in action:

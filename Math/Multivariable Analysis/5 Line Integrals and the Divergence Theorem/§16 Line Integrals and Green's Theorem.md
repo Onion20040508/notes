@@ -48,7 +48,7 @@ $$
 \sum_{i=1}^N f(x(t_i), y(t_i)) \sqrt{x'(\xi_i)^2 + y'(\eta_i)^2} \, (t_i - t_{i-1}).
 $$
 
-The Mean Value Theorem gives different points $\xi_i, \eta_i$ for $x'$ and $y'$, so this is not yet a Riemann sum for $f \sqrt{x'^2 + y'^2}$. But $\big|\sqrt{x'(\xi_i)^2 + y'(\eta_i)^2} - \sqrt{x'(t_i)^2 + y'(t_i)^2}\big| \leq |x'(\xi_i) - x'(t_i)| + |y'(\eta_i) - y'(t_i)|$, which is uniformly small once the mesh is small, by uniform continuity of $x'$ and $y'$ on $[a, b]$; since $f$ is bounded on $\gamma$, the difference between the two sums vanishes in the limit.
+The Mean Value Theorem gives different points $\xi_i, \eta_i$ for $x'$ and $y'$, so this is not yet a Riemann sum for $f \sqrt{x'^2 + y'^2}$. But $\big|\sqrt{x'(\xi_i)^2 + y'(\eta_i)^2} - \sqrt{x'(t_i)^2 + y'(t_i)^2}\big| \leq |x'(\xi_i) - x'(t_i)| + |y'(\eta_i) - y'(t_i)|$, which is uniformly small once the mesh is small, by uniform continuity of $x'$ and $y'$ on $[a, b]$ ([[§19 Uniform Continuity#^thm-19-1|451 §19.1]]); since $f$ is bounded on $\gamma$, the difference between the two sums vanishes in the limit.
 
 Taking $N \to \infty$:
 
@@ -191,7 +191,7 @@ $$
 Adding the results:
 
 > [!theorem] Theorem §16.1: Green's Theorem
-> Let $D \subseteq \mathbb{R}^2$ be a bounded domain whose boundary $\gamma = \partial D$ is a piecewise smooth, simple closed curve, oriented counterclockwise. If $f, g$ are $C^1$ on an open set containing $\overline{D}$, then:
+> Let $D \subseteq \mathbb{R}^2$ be a bounded domain whose boundary $\gamma = \partial D$ is a piecewise smooth, simple closed curve ([[§43 Contours#^def-43-1|342 Def. §43.1]]), oriented counterclockwise. If $f, g$ are $C^1$ on an open set containing $\overline{D}$, then:
 >
 > $$
 > \boxed{\oint_\gamma f \, dx + g \, dy = \iint_D \left( \frac{\partial g}{\partial x} - \frac{\partial f}{\partial y} \right) dx \, dy}
@@ -206,7 +206,7 @@ Adding the results:
 > - Why the region must have no holes for "curl-free ⇒ conservative": [[§22 The Algebra of Differential Forms#^prop-22-11|A Closed Form That Is Not Exact (§22.11)]]; the topological notion is [[§23 The Fundamental Group#^def-23-3|simply connected]] (590 §23.3).
 > - Computational version: [[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]] (with worked examples).
 > - Computational version: [[§50 Cauchy–Goursat Theorem#^thm-50-2|342 Thm. §50.2]] (Cauchy's theorem for f′ continuous, proved by this theorem and the Cauchy–Riemann equations) and [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|342 Thm. §51.3]] (Goursat's proof, which drops the continuity of f′).
-> - Used in Quantum Field Theory: with the Cauchy–Riemann equations, [[Green's Theorem|Theorem §16.1]] proves Cauchy's theorem and the deformation of contours behind every propagator contour — [[§CA.4 Contour Integration#^thm-ca-4-2|QFT Theorem §CA.4.2]].
+> - Used in Quantum Field Theory: with the Cauchy–Riemann equations, [[Green's Theorem|Theorem §16.1]] proves Cauchy's theorem and the [[Principle of Deformation of Paths|deformation of contours]] behind every propagator contour — [[§CA.4 Contour Integration#^thm-ca-4-2|QFT Theorem §CA.4.2]].
 
 > [!remark] Remark: Why the Signs Work Out
 > The sign pattern $g_x - f_y$ is not arbitrary. It comes from:
@@ -325,6 +325,7 @@ Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_
 
 > [!remark]- Connections
 > - First introduced with the gradient and curl in [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]]; in forms language: [[§22 The Algebra of Differential Forms#^prop-22-4|d on 2-Forms Gives the Divergence (§22.4)]].
+> - Computational version: [[§111 Curl and Divergence#^def-111-3|Calc Def. §111.3]] (the divergence of a field in three variables, with worked examples).
 
 > [!example] Example §16.1: Divergence Computations
 > **1.** $\mathbf{u}(x,y) = (x, y)$. Then $\nabla \cdot \mathbf{u} = \partial_x(x) + \partial_y(y) = 1 + 1 = 2$.

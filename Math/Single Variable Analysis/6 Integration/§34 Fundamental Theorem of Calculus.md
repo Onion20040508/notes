@@ -35,7 +35,7 @@ We all know this — but how to *prove* it? The integral $\int_a^b g'$ is define
 > g(b) - g(a) = \sum_{k=1}^n \bigl( g(t_k) - g(t_{k-1}) \bigr) = \sum_{k=1}^n g'(x_k)\,(t_k - t_{k-1})
 > $$
 >
-> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* for $g'$. Now bracket each term:
+> for some points $x_k \in (t_{k-1}, t_k)$ — the middle expression is a *Riemann sum* ([[§32 The Definition of the Riemann Integral#^def-32-3|Def. §32.3]]) for $g'$. Now bracket each term:
 >
 > $$
 > m\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}) \ \leq\ g'(x_k)(t_k - t_{k-1}) \ \leq\ M\bigl(g', [t_{k-1},t_k]\bigr)(t_k - t_{k-1}),
@@ -196,7 +196,7 @@ Integration by parts needs a preliminary: products of integrable functions are i
 *The proof in one strip: $F(x)$ is the shaded area, and the increment $F(x+h) - F(x)$ is the thin strip — of area $f(x) h$ up to an error controlled by the continuity of $f$ at $x$. Dividing by $h$: $F'(x) = f(x)$.*
 
 > [!remark]- Connections
-> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]].
+> - The substitution rule, which 451 never states, is proved in 452 from this theorem and the chain rule: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]]; computational version, with worked examples: [[Substitution Rule|Calc Thm. §38.1]].
 > - Lebesgue version: for integrable $f$ the integral function is absolutely continuous ([[§18 Differentiation Theory#^thm-18-12|551 Thm. §18.12]]) and $F' = f$ almost everywhere without any continuity ([[§18 Differentiation Theory#^thm-18-26|551 Thm. §18.26]]).
 > - Computational version: [[§36 The Fundamental Theorem of Calculus#^thm-36-1|Calc Thm. §36.1]] (Stewart's Part 1 is this FTC II; with worked examples).
 > - Used in ODEs: the variable-limit integrals in the solution formula for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]], in variation of parameters, [[§18★ Variation of Parameters#^thm-18-1|331 Thm. §18.1]], and in the integral equation of Picard iteration, [[§11 The Existence and Uniqueness Theorem#^lem-11-2|331 Lemma §11.2]].

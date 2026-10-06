@@ -85,6 +85,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Physics: the probabilities $|\langle e_k|\psi\rangle|^2$ over any orthonormal set of outcomes sum to at most $\|\psi\|^2=1$.
 > - Same inequality in 556 ([[§24 Orthonormal Sets and Bases#^lem-24-2|556 Lemma §24.2]]), extended to arbitrary orthonormal families in [[§24 Orthonormal Sets and Bases#^thm-24-5|556 Thm. §24.5]].
+> - Computational version: [[§11★ Mean Error and Convergence in Mean#^thm-11-3|341 Thm. §11.3]] (for the trigonometric system on $[-a,a]$, in the limit $N\to\infty$ too).
 
 > [!definition] Definition 6.27: Orthonormal basis
 > An *orthonormal basis* of $V$ is an orthonormal list that is also a basis of $V$. Example: the standard basis of $\F^n$.
@@ -92,7 +93,7 @@ tags: [linear-algebra]
 ^ladr-6-27
 
 > [!remark]- Connections
-> - In a Hilbert space an orthonormal basis is defined by the series expansion of every vector ([[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
+> - In a Hilbert space ([[§21 Cauchy–Schwarz and the Induced Norm#^def-21-1|556 Def. §21.1]]) an orthonormal basis is defined by the series expansion of every vector ([[§24 Orthonormal Sets and Bases#^def-24-4|556 Def. §24.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
 > - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of $\mathbb R^n$).
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases
@@ -284,6 +285,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In several variables the gradient is the Riesz representer of the derivative, $Df_{\mathbf p}(\mathbf u)=\nabla f(\mathbf p)\cdot\mathbf u$: [[Directional Derivative Formula|452 Thm. §7.1]].
+> - Same theorem for Hilbert spaces: [[§23 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-23-2|556 Thm. §23.2]] (there $V$ may be infinite-dimensional and the functional must be bounded).
 
 > [!example] Example 6.44: Computation illustrating Riesz representation theorem (p. 206)
 > Find $q\in\Poly_2(\R)$ with $\int_{-1}^1p(t)\cos(\pi t)\,dt=\int_{-1}^1pq$ for all $p\in\Poly_2(\R)$. Use the orthonormal basis $e_1,e_2,e_3$ of [[§20 Orthonormal Bases#^ladr-6-34|6.34]] and the formula $q=\sum_k\varphi(e_k)e_k$ from the proof of [[Riesz representation theorem|6.42]]:

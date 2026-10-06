@@ -254,7 +254,7 @@ Two facts about such changes of parameter are used repeatedly: the substitution 
 The polygonal line (4) is a contour; the circles (5) and (6) and the boundary of a triangle or a rectangle, taken in a specific direction, are simple closed contours.
 
 > [!remark]- Connections
-> - A contour is the piecewise-smooth curve of calculus, [[§108 Line Integrals#^def-108-2|Calc Def. §108.2]], which is also the class of curves along which line integrals and Green's theorem are developed there.
+> - A contour is the piecewise-smooth curve of calculus, [[§108 Line Integrals#^def-108-2|Calc Def. §108.2]], which is also the class of curves along which line integrals and Green's theorem ([[§110 Green's Theorem#^thm-110-1|Calc Thm. §110.1]]) are developed there.
 
 > [!example] Example §43.5: A Smooth Arc That Crosses the Real Axis Infinitely Often
 > Let $y(x) = x^3\sin(\pi/x)$ when $0 < x \le 1$ and $y(0) = 0$, and let $C$ be $z = x + iy(x)$ $(0 \le x \le 1)$.

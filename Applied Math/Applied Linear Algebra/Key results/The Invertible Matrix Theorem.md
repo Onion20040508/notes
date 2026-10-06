@@ -46,5 +46,5 @@ tags: [applied-linear-algebra, hub]
 - [[§51★ The Singular Value Decomposition#^thm-51-6|Theorem §51.6: The Invertible Matrix Theorem (Concluded)]]
 
 ## Connections
-- Rigorous treatment: for a linear operator on a finite-dimensional space, injective $\Leftrightarrow$ surjective $\Leftrightarrow$ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]] (hub [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]]), proved there from the fundamental theorem of linear maps instead of pivot counting; one-sided inverses are two-sided, [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]].
+- Rigorous treatment: for a linear operator on a finite-dimensional space, injective $\Leftrightarrow$ surjective $\Leftrightarrow$ invertible, [[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]] (hub [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]]), proved there from the [[Fundamental theorem of linear maps|fundamental theorem of linear maps]] instead of pivot counting; one-sided inverses are two-sided, [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]].
 - The same phenomenon for functions between finite sets of equal size: injective iff surjective, [[§11 Properties of Finite Sets#^thm-11-7|250 Thm. §11.7]].
