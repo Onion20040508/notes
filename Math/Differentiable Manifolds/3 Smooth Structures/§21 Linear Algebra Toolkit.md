@@ -118,7 +118,7 @@ tags: [differentiable-manifolds, math591]
 ![[m591-10-1.svg]]
 *A linear map $A : V \to W$ carries vectors forward; its dual map $A^{\ast} : W^{\ast} \to V^{\ast}$ carries covectors backward.*
 
-A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual map runs backwards. This is the linear-algebra shadow of the directions in [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§26, Pushing Derivations Forward]], where germs were pulled back and derivations pushed forward.
+A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual map runs backwards. This is the linear-algebra shadow of the directions in [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§28, Pushing Derivations Forward]], where germs were pulled back and derivations pushed forward.
 
 > [!theorem] Proposition §21.4: Properties of the Dual Map
 > Let $A : V \to W$ and $B : W \to Z$ be linear.
@@ -179,7 +179,7 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 
 ^pf-21-5
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!remark]- Connections
 > - Applied to the pairing of tangent vectors with germs: [[§32 The Cotangent Space#^prop-32-7|§32.7]], [[§32 The Cotangent Space#^thm-32-8|§32.8]].
@@ -260,7 +260,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 
 ^pf-21-7
 
-*Uses:* [[§21 Linear Algebra Toolkit#^def-21-7|Def. §21.7]]
+*Uses:* [[§21 Linear Algebra Toolkit#^def-21-7|Def. §21.7]], [[§21 Linear Algebra Toolkit#^def-21-8|Def. §21.8]]
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92 (dimension of a product)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93 (products and direct sums)]], [[Condition for a direct sum|LADR 1.45]].

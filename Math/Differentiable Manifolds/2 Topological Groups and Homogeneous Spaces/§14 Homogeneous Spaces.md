@@ -235,7 +235,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-14-4
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-3|Def. §13.3]], [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§14 Homogeneous Spaces#^def-14-5|Def. §14.5]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-3|Def. §13.3]], [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§14 Homogeneous Spaces#^def-14-5|Def. §14.5]], [[§14 Homogeneous Spaces#^def-14-6|Def. §14.6]]
 
 > [!remark]- Connections
 > - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§25 Actions#^prop-25-1|493 §25.1 (A Left Action Gives a Right Action)]].

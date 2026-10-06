@@ -101,7 +101,7 @@ For the Hopf fibration the converse of [[§36 Fibrations#^prop-36-4|Proposition 
 
 ^pf-39-1
 
-*Uses:* [[§39 Projective Spaces and the Hopf Fibration#^ex-39-3|Ex. §39.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+*Uses:* [[§39 Projective Spaces and the Hopf Fibration#^ex-39-3|Ex. §39.3]], [[§36 Fibrations#^def-36-3|Def. §36.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-9|§19.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
 
 > [!remark]- Connections
 > - The discrete-fibre analogue: the sheets over an evenly covered set, [[§31 Covering Spaces#^def-31-1|590 Def. §31.1]], each a local section of the covering map, [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]].

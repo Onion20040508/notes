@@ -192,7 +192,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^pf-4-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
 
 > [!theorem] Proposition §4.4: The Saturation Correspondence
 > Let $\pi : X \to X/{\sim}$ be the projection. Then $W \mapsto \pi^{-1}(W)$ is a bijection from the subsets of $X/{\sim}$ onto the saturated subsets of $X$, with inverse $S \mapsto \pi(S)$, and it preserves unions, intersections and complements. Under it, the open subsets of $X/{\sim}$ correspond exactly to the saturated open subsets of $X$, and the closed subsets to the saturated closed subsets.

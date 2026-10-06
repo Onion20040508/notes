@@ -46,7 +46,7 @@ The submersion half is the lecture's definition. Immersions were listed as the t
 
 ^pf-34-1
 
-*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
+*Uses:* [[§34 Submersions#^def-34-1|Def. §34.1]], [[§34 Submersions#^def-34-2|Def. §34.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§33 Local Diffeomorphisms#^thm-33-2|§33.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]]
 
 > [!example] Example §34.1: Projections Are Submersions
 > The projection $\pi : \mathbb{R}^k \times \mathbb{R}^l \to \mathbb{R}^k$, $(x, y) \mapsto x$, is a submersion.

@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions — “which will be the beginning of a chain of operators when we discuss the de Rham cohomology.”*
 
-A one-form is a section of the cotangent bundle ([[§36 Fibrations#^def-36-2|Definition §36.2]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none ([[§39 Projective Spaces and the Hopf Fibration#^rem-39-1|Remark in §37]]).
+A one-form is a section of the cotangent bundle ([[§36 Fibrations#^def-36-2|Definition §36.2]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none ([[§39 Projective Spaces and the Hopf Fibration#^rem-39-1|Remark in §39]]).
 
 ## One-Forms and Their Coordinates
 

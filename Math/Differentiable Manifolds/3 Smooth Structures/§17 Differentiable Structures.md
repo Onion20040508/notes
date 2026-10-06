@@ -267,8 +267,8 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 *Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]
 
 > [!remark]- Connections
-> - Compatible with the other two circle atlases: [[§24 The Circle#^prop-24-1|§24.1]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§18 Projective Spaces as Smooth Manifolds#^rem-18-2|Remark after §17.4]].
-> - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§37 The Fundamental Group of Sⁿ#^pf-37-3|590 §37, proof of Thm. §27.3]].
+> - Compatible with the other two circle atlases: [[§24 The Circle#^prop-24-1|§24.1]]; the complex counterpart $w \mapsto 1/w$ on $\mathbb{CP}^1$: [[§18 Projective Spaces as Smooth Manifolds#^rem-18-2|Remark after §18.4]].
+> - Stereographic projection in 590: it identifies S¹ with the one-point compactification of ℝ, [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]], and Sⁿ minus a point with ℝⁿ in the proof that Sⁿ is simply connected, [[§37 The Fundamental Group of Sⁿ#^pf-37-3|590 §37, proof of Thm. §37.3]].
 
 ![[m591-8-3.svg]]
 *Left, $\sigma_N$: the line from $N$ through a point $P$ of the circle meets the horizontal axis at $\sigma_N(P)$. Right, $\sigma_S$: the same construction from the south pole.*
@@ -312,7 +312,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 *Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]
 
 > [!remark]- Connections
-> - Polar angle as a coordinate (452): [[Polar and spherical coordinates]]; parametrizations as inverse charts: [[§20 Manifolds in Euclidean Space#^rem-20-2|§19, Remark: A Parametrization Is an Inverse Chart]].
+> - Polar angle as a coordinate (452): [[Polar and spherical coordinates]]; parametrizations as inverse charts: [[§20 Manifolds in Euclidean Space#^rem-20-2|§20, Remark: A Parametrization Is an Inverse Chart]].
 
 > [!remark] Remark: Three Atlases and One Structure
 > $S^1$ thus carries at least three different atlases. They are not competing structures: every chart of one is compatible with every chart of another, so they determine the *same* smooth structure. This is proved in [[§24 The Circle#^prop-24-1|§24.1]], once regular level sets are available. For instance, on the arc where $U_2$ (upper half, coordinate $x$) meets $U_a$ the transition is $\theta \mapsto \cos\theta$ with inverse $x \mapsto \arccos x$, and $\sigma_N \circ \varphi_2^{-1}(x) = x/(1 - \sqrt{1-x^2})$ is smooth on $(-1,0) \cup (0,1)$. “Which atlas you write down is a matter of convenience” — what is intrinsic is the maximal atlas they all generate.

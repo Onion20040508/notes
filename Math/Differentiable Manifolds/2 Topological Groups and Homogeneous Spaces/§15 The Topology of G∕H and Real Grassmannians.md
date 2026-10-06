@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — The coset space $G/H$ as a topological space: open quotient, Hausdorff when $H$ is closed, and homeomorphic to a homogeneous space. The Grassmannians are the payoff. The two threads meet in the next chapter.*
 
-Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-6|§14.6]] and [[§14 Homogeneous Spaces#^def-14-7|Def. §14.7]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
+Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-6|§14.6]] and [[§14 Homogeneous Spaces#^def-14-7|§14.7]] are purely algebraic. If $G$ carries a topology, $G/H$ inherits one in the only reasonable way.
 
 > [!definition] Definition §15.1: The Quotient Topology on a Coset Space
 > Let $G$ be a topological group and $H \le G$ a subgroup. The **quotient topology** on $G/H$ is the quotient topology induced by the canonical projection $\pi$ of Definition [[§14 Homogeneous Spaces#^def-14-7|§14.7]], in the sense of Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]:
@@ -245,7 +245,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-15-6
 
-*Uses:* [[§15 The Topology of G∕H and Real Grassmannians#^def-15-3|Def. §15.3]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§14 Homogeneous Spaces#^def-14-2|Def. §14.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[Gram–Schmidt procedure]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
+*Uses:* [[§15 The Topology of G∕H and Real Grassmannians#^def-15-3|Def. §15.3]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§14 Homogeneous Spaces#^def-14-1|Def. §14.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[Gram–Schmidt procedure]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-51|LADR 6.51]], [[Linear map lemma]]
 
 > [!remark]- Connections
 > - The case $k = 1$ of the orthonormal-basis argument is [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|Ex. §13.5]]; orthonormal bases in LADR: [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-49|LADR 7.49]].

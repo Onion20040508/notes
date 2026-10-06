@@ -202,7 +202,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^rem-26-3
 
 > [!remark] Remark: Looking Ahead: Transversality Is Generic
-> Two points of [[§26 Transversality#^rem-26-3|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§26]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
+> Two points of [[§26 Transversality#^rem-26-3|the remark above]] will be taken up once abstract manifolds and submanifolds are in place. First, the definition makes sense verbatim for a smooth map $F : X \to Y$ between abstract manifolds and a submanifold $S \subseteq Y$, with *abstract* tangent spaces and the differential of [[§28 Derivations and the Abstract Tangent Space#Pushing Derivations Forward|§28]] in place of $T^{\mathrm{geo}}$ and the Jacobian:
 >
 > $$
 > dF_p(T_pX) + T_{F(p)}S = T_{F(p)}Y \qquad \text{for all } p \in F^{-1}(S),

@@ -140,7 +140,7 @@ tags: [functional-analysis, math556]
 Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-2|§26.2]] and [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]] described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
 
 > [!theorem] Proposition §31.5: The Null Space Has Codimension One
-> Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§2 Quotient Spaces and Complements#^def-2-2|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|internal direct sum]], [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
+> Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§2 Quotient Spaces and Complements#^def-2-3|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|internal direct sum]], [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
 >
 > *Source: HW5, Problem 4*
 >
@@ -159,7 +159,7 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 
 ^pf-31-5
 
-*Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^prop-1-3|§1.3]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§6 Dimension#^ladr-2-35|LADR 2.35]]
+*Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^prop-1-3|§1.3]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§6 Dimension#^ladr-2-35|LADR 2.35]]
 
 > [!remark]- Connections
 > - The Hilbert-space case, with the line $N^\perp$ as the complement: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]]; the move “subtract a multiple of $x_0$”: [[Functional Analysis Problem-Solving Techniques#^rem-t18|Technique 18]].

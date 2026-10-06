@@ -123,10 +123,6 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 ^thm-26-4
 
-> [!remark]- Connections
-> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]].
-
 > [!proof]+ Proof of (1)
 > Linearity of $\ell_a$ in $x$ is linearity of the inner product in its first argument. Boundedness is Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]): $|\ell_a(x)| = |(x, a)| \le \|a\|\,\|x\|$, so $c = \|a\|$ works.
 
@@ -162,6 +158,10 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 ^pf-26-4-2
 
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^pf-26-4|§26.4 (1)]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
+
+> [!remark]- Connections
+> - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]].
 
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*

@@ -114,7 +114,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 ^pf-12-3
 
-*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Def. §11.6]]
+*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Def. §11.6]]
 
 **Transcription note.** Both the board and the audio say “$0 \in \mathbb{R}$ is a regular value of $\det$.” Read literally this is false for $n \ge 2$: the zero matrix lies in $\det^{-1}(0)$, and along the line $\gamma(t) = tA$ one has $\det(tA) = t^n \det A$, whose derivative at $t = 0$ vanishes for $n \ge 2$; so $\nabla\det(0) = 0$ and $0$ is a critical value. What the computation proves is that $1$ is a regular value of $\det$ (or $0$ of $\det - 1$, the form in which level sets are usually written as zero sets). The general statement is [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4]] below.
 
@@ -201,7 +201,7 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 ^thm-12-6
 
 > [!proof]+ Proof
-> The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5]]. Local Euclideanness is the real content, and it is established in stages. $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ ([[§3 Subspaces and Products#^prop-3-6|Proposition §3.6]]). $\mathrm{SL}(n,\mathbb{R})$ is done above, in this section. $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ need the coordinate-free differential and are done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|§23, The Orthogonal Group as a Smooth Manifold]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#The Unitary Group as a Smooth Manifold|§22, The Unitary Group as a Smooth Manifold]]; [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]] collects all six, with their dimensions and geometric tangent spaces.
+> The proof has two parts of very different difficulty. The point-set part is free: each group is a subspace of $\mathbb{R}^{n^2}$ or $\mathbb{R}^{2n^2}$, hence $T_2$ and second countable by [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5]]. Local Euclideanness is the real content, and it is established in stages. $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are open subsets of Euclidean space and hence locally Euclidean of dimensions $n^2$ and $2n^2$ ([[§3 Subspaces and Products#^prop-3-6|Proposition §3.6]]). $\mathrm{SL}(n,\mathbb{R})$ is done above, in this section. $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ need the coordinate-free differential and are done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|§23, The Orthogonal Group as a Smooth Manifold]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#The Unitary Group as a Smooth Manifold|§23, The Unitary Group as a Smooth Manifold]]; [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]] collects all six, with their dimensions and geometric tangent spaces.
 
 ^pf-12-6
 

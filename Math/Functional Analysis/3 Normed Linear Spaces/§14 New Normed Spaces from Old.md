@@ -282,7 +282,7 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 
 ^pf-14-8
 
-*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
+*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[Characterization of the Supremum|451 Characterization of the Supremum]]
 
 > [!remark]- Connections
 > - The quotient space itself: [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-3|551 Ex. §34.3]] ($BV$ modulo constants).

@@ -133,7 +133,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^pf-29-3
 
-*Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§4 Uncountability#^thm-4-1|551 §4.1]]
+*Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§4 Uncountability#^thm-4-1|551 §4.1]]
 
 > [!remark]- Connections
 > - The same separated-family argument for functions: [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]], and in the vault home [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
@@ -231,7 +231,7 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 
 ^pf-29-5
 
-*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§13 Approximation and Continuity of Measure#^prop-13-5|551 §13.5]], [[Intermediate Value Theorem|451 §18.3]]
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§13 Approximation and Continuity of Measure#^prop-13-5|551 §13.5]], [[Intermediate Value Theorem|451 §18.3]]
 
 > [!remark]- Connections
 > - Vault home: [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]], with the family of indicators of $(0, t)$ and, for general $E$, continuity of measure.

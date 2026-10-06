@@ -8,7 +8,7 @@ tags: [functional-analysis, hub]
 ![[§12 Completeness#^thm-12-1]]
 
 ## Treated in
-- [[§11 Completeness#^thm-11-1|Theorem §11.1: C[a,b] with the Supremum Norm is a Banach Space]], in [[§12 Completeness]]
+- [[§12 Completeness#^thm-12-1|Theorem §12.1: C[a,b] with the Supremum Norm is a Banach Space]], in [[§12 Completeness]]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-1|Definition §1.1: Linear Space]]
@@ -21,9 +21,9 @@ tags: [functional-analysis, hub]
 - [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
-- [[§11 Completeness#^prop-11-7|Proposition §11.7: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§13 The Completion of a Normed Space#^prop-13-4|Proposition §13.4: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|Proposition §19.5: Continuous Functions are Not Dense in L^∞]]
-- [[§17 The Function Spaces Lᵖ(Ω)#^prop-17-8|Proposition §17.8: Lᵖ[a,b] as a Completion]]
+- [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|Proposition §19.8: Lᵖ[a,b] as a Completion]]
 - [[§20 Compactness and the Unit Ball#^prop-20-4|Proposition §20.4: The Constant theta = 1 Cannot Be Attained]]
 
 ## Connections

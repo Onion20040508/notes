@@ -34,6 +34,9 @@ Throughout, $X$ and $Y$ are finite-dimensional real vector spaces, of dimensions
 
 ^def-22-2
 
+> [!remark]- Connections
+> - In LADR the coordinate representation of a linear map is its matrix ([[§10 Invertibility and Isomorphisms#^ladr-3-76|LADR 3.76]]).
+
 Since $L$ and $K$ are bijections, $\widetilde F$ is the unique map making the square commute:
 
 ![[m591-10-3.svg]]
@@ -44,9 +47,6 @@ $$
 $$
 
 Commutativity means: apply $F$ and then take coordinates, or take coordinates and then apply $\widetilde F$; the result is the same. “$\widetilde F$ is just $F$ expressed in coordinates.”
-
-> [!remark]- Connections
-> - In LADR the coordinate representation of a linear map is its matrix ([[§10 Invertibility and Isomorphisms#^ladr-3-76|LADR 3.76]]).
 
 > [!definition] Definition §22.3: Smooth Map Between Vector Spaces
 > $F : X \to Y$ is **smooth** if $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ is smooth for any choice of linear coordinates $L, K$ — equivalently, by Lemma [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], for some choice.

@@ -57,7 +57,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 
 ^pf-35-1
 
-*Uses:* [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
+*Uses:* [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§2 Topological Manifolds#^lem-2-10|§2.10]]
 
 > [!theorem] Proposition §35.2: The Induced Smooth Structure
 > Let $S \subseteq M$ be a submanifold of codimension $k$. For each adapted chart $(U, \varphi = (x_a, x_b))$ put
@@ -211,7 +211,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-35-6
 
-*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§34 Submersions#^thm-34-4|§34.4]], [[§35 Submanifolds#^prop-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
+*Uses:* [[§34 Submersions#^def-34-3|Def. §34.3]], [[§34 Submersions#^def-34-4|Def. §34.4]], [[§35 Submanifolds#^def-35-1|Def. §35.1]], [[§35 Submanifolds#^def-35-2|Def. §35.2]], [[§34 Submersions#^thm-34-4|§34.4]], [[§35 Submanifolds#^prop-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§35 Submanifolds#^prop-35-4|§35.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[Fundamental theorem of linear maps|LADR 3.21]]
 
 ![[m591-15-5.svg]]
 *The proof in one square, as on the board. In the normal-form charts $\tilde F$ is the projection onto the first $n$ coordinates, so the level set $S \cap U = F^{-1}(q) \cap U$ is carried by $\hat\varphi$ onto a fibre of a projection: the slice where the first $n$ coordinates equal $\psi(q)$.*

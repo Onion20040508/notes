@@ -250,7 +250,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §1.13]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]).
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]).
 
 ^rem-25-5
 
@@ -305,7 +305,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^pf-25-6
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-54|LADR 6.54]].
