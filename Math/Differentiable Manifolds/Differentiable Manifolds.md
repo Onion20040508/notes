@@ -130,7 +130,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Continuous Image of a Compact Space is Compact]] (7)
 - [[Bijection from Compact to Hausdorff is a Homeomorphism]] (5)
 - [[Compact Subspace of a Hausdorff Space is Closed]] (5)
-- [[§13 Connected Spaces#^def-13-1|Definition §13.1: Separation and Connected Space]] (5)
+- [[§13 Connected Spaces#^def-13-new1|Definition §13.1: Connected Space]] (5)
 - [[§9 Continuous Functions#^def-9-2|Definition §9.2: Homeomorphism]] (5)
 - [[§10 Product Topology on Arbitrary Products#^thm-10-1|Theorem §10.1: Continuity into Product Spaces]] (5)
 

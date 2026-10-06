@@ -86,7 +86,7 @@ $$
 *Uses:* [[§26 Derivations and the Abstract Tangent Space#^prop-26-5|§26.5]], [[§27 Coordinate Derivations and the Basis Theorem#^thm-27-5|§27.5]], [[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]], [[§28 The Differential in Coordinates#^prop-28-1|§28.1]], [[§9 Matrices#^ladr-3-31|LADR 3.31]]
 
 > [!remark]- Connections
-> - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
+> - The matrix of a linear map with respect to bases: [[§9 Matrices#^ladr-3-31|LADR 3.31]]; the Jacobian matrix of calculus: [[§6 Differentiability#^def-6-new1|452 Def. §6.2]].
 > - The same statement between vector spaces: [[§21 The Differential of a Map Between Vector Spaces#^def-21-4|Def. §21.4]].
 
 > [!remark] Remark
@@ -295,7 +295,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 This is the topological half of the regular value theorem for manifolds, and it is [[§7 The Regular Value Theorem|§7]] applied chart by chart. The smooth half — that $F^{-1}(c)$ is a smooth *submanifold* of $M$, with tangent space $\ker F_{\ast p}$ — came in Lecture 12, as Theorem [[§33 Submanifolds#^thm-33-6|§33.6]], proved with the local normal form for submersions (Theorem [[§32 Submersions#^thm-32-4|§32.4]]): near each point of the level set, $F$ is a projection, so the level set is a coordinate slice. It is Lee's Corollary 5.14 and Proposition 5.38. The corollary above is now a consequence of it, a submanifold being in particular a topological manifold, but its proof — [[§7 The Regular Value Theorem|§7]] applied chart by chart — is more elementary.
 
 > [!theorem] Proposition §28.9: Maps with Zero Differential Are Constant
-> Let $F : M \to N$ be smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]), with $M$ connected ([[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]). If $F_{\ast p} = 0$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]]) for every $p \in M$, then $F$ is constant.
+> Let $F : M \to N$ be smooth ([[§18 Smooth Functions and Smooth Maps#^def-18-3|Def. §18.3]]), with $M$ connected ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]). If $F_{\ast p} = 0$ ([[§26 Derivations and the Abstract Tangent Space#^def-26-5|Def. §26.5]]) for every $p \in M$, then $F$ is constant.
 
 ^prop-28-9
 

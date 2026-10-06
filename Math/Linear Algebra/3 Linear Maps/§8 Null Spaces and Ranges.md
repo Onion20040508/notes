@@ -56,7 +56,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - For linear maps it suffices to test $0$: [[§8 Null Spaces and Ranges#^ladr-3-15|Injectivity ⟺ null space equals {0}]].
-> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 1.
+> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]].
 > - In ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-3|235 Def. §9.3]] (one-to-one).
 
 > [!theorem] Theorem 3.15: Injectivity ⟺ null space equals {0}
@@ -90,7 +90,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - A subspace: [[§8 Null Spaces and Ranges#^ladr-3-18|The range is a subspace]]. Surjectivity: [[§8 Null Spaces and Ranges#^ladr-3-19|Surjective]]. Dimension = column rank of the matrix: [[§10 Invertibility and Isomorphisms#^ladr-3-78|Dimension of range T equals column rank of M(T)]].
-> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-5|235 Def. §24.5]] (range); for x ↦ Ax it is Col A, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
+> - Computational version: [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-new1|235 Def. §24.5]] (range); for x ↦ Ax it is Col A, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
 
 > [!example] Example 3.17: Range (p. 61)
 > - The zero map has $\range 0=\{0\}$.
@@ -123,7 +123,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Dimension obstruction: [[§8 Null Spaces and Ranges#^ladr-3-24|Linear map to a higher-dimensional space is not surjective]]. Equivalent to injectivity when dimensions agree: [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]].
-> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 2.
+> - Elementary version, for arbitrary functions: [[§9 Injections, Surjections and Bijections#^def-9-new1|250 Def. §9.1]], part 2.
 > - In ℝⁿ: [[§9 The Matrix of a Linear Transformation#^def-9-2|235 Def. §9.2]] (onto).
 
 > [!example] Example 3.20: Surjectivity depends on the target space (p. 62)

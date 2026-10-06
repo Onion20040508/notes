@@ -104,7 +104,7 @@ Why do we need one-sided limits?
 ^ex-20-3
 
 > [!remark]- Connections
-> - Worked examples: one-sided infinite limits [[§7 The Limit of a Function#^def-7-4|Calc Def. §7.4]]; reciprocal powers at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Calc Thm. §11.3]].
+> - Worked examples: one-sided infinite limits [[§7 The Limit of a Function#^def-7-new1|Calc Def. §7.4]]; reciprocal powers at infinity [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Calc Thm. §11.3]].
 
 > [!theorem] Theorem §20.2: Two-Sided Equals Both One-Sided
 > $\displaystyle\lim_{x\to a} f(x) = L$ if and only if

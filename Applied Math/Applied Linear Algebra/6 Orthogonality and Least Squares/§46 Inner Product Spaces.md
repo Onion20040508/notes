@@ -301,7 +301,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 > \langle p, q\rangle = \frac{1}{n + 1}\sum_{j=0}^n p(t_j)q(t_j) = \frac{1}{b - a}\Big[\sum_{j=0}^n p(t_j)q(t_j)\,\Delta t\Big] .
 > $$
 >
-> As $n \to \infty$, the bracket is a Riemann sum ([[§35 The Definite Integral#^def-35-2|Calc Def. §35.2]]) of the continuous function $pq$ and tends to $\int_a^b p(t)q(t)\,dt$. So the limit is the *average value* of $p(t)q(t)$ on $[a, b]$:
+> As $n \to \infty$, the bracket is a Riemann sum ([[§35 The Definite Integral#^def-35-new1|Calc Def. §35.2]]) of the continuous function $pq$ and tends to $\int_a^b p(t)q(t)\,dt$. So the limit is the *average value* of $p(t)q(t)$ on $[a, b]$:
 >
 > $$
 > \frac{1}{b - a}\int_a^b p(t)q(t)\,dt .

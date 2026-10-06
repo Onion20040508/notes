@@ -17,7 +17,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses (other subjects)
 - [[§13 Connected Spaces#^lem-13-1|590 §13.1: Characterization via Clopen Sets]]
-- [[§14 Connected Subspaces of ℝ#^def-14-3|590 §14.3: Path and Path-Connected]]
+- [[§14 Connected Subspaces of ℝ#^def-14-new1|590 §14.3: Path-Connected]]
 
 ## Used in (Differentiable Manifolds)
 - [[§2 Topological Manifolds#^cor-2-9|Corollary §2.9: Components of a Manifold]]

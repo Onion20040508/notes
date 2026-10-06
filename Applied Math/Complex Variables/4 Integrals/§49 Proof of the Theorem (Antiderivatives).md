@@ -143,7 +143,7 @@ This section proves the theorem on antiderivatives stated in [[§48 Antiderivati
 
 > [!remark]- Connections
 > - This is the complex form of [[§109 The Fundamental Theorem for Line Integrals#^thm-109-2|Calc Thm. §109.2]] (path independence $\Leftrightarrow$ zero around closed paths) and [[§109 The Fundamental Theorem for Line Integrals#^thm-109-3|Calc Thm. §109.3]] (path independence $\Rightarrow$ a potential exists, constructed by the same integral from a base point). Here a single complex derivative $F' = f$ replaces the two conditions $\phi_x = P$, $\phi_y = Q$, because $F' = f$ along both a horizontal and a vertical segment are the same statement.
-> - The polygonal connectedness used to define $F$ is path-connectedness, [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]; for open subsets of the plane it is equivalent to connectedness.
+> - The polygonal connectedness used to define $F$ is path-connectedness, [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]; for open subsets of the plane it is equivalent to connectedness.
 
 > [!remark] Remark: Using the Theorem Backwards
 > The implication (a) $\Rightarrow$ (c), read in reverse, proves that antiderivatives do *not* exist.

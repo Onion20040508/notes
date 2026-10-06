@@ -24,7 +24,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 > [!remark]- Connections
 > - MATH 590 uses equivalence relations to build quotient spaces: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 Def. §12.3).
 > - Group-theoretic instances: [[§27 Orbits#^prop-27-2|The Orbit Relation]], [[§28 Left and Right Cosets#^def-28-1|Congruence Modulo a Subgroup]].
-> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]], with relations as subsets of $X \times X$ in [[§22 Partitions and Equivalence Relations#^def-22-2|250 Def. §22.2]].
+> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-new1|250 Def. §22.3]], with relations as subsets of $X \times X$ in [[§22 Partitions and Equivalence Relations#^def-22-2|250 Def. §22.2]].
 
 > [!definition] Definition §24.2: Equivalence Class
 > Given an equivalence relation $\sim$ on $X$ and $x \in X$, the **equivalence class** of $x$ is
@@ -36,7 +36,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 ^def-24-2
 
 > [!remark]- Connections
-> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]] (which also names the quotient set).
+> - Same definition: [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]] (the quotient set: [[§22 Partitions and Equivalence Relations#^def-22-new2|250 Def. §22.4]]).
 
 > [!definition] Definition §24.3: Partition
 > A **partition** of a set $X$ is a collection of nonempty subsets of $X$, the **parts**, such that every element of $X$ lies in exactly one part; equivalently, $X$ is the disjoint union of the parts, written $X = \bigsqcup_{i \in I} X_i$.

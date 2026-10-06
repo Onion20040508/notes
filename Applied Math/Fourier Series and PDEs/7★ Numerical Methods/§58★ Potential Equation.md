@@ -36,7 +36,7 @@ Consider a region $R$ of the $xy$-plane whose boundary can be made to coincide w
 ^def-58-1
 
 > [!remark]- Connections
-> - The Laplacian $\nabla^2u = u_{xx} + u_{yy}$ of a $C^2$ function: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]]. Each of the two second differences in (1) approximates its partial derivative with error $\frac{(\Delta x)^2}{12}u_{xxxx}$, resp. $\frac{(\Delta y)^2}{12}u_{yyyy}$, at some nearby point, by [[§55★ Boundary Value Problems#^prop-55-1|Proposition §55.1]] applied along the lines $y =$ const and $x =$ const.
+> - The Laplacian $\nabla^2u = u_{xx} + u_{yy}$ of a $C^2$ function: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]]. Each of the two second differences in (1) approximates its partial derivative with error $\frac{(\Delta x)^2}{12}u_{xxxx}$, resp. $\frac{(\Delta y)^2}{12}u_{yyyy}$, at some nearby point, by [[§55★ Boundary Value Problems#^prop-55-1|Proposition §55.1]] applied along the lines $y =$ const and $x =$ const.
 
 > [!remark] Remark: Method — Replacement Equations for a Potential Problem
 > 1. Lay a square mesh with spacing $\Delta x$ over the region; number the interior mesh points (left to right, bottom to top) and write the given boundary values at the boundary mesh points.

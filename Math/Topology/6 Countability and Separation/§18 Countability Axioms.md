@@ -187,7 +187,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - Separability of sequence and function spaces: [[§24 Orthonormal Sets and Bases#^def-24-5|556 Def. §24.5]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§25 Sequence and Function Spaces#^prop-25-1|556 Prop. §25.1]]–[[§25 Sequence and Function Spaces#^prop-25-5|556 Prop. §25.5]]).
-> - The metric-space form, with density by sequences: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|551 Def. §19.9]]; Lᵖ is separable for p < ∞ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 Cor. §19.20]]) and L^∞ is not ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]]).
+> - The metric-space form, with density by sequences: [[§19a Lᵖ as a Banach Space#^def-19-new6|551 Def. §19.10]]; Lᵖ is separable for p < ∞ ([[§19 Normed Linear Spaces and Lᵖ Spaces#^cor-19-20|551 Cor. §19.20]]) and L^∞ is not ([[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-21|551 Thm. §19.21]]).
 
 > [!example] Example §18.8: Standard Examples
 > 1. $\mathbb{R}$ is separable: $D = \mathbb{Q}$.

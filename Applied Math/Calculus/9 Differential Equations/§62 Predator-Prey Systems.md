@@ -147,7 +147,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 ^def-62-new3
 
 > [!remark]- Connections
-> - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].
+> - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-new4|331 Def. §31.2]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].
 
 > [!example] Example §62.2: Rabbits and Wolves — One Cycle
 > In the system of [[§62 Predator-Prey Systems#^ex-62-1|Example §62.1]], suppose that at some time there are $1000$ rabbits and $40$ wolves. (d) Draw the corresponding solution curve and use it to describe the changes in both populations. (e) Sketch $R$ and $W$ as functions of $t$.

@@ -151,7 +151,7 @@ When $A$ is $2 \times 2$, the algebra can be supplemented by a picture of what h
 ^def-37-new1
 
 > [!remark]- Connections
-> - ODE version: trajectories and phase portraits of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]], and asymptotic stability of the equilibrium $\mathbf{0}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-1|331 Def. §31.1]]. The last sentence in dimension one: an equilibrium $u^*$ of $u_{n+1} = g(u_n)$ is asymptotically stable if $|g'(u^*)| < 1$ and unstable if $|g'(u^*)| > 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lemma §12.5]].
+> - ODE version: trajectories and phase portraits of $\mathbf{x}' = A\mathbf{x}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-new4|331 Def. §31.2]], and asymptotic stability of the equilibrium $\mathbf{0}$, [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-new1|331 Def. §31.1]]. The last sentence in dimension one: an equilibrium $u^*$ of $u_{n+1} = g(u_n)$ is asymptotically stable if $|g'(u^*)| < 1$ and unstable if $|g'(u^*)| > 1$, [[§12★ First-Order Difference Equations#^lem-12-5|331 Lemma §12.5]].
 
 > [!theorem] Proposition §37.3: The Eigenvalues Classify the Origin
 > Let $A$ be a $2 \times 2$ matrix with eigenvalues $\lambda_1$, $\lambda_2$ and linearly independent eigenvectors $\mathbf{v}_1$, $\mathbf{v}_2$, with $|\lambda_1| \ge |\lambda_2|$.

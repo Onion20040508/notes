@@ -119,7 +119,7 @@ From here on all flows are irrotational, of incompressible, inviscid fluids of u
 *Uses:* [[§124★ Two-Dimensional Fluid Flow#^prop-124-1|§124.1]], [[§124★ Two-Dimensional Fluid Flow#^def-124-2|Def. §124.2]]
 
 > [!remark]- Connections
-> - In vector language, $2\omega$ is the $\mathbf k$ component of $\operatorname{curl}(p, q, 0)$, and Proposition §124.2 is the planar case of curl as circulation per unit area, [[§114 Stokes' Theorem#^thm-114-3|Calc Thm. §114.3]]; "irrotational" is [[§111 Curl and Divergence#^def-111-2|Calc Def. §111.2]] and [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]].
+> - In vector language, $2\omega$ is the $\mathbf k$ component of $\operatorname{curl}(p, q, 0)$, and Proposition §124.2 is the planar case of curl as circulation per unit area, [[§114 Stokes' Theorem#^thm-114-3|Calc Thm. §114.3]]; "irrotational" is [[§111 Curl and Divergence#^def-111-2|Calc Def. §111.2]] and [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-new1|452 Def. §11.1]].
 
 Under these assumptions it can be shown that the fluid pressure $P(x, y)$ satisfies a special case of **Bernoulli's equation**.
 

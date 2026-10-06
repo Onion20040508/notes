@@ -98,7 +98,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 
 > [!remark]- Connections
 > - MATH 451 version: [[§28 Basic Properties of the Derivative#^def-28-1|The Derivative]]; for a mapping $(x, y) \mapsto (\varphi, \psi)$ the derivative becomes the [[§13 The Inverse Function Theorem#^def-13-1|Jacobian matrix]] of §13, and in §22 it is the 1-form $df$ ([[§22 The Algebra of Differential Forms#^prop-22-6|§22.6]]).
-> - Computational version: [[§93 Tangent Planes and Linear Approximations#^def-93-3|Calc Def. §93.3]] (increment form, with worked examples).
+> - Computational version: [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Calc Def. §93.4]] (increment form, with worked examples).
 > - Complex differentiability is this differentiability for (u, v) plus the Cauchy–Riemann equations: [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the equations are necessary) and [[§23 Sufficient Conditions for Differentiability#^cor-23-2|342 Cor. §23.2]] (real differentiability plus Cauchy–Riemann gives f′).
 
 > [!definition] Definition §6.2: The Total Derivative

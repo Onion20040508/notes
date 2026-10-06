@@ -34,7 +34,7 @@ $$
 \arg w'(t_0) = \arg f'[z(t_0)] + \arg z'(t_0) . \qquad (2)
 $$
 
-Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours#^def-43-4|Definition §43.4]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
+Since $z'(t_0) \ne 0$ and $f'(z_0) \ne 0$, also $w'(t_0) \ne 0$, so $\Gamma$ has a tangent line at $w_0 = f(z_0)$. By the discussion of unit tangent vectors in [[§43 Contours#^def-43-new4|Definition §43.8]], a value $\theta_0$ of $\arg z'(t_0)$ is the angle of inclination of the directed tangent line to $C$ at $z_0$, and a value $\phi_0$ of $\arg w'(t_0)$ is that of the directed tangent line to $\Gamma$ at $w_0$.
 
 > [!definition] Definition §112.1: Angle of Rotation
 > If $f$ is analytic at $z_0$ and $f'(z_0) \ne 0$, the **angle of rotation** of the transformation $w = f(z)$ at $z_0$ is

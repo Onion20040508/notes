@@ -244,7 +244,7 @@ H^k = \frac{\{\text{closed } k\text{-forms}\}}{\{\text{exact } k\text{-forms}\}}
 $$
 
 is called the **$k$-th de Rham cohomology group**. It measures the “$k$-dimensional holes” in the domain:
-- $H^0$ counts the connected components: no 0-form is exact (there are no $(-1)$-forms), so $H^0$ is the space of closed 0-forms, i.e., locally constant functions, with one dimension per [[§13 Connected Spaces#^def-13-1|connected]] component.
+- $H^0$ counts the connected components: no 0-form is exact (there are no $(-1)$-forms), so $H^0$ is the space of closed 0-forms, i.e., locally constant functions, with one dimension per [[§13 Connected Spaces#^def-13-new1|connected]] component.
 - $H^1$ detects 1-dimensional holes: loops that cannot be contracted to a point. The example above ([[§22 The Algebra of Differential Forms#^prop-22-11|Proposition §22.11]]) shows $H^1(\mathbb{R}^2 \setminus \{0\}) \neq 0$.
 - $H^2$ detects 2-dimensional holes: closed surfaces that do not bound a volume.
 

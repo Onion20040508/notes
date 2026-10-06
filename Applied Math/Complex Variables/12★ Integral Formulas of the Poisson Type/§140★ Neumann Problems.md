@@ -121,7 +121,7 @@ The values $U(r, \theta)$ may represent steady temperatures in a disk $r < r_0$ 
 ^rem-140-1
 
 > [!remark]- Connections
-> - Neumann's problem and the non-uniqueness up to a constant: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]] and [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]]. The compatibility condition $\oint\partial u/\partial n\,ds = 0$ in any region follows from Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]]; the remark above proves it for disks.
+> - Neumann's problem and the non-uniqueness up to a constant: [[§35 Potential Equation#^def-35-new3|341 Def. §35.2]] and [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]]. The compatibility condition $\oint\partial u/\partial n\,ds = 0$ in any region follows from Green's first identity, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-2|452 Thm. §17.2]]; the remark above proves it for disks.
 > - $Q = -2r_0\ln|s - z|$ is $-4\pi r_0$ times the fundamental solution $\frac{1}{2\pi}\ln|z - s|$ of the two-dimensional Laplacian, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-5|452 Thm. §17.5]]; (6) represents $U$ as a potential of a single layer of density proportional to $G$ on the circle.
 
 ## Exterior of a Circle, Half Plane, Quadrant

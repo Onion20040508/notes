@@ -66,7 +66,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 ^def-6s-2
 
 > [!theorem] Lemma §6★.2: Equivalence of Cauchy Sequences Is an Equivalence Relation
-> The relation $\sim$ on $\mathcal{C}$ is reflexive, symmetric and transitive: an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]]).
+> The relation $\sim$ on $\mathcal{C}$ is reflexive, symmetric and transitive: an equivalence relation ([[§22 Partitions and Equivalence Relations#^def-22-new1|250 Def. §22.3]]).
 
 ^lem-6s-2
 
@@ -82,7 +82,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 *Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-2|Def. §6★.2]], [[§3 The Set ℝ of Real Numbers#^thm-3-3|§3.3]]
 
 > [!definition] Definition §6★.3: The Cauchy Reals $\widehat{\mathbb{Q}}$
-> Let $\widehat{\mathbb{Q}} = \mathcal{C}/\!\sim$ be the set of equivalence classes (the quotient set of [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]]), and write $[(q_n)]$ for the class of $(q_n)$. A rational $q$ is sent to the class of the constant sequence:
+> Let $\widehat{\mathbb{Q}} = \mathcal{C}/\!\sim$ be the set of equivalence classes (the quotient set of [[§22 Partitions and Equivalence Relations#^def-22-new2|250 Def. §22.4]]), and write $[(q_n)]$ for the class of $(q_n)$. A rational $q$ is sent to the class of the constant sequence:
 >
 > $$
 > \iota : \mathbb{Q} \to \widehat{\mathbb{Q}}, \qquad \iota(q) = [(q, q, q, \ldots)].

@@ -316,7 +316,7 @@ Deformation retracts give isomorphisms on $\pi_1$, but they require $A \subseteq
 ^rem-26-10
 
 > [!theorem] Theorem §26.13: Homotopy Equivalence is an Equivalence Relation
-> The relation “$X \simeq Y$” (there exists a homotopy equivalence $f: X \to Y$) is an [[§22 Partitions and Equivalence Relations#^def-22-3|equivalence relation]] on topological spaces.
+> The relation “$X \simeq Y$” (there exists a homotopy equivalence $f: X \to Y$) is an [[§22 Partitions and Equivalence Relations#^def-22-new1|equivalence relation]] on topological spaces.
 
 ^thm-26-13
 

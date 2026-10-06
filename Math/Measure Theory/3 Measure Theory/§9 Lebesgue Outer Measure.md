@@ -45,7 +45,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 ^def-9-2
 
 > [!remark]- Connections
-> - MATH 452 counterpart, where area of a rectangle is likewise defined by hand: [[§15 Multivariable Integration#^def-15-1|452 Def. §15.1]].
+> - MATH 452 counterpart, where area of a rectangle is likewise defined by hand: [[§15 Multivariable Integration#^def-15-new1|452 Def. §15.1]].
 > - How a linear map rescales volume: [[§34 Determinants#^ladr-9-61|LADR 9.61]], used for null sets in [[§18b Differentiating the Integral#^thm-18-22|Thm. §18.22]].
 
 ## Outer Measure
@@ -65,7 +65,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 ^def-9-4
 
 > [!remark]- Connections
-> - MATH 452 counterpart using finite grids of squares instead of countable coverings: [[§15 Multivariable Integration#^def-15-4|outer Jordan content]] (452 Def. §15.4).
+> - MATH 452 counterpart using finite grids of squares instead of countable coverings: [[§15 Multivariable Integration#^def-15-new2|outer Jordan content]] (452 Def. §15.4).
 > - Axiomatized in [[§11 Borel Sets and Measure Spaces#^def-11-3|Def. §11.3]] (outer measure on an arbitrary set).
 
 > [!remark] Remark
@@ -225,7 +225,7 @@ This approach requires us to develop a theory of **measure** for subsets of $\ma
 
 > [!remark]- Connections
 > - Topology version of the compactness step: [[Heine–Borel Theorem]].
-> - MATH 452 counterpart: [[§15 Multivariable Integration#^def-15-5|Jordan content (452 Def. §15.5)]], built from rectangles whose area is defined by hand ([[§15 Multivariable Integration#^def-15-1|452 Def. §15.1]]).
+> - MATH 452 counterpart: [[§15 Multivariable Integration#^def-15-5|Jordan content (452 Def. §15.5)]], built from rectangles whose area is defined by hand ([[§15 Multivariable Integration#^def-15-new1|452 Def. §15.1]]).
 
 > [!remark] Remark
 > The lower bound argument uses [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-4|Heine–Borel]] crucially. The claim that a finite union of open rectangles covering $\bar{I}$ has total volume $\geq |\bar{I}|$ requires additional justification (which we omit here).

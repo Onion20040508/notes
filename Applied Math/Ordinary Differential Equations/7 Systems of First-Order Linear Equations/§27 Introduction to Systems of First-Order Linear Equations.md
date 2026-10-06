@@ -171,7 +171,7 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 ^def-27-new3
 
 > [!remark]- Connections
-> - A nonlinear system of the form (11) with $n = 2$, and its trajectories in the phase plane: the predator–prey equations [[§62 Predator-Prey Systems#^def-62-1|Calc Def. §62.1]], [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]] (Stewart's treatment).
+> - A nonlinear system of the form (11) with $n = 2$, and its trajectories in the phase plane: the predator–prey equations [[§62 Predator-Prey Systems#^def-62-1|Calc Def. §62.1]], [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]], [[§62 Predator-Prey Systems#^def-62-new2|Calc Def. §62.4]] (Stewart's treatment).
 
 > [!theorem] Theorem §27.2: Existence and Uniqueness for First-Order Systems
 > Let each of the $n$ functions $F_1, \ldots, F_n$ and the $n^2$ first partial derivatives $\partial F_1/\partial x_1, \ldots, \partial F_1/\partial x_n, \ldots, \partial F_n/\partial x_1, \ldots, \partial F_n/\partial x_n$ be continuous in a region $R$ of $tx_1x_2\cdots x_n$-space defined by $\alpha < t < \beta$, $\alpha_1 < x_1 < \beta_1$, …, $\alpha_n < x_n < \beta_n$, and let the point $(t_0, x_1^0, x_2^0, \ldots, x_n^0)$ be in $R$. Then there is an interval $|t - t_0| < h$ in which there exists a unique solution $x_1 = \phi_1(t), \ldots, x_n = \phi_n(t)$ of the system (11) that also satisfies the initial conditions (13).

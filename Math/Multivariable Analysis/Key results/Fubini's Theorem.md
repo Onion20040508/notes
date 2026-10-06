@@ -15,7 +15,7 @@ tags: [multivariable-analysis, hub]
 - [[§15 Multivariable Integration#^def-15-11|Definition §15.11: The Integral]]
 
 ## Its proof uses (other subjects)
-- [[§32 The Definition of the Riemann Integral#^def-32-3|451 §32.3: Mesh; Riemann Sums; Riemann Integrability]]
+- [[§32 The Definition of the Riemann Integral#^def-32-new5|451 §32.3: Riemann Integrability]]
 - [[§32 The Definition of the Riemann Integral#^thm-32-7|451 §32.7: Continuous Functions Are Integrable]]
 - [[Heine–Borel Theorem]] (Topology)
 - [[§15 Compact Spaces#^rem-15-1|590 Remark: Why Compactness Matters]]

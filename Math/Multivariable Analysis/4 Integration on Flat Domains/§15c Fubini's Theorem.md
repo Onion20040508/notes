@@ -61,7 +61,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 > F(x) = \int_c^d f(x, y) \, dy.
 > $$
 >
-> The [[§32 The Definition of the Riemann Integral#^def-32-3|Riemann sum]] for $F(\xi_i)$ is:
+> The [[§32 The Definition of the Riemann Integral#^def-32-new4|Riemann sum]] for $F(\xi_i)$ is:
 >
 > $$
 > \sum_{j=1}^{M} f(\xi_i, \eta_j) \cdot k \approx F(\xi_i) = \int_c^d f(\xi_i, y) \, dy.
@@ -99,7 +99,7 @@ Fubini's theorem allows us to compute double integrals as iterated single integr
 
 ^pf-15-8
 
-*Uses:* [[§15 Multivariable Integration#^def-15-11|Def. §15.11]], [[§15a The Definition of the Integral#^rem-15-6|§15a Rem. (Evaluating the Integral)]], [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], [[§32 The Definition of the Riemann Integral#^thm-32-7|451 §32.7]], [[Heine–Borel Theorem|590 §15.12]], [[§15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]]
+*Uses:* [[§15 Multivariable Integration#^def-15-11|Def. §15.11]], [[§15a The Definition of the Integral#^rem-15-6|§15a Rem. (Evaluating the Integral)]], [[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]], [[§32 The Definition of the Riemann Integral#^thm-32-7|451 §32.7]], [[Heine–Borel Theorem|590 §15.12]], [[§15 Compact Spaces#^rem-15-1|590 §15 Rem. (uniform continuity on compact sets)]]
 
 ![[m452-15-2.svg]]
 *Fubini's theorem geometrically: freeze $x$ and integrate over $y$ to get the cross-sectional area $A(x)$ (red slab); then integrate $A(x)$ over $x$ to stack the slabs into the volume. The iterated integral $\int\!\!\int f\,dy\,dx$ is this two-stage process; Fubini says it equals the double integral whenever $f$ is integrable.*

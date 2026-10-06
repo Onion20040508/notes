@@ -16,7 +16,7 @@ tags: [topology, math590]
 ^def-6-1
 
 > [!remark]- Connections
-> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets]] of a metric space.
+> - MATH 451 version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Closed Subsets]] of a metric space.
 > - The sequential definition in ℝⁿ, with this one as its equivalent form: [[§5 Topology of ℝⁿ#^def-5-3|551 Def. §5.3]].
 > - The sequential definition in a normed space: [[§10 Normed Linear Spaces#^def-10-6|556 Def. §10.6]]; it agrees with this one in metric spaces by [[§7 Interior and Closure#^cor-7-5|Cor. §7.5]] and the [[§11 Metric Topology#^lem-11-8|Sequence Lemma]].
 

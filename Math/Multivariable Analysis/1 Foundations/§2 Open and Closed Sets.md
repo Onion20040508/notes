@@ -86,7 +86,7 @@ tags: [multivariable-analysis, math452]
 ^def-2-new3
 
 > [!remark]- Connections
-> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets]].
+> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Closed Subsets]].
 > - MATH 590: the open sets of the [[§11 Metric Topology#^def-11-3|metric topology]] with [[§11 Metric Topology#^def-11-2|ε-balls]]; a [[§6 Closed Sets and Limit Points#^def-6-1|closed set]] is the complement of an open set.
 > - Computational version: [[§12★ Regions in the Complex Plane#^def-12-3|342 Def. §12.3]] (open and closed sets in the complex plane).
 
@@ -102,5 +102,5 @@ tags: [multivariable-analysis, math452]
 
 > [!remark]- Connections
 > - MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|Closure]] in a metric space.
-> - MATH 590: [[§7 Interior and Closure#^def-7-1|Interior and Closure]] in any topological space, and the [[Closure Characterization]] (every neighborhood meets $E$, as in the boundary-point condition above).
-> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-3|342 Def. §12.3]] (closure of a set in the complex plane).
+> - MATH 590: [[§7 Interior and Closure#^def-7-new1|Closure]] in any topological space, and the [[Closure Characterization]] (every neighborhood meets $E$, as in the boundary-point condition above).
+> - Computational version: [[§12★ Regions in the Complex Plane#^def-12-new5|342 Def. §12.8]] (closure of a set in the complex plane).

@@ -139,7 +139,7 @@ B&C's proof of the main theorem needs an identity it leaves to Exercise 10; here
 *Uses:* [[§117★ Transformations of Boundary Conditions#^lem-117-1|§117.1]], [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|§112.1]], [[§95 Directional Derivatives and the Gradient Vector#^cor-95-2|Calc Cor. §95.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-7|Calc Thm. §95.7]] (the gradient is perpendicular to level curves)
 
 > [!remark]- Connections
-> - Normal derivatives and the Dirichlet/Neumann/Robin conditions on a boundary: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]; the normal derivative as $\nabla v\cdot\hat n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+> - Normal derivatives and the Dirichlet/Neumann/Robin conditions on a boundary: [[§35 Potential Equation#^def-35-2|341 Def. §35.2]]; the normal derivative as $\nabla v\cdot\hat n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new2|452 Def. §17.2]].
 > - Used in Electromagnetism: conductors (constant potential) and lines of symmetry (zero normal field) keep their boundary conditions under an analytic map — [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-2|EM Theorem §C6.4.2]].
 
 A condition of another type can change substantially (Example §117.3). By Lemma §117.1, the ratio of a directional derivative of $H$ along $C$ to that of $h$ along $\Gamma$ at the corresponding point is $|f'(z)|$, which in general is not constant along the arc. So $dh/dn = h_0 \ne 0$ becomes $dH/dN = h_0|f'(z)|$, a variable flux; new boundary conditions for the transformed problem can still be written down in any particular case.

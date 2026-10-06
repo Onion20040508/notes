@@ -30,7 +30,7 @@ Harmonic functions, the solutions of Laplace's equation $H_{xx} + H_{yy} = 0$, d
 ^def-27-1
 
 > [!remark]- Connections
-> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]]. The Laplacian in $\mathbb{R}^n$ and Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+> - The same equation in the PDE course, solved by separation of variables in rectangles, slots and disks: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]]. The Laplacian in $\mathbb{R}^n$ and Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]].
 
 Harmonic functions play an important role in applied mathematics. For example, the temperatures $T(x, y)$ in thin plates lying in the $xy$ plane are often harmonic. A function $V(x, y)$ is harmonic when it denotes an electrostatic potential that varies only with $x$ and $y$ in the interior of a region of three-dimensional space that is free of charges.
 

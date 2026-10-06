@@ -23,7 +23,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^def-8-1
 
 > [!remark]- Connections
-> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-1|Partitions (451 Def. §32.1)]] and [[§32 The Definition of the Riemann Integral#^def-32-3|Mesh (451 Def. §32.3)]].
+> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-new1|Partitions (451 Def. §32.1)]] and [[§32 The Definition of the Riemann Integral#^def-32-3|Mesh (451 Def. §32.3)]].
 
 > [!definition] Definition §8.2: Upper and Lower Sums
 > Let $f: [a, b] \to \mathbb{R}$ be a bounded function and $P = \{x_0, x_1, \ldots, x_n\}$ a partition of $[a, b]$. Define:
@@ -50,7 +50,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 *Lower and upper sums for a partition $P = \{x_0, \ldots, x_4\}$: on each $[x_j, x_{j+1}]$ the blue rectangle has height $m_j$ and the full rectangle height $M_j$ (marked for $j = 2$). $L(f,P)$ is the blue area and $U(f,P)$ the blue plus red area; for continuous $f$ the red strips thin out as $|P| \to 0$ ([[§8 Motivation꞉ The Riemann Integral#^prop-8-1|Proposition §8.1]]).*
 
 > [!remark]- Connections
-> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-1|Upper and Lower Sums (451 Def. §32.1)]]; MATH 452 multiple-integral version: [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
+> - MATH 451: [[§32 The Definition of the Riemann Integral#^def-32-new2|Upper and Lower Sums (451 Def. §32.1)]]; MATH 452 multiple-integral version: [[§15 Multivariable Integration#^def-15-8|452 Def. §15.8]].
 
 > [!definition] Definition §8.3: Riemann Integrable
 > A bounded function $f: [a, b] \to \mathbb{R}$ is **Riemann integrable** if
@@ -68,7 +68,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^def-8-3
 
 > [!remark]- Connections
-> - MATH 451 defines it through Riemann sums ([[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]); the mesh form of the Cauchy criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals (451 §32.6)]].
+> - MATH 451 defines it through Riemann sums ([[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]]); the mesh form of the Cauchy criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|Equivalence of the Two Integrals (451 §32.6)]].
 > - Restated in [[§15a The Dominated Convergence Theorem#^rem-15-6|Riemann Integrability via Step Functions]] and compared with the Lebesgue integral in [[Riemann Integrable Implies Lebesgue Integrable|Theorem §15.10]].
 
 > [!remark] Remark
@@ -83,7 +83,7 @@ We now begin the transition to measure theory. We start by reviewing the Riemann
 ^rem-8-1
 
 > [!remark]- Connections
-> - This is the Darboux integral of MATH 451 ([[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]]); the equivalence is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
+> - This is the Darboux integral of MATH 451 ([[§32 The Definition of the Riemann Integral#^def-32-new3|451 Def. §32.2]]); the equivalence is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
 
 ## Continuous Functions are Riemann Integrable
 

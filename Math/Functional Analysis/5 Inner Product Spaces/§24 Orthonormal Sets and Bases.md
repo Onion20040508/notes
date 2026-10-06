@@ -269,7 +269,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§20 Orthonormal Bases#^ladr-6-27|LADR 6.27]], where an orthonormal basis is an orthonormal list that is also a basis; here the expansion is a series, not a finite linear combination.
 > - Computational version: [[§41 Orthogonal Sets#^def-41-4|235 Def. §41.4]] (orthonormal basis of a subspace of ℝⁿ, a finite basis).
-> - Computational version: eigenfunction expansions with generalized Fourier coefficients, [[§24 Expansion in Series of Eigenfunctions#^def-24-1|341 Def. §24.1]]; their convergence for a regular Sturm–Liouville problem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|341 Thm. §24.2]], is stated there without proof.
+> - Computational version: eigenfunction expansions with generalized Fourier coefficients, [[§24 Expansion in Series of Eigenfunctions#^def-24-new1|341 Def. §24.1]]; their convergence for a regular Sturm–Liouville problem, [[§24 Expansion in Series of Eigenfunctions#^thm-24-2|341 Thm. §24.2]], is stated there without proof.
 
 > [!theorem] Theorem §24.8: Characterizations of an Orthonormal Basis
 > Let $H$ be a Hilbert space and $\{e_\alpha\}_{\alpha \in \Lambda}$ an orthonormal set. The following are equivalent:
@@ -403,7 +403,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 ^rem-24-9
 
 > [!remark]- Connections
-> - Computational version: real Fourier series and their coefficients, [[§6 Periodic Functions and Fourier Series#^def-6-2|341 Def. §6.2]], and the complex coefficients $c_n$, [[§15★ Complex Methods#^def-15-1|341 Def. §15.1]], with worked examples.
+> - Computational version: real Fourier series and their coefficients, [[§6 Periodic Functions and Fourier Series#^def-6-new1|341 Def. §6.2]], and the complex coefficients $c_n$, [[§15★ Complex Methods#^def-15-1|341 Def. §15.1]], with worked examples.
 
 ## Existence of Orthonormal Bases and Separability
 
@@ -459,7 +459,7 @@ Both examples have *countable* orthonormal bases. Wu announced for next lecture 
 ^def-24-5
 
 > [!remark]- Connections
-> - Same definition for metric spaces: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-9|551 Def. §19.9]]; for topological spaces: [[§18 Countability Axioms#^def-18-5|590 Def. §18.5]].
+> - Same definition for metric spaces: [[§19a Lᵖ as a Banach Space#^def-19-new6|551 Def. §19.10]]; for topological spaces: [[§18 Countability Axioms#^def-18-5|590 Def. §18.5]].
 
 ### Countable Orthonormal Bases
 

@@ -19,7 +19,7 @@ tags: [topology, math590]
 ^def-3-1
 
 > [!remark]- Connections
-> - The same notion with ≤ (ordered set), together with partial orders: [[§3 The Set ℝ of Real Numbers#^def-3-3|451 Def. §3.3]].
+> - The same notion with ≤ (ordered set), together with partial orders: [[§3 The Set ℝ of Real Numbers#^def-3-3|451 Def. §3.3]] and [[§3 The Set ℝ of Real Numbers#^def-3-new1|451 Def. §3.3]].
 
 > [!example] Example §3.1
 > $\mathbb{R}$ with the usual order relation. Another example: $\mathbb{R}$ with $<_{sq}$ defined by $x <_{sq} y$ if $x^2 < y^2$, or $x^2 = y^2$ and $x < y$.

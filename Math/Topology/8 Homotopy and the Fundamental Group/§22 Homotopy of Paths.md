@@ -127,7 +127,7 @@ The straight-line homotopy is the most fundamental construction in homotopy theo
 ## Homotopy is an Equivalence Relation
 
 > [!theorem] Lemma §22.3
-> Both $\simeq$ and $\simeq_p$ are [[§22 Partitions and Equivalence Relations#^def-22-3|equivalence relations]].
+> Both $\simeq$ and $\simeq_p$ are [[§22 Partitions and Equivalence Relations#^def-22-new1|equivalence relations]].
 
 ^lem-22-3
 

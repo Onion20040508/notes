@@ -158,7 +158,7 @@ Cutting regions into pieces extends Green's Theorem ([[§110 Green's Theorem#^th
 ^ex-110-5
 
 > [!remark]- Connections
-> - This field is the angle form $d\theta$ of 452, the standard closed but not exact form: [[Angle form on the punctured plane]], [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]]. The value $\frac{1}{2\pi}\oint_C \mathbf{F} \cdot d\mathbf{r}$ is the [[§93 Argument Principle#^def-93-2|winding number]] of $C$ about the origin.
+> - This field is the angle form $d\theta$ of 452, the standard closed but not exact form: [[Angle form on the punctured plane]], [[§22 The Algebra of Differential Forms#^prop-22-11|452 Prop. §22.11]]. The value $\frac{1}{2\pi}\oint_C \mathbf{F} \cdot d\mathbf{r}$ is the [[§93 Argument Principle#^def-93-new1|winding number]] of $C$ about the origin.
 
 ## Curl-Free Fields on Simply-Connected Regions
 

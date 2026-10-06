@@ -117,7 +117,7 @@ Some sets are neither open nor closed. For a set $S$ to be not open there must b
 ^def-12-4
 
 > [!remark]- Connections
-> - For open subsets of the plane, B&C's polygonal definition agrees with topological connectedness, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]. A polygonal line is a path, so a polygonally connected set is path-connected, hence connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]]. Conversely, in a connected open set the points reachable from a fixed point by polygonal lines form a nonempty subset that is both open and closed in it, hence everything: the argument of [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]], with a segment inside a disk in place of a path in a chart.
+> - For open subsets of the plane, B&C's polygonal definition agrees with topological connectedness, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]. A polygonal line is a path, so a polygonally connected set is path-connected, hence connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]]. Conversely, in a connected open set the points reachable from a fixed point by polygonal lines form a nonempty subset that is both open and closed in it, hence everything: the argument of [[§2 Topological Manifolds#^thm-2-8|591 Thm. §2.8]], with a segment inside a disk in place of a path in a chart.
 
 > [!definition] Definition §12.10: Domain
 > A nonempty open set that is connected is called a **domain**.

@@ -99,7 +99,7 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Heine–Borel Theorem]] (3)
 - [[Continuous Image of a Compact Space is Compact]] (3)
 - [[§15 Compact Spaces#^rem-15-1|Remark: Why Compactness Matters]] (2)
-- [[§13 Connected Spaces#^def-13-1|Definition §13.1: Separation and Connected Space]] (2)
+- [[§13 Connected Spaces#^def-13-new1|Definition §13.1: Connected Space]] (2)
 
 ## Workhorse examples
 - [[2xy∕(x²+y²) family]]

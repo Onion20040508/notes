@@ -47,7 +47,7 @@ The notion of countability captures when we can “list” all elements of a set
 ^def-1-3
 
 > [!remark]- Connections
-> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 1.
+> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]].
 
 > [!definition] Definition §1.4: Surjective (Onto)
 > A mapping $f: X \to Y$ is **surjective** (or **onto**) if for every $y \in Y$, there exists $x \in X$ such that $f(x) = y$. In other words, $f(X) = Y$.
@@ -55,7 +55,7 @@ The notion of countability captures when we can “list” all elements of a set
 ^def-1-4
 
 > [!remark]- Connections
-> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 2.
+> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-new1|250 Def. §9.1]], part 2.
 
 > [!definition] Definition §1.5: Range
 > The **range** of $f$ is $f(X) = \{f(x) \mid x \in X\}$. Note that $f: X \to Y$ is surjective if and only if $f(X) = Y$.
@@ -71,7 +71,7 @@ The notion of countability captures when we can “list” all elements of a set
 ^def-1-6
 
 > [!remark]- Connections
-> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], part 3; the bijections are exactly the invertible functions, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].
+> - Same definition: [[§9 Injections, Surjections and Bijections#^def-9-new2|250 Def. §9.1]], part 3; the bijections are exactly the invertible functions, [[§9 Injections, Surjections and Bijections#^thm-9-2|250 Thm. §9.2]].
 
 > [!example] Example §1.1: $f: \mathbb{N} \to 2\mathbb{N}$
 > Define $f: \mathbb{N} \to 2\mathbb{N}$ by $f(n) = 2n$, where $2\mathbb{N} = \{2, 4, 6, \ldots\}$ denotes the even natural numbers. This is a bijection, showing that $\mathbb{N} \sim 2\mathbb{N}$.
@@ -93,7 +93,7 @@ The notion of countability captures when we can “list” all elements of a set
 ^def-1-8
 
 > [!remark]- Connections
-> - Same notion: countable in [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]] (finite or denumerable); [[§14 Counting Infinite Sets#^cor-14-6|250 Cor. §14.6]] shows it is equivalent to an injection into ℤ⁺.
+> - Same notion: countable in [[§14 Counting Infinite Sets#^def-14-new1|250 Def. §14.2]] (finite or denumerable); [[§14 Counting Infinite Sets#^cor-14-6|250 Cor. §14.6]] shows it is equivalent to an injection into ℤ⁺.
 
 > [!example] Example §1.2: $2\mathbb{N}$ is countably infinite
 > The set of even natural numbers $2\mathbb{N}$ is countably infinite since $f(n) = 2n$ gives a bijection $\mathbb{N} \to 2\mathbb{N}$.

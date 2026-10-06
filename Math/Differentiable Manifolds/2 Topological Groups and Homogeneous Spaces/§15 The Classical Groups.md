@@ -23,7 +23,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 
 ^pf-15-1
 
-*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
+*Uses:* [[§10 Topological Groups and Classical Matrix Groups#^prop-10-3|§10.3]], [[§10 Topological Groups and Classical Matrix Groups#^def-10-4|Def. §10.4]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]], [[§9 Continuous Functions#^def-9-1|590 Def. §9.1]]
 
 > [!remark]- Connections
 > - The general principle: a continuous map onto a disconnected space forces disconnectedness, contrapositive of [[Continuous Image of a Connected Space is Connected|590 §13.3]].

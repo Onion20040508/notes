@@ -164,7 +164,7 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 ^def-9-3
 
 > [!remark]- Connections
-> - The same notions for arbitrary functions: surjection and injection, [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]]; for linear maps, [[§8 Null Spaces and Ranges#^ladr-3-14|LADR 3.14]] (injective) and [[§8 Null Spaces and Ranges#^ladr-3-19|LADR 3.19]] (surjective).
+> - The same notions for arbitrary functions: surjection and injection, [[§9 Injections, Surjections and Bijections#^def-9-new1|250 Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]]; for linear maps, [[§8 Null Spaces and Ranges#^ladr-3-14|LADR 3.14]] (injective) and [[§8 Null Spaces and Ranges#^ladr-3-19|LADR 3.19]] (surjective).
 
 The projections of Table 4 are neither one-to-one nor onto $\mathbb{R}^2$; the reflections, contractions/expansions ($k \ne 0$) and shears of Tables 1–3 are both.
 

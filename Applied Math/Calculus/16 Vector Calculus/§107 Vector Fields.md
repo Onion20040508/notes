@@ -160,7 +160,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 ^def-107-4
 
 > [!remark]- Connections
-> - Same definition in 452 (with "irrotational" and "solenoidal" alongside): [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]]. In the language of differential forms a conservative field is an exact 1-form: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]], with the gradient as the differential [[§22 The Algebra of Differential Forms#^prop-22-6|452 Prop. §22.6]].
+> - Same definition in 452 (with "irrotational" and "solenoidal" alongside): [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]]. In the language of differential forms a conservative field is an exact 1-form: [[§22b Closed and Exact Forms#^def-22-new2|452 Def. §22.8]], with the gradient as the differential [[§22 The Algebra of Differential Forms#^prop-22-6|452 Prop. §22.6]].
 
 Not every vector field is conservative (the rotation field of [[§107 Vector Fields#^ex-107-1|Example §107.1]] is not; the test is [[§109a Conservative Vector Fields and Potential Functions#^thm-109-4|Theorem §109.4]]), but conservative fields arise often in physics.
 

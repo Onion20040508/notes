@@ -111,7 +111,7 @@ If $c^2$ is very large (usually on the order of $10^5\ \mathrm{m^2/s^2}$), the l
 ^def-29-2
 
 > [!remark]- Connections
-> - Stewart's version, with $a$ in place of $c$, and the check that $\sin(x - at)$ solves it: [[§92 Partial Derivatives#^def-92-5|Calc Def. §92.5]].
+> - Stewart's version, with $a$ in place of $c$, and the check that $\sin(x - at)$ solves it: [[§92 Partial Derivatives#^def-92-new1|Calc Def. §92.6]].
 > - The derivation is Newton's law for a continuum of masses coupled by tension; for a single mass on a spring it gives the oscillator equation $mu'' + ku = 0$, [[§19 Mechanical and Electrical Vibrations#^prop-19-1|331 Prop. §19.1]]. Each mode of the string, [[§30 Solution of the Vibrating String Problem#^def-30-1|Definition §30.1]], is exactly such an oscillator.
 
 ## The Vibrating String Problem

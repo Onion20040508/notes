@@ -43,7 +43,7 @@ In [[§21 Introduction to Differential Forms#Why the Algebra Must Be Anti-Commut
 
 > [!remark]- Connections
 > - Linear-algebra model: for functionals $\varphi, \tau$, $\varphi \wedge \tau(u,w) = \varphi(u)\tau(w) - \varphi(w)\tau(u)$ is an alternating bilinear form ([[§32 Bilinear Forms and Quadratic Forms#^ladr-9-15|LADR 9.15]]); anti-commutativity is the swap rule for alternating forms ([[§33 Alternating Multilinear Forms#^ladr-9-30|LADR 9.30]]).
-> - The wedge of $k$ covectors is the alternating part of their tensor product $\varphi_1 \otimes \cdots \otimes \varphi_k$ (an $m$-linear functional, [[§35 Tensor Products#^ladr-9-85|LADR 9.85]], [[§35 Tensor Products#^ladr-9-88|LADR 9.88]]).
+> - The wedge of $k$ covectors is the alternating part of their tensor product $\varphi_1 \otimes \cdots \otimes \varphi_k$ (an $m$-linear functional, [[§35 Tensor Products#^ladr-9-85|LADR 9.85]], [[§35 Tensor Products#^ladr-9-88b|LADR 9.88b]]).
 
 **Why anti-commutativity?** This encodes **orientation**. Recall:
 - Swapping the order of parameters in a cross product flips the sign: $\mathbf{X}_u \times \mathbf{X}_v = -\mathbf{X}_v \times \mathbf{X}_u$.

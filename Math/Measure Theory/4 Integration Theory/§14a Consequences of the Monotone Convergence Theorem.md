@@ -369,6 +369,6 @@ The [[Monotone Convergence Theorem (Lebesgue)|Monotone Convergence Theorem]] tur
 ^rem-14-7
 
 > [!remark]- Connections
-> - The Riemann integral uses both sides (upper and lower Darboux integrals must agree): [[§8 Motivation꞉ The Riemann Integral#^rem-8-1|Rem. §8.1]], [[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]]. The Vitali set is non-measurable by [[The Vitali Set is Not Measurable|Theorem §11.20]].
+> - The Riemann integral uses both sides (upper and lower Darboux integrals must agree): [[§8 Motivation꞉ The Riemann Integral#^rem-8-1|Rem. §8.1]], [[§32 The Definition of the Riemann Integral#^def-32-new3|451 Def. §32.2]]. The Vitali set is non-measurable by [[The Vitali Set is Not Measurable|Theorem §11.20]].
 
 *Chain (Vitali set):* ← [[§13a ℚ, Vitali and Cantor Sets, xᵏ and Escaping Mass#The Vitali Set|Chapter 3]]

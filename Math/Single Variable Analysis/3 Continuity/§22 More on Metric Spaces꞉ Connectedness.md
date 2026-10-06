@@ -21,7 +21,7 @@ Given a subset $S \subseteq \mathbb{R}$, when should we consider it *connected*?
 ^def-22-1
 
 > [!remark]- Connections
-> - Path-connectedness for topological spaces, [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]], which implies connectedness, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]].
+> - Path-connectedness for topological spaces, [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]], which implies connectedness, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]].
 
 > [!theorem] Proposition §22.1: The Rationals Are Not Path-Connected
 > $\mathbb{Q}$ (with the metric from $\mathbb{R}$) is not path-connected. In fact, every continuous map $f: [0,1] \to \mathbb{Q}$ is constant.
@@ -36,6 +36,6 @@ Given a subset $S \subseteq \mathbb{R}$, when should we consider it *connected*?
 *Uses:* [[§18 Properties of Continuous Functions#^cor-18-5|§18.5]], [[§17 Continuous Functions#^rem-17-4|§17 Rem. (density of the irrationals)]]
 
 > [!remark] Remark: Connectedness
-> Path-connectedness is one way to make the idea precise. The other standard one is connectedness: no separation into two disjoint nonempty open subsets, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]. Path-connected spaces are connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]], and the intervals of $\mathbb{R}$ are connected, [[§14 Connected Subspaces of ℝ#^cor-14-2|590 Cor. §14.2]]. A continuous image of a connected space is connected, [[Continuous Image of a Connected Space is Connected|590 Thm. §13.3]], which gives the [[Intermediate Value Theorem]] in its general form, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]]. In this course the corresponding facts on $[a,b]$ are the IVT itself and [[§18 Properties of Continuous Functions#^cor-18-5|Corollary §18.5]] (the image of $[a,b]$ is a closed interval), which is what the proof above uses.
+> Path-connectedness is one way to make the idea precise. The other standard one is connectedness: no separation into two disjoint nonempty open subsets, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]. Path-connected spaces are connected, [[§14 Connected Subspaces of ℝ#^thm-14-4|590 Thm. §14.4]], and the intervals of $\mathbb{R}$ are connected, [[§14 Connected Subspaces of ℝ#^cor-14-2|590 Cor. §14.2]]. A continuous image of a connected space is connected, [[Continuous Image of a Connected Space is Connected|590 Thm. §13.3]], which gives the [[Intermediate Value Theorem]] in its general form, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]]. In this course the corresponding facts on $[a,b]$ are the IVT itself and [[§18 Properties of Continuous Functions#^cor-18-5|Corollary §18.5]] (the image of $[a,b]$ is a closed interval), which is what the proof above uses.
 
 ^rem-22-1

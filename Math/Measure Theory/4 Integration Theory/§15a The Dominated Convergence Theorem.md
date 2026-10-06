@@ -250,7 +250,7 @@ The standard [[Fatou's Lemma|Fatou's lemma]] ([[§14 The Lebesgue Integral for S
 ^rem-15-6
 
 > [!remark]- Connections
-> - This is the 551 definition [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]]; in MATH 451 the Darboux sums are [[§32 The Definition of the Riemann Integral#^def-32-1|451 Def. §32.1]] and the mesh form of the criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
+> - This is the 551 definition [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Def. §8.3]]; in MATH 451 the Darboux sums are [[§32 The Definition of the Riemann Integral#^def-32-new2|451 Def. §32.1]] and the mesh form of the criterion is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
 
 > [!theorem] Theorem §15.10: Riemann Integrability Implies Lebesgue Integrability
 > Let $f$ be [[§8 Motivation꞉ The Riemann Integral#^def-8-3|Riemann integrable]] on $[a, b]$. Then $f$ is Lebesgue integrable on $[a, b]$ and:

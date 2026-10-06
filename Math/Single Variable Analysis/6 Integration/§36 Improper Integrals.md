@@ -28,7 +28,7 @@ The Riemann integral of §32 requires a *bounded* function on a *bounded* closed
 ^def-36-1
 
 > [!remark]- Connections
-> - Used in PDEs: the Fourier integral, [[§14 Fourier Integral#^def-14-1|341 Def. §14.1]], and the solution of the semi-infinite rod, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], are improper integrals in this sense.
+> - Used in PDEs: the Fourier integral, [[§14 Fourier Integral#^def-14-new1|341 Def. §14.1]], and the solution of the semi-infinite rod, [[§26 Semi-Infinite Rod#^thm-26-2|341 Thm. §26.2]], are improper integrals in this sense.
 > - The Lebesgue integral is absolute ([[§15 The General Lebesgue Integral#^rem-15-1|551 Rem. §15.1]]), so a conditionally convergent improper integral such as that of $\sin x / x$ on $[1, \infty)$ is not a Lebesgue integral; for integrable $f$ the tails vanish by [[§16 The L¹ Space and Density Theorems#^thm-16-3|551 Thm. §16.3]].
 > - Computational version: [[§51 Improper Integrals#^def-51-1|Calc Def. §51.1]], [[§51 Improper Integrals#^def-51-2|Calc Def. §51.2]] (with worked examples).
 > - Used in ODEs: the improper integral over $[a, \infty)$ that defines the Laplace transform, [[§21 Definition of the Laplace Transform#^def-21-1|331 Def. §21.1]] (with worked examples).

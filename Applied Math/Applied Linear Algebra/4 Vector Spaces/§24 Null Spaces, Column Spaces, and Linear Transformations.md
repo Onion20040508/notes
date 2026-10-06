@@ -312,7 +312,7 @@ When $A$ is not square, as here, $\operatorname{Nul} A$ and $\operatorname{Col} 
 
 > [!remark]- Connections
 > - Rigorous treatment: linear maps [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]]; null space and range are subspaces, [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]], [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]]; injective iff null space $= \{0\}$, [[§8 Null Spaces and Ranges#^ladr-3-15|LADR 3.15]] (item 8 of the table). Their dimensions add up to $\dim V$: the [[§8 Null Spaces and Ranges#^ladr-3-21|fundamental theorem of linear maps (LADR 3.21)]], whose matrix form is the Rank Theorem, [[§28 Rank#^thm-28-3|Theorem §28.3]].
-> - One-to-one and onto as properties of functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]].
+> - One-to-one and onto as properties of functions: [[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]], [[§9 Injections, Surjections and Bijections#^def-9-new1|250 Def. §9.1]].
 
 In applications a subspace usually arises as the kernel or the range of a suitable linear transformation. For instance, the solutions of a homogeneous linear differential equation form the kernel of a linear transformation built from derivatives.
 

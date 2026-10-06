@@ -303,7 +303,7 @@ Why does such a smallest closed superset exist? Consider *all* closed subsets co
 
 > [!remark]- Connections
 > - 452's version in ℝⁿ: the closure is the set together with its boundary points, [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
-> - Closure in any topological space: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]].
+> - Closure in any topological space: [[§7 Interior and Closure#^def-7-new1|590 Def. §7.1]].
 
 > [!example] Example §13.7: Closures on the Line
 > If $Y$ is already closed, $\overline{Y} = Y$. For $Y = (a,b) \subset \mathbb{R}$: $\overline{Y} = [a,b]$. For $Y = \mathbb{Q}$, $X = \mathbb{R}$: what is $\overline{\mathbb{Q}}$ (the closure, not the algebraic numbers of [[§2 The Set ℚ of Rational Numbers#^def-2-5|Def. §2.5]])? Answer: $\overline{\mathbb{Q}} = \mathbb{R}$ — every real number is a limit of a sequence of rationals, by the density of $\mathbb{Q}$ in $\mathbb{R}$ (§4; choose $s_n \in \mathbb{Q} \cap (x - \tfrac1n, x + \tfrac1n)$).

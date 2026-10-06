@@ -82,7 +82,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-1-2
 
 > [!proof]+ Proof (not given in lecture)
-> (a) That $\mathcal{T}_{\mathcal{B}}$ is a topology was proved in [[§2 Basis for a Topology#^def-2-1|590 §2]] (axiom 2 is exactly what makes finite intersections open). For $B \in \mathcal{B}$ and $x \in B$, the element $B$ itself witnesses $x \in B \subseteq B$, so $B \in \mathcal{T}_{\mathcal{B}}$. Now let $p \in U$ with $U \in \mathcal{T}_{\mathcal{B}}$; by the very definition of $\mathcal{T}_{\mathcal{B}}$ there is $B \in \mathcal{B}$ with $p \in B \subseteq U$, which is the condition in [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]].
+> (a) That $\mathcal{T}_{\mathcal{B}}$ is a topology was proved in [[§2 Basis for a Topology#^def-2-new1|590 §2]] (axiom 2 is exactly what makes finite intersections open). For $B \in \mathcal{B}$ and $x \in B$, the element $B$ itself witnesses $x \in B \subseteq B$, so $B \in \mathcal{T}_{\mathcal{B}}$. Now let $p \in U$ with $U \in \mathcal{T}_{\mathcal{B}}$; by the very definition of $\mathcal{T}_{\mathcal{B}}$ there is $B \in \mathcal{B}$ with $p \in B \subseteq U$, which is the condition in [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]].
 >
 > (b) *Axiom 1:* $X \in \mathcal{T}$ is open, so for $x \in X$ [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] gives $B \in \mathcal{B}$ with $x \in B \subseteq X$. *Axiom 2:* if $B_1, B_2 \in \mathcal{B} \subseteq \mathcal{T}$, then $B_1 \cap B_2 \in \mathcal{T}$ (finite intersection), so for $x \in B_1 \cap B_2$ [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] gives $B_3 \in \mathcal{B}$ with $x \in B_3 \subseteq B_1 \cap B_2$.
 >

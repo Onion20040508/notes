@@ -36,7 +36,7 @@ Chapter 4 studies the potential equation, or Laplace's equation, $\nabla^2u = 0$
 
 > [!remark]- Connections
 > - The same definition, with the example $e^x\sin y$: [[§92 Partial Derivatives#^def-92-5|Calc Def. §92.5]]; $\nabla^2 = \nabla\cdot\nabla$ as the divergence of the gradient, [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]].
-> - The Laplacian in $\mathbb{R}^n$ and the normal derivative, the setting of Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+> - The Laplacian in $\mathbb{R}^n$ and the normal derivative, the setting of Green's identities: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]].
 
 > [!definition] Definition §35.1: Harmonic Function
 > A solution of the potential equation ([[§35 Potential Equation#^def-35-1|Definition §35.1]]) in a region is called a **harmonic function** there.
@@ -73,7 +73,7 @@ Where the equation comes from:
 > \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = -\phi_{xx} - \phi_{yy} = 0 \qquad\Longleftrightarrow\qquad \nabla^2\phi = 0 .
 > $$
 >
-> So the flow is found by solving the potential equation for $\phi$. On a wall the flow cannot cross, the normal velocity $-\partial\phi/\partial n$ is zero: such walls give the Neumann conditions of Definition §35.2 below. The same derivation, starting from conservation of mass, is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^rem-17-4|452 §17]] (irrotational flow).
+> So the flow is found by solving the potential equation for $\phi$. On a wall the flow cannot cross, the normal velocity $-\partial\phi/\partial n$ is zero: such walls give the Neumann conditions of Definition §35.2 below. The same derivation, starting from conservation of mass, is [[§17a Conservation of Mass and Laplace's Equation#^rem-17-4|452 §17a]] (irrotational flow).
 >
 > *Powers (p. 257) prints (B) as $\partial u/\partial x - \partial v/\partial x = 0$; the irrotationality condition is $\partial u/\partial y - \partial v/\partial x = 0$, as above.*
 >
@@ -82,7 +82,7 @@ Where the equation comes from:
 ^ex-35-1
 
 > [!remark]- Connections
-> - Complex-variables version: [[§124★ Two-Dimensional Fluid Flow#^prop-124-5|342 Prop. §124.5]] (the velocity potential is harmonic, with the opposite sign convention $\mathbf V = +\nabla\phi$), and the stream function and complex potential in [[§125★ The Stream Function#^def-125-1|342 Def. §125.1]].
+> - Complex-variables version: [[§124★ Two-Dimensional Fluid Flow#^prop-124-5|342 Prop. §124.5]] (the velocity potential is harmonic, with the opposite sign convention $\mathbf V = +\nabla\phi$), and the stream function and complex potential in [[§125★ The Stream Function#^def-125-1|342 Def. §125.1]] and [[§125★ The Stream Function#^def-125-new2|342 Def. §125.3]].
 
 Harmonic functions have many special properties. The most important one, the **maximum principle**, says: *if $\nabla^2u = 0$ in a region, then $u$ cannot have a relative maximum or minimum inside the region unless $u$ is constant.* In particular, a point inside the region where $\partial u/\partial x$ and $\partial u/\partial y$ both vanish is a saddle point. It is proved, from the mean value property, in [[§39a The Poisson Integral Formula and the Mean Value Property#^thm-39-5|Theorem §39.5]].
 
@@ -121,7 +121,7 @@ Harmonic functions have many special properties. The most important one, the **m
 ^def-35-new3
 
 > [!remark]- Connections
-> - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^def-116-1|342 Def. §116.1]] (the same Dirichlet and Neumann problems), with [[§117★ Transformations of Boundary Conditions#^thm-117-2|342 Thm. §117.2]] (conformal maps preserve the conditions $h = h_0$ and $dh/dn = 0$) and the Neumann problem for a disk solved in [[§140★ Neumann Problems#^thm-140-2|342 Thm. §140.2]].
+> - Complex-variables version: [[§116★ Transformations of Harmonic Functions#^def-116-new1|342 Def. §116.2]] and [[§116★ Transformations of Harmonic Functions#^def-116-new2|342 Def. §116.3]] (the same Dirichlet and Neumann problems), with [[§117★ Transformations of Boundary Conditions#^thm-117-2|342 Thm. §117.2]] (conformal maps preserve the conditions $h = h_0$ and $dh/dn = 0$) and the Neumann problem for a disk solved in [[§140★ Neumann Problems#^thm-140-2|342 Thm. §140.2]].
 
 On the sides of a rectangle $0 < x < a$, $0 < y < b$ the normal derivative is simply $\pm u_x$ (at $x = 0$, $x = a$) or $\pm u_y$ (at $y = 0$, $y = b$); a zero normal derivative means "insulated" for temperatures and "no flow across" for fluids.
 

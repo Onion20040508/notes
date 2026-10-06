@@ -250,7 +250,7 @@ Uribe singled out Lemma [[§32 Submersions#^lem-32-3|§32.3]] as “an intellect
 *Uses:* [[§32 Submersions#^thm-32-4|§32.4]], [[§4 Quotient Spaces and Open Maps#^ex-4-2|Ex. §4.2]]
 
 > [!theorem] Theorem §32.7: Submersions from Compact Manifolds
-> Let $M$ be compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty, $N$ connected ([[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]), and $F : M \to N$ a submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]). Then $F$ is surjective, and $N$ is compact.
+> Let $M$ be compact ([[§15 Compact Spaces#^def-15-2|590 Def. §15.2]]) and nonempty, $N$ connected ([[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]), and $F : M \to N$ a submersion ([[§32 Submersions#^def-32-1|Def. §32.1]]). Then $F$ is surjective, and $N$ is compact.
 
 ^thm-32-7
 

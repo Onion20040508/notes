@@ -271,7 +271,7 @@ tags: [topology, math590]
 
 > [!remark]- Connections
 > - In 591, stereographic projection is a smooth chart on the circle, [[§16 Differentiable Structures#^ex-16-3|591 Ex. §16.3]], and identifies S² with ℂP¹, [[§17 Projective Spaces as Smooth Manifolds#^prop-17-4|591 Prop. §17.4]].
-> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-1|342 Def. §17.1]] (the Riemann sphere, by stereographic projection of the extended plane) and [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]] (1/z is continuous on the extended plane, including at 0 and ∞).
+> - Computational version: [[§17 Limits Involving the Point at Infinity#^def-17-new1|342 Def. §17.2]] (the Riemann sphere, by stereographic projection of the extended plane) and [[§97★ The Transformation w = 1∕z#^thm-97-2|342 Thm. §97.2]] (1/z is continuous on the extended plane, including at 0 and ∞).
 
 ## Local Compactness in Hausdorff Spaces
 

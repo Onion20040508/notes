@@ -36,7 +36,7 @@ in $D$ ([[§27★ Harmonic Functions#^thm-27-1|Theorem §27.1]]).
 ^def-115-1
 
 > [!remark]- Connections
-> - Harmonic functions and the Laplacian: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]], and in $\mathbb{R}^n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]].
+> - Harmonic functions and the Laplacian: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]], and in $\mathbb{R}^n$, [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]].
 
 > [!theorem] Theorem §115.1: Analytic Functions and Harmonic Conjugates
 > A function $f(z) = u(x, y) + iv(x, y)$ is analytic in a domain $D$ if and only if $v$ is a harmonic conjugate of $u$.

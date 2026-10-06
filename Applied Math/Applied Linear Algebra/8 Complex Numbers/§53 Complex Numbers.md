@@ -49,7 +49,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 *Lay omits the proof ("it is readily checked"); each law reduces to the same law in $\mathbb{R}$ through (1)–(2), as in [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]].*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§1 Rⁿ and Cⁿ#^ladr-1-1|LADR 1.1]] defines $\mathbb{C}$ as ordered pairs $(a, b)$ with the operations (1)–(2), which removes the vagueness of a "formal symbol $i$"; [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]] lists and proves the field properties, and the conjugate and absolute value are [[§13 Polynomials#^ladr-4-2|LADR 4.2]].
+> - Rigorous treatment: [[§1 Rⁿ and Cⁿ#^ladr-1-1|LADR 1.1]] defines $\mathbb{C}$ as ordered pairs $(a, b)$ with the operations (1)–(2), which removes the vagueness of a "formal symbol $i$"; [[§1 Rⁿ and Cⁿ#^ladr-1-3|LADR 1.3]] lists and proves the field properties, and the conjugate and absolute value are [[§13 Polynomials#^ladr-4-2|LADR 4.2]] and [[§13 Polynomials#^ladr-4-2b|LADR 4.2b]].
 > - Complex-variables version: [[§2 Basic Algebraic Properties#^thm-2-1|342 Thm. §2.1]], [[§2 Basic Algebraic Properties#^thm-2-2|342 Thm. §2.2]] and [[§2 Basic Algebraic Properties#^thm-2-3|342 Thm. §2.3]] (the laws, identities and additive inverse, verified from the ordered-pair definition of sum and product, [[§1 Sums and Products#^def-1-3|342 Def. §1.3]]).
 
 > [!definition] Definition §53.2: Subtraction
@@ -273,7 +273,7 @@ Complex numbers $a + bi$ are needed in linear algebra because real matrices can 
 *Uses:* [[§53 Complex Numbers#^def-53-6|Def. §53.6]], [[§53 Complex Numbers#^def-53-new1|Def. §53.6]], [[§53 Complex Numbers#^prop-53-4|§53.4]], [[§119 Trigonometry#^thm-119-6|Calc Thm. §119.6]] (addition formulas)
 
 > [!remark]- Connections
-> - Complex-variables version: [[§8 Products and Powers in Exponential Form#^thm-8-1|342 Thm. §8.1]] (the same rule in the exponential form $z = re^{i\theta}$ of [[§7 Exponential Form#^def-7-1|342 Def. §7.1]]) and [[§9 Arguments of Products and Quotients#^thm-9-1|342 Thm. §9.1]] (in what sense $\arg(wz) = \arg w + \arg z$).
+> - Complex-variables version: [[§8 Products and Powers in Exponential Form#^thm-8-1|342 Thm. §8.1]] (the same rule in the exponential form $z = re^{i\theta}$ of [[§7 Exponential Form#^def-7-new3|342 Def. §7.5]]) and [[§9 Arguments of Products and Quotients#^thm-9-1|342 Thm. §9.1]] (in what sense $\arg(wz) = \arg w + \arg z$).
 
 Strictly, the sum $\vartheta + \varphi$ in (4) is *an* argument of $wz$; it may have to be shifted by $\pm 2\pi$ to land in $(-\pi, \pi]$.
 

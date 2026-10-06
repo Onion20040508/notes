@@ -30,7 +30,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 ^def-40-1
 
 > [!remark]- Connections
-> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group (590 §21.13)]].
+> - 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group (590 §21.13)]].
 > - Linear-algebra versions: [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|Quotient space, V∕U]] and [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]]; topological version: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
 
 > [!theorem] Theorem §40.1: $G/N$ Is a Group
@@ -65,7 +65,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 *Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§15 Homomorphisms#^def-15-2|Def. §15.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
 
 > [!remark]- Connections
-> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|Cosets and Quotient Group]].
+> - Vector-space version: [[§11 Products and Quotients of Vector Spaces#^ladr-3-104|Quotient map, π]] ($\operatorname{null}\pi = U$, shown in the proof of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]]); in 590 stated in [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|Quotient Group]].
 
 > [!remark] Remark: Kernels and Normal Subgroups Are the Same Thing
 > Together with [[§39 Sources of Normal Subgroups#^prop-39-2|Kernels Are Normal]], the proposition says: the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$. This is why normality, a condition that looks technical, is the natural one.

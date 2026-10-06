@@ -157,7 +157,7 @@ tags: [measure-theory, math551]
 ^def-18-2
 
 > [!remark]- Connections
-> - Partitions as in the Riemann integral: [[§8 Motivation꞉ The Riemann Integral#^def-8-1|Def. §8.1]], [[§32 The Definition of the Riemann Integral#^def-32-1|451 Def. §32.1]].
+> - Partitions as in the Riemann integral: [[§8 Motivation꞉ The Riemann Integral#^def-8-1|Def. §8.1]], [[§32 The Definition of the Riemann Integral#^def-32-new1|451 Def. §32.1]].
 
 > [!definition] Definition §18.3: Bounded Variation
 > If $\bigvee_a^b(f) < \infty$, we say $f$ is of **bounded variation** on $[a, b]$, and write $f \in BV([a, b])$.

@@ -24,7 +24,7 @@ The concepts above (lim sup and lim inf, [[§10 Monotone Sequences and Cauchy Se
 ^def-10-4
 
 > [!remark]- Connections
-> - The same condition with a norm in place of the absolute value: [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|551 Def. §19.3]]; in a metric space, [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.2]].
+> - The same condition with a norm in place of the absolute value: [[§10 Normed Linear Spaces#^def-10-5|556 Def. §10.5]], [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; in a metric space, [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.2]].
 
 > [!theorem] Theorem §10.7: Convergent Implies Cauchy
 > Every convergent sequence is a Cauchy sequence.

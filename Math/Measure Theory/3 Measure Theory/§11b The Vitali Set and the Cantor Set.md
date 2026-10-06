@@ -48,7 +48,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 ^def-11-10
 
 > [!remark]- Connections
-> - The general notion: equivalence relation, [[§22 Partitions and Equivalence Relations#^def-22-3|250 Def. §22.3]].
+> - The general notion: equivalence relation, [[§22 Partitions and Equivalence Relations#^def-22-new1|250 Def. §22.3]].
 
 > [!theorem] Proposition §11.16: Properties of $\sim$
 > The relation $\sim$ is an equivalence relation:
@@ -68,7 +68,7 @@ We now show that not every subset of $\mathbb{R}$ is Lebesgue measurable. The co
 ^def-11-11
 
 > [!remark]- Connections
-> - The general notion: equivalence class and quotient set, [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]].
+> - The general notion: equivalence class and quotient set, [[§22 Partitions and Equivalence Relations#^def-22-4|250 Def. §22.4]], [[§22 Partitions and Equivalence Relations#^def-22-new2|250 Def. §22.4]].
 
 > [!theorem] Proposition §11.17
 > For any $x, y \in [0, 1]$, either $E_x \cap E_y = \emptyset$ or $E_x = E_y$.

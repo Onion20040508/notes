@@ -88,7 +88,7 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^pf-2-2
 
-*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
+*Uses:* [[§2 Topological Manifolds#^thm-2-1|§2.1]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]
 
 > [!theorem] Proposition §2.3: Charts onto Open Subsets Suffice
 > In the definition of locally Euclidean, replacing “$\varphi : U \to \mathbb{R}^n$ is a homeomorphism” by
@@ -307,7 +307,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-7
 
-*Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
+*Uses:* [[Pasting Lemma|590 §9.5 (Pasting Lemma)]], [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]
 
 > [!remark]- Connections
 > - The same concatenation is the product of paths in 590: [[§22 Homotopy of Paths#^def-22-6|590 Def. §22.6]], with its algebra in [[Properties of Path Concatenation]].
@@ -336,7 +336,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 
 ^pf-2-8
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-7|§2.7]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-3|590 Def. §14.3]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§2 Topological Manifolds#^lem-2-7|§2.7]], [[§13 Connected Spaces#^lem-13-1|590 §13.1]], [[§14 Connected Subspaces of ℝ#^def-14-new1|590 Def. §14.3]]
 
 > [!theorem] Corollary §2.9: Components of a Manifold
 > Let $M$ be a topological manifold. Then the connected components of $M$ are open, coincide with its path components, and each is itself a topological manifold of the same dimension.

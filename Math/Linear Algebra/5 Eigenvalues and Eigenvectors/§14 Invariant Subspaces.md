@@ -56,8 +56,8 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Equivalent conditions: [[§14 Invariant Subspaces#^ladr-5-7|Equivalent conditions to be an eigenvalue]]. Existence over $\C$: [[Existence of eigenvalues]]. Zeros of the minimal polynomial: [[§15 The Minimal Polynomial#^ladr-5-27|Eigenvalues are the zeros of the minimal polynomial]].
 > - Computational version: [[§32 Eigenvectors and Eigenvalues#^def-32-1|235 Def. §32.1]] (eigenvalues and eigenvectors of an $n\times n$ matrix, with worked examples).
-> - Computational version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-4|331 Def. §29.4]] (the eigenvalues of a matrix as the roots of $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$, with worked examples).
-> - Computational version: eigenvalues and eigenfunctions of differential operators with boundary conditions, such as $\phi''+\lambda^2\phi=0$ with fixed or insulated ends, [[§3★ Boundary Value Problems#^def-3-3|341 Def. §3.3]], [[§20 Example꞉ Insulated Bar#^def-20-1|341 Def. §20.1]], computed in worked examples.
+> - Computational version: [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^def-29-new1|331 Def. §29.4]] (the eigenvalues of a matrix as the roots of $\det(\mathbf{A} - \lambda\mathbf{I}) = 0$, with worked examples).
+> - Computational version: eigenvalues and eigenfunctions of differential operators with boundary conditions, such as $\phi''+\lambda^2\phi=0$ with fixed or insulated ends, [[§3★ Boundary Value Problems#^def-3-3|341 Def. §3.3]], [[§20 Example꞉ Insulated Bar#^def-20-new1|341 Def. §20.1]], computed in worked examples.
 
 > [!example] Example 5.6: Eigenvalue (p. 134)
 > $T(x,y,z)=(7x+3z,\ 3x+6y+9z,\ -6y)$ on $\F^3$. Then

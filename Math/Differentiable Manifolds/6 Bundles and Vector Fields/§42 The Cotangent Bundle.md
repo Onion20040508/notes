@@ -51,7 +51,7 @@ tags: [differentiable-manifolds, math591]
 ^def-42-3
 
 > [!remark]- Connections
-> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]].
+> - The fibre $T_p^*M$ is a dual space, [[§12 Duality#^ladr-3-110|LADR 3.110]], and the chart uses the dual basis, [[§12 Duality#^ladr-3-112|LADR 3.112]]. Counterpart in 452: differential forms on $\mathbb{R}^n$, [[§21 Introduction to Differential Forms#^def-21-new1|452 Def. §21.1]].
 
 The definitions and results of this section run parallel to those for the tangent bundle in [[§41 The Tangent Bundle|§41]], item for item, with the dual bases $dx^i|_p$ in place of the coordinate bases $\partial/\partial x^i|_p$. Lecture 13 gave the charts and the transition maps; the rest is filled in, following [[§41 The Tangent Bundle|§41]].
 

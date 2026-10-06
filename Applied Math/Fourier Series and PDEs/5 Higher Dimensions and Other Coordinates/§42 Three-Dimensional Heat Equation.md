@@ -136,7 +136,7 @@ In this section $c$ is the specific heat, not a wave speed; $\rho c$ is the heat
 
 ^pf-42-3
 
-*Uses:* [[§42 Three-Dimensional Heat Equation#^thm-42-2|§42.2]], [[§42 Three-Dimensional Heat Equation#^def-42-2|Def. §42.2]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]] ($\nabla^2 = \nabla\cdot\nabla$)
+*Uses:* [[§42 Three-Dimensional Heat Equation#^thm-42-2|§42.2]], [[§42 Three-Dimensional Heat Equation#^def-42-2|Def. §42.2]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]] ($\nabla^2 = \nabla\cdot\nabla$)
 
 > [!remark]- Connections
 > - The one-dimensional case, derived for a rod with $q$ a scalar and Fourier's law $q = -\kappa u_x$ ([[§17 Derivation and Boundary Conditions#^def-17-2|Definition §17.2]]): [[§17 Derivation and Boundary Conditions#^thm-17-2|Theorem §17.2]]. In a rod $\nabla^2u = u_{xx}$ and (6) reduces to the heat equation there.

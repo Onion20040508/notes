@@ -176,7 +176,7 @@ tags: [measure-theory, math551]
 *Uses:* [[§12b Simple Functions and Modes of Convergence#^prop-12-13|§12.13]], [[§17a Applications of Tonelli's Theorem#^thm-17-8|§17.8]], [[Lebesgue Measurable Sets Form a σ-Algebra|§10.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]], [[Simple Function Approximation Theorem|§12.14]], [[Continuity of Measure|§11.12]], [[Monotone Convergence Theorem (Lebesgue)|§14.4]], [[Tonelli's Theorem|§17.3]]
 
 > [!remark]- Connections
-> - “Integral = area under the graph” is the MATH 451 picture of the Riemann integral via [[§32 The Definition of the Riemann Integral#^def-32-1|upper and lower sums]]; here it becomes a theorem about Lebesgue measure in $\mathbb{R}^{n+1}$.
+> - “Integral = area under the graph” is the MATH 451 picture of the Riemann integral via [[§32 The Definition of the Riemann Integral#^def-32-new2|upper and lower sums]]; here it becomes a theorem about Lebesgue measure in $\mathbb{R}^{n+1}$.
 > - Computational version: volume under a graph as a double integral, [[§98 Double Integrals Over Rectangles#^thm-98-2|Calc Thm. §98.2]] (with worked examples).
 
 > [!theorem] Theorem §17.12: Converse: Measurable Subgraph Implies Measurable Function

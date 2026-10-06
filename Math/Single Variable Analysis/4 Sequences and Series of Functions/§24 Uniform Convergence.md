@@ -15,7 +15,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 ^def-24-1
 
 > [!remark]- Connections
-> - 551 weakens it to convergence outside a null set (almost everywhere convergence): [[§12 Measurable Functions#^def-12-8|551 Def. §12.8]].
+> - 551 weakens it to convergence outside a null set (almost everywhere convergence): [[§12b Simple Functions and Modes of Convergence#^def-12-new1|551 Def. §12.9]].
 
 > [!definition] Definition §24.2: Uniform Convergence
 > $(f_n)$ **converges uniformly to $f$ on $S$** if for every $\varepsilon > 0$ there exists $N$ such that for all $n \geq N$ *and all $x \in S$*,
@@ -33,7 +33,7 @@ The problem with the examples above: convergence $f_n(x) \to f(x)$ *at every poi
 
 > [!remark]- Connections
 > - Restated in 551 as [[§12 Measurable Functions#^def-12-9|551 Def. §12.9]]; on a set of finite measure, a.e. convergence is uniform off a set of arbitrarily small measure by [[§13 Egorov's and Lusin's Theorems#^thm-13-1|551 Thm. §13.1]] (Egorov).
-> - Computational version: [[§9 Uniform Convergence#^def-9-1|341 Def. §9.1]] (pointwise versus uniform convergence, with worked examples for Fourier series).
+> - Computational version: [[§9 Uniform Convergence#^def-9-new1|341 Def. §9.1]] (pointwise versus uniform convergence, with worked examples for Fourier series).
 > - Computational version: [[§69★ Absolute and Uniform Convergence of Power Series#^def-69-2|342 Def. §69.2]] (uniform convergence of complex series, in remainder form).
 
 ## Examples and Non-Examples

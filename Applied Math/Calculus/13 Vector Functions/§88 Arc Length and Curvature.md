@@ -43,7 +43,7 @@ This section measures the geometry of a space curve: how long it is, how sharply
 
 > [!remark]- Connections
 > - In 452 the arc length element $|\mathbf{r}'(t)|\,dt$ is the weight in the scalar line integral, [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]], and its two-dimensional analog is the area element $|\mathbf{X}_u \times \mathbf{X}_v|\,du\,dv$ of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]].
-> - Complex-variables version: [[§43 Contours#^def-43-3|342 Def. §43.3]] (the length of a contour, $\int_a^b |z'(t)|\,dt$).
+> - Complex-variables version: [[§43 Contours#^def-43-new3|342 Def. §43.6]] (the length of a contour, $\int_a^b |z'(t)|\,dt$).
 
 > [!remark] Remark: Why It Works
 > Divide $[a, b]$ by $a = t_0 < t_1 < \cdots < t_n = b$ and join the points $\mathbf{r}(t_0), \ldots, \mathbf{r}(t_n)$ by segments. The $i$-th segment has length

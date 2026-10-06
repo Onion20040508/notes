@@ -274,7 +274,7 @@ A surface built from polygons has a simple numerical fingerprint, $\chi = V - E 
 | genus-$2$ surface | $2$ | $0$ | $-2$ |
 
 > [!theorem] Theorem §25.7: Classification of Surfaces
-> Every [[§15 Compact Spaces#^def-15-2|compact]] [[§13 Connected Spaces#^def-13-1|connected]] surface is homeomorphic to exactly one of the following:
+> Every [[§15 Compact Spaces#^def-15-2|compact]] [[§13 Connected Spaces#^def-13-new1|connected]] surface is homeomorphic to exactly one of the following:
 > - $\Sigma_{h,b}$, a sphere with $h \ge 0$ handles and $b \ge 0$ holes, with $\chi = 2 - 2h - b$ (the two-sided, or *orientable*, surfaces);
 > - a sphere with $k \ge 1$ *crosscaps* (a disk removed and a Möbius band glued in, each lowering $\chi$ by $1$) and $b \ge 0$ holes, with $\chi = 2 - k - b$ (the one-sided surfaces).
 >

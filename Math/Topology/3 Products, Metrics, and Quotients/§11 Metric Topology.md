@@ -86,7 +86,7 @@ tags: [topology, math590]
 *The basis axiom for $\varepsilon$-balls: $y$ lies in both balls (blue, open), at distance $d(x_i, y)$ from each center. The slack left before each boundary is $\delta_i = \varepsilon_i - d(y, x_i)$ (red segments). The ball $B_d(y, \delta)$ with $\delta = \min(\delta_1, \delta_2)$ fits inside both. Here $\delta = \delta_2$, so the small ball touches the boundary of $B_d(x_2, \varepsilon_2)$ from inside without crossing it.*
 
 > [!remark]- Connections
-> - MATH 451 open sets in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Definition §13.5: Open and Closed Subsets]].
+> - MATH 451 open sets in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Definition §13.5: Open Subsets]].
 > - For the Euclidean metric these are the open sets of ℝⁿ in 551: [[§5 Topology of ℝⁿ#^def-5-2|551 Def. §5.2]] (balls: [[§5 Topology of ℝⁿ#^def-5-1|551 Def. §5.1]]).
 
 ## Examples of Metric Spaces

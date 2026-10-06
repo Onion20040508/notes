@@ -34,7 +34,7 @@ tags: [group-theory, math493]
 ^def-28-2
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13 (Cosets and Quotient Group)]].
+> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13 (Cosets)]].
 > - Linear-algebra analogue of a coset $v + U$: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97 (Translate)]].
 > - With a topology: the coset space G/H with the quotient topology from the projection, [[§14 The Topology of G∕H and Real Grassmannians#^def-14-1|591 Def. §14.1]] (cosets restated in [[§13 Homogeneous Spaces#^def-13-4|591 Def. §13.4]]).
 > - A coset in linear algebra: the solution set of Ax = b is the coset p + Nul A of the subgroup Nul A of ℝⁿ, [[§5 Solution Sets of Linear Systems#^thm-5-3|235 Thm. §5.3]].

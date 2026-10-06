@@ -270,7 +270,7 @@ tags: [linear-algebra]
 > the Moore–Penrose inverse. Formula via SVD: [[§26 Singular Value Decomposition#^ladr-7-75|Singular value decomposition of adjoint and pseudoinverse]].
 
 > [!remark]- Connections
-> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-4|235 Def. §51.4]] (the matrix pseudoinverse $A^+=V_rD^{-1}U_r^T$, defined from the reduced SVD; it agrees with $T^\dagger$ by [[§26 Singular Value Decomposition#^ladr-7-75|7.75]]).
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-new1|235 Def. §51.4]] (the matrix pseudoinverse $A^+=V_rD^{-1}U_r^T$, defined from the reduced SVD; it agrees with $T^\dagger$ by [[§26 Singular Value Decomposition#^ladr-7-75|7.75]]).
 
 > [!theorem] Theorem 6.69: Algebraic properties of the pseudoinverse
 > Let $V$ be finite-dimensional and $T\in\Lin(V,W)$.

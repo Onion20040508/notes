@@ -29,7 +29,7 @@ tags: [measure-theory, math551]
 ^def-5-2
 
 > [!remark]- Connections
-> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets (451 Def. §13.5)]].
+> - MATH 451 metric-space version: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open Subsets (451 Def. §13.5)]].
 > - Topology: the open sets of the metric topology, i.e. unions of basis balls ([[§2 Basis for a Topology#^lem-2-1|590 Lemma §2.1]]); for $n = 1$ the [[§1 Topological Spaces#^ex-1-5|standard topology on ℝ]].
 
 > [!definition] Definition §5.3: Closed Set

@@ -39,7 +39,7 @@ The same limit occurs for areas, for distances, and (Chapters 6 and 8) for lengt
 ^def-35-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]] allows subintervals of unequal width and asks that the Riemann sums be close to the integral as soon as the widest subinterval is short enough (as in the remark on unequal subintervals below). Its equivalence with the upper/lower-sum definition is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]].
+> - Rigorous treatment: [[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]] allows subintervals of unequal width and asks that the Riemann sums be close to the integral as soon as the widest subinterval is short enough (as in the remark on unequal subintervals below). Its equivalence with the upper/lower-sum definition is [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]].
 > - Every Riemann integrable function is Lebesgue integrable with the same integral: [[§15 The General Lebesgue Integral#^thm-15-10|551 Thm. §15.10]].
 
 > [!definition] Definition §35.2: Integrand and Limits of Integration

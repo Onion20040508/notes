@@ -56,7 +56,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Computational version: [[§46 Inner Product Spaces#^ex-46-1|235 Ex. §46.1]] (a weighted inner product on $\mathbb R^2$, as in (b)) and [[§46 Inner Product Spaces#^ex-46-4|235 Ex. §46.4]] (the integral inner product on $C[a,b]$, as in (c)).
-> - Computational version of (a) on $\mathbb{C}^n$: [[§28 Matrices#^def-28-3|331 Def. §28.3]], with [[§28 Matrices#^ex-28-2|331 Ex. §28.2]].
+> - Computational version of (a) on $\mathbb{C}^n$: [[§28 Matrices#^def-28-new2|331 Def. §28.3]], with [[§28 Matrices#^ex-28-2|331 Ex. §28.2]].
 
 > [!definition] Definition 6.4: Inner product space
 > An *inner product space* is a vector space $V$ together with an inner product on $V$. $\F^n$ always carries the Euclidean inner product ([[§19 Inner Products and Norms#^ladr-6-3|6.3]](a)) unless said otherwise.
@@ -135,7 +135,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Pythagoras: [[§19 Inner Products and Norms#^ladr-6-12|6.12]]. Orthogonal complements: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-46|6.46]].
 > - In ℝ² and ℝ³: [[§82 The Dot Product#^def-82-3|Calc Def. §82.3]] and the test $\mathbf a \cdot \mathbf b = 0$, [[§82 The Dot Product#^thm-82-4|Calc Thm. §82.4]] (with worked examples).
-> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]] (orthogonal vectors in $\mathbb R^n$); in an inner product space, [[§46 Inner Product Spaces#^def-46-2|235 Def. §46.2]].
+> - Computational version: [[§40 Inner Product, Length, and Orthogonality#^def-40-5|235 Def. §40.5]] (orthogonal vectors in $\mathbb R^n$); in an inner product space, [[§46 Inner Product Spaces#^def-46-new2|235 Def. §46.2]].
 
 > [!theorem] Theorem 6.11: Orthogonality and 0
 > (a) $0$ is orthogonal to every vector. (b) $0$ is the only vector orthogonal to itself.

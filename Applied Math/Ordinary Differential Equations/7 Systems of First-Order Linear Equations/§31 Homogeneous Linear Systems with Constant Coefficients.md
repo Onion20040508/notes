@@ -60,7 +60,7 @@ For $n = 1$ the system is $x' = ax$, with solutions $x = ce^{at}$. If $a \ne 0$,
 ^def-31-new4
 
 > [!remark]- Connections
-> - See also: [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]] (Stewart's phase plane, phase trajectories and phase portrait, for the nonlinear predator–prey system).
+> - See also: [[§62 Predator-Prey Systems#^def-62-3|Calc Def. §62.3]], [[§62 Predator-Prey Systems#^def-62-new2|Calc Def. §62.4]], [[§62 Predator-Prey Systems#^def-62-new3|Calc Def. §62.5]] (Stewart's phase plane, phase trajectories and phase portrait, for the nonlinear predator–prey system).
 
 ## Exponential Solutions
 
@@ -199,7 +199,7 @@ The Wronskian of the two solutions is $e^{2t}e^{-3t} = e^{-t} \ne 0$, so they fo
 
 > [!remark]- Connections
 > - See also: [[§38 Applications to Differential Equations#^def-38-2|235 Def. §38.2]], where Lay calls the stable node an *attractor* or *sink* and the unstable one a *repeller* or *source*, and names the eigenvector lines the directions of greatest attraction and repulsion.
-> - The discrete analogue $\mathbf{x}_{k+1} = A\mathbf{x}_k$, where the dividing line is $|\lambda| = 1$ instead of $\lambda = 0$: [[§37 Discrete Dynamical Systems#^def-37-1|235 Def. §37.1]], [[§37 Discrete Dynamical Systems#^prop-37-3|235 Prop. §37.3]].
+> - The discrete analogue $\mathbf{x}_{k+1} = A\mathbf{x}_k$, where the dividing line is $|\lambda| = 1$ instead of $\lambda = 0$: [[§37 Discrete Dynamical Systems#^def-37-new1|235 Def. §37.1]], [[§37 Discrete Dynamical Systems#^prop-37-3|235 Prop. §37.3]].
 
 Examples [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-1|§31.1]] and [[§31 Homogeneous Linear Systems with Constant Coefficients#^ex-31-2|§31.2]] cover the two main cases of a $2 \times 2$ system with real, different eigenvalues. The remaining possibility, a zero eigenvalue, means $\det\mathbf{A} = 0$, which was excluded; then a whole line of equilibrium solutions appears (BDP's Problems 5 and 6).
 

@@ -165,7 +165,7 @@ The classical groups through the course: defined in [[§10 Topological Groups an
 ^def-13-4
 
 > [!remark]- Connections
-> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§21 Algebra Prerequisites꞉ Groups#^def-21-13|590 Def. §21.13]].
+> - Home: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2 (Left and Right Cosets)]]; the group case (normal $H$) is [[§40 Quotient Groups|493 §40]], and in 590 [[§21 Algebra Prerequisites꞉ Groups#^def-21-new3|590 Def. §21.13]].
 
 > [!theorem] Lemma §13.3: When Two Cosets Coincide
 > $gH = g'H \iff g^{-1}g' \in H$. Consequently the left cosets partition $G$.

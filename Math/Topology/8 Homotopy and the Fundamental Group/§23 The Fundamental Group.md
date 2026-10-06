@@ -47,7 +47,7 @@ tags: [topology, math590]
 ^def-23-3
 
 > [!remark]- Connections
-> - Computational version: [[§52 Simply Connected Domains#^def-52-1|342 Def. §52.1]] (B&C's simply connected domains, every [[§43 Contours#^def-43-5|simple closed contour]] enclosing only points of the domain).
+> - Computational version: [[§52 Simply Connected Domains#^def-52-1|342 Def. §52.1]] (B&C's simply connected domains, every [[§43 Contours#^def-43-new5|simple closed contour]] enclosing only points of the domain).
 > - Used in Quantum Field Theory: $SL(2, \mathbb C)$ is simply connected, and the Lorentz group $SO^+(1,3)$ is not — [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-4|QFT Theorem §C5a.1.4]], [[§C5a.1 Weyl Spinors and SL(2,C)#^thm-c5a-1-8|QFT Theorem §C5a.1.8]].
 
 > [!theorem] Lemma §23.1: Paths in Simply Connected Spaces

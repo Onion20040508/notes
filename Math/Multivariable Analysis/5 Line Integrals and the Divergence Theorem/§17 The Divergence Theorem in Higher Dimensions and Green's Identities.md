@@ -326,7 +326,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-1
 
-*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]
 
 > [!remark]- Connections
 > - 1D version of “nonnegative continuous integrand with zero integral vanishes”: [[§33 Properties of the Riemann Integral#^thm-33-7|Vanishing Integral of a Nonnegative Function (451 §33.7)]].
@@ -346,7 +346,7 @@ The power of the Divergence Theorem lies in choosing $\mathbf{u}$ strategically.
 
 ^ex-17-2
 
-*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]]
+*Uses:* [[Green's First Identity|§17.2]], [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]]
 
 > [!remark]- Connections
 > - Computational version: [[§35 Potential Equation#^prop-35-1|341 Prop. §35.1]] (adding a constant to a solution of Neumann's problem gives another, and $\oint\partial u/\partial n\,ds=0$ is needed for a solution to exist).

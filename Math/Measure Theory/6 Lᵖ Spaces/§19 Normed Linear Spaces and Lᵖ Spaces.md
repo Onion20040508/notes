@@ -85,7 +85,7 @@ tags: [measure-theory, math551]
 ^def-19-3
 
 > [!remark]- Connections
-> - These are the metric-space notions of [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]] for $d(x,y) = \|x - y\|$.
+> - These are the metric-space notions of [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]] and [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|451 Def. §13.2]] for $d(x,y) = \|x - y\|$.
 > - 556 versions: [[§10 Normed Linear Spaces#^def-10-4|556 Def. §10.4]] (convergence).
 
 > [!definition] Definition §19.4: Cauchy Sequences

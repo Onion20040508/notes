@@ -55,7 +55,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 ^def-15-new3
 
 > [!remark]- Connections
-> - 1D version: [[§32 The Definition of the Riemann Integral#^def-32-1|upper and lower (Darboux) sums]] (451 §32.1), with subintervals of length $t_k - t_{k-1}$ in place of pieces of area $|D_i|$.
+> - 1D version: [[§32 The Definition of the Riemann Integral#^def-32-new2|upper and lower (Darboux) sums]] (451 §32.1), with subintervals of length $t_k - t_{k-1}$ in place of pieces of area $|D_i|$.
 > - The same 1D sums in 551, as the motivation for the Lebesgue integral: [[§8 Motivation꞉ The Riemann Integral#^def-8-2|551 Def. §8.2]].
 
 > [!definition] Definition §15.9: Diameter
@@ -90,7 +90,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 ^def-15-10
 
 ![[m452-15-1.svg]]
-*The two Darboux staircases over the same partition $\mathcal{T}$. Left: the lower sum $L(f,\mathcal{T}) = \sum m_i |D_i|$ with $m_i = \inf_{D_i} f$ — inscribed boxes, entirely under the surface. Right: the upper sum $U(f,\mathcal{T}) = \sum M_i |D_i|$ with $M_i = \sup_{D_i} f$ — circumscribing boxes, containing the surface. Every Riemann sum with arbitrary sample points is squeezed between them: $L(f,\mathcal{T}) \leq \sum f(\boldsymbol{\xi}_i)|D_i| \leq U(f,\mathcal{T})$. Integrability is exactly the statement that the gap $\sum (M_i - m_i)|D_i|$ — the skin between the two staircases — vanishes as $\|\mathcal{T}\| \to 0$; the common limit is $\iint_D f\,dA$. This is the 2D version of the upper/lower [[§32 The Definition of the Riemann Integral#^def-32-1|Darboux sums]] from single-variable analysis (451 §32.1).*
+*The two Darboux staircases over the same partition $\mathcal{T}$. Left: the lower sum $L(f,\mathcal{T}) = \sum m_i |D_i|$ with $m_i = \inf_{D_i} f$ — inscribed boxes, entirely under the surface. Right: the upper sum $U(f,\mathcal{T}) = \sum M_i |D_i|$ with $M_i = \sup_{D_i} f$ — circumscribing boxes, containing the surface. Every Riemann sum with arbitrary sample points is squeezed between them: $L(f,\mathcal{T}) \leq \sum f(\boldsymbol{\xi}_i)|D_i| \leq U(f,\mathcal{T})$. Integrability is exactly the statement that the gap $\sum (M_i - m_i)|D_i|$ — the skin between the two staircases — vanishes as $\|\mathcal{T}\| \to 0$; the common limit is $\iint_D f\,dA$. This is the 2D version of the upper/lower [[§32 The Definition of the Riemann Integral#^def-32-new2|Darboux sums]] from single-variable analysis (451 §32.1).*
 
 > [!remark] Remark
 > The condition says that as we refine the partition (make $\|\mathcal{T}\| \to 0$), the “error” between the upper and lower sums:
@@ -162,7 +162,7 @@ Now we define the integral of a function over a Jordan measurable set, analogous
 ^rem-15-6
 
 > [!remark]- Connections
-> - 1D: [[§32 The Definition of the Riemann Integral#^def-32-3|Riemann sums]] (451 §32.3) and their agreement with the Darboux integral, [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
+> - 1D: [[§32 The Definition of the Riemann Integral#^def-32-new4|Riemann sums]] (451 §32.3) and their agreement with the Darboux integral, [[§32 The Definition of the Riemann Integral#^thm-32-6|451 §32.6]].
 > - Stewart's double integral over a rectangle as a limit of Riemann sums: [[§98 Double Integrals Over Rectangles#^def-98-2|Calc Def. §98.2]] (with worked examples).
 
 *Continued in [[§15b Properties of the Integral]]: linearity, additivity over domains, comparison, iterated integrals on rectangles, and polar coordinates.*

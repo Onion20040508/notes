@@ -22,5 +22,5 @@ tags: [calculus, hub]
 - [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4: Arc Length of a Parametric Curve]]
 
 ## Connections
-- The analysis behind the proof: the Mean Value Theorem [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]; Riemann sums with arbitrary sample points and their limit for integrable functions, [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], with continuous functions integrable by [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]].
+- The analysis behind the proof: the Mean Value Theorem [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]]; Riemann sums with arbitrary sample points and their limit for integrable functions, [[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]], with continuous functions integrable by [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]].
 - The same derivation for a parametrized curve $(x(t), y(t))$ follows [[§16 Line Integrals and Green's Theorem#^def-16-1|452 Def. §16.1]]. There the two coordinates need two different Mean Value Theorem points, and [[§19 Uniform Continuity#^def-19-1|uniform continuity]] of $x'$ and $y'$ closes the gap. In the [[§52 Arc Length#^pf-52-1|proof of Theorem §52.1]] $x$ itself is the parameter, so one point $x_i^*$ suffices.

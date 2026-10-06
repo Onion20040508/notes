@@ -153,7 +153,7 @@ By [[§4 The Matrix Equation Ax = b#^thm-4-5|Theorem §4.5]], $\mathbf{x} \mapst
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§7 Vector Space of Linear Maps#^ladr-3-1|LADR 3.1]], for maps between any vector spaces $V \to W$ over $\mathbb{F}$; [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]] is $T(\mathbf{0}) = \mathbf{0}$. Lay meets linear maps on other spaces (polynomials, functions) in Chapters 4 and 5.
-> - The total derivative of a differentiable map is a linear transformation, represented by the Jacobian matrix: [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
+> - The total derivative of a differentiable map is a linear transformation, represented by the Jacobian matrix: [[§6 Differentiability#^def-6-new1|452 Def. §6.2]].
 
 > [!theorem] Proposition §8.2: Matrix Transformations Are Linear
 > Every matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ is a linear transformation.
@@ -288,7 +288,7 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 >
 > which is the line through $T(\mathbf{p})$ in the direction $T(\mathbf{v})$ if $T(\mathbf{v}) \ne \mathbf{0}$, and the single point $T(\mathbf{p})$ if $T(\mathbf{v}) = \mathbf{0}$. Restricting to $0 \le t \le 1$: the segment from $\mathbf{p}$ to $\mathbf{p} + \mathbf{v}$ goes to the segment from $T(\mathbf{p})$ to $T(\mathbf{p}) + T(\mathbf{v})$ (or a point). In particular the segment from $\mathbf{0}$ to $\mathbf{u}$ goes to the segment from $\mathbf{0}$ to $T(\mathbf{u})$. (Lay leaves these facts to Exercises 25 and 27 and Practice Problem 3.) Parallel lines $\mathbf{p} + t\mathbf{v}$, $\mathbf{q} + t\mathbf{v}$ go to parallel lines (same direction $T(\mathbf{v})$), which is why a linear map turns a square grid into a grid of parallelograms (Figure above), while a nonlinear map such as the polar map of [[§8 Introduction to Linear Transformations#^ex-8-3|Example §8.3]](d) bends it.
 >
-> The lecture states a converse: $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear if and only if it maps every straight line to a straight line or a point and $T(\mathbf{0}) = \mathbf{0}$. *As stated, the converse needs an extra hypothesis: $T(x_1, x_2) = (x_1^3, 0)$ maps every line onto the $x_1$-axis or onto a point and fixes $\mathbf{0}$, but is not linear. It becomes true for bijections ([[§9 Injections, Surjections and Bijections#^def-9-1|250 Def. §9.1]]) $T: \mathbb{R}^n \to \mathbb{R}^n$ with $n \ge 2$ (the fundamental theorem of affine geometry: such a map is $\mathbf{x} \mapsto A\mathbf{x} + \mathbf{b}$, and $T(\mathbf{0}) = \mathbf{0}$ forces $\mathbf{b} = \mathbf{0}$).*
+> The lecture states a converse: $T: \mathbb{R}^n \to \mathbb{R}^m$ is linear if and only if it maps every straight line to a straight line or a point and $T(\mathbf{0}) = \mathbf{0}$. *As stated, the converse needs an extra hypothesis: $T(x_1, x_2) = (x_1^3, 0)$ maps every line onto the $x_1$-axis or onto a point and fixes $\mathbf{0}$, but is not linear. It becomes true for bijections ([[§9 Injections, Surjections and Bijections#^def-9-new2|250 Def. §9.1]]) $T: \mathbb{R}^n \to \mathbb{R}^n$ with $n \ge 2$ (the fundamental theorem of affine geometry: such a map is $\mathbf{x} \mapsto A\mathbf{x} + \mathbf{b}$, and $T(\mathbf{0}) = \mathbf{0}$ forces $\mathbf{b} = \mathbf{0}$).*
 >
 > *Source: 235 lecture L5*
 

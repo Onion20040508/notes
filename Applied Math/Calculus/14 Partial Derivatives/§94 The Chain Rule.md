@@ -59,7 +59,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 Notice the similarity with the differential $dz = \frac{\partial z}{\partial x}\,dx + \frac{\partial z}{\partial y}\,dy$ of [[§93 Tangent Planes and Linear Approximations#^def-93-4|Definition §93.4]]. Recall that $f$ is differentiable whenever $f_x$ and $f_y$ are continuous ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]).
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (differentiable inner and outer functions, by the same expansion) and [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] (under continuity of the partials); hub [[Multivariable Chain Rule]]. In matrix form it says that the derivative of a composite is the product of the Jacobian matrices ([[§6 Differentiability#^def-6-2|452 Def. §6.2]]).
+> - Rigorous treatment: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]] (differentiable inner and outer functions, by the same expansion) and [[§10 Composition of Functions and the Chain Rule#^thm-10-2|452 Thm. §10.2]] (under continuity of the partials); hub [[Multivariable Chain Rule]]. In matrix form it says that the derivative of a composite is the product of the Jacobian matrices ([[§6 Differentiability#^def-6-new1|452 Def. §6.2]]).
 
 > [!example] Example §94.1: Case 1
 > **(a)** If $z = x^2 y + 3xy^4$, where $x = \sin 2t$ and $y = \cos t$, find $dz/dt$ when $t = 0$.

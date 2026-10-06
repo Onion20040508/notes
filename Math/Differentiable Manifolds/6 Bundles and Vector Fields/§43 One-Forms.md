@@ -37,7 +37,7 @@ A one-form is a section of the cotangent bundle ([[§34 Fibrations#^def-34-2|Def
 In words: a one-form chooses one covector at every point of $M$, and the choice varies smoothly. Its value at $p$ is written $\theta_p$, not $\theta(p)$; it is a linear function $\theta_p : T_pM \to \mathbb{R}$, $v \mapsto \theta_p(v)$.
 
 > [!remark]- Connections
-> - On open subsets of $\mathbb{R}^n$: [[§21 Introduction to Differential Forms#^def-21-1|452 Def. §21.1]] (differential forms, here in degree 1).
+> - On open subsets of $\mathbb{R}^n$: [[§21 Introduction to Differential Forms#^def-21-new1|452 Def. §21.1]] (differential forms, here in degree 1).
 > - The value at one point is a covector, an element of a dual space: [[§30 The Cotangent Space#^def-30-1|Def. §30.1]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
 
 Uribe on the notation: “$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable” — so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes *every* one-form, and the examples come next.
@@ -127,7 +127,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 *Uses:* [[§43 One-Forms#^prop-43-2|§43.2]], [[§43 One-Forms#^prop-43-1|§43.1]], [[§43 One-Forms#^ex-43-1|Ex. §43.1]], [[Schwarz–Clairaut Theorem|452 §5.1]]
 
 > [!remark]- Connections
-> - In 452: exact forms are closed, [[§22 The Algebra of Differential Forms#^prop-22-10|452 §22.10]] (closed and exact: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]); in vector-field language, a gradient field is irrotational, [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-1|452 Def. §11.1]].
+> - In 452: exact forms are closed, [[§22 The Algebra of Differential Forms#^prop-22-10|452 §22.10]] (closed and exact: [[§22 The Algebra of Differential Forms#^def-22-8|452 Def. §22.8]]); in vector-field language, a gradient field is irrotational, [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-11-new1|452 Def. §11.1]].
 
 “You know this from multivariable calculus in various different forms. Not every vector field is a gradient field”: the condition is the vanishing of the curl, “a curl condition.”
 

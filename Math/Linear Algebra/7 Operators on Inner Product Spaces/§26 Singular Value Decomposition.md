@@ -133,7 +133,7 @@ tags: [linear-algebra]
 > Adjoint: swap $e$ and $f$. Pseudoinverse: swap and invert the positive singular values (zeros stay zero).
 
 > [!remark]- Connections
-> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-4|235 Def. §51.4]] ($A^+=V_rD^{-1}U_r^T$, the same formula in matrix form).
+> - Computational version: [[§51★ The Singular Value Decomposition#^def-51-new1|235 Def. §51.4]] ($A^+=V_rD^{-1}U_r^T$, the same formula in matrix form).
 
 > [!example] Example 7.79: Finding a singular value decomposition (p. 276)
 > SVD of $T(x_1,x_2,x_3,x_4)=(-5x_4,\ 0,\ x_1+x_2)$ (the map of [[§26 Singular Value Decomposition#^ladr-7-67|7.67]]). Positive singular values $5,\sqrt2$. Orthonormal eigenvectors of $T^*T$: $e_1=(0,0,0,1)$ for $25$, $e_2=\tfrac1{\sqrt2}(1,1,0,0)$ for $2$. Then

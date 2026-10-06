@@ -25,7 +25,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Physics: the Hermitian conjugate $A^\dagger$, $\langle\phi|A\psi\rangle=\langle A^\dagger\phi|\psi\rangle$. Dual-space analogue: [[§12 Duality#^ladr-3-118|3.118]] ($T'$ acts on $W'$; Riesz turns $T'$ into $T^*$).
-> - Matrix version on $\mathbb{C}^n$: BDP's adjoint $\mathbf{A}^* = \overline{\mathbf{A}}^T$, [[§28 Matrices#^def-28-1|331 Def. §28.1]], which satisfies $(\mathbf{A}\mathbf{x}, \mathbf{y}) = (\mathbf{x}, \mathbf{A}^*\mathbf{y})$ (proof of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]]).
+> - Matrix version on $\mathbb{C}^n$: BDP's adjoint $\mathbf{A}^* = \overline{\mathbf{A}}^T$, [[§28 Matrices#^def-28-new1|331 Def. §28.1]], which satisfies $(\mathbf{A}\mathbf{x}, \mathbf{y}) = (\mathbf{x}, \mathbf{A}^*\mathbf{y})$ (proof of [[§29 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-29-5|331 Thm. §29.5]]).
 
 > [!example] Example 7.2: Adjoint of a linear map from R³ to R² (p. 228)
 > $T(x_1,x_2,x_3)=(x_2+3x_3,\ 2x_1)$ from $\R^3$ to $\R^2$:
@@ -108,7 +108,7 @@ tags: [linear-algebra]
 ^ladr-7-7
 
 > [!remark]- Connections
-> - Computational version: BDP calls $\mathbf{A}^*$ the adjoint of $\mathbf{A}$, [[§28 Matrices#^def-28-1|331 Def. §28.1]] (with a worked example).
+> - Computational version: BDP calls $\mathbf{A}^*$ the adjoint of $\mathbf{A}$, [[§28 Matrices#^def-28-new1|331 Def. §28.1]] (with a worked example).
 
 > [!example] Example 7.8: Conjugate transpose of a 2-by-3 matrix (p. 231)
 > $$

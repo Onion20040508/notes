@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 *Uses:* [[§24 Equivalence Relations and Partitions#^def-24-1|Def. §24.1]], [[§24 Equivalence Relations and Partitions#^def-24-2|Def. §24.2]], [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
-> - The orbit space is the [[§22 Partitions and Equivalence Relations#^def-22-4|quotient set]] (250 Def. §22.4) of this relation; with a topology it is a quotient space in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 Def. §12.3).
+> - The orbit space is the [[§22 Partitions and Equivalence Relations#^def-22-new2|quotient set]] (250 Def. §22.4) of this relation; with a topology it is a quotient space in MATH 590: [[§12 Quotient Topology#^def-12-3|Quotient Space]] (590 Def. §12.3).
 > - Same relation in 591, [[§12 Group Actions and Orbit Spaces#^def-12-4|591 Def. §12.4]] and [[§12 Group Actions and Orbit Spaces#^prop-12-1|591 Prop. §12.1]]; for a continuous action it is an open equivalence relation, [[§12 Group Actions and Orbit Spaces#^lem-12-3|591 Lemma §12.3]].
 
 The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right multiplication, discussed [[§28 Left and Right Cosets#^prop-28-1|below]].

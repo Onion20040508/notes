@@ -287,7 +287,7 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 ^def-32-3
 
 > [!remark]- Connections
-> - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
+> - In the plane the mesh is the largest diameter of a piece: [[§15a The Definition of the Integral#^def-15-new4|452 Def. §15.9]].
 
 > [!definition] Definition §32.3: Riemann Sums
 > For a partition $P$ and bounded $f$, a **Riemann sum** associated with $P$ is

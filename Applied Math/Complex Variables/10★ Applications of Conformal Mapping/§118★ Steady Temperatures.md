@@ -79,7 +79,7 @@ We restrict attention to temperatures $T$ that vary only with $x$ and $y$, so th
 *Uses:* [[§118★ Steady Temperatures#^def-118-1|Def. §118.1]], [[§118★ Steady Temperatures#^def-118-new1|Def. §118.2]] (Fourier's law), [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]] (fundamental theorem of calculus), [[§98 Double Integrals Over Rectangles#^thm-98-3|Calc Thm. §98.3]] (Fubini), [[§27★ Harmonic Functions#^def-27-1|Def. §27.1]]
 
 > [!remark]- Connections
-> - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
+> - The same derivation in its general form, the heat equation $u_t = k\nabla^2u$ whose steady states are harmonic: [[§35 Potential Equation#^def-35-new1|341 Def. §35.1]] and the discussion after it. The exact version above is the divergence theorem in the plane for the field $-K\nabla T$, [[§111 Curl and Divergence#^thm-111-5|Calc Thm. §111.5]] (Green's theorem, normal form).
 
 ## Isotherms and Lines of Flow
 

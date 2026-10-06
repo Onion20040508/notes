@@ -93,7 +93,7 @@ Cut out a small rectangle of membrane of dimensions $\Delta x$ by $\Delta y$, al
 
 > [!remark]- Connections
 > - The one-dimensional derivation, with the tension $T$ of a string in place of $\sigma\,\Delta y$: [[§29 The Vibrating String#^thm-29-1|Theorem §29.1]], which gives $u_{xx} = u_{tt}/c^2$ with $c^2 = T/\rho$ ([[§29 The Vibrating String#^def-29-2|Def. §29.2]]).
-> - The left side is the Laplacian, [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-2|452 Def. §17.2]]. The equation says that the membrane accelerates toward the average height of its neighbors: $\nabla^2u(x, y)$ is, up to a positive factor, the limit of (average of $u$ on a small circle about $(x, y)$) minus $u(x, y)$, divided by the squared radius.
+> - The left side is the Laplacian, [[§111 Curl and Divergence#^def-111-5|Calc Def. §111.5]], [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-17-new1|452 Def. §17.2]]. The equation says that the membrane accelerates toward the average height of its neighbors: $\nabla^2u(x, y)$ is, up to a positive factor, the limit of (average of $u$ on a small circle about $(x, y)$) minus $u(x, y)$, divided by the squared radius.
 
 > [!remark] Remark: The Wave Equation in Three Dimensions
 > The same pattern continues in space: the three-dimensional wave equation is

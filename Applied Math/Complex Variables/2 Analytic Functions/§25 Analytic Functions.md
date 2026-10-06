@@ -123,7 +123,7 @@ The following property of analytic functions is especially useful, in addition t
 *Uses:* [[§21 Cauchy–Riemann Equations#^thm-21-1|§21.1]], [[§12★ Regions in the Complex Plane#^def-12-4|Def. §12.4]], [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], [[§7 Directional Derivatives#^thm-7-1|452 Thm. §7.1]] (directional derivative formula), [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative)
 
 > [!remark]- Connections
-> - The one-variable case is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]; the proof above reduces to it along each segment. Connectedness is essential: on the open set $|z| < 1$ or $|z - 3| < 1$, the function equal to $0$ on the first disk and $1$ on the second has $f' = 0$ but is not constant. B&C's polygonal connectedness implies connectedness in the topological sense, [[§13 Connected Spaces#^def-13-1|590 Def. §13.1]].
+> - The one-variable case is [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]; the proof above reduces to it along each segment. Connectedness is essential: on the open set $|z| < 1$ or $|z - 3| < 1$, the function equal to $0$ on the first disk and $1$ on the second has $f' = 0$ but is not constant. B&C's polygonal connectedness implies connectedness in the topological sense, [[§13 Connected Spaces#^def-13-new1|590 Def. §13.1]].
 
 ## Singular Points
 

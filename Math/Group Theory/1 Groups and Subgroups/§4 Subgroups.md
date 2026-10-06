@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 ^def-4-2
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Powers and Generators]].
+> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Powers]].
 
 > [!theorem] Lemma §4.4: Exponent Laws
 > For all $g \in G$ and all $m, n \in \mathbb{Z}$:
@@ -274,7 +274,7 @@ tags: [group-theory, math493]
 ^def-4-5
 
 > [!remark]- Connections
-> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-7|Powers and Generators]] (cyclic group, generator).
+> - MATH 590 counterpart: [[§21 Algebra Prerequisites꞉ Groups#^def-21-new2|Cyclic Groups and Generators]] (cyclic group, generator).
 > - Every cyclic group is ℤ or ℤ∕nℤ: [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]].
 
 > [!theorem] Proposition §4.8: Every Element of a Finite Group Has Finite Order

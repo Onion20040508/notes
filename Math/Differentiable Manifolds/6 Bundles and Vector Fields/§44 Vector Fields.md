@@ -145,7 +145,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 “Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data”: knowing $f$ on $U$ determines $Df$ on $U$.
 
 > [!definition] Definition §44.6: Support
-> The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§7 Interior and Closure#^def-7-1|closure]]* of the set where it is nonzero,
+> The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§7 Interior and Closure#^def-7-new1|closure]]* of the set where it is nonzero,
 >
 > $$
 > \operatorname{supp}\chi = \overline{\{ q \in M : \chi(q) \neq 0 \}} .

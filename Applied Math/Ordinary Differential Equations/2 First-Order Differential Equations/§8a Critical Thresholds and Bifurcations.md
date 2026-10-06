@@ -31,7 +31,7 @@ with positive constants $r$ and $T$. The graph of $f(y)$ is now a downward-shift
 ^def-8-8
 
 > [!remark]- Connections
-> - Stewart's versions of a threshold (a minimum viable population) and of harvesting, as modifications of the logistic equation: [[§60 Models for Population Growth#^def-60-3|Calc Def. §60.3]].
+> - Stewart's versions of a threshold (a minimum viable population) and of harvesting, as modifications of the logistic equation: [[§60 Models for Population Growth#^def-60-new1|Calc Def. §60.4]] (minimum population) and [[§60 Models for Population Growth#^def-60-new1|Calc Def. §60.4]] (minimum population) and [[§60 Models for Population Growth#^def-60-3|Calc Def. §60.3]] (harvesting) (harvesting).
 
 > [!theorem] Proposition §8.6: Solution of the Threshold Equation
 > The solution of (14) with $y(0) = y_0 > 0$ is

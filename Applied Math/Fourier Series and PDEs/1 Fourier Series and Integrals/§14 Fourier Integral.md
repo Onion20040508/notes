@@ -36,7 +36,7 @@ $$
 where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 > [!remark] Remark: Why It Works
-> Equation (4) is written to look like a Riemann sum ([[§35 The Definite Integral#^def-35-2|Calc Def. §35.2]]) for an integral over $0 < \lambda < \infty$, with the frequencies $\lambda_n = n\pi/a$ as sample points spaced $\Delta\lambda = \pi/a$ apart. Imagine $a$ increasing to infinity. Then $\Delta\lambda \to 0$, and
+> Equation (4) is written to look like a Riemann sum ([[§35 The Definite Integral#^def-35-new1|Calc Def. §35.2]]) for an integral over $0 < \lambda < \infty$, with the frequencies $\lambda_n = n\pi/a$ as sample points spaced $\Delta\lambda = \pi/a$ apart. Imagine $a$ increasing to infinity. Then $\Delta\lambda \to 0$, and
 >
 > $$
 > A_a(\lambda) \to A(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\cos(\lambda x)\,dx, \qquad B_a(\lambda) \to B(\lambda) = \frac1\pi\int_{-\infty}^{\infty} f(x)\sin(\lambda x)\,dx . \qquad (5)\text{–}(6)

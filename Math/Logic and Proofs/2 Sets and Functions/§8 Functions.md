@@ -316,7 +316,7 @@ Sequences may be given by formulas ($n \mapsto n^2$, $n \mapsto 1/n$, $n \mapsto
 > [!remark]- Connections
 > - Same notion, called the range: [[§1 Countability and Set Theory#^def-1-5|551 Def. §1.5]].
 > - The range in Stewart: [[§1 Four Ways to Represent a Function#^def-1-1|Calc Def. §1.1]].
-> - For linear transformations: the range in [[§8 Introduction to Linear Transformations#^def-8-1|235 Def. §8.1]]; for a matrix it is the column space, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
+> - For linear transformations: the range in [[§8 Introduction to Linear Transformations#^def-8-new1|235 Def. §8.1]]; for a matrix it is the column space, [[§24 Null Spaces, Column Spaces, and Linear Transformations#^def-24-2|235 Def. §24.2]].
 
 > [!example] Example §8.9: Functions With Prescribed Images
 > Functions $f_i : \R \to \R$ with:

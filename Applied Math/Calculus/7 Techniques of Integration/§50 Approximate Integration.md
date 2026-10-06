@@ -29,7 +29,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 ^def-50-1
 
 > [!remark]- Connections
-> - These are Riemann sums ([[§35 The Definite Integral#^def-35-new1|Def. §35.2]]); in 451 the integral is the limit of such sums as the mesh tends to $0$, [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]], so for an integrable $f$ every rule of this section converges to $\int_a^b f$ as $n \to \infty$. The error bounds below add a *rate*.
+> - These are Riemann sums ([[§35 The Definite Integral#^def-35-new1|Def. §35.2]]); in 451 the integral is the limit of such sums as the mesh tends to $0$, [[§32 The Definition of the Riemann Integral#^def-32-new5|451 Def. §32.3]], so for an integrable $f$ every rule of this section converges to $\int_a^b f$ as $n \to \infty$. The error bounds below add a *rate*.
 
 > [!definition] Definition §50.2: The Midpoint Rule
 > $$

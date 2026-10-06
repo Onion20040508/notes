@@ -252,7 +252,7 @@ tags: [linear-algebra]
 ^ladr-7-109
 
 > [!remark]- Connections
-> - Riemann sums in [[Single Variable Analysis]] ([[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]) are the one-dimensional version; Lebesgue measure makes this precise.
+> - Riemann sums in [[Single Variable Analysis]] ([[§32 The Definition of the Riemann Integral#^def-32-new4|451 Def. §32.3]]) are the one-dimensional version; Lebesgue measure makes this precise.
 > - Rigorous treatment: approximating a plane region from inside and outside by grids of squares gives its Jordan content, [[§15 Multivariable Integration#^def-15-4|452 Def. §15.4]]; Lebesgue outer measure on ℝⁿ takes the infimum over countable coverings by boxes, [[§9 Lebesgue Outer Measure#^def-9-4|551 Def. §9.4]], and Lebesgue measure is its restriction to measurable sets, [[§10 Lebesgue Measurable Sets#^def-10-5|551 Def. §10.5]].
 
 > [!example] Example 7.110: Volume change by a linear map (p. 292)

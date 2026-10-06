@@ -335,7 +335,7 @@ This is more difficult; we do not prove it here.
 ^def-2-9
 
 > [!remark]- Connections
-> - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-2|250 Def. §14.2]], where finite sets count as countable, so uncountable sets are automatically infinite.
+> - Same as uncountable in [[§14 Counting Infinite Sets#^def-14-new1|250 Def. §14.2]], where finite sets count as countable, so uncountable sets are automatically infinite.
 
 The real line $\mathbb{R}$ is uncountable. This course uses the fact without proof; it is proved by Cantor's diagonal argument in [[§14 Counting Infinite Sets#^thm-14-12|250 Thm. §14.12]] and, for $[0,1]$, in [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]].
 

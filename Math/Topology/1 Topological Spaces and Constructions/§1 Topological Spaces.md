@@ -86,7 +86,7 @@ Topology is the study of **topological spaces**, **continuous maps** between the
 ^rem-1-4
 
 > [!remark]- Connections
-> - The MATH 451 notion: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open and Closed Subsets]] of a metric space.
+> - The MATH 451 notion: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Open Subsets]] of a metric space.
 > - Quotient spaces: [[§12 Quotient Topology#^def-12-3|Quotient Space]].
 
 > [!example] Example §1.4: Checking Topologies on a Three-Element Set

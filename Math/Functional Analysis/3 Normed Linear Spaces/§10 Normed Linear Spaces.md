@@ -127,7 +127,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-4
 
 > [!remark]- Connections
-> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|551 Def. §19.3]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
+> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
 > - Convergence in a topological space: [[§7 Interior and Closure#^def-7-4|590 Def. §7.4]], which for the norm metric is this definition.
 
 > [!theorem] Lemma §10.3: Reverse Triangle Inequality
@@ -193,7 +193,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-5
 
 > [!remark]- Connections
-> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-3|551 Def. §19.3]]; on $\mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|451 Def. §10.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
+> - In 551: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-new1|551 Def. §19.4]]; on $\mathbb{R}$: [[§10 Monotone Sequences and Cauchy Sequences#^def-10-4|451 Def. §10.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|451 Def. §13.2]].
 
 > [!theorem] Proposition §10.5: Limits are Unique; Convergent Sequences are Cauchy
 > Let $\{x_n\}$ be a sequence in a normed linear space $X$.
@@ -224,7 +224,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-10-6
 
 > [!remark]- Connections
-> - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|451 Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-4|452 Def. §2.4]].
+> - The topological definition (complement open) and its sequential characterization in metric spaces: [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|451 Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-5|451 §13.5]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-new3|452 Def. §2.4]].
 > - The topological definition (complement open): [[§6 Closed Sets and Limit Points#^def-6-1|590 Def. §6.1]]; in metric spaces it agrees with this one by [[§7 Interior and Closure#^cor-7-5|590 Cor. §7.5]] and the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]).
 
 > [!definition] Definition §10.7: Closure; Dense Subset
@@ -242,7 +242,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The closure as smallest closed superset, and its sequential description: [[§13 Some Topological Concepts in Metric Spaces#^def-13-6|451 Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^prop-13-6|451 §13.6]]; in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-5|452 Def. §2.5]].
-> - Topological closure and density: [[§7 Interior and Closure#^def-7-1|590 Def. §7.1]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]); dense: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]].
+> - Topological closure and density: [[§7 Interior and Closure#^def-7-new1|590 Def. §7.1]] (smallest closed superset), described by limits of sequences in metric spaces by the Sequence Lemma ([[§11 Metric Topology#^lem-11-8|590 Lemma §11.8]]); dense: [[§18 Countability Axioms#^def-18-4|590 Def. §18.4]].
 
 > [!theorem] Proposition §10.6: Properties of the Closure
 > Let $S$ be a subset of a normed linear space $X$.
