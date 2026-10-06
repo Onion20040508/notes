@@ -269,7 +269,7 @@ tags: [linear-algebra]
 > (d) is the vector-space case of $G/\ker\varphi\cong\operatorname{im}\varphi$. Taking dimensions with [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]] recovers [[Fundamental theorem of linear maps]].
 
 > [!proof]+ Proof
-> *(Filled in: Axler 3.106.)* $\tilde T$ is well defined: if $v+\nullsp T=w+\nullsp T$ then $v-w\in\nullsp T$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]), so $Tv=Tw$. It is linear because $T$ is and the operations on the quotient are computed on representatives.
+> *(Filled in: [[§11 Products and Quotients of Vector Spaces#^ladr-3-106|Axler 3.106]].)* $\tilde T$ is well defined: if $v+\nullsp T=w+\nullsp T$ then $v-w\in\nullsp T$ ([[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]]), so $Tv=Tw$. It is linear because $T$ is and the operations on the quotient are computed on representatives.
 >
 > (a) $\tilde T(\pi(v))=\tilde T(v+\nullsp T)=Tv$.
 >

@@ -18,5 +18,5 @@ tags: [fourier-series-and-pdes, hub]
 - [[§39 Potential in a Disk#^thm-39-5|Theorem §39.5: Maximum Principle]]
 
 ## Connections
-- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the proof of (b) above is a complete two-dimensional version).
+- The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-17-3|452 Ex. §17.3]] (given there as a sketch; the [[§39 Potential in a Disk#^pf-39-4|proof of (b) in §39]] is a complete two-dimensional version).
 - **Also in [[Complex Variables]]:** [[§59 Maximum Modulus Principle#^thm-59-1|342 Thm. §59.1]] (Gauss's mean value theorem for analytic functions, with worked examples).
