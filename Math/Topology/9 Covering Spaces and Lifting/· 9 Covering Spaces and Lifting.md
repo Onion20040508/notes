@@ -13,6 +13,7 @@ tags: [chapter, topology]
 
 ## Sections
 - [[§24 Covering Spaces]]
+- [[§24a Lifting and the Fundamental Group of the Circle]]
 
 ## Central results
 - [[Path Lifting Lemma]] (§24.6)

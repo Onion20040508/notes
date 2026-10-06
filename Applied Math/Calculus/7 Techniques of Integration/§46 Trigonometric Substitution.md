@@ -77,7 +77,7 @@ The one-to-one requirement is what makes going back to $x$ possible. For $x = a\
 > \sqrt{9 - x^2} = \sqrt{9 - 9\sin^2\theta} = \sqrt{9\cos^2\theta} = 3|\cos\theta| = 3\cos\theta ,
 > $$
 >
-> since $\cos\theta \ge 0$ there. By Theorem §46.1,
+> since $\cos\theta \ge 0$ there. By [[§46 Trigonometric Substitution#^thm-46-1|Theorem §46.1]],
 >
 > $$
 > \int \frac{\sqrt{9 - x^2}}{x^2}\,dx = \int \frac{3\cos\theta}{9\sin^2\theta}\,3\cos\theta\,d\theta = \int \frac{\cos^2\theta}{\sin^2\theta}\,d\theta = \int \cot^2\theta\,d\theta = \int (\csc^2\theta - 1)\,d\theta = -\cot\theta - \theta + C .

@@ -46,7 +46,7 @@ A series with positive terms converges exactly when its partial sums are bounded
 
 ^pf-72-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]]
+*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-7|451 Thm. §14.7]] (Comparison Test, for $|a_n| \le b_n$, proved with the Cauchy criterion so that the $a_n$ need not be positive).
@@ -211,7 +211,7 @@ The Direct Comparison Test is conclusive only if the terms are smaller than thos
 > T_n \le \int_n^{\infty} \frac{1}{x^3}\,dx = \frac{1}{2n^2} .
 > $$
 >
-> By Proposition §72.3, $R_n \le T_n \le \dfrac{1}{2n^2}$. With $n = 100$,
+> By [[§72 The Comparison Tests#^prop-72-3|Proposition §72.3]], $R_n \le T_n \le \dfrac{1}{2n^2}$. With $n = 100$,
 >
 > $$
 > R_{100} \le \frac{1}{2(100)^2} = 0.00005 .

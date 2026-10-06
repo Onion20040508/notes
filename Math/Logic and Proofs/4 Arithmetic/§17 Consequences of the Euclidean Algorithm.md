@@ -15,17 +15,6 @@ Run backwards (or, better, carried along), the Euclidean algorithm ([[§16 The E
 
 ## 17.1 Integral Linear Combinations
 
-> [!theorem] Theorem §17.1: The gcd Is an Integral Linear Combination
-> Let $a, b$ be integers, at least one of which is non-zero. Then there exist integers $m$ and $n$ such that
->
-> $$
-> \gcd(a, b) = am + bn.
-> $$
->
-> *Eccles: Theorem 17.1.1*
-
-^thm-17-1
-
 > [!definition] Definition §17.1: Integral Linear Combination
 > Given integers $a$ and $b$, an integer $c$ is an **integral linear combination** of $a$ and $b$ if there exist integers $m$ and $n$ such that $c = am + bn$.
 >
@@ -33,7 +22,7 @@ Run backwards (or, better, carried along), the Euclidean algorithm ([[§16 The E
 
 ^def-17-1
 
-So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] says that the greatest common divisor of two integers is an integral linear combination of them. The idea of the proof is visible in an example.
+[[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] below says that the greatest common divisor of two integers is an integral linear combination of them. The idea of the proof is visible in an example.
 
 > [!example] Example §17.1: Writing 8 in Terms of 232 and 136
 > The Euclidean algorithm gave $\gcd(232, 136) = 8$ ([[§16 The Euclidean Algorithm#^ex-16-2|Example §16.2]]). Solve each step for its remainder:
@@ -70,7 +59,18 @@ So [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] say
 
 ^ex-17-1
 
-> [!proof]+ Proof of Theorem §17.1
+> [!theorem] Theorem §17.1: The gcd Is an Integral Linear Combination
+> Let $a, b$ be integers, at least one of which is non-zero. Then there exist integers $m$ and $n$ such that
+>
+> $$
+> \gcd(a, b) = am + bn.
+> $$
+>
+> *Eccles: Theorem 17.1.1*
+
+^thm-17-1
+
+> [!proof]+ Proof
 > **Case $a, b > 0$.** Let $a_0, a_1, \ldots, a_N$ be the sequence of the Euclidean algorithm ([[§16 The Euclidean Algorithm#^thm-16-3|Theorem §16.3]]), so $a_N = \gcd(a, b)$, and for $1 \le k < N$ step $k$ gives $a_{k+1} = a_{k-1} - a_k q_k$. For $1 \le k \le N$ let $P(k)$ be the statement that each of $a_0, a_1, \ldots, a_k$ is an integral linear combination of $a$ and $b$. We prove $P(k)$ by induction on $k$.
 > - *Base case.* $a_0 = a = a \times 1 + b \times 0$ and $a_1 = b = a \times 0 + b \times 1$.
 > - *Inductive step.* Suppose $P(k)$ for some $1 \le k < N$, so $a_i = a m_i + b n_i$ with $m_i, n_i \in \Z$ for $0 \le i \le k$. Then
@@ -245,11 +245,6 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 
 ^prop-17-3
 
-> [!remark] Remark: Using an Existence Statement
-> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$; fresh symbols are clearer here, as recommended in [[§7 Quantifiers#^rem-7-2|the remark on proving ∀ and ∃ in §7]].) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
-
-^rem-17-3
-
 > [!proof]+ Proof
 > ($\Rightarrow$) If $\gcd(a, b) = 1$, [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]] gives $m, n$ with $am + bn = 1$.
 >
@@ -268,6 +263,11 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 > [!remark]- Connections
 > - Read modulo $n$, $am + nk = 1$ says $am \equiv 1 \pmod n$: [[§8 Invertibility and Unit Groups#^prop-8-1|493 Prop. §8.1]] (a class $[a]$ is [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|invertible]] modulo $n$ iff $\gcd(a, n) = 1$; in these notes [[§21 Congruence Classes and the Arithmetic of Remainders#^cor-21-9|Corollary §21.9]]) is this proposition in that language.
 
+> [!remark] Remark: Using an Existence Statement
+> One direction is a special case of [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]. In the other direction we *start* from an existence statement, and the way to use one is to take particular elements that satisfy it: integers $m_0, n_0$ with $am_0 + bn_0 = 1$. (One often reuses the letters $m, n$; fresh symbols are clearer here, as recommended in [[§7 Quantifiers#^rem-7-2|the remark on proving ∀ and ∃ in §7]].) Then unpack the goal $\gcd(a, b) = 1$: for every integer $c$, if $c \mid a$ and $c \mid b$ then $c = \pm 1$. The direct method now finishes it by spelling out "divides".
+
+^rem-17-3
+
 > [!theorem] Theorem §17.4: Coprime Divisor of a Product
 > Let $a$, $b$ and $c$ be integers with $a$ and $b$ coprime. Then
 >
@@ -280,11 +280,6 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 > *Eccles: Theorem 17.3.2*
 
 ^thm-17-4
-
-> [!remark] Remark: Two Clever Steps
-> This innocent-looking result is the key to many basic results in number theory, and it is harder than it looks. Unpacking the definitions does not suggest a proof, because the definition of gcd is hard to use directly. **First clever step:** replace "$\gcd(a, b) = 1$" by the logically simpler statement $am_0 + bn_0 = 1$ of [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|Proposition §17.3]]. Now the givens are $am_0 + bn_0 = 1$ and $bc = aq$, and the goal is $c = ak$. **Second clever step:** multiply the first equation by $c$. That is the only way to get $c$ out of the givens with addition and multiplication; division may leave the integers. Then $c = acm_0 + bcn_0 = acm_0 + aqn_0$, and $k = cm_0 + qn_0$ works. As Eccles says, some proofs are just clever, and the steps look natural only in hindsight.
-
-^rem-17-4
 
 > [!proof]+ Proof
 > Suppose $a \mid bc$, so $bc = aq$ for some $q \in \Z$. Since $\gcd(a, b) = 1$, [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|Proposition §17.3]] gives integers $m_0, n_0$ with $1 = am_0 + bn_0$. Then
@@ -301,6 +296,11 @@ Recall ([[§11 Properties of Finite Sets#^def-11-3|Def. §11.3]]): integers $a, 
 
 > [!remark]- Connections
 > - Developed further in: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] ([[Euclid's Lemma]]). It has the same general statement and the same proof from Bézout, with the prime case $p \mid ab \Rightarrow p \mid a$ or $p \mid b$ deduced from it (here [[§23 The Sequence of Prime Numbers#^thm-23-2|Theorem §23.2]]). That case gives unique factorization, here in [[§23 The Sequence of Prime Numbers#^thm-23-5|Theorem §23.5]] and in group theory as [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|493 Thm. §9.2]].
+
+> [!remark] Remark: Two Clever Steps
+> This innocent-looking result is the key to many basic results in number theory, and it is harder than it looks. Unpacking the definitions does not suggest a proof, because the definition of gcd is hard to use directly. **First clever step:** replace "$\gcd(a, b) = 1$" by the logically simpler statement $am_0 + bn_0 = 1$ of [[§17 Consequences of the Euclidean Algorithm#^prop-17-3|Proposition §17.3]]. Now the givens are $am_0 + bn_0 = 1$ and $bc = aq$, and the goal is $c = ak$. **Second clever step:** multiply the first equation by $c$. That is the only way to get $c$ out of the givens with addition and multiplication; division may leave the integers. Then $c = acm_0 + bcn_0 = acm_0 + aqn_0$, and $k = cm_0 + qn_0$ works. As Eccles says, some proofs are just clever, and the steps look natural only in hindsight.
+
+^rem-17-4
 
 > [!example] Example §17.7: Equal Cross-Products of Coprime Pairs
 > **Claim.** Let $a_1, a_2, b_1, b_2$ be positive integers with $\gcd(a_1, b_1) = 1$ and $\gcd(a_2, b_2) = 1$. If $a_1 b_2 = a_2 b_1$, then $a_1 = a_2$ and $b_1 = b_2$.

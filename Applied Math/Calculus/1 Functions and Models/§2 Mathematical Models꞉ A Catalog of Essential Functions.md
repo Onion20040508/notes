@@ -76,7 +76,7 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 > T = -10h + 20 .
 > $$
 >
-> **(b)** The slope $m = -10\ ^\circ\text{C/km}$ is the rate of change of temperature with respect to height (Proposition §2.1): the air cools by $10^\circ$C for each kilometer of height. The graph is a line falling from $(0, 20)$, crossing the $h$-axis at $h = 2$.
+> **(b)** The slope $m = -10\ ^\circ\text{C/km}$ is the rate of change of temperature with respect to height ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^prop-2-1|Proposition §2.1]]): the air cools by $10^\circ$C for each kilometer of height. The graph is a line falling from $(0, 20)$, crossing the $h$-axis at $h = 2$.
 >
 > **(c)** $T = -10(2.5) + 20 = -5^\circ$C.
 >
@@ -94,7 +94,7 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 ^def-2-3
 
 > [!remark]- Connections
-> - Matrix version: [[§45 Applications to Linear Models#^def-45-2|235 Def. §45.2]] and [[§45 Applications to Linear Models#^prop-45-1|235 Prop. §45.1]] (the regression line is the least-squares solution of $X\boldsymbol\beta = \mathbf{y}$, found from the normal equations [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]]), worked in [[§45 Applications to Linear Models#^ex-45-1|235 Ex. §45.1]]; the quadratic fit of Example §2.3 is the design matrix of [[§45 Applications to Linear Models#^ex-45-2|235 Ex. §45.2]](a).
+> - Matrix version: [[§45 Applications to Linear Models#^def-45-2|235 Def. §45.2]] and [[§45 Applications to Linear Models#^prop-45-1|235 Prop. §45.1]] (the regression line is the least-squares solution of $X\boldsymbol\beta = \mathbf{y}$, found from the normal equations [[§44 Least-Squares Problems#^thm-44-1|235 Thm. §44.1]]), worked in [[§45 Applications to Linear Models#^ex-45-1|235 Ex. §45.1]]; the quadratic fit of [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^ex-2-3|Example §2.3]] is the design matrix of [[§45 Applications to Linear Models#^ex-45-2|235 Ex. §45.2]](a).
 
 > [!example] Example §2.2: An Empirical Linear Model for CO₂
 > The average carbon dioxide level in the atmosphere, measured at Mauna Loa Observatory (in parts per million), was:
@@ -159,7 +159,7 @@ A mathematical model describes a real-world phenomenon by a function. This secti
 > $$
 >
 > where $n$ is a nonnegative integer and the numbers $a_0, a_1, \ldots, a_n$ are constants, the **coefficients** of the polynomial. The domain of every polynomial is $\mathbb{R} = (-\infty, \infty)$. If the **leading coefficient** $a_n$ is not $0$, the **degree** of the polynomial is $n$. For example, $P(x) = 2x^6 - x^4 + \frac25 x^3 + \sqrt2$ has degree $6$.
-> - Degree $1$: $P(x) = mx + b$, a linear function (Definition §2.2).
+> - Degree $1$: $P(x) = mx + b$, a linear function ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-2|Definition §2.2]]).
 > - Degree $2$: $P(x) = ax^2 + bx + c$, a **quadratic function**. Its graph is a parabola, obtained by shifting the parabola $y = ax^2$ ([[§3 New Functions from Old Functions#^ex-3-2|Ex. §3.2]]); it opens upward if $a > 0$ and downward if $a < 0$.
 > - Degree $3$: $P(x) = ax^3 + bx^2 + cx + d$ with $a \ne 0$, a **cubic function**.
 >
@@ -201,12 +201,14 @@ Polynomials model many quantities in the natural and social sciences; for instan
 
 ^ex-2-3
 
+*Chain:* [[§13a The Parabola y = x², the CN Tower Ball, (√(t² + 9) − 3)∕t² and x³ − x#The Ball Dropped from the CN Tower|Chapter 2]] →
+
 ## Power Functions
 
 > [!definition] Definition §2.5: Power Function
 > A function of the form $f(x) = x^a$, where $a$ is a constant, is a **power function**. The important cases are
 > 1. $a = n$, a positive integer: $x, x^2, x^3, \ldots$ (polynomials with one term);
-> 2. $a = 1/n$, $n$ a positive integer: the root functions (Definition §2.6);
+> 2. $a = 1/n$, $n$ a positive integer: the root functions ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6|Definition §2.6]]);
 > 3. $a = -1$: the reciprocal function, and $a = -2$: inverse square laws ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-7|Definition §2.7]] and [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-new1|Definition §2.7]]).
 >
 > *Stewart: 1.2 (text)*
@@ -371,7 +373,7 @@ The periodicity makes sine and cosine suitable for modeling repetitive phenomena
 > 1 - 2\cos x = 0 \iff \cos x = \tfrac12 \iff x = \frac{\pi}{3} + 2n\pi \ \text{ or } \ x = \frac{5\pi}{3} + 2n\pi ,
 > $$
 >
-> where $n$ is any integer. (In $[0, 2\pi)$, $\cos x = \frac12$ exactly at $\pi/3$ and $5\pi/3$; by periodicity, Theorem §2.4, adding any multiple of $2\pi$ gives all solutions.) So the domain is the set of all real numbers except $\frac{\pi}{3} + 2n\pi$ and $\frac{5\pi}{3} + 2n\pi$, $n \in \mathbb{Z}$.
+> where $n$ is any integer. (In $[0, 2\pi)$, $\cos x = \frac12$ exactly at $\pi/3$ and $5\pi/3$; by periodicity, [[§2 Mathematical Models꞉ A Catalog of Essential Functions#^thm-2-4|Theorem §2.4]], adding any multiple of $2\pi$ gives all solutions.) So the domain is the set of all real numbers except $\frac{\pi}{3} + 2n\pi$ and $\frac{5\pi}{3} + 2n\pi$, $n \in \mathbb{Z}$.
 >
 > *Stewart: Example 1.2.5*
 

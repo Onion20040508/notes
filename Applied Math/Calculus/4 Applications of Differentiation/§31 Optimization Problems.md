@@ -19,7 +19,7 @@ The methods of [[§25 Maximum and Minimum Values|§25]] and [[§27 What Derivati
 > 3. **Introduce notation.** Assign a symbol to the quantity to be maximized or minimized (call it $Q$ for now), and symbols ($a, b, c, \ldots, x, y$) for the other unknown quantities. Suggestive initials help: $A$ for area, $h$ for height, $t$ for time.
 > 4. **Express $Q$** in terms of some of the other symbols from Step 3.
 > 5. **Reduce to one variable.** If $Q$ depends on more than one variable, use the given information to find equations relating them, and use these to eliminate all but one variable, so that $Q = f(x)$. Write the **domain** of $f$ in the given context.
-> 6. **Find the absolute maximum or minimum** of $f$ with the methods of Sections 4.1 and 4.3. If the domain is a closed interval, the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] can be used; otherwise use the First Derivative Test for Absolute Extreme Values (Theorem §31.1 below).
+> 6. **Find the absolute maximum or minimum** of $f$ with the methods of Sections 4.1 and 4.3. If the domain is a closed interval, the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] can be used; otherwise use the First Derivative Test for Absolute Extreme Values ([[§31 Optimization Problems#^thm-31-1|Theorem §31.1]] below).
 >
 > The choice of variable in Step 5 matters: a well-chosen variable (an angle, say) can make Step 6 much easier.
 
@@ -66,7 +66,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 ^thm-31-1
 
 > [!proof]+ Proof
-> Stewart justifies it in Example §31.2 below: $f$ is decreasing for *all* $x$ to the left of $c$ and increasing for *all* $x$ to the right. In detail:
+> Stewart justifies it in [[§31 Optimization Problems#^ex-31-2|Example §31.2]] below: $f$ is decreasing for *all* $x$ to the left of $c$ and increasing for *all* $x$ to the right. In detail:
 >
 > (a) Let $x < c$ be in the interval. $f$ is continuous on $[x, c]$ and differentiable on $(x, c)$, so the Mean Value Theorem gives $\xi \in (x, c)$ with $f(c) - f(x) = f'(\xi)(c - x) > 0$; thus $f(x) < f(c)$. Let $x > c$ be in the interval. Then $f(x) - f(c) = f'(\xi)(x - c)$ for some $\xi \in (c, x)$, and $f'(\xi) < 0$, so $f(x) < f(c)$. Hence $f(c) \ge f(x)$ for every $x$ in the interval: $f(c)$ is the absolute maximum value.
 >
@@ -99,7 +99,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 > A'(r) = 4\pi r - \frac{2000}{r^2} = \frac{4(\pi r^3 - 500)}{r^2} ,
 > $$
 >
-> so $A'(r) = 0$ when $\pi r^3 = 500$: the only critical number is $r = \sqrt[3]{500/\pi} \approx 5.42$. The domain $(0, \infty)$ has no endpoints, so the argument of Example §31.1 is not available. But $A'(r) < 0$ for $r < \sqrt[3]{500/\pi}$ and $A'(r) > 0$ for $r > \sqrt[3]{500/\pi}$: $A$ is decreasing for *all* $r$ to the left of the critical number and increasing for *all* $r$ to the right. By Theorem §31.1, $r = \sqrt[3]{500/\pi}$ gives the absolute minimum. (Alternatively: $A(r) \to \infty$ as $r \to 0^+$ and as $r \to \infty$, so there must be a minimum value, and it must occur at the critical number.)
+> so $A'(r) = 0$ when $\pi r^3 = 500$: the only critical number is $r = \sqrt[3]{500/\pi} \approx 5.42$. The domain $(0, \infty)$ has no endpoints, so the argument of [[§31 Optimization Problems#^ex-31-1|Example §31.1]] is not available. But $A'(r) < 0$ for $r < \sqrt[3]{500/\pi}$ and $A'(r) > 0$ for $r > \sqrt[3]{500/\pi}$: $A$ is decreasing for *all* $r$ to the left of the critical number and increasing for *all* $r$ to the right. By [[§31 Optimization Problems#^thm-31-1|Theorem §31.1]], $r = \sqrt[3]{500/\pi}$ gives the absolute minimum. (Alternatively: $A(r) \to \infty$ as $r \to 0^+$ and as $r \to \infty$, so there must be a minimum value, and it must occur at the critical number.)
 >
 > The corresponding height, using $\pi r^3 = 500$, is
 >
@@ -142,7 +142,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 > f'(y) = 2\big(\tfrac12 y^2 - 1\big)\,y + 2(y - 4) = y^3 - 2y + 2y - 8 = y^3 - 8 .
 > $$
 >
-> So $f'(y) = 0$ only at $y = 2$, with $f'(y) < 0$ for $y < 2$ and $f'(y) > 0$ for $y > 2$. By Theorem §31.1 the absolute minimum occurs at $y = 2$. (Geometrically it is clear that there is a closest point, though no farthest one.) The corresponding $x$ is $\frac12 y^2 = 2$. So the closest point is $(2, 2)$, at distance $d = \sqrt{f(2)} = \sqrt{1 + 4} = \sqrt5$.
+> So $f'(y) = 0$ only at $y = 2$, with $f'(y) < 0$ for $y < 2$ and $f'(y) > 0$ for $y > 2$. By [[§31 Optimization Problems#^thm-31-1|Theorem §31.1]] the absolute minimum occurs at $y = 2$. (Geometrically it is clear that there is a closest point, though no farthest one.) The corresponding $x$ is $\frac12 y^2 = 2$. So the closest point is $(2, 2)$, at distance $d = \sqrt{f(2)} = \sqrt{1 + 4} = \sqrt5$.
 >
 > *Stewart: Example 4.7.3*
 
@@ -188,7 +188,7 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 ^ex-31-4
 
 ![[m233-31-1.svg]]
-*Example §31.4. Rowing from $A$ to a landing point $D$ at distance $x$ beyond $C$ takes $\sqrt{x^2 + 9}/6$ hours (red); running the remaining $8 - x$ km to $B$ takes $(8 - x)/8$ hours (green). The best landing point $x = 9/\sqrt7 \approx 3.4$ balances the two: there $\frac{x}{\sqrt{x^2 + 9}} = \frac68$, the ratio of the speeds.*
+*[[§31 Optimization Problems#^ex-31-4|Example §31.4]]. Rowing from $A$ to a landing point $D$ at distance $x$ beyond $C$ takes $\sqrt{x^2 + 9}/6$ hours (red); running the remaining $8 - x$ km to $B$ takes $(8 - x)/8$ hours (green). The best landing point $x = 9/\sqrt7 \approx 3.4$ balances the two: there $\frac{x}{\sqrt{x^2 + 9}} = \frac68$, the ratio of the speeds.*
 
 The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.5 asks for the largest rectangle inscribed in a semicircle of radius $r$. With the corner $(x, y)$ on the circle, $A = 2x\sqrt{r^2 - x^2}$ on $[0, r]$, maximized at $x = r/\sqrt2$ with $A = r^2$. With the angle $\theta$ from the center to the corner, $A(\theta) = (2r\cos\theta)(r\sin\theta) = r^2\sin 2\theta$, whose maximum $r^2$ (at $\theta = \pi/4$) is evident.
 
@@ -231,7 +231,7 @@ The choice of variable can make the calculus unnecessary. Stewart's Example 4.7.
 > R(x) = x\,p(x) = 450x - \frac12 x^2 .
 > $$
 >
-> **Maximize.** $R'(x) = 450 - x = 0$ when $x = 450$. Since $R' > 0$ for $x < 450$ and $R' < 0$ for $x > 450$, this gives the absolute maximum by Theorem §31.1 (or note that the graph of $R$ is a parabola opening downward). The corresponding price is $p(450) = 450 - 225 = 225$, so the rebate is $350 - 225 = 125$. To maximize revenue, the store should offer a rebate of $\$125$.
+> **Maximize.** $R'(x) = 450 - x = 0$ when $x = 450$. Since $R' > 0$ for $x < 450$ and $R' < 0$ for $x > 450$, this gives the absolute maximum by [[§31 Optimization Problems#^thm-31-1|Theorem §31.1]] (or note that the graph of $R$ is a parabola opening downward). The corresponding price is $p(450) = 450 - 225 = 225$, so the rebate is $350 - 225 = 125$. To maximize revenue, the store should offer a rebate of $\$125$.
 >
 > *Stewart: Example 4.7.6*
 

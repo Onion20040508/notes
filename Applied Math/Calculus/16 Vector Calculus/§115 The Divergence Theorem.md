@@ -18,7 +18,7 @@ The normal form of Green's Theorem ([[§111 Curl and Divergence#^thm-111-5|Theor
 Stewart states and proves the theorem for regions $E$ over which triple integrals were evaluated in Stewart 15.6: type 1 regions ([[§103 Triple Integrals#^def-103-3|Definition §103.3]]) and type 2 and type 3 regions ([[§103 Triple Integrals#^def-103-4|Definition §103.4]]).
 
 > [!definition] Definition §115.1: Simple Solid Region
-> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D_1,\ u_1(x, y) \le z \le u_2(x, y)\}$ (type 1), as $\{(x, y, z) \mid (y, z) \in D_2,\ v_1(y, z) \le x \le v_2(y, z)\}$ (type 2) and as $\{(x, y, z) \mid (x, z) \in D_3,\ w_1(x, z) \le y \le w_2(x, z)\}$ (type 3). (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113 Surface Integrals#^def-113-6|Definition §113.6]].
+> A **simple solid region** is a solid region $E$ that is simultaneously of types 1, 2 and 3: it can be written as $\{(x, y, z) \mid (x, y) \in D_1,\ u_1(x, y) \le z \le u_2(x, y)\}$ (type 1), as $\{(x, y, z) \mid (y, z) \in D_2,\ v_1(y, z) \le x \le v_2(y, z)\}$ (type 2) and as $\{(x, y, z) \mid (x, z) \in D_3,\ w_1(x, z) \le y \le w_2(x, z)\}$ (type 3). (For instance, regions bounded by ellipsoids or rectangular boxes are simple solid regions.) Its boundary is a closed surface, given the positive (outward) orientation of [[§113 Surface Integrals#^def-113-new2|Definition §113.7]].
 >
 > *Stewart: 16.9 (text)*
 
@@ -86,7 +86,7 @@ Stewart states and proves the theorem for regions $E$ over which triple integral
 
 ^pf-115-1
 
-*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^def-113-6|Def. §113.6]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals#^thm-103-2|§103.2]], [[§103 Triple Integrals#^thm-103-3|§103.3]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2)
+*Uses:* [[§115 The Divergence Theorem#^def-115-1|Def. §115.1]], [[§113 Surface Integrals#^thm-113-4|§113.4]], [[§113 Surface Integrals#^thm-113-3|§113.3]], [[§113 Surface Integrals#^def-113-6|Def. §113.6]], [[§113 Surface Integrals#^def-113-new2|Def. §113.7]], [[§111 Curl and Divergence#^def-111-3|Def. §111.3]], [[§103 Triple Integrals#^thm-103-2|§103.2]], [[§103 Triple Integrals#^thm-103-3|§103.3]] (triple integrals over type 1, 2, 3 regions), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§18 Surface Integrals#^thm-18-2|452 Thm. §18.2]], with the same proof (one component at a time, FTC along vertical segments, the bottom surface with reversed normal); hub [[Divergence Theorem in ℝ³]]. The version in $\mathbb{R}^n$ is [[§17 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-17-1|452 Thm. §17.1]], and the plane version is [[§16 Line Integrals and Green's Theorem#^thm-16-2|452 Thm. §16.2]] ([[§111 Curl and Divergence#^thm-111-5|Theorem §111.5]] here).
@@ -229,7 +229,7 @@ The Divergence Theorem was proved only for simple solid regions, but it can be p
 *Uses:* [[§115 The Divergence Theorem#^thm-115-1|§115.1]] (extended to finite unions of simple solid regions), [[§113 Surface Integrals#^def-113-7|Def. §113.7]], [[§113 Surface Integrals#^def-113-3|Def. §113.3]]
 
 ![[m233-115-1.svg]]
-*Theorem §115.2: the region $E$ between an inner closed surface $S_1$ and an outer one $S_2$ (cross-section). Out of $E$ means along $\mathbf{n}_2$ on the outer surface but along $-\mathbf{n}_1$, toward the inside, on the inner one; hence the minus sign in front of the flux through $S_1$. In Example §115.5, $S_1$ is a small sphere around a point charge and $S_2$ is an arbitrary surface enclosing it.*
+*[[§115 The Divergence Theorem#^thm-115-2|Theorem §115.2]]: the region $E$ between an inner closed surface $S_1$ and an outer one $S_2$ (cross-section). Out of $E$ means along $\mathbf{n}_2$ on the outer surface but along $-\mathbf{n}_1$, toward the inside, on the inner one; hence the minus sign in front of the flux through $S_1$. In [[§115 The Divergence Theorem#^ex-115-5|Example §115.5]], $S_1$ is a small sphere around a point charge and $S_2$ is an arbitrary surface enclosing it.*
 
 > [!example] Example §115.5: Gauss's Law for a Point Charge
 > Let $\mathbf{E}(\mathbf{x}) = \dfrac{\varepsilon Q}{|\mathbf{x}|^3}\,\mathbf{x}$ be the electric field of a charge $Q$ at the origin ([[§107 Vector Fields#^ex-107-2|Example §107.2]]). Show that the electric flux of $\mathbf{E}$ through any closed surface $S$ that encloses the origin is
@@ -238,7 +238,7 @@ The Divergence Theorem was proved only for simple solid regions, but it can be p
 > \iint_S \mathbf{E} \cdot d\mathbf{S} = 4\pi\varepsilon Q .
 > $$
 >
-> The difficulty is that we have no explicit equation for $S$, and $\mathbf{E}$ is undefined at the origin, inside $S$. Let $S_1$ be a sphere centered at the origin with radius $a$ small enough that $S_1$ lies inside $S$, and let $E$ be the region between $S_1$ and $S$. By Theorem §115.2,
+> The difficulty is that we have no explicit equation for $S$, and $\mathbf{E}$ is undefined at the origin, inside $S$. Let $S_1$ be a sphere centered at the origin with radius $a$ small enough that $S_1$ lies inside $S$, and let $E$ be the region between $S_1$ and $S$. By [[§115 The Divergence Theorem#^thm-115-2|Theorem §115.2]],
 >
 > $$
 > \iiint_E \operatorname{div}\mathbf{E}\,dV = -\iint_{S_1} \mathbf{E} \cdot d\mathbf{S} + \iint_S \mathbf{E} \cdot d\mathbf{S} . \qquad (8)

@@ -140,12 +140,12 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 ^ex-98-1
 
 ![[m233-98-1.svg]]
-*The Riemann sum of Example §98.1. Each box stands on one square $R_{ij}$ and reaches up to the surface $z = 16 - x^2 - 2y^2$ (blue edges) at the upper right corner of its base (red dots): heights $13, 7, 10, 4$. Since $f$ decreases in $x$ and in $y$, the corner $(x_i, y_j)$ is the lowest point of the surface over $R_{ij}$, so every box lies under the surface and $34$ underestimates the volume $48$.*
+*The Riemann sum of [[§98 Double Integrals Over Rectangles#^ex-98-1|Example §98.1]]. Each box stands on one square $R_{ij}$ and reaches up to the surface $z = 16 - x^2 - 2y^2$ (blue edges) at the upper right corner of its base (red dots): heights $13, 7, 10, 4$. Since $f$ decreases in $x$ and in $y$, the corner $(x_i, y_j)$ is the lowest point of the surface over $R_{ij}$, so every box lies under the surface and $34$ underestimates the volume $48$.*
 
 > [!example] Example §98.2: A Double Integral Read as a Volume
 > If $R = \{(x, y) \mid -1 \le x \le 1,\ -2 \le y \le 2\}$, evaluate $\displaystyle\iint_R \sqrt{1 - x^2}\,dA$.
 >
-> Evaluating from Definition §98.2 would be very hard. But $\sqrt{1 - x^2} \ge 0$, so by Theorem §98.2 the integral is a volume. If $z = \sqrt{1 - x^2}$, then $x^2 + z^2 = 1$ and $z \ge 0$: the integral is the volume of the solid $S$ under the circular cylinder $x^2 + z^2 = 1$ and above $R$. Its cross-sections perpendicular to the $y$-axis are half-disks of radius $1$, and $S$ has length $4$, so
+> Evaluating from [[§98 Double Integrals Over Rectangles#^def-98-2|Definition §98.2]] would be very hard. But $\sqrt{1 - x^2} \ge 0$, so by [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]] the integral is a volume. If $z = \sqrt{1 - x^2}$, then $x^2 + z^2 = 1$ and $z \ge 0$: the integral is the volume of the solid $S$ under the circular cylinder $x^2 + z^2 = 1$ and above $R$. Its cross-sections perpendicular to the $y$-axis are half-disks of radius $1$, and $S$ has length $4$, so
 >
 > $$
 > \iint_R \sqrt{1 - x^2}\,dA = \tfrac12 \pi (1)^2 \times 4 = 2\pi .
@@ -260,7 +260,7 @@ Evaluating a double integral from its definition is even harder than for single 
 *Stewart omits the proof ("too difficult to include in this book"); it is proved in [[§15 Multivariable Integration#^thm-15-8|452 Thm. §15.8]]. Guido Fubini proved a very general version in 1907; the version for continuous functions was known to Cauchy almost a century earlier.*
 
 > [!remark] Remark: Why It Works
-> Stewart's intuitive argument, for $f(x, y) \ge 0$. By Theorem §98.2, $\iint_R f(x, y)\,dA$ is the volume $V$ of the solid $S$ above $R$ and under $z = f(x, y)$. By the volume formula of [[§40 Volumes#^def-40-2|Definition §40.2]], $V = \int_a^b A(x)\,dx$, where $A(x)$ is the area of the cross-section of $S$ in the plane through $x$ perpendicular to the $x$-axis. That cross-section is the region under the curve $z = f(x, y)$, $c \le y \le d$, with $x$ held constant, so $A(x) = \int_c^d f(x, y)\,dy$ and
+> Stewart's intuitive argument, for $f(x, y) \ge 0$. By [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]], $\iint_R f(x, y)\,dA$ is the volume $V$ of the solid $S$ above $R$ and under $z = f(x, y)$. By the volume formula of [[§40 Volumes#^def-40-2|Definition §40.2]], $V = \int_a^b A(x)\,dx$, where $A(x)$ is the area of the cross-section of $S$ in the plane through $x$ perpendicular to the $x$-axis. That cross-section is the region under the curve $z = f(x, y)$, $c \le y \le d$, with $x$ held constant, so $A(x) = \int_c^d f(x, y)\,dy$ and
 >
 > $$
 > \iint_R f(x, y)\,dA = V = \int_a^b A(x)\,dx = \int_a^b \int_c^d f(x, y)\,dy\,dx .
@@ -308,7 +308,7 @@ Evaluating a double integral from its definition is even harder than for single 
 >
 > **(c)** Find the volume of the solid $S$ bounded by the elliptic paraboloid $x^2 + 2y^2 + z = 16$, the planes $x = 2$ and $y = 2$, and the three coordinate planes (the solid of [[§98 Double Integrals Over Rectangles#^ex-98-1|Example §98.1]]).
 >
-> $S$ lies under the surface $z = 16 - x^2 - 2y^2$ and above $R = [0, 2] \times [0, 2]$, so by Theorem §98.2 and Fubini's Theorem
+> $S$ lies under the surface $z = 16 - x^2 - 2y^2$ and above $R = [0, 2] \times [0, 2]$, so by [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]] and Fubini's Theorem
 >
 > $$
 > \begin{aligned}

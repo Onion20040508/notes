@@ -60,11 +60,6 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 
 ^lem-16-2
 
-> [!remark] Remark: Prove Something Stronger
-> The definition of $\gcd$ gives no formula in terms of $a$ and $b$, so comparing $\gcd(a, b)$ with $\gcd(b, r)$ head-on is awkward. It is *easier* to prove the stronger statement that the two sets of common divisors are equal: their greatest elements are then equal automatically. Set equality is two inclusions, and each is a one-line computation with the definition of "divides".
-
-^rem-16-1
-
 > [!proof]+ Proof
 > ($\subseteq$) Let $c \in D(a, b)$, so $a = cq_1$ and $b = cq_2$ for some $q_1, q_2 \in \Z$. Then
 >
@@ -87,6 +82,11 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 ^pf-16-2
 
 *Uses:* [[§16 The Euclidean Algorithm#^def-16-1|Def. §16.1]]
+
+> [!remark] Remark: Prove Something Stronger
+> The definition of $\gcd$ gives no formula in terms of $a$ and $b$, so comparing $\gcd(a, b)$ with $\gcd(b, r)$ head-on is awkward. It is *easier* to prove the stronger statement that the two sets of common divisors are equal: their greatest elements are then equal automatically. Set equality is two inclusions, and each is a one-line computation with the definition of "divides".
+
+^rem-16-1
 
 > [!example] Example §16.1: The gcd of 72 and 30
 > $72 = 30 \times 2 + 12$, so $\gcd(72, 30) = \gcd(30, 12)$ by [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]]. Next $30 = 12 \times 2 + 6$, so $\gcd(30, 12) = \gcd(12, 6)$. Finally $6 \mid 12$, so $\gcd(12, 6) = 6$ by [[§16 The Euclidean Algorithm#^lem-16-1|Lemma §16.1]]. Altogether
@@ -121,6 +121,22 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 
 ^thm-16-3
 
+> [!proof]+ Proof
+> **The procedure stops.** At every step that does not stop, the new term is a remainder: $a_{k+1} = r_k < a_k$, and $a_{k+1} = r_k > 0$. Hence $b = a_1 > a_2 > a_3 > \cdots$ are positive integers, and by induction on $k$, $a_k \le b - (k - 1)$ for every $k \ge 1$ for which $a_k$ is defined. As $a_k \ge 1$, this forces $k \le b$. So the procedure cannot run past step $b$: for some $n \le b$ we get $r_n = 0$, and it stops with $a_0, a_1, \ldots, a_n$.
+>
+> **The last term is the gcd.** For $1 \le k \le n$ let $P(k)$ be the statement $\gcd(a_0, a_1) = \gcd(a_{k-1}, a_k)$. We prove $P(k)$ for all $1 \le k \le n$ by induction on $k$.
+> - *Base case.* $P(1)$ says $\gcd(a_0, a_1) = \gcd(a_0, a_1)$.
+> - *Inductive step.* Suppose $P(k)$ holds for some $k$ with $1 \le k < n$. Step $k$ did not stop, so $a_{k-1} = a_k q_k + a_{k+1}$, with $a_{k-1}, a_k$ non-zero. By [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]], $\gcd(a_{k-1}, a_k) = \gcd(a_k, a_{k+1})$, so with $P(k)$, $\gcd(a_0, a_1) = \gcd(a_k, a_{k+1})$. This is $P(k+1)$.
+>
+> So $P(n)$ holds: $\gcd(a, b) = \gcd(a_0, a_1) = \gcd(a_{n-1}, a_n)$. At step $n$ the remainder is $r_n = 0$, so $a_{n-1} = a_n q_n$, i.e. the positive integer $a_n$ divides $a_{n-1}$. By [[§16 The Euclidean Algorithm#^lem-16-1|Lemma §16.1]], $\gcd(a_{n-1}, a_n) = a_n$. Hence $\gcd(a, b) = a_n$.
+
+^pf-16-3
+
+*Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§16 The Euclidean Algorithm#^lem-16-1|§16.1]], [[§16 The Euclidean Algorithm#^lem-16-2|§16.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (induction)
+
+> [!remark]- Connections
+> - The gcd in group theory: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. There the algorithm, run backwards, computes an [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|inverse]] modulo $26$: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
+
 > [!remark]- Remark: About the Algorithm
 > An *algorithm* is a sequence of steps necessarily leading to a desired conclusion. Here $b = a_1 > a_2 > \cdots > a_n > 0$, so the procedure stops after at most $b$ steps. That crude bound would make it a poor algorithm, but in fact the number of steps never exceeds five times the number of decimal digits of the smaller number (written second). This is Lamé's theorem (1845), proved in [[§16 The Euclidean Algorithm#^ex-16-6|Example §16.6]]. The procedure is a loop of four instructions (divide, test the remainder, shift $a_k, a_{k+1}$ down, repeat), which is why it is easy to program. Eccles prints it as a nine-line BASIC program in which `Q=INT(A/B)` is the quotient.
 >
@@ -150,25 +166,9 @@ If $b \nmid a$, the division theorem gives $a = bq + r$ with $0 < r < b$ ([[§15
 ^ex-16-2
 
 > [!remark] Remark: The Dots Are an Induction
-> In the example, repeated use of [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]] gives $\gcd(232, 136) = \gcd(136, 96) = \gcd(96, 40) = \gcd(40, 16) = \gcd(16, 8) = 8$. In general, $\gcd(a, b) = \gcd(a_0, a_1) = \gcd(a_1, a_2) = \cdots = \gcd(a_{n-1}, a_n) = a_n$. That is the whole idea of the proof. The dots ("and so on") signal that, strictly, the induction principle ([[§5 The Induction Principle#^def-5-1|Definition §5.1]]) is being used, and the formal proof below makes the induction explicit.
+> In the example, repeated use of [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]] gives $\gcd(232, 136) = \gcd(136, 96) = \gcd(96, 40) = \gcd(40, 16) = \gcd(16, 8) = 8$. In general, $\gcd(a, b) = \gcd(a_0, a_1) = \gcd(a_1, a_2) = \cdots = \gcd(a_{n-1}, a_n) = a_n$. That is the whole idea of the proof. The dots ("and so on") signal that, strictly, the induction principle ([[§5 The Induction Principle#^def-5-1|Definition §5.1]]) is being used, and the formal proof above makes the induction explicit.
 
 ^rem-16-3
-
-> [!proof]+ Proof
-> **The procedure stops.** At every step that does not stop, the new term is a remainder: $a_{k+1} = r_k < a_k$, and $a_{k+1} = r_k > 0$. Hence $b = a_1 > a_2 > a_3 > \cdots$ are positive integers, and by induction on $k$, $a_k \le b - (k - 1)$ for every $k \ge 1$ for which $a_k$ is defined. As $a_k \ge 1$, this forces $k \le b$. So the procedure cannot run past step $b$: for some $n \le b$ we get $r_n = 0$, and it stops with $a_0, a_1, \ldots, a_n$.
->
-> **The last term is the gcd.** For $1 \le k \le n$ let $P(k)$ be the statement $\gcd(a_0, a_1) = \gcd(a_{k-1}, a_k)$. We prove $P(k)$ for all $1 \le k \le n$ by induction on $k$.
-> - *Base case.* $P(1)$ says $\gcd(a_0, a_1) = \gcd(a_0, a_1)$.
-> - *Inductive step.* Suppose $P(k)$ holds for some $k$ with $1 \le k < n$. Step $k$ did not stop, so $a_{k-1} = a_k q_k + a_{k+1}$, with $a_{k-1}, a_k$ non-zero. By [[§16 The Euclidean Algorithm#^lem-16-2|Lemma §16.2]], $\gcd(a_{k-1}, a_k) = \gcd(a_k, a_{k+1})$, so with $P(k)$, $\gcd(a_0, a_1) = \gcd(a_k, a_{k+1})$. This is $P(k+1)$.
->
-> So $P(n)$ holds: $\gcd(a, b) = \gcd(a_0, a_1) = \gcd(a_{n-1}, a_n)$. At step $n$ the remainder is $r_n = 0$, so $a_{n-1} = a_n q_n$, i.e. the positive integer $a_n$ divides $a_{n-1}$. By [[§16 The Euclidean Algorithm#^lem-16-1|Lemma §16.1]], $\gcd(a_{n-1}, a_n) = a_n$. Hence $\gcd(a, b) = a_n$.
-
-^pf-16-3
-
-*Uses:* [[§15 The Division Theorem#^thm-15-1|§15.1]], [[§16 The Euclidean Algorithm#^lem-16-1|§16.1]], [[§16 The Euclidean Algorithm#^lem-16-2|§16.2]], [[§5 The Induction Principle#^def-5-1|Def. §5.1]] (induction)
-
-> [!remark]- Connections
-> - The gcd in group theory: [[§8 Invertibility and Unit Groups#^def-8-1|493 Def. §8.1]]. There the algorithm, run backwards, computes an [[§21 Congruence Classes and the Arithmetic of Remainders#^def-21-5|inverse]] modulo $26$: [[§8 Invertibility and Unit Groups#^ex-8-3|493 Ex. §8.3]].
 
 > [!example] Example §16.3: Four gcd Computations
 > Applying the Euclidean algorithm:

@@ -199,6 +199,8 @@ This section is a workshop on the two-step method: guess the limit, then prove i
 
 ^ex-8-8
 
+*Chain: the square root returns in [[§22a The Square Root Function]] (continuity and uniform continuity) · later in [[§28 Basic Properties of the Derivative#^ex-28-1|Example §28.1]]*
+
 > [!example] Example §8.9: Eventually above $a$
 > Assume $(s_n)$ is convergent with $\lim_{n\to\infty} s_n = s > a$. Prove there exists $N$ such that $s_n > a$ for all $n \geq N$.
 >

@@ -67,7 +67,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 
 ^def-4-3
 
-*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G: $\ln$ is defined as an integral in [[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]], $e^x$ as its inverse in [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], and $b^x = e^{x \ln b}$ in [[§121 The Logarithm Defined as an Integral#^def-121-5|Definition §121.5]], which agrees with Definition §4.2 for rational $x$ ([[§121 The Logarithm Defined as an Integral#^prop-121-4|Proposition §121.4]]) and with Definition §4.3 for irrational $x$ ([[§121 The Logarithm Defined as an Integral#^rem-121-2|Remark: Dictionary with Chapters 1 and 3]]).*
+*Stewart omits the proof that exactly one such number exists, citing J. Marsden and A. Weinstein, "Calculus Unlimited" (1981). An alternative construction of $b^x$, through the logarithm defined as an integral, is in Appendix G: $\ln$ is defined as an integral in [[§121 The Logarithm Defined as an Integral#^def-121-1|Definition §121.1]], $e^x$ as its inverse in [[§121 The Logarithm Defined as an Integral#^def-121-3|Definition §121.3]], and $b^x = e^{x \ln b}$ in [[§121 The Logarithm Defined as an Integral#^def-121-5|Definition §121.5]], which agrees with [[§4 Exponential Functions#^def-4-2|Definition §4.2]] for rational $x$ ([[§121 The Logarithm Defined as an Integral#^prop-121-4|Proposition §121.4]]) and with [[§4 Exponential Functions#^def-4-3|Definition §4.3]] for irrational $x$ ([[§121 The Logarithm Defined as an Integral#^rem-121-2|Remark: Dictionary with Chapters 1 and 3]]).*
 
 ![[m233-4-2.svg]]
 *(a) $y = 2^x$ plotted at rational $x$ only (here at multiples of $\frac18$); between any two plotted points there are holes at the irrational numbers. (b) Filling the hole at $\sqrt3$: the rational bounds $1.7 < \sqrt3 < 1.8$ (orange) trap $2^{\sqrt3}$ between $2^{1.7} \approx 3.249$ and $2^{1.8} \approx 3.482$, and the finer bounds $1.73 < \sqrt3 < 1.74$ (red) trap it between $2^{1.73} \approx 3.317$ and $2^{1.74} \approx 3.340$. The nested ranges on the $y$-axis shrink to the single value $2^{\sqrt3} \approx 3.322$ (black dot).*
@@ -105,7 +105,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 *Stewart reads parts 2 and 3 off the graphs (his Figures 3 and 4). Appendix G proves the monotonicity from the derivative $\frac{d}{dx} b^x = b^x \ln b$: [[§121 The Logarithm Defined as an Integral#^thm-121-10|Theorem §121.10]].*
 
 > [!proof]+ Proof
-> *Of part 4, the only part Stewart justifies.* By Definition §4.2, $1/b > 0$ and $1/b = b^{-1}$. Law 3 of Theorem §4.1 gives $(1/b)^x = (b^{-1})^x = b^{-x}$. Law 1 gives $b^x \cdot b^{-x} = b^{0} = 1$, so $b^{-x} = 1/b^x$. Hence the point $(x, y)$ is on the graph of $y = b^x$ exactly when $(-x, y)$ is on the graph of $y = (1/b)^x$: the two graphs are mirror images in the $y$-axis.
+> *Of part 4, the only part Stewart justifies.* By [[§4 Exponential Functions#^def-4-2|Definition §4.2]], $1/b > 0$ and $1/b = b^{-1}$. Law 3 of [[§4 Exponential Functions#^thm-4-1|Theorem §4.1]] gives $(1/b)^x = (b^{-1})^x = b^{-x}$. Law 1 gives $b^x \cdot b^{-x} = b^{0} = 1$, so $b^{-x} = 1/b^x$. Hence the point $(x, y)$ is on the graph of $y = b^x$ exactly when $(-x, y)$ is on the graph of $y = (1/b)^x$: the two graphs are mirror images in the $y$-axis.
 
 ^pf-4-2
 
@@ -118,7 +118,7 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 > 1. Reflect $y = 2^x$ about the $x$-axis to get $y = -2^x$. It passes through $(0, -1)$, decreases, and approaches $0$ from below as $x \to -\infty$.
 > 2. Shift up $3$ units to get $y = 3 - 2^x$. It passes through $(0, 2)$, crosses the $x$-axis where $2^x = 3$, and approaches the horizontal asymptote $y = 3$ from below as $x \to -\infty$.
 >
-> **Domain and range.** $2^x$ is defined for every $x$, so the domain is $\mathbb{R}$. By Proposition §4.2, $2^x$ takes exactly the values in $(0, \infty)$, so $-2^x$ takes the values in $(-\infty, 0)$ and $3 - 2^x$ the values in $(-\infty, 3)$. The range is $(-\infty, 3)$.
+> **Domain and range.** $2^x$ is defined for every $x$, so the domain is $\mathbb{R}$. By [[§4 Exponential Functions#^prop-4-2|Proposition §4.2]], $2^x$ takes exactly the values in $(0, \infty)$, so $-2^x$ takes the values in $(-\infty, 0)$ and $3 - 2^x$ the values in $(-\infty, 3)$. The range is $(-\infty, 3)$.
 >
 > *Stewart: Example 1.4.1*
 
@@ -157,11 +157,13 @@ This gives $b^x$ for every rational $x$. Plotting $y = 2^x$ at the rational numb
 > p(1) = 2p(0) = 2 \times 1000, \qquad p(2) = 2p(1) = 2^2 \times 1000, \qquad p(3) = 2p(2) = 2^3 \times 1000 ,
 > $$
 >
-> and the pattern suggests $p(t) = 1000 \cdot 2^t$. This is a constant multiple of $y = 2^t$, so it grows as fast as Example §4.2 showed. Under ideal conditions (unlimited space and nutrition, no disease) this exponential growth is what actually happens in nature.
+> and the pattern suggests $p(t) = 1000 \cdot 2^t$. This is a constant multiple of $y = 2^t$, so it grows as fast as [[§4 Exponential Functions#^ex-4-2|Example §4.2]] showed. Under ideal conditions (unlimited space and nutrition, no disease) this exponential growth is what actually happens in nature.
 >
 > *Stewart: 1.4 (text)*
 
 ^ex-4-3
+
+*Chain:* [[§20 Rates of Change in the Natural and Social Sciences#^ex-20-3|Chapter 3]] →
 
 > [!remark]- Remark: Exponential Models from Data
 > Data that grow or decay like an exponential are fitted by a model $y = a \cdot b^t$ (by least squares, with technology). Stewart's two examples:
@@ -197,7 +199,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 *Tangent lines (red) to $y = 2^x$, $y = e^x$ and $y = 3^x$ (blue) at the common point $(0, 1)$. Their slopes increase with the base: about $0.69$, exactly $1$, about $1.10$. (Chapter 3 shows that the slope for base $b$ is $\ln b$.) The base $e$ is the one in between whose tangent line is $y = x + 1$.*
 
 > [!remark]- Connections
-> - In 451, $e^x$ appears as the power series $\sum_{n \ge 0} x^n/n!$ with radius of convergence $+\infty$ ([[§23 Power Series#^rem-23-2|451 Remark: Why centered series?]]); it is continuous by [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and its derivative at $0$ is $1$ by term-by-term differentiation ([[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]]), which is Definition §4.4.
+> - In 451, $e^x$ appears as the power series $\sum_{n \ge 0} x^n/n!$ with radius of convergence $+\infty$ ([[§23 Power Series#^rem-23-2|451 Remark: Why centered series?]]); it is continuous by [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and its derivative at $0$ is $1$ by term-by-term differentiation ([[§26 Differentiation and Integration of Power Series#^thm-26-4|451 Thm. §26.4]]), which is [[§4 Exponential Functions#^def-4-4|Definition §4.4]].
 
 > [!example] Example §4.4: Transforming the Natural Exponential
 > Graph $y = \frac12 e^{-x} - 1$ and state the domain and range.
@@ -207,7 +209,7 @@ Of all bases, one is most convenient for calculus. The choice is governed by how
 > 2. Compress vertically by a factor of $2$: $y = \frac12 e^{-x}$, through $(0, \frac12)$.
 > 3. Shift down $1$ unit: $y = \frac12 e^{-x} - 1$, through $(0, -\frac12)$, with horizontal asymptote $y = -1$ as $x \to \infty$.
 >
-> **Domain and range.** The domain is $\mathbb{R}$. Since $e^{-x}$ takes all values in $(0, \infty)$ (Proposition §4.2, part 3, with $x$ replaced by $-x$), $\frac12 e^{-x}$ takes all values in $(0, \infty)$ as well, and $\frac12 e^{-x} - 1$ takes all values in $(-1, \infty)$. The range is $(-1, \infty)$.
+> **Domain and range.** The domain is $\mathbb{R}$. Since $e^{-x}$ takes all values in $(0, \infty)$ ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]], part 3, with $x$ replaced by $-x$), $\frac12 e^{-x}$ takes all values in $(0, \infty)$ as well, and $\frac12 e^{-x} - 1$ takes all values in $(-1, \infty)$. The range is $(-1, \infty)$.
 >
 > *Stewart: Example 1.4.5*
 

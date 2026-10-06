@@ -32,7 +32,7 @@ One of the main uses of ordinary derivatives is finding maximum and minimum valu
 ^thm-96-1
 
 > [!proof]+ Proof
-> Let $g(x) = f(x, b)$. If $f$ has a local maximum (or minimum) at $(a, b)$, then $g$ has a local maximum (or minimum) at $a$: the points $(x, b)$ with $x$ near $a$ lie in the disk of Definition §96.1. Since $g'(a) = f_x(a, b)$ exists ([[§92 Partial Derivatives#^def-92-1|Definition §92.1]]), Fermat's Theorem for one variable (Stewart, Theorem 4.1.4; [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]]) gives $g'(a) = 0$, that is, $f_x(a, b) = 0$. Similarly, applying Fermat's Theorem to $G(y) = f(a, y)$ gives $f_y(a, b) = 0$.
+> Let $g(x) = f(x, b)$. If $f$ has a local maximum (or minimum) at $(a, b)$, then $g$ has a local maximum (or minimum) at $a$: the points $(x, b)$ with $x$ near $a$ lie in the disk of [[§96 Maximum and Minimum Values#^def-96-1|Definition §96.1]]. Since $g'(a) = f_x(a, b)$ exists ([[§92 Partial Derivatives#^def-92-1|Definition §92.1]]), Fermat's Theorem for one variable (Stewart, Theorem 4.1.4; [[§25 Maximum and Minimum Values#^thm-25-2|Theorem §25.2]]) gives $g'(a) = 0$, that is, $f_x(a, b) = 0$. Similarly, applying Fermat's Theorem to $G(y) = f(a, y)$ gives $f_y(a, b) = 0$.
 
 ^pf-96-1
 
@@ -57,7 +57,7 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 ^def-96-new1
 
-Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then $(a, b)$ is a critical point of $f$. As in one variable, the converse fails: not every critical point gives a maximum or minimum. The name *saddle point* comes from the shape of the graph near the origin in Example §96.1(b). In general the graph near a saddle point need not resemble a saddle, but it crosses its tangent plane there. (A mountain pass is a saddle: for a hiker crossing it the pass is the lowest point of the route, for one walking along the ridge the highest.)
+[[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]] says that if $f$ has a local maximum or minimum at $(a, b)$, then $(a, b)$ is a critical point of $f$. As in one variable, the converse fails: not every critical point gives a maximum or minimum. The name *saddle point* comes from the shape of the graph near the origin in [[§96 Maximum and Minimum Values#^ex-96-1|Example §96.1]](b). In general the graph near a saddle point need not resemble a saddle, but it crosses its tangent plane there. (A mountain pass is a saddle: for a hiker crossing it the pass is the lowest point of the route, for one walking along the ridge the highest.)
 
 > [!example] Example §96.1: A Minimum and a Saddle
 > **(a)** Let $f(x, y) = x^2 + y^2 - 2x - 6y + 14$. Then
@@ -83,7 +83,7 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 ^ex-96-1
 
 ![[m233-96-1.svg]]
-*The saddle $z = y^2 - x^2$ of Example §96.1(b). Its trace in the plane $y = 0$ is the downward parabola $z = -x^2$ (red), whose top is the origin; its trace in the plane $x = 0$ is the upward parabola $z = y^2$ (blue), whose bottom is the origin. The tangent plane at the origin is horizontal, but $f(0, 0) = 0$ is neither a maximum nor a minimum.*
+*The saddle $z = y^2 - x^2$ of [[§96 Maximum and Minimum Values#^ex-96-1|Example §96.1]](b). Its trace in the plane $y = 0$ is the downward parabola $z = -x^2$ (red), whose top is the origin; its trace in the plane $x = 0$ is the upward parabola $z = y^2$ (blue), whose bottom is the origin. The tangent plane at the origin is horizontal, but $f(0, 0) = 0$ is neither a maximum nor a minimum.*
 
 ## The Second Derivatives Test
 
@@ -104,25 +104,10 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 
 ^thm-96-2
 
-> [!remark] Remark: Using the Test
-> **Note 1.** If $D = 0$, the test gives no information: $f$ could have a local maximum or a local minimum at $(a, b)$, or $(a, b)$ could be a saddle point. (For example $x^4 + y^4$, $-x^4 - y^4$ and $x^4 - y^4$ all have $D(0, 0) = 0$.)
->
-> **Note 2.** To remember the formula for $D$, write it as a determinant (of the Hessian matrix):
->
-> $$
-> D = \begin{vmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{vmatrix} = f_{xx} f_{yy} - (f_{xy})^2 ,
-> $$
->
-> using $f_{xy} = f_{yx}$ (Clairaut's Theorem, [[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]).
->
-> **Why it works.** Along the line through $(a, b)$ in the direction of a unit vector $\mathbf{u} = \langle h, k \rangle$, the second derivative of $f$ is the quadratic expression $f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2$, the one-variable second derivative test in the direction $\mathbf{u}$. $D > 0$ means that this expression has the same sign as $f_{xx}$ for *every* direction; $D < 0$ means that it is positive in some directions and negative in others.
-
-^rem-96-1
-
 > [!proof]+ Proof
 > Stewart proves part (a) and says part (b) "has a similar proof"; part (c) is filled in here.
 >
-> **Second directional derivatives.** Let $\mathbf{u} = \langle h, k \rangle$ be a unit vector. Since the second partial derivatives are continuous on the disk, $f_x$ and $f_y$ are differentiable there ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]), hence continuous, so $f$ is differentiable as well (Theorem §93.2 again); and so is $D_{\mathbf{u}} f = f_x h + f_y k$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Theorem §95.1]]). Applying Theorem §95.1 a second time,
+> **Second directional derivatives.** Let $\mathbf{u} = \langle h, k \rangle$ be a unit vector. Since the second partial derivatives are continuous on the disk, $f_x$ and $f_y$ are differentiable there ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]), hence continuous, so $f$ is differentiable as well ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]] again); and so is $D_{\mathbf{u}} f = f_x h + f_y k$ ([[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Theorem §95.1]]). Applying [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|Theorem §95.1]] a second time,
 >
 > $$
 > D_{\mathbf{u}}^2 f = D_{\mathbf{u}}(D_{\mathbf{u}} f) = \frac{\partial}{\partial x}(D_{\mathbf{u}} f)\,h + \frac{\partial}{\partial y}(D_{\mathbf{u}} f)\,k = (f_{xx} h + f_{yx} k) h + (f_{xy} h + f_{yy} k) k = f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2 ,
@@ -144,11 +129,26 @@ Theorem §96.1 says that if $f$ has a local maximum or minimum at $(a, b)$, then
 
 ^pf-96-2
 
-*Uses:* [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut), [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|§95.1]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§96 Maximum and Minimum Values#^def-96-2|Def. §96.2]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (increasing/decreasing test)
+*Uses:* [[§92 Partial Derivatives#^thm-92-2|§92.2]] (Clairaut), [[§93 Tangent Planes and Linear Approximations#^thm-93-2|§93.2]], [[§95 Directional Derivatives and the Gradient Vector#^thm-95-1|§95.1]], [[§94 The Chain Rule#^thm-94-1|§94.1]], [[§96 Maximum and Minimum Values#^def-96-2|Def. §96.2]], [[§96 Maximum and Minimum Values#^def-96-new1|Def. §96.3]], [[§27 What Derivatives Tell Us About the Shape of a Graph#^thm-27-1|§27.1]] (increasing/decreasing test)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Optimization and Lagrange Multipliers#^thm-14-4|452 Thm. §14.4]] (hub [[Second Derivative Test in Several Variables]]), in the language of the Hessian matrix [[§14 Optimization and Lagrange Multipliers#^def-14-2|452 Def. §14.2]] and its definiteness [[§14 Optimization and Lagrange Multipliers#^def-14-3|452 Def. §14.3]]: $D > 0$, $f_{xx} > 0$ says that the Hessian is positive definite, $D < 0$ that it is indefinite. The quadratic expression $Q$ is the second-order term of the Taylor expansion, [[§9 Taylor's Theorem for Multivariable Functions#^ex-9-3|452 Ex. §9.3]].
 > - See also: [[§49★ Quadratic Forms#^thm-49-4|235 Thm. §49.4]] (a quadratic form $\mathbf{x}^TA\mathbf{x}$ is positive definite, negative definite or indefinite according to the signs of the eigenvalues of $A$; for the Hessian, $D = \lambda_1\lambda_2$), with the method in [[§49★ Quadratic Forms#^rem-49-2|235 Remark: Method — Classifying a Quadratic Form]].
+
+> [!remark] Remark: Using the Test
+> **Note 1.** If $D = 0$, the test gives no information: $f$ could have a local maximum or a local minimum at $(a, b)$, or $(a, b)$ could be a saddle point. (For example $x^4 + y^4$, $-x^4 - y^4$ and $x^4 - y^4$ all have $D(0, 0) = 0$.)
+>
+> **Note 2.** To remember the formula for $D$, write it as a determinant (of the Hessian matrix):
+>
+> $$
+> D = \begin{vmatrix} f_{xx} & f_{xy} \\ f_{yx} & f_{yy} \end{vmatrix} = f_{xx} f_{yy} - (f_{xy})^2 ,
+> $$
+>
+> using $f_{xy} = f_{yx}$ (Clairaut's Theorem, [[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]).
+>
+> **Why it works.** Along the line through $(a, b)$ in the direction of a unit vector $\mathbf{u} = \langle h, k \rangle$, the second derivative of $f$ is the quadratic expression $f_{xx} h^2 + 2f_{xy} hk + f_{yy} k^2$, the one-variable second derivative test in the direction $\mathbf{u}$. $D > 0$ means that this expression has the same sign as $f_{xx}$ for *every* direction; $D < 0$ means that it is positive in some directions and negative in others.
+
+^rem-96-1
 
 > [!example] Example §96.2: Classifying Three Critical Points
 > Find the local maximum and minimum values and saddle points of $f(x, y) = x^4 + y^4 - 4xy + 1$.
@@ -219,7 +219,7 @@ When the critical-point equations cannot be solved exactly, they are solved nume
 > 1. Compute $f_x$ and $f_y$, and solve $f_x = 0$, $f_y = 0$ simultaneously. Factor where possible ($2x(y - 1) = 0$ splits into cases), and in each case substitute into the other equation; keep track of every case. Add the points where $f_x$ or $f_y$ does not exist.
 > 2. Compute $f_{xx}$, $f_{xy}$, $f_{yy}$ and $D = f_{xx} f_{yy} - f_{xy}^2$ as functions, then evaluate at each critical point.
 > 3. Classify by [[§96 Maximum and Minimum Values#^thm-96-2|Theorem §96.2]]: $D < 0$ saddle; $D > 0$ and $f_{xx} > 0$ minimum; $D > 0$ and $f_{xx} < 0$ maximum. If $D = 0$, examine $f$ directly near the point (complete squares, or compare values along lines).
-> 4. For an applied problem with one critical point, physical reasoning often shows that it gives the absolute extremum sought (Example §96.4).
+> 4. For an applied problem with one critical point, physical reasoning often shows that it gives the absolute extremum sought ([[§96 Maximum and Minimum Values#^ex-96-4|Example §96.4]]).
 
 ^rem-96-2
 
@@ -314,7 +314,7 @@ For instance, the disk $\{(x, y) \mid x^2 + y^2 \le 1\}$, consisting of all poin
 > - The one-variable case on $[a, b]$, proved from completeness: [[Extreme Value Theorem]] (451). Hub for the higher-dimensional ingredient: [[Heine–Borel Theorem]].
 > - Complex-variables version: [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (the modulus of a continuous complex function on a closed bounded region attains a maximum) and, for analytic functions, [[§59 Maximum Modulus Principle#^cor-59-4|342 Cor. §59.4]] (that maximum is on the boundary).
 
-By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] of §25.
+By [[§96 Maximum and Minimum Values#^thm-96-1|Theorem §96.1]], if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)$ is either a critical point of $f$ or a boundary point of $D$ (at an interior point the extreme value is also a local one). This extends the [[§25 Maximum and Minimum Values#^rem-25-2|Closed Interval Method]] of §25.
 
 > [!remark] Remark: Method — Absolute Extrema on a Closed Bounded Set
 > To find the absolute maximum and minimum values of a continuous function $f$ on a closed, bounded set $D$:
@@ -322,7 +322,7 @@ By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)
 > 2. Find the extreme values of $f$ on the boundary of $D$.
 > 3. The largest of the values from steps 1 and 2 is the absolute maximum value; the smallest of these values is the absolute minimum value.
 >
-> For step 2, parametrize each piece of the boundary and use one-variable calculus (Example §96.5), or use [[§97 Lagrange Multipliers#^rem-97-2|Lagrange multipliers]] (§97).
+> For step 2, parametrize each piece of the boundary and use one-variable calculus ([[§96 Maximum and Minimum Values#^ex-96-5|Example §96.5]]), or use [[§97 Lagrange Multipliers#^rem-97-2|Lagrange multipliers]] (§97).
 >
 > *Stewart: 14.7, Box 9*
 
@@ -331,7 +331,7 @@ By Theorem §96.1, if $f$ has an extreme value at $(x_1, y_1)$, then $(x_1, y_1)
 > [!example] Example §96.5: Absolute Extrema on a Rectangle
 > Find the absolute maximum and minimum values of $f(x, y) = x^2 - 2xy + 2y$ on the rectangle $D = \{(x, y) \mid 0 \le x \le 3,\ 0 \le y \le 2\}$.
 >
-> $f$ is a polynomial, hence continuous on the closed, bounded rectangle $D$, so Theorem §96.3 guarantees both an absolute maximum and an absolute minimum.
+> $f$ is a polynomial, hence continuous on the closed, bounded rectangle $D$, so [[§96 Maximum and Minimum Values#^thm-96-3|Theorem §96.3]] guarantees both an absolute maximum and an absolute minimum.
 >
 > **Step 1: critical points.** $f_x = 2x - 2y = 0$ and $f_y = -2x + 2 = 0$ give the only critical point $(1, 1)$, which is in $D$, with $f(1, 1) = 1$.
 >

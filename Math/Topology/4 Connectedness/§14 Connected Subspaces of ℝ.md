@@ -6,7 +6,7 @@ section: 14
 munkres: "§24"
 tags: [topology, math590]
 ---
-← [[§13 Connected Spaces]] · ↑ [[· 4 Connectedness]] · [[§15 Compact Spaces]] →
+← [[§13 Connected Spaces]] · ↑ [[· 4 Connectedness]] · [[§14a Discrete and Indiscrete Spaces]] →
 
 ## Least Upper Bound Property and Linear Continuum
 
@@ -185,6 +185,8 @@ tags: [topology, math590]
 > Unit ball in $\mathbb{R}^n$ is path-connected. $\mathbb{R}^n \setminus \{0\}$, $n > 1$, is path-connected.
 
 ^ex-14-6
+
+*Chain (punctured plane): later in [[§23a The Punctured Plane and the Torus|Chapter 8]] · [[Punctured plane|all appearances]]*
 
 > [!theorem] Theorem §14.4: Path-Connected Implies Connected
 > [[§14 Connected Subspaces of ℝ#^def-14-new1|Path-connected]] $\Rightarrow$ [[§13 Connected Spaces#^def-13-new1|connected]].

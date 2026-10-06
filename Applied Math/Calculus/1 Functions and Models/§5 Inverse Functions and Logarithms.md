@@ -62,9 +62,9 @@ If the size of a bacteria population is a function of time, $N = f(t)$, one can 
 > 0 = x_1^3 - x_2^3 = (x_1 - x_2)(x_1^2 + x_1 x_2 + x_2^2), \qquad x_1^2 + x_1 x_2 + x_2^2 = \Big(x_1 + \frac{x_2}{2}\Big)^2 + \frac34 x_2^2 .
 > $$
 >
-> The second factor is a sum of two squares, so it is $0$ only if $x_2 = 0$ and then $x_1 = 0$. Either way $x_1 = x_2$. So $f$ is one-to-one (Definition §5.1, in contrapositive form).
+> The second factor is a sum of two squares, so it is $0$ only if $x_2 = 0$ and then $x_1 = 0$. Either way $x_1 = x_2$. So $f$ is one-to-one ([[§5 Inverse Functions and Logarithms#^def-5-1|Definition §5.1]], in contrapositive form).
 >
-> *By the graph.* The graph of $y = x^3$ rises from left to right (flattening at the origin), and every horizontal line meets it exactly once. By Theorem §5.1, $f$ is one-to-one.
+> *By the graph.* The graph of $y = x^3$ rises from left to right (flattening at the origin), and every horizontal line meets it exactly once. By [[§5 Inverse Functions and Logarithms#^thm-5-1|Theorem §5.1]], $f$ is one-to-one.
 >
 > **(b)** Is $g(x) = x^2$ one-to-one?
 >
@@ -122,7 +122,7 @@ One-to-one functions are important because they are precisely the functions that
 ^thm-5-2
 
 > [!proof]+ Proof
-> Let $x \in A$ and put $y = f(x)$, which lies in the range $B$. Since $f(x) = y$, Definition §5.2 gives $f^{-1}(y) = x$, that is, $f^{-1}(f(x)) = x$.
+> Let $x \in A$ and put $y = f(x)$, which lies in the range $B$. Since $f(x) = y$, [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]] gives $f^{-1}(y) = x$, that is, $f^{-1}(f(x)) = x$.
 >
 > Let $x \in B$ and put $y = f^{-1}(x)$. By the form (3) of the definition, $f^{-1}(x) = y$ means $f(y) = x$, that is, $f(f^{-1}(x)) = x$.
 
@@ -136,10 +136,10 @@ One-to-one functions are important because they are precisely the functions that
 
 > [!remark] Remark: Method — How to Find the Inverse Function of a One-to-One Function f
 > 1. Write $y = f(x)$.
-> 2. Solve this equation for $x$ in terms of $y$ (if possible). By Definition §5.2 the result is $x = f^{-1}(y)$.
+> 2. Solve this equation for $x$ in terms of $y$ (if possible). By [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]] the result is $x = f^{-1}(y)$.
 > 3. To express $f^{-1}$ as a function of $x$, interchange $x$ and $y$. The resulting equation is $y = f^{-1}(x)$.
 >
-> Check the answer with the cancellation equations (Theorem §5.2), and record the domain of $f^{-1}$, which is the range of $f$ (it may be smaller than the natural domain of the formula, as in Example §5.2(b)).
+> Check the answer with the cancellation equations ([[§5 Inverse Functions and Logarithms#^thm-5-2|Theorem §5.2]]), and record the domain of $f^{-1}$, which is the range of $f$ (it may be smaller than the natural domain of the formula, as in [[§5 Inverse Functions and Logarithms#^ex-5-2|Example §5.2]](b)).
 >
 > *Stewart: 1.5, Box 5*
 
@@ -155,7 +155,7 @@ Interchanging $x$ and $y$ also gives the graph of $f^{-1}$ from the graph of $f$
 ^thm-5-3
 
 > [!proof]+ Proof
-> **Points are swapped.** By Definition §5.2, $f(a) = b$ if and only if $f^{-1}(b) = a$. So $(a, b)$ is on the graph of $f$ if and only if $(b, a)$ is on the graph of $f^{-1}$.
+> **Points are swapped.** By [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]], $f(a) = b$ if and only if $f^{-1}(b) = a$. So $(a, b)$ is on the graph of $f$ if and only if $(b, a)$ is on the graph of $f^{-1}$.
 >
 > **Swapping is reflecting.** The reflection of $(a, b)$ about the line $y = x$ is $(b, a)$. If $a = b$ the point lies on the line and is its own mirror image. If $a \ne b$, the segment from $(a, b)$ to $(b, a)$ has slope $\dfrac{a - b}{b - a} = -1$, so it is perpendicular to the line $y = x$ (slope $1$), and its midpoint $\big(\frac{a + b}{2}, \frac{a + b}{2}\big)$ lies on that line. So $y = x$ is the perpendicular bisector of the segment, which is what it means for $(b, a)$ to be the mirror image of $(a, b)$.
 >
@@ -181,7 +181,7 @@ Interchanging $x$ and $y$ also gives the graph of $f^{-1}$ from the graph of $f$
 >
 > **(b)** Sketch the graphs of $f(x) = \sqrt{-1 - x}$ and its inverse function on the same axes.
 >
-> $f$ is defined for $-1 - x \ge 0$, so its domain is $(-\infty, -1]$, and its range is $[0, \infty)$. Squaring $y = \sqrt{-1 - x}$ gives $y^2 = -1 - x$, that is, $x = -y^2 - 1$: the graph of $f$ is the top half ($y \ge 0$) of this parabola, which opens to the left and has its vertex at $(-1, 0)$. Reflecting about $y = x$ (Theorem §5.3) gives the graph of $f^{-1}$.
+> $f$ is defined for $-1 - x \ge 0$, so its domain is $(-\infty, -1]$, and its range is $[0, \infty)$. Squaring $y = \sqrt{-1 - x}$ gives $y^2 = -1 - x$, that is, $x = -y^2 - 1$: the graph of $f$ is the top half ($y \ge 0$) of this parabola, which opens to the left and has its vertex at $(-1, 0)$. Reflecting about $y = x$ ([[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]]) gives the graph of $f^{-1}$.
 >
 > *Check by formula.* Solving $y = \sqrt{-1 - x}$ for $x$ gives $x = -y^2 - 1$ with $y \ge 0$; interchanging, $f^{-1}(x) = -x^2 - 1$ for $x \ge 0$. The restriction $x \ge 0$ is essential: the domain of $f^{-1}$ is the range $[0, \infty)$ of $f$. So the graph of $f^{-1}$ is the right half of the parabola $y = -x^2 - 1$, starting at $(0, -1)$, the mirror image of the endpoint $(-1, 0)$ of the graph of $f$.
 >

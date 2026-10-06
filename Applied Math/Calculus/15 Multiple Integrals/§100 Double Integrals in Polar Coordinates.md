@@ -94,7 +94,7 @@ $$
 > [!example] Example §100.1: A Half-Ring
 > Evaluate $\displaystyle\iint_R (3x + 4y^2)\,dA$, where $R$ is the region in the upper half-plane bounded by the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
-> $R = \{(x, y) \mid y \ge 0,\ 1 \le x^2 + y^2 \le 4\}$ is the half-ring $1 \le r \le 2$, $0 \le \theta \le \pi$. By Theorem §100.1,
+> $R = \{(x, y) \mid y \ge 0,\ 1 \le x^2 + y^2 \le 4\}$ is the half-ring $1 \le r \le 2$, $0 \le \theta \le \pi$. By [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]],
 >
 > $$
 > \begin{aligned}
@@ -168,7 +168,7 @@ What has been done for polar rectangles extends to regions that play the role of
 ^thm-100-2
 
 > [!proof]+ Proof
-> *Stewart says this follows by "combining Formula 2 with Formula 15.2.4"; here are the details.* Choose $0 \le a \le h_1(\theta)$ and $b \ge h_2(\theta)$ for all $\theta$ (the $h_i$ are continuous, hence bounded), so that $D$ lies in the polar rectangle $R = \{a \le r \le b,\ \alpha \le \theta \le \beta\}$. Let $F = f$ on $D$ and $F = 0$ on the rest of $R$; by Definition 15.2.2 ([[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]]), $\iint_D f\,dA = \iint_R F\,dA$. Applying Formula 2 to $F$ (the argument of Theorem §100.1 goes through for $F$, which is bounded and discontinuous only on the curves $r = h_1(\theta)$, $r = h_2(\theta)$),
+> *Stewart says this follows by "combining Formula 2 with Formula 15.2.4"; here are the details.* Choose $0 \le a \le h_1(\theta)$ and $b \ge h_2(\theta)$ for all $\theta$ (the $h_i$ are continuous, hence bounded), so that $D$ lies in the polar rectangle $R = \{a \le r \le b,\ \alpha \le \theta \le \beta\}$. Let $F = f$ on $D$ and $F = 0$ on the rest of $R$; by Definition 15.2.2 ([[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]]), $\iint_D f\,dA = \iint_R F\,dA$. Applying Formula 2 to $F$ (the argument of [[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]] goes through for $F$, which is bounded and discontinuous only on the curves $r = h_1(\theta)$, $r = h_2(\theta)$),
 >
 > $$
 > \iint_R F\,dA = \int_\alpha^\beta \int_a^b F(r\cos\theta, r\sin\theta)\,r\,dr\,d\theta .
@@ -194,7 +194,7 @@ What has been done for polar rectangles extends to regions that play the role of
 ^cor-100-3
 
 > [!proof]+ Proof
-> Take $f(x, y) = 1$, $h_1(\theta) = 0$ and $h_2(\theta) = h(\theta)$ in Theorem §100.2 and use $\iint_D 1\,dA = A(D)$ ([[§99 Double Integrals Over General Regions#^thm-99-5|Theorem §99.5]]):
+> Take $f(x, y) = 1$, $h_1(\theta) = 0$ and $h_2(\theta) = h(\theta)$ in [[§100 Double Integrals in Polar Coordinates#^thm-100-2|Theorem §100.2]] and use $\iint_D 1\,dA = A(D)$ ([[§99 Double Integrals Over General Regions#^thm-99-5|Theorem §99.5]]):
 >
 > $$
 > A(D) = \iint_D 1\,dA = \int_\alpha^\beta \int_0^{h(\theta)} r\,dr\,d\theta = \int_\alpha^\beta \Big[ \frac{r^2}{2} \Big]_0^{h(\theta)} d\theta = \int_\alpha^\beta \tfrac12 [h(\theta)]^2\,d\theta .
@@ -226,6 +226,8 @@ What has been done for polar rectangles extends to regions that play the role of
 
 ^ex-100-4
 
+*Chain: the four-leaved rose earlier in [[§68a The Cycloid, the Cardioid and the Four-Leaved Rose|Chapter 10]].*
+
 > [!example] Example §100.5: Inside an Off-Center Cylinder
 > Find the volume of the solid that lies under the paraboloid $z = x^2 + y^2$, above the $xy$-plane, and inside the cylinder $x^2 + y^2 = 2x$.
 >
@@ -235,7 +237,7 @@ What has been done for polar rectangles extends to regions that play the role of
 > D = \{(r, \theta) \mid -\pi/2 \le \theta \le \pi/2,\ 0 \le r \le 2\cos\theta\} .
 > $$
 >
-> **The volume.** By Theorem §100.2,
+> **The volume.** By [[§100 Double Integrals in Polar Coordinates#^thm-100-2|Theorem §100.2]],
 >
 > $$
 > \begin{aligned}

@@ -62,17 +62,6 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 ^thm-23-2
 
-> [!remark] Remark: Constructing the Proof
-> The conclusion is an "or" statement, so we prove it by assuming that the first alternative fails and deducing the second (as in [[§4 Proof by Contradiction#^ex-4-3|Example §4.3]]):
->
-> | Given | Goal |
-> |---|---|
-> | $p$ prime, $p \mid ab$, $p \nmid a$ | $p \mid b$ |
->
-> Because $p$ is prime, its only divisors are $\pm 1$ and $\pm p$, so these are the only candidates for a common divisor of $p$ and $a$; if $p \nmid a$, only $\pm 1$ remain, and $p$ and $a$ are coprime. The rest is already proved, as [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]] (Eccles 17.3.2): *if $a$ and $b$ are coprime and $a \mid bc$, then $a \mid c$.* So the proof below only has to check coprimality and cite it; the Bézout argument is not repeated.
-
-^rem-23-1
-
 > [!proof]+ Proof
 > Suppose $p \mid ab$ and $p \nmid a$. The positive divisors of $p$ are $1$ and $p$, and $p$ is not a divisor of $a$, so the only positive common divisor of $p$ and $a$ is $1$: $\gcd(p, a) = 1$. By [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]], $p \mid ab$ with $\gcd(p, a) = 1$ gives $p \mid b$. Hence $p \mid a$ or $p \mid b$.
 >
@@ -84,6 +73,17 @@ Primes are the multiplicative building blocks of the positive integers. This sec
 
 > [!remark]- Connections
 > - Same result in group theory, proved there via Bézout: [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|493 Lemma §9.1]] (Euclid's lemma, together with the general form $\gcd(c, a) = 1,\ c \mid ab \Rightarrow c \mid b$).
+
+> [!remark] Remark: Constructing the Proof
+> The conclusion is an "or" statement, so we prove it by assuming that the first alternative fails and deducing the second (as in [[§4 Proof by Contradiction#^ex-4-3|Example §4.3]]):
+>
+> | Given | Goal |
+> |---|---|
+> | $p$ prime, $p \mid ab$, $p \nmid a$ | $p \mid b$ |
+>
+> Because $p$ is prime, its only divisors are $\pm 1$ and $\pm p$, so these are the only candidates for a common divisor of $p$ and $a$; if $p \nmid a$, only $\pm 1$ remain, and $p$ and $a$ are coprime. The rest is already proved, as [[§17 Consequences of the Euclidean Algorithm#^thm-17-4|Theorem §17.4]] (Eccles 17.3.2): *if $a$ and $b$ are coprime and $a \mid bc$, then $a \mid c$.* So the proof above only has to check coprimality and cite it; the Bézout argument is not repeated.
+
+^rem-23-1
 
 > [!remark] Remark: Euclid's Property Characterizes the Primes
 > Conversely, an integer $n > 1$ with the property "$n \mid ab \Rightarrow n \mid a$ or $n \mid b$" is prime. For if $n$ is composite, write $n = ab$ with $1 < a, b < n$; then $n \mid ab$, but $n \nmid a$ and $n \nmid b$ since $0 < a, b < n$. So among the integers $n > 1$, Euclid's property is equivalent to being prime, and in more advanced algebra (rings other than $\mathbb{Z}$) it is taken as the definition of a prime element. [[§23 The Sequence of Prime Numbers#^ex-23-2|Example §23.2]] shows a number system where the two notions come apart.
@@ -265,6 +265,8 @@ Factorization into primes is not unique as written, since the factors can be reo
 
 ^ex-23-3
 
+*Chain: earlier in [[§18b The Pair (72, 30)|Chapter 4]]*
+
 > [!example] Example §23.4: gcd(4148, 7684) by Factorization
 > *Factorize.* $4148 = 4 \times 1037$, and trying primes up to $\sqrt{1037} < 33$ finds $1037 = 17 \times 61$; $61$ is prime (no prime $\le 7$ divides it, [[§23 The Sequence of Prime Numbers#^prop-23-3|Prop. §23.3]]). Similarly $7684 = 4 \times 1921$ and $1921 = 17 \times 113$, with $113$ prime (no prime $\le 10$ divides it). So
 >
@@ -278,6 +280,8 @@ Factorization into primes is not unique as written, since the factors can be reo
 > *Eccles: Exercise 23.2*
 
 ^ex-23-4
+
+*Chain: earlier in [[§18a The Pair (7684, 4148)|Chapter 4]]*
 
 > [!example] Example §23.5: Euler's Totient of a Prime Power
 > Euler's totient $\phi(n)$ is the number of integers $m$ with $1 \le m \le n$ and $\gcd(m, n) = 1$. For a prime $p$ and $k \ge 1$,
@@ -325,6 +329,8 @@ Factorization into primes is not unique as written, since the factors can be reo
 
 > [!remark]- Connections
 > - [[§2 The Set ℚ of Rational Numbers#^thm-2-1|451 Thm. §2.1]] (irrationality of $\sqrt 2$) and its generalization [[§2 The Set ℚ of Rational Numbers#^prop-2-2|451 Prop. §2.2]] (rational square roots of integers are integers).
+
+*Chain: earlier in [[§14b √2|Chapter 3]]*
 
 > [!example] Example §23.7: Coprime to Each Factor, Coprime to the Product
 > Let $a, b, c$ be positive integers. If $\gcd(a, b) = 1$ and $\gcd(a, c) = 1$, then $\gcd(a, bc) = 1$.

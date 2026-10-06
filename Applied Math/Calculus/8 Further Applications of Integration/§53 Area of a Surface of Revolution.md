@@ -57,7 +57,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 ^thm-53-1
 
 > [!proof]+ Proof
-> Complete the band to a cone by adding a small cone on top, with base radius $r_1$ and slant height $l_1$. The large cone then has base radius $r_2$ and slant height $l_1 + l$. The band is the large cone minus the small one, so by Definition §53.1
+> Complete the band to a cone by adding a small cone on top, with base radius $r_1$ and slant height $l_1$. The large cone then has base radius $r_2$ and slant height $l_1 + l$. The band is the large cone minus the small one, so by [[§53 Area of a Surface of Revolution#^def-53-1|Definition §53.1]]
 >
 > $$
 > A = \pi r_2 (l_1 + l) - \pi r_1 l_1 = \pi\big[(r_2 - r_1) l_1 + r_2 l\big] . \qquad (1)
@@ -71,7 +71,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 >
 > Putting this into (1) gives $A = \pi(r_1 l + r_2 l) = 2\pi \cdot \frac12(r_1 + r_2) \cdot l = 2\pi r l$.
 >
-> If $r_1 = r_2$ the band is a cylinder of height $l$, and $2\pi r l$ agrees with Definition §53.1.
+> If $r_1 = r_2$ the band is a cylinder of height $l$, and $2\pi r l$ agrees with [[§53 Area of a Surface of Revolution#^def-53-1|Definition §53.1]].
 
 ^pf-53-1
 
@@ -100,7 +100,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 ^def-53-2
 
 > [!remark] Remark: Why This Definition
-> Follow the strategy used for arc length. Divide $[a, b]$ into $n$ subintervals with endpoints $x_0, \ldots, x_n$ and equal width $\Delta x$, and let $P_i = (x_i, y_i)$ with $y_i = f(x_i)$. Approximate the part of the surface between $x_{i-1}$ and $x_i$ by rotating the segment $P_{i-1} P_i$ about the $x$-axis. The result is a band with slant height $l = |P_{i-1} P_i|$ and average radius $r = \frac12 (y_{i-1} + y_i)$, so by Theorem §53.1 its area is
+> Follow the strategy used for arc length. Divide $[a, b]$ into $n$ subintervals with endpoints $x_0, \ldots, x_n$ and equal width $\Delta x$, and let $P_i = (x_i, y_i)$ with $y_i = f(x_i)$. Approximate the part of the surface between $x_{i-1}$ and $x_i$ by rotating the segment $P_{i-1} P_i$ about the $x$-axis. The result is a band with slant height $l = |P_{i-1} P_i|$ and average radius $r = \frac12 (y_{i-1} + y_i)$, so by [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] its area is
 >
 > $$
 > 2\pi \, \frac{y_{i-1} + y_i}{2} \, |P_{i-1} P_i| .
@@ -125,10 +125,10 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 ^rem-53-2
 
 ![[m233-53-2.svg]]
-*Rotating the curve $y = f(x)$ about the $x$-axis. The segment $P_{i-1} P_i$ of the inscribed polygon sweeps out a band (red) with radii $y_{i-1}$ and $y_i$ and slant height $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^{\ast})]^2}\,\Delta x$. By Theorem §53.1 its area is $2\pi \cdot \frac12(y_{i-1} + y_i) \cdot |P_{i-1} P_i|$, and adding the bands gives a Riemann sum for $\int_a^b 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx$.*
+*Rotating the curve $y = f(x)$ about the $x$-axis. The segment $P_{i-1} P_i$ of the inscribed polygon sweeps out a band (red) with radii $y_{i-1}$ and $y_i$ and slant height $|P_{i-1} P_i| = \sqrt{1 + [f'(x_i^{\ast})]^2}\,\Delta x$. By [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] its area is $2\pi \cdot \frac12(y_{i-1} + y_i) \cdot |P_{i-1} P_i|$, and adding the bands gives a Riemann sum for $\int_a^b 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx$.*
 
 > [!remark]- Connections
-> - The surface is the parametrized surface $\mathbf{X}(x, \theta) = (x, f(x)\cos\theta, f(x)\sin\theta)$, $a \le x \le b$, $0 \le \theta \le 2\pi$. Here $\mathbf{X}_x = (1, f'\cos\theta, f'\sin\theta)$ and $\mathbf{X}_\theta = (0, -f\sin\theta, f\cos\theta)$, so $E = 1 + f'^2$, $F = 0$, $\tilde G = f^2$. The area element of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] is $\sqrt{E\tilde G - F^2}\,dx\,d\theta = f\sqrt{1 + f'^2}\,dx\,d\theta$, and integrating over $\theta$ gives the integrand $2\pi f\sqrt{1 + f'^2}$ of Definition §53.2. In Calculus this general formula comes in [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]], and the surface of revolution is worked out there in [[§112 Parametric Surfaces and Their Areas#^thm-112-3|Theorem §112.3]].
+> - The surface is the parametrized surface $\mathbf{X}(x, \theta) = (x, f(x)\cos\theta, f(x)\sin\theta)$, $a \le x \le b$, $0 \le \theta \le 2\pi$. Here $\mathbf{X}_x = (1, f'\cos\theta, f'\sin\theta)$ and $\mathbf{X}_\theta = (0, -f\sin\theta, f\cos\theta)$, so $E = 1 + f'^2$, $F = 0$, $\tilde G = f^2$. The area element of [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] is $\sqrt{E\tilde G - F^2}\,dx\,d\theta = f\sqrt{1 + f'^2}\,dx\,d\theta$, and integrating over $\theta$ gives the integrand $2\pi f\sqrt{1 + f'^2}$ of [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]]. In Calculus this general formula comes in [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]], and the surface of revolution is worked out there in [[§112 Parametric Surfaces and Their Areas#^thm-112-3|Theorem §112.3]].
 
 > [!theorem] Theorem §53.2: Rotating a Curve x = g(y) About the x-Axis
 > If the curve is described as $x = g(y)$, $c \le y \le d$, with $y \ge 0$ and $g'$ continuous, then the area of the surface obtained by rotating it about the $x$-axis is
@@ -150,7 +150,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > \int_{g(c + \varepsilon)}^{g(d - \varepsilon)} 2\pi f(x) \sqrt{1 + [f'(x)]^2}\,dx = \int_{c + \varepsilon}^{d - \varepsilon} 2\pi y \sqrt{1 + \frac{1}{[g'(y)]^2}}\; g'(y)\,dy = \int_{c + \varepsilon}^{d - \varepsilon} 2\pi y \sqrt{[g'(y)]^2 + 1}\,dy ,
 > $$
 >
-> using $\sqrt{1 + 1/g'^2}\,g' = \sqrt{g'^2 + 1}$ for $g' > 0$. As $\varepsilon \to 0^+$ the right side tends to the integral in Equation 6, whose integrand is continuous on $[c, d]$. So the left side tends to the same value: it is Definition §53.2, an improper integral if $g'$ vanishes at an endpoint (where $f'$ is then unbounded, as in [[§53 Area of a Surface of Revolution#^ex-53-2|Example §53.2]]). If $g' < 0$ the same computation works with $|g'(y)|$ in place of $g'(y)$, the reversed limits of integration supplying the sign.
+> using $\sqrt{1 + 1/g'^2}\,g' = \sqrt{g'^2 + 1}$ for $g' > 0$. As $\varepsilon \to 0^+$ the right side tends to the integral in Equation 6, whose integrand is continuous on $[c, d]$. So the left side tends to the same value: it is [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], an improper integral if $g'$ vanishes at an endpoint (where $f'$ is then unbounded, as in [[§53 Area of a Surface of Revolution#^ex-53-2|Example §53.2]]). If $g' < 0$ the same computation works with $|g'(y)|$ in place of $g'(y)$, the reversed limits of integration supplying the sign.
 
 ^pf-53-2
 
@@ -182,9 +182,9 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 ^thm-53-3
 
 > [!proof]+ Proof
-> **Formula 7.** With the first $ds$, (7) is Definition §53.2 (Equation 5); with the second, it is Theorem §53.2 (Equation 6).
+> **Formula 7.** With the first $ds$, (7) is [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]] (Equation 5); with the second, it is [[§53 Area of a Surface of Revolution#^thm-53-2|Theorem §53.2]] (Equation 6).
 >
-> **Formula 8.** *Stewart gives this as a sketch* ("a similar procedure"). Let the curve be $y = f(x)$, $a \le x \le b$, with $0 \le a$ and $f'$ continuous. Rotating the segment $P_{i-1} P_i$ about the $y$-axis gives a band with radii $x_{i-1}$ and $x_i$ and slant height $|P_{i-1} P_i|$. (If the segment is horizontal, the band is a flat ring, of area $\pi(x_i^2 - x_{i-1}^2) = 2\pi \cdot \frac12(x_{i-1} + x_i)(x_i - x_{i-1})$; so Theorem §53.1 still holds.) By Theorem §53.1 the band has area
+> **Formula 8.** *Stewart gives this as a sketch* ("a similar procedure"). Let the curve be $y = f(x)$, $a \le x \le b$, with $0 \le a$ and $f'$ continuous. Rotating the segment $P_{i-1} P_i$ about the $y$-axis gives a band with radii $x_{i-1}$ and $x_i$ and slant height $|P_{i-1} P_i|$. (If the segment is horizontal, the band is a flat ring, of area $\pi(x_i^2 - x_{i-1}^2) = 2\pi \cdot \frac12(x_{i-1} + x_i)(x_i - x_{i-1})$; so [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] still holds.) By [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] the band has area
 >
 > $$
 > 2\pi \, \frac{x_{i-1} + x_i}{2} \, |P_{i-1} P_i| = 2\pi \, \frac{x_{i-1} + x_i}{2} \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x .
@@ -196,7 +196,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > \int_a^b 2\pi x \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx = \int 2\pi x\,ds .
 > $$
 >
-> For a curve $x = g(y)$ the same argument with $[c, d]$ divided, or the substitution of the proof of Theorem §53.2, gives the form with $ds = \sqrt{1 + (dx/dy)^2}\,dy$.
+> For a curve $x = g(y)$ the same argument with $[c, d]$ divided, or the substitution of the proof of [[§53 Area of a Surface of Revolution#^thm-53-2|Theorem §53.2]], gives the form with $ds = \sqrt{1 + (dx/dy)^2}\,dy$.
 
 ^pf-53-3
 
@@ -218,7 +218,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > 2. **Variable.** Choose $x$ or $y$ as the variable of integration, preferring the one whose derivative is continuous on the closed interval and gives a simpler $1 + (\text{derivative})^2$. The choice of variable is independent of the axis ([[§53 Area of a Surface of Revolution#^ex-53-3|Example §53.3]] does it both ways).
 > 3. **Set up** $S = \int 2\pi \cdot \text{radius}\cdot ds$, with the radius, $ds$ and the limits all written in the chosen variable.
 > 4. **Simplify.** For rotation about the $x$-axis the factor $y$ often cancels the square root ([[§53 Area of a Surface of Revolution#^ex-53-1|Example §53.1]]). Then integrate, or approximate numerically ([[§53 Area of a Surface of Revolution#^ex-53-4|Example §53.4]]).
-> 5. **Check** against a cylinder or band with comparable dimensions (Example §53.3).
+> 5. **Check** against a cylinder or band with comparable dimensions ([[§53 Area of a Surface of Revolution#^ex-53-3|Example §53.3]]).
 
 ^rem-53-4
 
@@ -233,7 +233,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > 1 + \left(\frac{dy}{dx}\right)^2 = 1 + \frac{x^2}{4 - x^2} = \frac{4 - x^2 + x^2}{4 - x^2} = \frac{4}{4 - x^2} .
 > $$
 >
-> By Formula 7 with $ds = \sqrt{1 + (dy/dx)^2}\,dx$ (that is, Definition §53.2),
+> By Formula 7 with $ds = \sqrt{1 + (dy/dx)^2}\,dx$ (that is, [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]]),
 >
 > $$
 > S = \int_{-1}^{1} 2\pi y \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx = 2\pi \int_{-1}^{1} \sqrt{4 - x^2}\,\frac{2}{\sqrt{4 - x^2}}\,dx = 4\pi \int_{-1}^{1} 1\,dx = 4\pi(2) = 8\pi .
@@ -248,7 +248,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 > [!example] Example §53.2: Integrating with Respect to y
 > The portion of the curve $x = \frac23 y^{3/2}$ between $y = 0$ and $y = 3$ is rotated about the $x$-axis. Find the area of the resulting surface.
 >
-> Since $x$ is given as a function of $y$, use $y$ as the variable of integration. (As a function of $x$, $y = (\frac32 x)^{2/3}$ has an unbounded derivative at $x = 0$.) Here $dx/dy = y^{1/2}$, so by Formula 7 with $ds = \sqrt{1 + (dx/dy)^2}\,dy$ (Theorem §53.2),
+> Since $x$ is given as a function of $y$, use $y$ as the variable of integration. (As a function of $x$, $y = (\frac32 x)^{2/3}$ has an unbounded derivative at $x = 0$.) Here $dx/dy = y^{1/2}$, so by Formula 7 with $ds = \sqrt{1 + (dx/dy)^2}\,dy$ ([[§53 Area of a Surface of Revolution#^thm-53-2|Theorem §53.2]]),
 >
 > $$
 > S = \int_0^3 2\pi y \sqrt{1 + \left(\frac{dx}{dy}\right)^2}\,dy = 2\pi \int_0^3 y \sqrt{1 + (y^{1/2})^2}\,dy = 2\pi \int_0^3 y \sqrt{1 + y}\,dy .
@@ -294,7 +294,7 @@ A surface of revolution is formed when a curve is rotated about a line; it is th
 >
 > as in Solution 1.
 >
-> **Check.** $S \approx \frac{\pi}{6}(70.093 - 11.180) \approx 30.85$. A cylinder of the same height $3$ and radius $1.5$, halfway between the upper and lower radii, has lateral area $2\pi(1.5)(3) \approx 28.27$. The band with the same top and bottom circles has slant height $\sqrt{1^2 + 3^2} = \sqrt{10}$ and, by Theorem §53.1, area $2\pi(1.5)\sqrt{10} \approx 29.80$. The surface should be slightly larger than that band, since the arc $x = \sqrt{y}$ bulges away from the axis beyond its chord and is longer than it, and it is.
+> **Check.** $S \approx \frac{\pi}{6}(70.093 - 11.180) \approx 30.85$. A cylinder of the same height $3$ and radius $1.5$, halfway between the upper and lower radii, has lateral area $2\pi(1.5)(3) \approx 28.27$. The band with the same top and bottom circles has slant height $\sqrt{1^2 + 3^2} = \sqrt{10}$ and, by [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]], area $2\pi(1.5)\sqrt{10} \approx 29.80$. The surface should be slightly larger than that band, since the arc $x = \sqrt{y}$ bulges away from the axis beyond its chord and is longer than it, and it is.
 >
 > *Stewart: Example 8.2.3*
 

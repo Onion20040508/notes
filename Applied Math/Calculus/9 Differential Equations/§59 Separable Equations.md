@@ -87,7 +87,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > - ODE version: [[§5 Separable Differential Equations#^def-5-1|331 Def. §5.1]] and [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]] (separable equations in the form $M(x) + N(y)\,y' = 0$, the same equivalence with an implicit solution, and examples that find the interval of validity).
 
 > [!remark] Remark: Method — Solving a Separable Equation
-> 1. Write the equation as $dy/dx = g(x)f(y)$ (Definition §59.1).
+> 1. Write the equation as $dy/dx = g(x)f(y)$ ([[§59 Separable Equations#^def-59-1|Definition §59.1]]).
 > 2. Find the **constant solutions**: every number $y_0$ with $f(y_0) = 0$ gives a solution $y \equiv y_0$. Step 3 divides by $f(y)$ and loses them.
 > 3. For $f(y) \ne 0$, write $h(y)\,dy = g(x)\,dx$ with $h = 1/f$, and integrate both sides, with one constant $C$ ([[§59 Separable Equations#^thm-59-1|Theorem §59.1]]).
 > 4. Solve for $y$ if possible. With $\ln|y|$ or a similar term, exponentiate, and replace $\pm e^{C}$ by one arbitrary constant $A$; often $A = 0$ brings back the constant solution of step 2.
@@ -181,7 +181,7 @@ Equation 2 defines $y$ implicitly as a function of $x$; sometimes it can be solv
 > - The integrating factor in 451, as a trick for Rolle's Theorem: [[§29 The Mean Value Theorem#^rem-29-2|451 Remark after Ex. §29.4]]. There $y' + y\,g' = 0$ is written as $(y\,e^{g})' = 0$, exactly the computation above with $g(x) = -x^3/3$.
 
 > [!remark] Remark: Solution Curves Do Not Cross
-> Stewart quotes, without proof, a **uniqueness theorem** for equations such as $y' = x^2 y$: if two solutions agree at one value of $x$, they agree at all $x$. So two solution curves are either identical or never intersect. (A standard form: for $y' = F(x, y)$ with $F$ and $\partial F/\partial y$ continuous, an initial-value problem $y(x_0) = y_0$ has only one solution on any interval containing $x_0$. It is proved in a course on differential equations.) In Example §59.3, $y = 0$ is a solution, so every other solution satisfies $y(x) \ne 0$ for all $x$, which is what makes the sign of $\pm e^{C}$ constant.
+> Stewart quotes, without proof, a **uniqueness theorem** for equations such as $y' = x^2 y$: if two solutions agree at one value of $x$, they agree at all $x$. So two solution curves are either identical or never intersect. (A standard form: for $y' = F(x, y)$ with $F$ and $\partial F/\partial y$ continuous, an initial-value problem $y(x_0) = y_0$ has only one solution on any interval containing $x_0$. It is proved in a course on differential equations.) In [[§59 Separable Equations#^ex-59-3|Example §59.3]], $y = 0$ is a solution, so every other solution satisfies $y(x) \ne 0$ for all $x$, which is what makes the sign of $\pm e^{C}$ constant.
 
 ^rem-59-2
 

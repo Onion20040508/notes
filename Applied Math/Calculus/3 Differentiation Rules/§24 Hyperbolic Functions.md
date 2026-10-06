@@ -138,7 +138,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 > \frac{d}{dx}(\cosh x) = \frac{e^x - e^{-x}}{2} = \sinh x .
 > $$
 >
-> The other four follow by the Quotient Rule and Theorem §24.1:
+> The other four follow by the Quotient Rule and [[§24 Hyperbolic Functions#^thm-24-1|Theorem §24.1]]:
 >
 > $$
 > \begin{aligned}
@@ -156,7 +156,7 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 > [!example] Example §24.1: Combining with the Chain Rule
 > If $y = \cosh\sqrt{x}$, find $dy/dx$.
 >
-> By Theorem §24.2 and the Chain Rule,
+> By [[§24 Hyperbolic Functions#^thm-24-2|Theorem §24.2]] and the Chain Rule,
 >
 > $$
 > \frac{dy}{dx} = \frac{d}{dx}\big(\cosh\sqrt{x}\big) = \sinh\sqrt{x} \cdot \frac{d}{dx}\sqrt{x} = \frac{\sinh\sqrt{x}}{2\sqrt{x}} .
@@ -248,7 +248,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 ^thm-24-4
 
 > [!proof]+ Proof
-> The inverse hyperbolic functions are differentiable because the hyperbolic functions are differentiable with nonzero derivative on the relevant intervals ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]], from Appendix F), except at the endpoint $x = 1$ of $\cosh^{-1}$ and $\operatorname{sech}^{-1}$. So implicit differentiation applies. (Alternatively, differentiate Formulas 3–5; see Example §24.2.)
+> The inverse hyperbolic functions are differentiable because the hyperbolic functions are differentiable with nonzero derivative on the relevant intervals ([[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]], from Appendix F), except at the endpoint $x = 1$ of $\cosh^{-1}$ and $\operatorname{sech}^{-1}$. So implicit differentiation applies. (Alternatively, differentiate Formulas 3–5; see [[§24 Hyperbolic Functions#^ex-24-2|Example §24.2]].)
 >
 > **$\sinh^{-1}$** (Stewart's Example 3.11.4, Solution 1). Let $y = \sinh^{-1} x$, so $\sinh y = x$. Differentiating implicitly, $\cosh y\,\dfrac{dy}{dx} = 1$. Since $\cosh^2 y - \sinh^2 y = 1$ and $\cosh y \ge 0$, $\cosh y = \sqrt{1 + \sinh^2 y}$, so
 >
@@ -256,7 +256,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 > \frac{dy}{dx} = \frac{1}{\cosh y} = \frac{1}{\sqrt{1 + \sinh^2 y}} = \frac{1}{\sqrt{1 + x^2}} .
 > $$
 >
-> Stewart leaves the others as exercises; they go the same way, with Theorems §24.1 and §24.2.
+> Stewart leaves the others as exercises; they go the same way, with Theorems [[§24 Hyperbolic Functions#^thm-24-1|§24.1]] and [[§24 Hyperbolic Functions#^thm-24-2|§24.2]].
 >
 > **$\cosh^{-1}$.** $\cosh y = x$ with $y \ge 0$ gives $\sinh y\,y' = 1$. For $y \ge 0$, $\sinh y \ge 0$, so $\sinh y = \sqrt{\cosh^2 y - 1} = \sqrt{x^2 - 1}$ and $y' = 1/\sqrt{x^2 - 1}$ ($x > 1$).
 >
@@ -291,7 +291,7 @@ Since the hyperbolic functions are built from exponentials, their inverses can b
 > [!example] Example §24.3: An Inverse Hyperbolic Function of a Trigonometric Function
 > Find $\dfrac{d}{dx}\big[\tanh^{-1}(\sin x)\big]$.
 >
-> By Theorem §24.4 and the Chain Rule (note $|\sin x| < 1$ is needed, i.e. $\cos x \ne 0$),
+> By [[§24 Hyperbolic Functions#^thm-24-4|Theorem §24.4]] and the Chain Rule (note $|\sin x| < 1$ is needed, i.e. $\cos x \ne 0$),
 >
 > $$
 > \frac{d}{dx}\big[\tanh^{-1}(\sin x)\big] = \frac{1}{1 - (\sin x)^2}\,\frac{d}{dx}(\sin x) = \frac{\cos x}{1 - \sin^2 x} = \frac{\cos x}{\cos^2 x} = \sec x .

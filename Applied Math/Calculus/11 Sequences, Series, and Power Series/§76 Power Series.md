@@ -102,7 +102,7 @@ To determine the values of $x$ for which a power series converges, we normally u
 
 ## Interval of Convergence
 
-In these examples the set where the series converges is an interval: finite for the geometric series and Example §76.1, the infinite interval $(-\infty, \infty)$ in Example §76.2(b), and the collapsed interval $[0, 0] = \{0\}$ in Example §76.2(a). This is true in general. Stewart's proof in Appendix F rests on two preliminary results about series centered at $0$.
+In these examples the set where the series converges is an interval: finite for the geometric series and [[§76 Power Series#^ex-76-1|Example §76.1]], the infinite interval $(-\infty, \infty)$ in [[§76 Power Series#^ex-76-2|Example §76.2]](b), and the collapsed interval $[0, 0] = \{0\}$ in [[§76 Power Series#^ex-76-2|Example §76.2]](a). This is true in general. Stewart's proof in Appendix F rests on two preliminary results about series centered at $0$.
 
 > [!theorem] Lemma §76.1: Convergence Spreads Inward, Divergence Outward
 > 1. If a power series $\sum c_n x^n$ converges when $x = b$ (where $b \ne 0$), then it converges whenever $|x| < |b|$.
@@ -150,15 +150,15 @@ In these examples the set where the series converges is an interval: finite for 
 > S = \Big\{ x \ \Big|\ \sum c_n x^n \text{ converges} \Big\}
 > $$
 >
-> is not empty. By Lemma §76.1(2) the series diverges if $|x| > |d|$, so $|x| \le |d|$ for all $x \in S$: $|d|$ is an upper bound for $S$. By the Completeness Axiom ([[§69 Sequences#^def-69-7|Definition §69.7]]), $S$ has a least upper bound $R$. Also $R > 0$: by Lemma §76.1(1) the series converges at $|b|/2$, so $R \ge |b|/2 > 0$.
+> is not empty. By [[§76 Power Series#^lem-76-1|Lemma §76.1]](2) the series diverges if $|x| > |d|$, so $|x| \le |d|$ for all $x \in S$: $|d|$ is an upper bound for $S$. By the Completeness Axiom ([[§69 Sequences#^def-69-new1|Definition §69.8]]), $S$ has a least upper bound $R$. Also $R > 0$: by [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) the series converges at $|b|/2$, so $R \ge |b|/2 > 0$.
 >
-> **$|x| > R$.** Then $x \notin S$, so $\sum c_n x^n$ diverges. (Stewart states this directly; here is why: if $x \in S$, pick $y$ with $R < y < |x|$. By Lemma §76.1(1) the series converges at $y$, so $y \in S$ and $y > R$, contradicting that $R$ is an upper bound.)
+> **$|x| > R$.** Then $x \notin S$, so $\sum c_n x^n$ diverges. (Stewart states this directly; here is why: if $x \in S$, pick $y$ with $R < y < |x|$. By [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) the series converges at $y$, so $y \in S$ and $y > R$, contradicting that $R$ is an upper bound.)
 >
-> **$|x| < R$.** Then $|x|$ is not an upper bound for $S$, so there is $b \in S$ with $b > |x|$. Since $b \in S$, $\sum c_n b^n$ converges, so by Lemma §76.1(1) $\sum c_n x^n$ converges.
+> **$|x| < R$.** Then $|x|$ is not an upper bound for $S$, so there is $b \in S$ with $b > |x|$. Since $b \in S$, $\sum c_n b^n$ converges, so by [[§76 Power Series#^lem-76-1|Lemma §76.1]](1) $\sum c_n x^n$ converges.
 
 ^pf-76-2
 
-*Uses:* [[§76 Power Series#^lem-76-1|§76.1]], [[§69 Sequences#^def-69-7|Def. §69.7]]
+*Uses:* [[§76 Power Series#^lem-76-1|§76.1]], [[§69 Sequences#^def-69-new1|Def. §69.8]]
 
 > [!theorem] Theorem §76.3: Three Possibilities for a Power Series
 > For a power series $\sum_{n=0}^{\infty} c_n (x - a)^n$, there are only three possibilities:
@@ -174,7 +174,7 @@ In these examples the set where the series converges is an interval: finite for 
 ^thm-76-3
 
 > [!proof]+ Proof
-> Make the change of variable $u = x - a$. The power series becomes $\sum c_n u^n$, and Lemma §76.2 applies to it. In case (iii) we have convergence for $|u| < R$ and divergence for $|u| > R$, that is, convergence for $|x - a| < R$ and divergence for $|x - a| > R$. Cases (i) and (ii) translate in the same way ($u = 0$ means $x = a$).
+> Make the change of variable $u = x - a$. The power series becomes $\sum c_n u^n$, and [[§76 Power Series#^lem-76-2|Lemma §76.2]] applies to it. In case (iii) we have convergence for $|u| < R$ and divergence for $|u| > R$, that is, convergence for $|x - a| < R$ and divergence for $|x - a| > R$. Cases (i) and (ii) translate in the same way ($u = 0$ means $x = a$).
 
 ^pf-76-3
 
@@ -185,7 +185,7 @@ In these examples the set where the series converges is an interval: finite for 
 > - Complex-variables version: [[§69★ Absolute and Uniform Convergence of Power Series#^cor-69-2|342 Cor. §69.2]] (the interval of convergence becomes a disk, inside the circle of convergence).
 
 > [!definition] Definition §76.3: Radius of Convergence
-> The number $R$ in case (iii) of Theorem §76.3 is the **radius of convergence** of the power series. By convention, $R = 0$ in case (i) and $R = \infty$ in case (ii).
+> The number $R$ in case (iii) of [[§76 Power Series#^thm-76-3|Theorem §76.3]] is the **radius of convergence** of the power series. By convention, $R = 0$ in case (i) and $R = \infty$ in case (ii).
 >
 > *Stewart: 11.8 (text)*
 
@@ -203,7 +203,7 @@ In these examples the set where the series converges is an interval: finite for 
 ^def-76-new1
 
 ![[m233-76-1.svg]]
-*Case (iii) of Theorem §76.3. Inside the interval $|x - a| < R$ (blue) the series converges, and in fact converges absolutely (proof of Lemma §76.1). Outside it (red) the series diverges. At the two endpoints $a \pm R$ (orange) the theorem says nothing, and each endpoint must be tested separately.*
+*Case (iii) of [[§76 Power Series#^thm-76-3|Theorem §76.3]]. Inside the interval $|x - a| < R$ (blue) the series converges, and in fact converges absolutely (proof of [[§76 Power Series#^lem-76-1|Lemma §76.1]]). Outside it (red) the series diverges. At the two endpoints $a \pm R$ (orange) the theorem says nothing, and each endpoint must be tested separately.*
 
 > [!remark] Remark: Method — Finding the Interval of Convergence
 > 1. Apply the Ratio Test (sometimes the Root Test) to $\sum |a_n|$, where $a_n = c_n (x - a)^n$ is the full term. The limit has the form $K |x - a|$ (or $0$, or $\infty$ for $x \ne a$).
@@ -214,9 +214,9 @@ In these examples the set where the series converges is an interval: finite for 
 > | Series | Radius of convergence | Interval of convergence |
 > |---|---|---|
 > | $\sum_{n=0}^{\infty} x^n$ (geometric) | $R = 1$ | $(-1, 1)$ |
-> | $\sum_{n=1}^{\infty} (x - 3)^n / n$ (Example §76.1) | $R = 1$ | $[2, 4)$ |
-> | $\sum_{n=0}^{\infty} n!\,x^n$ (Example §76.2(a)) | $R = 0$ | $\{0\}$ |
-> | $\sum_{n=0}^{\infty} x^n / (2n)!$ (Example §76.2(b)) | $R = \infty$ | $(-\infty, \infty)$ |
+> | $\sum_{n=1}^{\infty} (x - 3)^n / n$ ([[§76 Power Series#^ex-76-1|Example §76.1]]) | $R = 1$ | $[2, 4)$ |
+> | $\sum_{n=0}^{\infty} n!\,x^n$ ([[§76 Power Series#^ex-76-2|Example §76.2]](a)) | $R = 0$ | $\{0\}$ |
+> | $\sum_{n=0}^{\infty} x^n / (2n)!$ ([[§76 Power Series#^ex-76-2|Example §76.2]](b)) | $R = \infty$ | $(-\infty, \infty)$ |
 >
 > *Stewart: 11.8 (text, Note and table)*
 

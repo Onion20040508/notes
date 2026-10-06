@@ -51,7 +51,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 > [!remark] Remark: Reading the Definition
 > - **In words.** $|x - a|$ is the distance from $x$ to $a$ and $|f(x) - L|$ is the distance from $f(x)$ to $L$. So the definition says: the distance from $f(x)$ to $L$ can be made arbitrarily small by requiring the distance from $x$ to $a$ to be sufficiently small (but not $0$).
 > - **On the graph.** Draw the horizontal lines $y = L - \varepsilon$ and $y = L + \varepsilon$. The definition asks for a $\delta > 0$ such that over the interval $(a - \delta, a + \delta)$, with $x = a$ left out, the graph of $f$ stays between the two lines. Once such a $\delta$ is found, every smaller $\delta$ works too. A smaller $\varepsilon$ usually requires a smaller $\delta$.
-> - **As a game.** Person A names a tolerance $\varepsilon$ (say $0.01$); person B must answer with a $\delta$ such that $0 < |x - a| < \delta$ forces $|f(x) - L| < \varepsilon$. A then names a smaller $\varepsilon$ (say $0.0001$), and B must answer again. $\lim_{x \to a} f(x) = L$ means that B can always win, however small A makes $\varepsilon$. A single $\varepsilon$, such as the one in Example §9.1 below, illustrates the definition but proves nothing.
+> - **As a game.** Person A names a tolerance $\varepsilon$ (say $0.01$); person B must answer with a $\delta$ such that $0 < |x - a| < \delta$ forces $|f(x) - L| < \varepsilon$. A then names a smaller $\varepsilon$ (say $0.0001$), and B must answer again. $\lim_{x \to a} f(x) = L$ means that B can always win, however small A makes $\varepsilon$. A single $\varepsilon$, such as the one in [[§9 The Precise Definition of a Limit#^ex-9-1|Example §9.1]] below, illustrates the definition but proves nothing.
 
 ^rem-9-1
 
@@ -65,7 +65,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 > \text{if} \quad |x - 1| < \delta \quad \text{then} \quad |(x^3 - 5x + 6) - 2| < 0.2 ,
 > $$
 >
-> that is, a $\delta$ that corresponds to $\varepsilon = 0.2$ in Definition §9.1 with $a = 1$, $L = 2$.
+> that is, a $\delta$ that corresponds to $\varepsilon = 0.2$ in [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]] with $a = 1$, $L = 2$.
 >
 > The inequality $|(x^3 - 5x + 6) - 2| < 0.2$ means $1.8 < x^3 - 5x + 6 < 2.2$: the curve must lie between the lines $y = 1.8$ and $y = 2.2$. Near $(1, 2)$ the curve is falling. It meets $y = 2.2$ at $x \approx 0.911$ and $y = 1.8$ at $x \approx 1.124$. Rounding toward $1$ to be safe,
 >
@@ -88,10 +88,10 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 ^ex-9-1
 
 > [!remark] Remark: Method — Proving a Limit from the Definition
-> To prove $\lim_{x \to a} f(x) = L$ from Definition §9.1:
+> To prove $\lim_{x \to a} f(x) = L$ from [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]:
 > 1. **Guess $\delta$ (scratch work).** Let $\varepsilon > 0$ be given. Simplify $|f(x) - L|$ until it shows a factor $|x - a|$, say $|f(x) - L| = |x - a| \cdot |q(x)|$.
-> 2. If $q$ is a constant $C$, take $\delta = \varepsilon / C$ (Example §9.2).
-> 3. If $q(x)$ varies, bound it near $a$ first: restrict to $|x - a| < 1$ (or some other fixed distance), find a constant $C$ with $|q(x)| < C$ there, and take $\delta = \min\{1, \varepsilon / C\}$ (Example §9.3).
+> 2. If $q$ is a constant $C$, take $\delta = \varepsilon / C$ ([[§9 The Precise Definition of a Limit#^ex-9-2|Example §9.2]]).
+> 3. If $q(x)$ varies, bound it near $a$ first: restrict to $|x - a| < 1$ (or some other fixed distance), find a constant $C$ with $|q(x)| < C$ there, and take $\delta = \min\{1, \varepsilon / C\}$ ([[§9 The Precise Definition of a Limit#^ex-9-3|Example §9.3]]).
 > 4. **Prove that $\delta$ works.** Start again from "Given $\varepsilon > 0$, let $\delta = \ldots$. If $0 < |x - a| < \delta$, then …" and derive $|f(x) - L| < \varepsilon$ step by step.
 >
 > The scratch work of steps 1–3 runs backward from the conclusion; only step 4 is the proof. This two-stage pattern, an intelligent guess followed by a proof that the guess is right, is typical of much of mathematics.
@@ -115,7 +115,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 > |(4x - 5) - 7| = |4x - 12| = 4|x - 3| < 4\delta = 4 \cdot \frac{\varepsilon}{4} = \varepsilon .
 > $$
 >
-> So $0 < |x - 3| < \delta$ implies $|(4x - 5) - 7| < \varepsilon$, and by Definition §9.1, $\lim_{x \to 3} (4x - 5) = 7$. On the graph: the steep line $y = 4x - 5$ stays between $y = 7 - \varepsilon$ and $y = 7 + \varepsilon$ over the interval $(3 - \frac{\varepsilon}{4}, 3 + \frac{\varepsilon}{4})$, a window four times narrower than the band.
+> So $0 < |x - 3| < \delta$ implies $|(4x - 5) - 7| < \varepsilon$, and by [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]], $\lim_{x \to 3} (4x - 5) = 7$. On the graph: the steep line $y = 4x - 5$ stays between $y = 7 - \varepsilon$ and $y = 7 + \varepsilon$ over the interval $(3 - \frac{\varepsilon}{4}, 3 + \frac{\varepsilon}{4})$, a window four times narrower than the band.
 >
 > *Stewart: Example 2.4.2*
 
@@ -139,7 +139,7 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 ^ex-9-3
 
 ![[m233-9-1.svg]]
-*Example §9.3 with $\varepsilon = 2$. The graph of $y = x^2$ (blue) must stay in the band $7 < y < 11$ (shaded). It does so exactly for $\sqrt7 < x < \sqrt{11}$ (dashed), and the window $|x - 3| < \delta = \min\{1, \frac27\} = \frac27$ (red box) lies inside that interval, so over the window the graph leaves the box only through its sides. The best possible $\delta$ here is $\sqrt{11} - 3 \approx 0.317$, slightly more than $\frac27 \approx 0.286$: the estimate $|x + 3| < 7$ costs little.*
+*[[§9 The Precise Definition of a Limit#^ex-9-3|Example §9.3]] with $\varepsilon = 2$. The graph of $y = x^2$ (blue) must stay in the band $7 < y < 11$ (shaded). It does so exactly for $\sqrt7 < x < \sqrt{11}$ (dashed), and the window $|x - 3| < \delta = \min\{1, \frac27\} = \frac27$ (red box) lies inside that interval, so over the window the graph leaves the box only through its sides. The best possible $\delta$ here is $\sqrt{11} - 3 \approx 0.317$, slightly more than $\frac27 \approx 0.286$: the estimate $|x + 3| < 7$ costs little.*
 
 ## One-Sided Limits
 
@@ -156,16 +156,16 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 > \text{if} \quad a < x < a + \delta \quad \text{then} \quad |f(x) - L| < \varepsilon .
 > $$
 >
-> These are Definition §9.1 with $x$ restricted to the left half $(a - \delta, a)$ or the right half $(a, a + \delta)$ of the interval $(a - \delta, a + \delta)$. They make [[§7 The Limit of a Function#^def-7-2|Definition §7.2]] precise.
+> These are [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]] with $x$ restricted to the left half $(a - \delta, a)$ or the right half $(a, a + \delta)$ of the interval $(a - \delta, a + \delta)$. They make [[§7 The Limit of a Function#^def-7-2|Definition §7.2]] precise.
 >
 > *Stewart: 2.4, Definitions 3 and 4*
 
 ^def-9-2
 
-With Definitions §9.1 and §9.2, the statement that a limit exists exactly when both one-sided limits exist and are equal becomes a theorem with a proof: [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]].
+With Definitions [[§9 The Precise Definition of a Limit#^def-9-1|§9.1]] and [[§9 The Precise Definition of a Limit#^def-9-2|§9.2]], the statement that a limit exists exactly when both one-sided limits exist and are equal becomes a theorem with a proof: [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]].
 
 > [!example] Example §9.4: The Square Root at 0
-> Use Definition §9.2 to prove that $\displaystyle\lim_{x \to 0^+} \sqrt{x} = 0$.
+> Use [[§9 The Precise Definition of a Limit#^def-9-2|Definition §9.2]] to prove that $\displaystyle\lim_{x \to 0^+} \sqrt{x} = 0$.
 >
 > **1. Guessing $\delta$.** Let $\varepsilon > 0$. Here $a = 0$ and $L = 0$, so we want $\delta$ such that $0 < x < \delta$ implies $|\sqrt{x} - 0| < \varepsilon$, that is, $\sqrt{x} < \varepsilon$. Squaring (both sides are non-negative), this says $x < \varepsilon^2$. This suggests $\delta = \varepsilon^2$.
 >
@@ -175,7 +175,7 @@ With Definitions §9.1 and §9.2, the statement that a limit exists exactly when
 > \sqrt{x} < \sqrt{\delta} = \sqrt{\varepsilon^2} = \varepsilon , \qquad\text{so}\qquad |\sqrt{x} - 0| < \varepsilon .
 > $$
 >
-> By Definition §9.2, $\lim_{x \to 0^+} \sqrt{x} = 0$. (Only a right-hand limit makes sense here: $\sqrt{x}$ is not defined for $x < 0$.)
+> By [[§9 The Precise Definition of a Limit#^def-9-2|Definition §9.2]], $\lim_{x \to 0^+} \sqrt{x} = 0$. (Only a right-hand limit makes sense here: $\sqrt{x}$ is not defined for $x < 0$.)
 >
 > *Stewart: Example 2.4.4*
 
@@ -183,7 +183,7 @@ With Definitions §9.1 and §9.2, the statement that a limit exists exactly when
 
 ## The Limit Laws
 
-As the examples show, proving limits directly from the definition takes some ingenuity, and for a function such as $f(x) = (6x^2 - 8x + 9)/(2x^2 - 1)$ it would take a great deal. This is unnecessary: the Limit Laws ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorems §8.1]] and [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]]) are proved once from Definition §9.1, and then limits of complicated functions follow rigorously from the laws, without going back to the definition. Stewart proves the Sum Law here: if $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then $\lim_{x \to a} [f(x) + g(x)] = L + M$, by making $|f(x) - L|$ and $|g(x) - M|$ each less than $\varepsilon/2$ and adding them with the Triangle Inequality. This is the proof of Law 1 given in [[§8 Calculating Limits Using the Limit Laws#^pf-8-1|the proof of Theorem §8.1]], together with the proofs of Laws 2–5 from Stewart's Appendix F.
+As the examples show, proving limits directly from the definition takes some ingenuity, and for a function such as $f(x) = (6x^2 - 8x + 9)/(2x^2 - 1)$ it would take a great deal. This is unnecessary: the Limit Laws ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorems §8.1]] and [[§8 Calculating Limits Using the Limit Laws#^thm-8-2|§8.2]]) are proved once from [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]], and then limits of complicated functions follow rigorously from the laws, without going back to the definition. Stewart proves the Sum Law here: if $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then $\lim_{x \to a} [f(x) + g(x)] = L + M$, by making $|f(x) - L|$ and $|g(x) - M|$ each less than $\varepsilon/2$ and adding them with the Triangle Inequality. This is the proof of Law 1 given in [[§8 Calculating Limits Using the Limit Laws#^pf-8-1|the proof of Theorem §8.1]], together with the proofs of Laws 2–5 from Stewart's Appendix F.
 
 ## Infinite Limits
 
@@ -210,7 +210,7 @@ As the examples show, proving limits directly from the definition takes some ing
 > - Rigorous treatment: the case $L = \pm\infty$ of [[§20 Limits of Functions#^rem-20-1|451 Remark: The epsilon-delta version]]; the sequence analogue is [[§9 Limit Theorems for Sequences#^def-9-1|451 Def. §9.1]] (for every $M$ there is $N$ with $s_n > M$ for $n > N$).
 
 > [!example] Example §9.5: An Infinite Limit
-> Use Definition §9.3 to prove that $\displaystyle\lim_{x \to 0} \frac{1}{x^2} = \infty$.
+> Use [[§9 The Precise Definition of a Limit#^def-9-3|Definition §9.3]] to prove that $\displaystyle\lim_{x \to 0} \frac{1}{x^2} = \infty$.
 >
 > Let $M > 0$ be given. We want $\delta$ such that $0 < |x| < \delta$ implies $1/x^2 > M$. For $x \ne 0$,
 >
@@ -237,7 +237,7 @@ As the examples show, proving limits directly from the definition takes some ing
 > \text{if} \quad 0 < |x - a| < \delta \quad \text{then} \quad f(x) < N .
 > $$
 >
-> This makes the first part of [[§7 The Limit of a Function#^def-7-4|Definition §7.4]] precise. The one-sided infinite limits are defined in the same way as in Definitions §9.3 and §9.4, with $0 < |x - a| < \delta$ replaced by $a - \delta < x < a$ (for $x \to a^-$) or $a < x < a + \delta$ (for $x \to a^+$), as in Definition §9.2.
+> This makes the first part of [[§7 The Limit of a Function#^def-7-4|Definition §7.4]] precise. The one-sided infinite limits are defined in the same way as in Definitions [[§9 The Precise Definition of a Limit#^def-9-3|§9.3]] and [[§9 The Precise Definition of a Limit#^def-9-4|§9.4]], with $0 < |x - a| < \delta$ replaced by $a - \delta < x < a$ (for $x \to a^-$) or $a < x < a + \delta$ (for $x \to a^+$), as in [[§9 The Precise Definition of a Limit#^def-9-2|Definition §9.2]].
 >
 > *Stewart: 2.4, Definition 7*
 

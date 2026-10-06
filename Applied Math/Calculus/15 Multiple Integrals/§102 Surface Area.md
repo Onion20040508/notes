@@ -64,7 +64,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 > \Delta T_{ij} = |\mathbf a \times \mathbf b| = \sqrt{[f_x(x_i, y_j)]^2 + [f_y(x_i, y_j)]^2 + 1}\,\Delta A .
 > $$
 >
-> **The limit.** By Definition §102.1,
+> **The limit.** By [[§102 Surface Area#^def-102-1|Definition §102.1]],
 >
 > $$
 > A(S) = \lim_{m, n \to \infty} \sum_{i=1}^m \sum_{j=1}^n \sqrt{[f_x(x_i, y_j)]^2 + [f_y(x_i, y_j)]^2 + 1}\,\Delta A .
@@ -77,7 +77,7 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 *Uses:* [[§102 Surface Area#^def-102-1|Def. §102.1]], [[§83 The Cross Product#^cor-83-6|§83.6]] (area of a parallelogram), [[§92 Partial Derivatives#^rem-92-1|§92, Remark]] (partial derivatives as slopes), [[§98 Double Integrals Over Rectangles#^def-98-2|Def. §98.2]], [[§98 Double Integrals Over Rectangles#^thm-98-1|§98.1]], [[§99 Double Integrals Over General Regions#^def-99-1|Def. §99.1]] (general regions)
 
 ![[m233-102-1.svg]]
-*The tangent parallelogram of Definition §102.1. Above the small rectangle $R_{ij}$ (green) the surface $S$ (blue) is approximated by the piece of its tangent plane at $P_{ij}$ (red), spanned by $\mathbf a = \langle \Delta x, 0, f_x\Delta x \rangle$ and $\mathbf b = \langle 0, \Delta y, f_y\Delta y \rangle$. Its area $|\mathbf a \times \mathbf b| = \sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$ exceeds $\Delta A$ by the factor that measures how steeply the surface is tilted.*
+*The tangent parallelogram of [[§102 Surface Area#^def-102-1|Definition §102.1]]. Above the small rectangle $R_{ij}$ (green) the surface $S$ (blue) is approximated by the piece of its tangent plane at $P_{ij}$ (red), spanned by $\mathbf a = \langle \Delta x, 0, f_x\Delta x \rangle$ and $\mathbf b = \langle 0, \Delta y, f_y\Delta y \rangle$. Its area $|\mathbf a \times \mathbf b| = \sqrt{f_x^2 + f_y^2 + 1}\,\Delta A$ exceeds $\Delta A$ by the factor that measures how steeply the surface is tilted.*
 
 > [!remark]- Connections
 > - Rigorous treatment for parametrized surfaces: [[§18 Surface Integrals#^thm-18-1|452 Thm. §18.1]] (area element $\sqrt{\det G}\,du\,dv = |\mathbf X_u \times \mathbf X_v|\,du\,dv$); Formula 2 is the case $\mathbf X(x, y) = (x, y, f(x, y))$, with $\mathbf X_x \times \mathbf X_y = \langle -f_x, -f_y, 1 \rangle$. Hub: [[Surface Area via the Gram Matrix]].
@@ -122,6 +122,8 @@ The area of a surface $z = f(x, y)$ is computed like arc length one dimension do
 > *Stewart: Example 15.5.2*
 
 ^ex-102-2
+
+*Chain: the same paraboloid later in [[§112 Parametric Surfaces and Their Areas#^ex-112-5|Chapter 16]].*
 
 > [!example] Example §102.3: A Surface over a Region Bounded by a Quintic
 > Find the surface area of the part of the graph of $z = 3 + 2y + x^4/4$ that lies over the region $R$ in the $xy$-plane bounded by $y = x^5$, $x = 1$ and the $x$-axis.

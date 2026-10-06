@@ -14,6 +14,7 @@ tags: [chapter, topology]
 ## Sections
 - [[§22 Homotopy of Paths]]
 - [[§23 The Fundamental Group]]
+- [[§23a The Punctured Plane and the Torus]]
 
 ## Central results
 - [[Properties of Path Concatenation]] (§22.6)

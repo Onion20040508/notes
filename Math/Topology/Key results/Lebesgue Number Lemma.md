@@ -14,9 +14,10 @@ tags: [topology, hub]
 - (only definitions)
 
 ## Used in (Topology)
-- [[§24 Covering Spaces#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
-- [[§24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
-- [[§24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
+- [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2: Equivalence for Metrizable Spaces]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^ex-24-5|Example §24.5: Lifting Loops on S¹ to Paths in ℝ]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
 - [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
 - [[§29 The Seifert–van Kampen Theorem#^thm-29-1|Theorem §29.1: Seifert-van Kampen Theorem (Munkres 70.2)]]
 

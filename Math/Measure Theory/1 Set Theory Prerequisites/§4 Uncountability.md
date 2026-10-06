@@ -91,14 +91,6 @@ tags: [measure-theory, math551]
 
 *Uses:* [[§4 Uncountability#^ex-4-1|Ex. §4.1]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^def-1-7|Def. §1.7]]
 
-> [!remark] Remark
-> The representation is not unique. For example, $\frac{1}{2} = 0.1000\ldots = 0.0111\ldots$.
-
-^rem-4-2
-
-![[m551-4-2.svg]]
-*Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $D$ of dyadic rationals (and the eventually constant sequences $Y$, $Y'$) is set aside in the proof.*
-
 > [!proof]+ Proof (continued)
 > The set $D = \{\frac{k}{2^n} \mid n \in \mathbb{N},\ k = 0, 1, \ldots, 2^n\}$ of dyadic rationals in $[0,1]$ is countable (it's a [[§3 Countability of Rationals and Unions#^prop-3-1|countable union of finite sets]]).
 >
@@ -114,6 +106,14 @@ tags: [measure-theory, math551]
 > Thus $[0,1] \setminus D$, and hence $[0,1]$, is uncountable.
 
 ^pf-ex-4-2-c
+
+> [!remark] Remark
+> The representation is not unique. For example, $\frac{1}{2} = 0.1000\ldots = 0.0111\ldots$.
+
+^rem-4-2
+
+![[m551-4-2.svg]]
+*Binary digits as successive halvings: $a_k$ records whether $x$ lies in the left ($0$) or right ($1$) half of the current dyadic interval, and the blue intervals shrink to $x = 0.7 = 0.1011\ldots$. A dyadic rational such as $\tfrac12$ (red) is an endpoint shared by two halves, so it has two expansions, $0.1000\ldots$ and $0.0111\ldots$ — the reason the countable set $D$ of dyadic rationals (and the eventually constant sequences $Y$, $Y'$) is set aside in the proof.*
 
 > [!remark]- Connections
 > - MATH 451 states “$\mathbb{R}$ is uncountable” when proving [[§2 The Set ℚ of Rational Numbers#^thm-2-7|Existence of Transcendental Numbers (451 §2.7)]].

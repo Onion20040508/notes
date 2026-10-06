@@ -216,6 +216,33 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 
 *Uses:* [[§119 Trigonometry#^def-119-2|Def. §119.2]], [[§119 Trigonometry#^def-119-4|Def. §119.4]]
 
+The proof of the addition formulas uses the Law of Cosines, so it comes first. Label the vertices of a triangle $A$, $B$, $C$, use the same letters for the angles there, and let $a$, $b$, $c$ be the lengths of the opposite sides.
+
+> [!theorem] Theorem §119.11: Law of Cosines
+> In any triangle $ABC$,
+>
+> $$
+> a^2 = b^2 + c^2 - 2bc\cos A, \qquad b^2 = a^2 + c^2 - 2ac\cos B, \qquad c^2 = a^2 + b^2 - 2ab\cos C .
+> $$
+>
+> *Stewart: Appendix D, Law of Cosines*
+
+^thm-119-11
+
+> [!proof]+ Proof
+> We prove the first formula; the others follow by relabeling. Place the triangle with $A$ at the origin and $B$ at $(c, 0)$ on the positive $x$-axis. The side $AC$ has length $b$ and makes the angle $A$ with the positive $x$-axis, so by (5) $C = (b\cos A, b\sin A)$, whether $A$ is acute or obtuse. By the Distance Formula and (8),
+>
+> $$
+> a^2 = (b\cos A - c)^2 + (b\sin A - 0)^2 = b^2\cos^2 A - 2bc\cos A + c^2 + b^2\sin^2 A = b^2(\cos^2 A + \sin^2 A) - 2bc\cos A + c^2 = b^2 + c^2 - 2bc\cos A .
+> $$
+
+^pf-119-11
+
+*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]], [[§119 Trigonometry#^thm-119-4|§119.4]], [[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]
+
+> [!remark]- Connections
+> - In vector form, $|\mathbf{u} - \mathbf{v}|^2 = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\,\mathbf{u} \cdot \mathbf{v}$: it is how Stewart proves $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$ ([[§82 The Dot Product#^thm-82-2|Theorem §82.2]]); the abstract version is the expansion of $\|u - v\|^2$ in an inner product space (Pythagorean theorem, [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]]).
+
 > [!theorem] Theorem §119.6: Addition Formulas
 > $$
 > \sin(x + y) = \sin x\cos y + \cos x\sin y \qquad (13a)
@@ -234,7 +261,7 @@ For instance, an equilateral triangle with side $a$ has all angles $\pi/3$, so i
 > [!proof]- Proof
 > Stewart outlines the proof in Exercises 89–91; here it is in full.
 >
-> **Step 1: $\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$** (Exercise 89). Let $A = (\cos\alpha, \sin\alpha)$ and $B = (\cos\beta, \sin\beta)$, the points of the unit circle at angles $\alpha$ and $\beta$, and let $c = |AB|$. The angle $\gamma$ of the triangle $AOB$ at $O$ is $\alpha - \beta$ up to sign and multiples of $2\pi$: $\gamma = \pm(\alpha - \beta) + 2\pi k$, so $\cos\gamma = \cos(\alpha - \beta)$ by (11b) and (12) (Theorem §119.5). If $A$, $O$, $B$ form a triangle, the Law of Cosines ([[§119 Trigonometry#^thm-119-11|Theorem §119.11]] below; its proof uses only (5), (8) and the Distance Formula, never the addition formulas, so the argument is not circular) with $|OA| = |OB| = 1$ gives
+> **Step 1: $\cos(\alpha - \beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$** (Exercise 89). Let $A = (\cos\alpha, \sin\alpha)$ and $B = (\cos\beta, \sin\beta)$, the points of the unit circle at angles $\alpha$ and $\beta$, and let $c = |AB|$. The angle $\gamma$ of the triangle $AOB$ at $O$ is $\alpha - \beta$ up to sign and multiples of $2\pi$: $\gamma = \pm(\alpha - \beta) + 2\pi k$, so $\cos\gamma = \cos(\alpha - \beta)$ by (11b) and (12) ([[§119 Trigonometry#^thm-119-5|Theorem §119.5]]). If $A$, $O$, $B$ form a triangle, the Law of Cosines ([[§119 Trigonometry#^thm-119-11|Theorem §119.11]] above; its proof uses only (5), (8) and the Distance Formula, never the addition formulas, so the argument is not circular) with $|OA| = |OB| = 1$ gives
 >
 > $$
 > c^2 = 1 + 1 - 2\cos(\alpha - \beta) = 2 - 2\cos(\alpha - \beta) .
@@ -382,30 +409,7 @@ Label the vertices of a triangle $A$, $B$, $C$, use the same letters for the ang
 
 *Uses:* [[§119 Trigonometry#^thm-119-2|§119.2]]
 
-> [!theorem] Theorem §119.11: Law of Cosines
-> In any triangle $ABC$,
->
-> $$
-> a^2 = b^2 + c^2 - 2bc\cos A, \qquad b^2 = a^2 + c^2 - 2ac\cos B, \qquad c^2 = a^2 + b^2 - 2ab\cos C .
-> $$
->
-> *Stewart: Appendix D, Law of Cosines*
-
-^thm-119-11
-
-> [!proof]+ Proof
-> We prove the first formula; the others follow by relabeling. Place the triangle with $A$ at the origin and $B$ at $(c, 0)$ on the positive $x$-axis. The side $AC$ has length $b$ and makes the angle $A$ with the positive $x$-axis, so by (5) $C = (b\cos A, b\sin A)$, whether $A$ is acute or obtuse. By the Distance Formula and (8),
->
-> $$
-> a^2 = (b\cos A - c)^2 + (b\sin A - 0)^2 = b^2\cos^2 A - 2bc\cos A + c^2 + b^2\sin^2 A = b^2(\cos^2 A + \sin^2 A) - 2bc\cos A + c^2 = b^2 + c^2 - 2bc\cos A .
-> $$
-
-^pf-119-11
-
-*Uses:* [[§119 Trigonometry#^def-119-4|Def. §119.4]], [[§119 Trigonometry#^thm-119-4|§119.4]], [[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]
-
-> [!remark]- Connections
-> - In vector form, $|\mathbf{u} - \mathbf{v}|^2 = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2\,\mathbf{u} \cdot \mathbf{v}$: it is how Stewart proves $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$ ([[§82 The Dot Product#^thm-82-2|Theorem §82.2]]); the abstract version is the expansion of $\|u - v\|^2$ in an inner product space (Pythagorean theorem, [[§19 Inner Products and Norms#^ladr-6-12|LADR 6.12]]).
+The Law of Cosines, [[§119 Trigonometry#^thm-119-11|Theorem §119.11]], is stated and proved above, before the addition formulas, whose proof uses it.
 
 > [!theorem] Theorem §119.12: Heron's Formula
 > The area of any triangle $ABC$ is

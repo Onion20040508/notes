@@ -15,6 +15,7 @@ tags: [chapter, topology]
 - [[§18 Countability Axioms]]
 - [[§19 Separation Axioms]]
 - [[§20 Normal Spaces]]
+- [[§20a The Lower Limit Topology, ℝ^ω and Discrete Subspaces]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

@@ -174,13 +174,13 @@ The speedometer of a car in city traffic shows a speed that keeps changing, yet 
 ^ex-6-3
 
 > [!remark] Remark: Velocity Is the Slope of a Tangent Line
-> The tangent problem and the velocity problem are the same problem. On the graph of the position function $s = 4.9t^2$, take $P(5, 4.9(5)^2)$ and $Q(5 + h, 4.9(5 + h)^2)$. The slope of the secant line $PQ$ (Definition §6.1) is
+> The tangent problem and the velocity problem are the same problem. On the graph of the position function $s = 4.9t^2$, take $P(5, 4.9(5)^2)$ and $Q(5 + h, 4.9(5 + h)^2)$. The slope of the secant line $PQ$ ([[§6 The Tangent and Velocity Problems#^def-6-1|Definition §6.1]]) is
 >
 > $$
 > m_{PQ} = \frac{4.9(5 + h)^2 - 4.9(5)^2}{(5 + h) - 5} ,
 > $$
 >
-> which is exactly the average velocity over the interval $[5, 5 + h]$ (Definition §6.3). Letting $h \to 0$: the velocity at $t = 5$, the limit of the average velocities, equals the slope of the tangent line at $P$, the limit of the secant slopes (Definition §6.2). In general,
+> which is exactly the average velocity over the interval $[5, 5 + h]$ ([[§6 The Tangent and Velocity Problems#^def-6-3|Definition §6.3]]). Letting $h \to 0$: the velocity at $t = 5$, the limit of the average velocities, equals the slope of the tangent line at $P$, the limit of the secant slopes ([[§6 The Tangent and Velocity Problems#^def-6-2|Definition §6.2]]). In general,
 >
 > $$
 > \text{slope of secant line} = \text{average velocity}, \qquad \text{slope of tangent line} = \text{instantaneous velocity}.

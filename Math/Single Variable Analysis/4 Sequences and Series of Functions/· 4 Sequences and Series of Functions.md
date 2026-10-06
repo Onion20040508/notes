@@ -16,6 +16,7 @@ tags: [chapter, real-analysis]
 - [[§25 More on Uniform Convergence]]
 - [[§26 Differentiation and Integration of Power Series]]
 - [[§27 Weierstrass's Approximation Theorem (Not Covered)]]
+- [[§27a The Power Sequence xⁿ]]
 
 ## Load-bearing results
 - [[§25 More on Uniform Convergence#^thm-25-3|Theorem §25.3: Weierstrass M-Test]]: 3 later results depend on it

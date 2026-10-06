@@ -71,10 +71,10 @@ The answer is correct, as the Chain Rule confirms: $\frac{d}{dx}\big[\tfrac23 (1
 > - Rigorous treatment: [[§15 Multivariable Integration#^lem-15-13|452 Lemma §15.13]] proves the definite form from FTC and the Chain Rule for a $C^1$ bijection $g$ with $g' \ne 0$, written with $|g'(t)|$ so that the limits always run upward. It is the one-variable case of the change of variables formula for multiple integrals ([[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]]; [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]]).
 
 > [!remark] Remark: Method — Choosing a Substitution
-> The idea is to replace a complicated integral by a simpler one, as in Example §38.1, where $\int x^3\cos(x^4 + 2)\,dx$ becomes $\frac14 \int \cos u\,du$.
+> The idea is to replace a complicated integral by a simpler one, as in [[§38 The Substitution Rule#^ex-38-1|Example §38.1]], where $\int x^3\cos(x^4 + 2)\,dx$ becomes $\frac14 \int \cos u\,du$.
 > 1. Try to choose $u$ to be some function in the integrand whose differential also occurs, apart from a constant factor.
 > 2. If that is not possible, try choosing $u$ to be some complicated part of the integrand, perhaps the inner function of a composite function.
-> 3. Compute $du = g'(x)\,dx$, solve for the part of the integrand it replaces (for example $x^3\,dx = \frac14 du$), and rewrite the *whole* integrand in terms of $u$. If some $x$ is left over, express it through $u$ (Example §38.2).
+> 3. Compute $du = g'(x)\,dx$, solve for the part of the integrand it replaces (for example $x^3\,dx = \frac14 du$), and rewrite the *whole* integrand in terms of $u$. If some $x$ is left over, express it through $u$ ([[§38 The Substitution Rule#^ex-38-2|Example §38.2]]).
 > 4. Integrate with respect to $u$, then return to the original variable $x$.
 > 5. Check the answer by differentiating it. Finding the right substitution is a bit of an art: if the first guess does not work, try another.
 
@@ -210,7 +210,7 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 > \int_0^4 \sqrt{2x + 1}\,dx = \tfrac13 (2x + 1)^{3/2} \Big]_0^4 = \tfrac13 (9)^{3/2} - \tfrac13 (1)^{3/2} = \tfrac13 (27 - 1) = \tfrac{26}{3} .
 > $$
 >
-> *Changing the limits (Theorem §38.3).* With $u = 2x + 1$, $dx = \frac12 du$: when $x = 0$, $u = 1$, and when $x = 4$, $u = 9$. So
+> *Changing the limits ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]).* With $u = 2x + 1$, $dx = \frac12 du$: when $x = 0$, $u = 1$, and when $x = 4$, $u = 9$. So
 >
 > $$
 > \int_0^4 \sqrt{2x + 1}\,dx = \int_1^9 \tfrac12 \sqrt{u}\,du = \tfrac12 \cdot \tfrac23 u^{3/2} \Big]_1^9 = \tfrac13 \big(9^{3/2} - 1^{3/2}\big) = \tfrac{26}{3} .
@@ -231,7 +231,7 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 > \int_1^2 \frac{dx}{(3 - 5x)^2} = -\frac15 \int_{-2}^{-7} \frac{du}{u^2} = -\frac15 \Big[-\frac1u\Big]_{-2}^{-7} = \frac{1}{5u} \Big]_{-2}^{-7} = \frac15 \Big(-\frac17 + \frac12\Big) = \frac15 \cdot \frac{5}{14} = \frac{1}{14} .
 > $$
 >
-> The new lower limit $-2$ is larger than the upper limit $-7$; Theorem §38.3 does not mind. (The integrand is continuous on $[1, 2]$, since $3 - 5x = 0$ only at $x = \frac35$.)
+> The new lower limit $-2$ is larger than the upper limit $-7$; [[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]] does not mind. (The integrand is continuous on $[1, 2]$, since $3 - 5x = 0$ only at $x = \frac35$.)
 >
 > **(b)** Evaluate $\displaystyle\int_1^e \frac{\ln x}{x}\,dx$.
 >
@@ -251,6 +251,11 @@ A definite integral can be evaluated by substitution in two ways: find the indef
 
 Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ is **even** if $f(-x) = f(x)$ and **odd** if $f(-x) = -f(x)$ for all $x$ in its domain.
 
+> [!remark] Remark: Why It Works
+> For $f$ positive and even, the area under $y = f(x)$ from $-a$ to $0$ is the mirror image of the area from $0$ to $a$, so the total is twice the area from $0$ to $a$. For $f$ odd, the graph over $[-a, 0]$ is the graph over $[0, a]$ rotated half a turn about the origin: the area above the axis on one side equals the area below the axis on the other, and in the net area $\int_{-a}^{a} f(x)\,dx$ they cancel.
+
+^rem-38-2
+
 > [!theorem] Theorem §38.4: Integrals of Symmetric Functions
 > Suppose $f$ is continuous on $[-a, a]$.
 >
@@ -262,14 +267,6 @@ Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ 
 
 ^thm-38-4
 
-> [!remark]- Connections
-> - See also: [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|341 Thm. §7.3]] (the same statement), used to show that even functions have cosine series and odd functions sine series, [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-4|341 Thm. §7.4]].
-
-> [!remark] Remark: Why It Works
-> For $f$ positive and even, the area under $y = f(x)$ from $-a$ to $0$ is the mirror image of the area from $0$ to $a$, so the total is twice the area from $0$ to $a$. For $f$ odd, the graph over $[-a, 0]$ is the graph over $[0, a]$ rotated half a turn about the origin: the area above the axis on one side equals the area below the axis on the other, and in the net area $\int_{-a}^{a} f(x)\,dx$ they cancel.
-
-^rem-38-2
-
 > [!proof]+ Proof
 > Split the integral in two, using Property 5 ([[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]) and [[§35 The Definite Integral#^def-35-4|Definition §35.4]]:
 >
@@ -277,7 +274,7 @@ Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ 
 > \int_{-a}^{a} f(x)\,dx = \int_{-a}^{0} f(x)\,dx + \int_0^a f(x)\,dx = -\int_0^{-a} f(x)\,dx + \int_0^a f(x)\,dx . \qquad (8)
 > $$
 >
-> In the first integral on the far right substitute $u = -x$. Then $du = -dx$, and when $x = -a$, $u = a$. By Theorem §38.3,
+> In the first integral on the far right substitute $u = -x$. Then $du = -dx$, and when $x = -a$, $u = a$. By [[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]],
 >
 > $$
 > -\int_0^{-a} f(x)\,dx = -\int_0^a f(-u)\,(-du) = \int_0^a f(-u)\,du ,
@@ -300,7 +297,10 @@ Recall ([[§1 Four Ways to Represent a Function#^def-1-7|Def. §1.7]]) that $f$ 
 *Uses:* [[§35 The Definite Integral#^thm-35-5|§35.5]], [[§35 The Definite Integral#^def-35-4|Def. §35.4]], [[§38 The Substitution Rule#^thm-38-3|§38.3]]
 
 ![[m233-38-1.svg]]
-*Theorem §38.4. (a) For an even $f$ the region over $[-a, 0]$ is the mirror image of the region over $[0, a]$, so the two areas are equal. (b) For an odd $f$ the region below the axis on $[-a, 0]$ is the region above the axis on $[0, a]$ turned half a turn about the origin; in the net area the two cancel.*
+*[[§38 The Substitution Rule#^thm-38-4|Theorem §38.4]]. (a) For an even $f$ the region over $[-a, 0]$ is the mirror image of the region over $[0, a]$, so the two areas are equal. (b) For an odd $f$ the region below the axis on $[-a, 0]$ is the region above the axis on $[0, a]$ turned half a turn about the origin; in the net area the two cancel.*
+
+> [!remark]- Connections
+> - See also: [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-3|341 Thm. §7.3]] (the same statement), used to show that even functions have cosine series and odd functions sine series, [[§7 Arbitrary Period and Half-Range Expansions#^thm-7-4|341 Thm. §7.4]].
 
 > [!example] Example §38.5: Using Symmetry
 > **(a)** $f(x) = x^6 + 1$ satisfies $f(-x) = f(x)$, so it is even, and

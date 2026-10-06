@@ -100,7 +100,7 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§12 
 ^ex-20-1
 
 ![[m233-20-1.svg]]
-*Example §20.1: position $s$ (red), velocity $v$ (blue) and acceleration $a$ (green) for $0 \le t \le 5$. The particle reverses direction where $v = 0$ ($t = 1, 3$), and $a = 0$ at $t = 2$. It speeds up on the shaded intervals, where $v$ and $a$ have the same sign, and slows down on the others.*
+*[[§20 Rates of Change in the Natural and Social Sciences#^ex-20-1|Example §20.1]]: position $s$ (red), velocity $v$ (blue) and acceleration $a$ (green) for $0 \le t \le 5$. The particle reverses direction where $v = 0$ ($t = 1, 3$), and $a = 0$ at $t = 2$. It speeds up on the shaded intervals, where $v$ and $a$ have the same sign, and slows down on the others.*
 
 > [!definition] Definition §20.3: Linear Density
 > **Linear density.** Let the mass of a rod (or piece of wire), measured from its left end to the point $x$, be $m = f(x)$. The mass between $x_1$ and $x_2$ is $\Delta m = f(x_2) - f(x_1)$, and $\Delta m / \Delta x$ is the average density of that part of the rod. The **linear density** at $x_1$ is the limit of these average densities:
@@ -233,6 +233,8 @@ Other rates of change in physics include power (the rate at which work is done),
 
 ^ex-20-3
 
+*Chain:* ← [[§4 Exponential Functions#^ex-4-3|Chapter 1]]
+
 > [!example] Example §20.4: Blood Flow in an Artery
 > Model a blood vessel as a cylindrical tube of radius $R$ and length $l$. Friction at the wall makes the velocity $v$ of the blood greatest along the axis and $0$ at the wall. Poiseuille's **law of laminar flow** (1838) states
 >
@@ -304,7 +306,7 @@ Other rates of change in physics include power (the rate at which work is done),
 > C(501) - C(500) = [10{,}000 + 5(501) + 0.01(501)^2] - [10{,}000 + 5(500) + 0.01(500)^2] = 5 + 0.01(501^2 - 500^2) = 5 + 10.01 = \$15.01 ,
 > $$
 >
-> so indeed $C'(500) \approx C(501) - C(500)$. (Marginal demand, revenue and profit are taken up in Chapter 4, with optimization: [[§31 Optimization Problems#^def-31-1|Definition §31.1]].)
+> so indeed $C'(500) \approx C(501) - C(500)$. (Marginal demand, revenue and profit are taken up in Chapter 4, with optimization: [[§31 Optimization Problems#^def-31-1|Definition §31.1]], [[§31 Optimization Problems#^def-31-new1|Definition §31.1]] and [[§31 Optimization Problems#^def-31-new2|Definition §31.1]].)
 >
 > *Stewart: Example 3.7.8*
 

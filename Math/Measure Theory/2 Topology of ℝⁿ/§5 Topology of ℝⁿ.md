@@ -51,11 +51,6 @@ tags: [measure-theory, math551]
 
 ^thm-5-1
 
-> [!remark] Remark
-> This is a direct generalization of [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{R}$, which you proved in MATH 451. The idea is to apply the 1-dimensional result coordinate by coordinate, extracting subsequences iteratively.
-
-^rem-5-1
-
 > [!proof]+ Proof
 > Write each element of the sequence as $x_k = (x_k^{(1)}, x_k^{(2)}, \ldots, x_k^{(n)}) \in \mathbb{R}^n$.
 >
@@ -91,6 +86,11 @@ tags: [measure-theory, math551]
 
 ![[m551-5-2.svg]]
 *The iterated extraction for $n = 2$: from all indices keep $S_1$, along which the first coordinates converge; from $S_1$ keep $S_2 \subseteq S_1$, along which the second coordinates converge as well (red). Thinning a sequence never spoils a limit it already has, so after $n$ rounds every coordinate converges along $S_n$.*
+
+> [!remark] Remark
+> This is a direct generalization of [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{R}$, which you proved in MATH 451. The idea is to apply the 1-dimensional result coordinate by coordinate, extracting subsequences iteratively.
+
+^rem-5-1
 
 > [!remark]- Connections
 > - MATH 451 states and proves it the same way: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|Bolzano–Weierstrass in ℝⁿ (451 §13.3)]].

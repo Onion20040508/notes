@@ -65,7 +65,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 > [!example] Example §51.1: The Reciprocal Diverges
 > Determine whether $\displaystyle\int_1^\infty \frac1x\,dx$ is convergent or divergent.
 >
-> By Definition §51.1(a),
+> By [[§51 Improper Integrals#^def-51-1|Definition §51.1]](a),
 >
 > $$
 > \int_1^\infty \frac1x\,dx = \lim_{t \to \infty} \int_1^t \frac1x\,dx = \lim_{t \to \infty} \ln|x|\Big]_1^t = \lim_{t \to \infty} (\ln t - \ln 1) = \lim_{t \to \infty} \ln t = \infty .
@@ -85,7 +85,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 > [!example] Example §51.2: Evaluating Type 1 Integrals
 > Evaluate **(a)** $\displaystyle\int_{-\infty}^0 x e^x\,dx$ and **(b)** $\displaystyle\int_{-\infty}^\infty \frac{1}{1 + x^2}\,dx$.
 >
-> **(a)** By Definition §51.1(b), $\int_{-\infty}^0 xe^x\,dx = \lim_{t \to -\infty} \int_t^0 xe^x\,dx$. Integrate by parts ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]]) with $u = x$, $dv = e^x\,dx$, $du = dx$, $v = e^x$:
+> **(a)** By [[§51 Improper Integrals#^def-51-1|Definition §51.1]](b), $\int_{-\infty}^0 xe^x\,dx = \lim_{t \to -\infty} \int_t^0 xe^x\,dx$. Integrate by parts ([[§44 Integration by Parts#^thm-44-2|Theorem §44.2]]) with $u = x$, $dv = e^x\,dx$, $du = dx$, $v = e^x$:
 >
 > $$
 > \int_t^0 xe^x\,dx = xe^x\Big]_t^0 - \int_t^0 e^x\,dx = -te^t - 1 + e^t .
@@ -99,7 +99,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 >
 > Therefore $\displaystyle\int_{-\infty}^0 xe^x\,dx = \lim_{t \to -\infty} (-te^t - 1 + e^t) = -0 - 1 + 0 = -1$.
 >
-> **(b)** Use Definition §51.1(c) with $a = 0$, and evaluate the two halves separately:
+> **(b)** Use [[§51 Improper Integrals#^def-51-1|Definition §51.1]](c) with $a = 0$, and evaluate the two halves separately:
 >
 > $$
 > \begin{aligned}
@@ -126,7 +126,7 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 ^thm-51-1
 
 > [!proof]+ Proof
-> For $p = 1$ the integral diverges by Example §51.1. Let $p \ne 1$. Then
+> For $p = 1$ the integral diverges by [[§51 Improper Integrals#^ex-51-1|Example §51.1]]. Let $p \ne 1$. Then
 >
 > $$
 > \int_1^\infty \frac{1}{x^p}\,dx = \lim_{t \to \infty} \int_1^t x^{-p}\,dx = \lim_{t \to \infty} \frac{x^{-p+1}}{-p + 1}\Big]_{x=1}^{x=t} = \lim_{t \to \infty} \frac{1}{1 - p}\Big[\frac{1}{t^{p-1}} - 1\Big] .
@@ -177,7 +177,7 @@ Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a v
 > [!example] Example §51.3: An Infinite Discontinuity at an Endpoint
 > **(a)** Find $\displaystyle\int_2^5 \frac{1}{\sqrt{x - 2}}\,dx$. **(b)** Determine whether $\displaystyle\int_0^{\pi/2} \sec x\,dx$ converges. **(c)** Evaluate $\displaystyle\int_0^1 \ln x\,dx$.
 >
-> **(a)** $f(x) = 1/\sqrt{x - 2}$ has the vertical asymptote $x = 2$, at the left endpoint of $[2, 5]$. By Definition §51.2(b),
+> **(a)** $f(x) = 1/\sqrt{x - 2}$ has the vertical asymptote $x = 2$, at the left endpoint of $[2, 5]$. By [[§51 Improper Integrals#^def-51-2|Definition §51.2]](b),
 >
 > $$
 > \int_2^5 \frac{dx}{\sqrt{x - 2}} = \lim_{t \to 2^+} \int_t^5 \frac{dx}{\sqrt{x - 2}} = \lim_{t \to 2^+} 2\sqrt{x - 2}\Big]_t^5 = \lim_{t \to 2^+} 2\big(\sqrt3 - \sqrt{t - 2}\big) = 2\sqrt3 .
@@ -185,7 +185,7 @@ Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a v
 >
 > The integral converges; since the integrand is positive, $2\sqrt3$ is the area of the unbounded region under the curve from $2$ to $5$.
 >
-> **(b)** The integral is improper because $\lim_{x \to (\pi/2)^-} \sec x = \infty$. By Definition §51.2(a) and the integral of secant ([[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3]]),
+> **(b)** The integral is improper because $\lim_{x \to (\pi/2)^-} \sec x = \infty$. By [[§51 Improper Integrals#^def-51-2|Definition §51.2]](a) and the integral of secant ([[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3]]),
 >
 > $$
 > \int_0^{\pi/2} \sec x\,dx = \lim_{t \to (\pi/2)^-} \ln|\sec x + \tan x|\Big]_0^t = \lim_{t \to (\pi/2)^-} \big[\ln(\sec t + \tan t) - \ln 1\big] = \infty ,
@@ -214,7 +214,7 @@ Suppose $f$ is positive and continuous on a finite interval $[a, b)$ but has a v
 > [!example] Example §51.4: A Discontinuity Inside the Interval
 > Evaluate $\displaystyle\int_0^3 \frac{dx}{x - 1}$ if possible.
 >
-> The line $x = 1$ is a vertical asymptote of the integrand, in the middle of $[0, 3]$. So Definition §51.2(c) with $c = 1$ applies:
+> The line $x = 1$ is a vertical asymptote of the integrand, in the middle of $[0, 3]$. So [[§51 Improper Integrals#^def-51-2|Definition §51.2]](c) with $c = 1$ applies:
 >
 > $$
 > \int_0^3 \frac{dx}{x - 1} = \int_0^1 \frac{dx}{x - 1} + \int_1^3 \frac{dx}{x - 1} ,
@@ -257,7 +257,7 @@ Sometimes the exact value of an improper integral cannot be found, yet it matter
 > - ODE version: [[§21 Definition of the Laplace Transform#^thm-21-1|331 Thm. §21.1]] (the comparison test for piecewise continuous $f$ with $|f| \le g$), which shows that Laplace transforms exist, [[§21 Definition of the Laplace Transform#^thm-21-2|331 Thm. §21.2]].
 
 > [!remark] Remark: Why It Works
-> If the area under the upper curve $y = f(x)$ is finite, then so is the area under the lower curve $y = g(x)$. If the area under $y = g(x)$ is infinite, then so is the area under $y = f(x)$. The converses fail: if $\int_a^\infty g(x)\,dx$ converges, $\int_a^\infty f(x)\,dx$ may or may not converge, and if $\int_a^\infty f(x)\,dx$ diverges, $\int_a^\infty g(x)\,dx$ may or may not diverge. Comparison functions are typically $1/x^p$ (Theorem §51.1) or $e^{-x}$.
+> If the area under the upper curve $y = f(x)$ is finite, then so is the area under the lower curve $y = g(x)$. If the area under $y = g(x)$ is infinite, then so is the area under $y = f(x)$. The converses fail: if $\int_a^\infty g(x)\,dx$ converges, $\int_a^\infty f(x)\,dx$ may or may not converge, and if $\int_a^\infty f(x)\,dx$ diverges, $\int_a^\infty g(x)\,dx$ may or may not diverge. Comparison functions are typically $1/x^p$ ([[§51 Improper Integrals#^thm-51-1|Theorem §51.1]]) or $e^{-x}$.
 
 ^rem-51-1
 
@@ -276,13 +276,13 @@ Sometimes the exact value of an improper integral cannot be found, yet it matter
 > \int_1^\infty e^{-x}\,dx = \lim_{t \to \infty} \int_1^t e^{-x}\,dx = \lim_{t \to \infty} (e^{-1} - e^{-t}) = e^{-1} .
 > $$
 >
-> By Theorem §51.2(a) with $f(x) = e^{-x}$ and $g(x) = e^{-x^2}$, $\int_1^\infty e^{-x^2}\,dx$ converges, and hence so does $\int_0^\infty e^{-x^2}\,dx$. Its value is about $0.8862$; with double integrals in polar coordinates one shows that it is exactly $\sqrt{\pi}/2$ ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]; worked out in [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]]). It matters in probability ([[§56 Probability#^prop-56-3|Proposition §56.3]]). Numerically, $\int_0^t e^{-x^2}\,dx = 0.7468$, $0.8821$, $0.8862$ for $t = 1, 2, 3$: the values settle quickly, because $e^{-x^2} \to 0$ very rapidly.
+> By [[§51 Improper Integrals#^thm-51-2|Theorem §51.2]](a) with $f(x) = e^{-x}$ and $g(x) = e^{-x^2}$, $\int_1^\infty e^{-x^2}\,dx$ converges, and hence so does $\int_0^\infty e^{-x^2}\,dx$. Its value is about $0.8862$; with double integrals in polar coordinates one shows that it is exactly $\sqrt{\pi}/2$ ([[§100 Double Integrals in Polar Coordinates#^thm-100-1|Theorem §100.1]]; worked out in [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]]). It matters in probability ([[§56 Probability#^prop-56-3|Proposition §56.3]]). Numerically, $\int_0^t e^{-x^2}\,dx = 0.7468$, $0.8821$, $0.8862$ for $t = 1, 2, 3$: the values settle quickly, because $e^{-x^2} \to 0$ very rapidly.
 >
-> **(b)** For $x \ge 1$, $\dfrac{1 + e^{-x}}{x} > \dfrac1x$, and $\int_1^\infty \frac1x\,dx$ diverges (Example §51.1, or Theorem §51.1 with $p = 1$). By Theorem §51.2(b) the integral diverges. Numerically, $\int_1^t \frac{1 + e^{-x}}{x}\,dx \approx 0.86, 1.83, 2.52, 4.82, 7.13, 9.43$ for $t = 2, 5, 10, 100, 1000, 10000$: the values keep growing, roughly like $\ln t$.
+> **(b)** For $x \ge 1$, $\dfrac{1 + e^{-x}}{x} > \dfrac1x$, and $\int_1^\infty \frac1x\,dx$ diverges ([[§51 Improper Integrals#^ex-51-1|Example §51.1]], or [[§51 Improper Integrals#^thm-51-1|Theorem §51.1]] with $p = 1$). By [[§51 Improper Integrals#^thm-51-2|Theorem §51.2]](b) the integral diverges. Numerically, $\int_1^t \frac{1 + e^{-x}}{x}\,dx \approx 0.86, 1.83, 2.52, 4.82, 7.13, 9.43$ for $t = 2, 5, 10, 100, 1000, 10000$: the values keep growing, roughly like $\ln t$.
 >
 > *Stewart: Examples 7.8.9 and 7.8.10*
 
 ^ex-51-5
 
 ![[m233-51-2.svg]]
-*Example §51.5(a): for $x \ge 1$ the graph of $e^{-x^2}$ (red) lies below that of $e^{-x}$ (blue). The whole shaded region under $e^{-x}$ to the right of $1$ has finite area $e^{-1}$, so the red part, the area under $e^{-x^2}$, is finite too.*
+*[[§51 Improper Integrals#^ex-51-5|Example §51.5]](a): for $x \ge 1$ the graph of $e^{-x^2}$ (red) lies below that of $e^{-x}$ (blue). The whole shaded region under $e^{-x}$ to the right of $1$ has finite area $e^{-1}$, so the red part, the area under $e^{-x^2}$, is finite too.*

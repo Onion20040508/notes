@@ -73,7 +73,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 >
 > Every point of the parametric curve lies on the parabola $x = y^2 - 4y + 3$ (axis horizontal, vertex $(-1, 2)$). Since $t$ can be chosen to make $y = t + 1$ any real number, the parametric curve is the whole parabola.
 >
-> Restricting to $0 \le t \le 4$ gives only the arc from the initial point $(0, 1)$ to the terminal point $(8, 5)$ (Definition §63.2).
+> Restricting to $0 \le t \le 4$ gives only the arc from the initial point $(0, 1)$ to the terminal point $(8, 5)$ ([[§63 Curves Defined by Parametric Equations#^def-63-2|Definition §63.2]]).
 >
 > *Stewart: Example 10.1.1*
 
@@ -95,7 +95,7 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 ^ex-63-2
 
 > [!definition] Definition §63.3: Curve versus Parametric Curve
-> A **curve** is a set of points. A **parametric curve** is a curve together with a particular way of tracing out its points: different parametric equations can represent the same curve, as in Example §63.2.
+> A **curve** is a set of points. A **parametric curve** is a curve together with a particular way of tracing out its points: different parametric equations can represent the same curve, as in [[§63 Curves Defined by Parametric Equations#^ex-63-2|Example §63.2]].
 >
 > *Stewart: 10.1, Note*
 
@@ -116,13 +116,13 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 ^prop-63-1
 
 > [!proof]+ Proof
-> Multiplying the equations of Example §63.2(a) by $r$ gives $x = r\cos t$, $y = r\sin t$, with $x^2 + y^2 = r^2(\cos^2 t + \sin^2 t) = r^2$: the circle of radius $r$ about the origin, traced counterclockwise from $(r, 0)$. Shifting by $h$ in the $x$-direction and $k$ in the $y$-direction moves the center to $(h, k)$:
+> Multiplying the equations of [[§63 Curves Defined by Parametric Equations#^ex-63-2|Example §63.2]](a) by $r$ gives $x = r\cos t$, $y = r\sin t$, with $x^2 + y^2 = r^2(\cos^2 t + \sin^2 t) = r^2$: the circle of radius $r$ about the origin, traced counterclockwise from $(r, 0)$. Shifting by $h$ in the $x$-direction and $k$ in the $y$-direction moves the center to $(h, k)$:
 >
 > $$
 > (x - h)^2 + (y - k)^2 = r^2\cos^2 t + r^2\sin^2 t = r^2 .
 > $$
 >
-> Conversely, every point of this circle is reached: if $(x - h)^2 + (y - k)^2 = r^2$, then $\big(\tfrac{x-h}{r}, \tfrac{y-k}{r}\big)$ is on the unit circle and so equals $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, the angle of that point ([[§119 Trigonometry#^def-119-4|Definition §119.4]] with $r = 1$). The direction and starting point are those of Example §63.2(a), shifted.
+> Conversely, every point of this circle is reached: if $(x - h)^2 + (y - k)^2 = r^2$, then $\big(\tfrac{x-h}{r}, \tfrac{y-k}{r}\big)$ is on the unit circle and so equals $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, the angle of that point ([[§119 Trigonometry#^def-119-4|Definition §119.4]] with $r = 1$). The direction and starting point are those of [[§63 Curves Defined by Parametric Equations#^ex-63-2|Example §63.2]](a), shifted.
 
 ^pf-63-1
 

@@ -68,7 +68,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ^cor-67-2
 
 > [!proof]+ Proof
-> Interchanging $x$ and $y$ reflects the plane in the line $y = x$, which preserves distances. It takes the focus $(0, p)$ to $(p, 0)$ and the directrix $y = -p$ to $x = -p$, so it takes the parabola of Theorem §67.1 to this one, and its equation $x^2 = 4py$ to $y^2 = 4px$.
+> Interchanging $x$ and $y$ reflects the plane in the line $y = x$, which preserves distances. It takes the focus $(0, p)$ to $(p, 0)$ and the directrix $y = -p$ to $x = -p$, so it takes the parabola of [[§67 Conic Sections#^thm-67-1|Theorem §67.1]] to this one, and its equation $x^2 = 4py$ to $y^2 = 4px$.
 
 ^pf-67-2
 
@@ -77,7 +77,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > [!example] Example §67.1: Focus and Directrix of a Parabola
 > Find the focus and directrix of $y^2 + 10x = 0$ and sketch it.
 >
-> Write it as $y^2 = -10x$ and compare with Corollary §67.2: $4p = -10$, so $p = -\frac52$. The focus is $(p, 0) = (-\frac52, 0)$ and the directrix is $x = \frac52$. The parabola has its vertex at the origin, opens to the left and is symmetric about the $x$-axis.
+> Write it as $y^2 = -10x$ and compare with [[§67 Conic Sections#^cor-67-2|Corollary §67.2]]: $4p = -10$, so $p = -\frac52$. The focus is $(p, 0) = (-\frac52, 0)$ and the directrix is $x = \frac52$. The parabola has its vertex at the origin, opens to the left and is symmetric about the $x$-axis.
 >
 > *Stewart: Example 10.5.1*
 
@@ -157,7 +157,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ^cor-67-4
 
 > [!proof]+ Proof
-> Interchange $x$ and $y$ in Theorem §67.3 (a reflection in $y = x$, which preserves distances, foci and vertices).
+> Interchange $x$ and $y$ in [[§67 Conic Sections#^thm-67-3|Theorem §67.3]] (a reflection in $y = x$, which preserves distances, foci and vertices).
 
 ^pf-67-4
 
@@ -172,7 +172,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 >
 > so $a^2 = 16$, $b^2 = 9$, $a = 4$, $b = 3$. The $x$-intercepts are $\pm4$, the $y$-intercepts $\pm3$, and $c^2 = a^2 - b^2 = 7$: the foci are $(\pm\sqrt7, 0)$.
 >
-> **(b)** Find an equation of the ellipse with foci $(0, \pm2)$ and vertices $(0, \pm3)$. The foci are on the $y$-axis, so use Corollary §67.4 with $c = 2$, $a = 3$: $b^2 = a^2 - c^2 = 9 - 4 = 5$, and the ellipse is
+> **(b)** Find an equation of the ellipse with foci $(0, \pm2)$ and vertices $(0, \pm3)$. The foci are on the $y$-axis, so use [[§67 Conic Sections#^cor-67-4|Corollary §67.4]] with $c = 2$, $a = 3$: $b^2 = a^2 - c^2 = 9 - 4 = 5$, and the ellipse is
 >
 > $$
 > \frac{x^2}{5} + \frac{y^2}{9} = 1, \qquad\text{or}\qquad 9x^2 + 5y^2 = 45 .
@@ -262,7 +262,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ^cor-67-6
 
 > [!proof]+ Proof
-> Interchange $x$ and $y$ in Theorem §67.5. The asymptotes $x = \pm(b/a)y$ become $y = \pm(a/b)x$.
+> Interchange $x$ and $y$ in [[§67 Conic Sections#^thm-67-5|Theorem §67.5]]. The asymptotes $x = \pm(b/a)y$ become $y = \pm(a/b)x$.
 
 ^pf-67-6
 
@@ -275,9 +275,9 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > \frac{x^2}{16} - \frac{y^2}{9} = 1 ,
 > $$
 >
-> the form of Theorem §67.5 with $a = 4$, $b = 3$. Then $c^2 = 16 + 9 = 25$: the foci are $(\pm5, 0)$, the vertices $(\pm4, 0)$, and the asymptotes $y = \frac34 x$ and $y = -\frac34 x$. To sketch, draw the asymptotes first, then the two branches through the vertices approaching them.
+> the form of [[§67 Conic Sections#^thm-67-5|Theorem §67.5]] with $a = 4$, $b = 3$. Then $c^2 = 16 + 9 = 25$: the foci are $(\pm5, 0)$, the vertices $(\pm4, 0)$, and the asymptotes $y = \frac34 x$ and $y = -\frac34 x$. To sketch, draw the asymptotes first, then the two branches through the vertices approaching them.
 >
-> **(b)** Find the foci and equation of the hyperbola with vertices $(0, \pm1)$ and asymptote $y = 2x$. The vertices are on the $y$-axis, so by Corollary §67.6, $a = 1$ and $a/b = 2$. Thus $b = \frac12$ and $c^2 = a^2 + b^2 = \frac54$. The foci are $(0, \pm\sqrt5/2)$, and the equation is $y^2 - \dfrac{x^2}{1/4} = 1$, that is,
+> **(b)** Find the foci and equation of the hyperbola with vertices $(0, \pm1)$ and asymptote $y = 2x$. The vertices are on the $y$-axis, so by [[§67 Conic Sections#^cor-67-6|Corollary §67.6]], $a = 1$ and $a/b = 2$. Thus $b = \frac12$ and $c^2 = a^2 + b^2 = \frac54$. The foci are $(0, \pm\sqrt5/2)$, and the equation is $y^2 - \dfrac{x^2}{1/4} = 1$, that is,
 >
 > $$
 > y^2 - 4x^2 = 1 .
@@ -290,7 +290,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 ## Shifted Conics
 
 > [!remark] Remark: Method — Shifted Conics
-> Replacing $x$ and $y$ by $x - h$ and $y - k$ in a standard equation (Theorem §67.1, Corollary §67.2, Theorem §67.3, Corollary §67.4, Theorem §67.5, Corollary §67.6) shifts the conic $h$ units horizontally and $k$ units vertically, together with its foci, vertices, directrix and asymptotes ([[§118 Graphs of Second-Degree Equations#^thm-118-5|Theorem §118.5]]).
+> Replacing $x$ and $y$ by $x - h$ and $y - k$ in a standard equation ([[§67 Conic Sections#^thm-67-1|Theorem §67.1]], [[§67 Conic Sections#^cor-67-2|Corollary §67.2]], [[§67 Conic Sections#^thm-67-3|Theorem §67.3]], [[§67 Conic Sections#^cor-67-4|Corollary §67.4]], [[§67 Conic Sections#^thm-67-5|Theorem §67.5]], [[§67 Conic Sections#^cor-67-6|Corollary §67.6]]) shifts the conic $h$ units horizontally and $k$ units vertically, together with its foci, vertices, directrix and asymptotes ([[§118 Graphs of Second-Degree Equations#^thm-118-5|Theorem §118.5]]).
 > 1. **From the geometry to the equation:** find the center (midpoint of the vertices or foci) $(h, k)$, read off $a$, $b$, $c$ from distances, and write the standard equation in $x - h$, $y - k$.
 > 2. **From the equation to the geometry:** collect the $x$-terms and the $y$-terms, complete the square in each, and divide to make the right side $1$. The signs of the squared terms decide the type (same sign: ellipse; opposite signs: hyperbola; only one squared variable: parabola).
 
@@ -299,7 +299,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > [!example] Example §67.4: A Shifted Ellipse
 > Find an equation of the ellipse with foci $(2, -2)$, $(4, -2)$ and vertices $(1, -2)$, $(5, -2)$.
 >
-> The major axis joins the vertices and has length $4$, so $a = 2$. The distance between the foci is $2$, so $c = 1$, and $b^2 = a^2 - c^2 = 3$. The center is the midpoint $(3, -2)$, and the major axis is horizontal. Replacing $x$ and $y$ in Theorem §67.3 by $x - 3$ and $y + 2$:
+> The major axis joins the vertices and has length $4$, so $a = 2$. The distance between the foci is $2$, so $c = 1$, and $b^2 = a^2 - c^2 = 3$. The center is the midpoint $(3, -2)$, and the major axis is horizontal. Replacing $x$ and $y$ in [[§67 Conic Sections#^thm-67-3|Theorem §67.3]] by $x - 3$ and $y + 2$:
 >
 > $$
 > \frac{(x - 3)^2}{4} + \frac{(y + 2)^2}{3} = 1 .
@@ -323,7 +323,7 @@ Parabolas, ellipses and hyperbolas are called **conic sections**, or **conics**,
 > \end{aligned}
 > $$
 >
-> This is Corollary §67.6 with $x$, $y$ replaced by $x - 4$, $y - 1$: $a^2 = 9$, $b^2 = 4$, $c^2 = 13$, and the hyperbola is shifted $4$ units right and $1$ unit up, with center $(4, 1)$. The foci are $(4, 1 + \sqrt{13})$ and $(4, 1 - \sqrt{13})$, the vertices $(4, 4)$ and $(4, -2)$, and the asymptotes $y - 1 = \pm\frac32(x - 4)$.
+> This is [[§67 Conic Sections#^cor-67-6|Corollary §67.6]] with $x$, $y$ replaced by $x - 4$, $y - 1$: $a^2 = 9$, $b^2 = 4$, $c^2 = 13$, and the hyperbola is shifted $4$ units right and $1$ unit up, with center $(4, 1)$. The foci are $(4, 1 + \sqrt{13})$ and $(4, 1 - \sqrt{13})$, the vertices $(4, 4)$ and $(4, -2)$, and the asymptotes $y - 1 = \pm\frac32(x - 4)$.
 >
 > *Stewart: Example 10.5.7*
 

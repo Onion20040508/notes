@@ -120,8 +120,8 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 > [!remark] Remark: Method — Using Stokes' Theorem
 > 1. **For a line integral $\oint_C \mathbf{F} \cdot d\mathbf{r}$ around a closed space curve:** compute $\operatorname{curl}\mathbf{F}$, and choose the simplest surface $S$ with boundary $C$, usually the flat piece of a plane (a disk, an ellipse, a polygon) or a piece of a surface on which $C$ lies.
-> 2. **For the flux of a curl $\iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$:** either compute $\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ directly, or replace $S$ by a simpler surface with the same boundary (Corollary §114.2).
-> 3. **Match the orientations** (Definition §114.1): counterclockwise from above goes with the upward normal; for a curve described "as viewed from the positive $x$-axis", the matching normal points toward $+x$.
+> 2. **For the flux of a curl $\iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$:** either compute $\oint_{\partial S} \mathbf{F} \cdot d\mathbf{r}$ directly, or replace $S$ by a simpler surface with the same boundary ([[§114 Stokes' Theorem#^cor-114-2|Corollary §114.2]]).
+> 3. **Match the orientations** ([[§114 Stokes' Theorem#^def-114-1|Definition §114.1]]): counterclockwise from above goes with the upward normal; for a curve described "as viewed from the positive $x$-axis", the matching normal points toward $+x$.
 > 4. **Evaluate** with Formula 9 or 10 ([[§113 Surface Integrals#^thm-113-3|Theorem §113.3]], [[§113 Surface Integrals#^thm-113-4|Theorem §113.4]]); on a horizontal disk $\operatorname{curl}\mathbf{F} \cdot \mathbf{k}$ is just the $\mathbf{k}$-component, and if it is constant the answer is that constant times the area.
 
 ^rem-114-2
@@ -161,7 +161,7 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > \iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S} = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_0^{2\pi} \big( -\sqrt3\cos t\sin t + \sqrt3\sin t\cos t \big)\,dt = \sqrt3 \int_0^{2\pi} 0\,dt = 0 .
 > $$
 >
-> **Solution 2: on another surface.** Let $S_1$ be the disk in the plane $z = \sqrt3$ inside the cylinder $x^2 + y^2 = 1$. It has the same boundary $C$, so by Corollary §114.2 the two fluxes agree. $S_1$ is horizontal with upward normal $\mathbf{k}$, and
+> **Solution 2: on another surface.** Let $S_1$ be the disk in the plane $z = \sqrt3$ inside the cylinder $x^2 + y^2 = 1$. It has the same boundary $C$, so by [[§114 Stokes' Theorem#^cor-114-2|Corollary §114.2]] the two fluxes agree. $S_1$ is horizontal with upward normal $\mathbf{k}$, and
 >
 > $$
 > \operatorname{curl}\mathbf{F} = (x - y)\,\mathbf{i} + (x - y)\,\mathbf{j} + (0 - 0)\,\mathbf{k}, \qquad \iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S} = \iint_{S_1} \big[(x - y)\,\mathbf{i} + (x - y)\,\mathbf{j}\big] \cdot \mathbf{k}\,dS = \iint_{S_1} 0\,dS = 0 .

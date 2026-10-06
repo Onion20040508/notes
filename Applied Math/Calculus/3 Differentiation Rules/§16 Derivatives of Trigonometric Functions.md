@@ -64,7 +64,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 ^thm-16-2
 
 > [!proof]+ Proof
-> Stewart leaves this as Exercise 26, by the method of Theorem §16.1. With the addition formula $\cos(x + h) = \cos x \cos h - \sin x \sin h$,
+> Stewart leaves this as Exercise 26, by the method of [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Theorem §16.1]]. With the addition formula $\cos(x + h) = \cos x \cos h - \sin x \sin h$,
 >
 > $$
 > \begin{aligned}
@@ -73,7 +73,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 > \end{aligned}
 > $$
 >
-> by the Limit Laws and Theorems §16.6 and §16.7.
+> by the Limit Laws and Theorems [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]] and [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]].
 
 ^pf-16-2
 
@@ -89,7 +89,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 ^thm-16-3
 
 > [!proof]+ Proof
-> The definition would work, but the Quotient Rule with Theorems §16.1 and §16.2 is easier. Wherever $\cos x \ne 0$,
+> The definition would work, but the Quotient Rule with Theorems [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]] and [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]] is easier. Wherever $\cos x \ne 0$,
 >
 > $$
 > \begin{aligned}
@@ -122,7 +122,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 ^thm-16-4
 
 > [!proof]+ Proof
-> The left column is Theorems §16.1–§16.3. Stewart leaves the right column as Exercises 23–25. By the Quotient Rule and Theorems §16.1 and §16.2:
+> The left column is Theorems [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]]–[[§16 Derivatives of Trigonometric Functions#^thm-16-3|§16.3]]. Stewart leaves the right column as Exercises 23–25. By the Quotient Rule and Theorems [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]] and [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]]:
 >
 > $$
 > \begin{aligned}
@@ -139,7 +139,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 > [!example] Example §16.1: Horizontal Tangents of a Trigonometric Quotient
 > Differentiate $f(x) = \dfrac{\sec x}{1 + \tan x}$. For what values of $x$ does the graph of $f$ have a horizontal tangent?
 >
-> By the Quotient Rule and Theorem §16.4,
+> By the Quotient Rule and [[§16 Derivatives of Trigonometric Functions#^thm-16-4|Theorem §16.4]],
 >
 > $$
 > \begin{aligned}
@@ -188,7 +188,7 @@ For example, by the Product Rule, $\dfrac{d}{dx}(x^2 \sin x) = x^2 \cos x + 2x \
 
 ## Two Special Trigonometric Limits
 
-The proof of Theorem §16.1 used two limits, proved now. The first needs a comparison of $\theta$ with $\tan\theta$.
+The proof of [[§16 Derivatives of Trigonometric Functions#^thm-16-1|Theorem §16.1]] used two limits, proved now. The first needs a comparison of $\theta$ with $\tan\theta$.
 
 > [!theorem] Lemma §16.5: The Angle Is at Most Its Tangent
 > If $0 < \theta < \pi/2$, then $\theta \le \tan\theta$.
@@ -227,7 +227,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 ^thm-16-6
 
 > [!proof]+ Proof
-> First let $0 < \theta < \pi/2$. With $O$, $A$, $B$, $D$ as in Lemma §16.5, let $C$ be the foot of the perpendicular from $B$ to $OA$. By the definition of radian measure, arc $AB = \theta$, and $|BC| = |OB|\sin\theta = \sin\theta$.
+> First let $0 < \theta < \pi/2$. With $O$, $A$, $B$, $D$ as in [[§16 Derivatives of Trigonometric Functions#^lem-16-5|Lemma §16.5]], let $C$ be the foot of the perpendicular from $B$ to $OA$. By the definition of radian measure, arc $AB = \theta$, and $|BC| = |OB|\sin\theta = \sin\theta$.
 >
 > **Upper bound.** The leg $BC$ of the right triangle $ABC$ is shorter than its hypotenuse $AB$, and the chord $AB$ is shorter than the arc $AB$:
 >
@@ -235,7 +235,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > |BC| < |AB| < \text{arc } AB, \qquad\text{so}\qquad \sin\theta < \theta, \qquad \frac{\sin\theta}{\theta} < 1 .
 > $$
 >
-> **Lower bound.** By Lemma §16.5, $\theta \le \tan\theta = \dfrac{\sin\theta}{\cos\theta}$. (Stewart's text argues this geometrically: with $E$ the point where the tangent lines at $A$ and $B$ meet, a circumscribed polygon is longer than the circle, so $\theta = \text{arc } AB < |AE| + |EB| < |AE| + |ED| = |AD| = \tan\theta$. Appendix F gives the proof from the definition of arc length.) Since $\cos\theta > 0$ and $\theta > 0$, this gives
+> **Lower bound.** By [[§16 Derivatives of Trigonometric Functions#^lem-16-5|Lemma §16.5]], $\theta \le \tan\theta = \dfrac{\sin\theta}{\cos\theta}$. (Stewart's text argues this geometrically: with $E$ the point where the tangent lines at $A$ and $B$ meet, a circumscribed polygon is longer than the circle, so $\theta = \text{arc } AB < |AE| + |EB| < |AE| + |ED| = |AD| = \tan\theta$. Appendix F gives the proof from the definition of arc length.) Since $\cos\theta > 0$ and $\theta > 0$, this gives
 >
 > $$
 > \cos\theta \le \frac{\sin\theta}{\theta} < 1 .
@@ -280,7 +280,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > \end{aligned}
 > $$
 >
-> by Theorem §16.6 and the continuity of sine and cosine at $0$.
+> by [[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]] and the continuity of sine and cosine at $0$.
 
 ^pf-16-7
 
@@ -289,7 +289,7 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > [!example] Example §16.4: Rescaling the Angle
 > Find $\displaystyle\lim_{x \to 0} \frac{\sin 7x}{4x}$.
 >
-> To apply Theorem §16.6, the argument of sine must match the denominator. Multiply and divide by $7$ (note that $\sin 7x \ne 7\sin x$):
+> To apply [[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]], the argument of sine must match the denominator. Multiply and divide by $7$ (note that $\sin 7x \ne 7\sin x$):
 >
 > $$
 > \frac{\sin 7x}{4x} = \frac74 \left( \frac{\sin 7x}{7x} \right) .
@@ -312,9 +312,9 @@ The proof of Theorem §16.1 used two limits, proved now. The first needs a compa
 > \lim_{x \to 0} x\cot x = \lim_{x \to 0} \frac{x\cos x}{\sin x} = \lim_{x \to 0} \frac{\cos x}{\dfrac{\sin x}{x}} = \frac{\lim_{x \to 0} \cos x}{\lim_{x \to 0} \dfrac{\sin x}{x}} = \frac{\cos 0}{1} = 1 ,
 > $$
 >
-> by the continuity of cosine and Theorem §16.6.
+> by the continuity of cosine and [[§16 Derivatives of Trigonometric Functions#^thm-16-6|Theorem §16.6]].
 >
-> **(b)** Find $\displaystyle\lim_{\theta \to 0} \frac{\cos\theta - 1}{\sin\theta}$. Divide numerator and denominator by $\theta$, to use Theorems §16.6 and §16.7:
+> **(b)** Find $\displaystyle\lim_{\theta \to 0} \frac{\cos\theta - 1}{\sin\theta}$. Divide numerator and denominator by $\theta$, to use Theorems [[§16 Derivatives of Trigonometric Functions#^thm-16-6|§16.6]] and [[§16 Derivatives of Trigonometric Functions#^thm-16-7|§16.7]]:
 >
 > $$
 > \lim_{\theta \to 0} \frac{\cos\theta - 1}{\sin\theta} = \lim_{\theta \to 0} \frac{\dfrac{\cos\theta - 1}{\theta}}{\dfrac{\sin\theta}{\theta}} = \frac{\lim_{\theta \to 0} \dfrac{\cos\theta - 1}{\theta}}{\lim_{\theta \to 0} \dfrac{\sin\theta}{\theta}} = \frac01 = 0 .

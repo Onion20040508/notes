@@ -68,7 +68,7 @@ Since $f'(x)$ is the slope of the curve $y = f(x)$ at $(x, f(x))$, the sign of $
 
 ## The First Derivative Test
 
-By Fermat's Theorem ([[§25 Maximum and Minimum Values#^cor-25-3|Corollary §25.3]]) a local extremum can only occur at a critical number, but not every critical number gives one. In Example §27.1, $f(0) = 5$ is a local maximum because $f$ rises up to $0$ and falls after it: $f'$ changes sign from positive to negative at $0$.
+By Fermat's Theorem ([[§25 Maximum and Minimum Values#^cor-25-3|Corollary §25.3]]) a local extremum can only occur at a critical number, but not every critical number gives one. In [[§27 What Derivatives Tell Us About the Shape of a Graph#^ex-27-1|Example §27.1]], $f(0) = 5$ is a local maximum because $f$ rises up to $0$ and falls after it: $f'$ changes sign from positive to negative at $0$.
 
 > [!theorem] Theorem §27.2: The First Derivative Test
 > Suppose that $c$ is a critical number of a continuous function $f$.
@@ -264,7 +264,7 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 ^ex-27-3
 
 ![[m233-27-2.svg]]
-*Example §27.3: $y = x^4 - 4x^3$. At $0$ the tangent is horizontal ($f'(0) = 0$) but there is no extremum: the curve crosses its tangent, since $(0, 0)$ is also an inflection point. The only local extremum is the minimum $(3, -27)$ (blue); the second inflection point is $(2, -16)$ (red). The shading marks where the curve is concave upward.*
+*[[§27 What Derivatives Tell Us About the Shape of a Graph#^ex-27-3|Example §27.3]]: $y = x^4 - 4x^3$. At $0$ the tangent is horizontal ($f'(0) = 0$) but there is no extremum: the curve crosses its tangent, since $(0, 0)$ is also an inflection point. The only local extremum is the minimum $(3, -27)$ (blue); the second inflection point is $(2, -16)$ (red). The shading marks where the curve is concave upward.*
 
 ## Curve Sketching
 

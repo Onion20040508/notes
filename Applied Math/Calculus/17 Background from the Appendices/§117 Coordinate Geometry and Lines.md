@@ -153,16 +153,16 @@ An equation of a line $L$ is one satisfied by the coordinates of the points on $
 > [!example] Example §117.2: Distances and Equations of Lines
 > **(a) Distance.** The distance between $(1, -2)$ and $(5, 3)$ is $\sqrt{(5 - 1)^2 + [3 - (-2)]^2} = \sqrt{4^2 + 5^2} = \sqrt{41}$.
 >
-> **(b) Point and slope.** The line through $(1, -7)$ with slope $-\frac12$ is, by Theorem §117.2, $y + 7 = -\frac12(x - 1)$. Multiplying by $2$: $2y + 14 = -x + 1$, or $x + 2y + 13 = 0$.
+> **(b) Point and slope.** The line through $(1, -7)$ with slope $-\frac12$ is, by [[§117 Coordinate Geometry and Lines#^thm-117-2|Theorem §117.2]], $y + 7 = -\frac12(x - 1)$. Multiplying by $2$: $2y + 14 = -x + 1$, or $x + 2y + 13 = 0$.
 >
-> **(c) Two points.** For the line through $(-1, 2)$ and $(3, -4)$, Definition §117.2 gives $m = \dfrac{-4 - 2}{3 - (-1)} = -\dfrac32$. The point-slope form with $x_1 = -1$, $y_1 = 2$ is $y - 2 = -\frac32(x + 1)$, that is, $2y - 4 = -3x - 3$, or $3x + 2y = 1$.
+> **(c) Two points.** For the line through $(-1, 2)$ and $(3, -4)$, [[§117 Coordinate Geometry and Lines#^def-117-2|Definition §117.2]] gives $m = \dfrac{-4 - 2}{3 - (-1)} = -\dfrac32$. The point-slope form with $x_1 = -1$, $y_1 = 2$ is $y - 2 = -\frac32(x + 1)$, that is, $2y - 4 = -3x - 3$, or $3x + 2y = 1$.
 >
 > *Stewart: Appendix B, Examples 2, 3 and 4*
 
 ^ex-117-2
 
 > [!example] Example §117.3: Graphing a Line and a Linear Inequality
-> **(a)** Sketch $3x - 5y = 15$. The equation is linear, so its graph is a line (Theorem §117.4), and two points determine it. The intercepts are easiest: $y = 0$ gives $3x = 15$, $x = 5$; $x = 0$ gives $-5y = 15$, $y = -3$. The line passes through $(5, 0)$ and $(0, -3)$.
+> **(a)** Sketch $3x - 5y = 15$. The equation is linear, so its graph is a line ([[§117 Coordinate Geometry and Lines#^thm-117-4|Theorem §117.4]]), and two points determine it. The intercepts are easiest: $y = 0$ gives $3x = 15$, $x = 5$; $x = 0$ gives $-5y = 15$, $y = -3$. The line passes through $(5, 0)$ and $(0, -3)$.
 >
 > **(b)** Graph the inequality $x + 2y > 5$, that is, the set $\{(x, y) \mid x + 2y > 5\}$. Solve for $y$: $2y > -x + 5$, so $y > -\frac12 x + \frac52$. The line $y = -\frac12 x + \frac52$ has slope $-\frac12$ and $y$-intercept $\frac52$, and the graph consists of the points whose $y$-coordinates are *larger* than those on the line: the half-plane **above** the line, not including the line itself (drawn dashed).
 >

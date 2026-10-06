@@ -96,7 +96,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 > [!example] Example §49.1: A Volume by Shells
 > The region bounded by $y = \tan^{-1} x$, $y = 0$ and $x = 1$ is rotated about the $y$-axis. Find the volume of the solid.
 >
-> By cylindrical shells ([[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]]), $V = \int_0^1 2\pi x \tan^{-1} x\,dx$. Entry 92 (Proposition §49.2) gives
+> By cylindrical shells ([[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]]), $V = \int_0^1 2\pi x \tan^{-1} x\,dx$. Entry 92 ([[§49 Integration Using Tables and Technology#^prop-49-2|Proposition §49.2]]) gives
 >
 > $$
 > V = 2\pi\Big[\frac{x^2 + 1}{2}\tan^{-1} x - \frac{x}{2}\Big]_0^1 = \pi\Big[(x^2 + 1)\tan^{-1} x - x\Big]_0^1 = \pi(2\tan^{-1} 1 - 1) = \pi\Big(\frac{\pi}{2} - 1\Big) = \tfrac12 \pi^2 - \pi .
@@ -128,7 +128,7 @@ The entries used below are typical. Each one is proved by differentiating the ri
 > [!example] Example §49.3: Reduction Formulas from the Table
 > Use the table to evaluate $\displaystyle\int x^3 \sin x\,dx$.
 >
-> No entry contains $u^3\sin u$ explicitly, but the reduction formula 84 (Proposition §49.1) with $n = 3$ gives
+> No entry contains $u^3\sin u$ explicitly, but the reduction formula 84 ([[§49 Integration Using Tables and Technology#^prop-49-1|Proposition §49.1]]) with $n = 3$ gives
 >
 > $$
 > \int x^3 \sin x\,dx = -x^3 \cos x + 3\int x^2 \cos x\,dx .

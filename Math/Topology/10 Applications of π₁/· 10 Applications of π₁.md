@@ -13,7 +13,9 @@ tags: [chapter, topology]
 
 ## Sections
 - [[§25 The Fundamental Theorem of Algebra]]
+- [[§25a Retractions and Fixed Points]]
 - [[§26 Deformation Retracts and Homotopy Type]]
+- [[§26a The Punctured Plane, the Figure Eight and the Torus]]
 
 ## Central results
 - [[Fundamental Theorem of Algebra (topological proof)]] (§25.1)
@@ -23,7 +25,7 @@ tags: [chapter, topology]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§26 Deformation Retracts and Homotopy Type#^lem-26-1|Lemma §26.1: Homotopic Maps and Induced Homomorphisms]]: 5 later results
-- [[§26 Deformation Retracts and Homotopy Type#^prop-26-3|Proposition §26.3: Algebraic Properties of Retractions]]: 5 later results
-- [[§26 Deformation Retracts and Homotopy Type#^prop-26-5|Proposition §26.5: Bⁿ is Convex and Simply Connected]]: 3 later results
-- [[§26 Deformation Retracts and Homotopy Type#^thm-26-2|Theorem §26.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ 0)]]: 2 later results
+- [[§25a Retractions and Fixed Points#^lem-26-1|Lemma §26.1: Homotopic Maps and Induced Homomorphisms]]: 5 later results
+- [[§25a Retractions and Fixed Points#^prop-26-3|Proposition §26.3: Algebraic Properties of Retractions]]: 5 later results
+- [[§25a Retractions and Fixed Points#^prop-26-5|Proposition §26.5: Bⁿ is Convex and Simply Connected]]: 3 later results
+- [[§25a Retractions and Fixed Points#^thm-26-2|Theorem §26.2: π₁(Sⁿ) ≅ π₁(ℝⁿ⁺¹ ∖ 0)]]: 2 later results

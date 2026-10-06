@@ -13,6 +13,7 @@ tags: [chapter, topology]
 
 ## Sections
 - [[§21 Algebra Prerequisites꞉ Groups]]
+- [[§21a Free Groups and Presentations]]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

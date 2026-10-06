@@ -19,7 +19,7 @@ Compare
 $$
 f(x, y) = \frac{\sin(x^2 + y^2)}{x^2 + y^2} \qquad\text{and}\qquad g(x, y) = \frac{x^2 - y^2}{x^2 + y^2}
 $$
-near the origin, where neither is defined. A table of values suggests that $f(x, y)$ approaches $1$ while $g(x, y)$ approaches no particular number. Both guesses are correct: for $f$, put $t = x^2 + y^2$, which tends to $0^+$, and use $\frac{\sin t}{t} \to 1$; for $g$, see Example §91.1(a).
+near the origin, where neither is defined. A table of values suggests that $f(x, y)$ approaches $1$ while $g(x, y)$ approaches no particular number. Both guesses are correct: for $f$, put $t = x^2 + y^2$, which tends to $0^+$, and use $\frac{\sin t}{t} \to 1$; for $g$, see [[§91 Limits and Continuity#^ex-91-1|Example §91.1]](a).
 
 > [!definition] Definition §91.1: Limit of a Function of Two Variables
 > Let $f$ be a function of two variables whose domain $D$ includes points arbitrarily close to $(a, b)$. Then we say that the **limit of $f(x, y)$ as $(x, y)$ approaches $(a, b)$** is $L$, and we write
@@ -60,22 +60,22 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 ^thm-91-1
 
 > [!proof]+ Proof
-> Stewart argues in words; here is the argument in full. "$f(x, y) \to L_1$ along $C_1$" means that $f$, restricted to the points of $C_1$ in its domain, has limit $L_1$ at $(a, b)$ in the sense of Definition §91.1 (with $D$ replaced by $D \cap C_1$, which contains points arbitrarily close to $(a, b)$).
+> Stewart argues in words; here is the argument in full. "$f(x, y) \to L_1$ along $C_1$" means that $f$, restricted to the points of $C_1$ in its domain, has limit $L_1$ at $(a, b)$ in the sense of [[§91 Limits and Continuity#^def-91-1|Definition §91.1]] (with $D$ replaced by $D \cap C_1$, which contains points arbitrarily close to $(a, b)$).
 >
-> Suppose, for contradiction, that $\lim_{(x, y) \to (a, b)} f(x, y) = L$. Let $\varepsilon > 0$ and take the $\delta$ of Definition §91.1. Every point $(x, y)$ of $D \cap C_1$ with $0 < \sqrt{(x - a)^2 + (y - b)^2} < \delta$ is in particular a point of $D$, so $|f(x, y) - L| < \varepsilon$. Thus the same $\delta$ shows that the limit of $f$ along $C_1$ is $L$. A limit is unique (if $f$ were within $\varepsilon$ of two numbers $L$ and $L'$ at points arbitrarily close to $(a, b)$, then $|L - L'| < 2\varepsilon$ for every $\varepsilon > 0$, so $L = L'$), hence $L_1 = L$. In the same way $L_2 = L$. So $L_1 = L_2$, contradicting $L_1 \ne L_2$.
+> Suppose, for contradiction, that $\lim_{(x, y) \to (a, b)} f(x, y) = L$. Let $\varepsilon > 0$ and take the $\delta$ of [[§91 Limits and Continuity#^def-91-1|Definition §91.1]]. Every point $(x, y)$ of $D \cap C_1$ with $0 < \sqrt{(x - a)^2 + (y - b)^2} < \delta$ is in particular a point of $D$, so $|f(x, y) - L| < \varepsilon$. Thus the same $\delta$ shows that the limit of $f$ along $C_1$ is $L$. A limit is unique (if $f$ were within $\varepsilon$ of two numbers $L$ and $L'$ at points arbitrarily close to $(a, b)$, then $|L - L'| < 2\varepsilon$ for every $\varepsilon > 0$, so $L = L'$), hence $L_1 = L$. In the same way $L_2 = L$. So $L_1 = L_2$, contradicting $L_1 \ne L_2$.
 
 ^pf-91-1
 
 *Uses:* [[§91 Limits and Continuity#^def-91-1|Def. §91.1]]
 
 > [!remark]- Connections
-> - The standard example of path dependence in 452 is $\frac{2xy}{x^2 + y^2}$, twice the function of Example §91.1(b): [[§3 Continuity and Limits of Functions#^ex-3-1|452 Ex. §3.1]], [[§3 Continuity and Limits of Functions#^ex-3-2|452 Ex. §3.2]], and the workhorse page [[2xy∕(x²+y²) family]].
+> - The standard example of path dependence in 452 is $\frac{2xy}{x^2 + y^2}$, twice the function of [[§91 Limits and Continuity#^ex-91-1|Example §91.1]](b): [[§3 Continuity and Limits of Functions#^ex-3-1|452 Ex. §3.1]], [[§3 Continuity and Limits of Functions#^ex-3-2|452 Ex. §3.2]], and the workhorse page [[2xy∕(x²+y²) family]].
 > - Complex-variables version: [[§15 Limits#^cor-15-2|342 Cor. §15.2]] (the two-path test for $\lim_{z\to z_0} f(z)$), with [[§15 Limits#^ex-15-2|342 Ex. §15.2]] ($z/\bar z$ has no limit at $0$).
 
 > [!example] Example §91.1: Different Limits Along Two Lines
 > **(a)** Show that $\displaystyle\lim_{(x, y) \to (0, 0)} \frac{x^2 - y^2}{x^2 + y^2}$ does not exist.
 >
-> Let $f(x, y) = (x^2 - y^2)/(x^2 + y^2)$. Along the $x$-axis, $y = 0$, so $f(x, 0) = x^2/x^2 = 1$ for all $x \ne 0$, and $f(x, y) \to 1$. Along the $y$-axis, $x = 0$, so $f(0, y) = -y^2/y^2 = -1$ for all $y \ne 0$, and $f(x, y) \to -1$. Two different limits along two lines: by Theorem §91.1 the limit does not exist. (This confirms the numerical guess at the start of the section.)
+> Let $f(x, y) = (x^2 - y^2)/(x^2 + y^2)$. Along the $x$-axis, $y = 0$, so $f(x, 0) = x^2/x^2 = 1$ for all $x \ne 0$, and $f(x, y) \to 1$. Along the $y$-axis, $x = 0$, so $f(0, y) = -y^2/y^2 = -1$ for all $y \ne 0$, and $f(x, y) \to -1$. Two different limits along two lines: by [[§91 Limits and Continuity#^thm-91-1|Theorem §91.1]] the limit does not exist. (This confirms the numerical guess at the start of the section.)
 >
 > **(b)** If $f(x, y) = \dfrac{xy}{x^2 + y^2}$, does $\displaystyle\lim_{(x, y) \to (0, 0)} f(x, y)$ exist?
 >
@@ -118,7 +118,7 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 ^ex-91-2
 
 ![[m233-91-1.svg]]
-*Why lines miss the value $\frac12$ in Example §91.2. On each parabola $x = \lambda y^2$ the function $f(x, y) = \frac{xy^2}{x^2 + y^4}$ is constant, equal to $\frac{\lambda}{1 + \lambda^2}$: $\frac12$ on $x = y^2$ (green), $-\frac12$ on $x = -y^2$ (red), $\pm\frac{3}{10}$ on $x = \pm 3y^2$ and $x = \pm\frac13 y^2$ (thin). All these parabolas are tangent to the $y$-axis at the origin, so a line $y = mx$ (dashed) meets $x = \lambda y^2$ only at $x = 1/(\lambda m^2)$, away from the origin. Close to the origin a line crosses only parabolas with large $|\lambda|$, where $f$ is close to $0$.*
+*Why lines miss the value $\frac12$ in [[§91 Limits and Continuity#^ex-91-2|Example §91.2]]. On each parabola $x = \lambda y^2$ the function $f(x, y) = \frac{xy^2}{x^2 + y^4}$ is constant, equal to $\frac{\lambda}{1 + \lambda^2}$: $\frac12$ on $x = y^2$ (green), $-\frac12$ on $x = -y^2$ (red), $\pm\frac{3}{10}$ on $x = \pm 3y^2$ and $x = \pm\frac13 y^2$ (thin). All these parabolas are tangent to the $y$-axis at the origin, so a line $y = mx$ (dashed) meets $x = \lambda y^2$ only at $x = 1/(\lambda m^2)$, away from the origin. Close to the origin a line crosses only parabolas with large $|\lambda|$, where $f$ is close to $0$.*
 
 ## Properties of Limits
 
@@ -205,7 +205,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 >
 > **Is $0$ a plausible value?** Along any line through the origin, and also along the parabolas $y = x^2$ and $x = y^2$, the limit is $0$. That does not prove anything, but it suggests that the limit exists and equals $0$.
 >
-> **Solution 1 (by Definition §91.1).** Let $\varepsilon > 0$. We want $\delta > 0$ such that
+> **Solution 1 (by [[§91 Limits and Continuity#^def-91-1|Definition §91.1]]).** Let $\varepsilon > 0$. We want $\delta > 0$ such that
 >
 > $$
 > 0 < \sqrt{x^2 + y^2} < \delta \quad\Longrightarrow\quad \left| \frac{3x^2 y}{x^2 + y^2} - 0 \right| = \frac{3x^2 |y|}{x^2 + y^2} < \varepsilon .
@@ -231,7 +231,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 > -3|y| \le \frac{3x^2 y}{x^2 + y^2} \le 3|y| .
 > $$
 >
-> Now $|y| \to 0$ as $(x, y) \to (0, 0)$ (by (2) and continuity of the absolute value), so $\pm 3|y| \to 0$ by the Constant Multiple Law. By Theorem §91.4 the limit is $0$.
+> Now $|y| \to 0$ as $(x, y) \to (0, 0)$ (by (2) and continuity of the absolute value), so $\pm 3|y| \to 0$ by the Constant Multiple Law. By [[§91 Limits and Continuity#^thm-91-4|Theorem §91.4]] the limit is $0$.
 >
 > *Stewart: Example 14.2.6*
 > *Source: 233 Exam 1 Review, Q21 (the same limit)*
@@ -253,7 +253,7 @@ For instance, $\lim_{(x, y) \to (1, 2)} (x^2y^3 - x^3y^2 + 3x + 2y) = 1 \cdot 8 
 
 ^def-91-3
 
-The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(x, y)$ changes by a small amount, so the graph of a continuous function is a surface with no hole or break. By Theorem §91.3, **every polynomial is continuous on $\mathbb{R}^2$** and **every rational function is continuous on its domain**.
+The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(x, y)$ changes by a small amount, so the graph of a continuous function is a surface with no hole or break. By [[§91 Limits and Continuity#^thm-91-3|Theorem §91.3]], **every polynomial is continuous on $\mathbb{R}^2$** and **every rational function is continuous on its domain**.
 
 > [!theorem] Theorem §91.5: Combining Continuous Functions
 > (a) Sums, differences, products and quotients of continuous functions are continuous on their domains.
@@ -285,7 +285,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > g(x, y) = \begin{cases} \dfrac{x^2 - y^2}{x^2 + y^2} & \text{if } (x, y) \ne (0, 0) \\[6pt] 0 & \text{if } (x, y) = (0, 0) . \end{cases}
 > $$
 >
-> Now $g$ is defined at $(0, 0)$, but it is still discontinuous there, because $\lim_{(x, y) \to (0, 0)} g(x, y)$ does not exist (Example §91.1(a)). No value of $g(0, 0)$ can repair this.
+> Now $g$ is defined at $(0, 0)$, but it is still discontinuous there, because $\lim_{(x, y) \to (0, 0)} g(x, y)$ does not exist ([[§91 Limits and Continuity#^ex-91-1|Example §91.1]](a)). No value of $g(0, 0)$ can repair this.
 >
 > **(c)** Let
 >
@@ -293,7 +293,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > f(x, y) = \begin{cases} \dfrac{3x^2 y}{x^2 + y^2} & \text{if } (x, y) \ne (0, 0) \\[6pt] 0 & \text{if } (x, y) = (0, 0) . \end{cases}
 > $$
 >
-> For $(x, y) \ne (0, 0)$, $f$ equals a rational function near $(x, y)$, so it is continuous there. At the origin, by Example §91.3,
+> For $(x, y) \ne (0, 0)$, $f$ equals a rational function near $(x, y)$, so it is continuous there. At the origin, by [[§91 Limits and Continuity#^ex-91-3|Example §91.3]],
 >
 > $$
 > \lim_{(x, y) \to (0, 0)} f(x, y) = \lim_{(x, y) \to (0, 0)} \frac{3x^2 y}{x^2 + y^2} = 0 = f(0, 0) .
@@ -301,7 +301,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 >
 > So $f$ is continuous at $(0, 0)$ as well, and hence on $\mathbb{R}^2$.
 >
-> **(d)** $h(x, y) = e^{-(x^2 + y^2)}$ is $g \circ f$ with $f(x, y) = x^2 + y^2$, a polynomial (continuous on $\mathbb{R}^2$), and $g(t) = e^{-t}$, continuous for all $t$. By Theorem §91.5(b), $h$ is continuous on $\mathbb{R}^2$.
+> **(d)** $h(x, y) = e^{-(x^2 + y^2)}$ is $g \circ f$ with $f(x, y) = x^2 + y^2$, a polynomial (continuous on $\mathbb{R}^2$), and $g(t) = e^{-t}$, continuous for all $t$. By [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5]](b), $h$ is continuous on $\mathbb{R}^2$.
 >
 > **(e)** $h(x, y) = \arctan(y/x)$ is $g \circ f$ with $f(x, y) = y/x$, a rational function continuous except on the line $x = 0$, and $g(t) = \arctan t$, continuous everywhere. So $h$ is continuous except where $x = 0$. Its graph breaks above the $y$-axis: as $x \to 0^{\pm}$ with $y > 0$ fixed, $y/x \to \pm\infty$ and $h \to \pm\frac{\pi}{2}$.
 >
@@ -320,7 +320,7 @@ The intuitive meaning: if the point $(x, y)$ changes by a small amount, then $f(
 > \text{if}\quad \mathbf{x} \in D \quad\text{and}\quad 0 < |\mathbf{x} - \mathbf{a}| < \delta \quad\text{then}\quad |f(\mathbf{x}) - L| < \varepsilon , \qquad (7)
 > $$
 >
-> For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]), for $n = 2$ it is Definition §91.1, and for $n = 3$ the definition just given.
+> For $n = 1$ this is the one-variable definition ([[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]]), for $n = 2$ it is [[§91 Limits and Continuity#^def-91-1|Definition §91.1]], and for $n = 3$ the definition just given.
 >
 > *Stewart: 14.2, Definition 7 and text*
 
@@ -344,7 +344,7 @@ For instance, $f(x, y, z) = \dfrac{1}{x^2 + y^2 + z^2 - 1}$ is a rational functi
 > 3. **Test paths** to show that the limit does not exist: the two axes, the lines $y - b = m(x - a)$, and curves suggested by the powers in $f$ (for $\frac{xy^2}{x^2 + y^4}$ the parabola $x = y^2$, which makes $x^2$ and $y^4$ comparable). Two different values prove non-existence ([[§91 Limits and Continuity#^thm-91-1|Theorem §91.1]]).
 > 4. **Prove existence** when all paths give the same $L$: bound $|f(x, y) - L|$ by an expression that tends to $0$, using $x^2 \le x^2 + y^2$, $|y| \le \sqrt{x^2 + y^2}$, or polar coordinates $x = r\cos\theta$, $y = r\sin\theta$ with $r \to 0^+$; then apply the Squeeze Theorem ([[§91 Limits and Continuity#^thm-91-4|Theorem §91.4]]).
 >
-> Agreement along every line through the point is *not* a proof that the limit exists (Example §91.2).
+> Agreement along every line through the point is *not* a proof that the limit exists ([[§91 Limits and Continuity#^ex-91-2|Example §91.2]]).
 
 ^rem-91-2
 
@@ -357,9 +357,9 @@ For instance, $f(x, y, z) = \dfrac{1}{x^2 + y^2 + z^2 - 1}$ is a rational functi
 > \frac{3x^2 \cdot x^2}{2x^4 + x^4} = \frac{3x^4}{3x^4} = 1 \qquad (x \ne 0) ,
 > $$
 >
-> so it tends to $1$. By Theorem §91.1 the limit does not exist. (Along $y = mx$ the function is the constant $\frac{3m^2}{2 + m^4}$.)
+> so it tends to $1$. By [[§91 Limits and Continuity#^thm-91-1|Theorem §91.1]] the limit does not exist. (Along $y = mx$ the function is the constant $\frac{3m^2}{2 + m^4}$.)
 >
-> **(b)** $\displaystyle\lim_{(x, y) \to (3, 1)} e^{x^2 + 3y}$. The exponent $x^2 + 3y$ is a polynomial and $e^t$ is continuous, so the function is continuous on $\mathbb{R}^2$ by Theorem §91.5(b). Substituting, the limit is $e^{9 + 3} = e^{12}$.
+> **(b)** $\displaystyle\lim_{(x, y) \to (3, 1)} e^{x^2 + 3y}$. The exponent $x^2 + 3y$ is a polynomial and $e^t$ is continuous, so the function is continuous on $\mathbb{R}^2$ by [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5]](b). Substituting, the limit is $e^{9 + 3} = e^{12}$.
 >
 > **(c)** $\displaystyle\lim_{(x, y) \to (1, 2)} \frac{2x - y}{4x^2 - y^2}$. Substitution gives $\frac{2 - 2}{4 - 4} = \frac00$. The domain is $\{(x, y) \mid y \ne \pm 2x\}$, and at its points $2x - y \ne 0$, so we may factor and cancel:
 >

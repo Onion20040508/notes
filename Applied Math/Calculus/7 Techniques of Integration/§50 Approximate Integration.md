@@ -103,7 +103,7 @@ Throughout, $[a, b]$ is divided into $n$ subintervals of equal length $\Delta x 
 
 ^def-50-4
 
-In Example §50.1, $E_T \approx -0.002488$ and $E_M \approx 0.001239$. Repeating the computation for more values of $n$:
+In [[§50 Approximate Integration#^ex-50-1|Example §50.1]], $E_T \approx -0.002488$ and $E_M \approx 0.001239$. Repeating the computation for more values of $n$:
 
 | $n$ | $L_n$ | $R_n$ | $T_n$ | $M_n$ | $E_L$ | $E_R$ | $E_T$ | $E_M$ |
 |---|---|---|---|---|---|---|---|---|
@@ -142,7 +142,7 @@ In Example §50.1, $E_T \approx -0.002488$ and $E_M \approx 0.001239$. Repeating
 $K$ can be any number at least as large as all the values of $|f''(x)|$, but smaller $K$ gives better bounds. The bound is a worst case: the actual error can be much smaller.
 
 > [!example] Example §50.2: Choosing n for a Given Accuracy
-> **(a)** Bound the error of $T_5$ in Example §50.1. **(b)** How large should $n$ be to guarantee that $T_n$ and $M_n$ approximate $\int_1^2 \frac1x\,dx$ to within $0.0001$?
+> **(a)** Bound the error of $T_5$ in [[§50 Approximate Integration#^ex-50-1|Example §50.1]]. **(b)** How large should $n$ be to guarantee that $T_n$ and $M_n$ approximate $\int_1^2 \frac1x\,dx$ to within $0.0001$?
 >
 > **(a)** For $f(x) = 1/x$, $f'(x) = -1/x^2$ and $f''(x) = 2/x^3$. On $1 \le x \le 2$, $1/x \le 1$, so $|f''(x)| = 2/x^3 \le 2/1^3 = 2$. With $K = 2$, $a = 1$, $b = 2$, $n = 5$,
 >
@@ -214,7 +214,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 ^def-50-5
 
 > [!remark] Remark: Where Simpson's Rule Comes From
-> By Lemma §50.2, the area under the parabola through $P_0, P_1, P_2$ from $x_0$ to $x_2$ is $\frac{h}{3}(y_0 + 4y_1 + y_2)$, the one through $P_2, P_3, P_4$ gives $\frac{h}{3}(y_2 + 4y_3 + y_4)$, and so on. Adding the $n/2$ pieces,
+> By [[§50 Approximate Integration#^lem-50-2|Lemma §50.2]], the area under the parabola through $P_0, P_1, P_2$ from $x_0$ to $x_2$ is $\frac{h}{3}(y_0 + 4y_1 + y_2)$, the one through $P_2, P_3, P_4$ gives $\frac{h}{3}(y_2 + 4y_3 + y_4)$, and so on. Adding the $n/2$ pieces,
 >
 > $$
 > \frac{h}{3}(y_0 + 4y_1 + y_2) + \frac{h}{3}(y_2 + 4y_3 + y_4) + \cdots + \frac{h}{3}(y_{n-2} + 4y_{n-1} + y_n) = \frac{h}{3}(y_0 + 4y_1 + 2y_2 + 4y_3 + 2y_4 + \cdots + 2y_{n-2} + 4y_{n-1} + y_n) :
@@ -249,7 +249,7 @@ Simpson's Rule approximates the graph by parabolas instead of line segments. Now
 
 *Uses:* [[§50 Approximate Integration#^def-50-2|Def. §50.2]], [[§50 Approximate Integration#^def-50-3|Def. §50.3]], [[§50 Approximate Integration#^def-50-5|Def. §50.5]]
 
-Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_T|$, this weighting nearly cancels the two errors. In Example §50.1 with $n = 5$: $\frac13(0.695635) + \frac23(0.691908) \approx 0.693150 = S_{10}$.
+Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_T|$, this weighting nearly cancels the two errors. In [[§50 Approximate Integration#^ex-50-1|Example §50.1]] with $n = 5$: $\frac13(0.695635) + \frac23(0.691908) \approx 0.693150 = S_{10}$.
 
 ## Error Bound for Simpson's Rule
 
@@ -286,7 +286,7 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 > \frac{24(1)^5}{180n^4} < 0.0001, \qquad\text{that is,}\qquad n^4 > \frac{24}{180(0.0001)}, \qquad n > \frac{1}{\sqrt[4]{0.00075}} \approx 6.04 .
 > $$
 >
-> Since $n$ must be even, $n = 8$ suffices, against $n = 41$ for the Trapezoidal Rule and $n = 29$ for the Midpoint Rule (Example §50.2).
+> Since $n$ must be even, $n = 8$ suffices, against $n = 41$ for the Trapezoidal Rule and $n = 29$ for the Midpoint Rule ([[§50 Approximate Integration#^ex-50-2|Example §50.2]]).
 >
 > | $n$ | $M_n$ | $S_n$ | $E_M$ | $E_S$ |
 > |---|---|---|---|---|
@@ -311,7 +311,7 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 > M_{10} = 0.1\big[e^{0.0025} + e^{0.0225} + e^{0.0625} + e^{0.1225} + e^{0.2025} + e^{0.3025} + e^{0.4225} + e^{0.5625} + e^{0.7225} + e^{0.9025}\big] \approx 1.460393 .
 > $$
 >
-> For $f(x) = e^{x^2}$: $f'(x) = 2xe^{x^2}$ and $f''(x) = (2 + 4x^2)e^{x^2}$. For $0 \le x \le 1$, $x^2 \le 1$, so $0 \le f''(x) \le 6e$. With $K = 6e$, Theorem §50.1 gives
+> For $f(x) = e^{x^2}$: $f'(x) = 2xe^{x^2}$ and $f''(x) = (2 + 4x^2)e^{x^2}$. For $0 \le x \le 1$, $x^2 \le 1$, so $0 \le f''(x) \le 6e$. With $K = 6e$, [[§50 Approximate Integration#^thm-50-1|Theorem §50.1]] gives
 >
 > $$
 > |E_M| \le \frac{6e(1)^3}{24(10)^2} = \frac{e}{400} \approx 0.007 .
@@ -328,7 +328,7 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 > \end{aligned}
 > $$
 >
-> Differentiating twice more, $f^{(4)}(x) = (12 + 48x^2 + 16x^4)e^{x^2}$, so $0 \le f^{(4)}(x) \le (12 + 48 + 16)e = 76e$ on $[0, 1]$. With $K = 76e$, Theorem §50.4 gives
+> Differentiating twice more, $f^{(4)}(x) = (12 + 48x^2 + 16x^4)e^{x^2}$, so $0 \le f^{(4)}(x) \le (12 + 48 + 16)e = 76e$ on $[0, 1]$. With $K = 76e$, [[§50 Approximate Integration#^thm-50-4|Theorem §50.4]] gives
 >
 > $$
 > |E_S| \le \frac{76e(1)^5}{180(10)^4} \approx 0.000115 .

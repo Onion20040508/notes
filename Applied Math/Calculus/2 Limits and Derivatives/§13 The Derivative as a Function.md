@@ -29,9 +29,9 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 ^def-13-1
 
 > [!remark] Remark: Method — Computing and Sketching a Derivative
-> **From a formula** (Definition §13.1):
+> **From a formula** ([[§13 The Derivative as a Function#^def-13-1|Definition §13.1]]):
 > 1. Write the difference quotient $\dfrac{f(x + h) - f(x)}{h}$. During the limit, $h$ is the variable and $x$ is temporarily a constant.
-> 2. Simplify until the factor $h$ in the denominator cancels: expand powers (polynomials, Example §13.1), rationalize the numerator (roots, Example §13.2), or combine fractions over a common denominator (rational functions, Example §13.3).
+> 2. Simplify until the factor $h$ in the denominator cancels: expand powers (polynomials, [[§13 The Derivative as a Function#^ex-13-1|Example §13.1]]), rationalize the numerator (roots, [[§13 The Derivative as a Function#^ex-13-2|Example §13.2]]), or combine fractions over a common denominator (rational functions, [[§13 The Derivative as a Function#^ex-13-3|Example §13.3]]).
 > 3. Let $h \to 0$, usually by direct substitution.
 > 4. State the domain of $f'$: the $x$ for which the limit exists.
 >
@@ -211,7 +211,7 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 > - Complex-variables version: [[§19 Derivatives#^thm-19-1|342 Thm. §19.1]] (a function with a complex derivative at $z_0$ is continuous there).
 
 > [!remark] Remark: The Converse Is False
-> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7: both one-sided limits are $0$, so [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]] applies), but it is not differentiable at $0$ by Example §13.4. Read in the [[Contrapositive, Converse and Inverse|contrapositive]], Theorem §13.1 gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
+> There are functions that are continuous but not differentiable. For instance, $f(x) = |x|$ is continuous at $0$, because $\lim_{x \to 0} |x| = 0 = f(0)$ (Stewart's Example 2.3.7: both one-sided limits are $0$, so [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]] applies), but it is not differentiable at $0$ by [[§13 The Derivative as a Function#^ex-13-4|Example §13.4]]. Read in the [[Contrapositive, Converse and Inverse|contrapositive]], [[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]] gives a test: if $f$ is not continuous at $a$, then $f$ is not differentiable at $a$.
 
 ^rem-13-2
 
@@ -232,16 +232,16 @@ In [[§12 Derivatives and Rates of Change|§12]] the derivative was computed at 
 
 > [!remark] Remark: Three Ways to Fail
 > A function $f$ fails to be differentiable at $a$ in each of the following situations.
-> 1. **A corner** (or kink): the graph changes direction abruptly at $a$, as $|x|$ does at $0$ (Example §13.4). In trying to compute $f'(a)$, the left and right limits of the difference quotient are different.
-> 2. **A discontinuity**, for instance a jump discontinuity: by Theorem §13.1, $f$ is not differentiable where it is not continuous.
-> 3. **A vertical tangent** (Definition §13.4): the difference quotients become infinite, as for $\sqrt[3]{x}$ at $0$, or for $\sqrt{x}$ at $0$ from the right (Example §13.2).
+> 1. **A corner** (or kink): the graph changes direction abruptly at $a$, as $|x|$ does at $0$ ([[§13 The Derivative as a Function#^ex-13-4|Example §13.4]]). In trying to compute $f'(a)$, the left and right limits of the difference quotient are different.
+> 2. **A discontinuity**, for instance a jump discontinuity: by [[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]], $f$ is not differentiable where it is not continuous.
+> 3. **A vertical tangent** ([[§13 The Derivative as a Function#^def-13-4|Definition §13.4]]): the difference quotients become infinite, as for $\sqrt[3]{x}$ at $0$, or for $\sqrt{x}$ at $0$ from the right ([[§13 The Derivative as a Function#^ex-13-2|Example §13.2]]).
 >
 > There is also a visual test. If $f$ is differentiable at $a$, then zooming in toward $(a, f(a))$ the graph straightens out and looks more and more like a line (its tangent line). At a corner, no amount of zooming removes the sharp point.
 
 ^rem-13-3
 
 ![[m233-13-1.svg]]
-*The three ways for $f$ not to be differentiable at $a$. (a) A corner: the one-sided slopes $\lim_{h \to 0^\pm} \frac{f(a + h) - f(a)}{h}$ (dashed) differ. (b) A jump discontinuity: by Theorem §13.1 there can be no derivative. (c) A vertical tangent: $f$ is continuous at $a$, but the tangent lines (dashed) steepen without bound, here for a graph of the form $y = c + k\sqrt[3]{x - a}$.*
+*The three ways for $f$ not to be differentiable at $a$. (a) A corner: the one-sided slopes $\lim_{h \to 0^\pm} \frac{f(a + h) - f(a)}{h}$ (dashed) differ. (b) A jump discontinuity: by [[§13 The Derivative as a Function#^thm-13-1|Theorem §13.1]] there can be no derivative. (c) A vertical tangent: $f$ is continuous at $a$, but the tangent lines (dashed) steepen without bound, here for a graph of the form $y = c + k\sqrt[3]{x - a}$.*
 
 ## Higher Derivatives
 
@@ -275,7 +275,7 @@ $f''(x)$ is the slope of the curve $y = f'(x)$ at $(x, f'(x))$: the rate of chan
 > [!example] Example §13.5: Higher Derivatives of a Cubic
 > If $f(x) = x^3 - x$, find and interpret $f''(x)$, and find $f'''(x)$ and $f^{(4)}(x)$.
 >
-> By Example §13.1, $f'(x) = 3x^2 - 1$. So
+> By [[§13 The Derivative as a Function#^ex-13-1|Example §13.1]], $f'(x) = 3x^2 - 1$. So
 >
 > $$
 > \begin{aligned}

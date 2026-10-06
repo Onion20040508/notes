@@ -57,7 +57,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 >
 > **(ii)** If $|a_{n+1}/a_n| \to L > 1$ or $|a_{n+1}/a_n| \to \infty$, the ratio is eventually greater than $1$: there is an integer $N$ such that $|a_{n+1}/a_n| > 1$ whenever $n \ge N$. So $|a_{n+1}| > |a_n|$ whenever $n \ge N$, hence $|a_n| \ge |a_N| > 0$ for all $n \ge N$, and $\lim_{n \to \infty} a_n \ne 0$. Therefore $\sum a_n$ diverges by the Test for Divergence.
 >
-> **(iii)** Example §74.3 below exhibits two series with ratio limit $1$, one divergent and one convergent.
+> **(iii)** [[§74 The Ratio and Root Tests#^ex-74-3|Example §74.3]] below exhibits two series with ratio limit $1$, one divergent and one convergent.
 
 ^pf-74-1
 
@@ -111,7 +111,7 @@ For a geometric series $\sum a r^{n-1}$ the ratio of consecutive terms is consta
 >
 > For $a_n = 1/n^2$: $\displaystyle\left| \frac{a_{n+1}}{a_n} \right| = \frac{1/(n+1)^2}{1/n^2} = \left( \frac{n}{n+1} \right)^2 \to 1$.
 >
-> In both cases the Ratio Test gives no answer. The first series is the harmonic series, which diverges; the second is a $p$-series with $p > 1$, which converges. So a ratio limit of $1$ is compatible with either behavior, which proves part (iii). The Ratio Test always fails for $p$-series, and is usually conclusive when $a_n$ contains an exponential or a factorial, as in Examples §74.1 and §74.2.
+> In both cases the Ratio Test gives no answer. The first series is the harmonic series, which diverges; the second is a $p$-series with $p > 1$, which converges. So a ratio limit of $1$ is compatible with either behavior, which proves part (iii). The Ratio Test always fails for $p$-series, and is usually conclusive when $a_n$ contains an exponential or a factorial, as in [[§74 The Ratio and Root Tests#^ex-74-1|Examples §74.1]] and §74.2.
 >
 > *Stewart: Example 11.6.3*
 

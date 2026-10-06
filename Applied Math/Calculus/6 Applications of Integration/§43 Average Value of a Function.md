@@ -57,6 +57,11 @@ $$
 
 Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\rm avg}$? For a temperature over a day there are typically such times (Stewart's graph has two, just before noon and just before midnight). For continuous functions the answer is always yes.
 
+> [!remark] Remark: Why It Works
+> For a positive $f$: there is a number $c$ such that the rectangle with base $[a, b]$ and height $f(c)$ has the same area as the region under the graph of $f$ from $a$ to $b$. Picturesquely, one can always chop off the top of a (two-dimensional) mountain at a certain height, namely $f_{\rm avg}$, and use it to fill in the valleys so that the mountain becomes completely flat. Since the graph of a continuous function is unbroken, it must cross that height.
+
+^rem-43-1
+
 > [!theorem] Theorem §43.1: The Mean Value Theorem for Integrals
 > If $f$ is continuous on $[a, b]$, then there exists a number $c$ in $[a, b]$ such that
 >
@@ -69,11 +74,6 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 > *Stewart: 6.5, The Mean Value Theorem for Integrals*
 
 ^thm-43-1
-
-> [!remark] Remark: Why It Works
-> For a positive $f$: there is a number $c$ such that the rectangle with base $[a, b]$ and height $f(c)$ has the same area as the region under the graph of $f$ from $a$ to $b$. Picturesquely, one can always chop off the top of a (two-dimensional) mountain at a certain height, namely $f_{\rm avg}$, and use it to fill in the valleys so that the mountain becomes completely flat. Since the graph of a continuous function is unbroken, it must cross that height.
-
-^rem-43-1
 
 > [!proof]+ Proof
 > *Stewart outlines this proof in Exercise 28: the theorem is a consequence of the Mean Value Theorem for derivatives and the Fundamental Theorem of Calculus.* Let
@@ -98,20 +98,20 @@ Is there a number $c$ at which $f$ takes exactly its average value, $f(c) = f_{\
 > - Rigorous treatment: [[§33 Properties of the Riemann Integral#^thm-33-9|451 Thm. §33.9]] proves it with the [[§10 Continuity#^thm-10-10|Intermediate Value Theorem]] instead (the average lies between the minimum and maximum of $f$), [[§33 Properties of the Riemann Integral#^prop-33-11|451 Prop. §33.11]] shows that $c$ can be taken in $(a, b)$, and [[§33 Properties of the Riemann Integral#^thm-33-10|451 Thm. §33.10]] is the weighted version.
 
 > [!example] Example §43.2: Where f Equals Its Average
-> $f(x) = 1 + x^2$ is continuous on $[-1, 2]$, so by Theorem §43.1 there is a number $c$ in $[-1, 2]$ such that
+> $f(x) = 1 + x^2$ is continuous on $[-1, 2]$, so by [[§43 Average Value of a Function#^thm-43-1|Theorem §43.1]] there is a number $c$ in $[-1, 2]$ such that
 >
 > $$
 > \int_{-1}^{2} (1 + x^2)\,dx = f(c)\,[2 - (-1)] .
 > $$
 >
-> Here $c$ can be found explicitly. By Example §43.1, $f_{\rm avg} = 2$, so $c$ satisfies $f(c) = 1 + c^2 = 2$, that is $c^2 = 1$. In this case there happen to be two such numbers in $[-1, 2]$, namely $c = \pm 1$.
+> Here $c$ can be found explicitly. By [[§43 Average Value of a Function#^ex-43-1|Example §43.1]], $f_{\rm avg} = 2$, so $c$ satisfies $f(c) = 1 + c^2 = 2$, that is $c^2 = 1$. In this case there happen to be two such numbers in $[-1, 2]$, namely $c = \pm 1$.
 >
 > *Stewart: Example 6.5.2*
 
 ^ex-43-2
 
 ![[m233-43-1.svg]]
-*Examples §43.1 and §43.2. The rectangle over $[-1, 2]$ of height $f_{\rm avg} = 2$ has the same area, $6$, as the region under $y = 1 + x^2$: the part of the graph above the red line (blue, area $\frac43$) exactly fills the valley below it (orange, area $\frac43$). The graph meets the line at $c = -1$ and $c = 1$, both numbers given by the Mean Value Theorem for Integrals.*
+*Examples [[§43 Average Value of a Function#^ex-43-1|§43.1]] and [[§43 Average Value of a Function#^ex-43-2|§43.2]]. The rectangle over $[-1, 2]$ of height $f_{\rm avg} = 2$ has the same area, $6$, as the region under $y = 1 + x^2$: the part of the graph above the red line (blue, area $\frac43$) exactly fills the valley below it (orange, area $\frac43$). The graph meets the line at $c = -1$ and $c = 1$, both numbers given by the Mean Value Theorem for Integrals.*
 
 > [!example] Example §43.3: Average Velocity
 > Show that the average velocity of a car over a time interval $[t_1, t_2]$ is the same as the average of its velocities during the trip.

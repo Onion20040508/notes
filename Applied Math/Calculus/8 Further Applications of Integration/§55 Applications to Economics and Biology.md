@@ -42,7 +42,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 > (\text{savings per unit})(\text{number of units}) = \big[ p(x_i) - P \big]\,\Delta x .
 > $$
 >
-> Adding over all such groups of consumers, the total savings are $\sum_{i=1}^n [p(x_i) - P]\,\Delta x$, the area of the rectangles in the figure below. This is a Riemann sum of $p(x) - P$ on $[0, X]$, so as $n \to \infty$ it tends to the integral of Definition §55.2: the amount of money saved by consumers who buy the commodity at price $P$, corresponding to the amount demanded $X$.
+> Adding over all such groups of consumers, the total savings are $\sum_{i=1}^n [p(x_i) - P]\,\Delta x$, the area of the rectangles in the figure below. This is a Riemann sum of $p(x) - P$ on $[0, X]$, so as $n \to \infty$ it tends to the integral of [[§55 Applications to Economics and Biology#^def-55-2|Definition §55.2]]: the amount of money saved by consumers who buy the commodity at price $P$, corresponding to the amount demanded $X$.
 
 ^rem-55-1
 
@@ -64,7 +64,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 > P = 1200 - (0.2)(500) - (0.0001)(500)^2 = 1200 - 100 - 25 = 1075 .
 > $$
 >
-> By Definition §55.2, the consumer surplus is
+> By [[§55 Applications to Economics and Biology#^def-55-2|Definition §55.2]], the consumer surplus is
 >
 > $$
 > \begin{aligned}
@@ -123,7 +123,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 >
 > So $200$ units are sold at $\$40$.
 >
-> **Consumer surplus** (Definition §55.2):
+> **Consumer surplus** ([[§55 Applications to Economics and Biology#^def-55-2|Definition §55.2]]):
 >
 > $$
 > \int_0^{200} \Big[ \Big(50 - \frac{x}{20}\Big) - 40 \Big]\,dx = \int_0^{200} \Big( 10 - \frac{x}{20} \Big)\,dx = \Big[ 10x - \frac{x^2}{40} \Big]_0^{200} = 2000 - 1000 = \$1000 .
@@ -142,7 +142,7 @@ Three more quantities come out of the slice-and-add strategy of [[§54 Applicati
 ^ex-55-2
 
 ![[m233-55-2.svg]]
-*Example §55.2. At the equilibrium $(200, 40)$ the consumer surplus (blue) lies between the demand curve and the price line, and the producer surplus (green) between the price line and the supply curve.*
+*[[§55 Applications to Economics and Biology#^ex-55-2|Example §55.2]]. At the equilibrium $(200, 40)$ the consumer surplus (blue) lies between the demand curve and the price line, and the producer surplus (green) between the price line and the supply curve.*
 
 ## Blood Flow
 
@@ -262,7 +262,7 @@ Blood returns from the body through the veins, enters the right atrium of the he
 > \end{aligned}
 > $$
 >
-> By Theorem §55.2,
+> By [[§55 Applications to Economics and Biology#^thm-55-2|Theorem §55.2]],
 >
 > $$
 > F = \frac{A}{\int_0^{10} c(t)\,dt} \approx \frac{5}{41.87} \approx 0.12\ \text{L/s} = 7.2\ \text{L/min} .

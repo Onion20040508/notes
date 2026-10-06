@@ -15,6 +15,7 @@ tags: [chapter, topology]
 - [[§10 Product Topology on Arbitrary Products]]
 - [[§11 Metric Topology]]
 - [[§12 Quotient Topology]]
+- [[§12a ℝ^ω, Discrete Spaces and the Torus]]
 
 ## Central results
 - [[Universal Property of Quotient Maps]] (§12.3)

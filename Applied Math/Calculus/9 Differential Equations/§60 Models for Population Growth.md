@@ -130,14 +130,14 @@ $$
 >
 > Only the first quadrant matters, since negative populations are not meaningful and we are interested in $t \ge 0$. The equation is **autonomous** ($dP/dt$ depends only on $P$, not on $t$; [[§58 Direction Fields and Euler's Method#^def-58-3|Definition §58.3]]), so the slopes are the same along any horizontal line. The slopes are positive for $0 < P < 1000$ and negative for $P > 1000$. They are small when $P$ is close to $0$ or to $1000$. The solutions move away from the equilibrium solution $P = 0$ and toward the equilibrium solution $P = 1000$.
 >
-> Sketching solution curves with initial populations $P(0) = 100$, $400$ and $1300$ in the field: curves that start below $P = 1000$ increase, and the one that starts above decreases. The slope $0.08P(1 - P/1000)$ is largest at $P = 500$ (a downward parabola in $P$, with zeros $0$ and $1000$). So the curves that start below $500$ get steeper until $P \approx 500$ and less steep afterward: they have inflection points near $P = 500$. Proposition §60.3 shows that the inflection happens exactly at $P = 500$.
+> Sketching solution curves with initial populations $P(0) = 100$, $400$ and $1300$ in the field: curves that start below $P = 1000$ increase, and the one that starts above decreases. The slope $0.08P(1 - P/1000)$ is largest at $P = 500$ (a downward parabola in $P$, with zeros $0$ and $1000$). So the curves that start below $500$ get steeper until $P \approx 500$ and less steep afterward: they have inflection points near $P = 500$. [[§60 Models for Population Growth#^prop-60-3|Proposition §60.3]] shows that the inflection happens exactly at $P = 500$.
 >
 > *Stewart: Example 9.4.1*
 
 ^ex-60-1
 
 ![[m233-60-1.svg]]
-*The direction field of $dP/dt = 0.08P(1 - P/1000)$ (gray) and the solutions with $P(0) = 100, 400, 1300$ (blue), drawn from the formula of Theorem §60.2. The slopes depend only on $P$. All three curves approach the equilibrium $P = M = 1000$ (green). The two curves that start below $M/2 = 500$ have their inflection points (red) exactly on the line $P = 500$, at $t = \frac{\ln 9}{0.08} \approx 27.5$ and $t = \frac{\ln 1.5}{0.08} \approx 5.1$.*
+*The direction field of $dP/dt = 0.08P(1 - P/1000)$ (gray) and the solutions with $P(0) = 100, 400, 1300$ (blue), drawn from the formula of [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]. The slopes depend only on $P$. All three curves approach the equilibrium $P = M = 1000$ (green). The two curves that start below $M/2 = 500$ have their inflection points (red) exactly on the line $P = 500$, at $t = \frac{\ln 9}{0.08} \approx 27.5$ and $t = \frac{\ln 1.5}{0.08} \approx 5.1$.*
 
 The logistic equation is separable, so it can be solved explicitly with the method of [[§59 Separable Equations|§59]].
 
@@ -228,7 +228,7 @@ The logistic equation is separable, so it can be solved explicitly with the meth
 > P'' = \Big(k - \frac{2k}{M}P\Big)P' = k\Big(1 - \frac{2P}{M}\Big) \cdot kP\Big(1 - \frac{P}{M}\Big) = k^2 P\Big(1 - \frac{P}{M}\Big)\Big(1 - \frac{2P}{M}\Big) .
 > $$
 >
-> Now let $0 < P_0 < M/2$, so $A = (M - P_0)/P_0 > 1$ in Theorem §60.2. Then $0 < P(t) < M$ for all $t \ge 0$, so $P$ is increasing ([[§60 Models for Population Growth#^rem-60-2|Remark: Reading the Logistic Equation]]). By (7), $P(t) = M/2$ exactly when $A\,e^{-kt} = 1$, that is, at $t^* = (\ln A)/k > 0$. For $0 \le t < t^*$ we have $P < M/2$, so all three factors $P$, $1 - P/M$, $1 - 2P/M$ are positive and $P'' > 0$. For $t > t^*$ we have $M/2 < P < M$, so $1 - 2P/M < 0$ and $P'' < 0$. So the graph changes from concave upward to concave downward at $t^*$: an inflection point ([[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Definition §27.2]]). There $P'$ changes from increasing to decreasing, so $P'$ has its maximum at $t^*$: the population grows fastest when it reaches half its carrying capacity.
+> Now let $0 < P_0 < M/2$, so $A = (M - P_0)/P_0 > 1$ in [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]]. Then $0 < P(t) < M$ for all $t \ge 0$, so $P$ is increasing ([[§60 Models for Population Growth#^rem-60-2|Remark: Reading the Logistic Equation]]). By (7), $P(t) = M/2$ exactly when $A\,e^{-kt} = 1$, that is, at $t^* = (\ln A)/k > 0$. For $0 \le t < t^*$ we have $P < M/2$, so all three factors $P$, $1 - P/M$, $1 - 2P/M$ are positive and $P'' > 0$. For $t > t^*$ we have $M/2 < P < M$, so $1 - 2P/M < 0$ and $P'' < 0$. So the graph changes from concave upward to concave downward at $t^*$: an inflection point ([[§27 What Derivatives Tell Us About the Shape of a Graph#^def-27-2|Definition §27.2]]). There $P'$ changes from increasing to decreasing, so $P'$ has its maximum at $t^*$: the population grows fastest when it reaches half its carrying capacity.
 
 ^pf-60-3
 
@@ -248,7 +248,7 @@ The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave 
 >
 > and use it to find the population sizes $P(40)$ and $P(80)$. At what time does the population reach $900$?
 >
-> This is a logistic equation with $k = 0.08$, carrying capacity $M = 1000$ and initial population $P_0 = 100$. By Theorem §60.2,
+> This is a logistic equation with $k = 0.08$, carrying capacity $M = 1000$ and initial population $P_0 = 100$. By [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]],
 >
 > $$
 > P(t) = \frac{1000}{1 + A\,e^{-0.08t}}, \qquad A = \frac{1000 - 100}{100} = 9, \qquad\text{so}\qquad P(t) = \frac{1000}{1 + 9e^{-0.08t}} .
@@ -275,7 +275,7 @@ The same formula shows that a solution starting at $M/2 \le P_0 < M$ is concave 
 > t = \frac{\ln 81}{0.08} \approx 54.9 .
 > $$
 >
-> So the population reaches $900$ when $t$ is approximately $55$. This is the lowest curve in the figure above; its inflection point, where $P = 500$, is at $t = (\ln 9)/0.08 \approx 27.5$ by Proposition §60.3.
+> So the population reaches $900$ when $t$ is approximately $55$. This is the lowest curve in the figure above; its inflection point, where $P = 500$, is at $t = (\ln 9)/0.08 \approx 27.5$ by [[§60 Models for Population Growth#^prop-60-3|Proposition §60.3]].
 >
 > *Stewart: Example 9.4.2*
 
@@ -288,7 +288,7 @@ In the 1930s the biologist G. F. Gause conducted an experiment with the protozoa
 > [!example] Example §60.3: Gause's Paramecium Data
 > Find the exponential and logistic models for Gause's data (the row "observed" in the table below). Compare the predicted values with the observed values and comment on the fit for each model.
 >
-> **Exponential model.** With relative growth rate $k = 0.7944$ and initial population $P_0 = 2$, Theorem §60.1 gives
+> **Exponential model.** With relative growth rate $k = 0.7944$ and initial population $P_0 = 2$, [[§60 Models for Population Growth#^thm-60-1|Theorem §60.1]] gives
 >
 > $$
 > P(t) = P_0\,e^{kt} = 2e^{0.7944t} .
@@ -300,7 +300,7 @@ In the 1930s the biologist G. F. Gause conducted an experiment with the protozoa
 > \frac{1}{P_0}\,\frac{dP}{dt}\bigg|_{t = 0} = k\Big(1 - \frac{2}{64}\Big) \approx k ,
 > $$
 >
-> very close to the value for the exponential model. Theorem §60.2 gives
+> very close to the value for the exponential model. [[§60 Models for Population Growth#^thm-60-2|Theorem §60.2]] gives
 >
 > $$
 > P(t) = \frac{64}{1 + A\,e^{-0.7944t}}, \qquad A = \frac{M - P_0}{P_0} = \frac{64 - 2}{2} = 31, \qquad\text{so}\qquad P(t) = \frac{64}{1 + 31e^{-0.7944t}} .

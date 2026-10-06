@@ -85,7 +85,7 @@ In [[§29 Summary of Curve Sketching|§29]] the graph was the end product of a c
 ^ex-30-2
 
 ![[m233-30-1.svg]]
-*Example §30.2: $y = (x^2 + 7x + 3)/x^2$, with its asymptotes, the $y$-axis and the line $y = 1$ (dashed). The exact features from calculus: the absolute minimum $(-\frac67, -\frac{37}{12})$ (blue) and the inflection point $(-\frac97, -\frac{71}{27})$ (red), very close together. On the left the curve approaches $y = 1$ from below, on the right from above.*
+*[[§30 Graphing with Calculus and Technology#^ex-30-2|Example §30.2]]: $y = (x^2 + 7x + 3)/x^2$, with its asymptotes, the $y$-axis and the line $y = 1$ (dashed). The exact features from calculus: the absolute minimum $(-\frac67, -\frac{37}{12})$ (blue) and the inflection point $(-\frac97, -\frac{71}{27})$ (red), very close together. On the left the curve approaches $y = 1$ from below, on the right from above.*
 
 > [!example] Example §30.3: Letting the Formula Guide the Zooming
 > Graph $f(x) = \dfrac{x^2(x + 1)^3}{(x - 2)^2(x - 4)^4}$.

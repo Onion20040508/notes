@@ -437,7 +437,7 @@ The successor of an integer was used to explain the induction principle ([[§5 T
 > (a + b) + s(k) = s\big((a + b) + k\big) = s\big(a + (b + k)\big) = a + s(b + k) = a + \big(b + s(k)\big),
 > $$
 >
-> using Def. §9.7(2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
+> using [[§9 Injections, Surjections and Bijections#^def-9-7|Def. §9.7]](2) three times and the inductive hypothesis once. So it holds for $c = s(k)$.
 >
 > **(ii) Commutativity:** $a + b = b + a$. *Step 1:* $a + 1 = 1 + a$, by induction on $a$. For $a = 1$ it is trivial. If $k + 1 = 1 + k$, then $s(k) + 1 = s(s(k))$ and $1 + s(k) = s(1 + k) = s(k + 1) = s(s(k))$, so $s(k) + 1 = 1 + s(k)$.
 >

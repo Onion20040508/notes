@@ -22,7 +22,7 @@ tags: [topology, hub]
 - [[§17 Local Compactness#^thm-17-6|Theorem §17.6: Characterization of Local Compactness (Munkres 29.2)]]
 - [[§17 Local Compactness#^cor-17-7|Corollary §17.7: Subspaces Inherit Local Compactness (Munkres 29.3)]]
 - [[§20 Normal Spaces#^thm-20-2|Theorem §20.2: Every Compact Hausdorff Space is Normal]]
-- [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
+- [[§25a Retractions and Fixed Points#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]

@@ -18,27 +18,6 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 
 ^thm-13-1
 
-> [!example] Example §13.1: Illustration of Egorov's Theorem
-> Let $f_k(x) = x^k$ for $x \in [0, 1]$. Then $f_k \to f$ pointwise where $f(x) = 0$ for $0 \leq x < 1$ and $f(1) = 1$.
->
-> The convergence is **not uniform** on $[0, 1]$ ([[§12 Measurable Functions#^ex-12-4|Example §12.4]]): for $0 \leq x < 1$, we need $x^k < \epsilon$, which requires $k > \frac{\ln \epsilon}{\ln x} \to \infty$ as $x \to 1^-$.
->
-> However, for any $\delta > 0$, the convergence **is uniform** on $[0, 1 - \delta]$:
->
-> $$
-> \sup_{x \in [0, 1-\delta]} x^k = (1 - \delta)^k < \epsilon \quad \text{when } k > \frac{\ln \epsilon}{\ln(1 - \delta)}.
-> $$
->
-> This bound is independent of $x$, so convergence is uniform on $[0, 1 - \delta]$. Applying this with $\delta/2$ in place of $\delta$, the set $E_\delta = (1 - \delta/2, 1]$ in Egorov's Theorem has measure $\delta/2 < \delta$.
-
-^ex-13-1
-
-![[m551-13-1.svg]]
-*Egorov for $f_k(x) = x^k$ on $[0,1]$: the convergence to $0$ on $[0,1)$ is not uniform, since every $x^k$ climbs back to $1$ near $x = 1$. Cutting away a set of length $\delta$ (red) cures this: on $[0, 1-\delta]$ we have $x^k \leq (1-\delta)^k$, which is below $\epsilon$ for all large $k$ (here $k = 16, 32$), at every $x$ at once.*
-
-> [!remark]- Connections
-> - MATH 451 version of the non-uniformity: [[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]]; the sup test used here is [[§24 Uniform Convergence#^thm-24-1|451 Theorem §24.1]].
-
 > [!proof]+ Proof of Egorov's Theorem
 > **Step 1: Reduction to finite-valued $f$.**
 >
@@ -112,6 +91,27 @@ Egorov's theorem states that on sets of finite measure, [[§12 Measurable Functi
 > [!remark]- Connections
 > - MATH 451 uniform convergence: [[§24 Uniform Convergence#^def-24-2|451 Definition §24.2]].
 > - Applied with $\delta = 1/n$ in [[Measure Theory Problem-Solving Techniques#^ex-19-18|Technique 12: Iterated ε-Extraction (HW5 P2)]].
+
+> [!example] Example §13.1: Illustration of Egorov's Theorem
+> Let $f_k(x) = x^k$ for $x \in [0, 1]$. Then $f_k \to f$ pointwise where $f(x) = 0$ for $0 \leq x < 1$ and $f(1) = 1$.
+>
+> The convergence is **not uniform** on $[0, 1]$ ([[§12 Measurable Functions#^ex-12-4|Example §12.4]]): for $0 \leq x < 1$, we need $x^k < \epsilon$, which requires $k > \frac{\ln \epsilon}{\ln x} \to \infty$ as $x \to 1^-$.
+>
+> However, for any $\delta > 0$, the convergence **is uniform** on $[0, 1 - \delta]$:
+>
+> $$
+> \sup_{x \in [0, 1-\delta]} x^k = (1 - \delta)^k < \epsilon \quad \text{when } k > \frac{\ln \epsilon}{\ln(1 - \delta)}.
+> $$
+>
+> This bound is independent of $x$, so convergence is uniform on $[0, 1 - \delta]$. Applying this with $\delta/2$ in place of $\delta$, the set $E_\delta = (1 - \delta/2, 1]$ in Egorov's Theorem has measure $\delta/2 < \delta$.
+
+^ex-13-1
+
+![[m551-13-1.svg]]
+*Egorov for $f_k(x) = x^k$ on $[0,1]$: the convergence to $0$ on $[0,1)$ is not uniform, since every $x^k$ climbs back to $1$ near $x = 1$. Cutting away a set of length $\delta$ (red) cures this: on $[0, 1-\delta]$ we have $x^k \leq (1-\delta)^k$, which is below $\epsilon$ for all large $k$ (here $k = 16, 32$), at every $x$ at once.*
+
+> [!remark]- Connections
+> - MATH 451 version of the non-uniformity: [[§24 Uniform Convergence#^ex-24-2|451 Example §24.2]]; the sup test used here is [[§24 Uniform Convergence#^thm-24-1|451 Theorem §24.1]].
 
 > [!remark] Remark: Finite Measure is Necessary
 > The assumption $m(E) < \infty$ is essential. Consider $f_k = \chi_{[k, k+1]}$ on $E = \mathbb{R}$. Then $f_k \to 0$ pointwise (for each $x$, eventually $x \notin [k, k+1]$), but on any set $A$ with $m(\mathbb{R} \setminus A) < \infty$, we have $[k, k+1] \cap A \neq \emptyset$ for large $k$, so $\sup_{x \in A} f_k(x) = 1$ does not converge to $0$.

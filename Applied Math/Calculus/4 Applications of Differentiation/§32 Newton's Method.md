@@ -46,7 +46,7 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 > x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \qquad (n = 1, 2, 3, \ldots) \qquad (2)
 > $$
 >
-> as long as $f'(x_n) \ne 0$. By Proposition §32.1, $x_{n+1}$ is the $x$-intercept of the tangent line at $(x_n, f(x_n))$. If the numbers $x_n$ become closer and closer to $r$ as $n$ becomes large, the sequence **converges** to $r$, and we write $\lim_{n \to \infty} x_n = r$ (sequences: [[§69 Sequences#^def-69-2|Def. §69.2]]).
+> as long as $f'(x_n) \ne 0$. By [[§32 Newton's Method#^prop-32-1|Proposition §32.1]], $x_{n+1}$ is the $x$-intercept of the tangent line at $(x_n, f(x_n))$. If the numbers $x_n$ become closer and closer to $r$ as $n$ becomes large, the sequence **converges** to $r$, and we write $\lim_{n \to \infty} x_n = r$ (sequences: [[§69 Sequences#^def-69-2|Def. §69.2]]).
 >
 > The step from $n$ to $n + 1$ is the same for every $n$: Newton's method is an **iterative** process, well suited to a programmable calculator or a computer.
 >

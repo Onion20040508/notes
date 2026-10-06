@@ -26,18 +26,6 @@ Arithmetic begins with division with remainder: every integer $a$ is $bq + r$ wi
 
 ^thm-15-1
 
-> [!definition] Definition §15.1: Quotient and Remainder
-> In [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], $q$ is the **quotient** and $r$ the **remainder** on dividing $a$ by $b$. Since $r = a - bq$, the condition $0 \le r < b$ says $bq \le a < b(q+1)$: the quotient is the greatest integer $\le a/b$.
->
-> *Eccles: Section 15.1*
-
-^def-15-1
-
-> [!remark] Remark: Constructing the Proof
-> There are two separate claims: **existence** of $q, r$ and **uniqueness**. (Students often forget the second; it is the half used most.) Since $q$ determines $r = a - bq$, existence asks only for an integer $q$ with $bq \le a < b(q+1)$. For $a \ge 0$ we *define* $q$ as the maximum of the finite set $A = \{k \in \Z \mid k \ge 0 \text{ and } bk \le a\}$. Then $bq \le a$ because $q \in A$. The other inequality, $b(q+1) > a$, says exactly that $q + 1 \notin A$, which is what maximality gives. Negative $a$ is reduced to $-a$, as for $b = 2$ in [[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]. For uniqueness: two remainders differ by a multiple of $b$, and two numbers in $\{0, \ldots, b-1\}$ are less than $b$ apart, so the multiple is $0$.
-
-^rem-15-1
-
 > [!proof]+ Proof
 > **Existence for $a \ge 0$.** Let $A = \{k \in \Z \mid k \ge 0 \text{ and } bk \le a\}$. Then $0 \in A$, since $b \cdot 0 = 0 \le a$. And $A$ is finite: if $k \in A$ then $k \le bk \le a$ (as $k \ge 0$ and $b \ge 1$), so $A \subseteq \{0, 1, \ldots, a\}$. A finite non-empty set of integers has a maximum element ([[§11 Properties of Finite Sets#^prop-11-9|Proposition §11.9]]); let $q = \max A$ and $r = a - bq$, so $a = bq + r$.
 >
@@ -62,6 +50,18 @@ Arithmetic begins with division with remainder: every integer $a$ is $bq + r$ wi
 > [!remark]- Connections
 > - Same result, with existence proved by well-ordering (the route of Eccles's footnote): [[§6 Divisibility and Congruence#^lem-6-1|493 Lemma §6.1]] (the Division Algorithm), where $r$ is also written $a \bmod n$ ([[§6 Divisibility and Congruence#^def-6-2|493 Def. §6.2]]).
 > - It is the only tool used to classify the subgroups of $\Z$: [[§5 A Zoo of Subgroups#^prop-5-1|493 Prop. §5.1]].
+
+> [!definition] Definition §15.1: Quotient and Remainder
+> In [[§15 The Division Theorem#^thm-15-1|Theorem §15.1]], $q$ is the **quotient** and $r$ the **remainder** on dividing $a$ by $b$. Since $r = a - bq$, the condition $0 \le r < b$ says $bq \le a < b(q+1)$: the quotient is the greatest integer $\le a/b$.
+>
+> *Eccles: Section 15.1*
+
+^def-15-1
+
+> [!remark] Remark: Constructing the Proof
+> There are two separate claims: **existence** of $q, r$ and **uniqueness**. (Students often forget the second; it is the half used most.) Since $q$ determines $r = a - bq$, existence asks only for an integer $q$ with $bq \le a < b(q+1)$. For $a \ge 0$ we *define* $q$ as the maximum of the finite set $A = \{k \in \Z \mid k \ge 0 \text{ and } bk \le a\}$. Then $bq \le a$ because $q \in A$. The other inequality, $b(q+1) > a$, says exactly that $q + 1 \notin A$, which is what maximality gives. Negative $a$ is reduced to $-a$, as for $b = 2$ in [[§11 Properties of Finite Sets#^prop-11-11|Proposition §11.11]]. For uniqueness: two remainders differ by a multiple of $b$, and two numbers in $\{0, \ldots, b-1\}$ are less than $b$ apart, so the multiple is $0$.
+
+^rem-15-1
 
 > [!remark]- Remark: Other Routes to Existence
 > Eccles's footnote: drop the condition $k \ge 0$ and use $A' = \{k \in \Z \mid bk \le a\}$ for every $a$. This set is infinite, since it contains all large negative integers, but it is non-empty and bounded above by $|a|$, so it still has a maximum. Getting that maximum needs the well-ordering principle ([[§5 The Induction Principle#^cor-5-7|Corollary §5.7]], applied to $\{|a| + 1 - k \mid k \in A'\}$) rather than the finite-set fact. Eccles keeps to finite sets, and in practice one handles $a < 0$ through $-a$ anyway, as in [[§15 The Division Theorem#^ex-15-1|Example §15.1]] below.

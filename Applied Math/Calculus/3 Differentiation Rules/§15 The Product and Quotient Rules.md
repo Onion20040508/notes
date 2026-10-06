@@ -17,6 +17,14 @@ The derivative of a sum is the sum of the derivatives ([[§14 Derivatives of Pol
 
 By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' = f'g'$. One example shows that this is wrong. Let $f(x) = x$ and $g(x) = x^2$. Then $f'(x) = 1$ and $g'(x) = 2x$, so $f'(x)g'(x) = 2x$. But $(fg)(x) = x^3$, so $(fg)'(x) = 3x^2$.
 
+> [!remark] Remark: Why It Works
+> Suppose $u$ and $v$ are positive and read $uv$ as the area of a rectangle with sides $u$ and $v$. When $x$ changes by $\Delta x$, the sides change by $\Delta u$ and $\Delta v$, and the area grows by three pieces: a strip $u\,\Delta v$, a strip $v\,\Delta u$, and a corner $\Delta u\,\Delta v$ (figure below). The two strips give the two terms of the Product Rule. The corner is a product of two small changes, so it is negligible even after dividing by $\Delta x$.
+
+^rem-15-1
+
+![[m233-15-1.svg]]
+*The change in the area $uv$ of a rectangle when its sides grow by $\Delta u$ and $\Delta v$: two strips $u\,\Delta v$ and $v\,\Delta u$ (blue and green) and a corner $\Delta u\,\Delta v$ (red). Divided by $\Delta x$, the strips tend to $u\,\frac{dv}{dx}$ and $v\,\frac{du}{dx}$, and the corner tends to $0 \cdot \frac{dv}{dx} = 0$.*
+
 > [!theorem] Theorem §15.1: The Product Rule
 > If $f$ and $g$ are both differentiable, then
 >
@@ -33,14 +41,6 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 > *Stewart: 3.2, The Product Rule and Equation 2*
 
 ^thm-15-1
-
-> [!remark] Remark: Why It Works
-> Suppose $u$ and $v$ are positive and read $uv$ as the area of a rectangle with sides $u$ and $v$. When $x$ changes by $\Delta x$, the sides change by $\Delta u$ and $\Delta v$, and the area grows by three pieces: a strip $u\,\Delta v$, a strip $v\,\Delta u$, and a corner $\Delta u\,\Delta v$ (figure below). The two strips give the two terms of the Product Rule. The corner is a product of two small changes, so it is negligible even after dividing by $\Delta x$.
-
-^rem-15-1
-
-![[m233-15-1.svg]]
-*The change in the area $uv$ of a rectangle when its sides grow by $\Delta u$ and $\Delta v$: two strips $u\,\Delta v$ and $v\,\Delta u$ (blue and green) and a corner $\Delta u\,\Delta v$ (red). Divided by $\Delta x$, the strips tend to $u\,\frac{dv}{dx}$ and $v\,\frac{du}{dx}$, and the corner tends to $0 \cdot \frac{dv}{dx} = 0$.*
 
 > [!proof]+ Proof
 > Let $u = f(x)$ and $v = g(x)$, and let $x$ change by $\Delta x$. The corresponding changes in $u$ and $v$ are
@@ -95,7 +95,7 @@ By analogy with the Sum Rule one might guess, as Leibniz first did, that $(fg)' 
 > f^{(n)}(x) = (x + n)e^x .
 > $$
 >
-> (By induction on $n$: if $f^{(n)}(x) = (x + n)e^x$, then by the same computation as in (b), $f^{(n+1)}(x) = (x + n)e^x + e^x = (x + n + 1)e^x$.) Here the Product Rule is the only available method; Example §15.2 shows a case where it can be avoided.
+> (By induction on $n$: if $f^{(n)}(x) = (x + n)e^x$, then by the same computation as in (b), $f^{(n+1)}(x) = (x + n)e^x + e^x = (x + n + 1)e^x$.) Here the Product Rule is the only available method; [[§15 The Product and Quotient Rules#^ex-15-2|Example §15.2]] shows a case where it can be avoided.
 >
 > *Stewart: Example 3.2.1*
 
@@ -248,7 +248,7 @@ With the Quotient Rule, every rational function can be differentiated.
 > F(x) = \frac{3x^2 + 2\sqrt{x}}{x}
 > $$
 >
-> can be differentiated with the Quotient Rule, but it is much easier to divide first: $F(x) = 3x + 2x^{-1/2}$, so $F'(x) = 3 - x^{-3/2}$. Example §15.2 makes the same point for products.
+> can be differentiated with the Quotient Rule, but it is much easier to divide first: $F(x) = 3x + 2x^{-1/2}$, so $F'(x) = 3 - x^{-3/2}$. [[§15 The Product and Quotient Rules#^ex-15-2|Example §15.2]] makes the same point for products.
 
 ^rem-15-2
 

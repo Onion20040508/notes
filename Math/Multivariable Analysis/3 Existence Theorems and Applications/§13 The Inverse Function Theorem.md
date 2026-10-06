@@ -154,13 +154,6 @@ $$
 
 ^thm-13-2
 
-> [!remark]- Connections
-> - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
-> - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
-> - The Jacobian determinant returns as the area factor in the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14, §15.20).
-> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§31 Local Diffeomorphisms#^thm-31-1|591 Thm. §31.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§31 Local Diffeomorphisms#^thm-31-2|591 Thm. §31.2]].
-> - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse; the Jacobian is |f′|²).
-
 > [!proof]+ Proof via the Implicit Function Theorem
 > The strategy is to apply the [[§12 The Implicit Function Theorem#^thm-12-2|Implicit Function Theorem]] **twice** to “peel off” the variables one at a time: first solve for $x$, then solve for $y$.
 >
@@ -257,6 +250,13 @@ $$
 ^pf-13-2
 
 *Uses:* [[§12 The Implicit Function Theorem#^thm-12-2|§12.2]], [[Multivariable Chain Rule|§10.2]], [[§13 The Inverse Function Theorem#^def-13-1|Def. §13.1]]
+
+> [!remark]- Connections
+> - The 1D version in MATH 451: [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10), where the condition is $f'(x_0) \neq 0$.
+> - The linear-algebra fact behind the hypothesis: [[Invertible ⟺ nonzero determinant|LADR 9.50]], and [[§10 Invertibility and Isomorphisms#^ladr-3-86|matrix of inverse equals inverse of matrix]] (LADR 3.86) behind the formula for the inverse's Jacobian.
+> - The Jacobian determinant returns as the area factor in the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14, §15.20).
+> - The n-variable theorem, of which this is the case n = 2, is quoted in 591 as [[§31 Local Diffeomorphisms#^thm-31-1|591 Thm. §31.1]]; on manifolds it becomes the criterion that a map is a local diffeomorphism exactly where its differential is bijective, [[§31 Local Diffeomorphisms#^thm-31-2|591 Thm. §31.2]].
+> - Complex counterpart: [[§114★ Local Inverses#^thm-114-1|342 Thm. §114.1]] (an analytic f with f′(z₀) ≠ 0 has an analytic local inverse; the Jacobian is |f′|²).
 
 > [!remark] Remark: Tracking Variable Dependencies
 > The proof works by progressively “solving away” the original variables:

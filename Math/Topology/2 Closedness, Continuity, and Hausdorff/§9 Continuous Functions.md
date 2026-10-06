@@ -57,6 +57,8 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Defined in [[§2 Basis for a Topology#^ex-2-3|Lower Limit Topology]]; (1) and (2) reflect [[§2 Basis for a Topology#^ex-2-5|ℝ_ℓ is strictly finer than ℝ_std]].
 
+*Chain: earlier in [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · later in [[§20a The Lower Limit Topology, ℝ^ω and Discrete Subspaces|Chapter 6]] · [[Lower limit topology|all appearances]]*
+
 > [!theorem] Theorem §9.1: Equivalent Conditions for Continuity
 > Let $f: X \to Y$ be a function between topological spaces. The following are equivalent:
 > 1. $f$ is continuous.

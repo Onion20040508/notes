@@ -190,7 +190,7 @@ Linear functions of two variables play the role in multivariable calculus that l
 ^ex-90-4
 
 ![[m233-90-1.svg]]
-*Contour map of $f(x, y) = y e^x$ (Example §90.4(a)). The level curves $y = k e^{-x}$ for $k = 1, 2, 3$ (blue) and $k = -1, -2, -3$ (red) all approach the $x$-axis, the level curve $k = 0$. Where they crowd together, on the right, the graph of $f$ is steep; on the left it is nearly flat.*
+*Contour map of $f(x, y) = y e^x$ ([[§90 Functions of Several Variables#^ex-90-4|Example §90.4]](a)). The level curves $y = k e^{-x}$ for $k = 1, 2, 3$ (blue) and $k = -1, -2, -3$ (red) all approach the $x$-axis, the level curve $k = 0$. Where they crowd together, on the right, the graph of $f$ is steep; on the left it is nearly flat.*
 
 ## Functions of Three or More Variables
 

@@ -23,7 +23,7 @@ The two extreme topologies on a set: the discrete topology, in which every subse
 - $\{1/n\}$ is a discrete subspace of $\mathbb{R}$: locally compact but not compact ([[§17 Local Compactness#^ex-17-6|§17]])
 - A second-countable space has no uncountable discrete subspace ([[§18 Countability Axioms#^lem-18-2|§18]])
 - Why $T_1$ is built into regular and normal: the indiscrete topology ([[§19 Separation Axioms#^rem-19-1|§19]])
-- The fibers of a covering map are discrete, so lifted endpoints cannot move ([[§24 Covering Spaces#^rem-24-11|§24]])
+- The fibers of a covering map are discrete, so lifted endpoints cannot move ([[§24a Lifting and the Fundamental Group of the Circle#^rem-24-11|§24]])
 
 ## Definition of the indiscrete topology
 ![[§1 Topological Spaces#^ex-1-2]]
@@ -77,4 +77,4 @@ The two extreme topologies on a set: the discrete topology, in which every subse
 ![[§19 Separation Axioms#^rem-19-1]]
 
 ## The fibers of a covering map are discrete, so lifted endpoints cannot move
-![[§24 Covering Spaces#^rem-24-11]]
+![[§24a Lifting and the Fundamental Group of the Circle#^rem-24-11]]

@@ -81,11 +81,11 @@ Many quantities change at a rate proportional to their size: a population under 
 
 ^def-21-2
 
-By Theorem §21.1, a population with constant relative growth rate $k$ grows exponentially, $P(t) = P_0 e^{kt}$, and $k$ is the coefficient of $t$ in the exponent. For instance, $dP/dt = 0.02P$ ($t$ in years) means a relative growth rate of $2\%$ per year, and $P(t) = P_0 e^{0.02t}$.
+By [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]], a population with constant relative growth rate $k$ grows exponentially, $P(t) = P_0 e^{kt}$, and $k$ is the coefficient of $t$ in the exponent. For instance, $dP/dt = 0.02P$ ($t$ in years) means a relative growth rate of $2\%$ per year, and $P(t) = P_0 e^{0.02t}$.
 
 > [!remark] Remark: Method — Exponential Models
 > 1. Recognize the model: the rate of change of $y$ is proportional to $y$ (or, after a shift $y = T - T_s$, to the difference from a constant).
-> 2. Write $y(t) = y(0)e^{kt}$ by Theorem §21.1, with the initial value from the data.
+> 2. Write $y(t) = y(0)e^{kt}$ by [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]], with the initial value from the data.
 > 3. Determine $k$ from one more data point $y(t_1) = y_1$: $e^{kt_1} = y_1/y(0)$, so $k = \dfrac{1}{t_1}\ln\dfrac{y_1}{y(0)}$. For a half-life $h$: $e^{kh} = \frac12$, so $k = -\dfrac{\ln 2}{h}$.
 > 4. To evaluate, substitute $t$. To find *when* $y$ reaches a value $Y$, solve $e^{kt} = Y/y(0)$ by taking natural logarithms: $t = \dfrac1k \ln\dfrac{Y}{y(0)}$.
 
@@ -94,7 +94,7 @@ By Theorem §21.1, a population with constant relative growth rate $k$ grows exp
 > [!example] Example §21.1: World Population
 > The world population was $2560$ million in 1950 and $3040$ million in 1960. Model the population in the second half of the 20th century, assuming that the growth rate is proportional to the population size. What is the relative growth rate? Estimate the population in 1993 and predict it for 2025.
 >
-> Let $t$ be the time in years with $t = 0$ in 1950, and $P(t)$ the population in millions. Then $P(0) = 2560$ and $P(10) = 3040$. Since $dP/dt = kP$, Theorem §21.1 gives
+> Let $t$ be the time in years with $t = 0$ in 1950, and $P(t)$ the population in millions. Then $P(0) = 2560$ and $P(10) = 3040$. Since $dP/dt = kP$, [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]] gives
 >
 > $$
 > P(t) = P(0)e^{kt} = 2560e^{kt}, \qquad P(10) = 2560e^{10k} = 3040, \qquad k = \frac{1}{10}\ln\frac{3040}{2560} \approx 0.017185 .
@@ -120,7 +120,7 @@ By Theorem §21.1, a population with constant relative growth rate $k$ grows exp
 
 ## Radioactive Decay
 
-If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive substance after time $t$, the relative decay rate $-\dfrac{dm/dt}{m}$ has been found experimentally to be constant (it is positive, since $dm/dt < 0$). So $dm/dt = km$ with $k < 0$: radioactive substances decay at a rate proportional to the remaining mass, and by Theorem §21.1 the mass decays exponentially, $m(t) = m_0 e^{kt}$.
+If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive substance after time $t$, the relative decay rate $-\dfrac{dm/dt}{m}$ has been found experimentally to be constant (it is positive, since $dm/dt < 0$). So $dm/dt = km$ with $k < 0$: radioactive substances decay at a rate proportional to the remaining mass, and by [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]] the mass decays exponentially, $m(t) = m_0 e^{kt}$.
 
 > [!definition] Definition §21.3: Half-Life
 > The **half-life** of a radioactive substance is the time required for half of any given quantity of it to decay.
@@ -132,7 +132,7 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 > [!example] Example §21.2: Radium-226
 > The half-life of radium-226 is $1590$ years. (a) A sample has mass $100$ mg. Find a formula for the mass remaining after $t$ years. (b) Find the mass remaining after $1000$ years, to the nearest milligram. (c) When will the mass be reduced to $30$ mg?
 >
-> **(a)** Let $m(t)$ be the mass in mg after $t$ years. Then $dm/dt = km$ and $m(0) = 100$, so $m(t) = 100e^{kt}$ by Theorem §21.1. Use $m(1590) = \frac12 (100)$:
+> **(a)** Let $m(t)$ be the mass in mg after $t$ years. Then $dm/dt = km$ and $m(0) = 100$, so $m(t) = 100e^{kt}$ by [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]]. Use $m(1590) = \frac12 (100)$:
 >
 > $$
 > 100e^{1590k} = 50, \qquad e^{1590k} = \tfrac12, \qquad 1590k = \ln\tfrac12 = -\ln 2, \qquad k = -\frac{\ln 2}{1590} .
@@ -181,7 +181,7 @@ If $m(t)$ is the mass remaining from an initial mass $m_0$ of a radioactive subs
 ^cor-21-2
 
 > [!proof]+ Proof
-> The equation is not quite Equation 1, so change variable: $y(t) = T(t) - T_s$. Because $T_s$ is constant, $y'(t) = T'(t)$, and the equation becomes $dy/dt = ky$. By Theorem §21.1, $y(t) = y(0)e^{kt}$, that is, $T(t) - T_s = (T(0) - T_s)e^{kt}$.
+> The equation is not quite Equation 1, so change variable: $y(t) = T(t) - T_s$. Because $T_s$ is constant, $y'(t) = T'(t)$, and the equation becomes $dy/dt = ky$. By [[§21 Exponential Growth and Decay#^thm-21-1|Theorem §21.1]], $y(t) = y(0)e^{kt}$, that is, $T(t) - T_s = (T(0) - T_s)e^{kt}$.
 
 ^pf-21-2
 
@@ -270,7 +270,7 @@ Letting $n \to \infty$ means compounding the interest **continuously**.
 > | daily | $\$5000\big(1 + \frac{0.02}{365}\big)^{365 \cdot 3} = \$5309.17$ |
 > | continuous | $\$5000e^{(0.02)3} = \$5309.18$ |
 >
-> The interest paid increases with the number $n$ of compounding periods, toward the continuous value of Corollary §21.3. That value is very close to the daily one and easier to compute.
+> The interest paid increases with the number $n$ of compounding periods, toward the continuous value of [[§21 Exponential Growth and Decay#^cor-21-3|Corollary §21.3]]. That value is very close to the daily one and easier to compute.
 >
 > *Stewart: Example 3.8.4*
 

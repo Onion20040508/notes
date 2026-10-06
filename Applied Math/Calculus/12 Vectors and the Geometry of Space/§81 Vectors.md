@@ -159,7 +159,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 
 ^thm-81-4
 
-*Stewart supports these formulas with the pictures described below (drawn for positive components), not with a proof; for $n$-dimensional vectors they become the definition of the operations (Definition §81.7).*
+*Stewart supports these formulas with the pictures described below (drawn for positive components), not with a proof; for $n$-dimensional vectors they become the definition of the operations ([[§81 Vectors#^def-81-7|Definition §81.7]]).*
 
 > [!remark] Remark: Why It Works
 > **Sum.** Draw $\mathbf{a} = \langle a_1, a_2 \rangle$ from the origin and then $\mathbf{b} = \langle b_1, b_2 \rangle$ from the tip $(a_1, a_2)$ of $\mathbf{a}$. The tip of $\mathbf{b}$ is $b_1$ further right and $b_2$ further up, at $(a_1 + b_1, a_2 + b_2)$. By the Triangle Law, $\mathbf{a} + \mathbf{b}$ is the arrow from the origin to that point.
@@ -175,7 +175,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 > \mathbf{a} = \langle a_1, a_2, \ldots, a_n \rangle
 > $$
 >
-> of real numbers, the **components** of $\mathbf{a}$; their set is $V_n$. Addition and scalar multiplication in $V_n$ are defined componentwise, as in Theorem §81.4.
+> of real numbers, the **components** of $\mathbf{a}$; their set is $V_n$. Addition and scalar multiplication in $V_n$ are defined componentwise, as in [[§81 Vectors#^thm-81-4|Theorem §81.4]].
 >
 > *Stewart: 12.2 (text)*
 
@@ -198,7 +198,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 ^thm-81-5
 
 > [!proof]+ Proof
-> Stewart proves Property 1 for $n = 2$ and leaves the rest as "readily verified". All eight follow the same way: write $\mathbf{a} = \langle a_1, \ldots, a_n \rangle$, $\mathbf{b} = \langle b_1, \ldots, b_n \rangle$, $\mathbf{c} = \langle c_1, \ldots, c_n \rangle$, compute each side in components by Definition §81.7, and use the corresponding law for real numbers in each component. Here $\mathbf{0} = \langle 0, \ldots, 0 \rangle$ and $-\mathbf{a} = (-1)\mathbf{a} = \langle -a_1, \ldots, -a_n \rangle$.
+> Stewart proves Property 1 for $n = 2$ and leaves the rest as "readily verified". All eight follow the same way: write $\mathbf{a} = \langle a_1, \ldots, a_n \rangle$, $\mathbf{b} = \langle b_1, \ldots, b_n \rangle$, $\mathbf{c} = \langle c_1, \ldots, c_n \rangle$, compute each side in components by [[§81 Vectors#^def-81-7|Definition §81.7]], and use the corresponding law for real numbers in each component. Here $\mathbf{0} = \langle 0, \ldots, 0 \rangle$ and $-\mathbf{a} = (-1)\mathbf{a} = \langle -a_1, \ldots, -a_n \rangle$.
 >
 > 1. $\mathbf{a} + \mathbf{b} = \langle a_1 + b_1, \ldots, a_n + b_n \rangle = \langle b_1 + a_1, \ldots, b_n + a_n \rangle = \mathbf{b} + \mathbf{a}$ (commutativity of $+$ in $\mathbb{R}$).
 > 2. Both sides have $i$-th component $a_i + b_i + c_i$, by associativity of $+$ in $\mathbb{R}$.
@@ -214,13 +214,13 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 *Uses:* [[§81 Vectors#^def-81-7|Def. §81.7]]
 
 > [!remark] Remark: The Geometric Meaning of Properties 1 and 2
-> Property 1 is the Parallelogram Law (Theorem §81.1). Property 2, the associative law, can be seen by applying the Triangle Law several times: place $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ tip to tail, from a point $P$ to a point $Q$. Then $\overrightarrow{PQ}$ is obtained either by first forming $\mathbf{a} + \mathbf{b}$ and then adding $\mathbf{c}$, or by adding $\mathbf{a}$ to $\mathbf{b} + \mathbf{c}$.
+> Property 1 is the Parallelogram Law ([[§81 Vectors#^thm-81-1|Theorem §81.1]]). Property 2, the associative law, can be seen by applying the Triangle Law several times: place $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$ tip to tail, from a point $P$ to a point $Q$. Then $\overrightarrow{PQ}$ is obtained either by first forming $\mathbf{a} + \mathbf{b}$ and then adding $\mathbf{c}$, or by adding $\mathbf{a}$ to $\mathbf{b} + \mathbf{c}$.
 
 ^rem-81-2
 
 > [!remark]- Connections
 > - Properties 1–8 are exactly the axioms of a vector space ([[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]); $V_n$ is $\mathbb{R}^n$ with the componentwise operations of [[§1 Rⁿ and Cⁿ#^ladr-1-13|LADR 1.13]] and [[§1 Rⁿ and Cⁿ#^ladr-1-18|LADR 1.18]].
-> - Matrix version: [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]] (the same eight properties for column vectors in $\mathbb{R}^n$), with linear combinations and spans of such vectors as the next step. The length of Theorem §81.3 in $\mathbb{R}^n$: [[§40 Inner Product, Length, and Orthogonality#^def-40-2|235 Def. §40.2]].
+> - Matrix version: [[§3 Vector Equations#^thm-3-2|235 Thm. §3.2]] (the same eight properties for column vectors in $\mathbb{R}^n$), with linear combinations and spans of such vectors as the next step. The length of [[§81 Vectors#^thm-81-3|Theorem §81.3]] in $\mathbb{R}^n$: [[§40 Inner Product, Length, and Orthogonality#^def-40-2|235 Def. §40.2]].
 
 > [!definition] Definition §81.8: Standard Basis Vectors
 > The **standard basis vectors** in $V_3$ are
@@ -249,7 +249,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 ^prop-81-6
 
 > [!proof]+ Proof
-> By Theorem §81.4,
+> By [[§81 Vectors#^thm-81-4|Theorem §81.4]],
 >
 > $$
 > \langle a_1, a_2, a_3 \rangle = \langle a_1, 0, 0 \rangle + \langle 0, a_2, 0 \rangle + \langle 0, 0, a_3 \rangle = a_1\langle 1, 0, 0 \rangle + a_2\langle 0, 1, 0 \rangle + a_3\langle 0, 0, 1 \rangle = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k} .
@@ -280,7 +280,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 ^prop-81-7
 
 > [!proof]+ Proof
-> Let $c = 1/|\mathbf{a}|$, which is defined and positive because $\mathbf{a} \ne \mathbf{0}$. Then $\mathbf{u} = c\mathbf{a}$ with $c > 0$, so $\mathbf{u}$ has the same direction as $\mathbf{a}$ (Definition §81.3), and
+> Let $c = 1/|\mathbf{a}|$, which is defined and positive because $\mathbf{a} \ne \mathbf{0}$. Then $\mathbf{u} = c\mathbf{a}$ with $c > 0$, so $\mathbf{u}$ has the same direction as $\mathbf{a}$ ([[§81 Vectors#^def-81-3|Definition §81.3]]), and
 >
 > $$
 > |\mathbf{u}| = |c\mathbf{a}| = |c|\,|\mathbf{a}| = \frac{1}{|\mathbf{a}|}\,|\mathbf{a}| = 1 .
@@ -291,13 +291,13 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 *Uses:* [[§81 Vectors#^def-81-3|Def. §81.3]], [[§81 Vectors#^def-81-9|Def. §81.9]]
 
 > [!example] Example §81.1: Computing with Components
-> **(a)** The vector represented by the directed segment from $A(2, -3, 4)$ to $B(-2, 1, 1)$ is, by Theorem §81.2,
+> **(a)** The vector represented by the directed segment from $A(2, -3, 4)$ to $B(-2, 1, 1)$ is, by [[§81 Vectors#^thm-81-2|Theorem §81.2]],
 >
 > $$
 > \mathbf{a} = \langle -2 - 2,\ 1 - (-3),\ 1 - 4 \rangle = \langle -4, 4, -3 \rangle .
 > $$
 >
-> **(b)** Let $\mathbf{a} = \langle 4, 0, 3 \rangle$ and $\mathbf{b} = \langle -2, 1, 5 \rangle$. Then $|\mathbf{a}| = \sqrt{4^2 + 0^2 + 3^2} = \sqrt{25} = 5$, and by Theorem §81.4
+> **(b)** Let $\mathbf{a} = \langle 4, 0, 3 \rangle$ and $\mathbf{b} = \langle -2, 1, 5 \rangle$. Then $|\mathbf{a}| = \sqrt{4^2 + 0^2 + 3^2} = \sqrt{25} = 5$, and by [[§81 Vectors#^thm-81-4|Theorem §81.4]]
 >
 > $$
 > \begin{aligned}
@@ -308,7 +308,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 > \end{aligned}
 > $$
 >
-> **(c)** If $\mathbf{a} = \mathbf{i} + 2\mathbf{j} - 3\mathbf{k}$ and $\mathbf{b} = 4\mathbf{i} + 7\mathbf{k}$, then by Properties 1, 2, 5, 6 and 7 (Theorem §81.5)
+> **(c)** If $\mathbf{a} = \mathbf{i} + 2\mathbf{j} - 3\mathbf{k}$ and $\mathbf{b} = 4\mathbf{i} + 7\mathbf{k}$, then by Properties 1, 2, 5, 6 and 7 ([[§81 Vectors#^thm-81-5|Theorem §81.5]])
 >
 > $$
 > 2\mathbf{a} + 3\mathbf{b} = 2\mathbf{i} + 4\mathbf{j} - 6\mathbf{k} + 12\mathbf{i} + 21\mathbf{k} = 14\mathbf{i} + 4\mathbf{j} + 15\mathbf{k} .
@@ -321,7 +321,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 > [!example] Example §81.2: A Unit Vector
 > Find the unit vector in the direction of $2\mathbf{i} - \mathbf{j} - 2\mathbf{k}$.
 >
-> The vector has length $|2\mathbf{i} - \mathbf{j} - 2\mathbf{k}| = \sqrt{2^2 + (-1)^2 + (-2)^2} = \sqrt{9} = 3$, so by Proposition §81.7 the unit vector with the same direction is
+> The vector has length $|2\mathbf{i} - \mathbf{j} - 2\mathbf{k}| = \sqrt{2^2 + (-1)^2 + (-2)^2} = \sqrt{9} = 3$, so by [[§81 Vectors#^prop-81-7|Proposition §81.7]] the unit vector with the same direction is
 >
 > $$
 > \tfrac13 (2\mathbf{i} - \mathbf{j} - 2\mathbf{k}) = \tfrac23\,\mathbf{i} - \tfrac13\,\mathbf{j} - \tfrac23\,\mathbf{k} .
@@ -334,7 +334,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 > [!example] Example §81.3: The Fourth Vertex of a Parallelogram
 > **(a)** $A(-2, 1, 3)$, $B(3, 5, 2)$ and $C(1, 2, 6)$ are three vertices of a parallelogram $ABCD$, with $AB$ and $BC$ two of its edges. Find the fourth vertex $D$.
 >
-> In the parallelogram $ABCD$ the side $AD$ is opposite to $BC$, so $\overrightarrow{AD} = \overrightarrow{BC}$. By Theorem §81.2, $\overrightarrow{BC} = \langle 1 - 3,\ 2 - 5,\ 6 - 2 \rangle = \langle -2, -3, 4 \rangle$. So
+> In the parallelogram $ABCD$ the side $AD$ is opposite to $BC$, so $\overrightarrow{AD} = \overrightarrow{BC}$. By [[§81 Vectors#^thm-81-2|Theorem §81.2]], $\overrightarrow{BC} = \langle 1 - 3,\ 2 - 5,\ 6 - 2 \rangle = \langle -2, -3, 4 \rangle$. So
 >
 > $$
 > D = (-2 - 2,\ 1 - 3,\ 3 + 4) = (-4, -2, 7) .
@@ -344,7 +344,7 @@ A vector is a quantity with both a magnitude and a direction: a displacement, a 
 >
 > **(b)** Three vertices of a parallelogram are $P(0, -1, 1)$, $Q(0, 1, 0)$ and $R(2, 1, 1)$, and two of its sides are $PQ$ and $PR$. Find the fourth vertex.
 >
-> Now the two given sides meet at $P$, so by the Parallelogram Law (Theorem §81.1) the fourth vertex $S$ is the tip of $\overrightarrow{PQ} + \overrightarrow{PR}$ placed at $P$:
+> Now the two given sides meet at $P$, so by the Parallelogram Law ([[§81 Vectors#^thm-81-1|Theorem §81.1]]) the fourth vertex $S$ is the tip of $\overrightarrow{PQ} + \overrightarrow{PR}$ placed at $P$:
 >
 > $$
 > \overrightarrow{PQ} + \overrightarrow{PR} = \langle 0, 2, -1 \rangle + \langle 2, 2, 0 \rangle = \langle 2, 4, -1 \rangle, \qquad S = (0 + 2,\ -1 + 4,\ 1 - 1) = (2, 3, 0) .

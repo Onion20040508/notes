@@ -36,7 +36,7 @@ Functions arise whenever one quantity depends on another. The area $A$ of a circ
 ^rem-1-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§8 Functions#^def-8-1|250 Def. §8.1]]. There the set $E$ is part of the function and is called its codomain; Stewart's range is the image [[§8 Functions#^def-8-9|250 Def. §8.9]], a subset of the codomain. Stewart's graph (Definition §1.2) is [[§8 Functions#^def-8-10|250 Def. §8.10]].
+> - Rigorous treatment: [[§8 Functions#^def-8-1|250 Def. §8.1]]. There the set $E$ is part of the function and is called its codomain; Stewart's range is the image [[§8 Functions#^def-8-9|250 Def. §8.9]], a subset of the codomain. Stewart's graph ([[§1 Four Ways to Represent a Function#^def-1-2|Definition §1.2]]) is [[§8 Functions#^def-8-10|250 Def. §8.10]].
 
 > [!definition] Definition §1.2: Graph of a Function
 > If $f$ is a function with domain $D$, its **graph** is the set of ordered pairs
@@ -99,7 +99,7 @@ In calculus a function is most often defined by an algebraic formula: $y = 2x - 
 > Some functions can be given in all four ways, and passing from one representation to another adds insight. But each of the four situations above has a most natural one:
 > - The area of a circle: the formula $A(r) = \pi r^2$. A circle has positive radius, so the domain is $\{r \mid r > 0\} = (0, \infty)$, and the range is also $(0, \infty)$.
 > - The world population $P(t)$ ($t$ in years since 1900): a table of census values, or its plot (a *scatter plot*). No formula gives $P(t)$ exactly, but a formula can approximate it, for instance $P(t) \approx (1.43653 \times 10^9) \cdot (1.01395)^t$. Such an approximating formula is a *mathematical model* ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-1|Def. §2.1]]). The methods of calculus also apply to a function known only through a table (a *tabular function*).
-> - The postage $C(w)$: a table (1.00 dollar up to 1 oz, plus 15 cents for each additional ounce or less, as of 2019), equivalently the step function of Definition §1.5.
+> - The postage $C(w)$: a table (1.00 dollar up to 1 oz, plus 15 cents for each additional ounce or less, as of 2019), equivalently the step function of [[§1 Four Ways to Represent a Function#^def-1-5|Definition §1.5]].
 > - The ground acceleration $a(t)$: the seismograph's graph, on which a geologist reads off amplitudes and patterns.
 
 ^rem-1-2
@@ -169,9 +169,9 @@ Not every equation, table or curve defines a function: it must give *exactly one
 ^thm-1-1
 
 > [!proof]+ Proof
-> ($\Rightarrow$) Let the curve be the graph of a function $f$ with domain $D$. A point $(a, y)$ on the vertical line $x = a$ lies on the graph only if $a \in D$ and $y = f(a)$ (Definition §1.2). So the line meets the curve in the single point $(a, f(a))$ if $a \in D$, and not at all if $a \notin D$.
+> ($\Rightarrow$) Let the curve be the graph of a function $f$ with domain $D$. A point $(a, y)$ on the vertical line $x = a$ lies on the graph only if $a \in D$ and $y = f(a)$ ([[§1 Four Ways to Represent a Function#^def-1-2|Definition §1.2]]). So the line meets the curve in the single point $(a, f(a))$ if $a \in D$, and not at all if $a \notin D$.
 >
-> ($\Leftarrow$) Suppose no vertical line meets the curve $C$ more than once. Let $D$ be the set of numbers $a$ for which the line $x = a$ meets $C$. For $a \in D$ the line meets $C$ in exactly one point $(a, b)$; define $f(a) = b$. This assigns exactly one number to each $a \in D$, so $f$ is a function with domain $D$ (Definition §1.1). Its graph is $C$: a point $(a, b)$ lies on $C$ exactly when $a \in D$ and $(a, b)$ is the point where $x = a$ meets $C$, that is, when $b = f(a)$.
+> ($\Leftarrow$) Suppose no vertical line meets the curve $C$ more than once. Let $D$ be the set of numbers $a$ for which the line $x = a$ meets $C$. For $a \in D$ the line meets $C$ in exactly one point $(a, b)$; define $f(a) = b$. This assigns exactly one number to each $a \in D$, so $f$ is a function with domain $D$ ([[§1 Four Ways to Represent a Function#^def-1-1|Definition §1.1]]). Its graph is $C$: a point $(a, b)$ lies on $C$ exactly when $a \in D$ and $(a, b)$ is the point where $x = a$ meets $C$, that is, when $b = f(a)$.
 >
 > In short: if the line $x = a$ met the curve at two points $(a, b)$ and $(a, c)$ with $b \ne c$, the curve would assign two values to $a$, which a function cannot do.
 
@@ -188,7 +188,7 @@ Not every equation, table or curve defines a function: it must give *exactly one
 > [!remark] Remark: Equations and Tables That Are Not Functions
 > - The equation $y = x^2$ defines $y$ as a function of $x$: it determines exactly one $y$ for each $x$. The equation $y^2 = x$ does not: the input $x = 4$ gives the two outputs $y = 2$ and $y = -2$.
 > - The table with inputs $2, 4, 5, 5, 6$ and outputs $3, 6, 7, 8, 9$ does not define $y$ as a function of $x$: the input $5$ gives both $7$ and $8$. (The postage table, by contrast, assigns exactly one cost to each weight.)
-> - The parabola $x = y^2 - 2$ is not the graph of a function of $x$, but it *contains* the graphs of two: $x = y^2 - 2$ means $y^2 = x + 2$, so $y = \pm\sqrt{x + 2}$. The upper half is the graph of $f(x) = \sqrt{x + 2}$ (Example §1.3(c)) and the lower half the graph of $g(x) = -\sqrt{x + 2}$.
+> - The parabola $x = y^2 - 2$ is not the graph of a function of $x$, but it *contains* the graphs of two: $x = y^2 - 2$ means $y^2 = x + 2$, so $y = \pm\sqrt{x + 2}$. The upper half is the graph of $f(x) = \sqrt{x + 2}$ ([[§1 Four Ways to Represent a Function#^ex-1-3|Example §1.3]](c)) and the lower half the graph of $g(x) = -\sqrt{x + 2}$.
 > - Reversing the roles of the variables, $x = h(y) = y^2 - 2$ *does* define $x$ as a function of $y$ (independent variable $y$, dependent variable $x$), and its graph is that parabola.
 
 ^rem-1-3
@@ -300,7 +300,7 @@ Not every equation, table or curve defines a function: it must give *exactly one
 ^ex-1-5
 
 ![[m233-1-2.svg]]
-*The three functions of Example §1.5. (a) The odd $f$: the point $(x, f(x))$ and its rotation $(-x, -f(x))$ are both on the graph, on a line through the origin. (b) The even $g$: $(x, g(x))$ and its mirror image $(-x, g(x))$ are both on the graph. (c) $h$ has neither symmetry: $(1, 1)$ is on the graph, but at $x = -1$ the graph passes through $(-1, -3)$, not through the mirror point $(-1, 1)$ or the rotated point $(-1, -1)$ (gray).*
+*The three functions of [[§1 Four Ways to Represent a Function#^ex-1-5|Example §1.5]]. (a) The odd $f$: the point $(x, f(x))$ and its rotation $(-x, -f(x))$ are both on the graph, on a line through the origin. (b) The even $g$: $(x, g(x))$ and its mirror image $(-x, g(x))$ are both on the graph. (c) $h$ has neither symmetry: $(1, 1)$ is on the graph, but at $x = -1$ the graph passes through $(-1, -3)$, not through the mirror point $(-1, 1)$ or the rotated point $(-1, -1)$ (gray).*
 
 ## Increasing and Decreasing Functions
 

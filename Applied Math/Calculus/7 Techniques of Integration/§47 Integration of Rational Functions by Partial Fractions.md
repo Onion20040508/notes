@@ -50,7 +50,7 @@ For instance, $x^4 - 16 = (x^2 - 4)(x^2 + 4) = (x - 2)(x + 2)(x^2 + 4)$.
 > - Both theorems are proved in Linear Algebra: [[§13 Polynomials#^ladr-4-9|LADR 4.9]] (division with a basis of $\mathcal{P}_n$ instead of long division) and [[§13 Polynomials#^ladr-4-16|LADR 4.16]] (existence and uniqueness of the real factorization, from the complex one, since nonreal roots come in conjugate pairs).
 
 > [!theorem] Theorem §47.3: Partial Fraction Decomposition
-> Let $R/Q$ be a proper rational function, with $Q$ factored as in Theorem §47.2. Then $R(x)/Q(x)$ is a sum of **partial fractions**
+> Let $R/Q$ be a proper rational function, with $Q$ factored as in [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-2|Theorem §47.2]]. Then $R(x)/Q(x)$ is a sum of **partial fractions**
 >
 > $$
 > \frac{A}{(ax + b)^i} \qquad\text{and}\qquad \frac{Ax + B}{(ax^2 + bx + c)^j} ,
@@ -103,9 +103,9 @@ $$
 
 > [!remark] Remark: Method — Partial Fractions
 > To find $\int P(x)/Q(x)\,dx$:
-> 1. **Divide** if $\deg P \ge \deg Q$, to get $S(x) + R(x)/Q(x)$ (Theorem §47.1). Integrate the polynomial $S$ term by term.
-> 2. **Factor** $Q$ into linear and irreducible quadratic factors (Theorem §47.2). A root $r$ of $Q$ gives the factor $x - r$; a quadratic is irreducible when $b^2 - 4ac < 0$.
-> 3. **Write the form** of the decomposition of $R/Q$ (Theorem §47.3), one group of terms per factor.
+> 1. **Divide** if $\deg P \ge \deg Q$, to get $S(x) + R(x)/Q(x)$ ([[§47 Integration of Rational Functions by Partial Fractions#^thm-47-1|Theorem §47.1]]). Integrate the polynomial $S$ term by term.
+> 2. **Factor** $Q$ into linear and irreducible quadratic factors ([[§47 Integration of Rational Functions by Partial Fractions#^thm-47-2|Theorem §47.2]]). A root $r$ of $Q$ gives the factor $x - r$; a quadratic is irreducible when $b^2 - 4ac < 0$.
+> 3. **Write the form** of the decomposition of $R/Q$ ([[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Theorem §47.3]]), one group of terms per factor.
 > 4. **Find the constants.** Multiply by the least common denominator $Q(x)$ to get a polynomial identity. Either expand and equate coefficients of like powers of $x$, which gives a linear system, or substitute convenient values of $x$ (the roots of the linear factors make all but one term vanish), or combine the two.
 > 5. **Integrate each term.** $\int \frac{A}{ax + b}\,dx = \frac{A}{a}\ln|ax + b| + C$, and $\int \frac{A}{(ax + b)^i}\,dx$ for $i \ge 2$ is a power. For $\frac{Ax + B}{ax^2 + bx + c}$, complete the square in the denominator and substitute to reach
 >
@@ -113,7 +113,7 @@ $$
 >    \int \frac{Cu + D}{u^2 + a^2}\,du = C \int \frac{u}{u^2 + a^2}\,du + D \int \frac{du}{u^2 + a^2} = \frac{C}{2}\ln(u^2 + a^2) + \frac{D}{a}\tan^{-1}\frac{u}{a} + K ,
 >    $$
 >
->    using Theorem §47.4. Terms of Case IV need a substitution such as $x = \tan\theta$ ([[§46 Trigonometric Substitution#^rem-46-1|Remark: Method — Trigonometric Substitution]]) or a reduction formula.
+>    using [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-4|Theorem §47.4]]. Terms of Case IV need a substitution such as $x = \tan\theta$ ([[§46 Trigonometric Substitution#^rem-46-1|Remark: Method — Trigonometric Substitution]]) or a reduction formula.
 > 6. **Look for a shortcut first.** If the numerator is (a multiple of) the derivative of the denominator, substitute: with $u = x(x^2 + 3) = x^3 + 3x$, $du = (3x^2 + 3)\,dx$ and $\int \frac{x^2 + 1}{x(x^2 + 3)}\,dx = \frac13 \ln|x^3 + 3x| + C$, with no partial fractions at all.
 >
 > *Stewart: 7.4 (text)*
@@ -121,7 +121,7 @@ $$
 ^rem-47-1
 
 > [!remark] Remark: Why Substituting Values Works
-> In Example §47.1 below, Equation 4 is obtained by multiplying Equation 3 by $x(2x - 1)(x + 2)$, so a priori it holds only for $x \ne 0, \frac12, -2$, the very values one wants to substitute. But both sides of Equation 4 are polynomials, and they agree at infinitely many $x$. Their difference is a polynomial with infinitely many roots, so it is the zero polynomial, and Equation 4 holds for *all* $x$. (Equivalently: both sides are continuous and agree except at three points, so they agree there too, by taking limits.) This is Stewart's Exercise 75.
+> In [[§47 Integration of Rational Functions by Partial Fractions#^ex-47-1|Example §47.1]] below, Equation 4 is obtained by multiplying Equation 3 by $x(2x - 1)(x + 2)$, so a priori it holds only for $x \ne 0, \frac12, -2$, the very values one wants to substitute. But both sides of Equation 4 are polynomials, and they agree at infinitely many $x$. Their difference is a polynomial with infinitely many roots, so it is the zero polynomial, and Equation 4 holds for *all* $x$. (Equivalently: both sides are continuous and agree except at three points, so they agree there too, by taking limits.) This is Stewart's Exercise 75.
 
 ^rem-47-2
 
@@ -159,7 +159,7 @@ $$
 ^prop-47-5
 
 > [!proof]+ Proof
-> Case I of Theorem §47.3: $\dfrac{1}{x^2 - a^2} = \dfrac{1}{(x - a)(x + a)} = \dfrac{A}{x - a} + \dfrac{B}{x + a}$, so $A(x + a) + B(x - a) = 1$ for all $x$ (Remark above). Putting $x = a$ gives $2aA = 1$, $A = \frac{1}{2a}$; putting $x = -a$ gives $-2aB = 1$, $B = -\frac{1}{2a}$. Therefore
+> Case I of [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-3|Theorem §47.3]]: $\dfrac{1}{x^2 - a^2} = \dfrac{1}{(x - a)(x + a)} = \dfrac{A}{x - a} + \dfrac{B}{x + a}$, so $A(x + a) + B(x - a) = 1$ for all $x$ (Remark above). Putting $x = a$ gives $2aA = 1$, $A = \frac{1}{2a}$; putting $x = -a$ gives $-2aB = 1$, $B = -\frac{1}{2a}$. Therefore
 >
 > $$
 > \int \frac{dx}{x^2 - a^2} = \frac{1}{2a} \int \Big(\frac{1}{x - a} - \frac{1}{x + a}\Big)\,dx = \frac{1}{2a}\big(\ln|x - a| - \ln|x + a|\big) + C ,
@@ -243,7 +243,7 @@ $$
 > \frac{2x^2 - x + 4}{x(x^2 + 4)} = \frac{A}{x} + \frac{Bx + C}{x^2 + 4}, \qquad 2x^2 - x + 4 = A(x^2 + 4) + (Bx + C)x = (A + B)x^2 + Cx + 4A .
 > $$
 >
-> So $A + B = 2$, $C = -1$, $4A = 4$: $A = 1$, $B = 1$, $C = -1$. Split the second term, substituting $u = x^2 + 4$ in the first part and using Theorem §47.4 with $a = 2$ in the second:
+> So $A + B = 2$, $C = -1$, $4A = 4$: $A = 1$, $B = 1$, $C = -1$. Split the second term, substituting $u = x^2 + 4$ in the first part and using [[§47 Integration of Rational Functions by Partial Fractions#^thm-47-4|Theorem §47.4]] with $a = 2$ in the second:
 >
 > $$
 > \int \frac{2x^2 - x + 4}{x^3 + 4x}\,dx = \int \frac{dx}{x} + \int \frac{x}{x^2 + 4}\,dx - \int \frac{dx}{x^2 + 4} = \ln|x| + \tfrac12 \ln(x^2 + 4) - \tfrac12 \tan^{-1}(x/2) + K .
@@ -312,7 +312,7 @@ Some integrands that are not rational become rational after a suitable substitut
 > \int \frac{\sqrt{x + 4}}{x}\,dx = \int \frac{u}{u^2 - 4}\,2u\,du = 2 \int \frac{u^2}{u^2 - 4}\,du = 2 \int \Big(1 + \frac{4}{u^2 - 4}\Big)\,du .
 > $$
 >
-> By Proposition §47.5 with $a = 2$ (or by factoring $u^2 - 4 = (u - 2)(u + 2)$),
+> By [[§47 Integration of Rational Functions by Partial Fractions#^prop-47-5|Proposition §47.5]] with $a = 2$ (or by factoring $u^2 - 4 = (u - 2)(u + 2)$),
 >
 > $$
 > \int \frac{\sqrt{x + 4}}{x}\,dx = 2u + 8 \cdot \frac{1}{2 \cdot 2}\ln\left|\frac{u - 2}{u + 2}\right| + C = 2\sqrt{x + 4} + 2\ln\left|\frac{\sqrt{x + 4} - 2}{\sqrt{x + 4} + 2}\right| + C .

@@ -70,7 +70,7 @@ $$
 Stewart's Formula 1, proved in Appendix E (Example 5 there; here [[§120 Sigma Notation#^thm-120-2|Theorem §120.2]]).
 
 > [!example] Example §34.2: The Exact Area Under the Parabola
-> For the region $S$ of Example §34.1, show that $\lim_{n \to \infty} R_n = \frac13$.
+> For the region $S$ of [[§34 The Area and Distance Problems#^ex-34-1|Example §34.1]], show that $\lim_{n \to \infty} R_n = \frac13$.
 >
 > Divide $[0, 1]$ into $n$ subintervals of width $\frac1n$. The right endpoints are $\frac1n, \frac2n, \ldots, \frac{n}{n}$, so
 >
@@ -153,7 +153,7 @@ where $i$ is the index of summation, running from the value below $\Sigma$ to th
 
 > [!theorem] Theorem §34.1: The Area as a Limit of Any Riemann Sums
 > Let $f \ge 0$ be continuous on $[a, b]$, and use the notation of Definitions [[§34 The Area and Distance Problems#^def-34-1|§34.1]], [[§34 The Area and Distance Problems#^def-34-2|§34.2]] and [[§34 The Area and Distance Problems#^def-34-new1|§34.2]].
-> 1. The limit $A = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i)\,\Delta x$ in Definition §34.1 exists.
+> 1. The limit $A = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i)\,\Delta x$ in [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]] exists.
 > 2. Left endpoints give the same value:
 >
 > $$
@@ -175,9 +175,9 @@ where $i$ is the index of summation, running from the value below $\Sigma$ to th
 *Stewart omits the proof ("it can be proved"; "it can be shown"). It rests on the [[§19 Uniform Continuity#^def-19-1|uniform continuity]] of $f$ on $[a, b]$ ([[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]]): see [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for the existence of the limit, and [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]] for the equivalence of the limit of sums with the upper/lower-sum description in part 4.*
 
 > [!remark]- Connections
-> - Rigorous treatment: the upper and lower sums for arbitrary (not necessarily equal) subdivisions are [[§32 The Definition of the Riemann Integral#^def-32-1|451 Def. §32.1]], part 4 is the Darboux integral [[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]], and the sums with sample points are the Riemann sums of [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]. The computation of Example §34.2 is done there with upper and lower sums for $f(x) = x$ ([[§32 The Definition of the Riemann Integral#^ex-32-1|451 Ex. §32.1]]).
+> - Rigorous treatment: the upper and lower sums for arbitrary (not necessarily equal) subdivisions are [[§32 The Definition of the Riemann Integral#^def-32-1|451 Def. §32.1]], part 4 is the Darboux integral [[§32 The Definition of the Riemann Integral#^def-32-2|451 Def. §32.2]], and the sums with sample points are the Riemann sums of [[§32 The Definition of the Riemann Integral#^def-32-3|451 Def. §32.3]]. The computation of [[§34 The Area and Distance Problems#^ex-34-2|Example §34.2]] is done there with upper and lower sums for $f(x) = x$ ([[§32 The Definition of the Riemann Integral#^ex-32-1|451 Ex. §32.1]]).
 
-In Examples §34.1 and §34.2 the function $x^2$ is increasing on $[0, 1]$, so the left-endpoint sums are the lower sums and the right-endpoint sums the upper sums, and $A = \frac13$ is trapped between all $L_n$ and all $R_n$.
+In Examples [[§34 The Area and Distance Problems#^ex-34-1|§34.1]] and [[§34 The Area and Distance Problems#^ex-34-2|§34.2]] the function $x^2$ is increasing on $[0, 1]$, so the left-endpoint sums are the lower sums and the right-endpoint sums the upper sums, and $A = \frac13$ is trapped between all $L_n$ and all $R_n$.
 
 > [!example] Example §34.3: The Area Under an Exponential Curve
 > Let $A$ be the area of the region under the graph of $f(x) = e^{-x}$ between $x = 0$ and $x = 2$.
@@ -186,7 +186,7 @@ In Examples §34.1 and §34.2 the function $x^2$ is increasing on $[0, 1]$, so t
 >
 > **(b)** Estimate the area by taking the sample points to be midpoints, with four and then ten subintervals.
 >
-> **(a)** Here $a = 0$, $b = 2$, so $\Delta x = \frac{2 - 0}{n} = \frac2n$ and $x_i = \frac{2i}{n}$. By Definition §34.1,
+> **(a)** Here $a = 0$, $b = 2$, so $\Delta x = \frac{2 - 0}{n} = \frac2n$ and $x_i = \frac{2i}{n}$. By [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]],
 >
 > $$
 > A = \lim_{n \to \infty} R_n = \lim_{n \to \infty} \big[ e^{-x_1}\,\Delta x + \cdots + e^{-x_n}\,\Delta x \big] = \lim_{n \to \infty} \frac2n \big( e^{-2/n} + e^{-4/n} + \cdots + e^{-2n/n} \big) = \lim_{n \to \infty} \frac2n \sum_{i=1}^{n} e^{-2i/n} .
@@ -255,7 +255,7 @@ $$
 d = \lim_{n \to \infty} \sum_{i=1}^{n} f(t_{i-1})\,\Delta t = \lim_{n \to \infty} \sum_{i=1}^{n} f(t_i)\,\Delta t . \qquad (5)
 $$
 
-This is Stewart's Equation 5, justified in [[§37 Indefinite Integrals and the Net Change Theorem#^cor-37-3|Corollary §37.3]] (from the Net Change Theorem). It has the form of Definition §34.1 and Theorem §34.1, part 2: **distance traveled is the area under the velocity graph.**
+This is Stewart's Equation 5, justified in [[§37 Indefinite Integrals and the Net Change Theorem#^cor-37-3|Corollary §37.3]] (from the Net Change Theorem). It has the form of [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]] and [[§34 The Area and Distance Problems#^thm-34-1|Theorem §34.1]], part 2: **distance traveled is the area under the velocity graph.**
 
 > [!remark] Remark: Many Quantities Are Areas
 > Equation (5) is the first of many quantities computed as a limit of sums $\sum f(x_i^*)\,\Delta x$, and hence as an area under a curve: the work done by a variable force ([[§42 Work#^def-42-3|Def. §42.3]]), volumes ([[§40 Volumes#^def-40-2|Def. §40.2]]), the cardiac output of the heart ([[§55 Applications to Economics and Biology#^def-55-5|Def. §55.5]]), and others in Chapters 6 and 8. So an area computed in this chapter can be read in many practical ways.

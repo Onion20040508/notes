@@ -40,7 +40,7 @@ Polar coordinates locate a point by its distance $r$ from a fixed point and the 
 ^prop-65-1
 
 > [!proof]+ Proof
-> A complete counterclockwise rotation is an angle of $2\pi$, so the rays at angles $\theta$ and $\theta + 2n\pi$ coincide, and $(r, \theta + 2n\pi)$ is the same point as $(r, \theta)$. By Definition §65.1, $(-r, \varphi)$ is the same point as $(r, \varphi + \pi)$; with $\varphi = \theta + (2n + 1)\pi$ this is $(r, \theta + (2n + 2)\pi)$, which is $(r, \theta)$ by the first part.
+> A complete counterclockwise rotation is an angle of $2\pi$, so the rays at angles $\theta$ and $\theta + 2n\pi$ coincide, and $(r, \theta + 2n\pi)$ is the same point as $(r, \theta)$. By [[§65 Polar Coordinates#^def-65-1|Definition §65.1]], $(-r, \varphi)$ is the same point as $(r, \varphi + \pi)$; with $\varphi = \theta + (2n + 1)\pi$ this is $(r, \theta + (2n + 2)\pi)$, which is $(r, \theta)$ by the first part.
 
 ^pf-65-1
 
@@ -89,7 +89,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 > - Complex-variables version: [[§7 Exponential Form#^def-7-1|342 Def. §7.1]] (the polar form $z = r(\cos\theta + i\sin\theta)$, with $r = |z| \ge 0$ and $\theta$ an argument) and [[§7 Exponential Form#^def-7-2|342 Def. §7.2]] (Euler's formula and the exponential form $z = re^{i\theta}$).
 
 > [!remark] Remark: Choosing the Angle
-> Equations 2 do not determine $\theta$: as $\theta$ runs through $[0, 2\pi)$, each value of $\tan\theta$ occurs twice. When converting from Cartesian to polar coordinates, it is not enough to find $r$ and $\theta$ satisfying Equations 2; choose $\theta$ so that the point $(r, \theta)$ lies in the correct quadrant (Example §65.1(c)).
+> Equations 2 do not determine $\theta$: as $\theta$ runs through $[0, 2\pi)$, each value of $\tan\theta$ occurs twice. When converting from Cartesian to polar coordinates, it is not enough to find $r$ and $\theta$ satisfying Equations 2; choose $\theta$ so that the point $(r, \theta)$ lies in the correct quadrant ([[§65 Polar Coordinates#^ex-65-1|Example §65.1]](c)).
 
 ^rem-65-1
 
@@ -104,7 +104,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 >
 > **(c) Cartesian to polar.** For $(1, -1)$, choosing $r > 0$, Equations 2 give $r = \sqrt{1^2 + (-1)^2} = \sqrt2$ and $\tan\theta = -1/1 = -1$. The point is in the fourth quadrant, so $\theta = -\pi/4$ or $\theta = 7\pi/4$: $(\sqrt2, -\pi/4)$ or $(\sqrt2, 7\pi/4)$. (The other solution $\theta = 3\pi/4$ of $\tan\theta = -1$ would give the point $(-1, 1)$, unless $r = -\sqrt2$ is used.)
 >
-> **(d) Many representations.** By Proposition §65.1, the point $(1, 5\pi/4)$ is also $(1, -3\pi/4)$, $(1, 13\pi/4)$ and $(-1, \pi/4)$.
+> **(d) Many representations.** By [[§65 Polar Coordinates#^prop-65-1|Proposition §65.1]], the point $(1, 5\pi/4)$ is also $(1, -3\pi/4)$, $(1, 13\pi/4)$ and $(-1, \pi/4)$.
 >
 > *Stewart: Examples 10.3.1, 10.3.2 and 10.3.3*
 
@@ -191,7 +191,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 ^ex-65-5
 
 ![[m233-65-1.svg]]
-*The four-leaved rose $r = \cos 2\theta$ of Example §65.5. Left: $r$ against $\theta$ in Cartesian coordinates, cut into the eight quarter-periods. Right: the polar curve, with the same numbers. Where $r < 0$ (parts ②, ③, ⑥, ⑦, blue) the point lies on the opposite side of the pole from the ray at angle $\theta$, which is how the leaves along the $y$-axis arise.*
+*The four-leaved rose $r = \cos 2\theta$ of [[§65 Polar Coordinates#^ex-65-5|Example §65.5]]. Left: $r$ against $\theta$ in Cartesian coordinates, cut into the eight quarter-periods. Right: the polar curve, with the same numbers. Where $r < 0$ (parts ②, ③, ⑥, ⑦, blue) the point lies on the opposite side of the pole from the ray at angle $\theta$, which is how the leaves along the $y$-axis arise.*
 
 ## Symmetry
 
@@ -207,7 +207,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 ^thm-65-3
 
 > [!proof]+ Proof
-> Stewart explains the rules by a figure; in coordinates, by Equations 1: let $P$ be a point of the curve. By Definition §65.2 it has a representation $(r, \theta)$ satisfying the equation, and $P = (x, y) = (r\cos\theta, r\sin\theta)$.
+> Stewart explains the rules by a figure; in coordinates, by Equations 1: let $P$ be a point of the curve. By [[§65 Polar Coordinates#^def-65-2|Definition §65.2]] it has a representation $(r, \theta)$ satisfying the equation, and $P = (x, y) = (r\cos\theta, r\sin\theta)$.
 >
 > (a) By hypothesis $(r, -\theta)$ also satisfies the equation, so the point $(r\cos(-\theta), r\sin(-\theta)) = (x, -y)$ is on the curve. This is the reflection of $P$ in the polar axis.
 >
@@ -220,7 +220,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 *Uses:* [[§65 Polar Coordinates#^def-65-2|Def. §65.2]], [[§65 Polar Coordinates#^thm-65-2|§65.2]], [[§119 Trigonometry#^thm-119-5|§119.5]] (cosine is even, sine is odd), [[§119 Trigonometry#^def-119-4|Def. §119.4]] ($\cos(\theta + \pi) = -\cos\theta$, $\sin(\theta + \pi) = -\sin\theta$; $\cos(\pi - \theta) = -\cos\theta$, $\sin(\pi - \theta) = \sin\theta$, since $(-x, y)$ is on the terminal side of $\pi - \theta$ when $(x, y)$ is on that of $\theta$)
 
 > [!remark] Remark: Using Symmetry
-> The circle $r = 2\cos\theta$ and the rose $r = \cos 2\theta$ are symmetric about the polar axis, since $\cos(-\theta) = \cos\theta$. The cardioid $r = 1 + \sin\theta$ and the rose are symmetric about $\theta = \pi/2$, since $\sin(\pi - \theta) = \sin\theta$ and $\cos[2(\pi - \theta)] = \cos(2\pi - 2\theta) = \cos 2\theta$. The rose is also symmetric about the pole. So in Example §65.3 it would have been enough to plot points for $0 \le \theta \le \pi/2$ and reflect in the polar axis. The tests are sufficient, not necessary, because a point has many polar representations. For example, replacing $\theta$ by $-\theta$ turns $r = \sin 2\theta$ into $r = -\sin 2\theta$, yet this rose is symmetric about the polar axis: if $(r, \theta)$ satisfies $r = \sin 2\theta$, then the reflected point $(r, -\theta)$ has the representation $(-r, \pi - \theta)$, and $\sin 2(\pi - \theta) = -\sin 2\theta = -r$.
+> The circle $r = 2\cos\theta$ and the rose $r = \cos 2\theta$ are symmetric about the polar axis, since $\cos(-\theta) = \cos\theta$. The cardioid $r = 1 + \sin\theta$ and the rose are symmetric about $\theta = \pi/2$, since $\sin(\pi - \theta) = \sin\theta$ and $\cos[2(\pi - \theta)] = \cos(2\pi - 2\theta) = \cos 2\theta$. The rose is also symmetric about the pole. So in [[§65 Polar Coordinates#^ex-65-3|Example §65.3]] it would have been enough to plot points for $0 \le \theta \le \pi/2$ and reflect in the polar axis. The tests are sufficient, not necessary, because a point has many polar representations. For example, replacing $\theta$ by $-\theta$ turns $r = \sin 2\theta$ into $r = -\sin 2\theta$, yet this rose is symmetric about the polar axis: if $(r, \theta)$ satisfies $r = \sin 2\theta$, then the reflected point $(r, -\theta)$ has the representation $(-r, \pi - \theta)$, and $\sin 2(\pi - \theta) = -\sin 2\theta = -r$.
 
 ^rem-65-2
 
@@ -229,7 +229,7 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 > [!remark]- Remark: Graphing Polar Curves with Technology
 > To graph a polar curve with software one must first choose the $\theta$-interval that gives the whole curve. For $r = \sin(8\theta/5)$ (Stewart's Example 9): after $n$ full turns, $\sin\frac{8(\theta + 2n\pi)}{5} = \sin\big(\frac{8\theta}{5} + \frac{16n\pi}{5}\big)$, which equals $\sin\frac{8\theta}{5}$ for all $\theta$ once $16n\pi/5$ is an even multiple of $\pi$, first at $n = 5$. So $0 \le \theta \le 10\pi$ gives the entire curve, which has $16$ loops.
 >
-> Stewart's Example 10 graphs the **limaçons** $r = 1 + c\sin\theta$ ($0 \le \theta \le 2\pi$ gives the whole curve). For $c > 1$ there is an inner loop, which shrinks as $c$ decreases; at $c = 1$ it disappears and the curve is the cardioid of Example §65.4; for $\frac12 < c < 1$ the cusp is smoothed into a "dimple"; for $0 < c \le \frac12$ the curve is an oval, more and more circular as $c \to 0$; at $c = 0$ it is the circle $r = 1$. For negative $c$ the shapes repeat in reverse order, reflected in the horizontal axis (replacing $c$ by $-c$ and $\theta$ by $-\theta$ leaves $r$ unchanged). The path of Mars as seen from Earth has been modelled by a limaçon with a loop.
+> Stewart's Example 10 graphs the **limaçons** $r = 1 + c\sin\theta$ ($0 \le \theta \le 2\pi$ gives the whole curve). For $c > 1$ there is an inner loop, which shrinks as $c$ decreases; at $c = 1$ it disappears and the curve is the cardioid of [[§65 Polar Coordinates#^ex-65-4|Example §65.4]]; for $\frac12 < c < 1$ the cusp is smoothed into a "dimple"; for $0 < c \le \frac12$ the curve is an oval, more and more circular as $c \to 0$; at $c = 0$ it is the circle $r = 1$. For negative $c$ the shapes repeat in reverse order, reflected in the horizontal axis (replacing $c$ by $-c$ and $\theta$ by $-\theta$ leaves $r$ unchanged). The path of Mars as seen from Earth has been modelled by a limaçon with a loop.
 
 ^rem-65-3
 

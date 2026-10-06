@@ -22,8 +22,8 @@ tags: [topology, hub]
 - [[§17 Local Compactness#^ex-17-5|Example §17.5: ℝ^ω is Not Locally Compact]]
 - [[§17 Local Compactness#^thm-17-5|Theorem §17.5: One-Point Compactification (Munkres 29.1)]]
 - [[§20 Normal Spaces#^thm-20-2|Theorem §20.2: Every Compact Hausdorff Space is Normal]]
-- [[§24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
-- [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
+- [[§25a Retractions and Fixed Points#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 - [[§27 The Fundamental Group of Sⁿ#^ex-27-1|Example §27.1: Wedge of Two Spheres is Simply Connected]]
 
 ## Used in (Differentiable Manifolds)

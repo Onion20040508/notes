@@ -17,8 +17,8 @@ tags: [topology, hub]
 - [[§13 Connected Spaces#^thm-13-6|Theorem §13.6: Finite Product of Connected Spaces]]
 - [[§14 Connected Subspaces of ℝ#^thm-14-3|Theorem §14.3: Intermediate Value Theorem]]
 - [[§14 Connected Subspaces of ℝ#^thm-14-4|Theorem §14.4: Path-Connected Implies Connected]]
-- [[§24 Covering Spaces#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
-- [[§24 Covering Spaces#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-6|Lemma §24.6: Path Lifting Lemma]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-7|Lemma §24.7: Homotopy Lifting Lemma]]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-7|Proposition §1.7: Connectedness and Components]]

@@ -63,6 +63,17 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 
 ## The Mean Value Theorem
 
+> [!remark] Remark: Why It Works
+> Let $A(a, f(a))$ and $B(b, f(b))$ be the endpoints of the graph. The slope of the secant line $AB$ is
+>
+> $$
+> m_{AB} = \frac{f(b) - f(a)}{b - a} , \qquad (3)
+> $$
+>
+> the right side of (1), and $f'(c)$ is the slope of the tangent line at $(c, f(c))$. So the theorem says: at some point $P(c, f(c))$ of the graph the tangent line is parallel to the secant line $AB$. (Imagine a line far away, parallel to $AB$, moving toward $AB$ until it first touches the graph; there may be several such points.) In terms of rates: if $s = f(t)$ is a position, then $\frac{f(b) - f(a)}{b - a}$ is the average velocity over $[a, b]$ and $f'(c)$ the velocity at time $c$. A car that travels $180$ km in $2$ hours has a speedometer reading of exactly $90$ km/h at least once.
+
+^rem-26-1
+
 > [!theorem] Theorem §26.2: The Mean Value Theorem
 > Let $f$ be a function that satisfies the following hypotheses:
 > 1. $f$ is continuous on the closed interval $[a, b]$.
@@ -83,17 +94,6 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 > *Stewart: 4.2, The Mean Value Theorem (Equations 1 and 2)*
 
 ^thm-26-2
-
-> [!remark] Remark: Why It Works
-> Let $A(a, f(a))$ and $B(b, f(b))$ be the endpoints of the graph. The slope of the secant line $AB$ is
->
-> $$
-> m_{AB} = \frac{f(b) - f(a)}{b - a} , \qquad (3)
-> $$
->
-> the right side of (1), and $f'(c)$ is the slope of the tangent line at $(c, f(c))$. So the theorem says: at some point $P(c, f(c))$ of the graph the tangent line is parallel to the secant line $AB$. (Imagine a line far away, parallel to $AB$, moving toward $AB$ until it first touches the graph; there may be several such points.) In terms of rates: if $s = f(t)$ is a position, then $\frac{f(b) - f(a)}{b - a}$ is the average velocity over $[a, b]$ and $f'(c)$ the velocity at time $c$. A car that travels $180$ km in $2$ hours has a speedometer reading of exactly $90$ km/h at least once.
-
-^rem-26-1
 
 > [!proof]+ Proof
 > Apply Rolle's Theorem to the difference $h$ between $f$ and the function whose graph is the secant line $AB$. By (3) and the point-slope form, the line $AB$ is
@@ -156,6 +156,8 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 
 ^ex-26-2
 
+*Chain:* ← [[§13a The Parabola y = x², the CN Tower Ball, (√(t² + 9) − 3)∕t² and x³ − x#The Cubic x³ − x|Chapter 2]]
+
 > [!example] Example §26.3: Bounding a Function by Its Derivative
 > Suppose that $f(0) = -3$ and $f'(x) \le 5$ for all values of $x$. How large can $f(2)$ possibly be?
 >
@@ -203,7 +205,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 ^cor-26-4
 
 > [!proof]+ Proof
-> Let $F(x) = f(x) - g(x)$. Then $F'(x) = f'(x) - g'(x) = 0$ for all $x$ in $(a, b)$. By Theorem §26.3, $F$ is constant; that is, $f - g$ is constant.
+> Let $F(x) = f(x) - g(x)$. Then $F'(x) = f'(x) - g'(x) = 0$ for all $x$ in $(a, b)$. By [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]], $F$ is constant; that is, $f - g$ is constant.
 
 ^pf-26-4
 
@@ -214,7 +216,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 > - With $f' = 0$ only [[§12 Measurable Functions#^def-12-5|almost everywhere]] the conclusion fails: the Cantor function, [[§18 Differentiation Theory#^ex-18-4|551 Ex. §18.4]], is a counterexample, and [[§18 Differentiation Theory#^thm-18-27|551 Thm. §18.27]] shows that such a nonconstant $f$ is never absolutely continuous (see also the Connections of [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]]).
 
 > [!remark] Remark: The Interval Matters
-> Theorem §26.3 needs an interval. Let
+> [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]] needs an interval. Let
 >
 > $$
 > f(x) = \frac{x}{|x|} = \begin{cases} 1 & \text{if } x > 0 \\ -1 & \text{if } x < 0 . \end{cases}
@@ -233,7 +235,7 @@ The Mean Value Theorem gives information about $f$ from information about $f'$. 
 > f'(x) = \frac{1}{1 + x^2} - \frac{1}{1 + x^2} = 0
 > $$
 >
-> for all $x$. By Theorem §26.3 on the interval $(-\infty, \infty)$, $f(x) = C$, a constant. To find $C$, put $x = 1$, where $f$ can be evaluated exactly:
+> for all $x$. By [[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]] on the interval $(-\infty, \infty)$, $f(x) = C$, a constant. To find $C$, put $x = 1$, where $f$ can be evaluated exactly:
 >
 > $$
 > C = f(1) = \tan^{-1} 1 + \cot^{-1} 1 = \frac{\pi}{4} + \frac{\pi}{4} = \frac{\pi}{2} .

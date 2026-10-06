@@ -11,48 +11,11 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 11 and Problems III (Q5, Q9–Q11, Q14) · MAT 200 lecture (syllabus week 14).*
 
-Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first proves the lemma that §10 left open ([[§10 Counting#^lem-10-2|Lemma §10.2]]), which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
+Finite sets allow two special kinds of argument: an element with a property can be found by testing the elements one at a time, a search that must end; and a "counting argument" can show that an element with a property exists without looking at any element individually. This section first recalls the lemma that §10 proves ([[§10 Counting#^lem-10-2|Lemma §10.2]]), which is the pigeonhole principle in disguise, then shows that finite sets of real numbers have a greatest and a least element, and uses this to define the greatest common divisor and to write odd integers as $2q + 1$.
 
 ## 11.1 The Pigeonhole Principle
 
-The key step in showing that cardinality is well defined was [[§10 Counting#^lem-10-2|Lemma §10.2]]: *if there is an injection $\N_m \to \N_n$, then $m \le n$.*
-
-> [!remark] Remark: Constructing the Proof
-> A statement about positive integers suggests induction, and here there are two variables. Inducting on $n$, the predicate is
->
-> $$
-> P(n) : \quad \forall m \in \Z^+ \ \bigl( \text{there is an injection } \N_m \to \N_n \Rightarrow m \le n \bigr).
-> $$
->
-> In the inductive step the given statement is $P(k)$ and the goal $P(k+1)$; the $m$ in each is a dummy variable, so rename it $m_1$ in the goal. We are handed an injection $f : \N_{m_1} \to \N_{k+1}$ and must show $m_1 \le k + 1$. The hypothesis $P(k)$ only applies to injections *into $\N_k$*, so the work is to manufacture one from $f$, if necessary by shrinking the domain. (Induction on $m$ also works: Eccles Problems III Q8.)
-
-^rem-11-1
-
-> [!proof]+ Proof of Lemma §10.2
-> Induction on $n$.
->
-> *Base case $n = 1$.* If $f : \N_m \to \N_1$, then $f(i) = 1$ for every $i$; if $m > 1$ then $f(1) = f(2)$, so $f$ is not injective. Hence if $f$ is injective, $m = 1 = n$. (This is really a proof of the contrapositive "$m > 1 \Rightarrow f$ is not injective".)
->
-> *Inductive step.* Suppose $P(k)$ holds for some $k \ge 1$, and let $f : \N_{m_1} \to \N_{k+1}$ be an injection. There are two cases.
->
-> (i) $f(i) < k + 1$ for all $i \in \N_{m_1}$. Then restricting the codomain gives $f_1 : \N_{m_1} \to \N_k$, $f_1(i) = f(i)$, still injective: $f_1(i_1) = f_1(i_2) \Rightarrow f(i_1) = f(i_2) \Rightarrow i_1 = i_2$. By $P(k)$, $m_1 \le k$, so certainly $m_1 \le k + 1$.
->
-> (ii) $f(i_0) = k + 1$ for some $i_0 \in \N_{m_1}$. If $m_1 = 1$ then $m_1 \le k + 1$ and there is nothing to prove; so let $m_1 \ge 2$. Define $g : \N_{m_1 - 1} \to \N_{m_1}$ by
->
-> $$
-> g(i) = \begin{cases} i & \text{for } i < i_0, \\ i + 1 & \text{for } i \ge i_0, \end{cases}
-> $$
->
-> an injection whose image misses exactly $i_0$. For $i \ne i_0$ we have $f(i) \ne f(i_0) = k + 1$ because $f$ is injective, so $f(i) \in \N_k$. Hence $f_1 = f \circ g$ can be regarded as a function $\N_{m_1 - 1} \to \N_k$, and it is injective as a composite of injections. By $P(k)$, $m_1 - 1 \le k$, that is, $m_1 \le k + 1$.
->
-> One of the cases holds for every $f$, so $P(k+1)$ follows. By induction $P(n)$ holds for all $n \in \Z^+$.
-
-^pf-10-2
-
-*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
-
-![[m250-11-1.svg]]
-*Case (ii) of the inductive step with $m_1 = 4$, $k + 1 = 5$: $f$ (black) sends $i_0 = 2$ to the top value $5$ (red). The map $g$ (blue) skips $i_0$, so $f \circ g : \N_3 \to \N_5$ never takes the value $5$ and is an injection into $\N_4$, to which the inductive hypothesis applies.*
+The key step in showing that cardinality is well defined was [[§10 Counting#^lem-10-2|Lemma §10.2]]: *if there is an injection $\N_m \to \N_n$, then $m \le n$.* Its proof, which Eccles gives at the start of Chapter 11, is given with the lemma in §10: [[§10 Counting#^pf-10-2|proof of Lemma §10.2]].
 
 The lemma passes at once from the standard sets $\N_n$ to arbitrary finite sets, by composing with bijections.
 
@@ -319,6 +282,8 @@ is finite, with $\min D(a) = -|a|$ and $\max D(a) = |a|$. For integers $a, b$ no
 > *Eccles: Example 11.3.3*
 
 ^ex-11-4
+
+*Chain: later in [[§18b The Pair (72, 30)|Chapter 4]]*
 
 > [!theorem] Proposition §11.10: Dividing Out the gcd
 > If $a$ and $b$ are non-zero integers with $\gcd(a, b) = d$, then $a/d$ and $b/d$ are coprime.

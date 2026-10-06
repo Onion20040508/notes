@@ -313,11 +313,6 @@ Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ 
 
 ^thm-21-6
 
-> [!remark] Remark: The Idea — Rows of the Multiplication Table
-> Let $\mathrm{Row}(a)$ be the set of entries in the row of $[a]_m$ in the multiplication table of $\mathbb{Z}_m$. The equation has a solution iff $[b]_m \in \mathrm{Row}(a)$. If the $m$ entries of the row are distinct, then $\mathrm{Row}(a)$ is a subset of $\mathbb{Z}_m$ with $m$ elements, hence all of $\mathbb{Z}_m$, and $[b]_m$ occurs exactly once. And the entries *are* distinct when $\gcd(a, m) = 1$, by cancellation (Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]]). The formal proof phrases this with a function and the pigeonhole principle.
-
-^rem-21-3
-
 > [!proof]+ Proof
 > Define $f : \mathbb{Z}_m \to \mathbb{Z}_m$ by $f([x]_m) = [a]_m \times [x]_m$; this is a function because multiplication is well defined (Proposition [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]]).
 >
@@ -336,6 +331,11 @@ Arithmetic in $\mathbb{Z}_m$ (or $R_m$) differs from arithmetic in $\mathbb{Z}$ 
 ^pf-21-6
 
 *Uses:* [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-1|§21.1]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-2|§21.2]], [[§21 Congruence Classes and the Arithmetic of Remainders#^prop-21-3|§21.3]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§11 Properties of Finite Sets#^thm-11-2|§11.2]]
+
+> [!remark] Remark: The Idea — Rows of the Multiplication Table
+> Let $\mathrm{Row}(a)$ be the set of entries in the row of $[a]_m$ in the multiplication table of $\mathbb{Z}_m$. The equation has a solution iff $[b]_m \in \mathrm{Row}(a)$. If the $m$ entries of the row are distinct, then $\mathrm{Row}(a)$ is a subset of $\mathbb{Z}_m$ with $m$ elements, hence all of $\mathbb{Z}_m$, and $[b]_m$ occurs exactly once. And the entries *are* distinct when $\gcd(a, m) = 1$, by cancellation (Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]]). The formal proof phrases this with a function and the pigeonhole principle.
+
+^rem-21-3
 
 This proof is **non-constructive**: it guarantees a solution without saying how to find it (short of trying all $m$ classes), which is typical of counting arguments; the Euclidean-algorithm proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] computes it. On the other hand the counting proof shows *why* the result holds: multiplication by a class coprime to $m$ just permutes $\mathbb{Z}_m$. Different proofs of one theorem can illuminate different things.
 

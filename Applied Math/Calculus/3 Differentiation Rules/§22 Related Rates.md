@@ -20,7 +20,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 > 2. Draw a diagram if possible.
 > 3. Introduce notation. Assign symbols to all quantities that are functions of time.
 > 4. Express the given information and the required rate in terms of derivatives: rates of change are derivatives with respect to $t$.
-> 5. Write an equation that relates the various quantities of the problem. If necessary, use the geometry of the situation to eliminate one of the variables by substitution (as in Example §22.3).
+> 5. Write an equation that relates the various quantities of the problem. If necessary, use the geometry of the situation to eliminate one of the variables by substitution (as in [[§22 Related Rates#^ex-22-3|Example §22.3]]).
 > 6. Use the Chain Rule to differentiate both sides of the equation with respect to $t$.
 > 7. Substitute the given information into the resulting equation and solve for the unknown rate.
 >
@@ -29,7 +29,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 ^rem-22-1
 
 > [!remark] Remark: Substitute Only After Differentiating
-> A common error is to substitute the given numerical information, for quantities that vary with time, too early. Step 7 must follow Step 6. In Example §22.1, the radius is kept as a general $r$ until the last step; putting $r = 25$ into $V = \frac43 \pi r^3$ before differentiating would give the constant $V = \frac43 \pi (25)^3$ and so $dV/dt = 0$, which is clearly wrong. Constants of the problem (the length of a ladder, the dimensions of a tank) may be substituted at any time.
+> A common error is to substitute the given numerical information, for quantities that vary with time, too early. Step 7 must follow Step 6. In [[§22 Related Rates#^ex-22-1|Example §22.1]], the radius is kept as a general $r$ until the last step; putting $r = 25$ into $V = \frac43 \pi r^3$ before differentiating would give the constant $V = \frac43 \pi (25)^3$ and so $dV/dt = 0$, which is clearly wrong. Constants of the problem (the length of a ladder, the dimensions of a tank) may be substituted at any time.
 
 ^rem-22-2
 
@@ -113,7 +113,7 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 ^ex-22-3
 
 ![[m233-22-1.svg]]
-*The conical tank of Example §22.3. The water (blue) is a smaller cone similar to the tank, so its surface radius and depth are in the ratio $r : h = 2 : 4$ of the tank (the red triangles). This is the relation that eliminates $r$ before differentiating.*
+*The conical tank of [[§22 Related Rates#^ex-22-3|Example §22.3]]. The water (blue) is a smaller cone similar to the tank, so its surface radius and depth are in the ratio $r : h = 2 : 4$ of the tank (the red triangles). This is the relation that eliminates $r$ before differentiating.*
 
 > [!example] Example §22.4: Two Cars Approaching an Intersection
 > Car A travels west at $50$ mi/h and car B travels north at $60$ mi/h, both toward the intersection $C$ of their roads. At what rate are the cars approaching each other when car A is $0.3$ mi and car B is $0.4$ mi from the intersection?

@@ -13,8 +13,8 @@ The unit circle $x^2 + y^2 = 1$ and the sphere $x^2 + y^2 + z^2 = R^2$, as level
 - The sphere parametrized by longitude and latitude ([[§18 Surface Integrals#^ex-18-1|§18]])
 - The poles are irregular points of this parametrization, not of the sphere ([[§18 Surface Integrals#^rem-18-3|§18]])
 - Surface area of the sphere is $4\pi R^2$ ([[§18 Surface Integrals#^ex-18-2|§18]])
-- Flux of $z\,dx \wedge dy$ through the unit sphere via pullback ([[§22 The Algebra of Differential Forms#^ex-22-5|§22]])
-- The angle form integrates to $2\pi$ around the unit circle ([[§22 The Algebra of Differential Forms#^pf-22-11|§22]])
+- Flux of $z\,dx \wedge dy$ through the unit sphere via pullback ([[§22a The Exterior Derivative#^ex-22-5|§22.5]])
+- The angle form integrates to $2\pi$ around the unit circle ([[§22b Closed and Exact Forms#^pf-22-11|§22b]])
 
 ## The implicit function theorem solves for $y$ near $(0,1)$
 ![[§12 The Implicit Function Theorem#^ex-12-1]]

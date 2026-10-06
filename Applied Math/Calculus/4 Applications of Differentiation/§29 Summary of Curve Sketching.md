@@ -38,7 +38,7 @@ This section puts together everything known so far about a function to sketch it
 >
 > **D. Asymptotes.**
 > - *Horizontal:* if $\lim_{x \to \infty} f(x) = L$ or $\lim_{x \to -\infty} f(x) = L$, then $y = L$ is a horizontal asymptote. If $\lim_{x \to \infty} f(x) = \pm\infty$, there is no asymptote to the right, but this is still useful information.
-> - *Slant:* see Definition §29.2 below.
+> - *Slant:* see [[§29 Summary of Curve Sketching#^def-29-2|Definition §29.2]] below.
 > - *Vertical:* $x = a$ is a vertical asymptote if at least one of the following holds:
 >
 > $$
@@ -105,7 +105,7 @@ This section puts together everything known so far about a function to sketch it
 ^ex-29-1
 
 ![[m233-29-1.svg]]
-*Example §29.1: $y = 2x^2/(x^2 - 1)$ with its asymptotes $y = 2$ and $x = \pm 1$ (dashed). The middle branch has its local maximum at the origin and is concave downward; the outer branches are concave upward and approach $y = 2$ from above. The curve is symmetric about the $y$-axis.*
+*[[§29 Summary of Curve Sketching#^ex-29-1|Example §29.1]]: $y = 2x^2/(x^2 - 1)$ with its asymptotes $y = 2$ and $x = \pm 1$ (dashed). The middle branch has its local maximum at the origin and is concave downward; the outer branches are concave upward and approach $y = 2$ from above. The curve is symmetric about the $y$-axis.*
 
 > [!example] Example §29.2: An Asymptote Found by L'Hospital's Rule
 > Sketch the graph of $f(x) = xe^x$.
@@ -243,4 +243,4 @@ This section puts together everything known so far about a function to sketch it
 ^ex-29-4
 
 ![[m233-29-2.svg]]
-*Example §29.4: $y = x^3/(x^2 + 1)$ and its slant asymptote $y = x$ (dashed). The curve is increasing everywhere, with a horizontal tangent at the origin, which is one of its three inflection points (red). For $x > 0$ it lies below the asymptote, since $f(x) - x = -x/(x^2 + 1) < 0$; for $x < 0$ it lies above.*
+*[[§29 Summary of Curve Sketching#^ex-29-4|Example §29.4]]: $y = x^3/(x^2 + 1)$ and its slant asymptote $y = x$ (dashed). The curve is increasing everywhere, with a horizontal tangent at the origin, which is one of its three inflection points (red). For $x > 0$ it lies below the asymptote, since $f(x) - x = -x/(x^2 + 1) < 0$; for $x < 0$ it lies above.*

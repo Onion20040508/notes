@@ -63,7 +63,7 @@ Compare the tangent line $y - y_0 = f'(x_0)(x - x_0)$ in one variable.
 > f_x(x, y) = 4x , \quad f_y(x, y) = 2y , \qquad f_x(1, 1) = 4 , \quad f_y(1, 1) = 2 .
 > $$
 >
-> By Theorem §93.1 the tangent plane at $(1, 1, 3)$ is
+> By [[§93 Tangent Planes and Linear Approximations#^thm-93-1|Theorem §93.1]] the tangent plane at $(1, 1, 3)$ is
 >
 > $$
 > z - 3 = 4(x - 1) + 2(y - 1) , \qquad\text{or}\qquad z = 4x + 2y - 3 .
@@ -143,7 +143,7 @@ $$
 
 ^def-93-new1
 
-In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check Definition §93.3 directly; the next theorem is the convenient sufficient condition.
+In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] directly; the next theorem is the convenient sufficient condition.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Differentiability#^def-6-1|452 Def. §6.1]] asks for $\Delta z = A\,\Delta x + B\,\Delta y + o\big(\sqrt{\Delta x^2 + \Delta y^2}\big)$. This is equivalent to Stewart's form, with $\rho = \sqrt{\Delta x^2 + \Delta y^2}$: $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ is $o(\rho)$ since $|\Delta x|, |\Delta y| \le \rho$; conversely an $o(\rho)$ remainder $R$ equals $\varepsilon_1 \Delta x + \varepsilon_2 \Delta y$ with $\varepsilon_1 = R\,\Delta x / \rho^2$ and $\varepsilon_2 = R\,\Delta y / \rho^2$, both at most $|R|/\rho$ in absolute value. The function of the remark "Partial Derivatives Are Not Enough", doubled, is [[§6 Differentiability#^ex-6-1|452 Ex. §6.1]], and the derivative as a linear map is [[§6 Differentiability#^def-6-2|452 Def. §6.2]].
@@ -156,7 +156,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 ^thm-93-2
 
 > [!proof]+ Proof
-> Let $\Delta z = f(a + \Delta x, b + \Delta y) - f(a, b)$. By Definition §93.3 we have to show that
+> Let $\Delta z = f(a + \Delta x, b + \Delta y) - f(a, b)$. By [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] we have to show that
 >
 > $$
 > \Delta z = f_x(a, b)\,\Delta x + f_y(a, b)\,\Delta y + \varepsilon_1\,\Delta x + \varepsilon_2\,\Delta y
@@ -200,7 +200,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 
 ^pf-93-2
 
-*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
+*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Def. §93.4]], [[§26 The Mean Value Theorem#^thm-26-2|§26.2]] (Mean Value Theorem), [[§91 Limits and Continuity#^def-91-3|Def. §91.3]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Differentiability#^thm-6-2|452 Thm. §6.2]], with the same two-step Mean Value Theorem argument; hub [[Continuous Partials Imply Differentiability]].
@@ -212,7 +212,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > f_x(x, y) = e^{xy} + xye^{xy} , \quad f_y(x, y) = x^2 e^{xy} , \qquad f_x(1, 0) = 1 , \quad f_y(1, 0) = 1 .
 > $$
 >
-> Both $f_x$ and $f_y$ are continuous functions (sums and products of polynomials and exponentials, [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5]]), so $f$ is differentiable by Theorem §93.2. With $f(1, 0) = 1$, the linearization is
+> Both $f_x$ and $f_y$ are continuous functions (sums and products of polynomials and exponentials, [[§91 Limits and Continuity#^thm-91-5|Theorem §91.5]]), so $f$ is differentiable by [[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]. With $f(1, 0) = 1$, the linearization is
 >
 > $$
 > L(x, y) = f(1, 0) + f_x(1, 0)(x - 1) + f_y(1, 0)(y - 0) = 1 + (x - 1) + y = x + y .
@@ -246,7 +246,7 @@ In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is
 > f_x = 2xy + y^2 e^{xy} , \quad f_y = x^2 + e^{xy} + xye^{xy} , \qquad f_x(0, 5) = 0 + 25 = 25 , \quad f_y(0, 5) = 0 + 1 + 0 = 1 .
 > $$
 >
-> Both partial derivatives are continuous, so $f$ is differentiable (Theorem §93.2), and
+> Both partial derivatives are continuous, so $f$ is differentiable ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]), and
 >
 > $$
 > L(x, y) = 5 + 25(x - 0) + 1(y - 5) = 25x + y , \qquad f(0.1, 4.9) \approx L(0.1, 4.9) = 2.5 + 4.9 = 7.4 .
@@ -321,7 +321,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 ## Functions of Three or More Variables
 
 > [!definition] Definition §93.5: Linear Approximation in Three Variables
-> Linear approximations, differentiability and differentials are defined in the same way for functions of more than two variables; a differentiable function is defined by an expression like the one in [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.3]]. For $f(x, y, z)$ the **linear approximation** at $(a, b, c)$ is
+> Linear approximations, differentiability and differentials are defined in the same way for functions of more than two variables; a differentiable function is defined by an expression like the one in [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]]. For $f(x, y, z)$ the **linear approximation** at $(a, b, c)$ is
 >
 > $$
 > f(x, y, z) \approx f(a, b, c) + f_x(a, b, c)(x - a) + f_y(a, b, c)(y - b) + f_z(a, b, c)(z - c) ,
@@ -370,7 +370,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 >
 > **(b)** The dimensions of a rectangular box are measured as $75$ cm, $60$ cm and $40$ cm, each correct to within $\varepsilon$ cm. Estimate the largest possible error in the calculated volume, and evaluate it for $\varepsilon = 0.2$.
 >
-> $V = xyz$, so $dV = yz\,dx + xz\,dy + xy\,dz$ (Definition §93.5). With $dx = dy = dz = \varepsilon$ and $x = 75$, $y = 60$, $z = 40$:
+> $V = xyz$, so $dV = yz\,dx + xz\,dy + xy\,dz$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]]). With $dx = dy = dz = \varepsilon$ and $x = 75$, $y = 60$, $z = 40$:
 >
 > $$
 > \Delta V \approx dV = (60)(40)\varepsilon + (75)(40)\varepsilon + (75)(60)\varepsilon = (2400 + 3000 + 4500)\varepsilon = 9900\varepsilon .
@@ -399,7 +399,7 @@ so the linear approximation (4) reads $f(x, y) \approx f(a, b) + dz$. Geometrica
 > \mathbf{c}_1'(t) = \langle 3, -2t, -4 + 2t \rangle , \quad \mathbf{c}_1'(0) = \langle 3, 0, -4 \rangle ; \qquad \mathbf{c}_2'(u) = \langle 2u, 6u^2, 2 \rangle , \quad \mathbf{c}_2'(1) = \langle 2, 6, 2 \rangle .
 > $$
 >
-> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (as noted after Definition §93.1; this is [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]) is a normal vector:
+> **Normal vector.** The tangent lines at $P$ to curves on $S$ through $P$ lie in the tangent plane (as noted after [[§93 Tangent Planes and Linear Approximations#^def-93-1|Definition §93.1]]; this is [[§95 Directional Derivatives and the Gradient Vector#^thm-95-5|Theorem §95.5]]), so both tangent vectors are parallel to the plane. They are not parallel to each other, and their cross product ([[§83 The Cross Product#^thm-83-2|Theorem §83.2]]) is a normal vector:
 >
 > $$
 > \langle 3, 0, -4 \rangle \times \langle 2, 6, 2 \rangle = \langle 0 \cdot 2 - (-4) \cdot 6,\ (-4) \cdot 2 - 3 \cdot 2,\ 3 \cdot 6 - 0 \cdot 2 \rangle = \langle 24, -14, 18 \rangle .

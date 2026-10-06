@@ -71,7 +71,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 > [!example] Example §3.1: Transformations of the Square Root
 > Given the graph of $y = \sqrt{x}$, use transformations to graph $y = \sqrt{x} - 2$, $y = \sqrt{x - 2}$, $y = -\sqrt{x}$, $y = 2\sqrt{x}$ and $y = \sqrt{-x}$.
 >
-> The graph of $\sqrt{x}$ is the upper half of the parabola $x = y^2$, starting at the origin ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6|Def. §2.6]]). By Theorems §3.1 and §3.2:
+> The graph of $\sqrt{x}$ is the upper half of the parabola $x = y^2$, starting at the origin ([[§2 Mathematical Models꞉ A Catalog of Essential Functions#^def-2-6|Def. §2.6]]). By Theorems [[§3 New Functions from Old Functions#^thm-3-1|§3.1]] and [[§3 New Functions from Old Functions#^thm-3-2|§3.2]]:
 > - $y = \sqrt{x} - 2$: shift $2$ units down. It starts at $(0, -2)$ and crosses the $x$-axis where $\sqrt{x} = 2$, at $x = 4$.
 > - $y = \sqrt{x - 2}$: shift $2$ units to the right. It starts at $(2, 0)$, and its domain is $[2, \infty)$.
 > - $y = -\sqrt{x}$: reflect about the $x$-axis.
@@ -85,7 +85,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^ex-3-1
 
 ![[m233-3-1.svg]]
-*Example §3.1. (a) Operations on the output: $\sqrt{x}$ (black) shifted down by $2$ (red), reflected about the $x$-axis (green), stretched vertically by $2$ (orange). All keep the domain $[0, \infty)$. (b) Operations on the input: $\sqrt{x - 2}$ (blue) is $\sqrt{x}$ moved $2$ to the right, starting at $(2, 0)$; $\sqrt{-x}$ (green) is the mirror image of $\sqrt{x}$ in the $y$-axis, with domain $(-\infty, 0]$.*
+*[[§3 New Functions from Old Functions#^ex-3-1|Example §3.1]]. (a) Operations on the output: $\sqrt{x}$ (black) shifted down by $2$ (red), reflected about the $x$-axis (green), stretched vertically by $2$ (orange). All keep the domain $[0, \infty)$. (b) Operations on the input: $\sqrt{x - 2}$ (blue) is $\sqrt{x}$ moved $2$ to the right, starting at $(2, 0)$; $\sqrt{-x}$ (green) is the mirror image of $\sqrt{x}$ in the $y$-axis, with domain $(-\infty, 0]$.*
 
 > [!example] Example §3.2: Combining Transformations
 > **(a)** Sketch $f(x) = x^2 + 6x + 10$. Completing the square,
@@ -141,7 +141,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^thm-3-3
 
 > [!proof]+ Proof
-> By the definition of absolute value ([[§1 Four Ways to Represent a Function#^def-1-6|Def. §1.6]]), $|f(x)| = f(x)$ when $f(x) \ge 0$ and $|f(x)| = -f(x)$ when $f(x) < 0$. So where the graph of $f$ is on or above the $x$-axis, $y = |f(x)|$ has the same points; where it is below, the point $(a, f(a))$ is replaced by $(a, -f(a))$, its reflection about the $x$-axis (as in Theorem §3.2).
+> By the definition of absolute value ([[§1 Four Ways to Represent a Function#^def-1-6|Def. §1.6]]), $|f(x)| = f(x)$ when $f(x) \ge 0$ and $|f(x)| = -f(x)$ when $f(x) < 0$. So where the graph of $f$ is on or above the $x$-axis, $y = |f(x)|$ has the same points; where it is below, the point $(a, f(a))$ is replaced by $(a, -f(a))$, its reflection about the $x$-axis (as in [[§3 New Functions from Old Functions#^thm-3-2|Theorem §3.2]]).
 
 ^pf-3-3
 
@@ -150,7 +150,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 > [!example] Example §3.4: An Absolute Value of a Parabola
 > Sketch the graph of $y = |x^2 - 1|$.
 >
-> First graph $y = x^2 - 1$: the parabola $y = x^2$ shifted $1$ unit down (Theorem §3.1), with vertex $(0, -1)$ and $x$-intercepts $\pm 1$. It lies below the $x$-axis exactly when $x^2 < 1$, that is, $-1 < x < 1$. By Theorem §3.3, reflect that part about the $x$-axis and keep the rest:
+> First graph $y = x^2 - 1$: the parabola $y = x^2$ shifted $1$ unit down ([[§3 New Functions from Old Functions#^thm-3-1|Theorem §3.1]]), with vertex $(0, -1)$ and $x$-intercepts $\pm 1$. It lies below the $x$-axis exactly when $x^2 < 1$, that is, $-1 < x < 1$. By [[§3 New Functions from Old Functions#^thm-3-3|Theorem §3.3]], reflect that part about the $x$-axis and keep the rest:
 >
 > $$
 > |x^2 - 1| = \begin{cases} x^2 - 1 & \text{if } |x| \ge 1 \\ 1 - x^2 & \text{if } |x| < 1 . \end{cases}
@@ -163,7 +163,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 ^ex-3-4
 
 ![[m233-3-2.svg]]
-*Example §3.4. The arc of $y = x^2 - 1$ between $-1$ and $1$ (dashed gray) lies below the $x$-axis; taking the absolute value flips it up (red arrows) to the arc $y = 1 - x^2$ through $(0, 1)$. Outside $[-1, 1]$ the parabola is already above the axis and is unchanged (blue). Where the two pieces meet, at $(\pm 1, 0)$, the graph has corners.*
+*[[§3 New Functions from Old Functions#^ex-3-4|Example §3.4]]. The arc of $y = x^2 - 1$ between $-1$ and $1$ (dashed gray) lies below the $x$-axis; taking the absolute value flips it up (red arrows) to the arc $y = 1 - x^2$ through $(0, 1)$. Outside $[-1, 1]$ the parabola is already above the axis and is unchanged (blue). Where the two pieces meet, at $(\pm 1, 0)$, the graph has corners.*
 
 ## Combinations of Functions
 
@@ -210,7 +210,7 @@ Throughout, the graph of $f$ is the set of points $(a, b)$ with $b = f(a)$ ([[§
 > - Rigorous treatment: [[§8 Functions#^def-8-5|250 Def. §8.5]], for $f : X \to Y$ and $g : Y \to Z$; Stewart's domain rule is the restriction needed when the values of $g$ do not all lie in the domain of $f$ ([[§8 Functions#^ex-8-6|250 Ex. §8.6]](b)). That $f \circ g \circ h$ needs no brackets is associativity, [[§8 Functions#^prop-8-1|250 Prop. §8.1]].
 
 > [!remark] Remark: The Order Matters
-> In general $f \circ g \ne g \circ f$. The notation $f \circ g$ means that the function $g$ is applied *first* and then $f$ is applied *second*, the reverse of the order in which the letters are read. Example §3.5(a) shows two different composites of the same pair of functions.
+> In general $f \circ g \ne g \circ f$. The notation $f \circ g$ means that the function $g$ is applied *first* and then $f$ is applied *second*, the reverse of the order in which the letters are read. [[§3 New Functions from Old Functions#^ex-3-5|Example §3.5]](a) shows two different composites of the same pair of functions.
 
 ^rem-3-2
 

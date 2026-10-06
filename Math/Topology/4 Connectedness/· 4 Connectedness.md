@@ -14,6 +14,7 @@ tags: [chapter, topology]
 ## Sections
 - [[§13 Connected Spaces]]
 - [[§14 Connected Subspaces of ℝ]]
+- [[§14a Discrete and Indiscrete Spaces]]
 
 ## Central results
 - [[Continuous Image of a Connected Space is Connected]] (§13.3)

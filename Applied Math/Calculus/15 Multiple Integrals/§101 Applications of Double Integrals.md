@@ -142,7 +142,7 @@ Physically, the lamina behaves as if its entire mass were concentrated at its ce
 ^ex-101-2
 
 ![[m233-101-1.svg]]
-*Example §101.2. The shading shows the density $\rho = Kr$, heavier toward the rim. The center of mass $(0, 3a/(2\pi)) \approx (0, 0.48a)$ (red) lies above the centroid $(0, 4a/(3\pi)) \approx (0, 0.42a)$ (gray) of the same semicircle with uniform density.*
+*[[§101 Applications of Double Integrals#^ex-101-2|Example §101.2]]. The shading shows the density $\rho = Kr$, heavier toward the rim. The center of mass $(0, 3a/(2\pi)) \approx (0, 0.48a)$ (red) lies above the centroid $(0, 4a/(3\pi)) \approx (0, 0.42a)$ (gray) of the same semicircle with uniform density.*
 
 ## Moment of Inertia
 
@@ -211,7 +211,7 @@ The moment of inertia plays the same role in rotational motion that mass plays i
 > I_x = \iint_D y^2\rho\,dA = \rho\int_0^{2\pi} \int_0^a (r\sin\theta)^2 r\,dr\,d\theta = \rho\int_0^{2\pi} \tfrac12 (1 - \cos 2\theta)\,d\theta \int_0^a r^3\,dr = \frac{\rho}{2} \Big[ \theta - \tfrac12 \sin 2\theta \Big]_0^{2\pi} \Big[ \frac{r^4}{4} \Big]_0^a = \frac{\pi\rho a^4}{4} .
 > $$
 >
-> Similarly (as expected from the symmetry) $I_y = \rho\int_0^{2\pi} \frac12(1 + \cos 2\theta)\,d\theta \int_0^a r^3\,dr = \frac{\pi\rho a^4}{4}$, and by Proposition §101.1
+> Similarly (as expected from the symmetry) $I_y = \rho\int_0^{2\pi} \frac12(1 + \cos 2\theta)\,d\theta \int_0^a r^3\,dr = \frac{\pi\rho a^4}{4}$, and by [[§101 Applications of Double Integrals#^prop-101-1|Proposition §101.1]]
 >
 > $$
 > I_0 = I_x + I_y = \frac{\pi\rho a^4}{2} .
@@ -255,7 +255,7 @@ A probability density function $f$ of one continuous random variable $X$ satisfi
 ^def-101-6
 
 > [!remark]- Connections
-> - For $f \ge 0$ the improper integral over $\mathbb{R}^2$ may always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]. It is what justifies writing $\iint_{\mathbb{R}^2} f\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dx\,dy$ above and in Examples §101.4 and §101.5.
+> - For $f \ge 0$ the improper integral over $\mathbb{R}^2$ may always be computed as an iterated integral in either order, with the same (possibly infinite) value: this is Tonelli's Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-3|551 Thm. §17.3]]. It is what justifies writing $\iint_{\mathbb{R}^2} f\,dA = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f\,dx\,dy$ above and in [[§101 Applications of Double Integrals#^ex-101-4|Examples §101.4]] and §101.5.
 
 > [!example] Example §101.4: Normalizing a Joint Density
 > If the joint density function for $X$ and $Y$ is

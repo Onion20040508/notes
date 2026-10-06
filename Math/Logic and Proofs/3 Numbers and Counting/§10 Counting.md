@@ -11,7 +11,7 @@ tags: [logic-and-proofs, mat250]
 
 *Eccles, Chapter 10 and Problems III (Q4) · MAT 200 lecture (syllabus week 14).*
 
-Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved at the start of §11: [[§11 Properties of Finite Sets#^pf-10-2|proof of Lemma §10.2]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
+Counting a set means pairing its elements off, one by one, with $1, 2, \ldots, n$, which is to say constructing a bijection from $\{1, \ldots, n\}$ to the set. This section makes that the definition of the number of elements, proves that the number does not depend on the order of counting (using a lemma proved by induction: [[§10 Counting#^pf-10-2|proof of Lemma §10.2]]), and derives the two basic counting principles (disjoint unions and products) and the inclusion–exclusion principle.
 
 ## 10.1 Counting Finite Sets
 
@@ -47,12 +47,21 @@ The standard set $\N_n$ is Eccles's notation and starts at $1$: it is a subset o
 
 For the definition to make sense, two different counts of the same set must give the same number. This needs a proof.
 
-> [!theorem] Proposition §10.1: Cardinality Is Well Defined
-> If $f : \N_m \to X$ and $g : \N_n \to X$ are bijections with the same codomain, then $m = n$.
->
-> *Eccles: Proposition 10.1.3*
+> [!remark] Remark: Constructing the Proof
+> The difficulty is that the proposition involves a set $X$ about which nothing is known. But $f$ and $g$ are invertible, so $g^{-1} \circ f : \N_m \to X \to \N_n$ is a bijection, and the statement "there is a bijection $\N_m \to \N_n$" no longer mentions $X$. So it suffices to prove the special case $X = \N_n$. Next, a bijection is an injection and a surjection; injectivity alone should force $m \le n$, which is the lemma. Applied to a bijection and to its inverse, the lemma gives $m \le n$ and $n \le m$. Reducing a statement to successively simpler, more concrete ones, and recording the stepping stones as lemmas, is a standard way of building a proof.
 
-^prop-10-1
+^rem-10-1
+
+> [!remark] Remark: Constructing the Proof
+> A statement about positive integers suggests induction, and here there are two variables. Inducting on $n$, the predicate is
+>
+> $$
+> P(n) : \quad \forall m \in \Z^+ \ \bigl( \text{there is an injection } \N_m \to \N_n \Rightarrow m \le n \bigr).
+> $$
+>
+> In the inductive step the given statement is $P(k)$ and the goal $P(k+1)$; the $m$ in each is a dummy variable, so rename it $m_1$ in the goal. We are handed an injection $f : \N_{m_1} \to \N_{k+1}$ and must show $m_1 \le k + 1$. The hypothesis $P(k)$ only applies to injections *into $\N_k$*, so the work is to manufacture one from $f$, if necessary by shrinking the domain. (Induction on $m$ also works: Eccles Problems III Q8.)
+
+^rem-11-1
 
 > [!theorem] Lemma §10.2: Injections Between Standard Sets
 > If there is an injection $\N_m \to \N_n$, then $m \le n$.
@@ -61,10 +70,38 @@ For the definition to make sense, two different counts of the same set must give
 
 ^lem-10-2
 
-> [!remark] Remark: Constructing the Proof
-> The difficulty is that the proposition involves a set $X$ about which nothing is known. But $f$ and $g$ are invertible, so $g^{-1} \circ f : \N_m \to X \to \N_n$ is a bijection, and the statement "there is a bijection $\N_m \to \N_n$" no longer mentions $X$. So it suffices to prove the special case $X = \N_n$. Next, a bijection is an injection and a surjection; injectivity alone should force $m \le n$, which is the lemma. Applied to a bijection and to its inverse, the lemma gives $m \le n$ and $n \le m$. Reducing a statement to successively simpler, more concrete ones, and recording the stepping stones as lemmas, is a standard way of building a proof.
+> [!proof]+ Proof
+> Induction on $n$.
+>
+> *Base case $n = 1$.* If $f : \N_m \to \N_1$, then $f(i) = 1$ for every $i$; if $m > 1$ then $f(1) = f(2)$, so $f$ is not injective. Hence if $f$ is injective, $m = 1 = n$. (This is really a proof of the contrapositive "$m > 1 \Rightarrow f$ is not injective".)
+>
+> *Inductive step.* Suppose $P(k)$ holds for some $k \ge 1$, and let $f : \N_{m_1} \to \N_{k+1}$ be an injection. There are two cases.
+>
+> (i) $f(i) < k + 1$ for all $i \in \N_{m_1}$. Then restricting the codomain gives $f_1 : \N_{m_1} \to \N_k$, $f_1(i) = f(i)$, still injective: $f_1(i_1) = f_1(i_2) \Rightarrow f(i_1) = f(i_2) \Rightarrow i_1 = i_2$. By $P(k)$, $m_1 \le k$, so certainly $m_1 \le k + 1$.
+>
+> (ii) $f(i_0) = k + 1$ for some $i_0 \in \N_{m_1}$. If $m_1 = 1$ then $m_1 \le k + 1$ and there is nothing to prove; so let $m_1 \ge 2$. Define $g : \N_{m_1 - 1} \to \N_{m_1}$ by
+>
+> $$
+> g(i) = \begin{cases} i & \text{for } i < i_0, \\ i + 1 & \text{for } i \ge i_0, \end{cases}
+> $$
+>
+> an injection whose image misses exactly $i_0$. For $i \ne i_0$ we have $f(i) \ne f(i_0) = k + 1$ because $f$ is injective, so $f(i) \in \N_k$. Hence $f_1 = f \circ g$ can be regarded as a function $\N_{m_1 - 1} \to \N_k$, and it is injective as a composite of injections. By $P(k)$, $m_1 - 1 \le k$, that is, $m_1 \le k + 1$.
+>
+> One of the cases holds for every $f$, so $P(k+1)$ follows. By induction $P(n)$ holds for all $n \in \Z^+$.
 
-^rem-10-1
+^pf-10-2
+
+*Uses:* [[§5 The Induction Principle#^def-5-1|Def. §5.1]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]] (composites of injections)
+
+![[m250-11-1.svg]]
+*Case (ii) of the inductive step with $m_1 = 4$, $k + 1 = 5$: $f$ (black) sends $i_0 = 2$ to the top value $5$ (red). The map $g$ (blue) skips $i_0$, so $f \circ g : \N_3 \to \N_5$ never takes the value $5$ and is an injection into $\N_4$, to which the inductive hypothesis applies.*
+
+> [!theorem] Proposition §10.1: Cardinality Is Well Defined
+> If $f : \N_m \to X$ and $g : \N_n \to X$ are bijections with the same codomain, then $m = n$.
+>
+> *Eccles: Proposition 10.1.3*
+
+^prop-10-1
 
 > [!proof]+ Proof
 > Since $f$ and $g$ are bijections they have inverses $f^{-1} : X \to \N_m$ and $g^{-1} : X \to \N_n$, which are bijections. So $g^{-1} \circ f : \N_m \to \N_n$ is a bijection, in particular an injection, and Lemma [[§10 Counting#^lem-10-2|§10.2]] gives $m \le n$. Reversing the roles of $f$ and $g$, $f^{-1} \circ g : \N_n \to \N_m$ is an injection, so $n \le m$. Hence $m = n$ ([[§4 Proof by Contradiction#^ex-4-4|Example §4.4]]).
@@ -72,8 +109,6 @@ For the definition to make sense, two different counts of the same set must give
 ^pf-10-1
 
 *Uses:* [[§10 Counting#^lem-10-2|§10.2]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]], [[§9 Injections, Surjections and Bijections#^ex-9-8|Ex. §9.8]], [[§4 Proof by Contradiction#^ex-4-4|Ex. §4.4]]
-
-The lemma is proved by induction on $n$ at the start of the next section: [[§11 Properties of Finite Sets#^pf-10-2|proof of Lemma §10.2]].
 
 > [!definition] Definition §10.2: Finite and Infinite Sets
 > A set $X$ is **finite** if $|X| = n$ for some non-negative integer $n$, that is, if $X = \emptyset$ or there is a bijection $\N_n \to X$ for some $n \in \Z^+$. Otherwise $X$ is **infinite**.

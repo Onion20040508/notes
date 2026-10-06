@@ -49,13 +49,13 @@ The approximation improves as the slices get thinner, so the volume is *defined*
 
 ^def-40-2
 
-For a cylinder the cross-sectional area is constant, $A(x) = A$, and Definition §40.2 gives $V = \int_a^b A\,dx = A(b - a)$, in agreement with $V = Ah$.
+For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§40 Volumes#^def-40-2|Definition §40.2]] gives $V = \int_a^b A\,dx = A(b - a)$, in agreement with $V = Ah$.
 
 > [!remark]- Connections
 > - Rigorous treatment: with volume defined as [[§10 Lebesgue Measurable Sets#^def-10-5|Lebesgue measure]], the slicing formula $m(E) = \int m(E_x)\,dx$ is the Cross-Section Theorem, [[§17 Invariance Properties and Fubini's Theorem#^thm-17-4|551 Thm. §17.4]]. In this course it reappears as a double integral of the "height" ([[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]]) and as a triple integral computed by Fubini ([[§103 Triple Integrals#^thm-103-4|Theorem §103.4]]).
 
 > [!theorem] Theorem §40.1: Volume Does Not Depend on the Slicing
-> The volume given by Definition §40.2 is independent of how $S$ is situated with respect to the $x$-axis: no matter how we slice $S$ with parallel planes, we get the same value $V$.
+> The volume given by [[§40 Volumes#^def-40-2|Definition §40.2]] is independent of how $S$ is situated with respect to the $x$-axis: no matter how we slice $S$ with parallel planes, we get the same value $V$.
 >
 > *Stewart: 6.2 (margin note)*
 
@@ -72,7 +72,7 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and Definition 
 > A(x) = \pi y^2 = \pi (r^2 - x^2) ,
 > $$
 >
-> and by Definition §40.2, using that the integrand is even ([[§38 The Substitution Rule#^thm-38-4|Theorem §38.4]]),
+> and by [[§40 Volumes#^def-40-2|Definition §40.2]], using that the integrand is even ([[§38 The Substitution Rule#^thm-38-4|Theorem §38.4]]),
 >
 > $$
 > V = \int_{-r}^{r} \pi (r^2 - x^2)\,dx = 2\pi \int_0^r (r^2 - x^2)\,dx = 2\pi \Big[r^2 x - \frac{x^3}{3}\Big]_0^r = 2\pi \Big(r^3 - \frac{r^3}{3}\Big) = \frac43 \pi r^3 .
@@ -172,11 +172,11 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and Definition 
 ^ex-40-3
 
 ![[m233-40-1.svg]]
-*Example §40.3(b). (a) Rotating the red segment at $x$ about the line $y = 2$ sweeps out a washer. Its inner radius is the distance $2 - x$ from the axis to the nearer curve $y = x$, and its outer radius the distance $2 - x^2$ to the farther curve $y = x^2$. (b) The washer's area is the outer disk minus the inner disk.*
+*[[§40 Volumes#^ex-40-3|Example §40.3]](b). (a) Rotating the red segment at $x$ about the line $y = 2$ sweeps out a washer. Its inner radius is the distance $2 - x$ from the axis to the nearer curve $y = x$, and its outer radius the distance $2 - x^2$ to the farther curve $y = x^2$. (b) The washer's area is the outer disk minus the inner disk.*
 
 ## Finding Volume Using Cross-Sectional Area
 
-Definition §40.2 applies to any solid whose cross-sections have areas that are easy to compute, not only to solids of revolution.
+[[§40 Volumes#^def-40-2|Definition §40.2]] applies to any solid whose cross-sections have areas that are easy to compute, not only to solids of revolution.
 
 > [!example] Example §40.4: Triangular Cross-Sections
 > **(a)** A solid has a circular base of radius $1$, and its parallel cross-sections perpendicular to the base are equilateral triangles. Find its volume.
@@ -222,7 +222,7 @@ Definition §40.2 applies to any solid whose cross-sections have areas that are 
 > V = \int_0^h \frac{L^2}{h^2} x^2\,dx = \frac{L^2}{h^2} \cdot \frac{x^3}{3} \Big]_0^h = \frac{L^2 h}{3} .
 > $$
 >
-> The position of the pyramid is a matter of convenience (Theorem §40.1). With the center of the base at the origin and the vertex on the positive $y$-axis, the cross-section at height $y$ is a square of side $L(h - y)/h$, and
+> The position of the pyramid is a matter of convenience ([[§40 Volumes#^thm-40-1|Theorem §40.1]]). With the center of the base at the origin and the vertex on the positive $y$-axis, the cross-section at height $y$ is a square of side $L(h - y)/h$, and
 >
 > $$
 > V = \int_0^h \frac{L^2}{h^2} (h - y)^2\,dy = \frac{L^2}{h^2} \Big[-\frac{(h - y)^3}{3}\Big]_0^h = \frac{L^2}{h^2} \cdot \frac{h^3}{3} = \frac{L^2 h}{3} .

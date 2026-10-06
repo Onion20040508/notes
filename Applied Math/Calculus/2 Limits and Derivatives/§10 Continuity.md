@@ -43,8 +43,8 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 ^rem-10-1
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§20 Limits of Functions#^thm-20-1|451 Thm. §20.1]] shows that this agrees with the sequential definition [[§17 Continuous Functions#^def-17-1|451 Def. §17.1]], and [[§17 Continuous Functions#^thm-17-1|451 Thm. §17.1]] proves the ε–δ form above. There continuity is defined at every point of an arbitrary domain, using only nearby points of the domain, so Stewart's one-sided convention at the endpoints of an interval (Definition §10.5) is automatic.
-> - One-sided limits, and the two-sided limit exists exactly when both one-sided limits exist and agree: [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]], [[§20 Limits of Functions#^thm-20-2|451 Thm. §20.2]]; so $f$ is continuous at $a$ if and only if it is continuous from the right and from the left (Definition §10.4). Kinds of discontinuity: a removable one filled in by its limit, [[§20 Limits of Functions#^ex-20-4|451 Ex. §20.4]]; a jump that no value can remove, [[§20 Limits of Functions#^ex-20-5|451 Ex. §20.5]]; and $\sin(1/x)$ at $0$, which is none of Stewart's three kinds ([[§20 Limits of Functions#^rem-20-3|451 Remark: Worse than a jump]]).
+> - Rigorous treatment: [[§20 Limits of Functions#^thm-20-1|451 Thm. §20.1]] shows that this agrees with the sequential definition [[§17 Continuous Functions#^def-17-1|451 Def. §17.1]], and [[§17 Continuous Functions#^thm-17-1|451 Thm. §17.1]] proves the ε–δ form above. There continuity is defined at every point of an arbitrary domain, using only nearby points of the domain, so Stewart's one-sided convention at the endpoints of an interval ([[§10 Continuity#^def-10-5|Definition §10.5]]) is automatic.
+> - One-sided limits, and the two-sided limit exists exactly when both one-sided limits exist and agree: [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]], [[§20 Limits of Functions#^thm-20-2|451 Thm. §20.2]]; so $f$ is continuous at $a$ if and only if it is continuous from the right and from the left ([[§10 Continuity#^def-10-4|Definition §10.4]]). Kinds of discontinuity: a removable one filled in by its limit, [[§20 Limits of Functions#^ex-20-4|451 Ex. §20.4]]; a jump that no value can remove, [[§20 Limits of Functions#^ex-20-5|451 Ex. §20.5]]; and $\sin(1/x)$ at $0$, which is none of Stewart's three kinds ([[§20 Limits of Functions#^rem-20-3|451 Remark: Worse than a jump]]).
 
 > [!definition] Definition §10.2: Discontinuity
 > Suppose $f$ is defined near $a$, that is, on an open interval containing $a$, except perhaps at $a$ itself. Then $f$ is **discontinuous at $a$** (or $f$ has a **discontinuity at $a$**) if $f$ is not continuous at $a$.
@@ -66,7 +66,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 > \text{(d)}\ f(x) = \lfloor x \rfloor
 > $$
 >
-> **(a)** $f(2)$ is not defined, so condition 1 of Definition §10.1 fails: $f$ is discontinuous at $2$. (It is continuous at every other number, by [[§10 Continuity#^thm-10-2|Theorem §10.2]].)
+> **(a)** $f(2)$ is not defined, so condition 1 of [[§10 Continuity#^def-10-1|Definition §10.1]] fails: $f$ is discontinuous at $2$. (It is continuous at every other number, by [[§10 Continuity#^thm-10-2|Theorem §10.2]].)
 >
 > **(b)** Now $f(2) = 1$ is defined, and the limit exists:
 >
@@ -91,19 +91,19 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 ^ex-10-1
 
 > [!definition] Definition §10.3: Removable, Infinite and Jump Discontinuities
-> Let $f$ be discontinuous at $a$ (Definition §10.2).
+> Let $f$ be discontinuous at $a$ ([[§10 Continuity#^def-10-2|Definition §10.2]]).
 > - The discontinuity is **removable** if $\lim_{x \to a} f(x)$ exists. Then redefining $f$ at the single number $a$ as $f(a) = \lim_{x \to a} f(x)$ makes $f$ continuous at $a$.
 > - It is an **infinite discontinuity** if $f(x) \to \infty$ or $f(x) \to -\infty$ as $x \to a$ from at least one side.
 > - It is a **jump discontinuity** if both one-sided limits $\lim_{x \to a^-} f(x)$ and $\lim_{x \to a^+} f(x)$ exist but are different: the function "jumps" from one value to another.
 >
-> In Example §10.1, (a) and (b) are removable (redefining $f(2) = 3$ turns $f$ into $g(x) = x + 1$, which is continuous), (c) is infinite, and (d) has a jump at every integer. Stewart introduces the three names through these examples.
+> In [[§10 Continuity#^ex-10-1|Example §10.1]], (a) and (b) are removable (redefining $f(2) = 3$ turns $f$ into $g(x) = x + 1$, which is continuous), (c) is infinite, and (d) has a jump at every integer. Stewart introduces the three names through these examples.
 >
 > *Stewart: 2.5 (text)*
 
 ^def-10-3
 
 ![[m233-10-1.svg]]
-*The discontinuities of Example §10.1. (a) Example §10.1(b): the limit $3$ exists but $f(2) = 1$ (red) is the wrong value; moving the one point up to the hole removes the discontinuity. (b) Example §10.1(c): no value $f(0)$ can help, since $f(x) \to \infty$. (c) $\lfloor x \rfloor$: at each integer the two one-sided limits differ by $1$. The filled dots are on the graph, so the function is continuous from the right there (Definition §10.4).*
+*The discontinuities of [[§10 Continuity#^ex-10-1|Example §10.1]]. (a) [[§10 Continuity#^ex-10-1|Example §10.1]](b): the limit $3$ exists but $f(2) = 1$ (red) is the wrong value; moving the one point up to the hole removes the discontinuity. (b) [[§10 Continuity#^ex-10-1|Example §10.1]](c): no value $f(0)$ can help, since $f(x) \to \infty$. (c) $\lfloor x \rfloor$: at each integer the two one-sided limits differ by $1$. The filled dots are on the graph, so the function is continuous from the right there ([[§10 Continuity#^def-10-4|Definition §10.4]]).*
 
 > [!definition] Definition §10.4: Continuous from the Right and from the Left
 > A function $f$ is **continuous from the right at a number $a$** if
@@ -118,7 +118,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 > \lim_{x \to a^-} f(x) = f(a).
 > $$
 >
-> For example, at each integer $n$ the greatest integer function is continuous from the right but not from the left, since by Example §10.1(d)
+> For example, at each integer $n$ the greatest integer function is continuous from the right but not from the left, since by [[§10 Continuity#^ex-10-1|Example §10.1]](d)
 >
 > $$
 > \lim_{x \to n^+} \lfloor x \rfloor = n = \lfloor n \rfloor, \qquad \lim_{x \to n^-} \lfloor x \rfloor = n - 1 \ne \lfloor n \rfloor.
@@ -137,7 +137,7 @@ A function is continuous at $a$ when its limit at $a$ can be found by plugging i
 
 ## Properties of Continuous Functions
 
-Instead of checking Definitions §10.1–§10.5 directly, one builds complicated continuous functions from simple ones.
+Instead of checking Definitions [[§10 Continuity#^def-10-1|§10.1]]–[[§10 Continuity#^def-10-5|§10.5]] directly, one builds complicated continuous functions from simple ones.
 
 > [!theorem] Theorem §10.1: Combining Continuous Functions
 > If $f$ and $g$ are continuous at $a$ and $c$ is a constant, then the following functions are also continuous at $a$:
@@ -146,7 +146,7 @@ Instead of checking Definitions §10.1–§10.5 directly, one builds complicated
 > 1.\ f + g \qquad 2.\ f - g \qquad 3.\ cf \qquad 4.\ fg \qquad 5.\ \frac{f}{g}\ \ \text{if } g(a) \ne 0 .
 > $$
 >
-> By Definition §10.5, the same holds on an interval: if $f$ and $g$ are continuous on an interval, so are $f + g$, $f - g$, $cf$, $fg$ and (if $g$ is never $0$ there) $f/g$.
+> By [[§10 Continuity#^def-10-5|Definition §10.5]], the same holds on an interval: if $f$ and $g$ are continuous on an interval, so are $f + g$, $f - g$, $cf$, $fg$ and (if $g$ is never $0$ there) $f/g$.
 >
 > *Stewart: 2.5, Theorem 4*
 
@@ -195,9 +195,9 @@ Instead of checking Definitions §10.1–§10.5 directly, one builds complicated
 > \lim_{x \to a} c_0 = c_0 \quad \text{(Law 8)}, \qquad \lim_{x \to a} x^m = a^m, \quad m = 1, 2, \ldots, n \quad \text{(Law 10)} .
 > $$
 >
-> The first says that constant functions are continuous, and the second says that $x \mapsto x^m$ is continuous. By part 3 of Theorem §10.1, each $x \mapsto c_m x^m$ is continuous. $P$ is the sum of these $n$ functions and a constant function, so $P$ is continuous by part 1 of Theorem §10.1, applied $n$ times.
+> The first says that constant functions are continuous, and the second says that $x \mapsto x^m$ is continuous. By part 3 of [[§10 Continuity#^thm-10-1|Theorem §10.1]], each $x \mapsto c_m x^m$ is continuous. $P$ is the sum of these $n$ functions and a constant function, so $P$ is continuous by part 1 of [[§10 Continuity#^thm-10-1|Theorem §10.1]], applied $n$ times.
 >
-> (b) A rational function has the form $f(x) = P(x)/Q(x)$ with $P$ and $Q$ polynomials, and its domain is $D = \{x \in \mathbb{R} \mid Q(x) \ne 0\}$. By (a), $P$ and $Q$ are continuous everywhere, so by part 5 of Theorem §10.1, $f$ is continuous at every number in $D$.
+> (b) A rational function has the form $f(x) = P(x)/Q(x)$ with $P$ and $Q$ polynomials, and its domain is $D = \{x \in \mathbb{R} \mid Q(x) \ne 0\}$. By (a), $P$ and $Q$ are continuous everywhere, so by part 5 of [[§10 Continuity#^thm-10-1|Theorem §10.1]], $f$ is continuous at every number in $D$.
 
 ^pf-10-2
 
@@ -206,6 +206,11 @@ Instead of checking Definitions §10.1–§10.5 directly, one builds complicated
 For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous function of its radius, and the height $h = 50t - 16t^2$ (in ft) of a ball thrown upward at $50$ ft/s is a continuous function of time.
 
 ### The Trigonometric Functions
+
+> [!remark] Remark: Why It Works
+> The point $P(\cos\theta, \sin\theta)$ lies on the unit circle at angle $\theta$ from the positive $x$-axis. As $\theta \to 0$, $P$ slides along the circle to the point $(1, 0)$, so its coordinates tend to $1$ and $0$. This is Stewart's argument. Stewart's margin suggests a second route, through the Squeeze Theorem, which the proof below carries out.
+
+^rem-10-2
 
 > [!theorem] Theorem §10.3: Limits of Sine and Cosine at 0
 > $$
@@ -217,11 +222,6 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > *Stewart: 2.5, Equation 6*
 
 ^thm-10-3
-
-> [!remark] Remark: Why It Works
-> The point $P(\cos\theta, \sin\theta)$ lies on the unit circle at angle $\theta$ from the positive $x$-axis. As $\theta \to 0$, $P$ slides along the circle to the point $(1, 0)$, so its coordinates tend to $1$ and $0$. This is Stewart's argument. Stewart's margin suggests a second route, through the Squeeze Theorem, which the proof below carries out.
-
-^rem-10-2
 
 > [!proof]+ Proof
 > **The inequality.** Let $0 < \theta < \pi/2$. On the unit circle, the arc from $(1, 0)$ to $P(\cos\theta, \sin\theta)$ has length $\theta$. The chord joining these two points is shorter than the arc, and the chord's vertical component is $\sin\theta$, so
@@ -262,11 +262,11 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > \sin(a + h) = \sin a \cos h + \cos a \sin h .
 > $$
 >
-> Here $\sin a$ and $\cos a$ are constants, and by Theorem §10.3, $\cos h \to 1$ and $\sin h \to 0$ as $h \to 0$. By Limit Laws 1 and 3, $\sin(a + h) \to \sin a \cdot 1 + \cos a \cdot 0 = \sin a$. So sine is continuous at $a$.
+> Here $\sin a$ and $\cos a$ are constants, and by [[§10 Continuity#^thm-10-3|Theorem §10.3]], $\cos h \to 1$ and $\sin h \to 0$ as $h \to 0$. By Limit Laws 1 and 3, $\sin(a + h) \to \sin a \cdot 1 + \cos a \cdot 0 = \sin a$. So sine is continuous at $a$.
 >
 > **Cosine.** In the same way, $\cos(a + h) = \cos a \cos h - \sin a \sin h \to \cos a \cdot 1 - \sin a \cdot 0 = \cos a$.
 >
-> **The other four.** $\tan = \sin/\cos$, $\cot = \cos/\sin$, $\sec = 1/\cos$ and $\csc = 1/\sin$ are quotients of continuous functions, so by part 5 of Theorem §10.1 they are continuous wherever the denominator is not $0$, which is exactly their domain.
+> **The other four.** $\tan = \sin/\cos$, $\cot = \cos/\sin$, $\sec = 1/\cos$ and $\csc = 1/\sin$ are quotients of continuous functions, so by part 5 of [[§10 Continuity#^thm-10-1|Theorem §10.1]] they are continuous wherever the denominator is not $0$, which is exactly their domain.
 >
 > **Infinite discontinuities of tan.** As $x \to (\pi/2)^-$, $\sin x \to 1$, while $\cos x \to 0$ through positive values, so $\tan x \to \infty$. As $x \to (\pi/2)^+$, $\cos x \to 0$ through negative values, so $\tan x \to -\infty$. By periodicity the same happens at every odd multiple of $\pi/2$.
 
@@ -276,17 +276,17 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 ### Inverse Functions
 
+> [!remark] Remark: Why It Works
+> The graph of $f^{-1}$ is the reflection of the graph of $f$ in the line $y = x$. If the graph of $f$ has no break, neither does its mirror image.
+
+^rem-10-3
+
 > [!theorem] Theorem §10.5: Continuity of Inverse Functions
 > If $f$ is a one-to-one continuous function defined on an interval $(a, b)$, then its inverse function $f^{-1}$ is also continuous.
 >
 > *Stewart: 2.5 (text); proof in Appendix F*
 
 ^thm-10-5
-
-> [!remark] Remark: Why It Works
-> The graph of $f^{-1}$ is the reflection of the graph of $f$ in the line $y = x$. If the graph of $f$ has no break, neither does its mirror image.
-
-^rem-10-3
 
 > [!proof]- Proof
 > **Step 1: $f$ is increasing or decreasing.** First, for any $x_1 < x_2 < x_3$ in $(a, b)$, the value $f(x_2)$ lies strictly between $f(x_1)$ and $f(x_3)$. Suppose not. The three values are distinct because $f$ is one-to-one, so $f(x_2)$ is the largest or the smallest of them. Then one of the two other values lies between the remaining two, and there are two cases.
@@ -326,17 +326,17 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 ^thm-10-6
 
 > [!proof]+ Proof
-> **Polynomials and rational functions:** Theorem §10.2.
+> **Polynomials and rational functions:** [[§10 Continuity#^thm-10-2|Theorem §10.2]].
 >
-> **Root functions.** Stewart cites Limit Law 11, $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{a}$. In Section 2.3 that law is derived from Law 7, whose proof comes only in this section ([[§10 Continuity#^cor-10-8|Corollary §10.8]]) and itself uses the continuity of roots. To avoid the circle, argue directly. If $n$ is odd, $x \mapsto x^n$ is continuous (Theorem §10.2) and one-to-one on $(-\infty, \infty)$, so its inverse $\sqrt[n]{x}$ is continuous on $\mathbb{R}$ by Theorem §10.5. If $n$ is even, $x \mapsto x^n$ is continuous and one-to-one on $(0, \infty)$, so $\sqrt[n]{x}$ is continuous on $(0, \infty)$. At $0$: if $0 \le x < \varepsilon^n$ then $0 \le \sqrt[n]{x} < \varepsilon$, so $\sqrt[n]{x}$ is continuous from the right at $0$.
+> **Root functions.** Stewart cites Limit Law 11, $\lim_{x \to a} \sqrt[n]{x} = \sqrt[n]{a}$. In Section 2.3 that law is derived from Law 7, whose proof comes only in this section ([[§10 Continuity#^cor-10-8|Corollary §10.8]]) and itself uses the continuity of roots. To avoid the circle, argue directly. If $n$ is odd, $x \mapsto x^n$ is continuous ([[§10 Continuity#^thm-10-2|Theorem §10.2]]) and one-to-one on $(-\infty, \infty)$, so its inverse $\sqrt[n]{x}$ is continuous on $\mathbb{R}$ by [[§10 Continuity#^thm-10-5|Theorem §10.5]]. If $n$ is even, $x \mapsto x^n$ is continuous and one-to-one on $(0, \infty)$, so $\sqrt[n]{x}$ is continuous on $(0, \infty)$. At $0$: if $0 \le x < \varepsilon^n$ then $0 \le \sqrt[n]{x} < \varepsilon$, so $\sqrt[n]{x}$ is continuous from the right at $0$.
 >
-> **Trigonometric functions:** Theorem §10.4.
+> **Trigonometric functions:** [[§10 Continuity#^thm-10-4|Theorem §10.4]].
 >
-> **Inverse trigonometric functions.** Sine is continuous and one-to-one on $(-\pi/2, \pi/2)$, so $\sin^{-1}$ is continuous on $(-1, 1)$ by Theorem §10.5. At $\pm 1$, Step 2 of that proof run on one side only shows that $\sin^{-1}$ is continuous from the left at $1$ and from the right at $-1$. In the same way $\cos^{-1}$ (from cosine on $[0, \pi]$) is continuous on $[-1, 1]$. Since $\tan$ is continuous and one-to-one on $(-\pi/2, \pi/2)$ with range $\mathbb{R}$, $\tan^{-1}$ is continuous on $\mathbb{R}$.
+> **Inverse trigonometric functions.** Sine is continuous and one-to-one on $(-\pi/2, \pi/2)$, so $\sin^{-1}$ is continuous on $(-1, 1)$ by [[§10 Continuity#^thm-10-5|Theorem §10.5]]. At $\pm 1$, Step 2 of that proof run on one side only shows that $\sin^{-1}$ is continuous from the left at $1$ and from the right at $-1$. In the same way $\cos^{-1}$ (from cosine on $[0, \pi]$) is continuous on $[-1, 1]$. Since $\tan$ is continuous and one-to-one on $(-\pi/2, \pi/2)$ with range $\mathbb{R}$, $\tan^{-1}$ is continuous on $\mathbb{R}$.
 >
 > **Exponential functions.** In Section 1.4 ([[§4 Exponential Functions#^def-4-3|Definition §4.3]]), $b^x$ for irrational $x$ is defined so as to fill in the holes in the graph of $b^x$, $x$ rational. In other words, the very definition of $b^x$ makes it continuous on $\mathbb{R}$. (This is Stewart's argument; a rigorous proof, with $e^x$ the inverse of the integral logarithm, is [[§121 The Logarithm Defined as an Integral#^thm-121-5|Theorem §121.5]].)
 >
-> **Logarithmic functions.** For $b > 0$, $b \ne 1$, $\log_b x$ is the inverse of the one-to-one continuous function $b^x$ on $(-\infty, \infty)$ ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]]), so it is continuous on its domain $(0, \infty)$ by Theorem §10.5.
+> **Logarithmic functions.** For $b > 0$, $b \ne 1$, $\log_b x$ is the inverse of the one-to-one continuous function $b^x$ on $(-\infty, \infty)$ ([[§5 Inverse Functions and Logarithms#^def-5-3|Definition §5.3]]), so it is continuous on its domain $(0, \infty)$ by [[§10 Continuity#^thm-10-5|Theorem §10.5]].
 
 ^pf-10-6
 
@@ -355,7 +355,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > \end{aligned}
 > $$
 >
-> So $f$ is continuous at $a$ by Definition §10.1.
+> So $f$ is continuous at $a$ by [[§10 Continuity#^def-10-1|Definition §10.1]].
 >
 > **Endpoints.** Stewart says "similar calculations show" $\lim_{x \to -1^+} f(x) = 1 = f(-1)$ and $\lim_{x \to 1^-} f(x) = 1 = f(1)$. Law 7 needs a positive limit under an even root, and here $1 - x^2 \to 0$, so estimate directly instead. For $-1 < x \le 0$,
 >
@@ -363,13 +363,13 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > 0 \le \sqrt{1 - x^2} = \sqrt{(1 - x)(1 + x)} \le \sqrt{2(1 + x)} ,
 > $$
 >
-> and $\sqrt{2(1 + x)} < \varepsilon$ as soon as $0 < 1 + x < \varepsilon^2 / 2$. By the Squeeze Theorem, $\sqrt{1 - x^2} \to 0$ as $x \to -1^+$, so $f(x) \to 1 = f(-1)$ and $f$ is continuous from the right at $-1$. The same estimate with $x$ and $-x$ exchanged shows that $f$ is continuous from the left at $1$. By Definition §10.5, $f$ is continuous on $[-1, 1]$. (The graph is the lower half of the circle $x^2 + (y - 1)^2 = 1$: from $y = 1 - \sqrt{1 - x^2}$ we get $(y - 1)^2 = 1 - x^2$.)
+> and $\sqrt{2(1 + x)} < \varepsilon$ as soon as $0 < 1 + x < \varepsilon^2 / 2$. By the Squeeze Theorem, $\sqrt{1 - x^2} \to 0$ as $x \to -1^+$, so $f(x) \to 1 = f(-1)$ and $f$ is continuous from the right at $-1$. The same estimate with $x$ and $-x$ exchanged shows that $f$ is continuous from the left at $1$. By [[§10 Continuity#^def-10-5|Definition §10.5]], $f$ is continuous on $[-1, 1]$. (The graph is the lower half of the circle $x^2 + (y - 1)^2 = 1$: from $y = 1 - \sqrt{1 - x^2}$ we get $(y - 1)^2 = 1 - x^2$.)
 >
 > **(b)** Determine the set on which $f(t) = \dfrac{\sqrt{t} - 1}{\sqrt{t} + 1}$ is continuous. (Choices: (a) $t > 0$, (b) $t \ge 0$, (c) $t > 1$, (d) $t \ge 0$ and $t \ne 1$, (e) $t \ne 0$, (f) all real numbers.)
 >
 > **Domain.** $\sqrt{t}$ requires $t \ge 0$, and the denominator satisfies $\sqrt{t} + 1 \ge 1 > 0$, so it is never $0$. The domain is $[0, \infty)$.
 >
-> **Interior.** For $t > 0$, the root function $\sqrt{t}$ is continuous at $t$ (Theorem §10.6), so the numerator and denominator are continuous and $f$ is continuous at $t$ by part 5 of Theorem §10.1.
+> **Interior.** For $t > 0$, the root function $\sqrt{t}$ is continuous at $t$ ([[§10 Continuity#^thm-10-6|Theorem §10.6]]), so the numerator and denominator are continuous and $f$ is continuous at $t$ by part 5 of [[§10 Continuity#^thm-10-1|Theorem §10.1]].
 >
 > **The endpoint $0$.** $\sqrt{t}$ is continuous from the right at $0$, so by the one-sided Limit Laws
 >
@@ -377,9 +377,9 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > \lim_{t \to 0^+} f(t) = \frac{0 - 1}{0 + 1} = -1 = f(0) .
 > $$
 >
-> So $f$ is continuous from the right at $0$, and by Definition §10.5 it is continuous on $[0, \infty)$. **Answer: (b).**
+> So $f$ is continuous from the right at $0$, and by [[§10 Continuity#^def-10-5|Definition §10.5]] it is continuous on $[0, \infty)$. **Answer: (b).**
 >
-> Choice (a) is the trap. There is no left-hand limit at $0$, but there is nothing to the left of $0$ in the domain. Definition §10.5 asks only for continuity from the right at a left endpoint, and Definition §10.2 speaks of a discontinuity only where $f$ is defined on both sides. Choice (d) is another trap: $f(1) = 0$ is harmless, because only a zero of the denominator matters.
+> Choice (a) is the trap. There is no left-hand limit at $0$, but there is nothing to the left of $0$ in the domain. [[§10 Continuity#^def-10-5|Definition §10.5]] asks only for continuity from the right at a left endpoint, and [[§10 Continuity#^def-10-2|Definition §10.2]] speaks of a discontinuity only where $f$ is defined on both sides. Choice (d) is another trap: $f(1) = 0$ is harmless, because only a zero of the denominator matters.
 >
 > *Stewart: Example 2.5.4*
 > *Source: 233 Practice Final Set 1, Part I Q4*
@@ -427,7 +427,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > [!example] Example §10.3: Limits by Continuity
 > **(a)** Find $\displaystyle\lim_{x \to -2} \frac{x^3 + 2x^2 - 1}{5 - 3x}$.
 >
-> The function $f(x) = \dfrac{x^3 + 2x^2 - 1}{5 - 3x}$ is rational, so by Theorem §10.2 it is continuous on its domain $\{x \mid x \ne \frac53\}$, which contains $-2$. Therefore
+> The function $f(x) = \dfrac{x^3 + 2x^2 - 1}{5 - 3x}$ is rational, so by [[§10 Continuity#^thm-10-2|Theorem §10.2]] it is continuous on its domain $\{x \mid x \ne \frac53\}$, which contains $-2$. Therefore
 >
 > $$
 > \lim_{x \to -2} f(x) = f(-2) = \frac{(-2)^3 + 2(-2)^2 - 1}{5 - 3(-2)} = \frac{-8 + 8 - 1}{11} = -\frac{1}{11} .
@@ -435,7 +435,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > **(b)** Find $\displaystyle\lim_{x \to \pi} \frac{\sin x}{2 + \cos x}$.
 >
-> By Theorem §10.6, $\sin x$ is continuous, and $2 + \cos x$ is a sum of two continuous functions, hence continuous. It is never $0$: $\cos x \ge -1$ for all $x$, so $2 + \cos x \ge 1 > 0$. By part 5 of Theorem §10.1, $f(x) = \dfrac{\sin x}{2 + \cos x}$ is continuous everywhere, and
+> By [[§10 Continuity#^thm-10-6|Theorem §10.6]], $\sin x$ is continuous, and $2 + \cos x$ is a sum of two continuous functions, hence continuous. It is never $0$: $\cos x \ge -1$ for all $x$, so $2 + \cos x \ge 1 > 0$. By part 5 of [[§10 Continuity#^thm-10-1|Theorem §10.1]], $f(x) = \dfrac{\sin x}{2 + \cos x}$ is continuous everywhere, and
 >
 > $$
 > \lim_{x \to \pi} f(x) = f(\pi) = \frac{\sin\pi}{2 + \cos\pi} = \frac{0}{2 - 1} = 0 .
@@ -443,7 +443,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 >
 > **(c)** Evaluate $\displaystyle\lim_{x \to 1} \arcsin\Big(\frac{1 - \sqrt{x}}{1 - x}\Big)$.
 >
-> Here the inner function is not defined at $1$, so direct substitution fails; Theorem §10.7 is needed instead. Arcsin is continuous (Theorem §10.6), so we may move the limit inside, provided the inner limit exists. Factor $1 - x = (1 - \sqrt{x})(1 + \sqrt{x})$:
+> Here the inner function is not defined at $1$, so direct substitution fails; [[§10 Continuity#^thm-10-7|Theorem §10.7]] is needed instead. Arcsin is continuous ([[§10 Continuity#^thm-10-6|Theorem §10.6]]), so we may move the limit inside, provided the inner limit exists. Factor $1 - x = (1 - \sqrt{x})(1 + \sqrt{x})$:
 >
 > $$
 > \begin{aligned}
@@ -473,9 +473,9 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 ^cor-10-8
 
 > [!proof]+ Proof
-> Let $b = \lim_{x \to a} g(x)$ and $f(x) = \sqrt[n]{x}$. Then $f(g(x)) = \sqrt[n]{g(x)}$ and $f\big(\lim_{x \to a} g(x)\big) = \sqrt[n]{b}$. The root function $f$ is continuous at $b$ (Theorem §10.6; for even $n$, $b > 0$ lies inside the domain). So Theorem §10.7 gives the formula.
+> Let $b = \lim_{x \to a} g(x)$ and $f(x) = \sqrt[n]{x}$. Then $f(g(x)) = \sqrt[n]{g(x)}$ and $f\big(\lim_{x \to a} g(x)\big) = \sqrt[n]{b}$. The root function $f$ is continuous at $b$ ([[§10 Continuity#^thm-10-6|Theorem §10.6]]; for even $n$, $b > 0$ lies inside the domain). So [[§10 Continuity#^thm-10-7|Theorem §10.7]] gives the formula.
 >
-> Stewart cites Limit Law 11 for the continuity of $f$, but Law 11 was obtained from Law 7. The continuity of roots proved directly in Theorem §10.6 (as inverse functions) removes the circularity.
+> Stewart cites Limit Law 11 for the continuity of $f$, but Law 11 was obtained from Law 7. The continuity of roots proved directly in [[§10 Continuity#^thm-10-6|Theorem §10.6]] (as inverse functions) removes the circularity.
 
 ^pf-10-8
 
@@ -491,7 +491,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 ^thm-10-9
 
 > [!proof]+ Proof
-> Since $g$ is continuous at $a$, $\lim_{x \to a} g(x) = g(a)$. Since $f$ is continuous at $b = g(a)$, Theorem §10.7 gives
+> Since $g$ is continuous at $a$, $\lim_{x \to a} g(x) = g(a)$. Since $f$ is continuous at $b = g(a)$, [[§10 Continuity#^thm-10-7|Theorem §10.7]] gives
 >
 > $$
 > \lim_{x \to a} f(g(x)) = f(g(a)) ,
@@ -508,11 +508,11 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > - Inverses and the familiar functions: [[§18 Properties of Continuous Functions#^thm-18-9|451 Thm. §18.9]] (a strictly increasing continuous function on a closed interval has a continuous inverse, proved with [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] instead of an explicit δ; topological form [[§15 Compact Spaces#^thm-15-7|590 Thm. §15.7]]). Once $\sin$, $\cos$ and $e^x$ are defined by power series, their continuity is [[§26 Differentiation and Integration of Power Series#^cor-26-2|451 Cor. §26.2]], and the logarithm is continuous as the inverse of $e^x$ ([[§18 Properties of Continuous Functions#^rem-18-8|451 Remark: Beyond closed intervals]]).
 
 > [!example] Example §10.4: Where Is the Function Continuous?
-> **(a)** $f(x) = \dfrac{\ln x + \tan^{-1} x}{x^2 - 1}$. By Theorem §10.6, $\ln x$ is continuous on $(0, \infty)$ and $\tan^{-1} x$ is continuous on $\mathbb{R}$, so by part 1 of Theorem §10.1 the numerator is continuous on $(0, \infty)$. The denominator $x^2 - 1$ is a polynomial, continuous everywhere. By part 5 of Theorem §10.1, $f$ is continuous at every $x > 0$ with $x^2 - 1 \ne 0$, that is, $x \ne \pm 1$. So $f$ is continuous on the intervals $(0, 1)$ and $(1, \infty)$.
+> **(a)** $f(x) = \dfrac{\ln x + \tan^{-1} x}{x^2 - 1}$. By [[§10 Continuity#^thm-10-6|Theorem §10.6]], $\ln x$ is continuous on $(0, \infty)$ and $\tan^{-1} x$ is continuous on $\mathbb{R}$, so by part 1 of [[§10 Continuity#^thm-10-1|Theorem §10.1]] the numerator is continuous on $(0, \infty)$. The denominator $x^2 - 1$ is a polynomial, continuous everywhere. By part 5 of [[§10 Continuity#^thm-10-1|Theorem §10.1]], $f$ is continuous at every $x > 0$ with $x^2 - 1 \ne 0$, that is, $x \ne \pm 1$. So $f$ is continuous on the intervals $(0, 1)$ and $(1, \infty)$.
 >
-> **(b)** $h(x) = \sin(x^2)$. Here $h = f \circ g$ with $g(x) = x^2$ and $f(x) = \sin x$. $g$ is a polynomial, continuous on $\mathbb{R}$, and $f$ is continuous everywhere (Theorem §10.6). By Theorem §10.9, $h$ is continuous on $\mathbb{R}$.
+> **(b)** $h(x) = \sin(x^2)$. Here $h = f \circ g$ with $g(x) = x^2$ and $f(x) = \sin x$. $g$ is a polynomial, continuous on $\mathbb{R}$, and $f$ is continuous everywhere ([[§10 Continuity#^thm-10-6|Theorem §10.6]]). By [[§10 Continuity#^thm-10-9|Theorem §10.9]], $h$ is continuous on $\mathbb{R}$.
 >
-> **(c)** $F(x) = \ln(1 + \cos x)$. Here $F = f \circ g$ with $f(x) = \ln x$ and $g(x) = 1 + \cos x$. Both are continuous on their domains (Theorems §10.6 and §10.1), so by Theorem §10.9, $F$ is continuous wherever it is defined. $\ln(1 + \cos x)$ is defined when $1 + \cos x > 0$. Since $\cos x \ge -1$, this fails exactly when $\cos x = -1$, that is, at $x = \pm\pi, \pm 3\pi, \ldots$. So $F$ is continuous on the intervals between consecutive odd multiples of $\pi$ and has discontinuities at the odd multiples of $\pi$. (As $x \to \pi$, $1 + \cos x \to 0^+$ and $F(x) \to -\infty$: infinite discontinuities.)
+> **(c)** $F(x) = \ln(1 + \cos x)$. Here $F = f \circ g$ with $f(x) = \ln x$ and $g(x) = 1 + \cos x$. Both are continuous on their domains (Theorems [[§10 Continuity#^thm-10-6|§10.6]] and [[§10 Continuity#^thm-10-1|§10.1]]), so by [[§10 Continuity#^thm-10-9|Theorem §10.9]], $F$ is continuous wherever it is defined. $\ln(1 + \cos x)$ is defined when $1 + \cos x > 0$. Since $\cos x \ge -1$, this fails exactly when $\cos x = -1$, that is, at $x = \pm\pi, \pm 3\pi, \ldots$. So $F$ is continuous on the intervals between consecutive odd multiples of $\pi$ and has discontinuities at the odd multiples of $\pi$. (As $x \to \pi$, $1 + \cos x \to 0^+$ and $F(x) \to -\infty$: infinite discontinuities.)
 >
 > *Stewart: Examples 2.5.6 and 2.5.9*
 
@@ -543,7 +543,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 
 > [!remark]- Connections
 > - Hub: [[Intermediate Value Theorem]]. Topological form: a continuous image of a connected space is connected, [[§13 Connected Spaces#^thm-13-3|590 Thm. §13.3]], which gives the theorem for maps into an ordered space, [[§14 Connected Subspaces of ℝ#^thm-14-3|590 Thm. §14.3]].
-> - The sign-change form used in Example §10.5: [[§18 Properties of Continuous Functions#^cor-18-4|451 Cor. §18.4]]. Every polynomial of odd degree has a real root: [[§18 Properties of Continuous Functions#^prop-18-8|451 Prop. §18.8]].
+> - The sign-change form used in [[§10 Continuity#^ex-10-5|Example §10.5]]: [[§18 Properties of Continuous Functions#^cor-18-4|451 Cor. §18.4]]. Every polynomial of odd degree has a real root: [[§18 Properties of Continuous Functions#^prop-18-8|451 Prop. §18.8]].
 
 > [!remark] Remark: Why It Works
 > Think of a continuous function as one whose graph has no hole or break. Any horizontal line $y = N$ between $y = f(a)$ and $y = f(b)$ has the start of the graph on one side and the end on the other, so the graph cannot jump over the line: it must meet it somewhere. Continuity is essential. For example, $\lfloor x \rfloor$ on $[0, 1]$ has $\lfloor 0 \rfloor = 0$ and $\lfloor 1 \rfloor = 1$ but never takes the value $\frac12$. Graphing software relies on the theorem: it computes finitely many points and connects the dots, assuming that the function takes all the values in between.
@@ -553,13 +553,13 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > [!example] Example §10.5: Locating a Root
 > Show that the equation $4x^3 - 6x^2 + 3x - 2 = 0$ has a solution between $1$ and $2$.
 >
-> Let $f(x) = 4x^3 - 6x^2 + 3x - 2$. We want $c \in (1, 2)$ with $f(c) = 0$, so take $a = 1$, $b = 2$, $N = 0$ in Theorem §10.10:
+> Let $f(x) = 4x^3 - 6x^2 + 3x - 2$. We want $c \in (1, 2)$ with $f(c) = 0$, so take $a = 1$, $b = 2$, $N = 0$ in [[§10 Continuity#^thm-10-10|Theorem §10.10]]:
 >
 > $$
 > f(1) = 4 - 6 + 3 - 2 = -1 < 0, \qquad f(2) = 32 - 24 + 6 - 2 = 12 > 0 .
 > $$
 >
-> So $N = 0$ lies between $f(1)$ and $f(2)$. $f$ is a polynomial, hence continuous on $[1, 2]$ (Theorem §10.2). The Intermediate Value Theorem gives a number $c \in (1, 2)$ with $f(c) = 0$.
+> So $N = 0$ lies between $f(1)$ and $f(2)$. $f$ is a polynomial, hence continuous on $[1, 2]$ ([[§10 Continuity#^thm-10-2|Theorem §10.2]]). The Intermediate Value Theorem gives a number $c \in (1, 2)$ with $f(c) = 0$.
 >
 > **Narrowing down.** Apply the theorem again on smaller intervals:
 >

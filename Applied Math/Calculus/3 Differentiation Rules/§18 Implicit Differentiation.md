@@ -128,6 +128,8 @@ Solving (1) for $y$ gives $y = \pm\sqrt{25 - x^2}$. So two of the functions dete
 ![[m233-18-1.svg]]
 *The folium of Descartes $x^3 + y^3 = 6xy$ (blue) with its tangent $x + y = 6$ at $(3, 3)$ (red) and its horizontal tangent at $(2^{4/3}, 2^{5/3})$ (green). Near most points the curve is the graph of a function $y = f(x)$, and $y' = (2y - x^2)/(y^2 - 2x)$ is the slope of that local branch. The formula fails where $y^2 = 2x$: at the origin, where the curve crosses itself, and at the rightmost point of the loop, where the tangent is vertical.*
 
+*Chain:* [[§94 The Chain Rule#^ex-94-5|Chapter 14]] →
+
 > [!remark]- Remark: Why Not Solve for y?
 > There is a formula for the three solutions of a cubic equation, like the quadratic formula but much more complicated. Applied to $x^3 + y^3 = 6xy$ (or done by a computer), it gives three functions determined by the equation:
 >

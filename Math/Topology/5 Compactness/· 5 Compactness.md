@@ -15,6 +15,7 @@ tags: [chapter, topology]
 - [[§15 Compact Spaces]]
 - [[§16 Limit Point Compactness]]
 - [[§17 Local Compactness]]
+- [[§17a Discrete and Indiscrete Spaces]]
 
 ## Central results
 - [[Closed Subspace of a Compact Space is Compact]] (§15.2)

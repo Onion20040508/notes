@@ -48,6 +48,11 @@ In [[§7 The Limit of a Function|§7]] and [[§9 The Precise Definition of a Lim
 
 For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the values approach $1$ as $x \to \infty$ and as $x \to -\infty$. A graph may approach its asymptote from above, from below, or oscillating around it and crossing it infinitely often; it may also have two different horizontal asymptotes, one at each end, as the next result shows.
 
+> [!remark] Remark: Why It Works
+> The graph of $\tan^{-1}$ is the reflection in the line $y = x$ of the graph of $\tan$ restricted to $(-\pi/2, \pi/2)$ ([[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]]). The tangent has the vertical asymptotes $x = \pm\pi/2$, and reflecting turns them into the horizontal asymptotes $y = \pm\pi/2$. This is Stewart's argument.
+
+^rem-11-1
+
 > [!theorem] Theorem §11.1: Limits of the Inverse Tangent at Infinity
 > $$
 > \lim_{x \to -\infty} \tan^{-1} x = -\frac{\pi}{2}, \qquad \lim_{x \to \infty} \tan^{-1} x = \frac{\pi}{2} .
@@ -58,11 +63,6 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 > *Stewart: 2.6, Equation 4*
 
 ^thm-11-1
-
-> [!remark] Remark: Why It Works
-> The graph of $\tan^{-1}$ is the reflection in the line $y = x$ of the graph of $\tan$ restricted to $(-\pi/2, \pi/2)$ ([[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]]). The tangent has the vertical asymptotes $x = \pm\pi/2$, and reflecting turns them into the horizontal asymptotes $y = \pm\pi/2$. This is Stewart's argument.
-
-^rem-11-1
 
 > [!proof]+ Proof
 > Recall that $\tan^{-1}$ is increasing, since $\tan$ is increasing on $(-\pi/2, \pi/2)$, and that its values lie in $(-\pi/2, \pi/2)$. We check [[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Definition §11.4]]. Let $\varepsilon > 0$; making $\varepsilon$ smaller only makes the goal harder, so we may assume $\varepsilon < \pi/2$. Put $N = \tan(\pi/2 - \varepsilon)$. If $x > N$, then
@@ -145,7 +145,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 > &= \lim_{x \to \infty} \frac{3 - \dfrac1x - \dfrac{2}{x^2}}{5 + \dfrac4x + \dfrac{1}{x^2}}
 > = \frac{\lim_{x \to \infty} \Big(3 - \dfrac1x - \dfrac{2}{x^2}\Big)}{\lim_{x \to \infty} \Big(5 + \dfrac4x + \dfrac{1}{x^2}\Big)} && \text{(Law 5)} \\[4pt]
 > &= \frac{\lim 3 - \lim \dfrac1x - 2 \lim \dfrac{1}{x^2}}{\lim 5 + 4 \lim \dfrac1x + \lim \dfrac{1}{x^2}} && \text{(Laws 1, 2 and 3)} \\[4pt]
-> &= \frac{3 - 0 - 0}{5 + 0 + 0} = \frac35 && \text{(Law 8 and Theorem §11.3)}.
+> &= \frac{3 - 0 - 0}{5 + 0 + 0} = \frac35 && \text{(Law 8 and [[§11 Limits at Infinity; Horizontal Asymptotes#^thm-11-3|Theorem §11.3]])}.
 > \end{aligned}
 > $$
 >
@@ -288,7 +288,7 @@ For example, $y = 1$ is a horizontal asymptote of $y = (x^2 - 1)/(x^2 + 1)$: the
 >
 > **(b)** Find $\displaystyle\lim_{x \to \infty} \frac{x^2 + x}{3 - x}$.
 >
-> As in Example §11.1, divide numerator and denominator by $x$, the highest power of $x$ in the denominator:
+> As in [[§11 Limits at Infinity; Horizontal Asymptotes#^ex-11-1|Example §11.1]], divide numerator and denominator by $x$, the highest power of $x$ in the denominator:
 >
 > $$
 > \lim_{x \to \infty} \frac{x^2 + x}{3 - x} = \lim_{x \to \infty} \frac{x + 1}{\dfrac3x - 1} = -\infty ,
@@ -328,12 +328,12 @@ Infinite limits at infinity, together with the intercepts, give a quick rough sk
 ^def-11-4
 
 > [!remark] Remark: What the Definition Says
-> The values of $f(x)$ can be made to lie within any distance $\varepsilon$ of $L$ by taking $x$ larger than some $N$, where $N$ depends on $\varepsilon$. On the graph: to the right of the vertical line $x = N$, the curve stays in the horizontal band between $y = L - \varepsilon$ and $y = L + \varepsilon$. This must hold however small $\varepsilon$ is, and a smaller $\varepsilon$ usually requires a larger $N$. It is the same game as the ε–δ definition of [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]], with "$x$ close to $a$" replaced by "$x$ beyond $N$". Stewart's Example 2.6.13 finds, from a graph, that $N = 7$ works for the limit of Example §11.1 with $\varepsilon = 0.1$; the figure below does it algebraically.
+> The values of $f(x)$ can be made to lie within any distance $\varepsilon$ of $L$ by taking $x$ larger than some $N$, where $N$ depends on $\varepsilon$. On the graph: to the right of the vertical line $x = N$, the curve stays in the horizontal band between $y = L - \varepsilon$ and $y = L + \varepsilon$. This must hold however small $\varepsilon$ is, and a smaller $\varepsilon$ usually requires a larger $N$. It is the same game as the ε–δ definition of [[§9 The Precise Definition of a Limit#^def-9-1|Definition §9.1]], with "$x$ close to $a$" replaced by "$x$ beyond $N$". Stewart's Example 2.6.13 finds, from a graph, that $N = 7$ works for the limit of [[§11 Limits at Infinity; Horizontal Asymptotes#^ex-11-1|Example §11.1]] with $\varepsilon = 0.1$; the figure below does it algebraically.
 
 ^rem-11-3
 
 ![[m233-11-1.svg]]
-*Definition §11.4 for $f(x) = \dfrac{3x^2 - x - 2}{5x^2 + 4x + 1} \to 0.6$ (Example §11.1) with $\varepsilon = 0.1$. Here $f(x) - 0.6 = -\dfrac{3.4x + 2.6}{5x^2 + 4x + 1} < 0$ for $x > 0$, and $|f(x) - 0.6| < 0.1$ reduces to $x^2 - 6x - 5 > 0$, that is, $x > 3 + \sqrt{14} \approx 6.74$. So any $N \ge 6.74$ works (Stewart takes $N = 7$): to the right of $N$ the graph stays inside the band $0.5 < y < 0.7$ (green).*
+*[[§11 Limits at Infinity; Horizontal Asymptotes#^def-11-4|Definition §11.4]] for $f(x) = \dfrac{3x^2 - x - 2}{5x^2 + 4x + 1} \to 0.6$ ([[§11 Limits at Infinity; Horizontal Asymptotes#^ex-11-1|Example §11.1]]) with $\varepsilon = 0.1$. Here $f(x) - 0.6 = -\dfrac{3.4x + 2.6}{5x^2 + 4x + 1} < 0$ for $x > 0$, and $|f(x) - 0.6| < 0.1$ reduces to $x^2 - 6x - 5 > 0$, that is, $x > 3 + \sqrt{14} \approx 6.74$. So any $N \ge 6.74$ works (Stewart takes $N = 7$): to the right of $N$ the graph stays inside the band $0.5 < y < 0.7$ (green).*
 
 > [!definition] Definition §11.5: Precise Definition of an Infinite Limit at Infinity
 > Let $f$ be defined on some interval $(a, \infty)$. Then

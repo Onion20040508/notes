@@ -84,13 +84,13 @@ The tests so far apply only to series with positive terms. This section handles 
 
 ^pf-73-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§69 Sequences#^thm-69-3|§69.3]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§70 Series#^def-70-2|Def. §70.2]]
+*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§69 Sequences#^thm-69-3|§69.3]], [[§69 Sequences#^def-69-3|Def. §69.3]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]]
 
 ![[m233-73-1.svg]]
-*Partial sums of the alternating harmonic series $1 - \frac12 + \frac13 - \cdots$. The odd partial sums (red) decrease and the even ones (green) increase, both towards $s = \ln 2 \approx 0.693$. The sum always lies between two consecutive partial sums, so the error $|s - s_n|$ is less than the next step $b_{n+1}$ (orange, for $n = 8$): this is Theorem §73.2.*
+*Partial sums of the alternating harmonic series $1 - \frac12 + \frac13 - \cdots$. The odd partial sums (red) decrease and the even ones (green) increase, both towards $s = \ln 2 \approx 0.693$. The sum always lies between two consecutive partial sums, so the error $|s - s_n|$ is less than the next step $b_{n+1}$ (orange, for $n = 8$): this is [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]].*
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the [[§14 Series#^def-14-3|Cauchy criterion]] via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of Theorem §73.2.
+> - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the [[§14 Series#^def-14-3|Cauchy criterion]] via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]].
 
 > [!example] Example §73.1: Checking the Two Conditions
 > **(a)** The **alternating harmonic series** $\displaystyle 1 - \frac12 + \frac13 - \frac14 + \cdots = \sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$ satisfies
@@ -160,7 +160,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 ^thm-73-2
 
 > [!proof]+ Proof
-> We show that $s$ lies between any two consecutive partial sums $s_n$ and $s_{n+1}$. In the proof of Theorem §73.1, the even partial sums increase to $s$, so $s_{2k} \le s$ for every $k$. Similarly the odd partial sums decrease to $s$: $s_{2k+1} = s_{2k-1} - (b_{2k} - b_{2k+1}) \le s_{2k-1}$ by condition (i), and $s_{2k+1} \to s$, so $s_{2k+1} \ge s$ for every $k$. (Stewart: "a similar argument shows that $s$ is smaller than all the odd sums.") Consecutive partial sums have one even and one odd index, so $s$ lies between $s_n$ and $s_{n+1}$. It follows that
+> We show that $s$ lies between any two consecutive partial sums $s_n$ and $s_{n+1}$. In the proof of [[§73 Alternating Series and Absolute Convergence#^thm-73-1|Theorem §73.1]], the even partial sums increase to $s$, so $s_{2k} \le s$ for every $k$. Similarly the odd partial sums decrease to $s$: $s_{2k+1} = s_{2k-1} - (b_{2k} - b_{2k+1}) \le s_{2k-1}$ by condition (i), and $s_{2k+1} \to s$, so $s_{2k+1} \ge s$ for every $k$. (Stewart: "a similar argument shows that $s$ is smaller than all the odd sums.") Consecutive partial sums have one even and one odd index, so $s$ lies between $s_n$ and $s_{n+1}$. It follows that
 >
 > $$
 > |s - s_n| \le |s_{n+1} - s_n| = b_{n+1} .
@@ -204,7 +204,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 ^ex-73-3
 
 > [!remark] Remark: Warning — Only for Alternating Series
-> The rule that the error is smaller than the first neglected term is valid, in general, only for alternating series that satisfy the conditions of Theorem §73.2. It does not apply to other types of series: for $\sum 1/n^2$, the error after $n$ terms is about $1/n$ ([[§71 The Integral Test and Estimates of Sums#^thm-71-3|Theorem §71.3]]), much larger than the first neglected term $1/(n+1)^2$.
+> The rule that the error is smaller than the first neglected term is valid, in general, only for alternating series that satisfy the conditions of [[§73 Alternating Series and Absolute Convergence#^thm-73-2|Theorem §73.2]]. It does not apply to other types of series: for $\sum 1/n^2$, the error after $n$ terms is about $1/n$ ([[§71 The Integral Test and Estimates of Sums#^thm-71-3|Theorem §71.3]]), much larger than the first neglected term $1/(n+1)^2$.
 
 ^rem-73-2
 
@@ -224,7 +224,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 ^def-73-2
 
 > [!definition] Definition §73.3: Conditionally Convergent
-> A series $\sum a_n$ is **conditionally convergent** if it is convergent but not absolutely convergent, that is, if $\sum a_n$ converges but $\sum |a_n|$ diverges. For example, the alternating harmonic series $\sum (-1)^{n-1}/n$ converges (Example §73.1), but its series of absolute values is the harmonic series $\sum 1/n$, which diverges: it is conditionally convergent.
+> A series $\sum a_n$ is **conditionally convergent** if it is convergent but not absolutely convergent, that is, if $\sum a_n$ converges but $\sum |a_n|$ diverges. For example, the alternating harmonic series $\sum (-1)^{n-1}/n$ converges ([[§73 Alternating Series and Absolute Convergence#^ex-73-1|Example §73.1]]), but its series of absolute values is the harmonic series $\sum 1/n$, which diverges: it is conditionally convergent.
 >
 > *Stewart: 11.5, Definition 2; Example 11.5.6*
 
@@ -260,7 +260,7 @@ For a series satisfying the conditions of the Alternating Series Test, the error
 > - Rigorous treatment: [[§14 Series#^prop-14-6|451 Prop. §14.6]] (via the [[§14 Series#^def-14-3|Cauchy criterion]]), with [[§14 Series#^def-14-4|451 Def. §14.4]].
 > - Complex-variables version: [[§61 Convergence of Series#^cor-61-3|342 Cor. §61.3]] (the same statement for series of complex numbers).
 
-Absolute convergence is a stronger type of convergence. An absolutely convergent series converges whatever the signs of its terms; the alternating harmonic series would diverge if all its negative terms were made positive. This makes Theorem §73.3 useful when the signs change irregularly.
+Absolute convergence is a stronger type of convergence. An absolutely convergent series converges whatever the signs of its terms; the alternating harmonic series would diverge if all its negative terms were made positive. This makes [[§73 Alternating Series and Absolute Convergence#^thm-73-3|Theorem §73.3]] useful when the signs change irregularly.
 
 > [!example] Example §73.4: Irregular Signs
 > Determine whether $\displaystyle\sum_{n=1}^{\infty} \frac{\cos n}{n^2} = \frac{\cos 1}{1^2} + \frac{\cos 2}{2^2} + \frac{\cos 3}{3^2} + \cdots$ is convergent or divergent.
@@ -271,7 +271,7 @@ Absolute convergence is a stronger type of convergence. An absolutely convergent
 > \frac{|\cos n|}{n^2} \le \frac{1}{n^2} .
 > $$
 >
-> $\sum 1/n^2$ is a convergent $p$-series ($p = 2$), so $\sum |\cos n|/n^2$ converges by the Direct Comparison Test (in its version for terms $\ge 0$). Thus $\sum (\cos n)/n^2$ is absolutely convergent, and therefore convergent by Theorem §73.3.
+> $\sum 1/n^2$ is a convergent $p$-series ($p = 2$), so $\sum |\cos n|/n^2$ converges by the Direct Comparison Test (in its version for terms $\ge 0$). Thus $\sum (\cos n)/n^2$ is absolutely convergent, and therefore convergent by [[§73 Alternating Series and Absolute Convergence#^thm-73-3|Theorem §73.3]].
 >
 > *Stewart: Example 11.5.7*
 

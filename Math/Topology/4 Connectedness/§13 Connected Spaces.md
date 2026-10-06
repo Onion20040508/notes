@@ -6,7 +6,7 @@ section: 13
 munkres: "§23"
 tags: [topology, math590]
 ---
-← [[§12 Quotient Topology]] · ↑ [[· 4 Connectedness]] · [[§14 Connected Subspaces of ℝ]] →
+← [[§12a ℝ^ω, Discrete Spaces and the Torus]] · ↑ [[· 4 Connectedness]] · [[§14 Connected Subspaces of ℝ]] →
 
 ## Definition and Basic Properties
 

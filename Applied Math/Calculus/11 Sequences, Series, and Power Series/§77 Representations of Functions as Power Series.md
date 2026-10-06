@@ -114,13 +114,13 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 > [!example] Example §77.2: Differentiating the Geometric Series
 > Express $1/(1 - x)^2$ as a power series by differentiating Equation 1. What is the radius of convergence?
 >
-> Start from $\dfrac{1}{1 - x} = 1 + x + x^2 + x^3 + \cdots = \displaystyle\sum_{n=0}^{\infty} x^n$. Differentiating each side, with Theorem §77.1(i),
+> Start from $\dfrac{1}{1 - x} = 1 + x + x^2 + x^3 + \cdots = \displaystyle\sum_{n=0}^{\infty} x^n$. Differentiating each side, with [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]](i),
 >
 > $$
 > \frac{1}{(1 - x)^2} = 1 + 2x + 3x^2 + \cdots = \sum_{n=1}^{\infty} n x^{n-1} .
 > $$
 >
-> Replacing $n$ by $n + 1$, this is $\displaystyle\frac{1}{(1 - x)^2} = \sum_{n=0}^{\infty} (n + 1) x^n$. By Theorem §77.1 the radius of convergence of the differentiated series is that of the original series, $R = 1$.
+> Replacing $n$ by $n + 1$, this is $\displaystyle\frac{1}{(1 - x)^2} = \sum_{n=0}^{\infty} (n + 1) x^n$. By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]] the radius of convergence of the differentiated series is that of the original series, $R = 1$.
 >
 > *Stewart: Example 11.9.4*
 
@@ -135,7 +135,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 > \frac{1}{1 + x} = \frac{1}{1 - (-x)} = 1 - x + x^2 - x^3 + \cdots \qquad |x| < 1 .
 > $$
 >
-> Integrating both sides term by term (Theorem §77.1(ii)),
+> Integrating both sides term by term ([[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]](ii)),
 >
 > $$
 > \ln(1 + x) = \int \frac{1}{1 + x}\,dx = \int (1 - x + x^2 - x^3 + \cdots)\,dx = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots + C = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} + C
@@ -151,7 +151,7 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 >
 > **(b)** Find a power series representation for $f(x) = \tan^{-1} x$.
 >
-> Here $f'(x) = 1/(1 + x^2)$, whose series was found in Example §77.1(a). Integrating term by term,
+> Here $f'(x) = 1/(1 + x^2)$, whose series was found in [[§77 Representations of Functions as Power Series#^ex-77-1|Example §77.1]](a). Integrating term by term,
 >
 > $$
 > \tan^{-1} x = \int \frac{1}{1 + x^2}\,dx = \int (1 - x^2 + x^4 - x^6 + \cdots)\,dx = C + x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots
@@ -246,7 +246,7 @@ Some of the most important functions in the sciences are *defined* by power seri
 >
 > for all $x$. By the Ratio Test the series converges for all $x$: the domain of $J_0$ is $(-\infty, \infty) = \mathbb{R}$.
 >
-> **(b)** By Theorem §77.1, $J_0$ is differentiable for all $x$, and term by term (the $n = 0$ term is the constant $1$):
+> **(b)** By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]], $J_0$ is differentiable for all $x$, and term by term (the $n = 0$ term is the constant $1$):
 >
 > $$
 > J_0'(x) = \sum_{n=0}^{\infty} \frac{d}{dx} \frac{(-1)^n x^{2n}}{2^{2n} (n!)^2} = \sum_{n=1}^{\infty} \frac{(-1)^n 2n x^{2n-1}}{2^{2n} (n!)^2} .

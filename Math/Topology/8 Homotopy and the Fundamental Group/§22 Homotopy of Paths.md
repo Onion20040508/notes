@@ -6,7 +6,7 @@ section: 22
 munkres: "§51"
 tags: [topology, math590]
 ---
-← [[§21 Algebra Prerequisites꞉ Groups]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§23 The Fundamental Group]] →
+← [[§21a Free Groups and Presentations]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§23 The Fundamental Group]] →
 
 > [!remark] Remark: Motivation: Continuously Deforming Paths
 > The fundamental group will classify loops “up to continuous deformation.” To make this precise, we need to answer: when are two paths “essentially the same”?
@@ -35,7 +35,7 @@ Let $I = [0, 1]$.
 ^def-22-2
 
 > [!remark]- Connections
-> - Nullhomotopic maps from $S^1$ are characterized in [[§24 Covering Spaces#^lem-24-12|Equivalent Conditions for Nullhomotopy]].
+> - Nullhomotopic maps from $S^1$ are characterized in [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Equivalent Conditions for Nullhomotopy]].
 
 ## The Straight-Line Homotopy
 
@@ -282,14 +282,6 @@ The following theorem shows that the product of path homotopy classes satisfies 
 
 *Uses:* [[Pasting Lemma|§9.5]]
 
-> [!remark] Remark: Idea of the Associativity Homotopy
-> The homotopy continuously slides the breakpoints: at $t = 0$ the three pieces occupy $[0, 1/4], [1/4, 1/2], [1/2, 1]$ (the left-associated schedule), and at $t = 1$ they occupy $[0, 1/2], [1/2, 3/4], [3/4, 1]$ (the right-associated schedule). Throughout, $g$ always occupies an interval of length $1/4$—only $f$ and $h$ trade time with each other. The arguments inside $f$, $g$, $h$ are chosen so that each function is called on $[0, 1]$ within its piece.
-
-^rem-22-9
-
-![[m590-22-4.svg]]
-*The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f\ast g)\ast h$, the top slice that of $f\ast (g\ast h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
-
 > [!proof]+ Proof of (2a): Right Identity $[f] * [e_{x_1}] = [f]$
 > Define $H: I \times I \to X$ by:
 >
@@ -376,6 +368,14 @@ The following theorem shows that the product of path homotopy classes satisfies 
 ^pf-22-6-5
 
 *Uses:* [[Pasting Lemma|§9.5]]
+
+> [!remark] Remark: Idea of the Associativity Homotopy
+> The homotopy continuously slides the breakpoints: at $t = 0$ the three pieces occupy $[0, 1/4], [1/4, 1/2], [1/2, 1]$ (the left-associated schedule), and at $t = 1$ they occupy $[0, 1/2], [1/2, 3/4], [3/4, 1]$ (the right-associated schedule). Throughout, $g$ always occupies an interval of length $1/4$—only $f$ and $h$ trade time with each other. The arguments inside $f$, $g$, $h$ are chosen so that each function is called on $[0, 1]$ within its piece.
+
+^rem-22-9
+
+![[m590-22-4.svg]]
+*The associativity homotopy drawn on its domain $I \times I$. The slice at height $t$ is cut at $s = (t+1)/4$ and $s = (t+2)/4$: it runs $f$ on the left piece, $g$ on the middle (red) and $h$ on the right. The bottom slice is the schedule of $(f\ast g)\ast h$, the top slice that of $f\ast (g\ast h)$. The red band has constant width $\tfrac14$, so only $f$ and $h$ trade time; the left edge stays at $x_0$ and the right edge at $x_3$.*
 
 > [!remark] Remark: What These Properties Mean
 > These three properties are exactly the group axioms for the operation $\ast$ on homotopy classes. For general paths (not loops), we don't quite have a group (the product $[f] \ast  [g]$ is only defined when the terminal point of $f$ equals the initial point of $g$—this is a *groupoid*). But if we restrict to **loops at a fixed basepoint $x_0$** (paths with $f(0) = f(1) = x_0$), then all products are defined, and we get a genuine group: the **fundamental group** $\pi_1(X, x_0)$ ([[§23 The Fundamental Group#^def-23-2|Definition §23.2]]).

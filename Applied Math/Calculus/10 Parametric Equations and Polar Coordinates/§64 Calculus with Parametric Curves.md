@@ -22,7 +22,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > \frac{dy}{dx} = \frac{dy/dt}{dx/dt} .
 > $$
 >
-> So the curve has a **horizontal tangent** where $dy/dt = 0$ (provided $dx/dt \ne 0$) and a **vertical tangent** where $dx/dt = 0$ (provided $dy/dt \ne 0$). If both derivatives vanish, other methods are needed (Example §64.2).
+> So the curve has a **horizontal tangent** where $dy/dt = 0$ (provided $dx/dt \ne 0$) and a **vertical tangent** where $dx/dt = 0$ (provided $dy/dt \ne 0$). If both derivatives vanish, other methods are needed ([[§64 Calculus with Parametric Curves#^ex-64-2|Example §64.2]]).
 >
 > *Stewart: 10.2, Formula 1*
 
@@ -63,7 +63,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-2
 
 > [!proof]+ Proof
-> Apply Theorem §64.1 to the curve $x = f(t)$, $Y = \dfrac{dy}{dx}$ (as a function of $t$) in place of $y$: then $\dfrac{dY}{dx} = \dfrac{dY/dt}{dx/dt}$, and $\dfrac{dY}{dx} = \dfrac{d^2y}{dx^2}$.
+> Apply [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]] to the curve $x = f(t)$, $Y = \dfrac{dy}{dx}$ (as a function of $t$) in place of $y$: then $\dfrac{dY}{dx} = \dfrac{dY/dt}{dx/dt}$, and $\dfrac{dY}{dx} = \dfrac{d^2y}{dx^2}$.
 
 ^pf-64-2
 
@@ -72,7 +72,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > [!example] Example §64.1: A Curve That Crosses Itself
 > The curve $C$ is given by $x = t^2$, $y = t^3 - 3t$.
 >
-> **(a) Two tangents at $(3, 0)$.** $x = 3$ for $t = \pm\sqrt3$, and in both cases $y = t(t^2 - 3) = 0$. So $C$ passes through $(3, 0)$ twice: it crosses itself there. By Theorem §64.1,
+> **(a) Two tangents at $(3, 0)$.** $x = 3$ for $t = \pm\sqrt3$, and in both cases $y = t(t^2 - 3) = 0$. So $C$ passes through $(3, 0)$ twice: it crosses itself there. By [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]],
 >
 > $$
 > \frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{3t^2 - 3}{2t} .
@@ -86,7 +86,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 >
 > **(b) Horizontal and vertical tangents.** $dy/dt = 3t^2 - 3 = 0$ when $t = \pm1$, where $dx/dt = \pm 2 \ne 0$: horizontal tangents at $t = 1$, the point $(1, -2)$, and at $t = -1$, the point $(1, 2)$. $dx/dt = 2t = 0$ when $t = 0$, where $dy/dt = -3 \ne 0$: a vertical tangent at $(0, 0)$.
 >
-> **(c) Concavity.** By Theorem §64.2,
+> **(c) Concavity.** By [[§64 Calculus with Parametric Curves#^thm-64-2|Theorem §64.2]],
 >
 > $$
 > \frac{d^2y}{dx^2} = \frac{\dfrac{d}{dt}\Big(\dfrac{3t^2 - 3}{2t}\Big)}{2t} = \frac{\dfrac{d}{dt}\Big(\dfrac{3t}{2} - \dfrac{3}{2t}\Big)}{2t} = \frac{\dfrac32 + \dfrac{3}{2t^2}}{2t} = \frac{3t^2 + 3}{4t^3} .
@@ -101,12 +101,12 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^ex-64-1
 
 ![[m233-64-1.svg]]
-*The curve $x = t^2$, $y = t^3 - 3t$ of Example §64.1. The loop is traced counterclockwise for $-\sqrt3 \le t \le \sqrt3$, and the curve passes through $(3, 0)$ twice, at $t = -\sqrt3$ and $t = \sqrt3$, with the two tangents $y = \pm\sqrt3(x - 3)$ (red). Horizontal tangents at $t = \pm1$ and the vertical tangent at $t = 0$ are where $dy/dt = 0$ and $dx/dt = 0$.*
+*The curve $x = t^2$, $y = t^3 - 3t$ of [[§64 Calculus with Parametric Curves#^ex-64-1|Example §64.1]]. The loop is traced counterclockwise for $-\sqrt3 \le t \le \sqrt3$, and the curve passes through $(3, 0)$ twice, at $t = -\sqrt3$ and $t = \sqrt3$, with the two tangents $y = \pm\sqrt3(x - 3)$ (red). Horizontal tangents at $t = \pm1$ and the vertical tangent at $t = 0$ are where $dy/dt = 0$ and $dx/dt = 0$.*
 
 > [!example] Example §64.2: Tangents to the Cycloid
 > Consider the cycloid $x = r(\theta - \sin\theta)$, $y = r(1 - \cos\theta)$ ([[§63 Curves Defined by Parametric Equations#^prop-63-2|Proposition §63.2]]).
 >
-> **(a) The tangent at $\theta = \pi/3$.** By Theorem §64.1,
+> **(a) The tangent at $\theta = \pi/3$.** By [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]],
 >
 > $$
 > \frac{dy}{dx} = \frac{dy/d\theta}{dx/d\theta} = \frac{r\sin\theta}{r(1 - \cos\theta)} = \frac{\sin\theta}{1 - \cos\theta} .
@@ -128,7 +128,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 >
 > **(b) Horizontal tangents.** $dy/dx = 0$ when $\sin\theta = 0$ and $1 - \cos\theta \ne 0$, that is, $\theta = (2n - 1)\pi$ with $n$ an integer. These are the tops of the arches, $\big((2n - 1)\pi r,\ 2r\big)$.
 >
-> **(c) Vertical tangents.** At $\theta = 2n\pi$ both $dx/d\theta = r(1 - \cos\theta)$ and $dy/d\theta = r\sin\theta$ are $0$, so Theorem §64.1 says nothing. Compute the limit of the slope instead, by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]; the quotient has the form $0/0$):
+> **(c) Vertical tangents.** At $\theta = 2n\pi$ both $dx/d\theta = r(1 - \cos\theta)$ and $dy/d\theta = r\sin\theta$ are $0$, so [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]] says nothing. Compute the limit of the slope instead, by l'Hospital's Rule ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|Theorem §28.2]]; the quotient has the form $0/0$):
 >
 > $$
 > \lim_{\theta \to 2n\pi^+} \frac{dy}{dx} = \lim_{\theta \to 2n\pi^+} \frac{\sin\theta}{1 - \cos\theta} = \lim_{\theta \to 2n\pi^+} \frac{\cos\theta}{\sin\theta} = \infty ,
@@ -184,7 +184,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-4
 
 > [!proof]+ Proof
-> **A special case (Formula 3).** Suppose $C$ is also a graph $y = F(x)$, $a \le x \le b$, with $F'$ continuous, and that $dx/dt = f'(t) > 0$, so $C$ is traversed once from left to right with $f(\alpha) = a$, $f(\beta) = b$. By Formula 8.1.3 ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]), $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$. Substitute $x = f(t)$ and use Theorem §64.1:
+> **A special case (Formula 3).** Suppose $C$ is also a graph $y = F(x)$, $a \le x \le b$, with $F'$ continuous, and that $dx/dt = f'(t) > 0$, so $C$ is traversed once from left to right with $f(\alpha) = a$, $f(\beta) = b$. By Formula 8.1.3 ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]), $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$. Substitute $x = f(t)$ and use [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]]:
 >
 > $$
 > L = \int_\alpha^\beta \sqrt{1 + \Big(\frac{dy/dt}{dx/dt}\Big)^2}\,\frac{dx}{dt}\,dt = \int_\alpha^\beta \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt ,
@@ -248,14 +248,14 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > \int_0^{2\pi} \sqrt{4\cos^2 2t + 4\sin^2 2t}\,dt = \int_0^{2\pi} 2\,dt = 4\pi ,
 > $$
 >
-> twice the circumference, because this parametrization goes around the circle twice. Before using Theorem §64.4, check that $C$ is traversed only once as $t$ runs from $\alpha$ to $\beta$.
+> twice the circumference, because this parametrization goes around the circle twice. Before using [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]], check that $C$ is traversed only once as $t$ runs from $\alpha$ to $\beta$.
 
 ^rem-64-2
 
 > [!example] Example §64.3: Area and Length of One Arch of the Cycloid
 > One arch of the cycloid $x = r(\theta - \sin\theta)$, $y = r(1 - \cos\theta)$ is traced once for $0 \le \theta \le 2\pi$, from $x = 0$ to $x = 2\pi r$, with $dx/d\theta = r(1 - \cos\theta) \ge 0$ and $dy/d\theta = r\sin\theta$.
 >
-> **Area under the arch.** By Theorem §64.3, with $y = r(1 - \cos\theta)$ and $dx = r(1 - \cos\theta)\,d\theta$,
+> **Area under the arch.** By [[§64 Calculus with Parametric Curves#^thm-64-3|Theorem §64.3]], with $y = r(1 - \cos\theta)$ and $dx = r(1 - \cos\theta)\,d\theta$,
 >
 > $$
 > \begin{aligned}
@@ -267,7 +267,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 >
 > This is three times the area of the rolling circle. (Galileo guessed it; Roberval and Torricelli first proved it.)
 >
-> **Length of the arch.** By Theorem §64.4,
+> **Length of the arch.** By [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]],
 >
 > $$
 > L = \int_0^{2\pi} \sqrt{r^2(1 - \cos\theta)^2 + r^2\sin^2\theta}\,d\theta = \int_0^{2\pi} \sqrt{r^2(1 - 2\cos\theta + \cos^2\theta + \sin^2\theta)}\,d\theta = r\int_0^{2\pi} \sqrt{2(1 - \cos\theta)}\,d\theta .
@@ -294,7 +294,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ### The Arc Length Function and Speed
 
 > [!definition] Definition §64.1: Arc Length Function
-> Let $C$ be given by $x = f(t)$, $y = g(t)$ with $f'$ and $g'$ continuous. The **arc length function** $s(t)$ is the length of $C$ from the initial point $(f(\alpha), g(\alpha))$ to the point $(f(t), g(t))$. By Theorem §64.4,
+> Let $C$ be given by $x = f(t)$, $y = g(t)$ with $f'$ and $g'$ continuous. The **arc length function** $s(t)$ is the length of $C$ from the initial point $(f(\alpha), g(\alpha))$ to the point $(f(t), g(t))$. By [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]],
 >
 > $$
 > s(t) = \int_\alpha^t \sqrt{\Big(\frac{dx}{du}\Big)^2 + \Big(\frac{dy}{du}\Big)^2}\,du
@@ -313,7 +313,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > ds = \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt ,
 > $$
 >
-> so that Theorem §64.4 reads $L = \int ds$, as in [[§52 Arc Length#^def-52-4|Definition §52.4]].
+> so that [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]] reads $L = \int ds$, as in [[§52 Arc Length#^def-52-4|Definition §52.4]].
 >
 > *Stewart: 10.2, Equations 6 and 7*
 
@@ -338,7 +338,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 ^thm-64-5
 
 > [!proof]+ Proof
-> The integrand $u \mapsto \sqrt{f'(u)^2 + g'(u)^2}$ in Definition §64.1 is continuous, so by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) $s$ is differentiable with $s'(t) = \sqrt{f'(t)^2 + g'(t)^2}$.
+> The integrand $u \mapsto \sqrt{f'(u)^2 + g'(u)^2}$ in [[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]] is continuous, so by Part 1 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-1|Theorem §36.1]]) $s$ is differentiable with $s'(t) = \sqrt{f'(t)^2 + g'(t)^2}$.
 
 ^pf-64-5
 
@@ -347,7 +347,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > [!example] Example §64.4: The Speed of a Particle
 > A particle has position $x = 2t + 3$, $y = 4t^2$, $t \ge 0$. Find its speed when it is at $(5, 4)$.
 >
-> By Theorem §64.5, $v(t) = \sqrt{2^2 + (8t)^2} = \sqrt{4(1 + 16t^2)} = 2\sqrt{1 + 16t^2}$. The particle is at $(5, 4)$ when $2t + 3 = 5$, that is $t = 1$ (and indeed $4 \cdot 1^2 = 4$). So its speed there is $v(1) = 2\sqrt{17} \approx 8.25$ (in m/s, if distance is in meters and time in seconds).
+> By [[§64 Calculus with Parametric Curves#^thm-64-5|Theorem §64.5]], $v(t) = \sqrt{2^2 + (8t)^2} = \sqrt{4(1 + 16t^2)} = 2\sqrt{1 + 16t^2}$. The particle is at $(5, 4)$ when $2t + 3 = 5$, that is $t = 1$ (and indeed $4 \cdot 1^2 = 4$). So its speed there is $v(1) = 2\sqrt{17} \approx 8.25$ (in m/s, if distance is in meters and time in seconds).
 >
 > *Stewart: Example 10.2.6*
 
@@ -362,7 +362,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > S = \int_\alpha^\beta 2\pi y \sqrt{\Big(\frac{dx}{dt}\Big)^2 + \Big(\frac{dy}{dt}\Big)^2}\,dt .
 > $$
 >
-> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in Definition §64.1.
+> The symbolic formulas $S = \int 2\pi y\,ds$ (rotation about the $x$-axis) and $S = \int 2\pi x\,ds$ (rotation about the $y$-axis, for $x \ge 0$) of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]] (Formulas 8.2.7 and 8.2.8) remain valid, with $ds$ as in [[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]].
 >
 > *Stewart: 10.2, Formula 9*
 
@@ -375,7 +375,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > S = \int_a^b 2\pi y \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\,dx ,
 > $$
 >
-> and substitute $x = f(t)$ exactly as in the special case of the proof of Theorem §64.4: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] and [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], with the Mean Value Theorem step of the proof of Theorem §64.4; Stewart does not carry this out.
+> and substitute $x = f(t)$ exactly as in the special case of the proof of [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]: $\sqrt{1 + (dy/dx)^2}\,\dfrac{dx}{dt} = \sqrt{(dx/dt)^2 + (dy/dt)^2}$ because $dx/dt > 0$. This gives Formula 9. For a general curve the formula comes from approximating $C$ by polygonal paths and the surface by the bands (frustums of cones) that the segments sweep out, as in [[§53 Area of a Surface of Revolution#^thm-53-1|Theorem §53.1]] and [[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], with the Mean Value Theorem step of the proof of [[§64 Calculus with Parametric Curves#^thm-64-4|Theorem §64.4]]; Stewart does not carry this out.
 
 ^pf-64-6
 
@@ -384,7 +384,7 @@ The methods of calculus apply to parametric curves directly, without eliminating
 > [!example] Example §64.5: The Surface Area of a Sphere
 > Show that the surface area of a sphere of radius $r$ is $4\pi r^2$.
 >
-> The sphere is obtained by rotating the upper semicircle $x = r\cos t$, $y = r\sin t$, $0 \le t \le \pi$, about the $x$-axis. It is traversed once, and $y = r\sin t \ge 0$. By Theorem §64.6,
+> The sphere is obtained by rotating the upper semicircle $x = r\cos t$, $y = r\sin t$, $0 \le t \le \pi$, about the $x$-axis. It is traversed once, and $y = r\sin t \ge 0$. By [[§64 Calculus with Parametric Curves#^thm-64-6|Theorem §64.6]],
 >
 > $$
 > \begin{aligned}

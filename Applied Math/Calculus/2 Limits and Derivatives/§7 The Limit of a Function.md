@@ -124,7 +124,7 @@ The Heaviside function $H(t) = 0$ for $t < 0$ and $H(t) = 1$ for $t \ge 0$ (a cu
 > [!remark]- Connections
 > - In 451 a one-sided limit is a limit through the interval on one side of $a$, [[§20 Limits of Functions#^def-20-2|451 Def. §20.2]]; the Heaviside function is [[§20 Limits of Functions#^ex-20-2|451 Ex. §20.2]].
 
-Definition §7.2 differs from Definition §7.1 only in requiring $x < a$ (or $x > a$). Comparing the two shows that $\lim_{x \to a} f(x) = L$ holds exactly when both one-sided limits exist and equal $L$. This is [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]], proved there from the precise definitions.
+[[§7 The Limit of a Function#^def-7-2|Definition §7.2]] differs from [[§7 The Limit of a Function#^def-7-1|Definition §7.1]] only in requiring $x < a$ (or $x > a$). Comparing the two shows that $\lim_{x \to a} f(x) = L$ holds exactly when both one-sided limits exist and equal $L$. This is [[§8 Calculating Limits Using the Limit Laws#^thm-8-5|Theorem §8.5]], proved there from the precise definitions.
 
 > [!example] Example §7.3: Reading One-Sided Limits from a Graph
 > Let
@@ -148,11 +148,11 @@ Definition §7.2 differs from Definition §7.1 only in requiring $x < a$ (or $x 
 ^ex-7-3
 
 ![[m233-7-1.svg]]
-*The function $g$ of Example §7.3. At $x = 2$ the graph breaks: from the left it runs into the open circle at height $3$, from the right into the open circle at height $1$, so the two one-sided limits differ and $\lim_{x \to 2} g(x)$ does not exist. At $x = 5$ both sides run into the open circle at height $2$, so $\lim_{x \to 5} g(x) = 2$, even though the value $g(5) = 1$ (red dot) lies elsewhere.*
+*The function $g$ of [[§7 The Limit of a Function#^ex-7-3|Example §7.3]]. At $x = 2$ the graph breaks: from the left it runs into the open circle at height $3$, from the right into the open circle at height $1$, so the two one-sided limits differ and $\lim_{x \to 2} g(x)$ does not exist. At $x = 5$ both sides run into the open circle at height $2$, so $\lim_{x \to 5} g(x) = 2$, even though the value $g(5) = 1$ (red dot) lies elsewhere.*
 
 ## How Can a Limit Fail to Exist?
 
-A limit at $a$ fails to exist if the one-sided limits differ (Example §7.3(c)), or if the values oscillate without settling down (Example §7.2(b)). A third way is that the values grow without bound.
+A limit at $a$ fails to exist if the one-sided limits differ ([[§7 The Limit of a Function#^ex-7-3|Example §7.3]](c)), or if the values oscillate without settling down ([[§7 The Limit of a Function#^ex-7-2|Example §7.2]](b)). A third way is that the values grow without bound.
 
 > [!example] Example §7.4: Values That Grow Without Bound
 > Find $\displaystyle\lim_{x \to 0} \frac{1}{x^2}$ if it exists.
@@ -169,7 +169,7 @@ A limit at $a$ fails to exist if the one-sided limits differ (Example §7.3(c)),
 
 ## Infinite Limits; Vertical Asymptotes
 
-To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2} = \infty$. This does not treat $\infty$ as a number, and it does not say that the limit exists. It records the particular way in which the limit fails to exist.
+To describe the behavior in [[§7 The Limit of a Function#^ex-7-4|Example §7.4]] we write $\lim_{x \to 0} \frac{1}{x^2} = \infty$. This does not treat $\infty$ as a number, and it does not say that the limit exists. It records the particular way in which the limit fails to exist.
 
 > [!definition] Definition §7.3: Infinite Limit
 > Let $f$ be a function defined on both sides of $a$, except possibly at $a$ itself. Then
@@ -240,7 +240,7 @@ To describe the behavior in Example §7.4 we write $\lim_{x \to 0} \frac{1}{x^2}
 >
 > and by [[§7 The Limit of a Function#^def-7-5|Definition §7.5]] the line $x = 3$ is a vertical asymptote.
 >
-> Compare Example §7.4. There $1/x^2 \to \infty$ from both sides, and we write $\lim_{x \to 0} (1/x^2) = \infty$. Here the two sides go to $\infty$ and $-\infty$, so we can only say that $\lim_{x \to 3} \frac{2x}{x - 3}$ does not exist.
+> Compare [[§7 The Limit of a Function#^ex-7-4|Example §7.4]]. There $1/x^2 \to \infty$ from both sides, and we write $\lim_{x \to 0} (1/x^2) = \infty$. Here the two sides go to $\infty$ and $-\infty$, so we can only say that $\lim_{x \to 3} \frac{2x}{x - 3}$ does not exist.
 >
 > **(b)** Find the vertical asymptotes of $f(x) = \tan x$.
 >

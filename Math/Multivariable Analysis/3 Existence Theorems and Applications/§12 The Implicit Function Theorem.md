@@ -38,13 +38,6 @@ More generally, given $F(x, y) = 0$, when can we solve for $y = f(x)$ near a poi
 
 ^thm-12-1
 
-> [!remark]- Connections
-> - MATH 451 relative: the one-variable [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”
-> - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
-> - Reappears in the second proof of the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14).
-> - Computational version: [[§94 The Chain Rule#^thm-94-6|Calc Thm. §94.6]] (a), with the implicit-differentiation formula $dy/dx = -F_x/F_y$ in [[§94 The Chain Rule#^thm-94-4|Calc Thm. §94.4]]; one-variable implicit functions: [[§18 Implicit Differentiation#^def-18-1|Calc Def. §18.1]].
-> - Used in ODEs: the implicit solutions $H_1(x) + H_2(y) = c$ of a separable equation, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and $\psi(x, y) = c$ of an exact equation, [[§9 Exact Differential Equations and Integrating Factors#^prop-9-1|331 Prop. §9.1]], define $y$ as a function of $x$ where the $y$-derivative is nonzero.
-
 ## Proof of the Implicit Function Theorem
 
 The proof proceeds in several steps: (1) establish existence of $f$, (2) prove uniqueness, (3) prove continuity, (4) prove differentiability.
@@ -190,6 +183,13 @@ The proof proceeds in several steps: (1) establish existence of $f$, (2) prove u
 
 ![[m452-12-3.svg]]
 *Steps 1–4 of the proof in one picture. In the box around $(x_0, y_0)$ we have $F_y > a/2$, so $F$ increases along every vertical segment. Continuity of $F$ keeps the top edge positive (red) and the bottom edge negative (green) over the narrower strip $|x - x_0| \leq \delta$ (shaded). On each vertical segment in the strip, $F$ therefore crosses $0$ exactly once: the IVT gives a crossing and monotonicity rules out a second. That crossing is $f(x)$ (red dot), and together the crossings trace the graph $y = f(x)$ (blue).*
+
+> [!remark]- Connections
+> - MATH 451 relative: the one-variable [[§29 The Mean Value Theorem#^thm-29-10|Inverse Function Theorem]] (451 §29.10) — also “$f' \neq 0$ gives a local inverse, with derivative $1/f'$.”
+> - Used twice to prove the [[Inverse Function Theorem (several variables)|Inverse Function Theorem]] (§13.2), and to derive [[Method of Lagrange Multipliers|Lagrange multipliers]] (§14.2).
+> - Reappears in the second proof of the [[§15 Multivariable Integration#^thm-15-14|change of variables formula]] (§15.14).
+> - Computational version: [[§94 The Chain Rule#^thm-94-6|Calc Thm. §94.6]] (a), with the implicit-differentiation formula $dy/dx = -F_x/F_y$ in [[§94 The Chain Rule#^thm-94-4|Calc Thm. §94.4]]; one-variable implicit functions: [[§18 Implicit Differentiation#^def-18-1|Calc Def. §18.1]].
+> - Used in ODEs: the implicit solutions $H_1(x) + H_2(y) = c$ of a separable equation, [[§5 Separable Differential Equations#^thm-5-1|331 Thm. §5.1]], and $\psi(x, y) = c$ of an exact equation, [[§9 Exact Differential Equations and Integrating Factors#^prop-9-1|331 Prop. §9.1]], define $y$ as a function of $x$ where the $y$-derivative is nonzero.
 
 ## Geometric Interpretation
 

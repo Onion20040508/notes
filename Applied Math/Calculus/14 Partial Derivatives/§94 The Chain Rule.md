@@ -16,7 +16,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 ## The Chain Rule: Case 1
 
 > [!theorem] Theorem §94.1: The Chain Rule (Case 1)
-> Suppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$ ([[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]]), where $x = g(t)$ and $y = h(t)$ are both differentiable functions of $t$. Then $z$ is a differentiable function of $t$ and
+> Suppose that $z = f(x, y)$ is a differentiable function of $x$ and $y$ ([[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]]), where $x = g(t)$ and $y = h(t)$ are both differentiable functions of $t$. Then $z$ is a differentiable function of $t$ and
 >
 > $$
 > \frac{dz}{dt} = \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial y}\frac{dy}{dt} .
@@ -29,7 +29,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 ^thm-94-1
 
 > [!proof]+ Proof
-> Fix $t$. A change $\Delta t$ in $t$ produces changes $\Delta x = g(t + \Delta t) - g(t)$ in $x$ and $\Delta y = h(t + \Delta t) - h(t)$ in $y$. These in turn produce a change $\Delta z$ in $z$, and since $f$ is differentiable, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]] gives
+> Fix $t$. A change $\Delta t$ in $t$ produces changes $\Delta x = g(t + \Delta t) - g(t)$ in $x$ and $\Delta y = h(t + \Delta t) - h(t)$ in $y$. These in turn produce a change $\Delta z$ in $z$, and since $f$ is differentiable, [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]] gives
 >
 > $$
 > \Delta z = \frac{\partial f}{\partial x}\,\Delta x + \frac{\partial f}{\partial y}\,\Delta y + \varepsilon_1\,\Delta x + \varepsilon_2\,\Delta y ,
@@ -54,7 +54,7 @@ The one-variable Chain Rule, $\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}$, has s
 
 ^pf-94-1
 
-*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§91 Limits and Continuity#^thm-91-5|§91.5]] (composition with a continuous function)
+*Uses:* [[§93 Tangent Planes and Linear Approximations#^def-93-3|Def. §93.3]], [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Def. §93.4]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§91 Limits and Continuity#^thm-91-5|§91.5]] (composition with a continuous function)
 
 Notice the similarity with the differential $dz = \frac{\partial z}{\partial x}\,dx + \frac{\partial z}{\partial y}\,dy$ of [[§93 Tangent Planes and Linear Approximations#^def-93-4|Definition §93.4]]. Recall that $f$ is differentiable whenever $f_x$ and $f_y$ are continuous ([[§93 Tangent Planes and Linear Approximations#^thm-93-2|Theorem §93.2]]).
 
@@ -109,7 +109,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 ^thm-94-2
 
 > [!proof]+ Proof
-> In computing $\partial z / \partial t$ we hold $s$ fixed and compute the ordinary derivative of $z$ with respect to $t$ ([[§92 Partial Derivatives#^thm-92-1|Theorem §92.1]]). With $s$ fixed, $x = g(s, t)$ and $y = h(s, t)$ are differentiable functions of the single variable $t$, with derivatives $\partial x / \partial t$ and $\partial y / \partial t$. So Theorem §94.1 applies and gives the formula for $\partial z / \partial t$. The same argument with $t$ fixed gives $\partial z / \partial s$.
+> In computing $\partial z / \partial t$ we hold $s$ fixed and compute the ordinary derivative of $z$ with respect to $t$ ([[§92 Partial Derivatives#^thm-92-1|Theorem §92.1]]). With $s$ fixed, $x = g(s, t)$ and $y = h(s, t)$ are differentiable functions of the single variable $t$, with derivatives $\partial x / \partial t$ and $\partial y / \partial t$. So [[§94 The Chain Rule#^thm-94-1|Theorem §94.1]] applies and gives the formula for $\partial z / \partial t$. The same argument with $t$ fixed gives $\partial z / \partial s$.
 
 ^pf-94-2
 
@@ -119,7 +119,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 > - PDE version: this chain rule, applied twice, gives the Laplacian in polar coordinates, [[§35 Potential Equation#^thm-35-3|341 Thm. §35.3]], and the wave equation in the characteristic coordinates $x \pm ct$, [[§31 d'Alembert's Solution#^thm-31-1|341 Thm. §31.1]].
 
 > [!remark] Remark: Tree Diagrams
-> Case 2 has three kinds of variables: $s$ and $t$ are **independent** variables, $x$ and $y$ are **intermediate** variables, and $z$ is the **dependent** variable. Theorem §94.2 has one term for each intermediate variable, and each term resembles the one-variable Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]). To remember it, draw a **tree diagram**: branches from the dependent variable $z$ to the intermediate variables $x$ and $y$, then from each of these to the independent variables $s$ and $t$, and write on each branch the corresponding partial derivative. To find $\partial z / \partial s$, multiply the partial derivatives along each path from $z$ to $s$ and add the products:
+> Case 2 has three kinds of variables: $s$ and $t$ are **independent** variables, $x$ and $y$ are **intermediate** variables, and $z$ is the **dependent** variable. [[§94 The Chain Rule#^thm-94-2|Theorem §94.2]] has one term for each intermediate variable, and each term resembles the one-variable Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]). To remember it, draw a **tree diagram**: branches from the dependent variable $z$ to the intermediate variables $x$ and $y$, then from each of these to the independent variables $s$ and $t$, and write on each branch the corresponding partial derivative. To find $\partial z / \partial s$, multiply the partial derivatives along each path from $z$ to $s$ and add the products:
 >
 > $$
 > \frac{\partial z}{\partial s} = \frac{\partial z}{\partial x}\frac{\partial x}{\partial s} + \frac{\partial z}{\partial y}\frac{\partial y}{\partial s} .
@@ -180,7 +180,7 @@ For instance, for one mole of an ideal gas $P = 8.31\,T/V$ (kPa, K, L). If $T = 
 ^thm-94-3
 
 > [!proof]+ Proof
-> Stewart says only that "the proof is similar to that of Case 1"; here it is. Fix $i$ and hold the other $t$'s fixed, so that each $x_j$ is a function of $t_i$ alone, with derivative $\partial x_j / \partial t_i$; in particular it is continuous in $t_i$. Differentiability of $u$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]], the $n$-variable form of [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]]) says that
+> Stewart says only that "the proof is similar to that of Case 1"; here it is. Fix $i$ and hold the other $t$'s fixed, so that each $x_j$ is a function of $t_i$ alone, with derivative $\partial x_j / \partial t_i$; in particular it is continuous in $t_i$. Differentiability of $u$ ([[§93 Tangent Planes and Linear Approximations#^def-93-5|Definition §93.5]], the $n$-variable form of [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]]) says that
 >
 > $$
 > \Delta u = \sum_{j=1}^n \frac{\partial u}{\partial x_j}\,\Delta x_j + \sum_{j=1}^n \varepsilon_j\,\Delta x_j , \qquad \varepsilon_j \to 0 \text{ as } (\Delta x_1, \ldots, \Delta x_n) \to \mathbf{0}
@@ -285,7 +285,7 @@ and similarly for $\partial w / \partial v$; the tree diagram has four branches 
 ^thm-94-4
 
 > [!proof]+ Proof
-> Apply Case 1 of the Chain Rule (Theorem §94.1, with $x$ itself as the parameter) to both sides of $F(x, y) = 0$, where $x = x$ and $y = f(x)$ are differentiable functions of $x$:
+> Apply Case 1 of the Chain Rule ([[§94 The Chain Rule#^thm-94-1|Theorem §94.1]], with $x$ itself as the parameter) to both sides of $F(x, y) = 0$, where $x = x$ and $y = f(x)$ are differentiable functions of $x$:
 >
 > $$
 > \frac{\partial F}{\partial x}\frac{dx}{dx} + \frac{\partial F}{\partial y}\frac{dy}{dx} = 0 .
@@ -313,7 +313,7 @@ The proof *assumes* that $F(x, y) = 0$ defines $y$ as a differentiable function 
 ^thm-94-5
 
 > [!proof]+ Proof
-> Differentiate both sides of $F(x, y, z) = 0$ with respect to $x$, holding $y$ fixed, by the general Chain Rule (Theorem §94.3, with intermediate variables $x$, $y$, $z$ and independent variables $x$, $y$):
+> Differentiate both sides of $F(x, y, z) = 0$ with respect to $x$, holding $y$ fixed, by the general Chain Rule ([[§94 The Chain Rule#^thm-94-3|Theorem §94.3]], with intermediate variables $x$, $y$, $z$ and independent variables $x$, $y$):
 >
 > $$
 > \frac{\partial F}{\partial x}\frac{\partial x}{\partial x} + \frac{\partial F}{\partial y}\frac{\partial y}{\partial x} + \frac{\partial F}{\partial z}\frac{\partial z}{\partial x} = 0 .
@@ -386,3 +386,5 @@ The same assumption is made here: that $F(x, y, z) = 0$ defines $z$ as a differe
 > *Source: 233 Practice Exam 1, Q4(c) (answer key)*
 
 ^ex-94-5
+
+*Chain: the folium of Descartes earlier in [[§18 Implicit Differentiation#^ex-18-2|Chapter 3]].*

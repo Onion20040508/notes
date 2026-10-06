@@ -55,7 +55,7 @@ The home of these identities is [[§119 Trigonometry#^cor-119-8|Corollary §119.
 >    then substitute $u = \cos x$, $du = -\sin x\,dx$.
 >
 >    If both powers are odd, either step works.
-> 3. **Both powers are even.** Use the half-angle identities (Theorem §45.1), repeatedly if necessary, and sometimes $\sin x \cos x = \frac12 \sin 2x$.
+> 3. **Both powers are even.** Use the half-angle identities ([[§45 Trigonometric Integrals#^thm-45-1|Theorem §45.1]]), repeatedly if necessary, and sometimes $\sin x \cos x = \frac12 \sin 2x$.
 >
 > *Stewart: 7.2, Strategy for Evaluating* $\int \sin^m x \cos^n x\,dx$
 
@@ -149,7 +149,7 @@ The same reasoning applies to $\int \tan^m x \sec^n x\,dx$. Since $\frac{d}{dx}\
 >    $$
 >
 >    then substitute $u = \sec x$, $du = \sec x \tan x\,dx$.
-> 3. **Other cases** are not as clear-cut: identities, integration by parts, and Theorems §45.2 and §45.3 below. If an even power of tangent occurs with an odd power of secant, write everything in terms of $\sec x$; powers of $\sec x$ may need integration by parts (Example §45.4). For instance, $\int \tan^3 x\,dx = \int \tan x(\sec^2 x - 1)\,dx = \frac12 \tan^2 x - \ln|\sec x| + C$.
+> 3. **Other cases** are not as clear-cut: identities, integration by parts, and Theorems [[§45 Trigonometric Integrals#^thm-45-2|§45.2]] and [[§45 Trigonometric Integrals#^thm-45-3|§45.3]] below. If an even power of tangent occurs with an odd power of secant, write everything in terms of $\sec x$; powers of $\sec x$ may need integration by parts ([[§45 Trigonometric Integrals#^ex-45-4|Example §45.4]]). For instance, $\int \tan^3 x\,dx = \int \tan x(\sec^2 x - 1)\,dx = \frac12 \tan^2 x - \ln|\sec x| + C$.
 >
 > Integrals $\int \cot^m x \csc^n x\,dx$ are found in the same way with $1 + \cot^2 x = \csc^2 x$.
 >
@@ -247,7 +247,7 @@ James Gregory found Formula 1 in 1668, while solving a problem in constructing n
 > \end{aligned}
 > $$
 >
-> The original integral has reappeared (as in [[§44 Integration by Parts#^ex-44-3|Example §44.3]]). Solve for it, using Theorem §45.3 for $\int \sec x\,dx$:
+> The original integral has reappeared (as in [[§44 Integration by Parts#^ex-44-3|Example §44.3]]). Solve for it, using [[§45 Trigonometric Integrals#^thm-45-3|Theorem §45.3]] for $\int \sec x\,dx$:
 >
 > $$
 > \int \sec^3 x\,dx = \tfrac12\big(\sec x \tan x + \ln|\sec x + \tan x|\big) + C .
@@ -296,7 +296,7 @@ The home of these identities is [[§119 Trigonometry#^cor-119-9|Corollary §119.
 > [!example] Example §45.5: A Product of Sines and Cosines of Different Frequencies
 > Evaluate $\displaystyle\int \sin 4x \cos 5x\,dx$.
 >
-> Integration by parts would work, but Theorem §45.4(a) with $A = 4x$, $B = 5x$ is quicker:
+> Integration by parts would work, but [[§45 Trigonometric Integrals#^thm-45-4|Theorem §45.4]](a) with $A = 4x$, $B = 5x$ is quicker:
 >
 > $$
 > \int \sin 4x \cos 5x\,dx = \int \tfrac12\big[\sin(-x) + \sin 9x\big]\,dx = \tfrac12 \int (-\sin x + \sin 9x)\,dx = \tfrac12\big(\cos x - \tfrac19 \cos 9x\big) + C .

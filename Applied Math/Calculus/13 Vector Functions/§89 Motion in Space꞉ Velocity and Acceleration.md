@@ -58,11 +58,11 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ^prop-89-1
 
 > [!proof]+ Proof
-> $\mathbf{v} = \mathbf{r}'$ by Definition §89.1, and $|\mathbf{r}'(t)| = ds/dt$ by [[§88 Arc Length and Curvature#^prop-88-2|Proposition §88.2]].
+> $\mathbf{v} = \mathbf{r}'$ by [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], and $|\mathbf{r}'(t)| = ds/dt$ by [[§88 Arc Length and Curvature#^prop-88-2|Proposition §88.2]].
 
 ^pf-89-1
 
-*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Def. §89.1]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]]
+*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Def. §89.1]], [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-new1|Def. §89.2]], [[§88 Arc Length and Curvature#^prop-88-2|§88.2]]
 
 > [!remark] Remark: The Road and the Drive
 > A curve can be parametrized in many ways, and its geometric properties (arc length, curvature, torsion) do not depend on the parametrization. Velocity, speed and acceleration *do*. Think of the curve as a road and the parametrization as a way of driving along it: the length and curvature of the road do not depend on how you travel, but your velocity and acceleration do.
@@ -101,11 +101,11 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ^prop-89-2
 
 > [!proof]+ Proof
-> $\mathbf{v}$ is an antiderivative of $\mathbf{a}$ and $\mathbf{r}$ an antiderivative of $\mathbf{v}$ (Definition §89.1). By the Fundamental Theorem of Calculus for vector functions ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Theorem §87.5]]), $\int_{t_0}^t \mathbf{a}(u)\,du = \mathbf{v}(t) - \mathbf{v}(t_0)$ and $\int_{t_0}^t \mathbf{v}(u)\,du = \mathbf{r}(t) - \mathbf{r}(t_0)$.
+> $\mathbf{v}$ is an antiderivative of $\mathbf{a}$ and $\mathbf{r}$ an antiderivative of $\mathbf{v}$ ([[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]]). By the Fundamental Theorem of Calculus for vector functions ([[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Theorem §87.5]]), $\int_{t_0}^t \mathbf{a}(u)\,du = \mathbf{v}(t) - \mathbf{v}(t_0)$ and $\int_{t_0}^t \mathbf{v}(u)\,du = \mathbf{r}(t) - \mathbf{r}(t_0)$.
 
 ^pf-89-2
 
-*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Def. §89.1]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|§87.5]]
+*Uses:* [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Def. §89.1]], [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-new2|Def. §89.3]], [[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|§87.5]]
 
 > [!example] Example §89.2: From Acceleration to Position
 > A particle starts at $\mathbf{r}(0) = \langle 1, 0, 0 \rangle$ with initial velocity $\mathbf{v}(0) = \mathbf{i} - \mathbf{j} + \mathbf{k}$, and its acceleration is $\mathbf{a}(t) = 4t\,\mathbf{i} + 6t\,\mathbf{j} + \mathbf{k}$. Find its velocity and position at time $t$.
@@ -182,7 +182,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ^prop-89-3
 
 > [!proof]+ Proof
-> By Newton's Second Law, $m\mathbf{a} = -mg\,\mathbf{j}$, so $\mathbf{a} = -g\,\mathbf{j}$. Integrating (Proposition §89.2), $\mathbf{v}(t) = -gt\,\mathbf{j} + \mathbf{C}$ with $\mathbf{C} = \mathbf{v}(0) = \mathbf{v}_0$, so $\mathbf{r}'(t) = -gt\,\mathbf{j} + \mathbf{v}_0$. Integrating again, $\mathbf{r}(t) = -\frac12 gt^2\,\mathbf{j} + t\,\mathbf{v}_0 + \mathbf{D}$ with $\mathbf{D} = \mathbf{r}(0) = \mathbf{0}$. This is (3). Writing $\mathbf{v}_0 = v_0\cos\alpha\,\mathbf{i} + v_0\sin\alpha\,\mathbf{j}$,
+> By Newton's Second Law, $m\mathbf{a} = -mg\,\mathbf{j}$, so $\mathbf{a} = -g\,\mathbf{j}$. Integrating ([[§89 Motion in Space꞉ Velocity and Acceleration#^prop-89-2|Proposition §89.2]]), $\mathbf{v}(t) = -gt\,\mathbf{j} + \mathbf{C}$ with $\mathbf{C} = \mathbf{v}(0) = \mathbf{v}_0$, so $\mathbf{r}'(t) = -gt\,\mathbf{j} + \mathbf{v}_0$. Integrating again, $\mathbf{r}(t) = -\frac12 gt^2\,\mathbf{j} + t\,\mathbf{v}_0 + \mathbf{D}$ with $\mathbf{D} = \mathbf{r}(0) = \mathbf{0}$. This is (3). Writing $\mathbf{v}_0 = v_0\cos\alpha\,\mathbf{i} + v_0\sin\alpha\,\mathbf{j}$,
 >
 > $$
 > \mathbf{r}(t) = (v_0\cos\alpha)\,t\,\mathbf{i} + \big[(v_0\sin\alpha)\,t - \tfrac12 gt^2\big]\,\mathbf{j} ,
@@ -256,7 +256,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 ## Tangential and Normal Components of Acceleration
 
 > [!theorem] Theorem §89.4: Tangential and Normal Components of Acceleration
-> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Definition §87.2]], [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]], [[§88 Arc Length and Curvature#^def-88-4|Definition §88.4]]). Then
+> Let $v = |\mathbf{v}|$ be the speed of a particle moving along a smooth curve, and $\mathbf{T}$, $\mathbf{N}$, $\kappa$ the unit tangent, unit normal and curvature ([[§87 Derivatives and Integrals of Vector Functions#^def-87-new2|Definition §87.4]], [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]], [[§88 Arc Length and Curvature#^def-88-4|Definition §88.4]]). Then
 >
 > $$
 > \mathbf{a} = v'\,\mathbf{T} + \kappa v^2\,\mathbf{N} . \qquad (7)
@@ -282,7 +282,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 *Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§88 Arc Length and Curvature#^prop-88-3|§88.3]], [[§88 Arc Length and Curvature#^def-88-5|Def. §88.5]]
 
 ![[m233-89-1.svg]]
-*Theorem §89.4: the acceleration $\mathbf{a}$ (red) splits into a component $a_T\mathbf{T}$ along the direction of motion and a component $a_N\mathbf{N}$ toward the inside of the bend (green); there is no $\mathbf{B}$-component. The tangential part changes the speed, $a_T = v'$; the normal part turns the direction, $a_N = \kappa v^2$.*
+*[[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-4|Theorem §89.4]]: the acceleration $\mathbf{a}$ (red) splits into a component $a_T\mathbf{T}$ along the direction of motion and a component $a_N\mathbf{N}$ toward the inside of the bend (green); there is no $\mathbf{B}$-component. The tangential part changes the speed, $a_T = v'$; the normal part turns the direction, $a_N = \kappa v^2$.*
 
 > [!remark] Remark: What Formula 7 Says
 > The binormal $\mathbf{B}$ is absent: however an object moves through space, its acceleration lies in the plane of $\mathbf{T}$ and $\mathbf{N}$, the osculating plane. The tangential component $v'$ is the rate of change of speed. The normal component $\kappa v^2$ is curvature times the square of the speed: a passenger in a car taking a sharp turn (large $\kappa$) is thrown against the door, and taking it at high speed has the same effect; doubling the speed multiplies $a_N$ by $4$.
@@ -324,7 +324,7 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 > \mathbf{r}'(t) = 2t\,\mathbf{i} + 2t\,\mathbf{j} + 3t^2\,\mathbf{k}, \qquad \mathbf{r}''(t) = 2\,\mathbf{i} + 2\,\mathbf{j} + 6t\,\mathbf{k}, \qquad |\mathbf{r}'(t)| = \sqrt{8t^2 + 9t^4} .
 > $$
 >
-> By Theorem §89.5,
+> By [[§89 Motion in Space꞉ Velocity and Acceleration#^thm-89-5|Theorem §89.5]],
 >
 > $$
 > a_T = \frac{\mathbf{r}' \cdot \mathbf{r}''}{|\mathbf{r}'|} = \frac{4t + 4t + 18t^3}{\sqrt{8t^2 + 9t^4}} = \frac{8t + 18t^3}{\sqrt{8t^2 + 9t^4}} .

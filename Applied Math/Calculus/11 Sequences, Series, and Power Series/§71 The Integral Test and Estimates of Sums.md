@@ -74,7 +74,7 @@ The same reasoning proves the general test.
 
 ^pf-71-1
 
-*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§35 The Definite Integral#^thm-35-5|§35.5]] (adjacent intervals)
+*Uses:* [[§69 Sequences#^thm-69-9|§69.9]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§51 Improper Integrals#^def-51-1|Def. §51.1]], [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison properties), [[§35 The Definite Integral#^thm-35-5|§35.5]] (adjacent intervals)
 
 ![[m233-71-1.svg]]
 *The two inequalities in the proof of the Integral Test, for $n = 6$. Left, inequality (4): rectangles of height $a_i = f(i)$ on $[i-1, i]$ (right endpoints) fit under the decreasing curve. Right, inequality (5): rectangles of height $a_i$ on $[i, i+1]$ (left endpoints) cover the area under the curve from $1$ to $n$.*
@@ -197,7 +197,7 @@ The same reasoning proves the general test.
 ^thm-71-3
 
 > [!proof]+ Proof
-> *Stewart reads this off Figures 3 and 4 (rectangles of heights $a_{n+1}, a_{n+2}, \ldots$ under and over the curve for $x \ge n$); written out:* both integrals converge, by the Integral Test applied to the convergent series $\sum_{k \ge n} a_k$. As in the proof of Theorem §71.1, since $f$ is decreasing on $[n, \infty)$, for every $k \ge 1$
+> *Stewart reads this off Figures 3 and 4 (rectangles of heights $a_{n+1}, a_{n+2}, \ldots$ under and over the curve for $x \ge n$); written out:* both integrals converge, by the Integral Test applied to the convergent series $\sum_{k \ge n} a_k$. As in the proof of [[§71 The Integral Test and Estimates of Sums#^thm-71-1|Theorem §71.1]], since $f$ is decreasing on $[n, \infty)$, for every $k \ge 1$
 >
 > $$
 > \int_{n+k}^{n+k+1} f(x)\,dx \le a_{n+k} \le \int_{n+k-1}^{n+k} f(x)\,dx .
@@ -225,7 +225,7 @@ The same reasoning proves the general test.
 > \int_n^{\infty} \frac{1}{x^3}\,dx = \lim_{t \to \infty} \left[ -\frac{1}{2x^2} \right]_n^t = \lim_{t \to \infty} \left( -\frac{1}{2t^2} + \frac{1}{2n^2} \right) = \frac{1}{2n^2} .
 > $$
 >
-> **(a)** $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3} \approx s_{10} = \frac{1}{1^3} + \frac{1}{2^3} + \cdots + \frac{1}{10^3} \approx 1.1975$. By Theorem §71.3,
+> **(a)** $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3} \approx s_{10} = \frac{1}{1^3} + \frac{1}{2^3} + \cdots + \frac{1}{10^3} \approx 1.1975$. By [[§71 The Integral Test and Estimates of Sums#^thm-71-3|Theorem §71.3]],
 >
 > $$
 > R_{10} \le \int_{10}^{\infty} \frac{1}{x^3}\,dx = \frac{1}{2(10)^2} = \frac{1}{200} ,
@@ -240,7 +240,7 @@ The same reasoning proves the general test.
 ^ex-71-4
 
 > [!theorem] Corollary §71.4: Bounds for the Sum
-> Under the hypotheses of Theorem §71.3,
+> Under the hypotheses of [[§71 The Integral Test and Estimates of Sums#^thm-71-3|Theorem §71.3]],
 >
 > $$
 > s_n + \int_{n+1}^{\infty} f(x)\,dx \le s \le s_n + \int_n^{\infty} f(x)\,dx .
@@ -251,7 +251,7 @@ The same reasoning proves the general test.
 ^cor-71-4
 
 > [!proof]+ Proof
-> Add $s_n$ to each side of the inequalities in Theorem §71.3 and use $s_n + R_n = s$.
+> Add $s_n$ to each side of the inequalities in [[§71 The Integral Test and Estimates of Sums#^thm-71-3|Theorem §71.3]] and use $s_n + R_n = s$.
 
 ^pf-71-4
 
@@ -260,9 +260,9 @@ The same reasoning proves the general test.
 These bounds give a more accurate approximation to $s$ than the partial sum $s_n$ alone.
 
 > [!example] Example §71.5: Estimating the Sum of the p-Series with p = 3
-> Use Corollary §71.4 with $n = 10$ to estimate $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}$.
+> Use [[§71 The Integral Test and Estimates of Sums#^cor-71-4|Corollary §71.4]] with $n = 10$ to estimate $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n^3}$.
 >
-> By Example §71.4, $\int_n^{\infty} x^{-3}\,dx = \frac{1}{2n^2}$, so the inequalities become
+> By [[§71 The Integral Test and Estimates of Sums#^ex-71-4|Example §71.4]], $\int_n^{\infty} x^{-3}\,dx = \frac{1}{2n^2}$, so the inequalities become
 >
 > $$
 > s_{10} + \frac{1}{2(11)^2} \le s \le s_{10} + \frac{1}{2(10)^2} .
@@ -280,7 +280,7 @@ These bounds give a more accurate approximation to $s$ than the partial sum $s_n
 > \sum_{n=1}^{\infty} \frac{1}{n^3} \approx 1.2021 \qquad \text{with error} < 0.0005 .
 > $$
 >
-> Example §71.4 needed $32$ terms for this accuracy; here $10$ suffice. (The true value is $1.2020569\ldots$; unlike $\sum 1/n^2$, no closed form is known.)
+> [[§71 The Integral Test and Estimates of Sums#^ex-71-4|Example §71.4]] needed $32$ terms for this accuracy; here $10$ suffice. (The true value is $1.2020569\ldots$; unlike $\sum 1/n^2$, no closed form is known.)
 >
 > *Stewart: Example 11.3.6*
 

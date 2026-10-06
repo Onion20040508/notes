@@ -51,7 +51,7 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 *Uses:* [[§117 Coordinate Geometry and Lines#^thm-117-1|§117.1]]
 
 > [!example] Example §118.1: Writing and Recognizing a Circle
-> **(a)** The circle with radius $3$ and center $(2, -5)$ is $(x - 2)^2 + (y + 5)^2 = 9$, by Theorem §118.1 with $h = 2$, $k = -5$, $r = 3$.
+> **(a)** The circle with radius $3$ and center $(2, -5)$ is $(x - 2)^2 + (y + 5)^2 = 9$, by [[§118 Graphs of Second-Degree Equations#^thm-118-1|Theorem §118.1]] with $h = 2$, $k = -5$, $r = 3$.
 >
 > **(b)** Show that $x^2 + y^2 + 2x - 6y + 7 = 0$ is a circle, and find its center and radius. Group the $x$-terms and the $y$-terms: $(x^2 + 2x) + (y^2 - 6y) = -7$. Complete the square in each group, adding the squares of half the coefficients of $x$ and $y$ to both sides:
 >
@@ -111,7 +111,7 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 >
 > **Intersections.** Substituting $x = y + 2$ into $x = y^2$ gives $y + 2 = y^2$, so $0 = y^2 - y - 2 = (y - 2)(y + 1)$ and $y = 2$ or $y = -1$. The points of intersection are $(4, 2)$ and $(1, -1)$.
 >
-> **Sketch.** Draw the line $y = x - 2$ through these points, and the parabola $x = y^2$ (opening to the right, Proposition §118.2) through them. The region bounded by the two curves is the finite region between them: to the right of the parabola and to the left of the line, for $-1 \le y \le 2$. (This is the setting of area computations with respect to $y$ in [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]].)
+> **Sketch.** Draw the line $y = x - 2$ through these points, and the parabola $x = y^2$ (opening to the right, [[§118 Graphs of Second-Degree Equations#^prop-118-2|Proposition §118.2]]) through them. The region bounded by the two curves is the finite region between them: to the right of the parabola and to the left of the line, for $-1 \le y \le 2$. (This is the setting of area computations with respect to $y$ in [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]].)
 >
 > *Stewart: Appendix C, Example 4*
 
@@ -158,7 +158,7 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 ^prop-118-4
 
 > [!proof]+ Proof
-> Both equations are unchanged when $x$ is replaced by $-x$ or $y$ by $-y$, so both curves are symmetric about both axes (Theorem §118.3). In (2), $y = 0$ gives $x^2 = a^2$, so $x = \pm a$, and $x = 0$ gives $y = \pm b$; with $a = b$, (2) is $x^2 + y^2 = a^2$. In (3), $y = 0$ gives $x = \pm a$, while $x = 0$ gives $y^2 = -b^2$, which is impossible. From (3), $\frac{x^2}{a^2} = 1 + \frac{y^2}{b^2} \ge 1$, so $x^2 \ge a^2$ and $|x| = \sqrt{x^2} \ge a$: $x \ge a$ or $x \le -a$. The asymptotes are proved in [[§67 Conic Sections#^thm-67-5|Theorem §67.5]] (Stewart: "this involves the idea of a limit").
+> Both equations are unchanged when $x$ is replaced by $-x$ or $y$ by $-y$, so both curves are symmetric about both axes ([[§118 Graphs of Second-Degree Equations#^thm-118-3|Theorem §118.3]]). In (2), $y = 0$ gives $x^2 = a^2$, so $x = \pm a$, and $x = 0$ gives $y = \pm b$; with $a = b$, (2) is $x^2 + y^2 = a^2$. In (3), $y = 0$ gives $x = \pm a$, while $x = 0$ gives $y^2 = -b^2$, which is impossible. From (3), $\frac{x^2}{a^2} = 1 + \frac{y^2}{b^2} \ge 1$, so $x^2 \ge a^2$ and $|x| = \sqrt{x^2} \ge a$: $x \ge a$ or $x \le -a$. The asymptotes are proved in [[§67 Conic Sections#^thm-67-5|Theorem §67.5]] (Stewart: "this involves the idea of a limit").
 
 ^pf-118-4
 
@@ -201,9 +201,9 @@ This is the basic principle of analytic geometry (Descartes and Fermat): a geome
 *Uses:* [[§118 Graphs of Second-Degree Equations#^def-118-1|Def. §118.1]]
 
 > [!example] Example §118.4: Shifted Parabolas
-> **(a)** Sketch $y = 2x^2 - 4x + 1$. Complete the square: $y = 2(x^2 - 2x) + 1 = 2(x^2 - 2x + 1) - 2 + 1 = 2(x - 1)^2 - 1$. By Theorem §118.5 this is the parabola $y = 2x^2$ shifted so that its vertex is at $(1, -1)$; it opens upward and crosses the $y$-axis at $1$.
+> **(a)** Sketch $y = 2x^2 - 4x + 1$. Complete the square: $y = 2(x^2 - 2x) + 1 = 2(x^2 - 2x + 1) - 2 + 1 = 2(x - 1)^2 - 1$. By [[§118 Graphs of Second-Degree Equations#^thm-118-5|Theorem §118.5]] this is the parabola $y = 2x^2$ shifted so that its vertex is at $(1, -1)$; it opens upward and crosses the $y$-axis at $1$.
 >
-> **(b)** Sketch $x = 1 - y^2$. Start with $x = -y^2$, which opens to the left (Proposition §118.2 with $a = -1$), and shift it one unit to the right: the vertex is $(1, 0)$, and the $y$-intercepts are $\pm1$.
+> **(b)** Sketch $x = 1 - y^2$. Start with $x = -y^2$, which opens to the left ([[§118 Graphs of Second-Degree Equations#^prop-118-2|Proposition §118.2]] with $a = -1$), and shift it one unit to the right: the vertex is $(1, 0)$, and the $y$-intercepts are $\pm1$.
 >
 > *Stewart: Appendix C, Examples 7 and 8*
 

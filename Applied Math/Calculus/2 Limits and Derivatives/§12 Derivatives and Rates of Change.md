@@ -29,7 +29,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 ^def-12-1
 
 > [!theorem] Theorem §12.1: Slope of the Tangent with an Increment
-> Writing $h = x - a$, so that $x = a + h$, the slope of the tangent line in Definition §12.1 is
+> Writing $h = x - a$, so that $x = a + h$, the slope of the tangent line in [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]] is
 >
 > $$
 > m = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h} ,
@@ -55,12 +55,12 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 *Uses:* [[§12 Derivatives and Rates of Change#^def-12-1|Def. §12.1]], [[§9 The Precise Definition of a Limit#^def-9-1|Def. §9.1]] (precise definition of a limit)
 
 ![[m233-12-1.svg]]
-*Theorem §12.1 in a picture. With $Q = (a + h, f(a + h))$ the secant $PQ$ (blue) has run $h$ and rise $f(a + h) - f(a)$ (green), so its slope is the difference quotient $\big(f(a + h) - f(a)\big)/h$; as $h \to 0$, $Q$ slides along the curve to $P$ and the secant turns into the tangent line at $P$ (red). (The concrete case $y = x^2$ at $(1, 1)$, with numerical secant slopes $3, 2.5, 2.2, \ldots \to 2$, is pictured after [[§6 The Tangent and Velocity Problems#^ex-6-1|Example §6.1]].)*
+*[[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]] in a picture. With $Q = (a + h, f(a + h))$ the secant $PQ$ (blue) has run $h$ and rise $f(a + h) - f(a)$ (green), so its slope is the difference quotient $\big(f(a + h) - f(a)\big)/h$; as $h \to 0$, $Q$ slides along the curve to $P$ and the secant turns into the tangent line at $P$ (red). (The concrete case $y = x^2$ at $(1, 1)$, with numerical secant slopes $3, 2.5, 2.2, \ldots \to 2$, is pictured after [[§6 The Tangent and Velocity Problems#^ex-6-1|Example §6.1]].)*
 
 > [!example] Example §12.1: Tangent Lines from the Definition
 > **(a)** Find an equation of the tangent line to the parabola $y = x^2$ at $P(1, 1)$.
 >
-> Here $a = 1$ and $f(x) = x^2$. By Definition §12.1,
+> Here $a = 1$ and $f(x) = x^2$. By [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]],
 >
 > $$
 > m = \lim_{x \to 1} \frac{f(x) - f(1)}{x - 1} = \lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x - 1)(x + 1)}{x - 1} = \lim_{x \to 1} (x + 1) = 1 + 1 = 2 .
@@ -70,7 +70,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 >
 > **(b)** Find an equation of the tangent line to the hyperbola $y = 3/x$ at $(3, 1)$.
 >
-> Let $f(x) = 3/x$. By Theorem §12.1,
+> Let $f(x) = 3/x$. By [[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]],
 >
 > $$
 > m = \lim_{h \to 0} \frac{f(3 + h) - f(3)}{h} = \lim_{h \to 0} \frac{\dfrac{3}{3 + h} - 1}{h} = \lim_{h \to 0} \frac{\dfrac{3 - (3 + h)}{3 + h}}{h} = \lim_{h \to 0} \frac{-h}{h(3 + h)} = \lim_{h \to 0} \frac{-1}{3 + h} = -\frac13 .
@@ -97,7 +97,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 > v(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 > $$
 >
-> provided that this limit exists. By Theorem §12.1, $v(a)$ is the slope of the tangent line to the graph of $f$ at $P(a, f(a))$.
+> provided that this limit exists. By [[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]], $v(a)$ is the slope of the tangent line to the graph of $f$ at $P(a, f(a))$.
 >
 > *Stewart: 2.7, Definition 3*
 
@@ -129,7 +129,7 @@ With limits available, the tangent and velocity problems of [[§6 The Tangent an
 
 ## Derivatives
 
-The same limit computes the slope of a tangent line (Theorem §12.1) and a velocity (Definition §12.2), and it arises for every rate of change in the sciences and engineering (rate of reaction, marginal cost …). So it gets its own name.
+The same limit computes the slope of a tangent line ([[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]]) and a velocity ([[§12 Derivatives and Rates of Change#^def-12-2|Definition §12.2]]), and it arises for every rate of change in the sciences and engineering (rate of reaction, marginal cost …). So it gets its own name.
 
 > [!definition] Definition §12.3: Derivative at a Number
 > The **derivative of a function $f$ at a number $a$**, denoted by $f'(a)$ (read "$f$ prime of $a$"), is
@@ -138,7 +138,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 > f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 > $$
 >
-> if this limit exists. Equivalently (by the substitution $x = a + h$, exactly as in the proof of Theorem §12.1),
+> if this limit exists. Equivalently (by the substitution $x = a + h$, exactly as in the proof of [[§12 Derivatives and Rates of Change#^thm-12-1|Theorem §12.1]]),
 >
 > $$
 > f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} .
@@ -156,7 +156,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 > [!example] Example §12.3: A Derivative and a Tangent Line
 > Let $f(x) = x^2 - 8x + 9$. Find (a) $f'(2)$; (b) $f'(a)$; (c) an equation of the tangent line to the parabola $y = x^2 - 8x + 9$ at $(3, -6)$.
 >
-> **(a)** By Definition §12.3, with $f(2) = 4 - 16 + 9 = -3$,
+> **(a)** By [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]], with $f(2) = 4 - 16 + 9 = -3$,
 >
 > $$
 > \begin{aligned}
@@ -176,7 +176,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 >
 > As a check on (a): $a = 2$ gives $f'(2) = 2 \cdot 2 - 8 = -4$.
 >
-> **(c)** By (b) and Theorem §12.2 below, the slope of the tangent line at $(3, -6)$ is $f'(3) = 2 \cdot 3 - 8 = -2$, so the tangent line is
+> **(c)** By (b) and [[§12 Derivatives and Rates of Change#^thm-12-2|Theorem §12.2]] below, the slope of the tangent line at $(3, -6)$ is $f'(3) = 2 \cdot 3 - 8 = -2$, so the tangent line is
 >
 > $$
 > y - (-6) = (-2)(x - 3) \qquad\text{or}\qquad y = -2x .
@@ -187,7 +187,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 ^ex-12-3
 
 > [!example] Example §12.4: Using the Second Form
-> Find the derivative of $f(x) = 1/\sqrt{x}$ at a number $a > 0$, using the form $f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$ of Definition §12.3.
+> Find the derivative of $f(x) = 1/\sqrt{x}$ at a number $a > 0$, using the form $f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$ of [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]].
 >
 > Clear the small fractions by multiplying by $\sqrt{x}\sqrt{a}$, then rationalize with $\sqrt{a} + \sqrt{x}$:
 >
@@ -221,7 +221,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 ^thm-12-2
 
 > [!proof]+ Proof
-> By Definition §12.1 the tangent line passes through $(a, f(a))$ and has slope $\lim_{x \to a} \frac{f(x) - f(a)}{x - a}$, which is $f'(a)$ by the second form in Definition §12.3. The line through $(x_1, y_1) = (a, f(a))$ with slope $m = f'(a)$ is $y - y_1 = m(x - x_1)$.
+> By [[§12 Derivatives and Rates of Change#^def-12-1|Definition §12.1]] the tangent line passes through $(a, f(a))$ and has slope $\lim_{x \to a} \frac{f(x) - f(a)}{x - a}$, which is $f'(a)$ by the second form in [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]]. The line through $(x_1, y_1) = (a, f(a))$ with slope $m = f'(a)$ is $y - y_1 = m(x - x_1)$.
 
 ^pf-12-2
 
@@ -248,7 +248,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 > \text{instantaneous rate of change} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{x_2 \to x_1} \frac{f(x_2) - f(x_1)}{x_2 - x_1} ,
 > $$
 >
-> is the **(instantaneous) rate of change of $y$ with respect to $x$** at $x = x_1$. By Definition §12.3 this limit is $f'(x_1)$. So:
+> is the **(instantaneous) rate of change of $y$ with respect to $x$** at $x = x_1$. By [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]] this limit is $f'(x_1)$. So:
 >
 > *The derivative $f'(a)$ is the instantaneous rate of change of $y = f(x)$ with respect to $x$ when $x = a$.*
 >
@@ -270,7 +270,7 @@ The same limit computes the slope of a tangent line (Theorem §12.1) and a veloc
 > |---|---|---|---|---|---|
 > | $D(t)$ | 5662.2 | 7596.1 | 10,699.8 | 16,432.7 | 19,976.8 |
 >
-> $D'(2008)$ is the rate of change of $D$ with respect to $t$ when $t = 2008$: the rate at which the debt was increasing in 2008. By the second form of Definition §12.3,
+> $D'(2008)$ is the rate of change of $D$ with respect to $t$ when $t = 2008$: the rate at which the debt was increasing in 2008. By the second form of [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]],
 >
 > $$
 > D'(2008) = \lim_{t \to 2008} \frac{D(t) - D(2008)}{t - 2008} .

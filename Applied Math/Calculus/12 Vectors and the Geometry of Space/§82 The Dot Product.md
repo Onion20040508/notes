@@ -30,7 +30,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 > [!remark]- Connections
 > - The same definition on $\mathbb{R}^n$, and the model for an abstract inner product: [[§19 Inner Products and Norms#^ladr-6-1|LADR 6.1]], [[§19 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
-> - Matrix version: [[§40 Inner Product, Length, and Orthogonality#^def-40-1|235 Def. §40.1]] (the inner product $\mathbf{u}^T\mathbf{v}$ in $\mathbb{R}^n$, a $1 \times n$ times an $n \times 1$ matrix), with the properties of Theorem §82.1 as [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|235 Thm. §40.1]].
+> - Matrix version: [[§40 Inner Product, Length, and Orthogonality#^def-40-1|235 Def. §40.1]] (the inner product $\mathbf{u}^T\mathbf{v}$ in $\mathbb{R}^n$, a $1 \times n$ times an $n \times 1$ matrix), with the properties of [[§82 The Dot Product#^thm-82-1|Theorem §82.1]] as [[§40 Inner Product, Length, and Orthogonality#^thm-40-1|235 Thm. §40.1]].
 
 > [!theorem] Theorem §82.1: Properties of the Dot Product
 > If $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$ are vectors in $V_3$ and $c$ is a scalar, then
@@ -48,7 +48,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^thm-82-1
 
 > [!proof]+ Proof
-> Write $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$, $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$, $\mathbf{c} = \langle c_1, c_2, c_3 \rangle$ and use Definition §82.1. (Stewart proves 1 and 3 and leaves the rest as exercises.)
+> Write $\mathbf{a} = \langle a_1, a_2, a_3 \rangle$, $\mathbf{b} = \langle b_1, b_2, b_3 \rangle$, $\mathbf{c} = \langle c_1, c_2, c_3 \rangle$ and use [[§82 The Dot Product#^def-82-1|Definition §82.1]]. (Stewart proves 1 and 3 and leaves the rest as exercises.)
 >
 > 1. $\mathbf{a} \cdot \mathbf{a} = a_1^2 + a_2^2 + a_3^2 = |\mathbf{a}|^2$ by [[§81 Vectors#^thm-81-3|Theorem §81.3]].
 > 2. $\mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 = b_1a_1 + b_2a_2 + b_3a_3 = \mathbf{b} \cdot \mathbf{a}$.
@@ -99,7 +99,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > |\mathbf{a} - \mathbf{b}|^2 = |\mathbf{a}|^2 + |\mathbf{b}|^2 - 2|\mathbf{a}|\,|\mathbf{b}| \cos\theta . \qquad (5)
 > $$
 >
-> By Properties 1, 2 and 3 of Theorem §82.1 (with Property 4 for the minus signs), the left side is
+> By Properties 1, 2 and 3 of [[§82 The Dot Product#^thm-82-1|Theorem §82.1]] (with Property 4 for the minus signs), the left side is
 >
 > $$
 > |\mathbf{a} - \mathbf{b}|^2 = (\mathbf{a} - \mathbf{b}) \cdot (\mathbf{a} - \mathbf{b}) = \mathbf{a} \cdot \mathbf{a} - \mathbf{a} \cdot \mathbf{b} - \mathbf{b} \cdot \mathbf{a} + \mathbf{b} \cdot \mathbf{b} = |\mathbf{a}|^2 - 2\,\mathbf{a} \cdot \mathbf{b} + |\mathbf{b}|^2 .
@@ -127,14 +127,14 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^cor-82-3
 
 > [!proof]+ Proof
-> Divide both sides of Theorem §82.2 by $|\mathbf{a}|\,|\mathbf{b}|$, which is nonzero because neither vector is $\mathbf{0}$.
+> Divide both sides of [[§82 The Dot Product#^thm-82-2|Theorem §82.2]] by $|\mathbf{a}|\,|\mathbf{b}|$, which is nonzero because neither vector is $\mathbf{0}$.
 
 ^pf-82-3
 
 *Uses:* [[§82 The Dot Product#^thm-82-2|§82.2]]
 
 > [!example] Example §82.1: Dot Products and Angles
-> **(a)** Directly from Definition §82.1:
+> **(a)** Directly from [[§82 The Dot Product#^def-82-1|Definition §82.1]]:
 >
 > $$
 > \begin{aligned}
@@ -144,7 +144,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > \end{aligned}
 > $$
 >
-> **(b)** If $|\mathbf{a}| = 4$, $|\mathbf{b}| = 6$ and the angle between them is $\pi/3$, then by Theorem §82.2, $\mathbf{a} \cdot \mathbf{b} = 4 \cdot 6 \cdot \cos(\pi/3) = 4 \cdot 6 \cdot \frac12 = 12$.
+> **(b)** If $|\mathbf{a}| = 4$, $|\mathbf{b}| = 6$ and the angle between them is $\pi/3$, then by [[§82 The Dot Product#^thm-82-2|Theorem §82.2]], $\mathbf{a} \cdot \mathbf{b} = 4 \cdot 6 \cdot \cos(\pi/3) = 4 \cdot 6 \cdot \frac12 = 12$.
 >
 > **(c)** Find the angle between $\mathbf{a} = \langle 2, 2, -1 \rangle$ and $\mathbf{b} = \langle 5, -3, 2 \rangle$. Here
 >
@@ -152,7 +152,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > |\mathbf{a}| = \sqrt{4 + 4 + 1} = 3, \qquad |\mathbf{b}| = \sqrt{25 + 9 + 4} = \sqrt{38}, \qquad \mathbf{a} \cdot \mathbf{b} = 2(5) + 2(-3) + (-1)(2) = 2 ,
 > $$
 >
-> so by Corollary §82.3, $\cos\theta = \dfrac{2}{3\sqrt{38}}$ and $\theta = \cos^{-1}\!\left(\dfrac{2}{3\sqrt{38}}\right) \approx 1.46$ (about $84^\circ$).
+> so by [[§82 The Dot Product#^cor-82-3|Corollary §82.3]], $\cos\theta = \dfrac{2}{3\sqrt{38}}$ and $\theta = \cos^{-1}\!\left(\dfrac{2}{3\sqrt{38}}\right) \approx 1.46$ (about $84^\circ$).
 >
 > *Stewart: Examples 12.3.1, 12.3.2 and 12.3.3*
 
@@ -173,7 +173,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^thm-82-4
 
 > [!proof]+ Proof
-> If $\mathbf{a} = \mathbf{0}$ or $\mathbf{b} = \mathbf{0}$, both statements are true: the vectors are orthogonal by convention, and $\mathbf{a} \cdot \mathbf{b} = 0$ by Property 5 of Theorem §82.1. Otherwise, if the vectors are orthogonal then $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos(\pi/2) = 0$ by Theorem §82.2. Conversely, if $\mathbf{a} \cdot \mathbf{b} = 0$ then $\cos\theta = 0$ by Corollary §82.3, and the only $\theta$ in $[0, \pi]$ with $\cos\theta = 0$ is $\theta = \pi/2$.
+> If $\mathbf{a} = \mathbf{0}$ or $\mathbf{b} = \mathbf{0}$, both statements are true: the vectors are orthogonal by convention, and $\mathbf{a} \cdot \mathbf{b} = 0$ by Property 5 of [[§82 The Dot Product#^thm-82-1|Theorem §82.1]]. Otherwise, if the vectors are orthogonal then $\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos(\pi/2) = 0$ by [[§82 The Dot Product#^thm-82-2|Theorem §82.2]]. Conversely, if $\mathbf{a} \cdot \mathbf{b} = 0$ then $\cos\theta = 0$ by [[§82 The Dot Product#^cor-82-3|Corollary §82.3]], and the only $\theta$ in $[0, \pi]$ with $\cos\theta = 0$ is $\theta = \pi/2$.
 
 ^pf-82-4
 
@@ -194,7 +194,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > (2\mathbf{i} + 2\mathbf{j} - \mathbf{k}) \cdot (5\mathbf{i} - 4\mathbf{j} + 2\mathbf{k}) = 2(5) + 2(-4) + (-1)(2) = 0 .
 > $$
 >
-> **(b)** For which $k$ is $\mathbf{v} = \langle 1, 3, k \rangle$ orthogonal to $\langle 1, -12, -7 \rangle$? By Theorem §82.4 we need
+> **(b)** For which $k$ is $\mathbf{v} = \langle 1, 3, k \rangle$ orthogonal to $\langle 1, -12, -7 \rangle$? By [[§82 The Dot Product#^thm-82-4|Theorem §82.4]] we need
 >
 > $$
 > \langle 1, 3, k \rangle \cdot \langle 1, -12, -7 \rangle = 1 - 36 - 7k = 0 ,
@@ -236,7 +236,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^prop-82-5
 
 > [!proof]+ Proof
-> The positive $x$-axis has the direction of $\mathbf{i}$, so $\alpha$ is the angle between $\mathbf{a}$ and $\mathbf{i}$. By Corollary §82.3, with $|\mathbf{i}| = 1$,
+> The positive $x$-axis has the direction of $\mathbf{i}$, so $\alpha$ is the angle between $\mathbf{a}$ and $\mathbf{i}$. By [[§82 The Dot Product#^cor-82-3|Corollary §82.3]], with $|\mathbf{i}| = 1$,
 >
 > $$
 > \cos\alpha = \frac{\mathbf{a} \cdot \mathbf{i}}{|\mathbf{a}|\,|\mathbf{i}|} = \frac{a_1 \cdot 1 + a_2 \cdot 0 + a_3 \cdot 0}{|\mathbf{a}|} = \frac{a_1}{|\mathbf{a}|} ,
@@ -257,7 +257,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > [!example] Example §82.3: Direction Angles
 > Find the direction angles of $\mathbf{a} = \langle 1, 2, 3 \rangle$.
 >
-> Since $|\mathbf{a}| = \sqrt{1 + 4 + 9} = \sqrt{14}$, Proposition §82.5 gives $\cos\alpha = 1/\sqrt{14}$, $\cos\beta = 2/\sqrt{14}$, $\cos\gamma = 3/\sqrt{14}$, so
+> Since $|\mathbf{a}| = \sqrt{1 + 4 + 9} = \sqrt{14}$, [[§82 The Dot Product#^prop-82-5|Proposition §82.5]] gives $\cos\alpha = 1/\sqrt{14}$, $\cos\beta = 2/\sqrt{14}$, $\cos\gamma = 3/\sqrt{14}$, so
 >
 > $$
 > \alpha = \cos^{-1}\!\Big(\frac{1}{\sqrt{14}}\Big) \approx 74^\circ, \qquad \beta = \cos^{-1}\!\Big(\frac{2}{\sqrt{14}}\Big) \approx 58^\circ, \qquad \gamma = \cos^{-1}\!\Big(\frac{3}{\sqrt{14}}\Big) \approx 37^\circ .
@@ -303,7 +303,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^thm-82-6
 
 > [!proof]+ Proof
-> By Theorem §82.2,
+> By [[§82 The Dot Product#^thm-82-2|Theorem §82.2]],
 >
 > $$
 > \operatorname{comp}_{\mathbf{a}}\mathbf{b} = |\mathbf{b}|\cos\theta = \frac{|\mathbf{a}|\,|\mathbf{b}|\cos\theta}{|\mathbf{a}|} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|} = \frac{\mathbf{a}}{|\mathbf{a}|} \cdot \mathbf{b} .
@@ -313,7 +313,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 
 ^pf-82-6
 
-*Uses:* [[§82 The Dot Product#^def-82-5|Def. §82.5]], [[§82 The Dot Product#^thm-82-2|§82.2]], [[§81 Vectors#^prop-81-7|§81.7]]
+*Uses:* [[§82 The Dot Product#^def-82-5|Def. §82.5]], [[§82 The Dot Product#^def-82-new1|Def. §82.6]], [[§82 The Dot Product#^thm-82-2|§82.2]], [[§81 Vectors#^prop-81-7|§81.7]]
 
 > [!remark]- Connections
 > - $\operatorname{proj}_{\mathbf{a}}\mathbf{b}$ is the orthogonal projection onto the line $\operatorname{span}(\mathbf{a})$, [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-56|LADR 6.56]], and $\mathbf{b} = \operatorname{proj}_{\mathbf{a}}\mathbf{b} + (\mathbf{b} - \operatorname{proj}_{\mathbf{a}}\mathbf{b})$ is the orthogonal decomposition of [[§19 Inner Products and Norms#^ladr-6-13|LADR 6.13]]. The foot $S$ is the point of the line closest to $R$: [[§21 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
@@ -322,7 +322,7 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 > [!example] Example §82.4: Projections
 > **(a)** Find the scalar and vector projections of $\mathbf{b} = \langle 1, 1, 2 \rangle$ onto $\mathbf{a} = \langle -2, 3, 1 \rangle$.
 >
-> Here $|\mathbf{a}| = \sqrt{4 + 9 + 1} = \sqrt{14}$ and $\mathbf{a} \cdot \mathbf{b} = (-2)(1) + 3(1) + 1(2) = 3$, so by Theorem §82.6
+> Here $|\mathbf{a}| = \sqrt{4 + 9 + 1} = \sqrt{14}$ and $\mathbf{a} \cdot \mathbf{b} = (-2)(1) + 3(1) + 1(2) = 3$, so by [[§82 The Dot Product#^thm-82-6|Theorem §82.6]]
 >
 > $$
 > \operatorname{comp}_{\mathbf{a}}\mathbf{b} = \frac{3}{\sqrt{14}}, \qquad \operatorname{proj}_{\mathbf{a}}\mathbf{b} = \frac{3}{\sqrt{14}}\,\frac{\mathbf{a}}{|\mathbf{a}|} = \frac{3}{14}\,\mathbf{a} = \Big\langle -\frac37, \frac{9}{14}, \frac{3}{14} \Big\rangle .
@@ -368,14 +368,14 @@ The dot product multiplies two vectors and returns a number: multiply correspond
 ^prop-82-7
 
 > [!proof]+ Proof
-> By Definition §82.6 and Theorem §82.2, $W = |\mathbf{F}|\,|\mathbf{D}|\cos\theta = \mathbf{F} \cdot \mathbf{D}$.
+> By [[§82 The Dot Product#^def-82-6|Definition §82.6]] and [[§82 The Dot Product#^thm-82-2|Theorem §82.2]], $W = |\mathbf{F}|\,|\mathbf{D}|\cos\theta = \mathbf{F} \cdot \mathbf{D}$.
 
 ^pf-82-7
 
 *Uses:* [[§82 The Dot Product#^def-82-6|Def. §82.6]], [[§82 The Dot Product#^thm-82-2|§82.2]]
 
 > [!example] Example §82.5: Computing Work
-> **(a)** A wagon is pulled $100$ m along a horizontal path by a constant force of $70$ N, the handle held at $35^\circ$ above the horizontal. By Proposition §82.7,
+> **(a)** A wagon is pulled $100$ m along a horizontal path by a constant force of $70$ N, the handle held at $35^\circ$ above the horizontal. By [[§82 The Dot Product#^prop-82-7|Proposition §82.7]],
 >
 > $$
 > W = \mathbf{F} \cdot \mathbf{D} = |\mathbf{F}|\,|\mathbf{D}|\cos 35^\circ = (70)(100)\cos 35^\circ \approx 5734\ \text{N}\cdot\text{m} = 5734\ \text{J} .

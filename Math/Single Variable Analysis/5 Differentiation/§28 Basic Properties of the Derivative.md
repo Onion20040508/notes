@@ -48,6 +48,8 @@ tags: [real-analysis, math451]
 
 ^ex-28-1
 
+*Chain: earlier in [[§8 A Discussion About Proofs#^ex-8-8|Example §8.8]] · [[§22a The Square Root Function]]*
+
 > [!example] Example §28.2: The Power Function
 > Show $f(x) = x^n$ is differentiable with $f'(x) = n x^{n-1}$. We all know the formula — but how to *find* it? Factor:
 >

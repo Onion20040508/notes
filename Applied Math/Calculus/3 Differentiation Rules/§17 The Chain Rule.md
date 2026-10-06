@@ -89,19 +89,19 @@ The proof rests on a reformulation of differentiability.
 > \Delta u = g(a + \Delta x) - g(a), \qquad \Delta y = f(b + \Delta u) - f(b) = f(g(a + \Delta x)) - f(g(a)) .
 > $$
 >
-> By Lemma §17.1 applied to $g$ at $a$,
+> By [[§17 The Chain Rule#^lem-17-1|Lemma §17.1]] applied to $g$ at $a$,
 >
 > $$
 > \Delta u = g'(a)\,\Delta x + \varepsilon_1\,\Delta x = [g'(a) + \varepsilon_1]\,\Delta x , \qquad (7)
 > $$
 >
-> where $\varepsilon_1 \to 0$ as $\Delta x \to 0$. By Lemma §17.1 applied to $f$ at $b$,
+> where $\varepsilon_1 \to 0$ as $\Delta x \to 0$. By [[§17 The Chain Rule#^lem-17-1|Lemma §17.1]] applied to $f$ at $b$,
 >
 > $$
 > \Delta y = f'(b)\,\Delta u + \varepsilon_2\,\Delta u = [f'(b) + \varepsilon_2]\,\Delta u , \qquad (8)
 > $$
 >
-> where $\varepsilon_2$ is a function of $\Delta u$ that is continuous at $\Delta u = 0$ with value $0$ there. Equation 8 holds also when $\Delta u = 0$; this is why Lemma §17.1 sets $\varepsilon = 0$ at $0$. Substituting (7) into (8),
+> where $\varepsilon_2$ is a function of $\Delta u$ that is continuous at $\Delta u = 0$ with value $0$ there. Equation 8 holds also when $\Delta u = 0$; this is why [[§17 The Chain Rule#^lem-17-1|Lemma §17.1]] sets $\varepsilon = 0$ at $0$. Substituting (7) into (8),
 >
 > $$
 > \Delta y = [f'(b) + \varepsilon_2][g'(a) + \varepsilon_1]\,\Delta x, \qquad\text{so}\qquad \frac{\Delta y}{\Delta x} = [f'(b) + \varepsilon_2][g'(a) + \varepsilon_1] \quad (\Delta x \ne 0) .
@@ -118,12 +118,12 @@ The proof rests on a reformulation of differentiability.
 *Uses:* [[§17 The Chain Rule#^lem-17-1|§17.1]], [[§10 Continuity#^thm-10-7|§10.7]], [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Laws 1 and 4)
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$ (in 451 the inner function is $f$, so this is the point $b = g(a)$ here), which is $f'(b) + \varepsilon_2$ in the proof of Theorem §17.2.
+> - Rigorous treatment: [[§28 Basic Properties of the Derivative#^thm-28-3|451 Thm. §28.3]]. Its first proof is the tempting argument (3) and fails for the same reason; its second proof replaces $\Delta y / \Delta u$ by a function that is continuous at $f(a)$ (in 451 the inner function is $f$, so this is the point $b = g(a)$ here), which is $f'(b) + \varepsilon_2$ in the proof of [[§17 The Chain Rule#^thm-17-2|Theorem §17.2]].
 > - Several variables: [[§6 Differentiability#^thm-6-9|452 Thm. §6.9]], and in Calculus [[§94 The Chain Rule#^thm-94-3|Theorem §94.3]] (Stewart 14.5).
 > - Complex-variables version: [[§20 Rules for Differentiation#^thm-20-4|342 Thm. §20.4]] (the same formula for complex derivatives).
 
 > [!remark] Remark: Reading the Leibniz Form
-> Formula 2 is easy to remember: think of $dy/du$ and $du/dx$ as quotients and "cancel" $du$. But $du$ has not been defined, and $du/dx$ is not an actual quotient. Also, $dy/dx$ and $dy/du$ are different derivatives of the same quantity $y$: in $dy/dx$, $y$ is a function of $x$ ($y = \sqrt{x^2 + 1}$ in Example §17.1); in $dy/du$, $y$ is a function of $u$ ($y = \sqrt{u}$). So
+> Formula 2 is easy to remember: think of $dy/du$ and $du/dx$ as quotients and "cancel" $du$. But $du$ has not been defined, and $du/dx$ is not an actual quotient. Also, $dy/dx$ and $dy/du$ are different derivatives of the same quantity $y$: in $dy/dx$, $y$ is a function of $x$ ($y = \sqrt{x^2 + 1}$ in [[§17 The Chain Rule#^ex-17-1|Example §17.1]]); in $dy/du$, $y$ is a function of $u$ ($y = \sqrt{u}$). So
 >
 > $$
 > \frac{dy}{dx} = F'(x) = \frac{x}{\sqrt{x^2 + 1}} \qquad\text{whereas}\qquad \frac{dy}{du} = f'(u) = \frac{1}{2\sqrt{u}} .
@@ -197,7 +197,7 @@ The proof rests on a reformulation of differentiability.
 
 ## Special Cases
 
-In Example §17.2(a) the Chain Rule was combined with the rule for sine. The same combination works for every differentiation formula.
+In [[§17 The Chain Rule#^ex-17-2|Example §17.2]](a) the Chain Rule was combined with the rule for sine. The same combination works for every differentiation formula.
 
 > [!theorem] Corollary §17.3: The Power Rule Combined with the Chain Rule
 > If $n$ is any real number and $u = g(x)$ is differentiable, then
@@ -225,7 +225,7 @@ In Example §17.2(a) the Chain Rule was combined with the rule for sine. The sam
 
 *Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-2|§14.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-6|§19.6]] (Power Rule, general version)
 
-Example §17.1 is the case $n = \frac12$. For instance, $\frac{d}{dx}(x^3 - 1)^{100} = 100(x^3 - 1)^{99} \cdot 3x^2 = 300x^2(x^3 - 1)^{99}$.
+[[§17 The Chain Rule#^ex-17-1|Example §17.1]] is the case $n = \frac12$. For instance, $\frac{d}{dx}(x^3 - 1)^{100} = 100(x^3 - 1)^{99} \cdot 3x^2 = 300x^2(x^3 - 1)^{99}$.
 
 > [!theorem] Corollary §17.4: Sine and the Exponential of a Function
 > If $u$ is a differentiable function of $x$, then
@@ -252,7 +252,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 > [!example] Example §17.3: Combining with the Product and Quotient Rules
 > **(a)** Find the derivative of $g(t) = \left( \dfrac{t - 2}{2t + 1} \right)^9$.
 >
-> By Corollary §17.3 and then the Quotient Rule,
+> By [[§17 The Chain Rule#^cor-17-3|Corollary §17.3]] and then the Quotient Rule,
 >
 > $$
 > g'(t) = 9 \left( \frac{t - 2}{2t + 1} \right)^8 \frac{d}{dt} \left( \frac{t - 2}{2t + 1} \right)
@@ -314,7 +314,7 @@ For instance, $\frac{d}{dx}(e^{\sin x}) = e^{\sin x} \cos x$.
 ^thm-17-5
 
 > [!proof]+ Proof
-> Since $e^{\ln b} = b$, we can write $b^x = (e^{\ln b})^x = e^{(\ln b)x}$ ([[§5 Inverse Functions and Logarithms#^prop-5-7|Proposition §5.7]], Equation 1.5.10). By Corollary §17.4 with $u = (\ln b)x$, and because $\ln b$ is a constant,
+> Since $e^{\ln b} = b$, we can write $b^x = (e^{\ln b})^x = e^{(\ln b)x}$ ([[§5 Inverse Functions and Logarithms#^prop-5-7|Proposition §5.7]], Equation 1.5.10). By [[§17 The Chain Rule#^cor-17-4|Corollary §17.4]] with $u = (\ln b)x$, and because $\ln b$ is a constant,
 >
 > $$
 > \frac{d}{dx}(b^x) = \frac{d}{dx}\big(e^{(\ln b)x}\big) = e^{(\ln b)x} \frac{d}{dx}\big[(\ln b)x\big] = e^{(\ln b)x} (\ln b) = b^x \ln b .

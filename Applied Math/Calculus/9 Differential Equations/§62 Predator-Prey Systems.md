@@ -113,13 +113,13 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 >
 > So the equilibrium populations are $80$ wolves and $1000$ rabbits: $1000$ rabbits are just enough to support a constant wolf population of $80$. There are neither too many wolves (which would mean fewer rabbits) nor too few (which would mean more rabbits).
 >
-> **(b)** By Proposition §62.1,
+> **(b)** By [[§62 Predator-Prey Systems#^prop-62-1|Proposition §62.1]],
 >
 > $$
 > \frac{dW}{dR} = \frac{dW/dt}{dR/dt} = \frac{-0.02W + 0.00002RW}{0.08R - 0.001RW} .
 > $$
 >
-> **(c)** Regarding $W$ as a function of $R$, this is a first-order differential equation, and its direction field can be drawn as in [[§58 Direction Fields and Euler's Method#^def-58-1|Definition §58.1]]. Its solution curves, sketched from the field (the phase portrait after Example §62.2), appear to be closed: travelling along one, we always return to the starting point. The equilibrium point $(1000, 80)$ lies inside all of them.
+> **(c)** Regarding $W$ as a function of $R$, this is a first-order differential equation, and its direction field can be drawn as in [[§58 Direction Fields and Euler's Method#^def-58-1|Definition §58.1]]. Its solution curves, sketched from the field (the phase portrait after [[§62 Predator-Prey Systems#^ex-62-2|Example §62.2]]), appear to be closed: travelling along one, we always return to the starting point. The equilibrium point $(1000, 80)$ lies inside all of them.
 >
 > *Stewart: Example 9.6.1(a)–(c)*
 
@@ -150,7 +150,7 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > - ODE version, for linear systems $\mathbf{x}' = A\mathbf{x}$: [[§31 Homogeneous Linear Systems with Constant Coefficients#^def-31-2|331 Def. §31.2]] (phase plane, trajectory, phase portrait), with the possible portraits near the origin classified in [[§32 Complex-Valued Eigenvalues#^thm-32-3|331 Thm. §32.3]].
 
 > [!example] Example §62.2: Rabbits and Wolves — One Cycle
-> In the system of Example §62.1, suppose that at some time there are $1000$ rabbits and $40$ wolves. (d) Draw the corresponding solution curve and use it to describe the changes in both populations. (e) Sketch $R$ and $W$ as functions of $t$.
+> In the system of [[§62 Predator-Prey Systems#^ex-62-1|Example §62.1]], suppose that at some time there are $1000$ rabbits and $40$ wolves. (d) Draw the corresponding solution curve and use it to describe the changes in both populations. (e) Sketch $R$ and $W$ as functions of $t$.
 >
 > **(d)** We need the phase trajectory through $P_0(1000, 40)$. Which way is it traversed as $t$ increases from $0$? At $P_0$,
 >
@@ -171,13 +171,13 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 ^ex-62-2
 
 ![[m233-62-1.svg]]
-*Phase portrait of the rabbit–wolf system of Examples §62.1 and §62.2. The grey arrows show the direction of $(dR/dt, dW/dt)$, so they give the direction field of $dW/dR$ and the sense of travel. The red trajectory through $P_0(1000, 40)$ is traversed counterclockwise; $R$ turns at $P_1$ and $P_3$ on the line $W = 80$, and $W$ turns at $P_2$ and $P_0$ on the line $R = 1000$. Two smaller trajectories (blue) circle the equilibrium point $(1000, 80)$ as well.*
+*Phase portrait of the rabbit–wolf system of [[§62 Predator-Prey Systems#^ex-62-1|Examples §62.1]] and §62.2. The grey arrows show the direction of $(dR/dt, dW/dt)$, so they give the direction field of $dW/dR$ and the sense of travel. The red trajectory through $P_0(1000, 40)$ is traversed counterclockwise; $R$ turns at $P_1$ and $P_3$ on the line $W = 80$, and $W$ turns at $P_2$ and $P_0$ on the line $R = 1000$. Two smaller trajectories (blue) circle the equilibrium point $(1000, 80)$ as well.*
 
 ![[m233-62-2.svg]]
 *$R(t)$ (blue, left scale) and $W(t)$ (red, right scale) for the solution with $R(0) = 1000$, $W(0) = 40$, computed numerically. One cycle takes about $T \approx 170$ months. The rabbits peak at $t_1 \approx 36$, the wolves at $t_2 \approx 63$, and the rabbits bottom out at $t_3 \approx 110$. The wolf peak trails the rabbit peak by about $27$ months, and the wolf minimum trails the rabbit minimum by about $60$ months; on average the lag is about a quarter cycle.*
 
 > [!remark]- Remark: Why the Trajectories Are Closed
-> Stewart observes that the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of Proposition §62.1 is separable ([[§59 Separable Equations#^def-59-1|Definition §59.1]]; solved by [[§59 Separable Equations#^thm-59-1|Theorem §59.1]]):
+> Stewart observes that the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of [[§62 Predator-Prey Systems#^prop-62-1|Proposition §62.1]] is separable ([[§59 Separable Equations#^def-59-1|Definition §59.1]]; solved by [[§59 Separable Equations#^thm-59-1|Theorem §59.1]]):
 >
 > $$
 > \frac{dW}{dR} = \frac{W(-r + bR)}{R(k - aW)} \quad\Longrightarrow\quad \int \frac{k - aW}{W}\,dW = \int \frac{-r + bR}{R}\,dR ,
@@ -195,14 +195,14 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 > \frac{d}{dt}H(R, W) = \Big(\frac{r}{R} - b\Big)R(k - aW) + \Big(\frac{k}{W} - a\Big)W(-r + bR) = (r - bR)(k - aW) - (k - aW)(r - bR) = 0 .
 > $$
 >
-> For the numbers of Example §62.1, exponentiating $H = \text{const}$ gives Stewart's form $\dfrac{R^{0.02}\,W^{0.08}}{e^{0.00002R}\,e^{0.001W}} = C$.
+> For the numbers of [[§62 Predator-Prey Systems#^ex-62-1|Example §62.1]], exponentiating $H = \text{const}$ gives Stewart's form $\dfrac{R^{0.02}\,W^{0.08}}{e^{0.00002R}\,e^{0.001W}} = C$.
 >
 > The function $r\ln R - bR$ increases for $R < r/b$, decreases for $R > r/b$, and tends to $-\infty$ as $R \to 0^+$ and as $R \to \infty$; the same holds for $k\ln W - aW$ about $W = k/a$. So $H$ has a single peak, at the equilibrium point $(r/b, k/a)$, and falls off in every direction. Its level curves $H = C$ (for $C$ below the peak value) are therefore closed loops around the equilibrium. A solution starting on such a loop stays on it. The loop contains no equilibrium point, so the speed $\sqrt{(dR/dt)^2 + (dW/dt)^2}$ is bounded below by a positive number on it (a continuous positive function on a closed bounded set), and the solution travels all the way around the loop in a finite time. This is why the populations are periodic. The level curve cannot be solved for $W$ as an explicit function of $R$ (or vice versa); it is defined implicitly.
 
 ^rem-62-1
 
 > [!remark]- Connections
-> - Near each point where $\partial H/\partial W \ne 0$ (that is, $W \ne k/a$), the implicit function theorem solves $H(R, W) = C$ for $W$ as a differentiable function of $R$, with $dW/dR = -H_R/H_W$, which is again the equation of Proposition §62.1: [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]].
+> - Near each point where $\partial H/\partial W \ne 0$ (that is, $W \ne k/a$), the implicit function theorem solves $H(R, W) = C$ for $W$ as a differentiable function of $R$, with $dW/dR = -H_R/H_W$, which is again the equation of [[§62 Predator-Prey Systems#^prop-62-1|Proposition §62.1]]: [[§12 The Implicit Function Theorem#^thm-12-1|452 Thm. §12.1]].
 
 ## Testing and Extending the Model
 

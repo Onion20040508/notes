@@ -104,7 +104,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 ^cor-78-2
 
 > [!proof]+ Proof
-> By Theorem §78.1, $c_n = f^{(n)}(a)/n!$ for every $n$, so the coefficients are determined by $f$ alone.
+> By [[§78 Taylor and Maclaurin Series#^thm-78-1|Theorem §78.1]], $c_n = f^{(n)}(a)/n!$ for every $n$, so the coefficients are determined by $f$ alone.
 
 ^pf-78-2
 
@@ -114,12 +114,12 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 > - Complex-variables version: [[§72★ Uniqueness of Series Representations#^thm-72-1|342 Thm. §72.1]] (a power series that converges to $f$ in a disk is the Taylor series of $f$).
 
 > [!remark] Remark: A Taylor Series Need Not Equal Its Function
-> Theorem §78.1 says: *if* $f$ has a power series representation about $a$, then that series is the Taylor series. It does not say that every function equals the sum of its Taylor series. There are functions with derivatives of all orders that are not equal to the sum of their Taylor series, such as $f(x) = e^{-1/x^2}$ for $x \ne 0$, $f(0) = 0$ (Stewart's Exercise 96): all its derivatives at $0$ are $0$, so its Maclaurin series is $0$.
+> [[§78 Taylor and Maclaurin Series#^thm-78-1|Theorem §78.1]] says: *if* $f$ has a power series representation about $a$, then that series is the Taylor series. It does not say that every function equals the sum of its Taylor series. There are functions with derivatives of all orders that are not equal to the sum of their Taylor series, such as $f(x) = e^{-1/x^2}$ for $x \ne 0$, $f(0) = 0$ (Stewart's Exercise 96): all its derivatives at $0$ are $0$, so its Maclaurin series is $0$.
 
 ^rem-78-1
 
 > [!example] Example §78.1: Maclaurin Series from the Definition
-> **(a)** $f(x) = 1/(1 - x)$ has the power series representation $\sum_{n=0}^{\infty} x^n$ for $|x| < 1$ ([[§77 Representations of Functions as Power Series#^def-77-1|Definition §77.1]]). By Theorem §78.1 this must be its Maclaurin series. To confirm:
+> **(a)** $f(x) = 1/(1 - x)$ has the power series representation $\sum_{n=0}^{\infty} x^n$ for $|x| < 1$ ([[§77 Representations of Functions as Power Series#^def-77-1|Definition §77.1]]). By [[§78 Taylor and Maclaurin Series#^thm-78-1|Theorem §78.1]] this must be its Maclaurin series. To confirm:
 >
 > $$
 > f(x) = \frac{1}{1 - x}, \quad f'(x) = \frac{1}{(1 - x)^2}, \quad f''(x) = \frac{1 \cdot 2}{(1 - x)^3}, \quad f'''(x) = \frac{1 \cdot 2 \cdot 3}{(1 - x)^4}, \quad \ldots, \quad f^{(n)}(x) = \frac{n!}{(1 - x)^{n+1}} ,
@@ -149,7 +149,7 @@ Substituting this formula for $c_n$ back into the series: *if* $f$ has a power s
 
 ## When Is a Function Represented by Its Taylor Series?
 
-By Theorem §78.1 and Example §78.1(b), *if* $e^x$ has a power series representation at $0$, it is $\sum x^n/n!$. Whether it *does* is the general question: when is a function with derivatives of all orders equal to the sum of its Taylor series?
+By [[§78 Taylor and Maclaurin Series#^thm-78-1|Theorem §78.1]] and [[§78 Taylor and Maclaurin Series#^ex-78-1|Example §78.1]](b), *if* $e^x$ has a power series representation at $0$, it is $\sum x^n/n!$. Whether it *does* is the general question: when is a function with derivatives of all orders equal to the sum of its Taylor series?
 
 > [!definition] Definition §78.2: Taylor Polynomial
 > The **$n$th-degree Taylor polynomial of $f$ at $a$** is the $n$th partial sum of the Taylor series,
@@ -193,7 +193,7 @@ By Theorem §78.1 and Example §78.1(b), *if* $e^x$ has a power series represent
 
 ^pf-78-3
 
-*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]]
+*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§78 Taylor and Maclaurin Series#^def-78-new1|Def. §78.3]], [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^thm-69-3|§69.3]]
 
 To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use the following bound.
 
@@ -244,10 +244,10 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 
 ^pf-78-4
 
-*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]]
+*Uses:* [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-6|§35.6]] (comparison property of integrals), [[§78 Taylor and Maclaurin Series#^def-78-2|Def. §78.2]], [[§78 Taylor and Maclaurin Series#^def-78-new1|Def. §78.3]]
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= Theorem §78.3).
+> - Rigorous treatment: [[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]] (Taylor's theorem with Lagrange remainder, proved from Rolle's theorem; it implies Taylor's Inequality at once and needs no continuity of $f^{(n+1)}$), and [[§31 Taylor's Theorem#^prop-31-1|451 Prop. §31.1]] (= [[§78 Taylor and Maclaurin Series#^thm-78-3|Theorem §78.3]]).
 
 > [!remark]- Remark: Formulas for the Remainder
 > As alternatives to Taylor's Inequality there are exact formulas. If $f^{(n+1)}$ is continuous on an interval $I$ containing $a$ and $x$, then
@@ -276,7 +276,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 ^prop-78-5
 
 > [!proof]+ Proof
-> By Example §78.1(b), the series $\sum x^n/n!$ converges for all $x$, so its $n$th term tends to $0$ by [[§70 Series#^thm-70-4|Theorem §70.4]].
+> By [[§78 Taylor and Maclaurin Series#^ex-78-1|Example §78.1]](b), the series $\sum x^n/n!$ converges for all $x$, so its $n$th term tends to $0$ by [[§70 Series#^thm-70-4|Theorem §70.4]].
 
 ^pf-78-5
 
@@ -312,7 +312,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 > \lim_{n \to \infty} \frac{e^d}{(n+1)!} |x|^{n+1} = e^d \lim_{n \to \infty} \frac{|x|^{n+1}}{(n+1)!} = 0 .
 > $$
 >
-> By the Squeeze Theorem, $|R_n(x)| \to 0$, and so $R_n(x) \to 0$ ([[§69 Sequences#^thm-69-5|Theorem §69.5]]), for all $|x| \le d$. Since $d$ is arbitrary, this holds for all $x$, and by Theorem §78.3 $e^x$ is the sum of its Maclaurin series.
+> By the Squeeze Theorem, $|R_n(x)| \to 0$, and so $R_n(x) \to 0$ ([[§69 Sequences#^thm-69-5|Theorem §69.5]]), for all $|x| \le d$. Since $d$ is arbitrary, this holds for all $x$, and by [[§78 Taylor and Maclaurin Series#^thm-78-3|Theorem §78.3]] $e^x$ is the sum of its Maclaurin series.
 
 ^pf-78-6
 
@@ -327,7 +327,7 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 > \sum_{n=0}^{\infty} \frac{f^{(n)}(2)}{n!} (x - 2)^n = \sum_{n=0}^{\infty} \frac{e^2}{n!} (x - 2)^n .
 > $$
 >
-> As in Example §78.1(b), the Ratio Test gives $R = \infty$ (the ratio is $|x - 2|/(n+1) \to 0$). As in Theorem §78.6, with $M = e^{2 + d}$ for $|x - 2| \le d$, $R_n(x) \to 0$, so
+> As in [[§78 Taylor and Maclaurin Series#^ex-78-1|Example §78.1]](b), the Ratio Test gives $R = \infty$ (the ratio is $|x - 2|/(n+1) \to 0$). As in [[§78 Taylor and Maclaurin Series#^thm-78-6|Theorem §78.6]], with $M = e^{2 + d}$ for $|x - 2| \le d$, $R_n(x) \to 0$, so
 >
 > $$
 > e^x = \sum_{n=0}^{\infty} \frac{e^2}{n!} (x - 2)^n \qquad \text{for all } x . \qquad (13)
@@ -353,314 +353,10 @@ To show $\lim_{n \to \infty} R_n(x) = 0$ for a specific function we usually use 
 > \sin x = \sum_{n=0}^{\infty} \frac{(-1)^n \sqrt3}{2(2n)!} \left( x - \frac{\pi}{3} \right)^{2n} + \sum_{n=0}^{\infty} \frac{(-1)^n}{2(2n+1)!} \left( x - \frac{\pi}{3} \right)^{2n+1} .
 > $$
 >
-> This holds for all $x$: every derivative of $\sin$ is $\pm\sin$ or $\pm\cos$, so $M = 1$ in Taylor's Inequality and $|R_n(x)| \le |x - \pi/3|^{n+1}/(n+1)! \to 0$ by (10), as in the proof of Theorem §78.7. The third Taylor polynomial at $\pi/3$ approximates $\sin x$ well near $\pi/3$ but not near $0$; the Maclaurin polynomial does the opposite.
+> This holds for all $x$: every derivative of $\sin$ is $\pm\sin$ or $\pm\cos$, so $M = 1$ in Taylor's Inequality and $|R_n(x)| \le |x - \pi/3|^{n+1}/(n+1)! \to 0$ by (10), as in the proof of [[§78a Taylor Series of Important Functions#^thm-78-7|Theorem §78.7]]. The third Taylor polynomial at $\pi/3$ approximates $\sin x$ well near $\pi/3$ but not near $0$; the Maclaurin polynomial does the opposite.
 >
 > *Stewart: Examples 11.10.4 and 11.10.7*
 
 ^ex-78-2
 
-## Taylor Series of Important Functions
-
-> [!theorem] Theorem §78.7: Sine
-> $$
-> \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} \qquad \text{for all } x . \qquad (15)
-> $$
->
-> *Stewart: 11.10, Equation 15 (Example 11.10.5)*
-
-^thm-78-7
-
-> [!proof]+ Proof
-> **The Maclaurin series.** Arrange the computation in two columns:
->
-> $$
-> \begin{aligned}
-> f(x) &= \sin x & f(0) &= 0 \\
-> f'(x) &= \cos x & f'(0) &= 1 \\
-> f''(x) &= -\sin x & f''(0) &= 0 \\
-> f'''(x) &= -\cos x & f'''(0) &= -1 \\
-> f^{(4)}(x) &= \sin x & f^{(4)}(0) &= 0
-> \end{aligned}
-> $$
->
-> The derivatives repeat in a cycle of four, so the Maclaurin series is
->
-> $$
-> f(0) + \frac{f'(0)}{1!} x + \frac{f''(0)}{2!} x^2 + \frac{f'''(0)}{3!} x^3 + \cdots = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} .
-> $$
->
-> **It represents $\sin x$.** $f^{(n+1)}(x)$ is $\pm\sin x$ or $\pm\cos x$, so $|f^{(n+1)}(x)| \le 1$ for all $x$, and we can take $M = 1$ in Taylor's Inequality:
->
-> $$
-> |R_n(x)| \le \frac{M}{(n+1)!} |x^{n+1}| = \frac{|x|^{n+1}}{(n+1)!} . \qquad (14)
-> $$
->
-> By (10) the right side tends to $0$ as $n \to \infty$, so $|R_n(x)| \to 0$ by the Squeeze Theorem, and $R_n(x) \to 0$. By Theorem §78.3, $\sin x$ is equal to the sum of its Maclaurin series, for all $x$.
-
-^pf-78-7
-
-*Uses:* [[§78 Taylor and Maclaurin Series#^thm-78-4|§78.4]], [[§78 Taylor and Maclaurin Series#^prop-78-5|§78.5]], [[§78 Taylor and Maclaurin Series#^thm-78-3|§78.3]], [[§69 Sequences#^thm-69-4|§69.4]], [[§16 Derivatives of Trigonometric Functions#^thm-16-1|§16.1]], [[§16 Derivatives of Trigonometric Functions#^thm-16-2|§16.2]] (derivatives of sine and cosine)
-
-![[m233-78-1.svg]]
-*$\sin x$ (black) and its Maclaurin polynomials $T_1(x) = x$, $T_3(x) = x - \frac{x^3}{3!}$, $T_5$ and $T_9$. Each polynomial follows the sine curve on a larger interval around $0$ before it breaks away: for fixed $x$ the error $|R_n(x)| \le |x|^{n+1}/(n+1)!$ tends to $0$, but more slowly for larger $|x|$.*
-
-> [!theorem] Theorem §78.8: Cosine
-> $$
-> \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} \qquad \text{for all } x . \qquad (16)
-> $$
->
-> *Stewart: 11.10, Equation 16 (Example 11.10.6)*
-
-^thm-78-8
-
-> [!proof]+ Proof
-> One could proceed directly as for sine, but it is easier to differentiate the Maclaurin series for $\sin x$ term by term ([[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]]):
->
-> $$
-> \cos x = \frac{d}{dx} (\sin x) = \frac{d}{dx} \left( x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots \right) = 1 - \frac{3x^2}{3!} + \frac{5x^4}{5!} - \frac{7x^6}{7!} + \cdots = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
-> $$
->
-> since $(2n+1)/(2n+1)! = 1/(2n)!$. By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]] the differentiated series converges to the derivative of $\sin x$, namely $\cos x$, and its radius of convergence is unchanged, so it converges for all $x$.
-
-^pf-78-8
-
-*Uses:* [[§78 Taylor and Maclaurin Series#^thm-78-7|§78.7]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]]
-
-> [!remark]- Connections
-> - Rigorous treatment of (11), (15) and (16): [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (cosine and $e^x$ through the remainder, as here). In 451 the series can instead serve as *definitions* of sine and cosine: [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]].
-> - See also: [[§53 Complex Numbers#^rem-53-1|235 Remark: Euler's Formula]] ($e^{i\varphi} = \cos\varphi + i\sin\varphi$ by splitting the series (11) at $x = i\varphi$ into the series (16) and (15)), and [[§38 Applications to Differential Equations#^def-38-3|235 Def. §38.3]] (the complex exponential $e^{(a+bi)t} = e^{at}(\cos bt + i\sin bt)$, used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$).
-> - ODE version: [[§15 Complex Roots of the Characteristic Equation#^def-15-1|331 Def. §15.1]] (Euler's formula, motivated by these three series in [[§15 Complex Roots of the Characteristic Equation#^rem-15-1|331 Remark: Where Euler's Formula Comes From]]) and [[§33★ Fundamental Matrices#^def-33-3|331 Def. §33.3]] (the matrix exponential, the series (11) with $\mathbf{A}t$ in place of $x$, which converges and satisfies $\Phi' = \mathbf{A}\Phi$ by [[§33★ Fundamental Matrices#^thm-33-3|331 Thm. §33.3]]).
-> - Complex-variables version: [[§64 Examples (Proof of Taylor's Theorem)#^prop-64-1|342 Prop. §64.1]] (the series (11), (15) and (16) for complex $z$, proved by [[Taylor's Theorem for Analytic Functions|Taylor's theorem for analytic functions]]); splitting (11) at $z = i\theta$ gives Euler's formula, [[§7 Exponential Form#^def-7-2|342 Def. §7.2]].
-
-These series, found by Newton by other methods, say that everything about $e^x$, $\sin x$ and $\cos x$ is determined by their derivatives at the single number $0$.
-
-> [!definition] Definition §78.3: Binomial Coefficients
-> For any real number $k$ and integer $n \ge 0$, the **binomial coefficients** are
->
-> $$
-> \binom{k}{n} = \frac{k(k-1)(k-2)\cdots(k - n + 1)}{n!} , \qquad \binom{k}{0} = 1 .
-> $$
->
-> *Stewart: 11.10 (text)*
-
-^def-78-3
-
-> [!definition] Definition §78.4: Binomial Series
-> The **binomial series** is the Maclaurin series of $(1 + x)^k$, which is $\sum_{n=0}^{\infty} \binom{k}{n} x^n$ (Theorem §78.9).
->
-> *Stewart: 11.10 (text)*
-
-^def-78-new2
-
-> [!theorem] Theorem §78.9: The Binomial Series
-> If $k$ is any real number and $|x| < 1$, then
->
-> $$
-> (1 + x)^k = \sum_{n=0}^{\infty} \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!} x^2 + \frac{k(k-1)(k-2)}{3!} x^3 + \cdots \qquad (17)
-> $$
->
-> If $k$ is a nonnegative integer, $\binom{k}{n} = 0$ for $n > k$ (the numerator contains the factor $k - k$), the series terminates, and (17) is the ordinary Binomial Theorem ([[Binomial Theorem|250 Thm. §12.10]]). At the endpoints the series converges at $x = 1$ if $-1 < k \le 0$, and at both endpoints if $k \ge 0$.
->
-> *Stewart: 11.10, The Binomial Series 17 (Example 11.10.8)*
-
-^thm-78-9
-
-> [!proof]+ Proof
-> **The Maclaurin series** (Stewart's Example 8). Computing derivatives,
->
-> $$
-> \begin{aligned}
-> f(x) &= (1 + x)^k & f(0) &= 1 \\
-> f'(x) &= k(1 + x)^{k-1} & f'(0) &= k \\
-> f''(x) &= k(k-1)(1 + x)^{k-2} & f''(0) &= k(k-1) \\
-> f'''(x) &= k(k-1)(k-2)(1 + x)^{k-3} & f'''(0) &= k(k-1)(k-2) \\
-> f^{(n)}(x) &= k(k-1)\cdots(k - n + 1)(1 + x)^{k-n} & f^{(n)}(0) &= k(k-1)\cdots(k - n + 1)
-> \end{aligned}
-> $$
->
-> so the Maclaurin series of $(1 + x)^k$ is $\displaystyle\sum_{n=0}^{\infty} \frac{k(k-1)\cdots(k - n + 1)}{n!} x^n = \sum_{n=0}^{\infty} \binom{k}{n} x^n$.
->
-> **Radius of convergence.** If $k$ is a nonnegative integer the series is finite. Otherwise no term is $0$, and with $a_n = \binom{k}{n} x^n$,
->
-> $$
-> \left| \frac{a_{n+1}}{a_n} \right| = \left| \frac{k(k-1)\cdots(k - n + 1)(k - n) x^{n+1}}{(n+1)!} \cdot \frac{n!}{k(k-1)\cdots(k - n + 1) x^n} \right| = \frac{|k - n|}{n + 1} |x| = \frac{\left| 1 - \dfrac kn \right|}{1 + \dfrac1n} |x| \to |x| .
-> $$
->
-> By the Ratio Test the series converges if $|x| < 1$ and diverges if $|x| > 1$.
->
-> **The sum is $(1 + x)^k$.** Stewart notes that showing $R_n(x) \to 0$ is quite difficult and outlines an easier proof in Exercise 97, which we carry out. Let $g(x) = \sum_{n=0}^{\infty} \binom{k}{n} x^n$ for $|x| < 1$. By [[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]], $g'(x) = \sum_{n=1}^{\infty} n \binom{k}{n} x^{n-1}$, so
->
-> $$
-> (1 + x) g'(x) = \sum_{n=0}^{\infty} (n+1) \binom{k}{n+1} x^n + \sum_{n=0}^{\infty} n \binom{k}{n} x^n = \sum_{n=0}^{\infty} \left[ (k - n) \binom{k}{n} + n \binom{k}{n} \right] x^n = k\, g(x) ,
-> $$
->
-> using $(n+1)\binom{k}{n+1} = (k - n)\binom{k}{n}$, which is the definition of $\binom{k}{n+1}$. Now let $h(x) = (1 + x)^{-k} g(x)$. Then
->
-> $$
-> h'(x) = -k(1 + x)^{-k-1} g(x) + (1 + x)^{-k} g'(x) = (1 + x)^{-k-1} \big[ (1 + x) g'(x) - k\,g(x) \big] = 0 ,
-> $$
->
-> so $h$ is constant on $(-1, 1)$ ([[§26 The Mean Value Theorem#^thm-26-3|Theorem §26.3]]), and $h(x) = h(0) = g(0) = 1$. Hence $g(x) = (1 + x)^k$ for $|x| < 1$.
->
-> (The endpoint behavior stated in the theorem is quoted from Stewart without proof.)
-
-^pf-78-9
-
-*Uses:* [[§78 Taylor and Maclaurin Series#^def-78-1|Def. §78.1]], [[§78 Taylor and Maclaurin Series#^def-78-3|Def. §78.3]], [[§74 The Ratio and Root Tests#^thm-74-1|§74.1]], [[§77 Representations of Functions as Power Series#^thm-77-1|§77.1]], [[§26 The Mean Value Theorem#^thm-26-3|§26.3]] (a function with zero derivative is constant)
-
-> [!remark] Remark: Important Maclaurin Series
-> For future reference (Stewart's Table 1), the Maclaurin series found here and in [[§77 Representations of Functions as Power Series|§77]], with their radii of convergence:
->
-> $$
-> \begin{aligned}
-> \frac{1}{1 - x} &= \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots & R &= 1 \\
-> e^x &= \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots & R &= \infty \\
-> \sin x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots & R &= \infty \\
-> \cos x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots & R &= \infty \\
-> \tan^{-1} x &= \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \cdots & R &= 1 \\
-> \ln(1 + x) &= \sum_{n=1}^{\infty} (-1)^{n-1} \frac{x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdots & R &= 1 \\
-> (1 + x)^k &= \sum_{n=0}^{\infty} \binom{k}{n} x^n = 1 + kx + \frac{k(k-1)}{2!} x^2 + \frac{k(k-1)(k-2)}{3!} x^3 + \cdots & R &= 1
-> \end{aligned}
-> $$
-
-^rem-78-3
-
-## New Taylor Series from Old
-
-By Corollary §78.2, however a power series representation of $f$ is obtained, it is the Taylor series of $f$. So new Taylor series can be found by manipulating the series in the table instead of using the coefficient formula. As in [[§77 Representations of Functions as Power Series|§77]], we can replace $x$ by an expression $c x^m$, multiply or divide by such an expression, and differentiate or integrate term by term. Series can also be added and subtracted ([[§70 Series#^thm-70-6|Theorem §70.6]]), multiplied and divided.
-
-> [!theorem] Theorem §78.10: Multiplying and Dividing Power Series
-> If $f(x) = \sum c_n x^n$ and $g(x) = \sum b_n x^n$ both converge for $|x| < R$, and the series are multiplied as if they were polynomials, the resulting series also converges for $|x| < R$ and represents $f(x) g(x)$. For division, if $b_0 \ne 0$, the series obtained by long division converges to $f(x)/g(x)$ for sufficiently small $|x|$.
->
-> *Stewart: 11.10 (text)*
-
-^thm-78-10
-
-*Stewart states this without proof ("there is a theorem which states that"); it is not proved in 451.*
-
-> [!remark]- Connections
-> - Complex-variables version: [[§73★ Multiplication and Division of Power Series#^thm-73-2|342 Thm. §73.2]] (the Cauchy product converges to $fg$) and [[§73★ Multiplication and Division of Power Series#^prop-73-3|342 Prop. §73.3]] (division), both proved there.
-
-> [!example] Example §78.3: Substituting, Multiplying, Recognizing
-> **(a)** Find the Maclaurin series and radius of convergence of $f(x) = 1/\sqrt{4 - x}$.
->
-> Rewrite $f$ so that the binomial series applies:
->
-> $$
-> \frac{1}{\sqrt{4 - x}} = \frac{1}{\sqrt{4\left( 1 - \dfrac x4 \right)}} = \frac{1}{2\sqrt{1 - \dfrac x4}} = \frac12 \left( 1 - \frac x4 \right)^{-1/2} .
-> $$
->
-> Use the binomial series with $k = -\frac12$ and $x$ replaced by $-x/4$:
->
-> $$
-> \frac{1}{\sqrt{4 - x}} = \frac12 \sum_{n=0}^{\infty} \binom{-\frac12}{n} \left( -\frac x4 \right)^n = \frac12 \left[ 1 + \left( -\frac12 \right)\left( -\frac x4 \right) + \frac{\left( -\frac12 \right)\left( -\frac32 \right)}{2!} \left( -\frac x4 \right)^2 + \frac{\left( -\frac12 \right)\left( -\frac32 \right)\left( -\frac52 \right)}{3!} \left( -\frac x4 \right)^3 + \cdots \right] .
-> $$
->
-> In the $n$th term, the $n$ factors $-\frac12, -\frac32, \ldots, -\frac{2n-1}{2}$ give $(-1)^n \frac{1 \cdot 3 \cdots (2n-1)}{2^n}$, and $(-x/4)^n = (-1)^n x^n / 4^n$; the signs cancel and $2^n 4^n = 8^n$. So
->
-> $$
-> \frac{1}{\sqrt{4 - x}} = \frac12 \left[ 1 + \frac18 x + \frac{1 \cdot 3}{2!\,8^2} x^2 + \frac{1 \cdot 3 \cdot 5}{3!\,8^3} x^3 + \cdots + \frac{1 \cdot 3 \cdot 5 \cdots (2n-1)}{n!\,8^n} x^n + \cdots \right] .
-> $$
->
-> By (17) this converges when $|-x/4| < 1$, that is, $|x| < 4$: $R = 4$.
->
-> **(b)** Find the Maclaurin series for $x \cos x$ and for $\ln(1 + 3x^2)$.
->
-> Multiplying the series for $\cos x$ by $x$:
->
-> $$
-> x \cos x = x \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!} = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n)!} \qquad \text{for all } x .
-> $$
->
-> Replacing $x$ by $3x^2$ in the series for $\ln(1 + x)$:
->
-> $$
-> \ln(1 + 3x^2) = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{(3x^2)^n}{n} = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{3^n x^{2n}}{n} .
-> $$
->
-> This converges for $|3x^2| < 1$, that is, $|x| < 1/\sqrt3$: $R = 1/\sqrt3$.
->
-> **(c)** Find the function represented by $\displaystyle\sum_{n=0}^{\infty} (-1)^n \frac{2^n x^n}{n!}$.
->
-> $\displaystyle\sum_{n=0}^{\infty} (-1)^n \frac{2^n x^n}{n!} = \sum_{n=0}^{\infty} \frac{(-2x)^n}{n!}$ is the series for $e^x$ with $x$ replaced by $-2x$, so it represents $e^{-2x}$.
->
-> **(d)** Find the sum of $\dfrac{1}{1 \cdot 2} - \dfrac{1}{2 \cdot 2^2} + \dfrac{1}{3 \cdot 2^3} - \dfrac{1}{4 \cdot 2^4} + \cdots$.
->
-> In sigma notation, $\displaystyle\sum_{n=1}^{\infty} (-1)^{n-1} \frac{1}{n \cdot 2^n} = \sum_{n=1}^{\infty} (-1)^{n-1} \frac{\left( \frac12 \right)^n}{n}$, which is the series for $\ln(1 + x)$ at $x = \frac12$ (inside $|x| < 1$). So the sum is $\ln\left( 1 + \frac12 \right) = \ln\frac32$.
->
-> *Stewart: Examples 11.10.9–11.10.12*
-
-^ex-78-3
-
-> [!example] Example §78.4: Integrals and Limits by Series
-> **(a)** Evaluate $\int e^{-x^2}\,dx$ as an infinite series, and **(b)** evaluate $\int_0^1 e^{-x^2}\,dx$ correct to within an error of $0.001$.
->
-> $e^{-x^2}$ has no elementary antiderivative ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]); following Newton, expand and integrate term by term. Replacing $x$ by $-x^2$ in the series for $e^x$, for all $x$,
->
-> $$
-> e^{-x^2} = \sum_{n=0}^{\infty} \frac{(-x^2)^n}{n!} = \sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{n!} = 1 - \frac{x^2}{1!} + \frac{x^4}{2!} - \frac{x^6}{3!} + \cdots
-> $$
->
-> **(a)** Integrating term by term,
->
-> $$
-> \int e^{-x^2}\,dx = C + x - \frac{x^3}{3 \cdot 1!} + \frac{x^5}{5 \cdot 2!} - \frac{x^7}{7 \cdot 3!} + \cdots + (-1)^n \frac{x^{2n+1}}{(2n+1)\,n!} + \cdots ,
-> $$
->
-> which converges for all $x$ because the series for $e^{-x^2}$ does.
->
-> **(b)** By the Fundamental Theorem of Calculus, with $C = 0$,
->
-> $$
-> \int_0^1 e^{-x^2}\,dx = \left[ x - \frac{x^3}{3 \cdot 1!} + \frac{x^5}{5 \cdot 2!} - \frac{x^7}{7 \cdot 3!} + \frac{x^9}{9 \cdot 4!} - \cdots \right]_0^1 = 1 - \frac13 + \frac{1}{10} - \frac{1}{42} + \frac{1}{216} - \cdots \approx 0.7475 ,
-> $$
->
-> stopping after $\frac{1}{216}$. The series is alternating with decreasing terms, so by the Alternating Series Estimation Theorem the error is less than the next term, $\dfrac{1}{11 \cdot 5!} = \dfrac{1}{1320} < 0.001$.
->
-> **(c)** Evaluate $\displaystyle\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$.
->
-> By the Maclaurin series for $e^x$,
->
-> $$
-> \frac{e^x - 1 - x}{x^2} = \frac{\left( 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \right) - 1 - x}{x^2} = \frac{1}{x^2} \left( \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots \right) = \frac{1}{2!} + \frac{x}{3!} + \frac{x^2}{4!} + \cdots
-> $$
->
-> for $x \ne 0$. The right side is a power series, hence continuous ([[§77 Representations of Functions as Power Series#^thm-77-1|Theorem §77.1]]), so
->
-> $$
-> \lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \frac{1}{2!} + 0 + 0 + \cdots = \frac12 .
-> $$
->
-> ([[§28 Indeterminate Forms and L'Hospital's Rule#^thm-28-2|L'Hospital's Rule]], applied twice, gives the same.)
->
-> *Stewart: Examples 11.10.13 and 11.10.14*
-
-^ex-78-4
-
-> [!example] Example §78.5: Multiplying and Dividing Series
-> Find the first three nonzero terms in the Maclaurin series for **(a)** $e^x \sin x$ and **(b)** $\tan x$.
->
-> **(a)** Multiply the series, collecting like terms as for polynomials (Theorem §78.10):
->
-> $$
-> e^x \sin x = \left( 1 + x + \tfrac12 x^2 + \tfrac16 x^3 + \cdots \right)\left( x - \tfrac16 x^3 + \cdots \right) .
-> $$
->
-> Multiplying by $x$ gives $x + x^2 + \frac12 x^3 + \frac16 x^4 + \cdots$, and by $-\frac16 x^3$ gives $-\frac16 x^3 - \frac16 x^4 - \cdots$. Adding, the $x^3$ coefficient is $\frac12 - \frac16 = \frac13$:
->
-> $$
-> e^x \sin x = x + x^2 + \tfrac13 x^3 + \cdots
-> $$
->
-> **(b)** $\tan x = \dfrac{\sin x}{\cos x} = \dfrac{x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots}{1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots}$. Divide as in long division of polynomials, by $1 - \frac12 x^2 + \frac{1}{24} x^4 - \cdots$:
-> - First quotient term $x$: subtract $x\left( 1 - \frac12 x^2 + \frac{1}{24} x^4 \right) = x - \frac12 x^3 + \frac{1}{24} x^5$ from $x - \frac16 x^3 + \frac{1}{120} x^5$, leaving $\frac13 x^3 - \frac{1}{30} x^5 + \cdots$ (as $-\frac16 + \frac12 = \frac13$ and $\frac{1}{120} - \frac{1}{24} = -\frac{1}{30}$).
-> - Next term $\frac13 x^3$: subtract $\frac13 x^3 - \frac16 x^5 + \cdots$, leaving $\left( -\frac{1}{30} + \frac16 \right) x^5 = \frac{2}{15} x^5 + \cdots$.
-> - Next term $\frac{2}{15} x^5$.
->
-> $$
-> \tan x = x + \tfrac13 x^3 + \tfrac{2}{15} x^5 + \cdots
-> $$
->
-> *Stewart: Example 11.10.15*
-
-^ex-78-5
+*The section continues in [[§78a Taylor Series of Important Functions]].*

@@ -45,6 +45,19 @@ Rotating the region under $y = 2x^2 - x^3$ about the $y$-axis produces a solid w
 
 Now let $S$ be the solid obtained by rotating about the $y$-axis the region bounded by $y = f(x)$ (where $f(x) \ge 0$), $y = 0$, $x = a$ and $x = b$, where $b > a \ge 0$.
 
+> [!remark] Remark: Why It Works
+> Divide $[a, b]$ into $n$ subintervals $[x_{i-1}, x_i]$ of equal width $\Delta x$, and let $\bar x_i$ be the midpoint of the $i$th one. Rotating the rectangle with base $[x_{i-1}, x_i]$ and height $f(\bar x_i)$ about the $y$-axis gives a cylindrical shell with average radius $\bar x_i$, height $f(\bar x_i)$ and thickness $\Delta x$. By [[§41 Volumes by Cylindrical Shells#^thm-41-1|Theorem §41.1]] its volume is
+>
+> $$
+> V_i = (2\pi \bar x_i)\,[f(\bar x_i)]\,\Delta x ,
+> \qquad\text{so}\qquad
+> V \approx \sum_{i=1}^{n} V_i = \sum_{i=1}^{n} 2\pi \bar x_i f(\bar x_i)\,\Delta x .
+> $$
+>
+> The approximation improves as $n \to \infty$, and by the definition of the integral the right side tends to $\int_a^b 2\pi x f(x)\,dx$. This makes the formula plausible. It does not prove it, because volume was *defined* by slicing perpendicular to an axis ([[§40 Volumes#^def-40-2|Definition §40.2]]), not by shells.
+
+^rem-41-1
+
 > [!theorem] Theorem §41.2: The Shell Method
 > The volume of the solid obtained by rotating about the $y$-axis the region under the curve $y = f(x)$ from $a$ to $b$ is
 >
@@ -61,19 +74,6 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 > *Stewart: 6.3, Formula 2*
 
 ^thm-41-2
-
-> [!remark] Remark: Why It Works
-> Divide $[a, b]$ into $n$ subintervals $[x_{i-1}, x_i]$ of equal width $\Delta x$, and let $\bar x_i$ be the midpoint of the $i$th one. Rotating the rectangle with base $[x_{i-1}, x_i]$ and height $f(\bar x_i)$ about the $y$-axis gives a cylindrical shell with average radius $\bar x_i$, height $f(\bar x_i)$ and thickness $\Delta x$. By Theorem §41.1 its volume is
->
-> $$
-> V_i = (2\pi \bar x_i)\,[f(\bar x_i)]\,\Delta x ,
-> \qquad\text{so}\qquad
-> V \approx \sum_{i=1}^{n} V_i = \sum_{i=1}^{n} 2\pi \bar x_i f(\bar x_i)\,\Delta x .
-> $$
->
-> The approximation improves as $n \to \infty$, and by the definition of the integral the right side tends to $\int_a^b 2\pi x f(x)\,dx$. This makes the formula plausible. It does not prove it, because volume was *defined* by slicing perpendicular to an axis ([[§40 Volumes#^def-40-2|Definition §40.2]]), not by shells.
-
-^rem-41-1
 
 > [!proof]- Proof
 > *Stewart proves the formula only later, in Exercise 7.1.81, for $f$ one-to-one, by integration by parts. This proof therefore uses a result from a later section, [[§44 Integration by Parts#^thm-44-2|Theorem §44.2]] (integration by parts for definite integrals); that theorem rests only on the Product Rule and FTC2, not on this section, so the forward reference is not circular. Here is the argument, for $f$ increasing with a continuous derivative.* Let $c = f(a)$, $d = f(b)$, and let $g = f^{-1}$, so $x = g(y)$ for $c \le y \le d$.
@@ -109,7 +109,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 *Uses:* [[§40 Volumes#^def-40-2|Def. §40.2]], [[§38 The Substitution Rule#^thm-38-3|§38.3]], [[§44 Integration by Parts#^thm-44-2|§44.2]] (integration by parts; forward reference)
 
 ![[m233-41-1.svg]]
-*The shell method on Example §41.1. (a) A thin strip at distance $x$ from the $y$-axis, of height $f(x)$ and width $\Delta x$, sweeps out a cylindrical shell when rotated about the axis. (b) Cut along a vertical line and flattened, the shell is nearly a slab of length $2\pi x$ (its circumference), height $f(x)$ and thickness $\Delta x$, with volume $2\pi x f(x)\,\Delta x$.*
+*The shell method on [[§41 Volumes by Cylindrical Shells#^ex-41-1|Example §41.1]]. (a) A thin strip at distance $x$ from the $y$-axis, of height $f(x)$ and width $\Delta x$, sweeps out a cylindrical shell when rotated about the axis. (b) Cut along a vertical line and flattened, the shell is nearly a slab of length $2\pi x$ (its circumference), height $f(x)$ and thickness $\Delta x$, with volume $2\pi x f(x)\,\Delta x$.*
 
 > [!remark]- Connections
 > - The general proof: in cylindrical coordinates the solid is $\{0 \le z \le f(r),\ a \le r \le b\}$, and its volume $\int_0^{2\pi} \int_a^b \int_0^{f(r)} r\,dz\,dr\,d\theta = \int_a^b 2\pi r f(r)\,dr$ ([[§104 Triple Integrals in Cylindrical Coordinates#^thm-104-1|Theorem §104.1]]). The factor $r$ is the Jacobian of the change of variables, [[§15 Multivariable Integration#^thm-15-20|452 Thm. §15.20]].
@@ -126,7 +126,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 > [!example] Example §41.1: A Cubic Rotated About the y-Axis
 > Find the volume of the solid obtained by rotating about the $y$-axis the region bounded by $y = 2x^2 - x^3$ and $y = 0$.
 >
-> $2x^2 - x^3 = x^2(2 - x)$ is $\ge 0$ for $0 \le x \le 2$, so the region lies over $[0, 2]$. A typical shell has radius $x$, circumference $2\pi x$ and height $f(x) = 2x^2 - x^3$. By Theorem §41.2,
+> $2x^2 - x^3 = x^2(2 - x)$ is $\ge 0$ for $0 \le x \le 2$, so the region lies over $[0, 2]$. A typical shell has radius $x$, circumference $2\pi x$ and height $f(x) = 2x^2 - x^3$. By [[§41 Volumes by Cylindrical Shells#^thm-41-2|Theorem §41.2]],
 >
 > $$
 > V = \int_0^2 (2\pi x)(2x^2 - x^3)\,dx = 2\pi \int_0^2 (2x^3 - x^4)\,dx = 2\pi \Big[\tfrac12 x^4 - \tfrac15 x^5\Big]_0^2 = 2\pi \Big(8 - \frac{32}{5}\Big) = \frac{16}{5}\pi .
@@ -184,7 +184,7 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 > [!remark] Remark: Method — Choosing Between Washers and Shells
 > 1. Decide which variable is easier to work with. Is the region more easily described by top and bottom curves $y = f(x)$, or by left and right curves $x = g(y)$? Are the limits of integration easier to find in one variable? Does one variable need two separate integrals and the other only one? Can the resulting integral actually be evaluated?
 > 2. The variable dictates the method. Draw a sample rectangle in the region; its thickness, $\Delta x$ or $\Delta y$, is the variable of integration. Revolved about the axis, the rectangle becomes a disk or washer if it is perpendicular to the axis, and a shell if it is parallel to it.
-> 3. Sometimes both methods work (Example §41.5).
+> 3. Sometimes both methods work ([[§41 Volumes by Cylindrical Shells#^ex-41-5|Example §41.5]]).
 
 ^rem-41-3
 

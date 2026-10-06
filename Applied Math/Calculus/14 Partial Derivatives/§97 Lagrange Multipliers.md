@@ -75,7 +75,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 > f_x = \lambda g_x , \qquad f_y = \lambda g_y , \qquad f_z = \lambda g_z , \qquad g(x, y, z) = k .
 > $$
 >
-> All solutions must be found, but the values of $\lambda$ are not needed for the conclusion. A solution with $\lambda = 0$ has $\nabla f = \mathbf{0}$: it is a critical point of $f$, a possible local extreme value of $f$ on its domain and hence also a possible constrained one. For two variables, solve $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = k$: three equations in three unknowns. There are no general rules for solving such systems; useful tricks are to solve each equation for $\lambda$ and equate, to multiply equations so that their left sides agree (Example §97.2), or to solve for the variables in terms of $\lambda$ and substitute into the constraint (Example §97.3). In each example one checks that $\nabla g \ne \mathbf{0}$ at all points with $g = k$.
+> All solutions must be found, but the values of $\lambda$ are not needed for the conclusion. A solution with $\lambda = 0$ has $\nabla f = \mathbf{0}$: it is a critical point of $f$, a possible local extreme value of $f$ on its domain and hence also a possible constrained one. For two variables, solve $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = k$: three equations in three unknowns. There are no general rules for solving such systems; useful tricks are to solve each equation for $\lambda$ and equate, to multiply equations so that their left sides agree ([[§97 Lagrange Multipliers#^ex-97-2|Example §97.2]]), or to solve for the variables in terms of $\lambda$ and substitute into the constraint ([[§97 Lagrange Multipliers#^ex-97-3|Example §97.3]]). In each example one checks that $\nabla g \ne \mathbf{0}$ at all points with $g = k$.
 >
 > *Stewart: 14.8, Method of Lagrange Multipliers and text*
 
@@ -107,7 +107,7 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 ^ex-97-1
 
 ![[m233-97-1.svg]]
-*Example §97.1(a): the level curves $x^2 + 2y^2 = c$ of $f$ (ellipses, green) and the constraint circle $x^2 + y^2 = 1$ (red). The ellipse $c = 1$ touches the circle from inside at $(\pm 1, 0)$, the ellipse $c = 2$ from outside at $(0, \pm 1)$; at these four points the gradients of $f$ and $g$ are parallel (arrows). Ellipses with $1 < c < 2$ cross the circle, so $f$ takes all values between $1$ and $2$ on it.*
+*[[§97 Lagrange Multipliers#^ex-97-1|Example §97.1]](a): the level curves $x^2 + 2y^2 = c$ of $f$ (ellipses, green) and the constraint circle $x^2 + y^2 = 1$ (red). The ellipse $c = 1$ touches the circle from inside at $(\pm 1, 0)$, the ellipse $c = 2$ from outside at $(0, \pm 1)$; at these four points the gradients of $f$ and $g$ are parallel (arrows). Ellipses with $1 < c < 2$ cross the circle, so $f$ takes all values between $1$ and $2$ on it.*
 
 > [!example] Example §97.2: The Box Without a Lid
 > A rectangular box without a lid is to be made from $12$ m² of cardboard. Find the maximum volume of such a box.

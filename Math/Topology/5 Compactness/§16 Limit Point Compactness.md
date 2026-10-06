@@ -106,38 +106,7 @@ tags: [topology, math590]
 
 ^ex-16-2
 
-> [!theorem] Theorem §16.2: Equivalence for Metrizable Spaces
-> Let $X$ be a [[§11 Metric Topology#^def-11-4|metrizable]] space. Then the following are equivalent:
-> 1. $X$ is [[§15 Compact Spaces#^def-15-2|compact]]
-> 2. $X$ is [[§16 Limit Point Compactness#^def-16-1|limit point compact]]
-> 3. $X$ is [[§16 Limit Point Compactness#^def-16-3|sequentially compact]]
-
-^thm-16-2
-
-> [!proof]+ Proof of $(2) \Rightarrow (3)$
-> Let $(x_n)$ be a sequence in $X$.
->
-> **Case 1:** If $A = \{x_n \mid n \in \mathbb{Z}_+\}$ is finite, then some value repeats infinitely often, giving a constant (hence convergent) subsequence.
->
-> **Case 2:** Assume $A$ is infinite. By (2), $A$ has a limit point $x \in X$.
->
-> Construct a subsequence converging to $x$: Since $x$ is a [[§7 Interior and Closure#^def-7-3|limit point]] of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points $a_1, \ldots, a_m$ of $A \setminus \{x\}$, then for $0 < r \le \varepsilon$ with $r < d(x, a_j)$ for all $j$, the ball $B(x, r)$ would miss $A \setminus \{x\}$, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
->
-> In particular, $B(x, 1/i) \cap (A \setminus \{x\})$ is infinite for each $i$. So we can inductively choose:
-> - $x_{n_1} \in B(x, 1) \cap A$ with $x_{n_1} \neq x$
-> - $x_{n_2} \in B(x, \frac{1}{2}) \cap A$ with $n_2 > n_1$ (possible since infinitely many terms of the sequence lie in $B(x, 1/2)$)
-> - $x_{n_i} \in B(x, \frac{1}{i}) \cap A$ with $n_i > n_{i-1}$
->
-> Then $d(x_{n_i}, x) < 1/i \to 0$, so $x_{n_1}, x_{n_2}, \ldots$ converges to $x$.
-
-^pf-16-2
-
-*Uses:* [[§16 Limit Point Compactness#^thm-16-1|§16.1]], [[§7 Interior and Closure#^def-7-3|Def. §7.3]]
-
-To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas.
-
-> [!remark]- Connections
-> - Restated for normed and metric spaces as [[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]] (compact iff sequentially compact), which cites this theorem for its proof.
+To complete the equivalence of [[§16 Limit Point Compactness#^thm-16-2|Theorem §16.2]] below, we need $(3) \Rightarrow (1)$. This uses two lemmas, proved first.
 
 > [!theorem] Lemma §16.3: Lebesgue Number Lemma
 > Let $(X, d)$ be a sequentially compact metric space and let $\{U_\alpha\}$ be an open cover of $X$. Then there exists $\delta > 0$ (called a **Lebesgue number** for the cover) such that for every subset $A \subseteq X$ with $\text{diam}(A) < \delta$, there exists some $U_\alpha$ containing $A$.
@@ -179,6 +148,34 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 
 *Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]]
 
+> [!theorem] Theorem §16.2: Equivalence for Metrizable Spaces
+> Let $X$ be a [[§11 Metric Topology#^def-11-4|metrizable]] space. Then the following are equivalent:
+> 1. $X$ is [[§15 Compact Spaces#^def-15-2|compact]]
+> 2. $X$ is [[§16 Limit Point Compactness#^def-16-1|limit point compact]]
+> 3. $X$ is [[§16 Limit Point Compactness#^def-16-3|sequentially compact]]
+
+^thm-16-2
+
+> [!proof]+ Proof of $(2) \Rightarrow (3)$
+> Let $(x_n)$ be a sequence in $X$.
+>
+> **Case 1:** If $A = \{x_n \mid n \in \mathbb{Z}_+\}$ is finite, then some value repeats infinitely often, giving a constant (hence convergent) subsequence.
+>
+> **Case 2:** Assume $A$ is infinite. By (2), $A$ has a limit point $x \in X$.
+>
+> Construct a subsequence converging to $x$: Since $x$ is a [[§7 Interior and Closure#^def-7-3|limit point]] of $A$, every neighborhood of $x$ contains infinitely many points of $A$. (If some $B(x, \varepsilon)$ contained only finitely many points $a_1, \ldots, a_m$ of $A \setminus \{x\}$, then for $0 < r \le \varepsilon$ with $r < d(x, a_j)$ for all $j$, the ball $B(x, r)$ would miss $A \setminus \{x\}$, but a limit point requires every neighborhood to intersect $A \setminus \{x\}$.)
+>
+> In particular, $B(x, 1/i) \cap (A \setminus \{x\})$ is infinite for each $i$. So we can inductively choose:
+> - $x_{n_1} \in B(x, 1) \cap A$ with $x_{n_1} \neq x$
+> - $x_{n_2} \in B(x, \frac{1}{2}) \cap A$ with $n_2 > n_1$ (possible since infinitely many terms of the sequence lie in $B(x, 1/2)$)
+> - $x_{n_i} \in B(x, \frac{1}{i}) \cap A$ with $n_i > n_{i-1}$
+>
+> Then $d(x_{n_i}, x) < 1/i \to 0$, so $x_{n_1}, x_{n_2}, \ldots$ converges to $x$.
+
+^pf-16-2
+
+*Uses:* [[§16 Limit Point Compactness#^thm-16-1|§16.1]], [[§7 Interior and Closure#^def-7-3|Def. §7.3]]
+
 > [!proof]+ Proof of $(3) \Rightarrow (1)$: Sequentially Compact $\Rightarrow$ Compact
 > Let $\{U_\alpha\}$ be an open cover of $X$.
 >
@@ -193,6 +190,9 @@ To complete the equivalence, we need $(3) \Rightarrow (1)$. This uses two lemmas
 ^pf-16-2-2
 
 *Uses:* [[§16 Limit Point Compactness#^lem-16-3|§16.3]], [[§16 Limit Point Compactness#^lem-16-4|§16.4]]
+
+> [!remark]- Connections
+> - Restated for normed and metric spaces as [[§18 Compactness and the Unit Ball#^thm-18-1|556 Thm. §18.1]] (compact iff sequentially compact), which cites this theorem for its proof.
 
 > [!remark] Remark: Summary of the Equivalence
 > For a metrizable space $X$, the proof cycle is:

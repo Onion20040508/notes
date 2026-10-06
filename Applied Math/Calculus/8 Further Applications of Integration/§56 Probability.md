@@ -48,7 +48,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > f(x) \ge 0 \quad \text{for all } x \qquad\text{and}\qquad \int_{-\infty}^{\infty} f(x)\,dx = 1 .
 > $$
 >
-> Conversely, a function with these two properties is the density of a random variable; checking them is how one verifies that a given $f$ "is a probability density function" (Example §56.1).
+> Conversely, a function with these two properties is the density of a random variable; checking them is how one verifies that a given $f$ "is a probability density function" ([[§56 Probability#^ex-56-1|Example §56.1]]).
 >
 > *Stewart: 8.5, Equation 2*
 
@@ -63,7 +63,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > - The rigorous setting: a **distribution function** $F(t) = P(X \le t)$ is increasing with $F(-\infty) = 0$, $F(\infty) = 1$, and a density is a $g \ge 0$ with $F(t) = \int_{-\infty}^t g(x)\,dx$, so that $F' = g$ where $g$ is continuous: [[§36 Improper Integrals#^rem-36-3|451 Remark: Distribution functions]]. The improper integrals involved: [[§36 Improper Integrals#^def-36-1|451 Def. §36.1]], [[§36 Improper Integrals#^def-36-2|451 Def. §36.2]].
 
 > [!remark] Remark: Single Values Have Probability Zero
-> Densities are always used with *intervals* of values. A density function says nothing useful about the probability that $X$ *equals* $a$: by Definition §56.2 that probability is $\int_a^a f(x)\,dx = 0$. In particular $P(a \le X \le b) = P(a < X < b)$, so it does not matter whether the endpoints are included. The value $f(a)$ itself is not a probability (it can exceed $1$); only areas under $f$ are.
+> Densities are always used with *intervals* of values. A density function says nothing useful about the probability that $X$ *equals* $a$: by [[§56 Probability#^def-56-2|Definition §56.2]] that probability is $\int_a^a f(x)\,dx = 0$. In particular $P(a \le X \le b) = P(a < X < b)$, so it does not matter whether the endpoints are included. The value $f(a)$ itself is not a probability (it can exceed $1$); only areas under $f$ are.
 
 ^rem-56-2
 
@@ -77,7 +77,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \int_{-\infty}^{\infty} f(x)\,dx = \int_0^{10} 0.006x(10 - x)\,dx = 0.006 \int_0^{10} (10x - x^2)\,dx = 0.006 \Big[5x^2 - \tfrac13 x^3\Big]_0^{10} = 0.006\Big(500 - \frac{1000}{3}\Big) = 0.006 \cdot \frac{500}{3} = 1 .
 > $$
 >
-> By Proposition §56.1, $f$ is a probability density function.
+> By [[§56 Probability#^prop-56-1|Proposition §56.1]], $f$ is a probability density function.
 >
 > **(b)**
 >
@@ -90,12 +90,12 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ^ex-56-1
 
 ![[m233-56-1.svg]]
-*The density of Example §56.1. The whole area under the graph is $1$ (all outcomes together), and the probability $P(4 \le X \le 8) = 0.544$ is the shaded part of it. The graph is $0$ outside $[0, 10]$: the variable never takes values there.*
+*The density of [[§56 Probability#^ex-56-1|Example §56.1]]. The whole area under the graph is $1$ (all outcomes together), and the probability $P(4 \le X \le 8) = 0.544$ is the shaded part of it. The graph is $0$ outside $[0, 10]$: the variable never takes values there.*
 
 > [!example] Example §56.2: The Form of an Exponential Density
 > Waiting times and equipment failure times are commonly modeled by exponentially decreasing probability density functions. Find the exact form of such a function.
 >
-> Let $t$ (in minutes) be the time you wait on hold before an agent answers your call, placed at time $t = 0$, and $f$ its density. By Definition §56.2, $\int_0^2 f(t)\,dt$ is the probability that an agent answers within the first two minutes, and $\int_4^5 f(t)\,dt$ the probability that the call is answered during the fifth minute.
+> Let $t$ (in minutes) be the time you wait on hold before an agent answers your call, placed at time $t = 0$, and $f$ its density. By [[§56 Probability#^def-56-2|Definition §56.2]], $\int_0^2 f(t)\,dt$ is the probability that an agent answers within the first two minutes, and $\int_4^5 f(t)\,dt$ the probability that the call is answered during the fifth minute.
 >
 > The agent cannot answer before the call is placed, so $f(t) = 0$ for $t < 0$. For $t \ge 0$ we are told that $f$ decreases exponentially, $f(t) = Ae^{-ct}$ with constants $A, c > 0$. So
 >
@@ -103,7 +103,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > f(t) = \begin{cases} 0 & \text{if } t < 0 \\ Ae^{-ct} & \text{if } t \ge 0 \end{cases}
 > $$
 >
-> and $f \ge 0$. The second condition of Proposition §56.1 determines $A$:
+> and $f \ge 0$. The second condition of [[§56 Probability#^prop-56-1|Proposition §56.1]] determines $A$:
 >
 > $$
 > \begin{aligned}
@@ -125,7 +125,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > f(t) = \begin{cases} 0 & \text{if } t < 0 \\ ce^{-ct} & \text{if } t \ge 0 . \end{cases}
 > $$
 >
-> By Example §56.2, every exponentially decreasing density on $[0, \infty)$ has this form. Its graph starts at height $c$ at $t = 0$ and decays to $0$.
+> By [[§56 Probability#^ex-56-2|Example §56.2]], every exponentially decreasing density on $[0, \infty)$ has this form. Its graph starts at height $c$ at $t = 0$ and decays to $0$.
 >
 > *Stewart: 8.5 (Example 2)*
 
@@ -173,16 +173,16 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \bar x = \frac{\displaystyle\int_{-\infty}^{\infty} x f(x)\,dx}{\displaystyle\int_{-\infty}^{\infty} f(x)\,dx} = \int_{-\infty}^{\infty} x f(x)\,dx = \mu ,
 > $$
 >
-> because the denominator, the area of $\mathscr{R}$, equals $1$ by Proposition §56.1.
+> because the denominator, the area of $\mathscr{R}$, equals $1$ by [[§56 Probability#^prop-56-1|Proposition §56.1]].
 
 ^pf-56-2
 
 *Uses:* [[§56 Probability#^prop-56-1|§56.1]], [[§56 Probability#^def-56-4|Def. §56.4]], [[§54 Applications to Physics and Engineering#^thm-54-5|§54.5]]
 
 > [!example] Example §56.3: The Mean of an Exponential Density
-> Find the mean of the exponential distribution of Example §56.2, $f(t) = 0$ for $t < 0$ and $f(t) = ce^{-ct}$ for $t \ge 0$.
+> Find the mean of the exponential distribution of [[§56 Probability#^ex-56-2|Example §56.2]], $f(t) = 0$ for $t < 0$ and $f(t) = ce^{-ct}$ for $t \ge 0$.
 >
-> By Definition §56.4,
+> By [[§56 Probability#^def-56-4|Definition §56.4]],
 >
 > $$
 > \mu = \int_{-\infty}^{\infty} t f(t)\,dt = \int_0^{\infty} tce^{-ct}\,dt .
@@ -213,7 +213,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > \int_m^{\infty} f(x)\,dx = \frac12 .
 > $$
 >
-> Half of the area under the graph of $f$ lies to the right of $m$ (and so, by Proposition §56.1, half lies to the left). For waiting times: half of the callers wait less than $m$ and half wait longer.
+> Half of the area under the graph of $f$ lies to the right of $m$ (and so, by [[§56 Probability#^prop-56-1|Proposition §56.1]], half lies to the left). For waiting times: half of the callers wait less than $m$ and half wait longer.
 >
 > Like the mean, the median is a measure of the centrality of $f$.
 >
@@ -225,9 +225,9 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > Suppose the average waiting time for a customer's call to be answered by a customer service agent is five minutes, and that an exponential distribution is appropriate.
 > (a) Find the probability that a call is answered during the first minute.
 > (b) Find the probability that a customer waits on hold for more than five minutes.
-> (c) Find the median waiting time (Definition §56.5).
+> (c) Find the median waiting time ([[§56 Probability#^def-56-5|Definition §56.5]]).
 >
-> The mean is $\mu = 5$ min, so by Example §56.3 the density is $f(t) = 0$ for $t < 0$ and $f(t) = \frac15 e^{-t/5} = 0.2e^{-t/5}$ for $t \ge 0$ ($t$ in minutes).
+> The mean is $\mu = 5$ min, so by [[§56 Probability#^ex-56-3|Example §56.3]] the density is $f(t) = 0$ for $t < 0$ and $f(t) = \frac15 e^{-t/5} = 0.2e^{-t/5}$ for $t \ge 0$ ($t$ in minutes).
 >
 > **(a)**
 >
@@ -252,10 +252,10 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ^ex-56-4
 
 ![[m233-56-2.svg]]
-*The waiting-time density of Example §56.4. The blue area over $[0, 1]$ is the $18\%$ answered in the first minute; the red tail beyond $t = 5$ is the $37\%$ who wait longer than the mean. The median (green) splits the total area into two halves and lies to the left of the mean: the long right tail of rare long waits pulls the mean (the balance point, Proposition §56.2) to the right.*
+*The waiting-time density of [[§56 Probability#^ex-56-4|Example §56.4]]. The blue area over $[0, 1]$ is the $18\%$ answered in the first minute; the red tail beyond $t = 5$ is the $37\%$ who wait longer than the mean. The median (green) splits the total area into two halves and lies to the left of the mean: the long right tail of rare long waits pulls the mean (the balance point, [[§56 Probability#^prop-56-2|Proposition §56.2]]) to the right.*
 
 > [!remark] Remark: Mean Versus Typical Value
-> In Example §56.4(b), the mean waiting time is $5$ minutes, yet only $37\%$ of callers wait more than $5$ minutes. The reason is that some callers have to wait much longer (maybe $10$ or $15$ minutes), and this brings up the average. The median is not pulled up by such long waits: by Example §56.4(c) it is $5\ln 2 \approx 3.5$ minutes, well below the mean.
+> In [[§56 Probability#^ex-56-4|Example §56.4]](b), the mean waiting time is $5$ minutes, yet only $37\%$ of callers wait more than $5$ minutes. The reason is that some callers have to wait much longer (maybe $10$ or $15$ minutes), and this brings up the average. The median is not pulled up by such long waits: by [[§56 Probability#^ex-56-4|Example §56.4]](c) it is $5\ln 2 \approx 3.5$ minutes, well below the mean.
 
 ^rem-56-4
 
@@ -275,7 +275,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 ^def-56-6
 
 > [!theorem] Proposition §56.3: The Normal Density Is a Density with Mean μ
-> For every $\mu$ and every $\sigma > 0$, the function $f$ of Definition §56.6 is a probability density function,
+> For every $\mu$ and every $\sigma > 0$, the function $f$ of [[§56 Probability#^def-56-6|Definition §56.6]] is a probability density function,
 >
 > $$
 > \int_{-\infty}^{\infty} \frac{1}{\sigma\sqrt{2\pi}}\, e^{-(x - \mu)^2/(2\sigma^2)}\,dx = 1 ,
@@ -314,7 +314,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > - The normal density and its distribution function, with the value √π taken on credit: [[§36 Improper Integrals#^ex-36-4|451 Ex. §36.4]]; the value √π itself, by polar coordinates: [[§15 Multivariable Integration#^ex-15-7|452 Ex. §15.7]].
 
 > [!remark] Remark: The Shape of the Normal Densities
-> The graph of $f$ is a bell-shaped curve, symmetric about the line $x = \mu$, with its peak $\frac{1}{\sigma\sqrt{2\pi}}$ at $x = \mu$. For small $\sigma$ the values of $X$ are clustered about the mean (a tall narrow bell); for larger $\sigma$ they are more spread out (a low wide bell). The factor $1/(\sigma\sqrt{2\pi})$ is exactly what makes the total area $1$ (Proposition §56.3). Statisticians have methods for estimating $\mu$ and $\sigma$ from data.
+> The graph of $f$ is a bell-shaped curve, symmetric about the line $x = \mu$, with its peak $\frac{1}{\sigma\sqrt{2\pi}}$ at $x = \mu$. For small $\sigma$ the values of $X$ are clustered about the mean (a tall narrow bell); for larger $\sigma$ they are more spread out (a low wide bell). The factor $1/(\sigma\sqrt{2\pi})$ is exactly what makes the total area $1$ ([[§56 Probability#^prop-56-3|Proposition §56.3]]). Statisticians have methods for estimating $\mu$ and $\sigma$ from data.
 
 ^rem-56-5
 
@@ -323,7 +323,7 @@ A continuous random variable (a height, a lifetime, a waiting time) is described
 > (a) What percentage of the population has an IQ score between $85$ and $115$?
 > (b) What percentage of the population has an IQ above $140$?
 >
-> Use Definition §56.6 with $\mu = 100$, $\sigma = 15$, so $2\sigma^2 = 450$.
+> Use [[§56 Probability#^def-56-6|Definition §56.6]] with $\mu = 100$, $\sigma = 15$, so $2\sigma^2 = 450$.
 >
 > **(a)**
 >

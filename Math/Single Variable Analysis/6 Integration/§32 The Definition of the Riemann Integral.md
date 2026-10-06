@@ -22,7 +22,7 @@ Let $f: [a,b] \to \mathbb{R}$ be a function — not necessarily continuous. We w
 
 ^def-32-1
 
-> [!definition] Definition §32.1: Partition
+> [!definition] Definition §32.1: Partitions
 > A **partition** of $[a,b]$ is a division into $n$ subintervals,
 >
 > $$
@@ -289,7 +289,7 @@ so $x^3$ is integrable on $[0,b]$ with $\int_0^b x^3\,dx = \lim U_n = \tfrac{b^4
 > [!remark]- Connections
 > - In the plane the mesh is the largest diameter of a piece: [[§15 Multivariable Integration#^def-15-9|452 Def. §15.9]].
 
-> [!definition] Definition §32.3: Riemann Sum
+> [!definition] Definition §32.3: Riemann Sums
 > For a partition $P$ and bounded $f$, a **Riemann sum** associated with $P$ is
 >
 > $$

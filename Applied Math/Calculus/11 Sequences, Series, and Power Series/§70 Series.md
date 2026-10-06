@@ -148,7 +148,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 
 ^pf-70-1
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-8|§69.8]], [[§69 Sequences#^thm-69-3|§69.3]]
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^thm-69-8|§69.8]], [[§69 Sequences#^thm-69-3|§69.3]]
 
 > [!remark]- Remark: A Geometric Picture
 > Stewart's Figure 3 (for $0 < r < 1$): on the right side of a square of side $a$, stack segments of lengths $ar, ar^2, ar^3, \ldots$ above it, the sides of smaller squares placed against the right edge, each on top of the previous one, so the total height is $s = a + ar + ar^2 + \cdots$. The line from the bottom-left corner of the first square through the bottom-left corners of the smaller squares crosses the top side of the first square at distance $a - ar$ from the left and reaches height $s$ above the bottom-right corner. The right triangles with legs $(a - ar, a)$ and $(a, s)$ are similar, so
@@ -166,7 +166,7 @@ Some series obviously have no finite sum: the cumulative sums of $1 + 2 + 3 + \c
 > [!example] Example §70.2: Identifying a and r
 > **(a)** Find the sum of $5 - \frac{10}{3} + \frac{20}{9} - \frac{40}{27} + \cdots$.
 >
-> The first term is $a = 5$ and each term is the preceding one times $r = -\frac23$. Since $|r| = \frac23 < 1$, the series converges by Theorem §70.1, and
+> The first term is $a = 5$ and each term is the preceding one times $r = -\frac23$. Since $|r| = \frac23 < 1$, the series converges by [[§70 Series#^thm-70-1|Theorem §70.1]], and
 >
 > $$
 > 5 - \frac{10}{3} + \frac{20}{9} - \frac{40}{27} + \cdots = \frac{5}{1 - \left( -\frac23 \right)} = \frac{5}{\frac53} = 3 .
@@ -219,7 +219,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 ^cor-70-2
 
 > [!proof]+ Proof
-> The series starts with $n = 0$, so its first term is $x^0 = 1$; it is the geometric series with $a = 1$ and $r = x$. Since $|r| = |x| < 1$, Theorem §70.1 gives the sum $\dfrac{1}{1 - x}$.
+> The series starts with $n = 0$, so its first term is $x^0 = 1$; it is the geometric series with $a = 1$ and $r = x$. Since $|r| = |x| < 1$, [[§70 Series#^thm-70-1|Theorem §70.1]] gives the sum $\dfrac{1}{1 - x}$.
 
 ^pf-70-2
 
@@ -263,7 +263,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^pf-70-3
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^def-69-4|Def. §69.4]]
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^def-69-4|Def. §69.4]]
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Series#^thm-14-5|451 Thm. §14.5]]; the integral test gives a second proof, [[§15 Alternating Series and Integral Tests#^ex-15-3|451 Ex. §15.3]] (and [[§71 The Integral Test and Estimates of Sums#^thm-71-2|Theorem §71.2]] with $p = 1$). The grouping argument is due to Nicole Oresme (1323–1382).
@@ -284,10 +284,10 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^pf-70-4
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]] (Difference Law)
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^thm-69-3|§69.3]] (Difference Law)
 
 > [!remark] Remark: Warning — The Converse Is False
-> If $\lim_{n \to \infty} a_n = 0$, we *cannot* conclude that $\sum a_n$ converges. The harmonic series has $a_n = 1/n \to 0$, but $\sum 1/n$ diverges (Theorem §70.3).
+> If $\lim_{n \to \infty} a_n = 0$, we *cannot* conclude that $\sum a_n$ converges. The harmonic series has $a_n = 1/n \to 0$, but $\sum 1/n$ diverges ([[§70 Series#^thm-70-3|Theorem §70.3]]).
 
 ^rem-70-3
 
@@ -299,7 +299,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 ^cor-70-5
 
 > [!proof]+ Proof
-> This is the [[Contrapositive, Converse and Inverse|contrapositive]] of Theorem §70.4: if the series is not divergent, then it is convergent, and so $\lim_{n \to \infty} a_n = 0$.
+> This is the [[Contrapositive, Converse and Inverse|contrapositive]] of [[§70 Series#^thm-70-4|Theorem §70.4]]: if the series is not divergent, then it is convergent, and so $\lim_{n \to \infty} a_n = 0$.
 
 ^pf-70-5
 
@@ -317,7 +317,7 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 >
 > so the series diverges by the Test for Divergence.
 >
-> The test works in one direction only. If $\lim a_n \ne 0$, then $\sum a_n$ diverges. If $\lim a_n = 0$, the test tells us *nothing*: $\sum a_n$ might converge (Example §70.1(b)) or diverge (the harmonic series).
+> The test works in one direction only. If $\lim a_n \ne 0$, then $\sum a_n$ diverges. If $\lim a_n = 0$, the test tells us *nothing*: $\sum a_n$ might converge ([[§70 Series#^ex-70-1|Example §70.1]](b)) or diverge (the harmonic series).
 >
 > *Stewart: Example 11.2.9*
 
@@ -357,12 +357,12 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^pf-70-6
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]], [[§35 The Definite Integral#^thm-35-3|§35.3]]
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^thm-69-3|§69.3]], [[§35 The Definite Integral#^thm-35-3|§35.3]]
 
 > [!example] Example §70.5: Combining Known Sums
 > Find the sum of $\displaystyle\sum_{n=1}^{\infty} \left( \frac{3}{n(n+1)} + \frac{1}{2^n} \right)$.
 >
-> $\sum 1/2^n$ is geometric with $a = \frac12$ and $r = \frac12$, so $\displaystyle\sum_{n=1}^{\infty} \frac{1}{2^n} = \frac{\frac12}{1 - \frac12} = 1$. By Example §70.1(b), $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1$. Both series converge, so by Theorem §70.6 the given series converges and
+> $\sum 1/2^n$ is geometric with $a = \frac12$ and $r = \frac12$, so $\displaystyle\sum_{n=1}^{\infty} \frac{1}{2^n} = \frac{\frac12}{1 - \frac12} = 1$. By [[§70 Series#^ex-70-1|Example §70.1]](b), $\displaystyle\sum_{n=1}^{\infty} \frac{1}{n(n+1)} = 1$. Both series converge, so by [[§70 Series#^thm-70-6|Theorem §70.6]] the given series converges and
 >
 > $$
 > \sum_{n=1}^{\infty} \left( \frac{3}{n(n+1)} + \frac{1}{2^n} \right) = 3 \sum_{n=1}^{\infty} \frac{1}{n(n+1)} + \sum_{n=1}^{\infty} \frac{1}{2^n} = 3 \cdot 1 + 1 = 4 .
@@ -390,4 +390,4 @@ Stewart's Example 5 is an application of the finite formula (3): if a daily dose
 
 ^pf-70-7
 
-*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§69 Sequences#^thm-69-3|§69.3]]
+*Uses:* [[§70 Series#^def-70-2|Def. §70.2]], [[§70 Series#^def-70-new1|Def. §70.3]], [[§69 Sequences#^thm-69-3|§69.3]]

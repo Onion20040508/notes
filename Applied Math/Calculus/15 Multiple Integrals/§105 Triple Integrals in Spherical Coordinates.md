@@ -164,7 +164,7 @@ The next lemma makes this exact.
 ^thm-105-2
 
 > [!proof]+ Proof
-> *Stewart gives this as a sketch.* Although triple integrals were defined by dividing solids into small boxes, dividing a solid into small spherical wedges always gives the same result (Stewart asserts this: "it can be shown"). Divide $E$ into the wedges $E_{ijk}$ of Definition §105.2. By Lemma §105.1, $\Delta V_{ijk} = \tilde\rho_i^{\,2}\sin\tilde\phi_k\,\Delta\rho\,\Delta\theta\,\Delta\phi$ for some point $(\tilde\rho_i, \tilde\theta_j, \tilde\phi_k)$ of $E_{ijk}$ (any $\tilde\theta_j$ in the $\theta$-interval will do). Let $(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})$ be the rectangular coordinates of this point. Then
+> *Stewart gives this as a sketch.* Although triple integrals were defined by dividing solids into small boxes, dividing a solid into small spherical wedges always gives the same result (Stewart asserts this: "it can be shown"). Divide $E$ into the wedges $E_{ijk}$ of [[§105 Triple Integrals in Spherical Coordinates#^def-105-2|Definition §105.2]]. By [[§105 Triple Integrals in Spherical Coordinates#^lem-105-1|Lemma §105.1]], $\Delta V_{ijk} = \tilde\rho_i^{\,2}\sin\tilde\phi_k\,\Delta\rho\,\Delta\theta\,\Delta\phi$ for some point $(\tilde\rho_i, \tilde\theta_j, \tilde\phi_k)$ of $E_{ijk}$ (any $\tilde\theta_j$ in the $\theta$-interval will do). Let $(x_{ijk}^{\ast}, y_{ijk}^{\ast}, z_{ijk}^{\ast})$ be the rectangular coordinates of this point. Then
 >
 > $$
 > \begin{aligned}
@@ -240,7 +240,7 @@ The next lemma makes this exact.
 ^ex-105-3
 
 ![[m233-105-2.svg]]
-*Example §105.3 in the cross-section by the $xz$-plane. The sphere $x^2 + y^2 + z^2 = z$ passes through the origin and is $\rho = \cos\phi$: along the ray at angle $\phi$ (red) the solid extends from $\rho = 0$ to the sphere. The cone $z = \sqrt{x^2 + y^2}$ is $\phi = \pi/4$. The rays sweep out the shaded fan for $0 \le \phi \le \pi/4$, and rotation in $\theta$ gives the solid.*
+*[[§105 Triple Integrals in Spherical Coordinates#^ex-105-3|Example §105.3]] in the cross-section by the $xz$-plane. The sphere $x^2 + y^2 + z^2 = z$ passes through the origin and is $\rho = \cos\phi$: along the ray at angle $\phi$ (red) the solid extends from $\rho = 0$ to the sphere. The cone $z = \sqrt{x^2 + y^2}$ is $\phi = \pi/4$. The rays sweep out the shaded fan for $0 \le \phi \le \pi/4$, and rotation in $\theta$ gives the solid.*
 
 > [!example] Example §105.4: Below a Downward Cone
 > Use spherical coordinates to find the volume of the solid that lies below the surface $z = -\sqrt{x^2 + y^2}$ and inside the sphere $x^2 + y^2 + z^2 = 9$.

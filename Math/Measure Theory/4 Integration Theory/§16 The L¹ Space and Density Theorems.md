@@ -9,6 +9,27 @@ tags: [measure-theory, math551]
 
 ## Absolute Continuity of the Integral
 
+> [!theorem] Lemma §16.2
+> Let $f \in L(E)$. Then there exists a sequence of bounded measurable functions $f_k \in L(E)$ with $|f_k(x)| \leq |f(x)|$ for all $x \in E$ and $\lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$.
+
+^lem-16-2
+
+> [!proof]+ Proof of Lemma
+> Define:
+>
+> $$
+> f_k(x) = \begin{cases} f(x) & \text{if } |f(x)| \leq k, \\ k & \text{if } f(x) > k, \\ -k & \text{if } f(x) < -k. \end{cases}
+> $$
+>
+> Then $|f_k(x)| \leq k$ (bounded), $|f_k(x)| \leq |f(x)|$ (so $|f_k| \in L(E)$), and $f_k(x) \to f(x)$ pointwise. Since $|f_k - f| \leq 2|f| \in L(E)$, by [[Dominated Convergence Theorem|DCT]]: $\int_E |f_k - f|\,dx \to 0$.
+
+^pf-16-2
+
+*Uses:* [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Dominated Convergence Theorem|§15.8]]
+
+![[m551-16-1.svg]]
+*Truncation at height $k$: $f_k$ (blue) agrees with $f$ (gray) where $|f| \leq k$ and is clipped to $\pm k$ elsewhere, so $f_k$ is bounded and $|f_k| \leq |f|$. The red area is $\int_E |f - f_k|$; it sits over $\{|f| > k\}$ and tends to $0$ by the DCT with dominator $2|f|$. In [[§16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]] the bounded part is small on small sets because $\int_e |f_k| \leq k\, m(e)$, and the red remainder is small everywhere.*
+
 > [!theorem] Theorem §16.1: Absolute Continuity of the Integral
 > Let $f \in L(E)$, $E \in \mathcal{M}$, $E \subseteq \mathbb{R}^n$. Then for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $e \subseteq E$, $e \in \mathcal{M}$:
 >
@@ -33,28 +54,7 @@ tags: [measure-theory, math551]
 
 *Uses:* [[§14 The Lebesgue Integral for Simple Functions#^prop-14-3|§14.3]], [[§14 The Lebesgue Integral for Simple Functions#^def-14-1|Def. §14.1]]
 
-> [!theorem] Lemma §16.2
-> Let $f \in L(E)$. Then there exists a sequence of bounded measurable functions $f_k \in L(E)$ with $|f_k(x)| \leq |f(x)|$ for all $x \in E$ and $\lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$.
-
-^lem-16-2
-
-> [!proof]+ Proof of Lemma
-> Define:
->
-> $$
-> f_k(x) = \begin{cases} f(x) & \text{if } |f(x)| \leq k, \\ k & \text{if } f(x) > k, \\ -k & \text{if } f(x) < -k. \end{cases}
-> $$
->
-> Then $|f_k(x)| \leq k$ (bounded), $|f_k(x)| \leq |f(x)|$ (so $|f_k| \in L(E)$), and $f_k(x) \to f(x)$ pointwise. Since $|f_k - f| \leq 2|f| \in L(E)$, by [[Dominated Convergence Theorem|DCT]]: $\int_E |f_k - f|\,dx \to 0$.
-
-^pf-16-2
-
-*Uses:* [[§15 The General Lebesgue Integral#^prop-15-1|§15.1]], [[Dominated Convergence Theorem|§15.8]]
-
-![[m551-16-1.svg]]
-*Truncation at height $k$: $f_k$ (blue) agrees with $f$ (gray) where $|f| \leq k$ and is clipped to $\pm k$ elsewhere, so $f_k$ is bounded and $|f_k| \leq |f|$. The red area is $\int_E |f - f_k|$; it sits over $\{|f| > k\}$ and tends to $0$ by the DCT with dominator $2|f|$. In [[§16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]] the bounded part is small on small sets because $\int_e |f_k| \leq k\, m(e)$, and the red remainder is small everywhere.*
-
-> [!proof]+ Proof of Theorem §16.1 (continued)
+> [!proof]+ Proof of [[§16 The L¹ Space and Density Theorems#^thm-16-1|Theorem §16.1]] (continued)
 > Now let $\varepsilon > 0$. By the [[§16 The L¹ Space and Density Theorems#^lem-16-2|lemma]], choose $k$ such that $\int_E |f_k - f|\,dx < \varepsilon/2$. Since $|f_k|$ is bounded (by $k$), by Step 1 there exists $\delta > 0$ such that $m(e) < \delta$ implies $\int_e |f_k|\,dx < \varepsilon/2$.
 >
 > For any measurable $e \subseteq E$ with $m(e) < \delta$:
@@ -101,23 +101,26 @@ tags: [measure-theory, math551]
 
 ## The $L^1$ Space
 
-> [!definition] Definition §16.1: $L^1$ Space and Norm
+> [!definition] Definition §16.1: $L^1$ Space
 > Let $E \in \mathcal{M}$, $E \subseteq \mathbb{R}^n$. Define:
 >
 > $$
 > L^1(E) = L(E) = \left\{f: E \to \mathbb{R} \cup \{\pm\infty\} \;\middle|\; f \text{ measurable},\; \int_E |f|\,dx < \infty\right\}.
-> $$
->
-> For $f \in L^1(E)$, the **$L^1$ norm** is:
->
-> $$
-> \|f\|_{L^1(E)} = \|f\|_1 = \int_E |f(x)|\,dx.
 > $$
 
 ^def-16-1
 
 > [!remark]- Connections
 > - The case $p = 1$ of [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-5|Def. §19.5]] ($L^p$ spaces). Same as $L(E)$ of [[§15 The General Lebesgue Integral#^def-15-1|Def. §15.1]] by [[§15 The General Lebesgue Integral#^rem-15-1|Rem. §15.1]].
+
+> [!definition] Definition §16.2: $L^1$ Norm
+> For $f \in L^1(E)$, the **$L^1$ norm** is:
+>
+> $$
+> \|f\|_{L^1(E)} = \|f\|_1 = \int_E |f(x)|\,dx.
+> $$
+
+^def-16-new1
 
 > [!theorem] Theorem §16.4: $L^1$ is a Normed Vector Space
 > Let $f, g \in L^1(E)$ and $a, b \in \mathbb{R}$. Then:
@@ -134,16 +137,22 @@ tags: [measure-theory, math551]
 > - (i)–(ii) are [[§15 The General Lebesgue Integral#^thm-15-2|Theorem §15.2]], (iii) is [[§15 The General Lebesgue Integral#^prop-15-3|Proposition §15.3]], (iv) is [[§14 The Lebesgue Integral for Simple Functions#^prop-14-11|Proposition §14.11]] with [[§14 The Lebesgue Integral for Simple Functions#^prop-14-9|§14.9]].
 > - Norm axioms: [[§19 Normed Linear Spaces and Lᵖ Spaces#^def-19-2|Def. §19.2]]; the linear-algebra model is [[§19 Inner Products and Norms#^ladr-6-9|LADR 6.9]] and the [[Triangle inequality]] (LADR 6.17), though the $L^1$ norm does not come from an inner product. Generalized in [[§19 Normed Linear Spaces and Lᵖ Spaces#^thm-19-10|Theorem §19.10]].
 
-> [!definition] Definition §16.2: $L^1$ Metric and Convergence
+> [!definition] Definition §16.3: $L^1$ Metric
 > Define $d(f, g) = \|f - g\|_1 = \int_E |f - g|\,dx$. Then $d$ is a [[§11 Metric Topology#^def-11-1|metric]] on $L^1(E)$ (with the convention that $f = g$ if $f = g$ a.e.), and $(L^1(E), d)$ is a metric space.
->
-> We say $f_k \to f$ in $L^1(E)$ if $\lim_{k \to \infty} \|f_k - f\|_1 = \lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$.
 
 ^def-16-2
 
 > [!remark]- Connections
 > - Metric spaces in MATH 451: [[§13 Some Topological Concepts in Metric Spaces#^def-13-1|451 Def. §13.1]]; normed $\Rightarrow$ metric in general: [[§19 Normed Linear Spaces and Lᵖ Spaces#^prop-19-1|Proposition §19.1]].
-> - $(L^1(E), d)$ is complete by [[Riesz–Fischer Theorem|Riesz–Fischer]] (§19.18). The DCT yields $L^1$ convergence: [[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]].
+> - $(L^1(E), d)$ is complete by [[Riesz–Fischer Theorem|Riesz–Fischer]] (§19.18).
+
+> [!definition] Definition §16.4: Convergence in $L^1$
+> We say $f_k \to f$ in $L^1(E)$ if $\lim_{k \to \infty} \|f_k - f\|_1 = \lim_{k \to \infty} \int_E |f_k - f|\,dx = 0$.
+
+^def-16-new2
+
+> [!remark]- Connections
+> - The DCT yields $L^1$ convergence: [[§15 The General Lebesgue Integral#^rem-15-4|Rem. §15.4]].
 
 ## Density of Simple Functions in $L^1$
 

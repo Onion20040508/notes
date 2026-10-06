@@ -6,7 +6,7 @@ section: 23
 munkres: "§52"
 tags: [topology, math590]
 ---
-← [[§22 Homotopy of Paths]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§24 Covering Spaces]] →
+← [[§22 Homotopy of Paths]] · ↑ [[· 8 Homotopy and the Fundamental Group]] · [[§23a The Punctured Plane and the Torus]] →
 
 ## Definition
 
@@ -92,7 +92,7 @@ tags: [topology, math590]
 *Left: in a convex $X$, each point $f(s)$ of the loop slides straight to $x_0$ (red segments), and the intermediate loops $H(\cdot,t)$ (dashed) shrink onto $x_0$; convexity keeps every segment inside $X$. Right: the same formula fails in $\mathbb{R}^2 \setminus \{0\}$. For the point $f(s)$ opposite $x_0$ the segment runs through the missing origin, so $H(s,\tfrac12) = 0$ is not in the space (see [[§22 Homotopy of Paths#^rem-22-3|the convexity remark in §22]]).*
 
 > [!remark]- Connections
-> - Closed balls specifically: $B^n$ is Convex and Simply Connected ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5|§26.5]]).
+> - Closed balls specifically: $B^n$ is Convex and Simply Connected ([[§25a Retractions and Fixed Points#^prop-26-5|§26.5]]).
 > - Convex sets in a general real linear space: [[§2 Linear Maps, Convexity, and Linear Functionals#^def-2-3|556 Def. §2.3]].
 
 > [!remark] Remark: What $\pi_1$ Cannot See
@@ -105,7 +105,7 @@ tags: [topology, math590]
 ^rem-23-2
 
 > [!remark]- Connections
-> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: $\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$ ([[§26 Deformation Retracts and Homotopy Type#^thm-26-2|§26.2]]) together with $S^n$ is Simply Connected for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]).
+> - $\pi_1(\mathbb{R}^3 \setminus \{0\})$: $\pi_1(S^n) \cong \pi_1(\mathbb{R}^{n+1} \setminus \{0\})$ ([[§25a Retractions and Fixed Points#^thm-26-2|§26.2]]) together with $S^n$ is Simply Connected for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]).
 > - The general theorem, that nonempty open subsets of ℝⁿ and ℝᵐ are homeomorphic only when n = m, is stated without proof in 591 as [[§2 Topological Manifolds#^thm-2-1|591 Thm. §2.1]].
 
 ## Dependence on Basepoint
@@ -252,7 +252,7 @@ tags: [topology, math590]
 ^rem-23-4
 
 > [!remark] Remark: Naturality: Structure Transports Across Homeomorphisms
-> Functoriality has a powerful practical consequence: if you compute $\pi_1(X) \cong G$ using a covering map $p: E \to X$ and the [[§24 Covering Spaces#^def-24-7|lifting correspondence]], then for any homeomorphism $h: Y \to X$:
+> Functoriality has a powerful practical consequence: if you compute $\pi_1(X) \cong G$ using a covering map $p: E \to X$ and the [[§24a Lifting and the Fundamental Group of the Circle#^def-24-7|lifting correspondence]], then for any homeomorphism $h: Y \to X$:
 > 1. The **transported covering** $p' = h^{-1} \circ p: E \to Y$ is a covering map ([[§24 Covering Spaces#^prop-24-5|§24]]).
 > 2. The **transported computation** gives $\pi_1(Y) \cong G$ via $h_{\ast}$.
 > 3. The **diagram commutes** by functoriality: the lifting correspondence for $p'$ and the lifting correspondence for $p$ give the same group $G$, connected by $h_{\ast}$.

@@ -50,18 +50,6 @@ tags: [measure-theory, math551]
 > [!remark]- Connections
 > - The enumeration exists by [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2]]; the same $\epsilon/2^k$ cover shows [[§9 Lebesgue Outer Measure#^ex-9-2|Countable Sets Have Measure Zero]].
 
-> [!theorem] Theorem §6.1: Every Open Cover Has a Countable Subcover
-> Every open cover $\mathcal{C}$ has a countable subcover. That is, if $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in I}$, then there exists a countable subcollection $\mathcal{C}_1 = \{\mathcal{O}_{\alpha_j}\}_{j \in J}$ with $J \subseteq I$ countable, such that
->
-> $$
-> \bigcup_{\alpha \in I} \mathcal{O}_\alpha = \bigcup_{j \in J} \mathcal{O}_{\alpha_j}.
-> $$
-
-^thm-6-1
-
-> [!remark]- Connections
-> - Topology: every subspace of $\mathbb{R}^n$ is [[§18 Countability Axioms#^def-18-6|Lindelöf]], because $\mathbb{R}^n$ is [[§18 Countability Axioms#^ex-18-4|second-countable]] and [[§18 Countability Axioms#^thm-18-6|second-countable spaces are Lindelöf (590 §18.6)]]; the rational balls of the lemmas below are the countable basis.
-
 > [!theorem] Lemma §6.2
 > The set $\{B(r, \frac{1}{k}) \mid r \in \mathbb{Q}^n, k \in \mathbb{N}\}$ is countable.
 
@@ -162,12 +150,21 @@ tags: [measure-theory, math551]
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[Archimedean Property|451 §4.5]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Triangle inequality|LADR 6.17]]
 
 ![[m551-6-3.svg]]
-*Lemma §6.3: with $\tfrac2k < \rho$ and a rational point $r$ within $\tfrac1k$ of $x$, the rational ball $B(r,\tfrac1k)$ (red) contains $x$ and fits inside $B(x,\rho)$ (blue). For any $y$ in it, the detour $y \to r \to x$ is shorter than $\tfrac1k + \tfrac1k < \rho$ — the triangle inequality of the proof.*
+*[[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|Lemma §6.3]]: with $\tfrac2k < \rho$ and a rational point $r$ within $\tfrac1k$ of $x$, the rational ball $B(r,\tfrac1k)$ (red) contains $x$ and fits inside $B(x,\rho)$ (blue). For any $y$ in it, the detour $y \to r \to x$ is shorter than $\tfrac1k + \tfrac1k < \rho$ — the triangle inequality of the proof.*
 
 > [!remark]- Connections
 > - Topology: this is the argument that a separable metric space is second-countable ([[§18 Countability Axioms#^prop-18-4|590 §18.4]] (3)), with $D = \mathbb{Q}^n$ ([[§18 Countability Axioms#^ex-18-8|590 Ex. §18.8]]); so the rational balls form a countable [[§2 Basis for a Topology#^def-2-1|basis]] for $\mathbb{R}^n$.
 
-> [!proof]+ Proof of Theorem §6.1 (Countable Subcover)
+> [!theorem] Theorem §6.1: Every Open Cover Has a Countable Subcover
+> Every open cover $\mathcal{C}$ has a countable subcover. That is, if $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in I}$, then there exists a countable subcollection $\mathcal{C}_1 = \{\mathcal{O}_{\alpha_j}\}_{j \in J}$ with $J \subseteq I$ countable, such that
+>
+> $$
+> \bigcup_{\alpha \in I} \mathcal{O}_\alpha = \bigcup_{j \in J} \mathcal{O}_{\alpha_j}.
+> $$
+
+^thm-6-1
+
+> [!proof]+ Proof of [[§6 Open Covers and the Heine–Borel Theorem#^thm-6-1|Theorem §6.1]] (Countable Subcover)
 > Let $\mathcal{C} = \{\mathcal{O}_\alpha\}_{\alpha \in A}$ be an open cover, i.e., $\bigcup_{\alpha \in A} \mathcal{O}_\alpha = E$ for some set $E$.
 >
 > Let $x \in E$. Then $x \in \mathcal{O}_{\alpha_0}$ for some $\alpha_0 \in A$. Since $\mathcal{O}_{\alpha_0}$ is [[§5 Topology of ℝⁿ#^def-5-2|open]], there exists $\rho > 0$ such that $B(x, \rho) \subseteq \mathcal{O}_{\alpha_0}$.
@@ -197,6 +194,9 @@ tags: [measure-theory, math551]
 ^pf-6-1
 
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-3|§6.3]], [[§6 Open Covers and the Heine–Borel Theorem#^lem-6-2|§6.2]]
+
+> [!remark]- Connections
+> - Topology: every subspace of $\mathbb{R}^n$ is [[§18 Countability Axioms#^def-18-6|Lindelöf]], because $\mathbb{R}^n$ is [[§18 Countability Axioms#^ex-18-4|second-countable]] and [[§18 Countability Axioms#^thm-18-6|second-countable spaces are Lindelöf (590 §18.6)]]; the rational balls of the lemmas above are the countable basis.
 
 ## The Heine–Borel Theorem
 

@@ -173,6 +173,11 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 
 ## New Derivatives from Old
 
+> [!remark] Remark: Why It Works
+> Multiplying by $c$ stretches the graph of $f$ vertically by the factor $c$. Every rise is multiplied by $c$ while the runs stay the same, so every slope is multiplied by $c$.
+
+^rem-14-1
+
 > [!theorem] Theorem §14.3: The Constant Multiple Rule
 > If $c$ is a constant and $f$ is a differentiable function, then
 >
@@ -183,11 +188,6 @@ With the Power Rule, tangent lines no longer need the limit definition. A second
 > *Stewart: 3.1, The Constant Multiple Rule*
 
 ^thm-14-3
-
-> [!remark] Remark: Why It Works
-> Multiplying by $c$ stretches the graph of $f$ vertically by the factor $c$. Every rise is multiplied by $c$ while the runs stay the same, so every slope is multiplied by $c$.
-
-^rem-14-1
 
 > [!proof]+ Proof
 > Let $g(x) = c f(x)$. Then
@@ -244,7 +244,7 @@ For instance, $\frac{d}{dx}(3x^4) = 3 \cdot 4x^3 = 12x^3$, and $\frac{d}{dx}(-x)
 > [!remark]- Connections
 > - Rigorous treatment of the sum rule (and of the product and quotient rules, [[§15 The Product and Quotient Rules#^thm-15-1|Theorems §15.1]] and [[§15 The Product and Quotient Rules#^thm-15-2|§15.2]]): [[§28 Basic Properties of the Derivative#^thm-28-2|451 Thm. §28.2]].
 
-Combining Theorems §14.1–§14.4 differentiates any polynomial term by term.
+Combining Theorems [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-1|§14.1]]–[[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|§14.4]] differentiates any polynomial term by term.
 
 > [!example] Example §14.3: A Polynomial and Its Horizontal Tangents
 > **(a)** By the Sum, Difference, Constant Multiple and Power Rules,
@@ -319,7 +319,7 @@ $$
 > \lim_{h \to 0} \frac{2^h - 1}{h} \approx 0.693, \qquad \lim_{h \to 0} \frac{3^h - 1}{h} \approx 1.099 ,
 > $$
 >
-> so by Theorem §14.5,
+> so by [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|Theorem §14.5]],
 >
 > $$
 > \frac{d}{dx}(2^x) \approx (0.693)\,2^x, \qquad \frac{d}{dx}(3^x) \approx (1.099)\,3^x \qquad (5)
@@ -347,7 +347,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 *Stewart asserts that such a number exists. Appendix G constructs $e$ as the number with $\ln e = 1$ ([[§121 The Logarithm Defined as an Integral#^def-121-2|Definition §121.2]]).*
 
 ![[m233-14-1.svg]]
-*The exponential functions $2^x$, $e^x$ and $3^x$ all pass through $(0, 1)$. Their tangent lines there (dashed) have slopes $f'(0) \approx 0.693$, exactly $1$, and $\approx 1.099$. The number $e$ is the base for which the slope is exactly $1$; by Theorem §14.5 the slope of $b^x$ at every other point is then $f'(0)$ times the height.*
+*The exponential functions $2^x$, $e^x$ and $3^x$ all pass through $(0, 1)$. Their tangent lines there (dashed) have slopes $f'(0) \approx 0.693$, exactly $1$, and $\approx 1.099$. The number $e$ is the base for which the slope is exactly $1$; by [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|Theorem §14.5]] the slope of $b^x$ at every other point is then $f'(0)$ times the height.*
 
 > [!theorem] Theorem §14.6: Derivative of the Natural Exponential Function
 > $$
@@ -361,7 +361,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 ^thm-14-6
 
 > [!proof]+ Proof
-> Take $b = e$ in Theorem §14.5. By Definition §14.2, $f'(0) = \lim_{h \to 0} (e^h - 1)/h = 1$ exists, so $f(x) = e^x$ is differentiable everywhere with $f'(x) = 1 \cdot e^x = e^x$.
+> Take $b = e$ in [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-5|Theorem §14.5]]. By [[§14 Derivatives of Polynomials and Exponential Functions#^def-14-2|Definition §14.2]], $f'(0) = \lim_{h \to 0} (e^h - 1)/h = 1$ exists, so $f(x) = e^x$ is differentiable everywhere with $f'(x) = 1 \cdot e^x = e^x$.
 
 ^pf-14-6
 
@@ -372,7 +372,7 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 > [!example] Example §14.4: First and Second Derivatives
 > If $f(x) = e^x - x$, find $f'$ and $f''$, and compare the graphs of $f$ and $f'$.
 >
-> By the Difference Rule and Theorem §14.6,
+> By the Difference Rule and [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-6|Theorem §14.6]],
 >
 > $$
 > f'(x) = \frac{d}{dx}(e^x) - \frac{d}{dx}(x) = e^x - 1 .

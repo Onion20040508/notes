@@ -116,7 +116,7 @@ To picture $\mathbf{F}$, draw the arrow representing $\mathbf{F}(x, y)$ starting
 ## Gradient Fields
 
 > [!definition] Definition §107.3: Gradient Vector Field
-> If $f$ is a scalar function of two variables, its gradient ([[§95 Directional Derivatives and the Gradient Vector#^def-95-2|Definition §95.2]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-3|Definition §95.3]])
+> If $f$ is a scalar function of two variables, its gradient ([[§95 Directional Derivatives and the Gradient Vector#^def-95-2|Definition §95.2]], [[§95 Directional Derivatives and the Gradient Vector#^def-95-new1|Definition §95.4]])
 >
 > $$
 > \nabla f(x, y) = f_x(x, y)\,\mathbf{i} + f_y(x, y)\,\mathbf{j}

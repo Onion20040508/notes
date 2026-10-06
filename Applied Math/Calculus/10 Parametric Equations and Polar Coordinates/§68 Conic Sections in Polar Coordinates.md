@@ -78,7 +78,7 @@ tags: [calculus]
 > c^2 = a^2 - b^2 = \frac{e^2d^2 - e^2d^2(1 - e^2)}{(1 - e^2)^2} = \frac{e^4d^2}{(1 - e^2)^2}, \qquad c = \frac{e^2d}{1 - e^2} = -h . \qquad (5)
 > $$
 >
-> So the right-hand focus $(h + c, 0) = (0, 0)$ is $F$: the focus of Theorem §68.1 is a focus in the sense of §67. Dividing, $c/a = \dfrac{e^2d/(1 - e^2)}{ed/(1 - e^2)} = e$.
+> So the right-hand focus $(h + c, 0) = (0, 0)$ is $F$: the focus of [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]] is a focus in the sense of §67. Dividing, $c/a = \dfrac{e^2d/(1 - e^2)}{ed/(1 - e^2)} = e$.
 >
 > **$e > 1$.** Then $1 - e^2 < 0$, and multiplying (3) by $(1 - e^2)^2/(e^2d^2)$ gives the hyperbola $\dfrac{(x - h)^2}{a^2} - \dfrac{y^2}{b^2} = 1$ with $h = \dfrac{e^2d}{e^2 - 1}$, $a^2 = \dfrac{e^2d^2}{(e^2 - 1)^2}$, $b^2 = \dfrac{e^2d^2}{e^2 - 1}$. By [[§67 Conic Sections#^thm-67-5|Theorem §67.5]], $c^2 = a^2 + b^2 = \dfrac{e^2d^2 + e^2d^2(e^2 - 1)}{(e^2 - 1)^2} = \dfrac{e^4d^2}{(e^2 - 1)^2}$, so $c = \dfrac{e^2d}{e^2 - 1} = h$. The focus $(h - c, 0) = (0, 0)$ is $F$, and again $e = c/a$, now with $c^2 = a^2 + b^2$.
 >
@@ -123,9 +123,9 @@ To rotate a polar curve, rotate its angle variable.
 ^thm-68-3
 
 > [!proof]+ Proof
-> **Directrix $x = d$.** Solving Equation 2, $r = e(d - r\cos\theta)$, for $r$ gives $r(1 + e\cos\theta) = ed$, that is, $r = \dfrac{ed}{1 + e\cos\theta}$. (Stewart stops here. Negative values of $r$ occur when $1 + e\cos\theta < 0$, which is possible only for $e > 1$; they give the branch of the hyperbola to the right of the directrix. Here is why the equation describes exactly the conic.) If $(r, \theta)$ satisfies the equation, then $r = e(d - r\cos\theta) = e(d - x)$, so $x^2 + y^2 = r^2 = e^2(d - x)^2$, which is $|PF| = e|Pl|$. Conversely, let $P(x, y)$ satisfy $|PF| = e|Pl|$; $P$ is not on $l$, since then $|PF| = 0$ and $P = F$, which is not on $l$. If $x < d$, represent $P$ with $r = |PF| > 0$: then $r = e(d - x) = e(d - r\cos\theta)$. If $x > d$, represent $P$ with $r = -|PF| < 0$, which does not change $x = r\cos\theta$: then $r = -e(x - d) = e(d - r\cos\theta)$. Either way some representation satisfies the polar equation. By Theorem §68.1 the graph is the conic with eccentricity $e$.
+> **Directrix $x = d$.** Solving Equation 2, $r = e(d - r\cos\theta)$, for $r$ gives $r(1 + e\cos\theta) = ed$, that is, $r = \dfrac{ed}{1 + e\cos\theta}$. (Stewart stops here. Negative values of $r$ occur when $1 + e\cos\theta < 0$, which is possible only for $e > 1$; they give the branch of the hyperbola to the right of the directrix. Here is why the equation describes exactly the conic.) If $(r, \theta)$ satisfies the equation, then $r = e(d - r\cos\theta) = e(d - x)$, so $x^2 + y^2 = r^2 = e^2(d - x)^2$, which is $|PF| = e|Pl|$. Conversely, let $P(x, y)$ satisfy $|PF| = e|Pl|$; $P$ is not on $l$, since then $|PF| = 0$ and $P = F$, which is not on $l$. If $x < d$, represent $P$ with $r = |PF| > 0$: then $r = e(d - x) = e(d - r\cos\theta)$. If $x > d$, represent $P$ with $r = -|PF| < 0$, which does not change $x = r\cos\theta$: then $r = -e(x - d) = e(d - r\cos\theta)$. Either way some representation satisfies the polar equation. By [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]] the graph is the conic with eccentricity $e$.
 >
-> **The other directrices.** By Lemma §68.2, rotating the conic of the first case through $\pi$, $\pi/2$ and $-\pi/2$ (which takes the directrix $x = d$ to $x = -d$, $y = d$, $y = -d$) replaces $\cos\theta$ by
+> **The other directrices.** By [[§68 Conic Sections in Polar Coordinates#^lem-68-2|Lemma §68.2]], rotating the conic of the first case through $\pi$, $\pi/2$ and $-\pi/2$ (which takes the directrix $x = d$ to $x = -d$, $y = d$, $y = -d$) replaces $\cos\theta$ by
 >
 > $$
 > \cos(\theta - \pi) = -\cos\theta, \qquad \cos(\theta - \tfrac{\pi}{2}) = \sin\theta, \qquad \cos(\theta + \tfrac{\pi}{2}) = -\sin\theta .
@@ -146,7 +146,7 @@ To rotate a polar curve, rotate its angle variable.
 > [!example] Example §68.1: A Parabola with Focus at the Origin
 > Find a polar equation for the parabola with focus at the origin and directrix $y = -6$.
 >
-> By Theorem §68.3 with $e = 1$, $d = 6$ and the directrix below the focus, $r = \dfrac{6}{1 - \sin\theta}$.
+> By [[§68 Conic Sections in Polar Coordinates#^thm-68-3|Theorem §68.3]] with $e = 1$, $d = 6$ and the directrix below the focus, $r = \dfrac{6}{1 - \sin\theta}$.
 >
 > *Stewart: Example 10.6.1*
 
@@ -155,7 +155,7 @@ To rotate a polar curve, rotate its angle variable.
 > [!example] Example §68.2: An Ellipse, and the Same Ellipse Rotated
 > Identify $r = \dfrac{10}{3 - 2\cos\theta}$, find its eccentricity and directrix, and sketch it. Then rotate it through $\pi/4$ about the origin.
 >
-> Dividing numerator and denominator by $3$, $r = \dfrac{10/3}{1 - \frac23\cos\theta}$. By Theorem §68.3 this is an ellipse with $e = \frac23$. Since $ed = \frac{10}{3}$, $d = \dfrac{10/3}{2/3} = 5$, and the directrix is $x = -5$. Values of $r$:
+> Dividing numerator and denominator by $3$, $r = \dfrac{10/3}{1 - \frac23\cos\theta}$. By [[§68 Conic Sections in Polar Coordinates#^thm-68-3|Theorem §68.3]] this is an ellipse with $e = \frac23$. Since $ed = \frac{10}{3}$, $d = \dfrac{10/3}{2/3} = 5$, and the directrix is $x = -5$. Values of $r$:
 >
 > | $\theta$ | $0$ | $\pi/2$ | $\pi$ | $3\pi/2$ |
 > |---|---|---|---|---|
@@ -163,7 +163,7 @@ To rotate a polar curve, rotate its angle variable.
 >
 > The vertices are $(10, 0)$ and $(2, \pi)$, the point $(-2, 0)$ in Cartesian coordinates; the ellipse crosses the $y$-axis at $(0, \pm\frac{10}{3})$, and its left focus is the origin. (Check: $2a = 10 + 2 = 12$, so $a = 6$, the center is $(4, 0)$, $c = 4$, and $c/a = \frac23 = e$.)
 >
-> **Rotation.** By Lemma §68.2, replacing $\theta$ by $\theta - \pi/4$ gives the ellipse rotated counterclockwise through $\pi/4$ about the origin, which is its left focus:
+> **Rotation.** By [[§68 Conic Sections in Polar Coordinates#^lem-68-2|Lemma §68.2]], replacing $\theta$ by $\theta - \pi/4$ gives the ellipse rotated counterclockwise through $\pi/4$ about the origin, which is its left focus:
 >
 > $$
 > r = \frac{10}{3 - 2\cos(\theta - \pi/4)} .
@@ -209,7 +209,7 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 ^thm-68-4
 
 > [!proof]+ Proof
-> By (4) in the proof of Theorem §68.1, $a^2 = \dfrac{e^2d^2}{(1 - e^2)^2}$, so $d^2 = \dfrac{a^2(1 - e^2)^2}{e^2}$ and, since $d$, $a$, $1 - e^2$ and $e$ are positive, $d = \dfrac{a(1 - e^2)}{e}$. Hence $ed = a(1 - e^2)$, and Theorem §68.3 gives $r = \dfrac{ed}{1 + e\cos\theta} = \dfrac{a(1 - e^2)}{1 + e\cos\theta}$.
+> By (4) in the proof of [[§68 Conic Sections in Polar Coordinates#^thm-68-1|Theorem §68.1]], $a^2 = \dfrac{e^2d^2}{(1 - e^2)^2}$, so $d^2 = \dfrac{a^2(1 - e^2)^2}{e^2}$ and, since $d$, $a$, $1 - e^2$ and $e$ are positive, $d = \dfrac{a(1 - e^2)}{e}$. Hence $ed = a(1 - e^2)$, and [[§68 Conic Sections in Polar Coordinates#^thm-68-3|Theorem §68.3]] gives $r = \dfrac{ed}{1 + e\cos\theta} = \dfrac{a(1 - e^2)}{1 + e\cos\theta}$.
 
 ^pf-68-4
 
@@ -230,7 +230,7 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 ^cor-68-5
 
 > [!proof]+ Proof
-> Put the sun at the focus $F$ = origin, as in Theorem §68.4. The distance $r = \dfrac{a(1 - e^2)}{1 + e\cos\theta}$ is smallest when $\cos\theta = 1$ and largest when $\cos\theta = -1$ (since $0 < e < 1$, the denominator is positive and largest, resp. smallest, there). At perihelion, $\theta = 0$:
+> Put the sun at the focus $F$ = origin, as in [[§68 Conic Sections in Polar Coordinates#^thm-68-4|Theorem §68.4]]. The distance $r = \dfrac{a(1 - e^2)}{1 + e\cos\theta}$ is smallest when $\cos\theta = 1$ and largest when $\cos\theta = -1$ (since $0 < e < 1$, the denominator is positive and largest, resp. smallest, there). At perihelion, $\theta = 0$:
 >
 > $$
 > r = \frac{a(1 - e^2)}{1 + e} = \frac{a(1 - e)(1 + e)}{1 + e} = a(1 - e) ,
@@ -245,7 +245,7 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 > [!example] Example §68.4: The Earth's Orbit
 > The eccentricity of the earth's orbit is about $0.017$ and the length of the major axis about $2.99 \times 10^8$ km. (a) Find an approximate polar equation for the orbit, with the sun at the origin. (b) Find the perihelion and aphelion distances.
 >
-> **(a)** $2a = 2.99 \times 10^8$, so $a = 1.495 \times 10^8$. By Theorem §68.4,
+> **(a)** $2a = 2.99 \times 10^8$, so $a = 1.495 \times 10^8$. By [[§68 Conic Sections in Polar Coordinates#^thm-68-4|Theorem §68.4]],
 >
 > $$
 > r = \frac{(1.495 \times 10^8)[1 - (0.017)^2]}{1 + 0.017\cos\theta} \approx \frac{1.49 \times 10^8}{1 + 0.017\cos\theta}
@@ -253,7 +253,7 @@ In 1609 Kepler, from large amounts of astronomical data, published three laws of
 >
 > (the numerator is $1.495 \times 10^8 \times 0.999711 \approx 1.4946 \times 10^8$).
 >
-> **(b)** By Corollary §68.5, the perihelion distance is $a(1 - e) \approx (1.495 \times 10^8)(0.983) \approx 1.47 \times 10^8$ km and the aphelion distance is $a(1 + e) \approx (1.495 \times 10^8)(1.017) \approx 1.52 \times 10^8$ km.
+> **(b)** By [[§68 Conic Sections in Polar Coordinates#^cor-68-5|Corollary §68.5]], the perihelion distance is $a(1 - e) \approx (1.495 \times 10^8)(0.983) \approx 1.47 \times 10^8$ km and the aphelion distance is $a(1 + e) \approx (1.495 \times 10^8)(1.017) \approx 1.52 \times 10^8$ km.
 >
 > *Stewart: Example 10.6.5*
 

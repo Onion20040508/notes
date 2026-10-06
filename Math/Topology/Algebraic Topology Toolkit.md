@@ -27,7 +27,7 @@ If $A$ is a deformation retract of $X$, then $\pi_1(X) \cong \pi_1(A)$ ([[§26 D
 
 *When to use:* The space has “unnecessary” parts that can be continuously collapsed onto a subspace you already understand.
 
-**Tool 2: [[§24 Covering Spaces#^def-24-3|Covering Spaces]] + [[§24 Covering Spaces#^def-24-7|Lifting Correspondence]] ([[§24 Covering Spaces|§24]]).** *Count the fiber.*
+**Tool 2: [[§24 Covering Spaces#^def-24-3|Covering Spaces]] + [[§24a Lifting and the Fundamental Group of the Circle#^def-24-7|Lifting Correspondence]] ([[§24 Covering Spaces|§24]]).** *Count the fiber.*
 
 If $p: E \to B$ is a [[§24 Covering Spaces#^def-24-2|covering map]] with $E$ [[§23 The Fundamental Group#^def-23-3|simply connected]], then $\pi_1(B) \leftrightarrow p^{-1}(b_0)$ ([[Properties of the Lifting Correspondence|bijection via lifting correspondence]]).
 
@@ -74,12 +74,12 @@ Once you can compute, [[§23 The Fundamental Group#^cor-23-6|the contrapositive]
 
 | **Space** | $\pi_1$ | **Tool used** |
 |---|---|---|
-| $\mathbb{R}^n$ ([[§23 The Fundamental Group#^ex-23-1\|Ex. §23.1]]), $B^n$ ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5\|§26.5]]), [[§23 The Fundamental Group#^ex-23-2\|convex sets]] | $0$ | Simply connected ([[§22 Homotopy of Paths#^thm-22-1\|straight-line homotopy]]) |
+| $\mathbb{R}^n$ ([[§23 The Fundamental Group#^ex-23-1\|Ex. §23.1]]), $B^n$ ([[§25a Retractions and Fixed Points#^prop-26-5\|§26.5]]), [[§23 The Fundamental Group#^ex-23-2\|convex sets]] | $0$ | Simply connected ([[§22 Homotopy of Paths#^thm-22-1\|straight-line homotopy]]) |
 | $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]) | $0$ | Tool 4: [[§27 The Fundamental Group of Sⁿ#^thm-27-1\|generation theorem]] + [[§27 The Fundamental Group of Sⁿ#^pf-27-3\|stereographic projection]] |
 | $S^1$ ([[Fundamental Group of the Circle\|§24.10]]) | $\mathbb{Z}$ | Tool 2: covering $\mathbb{R} \to S^1$ ([[§24 Covering Spaces#^thm-24-2\|§24.2]]), [[Properties of the Lifting Correspondence\|lifting correspondence]] |
 | $P^n$ ($n \geq 2$) ([[§28 Fundamental Group of Some Surfaces#^thm-28-3\|§28.3]]) | $\mathbb{Z}/2\mathbb{Z}$ | Tool 2: covering $S^n \to P^n$ ([[§28 Fundamental Group of Some Surfaces#^thm-28-1\|§28.1]]), fiber has 2 points |
 | $T^n = (S^1)^n$ | $\mathbb{Z}^n$ | Tool 3: [[§23 The Fundamental Group#^thm-23-7\|product formula]] |
-| $B^2 \times S^1$ | $\mathbb{Z}$ | Tool 3: $\pi_1(B^2)$ ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5\|§26.5]]) $\times$ $\pi_1(S^1)$ ([[Fundamental Group of the Circle\|§24.10]]) $= 0 \times \mathbb{Z}$ |
+| $B^2 \times S^1$ | $\mathbb{Z}$ | Tool 3: $\pi_1(B^2)$ ([[§25a Retractions and Fixed Points#^prop-26-5\|§26.5]]) $\times$ $\pi_1(S^1)$ ([[Fundamental Group of the Circle\|§24.10]]) $= 0 \times \mathbb{Z}$ |
 | $\mathbb{R}^2 \setminus \{0\}$ ([[§26 Deformation Retracts and Homotopy Type#^ex-26-7\|Ex. §26.7]]) | $\mathbb{Z}$ | Tool 1: deformation retract onto $S^1$ ([[§26 Deformation Retracts and Homotopy Type#^ex-26-7\|Ex. §26.7]]) |
 | $\mathbb{R}^3 \setminus \{z\text{-axis}\}$ ([[§26 Deformation Retracts and Homotopy Type#^ex-26-2\|Ex. §26.2]]) | $\mathbb{Z}$ | Tool 1: onto $\mathbb{R}^2 \setminus \{0\}$ then $S^1$ |
 | [[§28 Fundamental Group of Some Surfaces#^def-28-4\|Figure eight]] | $F_2$ (non-abelian) | Tool 4: [[§29 The Seifert–van Kampen Theorem#^ex-29-2\|van Kampen]] (or Tool 2: [[§28 Fundamental Group of Some Surfaces#^thm-28-4\|covering space proves non-abelian]]) |
@@ -99,16 +99,16 @@ A common exam question: *find a space $X$ with $\pi_1(X) \cong G$*. The strategy
 
 | **Target group** | **Space** |
 |---|---|
-| $0$ (trivial) | $\mathbb{R}^n$ ([[§23 The Fundamental Group#^ex-23-1\|Ex. §23.1]]), $B^n$ ([[§26 Deformation Retracts and Homotopy Type#^prop-26-5\|§26.5]]), $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]), any [[§26 Deformation Retracts and Homotopy Type#^thm-26-16\|contractible space]] |
+| $0$ (trivial) | $\mathbb{R}^n$ ([[§23 The Fundamental Group#^ex-23-1\|Ex. §23.1]]), $B^n$ ([[§25a Retractions and Fixed Points#^prop-26-5\|§26.5]]), $S^n$ ($n \geq 2$) ([[Sⁿ is Simply Connected for n ≥ 2\|§27.3]]), any [[§26 Deformation Retracts and Homotopy Type#^thm-26-16\|contractible space]] |
 | $\mathbb{Z}$ | $S^1$ ([[Fundamental Group of the Circle\|§24.10]]) |
-| $\mathbb{Z}/n\mathbb{Z}$ | $P^2$ ([[§28 Fundamental Group of Some Surfaces#^thm-28-2\|§28.2]]) (for $n = 2$), [[§21 Algebra Prerequisites꞉ Groups#^rem-21-11\|lens spaces]], $n$-fold dunce cap ([[§29 The Seifert–van Kampen Theorem#^ex-29-6\|Ex. §29.6]]) |
+| $\mathbb{Z}/n\mathbb{Z}$ | $P^2$ ([[§28 Fundamental Group of Some Surfaces#^thm-28-2\|§28.2]]) (for $n = 2$), [[§21a Free Groups and Presentations#^rem-21-11\|lens spaces]], $n$-fold dunce cap ([[§29 The Seifert–van Kampen Theorem#^ex-29-6\|Ex. §29.6]]) |
 
 **Operations:**
 
 | **Group operation** | **Space operation** | **Effect on $\pi_1$** |
 |---|---|---|
 | [[§21 Algebra Prerequisites꞉ Groups#^def-21-5\|Direct product]] $G \times H$ | Product $X \times Y$ | $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$ ([[§23 The Fundamental Group#^thm-23-7\|§23.7]]) |
-| [[§21 Algebra Prerequisites꞉ Groups#^def-21-9\|Free product]] $G * H$ | [[§28 Fundamental Group of Some Surfaces#^def-28-3\|Wedge]] $X \vee Y$ | $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ for “nice” $X, Y$ ([[§29 The Seifert–van Kampen Theorem#^cor-29-2\|§29.2]]; see [[§28 Fundamental Group of Some Surfaces#^rem-28-3\|Wedge Sum vs. Product]]) |
+| [[§21a Free Groups and Presentations#^def-21-9\|Free product]] $G * H$ | [[§28 Fundamental Group of Some Surfaces#^def-28-3\|Wedge]] $X \vee Y$ | $\pi_1(X \vee Y) \cong \pi_1(X) * \pi_1(Y)$ for “nice” $X, Y$ ([[§29 The Seifert–van Kampen Theorem#^cor-29-2\|§29.2]]; see [[§28 Fundamental Group of Some Surfaces#^rem-28-3\|Wedge Sum vs. Product]]) |
 
 Multiplying by a simply connected factor does not change $\pi_1$: $\pi_1(X \times S^2) \cong \pi_1(X) \times 0 \cong \pi_1(X)$.
 
@@ -123,9 +123,9 @@ Multiplying by a simply connected factor does not change $\pi_1$: $\pi_1(X \time
 ^ex-35-1
 
 > [!remark] Remark: Direct Product vs. Free Product: The Exam Trap
-> The notation matters: $\times$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], abelian when the factors are) vs. $\ast$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-9|free product]], typically non-abelian) correspond to different space constructions ($\times$ vs. $\vee$). On an exam, $\mathbb{Z}/2 \times \mathbb{Z}/2$ and $\mathbb{Z}/2 \ast  \mathbb{Z}/2$ are *different groups* requiring *different spaces*. Always check which one is being asked for.
+> The notation matters: $\times$ ([[§21 Algebra Prerequisites꞉ Groups#^def-21-5|direct product]], abelian when the factors are) vs. $\ast$ ([[§21a Free Groups and Presentations#^def-21-9|free product]], typically non-abelian) correspond to different space constructions ($\times$ vs. $\vee$). On an exam, $\mathbb{Z}/2 \times \mathbb{Z}/2$ and $\mathbb{Z}/2 \ast  \mathbb{Z}/2$ are *different groups* requiring *different spaces*. Always check which one is being asked for.
 
 ^rem-35-1
 
 > [!remark]- Connections
-> - The algebraic comparison: [[§21 Algebra Prerequisites꞉ Groups#^rem-21-10|Direct Product vs Free Product]]; the topological one: [[§28 Fundamental Group of Some Surfaces#^rem-28-3|Wedge Sum vs. Product]].
+> - The algebraic comparison: [[§21a Free Groups and Presentations#^rem-21-10|Direct Product vs Free Product]]; the topological one: [[§28 Fundamental Group of Some Surfaces#^rem-28-3|Wedge Sum vs. Product]].

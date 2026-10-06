@@ -15,6 +15,11 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 
 ## Derivatives of Logarithmic Functions
 
+> [!remark] Remark: Why It Works
+> A differentiable function has a graph with no corner or cusp. The graph of $f^{-1}$ is the reflection of the graph of $f$ about the line $y = x$, so it has no corner or cusp either. Reflection swaps rise and run, so a tangent of slope $m$ at $(b, a)$ on the graph of $f$ becomes a tangent of slope $1/m$ at $(a, b)$ on the graph of $f^{-1}$. If $f$ has a horizontal tangent ($m = 0$), the reflected tangent is vertical, and $f^{-1}$ is not differentiable there.
+
+^rem-19-1
+
 > [!theorem] Theorem §19.1: Derivative of an Inverse Function
 > Let $f$ be a one-to-one differentiable function on an open interval, with inverse function $f^{-1}$. If $f'(f^{-1}(a)) \ne 0$, then $f^{-1}$ is differentiable at $a$ and
 >
@@ -25,11 +30,6 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 > *Stewart: 3.6 (text); proof in Appendix F*
 
 ^thm-19-1
-
-> [!remark] Remark: Why It Works
-> A differentiable function has a graph with no corner or cusp. The graph of $f^{-1}$ is the reflection of the graph of $f$ about the line $y = x$, so it has no corner or cusp either. Reflection swaps rise and run, so a tangent of slope $m$ at $(b, a)$ on the graph of $f$ becomes a tangent of slope $1/m$ at $(a, b)$ on the graph of $f^{-1}$. If $f$ has a horizontal tangent ($m = 0$), the reflected tangent is vertical, and $f^{-1}$ is not differentiable there.
-
-^rem-19-1
 
 > [!proof]+ Proof
 > Let $b = f^{-1}(a)$, so $f(b) = a$. Write the definition of the derivative in the second form of [[§12 Derivatives and Rates of Change#^def-12-3|Definition §12.3]] (Equation 2.7.5):
@@ -52,12 +52,12 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 *Uses:* [[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]] (definition of the derivative), [[§10 Continuity#^thm-10-5|§10.5]], [[§10 Continuity#^thm-10-7|§10.7]], [[§13 The Derivative as a Function#^thm-13-1|§13.1]] (differentiable implies continuous), [[§8 Calculating Limits Using the Limit Laws#^thm-8-1|§8.1]] (Limit Law 5)
 
 ![[m233-19-1.svg]]
-*Theorem §19.1 for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as Corollary §19.3 confirms.*
+*[[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]] for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Corollary §19.3]] confirms.*
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]] (the Inverse Function Theorem), with the same argument through the sequential definition of the limit. Its example $f(x) = x^3$ at $0$ shows why $f' \ne 0$ is needed.
 
-The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is differentiable with derivative $b^x \ln b \ne 0$ ([[§17 The Chain Rule#^thm-17-5|Theorem §17.5]]; $b > 0$, $b \ne 1$). So by Theorem §19.1 the logarithmic functions are differentiable.
+The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is differentiable with derivative $b^x \ln b \ne 0$ ([[§17 The Chain Rule#^thm-17-5|Theorem §17.5]]; $b > 0$, $b \ne 1$). So by [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]] the logarithmic functions are differentiable.
 
 > [!theorem] Theorem §19.2: Derivative of a Logarithmic Function
 > For $b > 0$, $b \ne 1$ and $x > 0$,
@@ -93,7 +93,7 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 ^cor-19-3
 
 > [!proof]+ Proof
-> Put $b = e$ in Theorem §19.2: $\log_e x = \ln x$ and $\ln e = 1$.
+> Put $b = e$ in [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2|Theorem §19.2]]: $\log_e x = \ln x$ and $\ln e = 1$.
 
 ^pf-19-3
 
@@ -104,7 +104,7 @@ The logarithmic function $y = \log_b x$ is the inverse of $y = b^x$, which is di
 > [!remark]- Connections
 > - Complex-variables version: [[§33 Branches and Derivatives of Logarithms#^thm-33-1|342 Thm. §33.1]] (each branch of $\log z$ is analytic, with derivative $1/z$).
 
-Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that natural logarithms (base $e$) are used in calculus: the differentiation formula is simplest when $b = e$, because $\ln e = 1$.
+Comparing [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2|Theorem §19.2]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Corollary §19.3]] shows one of the main reasons that natural logarithms (base $e$) are used in calculus: the differentiation formula is simplest when $b = e$, because $\ln e = 1$.
 
 > [!theorem] Corollary §19.4: The Logarithm of a Function
 > If $u = g(x)$ is differentiable and positive, then
@@ -118,14 +118,14 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 ^cor-19-4
 
 > [!proof]+ Proof
-> With $y = \ln u$, the Chain Rule and Corollary §19.3 give $\dfrac{dy}{dx} = \dfrac{dy}{du}\,\dfrac{du}{dx} = \dfrac1u\,\dfrac{du}{dx}$. For example, $\dfrac{d}{dx}\ln(x^3 + 1) = \dfrac{1}{x^3 + 1}(3x^2) = \dfrac{3x^2}{x^3 + 1}$ (Stewart, Example 3.6.1).
+> With $y = \ln u$, the Chain Rule and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Corollary §19.3]] give $\dfrac{dy}{dx} = \dfrac{dy}{du}\,\dfrac{du}{dx} = \dfrac1u\,\dfrac{du}{dx}$. For example, $\dfrac{d}{dx}\ln(x^3 + 1) = \dfrac{1}{x^3 + 1}(3x^2) = \dfrac{3x^2}{x^3 + 1}$ (Stewart, Example 3.6.1).
 
 ^pf-19-4
 
 *Uses:* [[§17 The Chain Rule#^thm-17-2|§17.2]], [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|§19.3]]
 
 > [!example] Example §19.1: Logarithm Outside, Logarithm Inside
-> **(a)** Find $\dfrac{d}{dx}\ln(\sin x)$. The logarithm is the outer function, so by Corollary §19.4
+> **(a)** Find $\dfrac{d}{dx}\ln(\sin x)$. The logarithm is the outer function, so by [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-4|Corollary §19.4]]
 >
 > $$
 > \frac{d}{dx}\ln(\sin x) = \frac{1}{\sin x}\,\frac{d}{dx}(\sin x) = \frac{1}{\sin x}\cos x = \cot x .
@@ -137,7 +137,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > f'(x) = \tfrac12 (\ln x)^{-1/2} \frac{d}{dx}(\ln x) = \frac{1}{2\sqrt{\ln x}} \cdot \frac1x = \frac{1}{2x\sqrt{\ln x}} .
 > $$
 >
-> (Similarly, Theorem §19.2 with $b = 10$ gives $\dfrac{d}{dx}\log_{10}(2 + \sin x) = \dfrac{\cos x}{(2 + \sin x)\ln 10}$.)
+> (Similarly, [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-2|Theorem §19.2]] with $b = 10$ gives $\dfrac{d}{dx}\log_{10}(2 + \sin x) = \dfrac{\cos x}{(2 + \sin x)\ln 10}$.)
 >
 > *Stewart: Examples 3.6.2, 3.6.3 and 3.6.4*
 
@@ -146,7 +146,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > [!example] Example §19.2: Expand with the Laws of Logarithms First
 > Find $\dfrac{d}{dx}\ln\dfrac{x + 1}{\sqrt{x - 2}}$.
 >
-> **Solution 1.** By Corollary §19.4 and the Quotient Rule,
+> **Solution 1.** By [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-4|Corollary §19.4]] and the Quotient Rule,
 >
 > $$
 > \begin{aligned}
@@ -187,7 +187,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > f(x) = \ln|x| = \begin{cases} \ln x & \text{if } x > 0 \\ \ln(-x) & \text{if } x < 0 \end{cases}
 > $$
 >
-> it follows from Corollaries §19.3 and §19.4 that
+> it follows from Corollaries [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|§19.3]] and [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-4|§19.4]] that
 >
 > $$
 > f'(x) = \begin{cases} \dfrac1x & \text{if } x > 0 \\[6pt] \dfrac{1}{-x}(-1) = \dfrac1x & \text{if } x < 0 . \end{cases}
@@ -207,7 +207,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > 2. Differentiate implicitly with respect to $x$.
 > 3. Solve the resulting equation for $y'$ and replace $y$ by $f(x)$.
 >
-> If $f(x) < 0$ for some values of $x$, then $\ln f(x)$ is not defined; take logarithms of $|y| = |f(x)|$ instead and use Theorem §19.5. The left side differentiates to $y'/y$ in both cases.
+> If $f(x) < 0$ for some values of $x$, then $\ln f(x)$ is not defined; take logarithms of $|y| = |f(x)|$ instead and use [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]]. The left side differentiates to $y'/y$ in both cases.
 >
 > *Stewart: 3.6, Steps in Logarithmic Differentiation*
 
@@ -258,7 +258,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 > \ln|y| = \ln|x|^n = n\ln|x|, \qquad x \ne 0 .
 > $$
 >
-> By Theorem §19.5 (with the Chain Rule on the left),
+> By [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-5|Theorem §19.5]] (with the Chain Rule on the left),
 >
 > $$
 > \frac{y'}{y} = \frac{n}{x}, \qquad\text{hence}\qquad y' = n\,\frac{y}{x} = n\,\frac{x^n}{x} = n x^{n-1} .
@@ -321,7 +321,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 ^thm-19-7
 
 > [!proof]+ Proof
-> Let $f(x) = \ln x$. By Corollary §19.3, $f'(x) = 1/x$, so $f'(1) = 1$. From the definition of the derivative,
+> Let $f(x) = \ln x$. By [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-19-3|Corollary §19.3]], $f'(x) = 1/x$, so $f'(1) = 1$. From the definition of the derivative,
 >
 > $$
 > \begin{aligned}
@@ -349,7 +349,7 @@ Comparing Theorem §19.2 and Corollary §19.3 shows one of the main reasons that
 
 ## Derivatives of Inverse Trigonometric Functions
 
-The inverse trigonometric functions were defined in [[§5 Inverse Functions and Logarithms#^def-5-5|Definitions §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]]. The trigonometric functions, restricted to the intervals used to define their inverses, are one-to-one and differentiable, so by Theorem §19.1 the inverse trigonometric functions are differentiable (except where the tangents are vertical, at $x = \pm 1$ for $\sin^{-1}$ and $\cos^{-1}$). Implicit differentiation finds the derivatives.
+The inverse trigonometric functions were defined in [[§5 Inverse Functions and Logarithms#^def-5-5|Definitions §5.5]]–[[§5 Inverse Functions and Logarithms#^def-5-8|§5.8]]. The trigonometric functions, restricted to the intervals used to define their inverses, are one-to-one and differentiable, so by [[§19 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-19-1|Theorem §19.1]] the inverse trigonometric functions are differentiable (except where the tangents are vertical, at $x = \pm 1$ for $\sin^{-1}$ and $\cos^{-1}$). Implicit differentiation finds the derivatives.
 
 > [!theorem] Theorem §19.8: Derivatives of Inverse Trigonometric Functions
 > $$

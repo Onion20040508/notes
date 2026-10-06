@@ -124,71 +124,12 @@ Suppose $(f(x,y), g(x,y))$ is a vector field (force field) in the plane. We want
 
 For convenience, assume $D$ can be represented simultaneously as:
 - **[[§15 Multivariable Integration#^def-15-12|Type I]]** (upper and lower graphs in $x$): $D = \{(x,y) : a \leq x \leq b, \; \phi(x) \leq y \leq \psi(x)\}$
-- **[[§15 Multivariable Integration#^def-15-12|Type II]]** (left and right graphs in $y$): $D = \{(x,y) : c \leq y \leq d, \; \alpha(y) \leq x \leq \beta(y)\}$
+- **[[§15 Multivariable Integration#^def-15-new5|Type II]]** (left and right graphs in $y$): $D = \{(x,y) : c \leq y \leq d, \; \alpha(y) \leq x \leq \beta(y)\}$
 
 If $D$ cannot be represented this way (e.g., if $D$ is not convex), we subdivide $D$ into pieces that can, and sum the results. The boundary contributions from internal cuts cancel.
 
 ![[m452-16-3.svg]]
 *Why the integral theorems glue: apply the theorem to each cell with its own counterclockwise boundary. The shared internal edge is traversed in opposite directions by the two cells, so its two line-integral contributions cancel exactly, leaving only the outer boundary. This is how the proof extends from simple (Type I and II) pieces to arbitrary decomposable regions — and, in [[§23 The Generalized Stokes' Theorem|§23]], how Stokes' theorem passes from one parameter patch to a whole manifold.*
-
-### Derivation: The $\oint f \, dx$ Term
-
-Consider $\oint_\gamma f \, dx$ using the Type I representation. The boundary $\gamma$ consists of two pieces:
-- $\gamma_1$: the lower curve $y = \phi(x)$, traversed from $x = a$ to $x = b$ (left to right).
-- $\gamma_2$: the upper curve $y = \psi(x)$, traversed from $x = b$ to $x = a$ (right to left).
-
-(The vertical segments at $x = a$ and $x = b$, if present, contribute zero to $\oint f \, dx$ since $dx = 0$ on them.)
-
-![[m452-16-4.svg]]
-*The two halves of the proof on one region. Left (Type I): the lower curve $\gamma_1$ (blue) runs left to right, the upper curve $\gamma_2$ (red) right to left; on each vertical fiber at $x$ the FTC in $y$ turns $f(x,\phi(x)) - f(x,\psi(x))$ into $-\int_\phi^\psi f_y\,dy$, and the minus sign is exactly the reversed traversal of $\gamma_2$. Right (Type II): the left curve $\gamma_3$ (red) runs top to bottom, the right curve $\gamma_4$ (blue) bottom to top; on each horizontal fiber the FTC in $x$ gives $+\int_\alpha^\beta g_x\,dx$. Same counterclockwise boundary, cut two different ways.*
-
-Computing each piece:
-
-$$
-\int_{\gamma_1} f \, dx = \int_a^b f(x, \phi(x)) \, dx, \qquad \int_{\gamma_2} f \, dx = \int_b^a f(x, \psi(x)) \, dx = -\int_a^b f(x, \psi(x)) \, dx.
-$$
-
-Therefore:
-
-$$
-\oint_\gamma f \, dx = \int_a^b \big[ f(x, \phi(x)) - f(x, \psi(x)) \big] \, dx.
-$$
-
-By the [[Fundamental Theorem of Calculus]] applied to the inner variable $y$:
-
-$$
-f(x, \phi(x)) - f(x, \psi(x)) = -\int_{\phi(x)}^{\psi(x)} f_y(x, y) \, dy.
-$$
-
-Substituting:
-
-$$
-\oint_\gamma f \, dx = -\int_a^b \int_{\phi(x)}^{\psi(x)} f_y(x, y) \, dy \, dx = -\iint_D f_y \, dy \, dx.
-$$
-
-### Derivation: The $\oint g \, dy$ Term
-
-Similarly, consider $\oint_\gamma g \, dy$ using the Type II representation. The boundary consists of:
-- $\gamma_3$: the left curve $x = \alpha(y)$, traversed from $y = d$ to $y = c$ (top to bottom).
-- $\gamma_4$: the right curve $x = \beta(y)$, traversed from $y = c$ to $y = d$ (bottom to top).
-
-Computing:
-
-$$
-\int_{\gamma_3} g \, dy = \int_d^c g(\alpha(y), y) \, dy = -\int_c^d g(\alpha(y), y) \, dy, \qquad \int_{\gamma_4} g \, dy = \int_c^d g(\beta(y), y) \, dy.
-$$
-
-Therefore:
-
-$$
-\oint_\gamma g \, dy = \int_c^d \big[ g(\beta(y), y) - g(\alpha(y), y) \big] \, dy = \int_c^d \int_{\alpha(y)}^{\beta(y)} g_x(x, y) \, dx \, dy = \iint_D g_x \, dx \, dy.
-$$
-
-(Iterated = double integral: Fubini, [[§15 Multivariable Integration#^thm-15-9|§15.9]] and [[§15 Multivariable Integration#^thm-15-10|§15.10]].)
-
-### Combining the Two Terms
-
-Adding the results:
 
 > [!theorem] Theorem §16.1: Green's Theorem
 > Let $D \subseteq \mathbb{R}^2$ be a bounded domain whose boundary $\gamma = \partial D$ is a piecewise smooth, simple closed curve ([[§43 Contours#^def-43-1|342 Def. §43.1]]), oriented counterclockwise. If $f, g$ are $C^1$ on an open set containing $\overline{D}$, then:
@@ -199,7 +140,69 @@ Adding the results:
 
 ^thm-16-1
 
-*Uses:* [[§15 Multivariable Integration#^def-15-12|Def. §15.12]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§15 Multivariable Integration#^thm-15-10|§15.10]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[Fundamental Theorem of Calculus|451 §34.1]]
+> [!proof]+ Proof
+> **Derivation: The $\oint f \, dx$ Term.**
+>
+> Consider $\oint_\gamma f \, dx$ using the Type I representation. The boundary $\gamma$ consists of two pieces:
+> - $\gamma_1$: the lower curve $y = \phi(x)$, traversed from $x = a$ to $x = b$ (left to right).
+> - $\gamma_2$: the upper curve $y = \psi(x)$, traversed from $x = b$ to $x = a$ (right to left).
+>
+> (The vertical segments at $x = a$ and $x = b$, if present, contribute zero to $\oint f \, dx$ since $dx = 0$ on them.)
+>
+> ![[m452-16-4.svg]]
+> *The two halves of the proof on one region. Left (Type I): the lower curve $\gamma_1$ (blue) runs left to right, the upper curve $\gamma_2$ (red) right to left; on each vertical fiber at $x$ the FTC in $y$ turns $f(x,\phi(x)) - f(x,\psi(x))$ into $-\int_\phi^\psi f_y\,dy$, and the minus sign is exactly the reversed traversal of $\gamma_2$. Right (Type II): the left curve $\gamma_3$ (red) runs top to bottom, the right curve $\gamma_4$ (blue) bottom to top; on each horizontal fiber the FTC in $x$ gives $+\int_\alpha^\beta g_x\,dx$. Same counterclockwise boundary, cut two different ways.*
+>
+> Computing each piece:
+>
+> $$
+> \int_{\gamma_1} f \, dx = \int_a^b f(x, \phi(x)) \, dx, \qquad \int_{\gamma_2} f \, dx = \int_b^a f(x, \psi(x)) \, dx = -\int_a^b f(x, \psi(x)) \, dx.
+> $$
+>
+> Therefore:
+>
+> $$
+> \oint_\gamma f \, dx = \int_a^b \big[ f(x, \phi(x)) - f(x, \psi(x)) \big] \, dx.
+> $$
+>
+> By the [[Fundamental Theorem of Calculus]] applied to the inner variable $y$:
+>
+> $$
+> f(x, \phi(x)) - f(x, \psi(x)) = -\int_{\phi(x)}^{\psi(x)} f_y(x, y) \, dy.
+> $$
+>
+> Substituting:
+>
+> $$
+> \oint_\gamma f \, dx = -\int_a^b \int_{\phi(x)}^{\psi(x)} f_y(x, y) \, dy \, dx = -\iint_D f_y \, dy \, dx.
+> $$
+>
+> **Derivation: The $\oint g \, dy$ Term.**
+>
+> Similarly, consider $\oint_\gamma g \, dy$ using the Type II representation. The boundary consists of:
+> - $\gamma_3$: the left curve $x = \alpha(y)$, traversed from $y = d$ to $y = c$ (top to bottom).
+> - $\gamma_4$: the right curve $x = \beta(y)$, traversed from $y = c$ to $y = d$ (bottom to top).
+>
+> Computing:
+>
+> $$
+> \int_{\gamma_3} g \, dy = \int_d^c g(\alpha(y), y) \, dy = -\int_c^d g(\alpha(y), y) \, dy, \qquad \int_{\gamma_4} g \, dy = \int_c^d g(\beta(y), y) \, dy.
+> $$
+>
+> Therefore:
+>
+> $$
+> \oint_\gamma g \, dy = \int_c^d \big[ g(\beta(y), y) - g(\alpha(y), y) \big] \, dy = \int_c^d \int_{\alpha(y)}^{\beta(y)} g_x(x, y) \, dx \, dy = \iint_D g_x \, dx \, dy.
+> $$
+>
+> (Iterated = double integral: Fubini, [[§15 Multivariable Integration#^thm-15-9|§15.9]] and [[§15 Multivariable Integration#^thm-15-10|§15.10]].)
+>
+> **Combining the Two Terms.**
+>
+> Adding the results gives the formula of the theorem.
+
+^pf-16-new1
+
+*Uses:* [[§15 Multivariable Integration#^def-15-12|Def. §15.12]], [[§15 Multivariable Integration#^def-15-new5|Def. §15.12]], [[§15 Multivariable Integration#^thm-15-9|§15.9]], [[§15 Multivariable Integration#^thm-15-10|§15.10]], [[§15 Multivariable Integration#^thm-15-4|§15.4]], [[Fundamental Theorem of Calculus|451 §34.1]]
 
 > [!remark]- Connections
 > - 1D ancestor: the [[Fundamental Theorem of Calculus]] (boundary of $[a,b]$ is $\{a,b\}$); curved-surface version: [[Stokes' Theorem in ℝ³|Stokes' Theorem (§20.1)]]; everything at once: [[Generalized Stokes' Theorem|Generalized Stokes' Theorem (§23.1)]].
@@ -224,21 +227,24 @@ Adding the results:
 
 Let $\gamma: (x(t), y(t))$, $t \in [a, b]$ be a smooth curve bounding a domain $D$.
 
-> [!definition] Definition §16.3: Tangent and Normal Vectors
+> [!definition] Definition §16.3: Tangent Vector
 > The **tangent vector** to $\gamma$ at parameter $t$ is:
 >
 > $$
 > \mathbf{T}(t) = (x'(t), \, y'(t)).
 > $$
->
+
+^def-16-3
+
+> [!definition] Definition §16.3: Normal Vectors
 > To obtain a **normal vector**, we rotate $\mathbf{T}$ by $\pm \frac{\pi}{2}$:
 > - **Inner normal** (pointing into $D$): rotate $\mathbf{T}$ by $+\frac{\pi}{2}$ counterclockwise: $\mathbf{n}_{\text{in}} = (-y'(t), \, x'(t))$.
 > - **Outer normal** (pointing out of $D$): rotate $\mathbf{T}$ by $-\frac{\pi}{2}$ clockwise: $\mathbf{n}_{\text{out}} = (y'(t), \, -x'(t))$.
 
-^def-16-3
+^def-16-new1
 
 ![[m452-16-5.svg]]
-*Def. §16.3 at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the [[§16 Line Integrals and Green's Theorem#^rem-16-4|Two Faces of Green's Theorem]].*
+*Def. [[#^def-16-3|§16.3]] and [[#^def-16-new1|§16.3]] at one boundary point: the tangent $\mathbf{T} = (x', y')$ (blue) of the counterclockwise boundary, the outer normal $\mathbf{n}_{\text{out}} = (y', -x')$ (red, $\mathbf{T}$ turned clockwise, pointing to the right of travel and out of $D$), and the inner normal $\mathbf{n}_{\text{in}} = (-y', x')$ (gray dashed, pointing into $D$). Work integrals use $\mathbf{T}$, flux integrals use $\mathbf{n}_{\text{out}}$ — the [[§16 Line Integrals and Green's Theorem#^rem-16-4|Two Faces of Green's Theorem]].*
 
 > [!remark]- Connections
 > - Computational version: the tangent vector $\mathbf r'(t)$, [[§87 Derivatives and Integrals of Vector Functions#^def-87-2|Calc Def. §87.2]] (with worked examples).
@@ -257,44 +263,6 @@ which indeed points radially outward. Equivalently, the rotation $(x, y) \mapsto
 
 We now derive the 2D Divergence Theorem by rewriting [[Green's Theorem|Green's theorem]] in terms of the outward normal.
 
-### Rewriting the Line Integral as a Flux Integral
-
-Parametrize $\gamma$ with $(x(t), y(t))$. The Type II line integral is:
-
-$$
-\oint_\gamma f \, dx + g \, dy = \int_a^b \big[ f \, x' + g \, y' \big] \, dt = \int_a^b (f, g) \cdot (x', y') \, dt.
-$$
-
-The **unit outward normal** is $\hat{n} = \dfrac{(y', -x')}{\sqrt{x'^2 + y'^2}}$. A key algebraic observation:
-
-$$
-f \, x' + g \, y' = (g, -f) \cdot (y', -x').
-$$
-
-(Just expand the right side: $g \, y' + (-f)(-x') = g \, y' + f \, x'$.) Therefore:
-
-$$
-\oint_\gamma f \, dx + g \, dy = \int_a^b (g, -f) \cdot (y', -x') \, dt = \int_a^b (g, -f) \cdot \hat{n} \, \sqrt{x'^2 + y'^2} \, dt = \oint_\gamma (g, -f) \cdot \hat{n} \, ds.
-$$
-
-This rewrites a work integral as a **flux integral** of the rotated field $(g, -f)$.
-
-### Deriving the Divergence Theorem
-
-By [[Green's Theorem|Green's theorem]]:
-
-$$
-\oint_\gamma (g, -f) \cdot \hat{n} \, ds = \oint_\gamma f \, dx + g \, dy = \iint_D (g_x - f_y) \, dx \, dy.
-$$
-
-But $g_x - f_y = g_x + (-f)_y = \nabla \cdot (g, -f)$. So:
-
-$$
-\oint_\gamma (g, -f) \cdot \hat{n} \, ds = \iint_D \nabla \cdot (g, -f) \, dx \, dy.
-$$
-
-Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_1$ and $f = -u_2$, so $(g, -f) = (u_1, u_2) = \mathbf{u}$:
-
 > [!theorem] Theorem §16.2: Divergence Theorem in $\mathbb{R}^2$
 > Let $D \subseteq \mathbb{R}^2$ be a bounded domain with piecewise smooth boundary $\gamma = \partial D$, oriented counterclockwise. If $\mathbf{u} = (u_1, u_2)$ is $C^1$ on an open set containing $\overline{D}$, then:
 >
@@ -306,7 +274,48 @@ Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_
 
 ^thm-16-2
 
-*Uses:* [[Green's Theorem|§16.1]], [[§16 Line Integrals and Green's Theorem#^def-16-1|Def. §16.1]], [[§16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[§16 Line Integrals and Green's Theorem#^def-16-3|Def. §16.3]]
+> [!proof]+ Proof
+> **Rewriting the Line Integral as a Flux Integral.**
+>
+> Parametrize $\gamma$ with $(x(t), y(t))$. The Type II line integral is:
+>
+> $$
+> \oint_\gamma f \, dx + g \, dy = \int_a^b \big[ f \, x' + g \, y' \big] \, dt = \int_a^b (f, g) \cdot (x', y') \, dt.
+> $$
+>
+> The **unit outward normal** is $\hat{n} = \dfrac{(y', -x')}{\sqrt{x'^2 + y'^2}}$. A key algebraic observation:
+>
+> $$
+> f \, x' + g \, y' = (g, -f) \cdot (y', -x').
+> $$
+>
+> (Just expand the right side: $g \, y' + (-f)(-x') = g \, y' + f \, x'$.) Therefore:
+>
+> $$
+> \oint_\gamma f \, dx + g \, dy = \int_a^b (g, -f) \cdot (y', -x') \, dt = \int_a^b (g, -f) \cdot \hat{n} \, \sqrt{x'^2 + y'^2} \, dt = \oint_\gamma (g, -f) \cdot \hat{n} \, ds.
+> $$
+>
+> This rewrites a work integral as a **flux integral** of the rotated field $(g, -f)$.
+>
+> **Deriving the Divergence Theorem.**
+>
+> By [[Green's Theorem|Green's theorem]]:
+>
+> $$
+> \oint_\gamma (g, -f) \cdot \hat{n} \, ds = \oint_\gamma f \, dx + g \, dy = \iint_D (g_x - f_y) \, dx \, dy.
+> $$
+>
+> But $g_x - f_y = g_x + (-f)_y = \nabla \cdot (g, -f)$. So:
+>
+> $$
+> \oint_\gamma (g, -f) \cdot \hat{n} \, ds = \iint_D \nabla \cdot (g, -f) \, dx \, dy.
+> $$
+>
+> Now rename: let $\mathbf{u} = (u_1, u_2)$ be any $C^1$ vector field. Set $g = u_1$ and $f = -u_2$, so $(g, -f) = (u_1, u_2) = \mathbf{u}$, and the last display is the formula of the theorem.
+
+^pf-16-new2
+
+*Uses:* [[Green's Theorem|§16.1]], [[§16 Line Integrals and Green's Theorem#^def-16-1|Def. §16.1]], [[§16 Line Integrals and Green's Theorem#^def-16-2|Def. §16.2]], [[§16 Line Integrals and Green's Theorem#^def-16-3|Def. §16.3]], [[§16 Line Integrals and Green's Theorem#^def-16-new1|Def. §16.3]]
 
 > [!remark]- Connections
 > - Generalizes to [[Divergence Theorem in ℝⁿ|Divergence Theorem in ℝⁿ (§17.1)]] and, with surface integrals, [[Divergence Theorem in ℝ³|Divergence Theorem in ℝ³ (§18.2)]].
@@ -367,16 +376,6 @@ We can also reinterpret Green's theorem using the **curl**.
 > - First introduced in [[§11 The Three Differential Operators꞉ Gradient, Curl, Divergence|§11]]; in forms language: [[§22 The Algebra of Differential Forms#^prop-22-3|d on 1-Forms Gives the Curl (§22.3)]].
 > - Computational version: [[§111 Curl and Divergence#^def-111-1|Calc Def. §111.1]] (with worked examples).
 
-**Reduction to 2D.** For a planar vector field $\mathbf{u} = (u_1(x,y), \, u_2(x,y), \, 0)$ (with $u_3 = 0$ and no $z$-dependence):
-
-$$
-\nabla \times \mathbf{u} = \left( 0, \; 0, \; \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y} \right).
-$$
-
-The only nonzero component is the $\hat{k}$-component: $(\nabla \times \mathbf{u})_3 = \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y}$.
-
-This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mathbf{u} = (f, g)$:
-
 > [!theorem] Theorem §16.3: Green's Theorem as 2D Stokes' Theorem
 > $$
 > \oint_\gamma \mathbf{u} \cdot d\mathbf{x} = \iint_D (\nabla \times \mathbf{u}) \cdot \hat{k} \, dx \, dy
@@ -385,6 +384,19 @@ This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mat
 > where $\mathbf{u} = (f, g)$, $d\mathbf{x} = (dx, dy)$, and $(\nabla \times \mathbf{u}) \cdot \hat{k} = g_x - f_y$.
 
 ^thm-16-3
+
+> [!proof]+ Proof
+> **Reduction to 2D.** For a planar vector field $\mathbf{u} = (u_1(x,y), \, u_2(x,y), \, 0)$ (with $u_3 = 0$ and no $z$-dependence):
+>
+> $$
+> \nabla \times \mathbf{u} = \left( 0, \; 0, \; \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y} \right).
+> $$
+>
+> The only nonzero component is the $\hat{k}$-component: $(\nabla \times \mathbf{u})_3 = \frac{\partial u_2}{\partial x} - \frac{\partial u_1}{\partial y}$.
+>
+> This is exactly the integrand in [[Green's Theorem|Green's theorem]]! With $\mathbf{u} = (f, g)$, this is the formula of the theorem.
+
+^pf-16-new3
 
 *Uses:* [[Green's Theorem|§16.1]], [[§16 Line Integrals and Green's Theorem#^def-16-5|Def. §16.5]]
 

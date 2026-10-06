@@ -64,7 +64,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ^def-92-2
 
 > [!remark]- Connections
-> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare [[§91 Limits and Continuity#^ex-91-1|Example §91.1]](b)); they only see the two lines through the point parallel to the axes. This is why §93 needs the stronger notion of differentiability, [[§93 Tangent Planes and Linear Approximations#^def-93-3|Definition §93.3]].
+> - Rigorous treatment: [[§4 Partial Derivatives#^def-4-1|452 Def. §4.1]]. Partial derivatives can exist at a point where $f$ is not even continuous ([[§4 Partial Derivatives#^ex-4-1|452 Ex. §4.1]]; compare [[§91 Limits and Continuity#^ex-91-1|Example §91.1]](b)); they only see the two lines through the point parallel to the axes. This is why §93 needs the stronger notion of differentiability, [[§93 Tangent Planes and Linear Approximations#^def-93-new1|Definition §93.4]].
 
 > [!theorem] Theorem §92.1: Rule for Finding Partial Derivatives
 > If $z = f(x, y)$:
@@ -106,7 +106,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 > \end{aligned}
 > $$
 >
-> The two mixed partials agree, $f_{xy} = f_{yx}$; Clairaut's Theorem (Theorem §92.2) explains why.
+> The two mixed partials agree, $f_{xy} = f_{yx}$; Clairaut's Theorem ([[§92 Partial Derivatives#^thm-92-2|Theorem §92.2]]) explains why.
 >
 > *Stewart: Examples 14.3.1 and 14.3.7*
 
@@ -156,7 +156,7 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ^ex-92-3
 
 ![[m233-92-1.svg]]
-*Example §92.3: the part of the paraboloid $z = 4 - x^2 - 2y^2$ over the first quadrant. The plane $y = 1$ cuts it in the parabola $C_1$ (blue), whose tangent $T_1$ at $P(1, 1, 1)$ (red) has slope $f_x(1, 1) = -2$ in the $x$-direction. The plane $x = 1$ cuts it in $C_2$ (green), whose tangent $T_2$ (orange) has slope $f_y(1, 1) = -4$ in the $y$-direction.*
+*[[§92 Partial Derivatives#^ex-92-3|Example §92.3]]: the part of the paraboloid $z = 4 - x^2 - 2y^2$ over the first quadrant. The plane $y = 1$ cuts it in the parabola $C_1$ (blue), whose tangent $T_1$ at $P(1, 1, 1)$ (red) has slope $f_x(1, 1) = -2$ in the $x$-direction. The plane $x = 1$ cuts it in $C_2$ (green), whose tangent $T_2$ (orange) has slope $f_y(1, 1) = -4$ in the $y$-direction.*
 
 > [!example] Example §92.4: Implicit Partial Differentiation
 > Find $\partial z / \partial x$ and $\partial z / \partial y$ if $z$ is defined implicitly as a function of $x$ and $y$ by the equation

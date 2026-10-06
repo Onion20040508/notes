@@ -37,7 +37,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 ^prop-85-1
 
 > [!proof]+ Proof
-> Say $y$ is missing, so the equation is $F(x, z) = 0$. Let $C$ be the curve $F(x, z) = 0$ in the $xz$-plane ($y = 0$). A point $(x, y, z)$ satisfies the equation if and only if $(x, 0, z)$ is on $C$, whatever $y$ is. So the surface is the union of the lines $\{(x_0, y, z_0) \mid y \in \mathbb{R}\}$ through the points $(x_0, 0, z_0)$ of $C$, all parallel to the $y$-axis: a cylinder by Definition §85.2. The other cases are the same with the variables renamed.
+> Say $y$ is missing, so the equation is $F(x, z) = 0$. Let $C$ be the curve $F(x, z) = 0$ in the $xz$-plane ($y = 0$). A point $(x, y, z)$ satisfies the equation if and only if $(x, 0, z)$ is on $C$, whatever $y$ is. So the surface is the union of the lines $\{(x_0, y, z_0) \mid y \in \mathbb{R}\}$ through the points $(x_0, 0, z_0)$ of $C$, all parallel to the $y$-axis: a cylinder by [[§85 Cylinders and Quadric Surfaces#^def-85-2|Definition §85.2]]. The other cases are the same with the variables renamed.
 
 ^pf-85-1
 
@@ -85,7 +85,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 
 ^def-85-3
 
-*Stewart states the reduction to standard form without proof. Removing the cross terms $Dxy$, $Eyz$, $Fxz$ is a rotation of axes: diagonalizing the symmetric quadratic form by an orthonormal basis, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] (the spectral theorem). The linear terms are then removed by completing squares, as in Example §85.5.*
+*Stewart states the reduction to standard form without proof. Removing the cross terms $Dxy$, $Eyz$, $Fxz$ is a rotation of axes: diagonalizing the symmetric quadratic form by an orthonormal basis, [[§32 Bilinear Forms and Quadratic Forms#^ladr-9-13|LADR 9.13]] (the spectral theorem). The linear terms are then removed by completing squares, as in [[§85 Cylinders and Quadric Surfaces#^ex-85-5|Example §85.5]].*
 
 > [!remark]- Connections
 > - Matrix version: [[§49★ Quadratic Forms#^thm-49-2|235 Thm. §49.2]] (the Principal Axes Theorem: an orthogonal change of variable $\mathbf{x} = P\mathbf{y}$ turns the quadratic part $\mathbf{x}^TA\mathbf{x}$ into $\lambda_1y_1^2 + \cdots + \lambda_ny_n^2$, with $P$ from the eigenvectors of the symmetric matrix $A$), worked in [[§49★ Quadratic Forms#^ex-49-2|235 Ex. §49.2]].
@@ -114,14 +114,14 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 > [!example] Example §85.3: Elliptic and Hyperbolic Paraboloids
 > **(a)** $z = 4x^2 + y^2$. The trace in $x = 0$ is the parabola $z = y^2$; in $x = k$ it is $z = y^2 + 4k^2$, a parabola opening upward. In $y = k$ the trace is $z = 4x^2 + k^2$, again an upward parabola. The horizontal traces $4x^2 + y^2 = k$ are ellipses for $k > 0$ (the point $(0, 0, 0)$ for $k = 0$, empty for $k < 0$). Because of the elliptic and parabolic traces, the surface is an **elliptic paraboloid**.
 >
-> **(b)** $z = y^2 - x^2$. The traces in the vertical planes $x = k$ are the parabolas $z = y^2 - k^2$, which open upward; the traces in $y = k$ are the parabolas $z = -x^2 + k^2$, which open downward; the horizontal traces $y^2 - x^2 = k$ are hyperbolas (opening along the $y$-axis for $k > 0$, along the $x$-axis for $k < 0$, and the pair of lines $y = \pm x$ for $k = 0$). Fitting the traces together gives a saddle-shaped surface, the **hyperbolic paraboloid**. Along the $y$-axis the origin is a minimum of the upward parabola, along the $x$-axis a maximum of the downward one; this is the saddle point of [[§96 Maximum and Minimum Values#^def-96-2|Definition §96.2]].
+> **(b)** $z = y^2 - x^2$. The traces in the vertical planes $x = k$ are the parabolas $z = y^2 - k^2$, which open upward; the traces in $y = k$ are the parabolas $z = -x^2 + k^2$, which open downward; the horizontal traces $y^2 - x^2 = k$ are hyperbolas (opening along the $y$-axis for $k > 0$, along the $x$-axis for $k < 0$, and the pair of lines $y = \pm x$ for $k = 0$). Fitting the traces together gives a saddle-shaped surface, the **hyperbolic paraboloid**. Along the $y$-axis the origin is a minimum of the upward parabola, along the $x$-axis a maximum of the downward one; this is the saddle point of [[§96 Maximum and Minimum Values#^def-96-new1|Definition §96.3]].
 >
 > *Stewart: Examples 12.6.4 and 12.6.5*
 
 ^ex-85-3
 
 ![[m233-85-1.svg]]
-*(a) The hyperbolic paraboloid $z = y^2 - x^2$ of Example §85.3(b): its trace in $x = 0$ is the upward parabola $z = y^2$ (red), its trace in $y = 0$ the downward parabola $z = -x^2$ (green), and the two meet at the saddle point at the origin. (b) The parabolic cylinder $z = 4 - x^2$ of Example §85.1(c): every trace $y = k$ is the same parabola, here $y = 0$ (dashed) and $y = 3$ (red), and the rulings run parallel to the $y$-axis.*
+*(a) The hyperbolic paraboloid $z = y^2 - x^2$ of [[§85 Cylinders and Quadric Surfaces#^ex-85-3|Example §85.3]](b): its trace in $x = 0$ is the upward parabola $z = y^2$ (red), its trace in $y = 0$ the downward parabola $z = -x^2$ (green), and the two meet at the saddle point at the origin. (b) The parabolic cylinder $z = 4 - x^2$ of [[§85 Cylinders and Quadric Surfaces#^ex-85-1|Example §85.1]](c): every trace $y = k$ is the same parabola, here $y = 0$ (dashed) and $y = 3$ (red), and the rulings run parallel to the $y$-axis.*
 
 > [!example] Example §85.4: Hyperboloids of One and Two Sheets
 > **(a)** Sketch $\dfrac{x^2}{4} + y^2 - \dfrac{z^2}{4} = 1$. The trace in a horizontal plane $z = k$ is the ellipse $\dfrac{x^2}{4} + y^2 = 1 + \dfrac{k^2}{4}$, which exists for every $k$ and grows with $|k|$. The traces in the $xz$- and $yz$-planes are the hyperbolas
@@ -170,7 +170,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 ^thm-85-2
 
 > [!proof]- Proof
-> Each statement is read off by fixing one variable (Definition §85.1) and recognizing the resulting conic ([[§67 Conic Sections|§67]]). Write $k$ for the fixed value.
+> Each statement is read off by fixing one variable ([[§85 Cylinders and Quadric Surfaces#^def-85-1|Definition §85.1]]) and recognizing the resulting conic ([[§67 Conic Sections|§67]]). Write $k$ for the fixed value.
 > - **Ellipsoid.** $z = k$: $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 - \frac{k^2}{c^2}$, an ellipse for $|k| < c$ (a point for $|k| = c$, empty beyond); $x = k$ and $y = k$ are the same with the letters exchanged. If $a = b = c$ the equation is $x^2 + y^2 + z^2 = a^2$, a sphere ([[§80 Three-Dimensional Coordinate Systems#^thm-80-2|Theorem §80.2]]).
 > - **Cone.** $z = k$: $\frac{x^2}{a^2} + \frac{y^2}{b^2} = \frac{k^2}{c^2}$, an ellipse for $k \ne 0$ (the origin for $k = 0$). $x = k$: $\frac{z^2}{c^2} - \frac{y^2}{b^2} = \frac{k^2}{a^2}$, a hyperbola if $k \ne 0$, and for $k = 0$ it factors as $\big(\frac zc - \frac yb\big)\big(\frac zc + \frac yb\big) = 0$, the two lines $z = \pm\frac cb\,y$. Likewise for $y = k$.
 > - **Elliptic paraboloid.** $z = k$: $\frac{x^2}{a^2} + \frac{y^2}{b^2} = \frac{k}{c}$, an ellipse when $k/c > 0$. $x = k$: $z = \frac{c}{b^2}y^2 + \frac{ck^2}{a^2}$, a parabola, and likewise for $y = k$.
@@ -199,7 +199,7 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 > (x^2 - 6x + 9) + 2z^2 - y + 10 - 9 = 0 \qquad\Longrightarrow\qquad y - 1 = (x - 3)^2 + 2z^2 .
 > $$
 >
-> This is an elliptic paraboloid (Theorem §85.2 with the variables exchanged), with axis parallel to the $y$-axis and vertex shifted to $(3, 1, 0)$. Its traces in the planes $y = k$, $k > 1$, are the ellipses $(x - 3)^2 + 2z^2 = k - 1$; its trace in the $xy$-plane is the parabola $y = 1 + (x - 3)^2$, $z = 0$.
+> This is an elliptic paraboloid ([[§85 Cylinders and Quadric Surfaces#^thm-85-2|Theorem §85.2]] with the variables exchanged), with axis parallel to the $y$-axis and vertex shifted to $(3, 1, 0)$. Its traces in the planes $y = k$, $k > 1$, are the ellipses $(x - 3)^2 + 2z^2 = k - 1$; its trace in the $xy$-plane is the parabola $y = 1 + (x - 3)^2$, $z = 0$.
 >
 > **(b)** Identify $x = y^2 + z^2 - 2y - 4z + 5$. Completing squares in $y$ and $z$: $x = (y - 1)^2 + (z - 2)^2 + 5 - 1 - 4 = (y - 1)^2 + (z - 2)^2$. This is a circular paraboloid opening in the positive $x$-direction, with vertex $(0, 1, 2)$; the traces $x = k > 0$ are circles of radius $\sqrt{k}$ centered on the line $y = 1$, $z = 2$.
 >

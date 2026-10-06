@@ -36,6 +36,15 @@ As in [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]], divid
 
 ^def-39-1
 
+> [!remark] Remark: Why It Works
+> When $f$ and $g$ are both positive, the region $S$ is the region under $y = f(x)$ with the region under $y = g(x)$ removed, so
+>
+> $$
+> A = [\text{area under } y = f(x)] - [\text{area under } y = g(x)] = \int_a^b f(x)\,dx - \int_a^b g(x)\,dx = \int_a^b [f(x) - g(x)]\,dx .
+> $$
+
+^rem-39-1
+
 > [!theorem] Theorem §39.1: Area Between Curves
 > The area $A$ of the region bounded by the curves $y = f(x)$, $y = g(x)$ and the lines $x = a$, $x = b$, where $f$ and $g$ are continuous and $f(x) \ge g(x)$ for all $x$ in $[a, b]$, is
 >
@@ -47,38 +56,29 @@ As in [[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]], divid
 
 ^thm-39-1
 
-> [!remark] Remark: Why It Works
-> When $f$ and $g$ are both positive, the region $S$ is the region under $y = f(x)$ with the region under $y = g(x)$ removed, so
->
-> $$
-> A = [\text{area under } y = f(x)] - [\text{area under } y = g(x)] = \int_a^b f(x)\,dx - \int_a^b g(x)\,dx = \int_a^b [f(x) - g(x)]\,dx .
-> $$
-
-^rem-39-1
-
 > [!proof]+ Proof
-> The function $f - g$ is continuous on $[a, b]$, hence integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]). So the limit in Definition §39.1 exists for every choice of sample points, and by the definition of the integral ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]) it equals $\int_a^b [f(x) - g(x)]\,dx$.
+> The function $f - g$ is continuous on $[a, b]$, hence integrable ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]]). So the limit in [[§39 Areas Between Curves#^def-39-1|Definition §39.1]] exists for every choice of sample points, and by the definition of the integral ([[§35 The Definite Integral#^def-35-1|Definition §35.1]]) it equals $\int_a^b [f(x) - g(x)]\,dx$.
 
 ^pf-39-1
 
 *Uses:* [[§39 Areas Between Curves#^def-39-1|Def. §39.1]], [[§35 The Definite Integral#^def-35-1|Def. §35.1]], [[§35 The Definite Integral#^thm-35-1|§35.1]]
 
 > [!remark]- Connections
-> - The same area as a double integral: $\iint_S 1\,dA$ over a type I region ([[§99 Double Integrals Over General Regions#^thm-99-5|Theorem §99.5]], [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]]). Its iterated form $\int_a^b \int_{g(x)}^{f(x)} 1\,dy\,dx$ is exactly Theorem §39.1, and the rigorous version is Fubini for type I regions, [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]].
+> - The same area as a double integral: $\iint_S 1\,dA$ over a type I region ([[§99 Double Integrals Over General Regions#^thm-99-5|Theorem §99.5]], [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]]). Its iterated form $\int_a^b \int_{g(x)}^{f(x)} 1\,dy\,dx$ is exactly [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]], and the rigorous version is Fubini for type I regions, [[§15 Multivariable Integration#^thm-15-9|452 Thm. §15.9]].
 
 > [!remark] Remark: Method — Area Between Curves
 > 1. **Sketch the region.** Identify the top curve $y_T$, the bottom curve $y_B$, and a typical approximating rectangle of width $\Delta x$ and height $y_T - y_B$.
 > 2. **Find the limits.** If the sides are not given as lines $x = a$, $x = b$ (a side may shrink to a point), find the $x$-coordinates of the points where the curves meet by solving $y_T = y_B$. If they cannot be found exactly, locate them approximately with a graph and a computer and proceed in the same way (Stewart, Example 6.1.3).
 > 3. **Add up the rectangles**: $\displaystyle A = \lim_{n \to \infty} \sum_{i=1}^{n} (y_T - y_B)\,\Delta x = \int_a^b (y_T - y_B)\,dx$.
-> 4. **If the curves cross**, top and bottom trade places: split the interval at the crossings (Theorem §39.2).
-> 5. **If the top or bottom boundary consists of different curves**, consider integrating with respect to $y$ instead (Theorem §39.3).
+> 4. **If the curves cross**, top and bottom trade places: split the interval at the crossings ([[§39 Areas Between Curves#^thm-39-2|Theorem §39.2]]).
+> 5. **If the top or bottom boundary consists of different curves**, consider integrating with respect to $y$ instead ([[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]]).
 
 ^rem-39-2
 
 > [!example] Example §39.1: Top Minus Bottom
 > **(a)** Find the area of the region bounded above by $y = e^x$, below by $y = x$, and on the sides by $x = 0$ and $x = 1$.
 >
-> The upper boundary is $y = e^x$ and the lower one $y = x$ (indeed $e^x > x$ for all $x$). By Theorem §39.1 with $f(x) = e^x$, $g(x) = x$, $a = 0$, $b = 1$,
+> The upper boundary is $y = e^x$ and the lower one $y = x$ (indeed $e^x > x$ for all $x$). By [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]] with $f(x) = e^x$, $g(x) = x$, $a = 0$, $b = 1$,
 >
 > $$
 > A = \int_0^1 (e^x - x)\,dx = e^x - \tfrac12 x^2 \Big]_0^1 = e - \tfrac12 - 1 = e - 1.5 .
@@ -118,7 +118,7 @@ If $f(x) \ge g(x)$ for some values of $x$ but $g(x) \ge f(x)$ for others, split 
 > |f(x) - g(x)| = \begin{cases} f(x) - g(x) & \text{when } f(x) \ge g(x) \\ g(x) - f(x) & \text{when } g(x) \ge f(x) , \end{cases}
 > $$
 >
-> on each piece $[c, d]$ of the subdivision where one curve stays on top, Theorem §39.1 gives the area of that piece as $\int_c^d |f(x) - g(x)|\,dx$. Adding over the pieces and using Property 5 of integrals ([[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]) gives $A_1 + A_2 + \cdots = \int_a^b |f(x) - g(x)|\,dx$. ($|f - g|$ is continuous, so the integral exists.)
+> on each piece $[c, d]$ of the subdivision where one curve stays on top, [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]] gives the area of that piece as $\int_c^d |f(x) - g(x)|\,dx$. Adding over the pieces and using Property 5 of integrals ([[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]) gives $A_1 + A_2 + \cdots = \int_a^b |f(x) - g(x)|\,dx$. ($|f - g|$ is continuous, so the integral exists.)
 
 ^pf-39-2
 
@@ -127,7 +127,7 @@ If $f(x) \ge g(x)$ for some values of $x$ but $g(x) \ge f(x)$ for others, split 
 > [!example] Example §39.2: Sine and Cosine
 > Find the area of the region bounded by the curves $y = \sin x$, $y = \cos x$, $x = 0$ and $x = \pi/2$.
 >
-> The curves meet where $\sin x = \cos x$, that is, at $x = \pi/4$ (the only solution in $[0, \pi/2]$). On $[0, \pi/4]$, $\cos x \ge \sin x$; on $[\pi/4, \pi/2]$, $\sin x \ge \cos x$. By Theorem §39.2,
+> The curves meet where $\sin x = \cos x$, that is, at $x = \pi/4$ (the only solution in $[0, \pi/2]$). On $[0, \pi/4]$, $\cos x \ge \sin x$; on $[\pi/4, \pi/2]$, $\sin x \ge \cos x$. By [[§39 Areas Between Curves#^thm-39-2|Theorem §39.2]],
 >
 > $$
 > \begin{aligned}
@@ -161,7 +161,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 ^thm-39-3
 
 > [!proof]+ Proof
-> Interchange the roles of $x$ and $y$ in Definition §39.1 and Theorem §39.1: divide $[c, d]$ into $n$ subintervals of width $\Delta y$, approximate the $i$th horizontal strip by a rectangle of length $f(y_i^*) - g(y_i^*)$ and width $\Delta y$, and define the area as the limit of the sum of these areas. Since $f - g$ is continuous, the limit is $\int_c^d [f(y) - g(y)]\,dy$. (Reflecting the plane in the line $y = x$ turns the region into one of the type in Theorem §39.1 without changing areas.)
+> Interchange the roles of $x$ and $y$ in [[§39 Areas Between Curves#^def-39-1|Definition §39.1]] and [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]]: divide $[c, d]$ into $n$ subintervals of width $\Delta y$, approximate the $i$th horizontal strip by a rectangle of length $f(y_i^*) - g(y_i^*)$ and width $\Delta y$, and define the area as the limit of the sum of these areas. Since $f - g$ is continuous, the limit is $\int_c^d [f(y) - g(y)]\,dy$. (Reflecting the plane in the line $y = x$ turns the region into one of the type in [[§39 Areas Between Curves#^thm-39-1|Theorem §39.1]] without changing areas.)
 
 ^pf-39-3
 
@@ -172,7 +172,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 >
 > **Intersections.** From the line, $x = y + 1$; substituting, $y^2 = 2(y + 1) + 6$, that is $y^2 - 2y - 8 = (y - 4)(y + 2) = 0$. So $y = 4$ or $y = -2$, and the points of intersection are $(5, 4)$ and $(-1, -2)$.
 >
-> **Integrating in $y$.** Solving the parabola for $x$, the left and right boundaries are $x_L = \frac12 y^2 - 3$ and $x_R = y + 1$, for $-2 \le y \le 4$. By Theorem §39.3,
+> **Integrating in $y$.** Solving the parabola for $x$, the left and right boundaries are $x_L = \frac12 y^2 - 3$ and $x_R = y + 1$, for $-2 \le y \le 4$. By [[§39 Areas Between Curves#^thm-39-3|Theorem §39.3]],
 >
 > $$
 > \begin{aligned}
@@ -195,7 +195,7 @@ Some regions are best treated by regarding $x$ as a function of $y$.
 ^ex-39-3
 
 ![[m233-39-1.svg]]
-*Example §39.3. (a) Vertical rectangles run from the lower branch of the parabola up to the upper branch for $x < -1$, but from the line up to the parabola for $x > -1$: two integrals. (b) Every horizontal rectangle runs from the parabola $x_L$ to the line $x_R$, so one integral in $y$ suffices.*
+*[[§39 Areas Between Curves#^ex-39-3|Example §39.3]]. (a) Vertical rectangles run from the lower branch of the parabola up to the upper branch for $x < -1$, but from the line up to the parabola for $x > -1$: two integrals. (b) Every horizontal rectangle runs from the parabola $x_L$ to the line $x_R$, so one integral in $y$ suffices.*
 
 > [!example] Example §39.4: Both Ways
 > Find the area of the region enclosed by the curves $y = 1/x$, $y = x$ and $y = \frac14 x$, using (a) $x$ and (b) $y$ as the variable of integration.

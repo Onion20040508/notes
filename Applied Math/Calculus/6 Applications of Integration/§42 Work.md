@@ -56,19 +56,19 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 > W = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*)\,\Delta x = \int_a^b f(x)\,dx .
 > $$
 >
-> For a constant force $f(x) = F$ this gives $W = F(b - a)$, in agreement with Definition §42.2.
+> For a constant force $f(x) = F$ this gives $W = F(b - a)$, in agreement with [[§42 Work#^def-42-2|Definition §42.2]].
 >
 > *Stewart: 6.4, Equation 4*
 
 ^def-42-3
 
 > [!remark]- Connections
-> - Along a curve instead of a line, with the force a vector field, the work is the line integral $\int_C \mathbf{F} \cdot d\mathbf{r}$ ([[§108 Line Integrals#^def-108-7|Def. §108.7]], [[§108 Line Integrals#^def-108-8|Def. §108.8]]; [[§16 Line Integrals and Green's Theorem#^def-16-2|452 Def. §16.2]]). For motion along the $x$-axis with $\mathbf{F} = f(x)\,\mathbf{i}$ it reduces to Definition §42.3.
+> - Along a curve instead of a line, with the force a vector field, the work is the line integral $\int_C \mathbf{F} \cdot d\mathbf{r}$ ([[§108 Line Integrals#^def-108-7|Def. §108.7]], [[§108 Line Integrals#^def-108-8|Def. §108.8]]; [[§16 Line Integrals and Green's Theorem#^def-16-2|452 Def. §16.2]]). For motion along the $x$-axis with $\mathbf{F} = f(x)\,\mathbf{i}$ it reduces to [[§42 Work#^def-42-3|Definition §42.3]].
 
 > [!example] Example §42.1: Constant and Variable Forces
 > **(a)** How much work is done in lifting a $1.2$-kg book off the floor onto a desk $0.7$ m high? (Use $g = 9.8\ \mathrm{m/s^2}$.)
 >
-> The force exerted is equal and opposite to that of gravity, so by Definition §42.1, $F = mg = (1.2)(9.8) = 11.76$ N, and by Definition §42.2
+> The force exerted is equal and opposite to that of gravity, so by [[§42 Work#^def-42-1|Definition §42.1]], $F = mg = (1.2)(9.8) = 11.76$ N, and by [[§42 Work#^def-42-2|Definition §42.2]]
 >
 > $$
 > W = Fd = (11.76\ \mathrm{N})(0.7\ \mathrm{m}) \approx 8.2\ \mathrm{J} .
@@ -80,7 +80,7 @@ The approximation improves as $n$ grows, and the right side of (3) is a Riemann 
 >
 > **(c)** At a distance $x$ feet from the origin, a force of $x^2 + 2x$ pounds acts on a particle. How much work is done in moving it from $x = 1$ to $x = 3$?
 >
-> By Definition §42.3,
+> By [[§42 Work#^def-42-3|Definition §42.3]],
 >
 > $$
 > W = \int_1^3 (x^2 + 2x)\,dx = \frac{x^3}{3} + x^2 \Big]_1^3 = (9 + 9) - \Big(\frac13 + 1\Big) = \frac{50}{3} .
@@ -224,4 +224,4 @@ When different parts of an object move different distances, slice the object ins
 ^ex-42-4
 
 ![[m233-42-1.svg]]
-*Example §42.4. Depth $x$ is measured downward from the top of the tank, and the water fills depths $2$ to $10$. The layer at depth $x$ (red) is a disk of thickness $\Delta x$ whose radius comes from similar triangles: $r/(10 - x) = 4/10$. It must be lifted a distance $x$ to the top. Deeper layers are smaller but travel farther.*
+*[[§42 Work#^ex-42-4|Example §42.4]]. Depth $x$ is measured downward from the top of the tank, and the water fills depths $2$ to $10$. The layer at depth $x$ (red) is a disk of thickness $\Delta x$ whose radius comes from similar triangles: $r/(10 - x) = 4/10$. It must be lifted a distance $x$ to the top. Deeper layers are smaller but travel farther.*

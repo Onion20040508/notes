@@ -16,7 +16,7 @@ tags: [topology, hub]
 ## Used in (Topology)
 - [[§23 The Fundamental Group#^lem-23-1|Lemma §23.1: Paths in Simply Connected Spaces]]
 - [[§23 The Fundamental Group#^thm-23-2|Theorem §23.2: Basepoint Independence]]
-- [[§24 Covering Spaces#^thm-24-9|Theorem §24.9: Properties of the Lifting Correspondence]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^thm-24-9|Theorem §24.9: Properties of the Lifting Correspondence]]
 - [[§27 The Fundamental Group of Sⁿ#^thm-27-1|Theorem §27.1: Generation by Open Cover (Munkres 59.1)]]
 
 ## Connections

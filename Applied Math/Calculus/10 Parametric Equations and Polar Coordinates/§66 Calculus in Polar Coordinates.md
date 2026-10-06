@@ -47,7 +47,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 ^thm-66-2
 
 > [!remark] Remark: Why It Works
-> Divide $[a, b]$ into $n$ subintervals with endpoints $\theta_0, \ldots, \theta_n$ and equal width $\Delta\theta$. The rays $\theta = \theta_i$ cut $\mathscr{R}$ into $n$ thin regions of central angle $\Delta\theta$. Choosing $\theta_i^*$ in $[\theta_{i-1}, \theta_i]$, the $i$th region is approximately a sector of radius $f(\theta_i^*)$, of area $\Delta A_i \approx \frac12 [f(\theta_i^*)]^2\,\Delta\theta$ by Theorem §66.1. So
+> Divide $[a, b]$ into $n$ subintervals with endpoints $\theta_0, \ldots, \theta_n$ and equal width $\Delta\theta$. The rays $\theta = \theta_i$ cut $\mathscr{R}$ into $n$ thin regions of central angle $\Delta\theta$. Choosing $\theta_i^*$ in $[\theta_{i-1}, \theta_i]$, the $i$th region is approximately a sector of radius $f(\theta_i^*)$, of area $\Delta A_i \approx \frac12 [f(\theta_i^*)]^2\,\Delta\theta$ by [[§66 Calculus in Polar Coordinates#^thm-66-1|Theorem §66.1]]. So
 >
 > $$
 > A \approx \sum_{i=1}^n \tfrac12 [f(\theta_i^*)]^2\,\Delta\theta , \qquad (2)
@@ -60,7 +60,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > [!proof]+ Proof
 > We make the approximation (2) precise by squeezing each thin region between two sectors. (Stewart only says the formula "can in fact be proved"; this argument assumes, as Stewart does, that area is additive and that a region contained in another has smaller area.)
 >
-> On $[\theta_{i-1}, \theta_i]$ the continuous function $f$ has a minimum $m_i = f(u_i)$ and a maximum $M_i = f(v_i)$ (Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]]). The $i$th thin region consists of the points $(r, \theta)$ with $\theta_{i-1} \le \theta \le \theta_i$ and $0 \le r \le f(\theta)$. It contains the sector of radius $m_i$ and is contained in the sector of radius $M_i$, both with central angle $\Delta\theta$, so by Theorem §66.1
+> On $[\theta_{i-1}, \theta_i]$ the continuous function $f$ has a minimum $m_i = f(u_i)$ and a maximum $M_i = f(v_i)$ (Extreme Value Theorem, [[§25 Maximum and Minimum Values#^thm-25-1|Theorem §25.1]]). The $i$th thin region consists of the points $(r, \theta)$ with $\theta_{i-1} \le \theta \le \theta_i$ and $0 \le r \le f(\theta)$. It contains the sector of radius $m_i$ and is contained in the sector of radius $M_i$, both with central angle $\Delta\theta$, so by [[§66 Calculus in Polar Coordinates#^thm-66-1|Theorem §66.1]]
 >
 > $$
 > \tfrac12 [f(u_i)]^2\,\Delta\theta \;\le\; \Delta A_i \;\le\; \tfrac12 [f(v_i)]^2\,\Delta\theta .
@@ -79,7 +79,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 *Uses:* [[§66 Calculus in Polar Coordinates#^thm-66-1|§66.1]], [[§25 Maximum and Minimum Values#^thm-25-1|§25.1]] (Extreme Value Theorem), [[§35 The Definite Integral#^def-35-1|Def. §35.1]] and [[§35 The Definite Integral#^thm-35-1|§35.1]] (Riemann sums of a continuous function converge to the integral), [[§69 Sequences#^thm-69-4|§69.4]] (Squeeze Theorem for Sequences)
 
 ![[m233-66-1.svg]]
-*The proof of Theorem §66.2. The rays $\theta = \theta_{i-1}$ and $\theta = \theta_i$ cut a thin piece (blue) out of the region under $r = f(\theta)$. It contains the sector of radius $m_i = \min f$ (green) and lies inside the sector of radius $M_i = \max f$ (red dashed), both of area $\frac12(\text{radius})^2\Delta\theta$.*
+*The proof of [[§66 Calculus in Polar Coordinates#^thm-66-2|Theorem §66.2]]. The rays $\theta = \theta_{i-1}$ and $\theta = \theta_i$ cut a thin piece (blue) out of the region under $r = f(\theta)$. It contains the sector of radius $m_i = \min f$ (green) and lies inside the sector of radius $M_i = \max f$ (red dashed), both of area $\frac12(\text{radius})^2\Delta\theta$.*
 
 > [!remark]- Connections
 > - In double-integral form the same area is $\iint_{\mathscr{R}} dA = \int_a^b \int_0^{f(\theta)} r\,dr\,d\theta = \int_a^b \frac12 [f(\theta)]^2\,d\theta$, by the change of variables to polar coordinates: [[§15 Multivariable Integration#^thm-15-7|452 Thm. §15.7]] (and [[§100 Double Integrals in Polar Coordinates#^cor-100-3|Corollary §100.3]]).
@@ -87,7 +87,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 > [!example] Example §66.1: One Loop of the Four-Leaved Rose
 > Find the area enclosed by one loop of $r = \cos 2\theta$.
 >
-> The right loop ([[§65 Polar Coordinates#^ex-65-5|Example §65.5]]) is swept out by a ray rotating from $\theta = -\pi/4$ to $\theta = \pi/4$, on which $\cos 2\theta \ge 0$. By Theorem §66.2,
+> The right loop ([[§65 Polar Coordinates#^ex-65-5|Example §65.5]]) is swept out by a ray rotating from $\theta = -\pi/4$ to $\theta = \pi/4$, on which $\cos 2\theta \ge 0$. By [[§66 Calculus in Polar Coordinates#^thm-66-2|Theorem §66.2]],
 >
 > $$
 > A = \int_{-\pi/4}^{\pi/4} \tfrac12 r^2\,d\theta = \tfrac12 \int_{-\pi/4}^{\pi/4} \cos^2 2\theta\,d\theta .
@@ -115,7 +115,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 ^cor-66-3
 
 > [!proof]+ Proof
-> $\mathscr{R}$ is the region inside $r = f(\theta)$ between the rays, minus the region inside $r = g(\theta)$ between the rays, which it contains because $g \le f$. Subtract the two areas given by Theorem §66.2 and combine the integrals by linearity. (Where $g = 0$ the inner region degenerates, and Theorem §66.2 still holds for $f \ge 0$ by the same proof.)
+> $\mathscr{R}$ is the region inside $r = f(\theta)$ between the rays, minus the region inside $r = g(\theta)$ between the rays, which it contains because $g \le f$. Subtract the two areas given by [[§66 Calculus in Polar Coordinates#^thm-66-2|Theorem §66.2]] and combine the integrals by linearity. (Where $g = 0$ the inner region degenerates, and [[§66 Calculus in Polar Coordinates#^thm-66-2|Theorem §66.2]] still holds for $f \ge 0$ by the same proof.)
 
 ^pf-66-3
 
@@ -126,7 +126,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 >
 > **Limits.** The curves meet where $3\sin\theta = 1 + \sin\theta$, that is $\sin\theta = \frac12$: $\theta = \pi/6$ and $5\pi/6$. For $\pi/6 \le \theta \le 5\pi/6$, $3\sin\theta \ge 1 + \sin\theta$, so the circle is the outer curve.
 >
-> **Area.** By Corollary §66.3,
+> **Area.** By [[§66 Calculus in Polar Coordinates#^cor-66-3|Corollary §66.3]],
 >
 > $$
 > A = \tfrac12 \int_{\pi/6}^{5\pi/6} (3\sin\theta)^2\,d\theta - \tfrac12 \int_{\pi/6}^{5\pi/6} (1 + \sin\theta)^2\,d\theta .
@@ -148,7 +148,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 ^ex-66-2
 
 > [!remark] Remark: Finding All Points of Intersection
-> Because a point has many polar representations, solving the two equations simultaneously may miss intersection points. In Example §66.2 the circle and the cardioid meet in **three** points, but the equations give only $(\frac32, \pi/6)$ and $(\frac32, 5\pi/6)$. The third is the pole. As $(0, 0)$ or $(0, \pi)$ it satisfies $r = 3\sin\theta$, and as $(0, 3\pi/2)$ it satisfies $r = 1 + \sin\theta$, but no single representation satisfies both. Think of two points moving along the curves as $\theta$ runs from $0$ to $2\pi$: one reaches the pole at $\theta = 0$ and $\theta = \pi$, the other at $\theta = 3\pi/2$. They do not collide, but the curves still intersect. To find all intersection points, draw both curves (Stewart recommends a graphing device) and check the pole separately.
+> Because a point has many polar representations, solving the two equations simultaneously may miss intersection points. In [[§66 Calculus in Polar Coordinates#^ex-66-2|Example §66.2]] the circle and the cardioid meet in **three** points, but the equations give only $(\frac32, \pi/6)$ and $(\frac32, 5\pi/6)$. The third is the pole. As $(0, 0)$ or $(0, \pi)$ it satisfies $r = 3\sin\theta$, and as $(0, 3\pi/2)$ it satisfies $r = 1 + \sin\theta$, but no single representation satisfies both. Think of two points moving along the curves as $\theta$ runs from $0$ to $2\pi$: one reaches the pole at $\theta = 0$ and $\theta = \pi$, the other at $\theta = 3\pi/2$. They do not collide, but the curves still intersect. To find all intersection points, draw both curves (Stewart recommends a graphing device) and check the pole separately.
 
 ^rem-66-2
 
@@ -254,7 +254,7 @@ Areas, arc lengths and tangents of polar curves $r = f(\theta)$. For areas the n
 ^thm-66-5
 
 > [!proof]+ Proof
-> Apply [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]] to the parametric equations (5), with the derivatives $dx/d\theta$ and $dy/d\theta$ computed in the proof of Theorem §66.4 by the Product Rule. At the pole, put $r = 0$ in (7): $\dfrac{dy}{dx} = \dfrac{(dr/d\theta)\sin\theta}{(dr/d\theta)\cos\theta} = \tan\theta$ when $dr/d\theta \ne 0$ (and $\cos\theta \ne 0$; if $\cos\theta = 0$ then $dx/d\theta = 0 \ne dy/d\theta$ and the tangent is vertical, the line $\theta = \pi/2$). Either way the tangent at the pole is the line through $O$ at angle $\theta$.
+> Apply [[§64 Calculus with Parametric Curves#^thm-64-1|Theorem §64.1]] to the parametric equations (5), with the derivatives $dx/d\theta$ and $dy/d\theta$ computed in the proof of [[§66 Calculus in Polar Coordinates#^thm-66-4|Theorem §66.4]] by the Product Rule. At the pole, put $r = 0$ in (7): $\dfrac{dy}{dx} = \dfrac{(dr/d\theta)\sin\theta}{(dr/d\theta)\cos\theta} = \tan\theta$ when $dr/d\theta \ne 0$ (and $\cos\theta \ne 0$; if $\cos\theta = 0$ then $dx/d\theta = 0 \ne dy/d\theta$ and the tangent is vertical, the line $\theta = \pi/2$). Either way the tangent at the pole is the line through $O$ at angle $\theta$.
 
 ^pf-66-5
 

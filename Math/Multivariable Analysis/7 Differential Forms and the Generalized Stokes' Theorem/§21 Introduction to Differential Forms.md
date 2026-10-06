@@ -127,13 +127,20 @@ This also explains why the [[Divergence Theorem in ℝ³|Divergence Theorem]] ne
 
 ## What a Differential Form Is
 
-> [!definition] Definition §21.1: Differential Form
+> [!definition] Definition §21.1: Coordinate 1-Forms
 > Let $x_1, \ldots, x_n$ be the standard coordinates on $\mathbb{R}^n$. The **coordinate 1-forms** $dx_1, \ldots, dx_n$ are defined by:
 >
 > $$
 > dx_i(\mathbf{v}) = v_i \qquad \text{(the $i$-th component of $\mathbf{v}$)}.
 > $$
->
+
+^def-21-1
+
+> [!remark]- Connections
+> - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[§12 Duality#^ladr-3-113|LADR 3.113]].
+> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, [[§30 The Cotangent Space#^lem-30-2|591 Lemma §30.2]], and the covectors at all points together form the cotangent bundle, [[§42 The Cotangent Bundle#^def-42-1|591 Def. §42.1]].
+
+> [!definition] Definition §21.1: Differential Form
 > A **$k$-form** on an open subset $U \subseteq \mathbb{R}^n$ is an expression:
 >
 > $$
@@ -146,12 +153,10 @@ This also explains why the [[Divergence Theorem in ℝ³|Divergence Theorem]] ne
 > - A **0-form** is a smooth function $f: U \to \mathbb{R}$.
 > - In $\mathbb{R}^3$: a **1-form** is $f_1\,dx + f_2\,dy + f_3\,dz$ (3 coefficients); a **2-form** is $f_{23}\,dy \wedge dz + f_{31}\,dz \wedge dx + f_{12}\,dx \wedge dy$ (3 coefficients); a **3-form** is $f_{123}\,dx \wedge dy \wedge dz$ (1 coefficient).
 
-^def-21-1
+^def-21-new1
 
 > [!remark]- Connections
-> - The coordinate 1-forms $dx_1, \ldots, dx_n$ are the dual basis of the standard basis: [[§12 Duality#^ladr-3-113|LADR 3.113]].
 > - At each point a $k$-form is an alternating $k$-linear form on $\mathbb{R}^n$ ([[§33 Alternating Multilinear Forms#^ladr-9-27|LADR 9.27]]); there are none for $k > n$ ([[§33 Alternating Multilinear Forms#^ladr-9-29|LADR 9.29]]) and the top-degree ones form a 1-dimensional space ([[§33 Alternating Multilinear Forms#^ladr-9-37|LADR 9.37]]).
-> - On a manifold the coordinate 1-forms at a point are the dual basis of the coordinate derivations, [[§30 The Cotangent Space#^lem-30-2|591 Lemma §30.2]], and the covectors at all points together form the cotangent bundle, [[§42 The Cotangent Bundle#^def-42-1|591 Def. §42.1]].
 
 **What this definition says, concretely:**
 
@@ -177,7 +182,7 @@ $$
 
 (In [[§16 Line Integrals and Green's Theorem|§16]]–[[§20 Stokes' Theorem in ℝ³|§20]], we wrote $P, Q, R$ for $f_1, f_2, f_3$.)
 
-The simplest 1-form is $df = f_x\,dx + f_y\,dy + f_z\,dz$, where the coefficients come from a single function $f$. But not every 1-form arises this way: $\omega = y\,dx + x^2\,dy$ has no single antiderivative $f$ with $f_x = y$ and $f_y = x^2$ (since $f_{xy} = 1 \neq 2x = f_{yx}$). Such a form is called *not exact* ([[§22 The Algebra of Differential Forms#^def-22-8|Def. §22.8]]).
+The simplest 1-form is $df = f_x\,dx + f_y\,dy + f_z\,dz$, where the coefficients come from a single function $f$. But not every 1-form arises this way: $\omega = y\,dx + x^2\,dy$ has no single antiderivative $f$ with $f_x = y$ and $f_y = x^2$ (since $f_{xy} = 1 \neq 2x = f_{yx}$). Such a form is called *not exact* ([[§22 The Algebra of Differential Forms#^def-22-new2|Def. §22.8]]).
 
 This $df$ is the same object as the differential from [[§8 The Differential#^def-8-1|§8]] — same formula, same notation. In §8, we introduced $df = f_x\,dx + f_y\,dy + f_z\,dz$ as the “best linear approximation”: $\Delta f \approx f_x\,\Delta x + f_y\,\Delta y + f_z\,\Delta z$ for small changes. But we never said precisely what $dx$, $dy$, $dz$ *are*. Now we can: $dx$ is the 1-form that eats a tangent vector $\mathbf{v} = (v_1, v_2, v_3)$ and outputs $v_1$ (the $x$-component). So $df$ eats $\mathbf{v}$ and outputs $f_x v_1 + f_y v_2 + f_z v_3 = \nabla f \cdot \mathbf{v}$, the [[Directional Derivative Formula|directional derivative]] of $f$ in direction $\mathbf{v}$. The “best linear approximation” and the “1-form that outputs directional derivatives” are the same thing — and this is where the name “differential forms” comes from: $df$ is the prototypical example, and all forms generalize it.
 
@@ -219,7 +224,7 @@ So what did the form actually *do*? It produced the correct integrand. The form 
 
 The two layers do different jobs:
 - **Forms** (this section) determine *what* to integrate: the correct integrand on the parameter domain, with all Jacobians and signs.
-- **Riemann integration** ([[§15 Multivariable Integration#^def-15-11|§15]]) determines the *number*: Riemann sums, Fubini, etc.
+- **Riemann integration** ([[§15a The Definition of the Integral#^def-15-11|§15.11]]) determines the *number*: Riemann sums, Fubini, etc.
 
 Forms do not replace Riemann integration. They sit on top of it. On flat domains in Cartesian coordinates, you can skip the forms layer entirely — the Riemann integral works directly. This is what we did for 90% of the course. The forms layer becomes essential when the domain is curved (curves, surfaces), the coordinates are non-Cartesian (polar, spherical), or you want to understand why three integral theorems are really one theorem.
 
@@ -264,7 +269,7 @@ $$
 (x_u\,du + x_v\,dv)(y_u\,du + y_v\,dv) = x_u y_u\,du\,du + x_u y_v\,du\,dv + x_v y_u\,dv\,du + x_v y_v\,dv\,dv.
 $$
 
-**Step 3.** We know from [[§15 Multivariable Integration#^rem-15-14|§15]] that the correct answer is the *signed* Jacobian determinant:
+**Step 3.** We know from [[§15d The Change of Variables Formula#^rem-15-14|§15d]] that the correct answer is the *signed* Jacobian determinant:
 
 $$
 (x_u y_v - x_v y_u)\,du\,dv = \det \begin{pmatrix} x_u & x_v \\ y_u & y_v \end{pmatrix} du\,dv.

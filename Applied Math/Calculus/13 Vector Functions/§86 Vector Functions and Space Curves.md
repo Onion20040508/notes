@@ -61,7 +61,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 ^thm-86-1
 
 > [!proof]+ Proof
-> Stewart states that "limits of vector functions obey the same rules as limits of real-valued functions" and leaves the proof as an exercise. Write $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$, $\mathbf{v} = \langle v_1, v_2, v_3 \rangle$, and $\lim_{t \to a} u_i(t) = p_i$, $\lim_{t \to a} v_i(t) = q_i$, which exist by Definition §86.2. Each component of $\mathbf{u} + \mathbf{v}$, $c\mathbf{u}$, $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \times \mathbf{v}$ is a sum of constant multiples of $u_i$, $v_j$ or of products $u_iv_j$. For instance, $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$, and the first component of $\mathbf{u} \times \mathbf{v}$ is $u_2v_3 - u_3v_2$. By the Sum, Constant Multiple and Product Laws for real-valued limits ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorem §8.1]]),
+> Stewart states that "limits of vector functions obey the same rules as limits of real-valued functions" and leaves the proof as an exercise. Write $\mathbf{u} = \langle u_1, u_2, u_3 \rangle$, $\mathbf{v} = \langle v_1, v_2, v_3 \rangle$, and $\lim_{t \to a} u_i(t) = p_i$, $\lim_{t \to a} v_i(t) = q_i$, which exist by [[§86 Vector Functions and Space Curves#^def-86-2|Definition §86.2]]. Each component of $\mathbf{u} + \mathbf{v}$, $c\mathbf{u}$, $\mathbf{u} \cdot \mathbf{v}$ and $\mathbf{u} \times \mathbf{v}$ is a sum of constant multiples of $u_i$, $v_j$ or of products $u_iv_j$. For instance, $\mathbf{u} \cdot \mathbf{v} = u_1v_1 + u_2v_2 + u_3v_3$, and the first component of $\mathbf{u} \times \mathbf{v}$ is $u_2v_3 - u_3v_2$. By the Sum, Constant Multiple and Product Laws for real-valued limits ([[§8 Calculating Limits Using the Limit Laws#^thm-8-1|Theorem §8.1]]),
 >
 > $$
 > \lim_{t \to a}(u_1v_1 + u_2v_2 + u_3v_3) = p_1q_1 + p_2q_2 + p_3q_3, \qquad \lim_{t \to a}(u_2v_3 - u_3v_2) = p_2q_3 - p_3q_2 ,
@@ -92,7 +92,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 ^prop-86-2
 
 > [!proof]+ Proof
-> By Definition §86.2, $\lim_{t \to a}\mathbf{r}(t) = \mathbf{r}(a)$ means that the three component limits exist and $\langle \lim f, \lim g, \lim h \rangle = \langle f(a), g(a), h(a) \rangle$. Two vectors are equal exactly when their components are equal, so this says $\lim_{t \to a} f(t) = f(a)$, $\lim_{t \to a} g(t) = g(a)$ and $\lim_{t \to a} h(t) = h(a)$, which is continuity of $f$, $g$, $h$ at $a$ ([[§10 Continuity#^def-10-1|Definition §10.1]]).
+> By [[§86 Vector Functions and Space Curves#^def-86-2|Definition §86.2]], $\lim_{t \to a}\mathbf{r}(t) = \mathbf{r}(a)$ means that the three component limits exist and $\langle \lim f, \lim g, \lim h \rangle = \langle f(a), g(a), h(a) \rangle$. Two vectors are equal exactly when their components are equal, so this says $\lim_{t \to a} f(t) = f(a)$, $\lim_{t \to a} g(t) = g(a)$ and $\lim_{t \to a} h(t) = h(a)$, which is continuity of $f$, $g$, $h$ at $a$ ([[§10 Continuity#^def-10-1|Definition §10.1]]).
 
 ^pf-86-2
 
@@ -101,7 +101,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 > [!example] Example §86.1: Domains and Limits
 > **(a)** The component functions of $\mathbf{r}(t) = \langle t^3, \ln(3 - t), \sqrt t \rangle$ are $f(t) = t^3$, $g(t) = \ln(3 - t)$, $h(t) = \sqrt t$. They are all defined when $3 - t > 0$ and $t \ge 0$, so the domain of $\mathbf{r}$ is $[0, 3)$.
 >
-> **(b)** Find $\lim_{t \to 0}\mathbf{r}(t)$ for $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \dfrac{\sin t}{t}\,\mathbf{k}$. By Definition §86.2,
+> **(b)** Find $\lim_{t \to 0}\mathbf{r}(t)$ for $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \dfrac{\sin t}{t}\,\mathbf{k}$. By [[§86 Vector Functions and Space Curves#^def-86-2|Definition §86.2]],
 >
 > $$
 > \lim_{t \to 0}\mathbf{r}(t) = \Big[\lim_{t \to 0}(1 + t^3)\Big]\mathbf{i} + \Big[\lim_{t \to 0} te^{-t}\Big]\mathbf{j} + \Big[\lim_{t \to 0}\frac{\sin t}{t}\Big]\mathbf{k} = \mathbf{i} + 0\,\mathbf{j} + 1\,\mathbf{k} = \mathbf{i} + \mathbf{k} ,
@@ -192,7 +192,7 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 ^ex-86-3
 
 ![[m233-86-1.svg]]
-*(a) The helix of Example §86.2(b) winds up the cylinder $x^2 + y^2 = 1$, passing $(1, 0, 0)$ at $t = 0$ and $(0, 1, \pi/2)$ at $t = \pi/2$. (b) Example §86.3(b): the slanted plane $y + z = 2$ (green) cuts the cylinder in an ellipse (red). The points $(1, 0, 2)$, $(0, 1, 1)$, $(-1, 0, 2)$, $(0, -1, 3)$ correspond to $t = 0, \pi/2, \pi, 3\pi/2$.*
+*(a) The helix of [[§86 Vector Functions and Space Curves#^ex-86-2|Example §86.2]](b) winds up the cylinder $x^2 + y^2 = 1$, passing $(1, 0, 0)$ at $t = 0$ and $(0, 1, \pi/2)$ at $t = \pi/2$. (b) [[§86 Vector Functions and Space Curves#^ex-86-3|Example §86.3]](b): the slanted plane $y + z = 2$ (green) cuts the cylinder in an ellipse (red). The points $(1, 0, 2)$, $(0, 1, 1)$, $(-1, 0, 2)$, $(0, -1, 3)$ correspond to $t = 0, \pi/2, \pi, 3\pi/2$.*
 
 > [!example] Example §86.4: Do Two Curves Meet?
 > **(a)** Do $\mathbf{r}_1(t) = \langle t^2 - 2, 7t, t^3 - 1 \rangle$ and $\mathbf{r}_2(s) = \langle 1 + 2s, 6 + 5s, 4 + 3s \rangle$ intersect?

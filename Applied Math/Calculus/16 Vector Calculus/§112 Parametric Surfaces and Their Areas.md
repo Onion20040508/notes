@@ -35,7 +35,7 @@ A space curve is traced by a vector function $\mathbf{r}(t)$ of one parameter; a
 ^def-112-1
 
 > [!remark]- Connections
-> - Parametrized surfaces in 452: [[§18 Surface Integrals#^def-18-1|452 Def. §18.1]], with the tangent vectors [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and the regularity condition $\mathbf{X}_u \times \mathbf{X}_v \ne \mathbf{0}$, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (Stewart's "smooth", Definition §112.3 below).
+> - Parametrized surfaces in 452: [[§18 Surface Integrals#^def-18-1|452 Def. §18.1]], with the tangent vectors [[§18 Surface Integrals#^def-18-2|452 Def. §18.2]] and the regularity condition $\mathbf{X}_u \times \mathbf{X}_v \ne \mathbf{0}$, [[§18 Surface Integrals#^def-18-3|452 Def. §18.3]] (Stewart's "smooth", [[§112 Parametric Surfaces and Their Areas#^def-112-3|Definition §112.3]] below).
 
 For example, $\mathbf{r}(u, v) = 2\cos u\,\mathbf{i} + v\,\mathbf{j} + 2\sin u\,\mathbf{k}$ satisfies $x^2 + z^2 = 4\cos^2 u + 4\sin^2 u = 4$, with $y = v$ unrestricted: it is the circular cylinder of radius $2$ about the $y$-axis. Restricting the parameters to $0 \le u \le \pi/2$, $0 \le v \le 3$ gives only the quarter of it of length $3$ with $x \ge 0$, $z \ge 0$ (Stewart, Example 16.6.1).
 
@@ -237,7 +237,7 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 > |\mathbf{r}_\phi \times \mathbf{r}_\theta| = \sqrt{a^4\sin^4\phi\cos^2\theta + a^4\sin^4\phi\sin^2\theta + a^4\sin^2\phi\cos^2\phi} = \sqrt{a^4\sin^4\phi + a^4\sin^2\phi\cos^2\phi} = a^2\sqrt{\sin^2\phi} = a^2\sin\phi ,
 > $$
 >
-> since $\sin\phi \ge 0$ for $0 \le \phi \le \pi$. By Definition §112.4,
+> since $\sin\phi \ge 0$ for $0 \le \phi \le \pi$. By [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]],
 >
 > $$
 > A = \iint_D a^2\sin\phi\,dA = \int_0^{2\pi} \int_0^{\pi} a^2\sin\phi\,d\phi\,d\theta = a^2 \int_0^{2\pi} d\theta \int_0^{\pi} \sin\phi\,d\phi = a^2 (2\pi)(2) = 4\pi a^2 .
@@ -276,11 +276,11 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 > \mathbf{r}_x \times \mathbf{r}_y = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ 1 & 0 & \partial f/\partial x \\ 0 & 1 & \partial f/\partial y \end{vmatrix} = -\frac{\partial f}{\partial x}\,\mathbf{i} - \frac{\partial f}{\partial y}\,\mathbf{j} + \mathbf{k} ,
 > $$
 >
-> which is (7); its length is (8). This parametrization covers $S$ exactly once, and $\mathbf{r}_x \times \mathbf{r}_y$ is never $\mathbf{0}$ (its $\mathbf{k}$-component is $1$), so $S$ is smooth and Definition §112.4 gives (9).
+> which is (7); its length is (8). This parametrization covers $S$ exactly once, and $\mathbf{r}_x \times \mathbf{r}_y$ is never $\mathbf{0}$ (its $\mathbf{k}$-component is $1$), so $S$ is smooth and [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]] gives (9).
 
 ^pf-112-2
 
-*Uses:* [[§112 Parametric Surfaces and Their Areas#^prop-112-1|§112.1]], [[§112 Parametric Surfaces and Their Areas#^def-112-4|Def. §112.4]], [[§112 Parametric Surfaces and Their Areas#^def-112-3|Def. §112.3]]
+*Uses:* [[§112 Parametric Surfaces and Their Areas#^prop-112-1|§112.1]], [[§112 Parametric Surfaces and Their Areas#^def-112-4|Def. §112.4]], [[§112 Parametric Surfaces and Their Areas#^def-112-3|Def. §112.3]], [[§112 Parametric Surfaces and Their Areas#^def-112-new1|Def. §112.4]]
 
 Formula 9 is the surface area formula of [[§102 Surface Area#^thm-102-1|Theorem §102.1]] (Stewart 15.5, Formula 3); note its similarity to the arc length formula $L = \int_a^b \sqrt{1 + (dy/dx)^2}\,dx$ ([[§52 Arc Length#^thm-52-1|Theorem §52.1]]).
 
@@ -303,7 +303,9 @@ Formula 9 is the surface area formula of [[§102 Surface Area#^thm-102-1|Theorem
 
 ^ex-112-5
 
-Is Definition §112.4 consistent with the surface area formula for surfaces of revolution from single-variable calculus ([[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], Stewart 8.2.4)?
+*Chain: the same paraboloid earlier in [[§102 Surface Area#^ex-102-2|Chapter 15]].*
+
+Is [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]] consistent with the surface area formula for surfaces of revolution from single-variable calculus ([[§53 Area of a Surface of Revolution#^def-53-2|Definition §53.2]], Stewart 8.2.4)?
 
 > [!theorem] Theorem §112.3: Surfaces of Revolution
 > If $S$ is obtained by rotating the curve $y = f(x)$, $a \le x \le b$, about the $x$-axis, where $f(x) \ge 0$ and $f'$ is continuous, then
@@ -337,7 +339,7 @@ Is Definition §112.4 consistent with the surface area formula for surfaces of r
 > |\mathbf{r}_x \times \mathbf{r}_\theta| = \sqrt{[f(x)]^2[f'(x)]^2 + [f(x)]^2\cos^2\theta + [f(x)]^2\sin^2\theta} = \sqrt{[f(x)]^2\big(1 + [f'(x)]^2\big)} = f(x)\sqrt{1 + [f'(x)]^2}
 > $$
 >
-> because $f(x) \ge 0$. Therefore, by Definition §112.4,
+> because $f(x) \ge 0$. Therefore, by [[§112 Parametric Surfaces and Their Areas#^def-112-4|Definition §112.4]],
 >
 > $$
 > A = \iint_D |\mathbf{r}_x \times \mathbf{r}_\theta|\,dA = \int_0^{2\pi} \int_a^b f(x)\sqrt{1 + [f'(x)]^2}\,dx\,d\theta = 2\pi \int_a^b f(x)\sqrt{1 + [f'(x)]^2}\,dx .

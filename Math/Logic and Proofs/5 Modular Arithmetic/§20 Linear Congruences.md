@@ -92,6 +92,32 @@ Propositions [[§19 Congruence of Integers#^prop-19-6|§19.6]] and [[§19 Congru
 
 The condition is also sufficient. The key case is $a$ coprime to $m$, where it holds automatically.
 
+Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
+
+> [!theorem] Proposition §20.5: Congruences and Diophantine Equations
+> For integers $a, b$ and a positive integer $m$, the map
+>
+> $$
+> f : \{(x, y) \in \mathbb{Z}^2 \mid ax + my = b\} \to \{x \in \mathbb{Z} \mid ax \equiv b \pmod m\}, \qquad f(x, y) = x,
+> $$
+>
+> is a bijection, with inverse $g(x) = \bigl(x, (b - ax)/m\bigr)$.
+>
+> *Eccles: Proposition 20.2.1*
+
+^prop-20-5
+
+> [!proof]+ Proof
+> *$f$ maps into the codomain:* if $ax + my = b$, then $ax - b = m(-y)$, so $ax \equiv b \pmod m$.
+>
+> *$g$ is a well-defined map back:* if $ax_0 \equiv b \pmod m$, then $m$ divides $b - a x_0$, so $y_0 = (b - a x_0)/m$ is an integer, and $a x_0 + m y_0 = b$.
+>
+> *They are inverse:* $f(g(x_0)) = x_0$ is clear. Conversely, if $ax + my = b$, then $my = b - ax$ and, as $m \neq 0$, $y = (b - ax)/m$; so $g(f(x, y)) = (x, y)$. Thus every solution $x_0$ of the congruence has exactly one preimage, $\bigl(x_0, (b - ax_0)/m\bigr)$, and $f$ is a bijection.
+
+^pf-20-5
+
+*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (a map with a two-sided inverse is a bijection)
+
 > [!theorem] Theorem §20.3: Coprime Coefficient
 > Suppose that $a$ and $b$ are integers with $a$ and $m$ coprime. Then the linear congruence $ax \equiv b \pmod m$ has a solution, and the solution is unique modulo $m$: if $x_0$ is one solution, an integer $x$ is a solution if and only if $x \equiv x_0 \pmod m$.
 >
@@ -99,7 +125,22 @@ The condition is also sufficient. The key case is $a$ coprime to $m$, where it h
 
 ^thm-20-3
 
-The proof is given in 20.2 below, after the link with diophantine equations. ([[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] gives a second, non-constructive proof by counting.)
+> [!proof]+ Proof
+> Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
+>
+> *Uniqueness modulo $m$.* For any integer $x$,
+>
+> $$
+> ax \equiv b \pmod m \iff ax \equiv a x_0 \pmod m \iff x \equiv x_0 \pmod m ,
+> $$
+>
+> the first step because $b \equiv a x_0$, the second by Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]] since $\gcd(a, m) = 1$.
+
+^pf-20-3
+
+*Uses:* [[§20 Linear Congruences#^prop-20-5|§20.5]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]]
+
+([[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6]] gives a second, non-constructive proof by counting.)
 
 > [!example] Example §20.3: Unique and Non-Unique Solutions
 > (a) In Example [[§19 Congruence of Integers#^ex-19-6|§19.6]](b), $2x \equiv 5 \pmod 7 \iff x \equiv 6 \pmod 7$: one solution modulo $7$, as [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] predicts since $\gcd(2, 7) = 1$.
@@ -164,48 +205,7 @@ Putting together [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]], Propositi
 
 ## 20.2 Linear Congruences and Diophantine Equations
 
-Now a systematic method, which also proves [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]]. By definition, $ax \equiv b \pmod m$ iff $b - ax$ is a multiple of $m$, i.e. iff $b - ax = my$ for some integer $y$, i.e. $ax + my = b$. So solving the linear congruence is the same as solving the **linear diophantine equation** $ax + my = b$, whose solutions are ordered pairs $(x, y) \in \mathbb{Z}^2$ ([[§18★ Linear Diophantine Equations#^def-18-1|Def. §18.1]]). Precisely:
-
-> [!theorem] Proposition §20.5: Congruences and Diophantine Equations
-> For integers $a, b$ and a positive integer $m$, the map
->
-> $$
-> f : \{(x, y) \in \mathbb{Z}^2 \mid ax + my = b\} \to \{x \in \mathbb{Z} \mid ax \equiv b \pmod m\}, \qquad f(x, y) = x,
-> $$
->
-> is a bijection, with inverse $g(x) = \bigl(x, (b - ax)/m\bigr)$.
->
-> *Eccles: Proposition 20.2.1*
-
-^prop-20-5
-
-> [!proof]+ Proof
-> *$f$ maps into the codomain:* if $ax + my = b$, then $ax - b = m(-y)$, so $ax \equiv b \pmod m$.
->
-> *$g$ is a well-defined map back:* if $ax_0 \equiv b \pmod m$, then $m$ divides $b - a x_0$, so $y_0 = (b - a x_0)/m$ is an integer, and $a x_0 + m y_0 = b$.
->
-> *They are inverse:* $f(g(x_0)) = x_0$ is clear. Conversely, if $ax + my = b$, then $my = b - ax$ and, as $m \neq 0$, $y = (b - ax)/m$; so $g(f(x, y)) = (x, y)$. Thus every solution $x_0$ of the congruence has exactly one preimage, $\bigl(x_0, (b - ax_0)/m\bigr)$, and $f$ is a bijection.
-
-^pf-20-5
-
-*Uses:* [[§19 Congruence of Integers#^def-19-1|Def. §19.1]], [[§9 Injections, Surjections and Bijections#^thm-9-2|§9.2]] (a map with a two-sided inverse is a bijection)
-
-> [!proof]+ Proof of Theorem §20.3
-> Let $a$ and $m$ be coprime. By Bézout ([[§17 Consequences of the Euclidean Algorithm#^thm-17-1|Theorem §17.1]]) there are integers $r, s$ with $ar + ms = 1$; multiplying by $b$, $\ a(rb) + m(sb) = b$. So the diophantine equation $ax + my = b$ has the solution $(rb, sb)$ — this is [[§18★ Linear Diophantine Equations#^thm-18-1|Theorem §18.1]] (Eccles 18.2.1) in the case $\gcd(a, m) = 1$ — and by Proposition [[§20 Linear Congruences#^prop-20-5|§20.5]], $x_0 = rb$ solves $ax \equiv b \pmod m$.
->
-> *Uniqueness modulo $m$.* For any integer $x$,
->
-> $$
-> ax \equiv b \pmod m \iff ax \equiv a x_0 \pmod m \iff x \equiv x_0 \pmod m ,
-> $$
->
-> the first step because $b \equiv a x_0$, the second by Proposition [[§19 Congruence of Integers#^prop-19-7|§19.7]] since $\gcd(a, m) = 1$.
-
-^pf-20-3
-
-*Uses:* [[§20 Linear Congruences#^prop-20-5|§20.5]], [[§19 Congruence of Integers#^prop-19-7|§19.7]], [[§17 Consequences of the Euclidean Algorithm#^thm-17-1|§17.1]], [[§18★ Linear Diophantine Equations#^thm-18-1|§18.1]]
-
-The proof is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
+The proof of [[§20 Linear Congruences#^thm-20-3|Theorem §20.3]] is constructive: the Euclidean algorithm produces $r$ and $s$, hence the solution.
 
 > [!example] Example §20.4: The Euclidean Algorithm Method
 > *Solve $290x \equiv 5 \pmod{357}$.* Solve $290x + 357y = 5$. The Euclidean algorithm writes each remainder as an integral combination of $357$ and $290$ (in brackets, minus the quotients, as Eccles writes them: each row is the row two above plus the row above times that row's bracket):
@@ -273,5 +273,7 @@ The correspondence also runs the other way: congruence techniques solve diophant
 > *Eccles: Example 20.2.4*
 
 ^ex-20-6
+
+*Chain: earlier in [[§18d The Equation 140m + 63n = 35|Chapter 4]]*
 
 For small numbers the congruence manipulations are usually quickest; for large ones the Euclidean algorithm.

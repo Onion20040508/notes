@@ -87,7 +87,7 @@ Direction fields also give insight into physical situations. A simple electric c
 ^def-58-2
 
 > [!example] Example §58.2: Current in a Circuit
-> In the circuit of Definition §58.2, suppose the resistance is $12\ \Omega$, the inductance is $4$ H, and a battery gives a constant voltage of $60$ V.
+> In the circuit of [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]], suppose the resistance is $12\ \Omega$, the inductance is $4$ H, and a battery gives a constant voltage of $60$ V.
 > (a) Draw a direction field for the equation with these values.
 > (b) What can you say about the limiting value of the current?
 > (c) Identify any equilibrium solutions.
@@ -115,7 +115,7 @@ Direction fields also give insight into physical situations. A simple electric c
 
 ^ex-58-2
 
-In Example §58.2 the segments along any horizontal line are parallel, because the independent variable $t$ does not occur on the right side of $I' = 15 - 3I$.
+In [[§58 Direction Fields and Euler's Method#^ex-58-2|Example §58.2]] the segments along any horizontal line are parallel, because the independent variable $t$ does not occur on the right side of $I' = 15 - 3I$.
 
 > [!definition] Definition §58.3: Autonomous Differential Equation
 > A differential equation of the form
@@ -141,7 +141,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 ^prop-58-1
 
 > [!remark] Remark: Why It Works
-> For an autonomous equation, the slopes at two points with the same $y$-coordinate are equal: the direction field looks the same along every horizontal line, so it is unchanged by a horizontal shift. A shifted solution curve is therefore still parallel to the segments everywhere. In Example §58.2, shifting the solution curve one and two time units to the right gives the solutions with $I(1) = 0$ and $I(2) = 0$: they correspond to closing the switch at $t = 1$ or $t = 2$.
+> For an autonomous equation, the slopes at two points with the same $y$-coordinate are equal: the direction field looks the same along every horizontal line, so it is unchanged by a horizontal shift. A shifted solution curve is therefore still parallel to the segments everywhere. In [[§58 Direction Fields and Euler's Method#^ex-58-2|Example §58.2]], shifting the solution curve one and two time units to the right gives the solutions with $I(1) = 0$ and $I(2) = 0$: they correspond to closing the switch at $t = 1$ or $t = 2$.
 
 ^rem-58-2
 
@@ -227,7 +227,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 ^ex-58-3
 
 > [!remark] Remark: How Accurate Is Euler's Method?
-> For a more accurate table we decrease the step size; with many small steps the computation is done by a calculator or computer. For the initial-value problem of Example §58.3, Stewart's table gives:
+> For a more accurate table we decrease the step size; with many small steps the computation is done by a calculator or computer. For the initial-value problem of [[§58 Direction Fields and Euler's Method#^ex-58-3|Example §58.3]], Stewart's table gives:
 >
 > | step size | Euler estimate of $y(0.5)$ | Euler estimate of $y(1)$ |
 > |---|---|---|
@@ -252,7 +252,7 @@ In Example §58.2 the segments along any horizontal line are parallel, because t
 *Euler's method for $y' = x + y$, $y(0) = 1$. With $h = 0.5$ (blue) the first step runs $h = 0.5$ along the tangent at $(0, 1)$ and rises $hF(0, 1) = 0.5$; at $(0.5, 1.5)$ the direction is corrected to slope $2$. With $h = 0.25$ (green) there are four corrections and the polygon stays closer to the exact solution (red). Both lie below it, since the curve is concave upward.*
 
 > [!example] Example §58.4: Euler's Method for the Circuit
-> In Example §58.2 (resistance $12\ \Omega$, inductance $4$ H, battery voltage $60$ V, switch closed at $t = 0$), the current $I$ at time $t$ is modeled by the initial-value problem
+> In [[§58 Direction Fields and Euler's Method#^ex-58-2|Example §58.2]] (resistance $12\ \Omega$, inductance $4$ H, battery voltage $60$ V, switch closed at $t = 0$), the current $I$ at time $t$ is modeled by the initial-value problem
 >
 > $$
 > \frac{dI}{dt} = 15 - 3I, \qquad I(0) = 0 .

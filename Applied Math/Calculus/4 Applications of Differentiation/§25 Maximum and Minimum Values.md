@@ -57,7 +57,7 @@ A function may have many extreme values or none. $\cos x$ takes its (local and a
 >
 > - $f(0) = 0$ is a local minimum and $f(1) = 5$ is a local maximum.
 > - $f(3) = -27$ is both a local and the absolute minimum.
-> - $f(-1) = 37$ is the absolute maximum. It is *not* a local maximum, because it occurs at an endpoint (Definition §25.2).
+> - $f(-1) = 37$ is the absolute maximum. It is *not* a local maximum, because it occurs at an endpoint ([[§25 Maximum and Minimum Values#^def-25-2|Definition §25.2]]).
 > - At $x = 4$, $f$ has neither a local nor an absolute maximum: $4$ is an endpoint, and $f(4) = 32 < 37$.
 >
 > *Stewart: Example 4.1.1*
@@ -98,7 +98,7 @@ At a local maximum or minimum of a smooth graph the tangent line looks horizonta
 ^thm-25-2
 
 > [!proof]+ Proof
-> **Local maximum.** By Definition §25.2, $f(c) \ge f(x)$ for all $x$ sufficiently close to $c$. So if $h$ is sufficiently close to $0$, positive or negative,
+> **Local maximum.** By [[§25 Maximum and Minimum Values#^def-25-2|Definition §25.2]], $f(c) \ge f(x)$ for all $x$ sufficiently close to $c$. So if $h$ is sufficiently close to $0$, positive or negative,
 >
 > $$
 > f(c + h) - f(c) \le 0 . \qquad (5)
@@ -179,7 +179,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 ^cor-25-3
 
 > [!proof]+ Proof
-> A local extremum at $c$ involves the value $f(c)$, so $c$ is in the domain of $f$. If $f'(c)$ does not exist, $c$ is a critical number by Definition §25.3. If $f'(c)$ exists, then $f'(c) = 0$ by Fermat's Theorem, and again $c$ is a critical number.
+> A local extremum at $c$ involves the value $f(c)$, so $c$ is in the domain of $f$. If $f'(c)$ does not exist, $c$ is a critical number by [[§25 Maximum and Minimum Values#^def-25-3|Definition §25.3]]. If $f'(c)$ exists, then $f'(c) = 0$ by Fermat's Theorem, and again $c$ is a critical number.
 
 ^pf-25-3
 
@@ -198,7 +198,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 > [!example] Example §25.4: The Closed Interval Method
 > Find the absolute maximum and minimum values of $f(x) = x^3 - 3x^2 + 1$, $-\frac12 \le x \le 4$.
 >
-> $f$ is a polynomial, hence continuous on $[-\frac12, 4]$ ([[§10 Continuity#^thm-10-2|Theorem §10.2]]), so the Closed Interval Method applies. By Example §25.3(a) the critical numbers are $0$ and $2$, both in $(-\frac12, 4)$.
+> $f$ is a polynomial, hence continuous on $[-\frac12, 4]$ ([[§10 Continuity#^thm-10-2|Theorem §10.2]]), so the Closed Interval Method applies. By [[§25 Maximum and Minimum Values#^ex-25-3|Example §25.3]](a) the critical numbers are $0$ and $2$, both in $(-\frac12, 4)$.
 > 1. Values at the critical numbers: $f(0) = 1$, $f(2) = 8 - 12 + 1 = -3$.
 > 2. Values at the endpoints: $f(-\frac12) = -\frac18 - \frac34 + 1 = \frac18$, $f(4) = 64 - 48 + 1 = 17$.
 > 3. Comparing the four numbers: the absolute maximum value is $f(4) = 17$ and the absolute minimum value is $f(2) = -3$.
@@ -210,7 +210,7 @@ So we should look for extreme values where $f'(c) = 0$ *or* where $f'(c)$ does n
 ^ex-25-4
 
 ![[m233-25-1.svg]]
-*Example §25.4: $y = x^3 - 3x^2 + 1$ on $[-\frac12, 4]$. The candidates are the critical numbers $0$ and $2$, where the tangent is horizontal (gray), and the two endpoints. The largest value $17$ is at the endpoint $4$ (red), the smallest $-3$ at the critical number $2$ (blue). The local maximum $f(0) = 1$ is beaten by the endpoint.*
+*[[§25 Maximum and Minimum Values#^ex-25-4|Example §25.4]]: $y = x^3 - 3x^2 + 1$ on $[-\frac12, 4]$. The candidates are the critical numbers $0$ and $2$, where the tangent is horizontal (gray), and the two endpoints. The largest value $17$ is at the endpoint $4$ (red), the smallest $-3$ at the critical number $2$ (blue). The local maximum $f(0) = 1$ is beaten by the endpoint.*
 
 > [!example] Example §25.5: Exact Extreme Values of a Trigonometric Function
 > Find the exact absolute minimum and maximum values of $f(x) = x - 2\sin x$, $0 \le x \le 2\pi$.

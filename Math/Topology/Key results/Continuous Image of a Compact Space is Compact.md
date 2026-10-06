@@ -17,8 +17,8 @@ tags: [topology, hub]
 ## Used in (Topology)
 - [[§15 Compact Spaces#^thm-15-7|Theorem §15.7: Bijection from Compact to Hausdorff]]
 - [[§15 Compact Spaces#^thm-15-8|Theorem §15.8: Finite Product of Compact Spaces]]
-- [[§24 Covering Spaces#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
-- [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
+- [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Lemma §24.12: Equivalent Conditions for Nullhomotopy]]
+- [[§25a Retractions and Fixed Points#^lem-26-8|Lemma §26.8: Generalized Nullhomotopy Lemma (Munkres 55.3 for Sⁿ)]]
 
 ## Used in (Differentiable Manifolds)
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
@@ -43,5 +43,5 @@ tags: [topology, hub]
 ## Connections
 - **Generalizes.** With Y = ℝ it is the source of the MATH 451 [[Extreme Value Theorem]]: f([a, b]) is compact, hence closed and bounded by [[Heine–Borel Theorem]].
 - **Invariance.** Compactness is therefore a topological property ([[§15 Compact Spaces#^rem-15-1|Why Compactness Matters]]). The connectedness analogue is [[Continuous Image of a Connected Space is Connected]].
-- **Typical use.** It is step 2 of [[Bijection from Compact to Hausdorff is a Homeomorphism]], so maps from compact to Hausdorff spaces are closed. That is how the cone map Sⁿ × I → Bⁿ⁺¹ is shown to be a quotient map in [[§24 Covering Spaces#^lem-24-12|Equivalent Conditions for Nullhomotopy]] (§24.12) and [[§26 Deformation Retracts and Homotopy Type#^lem-26-8|Generalized Nullhomotopy Lemma]] (§26.8).
+- **Typical use.** It is step 2 of [[Bijection from Compact to Hausdorff is a Homeomorphism]], so maps from compact to Hausdorff spaces are closed. That is how the cone map Sⁿ × I → Bⁿ⁺¹ is shown to be a quotient map in [[§24a Lifting and the Fundamental Group of the Circle#^lem-24-12|Equivalent Conditions for Nullhomotopy]] (§24.12) and [[§25a Retractions and Fixed Points#^lem-26-8|Generalized Nullhomotopy Lemma]] (§26.8).
 - **Also in [[Complex Variables]]:** [[§18 Continuity#^thm-18-6|342 Thm. §18.6]] (continuous complex functions on closed bounded regions are bounded and attain a maximum modulus; complex-variables version).

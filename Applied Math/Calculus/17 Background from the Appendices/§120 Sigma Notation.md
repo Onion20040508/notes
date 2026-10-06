@@ -114,7 +114,7 @@ Stewart states the same three rules again in 5.2 (Equations 9–11), where they 
 ^thm-120-2
 
 > [!proof]+ Proof
-> **(a), (b).** $\sum_{i=1}^n 1 = 1 + 1 + \cdots + 1$ ($n$ terms) $= n$, and then $\sum c = c\sum 1 = nc$ by Theorem §120.1(a).
+> **(a), (b).** $\sum_{i=1}^n 1 = 1 + 1 + \cdots + 1$ ($n$ terms) $= n$, and then $\sum c = c\sum 1 = nc$ by [[§120 Sigma Notation#^thm-120-1|Theorem §120.1]](a).
 >
 > **(c)** (Gauss's method, at age ten). Write $S = \sum_{i=1}^n i$ twice, once in the usual order and once in reverse order:
 >
@@ -133,7 +133,7 @@ Stewart states the same three rules again in 5.2 (Equations 9–11), where they 
 > \sum_{i=1}^n \big[(1 + i)^3 - i^3\big] = (2^3 - 1^3) + (3^3 - 2^3) + (4^3 - 3^3) + \cdots + \big[(n + 1)^3 - n^3\big]
 > $$
 >
-> most terms cancel in pairs, leaving $(n + 1)^3 - 1^3 = n^3 + 3n^2 + 3n$. On the other hand $(1 + i)^3 - i^3 = 3i^2 + 3i + 1$, so by Theorem §120.1 and parts (a) and (c),
+> most terms cancel in pairs, leaving $(n + 1)^3 - 1^3 = n^3 + 3n^2 + 3n$. On the other hand $(1 + i)^3 - i^3 = 3i^2 + 3i + 1$, so by [[§120 Sigma Notation#^thm-120-1|Theorem §120.1]] and parts (a) and (c),
 >
 > $$
 > \sum_{i=1}^n \big[(1 + i)^3 - i^3\big] = 3\sum_{i=1}^n i^2 + 3\sum_{i=1}^n i + \sum_{i=1}^n 1 = 3S + \frac{3n(n + 1)}{2} + n = 3S + \tfrac32 n^2 + \tfrac52 n .
@@ -172,7 +172,7 @@ Stewart states the same three rules again in 5.2 (Equations 9–11), where they 
 > [!example] Example §120.2: Evaluating a Sum with the Formulas
 > Evaluate $\displaystyle\sum_{i=1}^n i(4i^2 - 3)$.
 >
-> By Theorems §120.1 and §120.2,
+> By [[§120 Sigma Notation#^thm-120-1|Theorems §120.1]] and [[§120 Sigma Notation#^thm-120-2|§120.2]],
 >
 > $$
 > \begin{aligned}

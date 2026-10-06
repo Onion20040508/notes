@@ -73,7 +73,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-1
 
 > [!proof]+ Proof
-> By Definition §87.1 and the componentwise arithmetic of [[§81 Vectors#^thm-81-4|Theorem §81.4]],
+> By [[§87 Derivatives and Integrals of Vector Functions#^def-87-1|Definition §87.1]] and the componentwise arithmetic of [[§81 Vectors#^thm-81-4|Theorem §81.4]],
 >
 > $$
 > \begin{aligned}
@@ -90,19 +90,19 @@ The calculus of vector functions is one-variable calculus done in each component
 *Uses:* [[§87 Derivatives and Integrals of Vector Functions#^def-87-1|Def. §87.1]], [[§86 Vector Functions and Space Curves#^def-86-2|Def. §86.2]], [[§81 Vectors#^thm-81-4|§81.4]], [[§13 The Derivative as a Function#^def-13-1|Def. §13.1]]
 
 > [!remark]- Connections
-> - For a plane curve this is the tangent vector $(x'(t), y'(t))$ of [[§16 Line Integrals and Green's Theorem#^def-16-3|452 Def. §16.3]]. In 452's language, $\mathbf{r}'(t)$ is the Jacobian (a $3 \times 1$ matrix) of $\mathbf{r}: \mathbb{R} \to \mathbb{R}^3$, and Theorem §87.1 says it is computed entry by entry.
+> - For a plane curve this is the tangent vector $(x'(t), y'(t))$ of [[§16 Line Integrals and Green's Theorem#^def-16-3|452 Def. §16.3]]. In 452's language, $\mathbf{r}'(t)$ is the Jacobian (a $3 \times 1$ matrix) of $\mathbf{r}: \mathbb{R} \to \mathbb{R}^3$, and [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1]] says it is computed entry by entry.
 > - ODE version: [[§28 Matrices#^def-28-5|331 Def. §28.5]] (matrix functions, differentiated and integrated entry by entry; a vector function is the case of a single column).
 > - Complex-variables version: [[§41 Derivatives of Functions w(t)#^def-41-1|342 Def. §41.1]] (the derivative of $w(t) = u(t) + iv(t)$, taken component by component).
 
 > [!definition] Definition §87.3: Second Derivative
-> The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
+> The **second derivative** of a vector function $\mathbf{r}$ is the derivative of $\mathbf{r}'$: $\mathbf{r}'' = (\mathbf{r}')'$. In [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-1|Definition §89.1]] and [[§89 Motion in Space꞉ Velocity and Acceleration#^def-89-new2|Definition §89.3]], $\mathbf{r}'(t)$ and $\mathbf{r}''(t)$ are the velocity and acceleration of a particle with position $\mathbf{r}(t)$ at time $t$.
 >
 > *Stewart: 13.2 (text)*
 
 ^def-87-3
 
 > [!example] Example §87.1: Derivatives and Unit Tangent Vectors
-> **(a)** For $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \sin 2t\,\mathbf{k}$, Theorem §87.1 gives
+> **(a)** For $\mathbf{r}(t) = (1 + t^3)\,\mathbf{i} + te^{-t}\,\mathbf{j} + \sin 2t\,\mathbf{k}$, [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1]] gives
 >
 > $$
 > \mathbf{r}'(t) = 3t^2\,\mathbf{i} + (1 - t)e^{-t}\,\mathbf{j} + 2\cos 2t\,\mathbf{k}
@@ -169,7 +169,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-2
 
 > [!proof]+ Proof
-> Stewart proves Formula 4 and leaves the others as exercises. Write $\mathbf{u} = \langle f_1, f_2, f_3 \rangle$ and $\mathbf{v} = \langle g_1, g_2, g_3 \rangle$. By Theorem §87.1 every formula can be checked component by component using the rules for real-valued functions: the Sum and Constant Multiple Rules ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Theorem §14.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorem §14.3]]), the Product Rule ([[§15 The Product and Quotient Rules#^thm-15-1|Theorem §15.1]]) and the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]).
+> Stewart proves Formula 4 and leaves the others as exercises. Write $\mathbf{u} = \langle f_1, f_2, f_3 \rangle$ and $\mathbf{v} = \langle g_1, g_2, g_3 \rangle$. By [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1]] every formula can be checked component by component using the rules for real-valued functions: the Sum and Constant Multiple Rules ([[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-4|Theorem §14.4]], [[§14 Derivatives of Polynomials and Exponential Functions#^thm-14-3|Theorem §14.3]]), the Product Rule ([[§15 The Product and Quotient Rules#^thm-15-1|Theorem §15.1]]) and the Chain Rule ([[§17 The Chain Rule#^thm-17-2|Theorem §17.2]]).
 >
 > **1, 2.** The $i$-th component of $\mathbf{u} + \mathbf{v}$ is $f_i + g_i$, with derivative $f_i' + g_i'$; that of $c\mathbf{u}$ is $cf_i$, with derivative $cf_i'$ (Sum and Constant Multiple Rules).
 >
@@ -207,7 +207,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-3
 
 > [!proof]+ Proof
-> Since $\mathbf{r}(t) \cdot \mathbf{r}(t) = |\mathbf{r}(t)|^2 = c^2$ is constant, Formula 4 of Theorem §87.2 gives
+> Since $\mathbf{r}(t) \cdot \mathbf{r}(t) = |\mathbf{r}(t)|^2 = c^2$ is constant, Formula 4 of [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|Theorem §87.2]] gives
 >
 > $$
 > 0 = \frac{d}{dt}[\mathbf{r}(t) \cdot \mathbf{r}(t)] = \mathbf{r}'(t) \cdot \mathbf{r}(t) + \mathbf{r}(t) \cdot \mathbf{r}'(t) = 2\,\mathbf{r}'(t) \cdot \mathbf{r}(t) .
@@ -220,7 +220,7 @@ The calculus of vector functions is one-variable calculus done in each component
 *Uses:* [[§87 Derivatives and Integrals of Vector Functions#^thm-87-2|§87.2]], [[§82 The Dot Product#^thm-82-1|§82.1]], [[§82 The Dot Product#^thm-82-4|§82.4]]
 
 > [!remark] Remark: Curves on a Sphere
-> Geometrically, Theorem §87.3 says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the unit normal vector is defined in [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]].
+> Geometrically, [[§87 Derivatives and Integrals of Vector Functions#^thm-87-3|Theorem §87.3]] says that if a curve lies on a sphere centered at the origin, its tangent vector $\mathbf{r}'(t)$ is always perpendicular to the position vector $\mathbf{r}(t)$, the radius of the sphere. The most important application is to the unit tangent vector: $|\mathbf{T}(t)| = 1$, so $\mathbf{T}'(t) \perp \mathbf{T}(t)$, which is how the unit normal vector is defined in [[§88 Arc Length and Curvature#^def-88-5|Definition §88.5]].
 
 ^rem-87-2
 
@@ -295,7 +295,7 @@ The calculus of vector functions is one-variable calculus done in each component
 ^thm-87-5
 
 > [!proof]+ Proof
-> Write $\mathbf{R} = \langle F, G, H \rangle$. By Theorem §87.1, $\mathbf{R}' = \mathbf{r}$ means $F' = f$, $G' = g$, $H' = h$. By Proposition §87.4 and Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) in each component,
+> Write $\mathbf{R} = \langle F, G, H \rangle$. By [[§87 Derivatives and Integrals of Vector Functions#^thm-87-1|Theorem §87.1]], $\mathbf{R}' = \mathbf{r}$ means $F' = f$, $G' = g$, $H' = h$. By [[§87 Derivatives and Integrals of Vector Functions#^prop-87-4|Proposition §87.4]] and Part 2 of the Fundamental Theorem of Calculus ([[§36 The Fundamental Theorem of Calculus#^thm-36-2|Theorem §36.2]]) in each component,
 >
 > $$
 > \int_a^b \mathbf{r}(t)\,dt = \big\langle F(b) - F(a),\ G(b) - G(a),\ H(b) - H(a) \big\rangle = \mathbf{R}(b) - \mathbf{R}(a) .
@@ -316,7 +316,7 @@ The calculus of vector functions is one-variable calculus done in each component
 > \int \mathbf{r}(t)\,dt = \left( \int 2\cos t\,dt \right)\mathbf{i} + \left( \int \sin t\,dt \right)\mathbf{j} + \left( \int 2t\,dt \right)\mathbf{k} = 2\sin t\,\mathbf{i} - \cos t\,\mathbf{j} + t^2\,\mathbf{k} + \mathbf{C} ,
 > $$
 >
-> where $\mathbf{C}$ is a vector constant of integration, and by Theorem §87.5
+> where $\mathbf{C}$ is a vector constant of integration, and by [[§87 Derivatives and Integrals of Vector Functions#^thm-87-5|Theorem §87.5]]
 >
 > $$
 > \int_0^{\pi/2} \mathbf{r}(t)\,dt = \Big[2\sin t\,\mathbf{i} - \cos t\,\mathbf{j} + t^2\,\mathbf{k}\Big]_0^{\pi/2} = \Big(2\,\mathbf{i} + \frac{\pi^2}{4}\,\mathbf{k}\Big) - (-\mathbf{j}) = 2\,\mathbf{i} + \mathbf{j} + \frac{\pi^2}{4}\,\mathbf{k} .

@@ -75,6 +75,22 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]] gives Rolle's Theorem; the two-function theorem is [[§30 L'Hospital's Rule#^thm-30-2|451 Thm. §30.2]] (Generalized Mean Value Theorem), stated there in the symmetric form $(f(b) - f(a))\,g'(c) = (g(b) - g(a))\,f'(c)$, which needs no hypothesis on $g'$.
 
+> [!remark] Remark: Why It Works
+> Suppose $f(a) = g(a) = 0$. Zooming in toward the point $(a, 0)$, the graphs of $f$ and $g$ look almost linear, like their tangent lines $y = f'(a)(x - a)$ and $y = g'(a)(x - a)$. If they actually were linear, their ratio would be $\frac{f'(a)(x - a)}{g'(a)(x - a)} = \frac{f'(a)}{g'(a)}$, the ratio of the derivatives.
+>
+> This becomes a proof in a special case (Stewart's Note 3): $f(a) = g(a) = 0$, $f'$ and $g'$ continuous, and $g'(a) \ne 0$. Then, by continuity of $f'$ and $g'$ and the alternative form of the definition of the derivative ([[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]),
+>
+> $$
+> \lim_{x \to a} \frac{f'(x)}{g'(x)} = \frac{f'(a)}{g'(a)}
+> = \frac{\displaystyle\lim_{x \to a} \frac{f(x) - f(a)}{x - a}}{\displaystyle\lim_{x \to a} \frac{g(x) - g(a)}{x - a}}
+> = \lim_{x \to a} \frac{f(x) - f(a)}{g(x) - g(a)}
+> = \lim_{x \to a} \frac{f(x)}{g(x)} ,
+> $$
+>
+> using the Quotient Law and $f(a) = g(a) = 0$. The general version needs Cauchy's Mean Value Theorem.
+
+^rem-28-1
+
 > [!theorem] Theorem §28.2: L'Hospital's Rule
 > Suppose $f$ and $g$ are differentiable and $g'(x) \ne 0$ on an open interval $I$ that contains $a$ (except possibly at $a$). Suppose that
 >
@@ -101,22 +117,6 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 > *Stewart: 4.4, L'Hospital's Rule and Note 2; proof in Appendix F*
 
 ^thm-28-2
-
-> [!remark] Remark: Why It Works
-> Suppose $f(a) = g(a) = 0$. Zooming in toward the point $(a, 0)$, the graphs of $f$ and $g$ look almost linear, like their tangent lines $y = f'(a)(x - a)$ and $y = g'(a)(x - a)$. If they actually were linear, their ratio would be $\frac{f'(a)(x - a)}{g'(a)(x - a)} = \frac{f'(a)}{g'(a)}$, the ratio of the derivatives.
->
-> This becomes a proof in a special case (Stewart's Note 3): $f(a) = g(a) = 0$, $f'$ and $g'$ continuous, and $g'(a) \ne 0$. Then, by continuity of $f'$ and $g'$ and the alternative form of the definition of the derivative ([[§12 Derivatives and Rates of Change#^def-12-3|Def. §12.3]]),
->
-> $$
-> \lim_{x \to a} \frac{f'(x)}{g'(x)} = \frac{f'(a)}{g'(a)}
-> = \frac{\displaystyle\lim_{x \to a} \frac{f(x) - f(a)}{x - a}}{\displaystyle\lim_{x \to a} \frac{g(x) - g(a)}{x - a}}
-> = \lim_{x \to a} \frac{f(x) - f(a)}{g(x) - g(a)}
-> = \lim_{x \to a} \frac{f(x)}{g(x)} ,
-> $$
->
-> using the Quotient Law and $f(a) = g(a) = 0$. The general version needs Cauchy's Mean Value Theorem.
-
-^rem-28-1
 
 > [!proof]+ Proof
 > Stewart proves the case of type $\frac00$.
@@ -364,7 +364,7 @@ Either way one is led to the indeterminate product $g(x)\ln f(x)$, of type $0 \c
 >
 > **(b)** Find $\displaystyle\lim_{x \to 0^+} x^x$.
 >
-> This is of type $0^0$: $0^x = 0$ for every $x > 0$ but $x^0 = 1$ for every $x \ne 0$ (and $0^0$ is undefined). Write the function as an exponential, $x^x = (e^{\ln x})^x = e^{x \ln x}$. By Example §28.3, $\lim_{x \to 0^+} x \ln x = 0$. Therefore
+> This is of type $0^0$: $0^x = 0$ for every $x > 0$ but $x^0 = 1$ for every $x \ne 0$ (and $0^0$ is undefined). Write the function as an exponential, $x^x = (e^{\ln x})^x = e^{x \ln x}$. By [[§28 Indeterminate Forms and L'Hospital's Rule#^ex-28-3|Example §28.3]], $\lim_{x \to 0^+} x \ln x = 0$. Therefore
 >
 > $$
 > \lim_{x \to 0^+} x^x = \lim_{x \to 0^+} e^{x \ln x} = e^0 = 1 .

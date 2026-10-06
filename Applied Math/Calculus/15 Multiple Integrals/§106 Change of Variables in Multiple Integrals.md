@@ -52,7 +52,7 @@ $$
 ^ex-106-1
 
 ![[m233-106-1.svg]]
-*Example §106.1: the transformation $x = u^2 - v^2$, $y = 2uv$ maps the unit square $S$ onto the region $R$ under two parabolic arcs. Each side of $S$ and its image have the same colour; the bottom side $S_1$ and the left side $S_4$ are both folded onto the $x$-axis, on either side of the origin, and $S_2$, $S_3$ become the arcs $x = 1 - y^2/4$ and $x = y^2/4 - 1$, meeting at $(0, 2)$, the image of the corner $(1, 1)$.*
+*[[§106 Change of Variables in Multiple Integrals#^ex-106-1|Example §106.1]]: the transformation $x = u^2 - v^2$, $y = 2uv$ maps the unit square $S$ onto the region $R$ under two parabolic arcs. Each side of $S$ and its image have the same colour; the bottom side $S_1$ and the left side $S_4$ are both folded onto the $x$-axis, on either side of the origin, and $S_2$, $S_3$ become the arcs $x = 1 - y^2/4$ and $x = y^2/4 - 1$, meeting at $(0, 2)$, the image of the corner $(1, 1)$.*
 
 Now consider how a change of variables affects a double integral. Start with a small rectangle $S$ in the $uv$-plane whose lower left corner is $(u_0, v_0)$ and whose dimensions are $\Delta u$ and $\Delta v$. Its image $R = T(S)$ has the boundary point $(x_0, y_0) = T(u_0, v_0)$. Let
 
@@ -148,7 +148,7 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 > \frac{\partial(x, y)}{\partial(r, \theta)} = \begin{vmatrix} \dfrac{\partial x}{\partial r} & \dfrac{\partial x}{\partial \theta} \\[6pt] \dfrac{\partial y}{\partial r} & \dfrac{\partial y}{\partial \theta} \end{vmatrix} = \begin{vmatrix} \cos\theta & -r\sin\theta \\ \sin\theta & r\cos\theta \end{vmatrix} = r\cos^2\theta + r\sin^2\theta = r > 0 ,
 > $$
 >
-> so Theorem §106.1 gives
+> so [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]] gives
 >
 > $$
 > \iint_R f(x, y)\,dx\,dy = \iint_S f(r\cos\theta, r\sin\theta) \left| \frac{\partial(x, y)}{\partial(r, \theta)} \right| dr\,d\theta = \int_\alpha^\beta \int_a^b f(r\cos\theta, r\sin\theta)\,r\,dr\,d\theta ,
@@ -163,13 +163,13 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 > [!example] Example §106.3: Integrating over a Parabolic Region
 > Use the change of variables $x = u^2 - v^2$, $y = 2uv$ to evaluate $\displaystyle\iint_R y\,dA$, where $R$ is the region bounded by the $x$-axis and the parabolas $y^2 = 4 - 4x$ and $y^2 = 4 + 4x$, $y \ge 0$.
 >
-> By Example §106.1, $R = T(S)$ for the square $S = [0, 1] \times [0, 1]$; the point of the change of variables is that $S$ is a much simpler region than $R$. The Jacobian is
+> By [[§106 Change of Variables in Multiple Integrals#^ex-106-1|Example §106.1]], $R = T(S)$ for the square $S = [0, 1] \times [0, 1]$; the point of the change of variables is that $S$ is a much simpler region than $R$. The Jacobian is
 >
 > $$
 > \frac{\partial(x, y)}{\partial(u, v)} = \begin{vmatrix} 2u & -2v \\ 2v & 2u \end{vmatrix} = 4u^2 + 4v^2 > 0 .
 > $$
 >
-> By Theorem §106.1,
+> By [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]],
 >
 > $$
 > \begin{aligned}
@@ -183,10 +183,10 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 ^ex-106-3
 
 > [!remark] Remark: Method — Choosing a Change of Variables
-> Example §106.3 was not difficult because a suitable change of variables was given. Otherwise the first step is to think of one.
+> [[§106 Change of Variables in Multiple Integrals#^ex-106-3|Example §106.3]] was not difficult because a suitable change of variables was given. Otherwise the first step is to think of one.
 > 1. If $f(x, y)$ is difficult to integrate, its form may suggest new variables: expressions that occur together, such as $x + y$ and $x - y$, become $u$ and $v$.
 > 2. If the region $R$ is awkward, choose the transformation so that the corresponding region $S$ in the $uv$-plane has a convenient description, ideally a rectangle: if the sides of $R$ lie on curves $G(x, y) = c_1$, $G(x, y) = c_2$, $H(x, y) = c_3$, $H(x, y) = c_4$, try $u = G(x, y)$, $v = H(x, y)$.
-> 3. Such a choice gives $u$, $v$ in terms of $x$, $y$, that is, $T^{-1}$. Theorem §106.1 needs $T$: solve for $x$ and $y$, and compute $\partial(x, y)/\partial(u, v)$. (Alternatively, $\partial(x, y)/\partial(u, v) = 1\big/\big(\partial(u, v)/\partial(x, y)\big)$: by the Chain Rule the matrices of partial derivatives of $T$ and $T^{-1}$ are inverse to each other, and the determinant of a product is the product of the determinants.)
+> 3. Such a choice gives $u$, $v$ in terms of $x$, $y$, that is, $T^{-1}$. [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]] needs $T$: solve for $x$ and $y$, and compute $\partial(x, y)/\partial(u, v)$. (Alternatively, $\partial(x, y)/\partial(u, v) = 1\big/\big(\partial(u, v)/\partial(x, y)\big)$: by the Chain Rule the matrices of partial derivatives of $T$ and $T^{-1}$ are inverse to each other, and the determinant of a product is the product of the determinants.)
 > 4. Find $S$ by mapping each boundary curve of $R$, and remember the absolute value of the Jacobian.
 
 ^rem-106-2
@@ -218,7 +218,7 @@ The Jacobian is named after Carl Gustav Jacob Jacobi (1804–1851); Cauchy first
 > S = \{(u, v) \mid 1 \le v \le 2,\ -v \le u \le v\} .
 > $$
 >
-> **The integral.** By Theorem §106.1,
+> **The integral.** By [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]],
 >
 > $$
 > \iint_R e^{(x + y)/(x - y)}\,dA = \iint_S e^{u/v} \left| -\frac12 \right| du\,dv = \int_1^2 \int_{-v}^{v} e^{u/v}\big(\tfrac12\big)\,du\,dv = \frac12 \int_1^2 \Big[ v e^{u/v} \Big]_{u=-v}^{u=v} dv = \frac12 \int_1^2 (e - e^{-1})\,v\,dv = \frac34 \big( e - e^{-1} \big) .
@@ -244,7 +244,7 @@ Let $T$ be a one-to-one transformation that maps a region $S$ in $uvw$-space ont
 ^def-106-3
 
 > [!theorem] Theorem §106.2: Change of Variables in a Triple Integral
-> Under hypotheses similar to those of Theorem §106.1,
+> Under hypotheses similar to those of [[§106 Change of Variables in Multiple Integrals#^thm-106-1|Theorem §106.1]],
 >
 > $$
 > \iiint_R f(x, y, z)\,dV = \iiint_S f\big(x(u, v, w), y(u, v, w), z(u, v, w)\big) \left| \frac{\partial(x, y, z)}{\partial(u, v, w)} \right| du\,dv\,dw . \qquad (13)

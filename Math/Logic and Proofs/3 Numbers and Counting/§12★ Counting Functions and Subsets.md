@@ -147,18 +147,7 @@ When $m = n$ an injection $X \to Y$ is automatically a bijection ([[§11 Propert
 
 Recall ([[§6 The Language of Set Theory#^def-6-9|Definition §6.9]]) that the **power set** of $X$ is the set of its subsets, $\mathcal{P}(X) = \{ A \mid A \subseteq X \}$.
 
-> [!theorem] Proposition §12.4: The Size of the Power Set
-> If $X$ is a finite set with $|X| = n$, then $\mathcal{P}(X)$ is finite and
->
-> $$
-> |\mathcal{P}(X)| = 2^{|X|} = 2^n.
-> $$
->
-> *Eccles: Proposition 12.2.1*
-
-^prop-12-4
-
-Informally: a subset $A$ is determined by deciding, for each of the $n$ elements $x$, whether $x \in A$ or $x \notin A$; two choices each time give $2^n$ subsets. Characteristic functions make this precise by turning subsets into functions.
+Informally: a subset $A$ of a set $X$ with $|X| = n$ is determined by deciding, for each of the $n$ elements $x$, whether $x \in A$ or $x \notin A$; two choices each time give $2^n$ subsets. Characteristic functions make this precise by turning subsets into functions.
 
 > [!definition] Definition §12.4: Characteristic Function
 > For a set $X$ and a subset $A \in \mathcal{P}(X)$, the **characteristic function** of $A$ is $\chi_A : X \to \{0, 1\}$,
@@ -188,7 +177,18 @@ Informally: a subset $A$ is determined by deciding, for each of the $n$ elements
 
 *Uses:* [[§12★ Counting Functions and Subsets#^def-12-4|Def. §12.4]]
 
-> [!proof]+ Proof of Proposition §12.4
+> [!theorem] Proposition §12.4: The Size of the Power Set
+> If $X$ is a finite set with $|X| = n$, then $\mathcal{P}(X)$ is finite and
+>
+> $$
+> |\mathcal{P}(X)| = 2^{|X|} = 2^n.
+> $$
+>
+> *Eccles: Proposition 12.2.1*
+
+^prop-12-4
+
+> [!proof]+ Proof
 > If $n = 0$ then $X = \emptyset$ and $\mathcal{P}(X) = \{\emptyset\}$ has $1 = 2^0$ element. If $n \ge 1$, by Lemma [[§12★ Counting Functions and Subsets#^lem-12-5|§12.5]] and Proposition [[§12★ Counting Functions and Subsets#^prop-12-1|§12.1]],
 >
 > $$
@@ -323,6 +323,11 @@ Listing subsets, as in Example [[§12★ Counting Functions and Subsets#^ex-12-2
 
 The triangle is not a convenient way to find a single coefficient; there is an explicit formula.
 
+> [!remark] Remark: Why the Formula Is True
+> The induction proof below is the simplest to write out, but it does not explain the formula. A better reason: for $r > 0$, an $r$-subset $A$ of an $n$-set $X$ can be specified by listing its elements, that is, by an injection $f : \N_r \to X$ with image $A$. So $\phi : \operatorname{Inj}(\N_r, X) \to \mathcal{P}_r(X)$, $\phi(f) = \operatorname{Im} f$, is a surjection; it is not injective, since the elements of $A$ can be listed in many orders. The listings of a given $A$ are the elements of $\operatorname{Inj}(\N_r, A)$, and there are $r!$ of them. Since $|\operatorname{Inj}(\N_r, X)| = n!/(n-r)!$ (Proposition [[§12★ Counting Functions and Subsets#^prop-12-2|§12.2]]) and each $A$ has $r!$ preimages, $|\mathcal{P}_r(X)| = n!/(r!\,(n-r)!)$. (Making "each $A$ has $r!$ preimages, so divide" precise is an application of Corollary [[§10 Counting#^cor-10-5|§10.5]] to the disjoint preimages $\phi^{-1}(A)$.)
+
+^rem-12-2
+
 > [!theorem] Theorem §12.9: The Formula for Binomial Coefficients
 > For non-negative integers $n$ and $r$ with $r \le n$,
 >
@@ -333,11 +338,6 @@ The triangle is not a convenient way to find a single coefficient; there is an e
 > *Eccles: Theorem 12.2.10*
 
 ^thm-12-9
-
-> [!remark] Remark: Why the Formula Is True
-> The induction proof below is the simplest to write out, but it does not explain the formula. A better reason: for $r > 0$, an $r$-subset $A$ of an $n$-set $X$ can be specified by listing its elements, that is, by an injection $f : \N_r \to X$ with image $A$. So $\phi : \operatorname{Inj}(\N_r, X) \to \mathcal{P}_r(X)$, $\phi(f) = \operatorname{Im} f$, is a surjection; it is not injective, since the elements of $A$ can be listed in many orders. The listings of a given $A$ are the elements of $\operatorname{Inj}(\N_r, A)$, and there are $r!$ of them. Since $|\operatorname{Inj}(\N_r, X)| = n!/(n-r)!$ (Proposition [[§12★ Counting Functions and Subsets#^prop-12-2|§12.2]]) and each $A$ has $r!$ preimages, $|\mathcal{P}_r(X)| = n!/(r!\,(n-r)!)$. (Making "each $A$ has $r!$ preimages, so divide" precise is an application of Corollary [[§10 Counting#^cor-10-5|§10.5]] to the disjoint preimages $\phi^{-1}(A)$.)
-
-^rem-12-2
 
 > [!proof]+ Proof
 > Induction on $n$, the statement being the formula for all $r$ with $0 \le r \le n$.

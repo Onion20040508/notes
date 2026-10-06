@@ -6,7 +6,7 @@ section: 6
 munkres: "§17"
 tags: [topology, math590]
 ---
-← [[§5 Subspace Topology]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§7 Interior and Closure]] →
+← [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies]] · ↑ [[· 2 Closedness, Continuity, and Hausdorff]] · [[§7 Interior and Closure]] →
 
 ## Closed Sets
 
@@ -39,6 +39,8 @@ tags: [topology, math590]
 > In the [[§1 Topological Spaces#^ex-1-3|discrete topology]] on a set $X$, every set $X \setminus A$ is open $\Rightarrow$ every subset $A \subseteq X$ is closed.
 
 ^ex-6-3
+
+*Chain: earlier in [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · later in [[§12a ℝ^ω, Discrete Spaces and the Torus|Chapter 3]] · [[Discrete and indiscrete topologies|all appearances]]*
 
 > [!example] Example §6.4
 > $Y = [0,1] \cup (2,3) \subseteq \mathbb{R}$ with [[§5 Subspace Topology#^def-5-1|subspace topology]].

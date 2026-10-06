@@ -6,7 +6,7 @@ section: 17
 munkres: "§29"
 tags: [topology, math590]
 ---
-← [[§16 Limit Point Compactness]] · ↑ [[· 5 Compactness]] · [[§18 Countability Axioms]] →
+← [[§16 Limit Point Compactness]] · ↑ [[· 5 Compactness]] · [[§17a Discrete and Indiscrete Spaces]] →
 
 ## Definition and Examples
 
@@ -82,6 +82,8 @@ tags: [topology, math590]
 > Contradiction. So $\mathbb{R}^\omega$ is not locally compact.
 
 ^ex-17-5
+
+*Chain: earlier in [[§12a ℝ^ω, Discrete Spaces and the Torus|Chapter 3]] · later in [[§20a The Lower Limit Topology, ℝ^ω and Discrete Subspaces|Chapter 6]] · [[Box and product topologies on ℝ^ω|all appearances]]*
 
 ## One-Point Compactification
 

@@ -95,7 +95,7 @@ $$
 ^def-57-3
 
 > [!theorem] Proposition §57.2: Qualitative Behaviour of Logistic Solutions
-> Let $k > 0$ and $M > 0$, and let $P$ be a solution of the logistic equation (Definition §57.2).
+> Let $k > 0$ and $M > 0$, and let $P$ be a solution of the logistic equation ([[§57 Modeling with Differential Equations#^def-57-2|Definition §57.2]]).
 > 1. The constant functions $P(t) = 0$ and $P(t) = M$ are equilibrium solutions.
 > 2. If $0 < P(t) < M$, then $dP/dt > 0$: the population increases.
 > 3. If $P(t) > M$, then $dP/dt < 0$: the population decreases.
@@ -109,7 +109,7 @@ $$
 
 > [!proof]+ Proof
 > Everything is read off from the sign of the right side $kP(1 - P/M)$, a product of the positive constant $k$ and the two factors $P$ and $1 - P/M$.
-> 1. If $P(t) = 0$ for all $t$, both sides of the equation are $0$, since the left side is the derivative of a constant and the factor $P$ on the right is $0$. If $P(t) = M$, the left side is again $0$ and the factor $1 - P/M$ on the right is $0$. Both are constant solutions, hence equilibrium solutions (Definition §57.3). Physically: a population that is ever $0$ or at the carrying capacity stays that way.
+> 1. If $P(t) = 0$ for all $t$, both sides of the equation are $0$, since the left side is the derivative of a constant and the factor $P$ on the right is $0$. If $P(t) = M$, the left side is again $0$ and the factor $1 - P/M$ on the right is $0$. Both are constant solutions, hence equilibrium solutions ([[§57 Modeling with Differential Equations#^def-57-3|Definition §57.3]]). Physically: a population that is ever $0$ or at the carrying capacity stays that way.
 > 2. If $0 < P < M$, then $P > 0$ and $1 - P/M > 0$, so $dP/dt > 0$.
 > 3. If $P > M$, then $P > 0$ but $1 - P/M < 0$, so $dP/dt < 0$.
 > 4. The right side is a continuous function of $P$ that vanishes at $P = M$, so $dP/dt = kP(1 - P/M) \to kM(1 - 1) = 0$ as $P \to M$.
@@ -135,7 +135,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 > m\,\frac{d^2x}{dt^2} = -kx .
 > $$
 >
-> This is a *second-order* differential equation, because it involves second derivatives (Definition §57.5).
+> This is a *second-order* differential equation, because it involves second derivatives ([[§57 Modeling with Differential Equations#^def-57-5|Definition §57.5]]).
 >
 > *Stewart: 9.1, Equation 3*
 
@@ -177,7 +177,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 > [!definition] Definition §57.5: Differential Equation and Order
 > A **differential equation** is an equation that contains an unknown function and one or more of its derivatives (first met in [[§33 Antiderivatives#^def-33-2|Definition §33.2]]). The **order** of a differential equation is the order of the highest derivative that occurs in the equation.
 >
-> Thus the growth and logistic equations (Definitions §57.1, §57.2) are first-order equations and the spring equation (Definition §57.4) is a second-order equation. The independent variable need not be time: in
+> Thus the growth and logistic equations ([[§57 Modeling with Differential Equations#^def-57-1|Definitions §57.1]], [[§57 Modeling with Differential Equations#^def-57-2|§57.2]]) are first-order equations and the spring equation ([[§57 Modeling with Differential Equations#^def-57-4|Definition §57.4]]) is a second-order equation. The independent variable need not be time: in
 >
 > $$
 > y' = xy
@@ -297,7 +297,7 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 > [!example] Example §57.3: An Initial-Value Problem
 > Find a solution of the differential equation $y' = \frac12(y^2 - 1)$ that satisfies the initial condition $y(0) = 2$.
 >
-> By Example §57.2, $y = \dfrac{1 + ce^t}{1 - ce^t}$ is a solution for every value of $c$. Substituting $t = 0$ and $y = 2$:
+> By [[§57 Modeling with Differential Equations#^ex-57-2|Example §57.2]], $y = \dfrac{1 + ce^t}{1 - ce^t}$ is a solution for every value of $c$. Substituting $t = 0$ and $y = 2$:
 >
 > $$
 > 2 = \frac{1 + ce^0}{1 - ce^0} = \frac{1 + c}{1 - c} .
@@ -309,11 +309,11 @@ Consider an object with mass $m$ at the end of a vertical spring, and let $x(t)$
 > y = \frac{1 + \frac13 e^t}{1 - \frac13 e^t} = \frac{3 + e^t}{3 - e^t} .
 > $$
 >
-> Its graph is the one member of the family of Example §57.2 that passes through the point $(0, 2)$. The denominator vanishes at $t = \ln 3$, so as a solution of the initial-value problem it lives on the interval $(-\infty, \ln 3)$ containing $t_0 = 0$, and $y \to \infty$ as $t \to (\ln 3)^-$.
+> Its graph is the one member of the family of [[§57 Modeling with Differential Equations#^ex-57-2|Example §57.2]] that passes through the point $(0, 2)$. The denominator vanishes at $t = \ln 3$, so as a solution of the initial-value problem it lives on the interval $(-\infty, \ln 3)$ containing $t_0 = 0$, and $y \to \infty$ as $t \to (\ln 3)^-$.
 >
 > *Stewart: Example 9.1.3*
 
 ^ex-57-3
 
 ![[m233-57-2.svg]]
-*Members of the family $y = (1 + ce^t)/(1 - ce^t)$ of Example §57.2 (blue): $c < 0$ gives curves falling from $y = 1$ to $y = -1$, $c = 0$ the line $y = 1$, and $c > 0$ curves with a vertical asymptote at $t = -\ln c$. The initial condition $y(0) = 2$ selects $c = \frac13$ (red, Example §57.3): of its two branches, only the one through $(0, 2)$, on $(-\infty, \ln 3)$, solves the initial-value problem.*
+*Members of the family $y = (1 + ce^t)/(1 - ce^t)$ of [[§57 Modeling with Differential Equations#^ex-57-2|Example §57.2]] (blue): $c < 0$ gives curves falling from $y = 1$ to $y = -1$, $c = 0$ the line $y = 1$, and $c > 0$ curves with a vertical asymptote at $t = -\ln c$. The initial condition $y(0) = 2$ selects $c = \frac13$ (red, [[§57 Modeling with Differential Equations#^ex-57-3|Example §57.3]]): of its two branches, only the one through $(0, 2)$, on $(-\infty, \ln 3)$, solves the initial-value problem.*

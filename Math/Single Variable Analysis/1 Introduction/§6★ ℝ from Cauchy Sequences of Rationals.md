@@ -169,7 +169,7 @@ A null sequence is Cauchy: if $|q_n| < \varepsilon/2$ for $n \geq N$, then $|q_n
 
 ^pf-6s-4
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new1|Def. §6★.2]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-1|Def. §6★.1]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new1|Def. §6★.1]]
 
 > [!theorem] Theorem §6★.5: $\widehat{\mathbb{Q}}$ Is a Field Containing $\mathbb{Q}$
 > With the operations of [[§6★ ℝ from Cauchy Sequences of Rationals#^prop-6s-3|Proposition §6★.3]], $0 = \iota(0)$ and $1 = \iota(1)$, the set $\widehat{\mathbb{Q}}$ satisfies the field axioms ([[§3 The Set ℝ of Real Numbers#^def-3-1|Def. §3.1]]). The map $\iota$ is injective and preserves sums and products: $\iota(p + q) = \iota(p) + \iota(q)$ and $\iota(pq) = \iota(p)\iota(q)$.
@@ -281,7 +281,7 @@ From now on $\mathbb{Q}$ is identified with its copy $\iota(\mathbb{Q}) \subsete
 
 ^pf-6s-7
 
-*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.6]]
+*Uses:* [[§6★ ℝ from Cauchy Sequences of Rationals#^lem-6s-6|§6★.6]], [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-5|§6★.5]], [[§3 The Set ℝ of Real Numbers#^def-3-2|Def. §3.2]], [[§6★ ℝ from Cauchy Sequences of Rationals#^def-6s-new2|Def. §6★.4]]
 
 Since $\widehat{\mathbb{Q}}$ is an ordered field, it has an absolute value ([[§3 The Set ℝ of Real Numbers#^def-3-4|Def. §3.4]]) with the properties of [[§3 The Set ℝ of Real Numbers#^thm-3-3|Theorem §3.3]]. Because $\iota$ preserves sums, products and order, $|\iota(q)| = \iota(|q|)$. Recall that in any ordered field $|a| \leq c$ if and only if $-c \leq a \leq c$.
 

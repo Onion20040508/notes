@@ -17,6 +17,7 @@ tags: [chapter, real-analysis]
 - [[§20 Limits of Functions]]
 - [[§21 More on Metric Spaces꞉ Continuity]]
 - [[§22 More on Metric Spaces꞉ Connectedness]]
+- [[§22a The Square Root Function]]
 
 ## Central results
 - [[Extreme Value Theorem]]

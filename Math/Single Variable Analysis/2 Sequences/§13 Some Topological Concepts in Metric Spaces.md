@@ -139,7 +139,7 @@ Once we have a metric space $(X, d)$, we can define convergence of sequences of 
 
 ^pf-13-1
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.3]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-new1|Def. §13.2]]
 
 > [!remark]- Connections
 > - In 452 the same inequality makes balls and square neighborhoods interchangeable: [[§2 Open and Closed Sets#^def-2-2|452 Def. §2.2]].
@@ -282,7 +282,7 @@ So, e.g., $(0,1) \cup (2,4)$ is open.
 
 ^pf-13-5
 
-*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Def. §13.6]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
+*Uses:* [[§13 Some Topological Concepts in Metric Spaces#^def-13-new2|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-5|Def. §13.5]], [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|Def. §13.2]]
 
 ![[m451-13-4.svg]]
 *The ($\Leftarrow$) direction: if $C$ is not closed, some $x \notin C$ (hollow red) has no ball inside the complement, so every ball $B(x, \tfrac1n)$ (dashed) meets $C$; choosing $s_n \in C \cap B(x, \tfrac1n)$ gives a sequence in $C$ converging to a point outside $C$.*

@@ -7,16 +7,6 @@ tags: [measure-theory, math551]
 ---
 ← [[§6 Open Covers and the Heine–Borel Theorem]] · ↑ [[· 2 Topology of ℝⁿ]] · [[§8 Motivation꞉ The Riemann Integral]] →
 
-> [!theorem] Proposition §7.1: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
-> Any open set $O \subseteq \mathbb{R}$ is a countable union of mutually disjoint open intervals.
-
-^prop-7-1
-
-> [!remark]- Connections
-> - MATH 451 states this as a fact without proof: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|Structure of open and closed subsets of the line]].
-> - Topology: the intervals $(a_x, b_x)$ built below are the maximal connected subsets of $O$ ([[§14 Connected Subspaces of ℝ#^cor-14-2|intervals in ℝ are connected]]).
-> - Gives the case $n = 1$ of [[§11 Borel Sets and Measure Spaces#^thm-11-6|Open Sets are Measurable]]; used again in [[§15 The General Lebesgue Integral#^ex-15-2|Example §15.2]].
-
 > [!theorem] Lemma §7.2
 > Any collection of mutually disjoint open intervals on $\mathbb{R}$ is countable.
 
@@ -28,6 +18,11 @@ tags: [measure-theory, math551]
 ^pf-7-2
 
 *Uses:* [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[§1 Countability and Set Theory#^def-1-3|Def. §1.3]]
+
+> [!theorem] Proposition §7.1: Open Sets in $\mathbb{R}$ are Countable Unions of Disjoint Intervals
+> Any open set $O \subseteq \mathbb{R}$ is a countable union of mutually disjoint open intervals.
+
+^prop-7-1
 
 > [!proof]+ Proof of Proposition
 > Let $O \subseteq \mathbb{R}$ be open. For each $x \in O$, define:
@@ -99,31 +94,39 @@ tags: [measure-theory, math551]
 *Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§7 Structure of Open Sets#^lem-7-2|§7.2]], [[Completeness Axiom|451 Def. §4.4]], [[Characterization of the Supremum|451 §4.3]]
 
 ![[m551-7-1.svg]]
-*An open set $O \subseteq \mathbb{R}$ (blue) and its components. For $x \in O$, stretching left and right as far as $O$ allows gives $(a_x, b_x)$; its endpoints are not in $O$ (red, hollow), since otherwise the interval could be stretched further (Step 3). Distinct components are disjoint and each contains a rational $q_j$ — the injection into $\mathbb{Q}$ of Lemma §7.2 that makes the family countable.*
+*An open set $O \subseteq \mathbb{R}$ (blue) and its components. For $x \in O$, stretching left and right as far as $O$ allows gives $(a_x, b_x)$; its endpoints are not in $O$ (red, hollow), since otherwise the interval could be stretched further (Step 3). Distinct components are disjoint and each contains a rational $q_j$ — the injection into $\mathbb{Q}$ of [[§7 Structure of Open Sets#^lem-7-2|Lemma §7.2]] that makes the family countable.*
+
+> [!remark]- Connections
+> - MATH 451 states this as a fact without proof: [[§13 Some Topological Concepts in Metric Spaces#^rem-13-5|Structure of open and closed subsets of the line]].
+> - Topology: the intervals $(a_x, b_x)$ built above are the maximal connected subsets of $O$ ([[§14 Connected Subspaces of ℝ#^cor-14-2|intervals in ℝ are connected]]).
+> - Gives the case $n = 1$ of [[§11 Borel Sets and Measure Spaces#^thm-11-6|Open Sets are Measurable]]; used again in [[§15 The General Lebesgue Integral#^ex-15-2|Example §15.2]].
 
 ## Open Sets in $\mathbb{R}^n$
 
-> [!definition] Definition §7.1: Open and Half-Open Rectangles
+> [!definition] Definition §7.1: Open Rectangles
 > An **open rectangle** in $\mathbb{R}^n$ is a set of the form
 >
 > $$
 > \prod_{j=1}^{n} (a_j, b_j) = (a_1, b_1) \times (a_2, b_2) \times \cdots \times (a_n, b_n).
 > $$
->
+
+^def-7-1
+
+> [!remark]- Connections
+> - Rectangles and their volumes are the building blocks of outer measure: [[§9 Lebesgue Outer Measure#^def-9-1|Definition §9.1]].
+> - Topology: open rectangles with rational endpoints form a countable basis of $\mathbb{R}^n$ ([[§18 Countability Axioms#^ex-18-4|590 Ex. §18.4]]).
+
+> [!definition] Definition §7.2: Half-Open Rectangles
 > A **half-open half-closed rectangle** is a set of the form
 >
 > $$
 > \prod_{j=1}^{n} (a_j, b_j] = (a_1, b_1] \times (a_2, b_2] \times \cdots \times (a_n, b_n].
 > $$
 
-^def-7-1
+^def-7-new1
 
 ![[m551-7-2.svg]]
 *Left: a half-open rectangle in $\mathbb{R}^2$ contains its top and right edges (solid) but not its bottom and left edges (dashed); of the four corners only $(b_1, b_2)$ belongs to it. Right: this is what lets a dyadic square $R^{(k)}_{\mathbf{j}}$ split into $2^n = 4$ children $R^{(k+1)}_{2\mathbf{j}+\boldsymbol{\epsilon}}$ with no overlaps and no gaps (property (b) in the proof of Proposition §7.3) — each shared edge belongs to exactly one child.*
-
-> [!remark]- Connections
-> - Rectangles and their volumes are the building blocks of outer measure: [[§9 Lebesgue Outer Measure#^def-9-1|Definition §9.1]].
-> - Topology: open rectangles with rational endpoints form a countable basis of $\mathbb{R}^n$ ([[§18 Countability Axioms#^ex-18-4|590 Ex. §18.4]]).
 
 > [!theorem] Proposition §7.3: Open Sets in $\mathbb{R}^n$ as Unions of Rectangles
 > Any open set $O \subseteq \mathbb{R}^n$ is a countable union of mutually disjoint half-open half-closed rectangles (more precisely, cubes).
@@ -193,7 +196,7 @@ tags: [measure-theory, math551]
 
 ^pf-7-3
 
-*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§7 Structure of Open Sets#^def-7-1|Def. §7.1]], [[Countable Union of Countable Sets is Countable|§3.1]]
+*Uses:* [[§5 Topology of ℝⁿ#^def-5-2|Def. §5.2]], [[§5 Topology of ℝⁿ#^def-5-1|Def. §5.1]], [[§7 Structure of Open Sets#^def-7-new1|Def. §7.2]], [[Countable Union of Countable Sets is Countable|§3.1]]
 
 ![[m551-7-3.svg]]
 *The proof of Proposition §7.3 run on an open disc $O$ (dashed boundary), stopped at scale $2^{-4}$: the maximal dyadic squares contained in $O$ (blue, darker = coarser). Large squares fill the interior and ever smaller ones pile up towards the boundary; continuing through all scales, these disjoint squares exhaust $O$ exactly.*

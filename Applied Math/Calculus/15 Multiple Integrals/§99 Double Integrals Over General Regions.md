@@ -69,7 +69,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 ^thm-99-1
 
 > [!proof]+ Proof
-> Choose a rectangle $R = [a, b] \times [c, d]$ that contains $D$, and let $F$ be the function of Equation 1: $F = f$ on $D$ and $F = 0$ on the rest of $R$. By Definition §99.1 and Fubini's Theorem ([[§98 Double Integrals Over Rectangles#^thm-98-3|Theorem §98.3]], in its general form, since $F$ is bounded and discontinuous at most on the boundary curves $y = g_1(x)$, $y = g_2(x)$),
+> Choose a rectangle $R = [a, b] \times [c, d]$ that contains $D$, and let $F$ be the function of Equation 1: $F = f$ on $D$ and $F = 0$ on the rest of $R$. By [[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]] and Fubini's Theorem ([[§98 Double Integrals Over Rectangles#^thm-98-3|Theorem §98.3]], in its general form, since $F$ is bounded and discontinuous at most on the boundary curves $y = g_1(x)$, $y = g_2(x)$),
 >
 > $$
 > \iint_D f(x, y)\,dA = \iint_R F(x, y)\,dA = \int_a^b \int_c^d F(x, y)\,dy\,dx .
@@ -118,7 +118,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 ^thm-99-2
 
 > [!proof]+ Proof
-> The proof of Theorem §99.1 with the roles of $x$ and $y$ exchanged. Enclose $D$ in $R = [a, b] \times [c, d]$ and extend $f$ by $0$ to $F$. Fubini's Theorem in the order $dx\,dy$ gives $\iint_D f\,dA = \int_c^d \int_a^b F(x, y)\,dx\,dy$. For fixed $y$, $F(x, y) = 0$ when $x < h_1(y)$ or $x > h_2(y)$, and $F(x, y) = f(x, y)$ for $h_1(y) \le x \le h_2(y)$, so $\int_a^b F(x, y)\,dx = \int_{h_1(y)}^{h_2(y)} f(x, y)\,dx$.
+> The proof of [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]] with the roles of $x$ and $y$ exchanged. Enclose $D$ in $R = [a, b] \times [c, d]$ and extend $f$ by $0$ to $F$. Fubini's Theorem in the order $dx\,dy$ gives $\iint_D f\,dA = \int_c^d \int_a^b F(x, y)\,dx\,dy$. For fixed $y$, $F(x, y) = 0$ when $x < h_1(y)$ or $x > h_2(y)$, and $F(x, y) = f(x, y)$ for $h_1(y) \le x \le h_2(y)$, so $\int_a^b F(x, y)\,dx = \int_{h_1(y)}^{h_2(y)} f(x, y)\,dx$.
 
 ^pf-99-2
 
@@ -131,7 +131,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 > 1. **Draw $D$.** Find where the boundary curves intersect; these give the outer limits.
 > 2. **Type I (order $dy\,dx$).** Draw a vertical arrow through $D$ at a typical $x$. It enters $D$ at the lower boundary $y = g_1(x)$ (lower limit of the inner integral) and leaves at the upper boundary $y = g_2(x)$ (upper limit). The outer limits are the extreme values $a \le x \le b$.
 > 3. **Type II (order $dx\,dy$).** Draw a horizontal arrow from the left boundary $x = h_1(y)$ to the right boundary $x = h_2(y)$; the outer limits are $c \le y \le d$. Boundary curves must now be solved for $x$.
-> 4. **Choose the description with one piece.** If the arrows in one direction enter or leave $D$ through different curves for different values of the outer variable, that description needs $D$ cut into pieces and several iterated integrals (Property 8 below). Use the other one if it has a single piece (Examples §99.2 and §99.3).
+> 4. **Choose the description with one piece.** If the arrows in one direction enter or leave $D$ through different curves for different values of the outer variable, that description needs $D$ cut into pieces and several iterated integrals (Property 8 below). Use the other one if it has a single piece ([[§99 Double Integrals Over General Regions#^ex-99-2|Examples §99.2]] and [[§99 Double Integrals Over General Regions#^ex-99-3|§99.3]]).
 > 5. **Check the result.** The inner limits contain at most the outer variable; the outer limits are constants.
 
 ^rem-99-1
@@ -145,7 +145,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 > D = \{(x, y) \mid -1 \le x \le 1,\ 2x^2 \le y \le 1 + x^2\} .
 > $$
 >
-> By Theorem §99.1,
+> By [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]],
 >
 > $$
 > \begin{aligned}
@@ -168,7 +168,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 > D = \{(x, y) \mid -2 \le y \le 4,\ \tfrac12 y^2 - 3 \le x \le y + 1\} .
 > $$
 >
-> By Theorem §99.2,
+> By [[§99 Double Integrals Over General Regions#^thm-99-2|Theorem §99.2]],
 >
 > $$
 > \begin{aligned}
@@ -188,7 +188,7 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 ^ex-99-2
 
 ![[m233-99-1.svg]]
-*Example §99.2 both ways. Left: as a type I region, the vertical arrows enter $D$ through the lower half of the parabola for $x < -1$ and through the line for $x > -1$, so the integral splits at $x = -1$. Right: as a type II region every horizontal arrow runs from the parabola $x = \frac12 y^2 - 3$ to the line $x = y + 1$, and one integral suffices.*
+*[[§99 Double Integrals Over General Regions#^ex-99-2|Example §99.2]] both ways. Left: as a type I region, the vertical arrows enter $D$ through the lower half of the parabola for $x < -1$ and through the line for $x > -1$, so the integral splits at $x = -1$. Right: as a type II region every horizontal arrow runs from the parabola $x = \frac12 y^2 - 3$ to the line $x = y + 1$, and one integral suffices.*
 
 > [!example] Example §99.3: A Region Bounded by Three Curves
 > Let $D$ be the region in the $xy$-plane enclosed by $y = 0$, $y = x^2$ and $y = 2 - x$. Compute $\displaystyle\iint_D (xy^2 - x)\,dA$.
@@ -219,18 +219,18 @@ $F$ is likely to be discontinuous at the boundary points of $D$. Nonetheless, if
 
 ## Changing the Order of Integration
 
-By Theorems §99.1 and §99.2, a region that is both type I and type II gives two iterated integrals equal to the same double integral. Sometimes one order is much harder than the other, or even impossible. To change the order of an iterated integral: read off the region $D$ from its limits, sketch it, and describe $D$ the other way.
+By [[§99 Double Integrals Over General Regions#^thm-99-1|Theorems §99.1]] and [[§99 Double Integrals Over General Regions#^thm-99-2|§99.2]], a region that is both type I and type II gives two iterated integrals equal to the same double integral. Sometimes one order is much harder than the other, or even impossible. To change the order of an iterated integral: read off the region $D$ from its limits, sketch it, and describe $D$ the other way.
 
 > [!example] Example §99.4: An Integral That Needs Reversing
 > Evaluate $\displaystyle\int_0^1 \int_x^1 \sin(y^2)\,dy\,dx$.
 >
-> As it stands, we would first have to evaluate $\int \sin(y^2)\,dy$, and this is impossible in finite terms: $\int \sin(y^2)\,dy$ is not an elementary function ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]). So we change the order. Using Theorem §99.1 backward, the iterated integral is $\iint_D \sin(y^2)\,dA$ over
+> As it stands, we would first have to evaluate $\int \sin(y^2)\,dy$, and this is impossible in finite terms: $\int \sin(y^2)\,dy$ is not an elementary function ([[§48 Strategy for Integration#^thm-48-2|Theorem §48.2]]). So we change the order. Using [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]] backward, the iterated integral is $\iint_D \sin(y^2)\,dA$ over
 >
 > $$
 > D = \{(x, y) \mid 0 \le x \le 1,\ x \le y \le 1\} ,
 > $$
 >
-> the triangle with vertices $(0, 0)$, $(0, 1)$, $(1, 1)$. The same triangle is $D = \{(x, y) \mid 0 \le y \le 1,\ 0 \le x \le y\}$, so by Theorem §99.2
+> the triangle with vertices $(0, 0)$, $(0, 1)$, $(1, 1)$. The same triangle is $D = \{(x, y) \mid 0 \le y \le 1,\ 0 \le x \le y\}$, so by [[§99 Double Integrals Over General Regions#^thm-99-2|Theorem §99.2]]
 >
 > $$
 > \int_0^1 \int_x^1 \sin(y^2)\,dy\,dx = \int_0^1 \int_0^y \sin(y^2)\,dx\,dy = \int_0^1 \Big[ x \sin(y^2) \Big]_{x=0}^{x=y} dy = \int_0^1 y \sin(y^2)\,dy = -\tfrac12 \cos(y^2) \Big]_0^1 = \tfrac12 (1 - \cos 1) .
@@ -308,7 +308,7 @@ Assume that all of the following integrals exist.
 ^thm-99-3
 
 > [!proof]+ Proof
-> *Stewart says these "can be proved in the same manner as in Section 5.2" for rectangles, and follow from Definition §99.1 for general regions; here are the details.*
+> *Stewart says these "can be proved in the same manner as in Section 5.2" for rectangles, and follow from [[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]] for general regions; here are the details.*
 >
 > **Rectangles.** Let $D = R$ be a rectangle. For any $m$, $n$ and sample points, the double Riemann sums satisfy
 >
@@ -318,7 +318,7 @@ Assume that all of the following integrals exist.
 >
 > The right-hand sides converge to $\iint_R f\,dA + \iint_R g\,dA$ and $c\iint_R f\,dA$ as $m, n \to \infty$, by the Sum and Constant Multiple Laws for limits, so the left-hand sides converge to the same numbers: this is (5) and (6). If $f \ge g$ on $R$, then every Riemann sum of $f - g$ is $\ge 0$, so its limit is $\ge 0$; by (5) and (6) that limit is $\iint_R f\,dA - \iint_R g\,dA$, which gives (7).
 >
-> **General regions.** Enclose $D$ in a rectangle $R$ and write $F_f$ for the extension of $f$ by $0$ (Definition §99.1). Then $F_{f+g} = F_f + F_g$ and $F_{cf} = cF_f$ on $R$, and $f \ge g$ on $D$ gives $F_f \ge F_g$ on $R$ (both are $0$ outside $D$). So (5), (6) and (7) for $D$ are (5), (6) and (7) for $F_f$, $F_g$ on $R$.
+> **General regions.** Enclose $D$ in a rectangle $R$ and write $F_f$ for the extension of $f$ by $0$ ([[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]]). Then $F_{f+g} = F_f + F_g$ and $F_{cf} = cF_f$ on $R$, and $f \ge g$ on $D$ gives $F_f \ge F_g$ on $R$ (both are $0$ outside $D$). So (5), (6) and (7) for $D$ are (5), (6) and (7) for $F_f$, $F_g$ on $R$.
 
 ^pf-99-3
 
@@ -340,7 +340,7 @@ Assume that all of the following integrals exist.
 
 *Stewart omits the proof (it is the analogue of $\int_a^b = \int_a^c + \int_c^b$, [[§35 The Definite Integral#^thm-35-5|Theorem §35.5]]); see [[§15 Multivariable Integration#^thm-15-4|452 Thm. §15.4]].*
 
-Property 8 evaluates double integrals over regions $D$ that are neither type I nor type II but can be cut into regions of type I or type II: integrate over each piece and add. This is what Examples §99.2 and §99.3 do when they describe a region as type I in two pieces.
+Property 8 evaluates double integrals over regions $D$ that are neither type I nor type II but can be cut into regions of type I or type II: integrate over each piece and add. This is what [[§99 Double Integrals Over General Regions#^ex-99-2|Examples §99.2]] and [[§99 Double Integrals Over General Regions#^ex-99-3|§99.3]] do when they describe a region as type I in two pieces.
 
 > [!theorem] Theorem §99.5: Area as a Double Integral
 > If we integrate the constant function $f(x, y) = 1$ over a region $D$, we get the area of $D$:
@@ -354,12 +354,12 @@ Property 8 evaluates double integrals over regions $D$ that are neither type I n
 ^thm-99-5
 
 > [!remark] Remark: Why It Works
-> A solid cylinder whose base is $D$ and whose height is $1$ has volume $A(D) \cdot 1 = A(D)$. By [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]] (and Definition §99.1) its volume is also $\iint_D 1\,dA$.
+> A solid cylinder whose base is $D$ and whose height is $1$ has volume $A(D) \cdot 1 = A(D)$. By [[§98 Double Integrals Over Rectangles#^thm-98-2|Theorem §98.2]] (and [[§99 Double Integrals Over General Regions#^def-99-1|Definition §99.1]]) its volume is also $\iint_D 1\,dA$.
 
 ^rem-99-3
 
 > [!proof]+ Proof
-> *Stewart gives only the cylinder argument above; here is a computation for the regions of this section.* If $D = \{a \le x \le b,\ g_1(x) \le y \le g_2(x)\}$ is of type I, then by Theorem §99.1
+> *Stewart gives only the cylinder argument above; here is a computation for the regions of this section.* If $D = \{a \le x \le b,\ g_1(x) \le y \le g_2(x)\}$ is of type I, then by [[§99 Double Integrals Over General Regions#^thm-99-1|Theorem §99.1]]
 >
 > $$
 > \iint_D 1\,dA = \int_a^b \int_{g_1(x)}^{g_2(x)} 1\,dy\,dx = \int_a^b \big[ g_2(x) - g_1(x) \big]\,dx ,
@@ -406,7 +406,7 @@ For $m > 0$ the bounds compare the volume under the graph of $f$ with the volume
 > e^{-1} \le e^{\sin x \cos y} \le e^1 = e .
 > $$
 >
-> With $m = e^{-1} = 1/e$, $M = e$ and $A(D) = \pi(2)^2 = 4\pi$, Theorem §99.6 gives
+> With $m = e^{-1} = 1/e$, $M = e$ and $A(D) = \pi(2)^2 = 4\pi$, [[§99 Double Integrals Over General Regions#^thm-99-6|Theorem §99.6]] gives
 >
 > $$
 > \frac{4\pi}{e} \le \iint_D e^{\sin x \cos y}\,dA \le 4\pi e .

@@ -11,12 +11,12 @@ tags: [calculus]
 
 *Stewart, Section 1.5.*
 
-If $b > 0$ and $b \ne 1$, the exponential function $f(x) = b^x$ is either increasing or decreasing ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]), so no horizontal line meets its graph twice, and it is one-to-one by the Horizontal Line Test (Theorem §5.1). It therefore has an inverse function.
+If $b > 0$ and $b \ne 1$, the exponential function $f(x) = b^x$ is either increasing or decreasing ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]), so no horizontal line meets its graph twice, and it is one-to-one by the Horizontal Line Test ([[§5 Inverse Functions and Logarithms#^thm-5-1|Theorem §5.1]]). It therefore has an inverse function.
 
 ## Logarithmic Functions
 
 > [!definition] Definition §5.3: Logarithmic Function with Base b
-> Let $b > 0$, $b \ne 1$. The inverse of the exponential function $f(x) = b^x$ is the **logarithmic function with base $b$**, denoted $\log_b$. By the form (3) of Definition §5.2,
+> Let $b > 0$, $b \ne 1$. The inverse of the exponential function $f(x) = b^x$ is the **logarithmic function with base $b$**, denoted $\log_b$. By the form (3) of [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]],
 >
 > $$
 > \log_b x = y \quad\Longleftrightarrow\quad b^y = x . \qquad (6)
@@ -47,9 +47,9 @@ If $b > 0$ and $b \ne 1$, the exponential function $f(x) = b^x$ is either increa
 ^thm-5-4
 
 > [!proof]+ Proof
-> **1.** Theorem §5.2 for $f(x) = b^x$, whose domain is $\mathbb{R}$ and whose range is $(0, \infty)$ ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]).
+> **1.** [[§5 Inverse Functions and Logarithms#^thm-5-2|Theorem §5.2]] for $f(x) = b^x$, whose domain is $\mathbb{R}$ and whose range is $(0, \infty)$ ([[§4 Exponential Functions#^prop-4-2|Proposition §4.2]]).
 >
-> **2.** By Definition §5.2 the domain of $\log_b$ is the range $(0, \infty)$ of $b^x$, and its range is the domain $\mathbb{R}$ of $b^x$. The statement about graphs is Theorem §5.3.
+> **2.** By [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]] the domain of $\log_b$ is the range $(0, \infty)$ of $b^x$, and its range is the domain $\mathbb{R}$ of $b^x$. The statement about graphs is [[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]].
 >
 > **3.** $b^0 = 1$, so $\log_b 1 = 0$ by (6).
 >
@@ -98,7 +98,7 @@ The following properties of logarithms come from the Laws of Exponents of [[§4 
 > \log_2 80 - \log_2 5 = \log_2 \frac{80}{5} = \log_2 16 = 4 \qquad \text{because } 2^4 = 16 .
 > $$
 >
-> **(b)** Expand $\ln \dfrac{x^2 \sqrt{x^2 + 2}}{3x + 1}$ (with $\ln = \log_e$, Definition §5.4 below). By Laws 1, 2 and 3,
+> **(b)** Expand $\ln \dfrac{x^2 \sqrt{x^2 + 2}}{3x + 1}$ (with $\ln = \log_e$, [[§5a Logarithmic and Inverse Trigonometric Functions#^def-5-4|Definition §5.4]] below). By Laws 1, 2 and 3,
 >
 > $$
 > \ln \frac{x^2 \sqrt{x^2 + 2}}{3x + 1} = \ln x^2 + \ln \sqrt{x^2 + 2} - \ln(3x + 1) = 2 \ln x + \tfrac12 \ln(x^2 + 2) - \ln(3x + 1) .
@@ -158,7 +158,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 ^cor-5-6
 
 > [!proof]+ Proof
-> Equations (8) and (9) are (6) and (7) with $b = e$ (Definition §5.3 and Theorem §5.4). Setting $x = 1$ in the first equation of (9) gives $\ln e = \ln(e^1) = 1$.
+> Equations (8) and (9) are (6) and (7) with $b = e$ ([[§5a Logarithmic and Inverse Trigonometric Functions#^def-5-3|Definition §5.3]] and [[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-4|Theorem §5.4]]). Setting $x = 1$ in the first equation of (9) gives $\ln e = \ln(e^1) = 1$.
 
 ^pf-5-6
 
@@ -183,7 +183,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 ^prop-5-7
 
 > [!proof]+ Proof
-> Since $x^r > 0$, the second equation of (9) applies to it, and then Law 3 of logarithms (Theorem §5.5) gives
+> Since $x^r > 0$, the second equation of (9) applies to it, and then Law 3 of logarithms ([[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-5|Theorem §5.5]]) gives
 >
 > $$
 > x^r = e^{\ln(x^r)} = e^{r \ln x} .
@@ -207,13 +207,13 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 ^thm-5-8
 
 > [!proof]+ Proof
-> Let $y = \log_b x$. By (6), $b^y = x$. Taking natural logarithms of both sides and using Law 3 of Theorem §5.5,
+> Let $y = \log_b x$. By (6), $b^y = x$. Taking natural logarithms of both sides and using Law 3 of [[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-5|Theorem §5.5]],
 >
 > $$
 > \ln x = \ln(b^y) = y \ln b .
 > $$
 >
-> Since $b \ne 1$ and $\ln$ is one-to-one with $\ln 1 = 0$ (Theorem §5.4), $\ln b \ne 0$. (Stewart divides without comment; this is why it is allowed.) Dividing by $\ln b$ gives $y = \dfrac{\ln x}{\ln b}$.
+> Since $b \ne 1$ and $\ln$ is one-to-one with $\ln 1 = 0$ ([[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-4|Theorem §5.4]]), $\ln b \ne 0$. (Stewart divides without comment; this is why it is allowed.) Dividing by $\ln b$ gives $y = \dfrac{\ln x}{\ln b}$.
 
 ^pf-5-8
 
@@ -238,7 +238,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 >
 > Numerically, $\ln 10 \approx 2.302585$, so $x \approx \frac13 (2.697415) \approx 0.8991$.
 >
-> **(c)** Evaluate $\log_8 5$ to six decimal places. By the Change of Base Formula (Theorem §5.8),
+> **(c)** Evaluate $\log_8 5$ to six decimal places. By the Change of Base Formula ([[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-8|Theorem §5.8]]),
 >
 > $$
 > \log_8 5 = \frac{\ln 5}{\ln 8} \approx \frac{1.609438}{2.079442} \approx 0.773976 .
@@ -257,7 +257,7 @@ The most convenient base for calculus is the number $e$ of [[§4 Exponential Fun
 
 ^prop-5-9
 
-*The first two statements are Theorem §5.4 with $b = e$ (since $e > 1$). The asymptote and the comparison with powers Stewart reads off graphs; they are proved as limits: $\lim_{x \to 0^+} \ln x = -\infty$ in [[§7 The Limit of a Function#^thm-7-1|Theorem §7.1]], and $\ln x / \sqrt{x} \to 0$ as $x \to \infty$, with l'Hospital's Rule, in [[§28 Indeterminate Forms and L'Hospital's Rule#^ex-28-1|Example §28.1]](c). Appendix G proves the shape and the limits of $\ln$ from the integral: [[§121 The Logarithm Defined as an Integral#^thm-121-3|Theorem §121.3]].*
+*The first two statements are [[§5a Logarithmic and Inverse Trigonometric Functions#^thm-5-4|Theorem §5.4]] with $b = e$ (since $e > 1$). The asymptote and the comparison with powers Stewart reads off graphs; they are proved as limits: $\lim_{x \to 0^+} \ln x = -\infty$ in [[§7 The Limit of a Function#^thm-7-1|Theorem §7.1]], and $\ln x / \sqrt{x} \to 0$ as $x \to \infty$, with l'Hospital's Rule, in [[§28 Indeterminate Forms and L'Hospital's Rule#^ex-28-1|Example §28.1]](c). Appendix G proves the shape and the limits of $\ln$ from the integral: [[§121 The Logarithm Defined as an Integral#^thm-121-3|Theorem §121.3]].*
 
 The graphs of other logarithmic functions follow by the transformations of [[§3 New Functions from Old Functions#^thm-3-1|Theorem §3.1]]. For instance (Stewart, Example 1.5.12), $y = \ln(x - 2) - 1$ is $y = \ln x$ shifted $2$ units right and $1$ unit down: it has the vertical asymptote $x = 2$ and passes through $(3, -1)$, the image of $(1, 0)$.
 
@@ -323,9 +323,9 @@ The trigonometric functions are not one-to-one (they are periodic), so they have
 ^prop-5-10
 
 > [!proof]+ Proof
-> Each inverse function is the inverse of a one-to-one restricted function, so Definition §5.2 applies to it. Its domain is the range of the restricted function and its range is the restricted interval. On $[-\pi/2, \pi/2]$ the sine increases from $-1$ to $1$, and on $[0, \pi]$ the cosine decreases from $1$ to $-1$, taking all values in between; on $(-\pi/2, \pi/2)$ the tangent increases and takes every real value. This gives the table. The cancellation equations are Theorem §5.2 for the restricted sine and cosine.
+> Each inverse function is the inverse of a one-to-one restricted function, so [[§5 Inverse Functions and Logarithms#^def-5-2|Definition §5.2]] applies to it. Its domain is the range of the restricted function and its range is the restricted interval. On $[-\pi/2, \pi/2]$ the sine increases from $-1$ to $1$, and on $[0, \pi]$ the cosine decreases from $1$ to $-1$, taking all values in between; on $(-\pi/2, \pi/2)$ the tangent increases and takes every real value. This gives the table. The cancellation equations are [[§5 Inverse Functions and Logarithms#^thm-5-2|Theorem §5.2]] for the restricted sine and cosine.
 >
-> The lines $x = \pm\pi/2$ are vertical asymptotes of $\tan$. The graph of $\tan^{-1}$ is the reflection of the graph of the restricted tangent about $y = x$ (Theorem §5.3), and the reflection of a vertical line $x = c$ is the horizontal line $y = c$. So $y = \pm\pi/2$ are horizontal asymptotes of $\tan^{-1}$.
+> The lines $x = \pm\pi/2$ are vertical asymptotes of $\tan$. The graph of $\tan^{-1}$ is the reflection of the graph of the restricted tangent about $y = x$ ([[§5 Inverse Functions and Logarithms#^thm-5-3|Theorem §5.3]]), and the reflection of a vertical line $x = c$ is the horizontal line $y = c$. So $y = \pm\pi/2$ are horizontal asymptotes of $\tan^{-1}$.
 
 ^pf-5-10
 

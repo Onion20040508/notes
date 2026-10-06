@@ -6,7 +6,7 @@ section: 20
 munkres: "§32"
 tags: [topology, math590]
 ---
-← [[§19 Separation Axioms]] · ↑ [[· 6 Countability and Separation]] · [[§21 Algebra Prerequisites꞉ Groups]] →
+← [[§19 Separation Axioms]] · ↑ [[· 6 Countability and Separation]] · [[§20a The Lower Limit Topology, ℝ^ω and Discrete Subspaces]] →
 
 > [!remark] Remark: The Road Ahead
 > [[§19 Separation Axioms#^def-19-3|Normality]] is the key hypothesis for the deepest results in point-set topology. This section establishes that the spaces we care about most — metrizable spaces, compact Hausdorff spaces — are normal. This sets the stage for [[§20 Normal Spaces#^rem-20-3|Urysohn's Lemma]] (separating closed sets by continuous functions) and the [[§20 Normal Spaces#^rem-20-3|Tietze Extension Theorem]].

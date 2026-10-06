@@ -6,7 +6,7 @@ section: 27
 munkres: "§59"
 tags: [topology, math590]
 ---
-← [[§26 Deformation Retracts and Homotopy Type]] · ↑ [[· 11 Computing π₁]] · [[§28 Fundamental Group of Some Surfaces]] →
+← [[§26a The Punctured Plane, the Figure Eight and the Torus]] · ↑ [[· 11 Computing π₁]] · [[§28 Fundamental Group of Some Surfaces]] →
 
 The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Simply Connected for n ≥ 2|§27.3]]). The proof requires a [[§27 The Fundamental Group of Sⁿ#^thm-27-1|general theorem]] about how $\pi_1$ interacts with open covers.
 
@@ -190,7 +190,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 > [!remark] Remark: Why $n \geq 2$ is Essential
 > For $n = 1$: $U \cap V = S^1 \setminus \{p, q\} \cong \mathbb{R}^1 \setminus \{0\} = (-\infty, 0) \cup (0, \infty)$ — two disjoint intervals, **not** path-connected. So [[§27 The Fundamental Group of Sⁿ#^cor-27-2|the corollary]] does not apply, and indeed $\pi_1(S^1) \cong \mathbb{Z} \neq 0$ ([[Fundamental Group of the Circle|§24.10]]).
 >
-> This also explains why the no-retraction theorem for $B^{n+1} \to S^n$ ([[§26 Deformation Retracts and Homotopy Type#^thm-26-9|§26.9]]) cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
+> This also explains why the no-retraction theorem for $B^{n+1} \to S^n$ ([[§25a Retractions and Fixed Points#^thm-26-9|§26.9]]) cannot be proved using $\pi_1$ when $n \geq 2$: $\pi_1(S^n) = 0$ gives no contradiction, and one needs homology instead.
 
 ^rem-27-3
 
@@ -198,7 +198,7 @@ The main result of this section is $\pi_1(S^n) = 0$ for $n \geq 2$ ([[Sⁿ is Si
 *$U \cap V$ is a sphere with both poles removed. For $n = 2$ (left) any two points $a, b$ can be joined while avoiding $p$ and $q$ (red path). For $n = 1$ (right) the two removed points cut the circle into two arcs, homeomorphic to $(-\infty, 0)$ and $(0, \infty)$, and no path joins $a$ to $b$. That missing hypothesis is exactly what lets $\pi_1(S^1) \cong \mathbb{Z}$ be nontrivial.*
 
 > [!remark]- Connections
-> - The same observation from the retraction side: [[§26 Deformation Retracts and Homotopy Type#^rem-26-4|Why Our Proof Does Not Generalize]].
+> - The same observation from the retraction side: [[§25a Retractions and Fixed Points#^rem-26-4|Why Our Proof Does Not Generalize]].
 
 > [!example] Example §27.1: Wedge of Two Spheres is Simply Connected
 > The space $X = S^2 \vee S^2$ (two copies of $S^2$ glued at a single point) has $\pi_1(X) = 0$.

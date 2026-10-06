@@ -60,9 +60,9 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 >    $$
 >
 >    and substitute into $uv - \int v\,du$.
-> 3. **Polynomial times $e^{x}$, $\sin x$, $\cos x$:** take $u$ = the polynomial. Each application lowers its degree by one, so a polynomial of degree $n$ needs $n$ applications (Example §44.2).
-> 4. **$\ln x$, $\tan^{-1} x$, $\sin^{-1} x$ alone:** take $u$ = the function and $dv = dx$. The derivative is algebraic, so $\int v\,du$ is simpler (Example §44.4).
-> 5. **Neither factor simplifies** ($e^x \sin x$, $e^x \cos x$): integrate by parts twice, *with the same kind of choice both times*, until the original integral reappears. Then solve the equation for it (Example §44.3).
+> 3. **Polynomial times $e^{x}$, $\sin x$, $\cos x$:** take $u$ = the polynomial. Each application lowers its degree by one, so a polynomial of degree $n$ needs $n$ applications ([[§44 Integration by Parts#^ex-44-2|Example §44.2]]).
+> 4. **$\ln x$, $\tan^{-1} x$, $\sin^{-1} x$ alone:** take $u$ = the function and $dv = dx$. The derivative is algebraic, so $\int v\,du$ is simpler ([[§44 Integration by Parts#^ex-44-4|Example §44.4]]).
+> 5. **Neither factor simplifies** ($e^x \sin x$, $e^x \cos x$): integrate by parts twice, *with the same kind of choice both times*, until the original integral reappears. Then solve the equation for it ([[§44 Integration by Parts#^ex-44-3|Example §44.3]]).
 > 6. Check the answer by differentiating it.
 >
 > A bad choice makes things worse. In $\int x \sin x\,dx$, the choice $u = \sin x$, $dv = x\,dx$ gives $du = \cos x\,dx$, $v = x^2/2$ and
@@ -196,7 +196,7 @@ Every differentiation rule gives an integration rule. The Chain Rule gives the S
 
 *Uses:* [[§15 The Product and Quotient Rules#^thm-15-1|§15.1]] (Product Rule), [[§36 The Fundamental Theorem of Calculus#^thm-36-2|§36.2]] (FTC Part 2), [[§35 The Definite Integral#^thm-35-1|§35.1]], [[§35 The Definite Integral#^thm-35-4|§35.4]] (properties of the integral)
 
-Theorem §44.2 is used, by forward reference, in the proof of the shell formula ([[§41 Volumes by Cylindrical Shells#^pf-41-2|proof of Theorem §41.2]], Stewart's Exercise 7.1.81).
+[[§44 Integration by Parts#^thm-44-2|Theorem §44.2]] is used, by forward reference, in the proof of the shell formula ([[§41 Volumes by Cylindrical Shells#^pf-41-2|proof of Theorem §41.2]], Stewart's Exercise 7.1.81).
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 Thm. §34.3]], under weaker hypotheses ($u$, $v$ continuous on $[a, b]$, differentiable inside, with integrable derivatives), by the same proof.
@@ -246,7 +246,7 @@ Theorem §44.2 is used, by forward reference, in the proof of the shell formula 
 >
 > (Line integrals: [[§108 Line Integrals#^def-108-8|Def. §108.8]].) Evaluate $I$.
 >
-> This is Example §44.3 again: integrate by parts twice, each time with $dv = e^t\,dt$, $v = e^t$, until $I$ reappears.
+> This is [[§44 Integration by Parts#^ex-44-3|Example §44.3]] again: integrate by parts twice, each time with $dv = e^t\,dt$, $v = e^t$, until $I$ reappears.
 >
 > **First step.** $u = \pi \sin \pi t + \cos \pi t$, $du = (\pi^2 \cos \pi t - \pi \sin \pi t)\,dt = \pi(\pi \cos \pi t - \sin \pi t)\,dt$:
 >
@@ -275,6 +275,8 @@ Theorem §44.2 is used, by forward reference, in the proof of the shell formula 
 > *Source: 233 Practice Final Set 2, Part II Q3(b)*
 
 ^ex-44-5
+
+*Chain:* [[§109 The Fundamental Theorem for Line Integrals#^ex-109-5|Chapter 16]] →
 
 ## Reduction Formulas
 
@@ -310,7 +312,7 @@ Integration by parts often expresses an integral in terms of a simpler one. When
 > \int \sin^n x\,dx = -\cos x \sin^{n-1} x + (n - 1) \int \sin^{n-2} x\,dx - (n - 1) \int \sin^n x\,dx .
 > $$
 >
-> As in Example §44.3, solve for the desired integral by moving the last term to the left side:
+> As in [[§44 Integration by Parts#^ex-44-3|Example §44.3]], solve for the desired integral by moving the last term to the left side:
 >
 > $$
 > n \int \sin^n x\,dx = -\cos x \sin^{n-1} x + (n - 1) \int \sin^{n-2} x\,dx ,

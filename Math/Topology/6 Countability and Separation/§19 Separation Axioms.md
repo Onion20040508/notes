@@ -108,6 +108,8 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - $\mathbb{R}_K$ is the [[§2 Basis for a Topology#^ex-2-4|K-Topology]] of §2.
 
+*Chain: earlier in [[§5a Discrete, Indiscrete, Lower Limit and K-Topologies|Chapter 1]] · [[K-topology|all appearances]]*
+
 > [!example] Example §19.2: $\mathbb{R}_\ell$ is Normal
 > $\mathbb{R}_\ell$ ([[§2 Basis for a Topology#^ex-2-3|lower limit topology]], basis $\{[a, b)\}$) is normal.
 >

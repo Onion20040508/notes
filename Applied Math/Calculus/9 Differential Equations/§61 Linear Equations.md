@@ -124,10 +124,10 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > - ODE version: [[§4 Linear Differential Equations; Method of Integrating Factors#^thm-4-2|331 Thm. §4.2]] (the same integrating factor for $y' + p(t)y = g(t)$, [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-1|331 Def. §4.1]], [[§4 Linear Differential Equations; Method of Integrating Factors#^def-4-2|331 Def. §4.2]]), and [[§7 Differences Between Linear and Nonlinear Differential Equations#^thm-7-1|331 Thm. §7.1]] (an initial-value problem has exactly one solution on the whole interval where $p$ and $g$ are continuous).
 
 > [!remark] Remark: Method — Solving a Linear Equation
-> 1. **Standard form.** Divide by the coefficient of $y'$ to get $y' + P(x)y = Q(x)$. Note the interval on which that coefficient is not $0$; the solution lives there (Example §61.2).
+> 1. **Standard form.** Divide by the coefficient of $y'$ to get $y' + P(x)y = Q(x)$. Note the interval on which that coefficient is not $0$; the solution lives there ([[§61 Linear Equations#^ex-61-2|Example §61.2]]).
 > 2. **Integrating factor.** Compute $I(x) = e^{\int P(x)\,dx}$. No constant of integration is needed here, and $e^{\ln x} = x$ type simplifications usually apply.
 > 3. **Multiply** both sides by $I(x)$. The left side is now $\big(I(x)y\big)'$. (Checking this is a good test of the arithmetic.)
-> 4. **Integrate** both sides: $I(x)y = \int I(x)Q(x)\,dx + C$. Do not forget $C$. If $\int IQ\,dx$ is not elementary, write it as a definite integral $\int_a^x$ (Example §61.3).
+> 4. **Integrate** both sides: $I(x)y = \int I(x)Q(x)\,dx + C$. Do not forget $C$. If $\int IQ\,dx$ is not elementary, write it as a definite integral $\int_a^x$ ([[§61 Linear Equations#^ex-61-3|Example §61.3]]).
 > 5. **Divide** by $I(x)$ to get $y$.
 > 6. **Initial condition.** If $y(x_0) = y_0$ is given, substitute to find $C$.
 
@@ -163,7 +163,7 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 ^ex-61-1
 
 ![[m233-61-1.svg]]
-*Solutions $y = 2 + Ce^{-x^3}$ of Example §61.1 for $C = \pm 2, \pm 1, \pm 0.4$ and $0$. Each is the constant solution $y = 2$ (blue) plus $C$ times the decaying factor $e^{-x^3}$. For $x > 0$ they all merge into $y = 2$; for $x < 0$, $e^{-x^3}$ blows up and the curves separate fast.*
+*Solutions $y = 2 + Ce^{-x^3}$ of [[§61 Linear Equations#^ex-61-1|Example §61.1]] for $C = \pm 2, \pm 1, \pm 0.4$ and $0$. Each is the constant solution $y = 2$ (blue) plus $C$ times the decaying factor $e^{-x^3}$. For $x > 0$ they all merge into $y = 2$; for $x < 0$, $e^{-x^3}$ blows up and the curves separate fast.*
 
 > [!example] Example §61.2: An Initial-Value Problem
 > Find the solution of the initial-value problem
@@ -247,14 +247,14 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > L\,\frac{dI}{dt} + RI = E(t) . \qquad (7)
 > $$
 >
-> This is a first-order linear equation for $I$ (Definition §61.1, after dividing by $L$). The circuit was first met in [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]].
+> This is a first-order linear equation for $I$ ([[§61 Linear Equations#^def-61-1|Definition §61.1]], after dividing by $L$). The circuit was first met in [[§58 Direction Fields and Euler's Method#^def-58-2|Definition §58.2]].
 >
 > *Stewart: 9.5, Equation 7*
 
 ^def-61-3
 
 > [!example] Example §61.4: A Circuit with a Battery
-> In the circuit of Definition §61.3 the resistance is $12\ \Omega$ and the inductance is $4$ H. A battery gives a constant voltage of $60$ V, and the switch is closed at $t = 0$, so $I(0) = 0$. Find (a) $I(t)$, (b) the current after $1$ second, and (c) the limiting value of the current.
+> In the circuit of [[§61 Linear Equations#^def-61-3|Definition §61.3]] the resistance is $12\ \Omega$ and the inductance is $4$ H. A battery gives a constant voltage of $60$ V, and the switch is closed at $t = 0$, so $I(0) = 0$. Find (a) $I(t)$, (b) the current after $1$ second, and (c) the limiting value of the current.
 >
 > **(a)** With $L = 4$, $R = 12$ and $E(t) = 60$, Equation (7) gives the initial-value problem
 >
@@ -282,14 +282,14 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 > \lim_{t \to \infty} I(t) = \lim_{t \to \infty} 5\big(1 - e^{-3t}\big) = 5 - 5\lim_{t \to \infty} e^{-3t} = 5 - 0 = 5 .
 > $$
 >
-> The limit is the current $E/R = 60/12$ that Ohm's Law gives when the inductor plays no role. This equation is also separable, $dI/dt = 15 - 3I$, so it can be solved as in [[§59 Separable Equations|§59]] (Stewart's Example 9.3.4). With a generator instead of a battery it is linear but no longer separable (Example §61.5).
+> The limit is the current $E/R = 60/12$ that Ohm's Law gives when the inductor plays no role. This equation is also separable, $dI/dt = 15 - 3I$, so it can be solved as in [[§59 Separable Equations|§59]] (Stewart's Example 9.3.4). With a generator instead of a battery it is linear but no longer separable ([[§61 Linear Equations#^ex-61-5|Example §61.5]]).
 >
 > *Stewart: Example 9.5.4*
 
 ^ex-61-4
 
 > [!example] Example §61.5: A Circuit with a Generator
-> Keep the resistance and inductance of Example §61.4, but replace the battery by a generator producing the variable voltage $E(t) = 60\sin 30t$ volts, with $I(0) = 0$. Find $I(t)$.
+> Keep the resistance and inductance of [[§61 Linear Equations#^ex-61-4|Example §61.4]], but replace the battery by a generator producing the variable voltage $E(t) = 60\sin 30t$ volts, with $I(0) = 0$. Find $I(t)$.
 >
 > Now (7) becomes
 >
@@ -328,4 +328,4 @@ A first-order linear equation $y' + P(x)y = Q(x)$ is usually not separable, but 
 ^ex-61-5
 
 ![[m233-61-2.svg]]
-*The current in the circuit of Examples §61.4 and §61.5. (a) With a battery, $I(t) = 5(1 - e^{-3t})$ rises to its limiting value $5$ A and is already within $5\%$ of it at $t = 1$. (b) With a generator, the same decaying term $\frac{50}{101}e^{-3t}$ (orange) pushes the first oscillations upward; after about one second only the steady oscillation of amplitude $5/\sqrt{101} \approx 0.50$ A (between the blue lines) is left.*
+*The current in the circuit of [[§61 Linear Equations#^ex-61-4|Examples §61.4]] and §61.5. (a) With a battery, $I(t) = 5(1 - e^{-3t})$ rises to its limiting value $5$ A and is already within $5\%$ of it at $t = 1$. (b) With a generator, the same decaying term $\frac{50}{101}e^{-3t}$ (orange) pushes the first oscillations upward; after about one second only the steady oscillation of amplitude $5/\sqrt{101} \approx 0.50$ A (between the blue lines) is left.*

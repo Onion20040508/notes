@@ -49,7 +49,7 @@ The background on real numbers that the rest of the course takes for granted: th
 
 ^def-116-2
 
-*That the real line has no gaps — every nonempty set of reals bounded above has a least upper bound — is the Completeness Axiom, which Stewart states in Section 11.1: [[§69 Sequences#^def-69-7|Definition §69.7]].*
+*That the real line has no gaps — every nonempty set of reals bounded above has a least upper bound — is the Completeness Axiom, which Stewart states in Section 11.1: [[§69 Sequences#^def-69-new1|Definition §69.8]].*
 
 > [!definition] Definition §116.3: Order
 > $a$ **is less than** $b$, written $a < b$ (equivalently $b > a$, "$b$ is greater than $a$"), if $b - a$ is a positive number. Geometrically, $a$ lies to the left of $b$ on the real line. $a \le b$ (or $b \ge a$) means that $a < b$ or $a = b$. For example $7 < 7.4 < 7.5$, $-3 > -\pi$, $\sqrt2 < 2$, $\sqrt2 \le 2$ and $2 \le 2$ are all true.
@@ -100,7 +100,7 @@ The background on real numbers that the rest of the course takes for granted: th
 ^thm-116-2
 
 > [!proof]+ Proof
-> Stewart explains the rules but does not prove them. They follow from Definition §116.3 and the facts that sums and products of positive numbers are positive.
+> Stewart explains the rules but does not prove them. They follow from [[§116 Numbers, Inequalities, and Absolute Values#^def-116-3|Definition §116.3]] and the facts that sums and products of positive numbers are positive.
 > 1. $(b + c) - (a + c) = b - a > 0$.
 > 2. $(b + d) - (a + c) = (b - a) + (d - c)$, a sum of two positive numbers.
 > 3. $bc - ac = (b - a)c$, a product of two positive numbers.
@@ -210,7 +210,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 ^thm-116-4
 
 > [!proof]+ Proof
-> Stewart gives hints in the exercises. 1. By Proposition §116.3, $|ab| = \sqrt{(ab)^2} = \sqrt{a^2b^2} = \sqrt{a^2}\,\sqrt{b^2} = |a|\,|b|$, since $\sqrt{a^2}\sqrt{b^2}$ is $\ge 0$ and its square is $a^2b^2$. 2. By Property 1, $|b| \cdot \big|\frac ab\big| = \big|b \cdot \frac ab\big| = |a|$; divide by $|b| \ne 0$. 3. For $n \ge 0$, by induction on $n$: $|a^0| = 1 = |a|^0$, and $|a^{n+1}| = |a^n \cdot a| = |a^n|\,|a| = |a|^n|a| = |a|^{n+1}$ by Property 1. For $n = -m < 0$, Property 2 gives $|a^{-m}| = \big|\frac{1}{a^m}\big| = \frac{1}{|a^m|} = \frac{1}{|a|^m} = |a|^{-m}$.
+> Stewart gives hints in the exercises. 1. By [[§116 Numbers, Inequalities, and Absolute Values#^prop-116-3|Proposition §116.3]], $|ab| = \sqrt{(ab)^2} = \sqrt{a^2b^2} = \sqrt{a^2}\,\sqrt{b^2} = |a|\,|b|$, since $\sqrt{a^2}\sqrt{b^2}$ is $\ge 0$ and its square is $a^2b^2$. 2. By Property 1, $|b| \cdot \big|\frac ab\big| = \big|b \cdot \frac ab\big| = |a|$; divide by $|b| \ne 0$. 3. For $n \ge 0$, by induction on $n$: $|a^0| = 1 = |a|^0$, and $|a^{n+1}| = |a^n \cdot a| = |a^n|\,|a| = |a|^n|a| = |a|^{n+1}$ by Property 1. For $n = -m < 0$, Property 2 gives $|a^{-m}| = \big|\frac{1}{a^m}\big| = \frac{1}{|a^m|} = \frac{1}{|a|^m} = |a|^{-m}$.
 
 ^pf-116-4
 
@@ -230,7 +230,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 ^thm-116-5
 
 > [!proof]+ Proof
-> Split into the cases of (3). If $x \ge 0$, then $|x| = x$, and the three statements read $x = a$; $0 \le x < a$; $x > a$. If $x < 0$, then $|x| = -x$, and they read $-x = a$, i.e. $x = -a$; $0 < -x < a$, i.e. $-a < x < 0$; $-x > a$, i.e. $x < -a$ (Rule 4 of Theorem §116.2). Combining the two cases gives 4, 5 and 6.
+> Split into the cases of (3). If $x \ge 0$, then $|x| = x$, and the three statements read $x = a$; $0 \le x < a$; $x > a$. If $x < 0$, then $|x| = -x$, and they read $-x = a$, i.e. $x = -a$; $0 < -x < a$, i.e. $-a < x < 0$; $-x > a$, i.e. $x < -a$ (Rule 4 of [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Theorem §116.2]]). Combining the two cases gives 4, 5 and 6.
 
 ^pf-116-5
 
@@ -270,13 +270,13 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 ^rem-116-2
 
 > [!proof]+ Proof
-> Since $a$ equals either $|a|$ or $-|a|$, we always have $-|a| \le a \le |a|$; likewise $-|b| \le b \le |b|$. Adding these inequalities (Rule 2 of Theorem §116.2, together with the case of equality),
+> Since $a$ equals either $|a|$ or $-|a|$, we always have $-|a| \le a \le |a|$; likewise $-|b| \le b \le |b|$. Adding these inequalities (Rule 2 of [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-2|Theorem §116.2]], together with the case of equality),
 >
 > $$
 > -(|a| + |b|) \le a + b \le |a| + |b| .
 > $$
 >
-> By Properties 4 and 5 of Theorem §116.5, with $x$ replaced by $a + b$ and $a$ by $|a| + |b|$ (if $|a| + |b| = 0$ then $a = b = 0$ and there is nothing to prove), this says $|a + b| \le |a| + |b|$.
+> By Properties 4 and 5 of [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-5|Theorem §116.5]], with $x$ replaced by $a + b$ and $a$ by $|a| + |b|$ (if $|a| + |b| = 0$ then $a = b = 0$ and there is nothing to prove), this says $|a + b| \le |a| + |b|$.
 
 ^pf-116-6
 
@@ -288,7 +288,7 @@ To **solve** an inequality is to find its **solution set**, the set of all numbe
 > [!example] Example §116.4: Estimating with the Triangle Inequality
 > If $|x - 4| < 0.1$ and $|y - 7| < 0.2$, estimate $|(x + y) - 11|$.
 >
-> Apply Theorem §116.6 with $a = x - 4$ and $b = y - 7$:
+> Apply [[§116 Numbers, Inequalities, and Absolute Values#^thm-116-6|Theorem §116.6]] with $a = x - 4$ and $b = y - 7$:
 >
 > $$
 > |(x + y) - 11| = |(x - 4) + (y - 7)| \le |x - 4| + |y - 7| < 0.1 + 0.2 = 0.3 .

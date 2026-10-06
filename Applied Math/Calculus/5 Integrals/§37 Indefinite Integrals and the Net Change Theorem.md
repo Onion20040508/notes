@@ -247,7 +247,7 @@ The most important instance concerns motion along a line, and it settles the gue
 ^ex-37-3
 
 ![[m233-37-1.svg]]
-*Example §37.3. On $[1, 3]$ the velocity is negative and the particle moves left a distance $\frac{22}{3}$ (orange area); on $[3, 4]$ it moves right $\frac{17}{6}$ (blue area). Displacement counts the orange area negatively, $\frac{17}{6} - \frac{22}{3} = -\frac92$; distance counts both, $\frac{17}{6} + \frac{22}{3} = \frac{61}{6}$.*
+*[[§37 Indefinite Integrals and the Net Change Theorem#^ex-37-3|Example §37.3]]. On $[1, 3]$ the velocity is negative and the particle moves left a distance $\frac{22}{3}$ (orange area); on $[3, 4]$ it moves right $\frac{17}{6}$ (blue area). Displacement counts the orange area negatively, $\frac{17}{6} - \frac{22}{3} = -\frac92$; distance counts both, $\frac{17}{6} + \frac{22}{3} = \frac{61}{6}$.*
 
 > [!example] Example §37.4: Energy from a Power Curve
 > A graph shows the power consumption $P$ (in megawatts) in San Francisco on a day in September, with $t$ in hours starting at midnight. Estimate the energy used that day.

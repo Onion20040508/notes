@@ -6,7 +6,7 @@ section: 18
 munkres: "§30"
 tags: [topology, math590]
 ---
-← [[§17 Local Compactness]] · ↑ [[· 6 Countability and Separation]] · [[§19 Separation Axioms]] →
+← [[§17a Discrete and Indiscrete Spaces]] · ↑ [[· 6 Countability and Separation]] · [[§19 Separation Axioms]] →
 
 **Motivation:** When does a space $X$ embed in a metric space?
 

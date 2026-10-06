@@ -35,7 +35,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 ^def-23-1
 
 > [!remark]- Connections
-> - How good is it? Taylor's Theorem with $n = 2$ bounds the error: $f(x) - L(x) = \frac12 f''(c)(x - a)^2$ for some $c$ between $a$ and $x$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]; in Calculus, [[§78 Taylor and Maclaurin Series#^rem-78-2|Remark: Formulas for the Remainder]]). This explains Example §23.1: the error grows like $(x - a)^2$, and its sign is that of $f''$.
+> - How good is it? Taylor's Theorem with $n = 2$ bounds the error: $f(x) - L(x) = \frac12 f''(c)(x - a)^2$ for some $c$ between $a$ and $x$ ([[§31 Taylor's Theorem#^thm-31-2|451 Thm. §31.2]]; in Calculus, [[§78 Taylor and Maclaurin Series#^rem-78-2|Remark: Formulas for the Remainder]]). This explains [[§23 Linear Approximations and Differentials#^ex-23-1|Example §23.1]]: the error grows like $(x - a)^2$, and its sign is that of $f''$.
 > - In several variables the tangent line becomes the tangent plane: [[§93 Tangent Planes and Linear Approximations#^def-93-2|Definition §93.2]] (Stewart 14.4), and [[§6 Differentiability#^def-6-1|452 Def. §6.1]], where good linear approximation is the definition of differentiability.
 
 > [!example] Example §23.1: Linearizing a Square Root
@@ -142,7 +142,7 @@ Zooming in toward a point on the graph of a differentiable function, the graph l
 > f(a + dx) \approx f(a) + dy .
 > $$
 >
-> For instance, for $f(x) = \sqrt{x + 3}$ (Example §23.1), $dy = \dfrac{dx}{2\sqrt{x + 3}}$; with $a = 1$ and $dx = 0.05$, $dy = \dfrac{0.05}{2\sqrt{4}} = 0.0125$, and $\sqrt{4.05} = f(1.05) \approx f(1) + dy = 2.0125$, as before.
+> For instance, for $f(x) = \sqrt{x + 3}$ ([[§23 Linear Approximations and Differentials#^ex-23-1|Example §23.1]]), $dy = \dfrac{dx}{2\sqrt{x + 3}}$; with $a = 1$ and $dx = 0.05$, $dy = \dfrac{0.05}{2\sqrt{4}} = 0.0125$, and $\sqrt{4.05} = f(1.05) \approx f(1) + dy = 2.0125$, as before.
 
 ^rem-23-2
 

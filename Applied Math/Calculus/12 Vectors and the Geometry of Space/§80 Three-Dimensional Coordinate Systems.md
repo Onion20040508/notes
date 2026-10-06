@@ -56,7 +56,7 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 > - $y = k$ is a plane parallel to the $xz$-plane,
 > - $z = k$ is a plane parallel to the $xy$-plane.
 >
-> The faces of the box of Definition §80.2 lie in the three coordinate planes $x = 0$ (the $yz$-plane), $y = 0$ (the $xz$-plane), $z = 0$ (the $xy$-plane) and in the planes $x = a$, $y = b$, $z = c$. A *pair* of equations usually describes a curve (the intersection of two surfaces), and inequalities describe solid regions.
+> The faces of the box of [[§80 Three-Dimensional Coordinate Systems#^def-80-2|Definition §80.2]] lie in the three coordinate planes $x = 0$ (the $yz$-plane), $y = 0$ (the $xz$-plane), $z = 0$ (the $xy$-plane) and in the planes $x = a$, $y = b$, $z = c$. A *pair* of equations usually describes a curve (the intersection of two surfaces), and inequalities describe solid regions.
 
 ^rem-80-2
 
@@ -78,7 +78,7 @@ In plane analytic geometry the graph of an equation in $x$ and $y$ is a curve in
 > (b) What does the equation $x^2 + y^2 = 1$ alone represent as a surface in $\mathbb{R}^3$?
 > (c) What solid region is described by $x^2 + y^2 \le 1$, $2 \le z \le 4$?
 >
-> **(a)** Since $z = 3$, the points lie in the horizontal plane $z = 3$ of Example §80.1(a). Since $x^2 + y^2 = 1$, they lie on the circle of radius $1$ centered on the $z$-axis in that plane. The answer is a circle, described by a *pair* of equations.
+> **(a)** Since $z = 3$, the points lie in the horizontal plane $z = 3$ of [[§80 Three-Dimensional Coordinate Systems#^ex-80-1|Example §80.1]](a). Since $x^2 + y^2 = 1$, they lie on the circle of radius $1$ centered on the $z$-axis in that plane. The answer is a circle, described by a *pair* of equations.
 >
 > **(b)** Now $z$ is unrestricted. A point $(x, y, z)$ satisfies the equation exactly when $(x, y)$ lies on the unit circle, whatever $z$ is. So the surface consists of all the horizontal circles $x^2 + y^2 = 1$, $z = k$, for every $k$: the **circular cylinder** of radius $1$ whose axis is the $z$-axis.
 >
@@ -155,7 +155,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 ^thm-80-2
 
 > [!proof]+ Proof
-> By Definition §80.3, $P(x, y, z)$ lies on the sphere if and only if $|PC| = r$, that is, by the distance formula,
+> By [[§80 Three-Dimensional Coordinate Systems#^def-80-3|Definition §80.3]], $P(x, y, z)$ lies on the sphere if and only if $|PC| = r$, that is, by the distance formula,
 >
 > $$
 > \sqrt{(x - h)^2 + (y - k)^2 + (z - l)^2} = r .
@@ -184,7 +184,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 > r = \sqrt{(5 - 3)^2 + [2 - (-1)]^2 + (3 - 6)^2} = \sqrt{4 + 9 + 9} = \sqrt{22} .
 > $$
 >
-> By Theorem §80.2 an equation is $(x - 3)^2 + (y + 1)^2 + (z - 6)^2 = 22$.
+> By [[§80 Three-Dimensional Coordinate Systems#^thm-80-2|Theorem §80.2]] an equation is $(x - 3)^2 + (y + 1)^2 + (z - 6)^2 = 22$.
 >
 > **(b)** Find the equation of the sphere with center $(2, 1, 1)$ containing the point $(1, -1, 2)$.
 >
@@ -230,7 +230,7 @@ For instance, the distance from $P(2, -1, 7)$ to $Q(1, -3, 5)$ is $|PQ| = \sqrt{
 > 1 \le \sqrt{x^2 + y^2 + z^2} \le 2 ,
 > $$
 >
-> so the distance from $(x, y, z)$ to the origin is at least $1$ and at most $2$ (Theorem §80.1). The condition $z \le 0$ says the point lies on or below the $xy$-plane. So the region is the part of the solid between (or on) the spheres $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 4$ that lies on or beneath the $xy$-plane: half of a thick spherical shell, like a bowl.
+> so the distance from $(x, y, z)$ to the origin is at least $1$ and at most $2$ ([[§80 Three-Dimensional Coordinate Systems#^thm-80-1|Theorem §80.1]]). The condition $z \le 0$ says the point lies on or below the $xy$-plane. So the region is the part of the solid between (or on) the spheres $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 4$ that lies on or beneath the $xy$-plane: half of a thick spherical shell, like a bowl.
 >
 > *Stewart: Example 12.1.7*
 

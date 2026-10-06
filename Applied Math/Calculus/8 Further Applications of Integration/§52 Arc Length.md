@@ -32,7 +32,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 *A polygonal path $P_0 P_1 \cdots P_n$ (red) inscribed in the curve $y = f(x)$ (blue), with vertices above equally spaced points $x_i$. The length of a polygon is a sum of distances. As $n$ grows, the chords hug the curve more closely, and their total length tends to the length of the curve.*
 
 > [!remark] Remark: The Idea Behind the Definition
-> The length of a polygon is the sum of the lengths of its segments, each found from the distance formula. The circumference of a circle is the limit of the perimeters of inscribed regular polygons as the number of sides grows. Definition §52.1 applies the same idea to any curve. It follows the pattern of the definitions of area ([[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]]) and volume ([[§40 Volumes#^def-40-2|Definition §40.2]]): divide the object into many small parts, approximate each part by something whose size we know, add, and take the limit as $n \to \infty$.
+> The length of a polygon is the sum of the lengths of its segments, each found from the distance formula. The circumference of a circle is the limit of the perimeters of inscribed regular polygons as the number of sides grows. [[§52 Arc Length#^def-52-1|Definition §52.1]] applies the same idea to any curve. It follows the pattern of the definitions of area ([[§34 The Area and Distance Problems#^def-34-1|Definition §34.1]]) and volume ([[§40 Volumes#^def-40-2|Definition §40.2]]): divide the object into many small parts, approximate each part by something whose size we know, add, and take the limit as $n \to \infty$.
 
 ^rem-52-1
 
@@ -61,7 +61,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^thm-52-1
 
 > [!proof]+ Proof
-> Use the notation of Definition §52.1 and let $\Delta y_i = y_i - y_{i-1}$. Then
+> Use the notation of [[§52 Arc Length#^def-52-1|Definition §52.1]] and let $\Delta y_i = y_i - y_{i-1}$. Then
 >
 > $$
 > |P_{i-1} P_i| = \sqrt{(x_i - x_{i-1})^2 + (y_i - y_{i-1})^2} = \sqrt{(\Delta x)^2 + (\Delta y_i)^2} .
@@ -79,13 +79,13 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > |P_{i-1} P_i| = \sqrt{(\Delta x)^2 + [f'(x_i^*)\,\Delta x]^2} = \sqrt{1 + [f'(x_i^*)]^2}\,\sqrt{(\Delta x)^2} = \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x ,
 > $$
 >
-> and by Definition §52.1
+> and by [[§52 Arc Length#^def-52-1|Definition §52.1]]
 >
 > $$
 > L = \lim_{n \to \infty} \sum_{i=1}^n |P_{i-1} P_i| = \lim_{n \to \infty} \sum_{i=1}^n \sqrt{1 + [f'(x_i^*)]^2}\,\Delta x .
 > $$
 >
-> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^{\ast} \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^def-35-1|Definition §35.1]]), in particular for the points $x_i^{\ast}$ supplied by the Mean Value Theorem. So the limit in Definition §52.1 exists and
+> The last sum is a Riemann sum of $g(x) = \sqrt{1 + [f'(x)]^2}$ for the equal partition of $[a, b]$ with sample points $x_i^{\ast} \in [x_{i-1}, x_i]$. Since $f'$ is continuous, so is $g$; a continuous function is integrable, and then the Riemann sums tend to $\int_a^b g(x)\,dx$ for *every* choice of sample points ([[§35 The Definite Integral#^thm-35-1|Theorem §35.1]], [[§35 The Definite Integral#^def-35-1|Definition §35.1]]), in particular for the points $x_i^{\ast}$ supplied by the Mean Value Theorem. So the limit in [[§52 Arc Length#^def-52-1|Definition §52.1]] exists and
 >
 > $$
 > L = \int_a^b \sqrt{1 + [f'(x)]^2}\,dx .
@@ -113,7 +113,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > \frac{dy}{dx} = \frac32 x^{1/2}, \qquad 1 + \left(\frac{dy}{dx}\right)^2 = 1 + \frac94 x .
 > $$
 >
-> The derivative is continuous on $[1, 4]$, so by Theorem §52.1
+> The derivative is continuous on $[1, 4]$, so by [[§52 Arc Length#^thm-52-1|Theorem §52.1]]
 >
 > $$
 > L = \int_1^4 \sqrt{1 + \tfrac94 x}\,dx .
@@ -145,7 +145,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^thm-52-2
 
 > [!proof]+ Proof
-> Interchange the roles of $x$ and $y$. The length is defined as in Definition §52.1 with the roles of the axes exchanged: divide $[c, d]$ into $n$ equal parts at $y_0, \ldots, y_n$ and inscribe the polygon with vertices $(g(y_i), y_i)$. Reflecting in the line $y = x$, that is, $(x, y) \mapsto (y, x)$, carries this polygon to the polygon with vertices $(y_i, g(y_i))$ inscribed in the graph $y = g(x)$, $c \le x \le d$. The reflection preserves distances, since $\sqrt{(\Delta x)^2 + (\Delta y)^2}$ is symmetric in $\Delta x$ and $\Delta y$. So the two polygons have the same length for every $n$, and the two curves have the same length. By Theorem §52.1 applied to $y = g(x)$, that length is $\int_c^d \sqrt{1 + [g'(y)]^2}\,dy$ (renaming the variable of integration).
+> Interchange the roles of $x$ and $y$. The length is defined as in [[§52 Arc Length#^def-52-1|Definition §52.1]] with the roles of the axes exchanged: divide $[c, d]$ into $n$ equal parts at $y_0, \ldots, y_n$ and inscribe the polygon with vertices $(g(y_i), y_i)$. Reflecting in the line $y = x$, that is, $(x, y) \mapsto (y, x)$, carries this polygon to the polygon with vertices $(y_i, g(y_i))$ inscribed in the graph $y = g(x)$, $c \le x \le d$. The reflection preserves distances, since $\sqrt{(\Delta x)^2 + (\Delta y)^2}$ is symmetric in $\Delta x$ and $\Delta y$. So the two polygons have the same length for every $n$, and the two curves have the same length. By [[§52 Arc Length#^thm-52-1|Theorem §52.1]] applied to $y = g(x)$, that length is $\int_c^d \sqrt{1 + [g'(y)]^2}\,dy$ (renaming the variable of integration).
 
 ^pf-52-2
 
@@ -154,7 +154,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 > [!example] Example §52.2: A Parabola, Integrated in y
 > Find the length of the arc of the parabola $y^2 = x$ from $(0, 0)$ to $(1, 1)$.
 >
-> **Choice of variable.** As a function of $x$ the arc is $y = \sqrt{x}$, whose derivative $\frac{1}{2\sqrt{x}}$ is unbounded at $x = 0$, so Theorem §52.1 does not apply on $[0, 1]$. As a function of $y$ it is $x = y^2$, $0 \le y \le 1$, with $dx/dy = 2y$ continuous. Theorem §52.2 gives
+> **Choice of variable.** As a function of $x$ the arc is $y = \sqrt{x}$, whose derivative $\frac{1}{2\sqrt{x}}$ is unbounded at $x = 0$, so [[§52 Arc Length#^thm-52-1|Theorem §52.1]] does not apply on $[0, 1]$. As a function of $y$ it is $x = y^2$, $0 \le y \le 1$, with $dx/dy = 2y$ continuous. [[§52 Arc Length#^thm-52-2|Theorem §52.2]] gives
 >
 > $$
 > L = \int_0^1 \sqrt{1 + \left(\frac{dx}{dy}\right)^2}\,dy = \int_0^1 \sqrt{1 + 4y^2}\,dy .
@@ -186,14 +186,14 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^ex-52-2
 
 > [!remark] Remark: Arc Length Integrals Are Often Not Elementary
-> Because of the square root in Theorems §52.1 and §52.2, an arc length integral is often very hard or impossible to evaluate exactly, even for a curve as simple as the hyperbola $y = 1/x$ (Example §52.3 below). Then one settles for a numerical approximation, for instance by Simpson's Rule ([[§50 Approximate Integration#^def-50-5|Definition §50.5]]).
+> Because of the square root in Theorems [[§52 Arc Length#^thm-52-1|§52.1]] and [[§52 Arc Length#^thm-52-2|§52.2]], an arc length integral is often very hard or impossible to evaluate exactly, even for a curve as simple as the hyperbola $y = 1/x$ ([[§52 Arc Length#^ex-52-3|Example §52.3]] below). Then one settles for a numerical approximation, for instance by Simpson's Rule ([[§50 Approximate Integration#^def-50-5|Definition §50.5]]).
 
 ^rem-52-2
 
 > [!example] Example §52.3: A Hyperbola, by Simpson's Rule
 > (a) Set up an integral for the length of the arc of the hyperbola $xy = 1$ from $(1, 1)$ to $(2, \frac12)$. (b) Use Simpson's Rule with $n = 10$ to estimate the arc length.
 >
-> **(a)** $y = \dfrac1x$ and $\dfrac{dy}{dx} = -\dfrac{1}{x^2}$, so by Theorem §52.1
+> **(a)** $y = \dfrac1x$ and $\dfrac{dy}{dx} = -\dfrac{1}{x^2}$, so by [[§52 Arc Length#^thm-52-1|Theorem §52.1]]
 >
 > $$
 > L = \int_1^2 \sqrt{1 + \frac{1}{x^4}}\,dx .
@@ -227,7 +227,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ## The Arc Length Function
 
 > [!definition] Definition §52.3: Arc Length Function
-> Let $C$ be a smooth curve $y = f(x)$, $a \le x \le b$. The **arc length function** $s(x)$ is the distance along $C$ from the initial point $P_0(a, f(a))$ to the point $Q(x, f(x))$. By Theorem §52.1,
+> Let $C$ be a smooth curve $y = f(x)$, $a \le x \le b$. The **arc length function** $s(x)$ is the distance along $C$ from the initial point $P_0(a, f(a))$ to the point $Q(x, f(x))$. By [[§52 Arc Length#^thm-52-1|Theorem §52.1]],
 >
 > $$
 > s(x) = \int_a^x \sqrt{1 + [f'(t)]^2}\,dt .
@@ -253,7 +253,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^thm-52-3
 
 > [!proof]+ Proof
-> The integrand $t \mapsto \sqrt{1 + [f'(t)]^2}$ of Definition §52.3 is continuous, because $f'$ is. By Part 1 of the Fundamental Theorem of Calculus, the function $x \mapsto \int_a^x \sqrt{1 + [f'(t)]^2}\,dt$ is differentiable with derivative $\sqrt{1 + [f'(x)]^2}$. Since $[f'(x)]^2 \ge 0$, this is at least $\sqrt1 = 1$, with equality exactly when $f'(x) = 0$.
+> The integrand $t \mapsto \sqrt{1 + [f'(t)]^2}$ of [[§52 Arc Length#^def-52-3|Definition §52.3]] is continuous, because $f'$ is. By Part 1 of the Fundamental Theorem of Calculus, the function $x \mapsto \int_a^x \sqrt{1 + [f'(t)]^2}\,dt$ is differentiable with derivative $\sqrt{1 + [f'(x)]^2}$. Since $[f'(x)]^2 \ge 0$, this is at least $\sqrt1 = 1$, with equality exactly when $f'(x) = 0$.
 
 ^pf-52-3
 
@@ -286,7 +286,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^def-52-4
 
 > [!remark] Remark: Reading the Formulas as L = ∫ ds
-> Equation (8) is the Pythagorean theorem for the small right triangle with legs $dx$ and $dy$ whose hypotenuse $ds$ runs along the tangent line. For small $dx$ the tangent segment $ds$ is close to the true arc length $\Delta s$ over the same interval, just as the tangent-line increment $dy$ is close to $\Delta y$. Equation (8) is a mnemonic for both length formulas: write $L = \int ds$, then solve (8) as (7) to get Theorem §52.1, or as (9) to get Theorem §52.2. The same $ds$ appears in the surface area formulas of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]], and for a parametric curve $x = x(t)$, $y = y(t)$, (8) gives $ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}\,dt$ ([[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]]).
+> Equation (8) is the Pythagorean theorem for the small right triangle with legs $dx$ and $dy$ whose hypotenuse $ds$ runs along the tangent line. For small $dx$ the tangent segment $ds$ is close to the true arc length $\Delta s$ over the same interval, just as the tangent-line increment $dy$ is close to $\Delta y$. Equation (8) is a mnemonic for both length formulas: write $L = \int ds$, then solve (8) as (7) to get [[§52 Arc Length#^thm-52-1|Theorem §52.1]], or as (9) to get [[§52 Arc Length#^thm-52-2|Theorem §52.2]]. The same $ds$ appears in the surface area formulas of [[§53 Area of a Surface of Revolution#^thm-53-3|Theorem §53.3]], and for a parametric curve $x = x(t)$, $y = y(t)$, (8) gives $ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}\,dt$ ([[§64 Calculus with Parametric Curves#^def-64-1|Definition §64.1]]).
 
 ^rem-52-3
 
@@ -322,7 +322,7 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ^ex-52-4
 
 > [!remark] Remark: Method — Computing an Arc Length
-> 1. **Choose the variable.** Write the curve as $y = f(x)$ or as $x = g(y)$ and use Theorem §52.1 or §52.2. Choose the form whose derivative is continuous on the whole closed interval: a vertical tangent at an endpoint makes $dy/dx$ unbounded there, while $dx/dy$ is fine ([[§52 Arc Length#^ex-52-2|Example §52.2]]).
+> 1. **Choose the variable.** Write the curve as $y = f(x)$ or as $x = g(y)$ and use Theorem [[§52 Arc Length#^thm-52-1|§52.1]] or [[§52 Arc Length#^thm-52-2|§52.2]]. Choose the form whose derivative is continuous on the whole closed interval: a vertical tangent at an endpoint makes $dy/dx$ unbounded there, while $dx/dy$ is fine ([[§52 Arc Length#^ex-52-2|Example §52.2]]).
 > 2. **Simplify $1 + (\text{derivative})^2$.** Many textbook curves, such as $x^2 - \frac18 \ln x$, $\frac{x^3}{3} + \frac{1}{4x}$ or $a\cosh(x/a)$, are chosen so that $1 + [f'(x)]^2$ is a perfect square and the root disappears ([[§52 Arc Length#^ex-52-4|Example §52.4]]). Expand $[f'(x)]^2$ and look for $1 + (A - B)^2 = (A + B)^2$, which happens when $4AB = 1$.
 > 3. **Integrate** with the substitution rule ([[§38 The Substitution Rule#^thm-38-3|Theorem §38.3]]), trigonometric substitution ([[§46 Trigonometric Substitution|§46]]) or a table ([[§49 Integration Using Tables and Technology|§49]]).
 > 4. **If no antiderivative is available,** approximate the integral numerically, for example by Simpson's Rule ([[§52 Arc Length#^ex-52-3|Example §52.3]]).
