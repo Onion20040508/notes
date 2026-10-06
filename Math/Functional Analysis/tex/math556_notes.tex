@@ -3718,7 +3718,7 @@ which makes sense for every $\alpha$ because $f$ is $C^\infty$, and is again in 
 \[
 (f, g) = \sum_{|\alpha| \le k} \int_\Omega \partial^\alpha f(x)\, \overline{\partial^\alpha g(x)}\,dx .
 \]
-Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ this is the previous example. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which the course does not develop.
+Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ this is the previous example. $X$ is not complete; its completion is a \textbf{Sobolev space}, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (\S5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in \ref{sec:sobolev} (Lecture 11).
 
 Wu's motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
 \laxref{\S5.1, example (g)}
@@ -5104,7 +5104,7 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 \chapter{Bounded Linear Maps}\label{ch:maps}
 
-Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15.
+Linear functionals take values in the scalars. The next objects are linear maps between two normed linear spaces, and the question is the same as for functionals: when is a linear map continuous, and how large is it? The answer --- continuity and boundedness coincide, and the bounded maps form a normed space of their own, complete when the target is --- is the starting point for operators on Hilbert space. The material follows Lax, Chapter 15, and closes with the Lax--Milgram theorem and the Sobolev spaces it is applied to.
 
 % Lecture 9 (2026-09-29), last part
 
@@ -5583,8 +5583,43 @@ Then for every $\ell \in H'$ there is a unique $y \in H$ with
 \end{thmbox}
 
 \begin{proof}
-Next lecture.
+% Lecture 11 (2026-10-06)
+(Lecture 11.) On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)--(3) and Theorem~\ref{thm:form-operator} there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+
+\textbf{Step 1: $A$ is one-to-one, with a lower bound.} By coercivity and Cauchy--Schwarz, for every $x \in H$,
+\[
+\beta\, \|x\|^2 \le |B(x, x)| = |(x, Ax)| \le \|x\|\, \|Ax\| .
+\]
+For $x \neq 0$ divide by $\|x\|$; for $x = 0$ the next inequality is trivial. Hence
+\begin{equation}\label{eq:lm-lower}
+\|Ax\| \ge \beta\, \|x\| \qquad \text{for all } x \in H .
+\end{equation}
+In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. (Wu: ``not only $A$ is one-to-one, but $A$ has a lower bound like that.'')
+
+\textbf{Step 2: the range of $A$ is closed.} Let $R(A) = \{Ax : x \in H\}$. %% FILL-IN: that R(A) is a linear subspace (Wu: "I think it's a linear subspace is true").
+It is a linear subspace, since $a_1 A x_1 + a_2 A x_2 = A(a_1 x_1 + a_2 x_2)$. Let $\{Ax_n\}$ be a sequence in $R(A)$ converging to some $z \in H$; we show $z \in R(A)$. A convergent sequence is Cauchy, and by \eqref{eq:lm-lower} and linearity,
+\[
+\|x_n - x_m\| \le \frac{1}{\beta}\, \|A x_n - A x_m\| ,
+\]
+so $\{x_n\}$ is Cauchy in $H$. Since $H$ is complete, $x_n \to x_0$ for some $x_0 \in H$. Since $A$ is bounded, it is continuous (Proposition~\ref{prop:cont-bounded}), so $A x_n \to A x_0$. %% FILL-IN: uniqueness of limits gives z = A x_0.
+By uniqueness of limits, $z = A x_0 \in R(A)$. Hence $R(A)$ is closed.
+
+\textbf{Step 3: the range of $A$ is all of $H$.} $R(A)$ is a closed linear subspace of the Hilbert space $H$, so $H = R(A) \oplus R(A)^\perp$ by Theorem~\ref{thm:orth-decomp}. We show $R(A)^\perp = \{0\}$. Let $y_0 \in R(A)^\perp$. Then $(y_0, Ax) = 0$ for all $x \in H$, and $(y_0, Ax) = B(y_0, x)$, so
+\[
+B(y_0, x) = 0 \qquad \text{for all } x \in H .
+\]
+In particular $B(y_0, y_0) = 0$. By coercivity, $\beta\|y_0\|^2 \le |B(y_0, y_0)| = 0$, so $y_0 = 0$. Hence $R(A)^\perp = \{0\}$ and $R(A) = H$: $A$ is onto.
+
+\textbf{Step 4: conclusion.} \emph{Existence.} Let $\ell \in H'$, and let $z_0$ be its Riesz representer, $\ell(x) = (x, z_0)$. Since $A$ is onto, there is $y_0$ with $A y_0 = z_0$, and then
+\[
+\ell(x) = (x, A y_0) = B(x, y_0) \qquad \text{for all } x \in H .
+\]
+\emph{Uniqueness.} If also $\ell(x) = B(x, y_1)$ for all $x$, then $B(x, y_1 - y_0) = 0$ for all $x$, by conjugate-linearity in the second slot. Taking $x = y_1 - y_0$, coercivity gives $\beta\|y_1 - y_0\|^2 \le |B(y_1 - y_0, y_1 - y_0)| = 0$, so $y_1 = y_0$.
 \end{proof}
+
+\begin{rembox}[Where Coercivity is Used]\label{rem:where-coercivity}
+Coercivity enters twice, in two different roles. In Step 1 it is combined with Cauchy--Schwarz to give the lower bound $\|Ax\| \ge \beta\|x\|$, which makes $A$ one-to-one \emph{and} makes its range closed (Step 2): a map bounded below sends non-Cauchy sequences to non-Cauchy sequences. In Step 3 it is used on the diagonal, $B(y_0, y_0)$, to kill the orthogonal complement of the range. Neither step uses symmetry of $B$, which is the point of the theorem. The pattern ``one-to-one with a lower bound, closed range, dense range'' is the standard way to prove that a bounded operator on a Hilbert space is invertible.
+\end{rembox}
 
 \begin{rembox}[The Plan of the Proof]\label{rem:plan-proof}
 Wu's outline at the end of the lecture. By Theorem~\ref{thm:form-operator}, conditions (1)--(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the Riesz representation theorem, $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, \emph{$A$ is one-to-one and onto}, and the coercivity (4) is what will be used to prove it. Wu said Lax--Milgram is ``very useful in solving elliptic PDE''; examples are to come.
@@ -5622,6 +5657,273 @@ If $B$ satisfies (1)--(4) of Theorem~\ref{thm:lax-milgram} and $B(x, y) = \overl
 \]
 by coercivity and boundedness. So $|||\cdot|||$ and $\|\cdot\|$ are equivalent, they have the same Cauchy sequences and the same limits (Proposition~\ref{prop:equiv-same}), and $(H, ((\cdot,\cdot)))$ is a Hilbert space. Given $\ell \in H'$, $|\ell(x)| \le \|\ell\|\,\|x\| \le \|\ell\|\, \beta^{-1/2}\, |||x|||$, so $\ell$ is bounded for the new norm as well. The Riesz representation theorem in $(H, ((\cdot,\cdot)))$ gives a unique $y$ with $\ell(x) = ((x, y)) = B(x, y)$ for all $x$.
 \end{proof}
+
+% ============================================================================
+% SECTION: SOBOLEV SPACES AND WEAK DERIVATIVES (Lecture 11)
+% ============================================================================
+
+\section{Sobolev Spaces and Weak Derivatives}\label{sec:sobolev}
+
+\roadmark{Stage: maps}{Thread: completeness. Completing smooth functions in a norm that sees derivatives; the elements of the completion have derivatives only in a weak sense.}
+
+Lax--Milgram is applied to elliptic PDE in Sobolev spaces. Wu revisited them (they were first met as completions in Example~\ref{ex:sobolev}) to say what their elements are.
+
+\subsection{Sobolev Spaces as Completions}
+
+\begin{defbox}[{{The Sobolev Norm}}]\boxlabel{def:sobolev-norm}
+Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed, with interior $\Omega$, and let $X = C^\infty(\overline{\Omega})$. For $1 \le p < \infty$ and an integer $k \ge 0$ define
+\[
+|f|_{W^{k,p}} = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^p(\Omega)}, \qquad \partial^\alpha f = \partial_{x_1}^{\alpha_1} \cdots \partial_{x_n}^{\alpha_n} f, \quad \alpha = (\alpha_1, \ldots, \alpha_n).
+\]
+\laxref{\S5.1, example (g)}
+\end{defbox}
+
+\begin{proof}[$|\cdot|_{W^{k,p}}$ is a norm]
+(Left to the class in lecture.) Each term $f \mapsto \|\partial^\alpha f\|_{L^p}$ is non-negative, homogeneous, and subadditive, because $\partial^\alpha$ is linear and $\|\cdot\|_{L^p}$ is a norm (Minkowski); a finite sum of such functions has the same three properties. If $|f|_{W^{k,p}} = 0$, then in particular the term $\alpha = 0$ gives $\|f\|_{L^p} = 0$, so $f = 0$ a.e., and $f = 0$ everywhere because $f$ is continuous.
+\end{proof}
+
+\begin{defbox}[{{Sobolev Space as a Completion}}]\boxlabel{def:sobolev-completion}
+The \textbf{Sobolev space} $W^{k,p}(\Omega)$ is the completion (Definition~\ref{def:completion}) of $(X, |\cdot|_{W^{k,p}})$, with $X = C^\infty(\overline{\Omega})$ and the norm of Definition~\ref{def:sobolev-norm}.
+\laxref{\S5.1, example (g)}
+\end{defbox}
+
+\begin{rembox}\label{rem:sobolev}
+Every $\partial^\alpha f$ of a $C^\infty$ function is again $C^\infty$, and bounded on the compact set $\overline{\Omega}$, so every term is finite. Wu noted that $p = \infty$ can be treated as well. The two claims ``this is a norm'' and ``$X$ is not complete'' were left to the class; the first is proved after Definition~\ref{def:sobolev-norm}, and the example of \S\ref{sec:weak-examples} shows how completeness fails.
+\end{rembox}
+
+\begin{exbox}[{{$k = 0$: the Completion is $L^p$}}]\boxlabel{ex:k-0-completion-lp}
+For $k = 0$ the norm is $\|f\|_{L^p}$. Since smooth functions are dense in $L^p(\Omega)$ (Theorem~\ref{thm:density}), the completion of $C^\infty(\overline{\Omega})$ in this norm is $L^p(\Omega)$ (Proposition~\ref{prop:identify-completion}).
+\end{exbox}
+
+\begin{rembox}[{{What is in $W^{1,p}$?}}]\label{rem:what-w1-p}
+An element $f$ of the completion for $k = 1$ is the limit of a sequence $g_n \in C^\infty(\overline{\Omega})$ that is Cauchy in $|\cdot|_{W^{1,p}}$. That means $\{g_n\}$ is Cauchy in $L^p$, and so is each $\{\partial_{x_j} g_n\}$. Hence $g_n \to f$ in $L^p$ and $\partial_{x_j} g_n \to f_j$ in $L^p$ for some $f_j$. Heuristically $f_j$ should be ``$\partial_{x_j} f$'', but $f$ is only an $L^p$ function and has no derivative in the classical sense; difference quotients of an $L^p$ function make no sense. The question is: \emph{in what sense is $f_j = \partial_{x_j} f$?} The answer is integration by parts.
+\end{rembox}
+
+\subsection{Integration by Parts and Weak Derivatives}
+
+\begin{defbox}[Test Functions]\boxlabel{def:test-functions}
+Let $\Omega \subset \mathbb{R}^n$ be open. The \textbf{test functions} on $\Omega$ are the elements of $C_c^\infty(\Omega)$, the $C^\infty$ functions whose support is a compact subset of $\Omega$.
+\end{defbox}
+
+\begin{lembox}[Integration by Parts against a Test Function]\boxlabel{lem:ibp-test}
+Let $\Omega \subset \mathbb{R}^n$ be open, $g \in C^1(\Omega)$, and $\varphi \in C_c^\infty(\Omega)$ a test function (Definition~\ref{def:test-functions}). Then for each $j$,
+\[
+\int_\Omega \partial_{x_j} g(x)\, \varphi(x)\, dx = -\int_\Omega g(x)\, \partial_{x_j} \varphi(x)\, dx .
+\]
+\end{lembox}
+
+\begin{proof}
+Wu's argument is the divergence theorem, $\int_\Omega \operatorname{div} \vec{F}\, dx = \int_{\partial\Omega} \vec{F} \cdot \vec{n}\, dS$, applied to the vector field $\vec{F}$ whose only nonzero component is the $j$-th, $F_j = g\varphi$. Then $\operatorname{div}\vec F = \partial_{x_j}(g \varphi) = (\partial_{x_j} g)\varphi + g\, \partial_{x_j}\varphi$, and the boundary integral $\int_{\partial\Omega} n_j\, g \varphi\, dS$ vanishes because $\varphi = 0$ near $\partial\Omega$. In one dimension it is the usual integration by parts on an interval $[a, b]$ containing the support of $\varphi$: $\int_a^b g'\varphi = [g\varphi]_a^b - \int_a^b g \varphi' = -\int_a^b g\varphi'$, since $\varphi(a) = \varphi(b) = 0$.
+
+(The divergence theorem needs a smooth enough boundary; the identity itself does not. Extend $g\varphi$ and $g\,\partial_{x_j}\varphi$ by $0$ outside the support $K$ of $\varphi$; then $h = g\varphi$ is $C^1$ on $\mathbb{R}^n$ with compact support. By Fubini, integrate $\partial_{x_j} h$ first in $x_j$: for fixed other variables, $\int_{\mathbb{R}} \partial_{x_j} h\, dx_j = 0$ by the fundamental theorem of calculus, since $h$ vanishes outside a bounded interval. So $\int \partial_{x_j}(g\varphi) = 0$, which is the identity by the product rule.)
+\end{proof}
+
+\begin{propbox}[{{Limits in $W^{1,p}$ Satisfy Integration by Parts}}]\boxlabel{prop:limit-ibp}
+Let $g_n \in C^\infty(\overline{\Omega})$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$, $1 \le p < \infty$. Then for every $\varphi \in C_c^\infty(\Omega)$,
+\[
+\int_\Omega f_j(x)\, \varphi(x)\, dx = -\int_\Omega f(x)\, \partial_{x_j}\varphi(x)\, dx .
+\]
+\end{propbox}
+
+\begin{proof}
+By Lemma~\ref{lem:ibp-test}, $\int_\Omega \partial_{x_j} g_n\, \varphi = -\int_\Omega g_n\, \partial_{x_j}\varphi$ for every $n$. Let $n \to \infty$ on both sides. On the right, by H\"older's inequality (Theorem~\ref{thm:holder-fn}) with $\frac1p + \frac1{p'} = 1$,
+\[
+\Bigl| \int_\Omega (g_n - f)\, \partial_{x_j} \varphi\, dx \Bigr| \le \|g_n - f\|_{L^p}\, \|\partial_{x_j}\varphi\|_{L^{p'}} \to 0,
+\]
+since $\partial_{x_j}\varphi$ is continuous with compact support, hence in every $L^{p'}$. The same argument on the left, with $\partial_{x_j} g_n - f_j$ and $\varphi$, gives $\int \partial_{x_j} g_n\, \varphi \to \int f_j\, \varphi$.
+\end{proof}
+
+\begin{rembox}[{{H\"older, not Dominated Convergence}}]\label{rem:h-older-not-dominated-convergence}
+Wu asked the class which theorem justifies the limit. The dominated convergence theorem needs pointwise a.e.\ convergence, and $g_n \to f$ in $L^p$ does not give that (only a subsequence converges a.e.). H\"older's inequality needs only convergence in $L^p$ and a fixed partner in $L^{p'}$, which the test function supplies.
+\end{rembox}
+
+\begin{defbox}[Weak Derivative]\boxlabel{def:weak-derivative}
+Let $\Omega \subset \mathbb{R}^n$ be open, $1 \le p \le \infty$, and $f \in L^p(\Omega)$. If there is $f_j \in L^p(\Omega)$ such that
+\[
+\int_\Omega f_j(x)\, \varphi(x)\, dx = -\int_\Omega f(x)\, \partial_{x_j}\varphi(x)\, dx \qquad \text{for all } \varphi \in C_c^\infty(\Omega),
+\]
+then $f_j$ is a \textbf{weak} (or \textbf{distributional}) \textbf{derivative} of $f$, written $f_j = \partial_{x_j} f$. More generally, $g = \partial^\alpha f$ weakly if $\int_\Omega g\, \varphi = (-1)^{|\alpha|} \int_\Omega f\, \partial^\alpha \varphi$ for all $\varphi \in C_c^\infty(\Omega)$.
+\end{defbox}
+
+\begin{rembox}\label{rem:sobolev-2}
+A weak derivative need not exist; the definition only says what one is if it does (Wu added the words ``if there exists'' after the first example). Both sides make sense whenever $f, f_j \in L^p$, because $\varphi$ and $\partial_{x_j}\varphi$ lie in every $L^{p'}$. The general $\alpha$ version, with the sign $(-1)^{|\alpha|}$ from integrating by parts $|\alpha|$ times, is how Wu's ``we can continue to define second order or others'' is made precise. By Proposition~\ref{prop:limit-ibp}, for every element $f$ of the completion $W^{1,p}$ the limits $f_j$ are weak derivatives of $f$.
+\end{rembox}
+
+\begin{lembox}[Weak Derivatives are Unique]\boxlabel{lem:weak-unique}
+If $f_j$ and $\tilde f_j$ are both weak derivatives of $f$ in the $x_j$-direction, then $f_j = \tilde f_j$ a.e. If $f \in C^1(\Omega)$ and its classical derivative $\partial_{x_j} f$ lies in $L^p(\Omega)$, then the classical derivative is the weak derivative.
+\end{lembox}
+
+\begin{proof}
+(Not covered in lecture.) $h = f_j - \tilde f_j$ satisfies $\int_\Omega h\, \varphi = 0$ for all $\varphi \in C_c^\infty(\Omega)$. By the fundamental lemma of the calculus of variations (real analysis: a locally integrable function that integrates to $0$ against every test function vanishes a.e.), $h = 0$ a.e. For the second part, Lemma~\ref{lem:ibp-test} shows that the classical derivative satisfies the defining identity.
+\end{proof}
+
+\begin{rembox}[Weak and Classical Derivatives Agree Where $f$ is Smooth]\label{rem:weak-classical-derivatives-agree-where-f-smooth}
+A student asked whether the weak derivative always matches the pointwise derivative. Wu: where $f$ is $C^1$ in a region, take test functions supported in that region; there the weak derivative is the classical one (Lemma~\ref{lem:weak-unique}). Where $f$ has a singularity, there is no pointwise derivative to compare with, and a weak derivative is an element of $L^p$, defined only almost everywhere: it has no value at a single point.
+\end{rembox}
+
+\begin{defbox}[{{Sobolev Space via Weak Derivatives}}]\boxlabel{def:sobolev-weak}
+For $\Omega \subset \mathbb{R}^n$ open, an integer $k \ge 0$ and $1 \le p \le \infty$,
+\[
+W^{k,p}(\Omega) = \bigl\{ f \in L^p(\Omega) : \text{the weak derivatives } \partial^\alpha f \text{ exist and lie in } L^p(\Omega) \text{ for all } |\alpha| \le k \bigr\}.
+\]
+\end{defbox}
+
+\begin{rembox}\label{rem:sobolev-3}
+Wu used both descriptions of $W^{k,p}$: the completion of Definition~\ref{def:sobolev-completion}, and the weak-derivative space above. Proposition~\ref{prop:limit-ibp} shows that every element of the completion (for $k = 1$) has its weak first derivatives in $L^p$, so the completion sits inside the weak-derivative space. That the two coincide for reasonable $\Omega$ (every function with weak derivatives in $L^p$ is a $W^{k,p}$-limit of smooth functions) is the Meyers--Serrin theorem, which was not covered.
+\end{rembox}
+
+\subsection{Examples}\label{sec:weak-examples}
+
+\begin{exbox}[{{$|x|$ has Weak Derivative $\operatorname{sgn} x$}}]\boxlabel{ex:abs-weak}
+Let $f(x) = |x|$ on $\mathbb{R}$. Then $f$ has the weak derivative
+\[
+g(x) = \begin{cases} 1, & x > 0, \\ -1, & x < 0, \end{cases}
+\]
+in the sense that $\int f\varphi' = -\int g\varphi$ for every $\varphi \in C_c^\infty(\mathbb{R})$; the value of $g$ at $0$ is irrelevant. In particular $|x| \in W^{1,p}(-1, 1)$ for every $p$.
+\end{exbox}
+
+\begin{proof}
+Wu's computation. Split at $0$ and integrate by parts on each half-line:
+\begin{align*}
+\int_{-\infty}^{\infty} |x|\, \varphi'(x)\, dx &= \int_0^\infty x\, \varphi'(x)\, dx + \int_{-\infty}^0 (-x)\, \varphi'(x)\, dx \\
+&= \bigl[ x\varphi(x) \bigr]_0^\infty - \int_0^\infty \varphi(x)\, dx - \bigl[ x\varphi(x) \bigr]_{-\infty}^0 + \int_{-\infty}^0 \varphi(x)\, dx \\
+&= -\int_0^\infty \varphi(x)\, dx + \int_{-\infty}^0 \varphi(x)\, dx = -\int_{-\infty}^\infty g(x)\, \varphi(x)\, dx .
+\end{align*}
+The boundary terms vanish: at $0$ because $x\varphi(x) = 0$ there, and at $\pm\infty$ because $\varphi$ has compact support. Changing $g$ on the null set $\{0\}$ does not change any integral.
+\end{proof}
+
+\begin{exbox}[{{$\operatorname{sgn} x$ has No Weak Derivative}}]\boxlabel{ex:sgn-no-weak}
+Let $f(x) = 1$ for $x > 0$ and $f(x) = -1$ for $x < 0$. Then $\int f\varphi' = -2\varphi(0)$ for every $\varphi \in C_c^\infty(\mathbb{R})$, and there is no locally integrable $g$ with $\int f\varphi' = -\int g\varphi$ for all $\varphi$. So $f$ has no weak derivative, in any $L^p$.
+\end{exbox}
+
+\begin{proof}
+Wu's computation: $\int_{-\infty}^\infty f\varphi' = \int_0^\infty \varphi' - \int_{-\infty}^0 \varphi' = \bigl[\varphi\bigr]_0^\infty - \bigl[\varphi\bigr]_{-\infty}^0 = -\varphi(0) - \varphi(0) = -2\varphi(0)$.
+
+(The non-existence was left to the class.) Suppose $g$ is locally integrable with $\int g\varphi = 2\varphi(0)$ for all test functions $\varphi$. Let $\psi(x) = e^{1 - 1/(1 - x^2)}$ for $|x| < 1$ and $\psi(x) = 0$ otherwise; this is a standard $C_c^\infty$ function with $0 \le \psi \le 1$ and $\psi(0) = 1$. For $0 < \varepsilon \le 1$ let $\varphi_\varepsilon(x) = \psi(x/\varepsilon)$, supported in $[-\varepsilon, \varepsilon]$ with $\varphi_\varepsilon(0) = 1$. Then
+\[
+2 = 2\varphi_\varepsilon(0) = \int g\, \varphi_\varepsilon \le \int_{-\varepsilon}^{\varepsilon} |g(x)|\, dx \xrightarrow[\varepsilon \to 0]{} 0,
+\]
+the limit by the dominated convergence theorem applied to $|g|\chi_{[-\varepsilon, \varepsilon]} \le |g|\chi_{[-1,1]} \in L^1$. This is a contradiction.
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.15, >=stealth]
+    \begin{scope}
+        \draw[->] (-1.8,0) -- (1.9,0) node[right] {$x$};
+        \draw[->] (0,-1.3) -- (0,1.8);
+        \draw[thick] (-1.5,1.5) -- (0,0) -- (1.5,1.5);
+        \node at (0.95,1.65) {$|x|$};
+        \draw[thick, red!75!black] (0.05,0.6) -- (1.5,0.6);
+        \draw[thick, red!75!black] (-1.5,-0.6) -- (-0.05,-0.6);
+        \node[red!75!black, right] at (1.5,0.6) {$1$};
+        \node[red!75!black, left] at (-1.5,-0.6) {$-1$};
+        \node[below] at (0,-1.35) {weak derivative $\operatorname{sgn} x \in L^p$};
+    \end{scope}
+    \begin{scope}[xshift=5.6cm]
+        \draw[->] (-1.8,0) -- (1.9,0) node[right] {$x$};
+        \draw[->] (0,-1.3) -- (0,1.8);
+        \draw[thick] (0.05,0.6) -- (1.5,0.6);
+        \draw[thick] (-1.5,-0.6) -- (-0.05,-0.6);
+        \node at (1.1,0.85) {$\operatorname{sgn} x$};
+        \draw[thick, red!75!black, domain=-1.5:1.5, samples=80] plot (\x, {1.6*exp(-30*\x*\x)});
+        \node[red!75!black, right] at (0.25,1.45) {``$2\delta_0$''};
+        \node[below] at (0,-1.35) {no weak derivative; $f' = 2\delta_0$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+The board pictures. A corner is harmless: $|x|$ has the bounded weak derivative $\operatorname{sgn} x$. A jump is not: the ``derivative'' of $\operatorname{sgn} x$ is concentrated at a single point with total mass $2$, which no function can do.
+
+\begin{rembox}[Distributions]\label{rem:distributions}
+Wu: what $\operatorname{sgn} x$ does have is a \emph{distributional} derivative, $f' = 2\delta_0$, twice the delta ``function'' --- zero away from the origin, with $\int (2\delta_0)\varphi = 2\varphi(0)$. A distribution is a linear functional on the test functions $C_c^\infty$, continuous in a suitable sense; $\delta_0(\varphi) = \varphi(0)$ is one, and every $L^p$ function defines one by $\varphi \mapsto \int f\varphi$. In this language every $L^p$ function has a distributional derivative, and a weak derivative is a distributional derivative that happens to be an $L^p$ function. Distributions are to come later in the course. (A student asked whether the name has to do with probability distributions: it does not.)
+\end{rembox}
+
+\subsection{The Space $H^1_0$ and the Poincar\'e Inequality}
+
+\begin{defbox}[{{The $W^{1,2}$ Norm on Test Functions}}]\boxlabel{def:w12-norm}
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open. On $C_c^\infty(\Omega)$ put
+\[
+\|f\|_{W^{1,2}(\Omega)} = \Bigl( \|f\|_{L^2(\Omega)}^2 + \|\nabla f\|_{L^2(\Omega)}^2 \Bigr)^{1/2}, \qquad \|\nabla f\|_{L^2}^2 = \sum_{j=1}^n \|\partial_{x_j} f\|_{L^2}^2 .
+\]
+\end{defbox}
+
+\begin{defbox}[{{The Space $H^1_0(\Omega)$}}]\boxlabel{def:H10}
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open. $H^1_0(\Omega)$ is the completion of $C_c^\infty(\Omega)$ in the norm $\|\cdot\|_{W^{1,2}(\Omega)}$ of Definition~\ref{def:w12-norm}.
+\end{defbox}
+
+\begin{propbox}[{{$H^1_0(\Omega)$ is a Hilbert Space}}]\boxlabel{prop:H10-hilbert}
+\begin{enumerate}[label=(\alph*)]
+    \item The norm of Definition~\ref{def:w12-norm} is equivalent to the summed norm $\|f\|_{L^2} + \sum_j \|\partial_{x_j} f\|_{L^2}$ of Definition~\ref{def:sobolev-norm}.
+    \item $H^1_0(\Omega)$ is a Hilbert space.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+(Stated in lecture; (b) was left to the class.) (a) For non-negative numbers $t_0, \ldots, t_n$, $\bigl(\sum t_i^2\bigr)^{1/2} \le \sum t_i \le \sqrt{n+1}\,\bigl(\sum t_i^2\bigr)^{1/2}$: the first because $\bigl(\sum t_i\bigr)^2 \ge \sum t_i^2$, the second by Cauchy--Schwarz in $\mathbb{R}^{n+1}$ applied to $(t_i)$ and $(1, \ldots, 1)$. Apply this with $t_0 = \|f\|_{L^2}$, $t_j = \|\partial_{x_j} f\|_{L^2}$.
+
+(b) On $C_c^\infty(\Omega)$ the norm comes from the inner product $(f, g) = \int_\Omega f\bar g + \sum_j \int_\Omega \partial_{x_j} f\, \overline{\partial_{x_j} g}$ (the case $k = 1$ of Example~\ref{ex:sobolev}), so it satisfies the parallelogram law. The completion is a Banach space (Theorem~\ref{thm:completion-normed}), and its norm is the limit of norms of representatives: $\|[\{f_n\}]\| = \lim_n \|f_n\|$. For $x = [\{f_n\}]$, $y = [\{g_n\}]$, the parallelogram law $\|f_n + g_n\|^2 + \|f_n - g_n\|^2 = 2\|f_n\|^2 + 2\|g_n\|^2$ holds for each $n$ and passes to the limit, so it holds in the completion. By the Jordan--von Neumann theorem (Theorem~\ref{thm:jvn}) the norm of the completion comes from an inner product; being complete, $H^1_0(\Omega)$ is a Hilbert space.
+\end{proof}
+
+\begin{rembox}\label{rem:sobolev-4}
+Every element of $H^1_0(\Omega)$ is a limit of functions that vanish near the boundary, so it ``is zero on the boundary in some sense'' (Wu) --- this is what distinguishes $H^1_0$ from the completion of $C^\infty(\overline\Omega)$, and it is the boundary condition of a Dirichlet problem built into the space. Making ``zero on the boundary'' precise (trace theorems) was not covered.
+\end{rembox}
+
+\begin{thmbox}[Poincar\'e Inequality]\boxlabel{thm:poincare}
+Let $\Omega \subset \mathbb{R}^n$ be bounded and open. There is a constant $C > 0$, depending only on $\Omega$, such that
+\[
+\int_\Omega |f(x)|^2\, dx \le C^2 \int_\Omega |\nabla f(x)|^2\, dx \qquad \text{for all } f \in C_c^\infty(\Omega).
+\]
+One can take $C = 2L$ for any $L$ with $\Omega \subset (-L, L)^n$.
+\end{thmbox}
+
+\begin{proof}
+\textbf{Step 1: put $\Omega$ in a box and extend by zero.} Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; because the support of $f$ is a compact subset of $\Omega$, the extension is $C^\infty$ on $\mathbb{R}^n$ and vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
+
+\textbf{Step 2: the fundamental theorem of calculus in $x_1$.} For $x = (x_1, x') \in [-L, L]^n$, $x' = (x_2, \ldots, x_n)$,
+\[
+f(x_1, x') = f(-L, x') + \int_{-L}^{x_1} \partial_{x_1} f(y_1, x')\, dy_1 = \int_{-L}^{x_1} \partial_{x_1} f(y_1, x')\, dy_1 ,
+\]
+since $f(-L, x') = 0$. Because $x_1 \le L$,
+\[
+|f(x_1, x')| \le \int_{-L}^{L} |\partial_{x_1} f(y_1, x')|\, dy_1 \le \Bigl( \int_{-L}^{L} |\partial_{x_1} f(y_1, x')|^2\, dy_1 \Bigr)^{1/2} \Bigl( \int_{-L}^{L} 1\, dy_1 \Bigr)^{1/2},
+\]
+by H\"older (Cauchy--Schwarz) with $p = p' = 2$. Squaring,
+\[
+|f(x_1, x')|^2 \le 2L \int_{-L}^{L} |\partial_{x_1} f(y_1, x')|^2\, dy_1 \qquad \text{for all } x_1 \in [-L, L].
+\]
+
+\textbf{Step 3: integrate over the box.} Integrate both sides over $x \in [-L, L]^n$. The right side does not depend on $x_1$, so integrating in $x_1$ multiplies it by $2L$; the remaining integrals in $x'$ combine with the $y_1$-integral into an integral over the box (Fubini):
+\[
+\int_{[-L,L]^n} |f(x)|^2\, dx \le (2L) \cdot 2L \int_{[-L,L]^n} |\partial_{x_1} f(x)|^2\, dx .
+\]
+Since $f = 0$ outside $\Omega$ and $|\partial_{x_1} f|^2 \le |\nabla f|^2$,
+\[
+\int_\Omega |f(x)|^2\, dx \le (2L)^2 \int_\Omega |\nabla f(x)|^2\, dx . \qedhere
+\]
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=2.0, >=stealth]
+    \draw[thick] (-1.5,-1.1) rectangle (1.5,1.1);
+    \draw[thick, fill=gray!12] plot[smooth cycle, tension=0.8] coordinates {(-0.9,0.2) (-0.4,0.75) (0.6,0.6) (1.0,-0.1) (0.4,-0.7) (-0.6,-0.5)};
+    \node at (-0.15,-0.25) {$\Omega$};
+    \fill (0.45,0.15) circle (1.2pt) node[below] {$x$};
+    \draw[->, red!75!black, thick] (-1.5,0.15) -- (0.42,0.15);
+    \fill[red!75!black] (-1.5,0.15) circle (1.2pt);
+    \node[red!75!black, left] at (-1.5,0.15) {$(-L, x')$};
+    \node[red!75!black, anchor=south west, font=\scriptsize] at (-1.48,0.2) {$\partial_{x_1} f$};
+    \node[below] at (0,-1.1) {$[-L, L]^n$, \ $f = 0$ outside $\Omega$};
+\end{tikzpicture}
+\end{center}
+The proof in one picture: $f$ vanishes on the left face of the box, so its value at $x$ is the integral of $\partial_{x_1} f$ along the horizontal segment that reaches $x$, and Cauchy--Schwarz turns the length $2L$ of that segment into the constant. The constant depends only on the width of $\Omega$ in one direction. ``If the function is zero somewhere, it can be controlled by its gradient.''
+
+\begin{corbox}[{{Poincar\'e on $H^1_0$}}]\boxlabel{cor:poincare-H10}
+The Poincar\'e inequality $\|f\|_{L^2(\Omega)} \le C\, \|\nabla f\|_{L^2(\Omega)}$ holds for all $f \in H^1_0(\Omega)$.
+\end{corbox}
+
+\begin{proof}
+Next lecture (by approximating $f$ with a Cauchy sequence in $C_c^\infty(\Omega)$).
+\end{proof}
+
 
 % ============================================================================
 % SECTION 29: R^n, C^m AND L^p (EXAMPLES REVISITED)
@@ -6360,6 +6662,8 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:riesz-rep} Riesz representation & \S6.3, Thm~4 & Lax--Milgram (Thm~6) not covered. \\
 \ref{sec:onb}--\ref{sec:onb-existence} Orthonormal bases & \S6.4; \S5.1 (separability) & Isometries of $H$ (Thm~10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise~10 (HW5). \\
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
+\ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
+\ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

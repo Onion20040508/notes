@@ -173,10 +173,10 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 *Uses:* [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|§28.2]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
 
 > [!remark]- Connections
-> - Every orthonormal set in a separable Hilbert space is countable, not just this one: [[§36 Position Eigenstates and Continuous Resolutions#^prop-36-1|§36.1]].
+> - Every orthonormal set in a separable Hilbert space is countable, not just this one: [[§37 Position Eigenstates and Continuous Resolutions#^prop-37-1|§37.1]].
 
 > [!remark] Remark
-> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§36 Position Eigenstates and Continuous Resolutions#^prop-36-1|§36.1]]: in a separable Hilbert space *every* orthonormal set is countable, not just the one constructed here.
+> The dense set $D$ is used twice, for different purposes: its span supplies the orthonormal vectors, and its density supplies the approximating sequence in Step 3. Only finite linear combinations appear anywhere — the limit is taken in the inner product, not in the expansion. Compare Proposition [[§37 Position Eigenstates and Continuous Resolutions#^prop-37-1|§37.1]]: in a separable Hilbert space *every* orthonormal set is countable, not just the one constructed here.
 
 ^rem-28-2
 

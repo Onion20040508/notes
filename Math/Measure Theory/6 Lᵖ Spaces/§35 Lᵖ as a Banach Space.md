@@ -402,7 +402,7 @@ This follows by induction on $m$ from the two-function case ([[Minkowski's Inequ
 *Uses:* [[§35 Lᵖ as a Banach Space#^def-35-4|Def. §35.4]], [[§35 Lᵖ as a Banach Space#^def-35-5|Def. §35.5]], [[§3 Countability of Rationals and Unions#^cor-3-2|§3.2]], [[Countable Union of Countable Sets is Countable|§3.1]], [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]], [[§35 Lᵖ as a Banach Space#^thm-35-12|§35.12]]
 
 > [!remark]- Connections
-> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§29 Sequence and Function Spaces#^prop-29-4|556 Prop. §29.4]]; the case $L^2(\mathbb{R}^n)$ is [[§36 Position Eigenstates and Continuous Resolutions#^thm-36-2|556 Thm. §36.2]].
+> - Same result in 556, proved with rational rectangles in ℝⁿ: [[§29 Sequence and Function Spaces#^prop-29-4|556 Prop. §29.4]]; the case $L^2(\mathbb{R}^n)$ is [[§37 Position Eigenstates and Continuous Resolutions#^thm-37-2|556 Thm. §37.2]].
 
 > [!theorem] Theorem §35.14: $L^\infty$ is Not Separable
 > $L^\infty(E)$ is not separable (when $E$ has positive measure).

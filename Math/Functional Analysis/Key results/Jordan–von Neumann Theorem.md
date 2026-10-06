@@ -22,6 +22,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|Corollary §24.3: Only p = 2 Gives an Inner Product]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-4|Proposition §33.4: H¹_0(Omega) is a Hilbert Space]]
 
 ## Connections
 - **How.** Define (x, y) by polarization. The parallelogram law gives a midpoint identity, hence additivity, and additivity gives ℚ-homogeneity by algebra. Continuity of the norm and density of ℚ ([[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]) extend this to ℝ ([[Functional Analysis Problem-Solving Techniques#^rem-t10|Technique 10]]). In the complex case the real form R is an inner product on the underlying real space, and (x, y) = R(x, y) + iR(x, iy). This is the same reduction as in the [[Complex Hahn–Banach Theorem]].

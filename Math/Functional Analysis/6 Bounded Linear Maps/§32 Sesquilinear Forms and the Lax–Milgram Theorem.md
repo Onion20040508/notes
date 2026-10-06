@@ -5,7 +5,7 @@ chapter: 6
 section: 32
 tags: [functional-analysis, math556]
 ---
-← [[§31 Dual Spaces]] · ↑ [[· 6 Bounded Linear Maps]] · [[§33 ℝⁿ, Cᵐ and Lᵖ]] →
+← [[§31 Dual Spaces]] · ↑ [[· 6 Bounded Linear Maps]] · [[§33 Sobolev Spaces and Weak Derivatives]] →
 
 *Stage: maps — Thread: functionals. Bounded sesquilinear forms are bounded operators in disguise; Lax–Milgram extends the Riesz representation to forms that are not symmetric.*
 
@@ -106,25 +106,60 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 ^thm-32-2
 
 > [!proof]+ Proof
-> Next lecture.
+> *(Lecture 11.)* On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+>
+> **Step 1: $A$ is one-to-one, with a lower bound.** By coercivity and Cauchy–Schwarz, for every $x \in H$,
+>
+> $$ \beta\, \|x\|^2 \le |B(x, x)| = |(x, Ax)| \le \|x\|\, \|Ax\| . $$
+>
+> For $x \neq 0$ divide by $\|x\|$; for $x = 0$ the next inequality is trivial. Hence
+>
+> $$ \|Ax\| \ge \beta\, \|x\| \qquad \text{for all } x \in H . \tag{LM} $$
+>
+> In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. (Wu: “not only $A$ is one-to-one, but $A$ has a lower bound like that.”)
+>
+> **Step 2: the range of $A$ is closed.** Let $R(A) = \{Ax : x \in H\}$. It is a linear subspace, since $a_1 A x_1 + a_2 A x_2 = A(a_1 x_1 + a_2 x_2)$. Let $\{Ax_n\}$ be a sequence in $R(A)$ converging to some $z \in H$; we show $z \in R(A)$. A convergent sequence is Cauchy, and by (LM) and linearity,
+>
+> $$ \|x_n - x_m\| \le \frac{1}{\beta}\, \|A x_n - A x_m\| , $$
+>
+> so $\{x_n\}$ is Cauchy in $H$. Since $H$ is complete, $x_n \to x_0$ for some $x_0 \in H$. Since $A$ is bounded, it is continuous ([[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2]]), so $A x_n \to A x_0$. By uniqueness of limits, $z = A x_0 \in R(A)$. Hence $R(A)$ is closed.
+>
+> **Step 3: the range of $A$ is all of $H$.** $R(A)$ is a closed linear subspace of the Hilbert space $H$, so $H = R(A) \oplus R(A)^\perp$ by [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4]]. We show $R(A)^\perp = \{0\}$. Let $y_0 \in R(A)^\perp$. Then $(y_0, Ax) = 0$ for all $x \in H$, and $(y_0, Ax) = B(y_0, x)$, so
+>
+> $$ B(y_0, x) = 0 \qquad \text{for all } x \in H . $$
+>
+> In particular $B(y_0, y_0) = 0$. By coercivity, $\beta\|y_0\|^2 \le |B(y_0, y_0)| = 0$, so $y_0 = 0$. Hence $R(A)^\perp = \{0\}$ and $R(A) = H$: $A$ is onto.
+>
+> **Step 4: conclusion.** *Existence.* Let $\ell \in H'$, and let $z_0$ be its Riesz representer, $\ell(x) = (x, z_0)$. Since $A$ is onto, there is $y_0$ with $A y_0 = z_0$, and then
+>
+> $$ \ell(x) = (x, A y_0) = B(x, y_0) \qquad \text{for all } x \in H . $$
+>
+> *Uniqueness.* If also $\ell(x) = B(x, y_1)$ for all $x$, then $B(x, y_1 - y_0) = 0$ for all $x$, by conjugate-linearity in the second slot. Taking $x = y_1 - y_0$, coercivity gives $\beta\|y_1 - y_0\|^2 \le |B(y_1 - y_0, y_1 - y_0)| = 0$, so $y_1 = y_0$.
 
 ^pf-32-2
+
+*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4]], [[§23 Cauchy–Schwarz and the Induced Norm|Cauchy–Schwarz (§23)]]
+
+> [!remark] Remark: Where Coercivity is Used
+> Coercivity enters twice, in two different roles. In Step 1 it is combined with Cauchy–Schwarz to give the lower bound $\|Ax\| \ge \beta\|x\|$, which makes $A$ one-to-one *and* makes its range closed (Step 2): a map bounded below sends non-Cauchy sequences to non-Cauchy sequences. In Step 3 it is used on the diagonal, $B(y_0, y_0)$, to kill the orthogonal complement of the range. Neither step uses symmetry of $B$, which is the point of the theorem. The pattern “one-to-one with a lower bound, closed range, dense range” is the standard way to prove that a bounded operator on a Hilbert space is invertible.
+
+^rem-32-1
 
 > [!remark] Remark: The Plan of the Proof
 > Wu's outline at the end of the lecture. By Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], conditions (1)–(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, *$A$ is one-to-one and onto*, and the coercivity (4) is what will be used to prove it. Wu said Lax–Milgram is “very useful in solving elliptic PDE”; examples are to come.
 
-^rem-32-1
+^rem-32-2
 
 > [!remark] Remark: What is New in Lax–Milgram
 > Wu's question: since the conclusion looks like the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], why is a new theorem needed? Compare $B$ with an inner product. Conditions (1)–(2) are the linearity of an inner product, (3) is the [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] bound (with $M = 1$ for an inner product), and (4) is a quantitative form of $(x, x) = 0 \Rightarrow x = 0$. What is missing is the symmetry $B(x, y) = \overline{B(y, x)}$. When $B$ is symmetric there is nothing new: $B$ is itself an inner product (up to sign) and Lax–Milgram is the Riesz theorem for it. This is made precise below. What is new in Lax–Milgram is that it does not assume symmetry.
 
-^rem-32-2
+^rem-32-3
 
 > [!remark]- Connections
 > - Used in Electromagnetism: existence of the Dirichlet Green function of a bounded region — [[§C7.3 Green Functions for Poisson’s Equation#^rem-c7-3-1|EM ★ Remark: Existence of the Dirichlet Green function]].
 
 ![[m556-23-2.svg]]
-*What is new in [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]], for $B(x,y) = (x, Ay)$ on $\mathbb{R}^2$ with the non-symmetric $A$ shown, for which $\beta = 1$ and $M = \|A\| = 3$. (a) The curve $\{B(x,x) = 1\}$ (red) is the ellipse $2x_1^2 + x_2^2 = 1$ of the symmetric part $\tfrac12(A + A^{\mathsf T})$ — it cannot see the antisymmetric part of $A$ — and boundedness and coercivity trap it in the shaded annulus between the circles of radius $1/\sqrt{M}$ (dashed) and $1/\sqrt{\beta}$ (blue, the unit circle $(x,x) = 1$), which it touches at $\pm e_2$, where $B(x,x) = \beta\|x\|^2$. (b) The arrow $\tfrac14 Ax$ (red) drawn at each unit vector $x$ (blue dots). $A$ turns every $x$ clockwise, so it is not symmetric, but never by $90^\circ$ or more: $(x, Ax) = B(x,x) \ge \beta\|x\|^2 > 0$, so each arrow leaves the disc across the tangent line at $x$ (dashed at $x = e_2$, where the angle is $63^\circ$; the largest angle is about $65^\circ$). This is the property behind $A$ being one-to-one and onto ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^rem-32-1|plan of the proof]]). For a symmetric $B$ the red ellipse is the unit sphere of the inner product $\pm B$ and the Riesz theorem suffices ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]). (Drawn for these notes in the vault; not in the course tex.)*
+*What is new in [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]], for $B(x,y) = (x, Ay)$ on $\mathbb{R}^2$ with the non-symmetric $A$ shown, for which $\beta = 1$ and $M = \|A\| = 3$. (a) The curve $\{B(x,x) = 1\}$ (red) is the ellipse $2x_1^2 + x_2^2 = 1$ of the symmetric part $\tfrac12(A + A^{\mathsf T})$ — it cannot see the antisymmetric part of $A$ — and boundedness and coercivity trap it in the shaded annulus between the circles of radius $1/\sqrt{M}$ (dashed) and $1/\sqrt{\beta}$ (blue, the unit circle $(x,x) = 1$), which it touches at $\pm e_2$, where $B(x,x) = \beta\|x\|^2$. (b) The arrow $\tfrac14 Ax$ (red) drawn at each unit vector $x$ (blue dots). $A$ turns every $x$ clockwise, so it is not symmetric, but never by $90^\circ$ or more: $(x, Ax) = B(x,x) \ge \beta\|x\|^2 > 0$, so each arrow leaves the disc across the tangent line at $x$ (dashed at $x = e_2$, where the angle is $63^\circ$; the largest angle is about $65^\circ$). This is the property behind $A$ being one-to-one and onto ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^rem-32-2|plan of the proof]]). For a symmetric $B$ the red ellipse is the unit sphere of the inner product $\pm B$ and the Riesz theorem suffices ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]). (Drawn for these notes in the vault; not in the course tex.)*
 
 > [!theorem] Lemma §32.3: A Symmetric Coercive Form Has a Sign
 > Let $B$ satisfy (1)–(4) of Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] and $B(x, y) = \overline{B(y, x)}$ for all $x, y$. Then either $B(x, x) \ge \beta\|x\|^2$ for all $x$, or $B(x, x) \le -\beta\|x\|^2$ for all $x$.

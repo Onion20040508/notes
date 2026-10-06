@@ -137,7 +137,7 @@ tags: [topology, math590]
 *Uses:* [[§5 Subspace Topology#^def-5-1|Def. §5.1]], [[§2 Basis for a Topology#^def-2-1|Def. §2.1]], [[§14 Counting Infinite Sets#^cor-14-6|250 §14.6]]
 
 > [!remark]- Connections
-> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§36 Position Eigenstates and Continuous Resolutions#^prop-36-1|556 Prop. §36.1]]).
+> - The same counting in normed spaces: orthonormal vectors are at mutual distance √2, so an orthonormal set in a separable space is countable ([[§37 Position Eigenstates and Continuous Resolutions#^prop-37-1|556 Prop. §37.1]]).
 > - The same argument shows L^∞ is not separable: the indicators of (0, t) form an uncountable family at mutual distance 1, [[§35 Lᵖ as a Banach Space#^thm-35-14|551 Thm. §35.14]].
 
 ## Inheritance Properties

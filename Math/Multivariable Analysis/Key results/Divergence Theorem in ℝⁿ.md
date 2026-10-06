@@ -23,6 +23,9 @@ tags: [multivariable-analysis, hub]
 ## Used in (Multivariable Analysis)
 - [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|Theorem §28.2: Green's First Identity]]
 
+## Used in (Functional Analysis)
+- [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-1|Lemma §33.1: Integration by Parts against a Test Function]]
+
 ## Connections
 - **Proof idea.** Prove ∫ u_k n_k dS = ∫ ∂u_k/∂x_k dV for each k. Write D as the region between two graphs in x_k, apply [[§23 Fubini's Theorem#^thm-23-2|Fubini]] and then the [[Fundamental Theorem of Calculus]] in x_k. On the graphs n_k dS = ±dx′, using the graph area element of [[Surface Area via the Gram Matrix]] (§18.1, cited ahead of its section), and the lateral sides contribute nothing.
 - **Special cases.** n = 1 is the [[Fundamental Theorem of Calculus]], n = 2 is [[§27 Line Integrals and Green's Theorem#^thm-27-2|Theorem §27.2]] (the flux form of [[Green's Theorem]]), and n = 3 with parametrized surfaces is [[Divergence Theorem in ℝ³]]. In forms language it is the top-degree case (Ω of dimension n) of the [[Generalized Stokes' Theorem]].

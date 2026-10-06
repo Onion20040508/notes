@@ -74,7 +74,7 @@ where $g(t)$ is large during a short interval $t_0 - \tau < t < t_0 + \tau$, $\t
 
 > [!remark]- Connections
 > - The rigorous object behind (9)–(10) is a measure, not a function: the Dirac measure $\mu_{t_0}$ ([[§12 Borel Sets and Measure Spaces#^ex-12-2|551 Ex. §12.2]]), with $\mu_{t_0}(E) = 1$ if $t_0 \in E$ and $0$ otherwise. Integrating against it gives $\int f\,d\mu_{t_0} = f(t_0)$, which is [[§30 Impulse Functions#^thm-30-3|Theorem §30.3]], and $\mathcal{L}\{\delta(t - t_0)\} = \int e^{-st}\,d\mu_{t_0} = e^{-st_0}$, which is [[§30 Impulse Functions#^thm-30-2|Theorem §30.2]].
-> - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§36 Position Eigenstates and Continuous Resolutions#^prop-36-4|556 Prop. §36.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
+> - That no function, even in $L^2$, can do the job of $\delta$: point evaluation $\varphi \mapsto \varphi(x_0)$ is not given by an inner product with any $\psi \in L^2(\mathbb{R})$, [[§37 Position Eigenstates and Continuous Resolutions#^prop-37-4|556 Prop. §37.4]]; the "wavefunction" $\delta(x - x_0)$ of a position eigenstate is the same idealization.
 
 > [!definition] Definition §30.4: Transform and Integrals of δ
 > For $t_0 > 0$, the Laplace transform of $\delta(t - t_0)$ is defined as the limit of the transforms of the pulses:

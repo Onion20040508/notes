@@ -379,7 +379,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *Uses:* [[§22 Definition and Examples#^ex-22-3|Ex. §22.3]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]
 
 > [!remark]- Connections
-> - The parity operator in the quantum mechanics chapter: [[§35 The Completeness Relation#^ex-35-1|Ex. §35.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
+> - The parity operator in the quantum mechanics chapter: [[§36 The Completeness Relation#^ex-36-1|Ex. §36.1]]; the method: [[Functional Analysis Problem-Solving Techniques#^ex-t14|Technique 14]].
 > - Computational version: even and odd functions on a symmetric interval, [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-1|341 Def. §11.1]]; the split $f = f_e + f_o$ of Step 1, [[§11 Even and Odd Functions; Half-Range Expansions#^prop-11-1|341 Prop. §11.1]]; the vanishing integral of an odd function used in Step 2, [[§11 Even and Odd Functions; Half-Range Expansions#^thm-11-2|341 Thm. §11.2]]. There the two parts give the cosine and sine series.
 
 ![[m556-18-3.svg]]

@@ -22,3 +22,7 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Honors thesis: private, never pushed to the public repo
+Physics/Honors Thesis/
+attachments/physics/ph-thesis-*

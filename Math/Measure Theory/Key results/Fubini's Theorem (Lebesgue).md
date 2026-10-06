@@ -21,6 +21,10 @@ tags: [measure-theory, hub]
 ## Used in (Measure Theory)
 - [[§30 Differentiating the Integral#^thm-30-3|Theorem §30.3: Linear Maps Preserve Null Sets]]
 
+## Used in (Functional Analysis)
+- [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-1|Lemma §33.1: Integration by Parts against a Test Function]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-5|Theorem §33.5: Poincaré Inequality]]
+
 ## Connections
 - **Proof idea.** Apply [[Tonelli's Theorem]] to |f| to get a.e. integrable slices. Then apply it to f⁺ and f⁻ separately and subtract, which is legitimate because both iterated integrals are finite ([[§16 Limits and Positive Parts of Measurable Functions#^prop-16-5|§16.5]], [[§22 The General Lebesgue Integral#^thm-22-2|linearity]]).
 - **Riemann vs Lebesgue.** The MATH 452 [[Fubini's Theorem]] (452 §15.8) is for continuous f on a rectangle, extended to [[§23 Fubini's Theorem#^thm-23-2|Type I regions]], and is proved with Riemann sums and uniform continuity. Here f is only integrable on ℝᵖ × ℝ^q, the slices are integrable only for a.e. x, and Jordan content is replaced by Lebesgue measure.

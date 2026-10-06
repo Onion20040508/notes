@@ -6,7 +6,7 @@ tags: ["math556", "workhorse"]
 ---
 The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first function space of the course. With the supremum norm $\|f\|_\infty = \max_{[a,b]} |f|$ it is a Banach space; with the $L^p$ norm $\|f\|_p = \bigl(\int_a^b |f|^p\bigr)^{1/p}$, $1 \le p < \infty$, it is a normed space that is not complete, and its completion is $L^p[a,b]$. The two norms are not equivalent, so the one set gives two different normed spaces: the norm decides, not the set. It is the example to keep in mind for what the abstract construction of the completion does in practice, and $C^2[a,b]$ with a $C^1$ norm is a second instance of the same phenomenon. The completion for $p = 2$ is in [[L² function spaces]]. Its uses in MATH 556:
 
-*Revisit sections:* [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§29 Sequence and Function Spaces|Chapter 5]] · [[§33 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]]
+*Revisit sections:* [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§29 Sequence and Function Spaces|Chapter 5]] · [[§34 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]]
 
 - $C[a,b]$ with the supremum norm is a Banach space ([[§12 Completeness#^thm-12-1|§12]])
 - Unlike for $\ell^p$, the candidate limit must be shown to lie in the space ([[§12 Completeness#^rem-12-1|§12]])

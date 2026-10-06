@@ -2,10 +2,10 @@
 type: section
 subject: "[[Functional Analysis]]"
 chapter: 6
-section: 33
+section: 34
 tags: [functional-analysis, math556]
 ---
-← [[§32 Sesquilinear Forms and the Lax–Milgram Theorem]] · ↑ [[· 6 Bounded Linear Maps]] · [[§34 Bras, Kets, and the Riesz Map]] →
+← [[§33 Sobolev Spaces and Weak Derivatives]] · ↑ [[· 6 Bounded Linear Maps]] · [[§35 Bras, Kets, and the Riesz Map]] →
 
 *Stage: maps — Examples revisited. Which maps between the course's spaces are bounded, and the duals of $L^p$ and $\ell^2$.*
 
@@ -39,4 +39,4 @@ The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R
 
 ![[§31 Dual Spaces#^thm-31-4]]
 
-*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§36 Position Eigenstates and Continuous Resolutions#^thm-36-2|Chapter 7 (L² as a state space)]] →
+*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§37 Position Eigenstates and Continuous Resolutions#^thm-37-2|Chapter 7 (L² as a state space)]] →

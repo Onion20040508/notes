@@ -243,7 +243,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^def-c5a-5-3
 
-Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$ sends each $\xi^r$ to $\sum_s\xi^s\delta^{sr} = \xi^r$, so by linearity it is the identity on $\mathbb C^2$ — the two-dimensional case of $\sum_n|n\rangle\langle n| = \mathbb 1$ ([[§35 The Completeness Relation#^prop-35-1|556 Prop. §35.1]]). For the standard basis, $\begin{pmatrix}1\\0\end{pmatrix}(1\ 0) + \begin{pmatrix}0\\1\end{pmatrix}(0\ 1) = \begin{pmatrix}1&0\\0&0\end{pmatrix} + \begin{pmatrix}0&0\\0&1\end{pmatrix} = \mathbb 1_2$.
+Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$ sends each $\xi^r$ to $\sum_s\xi^s\delta^{sr} = \xi^r$, so by linearity it is the identity on $\mathbb C^2$ — the two-dimensional case of $\sum_n|n\rangle\langle n| = \mathbb 1$ ([[§36 The Completeness Relation#^prop-36-1|556 Prop. §36.1]]). For the standard basis, $\begin{pmatrix}1\\0\end{pmatrix}(1\ 0) + \begin{pmatrix}0\\1\end{pmatrix}(0\ 1) = \begin{pmatrix}1&0\\0&0\end{pmatrix} + \begin{pmatrix}0&0\\0&1\end{pmatrix} = \mathbb 1_2$.
 
 > [!caution] Caution: The slide's "angular momentum" is twice the angular momentum
 > The Lecture 9 slide "Solution of the Dirac Equation: Step 3" labels $\operatorname{diag}(\sigma^k, \sigma^k)$ the angular momentum. It is $2J^k$: the angular momentum is $\frac12\operatorname{diag}(\sigma^k, \sigma^k)$ ([[§C5a.5 Plane-Wave Solutions#^thm-c5a-5-4|Theorem §C5a.5.4]]), with eigenvalues $\pm\frac12$, as the lecture said aloud ("the $J$ operator is a half sigma").

@@ -25,6 +25,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§13 The Completion of a Normed Space#^prop-13-2|Proposition §13.2: Identifying a Completion]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|Proposition §19.8: Lᵖ[a,b] as a Completion]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-4|Proposition §33.4: H¹_0(Omega) is a Hilbert Space]]
 
 ## Connections
 - **How.** The norm of a class is lim‖x_n‖, which exists because the reverse triangle inequality makes (‖x_n‖) Cauchy in ℝ. For completeness, take a Cauchy sequence of classes and pick the diagonal y_j = x^(M_j)_(N_j) with non-decreasing indices. The argument closes with two three-term triangle inequalities, in which an auxiliary index is sent to infinity last ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]).

@@ -38,7 +38,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ^def-30-2
 
 > [!remark]- Connections
-> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§35 The Completeness Relation#^def-35-1|Def. §35.1]].
+> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§36 The Completeness Relation#^def-36-1|Def. §36.1]].
 
 > [!definition] Definition §30.3: Operator Norm
 > For a bounded $T : X \to Y$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]), and $X \neq \{0\}$, its **norm** is
@@ -55,7 +55,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
-> - The case $Y = \mathbb{F}$ is the dual norm, [[§34 Bras, Kets, and the Riesz Map#^def-34-2|Def. §34.2]]; the case $X = Y = H$ in the companion chapter: [[§35 The Completeness Relation#^def-35-2|Def. §35.2]].
+> - The case $Y = \mathbb{F}$ is the dual norm, [[§35 Bras, Kets, and the Riesz Map#^def-35-2|Def. §35.2]]; the case $X = Y = H$ in the companion chapter: [[§36 The Completeness Relation#^def-36-2|Def. §36.2]].
 
 > [!theorem] Proposition §30.1: The Operator Norm
 > Let $T : X \to Y$ be a bounded linear map, $X \neq \{0\}$. Then
@@ -83,7 +83,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
-> - The same statements for the dual norm in the companion chapter: [[§34 Bras, Kets, and the Riesz Map#^lem-34-1|§34.1]].
+> - The same statements for the dual norm in the companion chapter: [[§35 Bras, Kets, and the Riesz Map#^lem-35-1|§35.1]].
 
 > [!theorem] Proposition §30.2: Continuous if and only if Bounded
 > A linear map $T : X \to Y$ between normed linear spaces is continuous if and only if it is bounded.
@@ -132,7 +132,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§34 Bras, Kets, and the Riesz Map#^def-34-2|§34.2]]. The companion chapter's bounded operators on $H$ (Definition [[§35 The Completeness Relation#^def-35-1|§35.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§35 Bras, Kets, and the Riesz Map#^def-35-2|§35.2]]. The companion chapter's bounded operators on $H$ (Definition [[§36 The Completeness Relation#^def-36-1|§36.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
 
 ^rem-30-1
 
@@ -251,7 +251,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 > [!remark]- Connections
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
-> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]].
+> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§35 Bras, Kets, and the Riesz Map#^def-35-1|Def. §35.1]].
 
 > [!theorem] Theorem §30.5: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
@@ -325,7 +325,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
-> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]].
+> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§35 Bras, Kets, and the Riesz Map#^def-35-1|Def. §35.1]].
 > - Part (2) with $Y = \mathbb{F}$: the dual is always a Banach space, [[§31 Dual Spaces#^cor-31-1|§31.1]].
 > - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 

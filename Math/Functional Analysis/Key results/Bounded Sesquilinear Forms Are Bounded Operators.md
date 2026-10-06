@@ -20,9 +20,9 @@ tags: [functional-analysis, hub]
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Definition §32.1: Sesquilinear Form; Bounded Form]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Theorem §32.2: Lax–Milgram]]
 
 ## Connections
 - **How.** For fixed y, x ↦ B(x, y) is a bounded linear functional, so by Riesz with norms ([[§31 Dual Spaces#^thm-31-2|§31.2]]) it equals (x, Ay) for a unique Ay. Uniqueness makes A linear, and taking x = Ay gives ‖Ay‖ ≤ M‖y‖.
 - **Finite dimensions.** On ℝⁿ every bilinear form is (x, Ay) for the matrix A = (B(e_i, e_j)) ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^ex-32-1|Ex. §32.1]]); this is LADR's matrix of a bilinear form ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]]). In infinite dimensions Wu avoided the infinite matrix and used the Riesz representation instead.
-- **Used for.** It is the first step of [[Lax–Milgram Theorem|Lax–Milgram]]: conditions (1)–(3) produce A, and coercivity is then used to show that A is one-to-one and onto ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^rem-32-1|Remark §32]]).
+- **Used for.** It is the first step of [[Lax–Milgram Theorem|Lax–Milgram]]: conditions (1)–(3) produce A, and coercivity is then used to show that A is one-to-one and onto ([[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^rem-32-2|Remark §32]]).

@@ -296,7 +296,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 > [!remark]- Connections
 > - Finite-dimensional home (expansion and Parseval in an orthonormal basis): [[§21 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
-> - Restated in Dirac notation as the completeness relation: [[§35 The Completeness Relation#^thm-35-2|§35.2]], [[§35 The Completeness Relation#^cor-35-4|§35.4]].
+> - Restated in Dirac notation as the completeness relation: [[§36 The Completeness Relation#^thm-36-2|§36.2]], [[§36 The Completeness Relation#^cor-36-4|§36.4]].
 > - Used in Electromagnetism: the completeness of the Legendre polynomials in $L^2[-1, 1]$, which justifies expanding boundary potentials in Legendre series — [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]]. At level C: orthonormality, completeness and closure of the separated eigenfunctions of electrostatics — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 > - Computational version: the finite expansion with the same coefficients, [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]]; why the 235 lectures’ “basis” of harmonics is one only in this series sense, [[§31 Linearly Independent Sets; Bases#^rem-31-4|235 Remark §25.4]].
 > - Computational version: Parseval's equality for Fourier series, [[§15★ Mean Error and Convergence in Mean#^thm-15-4|341 Thm. §15.4]] (used to sum series such as $\sum1/n^4$), and for normalized eigenfunctions, [[§30 Expansion in Series of Eigenfunctions#^rem-30-1|341 Remark §24.1]].
@@ -390,7 +390,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 > [!remark]- Connections
 > - The real trigonometric orthonormal list on $[-\pi, \pi]$ in finite dimensions: [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d).
-> - Used for the particle on a ring: [[§35 The Completeness Relation#^ex-35-2|Ex. §35.2]].
+> - Used for the particle on a ring: [[§36 The Completeness Relation#^ex-36-2|Ex. §36.2]].
 > - Used in Quantum Mechanics: the completeness of the infinite-well states, proved from this basis — [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|QM Theorem §B1.3.3]].
 > - The density step it needs (continuous functions vanishing at the endpoints are dense in $L^2[0,2\pi]$) follows from [[§35 Lᵖ as a Banach Space#^thm-35-12|551 Thm. §35.12]](iii) by cutting the approximant off near the endpoints.
 > - Computational version, real form on C[0, 2π]: orthogonality of the trigonometric system [[§57 Applications of Inner Product Spaces#^prop-57-2|235 Prop. §57.2]], the coefficient formulas [[§57 Applications of Inner Product Spaces#^thm-57-3|235 Thm. §57.3]], and convergence in the mean [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]], with worked Fourier approximations.

@@ -37,7 +37,9 @@ tags: [measure-theory, hub]
 - [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|Theorem §19.3: Lᵖ(Omega) and L^∞(Omega) are Banach Spaces]]
 - [[§30 Boundedness and Continuity#^ex-30-2|Example §30.2: The Fourier Transform from L¹ to L^∞]]
-- [[§36 Position Eigenstates and Continuous Resolutions#^prop-36-5|Proposition §36.5: The Spectral Projections of Position]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|Example §33.3: sgn x has No Weak Derivative]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-3|Remark: Hölder, not Dominated Convergence]]
+- [[§37 Position Eigenstates and Continuous Resolutions#^prop-37-5|Proposition §37.5: The Spectral Projections of Position]]
 
 ## Connections
 - **Proof idea.** Fatou applied to F + f_k gives the [[§23 The Dominated Convergence Theorem#^thm-23-1|dominated]] Fatou lemma (§15.6); the [[§23 The Dominated Convergence Theorem#^thm-23-2|reverse]] one (§15.7) is proved in the notes by applying the decreasing and increasing MCT to the positive and negative parts of g_l = sup_{k≥l} f_k (Fatou applied to F − f_k gives it too). Together they give ∫f ≤ liminf ∫f_k ≤ limsup ∫f_k ≤ ∫f, and [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-6|451 §10.6]] finishes. The alternative proof applies [[Fatou's Lemma]] to 2F − |f_k − f| and gets ∫|f_k − f| → 0 ([[§23 The Dominated Convergence Theorem#^rem-23-4|Rem. §15.4]]). It is the last link of MCT → Fatou → DCT.

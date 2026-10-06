@@ -25,7 +25,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 ^def-26-1
 
 > [!remark]- Connections
-> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§34 Bras, Kets, and the Riesz Map#^def-34-1|Def. §34.1]].
+> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§35 Bras, Kets, and the Riesz Map#^def-35-1|Def. §35.1]].
 
 > [!remark] Remark: Why Boundedness
 > On $\mathbb{R}^n$ every linear functional is bounded: $|a \cdot x| \le \|a\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]], so $c = \|a\|$ works. More generally every linear functional on a finite-dimensional normed space is bounded (with a basis $e_1, \ldots, e_n$ and $x = \sum_i a_i e_i$, $|\ell(x)| \le \sum_i |a_i|\,|\ell(e_i)| \le \bigl(\max_i |\ell(e_i)|\bigr)\|x\|_1$, and $\|\cdot\|_1$ is equivalent to the given norm by Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]). In infinite dimensions this fails — the [[§11 Normed Linear Spaces#^rem-11-3|remark]] after Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]] and the [[§24 The Parallelogram Law and Jordan–von Neumann#^rem-24-1|remark]] after Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]] both mention functionals built from a Hamel basis that are unbounded on every ball — so boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
@@ -161,7 +161,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§34 Bras, Kets, and the Riesz Map#^thm-34-2|§34.2]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§35 Bras, Kets, and the Riesz Map#^thm-35-2|§35.2]].
 
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*

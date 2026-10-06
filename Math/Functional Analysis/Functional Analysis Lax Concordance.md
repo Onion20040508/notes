@@ -67,6 +67,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | [[§26 Bounded Linear Functionals and the Riesz Representation Theorem\|§26]] Riesz representation | §6.3, Thm 4 | Lax–Milgram (Thm 6) not covered. |
 | [[§27 Orthonormal Sets and Bases\|§27]]–[[§28 Existence of Orthonormal Bases and Separability\|§28]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
 | [[§30 Boundedness and Continuity\|§30]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
+| [[§32 Sesquilinear Forms and the Lax–Milgram Theorem\|§32]] Lax–Milgram | §6.3, Thm 6 | Proved through the operator $A$ of [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|Theorem §32.1]]: one-to-one with a lower bound, closed range, dense range. |
+| [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
 | [[· 7 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
@@ -125,6 +127,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §5.1, example (f) | Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8\|§19.8]] | $L^p[a,b]$ as a Completion |
 | §5.1, example (g) | Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3\|§23.3]] | Sobolev Spaces |
 | §5.1, definition of separable space | Definition [[§28 Existence of Orthonormal Bases and Separability#^def-28-1\|§28.1]] | Separable Space |
+| §5.1, example (g) | Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1\|§33.1]] | The Sobolev Norm |
+| §5.1, example (g) | Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-2\|§33.2]] | Sobolev Space as a Completion |
 | §5.1, construction (ii) and Exercise 1 | Proposition [[§14 New Normed Spaces from Old#^prop-14-7\|§14.7]] | Norms on a Direct Sum |
 | §5.1, Thm 1 | Theorem [[§14 New Normed Spaces from Old#^thm-14-8\|§14.8]] | Quotient Norm |
 | §5.1, before Thm 2; “dense” in the definition of separable space | Definition [[§11 Normed Linear Spaces#^def-11-7\|§11.7]] | Closure |
